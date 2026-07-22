@@ -13,6 +13,10 @@
     --paper:#2b2f38; --muted:#6b7280;
     --input-bg:#eaf2fb; --input-border:#3d7fc2;
   }
+  /* 防御シミュレーター表示時は背景を薄緑基調に切り替える(body.defense-modeで上書き) */
+  body.defense-mode{
+    --bg:#eef7ec; --bg-panel:#ffffff; --bg-panel-2:#eef8ec; --line:#cfe3c9;
+  }
   *{box-sizing:border-box;}
   html,body{margin:0;padding:0;}
   body{
@@ -22,6 +26,13 @@
       var(--bg);
     color:var(--paper); font-family:'Zen Kaku Gothic New', sans-serif;
     min-height:100vh; padding:20px 12px 60px;
+    transition:background-color .2s ease;
+  }
+  body.defense-mode{
+    background:
+      radial-gradient(ellipse 900px 500px at 15% 0%, rgba(46,125,50,0.07), transparent 60%),
+      radial-gradient(ellipse 700px 600px at 100% 100%, rgba(102,187,106,0.10), transparent 60%),
+      var(--bg);
   }
   .wrap{max-width:1080px;margin:0 auto;}
   .header{display:flex;align-items:flex-end;justify-content:space-between;border-bottom:1px solid var(--line);padding-bottom:16px;margin-bottom:20px;gap:16px;flex-wrap:wrap;}
@@ -79,7 +90,7 @@
   .panel-title{font-family:'Noto Serif JP',serif;font-weight:700;font-size:14px;color:var(--gold-bright);letter-spacing:.06em;display:flex;align-items:center;gap:10px;margin:0 0 14px;padding-bottom:9px;border-bottom:1px dashed var(--line);flex-wrap:wrap;}
   .panel-title .num{font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--vermillion-bright);border:1px solid var(--vermillion);border-radius:3px;padding:1px 6px;}
   .legend{display:flex;gap:16px;align-items:center;font-size:11px;color:var(--muted);margin-bottom:14px;flex-wrap:wrap;}
-  .legend .swatch{display:inline-block;width:12px;height:12px;border-radius:2px;margin-right:5px;vertical-align:middle;}
+  .legend .swatch{display:inline-block;width:24px;height:12px;border-radius:2px;margin-right:5px;vertical-align:middle;}
   .legend .swatch.blue{background:var(--input-bg);border:1px solid var(--input-border);}
 
   table.sheet{width:100%;border-collapse:collapse;min-width:640px;}
@@ -224,6 +235,7 @@
       <div class="header-eyebrow">Squad Roster Sheet</div>
       <h1 id="mainTitle">部隊編成表・軍略盤(攻撃シミュレーター)</h1>
       <div class="header-sub">部隊長・小隊1〜3、計4名分の武将データを入力する表です。現在は全項目を手入力できます(武将データベースに攻撃力情報が揃い次第、攻撃力・防御力・兵法値などの自動反映に対応予定)。</div>
+      <div class="header-sub" id="futureFeatureNote" style="margin-top:3px;color:var(--gold);">※将来的に4合流攻撃導入予定</div>
     </div>
     <div style="display:flex;align-items:center;gap:12px;">
       <button id="resetBtn" class="reset-btn">🗑 リセット</button>
@@ -236,10 +248,7 @@
   <!-- 部隊編成表 -->
   <div class="panel">
     <div class="panel-title"><span class="num">00</span> 基本ステータス</div>
-    <div class="legend"><span class="swatch blue"></span>すべて手入力欄です(青いセル)</div>
-    <div class="footnote" style="margin-top:0;margin-bottom:14px;padding-top:0;border-top:none;">
-      「兵士」欄で兵種を選ぶと、攻撃力・防御力・移動速度・破壊力と、統率①のみに影響するか統率①②両方に影響するかが下に表示されます(移動速度・破壊力は現時点では計算に使用せず、データとして保持のみ)。
-    </div>
+    <div class="legend"><span class="swatch blue"></span>手入力欄</div>
     <table class="sheet" id="basicTable"></table>
 
     <div class="battle-var-box">
@@ -262,14 +271,14 @@
     <details class="footnote" style="margin-top:0;">
       <summary>計算式を表示</summary>
       <div class="footnote-body">
-        <b>計算式:</b> 部隊合計攻撃力 = Σ(各武将攻撃力 + 指揮兵士数×兵士攻撃力) × 統率補正α。「兵士」欄で選んだ兵種の攻撃力(兵士データベース)を使用し、未選択の列は兵士攻撃力を0として計算します。
-        この欄には名声補正・総攻撃力上昇(覇神絶域等)は含みません(これらは下の「最終攻撃力」欄の計算にのみ反映されます)。
+        <b>計算式:</b> <span id="squadAtkFormulaHelpText">部隊合計攻撃力 = Σ(各武将攻撃力 + 指揮兵士数×兵士攻撃力) × 統率補正α。「兵士」欄で選んだ兵種の攻撃力(兵士データベース)を使用し、未選択の列は兵士攻撃力を0として計算します。
+        この欄には名声補正・総攻撃力上昇(覇神絶域等)は含みません(これらは下の「最終攻撃力」欄の計算にのみ反映されます)。</span>
       </div>
     </details>
 
     <div class="squad-total-row" style="grid-template-columns:1fr;margin-top:14px;">
       <div class="squad-total-box" style="border-color:var(--gold);background:linear-gradient(135deg, rgba(201,162,39,0.18), rgba(184,64,47,0.08));">
-        <div class="squad-total-label">最終攻撃力(期待値 / 最大値)</div>
+        <div class="squad-total-label" id="finalAtkLabel">最終攻撃力(期待値 / 最大値)</div>
         <div class="squad-total-formula" id="finalAtkFormula">-</div>
         <div class="squad-total-value" id="finalAtkValue">0</div>
         <div class="squad-total-value" id="finalAtkMaxValue" style="font-size:15px;color:var(--muted);margin-top:2px;">最大値: 0</div>
@@ -277,10 +286,10 @@
       </div>
     </div>
     <details class="footnote" style="margin-top:8px;">
-      <summary>計算式を表示(総攻撃力上昇スキルの判定内訳を含む)</summary>
+      <summary id="finalAtkSummaryText">計算式を表示(総攻撃力上昇スキルの判定内訳を含む)</summary>
       <div class="footnote-body">
-        <b>計算式:</b> 最終攻撃力 = 部隊攻撃力 × 名声補正 × (1 + 攻撃力上昇(01スキル欄の16枠合計%) ÷ 100) × 総攻撃力上昇(覇神絶域等、対象兵科を指揮しているスキルのみ合算)。「計算する」ボタンを押すと更新されます。
-        卓越を持つスキルがある場合、期待値(平均)と最大値(卓越が毎回成功したと仮定)の両方を表示します。
+        <b>計算式:</b> <span id="finalAtkFormulaHelpText">最終攻撃力 = 部隊攻撃力 × 名声補正 × (1 + 攻撃力上昇(01スキル欄の16枠合計%) ÷ 100) × 総攻撃力上昇(覇神絶域等、対象兵科を指揮しているスキルのみ合算)。「計算する」ボタンを押すと更新されます。
+        卓越を持つスキルがある場合、期待値(平均)と最大値(卓越が毎回成功したと仮定)の両方を表示します。</span>
         <div id="totalAtkBoostDebug" style="margin-top:6px;"></div>
       </div>
     </details>
@@ -341,7 +350,7 @@
 
     <div class="squad-total-row" style="grid-template-columns:1fr;margin-top:14px;">
       <div class="squad-total-box">
-        <div class="squad-total-label">攻撃力上昇(期待値 / 最大値)</div>
+        <div class="squad-total-label" id="squadSkillAtkLabel">攻撃力上昇(期待値 / 最大値)</div>
         <div class="squad-total-formula" id="squadSkillAtkFormula">-</div>
         <div class="squad-total-value" id="squadSkillAtkValue">0%</div>
         <div class="squad-total-value" id="squadSkillAtkMaxValue" style="font-size:14px;color:var(--muted);margin-top:2px;">最大値: 0%</div>
@@ -350,8 +359,8 @@
     <details class="footnote" style="margin-top:8px;">
       <summary>計算式を表示</summary>
       <div class="footnote-body">
-        <b>計算式:</b> 4武将×初期/追加1/追加2/極限スキルの「上昇%」欄(16枠)の合計値をそのまま合算表示しています(部隊合計攻撃力の計算には含まれません)。
-        卓越(たくえつ)を持つスキルは、期待値(卓越確率で重み付けした平均)と最大値(卓越が必ず成功したと仮定した値)の両方を集計しています。
+        <b>計算式:</b> <span id="squadSkillAtkHelpText">4武将×初期/追加1/追加2/極限スキルの「上昇%」欄(16枠)の合計値をそのまま合算表示しています(部隊合計攻撃力の計算には含まれません)。
+        卓越(たくえつ)を持つスキルは、期待値(卓越確率で重み付けした平均)と最大値(卓越が必ず成功したと仮定した値)の両方を集計しています。</span>
       </div>
     </details>
     <details class="footnote" style="margin-top:4px;">
@@ -437,7 +446,7 @@
   // ルール(ユーザー指定): 「更新した年月日.その日の通算更新回数」とする。
   // 日付が変わったら通算更新回数は1にリセットする(例: 2026-07-20の1回目の更新はv2026-07-20.1)。
   // 同じ日の中で仕様変更・バグ修正を行うたびに末尾の回数を+1する。
-  const SIMULATOR_VERSION = 'v2026-07-22.77';
+  const SIMULATOR_VERSION = 'v2026-07-22.78';
   document.addEventListener('DOMContentLoaded', ()=>{
     const badge = document.getElementById('simVersionBadge');
     if(badge) badge.textContent = SIMULATOR_VERSION;
@@ -3506,6 +3515,12 @@
   function updateCasualtyWarning(){
     const el = $('casualtyWarning');
     if(!el) return;
+    // 【2026年7月修正】ユーザー指摘により、防御側シミュレーターではこの警告を表示しないようにした
+    // (「被害減無し」は攻撃側の兵士ロスに関する警告のため、防御シミュレーター側では対象外とする)。
+    if(simMode === 'defense'){
+      el.style.display = 'none';
+      return;
+    }
     const hasReduction = squadHasCasualtyReduction() || squadAllGeneralsHaveFukutsu();
     el.style.display = hasReduction ? 'none' : 'inline-flex';
   }
@@ -5018,11 +5033,13 @@
     if(formulaEl) formulaEl.textContent = `4武将×4スキル枠(初期/追加1/追加2/極限)の上昇%合計`;
   }
 
-  // ============ 最終攻撃力(部隊攻撃力 × 攻撃力上昇) ============
-  // 「計算する」ボタン押下時に、部隊合計攻撃力(現在のsimModeに関わらず常に攻撃力ベースで算出)と
-  // 攻撃力上昇(01スキル欄16枠の上昇%合計)を掛け合わせて最終攻撃力として表示する。
+  // ============ 最終攻撃力/最終防御力(部隊攻撃力・防御力 × 上昇%) ============
+  // 「計算する」ボタン押下時に、部隊合計値(simModeに応じてatk/defを切り替える)と
+  // 上昇%(01スキル欄16枠の上昇%合計)を掛け合わせて最終値として表示する。
+  // 【2026年7月修正】以前はsimModeに関わらず常にatkベースで算出していたが、ユーザー指摘により
+  // 防御シミュレーター時はdefベースで計算するよう修正した。
   function computeSquadAtkRawTotal(){
-    const statKey = 'atk';
+    const statKey = simMode === 'defense' ? 'def' : 'atk';
     let total = 0;
     for(let col=0; col<4; col++){
       const stat = sheetData[col] ? parseFloat(sheetData[col][statKey]) : NaN;
@@ -5081,16 +5098,17 @@
     const conflictMessages = updateSquadConflictWarning();
     if(valueEl) valueEl.textContent = conflictMessages.length ? fmt(0) : fmt(finalAtk);
     if(maxValueEl) maxValueEl.textContent = '最大値: ' + (conflictMessages.length ? fmt(0) : fmt(finalAtkMax));
+    const statWord = simMode === 'defense' ? '防御力' : '攻撃力';
     if(formulaEl){
-      const boostSuffix = totalAtkBoost.sumPct ? ` × 総攻撃力上昇(+${totalAtkBoost.sumPct}%)` : '';
-      formulaEl.textContent = `部隊攻撃力(${fmt(squadAtkBase)}) × 名声補正(+${famePct}%) × (1 + 攻撃力上昇 ${skillAtkPct}%(最大値${skillAtkPctMax}%) ÷ 100)${boostSuffix}`;
+      const boostSuffix = totalAtkBoost.sumPct ? ` × 総${statWord}上昇(+${totalAtkBoost.sumPct}%)` : '';
+      formulaEl.textContent = `部隊${statWord}(${fmt(squadAtkBase)}) × 名声補正(+${famePct}%) × (1 + ${statWord}上昇 ${skillAtkPct}%(最大値${skillAtkPctMax}%) ÷ 100)${boostSuffix}`;
     }
-    // 診断用: 「総攻撃力上昇」スキルが検出されたか、対象兵科の条件を満たしているかを一覧表示する
+    // 診断用: 「総攻撃力/防御力上昇」スキルが検出されたか、対象兵科の条件を満たしているかを一覧表示する
     // (覇神絶域などが効いていないように見える場合に、兵士(兵科)の選択ミスなどをこの場で確認できるように)
     const debugEl = $('totalAtkBoostDebug');
     if(debugEl){
       if(totalAtkBoost.details.length === 0){
-        debugEl.textContent = '「総攻撃力上昇」スキル(覇神絶域等)は部隊内に検出されていません。';
+        debugEl.textContent = `「総${statWord}上昇」スキル(覇神絶域等)は部隊内に検出されていません。`;
       } else {
         debugEl.innerHTML = totalAtkBoost.details.map(d=>{
           const status = d.active ? `<span style="color:var(--gold-bright);">✓有効(+${d.pct}%)</span>` : `<span style="color:#ff3b3b;">✗無効(対象兵科不一致)</span>`;
@@ -5438,6 +5456,47 @@
   // 攻撃/防御シミュレーター切替ボタン
   const modeToggleBtn = $('modeToggleBtn');
   const mainTitle = $('mainTitle');
+  // 防御シミュレーター時、「攻撃力」と書かれている各種ラベル・計算式の説明文を「防御力」に置き換える。
+  // (squadTotalLabelは既にrenderSquadTotal側で動的に切り替えているため対象外)
+  function updateModeLabels(){
+    const statWord = simMode === 'defense' ? '防御力' : '攻撃力';
+    const finalAtkLabel = $('finalAtkLabel');
+    if(finalAtkLabel) finalAtkLabel.textContent = `最終${statWord}(期待値 / 最大値)`;
+    const finalAtkSummaryText = $('finalAtkSummaryText');
+    if(finalAtkSummaryText) finalAtkSummaryText.textContent = `計算式を表示(総${statWord}上昇スキルの判定内訳を含む)`;
+    const finalAtkFormulaHelpText = $('finalAtkFormulaHelpText');
+    if(finalAtkFormulaHelpText){
+      finalAtkFormulaHelpText.textContent = `最終${statWord} = 部隊${statWord} × 名声補正 × (1 + ${statWord}上昇(01スキル欄の16枠合計%) ÷ 100) × 総${statWord}上昇(覇神絶域等、対象兵科を指揮しているスキルのみ合算)。「計算する」ボタンを押すと更新されます。卓越を持つスキルがある場合、期待値(平均)と最大値(卓越が毎回成功したと仮定)の両方を表示します。`;
+    }
+    const squadAtkFormulaHelpText = $('squadAtkFormulaHelpText');
+    if(squadAtkFormulaHelpText){
+      squadAtkFormulaHelpText.textContent = `部隊合計${statWord} = Σ(各武将${statWord} + 指揮兵士数×兵士${statWord}) × 統率補正α。「兵士」欄で選んだ兵種の${statWord}(兵士データベース)を使用し、未選択の列は兵士${statWord}を0として計算します。この欄には名声補正・総${statWord}上昇(覇神絶域等)は含みません(これらは下の「最終${statWord}」欄の計算にのみ反映されます)。`;
+    }
+    const squadSkillAtkLabel = $('squadSkillAtkLabel');
+    if(squadSkillAtkLabel) squadSkillAtkLabel.textContent = `${statWord}上昇(期待値 / 最大値)`;
+    const squadSkillAtkHelpText = $('squadSkillAtkHelpText');
+    if(squadSkillAtkHelpText){
+      squadSkillAtkHelpText.textContent = `4武将×初期/追加1/追加2/極限スキルの「上昇%」欄(16枠)の合計値をそのまま合算表示しています(部隊合計${statWord}の計算には含まれません)。卓越(たくえつ)を持つスキルは、期待値(卓越確率で重み付けした平均)と最大値(卓越が必ず成功したと仮定した値)の両方を集計しています。`;
+    }
+  }
+
+  // ステ振り(攻撃振り/防御振り/兵法振り)の選択肢を、現在のシミュレーターモードに合わせて絞り込む。
+  // 攻撃シミュレーターでは「防御振り」を、防御シミュレーターでは「攻撃振り」を選択肢から外す(兵法振りは常時表示)。
+  // 既存の選択値がモード変更で選べなくなった場合は、対応する振り方(攻撃振り⇔防御振り)に自動変換する。
+  function updateStatAllocOptions(){
+    const opts = simMode === 'defense' ? ['防御振り','兵法振り'] : ['攻撃振り','兵法振り'];
+    for(let col=0; col<4; col++){
+      const sel = $(cellId('statAlloc', col));
+      if(!sel) continue;
+      let current = sheetData[col] ? sheetData[col]['statAlloc'] : null;
+      if(current && !opts.includes(current)){
+        current = (current === '攻撃振り') ? '防御振り' : (current === '防御振り') ? '攻撃振り' : opts[0];
+        if(sheetData[col]) sheetData[col]['statAlloc'] = current;
+      }
+      sel.innerHTML = opts.map(o=>`<option value="${o}" ${o===current?'selected':''}>${o}</option>`).join('');
+    }
+  }
+
   modeToggleBtn.addEventListener('click', ()=>{
     simMode = simMode === 'attack' ? 'defense' : 'attack';
     if(simMode === 'defense'){
@@ -5447,9 +5506,19 @@
       modeToggleBtn.textContent = '🛡 防御シミュレーターに切替';
       mainTitle.textContent = '部隊編成表・軍略盤(攻撃シミュレーター)';
     }
+    document.body.classList.toggle('defense-mode', simMode === 'defense');
+    // 「将来的に4合流攻撃導入予定」の注記は攻撃シミュレーター限定で表示する
+    const futureFeatureNote = $('futureFeatureNote');
+    if(futureFeatureNote) futureFeatureNote.style.display = (simMode === 'attack') ? '' : 'none';
     // るろうに剣心/京都動乱チェックボックスのラベル(モードにより表示名が変わる)を再描画する
     renderRurouniSoarCheckbox(computeBaseSoar(0).max >= 1);
+    updateModeLabels();
+    updateStatAllocOptions();
+    recalcSquadStats();
     renderSquadTotal();
+    renderFinalAttackPower();
+    renderSquadSkillAtkTotal();
+    updateCasualtyWarning();
   });
 
   // 防御参加武将数などの戦闘変数の入力・永続化
