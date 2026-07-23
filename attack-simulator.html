@@ -447,7 +447,7 @@
   // ルール(ユーザー指定): 「更新した年月日.その日の通算更新回数」とする。
   // 日付が変わったら通算更新回数は1にリセットする(例: 2026-07-20の1回目の更新はv2026-07-20.1)。
   // 同じ日の中で仕様変更・バグ修正を行うたびに末尾の回数を+1する。
-  const SIMULATOR_VERSION = 'v2026-07-22.80';
+  const SIMULATOR_VERSION = 'v2026-07-22.81';
   document.addEventListener('DOMContentLoaded', ()=>{
     const badge = document.getElementById('simVersionBadge');
     if(badge) badge.textContent = SIMULATOR_VERSION;
@@ -4494,6 +4494,7 @@
       const points = BREAKTHROUGH_POINTS[breakthroughType] || 0;
 
       // ステ振りで選んだ1ステータスだけにポイントが乗り、他の2ステータスは初期値のまま。
+      // 「バランス振り」選択時のみ例外で、ポイントを攻撃・防御・兵法値の3ステータスに均等(3分の1ずつ)に配分する。
       let rawAtk = entry.atkBase, rawDef = entry.defBase, rawTactics = entry.tacticsBase;
       if(statAlloc === '攻撃振り'){
         rawAtk = entry.atkBase + entry.atkGrowth * points;
@@ -4501,6 +4502,11 @@
         rawDef = entry.defBase + entry.defGrowth * points;
       } else if(statAlloc === '兵法振り'){
         rawTactics = entry.tacticsBase + entry.tacticsGrowth * points;
+      } else if(statAlloc === 'バランス振り'){
+        const balancedPoints = points / 3;
+        rawAtk = entry.atkBase + entry.atkGrowth * balancedPoints;
+        rawDef = entry.defBase + entry.defGrowth * balancedPoints;
+        rawTactics = entry.tacticsBase + entry.tacticsGrowth * balancedPoints;
       }
 
       // 指揮兵士数はステ振りと無関係。ランク別実測値があればそれを優先し、
@@ -4653,7 +4659,7 @@
   const basicRows = [
     {key:'soldier', label:'兵士', type:'soldierselect'},
     {key:'general', label:'武将名', type:'text'},
-    {key:'statAlloc', label:'ステ振り', type:'select', options:['攻撃振り','防御振り','兵法振り']},
+    {key:'statAlloc', label:'ステ振り', type:'select', options:['攻撃振り','防御振り','バランス振り','兵法振り']},
     {key:'atk', label:'攻撃力', type:'number', muted:true},
     {key:'def', label:'防御力', type:'number', muted:true},
     {key:'tactics', label:'兵法値', type:'number', muted:true},
@@ -5484,19 +5490,24 @@
     }
   }
 
-  // ステ振り(攻撃振り/防御振り/兵法振り)の選択肢を、現在のシミュレーターモードに合わせて絞り込む。
-  // 攻撃シミュレーターでは「防御振り」を、防御シミュレーターでは「攻撃振り」を選択肢から外す(兵法振りは常時表示)。
+  // ステ振り(攻撃振り/防御振り/バランス振り/兵法振り)の選択肢を、現在のシミュレーターモードに合わせて絞り込む。
+  // 攻撃シミュレーターでは「防御振り」を、防御シミュレーターでは「攻撃振り」を選択肢から外す(バランス振り・兵法振りは常時表示)。
   // 既存の選択値がモード変更で選べなくなった場合は、対応する振り方(攻撃振り⇔防御振り)に自動変換する。
+  // 【2026年7月修正】選択値が未設定(current未設定)の場合、<select>はブラウザの既定動作でopts[0]を
+  // 画面上は選択状態にするが、sheetDataには何も書き込まれていなかったため、実際の計算(recalcSquadStats)は
+  // entry.defaultStatAlloc(多くの武将で'攻撃振り')にフォールバックしてしまい、防御シミュレーターで
+  // 「防御振り」が見た目上選ばれているのに攻撃振り相当で計算される不具合があった。current確定後に
+  // 必ずsheetDataへ書き戻すことで、表示と実際の計算値を常に一致させる。
   function updateStatAllocOptions(){
-    const opts = simMode === 'defense' ? ['防御振り','兵法振り'] : ['攻撃振り','兵法振り'];
+    const opts = simMode === 'defense' ? ['防御振り','バランス振り','兵法振り'] : ['攻撃振り','バランス振り','兵法振り'];
     for(let col=0; col<4; col++){
       const sel = $(cellId('statAlloc', col));
       if(!sel) continue;
       let current = sheetData[col] ? sheetData[col]['statAlloc'] : null;
-      if(current && !opts.includes(current)){
+      if(!current || !opts.includes(current)){
         current = (current === '攻撃振り') ? '防御振り' : (current === '防御振り') ? '攻撃振り' : opts[0];
-        if(sheetData[col]) sheetData[col]['statAlloc'] = current;
       }
+      if(sheetData[col]) sheetData[col]['statAlloc'] = current;
       sel.innerHTML = opts.map(o=>`<option value="${o}" ${o===current?'selected':''}>${o}</option>`).join('');
     }
   }
@@ -5697,6 +5708,7 @@
     [...basicRows, ...skillRows, ...skillEffectRows].forEach(row=>{
       for(let col=0; col<4; col++){ applyCellValue(row, col); }
     });
+    updateStatAllocOptions();
     runFullCalculation();
   }
   loadSheet();
@@ -5725,6 +5737,7 @@
     for(let col=0; col<4; col++){
       ['skillInit','skillAdd1','skillAdd2','skillUltimate'].forEach(fk => attachSkillAutocomplete(fk, col));
     }
+    updateStatAllocOptions();
     defenderCountInput.value = '';
     fameInput.value = 0;
     enemyCostInput.value = '';
