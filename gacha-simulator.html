@@ -325,7 +325,7 @@
   <div class="sim-version-badge" id="simVersionBadge">v-</div>
 
 <script>
-  const GACHA_VERSION = 'v2026-07-24.25';
+  const GACHA_VERSION = 'v2026-07-24.26';
   document.addEventListener('DOMContentLoaded', ()=>{
     const badge = document.getElementById('simVersionBadge');
     if(badge) badge.textContent = GACHA_VERSION;
@@ -855,12 +855,15 @@
     let rareHit = false;
     for(let i=0;i<9;i++){
       const d = drawOneFull(BASE_RATES, TIER_CHAR_LISTS);
+      recordDraw(d); // 天のパラレル化ボーナス消費を同じ10連の中でも即座に反映させるため、生成直後に記録する
       results.push(d);
       if(d.tier==='傑' || d.tier==='天' || d.tier==='極') rareHit = true;
     }
     const tenthRates = rareHit ? TENTH_BOOST_RATES : TENTH_GUARANTEE_RATES;
     const tenthCharLists = rareHit ? TIER_CHAR_LISTS_BOOST : TIER_CHAR_LISTS_GUARANTEE;
-    results.push(drawOneFull(tenthRates, tenthCharLists));
+    const tenthDraw = drawOneFull(tenthRates, tenthCharLists);
+    recordDraw(tenthDraw);
+    results.push(tenthDraw);
     return results;
   }
 
@@ -1067,12 +1070,14 @@
     });
   }
 
-  function recordResults(draws){
-    draws.forEach(({tier, detail})=>{
-      tally[tier]++;
-      totalDraws++;
-      recordDetailStats(tier, detail, totalDraws);
-    });
+  function recordDraw(draw){
+    const {tier, detail} = draw;
+    tally[tier]++;
+    totalDraws++;
+    recordDetailStats(tier, detail, totalDraws);
+  }
+
+  function renderPostDrawUI(draws){
     updateTally();
     updateHistory(draws);
     updateRareLog(draws);
@@ -1083,8 +1088,9 @@
     if(busy) return;
     setBusy(true);
     const draw = drawOneFull(BASE_RATES, TIER_CHAR_LISTS);
+    recordDraw(draw);
     const dur = renderCards([draw]);
-    setTimeout(()=>{ recordResults([draw]); setBusy(false); }, dur);
+    setTimeout(()=>{ renderPostDrawUI([draw]); setBusy(false); }, dur);
   });
 
   document.getElementById('drawTenBtn').addEventListener('click', ()=>{
@@ -1092,7 +1098,7 @@
     setBusy(true);
     const draws = drawTenFull();
     const dur = renderCards(draws);
-    setTimeout(()=>{ recordResults(draws); setBusy(false); }, dur);
+    setTimeout(()=>{ renderPostDrawUI(draws); setBusy(false); }, dur);
   });
 
   document.getElementById('clearHistoryBtn').addEventListener('click', ()=>{
