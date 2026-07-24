@@ -451,6 +451,28 @@
   </div>
   -->
 
+  <div class="panel" style="margin-top:24px;">
+    <div class="panel-title"><span class="num">03</span> バグ報告・ご意見</div>
+    <div class="footnote" style="margin-bottom:14px;">
+      計算結果がおかしい・表示が崩れている等に気づいた場合は、下のコメント欄で教えてください。投稿にはGitHubアカウントでのログインが必要です。
+    </div>
+    <script src="https://giscus.app/client.js"
+        data-repo="wiper556/ixa-simulator"
+        data-repo-id="R_kgDOTgSbNg"
+        data-category="General"
+        data-category-id="DIC_kwDOTgSbNs4DB1-T"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="preferred_color_scheme"
+        data-lang="ja"
+        crossorigin="anonymous"
+        async>
+    </script>
+  </div>
+
   <div style="margin-top:32px;padding-top:16px;border-top:1px solid var(--line);font-size:11px;color:var(--muted);line-height:1.7;text-align:center;">
     <p>本ツールは戦国IXA(Sengoku IXA)の非公式ファンメイドツールです。運営会社・関連団体とは一切関係ありません。<br>
     記載されている会社名・製品名・システム名などは、各社の商標、または登録商標です。<br>
@@ -468,7 +490,7 @@
   // ルール(ユーザー指定): 「更新した年月日.その日の通算更新回数」とする。
   // 日付が変わったら通算更新回数は1にリセットする(例: 2026-07-20の1回目の更新はv2026-07-20.1)。
   // 同じ日の中で仕様変更・バグ修正を行うたびに末尾の回数を+1する。
-  const SIMULATOR_VERSION = 'v2026-07-24.17';
+  const SIMULATOR_VERSION = 'v2026-07-24.18';
   document.addEventListener('DOMContentLoaded', ()=>{
     const badge = document.getElementById('simVersionBadge');
     if(badge) badge.textContent = SIMULATOR_VERSION;
