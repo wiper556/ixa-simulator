@@ -14,7 +14,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7334304987274613"
      crossorigin="anonymous"></script>
-<title>ガチャシミュレーター｜戦国IXA シミュレーター置き場</title>
+<title>くじシミュレーター｜戦国IXA シミュレーター置き場</title>
 <meta name="description" content="戦国IXA(Sengoku IXA)のくじを引く感覚を無料で楽しめる非公式ファンメイドツール。排出確率に沿ってカードをめくり、レア度・武将名を演出付きで表示します。">
 <link rel="stylesheet" href="assets/css/site.css">
 <style>
@@ -243,7 +243,7 @@
   </header>
 
   <main class="site-main">
-    <h1 class="page-title">ガチャシミュレーター</h1>
+    <h1 class="page-title">くじシミュレーター</h1>
     <p class="period-banner">開催期間: 2026年7月6日 〜 31章終了まで</p>
     <p class="page-lead">実際のくじの排出確率に沿って、無料でくじを引く感覚を楽しめます。何連引いても課金は発生しません。引いた武将の名前まで表示されます。画像表示は今後追加予定です。</p>
 
@@ -325,7 +325,7 @@
   <div class="sim-version-badge" id="simVersionBadge">v-</div>
 
 <script>
-  const GACHA_VERSION = 'v2026-07-24.23';
+  const GACHA_VERSION = 'v2026-07-24.25';
   document.addEventListener('DOMContentLoaded', ()=>{
     const badge = document.getElementById('simVersionBadge');
     if(badge) badge.textContent = GACHA_VERSION;
@@ -973,7 +973,7 @@
 
     if(tier === '天' || tier === '傑'){
       const isEnhanced = tier === '傑' || card.classList.contains('ten-parallel');
-      const sparks = generateSparkPositions(isEnhanced ? 6 : 3);
+      const sparks = generateSparkPositions(isEnhanced ? 8 : 5);
       sparks.forEach(pos=>{
         const spark = document.createElement('div');
         spark.className = 'landed-spark '+pos.cls;
@@ -981,7 +981,7 @@
         spark.style.left = pos.left;
         spark.style.animationDelay = pos.delay+'ms';
         front.appendChild(spark);
-        setTimeout(()=>{ spark.remove(); }, BURST_MS + 350);
+        setTimeout(()=>{ spark.remove(); }, BURST_MS + 470);
       });
     }
   }
