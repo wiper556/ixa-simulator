@@ -163,6 +163,7 @@
   .gacha-card.tier-特.reveal-shine .gacha-card-front::after{opacity:.28;}
 
   .gacha-tally{margin-top:18px;font-size:12.5px;color:var(--muted);font-family:'JetBrains Mono',monospace;}
+  .clear-history-wrap{margin-top:22px;padding-top:18px;border-top:1px dashed var(--line);}
   .gacha-history{margin-top:10px;text-align:center;}
   .history-chip{display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;border-radius:6px;margin:3px;font-size:12px;font-weight:700;color:#fff;font-family:'Noto Serif JP',serif;cursor:default;}
   .history-chip.tier-上{background:linear-gradient(135deg,#fff6a0,#ffd400);color:#5b4400;}
@@ -252,10 +253,12 @@
         <button id="drawTenBtn" class="gacha-btn-image" aria-label="10連を引く">
           <img src="assets/img/gacha-btn-ten.png" alt="10連を引く">
         </button>
-        <button id="clearHistoryBtn" class="gacha-btn secondary">履歴をクリア</button>
       </div>
       <div id="gachaCards" class="gacha-cards"></div>
       <div id="gachaTally" class="gacha-tally">累計 0連</div>
+      <div class="clear-history-wrap">
+        <button id="clearHistoryBtn" class="gacha-btn secondary">履歴をクリア</button>
+      </div>
     </div>
 
     <div class="content-block">
@@ -320,7 +323,7 @@
   <div class="sim-version-badge" id="simVersionBadge">v-</div>
 
 <script>
-  const GACHA_VERSION = 'v2026-07-24.21';
+  const GACHA_VERSION = 'v2026-07-24.22';
   document.addEventListener('DOMContentLoaded', ()=>{
     const badge = document.getElementById('simVersionBadge');
     if(badge) badge.textContent = GACHA_VERSION;
