@@ -1,0 +1,75 @@
+/* ============ サイト共通スタイル(ヘッダー・フッター・カード等の外枠のみ) ============
+   各シミュレーター本体のロジック・見た目は今まで通り単一HTMLファイルに閉じ込める方針のため、
+   ここには複数ページで使い回す「サイトの外枠」だけを置く。
+   配色トークンはattack-simulator.htmlの:rootと揃えてトーンを統一している。
+============================================ */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@500;700;900&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=JetBrains+Mono:wght@500;700&display=swap');
+
+:root{
+  --bg:#f6f2e7; --bg-panel:#ffffff; --bg-panel-2:#fbf8f0; --line:#ddd4bd;
+  --gold:#a97c0a; --gold-bright:#c9910f;
+  --vermillion:#b8402f; --vermillion-bright:#c9503d;
+  --paper:#2b2f38; --muted:#6b7280;
+}
+*{box-sizing:border-box;}
+html,body{margin:0;padding:0;}
+body{
+  background:
+    radial-gradient(ellipse 900px 500px at 15% 0%, rgba(184,64,47,0.06), transparent 60%),
+    radial-gradient(ellipse 700px 600px at 100% 100%, rgba(201,162,39,0.08), transparent 60%),
+    var(--bg);
+  color:var(--paper); font-family:'Zen Kaku Gothic New', sans-serif;
+  min-height:100vh; padding:0 0 60px;
+}
+.site-wrap{max-width:960px;margin:0 auto;padding:0 16px;}
+
+.site-header{
+  display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;
+  padding:22px 16px;border-bottom:1px solid var(--line);
+  background:var(--bg-panel);
+}
+.site-header a.site-logo{
+  font-family:'Noto Serif JP', serif; font-weight:900; font-size:20px;
+  color:var(--paper); text-decoration:none; letter-spacing:0.02em;
+}
+.site-header a.site-logo:hover{color:var(--vermillion-bright);}
+.site-nav{display:flex;gap:18px;flex-wrap:wrap;}
+.site-nav a{color:var(--muted);text-decoration:none;font-size:13.5px;}
+.site-nav a:hover{color:var(--vermillion-bright);}
+
+.site-main{max-width:960px;margin:0 auto;padding:32px 16px 60px;}
+
+.site-footer{
+  margin-top:40px;padding:22px 16px;border-top:1px solid var(--line);
+  color:var(--muted);font-size:12px;text-align:center;
+}
+.site-footer a{color:var(--muted);}
+
+/* シミュレーター一覧のカード */
+.tool-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-top:20px;}
+.tool-card{
+  display:block;padding:20px;border-radius:8px;text-decoration:none;color:inherit;
+  background:linear-gradient(135deg, rgba(184,64,47,0.10), rgba(201,162,39,0.05));
+  border:1px solid var(--vermillion);transition:transform .15s ease, box-shadow .15s ease;
+}
+.tool-card:hover{transform:translateY(-2px);box-shadow:0 6px 16px rgba(184,64,47,0.18);}
+.tool-card h3{margin:0 0 6px;font-family:'Noto Serif JP', serif;font-size:17px;color:var(--vermillion-bright);}
+.tool-card p{margin:0;font-size:13px;color:var(--muted);line-height:1.6;}
+.tool-card.disabled{
+  background:var(--bg-panel-2);border:1px dashed var(--line);cursor:default;
+}
+.tool-card.disabled:hover{transform:none;box-shadow:none;}
+.tool-card.disabled h3{color:#8a8578;}
+.tool-card .badge{
+  display:inline-block;margin-top:10px;padding:2px 9px;border-radius:10px;
+  font-size:10.5px;font-family:'JetBrains Mono', monospace;
+}
+.tool-card .badge.live{background:rgba(201,162,39,0.18);color:var(--gold-bright);border:1px solid var(--gold);}
+.tool-card .badge.soon{background:rgba(107,114,128,0.12);color:var(--muted);border:1px solid var(--line);}
+
+.page-title{font-family:'Noto Serif JP', serif;font-weight:900;font-size:26px;margin:0 0 8px;}
+.page-lead{color:var(--muted);font-size:13.5px;line-height:1.7;margin:0 0 8px;}
+.content-block{margin-top:24px;line-height:1.8;font-size:14px;}
+.content-block h2{font-family:'Noto Serif JP', serif;font-size:18px;margin:28px 0 10px;color:var(--vermillion-bright);}
+.content-block p{margin:0 0 12px;}
+.content-block ul{margin:0 0 12px;padding-left:1.4em;}
