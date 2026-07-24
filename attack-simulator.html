@@ -118,11 +118,16 @@
     background:#fbf3df;border-color:var(--gold);color:var(--paper);
   }
   table.sheet td.cell input.muted-cell:hover{border-color:#c9c0a4;}
+  table.sheet td.cell input.muted-cell:read-only{cursor:not-allowed;background:#e6e4dc;}
+  table.sheet td.cell input.muted-cell:read-only:hover{border-color:#dcd4bd;}
   .rank-pair{display:flex;gap:2px;}
   .rank-pair select{flex:1;}
   .effect-pair{display:flex;gap:2px;align-items:center;}
   .effect-pair input{flex:1;min-width:0;}
   .effect-pair .sep{font-size:10px;color:#5c6478;white-space:nowrap;padding:0 2px;}
+  /* 覇神絶域等の「総攻撃力/防御力上昇」表示: 通常の青枠(input)はそのまま活かし、文字色だけ変えて区別する */
+  .effect-pair input.total-boost-cell{color:var(--gold-bright);font-weight:700;font-size:11px;cursor:default;}
+  .effect-pair input.total-boost-inactive{color:#d0332a;font-weight:700;font-size:10px;cursor:default;}
   .total-row td{background:#f3efe1;}
   .total-row .row-label{color:var(--gold-bright);font-weight:700;}
   .total-cell{
@@ -150,7 +155,27 @@
   .tactics-bonus-value{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:12px;color:var(--gold-bright);white-space:nowrap;}
 
   .squad-total-row{display:grid;grid-template-columns:2fr 1fr;gap:12px;margin-top:16px;}
-  @media (max-width:640px){.squad-total-row{grid-template-columns:1fr;}}
+  .squad-total-row.cols-3{grid-template-columns:1.3fr 1fr 1.3fr;align-items:stretch;}
+  .squad-total-row.cols-4-compact{grid-template-columns:repeat(4,1fr);gap:10px;align-items:stretch;}
+  @media (max-width:640px){
+    .squad-total-row{grid-template-columns:1fr;}
+    .squad-total-row.cols-3{grid-template-columns:1fr;}
+    .squad-total-row.cols-4-compact{grid-template-columns:1fr 1fr;}
+  }
+  .squad-total-box.compact-box{
+    flex-direction:column;align-items:flex-start;gap:2px;padding:10px 12px;
+    /* 最終攻撃力/防御力(濃さ10)ほどではないが、背景(濃さ1)よりは視認できる中間の濃さ(目安4)にする */
+    background:linear-gradient(135deg, rgba(184,64,47,0.20), rgba(201,162,39,0.11));
+    border:1px solid rgba(184,64,47,0.5);
+  }
+  .compact-box .squad-total-label{font-size:11px;color:#7d6a5f;}
+  .compact-box .squad-total-value{font-size:16px;color:#a2503f;}
+  .compact-box .squad-total-formula{display:none;}
+  .compact-box .fame-input-compact{width:100%;background:var(--input-bg);border:1px solid var(--input-border);color:var(--paper);border-radius:4px;padding:6px 8px;font-family:'JetBrains Mono',monospace;font-size:14px;}
+  .activation-rate-box{flex-direction:column;align-items:stretch;gap:8px;}
+  .activation-rate-header{display:flex;align-items:center;justify-content:space-between;gap:8px;width:100%;}
+  .activation-rate-sub{display:flex;flex-direction:column;gap:4px;width:100%;}
+  .activation-rate-sub .tactics-bonus-badge{margin-top:0;width:100%;justify-content:space-between;}
   .squad-total-box{
     padding:14px 18px;border-radius:6px;
     background:linear-gradient(135deg, rgba(184,64,47,0.14), rgba(201,162,39,0.06));
@@ -160,6 +185,17 @@
   .squad-total-label{font-size:12.5px;color:var(--muted);white-space:nowrap;}
   .squad-total-formula{font-family:'JetBrains Mono',monospace;font-size:10.5px;color:#5a6272;flex:1;min-width:140px;}
   .squad-total-value{font-family:'Noto Serif JP',serif;font-weight:900;font-size:22px;color:var(--vermillion-bright);white-space:nowrap;}
+
+  /* 最終攻撃力/最終防御力: 部隊内で最も重要な結論の数値なので、濃い配色でひときわ目立たせる */
+  .squad-total-box.final-highlight-box{
+    background:linear-gradient(135deg, #7a4d10, #8c2c1f);
+    border:2px solid var(--gold-bright);
+    box-shadow:0 2px 12px rgba(122,77,16,0.35);
+  }
+  .final-highlight-box .squad-total-label{color:#f3e3bd;font-weight:700;}
+  .final-highlight-box .squad-total-value{color:#ffffff;text-shadow:0 1px 2px rgba(0,0,0,0.3);}
+  .final-highlight-box .squad-total-formula{color:#ecd9ae;}
+  .final-highlight-box .squad-conflict-msg{color:#ffb3a8;}
 
   .battle-var-box{
     display:flex;align-items:center;gap:12px;margin-bottom:12px;padding:10px 14px;
@@ -235,7 +271,7 @@
     <div>
       <div class="header-eyebrow">Squad Roster Sheet</div>
       <h1 id="mainTitle">部隊編成表・軍略盤(攻撃シミュレーター)</h1>
-      <div class="header-sub">部隊長・小隊1〜3、計4名分の武将データを入力する表です。現在は全項目を手入力できます(武将データベースに攻撃力情報が揃い次第、攻撃力・防御力・兵法値などの自動反映に対応予定)。</div>
+      <div class="header-sub">部隊長・小隊1〜3、計4名分の武将データを入力する表です。武将名・兵士・スキルを入力すると、攻撃力/防御力/兵法値・指揮兵士数・スキル効果・最終攻撃力/防御力などを自動計算します(武将データベース未登録の場合や、ステ振りで「バランス振り」を選んだ場合の攻撃力/防御力/兵法値は手入力できます)。</div>
       <div class="header-sub" id="futureFeatureNote" style="margin-top:3px;color:var(--gold);">※将来的に4合流攻撃導入予定</div>
     </div>
     <div style="display:flex;align-items:center;gap:12px;">
@@ -252,61 +288,43 @@
     <div class="legend"><span class="swatch blue"></span>手入力欄</div>
     <table class="sheet" id="basicTable"></table>
 
-    <div class="battle-var-box">
-      <div class="battle-var-label">名声<span class="battle-var-sub">(所持名声による自部隊への攻撃力/防御力上昇・部隊共通)</span></div>
-      <input type="number" id="fameInput" min="0" step="1" value="0">
-    </div>
-
-    <div class="squad-total-row">
+    <div class="squad-total-row cols-3">
       <div class="squad-total-box">
-        <div class="squad-total-label" id="squadTotalLabel">部隊合計攻撃力</div>
-        <div class="squad-total-formula" id="squadAtkFormula">-</div>
+        <div class="squad-total-label" id="squadTotalLabel">部隊攻撃力</div>
+        <div class="squad-total-formula" id="squadAtkFormula" style="display:none;">-</div>
         <div class="squad-total-value" id="squadAtkValue">0</div>
         <div class="squad-conflict-msg" id="squadAtkConflictMsg" style="display:none;"></div>
       </div>
       <div class="squad-total-box">
-        <div class="squad-total-label">合計指揮兵士数</div>
+        <div class="squad-total-label">指揮兵士数</div>
         <div class="squad-total-value" id="squadTroopsValue">0</div>
       </div>
+      <div class="squad-total-box activation-rate-box">
+        <div class="activation-rate-header">
+          <div class="squad-total-label">発動率ボーナス</div>
+          <div class="squad-total-value" id="activationRateBonusValue">+0.0%</div>
+        </div>
+        <div class="activation-rate-sub">
+          <div class="tactics-bonus-badge" id="tacticsBonusBox">
+            <span class="tactics-bonus-label">兵法値ボーナス</span>
+            <span class="tactics-bonus-value" id="tacticsBonusValue">+0.0%</span>
+          </div>
+          <div class="tactics-bonus-badge" id="rankBonusBox">
+            <span class="tactics-bonus-label">部隊ランクボーナス(★<span id="squadRankStars">0</span>)</span>
+            <span class="tactics-bonus-value" id="rankBonusValue">+0.0%</span>
+          </div>
+        </div>
+      </div>
     </div>
-    <details class="footnote" style="margin-top:0;">
-      <summary>計算式を表示</summary>
+    <details class="footnote" style="margin-top:8px;">
+      <summary>計算式を表示(部隊合計攻撃力/防御力)</summary>
       <div class="footnote-body">
         <b>計算式:</b> <span id="squadAtkFormulaHelpText">部隊合計攻撃力 = Σ(各武将攻撃力 + 指揮兵士数×兵士攻撃力) × 統率補正α。「兵士」欄で選んだ兵種の攻撃力(兵士データベース)を使用し、未選択の列は兵士攻撃力を0として計算します。
         この欄には名声補正・総攻撃力上昇(覇神絶域等)は含みません(これらは下の「最終攻撃力」欄の計算にのみ反映されます)。</span>
       </div>
     </details>
-
-    <div class="squad-total-row" style="grid-template-columns:1fr;margin-top:14px;">
-      <div class="squad-total-box" style="border-color:var(--gold);background:linear-gradient(135deg, rgba(201,162,39,0.18), rgba(184,64,47,0.08));">
-        <div class="squad-total-label" id="finalAtkLabel">最終攻撃力(期待値 / 最大値)</div>
-        <div class="squad-total-formula" id="finalAtkFormula">-</div>
-        <div class="squad-total-value" id="finalAtkValue">0</div>
-        <div class="squad-total-value" id="finalAtkMaxValue" style="font-size:15px;color:var(--muted);margin-top:2px;">最大値: 0</div>
-        <div class="squad-conflict-msg" id="finalAtkConflictMsg" style="display:none;"></div>
-      </div>
-    </div>
-    <details class="footnote" style="margin-top:8px;">
-      <summary id="finalAtkSummaryText">計算式を表示(総攻撃力上昇スキルの判定内訳を含む)</summary>
-      <div class="footnote-body">
-        <b>計算式:</b> <span id="finalAtkFormulaHelpText">最終攻撃力 = 部隊攻撃力 × 名声補正 × (1 + 攻撃力上昇(01スキル欄の16枠合計%) ÷ 100) × 総攻撃力上昇(覇神絶域等、対象兵科を指揮しているスキルのみ合算)。「計算する」ボタンを押すと更新されます。
-        卓越を持つスキルがある場合、期待値(平均)と最大値(卓越が毎回成功したと仮定)の両方を表示します。</span>
-        <div id="totalAtkBoostDebug" style="margin-top:6px;"></div>
-      </div>
-    </details>
-
-    <div style="display:flex;gap:10px;flex-wrap:wrap;">
-      <div class="tactics-bonus-badge" id="tacticsBonusBox">
-        <span class="tactics-bonus-label">兵法値ボーナス</span>
-        <span class="tactics-bonus-value" id="tacticsBonusValue">+0.0%</span>
-      </div>
-      <div class="tactics-bonus-badge" id="rankBonusBox">
-        <span class="tactics-bonus-label">部隊ランクボーナス(★<span id="squadRankStars">0</span>)</span>
-        <span class="tactics-bonus-value" id="rankBonusValue">+0.0%</span>
-      </div>
-    </div>
-    <details class="footnote" style="margin-top:8px;">
-      <summary>計算式を表示</summary>
+    <details class="footnote" style="margin-top:4px;">
+      <summary>計算式を表示(部隊ランクボーナス)</summary>
       <div class="footnote-body">
         <b>計算式:</b> 部隊ランクボーナスは、各武将の「ランク」欄(突破段階)から自動推測した武将ランク(限界突破=6、極限突破(+0.5)=7、天限突破(+0.5)=8、未配置の列は0)を4人分合計した値(★0〜32、部隊ランク)に応じた発動率上昇。
         ★12未満(★0〜★11)は+0%、★12=+1.95%〜★32=+12%(実測テーブルに基づく)。兵法値ボーナスとは別枠で加算し、実発動率に反映されます。
@@ -349,58 +367,54 @@
 
     <table class="sheet" id="skillEffectTable"></table>
 
-    <div class="squad-total-row" style="grid-template-columns:1fr;margin-top:14px;">
-      <div class="squad-total-box">
-        <div class="squad-total-label" id="squadSkillAtkLabel">攻撃力上昇(期待値 / 最大値)</div>
-        <div class="squad-total-formula" id="squadSkillAtkFormula">-</div>
+    <div class="squad-total-row cols-4-compact" style="margin-top:14px;">
+      <div class="squad-total-box compact-box">
+        <div class="squad-total-label" id="squadSkillAtkLabel">攻撃力上昇</div>
         <div class="squad-total-value" id="squadSkillAtkValue">0%</div>
-        <div class="squad-total-value" id="squadSkillAtkMaxValue" style="font-size:14px;color:var(--muted);margin-top:2px;">最大値: 0%</div>
+        <div class="squad-total-value" id="squadSkillAtkMaxValue" style="font-size:11px;color:var(--muted);">最大値: 0%</div>
       </div>
-    </div>
-    <details class="footnote" style="margin-top:8px;">
-      <summary>計算式を表示</summary>
-      <div class="footnote-body">
-        <b>計算式:</b> <span id="squadSkillAtkHelpText">4武将×初期/追加1/追加2/極限スキルの「上昇%」欄(16枠)の合計値をそのまま合算表示しています(部隊合計攻撃力の計算には含まれません)。
-        卓越(たくえつ)を持つスキルは、期待値(卓越確率で重み付けした平均)と最大値(卓越が必ず成功したと仮定した値)の両方を集計しています。</span>
+      <div class="squad-total-box compact-box">
+        <div class="squad-total-label">名声</div>
+        <input type="number" id="fameInput" min="0" step="1" value="0" class="fame-input-compact">
       </div>
-    </details>
-    <details class="footnote" style="margin-top:4px;">
-      <summary>期待値と最大値の違いについて</summary>
-      <div class="footnote-body">
-        卓越を持たないスキルは期待値=最大値です。卓越を持つスキルは、卓越確率に応じて発生する上振れを平均した値が「期待値」、卓越が毎回成功したと仮定した理論上の上限値が「最大値」です。
-      </div>
-    </details>
-
-    <div class="squad-total-row" style="grid-template-columns:1fr;margin-top:14px;">
-      <div class="squad-total-box">
+      <div class="squad-total-box compact-box">
         <div class="squad-total-label">部隊移動速度</div>
-        <div class="squad-total-formula" id="squadSpeedFormula">-</div>
         <div class="squad-total-value" id="squadSpeedValue">0</div>
-        <div class="squad-total-value" id="squadTravelTimeValue" style="font-size:14px;color:var(--muted);margin-top:4px;">-</div>
+        <div class="squad-total-value" id="squadTravelTimeValue" style="font-size:11px;color:var(--muted);">-</div>
       </div>
-    </div>
-    <details class="footnote" style="margin-top:8px;">
-      <summary>計算式を表示</summary>
-      <div class="footnote-body">
-        <b>計算式:</b> 部隊移動速度 = (1 + 16個のスキル(4武将×初期/追加1/追加2/極限)の「速度%」の総和÷100) × 兵士移動速度。
-        兵士移動速度は、部隊内で兵士を選択している列のうち最も遅い(最小の)ものを暫定的に採用しています(条件は今後調整予定)。
-        移動時間(秒) = (900 × 移動距離) ÷ 部隊移動速度 + 30。この式で距離1・5・10それぞれの移動時間を算出し、●分▲秒の形式で表示しています。
-      </div>
-    </details>
-
-
-    <div class="squad-total-row" style="grid-template-columns:1fr;margin-top:14px;">
-      <div class="squad-total-box">
+      <div class="squad-total-box compact-box">
         <div class="squad-total-label">部隊破壊力</div>
-        <div class="squad-total-formula" id="squadDestructFormula">-</div>
         <div class="squad-total-value" id="squadDestructValue">0</div>
       </div>
     </div>
     <details class="footnote" style="margin-top:8px;">
-      <summary>計算式を表示</summary>
+      <summary>計算式を表示(攻撃力上昇・名声・部隊移動速度・部隊破壊力)</summary>
       <div class="footnote-body">
-        <b>計算式:</b> 部隊破壊力 = (1 + 16個のスキルの「破壊%」の総和÷100) × Σ(その列の兵士破壊力 × その列の指揮兵士数)。
+        <b>攻撃力上昇:</b> <span id="squadSkillAtkHelpText">4武将×初期/追加1/追加2/極限スキルの「上昇%」欄(16枠)の合計値をそのまま合算表示しています(部隊合計攻撃力の計算には含まれません)。
+        卓越(たくえつ)を持つスキルは、期待値(卓越確率で重み付けした平均)と最大値(卓越が必ず成功したと仮定した値)の両方を集計しています。卓越を持たないスキルは期待値=最大値です。</span><br><br>
+        <b>名声:</b> 所持名声による自部隊への攻撃力/防御力上昇(部隊共通)。最終攻撃力/防御力の計算にのみ反映されます。<br><br>
+        <b>部隊移動速度:</b> <span id="squadSpeedFormula">-</span> 部隊移動速度 = (1 + 16個のスキルの「速度%」の総和÷100) × 兵士移動速度。兵士移動速度は、部隊内で兵士を選択している列のうち最も遅い(最小の)ものを暫定的に採用しています。
+        移動時間(秒) = (900 × 移動距離) ÷ 部隊移動速度 + 30。この式で距離1・5・10それぞれの移動時間を算出し、●分▲秒の形式で表示しています。<br><br>
+        <b>部隊破壊力:</b> <span id="squadDestructFormula">-</span> 部隊破壊力 = (1 + 16個のスキルの「破壊%」の総和÷100) × Σ(その列の兵士破壊力 × その列の指揮兵士数)。
         複数の兵科(兵士種)が部隊内に混在する場合は、兵科ごとに「兵士破壊力×指揮兵士数」を算出してから4列分を合算します(部隊内最低値を一律適用する方式ではありません)。
+      </div>
+    </details>
+
+    <div class="squad-total-row" style="grid-template-columns:1fr;margin-top:14px;">
+      <div class="squad-total-box final-highlight-box">
+        <div class="squad-total-label" id="finalAtkLabel">最終攻撃力(期待値 / 最大値)</div>
+        <div class="squad-total-formula" id="finalAtkFormula">-</div>
+        <div class="squad-total-value" id="finalAtkValue">0</div>
+        <div class="squad-total-value" id="finalAtkMaxValue" style="font-size:15px;color:#e8d6ae;margin-top:2px;">最大値: 0</div>
+        <div class="squad-conflict-msg" id="finalAtkConflictMsg" style="display:none;"></div>
+      </div>
+    </div>
+    <details class="footnote" style="margin-top:8px;">
+      <summary id="finalAtkSummaryText">計算式を表示(総攻撃力上昇スキルの判定内訳を含む)</summary>
+      <div class="footnote-body">
+        <b>計算式:</b> <span id="finalAtkFormulaHelpText">最終攻撃力 = 部隊攻撃力 × 名声補正 × (1 + 攻撃力上昇(01スキル欄の16枠合計%) ÷ 100) × 総攻撃力上昇(覇神絶域等、対象兵科を指揮しているスキルのみ合算)。「計算する」ボタンを押すと更新されます。
+        卓越を持つスキルがある場合、期待値(平均)と最大値(卓越が毎回成功したと仮定)の両方を表示します。</span>
+        <div id="totalAtkBoostDebug" style="margin-top:6px;"></div>
       </div>
     </details>
   </div>
@@ -447,7 +461,7 @@
   // ルール(ユーザー指定): 「更新した年月日.その日の通算更新回数」とする。
   // 日付が変わったら通算更新回数は1にリセットする(例: 2026-07-20の1回目の更新はv2026-07-20.1)。
   // 同じ日の中で仕様変更・バグ修正を行うたびに末尾の回数を+1する。
-  const SIMULATOR_VERSION = 'v2026-07-22.81';
+  const SIMULATOR_VERSION = 'v2026-07-24.16';
   document.addEventListener('DOMContentLoaded', ()=>{
     const badge = document.getElementById('simVersionBadge');
     if(badge) badge.textContent = SIMULATOR_VERSION;
@@ -883,7 +897,10 @@
       troopTypeTarget: '赤備え', // この兵種の兵士のみが対象
       // 鍛錬(TR)レベルごとの兵士攻撃力/防御力/移動速度への上昇値(絶対値、%ではない)。
       // TR3以降は追加で「攻撃に参加した自軍全部隊の帰還速度倍率」も発生する。
-      trTable: {
+      // 【2026年7月修正】フィールド名をtrTableからtroopBonusTableに変更(getActiveTroopStatBonus参照)。
+      // 至天ノ御旗のように「%上昇の主効果(trTable)」と「兵科限定の固定値ボーナス」を両方持つ
+      // スキルが出てきたため、両者が同じtrTableフィールドを取り合わないよう分離した。
+      troopBonusTable: {
         base:  { atk:10, def:10, speed:1 },                                    // LV10(鍛錬前)
         TR1:   { atk:11, def:11, speed:1, requiredPoints:10  },
         TR2:   { atk:12, def:12, speed:1, requiredPoints:40  },
@@ -1223,6 +1240,10 @@
     //    (例: 発動率10%・攻撃200%上昇のスキルを50%で模倣した場合、10%は無視して200%上昇を得る)
     //  ③重複不可(noSquadDuplicateフラグ)や発動数上限があるスキルは、オリジナルと模倣コピーが同時に
     //    発動する場合でも1つ分の効果のみが有効(2重取り不可)
+    // 実装フラグ: 「模倣スキル」はmimicsSquadLeaderInitialSkill(部隊長=col0の初期スキルを模倣元にする)、
+    // 「自模倣スキル」はmimicsOwnInitialSkill(自分自身の列の初期スキルを模倣元にする)で区別する。
+    // 【2026年7月修正】以前は自模倣スキルもmimicsSquadLeaderInitialSkillを使い回しており、部隊長以外の
+    // 列に置くと部隊長のスキルを誤って模倣元にしてしまうバグがあったため、フラグを分離した(ユーザー指摘)。
     '遁世影武者': {
       activationType: 'triggered', // ②: 攻撃したときに発動するタイプ(模倣の発動判定)
       baseRate: 50, // 確率+50%(模倣抽選のための固有確率。模倣元の発動率は無視される)
@@ -1728,13 +1749,15 @@
       targetTroopCategories: ['兵器兵科(砲兵科)'], // 対象:砲器
       variableFormula: {
         statTarget: 'def', base: 0, variable: 'defenderCount',
-        perUnitTable: { base:11.5, TR1:11.8, TR5:14, TR6:14.7 } // TR2〜TR4は情報源に記載なし。TR6はパラレル版No.31302で解禁(ixagno.blog.fc2.com確認)
+        perUnitTable: { base:11.5, TR1:11.8, TR2:12.2, TR3:12.7, TR4:13.3, TR5:14, TR6:14.7 } // TR6はパラレル版No.31302で解禁(ixagno.blog.fc2.com確認)
       },
-      rateTable: { base:60, TR1:60, TR5:100, TR6:100 }, // TR2〜TR4は情報源に記載なし
-      note: 'S(防御)。確率:LV10・TR1=+60%、TR5・TR6=+100%/対象:砲器。防御:(係数×防御参加武将数)%上昇、係数はLV10=11.5、TR1=11.8、TR5=14、TR6=14.7。' +
-            '「防御参加武将数」欄の入力で自動計算される(自動反映対応、TR2〜TR4は情報源に記載なくデータ不足)。' +
+      rateTable: { base:60, TR1:60, TR2:60, TR3:60, TR4:60, TR5:60, TR6:100 },
+      note: 'S(防御)。確率:LV10〜TR5=+60%、TR6=+100%/対象:砲器。防御:(係数×防御参加武将数)%上昇、係数はLV10=11.5、TR1=11.8、TR2=12.2、TR3=12.7、TR4=13.3、TR5=14、TR6=14.7。' +
+            '「防御参加武将数」欄の入力で自動計算される(自動反映対応)。' +
             '【2026年7月修正】パラレル【天】版(No.31302)でTR6が解禁されたためixagno.blog.fc2.comで確認し追加登録。' +
-            '【2026年7月修正】以前は計算エンジン未対応(参考データのみ)扱いにしていたが、既存のvariableFormula(defenderCount)機構で計算可能だったため対応した。'
+            '【2026年7月修正】以前は計算エンジン未対応(参考データのみ)扱いにしていたが、既存のvariableFormula(defenderCount)機構で計算可能だったため対応した。' +
+            '【2026年7月再修正】TR2〜TR4は以前欠番だったが、ixanary.comのスキルページでLV10〜TR6の全段階表を確認できたため追加登録。' +
+            'あわせて確率がTR5でも+60%のままであること(TR6でのみ+100%に上昇)が判明し、以前TR5=+100%と誤登録していた点も修正した(ユーザー指摘により再調査)。'
     },
     '不制于天地人': {
       noMimic: true,
@@ -2066,58 +2089,67 @@
       note: 'S(防御・模倣不可)。確率+100%/対象:全。防御:LV1=180%上昇、LV10=540%上昇、TR1=620%、TR2=760%、TR3=950%、TR4=1200%、TR5=1490%(自動反映対応)。「所領防御陣形に配置時のみ、この武将の最大指揮兵数は陣形内で最も最大指揮兵数の大きい武将と同数になる」は参考データのみ。島津義久(No.1285)の固有スキル。'
     },
     '八重言代主神': {
-      mimicsSquadLeaderInitialSkill: true, baseRate: 70,
-      note: 'SS(合成専用スキル・特)。確率:LV1+37%→LV10+70%/対象:自身。自身の持つ初期スキルを模倣する(戦闘スキルのみ、倍率補正なし)。基本の模倣機能を自動反映(遁世影武者と同種)。鍛錬TR別数値は情報源に記載なし。'
+      mimicsOwnInitialSkill: true, baseRate: 70,
+      note: 'SS(合成専用スキル・特)。確率:LV1+37%→LV10+70%/対象:自身。自身の持つ初期スキルを模倣する(戦闘スキルのみ、倍率補正なし)。基本の模倣機能を自動反映(遁世影武者と同種)。鍛錬TR別数値は情報源に記載なし。' +
+            '【2026年7月修正】「対象:自身」の自模倣スキルが部隊長の初期スキルを誤参照するバグがあったため、mimicsOwnInitialSkillフラグに分離し、自分自身の列を参照するよう修正した(ユーザー指摘)。'
     },
     '神屋楯比売命': {
-      mimicsSquadLeaderInitialSkill: true, baseRate: 70,
-      note: 'SS(合成専用スキル・特)。確率:LV1+37%→LV10+70%/対象:自身。自身の持つ初期スキルを模倣する(戦闘スキルのみ、倍率補正なし)。基本の模倣機能を自動反映。鍛錬TR別数値は情報源に記載なし。'
+      mimicsOwnInitialSkill: true, baseRate: 70,
+      note: 'SS(合成専用スキル・特)。確率:LV1+37%→LV10+70%/対象:自身。自身の持つ初期スキルを模倣する(戦闘スキルのみ、倍率補正なし)。基本の模倣機能を自動反映。鍛錬TR別数値は情報源に記載なし。' +
+            '【2026年7月修正】部隊長のスキルを誤参照していたバグを修正(mimicsOwnInitialSkillに分離、ユーザー指摘)。'
     },
     '高津姫神': {
-      mimicsSquadLeaderInitialSkill: true, baseRate: 70,
-      note: 'SS(合成専用スキル・特)。確率:LV1+37%→LV10+70%/対象:自身。自身の持つ初期スキルを模倣する(戦闘スキルのみ、倍率補正なし)。基本の模倣機能を自動反映。鍛錬TR別数値は情報源に記載なし。'
+      mimicsOwnInitialSkill: true, baseRate: 70,
+      note: 'SS(合成専用スキル・特)。確率:LV1+37%→LV10+70%/対象:自身。自身の持つ初期スキルを模倣する(戦闘スキルのみ、倍率補正なし)。基本の模倣機能を自動反映。鍛錬TR別数値は情報源に記載なし。' +
+            '【2026年7月修正】部隊長のスキルを誤参照していたバグを修正(mimicsOwnInitialSkillに分離、ユーザー指摘)。'
     },
     '写心伝意': {
-      mimicsSquadLeaderInitialSkill: true, baseRate: 55,
-      note: 'S(合成専用スキル・特)。確率:LV1+18%→LV10以降+55%/対象:自身。自身の持つ初期スキルを模倣する(倍率補正なし)。基本の模倣機能を自動反映。「部隊消費コスト削減(LV10:-1、TR1:-1.5、TR2:-2、TR3:-3、TR4・TR5は情報源に記載なし)」は参考データのみ。'
+      mimicsOwnInitialSkill: true, baseRate: 55,
+      note: 'S(合成専用スキル・特)。確率:LV1+18%→LV10以降+55%/対象:自身。自身の持つ初期スキルを模倣する(倍率補正なし)。基本の模倣機能を自動反映。「部隊消費コスト削減(LV10:-1、TR1:-1.5、TR2:-2、TR3:-3、TR4・TR5は情報源に記載なし)」は参考データのみ。' +
+            '【2026年7月修正】部隊長のスキルを誤参照していたバグを修正(mimicsOwnInitialSkillに分離、ユーザー指摘)。'
     },
     '盗賊のあかし': {
-      mimicsSquadLeaderInitialSkill: true, baseRate: 50,
+      mimicsOwnInitialSkill: true, baseRate: 50,
       mimicMultiplierTable: { base: 1, TR1: 1.1, TR2: 1.12, TR3: 1.15 },
       note: 'SS(合成専用スキル・特)。確率:LV1+16%→LV10+50%(鍛錬以降+50%で変わらず)/対象:自身(模倣)+全(速度上昇)。自身の初期スキルを模倣(LV10は等倍、TR1=1.1倍、TR2=1.12倍、TR3=1.15倍を自動反映)。' +
-            '「速度:100%上昇(LV10)、TR1=130%、TR2=180%、TR3=250%」は参考データのみ(計算エンジン未対応)。TR4・TR5は情報源に記載なし。'
+            '「速度:100%上昇(LV10)、TR1=130%、TR2=180%、TR3=250%」は参考データのみ(計算エンジン未対応)。TR4・TR5は情報源に記載なし。' +
+            '【2026年7月修正】部隊長のスキルを誤参照していたバグを修正(mimicsOwnInitialSkillに分離、ユーザー指摘)。'
     },
     'ためる': {
-      mimicsSquadLeaderInitialSkill: true, baseRate: 100,
+      mimicsOwnInitialSkill: true, baseRate: 100,
       mimicMultiplierTable: { base: 1.15, TR1: 1.17, TR2: 1.2, TR3: 1.25 },
-      note: 'SS(合成専用スキル・特)。確率+100%/対象:自身。LV1:等倍で模倣、LV10:1.15倍、TR1:1.17倍、TR2:1.2倍、TR3:1.25倍(自動反映)。「不屈1 兵站」は参考データのみ。TR4・TR5は情報源に記載なし。クイナ(No.2627)の固有スキルとは別(たべる参照)。'
+      note: 'SS(合成専用スキル・特)。確率+100%/対象:自身。LV1:等倍で模倣、LV10:1.15倍、TR1:1.17倍、TR2:1.2倍、TR3:1.25倍(自動反映)。「不屈1 兵站」は参考データのみ。TR4・TR5は情報源に記載なし。クイナ(No.2627)の固有スキルとは別(たべる参照)。' +
+            '【2026年7月修正】部隊長のスキルを誤参照していたバグを修正(mimicsOwnInitialSkillに分離、ユーザー指摘)。'
     },
     '天宇受売命': {
-      mimicsSquadLeaderInitialSkill: true, baseRate: 70,
+      mimicsOwnInitialSkill: true, baseRate: 70,
       mimicMultiplierTable: { base: 1.25 },
-      note: 'SSS(合成専用スキル・特)。確率:LV1 34%→LV10 70%/対象:自身。LV1:等倍で模倣、LV10:1.25倍にして模倣(自動反映)。鍛錬TR別数値は情報源に記載なし。'
+      note: 'SSS(合成専用スキル・特)。確率:LV1 34%→LV10 70%/対象:自身。LV1:等倍で模倣、LV10:1.25倍にして模倣(自動反映)。鍛錬TR別数値は情報源に記載なし。' +
+            '【2026年7月修正】部隊長のスキルを誤参照していたバグを修正(mimicsOwnInitialSkillに分離、ユーザー指摘)。'
     },
     '四至ノ神域': {
-      mimicsSquadLeaderInitialSkill: true, baseRate: 70,
+      mimicsOwnInitialSkill: true, baseRate: 70,
       mimicMultiplierTable: { base: 1.25 },
-      note: 'SSS(合成専用スキル・特)。確率:LV1 34%→LV10 70%/対象:自身。LV1:等倍で模倣、LV10:1.25倍にして模倣(自動反映)。天宇受売命と同一の効果内容(情報源記載のまま、別名スキルの可能性)。鍛錬TR別数値は情報源に記載なし。'
+      note: 'SSS(合成専用スキル・特)。確率:LV1 34%→LV10 70%/対象:自身。LV1:等倍で模倣、LV10:1.25倍にして模倣(自動反映)。天宇受売命と同一の効果内容(情報源記載のまま、別名スキルの可能性)。鍛錬TR別数値は情報源に記載なし。' +
+            '【2026年7月修正】部隊長のスキルを誤参照していたバグを修正(mimicsOwnInitialSkillに分離、ユーザー指摘)。'
     },
     '経津主神ノ剣': {
-      mimicsSquadLeaderInitialSkill: true, baseRate: 45,
+      mimicsOwnInitialSkill: true, baseRate: 45,
       mimicMultiplierTable: { base: 1.35, TR1: 1.36, TR2: 1.38, TR3: 1.4, TR4: 1.45, TR5: 1.5 },
-      note: 'SSS(合成専用スキル・特)。確率:LV1 15%→LV10 45%、TR1〜TR5は50%/対象:自身。LV10:1.35倍、TR1:1.36倍、TR2:1.38倍、TR3:1.4倍、TR4:1.45倍、TR5:1.5倍にして模倣(自動反映)。'
+      note: 'SSS(合成専用スキル・特)。確率:LV1 15%→LV10 45%、TR1〜TR5は50%/対象:自身。LV10:1.35倍、TR1:1.36倍、TR2:1.38倍、TR3:1.4倍、TR4:1.45倍、TR5:1.5倍にして模倣(自動反映)。' +
+            '【2026年7月修正】部隊長のスキルを誤参照していたバグを修正(mimicsOwnInitialSkillに分離、ユーザー指摘)。'
     },
     '至天ノ御剣': {
-      mimicsSquadLeaderInitialSkill: true, baseRate: 70,
+      mimicsOwnInitialSkill: true, baseRate: 70,
       mimicTakuetsu: { chance: 30, multiplier: 1.3 }, // 卓越:追加確率30%で1.3倍にして模倣(LV10)
       note: 'SSS(合成専用スキル・特)。確率:LV1+34%→LV10+70%/対象:自身。自身の初期スキルを模倣する(基本の模倣機能を自動反映、倍率補正なし)。「卓越:追加確率30%で通常攻撃／防御効果を1.3倍にして模倣」は自動反映対応(期待値/最大値ともに計算、mimicTakuetsu経由)。鍛錬TR別数値は情報源に記載なし(LV10の値をTR共通として使用)。' +
-            '【2026年7月修正】以前は参考データのみだったが、ユーザー指摘により全模倣スキルを点検し自動計算に対応した。'
+            '【2026年7月修正】以前は参考データのみだったが、ユーザー指摘により全模倣スキルを点検し自動計算に対応した。さらに部隊長のスキルを誤参照していたバグも修正(mimicsOwnInitialSkillに分離)。'
     },
     '虚空ノ導': {
-      mimicsSquadLeaderInitialSkill: true, baseRate: 70,
+      mimicsOwnInitialSkill: true, baseRate: 70,
       mimicTakuetsu: { chance: 30, multiplier: 1.3 }, // 卓越:追加確率30%で1.3倍にして模倣(LV10)
       note: 'SSS(合成専用スキル・特)。確率+70%(LV10)/対象:自身。自身の初期スキルを模倣する(基本の模倣機能を自動反映、倍率補正なし)。「卓越:追加確率30%で通常攻撃／防御効果を1.3倍にして模倣」は自動反映対応(期待値/最大値ともに計算、mimicTakuetsu経由)。LV1〜LV9・鍛錬TR別数値は情報源に記載なし。' +
-            '【2026年7月修正】以前は参考データのみだったが、ユーザー指摘により全模倣スキルを点検し自動計算に対応した。'
+            '【2026年7月修正】以前は参考データのみだったが、ユーザー指摘により全模倣スキルを点検し自動計算に対応した。さらに部隊長のスキルを誤参照していたバグも修正(mimicsOwnInitialSkillに分離)。'
     },
     '風狂幻術': {
       mimicsSquadLeaderInitialSkill: true, baseRate: 53,
@@ -2262,7 +2294,8 @@
       mimicsSquadLeaderInitialSkill: true, baseRate: 55,
       mimicMultiplierTable: { base: 1.15 },
       speedTrTable: { base: 200 },
-      note: 'SS(合成専用スキル・特)。確率:LV1+15%→LV10+55%/対象:部隊長(模倣)+全(速度上昇)。LV1は等倍、LV10は1.15倍にして模倣(自動反映)。「速度:LV1=30%上昇、LV10=200%上昇」は参考データのみ(自動反映は模倣倍率のみ)。鍛錬TR別数値は情報源に記載なし。'
+      note: 'SS(合成専用スキル・特)。確率:LV1+15%→LV10+55%/対象:部隊長(模倣)+全(速度上昇)。LV1は等倍、LV10は1.15倍にして模倣(自動反映)。「速度:LV1=30%上昇、LV10=200%上昇」(自動反映対応、speedTrTable経由)。鍛錬TR別数値は情報源に記載なし。' +
+            '【2026年7月修正】速度上昇はこのスキル自身が持つ模倣とは別枠の固定効果のため、模倣が成立した場合に限らず常に反映されるようapplyMimicrySkillsに追加対応した(ユーザー指摘)。'
     },
     '潔花咲然': {
       mimicsSquadLeaderInitialSkill: true, baseRate: 45,
@@ -2273,7 +2306,9 @@
     '瞬刻無影': {
       mimicsSquadLeaderInitialSkill: true, baseRate: 100,
       mimicMultiplierTable: { base: 1.1 },
-      note: 'S(特)。確率:LV1(部隊長対象)+15%・(全体対象)+100%→LV10(部隊長対象)+45%・(全体対象)+100%/対象:部隊長+全。LV1は等倍、LV10は1.1倍にして模倣(自動反映)。「速度:LV1=30%上昇、LV10=100%上昇」は参考データのみ。鍛錬TR別数値は情報源に記載なし。'
+      speedTrTable: { base: 100 }, // 速度:LV10=100%上昇(自身の固定効果。模倣とは別枠)
+      note: 'S(特)。確率:LV1(部隊長対象)+15%・(全体対象)+100%→LV10(部隊長対象)+45%・(全体対象)+100%/対象:部隊長+全。LV1は等倍、LV10は1.1倍にして模倣(自動反映)。「速度:LV1=30%上昇、LV10=100%上昇」(自動反映対応、speedTrTable経由)。鍛錬TR別数値は情報源に記載なし。' +
+            '【2026年7月修正】速度上昇はこのスキル自身が持つ模倣とは別枠の固定効果のため、模倣が成立した場合に限らず常に反映されるようapplyMimicrySkillsに追加対応した(ユーザー指摘)。'
     },
     '影国ノ加護': {
       noMimic: true,
@@ -2493,6 +2528,246 @@
       multiplyStatFields: ['val'],
       note: 'SSS(攻撃・模倣不可)。確率+100%/対象:全。攻撃:240%上昇(LV10、自動反映対応)。「対象兵科指揮時、極限スキルの攻撃効果が3.5倍(模倣不可)」: 自分自身の極限スキル枠(fx4)の攻撃%上昇を3.5倍(自動反映対応、天舞皆朱と同じ機構で実装)。' +
             '斎藤道三(No.1202)の固有スキル。TR(鍛錬)段階の数値は情報源に記載なし(LV10のみ登録)。'
+    },
+    '花信風': {
+      activationType: 'triggered', statTarget: 'def',
+      noMimic: false, // 模倣不可なのは特殊効果(ランダム防御力低下スキル無効化)のみで、防御%上昇の基本効果自体は模倣可能(ユーザー指摘により修正)
+      targetTroopCategories: ['弓兵科','兵器兵科(砲兵科)','兵器兵科(器兵科)'], // 対象:弓砲器
+      trTable: { base: 440, TR1: 510, TR2: 680, TR3: 890, TR4: 1330, TR5: 1770 },
+      baseRate: 100, // 確率+100%(鍛錬レベルによらず固定)
+      trRequiredPoints: { TR1:10, TR2:40, TR3:90, TR4:150, TR5:200 },
+      note: 'S(防御)。確率+100%/対象:弓/砲/器。防御%上昇(自動反映対応、模倣可): LV10(鍛錬前)=440% ／ TR1(10P)=510% ／ TR2(40P)=680% ／ TR3(90P)=890% ／ TR4(150P)=1330% ／ TR5(200P)=1770%。' +
+            '付随効果(模倣不可・部隊内重複不可・参考データのみ・計算エンジン未対応):所属部隊はランダムな部隊を対象とする防御力低下スキルの対象とならない。' +
+            '【2026年7月修正】模倣不可なのはこの特殊効果のみで、1770%上昇等の基本効果自体は模倣可能なためnoMimicをfalseに修正(ユーザー指摘)。' +
+            '【2026年7月再修正】同様に「部隊内重複不可」もこの特殊効果のみに掛かる記載だったが、noSquadDuplicateフラグを誤って本体につけていたため、' +
+            '瞬刻無影等で本スキルを模倣すると(模倣元が重複不可のため模倣コピー側は0にするという仕組みにより)1770%上昇が0%になってしまう不具合があった。noSquadDuplicateを削除して修正(ユーザー指摘)。' +
+            '春姫(No.2842)の固有スキル。ixanary.comで確認(2026年7月)。'
+    },
+    '神変機略': {
+      activationType: 'triggered', statTarget: 'atk',
+      trTable: { base: 420, TR1: 470, TR2: 520 },
+      baseRate: 100, // 確率+100%
+      trRequiredPoints: { TR1:10, TR2:40 },
+      skillActivationRateBonus: 3, // 自軍武将のスキル発動率+3%(LV10値。TR1:+4%、TR2:+5%と鍛錬で変化するが、本フィールドは固定値のためLV10値を登録)
+      note: 'A(攻撃)。確率+100%/対象:全。攻撃%上昇(自動反映対応): LV10(鍛錬前)=420% ／ TR1=470% ／ TR2=520%(TR3以降は情報源に記載なし)。' +
+            'さらに「自軍武将のスキル発動率上昇(重複効果無し)」を持ち、LV10=+3%、TR1=+4%、TR2=+5%(通常の発動率バフ、実発動率への加算は未実装。skillActivationRateBonusフィールドは固定値のためLV10値の3を登録)。' +
+            '宇佐美定満(No.2398)の固有スキル。ixanary.comで確認(2026年7月)。'
+    },
+    '怨龍烈牙': {
+      noMimic: true,
+      targetTroopCategories: ['槍兵科','弓兵科','兵器兵科(砲兵科)','兵器兵科(器兵科)'], // 対象:槍弓砲器
+      baseRate: 60, // 確率+60%(LV10)
+      // ============ 総防御力上昇(新カテゴリ) ============
+      // 覇神絶域の総攻撃力上昇と同型: 通常の「防御%上昇」スキル(trTable等・01スキル欄の16枠)とは
+      // 完全に別軸・独立した効果で、対象兵科を指揮した戦闘時に部隊総防御力へこの%を直接上乗せする。
+      totalDefBoostPct: 15, // 部隊総防御力15%上昇(LV10。模倣不可)
+      note: 'S(防御・模倣不可)。確率:LV1+20%→LV10+60%/対象:槍弓砲器。対象兵科指揮時、部隊総防御力がLV1:6%→LV10:15%上昇。' +
+            '「部隊総防御力上昇」は通常の防御%上昇スキル(01スキル欄)とは独立した別軸の効果で、総攻撃力上昇(覇神絶域等)の防御版として自動反映対応(totalDefBoostPct経由、最終防御力の計算にのみ反映)。' +
+            '長連龍(No.2471)の固有スキル。鍛錬TR別数値は情報源(ixanary.com)に記載なし(LV10のみ登録)。' +
+            '【2026年7月修正】以前は通常の防御%上昇スキル(trTable)として登録しており、01スキル欄の合計には反映されるが総攻撃力上昇と同様の「部隊総防御力上昇」という別軸効果としては未実装だったため、totalDefBoostPctを新設して対応した(ユーザー指摘)。'
+    },
+    '巌流燕返し': {
+      noMimic: true, noSquadDuplicate: true,
+      note: '(防御・模倣不可・重複不可)。確率+15%(LV10)。「防御戦闘時、攻撃側の各部隊内でもっとも兵法が高い武将の兵法値を0にする」という特殊効果のみで、攻撃/防御%上昇の値は無い。佐々木小次郎(No.2450)の固有スキル。相手の兵法値を書き換える効果のため計算エンジンは未実装(参考データのみ)。鍛錬TR別数値は情報源に記載なし。'
+    },
+    '八楯剛陣': {
+      trTable: { base: 210 }, baseRate: 100, // 防御210%上昇・確率+100%(LV10。LV1は90%)
+      note: 'S(防御)。確率+100%/対象:全。防御:LV1=90%上昇、LV10=210%上昇(自動反映対応)。「この武将が所属する陣・同盟陣は、陣・同盟陣を破壊するスキルから保護される(模倣不可)」は参考データのみ(防御%上昇部分は模倣可)。延沢満延(No.2456)の固有スキル。鍛錬TR別数値は情報源に記載なし。'
+    },
+    '聖光ノ遊星': {
+      baseRate: 100, // 確率+100%
+      note: 'S(防御)。確率+100%/対象:全。防御:所持名声×3%上昇(最大1000%、名声依存のため計算エンジン未実装・参考データのみ)。「防御戦闘で減少したHPと同数の名声を消費」も参考データのみ。ヴァリニャーノ(No.2458)の固有スキル。鍛錬TR別数値は情報源に記載なし。'
+    },
+    '立ち葵': {
+      noMimic: true,
+      note: '(特・模倣不可)。合戦中1回まで「葵紋の陣」を作成可能。「傑」を含む部隊でしか攻撃できず、陣破壊スキルに破壊されない/距離4以内の同盟員の陣も「葵紋の陣」となる。攻撃/防御%上昇は無く、陣形メカニクスのため計算エンジンは未実装(参考データのみ)。本多忠勝(No.2468)の固有スキル。鍛錬TR別数値は情報源に記載なし。'
+    },
+    '敢闘ノ気吹': {
+      activationType: 'triggered', statTarget: 'atk',
+      trTable: { base: 200 }, baseRate: 60, // 攻撃200%上昇・確率+60%(LV10)
+      note: 'S(攻撃)。確率+60%/対象:全。攻撃:200%上昇(自動反映対応)。「この武将と同じ兵種を指揮する敵軍武将数×10%を攻撃効果に加算」は敵軍情報に依存するため計算エンジン未実装(参考データのみ、固定200%部分のみ自動反映)。大久保忠世(No.2478)の固有スキル。鍛錬TR別数値は情報源に記載なし。'
+    },
+    '金烏砲声': {
+      activationType: 'triggered', statTarget: 'atk',
+      trTable: { base: 370 }, baseRate: 65, // 攻撃370%上昇(LV10)・確率:LV1+20%→LV10+65%
+      note: 'S(攻撃)。確率:LV1+20%→LV10+65%/対象:全。攻撃:370%上昇(自動反映対応、模倣可)。付随効果(参考データのみ・計算エンジン未対応):攻撃時、防御側の兵科補正をLV1=0.9倍→LV10=0.6倍に縮小(効果は累積するが有利不利は逆転しない、模倣不可)。' +
+            '【2026年7月修正】花信風(No.2842)と同様、模倣不可は付随効果(累積ルール)のみに掛かる記載で、攻撃%上昇の本体は模倣可能なため、noMimicを本体から外した(ユーザー指摘)。' +
+            '雑賀孫市(No.2479)の固有スキル。鍛錬TR別数値は情報源に記載なし。'
+    },
+    '江龍義咆': {
+      activationType: 'triggered', statTarget: 'def',
+      trTable: { base: 460, TR5: 800 }, baseRate: 100, // 防御:LV10=460%→TR5=800%・確率+100%
+      note: 'S(防御)。確率+100%/対象:全。防御:LV10=460%上昇→TR5(鍛錬最高段階)=800%上昇(自動反映対応、模倣可。TR1〜TR4は情報源に記載なし)。' +
+            '付随効果(模倣不可・参考データのみ・計算エンジン未対応):所領防御陣形に配置時、編成コスト消費をLV10:-5→TR5:-5.5する。' +
+            '【2026年7月修正】花信風(No.2842)と同様、模倣不可は付随効果(コスト軽減)のみに掛かる記載で、防御%上昇の本体は模倣可能なため、noMimicを本体から外した(ユーザー指摘)。' +
+            '浅井長政(No.2483)の固有スキル。'
+    },
+    '誓助ノ豪剣': {
+      noSquadDuplicate: true,
+      note: '(重複不可)。「母衣衆」の兵士攻撃力がLV10:+1→TR5(鍛錬最高段階):+2、兵士破壊力もTR5で+1される(効果範囲は所持者部隊の兵士のみ)。特定兵種への固定値ボーナスのため計算エンジンは未実装(参考データのみ)。貴田孫兵衛(No.2484)の固有スキル。TR1〜TR4は情報源に記載なし。'
+    },
+    '護城結鎖': {
+      activationType: 'triggered', statTarget: 'def',
+      trTable: { base: 460, TR1: 530, TR2: 700, TR3: 910, TR4: 1350, TR5: 1790 }, baseRate: 48, // 防御:LV10=460%→TR5=1790%・確率+48%(固定)
+      note: 'S(防御)。確率+48%(固定)/対象:本丸・所領防御陣形内でこの武将の縦横列に配置された武将と自身。防御%上昇(自動反映対応、模倣可、位置条件は未対応のため常時適用として計算): LV10=460% ／ TR1=530% ／ TR2=700% ／ TR3=910% ／ TR4=1350% ／ TR5=1790%。' +
+            '付随効果(模倣不可・重複不可・参考データのみ・計算エンジン未対応):「槍兵統率・兵器統率を一定値まで引き上げて防御力計算」。' +
+            '【2026年7月修正】花信風(No.2842)と同様、模倣不可・重複不可は付随効果(統率引き上げ)のみに掛かる記載で、防御%上昇の本体は模倣・重複とも可能なため、noMimic/noSquadDuplicateを本体から外した(ユーザー指摘)。' +
+            '奥村永福(No.2485)の固有スキル。'
+    },
+    '謀神ノ加護': {
+      noMimic: true,
+      targetTroopCategories: ['兵器兵科(砲兵科)','兵器兵科(器兵科)'], // 対象:砲器
+      baseRate: 58, // 確率+58%
+      hasSoar: true, soarValue: 24,
+      // 総防御力上昇(新カテゴリ・怨龍烈牙と同型): 通常の防御%上昇スキル(01スキル欄)とは独立した別軸の効果
+      totalDefBoostPctTable: { base: 15, TR5: 20 }, // 部隊総防御力:LV10=15%→TR5=20%(TR1〜TR4は情報源に記載なし)
+      note: 'S(防御・模倣不可)。確率+58%/対象:砲/器。対象兵科指揮時、部隊総防御力がLV10=15%→TR5(鍛錬最高段階)=20%上昇。' +
+            '「部隊総防御力上昇」は通常の防御%上昇スキル(01スキル欄)とは独立した別軸の効果で、総攻撃力上昇(覇神絶域等)の防御版として自動反映対応(totalDefBoostPctTable経由、最終防御力の計算にのみ反映、TR1〜TR4は情報源に記載なし)。' +
+            '飛翔24を持つ(soarValue:24)。三村家親(No.2487)の固有スキル。' +
+            '【2026年7月修正】以前は通常の防御%上昇スキル(trTable)として登録していたが、「部隊総防御力上昇」という別軸効果(総攻撃力上昇の防御版)として未実装だったため、totalDefBoostPctTableを新設して対応した(ユーザー指摘)。'
+    },
+    '武光照陣': {
+      activationType: 'triggered', statTarget: 'atk',
+      targetTroopCategories: ['弓兵科','騎馬兵科','兵器兵科(砲兵科)','兵器兵科(器兵科)'], // 対象:弓馬砲器
+      trTable: { base: 450, TR5: 1220 }, baseRate: 100, // 攻撃:LV10=450%→TR5=1220%・確率+100%
+      speedTrTable: { base: 135, TR5: 200 }, // 速度:LV10=135%→TR5=200%
+      note: 'S(攻撃・撤退)。確率+100%/対象:弓/馬/砲/器。攻撃:LV10=450%上昇→TR5(鍛錬最高段階)=1220%上昇、速度:LV10=135%→TR5=200%上昇(いずれも自動反映対応、TR1〜TR4は情報源に記載なし)。' +
+            '「自部隊同時攻撃時、最速部隊の移動時間で合流出陣可能」「攻撃参加全自軍部隊の帰還速度がLV10=4倍→TR5=6倍」は参考データのみ。北信景(No.2488)の固有スキル。'
+    },
+    '槍禅一如': {
+      activationType: 'triggered', statTarget: 'def',
+      trTable: { base: 420, TR1: 470, TR2: 570, TR3: 730, TR4: 980, TR5: 1340 }, baseRate: 10, // 防御:LV10=420%→TR5=1340%・確率+10%(固定)
+      note: 'S(防御)。確率+10%(固定)/対象:全。防御%上昇(自動反映対応、模倣可): LV10=420% ／ TR1=470% ／ TR2=570% ／ TR3=730% ／ TR4=980% ／ TR5=1340%。' +
+            '付随効果(模倣不可・参考データのみ・計算エンジン未対応):防御戦闘時に部隊兵士被害をLV10:5%→TR5:10%減少、敵軍の被害減少スキルをLV10:×0.7→TR5:×0.55で計算。' +
+            '【2026年7月修正】花信風(No.2842)と同様、模倣不可は付随効果(被害減少)のみに掛かる記載で、防御%上昇の本体は模倣可能なため、noMimicを本体から外した(ユーザー指摘)。' +
+            '加藤泰興(No.2489)の固有スキル。'
+    },
+    '天膂ノ闘士': {
+      activationType: 'triggered', statTarget: 'def', noMimic: true,
+      trTable: { base: 430, TR5: 1200 }, baseRate: 100, // 防御:LV10=430%→TR5=1200%・確率+100%
+      skillActivationRateBonus: 2, // 自軍武将のスキル発動率+2%(LV10値。TR5は+5%と鍛錬で変化するが、本フィールドは固定値のためLV10値を登録)
+      note: 'S(防御・模倣不可)。確率+100%/対象:全。防御:LV10=430%上昇→TR5(鍛錬最高段階)=1200%上昇(自動反映対応、TR1〜TR4は情報源に記載なし)。「部隊内武将防御力をLV10=1.4倍→TR5=1.5倍」「自軍武将のスキル発動率+2%(LV10)→+5%(TR5、自部隊内で最大4つまで重複可能)」は参考データのみ(skillActivationRateBonusはLV10値の2を登録)。坪井将監(No.2491)の固有スキル。'
+    },
+    '神明旗手': {
+      noMimic: true,
+      note: '(特・模倣不可)。「この武将が所有者の陣(同盟陣を含まない)に所属しているとき、所有者の所領防御陣形は所領の代わりにその陣を防御する(LV10では加えて所領防御陣形の各列の総防御力が0.5倍される。TR最高段階ではこの0.5倍補正が無くなる)」。攻撃/防御%上昇は無く、陣形メカニクスのため計算エンジンは未実装(参考データのみ)。天草四郎(No.2492)の固有スキル。TR段階の詳細は情報源に記載なし。'
+    },
+    '柳営ノ先剣': {
+      hasSoar: true, soarValue: 6,
+      note: '(特)。確率+35%/対象:3合流以上。飛翔6を持つ(soarValue:6)。「対人合流攻撃で倒した兵数に応じて攻撃参加者全員が銅銭獲得(LV10:6%→TR5(鍛錬最高段階):9%)」は参考データのみ(攻撃/防御%上昇は無い)。藤堂高虎(No.2494)の固有スキル。TR1〜TR4は情報源に記載なし。'
+    },
+    '天位智勇': {
+      activationType: 'triggered', statTarget: 'atk', noMimic: true,
+      trTable: { base: 460, TR5: 1450 }, baseRate: 100, // 攻撃:LV10=460%→TR5=1450%・確率+100%
+      skillActivationRateBonus: 15, // 自軍武将のスキル発動率+15%(LV10値。TR5は+20%と鍛錬で変化するが、本フィールドは固定値のためLV10値を登録)
+      takuetsuRateBonus: 5, // 卓越追加確率+5%(LV10値。TR5は+10%だが本フィールドは固定値のためLV10値を登録)
+      note: 'S(攻撃・模倣不可)。確率+100%/対象:全。攻撃:LV10=460%上昇→TR5(鍛錬最高段階)=1450%上昇(自動反映対応、TR1〜TR4は情報源に記載なし)。「部隊内武将スキル発動率+15%(LV10)→+20%(TR5)、卓越追加確率+5%(LV10)→+10%(TR5、自部隊内重複不可・初期スキル時のみ2倍)」も自動反映対応(skillActivationRateBonus/takuetsuRateBonusはLV10値を登録)。鍋島直茂(No.2495)の固有スキル。'
+    },
+    '砲術小雲雀': {
+      noMimic: true, noSquadDuplicate: true,
+      note: '(防御・模倣不可・重複不可)。本丸防御陣形または所領防御陣形にて発動。所属部隊の「雑賀衆」兵士防御力がLV10:+5→TR5(鍛錬最高段階):+8上昇、同じ陣形内の他部隊の「雑賀衆」兵士防御力もLV10:+1→TR5:+2.5上昇。特定兵種への固定値ボーナスのため計算エンジンは未実装(参考データのみ)。的場昌長(No.2496)の固有スキル。TR1〜TR4は情報源に記載なし。'
+    },
+    '虎狩': {
+      activationType: 'triggered', statTarget: 'def', noMimic: true, leaderOnly: true,
+      trTable: { base: 380, TR5: 820 }, baseRate: 100, // 防御:LV10=380%→TR5=820%・確率+100%
+      note: 'S(防御・模倣不可・部隊長時限定)。確率+100%/対象:全。防御:LV10=380%上昇→TR5(鍛錬最高段階)=820%上昇(自動反映対応、TR1〜TR4は情報源に記載なし)。「所属部隊のコストを合計LV10:6→TR5:2に置き換える代わりに攻撃出陣不可」は参考データのみ。長野業正(No.2497)の固有スキル。'
+    },
+    '太郎太刀・掃滅': {
+      noMimic: true, noSquadDuplicate: true,
+      note: '(模倣不可・重複不可)。所属部隊内の「長槍足軽」の兵士攻撃力と兵士防御力がLV10:+12→TR5(鍛錬最高段階):+16上昇。特定兵種への固定値ボーナスのため計算エンジンは未実装(参考データのみ)。真柄十郎左衛門(No.2499)の固有スキル。TR1〜TR4は情報源に記載なし。'
+    },
+    '商器偉才': {
+      noSquadDuplicate: true,
+      note: '(重複不可)。合戦中に獲得した総合ポイントの(0.9+武将ランク×0.3)%の銅銭を合戦終了時に獲得。攻撃/防御%上昇は無く、銅銭獲得系の効果のため計算エンジンは未実装(参考データのみ)。津田宗及(No.2501)の固有スキル。TR段階の詳細は情報源に記載なし。'
+    },
+    '黄昏る福音': {
+      activationType: 'triggered', noMimic: true,
+      trTable: { base: 35 }, baseRate: 100, // 攻撃35%上昇・防御35%上昇(同値のため共通のtrTableで代用)・確率+100%(LV10)
+      note: 'A(攻撃・防御・模倣不可)。確率+100%/対象:全。攻撃35%上昇・防御35%上昇(自動反映対応)。「同じ自拠点に所属または出陣する他の自部隊にも効果あり」は参考データのみ(部隊内自動反映分のみ計算)。ヴィレラ(No.2506)の固有スキル。鍛錬TR別数値は情報源に記載なし。'
+    },
+    '龍砕軒不便斎': {
+      noMimic: true,
+      note: '(特・模倣不可)。確率+100%/対象:追加スキル。このスキルを持つ武将カードは、追加スキルの速度効果が2倍となる。攻撃/防御%上昇は無く、他スキルの速度効果を倍加する特殊メカニクスのため計算エンジンは未実装(参考データのみ)。前田慶次(No.2509)の固有スキル。鍛錬TR別数値は情報源に記載なし。'
+    },
+    '砲神因子': {
+      activationType: 'triggered', statTarget: 'def',
+      targetTroopCategories: ['弓兵科','兵器兵科(砲兵科)','兵器兵科(器兵科)'], // 対象:弓砲器
+      trTable: { base: 270 }, baseRate: 50, // 防御270%上昇・確率+50%(LV10)
+      speedTrTable: { base: 50 }, // 速度50%上昇(LV10。確率+100%で防御側とは別枠だが、本フィールドは単一確率のためbaseRateには防御側の50%を採用)
+      note: 'C(防御・速度)。対象:弓/砲/器。防御:270%上昇・確率+50%(自動反映対応)。速度:50%上昇・確率+100%(防御とは別枠の確率だが、本ツールは1スキルにつき確率を1つしか保持できないため防御側の50%をbaseRateに採用、speedTrTable経由で速度%自体は自動反映対応)。' +
+            '「加勢出陣時は速度効果3倍」は参考データのみ(計算エンジン未対応)。鈴木重朝(No.3565)の固有スキル。鍛錬TR別数値は情報源に記載なし(LV10のみ登録)。'
+    },
+    '覇軍 悉国平定': {
+      activationType: 'triggered', noMimic: true, noSquadDuplicate: true, hasHado: true,
+      trTable: { base: 550 }, baseRate: 100, // 攻撃550%上昇・防御550%上昇(同値のため共通のtrTableで代用)・確率+100%
+      troopTypeTarget: '騎馬鉄砲', troopBonusTable: { base: { atk: 7, def: 7 } }, // 所属部隊の騎馬鉄砲兵士攻撃力・防御力+7(自動反映対応、getActiveTroopStatBonus経由)
+      note: 'SSS傑(攻防・模倣不可・重複不可・覇道)。確率+100%/対象:全。攻撃550%上昇・防御550%上昇(自動反映は攻撃分のみ、防御は同値、01スキル欄に反映)。「所属部隊の武将が持つスキルを無効化や発動率低下スキルから保護」は覇道タグとして自動反映対応(hasHado)。' +
+            '「所属部隊の騎馬鉄砲の兵士攻撃力・兵士防御力が+7される」は自動反映対応(troopTypeTarget/troopBonusTable経由、部隊内のどこかにこのスキルがあれば兵士に騎馬鉄砲を選択した列に自動加算)。' +
+            '以下は現時点で計算エンジン未実装のため参考データのみ: 同じ合流攻撃に参加する他部隊の「騎馬鉄砲」の攻撃力が+3される(この簡易シミュレーターは単一部隊のみを扱うため、合流他部隊への効果は対象外)/「黄金造り」の拠点配置時、武将攻撃力と武将防御力が1.5倍/本領・陣・出城が黄金造りになる・チャット文字色が金色・位階が正一位・陣獲得時レベル5などの装飾効果。' +
+            '【2026年7月修正】以前はスキル自体がspecialSkillsに未登録で、01スキル欄の550%上昇分すら反映されていなかった。550%上昇・覇道保護に続き、騎馬鉄砲+7/+7(自部隊分)も虎王烈迅と同じtroopTypeTarget機構(troopBonusTableに分離)で自動反映対応した(ユーザー指摘)。' +
+            '豊臣秀吉【傑】(No.20002)の固有効果。ixanary.comで確認(2026年7月)。'
+    },
+    '天魔絶界': {
+      activationType: 'triggered', noMimic: true, noSquadDuplicate: true, hasHado: true,
+      trTable: { base: 666 }, baseRate: 100, // 攻撃666%上昇・確率+100%
+      troopTypeTarget: '鉄砲足軽', troopBonusTable: { base: { atk: 7, def: 7 } }, // 所属部隊の鉄砲足軽兵士攻撃力・防御力+7(自動反映対応)
+      note: 'SSS傑(攻撃・模倣不可・重複不可・覇道)。確率+100%/対象:全。攻撃666%上昇(自動反映対応)。「所属部隊の武将が持つスキルを無効化や発動率低下スキルから保護」は覇道タグとして自動反映対応(hasHado)。' +
+            '「所属部隊の鉄砲足軽の兵士攻撃力・兵士防御力が+7される」は自動反映対応(troopTypeTarget/troopBonusTable経由)。' +
+            '以下は計算エンジン未実装のため参考データのみ: 合流攻撃時他部隊鉄砲足軽攻撃+3(単一部隊のみ扱うため対象外)/黄金化・文字色金化・正一位・陣Lv5化等の装飾効果。' +
+            '織田信長【傑】(No.20001)の固有効果。ixanary.comで確認(2026年7月)。'
+    },
+    '神威蓋世': {
+      activationType: 'triggered', noMimic: true, noSquadDuplicate: true, hasHado: true,
+      trTable: { base: 500 }, baseRate: 100, // 攻撃500%上昇・防御500%上昇(同値のため共通のtrTableで代用)・確率+100%
+      hasSoar: true, soarValue: 10,
+      troopTypeTarget: '焙烙火矢', troopBonusTable: { base: { atk: 7, def: 7 } }, // 所属部隊の焙烙火矢兵士攻撃力・防御力+7(自動反映対応)
+      note: 'SSS傑(攻防・模倣不可・重複不可・覇道)。確率+100%/対象:全。攻撃500%上昇・防御500%上昇(自動反映は攻撃分のみ、防御は同値)。飛翔10を持つ(soarValue:10)。「所属部隊の武将が持つスキルを無効化や発動率低下スキルから保護」は覇道タグとして自動反映対応(hasHado)。' +
+            '「所属部隊の焙烙火矢の兵士攻撃力・兵士防御力が+7される」は自動反映対応(troopTypeTarget/troopBonusTable経由)。' +
+            '以下は計算エンジン未実装のため参考データのみ: 合流攻撃時他部隊焙烙火矢攻撃+3(単一部隊のみ扱うため対象外)/合戦中1回まで「葵紋の陣」を作成(傑を含む部隊のみ攻撃可・陣破壊スキル無効・距離4以内の同盟陣も葵紋の陣化、立ち葵と同種の陣形メカニクス)/黄金化・文字色金化・正一位・陣Lv5化等の装飾効果。' +
+            '徳川家康【傑】(No.20003)の固有効果。ixanary.comで確認(2026年7月)。'
+    },
+    '至天ノ御旗': {
+      activationType: 'triggered', noMimic: true, noSquadDuplicate: true,
+      trTable: { base: 770 }, baseRate: 100, // 攻撃770%上昇・防御770%上昇(同値のため共通のtrTableで代用)・確率+100%
+      speedTrTable: { base: 350 }, // 速度350%上昇
+      troopTypeTarget: '赤備え', troopBonusTable: { base: { atk: 3, def: 3 } }, // 所属部隊の赤備え兵士攻撃力・防御力+3(自動反映対応)
+      note: 'SSS傑(攻防速・模倣不可・重複不可)。確率+100%/対象:全。攻撃770%上昇・防御770%上昇・速度350%上昇(自動反映対応、攻防は同値、速度はspeedTrTable経由)。' +
+            '「赤備え部隊の攻撃力・防御力が+3される」は自動反映対応(troopTypeTarget/troopBonusTable経由、虎王烈迅と同じ仕組み)。' +
+            '装飾効果(黄金化・正一位・陣Lv5化等)は参考データのみ。武田信玄【傑】(No.20004)の固有効果。ixanary.comで確認(2026年7月)。'
+    },
+    '神智天鏡': {
+      activationType: 'triggered', noMimic: true, noSquadDuplicate: true,
+      trTable: { base: 3600 }, baseRate: 100, // 攻撃3600%上昇・防御3600%上昇(同値のため共通のtrTableで代用)・確率+100%
+      skillActivationRateBonus: 10, takuetsuRateBonus: 15, // 自軍武将のスキル発動率+10%・卓越追加確率+15%(自動反映対応)
+      troopTypeTarget: '騎馬鉄砲', troopBonusTable: { base: { def: 1 } }, // 防御戦闘時のみ、自軍全武将の騎馬鉄砲防御+1(atkキー無しのため攻撃側には影響しない=防御戦闘時のみの仕様と自然に一致)
+      note: 'SSS傑(攻防・模倣不可・重複不可)。確率+100%/対象:全。攻撃3600%上昇・防御3600%上昇(自動反映対応、攻防は同値)。「部隊内武将スキル発動率+10%・卓越追加確率+15%」も自動反映対応(skillActivationRateBonus/takuetsuRateBonus経由)。' +
+            '「防御戦闘時、自軍全武将の騎馬鉄砲防御力+1」は自動反映対応(troopTypeTarget/troopBonusTableにdefのみ設定、getActiveTroopStatBonusは防御側計算時にのみdef分を参照するため、防御戦闘限定という条件が自然に満たされる)。' +
+            '「合流攻撃時他部隊鉄砲足軽攻撃+3」は計算エンジン未実装(単一部隊のみ扱うため対象外、参考データのみ)。黒田如水【傑】(No.20007)の固有効果。ixanary.comで確認(2026年7月)。'
+    },
+    '冥界ノ覇神': {
+      noMimic: true, // 「模倣不可」明記
+      baseRate: 100, // 確率+100%/対象:追加スキル
+      // このスキル自身には攻撃%上昇等の数値効果は無く、「追加スキルの攻撃・防御・破壊効果を倍加する」効果のみを持つ
+      // 純粋な倍率スキル(覇道ノ泰斗と同型)。同じ列(この武将自身)の追加1・追加2・極限スキル枠が対象。
+      multiplyAdditionalSkillsBy: 2.5, // LV10=2.5倍(鍛錬TR別数値は情報源に記載なし)
+      multiplyTargetFields: ['fx2','fx3','fx4'], // 追加1・追加2・極限スキル(初期スキルfx1は対象外)
+      multiplyStatFields: ['val','destruct'], // 攻撃%上昇(または防御%上昇)・破壊%上昇の両方が対象
+      note: 'SSS(模倣不可)。確率+100%/対象:追加スキル。このスキルを持つ武将カードは、追加スキル(追加1・追加2・極限)の攻撃・防御・破壊効果がLV10=2.5倍になる(自動反映対応、multiplyAdditionalSkillsBy経由、覇道ノ泰斗と同じ仕組み)。' +
+            '鍛錬TR別数値は情報源に記載なし(LV10のみ登録)。織田信長(No.1166)の固有スキル。ixanary.comで確認(2026年7月)。'
+    },
+    '天計千年鳳凰': {
+      noMimic: true, // 「模倣不可」明記
+      baseRate: 100, // 確率+100%/対象:追加スキル
+      // このスキル自身には攻撃%上昇等の数値効果は無く、「追加スキルの防御・破壊効果を倍加する」効果のみを持つ
+      // 純粋な倍率スキル(覇道ノ泰斗と同型)。同じ列(この武将自身)の追加1・追加2・極限スキル枠が対象。
+      // 【注記】情報源では「防御・破壊効果」のみが対象(攻撃は対象外)と記載されているが、本ツールのval欄は
+      // 攻撃/防御を区別せず倍加するため(既存の同種スキルと共通の簡略化)、極限枠等に攻撃系スキルを置いた場合も
+      // 一律で倍加される点は制限事項として残る。
+      multiplyAdditionalSkillsBy: 2.5, // LV10=2.5倍(LV1は1.2倍。鍛錬TR別数値は情報源に記載なし)
+      multiplyTargetFields: ['fx2','fx3','fx4'], // 追加1・追加2・極限スキル(初期スキルfx1は対象外)
+      multiplyStatFields: ['val','destruct'], // 防御%上昇・破壊%上昇が対象(値の型はval欄で代表)
+      note: 'SSS(防御・模倣不可)。確率+100%/対象:追加スキル。このスキルを持つ武将カードは、追加スキル(追加1・追加2・極限)の防御・破壊効果がLV1=1.2倍→LV10=2.5倍になる(自動反映対応、multiplyAdditionalSkillsBy経由、覇道ノ泰斗と同じ仕組み)。' +
+            '鍛錬TR別数値は情報源に記載なし(LV10のみ登録)。竹中半兵衛(No.1215)の固有スキル。ixanary.comで確認(2026年7月)。'
     }
   };
 
@@ -2741,8 +3016,13 @@
   // mimicsSquadLeaderInitialSkillを持つスキル(遁世影武者)がその列のどこかにあれば、
   // 部隊長(col=0)の初期スキルを特定し、模倣不可(noMimic)でなければその効果を、
   // 模倣元の発動率を無視して「模倣スキル自身の確率」で自分の枠(fx)に書き込む。
-  // 模倣元が「重複不可」(noSquadDuplicate)の場合、部隊長本人が同じスキルを持っている
-  // (=模倣元そのもの)ため、模倣コピー側の効果は0にする(1つ分のみ有効というルールの反映)。
+  // mimicsOwnInitialSkillを持つスキル(八重言代主神等、対象:自身の「自模倣」タイプ)は、
+  // 部隊長ではなく自分自身(その列)の初期スキルを模倣元とする。
+  // 【2026年7月修正】以前は自模倣スキルもmimicsSquadLeaderInitialSkillを使い回していたため、
+  // 部隊長以外の列に置くと部隊長のスキルを誤って模倣元にしてしまうバグがあった。
+  // mimicsOwnInitialSkillフラグに分離し、自模倣は自分の列を参照するよう修正した(ユーザー指摘)。
+  // 模倣元が「重複不可」(noSquadDuplicate)の場合、模倣元そのものと重複する
+  // (部隊長模倣なら部隊長本人、自模倣なら自分自身の初期スキル)ため、模倣コピー側の効果は0にする。
   function applyMimicrySkills(){
     const skillFieldToFx = { skillInit:'fx1', skillAdd1:'fx2', skillAdd2:'fx3', skillUltimate:'fx4' };
     const leaderSkillText = (sheetData[0] && sheetData[0]['skillInit']) || '';
@@ -2758,8 +3038,10 @@
         Object.keys(specialSkills).forEach(skName=>{
           if(!text.includes(skName)) return;
           const mimicSk = specialSkills[skName];
-          if(!mimicSk.mimicsSquadLeaderInitialSkill) return;
+          if(!mimicSk.mimicsSquadLeaderInitialSkill && !mimicSk.mimicsOwnInitialSkill) return;
           const fxKey = skillFieldToFx[fieldKey];
+          // 自模倣(mimicsOwnInitialSkill)は自分自身(この列)の初期スキルを、部隊長模倣は部隊長(col=0)の初期スキルを参照する
+          const sourceText = mimicSk.mimicsOwnInitialSkill ? ((sheetData[col] && sheetData[col]['skillInit']) || '') : leaderSkillText;
           // まず「模倣不成立(条件を満たさない)」場合のデフォルト値としてクリアしておく。
           // これにより、部隊長のスキルを変更して模倣元が変わった/模倣不可になった際に、
           // 古い模倣結果が残り続けてしまう不具合を防ぐ。
@@ -2774,11 +3056,11 @@
             if(speedInput) speedInput.value = '';
             if(destructInput) destructInput.value = '';
           };
-          if(!leaderSkillText){ clearFx(); return; }
-          // 部隊長の初期スキル欄から模倣元スキル名を特定(最長一致を優先)
+          if(!sourceText){ clearFx(); return; }
+          // 模倣元の初期スキル欄から模倣元スキル名を特定(最長一致を優先)
           let sourceSkillName = null;
           Object.keys(specialSkills).forEach(srcName=>{
-            if(leaderSkillText.includes(srcName)){
+            if(sourceText.includes(srcName)){
               if(!sourceSkillName || srcName.length > sourceSkillName.length) sourceSkillName = srcName;
             }
           });
@@ -2794,7 +3076,7 @@
           // 【2026年7月修正】模倣スキルを極限スキル枠に置いた場合でも、極限枠通常の1.2倍補正は適用しない
           // (ユーザー指摘: 模倣スキルは極限枠に置いても模倣元の記載通りの数値のまま反映される)。
           const ultimateMult = 1;
-          const trMatch = leaderSkillText.match(/TR(\d)/i);
+          const trMatch = sourceText.match(/TR(\d)/i);
           let effect, speed, destruct;
           if(sourceSk.variableFormula){
             const tierVar = (trMatch && sourceSk.variableFormula.perUnitTable && sourceSk.variableFormula.perUnitTable['TR'+trMatch[1]] !== undefined) ? 'TR'+trMatch[1] : 'base';
@@ -2884,12 +3166,22 @@
               effect = Math.round(effect * (1 + p * (mult - 1)) * 100) / 100;
             }
           }
-          // 重複不可: 部隊長本人が模倣元そのものを持っているため、模倣コピー側は0にする
-          if(sourceSk.noSquadDuplicate && col !== 0){
+          // 重複不可: 部隊長模倣なら部隊長本人が、自模倣なら自分自身が模倣元そのものを持っているため、模倣コピー側は0にする
+          // (部隊長模倣はcol===0=部隊長自身が模倣した場合のみ対象外。自模倣は定義上常に自分自身と重複するため常時0)
+          const duplicatesSource = mimicSk.mimicsOwnInitialSkill ? true : (col !== 0);
+          if(sourceSk.noSquadDuplicate && duplicatesSource){
             effect = 0;
             effectMax = 0;
             if(speed !== undefined) speed = 0;
             if(destruct !== undefined) destruct = 0;
+          }
+          // 模倣スキル自身が独自に持つ速度%上昇(刹那無影・瞬刻無影等、模倣とは別枠で「全」に常時発動する効果)。
+          // 模倣元(sourceSk)の速度ではなく、模倣スキル自身(mimicSk)のTR段階で判定する。
+          // 【2026年7月修正】以前はこの速度%上昇が完全に未反映(参考データのみ)だったが、ユーザー指摘により対応した。
+          if(mimicSk.speedTrTable){
+            const ownTrMatchSpeed = text.match(/TR(\d)/i);
+            const ownTierSpeed = (ownTrMatchSpeed && mimicSk.speedTrTable['TR'+ownTrMatchSpeed[1]] !== undefined) ? 'TR'+ownTrMatchSpeed[1] : 'base';
+            if(mimicSk.speedTrTable[ownTierSpeed] !== undefined) speed = mimicSk.speedTrTable[ownTierSpeed];
           }
           sheetData[col][fxKey] = {
             rate: String(mimicSk.baseRate), // 模倣元の発動率は無視し、模倣スキル自身の確率を使う
@@ -2940,6 +3232,66 @@
     if(nameInput) nameInput.classList.toggle('mujin-disabled-cell', disabled);
     const valInput = $(cellId('fx1', col, 'val'));
     if(valInput) valInput.classList.toggle('mujin-disabled-cell', disabled);
+  }
+
+  // 傑レアリティ(KETSU_RARITY_RULES.noSkillSlots: 初期スキル以外のスキル枠を持たない)の武将が
+  // 選ばれている列は、追加1・追加2・極限スキルの入力欄をreadonly化して手入力・貼り付けを禁止し、
+  // 「発動しないスキル」と同じ赤背景(mujin-disabled-cell)で強調する。
+  function updateKetsuSkillLock(col, isKetsu){
+    const fields = { skillAdd1:'fx2', skillAdd2:'fx3', skillUltimate:'fx4' };
+    Object.keys(fields).forEach(fieldKey=>{
+      const fxKey = fields[fieldKey];
+      const nameInput = $(cellId(fieldKey, col));
+      const valInput = $(cellId(fxKey, col, 'val'));
+      if(nameInput){
+        nameInput.readOnly = !!isKetsu;
+        nameInput.classList.toggle('mujin-disabled-cell', !!isKetsu);
+        if(isKetsu && sheetData[col] && sheetData[col][fieldKey]){
+          sheetData[col][fieldKey] = '';
+          nameInput.value = '';
+        }
+      }
+      if(valInput) valInput.classList.toggle('mujin-disabled-cell', !!isKetsu);
+      // 【2026年7月修正】スキル名欄だけでなく、対応する上昇%欄(fx2〜fx4)の値も残っていると
+      // 「01スキル」の合計欄に亡霊のように加算され続けてしまうため、傑判定時は数値側も必ずクリアする。
+      if(isKetsu && sheetData[col] && sheetData[col][fxKey]){
+        sheetData[col][fxKey] = { rate:'', val:'', valMax:'', speed:'', destruct:'' };
+        ['rate','val','speed','destruct'].forEach(sub=>{
+          const subInput = $(cellId(fxKey, col, sub));
+          if(subInput) subInput.value = '';
+        });
+      }
+    });
+    if(isKetsu) updateSkillEffectTotal(col);
+  }
+
+  // 突破ランクが「限界突破」の場合、まだ極限突破していないため極限スキル枠が無い。
+  // 傑武将の追加スキル欄と同じ処置(readonly化・貼り付け禁止・赤背景・数値クリア)を極限スキル欄のみに適用する。
+  function updateUltimateSkillLockByBreakthrough(col){
+    // 傑はupdateKetsuSkillLockが既に極限スキル欄を含む全スキル枠を常時ロックしているため、
+    // ここで誤って(限界突破でないという理由で)解除してしまわないよう対象外にする。
+    const entry = findGeneralEntry(sheetData[col] && sheetData[col]['general']);
+    if(entry && entry.rarity === '傑') return;
+    const locked = sheetData[col] && sheetData[col]['breakthrough'] === '限界突破';
+    const nameInput = $(cellId('skillUltimate', col));
+    const valInput = $(cellId('fx4', col, 'val'));
+    if(nameInput){
+      nameInput.readOnly = !!locked;
+      nameInput.classList.toggle('mujin-disabled-cell', !!locked);
+      if(locked && sheetData[col] && sheetData[col]['skillUltimate']){
+        sheetData[col]['skillUltimate'] = '';
+        nameInput.value = '';
+      }
+    }
+    if(valInput) valInput.classList.toggle('mujin-disabled-cell', !!locked);
+    if(locked && sheetData[col] && sheetData[col]['fx4']){
+      sheetData[col]['fx4'] = { rate:'', val:'', valMax:'', speed:'', destruct:'' };
+      ['rate','val','speed','destruct'].forEach(sub=>{
+        const subInput = $(cellId('fx4', col, sub));
+        if(subInput) subInput.value = '';
+      });
+    }
+    if(locked) updateSkillEffectTotal(col);
   }
 
   function updateMujinDisabledWarning(anyDisabled){
@@ -3630,7 +3982,7 @@
               const active = matchesTroopTarget(col, sk);
               const pct = sk.totalAtkBoostPct * mujinMult;
               const soldierName = (sheetData[col] && sheetData[col]['soldier']) || '(未選択)';
-              details.push({ col, skillName: skName, pct, soldier: soldierName, active });
+              details.push({ col, fk, skillName: skName, pct, soldier: soldierName, active });
               if(active) sumPct += pct;
             }
             // 雄飛新世のような、鍛錬段階(TR)別に部隊総攻撃力上昇%が変化するタイプ
@@ -3642,7 +3994,7 @@
               if(basePct !== undefined){
                 const pct = basePct * mujinMult;
                 const soldierName = (sheetData[col] && sheetData[col]['soldier']) || '(未選択)';
-                details.push({ col, skillName: skName, pct, soldier: soldierName, active });
+                details.push({ col, fk, skillName: skName, pct, soldier: soldierName, active });
                 if(active) sumPct += pct;
               }
             }
@@ -3655,7 +4007,67 @@
                 const perUnit = sk.totalAtkBoostPerMujinTable[tier];
                 if(perUnit !== undefined){
                   const pct = perUnit * mujinGeneralCount * mujinMult;
-                  details.push({ col, skillName: skName, pct, soldier: (sheetData[col] && sheetData[col]['soldier']) || '(未選択)', active });
+                  details.push({ col, fk, skillName: skName, pct, soldier: (sheetData[col] && sheetData[col]['soldier']) || '(未選択)', active });
+                  sumPct += pct;
+                }
+              }
+            }
+          }
+        });
+      });
+    }
+    return { multiplier: 1 + sumPct/100, sumPct, details };
+  }
+
+  // ============ 総防御力上昇(新カテゴリ)の合計倍率 ============
+  // computeSquadTotalAtkBoostMultiplierの防御版。怨龍烈牙・謀神ノ加護のようなtotalDefBoostPct(Table)を
+  // 持つスキルは、通常の防御%上昇スキル(01スキル欄・trTable)とは完全に独立した効果。
+  // 【2026年7月新設】以前は「部隊総防御力上昇」を謳うスキルも通常のtrTableスキルとして登録していたため、
+  // 攻撃側の「総攻撃力上昇」(覇神絶域等)と同じ独立効果であるべきところが、01スキル欄の通常上昇%と
+  // 見分けが付かない形になっていた不具合をユーザーが指摘、攻撃側と対になる仕組みとして新設した。
+  function computeSquadTotalDefBoostMultiplier(){
+    let sumPct = 0;
+    const details = [];
+    const skillFields = ['skillInit','skillAdd1','skillAdd2','skillUltimate'];
+    const mujinGeneralCount = countMujinHoldingGenerals();
+    const master = findMujinMasterInfo();
+    for(let col=0; col<4; col++){
+      skillFields.forEach(fk=>{
+        const text = (sheetData[col] && sheetData[col][fk]) || '';
+        if(!text) return;
+        Object.keys(specialSkills).forEach(skName=>{
+          if(text.includes(skName)){
+            const sk = specialSkills[skName];
+            const isMujinSlot = !!(sk.hasMujin || fk === 'skillUltimate');
+            const mujinMult = (master && isMujinSlot) ? master.multiplier : 1;
+            if(sk.totalDefBoostPct !== undefined){
+              const active = matchesTroopTarget(col, sk);
+              const pct = sk.totalDefBoostPct * mujinMult;
+              const soldierName = (sheetData[col] && sheetData[col]['soldier']) || '(未選択)';
+              details.push({ col, fk, skillName: skName, pct, soldier: soldierName, active });
+              if(active) sumPct += pct;
+            }
+            if(sk.totalDefBoostPctTable){
+              const active = matchesTroopTarget(col, sk);
+              const trMatch = text.match(/TR(\d)/i);
+              const tier = (trMatch && sk.totalDefBoostPctTable['TR'+trMatch[1]] !== undefined) ? 'TR'+trMatch[1] : 'base';
+              const basePct = sk.totalDefBoostPctTable[tier];
+              if(basePct !== undefined){
+                const pct = basePct * mujinMult;
+                const soldierName = (sheetData[col] && sheetData[col]['soldier']) || '(未選択)';
+                details.push({ col, fk, skillName: skName, pct, soldier: soldierName, active });
+                if(active) sumPct += pct;
+              }
+            }
+            if(sk.totalDefBoostPerMujinTable){
+              const active = matchesTroopTarget(col, sk);
+              if(active){
+                const trMatch = text.match(/TR(\d)/i);
+                const tier = (trMatch && sk.totalDefBoostPerMujinTable['TR'+trMatch[1]] !== undefined) ? 'TR'+trMatch[1] : 'base';
+                const perUnit = sk.totalDefBoostPerMujinTable[tier];
+                if(perUnit !== undefined){
+                  const pct = perUnit * mujinGeneralCount * mujinMult;
+                  details.push({ col, fk, skillName: skName, pct, soldier: (sheetData[col] && sheetData[col]['soldier']) || '(未選択)', active });
                   sumPct += pct;
                 }
               }
@@ -4119,7 +4531,7 @@
     ============================================ */
     { name:'織田信長【傑】', no:'20001', initialSkill:'天魔絶界', rarity:'傑', lv0Troops:25000, atkBase:70000, atkGrowth:0, defBase:50000, defGrowth:0, tacticsBase:5000, tacticsGrowth:0, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。Cost5。固有効果「天魔絶界」: 所属部隊の鉄砲足軽攻防+7、合流攻撃時他部隊鉄砲足軽攻撃+3、確率+100%/対象全/攻撃666%上昇(模倣・重複不可、スキル無効化から保護)。装飾効果(黄金化・文字色金化・正一位・陣Lv5化)は参考データのみ。' },
     { name:'豊臣秀吉【傑】', no:'20002', initialSkill:'覇軍 悉国平定', rarity:'傑', lv0Troops:24000, atkBase:60000, atkGrowth:0, defBase:60000, defGrowth:0, tacticsBase:5500, tacticsGrowth:0, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。Cost5。固有効果「覇軍 悉国平定」: 騎馬鉄砲強化系複合効果を保有(詳細数値は情報源に未掲載)。装飾効果は参考データのみ。' },
-    { name:'徳川家康【傑】', no:'20003', initialSkill:'神威蓋世', rarity:'傑', lv0Troops:25000, atkBase:65000, atkGrowth:0, defBase:65000, defGrowth:0, tacticsBase:5000, tacticsGrowth:0, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。Cost5。固有効果「神威蓋世」(詳細数値は情報源に未掲載)。装飾効果は参考データのみ。' },
+    { name:'徳川家康【傑】', no:'20003', initialSkill:'神威蓋世', rarity:'傑', lv0Troops:25000, atkBase:65000, atkGrowth:0, defBase:65000, defGrowth:0, tacticsBase:5000, tacticsGrowth:0, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。Cost5。固有効果「神威蓋世」: 確率+100%/対象全/攻撃500%・防御500%上昇・飛翔10、所属部隊の焙烙火矢攻防+7、合流攻撃時他部隊焙烙火矢攻撃+3、覇道保護(specialSkills登録済み・自動反映対応)。「葵紋の陣」作成効果・装飾効果は参考データのみ。' },
     { name:'武田信玄【傑】', no:'20004', initialSkill:'至天ノ御旗', rarity:'傑', lv0Troops:10000, atkBase:55000, atkGrowth:0, defBase:55000, defGrowth:0, tacticsBase:6000, tacticsGrowth:0, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。Cost6。固有効果「至天ノ御旗」: 確率100%で対象全体に攻撃770%・防御770%・速度350%上昇、赤備え部隊の攻防+3(模倣・重複不可)。装飾効果は参考データのみ。' },
     { name:'足利義昭【傑】', no:'20005', initialSkill:'天網鎖陣', rarity:'傑', lv0Troops:9000, atkBase:65000, atkGrowth:0, defBase:0, defGrowth:0, tacticsBase:6000, tacticsGrowth:0, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。Cost0。防御力0の攻撃特化型。固有効果「天網鎖陣」(詳細数値は情報源に未掲載)。装飾効果は参考データのみ。' },
     { name:'伊達政宗【傑】', no:'20006', initialSkill:'紫電ノ龍将', rarity:'傑', lv0Troops:9500, atkBase:6800, atkGrowth:0, defBase:0, defGrowth:0, tacticsBase:5500, tacticsGrowth:0, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。Cost3。防御力0。固有効果「紫電ノ龍将」(詳細数値は情報源に未掲載)。装飾効果(黄金化・正一位・陣Lv5化)は参考データのみ。' },
@@ -4187,6 +4599,7 @@
 
     /* ============ ユーザー厳選の極武将リスト・チャンク2/3(No.2515〜2759) ============ */
     { name:'花舜夫人', no:'2515', initialSkill:'花舜妙覚', lv0Troops:2540, atkBase:970, atkGrowth:30, defBase:970, defGrowth:30, tacticsBase:500, tacticsGrowth:2.5, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。職業「姫」。Cost2。固有スキル「防:花舜妙覚」(A)。' },
+    { name:'風魔小太郎', no:'2552', initialSkill:'木遁封魔', lv0Troops:4430, atkBase:1080, atkGrowth:45, defBase:1080, defGrowth:45, tacticsBase:510, tacticsGrowth:3.0, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。職業「忍」。Cost4.5。固有スキル「特:木遁封魔」(S)。木遁封魔自体はspecialSkills登録済み(部隊長の初期スキルを模倣、LV10=1.1倍)。' },
     { name:'百地三太夫(2553)', no:'2553', initialSkill:'火遁閻火', lv0Troops:4430, atkBase:1050, atkGrowth:40, defBase:900, defGrowth:22, tacticsBase:510, tacticsGrowth:3.0, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。職業「忍」。Cost4.5。固有スキル「火遁閻火」(S)。既存の百地三太夫(No.10062)とは別カードのためNo.を併記。' },
     { name:'藤堂高虎(2565)', no:'2565', initialSkill:'騎虎勇道', lv0Troops:4750, atkBase:1220, atkGrowth:64, defBase:1120, defGrowth:50, tacticsBase:540, tacticsGrowth:3.0, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。職業「将」。Cost5。固有スキル「騎虎勇道」(S)。同じく藤堂高虎(No.2494)とは別カードのためNo.を併記。' },
     { name:'吉乃(2566)', no:'2566', initialSkill:'天魔ノ寵愛', lv0Troops:3000, atkBase:1060, atkGrowth:46, defBase:1180, defGrowth:55, tacticsBase:510, tacticsGrowth:3.0, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。職業「将」。Cost2。固有スキル「防:天魔ノ寵愛」(S)。同じく吉乃(No.2167)とは別カードのためNo.を併記。' },
@@ -4281,8 +4694,9 @@
     { name:'松永久秀(2921)', no:'2921', initialSkill:'災禍ノ老仙', lv0Troops:1500, atkBase:700, atkGrowth:15, defBase:700, defGrowth:15, tacticsBase:600, tacticsGrowth:2.5, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。職業「将」。Cost1。固有スキル「防:災禍ノ老仙」(A)。同じく松永久秀(No.2091)とは別カードのためNo.を併記。' },
     { name:'ねね(2946)', no:'2946', initialSkill:'王佐ノ才', lv0Troops:3260, atkBase:1070, atkGrowth:37, defBase:1000, defGrowth:30, tacticsBase:510, tacticsGrowth:2.5, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。職業「姫」。Cost3。固有スキル「王佐ノ才」(B)。既存のねね(No.10047)とは別カードのためNo.を併記。' },
     { name:'石川五右衛門', no:'2953', initialSkill:'天下の義賊', lv0Troops:3300, atkBase:770, atkGrowth:13, defBase:690, defGrowth:17, tacticsBase:520, tacticsGrowth:2.5, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。職業「忍」。Cost3.5。固有スキル「特:天下の義賊」(C)。' },
-    { name:'甲賀弦之介', no:'2988', initialSkill:'幻惑の瞳術', lv0Troops:3740, atkBase:1000, atkGrowth:29, defBase:1000, defGrowth:32, tacticsBase:480, tacticsGrowth:2.5, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。職業「忍」。Cost4。固有スキル「幻惑の瞳術」(A、防御スキル)。' },
+    { name:'甲賀弦之介', no:'2988', initialSkill:'幻惑の瞳術', lv0Troops:3740, atkBase:1000, atkGrowth:29, defBase:1040, defGrowth:32, tacticsBase:480, tacticsGrowth:2.5, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'職業「忍」。Cost4。固有スキル「幻惑の瞳術」(A、防御スキル)。防御初期値はixanary.comで1000と確認していたが、ユーザー指摘により1040に修正(2026年7月)。' },
     { name:'朧', no:'2989', initialSkill:'破幻の瞳', lv0Troops:3720, atkBase:1020, atkGrowth:30, defBase:1020, defGrowth:30, tacticsBase:510, tacticsGrowth:2.5, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。職業「忍」。Cost4。固有スキル「破幻の瞳」(A)。' },
+    { name:'鈴木重朝', no:'3565', initialSkill:'砲神因子', lv0Troops:2390, atkBase:860, atkGrowth:26, defBase:890, defGrowth:31, tacticsBase:480, tacticsGrowth:2.0, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。職業「忍」。Cost2。固有スキル「防速:砲神因子」(C)。' },
     { name:'片倉小十郎', no:'7003', initialSkill:'覇業ノ楔', lv0Troops:3250, atkBase:1140, atkGrowth:46, defBase:1050, defGrowth:36, tacticsBase:530, tacticsGrowth:2.5, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。職業「将」。Cost0。固有スキル「特:覇業ノ楔」(A)。' },
     { name:'池田輝政', no:'7008', initialSkill:'西国将軍', lv0Troops:3790, atkBase:1140, atkGrowth:46, defBase:1050, defGrowth:36, tacticsBase:560, tacticsGrowth:2.5, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。職業「将」。Cost0。固有スキル「攻破:西国将軍」(A)。' },
     { name:'蒲生氏郷', no:'7403', initialSkill:'白銀双鶴', lv0Troops:4400, atkBase:1240, atkGrowth:65, defBase:1090, defGrowth:53, tacticsBase:560, tacticsGrowth:3.0, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。極レアリティ・職業「将」・Cost4。固有スキル「攻速:白銀双鶴」(S、specialSkills参照・自動反映対応)。既存の蒲生氏郷(2)(No.1265)とは別カード。' },
@@ -4324,7 +4738,9 @@
     { name:'おまつ(40072)', no:'40072', initialSkill:'百万石ノ慈雨', isParallel: true, lv0Troops:4900, atkBase:1270, atkGrowth:72, defBase:1080, defGrowth:48, tacticsBase:670, tacticsGrowth:3.5, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'パラレル【天】カード・期間限定(ixagno.blog.fc2.com確認、2026年7月)。No.10072(おまつ)と能力値・成長値は同一、固有スキル「百万石ノ慈雨」がTR6まで鍛錬可能になった点のみ異なる。' },
     { name:'佐々成政(40073)', no:'40073', initialSkill:'氷嶺不撓', isParallel: true, lv0Troops:5290, atkBase:1270, atkGrowth:72, defBase:1100, defGrowth:51, tacticsBase:680, tacticsGrowth:3.5, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'パラレル【天】カード・期間限定(ixagno.blog.fc2.com確認、2026年7月)。No.10073(佐々成政)と能力値・成長値は同一、固有スキル「氷嶺不撓」がTR6まで鍛錬可能になった点のみ異なる。' },
     { name:'俵屋宗達', no:'2825', initialSkill:'嵐下墨炎', lv0Troops:3350, atkBase:850, atkGrowth:20, defBase:850, defGrowth:20, tacticsBase:620, tacticsGrowth:3, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。職業「文」。Cost3。固有スキル「特:嵐下墨炎」(S、specialSkills登録済み)。' },
-    { name:'斎藤道三(1202)', no:'1202', initialSkill:'蛇神咆哮', isHa:true, lv0Troops:5100, atkBase:1260, atkGrowth:69, defBase:1230, defGrowth:45, tacticsBase:740, tacticsGrowth:3.5, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。レアリティ「天」・職業「覇」。Cost5.5。固有スキル「攻:蛇神咆哮」(SSS、specialSkills登録済み)。既存の斎藤道三(3)(No.1297)とは別カードのためNo.を併記。' }
+    { name:'斎藤道三(1202)', no:'1202', initialSkill:'蛇神咆哮', isHa:true, lv0Troops:5100, atkBase:1260, atkGrowth:69, defBase:1230, defGrowth:45, tacticsBase:740, tacticsGrowth:3.5, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。レアリティ「天」・職業「覇」。Cost5.5。固有スキル「攻:蛇神咆哮」(SSS、specialSkills登録済み)。既存の斎藤道三(3)(No.1297)とは別カードのためNo.を併記。' },
+    { name:'織田信長(1166)', no:'1166', initialSkill:'冥界ノ覇神', lv0Troops:4620, atkBase:1240, atkGrowth:72, defBase:1240, defGrowth:57, tacticsBase:730, tacticsGrowth:3.5, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。レアリティ「天」・職業「覇」。Cost5。固有スキル「攻防:冥界ノ覇神」(SSS、specialSkills登録済み)。既存の織田信長(No.1997・No.1250・No.1286等)とは別カードのためNo.を併記。' },
+    { name:'竹中半兵衛(1215)', no:'1215', initialSkill:'天計千年鳳凰', lv0Troops:4690, atkBase:1240, atkGrowth:52, defBase:1270, defGrowth:72, tacticsBase:800, tacticsGrowth:4.0, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。レアリティ「天」・職業「覇」。Cost5。固有スキル「防:天計千年鳳凰」(SSS、specialSkills登録済み)。既存の竹中半兵衛(智絶千算・No.1275等)とは別カードのためNo.を併記。' }
   ];
 
   // ============ 未登録スキルのエラー表示 ============
@@ -4482,6 +4898,12 @@
       const statAlloc = (sheetData[col] && sheetData[col]['statAlloc']) || entry.defaultStatAlloc || '攻撃振り';
       const isKoshouraiHolder = (col === koshouraiHolderCol);
 
+      // 傑はnoSkillSlots(初期スキル以外のスキル枠を持たない)のため、追加1・追加2・極限スキル欄を
+      // readonly化して赤背景で強調する(手入力・貼り付け不可)。
+      updateKetsuSkillLock(col, isKetsu);
+      // 限界突破(まだ極限突破していない)の場合は極限スキル欄のみ同様にロックする。
+      updateUltimateSkillLockByBreakthrough(col);
+
       // 傑は統率ランクが全兵科自動的にXXXになるため、①②をXXXに固定表示する
       if(isKetsu && KETSU_RARITY_RULES.allRanksXXX){
         sheetData[col]['rank'] = { r1: 'XXX', r2: 'XXX' };
@@ -4512,7 +4934,13 @@
       // 指揮兵士数はステ振りと無関係。ランク別実測値があればそれを優先し、
       // なければ lv0Troops + 汎用計算式(calcTroopsForBreakthrough)で算出する。
       let rawTroops = null;
-      if(entry.statsByRank && entry.statsByRank[breakthroughType] && entry.statsByRank[breakthroughType].troops !== undefined){
+      if(isKetsu && entry.lv0Troops !== undefined){
+        // 傑レアリティはKETSU_RARITY_RULES.rankLevelZero(ランク/レベル常に0、ランクアップ合成の対象外)のため、
+        // 指揮兵数は常にカード記載値のまま固定で、突破ランクによる増加は発生しない。
+        // 【2026年7月修正】以前は他レアリティと同じcalcTroopsForBreakthroughを通しており、
+        // 天限突破扱い(treatedAsBreakthrough)の分だけ兵数が加算されてしまっていた(24000→26200等の不具合)。
+        rawTroops = entry.lv0Troops;
+      } else if(entry.statsByRank && entry.statsByRank[breakthroughType] && entry.statsByRank[breakthroughType].troops !== undefined){
         rawTroops = entry.statsByRank[breakthroughType].troops;
       } else if(entry.lv0Troops !== undefined){
         rawTroops = calcTroopsForBreakthrough(entry.lv0Troops, breakthroughType, !!entry.isHa);
@@ -4586,6 +5014,67 @@
     saveSheet();
     if(typeof updateAllEffectiveRates === 'function') updateAllEffectiveRates();
     if(typeof renderSquadTotalAttack === 'function') renderSquadTotalAttack();
+  }
+
+  // value = base + growth×N となる非負整数Nを返す(突破ポイントの配分数に相当)。
+  // 整数倍でなければnullを返す。growthが0の場合はvalueがbaseと一致する場合のみ0を返す。
+  function computeAllocatedPoints(value, base, growth){
+    if(isNaN(value)) return null;
+    if(!growth){
+      return (Math.abs(value - base) < 0.01) ? 0 : null;
+    }
+    const raw = (value - base) / growth;
+    const rounded = Math.round(raw);
+    if(rounded < 0) return null;
+    if(Math.abs(raw - rounded) > 0.01) return null; // 成長値の整数倍ではない
+    return rounded;
+  }
+
+  // ============ バランス振り手入力欄のバリデーション ============
+  // 「バランス振り」選択時のみ手入力できる攻撃力・防御力・兵法値欄について、ユーザー指定の2つのルールを適用する:
+  //  ①各欄の値は、その武将の初期値+成長値×整数(=整数個の突破ポイント配分)でなければならない。
+  //    条件を満たさない欄は、その欄だけ手入力フラグを解除して自動計算値に戻す。
+  //  ②3ステータス(攻撃・防御・兵法値)の配分ポイント合計が、選択中の突破ランクの上限(例: 天限突破=690)を
+  //    超える場合は、3欄すべての手入力フラグを解除して自動計算値に戻す(①のチェックを通過した場合のみ判定)。
+  function validateBalancedStatInput(col){
+    if(!sheetData[col] || sheetData[col]['statAlloc'] !== 'バランス振り') return;
+    const entry = findGeneralEntry(sheetData[col]['general']);
+    if(!entry) return; // データベース未登録の武将は成長値が分からないため検証しない
+
+    const isKetsu = (entry.rarity === '傑');
+    const breakthroughType = isKetsu
+      ? KETSU_RARITY_RULES.treatedAsBreakthrough
+      : (sheetData[col]['breakthrough'] || entry.defaultBreakthrough);
+    const maxPoints = BREAKTHROUGH_POINTS[breakthroughType] || 0;
+
+    const statDefs = {
+      atk: { base: entry.atkBase, growth: entry.atkGrowth },
+      def: { base: entry.defBase, growth: entry.defGrowth },
+      tactics: { base: entry.tacticsBase, growth: entry.tacticsGrowth }
+    };
+
+    const points = {};
+    Object.keys(statDefs).forEach(key=>{
+      const raw = parseFloat(sheetData[col][key]);
+      const n = computeAllocatedPoints(raw, statDefs[key].base, statDefs[key].growth);
+      points[key] = n;
+      if(n === null){
+        // ①違反: この欄だけ自動計算値に戻す
+        sheetData[col][key + 'Manual'] = false;
+      }
+    });
+
+    // ②3欄とも整数倍として有効な場合のみ、合計ポイントが上限を超えていないか判定する
+    if(points.atk !== null && points.def !== null && points.tactics !== null){
+      const sumPoints = points.atk + points.def + points.tactics;
+      if(sumPoints > maxPoints){
+        sheetData[col]['atkManual'] = false;
+        sheetData[col]['defManual'] = false;
+        sheetData[col]['tacticsManual'] = false;
+      }
+    }
+
+    recalcSquadStats(); // 手入力フラグを解除した欄を自動計算値(バランス振りの均等配分値)に戻す
   }
 
   const rankOrder = ["B","A","S","SS","SSS","X","XX","XXX"];
@@ -4798,6 +5287,18 @@
         } else {
           $(cellId(row.key,col)).addEventListener('input', ()=>onCellChange(row.key,col));
           $(cellId(row.key,col)).addEventListener('change', ()=>onCellChange(row.key,col));
+          // バランス振り中の攻撃力・防御力・兵法値欄は、入力確定時(blur/change。入力途中のinputイベントでは
+          // 桁を打っている途中の値まで無効判定されて打てなくなるため対象外)にのみ整数倍・上限チェックを行う。
+          if(row.key === 'atk' || row.key === 'def' || row.key === 'tactics'){
+            $(cellId(row.key,col)).addEventListener('change', ()=>validateBalancedStatInput(col));
+          }
+          // 傑武将選択時にreadonly化される追加1・追加2・極限スキル欄は、readonly属性だけでも
+          // 通常の入力・貼り付けは防げるが、念のためpasteイベントも明示的にブロックしておく。
+          if(row.key === 'skillAdd1' || row.key === 'skillAdd2' || row.key === 'skillUltimate'){
+            $(cellId(row.key,col)).addEventListener('paste', (e)=>{
+              if(e.target.readOnly) e.preventDefault();
+            });
+          }
           if(row.type === 'skillcheck'){
             const inputEl = $(cellId(row.key,col));
             inputEl.addEventListener('compositionstart', ()=>{
@@ -4862,6 +5363,18 @@
       sheetData[col]['defManual'] = false;
       sheetData[col]['tacticsManual'] = false;
     }
+    // ステ振りを変更したら、攻撃力・防御力・兵法値欄の手入力可否(バランス振りのみ可)を即座に切り替える
+    if(rowKey === 'statAlloc'){
+      updateStatFieldsLock(col);
+      // バランス振りを選択した瞬間は、以前の手入力値やステ振りの値を引き継がず、
+      // 3ステータスとも必ず初期値(自動計算のバランス配分値)に戻す。
+      if(sheetData[col]['statAlloc'] === 'バランス振り'){
+        sheetData[col]['atkManual'] = false;
+        sheetData[col]['defManual'] = false;
+        sheetData[col]['tacticsManual'] = false;
+        recalcSquadStats();
+      }
+    }
     if(rowKey === 'soldier'){
       updateSoldierNote(col);
       // 部隊長(列0)の兵士を変更したら、他の3列にも同じ兵士を自動反映する(手入力での個別変更は引き続き可能)
@@ -4897,6 +5410,10 @@
     if(rowKey === 'tactics' || rowKey === 'breakthrough'){
       updateAllEffectiveRates();
     }
+    // 突破ランクを変更したら、極限スキル欄の手入力可否(限界突破では不可)を即座に切り替える
+    if(rowKey === 'breakthrough'){
+      updateUltimateSkillLockByBreakthrough(col);
+    }
     if(['skillAdd1','skillAdd2'].includes(rowKey)){
       scheduleSkillValidation(col, rowKey);
     }
@@ -4919,6 +5436,8 @@
     // 「スキル1(初期スキル)」欄に自動で連動させる(部隊長・小隊長どちらの列でも同様)
     if(rowKey === 'general'){
       const entry = findGeneralEntry(sheetData[col]['general']);
+      updateKetsuSkillLock(col, entry && entry.rarity === '傑');
+      updateUltimateSkillLockByBreakthrough(col);
       if(entry && entry.initialSkill){
         const skillWithLv = entry.initialSkill + 'LV10';
         sheetData[col]['skillInit'] = skillWithLv;
@@ -5057,10 +5576,12 @@
       const soldierName = sheetData[col] ? sheetData[col]['soldier'] : '';
       const soldier = soldierDB.find(s => s.name === soldierName);
       let soldierStat = soldier ? soldier[statKey] : 0;
+      if(isNaN(soldierStat)) soldierStat = 0; // 兵士データベース側の欠損防止(安全側)
       if(soldier){
         const bonus = getActiveTroopStatBonus(soldier.name, statKey);
-        if(bonus !== 0) soldierStat += bonus;
-        soldierStat += getCardPossessionBonusForColumn(col, statKey);
+        if(bonus !== 0 && !isNaN(bonus)) soldierStat += bonus;
+        const cardBonus = getCardPossessionBonusForColumn(col, statKey);
+        if(!isNaN(cardBonus)) soldierStat += cardBonus;
       }
       const rankData = sheetData[col] ? sheetData[col]['rank'] : null;
       let r1, r2;
@@ -5074,7 +5595,8 @@
       const aptMult = getAptMultiplier(r1, r2);
       const statVal = isNaN(stat) ? 0 : stat;
       const troopsVal = isNaN(troops) ? 0 : troops;
-      total += (statVal + troopsVal * soldierStat) * aptMult;
+      const colTotal = (statVal + troopsVal * soldierStat) * aptMult;
+      total += isNaN(colTotal) ? 0 : colTotal;
     }
     return total; // 名声補正を含まない素の合計値(名声補正はrenderFinalAttackPower側で明示的に乗算する)
   }
@@ -5083,8 +5605,11 @@
     const squadAtkBase = computeSquadAtkRawTotal(); // 統率補正までを含む基礎値(名声補正・総攻撃力上昇は含まない)
     const fameMult = computeFameMultiplier(battleVariables.fame);
     const famePct = fmtPct((fameMult - 1) * 100);
-    const totalAtkBoost = computeSquadTotalAtkBoostMultiplier(); // 覇神絶域など「総攻撃力上昇」スキルの合成倍率
-    const squadAtk = squadAtkBase * fameMult * totalAtkBoost.multiplier; // 名声補正・総攻撃力上昇を乗算した後の値
+    // 【2026年7月修正】以前は防御シミュレーター時も常にcomputeSquadTotalAtkBoostMultiplier(攻撃側専用フィールドのみ判定)を
+    // 使っており、怨龍烈牙・謀神ノ加護のような「総防御力上昇」スキル(totalDefBoostPct系)が反映されていなかった。
+    // simModeに応じて攻撃側/防御側の集計関数を切り替えるよう修正した(ユーザー指摘)。
+    const totalAtkBoost = simMode === 'defense' ? computeSquadTotalDefBoostMultiplier() : computeSquadTotalAtkBoostMultiplier(); // 覇神絶域・怨龍烈牙など「総攻撃力/防御力上昇」スキルの合成倍率
+    const squadAtk = squadAtkBase * fameMult * totalAtkBoost.multiplier; // 名声補正・総攻撃力/防御力上昇を乗算した後の値
     let skillAtkSum = 0;
     let skillAtkSumMax = 0;
     for(let col=0; col<4; col++){
@@ -5126,6 +5651,44 @@
         }).join('<br>');
       }
     }
+    updateTotalBoostCellDisplay(totalAtkBoost.details, statWord);
+  }
+
+  // 覇神絶域・怨龍烈牙のような「総攻撃力/防御力上昇」系スキル(totalAtkBoostPct等)は、
+  // 01スキル欄の通常の上昇%とは別軸で計算されるため、val欄(上昇%の数値入力=青枠)には
+  // 何も書き込まれず空欄のまま残り、「計算されていない」ように見えてしまっていた。
+  // 【2026年7月修正】ユーザー指摘により、val欄を通常のnumber入力からtext入力に一時的に切り替えて
+  // 「総攻撃力+24%」のように青枠の中に直接表示するよう変更(以前は枠の外に小さい注記を出していたが、
+  // 浮いて見えて分かりづらいとの指摘を受けて枠内表示に変更した)。手入力で上書きされないようreadonly化する。
+  function updateTotalBoostCellDisplay(details, statWord){
+    const skillFieldToFx = { skillInit:'fx1', skillAdd1:'fx2', skillAdd2:'fx3', skillUltimate:'fx4' };
+    // まず全セルを通常のnumber入力に戻す(前回の総攻撃力/防御力上昇表示が残らないように)
+    for(let col=0; col<4; col++){
+      Object.keys(skillFieldToFx).forEach(fk=>{
+        const valInput = $(cellId(skillFieldToFx[fk], col, 'val'));
+        if(!valInput) return;
+        if(valInput.type !== 'number'){
+          valInput.type = 'number';
+          valInput.readOnly = false;
+          valInput.classList.remove('total-boost-cell','total-boost-inactive');
+        }
+      });
+    }
+    details.forEach(d=>{
+      const fxKey = skillFieldToFx[d.fk];
+      if(!fxKey) return;
+      const valInput = $(cellId(fxKey, d.col, 'val'));
+      if(!valInput) return;
+      const sign = d.pct >= 0 ? '+' : '';
+      const pctText = Math.round(d.pct * 100) / 100;
+      valInput.type = 'text';
+      valInput.readOnly = true;
+      valInput.classList.toggle('total-boost-cell', d.active);
+      valInput.classList.toggle('total-boost-inactive', !d.active);
+      valInput.value = d.active
+        ? `総${statWord}${sign}${pctText}%`
+        : `総${statWord}${sign}${pctText}%(対象外)`;
+    });
   }
 
   // ============ 部隊移動速度 ============
@@ -5269,6 +5832,9 @@
     const tacticsBonus = renderTacticsBonusDisplay();
     const rankBonus = renderSquadRankBonusDisplay();
     const bonus = tacticsBonus + rankBonus;
+    // 兵法値ボーナス+部隊ランクボーナスの合計を「発動率ボーナス」として表示する
+    const activationRateEl = $('activationRateBonusValue');
+    if(activationRateEl) activationRateEl.textContent = '+' + (Math.round(bonus*100)/100) + '%';
     for(let col=0; col<4; col++){
       ['fx1','fx2','fx3','fx4'].forEach(key=>{
         const el = $('real_' + cellId(key, col));
@@ -5361,7 +5927,7 @@
     const skillFields = ['skillInit','skillAdd1','skillAdd2','skillUltimate'];
     Object.keys(specialSkills).forEach(skName=>{
       const sk = specialSkills[skName];
-      if(!sk.troopTypeTarget || sk.troopTypeTarget !== troopType || !sk.trTable) return;
+      if(!sk.troopTypeTarget || sk.troopTypeTarget !== troopType || !sk.troopBonusTable) return;
       let found = false, tier = 'base';
       for(let col=0; col<4; col++){
         skillFields.forEach(fk=>{
@@ -5369,12 +5935,12 @@
           if(text.includes(skName)){
             found = true;
             const trMatch = text.match(/TR(\d)/i);
-            if(trMatch && sk.trTable['TR'+trMatch[1]]) tier = 'TR'+trMatch[1];
+            if(trMatch && sk.troopBonusTable['TR'+trMatch[1]]) tier = 'TR'+trMatch[1];
           }
         });
       }
-      if(found && sk.trTable[tier] && sk.trTable[tier][statKey] !== undefined){
-        bonus += sk.trTable[tier][statKey];
+      if(found && sk.troopBonusTable[tier] && sk.troopBonusTable[tier][statKey] !== undefined){
+        bonus += sk.troopBonusTable[tier][statKey];
       }
     });
     return bonus;
@@ -5401,14 +5967,16 @@
       const soldierName = sheetData[col] ? sheetData[col]['soldier'] : '';
       const soldier = soldierDB.find(s => s.name === soldierName);
       let soldierStat = soldier ? soldier[statKey] : 0;
+      if(isNaN(soldierStat)) soldierStat = 0; // 兵士データベース側の欠損防止(安全側)
       if(soldier){
         const bonus = getActiveTroopStatBonus(soldier.name, statKey);
-        if(bonus !== 0){
+        if(bonus !== 0 && !isNaN(bonus)){
           soldierStat += bonus;
           const label = getActiveTroopStatBonusLabel(soldier.name);
           if(label && !bonusNoteParts.includes(label)) bonusNoteParts.push(label);
         }
-        soldierStat += getCardPossessionBonusForColumn(col, statKey);
+        const cardBonus = getCardPossessionBonusForColumn(col, statKey);
+        if(!isNaN(cardBonus)) soldierStat += cardBonus;
       }
       const rankData = sheetData[col] ? sheetData[col]['rank'] : null;
       let r1, r2;
@@ -5422,7 +5990,8 @@
       const aptMult = getAptMultiplier(r1, r2);
       const statVal = isNaN(stat) ? 0 : stat;
       const troopsVal = isNaN(troops) ? 0 : troops;
-      total += (statVal + troopsVal * soldierStat) * aptMult;
+      const colTotal = (statVal + troopsVal * soldierStat) * aptMult;
+      total += isNaN(colTotal) ? 0 : colTotal;
       totalTroops += troopsVal;
     }
     // 「部隊合計攻撃力」欄は、名声補正・総攻撃力上昇(覇神絶域等)を含まない素の値を表示する方針
@@ -5432,7 +6001,7 @@
     const formulaEl = $('squadAtkFormula');
     const valueEl = $('squadAtkValue');
     const troopsEl = $('squadTroopsValue');
-    if(labelEl) labelEl.textContent = '部隊合計' + statLabel;
+    if(labelEl) labelEl.textContent = '部隊' + statLabel;
     if(formulaEl){
       const suffix = bonusNoteParts.length ? ' ' + bonusNoteParts.join(' ') : '';
       formulaEl.textContent = `Σ((武将${statLabel} + 指揮兵士数×兵士${statLabel})×統率補正α)` + suffix;
@@ -5498,6 +6067,19 @@
   // entry.defaultStatAlloc(多くの武将で'攻撃振り')にフォールバックしてしまい、防御シミュレーターで
   // 「防御振り」が見た目上選ばれているのに攻撃振り相当で計算される不具合があった。current確定後に
   // 必ずsheetDataへ書き戻すことで、表示と実際の計算値を常に一致させる。
+  // 「バランス振り」以外を選んでいる列は、攻撃力・防御力・兵法値欄を手入力不可(readonly)にする。
+  // これらは自動計算値のみが表示される専用欄になり、バランス振りに変更したときだけ手入力できる。
+  // ロックする際は、手入力フラグ(atkManual等)も解除して自動計算値に戻す(手入力の値が固定表示され続けないように)。
+  function updateStatFieldsLock(col){
+    const statAlloc = sheetData[col] ? sheetData[col]['statAlloc'] : null;
+    const editable = statAlloc === 'バランス振り';
+    ['atk','def','tactics'].forEach(key=>{
+      const input = $(cellId(key, col));
+      if(input) input.readOnly = !editable;
+      if(!editable && sheetData[col]) sheetData[col][key + 'Manual'] = false;
+    });
+  }
+
   function updateStatAllocOptions(){
     const opts = simMode === 'defense' ? ['防御振り','バランス振り','兵法振り'] : ['攻撃振り','バランス振り','兵法振り'];
     for(let col=0; col<4; col++){
@@ -5509,6 +6091,7 @@
       }
       if(sheetData[col]) sheetData[col]['statAlloc'] = current;
       sel.innerHTML = opts.map(o=>`<option value="${o}" ${o===current?'selected':''}>${o}</option>`).join('');
+      updateStatFieldsLock(col);
     }
   }
 
@@ -5941,7 +6524,8 @@
       const simpleTableFields = [
         'trTable','speedTrTable','destructTrTable','rateTable','soarValueTable','soarMultiplierTable',
         'multiplyAdditionalSkillsByTable','recoverySpeedBonusTable','trLevels','takuetsuSoarBonusTable',
-        'casualtyReductionTakuetsuChanceTable','casualtyReductionTable','totalAtkBoostPerMujinTable','totalAtkBoostPctTable','critRateBonusTable','selfCritRateBonusTable','mimicTakuetsuTable'
+        'casualtyReductionTakuetsuChanceTable','casualtyReductionTable','totalAtkBoostPerMujinTable','totalAtkBoostPctTable','critRateBonusTable','selfCritRateBonusTable','mimicTakuetsuTable',
+        'troopBonusTable','totalDefBoostPctTable'
       ];
       simpleTableFields.forEach(f=>{
         if(sk[f]) Object.keys(sk[f]).forEach(k=>keys.add(k));
