@@ -26,7 +26,8 @@
     border-radius:6px;padding:10px 14px;margin:0 0 16px;line-height:1.7;
   }
   .archive-banner a{color:var(--vermillion-bright);font-weight:700;}
-  .rate-table{width:100%;border-collapse:collapse;font-size:12.5px;margin:14px 0;}
+  .table-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:14px 0;}
+  .rate-table{width:100%;min-width:560px;border-collapse:collapse;font-size:12.5px;margin:0;}
   .rate-table th,.rate-table td{border:1px solid var(--line);padding:7px 9px;text-align:center;}
   .rate-table th{background:var(--bg-panel-2);color:var(--muted);font-weight:700;}
   .rate-table td.tier-name{font-family:'Noto Serif JP',serif;font-weight:700;}
@@ -52,7 +53,7 @@
   .gacha-btn-image:active{transform:translateY(0) scale(1);}
   .gacha-btn-image:disabled{opacity:.5;cursor:default;transform:none;}
 
-  .stats-table{width:100%;border-collapse:collapse;font-size:12px;margin-top:10px;}
+  .stats-table{width:100%;min-width:460px;border-collapse:collapse;font-size:12px;margin:0;}
   .stats-table th,.stats-table td{border:1px solid var(--line);padding:6px 8px;text-align:center;}
   .stats-table th{background:var(--bg-panel-2);color:var(--muted);font-weight:700;}
   .stats-table td:first-child{text-align:left;font-family:'Noto Serif JP',serif;}
@@ -121,7 +122,12 @@
     border-width:3px;animation:tenParaBorder 3s linear infinite;
     position:absolute;overflow:hidden;
   }
-  .tier-天.ten-parallel .gacha-card-front > *{position:relative;z-index:2;}
+  .tier-天.ten-parallel .gacha-card-front .tier-label,
+  .tier-天.ten-parallel .gacha-card-front .tier-kana,
+  .tier-天.ten-parallel .gacha-card-front .tier-charname,
+  .tier-天.ten-parallel .gacha-card-front .tier-no{
+    position:relative;z-index:2;
+  }
   .tier-天.ten-parallel .gacha-card-front::before{
     content:'';position:absolute;inset:-20% -60%;z-index:1;pointer-events:none;
     background:repeating-linear-gradient(115deg,
@@ -178,6 +184,44 @@
     background:rgba(255,255,255,0.85); padding:2px 7px; border-radius:4px;
     border:1px solid var(--line); pointer-events:none; user-select:text;
   }
+
+  @media (max-width:480px){
+    .gacha-card-front .tier-label{font-size:22px;}
+    .gacha-card-front .tier-charname{font-size:13px;}
+    .gacha-card-front .tier-no{font-size:9.5px;}
+    .gacha-btn-image img{width:100px;}
+    .gacha-btn{font-size:15px;padding:13px 22px;}
+    .rare-log-row{font-size:13.5px;}
+    .history-chip{width:32px;height:32px;font-size:13px;}
+  }
+
+  /* 表を画面幅に応じて自動で列数が変わる「カード形式」にする(横スクロールさせない) */
+  @media (max-width:600px){
+    .table-scroll{overflow-x:visible;}
+    .rate-table, .stats-table{min-width:0;width:100%;border:none;font-size:13.5px;}
+    .rate-table thead, .stats-table thead{display:none;}
+    .rate-table tbody, .stats-table tbody{
+      display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:8px;
+    }
+    .rate-table tr, .stats-table tr{
+      display:block;border:1px solid var(--line);border-radius:8px;
+      padding:8px 12px;background:var(--bg-panel);
+    }
+    .rate-table td, .stats-table td{
+      display:flex;justify-content:space-between;align-items:center;gap:10px;
+      border:none;border-bottom:1px dashed var(--line);padding:6px 0;text-align:right;
+    }
+    .rate-table td:last-child, .stats-table td:last-child{border-bottom:none;}
+    .rate-table td::before, .stats-table td::before{
+      content:attr(data-label);font-weight:700;color:var(--muted);font-size:11.5px;
+      text-align:left;flex-shrink:0;
+    }
+    .rate-table td.tier-name, .stats-table td:first-child{
+      display:block;text-align:left;font-size:15px;font-weight:900;
+      border-bottom:1px solid var(--line);margin-bottom:4px;padding-bottom:6px;
+    }
+    .rate-table td.tier-name::before, .stats-table td:first-child::before{content:none;}
+  }
 </style>
 </head>
 <body>
@@ -198,18 +242,20 @@
 
     <div class="content-block">
       <h2>排出確率</h2>
+      <div class="table-scroll">
       <table class="rate-table">
         <thead>
           <tr><th>レア度</th><th>単発 / 10連1〜9枚目</th><th>10連10枚目<br>(1〜9枚目に傑・天・極あり)</th><th>10連10枚目<br>(1〜9枚目が特・上のみ)</th></tr>
         </thead>
         <tbody>
-          <tr><td class="tier-name">傑</td><td>0.018%</td><td>0.036%</td><td>0.036%</td></tr>
-          <tr><td class="tier-name">天</td><td>3.000%</td><td>11.000%</td><td>11.000%</td></tr>
-          <tr><td class="tier-name">極</td><td>15.000%</td><td>30.000%</td><td>88.964%</td></tr>
-          <tr><td class="tier-name">特</td><td>36.500%</td><td>18.964%</td><td>0.000%</td></tr>
-          <tr><td class="tier-name">上</td><td>45.482%</td><td>40.000%</td><td>0.000%</td></tr>
+          <tr><td class="tier-name">傑</td><td data-label="単発 / 10連1〜9枚目">0.018%</td><td data-label="10連10枚目(ブースト)">0.036%</td><td data-label="10連10枚目(救済)">0.036%</td></tr>
+          <tr><td class="tier-name">天</td><td data-label="単発 / 10連1〜9枚目">3.000%</td><td data-label="10連10枚目(ブースト)">11.000%</td><td data-label="10連10枚目(救済)">11.000%</td></tr>
+          <tr><td class="tier-name">極</td><td data-label="単発 / 10連1〜9枚目">15.000%</td><td data-label="10連10枚目(ブースト)">30.000%</td><td data-label="10連10枚目(救済)">88.964%</td></tr>
+          <tr><td class="tier-name">特</td><td data-label="単発 / 10連1〜9枚目">36.500%</td><td data-label="10連10枚目(ブースト)">18.964%</td><td data-label="10連10枚目(救済)">0.000%</td></tr>
+          <tr><td class="tier-name">上</td><td data-label="単発 / 10連1〜9枚目">45.482%</td><td data-label="10連10枚目(ブースト)">40.000%</td><td data-label="10連10枚目(救済)">0.000%</td></tr>
         </tbody>
       </table>
+      </div>
       <p class="note">10連は1〜9枚目まで通常確率で抽選し、その中に傑・天・極が1枚も無かった場合、10枚目は傑・天・極のいずれかが確定します(救済枠)。既に傑・天・極が出ている場合、10枚目は右から2列目の上昇した確率で抽選されます。<br>
       ※各レア度の武将ごとの内訳は、ゲーム内の確率情報ページに表示される「提供割合」に基づいています。10連10枚目については、ブースト時・救済時それぞれの実際の内訳表を個別に反映しています。<br>
       ※パラレル版が存在する天武将(12名)は、通常版を一度引くと、以後同名の天武将を引いた際にパラレル版が確定するボーナスが発生します。ただしこのボーナスはパラレル版を1回でも獲得すると終了し、以後は元の確率(通常/パラレルの按分)に戻ります(このページを開いている間の履歴で判定、武将ごとに独立)。</p>
@@ -236,18 +282,22 @@
 
     <div class="content-block">
       <h2>傑 個体別カウント(3種)</h2>
+      <div class="table-scroll">
       <table class="stats-table">
         <thead><tr><th>武将</th><th>枚数</th><th>獲得した通算連数</th></tr></thead>
         <tbody id="ketsuStatsBody"></tbody>
       </table>
+      </div>
     </div>
 
     <div class="content-block">
       <h2>天 個体別カウント(15種)</h2>
+      <div class="table-scroll">
       <table class="stats-table">
         <thead><tr><th>武将</th><th>通常</th><th>パラレル</th><th>パラレルを獲得した通算連数</th></tr></thead>
         <tbody id="tenStatsBody"></tbody>
       </table>
+      </div>
     </div>
 
     <div class="content-block">
@@ -266,7 +316,7 @@
   <div class="sim-version-badge" id="simVersionBadge">v-</div>
 
 <script>
-  const GACHA_VERSION = 'v2026-07-24.18';
+  const GACHA_VERSION = 'v2026-07-24.20';
   document.addEventListener('DOMContentLoaded', ()=>{
     const badge = document.getElementById('simVersionBadge');
     if(badge) badge.textContent = GACHA_VERSION;
@@ -855,7 +905,7 @@
 
   function renderStatsPanel(){
     document.getElementById('ketsuStatsBody').innerHTML = ketsuStats.map(e=>
-      '<tr><td>No.'+e.no+' '+e.name+'</td><td'+(e.count?' class="has-count"':'')+'>'+e.count+'枚</td><td>'+
+      '<tr><td>No.'+e.no+' '+e.name+'</td><td data-label="枚数"'+(e.count?' class="has-count"':'')+'>'+e.count+'枚</td><td data-label="獲得した通算連数">'+
       (e.pulls.length ? e.pulls.join('・')+'連目' : '-') + '</td></tr>'
     ).join('');
 
@@ -865,9 +915,9 @@
       const paraPullCell = hasParallel
         ? (e.parallelPulls.length ? e.parallelPulls.join('・')+'連目' : '-')
         : '-';
-      return '<tr><td>'+e.name+'</td><td>'+e.normalCount+'枚</td>'+
-        '<td'+(hasParallel && e.parallelCount ? ' class="has-count"' : '')+'>'+paraCountCell+'</td>'+
-        '<td>'+paraPullCell+'</td></tr>';
+      return '<tr><td>'+e.name+'</td><td data-label="通常">'+e.normalCount+'枚</td>'+
+        '<td data-label="パラレル"'+(hasParallel && e.parallelCount ? ' class="has-count"' : '')+'>'+paraCountCell+'</td>'+
+        '<td data-label="パラレルを獲得した通算連数">'+paraPullCell+'</td></tr>';
     }).join('');
   }
 
