@@ -89,6 +89,17 @@
     35%{opacity:1;transform:scale(1);}
     100%{opacity:0;transform:scale(1.7);}
   }
+  .landed-spark{
+    position:absolute;width:30%;height:30%;border-radius:50%;pointer-events:none;z-index:4;
+    animation:landedSparkFx .5s ease-out forwards;
+  }
+  .landed-spark.spark-yellow{background:radial-gradient(circle, rgba(255,224,140,.85) 0%, rgba(255,224,140,0) 70%);}
+  .landed-spark.spark-red{background:radial-gradient(circle, rgba(255,140,120,.85) 0%, rgba(255,140,120,0) 70%);}
+  @keyframes landedSparkFx{
+    0%{opacity:0;transform:scale(.2);}
+    45%{opacity:1;transform:scale(1);}
+    100%{opacity:0;transform:scale(1.5);}
+  }
   .gacha-card-face{position:absolute;inset:0;border-radius:10px;backface-visibility:hidden;overflow:hidden;
     display:flex;flex-direction:column;align-items:center;justify-content:center;font-family:'Noto Serif JP',serif;}
   .gacha-card-back{background:linear-gradient(135deg,#5b4632,#2b2f38);border:2px solid var(--gold);color:var(--gold-bright);font-size:26px;font-weight:900;}
@@ -143,7 +154,7 @@
     background-size:250% 250%;animation:shineSweep 1s ease-out;
   }
   @keyframes shineSweep{0%{background-position:200% 0;}100%{background-position:-50% 0;}}
-  .gacha-card.tier-特.reveal-shine .gacha-card-front::after{opacity:.5;}
+  .gacha-card.tier-特.reveal-shine .gacha-card-front::after{opacity:.28;}
 
   .gacha-tally{margin-top:18px;font-size:12.5px;color:var(--muted);font-family:'JetBrains Mono',monospace;}
   .gacha-history{margin-top:10px;text-align:center;}
@@ -255,7 +266,7 @@
   <div class="sim-version-badge" id="simVersionBadge">v-</div>
 
 <script>
-  const GACHA_VERSION = 'v2026-07-24.15';
+  const GACHA_VERSION = 'v2026-07-24.18';
   document.addEventListener('DOMContentLoaded', ()=>{
     const badge = document.getElementById('simVersionBadge');
     if(badge) badge.textContent = GACHA_VERSION;
@@ -871,12 +882,49 @@
   const RESPIN_MS = 700;
   const BURST_MS = 550;
 
-  function triggerLandedBurst(card){
+  function generateSparkPositions(count){
+    const cols = count <= 3 ? count : Math.ceil(count/2);
+    const rows = Math.ceil(count/cols);
+    const cellW = 100/cols, cellH = 100/rows;
+    const cells = [];
+    for(let r=0;r<rows;r++){ for(let c=0;c<cols;c++){ cells.push({r,c}); } }
+    // セルの割り当て順もシャッフルして、火花が出る順番に規則性が出ないようにする
+    for(let i=cells.length-1;i>0;i--){
+      const j = Math.floor(Math.random()*(i+1));
+      [cells[i], cells[j]] = [cells[j], cells[i]];
+    }
+    return cells.slice(0, count).map((cell, i)=>{
+      const jitterX = (0.2 + Math.random()*0.6) * cellW;
+      const jitterY = (0.2 + Math.random()*0.6) * cellH;
+      return {
+        top: (cell.r*cellH + jitterY).toFixed(1)+'%',
+        left: (cell.c*cellW + jitterX).toFixed(1)+'%',
+        cls: Math.random() < 0.5 ? 'spark-yellow' : 'spark-red',
+        delay: i*60,
+      };
+    });
+  }
+
+  function triggerLandedBurst(card, tier){
     const front = card.querySelector('.gacha-card-front');
     const fx = document.createElement('div');
     fx.className = 'landed-burst-fx';
     front.appendChild(fx);
     setTimeout(()=>{ fx.remove(); }, BURST_MS + 50);
+
+    if(tier === '天' || tier === '傑'){
+      const isEnhanced = tier === '傑' || card.classList.contains('ten-parallel');
+      const sparks = generateSparkPositions(isEnhanced ? 6 : 3);
+      sparks.forEach(pos=>{
+        const spark = document.createElement('div');
+        spark.className = 'landed-spark '+pos.cls;
+        spark.style.top = pos.top;
+        spark.style.left = pos.left;
+        spark.style.animationDelay = pos.delay+'ms';
+        front.appendChild(spark);
+        setTimeout(()=>{ spark.remove(); }, BURST_MS + 350);
+      });
+    }
   }
 
   function renderCards(draws){
@@ -913,7 +961,7 @@
         const respinAt = triggerAt + FLIP_MS + RESPIN_PAUSE_MS;
         setTimeout(()=>{ card.classList.add('spin-again'); }, respinAt);
         const burstAt = respinAt + RESPIN_MS;
-        setTimeout(()=>{ triggerLandedBurst(card); }, burstAt);
+        setTimeout(()=>{ triggerLandedBurst(card, tier); }, burstAt);
         finishAt = burstAt + BURST_MS;
       }
       if(finishAt > maxFinish) maxFinish = finishAt;
