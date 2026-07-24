@@ -7,6 +7,11 @@
   本ファイル(gacha-simulator.html)を新ルールで上書きすること。
   過去のくじページはindex.html等の通常導線にはリンクせず、URLを直接開いた場合のみ閲覧・プレイできるようにする。
   現行の期間アーカイブ: gacha-kuji-2026-07-06.html (2026年7月6日〜31章終了まで、本ファイルと同内容のスナップショット)
+
+  【ランキング機能について】
+  パラレル12種コンプリート連数ランキングはSupabase(rankingsテーブル)に保存している。
+  次の期間に切り替える際は、スクリプト内の定数 KUJI_SCOPE を新しい期間の識別子に変更すること
+  (変更しないと過去の期間の記録と混ざって表示されてしまう)。
 -->
 <html lang="ja">
 <head>
@@ -17,6 +22,7 @@
 <title>くじシミュレーター｜戦国IXA シミュレーター置き場</title>
 <meta name="description" content="戦国IXA(Sengoku IXA)のくじを引く感覚を無料で楽しめる非公式ファンメイドツール。排出確率に沿ってカードをめくり、レア度・武将名を演出付きで表示します。">
 <link rel="stylesheet" href="assets/css/site.css">
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <style>
   .period-banner{
     display:inline-block;font-size:12px;font-weight:700;color:var(--vermillion-bright);
@@ -181,6 +187,37 @@
   }
   @keyframes rainbowShift2d{0%{background-position:0% 50%;}100%{background-position:150% 50%;}}
 
+  .complete-panel{
+    margin:24px 0;padding:18px 20px;border-radius:10px;text-align:center;
+    background:linear-gradient(135deg, rgba(255,215,0,.14), rgba(184,64,47,.08));
+    border:1px solid var(--gold);
+  }
+  .complete-panel h2{font-family:'Noto Serif JP',serif;color:var(--vermillion-bright);margin:0 0 8px;font-size:18px;}
+  .complete-panel #completeCount{font-weight:900;font-size:20px;color:var(--gold-bright);}
+  .complete-form{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-top:12px;}
+  .complete-form input{
+    font-family:'Zen Kaku Gothic New',sans-serif;font-size:13px;padding:9px 12px;
+    border:1px solid var(--line);border-radius:6px;width:200px;max-width:60vw;
+  }
+
+  .ranking-list{margin-top:10px;}
+  .ranking-ol{list-style:none;margin:0;padding:0;counter-reset:rank;}
+  .ranking-ol li{
+    counter-increment:rank;display:flex;align-items:center;gap:10px;
+    padding:8px 10px;border-bottom:1px dashed var(--line);font-size:13.5px;
+  }
+  .ranking-ol li::before{
+    content:counter(rank);flex-shrink:0;width:24px;height:24px;border-radius:50%;
+    background:var(--bg-panel-2);border:1px solid var(--line);color:var(--muted);
+    display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;
+  }
+  .ranking-ol li:nth-child(1)::before{background:linear-gradient(135deg,#fff6c9,#ffd700);border-color:#c9910f;color:#5b3d00;}
+  .ranking-ol li:nth-child(2)::before{background:#e8e8e8;border-color:#b0b0b0;color:#555;}
+  .ranking-ol li:nth-child(3)::before{background:#f0d3ae;border-color:#c98a4b;color:#5b3d00;}
+  .ranking-name{flex:1;font-family:'JetBrains Mono',monospace;font-size:12.5px;color:var(--muted);}
+  .ranking-value{font-family:'JetBrains Mono',monospace;font-weight:700;color:var(--vermillion-bright);}
+  .content-block h3{font-family:'Noto Serif JP',serif;font-size:14.5px;margin:22px 0 6px;color:var(--gold-bright);}
+
   .sim-version-badge{
     position:fixed; bottom:6px; right:8px; z-index:9999;
     font-family:'JetBrains Mono',monospace; font-size:10px; color:#9a9382;
@@ -245,7 +282,7 @@
   <main class="site-main">
     <h1 class="page-title">くじシミュレーター</h1>
     <p class="period-banner">開催期間: 2026年7月6日 〜 31章終了まで</p>
-    <p class="page-lead">実際のくじの排出確率に沿って、無料でくじを引く感覚を楽しめます。何連引いても課金は発生しません。引いた武将の名前まで表示されます。画像表示は今後追加予定です。</p>
+    <p class="page-lead">実際のくじの排出確率に沿って、無料でくじを引く感覚を楽しめます。引いた武将の名前まで表示されます。</p>
 
     <div class="gacha-stage">
       <div class="gacha-buttons">
@@ -261,6 +298,28 @@
       <div class="clear-history-wrap">
         <button id="clearHistoryBtn" class="gacha-btn secondary">履歴をクリア</button>
       </div>
+    </div>
+
+    <div id="completePanel" class="complete-panel" style="display:none;">
+      <h2>🎉 パラレル12種コンプリート!</h2>
+      <p><span id="completeCount">0</span>連で達成しました。ランキングに登録しますか?(名前等は登録されず、完了日時のみ記録されます)</p>
+      <div class="complete-form">
+        <button id="completeSubmitBtn" class="gacha-btn">登録する</button>
+      </div>
+      <p id="completeSubmitMsg" class="note" style="display:none;"></p>
+    </div>
+
+    <div class="content-block">
+      <h2>パラレル12種コンプリート連数ランキング</h2>
+
+      <h3>最速コンプリート TOP10</h3>
+      <div id="rankingBest" class="ranking-list"><p class="note">読み込み中...</p></div>
+
+      <h3>最遅コンプリート WORST5</h3>
+      <div id="rankingWorst" class="ranking-list"><p class="note">読み込み中...</p></div>
+
+      <h3>直近の記録</h3>
+      <div id="rankingRecent" class="ranking-list"><p class="note">読み込み中...</p></div>
     </div>
 
     <div class="content-block">
@@ -325,11 +384,65 @@
   <div class="sim-version-badge" id="simVersionBadge">v-</div>
 
 <script>
-  const GACHA_VERSION = 'v2026-07-24.26';
+  const GACHA_VERSION = 'v2026-07-24.30';
   document.addEventListener('DOMContentLoaded', ()=>{
     const badge = document.getElementById('simVersionBadge');
     if(badge) badge.textContent = GACHA_VERSION;
+    loadRanking();
   });
+
+  // ============ ランキング(Supabase) ============
+  const SUPABASE_URL = 'https://oykzgzagkyygobbfkmwq.supabase.co';
+  const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im95a3pnemFna3l5Z29iYmZrbXdxIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODQ4ODE2NzMsImV4cCI6MjEwMDQ1NzY3M30.lP8rcREG6iy_A9qA3oDrZh1uf5y3OQeBhGieMFgbUEs';
+  const supabaseClient = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+  const KUJI_SCOPE = '2026-07-06'; // 期間限定くじの識別子。次の期間に切り替わったら変更する
+  const KUJI_RANKING_TITLE = 'パラレル12種コンプリート';
+
+  function formatDateTime(iso){
+    const d = new Date(iso);
+    const pad = n => String(n).padStart(2,'0');
+    return d.getFullYear()+'/'+pad(d.getMonth()+1)+'/'+pad(d.getDate())+' '+pad(d.getHours())+':'+pad(d.getMinutes());
+  }
+
+  async function loadRankingSection(elId, orderBy, ascending, limit){
+    const listEl = document.getElementById(elId);
+    const {data, error} = await supabaseClient
+      .from('rankings')
+      .select('value, created_at')
+      .eq('simulator_type', 'kuji')
+      .eq('scope', KUJI_SCOPE)
+      .eq('title', KUJI_RANKING_TITLE)
+      .order(orderBy, {ascending})
+      .limit(limit);
+    if(error){
+      listEl.innerHTML = '<p class="note">読み込みに失敗しました。</p>';
+      return;
+    }
+    if(!data || data.length===0){
+      listEl.innerHTML = '<p class="note">まだ記録がありません。</p>';
+      return;
+    }
+    listEl.innerHTML = '<ol class="ranking-ol">' + data.map(row=>
+      '<li><span class="ranking-name">'+formatDateTime(row.created_at)+'</span><span class="ranking-value">'+row.value+'連</span></li>'
+    ).join('') + '</ol>';
+  }
+
+  function loadRanking(){
+    loadRankingSection('rankingBest', 'value', true, 10);
+    loadRankingSection('rankingWorst', 'value', false, 5);
+    loadRankingSection('rankingRecent', 'created_at', false, 5);
+  }
+
+  async function submitRanking(value){
+    const {error} = await supabaseClient.from('rankings').insert({
+      simulator_type: 'kuji',
+      scope: KUJI_SCOPE,
+      title: KUJI_RANKING_TITLE,
+      value: value,
+      value_unit: '連',
+    });
+    return error;
+  }
 
   const TIER_ORDER = ['傑','天','極','特','上'];
   const TIER_KANA = {傑:'ケツ',天:'テン',極:'キョク',特:'トク',上:'ジョウ'};
@@ -1082,7 +1195,44 @@
     updateHistory(draws);
     updateRareLog(draws);
     renderStatsPanel();
+    checkParallelCompletion();
   }
+
+  // ============ パラレル12種コンプリート検知 ============
+  let parallelCompleteHandled = false;
+  let parallelCompleteSubmitted = false;
+  let parallelCompleteCount = null;
+
+  function isParallelComplete(){
+    return tenStats.filter(e=>e.parallelNo!==null).every(e=>e.parallelCount>0);
+  }
+
+  function checkParallelCompletion(){
+    if(parallelCompleteHandled) return;
+    if(isParallelComplete()){
+      parallelCompleteHandled = true;
+      parallelCompleteCount = totalDraws;
+      document.getElementById('completeCount').textContent = parallelCompleteCount;
+      document.getElementById('completePanel').style.display = 'block';
+    }
+  }
+
+  document.getElementById('completeSubmitBtn').addEventListener('click', async ()=>{
+    if(parallelCompleteSubmitted || parallelCompleteCount===null) return;
+    const btn = document.getElementById('completeSubmitBtn');
+    const msg = document.getElementById('completeSubmitMsg');
+    btn.disabled = true;
+    const error = await submitRanking(parallelCompleteCount);
+    msg.style.display = 'block';
+    if(error){
+      msg.textContent = '登録に失敗しました。時間をおいて再度お試しください。';
+      btn.disabled = false;
+    } else {
+      parallelCompleteSubmitted = true;
+      msg.textContent = 'ランキングに登録しました!';
+      loadRanking();
+    }
+  });
 
   document.getElementById('drawOneBtn').addEventListener('click', ()=>{
     if(busy) return;
@@ -1114,6 +1264,13 @@
     document.getElementById('rareLog').innerHTML = '<p class="rare-log-empty">まだ獲得していません</p>';
     document.getElementById('gachaHistory').innerHTML = '';
     document.getElementById('gachaCards').innerHTML = '';
+
+    parallelCompleteHandled = false;
+    parallelCompleteSubmitted = false;
+    parallelCompleteCount = null;
+    document.getElementById('completePanel').style.display = 'none';
+    document.getElementById('completeSubmitMsg').style.display = 'none';
+    document.getElementById('completeSubmitBtn').disabled = false;
   });
 
   renderStatsPanel();
