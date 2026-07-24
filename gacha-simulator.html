@@ -186,9 +186,13 @@
   }
 
   @media (max-width:480px){
-    .gacha-card-front .tier-label{font-size:22px;}
-    .gacha-card-front .tier-charname{font-size:13px;}
-    .gacha-card-front .tier-no{font-size:9.5px;}
+    .gacha-cards{gap:8px;}
+    .gacha-card{width:88px;height:126px;}
+    .gacha-card-front{padding:4px;}
+    .gacha-card-front .tier-label{font-size:16px;}
+    .gacha-card-front .tier-kana{font-size:7.5px;}
+    .gacha-card-front .tier-charname{font-size:10px;margin-top:5px;}
+    .gacha-card-front .tier-no{font-size:7px;}
     .gacha-btn-image img{width:100px;}
     .gacha-btn{font-size:15px;padding:13px 22px;}
     .rare-log-row{font-size:13.5px;}
@@ -240,27 +244,6 @@
     <p class="period-banner">開催期間: 2026年7月6日 〜 31章終了まで</p>
     <p class="page-lead">実際のくじの排出確率に沿って、無料でくじを引く感覚を楽しめます。何連引いても課金は発生しません。引いた武将の名前まで表示されます。画像表示は今後追加予定です。</p>
 
-    <div class="content-block">
-      <h2>排出確率</h2>
-      <div class="table-scroll">
-      <table class="rate-table">
-        <thead>
-          <tr><th>レア度</th><th>単発 / 10連1〜9枚目</th><th>10連10枚目<br>(1〜9枚目に傑・天・極あり)</th><th>10連10枚目<br>(1〜9枚目が特・上のみ)</th></tr>
-        </thead>
-        <tbody>
-          <tr><td class="tier-name">傑</td><td data-label="単発 / 10連1〜9枚目">0.018%</td><td data-label="10連10枚目(ブースト)">0.036%</td><td data-label="10連10枚目(救済)">0.036%</td></tr>
-          <tr><td class="tier-name">天</td><td data-label="単発 / 10連1〜9枚目">3.000%</td><td data-label="10連10枚目(ブースト)">11.000%</td><td data-label="10連10枚目(救済)">11.000%</td></tr>
-          <tr><td class="tier-name">極</td><td data-label="単発 / 10連1〜9枚目">15.000%</td><td data-label="10連10枚目(ブースト)">30.000%</td><td data-label="10連10枚目(救済)">88.964%</td></tr>
-          <tr><td class="tier-name">特</td><td data-label="単発 / 10連1〜9枚目">36.500%</td><td data-label="10連10枚目(ブースト)">18.964%</td><td data-label="10連10枚目(救済)">0.000%</td></tr>
-          <tr><td class="tier-name">上</td><td data-label="単発 / 10連1〜9枚目">45.482%</td><td data-label="10連10枚目(ブースト)">40.000%</td><td data-label="10連10枚目(救済)">0.000%</td></tr>
-        </tbody>
-      </table>
-      </div>
-      <p class="note">10連は1〜9枚目まで通常確率で抽選し、その中に傑・天・極が1枚も無かった場合、10枚目は傑・天・極のいずれかが確定します(救済枠)。既に傑・天・極が出ている場合、10枚目は右から2列目の上昇した確率で抽選されます。<br>
-      ※各レア度の武将ごとの内訳は、ゲーム内の確率情報ページに表示される「提供割合」に基づいています。10連10枚目については、ブースト時・救済時それぞれの実際の内訳表を個別に反映しています。<br>
-      ※パラレル版が存在する天武将(12名)は、通常版を一度引くと、以後同名の天武将を引いた際にパラレル版が確定するボーナスが発生します。ただしこのボーナスはパラレル版を1回でも獲得すると終了し、以後は元の確率(通常/パラレルの按分)に戻ります(このページを開いている間の履歴で判定、武将ごとに独立)。</p>
-    </div>
-
     <div class="gacha-stage">
       <div class="gacha-buttons">
         <button id="drawOneBtn" class="gacha-btn-image" aria-label="単発を引く">
@@ -304,6 +287,27 @@
       <h2>これまでの結果</h2>
       <div id="gachaHistory" class="gacha-history"></div>
     </div>
+
+    <div class="content-block">
+      <h2>排出確率</h2>
+      <div class="table-scroll">
+      <table class="rate-table">
+        <thead>
+          <tr><th>レア度</th><th>単発 / 10連1〜9枚目</th><th>10連10枚目<br>(1〜9枚目に傑・天・極あり)</th><th>10連10枚目<br>(1〜9枚目が特・上のみ)</th></tr>
+        </thead>
+        <tbody>
+          <tr><td class="tier-name">傑</td><td data-label="単発 / 10連1〜9枚目">0.018%</td><td data-label="10連10枚目(ブースト)">0.036%</td><td data-label="10連10枚目(救済)">0.036%</td></tr>
+          <tr><td class="tier-name">天</td><td data-label="単発 / 10連1〜9枚目">3.000%</td><td data-label="10連10枚目(ブースト)">11.000%</td><td data-label="10連10枚目(救済)">11.000%</td></tr>
+          <tr><td class="tier-name">極</td><td data-label="単発 / 10連1〜9枚目">15.000%</td><td data-label="10連10枚目(ブースト)">30.000%</td><td data-label="10連10枚目(救済)">88.964%</td></tr>
+          <tr><td class="tier-name">特</td><td data-label="単発 / 10連1〜9枚目">36.500%</td><td data-label="10連10枚目(ブースト)">18.964%</td><td data-label="10連10枚目(救済)">0.000%</td></tr>
+          <tr><td class="tier-name">上</td><td data-label="単発 / 10連1〜9枚目">45.482%</td><td data-label="10連10枚目(ブースト)">40.000%</td><td data-label="10連10枚目(救済)">0.000%</td></tr>
+        </tbody>
+      </table>
+      </div>
+      <p class="note">10連は1〜9枚目まで通常確率で抽選し、その中に傑・天・極が1枚も無かった場合、10枚目は傑・天・極のいずれかが確定します(救済枠)。既に傑・天・極が出ている場合、10枚目は右から2列目の上昇した確率で抽選されます。<br>
+      ※各レア度の武将ごとの内訳は、ゲーム内の確率情報ページに表示される「提供割合」に基づいています。10連10枚目については、ブースト時・救済時それぞれの実際の内訳表を個別に反映しています。<br>
+      ※パラレル版が存在する天武将(12名)は、通常版を一度引くと、以後同名の天武将を引いた際にパラレル版が確定するボーナスが発生します。ただしこのボーナスはパラレル版を1回でも獲得すると終了し、以後は元の確率(通常/パラレルの按分)に戻ります(このページを開いている間の履歴で判定、武将ごとに独立)。</p>
+    </div>
   </main>
 
   <footer class="site-footer">
@@ -316,7 +320,7 @@
   <div class="sim-version-badge" id="simVersionBadge">v-</div>
 
 <script>
-  const GACHA_VERSION = 'v2026-07-24.20';
+  const GACHA_VERSION = 'v2026-07-24.21';
   document.addEventListener('DOMContentLoaded', ()=>{
     const badge = document.getElementById('simVersionBadge');
     if(badge) badge.textContent = GACHA_VERSION;
