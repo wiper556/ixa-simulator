@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ガチャシミュレーター｜戦国IXA シミュレーター置き場</title>
+<meta name="description" content="戦国IXA(Sengoku IXA)のくじを引く感覚を無料で楽しめる非公式ファンメイドツール。排出確率に沿ってカードをめくり、レア度・武将名を演出付きで表示します。">
+<link rel="stylesheet" href="assets/css/site.css">
+<style>
+  .rate-table{width:100%;border-collapse:collapse;font-size:12.5px;margin:14px 0;}
+  .rate-table th,.rate-table td{border:1px solid var(--line);padding:7px 9px;text-align:center;}
+  .rate-table th{background:var(--bg-panel-2);color:var(--muted);font-weight:700;}
+  .rate-table td.tier-name{font-family:'Noto Serif JP',serif;font-weight:700;}
+  .note{color:var(--muted);font-size:12px;line-height:1.7;margin-top:10px;}
+
+  .gacha-stage{margin:30px 0 10px;text-align:center;}
+  .gacha-buttons{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-bottom:24px;}
+  .gacha-btn{
+    font-family:'Zen Kaku Gothic New',sans-serif;font-weight:700;font-size:14px;
+    padding:12px 26px;border-radius:8px;border:none;cursor:pointer;color:#fff;
+    background:linear-gradient(135deg, var(--vermillion), var(--gold));
+    box-shadow:0 3px 10px rgba(184,64,47,0.35);transition:transform .12s ease, filter .12s ease;
+  }
+  .gacha-btn:hover{filter:brightness(1.08);transform:translateY(-1px);}
+  .gacha-btn:active{transform:translateY(0);}
+  .gacha-btn.secondary{background:#fff;color:var(--muted);border:1px solid var(--line);box-shadow:none;}
+  .gacha-btn.secondary:hover{color:var(--vermillion-bright);border-color:var(--vermillion);}
+  .gacha-btn:disabled{opacity:.5;cursor:default;filter:none;transform:none;}
+
+  .gacha-cards{display:flex;flex-wrap:wrap;gap:14px;justify-content:center;min-height:170px;perspective:900px;}
+  .gacha-card{width:118px;height:170px;position:relative;transform-style:preserve-3d;transition:transform .6s cubic-bezier(.2,.8,.2,1);}
+  .gacha-card.flipped{transform:rotateY(180deg);}
+  .gacha-card-face{position:absolute;inset:0;border-radius:10px;backface-visibility:hidden;overflow:hidden;
+    display:flex;flex-direction:column;align-items:center;justify-content:center;font-family:'Noto Serif JP',serif;}
+  .gacha-card-back{background:linear-gradient(135deg,#5b4632,#2b2f38);border:2px solid var(--gold);color:var(--gold-bright);font-size:26px;font-weight:900;}
+  .gacha-card-front{transform:rotateY(180deg);border:2px solid;color:#fff;text-shadow:0 1px 3px rgba(0,0,0,.4);padding:6px;}
+  .gacha-card-front .tier-label{font-size:20px;font-weight:900;letter-spacing:.05em;}
+  .gacha-card-front .tier-kana{font-size:9px;margin-top:2px;opacity:.85;}
+  .gacha-card-front .tier-charname{font-size:12px;font-weight:700;margin-top:8px;line-height:1.25;text-align:center;}
+  .gacha-card-front .tier-no{font-size:8.5px;margin-top:2px;opacity:.8;font-family:'JetBrains Mono',monospace;}
+
+  .tier-上 .gacha-card-front{background:linear-gradient(160deg,#8a8f98,#5f6570);border-color:#9aa0aa;}
+  .tier-特 .gacha-card-front{background:linear-gradient(160deg,#3d7fc2,#2a5a8f);border-color:#6fb0ef;}
+  .tier-極 .gacha-card-front{background:linear-gradient(160deg,#7b4fc9,#4d2f8f);border-color:#b592f5;}
+  .tier-天 .gacha-card-front{background:linear-gradient(160deg,var(--vermillion-bright),#7a1f16);border-color:#ff9a7d;box-shadow:0 0 18px rgba(184,64,47,.55);}
+  .tier-傑 .gacha-card-front{background:linear-gradient(160deg,#ffd76a,#c9910f 45%,#b8402f);border-color:#fff2b8;box-shadow:0 0 22px rgba(255,215,0,.65);animation:ketsuPulse 1.4s ease-in-out infinite;}
+  @keyframes ketsuPulse{0%,100%{box-shadow:0 0 18px rgba(255,215,0,.5);}50%{box-shadow:0 0 32px rgba(255,215,0,.95);}}
+
+  .gacha-card.reveal-shine .gacha-card-front::after{
+    content:'';position:absolute;inset:0;
+    background:linear-gradient(115deg, transparent 30%, rgba(255,255,255,.6) 50%, transparent 70%);
+    background-size:250% 250%;animation:shineSweep 1s ease-out;
+  }
+  @keyframes shineSweep{0%{background-position:200% 0;}100%{background-position:-50% 0;}}
+
+  .gacha-tally{margin-top:18px;font-size:12.5px;color:var(--muted);font-family:'JetBrains Mono',monospace;}
+  .gacha-history{margin-top:10px;text-align:center;}
+  .history-chip{display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;border-radius:6px;margin:3px;font-size:12px;font-weight:700;color:#fff;font-family:'Noto Serif JP',serif;cursor:default;}
+  .history-chip.tier-上{background:#7a808a;}
+  .history-chip.tier-特{background:#2a5a8f;}
+  .history-chip.tier-極{background:#5b3a99;}
+  .history-chip.tier-天{background:var(--vermillion);}
+  .history-chip.tier-傑{background:linear-gradient(135deg,#ffd76a,#c9910f);color:#5b3d00;}
+
+  .sim-version-badge{
+    position:fixed; bottom:6px; right:8px; z-index:9999;
+    font-family:'JetBrains Mono',monospace; font-size:10px; color:#9a9382;
+    background:rgba(255,255,255,0.85); padding:2px 7px; border-radius:4px;
+    border:1px solid var(--line); pointer-events:none; user-select:text;
+  }
+</style>
+</head>
+<body>
+
+  <header class="site-header">
+    <a class="site-logo" href="index.html">戦国IXA シミュレーター置き場</a>
+    <nav class="site-nav">
+      <a href="index.html">シミュレーター一覧</a>
+      <a href="about.html">このサイトについて</a>
+      <a href="privacy.html">プライバシーポリシー</a>
+    </nav>
+  </header>
+
+  <main class="site-main">
+    <h1 class="page-title">ガチャシミュレーター</h1>
+    <p class="page-lead">実際のくじの排出確率に沿って、無料でくじを引く感覚を楽しめます。何連引いても課金は発生しません。引いた武将の名前まで表示されます。画像表示は今後追加予定です。</p>
+
+    <div class="content-block">
+      <h2>排出確率</h2>
+      <table class="rate-table">
+        <thead>
+          <tr><th>レア度</th><th>単発 / 10連1〜9枚目</th><th>10連10枚目<br>(1〜9枚目に傑・天・極あり)</th><th>10連10枚目<br>(1〜9枚目が特・上のみ)</th></tr>
+        </thead>
+        <tbody>
+          <tr><td class="tier-name">傑</td><td>0.018%</td><td>0.036%</td><td>0.036%</td></tr>
+          <tr><td class="tier-name">天</td><td>3.000%</td><td>11.000%</td><td>11.000%</td></tr>
+          <tr><td class="tier-name">極</td><td>15.000%</td><td>30.000%</td><td>88.964%</td></tr>
+          <tr><td class="tier-name">特</td><td>36.500%</td><td>18.964%</td><td>0.000%</td></tr>
+          <tr><td class="tier-name">上</td><td>45.482%</td><td>40.000%</td><td>0.000%</td></tr>
+        </tbody>
+      </table>
+      <p class="note">10連は1〜9枚目まで通常確率で抽選し、その中に傑・天・極が1枚も無かった場合、10枚目は傑・天・極のいずれかが確定します(救済枠)。既に傑・天・極が出ている場合、10枚目は右から2列目の上昇した確率で抽選されます。<br>
+      ※各レア度の武将ごとの内訳は、ゲーム内の確率情報ページに表示される「提供割合」に基づいています。</p>
+    </div>
+
+    <div class="gacha-stage">
+      <div class="gacha-buttons">
+        <button id="drawOneBtn" class="gacha-btn">単発を引く</button>
+        <button id="drawTenBtn" class="gacha-btn">10連を引く</button>
+        <button id="clearHistoryBtn" class="gacha-btn secondary">履歴をクリア</button>
+      </div>
+      <div id="gachaCards" class="gacha-cards"></div>
+      <div id="gachaTally" class="gacha-tally">累計 0連</div>
+    </div>
+
+    <div class="content-block">
+      <h2>これまでの結果</h2>
+      <div id="gachaHistory" class="gacha-history"></div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>本サイトは戦国IXA(Sengoku IXA)の非公式ファンメイドツールです。運営会社・関連団体とは一切関係ありません。<br>
+    記載されている会社名・製品名・システム名などは、各社の商標、または登録商標です。<br>
+    © SQUARE ENIX</p>
+    <p><a href="about.html">このサイトについて</a> ・ <a href="privacy.html">プライバシーポリシー</a></p>
+  </footer>
+
+  <div class="sim-version-badge" id="simVersionBadge">v-</div>
+
+<script>
+  const GACHA_VERSION = 'v2026-07-24.4';
+  document.addEventListener('DOMContentLoaded', ()=>{
+    const badge = document.getElementById('simVersionBadge');
+    if(badge) badge.textContent = GACHA_VERSION;
+  });
+
+  const TIER_ORDER = ['傑','天','極','特','上'];
+  const TIER_KANA = {傑:'ケツ',天:'テン',極:'キョク',特:'トク',上:'ジョウ'};
+  const RATE_SCALE = 100000;
+  const BASE_RATES = {傑:18, 天:3000, 極:15000, 特:36500, 上:45482};
+  const TENTH_BOOST_RATES = {傑:36, 天:11000, 極:30000, 特:18964, 上:40000};
+  const TENTH_GUARANTEE_RATES = {傑:36, 天:11000, 極:88964, 特:0, 上:0};
+
+  // ============ 傑・天・極 の武将別内訳(ゲーム内「確率情報」ページの提供割合を転記) ============
+  const KETSU_CHARS = [
+    {no:20001, name:'織田信長', w:0.0060},
+    {no:20002, name:'豊臣秀吉', w:0.0060},
+    {no:20003, name:'徳川家康', w:0.0060},
+  ];
+
+  const TEN_CHARS = [
+    {no:31301, name:'上杉景勝', w:0.0060},
+    {no:31302, name:'佐竹義宣', w:0.0060},
+    {no:31303, name:'本多忠勝', w:0.0060},
+    {no:31304, name:'真田昌幸', w:0.0060},
+    {no:31305, name:'福島正則', w:0.0060},
+    {no:31306, name:'毛利輝元', w:0.0060},
+    {no:31307, name:'立花宗茂', w:0.0060},
+    {no:31308, name:'小西行長', w:0.0060},
+    {no:31309, name:'津軽為信', w:0.0060},
+    {no:1307, name:'立花宗茂', w:0.2107},
+    {no:1308, name:'小西行長', w:0.2107},
+    {no:1309, name:'津軽為信', w:0.2107},
+    {no:10074, name:'上杉謙信', w:0.1333},
+    {no:10075, name:'毛利輝元', w:0.1333},
+    {no:10076, name:'最上義光', w:0.1334},
+    {no:31298, name:'豊臣秀長', w:0.0060},
+    {no:31299, name:'石田三成', w:0.0060},
+    {no:31300, name:'大谷吉継', w:0.0060},
+    {no:1298, name:'豊臣秀長', w:0.2106},
+    {no:1299, name:'石田三成', w:0.2106},
+    {no:1300, name:'大谷吉継', w:0.2106},
+    {no:1301, name:'上杉景勝', w:0.2106},
+    {no:1302, name:'佐竹義宣', w:0.2107},
+    {no:1303, name:'本多忠勝', w:0.2107},
+    {no:1304, name:'真田昌幸', w:0.2107},
+    {no:1305, name:'福島正則', w:0.2107},
+    {no:1306, name:'毛利輝元', w:0.2107},
+  ];
+
+  const KYOKU_CHARS = [
+    {no:7021, name:'北条氏照', w:0.6865},
+    {no:7022, name:'土井利勝', w:0.6865},
+    {no:7403, name:'蒲生氏郷', w:0.2500},
+    {no:7404, name:'大内周防介', w:0.2500},
+    {no:7405, name:'加藤嘉明', w:0.2500},
+    {no:7012, name:'依田信蕃', w:0.2288},
+    {no:7013, name:'本多正純', w:0.2288},
+    {no:7014, name:'上杉景虎', w:0.2288},
+    {no:7015, name:'森長可', w:0.2289},
+    {no:7016, name:'早川殿', w:0.2289},
+    {no:7017, name:'池田恒興', w:0.2289},
+    {no:7018, name:'六角定頼', w:0.2289},
+    {no:7019, name:'可児才蔵', w:0.4577},
+    {no:7020, name:'斎藤朝信', w:0.4577},
+    {no:7003, name:'片倉小十郎', w:0.2288},
+    {no:7004, name:'太原雪斎', w:0.2288},
+    {no:7005, name:'北条幻庵', w:0.2288},
+    {no:7006, name:'秋山信友', w:0.2288},
+    {no:7007, name:'志賀親次', w:0.2288},
+    {no:7008, name:'池田輝政', w:0.2288},
+    {no:7009, name:'仙石秀久', w:0.2288},
+    {no:7010, name:'土橋平次', w:0.2288},
+    {no:7011, name:'板垣信方', w:0.2288},
+    {no:2396, name:'高橋紹運', w:0.2288},
+    {no:2397, name:'佐久間信盛', w:0.2288},
+    {no:2398, name:'宇佐美定満', w:0.2288},
+    {no:2399, name:'斎藤龍興', w:0.2288},
+    {no:2855, name:'望月千代女', w:0.2500},
+    {no:2856, name:'伊藤一刀斎', w:0.2500},
+    {no:2857, name:'渡辺了', w:0.2500},
+    {no:7001, name:'志村光安', w:0.2288},
+    {no:7002, name:'平塚為広', w:0.2288},
+    {no:2387, name:'丸目長恵', w:0.2288},
+    {no:2388, name:'成松信勝', w:0.2288},
+    {no:2389, name:'宮部継潤', w:0.2288},
+    {no:2390, name:'後藤又兵衛', w:0.2288},
+    {no:2391, name:'安宅冬康', w:0.2288},
+    {no:2392, name:'稲葉一鉄', w:0.2288},
+    {no:2393, name:'栗山利安', w:0.2288},
+    {no:2394, name:'高山マリア', w:0.2288},
+    {no:2395, name:'小山田信茂', w:0.2288},
+    {no:2378, name:'遠藤基信', w:0.2288},
+    {no:2379, name:'飯富虎昌', w:0.2288},
+    {no:2380, name:'柿崎景家', w:0.2288},
+    {no:2381, name:'千代', w:0.2288},
+    {no:2382, name:'留守政景', w:0.2288},
+    {no:2383, name:'長尾為景', w:0.2288},
+    {no:2384, name:'岡左内', w:0.2288},
+    {no:2385, name:'原虎胤', w:0.2288},
+    {no:2386, name:'大道寺政繁', w:0.2288},
+    {no:2336, name:'伊達成実', w:0.2288},
+    {no:2358, name:'今川氏真', w:0.2288},
+    {no:2359, name:'津軽為信', w:0.2288},
+    {no:2366, name:'井伊直孝', w:0.2288},
+    {no:2368, name:'三好義賢', w:0.2288},
+    {no:2374, name:'北条網成', w:0.2288},
+    {no:2375, name:'森可成', w:0.2288},
+    {no:2376, name:'斎藤利三', w:0.2288},
+    {no:2377, name:'武田信繁', w:0.2288},
+  ];
+
+  const TOKU_CHARS = [
+    {no:3682, name:'渡辺紐', w:0.8489},
+    {no:3683, name:'三枝昌貞', w:0.8489},
+    {no:3684, name:'諏訪頼重', w:1.2733},
+    {no:3685, name:'藤田信吉', w:1.2733},
+    {no:3686, name:'芳賀高定', w:1.2733},
+    {no:3673, name:'小幡昌盛', w:0.4245},
+    {no:3674, name:'河野通宣', w:0.4245},
+    {no:3675, name:'木沢長政', w:0.4245},
+    {no:3676, name:'天野隆重', w:0.4245},
+    {no:3677, name:'斎藤利治', w:0.4245},
+    {no:3678, name:'菅沼定盈', w:0.4245},
+    {no:3679, name:'加藤光泰', w:0.4245},
+    {no:3680, name:'石川高信', w:0.4245},
+    {no:3681, name:'小島虎盛', w:0.8489},
+    {no:3664, name:'福富秀勝', w:0.4244},
+    {no:3665, name:'安見宗房', w:0.4244},
+    {no:3666, name:'村上国清', w:0.4244},
+    {no:3667, name:'毛利秀包', w:0.4244},
+    {no:3668, name:'世瀬蔵人', w:0.4244},
+    {no:3669, name:'小笠原長時', w:0.4244},
+    {no:3670, name:'大久保忠教', w:0.4244},
+    {no:3671, name:'三好宗三', w:0.4245},
+    {no:3672, name:'広橋保子', w:0.4245},
+    {no:3648, name:'温井総貞', w:0.4244},
+    {no:3649, name:'茶阿局', w:0.4244},
+    {no:3657, name:'猪子兵助', w:0.4244},
+    {no:3658, name:'松永久通', w:0.4244},
+    {no:3659, name:'山名豊国', w:0.4244},
+    {no:3660, name:'小野寺義道', w:0.4244},
+    {no:3661, name:'蒲池鑑盛', w:0.4244},
+    {no:3662, name:'長谷川秀一', w:0.4244},
+    {no:3663, name:'尼子勝久', w:0.4244},
+    {no:3631, name:'菅正利', w:0.4244},
+    {no:3632, name:'長寿院盛淳', w:0.4244},
+    {no:3633, name:'清原マリア', w:0.4244},
+    {no:3634, name:'上井覚兼', w:0.4244},
+    {no:3635, name:'益田正親', w:0.4244},
+    {no:3644, name:'井上元兼', w:0.4244},
+    {no:3645, name:'畠山義総', w:0.4244},
+    {no:3646, name:'湯浅五助', w:0.4244},
+    {no:3647, name:'渡辺通', w:0.4244},
+    {no:3622, name:'毛屋武久', w:0.4244},
+    {no:3623, name:'五龍局', w:0.4244},
+    {no:3624, name:'黒田一成', w:0.4244},
+    {no:3625, name:'本多正重', w:0.4244},
+    {no:3626, name:'毛受勝照', w:0.4244},
+    {no:3627, name:'城井鎮房', w:0.4244},
+    {no:3628, name:'中条藤資', w:0.4244},
+    {no:3629, name:'加藤重次', w:0.4244},
+    {no:3630, name:'亀井茲矩', w:0.4244},
+    {no:3613, name:'後藤信康', w:0.4244},
+    {no:3614, name:'那須資晴', w:0.4244},
+    {no:3615, name:'木村友重', w:0.4244},
+    {no:3616, name:'朱津姫', w:0.4244},
+    {no:3617, name:'細川高国', w:0.4244},
+    {no:3618, name:'谷忠澄', w:0.4244},
+    {no:3619, name:'神保氏張', w:0.4244},
+    {no:3620, name:'鈴木元信', w:0.4244},
+    {no:3621, name:'佐竹義久', w:0.4244},
+    {no:3594, name:'国司元相', w:0.4244},
+    {no:3595, name:'新造の方', w:0.4244},
+    {no:3596, name:'柳生宗冬', w:0.4244},
+    {no:3597, name:'原田宗時', w:0.4244},
+    {no:3598, name:'阿喜姫', w:0.4244},
+    {no:3599, name:'伊達実元', w:0.4244},
+    {no:3600, name:'宇都宮国綱', w:0.4244},
+    {no:3601, name:'犬童頼安', w:0.4244},
+    {no:3612, name:'鬼庭良直', w:0.4244},
+    {no:3418, name:'正木時忠', w:0.4244},
+    {no:3419, name:'増田長盛', w:0.4244},
+    {no:3494, name:'上杉定正', w:0.4244},
+    {no:3523, name:'庄林一心', w:0.4244},
+    {no:3535, name:'松平家忠', w:0.4244},
+    {no:3590, name:'蒲生とら', w:0.4244},
+    {no:3591, name:'小梁川宗朝', w:0.4244},
+    {no:3592, name:'佐伯惟教', w:0.4244},
+    {no:3593, name:'三好政康', w:0.4244},
+  ];
+
+  const JOU_CHARS = [
+    {no:4316, name:'芳賀高武', w:0.3861},
+    {no:4317, name:'多賀谷政広', w:0.3861},
+    {no:4318, name:'陶興房', w:0.3861},
+    {no:4319, name:'安富徳円', w:0.3861},
+    {no:4320, name:'牟宇姫', w:1.6667},
+    {no:4321, name:'鳳翔院殿', w:1.6667},
+    {no:4307, name:'津川義冬', w:0.3861},
+    {no:4308, name:'伊木忠次', w:0.3861},
+    {no:4309, name:'長続連', w:0.3861},
+    {no:4310, name:'高橋鑑種', w:0.3861},
+    {no:4311, name:'阿蘇惟種', w:0.3861},
+    {no:4312, name:'神保総誠', w:0.3861},
+    {no:4313, name:'三好康長', w:0.3861},
+    {no:4314, name:'小西ワクサ', w:1.6667},
+    {no:4315, name:'中村時長', w:0.3861},
+    {no:4298, name:'色部長実', w:0.3861},
+    {no:4299, name:'江上家種', w:0.3861},
+    {no:4300, name:'横浜一庵', w:0.3861},
+    {no:4301, name:'羽田正親', w:0.3861},
+    {no:4302, name:'賀島政慶', w:0.3861},
+    {no:4303, name:'三雲定持', w:0.3861},
+    {no:4304, name:'飯田興秀', w:0.3861},
+    {no:4305, name:'伊勢貞孝', w:0.3861},
+    {no:4306, name:'高山友照', w:0.3861},
+    {no:4289, name:'木下家定', w:0.3861},
+    {no:4290, name:'土屋昌続', w:0.3861},
+    {no:4291, name:'頴姓久虎', w:0.3861},
+    {no:4292, name:'熊谷信直', w:0.3861},
+    {no:4293, name:'成富茂安', w:0.3861},
+    {no:4294, name:'進藤貞治', w:0.3861},
+    {no:4295, name:'松永長頼', w:0.3861},
+    {no:4296, name:'武田義統', w:0.3861},
+    {no:4297, name:'後藤賢豊', w:0.3861},
+    {no:4280, name:'宇久純定', w:0.3861},
+    {no:4281, name:'林秀貞', w:0.3861},
+    {no:4282, name:'横谷幸重', w:0.3861},
+    {no:4283, name:'木下頼継', w:0.3861},
+    {no:4284, name:'有吉立行', w:0.3861},
+    {no:4285, name:'島津忠長', w:0.3861},
+    {no:4286, name:'岩成友通', w:0.3861},
+    {no:4287, name:'安倍元真', w:0.3861},
+    {no:4288, name:'浅利信種', w:0.3861},
+    {no:4271, name:'家城之清', w:0.3861},
+    {no:4272, name:'佃十成', w:0.3861},
+    {no:4273, name:'屋代正国', w:0.3861},
+    {no:4274, name:'神子田正治', w:0.3861},
+    {no:4275, name:'高力清長', w:0.3861},
+    {no:4276, name:'伝妙院', w:1.6667},
+    {no:4277, name:'山中長俊', w:0.3861},
+    {no:4278, name:'長坂信政', w:0.3861},
+    {no:4279, name:'新発田重家', w:0.3861},
+    {no:4262, name:'金子元宅', w:0.3861},
+    {no:4263, name:'池田勝正', w:0.3861},
+    {no:4264, name:'尾藤知宣', w:0.3861},
+    {no:4265, name:'丸毛兼利', w:0.3861},
+    {no:4266, name:'葛西晴信', w:0.3861},
+    {no:4267, name:'千葉胤富', w:0.3861},
+    {no:4268, name:'八十姫', w:1.6667},
+    {no:4269, name:'足利政知', w:0.3861},
+    {no:4270, name:'中野康実', w:0.3861},
+    {no:4248, name:'清光院', w:1.6667},
+    {no:4251, name:'上井覚兼', w:0.3860},
+    {no:4255, name:'飛鳥井雅量', w:0.3860},
+    {no:4256, name:'渡辺紐', w:0.3860},
+    {no:4257, name:'桑名吉成', w:0.3861},
+    {no:4258, name:'都築秀綱', w:0.3861},
+    {no:4259, name:'五藤為重', w:0.3861},
+    {no:4260, name:'久武親信', w:0.3861},
+    {no:4261, name:'太田宗正', w:0.3861},
+    {no:4109, name:'京極マリア', w:1.6666},
+    {no:4123, name:'小雀', w:1.6666},
+    {no:4179, name:'近江の方', w:1.6666},
+    {no:4205, name:'青柳', w:1.6666},
+    {no:4206, name:'南殿', w:1.6667},
+    {no:4224, name:'容光院', w:1.6667},
+    {no:4231, name:'蘆名盛興', w:0.3860},
+    {no:4237, name:'竹中重門', w:0.3860},
+    {no:4243, name:'河野通直', w:0.3860},
+  ];
+
+  const TIER_CHAR_LISTS = {傑:KETSU_CHARS, 天:TEN_CHARS, 極:KYOKU_CHARS, 特:TOKU_CHARS, 上:JOU_CHARS};
+
+  function pickCharacter(list){
+    const total = list.reduce((s,c)=>s+c.w, 0);
+    let r = Math.random()*total;
+    for(const c of list){
+      r -= c.w;
+      if(r < 0) return c;
+    }
+    return list[list.length-1];
+  }
+
+  function drawOne(rates){
+    const r = Math.floor(Math.random()*RATE_SCALE);
+    let acc = 0;
+    for(const tier of TIER_ORDER){
+      acc += rates[tier];
+      if(r < acc) return tier;
+    }
+    return '上';
+  }
+
+  function drawOneFull(rates){
+    const tier = drawOne(rates);
+    const list = TIER_CHAR_LISTS[tier];
+    return {tier, detail: list ? pickCharacter(list) : null};
+  }
+
+  function drawTenFull(){
+    const results = [];
+    let rareHit = false;
+    for(let i=0;i<9;i++){
+      const d = drawOneFull(BASE_RATES);
+      results.push(d);
+      if(d.tier==='傑' || d.tier==='天' || d.tier==='極') rareHit = true;
+    }
+    results.push(drawOneFull(rareHit ? TENTH_BOOST_RATES : TENTH_GUARANTEE_RATES));
+    return results;
+  }
+
+  const tally = {傑:0, 天:0, 極:0, 特:0, 上:0};
+  let totalDraws = 0;
+  let busy = false;
+
+  function setBusy(v){
+    busy = v;
+    document.getElementById('drawOneBtn').disabled = v;
+    document.getElementById('drawTenBtn').disabled = v;
+  }
+
+  function renderCards(draws){
+    const stage = document.getElementById('gachaCards');
+    stage.innerHTML = '';
+    const cardEls = draws.map(({tier, detail})=>{
+      const card = document.createElement('div');
+      card.className = 'gacha-card tier-'+tier;
+      const detailHtml = detail
+        ? '<div class="tier-charname">'+detail.name+'</div><div class="tier-no">No.'+detail.no+'</div>'
+        : '';
+      card.innerHTML =
+        '<div class="gacha-card-face gacha-card-back">?</div>' +
+        '<div class="gacha-card-face gacha-card-front">' +
+          '<div class="tier-label">'+tier+'</div>' +
+          '<div class="tier-kana">'+TIER_KANA[tier]+'</div>' +
+          detailHtml +
+        '</div>';
+      stage.appendChild(card);
+      return card;
+    });
+    cardEls.forEach((card, i)=>{
+      setTimeout(()=>{ card.classList.add('flipped','reveal-shine'); }, 250 + i*260);
+    });
+    return 250 + cardEls.length*260;
+  }
+
+  function updateTally(){
+    document.getElementById('gachaTally').textContent =
+      '累計 '+totalDraws+'連 ／ ' + TIER_ORDER.map(t=>t+'×'+tally[t]).join(' ');
+  }
+
+  function updateHistory(draws){
+    const hist = document.getElementById('gachaHistory');
+    draws.forEach(({tier, detail})=>{
+      const chip = document.createElement('span');
+      chip.className = 'history-chip tier-'+tier;
+      chip.textContent = tier;
+      chip.title = detail ? (detail.name+'(No.'+detail.no+')') : tier;
+      hist.prepend(chip);
+    });
+  }
+
+  function recordResults(draws){
+    draws.forEach(({tier})=>{ tally[tier]++; totalDraws++; });
+    updateTally();
+    updateHistory(draws);
+  }
+
+  document.getElementById('drawOneBtn').addEventListener('click', ()=>{
+    if(busy) return;
+    setBusy(true);
+    const draw = drawOneFull(BASE_RATES);
+    const dur = renderCards([draw]);
+    setTimeout(()=>{ recordResults([draw]); setBusy(false); }, dur);
+  });
+
+  document.getElementById('drawTenBtn').addEventListener('click', ()=>{
+    if(busy) return;
+    setBusy(true);
+    const draws = drawTenFull();
+    const dur = renderCards(draws);
+    setTimeout(()=>{ recordResults(draws); setBusy(false); }, dur);
+  });
+
+  document.getElementById('clearHistoryBtn').addEventListener('click', ()=>{
+    TIER_ORDER.forEach(t=>tally[t]=0);
+    totalDraws = 0;
+    updateTally();
+    document.getElementById('gachaHistory').innerHTML = '';
+    document.getElementById('gachaCards').innerHTML = '';
+  });
+</script>
+</body>
+</html>
