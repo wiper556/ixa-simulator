@@ -451,6 +451,13 @@
   </div>
   -->
 
+  <div style="margin-top:32px;padding-top:16px;border-top:1px solid var(--line);font-size:11px;color:var(--muted);line-height:1.7;text-align:center;">
+    <p>本ツールは戦国IXA(Sengoku IXA)の非公式ファンメイドツールです。運営会社・関連団体とは一切関係ありません。<br>
+    記載されている会社名・製品名・システム名などは、各社の商標、または登録商標です。<br>
+    © SQUARE ENIX</p>
+    <p><a href="index.html" style="color:var(--muted);">シミュレーター一覧</a> ・ <a href="about.html" style="color:var(--muted);">このサイトについて</a> ・ <a href="privacy.html" style="color:var(--muted);">プライバシーポリシー</a></p>
+  </div>
+
 </div>
 
 <script>
@@ -461,7 +468,7 @@
   // ルール(ユーザー指定): 「更新した年月日.その日の通算更新回数」とする。
   // 日付が変わったら通算更新回数は1にリセットする(例: 2026-07-20の1回目の更新はv2026-07-20.1)。
   // 同じ日の中で仕様変更・バグ修正を行うたびに末尾の回数を+1する。
-  const SIMULATOR_VERSION = 'v2026-07-24.16';
+  const SIMULATOR_VERSION = 'v2026-07-24.17';
   document.addEventListener('DOMContentLoaded', ()=>{
     const badge = document.getElementById('simVersionBadge');
     if(badge) badge.textContent = SIMULATOR_VERSION;
