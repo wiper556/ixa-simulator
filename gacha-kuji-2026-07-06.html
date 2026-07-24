@@ -1,26 +1,12 @@
 <!DOCTYPE html>
-<!--
-  【期間限定くじの管理方針】
-  現在のくじルール(排出確率・武将データ・パラレル化ルール等)は「2026年7月6日〜31章終了まで」の期間限定。
-  次の期間のくじルールに切り替える際は、まず本ファイルの現在の内容を
-  gacha-kuji-YYYY-MM-DD.html という名前で複製・保存してから(過去のくじ用の固定ページとして残す)、
-  本ファイル(gacha-simulator.html)を新ルールで上書きすること。
-  過去のくじページはindex.html等の通常導線にはリンクせず、URLを直接開いた場合のみ閲覧・プレイできるようにする。
-  現行の期間アーカイブ: gacha-kuji-2026-07-06.html (2026年7月6日〜31章終了まで、本ファイルと同内容のスナップショット)
--->
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ガチャシミュレーター｜戦国IXA シミュレーター置き場</title>
-<meta name="description" content="戦国IXA(Sengoku IXA)のくじを引く感覚を無料で楽しめる非公式ファンメイドツール。排出確率に沿ってカードをめくり、レア度・武将名を演出付きで表示します。">
+<title>戦国くじ 2026年7月6日〜31章終了まで(記録用)｜戦国IXA シミュレーター置き場</title>
+<meta name="description" content="戦国IXA(Sengoku IXA)の期間限定くじ(2026年7月6日〜31章終了まで)の排出確率・演出を再現した記録用ページ。最新のくじはガチャシミュレーターをご利用ください。">
 <link rel="stylesheet" href="assets/css/site.css">
 <style>
-  .period-banner{
-    display:inline-block;font-size:12px;font-weight:700;color:var(--vermillion-bright);
-    background:rgba(184,64,47,0.08);border:1px solid var(--vermillion);border-radius:5px;
-    padding:4px 10px;margin:0 0 10px;
-  }
   .archive-banner{
     font-size:13px;color:var(--muted);background:var(--bg-panel-2);border:1px solid var(--line);
     border-radius:6px;padding:10px 14px;margin:0 0 16px;line-height:1.7;
@@ -68,27 +54,13 @@
   .rare-log-row.rare-log-ten .rare-log-tag{color:#6b7280;}
   .rare-log-row.rare-log-tenpara{border-left-color:#b46bff;background:linear-gradient(90deg, rgba(255,107,107,.10), rgba(107,199,255,.10));}
   .rare-log-row.rare-log-tenpara .rare-log-tag{
-    background:linear-gradient(90deg,#ff6b6b,#ffb84d,#ffe14d,#6bff8f,#6bc7ff,#b46bff,#ff6b6b);
-    background-size:300% 100%;
+    background:linear-gradient(90deg,#ff6b6b,#ffb84d,#ffe14d,#6bff8f,#6bc7ff,#b46bff);
     -webkit-background-clip:text;background-clip:text;color:transparent;font-weight:900;
-    animation:rainbowShift 3s linear infinite;
   }
-  @keyframes rainbowShift{0%{background-position:0% 0%;}100%{background-position:150% 0%;}}
 
   .gacha-cards{display:flex;flex-wrap:wrap;gap:14px;justify-content:center;min-height:170px;perspective:900px;}
   .gacha-card{width:118px;height:170px;position:relative;transform-style:preserve-3d;transition:transform .6s cubic-bezier(.2,.8,.2,1);}
   .gacha-card.flipped{transform:rotateY(180deg);}
-  .gacha-card.spin-again.flipped{transform:rotateY(540deg);transition-duration:.7s;}
-  .landed-burst-fx{
-    position:absolute;inset:-25%;border-radius:50%;pointer-events:none;z-index:3;
-    background:radial-gradient(circle, rgba(255,255,255,.95) 0%, rgba(255,255,255,0) 65%);
-    animation:landedBurstFx .55s ease-out forwards;
-  }
-  @keyframes landedBurstFx{
-    0%{opacity:0;transform:scale(.2);}
-    35%{opacity:1;transform:scale(1);}
-    100%{opacity:0;transform:scale(1.7);}
-  }
   .gacha-card-face{position:absolute;inset:0;border-radius:10px;backface-visibility:hidden;overflow:hidden;
     display:flex;flex-direction:column;align-items:center;justify-content:center;font-family:'Noto Serif JP',serif;}
   .gacha-card-back{background:linear-gradient(135deg,#5b4632,#2b2f38);border:2px solid var(--gold);color:var(--gold-bright);font-size:26px;font-weight:900;}
@@ -108,24 +80,6 @@
   .tier-天.ten-parallel .gacha-card-front{
     background:linear-gradient(160deg,#ffffff,#f5f5f5 60%,#e8e8e8);color:#2b2f38;text-shadow:none;
     border-width:3px;animation:tenParaBorder 3s linear infinite;
-    position:absolute;overflow:hidden;
-  }
-  .tier-天.ten-parallel .gacha-card-front > *{position:relative;z-index:2;}
-  .tier-天.ten-parallel .gacha-card-front::before{
-    content:'';position:absolute;inset:-20% -60%;z-index:1;pointer-events:none;
-    background:repeating-linear-gradient(115deg,
-      rgba(255,90,90,.5) 0%, rgba(255,190,60,.5) 6%,
-      rgba(255,255,255,.75) 10%,
-      rgba(120,255,140,.5) 14%, rgba(90,190,255,.5) 20%,
-      rgba(190,110,255,.5) 26%, rgba(255,90,90,.5) 32%
-    );
-    background-size:100% 100%;
-    animation:holoSweep 2.6s linear infinite;
-    mix-blend-mode:multiply;
-  }
-  @keyframes holoSweep{
-    0%{transform:translate(-15%,-15%);}
-    100%{transform:translate(15%,15%);}
   }
   @keyframes tenParaBorder{
     0%{border-color:#ff6b6b;box-shadow:0 0 16px rgba(255,107,107,.6);}
@@ -143,7 +97,6 @@
     background-size:250% 250%;animation:shineSweep 1s ease-out;
   }
   @keyframes shineSweep{0%{background-position:200% 0;}100%{background-position:-50% 0;}}
-  .gacha-card.tier-特.reveal-shine .gacha-card-front::after{opacity:.5;}
 
   .gacha-tally{margin-top:18px;font-size:12.5px;color:var(--muted);font-family:'JetBrains Mono',monospace;}
   .gacha-history{margin-top:10px;text-align:center;}
@@ -154,12 +107,9 @@
   .history-chip.tier-天{background:linear-gradient(135deg,#ffffff,#dcdcdc);color:#2b2f38;border:1px solid #cfcfcf;}
   .history-chip.tier-傑{background:linear-gradient(135deg,#fff6c9,#ffd700);color:#5b3d00;}
   .history-chip.chip-tenpara{
-    background:linear-gradient(135deg,#ff6b6b,#ffe14d,#6bff8f,#6bc7ff,#b46bff,#ff6b6b);
-    background-size:300% 300%;color:#fff;
+    background:linear-gradient(135deg,#ff6b6b,#ffe14d,#6bff8f,#6bc7ff,#b46bff);color:#fff;
     text-shadow:0 1px 2px rgba(0,0,0,.5);
-    animation:rainbowShift2d 3s linear infinite;
   }
-  @keyframes rainbowShift2d{0%{background-position:0% 50%;}100%{background-position:150% 50%;}}
 
   .sim-version-badge{
     position:fixed; bottom:6px; right:8px; z-index:9999;
@@ -181,8 +131,8 @@
   </header>
 
   <main class="site-main">
-    <h1 class="page-title">ガチャシミュレーター</h1>
-    <p class="period-banner">開催期間: 2026年7月6日 〜 31章終了まで</p>
+    <h1 class="page-title">戦国くじ(2026年7月6日〜31章終了まで)</h1>
+    <p class="archive-banner">このページは期間限定くじ「2026年7月6日〜31章終了まで」の内容を固定で再現した記録用ページです。この期間が終了し次のくじに切り替わった後も、当時の内容をそのまま確認できます。現在開催中のくじは<a href="gacha-simulator.html">ガチャシミュレーター</a>をご覧ください。</p>
     <p class="page-lead">実際のくじの排出確率に沿って、無料でくじを引く感覚を楽しめます。何連引いても課金は発生しません。引いた武将の名前まで表示されます。画像表示は今後追加予定です。</p>
 
     <div class="content-block">
@@ -255,7 +205,7 @@
   <div class="sim-version-badge" id="simVersionBadge">v-</div>
 
 <script>
-  const GACHA_VERSION = 'v2026-07-24.15';
+  const GACHA_VERSION = 'v2026-07-24.11';
   document.addEventListener('DOMContentLoaded', ()=>{
     const badge = document.getElementById('simVersionBadge');
     if(badge) badge.textContent = GACHA_VERSION;
@@ -866,19 +816,6 @@
     document.getElementById('drawTenBtn').disabled = v;
   }
 
-  const FLIP_MS = 600;
-  const RESPIN_PAUSE_MS = 150;
-  const RESPIN_MS = 700;
-  const BURST_MS = 550;
-
-  function triggerLandedBurst(card){
-    const front = card.querySelector('.gacha-card-front');
-    const fx = document.createElement('div');
-    fx.className = 'landed-burst-fx';
-    front.appendChild(fx);
-    setTimeout(()=>{ fx.remove(); }, BURST_MS + 50);
-  }
-
   function renderCards(draws){
     const stage = document.getElementById('gachaCards');
     stage.innerHTML = '';
@@ -897,28 +834,12 @@
           detailHtml +
         '</div>';
       stage.appendChild(card);
-      return {card, tier, isTopTier: (tier==='天' || tier==='傑')};
+      return card;
     });
-
-    let maxFinish = 0;
-    cardEls.forEach(({card, tier, isTopTier}, i)=>{
-      const triggerAt = 250 + i*260;
-      setTimeout(()=>{
-        card.classList.add('flipped');
-        if(tier !== '上') card.classList.add('reveal-shine');
-      }, triggerAt);
-
-      let finishAt = triggerAt + FLIP_MS;
-      if(isTopTier){
-        const respinAt = triggerAt + FLIP_MS + RESPIN_PAUSE_MS;
-        setTimeout(()=>{ card.classList.add('spin-again'); }, respinAt);
-        const burstAt = respinAt + RESPIN_MS;
-        setTimeout(()=>{ triggerLandedBurst(card); }, burstAt);
-        finishAt = burstAt + BURST_MS;
-      }
-      if(finishAt > maxFinish) maxFinish = finishAt;
+    cardEls.forEach((card, i)=>{
+      setTimeout(()=>{ card.classList.add('flipped','reveal-shine'); }, 250 + i*260);
     });
-    return maxFinish;
+    return 250 + cardEls.length*260;
   }
 
   function updateTally(){
