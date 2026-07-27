@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7334304987274613"
+     crossorigin="anonymous"></script>
+<title>武将データベース｜戦国IXA シミュレーター置き場</title>
+<meta name="description" content="戦国IXA(Sengoku IXA)の武将データベース。カード画像・ステータス・統率・スキル詳細を確認できる非公式ファンメイドツール。">
+<link rel="stylesheet" href="assets/css/site.css">
+<style>
+  body{background:#ffffff;}
+
+  .gdb-search{margin-bottom:14px;}
+  .gdb-search input{
+    width:100%;font-family:'Zen Kaku Gothic New',sans-serif;font-size:15px;padding:11px 14px;
+    background:#fff;border:1px solid var(--line);color:var(--paper);border-radius:5px;
+  }
+  .gdb-search input:focus{outline:none;border-color:var(--gold);}
+
+  .gdb-list-table{width:100%;border-collapse:collapse;font-size:12.5px;}
+  .gdb-list-table th,.gdb-list-table td{border:1px solid var(--line);padding:8px 10px;text-align:center;vertical-align:middle;white-space:nowrap;}
+  .gdb-list-table th{background:var(--bg-panel-2);color:var(--muted);font-weight:700;}
+  .gdb-list-table tr:hover td{background:var(--bg-panel-2);}
+  .gdb-list-table td.gdb-col-name{text-align:left;}
+  .gdb-list-table td.gdb-col-name a{font-family:'Noto Serif JP',serif;font-weight:700;color:var(--paper);text-decoration:none;}
+  .gdb-list-table td.gdb-col-name a:hover{color:var(--vermillion-bright);}
+  .gdb-list-table td.gdb-col-effect{text-align:left;white-space:normal;min-width:260px;color:var(--muted);line-height:1.6;}
+
+  .gdb-atkdef-badge{display:inline-block;font-size:11px;font-weight:700;border-radius:4px;padding:2px 8px;white-space:nowrap;}
+  .gdb-atkdef-badge.atk{background:rgba(184,64,47,0.12);color:var(--vermillion-bright);}
+  .gdb-atkdef-badge.def{background:rgba(46,125,50,0.12);color:#2e7d32;}
+  .gdb-atkdef-badge.both{background:rgba(169,124,10,0.15);color:var(--gold-bright);}
+  .gdb-atkdef-badge.other{background:rgba(107,114,128,0.12);color:var(--muted);}
+
+  .gdb-branch-badge{
+    display:inline-flex;align-items:center;justify-content:center;width:18px;height:18px;
+    font-size:10.5px;font-weight:700;border-radius:3px;background:var(--bg-panel-2);
+    border:1px solid var(--line);color:var(--paper);margin:1px;
+  }
+  .gdb-branch-fallback{font-size:11px;color:var(--muted);white-space:normal;}
+
+  .gdb-subtag{font-size:10px;background:rgba(0,172,193,0.12);color:#00838f;border-radius:10px;padding:1px 7px;font-weight:700;display:inline-block;margin:1px;white-space:nowrap;}
+
+  .gdb-no-result{color:var(--muted);font-size:12px;padding:14px;text-align:center;}
+
+
+  .gdb-detail-head{display:flex;gap:20px;flex-wrap:wrap;margin-bottom:20px;}
+  .gdb-detail-img{max-width:100%;width:460px;border-radius:8px;border:1px solid var(--line);}
+  .gdb-detail-img-placeholder{
+    width:460px;max-width:100%;height:220px;border-radius:8px;border:1px dashed var(--line);
+    display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:13px;
+  }
+  .gdb-detail-title{font-family:'Noto Serif JP',serif;font-weight:900;font-size:22px;color:var(--paper);}
+  .gdb-detail-furigana{font-size:12px;color:var(--muted);margin-left:8px;font-weight:400;}
+  .gdb-detail-meta{font-size:13px;color:var(--muted);margin:6px 0 14px;}
+
+  .gdb-detail-block{margin-bottom:20px;}
+  .gdb-detail-block h2{font-family:'Noto Serif JP',serif;font-size:15px;margin:0 0 8px;color:var(--vermillion-bright);border-bottom:1px dashed var(--line);padding-bottom:6px;}
+  .gdb-table-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;}
+  .gdb-stat-table{width:100%;border-collapse:collapse;font-size:13px;}
+  .gdb-stat-table th,.gdb-stat-table td{border:1px solid var(--line);padding:8px 10px;text-align:center;white-space:nowrap;}
+  .gdb-stat-table th{background:var(--bg-panel-2);color:var(--muted);font-weight:700;}
+  .gdb-stat-table td[style*="text-align:left"]{white-space:normal;min-width:220px;}
+  .gdb-col-narrow{width:64px;}
+
+  @media (max-width:600px){
+    .gdb-stat-table{font-size:12px;}
+    .gdb-stat-table th,.gdb-stat-table td{padding:6px 8px;}
+  }
+  .gdb-skill-name{font-family:'Noto Serif JP',serif;font-weight:700;font-size:15px;color:var(--gold-bright);margin-bottom:6px;}
+  .gdb-skill-detail{font-size:13.5px;line-height:1.8;}
+  .gdb-illust-credit{font-size:12px;color:var(--muted);text-align:right;}
+  .gdb-no-detail{color:var(--muted);font-size:13px;padding:20px;text-align:center;border:1px dashed var(--line);border-radius:8px;}
+
+  .sim-version-badge{
+    position:fixed; bottom:6px; right:8px; z-index:9999;
+    font-family:'JetBrains Mono',monospace; font-size:10px; color:#9a9382;
+    background:rgba(255,255,255,0.85); padding:2px 7px; border-radius:4px;
+    border:1px solid var(--line); pointer-events:none; user-select:text;
+  }
+</style>
+</head>
+<body>
+<div class="site-layout">
+  <aside class="site-sidebar" id="siteSidebar">
+    <div class="sidebar-header">
+      <span class="sidebar-title">メニュー</span>
+    </div>
+    <nav class="sidebar-nav">
+      <a href="index.html">シミュレーター一覧</a>
+      <a href="attack-simulator.html">攻撃/防御シミュレーター</a>
+      <a href="gacha-simulator.html">くじシミュレーター</a>
+      <a href="characters.html">武将データベース</a>
+      <a href="skills-hub.html">スキル一覧</a>
+      <a href="about.html">このサイトについて</a>
+      <a href="privacy.html">プライバシーポリシー</a>
+    </nav>
+  </aside>
+
+  <div class="site-content">
+  <header class="site-header">
+    <a class="site-logo" href="index.html">戦国IXA シミュレーター置き場</a>
+  </header>
+
+  <main class="site-main">
+    <h1 class="page-title">武将データベース</h1>
+
+    <div id="listView">
+      <div class="gdb-search">
+        <input type="text" id="gdbSearchBox" placeholder="武将名またはカードNo.を入力(例: 徳川家康、1298 など)">
+      </div>
+      <div id="gdbList"></div>
+    </div>
+
+    <div id="detailView" style="display:none;">
+      <div id="gdbDetailBody"></div>
+    </div>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>本サイトは戦国IXA(Sengoku IXA)の非公式ファンメイドツールです。運営会社・関連団体とは一切関係ありません。<br>
+    記載されている会社名・製品名・システム名などは、各社の商標、または登録商標です。<br>
+    © SQUARE ENIX</p>
+    <p><a href="about.html">このサイトについて</a> ・ <a href="privacy.html">プライバシーポリシー</a></p>
+  </footer>
+
+  <div class="sim-version-badge" id="simVersionBadge">v-</div>
+
+<script>
+  const CHAR_DB_VERSION = 'v2026-07-26.15';
+  document.addEventListener('DOMContentLoaded', ()=>{
+    const badge = document.getElementById('simVersionBadge');
+    if(badge) badge.textContent = CHAR_DB_VERSION;
+  });
+
+  /* ============ 武将データベース(戦国IXA 31〜32章 天・覇) ============
+     attack-simulator.htmlのgenerals配列から分離・独立させたデータ。
+     内部計算用のgeneralGrowthDBとは別物で、こちらは一般公開・閲覧専用。
+  ============================================ */
+  const generals = [
+    {name:"豊臣秀長【覇】", no:"1298", ch:"31章", cost:5.5, troop:"砲器攻", sub:"無尽2", effect:"対象兵科指揮時、無尽スキル数で総攻撃力上昇",
+      furigana:"とよとみひでなが", illustrator:"直良有祐",
+      imageFull:"assets/img/characters/no1298_full.png", imageChar:"assets/img/characters/no1298_char.png",
+      atkBase:1310, atkGrowth:82, defBase:1220, defGrowth:65, tacticsBase:860.0, tacticsGrowth:4.0, lv0Troops:5230,
+      rankGrades:{yari:'A', yumi:'SS', uma:'A', ki:'SS'},
+      initialSkill:"天導仁翼",
+      skillDetail:"SSS/LV10 確率+40%/対象:砲・器。対象兵科(砲・器)を指揮した戦闘時、部隊総攻撃力が(自部隊内の初期／追加／極限スキルのいずれかに無尽を持つ武将数×4.0)%上昇+無尽2付与(模倣不可)。鍛錬しても発動率・無尽2は変化しない。",
+      mujinNote:"「無尽2」は、部隊消費コストを-1.0する効果(無尽1につき-0.5)。",
+      trTable:[
+        {level:"LV10", points:"-", effect:"砲・器　確率 40% / 総攻撃 4.0%×無尽武将数(4人)×2（無尽）=32.0%"},
+        {level:"TR1", points:"10", effect:"砲・器　確率 40% / 総攻撃 4.1%×無尽武将数(4人)×2（無尽）=32.8%"},
+        {level:"TR2", points:"40", effect:"砲・器　確率 40% / 総攻撃 4.3%×無尽武将数(4人)×2（無尽）=34.4%"},
+        {level:"TR3", points:"90", effect:"砲・器　確率 40% / 総攻撃 4.5%×無尽武将数(4人)×2（無尽）=36.0%"},
+        {level:"TR4", points:"150", effect:"砲・器　確率 40% / 総攻撃 4.7%×無尽武将数(4人)×2（無尽）=37.6%"},
+        {level:"TR5", points:"200", effect:"砲・器　確率 40% / 総攻撃 5.0%×無尽武将数(4人)×2（無尽）=40.0%"},
+        {level:"TR6", points:"パラレル", effect:"砲・器　確率 40% / 総攻撃 6.3%×無尽武将数(4人)×2（無尽）=50.4%"}
+      ],
+      synthesisTable:[
+        {slot:"A", skill:"覆天征軍", rank:"SS", afterSkill:"覆天征軍", afterRank:"SS"},
+        {slot:"B", skill:"焼尽神無", rank:"SS", afterSkill:"焼尽神無", afterRank:"SS"},
+        {slot:"C", skill:"勇冠三軍", rank:"SSS", afterSkill:"勇冠三軍", afterRank:"SSS"},
+        {slot:"S1", skill:"終焉焦土", rank:"SSS", afterSkill:"終焉焦土", afterRank:"SSS"},
+        {slot:"S2", skill:"万物神勇", rank:"SSS", afterSkill:"万物神勇", afterRank:"SSS"}
+      ],
+      currentlyInKuji:true},
+    {name:"石田三成(7)【覇】", no:"1299", ch:"31章", cost:6.0, troop:"全防", sub:"無尽", effect:"部隊内の全極限スキルに無尽付与／無尽を持つスキルの防御効果2倍"},
+    {name:"大谷吉継(3)【覇】", no:"1300", ch:"31章", cost:5.0, troop:"全攻", sub:"", effect:"対人戦闘時、戦闘で受けたダメージに応じて最大HPが減少"},
+    {name:"上杉景勝(6)", no:"1301", ch:"31章", cost:5.5, troop:"全防", sub:"", effect:"模倣スキルのレアリティ係数によって防御効果が上昇"},
+    {name:"佐竹義宣(3)", no:"1302", ch:"31章", cost:5.5, troop:"砲器防", sub:"", effect:"防御参加武将数依存"},
+    {name:"本多忠勝(2)", no:"1303", ch:"31章", cost:2.5, troop:"全攻", sub:"", effect:"8部隊以下の攻撃時、卓越確率+480%／部隊内武将の卓越確率+15%"},
+    {name:"真田昌幸(5)", no:"1304", ch:"31章", cost:5.0, troop:"-", sub:"無尽", effect:"追加スキル、極限スキルの防御・破壊効果が2倍"},
+    {name:"福島正則(4)", no:"1305", ch:"31章", cost:3.0, troop:"槍弓器鉄防", sub:"無尽", effect:"部隊コスト10以下で効果2倍"},
+    {name:"毛利輝元(5)", no:"1306", ch:"31章", cost:5.0, troop:"弓砲器攻", sub:"", effect:"敵軍部隊数依存"},
+    {name:"立花宗茂(5)", no:"1307", ch:"31章", cost:4.0, troop:"槍馬器騎攻+速度", sub:"", effect:"部隊移動速度依存"},
+    {name:"小西行長(2)", no:"1308", ch:"31章", cost:5.0, troop:"全防", sub:"", effect:"所有者より全体格付け「戦果」が上位の的城主が敵軍にいた場合防御効果3倍"},
+    {name:"津軽為信", no:"1309", ch:"31章", cost:4.5, troop:"槍弓器鉄防", sub:"", effect:"防御参加武将数依存／220名以下の時、防御効果1.5倍"},
+    {name:"織田信長【覇(8)】", no:"1286", ch:"30章", cost:6.0, troop:"砲器攻", sub:"覇道", effect:"部隊総攻撃力上昇"},
+    {name:"豊臣秀吉【覇(5)】", no:"1287", ch:"30章", cost:5.0, troop:"弓馬砲器防", sub:"覇道", effect:"部隊内覇武将数×200%上昇／部隊長時は効果2倍"},
+    {name:"徳川家康【覇(6)】", no:"1288", ch:"30章", cost:5.5, troop:"弓砲器攻防", sub:"覇道", effect:"卓越発動率100%超過分を加算",
+      furigana:"とくがわいえやす", illustrator:"直良有祐",
+      imageFull:"assets/img/characters/no1288_full.png", imageChar:"assets/img/characters/no1288_char.png",
+      atkBase:1280, atkGrowth:81, defBase:1280, defGrowth:81, tacticsBase:850.0, tacticsGrowth:4.0, lv0Troops:5220,
+      rankGrades:{yari:'A', yumi:'X', uma:'A', ki:'.S'},
+      initialSkill:"伏雷蒼樹",
+      skillDetail:"SSS/LV10 通常確率では発動せず、卓越:追加確率50%で発動(覇道)。対象:弓/砲/器、攻防200%上昇。追加された卓越追加確率のうち100%超過分を、超過分×5.5%として攻防効果に加算(二重卓越不可)。",
+      trTable:[
+        {level:"LV10", points:"-", effect:"卓越追加確率50%で発動 / 攻防200%上昇 / 超過分×5.5%"},
+        {level:"TR1", points:"10", effect:"卓越追加確率60%で発動 / 攻防200%上昇 / 超過分×5.6%"},
+        {level:"TR2", points:"40", effect:"卓越追加確率70%で発動 / 攻防200%上昇 / 超過分×5.8%"},
+        {level:"TR3", points:"90", effect:"卓越追加確率90%で発動 / 攻防200%上昇 / 超過分×6.0%"},
+        {level:"TR4", points:"150", effect:"卓越追加確率120%で発動 / 攻防200%上昇 / 超過分×6.4%"},
+        {level:"TR5", points:"200", effect:"卓越追加確率150%で発動 / 攻防200%上昇 / 超過分×6.8%"},
+        {level:"TR6", points:"パラレル", effect:"卓越追加確率200%で発動 / 攻防200%上昇 / 超過分×7.0%"}
+      ],
+      synthesisTable:[
+        {slot:"候補", skill:"千里必勝ノ神算", rank:"SS", afterSkill:"未確認", afterRank:"未確認"},
+        {slot:"候補", skill:"幻像鏡花", rank:"SSS", afterSkill:"未確認", afterRank:"未確認"},
+        {slot:"候補", skill:"至天ノ御剣", rank:"SSS", afterSkill:"未確認", afterRank:"未確認"}
+      ],
+      synthesisNote:"A/B/C/S1/S2の対応関係、および移植後合成候補は出典元に明記がなく未確認。候補スキル3種のみ判明。",
+      variants:{parallel:{no:'31288', label:'パラレル'}}, currentlyInKuji:false},
+    {name:"長宗我部元親(7)", no:"1289", ch:"30章", cost:6.0, troop:"槍砲器防", sub:"兵站", effect:"極限スキルの防御効果3.5倍"},
+    {name:"武田信玄(6)", no:"1290", ch:"30章", cost:5.0, troop:"赤備え", sub:"撤退", effect:"所属部隊内の赤備えの兵士攻防速が上昇"},
+    {name:"上杉謙信(5)", no:"1291", ch:"30章", cost:4.0, troop:"全防", sub:"", effect:"防御側の兵士補正を小さくする"},
+    {name:"伊達政宗(6)", no:"1292", ch:"30章", cost:4.5, troop:"槍馬器騎攻", sub:"", effect:"防御参加武将数依存／卓越発動時効果1.5倍"},
+    {name:"毛利元就(4)", no:"1293", ch:"30章", cost:4.5, troop:"全攻防", sub:"", effect:"部隊内の卓越率上昇／パラ天は飛翔40追加"},
+    {name:"島津義弘(4)", no:"1294", ch:"30章", cost:5.5, troop:"全攻", sub:"不屈2", effect:"自部隊同時攻撃時、コスト除外／パラレル天では不屈5"},
+    {name:"大友宗麟(6)", no:"1295", ch:"30章", cost:5.0, troop:"全防", sub:"", effect:"本丸防御陣形時、2列目以降の部隊にも効果がかかる"},
+    {name:"北条早雲(2)", no:"1296", ch:"30章", cost:5.5, troop:"全攻", sub:"覇道", effect:"極限スキル含む追加スキル全ての攻撃・破壊効果が2倍"},
+    {name:"斎藤道三(3)", no:"1297", ch:"30章", cost:5.0, troop:"槍弓器鉄防", sub:"", effect:"防御参加武将数依存／卓越発動時は効果1.5倍"},
+    {name:"南光坊天海", no:"10063", ch:"期間限定", cost:5.0, troop:"全攻", sub:"", effect:"8部隊以下の攻撃戦闘時、卓越確率上昇"},
+    {name:"長尾景虎", no:"10064", ch:"期間限定", cost:4.5, troop:"全防", sub:"", effect:"極限スキルの効果2倍／飛翔値3倍"},
+    {name:"世良田二郎三郎", no:"10065", ch:"期間限定", cost:5.0, troop:"全攻", sub:"", effect:"8部隊以下の攻撃戦闘時、卓越確率上昇"},
+    {name:"斎藤一【覇】", no:"10066", ch:"期間限定", cost:5.5, troop:"全攻", sub:"無尽", effect:"追加スキルの攻撃効果2.5倍"},
+    {name:"相楽左之助【覇】", no:"10067", ch:"期間限定", cost:5.0, troop:"槍砲器防", sub:"", effect:"自軍内での同一兵種依存"},
+    {name:"長宗我部元親(復刻)", no:"10069", ch:"期間限定", cost:5.0, troop:"槍馬砲器防", sub:"", effect:"卓越発動時効果3倍"},
+    {name:"豊臣秀吉【覇】", no:"1274", ch:"29章", cost:6.0, troop:"全攻", sub:"無尽 覇道", effect:"部隊内の全極限スキルに無尽付与／無尽を持つスキルの攻撃効果2倍"},
+    {name:"竹中半兵衛【覇】", no:"1275", ch:"29章", cost:6.0, troop:"全攻", sub:"無尽", effect:"極限スキル枠の攻撃効果3.5倍"},
+    {name:"結城秀康", no:"1276", ch:"29章", cost:5.5, troop:"全攻", sub:"", effect:"討伐ゲージ依存"},
+    {name:"石田三成", no:"1277", ch:"29章", cost:4.5, troop:"全攻防", sub:"飛翔17", effect:"-"},
+    {name:"羽柴秀長", no:"1278", ch:"29章", cost:4.5, troop:"全攻防", sub:"無尽", effect:"部隊内の全スキルに「砲」対象を追加"},
+    {name:"荒木村重", no:"1279", ch:"29章", cost:4.0, troop:"槍弓砲器防", sub:"", effect:"防御参加数依存／120名以下の時は効果1.5倍"},
+    {name:"小早川隆景", no:"1280", ch:"29章", cost:5.0, troop:"-", sub:"兵站", effect:"加勢戦闘時は追加スキルの防御効果2.5倍"},
+    {name:"宇喜多秀家", no:"1281", ch:"29章", cost:4.0, troop:"槍馬砲器防", sub:"飛翔10", effect:"飛翔値の合計×10％を加算"},
+    {name:"黒田長政", no:"1282", ch:"29章", cost:5.0, troop:"槍弓馬砲攻", sub:"", effect:"飛翔を持たない防御参加数依存"},
+    {name:"鍋島直茂", no:"1283", ch:"29章", cost:5.0, troop:"全防", sub:"", effect:"防御効果のみコスト【+1】計算"},
+    {name:"加藤清正", no:"1284", ch:"29章", cost:5.0, troop:"槍砲器攻", sub:"", effect:"敵軍の総コスト依存"},
+    {name:"島津義久", no:"1285", ch:"29章", cost:1.0, troop:"全防", sub:"", effect:"所領防御陣形でのみ最大兵数の武将と同兵数になる"}
+  ];
+
+  const RANK_LABELS = {yari:'槍', yumi:'弓', uma:'馬', ki:'器'};
+
+  function gdbEscapeHtml(s){
+    return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  }
+
+  // 武将カード上の表記に合わせ、「無尽」を水色、「撤退」を濃い青で強調する
+  function gdbColorizeMujin(s){
+    return gdbEscapeHtml(s).replace(/無尽/g, '<span style="color:#00acc1;font-weight:700;">無尽</span>')
+      .replace(/撤退/g, '<span style="color:#1565c0;font-weight:700;">撤退</span>');
+  }
+
+  // スキルデータベース(skills.html)にページがあるスキル名の一覧。ここに載っているスキルはリンク化する。
+  const LINKED_SKILLS = ['勇冠三軍', '焼尽神無', '覆天征軍', '終焉焦土', '万物神勇'];
+
+  function gdbSkillLink(skillName, rank){
+    const label = gdbEscapeHtml(skillName)+' '+gdbEscapeHtml(rank||'');
+    if(LINKED_SKILLS.includes(skillName)){
+      return '<a href="skills.html#'+encodeURIComponent(skillName)+'">'+label+'</a>';
+    }
+    return label;
+  }
+
+  function gdbHasDetail(g){
+    return !!g.imageFull || !!g.atkBase || !!g.rankGrades;
+  }
+
+  // ============ 一覧表示 ============
+  // troop文字列に含まれる兵科1文字(全/槍/弓/馬/砲/器/鉄/騎)を判定するための一覧。
+  // ここに無い記号(「赤備え」等の固有兵種名や「-」)は分解できないため、そのままテキスト表示にフォールバックする。
+  const TROOP_BRANCH_CHARS = ['全','槍','弓','馬','砲','器','鉄','騎'];
+
+  // troop文字列(例:「砲器攻」「全防」)から攻撃/防御/攻防/特殊(その他)を判定する
+  function gdbAtkDefBadge(troop){
+    if(!troop || troop === '-') return {cls:'other', label:'特殊'};
+    const hasAtk = troop.includes('攻');
+    const hasDef = troop.includes('防');
+    if(hasAtk && hasDef) return {cls:'both', label:'攻防'};
+    if(hasAtk) return {cls:'atk', label:'攻撃'};
+    if(hasDef) return {cls:'def', label:'防御'};
+    return {cls:'other', label:'特殊'};
+  }
+
+  function gdbTroopBranchesHtml(troop){
+    if(!troop || troop === '-') return '<span class="gdb-branch-fallback">-</span>';
+    const chars = troop.split('').filter(function(c){ return TROOP_BRANCH_CHARS.includes(c); });
+    if(chars.length === 0) return '<span class="gdb-branch-fallback">'+gdbEscapeHtml(troop)+'</span>';
+    return chars.map(function(c){ return '<span class="gdb-branch-badge">'+c+'</span>'; }).join('');
+  }
+
+  function gdbRenderListRow(g){
+    const atkDef = gdbAtkDefBadge(g.troop);
+    const subTagList = (g.sub || '').split(/\s+/).filter(Boolean);
+    const subTags = subTagList.length
+      ? subTagList.map(function(t){ return '<span class="gdb-subtag">'+gdbColorizeMujin(t)+'</span>'; }).join('')
+      : '<span class="gdb-branch-fallback">-</span>';
+    const detailMark = gdbHasDetail(g) ? ' <span title="詳細ページあり" style="color:var(--vermillion-bright);">●</span>' : '';
+    return '<tr onclick="location.hash=\''+gdbEscapeHtml(g.no)+'\';" style="cursor:pointer;">'
+      + '<td>'+gdbEscapeHtml(g.no)+'</td>'
+      + '<td class="gdb-col-name"><a href="#'+gdbEscapeHtml(g.no)+'">'+gdbEscapeHtml(g.name)+'</a>'+detailMark+'</td>'
+      + '<td>'+gdbEscapeHtml(g.ch || '-')+'</td>'
+      + '<td>'+(g.cost ?? '?')+'</td>'
+      + '<td><span class="gdb-atkdef-badge '+atkDef.cls+'">'+atkDef.label+'</span></td>'
+      + '<td>'+gdbTroopBranchesHtml(g.troop)+'</td>'
+      + '<td>'+subTags+'</td>'
+      + '<td class="gdb-col-effect">'+gdbColorizeMujin(g.effect || '-')+'</td>'
+      + '</tr>';
+  }
+
+  function gdbRenderList(list){
+    const el = document.getElementById('gdbList');
+    if(list.length === 0){
+      el.innerHTML = '<div class="gdb-no-result">該当する武将が見つかりません(データベースは31〜32章の天・覇 約50名のみ収録)</div>';
+      return;
+    }
+    el.innerHTML = '<div class="gdb-table-scroll"><table class="gdb-list-table">'
+      + '<thead><tr><th>No.</th><th>武将名</th><th>入手章</th><th>コスト</th><th>攻防</th><th>兵科</th><th>特殊</th><th>スキル効果</th></tr></thead>'
+      + '<tbody>' + list.map(gdbRenderListRow).join('') + '</tbody>'
+      + '</table></div>';
+  }
+
+  function gdbDoSearch(){
+    const q = document.getElementById('gdbSearchBox').value.trim();
+    const list = q === '' ? generals : generals.filter(function(g){ return g.name.includes(q) || g.no.includes(q); });
+    gdbRenderList(list);
+  }
+
+  document.getElementById('gdbSearchBox').addEventListener('input', gdbDoSearch);
+
+  // ============ 詳細表示 ============
+  function gdbRenderDetail(g){
+    const body = document.getElementById('gdbDetailBody');
+    if(!gdbHasDetail(g)){
+      body.innerHTML = '<h1 class="gdb-detail-title">'+gdbEscapeHtml(g.name)+'<span class="gdb-detail-furigana">No.'+gdbEscapeHtml(g.no)+'</span></h1>'
+        + '<p class="gdb-detail-meta">コスト'+(g.cost ?? '?')+' ／ '+gdbEscapeHtml(g.troop || '-')+(g.sub ? ' ／ '+gdbEscapeHtml(g.sub) : '')+'</p>'
+        + '<div class="gdb-no-detail">この武将の画像・ステータス・統率の詳細データはまだ登録されていません。<br>スキル概要: '+gdbColorizeMujin(g.effect || '-')+'</div>';
+      return;
+    }
+    const imgHtml = g.imageFull
+      ? '<img class="gdb-detail-img" src="'+g.imageFull+'" alt="'+gdbEscapeHtml(g.name)+'">'
+      : '<div class="gdb-detail-img-placeholder">画像未登録</div>';
+    const rankRow = g.rankGrades ? Object.keys(g.rankGrades).map(function(k){
+        return '<td>'+(RANK_LABELS[k]||k)+': '+gdbEscapeHtml(g.rankGrades[k])+'</td>';
+      }).join('') : '';
+
+    body.innerHTML =
+      '<div class="gdb-detail-head">'
+        + imgHtml
+        + '<div>'
+          + '<h1 class="gdb-detail-title">'+gdbEscapeHtml(g.name)+(g.furigana ? '<span class="gdb-detail-furigana">'+gdbEscapeHtml(g.furigana)+'</span>' : '')+'</h1>'
+          + '<p class="gdb-detail-meta">No.'+gdbEscapeHtml(g.no)+' ／ コスト'+(g.cost ?? '?')+' ／ 指揮兵数'+(g.lv0Troops ?? '?')+'</p>'
+          + '<div class="gdb-detail-block">'
+            + '<h2>ステータス</h2>'
+            + '<div class="gdb-table-scroll"><table class="gdb-stat-table"><thead><tr><th>攻撃</th><th>防御</th><th>兵法</th></tr></thead>'
+            + '<tbody><tr>'
+              + '<td>'+g.atkBase+(g.atkGrowth?' (+'+g.atkGrowth+')':'')+'</td>'
+              + '<td>'+g.defBase+(g.defGrowth?' (+'+g.defGrowth+')':'')+'</td>'
+              + '<td>'+g.tacticsBase+(g.tacticsGrowth?' (+'+g.tacticsGrowth+')':'')+'</td>'
+            + '</tr></tbody></table></div>'
+          + '</div>'
+          + (g.rankGrades ? (
+            '<div class="gdb-detail-block"><h2>統率</h2><div class="gdb-table-scroll"><table class="gdb-stat-table"><tbody><tr>'+rankRow+'</tr></tbody></table></div></div>'
+          ) : '')
+        + '</div>'
+      + '</div>'
+      + '<div class="gdb-detail-block">'
+        + '<h2>スキル</h2>'
+        + '<div class="gdb-skill-name">'+gdbEscapeHtml(g.initialSkill || '-')+'</div>'
+        + '<div class="gdb-skill-detail">'+gdbColorizeMujin(g.skillDetail || g.effect || '')+'</div>'
+        + (g.mujinNote ? '<div class="gdb-skill-detail" style="margin-top:6px;color:var(--muted);">'+gdbColorizeMujin(g.mujinNote)+'</div>' : '')
+      + '</div>'
+      + (g.trTable ? (
+        '<div class="gdb-detail-block"><h2>鍛錬レベル別性能</h2>'
+        + '<div class="gdb-table-scroll"><table class="gdb-stat-table"><thead><tr><th>レベル</th><th class="gdb-col-narrow">必要ポイント</th><th>効果</th></tr></thead><tbody>'
+        + g.trTable.map(function(row){ return '<tr><td>'+gdbEscapeHtml(row.level)+'</td><td class="gdb-col-narrow">'+gdbEscapeHtml(row.points||'-')+'</td><td style="text-align:left;">'+gdbColorizeMujin(row.effect)+'</td></tr>'; }).join('')
+        + '</tbody></table></div></div>'
+      ) : '')
+      + (g.synthesisTable ? (
+        '<div class="gdb-detail-block"><h2>合成素材にした場合の候補スキル</h2>'
+        + '<div class="gdb-table-scroll"><table class="gdb-stat-table"><thead><tr><th>候補</th><th>初期スキル</th><th>移植後合成候補</th></tr></thead><tbody>'
+        + g.synthesisTable.map(function(row){
+            const skillLabel = gdbSkillLink(row.skill, row.rank);
+            const afterLabel = row.afterSkill ? gdbSkillLink(row.afterSkill, row.afterRank) : '-';
+            return '<tr><td>'+gdbEscapeHtml(row.slot)+'</td><td>'+skillLabel+'</td>'
+              + '<td>'+afterLabel+'</td></tr>';
+          }).join('')
+        + '</tbody></table></div>'
+        + (g.synthesisNote ? '<p class="gdb-detail-meta" style="margin-top:6px;">'+gdbEscapeHtml(g.synthesisNote)+'</p>' : '')
+        + '</div>'
+      ) : '')
+      + (g.illustrator ? '<p class="gdb-illust-credit">Illust. '+gdbEscapeHtml(g.illustrator)+'</p>' : '');
+  }
+
+  // ============ 表示切り替え(URLハッシュに応じて一覧/詳細を出し分け) ============
+  function gdbRoute(){
+    const hash = decodeURIComponent(location.hash.replace('#',''));
+    const listView = document.getElementById('listView');
+    const detailView = document.getElementById('detailView');
+    if(!hash){
+      listView.style.display = '';
+      detailView.style.display = 'none';
+      return;
+    }
+    const g = generals.find(function(x){ return x.no === hash; });
+    if(!g){
+      listView.style.display = '';
+      detailView.style.display = 'none';
+      return;
+    }
+    listView.style.display = 'none';
+    detailView.style.display = '';
+    gdbRenderDetail(g);
+    window.scrollTo(0, 0);
+  }
+
+  window.addEventListener('hashchange', gdbRoute);
+  gdbRenderList(generals);
+  gdbRoute();
+</script>
+  </div>
+</div>
+
+<script src="assets/js/site-sidebar.js"></script>
+</body>
+</html>

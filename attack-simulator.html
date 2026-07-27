@@ -213,6 +213,7 @@
     margin-top:3px;text-align:center;
   }
 
+
   .footnote{margin-top:16px;padding-top:12px;border-top:1px solid var(--line);font-size:11px;color:#5c6478;line-height:1.7;}
   .footnote b{color:var(--muted);}
   details.footnote{cursor:default;}
@@ -426,53 +427,25 @@
   </div>
 
 
-  <!-- 武将データベース検索パネルは一時的に非表示にしています(将来復活させる可能性あり)。
-       HTML/JSは下記コメントおよびgenerals配列として残しています。
-  <div class="panel">
-    <div class="panel-title"><span class="num">02</span> 武将データベース検索<span style="font-weight:400;color:var(--muted);font-size:11px;margin-left:8px;">戦国IXA 31〜32章 天・覇(約50名) ／ 出典: ixagno.blog.fc2.com</span></div>
-
-    <div class="field" style="margin-bottom:12px;max-width:260px;">
-      <label style="display:block;font-size:12px;color:var(--muted);margin-bottom:6px;">反映先の列</label>
-      <select id="targetCol">
-        <option value="0">部隊長</option>
-        <option value="1">小隊1</option>
-        <option value="2">小隊2</option>
-        <option value="3">小隊3</option>
-      </select>
-    </div>
-
-    <div class="field" style="margin-bottom:14px;">
-      <input type="text" id="searchBox" placeholder="武将名またはカードNo.を入力(例: 徳川家康、1298 など)">
-    </div>
-
-    <div id="searchResults" style="max-height:280px;overflow-y:auto;"></div>
-
-    <div class="footnote">
-      <b>注意:</b> 検索結果には武将名・カードNo.・コスト・対応兵科・スキル概要が表示されます。「武将名を反映」を押すと、選んだ列の「武将名」欄に名前とカードNo.が自動入力されます。攻撃力・防御力・兵法値などの数値はこのサイトに掲載がないため、引き続き手入力してください。
-    </div>
-  </div>
-  -->
-
   <div class="panel" style="margin-top:24px;">
-    <div class="panel-title"><span class="num">03</span> バグ報告・ご意見</div>
+    <div class="panel-title"><span class="num">02</span> バグ報告・ご意見</div>
     <div class="footnote" style="margin-bottom:14px;">
-      計算結果がおかしい・表示が崩れている等に気づいた場合は、下のコメント欄で教えてください。投稿にはGitHubアカウントでのログインが必要です。
+      計算結果がおかしい・表示が崩れている等に気づいた場合は、下のコメント欄で教えてください。ログイン不要で投稿できます。
     </div>
-    <script src="https://giscus.app/client.js"
-        data-repo="wiper556/ixa-simulator"
-        data-repo-id="R_kgDOTgSbNg"
-        data-category="General"
-        data-category-id="DIC_kwDOTgSbNs4DB1-T"
-        data-mapping="pathname"
-        data-strict="0"
-        data-reactions-enabled="1"
-        data-emit-metadata="0"
-        data-input-position="bottom"
-        data-theme="preferred_color_scheme"
-        data-lang="ja"
-        crossorigin="anonymous"
-        async>
+    <div id="disqus_thread"></div>
+    <script>
+      var disqus_config = function () {
+        this.page.url = window.location.href.split('#')[0];
+        this.page.identifier = 'attack-simulator';
+      };
+      (function() {
+        var d = document, s = d.createElement('script');
+        s.src = 'https://zhan-guo-ixa-shimiyuretazhi-kichang.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      })();
     </script>
+    <noscript>コメントを表示するには<a href="https://disqus.com/?ref_noscript">JavaScript</a>を有効にしてください。</noscript>
   </div>
 
   <div style="margin-top:32px;padding-top:16px;border-top:1px solid var(--line);font-size:11px;color:var(--muted);line-height:1.7;text-align:center;">
@@ -492,7 +465,7 @@
   // ルール(ユーザー指定): 「更新した年月日.その日の通算更新回数」とする。
   // 日付が変わったら通算更新回数は1にリセットする(例: 2026-07-20の1回目の更新はv2026-07-20.1)。
   // 同じ日の中で仕様変更・バグ修正を行うたびに末尾の回数を+1する。
-  const SIMULATOR_VERSION = 'v2026-07-24.19';
+  const SIMULATOR_VERSION = 'v2026-07-26.3';
   document.addEventListener('DOMContentLoaded', ()=>{
     const badge = document.getElementById('simVersionBadge');
     if(badge) badge.textContent = SIMULATOR_VERSION;
@@ -6370,7 +6343,15 @@
 
   /* ============ 武将データベース (戦国IXA 31〜32章 天・覇 / 出典: ixagno.blog.fc2.com) ============ */
   const generals = [
-    {name:"豊臣秀長【覇】", no:"1298", ch:"31章", cost:5.5, troop:"砲器攻", sub:"無尽2", effect:"対象兵科指揮時、無尽スキル数で総攻撃力上昇"},
+    {name:"豊臣秀長【覇】", no:"1298", ch:"31章", cost:5.5, troop:"砲器攻", sub:"無尽2", effect:"対象兵科指揮時、無尽スキル数で総攻撃力上昇",
+      furigana:"とよとみひでなが", illustrator:"直良祐介",
+      imageFull:"assets/img/characters/no1298_full.png", imageChar:"assets/img/characters/no1298_char.png",
+      atkBase:1310, atkGrowth:82, defBase:1220, defGrowth:65, tacticsBase:860.0, tacticsGrowth:4.0, lv0Troops:5230,
+      rankGrades:{yari:'A', yumi:'SS', uma:'A', ki:'SS'},
+      initialSkill:"天導仁翼",
+      skillDetail:"SSS/LV10 確率+40%/対象:砲・器。対象兵科(砲・器)を指揮した戦闘時、部隊総攻撃力が(無尽スキル保有武将数×4%、鍛錬TR6で×6.3%)上昇+無尽2付与(模倣不可)。",
+      variants:{}, synthesisSkillCandidates:[], currentlyInKuji:true,
+      dataNote:"出典: ユーザー提供スクリーンショット(Lv.0表示) / generalGrowthDB(No.1298)の確認済み数値と一致"},
     {name:"石田三成(7)【覇】", no:"1299", ch:"31章", cost:6.0, troop:"全防", sub:"無尽", effect:"部隊内の全極限スキルに無尽付与／無尽を持つスキルの防御効果2倍"},
     {name:"大谷吉継(3)【覇】", no:"1300", ch:"31章", cost:5.0, troop:"全攻", sub:"", effect:"対人戦闘時、戦闘で受けたダメージに応じて最大HPが減少"},
     {name:"上杉景勝(6)", no:"1301", ch:"31章", cost:5.5, troop:"全防", sub:"", effect:"模倣スキルのレアリティ係数によって防御効果が上昇"},
@@ -6384,7 +6365,15 @@
     {name:"津軽為信", no:"1309", ch:"31章", cost:4.5, troop:"槍弓器鉄防", sub:"", effect:"防御参加武将数依存／220名以下の時、防御効果1.5倍"},
     {name:"織田信長【覇(8)】", no:"1286", ch:"30章", cost:6.0, troop:"砲器攻", sub:"覇道", effect:"部隊総攻撃力上昇"},
     {name:"豊臣秀吉【覇(5)】", no:"1287", ch:"30章", cost:5.0, troop:"弓馬砲器防", sub:"覇道", effect:"部隊内覇武将数×200%上昇／部隊長時は効果2倍"},
-    {name:"徳川家康【覇(6)】", no:"1288", ch:"30章", cost:5.5, troop:"弓砲器攻防", sub:"覇道", effect:"卓越発動率100%超過分を加算"},
+    {name:"徳川家康【覇(6)】", no:"1288", ch:"30章", cost:5.5, troop:"弓砲器攻防", sub:"覇道", effect:"卓越発動率100%超過分を加算",
+      furigana:"とくがわいえやす", illustrator:"直良祐介",
+      imageFull:"assets/img/characters/no1288_full.png", imageChar:"assets/img/characters/no1288_char.png",
+      atkBase:1280, atkGrowth:81, defBase:1280, defGrowth:81, tacticsBase:850.0, tacticsGrowth:4.0, lv0Troops:5220,
+      rankGrades:{yari:'A', yumi:'X', uma:'A', ki:'.S'},
+      initialSkill:"伏雷蒼樹",
+      skillDetail:"SSS/LV10 通常確率では発動せず、卓越:追加確率50%で発動(覇道)。対象:弓/砲/器、攻防200%上昇。追加された卓越追加確率のうち100%超過分を、超過分×5%として攻防効果に加算(二重卓越不可)。",
+      variants:{parallel:{no:'31288', label:'パラレル'}}, synthesisSkillCandidates:[], currentlyInKuji:false,
+      dataNote:"出典: ユーザー提供スクリーンショット(Lv.0表示) / generalGrowthDB(No.1288)・ixanary.comの確認済み数値と一致"},
     {name:"長宗我部元親(7)", no:"1289", ch:"30章", cost:6.0, troop:"槍砲器防", sub:"兵站", effect:"極限スキルの防御効果3.5倍"},
     {name:"武田信玄(6)", no:"1290", ch:"30章", cost:5.0, troop:"赤備え", sub:"撤退", effect:"所属部隊内の赤備えの兵士攻防速が上昇"},
     {name:"上杉謙信(5)", no:"1291", ch:"30章", cost:4.0, troop:"全防", sub:"", effect:"防御側の兵士補正を小さくする"},
@@ -6693,54 +6682,6 @@
     ['skillInit','skillAdd1','skillAdd2','skillUltimate'].forEach(fk => attachSkillAutocomplete(fk, col));
   }
 
-  /* ============ 武将データベース検索パネルのJSは一時的に無効化しています ============
-     パネル(HTML)をコメントアウトしたのに合わせて、対応するDOM要素(searchBox/searchResults/targetCol)への
-     参照コードも一時停止しています。generals配列自体はデータとして残してあるので、
-     パネルのHTMLコメントを外し、下記のコメントも解除すれば元通り復活します。
-
-  const searchBox = $('searchBox');
-  const searchResults = $('searchResults');
-  const targetColSel = $('targetCol');
-
-  function stripParens(name){
-    return name.replace(/\(.*?\)/g, '').replace(/\uFF08.*?\uFF09/g, '').trim();
-  }
-
-  function renderResults(list){
-    if(list.length === 0){
-      searchResults.innerHTML = '<div class="no-result">該当する武将が見つかりません（データベースは31〜32章の天・覇 約50名のみ収録）</div>';
-      return;
-    }
-    searchResults.innerHTML = list.map((g)=>{
-      const displayName = stripParens(g.name);
-      return `<div class="res-card">
-        <div class="res-main">
-          <div class="res-name">${displayName}<span style="color:var(--muted);font-weight:400;font-size:12px;margin-left:6px;">${g.no==='未確認' ? '(No.未確認)' : 'No.'+g.no}</span></div>
-        </div>
-        <button class="res-btn" onclick='applyGeneral(${JSON.stringify(g.name)}, ${JSON.stringify(g.no)})'>武将名を反映</button>
-      </div>`;
-    }).join('');
-  }
-
-  window.applyGeneral = function(name, no){
-    const col = parseInt(targetColSel.value);
-    const display = no === '未確認' ? name : `${name} ${no}`;
-    $(cellId('general', col)).value = display;
-    sheetData[col]['general'] = display;
-    saveSheet();
-    $(cellId('general', col)).scrollIntoView({behavior:'smooth', block:'center'});
-  };
-
-  function doSearch(){
-    const q = searchBox.value.trim();
-    if(q === ''){ searchResults.innerHTML = '<div class="no-result">武将名またはNo.を入力してください</div>'; return; }
-    const list = generals.filter(g => g.name.includes(q) || g.no.includes(q));
-    renderResults(list);
-  }
-
-  searchBox.addEventListener('input', doSearch);
-  searchResults.innerHTML = '<div class="no-result">武将名またはNo.を入力してください</div>';
-  ============================================ */
 </script>
 <div class="sim-version-badge" id="simVersionBadge">v-</div>
 </body>

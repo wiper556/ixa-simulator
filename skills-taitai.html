@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7334304987274613"
+     crossorigin="anonymous"></script>
+<title>撤退スキル一覧｜戦国IXA シミュレーター置き場</title>
+<meta name="description" content="戦国IXA(Sengoku IXA)の撤退スキル一覧。撤退持ちのスキルと主効果を比較できる非公式ファンメイドツール。">
+<link rel="stylesheet" href="assets/css/site.css">
+<style>
+  body{background:#ffffff;}
+  .tt-table-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;}
+  .tt-table{width:100%;border-collapse:collapse;font-size:13px;}
+  .tt-table th,.tt-table td{border:1px solid var(--line);padding:9px 12px;text-align:center;white-space:nowrap;}
+  .tt-table th{background:var(--bg-panel-2);color:var(--muted);font-weight:700;}
+  .tt-table td:first-child{text-align:left;font-family:'Noto Serif JP',serif;font-weight:700;}
+  .tt-table td.tt-col-effect{text-align:left;white-space:normal;min-width:260px;}
+  .tt-note{color:var(--muted);font-size:12px;line-height:1.7;margin:0 0 14px;}
+
+  @media (max-width:600px){
+    .tt-table{font-size:12px;}
+    .tt-table th,.tt-table td{padding:6px 8px;}
+  }
+
+  .sim-version-badge{
+    position:fixed; bottom:6px; right:8px; z-index:9999;
+    font-family:'JetBrains Mono',monospace; font-size:10px; color:#9a9382;
+    background:rgba(255,255,255,0.85); padding:2px 7px; border-radius:4px;
+    border:1px solid var(--line); pointer-events:none; user-select:text;
+  }
+</style>
+</head>
+<body>
+<div class="site-layout">
+  <aside class="site-sidebar" id="siteSidebar">
+    <div class="sidebar-header">
+      <span class="sidebar-title">メニュー</span>
+    </div>
+    <nav class="sidebar-nav">
+      <a href="index.html">シミュレーター一覧</a>
+      <a href="attack-simulator.html">攻撃/防御シミュレーター</a>
+      <a href="gacha-simulator.html">くじシミュレーター</a>
+      <a href="characters.html">武将データベース</a>
+      <a href="skills-hub.html">スキル一覧</a>
+      <a href="about.html">このサイトについて</a>
+      <a href="privacy.html">プライバシーポリシー</a>
+    </nav>
+  </aside>
+
+  <div class="site-content">
+  <header class="site-header">
+    <a class="site-logo" href="index.html">戦国IXA シミュレーター置き場</a>
+  </header>
+
+  <main class="site-main">
+    <h1 class="page-title">撤退スキル一覧</h1>
+    <p class="tt-note">「撤退」を持つスキルは、そのスキルを持つ武将の部隊が陣(本丸)での防御戦闘に参加しなくなる効果を持つ。同じスキルが人数依存の攻撃/防御効果も併せ持つ場合、詳細な計算式は各スキルのリンク先を参照。</p>
+
+    <div class="tt-table-scroll">
+      <table class="tt-table">
+        <thead>
+          <tr><th>スキル名</th><th>発動率</th><th>対象兵科</th><th>撤退の効果</th><th>主効果(LV10時)</th><th>入手可能な武将</th></tr>
+        </thead>
+        <tbody id="ttList"></tbody>
+      </table>
+    </div>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>本サイトは戦国IXA(Sengoku IXA)の非公式ファンメイドツールです。運営会社・関連団体とは一切関係ありません。<br>
+    記載されている会社名・製品名・システム名などは、各社の商標、または登録商標です。<br>
+    © SQUARE ENIX</p>
+    <p><a href="about.html">このサイトについて</a> ・ <a href="privacy.html">プライバシーポリシー</a></p>
+  </footer>
+
+  <div class="sim-version-badge" id="simVersionBadge">v-</div>
+
+<script>
+  const TT_VERSION = 'v2026-07-28.1';
+  document.addEventListener('DOMContentLoaded', ()=>{
+    const badge = document.getElementById('simVersionBadge');
+    if(badge) badge.textContent = TT_VERSION;
+  });
+
+  /* ============ 撤退スキル一覧 ============
+     skills.htmlに詳細ページがあるスキルのうち、relatedNote等に「撤退」を持つものを比較用にまとめる。
+     「撤退」持ちの部隊は、陣(本丸)での防御戦闘に参加しない。
+  ============================================ */
+  const taitaiSkills = [
+    {name:"万物神勇", skillPage:"skills.html#万物神勇", baseRate:"43%", target:"全",
+      taitaiEffect:"撤退(陣での防御戦闘に不参加)",
+      lv10Effect:"攻撃 9.2%×防御参加武将数(280人)=2576.0%(人数依存(攻)スキル一覧も参照)",
+      sourceCharacters:[
+        {name:"豊臣秀長【覇】", no:"1298", slot:"S2"}
+      ]}
+  ];
+
+  function ttEscapeHtml(s){
+    return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  }
+
+  function ttColorizeMujin(s){
+    return ttEscapeHtml(s).replace(/無尽/g, '<span style="color:#00acc1;font-weight:700;">無尽</span>')
+      .replace(/撤退/g, '<span style="color:#1565c0;font-weight:700;">撤退</span>');
+  }
+
+  function ttRender(){
+    const el = document.getElementById('ttList');
+    if(taitaiSkills.length === 0){
+      el.innerHTML = '<tr><td colspan="6" style="text-align:center;color:var(--muted);">該当するスキルが見つかりません</td></tr>';
+      return;
+    }
+    el.innerHTML = taitaiSkills.map(function(s){
+      const sources = (s.sourceCharacters || []).map(function(c){
+        return '<a href="characters.html#'+encodeURIComponent(c.no)+'">'+ttEscapeHtml(c.name)+'('+ttEscapeHtml(c.slot)+')</a>';
+      }).join('、') || '-';
+      return '<tr><td><a href="'+s.skillPage+'">'+ttEscapeHtml(s.name)+'</a></td><td>'+ttEscapeHtml(s.baseRate||'-')+'</td><td>'+ttEscapeHtml(s.target||'-')+'</td>'
+        + '<td>'+ttColorizeMujin(s.taitaiEffect||'-')+'</td>'
+        + '<td class="tt-col-effect">'+ttColorizeMujin(s.lv10Effect||'-')+'</td>'
+        + '<td>'+sources+'</td></tr>';
+    }).join('');
+  }
+
+  ttRender();
+</script>
+  </div>
+</div>
+
+<script src="assets/js/site-sidebar.js"></script>
+</body>
+</html>

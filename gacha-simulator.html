@@ -294,14 +294,25 @@
 </style>
 </head>
 <body>
-
-  <header class="site-header">
-    <a class="site-logo" href="index.html">戦国IXA シミュレーター置き場</a>
-    <nav class="site-nav">
+<div class="site-layout">
+  <aside class="site-sidebar" id="siteSidebar">
+    <div class="sidebar-header">
+      <span class="sidebar-title">メニュー</span>
+    </div>
+    <nav class="sidebar-nav">
       <a href="index.html">シミュレーター一覧</a>
+      <a href="attack-simulator.html">攻撃/防御シミュレーター</a>
+      <a href="gacha-simulator.html">くじシミュレーター</a>
+      <a href="characters.html">武将データベース</a>
+      <a href="skills-hub.html">スキル一覧</a>
       <a href="about.html">このサイトについて</a>
       <a href="privacy.html">プライバシーポリシー</a>
     </nav>
+  </aside>
+
+  <div class="site-content">
+  <header class="site-header">
+    <a class="site-logo" href="index.html">戦国IXA シミュレーター置き場</a>
   </header>
 
   <main class="site-main">
@@ -1300,5 +1311,9 @@
 
   renderStatsPanel();
 </script>
+  </div>
+</div>
+
+<script src="assets/js/site-sidebar.js"></script>
 </body>
 </html>

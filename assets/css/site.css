@@ -19,14 +19,18 @@ body{
     radial-gradient(ellipse 700px 600px at 100% 100%, rgba(201,162,39,0.08), transparent 60%),
     var(--bg);
   color:var(--paper); font-family:'Zen Kaku Gothic New', sans-serif;
-  min-height:100vh; padding:0 0 60px;
+  min-height:100vh;
 }
 .site-wrap{max-width:960px;margin:0 auto;padding:0 16px;}
+
+/* サイドバー+本文の横並びレイアウト(常時表示、全ページ共通) */
+.site-layout{display:flex;align-items:stretch;min-height:100vh;}
+.site-content{flex:1;min-width:0;display:flex;flex-direction:column;padding-bottom:60px;}
 
 .site-header{
   display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;
   padding:22px 16px;border-bottom:1px solid var(--line);
-  background:var(--bg-panel);
+  background:var(--bg-panel-2);
 }
 .site-header a.site-logo{
   font-family:'Noto Serif JP', serif; font-weight:900; font-size:20px;
@@ -36,6 +40,30 @@ body{
 .site-nav{display:flex;gap:18px;flex-wrap:wrap;}
 .site-nav a{color:var(--muted);text-decoration:none;font-size:13.5px;}
 .site-nav a:hover{color:var(--vermillion-bright);}
+
+/* ============ サイドバーナビゲーション(常時表示、全ページ共通) ============ */
+.site-sidebar{
+  position:sticky;top:0;align-self:flex-start;height:100vh;width:220px;flex-shrink:0;
+  background:var(--paper);border-right:1px solid var(--line);
+  display:flex;flex-direction:column;overflow-y:auto;
+}
+.sidebar-header{
+  padding:18px 16px;border-bottom:1px solid rgba(255,255,255,0.12);flex-shrink:0;
+}
+.sidebar-title{font-family:'Noto Serif JP', serif;font-weight:900;font-size:15px;color:#f0ede4;}
+.sidebar-nav{display:flex;flex-direction:column;padding:10px;}
+.sidebar-nav a{
+  padding:12px 14px;border-radius:6px;color:#cfc9ba;text-decoration:none;
+  font-size:14px;font-weight:500;
+}
+.sidebar-nav a:hover{background:rgba(255,255,255,0.08);color:var(--gold-bright);}
+.sidebar-nav a.current{color:var(--gold-bright);font-weight:700;background:rgba(255,255,255,0.08);}
+
+@media (max-width:640px){
+  .site-sidebar{width:150px;}
+  .sidebar-title{font-size:13px;}
+  .sidebar-nav a{padding:10px 8px;font-size:12.5px;}
+}
 
 .site-main{max-width:960px;margin:0 auto;padding:32px 16px 60px;}
 

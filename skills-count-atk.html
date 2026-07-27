@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7334304987274613"
+     crossorigin="anonymous"></script>
+<title>人数依存(攻)スキル一覧｜戦国IXA シミュレーター置き場</title>
+<meta name="description" content="戦国IXA(Sengoku IXA)の人数依存(攻撃)スキル一覧。LV10・鍛錬最大時の攻撃力を比較できる非公式ファンメイドツール。">
+<link rel="stylesheet" href="assets/css/site.css">
+<style>
+  body{background:#ffffff;}
+  .sc-table-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;}
+  .sc-table{width:100%;border-collapse:collapse;font-size:13px;}
+  .sc-table th,.sc-table td{border:1px solid var(--line);padding:9px 12px;text-align:center;white-space:nowrap;}
+  .sc-table th{background:var(--bg-panel-2);color:var(--muted);font-weight:700;}
+  .sc-table td:first-child{text-align:left;font-family:'Noto Serif JP',serif;font-weight:700;}
+  .sc-filter{margin-bottom:14px;font-size:13px;display:flex;align-items:center;gap:8px;flex-wrap:wrap;}
+  .sc-filter select,.sc-filter input[type="number"]{
+    font-family:'Zen Kaku Gothic New',sans-serif;font-size:13px;padding:7px 10px;
+    background:#fff;border:1px solid var(--line);color:var(--paper);border-radius:5px;
+  }
+  .sc-filter input[type="number"]{width:90px;}
+
+  @media (max-width:600px){
+    .sc-table{font-size:12px;}
+    .sc-table th,.sc-table td{padding:6px 8px;}
+  }
+
+  .sim-version-badge{
+    position:fixed; bottom:6px; right:8px; z-index:9999;
+    font-family:'JetBrains Mono',monospace; font-size:10px; color:#9a9382;
+    background:rgba(255,255,255,0.85); padding:2px 7px; border-radius:4px;
+    border:1px solid var(--line); pointer-events:none; user-select:text;
+  }
+</style>
+</head>
+<body>
+<div class="site-layout">
+  <aside class="site-sidebar" id="siteSidebar">
+    <div class="sidebar-header">
+      <span class="sidebar-title">メニュー</span>
+    </div>
+    <nav class="sidebar-nav">
+      <a href="index.html">シミュレーター一覧</a>
+      <a href="attack-simulator.html">攻撃/防御シミュレーター</a>
+      <a href="gacha-simulator.html">くじシミュレーター</a>
+      <a href="characters.html">武将データベース</a>
+      <a href="skills-hub.html">スキル一覧</a>
+      <a href="about.html">このサイトについて</a>
+      <a href="privacy.html">プライバシーポリシー</a>
+    </nav>
+  </aside>
+
+  <div class="site-content">
+  <header class="site-header">
+    <a class="site-logo" href="index.html">戦国IXA シミュレーター置き場</a>
+  </header>
+
+  <main class="site-main">
+    <h1 class="page-title">人数依存(攻)スキル一覧</h1>
+
+    <div class="sc-filter">
+      <label for="scCount">防御参加武将数:</label>
+      <input type="number" id="scCount" value="280" min="0" step="1">
+      <label for="scFilter">兵士で絞り込み:</label>
+      <select id="scFilter">
+        <option value="">すべて</option>
+        <optgroup label="兵器兵科(砲兵科)">
+          <option value="鉄砲足軽">鉄砲足軽</option>
+          <option value="騎馬鉄砲">騎馬鉄砲</option>
+          <option value="焙烙火矢">焙烙火矢</option>
+          <option value="雑賀衆">雑賀衆</option>
+        </optgroup>
+        <optgroup label="槍兵科">
+          <option value="足軽">足軽</option>
+          <option value="長槍足軽">長槍足軽</option>
+          <option value="武士">武士</option>
+          <option value="国人衆">国人衆</option>
+        </optgroup>
+        <optgroup label="弓兵科">
+          <option value="弓足軽">弓足軽</option>
+          <option value="長弓兵">長弓兵</option>
+          <option value="弓騎馬">弓騎馬</option>
+          <option value="海賊衆">海賊衆</option>
+        </optgroup>
+        <optgroup label="騎馬兵科">
+          <option value="騎馬兵">騎馬兵</option>
+          <option value="精鋭騎馬">精鋭騎馬</option>
+          <option value="赤備え">赤備え</option>
+          <option value="母衣衆">母衣衆</option>
+        </optgroup>
+        <optgroup label="兵器兵科(器兵科)">
+          <option value="破城鎚">破城鎚</option>
+          <option value="攻城槌">攻城槌</option>
+          <option value="穴太衆">穴太衆</option>
+          <option value="大筒兵">大筒兵</option>
+        </optgroup>
+      </select>
+    </div>
+
+    <div class="sc-table-scroll">
+      <table class="sc-table">
+        <thead>
+          <tr><th>スキル名</th><th>発動率</th><th>対象兵科</th><th id="scLv10Header">LV10攻撃力(280人時)</th><th id="scTrMaxHeader">TR最大時攻撃力(280人時)</th><th>入手可能な武将</th></tr>
+        </thead>
+        <tbody id="scList"></tbody>
+      </table>
+    </div>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>本サイトは戦国IXA(Sengoku IXA)の非公式ファンメイドツールです。運営会社・関連団体とは一切関係ありません。<br>
+    記載されている会社名・製品名・システム名などは、各社の商標、または登録商標です。<br>
+    © SQUARE ENIX</p>
+    <p><a href="about.html">このサイトについて</a> ・ <a href="privacy.html">プライバシーポリシー</a></p>
+  </footer>
+
+  <div class="sim-version-badge" id="simVersionBadge">v-</div>
+
+<script>
+  const SC_VERSION = 'v2026-07-28.2';
+  document.addEventListener('DOMContentLoaded', ()=>{
+    const badge = document.getElementById('simVersionBadge');
+    if(badge) badge.textContent = SC_VERSION;
+  });
+
+  /* ============ 人数依存(攻)スキル一覧 ============
+     skills.htmlに詳細ページがあるスキルのうち、「(係数×人数)%」型の攻撃スキルを比較用にまとめる。
+     targetCategoriesは攻撃/防御シミュレーター(specialSkillsのtargetTroopCategories)の分類に合わせている。
+     対象:全のスキルは全兵科に一致する。
+  ============================================ */
+  const ALL_TROOP_CATEGORIES = ['槍兵科','弓兵科','騎馬兵科','兵器兵科(砲兵科)','兵器兵科(器兵科)'];
+
+  // 兵士名 → 兵科(attack-simulator.htmlのsoldierDBと同じ対応)
+  const SOLDIER_TO_CATEGORY = {
+    '足軽':'槍兵科', '長槍足軽':'槍兵科', '武士':'槍兵科', '国人衆':'槍兵科',
+    '弓足軽':'弓兵科', '長弓兵':'弓兵科', '弓騎馬':'弓兵科', '海賊衆':'弓兵科',
+    '騎馬兵':'騎馬兵科', '精鋭騎馬':'騎馬兵科', '赤備え':'騎馬兵科', '母衣衆':'騎馬兵科',
+    '破城鎚':'兵器兵科(器兵科)', '攻城槌':'兵器兵科(器兵科)', '穴太衆':'兵器兵科(器兵科)', '大筒兵':'兵器兵科(器兵科)',
+    '鉄砲足軽':'兵器兵科(砲兵科)', '騎馬鉄砲':'兵器兵科(砲兵科)', '焙烙火矢':'兵器兵科(砲兵科)', '雑賀衆':'兵器兵科(砲兵科)'
+  };
+
+  const countAtkSkills = [
+    {name:"勇冠三軍", skillPage:"skills.html#勇冠三軍", baseRate:"45%", target:"全",
+      targetCategories: ALL_TROOP_CATEGORIES,
+      fixedBonus: 50, lv10Coefficient: 10.2, trMaxCoefficient: 15.0, trMaxLabel: "TR5",
+      sourceCharacters:[
+        {name:"豊臣秀長【覇】", no:"1298", slot:"C"}
+      ]},
+    {name:"焼尽神無", skillPage:"skills.html#焼尽神無", baseRate:"44%", target:"全",
+      targetCategories: ALL_TROOP_CATEGORIES,
+      fixedBonus: 0, lv10Coefficient: 6.9, trMaxCoefficient: 12, trMaxLabel: "TR5",
+      sourceCharacters:[
+        {name:"豊臣秀長【覇】", no:"1298", slot:"B"}
+      ]},
+    {name:"終焉焦土", skillPage:"skills.html#終焉焦土", baseRate:"46%", target:"全",
+      targetCategories: ALL_TROOP_CATEGORIES,
+      fixedBonus: 0, lv10Coefficient: 9.6, trMaxCoefficient: 12.5, trMaxLabel: "TR5",
+      sourceCharacters:[
+        {name:"豊臣秀長【覇】", no:"1298", slot:"S1"}
+      ]},
+    {name:"万物神勇", skillPage:"skills.html#万物神勇", baseRate:"43%", target:"全",
+      targetCategories: ALL_TROOP_CATEGORIES,
+      fixedBonus: 0, lv10Coefficient: 9.2, trMaxCoefficient: 12, trMaxLabel: "TR5",
+      sourceCharacters:[
+        {name:"豊臣秀長【覇】", no:"1298", slot:"S2"}
+      ]}
+  ];
+
+  function scEscapeHtml(s){
+    return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  }
+
+  function scFormatNum(n){
+    return (Math.round(n*10)/10).toFixed(1);
+  }
+
+  function scRender(filterSoldier){
+    const el = document.getElementById('scList');
+    const filterCategory = filterSoldier ? SOLDIER_TO_CATEGORY[filterSoldier] : '';
+    const count = Math.max(0, parseInt(document.getElementById('scCount').value, 10) || 0);
+
+    document.getElementById('scLv10Header').textContent = 'LV10攻撃力('+count+'人時)';
+    document.getElementById('scTrMaxHeader').textContent = 'TR最大時攻撃力('+count+'人時)';
+
+    const list = filterCategory
+      ? countAtkSkills.filter(function(s){ return (s.targetCategories||[]).includes(filterCategory); })
+      : countAtkSkills;
+    if(list.length === 0){
+      el.innerHTML = '<tr><td colspan="6" style="text-align:center;color:var(--muted);">該当するスキルが見つかりません</td></tr>';
+      return;
+    }
+    el.innerHTML = list.map(function(s){
+      const sources = (s.sourceCharacters || []).map(function(c){
+        return '<a href="characters.html#'+encodeURIComponent(c.no)+'">'+scEscapeHtml(c.name)+'('+scEscapeHtml(c.slot)+')</a>';
+      }).join('、') || '-';
+      const lv10Value = scFormatNum(s.fixedBonus + count*s.lv10Coefficient);
+      const trMaxValue = scFormatNum(s.fixedBonus + count*s.trMaxCoefficient);
+      const lv10Detail = s.fixedBonus+'%+'+s.lv10Coefficient+'%×防御参加武将数('+count+'人)='+lv10Value+'%';
+      const trMaxDetail = s.fixedBonus+'%+'+s.trMaxCoefficient+'%×防御参加武将数('+count+'人)='+trMaxValue+'%('+s.trMaxLabel+')';
+      return '<tr><td><a href="'+s.skillPage+'">'+scEscapeHtml(s.name)+'</a></td><td>'+scEscapeHtml(s.baseRate||'-')+'</td><td>'+scEscapeHtml(s.target||'-')+'</td>'
+        + '<td style="text-align:left;white-space:normal;min-width:220px;">'+scEscapeHtml(lv10Detail)+'</td>'
+        + '<td style="text-align:left;white-space:normal;min-width:220px;">'+scEscapeHtml(trMaxDetail)+'</td>'
+        + '<td>'+sources+'</td></tr>';
+    }).join('');
+  }
+
+  document.getElementById('scFilter').addEventListener('change', function(){
+    scRender(document.getElementById('scFilter').value);
+  });
+  document.getElementById('scCount').addEventListener('input', function(){
+    scRender(document.getElementById('scFilter').value);
+  });
+
+  scRender('');
+</script>
+  </div>
+</div>
+
+<script src="assets/js/site-sidebar.js"></script>
+</body>
+</html>
