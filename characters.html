@@ -982,7 +982,7 @@
       trTable:[
         {level:"LV10", points:"-", effect:"槍・馬・砲・器 兵站　確率 100% / 防御 400%上昇(極限スキル防御効果3.5倍)"}
       ]},
-    {name:"今川義元", no:"1203", ch:"裏", cost:5, troop:"全攻", sub:"", effect:"追加スキルの攻撃・破壊効果を2.5倍にする",
+    {name:"今川義元", no:"1203", ch:"23章", cost:5, troop:"全攻", sub:"", effect:"追加スキルの攻撃・破壊効果を2.5倍にする",
       furigana:"いまがわよしもと", illustrator:"直良有祐",
       imageFull:"assets/img/characters/no1203_full.png", imageChar:"assets/img/characters/no1203_char.png",
       atkBase:1280, atkGrowth:75, defBase:1240, defGrowth:50, tacticsBase:750.0, tacticsGrowth:3.5, lv0Troops:4670,
@@ -1437,6 +1437,14 @@
         {level:"TR3", points:"90", effect:"槍・馬・砲　確率 100% / 攻撃520%上昇+速度160%上昇(距離+30)"},
         {level:"TR4", points:"150", effect:"槍・馬・砲　確率 100% / 攻撃660%上昇+速度200%上昇(距離+35)"},
         {level:"TR5", points:"200", effect:"槍・馬・砲　確率 100% / 攻撃820%上昇+速度250%上昇(距離+40)"}
+      ],
+      // 45do.info確認(生HTML照合済み、2026-07-29): https://45do.info/ordinary/0109/ のskiladd_wrap内、候補A/B/C/S1/S2の見出し5個と直後のスキル名5個が位置対応。
+      synthesisTable:[
+        {slot:"A", skill:"炎馬帝", rank:"S", afterSkill:"炎馬帝", afterRank:"S", rate:"100%", target:"槍・馬・砲", effectShort:"攻撃210%上昇+速度100%上昇(距離+20)"},
+        {slot:"B", skill:"火之迦具土神", rank:"SS", afterSkill:"火之迦具土神", afterRank:"SS", rate:"100%", target:"槍・馬・砲", effectShort:"攻撃160%上昇+卓越時追加確率25%で攻撃効果3倍"},
+        {slot:"C", skill:"天津甕星ノ雷", rank:"SS", afterSkill:"天津甕星ノ雷", afterRank:"SS", rate:"100%", target:"全", effectShort:"攻撃170%上昇+速度70%上昇+所属部隊スキルを無効化・発動率低下から保護"},
+        {slot:"S1", skill:"十束ノ神域", rank:"SS", afterSkill:"十束ノ神域", afterRank:"SS", rate:"100%", target:"全", effectShort:"攻撃320%上昇+速度70%上昇+所属部隊スキルを無効化・発動率低下から保護"},
+        {slot:"S2", skill:"開闢ノ逆鉾", rank:"SS", afterSkill:"開闢ノ逆鉾", afterRank:"SS", rate:"100%", target:"全", effectShort:"攻撃254%上昇+卓越時追加確率30%で兵士被害15%減少(部隊内重複上限2)"}
       ]},
     {name:"山内一豊", no:"1237", ch:"25章", cost:3, troop:"全攻", sub:"", effect:"6部隊以下の攻撃で効果2倍",
       furigana:"やまうちかつとよ", illustrator:"直良有祐",
