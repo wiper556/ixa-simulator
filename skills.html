@@ -662,6 +662,40 @@
       ]
     },
     {
+      name:"摩利支天ノ法", rank:"SSS", baseRate:70, target:"部隊長",
+      effectSummary:"SSS/LV10 確率 70% 対象:部隊長\n①部隊長の持つ模倣可能な初期スキルを1.25倍に強化して模倣する(TR別データは未確認)",
+      categoryLinks:[
+        {href:"skills-leadermimic.html", label:"部隊長模倣スキル一覧を見る"}
+      ],
+      sourceCharacters:[
+        {name:"津軽為信", no:"1309", slot:"A"}
+      ],
+      ownHiddenCandidate: {skill:"摩利支天ノ法", rank:"SSS"},
+      trTable:[
+        {level:"LV10", points:"-", effect:"部隊長　確率 70% / 模倣倍率1.25倍"}
+      ]
+    },
+    {
+      name:"不制于天地人", rank:"S", baseRate:50, target:"槍・弓・器・鉄", noMimic:true,
+      effectSummary:"S/LV10 確率 50% 防御上昇/対象:槍・弓・器・鉄\n模倣不可\n①(係数×防御参加武将数)%を防御効果に加算する(係数はLV10=8.5)\n②防御参加武将数が220以下の時、防御効果1.5倍となる(計算エンジン未対応)",
+      categoryLinks:[
+        {href:"skills-count-def.html", label:"人数依存(防)スキル一覧を見る"}
+      ],
+      sourceCharacters:[
+        {name:"津軽為信", no:"1309", slot:"S1"}
+      ],
+      ownHiddenCandidate: {skill:"不制于天地人", rank:"S"},
+      trTable:[
+        {level:"LV10", points:"-", coefficient:"8.5", effect:"槍・弓・器・鉄　確率 50% / 防御 8.5%×防御参加武将数(280人)=2380.0%"},
+        {level:"TR1", points:"10", coefficient:"8.7", effect:"槍・弓・器・鉄　確率 50% / 防御 8.7%×防御参加武将数(280人)=2436.0%"},
+        {level:"TR2", points:"40", coefficient:"9", effect:"槍・弓・器・鉄　確率 50% / 防御 9%×防御参加武将数(280人)=2520.0%"},
+        {level:"TR3", points:"90", coefficient:"9.3", effect:"槍・弓・器・鉄　確率 50% / 防御 9.3%×防御参加武将数(280人)=2604.0%"},
+        {level:"TR4", points:"150", coefficient:"9.6", effect:"槍・弓・器・鉄　確率 50% / 防御 9.6%×防御参加武将数(280人)=2688.0%"},
+        {level:"TR5", points:"200", coefficient:"10.2", effect:"槍・弓・器・鉄　確率 50% / 防御 10.2%×防御参加武将数(280人)=2856.0%"},
+        {level:"TR6", points:"パラレル", coefficient:"11.2", effect:"槍・弓・器・鉄　確率 50% / 防御 11.2%×防御参加武将数(280人)=3136.0%"}
+      ]
+    },
+    {
       name:"月煌侵蝕", rank:"SSS", baseRate:45, target:"全 兵站",
       effectSummary:"SSS/LV10 確率 45% 防御上昇/対象:全　兵站\n①(係数×防御参加武将数)%を防御効果に加算する",
       categoryLinks:[
@@ -949,7 +983,8 @@
         {href:"skills-hishou-def.html", label:"飛翔スキル一覧(防御)を見る"}
       ],
       sourceCharacters:[
-        {name:"長尾景虎", no:"10064", slot:"S2"}
+        {name:"長尾景虎", no:"10064", slot:"S2"},
+        {name:"上杉謙信(10074)", no:"10074", slot:"S2"}
       ],
       ownHiddenCandidate: {skill:"王花尖剣", rank:"S"},
       trTable:[
