@@ -128,6 +128,11 @@
         {name:"長宗我部元親(7)", no:"1289", slot:"C・S2"},
         {name:"最上義光(覇)", no:"1262", slot:"S1"},
         {name:"佐竹義宣(3)", no:"1302", slot:"C・S2"}
+      ]},
+    {name:"天限ノ麒麟", skillPage:"characters.html#1265", baseRate:"45%", target:"槍・馬・器・焙", keywordNote:"兵站",
+      lv10FixedBonus: 150, trMaxFixedBonus: 350, lv10Coefficient: 6.5, trMaxCoefficient: 6.5, trMaxLabel: "TR5",
+      sourceCharacters:[
+        {name:"蒲生氏郷(2)", no:"1265", slot:"移植不可"}
       ]}
   ];
 
@@ -164,12 +169,15 @@
       const sources = (s.sourceCharacters || []).map(function(c){
         return '<a href="characters.html#'+encodeURIComponent(c.no)+'">'+scEscapeHtml(c.name)+'('+scEscapeHtml(c.slot)+')</a>';
       }).join('<br>') || '-';
-      const lv10Value = scFormatNum(s.fixedBonus + count*s.lv10Coefficient);
-      const trMaxValue = scFormatNum(s.fixedBonus + count*s.trMaxCoefficient);
-      const fixedPrefix = s.fixedBonus ? (s.fixedBonus+'%+') : '';
+      const lv10Fixed = (s.lv10FixedBonus !== undefined ? s.lv10FixedBonus : s.fixedBonus) || 0;
+      const trMaxFixed = (s.trMaxFixedBonus !== undefined ? s.trMaxFixedBonus : s.fixedBonus) || 0;
+      const lv10Value = scFormatNum(lv10Fixed + count*s.lv10Coefficient);
+      const trMaxValue = scFormatNum(trMaxFixed + count*s.trMaxCoefficient);
+      const lv10Prefix = lv10Fixed ? (lv10Fixed+'%+') : '';
+      const trMaxPrefix = trMaxFixed ? (trMaxFixed+'%+') : '';
       const keywordSuffix = s.keywordNote ? '('+s.keywordNote+')' : '';
-      const lv10Detail = fixedPrefix+s.lv10Coefficient+'%×防御参加武将数('+count+'人)='+lv10Value+'%'+keywordSuffix;
-      const trMaxDetail = fixedPrefix+s.trMaxCoefficient+'%×防御参加武将数('+count+'人)='+trMaxValue+'%('+s.trMaxLabel+')'+keywordSuffix;
+      const lv10Detail = lv10Prefix+s.lv10Coefficient+'%×防御参加武将数('+count+'人)='+lv10Value+'%'+keywordSuffix;
+      const trMaxDetail = trMaxPrefix+s.trMaxCoefficient+'%×防御参加武将数('+count+'人)='+trMaxValue+'%('+s.trMaxLabel+')'+keywordSuffix;
       return '<tr><td><a href="'+s.skillPage+'">'+scEscapeHtml(s.name)+'</a></td><td>'+scEscapeHtml(s.baseRate||'-')+'</td><td>'+scColorizeMujin(s.target||'-')+'</td>'
         + '<td style="text-align:left;white-space:normal;min-width:220px;">'+scColorizeMujin(lv10Detail)+'</td>'
         + '<td style="text-align:left;white-space:normal;min-width:220px;">'+scColorizeMujin(trMaxDetail)+'</td>'
