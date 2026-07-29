@@ -506,8 +506,7 @@
         {level:"TR5", points:"200", effect:"赤備え 撤退　常時 / 攻撃+16 防御+16 速度+2(帰還速度5倍)"},
         {level:"TR6", points:"パラレル", effect:"赤備え 撤退　常時 / 攻撃+18 防御+18 速度+3(帰還速度8倍)"}
       ],
-      // 45do.info確認: A/B/C/S1/S2のスロット文字と各スキルの対応は出典元で明示されておらず、
-      // ランク順(SSS→SS)で暫定的に割り当てた(要検証)。隠し候補(S1)は自身の初期スキルとする既存の慣例に従った。
+      // ユーザーのゲーム内確認により訂正済み(2026-07-29)。
       synthesisTable:[
         {slot:"A", skill:"刹那無影", rank:"SS", afterSkill:"刹那無影", afterRank:"SS", rate:"55%", target:"部隊長", effectShort:"部隊長の初期スキルを1.15倍模倣+速度200%上昇"},
         {slot:"B", skill:"神羅聖域", rank:"SS", afterSkill:"神羅聖域", afterRank:"SS", rate:"40%", target:"全 覇道", effectShort:"攻撃900%上昇+防御900%上昇+破壊150%上昇"},
@@ -531,7 +530,7 @@
         {level:"TR5", points:"200", effect:"全　確率 80% / 防御 1460%上昇(兵士補正0.64倍)"},
         {level:"TR6", points:"パラレル", effect:"全　確率 100% / 防御 1650%上昇(兵士補正0.6倍)"}
       ],
-      // 45do.info確認: スロット文字対応は出典元で明示されておらず暫定割り当て(要検証)。
+      // ユーザーのゲーム内確認により訂正済み(2026-07-29)。
       synthesisTable:[
         {slot:"A", skill:"仙境解脱", rank:"SS", afterSkill:"仙境解脱", afterRank:"SS", rate:"48%", target:"全", effectShort:"防御910%上昇+部隊消費コスト-1.5"},
         {slot:"B", skill:"仙境解脱", rank:"SS", afterSkill:"仙境解脱", afterRank:"SS", rate:"48%", target:"全", effectShort:"防御910%上昇+部隊消費コスト-1.5"},
@@ -554,12 +553,13 @@
         {level:"TR4", points:"150", coefficient:"6.5", effect:"槍・馬・器・騎　確率 60% / 攻撃 6.5%×防御参加武将数(280人)=1820.0%"},
         {level:"TR5", points:"200", coefficient:"7", effect:"槍・馬・器・騎　確率 70% / 攻撃 7%×防御参加武将数(280人)=1960.0%"}
       ],
-      // 45do.info確認: スロット文字対応は出典元で明示されておらず暫定割り当て(要検証)。
+      // 45do.info生HTML照合済み(2026-07-29、skiladd_wrapの位置対応で確認)。
       synthesisTable:[
-        {slot:"A", skill:"幻像鏡花", rank:"SSS", afterSkill:"幻像鏡花", afterRank:"SSS", rate:"56%", target:"部隊長", effectShort:"部隊長の初期スキルを模倣(卓越時1.35倍)"},
-        {slot:"B", skill:"開闢ノ逆鉾", rank:"SS", afterSkill:"開闢ノ逆鉾", afterRank:"SS", rate:"100%", target:"全", effectShort:"攻撃254%上昇(卓越で兵士被害減少)"},
-        {slot:"C", skill:"思金神ノ深謀", rank:"SS", afterSkill:"思金神ノ深謀", afterRank:"SS", rate:"60%", target:"部隊長", effectShort:"部隊長の初期スキルを模倣(卓越時1.3倍)"},
-        {slot:"S1", skill:"龍気剣鳴", rank:"S", afterSkill:"龍気剣鳴", afterRank:"S", rate:"40%", target:"槍・馬・器・騎", effectShort:"攻撃を係数×人数で上昇"}
+        {slot:"A", skill:"龍気剣鳴", rank:"S", afterSkill:"龍気剣鳴", afterRank:"S", rate:"40%", target:"槍・馬・器・騎", effectShort:"攻撃を係数×人数で上昇"},
+        {slot:"B", skill:"思金神ノ深謀", rank:"SS", afterSkill:"思金神ノ深謀", afterRank:"SS", rate:"60%", target:"部隊長", effectShort:"部隊長の初期スキルを模倣(卓越時1.3倍)"},
+        {slot:"C", skill:"幻像鏡花", rank:"SSS", afterSkill:"幻像鏡花", afterRank:"SSS", rate:"56%", target:"部隊長", effectShort:"部隊長の初期スキルを模倣(卓越時1.35倍)"},
+        {slot:"S1", skill:"幻像鏡花", rank:"SSS", afterSkill:"幻像鏡花", afterRank:"SSS", rate:"56%", target:"部隊長", effectShort:"部隊長の初期スキルを模倣(卓越時1.35倍)"},
+        {slot:"S2", skill:"開闢ノ逆鉾", rank:"SS", afterSkill:"開闢ノ逆鉾", afterRank:"SS", rate:"100%", target:"全", effectShort:"攻撃254%上昇(卓越で兵士被害減少)"}
       ]},
     {name:"毛利元就(4)", no:"1293", ch:"30章", cost:4.5, troop:"全攻防", sub:"", effect:"部隊内の卓越率上昇／パラ天は飛翔40追加",
       furigana:"もうりもとなり", illustrator:"直良有祐",
