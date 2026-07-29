@@ -78,7 +78,7 @@
   <div class="sim-version-badge" id="simVersionBadge">v-</div>
 
 <script>
-  const HS_DEF_VERSION = 'v2026-07-29.1';
+  const HS_DEF_VERSION = 'v2026-07-30.1';
   document.addEventListener('DOMContentLoaded', ()=>{
     const badge = document.getElementById('simVersionBadge');
     if(badge) badge.textContent = HS_DEF_VERSION;
@@ -112,7 +112,14 @@
       hishouValue:"10",
       lv10Effect:"防御320%上昇+飛翔値合計×10%加算",
       sourceCharacters:[
-        {name:"長尾景虎", no:"10064", slot:"S2"}
+        {name:"長尾景虎", no:"10064", slot:"S2"},
+        {name:"上杉謙信(10074)", no:"10074", slot:"S2"}
+      ]},
+    {name:"神機采配", skillPage:"skills.html#神機采配", baseRate:"50%", target:"全",
+      hishouValue:"9",
+      lv10Effect:"防御420%上昇+飛翔+4(所属部隊武将)/敵軍飛翔最高武将-5",
+      sourceCharacters:[
+        {name:"上杉謙信(10074)", no:"10074", slot:"S1"}
       ]},
     {name:"甲塞ノ龍砲", skillPage:"characters.html#1212", baseRate:"15%", target:"弓・砲・器",
       hishouValue:"4",
