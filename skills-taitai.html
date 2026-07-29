@@ -55,7 +55,7 @@
 
   <main class="site-main">
     <h1 class="page-title">撤退スキル一覧</h1>
-    <p class="tt-note">「撤退」を持つスキルは、そのスキルを持つ武将の部隊が陣(本丸)での防御戦闘に参加しなくなる効果を持つ。同じスキルが人数依存の攻撃/防御効果も併せ持つ場合、詳細な計算式は各スキルのリンク先を参照。</p>
+    <p class="tt-note">「撤退」を持つスキルは、そのスキルを持つ武将の部隊が陣での防御戦闘に参加しなくなる効果を持つ。</p>
 
     <div class="tt-table-scroll">
       <table class="tt-table">
@@ -78,7 +78,7 @@
   <div class="sim-version-badge" id="simVersionBadge">v-</div>
 
 <script>
-  const TT_VERSION = 'v2026-07-28.1';
+  const TT_VERSION = 'v2026-07-29.4';
   document.addEventListener('DOMContentLoaded', ()=>{
     const badge = document.getElementById('simVersionBadge');
     if(badge) badge.textContent = TT_VERSION;
@@ -94,6 +94,24 @@
       lv10Effect:"攻撃 9.2%×防御参加武将数(280人)=2576.0%(人数依存(攻)スキル一覧も参照)",
       sourceCharacters:[
         {name:"豊臣秀長【覇】", no:"1298", slot:"S2"}
+      ]},
+    {name:"虎賁統帥", skillPage:"skills.html#虎賁統帥", baseRate:"100%", target:"全",
+      taitaiEffect:"撤退(陣での防御戦闘に不参加)",
+      lv10Effect:"攻撃1130%上昇+速度200%上昇",
+      sourceCharacters:[
+        {name:"大谷吉継(3)【覇】", no:"1300", slot:"A"}
+      ]},
+    {name:"虎王烈迅", skillPage:"characters.html#1290", baseRate:"常時", target:"赤備え",
+      taitaiEffect:"撤退(陣での防御戦闘に不参加)",
+      lv10Effect:"赤備え兵士 攻撃+10/防御+10/速度+1",
+      sourceCharacters:[
+        {name:"武田信玄(6)", no:"1290", slot:"移植不可"}
+      ]},
+    {name:"封法大十字", skillPage:"characters.html#10062", baseRate:"40%", target:"部隊長",
+      taitaiEffect:"撤退(陣での防御戦闘に不参加)",
+      lv10Effect:"部隊長の初期スキルを1.24倍して模倣",
+      sourceCharacters:[
+        {name:"百地三太夫", no:"10062", slot:"移植不可"}
       ]}
   ];
 
@@ -102,8 +120,13 @@
   }
 
   function ttColorizeMujin(s){
-    return ttEscapeHtml(s).replace(/無尽/g, '<span style="color:#00acc1;font-weight:700;">無尽</span>')
-      .replace(/撤退/g, '<span style="color:#1565c0;font-weight:700;">撤退</span>');
+    return ttEscapeHtml(s).replace(/無尽\d*/g, function(m){ return '<span style="color:#00acc1;font-weight:700;">'+m+'</span>'; })
+      .replace(/撤退\d*/g, function(m){ return '<span style="color:#1565c0;font-weight:700;">'+m+'</span>'; })
+      .replace(/飛翔\d*/g, function(m){ return '<span style="color:#f8b500;font-weight:700;">'+m+'</span>'; })
+      .replace(/覇道\d*/g, function(m){ return '<span style="color:#d15050;font-weight:700;">'+m+'</span>'; })
+      .replace(/不屈\d*/g, function(m){ return '<span style="color:#8ED973;font-weight:700;">'+m+'</span>'; })
+      .replace(/兵站/g, function(m){ return '<span style="color:#8e24aa;font-weight:700;">'+m+'</span>'; })
+      .replace(/\n/g, '<br>');
   }
 
   function ttRender(){
@@ -116,7 +139,7 @@
       const sources = (s.sourceCharacters || []).map(function(c){
         return '<a href="characters.html#'+encodeURIComponent(c.no)+'">'+ttEscapeHtml(c.name)+'('+ttEscapeHtml(c.slot)+')</a>';
       }).join('、') || '-';
-      return '<tr><td><a href="'+s.skillPage+'">'+ttEscapeHtml(s.name)+'</a></td><td>'+ttEscapeHtml(s.baseRate||'-')+'</td><td>'+ttEscapeHtml(s.target||'-')+'</td>'
+      return '<tr><td><a href="'+s.skillPage+'">'+ttEscapeHtml(s.name)+'</a></td><td>'+ttEscapeHtml(s.baseRate||'-')+'</td><td>'+ttColorizeMujin(s.target||'-')+'</td>'
         + '<td>'+ttColorizeMujin(s.taitaiEffect||'-')+'</td>'
         + '<td class="tt-col-effect">'+ttColorizeMujin(s.lv10Effect||'-')+'</td>'
         + '<td>'+sources+'</td></tr>';
