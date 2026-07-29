@@ -112,7 +112,7 @@
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script src="assets/js/comments-widget.js"></script>
 <script>
-  const SKILL_DB_VERSION = 'v2026-07-29.16';
+  const SKILL_DB_VERSION = 'v2026-07-29.18';
   document.addEventListener('DOMContentLoaded', ()=>{
     const badge = document.getElementById('simVersionBadge');
     if(badge) badge.textContent = SKILL_DB_VERSION;
@@ -280,7 +280,7 @@
       sourceCharacters:[
         {name:"石田三成(7)【覇】", no:"1299", slot:"B"},
         {name:"長宗我部元親(7)", no:"1289", slot:"C"},
-        {name:"上杉謙信(5)", no:"1291", slot:"A"}
+        {name:"上杉謙信(5)", no:"1291", slot:"C"}
       ],
       ownHiddenCandidate: {skill:"従魔絶神", rank:"SSS"},
       trTable:[
@@ -576,7 +576,7 @@
       effectSummary:"SS/LV10 確率 100% 防御740%上昇/対象:全\n①防御740%上昇する\n②防衛戦闘時、敵軍の卓越確率を-8%する(自軍内重複上限2)",
       sourceCharacters:[
         {name:"長宗我部元親(7)", no:"1289", slot:"A"},
-        {name:"上杉謙信(5)", no:"1291", slot:"C"},
+        {name:"上杉謙信(5)", no:"1291", slot:"S2"},
         {name:"大友宗麟(6)", no:"1295", slot:"S2"},
         {name:"最上義光(覇)", no:"1262", slot:"C"}
       ],
@@ -594,7 +594,7 @@
       name:"仙境解脱", rank:"SS", baseRate:48, target:"全", noMimic:true,
       effectSummary:"SS/LV10 確率 48% 防御910%上昇/対象:全\n①防御910%上昇する\n②部隊消費コストを1.5低下する(模倣不可)",
       sourceCharacters:[
-        {name:"上杉謙信(5)", no:"1291", slot:"B"},
+        {name:"上杉謙信(5)", no:"1291", slot:"A・B"},
         {name:"大友宗麟(6)", no:"1295", slot:"A"}
       ],
       ownHiddenCandidate: {skill:"仙境解脱", rank:"SS"},
@@ -795,11 +795,11 @@
       ownHiddenCandidate: {skill:"轟渦ノ神将", rank:"S"},
       trTable:[
         {level:"LV10", points:"-", effect:"全　確率 50% / 防御 500%上昇(兵士補正0.8倍)"},
-        {level:"TR1", points:"10", effect:"全　確率 55% / 防御 560%上昇(兵士補正低下)"},
-        {level:"TR2", points:"40", effect:"全　確率 60% / 防御 690%上昇(兵士補正低下)"},
-        {level:"TR3", points:"90", effect:"全　確率 65% / 防御 900%上昇(兵士補正低下)"},
-        {level:"TR4", points:"150", effect:"全　確率 70% / 防御 1150%上昇(兵士補正低下)"},
-        {level:"TR5", points:"200", effect:"全　確率 80% / 防御 1460%上昇(兵士補正低下)"},
+        {level:"TR1", points:"10", effect:"全　確率 55% / 防御 560%上昇(兵士補正0.78倍)"},
+        {level:"TR2", points:"40", effect:"全　確率 60% / 防御 690%上昇(兵士補正0.75倍)"},
+        {level:"TR3", points:"90", effect:"全　確率 65% / 防御 900%上昇(兵士補正0.72倍)"},
+        {level:"TR4", points:"150", effect:"全　確率 70% / 防御 1150%上昇(兵士補正0.68倍)"},
+        {level:"TR5", points:"200", effect:"全　確率 80% / 防御 1460%上昇(兵士補正0.64倍)"},
         {level:"TR6", points:"パラレル", effect:"全　確率 100% / 防御 1650%上昇(兵士補正0.6倍)"}
       ]
     },
