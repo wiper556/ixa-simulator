@@ -79,7 +79,7 @@
   <div class="sim-version-badge" id="simVersionBadge">v-</div>
 
 <script>
-  const TK_VERSION = 'v2026-07-29.1';
+  const TK_VERSION = 'v2026-07-29.2';
   document.addEventListener('DOMContentLoaded', ()=>{
     const badge = document.getElementById('simVersionBadge');
     if(badge) badge.textContent = TK_VERSION;
@@ -156,6 +156,24 @@
         {name:"大友宗麟(6)", no:"1295", slot:"S2"},
         {name:"最上義光(覇)", no:"1262", slot:"C"},
         {name:"佐竹義宣(3)", no:"1302", slot:"B"}
+      ]},
+    {name:"青葉ノ仁王", skillPage:"characters-kyoku.html#2336", baseRate:"100%", target:"槍・弓・砲",
+      takuetsuEffect:"攻撃戦闘時追加確率20%で自部隊の兵士被害が10%減少(部隊内重複上限2・模倣不可)",
+      lv10Effect:"攻撃110%上昇",
+      sourceCharacters:[
+        {name:"伊達成実", no:"2336", slot:"移植不可", db:"kyoku"}
+      ]},
+    {name:"勝旗勇躍", skillPage:"characters-kyoku.html#2374", baseRate:"100%", target:"槍・馬・器・騎",
+      takuetsuEffect:"このスキルを所持する武将の全スキルの卓越確率に50%を加算(模倣不可)",
+      lv10Effect:"攻撃440%上昇+防御440%上昇",
+      sourceCharacters:[
+        {name:"北条綱成", no:"2374", slot:"移植不可", db:"kyoku"}
+      ]},
+    {name:"龍門ノ賢者", skillPage:"characters-kyoku.html#2378", baseRate:"100%", target:"弓・器・焙",
+      takuetsuEffect:"追加確率10%で攻撃効果が3倍になる",
+      lv10Effect:"攻撃190%上昇",
+      sourceCharacters:[
+        {name:"遠藤基信", no:"2378", slot:"移植不可", db:"kyoku"}
       ]}
   ];
 
@@ -182,7 +200,8 @@
     }
     el.innerHTML = takuetsuSkills.map(function(s){
       const sources = (s.sourceCharacters || []).map(function(c){
-        return '<a href="characters.html#'+encodeURIComponent(c.no)+'">'+tkEscapeHtml(c.name)+'('+tkEscapeHtml(c.slot)+')</a>';
+        const dbPage = c.db === 'kyoku' ? 'characters-kyoku.html' : 'characters.html';
+        return '<a href="'+dbPage+'#'+encodeURIComponent(c.no)+'">'+tkEscapeHtml(c.name)+'('+tkEscapeHtml(c.slot)+')</a>';
       }).join('<br>') || '-';
       return '<tr><td><a href="'+s.skillPage+'">'+tkEscapeHtml(s.name)+'</a></td><td>'+tkEscapeHtml(s.baseRate||'-')+'</td><td>'+tkColorizeMujin(s.target||'-')+'</td>'
         + '<td class="tk-col-takuetsu">'+tkColorizeMujin(s.takuetsuEffect||'-')+'</td>'
