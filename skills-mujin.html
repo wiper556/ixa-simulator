@@ -150,11 +150,11 @@
   }
 
   function mjColorizeMujin(s){
-    return mjEscapeHtml(s).replace(/無尽\d*/g, function(m){ return '<span style="color:#00acc1;font-weight:700;">'+m+'</span>'; })
-      .replace(/撤退\d*/g, function(m){ return '<span style="color:#1565c0;font-weight:700;">'+m+'</span>'; })
-      .replace(/飛翔\d*/g, function(m){ return '<span style="color:#f8b500;font-weight:700;">'+m+'</span>'; })
-      .replace(/覇道\d*/g, function(m){ return '<span style="color:#d15050;font-weight:700;">'+m+'</span>'; })
-      .replace(/不屈\d*/g, function(m){ return '<span style="color:#8ED973;font-weight:700;">'+m+'</span>'; })
+    return mjEscapeHtml(s).replace(/無尽\d*\.?\d*/g, function(m){ return '<span style="color:#00acc1;font-weight:700;">'+m+'</span>'; })
+      .replace(/撤退\d*\.?\d*/g, function(m){ return '<span style="color:#1565c0;font-weight:700;">'+m+'</span>'; })
+      .replace(/飛翔\d*\.?\d*/g, function(m){ return '<span style="color:#f8b500;font-weight:700;">'+m+'</span>'; })
+      .replace(/覇道\d*\.?\d*/g, function(m){ return '<span style="color:#d15050;font-weight:700;">'+m+'</span>'; })
+      .replace(/不屈\d*\.?\d*/g, function(m){ return '<span style="color:#8ED973;font-weight:700;">'+m+'</span>'; })
       .replace(/兵站/g, function(m){ return '<span style="color:#8e24aa;font-weight:700;">'+m+'</span>'; })
       .replace(/\n/g, '<br>');
   }

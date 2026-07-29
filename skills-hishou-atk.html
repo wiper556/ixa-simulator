@@ -5,8 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7334304987274613"
      crossorigin="anonymous"></script>
-<title>飛翔スキル一覧｜戦国IXA シミュレーター置き場</title>
-<meta name="description" content="戦国IXA(Sengoku IXA)の飛翔スキル一覧。飛翔値を持つスキルと主効果を比較できる非公式ファンメイドツール。">
+<title>飛翔スキル一覧(攻撃)｜戦国IXA シミュレーター置き場</title>
+<meta name="description" content="戦国IXA(Sengoku IXA)の飛翔スキル一覧(攻撃系)。「飛翔」の数値を持ち攻撃効果を持つスキルを比較できる非公式ファンメイドツール。">
 <link rel="stylesheet" href="assets/css/site.css">
 <style>
   body{background:#ffffff;}
@@ -54,8 +54,8 @@
   </header>
 
   <main class="site-main">
-    <h1 class="page-title">飛翔スキル一覧</h1>
-    <p class="hs-note">「飛翔」の数値を持つスキルの一覧。</p>
+    <h1 class="page-title">飛翔スキル一覧(攻撃)</h1>
+    <p class="hs-note">「飛翔」の数値を持ち、攻撃効果を持つスキルの一覧(防御系は飛翔スキル一覧(防御)を参照)。</p>
 
     <div class="hs-table-scroll">
       <table class="hs-table">
@@ -78,40 +78,28 @@
   <div class="sim-version-badge" id="simVersionBadge">v-</div>
 
 <script>
-  const HS_VERSION = 'v2026-07-29.4';
+  const HS_ATK_VERSION = 'v2026-07-29.1';
   document.addEventListener('DOMContentLoaded', ()=>{
     const badge = document.getElementById('simVersionBadge');
-    if(badge) badge.textContent = HS_VERSION;
+    if(badge) badge.textContent = HS_ATK_VERSION;
   });
 
-  /* ============ 飛翔スキル一覧 ============
-     skills.htmlに詳細ページがあるスキルのうち、「飛翔」の数値を持つものを比較用にまとめる。
+  /* ============ 飛翔スキル一覧(攻撃) ============
+     skills.htmlに詳細ページがあるスキルのうち、「飛翔」の数値を持ち攻撃効果を持つものを比較用にまとめる。
+     攻防両方に効果があるスキルは、防御系一覧(skills-hishou-def.html)にも重複掲載する。
   ============================================ */
-  const hishouSkills = [
-    {name:"従魔絶神", skillPage:"skills.html#従魔絶神", baseRate:"43%", target:"全",
-      hishouValue:"13",
-      lv10Effect:"防御 9.4%×防御参加武将数(280人)=2632.0%(人数依存(防)スキル一覧も参照)",
+  const hishouAtkSkills = [
+    {name:"星神闘覇", skillPage:"skills.html#星神闘覇", baseRate:"100%", target:"全",
+      hishouValue:"15",
+      lv10Effect:"攻撃770%上昇+速度200%上昇(TR別データは未確認)",
       sourceCharacters:[
-        {name:"石田三成(7)【覇】", no:"1299", slot:"B"}
-      ]},
-    {name:"永世ノ天隻", skillPage:"skills.html#永世ノ天隻", baseRate:"48%", target:"全",
-      hishouValue:"9",
-      lv10Effect:"防御 6.5%×防御参加武将数(280人)=1820.0%(人数依存(防)スキル一覧も参照)",
-      sourceCharacters:[
-        {name:"斎藤道三(3)", no:"1297", slot:"S2"},
-        {name:"最上義光(覇)", no:"1262", slot:"B"}
+        {name:"毛利輝元(覇)", no:"1251", slot:"C"}
       ]},
     {name:"義陣絶刀", skillPage:"skills.html#義陣絶刀", baseRate:"55%", target:"全",
       hishouValue:"17",
       lv10Effect:"攻撃840%上昇+防御840%上昇",
       sourceCharacters:[
         {name:"長尾景虎", no:"10064", slot:"B"}
-      ]},
-    {name:"王花尖剣", skillPage:"skills.html#王花尖剣", baseRate:"64%", target:"槍・馬・砲・器",
-      hishouValue:"10",
-      lv10Effect:"防御320%上昇+飛翔値合計×10%加算",
-      sourceCharacters:[
-        {name:"長尾景虎", no:"10064", slot:"S2"}
       ]}
   ];
 
@@ -120,21 +108,21 @@
   }
 
   function hsColorizeMujin(s){
-    return hsEscapeHtml(s).replace(/無尽\d*/g, function(m){ return '<span style="color:#00acc1;font-weight:700;">'+m+'</span>'; })
-      .replace(/撤退\d*/g, function(m){ return '<span style="color:#1565c0;font-weight:700;">'+m+'</span>'; })
-      .replace(/飛翔\d*/g, function(m){ return '<span style="color:#f8b500;font-weight:700;">'+m+'</span>'; })
-      .replace(/覇道\d*/g, function(m){ return '<span style="color:#d15050;font-weight:700;">'+m+'</span>'; })
-      .replace(/不屈\d*/g, function(m){ return '<span style="color:#8ED973;font-weight:700;">'+m+'</span>'; })
+    return hsEscapeHtml(s).replace(/無尽\d*\.?\d*/g, function(m){ return '<span style="color:#00acc1;font-weight:700;">'+m+'</span>'; })
+      .replace(/撤退\d*\.?\d*/g, function(m){ return '<span style="color:#1565c0;font-weight:700;">'+m+'</span>'; })
+      .replace(/飛翔\d*\.?\d*/g, function(m){ return '<span style="color:#f8b500;font-weight:700;">'+m+'</span>'; })
+      .replace(/覇道\d*\.?\d*/g, function(m){ return '<span style="color:#d15050;font-weight:700;">'+m+'</span>'; })
+      .replace(/不屈\d*\.?\d*/g, function(m){ return '<span style="color:#8ED973;font-weight:700;">'+m+'</span>'; })
       .replace(/兵站/g, function(m){ return '<span style="color:#8e24aa;font-weight:700;">'+m+'</span>'; });
   }
 
   function hsRender(){
     const el = document.getElementById('hsList');
-    if(hishouSkills.length === 0){
+    if(hishouAtkSkills.length === 0){
       el.innerHTML = '<tr><td colspan="6" style="text-align:center;color:var(--muted);">該当するスキルが見つかりません</td></tr>';
       return;
     }
-    el.innerHTML = hishouSkills.map(function(s){
+    el.innerHTML = hishouAtkSkills.map(function(s){
       const sources = (s.sourceCharacters || []).map(function(c){
         return '<a href="characters.html#'+encodeURIComponent(c.no)+'">'+hsEscapeHtml(c.name)+'('+hsEscapeHtml(c.slot)+')</a>';
       }).join('、') || '-';
@@ -152,7 +140,7 @@
 
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script src="assets/js/comments-widget.js"></script>
-<script>renderCommentsWidget('pageComments', 'page:skills-hishou');</script>
+<script>renderCommentsWidget('pageComments', 'page:skills-hishou-atk');</script>
 <script src="assets/js/site-sidebar.js"></script>
 </body>
 </html>

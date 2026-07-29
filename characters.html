@@ -136,8 +136,10 @@
 
   <div class="sim-version-badge" id="simVersionBadge">v-</div>
 
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="assets/js/comments-widget.js"></script>
 <script>
-  const CHAR_DB_VERSION = 'v2026-07-29.20';
+  const CHAR_DB_VERSION = 'v2026-07-29.21';
   document.addEventListener('DOMContentLoaded', ()=>{
     const badge = document.getElementById('simVersionBadge');
     if(badge) badge.textContent = CHAR_DB_VERSION;
@@ -287,7 +289,7 @@
           {rarity:"B", coef:"0.6", multiplier:"1.0倍", values:["600%","615%","630%","650%","680%","700%","720%"]}
         ]
       }},
-    {name:"佐竹義宣(3)", no:"1302", ch:"31章", cost:5.5, troop:"砲器防", sub:"", effect:"防御参加武将数依存",
+    {name:"佐竹義宣(3)", no:"1302", ch:"31章", cost:5.5, troop:"砲器防", sub:"", effect:"防御参加武将数依存", reviewedOk:true,
       furigana:"さたけよしのぶ", illustrator:"直良有祐",
       imageFull:"assets/img/characters/no1302_full.png", imageChar:"assets/img/characters/no1302_char.png",
       atkBase:1100, atkGrowth:50, defBase:1270, defGrowth:72, tacticsBase:660.0, tacticsGrowth:3.0, lv0Troops:5290,
@@ -664,13 +666,13 @@
         {level:"TR4", points:"150", effect:"部隊長 撤退　確率 65% / 模倣倍率 1.4倍"},
         {level:"TR5", points:"200", effect:"部隊長 撤退　確率 70% / 模倣倍率 1.5倍"}
       ]},
-    {name:"長尾景虎", no:"10064", ch:"30章", cost:4.5, troop:"全防", sub:"", effect:"極限スキルの効果2倍／飛翔値3倍", reviewedOk:true,
+    {name:"長尾景虎", no:"10064", ch:"30章", cost:4.5, troop:"全防", sub:"", effect:"極限スキルの効果2倍／飛翔値3倍", approved:true,
       furigana:"ながおかげとら", illustrator:"直良有祐",
       imageFull:"assets/img/characters/no10064_full.png", imageChar:"assets/img/characters/no10064_char.png",
       atkBase:1060, atkGrowth:43, defBase:1260, defGrowth:72, tacticsBase:680.0, tacticsGrowth:3.5, lv0Troops:4900,
       rankGrades:{yari:'S', yumi:'A', uma:'S', ki:'A'},
       initialSkill:"凛乎穿進",
-      skillDetail:"S/LV10 確率 100% 防御690%上昇/対象:全\n①防御690%上昇する\n②対象兵科指揮時、極限スキルの防御効果を2倍にする(模倣不可)\n③飛翔値をもつ場合、自身の飛翔値を3倍にする(飛翔が無い場合は適用しない)",
+      skillDetail:"S/LV10 確率 100% 防御690%上昇/対象:全\n模倣不可\n①防御690%上昇する\n②対象兵科指揮時、極限スキルの防御効果を2倍にする\n③飛翔値をもつ場合、自身の飛翔値を3倍にする(飛翔が無い場合は適用しない)",
       trTable:[
         {level:"LV10", points:"-", effect:"全　確率 100% / 防御 690%上昇(極限2倍・飛翔3倍)"},
         {level:"TR1", points:"10", effect:"全　確率 100% / 防御 770%上昇(飛翔3倍)"},
@@ -984,8 +986,6 @@
   </div>
 </div>
 
-<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-<script src="assets/js/comments-widget.js"></script>
 <script src="assets/js/site-sidebar.js"></script>
 </body>
 </html>

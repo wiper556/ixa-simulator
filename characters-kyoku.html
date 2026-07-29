@@ -135,6 +135,8 @@
 
   <div class="sim-version-badge" id="simVersionBadge">v-</div>
 
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="assets/js/comments-widget.js"></script>
 <script>
   const KYOKU_DB_VERSION = 'v2026-07-29.2';
   document.addEventListener('DOMContentLoaded', ()=>{
@@ -157,11 +159,11 @@
 
   // 武将カード上の表記に合わせ、ゲーム内共通キーワードを強調する(characters.htmlと同じ配色)
   function kkColorizeMujin(s){
-    return kkEscapeHtml(s).replace(/無尽\d*/g, function(m){ return '<span style="color:#00acc1;font-weight:700;">'+m+'</span>'; })
-      .replace(/撤退\d*/g, function(m){ return '<span style="color:#1565c0;font-weight:700;">'+m+'</span>'; })
-      .replace(/飛翔\d*/g, function(m){ return '<span style="color:#f8b500;font-weight:700;">'+m+'</span>'; })
-      .replace(/覇道\d*/g, function(m){ return '<span style="color:#d15050;font-weight:700;">'+m+'</span>'; })
-      .replace(/不屈\d*/g, function(m){ return '<span style="color:#8ED973;font-weight:700;">'+m+'</span>'; })
+    return kkEscapeHtml(s).replace(/無尽\d*\.?\d*/g, function(m){ return '<span style="color:#00acc1;font-weight:700;">'+m+'</span>'; })
+      .replace(/撤退\d*\.?\d*/g, function(m){ return '<span style="color:#1565c0;font-weight:700;">'+m+'</span>'; })
+      .replace(/飛翔\d*\.?\d*/g, function(m){ return '<span style="color:#f8b500;font-weight:700;">'+m+'</span>'; })
+      .replace(/覇道\d*\.?\d*/g, function(m){ return '<span style="color:#d15050;font-weight:700;">'+m+'</span>'; })
+      .replace(/不屈\d*\.?\d*/g, function(m){ return '<span style="color:#8ED973;font-weight:700;">'+m+'</span>'; })
       .replace(/兵站/g, function(m){ return '<span style="color:#8e24aa;font-weight:700;">'+m+'</span>'; })
       .replace(/\n/g, '<br>');
   }
@@ -364,8 +366,6 @@
   </div>
 </div>
 
-<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-<script src="assets/js/comments-widget.js"></script>
 <script src="assets/js/site-sidebar.js"></script>
 </body>
 </html>

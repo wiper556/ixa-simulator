@@ -1330,7 +1330,7 @@
     },
     '凛乎穿進': {
       noMimic: true, // 「模倣不可」明記
-      activationType: 'triggered', // ②: 攻撃したときに発動するタイプ
+      activationType: 'triggered', statTarget: 'def', // ②: 攻撃したときに発動するタイプ、防御%上昇スキル
       trTable: { base:690, TR1:770, TR2:910, TR3:1130, TR4:1400, TR5:1790, TR6:1960 }, // 防御%上昇(LV10・TR1〜TR6)
       baseRate: 100, // 確率+100%
       // 天舞皆朱と同種:「対象兵科指揮時、極限スキルの防御効果を2倍、かつ飛翔をもつなら飛翔値をN倍する」

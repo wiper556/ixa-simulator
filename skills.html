@@ -109,8 +109,10 @@
 
   <div class="sim-version-badge" id="simVersionBadge">v-</div>
 
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="assets/js/comments-widget.js"></script>
 <script>
-  const SKILL_DB_VERSION = 'v2026-07-29.12';
+  const SKILL_DB_VERSION = 'v2026-07-29.13';
   document.addEventListener('DOMContentLoaded', ()=>{
     const badge = document.getElementById('simVersionBadge');
     if(badge) badge.textContent = SKILL_DB_VERSION;
@@ -257,7 +259,7 @@
       effectSummary:"SS/LV10 確率 48% 防御上昇/対象:全 飛翔9\n①(係数×防御参加武将数)%を防御効果に加算する(係数はLV10=6.5)\n②飛翔9を持つ(敵軍に飛翔を持つ武将が9人未満のとき通常武将ダメージを受けない)",
       categoryLinks:[
         {href:"skills-count-def.html", label:"人数依存(防)スキル一覧を見る"},
-        {href:"skills-hishou.html", label:"飛翔スキル一覧を見る"}
+        {href:"skills-hishou-def.html", label:"飛翔スキル一覧(防御)を見る"}
       ],
       sourceCharacters:[
         {name:"斎藤道三(3)", no:"1297", slot:"S2"},
@@ -273,7 +275,7 @@
       effectSummary:"SSS/LV10 確率 43% 防御上昇/対象:全 飛翔13\n①(係数×防御参加武将数)%を防御効果に加算する",
       categoryLinks:[
         {href:"skills-count-def.html", label:"人数依存(防)スキル一覧を見る"},
-        {href:"skills-hishou.html", label:"飛翔スキル一覧を見る"}
+        {href:"skills-hishou-def.html", label:"飛翔スキル一覧(防御)を見る"}
       ],
       sourceCharacters:[
         {name:"石田三成(7)【覇】", no:"1299", slot:"B"},
@@ -456,7 +458,7 @@
       name:"星神闘覇", rank:"SS", baseRate:100, target:"全 飛翔15",
       effectSummary:"SS/LV10 確率 100% 攻撃770%上昇/対象:全　飛翔15\n①攻撃770%上昇する\n②速度200%上昇する",
       categoryLinks:[
-        {href:"skills-hishou.html", label:"飛翔スキル一覧を見る"}
+        {href:"skills-hishou-atk.html", label:"飛翔スキル一覧(攻撃)を見る"}
       ],
       sourceCharacters:[
         {name:"毛利輝元(覇)", no:"1251", slot:"C"}
@@ -738,14 +740,15 @@
       ],
       ownHiddenCandidate: {skill:"高津姫神", rank:"SS"},
       trTable:[
-        {level:"LV10", points:"-", effect:"自身　確率 70% / 初期スキル(戦闘スキルのみ)を模倣"}
+        {level:"LV10", points:"-", effect:"自身　確率 70% / 初期スキル(戦闘スキルのみ)を模倣(1倍)"}
       ]
     },
     {
       name:"義陣絶刀", rank:"S", baseRate:55, target:"全 飛翔17",
       effectSummary:"S/LV10 確率 55% 攻防840%上昇/対象:全　飛翔17\n①攻撃840%上昇する\n②防御840%上昇する",
       categoryLinks:[
-        {href:"skills-hishou.html", label:"飛翔スキル一覧を見る"}
+        {href:"skills-hishou-atk.html", label:"飛翔スキル一覧(攻撃)を見る"},
+        {href:"skills-hishou-def.html", label:"飛翔スキル一覧(防御)を見る"}
       ],
       sourceCharacters:[
         {name:"長尾景虎", no:"10064", slot:"B"}
@@ -785,21 +788,32 @@
       ],
       ownHiddenCandidate: {skill:"轟渦ノ神将", rank:"S"},
       trTable:[
-        {level:"LV10", points:"-", effect:"全　確率 50% / 防御 500%上昇(兵士補正0.8倍)"}
+        {level:"LV10", points:"-", effect:"全　確率 50% / 防御 500%上昇(兵士補正0.8倍)"},
+        {level:"TR1", points:"10", effect:"全　確率 55% / 防御 560%上昇(兵士補正低下)"},
+        {level:"TR2", points:"40", effect:"全　確率 60% / 防御 690%上昇(兵士補正低下)"},
+        {level:"TR3", points:"90", effect:"全　確率 65% / 防御 900%上昇(兵士補正低下)"},
+        {level:"TR4", points:"150", effect:"全　確率 70% / 防御 1150%上昇(兵士補正低下)"},
+        {level:"TR5", points:"200", effect:"全　確率 80% / 防御 1460%上昇(兵士補正低下)"},
+        {level:"TR6", points:"パラレル", effect:"全　確率 100% / 防御 1650%上昇(兵士補正0.6倍)"}
       ]
     },
     {
       name:"王花尖剣", rank:"S", baseRate:64, target:"槍・馬・砲・器 飛翔10",
       effectSummary:"S/LV10 確率 64% 防御320%上昇/対象:槍・馬・砲・器　飛翔10\n①防御320%上昇する\n②飛翔10を持つ\n③所属部隊の武将が戦闘時にもつ飛翔値の合計×10%を防御効果に加算する",
       categoryLinks:[
-        {href:"skills-hishou.html", label:"飛翔スキル一覧を見る"}
+        {href:"skills-hishou-def.html", label:"飛翔スキル一覧(防御)を見る"}
       ],
       sourceCharacters:[
         {name:"長尾景虎", no:"10064", slot:"S2"}
       ],
       ownHiddenCandidate: {skill:"王花尖剣", rank:"S"},
       trTable:[
-        {level:"LV10", points:"-", effect:"槍・馬・砲・器 飛翔10　確率 64% / 防御 320%上昇(飛翔値合計×10%加算)"}
+        {level:"LV10", points:"-", effect:"槍・馬・砲・器 飛翔10　確率 64% / 防御 320%+（飛翔値合計×10%）上昇"},
+        {level:"TR1", points:"10", effect:"槍・馬・砲・器 飛翔10　確率 64% / 防御 320%+（飛翔値合計×10.4%）上昇"},
+        {level:"TR2", points:"40", effect:"槍・馬・砲・器 飛翔10　確率 64% / 防御 320%+（飛翔値合計×11%）上昇"},
+        {level:"TR3", points:"90", effect:"槍・馬・砲・器 飛翔10　確率 64% / 防御 320%+（飛翔値合計×11.8%）上昇"},
+        {level:"TR4", points:"150", effect:"槍・馬・砲・器 飛翔10　確率 64% / 防御 320%+（飛翔値合計×13%）上昇"},
+        {level:"TR5", points:"200", effect:"槍・馬・砲・器 飛翔10　確率 64% / 防御 320%+（飛翔値合計×14.5%）上昇"}
       ]
     }
   ];
@@ -809,11 +823,11 @@
   }
 
   function sklColorizeMujin(s){
-    return sklEscapeHtml(s).replace(/無尽\d*/g, function(m){ return '<span style="color:#00acc1;font-weight:700;">'+m+'</span>'; })
-      .replace(/撤退\d*/g, function(m){ return '<span style="color:#1565c0;font-weight:700;">'+m+'</span>'; })
-      .replace(/飛翔\d*/g, function(m){ return '<span style="color:#f8b500;font-weight:700;">'+m+'</span>'; })
-      .replace(/覇道\d*/g, function(m){ return '<span style="color:#d15050;font-weight:700;">'+m+'</span>'; })
-      .replace(/不屈\d*/g, function(m){ return '<span style="color:#8ED973;font-weight:700;">'+m+'</span>'; })
+    return sklEscapeHtml(s).replace(/無尽\d*\.?\d*/g, function(m){ return '<span style="color:#00acc1;font-weight:700;">'+m+'</span>'; })
+      .replace(/撤退\d*\.?\d*/g, function(m){ return '<span style="color:#1565c0;font-weight:700;">'+m+'</span>'; })
+      .replace(/飛翔\d*\.?\d*/g, function(m){ return '<span style="color:#f8b500;font-weight:700;">'+m+'</span>'; })
+      .replace(/覇道\d*\.?\d*/g, function(m){ return '<span style="color:#d15050;font-weight:700;">'+m+'</span>'; })
+      .replace(/不屈\d*\.?\d*/g, function(m){ return '<span style="color:#8ED973;font-weight:700;">'+m+'</span>'; })
       .replace(/兵站/g, function(m){ return '<span style="color:#8e24aa;font-weight:700;">'+m+'</span>'; })
       .replace(/\n/g, '<br>');
   }
@@ -930,8 +944,6 @@
   </div>
 </div>
 
-<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-<script src="assets/js/comments-widget.js"></script>
 <script src="assets/js/site-sidebar.js"></script>
 </body>
 </html>
