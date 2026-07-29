@@ -139,7 +139,7 @@
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script src="assets/js/comments-widget.js"></script>
 <script>
-  const CHAR_DB_VERSION = 'v2026-07-29.21';
+  const CHAR_DB_VERSION = 'v2026-07-29.23';
   document.addEventListener('DOMContentLoaded', ()=>{
     const badge = document.getElementById('simVersionBadge');
     if(badge) badge.textContent = CHAR_DB_VERSION;
@@ -302,7 +302,8 @@
         {level:"TR2", points:"40", coefficient:"12.2", effect:"砲・器　確率 60% / 防御 12.2%×防御参加武将数(280人)=3416.0%"},
         {level:"TR3", points:"90", coefficient:"12.7", effect:"砲・器　確率 60% / 防御 12.7%×防御参加武将数(280人)=3556.0%"},
         {level:"TR4", points:"150", coefficient:"13.3", effect:"砲・器　確率 60% / 防御 13.3%×防御参加武将数(280人)=3724.0%"},
-        {level:"TR5", points:"200", coefficient:"14", effect:"砲・器　確率 60% / 防御 14%×防御参加武将数(280人)=3920.0%"}
+        {level:"TR5", points:"200", coefficient:"14", effect:"砲・器　確率 60% / 防御 14%×防御参加武将数(280人)=3920.0%"},
+        {level:"TR6", points:"パラレル", coefficient:"14.7", effect:"砲・器　確率 100% / 防御 14.7%×防御参加武将数(280人)=4116.0%"}
       ]},
     {name:"本多忠勝(2)", no:"1303", ch:"31章", cost:2.5, troop:"全攻", sub:"", effect:"8部隊以下の攻撃時、卓越確率+480%／部隊内武将の卓越確率+15%",
       furigana:"ほんだただかつ", illustrator:"直良有祐",
@@ -456,13 +457,13 @@
       ],
       synthesisNote:"A/B/C/S1/S2の対応関係、および移植後合成候補は未確認。候補スキル3種のみ判明。",
       variants:{parallel:{no:'31288', label:'パラレル'}}, currentlyInKuji:false},
-    {name:"長宗我部元親(7)", no:"1289", ch:"30章", cost:6.0, troop:"槍砲器防", sub:"兵站", effect:"極限スキルの防御効果3.5倍",
+    {name:"長宗我部元親(7)", no:"1289", ch:"30章", cost:6.0, troop:"槍砲器防", sub:"兵站", effect:"極限スキルの防御効果3.5倍", reviewedOk:true,
       furigana:"ちょうそかべもとちか", illustrator:"直良有祐",
       imageFull:"assets/img/characters/no1289_full.png", imageChar:"assets/img/characters/no1289_char.png",
       atkBase:1090, atkGrowth:50, defBase:1260, defGrowth:72, tacticsBase:670.0, tacticsGrowth:3.0, lv0Troops:5500,
       rankGrades:{yari:'.S', yumi:'S', uma:'A', ki:'A'},
       initialSkill:"蓋方軍慮",
-      skillDetail:"S/LV10 確率 100% 防御510%上昇/対象:槍・砲・器 兵站\n①防御510%上昇する\n②対象兵科指揮時、極限スキルの防御効果が3.5倍となる(模倣不可)",
+      skillDetail:"S/LV10 確率 100% 防御510%上昇/対象:槍・砲・器 兵站\n模倣不可\n①防御510%上昇する\n②対象兵科指揮時、極限スキルの防御効果が3.5倍となる",
       trTable:[
         {level:"LV10", points:"-", effect:"槍・砲・器 兵站　確率 100% / 防御 510%上昇(極限スキル防御効果3.5倍)"},
         {level:"TR1", points:"10", effect:"槍・砲・器 兵站　確率 100% / 防御 550%上昇(極限スキル防御効果3.6倍)"},
