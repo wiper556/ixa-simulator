@@ -78,7 +78,7 @@
   <div class="sim-version-badge" id="simVersionBadge">v-</div>
 
 <script>
-  const LM_VERSION = 'v2026-07-30.1';
+  const LM_VERSION = 'v2026-07-30.2';
   document.addEventListener('DOMContentLoaded', ()=>{
     const badge = document.getElementById('simVersionBadge');
     if(badge) badge.textContent = LM_VERSION;
@@ -136,7 +136,7 @@
       ]},
     {name:"転歌", skillPage:"characters-kyoku.html#2358", baseRate:"80%", target:"部隊長",
       lv10Effect:"戦闘スキルのみ模倣(1倍)",
-      tr5Effect:"鍛錬不可",
+      tr5Effect:"TRなし",
       sourceCharacters:[
         {name:"今川氏真", no:"2358", slot:"移植不可", db:"kyoku"}
       ]}
@@ -166,11 +166,11 @@
       const sources = (s.sourceCharacters || []).map(function(c){
         const dbPage = c.db === 'kyoku' ? 'characters-kyoku.html' : 'characters.html';
         return '<a href="'+dbPage+'#'+encodeURIComponent(c.no)+'">'+lmEscapeHtml(c.name)+'('+lmEscapeHtml(c.slot)+')</a>';
-      }).join('、') || '-';
+      }).join('<br>') || '-';
       return '<tr><td><a href="'+s.skillPage+'">'+lmEscapeHtml(s.name)+'</a></td><td>'+lmEscapeHtml(s.baseRate||'-')+'</td><td>'+lmColorizeMujin(s.target||'-')+'</td>'
         + '<td>'+lmEscapeHtml(s.lv10Effect||'-')+'</td>'
         + '<td>'+lmEscapeHtml(s.tr5Effect||'-')+'</td>'
-        + '<td>'+sources+'</td></tr>';
+        + '<td style="white-space:normal;">'+sources+'</td></tr>';
     }).join('');
   }
 

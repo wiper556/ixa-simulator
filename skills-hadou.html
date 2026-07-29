@@ -79,7 +79,7 @@
   <div class="sim-version-badge" id="simVersionBadge">v-</div>
 
 <script>
-  const HD_VERSION = 'v2026-07-29.8';
+  const HD_VERSION = 'v2026-07-30.1';
   document.addEventListener('DOMContentLoaded', ()=>{
     const badge = document.getElementById('simVersionBadge');
     if(badge) badge.textContent = HD_VERSION;
@@ -155,10 +155,10 @@
     el.innerHTML = hadouSkills.map(function(s){
       const sources = (s.sourceCharacters || []).map(function(c){
         return '<a href="characters.html#'+encodeURIComponent(c.no)+'">'+hdEscapeHtml(c.name)+'('+hdEscapeHtml(c.slot)+')</a>';
-      }).join('、') || '-';
+      }).join('<br>') || '-';
       return '<tr><td><a href="'+s.skillPage+'">'+hdEscapeHtml(s.name)+'</a></td><td>'+hdEscapeHtml(s.baseRate||'-')+'</td><td>'+hdColorizeMujin(s.target||'-')+'</td>'
         + '<td class="hd-col-effect">'+hdColorizeMujin(s.lv10Effect||'-')+'</td>'
-        + '<td>'+sources+'</td></tr>';
+        + '<td style="white-space:normal;">'+sources+'</td></tr>';
     }).join('');
   }
 
