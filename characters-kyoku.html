@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7334304987274613"
+     crossorigin="anonymous"></script>
+<title>極武将データベース｜戦国IXA シミュレーター置き場</title>
+<meta name="description" content="戦国IXA(Sengoku IXA)の極武将データベース。カード画像・ステータス・統率・スキル詳細を確認できる非公式ファンメイドツール。">
+<link rel="stylesheet" href="assets/css/site.css">
+<style>
+  body{background:#ffffff;}
+
+  .kk-search{margin-bottom:14px;}
+  .kk-search input{
+    width:100%;font-family:'Zen Kaku Gothic New',sans-serif;font-size:15px;padding:11px 14px;
+    background:#fff;border:1px solid var(--line);color:var(--paper);border-radius:5px;
+  }
+  .kk-search input:focus{outline:none;border-color:var(--gold);}
+
+  .kk-list-table{width:100%;border-collapse:collapse;font-size:12.5px;}
+  .kk-list-table th,.kk-list-table td{border:1px solid var(--line);padding:8px 10px;text-align:center;vertical-align:middle;white-space:nowrap;}
+  .kk-list-table th{background:var(--bg-panel-2);color:var(--muted);font-weight:700;}
+  .kk-list-table tr:hover td{background:var(--bg-panel-2);}
+  .kk-list-table td.kk-col-name{text-align:left;}
+  .kk-list-table td.kk-col-name a{font-family:'Noto Serif JP',serif;font-weight:700;color:var(--paper);text-decoration:none;}
+  .kk-list-table td.kk-col-name a:hover{color:var(--vermillion-bright);}
+  .kk-list-table td.kk-col-effect{text-align:left;white-space:normal;min-width:260px;color:var(--muted);line-height:1.6;}
+
+  .kk-atkdef-badge{display:inline-block;font-size:11px;font-weight:700;border-radius:4px;padding:2px 8px;white-space:nowrap;}
+  .kk-atkdef-badge.atk{background:rgba(184,64,47,0.12);color:var(--vermillion-bright);}
+  .kk-atkdef-badge.def{background:rgba(46,125,50,0.12);color:#2e7d32;}
+  .kk-atkdef-badge.both{background:rgba(169,124,10,0.15);color:var(--gold-bright);}
+  .kk-atkdef-badge.other{background:rgba(107,114,128,0.12);color:var(--muted);}
+
+  .kk-branch-badge{
+    display:inline-flex;align-items:center;justify-content:center;width:18px;height:18px;
+    font-size:10.5px;font-weight:700;border-radius:3px;background:var(--bg-panel-2);
+    border:1px solid var(--line);color:var(--paper);margin:1px;
+  }
+  .kk-branch-fallback{font-size:11px;color:var(--muted);white-space:normal;}
+
+  .kk-subtag{font-size:10px;background:rgba(0,172,193,0.12);color:#00838f;border-radius:10px;padding:1px 7px;font-weight:700;display:inline-block;margin:1px;white-space:nowrap;}
+
+  .kk-no-result{color:var(--muted);font-size:12px;padding:14px;text-align:center;}
+
+  .kk-detail-head{display:flex;gap:20px;flex-wrap:wrap;margin-bottom:20px;}
+  .kk-detail-img{max-width:100%;width:460px;border-radius:8px;border:1px solid var(--line);}
+  .kk-detail-img-placeholder{
+    width:460px;max-width:100%;height:220px;border-radius:8px;border:1px dashed var(--line);
+    display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:13px;
+  }
+  .kk-detail-title{font-family:'Noto Serif JP',serif;font-weight:900;font-size:22px;color:var(--paper);}
+  .kk-detail-furigana{font-size:12px;color:var(--muted);margin-left:8px;font-weight:400;}
+  .kk-detail-meta{font-size:13px;color:var(--muted);margin:6px 0 14px;}
+
+  .kk-detail-block{margin-bottom:20px;}
+  .kk-detail-block h2{font-family:'Noto Serif JP',serif;font-size:15px;margin:0 0 8px;color:var(--vermillion-bright);border-bottom:1px dashed var(--line);padding-bottom:6px;}
+  .kk-table-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;}
+  .kk-stat-table{width:100%;border-collapse:collapse;font-size:13px;}
+  .kk-stat-table th,.kk-stat-table td{border:1px solid var(--line);padding:8px 10px;text-align:center;white-space:nowrap;}
+  .kk-stat-table th{background:var(--bg-panel-2);color:var(--muted);font-weight:700;}
+  .kk-stat-table td[style*="text-align:left"]{white-space:normal;min-width:220px;}
+  .kk-col-narrow{width:64px;}
+  .kk-synth-cell{display:flex;align-items:center;gap:10px;text-align:left;}
+  .kk-synth-cell .kk-synth-name{flex-shrink:0;}
+  .kk-synth-desc{
+    width:150px;height:32px;flex-shrink:0;
+    font-size:11px;color:var(--muted);line-height:1.4;white-space:normal;text-align:left;
+    overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;
+  }
+
+  @media (max-width:600px){
+    .kk-stat-table{font-size:12px;}
+    .kk-stat-table th,.kk-stat-table td{padding:6px 8px;}
+  }
+  .kk-skill-name{font-family:'Noto Serif JP',serif;font-weight:700;font-size:15px;color:var(--gold-bright);margin-bottom:6px;}
+  .kk-skill-detail{font-size:13.5px;line-height:1.8;}
+  .kk-illust-credit{font-size:12px;color:var(--muted);text-align:right;}
+  .kk-no-detail{color:var(--muted);font-size:13px;padding:20px;text-align:center;border:1px dashed var(--line);border-radius:8px;}
+
+  .sim-version-badge{
+    position:fixed; bottom:6px; right:8px; z-index:9999;
+    font-family:'JetBrains Mono',monospace; font-size:10px; color:#9a9382;
+    background:rgba(255,255,255,0.85); padding:2px 7px; border-radius:4px;
+    border:1px solid var(--line); pointer-events:none; user-select:text;
+  }
+</style>
+</head>
+<body>
+<div class="site-layout">
+  <aside class="site-sidebar" id="siteSidebar">
+    <div class="sidebar-header">
+      <span class="sidebar-title">メニュー</span>
+    </div>
+    <nav class="sidebar-nav">
+      <a href="index.html">シミュレーター一覧</a>
+      <a href="attack-simulator.html">攻撃/防御シミュレーター</a>
+      <a href="gacha-simulator.html">くじシミュレーター</a>
+      <a href="characters.html">武将データベース</a>
+      <a href="characters-kyoku.html">極武将データベース</a>
+      <a href="skills-hub.html">スキル一覧</a>
+      <a href="about.html">このサイトについて</a>
+      <a href="privacy.html">プライバシーポリシー</a>
+    </nav>
+  </aside>
+
+  <div class="site-content">
+  <header class="site-header">
+    <a class="site-logo" href="index.html">戦国IXA シミュレーター置き場</a>
+  </header>
+
+  <main class="site-main">
+    <h1 class="page-title">極武将データベース</h1>
+
+    <div id="listView">
+      <div class="kk-search">
+        <input type="text" id="kkSearchBox" placeholder="武将名またはカードNo.を入力(例: 伊達成実、2336 など)">
+      </div>
+      <div id="kkList"></div>
+    </div>
+
+    <div id="detailView" style="display:none;">
+      <div id="kkDetailBody"></div>
+    </div>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>本サイトは戦国IXA(Sengoku IXA)の非公式ファンメイドツールです。運営会社・関連団体とは一切関係ありません。<br>
+    記載されている会社名・製品名・システム名などは、各社の商標、または登録商標です。<br>
+    © SQUARE ENIX</p>
+    <p><a href="about.html">このサイトについて</a> ・ <a href="privacy.html">プライバシーポリシー</a></p>
+  </footer>
+
+  <div class="sim-version-badge" id="simVersionBadge">v-</div>
+
+<script>
+  const KYOKU_DB_VERSION = 'v2026-07-29.1';
+  document.addEventListener('DOMContentLoaded', ()=>{
+    const badge = document.getElementById('simVersionBadge');
+    if(badge) badge.textContent = KYOKU_DB_VERSION;
+  });
+
+  /* ============ 極武将データベース ============
+     characters.html(天・覇武将データベース)と同じ構造・レンダリングロジックを流用し、
+     「極」ランクの武将のみを別データベースとして分離管理する。
+  ============================================ */
+  const kyokuGenerals = [
+  ];
+
+  const KK_RANK_LABELS = {yari:'槍', yumi:'弓', uma:'馬', ki:'器'};
+
+  function kkEscapeHtml(s){
+    return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  }
+
+  // 武将カード上の表記に合わせ、ゲーム内共通キーワードを強調する(characters.htmlと同じ配色)
+  function kkColorizeMujin(s){
+    return kkEscapeHtml(s).replace(/無尽\d*/g, function(m){ return '<span style="color:#00acc1;font-weight:700;">'+m+'</span>'; })
+      .replace(/撤退\d*/g, function(m){ return '<span style="color:#1565c0;font-weight:700;">'+m+'</span>'; })
+      .replace(/飛翔\d*/g, function(m){ return '<span style="color:#f8b500;font-weight:700;">'+m+'</span>'; })
+      .replace(/覇道\d*/g, function(m){ return '<span style="color:#d15050;font-weight:700;">'+m+'</span>'; })
+      .replace(/不屈\d*/g, function(m){ return '<span style="color:#8ED973;font-weight:700;">'+m+'</span>'; })
+      .replace(/兵站/g, function(m){ return '<span style="color:#8e24aa;font-weight:700;">'+m+'</span>'; })
+      .replace(/\n/g, '<br>');
+  }
+
+  // スキルデータベース(skills.html)にページがあるスキル名の一覧。ここに載っているスキルはリンク化する。
+  const KK_LINKED_SKILLS = [];
+
+  function kkSkillLink(skillName, rank){
+    const label = kkEscapeHtml(skillName)+' '+kkEscapeHtml(rank||'');
+    if(KK_LINKED_SKILLS.includes(skillName)){
+      return '<a href="skills.html#'+encodeURIComponent(skillName)+'">'+label+'</a>';
+    }
+    return label;
+  }
+
+  function kkHasDetail(g){
+    return !!g.imageFull || !!g.atkBase || !!g.rankGrades;
+  }
+
+  // 一覧の●マーク(社内運用ルール、サイト上に凡例は出さない):
+  // 画像未登録=無印、画像登録済みだが未確認=青、監視役(kanshi-yaku)が問題なしと判断=黄、
+  // ユーザーが内容OKと確認済み=赤(最終確定)
+  function kkDetailMark(g){
+    if (!g.imageFull) return '';
+    const color = g.approved ? 'var(--vermillion-bright)' : (g.reviewedOk ? '#f5c518' : '#1565c0');
+    return ' <span style="color:'+color+';">●</span>';
+  }
+
+  // ============ 一覧表示 ============
+  // troop文字列に含まれる兵科1文字(全/槍/弓/馬/砲/器/鉄/騎)を判定するための一覧。
+  const KK_TROOP_BRANCH_CHARS = ['全','槍','弓','馬','砲','器','鉄','騎'];
+
+  // troop文字列(例:「砲器攻」「全防」)から攻撃/防御/攻防/特殊(その他)を判定する
+  function kkAtkDefBadge(troop){
+    if(!troop || troop === '-') return {cls:'other', label:'特殊'};
+    const hasAtk = troop.includes('攻');
+    const hasDef = troop.includes('防');
+    if(hasAtk && hasDef) return {cls:'both', label:'攻防'};
+    if(hasAtk) return {cls:'atk', label:'攻撃'};
+    if(hasDef) return {cls:'def', label:'防御'};
+    return {cls:'other', label:'特殊'};
+  }
+
+  function kkTroopBranchesHtml(troop){
+    if(!troop || troop === '-') return '<span class="kk-branch-fallback">-</span>';
+    const chars = troop.split('').filter(function(c){ return KK_TROOP_BRANCH_CHARS.includes(c); });
+    if(chars.length === 0) return '<span class="kk-branch-fallback">'+kkEscapeHtml(troop)+'</span>';
+    return chars.map(function(c){ return '<span class="kk-branch-badge">'+c+'</span>'; }).join('');
+  }
+
+  function kkRenderListRow(g){
+    const atkDef = kkAtkDefBadge(g.troop);
+    const subTagList = (g.sub || '').split(/\s+/).filter(Boolean);
+    const subTags = subTagList.length
+      ? subTagList.map(function(t){ return '<span class="kk-subtag">'+kkColorizeMujin(t)+'</span>'; }).join('')
+      : '<span class="kk-branch-fallback">-</span>';
+    const detailMark = kkDetailMark(g);
+    return '<tr onclick="location.hash=\''+kkEscapeHtml(g.no)+'\';" style="cursor:pointer;">'
+      + '<td>'+kkEscapeHtml(g.no)+'</td>'
+      + '<td class="kk-col-name"><a href="#'+kkEscapeHtml(g.no)+'">'+kkEscapeHtml(g.name)+'</a>'+detailMark+'</td>'
+      + '<td>'+kkEscapeHtml(g.ch || '-')+'</td>'
+      + '<td>'+(g.cost ?? '?')+'</td>'
+      + '<td><span class="kk-atkdef-badge '+atkDef.cls+'">'+atkDef.label+'</span></td>'
+      + '<td>'+kkTroopBranchesHtml(g.troop)+'</td>'
+      + '<td>'+subTags+'</td>'
+      + '<td class="kk-col-effect">'+kkColorizeMujin(g.effect || '-')+'</td>'
+      + '</tr>';
+  }
+
+  function kkRenderList(list){
+    const el = document.getElementById('kkList');
+    if(list.length === 0){
+      el.innerHTML = '<div class="kk-no-result">該当する武将が見つかりません</div>';
+      return;
+    }
+    el.innerHTML = '<div class="kk-table-scroll"><table class="kk-list-table">'
+      + '<thead><tr><th>No.</th><th>武将名</th><th>入手章</th><th>コスト</th><th>攻防</th><th>兵科</th><th>特殊</th><th>スキル効果</th></tr></thead>'
+      + '<tbody>' + list.map(kkRenderListRow).join('') + '</tbody>'
+      + '</table></div>';
+  }
+
+  function kkChapterSortKey(ch){
+    const m = String(ch || '').match(/^(\d+)章$/);
+    return m ? parseInt(m[1], 10) : 9999;
+  }
+
+  function kkSortByChapterThenNo(list){
+    return list.slice().sort(function(a, b){
+      const chA = kkChapterSortKey(a.ch);
+      const chB = kkChapterSortKey(b.ch);
+      if (chA === 9999 && chB !== 9999) return 1;
+      if (chB === 9999 && chA !== 9999) return -1;
+      const chDiff = chB - chA;
+      if (chDiff !== 0) return chDiff;
+      return parseInt(a.no, 10) - parseInt(b.no, 10);
+    });
+  }
+
+  function kkDoSearch(){
+    const q = document.getElementById('kkSearchBox').value.trim();
+    const list = kkSortByChapterThenNo(q === '' ? kyokuGenerals : kyokuGenerals.filter(function(g){ return g.name.includes(q) || g.no.includes(q); }));
+    kkRenderList(list);
+  }
+
+  document.getElementById('kkSearchBox').addEventListener('input', kkDoSearch);
+
+  // ============ 詳細表示 ============
+  function kkRenderDetail(g){
+    const body = document.getElementById('kkDetailBody');
+    if(!kkHasDetail(g)){
+      body.innerHTML = '<h1 class="kk-detail-title">'+kkEscapeHtml(g.name)+'<span class="kk-detail-furigana">No.'+kkEscapeHtml(g.no)+'</span></h1>'
+        + '<p class="kk-detail-meta">コスト'+(g.cost ?? '?')+' ／ '+kkEscapeHtml(g.troop || '-')+(g.sub ? ' ／ '+kkEscapeHtml(g.sub) : '')+'</p>'
+        + '<div class="kk-no-detail">この武将の画像・ステータス・統率の詳細データはまだ登録されていません。<br>スキル概要: '+kkColorizeMujin(g.effect || '-')+'</div>';
+      return;
+    }
+    const imgHtml = g.imageFull
+      ? '<img class="kk-detail-img" src="'+g.imageFull+'" alt="'+kkEscapeHtml(g.name)+'">'
+      : '<div class="kk-detail-img-placeholder">画像未登録</div>';
+    const rankRow = g.rankGrades ? Object.keys(g.rankGrades).map(function(k){
+        return '<td>'+(KK_RANK_LABELS[k]||k)+': '+kkEscapeHtml(g.rankGrades[k])+'</td>';
+      }).join('') : '';
+
+    body.innerHTML =
+      '<div class="kk-detail-head">'
+        + imgHtml
+        + '<div>'
+          + '<h1 class="kk-detail-title">'+kkEscapeHtml(g.name)+(g.furigana ? '<span class="kk-detail-furigana">'+kkEscapeHtml(g.furigana)+'</span>' : '')+'</h1>'
+          + '<p class="kk-detail-meta">No.'+kkEscapeHtml(g.no)+' ／ コスト'+(g.cost ?? '?')+' ／ 指揮兵数'+(g.lv0Troops ?? '?')+'</p>'
+          + '<div class="kk-detail-block">'
+            + '<h2>ステータス</h2>'
+            + '<div class="kk-table-scroll"><table class="kk-stat-table"><thead><tr><th>攻撃</th><th>防御</th><th>兵法</th></tr></thead>'
+            + '<tbody><tr>'
+              + '<td>'+g.atkBase+(g.atkGrowth?' (+'+g.atkGrowth+')':'')+'</td>'
+              + '<td>'+g.defBase+(g.defGrowth?' (+'+g.defGrowth+')':'')+'</td>'
+              + '<td>'+g.tacticsBase+(g.tacticsGrowth?' (+'+g.tacticsGrowth+')':'')+'</td>'
+            + '</tr></tbody></table></div>'
+          + '</div>'
+          + (g.rankGrades ? (
+            '<div class="kk-detail-block"><h2>統率</h2><div class="kk-table-scroll"><table class="kk-stat-table"><tbody><tr>'+rankRow+'</tr></tbody></table></div></div>'
+          ) : '')
+        + '</div>'
+      + '</div>'
+      + '<div class="kk-detail-block">'
+        + '<h2>スキル</h2>'
+        + '<div class="kk-skill-name">'+kkEscapeHtml(g.initialSkill || '-')+'</div>'
+        + '<div class="kk-skill-detail">'+kkColorizeMujin(g.skillDetail || g.effect || '')+'</div>'
+        + (g.mujinNote ? '<div class="kk-skill-detail" style="margin-top:6px;color:var(--muted);">'+kkColorizeMujin(g.mujinNote)+'</div>' : '')
+      + '</div>'
+      + (g.trTable ? (
+        '<div class="kk-detail-block"><h2>鍛錬レベル別性能</h2>'
+        + '<div class="kk-table-scroll"><table class="kk-stat-table"><thead><tr><th>レベル</th><th class="kk-col-narrow">必要ポイント</th><th>効果</th></tr></thead><tbody>'
+        + g.trTable.map(function(row){ return '<tr><td>'+kkEscapeHtml(row.level)+'</td><td class="kk-col-narrow">'+kkEscapeHtml(row.points||'-')+'</td><td style="text-align:left;">'+kkColorizeMujin(row.effect)+'</td></tr>'; }).join('')
+        + '</tbody></table></div></div>'
+      ) : '')
+      + (g.synthesisTable ? (
+        '<div class="kk-detail-block"><h2>合成素材にした場合の候補スキル</h2>'
+        + '<div class="kk-table-scroll"><table class="kk-stat-table"><thead><tr><th>候補</th><th>初期スキル</th><th>移植後合成候補</th></tr></thead><tbody>'
+        + g.synthesisTable.map(function(row){
+            const targetLabel = row.target ? '対象:'+kkColorizeMujin(row.target)+' ' : '';
+            const desc = row.rate ? '<div class="kk-synth-desc">'+targetLabel+'確率'+kkEscapeHtml(row.rate)+' '+kkColorizeMujin(row.effectShort||'')+'</div>' : '';
+            const skillLabel = '<div class="kk-synth-cell"><span class="kk-synth-name">'+kkSkillLink(row.skill, row.rank)+'</span>'+desc+'</div>';
+            const afterLabel = row.afterSkill ? ('<div class="kk-synth-cell"><span class="kk-synth-name">'+kkSkillLink(row.afterSkill, row.afterRank)+'</span>'+desc+'</div>') : '-';
+            return '<tr><td>'+kkEscapeHtml(row.slot)+'</td><td>'+skillLabel+'</td>'
+              + '<td>'+afterLabel+'</td></tr>';
+          }).join('')
+        + '</tbody></table></div>'
+        + (g.synthesisNote ? '<p class="kk-detail-meta" style="margin-top:6px;">'+kkEscapeHtml(g.synthesisNote)+'</p>' : '')
+        + '</div>'
+      ) : '')
+      + (g.illustrator ? '<p class="kk-illust-credit">Illust. '+kkEscapeHtml(g.illustrator)+'</p>' : '');
+  }
+
+  // ============ 表示切り替え(URLハッシュに応じて一覧/詳細を出し分け) ============
+  function kkRoute(){
+    const hash = decodeURIComponent(location.hash.replace('#',''));
+    const listView = document.getElementById('listView');
+    const detailView = document.getElementById('detailView');
+    if(!hash){
+      listView.style.display = '';
+      detailView.style.display = 'none';
+      return;
+    }
+    const g = kyokuGenerals.find(function(x){ return x.no === hash; });
+    if(!g){
+      listView.style.display = '';
+      detailView.style.display = 'none';
+      return;
+    }
+    listView.style.display = 'none';
+    detailView.style.display = '';
+    kkRenderDetail(g);
+    window.scrollTo(0, 0);
+  }
+
+  window.addEventListener('hashchange', kkRoute);
+  kkRenderList(kkSortByChapterThenNo(kyokuGenerals));
+  kkRoute();
+</script>
+  </div>
+</div>
+
+<script src="assets/js/site-sidebar.js"></script>
+</body>
+</html>
