@@ -1798,14 +1798,17 @@
       targetTroopCategories: ['槍兵科','弓兵科','兵器兵科(器兵科)'], // 対象:槍/弓/器/鉄
       variableFormula: {
         statTarget: 'def', base: 0, variable: 'defenderCount',
-        perUnitTable: { base:5.4, TR1:5.5, TR2:5.7, TR3:6, TR5:7.2, TR6:7.7 } // TR4は情報源に記載なし。TR6はパラレル版No.31297で解禁(ixagno.blog.fc2.com確認)
+        perUnitTable: { base:5.4, TR1:5.5, TR2:5.7, TR3:6, TR4:6.4, TR5:7.2, TR6:7.7 } // ixanary.com生HTML確認(2026-07-29)。TR6はパラレル版No.31297で解禁
       },
-      rateTable: { base:42, TR5:70, TR6:80 }, // TR1〜TR4の確率は情報源に記載なし
-      note: 'S(防御)。確率:LV10+42%→TR5+70%→TR6+80%/対象:槍弓器鉄。防御:(係数×防御参加武将数)%上昇、係数はLV10=5.4、TR1=5.5、TR2=5.7、TR3=6、TR5=7.2、TR6=7.7。' +
-            '「防御参加武将数」欄の入力で自動計算される(自動反映対応、TR4係数・TR1〜TR4の確率は情報源に記載なくデータ不足)。' +
-            '卓越:追加確率-20%(LV10)〜+20%(TR5)→+50%(TR6)で防御効果1.5倍は参考データのみ(計算エンジン未対応)。' +
+      rateTable: { base:42, TR1:42, TR2:47, TR3:52, TR4:57, TR5:70, TR6:80 }, // ixanary.com生HTML確認(2026-07-29)
+      takuetsu: { multiplier: 1.5 },
+      takuetsuChanceTable: { base:-20, TR1:-15, TR2:-10, TR3:1, TR4:10, TR5:20, TR6:50 }, // ixanary.com生HTML確認(2026-07-29)。マイナス値はp1計算時に0%へクランプされる
+      note: 'S(防御)。確率:LV10+42%、TR1+42%、TR2+47%、TR3+52%、TR4+57%、TR5+70%、TR6+80%/対象:槍弓器鉄。防御:(係数×防御参加武将数)%上昇、係数はLV10=5.4、TR1=5.5、TR2=5.7、TR3=6、TR4=6.4、TR5=7.2、TR6=7.7。' +
+            '「防御参加武将数」欄の入力で自動計算される(自動反映対応)。' +
+            '卓越:追加確率-20%(LV10)〜+50%(TR6)で防御効果1.5倍(takuetsuChanceTableで自動反映対応。マイナス値は0%にクランプして計算)。' +
             '【2026年7月修正】以前は計算エンジン未対応(参考データのみ)扱いにしていたが、既存のvariableFormula(defenderCount)機構で計算可能だったため対応した。' +
-            '【2026年7月再修正】パラレル【天】版(No.31297)でTR6が解禁されたためixagno.blog.fc2.comで確認し追加登録。'
+            '【2026年7月再修正】パラレル【天】版(No.31297)でTR6が解禁されたためixagno.blog.fc2.comで確認し追加登録。' +
+            '【2026年7月三度目修正】ixanary.com生HTMLでTR1〜TR6の確率・係数の欠落分(TR1〜TR4の確率、TR4係数)を確認して補完。卓越のTR別追加確率もtakuetsuChanceTableとして新規対応した(エンジン側にTR別テーブル+0%下限クランプの仕組みを追加)。'
     },
     '豊恩銘魂': {
       // 【2026年7月再々検証】ixanary.comの「無尽スキルまとめ」記事で防御スキル枠の無尽スキルと確認、hasMujinフラグを復活。
@@ -3124,11 +3127,16 @@
           // 【2026年7月修正】以前は模倣元自身の卓越効果(sourceSk.takuetsu)が模倣時に全く反映されていなかったため追加。
           if(sourceSk.takuetsu){
             const squadBonus = computeSquadTakuetsuRateBonus();
-            const p1 = Math.min(100, sourceSk.takuetsu.chance + squadBonus) / 100;
+            // takuetsuChanceTableがあればTR別の卓越追加確率を使う(国呑ノ蟒蛇等、TRごとに-20%〜+50%のように変動するスキル用)。
+            // マイナス値になり得るため0%を下限にクランプする(負の確率は意味を持たないため)。
+            const tkChance = sourceSk.takuetsuChanceTable
+              ? (sourceSk.takuetsuChanceTable[(trMatch ? 'TR'+trMatch[1] : 'base')] !== undefined ? sourceSk.takuetsuChanceTable[(trMatch ? 'TR'+trMatch[1] : 'base')] : sourceSk.takuetsuChanceTable['base'])
+              : sourceSk.takuetsu.chance;
+            const p1 = Math.min(100, Math.max(0, tkChance + squadBonus)) / 100;
             const mult = sourceSk.takuetsu.multiplier;
             const doubleBonusPct = sourceSk.noDoubleTakuetsu ? null : columnHasDoubleTakuetsu(col);
             if(doubleBonusPct !== null){
-              const p2 = Math.min(100, sourceSk.takuetsu.chance + squadBonus + doubleBonusPct) / 100;
+              const p2 = Math.min(100, Math.max(0, tkChance + squadBonus + doubleBonusPct)) / 100;
               const factor = (1 - p1 + p1 * mult) * (1 - p2 + p2 * mult);
               effectMax = Math.round(effectMax * mult * mult * 100) / 100;
               effect = Math.round(effect * factor * 100) / 100;
@@ -3466,12 +3474,18 @@
             // (飛天ノ閃剣のような卓越依存の飛翔付与が部隊内にある場合、その分だけeffectと異なる値になる)。
             let effectMax = (variableEffectMax !== undefined) ? variableEffectMax : effect;
             if(effect !== undefined && sk.takuetsu){
-              const p1 = Math.min(100, sk.takuetsu.chance + squadTakuetsuBonus) / 100;
+              // takuetsuChanceTableがあればTR別の卓越追加確率を使う(国呑ノ蟒蛇等、TRごとに-20%〜+50%のように変動するスキル用)。
+              // マイナス値になり得るため0%を下限にクランプする(負の確率は意味を持たないため)。
+              const trMatchTk = text.match(/TR(\d)/i);
+              const tkChance = sk.takuetsuChanceTable
+                ? (sk.takuetsuChanceTable[(trMatchTk ? 'TR'+trMatchTk[1] : 'base')] !== undefined ? sk.takuetsuChanceTable[(trMatchTk ? 'TR'+trMatchTk[1] : 'base')] : sk.takuetsuChanceTable['base'])
+                : sk.takuetsu.chance;
+              const p1 = Math.min(100, Math.max(0, tkChance + squadTakuetsuBonus)) / 100;
               const mult = sk.takuetsu.multiplier;
               // noDoubleTakuetsu(「二重卓越禁止」明記のスキル用)が設定されていれば、部隊内に二重卓越があっても適用しない
               const doubleBonusPct = sk.noDoubleTakuetsu ? null : columnHasDoubleTakuetsu(col);
               if(doubleBonusPct !== null){
-                const p2 = Math.min(100, sk.takuetsu.chance + squadTakuetsuBonus + doubleBonusPct) / 100;
+                const p2 = Math.min(100, Math.max(0, tkChance + squadTakuetsuBonus + doubleBonusPct)) / 100;
                 const factor = (1 - p1 + p1 * mult) * (1 - p2 + p2 * mult);
                 effectMax = Math.round(effect * mult * mult * 100) / 100; // 1回目・2回目とも卓越成功した場合
                 effect = Math.round(effect * factor * 100) / 100;
