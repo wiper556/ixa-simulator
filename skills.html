@@ -112,7 +112,7 @@
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script src="assets/js/comments-widget.js"></script>
 <script>
-  const SKILL_DB_VERSION = 'v2026-07-29.18';
+  const SKILL_DB_VERSION = 'v2026-07-29.19';
   document.addEventListener('DOMContentLoaded', ()=>{
     const badge = document.getElementById('simVersionBadge');
     if(badge) badge.textContent = SKILL_DB_VERSION;
@@ -576,6 +576,26 @@
       ]
     },
     {
+      name:"国呑ノ蟒蛇", rank:"S", baseRate:42, target:"槍・弓・器・鉄",
+      effectSummary:"S/LV10 確率 42% 防御上昇/対象:槍・弓・器・鉄\n①(係数×防御参加武将数)%を防御効果に加算する(係数はLV10=5.4)\n②卓越:追加確率-20%(LV10)〜+50%(TR6)で防御効果1.5倍",
+      categoryLinks:[
+        {href:"skills-count-def.html", label:"人数依存(防)スキル一覧を見る"}
+      ],
+      sourceCharacters:[
+        {name:"斎藤道三(3)", no:"1297", slot:"A"}
+      ],
+      ownHiddenCandidate: {skill:"国呑ノ蟒蛇", rank:"S"},
+      trTable:[
+        {level:"LV10", points:"-", coefficient:"5.4", effect:"槍・弓・器・鉄　確率 42% / 防御 5.4%×防御参加武将数(280人)=1512.0%(卓越追加確率-20%で1.5倍)"},
+        {level:"TR1", points:"10", coefficient:"5.5", effect:"槍・弓・器・鉄　確率 42% / 防御 5.5%×防御参加武将数(280人)=1540.0%(卓越追加確率-15%で1.5倍)"},
+        {level:"TR2", points:"40", coefficient:"5.7", effect:"槍・弓・器・鉄　確率 47% / 防御 5.7%×防御参加武将数(280人)=1596.0%(卓越追加確率-10%で1.5倍)"},
+        {level:"TR3", points:"90", coefficient:"6", effect:"槍・弓・器・鉄　確率 52% / 防御 6%×防御参加武将数(280人)=1680.0%(卓越追加確率1%で1.5倍)"},
+        {level:"TR4", points:"150", coefficient:"6.4", effect:"槍・弓・器・鉄　確率 57% / 防御 6.4%×防御参加武将数(280人)=1792.0%(卓越追加確率10%で1.5倍)"},
+        {level:"TR5", points:"200", coefficient:"7.2", effect:"槍・弓・器・鉄　確率 70% / 防御 7.2%×防御参加武将数(280人)=2016.0%(卓越追加確率20%で1.5倍)"},
+        {level:"TR6", points:"パラレル", coefficient:"7.7", effect:"槍・弓・器・鉄　確率 80% / 防御 7.7%×防御参加武将数(280人)=2156.0%(卓越追加確率50%で1.5倍)"}
+      ]
+    },
+    {
       name:"月煌侵蝕", rank:"SSS", baseRate:45, target:"全 兵站",
       effectSummary:"SSS/LV10 確率 45% 防御上昇/対象:全　兵站\n①(係数×防御参加武将数)%を防御効果に加算する",
       categoryLinks:[
@@ -674,7 +694,7 @@
     },
     {
       name:"思金神ノ深謀", rank:"SS", baseRate:60, target:"部隊長",
-      effectSummary:"SS/LV10 確率 60% 対象:部隊長\n①部隊長の持つ模倣可能な初期スキルを模倣する\n②卓越:追加確率35%で通常攻撃/防御効果を1.3倍にして模倣する(TR別データは未確認)",
+      effectSummary:"SS/LV10 確率 60% 対象:部隊長\n①部隊長の持つ模倣可能な初期スキルを模倣する\n②卓越:追加確率35%で通常攻撃/防御効果を1.3倍にして模倣する",
       categoryLinks:[
         {href:"skills-leadermimic.html", label:"部隊長模倣スキル一覧を見る"}
       ],

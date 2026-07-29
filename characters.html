@@ -139,7 +139,7 @@
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script src="assets/js/comments-widget.js"></script>
 <script>
-  const CHAR_DB_VERSION = 'v2026-07-29.31';
+  const CHAR_DB_VERSION = 'v2026-07-29.32';
   document.addEventListener('DOMContentLoaded', ()=>{
     const badge = document.getElementById('simVersionBadge');
     if(badge) badge.textContent = CHAR_DB_VERSION;
@@ -664,13 +664,13 @@
       initialSkill:"国呑ノ蟒蛇",
       skillDetail:"S/LV10 確率 42% 防御上昇/対象:槍・弓・器・鉄\n①(係数×防御参加武将数)%を防御効果に加算する(係数はLV10=5.4)\n②卓越:追加確率-20%(LV10)〜+50%(TR6)で防御効果1.5倍",
       trTable:[
-        {level:"LV10", points:"-", coefficient:"5.4", effect:"槍・弓・器・鉄　確率 42% / 防御 5.4%×防御参加武将数(280人)=1512.0%"},
-        {level:"TR1", points:"10", coefficient:"5.5", effect:"槍・弓・器・鉄　確率 42% / 防御 5.5%×防御参加武将数(280人)=1540.0%"},
-        {level:"TR2", points:"40", coefficient:"5.7", effect:"槍・弓・器・鉄　確率 47% / 防御 5.7%×防御参加武将数(280人)=1596.0%"},
-        {level:"TR3", points:"90", coefficient:"6", effect:"槍・弓・器・鉄　確率 52% / 防御 6%×防御参加武将数(280人)=1680.0%"},
-        {level:"TR4", points:"150", coefficient:"6.4", effect:"槍・弓・器・鉄　確率 57% / 防御 6.4%×防御参加武将数(280人)=1792.0%"},
-        {level:"TR5", points:"200", coefficient:"7.2", effect:"槍・弓・器・鉄　確率 70% / 防御 7.2%×防御参加武将数(280人)=2016.0%"},
-        {level:"TR6", points:"パラレル", coefficient:"7.7", effect:"槍・弓・器・鉄　確率 80% / 防御 7.7%×防御参加武将数(280人)=2156.0%"}
+        {level:"LV10", points:"-", coefficient:"5.4", effect:"槍・弓・器・鉄　確率 42% / 防御 5.4%×防御参加武将数(280人)=1512.0%(卓越追加確率-20%で1.5倍)"},
+        {level:"TR1", points:"10", coefficient:"5.5", effect:"槍・弓・器・鉄　確率 42% / 防御 5.5%×防御参加武将数(280人)=1540.0%(卓越追加確率-15%で1.5倍)"},
+        {level:"TR2", points:"40", coefficient:"5.7", effect:"槍・弓・器・鉄　確率 47% / 防御 5.7%×防御参加武将数(280人)=1596.0%(卓越追加確率-10%で1.5倍)"},
+        {level:"TR3", points:"90", coefficient:"6", effect:"槍・弓・器・鉄　確率 52% / 防御 6%×防御参加武将数(280人)=1680.0%(卓越追加確率1%で1.5倍)"},
+        {level:"TR4", points:"150", coefficient:"6.4", effect:"槍・弓・器・鉄　確率 57% / 防御 6.4%×防御参加武将数(280人)=1792.0%(卓越追加確率10%で1.5倍)"},
+        {level:"TR5", points:"200", coefficient:"7.2", effect:"槍・弓・器・鉄　確率 70% / 防御 7.2%×防御参加武将数(280人)=2016.0%(卓越追加確率20%で1.5倍)"},
+        {level:"TR6", points:"パラレル", coefficient:"7.7", effect:"槍・弓・器・鉄　確率 80% / 防御 7.7%×防御参加武将数(280人)=2156.0%(卓越追加確率50%で1.5倍)"}
       ],
       // 45do.info生HTML照合済み(2026-07-29、skiladd_wrapの位置対応で確認)。
       synthesisTable:[
@@ -1339,7 +1339,7 @@
   }
 
   // スキルデータベース(skills.html)にページがあるスキル名の一覧。ここに載っているスキルはリンク化する。
-  const LINKED_SKILLS = ['勇冠三軍', '焼尽神無', '覆天征軍', '終焉焦土', '万物神勇', '経津主神ノ剣', '従魔絶神', '梵天浄界', '岳王ノ加護', '國才連豪', '虎賁統帥', '天地超克', '神羅聖域', '信明義星', '千里必勝ノ神算', '刹那無影', '月煌侵蝕', '虚実兵妙', '仙境解脱', '幻像鏡花', '開闢ノ逆鉾', '思金神ノ深謀', '戦華雄渾', '月詠ノ覇威', '絶無灰尽', '八幡神ノ威光', '龍驤虎躍', '永世ノ天隻', '黄泉醜女ノ屍兵', '高津姫神', '義陣絶刀', '破国八陣', '轟渦ノ神将', '王花尖剣', '泰厳射手'];
+  const LINKED_SKILLS = ['勇冠三軍', '焼尽神無', '覆天征軍', '終焉焦土', '万物神勇', '経津主神ノ剣', '従魔絶神', '梵天浄界', '岳王ノ加護', '國才連豪', '虎賁統帥', '天地超克', '神羅聖域', '信明義星', '千里必勝ノ神算', '刹那無影', '月煌侵蝕', '虚実兵妙', '仙境解脱', '幻像鏡花', '開闢ノ逆鉾', '思金神ノ深謀', '戦華雄渾', '月詠ノ覇威', '絶無灰尽', '八幡神ノ威光', '龍驤虎躍', '永世ノ天隻', '黄泉醜女ノ屍兵', '高津姫神', '義陣絶刀', '破国八陣', '轟渦ノ神将', '王花尖剣', '泰厳射手', '国呑ノ蟒蛇'];
 
   function gdbSkillLink(skillName, rank){
     const label = gdbEscapeHtml(skillName)+' '+gdbEscapeHtml(rank||'');
