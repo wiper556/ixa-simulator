@@ -431,14 +431,17 @@
       rankGrades:{yari:'S', yumi:'A', uma:'A', ki:'S'},
       initialSkill:"不制于天地人",
       skillDetail:"S/LV10 確率 50% 防御上昇/対象:槍・弓・器・鉄\n模倣不可\n①(係数×防御参加武将数)%を防御効果に加算する(係数はLV10=8.5)\n②防御参加武将数が220以下の時、防御効果1.5倍となる(計算エンジン未対応)",
+      categoryLinks:[
+        {href:"skills-count-def.html", label:"人数依存(防)スキル一覧を見る"}
+      ],
       trTable:[
-        {level:"LV10", points:"-", coefficient:"8.5", effect:"槍・弓・器・鉄　確率 50% / 防御 8.5%×防御参加武将数(280人)=2380.0%"},
-        {level:"TR1", points:"10", coefficient:"8.7", effect:"槍・弓・器・鉄　確率 50% / 防御 8.7%×防御参加武将数(280人)=2436.0%"},
-        {level:"TR2", points:"40", coefficient:"9", effect:"槍・弓・器・鉄　確率 50% / 防御 9%×防御参加武将数(280人)=2520.0%"},
-        {level:"TR3", points:"90", coefficient:"9.3", effect:"槍・弓・器・鉄　確率 50% / 防御 9.3%×防御参加武将数(280人)=2604.0%"},
-        {level:"TR4", points:"150", coefficient:"9.6", effect:"槍・弓・器・鉄　確率 50% / 防御 9.6%×防御参加武将数(280人)=2688.0%"},
-        {level:"TR5", points:"200", coefficient:"10.2", effect:"槍・弓・器・鉄　確率 50% / 防御 10.2%×防御参加武将数(280人)=2856.0%"},
-        {level:"TR6", points:"パラレル", coefficient:"11.2", effect:"槍・弓・器・鉄　確率 50% / 防御 11.2%×防御参加武将数(280人)=3136.0%"}
+        {level:"LV10", points:"-", coefficient:"8.5", effect:"槍・弓・器・鉄　確率 50% / 防御 8.5%×防御参加武将数(220人)×1.5倍=2805.0%"},
+        {level:"TR1", points:"10", coefficient:"8.7", effect:"槍・弓・器・鉄　確率 50% / 防御 8.7%×防御参加武将数(220人)×1.5倍=2871.0%"},
+        {level:"TR2", points:"40", coefficient:"9", effect:"槍・弓・器・鉄　確率 50% / 防御 9%×防御参加武将数(220人)×1.5倍=2970.0%"},
+        {level:"TR3", points:"90", coefficient:"9.3", effect:"槍・弓・器・鉄　確率 50% / 防御 9.3%×防御参加武将数(220人)×1.5倍=3069.0%"},
+        {level:"TR4", points:"150", coefficient:"9.6", effect:"槍・弓・器・鉄　確率 50% / 防御 9.6%×防御参加武将数(220人)×1.5倍=3168.0%"},
+        {level:"TR5", points:"200", coefficient:"10.2", effect:"槍・弓・器・鉄　確率 50% / 防御 10.2%×防御参加武将数(220人)×1.5倍=3366.0%"},
+        {level:"TR6", points:"パラレル", coefficient:"11.2", effect:"槍・弓・器・鉄　確率 50% / 防御 11.2%×防御参加武将数(220人)×1.5倍=3696.0%"}
       ],
       // ixagno.blog.fc2.com生HTML照合済み(2026-07-29、blog-entry-10824の合成テーブルで初期テーブル/移植後の対応を確認、A/B/C/S2は移植後も同一スキル、S1は移植先未判明のため自身の初期スキルのまま)。
       synthesisTable:[
@@ -791,8 +794,8 @@
       furigana:"うえすぎけんしん", illustrator:"直良有祐",
       imageFull:"assets/img/characters/no10074_full.png", imageChar:"assets/img/characters/no10074_char.png",
       atkBase:1280, atkGrowth:81, defBase:1280, defGrowth:81, tacticsBase:840.0, tacticsGrowth:4.0, lv0Troops:4450,
-      // カード画像照合済み(2026-07-29): 槍A/弓S/馬A/鉄砲A
-      rankGrades:{yari:'A', yumi:'S', uma:'A', ki:'A'},
+      // カード画像照合済み(2026-07-30): 槍A/弓S/馬A/器X
+      rankGrades:{yari:'A', yumi:'S', uma:'A', ki:'X'},
       initialSkill:"神気煌龍",
       skillDetail:"SSS/LV10 確率 100% 攻撃970%上昇/対象:全\n①攻撃970%上昇する\n②防御970%上昇する\n③この武将は、飛翔｛所属部隊内の他武将が戦闘時に持つ飛翔値の合計+10｝を得る(特殊効果は模倣不可)",
       trTable:[
@@ -816,10 +819,10 @@
       furigana:"もうりてるもと", illustrator:"直良有祐",
       imageFull:"assets/img/characters/no10075_full.png", imageChar:"assets/img/characters/no10075_char.png",
       atkBase:1300, atkGrowth:82, defBase:1230, defGrowth:65, tacticsBase:860.0, tacticsGrowth:4.0, lv0Troops:3700,
-      // カード画像照合済み(2026-07-29): 槍A/弓A/馬A/鉄砲SS
-      rankGrades:{yari:'A', yumi:'A', uma:'A', ki:'SS'},
+      // カード画像照合済み(2026-07-30): 槍A/弓X/馬A/器SS
+      rankGrades:{yari:'A', yumi:'X', uma:'A', ki:'SS'},
       initialSkill:"天覇冠軍",
-      skillDetail:"SSS/LV10 確率 100% 攻撃1000%上昇/対象:全　不屈2\n模倣不可\n①攻撃1000%上昇する\n②不屈2を持つ\n③所属部隊を含む4部隊までで自合流を行える\n④自合流時、他の自分の部隊にもこのスキルの攻撃効果を加算する\n⑤部隊総コストからこの武将分のコストを最大3まで除外する(部隊内重複不可)",
+      skillDetail:"SSS/LV10 確率 100% 攻撃1000%上昇/対象:全　不屈2\n模倣不可\n①攻撃1000%上昇する\n②所属部隊を含む4部隊までで自合流を行える\n③自合流時、他の自分の部隊にもこのスキルの攻撃効果を加算する\n④部隊総コストからこの武将分のコストを最大3まで除外する(部隊内重複不可)",
       trTable:[
         {level:"LV10", points:"-", effect:"全 不屈2　確率 100% / 攻撃 1000%上昇(自合流4部隊まで/コスト除外最大3)"},
         {level:"TR1", points:"10", effect:"全 不屈2　確率 100% / 攻撃 1050%上昇(自合流4部隊まで/コスト除外最大3)"},
@@ -1623,7 +1626,7 @@
   }
 
   // スキルデータベース(skills.html)にページがあるスキル名の一覧。ここに載っているスキルはリンク化する。
-  const LINKED_SKILLS = ['勇冠三軍', '焼尽神無', '覆天征軍', '終焉焦土', '万物神勇', '経津主神ノ剣', '従魔絶神', '梵天浄界', '岳王ノ加護', '國才連豪', '虎賁統帥', '天地超克', '神羅聖域', '信明義星', '千里必勝ノ神算', '刹那無影', '月煌侵蝕', '虚実兵妙', '仙境解脱', '幻像鏡花', '開闢ノ逆鉾', '思金神ノ深謀', '戦華雄渾', '月詠ノ覇威', '絶無灰尽', '八幡神ノ威光', '龍驤虎躍', '永世ノ天隻', '黄泉醜女ノ屍兵', '高津姫神', '義陣絶刀', '破国八陣', '轟渦ノ神将', '王花尖剣', '泰厳射手', '国呑ノ蟒蛇', '虚空ノ導', '龍気剣鳴', '雄武英略', '坂西都督', '摩利支天ノ法', '不制于天地人'];
+  const LINKED_SKILLS = ['勇冠三軍', '焼尽神無', '覆天征軍', '終焉焦土', '万物神勇', '経津主神ノ剣', '従魔絶神', '梵天浄界', '岳王ノ加護', '國才連豪', '虎賁統帥', '天地超克', '神羅聖域', '信明義星', '千里必勝ノ神算', '刹那無影', '月煌侵蝕', '虚実兵妙', '仙境解脱', '幻像鏡花', '開闢ノ逆鉾', '思金神ノ深謀', '戦華雄渾', '月詠ノ覇威', '絶無灰尽', '八幡神ノ威光', '龍驤虎躍', '永世ノ天隻', '黄泉醜女ノ屍兵', '高津姫神', '義陣絶刀', '破国八陣', '轟渦ノ神将', '王花尖剣', '泰厳射手', '国呑ノ蟒蛇', '虚空ノ導', '龍気剣鳴', '雄武英略', '坂西都督', '摩利支天ノ法', '不制于天地人', '神機采配'];
 
   function gdbSkillLink(skillName, rank){
     const label = gdbEscapeHtml(skillName)+' '+gdbEscapeHtml(rank||'');
