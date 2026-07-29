@@ -110,7 +110,7 @@
   <div class="sim-version-badge" id="simVersionBadge">v-</div>
 
 <script>
-  const SKILL_DB_VERSION = 'v2026-07-29.10';
+  const SKILL_DB_VERSION = 'v2026-07-29.11';
   document.addEventListener('DOMContentLoaded', ()=>{
     const badge = document.getElementById('simVersionBadge');
     if(badge) badge.textContent = SKILL_DB_VERSION;
@@ -725,6 +725,71 @@
         {level:"TR3", points:"90", effect:"全　確率 54% / 防御 560%上昇(70以下の被ダメージ上限35)"},
         {level:"TR4", points:"150", effect:"全　確率 54% / 防御 710%上昇(70以下の被ダメージ上限30)"},
         {level:"TR5", points:"200", effect:"全　確率 54% / 防御 860%上昇(70以下の被ダメージ上限25)"}
+      ]
+    },
+    {
+      name:"高津姫神", rank:"SS", baseRate:70, target:"自身",
+      effectSummary:"SS/LV10 確率 70% 対象:自身\n①自身が持つ初期スキルを模倣する(戦闘スキルのみ)",
+      categoryLinks:[
+        {href:"skills-mimic.html", label:"自模倣スキル一覧を見る"}
+      ],
+      sourceCharacters:[
+        {name:"長尾景虎", no:"10064", slot:"A"}
+      ],
+      ownHiddenCandidate: {skill:"高津姫神", rank:"SS"},
+      trTable:[
+        {level:"LV10", points:"-", effect:"自身　確率 70% / 初期スキル(戦闘スキルのみ)を模倣"}
+      ]
+    },
+    {
+      name:"義陣絶刀", rank:"S", baseRate:55, target:"全 飛翔17",
+      effectSummary:"S/LV10 確率 55% 攻防840%上昇/対象:全　飛翔17\n①攻撃840%上昇する\n②防御840%上昇する",
+      categoryLinks:[
+        {href:"skills-hishou.html", label:"飛翔スキル一覧を見る"}
+      ],
+      sourceCharacters:[
+        {name:"長尾景虎", no:"10064", slot:"B"}
+      ],
+      ownHiddenCandidate: {skill:"義陣絶刀", rank:"S"},
+      trTable:[
+        {level:"LV10", points:"-", effect:"全 飛翔17　確率 55% / 攻撃 840%上昇+防御840%上昇"}
+      ]
+    },
+    {
+      name:"破国八陣", rank:"SS", baseRate:30, target:"全", noMimic:true,
+      effectSummary:"SS/LV10 確率 30% 防御1030%上昇/対象:全\n①防御1030%上昇する\n②攻撃部隊の武将が持つ特殊効果付き初期スキルを全て無効化する(模倣不可)",
+      sourceCharacters:[
+        {name:"長尾景虎", no:"10064", slot:"C"}
+      ],
+      ownHiddenCandidate: {skill:"破国八陣", rank:"SS"},
+      trTable:[
+        {level:"LV10", points:"-", effect:"全　確率 30% / 防御 1030%上昇(攻撃部隊の特殊効果付き初期スキル無効化)"}
+      ]
+    },
+    {
+      name:"轟渦ノ神将", rank:"S", baseRate:50, target:"全", noMimic:true,
+      effectSummary:"S/LV10 確率 50% 防御500%上昇/対象:全\n①防御500%上昇する\n②防御戦闘時、防御側の兵科補正が0.8倍に小さくなる(特殊効果は累積するが有利不利は逆転しない、模倣不可・自軍内重複上限4)",
+      sourceCharacters:[
+        {name:"上杉謙信(5)", no:"1291", slot:"S1"},
+        {name:"長尾景虎", no:"10064", slot:"S1"}
+      ],
+      ownHiddenCandidate: {skill:"轟渦ノ神将", rank:"S"},
+      trTable:[
+        {level:"LV10", points:"-", effect:"全　確率 50% / 防御 500%上昇(兵士補正0.8倍)"}
+      ]
+    },
+    {
+      name:"王花尖剣", rank:"S", baseRate:64, target:"槍・馬・砲・器 飛翔10",
+      effectSummary:"S/LV10 確率 64% 防御320%上昇/対象:槍・馬・砲・器　飛翔10\n①防御320%上昇する\n②飛翔10を持つ\n③所属部隊の武将が戦闘時にもつ飛翔値の合計×10%を防御効果に加算する",
+      categoryLinks:[
+        {href:"skills-hishou.html", label:"飛翔スキル一覧を見る"}
+      ],
+      sourceCharacters:[
+        {name:"長尾景虎", no:"10064", slot:"S2"}
+      ],
+      ownHiddenCandidate: {skill:"王花尖剣", rank:"S"},
+      trTable:[
+        {level:"LV10", points:"-", effect:"槍・馬・砲・器 飛翔10　確率 64% / 防御 320%上昇(飛翔値合計×10%加算)"}
       ]
     }
   ];
