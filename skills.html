@@ -244,7 +244,8 @@
       name:"虚空ノ導", rank:"SSS", baseRate:70, target:"自身",
       effectSummary:"SSS/LV10 確率 70% 効果倍率上昇/対象:自身\n①自身が持つ初期スキルを模倣する\n②卓越:追加確率30%で通常攻撃/防御効果を1.3倍にして模倣する",
       categoryLinks:[
-        {href:"skills-mimic.html", label:"自模倣スキル一覧を見る"}
+        {href:"skills-mimic.html", label:"自模倣スキル一覧を見る"},
+        {href:"skills-takuetsu.html", label:"卓越スキル一覧を見る"}
       ],
       sourceCharacters:[
         {name:"斎藤道三(3)", no:"1297", slot:"C"}
@@ -642,6 +643,9 @@
     {
       name:"虚実兵妙", rank:"SS", baseRate:100, target:"全",
       effectSummary:"SS/LV10 確率 100% 防御740%上昇/対象:全\n①防御740%上昇する\n②防衛戦闘時、敵軍の卓越確率を-8%する(自軍内重複上限2)",
+      categoryLinks:[
+        {href:"skills-takuetsu.html", label:"卓越スキル一覧を見る"}
+      ],
       sourceCharacters:[
         {name:"長宗我部元親(7)", no:"1289", slot:"A"},
         {name:"上杉謙信(5)", no:"1291", slot:"S2"},
@@ -680,7 +684,8 @@
       name:"幻像鏡花", rank:"SSS", baseRate:56, target:"部隊長",
       effectSummary:"SSS/LV10 確率 56% 対象:部隊長\n①部隊長の持つ模倣可能な初期スキルを模倣する\n②卓越:追加確率40%で通常攻撃/防御効果を1.35倍にして模倣する",
       categoryLinks:[
-        {href:"skills-leadermimic.html", label:"部隊長模倣スキル一覧を見る"}
+        {href:"skills-leadermimic.html", label:"部隊長模倣スキル一覧を見る"},
+        {href:"skills-takuetsu.html", label:"卓越スキル一覧を見る"}
       ],
       sourceCharacters:[
         {name:"伊達政宗(6)", no:"1292", slot:"C・S1"},
@@ -722,7 +727,8 @@
       name:"思金神ノ深謀", rank:"SS", baseRate:60, target:"部隊長",
       effectSummary:"SS/LV10 確率 60% 対象:部隊長\n①部隊長の持つ模倣可能な初期スキルを模倣する\n②卓越:追加確率35%で通常攻撃/防御効果を1.3倍にして模倣する",
       categoryLinks:[
-        {href:"skills-leadermimic.html", label:"部隊長模倣スキル一覧を見る"}
+        {href:"skills-leadermimic.html", label:"部隊長模倣スキル一覧を見る"},
+        {href:"skills-takuetsu.html", label:"卓越スキル一覧を見る"}
       ],
       sourceCharacters:[
         {name:"伊達政宗(6)", no:"1292", slot:"B"},
@@ -735,18 +741,29 @@
     },
     {
       name:"戦華雄渾", rank:"SS", baseRate:100, target:"全",
-      effectSummary:"SS/LV10 確率 100% 攻防140%上昇/対象:全\n①攻撃140%上昇する\n②防御140%上昇する\n③卓越:追加確率25%で攻防効果が4倍になる(TR別データは未確認)",
+      effectSummary:"SS/LV10 確率 100% 攻防140%上昇/対象:全\n①攻撃140%上昇する\n②防御140%上昇する\n③卓越:追加確率25%で攻防効果が4倍になる",
+      categoryLinks:[
+        {href:"skills-takuetsu.html", label:"卓越スキル一覧を見る"}
+      ],
       sourceCharacters:[
         {name:"毛利元就(4)", no:"1293", slot:"B"}
       ],
       ownHiddenCandidate: {skill:"戦華雄渾", rank:"SS"},
       trTable:[
-        {level:"LV10", points:"-", effect:"全　確率 100% / 攻防 各140%上昇(卓越追加確率25%・4倍)"}
+        {level:"LV10", points:"-", effect:"全　確率 100% / 攻防 各140%上昇(卓越追加確率25%・4倍)"},
+        {level:"TR1", points:"10", effect:"全　確率 100% / 攻防 各145%上昇(卓越追加確率25%・4倍)"},
+        {level:"TR2", points:"40", effect:"全　確率 100% / 攻防 各150%上昇(卓越追加確率25%・4倍)"},
+        {level:"TR3", points:"90", effect:"全　確率 100% / 攻防 各160%上昇(卓越追加確率25%・4倍)"},
+        {level:"TR4", points:"150", effect:"全　確率 100% / 攻防 各175%上昇(卓越追加確率25%・4倍)"},
+        {level:"TR5", points:"200", effect:"全　確率 100% / 攻防 各195%上昇(卓越追加確率25%・4倍)"}
       ]
     },
     {
       name:"月詠ノ覇威", rank:"SS", baseRate:100, target:"全", noMimic:true,
       effectSummary:"SS/LV10 確率 100% 攻撃344%上昇/対象:全\n①攻撃344%上昇する\n②防御344%上昇する(TR以降も344%で変化なし)\n③自軍全武将全スキルの卓越確率に加算する(自軍内重複上限2、模倣不可)",
+      categoryLinks:[
+        {href:"skills-takuetsu.html", label:"卓越スキル一覧を見る"}
+      ],
       sourceCharacters:[
         {name:"毛利元就(4)", no:"1293", slot:"S2"}
       ],
