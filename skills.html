@@ -110,7 +110,7 @@
   <div class="sim-version-badge" id="simVersionBadge">v-</div>
 
 <script>
-  const SKILL_DB_VERSION = 'v2026-07-29.11';
+  const SKILL_DB_VERSION = 'v2026-07-29.12';
   document.addEventListener('DOMContentLoaded', ()=>{
     const badge = document.getElementById('simVersionBadge');
     if(badge) badge.textContent = SKILL_DB_VERSION;
@@ -752,7 +752,12 @@
       ],
       ownHiddenCandidate: {skill:"義陣絶刀", rank:"S"},
       trTable:[
-        {level:"LV10", points:"-", effect:"全 飛翔17　確率 55% / 攻撃 840%上昇+防御840%上昇"}
+        {level:"LV10", points:"-", effect:"全 飛翔17　確率 55% / 攻撃 840%上昇+防御840%上昇"},
+        {level:"TR1", points:"10", effect:"全 飛翔17　確率 55% / 攻撃 920%上昇+防御920%上昇"},
+        {level:"TR2", points:"40", effect:"全 飛翔17　確率 55% / 攻撃 1040%上昇+防御1040%上昇"},
+        {level:"TR3", points:"90", effect:"全 飛翔17　確率 55% / 攻撃 1210%上昇+防御1210%上昇"},
+        {level:"TR4", points:"150", effect:"全 飛翔17　確率 55% / 攻撃 1440%上昇+防御1440%上昇"},
+        {level:"TR5", points:"200", effect:"全 飛翔17　確率 55% / 攻撃 1750%上昇+防御1750%上昇"}
       ]
     },
     {
@@ -763,7 +768,12 @@
       ],
       ownHiddenCandidate: {skill:"破国八陣", rank:"SS"},
       trTable:[
-        {level:"LV10", points:"-", effect:"全　確率 30% / 防御 1030%上昇(攻撃部隊の特殊効果付き初期スキル無効化)"}
+        {level:"LV10", points:"-", effect:"全　確率 30% / 防御 1030%上昇(攻撃部隊の特殊効果付き初期スキル無効化)"},
+        {level:"TR1", points:"10", effect:"全　確率 35% / 防御 1090%上昇(攻撃部隊の特殊効果付き初期スキル無効化)"},
+        {level:"TR2", points:"40", effect:"全　確率 40% / 防御 1210%上昇(攻撃部隊の特殊効果付き初期スキル無効化)"},
+        {level:"TR3", points:"90", effect:"全　確率 50% / 防御 1390%上昇(攻撃部隊の特殊効果付き初期スキル無効化)"},
+        {level:"TR4", points:"150", effect:"全　確率 70% / 防御 1630%上昇(攻撃部隊の特殊効果付き初期スキル無効化)"},
+        {level:"TR5", points:"200", effect:"全　確率 100% / 防御 1900%上昇(攻撃部隊の特殊効果付き初期スキル無効化)"}
       ]
     },
     {
