@@ -92,7 +92,7 @@
   <div class="sim-version-badge" id="simVersionBadge">v-</div>
 
 <script>
-  const TK_VERSION = 'v2026-07-29.2';
+  const TK_VERSION = 'v2026-07-29.3';
   document.addEventListener('DOMContentLoaded', ()=>{
     const badge = document.getElementById('simVersionBadge');
     if(badge) badge.textContent = TK_VERSION;
@@ -113,12 +113,6 @@
       lv10Effect:"攻撃 5.3%×防御参加武将数(280人)=1484.0%",
       sourceCharacters:[
         {name:"伊達政宗(6)", no:"1292", slot:"A"}
-      ]},
-    {name:"謀神ノ経略", skillPage:"characters.html#1293", baseRate:"100%", target:"全",
-      takuetsuEffect:"部隊内武将の全スキルの卓越発動率が50%上昇(模倣不可)",
-      lv10Effect:"攻防各520%上昇",
-      sourceCharacters:[
-        {name:"毛利元就(4)", no:"1293", slot:"移植不可"}
       ]},
     {name:"虚空ノ導", skillPage:"skills.html#虚空ノ導", baseRate:"70%", target:"自身",
       takuetsuEffect:"追加確率30%で通常攻撃/防御効果を1.3倍にして模倣",
@@ -153,6 +147,18 @@
       lv10Effect:"攻防各140%上昇",
       sourceCharacters:[
         {name:"毛利元就(4)", no:"1293", slot:"B"}
+      ]},
+    {name:"青葉ノ仁王", skillPage:"characters-kyoku.html#2336", baseRate:"100%", target:"槍・弓・砲",
+      takuetsuEffect:"攻撃戦闘時追加確率20%で自部隊の兵士被害が10%減少(部隊内重複上限2・模倣不可)",
+      lv10Effect:"攻撃110%上昇",
+      sourceCharacters:[
+        {name:"伊達成実", no:"2336", slot:"移植不可", db:"kyoku"}
+      ]},
+    {name:"龍門ノ賢者", skillPage:"characters-kyoku.html#2378", baseRate:"100%", target:"弓・器・焙",
+      takuetsuEffect:"追加確率10%で攻撃効果が3倍になる",
+      lv10Effect:"攻撃190%上昇",
+      sourceCharacters:[
+        {name:"遠藤基信", no:"2378", slot:"移植不可", db:"kyoku"}
       ]}
   ];
 
@@ -179,23 +185,11 @@
         {name:"最上義光(覇)", no:"1262", slot:"C"},
         {name:"佐竹義宣(3)", no:"1302", slot:"B"}
       ]},
-    {name:"青葉ノ仁王", skillPage:"characters-kyoku.html#2336", baseRate:"100%", target:"槍・弓・砲",
-      takuetsuEffect:"攻撃戦闘時追加確率20%で自部隊の兵士被害が10%減少(部隊内重複上限2・模倣不可)",
-      lv10Effect:"攻撃110%上昇",
-      sourceCharacters:[
-        {name:"伊達成実", no:"2336", slot:"移植不可", db:"kyoku"}
-      ]},
     {name:"勝旗勇躍", skillPage:"characters-kyoku.html#2374", baseRate:"100%", target:"槍・馬・器・騎",
       takuetsuEffect:"このスキルを所持する武将の全スキルの卓越確率に50%を加算(模倣不可)",
       lv10Effect:"攻撃440%上昇+防御440%上昇",
       sourceCharacters:[
         {name:"北条綱成", no:"2374", slot:"移植不可", db:"kyoku"}
-      ]},
-    {name:"龍門ノ賢者", skillPage:"characters-kyoku.html#2378", baseRate:"100%", target:"弓・器・焙",
-      takuetsuEffect:"追加確率10%で攻撃効果が3倍になる",
-      lv10Effect:"攻撃190%上昇",
-      sourceCharacters:[
-        {name:"遠藤基信", no:"2378", slot:"移植不可", db:"kyoku"}
       ]}
   ];
 

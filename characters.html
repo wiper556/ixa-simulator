@@ -154,7 +154,7 @@
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script src="assets/js/comments-widget.js"></script>
 <script>
-  const CHAR_DB_VERSION = 'v2026-07-29.32';
+  const CHAR_DB_VERSION = 'v2026-07-29.33';
   document.addEventListener('DOMContentLoaded', ()=>{
     const badge = document.getElementById('simVersionBadge');
     if(badge) badge.textContent = CHAR_DB_VERSION;
@@ -621,14 +621,15 @@
       atkBase:1250, atkGrowth:72, defBase:1110, defGrowth:52, tacticsBase:680.0, tacticsGrowth:3.5, lv0Troops:5290,
       rankGrades:{yari:'A', yumi:'S', uma:'A', ki:'S'},
       initialSkill:"雄武英略",
-      skillDetail:"S/LV10 確率 60% 攻撃550%上昇/対象:全\n①攻撃550%上昇する\n②不屈2を持つ(TR6で5に増加)\n③自部隊同時攻撃時、部隊総コストからこの武将分のコストを最大3まで除外する(模倣不可)\n④TR6(パラレル版)では確率100%に上昇する",
+      skillDetail:"S/LV10 確率 60% 攻撃550%上昇/対象:全\n①攻撃550%上昇する\n②自部隊同時攻撃時、部隊総コストからこの武将分のコストを最大3(TR6で6)まで除外する(模倣不可)",
       trTable:[
-        {level:"LV10", points:"-", effect:"全　確率 60% / 攻撃 550%上昇(不屈2)"},
-        {level:"TR1", points:"10", effect:"全　確率 60% / 攻撃 610%上昇"},
-        {level:"TR2", points:"40", effect:"全　確率 60% / 攻撃 750%上昇"},
-        {level:"TR3", points:"90", effect:"全　確率 60% / 攻撃 1020%上昇"},
-        {level:"TR4", points:"150", effect:"全　確率 60% / 攻撃 1380%上昇"},
-        {level:"TR5", points:"200", effect:"全　確率 60% / 攻撃 1790%上昇"}
+        {level:"LV10", points:"-", effect:"全　確率 60% / 攻撃 550%上昇(不屈2・コスト除外3)"},
+        {level:"TR1", points:"10", effect:"全　確率 60% / 攻撃 610%上昇(不屈2・コスト除外3.5)"},
+        {level:"TR2", points:"40", effect:"全　確率 60% / 攻撃 750%上昇(不屈2・コスト除外4)"},
+        {level:"TR3", points:"90", effect:"全　確率 60% / 攻撃 1020%上昇(不屈2・コスト除外4.5)"},
+        {level:"TR4", points:"150", effect:"全　確率 60% / 攻撃 1380%上昇(不屈2・コスト除外5)"},
+        {level:"TR5", points:"200", effect:"全　確率 60% / 攻撃 1790%上昇(不屈2・コスト除外5.5)"},
+        {level:"TR6", points:"パラレル", effect:"全　確率 100% / 攻撃 1980%上昇(不屈5・コスト除外6)"}
       ],
       // 45do.info生HTML照合済み(2026-07-29、skiladd_wrapの位置対応で確認)。ただし雄武英略のみ「SS」表記だったが、
       // ixanary.com+ユーザー確認済みの実際の階級(S、attack-simulator.htmlの雄武英略ノート参照)を優先採用。

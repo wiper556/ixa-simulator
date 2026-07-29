@@ -79,7 +79,7 @@
   <div class="sim-version-badge" id="simVersionBadge">v-</div>
 
 <script>
-  const HG_VERSION = 'v2026-07-29.1';
+  const HG_VERSION = 'v2026-07-29.2';
   document.addEventListener('DOMContentLoaded', ()=>{
     const badge = document.getElementById('simVersionBadge');
     if(badge) badge.textContent = HG_VERSION;
@@ -90,12 +90,18 @@
   ============================================ */
   const higaiSkills = [
     {name:"開闢ノ逆鉾", skillPage:"skills.html#開闢ノ逆鉾", baseRate:"100%", target:"全",
-      reduceEffect:"卓越:追加確率30%(LV10)〜80%(TR5)で自部隊の兵士被害15%(LV10)〜20%(TR5)減少(部隊内重複上限2・模倣不可)",
+      reduceEffect:"卓越:追加確率30%で自部隊の兵士被害15%減少(部隊内重複上限2・模倣不可)",
       lv10Effect:"攻撃254%上昇",
       sourceCharacters:[
         {name:"伊達政宗(6)", no:"1292", slot:"S2"},
         {name:"毛利元就(4)", no:"1293", slot:"A"},
         {name:"島津義弘(4)", no:"1294", slot:"S2"}
+      ]},
+    {name:"青葉ノ仁王", skillPage:"characters-kyoku.html#2336", baseRate:"100%", target:"槍・弓・砲",
+      reduceEffect:"攻撃戦闘時追加確率20%で自部隊の兵士被害が10%減少(部隊内重複上限2・模倣不可)",
+      lv10Effect:"攻撃110%上昇",
+      sourceCharacters:[
+        {name:"伊達成実", no:"2336", slot:"移植不可", db:"kyoku"}
       ]}
   ];
 
@@ -122,7 +128,8 @@
     }
     el.innerHTML = higaiSkills.map(function(s){
       const sources = (s.sourceCharacters || []).map(function(c){
-        return '<a href="characters.html#'+encodeURIComponent(c.no)+'">'+hgEscapeHtml(c.name)+'('+hgEscapeHtml(c.slot)+')</a>';
+        const dbPage = c.db === 'kyoku' ? 'characters-kyoku.html' : 'characters.html';
+        return '<a href="'+dbPage+'#'+encodeURIComponent(c.no)+'">'+hgEscapeHtml(c.name)+'('+hgEscapeHtml(c.slot)+')</a>';
       }).join('<br>') || '-';
       return '<tr><td><a href="'+s.skillPage+'">'+hgEscapeHtml(s.name)+'</a></td><td>'+hgEscapeHtml(s.baseRate||'-')+'</td><td>'+hgColorizeMujin(s.target||'-')+'</td>'
         + '<td class="hg-col-reduce">'+hgColorizeMujin(s.reduceEffect||'-')+'</td>'
