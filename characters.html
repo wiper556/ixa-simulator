@@ -139,7 +139,7 @@
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script src="assets/js/comments-widget.js"></script>
 <script>
-  const CHAR_DB_VERSION = 'v2026-07-29.26';
+  const CHAR_DB_VERSION = 'v2026-07-29.27';
   document.addEventListener('DOMContentLoaded', ()=>{
     const badge = document.getElementById('simVersionBadge');
     if(badge) badge.textContent = CHAR_DB_VERSION;
@@ -296,6 +296,9 @@
       rankGrades:{yari:'A', yumi:'A', uma:'A', ki:'SS'},
       initialSkill:"泰厳射手",
       skillDetail:"S/LV10 確率 60% 防御上昇/対象:砲・器\n①(係数×防御参加武将数)%を防御効果に加算する(係数はLV10=11.5)",
+      categoryLinks:[
+        {href:"skills-count-def.html", label:"人数依存(防)スキル一覧を見る"}
+      ],
       trTable:[
         {level:"LV10", points:"-", coefficient:"11.5", effect:"砲・器　確率 60% / 防御 11.5%×防御参加武将数(280人)=3220.0%"},
         {level:"TR1", points:"10", coefficient:"11.8", effect:"砲・器　確率 60% / 防御 11.8%×防御参加武将数(280人)=3304.0%"},
@@ -484,7 +487,7 @@
         {slot:"S1", skill:"梵天浄界", rank:"SSS", afterSkill:"梵天浄界", afterRank:"SSS", rate:"60%", target:"全", effectShort:"防御50%+破壊を係数×人数で上昇"},
         {slot:"S2", skill:"月煌侵蝕", rank:"SSS", afterSkill:"月煌侵蝕", afterRank:"SSS", rate:"45%", target:"全 兵站", effectShort:"防御を係数×人数で上昇(Bと同一・重複掲載)"}
       ]},
-    {name:"武田信玄(6)", no:"1290", ch:"30章", cost:5.0, troop:"赤備え", sub:"撤退", effect:"所属部隊内の赤備えの兵士攻防速が上昇", reviewedOk:true,
+    {name:"武田信玄(6)", no:"1290", ch:"30章", cost:5.0, troop:"赤備え", sub:"撤退", effect:"所属部隊内の赤備えの兵士攻防速が上昇", approved:true,
       furigana:"たけだしんげん", illustrator:"直良有祐",
       imageFull:"assets/img/characters/no1290_full.png", imageChar:"assets/img/characters/no1290_char.png",
       atkBase:1250, atkGrowth:71, defBase:1250, defGrowth:71, tacticsBase:680.0, tacticsGrowth:3.0, lv0Troops:5110,
@@ -512,7 +515,7 @@
         {slot:"S1", skill:"天地超克", rank:"SSS", afterSkill:"天地超克", afterRank:"SSS", rate:"46%", target:"全 不屈1", effectShort:"攻撃を係数×人数で上昇"},
         {slot:"S2", skill:"神羅聖域", rank:"SS", afterSkill:"神羅聖域", afterRank:"SS", rate:"40%", target:"全 覇道", effectShort:"攻撃900%上昇+防御900%上昇+破壊150%上昇"}
       ]},
-    {name:"上杉謙信(5)", no:"1291", ch:"30章", cost:4.0, troop:"全防", sub:"", effect:"防御側の兵士補正を小さくする",
+    {name:"上杉謙信(5)", no:"1291", ch:"30章", cost:4.0, troop:"全防", sub:"", effect:"防御側の兵士補正を小さくする", reviewedOk:true,
       furigana:"うえすぎけんしん", illustrator:"直良有祐",
       imageFull:"assets/img/characters/no1291_full.png", imageChar:"assets/img/characters/no1291_char.png",
       atkBase:1040, atkGrowth:41, defBase:1280, defGrowth:73, tacticsBase:690.0, tacticsGrowth:3.5, lv0Troops:4680,
