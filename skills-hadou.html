@@ -61,7 +61,7 @@
     <div class="hd-table-scroll">
       <table class="hd-table">
         <thead>
-          <tr><th>スキル名</th><th>発動率</th><th>対象兵科</th><th>覇道の効果</th><th>主効果(LV10時)</th><th>入手可能な武将</th></tr>
+          <tr><th>スキル名</th><th>発動率</th><th>対象兵科</th><th>主効果(LV10時)</th><th>入手可能な武将</th></tr>
         </thead>
         <tbody id="hdList"></tbody>
       </table>
@@ -79,7 +79,7 @@
   <div class="sim-version-badge" id="simVersionBadge">v-</div>
 
 <script>
-  const HD_VERSION = 'v2026-07-29.7';
+  const HD_VERSION = 'v2026-07-29.8';
   document.addEventListener('DOMContentLoaded', ()=>{
     const badge = document.getElementById('simVersionBadge');
     if(badge) badge.textContent = HD_VERSION;
@@ -89,44 +89,37 @@
      skills.htmlに詳細ページがあるスキルのうち、「覇道」(所属部隊の武将が持つスキルを無効化や発動率低下から保護)を持つものを比較用にまとめる。
   ============================================ */
   const hadouSkills = [
-    {name:"虎賁統帥", skillPage:"skills.html#虎賁統帥", baseRate:"100%", target:"全 撤退",
-      hadouEffect:"覇道(無効化・発動率低下から保護)",
-      lv10Effect:"攻撃1130%上昇+速度200%上昇",
+    {name:"虎賁統帥", skillPage:"skills.html#虎賁統帥", baseRate:"100%", target:"全",
+      lv10Effect:"攻撃1130%上昇+速度200%上昇+撤退(陣での防御戦闘に不参加)",
       sourceCharacters:[
         {name:"大谷吉継(3)【覇】", no:"1300", slot:"A"}
       ]},
     {name:"神羅聖域", skillPage:"skills.html#神羅聖域", baseRate:"40%", target:"全",
-      hadouEffect:"覇道(無効化・発動率低下から保護)",
       lv10Effect:"攻撃900%上昇+防御900%上昇+破壊150%上昇",
       sourceCharacters:[
         {name:"大谷吉継(3)【覇】", no:"1300", slot:"S2"}
       ]},
     {name:"覇道ノ泰斗", skillPage:"characters.html#1296", baseRate:"100%", target:"全",
-      hadouEffect:"覇道(無効化・発動率低下から保護)",
       lv10Effect:"攻撃500%上昇(追加・極限スキルの攻撃/破壊効果2倍)",
       sourceCharacters:[
         {name:"北条早雲(2)", no:"1296", slot:"移植不可"}
       ]},
     {name:"雄飛新世", skillPage:"characters.html#1286", baseRate:"37%", target:"砲・器",
-      hadouEffect:"覇道(無効化・発動率低下から保護)",
       lv10Effect:"部隊総攻撃力30%上昇",
       sourceCharacters:[
         {name:"織田信長【覇(8)】", no:"1286", slot:"移植不可"}
       ]},
     {name:"陽谷ノ人傑", skillPage:"characters.html#1287", baseRate:"40%", target:"弓・馬・砲・器",
-      hadouEffect:"覇道(無効化・発動率低下から保護)",
       lv10Effect:"防御 200%×覇武将数(部隊長時2倍)",
       sourceCharacters:[
         {name:"豊臣秀吉【覇(5)】", no:"1287", slot:"移植不可"}
       ]},
     {name:"虎将鉄牙", skillPage:"characters.html#1262", baseRate:"45%", target:"全",
-      hadouEffect:"覇道(無効化・発動率低下から保護)",
       lv10Effect:"最後列配置時、部隊総防御力+20%",
       sourceCharacters:[
         {name:"最上義光(覇)", no:"1262", slot:"移植不可"}
       ]},
     {name:"千里必勝ノ神算", skillPage:"skills.html#千里必勝ノ神算", baseRate:"42%", target:"全",
-      hadouEffect:"覇道(無効化・発動率低下から保護)",
       lv10Effect:"攻撃1010%上昇+防御1010%上昇+破壊150%上昇",
       sourceCharacters:[
         {name:"武田信玄(6)", no:"1290", slot:"C"}
@@ -150,7 +143,7 @@
   function hdRender(){
     const el = document.getElementById('hdList');
     if(hadouSkills.length === 0){
-      el.innerHTML = '<tr><td colspan="6" style="text-align:center;color:var(--muted);">該当するスキルが見つかりません</td></tr>';
+      el.innerHTML = '<tr><td colspan="5" style="text-align:center;color:var(--muted);">該当するスキルが見つかりません</td></tr>';
       return;
     }
     el.innerHTML = hadouSkills.map(function(s){
@@ -158,7 +151,6 @@
         return '<a href="characters.html#'+encodeURIComponent(c.no)+'">'+hdEscapeHtml(c.name)+'('+hdEscapeHtml(c.slot)+')</a>';
       }).join('、') || '-';
       return '<tr><td><a href="'+s.skillPage+'">'+hdEscapeHtml(s.name)+'</a></td><td>'+hdEscapeHtml(s.baseRate||'-')+'</td><td>'+hdColorizeMujin(s.target||'-')+'</td>'
-        + '<td class="hd-col-hadou">'+hdColorizeMujin(s.hadouEffect||'-')+'</td>'
         + '<td class="hd-col-effect">'+hdColorizeMujin(s.lv10Effect||'-')+'</td>'
         + '<td>'+sources+'</td></tr>';
     }).join('');

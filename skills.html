@@ -112,7 +112,7 @@
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script src="assets/js/comments-widget.js"></script>
 <script>
-  const SKILL_DB_VERSION = 'v2026-07-29.13';
+  const SKILL_DB_VERSION = 'v2026-07-29.15';
   document.addEventListener('DOMContentLoaded', ()=>{
     const badge = document.getElementById('simVersionBadge');
     if(badge) badge.textContent = SKILL_DB_VERSION;
@@ -131,7 +131,7 @@
       sourceCharacters:[
         {name:"豊臣秀長【覇】", no:"1298", slot:"C"},
         {name:"大谷吉継(3)【覇】", no:"1300", slot:"C"},
-        {name:"北条早雲", no:"1296", slot:"S2"}
+        {name:"北条早雲", no:"1296", slot:"S1"}
       ],
       // このスキルを習得済みのカードを合成素材にした時に出現する隠し候補スキル。
       // 武将ページ(characters.html)のsynthesisTableで、このスキルが該当する候補枠のafterSkill/afterRankと同じ値になる。
@@ -350,7 +350,7 @@
     },
     {
       name:"虎賁統帥", rank:"SS", baseRate:100, target:"全 撤退 覇道",
-      effectSummary:"SS/LV10 確率 100% 攻撃1130%上昇/対象:全　撤退　覇道\n①攻撃1130%上昇する\n②速度200%上昇する\n③撤退を持つため部隊は陣での防御戦闘に参加しない\n④覇道を持つため所属部隊の武将が持つスキルを無効化や発動率低下から保護する",
+      effectSummary:"SS/LV10 確率 100% 攻撃1130%上昇/対象:全　撤退　覇道\n①攻撃1130%上昇する\n②速度200%上昇する",
       categoryLinks:[
         {href:"skills-taitai.html", label:"撤退スキル一覧を見る"},
         {href:"skills-hadou.html", label:"覇道スキル一覧を見る"}
@@ -369,35 +369,37 @@
       ]
     },
     {
-      name:"天地超克", rank:"SSS", baseRate:46, target:"全",
-      effectSummary:"SSS/LV10 確率 46% 攻撃上昇/対象:全\n①(係数×防御参加武将数)%を攻撃効果に加算する(固定上昇分なし)\n②不屈1を持つ",
+      name:"天地超克", rank:"SSS", baseRate:46, target:"全 不屈1",
+      effectSummary:"SSS/LV10 確率 46% 攻撃上昇/対象:全　不屈1\n①(係数×防御参加武将数)%を攻撃効果に加算する(固定上昇分なし)",
       categoryLinks:[
         {href:"skills-count-atk.html", label:"人数依存(攻)スキル一覧を見る"},
         {href:"skills-fukutsu.html", label:"不屈スキル一覧を見る"}
       ],
       sourceCharacters:[
         {name:"大谷吉継(3)【覇】", no:"1300", slot:"B"},
-        {name:"北条早雲", no:"1296", slot:"C"}
+        {name:"北条早雲", no:"1296", slot:"C"},
+        {name:"武田信玄(6)", no:"1290", slot:"S1"}
       ],
       ownHiddenCandidate: {skill:"天地超克", rank:"SSS"},
       trTable:[
-        {level:"LV10", points:"-", coefficient:"9.6", effect:"全　確率 46% / 攻撃 9.6%×防御参加武将数(280人)=2688.0%"},
-        {level:"TR1", points:"10", coefficient:"10", effect:"全　確率 46% / 攻撃 10%×防御参加武将数(280人)=2800.0%"},
-        {level:"TR2", points:"40", coefficient:"10.5", effect:"全　確率 46% / 攻撃 10.5%×防御参加武将数(280人)=2940.0%"},
-        {level:"TR3", points:"90", coefficient:"11.2", effect:"全　確率 46% / 攻撃 11.2%×防御参加武将数(280人)=3136.0%"},
-        {level:"TR4", points:"150", coefficient:"12.2", effect:"全　確率 46% / 攻撃 12.2%×防御参加武将数(280人)=3416.0%"},
-        {level:"TR5", points:"200", coefficient:"13.5", effect:"全　確率 46% / 攻撃 13.5%×防御参加武将数(280人)=3780.0%"}
+        {level:"LV10", points:"-", coefficient:"9.6", effect:"全 不屈1　確率 46% / 攻撃 9.6%×防御参加武将数(280人)=2688.0%"},
+        {level:"TR1", points:"10", coefficient:"10", effect:"全 不屈1　確率 46% / 攻撃 10%×防御参加武将数(280人)=2800.0%"},
+        {level:"TR2", points:"40", coefficient:"10.5", effect:"全 不屈1　確率 46% / 攻撃 10.5%×防御参加武将数(280人)=2940.0%"},
+        {level:"TR3", points:"90", coefficient:"11.2", effect:"全 不屈1　確率 46% / 攻撃 11.2%×防御参加武将数(280人)=3136.0%"},
+        {level:"TR4", points:"150", coefficient:"12.2", effect:"全 不屈1　確率 46% / 攻撃 12.2%×防御参加武将数(280人)=3416.0%"},
+        {level:"TR5", points:"200", coefficient:"13.5", effect:"全 不屈1　確率 46% / 攻撃 13.5%×防御参加武将数(280人)=3780.0%"}
       ]
     },
     {
       name:"神羅聖域", rank:"SS", baseRate:40, target:"全 覇道",
-      effectSummary:"SS/LV10 確率 40% 攻撃900%上昇/対象:全　覇道\n①攻撃900%上昇する(防御も同値)\n②破壊150%上昇する\n③覇道を持つため所属部隊の武将のスキルを無効化や発動率低下から保護する",
+      effectSummary:"SS/LV10 確率 40% 攻撃900%上昇/対象:全　覇道\n①攻撃900%上昇する(防御も同値)\n②破壊150%上昇する",
       categoryLinks:[
         {href:"skills-hadou.html", label:"覇道スキル一覧を見る"}
       ],
       sourceCharacters:[
         {name:"大谷吉継(3)【覇】", no:"1300", slot:"S2"},
-        {name:"北条早雲", no:"1296", slot:"A"}
+        {name:"北条早雲", no:"1296", slot:"A・S2"},
+        {name:"武田信玄(6)", no:"1290", slot:"B・S2"}
       ],
       ownHiddenCandidate: {skill:"神羅聖域", rank:"SS"},
       trTable:[
@@ -411,13 +413,11 @@
     },
     {
       name:"覇道ノ泰斗", rank:"S", baseRate:100, target:"全 覇道",
-      effectSummary:"S/LV10 確率 100% 攻撃500%上昇/対象:全　覇道\n①攻撃500%上昇する\n②覇道を持つため所属部隊の武将のスキルを無効化や発動率低下から保護する\n③このスキルを持つ武将カードは、追加・極限スキルの攻撃・破壊効果が2倍となる(模倣不可)",
+      effectSummary:"S/LV10 確率 100% 攻撃500%上昇/対象:全　覇道\n模倣不可\n①攻撃500%上昇する\n②このスキルを持つ武将カードは、追加・極限スキルの攻撃・破壊効果が2倍となる",
       categoryLinks:[
         {href:"skills-hadou.html", label:"覇道スキル一覧を見る"}
       ],
-      sourceCharacters:[
-        {name:"北条早雲(2)", no:"1296", slot:"S1"}
-      ],
+      sourceCharacters:[],
       ownHiddenCandidate: {skill:"覇道ノ泰斗", rank:"S"},
       trTable:[
         {level:"LV10", points:"-", effect:"全 覇道　確率 100% / 攻撃 500%上昇(倍加率2倍)"},
@@ -425,7 +425,8 @@
         {level:"TR2", points:"40", effect:"全 覇道　確率 100% / 攻撃 600%上昇(倍加率2.2倍)"},
         {level:"TR3", points:"90", effect:"全 覇道　確率 100% / 攻撃 670%上昇(倍加率2.3倍)"},
         {level:"TR4", points:"150", effect:"全 覇道　確率 100% / 攻撃 750%上昇(倍加率2.4倍)"},
-        {level:"TR5", points:"200", effect:"全 覇道　確率 100% / 攻撃 840%上昇(倍加率2.5倍)"}
+        {level:"TR5", points:"200", effect:"全 覇道　確率 100% / 攻撃 840%上昇(倍加率2.5倍)"},
+        {level:"TR6", points:"パラレル", effect:"全 覇道　確率 100% / 攻撃 1000%上昇(倍加率2.6倍)"}
       ]
     },
     {
@@ -542,7 +543,7 @@
         {href:"skills-leadermimic.html", label:"部隊長模倣スキル一覧を見る"}
       ],
       sourceCharacters:[
-        {name:"武田信玄(6)", no:"1290", slot:"S2"}
+        {name:"武田信玄(6)", no:"1290", slot:"A"}
       ],
       ownHiddenCandidate: {skill:"刹那無影", rank:"SS"},
       trTable:[
@@ -572,7 +573,7 @@
     },
     {
       name:"虚実兵妙", rank:"SS", baseRate:100, target:"全",
-      effectSummary:"SS/LV10 確率 100% 防御740%上昇/対象:全\n①防御740%上昇する\n②防衛戦闘時、敵軍の卓越確率を-8%する(自軍内重複上限2、TR1〜TR5は未確認)",
+      effectSummary:"SS/LV10 確率 100% 防御740%上昇/対象:全\n①防御740%上昇する\n②防衛戦闘時、敵軍の卓越確率を-8%する(自軍内重複上限2)",
       sourceCharacters:[
         {name:"長宗我部元親(7)", no:"1289", slot:"A"},
         {name:"上杉謙信(5)", no:"1291", slot:"C"},
@@ -581,7 +582,12 @@
       ],
       ownHiddenCandidate: {skill:"虚実兵妙", rank:"SS"},
       trTable:[
-        {level:"LV10", points:"-", effect:"全　確率 100% / 防御 740%上昇(敵軍卓越確率-8%)"}
+        {level:"LV10", points:"-", effect:"全　確率 100% / 防御 740%上昇(敵軍卓越確率-8%)"},
+        {level:"TR1", points:"10", effect:"全　確率 100% / 防御 780%上昇(敵軍卓越確率-9%)"},
+        {level:"TR2", points:"40", effect:"全　確率 100% / 防御 840%上昇(敵軍卓越確率-11%)"},
+        {level:"TR3", points:"90", effect:"全　確率 100% / 防御 910%上昇(敵軍卓越確率-14%)"},
+        {level:"TR4", points:"150", effect:"全　確率 100% / 防御 990%上昇(敵軍卓越確率-17%)"},
+        {level:"TR5", points:"200", effect:"全　確率 100% / 防御 1080%上昇(敵軍卓越確率-20%)"}
       ]
     },
     {
