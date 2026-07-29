@@ -125,6 +125,12 @@
       tr5Effect:"未確認",
       sourceCharacters:[
         {name:"大友宗麟(6)", no:"1295", slot:"C"}
+      ]},
+    {name:"転歌", skillPage:"characters-kyoku.html#2358", baseRate:"80%", target:"部隊長",
+      lv10Effect:"戦闘スキルのみ模倣(1倍)",
+      tr5Effect:"鍛錬不可",
+      sourceCharacters:[
+        {name:"今川氏真", no:"2358", slot:"移植不可", db:"kyoku"}
       ]}
   ];
 
@@ -150,7 +156,8 @@
     }
     el.innerHTML = leaderMimicSkills.map(function(s){
       const sources = (s.sourceCharacters || []).map(function(c){
-        return '<a href="characters.html#'+encodeURIComponent(c.no)+'">'+lmEscapeHtml(c.name)+'('+lmEscapeHtml(c.slot)+')</a>';
+        const dbPage = c.db === 'kyoku' ? 'characters-kyoku.html' : 'characters.html';
+        return '<a href="'+dbPage+'#'+encodeURIComponent(c.no)+'">'+lmEscapeHtml(c.name)+'('+lmEscapeHtml(c.slot)+')</a>';
       }).join('、') || '-';
       return '<tr><td><a href="'+s.skillPage+'">'+lmEscapeHtml(s.name)+'</a></td><td>'+lmEscapeHtml(s.baseRate||'-')+'</td><td>'+lmColorizeMujin(s.target||'-')+'</td>'
         + '<td>'+lmEscapeHtml(s.lv10Effect||'-')+'</td>'
