@@ -307,6 +307,14 @@
         {level:"TR4", points:"150", coefficient:"13.3", effect:"砲・器　確率 60% / 防御 13.3%×防御参加武将数(280人)=3724.0%"},
         {level:"TR5", points:"200", coefficient:"14", effect:"砲・器　確率 60% / 防御 14%×防御参加武将数(280人)=3920.0%"},
         {level:"TR6", points:"パラレル", coefficient:"14.7", effect:"砲・器　確率 100% / 防御 14.7%×防御参加武将数(280人)=4116.0%"}
+      ],
+      // ixagno.blog.fc2.com生HTML照合済み(2026-07-29、45do.infoに本カードの記事が無いため代替ソースで確認。第一/第二/第三=A/B/C対応)。
+      synthesisTable:[
+        {slot:"A", skill:"八幡神ノ威光", rank:"SSS", afterSkill:"八幡神ノ威光", afterRank:"SSS", rate:"70%", target:"部隊長", effectShort:"部隊長の模倣可能な初期スキルを1.25倍模倣"},
+        {slot:"B", skill:"虚実兵妙", rank:"SS", afterSkill:"虚実兵妙", afterRank:"SS", rate:"100%", target:"全", effectShort:"防御740%上昇+敵軍卓越確率-8%"},
+        {slot:"C", skill:"月煌侵蝕", rank:"SSS", afterSkill:"月煌侵蝕", afterRank:"SSS", rate:"45%", target:"全 兵站", effectShort:"防御を係数×人数で上昇"},
+        {slot:"S1", skill:"泰厳射手", rank:"S", afterSkill:"泰厳射手", afterRank:"S", rate:"60%", target:"砲・器", effectShort:"防御を係数×人数で上昇"},
+        {slot:"S2", skill:"月煌侵蝕", rank:"SSS", afterSkill:"月煌侵蝕", afterRank:"SSS", rate:"45%", target:"全 兵站", effectShort:"防御を係数×人数で上昇"}
       ]},
     {name:"本多忠勝(2)", no:"1303", ch:"31章", cost:2.5, troop:"全攻", sub:"", effect:"8部隊以下の攻撃時、卓越確率+480%／部隊内武将の卓越確率+15%",
       furigana:"ほんだただかつ", illustrator:"直良有祐",
@@ -598,12 +606,13 @@
         {level:"TR4", points:"150", effect:"全　確率 60% / 攻撃 1380%上昇"},
         {level:"TR5", points:"200", effect:"全　確率 60% / 攻撃 1790%上昇"}
       ],
-      // 45do.info確認: スロット文字対応は出典元で明示されておらず暫定割り当て(要検証)。
+      // 45do.info生HTML照合済み(2026-07-29、skiladd_wrapの位置対応で確認)。ただし雄武英略のみ「SS」表記だったが、
+      // ixanary.com+ユーザー確認済みの実際の階級(S、attack-simulator.htmlの雄武英略ノート参照)を優先採用。
       synthesisTable:[
         {slot:"A", skill:"絶無灰尽", rank:"SS", afterSkill:"絶無灰尽", afterRank:"SS", rate:"100%", target:"全 無尽", effectShort:"攻撃1010%上昇(不屈1)"},
-        {slot:"B", skill:"千里必勝ノ神算", rank:"SS", afterSkill:"千里必勝ノ神算", afterRank:"SS", rate:"42%", target:"全 覇道", effectShort:"攻防各1010%上昇+破壊150%上昇"},
-        {slot:"C", skill:"焼尽神無", rank:"SS", afterSkill:"焼尽神無", afterRank:"SS", rate:"44%", target:"全 無尽", effectShort:"攻撃を係数×人数で上昇"},
-        {slot:"S1", skill:"雄武英略", rank:"S", afterSkill:"雄武英略", afterRank:"S", rate:"60%", target:"全", effectShort:"攻撃550%上昇(不屈2)"},
+        {slot:"B", skill:"雄武英略", rank:"S", afterSkill:"雄武英略", afterRank:"S", rate:"60%", target:"全", effectShort:"攻撃550%上昇(不屈2)"},
+        {slot:"C", skill:"千里必勝ノ神算", rank:"SS", afterSkill:"千里必勝ノ神算", afterRank:"SS", rate:"42%", target:"全 覇道", effectShort:"攻防各1010%上昇+破壊150%上昇"},
+        {slot:"S1", skill:"焼尽神無", rank:"SS", afterSkill:"焼尽神無", afterRank:"SS", rate:"44%", target:"全 無尽", effectShort:"攻撃を係数×人数で上昇"},
         {slot:"S2", skill:"開闢ノ逆鉾", rank:"SS", afterSkill:"開闢ノ逆鉾", afterRank:"SS", rate:"100%", target:"全", effectShort:"攻撃254%上昇(卓越で兵士被害減少)"}
       ]},
     {name:"大友宗麟(6)", no:"1295", ch:"30章", cost:5.0, troop:"全防", sub:"", effect:"本丸防御陣形時、3列目以降の部隊にも効果がかかる",
@@ -616,10 +625,10 @@
       trTable:[
         {level:"LV10", points:"-", effect:"全　確率 100% / 防御 420%上昇"}
       ],
-      // 45do.info確認: スロット文字対応は出典元で明示されておらず暫定割り当て(要検証)。
+      // 45do.info生HTML照合済み(2026-07-29、skiladd_wrapの位置対応で確認)。
       synthesisTable:[
         {slot:"A", skill:"仙境解脱", rank:"SS", afterSkill:"仙境解脱", afterRank:"SS", rate:"48%", target:"全", effectShort:"防御910%上昇+部隊消費コスト-1.5"},
-        {slot:"B", skill:"豊州ノ雅王", rank:"S", afterSkill:"豊州ノ雅王", afterRank:"S", rate:"100%", target:"全", effectShort:"防御420%上昇+3列目以降にも効果"},
+        {slot:"B", skill:"仙境解脱", rank:"SS", afterSkill:"仙境解脱", afterRank:"SS", rate:"48%", target:"全", effectShort:"防御910%上昇+部隊消費コスト-1.5"},
         {slot:"C", skill:"八幡神ノ威光", rank:"SSS", afterSkill:"八幡神ノ威光", afterRank:"SSS", rate:"70%", target:"部隊長", effectShort:"部隊長の初期スキルを1.25倍模倣"},
         {slot:"S1", skill:"千里必勝ノ神算", rank:"SS", afterSkill:"千里必勝ノ神算", afterRank:"SS", rate:"42%", target:"全 覇道", effectShort:"攻防各1010%上昇+破壊150%上昇"},
         {slot:"S2", skill:"虚実兵妙", rank:"SS", afterSkill:"虚実兵妙", afterRank:"SS", rate:"100%", target:"全", effectShort:"防御740%上昇+敵軍卓越確率-8%"}
@@ -653,21 +662,22 @@
       atkBase:1100, atkGrowth:48, defBase:1250, defGrowth:71, tacticsBase:670.0, tacticsGrowth:3.0, lv0Troops:5090,
       rankGrades:{yari:'.S', yumi:'A', uma:'A', ki:'A'},
       initialSkill:"国呑ノ蟒蛇",
-      skillDetail:"S/LV10 確率 42% 防御上昇/対象:槍・弓・器・鉄\n①(係数×防御参加武将数)%を防御効果に加算する(係数はLV10=5.4)\n②卓越:追加確率-20%(LV10)〜+20%(TR5)で防御効果1.5倍(計算エンジン未対応)",
+      skillDetail:"S/LV10 確率 42% 防御上昇/対象:槍・弓・器・鉄\n①(係数×防御参加武将数)%を防御効果に加算する(係数はLV10=5.4)\n②卓越:追加確率-20%(LV10)〜+50%(TR6)で防御効果1.5倍(計算エンジン未対応)",
       trTable:[
         {level:"LV10", points:"-", coefficient:"5.4", effect:"槍・弓・器・鉄　確率 42% / 防御 5.4%×防御参加武将数(280人)=1512.0%"},
         {level:"TR1", points:"10", coefficient:"5.5", effect:"槍・弓・器・鉄　確率 42% / 防御 5.5%×防御参加武将数(280人)=1540.0%"},
-        {level:"TR2", points:"40", coefficient:"5.7", effect:"槍・弓・器・鉄　確率 42% / 防御 5.7%×防御参加武将数(280人)=1596.0%"},
-        {level:"TR3", points:"90", coefficient:"6", effect:"槍・弓・器・鉄　確率 42% / 防御 6%×防御参加武将数(280人)=1680.0%"},
-        {level:"TR4", points:"150", effect:"槍・弓・器・鉄　確率 42% / 防御 未確認"},
-        {level:"TR5", points:"200", coefficient:"7.2", effect:"槍・弓・器・鉄　確率 70% / 防御 7.2%×防御参加武将数(280人)=2016.0%"}
+        {level:"TR2", points:"40", coefficient:"5.7", effect:"槍・弓・器・鉄　確率 47% / 防御 5.7%×防御参加武将数(280人)=1596.0%"},
+        {level:"TR3", points:"90", coefficient:"6", effect:"槍・弓・器・鉄　確率 52% / 防御 6%×防御参加武将数(280人)=1680.0%"},
+        {level:"TR4", points:"150", coefficient:"6.4", effect:"槍・弓・器・鉄　確率 57% / 防御 6.4%×防御参加武将数(280人)=1792.0%"},
+        {level:"TR5", points:"200", coefficient:"7.2", effect:"槍・弓・器・鉄　確率 70% / 防御 7.2%×防御参加武将数(280人)=2016.0%"},
+        {level:"TR6", points:"パラレル", coefficient:"7.7", effect:"槍・弓・器・鉄　確率 80% / 防御 7.7%×防御参加武将数(280人)=2156.0%"}
       ],
+      // 45do.info生HTML照合済み(2026-07-29、skiladd_wrapの位置対応で確認)。
       synthesisTable:[
-        // 45do.info確認: スロット文字対応は出典元で明示されておらず暫定割り当て(要検証)
-        {slot:"A", skill:"思金神ノ深謀", rank:"SS", afterSkill:"思金神ノ深謀", afterRank:"SS", rate:"60%", target:"部隊長", effectShort:"部隊長の模倣可能な初期スキルを模倣(卓越時1.3倍)"},
-        {slot:"B", skill:"虚空ノ導", rank:"SSS", afterSkill:"虚空ノ導", afterRank:"SSS", rate:"70%", target:"自身", effectShort:"自身の初期スキルを模倣(卓越時1.3倍)"},
-        {slot:"C", skill:"幻像鏡花", rank:"SSS", afterSkill:"幻像鏡花", afterRank:"SSS", rate:"56%", target:"部隊長", effectShort:"部隊長の模倣可能な初期スキルを模倣(卓越時1.35倍)"},
-        {slot:"S1", skill:"国呑ノ蟒蛇", rank:"S", afterSkill:"国呑ノ蟒蛇", afterRank:"S", rate:"42%", target:"槍・弓・器・鉄", effectShort:"防御を係数×人数で上昇(卓越時1.5倍)"},
+        {slot:"A", skill:"国呑ノ蟒蛇", rank:"S", afterSkill:"国呑ノ蟒蛇", afterRank:"S", rate:"42%", target:"槍・弓・器・鉄", effectShort:"防御を係数×人数で上昇(卓越時1.5倍)"},
+        {slot:"B", skill:"思金神ノ深謀", rank:"SS", afterSkill:"思金神ノ深謀", afterRank:"SS", rate:"60%", target:"部隊長", effectShort:"部隊長の模倣可能な初期スキルを模倣(卓越時1.3倍)"},
+        {slot:"C", skill:"虚空ノ導", rank:"SSS", afterSkill:"虚空ノ導", afterRank:"SSS", rate:"70%", target:"自身", effectShort:"自身の初期スキルを模倣(卓越時1.3倍)"},
+        {slot:"S1", skill:"幻像鏡花", rank:"SSS", afterSkill:"幻像鏡花", afterRank:"SSS", rate:"56%", target:"部隊長", effectShort:"部隊長の模倣可能な初期スキルを模倣(卓越時1.35倍)"},
         {slot:"S2", skill:"永世ノ天隻", rank:"SS", afterSkill:"永世ノ天隻", afterRank:"SS", rate:"48%", target:"全 飛翔9", effectShort:"防御を係数×人数で上昇+飛翔9"}
       ]},
     {name:"南光坊天海", no:"10063", ch:"30章", cost:5.0, troop:"全攻", sub:"", effect:"8部隊以下の攻撃戦闘時、卓越確率上昇"},
