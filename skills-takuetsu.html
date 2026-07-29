@@ -18,6 +18,7 @@
   .tk-table td.tk-col-effect{text-align:left;white-space:normal;min-width:220px;}
   .tk-table td.tk-col-takuetsu{text-align:left;white-space:normal;min-width:200px;}
   .tk-note{color:var(--muted);font-size:12px;line-height:1.7;margin:0 0 14px;}
+  .tk-subtitle{font-family:'Noto Serif JP',serif;font-size:16px;margin:0 0 8px;color:var(--vermillion-bright);border-bottom:1px dashed var(--line);padding-bottom:6px;}
 
   @media (max-width:600px){
     .tk-table{font-size:12px;}
@@ -58,12 +59,24 @@
     <h1 class="page-title">卓越スキル一覧</h1>
     <p class="tk-note">「卓越」は基礎発動確率とは別枠の追加抽選。卓越自身が発動効果を倍増させるタイプ、部隊内の卓越確率を上げる/下げるタイプの両方をまとめて掲載する。</p>
 
+    <h2 class="tk-subtitle">卓越発動効果(倍率アップ等)</h2>
     <div class="tk-table-scroll">
       <table class="tk-table">
         <thead>
           <tr><th>スキル名</th><th>発動率</th><th>対象兵科</th><th>卓越の効果</th><th>主効果(LV10時)</th><th>入手可能な武将</th></tr>
         </thead>
         <tbody id="tkList"></tbody>
+      </table>
+    </div>
+
+    <h2 class="tk-subtitle" style="margin-top:24px;">卓越確率上昇/低下</h2>
+    <p class="tk-note">卓越自身が効果を発揮するのではなく、部隊内の武将が持つ卓越の追加確率を上げる(または敵軍の卓越確率を下げる)スキル。</p>
+    <div class="tk-table-scroll">
+      <table class="tk-table">
+        <thead>
+          <tr><th>スキル名</th><th>発動率</th><th>対象兵科</th><th>卓越確率への効果</th><th>主効果(LV10時)</th><th>入手可能な武将</th></tr>
+        </thead>
+        <tbody id="tkRateList"></tbody>
       </table>
     </div>
     <div id="pageComments"></div>
@@ -79,7 +92,7 @@
   <div class="sim-version-badge" id="simVersionBadge">v-</div>
 
 <script>
-  const TK_VERSION = 'v2026-07-29.1';
+  const TK_VERSION = 'v2026-07-29.2';
   document.addEventListener('DOMContentLoaded', ()=>{
     const badge = document.getElementById('simVersionBadge');
     if(badge) badge.textContent = TK_VERSION;
@@ -140,6 +153,15 @@
       lv10Effect:"攻防各140%上昇",
       sourceCharacters:[
         {name:"毛利元就(4)", no:"1293", slot:"B"}
+      ]}
+  ];
+
+  const takuetsuRateSkills = [
+    {name:"謀神ノ経略", skillPage:"characters.html#1293", baseRate:"100%", target:"全",
+      takuetsuEffect:"部隊内武将の全スキルの卓越発動率が50%(LV10)〜140%(TR6)上昇(模倣不可)",
+      lv10Effect:"攻防各520%上昇",
+      sourceCharacters:[
+        {name:"毛利元就(4)", no:"1293", slot:"移植不可"}
       ]},
     {name:"月詠ノ覇威", skillPage:"skills.html#月詠ノ覇威", baseRate:"100%", target:"全",
       takuetsuEffect:"自軍全武将の全スキルの卓越確率に加算(自軍内重複上限2・模倣不可)",
@@ -174,13 +196,13 @@
       .replace(/\n/g, '<br>');
   }
 
-  function tkRender(){
-    const el = document.getElementById('tkList');
-    if(takuetsuSkills.length === 0){
+  function tkRenderList(list, elId){
+    const el = document.getElementById(elId);
+    if(list.length === 0){
       el.innerHTML = '<tr><td colspan="6" style="text-align:center;color:var(--muted);">該当するスキルが見つかりません</td></tr>';
       return;
     }
-    el.innerHTML = takuetsuSkills.map(function(s){
+    el.innerHTML = list.map(function(s){
       const sources = (s.sourceCharacters || []).map(function(c){
         return '<a href="characters.html#'+encodeURIComponent(c.no)+'">'+tkEscapeHtml(c.name)+'('+tkEscapeHtml(c.slot)+')</a>';
       }).join('<br>') || '-';
@@ -191,7 +213,8 @@
     }).join('');
   }
 
-  tkRender();
+  tkRenderList(takuetsuSkills, 'tkList');
+  tkRenderList(takuetsuRateSkills, 'tkRateList');
 </script>
   </div>
 </div>
