@@ -139,7 +139,7 @@
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script src="assets/js/comments-widget.js"></script>
 <script>
-  const CHAR_DB_VERSION = 'v2026-07-29.25';
+  const CHAR_DB_VERSION = 'v2026-07-29.26';
   document.addEventListener('DOMContentLoaded', ()=>{
     const badge = document.getElementById('simVersionBadge');
     if(badge) badge.textContent = CHAR_DB_VERSION;
@@ -491,6 +491,9 @@
       rankGrades:{yari:'A', yumi:'A', uma:'XX', ki:'A'},
       initialSkill:"虎王烈迅",
       skillDetail:"S/LV10 常時発動　撤退\n①所属部隊内の「赤備え」兵士の攻撃力+10、防御力+10、移動速度+1上昇する\n②TR3以降は攻撃参加時の自軍全部隊の帰還速度も倍化する(模倣不可・自部隊内重複不可)",
+      categoryLinks:[
+        {href:"skills-taitai.html", label:"撤退スキル一覧を見る"}
+      ],
       trTable:[
         {level:"LV10", points:"-", effect:"赤備え 撤退　常時 / 攻撃+10 防御+10 速度+1"},
         {level:"TR1", points:"10", effect:"赤備え 撤退　常時 / 攻撃+11 防御+11 速度+1"},
