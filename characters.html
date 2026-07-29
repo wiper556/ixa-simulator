@@ -139,7 +139,7 @@
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script src="assets/js/comments-widget.js"></script>
 <script>
-  const CHAR_DB_VERSION = 'v2026-07-29.27';
+  const CHAR_DB_VERSION = 'v2026-07-29.28';
   document.addEventListener('DOMContentLoaded', ()=>{
     const badge = document.getElementById('simVersionBadge');
     if(badge) badge.textContent = CHAR_DB_VERSION;
@@ -521,9 +521,15 @@
       atkBase:1040, atkGrowth:41, defBase:1280, defGrowth:73, tacticsBase:690.0, tacticsGrowth:3.5, lv0Troops:4680,
       rankGrades:{yari:'.S', yumi:'A', uma:'.S', ki:'A'},
       initialSkill:"轟渦ノ神将",
-      skillDetail:"S/LV10 確率 50% 防御500%上昇/対象:全\n①防御500%上昇する\n②防御側陣形時、防御側の兵士補正が0.8倍に小さくなる(特殊効果は累積するが有利不利は逆転しない)(模倣不可・自部隊内重複上限4、TR1〜TR5は未確認)",
+      skillDetail:"S/LV10 確率 50% 防御500%上昇/対象:全\n模倣不可\n①防御500%上昇する\n②防御側陣形時、防御側の兵士補正が0.8倍に小さくなる(特殊効果は累積するが有利不利は逆転しない、自部隊内重複上限4)",
       trTable:[
-        {level:"LV10", points:"-", effect:"全　確率 50% / 防御 500%上昇(兵士補正0.8倍)"}
+        {level:"LV10", points:"-", effect:"全　確率 50% / 防御 500%上昇(兵士補正0.8倍)"},
+        {level:"TR1", points:"10", effect:"全　確率 55% / 防御 560%上昇(兵士補正低下)"},
+        {level:"TR2", points:"40", effect:"全　確率 60% / 防御 690%上昇(兵士補正低下)"},
+        {level:"TR3", points:"90", effect:"全　確率 65% / 防御 900%上昇(兵士補正低下)"},
+        {level:"TR4", points:"150", effect:"全　確率 70% / 防御 1150%上昇(兵士補正低下)"},
+        {level:"TR5", points:"200", effect:"全　確率 80% / 防御 1460%上昇(兵士補正低下)"},
+        {level:"TR6", points:"パラレル", effect:"全　確率 100% / 防御 1650%上昇(兵士補正0.6倍)"}
       ],
       // 45do.info確認: スロット文字対応は出典元で明示されておらず暫定割り当て(要検証)。
       synthesisTable:[
