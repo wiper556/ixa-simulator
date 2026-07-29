@@ -60,6 +60,7 @@
       <h2>お問い合わせ</h2>
       <p>本ポリシーに関するご質問・ご指摘は、<a href="about.html">このサイトについて</a>ページの案内をご確認のうえご連絡ください。</p>
     </div>
+    <div id="pageComments"></div>
   </main>
 
   <footer class="site-footer">
@@ -72,6 +73,9 @@
   </div>
 </div>
 
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="assets/js/comments-widget.js"></script>
+<script>renderCommentsWidget('pageComments', 'page:privacy');</script>
 <script src="assets/js/site-sidebar.js"></script>
 </body>
 </html>

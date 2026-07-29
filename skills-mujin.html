@@ -65,7 +65,7 @@
         <tbody id="mjList"></tbody>
       </table>
     </div>
-
+    <div id="pageComments"></div>
   </main>
 
   <footer class="site-footer">
@@ -78,7 +78,7 @@
   <div class="sim-version-badge" id="simVersionBadge">v-</div>
 
 <script>
-  const MJ_VERSION = 'v2026-07-29.5';
+  const MJ_VERSION = 'v2026-07-29.6';
   document.addEventListener('DOMContentLoaded', ()=>{
     const badge = document.getElementById('simVersionBadge');
     if(badge) badge.textContent = MJ_VERSION;
@@ -181,6 +181,9 @@
   </div>
 </div>
 
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="assets/js/comments-widget.js"></script>
+<script>renderCommentsWidget('pageComments', 'page:skills-mujin');</script>
 <script src="assets/js/site-sidebar.js"></script>
 </body>
 </html>

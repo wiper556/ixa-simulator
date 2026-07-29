@@ -52,6 +52,7 @@
         <p>極ランクの武将のカード画像・ステータス・統率・スキル詳細を確認できます。</p>
       </a>
     </div>
+    <div id="pageComments"></div>
   </main>
 
   <footer class="site-footer">
@@ -64,6 +65,9 @@
   </div>
 </div>
 
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="assets/js/comments-widget.js"></script>
+<script>renderCommentsWidget('pageComments', 'page:characters-hub');</script>
 <script src="assets/js/site-sidebar.js"></script>
 </body>
 </html>

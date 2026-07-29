@@ -52,6 +52,7 @@
       </ul>
       <p>思いついた機能から少しずつ追加していく方針のため、順不同・時期未定でご了承ください。</p>
     </div>
+    <div id="pageComments"></div>
   </main>
 
   <footer class="site-footer">
@@ -64,6 +65,9 @@
   </div>
 </div>
 
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="assets/js/comments-widget.js"></script>
+<script>renderCommentsWidget('pageComments', 'page:about');</script>
 <script src="assets/js/site-sidebar.js"></script>
 </body>
 </html>

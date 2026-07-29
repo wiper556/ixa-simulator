@@ -206,6 +206,7 @@
       <h2>これまでの結果</h2>
       <div id="gachaHistory" class="gacha-history"></div>
     </div>
+    <div id="pageComments"></div>
   </main>
 
   <footer class="site-footer">
@@ -942,6 +943,9 @@
   </div>
 </div>
 
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="assets/js/comments-widget.js"></script>
+<script>renderCommentsWidget('pageComments', 'page:gacha-kuji-2026-07-06');</script>
 <script src="assets/js/site-sidebar.js"></script>
 </body>
 </html>

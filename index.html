@@ -61,6 +61,7 @@
         <span class="badge soon">準備中</span>
       </div>
     </div>
+    <div id="pageComments"></div>
   </main>
 
   <footer class="site-footer">
@@ -73,6 +74,9 @@
   </div>
 </div>
 
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="assets/js/comments-widget.js"></script>
+<script>renderCommentsWidget('pageComments', 'page:index');</script>
 <script src="assets/js/site-sidebar.js"></script>
 </body>
 </html>

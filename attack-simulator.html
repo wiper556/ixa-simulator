@@ -465,7 +465,7 @@
   // ルール(ユーザー指定): 「更新した年月日.その日の通算更新回数」とする。
   // 日付が変わったら通算更新回数は1にリセットする(例: 2026-07-20の1回目の更新はv2026-07-20.1)。
   // 同じ日の中で仕様変更・バグ修正を行うたびに末尾の回数を+1する。
-  const SIMULATOR_VERSION = 'v2026-07-29.2';
+  const SIMULATOR_VERSION = 'v2026-07-29.3';
   document.addEventListener('DOMContentLoaded', ()=>{
     const badge = document.getElementById('simVersionBadge');
     if(badge) badge.textContent = SIMULATOR_VERSION;
@@ -6688,5 +6688,9 @@
 
 </script>
 <div class="sim-version-badge" id="simVersionBadge">v-</div>
+<div id="pageComments" style="max-width:1080px;margin:0 auto;padding:0 16px;"></div>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="assets/js/comments-widget.js"></script>
+<script>renderCommentsWidget('pageComments', 'page:attack-simulator');</script>
 </body>
 </html>

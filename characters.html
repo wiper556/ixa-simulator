@@ -122,6 +122,7 @@
 
     <div id="detailView" style="display:none;">
       <div id="gdbDetailBody"></div>
+      <div id="gdbComments"></div>
     </div>
 
   </main>
@@ -136,7 +137,7 @@
   <div class="sim-version-badge" id="simVersionBadge">v-</div>
 
 <script>
-  const CHAR_DB_VERSION = 'v2026-07-29.17';
+  const CHAR_DB_VERSION = 'v2026-07-29.18';
   document.addEventListener('DOMContentLoaded', ()=>{
     const badge = document.getElementById('simVersionBadge');
     if(badge) badge.textContent = CHAR_DB_VERSION;
@@ -964,6 +965,7 @@
     listView.style.display = 'none';
     detailView.style.display = '';
     gdbRenderDetail(g);
+    if(window.renderCommentsWidget) renderCommentsWidget('gdbComments', 'char:'+g.no);
     window.scrollTo(0, 0);
   }
 
@@ -974,6 +976,8 @@
   </div>
 </div>
 
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="assets/js/comments-widget.js"></script>
 <script src="assets/js/site-sidebar.js"></script>
 </body>
 </html>

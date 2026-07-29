@@ -107,7 +107,7 @@
         <tbody id="scList"></tbody>
       </table>
     </div>
-
+    <div id="pageComments"></div>
   </main>
 
   <footer class="site-footer">
@@ -120,7 +120,7 @@
   <div class="sim-version-badge" id="simVersionBadge">v-</div>
 
 <script>
-  const SC_VERSION = 'v2026-07-29.1';
+  const SC_VERSION = 'v2026-07-29.2';
   document.addEventListener('DOMContentLoaded', ()=>{
     const badge = document.getElementById('simVersionBadge');
     if(badge) badge.textContent = SC_VERSION;
@@ -232,6 +232,9 @@
   </div>
 </div>
 
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="assets/js/comments-widget.js"></script>
+<script>renderCommentsWidget('pageComments', 'page:skills-count-atk');</script>
 <script src="assets/js/site-sidebar.js"></script>
 </body>
 </html>

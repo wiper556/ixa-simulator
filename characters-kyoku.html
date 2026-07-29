@@ -121,6 +121,7 @@
 
     <div id="detailView" style="display:none;">
       <div id="kkDetailBody"></div>
+      <div id="kkComments"></div>
     </div>
 
   </main>
@@ -135,7 +136,7 @@
   <div class="sim-version-badge" id="simVersionBadge">v-</div>
 
 <script>
-  const KYOKU_DB_VERSION = 'v2026-07-29.1';
+  const KYOKU_DB_VERSION = 'v2026-07-29.2';
   document.addEventListener('DOMContentLoaded', ()=>{
     const badge = document.getElementById('simVersionBadge');
     if(badge) badge.textContent = KYOKU_DB_VERSION;
@@ -352,6 +353,7 @@
     listView.style.display = 'none';
     detailView.style.display = '';
     kkRenderDetail(g);
+    if(window.renderCommentsWidget) renderCommentsWidget('kkComments', 'charkyoku:'+g.no);
     window.scrollTo(0, 0);
   }
 
@@ -362,6 +364,8 @@
   </div>
 </div>
 
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="assets/js/comments-widget.js"></script>
 <script src="assets/js/site-sidebar.js"></script>
 </body>
 </html>

@@ -96,6 +96,7 @@
 
     <div id="detailView" style="display:none;">
       <div id="sklDetailBody"></div>
+      <div id="sklComments"></div>
     </div>
   </main>
 
@@ -109,7 +110,7 @@
   <div class="sim-version-badge" id="simVersionBadge">v-</div>
 
 <script>
-  const SKILL_DB_VERSION = 'v2026-07-29.9';
+  const SKILL_DB_VERSION = 'v2026-07-29.10';
   document.addEventListener('DOMContentLoaded', ()=>{
     const badge = document.getElementById('simVersionBadge');
     if(badge) badge.textContent = SKILL_DB_VERSION;
@@ -843,6 +844,7 @@
     listView.style.display = 'none';
     detailView.style.display = '';
     sklRenderDetail(s);
+    if(window.renderCommentsWidget) renderCommentsWidget('sklComments', 'skill:'+s.name);
     window.scrollTo(0, 0);
   }
 
@@ -853,6 +855,8 @@
   </div>
 </div>
 
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="assets/js/comments-widget.js"></script>
 <script src="assets/js/site-sidebar.js"></script>
 </body>
 </html>
