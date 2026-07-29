@@ -86,7 +86,7 @@
   <div class="sim-version-badge" id="simVersionBadge">v-</div>
 
 <script>
-  const SC_VERSION = 'v2026-07-29.5';
+  const SC_VERSION = 'v2026-07-29.6';
   document.addEventListener('DOMContentLoaded', ()=>{
     const badge = document.getElementById('simVersionBadge');
     if(badge) badge.textContent = SC_VERSION;
@@ -97,7 +97,7 @@
      LV10係数が未確認のスキルはここには含めない(skills-count-atk.htmlの人数依存(攻)版と対になるページ)。
   ============================================ */
   const countDefSkills = [
-    {name:"従魔絶神", skillPage:"skills.html#従魔絶神", baseRate:"43%", target:"全 飛翔13",
+    {name:"従魔絶神", skillPage:"skills.html#従魔絶神", baseRate:"43%", target:"全", keywordNote:"飛翔13",
       fixedBonus: 0, lv10Coefficient: 9.4, trMaxCoefficient: 15, trMaxLabel: "TR5",
       sourceCharacters:[
         {name:"石田三成(7)【覇】", no:"1299", slot:"B"}
@@ -107,20 +107,22 @@
       sourceCharacters:[
         {name:"石田三成(7)【覇】", no:"1299", slot:"S1"}
       ]},
-    {name:"泰厳射手", skillPage:"characters.html#1302", baseRate:"60%", target:"砲・器",
+    {name:"泰厳射手", skillPage:"skills.html#泰厳射手", baseRate:"60%", target:"砲・器",
       fixedBonus: 0, lv10Coefficient: 11.5, trMaxCoefficient: 14.7, trMaxLabel: "TR6",
       sourceCharacters:[
-        {name:"佐竹義宣(3)", no:"1302", slot:"移植不可"}
+        {name:"佐竹義宣(3)", no:"1302", slot:"S1"}
       ]},
     {name:"不制于天地人", skillPage:"characters.html#1309", baseRate:"50%", target:"槍・弓・器・鉄",
       fixedBonus: 0, lv10Coefficient: 8.5, trMaxCoefficient: 10.2, trMaxLabel: "TR5",
       sourceCharacters:[
         {name:"津軽為信", no:"1309", slot:"移植不可"}
       ]},
-    {name:"月煌侵蝕", skillPage:"skills.html#月煌侵蝕", baseRate:"45%", target:"全 兵站",
+    {name:"月煌侵蝕", skillPage:"skills.html#月煌侵蝕", baseRate:"45%", target:"全", keywordNote:"兵站",
       fixedBonus: 0, lv10Coefficient: 7.6, trMaxCoefficient: 10, trMaxLabel: "TR5",
       sourceCharacters:[
-        {name:"長宗我部元親(7)", no:"1289", slot:"C"}
+        {name:"長宗我部元親(7)", no:"1289", slot:"C・S2"},
+        {name:"最上義光(覇)", no:"1262", slot:"S1"},
+        {name:"佐竹義宣(3)", no:"1302", slot:"C・S2"}
       ]}
   ];
 
@@ -155,16 +157,17 @@
     el.innerHTML = countDefSkills.map(function(s){
       const sources = (s.sourceCharacters || []).map(function(c){
         return '<a href="characters.html#'+encodeURIComponent(c.no)+'">'+scEscapeHtml(c.name)+'('+scEscapeHtml(c.slot)+')</a>';
-      }).join('、') || '-';
+      }).join('<br>') || '-';
       const lv10Value = scFormatNum(s.fixedBonus + count*s.lv10Coefficient);
       const trMaxValue = scFormatNum(s.fixedBonus + count*s.trMaxCoefficient);
       const fixedPrefix = s.fixedBonus ? (s.fixedBonus+'%+') : '';
-      const lv10Detail = fixedPrefix+s.lv10Coefficient+'%×防御参加武将数('+count+'人)='+lv10Value+'%';
-      const trMaxDetail = fixedPrefix+s.trMaxCoefficient+'%×防御参加武将数('+count+'人)='+trMaxValue+'%('+s.trMaxLabel+')';
+      const keywordSuffix = s.keywordNote ? '('+s.keywordNote+')' : '';
+      const lv10Detail = fixedPrefix+s.lv10Coefficient+'%×防御参加武将数('+count+'人)='+lv10Value+'%'+keywordSuffix;
+      const trMaxDetail = fixedPrefix+s.trMaxCoefficient+'%×防御参加武将数('+count+'人)='+trMaxValue+'%('+s.trMaxLabel+')'+keywordSuffix;
       return '<tr><td><a href="'+s.skillPage+'">'+scEscapeHtml(s.name)+'</a></td><td>'+scEscapeHtml(s.baseRate||'-')+'</td><td>'+scColorizeMujin(s.target||'-')+'</td>'
-        + '<td style="text-align:left;white-space:normal;min-width:220px;">'+scEscapeHtml(lv10Detail)+'</td>'
-        + '<td style="text-align:left;white-space:normal;min-width:220px;">'+scEscapeHtml(trMaxDetail)+'</td>'
-        + '<td>'+sources+'</td></tr>';
+        + '<td style="text-align:left;white-space:normal;min-width:220px;">'+scColorizeMujin(lv10Detail)+'</td>'
+        + '<td style="text-align:left;white-space:normal;min-width:220px;">'+scColorizeMujin(trMaxDetail)+'</td>'
+        + '<td style="white-space:normal;">'+sources+'</td></tr>';
     }).join('');
   }
 

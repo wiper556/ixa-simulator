@@ -78,7 +78,7 @@
   <div class="sim-version-badge" id="simVersionBadge">v-</div>
 
 <script>
-  const LM_VERSION = 'v2026-07-29.6';
+  const LM_VERSION = 'v2026-07-29.7';
   document.addEventListener('DOMContentLoaded', ()=>{
     const badge = document.getElementById('simVersionBadge');
     if(badge) badge.textContent = LM_VERSION;
@@ -88,9 +88,9 @@
      「所属部隊の部隊長が持つ模倣可能な初期スキルを模倣する」効果を持つものを比較用にまとめる。
   ============================================ */
   const leaderMimicSkills = [
-    {name:"封法大十字", skillPage:"characters.html#10062", baseRate:"40%", target:"部隊長 撤退",
-      lv10Effect:"1.24倍",
-      tr5Effect:"1.5倍",
+    {name:"封法大十字", skillPage:"characters.html#10062", baseRate:"40%", target:"部隊長",
+      lv10Effect:"1.24倍+撤退(陣での防御戦闘に不参加)",
+      tr5Effect:"1.5倍+撤退(陣での防御戦闘に不参加)",
       sourceCharacters:[
         {name:"百地三太夫", no:"10062", slot:"移植不可"}
       ]},

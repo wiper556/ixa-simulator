@@ -154,7 +154,7 @@
       ],
       sourceCharacters:[
         {name:"豊臣秀長【覇】", no:"1298", slot:"B"},
-        {name:"島津義弘(4)", no:"1294", slot:"C"}
+        {name:"島津義弘(4)", no:"1294", slot:"S1"}
       ],
       ownHiddenCandidate: {skill:"焼尽神無", rank:"SS"},
       trTable:[
@@ -523,7 +523,7 @@
       sourceCharacters:[
         {name:"武田信玄(6)", no:"1290", slot:"C"},
         {name:"毛利元就(4)", no:"1293", slot:"C"},
-        {name:"島津義弘(4)", no:"1294", slot:"B"},
+        {name:"島津義弘(4)", no:"1294", slot:"C"},
         {name:"大友宗麟(6)", no:"1295", slot:"S1"}
       ],
       ownHiddenCandidate: {skill:"千里必勝ノ神算", rank:"SS"},
@@ -548,6 +548,26 @@
       ownHiddenCandidate: {skill:"刹那無影", rank:"SS"},
       trTable:[
         {level:"LV10", points:"-", effect:"部隊長　確率 55% / 模倣倍率1.15倍+速度200%上昇"}
+      ]
+    },
+    {
+      name:"泰厳射手", rank:"S", baseRate:60, target:"砲・器",
+      effectSummary:"S/LV10 確率 60% 防御上昇/対象:砲・器\n①(係数×防御参加武将数)%を防御効果に加算する",
+      categoryLinks:[
+        {href:"skills-count-def.html", label:"人数依存(防)スキル一覧を見る"}
+      ],
+      sourceCharacters:[
+        {name:"佐竹義宣(3)", no:"1302", slot:"S1"}
+      ],
+      ownHiddenCandidate: {skill:"泰厳射手", rank:"S"},
+      trTable:[
+        {level:"LV10", points:"-", coefficient:"11.5", effect:"砲・器　確率 60% / 防御 11.5%×防御参加武将数(280人)=3220.0%"},
+        {level:"TR1", points:"10", coefficient:"11.8", effect:"砲・器　確率 60% / 防御 11.8%×防御参加武将数(280人)=3304.0%"},
+        {level:"TR2", points:"40", coefficient:"12.2", effect:"砲・器　確率 60% / 防御 12.2%×防御参加武将数(280人)=3416.0%"},
+        {level:"TR3", points:"90", coefficient:"12.7", effect:"砲・器　確率 60% / 防御 12.7%×防御参加武将数(280人)=3556.0%"},
+        {level:"TR4", points:"150", coefficient:"13.3", effect:"砲・器　確率 60% / 防御 13.3%×防御参加武将数(280人)=3724.0%"},
+        {level:"TR5", points:"200", coefficient:"14", effect:"砲・器　確率 60% / 防御 14%×防御参加武将数(280人)=3920.0%"},
+        {level:"TR6", points:"パラレル", coefficient:"14.7", effect:"砲・器　確率 100% / 防御 14.7%×防御参加武将数(280人)=4116.0%"}
       ]
     },
     {
@@ -579,7 +599,8 @@
         {name:"長宗我部元親(7)", no:"1289", slot:"A"},
         {name:"上杉謙信(5)", no:"1291", slot:"S2"},
         {name:"大友宗麟(6)", no:"1295", slot:"S2"},
-        {name:"最上義光(覇)", no:"1262", slot:"C"}
+        {name:"最上義光(覇)", no:"1262", slot:"C"},
+        {name:"佐竹義宣(3)", no:"1302", slot:"B"}
       ],
       ownHiddenCandidate: {skill:"虚実兵妙", rank:"SS"},
       trTable:[
@@ -596,16 +617,16 @@
       effectSummary:"SS/LV10 確率 48% 防御910%上昇/対象:全\n①防御910%上昇する\n②部隊消費コストを1.5低下する(模倣不可)",
       sourceCharacters:[
         {name:"上杉謙信(5)", no:"1291", slot:"A・B"},
-        {name:"大友宗麟(6)", no:"1295", slot:"A"}
+        {name:"大友宗麟(6)", no:"1295", slot:"A・B"}
       ],
       ownHiddenCandidate: {skill:"仙境解脱", rank:"SS"},
       trTable:[
         {level:"LV10", points:"-", effect:"全　確率 48% / 防御 910%上昇(コスト-1.5)"},
-        {level:"TR1", points:"10", effect:"全　確率 48% / 防御 980%上昇(コスト-1.5)"},
-        {level:"TR2", points:"40", effect:"全　確率 48% / 防御 1080%上昇(コスト-2)"},
-        {level:"TR3", points:"90", effect:"全　確率 48% / 防御 1260%上昇(コスト-2.5)"},
-        {level:"TR4", points:"150", effect:"全　確率 48% / 防御 1470%上昇(コスト-3)"},
-        {level:"TR5", points:"200", effect:"全　確率 48% / 防御 1710%上昇(コスト-5)"}
+        {level:"TR1", points:"10", effect:"全　確率 50% / 防御 980%上昇(コスト-1.5)"},
+        {level:"TR2", points:"40", effect:"全　確率 55% / 防御 1080%上昇(コスト-2)"},
+        {level:"TR3", points:"90", effect:"全　確率 60% / 防御 1260%上昇(コスト-2.5)"},
+        {level:"TR4", points:"150", effect:"全　確率 65% / 防御 1470%上昇(コスト-3)"},
+        {level:"TR5", points:"200", effect:"全　確率 70% / 防御 1710%上昇(コスト-5)"}
       ]
     },
     {
@@ -713,7 +734,8 @@
         {href:"skills-leadermimic.html", label:"部隊長模倣スキル一覧を見る"}
       ],
       sourceCharacters:[
-        {name:"大友宗麟(6)", no:"1295", slot:"C"}
+        {name:"大友宗麟(6)", no:"1295", slot:"C"},
+        {name:"佐竹義宣(3)", no:"1302", slot:"A"}
       ],
       ownHiddenCandidate: {skill:"八幡神ノ威光", rank:"SSS"},
       trTable:[
