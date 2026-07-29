@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7334304987274613"
+     crossorigin="anonymous"></script>
+<title>卓越スキル一覧｜戦国IXA シミュレーター置き場</title>
+<meta name="description" content="戦国IXA(Sengoku IXA)の卓越(たくえつ)関連スキル一覧。卓越による効果倍増・卓越確率の上昇/低下を持つスキルを比較できる非公式ファンメイドツール。">
+<link rel="stylesheet" href="assets/css/site.css">
+<style>
+  body{background:#ffffff;}
+  .tk-table-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;}
+  .tk-table{width:100%;border-collapse:collapse;font-size:13px;}
+  .tk-table th,.tk-table td{border:1px solid var(--line);padding:9px 12px;text-align:center;white-space:nowrap;}
+  .tk-table th{background:var(--bg-panel-2);color:var(--muted);font-weight:700;}
+  .tk-table td:first-child{text-align:left;font-family:'Noto Serif JP',serif;font-weight:700;}
+  .tk-table td.tk-col-effect{text-align:left;white-space:normal;min-width:220px;}
+  .tk-table td.tk-col-takuetsu{text-align:left;white-space:normal;min-width:200px;}
+  .tk-note{color:var(--muted);font-size:12px;line-height:1.7;margin:0 0 14px;}
+
+  @media (max-width:600px){
+    .tk-table{font-size:12px;}
+    .tk-table th,.tk-table td{padding:6px 8px;}
+  }
+
+  .sim-version-badge{
+    position:fixed; bottom:6px; right:8px; z-index:9999;
+    font-family:'JetBrains Mono',monospace; font-size:10px; color:#9a9382;
+    background:rgba(255,255,255,0.85); padding:2px 7px; border-radius:4px;
+    border:1px solid var(--line); pointer-events:none; user-select:text;
+  }
+</style>
+</head>
+<body>
+<div class="site-layout">
+  <aside class="site-sidebar" id="siteSidebar">
+    <div class="sidebar-header">
+      <span class="sidebar-title">メニュー</span>
+    </div>
+    <nav class="sidebar-nav">
+      <a href="index.html">シミュレーター一覧</a>
+      <a href="attack-simulator.html">攻撃/防御シミュレーター</a>
+      <a href="gacha-simulator.html">くじシミュレーター</a>
+      <a href="characters-hub.html">武将データベース</a>
+      <a href="skills-hub.html">スキル一覧</a>
+      <a href="about.html">このサイトについて</a>
+      <a href="privacy.html">プライバシーポリシー</a>
+    </nav>
+  </aside>
+
+  <div class="site-content">
+  <header class="site-header">
+    <a class="site-logo" href="index.html">戦国IXA シミュレーター置き場</a>
+  </header>
+
+  <main class="site-main">
+    <h1 class="page-title">卓越スキル一覧</h1>
+    <p class="tk-note">「卓越」は基礎発動確率とは別枠の追加抽選。卓越自身が発動効果を倍増させるタイプ、部隊内の卓越確率を上げる/下げるタイプの両方をまとめて掲載する。</p>
+
+    <div class="tk-table-scroll">
+      <table class="tk-table">
+        <thead>
+          <tr><th>スキル名</th><th>発動率</th><th>対象兵科</th><th>卓越の効果</th><th>主効果(LV10時)</th><th>入手可能な武将</th></tr>
+        </thead>
+        <tbody id="tkList"></tbody>
+      </table>
+    </div>
+    <div id="pageComments"></div>
+  </main>
+
+  <footer class="site-footer">
+    <p>本サイトは戦国IXA(Sengoku IXA)の非公式ファンメイドツールです。運営会社・関連団体とは一切関係ありません。<br>
+    記載されている会社名・製品名・システム名などは、各社の商標、または登録商標です。<br>
+    © SQUARE ENIX</p>
+    <p><a href="about.html">このサイトについて</a> ・ <a href="privacy.html">プライバシーポリシー</a></p>
+  </footer>
+
+  <div class="sim-version-badge" id="simVersionBadge">v-</div>
+
+<script>
+  const TK_VERSION = 'v2026-07-29.1';
+  document.addEventListener('DOMContentLoaded', ()=>{
+    const badge = document.getElementById('simVersionBadge');
+    if(badge) badge.textContent = TK_VERSION;
+  });
+
+  /* ============ 卓越スキル一覧 ============
+     skills.htmlまたはcharacters.htmlに詳細ページがあるスキルのうち、「卓越」を持つものを比較用にまとめる。
+  ============================================ */
+  const takuetsuSkills = [
+    {name:"国呑ノ蟒蛇", skillPage:"skills.html#国呑ノ蟒蛇", baseRate:"42%", target:"槍・弓・器・鉄",
+      takuetsuEffect:"追加確率-20%(LV10)〜+50%(TR6)で防御効果1.5倍",
+      lv10Effect:"防御 5.4%×防御参加武将数(280人)=1512.0%",
+      sourceCharacters:[
+        {name:"斎藤道三(3)", no:"1297", slot:"A"}
+      ]},
+    {name:"龍気剣鳴", skillPage:"characters.html#1292", baseRate:"40%", target:"槍・馬・器・騎",
+      takuetsuEffect:"追加確率-20%(LV10)〜+50%(TR6)で攻撃効果1.5倍",
+      lv10Effect:"攻撃 5.3%×防御参加武将数(280人)=1484.0%",
+      sourceCharacters:[
+        {name:"伊達政宗(6)", no:"1292", slot:"A"}
+      ]},
+    {name:"謀神ノ経略", skillPage:"characters.html#1293", baseRate:"100%", target:"全",
+      takuetsuEffect:"部隊内武将の全スキルの卓越発動率が50%上昇(模倣不可)",
+      lv10Effect:"攻防各520%上昇",
+      sourceCharacters:[
+        {name:"毛利元就(4)", no:"1293", slot:"S1"}
+      ]},
+    {name:"虚空ノ導", skillPage:"skills.html#虚空ノ導", baseRate:"70%", target:"自身",
+      takuetsuEffect:"追加確率30%で通常攻撃/防御効果を1.3倍にして模倣",
+      lv10Effect:"自身の持つ初期スキルを模倣",
+      sourceCharacters:[
+        {name:"斎藤道三(3)", no:"1297", slot:"C"}
+      ]},
+    {name:"幻像鏡花", skillPage:"skills.html#幻像鏡花", baseRate:"56%", target:"部隊長",
+      takuetsuEffect:"追加確率40%(LV10)〜60%(TR5)で通常攻撃/防御効果を1.35倍(LV10)〜1.5倍(TR5)にして模倣",
+      lv10Effect:"部隊長の持つ模倣可能な初期スキルを模倣",
+      sourceCharacters:[
+        {name:"伊達政宗(6)", no:"1292", slot:"C・S1"},
+        {name:"斎藤道三(3)", no:"1297", slot:"S1"}
+      ]},
+    {name:"開闢ノ逆鉾", skillPage:"skills.html#開闢ノ逆鉾", baseRate:"100%", target:"全",
+      takuetsuEffect:"追加確率30%で自部隊の兵士被害が15%減少(部隊内重複上限2・模倣不可)",
+      lv10Effect:"攻撃254%上昇",
+      sourceCharacters:[
+        {name:"伊達政宗(6)", no:"1292", slot:"S2"},
+        {name:"毛利元就(4)", no:"1293", slot:"A"},
+        {name:"島津義弘(4)", no:"1294", slot:"S2"}
+      ]},
+    {name:"思金神ノ深謀", skillPage:"skills.html#思金神ノ深謀", baseRate:"60%", target:"部隊長",
+      takuetsuEffect:"追加確率35%で通常攻撃/防御効果を1.3倍にして模倣",
+      lv10Effect:"部隊長の持つ模倣可能な初期スキルを模倣",
+      sourceCharacters:[
+        {name:"伊達政宗(6)", no:"1292", slot:"B"},
+        {name:"斎藤道三(3)", no:"1297", slot:"B"}
+      ]},
+    {name:"戦華雄渾", skillPage:"skills.html#戦華雄渾", baseRate:"100%", target:"全",
+      takuetsuEffect:"追加確率25%で攻防効果が4倍(TR別データは未確認)",
+      lv10Effect:"攻防各140%上昇",
+      sourceCharacters:[
+        {name:"毛利元就(4)", no:"1293", slot:"B"}
+      ]},
+    {name:"月詠ノ覇威", skillPage:"skills.html#月詠ノ覇威", baseRate:"100%", target:"全",
+      takuetsuEffect:"自軍全武将の全スキルの卓越確率に加算(自軍内重複上限2・模倣不可)",
+      lv10Effect:"攻撃344%上昇+防御344%上昇",
+      sourceCharacters:[
+        {name:"毛利元就(4)", no:"1293", slot:"S2"}
+      ]},
+    {name:"虚実兵妙", skillPage:"skills.html#虚実兵妙", baseRate:"100%", target:"全",
+      takuetsuEffect:"防衛戦闘時、敵軍の卓越確率を-8%する(自軍内重複上限2)",
+      lv10Effect:"防御740%上昇",
+      sourceCharacters:[
+        {name:"長宗我部元親(7)", no:"1289", slot:"A"},
+        {name:"上杉謙信(5)", no:"1291", slot:"S2"},
+        {name:"大友宗麟(6)", no:"1295", slot:"S2"},
+        {name:"最上義光(覇)", no:"1262", slot:"C"},
+        {name:"佐竹義宣(3)", no:"1302", slot:"B"}
+      ]}
+  ];
+
+  function tkEscapeHtml(s){
+    return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  }
+
+  function tkColorizeMujin(s){
+    return tkEscapeHtml(s).replace(/無尽\d*\.?\d*/g, function(m){ return '<span style="color:#00acc1;font-weight:700;">'+m+'</span>'; })
+      .replace(/撤退\d*\.?\d*/g, function(m){ return '<span style="color:#1565c0;font-weight:700;">'+m+'</span>'; })
+      .replace(/飛翔\d*\.?\d*/g, function(m){ return '<span style="color:#f8b500;font-weight:700;">'+m+'</span>'; })
+      .replace(/覇道\d*\.?\d*/g, function(m){ return '<span style="color:#d15050;font-weight:700;">'+m+'</span>'; })
+      .replace(/不屈\d*\.?\d*/g, function(m){ return '<span style="color:#8ED973;font-weight:700;">'+m+'</span>'; })
+      .replace(/兵站/g, function(m){ return '<span style="color:#8e24aa;font-weight:700;">'+m+'</span>'; })
+      .replace(/卓越/g, function(m){ return '<span style="color:#7CB342;font-weight:700;">'+m+'</span>'; })
+      .replace(/\n/g, '<br>');
+  }
+
+  function tkRender(){
+    const el = document.getElementById('tkList');
+    if(takuetsuSkills.length === 0){
+      el.innerHTML = '<tr><td colspan="6" style="text-align:center;color:var(--muted);">該当するスキルが見つかりません</td></tr>';
+      return;
+    }
+    el.innerHTML = takuetsuSkills.map(function(s){
+      const sources = (s.sourceCharacters || []).map(function(c){
+        return '<a href="characters.html#'+encodeURIComponent(c.no)+'">'+tkEscapeHtml(c.name)+'('+tkEscapeHtml(c.slot)+')</a>';
+      }).join('<br>') || '-';
+      return '<tr><td><a href="'+s.skillPage+'">'+tkEscapeHtml(s.name)+'</a></td><td>'+tkEscapeHtml(s.baseRate||'-')+'</td><td>'+tkColorizeMujin(s.target||'-')+'</td>'
+        + '<td class="tk-col-takuetsu">'+tkColorizeMujin(s.takuetsuEffect||'-')+'</td>'
+        + '<td class="tk-col-effect">'+tkColorizeMujin(s.lv10Effect||'-')+'</td>'
+        + '<td style="white-space:normal;">'+sources+'</td></tr>';
+    }).join('');
+  }
+
+  tkRender();
+</script>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="assets/js/comments-widget.js"></script>
+<script>renderCommentsWidget('pageComments', 'page:skills-takuetsu');</script>
+<script src="assets/js/site-sidebar.js"></script>
+</body>
+</html>
