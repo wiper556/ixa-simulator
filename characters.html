@@ -497,24 +497,46 @@
         {level:"TR4", points:"150", effect:"砲・器 覇道　確率 37% / 総攻撃 37%上昇"},
         {level:"TR5", points:"200", effect:"砲・器 覇道　確率 37% / 総攻撃 40%上昇"}
       ]},
-    {name:"豊臣秀吉【覇(5)】", no:"1287", ch:"30章", cost:5.0, troop:"弓馬砲器防", sub:"覇道", effect:"部隊内覇武将数×200%上昇／部隊長時は効果2倍",
+    {name:"豊臣秀吉【覇(5)】", no:"1287", ch:"30章", cost:5.0, troop:"弓馬砲器防", sub:"覇道", effect:"部隊内覇武将数×200%上昇／部隊長時は効果2倍", reviewedOk:true,
       furigana:"とよとみひでよし", illustrator:"直良有祐",
       imageFull:"assets/img/characters/no1287_full.png", imageChar:"assets/img/characters/no1287_char.png",
       atkBase:1210, atkGrowth:66, defBase:1330, defGrowth:83, tacticsBase:870.0, tacticsGrowth:4.5, lv0Troops:5000,
       // カード画像照合済み(2026-07-30): 槍A/弓S/馬X/器A
       rankGrades:{yari:'A', yumi:'S', uma:'X', ki:'A'},
-      initialSkill:"陽谷ノ人傑",
-      skillDetail:"S/LV10 確率 40% 防御上昇/対象:弓・馬・砲・器　覇道\n①部隊内覇武将数×200%を防御効果に加算する\n②部隊長時、上記の防御効果を2倍にする(部隊長時効果のみ、小隊長での模倣時無効)\n③覇道を持つため所属部隊の武将のスキルを無効化や発動率低下から保護する(TR1〜TR5は未確認)",
+      initialSkill:"暘谷ノ人傑",
+      skillDetail:"SSS/LV10 確率 40% 防御上昇/対象:弓・馬・砲・器　覇道\n①部隊内覇武将数×200%を防御効果に加算する\n②部隊長時、上記の防御効果を2倍にする(部隊長時効果のみ、小隊長での模倣時無効)\n③覇道を持つため所属部隊の武将のスキルを無効化や発動率低下から保護する",
+      categoryLinks:[
+        {href:"skills-hadou.html", label:"覇道スキル一覧を見る"}
+      ],
       trTable:[
-        {level:"LV10", points:"-", effect:"弓・馬・砲・器 覇道　確率 40% / 防御 200%×覇武将数(部隊長時2倍)"}
+        {level:"LV10", points:"-", effect:"弓・馬・砲・器 覇道　確率 40% / 防御 200%×覇武将数(部隊長時2倍)"},
+        {level:"TR1", points:"10", effect:"弓・馬・砲・器 覇道　確率 40% / 防御 220%×覇武将数(部隊長時2倍)"},
+        {level:"TR2", points:"40", effect:"弓・馬・砲・器 覇道　確率 40% / 防御 250%×覇武将数(部隊長時2倍)"},
+        {level:"TR3", points:"90", effect:"弓・馬・砲・器 覇道　確率 40% / 防御 300%×覇武将数(部隊長時2倍)"},
+        {level:"TR4", points:"150", effect:"弓・馬・砲・器 覇道　確率 40% / 防御 360%×覇武将数(部隊長時2倍)"},
+        {level:"TR5", points:"200", effect:"弓・馬・砲・器 覇道　確率 40% / 防御 450%×覇武将数(部隊長時2倍)"},
+        {level:"TR6", points:"パラレル", effect:"弓・馬・砲・器 覇道　確率 40% / 防御 540%×覇武将数(部隊長時2倍)"}
+      ],
+      // 45do.info確認(生HTML照合済み、2026-07-31): skiladd_wrapの見出し(候補A/B/C/S1/S2)と直後のスキル名が位置対応しており明示的。
+      synthesisTable:[
+        {slot:"A", skill:"月煌侵蝕", rank:"SSS", afterSkill:"月煌侵蝕", afterRank:"SSS", rate:"45%", target:"全 兵站", effectShort:"防御を係数×人数で上昇"},
+        {slot:"B", skill:"従魔絶神", rank:"SSS", afterSkill:"従魔絶神", afterRank:"SSS", rate:"43%", target:"全 飛翔13", effectShort:"防御を係数×人数で上昇"},
+        {slot:"C", skill:"破国八陣", rank:"SS", afterSkill:"破国八陣", afterRank:"SS", rate:"30%", target:"全", effectShort:"防御1030%上昇+特殊効果付き初期スキル無効化"},
+        {slot:"S1", skill:"梵天浄界", rank:"SSS", afterSkill:"梵天浄界", afterRank:"SSS", rate:"60%", target:"全", effectShort:"防御50%上昇+破壊を係数×人数で上昇"},
+        {slot:"S2", skill:"天宇受売命", rank:"SSS", afterSkill:"天宇受売命", afterRank:"SSS", rate:"70%", target:"自身", effectShort:"自身の初期スキルを模倣(1.25倍)"}
       ]},
-    {name:"徳川家康【覇(6)】", no:"1288", ch:"30章", cost:5.5, troop:"弓砲器攻防", sub:"覇道", effect:"卓越発動率100%超過分を加算",
+    {name:"徳川家康【覇(6)】", no:"1288", ch:"30章", cost:5.5, troop:"弓砲器攻防", sub:"覇道", effect:"卓越発動率100%超過分を加算", reviewedOk:true,
       furigana:"とくがわいえやす", illustrator:"直良有祐",
       imageFull:"assets/img/characters/no1288_full.png", imageChar:"assets/img/characters/no1288_char.png",
       atkBase:1280, atkGrowth:81, defBase:1280, defGrowth:81, tacticsBase:850.0, tacticsGrowth:4.0, lv0Troops:5220,
+      // カード画像照合済み(2026-07-30): 槍A/弓X/馬A/器S(ixanaryの構造化データはyumi/kibaフィールドが実際のバッジ配置と逆に格納されている、画像の目視結果を優先)
       rankGrades:{yari:'A', yumi:'X', uma:'A', ki:'.S'},
       initialSkill:"伏雷蒼樹",
       skillDetail:"SSS/LV10 確率 卓越追加確率50%で発動(通常確率では発動しない) 攻防200%上昇/対象:弓・砲・器\n①卓越の追加発動確率50%で発動する(覇道)\n②攻防各200%上昇する\n③卓越追加確率のうち100%を超えた分を超過分×5.5%として攻防効果に加算する(二重卓越不可)",
+      categoryLinks:[
+        {href:"skills-hadou.html", label:"覇道スキル一覧を見る"},
+        {href:"skills-takuetsu.html", label:"卓越スキル一覧を見る"}
+      ],
       trTable:[
         {level:"LV10", points:"-", effect:"卓越追加確率50%で発動 / 攻防200%上昇 / 超過分×5.5%"},
         {level:"TR1", points:"10", effect:"卓越追加確率60%で発動 / 攻防200%上昇 / 超過分×5.6%"},
@@ -688,16 +710,22 @@
         {slot:"S1", skill:"焼尽神無", rank:"SS", afterSkill:"焼尽神無", afterRank:"SS", rate:"44%", target:"全 無尽", effectShort:"攻撃を係数×人数で上昇"},
         {slot:"S2", skill:"開闢ノ逆鉾", rank:"SS", afterSkill:"開闢ノ逆鉾", afterRank:"SS", rate:"100%", target:"全", effectShort:"攻撃254%上昇(卓越で兵士被害減少)"}
       ]},
-    {name:"大友宗麟(6)", no:"1295", ch:"30章", cost:5.0, troop:"全防", sub:"", effect:"本丸防御陣形時、2列目以降の部隊にも効果がかかる",
+    {name:"大友宗麟(6)", no:"1295", ch:"30章", cost:5.0, troop:"全防", sub:"", effect:"本丸防御陣形時、2列目以降の部隊にも効果がかかる", reviewedOk:true,
       furigana:"おおともそうりん", illustrator:"直良有祐",
       imageFull:"assets/img/characters/no1295_full.png", imageChar:"assets/img/characters/no1295_char.png",
       atkBase:1060, atkGrowth:43, defBase:1270, defGrowth:72, tacticsBase:660.0, tacticsGrowth:3.0, lv0Troops:5100,
       // カード画像照合済み(2026-07-30): 槍S/弓S/馬A/器A(旧データはyumiの値が誤っていたため修正)
       rankGrades:{yari:'S', yumi:'S', uma:'A', ki:'A'},
       initialSkill:"豊州ノ雅王",
-      skillDetail:"S/LV10 確率 100% 防御420%上昇/対象:全\n①防御420%上昇する\n②本丸防御陣形の第2列目以降の部隊にもこのスキルの効果が及ぶ(自身の所属部隊には重複しない・模倣不可、TR1〜TR5は未確認)",
+      skillDetail:"S/LV10 確率 100% 防御420%上昇/対象:全\n①防御420%上昇する\n②本丸防御陣形の第2列目以降の部隊にもこのスキルの効果が及ぶ(自身の所属部隊には重複しない・模倣不可)",
       trTable:[
-        {level:"LV10", points:"-", effect:"全　確率 100% / 防御 420%上昇"}
+        {level:"LV10", points:"-", effect:"全　確率 100% / 防御 420%上昇"},
+        {level:"TR1", points:"10", effect:"全　確率 100% / 防御 440%上昇"},
+        {level:"TR2", points:"40", effect:"全　確率 100% / 防御 470%上昇"},
+        {level:"TR3", points:"90", effect:"全　確率 100% / 防御 520%上昇"},
+        {level:"TR4", points:"150", effect:"全　確率 100% / 防御 580%上昇"},
+        {level:"TR5", points:"200", effect:"全　確率 100% / 防御 650%上昇"},
+        {level:"TR6", points:"パラレル", effect:"全　確率 100% / 防御 730%上昇"}
       ],
       // 45do.info生HTML照合済み(2026-07-29、skiladd_wrapの位置対応で確認)。
       synthesisTable:[
@@ -759,7 +787,7 @@
         {slot:"S2", skill:"永世ノ天隻", rank:"SS", afterSkill:"永世ノ天隻", afterRank:"SS", rate:"48%", target:"全 飛翔9", effectShort:"防御を係数×人数で上昇+飛翔9"}
       ]},
     {name:"南光坊天海", no:"10063", ch:"30章", cost:5.0, troop:"全攻", sub:"", effect:"8部隊以下の攻撃戦闘時、卓越確率上昇"},
-    {name:"百地三太夫", no:"10062", ch:"29章", cost:5.5, troop:"-", sub:"撤退", effect:"部隊長の初期スキルを模倣して強化発動",
+    {name:"百地三太夫", no:"10062", ch:"29章", cost:5.5, troop:"-", sub:"撤退", effect:"部隊長の初期スキルを模倣して強化発動", reviewedOk:true,
       furigana:"ももちさんだゆう", illustrator:"直良有祐",
       imageFull:"assets/img/characters/no10062_full.png", imageChar:"assets/img/characters/no10062_char.png",
       atkBase:1210, atkGrowth:70, defBase:1210, defGrowth:70, tacticsBase:710.0, tacticsGrowth:4.0, lv0Troops:5250,
@@ -802,7 +830,7 @@
         {slot:"S1", skill:"轟渦ノ神将", rank:"S", afterSkill:"轟渦ノ神将", afterRank:"S", rate:"50%", target:"全", effectShort:"防御500%上昇+兵士補正0.8倍"},
         {slot:"S2", skill:"王花尖剣", rank:"S", afterSkill:"王花尖剣", afterRank:"S", rate:"64%", target:"槍・馬・砲・器 飛翔10", effectShort:"防御320%上昇+飛翔値合計×10%加算"}
       ]},
-    {name:"細川幽斎(復刻)【天】", no:"10070", ch:"30章", cost:4.5, troop:"-", sub:"", effect:"部隊長の初期スキルを模倣して保護・強化",
+    {name:"細川幽斎(復刻)【天】", no:"10070", ch:"30章", cost:4.5, troop:"-", sub:"", effect:"部隊長の初期スキルを模倣して保護・強化", reviewedOk:true,
       furigana:"ほそかわゆうさい", illustrator:"直良有祐",
       imageFull:"assets/img/characters/no10070_full.png", imageChar:"assets/img/characters/no10070_char.png",
       atkBase:1200, atkGrowth:69, defBase:1250, defGrowth:71, tacticsBase:700.0, tacticsGrowth:3.5, lv0Troops:4900,
@@ -811,15 +839,17 @@
       initialSkill:"古今虚実ノ法",
       skillDetail:"S/LV10 確率 40% 対象:部隊長\n①所属部隊の武将が持つスキルを無効化・発動率低下から保護する\n②部隊長の持つ模倣可能な初期スキルを模倣する\n③卓越時に通常攻撃/防御効果を強化する(追加確率20%・1.25倍)",
       categoryLinks:[
-        {href:"skills-leadermimic.html", label:"部隊長模倣スキル一覧を見る"}
+        {href:"skills-leadermimic.html", label:"部隊長模倣スキル一覧を見る"},
+        {href:"skills-hadou.html", label:"覇道スキル一覧を見る"},
+        {href:"skills-takuetsu.html", label:"卓越スキル一覧を見る"}
       ],
       trTable:[
-        {level:"LV10", points:"-", effect:"部隊長　保護確率40% / 卓越追加確率20%・1.25倍"},
-        {level:"TR1", points:"10", effect:"部隊長　保護確率未確認 / 卓越追加確率25%・1.27倍"},
-        {level:"TR2", points:"40", effect:"部隊長　保護確率未確認 / 卓越追加確率30%・1.3倍"},
-        {level:"TR3", points:"90", effect:"部隊長　保護確率未確認 / 卓越追加確率35%・1.33倍"},
-        {level:"TR4", points:"150", effect:"部隊長　保護確率未確認 / 卓越追加確率40%・1.36倍"},
-        {level:"TR5", points:"200", effect:"部隊長　保護確率100% / 卓越追加確率50%・1.4倍"}
+        {level:"LV10", points:"-", effect:"部隊長　保護・模倣確率40% / 卓越追加確率20%・1.25倍"},
+        {level:"TR1", points:"10", effect:"部隊長　保護・模倣確率50% / 卓越追加確率25%・1.27倍"},
+        {level:"TR2", points:"40", effect:"部隊長　保護・模倣確率60% / 卓越追加確率30%・1.3倍"},
+        {level:"TR3", points:"90", effect:"部隊長　保護・模倣確率70% / 卓越追加確率35%・1.33倍"},
+        {level:"TR4", points:"150", effect:"部隊長　保護・模倣確率80% / 卓越追加確率40%・1.36倍"},
+        {level:"TR5", points:"200", effect:"部隊長　保護・模倣確率100% / 卓越追加確率50%・1.4倍"}
       ]},
     {name:"世良田二郎三郎", no:"10065", ch:"30章", cost:5.0, troop:"全攻", sub:"", effect:"8部隊以下の攻撃戦闘時、卓越確率上昇"},
     {name:"斎藤一【覇】", no:"10066", ch:"30章", cost:5.5, troop:"全攻", sub:"無尽", effect:"追加スキルの攻撃効果2.5倍"},
