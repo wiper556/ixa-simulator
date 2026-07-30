@@ -501,7 +501,8 @@
         {href:"skills-hadou.html", label:"覇道スキル一覧を見る"}
       ],
       sourceCharacters:[
-        {name:"毛利輝元(覇)", no:"1251", slot:"S2"}
+        {name:"毛利輝元(覇)", no:"1251", slot:"S2"},
+        {name:"里見義弘(2)", no:"1245", slot:"B・C"}
       ],
       ownHiddenCandidate: {skill:"十束ノ神域", rank:"SS"},
       trTable:[
@@ -827,7 +828,8 @@
       ],
       sourceCharacters:[
         {name:"伊達政宗(6)", no:"1292", slot:"B"},
-        {name:"斎藤道三(3)", no:"1297", slot:"B"}
+        {name:"斎藤道三(3)", no:"1297", slot:"B"},
+        {name:"里見義弘(2)", no:"1245", slot:"S1"}
       ],
       ownHiddenCandidate: {skill:"思金神ノ深謀", rank:"SS"},
       trTable:[
@@ -1010,6 +1012,36 @@
         {level:"TR3", points:"90", effect:"槍・馬・砲・器 飛翔10　確率 64% / 防御 320%+（飛翔値合計×11.8%）上昇"},
         {level:"TR4", points:"150", effect:"槍・馬・砲・器 飛翔10　確率 64% / 防御 320%+（飛翔値合計×13%）上昇"},
         {level:"TR5", points:"200", effect:"槍・馬・砲・器 飛翔10　確率 64% / 防御 320%+（飛翔値合計×14.5%）上昇"}
+      ]
+    },
+    {
+      name:"四天轟雷", rank:"SS", baseRate:100, target:"全",
+      effectSummary:"SS/LV10 確率 100% 攻撃360%上昇/対象:全\n①攻撃360%上昇する\n②防御360%上昇する\n③部隊内全武将の兵科対象の全スキルに「砲」「器」対象を追加する",
+      sourceCharacters:[
+        {name:"里見義弘(2)", no:"1245", slot:"A"}
+      ],
+      ownHiddenCandidate: {skill:"四天轟雷", rank:"SS"},
+      trTable:[
+        {level:"LV10", points:"-", effect:"全　確率 100% / 攻撃 360%上昇+防御 360%上昇(砲・器対象追加)"},
+        {level:"TR1", points:"10", effect:"全　確率 100% / 攻撃 440%上昇+防御 440%上昇(砲・器対象追加)"},
+        {level:"TR2", points:"40", effect:"全　確率 100% / 攻撃 540%上昇+防御 540%上昇(砲・器対象追加)"},
+        {level:"TR3", points:"90", effect:"全　確率 100% / 攻撃 670%上昇+防御 670%上昇(砲・器対象追加)"},
+        {level:"TR4", points:"150", effect:"全　確率 100% / 攻撃 810%上昇+防御 810%上昇(砲・器対象追加)"},
+        {level:"TR5", points:"200", effect:"全　確率 100% / 攻撃 960%上昇+防御 960%上昇(砲・器対象追加)"}
+      ]
+    },
+    {
+      name:"火之迦具土神", rank:"SS", baseRate:100, target:"槍・馬・砲",
+      effectSummary:"SS/LV10 確率 100% 攻撃160%上昇/対象:槍・馬・砲\n①攻撃160%上昇する\n②卓越:追加確率25%で攻撃効果が3倍になる",
+      categoryLinks:[
+        {href:"skills-takuetsu.html", label:"卓越スキル一覧を見る"}
+      ],
+      sourceCharacters:[
+        {name:"里見義弘(2)", no:"1245", slot:"S2"}
+      ],
+      ownHiddenCandidate: {skill:"火之迦具土神", rank:"SS"},
+      trTable:[
+        {level:"LV10", points:"-", effect:"槍・馬・砲　確率 100% / 攻撃 160%上昇(卓越追加確率25%で3倍)"}
       ]
     }
   ];
