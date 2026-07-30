@@ -1059,7 +1059,7 @@
       furigana:"なおえかねつぐ", illustrator:"直良有祐",
       imageFull:"assets/img/characters/no1266_full.png", imageChar:"assets/img/characters/no1266_char.png",
       atkBase:1050, atkGrowth:36, defBase:1250, defGrowth:70, tacticsBase:680.0, tacticsGrowth:3.5, lv0Troops:4980,
-      rankGrades:{yari:'A', yumi:'.S', uma:'A', ki:'.S'},
+      rankGrades:{yari:'A', yumi:'S', uma:'A', ki:'S'},
       initialSkill:"三全将帥",
       skillDetail:"S/LV10 確率 48% 防御上昇/対象:槍・弓・器・騎\n①(6.2×防御参加武将数)%を防御効果に加算する\n②卓越:追加確率10%で防御効果が1.2倍になる(模倣不可)",
       categoryLinks:[
@@ -1073,6 +1073,14 @@
         {level:"TR3", points:"-", coefficient:"6.5", effect:"槍・弓・器・騎　確率 48% / 防御 6.5%×防御参加武将数(280人)=1820.0%(卓越:追加確率10%で1.2倍)"},
         {level:"TR4", points:"-", coefficient:"6.6", effect:"槍・弓・器・騎　確率 48% / 防御 6.6%×防御参加武将数(280人)=1848.0%(卓越:追加確率10%で1.2倍)"},
         {level:"TR5", points:"-", coefficient:"6.7", effect:"槍・弓・器・騎　確率 48% / 防御 6.7%×防御参加武将数(280人)=1876.0%(卓越:追加確率10%で1.2倍)"}
+      ],
+      // 45do.info確認: 生HTML(skiladd_wrap)のcandidate A/B/C/S1/S2見出しとdivの並び順が1:1対応していることを確認済み
+      synthesisTable:[
+        {slot:"A", skill:"三全将帥", rank:"S", afterSkill:"三全将帥", afterRank:"S", rate:"48%", target:"槍・弓・器・騎", effectShort:"防御6.2%×防御参加武将数上昇(卓越で1.2倍)"},
+        {slot:"B", skill:"三全将帥", rank:"S", afterSkill:"三全将帥", afterRank:"S", rate:"48%", target:"槍・弓・器・騎", effectShort:"防御6.2%×防御参加武将数上昇(卓越で1.2倍)"},
+        {slot:"C", skill:"八幡神ノ威光", rank:"SSS", afterSkill:"八幡神ノ威光", afterRank:"SSS", rate:"70%", target:"部隊長", effectShort:"部隊長の初期スキルを1.25倍模倣"},
+        {slot:"S1", skill:"神羅聖域", rank:"SS", afterSkill:"神羅聖域", afterRank:"SS", rate:"40%", target:"全 覇道", effectShort:"攻撃900%上昇+防御900%上昇+破壊150%上昇"},
+        {slot:"S2", skill:"永世ノ天隻", rank:"SS", afterSkill:"永世ノ天隻", afterRank:"SS", rate:"48%", target:"全 飛翔9", effectShort:"防御を係数×人数で上昇"}
       ]},
     {name:"藤堂高虎(2)", no:"1270", ch:"28章", cost:5.5, troop:"槍馬砲器防", sub:"兵站", effect:"極限スキルの防御効果が3.5倍", reviewedOk:true,
       furigana:"とうどうたかとら", illustrator:"直良有祐",
