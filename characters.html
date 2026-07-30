@@ -266,15 +266,21 @@
         {level:"TR4", points:"150", effect:"全 不屈1　確率 100% / 攻撃 720%上昇(コスト除外3.5)"},
         {level:"TR5", points:"200", effect:"全 不屈1　確率 100% / 攻撃 800%上昇(コスト除外3.5)"}
       ]},
-    {name:"最上義光(覇)", no:"1262", ch:"28章", cost:5.5, troop:"全防", sub:"覇道", effect:"本丸/所領防御陣形の最後列配置時、部隊総防御力20%上昇",
+    {name:"最上義光(覇)", no:"1262", ch:"28章", cost:5.5, troop:"全防", sub:"覇道", effect:"本丸/所領防御陣形の最前列か最後列配置時、部隊総防御力20%上昇", reviewedOk:true,
       furigana:"もがみよしあき", illustrator:"直良有祐",
       imageFull:"assets/img/characters/no1262_full.png", imageChar:"assets/img/characters/no1262_char.png",
       atkBase:1200, atkGrowth:64, defBase:1310, defGrowth:82, tacticsBase:780.0, tacticsGrowth:3.5, lv0Troops:5170,
+      // カード画像照合済み(2026-07-30): 槍X/弓A/馬S/器A
       rankGrades:{yari:'X', yumi:'A', uma:'S', ki:'A'},
       initialSkill:"虎将鉄牙",
-      skillDetail:"SSS/LV10 確率 45% 対象:全　覇道\n①覇道を持つため所属部隊の武将のスキルを無効化や発動率低下から保護する\n②本丸または所領防御陣形の最後列に配置時、部隊総防御力が20%上昇する(模倣不可、TR1〜TR5は未確認)",
+      skillDetail:"SSS/LV10 確率 45% 対象:全　覇道\n①覇道を持つため所属部隊の武将のスキルを無効化や発動率低下から保護する\n②本丸または所領防御陣形の最前列か最後列に配置時、部隊総防御力が20%上昇する(模倣不可)",
       trTable:[
-        {level:"LV10", points:"-", effect:"全 覇道　確率 45% / 最後列配置時、部隊総防御力+20%"}
+        {level:"LV10", points:"-", effect:"全 覇道　確率 45% / 最前列か最後列配置時、部隊総防御力+20%"},
+        {level:"TR1", points:"10", effect:"全 覇道　確率 45% / 最前列か最後列配置時、部隊総防御力+21%"},
+        {level:"TR2", points:"40", effect:"全 覇道　確率 45% / 最前列か最後列配置時、部隊総防御力+22%"},
+        {level:"TR3", points:"90", effect:"全 覇道　確率 45% / 最前列か最後列配置時、部隊総防御力+23%"},
+        {level:"TR4", points:"150", effect:"全 覇道　確率 45% / 最前列か最後列配置時、部隊総防御力+24%"},
+        {level:"TR5", points:"200", effect:"全 覇道　確率 45% / 最前列か最後列配置時、部隊総防御力+25%"}
       ],
       // 45do.info確認(生HTML照合済み): skiladd_wrapの見出し(候補A/B/C/S1/S2)と直後のスキル名が位置対応しており明示的。
       synthesisTable:[
