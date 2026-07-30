@@ -803,7 +803,26 @@
     {name:"斎藤一【覇】", no:"10066", ch:"30章", cost:5.5, troop:"全攻", sub:"無尽", effect:"追加スキルの攻撃効果2.5倍"},
     {name:"相楽左之助【覇】", no:"10067", ch:"30章", cost:5.0, troop:"槍砲器防", sub:"", effect:"自軍内での同一兵種依存"},
     {name:"長宗我部元親(復刻)", no:"10069", ch:"30章", cost:5.0, troop:"槍馬砲器防", sub:"", effect:"卓越発動時効果3倍"},
-    {name:"豊臣秀吉【覇】", no:"1274", ch:"29章", cost:6.0, troop:"全攻", sub:"無尽 覇道", effect:"部隊内の全極限スキルに無尽付与／無尽を持つスキルの攻撃効果2倍"},
+    {name:"豊臣秀吉【覇】", no:"1274", ch:"29章", cost:6.0, troop:"全攻", sub:"無尽 覇道", effect:"部隊内の全極限スキルに無尽付与／無尽を持つスキルの攻撃効果2倍",
+      furigana:"とよとみひでよし", illustrator:"直良有祐",
+      imageFull:"assets/img/characters/no1274_full.png", imageChar:"assets/img/characters/no1274_char.png",
+      atkBase:1290, atkGrowth:81, defBase:1220, defGrowth:67, tacticsBase:850.0, tacticsGrowth:4.0, lv0Troops:5420,
+      // 生スクリーンショット照合済み(2026-07-30): 槍A/弓SS/馬A/器SS。ixanary.com側のjsonはyumi/kiba(弓/馬)の値が入れ替わって格納されているため画像基準を採用
+      rankGrades:{yari:'A', yumi:'SS', uma:'A', ki:'SS'},
+      initialSkill:"幻王ノ采配",
+      skillDetail:"SSS/LV10 確率 100% 攻撃360%上昇/対象:全　無尽　覇道\n模倣不可\n①部隊内の全極限スキルに無尽を付与する\n②自部隊内の無尽を持つスキルの攻撃効果を2倍する\n③自部隊内の各小隊長の無尽を持たない初期スキルは攻撃戦闘時に無効化され保護不可(部隊長時限定)",
+      categoryLinks:[
+        {href:"skills-mujin.html", label:"無尽スキル一覧を見る"},
+        {href:"skills-hadou.html", label:"覇道スキル一覧を見る"}
+      ],
+      trTable:[
+        {level:"LV10", points:"-", effect:"全 無尽 覇道　確率 100% / 攻撃 360%上昇"},
+        {level:"TR1", points:"10", effect:"全 無尽 覇道　確率 100% / 攻撃 400%上昇"},
+        {level:"TR2", points:"40", effect:"全 無尽 覇道　確率 100% / 攻撃 475%上昇"},
+        {level:"TR3", points:"90", effect:"全 無尽 覇道　確率 100% / 攻撃 585%上昇"},
+        {level:"TR4", points:"150", effect:"全 無尽 覇道　確率 100% / 攻撃 730%上昇"},
+        {level:"TR5", points:"200", effect:"全 無尽 覇道　確率 100% / 攻撃 920%上昇"}
+      ], reviewedOk:true},
     {name:"竹中半兵衛【覇】", no:"1275", ch:"29章", cost:6.0, troop:"全攻", sub:"無尽", effect:"極限スキル枠の攻撃効果3.5倍"},
     {name:"結城秀康", no:"1276", ch:"29章", cost:5.5, troop:"全攻", sub:"", effect:"討伐ゲージ依存"},
     {name:"石田三成", no:"1277", ch:"29章", cost:4.5, troop:"全攻防", sub:"飛翔17", effect:"-"},
