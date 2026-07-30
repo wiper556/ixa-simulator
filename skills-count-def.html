@@ -128,6 +128,11 @@
         {name:"長宗我部元親(7)", no:"1289", slot:"C・S2"},
         {name:"最上義光(覇)", no:"1262", slot:"S1"},
         {name:"佐竹義宣(3)", no:"1302", slot:"C・S2"}
+      ]},
+    {name:"飛炎剣風", skillPage:"characters-kyoku.html#2387", baseRate:"70%", target:"槍・砲・器", keywordNote:"破壊80%上昇(固定・TRなし)",
+      fixedBonus: 80, lv10Coefficient: 5.6, trMaxCoefficient: 5.6, trMaxLabel: "TRなし",
+      sourceCharacters:[
+        {name:"丸目長恵", no:"2387", slot:"移植不可", db:"kyoku"}
       ]}
   ];
 
@@ -162,7 +167,8 @@
     }
     el.innerHTML = countDefSkills.map(function(s){
       const sources = (s.sourceCharacters || []).map(function(c){
-        return '<a href="characters.html#'+encodeURIComponent(c.no)+'">'+scEscapeHtml(c.name)+'('+scEscapeHtml(c.slot)+')</a>';
+        const dbPage = c.db === 'kyoku' ? 'characters-kyoku.html' : 'characters.html';
+        return '<a href="'+dbPage+'#'+encodeURIComponent(c.no)+'">'+scEscapeHtml(c.name)+'('+scEscapeHtml(c.slot)+')</a>';
       }).join('<br>') || '-';
       const lv10Value = scFormatNum(s.fixedBonus + count*s.lv10Coefficient);
       const trMaxValue = scFormatNum(s.fixedBonus + count*s.trMaxCoefficient);

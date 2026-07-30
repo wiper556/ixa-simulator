@@ -111,6 +111,12 @@
       lv10Effect:"攻撃760%上昇(4部隊自合流時コスト-5)",
       sourceCharacters:[
         {name:"織田信長(覇8)【No.1250】", no:"1250", slot:"移植不可"}
+      ]},
+    {name:"星詠ム仁将", skillPage:"characters-kyoku.html#2391", baseRate:"38%", target:"弓・馬・器・焙",
+      fukutsuEffect:"合流自部隊数-2の不屈(特殊効果は模倣不可)",
+      lv10Effect:"攻撃410%上昇",
+      sourceCharacters:[
+        {name:"安宅冬康", no:"2391", slot:"移植不可", db:"kyoku"}
       ]}
   ];
 
@@ -137,7 +143,8 @@
     }
     el.innerHTML = fukutsuSkills.map(function(s){
       const sources = (s.sourceCharacters || []).map(function(c){
-        return '<a href="characters.html#'+encodeURIComponent(c.no)+'">'+fkEscapeHtml(c.name)+'('+fkEscapeHtml(c.slot)+')</a>';
+        const dbPage = c.db === 'kyoku' ? 'characters-kyoku.html' : 'characters.html';
+        return '<a href="'+dbPage+'#'+encodeURIComponent(c.no)+'">'+fkEscapeHtml(c.name)+'('+fkEscapeHtml(c.slot)+')</a>';
       }).join('<br>') || '-';
       return '<tr><td><a href="'+s.skillPage+'">'+fkEscapeHtml(s.name)+'</a></td><td>'+fkEscapeHtml(s.baseRate||'-')+'</td><td>'+fkColorizeMujin(s.target||'-')+'</td>'
         + '<td>'+fkColorizeMujin(s.fukutsuEffect||'-')+'</td>'

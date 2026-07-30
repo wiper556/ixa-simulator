@@ -184,6 +184,12 @@
       fixedBonus: 0, lv10Coefficient: 6.7, trMaxCoefficient: 7.2, trMaxLabel: "TR5",
       sourceCharacters:[
         {name:"真田信繁", no:"1268", slot:"移植不可"}
+      ]},
+    {name:"戦線邁進", skillPage:"characters-kyoku.html#2389", baseRate:"65%", target:"槍・砲・器",
+      targetCategories: ['槍兵科','兵器兵科(砲兵科)','兵器兵科(器兵科)'],
+      fixedBonus: 420, lv10Coefficient: 5.5, trMaxCoefficient: 5.5, trMaxLabel: "TRなし",
+      sourceCharacters:[
+        {name:"宮部継潤", no:"2389", slot:"移植不可", db:"kyoku"}
       ]}
   ];
 
@@ -222,7 +228,8 @@
     }
     el.innerHTML = list.map(function(s){
       const sources = (s.sourceCharacters || []).map(function(c){
-        return '<a href="characters.html#'+encodeURIComponent(c.no)+'">'+scEscapeHtml(c.name)+'('+scEscapeHtml(c.slot)+')</a>';
+        const dbPage = c.db === 'kyoku' ? 'characters-kyoku.html' : 'characters.html';
+        return '<a href="'+dbPage+'#'+encodeURIComponent(c.no)+'">'+scEscapeHtml(c.name)+'('+scEscapeHtml(c.slot)+')</a>';
       }).join('<br>') || '-';
       const lv10Value = scFormatNum(s.fixedBonus + count*s.lv10Coefficient);
       const trMaxValue = scFormatNum(s.fixedBonus + count*s.trMaxCoefficient);

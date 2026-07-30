@@ -138,6 +138,12 @@
       lv10Effect:"防御330%上昇(自拠点防御時1.5倍・TR1〜TR5は未確認)",
       sourceCharacters:[
         {name:"朝倉義景", no:"1243", slot:"移植不可"}
+      ]},
+    {name:"雷閃鉾", skillPage:"characters-kyoku.html#2388", baseRate:"54%", target:"全",
+      hishouValue:"12",
+      lv10Effect:"防御300%上昇(本丸防御第5列以降配置時1.5倍・模倣不可)",
+      sourceCharacters:[
+        {name:"成松信勝", no:"2388", slot:"移植不可", db:"kyoku"}
       ]}
   ];
 
@@ -163,7 +169,8 @@
     }
     el.innerHTML = hishouDefSkills.map(function(s){
       const sources = (s.sourceCharacters || []).map(function(c){
-        return '<a href="characters.html#'+encodeURIComponent(c.no)+'">'+hsEscapeHtml(c.name)+'('+hsEscapeHtml(c.slot)+')</a>';
+        const dbPage = c.db === 'kyoku' ? 'characters-kyoku.html' : 'characters.html';
+        return '<a href="'+dbPage+'#'+encodeURIComponent(c.no)+'">'+hsEscapeHtml(c.name)+'('+hsEscapeHtml(c.slot)+')</a>';
       }).join('<br>') || '-';
       return '<tr><td><a href="'+s.skillPage+'">'+hsEscapeHtml(s.name)+'</a></td><td>'+hsEscapeHtml(s.baseRate||'-')+'</td><td>'+hsColorizeMujin(s.target||'-')+'</td>'
         + '<td>'+hsEscapeHtml(s.hishouValue||'-')+'</td>'
