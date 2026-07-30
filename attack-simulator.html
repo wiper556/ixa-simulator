@@ -1543,23 +1543,21 @@
     '偃武覇陣': {
       noMimic: true, // 「模倣不可」明記
       activationType: 'triggered', // ②: 攻撃したときに発動するタイプ
-      // Lv1実測値(250%/破壊30%/回復速度+160%)とTR1〜TR5(810%〜1440%等)は判明しているが、
-      // LV10(鍛錬前・未訓練時点)の実測値は今回未確認。TR1(10P)の値を暫定的にbaseとして代用する
-      // (実際のLV10値とは異なる可能性がある点に注意。判明次第修正すること)。
-      trTable: { base:810, TR1:810, TR2:880, TR3:1000, TR4:1180, TR5:1440 }, // 全攻防%上昇(同値のため共通のtrTableで代用)
-      destructTrTable: { base:160, TR1:160, TR2:180, TR3:210, TR4:250, TR5:300 }, // 破壊%上昇
-      baseRate: 16, // 確率+16%(Lv1実測値。TR別の確率変化は今回未確認)
+      // 2026-07-30 ixanary.com生HTML確認: LV10=760%、TR1=810%、TR2=880%、TR3=1000%、TR4=1180%、TR5=1440%(TR6無し)
+      trTable: { base:760, TR1:810, TR2:880, TR3:1000, TR4:1180, TR5:1440 }, // 全攻防%上昇(同値のため共通のtrTableで代用)
+      destructTrTable: { base:150, TR1:160, TR2:180, TR3:210, TR4:250, TR5:300 }, // 破壊%上昇
+      baseRate: 50, // 確率+50%(LV10〜TR5共通、LV1のみ+16%)
       trRequiredPoints: { TR1:10, TR2:40, TR3:90, TR4:150, TR5:200 },
       hasSoar: true,
       soarValue: 30,
-      // 「所属部隊の武将回復速度+n%」(Lv1=160%、TR1=500%→TR5=700%)。武将HP回復速度に関する数値のため、
+      // 「所属部隊の武将回復速度+n%」(LV10=500%、TR1=500%→TR5=700%)。武将HP回復速度に関する数値のため、
       // HP/回復の概念自体が本ツールに無く計算エンジンは未実装(参考データのみ)。
       recoverySpeedBonusTable: { base:500, TR1:500, TR2:550, TR3:600, TR4:650, TR5:700 },
-      note: 'SSS(徳川家康・No.1263・Cost6、28章の新天の初期スキル)。確率+16%/対象:全 飛翔30 不屈1 覇道 撤退(Lv1実測値)。' +
-            '全攻防%上昇・破壊%上昇(自動反映対応、ただしLV10(鍛錬前)時点の実測値は今回未確認のためTR1の値で暫定代用): ' +
-            'Lv1=250%/破壊30%(参考) ／ TR1(10P)=810%/破壊160% ／ TR2(40P)=880%/破壊180% ／ TR3(90P)=1000%/破壊210% ／ ' +
+      note: 'SSS(徳川家康・No.1263・Cost6、28章の新天の初期スキル)。確率+50%/対象:全 飛翔30 不屈1 覇道 撤退(LV10〜TR5共通)。' +
+            '全攻防%上昇・破壊%上昇(自動反映対応): ' +
+            'LV10=760%/破壊150% ／ TR1(10P)=810%/破壊160% ／ TR2(40P)=880%/破壊180% ／ TR3(90P)=1000%/破壊210% ／ ' +
             'TR4(150P)=1180%/破壊250% ／ TR5(200P)=1440%/破壊300%。' +
-            '「所属部隊の武将回復速度+n%」(Lv1=160%→TR1=500%→TR5=700%)と「自身を含む所属部隊の武将が通常部隊枠から外れるとき武将HPが最大90%まで回復(模倣不可)」' +
+            '「所属部隊の武将回復速度+n%」(LV10〜TR1=500%→TR5=700%)と「自身を含む所属部隊の武将が通常部隊枠から外れるとき武将HPが最大90%まで回復(模倣不可)」' +
             'を持つが、HP・回復の概念が本ツールに無いため計算エンジンは未実装(参考データのみ)。'
     },
     '炎統極刃': {
@@ -4406,7 +4404,7 @@
     { name:'里見義弘(2)', no:'1245', initialSkill:'斐波騰槍', lv0Troops:4920, atkBase:1170, atkGrowth:57, defBase:1170, defGrowth:57, tacticsBase:660, tacticsGrowth:3.0, rankGrades:{yari:'A',yumi:'.S',uma:'A',ki:'A'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixawiki武将カード一覧表より一括登録(要スポットチェック)' },
     { name:'本願寺顕如(2)', no:'1246', initialSkill:'法威燿煌', lv0Troops:4750, atkBase:1080, atkGrowth:46, defBase:1230, defGrowth:65, tacticsBase:660, tacticsGrowth:3.5, rankGrades:{yari:'.S',yumi:'A',uma:'.S',ki:'A'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixawiki武将カード一覧表より一括登録(要スポットチェック)' },
     { name:'立花道雪', no:'1247', initialSkill:'鎮西ノ雷神', lv0Troops:4260, atkBase:1250, atkGrowth:75, defBase:1010, defGrowth:25, tacticsBase:650, tacticsGrowth:3.0, rankGrades:{yari:'.S',yumi:'A',uma:'A',ki:'A'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixawiki武将カード一覧表より一括登録(要スポットチェック)' },
-    { name:'三郎信長', no:'1249', initialSkill:'破界ノ蟲砲', lv0Troops:5150, atkBase:1230, atkGrowth:72, defBase:1030, defGrowth:40, tacticsBase:690, tacticsGrowth:3.5, rankGrades:{yari:'A',yumi:'A',uma:'.SS',ki:'A'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixawiki武将カード一覧表より一括登録(要スポットチェック)' },
+    { name:'三郎信長', no:'1249', initialSkill:'破界ノ轟砲', lv0Troops:5150, atkBase:1230, atkGrowth:72, defBase:1030, defGrowth:40, tacticsBase:690, tacticsGrowth:3.5, rankGrades:{yari:'A',yumi:'A',uma:'A',ki:'SS'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixawiki武将カード一覧表より一括登録(要スポットチェック、2026-07-30 characters.html検証時にスキル名誤記(蟲→轟)とrankGrades誤り(uma/ki入替)を修正)' },
     { name:'織田信長(覇8)【No.1250】', no:'1250', initialSkill:'荷天滅陣', isHa:true, lv0Troops:6000, atkBase:1300, atkGrowth:82, defBase:1210, defGrowth:66, tacticsBase:820, tacticsGrowth:4.0, rankGrades:{yari:'A',yumi:'S',uma:'X',ki:'A'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixawiki武将カード一覧表より一括登録(要スポットチェック)。名称の(裏8)を(覇8)に修正(ユーザー指示)。既存の「織田信長(覇8)」(No.1286・初期スキル雄飛新世)とは別カードのため、No.を併記して区別' },
     { name:'毛利輝元(覇)', no:'1251', initialSkill:'西覇冠軍', isHa:true, lv0Troops:3700, atkBase:1280, atkGrowth:76, defBase:1200, defGrowth:65, tacticsBase:770, tacticsGrowth:3.5, rankGrades:{yari:'A',yumi:'X',uma:'A',ki:'S'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixawiki武将カード一覧表より一括登録(要スポットチェック)。名称の(裏)を(覇)に修正(ユーザー指示)' },
     { name:'武田勝頼(5)', no:'1252', initialSkill:'陥城騎王', lv0Troops:4960, atkBase:1230, atkGrowth:64, defBase:1080, defGrowth:41, tacticsBase:650, tacticsGrowth:3.0, rankGrades:{yari:'A',yumi:'A',uma:'S',ki:'S'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixawiki武将カード一覧表より一括登録(要スポットチェック)' },
@@ -4415,20 +4413,20 @@
     { name:'豊臣秀吉(5)', no:'1255', initialSkill:'日輪ノ選剣', lv0Troops:4960, atkBase:1070, atkGrowth:44, defBase:1220, defGrowth:65, tacticsBase:700, tacticsGrowth:3.5, rankGrades:{yari:'A',yumi:'A',uma:'A',ki:'S'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixawiki武将カード一覧表より一括登録(要スポットチェック)' },
     { name:'宇喜多直家(3)', no:'1256', initialSkill:'魔弾奏者', lv0Troops:4570, atkBase:1210, atkGrowth:67, defBase:1100, defGrowth:33, tacticsBase:670, tacticsGrowth:3.0, rankGrades:{yari:'A',yumi:'A',uma:'SS',ki:'A'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'カード画像(Lv0・No.1256)で初期値・成長率・指揮兵士数を確認済み。固有スキル名を「魔理姦者」から正しい表記「魔弾奏者」に修正(specialSkills参照)' },
     { name:'村上武吉(2)', no:'1257', initialSkill:'海王怒濤', lv0Troops:4560, atkBase:1240, atkGrowth:64, defBase:1080, defGrowth:50, tacticsBase:640, tacticsGrowth:3.0, rankGrades:{yari:'A',yumi:'A',uma:'SS',ki:'A'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixawiki武将カード一覧表より一括登録(要スポットチェック)' },
-    { name:'相良義陽(3)', no:'1258', initialSkill:'義陣蟄野', lv0Troops:4300, atkBase:1250, atkGrowth:72, defBase:1020, defGrowth:25, tacticsBase:660, tacticsGrowth:3.0, rankGrades:{yari:'A',yumi:'A',uma:'A',ki:'.SS'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixawiki武将カード一覧表より一括登録(要スポットチェック)' },
+    { name:'相良義陽(3)', no:'1258', initialSkill:'義陣響野', lv0Troops:4300, atkBase:1250, atkGrowth:72, defBase:1020, defGrowth:25, tacticsBase:660, tacticsGrowth:3.0, rankGrades:{yari:'S',yumi:'A',uma:'S',ki:'A'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixawiki武将カード一覧表より一括登録(要スポットチェック、2026-07-30 characters.html検証時にスキル名誤記(蟄→響)とrankGrades誤り(yari/uma→ki集約)を修正)' },
     { name:'長宗我部元親(6)', no:'1259', initialSkill:'島穿覓槍', lv0Troops:4770, atkBase:1060, atkGrowth:44, defBase:1240, defGrowth:67, tacticsBase:660, tacticsGrowth:3.0, rankGrades:{yari:'S',yumi:'A',uma:'A',ki:'S'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixawiki武将カード一覧表より一括登録(要スポットチェック)' },
     { name:'伊達輝宗', no:'1260', initialSkill:'龍父絶砲', lv0Troops:4950, atkBase:1200, atkGrowth:62, defBase:1200, defGrowth:62, tacticsBase:660, tacticsGrowth:3.0, rankGrades:{yari:'A',yumi:'S',uma:'A',ki:'S'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixawiki武将カード一覧表より一括登録(要スポットチェック)' },
     { name:'島津家久', no:'1261', initialSkill:'神将火剣', lv0Troops:4560, atkBase:1060, atkGrowth:40, defBase:1190, defGrowth:66, tacticsBase:650, tacticsGrowth:3.0, rankGrades:{yari:'S',yumi:'A',uma:'A',ki:'S'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixawiki武将カード一覧表より一括登録(要スポットチェック)' },
     { name:'最上義光(覇)', no:'1262', initialSkill:'虎将鉄牙', isHa:true, lv0Troops:5170, atkBase:1200, atkGrowth:64, defBase:1310, defGrowth:82, tacticsBase:780, tacticsGrowth:3.5, rankGrades:{yari:'X',yumi:'A',uma:'S',ki:'A'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixawiki武将カード一覧表より一括登録(要スポットチェック)。名称の(裏)を(覇)に修正(ユーザー指示)' },
-    { name:'徳川家康(覇5)', no:'1263', initialSkill:'偃武覇陣', isHa:true, lv0Troops:5400, atkBase:1270, atkGrowth:80, defBase:1270, defGrowth:80, tacticsBase:895, tacticsGrowth:4.5, rankGrades:{yari:'A',yumi:'A',uma:'A',ki:'A'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'カード画像(Lv1・No.1263・Cost6、28章の新天)で成長率・指揮兵士数を確認済み(既存登録値と一致)。名称の(裏5)を(覇5)に修正(ユーザー指示)。固有スキル「偃武覇陣」は全攻防%上昇+回復速度上昇+HP回復の複合スキル(specialSkills参照、自動反映対応)' },
+    { name:'徳川家康(覇5)', no:'1263', initialSkill:'偃武覇陣', isHa:true, lv0Troops:5400, atkBase:1270, atkGrowth:80, defBase:1270, defGrowth:80, tacticsBase:895, tacticsGrowth:4.5, rankGrades:{yari:'A',yumi:'X',uma:'A',ki:'S'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'カード画像(Lv1・No.1263・Cost6、28章の新天)で成長率・指揮兵士数を確認済み(既存登録値と一致)。名称の(裏5)を(覇5)に修正(ユーザー指示)。固有スキル「偃武覇陣」は全攻防%上昇+回復速度上昇+HP回復の複合スキル(specialSkills参照、自動反映対応)。2026-07-30 characters.html検証時にrankGrades誤り(弓がX→A誤登録)を修正' },
     { name:'相馬義胤(2)', no:'1264', initialSkill:'北天奔馬', lv0Troops:4800, atkBase:1250, atkGrowth:71, defBase:1030, defGrowth:34, tacticsBase:650, tacticsGrowth:3.0, rankGrades:{yari:'A',yumi:'A',uma:'.S',ki:'A'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixawiki武将カード一覧表より一括登録(要スポットチェック)' },
     { name:'蒲生氏郷(2)', no:'1265', initialSkill:'天限ノ麒麟', lv0Troops:4800, atkBase:1060, atkGrowth:44, defBase:1230, defGrowth:68, tacticsBase:650, tacticsGrowth:3.0, rankGrades:{yari:'A',yumi:'.S',uma:'A',ki:'.S'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixawiki武将カード一覧表より一括登録(要スポットチェック)' },
     { name:'直江兼続(4)', no:'1266', initialSkill:'三全将帥', lv0Troops:4980, atkBase:1050, atkGrowth:36, defBase:1250, defGrowth:70, tacticsBase:680, tacticsGrowth:3.5, rankGrades:{yari:'A',yumi:'.S',uma:'A',ki:'.S'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixawiki武将カード一覧表より一括登録(要スポットチェック)' },
-    { name:'佐竹義宣(2)', no:'1267', initialSkill:'義睿鉄心', lv0Troops:4590, atkBase:1080, atkGrowth:45, defBase:1230, defGrowth:70, tacticsBase:650, tacticsGrowth:3.0, rankGrades:{yari:'.S',yumi:'.S',uma:'A',ki:'A'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixawiki武将カード一覧表より一括登録(要スポットチェック)' },
+    { name:'佐竹義宣(2)', no:'1267', initialSkill:'義響鉄心', lv0Troops:4590, atkBase:1080, atkGrowth:45, defBase:1230, defGrowth:70, tacticsBase:650, tacticsGrowth:3.0, rankGrades:{yari:'.S',yumi:'.S',uma:'A',ki:'A'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixawiki武将カード一覧表より一括登録(要スポットチェック、2026-07-30 characters.html検証時にスキル名誤記(睿→響)を修正)' },
     { name:'真田昌幸(3)', no:'1268', initialSkill:'烈火ノ麒将', lv0Troops:4990, atkBase:1240, atkGrowth:68, defBase:1120, defGrowth:51, tacticsBase:660, tacticsGrowth:3.0, rankGrades:{yari:'.S',yumi:'A',uma:'.S',ki:'A'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixawiki武将カード一覧表より一括登録(要スポットチェック)' },
     { name:'前田利家(4)', no:'1269', initialSkill:'灼槍不褪', lv0Troops:4120, atkBase:1230, atkGrowth:67, defBase:1110, defGrowth:50, tacticsBase:660, tacticsGrowth:3.0, rankGrades:{yari:'.SS',yumi:'A',uma:'A',ki:'A'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixawiki武将カード一覧表より一括登録(要スポットチェック)' },
     { name:'藤堂高虎(2)', no:'1270', initialSkill:'乱界遊泳', lv0Troops:5160, atkBase:1040, atkGrowth:41, defBase:1260, defGrowth:69, tacticsBase:650, tacticsGrowth:3.0, rankGrades:{yari:'.S',yumi:'A',uma:'.S',ki:'A'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixawiki武将カード一覧表より一括登録(要スポットチェック)' },
-    { name:'小早川秀秋(4)', no:'1271', initialSkill:'刈世公子', lv0Troops:4780, atkBase:1230, atkGrowth:66, defBase:1100, defGrowth:48, tacticsBase:680, tacticsGrowth:3.5, rankGrades:{yari:'.S',yumi:'A',uma:'.S',ki:'A'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixawiki武将カード一覧表より一括登録(要スポットチェック)' },
+    { name:'小早川秀秋(4)', no:'1271', initialSkill:'刈世公子', lv0Troops:4780, atkBase:1230, atkGrowth:66, defBase:1100, defGrowth:48, tacticsBase:680, tacticsGrowth:3.5, rankGrades:{yari:'A',yumi:'S',uma:'A',ki:'S'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixawiki武将カード一覧表より一括登録(要スポットチェック、2026-07-30 characters.html検証時にrankGrades誤り(弓/器がS→A誤登録)を修正)' },
     { name:'豊臣秀次', no:'1272', initialSkill:'夢妖剣', lv0Troops:4600, atkBase:1070, atkGrowth:44, defBase:1230, defGrowth:67, tacticsBase:670, tacticsGrowth:3.0, rankGrades:{yari:'.S',yumi:'A',uma:'.S',ki:'A'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixawiki武将カード一覧表より一括登録(要スポットチェック)' },
     { name:'北条氏直', no:'1273', initialSkill:'仁侯ノ決断', lv0Troops:4790, atkBase:1220, atkGrowth:65, defBase:1220, defGrowth:65, tacticsBase:690, tacticsGrowth:3.5, rankGrades:{yari:'.S',yumi:'A',uma:'.S',ki:'A'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixawiki武将カード一覧表より一括登録(要スポットチェック)' },
     { name:'豊臣秀吉【覇】', no:'1274', initialSkill:'幻王ノ采配', isHa:true, lv0Troops:5420, atkBase:1290, atkGrowth:81, defBase:1220, defGrowth:67, tacticsBase:850, tacticsGrowth:4.0, rankGrades:{yari:'A',yumi:'SS',uma:'A',ki:'SS'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixawiki武将カード一覧表より一括登録。固有スキル「幻王ノ采配」は部隊長時限定で、部隊内の全極限スキルに無尽付与+無尽持ちスキルの攻撃効果2倍(ixagno.blog.fc2.com記事で詳細確認済み)。ixanary.com(2026年7月確認)で攻撃1290/防御1220/兵法850・指揮兵数5420(Lv0)が一致することを確認、名称表記を generals配列(No.1274)の「豊臣秀吉【覇】」に統一(旧表記「豊臣秀吉(覇)」は照合失敗の原因だったため修正)。' },
