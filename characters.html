@@ -495,13 +495,18 @@
         {level:"TR5", points:"200", effect:"弓・馬・砲・器 覇道　確率 40% / 防御 450%×覇武将数(部隊長時2倍)"},
         {level:"TR6", points:"パラレル", effect:"弓・馬・砲・器 覇道　確率 40% / 防御 540%×覇武将数(部隊長時2倍)"}
       ]},
-    {name:"徳川家康【覇(6)】", no:"1288", ch:"30章", cost:5.5, troop:"弓砲器攻防", sub:"覇道", effect:"卓越発動率100%超過分を加算",
+    {name:"徳川家康【覇(6)】", no:"1288", ch:"30章", cost:5.5, troop:"弓砲器攻防", sub:"覇道", effect:"卓越発動率100%超過分を加算", reviewedOk:true,
       furigana:"とくがわいえやす", illustrator:"直良有祐",
       imageFull:"assets/img/characters/no1288_full.png", imageChar:"assets/img/characters/no1288_char.png",
       atkBase:1280, atkGrowth:81, defBase:1280, defGrowth:81, tacticsBase:850.0, tacticsGrowth:4.0, lv0Troops:5220,
+      // カード画像照合済み(2026-07-30): 槍A/弓X/馬A/器S(ixanaryの構造化データはyumi/kibaフィールドが実際のバッジ配置と逆に格納されている、画像の目視結果を優先)
       rankGrades:{yari:'A', yumi:'X', uma:'A', ki:'.S'},
       initialSkill:"伏雷蒼樹",
       skillDetail:"SSS/LV10 確率 卓越追加確率50%で発動(通常確率では発動しない) 攻防200%上昇/対象:弓・砲・器\n①卓越の追加発動確率50%で発動する(覇道)\n②攻防各200%上昇する\n③卓越追加確率のうち100%を超えた分を超過分×5.5%として攻防効果に加算する(二重卓越不可)",
+      categoryLinks:[
+        {href:"skills-hadou.html", label:"覇道スキル一覧を見る"},
+        {href:"skills-takuetsu.html", label:"卓越スキル一覧を見る"}
+      ],
       trTable:[
         {level:"LV10", points:"-", effect:"卓越追加確率50%で発動 / 攻防200%上昇 / 超過分×5.5%"},
         {level:"TR1", points:"10", effect:"卓越追加確率60%で発動 / 攻防200%上昇 / 超過分×5.6%"},
