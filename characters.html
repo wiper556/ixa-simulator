@@ -1292,6 +1292,14 @@
       ],
       trTable:[
         {level:"LV10", points:"-", effect:"全 覇道　確率 100% / 攻撃 210%上昇"}
+      ],
+      // 45do.info(https://45do.info/ordinary/0024/)生HTML skiladd_wrap照合済み、ixanary.com合成テーブルとも一致(2026-07-31)
+      synthesisTable:[
+        {slot:"A", skill:"万鬼闘帝", rank:"S", afterSkill:"万鬼闘帝", afterRank:"S", rate:"100%", target:"全 覇道", effectShort:"攻撃210%上昇"},
+        {slot:"B", skill:"万鬼闘帝", rank:"S", afterSkill:"万鬼闘帝", afterRank:"S", rate:"100%", target:"全 覇道", effectShort:"攻撃210%上昇"},
+        {slot:"C", skill:"天香山命", rank:"SS", afterSkill:"天香山命", afterRank:"SS", rate:"100%", target:"全 覇道", effectShort:"攻撃120%上昇+速度90%上昇"},
+        {slot:"S1", skill:"天津甕星ノ雷", rank:"SS", afterSkill:"天津甕星ノ雷", afterRank:"SS", rate:"100%", target:"全 覇道", effectShort:"攻撃170%上昇+速度70%上昇"},
+        {slot:"S2", skill:"布都御魂ノ鬨", rank:"SS", afterSkill:"布都御魂ノ鬨", afterRank:"SS", rate:"35%", target:"全", effectShort:"攻撃40%上昇+防御40%上昇"}
       ]},
     {name:"雑賀孫市(4)", no:"1220", ch:"24章", cost:3.5, troop:"槍弓器焙攻", sub:"", effect:"敵軍総武将コスト依存で攻撃上昇", reviewedOk:true,
       furigana:"さいかまごいち", illustrator:"直良有祐",
@@ -1700,7 +1708,7 @@
   }
 
   // スキルデータベース(skills.html)にページがあるスキル名の一覧。ここに載っているスキルはリンク化する。
-  const LINKED_SKILLS = ['勇冠三軍', '焼尽神無', '覆天征軍', '終焉焦土', '万物神勇', '経津主神ノ剣', '従魔絶神', '梵天浄界', '岳王ノ加護', '國才連豪', '虎賁統帥', '天地超克', '神羅聖域', '信明義星', '千里必勝ノ神算', '刹那無影', '月煌侵蝕', '虚実兵妙', '仙境解脱', '幻像鏡花', '開闢ノ逆鉾', '思金神ノ深謀', '戦華雄渾', '月詠ノ覇威', '絶無灰尽', '八幡神ノ威光', '龍驤虎躍', '永世ノ天隻', '黄泉醜女ノ屍兵', '高津姫神', '義陣絶刀', '破国八陣', '轟渦ノ神将', '王花尖剣', '泰厳射手', '国呑ノ蟒蛇', '虚空ノ導', '龍気剣鳴', '雄武英略', '坂西都督', '摩利支天ノ法', '不制于天地人', '神機采配'];
+  const LINKED_SKILLS = ['勇冠三軍', '焼尽神無', '覆天征軍', '終焉焦土', '万物神勇', '経津主神ノ剣', '従魔絶神', '梵天浄界', '岳王ノ加護', '國才連豪', '虎賁統帥', '天地超克', '神羅聖域', '信明義星', '千里必勝ノ神算', '刹那無影', '月煌侵蝕', '虚実兵妙', '仙境解脱', '幻像鏡花', '開闢ノ逆鉾', '思金神ノ深謀', '戦華雄渾', '月詠ノ覇威', '絶無灰尽', '八幡神ノ威光', '龍驤虎躍', '永世ノ天隻', '黄泉醜女ノ屍兵', '高津姫神', '義陣絶刀', '破国八陣', '轟渦ノ神将', '王花尖剣', '泰厳射手', '国呑ノ蟒蛇', '虚空ノ導', '龍気剣鳴', '雄武英略', '坂西都督', '摩利支天ノ法', '不制于天地人', '神機采配', '天香山命', '天津甕星ノ雷', '布都御魂ノ鬨'];
 
   function gdbSkillLink(skillName, rank){
     const label = gdbEscapeHtml(skillName)+' '+gdbEscapeHtml(rank||'');
