@@ -133,6 +133,11 @@
       lv10FixedBonus: 150, trMaxFixedBonus: 350, lv10Coefficient: 6.5, trMaxCoefficient: 6.5, trMaxLabel: "TR5",
       sourceCharacters:[
         {name:"蒲生氏郷(2)", no:"1265", slot:"移植不可"}
+      ]},
+    {name:"飛炎剣風", skillPage:"characters-kyoku.html#2387", baseRate:"70%", target:"槍・砲・器", keywordNote:"破壊80%上昇(固定・TRなし)",
+      fixedBonus: 80, lv10Coefficient: 5.6, trMaxCoefficient: 5.6, trMaxLabel: "TRなし",
+      sourceCharacters:[
+        {name:"丸目長恵", no:"2387", slot:"移植不可", db:"kyoku"}
       ]}
   ];
 
@@ -167,7 +172,8 @@
     }
     el.innerHTML = countDefSkills.map(function(s){
       const sources = (s.sourceCharacters || []).map(function(c){
-        return '<a href="characters.html#'+encodeURIComponent(c.no)+'">'+scEscapeHtml(c.name)+'('+scEscapeHtml(c.slot)+')</a>';
+        const dbPage = c.db === 'kyoku' ? 'characters-kyoku.html' : 'characters.html';
+        return '<a href="'+dbPage+'#'+encodeURIComponent(c.no)+'">'+scEscapeHtml(c.name)+'('+scEscapeHtml(c.slot)+')</a>';
       }).join('<br>') || '-';
       const lv10Fixed = (s.lv10FixedBonus !== undefined ? s.lv10FixedBonus : s.fixedBonus) || 0;
       const trMaxFixed = (s.trMaxFixedBonus !== undefined ? s.trMaxFixedBonus : s.fixedBonus) || 0;
