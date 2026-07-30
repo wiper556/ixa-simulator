@@ -445,7 +445,8 @@
       effectSummary:"SS/LV10 確率 60% 攻防810%上昇/対象:全\n①攻撃810%上昇する\n②防御810%上昇する\n③部隊消費コストを1低下する(模倣不可)",
       sourceCharacters:[
         {name:"毛利輝元(覇)", no:"1251", slot:"A"},
-        {name:"最上義光(覇)", no:"1262", slot:"A"}
+        {name:"最上義光(覇)", no:"1262", slot:"A"},
+        {name:"上杉謙信(覇2)", no:"1238", slot:"B・C"}
       ],
       ownHiddenCandidate: {skill:"龍驤虎躍", rank:"SS"},
       trTable:[
@@ -501,7 +502,8 @@
         {href:"skills-hadou.html", label:"覇道スキル一覧を見る"}
       ],
       sourceCharacters:[
-        {name:"毛利輝元(覇)", no:"1251", slot:"S2"}
+        {name:"毛利輝元(覇)", no:"1251", slot:"S2"},
+        {name:"上杉謙信(覇2)", no:"1238", slot:"S2"}
       ],
       ownHiddenCandidate: {skill:"十束ノ神域", rank:"SS"},
       trTable:[
@@ -860,7 +862,8 @@
         {href:"skills-takuetsu.html", label:"卓越スキル一覧を見る"}
       ],
       sourceCharacters:[
-        {name:"毛利元就(4)", no:"1293", slot:"S2"}
+        {name:"毛利元就(4)", no:"1293", slot:"S2"},
+        {name:"上杉謙信(覇2)", no:"1238", slot:"A"}
       ],
       ownHiddenCandidate: {skill:"月詠ノ覇威", rank:"SS"},
       trTable:[
@@ -1010,6 +1013,20 @@
         {level:"TR3", points:"90", effect:"槍・馬・砲・器 飛翔10　確率 64% / 防御 320%+（飛翔値合計×11.8%）上昇"},
         {level:"TR4", points:"150", effect:"槍・馬・砲・器 飛翔10　確率 64% / 防御 320%+（飛翔値合計×13%）上昇"},
         {level:"TR5", points:"200", effect:"槍・馬・砲・器 飛翔10　確率 64% / 防御 320%+（飛翔値合計×14.5%）上昇"}
+      ]
+    },
+    {
+      name:"天聖宝冠", rank:"SSS", baseRate:45, target:"全", noMimic:true,
+      effectSummary:"SSS/LV10 確率 45% 攻撃100%上昇/対象:全\n模倣不可\n①攻撃100%上昇する\n②(5×防御参加武将数)%を攻撃効果に加算する",
+      categoryLinks:[
+        {href:"skills-count-atk.html", label:"人数依存(攻)スキル一覧を見る"}
+      ],
+      sourceCharacters:[
+        {name:"上杉謙信(覇2)", no:"1238", slot:"S1"}
+      ],
+      ownHiddenCandidate: {skill:"天聖宝冠", rank:"SSS"},
+      trTable:[
+        {level:"LV10", points:"-", coefficient:"5", effect:"全　確率 45% / 攻撃 100%+5%×防御参加武将数(280人)=1500.0%"}
       ]
     }
   ];
