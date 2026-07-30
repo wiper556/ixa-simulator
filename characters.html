@@ -1290,10 +1290,14 @@
       atkBase:1060, atkGrowth:40, defBase:1170, defGrowth:62, tacticsBase:630.0, tacticsGrowth:3.0, lv0Troops:4000,
       rankGrades:{yari:'A', yumi:'S', uma:'A', ki:'S'},
       initialSkill:"甲塞ノ龍砲",
-      skillDetail:"S/LV10 確率 15% 防御134%上昇/対象:弓・砲・器　飛翔4\n①防御134%上昇する(敵軍4部隊以下で効果2倍)\n②飛翔4を持つ(TR1〜TR5は未確認)",
+      skillDetail:"S/LV10 確率 15% 防御134%上昇/対象:弓・砲・器　飛翔4\n①防御134%上昇する(敵軍4部隊以下で効果2倍)\n②飛翔4を持つ(敵軍に飛翔を持つ武将が4人未満のとき通常武将ダメージを受けない)",
+      categoryLinks:[
+        {href:"skills-hishou-def.html", label:"飛翔スキル一覧(防御)を見る"}
+      ],
       trTable:[
-        {level:"LV10", points:"-", effect:"弓・砲・器 飛翔4　確率 15% / 防御 134%上昇(敵軍4部隊以下で2倍)"}
-      ]},
+        {level:"LV10", points:"-", effect:"弓・砲・器 飛翔4　確率 15% / 防御 134%上昇(敵軍4部隊以下で2倍、敵軍飛翔武将4人未満で通常ダメージ無効)"}
+      ],
+      reviewedOk:true},
     {name:"柴田勝家", no:"1216", ch:"24章", cost:5, troop:"全攻", sub:"覇道", effect:"攻撃上昇／所属部隊のスキルを無効化から保護",
       furigana:"しばたかついえ", illustrator:"直良有祐",
       imageFull:"assets/img/characters/no1216_full.png", imageChar:"assets/img/characters/no1216_char.png",
