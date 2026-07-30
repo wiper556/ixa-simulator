@@ -800,7 +800,7 @@
         {slot:"S1", skill:"轟渦ノ神将", rank:"S", afterSkill:"轟渦ノ神将", afterRank:"S", rate:"50%", target:"全", effectShort:"防御500%上昇+兵士補正0.8倍"},
         {slot:"S2", skill:"王花尖剣", rank:"S", afterSkill:"王花尖剣", afterRank:"S", rate:"64%", target:"槍・馬・砲・器 飛翔10", effectShort:"防御320%上昇+飛翔値合計×10%加算"}
       ]},
-    {name:"細川幽斎(復刻)【天】", no:"10070", ch:"30章", cost:4.5, troop:"-", sub:"", effect:"部隊長の初期スキルを模倣して保護・強化",
+    {name:"細川幽斎(復刻)【天】", no:"10070", ch:"30章", cost:4.5, troop:"-", sub:"", effect:"部隊長の初期スキルを模倣して保護・強化", reviewedOk:true,
       furigana:"ほそかわゆうさい", illustrator:"直良有祐",
       imageFull:"assets/img/characters/no10070_full.png", imageChar:"assets/img/characters/no10070_char.png",
       atkBase:1200, atkGrowth:69, defBase:1250, defGrowth:71, tacticsBase:700.0, tacticsGrowth:3.5, lv0Troops:4900,
@@ -809,15 +809,17 @@
       initialSkill:"古今虚実ノ法",
       skillDetail:"S/LV10 確率 40% 対象:部隊長\n①所属部隊の武将が持つスキルを無効化・発動率低下から保護する\n②部隊長の持つ模倣可能な初期スキルを模倣する\n③卓越時に通常攻撃/防御効果を強化する(追加確率20%・1.25倍)",
       categoryLinks:[
-        {href:"skills-leadermimic.html", label:"部隊長模倣スキル一覧を見る"}
+        {href:"skills-leadermimic.html", label:"部隊長模倣スキル一覧を見る"},
+        {href:"skills-hadou.html", label:"覇道スキル一覧を見る"},
+        {href:"skills-takuetsu.html", label:"卓越スキル一覧を見る"}
       ],
       trTable:[
-        {level:"LV10", points:"-", effect:"部隊長　保護確率40% / 卓越追加確率20%・1.25倍"},
-        {level:"TR1", points:"10", effect:"部隊長　保護確率未確認 / 卓越追加確率25%・1.27倍"},
-        {level:"TR2", points:"40", effect:"部隊長　保護確率未確認 / 卓越追加確率30%・1.3倍"},
-        {level:"TR3", points:"90", effect:"部隊長　保護確率未確認 / 卓越追加確率35%・1.33倍"},
-        {level:"TR4", points:"150", effect:"部隊長　保護確率未確認 / 卓越追加確率40%・1.36倍"},
-        {level:"TR5", points:"200", effect:"部隊長　保護確率100% / 卓越追加確率50%・1.4倍"}
+        {level:"LV10", points:"-", effect:"部隊長　保護・模倣確率40% / 卓越追加確率20%・1.25倍"},
+        {level:"TR1", points:"10", effect:"部隊長　保護・模倣確率50% / 卓越追加確率25%・1.27倍"},
+        {level:"TR2", points:"40", effect:"部隊長　保護・模倣確率60% / 卓越追加確率30%・1.3倍"},
+        {level:"TR3", points:"90", effect:"部隊長　保護・模倣確率70% / 卓越追加確率35%・1.33倍"},
+        {level:"TR4", points:"150", effect:"部隊長　保護・模倣確率80% / 卓越追加確率40%・1.36倍"},
+        {level:"TR5", points:"200", effect:"部隊長　保護・模倣確率100% / 卓越追加確率50%・1.4倍"}
       ]},
     {name:"世良田二郎三郎", no:"10065", ch:"30章", cost:5.0, troop:"全攻", sub:"", effect:"8部隊以下の攻撃戦闘時、卓越確率上昇"},
     {name:"斎藤一【覇】", no:"10066", ch:"30章", cost:5.5, troop:"全攻", sub:"無尽", effect:"追加スキルの攻撃効果2.5倍"},
