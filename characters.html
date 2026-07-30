@@ -1107,33 +1107,54 @@
       trTable:[
         {level:"LV10", points:"-", effect:"槍・馬・砲・器　確率 50% / 防御 150%上昇(同兵種指揮武将数×12%加算)"}
       ]},
-    {name:"直江兼続(4)", no:"1266", ch:"28章", cost:5.0, troop:"槍弓器騎防", sub:"", effect:"防御参加武将数依存／卓越で効果1.2倍",
+    {name:"直江兼続(4)", no:"1266", ch:"28章", cost:5.0, troop:"槍弓器騎防", sub:"", effect:"防御参加武将数依存／卓越で効果1.2倍", reviewedOk:true,
       furigana:"なおえかねつぐ", illustrator:"直良有祐",
       imageFull:"assets/img/characters/no1266_full.png", imageChar:"assets/img/characters/no1266_char.png",
       atkBase:1050, atkGrowth:36, defBase:1250, defGrowth:70, tacticsBase:680.0, tacticsGrowth:3.5, lv0Troops:4980,
-      rankGrades:{yari:'A', yumi:'.S', uma:'A', ki:'.S'},
+      rankGrades:{yari:'A', yumi:'S', uma:'A', ki:'S'},
       initialSkill:"三全将帥",
-      skillDetail:"S/LV10 確率 48% 防御上昇/対象:槍・弓・器・騎\n①(6.2×防御参加武将数)%を防御効果に加算する\n②卓越:追加確率10%で防御効果が1.2倍になる(模倣不可・TR1〜TR5は未確認)",
+      skillDetail:"S/LV10 確率 48% 防御上昇/対象:槍・弓・器・騎\n①(6.2×防御参加武将数)%を防御効果に加算する\n②卓越:追加確率10%で防御効果が1.2倍になる(模倣不可)",
+      categoryLinks:[
+        {href:"skills-count-def.html", label:"人数依存(防)スキル一覧を見る"},
+        {href:"skills-takuetsu.html", label:"卓越スキル一覧を見る"}
+      ],
       trTable:[
-        {level:"LV10", points:"-", coefficient:"6.2", effect:"槍・弓・器・騎　確率 48% / 防御 6.2%×防御参加武将数(280人)=1736.0%(卓越:追加確率10%で1.2倍)"}
+        {level:"LV10", points:"-", coefficient:"6.2", effect:"槍・弓・器・騎　確率 48% / 防御 6.2%×防御参加武将数(280人)=1736.0%(卓越:追加確率10%で1.2倍)"},
+        {level:"TR1", points:"-", coefficient:"6.3", effect:"槍・弓・器・騎　確率 48% / 防御 6.3%×防御参加武将数(280人)=1764.0%(卓越:追加確率10%で1.2倍)"},
+        {level:"TR2", points:"-", coefficient:"6.4", effect:"槍・弓・器・騎　確率 48% / 防御 6.4%×防御参加武将数(280人)=1792.0%(卓越:追加確率10%で1.2倍)"},
+        {level:"TR3", points:"-", coefficient:"6.5", effect:"槍・弓・器・騎　確率 48% / 防御 6.5%×防御参加武将数(280人)=1820.0%(卓越:追加確率10%で1.2倍)"},
+        {level:"TR4", points:"-", coefficient:"6.6", effect:"槍・弓・器・騎　確率 48% / 防御 6.6%×防御参加武将数(280人)=1848.0%(卓越:追加確率10%で1.2倍)"},
+        {level:"TR5", points:"-", coefficient:"6.7", effect:"槍・弓・器・騎　確率 48% / 防御 6.7%×防御参加武将数(280人)=1876.0%(卓越:追加確率10%で1.2倍)"}
+      ],
+      // 45do.info確認: 生HTML(skiladd_wrap)のcandidate A/B/C/S1/S2見出しとdivの並び順が1:1対応していることを確認済み
+      synthesisTable:[
+        {slot:"A", skill:"三全将帥", rank:"S", afterSkill:"三全将帥", afterRank:"S", rate:"48%", target:"槍・弓・器・騎", effectShort:"防御6.2%×防御参加武将数上昇(卓越で1.2倍)"},
+        {slot:"B", skill:"三全将帥", rank:"S", afterSkill:"三全将帥", afterRank:"S", rate:"48%", target:"槍・弓・器・騎", effectShort:"防御6.2%×防御参加武将数上昇(卓越で1.2倍)"},
+        {slot:"C", skill:"八幡神ノ威光", rank:"SSS", afterSkill:"八幡神ノ威光", afterRank:"SSS", rate:"70%", target:"部隊長", effectShort:"部隊長の初期スキルを1.25倍模倣"},
+        {slot:"S1", skill:"神羅聖域", rank:"SS", afterSkill:"神羅聖域", afterRank:"SS", rate:"40%", target:"全 覇道", effectShort:"攻撃900%上昇+防御900%上昇+破壊150%上昇"},
+        {slot:"S2", skill:"永世ノ天隻", rank:"SS", afterSkill:"永世ノ天隻", afterRank:"SS", rate:"48%", target:"全 飛翔9", effectShort:"防御を係数×人数で上昇"}
       ]},
-    {name:"藤堂高虎(2)", no:"1270", ch:"28章", cost:5.5, troop:"槍馬砲器防", sub:"兵站", effect:"極限スキルの防御効果が3.5倍",
+    {name:"藤堂高虎(2)", no:"1270", ch:"28章", cost:5.5, troop:"槍馬砲器防", sub:"兵站", effect:"極限スキルの防御効果が3.5倍", reviewedOk:true,
       furigana:"とうどうたかとら", illustrator:"直良有祐",
       imageFull:"assets/img/characters/no1270_full.png", imageChar:"assets/img/characters/no1270_char.png",
       atkBase:1040, atkGrowth:41, defBase:1260, defGrowth:69, tacticsBase:650.0, tacticsGrowth:3.0, lv0Troops:5160,
-      rankGrades:{yari:'.S', yumi:'A', uma:'.S', ki:'A'},
+      rankGrades:{yari:'S', yumi:'A', uma:'A', ki:'S'},
       initialSkill:"乱界遊泳",
-      skillDetail:"S/LV10 確率 100% 防御400%上昇/対象:槍・馬・砲・器　兵站\n①防御400%上昇する\n②対象兵科指揮時、極限スキルの防御効果が3.5倍となる(模倣不可・TR1〜TR5は未確認)",
+      skillDetail:"S/LV10 確率 100% 防御400%上昇/対象:槍・馬・砲・器　兵站\n①防御400%上昇する\n②対象兵科指揮時、極限スキルの防御効果が3.5倍となる(模倣不可・TR1〜TR4は未確認)",
+      categoryLinks:[
+        {href:"skills-heitan.html", label:"兵站スキル一覧を見る"}
+      ],
       trTable:[
-        {level:"LV10", points:"-", effect:"槍・馬・砲・器 兵站　確率 100% / 防御 400%上昇(極限スキル防御効果3.5倍)"}
+        {level:"LV10", points:"-", effect:"槍・馬・砲・器 兵站　確率 100% / 防御 400%上昇(極限スキル防御効果3.5倍)"},
+        {level:"TR5", points:"-", effect:"槍・馬・砲・器 兵站　確率 100% / 防御 740%上昇(極限スキル防御効果3.5倍)"}
       ]},
-    {name:"今川義元", no:"1203", ch:"23章", cost:5, troop:"全攻", sub:"", effect:"追加スキルの攻撃・破壊効果を2.5倍にする",
+    {name:"今川義元", no:"1203", ch:"23章", cost:5, troop:"全攻", sub:"", effect:"追加スキルの攻撃・破壊効果を2.5倍にする", reviewedOk:true,
       furigana:"いまがわよしもと", illustrator:"直良有祐",
       imageFull:"assets/img/characters/no1203_full.png", imageChar:"assets/img/characters/no1203_char.png",
       atkBase:1280, atkGrowth:75, defBase:1240, defGrowth:50, tacticsBase:750.0, tacticsGrowth:3.5, lv0Troops:4670,
-      rankGrades:{yari:'S', yumi:'S', uma:'A', ki:'A'},
+      rankGrades:{yari:'S', yumi:'S', uma:'A', ki:'S'},
       initialSkill:"赤凰幻舞",
-      skillDetail:"SSS/LV10 確率 100% 対象:追加スキル\n①このスキルを持つ武将カードは追加スキル(追加1/追加2/極限)の攻撃・破壊効果が2.5倍となる(模倣不可・TR1〜TR5は未確認)",
+      skillDetail:"SSS/LV10 確率 100% 対象:追加スキル\n①このスキルを持つ武将カードは追加スキル(追加1/追加2/極限)の攻撃・破壊効果が2.5倍となる(模倣不可)",
       trTable:[
         {level:"LV10", points:"-", effect:"追加スキル　確率 100% / 攻撃・破壊効果 2.5倍"}
       ]},
