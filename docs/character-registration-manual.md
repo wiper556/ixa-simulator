@@ -53,3 +53,5 @@
 - rankGrades誤読(X/レインボーバッジをAと誤読、弓/馬フィールド入れ替え) — 必ず画像を拡大確認。
 - 「調査完了後にまとめて編集」による中断時の全損 — 1体ごとに即commit。
 - 均等な頭数分割はスキルの複雑さのばらつきを無視しており、チャンク間で完了速度に数倍の差が出る。
+- **worktreeがmasterより古いまま作業を始めてしまう事故(2026-07-30)**: 作業エージェントのworktreeが割り当てられた時点でmasterから大きく遅れており(`characters-kyoku.html`自体が存在しない状態)、`assets/img/characters/no{No}_full.png`等の対象画像・対象ファイルが見つからず作業不能になりかけた。**作業開始時に`git merge-base HEAD master`と`git rev-parse HEAD master`を比較し、HEADがmasterの祖先(つまり自分の固有コミットが無い)なら`git merge master --ff-only`で追従してから着手すること。** 未追跡ファイル(スクショ画像等)がworktree側に残っていてfast-forwardが失敗する場合は、それらを削除(元ファイルはmasterのcommit後に復元される)してから再実行する。
+- **ixanary.comのカードJSON内`yumi`/`kiba`フィールド名は画像上の弓/馬バッジ位置と食い違うことがある(2026-07-30、No.2389/2392で確認)**: rankGradesは必ずカード画像のバッジ配置(左上=槍、右上=馬、左下=弓、右下=器)を正として採用し、ixanaryのJSON側フィールド名は参考程度に留める。
