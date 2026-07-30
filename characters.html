@@ -680,16 +680,22 @@
         {slot:"S1", skill:"焼尽神無", rank:"SS", afterSkill:"焼尽神無", afterRank:"SS", rate:"44%", target:"全 無尽", effectShort:"攻撃を係数×人数で上昇"},
         {slot:"S2", skill:"開闢ノ逆鉾", rank:"SS", afterSkill:"開闢ノ逆鉾", afterRank:"SS", rate:"100%", target:"全", effectShort:"攻撃254%上昇(卓越で兵士被害減少)"}
       ]},
-    {name:"大友宗麟(6)", no:"1295", ch:"30章", cost:5.0, troop:"全防", sub:"", effect:"本丸防御陣形時、2列目以降の部隊にも効果がかかる",
+    {name:"大友宗麟(6)", no:"1295", ch:"30章", cost:5.0, troop:"全防", sub:"", effect:"本丸防御陣形時、2列目以降の部隊にも効果がかかる", reviewedOk:true,
       furigana:"おおともそうりん", illustrator:"直良有祐",
       imageFull:"assets/img/characters/no1295_full.png", imageChar:"assets/img/characters/no1295_char.png",
       atkBase:1060, atkGrowth:43, defBase:1270, defGrowth:72, tacticsBase:660.0, tacticsGrowth:3.0, lv0Troops:5100,
       // カード画像照合済み(2026-07-30): 槍S/弓S/馬A/器A(旧データはyumiの値が誤っていたため修正)
       rankGrades:{yari:'S', yumi:'S', uma:'A', ki:'A'},
       initialSkill:"豊州ノ雅王",
-      skillDetail:"S/LV10 確率 100% 防御420%上昇/対象:全\n①防御420%上昇する\n②本丸防御陣形の第2列目以降の部隊にもこのスキルの効果が及ぶ(自身の所属部隊には重複しない・模倣不可、TR1〜TR5は未確認)",
+      skillDetail:"S/LV10 確率 100% 防御420%上昇/対象:全\n①防御420%上昇する\n②本丸防御陣形の第2列目以降の部隊にもこのスキルの効果が及ぶ(自身の所属部隊には重複しない・模倣不可)",
       trTable:[
-        {level:"LV10", points:"-", effect:"全　確率 100% / 防御 420%上昇"}
+        {level:"LV10", points:"-", effect:"全　確率 100% / 防御 420%上昇"},
+        {level:"TR1", points:"10", effect:"全　確率 100% / 防御 440%上昇"},
+        {level:"TR2", points:"40", effect:"全　確率 100% / 防御 470%上昇"},
+        {level:"TR3", points:"90", effect:"全　確率 100% / 防御 520%上昇"},
+        {level:"TR4", points:"150", effect:"全　確率 100% / 防御 580%上昇"},
+        {level:"TR5", points:"200", effect:"全　確率 100% / 防御 650%上昇"},
+        {level:"TR6", points:"パラレル", effect:"全　確率 100% / 防御 730%上昇"}
       ],
       // 45do.info生HTML照合済み(2026-07-29、skiladd_wrapの位置対応で確認)。
       synthesisTable:[
