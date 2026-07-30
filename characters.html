@@ -250,15 +250,21 @@
         {level:"TR2", points:"40", effect:"全　確率 100% / 攻撃940%上昇+防御940%上昇(飛翔再定義)"},
         {level:"TR3", points:"90", effect:"全　確率 100% / 攻撃1270%上昇+防御1270%上昇(飛翔再定義)"}
       ]},
-    {name:"毛利輝元(覇)", no:"1251", ch:"27章", cost:3.0, troop:"全攻", sub:"不屈", effect:"部隊内武将の攻撃効果を加算／コストを最大まで除外",
+    {name:"毛利輝元(覇)", no:"1251", ch:"27章", cost:3.0, troop:"全攻", sub:"不屈1", effect:"自身合流時、自分の他部隊にもこの攻撃効果を加算／コストを最大3(TR3以降3.5)まで除外", reviewedOk:true,
       furigana:"もうりてるもと", illustrator:"直良有祐",
       imageFull:"assets/img/characters/no1251_full.png", imageChar:"assets/img/characters/no1251_char.png",
       atkBase:1280, atkGrowth:76, defBase:1200, defGrowth:65, tacticsBase:770.0, tacticsGrowth:3.5, lv0Troops:3700,
+      // カード画像照合済み(2026-07-30): 槍A/弓X/馬A/器S
       rankGrades:{yari:'A', yumi:'X', uma:'A', ki:'S'},
       initialSkill:"西覇冠軍",
-      skillDetail:"SSS/LV10 確率 100% 攻撃540%上昇/対象:全\n①攻撃540%上昇する\n②不屈1を持つ\n③自身含む部隊内武将が持つスキルの攻撃効果を加算し、部隊総コストからこの武将分のコストを最大まで除外する(TR1〜TR5は未確認)",
+      skillDetail:"SSS/LV10 確率 100% 攻撃540%上昇/対象:全　不屈1\n模倣不可\n①攻撃540%上昇する\n②不屈1を持つ\n③自身合流時、自分の他部隊にもこの攻撃効果を加算する\n④部隊総コストからこの武将分のコストを最大3(TR3以降3.5)まで除外する(部隊内重複不可)",
       trTable:[
-        {level:"LV10", points:"-", effect:"全　確率 100% / 攻撃 540%上昇(不屈1)"}
+        {level:"LV10", points:"-", effect:"全 不屈1　確率 100% / 攻撃 540%上昇(コスト除外3)"},
+        {level:"TR1", points:"10", effect:"全 不屈1　確率 100% / 攻撃 570%上昇(コスト除外3)"},
+        {level:"TR2", points:"40", effect:"全 不屈1　確率 100% / 攻撃 610%上昇(コスト除外3)"},
+        {level:"TR3", points:"90", effect:"全 不屈1　確率 100% / 攻撃 660%上昇(コスト除外3.5)"},
+        {level:"TR4", points:"150", effect:"全 不屈1　確率 100% / 攻撃 720%上昇(コスト除外3.5)"},
+        {level:"TR5", points:"200", effect:"全 不屈1　確率 100% / 攻撃 800%上昇(コスト除外3.5)"}
       ]},
     {name:"最上義光(覇)", no:"1262", ch:"28章", cost:5.5, troop:"全防", sub:"覇道", effect:"本丸/所領防御陣形の最後列配置時、部隊総防御力20%上昇",
       furigana:"もがみよしあき", illustrator:"直良有祐",
