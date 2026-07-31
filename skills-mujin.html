@@ -89,17 +89,11 @@
      無尽1につき部隊消費コスト-0.5(無尽2は-1.0)。
   ============================================ */
   const mujinSkills = [
-    {name:"焼尽神無", skillPage:"skills.html#焼尽神無", baseRate:"44%", target:"全",
+    {name:"岳王ノ加護", skillPage:"skills.html#岳王ノ加護", baseRate:"50%", target:"全",
       costReduction:"無尽(-0.5)",
-      lv10Effect:"攻撃 6.9%×防御参加武将数(280人)=1932.0%(人数依存(攻)スキル一覧も参照)",
+      lv10Effect:"防御 10%×防御参加武将数(280人)=2800.0%(人数依存(防)スキル一覧も参照)",
       sourceCharacters:[
-        {name:"豊臣秀長【覇】", no:"1298", slot:"B"}
-      ]},
-    {name:"覆天征軍", skillPage:"skills.html#覆天征軍", baseRate:"100%", target:"全",
-      costReduction:"無尽2(-1.0)",
-      lv10Effect:"攻撃900%上昇(TR1〜TR5は未確認)",
-      sourceCharacters:[
-        {name:"豊臣秀長【覇】", no:"1298", slot:"A"}
+        {name:"石田三成(7)【覇】", no:"1299", slot:"S1"}
       ]},
     {name:"終焉焦土", skillPage:"skills.html#終焉焦土", baseRate:"46%", target:"全",
       costReduction:"無尽(-0.5)",
@@ -107,35 +101,11 @@
       sourceCharacters:[
         {name:"豊臣秀長【覇】", no:"1298", slot:"S1"}
       ]},
-    {name:"岳王ノ加護", skillPage:"skills.html#岳王ノ加護", baseRate:"50%", target:"全",
+    {name:"焼尽神無", skillPage:"skills.html#焼尽神無", baseRate:"44%", target:"全",
       costReduction:"無尽(-0.5)",
-      lv10Effect:"防御 10%×防御参加武将数(280人)=2800.0%(人数依存(防)スキル一覧も参照)",
+      lv10Effect:"攻撃 6.9%×防御参加武将数(280人)=1932.0%(人数依存(攻)スキル一覧も参照)",
       sourceCharacters:[
-        {name:"石田三成(7)【覇】", no:"1299", slot:"S1"}
-      ]},
-    {name:"義戦ノ旗手", skillPage:"characters.html#1299", baseRate:"100%", target:"全",
-      costReduction:"無尽(-0.5)",
-      lv10Effect:"全防360%上昇(自身のみ)",
-      sourceCharacters:[
-        {name:"石田三成(7)【覇】", no:"1299", slot:"移植不可"}
-      ]},
-    {name:"天導仁翼", skillPage:"characters.html#1298", baseRate:"40%", target:"砲・器",
-      costReduction:"無尽2(-1.0)",
-      lv10Effect:"総攻撃 4.0%×無尽武将数(4人)×2=32.0%",
-      sourceCharacters:[
-        {name:"豊臣秀長【覇】", no:"1298", slot:"移植不可"}
-      ]},
-    {name:"不撓六文銭", skillPage:"characters.html#1304", baseRate:"100%", target:"全",
-      costReduction:"無尽(-0.5)",
-      lv10Effect:"防御500%上昇(無尽持ち追加・極限スキルの防御・破壊効果2倍)",
-      sourceCharacters:[
-        {name:"真田昌幸(5)", no:"1304", slot:"移植不可"}
-      ]},
-    {name:"火槍猛進", skillPage:"skills.html#火槍猛進", baseRate:"55%", target:"槍・弓・器・鉄",
-      costReduction:"無尽(-0.5)",
-      lv10Effect:"防御740%上昇(部隊コスト10以下で効果2倍)",
-      sourceCharacters:[
-        {name:"福島正則(4)", no:"1305", slot:"移植不可"}
+        {name:"豊臣秀長【覇】", no:"1298", slot:"B"}
       ]},
     {name:"絶無灰尽", skillPage:"skills.html#絶無灰尽", baseRate:"100%", target:"全",
       costReduction:"無尽(-0.5)",
@@ -143,17 +113,47 @@
       sourceCharacters:[
         {name:"島津義弘(4)", no:"1294", slot:"A"}
       ]},
-    {name:"幻王ノ采配", skillPage:"characters.html#1274", baseRate:"100%", target:"全",
-      costReduction:"無尽(-0.5)",
-      lv10Effect:"攻撃360%上昇(覇道・部隊内の無尽持ちスキルの攻撃効果2倍)",
+    {name:"覆天征軍", skillPage:"skills.html#覆天征軍", baseRate:"100%", target:"全",
+      costReduction:"無尽2(-1.0)",
+      lv10Effect:"攻撃900%上昇(TR1〜TR5は未確認)",
       sourceCharacters:[
-        {name:"豊臣秀吉【覇】", no:"1274", slot:"移植不可"}
+        {name:"豊臣秀長【覇】", no:"1298", slot:"A"}
+      ]},
+    {name:"火槍猛進", skillPage:"skills.html#火槍猛進", baseRate:"55%", target:"槍・弓・器・鉄",
+      costReduction:"無尽(-0.5)",
+      lv10Effect:"防御740%上昇(部隊コスト10以下で効果2倍)",
+      sourceCharacters:[
+        {name:"福島正則(4)", no:"1305", slot:"移植不可"}
       ]},
     {name:"智絶千算", skillPage:"characters.html#1275", baseRate:"100%", target:"全",
       costReduction:"無尽(-0.5)",
       lv10Effect:"攻撃680%上昇(対象兵科指揮時、極限スキルの攻撃効果3.5倍)",
       sourceCharacters:[
         {name:"竹中半兵衛【覇】", no:"1275", slot:"移植不可"}
+      ]},
+    {name:"不撓六文銭", skillPage:"characters.html#1304", baseRate:"100%", target:"全",
+      costReduction:"無尽(-0.5)",
+      lv10Effect:"防御500%上昇(無尽持ち追加・極限スキルの防御・破壊効果2倍)",
+      sourceCharacters:[
+        {name:"真田昌幸(5)", no:"1304", slot:"移植不可"}
+      ]},
+    {name:"義戦ノ旗手", skillPage:"characters.html#1299", baseRate:"100%", target:"全",
+      costReduction:"無尽(-0.5)",
+      lv10Effect:"全防360%上昇(自身のみ)",
+      sourceCharacters:[
+        {name:"石田三成(7)【覇】", no:"1299", slot:"移植不可"}
+      ]},
+    {name:"幻王ノ采配", skillPage:"characters.html#1274", baseRate:"100%", target:"全",
+      costReduction:"無尽(-0.5)",
+      lv10Effect:"攻撃360%上昇(覇道・部隊内の無尽持ちスキルの攻撃効果2倍)",
+      sourceCharacters:[
+        {name:"豊臣秀吉【覇】", no:"1274", slot:"移植不可"}
+      ]},
+    {name:"天導仁翼", skillPage:"characters.html#1298", baseRate:"40%", target:"砲・器",
+      costReduction:"無尽2(-1.0)",
+      lv10Effect:"総攻撃 4.0%×無尽武将数(4人)×2=32.0%",
+      sourceCharacters:[
+        {name:"豊臣秀長【覇】", no:"1298", slot:"移植不可"}
       ]}
   ];
 
