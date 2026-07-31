@@ -112,7 +112,7 @@
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script src="assets/js/comments-widget.js"></script>
 <script>
-  const SKILL_DB_VERSION = 'v2026-07-29.19';
+  const SKILL_DB_VERSION = 'v2026-08-01.1';
   document.addEventListener('DOMContentLoaded', ()=>{
     const badge = document.getElementById('simVersionBadge');
     if(badge) badge.textContent = SKILL_DB_VERSION;
@@ -558,7 +558,8 @@
         {name:"毛利元就(4)", no:"1293", slot:"C・S1"},
         {name:"島津義弘(4)", no:"1294", slot:"C"},
         {name:"大友宗麟(6)", no:"1295", slot:"S1"},
-        {name:"真田昌幸(5)", no:"1304", slot:"B"}
+        {name:"真田昌幸(5)", no:"1304", slot:"B"},
+        {name:"徳川家康【覇(6)】", no:"1288", slot:"候補(未確認)"}
       ],
       ownHiddenCandidate: {skill:"千里必勝ノ神算", rank:"SS"},
       trTable:[
@@ -568,6 +569,27 @@
         {level:"TR3", points:"90", effect:"全 覇道　確率 55% / 攻撃1370%上昇+防御1370%上昇+破壊200%上昇"},
         {level:"TR4", points:"150", effect:"全 覇道　確率 60% / 攻撃1600%上昇+防御1600%上昇+破壊250%上昇"},
         {level:"TR5", points:"200", effect:"全 覇道　確率 70% / 攻撃1870%上昇+防御1870%上昇+破壊300%上昇"}
+      ]
+    },
+    {
+      name:"伏雷蒼樹", rank:"SSS", baseRate:"卓越50%", target:"弓・砲・器 覇道",
+      effectSummary:"SSS/LV10 確率 卓越追加確率50%で発動(通常確率では発動しない) 攻防200%上昇/対象:弓・砲・器　覇道\n①卓越の追加発動確率50%で発動する\n②攻防各200%上昇する\n③卓越追加確率のうち100%を超えた分を超過分×5.5%として攻防効果に加算する(二重卓越不可)",
+      categoryLinks:[
+        {href:"skills-hadou.html", label:"覇道スキル一覧を見る"},
+        {href:"skills-takuetsu.html", label:"卓越スキル一覧を見る"}
+      ],
+      sourceCharacters:[
+        {name:"徳川家康【覇(6)】", no:"1288", slot:"移植不可"}
+      ],
+      ownHiddenCandidate: {skill:"伏雷蒼樹", rank:"SSS"},
+      trTable:[
+        {level:"LV10", points:"-", effect:"弓・砲・器 覇道　卓越追加確率50%で発動 / 攻防200%上昇(超過分×5.5%)"},
+        {level:"TR1", points:"10", effect:"弓・砲・器 覇道　卓越追加確率60%で発動 / 攻防200%上昇(超過分×5.6%)"},
+        {level:"TR2", points:"40", effect:"弓・砲・器 覇道　卓越追加確率70%で発動 / 攻防200%上昇(超過分×5.8%)"},
+        {level:"TR3", points:"90", effect:"弓・砲・器 覇道　卓越追加確率90%で発動 / 攻防200%上昇(超過分×6.0%)"},
+        {level:"TR4", points:"150", effect:"弓・砲・器 覇道　卓越追加確率120%で発動 / 攻防200%上昇(超過分×6.4%)"},
+        {level:"TR5", points:"200", effect:"弓・砲・器 覇道　卓越追加確率150%で発動 / 攻防200%上昇(超過分×6.8%)"},
+        {level:"TR6", points:"パラレル", effect:"弓・砲・器 覇道　卓越追加確率200%で発動 / 攻防200%上昇(超過分×7.0%)"}
       ]
     },
     {
@@ -834,7 +856,8 @@
         {name:"伊達政宗(6)", no:"1292", slot:"C・S1"},
         {name:"斎藤道三(3)", no:"1297", slot:"S1"},
         {name:"上杉謙信(復刻)【覇】", no:"10074", slot:"C"},
-        {name:"真田昌幸(5)", no:"1304", slot:"S1"}
+        {name:"真田昌幸(5)", no:"1304", slot:"S1"},
+        {name:"徳川家康【覇(6)】", no:"1288", slot:"候補(未確認)"}
       ],
       ownHiddenCandidate: {skill:"幻像鏡花", rank:"SSS"},
       trTable:[
@@ -948,6 +971,25 @@
       ]
     },
     {
+      name:"武天蜻蛉切", rank:"S", baseRate:100, target:"全",
+      effectSummary:"S/LV10 確率 100% 攻撃800%上昇/対象:全\n模倣不可\n①攻撃800%上昇する\n②8部隊以下の攻撃戦闘時、このスキルを所持する武将の全スキルの卓越追加確率が480%上昇する(同じ列の卓越依存スキルにのみ加算)\n③8部隊以下の攻撃戦闘時、部隊内武将全スキルの卓越発動率が15%上昇する(特殊効果は自部隊内では重複不可)",
+      categoryLinks:[
+        {href:"skills-takuetsu.html", label:"卓越スキル一覧を見る"}
+      ],
+      sourceCharacters:[
+        {name:"本多忠勝(2)", no:"1303", slot:"移植不可"}
+      ],
+      ownHiddenCandidate: {skill:"武天蜻蛉切", rank:"S"},
+      trTable:[
+        {level:"LV10", points:"-", effect:"全　確率 100% / 攻撃 800%上昇(卓越自己+480%/部隊+15%)"},
+        {level:"TR1", points:"10", effect:"全　確率 100% / 攻撃 880%上昇(卓越自己+500%/部隊+16%)"},
+        {level:"TR2", points:"40", effect:"全　確率 100% / 攻撃 1000%上昇(卓越自己+530%/部隊+17%)"},
+        {level:"TR3", points:"90", effect:"全　確率 100% / 攻撃 1150%上昇(卓越自己+560%/部隊+19%)"},
+        {level:"TR4", points:"150", effect:"全　確率 100% / 攻撃 1320%上昇(卓越自己+590%/部隊+21%)"},
+        {level:"TR5", points:"200", effect:"全　確率 100% / 攻撃 1570%上昇(卓越自己+620%/部隊+23%)"}
+      ]
+    },
+    {
       name:"八幡神ノ威光", rank:"SSS", baseRate:70, target:"部隊長",
       effectSummary:"SSS/LV10 確率 70% 対象:部隊長\n①部隊長の持つ模倣可能な初期スキルを1.25倍に強化して模倣する",
       categoryLinks:[
@@ -1020,6 +1062,23 @@
       ownHiddenCandidate: {skill:"四至ノ神域", rank:"SSS"},
       trTable:[
         {level:"LV10", points:"-", effect:"自身　確率 70% / 効果倍率 1.25倍"}
+      ]
+    },
+    {
+      name:"龍国ノ武威", rank:"S", baseRate:35, target:"全",
+      effectSummary:"S/LV10 確率 35% 防御600%上昇/対象:全\n本丸/所領防御陣形時のみ発動する\n①防御600%上昇する\n②このスキルを模倣したスキルの場合、防御600%×(0.6÷模倣スキルのレアリティ係数)上昇する(①の代わりに②が発動)",
+      sourceCharacters:[
+        {name:"上杉景勝(6)", no:"1301", slot:"移植不可"}
+      ],
+      ownHiddenCandidate: {skill:"龍国ノ武威", rank:"S"},
+      trTable:[
+        {level:"LV10", points:"-", effect:"全　確率 35% / 防御 600%上昇"},
+        {level:"TR1", points:"10", effect:"全　確率 38% / 防御 615%上昇"},
+        {level:"TR2", points:"40", effect:"全　確率 40% / 防御 630%上昇"},
+        {level:"TR3", points:"90", effect:"全　確率 45% / 防御 650%上昇"},
+        {level:"TR4", points:"150", effect:"全　確率 50% / 防御 680%上昇"},
+        {level:"TR5", points:"200", effect:"全　確率 60% / 防御 700%上昇"},
+        {level:"TR6", points:"パラレル", effect:"全　確率 70% / 防御 720%上昇"}
       ]
     },
     {
@@ -1303,7 +1362,8 @@
         {href:"skills-takuetsu.html", label:"卓越スキル一覧を見る"}
       ],
       sourceCharacters:[
-        {name:"小西行長(2)", no:"1308", slot:"B"}
+        {name:"小西行長(2)", no:"1308", slot:"B"},
+        {name:"徳川家康【覇(6)】", no:"1288", slot:"候補(未確認)"}
       ],
       ownHiddenCandidate: {skill:"至天ノ御剣", rank:"SSS"},
       trTable:[

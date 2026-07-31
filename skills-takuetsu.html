@@ -92,7 +92,7 @@
   <div class="sim-version-badge" id="simVersionBadge">v-</div>
 
 <script>
-  const TK_VERSION = 'v2026-08-01.2';
+  const TK_VERSION = 'v2026-08-01.3';
   document.addEventListener('DOMContentLoaded', ()=>{
     const badge = document.getElementById('simVersionBadge');
     if(badge) badge.textContent = TK_VERSION;
@@ -128,7 +128,7 @@
         {name:"毛利元就(4)", no:"1293", slot:"A"},
         {name:"島津義弘(4)", no:"1294", slot:"S2"}
       ]},
-    {name:"伏雷蒼樹", skillPage:"characters.html#1288", baseRate:"卓越50%", target:"弓・砲・器",
+    {name:"伏雷蒼樹", skillPage:"skills.html#伏雷蒼樹", baseRate:"卓越50%", target:"弓・砲・器",
       takuetsuEffect:"発動時、卓越追加確率の100%超過分を超過分×5.5%として攻防効果に加算(二重卓越不可)",
       lv10Effect:"攻防200%上昇",
       sourceCharacters:[
@@ -169,7 +169,8 @@
       lv10Effect:"部隊長の持つ模倣可能な初期スキルを模倣",
       sourceCharacters:[
         {name:"伊達政宗(6)", no:"1292", slot:"C・S1"},
-        {name:"斎藤道三(3)", no:"1297", slot:"S1"}
+        {name:"斎藤道三(3)", no:"1297", slot:"S1"},
+        {name:"徳川家康【覇(6)】", no:"1288", slot:"候補(未確認)"}
       ]},
     {name:"思金神ノ深謀", skillPage:"skills.html#思金神ノ深謀", baseRate:"60%", target:"部隊長",
       takuetsuEffect:"追加確率35%で通常攻撃/防御効果を1.3倍にして模倣",
@@ -200,7 +201,7 @@
       sourceCharacters:[
         {name:"真田昌幸(5)", no:"1304", slot:"C"}
       ]},
-    {name:"武天蜻蛉切", skillPage:"characters.html#1303", baseRate:"100%", target:"全",
+    {name:"武天蜻蛉切", skillPage:"skills.html#武天蜻蛉切", baseRate:"100%", target:"全",
       takuetsuEffect:"8部隊以下の攻撃戦闘時、自身の全スキルの卓越追加確率が480%(LV10)〜620%(TR5)上昇(同じ列の卓越依存スキルにのみ加算)+部隊内武将全スキルの卓越発動率が15%(LV10)〜23%(TR5)上昇(特殊効果は自部隊内では重複不可)",
       lv10Effect:"攻撃800%上昇(卓越自己+480%/部隊+15%)",
       sourceCharacters:[
