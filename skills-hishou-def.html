@@ -78,7 +78,7 @@
   <div class="sim-version-badge" id="simVersionBadge">v-</div>
 
 <script>
-  const HS_DEF_VERSION = 'v2026-07-30.2';
+  const HS_DEF_VERSION = 'v2026-08-01.1';
   document.addEventListener('DOMContentLoaded', ()=>{
     const badge = document.getElementById('simVersionBadge');
     if(badge) badge.textContent = HS_DEF_VERSION;
@@ -109,12 +109,11 @@
       sourceCharacters:[
         {name:"長尾景虎", no:"10064", slot:"B"}
       ]},
-    {name:"王花尖剣", skillPage:"skills.html#王花尖剣", baseRate:"64%", target:"槍・馬・砲・器",
-      hishouValue:"10",
-      lv10Effect:"防御320%上昇+飛翔値合計×10%加算",
+    {name:"偃武覇陣", skillPage:"characters.html#1263", baseRate:"50%", target:"全",
+      hishouValue:"30",
+      lv10Effect:"全攻防760%上昇+破壊150%上昇+回復速度500%上昇+覇道+撤退(陣での防御戦闘に不参加)+不屈1(模倣不可)",
       sourceCharacters:[
-        {name:"長尾景虎", no:"10064", slot:"S2"},
-        {name:"上杉謙信(復刻)【覇】", no:"10074", slot:"S2"}
+        {name:"徳川家康(覇5)", no:"1263", slot:"移植不可"}
       ]},
     {name:"神機采配", skillPage:"skills.html#神機采配", baseRate:"50%", target:"全",
       hishouValue:"9",
@@ -122,23 +121,18 @@
       sourceCharacters:[
         {name:"上杉謙信(復刻)【覇】", no:"10074", slot:"S1"}
       ]},
-    {name:"甲塞ノ龍砲", skillPage:"characters.html#1212", baseRate:"15%", target:"弓・砲・器",
-      hishouValue:"4",
-      lv10Effect:"防御134%上昇(敵軍4部隊以下で2倍、敵軍飛翔武将4人未満で通常ダメージ無効)",
-      sourceCharacters:[
-        {name:"九鬼嘉隆", no:"1212", slot:"移植不可"}
-      ]},
-    {name:"烈界 渡海龍", skillPage:"characters.html#1217", baseRate:"100%", target:"槍・馬・器・鉄",
-      hishouValue:"2",
-      lv10Effect:"防御170%上昇(極限スキル防御効果3倍・模倣不可・TR1〜TR5は未確認)",
-      sourceCharacters:[
-        {name:"宇喜多秀家(2)", no:"1217", slot:"移植不可"}
-      ]},
     {name:"万界寂香", skillPage:"characters.html#1243", baseRate:"45%", target:"槍・砲・器",
       hishouValue:"6",
       lv10Effect:"防御330%上昇(自拠点防御時1.5倍・TR1〜TR5は未確認)",
       sourceCharacters:[
         {name:"朝倉義景", no:"1243", slot:"移植不可"}
+      ]},
+    {name:"王花尖剣", skillPage:"skills.html#王花尖剣", baseRate:"64%", target:"槍・馬・砲・器",
+      hishouValue:"10",
+      lv10Effect:"防御320%上昇+飛翔値合計×10%加算",
+      sourceCharacters:[
+        {name:"長尾景虎", no:"10064", slot:"S2"},
+        {name:"上杉謙信(復刻)【覇】", no:"10074", slot:"S2"}
       ]},
     {name:"雷閃鉾", skillPage:"characters-kyoku.html#2388", baseRate:"54%", target:"全",
       hishouValue:"12",
@@ -146,11 +140,17 @@
       sourceCharacters:[
         {name:"成松信勝", no:"2388", slot:"移植不可", db:"kyoku"}
       ]},
-    {name:"偃武覇陣", skillPage:"characters.html#1263", baseRate:"50%", target:"全",
-      hishouValue:"30",
-      lv10Effect:"全攻防760%上昇+破壊150%上昇+回復速度500%上昇+覇道+撤退(陣での防御戦闘に不参加)+不屈1(模倣不可)",
+    {name:"烈界 渡海龍", skillPage:"characters.html#1217", baseRate:"100%", target:"槍・馬・器・鉄",
+      hishouValue:"2",
+      lv10Effect:"防御170%上昇(極限スキル防御効果3倍・模倣不可・TR1〜TR5は未確認)",
       sourceCharacters:[
-        {name:"徳川家康(覇5)", no:"1263", slot:"移植不可"}
+        {name:"宇喜多秀家(2)", no:"1217", slot:"移植不可"}
+      ]},
+    {name:"甲塞ノ龍砲", skillPage:"characters.html#1212", baseRate:"15%", target:"弓・砲・器",
+      hishouValue:"4",
+      lv10Effect:"防御134%上昇(敵軍4部隊以下で2倍、敵軍飛翔武将4人未満で通常ダメージ無効)",
+      sourceCharacters:[
+        {name:"九鬼嘉隆", no:"1212", slot:"移植不可"}
       ]}
   ];
 

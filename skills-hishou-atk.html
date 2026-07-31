@@ -78,7 +78,7 @@
   <div class="sim-version-badge" id="simVersionBadge">v-</div>
 
 <script>
-  const HS_ATK_VERSION = 'v2026-07-30.1';
+  const HS_ATK_VERSION = 'v2026-08-01.1';
   document.addEventListener('DOMContentLoaded', ()=>{
     const badge = document.getElementById('simVersionBadge');
     if(badge) badge.textContent = HS_ATK_VERSION;
@@ -89,17 +89,29 @@
      攻防両方に効果があるスキルは、防御系一覧(skills-hishou-def.html)にも重複掲載する。
   ============================================ */
   const hishouAtkSkills = [
+    {name:"義陣絶刀", skillPage:"skills.html#義陣絶刀", baseRate:"55%", target:"全",
+      hishouValue:"17",
+      lv10Effect:"攻撃840%上昇+防御840%上昇",
+      sourceCharacters:[
+        {name:"長尾景虎", no:"10064", slot:"B"}
+      ]},
     {name:"星神闘覇", skillPage:"skills.html#星神闘覇", baseRate:"100%", target:"全",
       hishouValue:"15",
       lv10Effect:"攻撃770%上昇+速度200%上昇(TR別データは未確認)",
       sourceCharacters:[
         {name:"毛利輝元(覇)", no:"1251", slot:"C"}
       ]},
-    {name:"義陣絶刀", skillPage:"skills.html#義陣絶刀", baseRate:"55%", target:"全",
-      hishouValue:"17",
-      lv10Effect:"攻撃840%上昇+防御840%上昇",
+    {name:"偃武覇陣", skillPage:"characters.html#1263", baseRate:"50%", target:"全",
+      hishouValue:"30",
+      lv10Effect:"全攻防760%上昇+破壊150%上昇+回復速度500%上昇+覇道+撤退(陣での防御戦闘に不参加)+不屈1(模倣不可)",
       sourceCharacters:[
-        {name:"長尾景虎", no:"10064", slot:"B"}
+        {name:"徳川家康(覇5)", no:"1263", slot:"移植不可"}
+      ]},
+    {name:"刈世公子", skillPage:"characters.html#1271", baseRate:"卓越のみ(追加確率25%)", target:"弓・馬・器・焙",
+      hishouValue:"17",
+      lv10Effect:"攻撃440%上昇(通常確率では発動せず卓越時のみ発動・模倣不可・飛翔獲得部分は二重卓越不可)",
+      sourceCharacters:[
+        {name:"小早川秀秋(4)", no:"1271", slot:"移植不可"}
       ]},
     {name:"凶星ノ斬光", skillPage:"characters.html#1224", baseRate:"100%", target:"弓・馬・器・焙",
       hishouValue:"2",
@@ -118,18 +130,6 @@
       lv10Effect:"攻撃50%上昇(飛翔値合計×9%加算・TR1〜TR5は未確認)",
       sourceCharacters:[
         {name:"宇喜多直家(3)", no:"1256", slot:"移植不可"}
-      ]},
-    {name:"偃武覇陣", skillPage:"characters.html#1263", baseRate:"50%", target:"全",
-      hishouValue:"30",
-      lv10Effect:"全攻防760%上昇+破壊150%上昇+回復速度500%上昇+覇道+撤退(陣での防御戦闘に不参加)+不屈1(模倣不可)",
-      sourceCharacters:[
-        {name:"徳川家康(覇5)", no:"1263", slot:"移植不可"}
-      ]},
-    {name:"刈世公子", skillPage:"characters.html#1271", baseRate:"卓越のみ(追加確率25%)", target:"弓・馬・器・焙",
-      hishouValue:"17",
-      lv10Effect:"攻撃440%上昇(通常確率では発動せず卓越時のみ発動・模倣不可・飛翔獲得部分は二重卓越不可)",
-      sourceCharacters:[
-        {name:"小早川秀秋(4)", no:"1271", slot:"移植不可"}
       ]}
   ];
 
