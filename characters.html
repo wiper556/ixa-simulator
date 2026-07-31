@@ -497,25 +497,26 @@
         {level:"TR4", points:"150", effect:"砲・器 覇道　確率 37% / 総攻撃 37%上昇"},
         {level:"TR5", points:"200", effect:"砲・器 覇道　確率 37% / 総攻撃 40%上昇"}
       ]},
-    {name:"豊臣秀吉【覇(5)】", no:"1287", ch:"30章", cost:5.0, troop:"弓馬砲器防", sub:"覇道", effect:"部隊内覇武将数×200%上昇／部隊長時は効果2倍", reviewedOk:true,
+    {name:"豊臣秀吉【覇(5)】", no:"1287", ch:"30章", cost:5.0, troop:"弓馬砲器防", sub:"覇道", effect:"部隊内覇武将数×200%上昇／部隊長時は効果2倍", reviewedOk:true, approved:true,
       furigana:"とよとみひでよし", illustrator:"直良有祐",
       imageFull:"assets/img/characters/no1287_full.png", imageChar:"assets/img/characters/no1287_char.png",
       atkBase:1210, atkGrowth:66, defBase:1330, defGrowth:83, tacticsBase:870.0, tacticsGrowth:4.5, lv0Troops:5000,
       // カード画像照合済み(2026-07-30): 槍A/弓S/馬X/器A
       rankGrades:{yari:'A', yumi:'S', uma:'X', ki:'A'},
       initialSkill:"暘谷ノ人傑",
-      skillDetail:"SSS/LV10 確率 40% 防御上昇/対象:弓・馬・砲・器　覇道\n①部隊内覇武将数×200%を防御効果に加算する\n②部隊長時、上記の防御効果を2倍にする(部隊長時効果のみ、小隊長での模倣時無効)\n③覇道を持つため所属部隊の武将のスキルを無効化や発動率低下から保護する",
+      // 部隊内覇武将数の上限は4人(2026-07-31、ユーザー確認)。効果最大時=覇武将4人+部隊長時2倍で計算。
+      skillDetail:"SSS/LV10 確率 40% 防御上昇/対象:弓・馬・砲・器　覇道\n①部隊内覇武将数(最大4人)×200%を防御効果に加算する\n②部隊長時、上記の防御効果を2倍にする(部隊長時効果のみ、小隊長での模倣時無効)\n③覇道を持つため所属部隊の武将のスキルを無効化や発動率低下から保護する",
       categoryLinks:[
         {href:"skills-hadou.html", label:"覇道スキル一覧を見る"}
       ],
       trTable:[
-        {level:"LV10", points:"-", effect:"弓・馬・砲・器 覇道　確率 40% / 防御 200%×覇武将数(部隊長時2倍)"},
-        {level:"TR1", points:"10", effect:"弓・馬・砲・器 覇道　確率 40% / 防御 220%×覇武将数(部隊長時2倍)"},
-        {level:"TR2", points:"40", effect:"弓・馬・砲・器 覇道　確率 40% / 防御 250%×覇武将数(部隊長時2倍)"},
-        {level:"TR3", points:"90", effect:"弓・馬・砲・器 覇道　確率 40% / 防御 300%×覇武将数(部隊長時2倍)"},
-        {level:"TR4", points:"150", effect:"弓・馬・砲・器 覇道　確率 40% / 防御 360%×覇武将数(部隊長時2倍)"},
-        {level:"TR5", points:"200", effect:"弓・馬・砲・器 覇道　確率 40% / 防御 450%×覇武将数(部隊長時2倍)"},
-        {level:"TR6", points:"パラレル", effect:"弓・馬・砲・器 覇道　確率 40% / 防御 540%×覇武将数(部隊長時2倍)"}
+        {level:"LV10", points:"-", effect:"弓・馬・砲・器 覇道　確率 40% / 防御 200%×覇武将数(4人)×部隊長2倍=1600.0%上昇"},
+        {level:"TR1", points:"10", effect:"弓・馬・砲・器 覇道　確率 40% / 防御 220%×覇武将数(4人)×部隊長2倍=1760.0%上昇"},
+        {level:"TR2", points:"40", effect:"弓・馬・砲・器 覇道　確率 40% / 防御 250%×覇武将数(4人)×部隊長2倍=2000.0%上昇"},
+        {level:"TR3", points:"90", effect:"弓・馬・砲・器 覇道　確率 40% / 防御 300%×覇武将数(4人)×部隊長2倍=2400.0%上昇"},
+        {level:"TR4", points:"150", effect:"弓・馬・砲・器 覇道　確率 40% / 防御 360%×覇武将数(4人)×部隊長2倍=2880.0%上昇"},
+        {level:"TR5", points:"200", effect:"弓・馬・砲・器 覇道　確率 40% / 防御 450%×覇武将数(4人)×部隊長2倍=3600.0%上昇"},
+        {level:"TR6", points:"パラレル", effect:"弓・馬・砲・器 覇道　確率 40% / 防御 540%×覇武将数(4人)×部隊長2倍=4320.0%上昇"}
       ],
       // 45do.info確認(生HTML照合済み、2026-07-31): skiladd_wrapの見出し(候補A/B/C/S1/S2)と直後のスキル名が位置対応しており明示的。
       synthesisTable:[
