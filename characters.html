@@ -560,7 +560,7 @@
         {slot:"S1", skill:"不制于天地人", rank:"S", afterSkill:"不制于天地人", afterRank:"S", rate:"50%", target:"槍・弓・器・鉄", effectShort:"防御を係数×人数で上昇(220人以下で1.5倍)"},
         {slot:"S2", skill:"虚実兵妙", rank:"SS", afterSkill:"虚実兵妙", afterRank:"SS", rate:"100%", target:"全", effectShort:"防御740%上昇+敵軍卓越確率-8%"}
       ]},
-    {name:"織田信長【覇(8)】", no:"1286", ch:"30章", cost:6.0, troop:"砲器攻", sub:"覇道", effect:"部隊総攻撃力上昇",
+    {name:"織田信長【覇(8)】", no:"1286", ch:"30章", cost:6.0, troop:"砲器攻", sub:"覇道", effect:"部隊総攻撃力上昇", reviewedOk:true,
       furigana:"おだのぶなが", illustrator:"直良有祐",
       imageFull:"assets/img/characters/no1286_full.png", imageChar:"assets/img/characters/no1286_char.png",
       atkBase:1320, atkGrowth:83, defBase:1200, defGrowth:64, tacticsBase:860.0, tacticsGrowth:4.0, lv0Troops:5470,
@@ -575,6 +575,14 @@
         {level:"TR3", points:"90", effect:"砲・器 覇道　確率 37% / 総攻撃 35%上昇"},
         {level:"TR4", points:"150", effect:"砲・器 覇道　確率 37% / 総攻撃 37%上昇"},
         {level:"TR5", points:"200", effect:"砲・器 覇道　確率 37% / 総攻撃 40%上昇"}
+      ],
+      // 45do.info(ordinary/0361)生HTML照合+ixagno.blog.fc2.com(blog-entry-11057、パラレル版記事内の「通常版」合成テーブル比較)の両ソースで一致確認済み。A・Bが同一スキル(天地超克)の点も両ソース一致。
+      synthesisTable:[
+        {slot:"A", skill:"天地超克", rank:"SSS", afterSkill:"天地超克", afterRank:"SSS", rate:"46%", target:"全 不屈1", effectShort:"攻撃を係数×人数で上昇"},
+        {slot:"B", skill:"天地超克", rank:"SSS", afterSkill:"天地超克", afterRank:"SSS", rate:"46%", target:"全 不屈1", effectShort:"攻撃を係数×人数で上昇"},
+        {slot:"C", skill:"焼尽神無", rank:"SS", afterSkill:"焼尽神無", afterRank:"SS", rate:"44%", target:"全 無尽", effectShort:"攻撃を係数×人数で上昇"},
+        {slot:"S1", skill:"勇冠三軍", rank:"SSS", afterSkill:"勇冠三軍", afterRank:"SSS", rate:"45%", target:"全", effectShort:"攻撃50%上昇+攻撃を係数×人数で上昇"},
+        {slot:"S2", skill:"万物神勇", rank:"SSS", afterSkill:"万物神勇", afterRank:"SSS", rate:"43%", target:"全 撤退", effectShort:"攻撃を係数×人数で上昇"}
       ]},
     {name:"豊臣秀吉【覇(5)】", no:"1287", ch:"30章", cost:5.0, troop:"弓馬砲器防", sub:"覇道", effect:"部隊内覇武将数×200%上昇／部隊長時は効果2倍", reviewedOk:true, approved:true,
       furigana:"とよとみひでよし", illustrator:"直良有祐",
