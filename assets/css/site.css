@@ -89,7 +89,15 @@ body{
   .sidebar-overlay{display:none;}
 }
 
-.site-main{max-width:960px;margin:0 auto;padding:32px 16px 60px;}
+/* min-width:0が無いと、.site-mainは.site-content(縦flex)のflexアイテムとして
+   自動最小幅=子孫の min-content 幅になる。表セル側でoverflow-x:auto包み(例: .tk-table-scroll)を
+   付けても、それはflexアイテム自身ではない通常のdiv止まりで自動最小幅ゼロの特例が効かないため、
+   nowrapセル内の長い一続きの文字列(例: 卓越発動率の説明文)がsite-mainひいてはページ全体を
+   押し広げ、内部スクロールでなくページ全体の横スクロールを引き起こしていた。
+   (伏雷蒼樹の発動率テキストが長すぎて発生した横スクロール事案の根本原因)
+   min-width:0で「stretchで縮められる」ようにし、実際の折り返し/スクロールは各ページの
+   overflow-x:auto包み側に委ねる。 */
+.site-main{max-width:960px;margin:0 auto;padding:32px 16px 60px;min-width:0;}
 
 .site-footer{
   margin-top:40px;padding:22px 16px;border-top:1px solid var(--line);
