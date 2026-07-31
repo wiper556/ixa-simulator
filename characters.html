@@ -386,7 +386,16 @@
         {level:"TR4", points:"150", effect:"全 無尽　確率 100% / 防御 750%上昇(効果2.4倍)"},
         {level:"TR5", points:"200", effect:"全 無尽　確率 100% / 防御 840%上昇(効果2.5倍)"},
         {level:"TR6", points:"パラレル", effect:"全 無尽　確率 100% / 防御 1000%上昇(効果2.6倍)"}
-      ]},
+      ],
+      // synthesisTable: ixanary.com(/skills/不撓六文銭/ 合成テーブル)とixagno.blog.fc2.com(blog-entry-10829)で照合済み、A/B/C/S1/S2とも両ソース一致
+      synthesisTable:[
+        {slot:"A", skill:"國才連豪", rank:"SS", afterSkill:"國才連豪", afterRank:"SS", rate:"50%", target:"全", effectShort:"防御が係数×同スキル所持武将数で上昇"},
+        {slot:"B", skill:"千里必勝ノ神算", rank:"SS", afterSkill:"千里必勝ノ神算", afterRank:"SS", rate:"42%", target:"全 覇道", effectShort:"攻撃1010%上昇(防御同値)+破壊150%上昇"},
+        {slot:"C", skill:"布刀玉ノ策", rank:"SS", afterSkill:"布刀玉ノ策", afterRank:"SS", rate:"100%", target:"全", effectShort:"攻撃940%上昇(防御同値)+自軍全武将の卓越確率20%上昇"},
+        {slot:"S1", skill:"幻像鏡花", rank:"SSS", afterSkill:"幻像鏡花", afterRank:"SSS", rate:"56%", target:"部隊長", effectShort:"部隊長の初期スキルを卓越:追加確率40%で1.35倍にして模倣"},
+        {slot:"S2", skill:"龍驤虎躍", rank:"SS", afterSkill:"龍驤虎躍", afterRank:"SS", rate:"60%", target:"全", effectShort:"攻防810%上昇+コスト-1"}
+      ],
+      reviewedOk:true},
     {name:"福島正則(4)", no:"1305", ch:"31章", cost:3.0, troop:"槍弓器鉄防", sub:"無尽", effect:"部隊コスト10以下で効果2倍",
       furigana:"ふくしままさのり", illustrator:"直良有祐",
       imageFull:"assets/img/characters/no1305_full.png", imageChar:"assets/img/characters/no1305_char.png",
@@ -401,7 +410,16 @@
         {level:"TR2", points:"40", effect:"槍・弓・器・鉄 無尽　確率 55% / 防御 800%上昇"},
         {level:"TR3", points:"90", effect:"槍・弓・器・鉄 無尽　確率 55% / 防御 880%上昇"},
         {level:"TR4", points:"150", effect:"槍・弓・器・鉄 無尽　確率 55% / 防御 970%上昇"},
-        {level:"TR5", points:"200", effect:"槍・弓・器・鉄 無尽　確率 55% / 防御 1090%上昇"}
+        {level:"TR5", points:"200", effect:"槍・弓・器・鉄 無尽　確率 55% / 防御 1090%上昇"},
+        {level:"TR6", points:"パラレル", effect:"槍・弓・器・鉄 無尽　確率 65% / 防御 1180%上昇"}
+      ],
+      // synthesisTable: ixanary.com(/skills/火槍猛進/ 合成テーブル)とixagno.blog.fc2.com(blog-entry-10828)で照合済み、A/B/C/S1/S2とも両ソース一致。S1は自己参照(火槍猛進自身)
+      synthesisTable:[
+        {slot:"A", skill:"龍驤虎躍", rank:"SS", afterSkill:"龍驤虎躍", afterRank:"SS", rate:"60%", target:"全", effectShort:"攻防810%上昇+コスト-1"},
+        {slot:"B", skill:"仙境解脱", rank:"SS", afterSkill:"仙境解脱", afterRank:"SS", rate:"48%", target:"全", effectShort:"防御910%上昇+コスト-1.5"},
+        {slot:"C", skill:"天宇受売命", rank:"SSS", afterSkill:"天宇受売命", afterRank:"SSS", rate:"70%", target:"自身", effectShort:"自身の初期スキルを1.25倍にして模倣"},
+        {slot:"S1", skill:"火槍猛進", rank:"S", afterSkill:"火槍猛進", afterRank:"S", rate:"55%", target:"槍・弓・器・鉄 無尽", effectShort:"防御740%上昇(部隊コスト10以下で効果2倍)"},
+        {slot:"S2", skill:"四天轟雷", rank:"SS", afterSkill:"四天轟雷", afterRank:"SS", rate:"100%", target:"全", effectShort:"攻防360%上昇+砲・器対象追加"}
       ]},
     {name:"毛利輝元(5)", no:"1306", ch:"31章", cost:5.0, troop:"弓砲器攻", sub:"", effect:"敵軍部隊数依存",
       furigana:"もうりてるもと", illustrator:"直良有祐",
@@ -1817,7 +1835,7 @@
   }
 
   // スキルデータベース(skills.html)にページがあるスキル名の一覧。ここに載っているスキルはリンク化する。
-  const LINKED_SKILLS = ['勇冠三軍', '焼尽神無', '覆天征軍', '終焉焦土', '万物神勇', '経津主神ノ剣', '従魔絶神', '梵天浄界', '岳王ノ加護', '國才連豪', '虎賁統帥', '天地超克', '神羅聖域', '信明義星', '千里必勝ノ神算', '刹那無影', '月煌侵蝕', '虚実兵妙', '仙境解脱', '幻像鏡花', '開闢ノ逆鉾', '思金神ノ深謀', '戦華雄渾', '月詠ノ覇威', '絶無灰尽', '八幡神ノ威光', '龍驤虎躍', '永世ノ天隻', '黄泉醜女ノ屍兵', '高津姫神', '義陣絶刀', '破国八陣', '轟渦ノ神将', '王花尖剣', '泰厳射手', '国呑ノ蟒蛇', '虚空ノ導', '龍気剣鳴', '雄武英略', '坂西都督', '摩利支天ノ法', '不制于天地人', '神機采配', '十束ノ神域', '天聖宝冠', '四天轟雷', '火之迦具土神', '天香山命', '天津甕星ノ雷', '布都御魂ノ鬨', '天宇受売命', '万鬼闘帝', '三全将帥'];
+  const LINKED_SKILLS = ['勇冠三軍', '焼尽神無', '覆天征軍', '終焉焦土', '万物神勇', '経津主神ノ剣', '従魔絶神', '梵天浄界', '岳王ノ加護', '國才連豪', '虎賁統帥', '天地超克', '神羅聖域', '信明義星', '千里必勝ノ神算', '刹那無影', '月煌侵蝕', '虚実兵妙', '仙境解脱', '幻像鏡花', '開闢ノ逆鉾', '思金神ノ深謀', '戦華雄渾', '月詠ノ覇威', '絶無灰尽', '八幡神ノ威光', '龍驤虎躍', '永世ノ天隻', '黄泉醜女ノ屍兵', '高津姫神', '義陣絶刀', '破国八陣', '轟渦ノ神将', '王花尖剣', '泰厳射手', '国呑ノ蟒蛇', '虚空ノ導', '龍気剣鳴', '雄武英略', '坂西都督', '摩利支天ノ法', '不制于天地人', '神機采配', '十束ノ神域', '天聖宝冠', '四天轟雷', '火之迦具土神', '天香山命', '天津甕星ノ雷', '布都御魂ノ鬨', '天宇受売命', '万鬼闘帝', '三全将帥', '布刀玉ノ策', '火槍猛進'];
 
   function gdbSkillLink(skillName, rank){
     const label = gdbEscapeHtml(skillName)+' '+gdbEscapeHtml(rank||'');
