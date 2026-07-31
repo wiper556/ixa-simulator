@@ -160,7 +160,7 @@
       sourceCharacters:[
         {name:"遠藤基信", no:"2378", slot:"移植不可", db:"kyoku"}
       ]},
-    {name:"伏雷蒼樹", skillPage:"characters.html#1288", baseRate:"卓越追加確率50%で発動(通常確率では発動しない)", target:"弓・砲・器",
+    {name:"伏雷蒼樹", skillPage:"characters.html#1288", baseRate:"卓越50%", target:"弓・砲・器",
       takuetsuEffect:"発動時、卓越追加確率の100%超過分を超過分×5.5%として攻防効果に加算(二重卓越不可)",
       lv10Effect:"攻防200%上昇",
       sourceCharacters:[
@@ -261,7 +261,7 @@
         const dbPage = c.db === 'kyoku' ? 'characters-kyoku.html' : 'characters.html';
         return '<a href="'+dbPage+'#'+encodeURIComponent(c.no)+'">'+tkEscapeHtml(c.name)+'('+tkEscapeHtml(c.slot)+')</a>';
       }).join('<br>') || '-';
-      return '<tr><td><a href="'+s.skillPage+'">'+tkEscapeHtml(s.name)+'</a></td><td>'+tkEscapeHtml(s.baseRate||'-')+'</td><td>'+tkColorizeMujin(s.target||'-')+'</td>'
+      return '<tr><td><a href="'+s.skillPage+'">'+tkEscapeHtml(s.name)+'</a></td><td>'+tkColorizeMujin(s.baseRate||'-')+'</td><td>'+tkColorizeMujin(s.target||'-')+'</td>'
         + '<td class="tk-col-takuetsu">'+tkColorizeMujin(s.takuetsuEffect||'-')+'</td>'
         + '<td class="tk-col-effect">'+tkColorizeMujin(s.lv10Effect||'-')+'</td>'
         + '<td style="white-space:normal;">'+sources+'</td></tr>';
