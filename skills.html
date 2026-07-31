@@ -349,7 +349,8 @@
       name:"國才連豪", rank:"SS", baseRate:50, target:"全",
       effectSummary:"SS/LV10 確率 50% 防御上昇/対象:全\n①部隊内の國才連豪所持武将数×310%を防御効果に加算する",
       sourceCharacters:[
-        {name:"石田三成(7)【覇】", no:"1299", slot:"S2"}
+        {name:"石田三成(7)【覇】", no:"1299", slot:"S2"},
+        {name:"小西行長(2)", no:"1308", slot:"A"}
       ],
       ownHiddenCandidate: {skill:"國才連豪", rank:"SS"},
       trTable:[
@@ -450,7 +451,8 @@
       sourceCharacters:[
         {name:"毛利輝元(覇)", no:"1251", slot:"A"},
         {name:"最上義光(覇)", no:"1262", slot:"A"},
-        {name:"上杉謙信(覇2)", no:"1238", slot:"B・C"}
+        {name:"上杉謙信(覇2)", no:"1238", slot:"B・C"},
+        {name:"小西行長(2)", no:"1308", slot:"S2"}
       ],
       ownHiddenCandidate: {skill:"龍驤虎躍", rank:"SS"},
       trTable:[
@@ -699,7 +701,7 @@
         {level:"TR3", points:"90", coefficient:"9.3", effect:"槍・弓・器・鉄　確率 50% / 防御 9.3%×防御参加武将数(220人)×1.5倍=3069.0%"},
         {level:"TR4", points:"150", coefficient:"9.6", effect:"槍・弓・器・鉄　確率 50% / 防御 9.6%×防御参加武将数(220人)×1.5倍=3168.0%"},
         {level:"TR5", points:"200", coefficient:"10.2", effect:"槍・弓・器・鉄　確率 50% / 防御 10.2%×防御参加武将数(220人)×1.5倍=3366.0%"},
-        {level:"TR6", points:"パラレル", coefficient:"11.2", effect:"槍・弓・器・鉄　確率 50% / 防御 11.2%×防御参加武将数(220人)×1.5倍=3696.0%"}
+        {level:"TR6", points:"パラレル", coefficient:"11.2", effect:"槍・弓・器・鉄　確率 60% / 防御 11.2%×防御参加武将数(220人)×1.5倍=3696.0%"}
       ]
     },
     {
@@ -1158,6 +1160,38 @@
         {level:"TR3", points:"-", coefficient:"6.5", effect:"槍・弓・器・騎　確率 48% / 防御 6.5%×防御参加武将数(280人)=1820.0%(卓越:追加確率10%で1.2倍)"},
         {level:"TR4", points:"-", coefficient:"6.6", effect:"槍・弓・器・騎　確率 48% / 防御 6.6%×防御参加武将数(280人)=1848.0%(卓越:追加確率10%で1.2倍)"},
         {level:"TR5", points:"-", coefficient:"6.7", effect:"槍・弓・器・騎　確率 48% / 防御 6.7%×防御参加武将数(280人)=1876.0%(卓越:追加確率10%で1.2倍)"}
+      ]
+    },
+    {
+      name:"文治ノ護剣", rank:"S", baseRate:48, target:"全",
+      effectSummary:"S/LV10 確率 48% 防御450%上昇/対象:全\n①防御450%上昇する\n②所有者より全体格付「戦果」が上位の城主が敵軍にいた場合、このスキルの防御効果が3倍となる(本丸防御陣形・所領防御陣形のみ発動)",
+      sourceCharacters:[
+        {name:"小西行長(2)", no:"1308", slot:"C・S1"}
+      ],
+      ownHiddenCandidate: {skill:"文治ノ護剣", rank:"S"},
+      trTable:[
+        {level:"LV10", points:"-", effect:"全　確率 48% / 防御 450%上昇"},
+        {level:"TR1", points:"10", effect:"全　確率 50% / 防御 475%上昇"},
+        {level:"TR2", points:"40", effect:"全　確率 55% / 防御 510%上昇"},
+        {level:"TR3", points:"90", effect:"全　確率 60% / 防御 560%上昇"},
+        {level:"TR4", points:"150", effect:"全　確率 65% / 防御 630%上昇"},
+        {level:"TR5", points:"200", effect:"全　確率 70% / 防御 730%上昇"},
+        {level:"TR6", points:"パラレル", effect:"全　確率 100% / 防御 800%上昇"}
+      ]
+    },
+    {
+      name:"至天ノ御剣", rank:"SSS", baseRate:70, target:"自身",
+      effectSummary:"SSS/LV10 確率 70% 効果倍率上昇/対象:自身\n①自身が持つ初期スキルを模倣する\n②卓越:追加確率30%で通常攻撃/防御効果を1.3倍にして模倣する",
+      categoryLinks:[
+        {href:"skills-mimic.html", label:"自模倣スキル一覧を見る"},
+        {href:"skills-takuetsu.html", label:"卓越スキル一覧を見る"}
+      ],
+      sourceCharacters:[
+        {name:"小西行長(2)", no:"1308", slot:"B"}
+      ],
+      ownHiddenCandidate: {skill:"至天ノ御剣", rank:"SSS"},
+      trTable:[
+        {level:"LV10", points:"-", effect:"自身　確率 70% / 卓越追加確率30%・1.3倍"}
       ]
     }
   ];
