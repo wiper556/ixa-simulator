@@ -362,7 +362,7 @@
         {slot:"S1", skill:"泰厳射手", rank:"S", afterSkill:"泰厳射手", afterRank:"S", rate:"60%", target:"砲・器", effectShort:"防御を係数×人数で上昇"},
         {slot:"S2", skill:"月煌侵蝕", rank:"SSS", afterSkill:"月煌侵蝕", afterRank:"SSS", rate:"45%", target:"全 兵站", effectShort:"防御を係数×人数で上昇"}
       ]},
-    {name:"本多忠勝(2)", no:"1303", ch:"31章", cost:2.5, troop:"全攻", sub:"", effect:"8部隊以下の攻撃時、卓越確率+480%／部隊内武将の卓越確率+15%",
+    {name:"本多忠勝(2)", no:"1303", ch:"31章", cost:2.5, troop:"全攻", sub:"", effect:"8部隊以下の攻撃時、卓越確率+480%／部隊内武将の卓越確率+15%", reviewedOk:true,
       furigana:"ほんだただかつ", illustrator:"直良有祐",
       imageFull:"assets/img/characters/no1303_full.png", imageChar:"assets/img/characters/no1303_char.png",
       atkBase:1270, atkGrowth:73, defBase:1080, defGrowth:48, tacticsBase:670.0, tacticsGrowth:3.0, lv0Troops:4060,
@@ -377,6 +377,14 @@
         {level:"TR3", points:"90", effect:"全　確率 100% / 攻撃 1150%上昇(卓越自己+560%/部隊+19%)"},
         {level:"TR4", points:"150", effect:"全　確率 100% / 攻撃 1320%上昇(卓越自己+590%/部隊+21%)"},
         {level:"TR5", points:"200", effect:"全　確率 100% / 攻撃 1570%上昇(卓越自己+620%/部隊+23%)"}
+      ],
+      // ixanary.com(skills/武天蜻蛉切、合成テーブル欄)+ameameixa.com(【31章】天武将スキルテーブル一覧)の生HTML照合済み(2026-07-31)。両ソースでA〜S2のスキル名が完全一致。
+      synthesisTable:[
+        {slot:"A", skill:"絶無灰尽", rank:"SS", afterSkill:"絶無灰尽", afterRank:"SS", target:"全 無尽 不屈1", effectShort:"攻撃1010%上昇+無尽(部隊消費コスト-0.5)"},
+        {slot:"B", skill:"焼尽神無", rank:"SS", afterSkill:"焼尽神無", afterRank:"SS", target:"全 無尽", effectShort:"攻撃を係数×人数で上昇+無尽(部隊消費コスト-0.5)"},
+        {slot:"C", skill:"虚空ノ導", rank:"SSS", afterSkill:"虚空ノ導", afterRank:"SSS", target:"自身", effectShort:"卓越:追加確率30%で自身の初期スキルを1.3倍にして模倣"},
+        {slot:"S1", skill:"覆天征軍", rank:"SS", afterSkill:"覆天征軍", afterRank:"SS", target:"全 無尽2", effectShort:"攻撃900%上昇+無尽2(部隊消費コスト-1.0)"},
+        {slot:"S2", skill:"月詠ノ覇威", rank:"SS", afterSkill:"月詠ノ覇威", afterRank:"SS", target:"全", effectShort:"攻撃344%上昇+防御344%上昇+自軍卓越確率上昇(模倣不可)"}
       ]},
     {name:"真田昌幸(5)", no:"1304", ch:"31章", cost:5.0, troop:"-", sub:"無尽", effect:"追加・極限スキルの防御・破壊効果が2倍",
       furigana:"さなだまさゆき", illustrator:"直良有祐",
