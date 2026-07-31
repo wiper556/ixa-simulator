@@ -120,7 +120,7 @@
   <div class="sim-version-badge" id="simVersionBadge">v-</div>
 
 <script>
-  const SC_VERSION = 'v2026-07-30.1';
+  const SC_VERSION = 'v2026-08-01.1';
   document.addEventListener('DOMContentLoaded', ()=>{
     const badge = document.getElementById('simVersionBadge');
     if(badge) badge.textContent = SC_VERSION;
@@ -149,23 +149,11 @@
       sourceCharacters:[
         {name:"豊臣秀長【覇】", no:"1298", slot:"C"}
       ]},
-    {name:"焼尽神無", skillPage:"skills.html#焼尽神無", baseRate:"44%", target:"全", keywordNote:"無尽",
-      targetCategories: ALL_TROOP_CATEGORIES,
-      fixedBonus: 0, lv10Coefficient: 6.9, trMaxCoefficient: 12, trMaxLabel: "TR5",
-      sourceCharacters:[
-        {name:"豊臣秀長【覇】", no:"1298", slot:"B"}
-      ]},
     {name:"終焉焦土", skillPage:"skills.html#終焉焦土", baseRate:"46%", target:"全", keywordNote:"無尽",
       targetCategories: ALL_TROOP_CATEGORIES,
       fixedBonus: 0, lv10Coefficient: 9.6, trMaxCoefficient: 12.5, trMaxLabel: "TR5",
       sourceCharacters:[
         {name:"豊臣秀長【覇】", no:"1298", slot:"S1"}
-      ]},
-    {name:"万物神勇", skillPage:"skills.html#万物神勇", baseRate:"43%", target:"全", keywordNote:"撤退",
-      targetCategories: ALL_TROOP_CATEGORIES,
-      fixedBonus: 0, lv10Coefficient: 9.2, trMaxCoefficient: 12, trMaxLabel: "TR5",
-      sourceCharacters:[
-        {name:"豊臣秀長【覇】", no:"1298", slot:"S2"}
       ]},
     {name:"天地超克", skillPage:"skills.html#天地超克", baseRate:"46%", target:"全", keywordNote:"不屈1",
       targetCategories: ALL_TROOP_CATEGORIES,
@@ -173,23 +161,11 @@
       sourceCharacters:[
         {name:"大谷吉継(3)【覇】", no:"1300", slot:"B"}
       ]},
-    {name:"龍気剣鳴", skillPage:"skills.html#龍気剣鳴", baseRate:"40%", target:"槍・馬・器",
-      targetCategories: ['槍兵科','騎馬兵科','兵器兵科(器兵科)'],
-      fixedBonus: 0, lv10Coefficient: 5.3, trMaxCoefficient: 7.5, trMaxLabel: "TR6",
+    {name:"万物神勇", skillPage:"skills.html#万物神勇", baseRate:"43%", target:"全", keywordNote:"撤退",
+      targetCategories: ALL_TROOP_CATEGORIES,
+      fixedBonus: 0, lv10Coefficient: 9.2, trMaxCoefficient: 12, trMaxLabel: "TR5",
       sourceCharacters:[
-        {name:"伊達政宗(6)", no:"1292", slot:"A"}
-      ]},
-    {name:"烈火ノ闘将", skillPage:"characters.html#1268", baseRate:"49%", target:"弓・馬・器・鉄 撤退",
-      targetCategories: ['弓兵科','騎馬兵科','兵器兵科(器兵科)','兵器兵科(砲兵科)'],
-      fixedBonus: 0, lv10Coefficient: 6.7, trMaxCoefficient: 7.2, trMaxLabel: "TR5",
-      sourceCharacters:[
-        {name:"真田信繁", no:"1268", slot:"移植不可"}
-      ]},
-    {name:"炎帝伐鬼", skillPage:"characters.html#1221", baseRate:"40%", target:"槍・器・鉄", keywordNote:"卓越",
-      targetCategories: ['槍兵科','兵器兵科(器兵科)','兵器兵科(砲兵科)'],
-      fixedBonus: 0, lv10Coefficient: 3.5, trMaxCoefficient: 3.5, trMaxLabel: "LV10",
-      sourceCharacters:[
-        {name:"加藤清正(4)", no:"1221", slot:"移植不可"}
+        {name:"豊臣秀長【覇】", no:"1298", slot:"S2"}
       ]},
     {name:"鎮西ノ雷神", skillPage:"characters.html#1247", baseRate:"60%", target:"槍・弓・器・焙",
       targetCategories: ['槍兵科','弓兵科','兵器兵科(器兵科)','兵器兵科(砲兵科)'],
@@ -203,17 +179,41 @@
       sourceCharacters:[
         {name:"宮部継潤", no:"2389", slot:"移植不可", db:"kyoku"}
       ]},
+    {name:"焼尽神無", skillPage:"skills.html#焼尽神無", baseRate:"44%", target:"全", keywordNote:"無尽",
+      targetCategories: ALL_TROOP_CATEGORIES,
+      fixedBonus: 0, lv10Coefficient: 6.9, trMaxCoefficient: 12, trMaxLabel: "TR5",
+      sourceCharacters:[
+        {name:"豊臣秀長【覇】", no:"1298", slot:"B"}
+      ]},
+    {name:"烈火ノ闘将", skillPage:"characters.html#1268", baseRate:"49%", target:"弓・馬・器・鉄 撤退",
+      targetCategories: ['弓兵科','騎馬兵科','兵器兵科(器兵科)','兵器兵科(砲兵科)'],
+      fixedBonus: 0, lv10Coefficient: 6.7, trMaxCoefficient: 7.2, trMaxLabel: "TR5",
+      sourceCharacters:[
+        {name:"真田信繁", no:"1268", slot:"移植不可"}
+      ]},
     {name:"天聖宝冠", skillPage:"skills.html#天聖宝冠", baseRate:"45%", target:"全",
       targetCategories: ALL_TROOP_CATEGORIES,
       fixedBonus: 100, lv10Coefficient: 5, trMaxCoefficient: 5, trMaxLabel: "TRなし",
       sourceCharacters:[
         {name:"上杉謙信(覇2)", no:"1238", slot:"S1"}
       ]},
+    {name:"龍気剣鳴", skillPage:"skills.html#龍気剣鳴", baseRate:"40%", target:"槍・馬・器",
+      targetCategories: ['槍兵科','騎馬兵科','兵器兵科(器兵科)'],
+      fixedBonus: 0, lv10Coefficient: 5.3, trMaxCoefficient: 7.5, trMaxLabel: "TR6",
+      sourceCharacters:[
+        {name:"伊達政宗(6)", no:"1292", slot:"A"}
+      ]},
     {name:"倫魁不羈", skillPage:"characters.html#1236", baseRate:"55%", target:"槍・弓・馬・砲",
       targetCategories: ['槍兵科','弓兵科','騎馬兵科','兵器兵科(砲兵科)'],
       fixedBonus: 0, lv10Coefficient: 4, trMaxCoefficient: 4, trMaxLabel: "LV10",
       sourceCharacters:[
         {name:"水野勝成", no:"1236", slot:"移植不可"}
+      ]},
+    {name:"炎帝伐鬼", skillPage:"characters.html#1221", baseRate:"40%", target:"槍・器・鉄", keywordNote:"卓越",
+      targetCategories: ['槍兵科','兵器兵科(器兵科)','兵器兵科(砲兵科)'],
+      fixedBonus: 0, lv10Coefficient: 3.5, trMaxCoefficient: 3.5, trMaxLabel: "LV10",
+      sourceCharacters:[
+        {name:"加藤清正(4)", no:"1221", slot:"移植不可"}
       ]}
   ];
 

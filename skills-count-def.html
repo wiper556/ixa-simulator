@@ -86,7 +86,7 @@
   <div class="sim-version-badge" id="simVersionBadge">v-</div>
 
 <script>
-  const SC_VERSION = 'v2026-07-29.7';
+  const SC_VERSION = 'v2026-08-01.1';
   document.addEventListener('DOMContentLoaded', ()=>{
     const badge = document.getElementById('simVersionBadge');
     if(badge) badge.textContent = SC_VERSION;
@@ -97,26 +97,26 @@
      LV10係数が未確認のスキルはここには含めない(skills-count-atk.htmlの人数依存(攻)版と対になるページ)。
   ============================================ */
   const countDefSkills = [
-    {name:"従魔絶神", skillPage:"skills.html#従魔絶神", baseRate:"43%", target:"全", keywordNote:"飛翔13",
-      fixedBonus: 0, lv10Coefficient: 9.4, trMaxCoefficient: 15, trMaxLabel: "TR5",
+    {name:"泰厳射手", skillPage:"skills.html#泰厳射手", baseRate:"60%", target:"砲・器",
+      fixedBonus: 0, lv10Coefficient: 11.5, trMaxCoefficient: 14.7, trMaxLabel: "TR6",
       sourceCharacters:[
-        {name:"石田三成(7)【覇】", no:"1299", slot:"B"},
-        {name:"豊臣秀吉【覇(5)】", no:"1287", slot:"B"}
+        {name:"佐竹義宣(3)", no:"1302", slot:"S1"}
+      ]},
+    {name:"聖剣深鏡", skillPage:"skills.html#聖剣深鏡", baseRate:"1%", target:"全",
+      fixedBonus: 0, lv10Coefficient: 11, trMaxCoefficient: 17.6, trMaxLabel: "TR5",
+      sourceCharacters:[
+        {name:"最上義光(復刻)【覇】", no:"10076", slot:"S2"}
       ]},
     {name:"岳王ノ加護", skillPage:"skills.html#岳王ノ加護", baseRate:"50%", target:"全",
       fixedBonus: 0, lv10Coefficient: 10, trMaxCoefficient: 15, trMaxLabel: "TR5",
       sourceCharacters:[
         {name:"石田三成(7)【覇】", no:"1299", slot:"S1"}
       ]},
-    {name:"泰厳射手", skillPage:"skills.html#泰厳射手", baseRate:"60%", target:"砲・器",
-      fixedBonus: 0, lv10Coefficient: 11.5, trMaxCoefficient: 14.7, trMaxLabel: "TR6",
+    {name:"従魔絶神", skillPage:"skills.html#従魔絶神", baseRate:"43%", target:"全", keywordNote:"飛翔13",
+      fixedBonus: 0, lv10Coefficient: 9.4, trMaxCoefficient: 15, trMaxLabel: "TR5",
       sourceCharacters:[
-        {name:"佐竹義宣(3)", no:"1302", slot:"S1"}
-      ]},
-    {name:"国呑ノ蟒蛇", skillPage:"skills.html#国呑ノ蟒蛇", baseRate:"42%", target:"槍・弓・器・鉄",
-      fixedBonus: 0, lv10Coefficient: 5.4, trMaxCoefficient: 7.7, trMaxLabel: "TR6",
-      sourceCharacters:[
-        {name:"斎藤道三(3)", no:"1297", slot:"A"}
+        {name:"石田三成(7)【覇】", no:"1299", slot:"B"},
+        {name:"豊臣秀吉【覇(5)】", no:"1287", slot:"B"}
       ]},
     {name:"不制于天地人", skillPage:"skills.html#不制于天地人", baseRate:"50%", target:"槍・弓・器・鉄",
       fixedBonus: 0, lv10Coefficient: 8.5, trMaxCoefficient: 11.2, trMaxLabel: "TR6",
@@ -136,20 +136,20 @@
       sourceCharacters:[
         {name:"蒲生氏郷(2)", no:"1265", slot:"移植不可"}
       ]},
-    {name:"飛炎剣風", skillPage:"characters-kyoku.html#2387", baseRate:"70%", target:"槍・砲・器", keywordNote:"破壊80%上昇(固定・TRなし)",
-      fixedBonus: 80, lv10Coefficient: 5.6, trMaxCoefficient: 5.6, trMaxLabel: "TRなし",
-      sourceCharacters:[
-        {name:"丸目長恵", no:"2387", slot:"移植不可", db:"kyoku"}
-      ]},
     {name:"三全将帥", skillPage:"skills.html#三全将帥", baseRate:"48%", target:"槍・弓・器・騎", keywordNote:"卓越:追加確率10%で1.2倍",
       fixedBonus: 0, lv10Coefficient: 6.2, trMaxCoefficient: 6.7, trMaxLabel: "TR5",
       sourceCharacters:[
         {name:"直江兼続(4)", no:"1266", slot:"移植不可"}
       ]},
-    {name:"聖剣深鏡", skillPage:"skills.html#聖剣深鏡", baseRate:"1%", target:"全",
-      fixedBonus: 0, lv10Coefficient: 11, trMaxCoefficient: 17.6, trMaxLabel: "TR5",
+    {name:"飛炎剣風", skillPage:"characters-kyoku.html#2387", baseRate:"70%", target:"槍・砲・器", keywordNote:"破壊80%上昇(固定・TRなし)",
+      fixedBonus: 80, lv10Coefficient: 5.6, trMaxCoefficient: 5.6, trMaxLabel: "TRなし",
       sourceCharacters:[
-        {name:"最上義光(復刻)【覇】", no:"10076", slot:"S2"}
+        {name:"丸目長恵", no:"2387", slot:"移植不可", db:"kyoku"}
+      ]},
+    {name:"国呑ノ蟒蛇", skillPage:"skills.html#国呑ノ蟒蛇", baseRate:"42%", target:"槍・弓・器・鉄",
+      fixedBonus: 0, lv10Coefficient: 5.4, trMaxCoefficient: 7.7, trMaxLabel: "TR6",
+      sourceCharacters:[
+        {name:"斎藤道三(3)", no:"1297", slot:"A"}
       ]}
   ];
 
