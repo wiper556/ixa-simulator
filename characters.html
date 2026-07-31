@@ -948,16 +948,33 @@
         {slot:"S1", skill:"終焉焦土", rank:"SSS", afterSkill:"終焉焦土", afterRank:"SSS", rate:"46%", target:"全 無尽", effectShort:"攻撃を係数×人数で上昇"},
         {slot:"S2", skill:"神羅聖域", rank:"SS", afterSkill:"神羅聖域", afterRank:"SS", rate:"40%", target:"全 覇道", effectShort:"攻撃900%上昇+防御900%上昇+破壊150%上昇"}
       ]},
-    {name:"最上義光(復刻)【覇】", no:"10076", ch:"31章", cost:6.0, troop:"全防", sub:"覇道", effect:"最後列配置時の部隊防御力上昇／卓越下での兵士補正",
+    {name:"最上義光(復刻)【覇】", no:"10076", ch:"31章", cost:6.0, troop:"全防", sub:"覇道", effect:"本丸/所領防御陣形の最前列か最後列配置時、部隊総防御力25%上昇",
       furigana:"もがみよしあき", illustrator:"直良有祐",
       imageFull:"assets/img/characters/no10076_full.png", imageChar:"assets/img/characters/no10076_char.png",
       atkBase:1220, atkGrowth:65, defBase:1310, defGrowth:82, tacticsBase:850.0, tacticsGrowth:4.0, lv0Troops:5450,
-      // カード画像照合済み(2026-07-30): 槍A/弓X/馬SS/器A
-      rankGrades:{yari:'A', yumi:'X', uma:'SS', ki:'A'},
+      // カード画像照合済み(2026-07-31): 槍X/弓A/馬SS/器A(旧データはyari/yumiの値が誤って入れ替わっていたため修正、画像をズームして再確認済み)。ixagno.blog.fc2.com(blog-entry-11096)の成長値(攻65/防82/兵法4.0)と一致確認。
+      rankGrades:{yari:'X', yumi:'A', uma:'SS', ki:'A'},
       initialSkill:"虎皇鋼牙",
       skillDetail:"SSS/LV10 確率 45% 対象:全　覇道\n①本丸または所領防御陣形の最前列/最後列に配置時、部隊総防御力が25%上昇する(模倣不可)\n②覇道を持つため所属部隊の武将のスキルを無効化や発動率低下から保護する",
       trTable:[
-        {level:"LV10", points:"-", effect:"全 覇道　確率 45% / 最前列or最後列配置時、部隊総防御力+25%"}
+        {level:"LV10", points:"-", effect:"全 覇道　確率 45% / 最前列or最後列配置時、部隊総防御力+25%"},
+        {level:"TR1", points:"10", effect:"全 覇道　確率 45% / 最前列or最後列配置時、部隊総防御力+26%"},
+        {level:"TR2", points:"40", effect:"全 覇道　確率 45% / 最前列or最後列配置時、部隊総防御力+27%"},
+        {level:"TR3", points:"90", effect:"全 覇道　確率 45% / 最前列or最後列配置時、部隊総防御力+28%"},
+        {level:"TR4", points:"150", effect:"全 覇道　確率 45% / 最前列or最後列配置時、部隊総防御力+29%"},
+        {level:"TR5", points:"200", effect:"全 覇道　確率 45% / 最前列or最後列配置時、部隊総防御力+30%"}
+      ],
+      categoryLinks:[
+        {href:"skills-hadou.html", label:"覇道スキル一覧を見る"}
+      ],
+      // ixagno.blog.fc2.com生HTML照合済み(2026-07-31、blog-entry-11096「最上義光(復刻)【覇(2)】(No.10076)の能力と考察」の合成テーブルで確認)。
+      // 45do.info(最新記事は2025年12月付#0386までで31章カード自体の記事が無い)・ixanary.com(/cards/10076/は404、31章復刻カード未収録)はいずれも本カードの合成テーブルが確認できず、二重ソース確認は現状不可(要ユーザー確認、10074/10075と同様の状況)。第二(B)枠の移植後スキルは出典元の表で空欄(リンク省略)だったため他4枠と同じく同一スキル継続と推定して登録(要検証)。
+      synthesisTable:[
+        {slot:"A", skill:"歴然ノ妙策", rank:"SSS", afterSkill:"歴然ノ妙策", afterRank:"SSS", rate:"42%", target:"全", effectShort:"部隊総コスト依存の攻撃上昇(計算エンジン未対応)"},
+        {slot:"B", skill:"仙境解脱", rank:"SS", afterSkill:"仙境解脱", afterRank:"SS", rate:"48%", target:"全", effectShort:"防御910%上昇+コスト-1.5"},
+        {slot:"C", skill:"従魔絶神", rank:"SSS", afterSkill:"従魔絶神", afterRank:"SSS", rate:"43%", target:"全 飛翔13", effectShort:"防御を係数×人数で上昇"},
+        {slot:"S1", skill:"梵天浄界", rank:"SSS", afterSkill:"梵天浄界", afterRank:"SSS", rate:"60%", target:"全", effectShort:"防御50%上昇+破壊を係数×人数で上昇"},
+        {slot:"S2", skill:"聖剣深鏡", rank:"S", afterSkill:"聖剣深鏡", afterRank:"S", rate:"1%", target:"全", effectShort:"防御を係数×人数で上昇"}
       ]},
     {name:"島津義久", no:"1285", ch:"29章", cost:1.0, troop:"全防", sub:"", effect:"所領防御陣形でのみ最大兵数の武将と同兵数になる",
       furigana:"しまづよしひさ", illustrator:"直良有祐",
@@ -1829,7 +1846,7 @@
   }
 
   // スキルデータベース(skills.html)にページがあるスキル名の一覧。ここに載っているスキルはリンク化する。
-  const LINKED_SKILLS = ['勇冠三軍', '焼尽神無', '覆天征軍', '終焉焦土', '万物神勇', '経津主神ノ剣', '従魔絶神', '梵天浄界', '岳王ノ加護', '國才連豪', '虎賁統帥', '天地超克', '神羅聖域', '信明義星', '千里必勝ノ神算', '刹那無影', '月煌侵蝕', '虚実兵妙', '仙境解脱', '幻像鏡花', '開闢ノ逆鉾', '思金神ノ深謀', '戦華雄渾', '月詠ノ覇威', '絶無灰尽', '八幡神ノ威光', '龍驤虎躍', '永世ノ天隻', '黄泉醜女ノ屍兵', '高津姫神', '義陣絶刀', '破国八陣', '轟渦ノ神将', '王花尖剣', '泰厳射手', '国呑ノ蟒蛇', '虚空ノ導', '龍気剣鳴', '雄武英略', '坂西都督', '摩利支天ノ法', '不制于天地人', '神機采配', '十束ノ神域', '天聖宝冠', '四天轟雷', '火之迦具土神', '天香山命', '天津甕星ノ雷', '布都御魂ノ鬨', '天宇受売命', '万鬼闘帝', '三全将帥', '文治ノ護剣', '至天ノ御剣'];
+  const LINKED_SKILLS = ['勇冠三軍', '焼尽神無', '覆天征軍', '終焉焦土', '万物神勇', '経津主神ノ剣', '従魔絶神', '梵天浄界', '岳王ノ加護', '國才連豪', '虎賁統帥', '天地超克', '神羅聖域', '信明義星', '千里必勝ノ神算', '刹那無影', '月煌侵蝕', '虚実兵妙', '仙境解脱', '幻像鏡花', '開闢ノ逆鉾', '思金神ノ深謀', '戦華雄渾', '月詠ノ覇威', '絶無灰尽', '八幡神ノ威光', '龍驤虎躍', '永世ノ天隻', '黄泉醜女ノ屍兵', '高津姫神', '義陣絶刀', '破国八陣', '轟渦ノ神将', '王花尖剣', '泰厳射手', '国呑ノ蟒蛇', '虚空ノ導', '龍気剣鳴', '雄武英略', '坂西都督', '摩利支天ノ法', '不制于天地人', '神機采配', '十束ノ神域', '天聖宝冠', '四天轟雷', '火之迦具土神', '天香山命', '天津甕星ノ雷', '布都御魂ノ鬨', '天宇受売命', '万鬼闘帝', '三全将帥', '文治ノ護剣', '至天ノ御剣', '歴然ノ妙策', '聖剣深鏡'];
 
   function gdbSkillLink(skillName, rank){
     const label = gdbEscapeHtml(skillName)+' '+gdbEscapeHtml(rank||'');
