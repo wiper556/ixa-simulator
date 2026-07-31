@@ -131,7 +131,8 @@
       sourceCharacters:[
         {name:"豊臣秀長【覇】", no:"1298", slot:"C"},
         {name:"大谷吉継(3)【覇】", no:"1300", slot:"C"},
-        {name:"北条早雲", no:"1296", slot:"S1"}
+        {name:"北条早雲", no:"1296", slot:"S1"},
+        {name:"毛利輝元(5)", no:"1306", slot:"C"}
       ],
       // このスキルを習得済みのカードを合成素材にした時に出現する隠し候補スキル。
       // 武将ページ(characters.html)のsynthesisTableで、このスキルが該当する候補枠のafterSkill/afterRankと同じ値になる。
@@ -378,7 +379,8 @@
         {href:"skills-hadou.html", label:"覇道スキル一覧を見る"}
       ],
       sourceCharacters:[
-        {name:"大谷吉継(3)【覇】", no:"1300", slot:"A"}
+        {name:"大谷吉継(3)【覇】", no:"1300", slot:"A"},
+        {name:"立花宗茂(5)", no:"1307", slot:"C"}
       ],
       ownHiddenCandidate: {skill:"虎賁統帥", rank:"SS"},
       trTable:[
@@ -490,7 +492,8 @@
         {href:"skills-hishou-atk.html", label:"飛翔スキル一覧(攻撃)を見る"}
       ],
       sourceCharacters:[
-        {name:"毛利輝元(覇)", no:"1251", slot:"C"}
+        {name:"毛利輝元(覇)", no:"1251", slot:"C"},
+        {name:"立花宗茂(5)", no:"1307", slot:"A"}
       ],
       ownHiddenCandidate: {skill:"星神闘覇", rank:"SS"},
       trTable:[
@@ -574,7 +577,8 @@
         {href:"skills-leadermimic.html", label:"部隊長模倣スキル一覧を見る"}
       ],
       sourceCharacters:[
-        {name:"武田信玄(6)", no:"1290", slot:"A"}
+        {name:"武田信玄(6)", no:"1290", slot:"A"},
+        {name:"立花宗茂(5)", no:"1307", slot:"B"}
       ],
       ownHiddenCandidate: {skill:"刹那無影", rank:"SS"},
       trTable:[
@@ -666,6 +670,9 @@
     {
       name:"坂西都督", rank:"S", baseRate:45, target:"弓・砲・器",
       effectSummary:"S/LV10 確率 45% 攻撃150%上昇/対象:弓・砲・器\n①攻撃150%上昇する(固定値)\n②敵軍部隊数×係数%を攻撃効果に加算する(係数はLV10=30)\n③TR6(パラレル版)では不屈1を追加取得する",
+      categoryLinks:[
+        {href:"skills-fukutsu.html", label:"不屈スキル一覧を見る"}
+      ],
       sourceCharacters:[
         {name:"毛利輝元(5)", no:"1306", slot:"A"},
         {name:"毛利輝元(復刻)【覇】", no:"10075", slot:"A"}
@@ -679,6 +686,25 @@
         {level:"TR4", points:"150", effect:"弓・砲・器　確率 45% / 攻撃 150%上昇+敵軍部隊数×40%"},
         {level:"TR5", points:"200", effect:"弓・砲・器　確率 45% / 攻撃 150%上昇+敵軍部隊数×44%"},
         {level:"TR6", points:"パラレル", effect:"弓・砲・器 不屈1　確率 45% / 攻撃 150%上昇+敵軍部隊数×45%"}
+      ]
+    },
+    {
+      // ixagno.blog.fc2.com生HTML照合済み(2026-07-31、blog-entry-10842)。合成専用スキルのためLV10段階が存在せずTR1(10P)が初期値。
+      name:"布刀玉ノ策", rank:"SS", baseRate:100, target:"全 卓越",
+      effectSummary:"SS/TR1 確率 100% 攻撃970%上昇/対象:全　卓越\n合成専用スキルのためLV10段階は存在せずTR1が初期値\n①攻撃970%上昇する\n②防御970%上昇する\n③自軍全武将の全スキルの卓越確率に22%を加算する(自軍内重複上限2)",
+      categoryLinks:[
+        {href:"skills-takuetsu.html", label:"卓越スキル一覧を見る"}
+      ],
+      sourceCharacters:[
+        {name:"真田昌幸(5)", no:"1304", slot:"C"},
+        {name:"毛利輝元(5)", no:"1306", slot:"B"}
+      ],
+      trTable:[
+        {level:"TR1", points:"10", effect:"全 卓越　確率 100% / 攻撃 970%上昇+防御 970%上昇(卓越確率+22%)"},
+        {level:"TR2", points:"40", effect:"全 卓越　確率 100% / 攻撃 1030%上昇+防御 1030%上昇(卓越確率+24%)"},
+        {level:"TR3", points:"90", effect:"全 卓越　確率 100% / 攻撃 1150%上昇+防御 1150%上昇(卓越確率+26%)"},
+        {level:"TR4", points:"150", effect:"全 卓越　確率 100% / 攻撃 1300%上昇+防御 1300%上昇(卓越確率+28%)"},
+        {level:"TR5", points:"200", effect:"全 卓越　確率 100% / 攻撃 1520%上昇+防御 1520%上昇(卓越確率+30%)"}
       ]
     },
     {
@@ -830,7 +856,8 @@
       sourceCharacters:[
         {name:"伊達政宗(6)", no:"1292", slot:"S2"},
         {name:"毛利元就(4)", no:"1293", slot:"A"},
-        {name:"島津義弘(4)", no:"1294", slot:"S2"}
+        {name:"島津義弘(4)", no:"1294", slot:"S2"},
+        {name:"毛利輝元(5)", no:"1306", slot:"A・S2"}
       ],
       ownHiddenCandidate: {skill:"開闢ノ逆鉾", rank:"SS"},
       trTable:[
