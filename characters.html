@@ -1168,7 +1168,7 @@
       trTable:[
         {level:"LV10", points:"-", effect:"全　確率 100% / 二重卓越(2回目+15%)"}
       ]},
-    {name:"北条氏政(5)", no:"1253", ch:"27章", cost:4.5, troop:"槍弓砲器攻防", sub:"", effect:"部隊内スキル発動率+15%／卓越追加確率+50%",
+    {name:"北条氏政(5)", no:"1253", ch:"27章", cost:4.5, troop:"槍弓砲器攻防", sub:"", effect:"部隊内スキル発動率+15%／卓越追加確率+50%", reviewedOk:true,
       furigana:"ほうじょううじまさ", illustrator:"直良有祐",
       imageFull:"assets/img/characters/no1253_full.png", imageChar:"assets/img/characters/no1253_char.png",
       atkBase:1210, atkGrowth:64, defBase:1210, defGrowth:64, tacticsBase:690.0, tacticsGrowth:3.5, lv0Troops:4760,
@@ -1177,8 +1177,16 @@
       skillDetail:"S/LV10 確率 100% 攻撃420%上昇/対象:槍・弓・砲・器\n①攻撃420%上昇する\n②防御420%上昇する\n③部隊内武将のスキル発動率+15%を得る\n④卓越の追加確率+50%を得る(模倣不可・特殊効果は自部隊内では重複不可・TR1〜TR5は未確認)",
       trTable:[
         {level:"LV10", points:"-", effect:"槍・弓・砲・器　確率 100% / 攻撃420%上昇+防御420%上昇(発動率+15%・卓越追加確率+50%)"}
+      ],
+      // 45do.info確認: 生HTML(skiladd_wrap)照合済み(単一ソースのみ、ixanary.comに合成候補情報なし)
+      synthesisTable:[
+        {slot:"A", skill:"八界経略", rank:"S", afterSkill:"八界経略", afterRank:"S", rate:"100%", target:"槍・弓・砲・器", effectShort:"攻撃420%上昇+防御420%上昇(発動率+15%・卓越追加確率+50%)"},
+        {slot:"B", skill:"八界経略", rank:"S", afterSkill:"八界経略", afterRank:"S", rate:"100%", target:"槍・弓・砲・器", effectShort:"攻撃420%上昇+防御420%上昇(発動率+15%・卓越追加確率+50%)"},
+        {slot:"C", skill:"思金神ノ深謀", rank:"SS", afterSkill:"思金神ノ深謀", afterRank:"SS", rate:"60%", target:"部隊長", effectShort:"部隊長の初期スキルを模倣(卓越で1.3倍)"},
+        {slot:"S1", skill:"閃裂討鬼", rank:"SS", afterSkill:"閃裂討鬼", afterRank:"SS", rate:"40%", target:"全", effectShort:"攻撃上昇(部隊総コスト依存)+コスト+0.5計算"},
+        {slot:"S2", skill:"月詠ノ覇威", rank:"SS", afterSkill:"月詠ノ覇威", afterRank:"SS", rate:"100%", target:"全", effectShort:"攻撃344%上昇+防御344%上昇+卓越確率+15%(模倣不可)"}
       ]},
-    {name:"村上武吉(2)", no:"1257", ch:"27章", cost:4.0, troop:"弓馬砲器攻", sub:"", effect:"自部隊同時攻撃時に合流し不足数を得る",
+    {name:"村上武吉(2)", no:"1257", ch:"27章", cost:4.0, troop:"弓馬砲器攻", sub:"", effect:"自部隊同時攻撃時に合流し不足数を得る", reviewedOk:true,
       furigana:"むらかみたけよし", illustrator:"直良有祐",
       imageFull:"assets/img/characters/no1257_full.png", imageChar:"assets/img/characters/no1257_char.png",
       atkBase:1240, atkGrowth:64, defBase:1080, defGrowth:50, tacticsBase:650.0, tacticsGrowth:3.0, lv0Troops:4560,
@@ -1187,6 +1195,14 @@
       skillDetail:"S/LV10 確率 55% 攻撃440%上昇/対象:弓・馬・砲・器\n①攻撃440%上昇する\n②自部隊同時攻撃時、この武将は合流し自部隊数-2の不足を得る(特殊効果は模倣不可・TR1〜TR5は未確認)",
       trTable:[
         {level:"LV10", points:"-", effect:"弓・馬・砲・器　確率 55% / 攻撃 440%上昇(自部隊同時攻撃時、合流し不足(部隊数-2)を得る)"}
+      ],
+      // 45do.info確認: 生HTML(skiladd_wrap)照合済み(単一ソースのみ、ixanary.comに合成候補情報なし)
+      synthesisTable:[
+        {slot:"A", skill:"十束ノ神域", rank:"SS", afterSkill:"十束ノ神域", afterRank:"SS", rate:"100%", target:"全 覇道", effectShort:"攻撃320%上昇+速度70%上昇"},
+        {slot:"B", skill:"天頂ノ電光", rank:"SSS", afterSkill:"天頂ノ電光", afterRank:"SSS", rate:"12%", target:"全", effectShort:"攻撃190%上昇(部隊長なら発動率・効果3倍)"},
+        {slot:"C", skill:"海王怒涛", rank:"S", afterSkill:"海王怒涛", afterRank:"S", rate:"55%", target:"弓・馬・砲・器", effectShort:"攻撃440%上昇(自部隊同時攻撃時合流し不足を得る)"},
+        {slot:"S1", skill:"破軍騎行", rank:"SS", afterSkill:"破軍騎行", afterRank:"SS", rate:"100%", target:"全 不屈2", effectShort:"攻撃750%上昇"},
+        {slot:"S2", skill:"月詠ノ覇威", rank:"SS", afterSkill:"月詠ノ覇威", afterRank:"SS", rate:"100%", target:"全", effectShort:"攻撃344%上昇+防御344%上昇+卓越確率+15%(模倣不可)"}
       ]},
     {name:"島津家久", no:"1261", ch:"27章", cost:4.0, troop:"槍馬砲器防", sub:"", effect:"自軍内の同兵種武将数依存",
       furigana:"しまづいえひさ", illustrator:"直良有祐",
@@ -1225,7 +1241,7 @@
         {slot:"S1", skill:"神羅聖域", rank:"SS", afterSkill:"神羅聖域", afterRank:"SS", rate:"40%", target:"全 覇道", effectShort:"攻撃900%上昇+防御900%上昇+破壊150%上昇"},
         {slot:"S2", skill:"永世ノ天隻", rank:"SS", afterSkill:"永世ノ天隻", afterRank:"SS", rate:"48%", target:"全 飛翔9", effectShort:"防御を係数×人数で上昇"}
       ]},
-    {name:"藤堂高虎(2)", no:"1270", ch:"28章", cost:5.5, troop:"槍馬砲器防", sub:"兵站", effect:"極限スキルの防御効果が3.5倍",
+    {name:"藤堂高虎(2)", no:"1270", ch:"28章", cost:5.5, troop:"槍馬砲器防", sub:"兵站", effect:"極限スキルの防御効果が3.5倍", reviewedOk:true,
       furigana:"とうどうたかとら", illustrator:"直良有祐",
       imageFull:"assets/img/characters/no1270_full.png", imageChar:"assets/img/characters/no1270_char.png",
       atkBase:1040, atkGrowth:41, defBase:1260, defGrowth:69, tacticsBase:650.0, tacticsGrowth:3.0, lv0Troops:5160,
@@ -1238,8 +1254,16 @@
       trTable:[
         {level:"LV10", points:"-", effect:"槍・馬・砲・器 兵站　確率 100% / 防御 400%上昇(極限スキル防御効果3.5倍)"},
         {level:"TR5", points:"-", effect:"槍・馬・砲・器 兵站　確率 100% / 防御 740%上昇(極限スキル防御効果3.5倍)"}
+      ],
+      // 45do.info確認: 生HTML(skiladd_wrap)照合済み(単一ソースのみ、ixanary.comに合成候補情報なし)
+      synthesisTable:[
+        {slot:"A", skill:"龍驤虎躍", rank:"SS", afterSkill:"龍驤虎躍", afterRank:"SS", rate:"60%", target:"全", effectShort:"攻撃810%上昇+防御810%上昇(コスト-1)"},
+        {slot:"B", skill:"万里嵐壁", rank:"SS", afterSkill:"万里嵐壁", afterRank:"SS", rate:"66%", target:"全", effectShort:"防御200%上昇+敵軍部隊数×40%加算"},
+        {slot:"C", skill:"虚空ノ導", rank:"SSS", afterSkill:"虚空ノ導", afterRank:"SSS", rate:"70%", target:"自身", effectShort:"初期スキルを模倣(卓越で1.3倍)"},
+        {slot:"S1", skill:"月煌侵蝕", rank:"SSS", afterSkill:"月煌侵蝕", afterRank:"SSS", rate:"45%", target:"全 兵站", effectShort:"防御7.6%×防御参加武将数上昇"},
+        {slot:"S2", skill:"三千世界神将", rank:"SS", afterSkill:"三千世界神将", afterRank:"SS", rate:"100%", target:"全", effectShort:"防御120%上昇(本丸防御時コスト消費-1)"}
       ]},
-    {name:"今川義元", no:"1203", ch:"23章", cost:5, troop:"全攻", sub:"", effect:"追加スキルの攻撃・破壊効果を2.5倍にする",
+    {name:"今川義元", no:"1203", ch:"23章", cost:5, troop:"全攻", sub:"", effect:"追加スキルの攻撃・破壊効果を2.5倍にする", reviewedOk:true,
       furigana:"いまがわよしもと", illustrator:"直良有祐",
       imageFull:"assets/img/characters/no1203_full.png", imageChar:"assets/img/characters/no1203_char.png",
       atkBase:1280, atkGrowth:75, defBase:1240, defGrowth:50, tacticsBase:750.0, tacticsGrowth:3.5, lv0Troops:4670,
@@ -1248,8 +1272,16 @@
       skillDetail:"SSS/LV10 確率 100% 対象:追加スキル\n①このスキルを持つ武将カードは追加スキル(追加1/追加2/極限)の攻撃・破壊効果が2.5倍となる(模倣不可)",
       trTable:[
         {level:"LV10", points:"-", effect:"追加スキル　確率 100% / 攻撃・破壊効果 2.5倍"}
+      ],
+      // 45do.info確認: 生HTML(skiladd_wrap)照合済み(単一ソースのみ、ixanary.comに合成候補情報なし、この武将自身の初期スキルは候補に含まれない)
+      synthesisTable:[
+        {slot:"A", skill:"八重言代主神", rank:"SS", afterSkill:"八重言代主神", afterRank:"SS", rate:"70%", target:"自身", effectShort:"初期スキルを模倣(戦闘スキルのみ、1倍)"},
+        {slot:"B", skill:"神屋楯比売命", rank:"SS", afterSkill:"神屋楯比売命", afterRank:"SS", rate:"70%", target:"自身", effectShort:"初期スキルを模倣(戦闘スキルのみ、1倍)"},
+        {slot:"C", skill:"高津姫神", rank:"SS", afterSkill:"高津姫神", afterRank:"SS", rate:"70%", target:"自身", effectShort:"初期スキルを模倣(戦闘スキルのみ、1倍)"},
+        {slot:"S1", skill:"摩利支天ノ法", rank:"SSS", afterSkill:"摩利支天ノ法", afterRank:"SSS", rate:"70%", target:"部隊長", effectShort:"部隊長の初期スキルを1.25倍模倣"},
+        {slot:"S2", skill:"天焉相克", rank:"SS", afterSkill:"天焉相克", afterRank:"SS", rate:"70%", target:"槍・弓・馬", effectShort:"攻撃30%上昇(部隊総コスト依存)"}
       ]},
-    {name:"松平元康", no:"1207", ch:"23章", cost:4.5, troop:"槍弓器鉄攻", sub:"", effect:"敵軍総武将コスト依存で対象兵科の攻撃力上昇",
+    {name:"松平元康", no:"1207", ch:"23章", cost:4.5, troop:"槍弓器鉄攻", sub:"", effect:"敵軍総武将コスト依存で対象兵科の攻撃力上昇", reviewedOk:true,
       furigana:"まつだいらもとやす", illustrator:"直良有祐",
       imageFull:"assets/img/characters/no1207_full.png", imageChar:"assets/img/characters/no1207_char.png",
       atkBase:1150, atkGrowth:58, defBase:1050, defGrowth:33, tacticsBase:640.0, tacticsGrowth:3.5, lv0Troops:4670,
@@ -1258,8 +1290,16 @@
       skillDetail:"S/LV10 確率 38% 攻撃(敵軍総武将コスト×0.8)%上昇/対象:槍・弓・器・鉄\n①対象兵科(槍・弓・器・鉄)を指揮した戦闘時攻撃力が敵軍総武将コスト×0.8%上昇する(TR1〜TR5は未確認)",
       trTable:[
         {level:"LV10", points:"-", effect:"槍・弓・器・鉄　確率 38% / 攻撃 敵軍総武将コスト×0.8%"}
+      ],
+      // 45do.info確認: 生HTML(skiladd_wrap)照合済み(単一ソースのみ、ixanary.comに合成候補情報なし)
+      synthesisTable:[
+        {slot:"A", skill:"四界偃武", rank:"S", afterSkill:"四界偃武", afterRank:"S", rate:"38%", target:"槍・弓・器・鉄", effectShort:"攻撃(敵軍総武将コスト×0.8)%上昇"},
+        {slot:"B", skill:"四界偃武", rank:"S", afterSkill:"四界偃武", afterRank:"S", rate:"38%", target:"槍・弓・器・鉄", effectShort:"攻撃(敵軍総武将コスト×0.8)%上昇"},
+        {slot:"C", skill:"天岩戸ノ神域", rank:"SS", afterSkill:"天岩戸ノ神域", afterRank:"SS", rate:"70%", target:"全", effectShort:"攻撃2.8%×防御参加武将数上昇"},
+        {slot:"S1", skill:"加具土ノ神域", rank:"SS", afterSkill:"加具土ノ神域", afterRank:"SS", rate:"25%", target:"全", effectShort:"攻撃3.4%×防御参加武将数上昇"},
+        {slot:"S2", skill:"八目鳴鏑ノ奏", rank:"SS", afterSkill:"八目鳴鏑ノ奏", afterRank:"SS", rate:"37%", target:"全", effectShort:"攻撃2.5%×防御参加武将数上昇"}
       ]},
-    {name:"森蘭丸", no:"1211", ch:"23章", cost:4, troop:"槍弓焙攻", sub:"", effect:"防御参加武将数依存で攻撃力上昇／卓越で効果1.5倍",
+    {name:"森蘭丸", no:"1211", ch:"23章", cost:4, troop:"槍弓焙攻", sub:"", effect:"防御参加武将数依存で攻撃力上昇／卓越で効果1.5倍", reviewedOk:true,
       furigana:"もりらんまる", illustrator:"直良有祐",
       imageFull:"assets/img/characters/no1211_full.png", imageChar:"assets/img/characters/no1211_char.png",
       atkBase:1160, atkGrowth:60, defBase:1070, defGrowth:35, tacticsBase:640.0, tacticsGrowth:3.0, lv0Troops:4380,
@@ -1268,8 +1308,16 @@
       skillDetail:"S/LV10 確率 100% 攻撃(3×防御参加武将数)%上昇/対象:槍・弓・焙\n①対象兵科(槍・弓・焙)を指揮した戦闘時攻撃力が(3×防御参加武将数)%上昇する\n②卓越時追加確率30%で攻撃効果が1.5倍になる(TR1〜TR5は未確認)",
       trTable:[
         {level:"LV10", points:"-", effect:"槍・弓・焙　確率 100% / 攻撃 3%×防御参加武将数(280人)=840%(卓越追加確率30%で1.5倍)"}
+      ],
+      // 45do.info確認: 生HTML(skiladd_wrap)照合済み(単一ソースのみ、ixanary.comに合成候補情報なし)
+      synthesisTable:[
+        {slot:"A", skill:"天奏幻武", rank:"S", afterSkill:"天奏幻武", afterRank:"S", rate:"100%", target:"槍・弓・焙", effectShort:"攻撃(3×防御参加武将数)%上昇(卓越で1.5倍)"},
+        {slot:"B", skill:"天奏幻武", rank:"S", afterSkill:"天奏幻武", afterRank:"S", rate:"100%", target:"槍・弓・焙", effectShort:"攻撃(3×防御参加武将数)%上昇(卓越で1.5倍)"},
+        {slot:"C", skill:"天岩戸ノ神域", rank:"SS", afterSkill:"天岩戸ノ神域", afterRank:"SS", rate:"70%", target:"全", effectShort:"攻撃2.8%×防御参加武将数上昇"},
+        {slot:"S1", skill:"加具土ノ神域", rank:"SS", afterSkill:"加具土ノ神域", afterRank:"SS", rate:"25%", target:"全", effectShort:"攻撃3.4%×防御参加武将数上昇"},
+        {slot:"S2", skill:"八目鳴鏑ノ奏", rank:"SS", afterSkill:"八目鳴鏑ノ奏", afterRank:"SS", rate:"37%", target:"全", effectShort:"攻撃2.5%×防御参加武将数上昇"}
       ]},
-    {name:"島津義久(1219)", no:"1219", ch:"24章", cost:4, troop:"全攻防", sub:"", effect:"部隊内全武将の初期スキルに「砲」対象を追加",
+    {name:"島津義久(1219)", no:"1219", ch:"24章", cost:4, troop:"全攻防", sub:"", effect:"部隊内全武将の初期スキルに「砲」対象を追加", reviewedOk:true,
       furigana:"しまづよしひさ", illustrator:"直良有祐",
       imageFull:"assets/img/characters/no1219_full.png", imageChar:"assets/img/characters/no1219_char.png",
       atkBase:1160, atkGrowth:57, defBase:1160, defGrowth:57, tacticsBase:660.0, tacticsGrowth:3.0, lv0Troops:4500,
@@ -1278,8 +1326,16 @@
       skillDetail:"S/LV10 確率 50% 攻撃200%上昇/対象:全\n①攻撃200%上昇する\n②防御200%上昇する\n③部隊内全武将の兵科対象の初期スキルに「砲」対象を追加する(TR1〜TR5は未確認)",
       trTable:[
         {level:"LV10", points:"-", effect:"全　確率 50% / 攻撃200%上昇+防御200%上昇"}
+      ],
+      // 45do.info確認: 生HTML(skiladd_wrap)照合済み(単一ソースのみ、ixanary.comに合成候補情報なし)
+      synthesisTable:[
+        {slot:"A", skill:"破邪轟砲", rank:"S", afterSkill:"破邪轟砲", afterRank:"S", rate:"50%", target:"全", effectShort:"攻撃200%上昇+防御200%上昇"},
+        {slot:"B", skill:"破邪轟砲", rank:"S", afterSkill:"破邪轟砲", afterRank:"S", rate:"50%", target:"全", effectShort:"攻撃200%上昇+防御200%上昇"},
+        {slot:"C", skill:"神屋楯比売命", rank:"SS", afterSkill:"神屋楯比売命", afterRank:"SS", rate:"70%", target:"自身", effectShort:"初期スキルを模倣(戦闘スキルのみ、1倍)"},
+        {slot:"S1", skill:"四至ノ神域", rank:"SS", afterSkill:"四至ノ神域", afterRank:"SS", rate:"70%", target:"自身", effectShort:"初期スキルを1.25倍模倣"},
+        {slot:"S2", skill:"天頂ノ電光", rank:"SSS", afterSkill:"天頂ノ電光", afterRank:"SSS", rate:"12%", target:"全", effectShort:"攻撃190%上昇(部隊長なら発動率・効果3倍)"}
       ]},
-    {name:"蜂須賀小六", no:"1223", ch:"24章", cost:4, troop:"槍弓器鉄防", sub:"", effect:"防御参加武将数依存で防御力上昇／卓越で効果1.5倍",
+    {name:"蜂須賀小六", no:"1223", ch:"24章", cost:4, troop:"槍弓器鉄防", sub:"", effect:"防御参加武将数依存で防御力上昇／卓越で効果1.5倍", reviewedOk:true,
       furigana:"はちすかころく", illustrator:"直良有祐",
       imageFull:"assets/img/characters/no1223_full.png", imageChar:"assets/img/characters/no1223_char.png",
       atkBase:1080, atkGrowth:46, defBase:1210, defGrowth:64, tacticsBase:680.0, tacticsGrowth:3.5, lv0Troops:4490,
@@ -1288,8 +1344,16 @@
       skillDetail:"S/LV10 確率 50% 防御(3.2×防御参加武将数)%上昇/対象:槍・弓・器・鉄\n①対象兵科(槍・弓・器・鉄)を指揮した戦闘時防御力が(3.2×防御参加武将数)%上昇する\n②卓越時追加確率20%で防御効果が1.5倍になる(TR1〜TR5は未確認)",
       trTable:[
         {level:"LV10", points:"-", effect:"槍・弓・器・鉄　確率 50% / 防御 3.2%×防御参加武将数(280人)=896%(卓越追加確率20%で1.5倍)"}
+      ],
+      // 45do.info確認: 生HTML(skiladd_wrap)照合済み(単一ソースのみ、ixanary.comに合成候補情報なし)
+      synthesisTable:[
+        {slot:"A", skill:"無双六界ノ博奕", rank:"S", afterSkill:"無双六界ノ博奕", afterRank:"S", rate:"50%", target:"槍・弓・器・鉄", effectShort:"防御(3.2×防御参加武将数)%上昇(卓越で1.5倍)"},
+        {slot:"B", skill:"天奏聖譚曲", rank:"SS", afterSkill:"天奏聖譚曲", afterRank:"SS", rate:"70%", target:"砲・器", effectShort:"防御2.5%×防御参加武将数上昇"},
+        {slot:"C", skill:"海神ノ浮船", rank:"SS", afterSkill:"海神ノ浮船", afterRank:"SS", rate:"48%", target:"全 飛翔4", effectShort:"防御3.5%×防御参加武将数上昇"},
+        {slot:"S1", skill:"天磐船", rank:"SS", afterSkill:"天磐船", afterRank:"SS", rate:"56%", target:"全", effectShort:"防御3.8%×防御参加武将数上昇"},
+        {slot:"S2", skill:"天奏聖譚曲", rank:"SS", afterSkill:"天奏聖譚曲", afterRank:"SS", rate:"70%", target:"砲・器", effectShort:"防御2.5%×防御参加武将数上昇"}
       ]},
-    {name:"真田幸村(覇)", no:"1227", ch:"25章", cost:5, troop:"全防", sub:"兵站", effect:"防御時、部隊内で武将コストが影響するときこの武将のコストを+1で計算",
+    {name:"真田幸村(覇)", no:"1227", ch:"25章", cost:5, troop:"全防", sub:"兵站", effect:"防御時、部隊内で武将コストが影響するときこの武将のコストを+1で計算", reviewedOk:true,
       furigana:"さなだゆきむら", illustrator:"直良有祐",
       imageFull:"assets/img/characters/no1227_full.png", imageChar:"assets/img/characters/no1227_char.png",
       atkBase:1250, atkGrowth:56, defBase:1280, defGrowth:72, tacticsBase:740.0, tacticsGrowth:3.5, lv0Troops:4750,
@@ -1298,8 +1362,16 @@
       skillDetail:"SSS/LV10 確率 60% 防御255%上昇/対象:全　兵站\n①防御255%上昇する\n②部隊内で武将コストが武将スキルに影響するとき防御効果部分のみこの武将のコストを+1で計算する(特殊効果は部隊内重複不可・TR1〜TR5は未確認)",
       trTable:[
         {level:"LV10", points:"-", effect:"全 兵站　確率 60% / 防御 255%上昇(コスト+1計算)"}
+      ],
+      // 45do.info確認: 生HTML(skiladd_wrap)照合済み(単一ソースのみ、ixanary.comに合成候補情報なし)
+      synthesisTable:[
+        {slot:"A", skill:"建御雷神ノ閃光", rank:"SS", afterSkill:"建御雷神ノ閃光", afterRank:"SS", rate:"100%", target:"全 飛翔5", effectShort:"攻撃210%上昇+防御210%上昇+卓越確率+35%(模倣不可)"},
+        {slot:"B", skill:"四天轟雷", rank:"SS", afterSkill:"四天轟雷", afterRank:"SS", rate:"100%", target:"全", effectShort:"攻撃360%上昇+防御360%上昇(部隊内初期スキルに砲・器対象追加)"},
+        {slot:"C", skill:"八幡神ノ威光", rank:"SSS", afterSkill:"八幡神ノ威光", afterRank:"SSS", rate:"70%", target:"部隊長", effectShort:"部隊長の初期スキルを1.25倍模倣"},
+        {slot:"S1", skill:"旌旗翳天ノ覇陣", rank:"SS", afterSkill:"旌旗翳天ノ覇陣", afterRank:"SS", rate:"54%", target:"全 兵站", effectShort:"防御90.11%上昇(部隊総コスト依存)"},
+        {slot:"S2", skill:"国津破邪ノ楯", rank:"SS", afterSkill:"国津破邪ノ楯", afterRank:"SS", rate:"60%", target:"全", effectShort:"防御60.04%上昇(部隊総コスト依存)"}
       ]},
-    {name:"立花宗茂(2)", no:"1231", ch:"25章", cost:4.5, troop:"弓馬攻", sub:"飛翔10", effect:"飛翔値合計依存で攻撃力上昇",
+    {name:"立花宗茂(2)", no:"1231", ch:"25章", cost:4.5, troop:"弓馬攻", sub:"飛翔10", effect:"飛翔値合計依存で攻撃力上昇", reviewedOk:true,
       furigana:"たちばなむねしげ", illustrator:"直良有祐",
       imageFull:"assets/img/characters/no1231_full.png", imageChar:"assets/img/characters/no1231_char.png",
       atkBase:1200, atkGrowth:66, defBase:1100, defGrowth:40, tacticsBase:630.0, tacticsGrowth:3.0, lv0Troops:4730,
@@ -1308,8 +1380,19 @@
       skillDetail:"S/LV10 確率 50% 攻撃45%上昇/対象:弓・馬・焙 飛翔10\n①対象兵科(弓・馬・焙)を指揮した戦闘時攻撃力が45%上昇する\n②所属部隊の武将が戦闘時にもつ飛翔値の合計×8%を攻撃効果に加算する(TR1〜TR5は未確認)",
       trTable:[
         {level:"LV10", points:"-", effect:"弓・馬・焙 飛翔10　確率 50% / 攻撃 45%上昇+飛翔値合計×8%加算"}
+      ],
+      categoryLinks:[
+        {href:"skills-hishou-atk.html", label:"飛翔スキル一覧(攻撃)を見る"}
+      ],
+      // 45do.info確認: 生HTML(skiladd_wrap)照合済み(単一ソースのみ、ixanary.comに合成候補情報なし)
+      synthesisTable:[
+        {slot:"A", skill:"天之尾羽張", rank:"SS", afterSkill:"天之尾羽張", afterRank:"SS", rate:"100%", target:"全", effectShort:"攻撃170%上昇+速度150%上昇"},
+        {slot:"B", skill:"開闢ノ逆鉾", rank:"SS", afterSkill:"開闢ノ逆鉾", afterRank:"SS", rate:"100%", target:"全", effectShort:"攻撃254%上昇(卓越追加確率30%で兵士被害15%減少)"},
+        {slot:"C", skill:"天翔雷神", rank:"S", afterSkill:"天翔雷神", afterRank:"S", rate:"50%", target:"弓・馬・焙 飛翔10", effectShort:"攻撃45%上昇+飛翔値合計×8%加算"},
+        {slot:"S1", skill:"十束ノ神域", rank:"SS", afterSkill:"十束ノ神域", afterRank:"SS", rate:"100%", target:"全 覇道", effectShort:"攻撃320%上昇+速度70%上昇"},
+        {slot:"S2", skill:"天頂ノ電光", rank:"SSS", afterSkill:"天頂ノ電光", afterRank:"SSS", rate:"12%", target:"全", effectShort:"攻撃190%上昇(部隊長なら発動率・効果3倍)"}
       ]},
-    {name:"細川忠興", no:"1235", ch:"25章", cost:5, troop:"-", sub:"", effect:"討伐ゲージ依存で自身の追加スキル攻撃効果が変動",
+    {name:"細川忠興", no:"1235", ch:"25章", cost:5, troop:"-", sub:"", effect:"討伐ゲージ依存で自身の追加スキル攻撃効果が変動", reviewedOk:true,
       furigana:"ほそかわただおき", illustrator:"直良有祐",
       imageFull:"assets/img/characters/no1235_full.png", imageChar:"assets/img/characters/no1235_char.png",
       atkBase:1190, atkGrowth:62, defBase:1100, defGrowth:42, tacticsBase:640.0, tacticsGrowth:3.0, lv0Troops:4860,
@@ -1318,8 +1401,16 @@
       skillDetail:"S/LV10 対象:自身の追加スキル\n①この武将の追加スキルの攻撃効果は(討伐ゲージ÷100)倍される(討伐ゲージは最大300で計算する)(模倣不可・TR1〜TR5は未確認)",
       trTable:[
         {level:"LV10", points:"-", effect:"追加スキル　討伐ゲージ÷100倍(最大300で3倍)"}
+      ],
+      // 45do.info確認: 生HTML(skiladd_wrap)照合済み(単一ソースのみ、ixanary.comに合成候補情報なし)
+      synthesisTable:[
+        {slot:"A", skill:"天香山命", rank:"SS", afterSkill:"天香山命", afterRank:"SS", rate:"100%", target:"全 覇道", effectShort:"攻撃120%上昇+速度90%上昇"},
+        {slot:"B", skill:"高津姫神", rank:"SS", afterSkill:"高津姫神", afterRank:"SS", rate:"70%", target:"自身", effectShort:"初期スキルを模倣(戦闘スキルのみ、1倍)"},
+        {slot:"C", skill:"神屋楯比売命", rank:"SS", afterSkill:"神屋楯比売命", afterRank:"SS", rate:"70%", target:"自身", effectShort:"初期スキルを模倣(戦闘スキルのみ、1倍)"},
+        {slot:"S1", skill:"四至ノ神域", rank:"SS", afterSkill:"四至ノ神域", afterRank:"SS", rate:"70%", target:"自身", effectShort:"初期スキルを1.25倍模倣"},
+        {slot:"S2", skill:"騎虎神道", rank:"S", afterSkill:"騎虎神道", afterRank:"S", rate:"100%", target:"全", effectShort:"攻撃98%上昇(討伐ゲージ300まで回復)"}
       ]},
-    {name:"武田信虎(2)", no:"1240", ch:"26章", cost:5, troop:"弓馬器攻速", sub:"", effect:"対象兵科指揮時攻撃・速度上昇／帰還時間短縮",
+    {name:"武田信虎(2)", no:"1240", ch:"26章", cost:5, troop:"弓馬器攻速", sub:"", effect:"対象兵科指揮時攻撃・速度上昇／帰還時間短縮", reviewedOk:true,
       furigana:"たけだのぶとら", illustrator:"直良有祐",
       imageFull:"assets/img/characters/no1240_full.png", imageChar:"assets/img/characters/no1240_char.png",
       atkBase:1200, atkGrowth:65, defBase:1100, defGrowth:41, tacticsBase:650.0, tacticsGrowth:3.0, lv0Troops:4940,
@@ -1328,6 +1419,14 @@
       skillDetail:"S/LV10 確率 100% 攻撃450%上昇/対象:弓・馬・器・騎\n①対象兵科(弓・馬・器・騎)を指揮した戦闘時攻撃力が450%上昇する\n②速度が100%上昇する\n③対象兵科指揮時自部隊の帰還時間が2分を超えるとき2分で帰還できる(模倣不可・TR1〜TR5は未確認)",
       trTable:[
         {level:"LV10", points:"-", effect:"弓・馬・器・騎　確率 100% / 攻撃 450%上昇+速度 100%上昇"}
+      ],
+      // 45do.info確認: 生HTML(skiladd_wrap)照合済み(単一ソースのみ、ixanary.comに合成候補情報なし)
+      synthesisTable:[
+        {slot:"A", skill:"猛虎嵐陣", rank:"S", afterSkill:"猛虎嵐陣", afterRank:"S", rate:"100%", target:"弓・馬・器・騎", effectShort:"攻撃450%上昇+速度100%上昇(帰還2分)"},
+        {slot:"B", skill:"朧雲ノ閃撃", rank:"SSS", afterSkill:"朧雲ノ閃撃", afterRank:"SSS", rate:"100%", target:"全", effectShort:"攻撃170%上昇+速度240%上昇"},
+        {slot:"C", skill:"朧雲ノ閃撃", rank:"SSS", afterSkill:"朧雲ノ閃撃", afterRank:"SSS", rate:"100%", target:"全", effectShort:"攻撃170%上昇+速度240%上昇"},
+        {slot:"S1", skill:"星神闘覇", rank:"SS", afterSkill:"星神闘覇", afterRank:"SS", rate:"100%", target:"全 飛翔15", effectShort:"攻撃770%上昇+速度200%上昇"},
+        {slot:"S2", skill:"国堅大神", rank:"SS", afterSkill:"国堅大神", afterRank:"SS", rate:"60%", target:"全", effectShort:"攻撃170%上昇+防御170%上昇(コスト-1)"}
       ]},
     {name:"里見義弘(2)", no:"1245", ch:"26章", cost:5, troop:"全攻防", sub:"", effect:"卓越発動スキル数依存で攻防上昇",
       furigana:"さとみよしひろ", illustrator:"直良有祐",
@@ -1347,7 +1446,7 @@
         {slot:"S2", skill:"火之迦具土神", rank:"SS", afterSkill:"火之迦具土神", afterRank:"SS", rate:"100%", target:"槍・馬・砲", effectShort:"攻撃160%上昇(卓越追加確率25%で3倍)"}
       ],
       reviewedOk:true},
-    {name:"三郎信長", no:"1249", ch:"26章", cost:5.5, troop:"砲攻", sub:"", effect:"対象兵科指揮時、極限スキルの攻撃効果が3.5倍",
+    {name:"三郎信長", no:"1249", ch:"26章", cost:5.5, troop:"砲攻", sub:"", effect:"対象兵科指揮時、極限スキルの攻撃効果が3.5倍", reviewedOk:true,
       furigana:"さぶろうのぶなが", illustrator:"直良有祐",
       imageFull:"assets/img/characters/no1249_full.png", imageChar:"assets/img/characters/no1249_char.png",
       atkBase:1230, atkGrowth:72, defBase:1030, defGrowth:40, tacticsBase:690.0, tacticsGrowth:3.5, lv0Troops:5150,
@@ -1356,8 +1455,16 @@
       skillDetail:"S/LV10 確率 100% 攻撃380%上昇/対象:砲\n模倣不可\n①攻撃380%上昇する\n②対象兵科(砲)指揮時極限スキルの攻撃効果が3.5倍となる",
       trTable:[
         {level:"LV10", points:"-", effect:"砲　確率 100% / 攻撃 380%上昇(極限スキル攻撃効果3.5倍)"}
+      ],
+      // 45do.info確認: 生HTML(skiladd_wrap)照合済み(単一ソースのみ、ixanary.comに合成候補情報なし)
+      synthesisTable:[
+        {slot:"A", skill:"月詠ノ覇威", rank:"SS", afterSkill:"月詠ノ覇威", afterRank:"SS", rate:"100%", target:"全", effectShort:"攻撃344%上昇+防御344%上昇+卓越確率+15%(模倣不可)"},
+        {slot:"B", skill:"猛火ノ追撃", rank:"SSS", afterSkill:"猛火ノ追撃", afterRank:"SSS", rate:"70%", target:"槍・弓・馬", effectShort:"攻撃45%上昇(部隊総コスト依存)"},
+        {slot:"C", skill:"破軍騎行", rank:"SS", afterSkill:"破軍騎行", afterRank:"SS", rate:"100%", target:"全 不屈2", effectShort:"攻撃750%上昇"},
+        {slot:"S1", skill:"龍驤虎躍", rank:"SS", afterSkill:"龍驤虎躍", afterRank:"SS", rate:"60%", target:"全", effectShort:"攻撃810%上昇+防御810%上昇(コスト-1)"},
+        {slot:"S2", skill:"火之迦具土神", rank:"SS", afterSkill:"火之迦具土神", afterRank:"SS", rate:"100%", target:"槍・馬・砲", effectShort:"攻撃160%上昇(卓越追加確率25%で3倍)"}
       ]},
-    {name:"六角承禎(2)", no:"1254", ch:"27章", cost:4.5, troop:"-", sub:"兵站", effect:"追加スキルの防御効果を2.5倍にする(自領以外への加勢戦闘時のみ)",
+    {name:"六角承禎(2)", no:"1254", ch:"27章", cost:4.5, troop:"-", sub:"兵站", effect:"追加スキルの防御効果を2.5倍にする(自領以外への加勢戦闘時のみ)", reviewedOk:true,
       furigana:"ろっかくじょうてい", illustrator:"直良有祐",
       imageFull:"assets/img/characters/no1254_full.png", imageChar:"assets/img/characters/no1254_char.png",
       atkBase:1070, atkGrowth:45, defBase:1230, defGrowth:67, tacticsBase:670.0, tacticsGrowth:3.0, lv0Troops:4770,
@@ -1369,8 +1476,16 @@
       ],
       trTable:[
         {level:"LV10", points:"-", effect:"追加スキル 兵站　確率 100% / 防御効果 2.5倍(自領以外への加勢戦闘時のみ)"}
+      ],
+      // 45do.info確認: 生HTML(skiladd_wrap)照合済み(単一ソースのみ、ixanary.comに合成候補情報なし)
+      synthesisTable:[
+        {slot:"A", skill:"氷塊ノ障壁", rank:"SSS", afterSkill:"氷塊ノ障壁", afterRank:"SSS", rate:"70%", target:"全", effectShort:"防御45%上昇(部隊総コスト依存)"},
+        {slot:"B", skill:"国津破邪ノ楯", rank:"SS", afterSkill:"国津破邪ノ楯", afterRank:"SS", rate:"60%", target:"全", effectShort:"防御60.04%上昇(部隊総コスト依存)"},
+        {slot:"C", skill:"旌旗翳天ノ覇陣", rank:"SS", afterSkill:"旌旗翳天ノ覇陣", afterRank:"SS", rate:"54%", target:"全 兵站", effectShort:"防御90.11%上昇(部隊総コスト依存)"},
+        {slot:"S1", skill:"永世ノ天隻", rank:"SS", afterSkill:"永世ノ天隻", afterRank:"SS", rate:"48%", target:"全 飛翔9", effectShort:"防御6.5%×防御参加武将数上昇"},
+        {slot:"S2", skill:"天衣無縫神戒", rank:"SS", afterSkill:"天衣無縫神戒", afterRank:"SS", rate:"50%", target:"全", effectShort:"防御30.02%上昇(部隊総コスト依存)"}
       ]},
-    {name:"相良義陽(3)", no:"1258", ch:"27章", cost:3.5, troop:"槍馬砲器攻", sub:"", effect:"敵軍総武将コスト依存で対象兵科の攻撃力上昇",
+    {name:"相良義陽(3)", no:"1258", ch:"27章", cost:3.5, troop:"槍馬砲器攻", sub:"", effect:"敵軍総武将コスト依存で対象兵科の攻撃力上昇", reviewedOk:true,
       furigana:"さがらよしひ", illustrator:"直良有祐",
       imageFull:"assets/img/characters/no1258_full.png", imageChar:"assets/img/characters/no1258_char.png",
       atkBase:1250, atkGrowth:72, defBase:1020, defGrowth:25, tacticsBase:660.0, tacticsGrowth:3.0, lv0Troops:4300,
@@ -1379,8 +1494,16 @@
       skillDetail:"S/LV10 確率 35% 攻撃(敵軍総武将コスト×1.4)%上昇/対象:槍・馬・砲・器\n①対象兵科(槍・馬・砲・器)を指揮した戦闘時攻撃力が敵軍総武将コスト×1.4%上昇する",
       trTable:[
         {level:"LV10", points:"-", effect:"槍・馬・砲・器　確率 35% / 攻撃 敵軍総武将コスト×1.4%"}
+      ],
+      // 45do.info確認: 生HTML(skiladd_wrap)照合済み(単一ソースのみ、ixanary.comに合成候補情報なし)
+      synthesisTable:[
+        {slot:"A", skill:"義陣響野", rank:"S", afterSkill:"義陣響野", afterRank:"S", rate:"35%", target:"槍・馬・砲・器", effectShort:"攻撃(敵軍総武将コスト×1.4)%上昇"},
+        {slot:"B", skill:"義陣響野", rank:"S", afterSkill:"義陣響野", afterRank:"S", rate:"35%", target:"槍・馬・砲・器", effectShort:"攻撃(敵軍総武将コスト×1.4)%上昇"},
+        {slot:"C", skill:"龍驤虎躍", rank:"SS", afterSkill:"龍驤虎躍", afterRank:"SS", rate:"60%", target:"全", effectShort:"攻撃810%上昇+防御810%上昇(コスト-1)"},
+        {slot:"S1", skill:"氷塊三連撃", rank:"SSS", afterSkill:"氷塊三連撃", afterRank:"SSS", rate:"45%", target:"全", effectShort:"攻撃170%上昇(自部隊同時攻撃時コスト最大2除外)"},
+        {slot:"S2", skill:"国堅大神", rank:"SS", afterSkill:"国堅大神", afterRank:"SS", rate:"60%", target:"全", effectShort:"攻撃170%上昇+防御170%上昇(コスト-1)"}
       ]},
-    {name:"徳川家康(覇5)", no:"1263", ch:"28章", cost:6, troop:"全攻防", sub:"飛翔30 不屈 覇道 撤退", effect:"全攻防・破壊上昇／回復速度上昇",
+    {name:"徳川家康(覇5)", no:"1263", ch:"28章", cost:6, troop:"全攻防", sub:"飛翔30 不屈 覇道 撤退", effect:"全攻防・破壊上昇／回復速度上昇", reviewedOk:true,
       furigana:"とくがわいえやす", illustrator:"直良有祐",
       imageFull:"assets/img/characters/no1263_full.png", imageChar:"assets/img/characters/no1263_char.png",
       atkBase:1270, atkGrowth:80, defBase:1270, defGrowth:80, tacticsBase:895.0, tacticsGrowth:4.5, lv0Troops:5400,
@@ -1401,8 +1524,16 @@
         {level:"TR3", points:"90", effect:"全 飛翔30 不屈1 覇道 撤退　確率 50% / 全攻防 1000%上昇+破壊 210%上昇(回復速度+600%)"},
         {level:"TR4", points:"150", effect:"全 飛翔30 不屈1 覇道 撤退　確率 50% / 全攻防 1180%上昇+破壊 250%上昇(回復速度+650%)"},
         {level:"TR5", points:"200", effect:"全 飛翔30 不屈1 覇道 撤退　確率 50% / 全攻防 1440%上昇+破壊 300%上昇(回復速度+700%)"}
+      ],
+      // 45do.info確認: 生HTML(skiladd_wrap)照合済み(単一ソースのみ、ixanary.comに合成候補情報なし)
+      synthesisTable:[
+        {slot:"A", skill:"破軍騎行", rank:"SS", afterSkill:"破軍騎行", afterRank:"SS", rate:"100%", target:"全 不屈2", effectShort:"攻撃750%上昇"},
+        {slot:"B", skill:"破邪後輝", rank:"SS", afterSkill:"破邪後輝", afterRank:"SS", rate:"100%", target:"全 覇道", effectShort:"攻撃770%上昇+速度150%上昇+破壊150%上昇"},
+        {slot:"C", skill:"飛龍衝天", rank:"SSS", afterSkill:"飛龍衝天", afterRank:"SSS", rate:"45%", target:"全 飛翔15", effectShort:"攻撃200%上昇+7.5%×防御参加武将数加算(模倣不可)"},
+        {slot:"S1", skill:"万物神勇", rank:"SS", afterSkill:"万物神勇", afterRank:"SS", rate:"43%", target:"全 撤退", effectShort:"攻撃9.2%×防御参加武将数上昇"},
+        {slot:"S2", skill:"開闢ノ逆鉾", rank:"SS", afterSkill:"開闢ノ逆鉾", afterRank:"SS", rate:"100%", target:"全", effectShort:"攻撃254%上昇(卓越追加確率30%で兵士被害15%減少)"}
       ]},
-    {name:"佐竹義宣(2)", no:"1267", ch:"28章", cost:4, troop:"槍弓砲器防", sub:"", effect:"所領防御陣形の第伍列配置時、防御効果3倍",
+    {name:"佐竹義宣(2)", no:"1267", ch:"28章", cost:4, troop:"槍弓砲器防", sub:"", effect:"所領防御陣形の第伍列配置時、防御効果3倍", reviewedOk:true,
       furigana:"さたけよしのぶ", illustrator:"直良有祐",
       imageFull:"assets/img/characters/no1267_full.png", imageChar:"assets/img/characters/no1267_char.png",
       atkBase:1080, atkGrowth:45, defBase:1230, defGrowth:70, tacticsBase:650.0, tacticsGrowth:3.0, lv0Troops:4590,
@@ -1416,8 +1547,16 @@
         {level:"TR3", points:"90", effect:"槍・弓・砲・器　確率 50% / 防御 290%上昇(第伍列配置時3倍)"},
         {level:"TR4", points:"150", effect:"槍・弓・砲・器　確率 50% / 防御 330%上昇(第伍列配置時3倍)"},
         {level:"TR5", points:"200", effect:"槍・弓・砲・器　確率 50% / 防御 380%上昇(第伍列配置時3倍)"}
+      ],
+      // 45do.info確認: 生HTML(skiladd_wrap)照合済み(単一ソースのみ、ixanary.comに合成候補情報なし)
+      synthesisTable:[
+        {slot:"A", skill:"義響鉄心", rank:"S", afterSkill:"義響鉄心", afterRank:"S", rate:"50%", target:"槍・弓・砲・器", effectShort:"防御200%上昇(第伍列配置時3倍)"},
+        {slot:"B", skill:"義響鉄心", rank:"S", afterSkill:"義響鉄心", afterRank:"S", rate:"50%", target:"槍・弓・砲・器", effectShort:"防御200%上昇(第伍列配置時3倍)"},
+        {slot:"C", skill:"万里嵐壁", rank:"SS", afterSkill:"万里嵐壁", afterRank:"SS", rate:"66%", target:"全", effectShort:"防御200%上昇+敵軍部隊数×40%加算"},
+        {slot:"S1", skill:"神羅聖域", rank:"SS", afterSkill:"神羅聖域", afterRank:"SS", rate:"40%", target:"全 覇道", effectShort:"攻撃900%上昇+防御900%上昇+破壊160%上昇"},
+        {slot:"S2", skill:"黄泉醜女ノ屍兵", rank:"SS", afterSkill:"黄泉醜女ノ屍兵", afterRank:"SS", rate:"54%", target:"全", effectShort:"防御200%上昇(70以下被ダメージ上限45)"}
       ]},
-    {name:"小早川秀秋(4)", no:"1271", ch:"28章", cost:4.5, troop:"弓馬器攻", sub:"飛翔17", effect:"卓越時のみ発動、攻撃上昇と飛翔値取得",
+    {name:"小早川秀秋(4)", no:"1271", ch:"28章", cost:4.5, troop:"弓馬器攻", sub:"飛翔17", effect:"卓越時のみ発動、攻撃上昇と飛翔値取得", reviewedOk:true,
       furigana:"こばやかわひであき", illustrator:"直良有祐",
       imageFull:"assets/img/characters/no1271_full.png", imageChar:"assets/img/characters/no1271_char.png",
       atkBase:1230, atkGrowth:66, defBase:1100, defGrowth:48, tacticsBase:680.0, tacticsGrowth:3.5, lv0Troops:4780,
@@ -1434,8 +1573,16 @@
         {level:"TR3", points:"90", effect:"弓・馬・器・焙　卓越追加確率 25% / 攻撃 610%上昇(飛翔18取得)"},
         {level:"TR4", points:"150", effect:"弓・馬・器・焙　卓越追加確率 25% / 攻撃 690%上昇(飛翔19取得)"},
         {level:"TR5", points:"200", effect:"弓・馬・器・焙　卓越追加確率 25% / 攻撃 780%上昇(飛翔20取得)"}
+      ],
+      // 45do.info確認: 生HTML(skiladd_wrap)照合済み(単一ソースのみ、ixanary.comに合成候補情報なし)
+      synthesisTable:[
+        {slot:"A", skill:"刈世公子", rank:"S", afterSkill:"刈世公子", afterRank:"S", rate:"25%", target:"弓・馬・器・焙", effectShort:"攻撃440%上昇+飛翔17取得(卓越限定)"},
+        {slot:"B", skill:"刈世公子", rank:"S", afterSkill:"刈世公子", afterRank:"S", rate:"25%", target:"弓・馬・器・焙", effectShort:"攻撃440%上昇+飛翔17取得(卓越限定)"},
+        {slot:"C", skill:"天宇受売命", rank:"SSS", afterSkill:"天宇受売命", afterRank:"SSS", rate:"70%", target:"自身", effectShort:"初期スキルを1.25倍模倣"},
+        {slot:"S1", skill:"照闇騎行", rank:"SS", afterSkill:"照闇騎行", afterRank:"SS", rate:"100%", target:"全", effectShort:"攻撃540%上昇+速度250%上昇"},
+        {slot:"S2", skill:"十束ノ神域", rank:"SS", afterSkill:"十束ノ神域", afterRank:"SS", rate:"100%", target:"全 覇道", effectShort:"攻撃320%上昇+速度70%上昇"}
       ]},
-    {name:"竹中半兵衛(1215)", no:"1215", ch:"24章", cost:5, troop:"全防", sub:"", effect:"追加スキルの防御・破壊効果を2.5倍にする",
+    {name:"竹中半兵衛(1215)", no:"1215", ch:"24章", cost:5, troop:"全防", sub:"", effect:"追加スキルの防御・破壊効果を2.5倍にする", reviewedOk:true,
       furigana:"たけなかはんべえ", illustrator:"直良有祐",
       imageFull:"assets/img/characters/no1215_full.png", imageChar:"assets/img/characters/no1215_char.png",
       atkBase:1240, atkGrowth:52, defBase:1270, defGrowth:72, tacticsBase:800.0, tacticsGrowth:4.0, lv0Troops:4690,
@@ -1444,8 +1591,16 @@
       skillDetail:"SSS/LV10 確率 100% 対象:追加スキル\n模倣不可\n①このスキルを持つ武将カードは追加スキル(追加1/追加2/極限)の防御・破壊効果が2.5倍となる",
       trTable:[
         {level:"LV10", points:"-", effect:"追加スキル　確率 100% / 防御・破壊効果 2.5倍"}
+      ],
+      // 45do.info確認: 生HTML(skiladd_wrap)照合済み(単一ソースのみ、ixanary.comに合成候補情報なし、この武将自身の初期スキルは候補に含まれない)
+      synthesisTable:[
+        {slot:"A", skill:"神屋楯比売命", rank:"SS", afterSkill:"神屋楯比売命", afterRank:"SS", rate:"70%", target:"自身", effectShort:"初期スキルを模倣(戦闘スキルのみ、1倍)"},
+        {slot:"B", skill:"高津姫神", rank:"SS", afterSkill:"高津姫神", afterRank:"SS", rate:"70%", target:"自身", effectShort:"初期スキルを模倣(戦闘スキルのみ、1倍)"},
+        {slot:"C", skill:"海神ノ浮船", rank:"SS", afterSkill:"海神ノ浮船", afterRank:"SS", rate:"48%", target:"全 飛翔4", effectShort:"防御3.5%×防御参加武将数上昇"},
+        {slot:"S1", skill:"黄泉醜女ノ屍兵", rank:"SS", afterSkill:"黄泉醜女ノ屍兵", afterRank:"SS", rate:"54%", target:"全", effectShort:"防御200%上昇(70以下被ダメージ上限45)"},
+        {slot:"S2", skill:"建御雷神ノ閃光", rank:"SS", afterSkill:"建御雷神ノ閃光", afterRank:"SS", rate:"100%", target:"全 飛翔5", effectShort:"攻撃210%上昇+防御210%上昇+卓越確率+35%(模倣不可)"}
       ]},
-    {name:"明智光秀", no:"1204", ch:"23章", cost:5, troop:"全攻", sub:"", effect:"攻撃上昇／持つ卓越スキルを二度卓越できる",
+    {name:"明智光秀", no:"1204", ch:"23章", cost:5, troop:"全攻", sub:"", effect:"攻撃上昇／持つ卓越スキルを二度卓越できる", reviewedOk:true,
       furigana:"あけちみつひで", illustrator:"直良有祐",
       imageFull:"assets/img/characters/no1204_full.png", imageChar:"assets/img/characters/no1204_char.png",
       atkBase:1250, atkGrowth:65, defBase:1250, defGrowth:65, tacticsBase:760.0, tacticsGrowth:3.5, lv0Troops:4660,
@@ -1454,8 +1609,16 @@
       skillDetail:"SSS/LV10 確率 100% 攻撃120%上昇/対象:全\n模倣不可\n①攻撃120%上昇する\n②攻撃戦闘時この武将が持つ卓越スキルは二度卓越できる(2回目の卓越確率は+15%される)",
       trTable:[
         {level:"LV10", points:"-", effect:"全　確率 100% / 攻撃 120%上昇(卓越2回目+15%)"}
+      ],
+      // 45do.info確認: 生HTML(skiladd_wrap)照合済み(単一ソースのみ、ixanary.comに合成候補情報なし、この武将自身の初期スキルは候補に含まれない)
+      synthesisTable:[
+        {slot:"A", skill:"天津日ノ太刀", rank:"SS", afterSkill:"天津日ノ太刀", afterRank:"SS", rate:"57%", target:"全 飛翔4", effectShort:"攻撃184%上昇(卓越追加確率75%で2倍)"},
+        {slot:"B", skill:"天津日ノ太刀", rank:"SS", afterSkill:"天津日ノ太刀", afterRank:"SS", rate:"57%", target:"全 飛翔4", effectShort:"攻撃184%上昇(卓越追加確率75%で2倍)"},
+        {slot:"C", skill:"天啓ノ神撃", rank:"SS", afterSkill:"天啓ノ神撃", afterRank:"SS", rate:"45%", target:"全", effectShort:"攻撃180%上昇(HP100以上で敵1部隊に追加ダメージ5・模倣不可)"},
+        {slot:"S1", skill:"摩利支天ノ法", rank:"SSS", afterSkill:"摩利支天ノ法", afterRank:"SSS", rate:"70%", target:"部隊長", effectShort:"部隊長の初期スキルを1.25倍模倣"},
+        {slot:"S2", skill:"建御雷神ノ槌", rank:"SS", afterSkill:"建御雷神ノ槌", afterRank:"SS", rate:"100%", target:"全", effectShort:"攻撃135%上昇+防御135%上昇+卓越確率+30%(模倣不可)"}
       ]},
-    {name:"羽柴秀吉", no:"1208", ch:"23章", cost:4, troop:"弓砲器防", sub:"", effect:"防御上昇(敵軍高コスト依存)",
+    {name:"羽柴秀吉", no:"1208", ch:"23章", cost:4, troop:"弓砲器防", sub:"", effect:"防御上昇(敵軍高コスト依存)", reviewedOk:true,
       furigana:"はしばひでよし", illustrator:"直良有祐",
       imageFull:"assets/img/characters/no1208_full.png", imageChar:"assets/img/characters/no1208_char.png",
       atkBase:1120, atkGrowth:42, defBase:1190, defGrowth:62, tacticsBase:640.0, tacticsGrowth:3.0, lv0Troops:4400,
@@ -1464,8 +1627,16 @@
       skillDetail:"S/LV10 確率 47% 防御90%上昇/対象:弓・砲・器\n①防御90%上昇する\n②攻撃側敵軍全武将のうちこの武将のコストを上回る武将コスト部分の総和×8%を防御効果に加算する",
       trTable:[
         {level:"LV10", points:"-", effect:"弓・砲・器　確率 47% / 防御 90%上昇+敵軍超過コスト総和×8%加算"}
+      ],
+      // 45do.info確認: 生HTML(skiladd_wrap)照合済み(単一ソースのみ、ixanary.comに合成候補情報なし、この武将自身の初期スキルは候補に含まれない)
+      synthesisTable:[
+        {slot:"A", skill:"布都御魂ノ鬨", rank:"SS", afterSkill:"布都御魂ノ鬨", afterRank:"SS", rate:"35%", target:"全", effectShort:"攻撃20%上昇+防御20%上昇(部隊内S以上スキル数×20%)"},
+        {slot:"B", skill:"天衣無縫神戒", rank:"SS", afterSkill:"天衣無縫神戒", afterRank:"SS", rate:"50%", target:"全", effectShort:"防御30.02%上昇(部隊総コスト依存)"},
+        {slot:"C", skill:"禍津日神ノ謀", rank:"SS", afterSkill:"禍津日神ノ謀", afterRank:"SS", rate:"70%", target:"全", effectShort:"防御145%上昇+武将ダメージ軽減3%(重複上限4)"},
+        {slot:"S1", skill:"国津破邪ノ楯", rank:"SS", afterSkill:"国津破邪ノ楯", afterRank:"SS", rate:"60%", target:"全", effectShort:"防御60.04%上昇(部隊総コスト依存)"},
+        {slot:"S2", skill:"天弓星宿陣", rank:"SS", afterSkill:"天弓星宿陣", afterRank:"SS", rate:"60%", target:"全", effectShort:"防御30.69%上昇(部隊総コスト依存)"}
       ]},
-    {name:"九鬼嘉隆", no:"1212", ch:"23章", cost:3, troop:"弓砲器防", sub:"飛翔4", effect:"防御上昇(敵軍4部隊以下で2倍)／飛翔4所持",
+    {name:"九鬼嘉隆", no:"1212", ch:"23章", cost:3, troop:"弓砲器防", sub:"飛翔4", effect:"防御上昇(敵軍4部隊以下で2倍)／飛翔4所持", reviewedOk:true,
       furigana:"くきよしたか", illustrator:"直良有祐",
       imageFull:"assets/img/characters/no1212_full.png", imageChar:"assets/img/characters/no1212_char.png",
       atkBase:1060, atkGrowth:40, defBase:1170, defGrowth:62, tacticsBase:630.0, tacticsGrowth:3.0, lv0Troops:4000,
@@ -1477,6 +1648,14 @@
       ],
       trTable:[
         {level:"LV10", points:"-", effect:"弓・砲・器 飛翔4　確率 15% / 防御 134%上昇(敵軍4部隊以下で2倍、敵軍飛翔武将4人未満で通常ダメージ無効)"}
+      ],
+      // 45do.info確認: 生HTML(skiladd_wrap)照合済み(単一ソースのみ、ixanary.comに合成候補情報なし)
+      synthesisTable:[
+        {slot:"A", skill:"甲塞ノ龍砲", rank:"S", afterSkill:"甲塞ノ龍砲", afterRank:"S", rate:"15%", target:"弓・砲・器 飛翔4", effectShort:"防御134%上昇(敵軍4部隊以下で2倍)"},
+        {slot:"B", skill:"甲塞ノ龍砲", rank:"S", afterSkill:"甲塞ノ龍砲", afterRank:"S", rate:"15%", target:"弓・砲・器 飛翔4", effectShort:"防御134%上昇(敵軍4部隊以下で2倍)"},
+        {slot:"C", skill:"禍津日神ノ謀", rank:"SS", afterSkill:"禍津日神ノ謀", afterRank:"SS", rate:"70%", target:"全", effectShort:"防御145%上昇+武将ダメージ軽減3%(重複上限4)"},
+        {slot:"S1", skill:"海神ノ浮船", rank:"SS", afterSkill:"海神ノ浮船", afterRank:"SS", rate:"48%", target:"全 飛翔4", effectShort:"防御3.5%×防御参加武将数上昇"},
+        {slot:"S2", skill:"三千世界神将", rank:"SS", afterSkill:"三千世界神将", afterRank:"SS", rate:"100%", target:"全", effectShort:"防御120%上昇(本丸防御時コスト消費-1)"}
       ]},
     {name:"柴田勝家", no:"1216", ch:"24章", cost:5, troop:"全攻", sub:"覇道", effect:"攻撃上昇／所属部隊のスキルを無効化から保護", reviewedOk:true,
       furigana:"しばたかついえ", illustrator:"直良有祐",
@@ -1499,7 +1678,7 @@
         {slot:"S1", skill:"天津甕星ノ雷", rank:"SS", afterSkill:"天津甕星ノ雷", afterRank:"SS", rate:"100%", target:"全 覇道", effectShort:"攻撃170%上昇+速度70%上昇"},
         {slot:"S2", skill:"布都御魂ノ鬨", rank:"SS", afterSkill:"布都御魂ノ鬨", afterRank:"SS", rate:"35%", target:"全", effectShort:"攻撃40%上昇+防御40%上昇"}
       ]},
-    {name:"雑賀孫市(4)", no:"1220", ch:"24章", cost:3.5, troop:"槍弓器焙攻", sub:"", effect:"敵軍総武将コスト依存で攻撃上昇",
+    {name:"雑賀孫市(4)", no:"1220", ch:"24章", cost:3.5, troop:"槍弓器焙攻", sub:"", effect:"敵軍総武将コスト依存で攻撃上昇", reviewedOk:true,
       furigana:"さいかまごいち", illustrator:"直良有祐",
       imageFull:"assets/img/characters/no1220_full.png", imageChar:"assets/img/characters/no1220_char.png",
       atkBase:1180, atkGrowth:67, defBase:1070, defGrowth:36, tacticsBase:650.0, tacticsGrowth:3.0, lv0Troops:4200,
@@ -1508,8 +1687,16 @@
       skillDetail:"S/LV10 確率 32% 攻撃(敵軍総武将コスト×1)%上昇/対象:槍・弓・器・焙\n①対象兵科(槍・弓・器・焙)を指揮した戦闘時攻撃力が敵軍総武将コスト×1%上昇する(TR1〜TR5は未確認)",
       trTable:[
         {level:"LV10", points:"-", effect:"槍・弓・器・焙　確率 32% / 攻撃 敵軍総武将コスト×1%"}
+      ],
+      // 45do.info確認: 生HTML(skiladd_wrap)照合済み(単一ソースのみ、ixanary.comに合成候補情報なし)
+      synthesisTable:[
+        {slot:"A", skill:"天棲八咫烏", rank:"S", afterSkill:"天棲八咫烏", afterRank:"S", rate:"32%", target:"槍・弓・器・焙", effectShort:"攻撃(敵軍総武将コスト×1)%上昇"},
+        {slot:"B", skill:"天棲八咫烏", rank:"S", afterSkill:"天棲八咫烏", afterRank:"S", rate:"32%", target:"槍・弓・器・焙", effectShort:"攻撃(敵軍総武将コスト×1)%上昇"},
+        {slot:"C", skill:"加具土ノ神域", rank:"SS", afterSkill:"加具土ノ神域", afterRank:"SS", rate:"25%", target:"全", effectShort:"攻撃3.4%×防御参加武将数上昇"},
+        {slot:"S1", skill:"十束ノ神域", rank:"SS", afterSkill:"十束ノ神域", afterRank:"SS", rate:"100%", target:"全 覇道", effectShort:"攻撃320%上昇+速度70%上昇"},
+        {slot:"S2", skill:"天岩戸ノ神域", rank:"SS", afterSkill:"天岩戸ノ神域", afterRank:"SS", rate:"70%", target:"全", effectShort:"攻撃2.8%×防御参加武将数上昇"}
       ]},
-    {name:"堀秀政", no:"1224", ch:"24章", cost:5, troop:"弓馬器焙攻", sub:"飛翔2", effect:"攻撃上昇／対象兵科指揮時極限スキル攻撃効果3倍",
+    {name:"堀秀政", no:"1224", ch:"24章", cost:5, troop:"弓馬器焙攻", sub:"飛翔2", effect:"攻撃上昇／対象兵科指揮時極限スキル攻撃効果3倍", reviewedOk:true,
       furigana:"ほりひでまさ", illustrator:"直良有祐",
       imageFull:"assets/img/characters/no1224_full.png", imageChar:"assets/img/characters/no1224_char.png",
       atkBase:1220, atkGrowth:66, defBase:1090, defGrowth:46, tacticsBase:650.0, tacticsGrowth:3.0, lv0Troops:4820,
@@ -1521,8 +1708,16 @@
       ],
       trTable:[
         {level:"LV10", points:"-", effect:"弓・馬・器・焙 飛翔2　確率 100% / 攻撃 170%上昇(極限スキル攻撃効果3倍)"}
+      ],
+      // 45do.info確認: 生HTML(skiladd_wrap)照合済み(単一ソースのみ、ixanary.comに合成候補情報なし、この武将自身の初期スキルは候補に含まれない)
+      synthesisTable:[
+        {slot:"A", skill:"建御雷神ノ槌", rank:"SS", afterSkill:"建御雷神ノ槌", afterRank:"SS", rate:"100%", target:"全", effectShort:"攻撃135%上昇+防御135%上昇+卓越確率+30%(模倣不可)"},
+        {slot:"B", skill:"天啓ノ神撃", rank:"SS", afterSkill:"天啓ノ神撃", afterRank:"SS", rate:"45%", target:"全", effectShort:"攻撃180%上昇(HP100以上で敵1部隊に追加ダメージ5・模倣不可)"},
+        {slot:"C", skill:"摩利支天ノ法", rank:"SSS", afterSkill:"摩利支天ノ法", afterRank:"SSS", rate:"70%", target:"部隊長", effectShort:"部隊長の初期スキルを1.25倍模倣"},
+        {slot:"S1", skill:"開闢ノ逆鉾", rank:"SS", afterSkill:"開闢ノ逆鉾", afterRank:"SS", rate:"100%", target:"全", effectShort:"攻撃254%上昇(卓越追加確率30%で兵士被害15%減少)"},
+        {slot:"S2", skill:"布都御魂ノ鬨", rank:"SS", afterSkill:"布都御魂ノ鬨", afterRank:"SS", rate:"35%", target:"全", effectShort:"攻撃20%上昇+防御20%上昇(部隊内S以上スキル数×20%)"}
       ]},
-    {name:"直江兼続(3)", no:"1228", ch:"25章", cost:4, troop:"全攻防", sub:"", effect:"攻防上昇／部隊内スキルの卓越追加確率上昇",
+    {name:"直江兼続(3)", no:"1228", ch:"25章", cost:4, troop:"全攻防", sub:"", effect:"攻防上昇／部隊内スキルの卓越追加確率上昇", reviewedOk:true,
       furigana:"なおえかねつぐ", illustrator:"直良有祐",
       imageFull:"assets/img/characters/no1228_full.png", imageChar:"assets/img/characters/no1228_char.png",
       atkBase:1200, atkGrowth:66, defBase:1080, defGrowth:48, tacticsBase:650.0, tacticsGrowth:3.0, lv0Troops:4550,
@@ -1534,8 +1729,16 @@
       ],
       trTable:[
         {level:"LV10", points:"-", effect:"全　確率 100% / 攻撃 184%上昇+防御 184%上昇(卓越追加確率+25%)"}
+      ],
+      // 45do.info確認: 生HTML(skiladd_wrap)照合済み(単一ソースのみ、ixanary.comに合成候補情報なし)
+      synthesisTable:[
+        {slot:"A", skill:"閻魔ノ裁き", rank:"S", afterSkill:"閻魔ノ裁き", afterRank:"S", rate:"100%", target:"全", effectShort:"攻撃184%上昇+防御184%上昇(卓越追加確率+25%)"},
+        {slot:"B", skill:"閻魔ノ裁き", rank:"S", afterSkill:"閻魔ノ裁き", afterRank:"S", rate:"100%", target:"全", effectShort:"攻撃184%上昇+防御184%上昇(卓越追加確率+25%)"},
+        {slot:"C", skill:"建御雷神ノ閃光", rank:"SS", afterSkill:"建御雷神ノ閃光", afterRank:"SS", rate:"100%", target:"全 飛翔5", effectShort:"攻撃210%上昇+防御210%上昇+卓越確率+35%(模倣不可)"},
+        {slot:"S1", skill:"月詠ノ覇威", rank:"SS", afterSkill:"月詠ノ覇威", afterRank:"SS", rate:"100%", target:"全", effectShort:"攻撃344%上昇+防御344%上昇+卓越確率+15%(模倣不可)"},
+        {slot:"S2", skill:"開闢ノ逆鉾", rank:"SS", afterSkill:"開闢ノ逆鉾", afterRank:"SS", rate:"100%", target:"全", effectShort:"攻撃254%上昇(卓越追加確率30%で兵士被害15%減少)"}
       ]},
-    {name:"島津義弘(3)", no:"1232", ch:"25章", cost:4, troop:"槍馬器防", sub:"", effect:"防御上昇／本丸防御陣形時編成コスト消費-1",
+    {name:"島津義弘(3)", no:"1232", ch:"25章", cost:4, troop:"槍馬器防", sub:"", effect:"防御上昇／本丸防御陣形時編成コスト消費-1", reviewedOk:true,
       furigana:"しまづよしひろ", illustrator:"直良有祐",
       imageFull:"assets/img/characters/no1232_full.png", imageChar:"assets/img/characters/no1232_char.png",
       atkBase:1080, atkGrowth:46, defBase:1230, defGrowth:65, tacticsBase:690.0, tacticsGrowth:3.5, lv0Troops:4550,
@@ -1544,6 +1747,14 @@
       skillDetail:"S/LV10 確率 62% 防御190%上昇/対象:槍・馬・器\n模倣不可\n①防御190%上昇する\n②本丸防御陣形に配置時この武将の編成コスト消費を-1.5する(TR1〜TR5は未確認)",
       trTable:[
         {level:"LV10", points:"-", effect:"槍・馬・器　確率 62% / 防御 190%上昇(本丸防御陣形時コスト消費-1.5)"}
+      ],
+      // 45do.info確認: 生HTML(skiladd_wrap)照合済み(単一ソースのみ、ixanary.comに合成候補情報なし、この武将自身の初期スキルは候補にA枠のみ含まれる)
+      synthesisTable:[
+        {slot:"A", skill:"鬼神ノ軍法", rank:"S", afterSkill:"鬼神ノ軍法", afterRank:"S", rate:"62%", target:"槍・馬・器", effectShort:"防御190%上昇(本丸防御陣形時コスト消費-1.5)"},
+        {slot:"B", skill:"黄泉醜女ノ屍兵", rank:"SS", afterSkill:"黄泉醜女ノ屍兵", afterRank:"SS", rate:"54%", target:"全", effectShort:"防御200%上昇(70以下被ダメージ上限45)"},
+        {slot:"C", skill:"国津破邪ノ楯", rank:"SS", afterSkill:"国津破邪ノ楯", afterRank:"SS", rate:"60%", target:"全", effectShort:"防御60.04%上昇(部隊総コスト依存)"},
+        {slot:"S1", skill:"四天轟雷", rank:"SS", afterSkill:"四天轟雷", afterRank:"SS", rate:"100%", target:"全", effectShort:"攻撃360%上昇+防御360%上昇(部隊内初期スキルに砲・器対象追加)"},
+        {slot:"S2", skill:"星宿劫ノ法壁", rank:"SS", afterSkill:"星宿劫ノ法壁", afterRank:"SS", rate:"49%", target:"全", effectShort:"防御120%上昇(本丸防御陣形第参列目以降で3倍)"}
       ]},
     {name:"水野勝成", no:"1236", ch:"25章", cost:4, troop:"槍弓馬砲攻", sub:"", effect:"防御参加武将数依存で攻撃上昇",
       furigana:"みずのかつなり", illustrator:"直良有祐",
