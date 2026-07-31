@@ -298,7 +298,7 @@
         {slot:"S1", skill:"月煌侵蝕", rank:"SSS", afterSkill:"月煌侵蝕", afterRank:"SSS", rate:"45%", target:"全 兵站", effectShort:"防御を係数×人数で上昇"},
         {slot:"S2", skill:"黄泉醜女ノ屍兵", rank:"SS", afterSkill:"黄泉醜女ノ屍兵", afterRank:"SS", rate:"54%", target:"全", effectShort:"防御200%上昇+70以下の被ダメージを45に軽減"}
       ]},
-    {name:"上杉景勝(6)", no:"1301", ch:"31章", cost:5.5, troop:"全防", sub:"", effect:"模倣スキルのレアリティ係数によって防御効果が上昇",
+    {name:"上杉景勝(6)", no:"1301", ch:"31章", cost:5.5, troop:"全防", sub:"", effect:"模倣スキルのレアリティ係数によって防御効果が上昇", reviewedOk:true,
       furigana:"うえすぎかげかつ", illustrator:"直良有祐",
       imageFull:"assets/img/characters/no1301_full.png", imageChar:"assets/img/characters/no1301_char.png",
       atkBase:1090, atkGrowth:49, defBase:1260, defGrowth:72, tacticsBase:680.0, tacticsGrowth:3.5, lv0Troops:5300,
@@ -326,7 +326,15 @@
           {rarity:"A", coef:"0.5", multiplier:"1.2倍", values:["720%","738%","756%","780%","816%","840%","864%"]},
           {rarity:"B", coef:"0.6", multiplier:"1.0倍", values:["600%","615%","630%","650%","680%","700%","720%"]}
         ]
-      }},
+      },
+      // ixanary.com(skills/龍国ノ武威、合成テーブル欄)+ameameixa.com(【31章】天武将スキルテーブル一覧)の生HTML照合済み(2026-07-31)。両ソースでA〜S2のスキル名が完全一致。
+      synthesisTable:[
+        {slot:"A", skill:"破国八陣", rank:"SS", afterSkill:"破国八陣", afterRank:"SS", target:"全", effectShort:"防御1030%上昇+攻撃部隊の特殊効果付き初期スキル無効化(模倣不可)"},
+        {slot:"B", skill:"神屋楯比売命", rank:"SS", afterSkill:"神屋楯比売命", afterRank:"SS", target:"自身", effectShort:"自身の初期スキルを模倣(戦闘スキルのみ)"},
+        {slot:"C", skill:"四至ノ神域", rank:"SSS", afterSkill:"四至ノ神域", afterRank:"SSS", target:"自身", effectShort:"自身の初期スキルを1.25倍にして模倣"},
+        {slot:"S1", skill:"経津主神ノ剣", rank:"SSS", afterSkill:"経津主神ノ剣", afterRank:"SSS", target:"自身", effectShort:"自身の初期スキルを1.35倍にして模倣"},
+        {slot:"S2", skill:"月詠ノ覇威", rank:"SS", afterSkill:"月詠ノ覇威", afterRank:"SS", target:"全", effectShort:"攻撃344%上昇+防御344%上昇+自軍卓越確率上昇(模倣不可)"}
+      ]},
     {name:"佐竹義宣(3)", no:"1302", ch:"31章", cost:5.5, troop:"砲器防", sub:"", effect:"防御参加武将数依存", approved:true,
       furigana:"さたけよしのぶ", illustrator:"直良有祐",
       imageFull:"assets/img/characters/no1302_full.png", imageChar:"assets/img/characters/no1302_char.png",
@@ -354,7 +362,7 @@
         {slot:"S1", skill:"泰厳射手", rank:"S", afterSkill:"泰厳射手", afterRank:"S", rate:"60%", target:"砲・器", effectShort:"防御を係数×人数で上昇"},
         {slot:"S2", skill:"月煌侵蝕", rank:"SSS", afterSkill:"月煌侵蝕", afterRank:"SSS", rate:"45%", target:"全 兵站", effectShort:"防御を係数×人数で上昇"}
       ]},
-    {name:"本多忠勝(2)", no:"1303", ch:"31章", cost:2.5, troop:"全攻", sub:"", effect:"8部隊以下の攻撃時、卓越確率+480%／部隊内武将の卓越確率+15%",
+    {name:"本多忠勝(2)", no:"1303", ch:"31章", cost:2.5, troop:"全攻", sub:"", effect:"8部隊以下の攻撃時、卓越確率+480%／部隊内武将の卓越確率+15%", reviewedOk:true,
       furigana:"ほんだただかつ", illustrator:"直良有祐",
       imageFull:"assets/img/characters/no1303_full.png", imageChar:"assets/img/characters/no1303_char.png",
       atkBase:1270, atkGrowth:73, defBase:1080, defGrowth:48, tacticsBase:670.0, tacticsGrowth:3.0, lv0Troops:4060,
@@ -369,6 +377,14 @@
         {level:"TR3", points:"90", effect:"全　確率 100% / 攻撃 1150%上昇(卓越自己+560%/部隊+19%)"},
         {level:"TR4", points:"150", effect:"全　確率 100% / 攻撃 1320%上昇(卓越自己+590%/部隊+21%)"},
         {level:"TR5", points:"200", effect:"全　確率 100% / 攻撃 1570%上昇(卓越自己+620%/部隊+23%)"}
+      ],
+      // ixanary.com(skills/武天蜻蛉切、合成テーブル欄)+ameameixa.com(【31章】天武将スキルテーブル一覧)の生HTML照合済み(2026-07-31)。両ソースでA〜S2のスキル名が完全一致。
+      synthesisTable:[
+        {slot:"A", skill:"絶無灰尽", rank:"SS", afterSkill:"絶無灰尽", afterRank:"SS", target:"全 無尽 不屈1", effectShort:"攻撃1010%上昇+無尽(部隊消費コスト-0.5)"},
+        {slot:"B", skill:"焼尽神無", rank:"SS", afterSkill:"焼尽神無", afterRank:"SS", target:"全 無尽", effectShort:"攻撃を係数×人数で上昇+無尽(部隊消費コスト-0.5)"},
+        {slot:"C", skill:"虚空ノ導", rank:"SSS", afterSkill:"虚空ノ導", afterRank:"SSS", target:"自身", effectShort:"卓越:追加確率30%で自身の初期スキルを1.3倍にして模倣"},
+        {slot:"S1", skill:"覆天征軍", rank:"SS", afterSkill:"覆天征軍", afterRank:"SS", target:"全 無尽2", effectShort:"攻撃900%上昇+無尽2(部隊消費コスト-1.0)"},
+        {slot:"S2", skill:"月詠ノ覇威", rank:"SS", afterSkill:"月詠ノ覇威", afterRank:"SS", target:"全", effectShort:"攻撃344%上昇+防御344%上昇+自軍卓越確率上昇(模倣不可)"}
       ]},
     {name:"真田昌幸(5)", no:"1304", ch:"31章", cost:5.0, troop:"-", sub:"無尽", effect:"追加・極限スキルの防御・破壊効果が2倍",
       furigana:"さなだまさゆき", illustrator:"直良有祐",
@@ -1837,7 +1853,7 @@
   }
 
   // スキルデータベース(skills.html)にページがあるスキル名の一覧。ここに載っているスキルはリンク化する。
-  const LINKED_SKILLS = ['勇冠三軍', '焼尽神無', '覆天征軍', '終焉焦土', '万物神勇', '経津主神ノ剣', '従魔絶神', '梵天浄界', '岳王ノ加護', '國才連豪', '虎賁統帥', '天地超克', '神羅聖域', '信明義星', '千里必勝ノ神算', '刹那無影', '月煌侵蝕', '虚実兵妙', '仙境解脱', '幻像鏡花', '開闢ノ逆鉾', '思金神ノ深謀', '戦華雄渾', '月詠ノ覇威', '絶無灰尽', '八幡神ノ威光', '龍驤虎躍', '永世ノ天隻', '黄泉醜女ノ屍兵', '高津姫神', '義陣絶刀', '破国八陣', '轟渦ノ神将', '王花尖剣', '泰厳射手', '国呑ノ蟒蛇', '虚空ノ導', '龍気剣鳴', '雄武英略', '坂西都督', '摩利支天ノ法', '不制于天地人', '神機采配', '十束ノ神域', '天聖宝冠', '四天轟雷', '火之迦具土神', '天香山命', '天津甕星ノ雷', '布都御魂ノ鬨', '天宇受売命', '万鬼闘帝', '三全将帥', '布刀玉ノ策', '火槍猛進'];
+  const LINKED_SKILLS = ['勇冠三軍', '焼尽神無', '覆天征軍', '終焉焦土', '万物神勇', '経津主神ノ剣', '従魔絶神', '梵天浄界', '岳王ノ加護', '國才連豪', '虎賁統帥', '天地超克', '神羅聖域', '信明義星', '千里必勝ノ神算', '刹那無影', '月煌侵蝕', '虚実兵妙', '仙境解脱', '幻像鏡花', '開闢ノ逆鉾', '思金神ノ深謀', '戦華雄渾', '月詠ノ覇威', '絶無灰尽', '八幡神ノ威光', '龍驤虎躍', '永世ノ天隻', '黄泉醜女ノ屍兵', '高津姫神', '義陣絶刀', '破国八陣', '轟渦ノ神将', '王花尖剣', '泰厳射手', '国呑ノ蟒蛇', '虚空ノ導', '龍気剣鳴', '雄武英略', '坂西都督', '摩利支天ノ法', '不制于天地人', '神機采配', '十束ノ神域', '天聖宝冠', '四天轟雷', '火之迦具土神', '天香山命', '天津甕星ノ雷', '布都御魂ノ鬨', '天宇受売命', '万鬼闘帝', '三全将帥', '布刀玉ノ策', '火槍猛進', '神屋楯比売命', '四至ノ神域'];
 
   function gdbSkillLink(skillName, rank){
     const label = gdbEscapeHtml(skillName)+' '+gdbEscapeHtml(rank||'');
