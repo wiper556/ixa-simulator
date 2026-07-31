@@ -735,7 +735,8 @@
         {href:"skills-leadermimic.html", label:"部隊長模倣スキル一覧を見る"}
       ],
       sourceCharacters:[
-        {name:"津軽為信", no:"1309", slot:"A"}
+        {name:"津軽為信", no:"1309", slot:"A"},
+        {name:"百地三太夫", no:"10062", slot:"A"}
       ],
       ownHiddenCandidate: {skill:"摩利支天ノ法", rank:"SSS"},
       trTable:[
@@ -978,11 +979,46 @@
         {name:"大友宗麟(6)", no:"1295", slot:"C"},
         {name:"佐竹義宣(3)", no:"1302", slot:"A"},
         {name:"上杉謙信(復刻)【覇】", no:"10074", slot:"B"},
-        {name:"直江兼続(4)", no:"1266", slot:"C"}
+        {name:"直江兼続(4)", no:"1266", slot:"C"},
+        {name:"百地三太夫", no:"10062", slot:"B"}
       ],
       ownHiddenCandidate: {skill:"八幡神ノ威光", rank:"SSS"},
       trTable:[
         {level:"LV10", points:"-", effect:"部隊長　確率 70% / 模倣倍率1.25倍"}
+      ]
+    },
+    {
+      name:"封法大十字", rank:"S", baseRate:40, target:"部隊長 撤退",
+      effectSummary:"S/LV10 確率 40% 対象:部隊長　撤退\n①部隊長撤退時、所属部隊の部隊長が持つ模倣可能な初期スキルを、通常攻撃/防御効果を1.24倍して模倣する\n②撤退を持つため部隊は陣での防御戦闘に参加しない",
+      categoryLinks:[
+        {href:"skills-taitai.html", label:"撤退スキル一覧を見る"},
+        {href:"skills-leadermimic.html", label:"部隊長模倣スキル一覧を見る"}
+      ],
+      sourceCharacters:[
+        {name:"百地三太夫", no:"10062", slot:"C・S1"}
+      ],
+      ownHiddenCandidate: {skill:"封法大十字", rank:"S"},
+      trTable:[
+        {level:"LV10", points:"-", effect:"部隊長 撤退　確率 40% / 模倣倍率 1.24倍"},
+        {level:"TR1", points:"10", effect:"部隊長 撤退　確率 45% / 模倣倍率 1.24倍"},
+        {level:"TR2", points:"40", effect:"部隊長 撤退　確率 50% / 模倣倍率 1.3倍"},
+        {level:"TR3", points:"90", effect:"部隊長 撤退　確率 55% / 模倣倍率 1.35倍"},
+        {level:"TR4", points:"150", effect:"部隊長 撤退　確率 65% / 模倣倍率 1.4倍"},
+        {level:"TR5", points:"200", effect:"部隊長 撤退　確率 70% / 模倣倍率 1.5倍"}
+      ]
+    },
+    {
+      name:"九字ノ呪法", rank:"S", baseRate:40, target:"部隊長",
+      effectSummary:"S/LV10 確率 40% 対象:部隊長\n①部隊長の持つ模倣可能な初期スキルを1.2倍に強化して模倣する",
+      categoryLinks:[
+        {href:"skills-leadermimic.html", label:"部隊長模倣スキル一覧を見る"}
+      ],
+      sourceCharacters:[
+        {name:"百地三太夫", no:"10062", slot:"S2"}
+      ],
+      ownHiddenCandidate: {skill:"摩利支天ノ法", rank:"SSS"},
+      trTable:[
+        {level:"LV10", points:"-", effect:"部隊長　確率 40% / 模倣倍率 1.2倍(TR以降のデータなし、LV10が最大値)"}
       ]
     },
     {

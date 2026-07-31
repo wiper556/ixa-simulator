@@ -88,11 +88,17 @@
      「所属部隊の部隊長が持つ模倣可能な初期スキルを模倣する」効果を持つものを比較用にまとめる。
   ============================================ */
   const leaderMimicSkills = [
-    {name:"封法大十字", skillPage:"characters.html#10062", baseRate:"40%", target:"部隊長",
+    {name:"封法大十字", skillPage:"skills.html#封法大十字", baseRate:"40%", target:"部隊長",
       lv10Effect:"1.24倍+撤退(陣での防御戦闘に不参加)",
       tr5Effect:"1.5倍+撤退(陣での防御戦闘に不参加)",
       sourceCharacters:[
-        {name:"百地三太夫", no:"10062", slot:"移植不可"}
+        {name:"百地三太夫", no:"10062", slot:"C・S1"}
+      ]},
+    {name:"九字ノ呪法", skillPage:"skills.html#九字ノ呪法", baseRate:"40%", target:"部隊長",
+      lv10Effect:"1.2倍",
+      tr5Effect:"TRなし",
+      sourceCharacters:[
+        {name:"百地三太夫", no:"10062", slot:"S2"}
       ]},
     {name:"古今虚実ノ法", skillPage:"characters.html#10070", baseRate:"40%", target:"部隊長",
       lv10Effect:"卓越時1.02倍",
@@ -126,13 +132,15 @@
       sourceCharacters:[
         {name:"大友宗麟(6)", no:"1295", slot:"C"},
         {name:"佐竹義宣(3)", no:"1302", slot:"A"},
-        {name:"上杉謙信(復刻)【覇】", no:"10074", slot:"B"}
+        {name:"上杉謙信(復刻)【覇】", no:"10074", slot:"B"},
+        {name:"百地三太夫", no:"10062", slot:"B"}
       ]},
     {name:"摩利支天ノ法", skillPage:"skills.html#摩利支天ノ法", baseRate:"70%", target:"部隊長",
       lv10Effect:"1.25倍",
       tr5Effect:"TRなし",
       sourceCharacters:[
-        {name:"津軽為信", no:"1309", slot:"A"}
+        {name:"津軽為信", no:"1309", slot:"A"},
+        {name:"百地三太夫", no:"10062", slot:"A"}
       ]},
     {name:"転歌", skillPage:"characters-kyoku.html#2358", baseRate:"80%", target:"部隊長",
       lv10Effect:"戦闘スキルのみ模倣(1倍)",
