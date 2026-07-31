@@ -92,7 +92,7 @@
   <div class="sim-version-badge" id="simVersionBadge">v-</div>
 
 <script>
-  const TK_VERSION = 'v2026-08-01.1';
+  const TK_VERSION = 'v2026-08-01.2';
   document.addEventListener('DOMContentLoaded', ()=>{
     const badge = document.getElementById('simVersionBadge');
     if(badge) badge.textContent = TK_VERSION;
@@ -199,6 +199,12 @@
       lv10Effect:"攻撃940%上昇+防御940%上昇",
       sourceCharacters:[
         {name:"真田昌幸(5)", no:"1304", slot:"C"}
+      ]},
+    {name:"武天蜻蛉切", skillPage:"characters.html#1303", baseRate:"100%", target:"全",
+      takuetsuEffect:"8部隊以下の攻撃戦闘時、自身の全スキルの卓越追加確率が480%(LV10)〜620%(TR5)上昇(同じ列の卓越依存スキルにのみ加算)+部隊内武将全スキルの卓越発動率が15%(LV10)〜23%(TR5)上昇(特殊効果は自部隊内では重複不可)",
+      lv10Effect:"攻撃800%上昇(卓越自己+480%/部隊+15%)",
+      sourceCharacters:[
+        {name:"本多忠勝(2)", no:"1303", slot:"移植不可"}
       ]},
     {name:"虚実兵妙", skillPage:"skills.html#虚実兵妙", baseRate:"100%", target:"全",
       takuetsuEffect:"防衛戦闘時、敵軍の卓越確率を-8%する(自軍内重複上限2)",
