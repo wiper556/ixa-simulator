@@ -2651,7 +2651,8 @@
         + '<div class="gdb-table-scroll"><table class="gdb-stat-table"><thead><tr><th>候補</th><th>初期スキル</th><th>移植後合成候補</th></tr></thead><tbody>'
         + g.synthesisTable.map(function(row){
             const targetLabel = row.target ? '対象:'+gdbColorizeMujin(row.target)+' ' : '';
-            const desc = row.rate ? '<div class="gdb-synth-desc">'+targetLabel+'確率'+gdbEscapeHtml(row.rate)+' '+gdbColorizeMujin(row.effectShort||'')+'</div>' : '';
+            const rateLabel = row.rate ? '確率'+gdbEscapeHtml(row.rate)+' ' : '';
+            const desc = (row.target || row.rate || row.effectShort) ? '<div class="gdb-synth-desc">'+targetLabel+rateLabel+gdbColorizeMujin(row.effectShort||'')+'</div>' : '';
             const skillLabel = '<div class="gdb-synth-cell"><span class="gdb-synth-name">'+gdbSkillLink(row.skill, row.rank)+'</span>'+desc+'</div>';
             const afterLabel = row.afterSkill ? ('<div class="gdb-synth-cell"><span class="gdb-synth-name">'+gdbSkillLink(row.afterSkill, row.afterRank)+'</span>'+desc+'</div>') : '-';
             return '<tr><td>'+gdbEscapeHtml(row.slot)+'</td><td>'+skillLabel+'</td>'
