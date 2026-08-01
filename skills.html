@@ -132,7 +132,8 @@
         {name:"豊臣秀長【覇】", no:"1298", slot:"C"},
         {name:"大谷吉継(3)【覇】", no:"1300", slot:"C"},
         {name:"北条早雲", no:"1296", slot:"S1"},
-        {name:"毛利輝元(5)", no:"1306", slot:"C"}
+        {name:"毛利輝元(5)", no:"1306", slot:"C"},
+        {name:"織田信長【覇(8)】", no:"1286", slot:"S1"}
       ],
       // このスキルを習得済みのカードを合成素材にした時に出現する隠し候補スキル。
       // 武将ページ(characters.html)のsynthesisTableで、このスキルが該当する候補枠のafterSkill/afterRankと同じ値になる。
@@ -157,7 +158,8 @@
         {name:"豊臣秀長【覇】", no:"1298", slot:"B"},
         {name:"島津義弘(4)", no:"1294", slot:"S1"},
         {name:"毛利輝元(復刻)【覇】", no:"10075", slot:"C"},
-        {name:"本多忠勝(2)", no:"1303", slot:"B"}
+        {name:"本多忠勝(2)", no:"1303", slot:"B"},
+        {name:"織田信長【覇(8)】", no:"1286", slot:"C"}
       ],
       ownHiddenCandidate: {skill:"焼尽神無", rank:"SS"},
       trTable:[
@@ -215,7 +217,8 @@
       sourceCharacters:[
         {name:"豊臣秀長【覇】", no:"1298", slot:"S2"},
         {name:"北条早雲", no:"1296", slot:"B"},
-        {name:"相馬義胤(2)", no:"1264", slot:"S1"}
+        {name:"相馬義胤(2)", no:"1264", slot:"S1"},
+        {name:"織田信長【覇(8)】", no:"1286", slot:"S2"}
       ],
       ownHiddenCandidate: {skill:"万物神勇", rank:"SSS"},
       trTable:[
@@ -301,7 +304,8 @@
         {name:"上杉謙信(5)", no:"1291", slot:"C"},
         {name:"津軽為信", no:"1309", slot:"B"},
         {name:"豊臣秀吉【覇(5)】", no:"1287", slot:"B"},
-        {name:"最上義光(復刻)【覇】", no:"10076", slot:"C"}
+        {name:"最上義光(復刻)【覇】", no:"10076", slot:"C"},
+        {name:"豊臣秀吉【覇】", no:"1274", slot:"S1"}
       ],
       ownHiddenCandidate: {skill:"従魔絶神", rank:"SSS"},
       trTable:[
@@ -407,7 +411,8 @@
       sourceCharacters:[
         {name:"大谷吉継(3)【覇】", no:"1300", slot:"B"},
         {name:"北条早雲", no:"1296", slot:"C"},
-        {name:"武田信玄(6)", no:"1290", slot:"S1"}
+        {name:"武田信玄(6)", no:"1290", slot:"S1"},
+        {name:"織田信長【覇(8)】", no:"1286", slot:"A・B"}
       ],
       ownHiddenCandidate: {skill:"天地超克", rank:"SSS"},
       trTable:[
@@ -431,7 +436,8 @@
         {name:"武田信玄(6)", no:"1290", slot:"B・S2"},
         {name:"毛利輝元(復刻)【覇】", no:"10075", slot:"S2"},
         {name:"直江兼続(4)", no:"1266", slot:"S1"},
-        {name:"豊臣秀次", no:"1272", slot:"S1"}
+        {name:"豊臣秀次", no:"1272", slot:"S1"},
+        {name:"豊臣秀吉【覇】", no:"1274", slot:"A"}
       ],
       ownHiddenCandidate: {skill:"神羅聖域", rank:"SS"},
       trTable:[
@@ -523,11 +529,29 @@
         {name:"毛利輝元(覇)", no:"1251", slot:"S1"},
         {name:"織田信長(覇8)【No.1250】", no:"1250", slot:"S1"},
         {name:"真田信繁", no:"1268", slot:"S1"},
-        {name:"武田勝頼(5)", no:"1252", slot:"S1"}
+        {name:"武田勝頼(5)", no:"1252", slot:"S1"},
+        {name:"豊臣秀吉【覇】", no:"1274", slot:"S2"}
       ],
-      ownHiddenCandidate: {skill:"破邪後輝", rank:"SS"},
+      ownHiddenCandidate: {skill:"飛龍衝天", rank:"SS"},
       trTable:[
-        {level:"LV10", points:"-", effect:"全 覇道　確率 100% / 攻撃 770%上昇+速度150%上昇+破壊150%上昇(TR別データは未確認)"}
+        {level:"LV10", points:"-", effect:"全 覇道　確率 100% / 攻撃 770%上昇+速度150%上昇+破壊150%上昇(TR以降のデータなし、LV10が最大値)"}
+      ]
+    },
+    {
+      name:"飛龍衝天", rank:"SS", baseRate:45, target:"全 飛翔15", noMimic:true,
+      effectSummary:"SS/LV10 確率 45% 攻撃200%上昇/対象:全　飛翔15\n模倣不可\n①攻撃200%上昇する\n②(係数×防御参加武将数)%を攻撃効果に加算する(係数はLV10=7.5)",
+      categoryLinks:[
+        {href:"skills-count-atk.html", label:"人数依存(攻)スキル一覧を見る"},
+        {href:"skills-hishou-atk.html", label:"飛翔スキル一覧(攻撃)を見る"}
+      ],
+      ownHiddenCandidate: {skill:"飛龍衝天", rank:"SS"},
+      trTable:[
+        {level:"LV10", points:"-", coefficient:"7.5", effect:"全 飛翔15　確率 45% / 攻撃 200%+7.5%×防御参加武将数(280人)=2300.0%"},
+        {level:"TR1", points:"10", coefficient:"7.8", effect:"全 飛翔15　確率 45% / 攻撃 200%+7.8%×防御参加武将数(280人)=2384.0%"},
+        {level:"TR2", points:"40", coefficient:"8.2", effect:"全 飛翔15　確率 45% / 攻撃 200%+8.2%×防御参加武将数(280人)=2496.0%"},
+        {level:"TR3", points:"90", coefficient:"8.6", effect:"全 飛翔15　確率 45% / 攻撃 200%+8.6%×防御参加武将数(280人)=2608.0%"},
+        {level:"TR4", points:"150", coefficient:"9.2", effect:"全 飛翔15　確率 45% / 攻撃 200%+9.2%×防御参加武将数(280人)=2776.0%"},
+        {level:"TR5", points:"200", coefficient:"10", effect:"全 飛翔15　確率 45% / 攻撃 200%+10%×防御参加武将数(280人)=3000.0%"}
       ]
     },
     {
@@ -760,7 +784,8 @@
       ],
       sourceCharacters:[
         {name:"津軽為信", no:"1309", slot:"A"},
-        {name:"豊臣秀吉(5)", no:"1255", slot:"C"}
+        {name:"豊臣秀吉(5)", no:"1255", slot:"C"},
+        {name:"百地三太夫", no:"10062", slot:"A"}
       ],
       ownHiddenCandidate: {skill:"摩利支天ノ法", rank:"SSS"},
       trTable:[
@@ -910,7 +935,8 @@
         {name:"山内一豊", no:"1237", slot:"B"},
         {name:"宇喜多直家(3)", no:"1256", slot:"C"},
         {name:"前田慶次", no:"1222", slot:"S1"},
-        {name:"浅井長政(4)", no:"1244", slot:"C"}
+        {name:"浅井長政(4)", no:"1244", slot:"C"},
+        {name:"細川幽斎(復刻)【天】", no:"10070", slot:"S2"}
       ],
       ownHiddenCandidate: {skill:"開闢ノ逆鉾", rank:"SS"},
       trTable:[
@@ -934,11 +960,76 @@
         {name:"斎藤道三(3)", no:"1297", slot:"B"},
         {name:"里見義弘(2)", no:"1245", slot:"S1"},
         {name:"真田信繁", no:"1268", slot:"C"},
-        {name:"朝倉義景", no:"1243", slot:"S1"}
+        {name:"朝倉義景", no:"1243", slot:"S1"},
+        {name:"細川幽斎(復刻)【天】", no:"10070", slot:"C"}
       ],
       ownHiddenCandidate: {skill:"思金神ノ深謀", rank:"SS"},
       trTable:[
         {level:"LV10", points:"-", effect:"部隊長　確率 60% / 卓越追加確率35%・1.3倍"}
+      ]
+    },
+    {
+      name:"虚実ノ理合", rank:"S", baseRate:40, target:"部隊長 覇道",
+      effectSummary:"S/LV10 確率 40% 対象:部隊長　覇道\n①覇道を持つため所属部隊の武将のスキルを無効化や発動率低下から保護する\n②部隊長の持つ模倣可能な初期スキルを模倣する\n③卓越:追加確率10%で通常攻撃/防御効果を1.2倍にして模倣する",
+      categoryLinks:[
+        {href:"skills-hadou.html", label:"覇道スキル一覧を見る"},
+        {href:"skills-leadermimic.html", label:"部隊長模倣スキル一覧を見る"},
+        {href:"skills-takuetsu.html", label:"卓越スキル一覧を見る"}
+      ],
+      sourceCharacters:[
+        {name:"細川幽斎(復刻)【天】", no:"10070", slot:"A"}
+      ],
+      ownHiddenCandidate: {skill:"虚実ノ理合", rank:"S"},
+      trTable:[
+        {level:"LV10", points:"-", effect:"部隊長 覇道　確率 40% / 卓越追加確率10%・1.2倍"}
+      ]
+    },
+    {
+      name:"潔花咲然", rank:"S", baseRate:45, target:"部隊長",
+      effectSummary:"S/LV10 確率 45% 対象:部隊長\n①部隊長の持つ模倣可能な初期スキルを模倣する\n②卓越:追加確率30%で通常攻撃/防御効果を1.15倍にして模倣する\n③自部隊の帰還時間が2分を超えるとき2分で帰還できる(確率100%)",
+      categoryLinks:[
+        {href:"skills-leadermimic.html", label:"部隊長模倣スキル一覧を見る"},
+        {href:"skills-takuetsu.html", label:"卓越スキル一覧を見る"}
+      ],
+      sourceCharacters:[
+        {name:"細川幽斎(復刻)【天】", no:"10070", slot:"B"}
+      ],
+      ownHiddenCandidate: {skill:"舞蝶朧月", rank:"S"},
+      trTable:[
+        {level:"LV10", points:"-", effect:"部隊長　確率 45% / 卓越追加確率30%・1.15倍(帰還時間短縮は別枠 確率100%)"}
+      ]
+    },
+    {
+      name:"舞蝶朧月", rank:"S", baseRate:50, target:"部隊長",
+      effectSummary:"S/LV10 確率 50% 対象:部隊長\n①部隊長の持つ模倣可能な初期スキルを模倣する\n②卓越:追加確率20%で通常攻撃/防御効果を1.25倍にして模倣する",
+      categoryLinks:[
+        {href:"skills-leadermimic.html", label:"部隊長模倣スキル一覧を見る"},
+        {href:"skills-takuetsu.html", label:"卓越スキル一覧を見る"}
+      ],
+      ownHiddenCandidate: {skill:"舞蝶朧月", rank:"S"},
+      trTable:[
+        {level:"LV10", points:"-", effect:"部隊長　確率 50% / 卓越追加確率20%・1.25倍"}
+      ]
+    },
+    {
+      name:"古今虚実ノ法", rank:"S", baseRate:40, target:"部隊長 覇道",
+      effectSummary:"S/LV10 確率 40% 対象:部隊長　覇道\n①覇道を持つため所属部隊の武将のスキルを無効化や発動率低下から保護する\n②部隊長の持つ模倣可能な初期スキルを模倣する\n③卓越:追加確率20%で通常攻撃/防御効果を1.25倍にして模倣する",
+      categoryLinks:[
+        {href:"skills-hadou.html", label:"覇道スキル一覧を見る"},
+        {href:"skills-leadermimic.html", label:"部隊長模倣スキル一覧を見る"},
+        {href:"skills-takuetsu.html", label:"卓越スキル一覧を見る"}
+      ],
+      sourceCharacters:[
+        {name:"細川幽斎(復刻)【天】", no:"10070", slot:"S1"}
+      ],
+      ownHiddenCandidate: {skill:"古今虚実ノ法", rank:"S"},
+      trTable:[
+        {level:"LV10", points:"-", effect:"部隊長 覇道　確率 40% / 卓越追加確率20%・1.25倍"},
+        {level:"TR1", points:"10", effect:"部隊長 覇道　確率 50% / 卓越追加確率25%・1.27倍"},
+        {level:"TR2", points:"40", effect:"部隊長 覇道　確率 60% / 卓越追加確率30%・1.3倍"},
+        {level:"TR3", points:"90", effect:"部隊長 覇道　確率 70% / 卓越追加確率35%・1.33倍"},
+        {level:"TR4", points:"150", effect:"部隊長 覇道　確率 80% / 卓越追加確率40%・1.36倍"},
+        {level:"TR5", points:"200", effect:"部隊長 覇道　確率 100% / 卓越追加確率50%・1.4倍"}
       ]
     },
     {
@@ -995,7 +1086,8 @@
       sourceCharacters:[
         {name:"島津義弘(4)", no:"1294", slot:"A"},
         {name:"毛利輝元(復刻)【覇】", no:"10075", slot:"B"},
-        {name:"本多忠勝(2)", no:"1303", slot:"A"}
+        {name:"本多忠勝(2)", no:"1303", slot:"A"},
+        {name:"豊臣秀吉【覇】", no:"1274", slot:"C"}
       ],
       ownHiddenCandidate: {skill:"絶無灰尽", rank:"SS"},
       trTable:[
@@ -1038,11 +1130,46 @@
         {name:"上杉謙信(復刻)【覇】", no:"10074", slot:"B"},
         {name:"直江兼続(4)", no:"1266", slot:"C"},
         {name:"立花道雪", no:"1247", slot:"S1"},
-        {name:"黒田官兵衛【覇】", no:"1214", slot:"S2(同カード2枚合成時のみ、建御雷神ノ閃光の裏として出現)"}
+        {name:"黒田官兵衛【覇】", no:"1214", slot:"S2(同カード2枚合成時のみ、建御雷神ノ閃光の裏として出現)"},
+        {name:"百地三太夫", no:"10062", slot:"B"}
       ],
       ownHiddenCandidate: {skill:"八幡神ノ威光", rank:"SSS"},
       trTable:[
         {level:"LV10", points:"-", effect:"部隊長　確率 70% / 模倣倍率1.25倍"}
+      ]
+    },
+    {
+      name:"封法大十字", rank:"S", baseRate:40, target:"部隊長 撤退",
+      effectSummary:"S/LV10 確率 40% 対象:部隊長　撤退\n①部隊長撤退時、所属部隊の部隊長が持つ模倣可能な初期スキルを、通常攻撃/防御効果を1.24倍して模倣する\n②撤退を持つため部隊は陣での防御戦闘に参加しない",
+      categoryLinks:[
+        {href:"skills-taitai.html", label:"撤退スキル一覧を見る"},
+        {href:"skills-leadermimic.html", label:"部隊長模倣スキル一覧を見る"}
+      ],
+      sourceCharacters:[
+        {name:"百地三太夫", no:"10062", slot:"C・S1"}
+      ],
+      ownHiddenCandidate: {skill:"封法大十字", rank:"S"},
+      trTable:[
+        {level:"LV10", points:"-", effect:"部隊長 撤退　確率 40% / 模倣倍率 1.24倍"},
+        {level:"TR1", points:"10", effect:"部隊長 撤退　確率 45% / 模倣倍率 1.24倍"},
+        {level:"TR2", points:"40", effect:"部隊長 撤退　確率 50% / 模倣倍率 1.3倍"},
+        {level:"TR3", points:"90", effect:"部隊長 撤退　確率 55% / 模倣倍率 1.35倍"},
+        {level:"TR4", points:"150", effect:"部隊長 撤退　確率 65% / 模倣倍率 1.4倍"},
+        {level:"TR5", points:"200", effect:"部隊長 撤退　確率 70% / 模倣倍率 1.5倍"}
+      ]
+    },
+    {
+      name:"九字ノ呪法", rank:"S", baseRate:40, target:"部隊長",
+      effectSummary:"S/LV10 確率 40% 対象:部隊長\n①部隊長の持つ模倣可能な初期スキルを1.2倍に強化して模倣する",
+      categoryLinks:[
+        {href:"skills-leadermimic.html", label:"部隊長模倣スキル一覧を見る"}
+      ],
+      sourceCharacters:[
+        {name:"百地三太夫", no:"10062", slot:"S2"}
+      ],
+      ownHiddenCandidate: {skill:"摩利支天ノ法", rank:"SSS"},
+      trTable:[
+        {level:"LV10", points:"-", effect:"部隊長　確率 40% / 模倣倍率 1.2倍(TR以降のデータなし、LV10が最大値)"}
       ]
     },
     {
@@ -2167,16 +2294,17 @@
       ]
     },
     {
-      // 伊達輝宗(No.1260)S1・北条氏直(No.1273)C・45do.info生HTML照合済み(単一ソースのみ、TR1〜TR5未確認)。45do.info上で全攻上昇%数値が伏字(●)のため未確認
-      name:"閃裂討鬼", rank:"SS", baseRate:40, target:"全",
-      effectSummary:"SS/LV10 確率 40% 全攻上昇/対象:全\n①全攻が上昇する(部隊の総コストで効果が変化・数値未確認)\n②部隊内で武将コストが武将スキルに影響するとき攻撃効果部分のみこの武将のコストを+0.5で計算する(TR1〜TR5は未確認)",
+      // 伊達輝宗(No.1260)S1・北条氏直(No.1273)C分は45do.info生HTML照合済みだが確率・%数値が伏字(●)で未確認だった。豊臣秀吉【覇】(No.1274)B分で45do.info上に確率45%/攻撃50%上昇の確定値が見つかったため、同一スキルとして統合しこの確定値を採用(2026-08-01)
+      name:"閃裂討鬼", rank:"SS", baseRate:45, target:"全",
+      effectSummary:"SS/LV10 確率 45% 攻撃50%上昇/対象:全\n①攻撃50%上昇する(部隊の総コストで効果が変化)\n②部隊内で武将コストが武将スキルに影響するとき、攻撃効果部分のみこの武将のコストを+0.5で計算する(計算エンジン未対応)",
       sourceCharacters:[
         {name:"伊達輝宗", no:"1260", slot:"S1"},
-        {name:"北条氏直", no:"1273", slot:"C"}
+        {name:"北条氏直", no:"1273", slot:"C"},
+        {name:"豊臣秀吉【覇】", no:"1274", slot:"B"}
       ],
       ownHiddenCandidate: {skill:"閃裂討鬼", rank:"SS"},
       trTable:[
-        {level:"LV10", points:"-", effect:"全　確率 40% / 全攻 上昇(部隊の総コストで効果が変化・数値未確認)"}
+        {level:"LV10", points:"-", effect:"全　確率 45% / 攻撃 50%上昇(TR以降のデータなし、LV10が最大値)"}
       ]
     },
     {
