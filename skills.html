@@ -1660,7 +1660,10 @@
       effectSummary:"SS/LV10 確率 50% 防御上昇/対象:全\n①部隊総コストに応じて防御効果が変化する(LV10基準30.02%上昇)",
       sourceCharacters:[
         {name:"大谷吉継(2)", no:"1230", slot:"B"},
-        {name:"稲葉一鉄", no:"2392", slot:"C", db:"kyoku"}
+        {name:"稲葉一鉄", no:"2392", slot:"C", db:"kyoku"},
+        {name:"宇喜多秀家(2)", no:"1217", slot:"A"},
+        {name:"六角承禎(2)", no:"1254", slot:"S2"},
+        {name:"羽柴秀吉", no:"1208", slot:"B"}
       ],
       ownHiddenCandidate: {skill:"天衣無縫神戒", rank:"SS"},
       trTable:[
@@ -1670,10 +1673,15 @@
     {
       name:"天磐船", rank:"SS", baseRate:56, target:"全",
       effectSummary:"SS/LV10 確率 56% 防御上昇/対象:全\n①(3.8×防御参加武将数)%を防御効果に加算する",
+      categoryLinks:[
+        {href:"skills-count-def.html", label:"人数依存(防)スキル一覧を見る"}
+      ],
       sourceCharacters:[
         {name:"徳川秀忠", no:"1234", slot:"B"},
         {name:"大谷吉継(2)", no:"1230", slot:"C"},
-        {name:"丸目長恵", no:"2387", slot:"C・S1", db:"kyoku"}
+        {name:"丸目長恵", no:"2387", slot:"C・S1", db:"kyoku"},
+        {name:"豊臣秀吉(5)", no:"1255", slot:"S2"},
+        {name:"蜂須賀小六", no:"1223", slot:"S1"}
       ],
       ownHiddenCandidate: {skill:"天磐船", rank:"SS"},
       trTable:[
@@ -2043,21 +2051,6 @@
       ]
     },
     {
-      name:"天磐船", rank:"SS", baseRate:56, target:"全", noMimic:true,
-      effectSummary:"SS/LV10 確率 56% 防御上昇/対象:全\n①(係数×防御参加武将数)%を防御効果に加算する(係数はLV10=3.8)",
-      categoryLinks:[
-        {href:"skills-count-def.html", label:"人数依存(防)スキル一覧を見る"}
-      ],
-      sourceCharacters:[
-        {name:"丸目長恵", no:"2387", slot:"C・S1", db:"kyoku"},
-        {name:"豊臣秀吉(5)", no:"1255", slot:"S2"}
-      ],
-      ownHiddenCandidate: {skill:"天磐船", rank:"SS"},
-      trTable:[
-        {level:"LV10", points:"-", effect:"全　確率 56% / 防御 3.8%×防御参加武将数(280人)=1064.0%"}
-      ]
-    },
-    {
       // 豊臣秀次(No.1272)S2・九戸政実(No.1225)B・45do.info生HTML照合済み(単一ソースのみ、TR1〜TR5未確認)
       name:"三千世界神将", rank:"SS", baseRate:100, target:"全", noMimic:true,
       effectSummary:"SS/LV10 確率 100% 防御120%上昇/対象:全\n模倣不可\n①防御120%上昇する\n②本丸防御陣形に配置時この武将の編成コスト消費を-1する(TR1〜TR5は未確認)",
@@ -2172,18 +2165,6 @@
       ]
     },
     {
-      // 宇喜多秀家(2)(No.1217)synthesisTable候補A・45do.info生HTML照合済み(単一ソースのみ、TR1〜TR5未確認)
-      name:"天衣無縫神戒", rank:"SS", baseRate:50, target:"全",
-      effectSummary:"SS/LV10 確率 50% 防御30.02%上昇/対象:全\n①防御30.02%上昇する(部隊の総コストで効果が変化・TR1〜TR5は未確認)",
-      sourceCharacters:[
-        {name:"宇喜多秀家(2)", no:"1217", slot:"A"}
-      ],
-      ownHiddenCandidate: {skill:"天衣無縫神戒", rank:"SS"},
-      trTable:[
-        {level:"LV10", points:"-", effect:"全　確率 50% / 防御 30.02%上昇(部隊の総コストで効果が変化)"}
-      ]
-    },
-    {
       // 宇喜多秀家(2)(No.1217)B・朝倉義景(No.1243)B・九鬼嘉隆(No.1212)C・羽柴秀吉(No.1208)C。45do.info生HTML照合済み。TRなし(LV10のみ、ユーザー確認済み)
       name:"禍津日神ノ謀", rank:"SS", baseRate:70, target:"全",
       effectSummary:"SS/LV10 確率 70% 防御145%上昇/対象:全\n①防御145%上昇する\n②自部隊の武将ダメージを3%軽減する(重複発動上限4・TRなし)",
@@ -2272,20 +2253,6 @@
       ]
     },
     {
-      name:"天磐船", rank:"SS", baseRate:56, target:"全",
-      effectSummary:"SS/LV10 確率 56% 防御上昇/対象:全\n①(3.8×防御参加武将数)%を防御効果に加算する(TR1〜TR5は未確認)",
-      categoryLinks:[
-        {href:"skills-count-def.html", label:"人数依存(防)スキル一覧を見る"}
-      ],
-      sourceCharacters:[
-        {name:"蜂須賀小六", no:"1223", slot:"S1"}
-      ],
-      ownHiddenCandidate: {skill:"天磐船", rank:"SS"},
-      trTable:[
-        {level:"LV10", points:"-", coefficient:"3.8", effect:"全　確率 56% / 防御 3.8%×防御参加武将数(280人)=1064.0%"}
-      ]
-    },
-    {
       // 朝倉義景(No.1243)synthesisTable候補C・45do.info生HTML照合済み(単一ソースのみ、TR1〜TR5未確認)
       name:"天地黎明", rank:"SSS", baseRate:70, target:"全",
       effectSummary:"SSS/LV10 確率 70% 防御270%上昇/対象:全\n①防御270%上昇する\n②武将HPが99以下の時防御効果が3倍となる(TR1〜TR5は未確認)",
@@ -2361,19 +2328,6 @@
       ownHiddenCandidate: {skill:"氷塊ノ障壁", rank:"SSS"},
       trTable:[
         {level:"LV10", points:"-", effect:"全　確率 70% / 防御 45%上昇(部隊総コスト依存)"}
-      ]
-    },
-    {
-      name:"天衣無縫神戒", rank:"SS", baseRate:50, target:"全",
-      effectSummary:"SS/LV10 確率 50% 防御30.02%上昇/対象:全\n①防御効果が上昇する(部隊の総コストで効果が変化・TR1〜TR5は未確認)",
-      sourceCharacters:[
-        {name:"稲葉一鉄", no:"2392", slot:"C", db:"kyoku"},
-        {name:"六角承禎(2)", no:"1254", slot:"S2"},
-        {name:"羽柴秀吉", no:"1208", slot:"B"}
-      ],
-      ownHiddenCandidate: {skill:"天衣無縫神戒", rank:"SS"},
-      trTable:[
-        {level:"LV10", points:"-", effect:"全　確率 50% / 防御 30.02%上昇(部隊総コスト依存)"}
       ]
     },
     {
