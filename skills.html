@@ -1157,6 +1157,7 @@
         {name:"大友宗麟(6)", no:"1295", slot:"C"},
         {name:"百地三太夫", no:"10062", slot:"B"},
         {name:"直江兼続(4)", no:"1266", slot:"C"},
+        {name:"真田幸村(覇)", no:"1227", slot:"C"},
         {name:"立花道雪", no:"1247", slot:"S1"},
         {name:"黒田官兵衛【覇】", no:"1214", slot:"S2(同カード2枚合成時のみ、建御雷神ノ閃光の裏として出現)"}
       ],
@@ -1203,11 +1204,14 @@
       name:"黄泉醜女ノ屍兵", rank:"SS", baseRate:54, target:"全",
       effectSummary:"SS/LV10 確率 54% 防御200%上昇/対象:全\n①防御200%上昇する\n②防御戦闘時、自部隊内の武将が受ける70以下のダメージは最大45になる",
       sourceCharacters:[
+        {name:"佐竹義宣(2)", no:"1267", slot:"S2"},
         {name:"蒲生氏郷(2)", no:"1265", slot:"S2"},
         {name:"最上義光(覇)", no:"1262", slot:"S2"},
         {name:"本願寺顕如(2)", no:"1246", slot:"S2"},
         {name:"蘆名盛氏(2)", no:"1241", slot:"S2"},
-        {name:"徳川秀忠", no:"1234", slot:"S1"}
+        {name:"徳川秀忠", no:"1234", slot:"S1"},
+        {name:"島津義弘(3)", no:"1232", slot:"B"},
+        {name:"竹中半兵衛(1215)", no:"1215", slot:"S1"}
       ],
       ownHiddenCandidate: {skill:"黄泉醜女ノ屍兵", rank:"SS"},
       trTable:[
@@ -1647,6 +1651,8 @@
         {name:"徳川秀忠", no:"1234", slot:"S2"},
         {name:"大谷吉継(2)", no:"1230", slot:"A"},
         {name:"蜂須賀小六", no:"1223", slot:"C"},
+        {name:"九鬼嘉隆", no:"1212", slot:"S1"},
+        {name:"竹中半兵衛(1215)", no:"1215", slot:"C"},
         {name:"宇喜多秀家(2)", no:"1217", slot:"S1"},
         {name:"松永久秀", no:"1209", slot:"S1"}
       ],
@@ -1862,7 +1868,8 @@
         {href:"skills-hadou.html", label:"覇道スキル一覧を見る"}
       ],
       sourceCharacters:[
-        {name:"柴田勝家", no:"1216", slot:"C"}
+        {name:"柴田勝家", no:"1216", slot:"C"},
+        {name:"細川忠興", no:"1235", slot:"A"}
       ],
       ownHiddenCandidate: {skill:"天香山命", rank:"SS"},
       trTable:[
@@ -2119,7 +2126,7 @@
         {href:"skills-count-def.html", label:"人数依存(防)スキル一覧を見る"}
       ],
       sourceCharacters:[
-        {name:"蜂須賀小六", no:"1223", slot:"S2"},
+        {name:"蜂須賀小六", no:"1223", slot:"B・S2"},
         {name:"松永久秀", no:"1209", slot:"C・S2"}
       ],
       ownHiddenCandidate: {skill:"天奏聖譚曲", rank:"SS"},
@@ -2968,6 +2975,165 @@
       ownHiddenCandidate: {skill:"風林火山", rank:"S"},
       trTable:[
         {level:"LV10", points:"-", effect:"槍・弓・馬　確率 25% / 攻撃 15%上昇+破壊5%上昇(TR別データは未確認)"}
+      ]
+    },
+    {
+      // No.1236(水野勝成)自身の初期スキル。自己参照(synthesisTable Aスロット)のため無条件でページ作成
+      name:"倫魁不羈", rank:"S", baseRate:55, target:"槍・弓・馬・砲",
+      effectSummary:"S/LV10 確率 55% 攻撃(4×防御参加武将数)%上昇/対象:槍・弓・馬・砲\n①対象兵科(槍・弓・馬・砲)を指揮した戦闘時攻撃力が(4×防御参加武将数)%上昇する(TR1〜TR5は未確認)",
+      categoryLinks:[
+        {href:"skills-count-atk.html", label:"人数依存(攻)スキル一覧を見る"}
+      ],
+      sourceCharacters:[
+        {name:"水野勝成", no:"1236", slot:"A"}
+      ],
+      ownHiddenCandidate: {skill:"倫魁不羈", rank:"S"},
+      trTable:[
+        {level:"LV10", points:"-", effect:"槍・弓・馬・砲　確率 55% / 攻撃 4%×防御参加武将数(280人)=1120%"}
+      ]
+    },
+    {
+      // No.1263(徳川家康(覇5))自身の初期スキル(SSS)。自己参照ではないが2026-08-01ルールにより無条件でページ作成
+      name:"偃武覇陣", rank:"SSS", baseRate:50, target:"全 飛翔30 不屈1 覇道 撤退", noMimic:true,
+      effectSummary:"SSS/LV10 確率 50% 全攻防760%上昇/対象:全　飛翔30 不屈1 覇道 撤退\n模倣不可\n①全攻防760%上昇する\n②破壊150%上昇する\n③飛翔30を持つ\n④不屈1を持つ\n⑤覇道を持つため所属部隊の武将のスキルを無効化や発動率低下から保護する\n⑥撤退を持つ\n⑦所属部隊の武将回復速度が500%上昇する(HP・回復の概念は未実装のため参考データ)\n⑧自身を含む所属部隊の武将が通常部隊枠から外れるとき武将HPが最大90%まで回復する",
+      categoryLinks:[
+        {href:"skills-hadou.html", label:"覇道スキル一覧を見る"},
+        {href:"skills-taitai.html", label:"撤退スキル一覧を見る"},
+        {href:"skills-fukutsu.html", label:"不屈スキル一覧を見る"},
+        {href:"skills-hishou-atk.html", label:"飛翔スキル一覧(攻撃)を見る"},
+        {href:"skills-hishou-def.html", label:"飛翔スキル一覧(防御)を見る"}
+      ],
+      sourceCharacters:[
+        {name:"徳川家康(覇5)", no:"1263", slot:"移植不可"}
+      ],
+      ownHiddenCandidate: {skill:"偃武覇陣", rank:"SSS"},
+      trTable:[
+        {level:"LV10", points:"-", effect:"全 飛翔30 不屈1 覇道 撤退　確率 50% / 全攻防 760%上昇+破壊 150%上昇(回復速度+500%)"},
+        {level:"TR1", points:"10", effect:"全 飛翔30 不屈1 覇道 撤退　確率 50% / 全攻防 810%上昇+破壊 160%上昇(回復速度+500%)"},
+        {level:"TR2", points:"40", effect:"全 飛翔30 不屈1 覇道 撤退　確率 50% / 全攻防 880%上昇+破壊 180%上昇(回復速度+550%)"},
+        {level:"TR3", points:"90", effect:"全 飛翔30 不屈1 覇道 撤退　確率 50% / 全攻防 1000%上昇+破壊 210%上昇(回復速度+600%)"},
+        {level:"TR4", points:"150", effect:"全 飛翔30 不屈1 覇道 撤退　確率 50% / 全攻防 1180%上昇+破壊 250%上昇(回復速度+650%)"},
+        {level:"TR5", points:"200", effect:"全 飛翔30 不屈1 覇道 撤退　確率 50% / 全攻防 1440%上昇+破壊 300%上昇(回復速度+700%)"}
+      ]
+    },
+    {
+      // No.1227(真田幸村(覇))自身の初期スキル(SSS)。自己参照ではないが2026-08-01ルールにより無条件でページ作成
+      name:"紅蓮ノ闘神", rank:"SSS", baseRate:60, target:"全 兵站",
+      effectSummary:"SSS/LV10 確率 60% 防御255%上昇/対象:全　兵站\n①防御255%上昇する\n②部隊内で武将コストが武将スキルに影響するとき防御効果部分のみこの武将のコストを+1で計算する(特殊効果は部隊内重複不可・TR1〜TR5は未確認)",
+      categoryLinks:[
+        {href:"skills-heitan.html", label:"兵站スキル一覧を見る"}
+      ],
+      sourceCharacters:[
+        {name:"真田幸村(覇)", no:"1227", slot:"移植不可"}
+      ],
+      ownHiddenCandidate: {skill:"紅蓮ノ闘神", rank:"SSS"},
+      trTable:[
+        {level:"LV10", points:"-", effect:"全 兵站　確率 60% / 防御 255%上昇(コスト+1計算、TR別データは未確認)"}
+      ]
+    },
+    {
+      // No.1235(細川忠興)自身の初期スキル。自己参照ではないが2026-08-01ルールにより無条件でページ作成
+      name:"魔狂ノ業歌", rank:"S", baseRate:0, target:"自身の追加スキル", noMimic:true,
+      effectSummary:"S/LV10 対象:自身の追加スキル\n模倣不可\n①この武将の追加スキルの攻撃効果は(討伐ゲージ÷100)倍される(討伐ゲージは最大300で計算する)(TR1〜TR5は未確認)",
+      sourceCharacters:[
+        {name:"細川忠興", no:"1235", slot:"移植不可"}
+      ],
+      ownHiddenCandidate: {skill:"魔狂ノ業歌", rank:"S"},
+      trTable:[
+        {level:"LV10", points:"-", effect:"追加スキル　討伐ゲージ÷100倍(最大300で3倍、TR別データは未確認)"}
+      ]
+    },
+    {
+      // No.1249(三郎信長)自身の初期スキル。自己参照ではないが2026-08-01ルールにより無条件でページ作成
+      name:"破界ノ轟砲", rank:"S", baseRate:100, target:"砲", noMimic:true,
+      effectSummary:"S/LV10 確率 100% 攻撃380%上昇/対象:砲\n模倣不可\n①攻撃380%上昇する\n②対象兵科(砲)指揮時極限スキルの攻撃効果が3.5倍となる",
+      sourceCharacters:[
+        {name:"三郎信長", no:"1249", slot:"移植不可"}
+      ],
+      ownHiddenCandidate: {skill:"破界ノ轟砲", rank:"S"},
+      trTable:[
+        {level:"LV10", points:"-", effect:"砲　確率 100% / 攻撃 380%上昇(極限スキル攻撃効果3.5倍、TR別データは未確認)"}
+      ]
+    },
+    {
+      // No.1254(六角承禎(2))自身の初期スキル。自己参照ではないが2026-08-01ルールにより無条件でページ作成
+      name:"不屈ノ天弓", rank:"S", baseRate:100, target:"追加スキル 兵站", noMimic:true,
+      effectSummary:"S/LV10 確率 100% 対象:追加スキル 兵站\n模倣不可\n①このスキルを持つ武将カードは自領以外への加勢戦闘時のみ追加スキルの防御効果が2.5倍となる",
+      categoryLinks:[
+        {href:"skills-heitan.html", label:"兵站スキル一覧を見る"}
+      ],
+      sourceCharacters:[
+        {name:"六角承禎(2)", no:"1254", slot:"移植不可"}
+      ],
+      ownHiddenCandidate: {skill:"不屈ノ天弓", rank:"S"},
+      trTable:[
+        {level:"LV10", points:"-", effect:"追加スキル 兵站　確率 100% / 防御効果 2.5倍(自領以外への加勢戦闘時のみ)"}
+      ]
+    },
+    {
+      // No.1215(竹中半兵衛(1215))自身の初期スキル(SSS)。自己参照ではないが2026-08-01ルールにより無条件でページ作成
+      name:"天計千年鳳凰", rank:"SSS", baseRate:100, target:"追加スキル", noMimic:true,
+      effectSummary:"SSS/LV10 確率 100% 対象:追加スキル\n模倣不可\n①このスキルを持つ武将カードは追加スキル(追加1/追加2/極限)の防御・破壊効果が2.5倍となる",
+      sourceCharacters:[
+        {name:"竹中半兵衛(1215)", no:"1215", slot:"移植不可"}
+      ],
+      ownHiddenCandidate: {skill:"天計千年鳳凰", rank:"SSS"},
+      trTable:[
+        {level:"LV10", points:"-", effect:"追加スキル　確率 100% / 防御・破壊効果 2.5倍"}
+      ]
+    },
+    {
+      // No.1204(明智光秀)自身の初期スキル(SSS)。自己参照ではないが2026-08-01ルールにより無条件でページ作成
+      name:"滅神五芒星", rank:"SSS", baseRate:100, target:"全", noMimic:true,
+      effectSummary:"SSS/LV10 確率 100% 攻撃120%上昇/対象:全\n模倣不可\n①攻撃120%上昇する\n②攻撃戦闘時この武将が持つ卓越スキルは二度卓越できる(2回目の卓越確率は+15%される)",
+      categoryLinks:[
+        {href:"skills-takuetsu.html", label:"卓越スキル一覧を見る"}
+      ],
+      sourceCharacters:[
+        {name:"明智光秀", no:"1204", slot:"移植不可"}
+      ],
+      ownHiddenCandidate: {skill:"滅神五芒星", rank:"SSS"},
+      trTable:[
+        {level:"LV10", points:"-", effect:"全　確率 100% / 攻撃 120%上昇(卓越2回目+15%)"}
+      ]
+    },
+    {
+      // No.1208(羽柴秀吉)自身の初期スキル。自己参照ではないが2026-08-01ルールにより無条件でページ作成
+      name:"日輪ノ狒王", rank:"S", baseRate:47, target:"弓・砲・器",
+      effectSummary:"S/LV10 確率 47% 防御90%上昇/対象:弓・砲・器\n①防御90%上昇する\n②攻撃側敵軍全武将のうちこの武将のコストを上回る武将コスト部分の総和×8%を防御効果に加算する",
+      sourceCharacters:[
+        {name:"羽柴秀吉", no:"1208", slot:"移植不可"}
+      ],
+      ownHiddenCandidate: {skill:"日輪ノ狒王", rank:"S"},
+      trTable:[
+        {level:"LV10", points:"-", effect:"弓・砲・器　確率 47% / 防御 90%上昇+敵軍超過コスト総和×8%加算"}
+      ]
+    },
+    {
+      // No.1224(堀秀政)自身の初期スキル。自己参照ではないが2026-08-01ルールにより無条件でページ作成
+      name:"凶星ノ斬光", rank:"S", baseRate:100, target:"弓・馬・器・焙 飛翔2", noMimic:true,
+      effectSummary:"S/LV10 確率 100% 攻撃170%上昇/対象:弓・馬・器・焙　飛翔2\n模倣不可\n①攻撃170%上昇する\n②飛翔2を持つ\n③対象兵科指揮時極限スキルの攻撃効果が3倍となる(TR1〜TR5は未確認)",
+      categoryLinks:[
+        {href:"skills-hishou-atk.html", label:"飛翔スキル一覧(攻撃)を見る"}
+      ],
+      sourceCharacters:[
+        {name:"堀秀政", no:"1224", slot:"移植不可"}
+      ],
+      ownHiddenCandidate: {skill:"凶星ノ斬光", rank:"S"},
+      trTable:[
+        {level:"LV10", points:"-", effect:"弓・馬・器・焙 飛翔2　確率 100% / 攻撃 170%上昇(極限スキル攻撃効果3倍、TR別データは未確認)"}
+      ]
+    },
+    {
+      // No.1241(蘆名盛氏(2))自身の初期スキル。自己参照ではないが2026-08-01ルールにより無条件でページ作成
+      name:"金城ノ黒鷹", rank:"S", baseRate:49, target:"槍・馬・器・鉄",
+      effectSummary:"S/LV10 確率 49% 防御120%上昇/対象:槍・馬・器・鉄\n①防御120%上昇する\n②攻撃側敵軍全武将のうちこの武将のコストを上回る武将コスト部分の総和×16%を防御効果に加算する(TR1〜TR5は未確認)",
+      sourceCharacters:[
+        {name:"蘆名盛氏(2)", no:"1241", slot:"移植不可"}
+      ],
+      ownHiddenCandidate: {skill:"金城ノ黒鷹", rank:"S"},
+      trTable:[
+        {level:"LV10", points:"-", effect:"槍・馬・器・鉄　確率 49% / 防御 120%上昇+敵軍超過コスト総和×16%加算(TR別データは未確認)"}
       ]
     }
   ];
