@@ -3120,6 +3120,26 @@
         {level:"TR4", points:"150", effect:"全　確率 100% / 攻撃 720%上昇"},
         {level:"TR5", points:"200", effect:"全　確率 100% / 攻撃 810%上昇"}
       ]
+    },
+    {
+      // No.1273(北条氏直)の初期スキル(S、自身のsynthesisTable A・B枠で自己参照)。45do.info生HTML(ordinary/0248、ページタイトルは「北条氏政」誤記だが仁侯ノ決断はNo.1273=北条氏直で確認)+ixanary.com(skills/仁侯ノ決断)で2ソース確認、TR1〜TR5実在確認(ixanary生HTML)
+      name:"仁侯ノ決断", rank:"S", baseRate:100, target:"全", noMimic:true,
+      effectSummary:"S/LV10 確率 100% 攻撃450%上昇/対象:全\n模倣不可\n①攻撃450%上昇する\n②防御450%上昇する\n③自軍全武将全スキルの卓越確率に15%を加算する(自軍内重複上限2)",
+      categoryLinks:[
+        {href:"skills-takuetsu.html", label:"卓越スキル一覧を見る"}
+      ],
+      sourceCharacters:[
+        {name:"北条氏直", no:"1273", slot:"A・B"}
+      ],
+      ownHiddenCandidate: {skill:"仁侯ノ決断", rank:"S"},
+      trTable:[
+        {level:"LV10", points:"-", effect:"全　確率 100% / 攻撃450%上昇+防御450%上昇(卓越確率+15%)"},
+        {level:"TR1", points:"10", effect:"全　確率 100% / 攻撃490%上昇+防御490%上昇(卓越確率+17%)"},
+        {level:"TR2", points:"40", effect:"全　確率 100% / 攻撃550%上昇+防御550%上昇(卓越確率+19%)"},
+        {level:"TR3", points:"90", effect:"全　確率 100% / 攻撃620%上昇+防御620%上昇(卓越確率+21%)"},
+        {level:"TR4", points:"150", effect:"全　確率 100% / 攻撃700%上昇+防御700%上昇(卓越確率+23%)"},
+        {level:"TR5", points:"200", effect:"全　確率 100% / 攻撃790%上昇+防御790%上昇(卓越確率+25%)"}
+      ]
     }
   ];
 
