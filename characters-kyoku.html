@@ -626,29 +626,32 @@
         {slot:"S1", skill:"志半ノ矛楯", rank:"A", afterSkill:"志半ノ矛楯", afterRank:"A", target:"全", rate:"+65%", effectShort:"攻撃465%上昇+防御465%上昇(模倣不可)"},
         {slot:"S2", skill:"志半ノ矛楯", rank:"A", afterSkill:"志半ノ矛楯", afterRank:"A", target:"全", rate:"+65%", effectShort:"攻撃465%上昇+防御465%上昇(模倣不可)"}
       ], reviewedOk:true},
-    // No.2394 高山マリア: 未確定項目はnullで明示(次工程でステータス・スキル・synthesisTable等を追加予定)
-    {name:"高山マリア", no:"2394", ch:null, cost:null, troop:null, sub:null, effect:null,
-      furigana:null, illustrator:null,
+    // No.2394 高山マリア: ixanary.com生HTML(cards/2394)+45do.info生HTML(ordinary/0339)+カード画像目視で確認
+    {name:"高山マリア", no:"2394", ch:"未確認", cost:3, troop:"弓砲器攻防", sub:"", effect:"攻防上昇+部隊内スキルの卓越確率+20%(模倣不可)",
+      furigana:"たかやままりあ", illustrator:"ぽしー",
       imageFull:"assets/img/characters/no2394_full.png", imageChar:"assets/img/characters/no2394_char.png",
-      atkBase:null, atkGrowth:null, defBase:null, defGrowth:null, tacticsBase:null, tacticsGrowth:null, lv0Troops:null,
-      rankGrades:null,
-      initialSkill:null,
-      skillDetail:null,
+      atkBase:1120, atkGrowth:45, defBase:1120, defGrowth:45, tacticsBase:540.0, tacticsGrowth:2.5, lv0Troops:3450,
+      rankGrades:{yari:'B', yumi:'S', uma:'A', ki:'A'}, // カード画像バッジを4隅個別にズーム確認(ixanary側はyumi/kibaが入れ替わっていたため画像を優先)
+      initialSkill:"聖廉母堂",
+      skillDetail:"A/LV10 確率 100% 攻撃410%上昇/対象:弓・砲・器\n模倣不可\n①攻撃410%上昇する\n②防御410%上昇する\n③部隊内武将の全スキルの卓越追加確率が20%上昇する(特殊効果は自部隊内では重複不可)",
       trTable:[
-        {level:"LV10", points:"-", effect:null},
+        {level:"LV10", points:"-", effect:"弓・砲・器　確率 100% / 攻撃 410%上昇+防御 410%上昇(部隊内卓越追加確率+20%)"},
         {level:"TR1", points:"10", effect:null},
-        {level:"TR2", points:"40", effect:null},
+        // 45do.info「鍛錬Lv2 or 5」表記+ixanary生HTMLの<th>TR2</th>タグで確認できた値のみ記載。TR3〜TR5も同値の可能性があるが直接確認できていないためnullのまま(要追加調査)
+        {level:"TR2", points:"40", effect:"弓・砲・器　確率 100% / 攻撃 500%上昇+防御 500%上昇(部隊内卓越追加確率+30%)"},
         {level:"TR3", points:"90", effect:null},
         {level:"TR4", points:"150", effect:null},
         {level:"TR5", points:"200", effect:null},
         {level:"TR6", points:"パラレル", effect:null}
       ],
+      // 45do.info生HTML(ordinary/0339)のskiladd_wrap確認: A=戦陣吟詠[A]/B=十束ノ神域[SS]/C=聖廉母堂[A](自己参照)/S1=聖廉母堂[A](自己参照)/S2=志半ノ矛楯[A]。
+      // afterSkill/afterRank(移植後の変化先)はixagno.blog.fc2.com側の該当記事が見つからず単一ソースのため「未確認」とする(要追加調査、黄丸化前に必ず2ソース確認すること)
       synthesisTable:[
-        {slot:"A", skill:null, rank:null, afterSkill:null, afterRank:null, target:null, rate:null, effectShort:null},
-        {slot:"B", skill:null, rank:null, afterSkill:null, afterRank:null, target:null, rate:null, effectShort:null},
-        {slot:"C", skill:null, rank:null, afterSkill:null, afterRank:null, target:null, rate:null, effectShort:null},
-        {slot:"S1", skill:null, rank:null, afterSkill:null, afterRank:null, target:null, rate:null, effectShort:null},
-        {slot:"S2", skill:null, rank:null, afterSkill:null, afterRank:null, target:null, rate:null, effectShort:null}
+        {slot:"A", skill:"戦陣 吟詠", rank:"A", afterSkill:"未確認", afterRank:"未確認", target:"全", rate:"+100%", effectShort:"攻撃340%上昇+防御340%上昇+部隊内卓越追加確率+20%(模倣不可・特殊効果は自部隊内では重複不可)"},
+        {slot:"B", skill:"十束ノ神域", rank:"SS", afterSkill:"未確認", afterRank:"未確認", target:"全 覇道", rate:"100%", effectShort:"攻撃320%上昇+速度70%上昇+覇道を持つため所属部隊の武将のスキルを無効化・発動率低下から保護"},
+        {slot:"C", skill:"聖廉母堂", rank:"A", afterSkill:"未確認", afterRank:"未確認", target:"弓・砲・器", rate:"100%", effectShort:"攻撃410%上昇+防御410%上昇+部隊内卓越追加確率20%上昇(模倣不可・特殊効果は自部隊内では重複不可)"},
+        {slot:"S1", skill:"聖廉母堂", rank:"A", afterSkill:"未確認", afterRank:"未確認", target:"弓・砲・器", rate:"100%", effectShort:"攻撃410%上昇+防御410%上昇+部隊内卓越追加確率20%上昇(模倣不可・特殊効果は自部隊内では重複不可)"},
+        {slot:"S2", skill:"志半ノ矛楯", rank:"A", afterSkill:"未確認", afterRank:"未確認", target:"全", rate:"+65%", effectShort:"攻撃465%上昇+防御465%上昇(模倣不可)"}
       ]}
   ];
 
