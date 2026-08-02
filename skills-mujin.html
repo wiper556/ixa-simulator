@@ -17,6 +17,12 @@
   .mj-table td:first-child{text-align:left;font-family:'Noto Serif JP',serif;font-weight:700;}
   .mj-table td.mj-col-effect{text-align:left;white-space:normal;min-width:260px;}
   .mj-note{color:var(--muted);font-size:12px;line-height:1.7;margin:0 0 14px;}
+  .mj-search{margin-bottom:14px;}
+  .mj-search input{
+    width:100%;font-family:'Zen Kaku Gothic New',sans-serif;font-size:15px;padding:11px 14px;
+    background:#fff;border:1px solid var(--line);color:var(--paper);border-radius:5px;
+  }
+  .mj-search input:focus{outline:none;border-color:var(--gold);}
 
   @media (max-width:600px){
     .mj-table{font-size:12px;}
@@ -56,6 +62,10 @@
   <main class="site-main">
     <h1 class="page-title">無尽スキル一覧</h1>
     <p class="mj-note">「無尽」を持つスキルは、部隊消費コストを減少させる効果を持つ(無尽1につき-0.5、無尽2は-1.0)。</p>
+
+    <div class="mj-search">
+      <input type="text" id="mjSearchBox" placeholder="スキル名または武将名で検索(例: 焼尽神無、豊臣秀長 など)">
+    </div>
 
     <div class="mj-table-scroll">
       <table class="mj-table">
@@ -172,13 +182,21 @@
       .replace(/\n/g, '<br>');
   }
 
+  function mjMatchesSearch(s, q){
+    if(!q) return true;
+    if(s.name.toLowerCase().includes(q)) return true;
+    return (s.sourceCharacters || []).some(function(c){ return c.name.toLowerCase().includes(q); });
+  }
+
   function mjRender(){
     const el = document.getElementById('mjList');
-    if(mujinSkills.length === 0){
+    const q = document.getElementById('mjSearchBox').value.trim().toLowerCase();
+    const list = mujinSkills.filter(function(s){ return mjMatchesSearch(s, q); });
+    if(list.length === 0){
       el.innerHTML = '<tr><td colspan="6" style="text-align:center;color:var(--muted);">該当するスキルが見つかりません</td></tr>';
       return;
     }
-    el.innerHTML = mujinSkills.map(function(s){
+    el.innerHTML = list.map(function(s){
       const sources = (s.sourceCharacters || []).map(function(c){
         return '<a href="characters.html#'+encodeURIComponent(c.no)+'">'+mjEscapeHtml(c.name)+'('+mjEscapeHtml(c.slot)+')</a>';
       }).join('<br>') || '-';
@@ -188,6 +206,8 @@
         + '<td style="white-space:normal;">'+sources+'</td></tr>';
     }).join('');
   }
+
+  document.getElementById('mjSearchBox').addEventListener('input', mjRender);
 
   mjRender();
 </script>
