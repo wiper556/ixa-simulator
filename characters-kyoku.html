@@ -561,14 +561,14 @@
         {level:"TR1", points:"10", effect:"弓・器・焙　確率 100% / 攻撃 195%上昇(卓越:追加確率10%で3倍)"},
         {level:"TR2", points:"40", effect:"弓・器・焙　確率 100% / 攻撃 210%上昇(卓越:追加確率10%で3倍)"}
       ],
-      // 45do.info確認(生HTML skiladd_wrap照合済み): A/Bは自己参照(龍門ノ賢者)
+      // 45do.info+ixagno.blog.fc2.com(blog-entry-9961)確認済み: A/Bの龍門ノ賢者は移植後「志半ノ矛楯」に、Cの国一丸は移植後「仙剣破斬」[SSS]に変化(自己参照ではない)
       synthesisTable:[
-        {slot:"A", skill:"龍門ノ賢者", rank:"A", afterSkill:"龍門ノ賢者", afterRank:"A", target:"弓・器・焙 卓越", rate:"100%", effectShort:"攻撃190%上昇(卓越:追加確率10%で3倍)"},
-        {slot:"B", skill:"龍門ノ賢者", rank:"A", afterSkill:"龍門ノ賢者", afterRank:"A", target:"弓・器・焙 卓越", rate:"100%", effectShort:"攻撃190%上昇(卓越:追加確率10%で3倍)"},
-        {slot:"C", skill:"国一丸", rank:"S", afterSkill:"国一丸", afterRank:"S", target:"槍・馬・器・騎 飛翔6 卓越", rate:"+100%", effectShort:"攻撃210%上昇(卓越:追加確率1%で3倍+飛翔16取得)"},
+        {slot:"A", skill:"龍門ノ賢者", rank:"A", afterSkill:"志半ノ矛楯", afterRank:"A", target:"弓・器・焙 卓越", rate:"100%", effectShort:"攻撃190%上昇(卓越:追加確率10%で3倍)"},
+        {slot:"B", skill:"龍門ノ賢者", rank:"A", afterSkill:"志半ノ矛楯", afterRank:"A", target:"弓・器・焙 卓越", rate:"100%", effectShort:"攻撃190%上昇(卓越:追加確率10%で3倍)"},
+        {slot:"C", skill:"国一丸", rank:"S", afterSkill:"仙剣破斬", afterRank:"SSS", target:"槍・馬・器・騎 飛翔6 卓越", rate:"+100%", effectShort:"攻撃210%上昇(卓越:追加確率1%で3倍+飛翔16取得)"},
         {slot:"S1", skill:"志半ノ矛楯", rank:"A", afterSkill:"志半ノ矛楯", afterRank:"A", target:"全", rate:"+65%", effectShort:"攻撃465%上昇+防御465%上昇(模倣不可)"},
         {slot:"S2", skill:"志半ノ矛楯", rank:"A", afterSkill:"志半ノ矛楯", afterRank:"A", target:"全", rate:"+65%", effectShort:"攻撃465%上昇+防御465%上昇(模倣不可)"}
-      ]},
+      ], reviewedOk:true},
     {name:"飯富虎昌", no:"2379", ch:"未確認", cost:3, troop:"馬器騎攻", sub:"", effect:"攻撃・速度上昇+合流出陣時間短縮(模倣不可)",
       furigana:"おぶとらまさ", illustrator:"タカハシタクヤ",
       imageFull:"assets/img/characters/no2379_full.png", imageChar:"assets/img/characters/no2379_char.png",
@@ -579,14 +579,14 @@
       trTable:[
         {level:"LV10", points:"-", effect:"馬・器・騎　確率 100% / 攻撃 430%上昇+速度 100%上昇"}
       ],
-      // 45do.info確認(生HTML skiladd_wrap照合済み): 自己スキル(甲山ノ猛虎)は候補に含まれず
+      // 45do.info+ixagno.blog.fc2.com(blog-entry-9960)確認済み: 自己スキル(甲山ノ猛虎)は候補に含まれず。Aの戦陣疾駆は移植後、保護スキル「十束ノ神域」[SS]に、B/Cの騎聖は移植後「神光征軍」[SS]に変化
       synthesisTable:[
-        {slot:"A", skill:"戦陣 疾駆", rank:"A", afterSkill:"戦陣 疾駆", afterRank:"A", target:"全", rate:"+100%", effectShort:"速度170%上昇+破壊170%上昇"},
-        {slot:"B", skill:"騎聖", rank:"A", afterSkill:"騎聖", afterRank:"A", target:"全", rate:"+100%", effectShort:"攻撃80%上昇+速度50%上昇(武将コストで変動)"},
-        {slot:"C", skill:"騎聖", rank:"A", afterSkill:"騎聖", afterRank:"A", target:"全", rate:"+100%", effectShort:"攻撃80%上昇+速度50%上昇(武将コストで変動)"},
+        {slot:"A", skill:"戦陣 疾駆", rank:"A", afterSkill:"十束ノ神域", afterRank:"SS", target:"全", rate:"+100%", effectShort:"速度170%上昇+破壊170%上昇"},
+        {slot:"B", skill:"騎聖", rank:"A", afterSkill:"神光征軍", afterRank:"SS", target:"全", rate:"+100%", effectShort:"攻撃80%上昇+速度50%上昇(武将コストで変動)"},
+        {slot:"C", skill:"騎聖", rank:"A", afterSkill:"神光征軍", afterRank:"SS", target:"全", rate:"+100%", effectShort:"攻撃80%上昇+速度50%上昇(武将コストで変動)"},
         {slot:"S1", skill:"志半ノ矛楯", rank:"A", afterSkill:"志半ノ矛楯", afterRank:"A", target:"全", rate:"+65%", effectShort:"攻撃465%上昇+防御465%上昇(模倣不可)"},
         {slot:"S2", skill:"志半ノ矛楯", rank:"A", afterSkill:"志半ノ矛楯", afterRank:"A", target:"全", rate:"+65%", effectShort:"攻撃465%上昇+防御465%上昇(模倣不可)"}
-      ]},
+      ], reviewedOk:true},
     {name:"柿崎景家", no:"2380", ch:"未確認", cost:4, troop:"槍馬砲攻", sub:"", effect:"攻撃上昇+勝利時名声回復(模倣不可)",
       furigana:"かきざきかげいえ", illustrator:"三好載克",
       imageFull:"assets/img/characters/no2380_full.png", imageChar:"assets/img/characters/no2380_char.png",
@@ -600,14 +600,14 @@
         {level:"TR2", points:"40", effect:"槍・馬・砲　確率 50% / 攻撃 708%上昇(勝利時名声+25)"},
         {level:"TR3", points:"90", effect:"槍・馬・砲　確率 50% / 攻撃 708%上昇(勝利時名声+25)"}
       ],
-      // 45do.info確認(生HTML skiladd_wrap照合済み): B/Cは自己参照(闘火将帥)
+      // 45do.info+ixagno.blog.fc2.com(blog-entry-10008)確認済み: Aのオプクワは移植後「戦陣 神楽」に、B/Cの闘火将帥は移植後「氷塊三連撃」[SSS]に変化(自己参照ではない)
       synthesisTable:[
-        {slot:"A", skill:"オプクワ", rank:"A", afterSkill:"オプクワ", afterRank:"A", target:"槍・弓・砲", rate:"+55%", effectShort:"攻撃140%上昇+対人攻撃勝利時名声+20(模倣不可・特殊効果は部隊内重複不可)"},
-        {slot:"B", skill:"闘火将帥", rank:"A", afterSkill:"闘火将帥", afterRank:"A", target:"槍・馬・砲", rate:"50%", effectShort:"攻撃430%上昇+対人攻撃勝利時名声+20(模倣不可・特殊効果は部隊内重複不可)"},
-        {slot:"C", skill:"闘火将帥", rank:"A", afterSkill:"闘火将帥", afterRank:"A", target:"槍・馬・砲", rate:"50%", effectShort:"攻撃430%上昇+対人攻撃勝利時名声+20(模倣不可・特殊効果は部隊内重複不可)"},
+        {slot:"A", skill:"オプクワ", rank:"A", afterSkill:"戦陣 神楽", afterRank:"A", target:"槍・弓・砲", rate:"+55%", effectShort:"攻撃140%上昇+対人攻撃勝利時名声+20(模倣不可・特殊効果は部隊内重複不可)"},
+        {slot:"B", skill:"闘火将帥", rank:"A", afterSkill:"氷塊三連撃", afterRank:"SSS", target:"槍・馬・砲", rate:"50%", effectShort:"攻撃430%上昇+対人攻撃勝利時名声+20(模倣不可・特殊効果は部隊内重複不可)"},
+        {slot:"C", skill:"闘火将帥", rank:"A", afterSkill:"氷塊三連撃", afterRank:"SSS", target:"槍・馬・砲", rate:"50%", effectShort:"攻撃430%上昇+対人攻撃勝利時名声+20(模倣不可・特殊効果は部隊内重複不可)"},
         {slot:"S1", skill:"氷塊三連撃", rank:"SSS", afterSkill:"氷塊三連撃", afterRank:"SSS", target:"全", rate:"+45%", effectShort:"攻撃170%上昇+自部隊同時攻撃時コストを最大2まで除外(模倣不可)"},
         {slot:"S2", skill:"志半ノ矛楯", rank:"A", afterSkill:"志半ノ矛楯", afterRank:"A", target:"全", rate:"+65%", effectShort:"攻撃465%上昇+防御465%上昇(模倣不可)"}
-      ]},
+      ], reviewedOk:true},
     {name:"千代", no:"2381", ch:"未確認", cost:2, troop:"弓砲器防", sub:"", effect:"敵部隊速度に応じ防御上昇",
       furigana:"ちよ", illustrator:"てもし",
       imageFull:"assets/img/characters/no2381_full.png", imageChar:"assets/img/characters/no2381_char.png",
@@ -618,14 +618,14 @@
       trTable:[
         {level:"LV10", points:"-", effect:"弓・砲・器　確率 36% / 防御 (敵部隊移動速度÷0.7)%上昇(最大の敵部隊移動速度を参照)"}
       ],
-      // 45do.info確認(生HTML skiladd_wrap照合済み): B/Cは自己参照(列侯擁媛)
+      // 45do.info+ixagno.blog.fc2.com(blog-entry-10007)確認済み: Aの鬼十河は移植後「朝曇ノ明麗」[S]に、B/Cの列侯擁媛は移植後「志半ノ矛楯」に変化(自己参照ではない)
       synthesisTable:[
-        {slot:"A", skill:"鬼十河", rank:"A", afterSkill:"鬼十河", afterRank:"A", target:"槍・砲・器", rate:"+15%", effectShort:"防御120%上昇+所領防御陣形配置時コスト消費-1(模倣不可)"},
-        {slot:"B", skill:"列侯擁媛", rank:"A", afterSkill:"列侯擁媛", afterRank:"A", target:"弓・砲・器", rate:"36%", effectShort:"防御(敵部隊移動速度÷0.7)%上昇(最大の敵部隊移動速度を参照)"},
-        {slot:"C", skill:"列侯擁媛", rank:"A", afterSkill:"列侯擁媛", afterRank:"A", target:"弓・砲・器", rate:"36%", effectShort:"防御(敵部隊移動速度÷0.7)%上昇(最大の敵部隊移動速度を参照)"},
+        {slot:"A", skill:"鬼十河", rank:"A", afterSkill:"朝曇ノ明麗", afterRank:"S", target:"槍・砲・器", rate:"+15%", effectShort:"防御120%上昇+所領防御陣形配置時コスト消費-1(模倣不可)"},
+        {slot:"B", skill:"列侯擁媛", rank:"A", afterSkill:"志半ノ矛楯", afterRank:"A", target:"弓・砲・器", rate:"36%", effectShort:"防御(敵部隊移動速度÷0.7)%上昇(最大の敵部隊移動速度を参照)"},
+        {slot:"C", skill:"列侯擁媛", rank:"A", afterSkill:"志半ノ矛楯", afterRank:"A", target:"弓・砲・器", rate:"36%", effectShort:"防御(敵部隊移動速度÷0.7)%上昇(最大の敵部隊移動速度を参照)"},
         {slot:"S1", skill:"志半ノ矛楯", rank:"A", afterSkill:"志半ノ矛楯", afterRank:"A", target:"全", rate:"+65%", effectShort:"攻撃465%上昇+防御465%上昇(模倣不可)"},
         {slot:"S2", skill:"志半ノ矛楯", rank:"A", afterSkill:"志半ノ矛楯", afterRank:"A", target:"全", rate:"+65%", effectShort:"攻撃465%上昇+防御465%上昇(模倣不可)"}
-      ]}
+      ], reviewedOk:true}
   ];
 
   const KK_RANK_LABELS = {yari:'槍', yumi:'弓', uma:'馬', ki:'器'};
