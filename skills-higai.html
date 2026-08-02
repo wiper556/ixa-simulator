@@ -18,6 +18,12 @@
   .hg-table td.hg-col-effect{text-align:left;white-space:normal;min-width:220px;}
   .hg-table td.hg-col-reduce{text-align:left;white-space:normal;min-width:200px;}
   .hg-note{color:var(--muted);font-size:12px;line-height:1.7;margin:0 0 14px;}
+  .hg-search{margin-bottom:14px;}
+  .hg-search input{
+    width:100%;font-family:'Zen Kaku Gothic New',sans-serif;font-size:15px;padding:11px 14px;
+    background:#fff;border:1px solid var(--line);color:var(--paper);border-radius:5px;
+  }
+  .hg-search input:focus{outline:none;border-color:var(--gold);}
 
   @media (max-width:600px){
     .hg-table{font-size:12px;}
@@ -57,6 +63,10 @@
   <main class="site-main">
     <h1 class="page-title">兵士被害減少スキル一覧</h1>
     <p class="hg-note">戦闘時に自部隊の兵士被害を減少させる効果を持つスキルの一覧。多くは卓越の追加抽選で発動する。</p>
+
+    <div class="hg-search">
+      <input type="text" id="hgSearchBox" placeholder="スキル名または武将名で検索(例: 開闢ノ逆鉾、伊達成実 など)">
+    </div>
 
     <div class="hg-table-scroll">
       <table class="hg-table">
@@ -120,13 +130,21 @@
       .replace(/\n/g, '<br>');
   }
 
+  function hgMatchesSearch(s, q){
+    if(!q) return true;
+    if(s.name.toLowerCase().includes(q)) return true;
+    return (s.sourceCharacters || []).some(function(c){ return c.name.toLowerCase().includes(q); });
+  }
+
   function hgRender(){
     const el = document.getElementById('hgList');
-    if(higaiSkills.length === 0){
+    const q = document.getElementById('hgSearchBox').value.trim().toLowerCase();
+    const list = higaiSkills.filter(function(s){ return hgMatchesSearch(s, q); });
+    if(list.length === 0){
       el.innerHTML = '<tr><td colspan="6" style="text-align:center;color:var(--muted);">該当するスキルが見つかりません</td></tr>';
       return;
     }
-    el.innerHTML = higaiSkills.map(function(s){
+    el.innerHTML = list.map(function(s){
       const sources = (s.sourceCharacters || []).map(function(c){
         const dbPage = c.db === 'kyoku' ? 'characters-kyoku.html' : 'characters.html';
         return '<a href="'+dbPage+'#'+encodeURIComponent(c.no)+'">'+hgEscapeHtml(c.name)+'('+hgEscapeHtml(c.slot)+')</a>';
@@ -137,6 +155,8 @@
         + '<td style="white-space:normal;">'+sources+'</td></tr>';
     }).join('');
   }
+
+  document.getElementById('hgSearchBox').addEventListener('input', hgRender);
 
   hgRender();
 </script>
