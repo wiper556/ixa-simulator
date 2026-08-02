@@ -1201,19 +1201,23 @@
       rankGrades:{yari:'S', yumi:'S', uma:'A', ki:'A'},
       initialSkill:"旋渦訣刀",
       skillDetail:"S/LV10 確率 58% 防御480%上昇/対象:全\n①防御480%上昇する\n②部隊内で武将コストが武将スキルに影響するとき、防御効果部分のみこの武将のコストを+1で計算する(特殊効果は部隊内重複不可)",
-      // ixanary.com/45do.info共にLV10と最大鍛錬(TR5)の2値のみ公開、TR1〜TR4は未確認
+      // ixagno.blog.fc2.com(blog-entry-10200)生HTML照合済み(2026-08-02): TR1〜TR4の実在を確認し追記
       trTable:[
         {level:"LV10", points:"-", effect:"全　確率 58% / 防御 480%上昇(コスト+1計算・重複不可)"},
-        {level:"TR5", points:"最大鍛錬", effect:"全　確率 58% / 防御 880%上昇(コスト+1.5計算・重複不可)"}
+        {level:"TR1", points:"10", effect:"全　確率 58% / 防御 600%上昇(コスト+1.0計算・重複不可)"},
+        {level:"TR2", points:"40", effect:"全　確率 58% / 防御 600%上昇(コスト+1.1計算・重複不可)"},
+        {level:"TR3", points:"90", effect:"全　確率 58% / 防御 600%上昇(コスト+1.2計算・重複不可)"},
+        {level:"TR4", points:"150", effect:"全　確率 58% / 防御 880%上昇(コスト+1.3計算・重複不可)"},
+        {level:"TR5", points:"200", effect:"全　確率 58% / 防御 880%上昇(コスト+1.5計算・重複不可)"}
       ],
-      // 45do.info(ordinary/0310)生HTML照合済み(単一ソース、新規登録段階のため)。移植後スキルの変化(ixagno等)は未確認。
+      // 45do.info(ordinary/0310)生HTML + ixagno.blog.fc2.com(blog-entry-10200)生HTML の2ソースでA/B/C/S1/S2の対応を突き合わせ、完全一致を確認(2026-08-02)
       synthesisTable:[
         {slot:"A", skill:"国津破邪ノ楯", rank:"SS", afterSkill:"国津破邪ノ楯", afterRank:"SS", rate:"60%", target:"全", effectShort:"防御60.04%上昇(部隊総コスト依存)"},
         {slot:"B", skill:"旌旗翳天ノ覇陣", rank:"SS", afterSkill:"旌旗翳天ノ覇陣", afterRank:"SS", rate:"54%", target:"全 兵站", effectShort:"防御90.11%上昇(部隊総コスト依存)"},
         {slot:"C", skill:"國才連豪", rank:"SS", afterSkill:"國才連豪", afterRank:"SS", rate:"50%", target:"全", effectShort:"防御が係数×同スキル所持武将数で上昇"},
         {slot:"S1", skill:"従魔絶神", rank:"SSS", afterSkill:"従魔絶神", afterRank:"SSS", rate:"43%", target:"全 飛翔13", effectShort:"防御を係数×人数で上昇"},
         {slot:"S2", skill:"万里嵐壁", rank:"SS", afterSkill:"万里嵐壁", afterRank:"SS", rate:"66%", target:"全", effectShort:"防御200%上昇+敵軍部隊数×40%加算"}
-      ]},
+      ], reviewedOk:true},
     {name:"加藤清正", no:"1284", ch:"29章", cost:5.0, troop:"槍砲器攻", sub:"", effect:"敵軍の総コスト依存",
       furigana:"かとうきよまさ", illustrator:"直良有祐",
       imageFull:"assets/img/characters/no1284_full.png", imageChar:"assets/img/characters/no1284_char.png",
@@ -1227,14 +1231,14 @@
         {level:"LV10", points:"-", coefficient:"2.1", effect:"槍・砲・器　確率 36% / 攻撃 敵軍総武将コスト×2.1%=上昇"},
         {level:"TR5", points:"最大鍛錬", coefficient:"3.2", effect:"槍・砲・器　確率 57% / 攻撃 敵軍総武将コスト×3.2%=上昇"}
       ],
-      // 45do.info(ordinary/0309)生HTML照合済み(単一ソース、新規登録段階のため)。移植後スキルの変化(ixagno等)は未確認。A/Bは自身の初期スキル(虎伐閃衝)がそのまま候補になる自己参照枠。
+      // 45do.info(ordinary/0309)生HTML + ixagno.blog.fc2.com(blog-entry-10199)生HTML の2ソースで完全一致を確認(2026-08-02)。A/Bは自身の初期スキル(虎伐閃衝)がそのまま候補になる自己参照枠。
       synthesisTable:[
         {slot:"A", skill:"虎伐閃衝", rank:"S", afterSkill:"虎伐閃衝", afterRank:"S", rate:"36%", target:"槍・砲・器", effectShort:"攻撃を敵軍総武将コスト×係数で上昇(模倣不可)"},
         {slot:"B", skill:"虎伐閃衝", rank:"S", afterSkill:"虎伐閃衝", afterRank:"S", rate:"36%", target:"槍・砲・器", effectShort:"攻撃を敵軍総武将コスト×係数で上昇(模倣不可)"},
         {slot:"C", skill:"飛龍衝天", rank:"SS", afterSkill:"飛龍衝天", afterRank:"SS", rate:"45%", target:"全 飛翔15", effectShort:"攻撃200%上昇+7.5%×防御参加武将数加算(模倣不可)"},
         {slot:"S1", skill:"万物神勇", rank:"SSS", afterSkill:"万物神勇", afterRank:"SSS", rate:"43%", target:"全 撤退", effectShort:"攻撃を係数×人数で上昇"},
         {slot:"S2", skill:"開闢ノ逆鉾", rank:"SS", afterSkill:"開闢ノ逆鉾", afterRank:"SS", rate:"100%", target:"全", effectShort:"攻撃254%上昇(卓越追加確率30%で兵士被害15%減少)"}
-      ]},
+      ], reviewedOk:true},
     {name:"上杉謙信(復刻)【覇】", no:"10074", ch:"31章", cost:4.0, troop:"全攻", sub:"", effect:"攻防上昇／飛翔値として所属部隊内の飛翔値合計+10を得る",
       furigana:"うえすぎけんしん", illustrator:"直良有祐",
       imageFull:"assets/img/characters/no10074_full.png", imageChar:"assets/img/characters/no10074_char.png",
@@ -1325,14 +1329,14 @@
       trTable:[
         {level:"LV10", points:"-", effect:"全　確率 100% / 防御 540%上昇"}
       ],
-      // 45do.info生HTML確認(https://45do.info/ordinary/0308/)、単一ソースのみ(ixanary/ixagnoに対応する合成候補データなし)
+      // 45do.info(ordinary/0308)生HTML + ixagno.blog.fc2.com(blog-entry-10198)生HTML の2ソースで完全一致を確認(2026-08-02)
       synthesisTable:[
-        {slot:"A", skill:"仙剣破斬", rank:"SSS", afterSkill:"仙剣破斬", afterRank:"SSS"},
-        {slot:"B", skill:"至天ノ御剣", rank:"SSS", afterSkill:"至天ノ御剣", afterRank:"SSS"},
-        {slot:"C", skill:"國才連豪", rank:"SS", afterSkill:"國才連豪", afterRank:"SS"},
-        {slot:"S1", skill:"戦華雄渾", rank:"SS", afterSkill:"戦華雄渾", afterRank:"SS"},
-        {slot:"S2", skill:"万里嵐壁", rank:"SS", afterSkill:"万里嵐壁", afterRank:"SS"}
-      ]},
+        {slot:"A", skill:"仙剣破斬", rank:"SSS", afterSkill:"仙剣破斬", afterRank:"SSS", rate:"100%", target:"全", effectShort:"攻撃115%上昇+防御115%上昇(卓越で4倍)"},
+        {slot:"B", skill:"至天ノ御剣", rank:"SSS", afterSkill:"至天ノ御剣", afterRank:"SSS", rate:"70%", target:"自身", effectShort:"自身の初期スキルを模倣(卓越で1.3倍)"},
+        {slot:"C", skill:"國才連豪", rank:"SS", afterSkill:"國才連豪", afterRank:"SS", rate:"50%", target:"全", effectShort:"防御が係数×同スキル所持武将数で上昇"},
+        {slot:"S1", skill:"戦華雄渾", rank:"SS", afterSkill:"戦華雄渾", afterRank:"SS", rate:"100%", target:"全", effectShort:"攻防各140%上昇(卓越時4倍)"},
+        {slot:"S2", skill:"万里嵐壁", rank:"SS", afterSkill:"万里嵐壁", afterRank:"SS", rate:"66%", target:"全", effectShort:"防御200%上昇+敵軍部隊数×40%加算(模倣不可)"}
+      ], reviewedOk:true},
     {name:"斎藤道三【覇】", no:"1202", ch:"23章", cost:5.5, troop:"全攻", sub:"", effect:"対象兵科指揮時、極限スキルの攻撃効果が3.5倍",
       furigana:"さいとうどうさん", illustrator:"直良有祐",
       imageFull:"assets/img/characters/no1202_full.png", imageChar:"assets/img/characters/no1202_char.png",
