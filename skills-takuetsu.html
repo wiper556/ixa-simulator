@@ -19,6 +19,12 @@
   .tk-table td.tk-col-takuetsu{text-align:left;white-space:normal;min-width:200px;}
   .tk-note{color:var(--muted);font-size:12px;line-height:1.7;margin:0 0 14px;}
   .tk-subtitle{font-family:'Noto Serif JP',serif;font-size:16px;margin:0 0 8px;color:var(--vermillion-bright);border-bottom:1px dashed var(--line);padding-bottom:6px;}
+  .tk-search{margin-bottom:14px;}
+  .tk-search input{
+    width:100%;font-family:'Zen Kaku Gothic New',sans-serif;font-size:15px;padding:11px 14px;
+    background:#fff;border:1px solid var(--line);color:var(--paper);border-radius:5px;
+  }
+  .tk-search input:focus{outline:none;border-color:var(--gold);}
 
   @media (max-width:600px){
     .tk-table{font-size:12px;}
@@ -58,6 +64,10 @@
   <main class="site-main">
     <h1 class="page-title">卓越スキル一覧</h1>
     <p class="tk-note">「卓越」は基礎発動確率とは別枠の追加抽選。卓越自身が発動効果を倍増させるタイプ、部隊内の卓越確率を上げる/下げるタイプの両方をまとめて掲載する。</p>
+
+    <div class="tk-search">
+      <input type="text" id="tkSearchBox" placeholder="スキル名または武将名で検索(例: 三全将帥、伊達政宗 など)">
+    </div>
 
     <h2 class="tk-subtitle">卓越発動効果(倍率アップ等)</h2>
     <div class="tk-table-scroll">
@@ -278,8 +288,16 @@
       .replace(/\n/g, '<br>');
   }
 
-  function tkRenderList(list, elId){
+  function tkMatchesSearch(s, q){
+    if(!q) return true;
+    if(s.name.toLowerCase().includes(q)) return true;
+    return (s.sourceCharacters || []).some(function(c){ return c.name.toLowerCase().includes(q); });
+  }
+
+  function tkRenderList(fullList, elId){
     const el = document.getElementById(elId);
+    const q = document.getElementById('tkSearchBox').value.trim().toLowerCase();
+    const list = fullList.filter(function(s){ return tkMatchesSearch(s, q); });
     if(list.length === 0){
       el.innerHTML = '<tr><td colspan="6" style="text-align:center;color:var(--muted);">該当するスキルが見つかりません</td></tr>';
       return;
@@ -296,8 +314,14 @@
     }).join('');
   }
 
-  tkRenderList(takuetsuSkills, 'tkList');
-  tkRenderList(takuetsuRateSkills, 'tkRateList');
+  function tkRenderAll(){
+    tkRenderList(takuetsuSkills, 'tkList');
+    tkRenderList(takuetsuRateSkills, 'tkRateList');
+  }
+
+  document.getElementById('tkSearchBox').addEventListener('input', tkRenderAll);
+
+  tkRenderAll();
 </script>
   </div>
 </div>
