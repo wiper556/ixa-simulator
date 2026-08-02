@@ -24,6 +24,12 @@
     font-family:'Zen Kaku Gothic New',sans-serif;font-size:13px;padding:7px 10px;
     background:#fff;border:1px solid var(--line);color:var(--paper);border-radius:5px;width:90px;
   }
+  .sc-search{margin-bottom:14px;}
+  .sc-search input{
+    width:100%;font-family:'Zen Kaku Gothic New',sans-serif;font-size:15px;padding:11px 14px;
+    background:#fff;border:1px solid var(--line);color:var(--paper);border-radius:5px;
+  }
+  .sc-search input:focus{outline:none;border-color:var(--gold);}
 
   @media (max-width:600px){
     .sc-table{font-size:12px;}
@@ -67,6 +73,10 @@
     <div class="sc-filter">
       <label for="scCount">防御参加武将数:</label>
       <input type="number" id="scCount" value="280" min="0" step="1">
+    </div>
+
+    <div class="sc-search">
+      <input type="text" id="scSearchBox" placeholder="スキル名または武将名で検索(例: 泰厳射手、佐竹義宣 など)">
     </div>
 
     <div class="sc-table-scroll">
@@ -202,20 +212,28 @@
     scRender();
   }
 
+  function scMatchesSearch(s, q){
+    if(!q) return true;
+    if(s.name.toLowerCase().includes(q)) return true;
+    return (s.sourceCharacters || []).some(function(c){ return c.name.toLowerCase().includes(q); });
+  }
+
   function scRender(){
     const el = document.getElementById('scList');
     const count = Math.max(0, parseInt(document.getElementById('scCount').value, 10) || 0);
+    const q = document.getElementById('scSearchBox').value.trim().toLowerCase();
 
     document.querySelector('#scLv10Header .sc-th-label').textContent = 'LV10防御力('+count+'人時)';
     document.querySelector('#scTrMaxHeader .sc-th-label').textContent = 'TR最大時防御力('+count+'人時)';
     scUpdateSortArrows();
 
-    if(countDefSkills.length === 0){
+    const filteredSkills = countDefSkills.filter(function(s){ return scMatchesSearch(s, q); });
+    if(filteredSkills.length === 0){
       el.innerHTML = '<tr><td colspan="6" style="text-align:center;color:var(--muted);">該当するスキルが見つかりません</td></tr>';
       return;
     }
     // 表示中の人数での実数値を算出してからソート(係数だけでなく固定加算分も含めた実値で比較する)
-    let rows = countDefSkills.map(function(s){
+    let rows = filteredSkills.map(function(s){
       const lv10Fixed = (s.lv10FixedBonus !== undefined ? s.lv10FixedBonus : s.fixedBonus) || 0;
       const trMaxFixed = (s.trMaxFixedBonus !== undefined ? s.trMaxFixedBonus : s.fixedBonus) || 0;
       return { s: s, lv10Fixed: lv10Fixed, trMaxFixed: trMaxFixed, lv10Num: lv10Fixed + count*s.lv10Coefficient, trMaxNum: trMaxFixed + count*s.trMaxCoefficient };
@@ -246,6 +264,7 @@
   }
 
   document.getElementById('scCount').addEventListener('input', scRender);
+  document.getElementById('scSearchBox').addEventListener('input', scRender);
   document.getElementById('scLv10Header').addEventListener('click', function(){ scToggleSort('lv10'); });
   document.getElementById('scTrMaxHeader').addEventListener('click', function(){ scToggleSort('trMax'); });
 
