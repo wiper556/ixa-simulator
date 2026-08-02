@@ -2968,6 +2968,26 @@
       trTable:[
         {level:"LV10", points:"-", effect:"槍・弓・馬　確率 25% / 攻撃 15%上昇+破壊5%上昇(TR別データは未確認)"}
       ]
+    },
+    {
+      // ユーザー明示依頼によりB以下だがページ新規作成。ixagno.blog.fc2.com(blog-entry-8878)掲載の実物カード画像で確認済み: 確率+60% / 対象部隊長 / 「所属部隊の部隊長が持つ初期スキルを模倣する(戦闘スキルのみ)」
+      // characters-kyoku.html内の合成候補としての出現箇所(全grep結果): 留守政景(No.2382)C・今川氏真(No.2358)S1/S2・三好義賢(No.2368)S1はいずれも「入来神舞」[S]の移植後afterSkillとして出現、伊達成実(No.2336)S2は「飛蝶野分」自体が候補スキルとして出現(移植後は「風狂幻術」)
+      // ownHiddenCandidate: 伊達成実(No.2336)synthesisTable S2のafterSkillより導出
+      name:"飛蝶野分", rank:"B", baseRate:60, target:"部隊長",
+      effectSummary:"B/LV10 確率 60% 対象:部隊長\n①所属部隊の部隊長が持つ初期スキルを模倣する(戦闘スキルのみ)",
+      categoryLinks:[
+        {href:"skills-leadermimic.html", label:"部隊長模倣スキル一覧を見る"}
+      ],
+      sourceCharacters:[
+        {name:"伊達成実", no:"2336", slot:"S2", db:"kyoku"},
+        {name:"留守政景", no:"2382", slot:"C(入来神舞経由)", db:"kyoku"},
+        {name:"今川氏真", no:"2358", slot:"S1・S2(入来神舞経由)", db:"kyoku"},
+        {name:"三好義賢", no:"2368", slot:"S1(入来神舞経由)", db:"kyoku"}
+      ],
+      ownHiddenCandidate: {skill:"風狂幻術", rank:"B"},
+      trTable:[
+        {level:"LV10", points:"-", effect:"部隊長　確率 60% / 効果 部隊長の初期スキルを模倣(戦闘スキルのみ)(TR別データは未確認)"}
+      ]
     }
   ];
 
