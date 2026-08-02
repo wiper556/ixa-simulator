@@ -71,7 +71,7 @@
     </div>
 
     <div class="s2-hide-filter">
-      <label class="s2-hide-toggle"><input type="checkbox" id="ttHideS2Toggle">S2のみで入手可能なスキルを非表示</label>
+      <label class="s2-hide-toggle"><input type="checkbox" id="ttHideS2Toggle">S2で入手できる武将名を非表示</label>
     </div>
 
     <div class="tt-table-scroll">
@@ -159,28 +159,25 @@
     return (s.sourceCharacters || []).some(function(c){ return c.name.toLowerCase().includes(q); });
   }
 
-  // S2(同一カード2枚合成専用枠)のみで入手可能なスキルを非表示にするトグル。sourceCharactersの全件がS2枠の場合のみ対象。
+  // S2(同一カード2枚合成専用枠)で入手できる武将名を非表示にするトグル。スキル行自体は残し、sourceCharactersのうちslotがS2のものだけを表の中で隠す。
+  // (以前はsourceCharacters全件がS2の場合にスキル行ごと非表示にしていたが、ユーザー指摘によりスキルは表示したまま武将名のみ隠す仕様に統一)
   let ttHideS2 = false;
 
   function ttIsS2Slot(slot){
     return String(slot||'').split('・').some(function(t){ return t.trim().indexOf('S2') === 0; });
   }
 
-  function ttIsAllS2(s){
-    const list = s.sourceCharacters || [];
-    return list.length > 0 && list.every(function(c){ return ttIsS2Slot(c.slot); });
-  }
-
   function ttRender(){
     const el = document.getElementById('ttList');
     const q = document.getElementById('ttSearchBox').value.trim().toLowerCase();
-    const list = taitaiSkills.filter(function(s){ return ttMatchesSearch(s, q) && (!ttHideS2 || !ttIsAllS2(s)); });
+    const list = taitaiSkills.filter(function(s){ return ttMatchesSearch(s, q); });
     if(list.length === 0){
       el.innerHTML = '<tr><td colspan="5" style="text-align:center;color:var(--muted);">該当するスキルが見つかりません</td></tr>';
       return;
     }
     el.innerHTML = list.map(function(s){
-      const sources = (s.sourceCharacters || []).map(function(c){
+      const visibleSources = ttHideS2 ? (s.sourceCharacters || []).filter(function(c){ return !ttIsS2Slot(c.slot); }) : (s.sourceCharacters || []);
+      const sources = visibleSources.map(function(c){
         return '<a href="characters.html#'+encodeURIComponent(c.no)+'">'+ttEscapeHtml(c.name)+'('+ttEscapeHtml(c.slot)+')</a>';
       }).join('<br>') || '-';
       return '<tr><td><a href="'+s.skillPage+'">'+ttEscapeHtml(s.name)+'</a></td><td>'+ttEscapeHtml(s.baseRate||'-')+'</td><td>'+ttColorizeMujin(s.target||'-')+'</td>'
