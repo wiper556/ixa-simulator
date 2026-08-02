@@ -133,7 +133,9 @@
         {name:"豊臣秀吉【覇(5)】", no:"1287", slot:"B"}
       ]},
     {name:"不制于天地人", skillPage:"skills.html#不制于天地人", baseRate:"50%", target:"槍・弓・器・鉄",
+      keywordNote:"防御参加武将数220以下で効果1.5倍・模倣不可",
       fixedBonus: 0, lv10Coefficient: 8.5, trMaxCoefficient: 11.2, trMaxLabel: "TR6",
+      threshold: 220, thresholdMultiplier: 1.5, // characters.html No.1309のtrTable(220人×1.5倍)と一致させる閾値条件
       sourceCharacters:[
         {name:"津軽為信", no:"1309", slot:"S1"} // characters.html#1309 synthesisTable S1に自己参照で掲載を確認
       ]},
@@ -173,6 +175,7 @@
       ]},
     {name:"魔導禁鎖", skillPage:"characters.html#1279", baseRate:"58%", target:"槍・弓・砲・器", keywordNote:"防御参加武将数120以下で効果1.5倍・模倣不可",
       fixedBonus: 0, lv10Coefficient: 8.4, trMaxCoefficient: 13, trMaxLabel: "TR5",
+      threshold: 120, thresholdMultiplier: 1.5, // characters.html No.1279のtrTable(120人以下で1.5倍)と一致させる閾値条件
       sourceCharacters:[
         {name:"荒木村重", no:"1279", slot:"移植不可"}
       ]}
@@ -238,10 +241,15 @@
       return;
     }
     // 表示中の人数での実数値を算出してからソート(係数だけでなく固定加算分も含めた実値で比較する)
+    // 閾値条件付きスキル(例: 不制于天地人、魔導禁鎖)は防御参加武将数がthreshold以下の場合、
+    // (固定加算分+係数×人数)にthresholdMultiplierを掛ける。characters.html側のtrTable記載値(例: 220人×1.5倍)と同じ考え方。
     let rows = filteredSkills.map(function(s){
       const lv10Fixed = (s.lv10FixedBonus !== undefined ? s.lv10FixedBonus : s.fixedBonus) || 0;
       const trMaxFixed = (s.trMaxFixedBonus !== undefined ? s.trMaxFixedBonus : s.fixedBonus) || 0;
-      return { s: s, lv10Fixed: lv10Fixed, trMaxFixed: trMaxFixed, lv10Num: lv10Fixed + count*s.lv10Coefficient, trMaxNum: trMaxFixed + count*s.trMaxCoefficient };
+      const multiplier = (s.threshold !== undefined && count <= s.threshold) ? s.thresholdMultiplier : 1;
+      const lv10Num = (lv10Fixed + count*s.lv10Coefficient) * multiplier;
+      const trMaxNum = (trMaxFixed + count*s.trMaxCoefficient) * multiplier;
+      return { s: s, lv10Fixed: lv10Fixed, trMaxFixed: trMaxFixed, lv10Num: lv10Num, trMaxNum: trMaxNum, multiplier: multiplier };
     });
     if(scSortState.key === 'lv10'){
       rows.sort(function(a,b){ return (a.lv10Num - b.lv10Num) * scSortState.dir; });
@@ -259,8 +267,9 @@
       const lv10Prefix = row.lv10Fixed ? (row.lv10Fixed+'%+') : '';
       const trMaxPrefix = row.trMaxFixed ? (row.trMaxFixed+'%+') : '';
       const keywordSuffix = s.keywordNote ? '('+s.keywordNote+')' : '';
-      const lv10Detail = lv10Prefix+s.lv10Coefficient+'%×防御参加武将数('+count+'人)='+lv10Value+'%'+keywordSuffix;
-      const trMaxDetail = trMaxPrefix+s.trMaxCoefficient+'%×防御参加武将数('+count+'人)='+trMaxValue+'%('+s.trMaxLabel+')'+keywordSuffix;
+      const multiplierSuffix = row.multiplier !== 1 ? ('×'+row.multiplier+'倍') : '';
+      const lv10Detail = lv10Prefix+s.lv10Coefficient+'%×防御参加武将数('+count+'人)'+multiplierSuffix+'='+lv10Value+'%'+keywordSuffix;
+      const trMaxDetail = trMaxPrefix+s.trMaxCoefficient+'%×防御参加武将数('+count+'人)'+multiplierSuffix+'='+trMaxValue+'%('+s.trMaxLabel+')'+keywordSuffix;
       return '<tr><td><a href="'+s.skillPage+'">'+scEscapeHtml(s.name)+'</a></td><td>'+scEscapeHtml(s.baseRate||'-')+'</td><td>'+scColorizeMujin(s.target||'-')+'</td>'
         + '<td style="text-align:left;white-space:normal;min-width:220px;">'+scColorizeMujin(lv10Detail)+'</td>'
         + '<td style="text-align:left;white-space:normal;min-width:220px;">'+scColorizeMujin(trMaxDetail)+'</td>'
