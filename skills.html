@@ -781,25 +781,6 @@
       ]
     },
     {
-      // ixagno.blog.fc2.com生HTML照合済み(2026-07-31、blog-entry-10842)。合成専用スキルのためLV10段階が存在せずTR1(10P)が初期値。
-      name:"布刀玉ノ策", rank:"SS", baseRate:100, target:"全 卓越",
-      effectSummary:"SS/TR1 確率 100% 攻撃970%上昇/対象:全　卓越\n合成専用スキルのためLV10段階は存在せずTR1が初期値\n①攻撃970%上昇する\n②防御970%上昇する\n③自軍全武将の全スキルの卓越確率に22%を加算する(自軍内重複上限2)",
-      categoryLinks:[
-        {href:"skills-takuetsu.html", label:"卓越スキル一覧を見る"}
-      ],
-      sourceCharacters:[
-        {name:"毛利輝元(5)", no:"1306", slot:"B"},
-        {name:"真田昌幸(5)", no:"1304", slot:"C"}
-      ],
-      trTable:[
-        {level:"TR1", points:"10", effect:"全 卓越　確率 100% / 攻撃 970%上昇+防御 970%上昇(卓越確率+22%)"},
-        {level:"TR2", points:"40", effect:"全 卓越　確率 100% / 攻撃 1030%上昇+防御 1030%上昇(卓越確率+24%)"},
-        {level:"TR3", points:"90", effect:"全 卓越　確率 100% / 攻撃 1150%上昇+防御 1150%上昇(卓越確率+26%)"},
-        {level:"TR4", points:"150", effect:"全 卓越　確率 100% / 攻撃 1300%上昇+防御 1300%上昇(卓越確率+28%)"},
-        {level:"TR5", points:"200", effect:"全 卓越　確率 100% / 攻撃 1520%上昇+防御 1520%上昇(卓越確率+30%)"}
-      ]
-    },
-    {
       name:"摩利支天ノ法", rank:"SSS", baseRate:70, target:"部隊長",
       effectSummary:"SSS/LV10 確率 70% 対象:部隊長\n①部隊長の持つ模倣可能な初期スキルを1.25倍に強化して模倣する",
       categoryLinks:[
@@ -1929,9 +1910,11 @@
         {href:"skills-takuetsu.html", label:"卓越スキル一覧を見る"}
       ],
       sourceCharacters:[
-        {name:"真田昌幸(5)", no:"1304", slot:"C"}
+        {name:"真田昌幸(5)", no:"1304", slot:"C"},
+        {name:"毛利輝元(5)", no:"1306", slot:"B"}
       ],
-      // 合成専用スキル(武将カード本体は存在しない)。ixanary.comではTR6なし(LV1/LV10/TR1〜TR5のみ)
+      // 合成専用スキル(武将カード本体は存在しない)。ixanary.com生HTML照合済み(LV1/LV10/TR1〜TR5のみ、TR6なし)。
+      // 旧重複エントリ(target:"全 卓越"/TR1初期値970%説)はixanary.com側のLV10=940%行と矛盾するため統合時に破棄しこちらのLV10基準データを採用
       ownHiddenCandidate: {skill:"布刀玉ノ策", rank:"SS"},
       trTable:[
         {level:"LV10", points:"-", effect:"全　確率 100% / 攻撃 940%上昇+防御 940%上昇(卓越確率+20%)"},
