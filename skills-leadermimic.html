@@ -72,7 +72,7 @@
     </div>
 
     <div class="s2-hide-filter">
-      <label class="s2-hide-toggle"><input type="checkbox" id="lmHideS2Toggle">S2のみで入手可能なスキルを非表示</label>
+      <label class="s2-hide-toggle"><input type="checkbox" id="lmHideS2Toggle">S2で入手できる武将名を非表示</label>
     </div>
 
     <h2 class="lm-subtitle">卓越確率あり(卓越発動時のみ倍率上昇)</h2>
@@ -235,28 +235,25 @@
     return (s.sourceCharacters || []).some(function(c){ return c.name.toLowerCase().includes(q); });
   }
 
-  // S2(同一カード2枚合成専用枠)のみで入手可能なスキルを非表示にするトグル。sourceCharactersの全件がS2枠の場合のみ対象。
+  // S2(同一カード2枚合成専用枠)で入手できる武将名を非表示にするトグル。スキル行自体は残し、sourceCharactersのうちslotがS2のものだけを表の中で隠す。
+  // (以前はsourceCharacters全件がS2の場合にスキル行ごと非表示にしていたが、ユーザー指摘によりスキルは表示したまま武将名のみ隠す仕様に統一)
   let lmHideS2 = false;
 
   function lmIsS2Slot(slot){
     return String(slot||'').split('・').some(function(t){ return t.trim().indexOf('S2') === 0; });
   }
 
-  function lmIsAllS2(s){
-    const list = s.sourceCharacters || [];
-    return list.length > 0 && list.every(function(c){ return lmIsS2Slot(c.slot); });
-  }
-
   function lmRenderList(fullList, elId){
     const el = document.getElementById(elId);
     const q = document.getElementById('lmSearchBox').value.trim().toLowerCase();
-    const list = fullList.filter(function(s){ return lmMatchesSearch(s, q) && (!lmHideS2 || !lmIsAllS2(s)); });
+    const list = fullList.filter(function(s){ return lmMatchesSearch(s, q); });
     if(list.length === 0){
       el.innerHTML = '<tr><td colspan="6" style="text-align:center;color:var(--muted);">該当するスキルが見つかりません</td></tr>';
       return;
     }
     el.innerHTML = list.map(function(s){
-      const sources = (s.sourceCharacters || []).map(function(c){
+      const visibleSources = lmHideS2 ? (s.sourceCharacters || []).filter(function(c){ return !lmIsS2Slot(c.slot); }) : (s.sourceCharacters || []);
+      const sources = visibleSources.map(function(c){
         const dbPage = c.db === 'kyoku' ? 'characters-kyoku.html' : 'characters.html';
         return '<a href="'+dbPage+'#'+encodeURIComponent(c.no)+'">'+lmEscapeHtml(c.name)+'('+lmEscapeHtml(c.slot)+')</a>';
       }).join('<br>') || '-';
