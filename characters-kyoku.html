@@ -485,14 +485,14 @@
         {level:"TR4", points:"150", effect:"槍・馬・器・騎　確率 100% / 攻撃 540%上昇+防御 540%上昇(卓越確率+70%)"},
         {level:"TR5", points:"200", effect:"槍・馬・器・騎　確率 100% / 攻撃 600%上昇+防御 600%上昇(卓越確率+80%)"}
       ],
-      // 45do.info確認(生HTML skiladd_wrap照合済み): A/Bは自己参照(勝旗勇躍)
+      // 45do.info+ixagno.blog.fc2.com(blog-entry-9881)確認済み: A/Bの勝旗勇躍は移植後「戦陣 吟詠」に、Cの霊妙秘剣は移植後「戦陣 剣舞」に変化(自己参照ではない)
       synthesisTable:[
-        {slot:"A", skill:"勝旗勇躍", rank:"A", afterSkill:"勝旗勇躍", afterRank:"A", target:"槍・馬・器・騎 卓越", rate:"100%", effectShort:"攻撃440%上昇+防御440%上昇+部隊内卓越確率+50%(模倣不可)"},
-        {slot:"B", skill:"勝旗勇躍", rank:"A", afterSkill:"勝旗勇躍", afterRank:"A", target:"槍・馬・器・騎 卓越", rate:"100%", effectShort:"攻撃440%上昇+防御440%上昇+部隊内卓越確率+50%(模倣不可)"},
-        {slot:"C", skill:"霊妙秘剣", rank:"A", afterSkill:"霊妙秘剣", afterRank:"A", target:"槍・馬・砲 飛翔6 卓越", rate:"+100%", effectShort:"攻撃180%上昇+防御180%上昇(卓越:追加確率-30%で3倍・0%超のみ抽選・模倣不可)"},
+        {slot:"A", skill:"勝旗勇躍", rank:"A", afterSkill:"戦陣 吟詠", afterRank:"A", target:"槍・馬・器・騎 卓越", rate:"100%", effectShort:"攻撃440%上昇+防御440%上昇+部隊内卓越確率+50%(模倣不可)"},
+        {slot:"B", skill:"勝旗勇躍", rank:"A", afterSkill:"戦陣 吟詠", afterRank:"A", target:"槍・馬・器・騎 卓越", rate:"100%", effectShort:"攻撃440%上昇+防御440%上昇+部隊内卓越確率+50%(模倣不可)"},
+        {slot:"C", skill:"霊妙秘剣", rank:"A", afterSkill:"戦陣 剣舞", afterRank:"A", target:"槍・馬・砲 飛翔6 卓越", rate:"+100%", effectShort:"攻撃180%上昇+防御180%上昇(卓越:追加確率-30%で3倍・0%超のみ抽選・模倣不可)"},
         {slot:"S1", skill:"戦陣 吟詠", rank:"A", afterSkill:"戦陣 吟詠", afterRank:"A", target:"全 卓越", rate:"+100%", effectShort:"攻撃340%上昇+防御340%上昇+部隊内卓越追加確率+20%(模倣不可・特殊効果は自部隊内では重複不可)"},
         {slot:"S2", skill:"戦陣 吟詠", rank:"A", afterSkill:"戦陣 吟詠", afterRank:"A", target:"全 卓越", rate:"+100%", effectShort:"攻撃340%上昇+防御340%上昇+部隊内卓越追加確率+20%(模倣不可・特殊効果は自部隊内では重複不可)"}
-      ]},
+      ], reviewedOk:true},
     {name:"森可成", no:"2375", ch:"未確認", cost:4.5, troop:"槍砲器攻", sub:"", effect:"攻撃・破壊上昇",
       furigana:"もりよしなり", illustrator:"ジョージ",
       imageFull:"assets/img/characters/no2375_full.png", imageChar:"assets/img/characters/no2375_char.png",
@@ -503,14 +503,14 @@
       trTable:[
         {level:"LV10", points:"-", effect:"槍・砲・器　確率 60% / 攻撃 460%上昇+破壊 100%上昇"}
       ],
-      // 45do.info確認(生HTML skiladd_wrap照合済み): A/B/Cは自己参照(覇立槍)。S1(戦陣疾駆)は「裏は覇道系スキル」との注記があり移植後合成候補が十束ノ神域(SS)に変化
+      // 45do.info+ixagno.blog.fc2.com(blog-entry-9880)確認済み: A/B/Cの覇立槍は移植後「戦陣疾駆」に変化。S1の戦陣疾駆は移植後、保護スキル「十束ノ神域」[SS]に、S2の日輪ノ守護者は移植後「戦陣吟詠」に変化
       synthesisTable:[
-        {slot:"A", skill:"覇立槍", rank:"A", afterSkill:"覇立槍", afterRank:"A", target:"槍・砲・器", rate:"60%", effectShort:"攻撃460%上昇+破壊100%上昇"},
-        {slot:"B", skill:"覇立槍", rank:"A", afterSkill:"覇立槍", afterRank:"A", target:"槍・砲・器", rate:"60%", effectShort:"攻撃460%上昇+破壊100%上昇"},
-        {slot:"C", skill:"覇立槍", rank:"A", afterSkill:"覇立槍", afterRank:"A", target:"槍・砲・器", rate:"60%", effectShort:"攻撃460%上昇+破壊100%上昇"},
+        {slot:"A", skill:"覇立槍", rank:"A", afterSkill:"戦陣 疾駆", afterRank:"A", target:"槍・砲・器", rate:"60%", effectShort:"攻撃460%上昇+破壊100%上昇"},
+        {slot:"B", skill:"覇立槍", rank:"A", afterSkill:"戦陣 疾駆", afterRank:"A", target:"槍・砲・器", rate:"60%", effectShort:"攻撃460%上昇+破壊100%上昇"},
+        {slot:"C", skill:"覇立槍", rank:"A", afterSkill:"戦陣 疾駆", afterRank:"A", target:"槍・砲・器", rate:"60%", effectShort:"攻撃460%上昇+破壊100%上昇"},
         {slot:"S1", skill:"戦陣 疾駆", rank:"A", afterSkill:"十束ノ神域", afterRank:"SS", target:"全", rate:"+100%", effectShort:"速度170%上昇+破壊170%上昇"},
-        {slot:"S2", skill:"日輪ノ守護者", rank:"A", afterSkill:"日輪ノ守護者", afterRank:"A", target:"弓・砲・器", rate:"+65%", effectShort:"攻撃340%上昇+防御340%上昇+破壊110%上昇"}
-      ]},
+        {slot:"S2", skill:"日輪ノ守護者", rank:"A", afterSkill:"戦陣 吟詠", afterRank:"A", target:"弓・砲・器", rate:"+65%", effectShort:"攻撃340%上昇+防御340%上昇+破壊110%上昇"}
+      ], reviewedOk:true},
     {name:"斎藤利三", no:"2376", ch:"未確認", cost:4.5, troop:"槍馬器騎攻", sub:"", effect:"部隊内レアリティA以上のスキル数に応じ攻撃上昇",
       furigana:"さいとうとしみつ", illustrator:"西野幸治",
       imageFull:"assets/img/characters/no2376_full.png", imageChar:"assets/img/characters/no2376_char.png",
@@ -523,14 +523,14 @@
         {level:"TR1", points:"10", effect:"槍・馬・器・騎　確率 43% / 攻撃 所属部隊内のレアリティA以上のスキル個数×33%"},
         {level:"TR2", points:"40", effect:"槍・馬・器・騎　確率 43% / 攻撃 所属部隊内のレアリティA以上のスキル個数×40%"}
       ],
-      // 45do.info確認(生HTML skiladd_wrap照合済み): A/Bは自己参照(雨下義炎)
+      // 45do.info+ixagno.blog.fc2.com(blog-entry-9905)確認済み: A/Bの雨下義炎は移植後「志半ノ矛楯」に、Cの転歌は移植後「入来神舞」[S]に変化(自己参照ではない)
       synthesisTable:[
-        {slot:"A", skill:"雨下義炎", rank:"A", afterSkill:"雨下義炎", afterRank:"A", target:"槍・馬・器・騎", rate:"43%", effectShort:"攻撃 所属部隊内のレアリティA以上のスキル個数×30%"},
-        {slot:"B", skill:"雨下義炎", rank:"A", afterSkill:"雨下義炎", afterRank:"A", target:"槍・馬・器・騎", rate:"43%", effectShort:"攻撃 所属部隊内のレアリティA以上のスキル個数×30%"},
-        {slot:"C", skill:"転歌", rank:"A", afterSkill:"転歌", afterRank:"A", target:"部隊長", rate:"+80%", effectShort:"部隊長の初期スキルを模倣(戦闘スキルのみ)"},
+        {slot:"A", skill:"雨下義炎", rank:"A", afterSkill:"志半ノ矛楯", afterRank:"A", target:"槍・馬・器・騎", rate:"43%", effectShort:"攻撃 所属部隊内のレアリティA以上のスキル個数×30%"},
+        {slot:"B", skill:"雨下義炎", rank:"A", afterSkill:"志半ノ矛楯", afterRank:"A", target:"槍・馬・器・騎", rate:"43%", effectShort:"攻撃 所属部隊内のレアリティA以上のスキル個数×30%"},
+        {slot:"C", skill:"転歌", rank:"A", afterSkill:"入来神舞", afterRank:"S", target:"部隊長", rate:"+80%", effectShort:"部隊長の初期スキルを模倣(戦闘スキルのみ)"},
         {slot:"S1", skill:"志半ノ矛楯", rank:"A", afterSkill:"志半ノ矛楯", afterRank:"A", target:"全", rate:"+65%", effectShort:"攻撃465%上昇+防御465%上昇(模倣不可)"},
         {slot:"S2", skill:"志半ノ矛楯", rank:"A", afterSkill:"志半ノ矛楯", afterRank:"A", target:"全", rate:"+65%", effectShort:"攻撃465%上昇+防御465%上昇(模倣不可)"}
-      ]},
+      ], reviewedOk:true},
     {name:"武田信繁", no:"2377", ch:"未確認", cost:4, troop:"馬砲器攻", sub:"", effect:"攻撃・速度上昇+帰還時間短縮(模倣不可)",
       furigana:"たけだのぶしげ", illustrator:"BISAI",
       imageFull:"assets/img/characters/no2377_full.png", imageChar:"assets/img/characters/no2377_char.png",
@@ -541,14 +541,14 @@
       trTable:[
         {level:"LV10", points:"-", effect:"馬・砲・器　確率 100% / 攻撃 450%上昇+速度 100%上昇"}
       ],
-      // 45do.info確認(生HTML skiladd_wrap照合済み): A/Bは自己参照(虎国ノ至賢)
+      // 45do.info+ixagno.blog.fc2.com(blog-entry-9904)確認済み: A/Bの虎国ノ至賢は移植後「志半ノ矛楯」に、Cの瞬刻無影は移植後「朧雲ノ閃撃」[SSS]に変化(自己参照ではない)
       synthesisTable:[
-        {slot:"A", skill:"虎国ノ至賢", rank:"A", afterSkill:"虎国ノ至賢", afterRank:"A", target:"馬・砲・器", rate:"100%", effectShort:"攻撃450%上昇+速度100%上昇(模倣不可)"},
-        {slot:"B", skill:"虎国ノ至賢", rank:"A", afterSkill:"虎国ノ至賢", afterRank:"A", target:"馬・砲・器", rate:"100%", effectShort:"攻撃450%上昇+速度100%上昇(模倣不可)"},
-        {slot:"C", skill:"瞬刻無影", rank:"S", afterSkill:"瞬刻無影", afterRank:"S", target:"部隊長", rate:"+45%/+100%", effectShort:"部隊長の初期スキルを1.1倍に強化して模倣+速度100%上昇"},
+        {slot:"A", skill:"虎国ノ至賢", rank:"A", afterSkill:"志半ノ矛楯", afterRank:"A", target:"馬・砲・器", rate:"100%", effectShort:"攻撃450%上昇+速度100%上昇(模倣不可)"},
+        {slot:"B", skill:"虎国ノ至賢", rank:"A", afterSkill:"志半ノ矛楯", afterRank:"A", target:"馬・砲・器", rate:"100%", effectShort:"攻撃450%上昇+速度100%上昇(模倣不可)"},
+        {slot:"C", skill:"瞬刻無影", rank:"S", afterSkill:"朧雲ノ閃撃", afterRank:"SSS", target:"部隊長", rate:"+45%/+100%", effectShort:"部隊長の初期スキルを1.1倍に強化して模倣+速度100%上昇"},
         {slot:"S1", skill:"志半ノ矛楯", rank:"A", afterSkill:"志半ノ矛楯", afterRank:"A", target:"全", rate:"+65%", effectShort:"攻撃465%上昇+防御465%上昇(模倣不可)"},
         {slot:"S2", skill:"志半ノ矛楯", rank:"A", afterSkill:"志半ノ矛楯", afterRank:"A", target:"全", rate:"+65%", effectShort:"攻撃465%上昇+防御465%上昇(模倣不可)"}
-      ]},
+      ], reviewedOk:true},
     {name:"遠藤基信", no:"2378", ch:"未確認", cost:4, troop:"弓器焙攻", sub:"", effect:"攻撃上昇+卓越で攻撃3倍",
       furigana:"えんどうもとのぶ", illustrator:"池田宗隆",
       imageFull:"assets/img/characters/no2378_full.png", imageChar:"assets/img/characters/no2378_char.png",
