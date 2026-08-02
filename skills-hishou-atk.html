@@ -17,6 +17,12 @@
   .hs-table td:first-child{text-align:left;font-family:'Noto Serif JP',serif;font-weight:700;}
   .hs-table td.hs-col-effect{text-align:left;white-space:normal;min-width:260px;}
   .hs-note{color:var(--muted);font-size:12px;line-height:1.7;margin:0 0 14px;}
+  .hs-search{margin-bottom:14px;}
+  .hs-search input{
+    width:100%;font-family:'Zen Kaku Gothic New',sans-serif;font-size:15px;padding:11px 14px;
+    background:#fff;border:1px solid var(--line);color:var(--paper);border-radius:5px;
+  }
+  .hs-search input:focus{outline:none;border-color:var(--gold);}
 
   @media (max-width:600px){
     .hs-table{font-size:12px;}
@@ -56,6 +62,10 @@
   <main class="site-main">
     <h1 class="page-title">飛翔スキル一覧(攻撃)</h1>
     <p class="hs-note">「飛翔●」は、敵軍内で飛翔を持つ武将が●人未満のとき、通常武将ダメージを受けなくなる効果を持つ。攻撃効果を持つスキルの一覧(防御系は飛翔スキル一覧(防御)を参照)。</p>
+
+    <div class="hs-search">
+      <input type="text" id="hsSearchBox" placeholder="スキル名または武将名で検索(例: 義陣絶刀、長尾景虎 など)">
+    </div>
 
     <div class="hs-table-scroll">
       <table class="hs-table">
@@ -184,13 +194,21 @@
       .replace(/卓越/g, function(m){ return '<span style="color:#7CB342;font-weight:700;">'+m+'</span>'; });
   }
 
+  function hsMatchesSearch(s, q){
+    if(!q) return true;
+    if(s.name.toLowerCase().includes(q)) return true;
+    return (s.sourceCharacters || []).some(function(c){ return c.name.toLowerCase().includes(q); });
+  }
+
   function hsRender(){
     const el = document.getElementById('hsList');
-    if(hishouAtkSkills.length === 0){
+    const q = document.getElementById('hsSearchBox').value.trim().toLowerCase();
+    const list = hishouAtkSkills.filter(function(s){ return hsMatchesSearch(s, q); });
+    if(list.length === 0){
       el.innerHTML = '<tr><td colspan="6" style="text-align:center;color:var(--muted);">該当するスキルが見つかりません</td></tr>';
       return;
     }
-    el.innerHTML = hishouAtkSkills.map(function(s){
+    el.innerHTML = list.map(function(s){
       const sources = (s.sourceCharacters || []).map(function(c){
         const dbPage = c.db === 'kyoku' ? 'characters-kyoku.html' : 'characters.html';
         return '<a href="'+dbPage+'#'+encodeURIComponent(c.no)+'">'+hsEscapeHtml(c.name)+'('+hsEscapeHtml(c.slot)+')</a>';
@@ -201,6 +219,8 @@
         + '<td style="white-space:normal;">'+sources+'</td></tr>';
     }).join('');
   }
+
+  document.getElementById('hsSearchBox').addEventListener('input', hsRender);
 
   hsRender();
 </script>
