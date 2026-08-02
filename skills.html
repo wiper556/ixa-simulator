@@ -1690,7 +1690,8 @@
         {name:"伊達政宗(覇3)", no:"1226", slot:"C"},
         {name:"上杉謙信(覇2)", no:"1238", slot:"S1"},
         // 毛利輝元(覇)(1251)のsynthesisTable S2枠は移植後スキルが十束ノ神域→天聖宝冠に変化するためS2として追加(A-3-11逆引き確認、2026-08-02)
-        {name:"毛利輝元(覇)", no:"1251", slot:"S2"}
+        {name:"毛利輝元(覇)", no:"1251", slot:"S2"},
+        {name:"小早川秀秋(4)", no:"1271", slot:"S2"} // characters.html#1271 synthesisTable S2の十束ノ神域(移植後afterSkill:天聖宝冠)を反映
       ],
       ownHiddenCandidate: {skill:"天聖宝冠", rank:"SSS"},
       trTable:[
@@ -2322,7 +2323,7 @@
     },
     {
       name:"照闇騎行", rank:"SS", baseRate:100, target:"全",
-      effectSummary:"SS/LV10 確率 100% 攻撃540%上昇/対象:全\n①攻撃540%上昇する\n②速度250%上昇する(TR1〜TR5は未確認)",
+      effectSummary:"SS/LV10 確率 100% 攻撃540%上昇/対象:全\n①攻撃540%上昇する\n②速度250%上昇する",
       sourceCharacters:[
         {name:"小早川秀秋(4)", no:"1271", slot:"S1"},
         {name:"前田利家(4)", no:"1269", slot:"C"},
@@ -2330,7 +2331,12 @@
       ],
       ownHiddenCandidate: {skill:"照闇騎行", rank:"SS"},
       trTable:[
-        {level:"LV10", points:"-", effect:"全　確率 100% / 攻撃540%上昇+速度250%上昇"}
+        {level:"LV10", points:"-", effect:"全　確率 100% / 攻撃 540%上昇+速度250%上昇"},
+        {level:"TR1", points:"10", effect:"全　確率 100% / 攻撃 580%上昇+速度260%上昇"},
+        {level:"TR2", points:"40", effect:"全　確率 100% / 攻撃 640%上昇+速度270%上昇"},
+        {level:"TR3", points:"90", effect:"全　確率 100% / 攻撃 710%上昇+速度280%上昇"},
+        {level:"TR4", points:"150", effect:"全　確率 100% / 攻撃 790%上昇+速度290%上昇"},
+        {level:"TR5", points:"200", effect:"全　確率 100% / 攻撃 880%上昇+速度300%上昇"}
       ]
     },
     {
