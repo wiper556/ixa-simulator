@@ -123,17 +123,26 @@
       lv10Effect:"卓越時1.35倍",
       tr5Effect:"卓越時1.5倍",
       sourceCharacters:[
-        {name:"伊達政宗(6)", no:"1292", slot:"A"},
-        {name:"斎藤道三(3)", no:"1297", slot:"C"},
-        {name:"徳川家康【覇(6)】", no:"1288", slot:"候補(未確認)"}
+        {name:"上杉謙信(復刻)【覇】", no:"10074", slot:"C"},
+        {name:"真田昌幸(5)", no:"1304", slot:"S1"},
+        {name:"斎藤道三(3)", no:"1297", slot:"S1"},
+        {name:"伊達政宗(6)", no:"1292", slot:"C・S1"},
+        // characters.html#1288のsynthesisTableではC・S1枠(A-3-11確認時に"候補(未確認)"の独自表記からC・S1へ修正、2026-08-02)
+        {name:"徳川家康【覇(6)】", no:"1288", slot:"C・S1"}
       ]},
     {name:"思金神ノ深謀", skillPage:"skills.html#思金神ノ深謀", baseRate:"60%", target:"部隊長",
       lv10Effect:"卓越時1.3倍",
       tr5Effect:"TRなし",
       sourceCharacters:[
-        {name:"伊達政宗(6)", no:"1292", slot:"C"},
-        {name:"斎藤道三(3)", no:"1297", slot:"A"},
-        {name:"細川幽斎(復刻)【天】", no:"10070", slot:"C"}
+        {name:"細川幽斎(復刻)【天】", no:"10070", slot:"C"},
+        {name:"斎藤道三(3)", no:"1297", slot:"B"},
+        {name:"伊達政宗(6)", no:"1292", slot:"B"},
+        {name:"真田信繁", no:"1268", slot:"C"},
+        {name:"北条氏政(5)", no:"1253", slot:"C"},
+        {name:"里見義弘(2)", no:"1245", slot:"S1"},
+        {name:"朝倉義景", no:"1243", slot:"S1"},
+        // 羽柴秀長(1278)のsynthesisTable B枠(A-3-11逆引き確認、2026-08-02)
+        {name:"羽柴秀長", no:"1278", slot:"B"}
       ]},
     {name:"古今虚実ノ法", skillPage:"skills.html#古今虚実ノ法", baseRate:"40%", target:"部隊長",
       lv10Effect:"卓越時1.25倍",
@@ -156,7 +165,10 @@
     {name:"舞蝶朧月", skillPage:"skills.html#舞蝶朧月", baseRate:"50%", target:"部隊長",
       lv10Effect:"卓越時1.25倍",
       tr5Effect:"TRなし",
-      sourceCharacters:[]}
+      sourceCharacters:[
+        // characters.html#10070のsynthesisTable B枠は移植後スキルが潔花咲然→舞蝶朧月に変化するためB(A-3-11逆引き確認、2026-08-02)
+        {name:"細川幽斎(復刻)【天】", no:"10070", slot:"B"}
+      ]}
   ];
 
   const leaderMimicNoTakuetsuSkills = [
@@ -164,17 +176,31 @@
       lv10Effect:"1.25倍",
       tr5Effect:"TRなし",
       sourceCharacters:[
-        {name:"大友宗麟(6)", no:"1295", slot:"C"},
-        {name:"佐竹義宣(3)", no:"1302", slot:"A"},
         {name:"上杉謙信(復刻)【覇】", no:"10074", slot:"B"},
-        {name:"百地三太夫", no:"10062", slot:"B"}
+        {name:"佐竹義宣(3)", no:"1302", slot:"A"},
+        {name:"大友宗麟(6)", no:"1295", slot:"C"},
+        {name:"百地三太夫", no:"10062", slot:"B"},
+        {name:"直江兼続(4)", no:"1266", slot:"C"},
+        {name:"真田幸村(覇)", no:"1227", slot:"C"},
+        {name:"立花道雪", no:"1247", slot:"S1"},
+        {name:"黒田官兵衛【覇】", no:"1214", slot:"S2(同カード2枚合成時のみ、建御雷神ノ閃光の裏として出現)"},
+        // 荒木村重(1279)のsynthesisTable C枠(A-3-11逆引き確認、2026-08-02)
+        {name:"荒木村重", no:"1279", slot:"C"},
+        {name:"伊達政宗(覇3)", no:"1226", slot:"S2(同カード2枚合成時のみ、建御雷神ノ閃光の裏として出現)"},
+        {name:"島津家久", no:"1261", slot:"C"}
       ]},
     {name:"摩利支天ノ法", skillPage:"skills.html#摩利支天ノ法", baseRate:"70%", target:"部隊長",
       lv10Effect:"1.25倍",
       tr5Effect:"TRなし",
       sourceCharacters:[
         {name:"津軽為信", no:"1309", slot:"A"},
-        {name:"百地三太夫", no:"10062", slot:"A"}
+        {name:"百地三太夫", no:"10062", slot:"A"},
+        // 竹中半兵衛【覇】(1275)のsynthesisTable A枠(A-3-11逆引き確認、2026-08-02)
+        {name:"竹中半兵衛【覇】", no:"1275", slot:"A"},
+        {name:"豊臣秀吉(5)", no:"1255", slot:"C"},
+        {name:"堀秀政", no:"1224", slot:"C"},
+        {name:"明智光秀", no:"1204", slot:"S1"},
+        {name:"今川義元", no:"1203", slot:"S1"}
       ]},
     {name:"封法大十字", skillPage:"skills.html#封法大十字", baseRate:"40%", target:"部隊長",
       lv10Effect:"1.24倍+撤退(陣での防御戦闘に不参加)",
@@ -192,7 +218,11 @@
       lv10Effect:"1.15倍+速度200%上昇",
       tr5Effect:"TRなし",
       sourceCharacters:[
-        {name:"武田信玄(6)", no:"1290", slot:"S2"}
+        {name:"立花宗茂(5)", no:"1307", slot:"B"},
+        {name:"武田信玄(6)", no:"1290", slot:"A"},
+        {name:"前田利家(4)", no:"1269", slot:"B"},
+        // 羽柴秀長(1278)のsynthesisTable A枠(A-3-11逆引き確認、2026-08-02)
+        {name:"羽柴秀長", no:"1278", slot:"A"}
       ]},
     {name:"転歌", skillPage:"skills.html#転歌", baseRate:"80%", target:"部隊長",
       lv10Effect:"戦闘スキルのみ模倣(1倍)",
