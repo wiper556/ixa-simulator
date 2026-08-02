@@ -2798,8 +2798,13 @@
   }
 
   function gdbDoSearch(){
-    const q = document.getElementById('gdbSearchBox').value.trim();
-    const list = gdbSortByChapterThenNo(q === '' ? generals : generals.filter(function(g){ return g.name.includes(q) || g.no.includes(q); }));
+    const q = document.getElementById('gdbSearchBox').value.trim().toLowerCase();
+    const list = gdbSortByChapterThenNo(q === '' ? generals : generals.filter(function(g){
+      return g.name.toLowerCase().includes(q)
+        || g.no.includes(q)
+        || (g.furigana || '').toLowerCase().includes(q)
+        || (g.initialSkill || '').toLowerCase().includes(q);
+    }));
     gdbRenderList(list);
   }
 

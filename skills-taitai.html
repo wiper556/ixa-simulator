@@ -17,6 +17,12 @@
   .tt-table td:first-child{text-align:left;font-family:'Noto Serif JP',serif;font-weight:700;}
   .tt-table td.tt-col-effect{text-align:left;white-space:normal;min-width:260px;}
   .tt-note{color:var(--muted);font-size:12px;line-height:1.7;margin:0 0 14px;}
+  .tt-search{margin-bottom:14px;}
+  .tt-search input{
+    width:100%;font-family:'Zen Kaku Gothic New',sans-serif;font-size:15px;padding:11px 14px;
+    background:#fff;border:1px solid var(--line);color:var(--paper);border-radius:5px;
+  }
+  .tt-search input:focus{outline:none;border-color:var(--gold);}
 
   @media (max-width:600px){
     .tt-table{font-size:12px;}
@@ -56,6 +62,10 @@
   <main class="site-main">
     <h1 class="page-title">撤退スキル一覧</h1>
     <p class="tt-note">「撤退」を持つスキルは、そのスキルを持つ武将の部隊が陣での防御戦闘に参加しなくなる効果を持つ。</p>
+
+    <div class="tt-search">
+      <input type="text" id="ttSearchBox" placeholder="スキル名または武将名で検索(例: 虎賁統帥、真田信繁 など)">
+    </div>
 
     <div class="tt-table-scroll">
       <table class="tt-table">
@@ -136,13 +146,21 @@
       .replace(/\n/g, '<br>');
   }
 
+  function ttMatchesSearch(s, q){
+    if(!q) return true;
+    if(s.name.toLowerCase().includes(q)) return true;
+    return (s.sourceCharacters || []).some(function(c){ return c.name.toLowerCase().includes(q); });
+  }
+
   function ttRender(){
     const el = document.getElementById('ttList');
-    if(taitaiSkills.length === 0){
+    const q = document.getElementById('ttSearchBox').value.trim().toLowerCase();
+    const list = taitaiSkills.filter(function(s){ return ttMatchesSearch(s, q); });
+    if(list.length === 0){
       el.innerHTML = '<tr><td colspan="5" style="text-align:center;color:var(--muted);">該当するスキルが見つかりません</td></tr>';
       return;
     }
-    el.innerHTML = taitaiSkills.map(function(s){
+    el.innerHTML = list.map(function(s){
       const sources = (s.sourceCharacters || []).map(function(c){
         return '<a href="characters.html#'+encodeURIComponent(c.no)+'">'+ttEscapeHtml(c.name)+'('+ttEscapeHtml(c.slot)+')</a>';
       }).join('<br>') || '-';
@@ -151,6 +169,8 @@
         + '<td style="white-space:normal;">'+sources+'</td></tr>';
     }).join('');
   }
+
+  document.getElementById('ttSearchBox').addEventListener('input', ttRender);
 
   ttRender();
 </script>

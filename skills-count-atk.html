@@ -25,6 +25,12 @@
     background:#fff;border:1px solid var(--line);color:var(--paper);border-radius:5px;
   }
   .sc-filter input[type="number"]{width:90px;}
+  .sc-search{margin-bottom:14px;}
+  .sc-search input{
+    width:100%;font-family:'Zen Kaku Gothic New',sans-serif;font-size:15px;padding:11px 14px;
+    background:#fff;border:1px solid var(--line);color:var(--paper);border-radius:5px;
+  }
+  .sc-search input:focus{outline:none;border-color:var(--gold);}
 
   @media (max-width:600px){
     .sc-table{font-size:12px;}
@@ -101,6 +107,10 @@
           <option value="大筒兵">大筒兵</option>
         </optgroup>
       </select>
+    </div>
+
+    <div class="sc-search">
+      <input type="text" id="scSearchBox" placeholder="スキル名または武将名で検索(例: 勇冠三軍、豊臣秀長 など)">
     </div>
 
     <div class="sc-table-scroll">
@@ -297,18 +307,26 @@
     scRender(document.getElementById('scFilter').value);
   }
 
+  function scMatchesSearch(s, q){
+    if(!q) return true;
+    if(s.name.toLowerCase().includes(q)) return true;
+    return (s.sourceCharacters || []).some(function(c){ return c.name.toLowerCase().includes(q); });
+  }
+
   function scRender(filterSoldier){
     const el = document.getElementById('scList');
     const filterCategory = filterSoldier ? SOLDIER_TO_CATEGORY[filterSoldier] : '';
     const count = Math.max(0, parseInt(document.getElementById('scCount').value, 10) || 0);
+    const q = document.getElementById('scSearchBox').value.trim().toLowerCase();
 
     document.querySelector('#scLv10Header .sc-th-label').textContent = 'LV10攻撃力('+count+'人時)';
     document.querySelector('#scTrMaxHeader .sc-th-label').textContent = 'TR最大時攻撃力('+count+'人時)';
     scUpdateSortArrows();
 
-    const list = filterCategory
+    let list = filterCategory
       ? countAtkSkills.filter(function(s){ return (s.targetCategories||[]).includes(filterCategory); })
       : countAtkSkills;
+    list = list.filter(function(s){ return scMatchesSearch(s, q); });
     if(list.length === 0){
       el.innerHTML = '<tr><td colspan="6" style="text-align:center;color:var(--muted);">該当するスキルが見つかりません</td></tr>';
       return;
@@ -345,6 +363,9 @@
     scRender(document.getElementById('scFilter').value);
   });
   document.getElementById('scCount').addEventListener('input', function(){
+    scRender(document.getElementById('scFilter').value);
+  });
+  document.getElementById('scSearchBox').addEventListener('input', function(){
     scRender(document.getElementById('scFilter').value);
   });
   document.getElementById('scLv10Header').addEventListener('click', function(){ scToggleSort('lv10'); });

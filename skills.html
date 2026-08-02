@@ -89,7 +89,7 @@
 
     <div id="listView">
       <div class="skl-search">
-        <input type="text" id="sklSearchBox" placeholder="スキル名を入力(例: 勇冠三軍)">
+        <input type="text" id="sklSearchBox" placeholder="スキル名または武将名を入力(例: 勇冠三軍、豊臣秀長)">
       </div>
       <div id="sklList" class="skl-list"></div>
     </div>
@@ -2948,8 +2948,11 @@
   }
 
   function sklDoSearch(){
-    const q = document.getElementById('sklSearchBox').value.trim();
-    const list = q === '' ? skills : skills.filter(function(s){ return s.name.includes(q); });
+    const q = document.getElementById('sklSearchBox').value.trim().toLowerCase();
+    const list = q === '' ? skills : skills.filter(function(s){
+      if(s.name.toLowerCase().includes(q)) return true;
+      return (s.sourceCharacters || []).some(function(c){ return c.name.toLowerCase().includes(q); });
+    });
     sklRenderList(list);
   }
 
