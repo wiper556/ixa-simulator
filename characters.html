@@ -1336,16 +1336,22 @@
         {slot:"S1", skill:"梵天浄界", rank:"SSS", afterSkill:"梵天浄界", afterRank:"SSS", rate:"60%", target:"全", effectShort:"防御50%上昇+破壊を係数×人数で上昇"},
         {slot:"S2", skill:"聖剣深鏡", rank:"S", afterSkill:"聖剣深鏡", afterRank:"S", rate:"1%", target:"全", effectShort:"防御を係数×人数で上昇"}
       ]},
-    {name:"島津義久", no:"1285", ch:"29章", cost:1.0, troop:"全防", sub:"", effect:"所領防御陣形でのみ最大兵数の武将と同兵数になる",
+    {name:"島津義久", no:"1285", ch:"29章", cost:1.0, troop:"全防", sub:"", effect:"所領防御陣形でのみ最大兵数の武将と同兵数になる", reviewedOk:true,
       furigana:"しまづよしひさ", illustrator:"直良有祐",
       imageFull:"assets/img/characters/no1285_full.png", imageChar:"assets/img/characters/no1285_char.png",
       atkBase:1070, atkGrowth:48, defBase:1230, defGrowth:69, tacticsBase:680.0, tacticsGrowth:3.5, lv0Troops:2800,
       // カード画像照合済み(2026-07-30): 槍A/弓A/馬A/器SS(旧データはuma/kiの値が誤って入れ替わっていたため修正)
       rankGrades:{yari:'A', yumi:'A', uma:'A', ki:'SS'},
       initialSkill:"炎国覇弾",
-      skillDetail:"S/LV10 確率 100% 防御540%上昇/対象:全\n①防御540%上昇する\n②所領防御陣形に配置時のみ、この武将の最大指揮兵数は陣形内で最大指揮兵数の大きい武将と同兵数になる(模倣不可、TR1〜TR5は未確認)",
+      skillDetail:"S/LV10 確率 100% 防御540%上昇/対象:全\n模倣不可\n①防御540%上昇する\n②所領防御陣形に配置時のみ、この武将の最大指揮兵数は陣形内で最大指揮兵数の大きい武将と同兵数になる",
+      // ixagno.blog.fc2.com(blog-entry-10198)生HTML照合済み(2026-08-02): TR1〜TR5の実在を確認し追記(45do.info/ordinary/0308のTR5値1490%上昇とも一致)
       trTable:[
-        {level:"LV10", points:"-", effect:"全　確率 100% / 防御 540%上昇"}
+        {level:"LV10", points:"-", effect:"全　確率 100% / 防御 540%上昇"},
+        {level:"TR1", points:"10", effect:"全　確率 100% / 防御 620%上昇"},
+        {level:"TR2", points:"40", effect:"全　確率 100% / 防御 760%上昇"},
+        {level:"TR3", points:"90", effect:"全　確率 100% / 防御 950%上昇"},
+        {level:"TR4", points:"150", effect:"全　確率 100% / 防御 1200%上昇"},
+        {level:"TR5", points:"200", effect:"全　確率 100% / 防御 1490%上昇"}
       ],
       // 45do.info(ordinary/0308)生HTML + ixagno.blog.fc2.com(blog-entry-10198)生HTML の2ソースで完全一致を確認(2026-08-02)
       synthesisTable:[
