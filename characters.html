@@ -1241,10 +1241,14 @@
       rankGrades:{yari:'SS', yumi:'A', uma:'A', ki:'A'},
       initialSkill:"虎伐閃衝",
       skillDetail:"S/LV10 確率 36% 攻撃(敵軍総武将コスト×係数)%上昇/対象:槍・砲・器\n模倣不可\n①攻撃を敵軍総武将コスト×係数(LV10=2.1)%で上昇する",
-      // ixanary.com/45do.info共にLV10と最大鍛錬(TR5)の2値のみ公開、TR1〜TR4は未確認。TR5では確率も36%→57%に上昇する点に注意。
+      // ixanary.com生HTML照合(2026-08-02): スキルページ(/skills/虎伐閃衝/)にLV1・LV10・TR1〜TR5の全段階が公開されている。TR5では確率も36%→57%に上昇する点に注意。
       trTable:[
         {level:"LV10", points:"-", coefficient:"2.1", effect:"槍・砲・器　確率 36% / 攻撃 敵軍総武将コスト×2.1%=上昇"},
-        {level:"TR5", points:"最大鍛錬", coefficient:"3.2", effect:"槍・砲・器　確率 57% / 攻撃 敵軍総武将コスト×3.2%=上昇"}
+        {level:"TR1", points:"10", coefficient:"2.2", effect:"槍・砲・器　確率 38% / 攻撃 敵軍総武将コスト×2.2%=上昇"},
+        {level:"TR2", points:"40", coefficient:"2.3", effect:"槍・砲・器　確率 40% / 攻撃 敵軍総武将コスト×2.3%=上昇"},
+        {level:"TR3", points:"90", coefficient:"2.5", effect:"槍・砲・器　確率 44% / 攻撃 敵軍総武将コスト×2.5%=上昇"},
+        {level:"TR4", points:"150", coefficient:"2.8", effect:"槍・砲・器　確率 50% / 攻撃 敵軍総武将コスト×2.8%=上昇"},
+        {level:"TR5", points:"200", coefficient:"3.2", effect:"槍・砲・器　確率 57% / 攻撃 敵軍総武将コスト×3.2%=上昇"}
       ],
       // 45do.info(ordinary/0309)生HTML + ixagno.blog.fc2.com(blog-entry-10199)生HTML の2ソースで完全一致を確認(2026-08-02)。A/Bは自身の初期スキル(虎伐閃衝)がそのまま候補になる自己参照枠。
       synthesisTable:[
