@@ -1356,11 +1356,12 @@
       ]
     },
     {
-      // 45do.info生HTML確認(https://45do.info/ordinary/0073/): skiladd_wrapのランク表記(SSS)とspec_wrap内バッジ表記(SS)が不一致だったためskiladd_wrap(候補一覧表)側を採用
+      // 45do.info生HTML確認(https://45do.info/ordinary/0073/): skiladd_wrapのランク表記(SSS)とspec_wrap内バッジ表記(SS)が不一致だったためskiladd_wrap(候補一覧表)側を採用。ixanary.com(スキルページog:title)もSSSで一致(2026-08-02、伊達輝宗1260検証時に重複登録[旧rank:SS版]を発見しここへ統合)
       name:"猛火ノ追撃", rank:"SSS", baseRate:70, target:"全",
       effectSummary:"SSS/LV10 確率 70% 攻撃上昇/対象:全\n①部隊総コストに応じて攻撃効果が変化する(LV10基準45%上昇)",
       sourceCharacters:[
-        {name:"斎藤道三【覇】", no:"1202", slot:"A・B"}
+        {name:"斎藤道三【覇】", no:"1202", slot:"A・B"},
+        {name:"伊達輝宗", no:"1260", slot:"C"}
       ],
       ownHiddenCandidate: {skill:"猛火ノ追撃", rank:"SSS"},
       trTable:[
@@ -2397,18 +2398,6 @@
       ownHiddenCandidate: {skill:"天地黎明", rank:"SSS"},
       trTable:[
         {level:"LV10", points:"-", effect:"全　確率 70% / 防御 270%上昇(HP99以下で3倍)"}
-      ]
-    },
-    {
-      // 伊達輝宗(No.1260)synthesisTable候補C・45do.info生HTML照合済み(単一ソースのみ、TR1〜TR5未確認)
-      name:"猛火ノ追撃", rank:"SS", baseRate:70, target:"全",
-      effectSummary:"SS/LV10 確率 70% 全攻45%上昇/対象:全\n①全攻45%上昇する(部隊の総コストで効果が変化・TR1〜TR5は未確認)",
-      sourceCharacters:[
-        {name:"伊達輝宗", no:"1260", slot:"C"}
-      ],
-      ownHiddenCandidate: {skill:"猛火ノ追撃", rank:"SS"},
-      trTable:[
-        {level:"LV10", points:"-", effect:"全　確率 70% / 全攻 45%上昇(部隊の総コストで効果が変化)"}
       ]
     },
     {
