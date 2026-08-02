@@ -18,6 +18,12 @@
   .lm-table td.lm-col-effect{text-align:left;white-space:normal;min-width:260px;}
   .lm-note{color:var(--muted);font-size:12px;line-height:1.7;margin:0 0 14px;}
   .lm-subtitle{font-family:'Noto Serif JP',serif;font-size:16px;margin:0 0 8px;color:var(--vermillion-bright);border-bottom:1px dashed var(--line);padding-bottom:6px;}
+  .lm-search{margin-bottom:14px;}
+  .lm-search input{
+    width:100%;font-family:'Zen Kaku Gothic New',sans-serif;font-size:15px;padding:11px 14px;
+    background:#fff;border:1px solid var(--line);color:var(--paper);border-radius:5px;
+  }
+  .lm-search input:focus{outline:none;border-color:var(--gold);}
 
   @media (max-width:600px){
     .lm-table{font-size:12px;}
@@ -57,6 +63,10 @@
   <main class="site-main">
     <h1 class="page-title">部隊長模倣スキル一覧</h1>
     <p class="lm-note">所属部隊の部隊長が持つ模倣可能な初期スキルを、通常攻撃/防御効果を一定倍率に強化して模倣するスキルの一覧。自身が持つ初期スキルを模倣する「自模倣」とは対象が異なる(自模倣スキル一覧を参照)。</p>
+
+    <div class="lm-search">
+      <input type="text" id="lmSearchBox" placeholder="スキル名または武将名で検索(例: 幻像鏡花、伊達政宗 など)">
+    </div>
 
     <h2 class="lm-subtitle">卓越確率あり(卓越発動時のみ倍率上昇)</h2>
     <div class="lm-table-scroll">
@@ -212,8 +222,16 @@
       .replace(/卓越/g, function(m){ return '<span style="color:#7CB342;font-weight:700;">'+m+'</span>'; });
   }
 
-  function lmRenderList(list, elId){
+  function lmMatchesSearch(s, q){
+    if(!q) return true;
+    if(s.name.toLowerCase().includes(q)) return true;
+    return (s.sourceCharacters || []).some(function(c){ return c.name.toLowerCase().includes(q); });
+  }
+
+  function lmRenderList(fullList, elId){
     const el = document.getElementById(elId);
+    const q = document.getElementById('lmSearchBox').value.trim().toLowerCase();
+    const list = fullList.filter(function(s){ return lmMatchesSearch(s, q); });
     if(list.length === 0){
       el.innerHTML = '<tr><td colspan="6" style="text-align:center;color:var(--muted);">該当するスキルが見つかりません</td></tr>';
       return;
@@ -230,8 +248,14 @@
     }).join('');
   }
 
-  lmRenderList(leaderMimicSkills, 'lmList');
-  lmRenderList(leaderMimicNoTakuetsuSkills, 'lmNoList');
+  function lmRenderAll(){
+    lmRenderList(leaderMimicSkills, 'lmList');
+    lmRenderList(leaderMimicNoTakuetsuSkills, 'lmNoList');
+  }
+
+  document.getElementById('lmSearchBox').addEventListener('input', lmRenderAll);
+
+  lmRenderAll();
 </script>
   </div>
 </div>
