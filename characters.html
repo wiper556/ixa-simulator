@@ -510,7 +510,22 @@
         {slot:"C", skill:"虎賁統帥", rank:"SS", afterSkill:"虎賁統帥", afterRank:"SS", rate:"100%", target:"全 撤退 覇道", effectShort:"攻撃1130%上昇+速度200%上昇"},
         {slot:"S1", skill:"飛将ノ武略", rank:"S", afterSkill:"飛将ノ武略", afterRank:"S", rate:"100%", target:"槍・馬・器・騎", effectShort:"速度200%上昇(攻撃は速度÷32×100%、参考値1%)"},
         {slot:"S2", skill:"照闇騎行", rank:"SS", afterSkill:"照闇騎行", afterRank:"SS", rate:"100%", target:"全", effectShort:"攻撃540%上昇+速度250%上昇"}
-      ]},
+      ],
+      // No.1307専用の早見表(ユーザー指定)。攻撃%上昇=部隊移動速度÷除数×100%(除数はskillDetail/trTableと同じ値)。
+      // 汎用化はせず、この武将のオブジェクトにのみ持たせるハードコード値(gdbRenderDetail側でg.speedAtkLookupTableが
+      // あるときだけ描画する)。値はいずれも speed/divisor*100 を小数点第2位で四捨五入し小数点第1位まで表示。
+      speedAtkLookupTable:{
+        speeds:[500,600,700,800,900,1000,1100],
+        rows:[
+          {level:"LV10", divisor:32, values:[1562.5,1875.0,2187.5,2500.0,2812.5,3125.0,3437.5]},
+          {level:"TR1",  divisor:31, values:[1612.9,1935.5,2258.1,2580.6,2903.2,3225.8,3548.4]},
+          {level:"TR2",  divisor:30, values:[1666.7,2000.0,2333.3,2666.7,3000.0,3333.3,3666.7]},
+          {level:"TR3",  divisor:28, values:[1785.7,2142.9,2500.0,2857.1,3214.3,3571.4,3928.6]},
+          {level:"TR4",  divisor:26, values:[1923.1,2307.7,2692.3,3076.9,3461.5,3846.2,4230.8]},
+          {level:"TR5",  divisor:24, values:[2083.3,2500.0,2916.7,3333.3,3750.0,4166.7,4583.3]},
+          {level:"TR6",  divisor:22, values:[2272.7,2727.3,3181.8,3636.4,4090.9,4545.5,5000.0]}
+        ]
+      }},
     {name:"小西行長(2)", no:"1308", ch:"31章", cost:5.0, troop:"全防", sub:"", effect:"所有者より全体格付「戦果」が上位の城主が敵軍にいた場合防御効果3倍",
       furigana:"こにしゆきなが", illustrator:"直良有祐",
       imageFull:"assets/img/characters/no1308_full.png", imageChar:"assets/img/characters/no1308_char.png",
@@ -2928,6 +2943,21 @@
           }).join('')
         + '</tbody></table></div>'
         + (g.synthesisNote ? '<p class="gdb-detail-meta" style="margin-top:6px;">'+gdbEscapeHtml(g.synthesisNote)+'</p>' : '')
+        + '</div>'
+      ) : '')
+      + (g.speedAtkLookupTable ? (
+        // No.1307(立花宗茂(5))専用の早見表。他の武将には影響しない(g.speedAtkLookupTableを持つ武将のみ描画)。
+        '<div class="gdb-detail-block"><h2>鍛錬レベル×部隊移動速度 攻撃%上昇早見表</h2>'
+        + '<div class="gdb-table-scroll"><table class="gdb-stat-table"><thead><tr><th>スキルLv</th>'
+        + g.speedAtkLookupTable.speeds.map(function(s){ return '<th>速度'+s+'</th>'; }).join('')
+        + '</tr></thead><tbody>'
+        + g.speedAtkLookupTable.rows.map(function(row){
+            return '<tr><td>'+gdbEscapeHtml(row.level)+'</td>'
+              + row.values.map(function(v){ return '<td>'+v.toFixed(1)+'%</td>'; }).join('')
+              + '</tr>';
+          }).join('')
+        + '</tbody></table></div>'
+        + '<p class="gdb-detail-meta" style="margin-top:6px;">攻撃%上昇=部隊移動速度÷除数×100%(除数はLV10=32／TR1=31／TR2=30／TR3=28／TR4=26／TR5=24／TR6=22)</p>'
         + '</div>'
       ) : '')
       + (g.illustrator ? '<p class="gdb-illust-credit">Illust. '+gdbEscapeHtml(g.illustrator)+'</p>' : '');
