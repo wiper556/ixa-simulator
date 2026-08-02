@@ -3391,6 +3391,11 @@
             cell.val = String(newVal);
             const valInput = $(cellId(fxKey, col, 'val'));
             if(valInput) valInput.value = fmtPct(newVal);
+            // 飛将ノ武略のような速度依存の計算式内訳(speedFormulaNote)が既に設定されている場合、
+            // 無尽マスター倍率適用後の最終値と食い違わないよう、倍率分を追記して更新する。
+            if(cell.speedFormulaNote){
+              cell.speedFormulaNote += ` ×無尽マスター倍率${master.multiplier}=${fmtPct(newVal)}%`;
+            }
           }
           if(cell && cell.valMax !== undefined && cell.valMax !== ''){
             cell.valMax = String(Math.round(parseFloat(cell.valMax) * master.multiplier * 100) / 100);
@@ -3591,6 +3596,12 @@
           cell.valMax = String(newEffect); // このスキルは卓越を持たないため期待値=最大値
           const valInput = $(cellId(fxKey, col, 'val'));
           if(valInput) valInput.value = fmtPct(newEffect);
+          // 01スキル効果テーブルの内訳欄(valmax_、通常は卓越の期待値/最大値差分表示に使う枠)に、
+          // このスキル特有の「部隊移動速度÷除数×100%=上昇%」という計算式をそのまま表示する
+          // (ユーザー指摘: 数値だけでは根拠が分かりにくいため、他スキルには無い専用の内訳表示を追加)。
+          const squadSpeedDisp = Math.round(squadSpeed * 100) / 100;
+          const ultimateSuffix = ultimateMult !== 1 ? `×${ultimateMult}(極限枠補正)` : '';
+          cell.speedFormulaNote = `部隊移動速度${squadSpeedDisp}÷${divisor}×100%${ultimateSuffix}=${fmtPct(newEffect)}%上昇`;
         });
       });
       updateSkillEffectTotal(col);
@@ -5589,6 +5600,12 @@
     const cell = sheetData[col] && sheetData[col][fxKey];
     if(!cell || cell.val === undefined || cell.val === ''){
       el.textContent = '';
+      return;
+    }
+    // 飛将ノ武略のような部隊移動速度依存スキル(applySpeedDependentAttackSkillsがspeedFormulaNoteを設定)は、
+    // 通常の期待値/最大値差分表示より優先して計算式の内訳をそのまま表示する。
+    if(cell.speedFormulaNote){
+      el.textContent = cell.speedFormulaNote;
       return;
     }
     const val = parseFloat(cell.val);
