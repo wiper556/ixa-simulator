@@ -443,14 +443,14 @@
       trTable:[
         {level:"LV10", points:"-", effect:"追加スキル　確率 100% / 速度効果 2倍"}
       ],
-      // 45do.info確認(生HTML skiladd_wrap照合済み): 自己スキル(炎牛武陣)は候補に含まれず。S1/S2の不滅ノ鬼神は「裏は速度スキル」との注記があり移植後合成候補が朧雲ノ閃撃(SSS)に変化
+      // 45do.info+ixagno.blog.fc2.com(blog-entry-9637)確認済み: 自己スキル(炎牛武陣)は候補に含まれず。Aの湖裂騎刃は移植後「不滅ノ鬼神」[S]に、B/Cの騎聖は移植後「神光征軍」[SS]に、S1/S2の不滅ノ鬼神は移植後「朧雲ノ閃撃」[SSS]に変化
       synthesisTable:[
-        {slot:"A", skill:"湖裂騎刃", rank:"A", afterSkill:"湖裂騎刃", afterRank:"A", target:"弓・馬・器・騎", rate:"+100%", effectShort:"攻撃150%上昇+速度40%上昇+帰還時間短縮(3分・模倣不可)"},
-        {slot:"B", skill:"騎聖", rank:"A", afterSkill:"騎聖", afterRank:"A", target:"全", rate:"+100%", effectShort:"攻撃80%上昇+速度50%上昇(武将コストで変動)"},
-        {slot:"C", skill:"騎聖", rank:"A", afterSkill:"騎聖", afterRank:"A", target:"全", rate:"+100%", effectShort:"攻撃80%上昇+速度50%上昇(武将コストで変動)"},
+        {slot:"A", skill:"湖裂騎刃", rank:"A", afterSkill:"不滅ノ鬼神", afterRank:"S", target:"弓・馬・器・騎", rate:"+100%", effectShort:"攻撃150%上昇+速度40%上昇+帰還時間短縮(3分・模倣不可)"},
+        {slot:"B", skill:"騎聖", rank:"A", afterSkill:"神光征軍", afterRank:"SS", target:"全", rate:"+100%", effectShort:"攻撃80%上昇+速度50%上昇(武将コストで変動)"},
+        {slot:"C", skill:"騎聖", rank:"A", afterSkill:"神光征軍", afterRank:"SS", target:"全", rate:"+100%", effectShort:"攻撃80%上昇+速度50%上昇(武将コストで変動)"},
         {slot:"S1", skill:"不滅ノ鬼神", rank:"S", afterSkill:"朧雲ノ閃撃", afterRank:"SSS", target:"全", rate:"70%/100%", effectShort:"攻撃100%上昇(確率70%)+速度70%上昇(確率100%)"},
         {slot:"S2", skill:"不滅ノ鬼神", rank:"S", afterSkill:"朧雲ノ閃撃", afterRank:"SSS", target:"全", rate:"70%/100%", effectShort:"攻撃100%上昇(確率70%)+速度70%上昇(確率100%)"}
-      ]},
+      ], reviewedOk:true},
     {name:"三好義賢", no:"2368", ch:"未確認", cost:4, troop:"-", sub:"", effect:"追加スキルの攻撃効果2倍(模倣不可)",
       furigana:"みよしよしかた", illustrator:"BISAI",
       imageFull:"assets/img/characters/no2368_full.png", imageChar:"assets/img/characters/no2368_char.png",
@@ -461,14 +461,15 @@
       trTable:[
         {level:"LV10", points:"-", effect:"追加スキル　確率 100% / 攻撃効果 2倍"}
       ],
-      // 45do.info確認(生HTML skiladd_wrap照合済み): 自己スキル(悌王ノ指揮)は候補に含まれず
+      // 45do.info+ixagno.blog.fc2.com(blog-entry-9695)確認済み: 自己スキル(悌王ノ指揮)は候補に含まれず。Aの鬼神ノ戦域は移植後「戦陣 神楽」に、Bの遁世影武者は移植後「風林火山」[S]に、
+      // Cの戦陣神楽は移植後、卓越スキル「遠呂智ノ閃光」[SS]に、S1の入来神舞は移植後「飛蝶野分」に変化(S2の戦陣吟詠は自己参照)
       synthesisTable:[
-        {slot:"A", skill:"鬼神ノ戦域", rank:"A", afterSkill:"鬼神ノ戦域", afterRank:"A", target:"槍・馬・騎 飛翔4 卓越", rate:"+55%", effectShort:"攻撃84%上昇(卓越:追加確率40%で1.5倍)"},
-        {slot:"B", skill:"遁世影武者", rank:"B", afterSkill:"遁世影武者", afterRank:"B", target:"部隊長", rate:"+50%", effectShort:"部隊長の初期スキルを模倣(戦闘スキルのみ)"},
-        {slot:"C", skill:"戦陣 神楽", rank:"A", afterSkill:"戦陣 神楽", afterRank:"A", target:"全 飛翔4 卓越", rate:"+100%", effectShort:"攻撃77%上昇(卓越:追加確率30%で2倍)"},
-        {slot:"S1", skill:"入来神舞", rank:"S", afterSkill:"入来神舞", afterRank:"S", target:"部隊長", rate:"+55%", effectShort:"部隊長の初期スキルを1.1倍に強化して模倣"},
+        {slot:"A", skill:"鬼神ノ戦域", rank:"A", afterSkill:"戦陣 神楽", afterRank:"A", target:"槍・馬・騎 飛翔4 卓越", rate:"+55%", effectShort:"攻撃84%上昇(卓越:追加確率40%で1.5倍)"},
+        {slot:"B", skill:"遁世影武者", rank:"B", afterSkill:"風林火山", afterRank:"S", target:"部隊長", rate:"+50%", effectShort:"部隊長の初期スキルを模倣(戦闘スキルのみ)"},
+        {slot:"C", skill:"戦陣 神楽", rank:"A", afterSkill:"遠呂智ノ閃光", afterRank:"SS", target:"全 飛翔4 卓越", rate:"+100%", effectShort:"攻撃77%上昇(卓越:追加確率30%で2倍)"},
+        {slot:"S1", skill:"入来神舞", rank:"S", afterSkill:"飛蝶野分", afterRank:"B", target:"部隊長", rate:"+55%", effectShort:"部隊長の初期スキルを1.1倍に強化して模倣"},
         {slot:"S2", skill:"戦陣 吟詠", rank:"A", afterSkill:"戦陣 吟詠", afterRank:"A", target:"全 卓越", rate:"+100%", effectShort:"攻撃340%上昇+防御340%上昇+部隊内卓越追加確率+20%(模倣不可・特殊効果は自部隊内では重複不可)"}
-      ]},
+      ], reviewedOk:true},
     {name:"北条綱成", no:"2374", ch:"未確認", cost:4.5, troop:"槍馬器騎攻防", sub:"", effect:"攻防上昇+部隊内スキルの卓越確率+50%(模倣不可)",
       furigana:"ほうじょうつなしげ", illustrator:"鹿角",
       imageFull:"assets/img/characters/no2374_full.png", imageChar:"assets/img/characters/no2374_char.png",
