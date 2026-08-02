@@ -1311,19 +1311,20 @@
       activationType: 'triggered', // ②: 攻撃したときに発動するタイプ
       targetTroopCategories: ['槍兵科','騎馬兵科','兵器兵科(器兵科)'], // 対象:槍/馬/器(+「騎」表記もあるが騎馬兵科と重複のため区別せず登録)
       baseRate: 100, // 確率+100%
-      trTable: { base:1, TR1:1, TR2:1, TR3:1, TR4:1, TR5:1, TR6:1 }, // 攻撃%上昇は全段階共通で1%固定(実際は部隊移動速度依存だが簡略化した参考値)
+      trTable: { base:1, TR1:1, TR2:1, TR3:1, TR4:1, TR5:1, TR6:1 }, // フォールバック値(通常はspeedDivisorTable経由の自動計算で上書きされるため未使用。兵士未選択等で部隊移動速度が算出できない場合のみ参考値として残す)
       speedTrTable: { base:200, TR1:210, TR2:220, TR3:230, TR4:240, TR5:250, TR6:270 }, // 速度%上昇(自動反映対応)
       // 攻撃%上昇=部隊移動速度÷除数×100%、という「部隊移動速度に依存する」特殊タイプ。
-      // 除数はLV10=32、TR6=22(ixanary.comで確認)。この武将は鍛錬段階がTR6まである。
-      // 部隊移動速度自体がこのスキル自身の速度%上昇を含めて決まる循環参照になるため、計算エンジンは未実装(参考データのみ)。
-      speedDivisorTable: { base:32, TR6:22 },
+      // 除数はixanary.comで確認(2026年8月): LV1=95、LV10=32、TR1=31、TR2=30、TR3=28、TR4=26、TR5=24、TR6=22。この武将は鍛錬段階がTR6まである。
+      // 部隊移動速度は速度%上昇の合計のみから決まり攻撃%を参照しないため、「速度→攻撃」の一方向の依存関係であり循環参照ではない。
+      // applySpeedDependentAttackSkills(attack-simulator.htmlのJS)で自動計算に対応済み(2026年8月)。
+      speedDivisorTable: { base:32, TR1:31, TR2:30, TR3:28, TR4:26, TR5:24, TR6:22 },
       trRequiredPoints: { TR1:10, TR2:40, TR3:90, TR4:150, TR5:200, TR6:200 }, // TR6の必要ポイントは今回未確認のため暫定(要検証)
-      note: 'S(立花宗茂(4)・No.1307・Cost4の初期スキル。ixanary.comで確認、2026年7月時点)。確率+100%/対象:槍/馬/器/騎。' +
+      note: 'S(立花宗茂(5)・No.1307・Cost4の初期スキル。ixanary.comで確認)。確率+100%/対象:槍/馬/器/騎。' +
             '速度%上昇(自動反映対応): LV10(鍛錬前)=200% ／ TR1=210% ／ TR2=220% ／ TR3=230% ／ TR4=240% ／ TR5=250% ／ TR6(最大鍛錬段階)=270%。' +
             'この武将は鍛錬段階がTR6まである(通常はTR5までのため要注意)。' +
-            '攻撃%上昇は全段階共通で1%(実際は部隊移動速度÷除数×100%、LV10は÷32・TR6は÷22)という、部隊移動速度に依存する特殊効果を持つが、' +
-            '部隊移動速度自体がこのスキル自身の速度%上昇を含めて算出される循環参照になるため、計算エンジンは未実装(参考値の1%のみ自動反映)。' +
-            '【2026年7月修正】以前はbase・TR6のみ登録されており、TR1〜TR5が未登録だったため追加した。'
+            '攻撃%上昇=部隊移動速度÷除数×100%(LV10=÷32・TR1=÷31・TR2=÷30・TR3=÷28・TR4=÷26・TR5=÷24・TR6=÷22)という、部隊移動速度に依存する特殊効果を持つ。' +
+            '【2026年8月対応】以前は循環参照と誤認し参考値1%のみの反映だったが、部隊移動速度は速度%上昇の合計のみで決まり攻撃%を参照しないため循環参照ではないと判明し、' +
+            'applySpeedDependentAttackSkillsによる自動計算に対応した(部隊内の速度%上昇スキルが全て反映された後の最終的な部隊移動速度を使って攻撃%を算出)。'
     },
     '虚実法容': {
       activationType: 'triggered', // ②: 攻撃したときに発動するタイプ
@@ -3534,6 +3535,10 @@
     }
     applyAdditionalSkillMultiplierEffects();
     applyMimicrySkills();
+    // 部隊移動速度に依存する攻撃%上昇スキル(飛将ノ武略等)は、速度%上昇が出揃った後でないと
+    // 部隊移動速度が確定しないため、模倣処理まで終わった後にここで再計算する(applyMujinMasterEffectsより前に
+    // 実行することで、無尽マスターによる無効化・倍率適用は再計算後の値に対して正しく反映される)。
+    applySpeedDependentAttackSkills();
     applyMujinMasterEffects();
     updateAllEffectiveRates();
     renderSquadSpeed();
@@ -3541,6 +3546,46 @@
       renderSquadSkillAtkTotal();
       renderFinalAttackPower();
     saveSheet();
+  }
+
+  // ============ 部隊移動速度に依存する攻撃%上昇スキル(飛将ノ武略等) ============
+  // 「攻撃が部隊移動速度÷除数×100%上昇する」という効果を持つスキル(speedDivisorTableを持つスキル)を対象に、
+  // 部隊移動速度が確定した後の値を使って攻撃%上昇を再計算する。
+  // 部隊移動速度(computeSquadSpeedValue)は速度%上昇の合計のみから決まり、攻撃%上昇を一切参照しないため、
+  // 「速度→攻撃」の一方向の依存関係であり循環参照ではない(このスキル自身の速度%上昇分も、
+  // 通常のスキル効果適用パスで既にsheetData[col][fxKey].speedに書き込まれた後にこの関数を呼ぶため、
+  // 部隊移動速度の合計に正しく含まれる)。
+  function applySpeedDependentAttackSkills(){
+    const skillFieldToFx = { skillInit:'fx1', skillAdd1:'fx2', skillAdd2:'fx3', skillUltimate:'fx4' };
+    const { squadSpeed } = computeSquadSpeedValue();
+    for(let col=0; col<4; col++){
+      Object.keys(skillFieldToFx).forEach(fieldKey=>{
+        const text = (sheetData[col] && sheetData[col][fieldKey]) || '';
+        if(!text) return;
+        Object.keys(specialSkills).forEach(skName=>{
+          if(!text.includes(skName)) return;
+          const sk = specialSkills[skName];
+          if(!sk.speedDivisorTable) return;
+          const fxKey = skillFieldToFx[fieldKey];
+          const cell = sheetData[col][fxKey];
+          if(!cell || cell.val === undefined || cell.val === '') return;
+          // 対象兵科が一致しない場合は既に0クリア済みのため、そのままにする(誤って0以外に上書きしない)
+          if(!matchesTroopTarget(col, sk)){ return; }
+          const trMatch = text.match(/TR(\d)/i);
+          const tier = (trMatch && sk.speedDivisorTable['TR'+trMatch[1]] !== undefined) ? 'TR'+trMatch[1] : 'base';
+          const divisor = sk.speedDivisorTable[tier];
+          if(!divisor) return;
+          // 攻撃%上昇部分は、他のtrTable由来スキルと同様、極限スキル枠に置いた場合のみ1.2倍補正の対象(速度%上昇自体は対象外)
+          const ultimateMult = (fieldKey === 'skillUltimate') ? 1.2 : 1;
+          const newEffect = Math.round((squadSpeed / divisor) * 100 * ultimateMult * 100) / 100;
+          cell.val = String(newEffect);
+          cell.valMax = String(newEffect); // このスキルは卓越を持たないため期待値=最大値
+          const valInput = $(cellId(fxKey, col, 'val'));
+          if(valInput) valInput.value = fmtPct(newEffect);
+        });
+      });
+      updateSkillEffectTotal(col);
+    }
   }
 
   // 部隊内(4人×4スキル枠=16枠)のどこかに「覇道」タグ付きスキル(specialSkillsでhasHado:trueのもの)が
@@ -4474,7 +4519,7 @@
       note:'ixanary.com(戦国IXAカードデータベースサイト)で確認・修正(2026年7月時点): 旧一括登録では攻撃成長値52・防御成長値72だったが、実際は攻撃72・防御52で入れ替わっていたバグを修正。カード画像照合済み(2026年7月): 槍S/弓A/馬S/器A(rankGradesのyari/uma・yumi/ki入れ替わりも修正)。' +
            '天限突破(690pt)での実測値(攻撃50930・防御36990)と、修正後の計算式(1250+72×690=50930、1110+52×690=36990)が一致することを確認済み。' +
            '指揮兵士数は実測テーブル(限界突破5300・極限突破6300・天限突破7100)を採用(汎用計算式より正確)。' +
-           '固有スキル「飛将ノ武略」は部隊移動速度依存の特殊スキル(specialSkills参照、速度%上昇のみ自動反映・攻撃%上昇部分は参考データ)。' +
+           '固有スキル「飛将ノ武略」は部隊移動速度依存の特殊スキル(specialSkills参照、速度%上昇・攻撃%上昇部分とも自動反映対応・2026年8月)。' +
            '2026年7月再確認: 攻撃1250/防御1110/兵法660は現行データと一致。名称表記を generals配列(No.1307)の「立花宗茂(5)」に統一(旧表記「立花宗茂(4)」は照合失敗の原因だったため修正)。' },
     { name:'南光坊天海', no:'10063', initialSkill:'虚実法容', lv0Troops:5110, atkBase:1070, atkGrowth:44, defBase:1250, defGrowth:71, tacticsBase:710, tacticsGrowth:4.0,
       rankGrades:{yari:'A',yumi:'A',uma:'A',ki:'SS'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り',
@@ -5741,7 +5786,9 @@
   // ============ 部隊移動速度 ============
   // 部隊移動速度 = (1 + 16個のスキル(4武将×4スキル枠)の「速度%」の総和÷100) × 兵士移動速度
   // 兵士移動速度は、部隊内で兵士を選択している列のうち最も遅い(最小)ものを暫定的に採用(今後条件を追加予定)。
-  function renderSquadSpeed(){
+  // 「飛将ノ武略」のような部隊移動速度依存スキル(applySpeedDependentAttackSkills)からも参照するため、
+  // 計算部分だけをrenderSquadSpeedから切り出した(表示更新は行わず、値だけを返す)。
+  function computeSquadSpeedValue(){
     let speedSum = 0;
     for(let col=0; col<4; col++){
       ['fx1','fx2','fx3','fx4'].forEach(key=>{
@@ -5759,6 +5806,11 @@
     }
     const soldierSpeed = minSoldierSpeed || 0;
     const squadSpeed = (1 + speedSum / 100) * soldierSpeed;
+    return { squadSpeed, speedSum, soldierSpeed };
+  }
+
+  function renderSquadSpeed(){
+    const { squadSpeed, speedSum, soldierSpeed } = computeSquadSpeedValue();
     const valueEl = $('squadSpeedValue');
     const formulaEl = $('squadSpeedFormula');
     if(valueEl) valueEl.textContent = Math.round(squadSpeed * 100) / 100;
