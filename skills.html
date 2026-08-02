@@ -229,7 +229,8 @@
         {name:"相馬義胤(2)", no:"1264", slot:"S1"},
         {name:"徳川家康(覇5)", no:"1263", slot:"S1"},
         // 竹中半兵衛【覇】(1275)のsynthesisTable B枠(A-3-11逆引き確認、2026-08-02)
-        {name:"竹中半兵衛【覇】", no:"1275", slot:"B"}
+        {name:"竹中半兵衛【覇】", no:"1275", slot:"B"},
+        {name:"加藤清正", no:"1284", slot:"S1"}
       ],
       ownHiddenCandidate: {skill:"万物神勇", rank:"SSS"},
       trTable:[
@@ -326,7 +327,8 @@
         {name:"豊臣秀吉【覇(5)】", no:"1287", slot:"B"},
         {name:"豊臣秀吉【覇】", no:"1274", slot:"S1"},
         // 小早川隆景(1280)のsynthesisTable S1枠(A-3-11逆引き確認、2026-08-02)
-        {name:"小早川隆景", no:"1280", slot:"S1"}
+        {name:"小早川隆景", no:"1280", slot:"S1"},
+        {name:"鍋島直茂", no:"1283", slot:"S1"}
       ],
       ownHiddenCandidate: {skill:"従魔絶神", rank:"SSS"},
       trTable:[
@@ -394,7 +396,8 @@
         // 羽柴秀長(1278)のsynthesisTable C枠(A-3-11逆引き確認、2026-08-02)
         {name:"羽柴秀長", no:"1278", slot:"C"},
         // 宇喜多秀家(1281)のsynthesisTable S1枠(A-3-11逆引き確認、2026-08-02)
-        {name:"宇喜多秀家", no:"1281", slot:"S1"}
+        {name:"宇喜多秀家", no:"1281", slot:"S1"},
+        {name:"鍋島直茂", no:"1283", slot:"C"}
       ],
       // 部隊内スコープの人数依存効果は1部隊の最大編成人数(4人)を基準に最大値を計算する(2026-07-31確定)
       ownHiddenCandidate: {skill:"國才連豪", rank:"SS"},
@@ -521,7 +524,7 @@
       ],
       ownHiddenCandidate: {skill:"龍驤虎躍", rank:"SS"},
       trTable:[
-        {level:"LV10", points:"-", effect:"全　確率 60% / 攻撃 810%上昇+防御810%上昇(コスト-1、TR別データは未確認)"}
+        {level:"LV10", points:"-", effect:"全　確率 60% / 攻撃 810%上昇+防御810%上昇(コスト-1)"}
       ]
     },
     {
@@ -540,7 +543,19 @@
       ],
       ownHiddenCandidate: {skill:"破軍騎行", rank:"SS"},
       trTable:[
-        {level:"LV10", points:"-", effect:"全 不屈2　確率 100% / 攻撃 750%上昇(TR別データは未確認)"}
+        {level:"LV10", points:"-", effect:"全 不屈2　確率 100% / 攻撃 750%上昇"}
+      ]
+    },
+    {
+      // 北条氏康(覇3)(No.1239)自身の初期スキル(移植不可)
+      name:"獅子ノ炯眼", rank:"SSS", baseRate:60, target:"全", noMimic:true,
+      effectSummary:"SSS/LV10 確率 60% 攻撃720%上昇/対象:全\n模倣不可\n①攻撃720%上昇する\n②防御720%上昇する\n③この武将を除く所属部隊の武将の最大指揮兵数に3000を加算する(部隊内重複不可)",
+      sourceCharacters:[
+        {name:"北条氏康(覇3)", no:"1239", slot:"移植不可"}
+      ],
+      ownHiddenCandidate: {skill:"獅子ノ炯眼", rank:"SSS"},
+      trTable:[
+        {level:"LV10", points:"-", effect:"全　確率 60% / 攻撃720%上昇+防御720%上昇(他武将の最大指揮兵数+3000)"}
       ]
     },
     {
@@ -1001,7 +1016,8 @@
         {name:"立花宗茂(2)", no:"1231", slot:"B"},
         {name:"直江兼続(3)", no:"1228", slot:"S2"},
         {name:"堀秀政", no:"1224", slot:"S1"},
-        {name:"前田慶次", no:"1222", slot:"S1"}
+        {name:"前田慶次", no:"1222", slot:"S1"},
+        {name:"加藤清正", no:"1284", slot:"S2"}
       ],
       ownHiddenCandidate: {skill:"開闢ノ逆鉾", rank:"SS"},
       trTable:[
@@ -1214,7 +1230,9 @@
         {name:"立花道雪", no:"1247", slot:"S1"},
         {name:"黒田官兵衛【覇】", no:"1214", slot:"S2(同カード2枚合成時のみ、建御雷神ノ閃光の裏として出現)"},
         // 荒木村重(1279)のsynthesisTable C枠(A-3-11逆引き確認、2026-08-02)
-        {name:"荒木村重", no:"1279", slot:"C"}
+        {name:"荒木村重", no:"1279", slot:"C"},
+        {name:"伊達政宗(覇3)", no:"1226", slot:"S2(同カード2枚合成時のみ、建御雷神ノ閃光の裏として出現)"},
+        {name:"島津家久", no:"1261", slot:"C"}
       ],
       ownHiddenCandidate: {skill:"八幡神ノ威光", rank:"SSS"},
       trTable:[
@@ -1468,7 +1486,7 @@
       ],
       ownHiddenCandidate: {skill:"氷神懸龍", rank:"S"},
       trTable:[
-        {level:"LV10", points:"-", effect:"槍・砲・器 飛翔4　確率 100% / 攻撃 88%上昇(4部隊以下で2倍、TR別データは未確認)"}
+        {level:"LV10", points:"-", effect:"槍・砲・器 飛翔4　確率 100% / 攻撃 88%上昇(4部隊以下で2倍)"}
       ]
     },
     {
@@ -1509,8 +1527,8 @@
       ]
     },
     {
-      name:"破軍星 皇", rank:"SS", baseRate:69, target:"全",
-      effectSummary:"SS/LV10 確率 69% 攻撃140%上昇/対象:全\n①攻撃140%上昇する\n②自部隊同時攻撃時、部隊総コストからこの武将分のコストを最大0.5まで除外する(模倣不可)",
+      name:"破軍星 皇", rank:"SS", baseRate:69, target:"全", noMimic:true,
+      effectSummary:"SS/LV10 確率 69% 攻撃140%上昇/対象:全\n模倣不可\n①攻撃140%上昇する\n②自部隊同時攻撃時、部隊総コストからこの武将分のコストを最大0.5まで除外する",
       sourceCharacters:[
         {name:"真田昌幸(1218)", no:"1218", slot:"A"},
         {name:"長尾景虎(1206)", no:"1206", slot:"S2"}
@@ -1528,7 +1546,7 @@
       ],
       ownHiddenCandidate: {skill:"無鹿ノ幻律", rank:"S"},
       trTable:[
-        {level:"LV10", points:"-", effect:"全　確率 70% / 防御 80%上昇(90分毎に1.5倍、上限4回、TR別データは未確認)"}
+        {level:"LV10", points:"-", effect:"全　確率 70% / 防御 80%上昇(90分毎に1.5倍、上限4回)"}
       ]
     },
     {
@@ -1580,7 +1598,7 @@
       ],
       ownHiddenCandidate: {skill:"建御雷神ノ槌", rank:"SS"},
       trTable:[
-        {level:"LV10", points:"-", effect:"全　確率 100% / 攻撃135%上昇+防御135%上昇(卓越確率+30%、TR別データは未確認)"}
+        {level:"LV10", points:"-", effect:"全　確率 100% / 攻撃135%上昇+防御135%上昇(卓越確率+30%)"}
       ]
     },
     {
@@ -1607,7 +1625,7 @@
     {
       // 1214(黒田官兵衛)のS2枠のみ、同一カード2枚合成時に「建御雷神ノ閃光の裏は模倣スキル」として八幡神ノ威光(SSS)に変化する(45do.info生HTML確認)
       name:"建御雷神ノ閃光", rank:"SS", baseRate:100, target:"全 飛翔5", noMimic:true,
-      effectSummary:"SS/LV10 確率 100% 攻撃210%上昇/対象:全　飛翔5\n①攻撃210%上昇する\n②防御210%上昇する\n③このスキルを所持する武将の全スキルの卓越確率に35%を加算する(模倣不可)",
+      effectSummary:"SS/LV10 確率 100% 攻撃210%上昇/対象:全　飛翔5\n模倣不可\n①攻撃210%上昇する\n②防御210%上昇する\n③このスキルを所持する武将の全スキルの卓越確率に35%を加算する",
       categoryLinks:[
         {href:"skills-hishou-atk.html", label:"飛翔スキル一覧(攻撃)を見る"},
         {href:"skills-hishou-def.html", label:"飛翔スキル一覧(防御)を見る"}
@@ -1624,7 +1642,7 @@
       ],
       ownHiddenCandidate: {skill:"建御雷神ノ閃光", rank:"SS"},
       trTable:[
-        {level:"LV10", points:"-", effect:"全 飛翔5　確率 100% / 攻撃210%上昇+防御210%上昇(卓越確率+35%、TR別データは未確認)"}
+        {level:"LV10", points:"-", effect:"全 飛翔5　確率 100% / 攻撃210%上昇+防御210%上昇(卓越確率+35%)"}
       ]
     },
     {
@@ -1638,7 +1656,7 @@
       ],
       ownHiddenCandidate: {skill:"天啓ノ神撃", rank:"SS"},
       trTable:[
-        {level:"LV10", points:"-", effect:"全　確率 45% / 攻撃 180%上昇(追加ダメージ5、TR別データは未確認)"}
+        {level:"LV10", points:"-", effect:"全　確率 45% / 攻撃 180%上昇(追加ダメージ5)"}
       ]
     },
     {
@@ -1652,7 +1670,7 @@
       ],
       ownHiddenCandidate: {skill:"国堅大神", rank:"SS"},
       trTable:[
-        {level:"LV10", points:"-", effect:"全　確率 60% / 攻撃170%上昇+防御170%上昇(コスト-1、TR別データは未確認)"}
+        {level:"LV10", points:"-", effect:"全　確率 60% / 攻撃170%上昇+防御170%上昇(コスト-1)"}
       ]
     },
     {
@@ -1677,7 +1695,7 @@
       ],
       ownHiddenCandidate: {skill:"天之尾羽張", rank:"SS"},
       trTable:[
-        {level:"LV10", points:"-", effect:"全　確率 100% / 攻撃 170%上昇+速度150%上昇(TR別データは未確認)"}
+        {level:"LV10", points:"-", effect:"全　確率 100% / 攻撃 170%上昇+速度150%上昇"}
       ]
     },
     {
@@ -1722,7 +1740,7 @@
       ],
       ownHiddenCandidate: {skill:"海神ノ浮船", rank:"SS"},
       trTable:[
-        {level:"LV10", points:"-", coefficient:"3.5", effect:"全 飛翔4　確率 48% / 防御 3.5%×防御参加武将数(280人)=980.0%(TR別データは未確認)"}
+        {level:"LV10", points:"-", coefficient:"3.5", effect:"全 飛翔4　確率 48% / 防御 3.5%×防御参加武将数(280人)=980.0%"}
       ]
     },
     {
@@ -1737,7 +1755,7 @@
       ],
       ownHiddenCandidate: {skill:"天衣無縫神戒", rank:"SS"},
       trTable:[
-        {level:"LV10", points:"-", effect:"全　確率 50% / 防御 30.02%上昇(部隊総コストで変動、TR別データは未確認)"}
+        {level:"LV10", points:"-", effect:"全　確率 50% / 防御 30.02%上昇(部隊総コストで変動)"}
       ]
     },
     {
@@ -1747,15 +1765,16 @@
         {href:"skills-count-def.html", label:"人数依存(防)スキル一覧を見る"}
       ],
       sourceCharacters:[
-        {name:"徳川秀忠", no:"1234", slot:"B"},
+        {name:"徳川秀忠", no:"1234", slot:"C"},
         {name:"大谷吉継(2)", no:"1230", slot:"C"},
         {name:"丸目長恵", no:"2387", slot:"C・S1", db:"kyoku"},
         {name:"豊臣秀吉(5)", no:"1255", slot:"S2"},
-        {name:"蜂須賀小六", no:"1223", slot:"S1"}
+        {name:"蜂須賀小六", no:"1223", slot:"S1"},
+        {name:"島津家久", no:"1261", slot:"S2"}
       ],
       ownHiddenCandidate: {skill:"天磐船", rank:"SS"},
       trTable:[
-        {level:"LV10", points:"-", coefficient:"3.8", effect:"全　確率 56% / 防御 3.8%×防御参加武将数(280人)=1064.0%(TR別データは未確認)"}
+        {level:"LV10", points:"-", coefficient:"3.8", effect:"全　確率 56% / 防御 3.8%×防御参加武将数(280人)=1064.0%"}
       ]
     },
     {
@@ -1768,7 +1787,8 @@
         {name:"六角承禎(2)", no:"1254", slot:"B"},
         {name:"島津義弘(3)", no:"1232", slot:"C"},
         {name:"真田幸村(覇)", no:"1227", slot:"S2"},
-        {name:"羽柴秀吉", no:"1208", slot:"S1"}
+        {name:"羽柴秀吉", no:"1208", slot:"S1"},
+        {name:"鍋島直茂", no:"1283", slot:"A"}
       ],
       ownHiddenCandidate: {skill:"国津破邪ノ楯", rank:"SS"},
       trTable:[
@@ -1786,7 +1806,7 @@
       ],
       ownHiddenCandidate: {skill:"天封界斬", rank:"S"},
       trTable:[
-        {level:"LV10", points:"-", coefficient:"3.6", effect:"槍・弓・砲・器 兵站　確率 30% / 防御 3.6%×防御参加武将数(280人)=1008.0%(90人以下で1.5倍、TR別データは未確認)"}
+        {level:"LV10", points:"-", coefficient:"3.6", effect:"槍・弓・砲・器 兵站　確率 30% / 防御 3.6%×防御参加武将数(280人)=1008.0%(90人以下で1.5倍)"}
       ]
     },
     {
@@ -1800,7 +1820,7 @@
       ],
       ownHiddenCandidate: {skill:"義心江龍", rank:"S"},
       trTable:[
-        {level:"LV10", points:"-", effect:"槍・砲・器 不屈1　確率 55% / 攻撃 420%上昇(敗北時、指揮兵が1000まで回復、TR別データは未確認)"}
+        {level:"LV10", points:"-", effect:"槍・砲・器 不屈1　確率 55% / 攻撃 420%上昇(敗北時、指揮兵が1000まで回復)"}
       ]
     },
     {
@@ -1815,7 +1835,7 @@
       ],
       ownHiddenCandidate: {skill:"天頂ノ電光", rank:"SSS"},
       trTable:[
-        {level:"LV10", points:"-", effect:"全　確率 12% / 攻撃 190%上昇(部隊長時、確率・効果3倍、TR別データは未確認)"}
+        {level:"LV10", points:"-", effect:"全　確率 12% / 攻撃 190%上昇(部隊長時、確率・効果3倍)"}
       ]
     },
     {
@@ -1827,7 +1847,19 @@
       ],
       ownHiddenCandidate: {skill:"仙剣破斬", rank:"SSS"},
       trTable:[
-        {level:"LV10", points:"-", effect:"全　確率 100% / 攻撃115%上昇+防御115%上昇(卓越追加確率35%・4倍、TR別データは未確認)"}
+        {level:"LV10", points:"-", effect:"全　確率 100% / 攻撃115%上昇+防御115%上昇(卓越追加確率35%・4倍)"}
+      ]
+    },
+    {
+      // 長野業正(No.1248)自身の初期スキル(移植不可)
+      name:"斑将閃牙", rank:"S", baseRate:100, target:"全", noMimic:true,
+      effectSummary:"S/LV10 確率 100% 対象:全\n模倣不可\n①攻撃戦闘時、この武将が持つ卓越スキルは二度卓越できる(2回目の卓越確率は+15%される)",
+      sourceCharacters:[
+        {name:"長野業正", no:"1248", slot:"移植不可"}
+      ],
+      ownHiddenCandidate: {skill:"斑将閃牙", rank:"S"},
+      trTable:[
+        {level:"LV10", points:"-", effect:"全　確率 100% / 二重卓越(2回目+15%)"}
       ]
     },
     {
@@ -1859,7 +1891,9 @@
         {name:"佐竹義宣(2)", no:"1267", slot:"C"},
         {name:"長宗我部元親(6)", no:"1259", slot:"S1"},
         // 小早川隆景(1280)のsynthesisTable A枠(A-3-11逆引き確認、2026-08-02)
-        {name:"小早川隆景", no:"1280", slot:"A"}
+        {name:"小早川隆景", no:"1280", slot:"A"},
+        {name:"鍋島直茂", no:"1283", slot:"S2"},
+        {name:"島津家久", no:"1261", slot:"S1"}
       ],
       ownHiddenCandidate: {skill:"万里嵐壁", rank:"SS"},
       trTable:[
@@ -2109,7 +2143,8 @@
       sourceCharacters:[
         {name:"本願寺顕如(2)", no:"1246", slot:"C"},
         {name:"六角承禎(2)", no:"1254", slot:"C"},
-        {name:"真田幸村(覇)", no:"1227", slot:"S1"}
+        {name:"真田幸村(覇)", no:"1227", slot:"S1"},
+        {name:"鍋島直茂", no:"1283", slot:"B"}
       ],
       ownHiddenCandidate: {skill:"旌旗翳天ノ覇陣", rank:"SS"},
       trTable:[
@@ -2144,8 +2179,14 @@
         {name:"九鬼嘉隆", no:"1212", slot:"S2"}
       ],
       ownHiddenCandidate: {skill:"三千世界神将", rank:"SS"},
+      // ixagno.blog.fc2.com(blog-entry-9858)生HTML照合済み(2026-08-02): TR1〜TR5の実在を確認し追記
       trTable:[
-        {level:"LV10", points:"-", effect:"全　確率 100% / 防御 120%上昇(本丸防御陣形時コスト消費-1)"}
+        {level:"LV10", points:"-", effect:"全　確率 100% / 防御 120%上昇(本丸防御陣形時コスト消費-1)"},
+        {level:"TR1", points:"10", effect:"全　確率 100% / 防御 220%上昇(本丸防御陣形時コスト消費-1)"},
+        {level:"TR2", points:"40", effect:"全　確率 100% / 防御 340%上昇(本丸防御陣形時コスト消費-1)"},
+        {level:"TR3", points:"90", effect:"全　確率 100% / 防御 480%上昇(本丸防御陣形時コスト消費-2)"},
+        {level:"TR4", points:"150", effect:"全　確率 100% / 防御 630%上昇(本丸防御陣形時コスト消費-2.5)"},
+        {level:"TR5", points:"200", effect:"全　確率 100% / 防御 780%上昇(本丸防御陣形時コスト消費-3)"}
       ]
     },
     {
@@ -2375,7 +2416,7 @@
     {
       // この武将自身の初期スキル(北条氏政(5) No.1253のsynthesisTable候補A・B)
       name:"八界経略", rank:"S", baseRate:100, target:"槍・弓・砲・器", noMimic:true,
-      effectSummary:"S/LV10 確率 100% 攻撃420%上昇/対象:槍・弓・砲・器\n①攻撃420%上昇する\n②防御420%上昇する\n③部隊内武将のスキル発動率+15%を得る\n④卓越の追加確率+50%を得る(模倣不可・特殊効果は自部隊内では重複不可・TR1〜TR5は未確認)",
+      effectSummary:"S/LV10 確率 100% 攻撃420%上昇/対象:槍・弓・砲・器\n模倣不可\n①攻撃420%上昇する\n②防御420%上昇する\n③部隊内武将のスキル発動率+15%を得る\n④卓越の追加確率+50%を得る(特殊効果は自部隊内では重複不可)",
       sourceCharacters:[
         {name:"北条氏政(5)", no:"1253", slot:"A・B"}
       ],
@@ -2469,7 +2510,7 @@
     {
       // この武将自身の初期スキル(村上武吉(2) No.1257のsynthesisTable候補C)
       name:"海王怒涛", rank:"S", baseRate:55, target:"弓・馬・砲・器", noMimic:true,
-      effectSummary:"S/LV10 確率 55% 攻撃440%上昇/対象:弓・馬・砲・器\n①攻撃440%上昇する\n②自部隊同時攻撃時この武将は合流し自部隊数-2の不足を得る(特殊効果は模倣不可・TR1〜TR5は未確認)",
+      effectSummary:"S/LV10 確率 55% 攻撃440%上昇/対象:弓・馬・砲・器\n①攻撃440%上昇する\n②自部隊同時攻撃時この武将は合流し自部隊数-2の不足を得る(特殊効果は模倣不可)",
       sourceCharacters:[
         {name:"村上武吉(2)", no:"1257", slot:"C"}
       ],
@@ -2481,7 +2522,7 @@
     {
       // この武将自身の初期スキル(松平元康 No.1207のsynthesisTable候補A・B)
       name:"四界偃武", rank:"S", baseRate:38, target:"槍・弓・器・鉄",
-      effectSummary:"S/LV10 確率 38% 攻撃(敵軍総武将コスト×0.8)%上昇/対象:槍・弓・器・鉄\n①対象兵科(槍・弓・器・鉄)を指揮した戦闘時攻撃力が敵軍総武将コスト×0.8%上昇する(TR1〜TR5は未確認)",
+      effectSummary:"S/LV10 確率 38% 攻撃(敵軍総武将コスト×0.8)%上昇/対象:槍・弓・器・鉄\n①対象兵科(槍・弓・器・鉄)を指揮した戦闘時攻撃力が敵軍総武将コスト×0.8%上昇する",
       sourceCharacters:[
         {name:"松平元康", no:"1207", slot:"A・B"}
       ],
@@ -2819,13 +2860,18 @@
     {
       // 島津義久(No.1285)自身の初期スキル(移植不可)
       name:"炎国覇弾", rank:"S", baseRate:100, target:"全", noMimic:true,
-      effectSummary:"S/LV10 確率 100% 防御540%上昇/対象:全\n①防御540%上昇する\n②所領防御陣形に配置時のみこの武将の最大指揮兵数は陣形内で最大指揮兵数の大きい武将と同兵数になる(模倣不可)",
+      effectSummary:"S/LV10 確率 100% 防御540%上昇/対象:全\n模倣不可\n①防御540%上昇する\n②所領防御陣形に配置時のみこの武将の最大指揮兵数は陣形内で最大指揮兵数の大きい武将と同兵数になる",
       sourceCharacters:[
         {name:"島津義久", no:"1285", slot:"移植不可"}
       ],
       ownHiddenCandidate: {skill:"炎国覇弾", rank:"S"},
       trTable:[
-        {level:"LV10", points:"-", effect:"全　確率 100% / 防御 540%上昇(TR別データは未確認)"}
+        {level:"LV10", points:"-", effect:"全　確率 100% / 防御 540%上昇"},
+        {level:"TR1", points:"10", effect:"全　確率 100% / 防御 620%上昇"},
+        {level:"TR2", points:"40", effect:"全　確率 100% / 防御 760%上昇"},
+        {level:"TR3", points:"90", effect:"全　確率 100% / 防御 950%上昇"},
+        {level:"TR4", points:"150", effect:"全　確率 100% / 防御 1200%上昇"},
+        {level:"TR5", points:"200", effect:"全　確率 100% / 防御 1490%上昇"}
       ]
     },
     {
@@ -2876,7 +2922,7 @@
       ],
       ownHiddenCandidate: {skill:"無苦ノ武神", rank:"S"},
       trTable:[
-        {level:"LV10", points:"-", effect:"槍・馬・砲・器 飛翔2　確率 55% / 攻撃 94%上昇(4部隊以下で2倍、追加/極限1つにつき飛翔+4・TR別データは未確認)"}
+        {level:"LV10", points:"-", effect:"槍・馬・砲・器 飛翔2　確率 55% / 攻撃 94%上昇(4部隊以下で2倍、追加/極限1つにつき飛翔+4)"}
       ]
     },
     {
@@ -2903,7 +2949,7 @@
       ],
       ownHiddenCandidate: {skill:"赤凰幻舞", rank:"SSS"},
       trTable:[
-        {level:"LV10", points:"-", effect:"追加スキル　確率 100% / 攻撃・破壊効果 2.5倍(TR別データは未確認)"}
+        {level:"LV10", points:"-", effect:"追加スキル　確率 100% / 攻撃・破壊効果 2.5倍"}
       ]
     },
     {
@@ -2915,7 +2961,12 @@
       ],
       ownHiddenCandidate: {skill:"破天ノ竜撃", rank:"SSS"},
       trTable:[
-        {level:"LV10", points:"-", effect:"全　確率 32% / 攻撃180%上昇+防御180%上昇(卓越発動数×80%加算・TR別データは未確認)"}
+        {level:"LV10", points:"-", effect:"全　確率 32% / 攻撃180%上昇+防御180%上昇(卓越発動数×80%加算)"},
+        {level:"TR1", points:"10", effect:"全　確率 32% / 攻撃190%上昇+防御190%上昇(卓越発動数×82%加算)"},
+        {level:"TR2", points:"40", effect:"全　確率 32% / 攻撃200%上昇+防御200%上昇(卓越発動数×84%加算)"},
+        {level:"TR3", points:"90", effect:"全　確率 32% / 攻撃210%上昇+防御210%上昇(卓越発動数×87%加算)"},
+        {level:"TR4", points:"150", effect:"全　確率 32% / 攻撃225%上昇+防御225%上昇(卓越発動数×90%加算)"},
+        {level:"TR5", points:"200", effect:"全　確率 32% / 攻撃250%上昇+防御250%上昇(卓越発動数×95%加算)"}
       ]
     },
     {
@@ -2927,7 +2978,7 @@
       ],
       ownHiddenCandidate: {skill:"神将火剣", rank:"S"},
       trTable:[
-        {level:"LV10", points:"-", effect:"槍・馬・砲・器　確率 50% / 防御 150%上昇(同兵種指揮武将数×12%加算・TR別データは未確認)"}
+        {level:"LV10", points:"-", effect:"槍・馬・砲・器　確率 50% / 防御 150%上昇(同兵種指揮武将数×12%加算)"}
       ]
     },
     {
@@ -2943,7 +2994,11 @@
       ownHiddenCandidate: {skill:"乱界遊泳", rank:"S"},
       trTable:[
         {level:"LV10", points:"-", effect:"槍・馬・砲・器 兵站　確率 100% / 防御 400%上昇(極限スキル防御効果3.5倍)"},
-        {level:"TR5", points:"-", effect:"槍・馬・砲・器 兵站　確率 100% / 防御 740%上昇(極限スキル防御効果3.5倍・TR1〜TR4は未確認)"}
+        {level:"TR1", points:"10", effect:"槍・馬・砲・器 兵站　確率 100% / 防御 440%上昇(極限スキル防御効果3.5倍)"},
+        {level:"TR2", points:"40", effect:"槍・馬・砲・器 兵站　確率 100% / 防御 500%上昇(極限スキル防御効果3.5倍)"},
+        {level:"TR3", points:"90", effect:"槍・馬・砲・器 兵站　確率 100% / 防御 570%上昇(極限スキル防御効果3.5倍)"},
+        {level:"TR4", points:"150", effect:"槍・馬・砲・器 兵站　確率 100% / 防御 650%上昇(極限スキル防御効果3.5倍)"},
+        {level:"TR5", points:"200", effect:"槍・馬・砲・器 兵站　確率 100% / 防御 740%上昇(極限スキル防御効果3.5倍)"}
       ]
     },
     {
