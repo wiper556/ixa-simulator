@@ -2581,7 +2581,8 @@
       effectSummary:"SS/LV10 確率 100% 攻撃540%上昇/対象:全\n①攻撃540%上昇する\n②速度250%上昇する(TR1〜TR5は未確認)",
       sourceCharacters:[
         {name:"小早川秀秋(4)", no:"1271", slot:"S1"},
-        {name:"前田利家(4)", no:"1269", slot:"C"}
+        {name:"前田利家(4)", no:"1269", slot:"C"},
+        {name:"立花宗茂(5)", no:"1307", slot:"S2"}
       ],
       ownHiddenCandidate: {skill:"照闇騎行", rank:"SS"},
       trTable:[
@@ -2920,6 +2921,24 @@
       ownHiddenCandidate: {skill:"氷塊三連撃", rank:"SSS"},
       trTable:[
         {level:"LV10", points:"-", effect:"全　確率 45% / 攻撃 170%上昇(自部隊同時攻撃時コスト-2まで除外)(TR別データは未確認)"}
+      ]
+    },
+    {
+      name:"飛将ノ武略", rank:"S", baseRate:100, target:"槍・馬・器・騎",
+      effectSummary:"S/LV10 確率 100% 速度200%上昇/対象:槍・馬・器・騎\n①攻撃が部隊移動速度÷除数×100%上昇する(除数はLV10=32、計算エンジン未対応につき参考値1%のみ反映)\n②速度200%上昇する",
+      // 立花宗茂(5)(No.1307)自身の初期スキル(移植不可)であり、同時に1307自身のsynthesisTable S1枠(自己参照)の候補でもある。
+      sourceCharacters:[
+        {name:"立花宗茂(5)", no:"1307", slot:"S1"}
+      ],
+      ownHiddenCandidate: {skill:"飛将ノ武略", rank:"S"},
+      trTable:[
+        {level:"LV10", points:"-", effect:"槍・馬・器・騎　確率 100% / 速度 200%上昇(攻撃は速度÷32×100%、参考値1%)"},
+        {level:"TR1", points:"10", effect:"槍・馬・器・騎　確率 100% / 速度 210%上昇"},
+        {level:"TR2", points:"40", effect:"槍・馬・器・騎　確率 100% / 速度 220%上昇"},
+        {level:"TR3", points:"90", effect:"槍・馬・器・騎　確率 100% / 速度 230%上昇"},
+        {level:"TR4", points:"150", effect:"槍・馬・器・騎　確率 100% / 速度 240%上昇"},
+        {level:"TR5", points:"200", effect:"槍・馬・器・騎　確率 100% / 速度 250%上昇"},
+        {level:"TR6", points:"200", effect:"槍・馬・器・騎　確率 100% / 速度 270%上昇(攻撃は速度÷22×100%)"}
       ]
     }
   ];
