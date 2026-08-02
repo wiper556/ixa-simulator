@@ -388,14 +388,14 @@
       trTable:[
         {level:"LV10", points:"-", effect:"槍・弓・砲　確率 100% / 攻撃 110%上昇(卓越:追加確率20%で兵士被害10%減少)"}
       ],
-      // 45do.info確認(生HTML skiladd_wrap照合済み): A/Bは自己参照(青葉ノ仁王)。宿木・乱世ノ歸人・飛蝶野分はA/B以下のためskills.html新規ページ化なし
+      // 45do.info+ixagno.blog.fc2.com(blog-entry-8878)確認済み: A/Bの青葉ノ仁王は移植後「乱世ノ歸人」に、S1の乱世ノ歸人は移植後「入来神舞」[S]に、S2の飛蝶野分は移植後「風狂幻術」に変化。宿木・乱世ノ歸人・飛蝶野分・風狂幻術はA/B以下のためskills.html新規ページ化なし
       synthesisTable:[
-        {slot:"A", skill:"青葉ノ仁王", rank:"A", afterSkill:"青葉ノ仁王", afterRank:"A", target:"槍・弓・砲 卓越", rate:"100%", effectShort:"攻撃110%上昇(卓越:追加確率20%で兵士被害10%減少)"},
-        {slot:"B", skill:"青葉ノ仁王", rank:"A", afterSkill:"青葉ノ仁王", afterRank:"A", target:"槍・弓・砲 卓越", rate:"100%", effectShort:"攻撃110%上昇(卓越:追加確率20%で兵士被害10%減少)"},
+        {slot:"A", skill:"青葉ノ仁王", rank:"A", afterSkill:"乱世ノ歸人", afterRank:"A", target:"槍・弓・砲 卓越", rate:"100%", effectShort:"攻撃110%上昇(卓越:追加確率20%で兵士被害10%減少)"},
+        {slot:"B", skill:"青葉ノ仁王", rank:"A", afterSkill:"乱世ノ歸人", afterRank:"A", target:"槍・弓・砲 卓越", rate:"100%", effectShort:"攻撃110%上昇(卓越:追加確率20%で兵士被害10%減少)"},
         {slot:"C", skill:"宿木", rank:"B", afterSkill:"宿木", afterRank:"B", target:"部隊長", rate:"+55%", effectShort:"部隊長の初期スキルを模倣(戦闘スキルのみ)"},
-        {slot:"S1", skill:"乱世ノ歸人", rank:"A", afterSkill:"乱世ノ歸人", afterRank:"A", target:"部隊長", rate:"+50%", effectShort:"部隊長の模倣可能な初期スキルを模倣(卓越:追加確率30%で1.2倍)"},
-        {slot:"S2", skill:"飛蝶野分", rank:"B", afterSkill:"飛蝶野分", afterRank:"B", target:"部隊長", rate:"+60%", effectShort:"部隊長の初期スキルを模倣(戦闘スキルのみ)"}
-      ]},
+        {slot:"S1", skill:"乱世ノ歸人", rank:"A", afterSkill:"入来神舞", afterRank:"S", target:"部隊長", rate:"+50%", effectShort:"部隊長の模倣可能な初期スキルを模倣(卓越:追加確率30%で1.2倍)"},
+        {slot:"S2", skill:"飛蝶野分", rank:"B", afterSkill:"風狂幻術", afterRank:"B", target:"部隊長", rate:"+60%", effectShort:"部隊長の初期スキルを模倣(戦闘スキルのみ)"}
+      ], reviewedOk:true},
     {name:"今川氏真", no:"2358", ch:"未確認", cost:4.5, troop:"-", sub:"", effect:"所属部隊の部隊長の初期スキルを模倣(戦闘スキルのみ)",
       furigana:"いまがわうじざね", illustrator:"JUNNY",
       imageFull:"assets/img/characters/no2358_full.png", imageChar:"assets/img/characters/no2358_char.png",
@@ -406,14 +406,14 @@
       trTable:[
         {level:"LV10", points:"-", effect:"部隊長　確率 80% / 効果 部隊長の初期スキルを模倣(戦闘スキルのみ)"}
       ],
-      // 45do.info確認(生HTML skiladd_wrap照合済み): A/Bは自己参照(転歌)
+      // 45do.info+ixagno.blog.fc2.com(blog-entry-9417)確認済み: A/Bの転歌は移植後「入来神舞」[S]に、S1/S2の入来神舞は移植後「飛蝶野分」に変化(自己参照ではない)
       synthesisTable:[
-        {slot:"A", skill:"転歌", rank:"A", afterSkill:"転歌", afterRank:"A", target:"部隊長", rate:"80%", effectShort:"部隊長の初期スキルを模倣(戦闘スキルのみ)"},
-        {slot:"B", skill:"転歌", rank:"A", afterSkill:"転歌", afterRank:"A", target:"部隊長", rate:"80%", effectShort:"部隊長の初期スキルを模倣(戦闘スキルのみ)"},
+        {slot:"A", skill:"転歌", rank:"A", afterSkill:"入来神舞", afterRank:"S", target:"部隊長", rate:"80%", effectShort:"部隊長の初期スキルを模倣(戦闘スキルのみ)"},
+        {slot:"B", skill:"転歌", rank:"A", afterSkill:"入来神舞", afterRank:"S", target:"部隊長", rate:"80%", effectShort:"部隊長の初期スキルを模倣(戦闘スキルのみ)"},
         {slot:"C", skill:"風狂幻術", rank:"B", afterSkill:"風狂幻術", afterRank:"B", target:"部隊長", rate:"+53%", effectShort:"部隊長の初期スキルを模倣(戦闘スキルのみ)"},
-        {slot:"S1", skill:"入来神舞", rank:"S", afterSkill:"入来神舞", afterRank:"S", target:"部隊長", rate:"+55%", effectShort:"部隊長の初期スキルを1.1倍に強化して模倣"},
-        {slot:"S2", skill:"入来神舞", rank:"S", afterSkill:"入来神舞", afterRank:"S", target:"部隊長", rate:"+55%", effectShort:"部隊長の初期スキルを1.1倍に強化して模倣"}
-      ]},
+        {slot:"S1", skill:"入来神舞", rank:"S", afterSkill:"飛蝶野分", afterRank:"B", target:"部隊長", rate:"+55%", effectShort:"部隊長の初期スキルを1.1倍に強化して模倣"},
+        {slot:"S2", skill:"入来神舞", rank:"S", afterSkill:"飛蝶野分", afterRank:"B", target:"部隊長", rate:"+55%", effectShort:"部隊長の初期スキルを1.1倍に強化して模倣"}
+      ], reviewedOk:true},
     {name:"津軽為信", no:"2359", ch:"未確認", cost:4.5, troop:"-", sub:"", effect:"自領以外加勢時のみ追加スキルの防御効果2倍(模倣不可)",
       furigana:"つがるためのぶ", illustrator:"末冨正直",
       imageFull:"assets/img/characters/no2359_full.png", imageChar:"assets/img/characters/no2359_char.png",
@@ -424,14 +424,15 @@
       trTable:[
         {level:"LV10", points:"-", effect:"追加スキル　確率 100% / 防御効果(自領以外加勢時) 2倍"}
       ],
-      // 45do.info確認(生HTML skiladd_wrap照合済み): 自己スキル(北咲王花)は候補に含まれず、A/Bは豊家ノ滅塞(Bランク)
+      // 45do.info+ixagno.blog.fc2.com(blog-entry-9416)確認済み: 自己スキル(北咲王花)は候補に含まれず。A/Bの豊家ノ滅塞は移植後「籠城の妙技」に、Cの龍神ノ加護は移植後「朧雲ノ蓮撃」[S](ixanary.comでランクS確認)に、
+      // S1の戦陣凪は移植後「海神ノ浮船」[SS](ixanary.comでランクSS確認)に、S2の戦陣無縫は移植後「天衣無縫神戒」[SS]に変化(自己参照ではない)
       synthesisTable:[
-        {slot:"A", skill:"豊家ノ滅塞", rank:"B", afterSkill:"豊家ノ滅塞", afterRank:"B", target:"弓・砲・器", rate:"+42%", effectShort:"防御15%上昇(部隊の総コストで変動)"},
-        {slot:"B", skill:"豊家ノ滅塞", rank:"B", afterSkill:"豊家ノ滅塞", afterRank:"B", target:"弓・砲・器", rate:"+42%", effectShort:"防御15%上昇(部隊の総コストで変動)"},
-        {slot:"C", skill:"龍神ノ加護", rank:"A", afterSkill:"龍神ノ加護", afterRank:"A", target:"馬・砲・器", rate:"+46%", effectShort:"防御135%上昇+本丸防御陣形配置時コスト消費-0.5(模倣不可)"},
-        {slot:"S1", skill:"戦陣 凪", rank:"A", afterSkill:"戦陣 凪", afterRank:"A", target:"全 飛翔2", rate:"+60%", effectShort:"防御110%上昇+自軍防御参加武将数30以上で防御効果2倍"},
-        {slot:"S2", skill:"戦陣 無縫", rank:"A", afterSkill:"戦陣 無縫", afterRank:"A", target:"全", rate:"+42%", effectShort:"防御80%上昇(部隊の総コストで変動)"}
-      ]},
+        {slot:"A", skill:"豊家ノ滅塞", rank:"B", afterSkill:"籠城の妙技", afterRank:"A", target:"弓・砲・器", rate:"+42%", effectShort:"防御15%上昇(部隊の総コストで変動)"},
+        {slot:"B", skill:"豊家ノ滅塞", rank:"B", afterSkill:"籠城の妙技", afterRank:"A", target:"弓・砲・器", rate:"+42%", effectShort:"防御15%上昇(部隊の総コストで変動)"},
+        {slot:"C", skill:"龍神ノ加護", rank:"A", afterSkill:"朧雲ノ蓮撃", afterRank:"S", target:"馬・砲・器", rate:"+46%", effectShort:"防御135%上昇+本丸防御陣形配置時コスト消費-0.5(模倣不可)"},
+        {slot:"S1", skill:"戦陣 凪", rank:"A", afterSkill:"海神ノ浮船", afterRank:"SS", target:"全 飛翔2", rate:"+60%", effectShort:"防御110%上昇+自軍防御参加武将数30以上で防御効果2倍"},
+        {slot:"S2", skill:"戦陣 無縫", rank:"A", afterSkill:"天衣無縫神戒", afterRank:"SS", target:"全", rate:"+42%", effectShort:"防御80%上昇(部隊の総コストで変動)"}
+      ], reviewedOk:true},
     {name:"井伊直孝", no:"2366", ch:"未確認", cost:4, troop:"-", sub:"", effect:"追加スキルの速度効果2倍(模倣不可)",
       furigana:"いいなおたか", illustrator:"JaneMere",
       imageFull:"assets/img/characters/no2366_full.png", imageChar:"assets/img/characters/no2366_char.png",
