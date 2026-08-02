@@ -1678,21 +1678,26 @@
         {slot:"S1", skill:"神羅聖域", rank:"SS", afterSkill:"神羅聖域", afterRank:"SS", rate:"40%", target:"全 覇道", effectShort:"攻撃900%上昇+防御900%上昇+破壊150%上昇"},
         {slot:"S2", skill:"永世ノ天隻", rank:"SS", afterSkill:"永世ノ天隻", afterRank:"SS", rate:"48%", target:"全 飛翔9", effectShort:"防御を係数×人数で上昇"}
       ]},
-    {name:"藤堂高虎(2)", no:"1270", ch:"28章", cost:5.5, troop:"槍馬砲器防", sub:"兵站", effect:"極限スキルの防御効果が3.5倍",
+    {name:"藤堂高虎(2)", no:"1270", ch:"28章", cost:5.5, troop:"槍馬砲器防", sub:"兵站", effect:"極限スキルの防御効果が3.5倍", reviewedOk:true,
       furigana:"とうどうたかとら", illustrator:"直良有祐",
       imageFull:"assets/img/characters/no1270_full.png", imageChar:"assets/img/characters/no1270_char.png",
       atkBase:1040, atkGrowth:41, defBase:1260, defGrowth:69, tacticsBase:650.0, tacticsGrowth:3.0, lv0Troops:5160,
       rankGrades:{yari:'S', yumi:'A', uma:'A', ki:'S'},
       initialSkill:"乱界遊泳",
-      skillDetail:"S/LV10 確率 100% 防御400%上昇/対象:槍・馬・砲・器　兵站\n①防御400%上昇する\n②対象兵科指揮時、極限スキルの防御効果が3.5倍となる(模倣不可・TR1〜TR4は未確認)",
+      skillDetail:"S/LV10 確率 100% 防御400%上昇/対象:槍・馬・砲・器　兵站\n模倣不可\n①防御400%上昇する\n②対象兵科指揮時、極限スキルの防御効果が3.5倍となる",
       categoryLinks:[
         {href:"skills-heitan.html", label:"兵站スキル一覧を見る"}
       ],
+      // ixagno.blog.fc2.com(blog-entry-9827)生HTML照合済み(2026-08-02): TR1〜TR5の実在を確認し追記
       trTable:[
         {level:"LV10", points:"-", effect:"槍・馬・砲・器 兵站　確率 100% / 防御 400%上昇(極限スキル防御効果3.5倍)"},
-        {level:"TR5", points:"-", effect:"槍・馬・砲・器 兵站　確率 100% / 防御 740%上昇(極限スキル防御効果3.5倍)"}
+        {level:"TR1", points:"10", effect:"槍・馬・砲・器 兵站　確率 100% / 防御 440%上昇(極限スキル防御効果3.5倍)"},
+        {level:"TR2", points:"40", effect:"槍・馬・砲・器 兵站　確率 100% / 防御 500%上昇(極限スキル防御効果3.5倍)"},
+        {level:"TR3", points:"90", effect:"槍・馬・砲・器 兵站　確率 100% / 防御 570%上昇(極限スキル防御効果3.5倍)"},
+        {level:"TR4", points:"150", effect:"槍・馬・砲・器 兵站　確率 100% / 防御 650%上昇(極限スキル防御効果3.5倍)"},
+        {level:"TR5", points:"200", effect:"槍・馬・砲・器 兵站　確率 100% / 防御 740%上昇(極限スキル防御効果3.5倍)"}
       ],
-      // 45do.info確認: 生HTML(skiladd_wrap)照合済み。2026-08-02再検証: ixanary.com(合成データ非掲載)・ixagno.blog.fc2.com(検索でも該当記事なし)・ameameixa.com(bushocard-1270が404で記事なし)のいずれでも第二ソースを確認できず、単一ソースのまま(要ユーザー確認、黄丸化は見送り)
+      // 45do.info生HTML(skiladd_wrap) + ixagno.blog.fc2.com(blog-entry-9827、検索クエリ「No.1270」で発見)生HTML の2ソースで完全一致を確認(2026-08-02再検証)
       synthesisTable:[
         {slot:"A", skill:"龍驤虎躍", rank:"SS", afterSkill:"龍驤虎躍", afterRank:"SS", rate:"60%", target:"全", effectShort:"攻撃810%上昇+防御810%上昇(コスト-1)"},
         {slot:"B", skill:"万里嵐壁", rank:"SS", afterSkill:"万里嵐壁", afterRank:"SS", rate:"66%", target:"全", effectShort:"防御200%上昇+敵軍部隊数×40%加算"},
