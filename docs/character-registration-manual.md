@@ -42,7 +42,13 @@
    - trTableのLV10行の確率がLV1の値を誤って転記しているケースがある。ixanary生HTMLの`<th>LV10</th>`直後の値を`<th>`タグ単位で区切って確認し、LV1と読み違えない。
    - 「TR1〜TR5は未確認」等の注記は放置せず、生HTMLで実在有無を確認して断定的な記述に直す(存在すれば値を追記、存在しなければ注記を削る)。
 5. スキル効果文は原文を一字一句読む。否定/条件表現(「〜を除く」「〜のみ」)は意味が反転しやすく、要約や記憶で意訳すると適用条件が逆になることがある。飛翔N付与スキルは数字だけでなく括弧内の補足効果(「敵軍に飛翔を持つ武将がN人未満のとき〜」等)まで必ず読む。
-6. 裏取りが必要な場合、まず`attack-simulator.html`のspecialSkillsを確認し(既に検証済みの値が入っている)、無ければixanary.com→[`docs/sengokuixa-skill-kouza-extract.md`](sengokuixa-skill-kouza-extract.md)(公式一次情報源のキャッシュ、D節参照)の順で調べる。「未確認」で済ませる前に調べ尽くす([[feedback_no_external_source_citation]])。
+6. 裏取りが必要な場合、まず`attack-simulator.html`のspecialSkillsを確認し(既に検証済みの値が入っている)、無ければixanary.com→45do.info→[`docs/sengokuixa-skill-kouza-extract.md`](sengokuixa-skill-kouza-extract.md)(公式一次情報源のキャッシュ、D節参照)の順で調べる。「未確認」で済ませる前に調べ尽くす([[feedback_no_external_source_citation]])。
+   - **標準調査(ixanary.com+45do.infoの2ソース確認)を行ってもなお「未確認」の項目が残った場合、そこで確定情報無しとして諦めず、追加で他のソースサイトを横断的に確認する(2026-08-02追加、[[feedback_source_reliability_and_fetch_method]]参照)。** No.2394(高山マリア)の登録時、標準調査後もtrTable(TR3〜TR5)・synthesisTableのafterSkill(移植後変化先)・ch(章)の3点が未確認のまま残ったことを受けてユーザーが明言したルール。確認先の例(実際に有効だった実例):
+     - `ixagno.blog.fc2.com`: 武将名またはカード番号でのブログ内検索(`?q=...`)。
+     - `ameameixa.com`: 該当時期の武将スキルテーブルまとめ記事(章別)。
+     - `ixanary.com`: カードページだけでなく、関連する各スキル名の個別スキルページ(`/skills/{スキル名}/`)側の合成テーブル欄も確認する(移植前候補として他武将側の情報から逆引きできることがある)。
+     - `45do.info`: カードページだけでなく、関連する各スキルの個別ページの合成テーブル欄も確認する。
+   - **これらを試しても見つからない場合は、無理に埋めず「未確認」のまま正直に残す(既存方針、変更なし——[[feedback_no_external_source_citation]])。** 「複数サイトを試す」ことが義務化されるだけであり、「見つかるまで粘る」「情報が無いなら作る」という意味ではない。
 
 ### A-2. キーワード一覧ページとの整合
 
