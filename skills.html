@@ -609,11 +609,14 @@
       sourceCharacters:[
         {name:"前田利家(4)", no:"1269", slot:"S1"},
         {name:"徳川家康(覇5)", no:"1263", slot:"C"},
-        {name:"毛利輝元(覇)", no:"1251", slot:"C"},
         {name:"加藤清正", no:"1284", slot:"C"},
         // 結城秀康(1276)のsynthesisTable S2枠(A-3-11逆引き確認、2026-08-02)
         {name:"結城秀康", no:"1276", slot:"S2"}
       ],
+      // 毛利輝元(覇)(1251)は誤ってCスロット(実際は星神闘覇、自己参照)として直接記載されていたが、
+      // characters.html synthesisTable確認によりS1枠の破邪後輝が移植後に飛龍衝天へ変化することが正しい経路と判明したため、
+      // 破邪後輝は独自ページを持つのでgrantedViaSkillsで参照する形に訂正(2026-08-03)
+      grantedViaSkills:[{skill:"破邪後輝", rank:"SS"}],
       ownHiddenCandidate: {skill:"飛龍衝天", rank:"SS"},
       trTable:[
         {level:"LV10", points:"-", coefficient:"7.5", effect:"全 飛翔15　確率 45% / 攻撃 200%+7.5%×防御参加武将数(280人)=2300.0%"},
@@ -1094,10 +1097,10 @@
         {href:"skills-leadermimic.html", label:"部隊長模倣スキル一覧を見る"},
         {href:"skills-takuetsu.html", label:"卓越スキル一覧を見る"}
       ],
-      sourceCharacters:[
-        // characters.html#10070のsynthesisTable B枠は移植後スキルが潔花咲然→舞蝶朧月に変化するためB(A-3-11逆引き確認、2026-08-02)
-        {name:"細川幽斎(復刻)【天】", no:"10070", slot:"B"}
-      ],
+      sourceCharacters:[],
+      // 潔花咲然を持つ細川幽斎(復刻)【天】(10070・Bスロット)を合成素材にすると移植後に舞蝶朧月へ変化するため、
+      // 武将を直接列挙せずスキル参照で記載する(2026-08-03ルール統一)
+      grantedViaSkills:[{skill:"潔花咲然", rank:"S"}],
       ownHiddenCandidate: {skill:"舞蝶朧月", rank:"S"},
       trTable:[
         {level:"LV10", points:"-", effect:"部隊長　確率 50% / 卓越追加確率20%・1.25倍"}
@@ -1619,7 +1622,8 @@
         {name:"北条氏直", no:"1273", slot:"S2"},
         {name:"真田信繁", no:"1268", slot:"S2"},
         {name:"山内一豊", no:"1237", slot:"S1"},
-        {name:"石田三成(4)", no:"1229", slot:"S1・S2"}
+        // characters.html#1229 synthesisTable確認: S1のみが遠呂智ノ閃光(S2は建御雷神ノ閃光のため誤記を訂正、2026-08-03)
+        {name:"石田三成(4)", no:"1229", slot:"S1"}
       ],
       ownHiddenCandidate: {skill:"遠呂智ノ閃光", rank:"SS"},
       trTable:[
@@ -1735,8 +1739,8 @@
         {name:"竹中半兵衛(1215)", no:"1215", slot:"C"},
         {name:"宇喜多秀家(2)", no:"1217", slot:"S1"},
         {name:"松永久秀", no:"1209", slot:"S1"},
-        // 津軽為信(2359)characters-kyoku.html synthesisTable S1枠(元スキル「戦陣 凪」)の移植後afterSkillが「海神ノ浮船」であることを確認済み
-        {name:"津軽為信", no:"2359", slot:"S1", db:"kyoku"}
+        // 津軽為信(2359)characters-kyoku.html synthesisTable S1枠(元スキル「戦陣 凪」[A])の移植後afterSkillが「海神ノ浮船」であることを確認済み。戦陣凪はA以下のためskills.html独自ページを持たず、経由先ページが無いのでここに直接記載する
+        {name:"津軽為信", no:"2359", slot:"S1(戦陣 凪経由)", db:"kyoku"}
       ],
       ownHiddenCandidate: {skill:"海神ノ浮船", rank:"SS"},
       trTable:[
@@ -3297,16 +3301,17 @@
     },
     {
       // ユーザー明示依頼によりA/Bランクだが新規作成。ixanary.com(/skills/風狂幻術/)生HTML確認(確率LV1+18%→LV10+53%/対象部隊長/戦闘スキルのみ模倣・倍率補正なし)+attack-simulator.htmlのspecialSkills記載と一致。
-      // characters-kyoku.html synthesisTableで伊達成実(No.2336)のS2スロット(blog-entry-8878確認済み)、今川氏真(No.2358)のCスロット(blog-entry-9417確認済み)に掲載。両者とも移植後も「風狂幻術」のまま(自己参照、終端スキル)。
+      // 今川氏真(No.2358)のCスロット(blog-entry-9417確認済み)は風狂幻術自体を直接持つ(自己参照、終端スキル)。
+      // 伊達成実(No.2336)のS2スロット(blog-entry-8878確認済み)は直接持つスキルが「飛蝶野分」[B]で、移植後afterSkillが風狂幻術に変化するため、飛蝶野分は独自ページを持つのでgrantedViaSkillsで参照する(2026-08-03ルール統一)
       name:"風狂幻術", rank:"B", baseRate:53, target:"部隊長",
       effectSummary:"B/LV10 確率 53% 対象:部隊長\n①所属部隊の部隊長が持つ初期スキルを模倣する(戦闘スキルのみ)",
       categoryLinks:[
         {href:"skills-leadermimic.html", label:"部隊長模倣スキル一覧を見る"}
       ],
       sourceCharacters:[
-        {name:"伊達成実", no:"2336", slot:"S2", db:"kyoku"},
         {name:"今川氏真", no:"2358", slot:"C", db:"kyoku"}
       ],
+      grantedViaSkills:[{skill:"飛蝶野分", rank:"B"}],
       ownHiddenCandidate: {skill:"風狂幻術", rank:"B"},
       trTable:[
         {level:"LV10", points:"-", effect:"部隊長　確率 53% / 効果 部隊長の初期スキルを模倣(戦闘スキルのみ、TR別データは未確認)"}
@@ -3337,18 +3342,17 @@
     },
     {
       // ユーザー明示依頼によりB以下だがページ新規作成。ixagno.blog.fc2.com(blog-entry-8878)掲載の実物カード画像で確認済み: 確率+60% / 対象部隊長 / 「所属部隊の部隊長が持つ初期スキルを模倣する(戦闘スキルのみ)」
-      // characters-kyoku.html内の合成候補としての出現箇所(全grep結果): 留守政景(No.2382)C・今川氏真(No.2358)S1/S2・三好義賢(No.2368)S1はいずれも「入来神舞」[S]の移植後afterSkillとして出現、伊達成実(No.2336)S2は「飛蝶野分」自体が候補スキルとして出現(移植後は「風狂幻術」)
+      // 伊達成実(No.2336)S2は「飛蝶野分」自体が候補スキルとして出現(移植後は「風狂幻術」)。
+      // 留守政景(No.2382)C・今川氏真(No.2358)S1/S2・三好義賢(No.2368)S1はいずれも「入来神舞」[S]の移植後afterSkillとして出現するが、入来神舞は独自ページを持つためgrantedViaSkillsで参照する(2026-08-03ルール統一)
       name:"飛蝶野分", rank:"B", baseRate:60, target:"部隊長",
       effectSummary:"B/LV10 確率 60% 対象:部隊長\n①所属部隊の部隊長が持つ初期スキルを模倣する(戦闘スキルのみ)",
       categoryLinks:[
         {href:"skills-leadermimic.html", label:"部隊長模倣スキル一覧を見る"}
       ],
       sourceCharacters:[
-        {name:"伊達成実", no:"2336", slot:"S2", db:"kyoku"},
-        {name:"留守政景", no:"2382", slot:"C(入来神舞経由)", db:"kyoku"},
-        {name:"今川氏真", no:"2358", slot:"S1・S2(入来神舞経由)", db:"kyoku"},
-        {name:"三好義賢", no:"2368", slot:"S1(入来神舞経由)", db:"kyoku"}
+        {name:"伊達成実", no:"2336", slot:"S2", db:"kyoku"}
       ],
+      grantedViaSkills:[{skill:"入来神舞", rank:"S"}],
       ownHiddenCandidate: {skill:"風狂幻術", rank:"B"},
       trTable:[
         {level:"LV10", points:"-", effect:"部隊長　確率 60% / 効果 部隊長の初期スキルを模倣(戦闘スキルのみ)(TR別データは未確認)"}
