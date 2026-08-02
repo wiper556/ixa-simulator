@@ -1708,11 +1708,11 @@
       ],
       sourceCharacters:[
         {name:"伊達政宗(覇3)", no:"1226", slot:"C"},
-        {name:"上杉謙信(覇2)", no:"1238", slot:"S1"},
-        // 毛利輝元(覇)(1251)のsynthesisTable S2枠は移植後スキルが十束ノ神域→天聖宝冠に変化するためS2として追加(A-3-11逆引き確認、2026-08-02)
-        {name:"毛利輝元(覇)", no:"1251", slot:"S2"},
-        {name:"小早川秀秋(4)", no:"1271", slot:"S2"} // characters.html#1271 synthesisTable S2の十束ノ神域(移植後afterSkill:天聖宝冠)を反映
+        {name:"上杉謙信(覇2)", no:"1238", slot:"S1"}
       ],
+      // 十束ノ神域を持つ武将を合成素材にすると移植後に天聖宝冠へ変化するため、
+      // 個別武将の列挙ではなくスキル同士の関係として記載する(2026-08-03ルール変更)
+      grantedViaSkills:[{skill:"十束ノ神域", rank:"SS"}],
       ownHiddenCandidate: {skill:"天聖宝冠", rank:"SSS"},
       trTable:[
         {level:"LV10", points:"-", coefficient:"5", effect:"全　確率 45% / 攻撃 100%+5%×防御参加武将数(280人)=1500.0%"}
@@ -3700,6 +3700,11 @@
       + (s.ownHiddenCandidate ? (
         '<div class="skl-detail-block"><h2>このスキルを習得済みのカードを合成素材にした場合の隠し候補</h2>'
         + '<div class="skl-effect-text">'+sklSkillRefLabel(s.ownHiddenCandidate.skill, s.ownHiddenCandidate.rank)+'</div>'
+        + '</div>'
+      ) : '')
+      + (s.grantedViaSkills && s.grantedViaSkills.length > 0 ? (
+        '<div class="skl-detail-block"><h2>入手可能なスキル(武将に付与されたスキル)</h2>'
+        + '<div class="skl-effect-text">'+s.grantedViaSkills.map(function(g){ return sklSkillRefLabel(g.skill, g.rank); }).join('<br>')+'</div>'
         + '</div>'
       ) : '');
 
