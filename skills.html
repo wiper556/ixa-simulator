@@ -1415,10 +1415,17 @@
     {
       name:"火之迦具土神", rank:"SS", baseRate:100, target:"槍・馬・砲",
       effectSummary:"SS/LV10 確率 100% 攻撃160%上昇/対象:槍・馬・砲\n①攻撃160%上昇する\n②卓越:追加確率25%で攻撃効果が3倍になる",
+      categoryLinks:[
+        {href:"skills-takuetsu.html", label:"卓越スキル一覧を見る"}
+      ],
       sourceCharacters:[
         {name:"長野業正", no:"1248", slot:"A"},
         {name:"真田昌幸(1218)", no:"1218", slot:"C"},
-        {name:"長尾景虎(1206)", no:"1206", slot:"C"}
+        {name:"長尾景虎(1206)", no:"1206", slot:"C"},
+        {name:"三郎信長", no:"1249", slot:"S2"},
+        {name:"里見義弘(2)", no:"1245", slot:"S2"},
+        {name:"山内一豊", no:"1237", slot:"C"},
+        {name:"井伊直政", no:"1233", slot:"B"}
       ],
       ownHiddenCandidate: {skill:"火之迦具土神", rank:"SS"},
       trTable:[
@@ -1482,22 +1489,35 @@
       ]
     },
     {
+      // 45do.info(2022年記事)では攻撃/防御とも20%上昇と記載されていたが、ixanary.com(2026年最新)は40%上昇。ゲーム内バランス調整で変わった可能性があるためixanaryの数値(40%)を採用し、大谷吉継(2)No.1230・黒田官兵衛【覇】No.1214分もこちらに統合
       name:"布都御魂ノ鬨", rank:"SS", baseRate:35, target:"全",
-      effectSummary:"SS/LV10 確率 35% 攻撃20%上昇/対象:全\n①攻撃20%上昇する\n②防御20%上昇する\n③所属部隊内のレアリティS以上のスキル個数×20%を攻防効果に加算する",
+      effectSummary:"SS/LV10 確率 35% 攻撃40%上昇/対象:全\n①攻撃40%上昇する\n②防御40%上昇する\n③所属部隊内のレアリティS以上のスキル個数×20%を攻防効果に加算する",
       sourceCharacters:[
         {name:"大谷吉継(2)", no:"1230", slot:"S2"},
-        {name:"黒田官兵衛【覇】", no:"1214", slot:"A"}
+        {name:"黒田官兵衛【覇】", no:"1214", slot:"A"},
+        {name:"山内一豊", no:"1237", slot:"S2"},
+        {name:"堀秀政", no:"1224", slot:"S2"},
+        {name:"柴田勝家", no:"1216", slot:"S2"},
+        {name:"荒木村重(2)", no:"1213", slot:"C・S2"},
+        {name:"羽柴秀吉", no:"1208", slot:"A"},
+        {name:"武田晴信", no:"1205", slot:"S2"}
       ],
       ownHiddenCandidate: {skill:"布都御魂ノ鬨", rank:"SS"},
       trTable:[
-        {level:"LV10", points:"-", effect:"全　確率 35% / 攻撃20%上昇+防御20%上昇(S以上スキル個数×20%加算、TR別データは未確認)"}
+        {level:"LV10", points:"-", effect:"全　確率 35% / 攻撃 40%上昇+防御 40%上昇(部隊内レアリティS以上のスキル個数×20%加算)"}
       ]
     },
     {
       name:"建御雷神ノ槌", rank:"SS", baseRate:100, target:"全", noMimic:true,
-      effectSummary:"SS/LV10 確率 100% 攻撃135%上昇/対象:全\n①攻撃135%上昇する\n②防御135%上昇する\n③このスキルを所持する武将の全スキルの卓越確率に30%を加算する(模倣不可)",
+      effectSummary:"SS/LV10 確率 100% 攻撃135%上昇/対象:全\n模倣不可\n①攻撃135%上昇する\n②防御135%上昇する\n③このスキルを所持する武将の全スキルの卓越確率に30%を加算する",
+      categoryLinks:[
+        {href:"skills-takuetsu.html", label:"卓越スキル一覧を見る"}
+      ],
       sourceCharacters:[
-        {name:"黒田官兵衛【覇】", no:"1214", slot:"B"}
+        {name:"黒田官兵衛【覇】", no:"1214", slot:"B"},
+        {name:"荒木村重(2)", no:"1213", slot:"S1"},
+        {name:"堀秀政", no:"1224", slot:"A"},
+        {name:"明智光秀", no:"1204", slot:"S2"}
       ],
       ownHiddenCandidate: {skill:"建御雷神ノ槌", rank:"SS"},
       trTable:[
@@ -1803,23 +1823,6 @@
       ]
     },
     {
-      name:"火之迦具土神", rank:"SS", baseRate:100, target:"槍・馬・砲",
-      effectSummary:"SS/LV10 確率 100% 攻撃160%上昇/対象:槍・馬・砲\n①攻撃160%上昇する\n②卓越:追加確率25%で攻撃効果が3倍になる",
-      categoryLinks:[
-        {href:"skills-takuetsu.html", label:"卓越スキル一覧を見る"}
-      ],
-      sourceCharacters:[
-        {name:"三郎信長", no:"1249", slot:"S2"},
-        {name:"里見義弘(2)", no:"1245", slot:"S2"},
-        {name:"山内一豊", no:"1237", slot:"C"},
-        {name:"井伊直政", no:"1233", slot:"B"}
-      ],
-      ownHiddenCandidate: {skill:"火之迦具土神", rank:"SS"},
-      trTable:[
-        {level:"LV10", points:"-", effect:"槍・馬・砲　確率 100% / 攻撃 160%上昇(卓越追加確率25%で3倍)"}
-      ]
-    },
-    {
       // 柴田勝家(No.1216)synthesisTable候補C・ixanary生HTML確認済み(TRなし、LV10のみ)
       name:"天香山命", rank:"SS", baseRate:100, target:"全 覇道",
       effectSummary:"SS/LV10 確率 100% 攻撃120%上昇/対象:全　覇道\n①攻撃120%上昇する\n②速度90%上昇する",
@@ -1832,24 +1835,6 @@
       ownHiddenCandidate: {skill:"天香山命", rank:"SS"},
       trTable:[
         {level:"LV10", points:"-", effect:"全 覇道　確率 100% / 攻撃 120%上昇+速度90%上昇"}
-      ]
-    },
-    {
-      // 柴田勝家(No.1216)synthesisTable候補S2(同一No合成専用)・ixanary生HTML確認済み(TRなし、LV10のみ)。
-      // 45do.info(2022年記事)では攻撃/防御とも20%上昇と記載されていたが、ixanary.com(2026年最新)は40%上昇。ゲーム内バランス調整で変わった可能性があるためixanaryの数値を採用。
-      name:"布都御魂ノ鬨", rank:"SS", baseRate:35, target:"全",
-      effectSummary:"SS/LV10 確率 35% 攻撃40%上昇/対象:全\n①攻撃40%上昇する\n②防御40%上昇する\n③所属部隊内のレアリティS以上のスキル個数×20%を攻防効果に加算する",
-      sourceCharacters:[
-        {name:"山内一豊", no:"1237", slot:"S2"},
-        {name:"堀秀政", no:"1224", slot:"S2"},
-        {name:"柴田勝家", no:"1216", slot:"S2"},
-        {name:"荒木村重(2)", no:"1213", slot:"C・S2"},
-        {name:"羽柴秀吉", no:"1208", slot:"A"},
-        {name:"武田晴信", no:"1205", slot:"S2"}
-      ],
-      ownHiddenCandidate: {skill:"布都御魂ノ鬨", rank:"SS"},
-      trTable:[
-        {level:"LV10", points:"-", effect:"全　確率 35% / 攻撃 40%上昇+防御 40%上昇(部隊内レアリティS以上のスキル個数×20%加算)"}
       ]
     },
     {
@@ -2224,21 +2209,6 @@
       ]
     },
     {
-      // 荒木村重(2)(No.1213)synthesisTable候補S1・45do.info生HTML照合済み(単一ソースのみ、TR1〜TR5未確認)
-      name:"建御雷神ノ槌", rank:"SS", baseRate:100, target:"全", noMimic:true,
-      effectSummary:"SS/LV10 確率 100% 攻撃135%上昇/対象:全\n模倣不可\n①攻撃135%上昇する\n②防御135%上昇する\n③このスキルを所持する武将の全スキルの卓越確率に30%を加算する(TR1〜TR5は未確認)",
-      categoryLinks:[
-        {href:"skills-takuetsu.html", label:"卓越スキル一覧を見る"}
-      ],
-      sourceCharacters:[
-        {name:"荒木村重(2)", no:"1213", slot:"S1"}
-      ],
-      ownHiddenCandidate: {skill:"建御雷神ノ槌", rank:"SS"},
-      trTable:[
-        {level:"LV10", points:"-", effect:"全　確率 100% / 攻撃135%上昇+防御135%上昇(卓越確率+30%)"}
-      ]
-    },
-    {
       // 宇喜多秀家(2)(No.1217)synthesisTable候補A・45do.info生HTML照合済み(単一ソースのみ、TR1〜TR5未確認)
       name:"天衣無縫神戒", rank:"SS", baseRate:50, target:"全",
       effectSummary:"SS/LV10 確率 50% 防御30.02%上昇/対象:全\n①防御30.02%上昇する(部隊の総コストで効果が変化・TR1〜TR5は未確認)",
@@ -2530,21 +2500,6 @@
       ownHiddenCandidate: {skill:"天啓ノ神撃", rank:"SS"},
       trTable:[
         {level:"LV10", points:"-", effect:"全　確率 45% / 攻撃 180%上昇(HP100以上で敵1部隊に追加ダメージ5)"}
-      ]
-    },
-    {
-      name:"建御雷神ノ槌", rank:"SS", baseRate:100, target:"全", noMimic:true,
-      effectSummary:"SS/LV10 確率 100% 攻撃135%上昇/対象:全\n①攻撃135%上昇する\n②防御135%上昇する\n③このスキルを持つ武将の全スキルの卓越確率に30%を加算する(模倣不可・TR1〜TR5は未確認)",
-      categoryLinks:[
-        {href:"skills-takuetsu.html", label:"卓越スキル一覧を見る"}
-      ],
-      sourceCharacters:[
-        {name:"堀秀政", no:"1224", slot:"A"},
-        {name:"明智光秀", no:"1204", slot:"S2"}
-      ],
-      ownHiddenCandidate: {skill:"建御雷神ノ槌", rank:"SS"},
-      trTable:[
-        {level:"LV10", points:"-", effect:"全　確率 100% / 攻撃135%上昇+防御135%上昇(卓越確率+30%)"}
       ]
     },
     {
