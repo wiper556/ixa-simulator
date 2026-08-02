@@ -1735,9 +1735,13 @@
     },
     {
       name:"天頂ノ電光", rank:"SSS", baseRate:12, target:"全", noMimic:true,
-      effectSummary:"SSS/LV10 確率 12% 攻撃190%上昇/対象:全\n①攻撃190%上昇する\n②部隊長ならば発動率と効果が3倍になる(模倣不可)",
+      effectSummary:"SSS/LV10 確率 12% 攻撃190%上昇/対象:全\n模倣不可\n①攻撃190%上昇する\n②部隊長ならば発動率と効果が3倍になる",
       sourceCharacters:[
-        {name:"浅井長政(4)", no:"1244", slot:"B"}
+        {name:"浅井長政(4)", no:"1244", slot:"B"},
+        {name:"村上武吉(2)", no:"1257", slot:"B"},
+        {name:"立花宗茂(2)", no:"1231", slot:"S2"},
+        {name:"島津義久(1219)", no:"1219", slot:"S2"},
+        {name:"九戸政実", no:"1225", slot:"C"}
       ],
       ownHiddenCandidate: {skill:"天頂ノ電光", rank:"SSS"},
       trTable:[
@@ -2142,19 +2146,6 @@
       ]
     },
     {
-      name:"天頂ノ電光", rank:"SSS", baseRate:12, target:"全", noMimic:true,
-      effectSummary:"SSS/LV10 確率 12% 攻撃190%上昇/対象:全\n①攻撃190%上昇する\n②部隊長であれば発動率と効果が3倍になる(模倣不可・TR1〜TR5は未確認)",
-      sourceCharacters:[
-        {name:"村上武吉(2)", no:"1257", slot:"B"},
-        {name:"立花宗茂(2)", no:"1231", slot:"S2"},
-        {name:"島津義久(1219)", no:"1219", slot:"S2"}
-      ],
-      ownHiddenCandidate: {skill:"天頂ノ電光", rank:"SSS"},
-      trTable:[
-        {level:"LV10", points:"-", effect:"全　確率 12% / 攻撃 190%上昇(部隊長なら発動率・効果3倍)"}
-      ]
-    },
-    {
       name:"天奏聖譚曲", rank:"SS", baseRate:70, target:"砲・器",
       effectSummary:"SS/LV10 確率 70% 防御上昇/対象:砲・器\n①(2.5×防御参加武将数)%を防御効果に加算する(TR1〜TR5は未確認)",
       categoryLinks:[
@@ -2211,18 +2202,6 @@
       ownHiddenCandidate: {skill:"天岩戸ノ神域", rank:"SS"},
       trTable:[
         {level:"LV10", points:"-", effect:"全　確率 70% / 攻撃 2.8%×防御参加武将数(280人)=784.0%"}
-      ]
-    },
-    {
-      // 九戸政実(No.1225)synthesisTable候補C・45do.info生HTML照合済み(単一ソースのみ、TR1〜TR5未確認)。45do.info内で「天頂ノ電光」(候補見出し)と「天頂ノ雷光」(性能欄)の表記揺れがあり、ixanary.com確認のうえ「天頂ノ電光」を採用
-      name:"天頂ノ電光", rank:"SSS", baseRate:12, target:"全", noMimic:true,
-      effectSummary:"SSS/LV10 確率 12% 攻撃190%上昇/対象:全\n模倣不可\n①攻撃190%上昇する\n②部隊長ならば発動率と効果が3倍となる(TR1〜TR5は未確認)",
-      sourceCharacters:[
-        {name:"九戸政実", no:"1225", slot:"C"}
-      ],
-      ownHiddenCandidate: {skill:"天頂ノ電光", rank:"SSS"},
-      trTable:[
-        {level:"LV10", points:"-", effect:"全　確率 12% / 攻撃 190%上昇(部隊長時発動率・効果3倍)"}
       ]
     },
     {
