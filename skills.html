@@ -571,7 +571,8 @@
       sourceCharacters:[
         {name:"前田利家(4)", no:"1269", slot:"S1"},
         {name:"徳川家康(覇5)", no:"1263", slot:"C"},
-        {name:"毛利輝元(覇)", no:"1251", slot:"C"}
+        {name:"毛利輝元(覇)", no:"1251", slot:"C"},
+        {name:"加藤清正", no:"1284", slot:"C"}
       ],
       ownHiddenCandidate: {skill:"飛龍衝天", rank:"SS"},
       trTable:[
@@ -2537,21 +2538,6 @@
       ]
     },
     {
-      name:"飛龍衝天", rank:"SSS", baseRate:45, target:"全 飛翔15", noMimic:true,
-      effectSummary:"SSS/LV10 確率 45% 攻撃200%上昇/対象:全　飛翔15\n①攻撃200%上昇する\n②(7.5×防御参加武将数)%を攻撃効果に加算する(模倣不可・TR1〜TR5は未確認)",
-      categoryLinks:[
-        {href:"skills-count-atk.html", label:"人数依存(攻)スキル一覧を見る"},
-        {href:"skills-hishou-atk.html", label:"飛翔スキル一覧(攻撃)を見る"}
-      ],
-      sourceCharacters:[
-        {name:"徳川家康(覇5)", no:"1263", slot:"C"}
-      ],
-      ownHiddenCandidate: {skill:"飛龍衝天", rank:"SSS"},
-      trTable:[
-        {level:"LV10", points:"-", coefficient:"7.5", effect:"全 飛翔15　確率 45% / 攻撃 200%上昇+7.5%×防御参加武将数(280人)=2300.0%"}
-      ]
-    },
-    {
       name:"照闇騎行", rank:"SS", baseRate:100, target:"全",
       effectSummary:"SS/LV10 確率 100% 攻撃540%上昇/対象:全\n①攻撃540%上昇する\n②速度250%上昇する(TR1〜TR5は未確認)",
       sourceCharacters:[
@@ -3079,6 +3065,226 @@
       trTable:[
         {level:"LV10", points:"-", coefficient:"13", effect:"槍・弓・馬・砲　確率 50% / 攻撃 13%×飛翔を持たない防御参加武将数=上昇"},
         {level:"TR5", points:"最大鍛錬", coefficient:"18", effect:"槍・弓・馬・砲　確率 50% / 攻撃 18%×飛翔を持たない防御参加武将数=上昇"}
+      ]
+    },
+    {
+      // 鍋島直茂(No.1283)自身の初期スキル(移植不可)
+      name:"旋渦訣刀", rank:"S", baseRate:58, target:"全",
+      effectSummary:"S/LV10 確率 58% 防御480%上昇/対象:全\n①防御480%上昇する\n②部隊内で武将コストが武将スキルに影響するとき防御効果部分のみこの武将のコストを+1で計算する(特殊効果は部隊内重複不可)",
+      sourceCharacters:[
+        {name:"鍋島直茂", no:"1283", slot:"移植不可"}
+      ],
+      ownHiddenCandidate: {skill:"旋渦訣刀", rank:"S"},
+      trTable:[
+        {level:"LV10", points:"-", effect:"全　確率 58% / 防御 480%上昇(コスト+1計算・重複不可)"},
+        {level:"TR1", points:"10", effect:"全　確率 58% / 防御 600%上昇(コスト+1.0計算・重複不可)"},
+        {level:"TR2", points:"40", effect:"全　確率 58% / 防御 600%上昇(コスト+1.1計算・重複不可)"},
+        {level:"TR3", points:"90", effect:"全　確率 58% / 防御 600%上昇(コスト+1.2計算・重複不可)"},
+        {level:"TR4", points:"150", effect:"全　確率 58% / 防御 880%上昇(コスト+1.3計算・重複不可)"},
+        {level:"TR5", points:"200", effect:"全　確率 58% / 防御 880%上昇(コスト+1.5計算・重複不可)"}
+      ]
+    },
+    {
+      // 加藤清正(No.1284)自身の初期スキル。synthesisTable A・B枠でも自己参照される
+      name:"虎伐閃衝", rank:"S", baseRate:36, target:"槍・砲・器", noMimic:true,
+      effectSummary:"S/LV10 確率 36% 攻撃(敵軍総武将コスト×係数)%上昇/対象:槍・砲・器\n模倣不可\n①攻撃を敵軍総武将コスト×係数(LV10=2.1)%で上昇する",
+      sourceCharacters:[
+        {name:"加藤清正", no:"1284", slot:"A・B"}
+      ],
+      ownHiddenCandidate: {skill:"虎伐閃衝", rank:"S"},
+      trTable:[
+        {level:"LV10", points:"-", coefficient:"2.1", effect:"槍・砲・器　確率 36% / 攻撃 敵軍総武将コスト×2.1%=上昇"},
+        {level:"TR5", points:"最大鍛錬", coefficient:"3.2", effect:"槍・砲・器　確率 57% / 攻撃 敵軍総武将コスト×3.2%=上昇(TR1〜TR4は未確認)"}
+      ]
+    },
+    {
+      // 島津義久(No.1285)自身の初期スキル(移植不可)
+      name:"炎国覇弾", rank:"S", baseRate:100, target:"全", noMimic:true,
+      effectSummary:"S/LV10 確率 100% 防御540%上昇/対象:全\n①防御540%上昇する\n②所領防御陣形に配置時のみこの武将の最大指揮兵数は陣形内で最大指揮兵数の大きい武将と同兵数になる(模倣不可)",
+      sourceCharacters:[
+        {name:"島津義久", no:"1285", slot:"移植不可"}
+      ],
+      ownHiddenCandidate: {skill:"炎国覇弾", rank:"S"},
+      trTable:[
+        {level:"LV10", points:"-", effect:"全　確率 100% / 防御 540%上昇(TR別データは未確認)"}
+      ]
+    },
+    {
+      // 斎藤道三【覇】(No.1202)自身の初期スキル(移植不可)
+      name:"蛇神咆哮", rank:"SSS", baseRate:100, target:"全", noMimic:true,
+      effectSummary:"SSS/LV10 確率 100% 攻撃240%上昇/対象:全\n模倣不可\n①攻撃240%上昇する\n②対象兵科指揮時極限スキルの攻撃効果が3.5倍となる",
+      sourceCharacters:[
+        {name:"斎藤道三【覇】", no:"1202", slot:"移植不可"}
+      ],
+      ownHiddenCandidate: {skill:"蛇神咆哮", rank:"SSS"},
+      trTable:[
+        {level:"LV10", points:"-", effect:"全　確率 100% / 攻撃 240%上昇(極限スキル攻撃効果3.5倍・TR別データは未確認)"}
+      ]
+    },
+    {
+      // 黒田官兵衛【覇】(No.1214)自身の初期スキル(移植不可)
+      name:"鼎不死巴", rank:"SSS", baseRate:100, target:"全", noMimic:true,
+      effectSummary:"SSS/LV10 確率 100% 攻撃240%上昇/対象:全\n模倣不可\n①攻撃240%上昇する\n②防御240%上昇する\n③部隊内武将のスキル発動率+10%を得る\n④卓越の追加確率+40%を得る(特殊効果は自部隊内では重複不可)",
+      sourceCharacters:[
+        {name:"黒田官兵衛【覇】", no:"1214", slot:"移植不可"}
+      ],
+      ownHiddenCandidate: {skill:"鼎不死巴", rank:"SSS"},
+      trTable:[
+        {level:"LV10", points:"-", effect:"全　確率 100% / 攻撃240%上昇+防御240%上昇(発動率+10%・卓越追加確率+40%・TR別データは未確認)"}
+      ]
+    },
+    {
+      // 真田昌幸(1218)自身の初期スキル(移植不可)
+      name:"六冥緋侠ノ神謀", rank:"S", baseRate:70, target:"槍・弓・馬",
+      effectSummary:"S/LV10 確率 70% 攻撃70%上昇/対象:槍・弓・馬\n①攻撃70%上昇する\n②敵軍本丸防御陣形に配置された武将のうちこの武将のコストを下回る武将コスト差分の総和×50%を攻撃効果に加算する",
+      sourceCharacters:[
+        {name:"真田昌幸(1218)", no:"1218", slot:"移植不可"}
+      ],
+      ownHiddenCandidate: {skill:"六冥緋侠ノ神謀", rank:"S"},
+      trTable:[
+        {level:"LV10", points:"-", effect:"槍・弓・馬　確率 70% / 攻撃 70%上昇(コスト差分総和×50%加算・TR別データは未確認)"}
+      ]
+    },
+    {
+      // 前田慶次(No.1222)自身の初期スキル(移植不可)
+      name:"無苦ノ武神", rank:"S", baseRate:55, target:"槍・馬・砲・器 飛翔2", noMimic:true,
+      effectSummary:"S/LV10 確率 55% 攻撃94%上昇/対象:槍・馬・砲・器　飛翔2\n模倣不可\n①攻撃94%上昇する(4部隊以下の攻撃で効果2倍)\n②Sレア以上の追加/極限スキル1つにつき飛翔の値に4を加算する",
+      categoryLinks:[
+        {href:"skills-hishou-atk.html", label:"飛翔スキル一覧(攻撃)を見る"}
+      ],
+      sourceCharacters:[
+        {name:"前田慶次", no:"1222", slot:"移植不可"}
+      ],
+      ownHiddenCandidate: {skill:"無苦ノ武神", rank:"S"},
+      trTable:[
+        {level:"LV10", points:"-", effect:"槍・馬・砲・器 飛翔2　確率 55% / 攻撃 94%上昇(4部隊以下で2倍、追加/極限1つにつき飛翔+4・TR別データは未確認)"}
+      ]
+    },
+    {
+      // 大谷吉継(2)(No.1230)自身の初期スキル(移植不可)
+      name:"冥界ノ千里眼", rank:"S", baseRate:100, target:"追加スキル 兵站", noMimic:true,
+      effectSummary:"S/LV10 確率 100% 対象:追加スキル　兵站\n模倣不可\n①他城主の拠点に加勢中に部隊の兵士編成が可能になる\n②このスキルを持つ武将カードは追加スキルの防御・破壊効果が2倍となる",
+      categoryLinks:[
+        {href:"skills-heitan.html", label:"兵站スキル一覧を見る"}
+      ],
+      sourceCharacters:[
+        {name:"大谷吉継(2)", no:"1230", slot:"移植不可"}
+      ],
+      ownHiddenCandidate: {skill:"冥界ノ千里眼", rank:"S"},
+      trTable:[
+        {level:"LV10", points:"-", effect:"追加スキル 兵站　確率 100% / 追加スキルの防御・破壊効果 2倍(TR別データは未確認)"}
+      ]
+    },
+    {
+      // 今川義元(No.1203)自身の初期スキル(移植不可)
+      name:"赤凰幻舞", rank:"SSS", baseRate:100, target:"追加スキル", noMimic:true,
+      effectSummary:"SSS/LV10 確率 100% 対象:追加スキル\n模倣不可\n①このスキルを持つ武将カードは追加スキル(追加1/追加2/極限)の攻撃・破壊効果が2.5倍となる",
+      sourceCharacters:[
+        {name:"今川義元", no:"1203", slot:"移植不可"}
+      ],
+      ownHiddenCandidate: {skill:"赤凰幻舞", rank:"SSS"},
+      trTable:[
+        {level:"LV10", points:"-", effect:"追加スキル　確率 100% / 攻撃・破壊効果 2.5倍(TR別データは未確認)"}
+      ]
+    },
+    {
+      // 伊達政宗(覇3)(No.1226)自身の初期スキル(移植不可)。破天ノ竜撃は公式解説で模倣可能と明記されている数少ない例外スキル
+      name:"破天ノ竜撃", rank:"SSS", baseRate:32, target:"全",
+      effectSummary:"SSS/LV10 確率 32% 攻撃180%上昇/対象:全\n①攻撃180%上昇する\n②防御180%上昇する\n③自部隊内で卓越発動したスキル数×80%を攻防効果に加算する",
+      sourceCharacters:[
+        {name:"伊達政宗(覇3)", no:"1226", slot:"移植不可"}
+      ],
+      ownHiddenCandidate: {skill:"破天ノ竜撃", rank:"SSS"},
+      trTable:[
+        {level:"LV10", points:"-", effect:"全　確率 32% / 攻撃180%上昇+防御180%上昇(卓越発動数×80%加算・TR別データは未確認)"}
+      ]
+    },
+    {
+      // 島津家久(No.1261)自身の初期スキル(移植不可)
+      name:"神将火剣", rank:"S", baseRate:50, target:"槍・馬・砲・器",
+      effectSummary:"S/LV10 確率 50% 防御150%上昇/対象:槍・馬・砲・器\n①防御150%上昇する\n②自軍内で同じ兵種を指揮している武将数×12%を防御効果に加算する",
+      sourceCharacters:[
+        {name:"島津家久", no:"1261", slot:"移植不可"}
+      ],
+      ownHiddenCandidate: {skill:"神将火剣", rank:"S"},
+      trTable:[
+        {level:"LV10", points:"-", effect:"槍・馬・砲・器　確率 50% / 防御 150%上昇(同兵種指揮武将数×12%加算・TR別データは未確認)"}
+      ]
+    },
+    {
+      // 藤堂高虎(2)(No.1270)自身の初期スキル(移植不可)
+      name:"乱界遊泳", rank:"S", baseRate:100, target:"槍・馬・砲・器 兵站", noMimic:true,
+      effectSummary:"S/LV10 確率 100% 防御400%上昇/対象:槍・馬・砲・器　兵站\n模倣不可\n①防御400%上昇する\n②対象兵科指揮時極限スキルの防御効果が3.5倍となる",
+      categoryLinks:[
+        {href:"skills-heitan.html", label:"兵站スキル一覧を見る"}
+      ],
+      sourceCharacters:[
+        {name:"藤堂高虎(2)", no:"1270", slot:"移植不可"}
+      ],
+      ownHiddenCandidate: {skill:"乱界遊泳", rank:"S"},
+      trTable:[
+        {level:"LV10", points:"-", effect:"槍・馬・砲・器 兵站　確率 100% / 防御 400%上昇(極限スキル防御効果3.5倍)"},
+        {level:"TR5", points:"-", effect:"槍・馬・砲・器 兵站　確率 100% / 防御 740%上昇(極限スキル防御効果3.5倍・TR1〜TR4は未確認)"}
+      ]
+    },
+    {
+      // 上杉謙信(復刻)【覇】(No.10074)自身の初期スキル(移植不可)
+      name:"神気煌龍", rank:"SSS", baseRate:100, target:"全", noMimic:true,
+      effectSummary:"SSS/LV10 確率 100% 攻撃970%上昇/対象:全\n①攻撃970%上昇する\n②防御970%上昇する\n③この武将は飛翔｛所属部隊内の他武将が戦闘時に持つ飛翔値の合計+10｝を得る(特殊効果は模倣不可)",
+      categoryLinks:[
+        {href:"skills-hishou-atk.html", label:"飛翔スキル一覧(攻撃)を見る"}
+      ],
+      sourceCharacters:[
+        {name:"上杉謙信(復刻)【覇】", no:"10074", slot:"移植不可"}
+      ],
+      ownHiddenCandidate: {skill:"神気煌龍", rank:"SSS"},
+      trTable:[
+        {level:"LV10", points:"-", effect:"全　確率 100% / 攻撃970%上昇+防御970%上昇(飛翔+10)"},
+        {level:"TR1", points:"10", effect:"全　確率 100% / 攻撃1060%上昇+防御1060%上昇(飛翔+11)"},
+        {level:"TR2", points:"40", effect:"全　確率 100% / 攻撃1160%上昇+防御1160%上昇(飛翔+13)"},
+        {level:"TR3", points:"90", effect:"全　確率 100% / 攻撃1270%上昇+防御1270%上昇(飛翔+15)"},
+        {level:"TR4", points:"150", effect:"全　確率 100% / 攻撃1390%上昇+防御1390%上昇(飛翔+17)"},
+        {level:"TR5", points:"200", effect:"全　確率 100% / 攻撃1530%上昇+防御1530%上昇(飛翔+20)"}
+      ]
+    },
+    {
+      // 毛利輝元(復刻)【覇】(No.10075)自身の初期スキル(移植不可)
+      name:"天覇冠軍", rank:"SSS", baseRate:100, target:"全 不屈2", noMimic:true,
+      effectSummary:"SSS/LV10 確率 100% 攻撃1000%上昇/対象:全　不屈2\n模倣不可\n①攻撃1000%上昇する\n②所属部隊を含む4部隊までで自合流を行える\n③自合流時他の自分の部隊にもこのスキルの攻撃効果を加算する\n④部隊総コストからこの武将分のコストを最大3まで除外する(部隊内重複不可)",
+      categoryLinks:[
+        {href:"skills-fukutsu.html", label:"不屈スキル一覧を見る"}
+      ],
+      sourceCharacters:[
+        {name:"毛利輝元(復刻)【覇】", no:"10075", slot:"移植不可"}
+      ],
+      ownHiddenCandidate: {skill:"天覇冠軍", rank:"SSS"},
+      trTable:[
+        {level:"LV10", points:"-", effect:"全 不屈2　確率 100% / 攻撃 1000%上昇(自合流4部隊まで/コスト除外最大3)"},
+        {level:"TR1", points:"10", effect:"全 不屈2　確率 100% / 攻撃 1050%上昇(自合流4部隊まで/コスト除外最大3)"},
+        {level:"TR2", points:"40", effect:"全 不屈2　確率 100% / 攻撃 1120%上昇(自合流4部隊まで/コスト除外最大3)"},
+        {level:"TR3", points:"90", effect:"全 不屈2　確率 100% / 攻撃 1230%上昇(自合流4部隊まで/コスト除外最大3.5)"},
+        {level:"TR4", points:"150", effect:"全 不屈2　確率 100% / 攻撃 1360%上昇(自合流4部隊まで/コスト除外最大3.5)"},
+        {level:"TR5", points:"200", effect:"全 不屈2　確率 100% / 攻撃 1500%上昇(自合流4部隊まで/コスト除外最大3.5)"}
+      ]
+    },
+    {
+      // 最上義光(復刻)【覇】(No.10076)自身の初期スキル(移植不可)
+      name:"虎皇鋼牙", rank:"SSS", baseRate:45, target:"全 覇道", noMimic:true,
+      effectSummary:"SSS/LV10 確率 45% 対象:全　覇道\n模倣不可\n①本丸または所領防御陣形の最前列/最後列に配置時部隊総防御力が25%上昇する",
+      categoryLinks:[
+        {href:"skills-hadou.html", label:"覇道スキル一覧を見る"}
+      ],
+      sourceCharacters:[
+        {name:"最上義光(復刻)【覇】", no:"10076", slot:"移植不可"}
+      ],
+      ownHiddenCandidate: {skill:"虎皇鋼牙", rank:"SSS"},
+      trTable:[
+        {level:"LV10", points:"-", effect:"全 覇道　確率 45% / 最前列or最後列配置時、部隊総防御力+25%"},
+        {level:"TR1", points:"10", effect:"全 覇道　確率 45% / 最前列or最後列配置時、部隊総防御力+26%"},
+        {level:"TR2", points:"40", effect:"全 覇道　確率 45% / 最前列or最後列配置時、部隊総防御力+27%"},
+        {level:"TR3", points:"90", effect:"全 覇道　確率 45% / 最前列or最後列配置時、部隊総防御力+28%"},
+        {level:"TR4", points:"150", effect:"全 覇道　確率 45% / 最前列or最後列配置時、部隊総防御力+29%"},
+        {level:"TR5", points:"200", effect:"全 覇道　確率 45% / 最前列or最後列配置時、部隊総防御力+30%"}
       ]
     }
   ];
