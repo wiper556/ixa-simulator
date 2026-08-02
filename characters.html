@@ -1809,14 +1809,15 @@
       trTable:[
         {level:"LV10", points:"-", effect:"弓・馬・器・騎　確率 100% / 攻撃 450%上昇+速度 100%上昇"}
       ],
-      // 45do.info確認: 生HTML(skiladd_wrap)照合済み(単一ソースのみ、ixanary.comに合成候補情報なし)
+      // 45do.info(生HTML skiladd_wrap)+ameameixa.com(スキルテーブル、B候補の訂正記事あり)の2ソース照合済み、両者一致
       synthesisTable:[
         {slot:"A", skill:"猛虎嵐陣", rank:"S", afterSkill:"猛虎嵐陣", afterRank:"S", rate:"100%", target:"弓・馬・器・騎", effectShort:"攻撃450%上昇+速度100%上昇(帰還2分)"},
         {slot:"B", skill:"朧雲ノ閃撃", rank:"SSS", afterSkill:"朧雲ノ閃撃", afterRank:"SSS", rate:"100%", target:"全", effectShort:"攻撃170%上昇+速度240%上昇"},
         {slot:"C", skill:"朧雲ノ閃撃", rank:"SSS", afterSkill:"朧雲ノ閃撃", afterRank:"SSS", rate:"100%", target:"全", effectShort:"攻撃170%上昇+速度240%上昇"},
         {slot:"S1", skill:"星神闘覇", rank:"SS", afterSkill:"星神闘覇", afterRank:"SS", rate:"100%", target:"全 飛翔15", effectShort:"攻撃770%上昇+速度200%上昇"},
         {slot:"S2", skill:"国堅大神", rank:"SS", afterSkill:"国堅大神", afterRank:"SS", rate:"60%", target:"全", effectShort:"攻撃170%上昇+防御170%上昇(コスト-1)"}
-      ]},
+      ],
+      reviewedOk:true},
     {name:"里見義弘(2)", no:"1245", ch:"26章", cost:5, troop:"全攻防", sub:"", effect:"卓越発動スキル数依存で攻防上昇",
       furigana:"さとみよしひろ", illustrator:"直良有祐",
       imageFull:"assets/img/characters/no1245_full.png", imageChar:"assets/img/characters/no1245_char.png",
@@ -1845,14 +1846,15 @@
       trTable:[
         {level:"LV10", points:"-", effect:"砲　確率 100% / 攻撃 380%上昇(極限スキル攻撃効果3.5倍)"}
       ],
-      // 45do.info確認: 生HTML(skiladd_wrap)照合済み(単一ソースのみ、ixanary.comに合成候補情報なし)
+      // 45do.info(生HTML skiladd_wrap)照合済み。ameameixa.comのスキルテーブルはB候補を「月詠ノ覇威」(A候補と同一)と記載していたが45do.infoのspec_box詳細と齟齬があり誤記と判断、45do.info側(猛火ノ追撃SSS)を採用
       synthesisTable:[
         {slot:"A", skill:"月詠ノ覇威", rank:"SS", afterSkill:"月詠ノ覇威", afterRank:"SS", rate:"100%", target:"全", effectShort:"攻撃344%上昇+防御344%上昇+卓越確率+15%(模倣不可)"},
         {slot:"B", skill:"猛火ノ追撃", rank:"SSS", afterSkill:"猛火ノ追撃", afterRank:"SSS", rate:"70%", target:"槍・弓・馬", effectShort:"攻撃45%上昇(部隊総コスト依存)"},
         {slot:"C", skill:"破軍騎行", rank:"SS", afterSkill:"破軍騎行", afterRank:"SS", rate:"100%", target:"全 不屈2", effectShort:"攻撃750%上昇"},
         {slot:"S1", skill:"龍驤虎躍", rank:"SS", afterSkill:"龍驤虎躍", afterRank:"SS", rate:"60%", target:"全", effectShort:"攻撃810%上昇+防御810%上昇(コスト-1)"},
         {slot:"S2", skill:"火之迦具土神", rank:"SS", afterSkill:"火之迦具土神", afterRank:"SS", rate:"100%", target:"槍・馬・砲", effectShort:"攻撃160%上昇(卓越追加確率25%で3倍)"}
-      ]},
+      ],
+      reviewedOk:true},
     {name:"六角承禎(2)", no:"1254", ch:"27章", cost:4.5, troop:"-", sub:"兵站", effect:"追加スキルの防御効果を2.5倍にする(自領以外への加勢戦闘時のみ)",
       furigana:"ろっかくじょうてい", illustrator:"直良有祐",
       imageFull:"assets/img/characters/no1254_full.png", imageChar:"assets/img/characters/no1254_char.png",
@@ -1866,7 +1868,7 @@
       trTable:[
         {level:"LV10", points:"-", effect:"追加スキル 兵站　確率 100% / 防御効果 2.5倍(自領以外への加勢戦闘時のみ)"}
       ],
-      // 45do.info確認: 生HTML(skiladd_wrap)照合済み(単一ソースのみ、ixanary.comに合成候補情報なし)
+      // 45do.info確認: 生HTML(skiladd_wrap)再照合済み(2026-08-02)。第2ソース探索: ameameixa.comに該当記事なし(404)、ixablog.work/ixawiki.com/ameblo.jpにも合成テーブル情報なし。2ソースが揃わないため黄丸化を見送り青丸のまま維持(要ユーザー確認)
       synthesisTable:[
         {slot:"A", skill:"氷塊ノ障壁", rank:"SSS", afterSkill:"氷塊ノ障壁", afterRank:"SSS", rate:"70%", target:"全", effectShort:"防御45%上昇(部隊総コスト依存)"},
         {slot:"B", skill:"国津破邪ノ楯", rank:"SS", afterSkill:"国津破邪ノ楯", afterRank:"SS", rate:"60%", target:"全", effectShort:"防御60.04%上昇(部隊総コスト依存)"},
@@ -2158,14 +2160,15 @@
       trTable:[
         {level:"LV10", points:"-", effect:"槍・弓・馬・砲　確率 55% / 攻撃 4%×防御参加武将数(280人)=1120%"}
       ],
-      // synthesisTable: 45do.info生HTML(skiladd_wrap)照合済み、単一ソースのみ(要ユーザー確認)
+      // 45do.info(生HTML skiladd_wrap)+ameameixa.com(スキルテーブル、URLは表記揺れのbushoca-d-1236)の2ソース照合済み、両者一致
       synthesisTable:[
         {slot:"A", skill:"倫魁不羈", rank:"S", afterSkill:"倫魁不羈", afterRank:"S", rate:"55%", target:"槍・弓・馬・砲", effectShort:"攻撃(4×防御参加武将数)%上昇"},
         {slot:"B", skill:"天啓ノ神撃", rank:"SS", afterSkill:"天啓ノ神撃", afterRank:"SS", rate:"45%", target:"全", effectShort:"攻撃180%上昇(HP100以上時ランダム敵1部隊全武将に追加ダメージ5・模倣不可)"},
         {slot:"C", skill:"天津甕星ノ雷", rank:"SS", afterSkill:"天津甕星ノ雷", afterRank:"SS", rate:"100%", target:"全 覇道", effectShort:"攻撃170%上昇+速度70%上昇+覇道を持つため所属部隊の武将のスキルを無効化・発動率低下から保護"},
         {slot:"S1", skill:"十束ノ神域", rank:"SS", afterSkill:"十束ノ神域", afterRank:"SS", rate:"100%", target:"全 覇道", effectShort:"攻撃320%上昇+速度70%上昇+覇道を持つため所属部隊の武将のスキルを無効化・発動率低下から保護"},
         {slot:"S2", skill:"加具土ノ神域", rank:"SS", afterSkill:"加具土ノ神域", afterRank:"SS", rate:"25%", target:"全", effectShort:"攻撃(3.4×防御参加武将数)%上昇"}
-      ]},
+      ],
+      reviewedOk:true},
     {name:"蘆名盛氏(2)", no:"1241", ch:"26章", cost:4.5, troop:"槍馬器鉄防", sub:"", effect:"防御上昇(敵軍高コスト依存)",
       furigana:"あしなもりうじ", illustrator:"直良有祐",
       imageFull:"assets/img/characters/no1241_full.png", imageChar:"assets/img/characters/no1241_char.png",
