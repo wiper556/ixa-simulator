@@ -1598,7 +1598,7 @@
     },
     {
       name:"神光征軍", rank:"SS", baseRate:100, target:"全",
-      effectSummary:"SS/LV10 確率 100% 攻撃90%上昇/対象:全\n①攻撃90%上昇する\n②速度200%上昇する",
+      effectSummary:"SS/LV10 確率 100% 攻撃90%上昇/対象:全\n①攻撃90%上昇する\n②速度200%上昇する(TRなし)",
       sourceCharacters:[
         {name:"浅井長政(4)", no:"1244", slot:"S2"},
         {name:"前田慶次", no:"1222", slot:"A"},
@@ -1606,7 +1606,7 @@
       ],
       ownHiddenCandidate: {skill:"神光征軍", rank:"SS"},
       trTable:[
-        {level:"LV10", points:"-", effect:"全　確率 100% / 攻撃 90%上昇+速度200%上昇(TR別データは未確認)"}
+        {level:"LV10", points:"-", effect:"全　確率 100% / 攻撃 90%上昇+速度200%上昇(TRなし)"}
       ]
     },
     {
@@ -1648,7 +1648,13 @@
         {name:"大谷吉継(2)", no:"1230", slot:"A"},
         {name:"蜂須賀小六", no:"1223", slot:"C"},
         {name:"宇喜多秀家(2)", no:"1217", slot:"S1"},
-        {name:"松永久秀", no:"1209", slot:"S1"}
+        {name:"松永久秀", no:"1209", slot:"S1"},
+        // 竹中半兵衛(1215)characters.html synthesisTable C枠のafterSkillが「海神ノ浮船」であることを確認済み
+        {name:"竹中半兵衛(1215)", no:"1215", slot:"C"},
+        // 九鬼嘉隆(1212)characters.html synthesisTable S1枠のafterSkillが「海神ノ浮船」であることを確認済み
+        {name:"九鬼嘉隆", no:"1212", slot:"S1"},
+        // 津軽為信(2359)characters-kyoku.html synthesisTable S1枠(元スキル「戦陣 凪」)の移植後afterSkillが「海神ノ浮船」であることを確認済み
+        {name:"津軽為信", no:"2359", slot:"S1", db:"kyoku"}
       ],
       ownHiddenCandidate: {skill:"海神ノ浮船", rank:"SS"},
       trTable:[
@@ -2485,7 +2491,7 @@
     },
     {
       name:"瞬刻無影", rank:"S", baseRate:100, target:"部隊長",
-      effectSummary:"S/LV10 対象:部隊長\n①確率45%で部隊長の初期スキルを1.1倍に強化して模倣する\n②確率100%で速度100%上昇する",
+      effectSummary:"S/LV10 対象:部隊長\n①確率45%で部隊長の初期スキルを1.1倍に強化して模倣する\n②確率100%で速度100%上昇する(TRなし)",
       categoryLinks:[
         {href:"skills-leadermimic.html", label:"部隊長模倣スキル一覧を見る"}
       ],
@@ -2495,7 +2501,7 @@
       // ownHiddenCandidate: No.2377(武田信繁)の合成候補データ(ixagno.blog.fc2.com blog-entry-9904確認)より、瞬刻無影は移植後「朧雲ノ閃撃」[SSS]に変化することが判明したため更新
       ownHiddenCandidate: {skill:"朧雲ノ閃撃", rank:"SSS"},
       trTable:[
-        {level:"LV10", points:"-", effect:"部隊長　確率 45%/100% / 効果 部隊長の初期スキルを1.1倍に強化して模倣(確率45%)+速度 100%上昇(確率100%)(TR別データは未確認)"}
+        {level:"LV10", points:"-", effect:"部隊長　確率 45%/100% / 効果 部隊長の初期スキルを1.1倍に強化して模倣(確率45%)+速度 100%上昇(確率100%)(TRなし)"}
       ]
     },
     {
