@@ -638,12 +638,14 @@
         {level:"TR5", points:"200", effect:"卓越追加確率150%で発動 / 攻防200%上昇 / 超過分×6.8%"},
         {level:"TR6", points:"パラレル", effect:"卓越追加確率200%で発動 / 攻防200%上昇 / 超過分×7.0%"}
       ],
+      // 45do.info確認(生HTML照合済み、2026-08-02): skiladd_wrapの見出し(候補A/B/C/S1/S2)と直後のスキル名が位置対応。千里必勝ノ神算がA/B、幻像鏡花がC/S1、至天ノ御剣がS2に重複割当。
       synthesisTable:[
-        {slot:"候補", skill:"千里必勝ノ神算", rank:"SS", afterSkill:"未確認", afterRank:"未確認", rate:"42%", target:"全 覇道", effectShort:"攻撃1010%上昇+防御1010%上昇+破壊150%上昇"},
-        {slot:"候補", skill:"幻像鏡花", rank:"SSS", afterSkill:"未確認", afterRank:"未確認", rate:"56%", target:"部隊長", effectShort:"部隊長の模倣可能な初期スキルを卓越:追加確率40%で1.35倍にして模倣"},
-        {slot:"候補", skill:"至天ノ御剣", rank:"SSS", afterSkill:"未確認", afterRank:"未確認", rate:"70%", target:"自身", effectShort:"卓越:追加確率30%で自身の初期スキルを1.3倍にして模倣"}
+        {slot:"A", skill:"千里必勝ノ神算", rank:"SS", afterSkill:"千里必勝ノ神算", afterRank:"SS", rate:"42%", target:"全 覇道", effectShort:"攻撃1010%上昇+防御1010%上昇+破壊150%上昇"},
+        {slot:"B", skill:"千里必勝ノ神算", rank:"SS", afterSkill:"千里必勝ノ神算", afterRank:"SS", rate:"42%", target:"全 覇道", effectShort:"攻撃1010%上昇+防御1010%上昇+破壊150%上昇"},
+        {slot:"C", skill:"幻像鏡花", rank:"SSS", afterSkill:"幻像鏡花", afterRank:"SSS", rate:"56%", target:"部隊長", effectShort:"部隊長の模倣可能な初期スキルを卓越:追加確率40%で1.35倍にして模倣"},
+        {slot:"S1", skill:"幻像鏡花", rank:"SSS", afterSkill:"幻像鏡花", afterRank:"SSS", rate:"56%", target:"部隊長", effectShort:"部隊長の模倣可能な初期スキルを卓越:追加確率40%で1.35倍にして模倣"},
+        {slot:"S2", skill:"至天ノ御剣", rank:"SSS", afterSkill:"至天ノ御剣", afterRank:"SSS", rate:"70%", target:"自身", effectShort:"卓越:追加確率30%で自身の初期スキルを1.3倍にして模倣"}
       ],
-      synthesisNote:"A/B/C/S1/S2の対応関係、および移植後合成候補は未確認。候補スキル3種のみ判明。",
       variants:{parallel:{no:'31288', label:'パラレル'}}, currentlyInKuji:false},
     {name:"長宗我部元親(7)", no:"1289", ch:"30章", cost:6.0, troop:"槍砲器防", sub:"兵站", effect:"極限スキルの防御効果3.5倍", approved:true,
       furigana:"ちょうそかべもとちか", illustrator:"直良有祐",
