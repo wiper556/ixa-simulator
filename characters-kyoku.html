@@ -294,14 +294,14 @@
       trTable:[
         {level:"LV10", points:"-", coefficient:"5.5", effect:"槍・砲・器　確率 65% / 攻撃 420%上昇+防御参加武将数依存 5.5%×防御参加武将数(280人)=1540%"}
       ],
-      // 45do.info確認(生HTML skiladd_wrap照合済み): B/C/S1は自己参照(戦線邁進)。S2は合成テーブル欄でSS表記だが性能欄・他武将での登場は全てAのため志半ノ矛楯Aで登録
+      // 45do.info+ixagno.blog.fc2.com(blog-entry-10265)確認済み: Aの十束ノ神域は移植後「天聖宝冠」[SSS]に変化。B/C/S1(戦線邁進)/S2(志半ノ矛楯)は自己参照で両ソース一致
       synthesisTable:[
-        {slot:"A", skill:"十束ノ神域", rank:"SS", afterSkill:"十束ノ神域", afterRank:"SS", target:"全 覇道", rate:"+100%", effectShort:"攻撃320%上昇+速度70%上昇+覇道(スキル無効化・発動率低下から保護)"},
+        {slot:"A", skill:"十束ノ神域", rank:"SS", afterSkill:"天聖宝冠", afterRank:"SSS", target:"全 覇道", rate:"+100%", effectShort:"攻撃320%上昇+速度70%上昇+覇道(スキル無効化・発動率低下から保護)"},
         {slot:"B", skill:"戦線邁進", rank:"A", afterSkill:"戦線邁進", afterRank:"A", target:"槍・砲・器", rate:"65%", effectShort:"攻撃420%上昇+防御参加武将数依存5.5%"},
         {slot:"C", skill:"戦線邁進", rank:"A", afterSkill:"戦線邁進", afterRank:"A", target:"槍・砲・器", rate:"65%", effectShort:"攻撃420%上昇+防御参加武将数依存5.5%"},
         {slot:"S1", skill:"戦線邁進", rank:"A", afterSkill:"戦線邁進", afterRank:"A", target:"槍・砲・器", rate:"65%", effectShort:"攻撃420%上昇+防御参加武将数依存5.5%"},
         {slot:"S2", skill:"志半ノ矛楯", rank:"A", afterSkill:"志半ノ矛楯", afterRank:"A", target:"全", rate:"+65%", effectShort:"攻撃465%上昇+防御465%上昇(模倣不可)"}
-      ]},
+      ], reviewedOk:true},
     {name:"後藤又兵衛", no:"2390", ch:"29章", cost:4, troop:"馬砲器防", sub:"", effect:"拠点待機時間に応じて防御効果1.5倍(上限5回)",
       furigana:"ごとうまたべえ", illustrator:"BISAI",
       imageFull:"assets/img/characters/no2390_full.png", imageChar:"assets/img/characters/no2390_char.png",
@@ -314,14 +314,14 @@
         {level:"TR1", points:"10", effect:"馬・砲・器　確率 56% / 防御 100%上昇(拠点待機80分毎に1.5倍・上限5回)"},
         {level:"TR2", points:"40", effect:"馬・砲・器　確率 56% / 防御 115%上昇(拠点待機70分毎に1.5倍・上限5回)"}
       ],
-      // 45do.info確認(生HTML skiladd_wrap照合済み): C/S1は自己参照(武神ノ采配)
+      // 45do.info+ixagno.blog.fc2.com(blog-entry-10313)確認済み: Aの凜武艶姫は移植後「戦陣無縫」に、Bの戦陣無縫は移植後「天衣無縫神戒」[SS]に変化。C/S1は自己参照(武神ノ采配)で両ソース一致
       synthesisTable:[
-        {slot:"A", skill:"凜武艶姫", rank:"A", afterSkill:"凜武艶姫", afterRank:"A", target:"弓・砲・器", rate:"+40%", effectShort:"防御15%上昇(部隊の総コストで変動)"},
-        {slot:"B", skill:"戦陣 無縫", rank:"A", afterSkill:"戦陣 無縫", afterRank:"A", target:"全", rate:"+42%", effectShort:"防御80%上昇(部隊の総コストで変動)"},
+        {slot:"A", skill:"凜武艶姫", rank:"A", afterSkill:"戦陣 無縫", afterRank:"A", target:"弓・砲・器", rate:"+40%", effectShort:"防御15%上昇(部隊の総コストで変動)"},
+        {slot:"B", skill:"戦陣 無縫", rank:"A", afterSkill:"天衣無縫神戒", afterRank:"SS", target:"全", rate:"+42%", effectShort:"防御80%上昇(部隊の総コストで変動)"},
         {slot:"C", skill:"武神ノ采配", rank:"A", afterSkill:"武神ノ采配", afterRank:"A", target:"馬・砲・器", rate:"56%", effectShort:"防御95%上昇(拠点待機90分毎に1.5倍・上限5回)"},
         {slot:"S1", skill:"武神ノ采配", rank:"A", afterSkill:"武神ノ采配", afterRank:"A", target:"馬・砲・器", rate:"56%", effectShort:"防御95%上昇(拠点待機90分毎に1.5倍・上限5回)"},
         {slot:"S2", skill:"志半ノ矛楯", rank:"A", afterSkill:"志半ノ矛楯", afterRank:"A", target:"全", rate:"+65%", effectShort:"攻撃465%上昇+防御465%上昇(模倣不可)"}
-      ]},
+      ], reviewedOk:true},
     {name:"安宅冬康", no:"2391", ch:"29章", cost:4.5, troop:"弓馬器攻", sub:"不屈", effect:"自部隊同時攻撃時、不屈を得る(特殊効果は模倣不可)",
       furigana:"あたぎふゆやす", illustrator:"JaneMere",
       imageFull:"assets/img/characters/no2391_full.png", imageChar:"assets/img/characters/no2391_char.png",
@@ -332,14 +332,14 @@
       trTable:[
         {level:"LV10", points:"-", effect:"弓・馬・器・焙 不屈　確率 38% / 攻撃 410%上昇"}
       ],
-      // 45do.info確認(生HTML skiladd_wrap照合済み): C/S1は自己参照(星詠ム仁将)
+      // 45do.info+ixagno.blog.fc2.com(blog-entry-10312)確認済み: Aの空陣鳴響は移植後「悪屋形」[S]に、Bの破克閃剣は移植後「戦陣 剣舞」に変化。C/S1は自己参照(星詠ム仁将)で両ソース一致
       synthesisTable:[
-        {slot:"A", skill:"空陣鳴響", rank:"A", afterSkill:"空陣鳴響", afterRank:"A", target:"槍・弓・馬・砲", rate:"+60%", effectShort:"攻撃300%上昇+自部隊同時攻撃時消費名声-20(重複不可)"},
-        {slot:"B", skill:"破克閃剣", rank:"A", afterSkill:"破克閃剣", afterRank:"A", target:"槍・弓・器", rate:"+48%", effectShort:"攻撃350%上昇+不屈1"},
+        {slot:"A", skill:"空陣鳴響", rank:"A", afterSkill:"悪屋形", afterRank:"S", target:"槍・弓・馬・砲", rate:"+60%", effectShort:"攻撃300%上昇+自部隊同時攻撃時消費名声-20(重複不可)"},
+        {slot:"B", skill:"破克閃剣", rank:"A", afterSkill:"戦陣 剣舞", afterRank:"A", target:"槍・弓・器", rate:"+48%", effectShort:"攻撃350%上昇+不屈1"},
         {slot:"C", skill:"星詠ム仁将", rank:"A", afterSkill:"星詠ム仁将", afterRank:"A", target:"弓・馬・器・焙 不屈", rate:"38%", effectShort:"攻撃410%上昇+合流自部隊数-2の不屈(特殊効果は模倣不可)"},
         {slot:"S1", skill:"星詠ム仁将", rank:"A", afterSkill:"星詠ム仁将", afterRank:"A", target:"弓・馬・器・焙 不屈", rate:"38%", effectShort:"攻撃410%上昇+合流自部隊数-2の不屈(特殊効果は模倣不可)"},
         {slot:"S2", skill:"志半ノ矛楯", rank:"A", afterSkill:"志半ノ矛楯", afterRank:"A", target:"全", rate:"+65%", effectShort:"攻撃465%上昇+防御465%上昇(模倣不可)"}
-      ]},
+      ], reviewedOk:true},
     {name:"稲葉一鉄", no:"2392", ch:"29章", cost:4, troop:"-", sub:"兵站", effect:"自領以外の加勢戦闘時のみ追加スキルの防御効果が2倍(模倣不可)",
       furigana:"いなばいってつ", illustrator:"池田宗隆",
       imageFull:"assets/img/characters/no2392_full.png", imageChar:"assets/img/characters/no2392_char.png",
@@ -352,14 +352,14 @@
         {level:"TR1", points:"10", effect:"追加スキル 兵站　確率 100% / 防御効果(自領以外加勢時) 2.1倍"},
         {level:"TR2", points:"40", effect:"追加スキル 兵站　確率 100% / 防御効果(自領以外加勢時) 2.2倍"}
       ],
-      // 45do.info確認(生HTML skiladd_wrap照合済み): 自己スキル(鉄花ノ陣)は候補に含まれず、A/Bは戦陣無縫
+      // 45do.info+ixagno.blog.fc2.com(blog-entry-10361)確認済み: 自己スキル(鉄花ノ陣)は候補に含まれず。A/Bの戦陣無縫は移植後「天衣無縫神戒」[SS]に変化(自己参照ではない)
       synthesisTable:[
-        {slot:"A", skill:"戦陣 無縫", rank:"A", afterSkill:"戦陣 無縫", afterRank:"A", target:"馬・砲・器", rate:"+100%", effectShort:"攻撃155%上昇+防御155%上昇+部隊内卓越追加確率+15%(模倣不可・特殊効果は自部隊内では重複不可)"},
-        {slot:"B", skill:"戦陣 無縫", rank:"A", afterSkill:"戦陣 無縫", afterRank:"A", target:"馬・砲・器", rate:"+100%", effectShort:"攻撃155%上昇+防御155%上昇+部隊内卓越追加確率+15%(模倣不可・特殊効果は自部隊内では重複不可)"},
+        {slot:"A", skill:"戦陣 無縫", rank:"A", afterSkill:"天衣無縫神戒", afterRank:"SS", target:"馬・砲・器", rate:"+100%", effectShort:"攻撃155%上昇+防御155%上昇+部隊内卓越追加確率+15%(模倣不可・特殊効果は自部隊内では重複不可)"},
+        {slot:"B", skill:"戦陣 無縫", rank:"A", afterSkill:"天衣無縫神戒", afterRank:"SS", target:"馬・砲・器", rate:"+100%", effectShort:"攻撃155%上昇+防御155%上昇+部隊内卓越追加確率+15%(模倣不可・特殊効果は自部隊内では重複不可)"},
         {slot:"C", skill:"天衣無縫神戒", rank:"SS", afterSkill:"天衣無縫神戒", afterRank:"SS", target:"全", rate:"+50%", effectShort:"防御30.02%上昇(部隊の総コストで変動)"},
         {slot:"S1", skill:"国津破邪ノ楯", rank:"SS", afterSkill:"国津破邪ノ楯", afterRank:"SS", target:"全", rate:"+60%", effectShort:"防御60.04%上昇(部隊の総コストで変動)"},
         {slot:"S2", skill:"志半ノ矛楯", rank:"A", afterSkill:"志半ノ矛楯", afterRank:"A", target:"全", rate:"+65%", effectShort:"攻撃465%上昇+防御465%上昇(模倣不可)"}
-      ]},
+      ], reviewedOk:true},
     {name:"栗山利安", no:"2393", ch:"29章", cost:4.5, troop:"槍砲器防", sub:"", effect:"最大指揮兵数と同数指揮時、防御効果1.5倍",
       furigana:"くりやまとしやす", illustrator:"添田一平",
       imageFull:"assets/img/characters/no2393_full.png", imageChar:"assets/img/characters/no2393_char.png",
@@ -370,14 +370,14 @@
       trTable:[
         {level:"LV10", points:"-", effect:"槍・砲・器　確率 46% / 防御 280%上昇(最大指揮兵数と同数指揮時1.5倍)"}
       ],
-      // 45do.info確認(生HTML skiladd_wrap照合済み): B/C/S1は自己参照(大剛一念)
+      // 45do.info+ixagno.blog.fc2.com(blog-entry-10360)確認済み: Aの鬼十河は移植後「朝曇ノ明麗」[S]に変化。B/C/S1は自己参照(大剛一念)で両ソース一致
       synthesisTable:[
-        {slot:"A", skill:"鬼十河", rank:"A", afterSkill:"鬼十河", afterRank:"A", target:"槍・砲・器", rate:"+50%", effectShort:"防御360%上昇+所領防御陣形配置時コスト消費-1(模倣不可)"},
+        {slot:"A", skill:"鬼十河", rank:"A", afterSkill:"朝曇ノ明麗", afterRank:"S", target:"槍・砲・器", rate:"+50%", effectShort:"防御360%上昇+所領防御陣形配置時コスト消費-1(模倣不可)"},
         {slot:"B", skill:"大剛一念", rank:"A", afterSkill:"大剛一念", afterRank:"A", target:"槍・砲・器", rate:"46%", effectShort:"防御280%上昇(最大指揮兵数と同数指揮時1.5倍)"},
         {slot:"C", skill:"大剛一念", rank:"A", afterSkill:"大剛一念", afterRank:"A", target:"槍・砲・器", rate:"46%", effectShort:"防御280%上昇(最大指揮兵数と同数指揮時1.5倍)"},
         {slot:"S1", skill:"大剛一念", rank:"A", afterSkill:"大剛一念", afterRank:"A", target:"槍・砲・器", rate:"46%", effectShort:"防御280%上昇(最大指揮兵数と同数指揮時1.5倍)"},
         {slot:"S2", skill:"志半ノ矛楯", rank:"A", afterSkill:"志半ノ矛楯", afterRank:"A", target:"全", rate:"+65%", effectShort:"攻撃465%上昇+防御465%上昇(模倣不可)"}
-      ]},
+      ], reviewedOk:true},
     {name:"伊達成実", no:"2336", ch:"未確認", cost:4, troop:"槍弓砲攻", sub:"", effect:"攻撃戦闘時卓越で自部隊の兵士被害減少",
       furigana:"だてしげざね", illustrator:"JaneMere",
       imageFull:"assets/img/characters/no2336_full.png", imageChar:"assets/img/characters/no2336_char.png",
