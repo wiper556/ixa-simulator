@@ -48,6 +48,9 @@
     background:rgba(184,64,47,0.1);color:var(--vermillion-bright);border:1px solid var(--vermillion);
   }
   .skl-no-detail{color:var(--muted);font-size:13px;padding:20px;text-align:center;border:1px dashed var(--line);border-radius:8px;}
+  .skl-s2-filter{margin-bottom:10px;}
+  .skl-toggle{display:inline-flex;align-items:center;gap:7px;font-size:12.5px;color:var(--muted);cursor:pointer;user-select:none;}
+  .skl-toggle input{width:16px;height:16px;cursor:pointer;accent-color:var(--gold);}
 
   @media (max-width:600px){
     .skl-stat-table{font-size:12px;}
@@ -95,6 +98,9 @@
     </div>
 
     <div id="detailView" style="display:none;">
+      <div class="skl-s2-filter">
+        <label class="skl-toggle"><input type="checkbox" id="sklHideS2">S2(同一カード2枚合成)を非表示</label>
+      </div>
       <div id="sklDetailBody"></div>
       <div id="sklComments"></div>
     </div>
@@ -2965,6 +2971,13 @@
   document.getElementById('sklSearchBox').addEventListener('input', sklDoSearch);
 
   // ============ 詳細表示 ============
+  // S2(同一カードを2枚合成する専用枠)を非表示にするグローバルトグル。ページ全体で1つの設定を共有する。
+  let sklHideS2 = false;
+
+  function sklIsS2Slot(slot){
+    return String(slot||'').split('・').some(function(t){ return t.trim().indexOf('S2') === 0; });
+  }
+
   function sklRenderDetail(s){
     const body = document.getElementById('sklDetailBody');
     const flags = [];
@@ -2993,12 +3006,19 @@
       ) : '')
       + (s.sourceCharacters && s.sourceCharacters.length ? (
         '<div class="skl-detail-block"><h2>入手可能な武将(合成素材)</h2>'
-        + '<div class="skl-table-scroll"><table class="skl-stat-table"><thead><tr><th class="skl-col-wrap">武将</th><th class="skl-col-narrow">候補</th></tr></thead><tbody>'
-        + s.sourceCharacters.map(function(row){
-            const dbPage = row.db === 'kyoku' ? 'characters-kyoku.html' : 'characters.html';
-            return '<tr><td class="skl-col-wrap"><a href="'+dbPage+'#'+encodeURIComponent(row.no)+'">'+sklEscapeHtml(row.name)+' No.'+sklEscapeHtml(row.no)+'</a></td><td class="skl-col-narrow">'+sklEscapeHtml(row.slot)+'</td></tr>';
-          }).join('')
-        + '</tbody></table></div></div>'
+        + (function(){
+            const filteredSources = sklHideS2 ? s.sourceCharacters.filter(function(c){ return !sklIsS2Slot(c.slot); }) : s.sourceCharacters;
+            if(filteredSources.length === 0){
+              return '<div class="skl-effect-text" style="color:var(--muted);">S2以外の入手経路はありません</div>';
+            }
+            return '<div class="skl-table-scroll"><table class="skl-stat-table"><thead><tr><th class="skl-col-wrap">武将</th><th class="skl-col-narrow">候補</th></tr></thead><tbody>'
+              + filteredSources.map(function(row){
+                  const dbPage = row.db === 'kyoku' ? 'characters-kyoku.html' : 'characters.html';
+                  return '<tr><td class="skl-col-wrap"><a href="'+dbPage+'#'+encodeURIComponent(row.no)+'">'+sklEscapeHtml(row.name)+' No.'+sklEscapeHtml(row.no)+'</a></td><td class="skl-col-narrow">'+sklEscapeHtml(row.slot)+'</td></tr>';
+                }).join('')
+              + '</tbody></table></div>';
+          })()
+        + '</div>'
       ) : '')
       + (s.ownHiddenCandidate ? (
         '<div class="skl-detail-block"><h2>このスキルを習得済みのカードを合成素材にした場合の隠し候補</h2>'
@@ -3044,6 +3064,13 @@
     if(window.renderCommentsWidget) renderCommentsWidget('sklComments', 'skill:'+s.name);
     window.scrollTo(0, 0);
   }
+
+  document.getElementById('sklHideS2').addEventListener('change', function(){
+    sklHideS2 = this.checked;
+    const hash = decodeURIComponent(location.hash.replace('#',''));
+    const s = skills.find(function(x){ return x.name === hash; });
+    if(s) sklRenderDetail(s);
+  });
 
   window.addEventListener('hashchange', sklRoute);
   sklRenderList(skills);

@@ -25,6 +25,9 @@
     background:#fff;border:1px solid var(--line);color:var(--paper);border-radius:5px;
   }
   .tk-search input:focus{outline:none;border-color:var(--gold);}
+  .s2-hide-filter{margin-bottom:14px;}
+  .s2-hide-toggle{display:inline-flex;align-items:center;gap:7px;font-size:12.5px;color:var(--muted);cursor:pointer;user-select:none;}
+  .s2-hide-toggle input{width:16px;height:16px;cursor:pointer;accent-color:var(--gold);}
 
   @media (max-width:600px){
     .tk-table{font-size:12px;}
@@ -67,6 +70,10 @@
 
     <div class="tk-search">
       <input type="text" id="tkSearchBox" placeholder="スキル名または武将名で検索(例: 三全将帥、伊達政宗 など)">
+    </div>
+
+    <div class="s2-hide-filter">
+      <label class="s2-hide-toggle"><input type="checkbox" id="tkHideS2Toggle">S2のみで入手可能なスキルを非表示</label>
     </div>
 
     <h2 class="tk-subtitle">卓越発動効果(倍率アップ等)</h2>
@@ -294,10 +301,22 @@
     return (s.sourceCharacters || []).some(function(c){ return c.name.toLowerCase().includes(q); });
   }
 
+  // S2(同一カード2枚合成専用枠)のみで入手可能なスキルを非表示にするトグル。sourceCharactersの全件がS2枠の場合のみ対象。
+  let tkHideS2 = false;
+
+  function tkIsS2Slot(slot){
+    return String(slot||'').split('・').some(function(t){ return t.trim().indexOf('S2') === 0; });
+  }
+
+  function tkIsAllS2(s){
+    const list = s.sourceCharacters || [];
+    return list.length > 0 && list.every(function(c){ return tkIsS2Slot(c.slot); });
+  }
+
   function tkRenderList(fullList, elId){
     const el = document.getElementById(elId);
     const q = document.getElementById('tkSearchBox').value.trim().toLowerCase();
-    const list = fullList.filter(function(s){ return tkMatchesSearch(s, q); });
+    const list = fullList.filter(function(s){ return tkMatchesSearch(s, q) && (!tkHideS2 || !tkIsAllS2(s)); });
     if(list.length === 0){
       el.innerHTML = '<tr><td colspan="6" style="text-align:center;color:var(--muted);">該当するスキルが見つかりません</td></tr>';
       return;
@@ -320,6 +339,10 @@
   }
 
   document.getElementById('tkSearchBox').addEventListener('input', tkRenderAll);
+  document.getElementById('tkHideS2Toggle').addEventListener('change', function(){
+    tkHideS2 = this.checked;
+    tkRenderAll();
+  });
 
   tkRenderAll();
 </script>

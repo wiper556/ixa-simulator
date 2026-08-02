@@ -23,6 +23,9 @@
     background:#fff;border:1px solid var(--line);color:var(--paper);border-radius:5px;
   }
   .mm-search input:focus{outline:none;border-color:var(--gold);}
+  .s2-hide-filter{margin-bottom:14px;}
+  .s2-hide-toggle{display:inline-flex;align-items:center;gap:7px;font-size:12.5px;color:var(--muted);cursor:pointer;user-select:none;}
+  .s2-hide-toggle input{width:16px;height:16px;cursor:pointer;accent-color:var(--gold);}
 
   @media (max-width:600px){
     .mm-table{font-size:12px;}
@@ -65,6 +68,10 @@
 
     <div class="mm-search">
       <input type="text" id="mmSearchBox" placeholder="スキル名または武将名で検索(例: 経津主神ノ剣、石田三成 など)">
+    </div>
+
+    <div class="s2-hide-filter">
+      <label class="s2-hide-toggle"><input type="checkbox" id="mmHideS2Toggle">S2のみで入手可能なスキルを非表示</label>
     </div>
 
     <div class="mm-table-scroll">
@@ -168,10 +175,22 @@
     return (s.sourceCharacters || []).some(function(c){ return c.name.toLowerCase().includes(q); });
   }
 
+  // S2(同一カード2枚合成専用枠)のみで入手可能なスキルを非表示にするトグル。sourceCharactersの全件がS2枠の場合のみ対象。
+  let mmHideS2 = false;
+
+  function mmIsS2Slot(slot){
+    return String(slot||'').split('・').some(function(t){ return t.trim().indexOf('S2') === 0; });
+  }
+
+  function mmIsAllS2(s){
+    const list = s.sourceCharacters || [];
+    return list.length > 0 && list.every(function(c){ return mmIsS2Slot(c.slot); });
+  }
+
   function mmRender(){
     const el = document.getElementById('mmList');
     const q = document.getElementById('mmSearchBox').value.trim().toLowerCase();
-    const list = mimicSkills.filter(function(s){ return mmMatchesSearch(s, q); });
+    const list = mimicSkills.filter(function(s){ return mmMatchesSearch(s, q) && (!mmHideS2 || !mmIsAllS2(s)); });
     if(list.length === 0){
       el.innerHTML = '<tr><td colspan="6" style="text-align:center;color:var(--muted);">該当するスキルが見つかりません</td></tr>';
       return;
@@ -188,6 +207,10 @@
   }
 
   document.getElementById('mmSearchBox').addEventListener('input', mmRender);
+  document.getElementById('mmHideS2Toggle').addEventListener('change', function(){
+    mmHideS2 = this.checked;
+    mmRender();
+  });
 
   mmRender();
 </script>
