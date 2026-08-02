@@ -2128,14 +2128,15 @@
       trTable:[
         {level:"LV10", points:"-", effect:"全　確率 100% / 攻撃 184%上昇+防御 184%上昇(卓越追加確率+25%)"}
       ],
-      // 45do.info確認: 生HTML(skiladd_wrap)照合済み(単一ソースのみ、ixanary.comに合成候補情報なし)
+      // 45do.info(生HTML skiladd_wrap)+ameameixa.com(スキルテーブル)の2ソース照合済み、両者一致
       synthesisTable:[
         {slot:"A", skill:"閻魔ノ裁き", rank:"S", afterSkill:"閻魔ノ裁き", afterRank:"S", rate:"100%", target:"全", effectShort:"攻撃184%上昇+防御184%上昇(卓越追加確率+25%)"},
         {slot:"B", skill:"閻魔ノ裁き", rank:"S", afterSkill:"閻魔ノ裁き", afterRank:"S", rate:"100%", target:"全", effectShort:"攻撃184%上昇+防御184%上昇(卓越追加確率+25%)"},
         {slot:"C", skill:"建御雷神ノ閃光", rank:"SS", afterSkill:"建御雷神ノ閃光", afterRank:"SS", rate:"100%", target:"全 飛翔5", effectShort:"攻撃210%上昇+防御210%上昇+卓越確率+35%(模倣不可)"},
         {slot:"S1", skill:"月詠ノ覇威", rank:"SS", afterSkill:"月詠ノ覇威", afterRank:"SS", rate:"100%", target:"全", effectShort:"攻撃344%上昇+防御344%上昇+卓越確率+15%(模倣不可)"},
         {slot:"S2", skill:"開闢ノ逆鉾", rank:"SS", afterSkill:"開闢ノ逆鉾", afterRank:"SS", rate:"100%", target:"全", effectShort:"攻撃254%上昇(卓越追加確率30%で兵士被害15%減少)"}
-      ]},
+      ],
+      reviewedOk:true},
     {name:"島津義弘(3)", no:"1232", ch:"25章", cost:4, troop:"槍馬器防", sub:"", effect:"防御上昇／本丸防御陣形時編成コスト消費-1",
       furigana:"しまづよしひろ", illustrator:"直良有祐",
       imageFull:"assets/img/characters/no1232_full.png", imageChar:"assets/img/characters/no1232_char.png",
@@ -2146,14 +2147,15 @@
       trTable:[
         {level:"LV10", points:"-", effect:"槍・馬・器　確率 62% / 防御 190%上昇(本丸防御陣形時コスト消費-1.5)"}
       ],
-      // 45do.info確認: 生HTML(skiladd_wrap)照合済み(単一ソースのみ、ixanary.comに合成候補情報なし、この武将自身の初期スキルは候補にA枠のみ含まれる)
+      // 45do.info(生HTML skiladd_wrap)+ameameixa.com(スキルテーブル)の2ソース照合済み、両者一致(この武将自身の初期スキルは候補にA枠のみ含まれる)
       synthesisTable:[
         {slot:"A", skill:"鬼神ノ軍法", rank:"S", afterSkill:"鬼神ノ軍法", afterRank:"S", rate:"62%", target:"槍・馬・器", effectShort:"防御190%上昇(本丸防御陣形時コスト消費-1.5)"},
         {slot:"B", skill:"黄泉醜女ノ屍兵", rank:"SS", afterSkill:"黄泉醜女ノ屍兵", afterRank:"SS", rate:"54%", target:"全", effectShort:"防御200%上昇(70以下被ダメージ上限45)"},
         {slot:"C", skill:"国津破邪ノ楯", rank:"SS", afterSkill:"国津破邪ノ楯", afterRank:"SS", rate:"60%", target:"全", effectShort:"防御60.04%上昇(部隊総コスト依存)"},
         {slot:"S1", skill:"四天轟雷", rank:"SS", afterSkill:"四天轟雷", afterRank:"SS", rate:"100%", target:"全", effectShort:"攻撃360%上昇+防御360%上昇(部隊内初期スキルに砲・器対象追加)"},
         {slot:"S2", skill:"星宿劫ノ法壁", rank:"SS", afterSkill:"星宿劫ノ法壁", afterRank:"SS", rate:"49%", target:"全", effectShort:"防御120%上昇(本丸防御陣形第参列目以降で3倍)"}
-      ]},
+      ],
+      reviewedOk:true},
     {name:"水野勝成", no:"1236", ch:"25章", cost:4, troop:"槍弓馬砲攻", sub:"", effect:"防御参加武将数依存で攻撃上昇",
       furigana:"みずのかつなり", illustrator:"直良有祐",
       imageFull:"assets/img/characters/no1236_full.png", imageChar:"assets/img/characters/no1236_char.png",
@@ -2186,14 +2188,15 @@
       trTable:[
         {level:"LV10", points:"-", effect:"槍・馬・器・鉄　確率 49% / 防御 120%上昇+敵軍超過コスト総和×16%加算"}
       ],
-      // synthesisTable: 45do.info生HTML(skiladd_wrap)照合済み、単一ソースのみ(要ユーザー確認)
+      // 45do.info(生HTML skiladd_wrap)+ameameixa.com(スキルテーブル)の2ソース照合済み。B候補はameameixa側がA候補と同一(高津姫神)の誤記とみられ、45do.info側(八重言代主神、skills.htmlにも登録済み)を採用。S1のランクは45do.info側がSSとしていたが、45do.info内の他ページ(No.1235)・ameameixa・skills.htmlがいずれもSSSのため、45do.info側のSS表記を誤記とみなしSSSに補正
       synthesisTable:[
         {slot:"A", skill:"高津姫神", rank:"SS", afterSkill:"高津姫神", afterRank:"SS", rate:"70%", target:"自身", effectShort:"自身が持つ初期スキルを模倣する(戦闘スキルのみ)"},
         {slot:"B", skill:"八重言代主神", rank:"SS", afterSkill:"八重言代主神", afterRank:"SS", rate:"70%", target:"自身", effectShort:"自身が持つ初期スキルを模倣する(戦闘スキルのみ)"},
         {slot:"C", skill:"神屋楯比売命", rank:"SS", afterSkill:"神屋楯比売命", afterRank:"SS", rate:"70%", target:"自身", effectShort:"自身が持つ初期スキルを模倣する(戦闘スキルのみ)"},
-        {slot:"S1", skill:"四至ノ神域", rank:"SS", afterSkill:"四至ノ神域", afterRank:"SS", rate:"70%", target:"自身", effectShort:"自身が持つ初期スキルを通常攻撃/防御効果1.25倍にして模倣する"},
+        {slot:"S1", skill:"四至ノ神域", rank:"SSS", afterSkill:"四至ノ神域", afterRank:"SSS", rate:"70%", target:"自身", effectShort:"自身が持つ初期スキルを通常攻撃/防御効果1.25倍にして模倣する"},
         {slot:"S2", skill:"黄泉醜女ノ屍兵", rank:"SS", afterSkill:"黄泉醜女ノ屍兵", afterRank:"SS", rate:"54%", target:"全", effectShort:"防御200%上昇+防御戦闘時自部隊内武将が受ける70以下のダメージを最大45に軽減"}
-      ]},
+      ],
+      reviewedOk:true},
     {name:"本願寺顕如(2)", no:"1246", ch:"26章", cost:4.5, troop:"槍馬砲器防", sub:"", effect:"防御上昇／防御戦闘時敵軍の卓越追加確率を低下",
       furigana:"ほんがんじけんにょ", illustrator:"直良有祐",
       imageFull:"assets/img/characters/no1246_full.png", imageChar:"assets/img/characters/no1246_char.png",
