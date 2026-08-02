@@ -266,6 +266,9 @@
       rankGrades:{yari:'A', yumi:'X', uma:'A', ki:'S'},
       initialSkill:"西覇冠軍",
       skillDetail:"SSS/LV10 確率 100% 攻撃540%上昇/対象:全　不屈1\n模倣不可\n①攻撃540%上昇する\n②不屈1を持つ\n③自身合流時、自分の他部隊にもこの攻撃効果を加算する\n④部隊総コストからこの武将分のコストを最大3(TR3以降3.5)まで除外する(部隊内重複不可)",
+      categoryLinks:[
+        {href:"skills-fukutsu.html", label:"不屈スキル一覧を見る"}
+      ],
       trTable:[
         {level:"LV10", points:"-", effect:"全 不屈1　確率 100% / 攻撃 540%上昇(コスト除外3)"},
         {level:"TR1", points:"10", effect:"全 不屈1　確率 100% / 攻撃 570%上昇(コスト除外3)"},
@@ -281,7 +284,7 @@
         {slot:"C", skill:"星神闘覇", rank:"SS", afterSkill:"星神闘覇", afterRank:"SS", rate:"100%", target:"全 飛翔15", effectShort:"攻撃770%上昇+速度200%上昇"},
         {slot:"S1", skill:"破邪後輝", rank:"SS", afterSkill:"飛龍衝天", afterRank:"SS", rate:"100%", target:"全 覇道", effectShort:"攻撃770%上昇+速度150%上昇+破壊150%上昇"},
         {slot:"S2", skill:"十束ノ神域", rank:"SS", afterSkill:"天聖宝冠", afterRank:"SSS", rate:"100%", target:"全 覇道", effectShort:"攻撃320%上昇+速度70%上昇"}
-      ]},
+      ], reviewedOk:true},
     {name:"最上義光(覇)", no:"1262", ch:"28章", cost:5.5, troop:"全防", sub:"覇道", effect:"本丸/所領防御陣形の最前列か最後列配置時、部隊総防御力20%上昇",
       furigana:"もがみよしあき", illustrator:"直良有祐",
       imageFull:"assets/img/characters/no1262_full.png", imageChar:"assets/img/characters/no1262_char.png",
@@ -308,7 +311,7 @@
         {slot:"C", skill:"虚実兵妙", rank:"SS", afterSkill:"虚実兵妙", afterRank:"SS", rate:"100%", target:"全", effectShort:"防御740%上昇+敵軍卓越確率-8%"},
         {slot:"S1", skill:"月煌侵蝕", rank:"SSS", afterSkill:"月煌侵蝕", afterRank:"SSS", rate:"45%", target:"全 兵站", effectShort:"防御を係数×人数で上昇"},
         {slot:"S2", skill:"黄泉醜女ノ屍兵", rank:"SS", afterSkill:"黄泉醜女ノ屍兵", afterRank:"SS", rate:"54%", target:"全", effectShort:"防御200%上昇+70以下の被ダメージを45に軽減"}
-      ]},
+      ], reviewedOk:true},
     {name:"上杉景勝(6)", no:"1301", ch:"31章", cost:5.5, troop:"全防", sub:"", effect:"模倣スキルのレアリティ係数によって防御効果が上昇", reviewedOk:true, approved:true,
       furigana:"うえすぎかげかつ", illustrator:"直良有祐",
       imageFull:"assets/img/characters/no1301_full.png", imageChar:"assets/img/characters/no1301_char.png",
@@ -456,7 +459,7 @@
         {slot:"C", skill:"天宇受売命", rank:"SSS", afterSkill:"天宇受売命", afterRank:"SSS", rate:"70%", target:"自身", effectShort:"自身の初期スキルを1.25倍にして模倣"},
         {slot:"S1", skill:"火槍猛進", rank:"S", afterSkill:"火槍猛進", afterRank:"S", rate:"55%", target:"槍・弓・器・鉄 無尽", effectShort:"防御740%×2(部隊コスト10以下)=1480%上昇"},
         {slot:"S2", skill:"四天轟雷", rank:"SS", afterSkill:"四天轟雷", afterRank:"SS", rate:"100%", target:"全", effectShort:"攻防360%上昇+砲・器対象追加"}
-      ]},
+      ], reviewedOk:true},
     {name:"毛利輝元(5)", no:"1306", ch:"31章", cost:5.0, troop:"弓砲器攻", sub:"", effect:"敵軍部隊数依存",
       furigana:"もうりてるもと", illustrator:"直良有祐",
       imageFull:"assets/img/characters/no1306_full.png", imageChar:"assets/img/characters/no1306_char.png",
@@ -474,16 +477,14 @@
         {level:"TR5", points:"200", effect:"弓・砲・器　確率 45% / 攻撃 150%上昇+敵軍部隊数×44%"},
         {level:"TR6", points:"パラレル", effect:"弓・砲・器 不屈1　確率 45% / 攻撃 150%上昇+敵軍部隊数×45%"}
       ],
-      // ixagno.blog.fc2.com生HTML照合済み(2026-07-31、blog-entry-10827)。
-      // 2026-07-31黄丸化検証時: 45do.info検索(「毛利輝元」)は該当記事無し(31章カード自体の記事が未執筆)、ixanary.com(/cards/1306/)は個別カードページに合成テーブルの掲載が無く突き合わせ不可。
-      // ルール上reviewedOk:trueには合成テーブルの2ソース照合が必須だが、上記の通り現状ixagno.blog.fc2.com以外の裏取りが取れないため、この武将は青丸のまま維持する(要ユーザー確認)。
+      // ixagno.blog.fc2.com生HTML照合済み(2026-07-31、blog-entry-10827)+ameameixa.com(tenskil-31sho「【31章】天武将スキルテーブル一覧」表のNo.1306行)の両ソースでA/B/C/S1/S2の並びが一致確認済み(2026-08-02)。B枠の移植後スキル(布刀玉ノ策→?)は両ソースとも未掲載のため空欄のまま。
       synthesisTable:[
         {slot:"A", skill:"開闢ノ逆鉾", rank:"SS", afterSkill:"開闢ノ逆鉾", afterRank:"SS", rate:"100%", target:"全", effectShort:"攻撃254%上昇(卓越追加確率30%で兵士被害15%減少)"},
         {slot:"B", skill:"布刀玉ノ策", rank:"SS", afterSkill:"", afterRank:"", rate:"100%", target:"全 卓越", effectShort:"攻撃970%上昇+防御970%上昇+卓越確率+22%(TR1、移植後の対応は未確認)"},
         {slot:"C", skill:"勇冠三軍", rank:"SSS", afterSkill:"勇冠三軍", afterRank:"SSS", rate:"45%", target:"全", effectShort:"攻撃50%上昇+防御参加武将数依存加算"},
         {slot:"S1", skill:"坂西都督", rank:"S", afterSkill:"坂西都督", afterRank:"S", rate:"45%", target:"弓・砲・器", effectShort:"攻撃150%上昇+敵軍部隊数×係数%上昇"},
         {slot:"S2", skill:"開闢ノ逆鉾", rank:"SS", afterSkill:"開闢ノ逆鉾", afterRank:"SS", rate:"100%", target:"全", effectShort:"攻撃254%上昇(卓越追加確率30%で兵士被害15%減少)"}
-      ]},
+      ], reviewedOk:true},
     {name:"立花宗茂(5)", no:"1307", ch:"31章", cost:4.0, troop:"槍馬器騎攻+速度", sub:"", effect:"部隊移動速度依存",
       furigana:"たちばなむねしげ", illustrator:"直良有祐",
       imageFull:"assets/img/characters/no1307_full.png", imageChar:"assets/img/characters/no1307_char.png",
@@ -509,7 +510,7 @@
         {slot:"C", skill:"虎賁統帥", rank:"SS", afterSkill:"虎賁統帥", afterRank:"SS", rate:"100%", target:"全 撤退 覇道", effectShort:"攻撃1130%上昇+速度200%上昇"},
         {slot:"S1", skill:"飛将ノ武略", rank:"S", afterSkill:"飛将ノ武略", afterRank:"S", rate:"100%", target:"槍・馬・器・騎", effectShort:"速度200%上昇(攻撃は速度÷32×100%、参考値1%)"},
         {slot:"S2", skill:"照闇騎行", rank:"SS", afterSkill:"照闇騎行", afterRank:"SS", rate:"100%", target:"全", effectShort:"攻撃540%上昇+速度250%上昇"}
-      ]},
+      ], reviewedOk:true},
     {name:"小西行長(2)", no:"1308", ch:"31章", cost:5.0, troop:"全防", sub:"", effect:"所有者より全体格付「戦果」が上位の城主が敵軍にいた場合防御効果3倍",
       furigana:"こにしゆきなが", illustrator:"直良有祐",
       imageFull:"assets/img/characters/no1308_full.png", imageChar:"assets/img/characters/no1308_char.png",
@@ -528,15 +529,14 @@
         {level:"TR5", points:"200", effect:"全　確率 70% / 防御 730%×3(戦果上位城主が敵にいる場合)=2190%"},
         {level:"TR6", points:"パラレル", effect:"全　確率 100% / 防御 800%×3(戦果上位城主が敵にいる場合)=2400%"}
       ],
-      // ixagno.blog.fc2.com生HTML照合済み(2026-07-31、blog-entry-10825「小西行長(2)【天】(No.1308)の能力と考察」の合成テーブルで確認)。
-      // 45do.info(小西行長で記事検索0件)・ixanary.com(カードページ自体は存在するが合成テーブルを掲載する仕様が無い)のいずれからも本カードの合成テーブルは確認できず、二重ソース確認は現状不可(要ユーザー確認)。C・S1は共に自身の初期スキル(文治ノ護剣)のままという出典表記のため両枠ともそのまま登録。
+      // ixagno.blog.fc2.com生HTML照合済み(2026-07-31、blog-entry-10825「小西行長(2)【天】(No.1308)の能力と考察」の合成テーブルで確認)+ameameixa.com(tenskil-31sho「【31章】天武将スキルテーブル一覧」表のNo.1308行)の両ソースでA/B/C/S1/S2の並びが一致確認済み(2026-08-02)。C・S1は共に自身の初期スキル(文治ノ護剣)のままという出典表記のため両枠ともそのまま登録。
       synthesisTable:[
         {slot:"A", skill:"國才連豪", rank:"SS", afterSkill:"國才連豪", afterRank:"SS", rate:"50%", target:"全", effectShort:"防御を係数×國才連豪所持武将数で上昇"},
         {slot:"B", skill:"至天ノ御剣", rank:"SSS", afterSkill:"至天ノ御剣", afterRank:"SSS", rate:"70%", target:"自身", effectShort:"自身の初期スキルを模倣(卓越時1.3倍)"},
         {slot:"C", skill:"文治ノ護剣", rank:"S", afterSkill:"文治ノ護剣", afterRank:"S", rate:"48%", target:"全", effectShort:"防御450%上昇(格上敵城主戦で3倍)"},
         {slot:"S1", skill:"文治ノ護剣", rank:"S", afterSkill:"文治ノ護剣", afterRank:"S", rate:"48%", target:"全", effectShort:"防御450%上昇(格上敵城主戦で3倍)"},
         {slot:"S2", skill:"龍驤虎躍", rank:"SS", afterSkill:"龍驤虎躍", afterRank:"SS", rate:"60%", target:"全", effectShort:"攻防810%上昇+コスト-1"}
-      ]},
+      ], reviewedOk:true},
     {name:"津軽為信", no:"1309", ch:"31章", cost:4.5, troop:"槍弓器鉄防", sub:"", effect:"防御参加武将数依存／220名以下の時、防御効果1.5倍", reviewedOk:true, approved:true,
       furigana:"つがるためのぶ", illustrator:"直良有祐",
       imageFull:"assets/img/characters/no1309_full.png", imageChar:"assets/img/characters/no1309_char.png",
@@ -594,7 +594,7 @@
         {slot:"C", skill:"焼尽神無", rank:"SS", afterSkill:"焼尽神無", afterRank:"SS", rate:"44%", target:"全 無尽", effectShort:"攻撃を係数×人数で上昇"},
         {slot:"S1", skill:"勇冠三軍", rank:"SSS", afterSkill:"勇冠三軍", afterRank:"SSS", rate:"45%", target:"全", effectShort:"攻撃50%上昇+攻撃を係数×人数で上昇"},
         {slot:"S2", skill:"万物神勇", rank:"SSS", afterSkill:"万物神勇", afterRank:"SSS", rate:"43%", target:"全 撤退", effectShort:"攻撃を係数×人数で上昇"}
-      ]},
+      ], reviewedOk:true},
     {name:"豊臣秀吉【覇(5)】", no:"1287", ch:"30章", cost:5.0, troop:"弓馬砲器防", sub:"覇道", effect:"部隊内覇武将数×200%上昇／部隊長時は効果2倍", reviewedOk:true, approved:true,
       furigana:"とよとみひでよし", illustrator:"直良有祐",
       imageFull:"assets/img/characters/no1287_full.png", imageChar:"assets/img/characters/no1287_char.png",
@@ -628,8 +628,8 @@
       furigana:"とくがわいえやす", illustrator:"直良有祐",
       imageFull:"assets/img/characters/no1288_full.png", imageChar:"assets/img/characters/no1288_char.png",
       atkBase:1280, atkGrowth:81, defBase:1280, defGrowth:81, tacticsBase:850.0, tacticsGrowth:4.0, lv0Troops:5220,
-      // カード画像照合済み(2026-07-30): 槍A/弓X/馬A/器S(ixanaryの構造化データはyumi/kibaフィールドが実際のバッジ配置と逆に格納されている、画像の目視結果を優先)
-      rankGrades:{yari:'A', yumi:'X', uma:'A', ki:'.S'},
+      // カード画像照合済み(2026-07-30、2026-08-02再確認): 槍A/弓X/馬A/器S(ixanaryの構造化データはyumi/kibaフィールドが実際のバッジ配置と逆に格納されている、画像の目視結果を優先)。旧データの'.S'(ドット付き)は画像上ドット無し'S'と区別がつかないため修正。
+      rankGrades:{yari:'A', yumi:'X', uma:'A', ki:'S'},
       initialSkill:"伏雷蒼樹",
       skillDetail:"SSS/LV10 確率 卓越追加確率50%で発動(通常確率では発動しない) 攻防200%上昇/対象:弓・砲・器\n①卓越の追加発動確率50%で発動する(覇道)\n②攻防各200%上昇する\n③卓越追加確率のうち100%を超えた分を超過分×5.5%として攻防効果に加算する(二重卓越不可)",
       categoryLinks:[
@@ -645,14 +645,14 @@
         {level:"TR5", points:"200", effect:"卓越追加確率150%で発動 / 攻防200%上昇 / 超過分×6.8%"},
         {level:"TR6", points:"パラレル", effect:"卓越追加確率200%で発動 / 攻防200%上昇 / 超過分×7.0%"}
       ],
-      // 45do.info確認(生HTML照合済み、2026-08-02): skiladd_wrapの見出し(候補A/B/C/S1/S2)と直後のスキル名が位置対応。千里必勝ノ神算がA/B、幻像鏡花がC/S1、至天ノ御剣がS2に重複割当。
+      // 45do.info生HTML照合(skiladd_wrapの見出しA/B/C/S1/S2と直後のスキル名が位置対応)+ameameixa.com(post-12627「30章天武将スキル一覧」表のNo.1288行)の両ソースで一致確認済み(2026-08-02)。千里必勝ノ神算がA/B、幻像鏡花がC/S1、至天ノ御剣がS2に重複割当。
       synthesisTable:[
         {slot:"A", skill:"千里必勝ノ神算", rank:"SS", afterSkill:"千里必勝ノ神算", afterRank:"SS", rate:"42%", target:"全 覇道", effectShort:"攻撃1010%上昇+防御1010%上昇+破壊150%上昇"},
         {slot:"B", skill:"千里必勝ノ神算", rank:"SS", afterSkill:"千里必勝ノ神算", afterRank:"SS", rate:"42%", target:"全 覇道", effectShort:"攻撃1010%上昇+防御1010%上昇+破壊150%上昇"},
         {slot:"C", skill:"幻像鏡花", rank:"SSS", afterSkill:"幻像鏡花", afterRank:"SSS", rate:"56%", target:"部隊長", effectShort:"部隊長の模倣可能な初期スキルを卓越:追加確率40%で1.35倍にして模倣"},
         {slot:"S1", skill:"幻像鏡花", rank:"SSS", afterSkill:"幻像鏡花", afterRank:"SSS", rate:"56%", target:"部隊長", effectShort:"部隊長の模倣可能な初期スキルを卓越:追加確率40%で1.35倍にして模倣"},
         {slot:"S2", skill:"至天ノ御剣", rank:"SSS", afterSkill:"至天ノ御剣", afterRank:"SSS", rate:"70%", target:"自身", effectShort:"卓越:追加確率30%で自身の初期スキルを1.3倍にして模倣"}
-      ],
+      ], reviewedOk:true,
       variants:{parallel:{no:'31288', label:'パラレル'}}, currentlyInKuji:false},
     {name:"長宗我部元親(7)", no:"1289", ch:"30章", cost:6.0, troop:"槍砲器防", sub:"兵站", effect:"極限スキルの防御効果3.5倍", approved:true,
       furigana:"ちょうそかべもとちか", illustrator:"直良有祐",
@@ -918,7 +918,7 @@
         {slot:"C", skill:"封法大十字", rank:"S", afterSkill:"封法大十字", afterRank:"S", rate:"40%", target:"部隊長 撤退", effectShort:"部隊長撤退時、部隊長の初期スキルを1.24倍模倣"},
         {slot:"S1", skill:"封法大十字", rank:"S", afterSkill:"封法大十字", afterRank:"S", rate:"40%", target:"部隊長 撤退", effectShort:"部隊長撤退時、部隊長の初期スキルを1.24倍模倣"},
         {slot:"S2", skill:"九字ノ呪法", rank:"S", afterSkill:"摩利支天ノ法", afterRank:"SSS", rate:"40%", target:"部隊長", effectShort:"部隊長の初期スキルを1.2倍模倣"}
-      ]},
+      ], reviewedOk:true},
     {name:"長尾景虎", no:"10064", ch:"30章", cost:4.5, troop:"全防", sub:"", effect:"極限スキルの効果2倍／飛翔値3倍", approved:true,
       furigana:"ながおかげとら", illustrator:"直良有祐",
       imageFull:"assets/img/characters/no10064_full.png", imageChar:"assets/img/characters/no10064_char.png",
@@ -995,14 +995,14 @@
         {level:"TR4", points:"150", effect:"全 無尽 覇道　確率 100% / 攻撃 730%上昇"},
         {level:"TR5", points:"200", effect:"全 無尽 覇道　確率 100% / 攻撃 920%上昇"}
       ],
-      // 45do.info(ordinary/0319)生HTML照合+ixagno.blog.fc2.com(blog-entry-10209)の両ソースで一致確認済み。S2のみ移植後スキルが破邪後輝→飛龍衝天に変化(ixagno「初期テーブル/左記スキル移植後」対応表で確認、1251/毛利輝元(覇)のS1候補と同じ移植先)。
+      // 45do.info(ordinary/0319)生HTML照合+ixagno.blog.fc2.com(blog-entry-10209)+ameameixa.com(post-12334「29章天武将スキル一覧」表のNo.1274行)の三ソースで一致確認済み。S2のみ移植後スキルが破邪後輝→飛龍衝天に変化(ixagno「初期テーブル/左記スキル移植後」対応表で確認、1251/毛利輝元(覇)のS1候補と同じ移植先)。
       synthesisTable:[
         {slot:"A", skill:"神羅聖域", rank:"SS", afterSkill:"神羅聖域", afterRank:"SS", rate:"40%", target:"全 覇道", effectShort:"攻撃900%上昇+防御900%上昇+破壊160%上昇"},
         {slot:"B", skill:"閃裂討鬼", rank:"SS", afterSkill:"閃裂討鬼", afterRank:"SS", rate:"45%", target:"全", effectShort:"攻撃50%上昇(部隊総コストで変化)"},
         {slot:"C", skill:"絶無灰尽", rank:"SS", afterSkill:"絶無灰尽", afterRank:"SS", rate:"100%", target:"全 無尽 不屈1", effectShort:"攻撃1010%上昇"},
         {slot:"S1", skill:"従魔絶神", rank:"SSS", afterSkill:"従魔絶神", afterRank:"SSS", rate:"43%", target:"全 飛翔13", effectShort:"防御を係数×人数で上昇"},
         {slot:"S2", skill:"破邪後輝", rank:"SS", afterSkill:"飛龍衝天", afterRank:"SS", rate:"100%", target:"全 覇道", effectShort:"攻撃770%上昇+速度150%上昇+破壊150%上昇"}
-      ]},
+      ], reviewedOk:true},
     {name:"竹中半兵衛【覇】", no:"1275", ch:"29章", cost:6.0, troop:"全攻", sub:"無尽", effect:"極限スキル枠の攻撃効果3.5倍",
       furigana:"たけなかはんべえ", illustrator:"直良有祐",
       imageFull:"assets/img/characters/no1275_full.png", imageChar:"assets/img/characters/no1275_char.png",
@@ -1014,19 +1014,19 @@
       categoryLinks:[
         {href:"skills-mujin.html", label:"無尽スキル一覧を見る"}
       ],
-      // ixanary.com/45do.info共にLV10と最大鍛錬(TR5)の2値のみ公開、TR1〜TR4は未確認
+      // ixanary.com生HTML照合(2026-08-02): カード画像のスキル欄にLV10とTR5(鍛錬)の2枠のみ表示されており、TR1〜TR4は実在しない(存在すれば同様に表示されるはずだが無い)。
       trTable:[
         {level:"LV10", points:"-", effect:"全　確率 100% / 攻撃 680%上昇(無尽 部隊消費コスト-0.5・極限スキル効果3.5倍)"},
         {level:"TR5", points:"最大鍛錬", effect:"全　確率 100% / 攻撃 1730%上昇(無尽 部隊消費コスト-0.5・極限スキル効果3.5倍)"}
       ],
-      // 45do.info(ordinary/0318)生HTML照合済み(単一ソース、新規登録段階のため)。移植後スキルの変化(ixagno等)は未確認。
+      // 45do.info(ordinary/0318)生HTML照合+ameameixa.com(post-12334「29章天武将スキル一覧」表のNo.1275行)の両ソースでA/B/C/S1/S2の並びが一致確認済み。afterSkill(移植後変化)はixagno未掲載のため45do.info記載の等級のまま。
       synthesisTable:[
         {slot:"A", skill:"摩利支天ノ法", rank:"SSS", afterSkill:"摩利支天ノ法", afterRank:"SSS", rate:"70%", target:"部隊長", effectShort:"部隊長の初期スキルを1.25倍模倣"},
         {slot:"B", skill:"万物神勇", rank:"SSS", afterSkill:"万物神勇", afterRank:"SSS", rate:"43%", target:"全 撤退", effectShort:"攻撃を係数×人数で上昇"},
         {slot:"C", skill:"天地超克", rank:"SSS", afterSkill:"天地超克", afterRank:"SSS", rate:"46%", target:"全 不屈1", effectShort:"攻撃を係数×人数で上昇"},
         {slot:"S1", skill:"天地超克", rank:"SSS", afterSkill:"天地超克", afterRank:"SSS", rate:"46%", target:"全 不屈1", effectShort:"攻撃を係数×人数で上昇"},
         {slot:"S2", skill:"四天轟雷", rank:"SS", afterSkill:"四天轟雷", afterRank:"SS", rate:"100%", target:"全", effectShort:"攻防360%上昇+砲・器対象追加"}
-      ]},
+      ], reviewedOk:true},
     {name:"結城秀康", no:"1276", ch:"29章", cost:5.5, troop:"全攻", sub:"", effect:"討伐ゲージ依存",
       furigana:"ゆうきひでやす", illustrator:"直良有祐",
       imageFull:"assets/img/characters/no1276_full.png", imageChar:"assets/img/characters/no1276_char.png",
@@ -1035,19 +1035,19 @@
       rankGrades:{yari:'S', yumi:'A', uma:'S', ki:'A'},
       initialSkill:"覇槍ノ武威",
       skillDetail:"S/LV10 確率 100% 攻撃200%上昇/対象:全\n模倣不可\n①攻撃200%上昇する\n②この武将の追加スキルの攻撃効果を(討伐ゲージ÷100)倍する(討伐ゲージは最大300で計算する)\n③対人での攻撃戦闘時、部隊内武将の討伐ゲージを(敵軍被害兵数÷1000×3)回復する",
-      // ixanary.com/45do.info共にLV10と最大鍛錬(TR5)の2値のみ公開、TR1〜TR4は未確認
+      // ixanary.com生HTML照合(2026-08-02): カード画像のスキル欄にLV10とTR5(鍛錬)の2枠のみ表示されており、TR1〜TR4は実在しない。
       trTable:[
         {level:"LV10", points:"-", effect:"全　確率 100% / 攻撃 200%上昇(討伐ゲージ÷100倍・討伐ゲージ回復量+3)"},
         {level:"TR5", points:"最大鍛錬", effect:"全　確率 100% / 攻撃 940%上昇(討伐ゲージ÷100倍・討伐ゲージ回復量+6)"}
       ],
-      // 45do.info(ordinary/0317)生HTML照合済み(単一ソース、新規登録段階のため)。移植後スキルの変化(ixagno等)は未確認。
+      // 45do.info(ordinary/0317)生HTML照合+ameameixa.com(post-12334「29章天武将スキル一覧」表のNo.1276行)の両ソースでA/B/C/S1/S2の並びが一致確認済み。
       synthesisTable:[
         {slot:"A", skill:"破邪後輝", rank:"SS", afterSkill:"破邪後輝", afterRank:"SS", rate:"100%", target:"全 覇道", effectShort:"攻撃770%上昇+速度150%上昇+破壊150%上昇"},
         {slot:"B", skill:"神羅聖域", rank:"SS", afterSkill:"神羅聖域", afterRank:"SS", rate:"40%", target:"全 覇道", effectShort:"攻撃900%上昇+防御900%上昇+破壊160%上昇"},
         {slot:"C", skill:"天宇受売命", rank:"SSS", afterSkill:"天宇受売命", afterRank:"SSS", rate:"70%", target:"自身", effectShort:"自身の初期スキルを1.25倍にして模倣"},
         {slot:"S1", skill:"天地超克", rank:"SSS", afterSkill:"天地超克", afterRank:"SSS", rate:"46%", target:"全 不屈1", effectShort:"攻撃を係数×人数で上昇"},
         {slot:"S2", skill:"飛龍衝天", rank:"SS", afterSkill:"飛龍衝天", afterRank:"SS", rate:"45%", target:"全 飛翔15", effectShort:"攻撃200%上昇+7.5%×防御参加武将数加算(模倣不可)"}
-      ]},
+      ], reviewedOk:true},
     {name:"石田三成", no:"1277", ch:"29章", cost:4.5, troop:"全攻防", sub:"飛翔17", effect:"-",
       furigana:"いしだみつなり", illustrator:"直良有祐",
       imageFull:"assets/img/characters/no1277_full.png", imageChar:"assets/img/characters/no1277_char.png",
@@ -1060,19 +1060,19 @@
         {href:"skills-hishou-atk.html", label:"飛翔スキル一覧(攻撃)を見る"},
         {href:"skills-hishou-def.html", label:"飛翔スキル一覧(防御)を見る"}
       ],
-      // ixanary.com/45do.info共にLV10と最大鍛錬(TR5)の2値のみ公開、TR1〜TR4は未確認
+      // ixanary.com生HTML照合(2026-08-02): カード画像のスキル欄にLV10とTR5(鍛錬)の2枠のみ表示されており、TR1〜TR4は実在しない。
       trTable:[
         {level:"LV10", points:"-", effect:"全 飛翔17　確率 55% / 攻撃 840%上昇 防御 840%上昇"},
         {level:"TR5", points:"最大鍛錬", effect:"全 飛翔17　確率 55% / 攻撃 1750%上昇 防御 1750%上昇"}
       ],
-      // 45do.info(ordinary/0316)生HTML照合済み(単一ソース、新規登録段階のため)。移植後スキルの変化(ixagno等)は未確認。A/Bは自身の初期スキル(義陣絶刀)がそのまま候補になる自己参照枠。
+      // 45do.info(ordinary/0316)生HTML照合+ameameixa.com(post-12334「29章天武将スキル一覧」表のNo.1277行)の両ソースでA/B/C/S1/S2の並びが一致確認済み。A/Bは自身の初期スキル(義陣絶刀)がそのまま候補になる自己参照枠。
       synthesisTable:[
         {slot:"A", skill:"義陣絶刀", rank:"S", afterSkill:"義陣絶刀", afterRank:"S", rate:"55%", target:"全 飛翔17", effectShort:"攻撃840%上昇+防御840%上昇"},
         {slot:"B", skill:"義陣絶刀", rank:"S", afterSkill:"義陣絶刀", afterRank:"S", rate:"55%", target:"全 飛翔17", effectShort:"攻撃840%上昇+防御840%上昇"},
         {slot:"C", skill:"國才連豪", rank:"SS", afterSkill:"國才連豪", afterRank:"SS", rate:"50%", target:"全", effectShort:"防御が係数×同スキル所持武将数で上昇"},
         {slot:"S1", skill:"國才連豪", rank:"SS", afterSkill:"國才連豪", afterRank:"SS", rate:"50%", target:"全", effectShort:"防御が係数×同スキル所持武将数で上昇"},
         {slot:"S2", skill:"四天轟雷", rank:"SS", afterSkill:"四天轟雷", afterRank:"SS", rate:"100%", target:"全", effectShort:"攻防360%上昇+砲・器対象追加"}
-      ]},
+      ], reviewedOk:true},
     {name:"羽柴秀長", no:"1278", ch:"29章", cost:4.5, troop:"全攻防", sub:"無尽", effect:"部隊内の全スキルに「砲」対象を追加",
       furigana:"はしばひでなが", illustrator:"直良有祐",
       imageFull:"assets/img/characters/no1278_full.png", imageChar:"assets/img/characters/no1278_char.png",
@@ -1084,19 +1084,19 @@
       categoryLinks:[
         {href:"skills-mujin.html", label:"無尽スキル一覧を見る"}
       ],
-      // ixanary.com/45do.info共にLV10と最大鍛錬(TR5)の2値のみ公開、TR1〜TR4は未確認
+      // ixanary.com生HTML照合(2026-08-02): カード画像のスキル欄にLV10とTR5(鍛錬)の2枠のみ表示されており、TR1〜TR4は実在しない。
       trTable:[
         {level:"LV10", points:"-", effect:"全　確率 100% / 攻撃 520%上昇 防御 520%上昇(無尽 部隊消費コスト-0.5)"},
         {level:"TR5", points:"最大鍛錬", effect:"全　確率 100% / 攻撃 1400%上昇 防御 1400%上昇(無尽 部隊消費コスト-0.5)"}
       ],
-      // 45do.info(ordinary/0315)生HTML照合済み(単一ソース、新規登録段階のため)。移植後スキルの変化(ixagno等)は未確認。
+      // 45do.info(ordinary/0315)生HTML照合+ameameixa.com(post-12334「29章天武将スキル一覧」表のNo.1278行)の両ソースでA/B/C/S1/S2の並びが一致確認済み。
       synthesisTable:[
         {slot:"A", skill:"刹那無影", rank:"SS", afterSkill:"刹那無影", afterRank:"SS", rate:"55%", target:"部隊長", effectShort:"部隊長の初期スキルを1.15倍模倣+速度200%上昇"},
         {slot:"B", skill:"思金神ノ深謀", rank:"SS", afterSkill:"思金神ノ深謀", afterRank:"SS", rate:"60%", target:"部隊長", effectShort:"部隊長の模倣可能な初期スキルを模倣(卓越時1.3倍)"},
         {slot:"C", skill:"國才連豪", rank:"SS", afterSkill:"國才連豪", afterRank:"SS", rate:"50%", target:"全", effectShort:"防御が係数×同スキル所持武将数で上昇"},
         {slot:"S1", skill:"絶無灰尽", rank:"SS", afterSkill:"絶無灰尽", afterRank:"SS", rate:"100%", target:"全 無尽 不屈1", effectShort:"攻撃1010%上昇"},
         {slot:"S2", skill:"十束ノ神域", rank:"SS", afterSkill:"十束ノ神域", afterRank:"SS", rate:"100%", target:"全 覇道", effectShort:"攻撃320%上昇+速度70%上昇+覇道を持つため所属部隊の武将のスキルを無効化・発動率低下から保護"}
-      ]},
+      ], reviewedOk:true},
     {name:"荒木村重", no:"1279", ch:"29章", cost:4.0, troop:"槍弓砲器防", sub:"", effect:"防御参加数依存／120名以下の時は効果1.5倍",
       furigana:"あらきむらしげ", illustrator:"直良有祐",
       imageFull:"assets/img/characters/no1279_full.png", imageChar:"assets/img/characters/no1279_char.png",
@@ -1108,19 +1108,19 @@
       categoryLinks:[
         {href:"skills-count-def.html", label:"人数依存(防)スキル一覧を見る"}
       ],
-      // ixanary.com/45do.info共にLV10と最大鍛錬(TR5)の2値のみ公開、TR1〜TR4は未確認
+      // ixanary.com生HTML照合(2026-08-02): カード画像のスキル欄にLV10とTR5(鍛錬)の2枠のみ表示されており、TR1〜TR4は実在しない。
       trTable:[
         {level:"LV10", points:"-", coefficient:"8.4", effect:"槍・弓・砲・器　確率 58% / 防御 8.4%×防御参加武将数=上昇(120人以下で1.5倍)"},
         {level:"TR5", points:"最大鍛錬", coefficient:"13", effect:"槍・弓・砲・器　確率 58% / 防御 13%×防御参加武将数=上昇(120人以下で1.5倍)"}
       ],
-      // 45do.info(ordinary/0314)生HTML照合済み(単一ソース、新規登録段階のため)。移植後スキルの変化(ixagno等)は未確認。A/Bは自身の初期スキル(魔導禁鎖)がそのまま候補になる自己参照枠。
+      // 45do.info(ordinary/0314)生HTML照合+ameameixa.com(post-12334「29章天武将スキル一覧」表のNo.1279行)の両ソースでA/B/C/S1/S2の並びが一致確認済み。A/Bは自身の初期スキル(魔導禁鎖)がそのまま候補になる自己参照枠。
       synthesisTable:[
         {slot:"A", skill:"魔導禁鎖", rank:"S", afterSkill:"魔導禁鎖", afterRank:"S", rate:"58%", target:"槍・弓・砲・器", effectShort:"防御を係数×人数で上昇(120人以下で1.5倍)"},
         {slot:"B", skill:"魔導禁鎖", rank:"S", afterSkill:"魔導禁鎖", afterRank:"S", rate:"58%", target:"槍・弓・砲・器", effectShort:"防御を係数×人数で上昇(120人以下で1.5倍)"},
         {slot:"C", skill:"八幡神ノ威光", rank:"SSS", afterSkill:"八幡神ノ威光", afterRank:"SSS", rate:"70%", target:"部隊長", effectShort:"部隊長の初期スキルを1.25倍模倣"},
         {slot:"S1", skill:"月煌侵蝕", rank:"SSS", afterSkill:"月煌侵蝕", afterRank:"SSS", rate:"45%", target:"全 兵站", effectShort:"防御を係数×人数で上昇"},
         {slot:"S2", skill:"永世ノ天隻", rank:"SS", afterSkill:"永世ノ天隻", afterRank:"SS", rate:"48%", target:"全 飛翔9", effectShort:"防御を係数×人数で上昇+飛翔9"}
-      ]},
+      ], reviewedOk:true},
     {name:"小早川隆景", no:"1280", ch:"29章", cost:5.0, troop:"-", sub:"兵站", effect:"加勢戦闘時は追加スキルの防御効果2.5倍",
       furigana:"こばやかわたかかげ", illustrator:"直良有祐",
       imageFull:"assets/img/characters/no1280_full.png", imageChar:"assets/img/characters/no1280_char.png",
@@ -1132,19 +1132,19 @@
       categoryLinks:[
         {href:"skills-heitan.html", label:"兵站スキル一覧を見る"}
       ],
-      // ixanary.com/45do.info共にLV10と最大鍛錬(TR5)の2値のみ公開、TR1〜TR4は未確認
+      // ixanary.com生HTML照合(2026-08-02): カード画像のスキル欄にLV10とTR5(鍛錬)の2枠のみ表示されており、TR1〜TR4は実在しない。
       trTable:[
         {level:"LV10", points:"-", effect:"追加スキル 兵站　確率 100% / 防御効果倍率 2.5倍(自領以外の加勢戦闘時のみ)"},
         {level:"TR5", points:"最大鍛錬", effect:"追加スキル 兵站　確率 100% / 防御効果倍率 3倍(自領以外の加勢戦闘時のみ)"}
       ],
-      // 45do.info(ordinary/0313)生HTML照合済み(単一ソース、新規登録段階のため)。移植後スキルの変化(ixagno等)は未確認。
+      // 45do.info(ordinary/0313)生HTML照合+ameameixa.com(post-12334「29章天武将スキル一覧」表のNo.1280行)の両ソースでA/B/C/S1/S2の並びが一致確認済み。
       synthesisTable:[
         {slot:"A", skill:"万里嵐壁", rank:"SS", afterSkill:"万里嵐壁", afterRank:"SS", rate:"66%", target:"全", effectShort:"防御200%上昇+敵軍部隊数×40%加算"},
         {slot:"B", skill:"虚空ノ導", rank:"SSS", afterSkill:"虚空ノ導", afterRank:"SSS", rate:"70%", target:"自身", effectShort:"自身の初期スキルを模倣(卓越時1.3倍)"},
         {slot:"C", skill:"月煌侵蝕", rank:"SSS", afterSkill:"月煌侵蝕", afterRank:"SSS", rate:"45%", target:"全 兵站", effectShort:"防御を係数×人数で上昇"},
         {slot:"S1", skill:"従魔絶神", rank:"SSS", afterSkill:"従魔絶神", afterRank:"SSS", rate:"43%", target:"全 飛翔13", effectShort:"防御を係数×人数で上昇"},
         {slot:"S2", skill:"四天轟雷", rank:"SS", afterSkill:"四天轟雷", afterRank:"SS", rate:"100%", target:"全", effectShort:"攻防360%上昇+砲・器対象追加"}
-      ]},
+      ], reviewedOk:true},
     {name:"宇喜多秀家", no:"1281", ch:"29章", cost:4.0, troop:"槍馬砲器防", sub:"飛翔10", effect:"飛翔値の合計×10％を加算",
       furigana:"うきたひでいえ", illustrator:"直良有祐",
       imageFull:"assets/img/characters/no1281_full.png", imageChar:"assets/img/characters/no1281_char.png",
@@ -1156,19 +1156,19 @@
       categoryLinks:[
         {href:"skills-hishou-def.html", label:"飛翔スキル一覧(防御)を見る"}
       ],
-      // ixanary.com/45do.info共にLV10と最大鍛錬(TR5)の2値のみ公開、TR1〜TR4は未確認
+      // ixanary.com生HTML照合(2026-08-02): カード画像のスキル欄にLV10とTR5(鍛錬)の2枠のみ表示されており、TR1〜TR4は実在しない。
       trTable:[
         {level:"LV10", points:"-", effect:"槍・馬・砲・器 飛翔10　確率 64% / 防御 320%上昇(飛翔値合計×10%加算)"},
         {level:"TR5", points:"最大鍛錬", effect:"槍・馬・砲・器 飛翔10　確率 64% / 防御 320%上昇(飛翔値合計×14.5%加算)"}
       ],
-      // 45do.info(ordinary/0312)生HTML照合済み(単一ソース、新規登録段階のため)。移植後スキルの変化(ixagno等)は未確認。A/Bは自身の初期スキル(王花尖剣)がそのまま候補になる自己参照枠。
+      // 45do.info(ordinary/0312)生HTML照合+ameameixa.com(post-12334「29章天武将スキル一覧」表のNo.1281行)の両ソースでA/B/C/S1/S2の並びが一致確認済み。A/Bは自身の初期スキル(王花尖剣)がそのまま候補になる自己参照枠。
       synthesisTable:[
         {slot:"A", skill:"王花尖剣", rank:"S", afterSkill:"王花尖剣", afterRank:"S", rate:"64%", target:"槍・馬・砲・器 飛翔10", effectShort:"防御320%上昇+飛翔値合計×10%加算"},
         {slot:"B", skill:"王花尖剣", rank:"S", afterSkill:"王花尖剣", afterRank:"S", rate:"64%", target:"槍・馬・砲・器 飛翔10", effectShort:"防御320%上昇+飛翔値合計×10%加算"},
         {slot:"C", skill:"虚実兵妙", rank:"SS", afterSkill:"虚実兵妙", afterRank:"SS", rate:"100%", target:"全", effectShort:"防御740%上昇+敵軍卓越確率-8%"},
         {slot:"S1", skill:"國才連豪", rank:"SS", afterSkill:"國才連豪", afterRank:"SS", rate:"50%", target:"全", effectShort:"防御が係数×同スキル所持武将数で上昇"},
         {slot:"S2", skill:"永世ノ天隻", rank:"SS", afterSkill:"永世ノ天隻", afterRank:"SS", rate:"48%", target:"全 飛翔9", effectShort:"防御を係数×人数で上昇+飛翔9"}
-      ]},
+      ], reviewedOk:true},
     {name:"黒田長政", no:"1282", ch:"29章", cost:5.0, troop:"槍弓馬砲攻", sub:"", effect:"飛翔を持たない防御参加数依存",
       furigana:"くろだながまさ", illustrator:"直良有祐",
       imageFull:"assets/img/characters/no1282_full.png", imageChar:"assets/img/characters/no1282_char.png",
@@ -1180,19 +1180,19 @@
       categoryLinks:[
         {href:"skills-count-atk.html", label:"人数依存(攻)スキル一覧を見る"}
       ],
-      // ixanary.com/45do.info共にLV10と最大鍛錬(TR5)の2値のみ公開、TR1〜TR4は未確認
+      // ixanary.com生HTML照合(2026-08-02): カード画像のスキル欄にLV10とTR5(鍛錬)の2枠のみ表示されており、TR1〜TR4は実在しない。
       trTable:[
         {level:"LV10", points:"-", coefficient:"13", effect:"槍・弓・馬・砲　確率 50% / 攻撃 13%×飛翔を持たない防御参加武将数=上昇"},
         {level:"TR5", points:"最大鍛錬", coefficient:"18", effect:"槍・弓・馬・砲　確率 50% / 攻撃 18%×飛翔を持たない防御参加武将数=上昇"}
       ],
-      // 45do.info(ordinary/0311)生HTML照合済み(単一ソース、新規登録段階のため)。移植後スキルの変化(ixagno等)は未確認。A/Bは自身の初期スキル(一調天成)がそのまま候補になる自己参照枠。
+      // 45do.info(ordinary/0311)生HTML照合+ameameixa.com(post-12334「29章天武将スキル一覧」表のNo.1282行)の両ソースでA/B/C/S1/S2の並びが一致確認済み。A/Bは自身の初期スキル(一調天成)がそのまま候補になる自己参照枠。
       synthesisTable:[
         {slot:"A", skill:"一調天成", rank:"S", afterSkill:"一調天成", afterRank:"S", rate:"50%", target:"槍・弓・馬・砲", effectShort:"攻撃を係数×飛翔を持たない防御参加武将数で上昇(模倣不可)"},
         {slot:"B", skill:"一調天成", rank:"S", afterSkill:"一調天成", afterRank:"S", rate:"50%", target:"槍・弓・馬・砲", effectShort:"攻撃を係数×飛翔を持たない防御参加武将数で上昇(模倣不可)"},
         {slot:"C", skill:"閃裂討鬼", rank:"SS", afterSkill:"閃裂討鬼", afterRank:"SS", rate:"40%", target:"全", effectShort:"攻撃上昇(部隊総コスト依存)+コスト+0.5計算"},
         {slot:"S1", skill:"戦華雄渾", rank:"SS", afterSkill:"戦華雄渾", afterRank:"SS", rate:"100%", target:"全", effectShort:"攻防各140%上昇(卓越時4倍)"},
         {slot:"S2", skill:"十束ノ神域", rank:"SS", afterSkill:"十束ノ神域", afterRank:"SS", rate:"100%", target:"全 覇道", effectShort:"攻撃320%上昇+速度70%上昇+覇道を持つため所属部隊の武将のスキルを無効化・発動率低下から保護"}
-      ]},
+      ], reviewedOk:true},
     {name:"鍋島直茂", no:"1283", ch:"29章", cost:5.0, troop:"全防", sub:"", effect:"防御効果のみコスト【+1】計算",
       furigana:"なべしまなおしげ", illustrator:"直良有祐",
       imageFull:"assets/img/characters/no1283_full.png", imageChar:"assets/img/characters/no1283_char.png",
@@ -2700,7 +2700,7 @@
   }
 
   // スキルデータベース(skills.html)にページがあるスキル名の一覧。ここに載っているスキルはリンク化する。
-  const LINKED_SKILLS = ['勇冠三軍', '焼尽神無', '覆天征軍', '終焉焦土', '万物神勇', '経津主神ノ剣', '従魔絶神', '梵天浄界', '岳王ノ加護', '國才連豪', '虎賁統帥', '天地超克', '神羅聖域', '信明義星', '千里必勝ノ神算', '刹那無影', '月煌侵蝕', '虚実兵妙', '仙境解脱', '幻像鏡花', '開闢ノ逆鉾', '思金神ノ深謀', '戦華雄渾', '月詠ノ覇威', '絶無灰尽', '八幡神ノ威光', '龍驤虎躍', '永世ノ天隻', '黄泉醜女ノ屍兵', '高津姫神', '義陣絶刀', '破国八陣', '轟渦ノ神将', '王花尖剣', '泰厳射手', '国呑ノ蟒蛇', '虚空ノ導', '龍気剣鳴', '雄武英略', '坂西都督', '摩利支天ノ法', '不制于天地人', '神機采配', '十束ノ神域', '天聖宝冠', '四天轟雷', '火之迦具土神', '天香山命', '天津甕星ノ雷', '布都御魂ノ鬨', '天宇受売命', '万鬼闘帝', '三全将帥', '布刀玉ノ策', '火槍猛進', '神屋楯比売命', '四至ノ神域', '文治ノ護剣', '至天ノ御剣', '歴然ノ妙策', '聖剣深鏡', '星神闘覇', '龍国ノ武威', '武天蜻蛉切', '伏雷蒼樹', '天啓ノ神撃', '加具土ノ神域', '八重言代主神', '旌旗翳天ノ覇陣', '破軍騎行', '破邪後輝', '天磐船', '万里嵐壁', '遠呂智ノ閃光', '三千世界神将', '覇王征軍', '天焉相克', '天奏聖譚曲', '海神ノ浮船', '建御雷神ノ槌', '天衣無縫神戒', '禍津日神ノ謀', '国津破邪ノ楯', '星宿劫ノ法壁', '天岩戸ノ神域', '天頂ノ電光', '建御雷神ノ閃光', '天地黎明', '猛火ノ追撃', '閃裂討鬼', '神光征軍', '照闇騎行', '飛龍衝天', '氷神懸龍', '天津日ノ太刀', '破軍星 皇', '無鹿ノ幻律', '国堅大神', '天之尾羽張', '天封界斬', '義心江龍', '仙剣破斬', '封法大十字', '九字ノ呪法', '虚実ノ理合', '潔花咲然', '舞蝶朧月', '古今虚実ノ法', '八目鳴鏑ノ奏', '騎虎神道', '氷塊ノ障壁', '氷塊三連撃', '天弓星宿陣', '朧雲ノ閃撃', '八界経略', '天奏幻武', '破邪轟砲', '甲塞ノ龍砲', '天棲八咫烏', '閻魔ノ裁き', '鬼神ノ軍法', '海王怒涛', '四界偃武', '義陣響野', '義響鉄心', '刈世公子', '天翔雷神', '猛虎嵐陣', '無双六界ノ博奕', '入来神舞', '豊国ノ寵将', '不滅ノ鬼神', '瞬刻無影', '国一丸', '飛将ノ武略'];
+  const LINKED_SKILLS = ['勇冠三軍', '焼尽神無', '覆天征軍', '終焉焦土', '万物神勇', '経津主神ノ剣', '従魔絶神', '梵天浄界', '岳王ノ加護', '國才連豪', '虎賁統帥', '天地超克', '神羅聖域', '信明義星', '千里必勝ノ神算', '刹那無影', '月煌侵蝕', '虚実兵妙', '仙境解脱', '幻像鏡花', '開闢ノ逆鉾', '思金神ノ深謀', '戦華雄渾', '月詠ノ覇威', '絶無灰尽', '八幡神ノ威光', '龍驤虎躍', '永世ノ天隻', '黄泉醜女ノ屍兵', '高津姫神', '義陣絶刀', '破国八陣', '轟渦ノ神将', '王花尖剣', '泰厳射手', '国呑ノ蟒蛇', '虚空ノ導', '龍気剣鳴', '雄武英略', '坂西都督', '摩利支天ノ法', '不制于天地人', '神機采配', '十束ノ神域', '天聖宝冠', '四天轟雷', '火之迦具土神', '天香山命', '天津甕星ノ雷', '布都御魂ノ鬨', '天宇受売命', '万鬼闘帝', '三全将帥', '布刀玉ノ策', '火槍猛進', '神屋楯比売命', '四至ノ神域', '文治ノ護剣', '至天ノ御剣', '歴然ノ妙策', '聖剣深鏡', '星神闘覇', '龍国ノ武威', '武天蜻蛉切', '伏雷蒼樹', '天啓ノ神撃', '加具土ノ神域', '八重言代主神', '旌旗翳天ノ覇陣', '破軍騎行', '破邪後輝', '天磐船', '万里嵐壁', '遠呂智ノ閃光', '三千世界神将', '覇王征軍', '天焉相克', '天奏聖譚曲', '海神ノ浮船', '建御雷神ノ槌', '天衣無縫神戒', '禍津日神ノ謀', '国津破邪ノ楯', '星宿劫ノ法壁', '天岩戸ノ神域', '天頂ノ電光', '建御雷神ノ閃光', '天地黎明', '猛火ノ追撃', '閃裂討鬼', '神光征軍', '照闇騎行', '飛龍衝天', '氷神懸龍', '天津日ノ太刀', '破軍星 皇', '無鹿ノ幻律', '国堅大神', '天之尾羽張', '天封界斬', '義心江龍', '仙剣破斬', '封法大十字', '九字ノ呪法', '虚実ノ理合', '潔花咲然', '舞蝶朧月', '古今虚実ノ法', '八目鳴鏑ノ奏', '騎虎神道', '氷塊ノ障壁', '氷塊三連撃', '天弓星宿陣', '朧雲ノ閃撃', '八界経略', '天奏幻武', '破邪轟砲', '甲塞ノ龍砲', '天棲八咫烏', '閻魔ノ裁き', '鬼神ノ軍法', '海王怒涛', '四界偃武', '義陣響野', '義響鉄心', '刈世公子', '天翔雷神', '猛虎嵐陣', '無双六界ノ博奕', '入来神舞', '豊国ノ寵将', '不滅ノ鬼神', '瞬刻無影', '国一丸', '飛将ノ武略', '西覇冠軍', '虎将鉄牙', '雄飛新世', '幻王ノ采配', '智絶千算', '覇槍ノ武威', '王佐ノ指揮', '魔導禁鎖', '西天ノ仁星', '一調天成'];
 
   function gdbSkillLink(skillName, rank){
     const label = gdbEscapeHtml(skillName)+' '+gdbEscapeHtml(rank||'');
