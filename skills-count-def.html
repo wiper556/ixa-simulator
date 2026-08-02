@@ -118,6 +118,12 @@
      LV10係数が未確認のスキルはここには含めない(skills-count-atk.htmlの人数依存(攻)版と対になるページ)。
   ============================================ */
   const countDefSkills = [
+    {name:"日輪ノ選剣", skillPage:"skills.html#日輪ノ選剣", baseRate:"60%", target:"槍・弓・砲・器", keywordNote:"防御参加武将数120以下で効果1.5倍",
+      fixedBonus: 0, lv10Coefficient: 6, trMaxCoefficient: 6, trMaxLabel: "TRなし",
+      threshold: 120, thresholdMultiplier: 1.5, // characters.html No.1255のtrTable(120人以下で1.5倍)と一致させる閾値条件
+      sourceCharacters:[
+        {name:"豊臣秀吉(5)", no:"1255", slot:"A・B"} // characters.html#1255 synthesisTable A・Bに自己参照で掲載を確認
+      ]},
     {name:"泰厳射手", skillPage:"skills.html#泰厳射手", baseRate:"60%", target:"砲・器",
       fixedBonus: 0, lv10Coefficient: 11.5, trMaxCoefficient: 14.7, trMaxLabel: "TR6",
       sourceCharacters:[
