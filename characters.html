@@ -2065,14 +2065,15 @@
       trTable:[
         {level:"LV10", points:"-", effect:"全 覇道　確率 100% / 攻撃 210%上昇"}
       ],
-      // 45do.info(https://45do.info/ordinary/0024/)生HTML skiladd_wrap照合済み、ixanary.com合成テーブルとも一致(2026-07-31)
+      // 45do.info(https://45do.info/ordinary/0024/)生HTML skiladd_wrap+ameameixa.com(スキルテーブル)の2ソース照合済み、両者一致(2026-08-02再照合)
       synthesisTable:[
         {slot:"A", skill:"万鬼闘帝", rank:"S", afterSkill:"万鬼闘帝", afterRank:"S", rate:"100%", target:"全 覇道", effectShort:"攻撃210%上昇"},
         {slot:"B", skill:"万鬼闘帝", rank:"S", afterSkill:"万鬼闘帝", afterRank:"S", rate:"100%", target:"全 覇道", effectShort:"攻撃210%上昇"},
         {slot:"C", skill:"天香山命", rank:"SS", afterSkill:"天香山命", afterRank:"SS", rate:"100%", target:"全 覇道", effectShort:"攻撃120%上昇+速度90%上昇"},
         {slot:"S1", skill:"天津甕星ノ雷", rank:"SS", afterSkill:"天津甕星ノ雷", afterRank:"SS", rate:"100%", target:"全 覇道", effectShort:"攻撃170%上昇+速度70%上昇"},
         {slot:"S2", skill:"布都御魂ノ鬨", rank:"SS", afterSkill:"布都御魂ノ鬨", afterRank:"SS", rate:"35%", target:"全", effectShort:"攻撃40%上昇+防御40%上昇"}
-      ]},
+      ],
+      reviewedOk:true},
     {name:"雑賀孫市(4)", no:"1220", ch:"24章", cost:3.5, troop:"槍弓器焙攻", sub:"", effect:"敵軍総武将コスト依存で攻撃上昇",
       furigana:"さいかまごいち", illustrator:"直良有祐",
       imageFull:"assets/img/characters/no1220_full.png", imageChar:"assets/img/characters/no1220_char.png",
@@ -2083,14 +2084,15 @@
       trTable:[
         {level:"LV10", points:"-", effect:"槍・弓・器・焙　確率 32% / 攻撃 敵軍総武将コスト×1%"}
       ],
-      // 45do.info確認: 生HTML(skiladd_wrap)照合済み(単一ソースのみ、ixanary.comに合成候補情報なし)
+      // 45do.info(生HTML skiladd_wrap)+ameameixa.com(スキルテーブル)の2ソース照合済み、両者一致
       synthesisTable:[
         {slot:"A", skill:"天棲八咫烏", rank:"S", afterSkill:"天棲八咫烏", afterRank:"S", rate:"32%", target:"槍・弓・器・焙", effectShort:"攻撃(敵軍総武将コスト×1)%上昇"},
         {slot:"B", skill:"天棲八咫烏", rank:"S", afterSkill:"天棲八咫烏", afterRank:"S", rate:"32%", target:"槍・弓・器・焙", effectShort:"攻撃(敵軍総武将コスト×1)%上昇"},
         {slot:"C", skill:"加具土ノ神域", rank:"SS", afterSkill:"加具土ノ神域", afterRank:"SS", rate:"25%", target:"全", effectShort:"攻撃3.4%×防御参加武将数上昇"},
         {slot:"S1", skill:"十束ノ神域", rank:"SS", afterSkill:"十束ノ神域", afterRank:"SS", rate:"100%", target:"全 覇道", effectShort:"攻撃320%上昇+速度70%上昇"},
         {slot:"S2", skill:"天岩戸ノ神域", rank:"SS", afterSkill:"天岩戸ノ神域", afterRank:"SS", rate:"70%", target:"全", effectShort:"攻撃2.8%×防御参加武将数上昇"}
-      ]},
+      ],
+      reviewedOk:true},
     {name:"堀秀政", no:"1224", ch:"24章", cost:5, troop:"弓馬器焙攻", sub:"飛翔2", effect:"攻撃上昇／対象兵科指揮時極限スキル攻撃効果3倍",
       furigana:"ほりひでまさ", illustrator:"直良有祐",
       imageFull:"assets/img/characters/no1224_full.png", imageChar:"assets/img/characters/no1224_char.png",
@@ -2104,14 +2106,15 @@
       trTable:[
         {level:"LV10", points:"-", effect:"弓・馬・器・焙 飛翔2　確率 100% / 攻撃 170%上昇(極限スキル攻撃効果3倍)"}
       ],
-      // 45do.info確認: 生HTML(skiladd_wrap)照合済み(単一ソースのみ、ixanary.comに合成候補情報なし、この武将自身の初期スキルは候補に含まれない)
+      // 45do.info(生HTML skiladd_wrap)+ameameixa.com(スキルテーブル)の2ソース照合済み、両者一致(この武将自身の初期スキルは候補に含まれない)
       synthesisTable:[
         {slot:"A", skill:"建御雷神ノ槌", rank:"SS", afterSkill:"建御雷神ノ槌", afterRank:"SS", rate:"100%", target:"全", effectShort:"攻撃135%上昇+防御135%上昇+卓越確率+30%(模倣不可)"},
         {slot:"B", skill:"天啓ノ神撃", rank:"SS", afterSkill:"天啓ノ神撃", afterRank:"SS", rate:"45%", target:"全", effectShort:"攻撃180%上昇(HP100以上で敵1部隊に追加ダメージ5・模倣不可)"},
         {slot:"C", skill:"摩利支天ノ法", rank:"SSS", afterSkill:"摩利支天ノ法", afterRank:"SSS", rate:"70%", target:"部隊長", effectShort:"部隊長の初期スキルを1.25倍模倣"},
         {slot:"S1", skill:"開闢ノ逆鉾", rank:"SS", afterSkill:"開闢ノ逆鉾", afterRank:"SS", rate:"100%", target:"全", effectShort:"攻撃254%上昇(卓越追加確率30%で兵士被害15%減少)"},
         {slot:"S2", skill:"布都御魂ノ鬨", rank:"SS", afterSkill:"布都御魂ノ鬨", afterRank:"SS", rate:"35%", target:"全", effectShort:"攻撃20%上昇+防御20%上昇(部隊内S以上スキル数×20%)"}
-      ]},
+      ],
+      reviewedOk:true},
     {name:"直江兼続(3)", no:"1228", ch:"25章", cost:4, troop:"全攻防", sub:"", effect:"攻防上昇／部隊内スキルの卓越追加確率上昇",
       furigana:"なおえかねつぐ", illustrator:"直良有祐",
       imageFull:"assets/img/characters/no1228_full.png", imageChar:"assets/img/characters/no1228_char.png",
