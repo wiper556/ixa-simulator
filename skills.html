@@ -2163,13 +2163,13 @@
         {href:"skills-hishou-atk.html", label:"飛翔スキル一覧(攻撃)を見る"},
         {href:"skills-hishou-def.html", label:"飛翔スキル一覧(防御)を見る"}
       ],
+      // 2026-08-02再調査: characters.html/characters-kyoku.htmlの全synthesisTableを照合した結果、
+      // 「豊国ノ寵将」がafterSkillとして登場するのは成松信勝(2388)のA枠のみ。
+      // 石田三成(4)1229・九戸政実1225・蜂須賀小六1223・竹中半兵衛(1215)1215・九鬼嘉隆1212は
+      // いずれも該当武将のsynthesisTable上に「豊国ノ寵将」が存在せず誤登録だったため削除
+      // (蜂須賀小六1223のC枠は正しくは「海神ノ浮船」であり同スキルのsourceCharactersに登録済み)
       sourceCharacters:[
-        {name:"成松信勝", no:"2388", slot:"A", db:"kyoku"},
-        {name:"石田三成(4)", no:"1229", slot:"C・S2"},
-        {name:"九戸政実", no:"1225", slot:"S1"},
-        {name:"蜂須賀小六", no:"1223", slot:"C"},
-        {name:"竹中半兵衛(1215)", no:"1215", slot:"C"},
-        {name:"九鬼嘉隆", no:"1212", slot:"S1"}
+        {name:"成松信勝", no:"2388", slot:"A", db:"kyoku"}
       ],
       ownHiddenCandidate: {skill:"豊国ノ寵将", rank:"S"},
       trTable:[
@@ -2943,8 +2943,9 @@
     },
     {
       // ixanary.com(/skills/朝曇ノ明麗/、原本No.2586)確認。No.2393(栗山利安)・No.2381(千代)の合成候補データ(ixagno.blog.fc2.com blog-entry-10360/10007確認)より、Aスロット「鬼十河」の移植後合成候補として判明したためページ新規作成
-      name:"朝曇ノ明麗", rank:"S", baseRate:18, target:"全",
-      effectSummary:"S/LV10 確率 18% 防御110%上昇/対象:全\n①防御110%上昇する\n②所領防御陣形の第肆列目に配置時、防御効果が1.5倍になり飛翔7を得る(模倣不可)",
+      // 2026-08-02修正: ixanary.com生HTML再確認によりLV1(確率18%/防御110%上昇)の値が誤って登録されていたため、LV10の値(確率46%/防御290%上昇)に修正
+      name:"朝曇ノ明麗", rank:"S", baseRate:46, target:"全",
+      effectSummary:"S/LV10 確率 46% 防御290%上昇/対象:全\n①防御290%上昇する\n②所領防御陣形の第肆列目に配置時、防御効果が1.5倍になり飛翔7を得る(模倣不可)",
       categoryLinks:[
         {href:"skills-hishou-def.html", label:"飛翔スキル一覧(防御)を見る"}
       ],
@@ -2954,7 +2955,7 @@
       ],
       ownHiddenCandidate: {skill:"朝曇ノ明麗", rank:"S"},
       trTable:[
-        {level:"LV10", points:"-", effect:"全　確率 18% / 防御 110%上昇(所領防御陣形第4列配置時1.5倍+飛翔7取得・模倣不可、TR別データは未確認)"}
+        {level:"LV10", points:"-", effect:"全　確率 46% / 防御 290%上昇(所領防御陣形第4列配置時1.5倍+飛翔7取得・模倣不可、TR別データは未確認)"}
       ]
     },
     {
