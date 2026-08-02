@@ -1348,14 +1348,14 @@
       trTable:[
         {level:"LV10", points:"-", effect:"全　確率 100% / 攻撃 240%上昇(極限スキル攻撃効果3.5倍)"}
       ],
-      // 45do.info生HTML確認(https://45do.info/ordinary/0073/)、単一ソースのみ(ixanary/ixagnoに対応する合成候補データなし)
+      // 45do.info(ordinary/0073)生HTML + ameameixa.com(bushocard-1202)生HTML の2ソースで完全一致を確認(2026-08-02)
       synthesisTable:[
-        {slot:"A", skill:"猛火ノ追撃", rank:"SSS", afterSkill:"猛火ノ追撃", afterRank:"SSS"},
-        {slot:"B", skill:"猛火ノ追撃", rank:"SSS", afterSkill:"猛火ノ追撃", afterRank:"SSS"},
-        {slot:"C", skill:"天津甕星ノ雷", rank:"SS", afterSkill:"天津甕星ノ雷", afterRank:"SS"},
-        {slot:"S1", skill:"天津甕星ノ雷", rank:"SS", afterSkill:"天津甕星ノ雷", afterRank:"SS"},
-        {slot:"S2", skill:"覇王征軍", rank:"SS", afterSkill:"覇王征軍", afterRank:"SS"}
-      ]},
+        {slot:"A", skill:"猛火ノ追撃", rank:"SSS", afterSkill:"猛火ノ追撃", afterRank:"SSS", rate:"70%", target:"全", effectShort:"全攻45%上昇(部隊総コスト依存)"},
+        {slot:"B", skill:"猛火ノ追撃", rank:"SSS", afterSkill:"猛火ノ追撃", afterRank:"SSS", rate:"70%", target:"全", effectShort:"全攻45%上昇(部隊総コスト依存)"},
+        {slot:"C", skill:"天津甕星ノ雷", rank:"SS", afterSkill:"天津甕星ノ雷", afterRank:"SS", rate:"100%", target:"全 覇道", effectShort:"攻撃170%上昇+速度70%上昇"},
+        {slot:"S1", skill:"天津甕星ノ雷", rank:"SS", afterSkill:"天津甕星ノ雷", afterRank:"SS", rate:"100%", target:"全 覇道", effectShort:"攻撃170%上昇+速度70%上昇"},
+        {slot:"S2", skill:"覇王征軍", rank:"SS", afterSkill:"覇王征軍", afterRank:"SS", rate:"42%", target:"全", effectShort:"全攻25.39%上昇(部隊総コスト依存)"}
+      ], reviewedOk:true},
     {name:"長尾景虎(1206)", no:"1206", ch:"23章", cost:4.5, troop:"槍砲器攻", sub:"飛翔4", effect:"4部隊以下の攻撃で効果2倍",
       furigana:"ながおかげとら", illustrator:"直良有祐",
       imageFull:"assets/img/characters/no1206_full.png", imageChar:"assets/img/characters/no1206_char.png",
@@ -1366,14 +1366,14 @@
       trTable:[
         {level:"LV10", points:"-", effect:"槍・砲・器 飛翔4　確率 100% / 攻撃 88%上昇(4部隊以下で2倍)"}
       ],
-      // 45do.info生HTML確認(https://45do.info/ordinary/0069/)、単一ソースのみ(ixanary/ixagnoに対応する合成候補データなし)
+      // 45do.info(ordinary/0069)生HTML + ameameixa.com(bushocard-1206)生HTML の2ソースで完全一致を確認(2026-08-02)
       synthesisTable:[
-        {slot:"A", skill:"氷神懸龍", rank:"S", afterSkill:"氷神懸龍", afterRank:"S"},
-        {slot:"B", skill:"氷神懸龍", rank:"S", afterSkill:"氷神懸龍", afterRank:"S"},
-        {slot:"C", skill:"火之迦具土神", rank:"SS", afterSkill:"火之迦具土神", afterRank:"SS"},
-        {slot:"S1", skill:"天津日ノ太刀", rank:"SS", afterSkill:"天津日ノ太刀", afterRank:"SS"},
-        {slot:"S2", skill:"破軍星 皇", rank:"SS", afterSkill:"破軍星 皇", afterRank:"SS"}
-      ]},
+        {slot:"A", skill:"氷神懸龍", rank:"S", afterSkill:"氷神懸龍", afterRank:"S", rate:"100%", target:"槍・砲・器 飛翔4", effectShort:"攻撃88%上昇(4部隊以下で2倍)+飛翔4"},
+        {slot:"B", skill:"氷神懸龍", rank:"S", afterSkill:"氷神懸龍", afterRank:"S", rate:"100%", target:"槍・砲・器 飛翔4", effectShort:"攻撃88%上昇(4部隊以下で2倍)+飛翔4"},
+        {slot:"C", skill:"火之迦具土神", rank:"SS", afterSkill:"火之迦具土神", afterRank:"SS", rate:"100%", target:"槍・馬・砲", effectShort:"攻撃160%上昇(卓越追加確率25%で3倍)"},
+        {slot:"S1", skill:"天津日ノ太刀", rank:"SS", afterSkill:"天津日ノ太刀", afterRank:"SS", rate:"57%", target:"全 飛翔4", effectShort:"攻撃184%上昇(卓越追加確率75%で2倍)"},
+        {slot:"S2", skill:"破軍星 皇", rank:"SS", afterSkill:"破軍星 皇", afterRank:"SS", rate:"69%", target:"全", effectShort:"攻撃140%上昇(自部隊同時攻撃時コスト最大0.5除外・模倣不可)"}
+      ], reviewedOk:true},
     {name:"大友宗麟(1210)", no:"1210", ch:"23章", cost:4.0, troop:"全防", sub:"", effect:"拠点待機90分ごとに防御効果1.5倍(上限4回)",
       furigana:"おおともそうりん", illustrator:"直良有祐",
       imageFull:"assets/img/characters/no1210_full.png", imageChar:"assets/img/characters/no1210_char.png",
@@ -1384,14 +1384,14 @@
       trTable:[
         {level:"LV10", points:"-", effect:"全　確率 70% / 防御 80%上昇(90分毎に1.5倍、上限4回)"}
       ],
-      // 45do.info生HTML確認(https://45do.info/ordinary/0065/)、単一ソースのみ(ixanary/ixagnoに対応する合成候補データなし)
+      // 45do.info(ordinary/0065)生HTML + ameameixa.com(bushocard-1210)生HTML の2ソースで完全一致を確認(2026-08-02)
       synthesisTable:[
-        {slot:"A", skill:"無鹿ノ幻律", rank:"S", afterSkill:"無鹿ノ幻律", afterRank:"S"},
-        {slot:"B", skill:"無鹿ノ幻律", rank:"S", afterSkill:"無鹿ノ幻律", afterRank:"S"},
-        {slot:"C", skill:"八重言代主神", rank:"SS", afterSkill:"八重言代主神", afterRank:"SS"},
-        {slot:"S1", skill:"神屋楯比売命", rank:"SS", afterSkill:"神屋楯比売命", afterRank:"SS"},
-        {slot:"S2", skill:"高津姫神", rank:"SS", afterSkill:"高津姫神", afterRank:"SS"}
-      ]},
+        {slot:"A", skill:"無鹿ノ幻律", rank:"S", afterSkill:"無鹿ノ幻律", afterRank:"S", rate:"70%", target:"全", effectShort:"防御80%上昇(90分毎に1.5倍、上限4回)"},
+        {slot:"B", skill:"無鹿ノ幻律", rank:"S", afterSkill:"無鹿ノ幻律", afterRank:"S", rate:"70%", target:"全", effectShort:"防御80%上昇(90分毎に1.5倍、上限4回)"},
+        {slot:"C", skill:"八重言代主神", rank:"SS", afterSkill:"八重言代主神", afterRank:"SS", rate:"70%", target:"自身", effectShort:"初期スキルを模倣(戦闘スキルのみ、1倍)"},
+        {slot:"S1", skill:"神屋楯比売命", rank:"SS", afterSkill:"神屋楯比売命", afterRank:"SS", rate:"70%", target:"自身", effectShort:"初期スキルを模倣(戦闘スキルのみ、1倍)"},
+        {slot:"S2", skill:"高津姫神", rank:"SS", afterSkill:"高津姫神", afterRank:"SS", rate:"70%", target:"自身", effectShort:"初期スキルを模倣(戦闘スキルのみ、1倍)"}
+      ], reviewedOk:true},
     {name:"黒田官兵衛【覇】", no:"1214", ch:"24章", cost:5.0, troop:"全攻防", sub:"", effect:"部隊内スキル発動率上昇／卓越追加確率上昇",
       furigana:"くろだかんべえ", illustrator:"直良有祐",
       imageFull:"assets/img/characters/no1214_full.png", imageChar:"assets/img/characters/no1214_char.png",
