@@ -822,7 +822,7 @@
       + (g.trTable ? (
         '<div class="kk-detail-block"><h2>鍛錬レベル別性能</h2>'
         + '<div class="kk-table-scroll"><table class="kk-stat-table"><thead><tr><th>レベル</th><th class="kk-col-narrow">必要ポイント</th><th>効果</th></tr></thead><tbody>'
-        + g.trTable.map(function(row){ return '<tr><td>'+kkEscapeHtml(row.level)+'</td><td class="kk-col-narrow">'+kkEscapeHtml(row.points||'-')+'</td><td style="text-align:left;">'+kkColorizeMujin(row.effect)+'</td></tr>'; }).join('')
+        + g.trTable.filter(function(row){ return row.level === 'LV10' || (row.effect !== null && row.effect !== undefined && row.effect !== ''); }).map(function(row){ return '<tr><td>'+kkEscapeHtml(row.level)+'</td><td class="kk-col-narrow">'+kkEscapeHtml(row.points||'-')+'</td><td style="text-align:left;">'+kkColorizeMujin(row.effect)+'</td></tr>'; }).join('')
         + '</tbody></table></div></div>'
       ) : '')
       + (g.synthesisTable ? (

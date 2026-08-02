@@ -2967,7 +2967,7 @@
       + (g.trTable ? (
         '<div class="gdb-detail-block"><h2>鍛錬レベル別性能</h2>'
         + '<div class="gdb-table-scroll"><table class="gdb-stat-table"><thead><tr><th>レベル</th><th class="gdb-col-narrow">必要ポイント</th><th>効果</th></tr></thead><tbody>'
-        + g.trTable.map(function(row){ return '<tr><td>'+gdbEscapeHtml(row.level)+'</td><td class="gdb-col-narrow">'+gdbEscapeHtml(row.points||'-')+'</td><td style="text-align:left;">'+gdbColorizeMujin(row.effect)+'</td></tr>'; }).join('')
+        + g.trTable.filter(function(row){ return row.level === 'LV10' || (row.effect !== null && row.effect !== undefined && row.effect !== ''); }).map(function(row){ return '<tr><td>'+gdbEscapeHtml(row.level)+'</td><td class="gdb-col-narrow">'+gdbEscapeHtml(row.points||'-')+'</td><td style="text-align:left;">'+gdbColorizeMujin(row.effect)+'</td></tr>'; }).join('')
         + '</tbody></table></div></div>'
       ) : '')
       + (g.mimicRarityTable ? (
