@@ -1402,15 +1402,15 @@
       trTable:[
         {level:"LV10", points:"-", effect:"全　確率 100% / 攻撃240%上昇+防御240%上昇(発動率+10%・卓越追加確率+40%)"}
       ],
-      // 45do.info生HTML確認(https://45do.info/ordinary/0033/)、単一ソースのみ(ixanary/ixagnoに対応する合成候補データなし)
+      // 45do.info(ordinary/0033)生HTML + ameameixa.com(bushocard-1214)生HTML の2ソースで完全一致を確認(2026-08-02)
       // S2枠のみ「建御雷神ノ閃光の裏は模倣スキル」との記載があり、同一カード2枚合成時は八幡神ノ威光(SSS)に変化する特殊枠
       synthesisTable:[
-        {slot:"A", skill:"布都御魂ノ鬨", rank:"SS", afterSkill:"布都御魂ノ鬨", afterRank:"SS"},
-        {slot:"B", skill:"建御雷神ノ槌", rank:"SS", afterSkill:"建御雷神ノ槌", afterRank:"SS"},
-        {slot:"C", skill:"遠呂智ノ閃光", rank:"SS", afterSkill:"遠呂智ノ閃光", afterRank:"SS"},
-        {slot:"S1", skill:"建御雷神ノ閃光", rank:"SS", afterSkill:"建御雷神ノ閃光", afterRank:"SS"},
-        {slot:"S2", skill:"建御雷神ノ閃光", rank:"SS", afterSkill:"八幡神ノ威光", afterRank:"SSS"}
-      ]},
+        {slot:"A", skill:"布都御魂ノ鬨", rank:"SS", afterSkill:"布都御魂ノ鬨", afterRank:"SS", rate:"35%", target:"全", effectShort:"攻撃20%上昇+防御20%上昇(部隊内S以上スキル数×20%)"},
+        {slot:"B", skill:"建御雷神ノ槌", rank:"SS", afterSkill:"建御雷神ノ槌", afterRank:"SS", rate:"100%", target:"全", effectShort:"攻撃135%上昇+防御135%上昇+卓越確率+30%(模倣不可)"},
+        {slot:"C", skill:"遠呂智ノ閃光", rank:"SS", afterSkill:"遠呂智ノ閃光", afterRank:"SS", rate:"100%", target:"全", effectShort:"攻撃125%上昇+卓越:追加確率15%で攻撃効果が4倍"},
+        {slot:"S1", skill:"建御雷神ノ閃光", rank:"SS", afterSkill:"建御雷神ノ閃光", afterRank:"SS", rate:"100%", target:"全 飛翔5", effectShort:"攻撃210%上昇+防御210%上昇+卓越確率+35%(模倣不可)"},
+        {slot:"S2", skill:"建御雷神ノ閃光", rank:"SS", afterSkill:"八幡神ノ威光", afterRank:"SSS", rate:"100%", target:"全 飛翔5", effectShort:"攻撃210%上昇+防御210%上昇+卓越確率+35%(模倣不可)"}
+      ], reviewedOk:true},
     {name:"真田昌幸(1218)", no:"1218", ch:"24章", cost:2.0, troop:"槍弓馬攻", sub:"", effect:"敵軍本丸防御陣形のコスト差分依存",
       furigana:"さなだまさゆき", illustrator:"直良有祐",
       imageFull:"assets/img/characters/no1218_full.png", imageChar:"assets/img/characters/no1218_char.png",
@@ -1421,14 +1421,14 @@
       trTable:[
         {level:"LV10", points:"-", effect:"槍・弓・馬　確率 70% / 攻撃 70%上昇(コスト差分総和×50%加算)"}
       ],
-      // 45do.info生HTML確認(https://45do.info/ordinary/0022/)、単一ソースのみ(ixanary/ixagnoに対応する合成候補データなし)
+      // 45do.info(ordinary/0022)生HTML + ameameixa.com(bushocard-1218)生HTML の2ソースで完全一致を確認(2026-08-02)
       synthesisTable:[
-        {slot:"A", skill:"破軍星 皇", rank:"SS", afterSkill:"破軍星 皇", afterRank:"SS"},
-        {slot:"B", skill:"天啓ノ神撃", rank:"SS", afterSkill:"天啓ノ神撃", afterRank:"SS"},
-        {slot:"C", skill:"火之迦具土神", rank:"SS", afterSkill:"火之迦具土神", afterRank:"SS"},
-        {slot:"S1", skill:"遠呂智ノ閃光", rank:"SS", afterSkill:"遠呂智ノ閃光", afterRank:"SS"},
-        {slot:"S2", skill:"国堅大神", rank:"SS", afterSkill:"国堅大神", afterRank:"SS"}
-      ]},
+        {slot:"A", skill:"破軍星 皇", rank:"SS", afterSkill:"破軍星 皇", afterRank:"SS", rate:"69%", target:"全", effectShort:"攻撃140%上昇(自部隊同時攻撃時コスト最大0.5除外・模倣不可)"},
+        {slot:"B", skill:"天啓ノ神撃", rank:"SS", afterSkill:"天啓ノ神撃", afterRank:"SS", rate:"45%", target:"全", effectShort:"攻撃180%上昇(HP100以上で敵1部隊に追加ダメージ5・模倣不可)"},
+        {slot:"C", skill:"火之迦具土神", rank:"SS", afterSkill:"火之迦具土神", afterRank:"SS", rate:"100%", target:"槍・馬・砲", effectShort:"攻撃160%上昇(卓越追加確率25%で3倍)"},
+        {slot:"S1", skill:"遠呂智ノ閃光", rank:"SS", afterSkill:"遠呂智ノ閃光", afterRank:"SS", rate:"100%", target:"全", effectShort:"攻撃125%上昇+卓越:追加確率15%で攻撃効果が4倍"},
+        {slot:"S2", skill:"国堅大神", rank:"SS", afterSkill:"国堅大神", afterRank:"SS", rate:"60%", target:"全", effectShort:"攻撃170%上昇+防御170%上昇(コスト-1)"}
+      ], reviewedOk:true},
     {name:"前田慶次", no:"1222", ch:"24章", cost:4.0, troop:"槍馬砲器攻", sub:"飛翔2", effect:"追加/極限スキル1つにつき飛翔+4",
       furigana:"まえだけいじ", illustrator:"直良有祐",
       imageFull:"assets/img/characters/no1222_full.png", imageChar:"assets/img/characters/no1222_char.png",
@@ -1439,14 +1439,14 @@
       trTable:[
         {level:"LV10", points:"-", effect:"槍・馬・砲・器 飛翔2　確率 55% / 攻撃 94%上昇(4部隊以下で2倍、追加/極限1つにつき飛翔+4)"}
       ],
-      // 45do.info生HTML確認(https://45do.info/ordinary/0018/)、単一ソースのみ(ixanary/ixagnoに対応する合成候補データなし)
+      // 45do.info(ordinary/0018)生HTML + ameameixa.com(bushocard-1222)生HTML の2ソースで完全一致を確認(2026-08-02)
       synthesisTable:[
-        {slot:"A", skill:"神光征軍", rank:"SS", afterSkill:"神光征軍", afterRank:"SS"},
-        {slot:"B", skill:"天之尾羽張", rank:"SS", afterSkill:"天之尾羽張", afterRank:"SS"},
-        {slot:"C", skill:"天津日ノ太刀", rank:"SS", afterSkill:"天津日ノ太刀", afterRank:"SS"},
-        {slot:"S1", skill:"開闢ノ逆鉾", rank:"SS", afterSkill:"開闢ノ逆鉾", afterRank:"SS"},
-        {slot:"S2", skill:"国堅大神", rank:"SS", afterSkill:"国堅大神", afterRank:"SS"}
-      ]},
+        {slot:"A", skill:"神光征軍", rank:"SS", afterSkill:"神光征軍", afterRank:"SS", rate:"100%", target:"全", effectShort:"全攻90%上昇+全速200%上昇"},
+        {slot:"B", skill:"天之尾羽張", rank:"SS", afterSkill:"天之尾羽張", afterRank:"SS", rate:"100%", target:"全", effectShort:"攻撃170%上昇+速度150%上昇"},
+        {slot:"C", skill:"天津日ノ太刀", rank:"SS", afterSkill:"天津日ノ太刀", afterRank:"SS", rate:"57%", target:"全 飛翔4", effectShort:"攻撃184%上昇(卓越追加確率75%で2倍)"},
+        {slot:"S1", skill:"開闢ノ逆鉾", rank:"SS", afterSkill:"開闢ノ逆鉾", afterRank:"SS", rate:"100%", target:"全", effectShort:"攻撃254%上昇(卓越追加確率30%で兵士被害15%減少)"},
+        {slot:"S2", skill:"国堅大神", rank:"SS", afterSkill:"国堅大神", afterRank:"SS", rate:"60%", target:"全", effectShort:"攻撃170%上昇+防御170%上昇(コスト-1)"}
+      ], reviewedOk:true},
     {name:"伊達政宗(覇3)", no:"1226", ch:"25章", cost:5.5, troop:"全攻防", sub:"", effect:"自部隊内の卓越発動数依存",
       furigana:"だてまさむね", illustrator:"直良有祐",
       imageFull:"assets/img/characters/no1226_full.png", imageChar:"assets/img/characters/no1226_char.png",
