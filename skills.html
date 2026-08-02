@@ -3195,6 +3195,75 @@
     return String(slot||'').split('・').some(function(t){ return t.trim().indexOf('S2') === 0; });
   }
 
+  // ============ 初期スキル保有武将の検索(characters.html / characters-kyoku.html を同一オリジンでfetchして走査) ============
+  // 武将データベースはページごとに独立してgenerals/kyokuGenerals配列を保持しているため(重複データを持つのではなく)、
+  // skills.htmlからfetchでHTMLを取得し配列リテラル部分だけを抜き出して評価する。結果はキャッシュして使い回す。
+  let sklCharSourceCache = null;
+
+  function sklFetchArrayFromHtml(url, varName){
+    return fetch(url).then(function(res){
+      if(!res.ok) throw new Error('fetch failed: '+url);
+      return res.text();
+    }).then(function(text){
+      const marker = 'const '+varName+' = ';
+      const startIdx = text.indexOf(marker);
+      if(startIdx === -1) throw new Error('array not found: '+varName);
+      const arrayStart = text.indexOf('[', startIdx);
+      const closeIdx = text.indexOf('\n  ];', arrayStart);
+      if(closeIdx === -1) throw new Error('array close not found: '+varName);
+      const arrayText = text.slice(arrayStart, closeIdx) + '\n]';
+      return new Function('return ' + arrayText)();
+    });
+  }
+
+  function sklGetCharacterSources(){
+    if(sklCharSourceCache) return sklCharSourceCache;
+    sklCharSourceCache = Promise.all([
+      sklFetchArrayFromHtml('characters.html', 'generals').catch(function(){ return []; }),
+      sklFetchArrayFromHtml('characters-kyoku.html', 'kyokuGenerals').catch(function(){ return []; })
+    ]).then(function(results){
+      return {generals: results[0], kyokuGenerals: results[1]};
+    });
+    return sklCharSourceCache;
+  }
+
+  // generals/kyokuGenerals配列を、initialSkillが一致する武将だけに絞ってsourceCharacters相当の形にする
+  function sklFindInitialSkillHolders(skillName, generalsList, kyokuGeneralsList){
+    const fromChar = (generalsList||[]).filter(function(g){ return g.initialSkill === skillName; })
+      .map(function(g){ return {name:g.name, no:g.no, db:'tenha'}; });
+    const fromKyoku = (kyokuGeneralsList||[]).filter(function(g){ return g.initialSkill === skillName; })
+      .map(function(g){ return {name:g.name, no:g.no, db:'kyoku'}; });
+    return fromChar.concat(fromKyoku);
+  }
+
+  // 詳細再描画のたびにインクリメントし、非同期fetchが古い描画結果を上書きしないようにする
+  let sklDetailRenderToken = 0;
+
+  function sklRenderInitialSkillHolders(skillName, token){
+    const container = document.getElementById('sklInitialSkillBlock');
+    const listEl = document.getElementById('sklInitialSkillList');
+    if(!container || !listEl) return;
+    sklGetCharacterSources().then(function(data){
+      if(token !== sklDetailRenderToken) return;
+      const holders = sklFindInitialSkillHolders(skillName, data.generals, data.kyokuGenerals);
+      if(holders.length === 0){
+        container.style.display = 'none';
+        listEl.innerHTML = '';
+        return;
+      }
+      container.style.display = '';
+      listEl.innerHTML = '<div class="skl-table-scroll"><table class="skl-stat-table"><thead><tr><th class="skl-col-wrap">武将</th></tr></thead><tbody>'
+        + holders.map(function(row){
+            const dbPage = row.db === 'kyoku' ? 'characters-kyoku.html' : 'characters.html';
+            return '<tr><td class="skl-col-wrap"><a href="'+dbPage+'#'+encodeURIComponent(row.no)+'">'+sklEscapeHtml(row.name)+' No.'+sklEscapeHtml(row.no)+'</a></td></tr>';
+          }).join('')
+        + '</tbody></table></div>';
+    }).catch(function(){
+      // file://で開いた場合などfetchが使えない環境では、静かにセクションを隠す
+      container.style.display = 'none';
+    });
+  }
+
   function sklRenderDetail(s){
     const body = document.getElementById('sklDetailBody');
     const flags = [];
@@ -3238,6 +3307,10 @@
           })()
         + '</div>'
       ) : '')
+      + '<div class="skl-detail-block" id="sklInitialSkillBlock" style="display:none;">'
+        + '<h2>初期スキルとして持つ武将</h2>'
+        + '<div id="sklInitialSkillList"></div>'
+      + '</div>'
       + (s.ownHiddenCandidate ? (
         '<div class="skl-detail-block"><h2>このスキルを習得済みのカードを合成素材にした場合の隠し候補</h2>'
         + '<div class="skl-effect-text">'+sklSkillRefLabel(s.ownHiddenCandidate.skill, s.ownHiddenCandidate.rank)+'</div>'
@@ -3254,6 +3327,10 @@
         sklRenderDetail(s);
       });
     }
+
+    // 初期スキル保有武将の一覧は武将DBのfetchが必要なため非同期で後から差し込む
+    sklDetailRenderToken++;
+    sklRenderInitialSkillHolders(s.name, sklDetailRenderToken);
   }
 
   // 汎用ヘルパー: スキル名を表示し、そのスキル自身のページがskills内にあればリンク化した上でLV10性能も併記する
