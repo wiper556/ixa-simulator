@@ -35,6 +35,7 @@
 
   .skl-detail-block{margin-bottom:20px;}
   .skl-detail-block h2{font-family:'Noto Serif JP',serif;font-size:15px;margin:0 0 8px;color:var(--vermillion-bright);border-bottom:1px dashed var(--line);padding-bottom:6px;}
+  .skl-detail-block h2.skl-heading-with-toggle{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;}
   .skl-table-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;}
   .skl-stat-table{width:100%;border-collapse:collapse;font-size:13px;}
   .skl-stat-table th,.skl-stat-table td{border:1px solid var(--line);padding:8px 10px;text-align:center;white-space:nowrap;}
@@ -48,8 +49,7 @@
     background:rgba(184,64,47,0.1);color:var(--vermillion-bright);border:1px solid var(--vermillion);
   }
   .skl-no-detail{color:var(--muted);font-size:13px;padding:20px;text-align:center;border:1px dashed var(--line);border-radius:8px;}
-  .skl-s2-filter{margin-bottom:10px;}
-  .skl-toggle{display:inline-flex;align-items:center;gap:7px;font-size:12.5px;color:var(--muted);cursor:pointer;user-select:none;}
+  .skl-toggle{display:inline-flex;align-items:center;gap:7px;font-size:12.5px;color:var(--muted);cursor:pointer;user-select:none;font-family:'Zen Kaku Gothic New',sans-serif;font-weight:normal;}
   .skl-toggle input{width:16px;height:16px;cursor:pointer;accent-color:var(--gold);}
 
   @media (max-width:600px){
@@ -98,9 +98,6 @@
     </div>
 
     <div id="detailView" style="display:none;">
-      <div class="skl-s2-filter">
-        <label class="skl-toggle"><input type="checkbox" id="sklHideS2">S2(同一カード2枚合成)を非表示</label>
-      </div>
       <div id="sklDetailBody"></div>
       <div id="sklComments"></div>
     </div>
@@ -3427,7 +3424,8 @@
         + '</tbody></table></div></div>'
       ) : '')
       + (s.sourceCharacters && s.sourceCharacters.length ? (
-        '<div class="skl-detail-block"><h2>入手可能な武将(合成素材)</h2>'
+        '<div class="skl-detail-block"><h2 class="skl-heading-with-toggle">入手可能な武将(合成素材)'
+        + '<label class="skl-toggle"><input type="checkbox" id="sklHideS2">S2(同一カード2枚合成)を非表示</label></h2>'
         + (function(){
             const filteredSources = sklHideS2 ? s.sourceCharacters.filter(function(c){ return !sklIsS2Slot(c.slot); }) : s.sourceCharacters;
             if(filteredSources.length === 0){
@@ -3447,6 +3445,17 @@
         + '<div class="skl-effect-text">'+sklSkillRefLabel(s.ownHiddenCandidate.skill, s.ownHiddenCandidate.rank)+'</div>'
         + '</div>'
       ) : '');
+
+    // sourceCharactersの見出し右横に移設したS2非表示チェックボックスは、innerHTML再構築のたびに
+    // DOM要素が作り直されるため、都度チェック状態の反映とイベント登録をやり直す。
+    const hideS2Checkbox = document.getElementById('sklHideS2');
+    if(hideS2Checkbox){
+      hideS2Checkbox.checked = sklHideS2;
+      hideS2Checkbox.addEventListener('change', function(){
+        sklHideS2 = this.checked;
+        sklRenderDetail(s);
+      });
+    }
   }
 
   // 汎用ヘルパー: スキル名を表示し、そのスキル自身のページがskills内にあればリンク化した上でLV10性能も併記する
@@ -3486,13 +3495,6 @@
     if(window.renderCommentsWidget) renderCommentsWidget('sklComments', 'skill:'+s.name);
     window.scrollTo(0, 0);
   }
-
-  document.getElementById('sklHideS2').addEventListener('change', function(){
-    sklHideS2 = this.checked;
-    const hash = decodeURIComponent(location.hash.replace('#',''));
-    const s = skills.find(function(x){ return x.name === hash; });
-    if(s) sklRenderDetail(s);
-  });
 
   window.addEventListener('hashchange', sklRoute);
   sklRenderList(skills);
