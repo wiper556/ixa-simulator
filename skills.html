@@ -3082,6 +3082,27 @@
       trTable:[
         {level:"LV10", points:"-", effect:"槍・弓・砲・器　確率 60% / 攻撃420%上昇+防御420%上昇(コスト+3計算)"}
       ]
+    },
+    {
+      // No.1265(蒲生氏郷(2))の初期スキル(S、自身のsynthesisTable A・B・C枠で自己参照)。45do.info生HTML(ordinary/0256)+ixanary.com(skills/天限ノ麒麟)で2ソース確認、TR1〜TR5実在確認(ixanary生HTML)
+      name:"天限ノ麒麟", rank:"S", baseRate:45, target:"槍・馬・器・焙　兵站",
+      effectSummary:"S/LV10 確率 45% 防御150%上昇/対象:槍・馬・器・焙　兵站\n模倣不可\n①防御150%上昇する\n②破壊150%上昇する\n③防御参加武将数×6.5%を防御効果に加算する",
+      categoryLinks:[
+        {href:"skills-heitan.html", label:"兵站スキル一覧を見る"},
+        {href:"skills-count-def.html", label:"人数依存(防)スキル一覧を見る"}
+      ],
+      sourceCharacters:[
+        {name:"蒲生氏郷(2)", no:"1265", slot:"A・B・C"}
+      ],
+      ownHiddenCandidate: {skill:"天限ノ麒麟", rank:"S"},
+      trTable:[
+        {level:"LV10", points:"-", effect:"槍・馬・器・焙 兵站　確率 45% / 防御150%上昇+破壊150%上昇(防御参加武将数×6.5%加算)"},
+        {level:"TR1", points:"10", effect:"槍・馬・器・焙 兵站　確率 45% / 防御170%上昇+破壊160%上昇(防御参加武将数×6.5%加算)"},
+        {level:"TR2", points:"40", effect:"槍・馬・器・焙 兵站　確率 45% / 防御200%上昇+破壊170%上昇(防御参加武将数×6.5%加算)"},
+        {level:"TR3", points:"90", effect:"槍・馬・器・焙 兵站　確率 45% / 防御240%上昇+破壊180%上昇(防御参加武将数×6.5%加算)"},
+        {level:"TR4", points:"150", effect:"槍・馬・器・焙 兵站　確率 45% / 防御290%上昇+破壊190%上昇(防御参加武将数×6.5%加算)"},
+        {level:"TR5", points:"200", effect:"槍・馬・器・焙 兵站　確率 45% / 防御350%上昇+破壊200%上昇(防御参加武将数×6.5%加算)"}
+      ]
     }
   ];
 
