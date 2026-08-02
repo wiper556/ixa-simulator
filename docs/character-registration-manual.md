@@ -164,7 +164,6 @@ grep -oP 'name:"[^"]+", rank:' skills.html | sed 's/, rank:$//' | sort | uniq -d
    - **保存前に「戦国ixa {カードナンバー}」で検索し、同一武将が出てくるか確認する(2026-08-02追加、カード番号取り違え防止の二重チェック)。**
    - 切り抜き後は`assets/img/characters/no{No}_full.png`/`no{No}_char.png`に保存するのに加えて、`C:\Users\uesug\ixa-simulator-char-screenshots\crop_test\TYPE1\{カードナンバー}_type1.png`・`crop_test\TYPE2\{カードナンバー}_type2.png`にも複製を保管する(2026-08-02追加)。
    - スクリーンショットは`C:\Users\uesug\ixa-simulator-char-screenshots\`直下から探す。ファイル名に武将情報は入っていないため、attack-simulator.htmlのバルクデータやixanary.comの検索結果と突き合わせて特定する。
-   - スクリーンショットが見つからない場合は画像なしで文字情報のみ登録してよい(2026-07-30、ユーザー承認済みのデフォルト方針)。この場合`imageFull`/`imageChar`もnullのまま残す。
 2. **ページ作成(青丸)**: 上記B-0のテンプレートをコピーし、`name`/`no`/`imageFull`/`imageChar`だけ値を入れてページを作成する。この時点でブラウザ確認を行う。
    - `characters.html`側に旧形式のスタブエントリ(`{name, no, ch, cost, troop, sub, effect}`のみ)が既に存在する場合は、そのフィールドの値を引き継ぎつつB-0のテンプレートに置き換える(値を持つフィールドまでnullに戻さない)。
    - 同名で別Noの武将が既に存在する場合、表示名に連番を振って区別する(例: 既存の(2)があれば(3)を付与)。カード自体に区別できる称号(【覇】(復刻)等)がある場合はそちらを優先。
