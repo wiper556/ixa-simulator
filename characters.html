@@ -1476,23 +1476,30 @@
         {slot:"S1", skill:"開闢ノ逆鉾", rank:"SS", afterSkill:"開闢ノ逆鉾", afterRank:"SS", rate:"100%", target:"全", effectShort:"攻撃254%上昇(卓越追加確率30%で兵士被害15%減少)"},
         {slot:"S2", skill:"国堅大神", rank:"SS", afterSkill:"国堅大神", afterRank:"SS", rate:"60%", target:"全", effectShort:"攻撃170%上昇+防御170%上昇(コスト-1)"}
       ]},
-    {name:"伊達政宗(覇3)", no:"1226", ch:"25章", cost:5.5, troop:"全攻防", sub:"", effect:"自部隊内の卓越発動数依存",
+    {name:"伊達政宗(覇3)", no:"1226", ch:"25章", cost:5.5, troop:"全攻防", sub:"", effect:"自部隊内の卓越発動数依存", reviewedOk:true,
       furigana:"だてまさむね", illustrator:"直良有祐",
       imageFull:"assets/img/characters/no1226_full.png", imageChar:"assets/img/characters/no1226_char.png",
       atkBase:1250, atkGrowth:72, defBase:1250, defGrowth:72, tacticsBase:750.0, tacticsGrowth:3.5, lv0Troops:5100,
-      rankGrades:{yari:'.S', yumi:'A', uma:'.S', ki:'A'},
+      // カード画像照合済み(2026-08-02): 槍S/弓S/馬A/器S(旧データはyumi/umaの入れ替わり+kiの誤読+".S"表記の誤記を修正)
+      rankGrades:{yari:'S', yumi:'S', uma:'A', ki:'S'},
       initialSkill:"破天ノ竜撃",
-      skillDetail:"SSS/LV10 確率 32% 攻撃180%上昇/対象:全\n①攻撃180%上昇する\n②防御180%上昇する\n③自部隊内で卓越発動したスキル数×80%を攻防効果に加算する(TR1〜TR5は未確認)",
+      skillDetail:"SSS/LV10 確率 32% 攻撃180%上昇/対象:全\n①攻撃180%上昇する\n②防御180%上昇する\n③自部隊内で卓越発動したスキル数×80%を攻防効果に加算する",
+      // ixagno.blog.fc2.com(blog-entry-8912)生HTML照合済み(2026-08-02): TR1〜TR5の実在を確認し追記
       trTable:[
-        {level:"LV10", points:"-", effect:"全　確率 32% / 攻撃180%上昇+防御180%上昇(卓越発動数×80%加算)"}
+        {level:"LV10", points:"-", effect:"全　確率 32% / 攻撃180%上昇+防御180%上昇(卓越発動数×80%加算)"},
+        {level:"TR1", points:"10", effect:"全　確率 32% / 攻撃190%上昇+防御190%上昇(卓越発動数×82%加算)"},
+        {level:"TR2", points:"40", effect:"全　確率 32% / 攻撃200%上昇+防御200%上昇(卓越発動数×84%加算)"},
+        {level:"TR3", points:"90", effect:"全　確率 32% / 攻撃210%上昇+防御210%上昇(卓越発動数×87%加算)"},
+        {level:"TR4", points:"150", effect:"全　確率 32% / 攻撃225%上昇+防御225%上昇(卓越発動数×90%加算)"},
+        {level:"TR5", points:"200", effect:"全　確率 32% / 攻撃250%上昇+防御250%上昇(卓越発動数×95%加算)"}
       ],
-      // 45do.info(ordinary/0116)生HTML照合済み。2026-08-02再検証: ixanary.com(合成データ非掲載)・ixagno.blog.fc2.com(検索でも該当記事なし)・ameameixa.com(bushocard-1226が404で記事なし)のいずれでも第二ソースを確認できず、単一ソースのまま(要ユーザー確認、黄丸化は見送り)
+      // 45do.info(ordinary/0116)生HTML + ixagno.blog.fc2.com(blog-entry-8912)生HTML の2ソースで完全一致を確認(2026-08-02再検証)。S2枠は「建御雷神ノ閃光の裏は模倣スキル」でカード2枚合成時に八幡神ノ威光(SSS)へ変化する特殊枠(1214と同型)
       synthesisTable:[
         {slot:"A", skill:"遠呂智ノ閃光", rank:"SS", afterSkill:"遠呂智ノ閃光", afterRank:"SS", rate:"100%", target:"全", effectShort:"攻撃125%上昇+卓越:追加確率15%で攻撃効果が4倍"},
         {slot:"B", skill:"四天轟雷", rank:"SS", afterSkill:"四天轟雷", afterRank:"SS", rate:"100%", target:"全", effectShort:"攻撃360%上昇+防御360%上昇+部隊内全スキルに砲・器対象を追加"},
         {slot:"C", skill:"天聖宝冠", rank:"SSS", afterSkill:"天聖宝冠", afterRank:"SSS", rate:"45%", target:"全", effectShort:"攻撃100%上昇+5%×防御参加武将数加算(模倣不可)"},
         {slot:"S1", skill:"月詠ノ覇威", rank:"SS", afterSkill:"月詠ノ覇威", afterRank:"SS", rate:"100%", target:"全", effectShort:"攻撃344%上昇+防御344%上昇+卓越確率+15%(模倣不可)"},
-        {slot:"S2", skill:"建御雷神ノ閃光", rank:"SS", afterSkill:"建御雷神ノ閃光", afterRank:"SS", rate:"100%", target:"全 飛翔5", effectShort:"攻撃210%上昇+防御210%上昇+卓越確率+35%(模倣不可)"}
+        {slot:"S2", skill:"建御雷神ノ閃光", rank:"SS", afterSkill:"八幡神ノ威光", afterRank:"SSS", rate:"100%", target:"全 飛翔5", effectShort:"攻撃210%上昇+防御210%上昇+卓越確率+35%(模倣不可)"}
       ]},
     {name:"大谷吉継(2)", no:"1230", ch:"25章", cost:4.5, troop:"-", sub:"兵站", effect:"加勢中に部隊編成可能／追加スキルの防御・破壊効果2倍",
       furigana:"おおたによしつぐ", illustrator:"直良有祐",
