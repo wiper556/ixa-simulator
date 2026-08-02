@@ -120,22 +120,62 @@ grep -oP 'name:"[^"]+", rank:' skills.html | sed 's/, rank:$//' | sort | uniq -d
 - **rankGradesのバッジ誤読には、スキル名(ixanary.comの`cards/{No}`リンク)のような代替の一次情報源が無い。** ixanary.com自体のYUMI/KIBA列が時々入れ替わっている既知の問題があるため、カード画像の目視が唯一の拠り所であり、目視自体が誤っていた場合(思い込みによる誤読)を検出する独立した手段が無い。
 - **2026-08-02時点でskills.html内に26件のスキル名重複が既に存在しており(A-6導入前に蓄積したもの)、まだ統合作業が完了していない。** この26件については、A-3-11のsourceCharacters逆引き確認を実行しても`grep`が複数エントリにヒットし、どちらが正か・両方に追記が必要かの判断を個々の検証エージェントに委ねる形になっている。統合完了までは、この26件に関わる武将の黄丸化は特に慎重に(該当スキルの全エントリを確認してから)行うこと。
 
-## B. 新規武将登録(スタブ→黄色丸)手順
+## B. 新規武将登録(未登録→青丸→黄丸)手順(2026-08-02再構成: テンプレート運用に統一)
 
-*2026-07-30時点でこの工程はまだ実績が薄く、手順化が未成熟。作業しながら以下に追記していくこと。*
+**以前は「まだ実績が薄く手順化が未成熟」という注記付きの手探り状態だったが、No.2394(高山マリア、極武将)を実例にユーザーと手順を固め、以後は下記の空テンプレートに判明した値を埋めていく方式に統一する。ゼロから全フィールドを都度手打ちしない。**
 
-1. `characters.html`のスタブエントリ(`{name, no, ch, cost, troop, sub, effect}`のみで他フィールドが無いもの)を確認する。
-2. `assets/img/characters/no{No}_full.png`が既にあるか確認(通常は無い)。
-3. `C:\Users\uesug\ixa-simulator-char-screenshots\`内の元スクリーンショットから該当武将を探す。ファイル名に武将情報は入っていないため、attack-simulator.htmlのバルクデータやixanary.comの検索結果と突き合わせて特定する必要がある。
-4. 見つかったら[[feedback_character_screenshot_workflow]]のハートマーク基準の切り抜きルール(TYPE1=466x315/TYPE2=224x315)で切り抜く。
-5. 見つからない場合は画像なしで文字情報のみ登録してよい(2026-07-30、ユーザー承認済みのデフォルト方針)。
-6. ステータス・rankGrades・初期スキル・スキル詳細・TR1〜TR6をixanary.com/45do.infoで調査して登録する。
-7. 同名で別Noの武将が既に存在する場合、表示名に連番を振って区別する(例: 既存の(2)があれば(3)を付与)。カード自体に区別できる称号(【覇】(復刻)等)がある場合はそちらを優先。
-8. A節のA-2以降(キーワード一覧ページ登録、synthesisTable整備、数値・書式チェック、A-5セルフチェック→reviewedOk付与)は既存武将の検証と同じ。
+### B-0. 新規武将登録テンプレート(必ずこの構造をそのままコピーして使う)
+
+```js
+{name:null, no:null, ch:null, cost:null, troop:null, sub:null, effect:null,
+  furigana:null, illustrator:null,
+  imageFull:"assets/img/characters/no{No}_full.png", imageChar:"assets/img/characters/no{No}_char.png",
+  atkBase:null, atkGrowth:null, defBase:null, defGrowth:null, tacticsBase:null, tacticsGrowth:null, lv0Troops:null,
+  rankGrades:null,
+  initialSkill:null,
+  skillDetail:null,
+  trTable:[
+    {level:"LV10", points:"-", effect:null},
+    {level:"TR1", points:"10", effect:null},
+    {level:"TR2", points:"40", effect:null},
+    {level:"TR3", points:"90", effect:null},
+    {level:"TR4", points:"150", effect:null},
+    {level:"TR5", points:"200", effect:null},
+    {level:"TR6", points:"パラレル", effect:null}
+  ],
+  synthesisTable:[
+    {slot:"A", skill:null, rank:null, afterSkill:null, afterRank:null, target:null, rate:null, effectShort:null},
+    {slot:"B", skill:null, rank:null, afterSkill:null, afterRank:null, target:null, rate:null, effectShort:null},
+    {slot:"C", skill:null, rank:null, afterSkill:null, afterRank:null, target:null, rate:null, effectShort:null},
+    {slot:"S1", skill:null, rank:null, afterSkill:null, afterRank:null, target:null, rate:null, effectShort:null},
+    {slot:"S2", skill:null, rank:null, afterSkill:null, afterRank:null, target:null, rate:null, effectShort:null}
+  ]}
+```
+
+**このテンプレートの設計意図(将来の担当者が独自判断で構造を変えないこと):**
+- **未確定の項目は`null`を明示的に入れる。フィールド自体を省略しない。** 「意図的に空」なのか「まだ調べていないだけ」なのかを人間にもgrep等の機械処理にも見分けられるようにするため。
+- `trTable`は最初からLV10〜TR6の7行を用意し、`level`/`points`は標準パターン(LV10:`-`、TR1:`10`、TR2:`40`、TR3:`90`、TR4:`150`、TR5:`200`、TR6:`パラレル`)で固定で埋めておく。`effect`のみnullのまま。**表示側のロジック(`characters.html`の`gdbRenderDetail`、`characters-kyoku.html`の`kkRenderDetail`)が対応済みで、TR1〜TR6行は`effect`が入っていない限り自動的に非表示になる(LV10行は常に表示、commit `67c2351`)。** そのため、調査の結果TR5までしかないと分かった場合でも、TR1〜TR5のeffect欄だけ埋めればよく、TR6行を手動で削除する必要はない。
+- `synthesisTable`は最初からA/B/C/S1/S2の5行を用意し、`slot`のみ固定で埋めておく。他のフィールド(`skill`/`rank`/`afterSkill`/`afterRank`/`target`/`rate`/`effectShort`)は全てnullのまま。
+- `imageFull`/`imageChar`は切り抜き工程(下記フロー1)で先に確定するため、テンプレート適用時点で埋めてよい。**画像切り抜きが完了した時点でこのテンプレートに名前・No.・画像パスだけ入れてページを先に作る**、というのが新しい運用フロー(下記フロー1〜2)。
+
+### 新規登録フロー(全体、上から順に実行)
+
+1. **画像切り抜き**(既存ルール[[feedback_character_screenshot_workflow]]通り、ハートマーク基準でTYPE1=466x315/TYPE2=224x315を切り抜く)。
+   - **保存前に「戦国ixa {カードナンバー}」で検索し、同一武将が出てくるか確認する(2026-08-02追加、カード番号取り違え防止の二重チェック)。**
+   - 切り抜き後は`assets/img/characters/no{No}_full.png`/`no{No}_char.png`に保存するのに加えて、`C:\Users\uesug\ixa-simulator-char-screenshots\crop_test\TYPE1\{カードナンバー}_type1.png`・`crop_test\TYPE2\{カードナンバー}_type2.png`にも複製を保管する(2026-08-02追加)。
+   - スクリーンショットは`C:\Users\uesug\ixa-simulator-char-screenshots\`直下から探す。ファイル名に武将情報は入っていないため、attack-simulator.htmlのバルクデータやixanary.comの検索結果と突き合わせて特定する。
+   - スクリーンショットが見つからない場合は画像なしで文字情報のみ登録してよい(2026-07-30、ユーザー承認済みのデフォルト方針)。この場合`imageFull`/`imageChar`もnullのまま残す。
+2. **ページ作成(青丸)**: 上記B-0のテンプレートをコピーし、`name`/`no`/`imageFull`/`imageChar`だけ値を入れてページを作成する。この時点でブラウザ確認を行う。
+   - `characters.html`側に旧形式のスタブエントリ(`{name, no, ch, cost, troop, sub, effect}`のみ)が既に存在する場合は、そのフィールドの値を引き継ぎつつB-0のテンプレートに置き換える(値を持つフィールドまでnullに戻さない)。
+   - 同名で別Noの武将が既に存在する場合、表示名に連番を振って区別する(例: 既存の(2)があれば(3)を付与)。カード自体に区別できる称号(【覇】(復刻)等)がある場合はそちらを優先。
+   - **この後、判明した情報から順にテンプレートのnullフィールドを埋めていく。** 調査手法・出典の優先順位はA節A-1〜A-4(基礎データ照合→数値・書式チェック)と同じものを使う(ixanary.com/45do.info等、[[feedback_source_reliability_and_fetch_method]])。全フィールドが埋まり、A節A-5のセルフチェック(報告テンプレート含む)を経て初めて`reviewedOk:true`(黄丸)にする。
+3. **連携ページの更新**(スキル一覧ページ等、判明次第対応)。無尽/覇道/撤退/不屈/飛翔/兵站等のキーワード一覧ページへの追加、synthesisTableのS以上候補スキルのskills.htmlページ新規作成・LINKED_SKILLS・sourceCharacters同期は、A節A-2/A-3と同じ手順・同じチェック項目(重複登録チェック・sourceCharacters逆引き確認含む)で行う。
+4. **責任者(ユーザー)の確認。** 黄丸(`reviewedOk:true`)をユーザーが確認し「問題ない」と言ったら`approved:true`(赤丸)にする。同じタイミングで元スクリーンショットのアーカイブ([[feedback_character_screenshot_workflow]]の「赤丸化とアーカイブは同一作業」原則)も忘れず行う。
+5. **攻撃・防御シミュレーターへの反映。** `attack-simulator.html`の武将本体一括登録配列(6000行台以降)にこの武将のステータス・rankGradesを追加する。新規スキルを伴う場合は`specialSkills`にもLV10〜TR6のtrTable/baseRateを反映する([[feedback_skill_page_update_rule]]手順5参照——これを怠ると鍛錬レベル選択でLV10以外の数値がシミュレーターに反映されない)。
 
 **工数実績(目安):**
 - 2026-07-30、16体を1エージェントに一括で任せたところ、既存データ構造の調査だけで時間を使い切り、実質0体しか完了しなかった。**新規登録は検証作業より遥かに重い**(スクショ特定・切り抜き・データ調査を全てゼロから行うため)。1エージェントに複数体を一括で渡すのは避け、1体ずつ完走させてから次を割り当てる方式に変更する(2026-07-30〜)。
-- 1体あたりの見積もり工数はまだ不明。最初の数体を通しでやらせた実績が出次第、ここに追記すること。
+- 2026-08-02、No.2394(高山マリア)を実例にテンプレート運用を確立。テンプレート化によって「既存データ構造をゼロから調べる」という従来最大のボトルネックが解消される見込みだが、テンプレート運用そのものの1体あたり工数実績はまだ蓄積中(次回以降ここに追記すること)。
 
 ---
 
