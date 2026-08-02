@@ -17,6 +17,12 @@
   .ht-table td:first-child{text-align:left;font-family:'Noto Serif JP',serif;font-weight:700;}
   .ht-table td.ht-col-effect{text-align:left;white-space:normal;min-width:260px;}
   .ht-note{color:var(--muted);font-size:12px;line-height:1.7;margin:0 0 14px;}
+  .ht-search{margin-bottom:14px;}
+  .ht-search input{
+    width:100%;font-family:'Zen Kaku Gothic New',sans-serif;font-size:15px;padding:11px 14px;
+    background:#fff;border:1px solid var(--line);color:var(--paper);border-radius:5px;
+  }
+  .ht-search input:focus{outline:none;border-color:var(--gold);}
 
   @media (max-width:600px){
     .ht-table{font-size:12px;}
@@ -56,6 +62,10 @@
   <main class="site-main">
     <h1 class="page-title">兵站スキル一覧</h1>
     <p class="ht-note">「兵站」を持つスキルは、その武将を含む部隊が他城主の拠点に加勢中でも部隊の兵士編成が可能になる効果を持つ。</p>
+
+    <div class="ht-search">
+      <input type="text" id="htSearchBox" placeholder="スキル名または武将名で検索(例: 夜叉美濃、藤堂高虎 など)">
+    </div>
 
     <div class="ht-table-scroll">
       <table class="ht-table">
@@ -147,13 +157,21 @@
       .replace(/\n/g, '<br>');
   }
 
+  function htMatchesSearch(s, q){
+    if(!q) return true;
+    if(s.name.toLowerCase().includes(q)) return true;
+    return (s.sourceCharacters || []).some(function(c){ return c.name.toLowerCase().includes(q); });
+  }
+
   function htRender(){
     const el = document.getElementById('htList');
-    if(heitanSkills.length === 0){
+    const q = document.getElementById('htSearchBox').value.trim().toLowerCase();
+    const list = heitanSkills.filter(function(s){ return htMatchesSearch(s, q); });
+    if(list.length === 0){
       el.innerHTML = '<tr><td colspan="5" style="text-align:center;color:var(--muted);">該当するスキルが見つかりません</td></tr>';
       return;
     }
-    el.innerHTML = heitanSkills.map(function(s){
+    el.innerHTML = list.map(function(s){
       const sources = (s.sourceCharacters || []).map(function(c){
         const dbPage = c.db === 'kyoku' ? 'characters-kyoku.html' : 'characters.html';
         return '<a href="'+dbPage+'#'+encodeURIComponent(c.no)+'">'+htEscapeHtml(c.name)+'('+htEscapeHtml(c.slot)+')</a>';
@@ -163,6 +181,8 @@
         + '<td style="white-space:normal;">'+sources+'</td></tr>';
     }).join('');
   }
+
+  document.getElementById('htSearchBox').addEventListener('input', htRender);
 
   htRender();
 </script>
