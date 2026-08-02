@@ -1764,11 +1764,15 @@
       name:"至天ノ御剣", rank:"SSS", baseRate:70, target:"自身",
       effectSummary:"SSS/LV10 確率 70% 対象:自身\n①自身が持つ初期スキルを模倣する\n②卓越:追加確率30%で通常攻撃/防御効果を1.3倍して模倣する",
       categoryLinks:[
-        {href:"skills-mimic.html", label:"自模倣スキル一覧を見る"}
+        {href:"skills-mimic.html", label:"自模倣スキル一覧を見る"},
+        {href:"skills-takuetsu.html", label:"卓越スキル一覧を見る"}
       ],
       sourceCharacters:[
         {name:"島津義久", no:"1285", slot:"B"},
-        {name:"長野業正", no:"1248", slot:"S1"}
+        {name:"長野業正", no:"1248", slot:"S1"},
+        {name:"小西行長(2)", no:"1308", slot:"B"},
+        {name:"徳川家康【覇(6)】", no:"1288", slot:"候補(未確認)"},
+        {name:"北条氏直", no:"1273", slot:"S1"}
       ],
       ownHiddenCandidate: {skill:"至天ノ御剣", rank:"SSS"},
       trTable:[
@@ -1960,23 +1964,6 @@
       ]
     },
     {
-      name:"至天ノ御剣", rank:"SSS", baseRate:70, target:"自身",
-      effectSummary:"SSS/LV10 確率 70% 効果倍率上昇/対象:自身\n①自身が持つ初期スキルを模倣する\n②卓越:追加確率30%で通常攻撃/防御効果を1.3倍にして模倣する",
-      categoryLinks:[
-        {href:"skills-mimic.html", label:"自模倣スキル一覧を見る"},
-        {href:"skills-takuetsu.html", label:"卓越スキル一覧を見る"}
-      ],
-      sourceCharacters:[
-        {name:"小西行長(2)", no:"1308", slot:"B"},
-        {name:"徳川家康【覇(6)】", no:"1288", slot:"候補(未確認)"},
-        {name:"北条氏直", no:"1273", slot:"S1"}
-      ],
-      ownHiddenCandidate: {skill:"至天ノ御剣", rank:"SSS"},
-      trTable:[
-        {level:"LV10", points:"-", effect:"自身　確率 70% / 卓越追加確率30%・1.3倍"}
-      ]
-    },
-    {
       name:"歴然ノ妙策", rank:"SSS", baseRate:42, target:"全", noMimic:true,
       effectSummary:"SSS/LV10 確率 42% 攻撃上昇/対象:全\n①部隊の総コストに応じて攻撃効果が変動する(LV10で25.04%上昇、計算エンジン未対応)\n②部隊内で武将コストがスキル効果に影響する場合、攻撃効果部分のみこの武将のコストを+0.5(TR5で+1)として計算する(模倣不可)",
       sourceCharacters:[
@@ -2020,11 +2007,14 @@
       ],
       sourceCharacters:[
         {name:"水野勝成", no:"1236", slot:"S2"},
-        {name:"加藤清正(4)", no:"1221", slot:"C"}
+        {name:"加藤清正(4)", no:"1221", slot:"C"},
+        {name:"雑賀孫市(4)", no:"1220", slot:"C"},
+        {name:"森蘭丸", no:"1211", slot:"S1"},
+        {name:"松平元康", no:"1207", slot:"S1"}
       ],
       ownHiddenCandidate: {skill:"加具土ノ神域", rank:"SS"},
       trTable:[
-        {level:"LV10", points:"-", effect:"全　確率 25% / 攻撃 3.4%×防御参加武将数(280人)=952.0%"}
+        {level:"LV10", points:"-", coefficient:"3.4", effect:"全　確率 25% / 攻撃 3.4%×防御参加武将数(280人)=952.0%"}
       ]
     },
     {
@@ -2035,7 +2025,9 @@
         {href:"skills-heitan.html", label:"兵站スキル一覧を見る"}
       ],
       sourceCharacters:[
-        {name:"本願寺顕如(2)", no:"1246", slot:"C"}
+        {name:"本願寺顕如(2)", no:"1246", slot:"C"},
+        {name:"六角承禎(2)", no:"1254", slot:"C"},
+        {name:"真田幸村(覇)", no:"1227", slot:"S1"}
       ],
       ownHiddenCandidate: {skill:"旌旗翳天ノ覇陣", rank:"SS"},
       trTable:[
@@ -2112,22 +2104,6 @@
       ownHiddenCandidate: {skill:"天岩戸ノ神域", rank:"SS"},
       trTable:[
         {level:"LV10", points:"-", coefficient:"2.8", effect:"全　確率 70% / 攻撃 2.8%×防御参加武将数(280人)=784.0%"}
-      ]
-    },
-    {
-      name:"加具土ノ神域", rank:"SS", baseRate:25, target:"全",
-      effectSummary:"SS/LV10 確率 25% 攻撃上昇/対象:全\n①(3.4×防御参加武将数)%を攻撃効果に加算する(TR1〜TR5は未確認)",
-      categoryLinks:[
-        {href:"skills-count-atk.html", label:"人数依存(攻)スキル一覧を見る"}
-      ],
-      sourceCharacters:[
-        {name:"雑賀孫市(4)", no:"1220", slot:"C"},
-        {name:"森蘭丸", no:"1211", slot:"S1"},
-        {name:"松平元康", no:"1207", slot:"S1"}
-      ],
-      ownHiddenCandidate: {skill:"加具土ノ神域", rank:"SS"},
-      trTable:[
-        {level:"LV10", points:"-", coefficient:"3.4", effect:"全　確率 25% / 攻撃 3.4%×防御参加武将数(280人)=952.0%"}
       ]
     },
     {
@@ -2249,21 +2225,6 @@
       ownHiddenCandidate: {skill:"閃裂討鬼", rank:"SS"},
       trTable:[
         {level:"LV10", points:"-", effect:"全　確率 45% / 攻撃 50%上昇(TR以降のデータなし、LV10が最大値)"}
-      ]
-    },
-    {
-      name:"旌旗翳天ノ覇陣", rank:"SS", baseRate:54, target:"全 兵站",
-      effectSummary:"SS/LV10 確率 54% 防御上昇/対象:全　兵站\n①防御効果が上昇する(部隊の総コストで効果が変化・TR1〜TR5は未確認)",
-      categoryLinks:[
-        {href:"skills-heitan.html", label:"兵站スキル一覧を見る"}
-      ],
-      sourceCharacters:[
-        {name:"六角承禎(2)", no:"1254", slot:"C"},
-        {name:"真田幸村(覇)", no:"1227", slot:"S1"}
-      ],
-      ownHiddenCandidate: {skill:"旌旗翳天ノ覇陣", rank:"SS"},
-      trTable:[
-        {level:"LV10", points:"-", effect:"全 兵站　確率 54% / 防御 90.11%上昇(部隊総コスト依存)"}
       ]
     },
     {
