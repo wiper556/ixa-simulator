@@ -1530,14 +1530,14 @@
       trTable:[
         {level:"LV10", points:"-", effect:"槍・砲・器 不屈1　確率 55% / 攻撃 420%上昇(敗北時、指揮兵が1000まで回復)"}
       ],
-      // 45do.info生HTML確認(https://45do.info/ordinary/0152/)、単一ソースのみ(ixanary/ixagnoに対応する合成候補データなし)
+      // 45do.info(ordinary/0152)生HTML + ameameixa.com(bushocard-1244)生HTML の2ソースを突き合わせ。BのみameameixaがA(義心江龍)の重複記載になっており45do.infoのskiladd_wrap(構造化データ、天頂ノ電光)と食い違ったため、より信頼性の高い45do.info側を採用(2026-08-02)
       synthesisTable:[
-        {slot:"A", skill:"義心江龍", rank:"S", afterSkill:"義心江龍", afterRank:"S"},
-        {slot:"B", skill:"天頂ノ電光", rank:"SSS", afterSkill:"天頂ノ電光", afterRank:"SSS"},
-        {slot:"C", skill:"開闢ノ逆鉾", rank:"SS", afterSkill:"開闢ノ逆鉾", afterRank:"SS"},
-        {slot:"S1", skill:"天宇受売命", rank:"SS", afterSkill:"天宇受売命", afterRank:"SS"},
-        {slot:"S2", skill:"神光征軍", rank:"SS", afterSkill:"神光征軍", afterRank:"SS"}
-      ]},
+        {slot:"A", skill:"義心江龍", rank:"S", afterSkill:"義心江龍", afterRank:"S", rate:"55%", target:"槍・砲・器 不屈1", effectShort:"攻撃420%上昇(敗北時、指揮兵が1000まで回復)"},
+        {slot:"B", skill:"天頂ノ電光", rank:"SSS", afterSkill:"天頂ノ電光", afterRank:"SSS", rate:"12%", target:"全", effectShort:"攻撃190%上昇(部隊長なら発動率・効果3倍)"},
+        {slot:"C", skill:"開闢ノ逆鉾", rank:"SS", afterSkill:"開闢ノ逆鉾", afterRank:"SS", rate:"100%", target:"全", effectShort:"攻撃254%上昇(卓越追加確率30%で兵士被害15%減少)"},
+        {slot:"S1", skill:"天宇受売命", rank:"SS", afterSkill:"天宇受売命", afterRank:"SS", rate:"70%", target:"自身", effectShort:"自身の初期スキルを1.25倍にして模倣"},
+        {slot:"S2", skill:"神光征軍", rank:"SS", afterSkill:"神光征軍", afterRank:"SS", rate:"100%", target:"全", effectShort:"全攻90%上昇+全速200%上昇"}
+      ], reviewedOk:true},
     {name:"長野業正", no:"1248", ch:"26章", cost:5.0, troop:"-", sub:"", effect:"自身の卓越スキルが二重卓越可能(2回目+15%)",
       furigana:"ながのなりまさ", illustrator:"直良有祐",
       imageFull:"assets/img/characters/no1248_full.png", imageChar:"assets/img/characters/no1248_char.png",
@@ -1547,14 +1547,14 @@
       trTable:[
         {level:"LV10", points:"-", effect:"全　確率 100% / 二重卓越(2回目+15%)"}
       ],
-      // 45do.info生HTML確認(https://45do.info/ordinary/0148/)、単一ソースのみ(ixanary/ixagnoに対応する合成候補データなし)
+      // 45do.info(ordinary/0148)生HTML + ameameixa.com(bushocard-1248)生HTML の2ソースを突き合わせ。BのみameameixaがA(火之迦具土神)の重複記載になっており45do.infoのskiladd_wrap(構造化データ、遠呂智ノ閃光)と食い違ったため、より信頼性の高い45do.info側を採用(2026-08-02)
       synthesisTable:[
-        {slot:"A", skill:"火之迦具土神", rank:"SS", afterSkill:"火之迦具土神", afterRank:"SS"},
-        {slot:"B", skill:"遠呂智ノ閃光", rank:"SS", afterSkill:"遠呂智ノ閃光", afterRank:"SS"},
-        {slot:"C", skill:"仙剣破斬", rank:"SSS", afterSkill:"仙剣破斬", afterRank:"SSS"},
-        {slot:"S1", skill:"至天ノ御剣", rank:"SSS", afterSkill:"至天ノ御剣", afterRank:"SSS"},
-        {slot:"S2", skill:"天津日ノ太刀", rank:"SS", afterSkill:"天津日ノ太刀", afterRank:"SS"}
-      ]},
+        {slot:"A", skill:"火之迦具土神", rank:"SS", afterSkill:"火之迦具土神", afterRank:"SS", rate:"100%", target:"槍・馬・砲", effectShort:"攻撃160%上昇(卓越追加確率25%で3倍)"},
+        {slot:"B", skill:"遠呂智ノ閃光", rank:"SS", afterSkill:"遠呂智ノ閃光", afterRank:"SS", rate:"100%", target:"全", effectShort:"攻撃125%上昇+卓越:追加確率15%で攻撃効果が4倍"},
+        {slot:"C", skill:"仙剣破斬", rank:"SSS", afterSkill:"仙剣破斬", afterRank:"SSS", rate:"100%", target:"全", effectShort:"攻撃115%上昇+防御115%上昇(卓越で4倍)"},
+        {slot:"S1", skill:"至天ノ御剣", rank:"SSS", afterSkill:"至天ノ御剣", afterRank:"SSS", rate:"70%", target:"自身", effectShort:"自身の初期スキルを模倣(卓越で1.3倍)"},
+        {slot:"S2", skill:"天津日ノ太刀", rank:"SS", afterSkill:"天津日ノ太刀", afterRank:"SS", rate:"57%", target:"全 飛翔4", effectShort:"攻撃184%上昇(卓越追加確率75%で2倍)"}
+      ], reviewedOk:true},
     {name:"北条氏政(5)", no:"1253", ch:"27章", cost:4.5, troop:"槍弓砲器攻防", sub:"", effect:"部隊内スキル発動率+15%／卓越追加確率+50%",
       furigana:"ほうじょううじまさ", illustrator:"直良有祐",
       imageFull:"assets/img/characters/no1253_full.png", imageChar:"assets/img/characters/no1253_char.png",
