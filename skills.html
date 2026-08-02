@@ -2969,6 +2969,40 @@
       trTable:[
         {level:"LV10", points:"-", effect:"槍・弓・馬　確率 25% / 攻撃 15%上昇+破壊5%上昇(TR別データは未確認)"}
       ]
+    },
+    {
+      // ユーザー明示依頼によりA/Bランクだが新規作成。ixanary.com(/skills/転歌/)生HTML確認(確率LV1+25%→LV10+80%/対象部隊長/戦闘スキルのみ模倣・倍率補正なし)+attack-simulator.htmlのspecialSkills記載と一致。
+      // 今川氏真(No.2358)の固有スキル。characters-kyoku.html synthesisTableでA/Bスロットに自己参照で掲載(45do.info+ixagno.blog.fc2.com blog-entry-9417確認済み)、斎藤利三(No.2376)のCスロットにも掲載(blog-entry-9905確認済み)。
+      name:"転歌", rank:"A", baseRate:80, target:"部隊長",
+      effectSummary:"A/LV10 確率 80% 対象:部隊長\n①所属部隊の部隊長が持つ初期スキルを模倣する(戦闘スキルのみ)",
+      categoryLinks:[
+        {href:"skills-leadermimic.html", label:"部隊長模倣スキル一覧を見る"}
+      ],
+      sourceCharacters:[
+        {name:"今川氏真", no:"2358", slot:"A・B", db:"kyoku"},
+        {name:"斎藤利三", no:"2376", slot:"C", db:"kyoku"}
+      ],
+      ownHiddenCandidate: {skill:"入来神舞", rank:"S"},
+      trTable:[
+        {level:"LV10", points:"-", effect:"部隊長　確率 80% / 効果 部隊長の初期スキルを模倣(戦闘スキルのみ、TR別データは未確認)"}
+      ]
+    },
+    {
+      // ユーザー明示依頼によりA/Bランクだが新規作成。ixanary.com(/skills/風狂幻術/)生HTML確認(確率LV1+18%→LV10+53%/対象部隊長/戦闘スキルのみ模倣・倍率補正なし)+attack-simulator.htmlのspecialSkills記載と一致。
+      // characters-kyoku.html synthesisTableで伊達成実(No.2336)のS2スロット(blog-entry-8878確認済み)、今川氏真(No.2358)のCスロット(blog-entry-9417確認済み)に掲載。両者とも移植後も「風狂幻術」のまま(自己参照、終端スキル)。
+      name:"風狂幻術", rank:"B", baseRate:53, target:"部隊長",
+      effectSummary:"B/LV10 確率 53% 対象:部隊長\n①所属部隊の部隊長が持つ初期スキルを模倣する(戦闘スキルのみ)",
+      categoryLinks:[
+        {href:"skills-leadermimic.html", label:"部隊長模倣スキル一覧を見る"}
+      ],
+      sourceCharacters:[
+        {name:"伊達成実", no:"2336", slot:"S2", db:"kyoku"},
+        {name:"今川氏真", no:"2358", slot:"C", db:"kyoku"}
+      ],
+      ownHiddenCandidate: {skill:"風狂幻術", rank:"B"},
+      trTable:[
+        {level:"LV10", points:"-", effect:"部隊長　確率 53% / 効果 部隊長の初期スキルを模倣(戦闘スキルのみ、TR別データは未確認)"}
+      ]
     }
   ];
 
