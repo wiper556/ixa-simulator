@@ -17,6 +17,12 @@
   .fk-table td:first-child{text-align:left;font-family:'Noto Serif JP',serif;font-weight:700;}
   .fk-table td.fk-col-effect{text-align:left;white-space:normal;min-width:260px;}
   .fk-note{color:var(--muted);font-size:12px;line-height:1.7;margin:0 0 14px;}
+  .fk-search{margin-bottom:14px;}
+  .fk-search input{
+    width:100%;font-family:'Zen Kaku Gothic New',sans-serif;font-size:15px;padding:11px 14px;
+    background:#fff;border:1px solid var(--line);color:var(--paper);border-radius:5px;
+  }
+  .fk-search input:focus{outline:none;border-color:var(--gold);}
 
   @media (max-width:600px){
     .fk-table{font-size:12px;}
@@ -56,6 +62,10 @@
   <main class="site-main">
     <h1 class="page-title">不屈スキル一覧</h1>
     <p class="fk-note">「不屈」を持つスキルは、攻撃戦闘敗北時に指揮兵が(不屈の数値×1000)まで回復する効果を持つ(複数所持時は合計値)。数値(不屈1等)を持つ場合はその値も併記。</p>
+
+    <div class="fk-search">
+      <input type="text" id="fkSearchBox" placeholder="スキル名または武将名で検索(例: 天地超克、島津義弘 など)">
+    </div>
 
     <div class="fk-table-scroll">
       <table class="fk-table">
@@ -161,13 +171,21 @@
       .replace(/\n/g, '<br>');
   }
 
+  function fkMatchesSearch(s, q){
+    if(!q) return true;
+    if(s.name.toLowerCase().includes(q)) return true;
+    return (s.sourceCharacters || []).some(function(c){ return c.name.toLowerCase().includes(q); });
+  }
+
   function fkRender(){
     const el = document.getElementById('fkList');
-    if(fukutsuSkills.length === 0){
+    const q = document.getElementById('fkSearchBox').value.trim().toLowerCase();
+    const list = fukutsuSkills.filter(function(s){ return fkMatchesSearch(s, q); });
+    if(list.length === 0){
       el.innerHTML = '<tr><td colspan="6" style="text-align:center;color:var(--muted);">該当するスキルが見つかりません</td></tr>';
       return;
     }
-    el.innerHTML = fukutsuSkills.map(function(s){
+    el.innerHTML = list.map(function(s){
       const sources = (s.sourceCharacters || []).map(function(c){
         const dbPage = c.db === 'kyoku' ? 'characters-kyoku.html' : 'characters.html';
         return '<a href="'+dbPage+'#'+encodeURIComponent(c.no)+'">'+fkEscapeHtml(c.name)+'('+fkEscapeHtml(c.slot)+')</a>';
@@ -178,6 +196,8 @@
         + '<td style="white-space:normal;">'+sources+'</td></tr>';
     }).join('');
   }
+
+  document.getElementById('fkSearchBox').addEventListener('input', fkRender);
 
   fkRender();
 </script>
