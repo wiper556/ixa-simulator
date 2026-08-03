@@ -634,6 +634,9 @@
       rankGrades:{yari:'B', yumi:'S', uma:'A', ki:'A'}, // カード画像バッジを4隅個別にズーム確認(ixanary側はyumi/kibaが入れ替わっていたため画像を優先)
       initialSkill:"聖廉母堂",
       skillDetail:"A/LV10 確率 100% 攻撃410%上昇/対象:弓・砲・器\n模倣不可\n①攻撃410%上昇する\n②防御410%上昇する\n③部隊内武将の全スキルの卓越追加確率が20%上昇する(特殊効果は自部隊内では重複不可)",
+      categoryLinks:[
+        {href:"skills-takuetsu.html", label:"卓越スキル一覧を見る"}
+      ],
       trTable:[
         {level:"LV10", points:"-", effect:"弓・砲・器　確率 100% / 攻撃 410%上昇+防御 410%上昇(部隊内卓越追加確率+20%)"},
         // ixagno.blog.fc2.com(blog-entry-10392)「鍛錬Lv2まで上げることが可能」との明記+実数値確認。TR3以降は存在しないため行を作らない
@@ -817,6 +820,9 @@
         + '<div class="kk-skill-name">'+kkEscapeHtml(g.initialSkill || '-')+'</div>'
         + '<div class="kk-skill-detail">'+kkColorizeMujin(g.skillDetail || g.effect || '')+'</div>'
         + (g.mujinNote ? '<div class="kk-skill-detail" style="margin-top:6px;color:var(--muted);">'+kkColorizeMujin(g.mujinNote)+'</div>' : '')
+        + (g.categoryLinks && g.categoryLinks.length ? g.categoryLinks.map(function(c){
+            return '<div class="kk-skill-detail" style="margin-top:8px;"><a href="'+c.href+'">→ '+kkEscapeHtml(c.label)+'</a></div>';
+          }).join('') : '')
       + '</div>'
       + (g.trTable ? (
         '<div class="kk-detail-block"><h2>鍛錬レベル別性能</h2>'
