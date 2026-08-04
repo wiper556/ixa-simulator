@@ -641,6 +641,50 @@
             '(上限3000・部隊内重複不可)という部隊全体への効果があり、これは今川義元の実績データ(攻168125+防1210=169335→兵法値2444.0)から' +
             '換算比率1%であることを検証済みのため、基本ステータスの兵法値計算に自動反映している。'
     },
+    '聖廉母堂': {
+      noMimic: true, // note内の「模倣不可」記載から自動付与
+      noSquadDuplicate: true, // note内の「重複不可」記載から自動付与(卓越確率上昇効果が部隊内で重複しない)
+      activationType: 'triggered', // ②: 攻撃時発動タイプ
+      statTarget: 'atk', // 攻撃%上昇・防御%上昇は同値のため共通のtrTableで代用(自動反映は攻撃分のみ)
+      targetTroopCategories: ['弓兵科','兵器兵科(砲兵科)','兵器兵科(器兵科)'], // 対象:弓・砲・器
+      trTable: { base:410, TR1:450, TR2:500 }, // 攻撃410%上昇・防御410%上昇(LV10)→TR1:450%→TR2:500%。TR2までしか鍛錬できない
+      baseRate: 100, // 確率100%(鍛錬レベルによらず固定)
+      trRequiredPoints: { TR1:10, TR2:40 },
+      // 部隊内武将の全スキルの卓越追加確率上昇値(%)。squadTakuetsuBonus経由でp1(1回目の卓越確率)に
+      // 加算される、部隊全体への一般的な卓越確率ボーナス(閃龍ノ御剣のcritRateBonusTableと同型、computeSquadTakuetsuRateBonusで自動集計)。
+      critRateBonusTable: { base:20, TR1:25, TR2:30 },
+      note: '【②攻撃時発動】確率100%(鍛錬レベルによらず固定)/対象:弓・砲・器。攻撃%上昇・防御%上昇(同値、自動反映は攻撃分のみ): ' +
+            'LV10(鍛錬前)=410% ／ TR1(10P)=450% ／ TR2(40P)=500%。' +
+            '鍛錬レベルはTR2までしか存在しない(ixagno.blog.fc2.com blog-entry-10392「鍛錬Lv2まで上げることが可能」との記載+' +
+            'characters-kyoku.html No.2394登録時に複数ソースで確認済み)。' +
+            '部隊内武将の全スキルの卓越追加確率上昇(critRateBonusTable、閃龍ノ御剣と同型でcomputeSquadTakuetsuRateBonus経由で自動集計): ' +
+            'LV10=+20% ／ TR1=+25% ／ TR2=+30%。' +
+            '「特殊効果は自部隊内では重複不可」のためnoSquadDuplicate:trueとした(同一部隊内で本スキルの卓越確率上昇効果が複数枚分重複しない)。' +
+            '高山マリア(No.2394)固有スキル(模倣不可)。2026年8月、characters-kyoku.html登録時の確認済み数値をattack-simulator.htmlに反映。'
+    },
+    '破軍一投': {
+      noMimic: true, // note内の「模倣不可」記載から自動付与
+      activationType: 'triggered', // ②: 攻撃時発動タイプ
+      statTarget: 'def', // 防御%上昇のみ(攻撃効果は無し)
+      targetTroopCategories: ['兵器兵科(砲兵科)','兵器兵科(器兵科)'], // 対象:砲・器
+      trTable: { base: 220 }, // 防御220%上昇(LV10のみ、鍛錬(TR)レベルは存在しない)
+      baseRate: 100, // 確率100%(鍛錬レベルによらず固定)
+      note: '【②攻撃時発動】確率100%/対象:砲・器。防御220%上昇(自動反映対応、模倣不可)。鍛錬(TR)レベルは存在しない(ixanary.com・45do.info双方でLV1/LV10のみ確認)。' +
+            '「所領防御陣形の第肆列目以降の部隊にもこのスキルの効果がかかる(自身の所属部隊には重複しない)」は、保持者以外の他部隊にも及ぶ効果のため計算エンジン未対応・参考データのみ。' +
+            '小山田信茂(No.2395)固有スキル。2026年8月、characters-kyoku.html登録時の確認済み数値をattack-simulator.htmlに反映。'
+    },
+    '乱世ノ華': {
+      noMimic: true, // note内の「模倣不可」記載から自動付与
+      activationType: 'triggered', // ②: 攻撃時発動タイプ
+      statTarget: 'def', // 部隊総防御力上昇のみ(攻撃効果は無し)
+      targetTroopCategories: ['槍兵科','弓兵科','兵器兵科(砲兵科)','兵器兵科(器兵科)'], // 対象:槍・弓・砲・器
+      trTable: { base: 3, TR1: 3, TR2: 5 }, // 総防御%上昇(ixanary.com個別スキルページ確認、TR2までしか鍛錬できない)
+      rateTable: { base: 40, TR1: 55, TR2: 55 }, // 確率もTR1で+55%に上昇(TR2は+55%のまま据え置き)
+      note: '【②攻撃時発動】対象:槍・弓・砲・器。部隊総防御力上昇(自動反映対応、模倣不可): ' +
+            'LV10(鍛錬前)=確率40%/総防御3%上昇 ／ TR1(10P)=確率55%/総防御3%上昇 ／ TR2(40P)=確率55%/総防御5%上昇。' +
+            '鍛錬レベルはTR2までしか存在しない(ixanary.com個別スキルページ確認)。高橋紹運(No.2396)固有スキル。' +
+            '2026年8月、characters-kyoku.html登録時の確認済み数値をattack-simulator.htmlに反映。'
+    },
     '飛天ノ閃剣': {
       noMimic: true, // note内の「模倣不可」記載から自動付与(遁世影武者等の模倣スキルはこのスキルを模倣できない)
       // 【重要・訂正】以前は「自己バフ(selfBoost、部隊長本人のみ)」+「部隊全体倍率」の2つが別々に
@@ -4858,7 +4902,10 @@
     { name:'俵屋宗達', no:'2825', initialSkill:'嵐下墨炎', lv0Troops:3350, atkBase:850, atkGrowth:20, defBase:850, defGrowth:20, tacticsBase:620, tacticsGrowth:3, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。職業「文」。Cost3。固有スキル「特:嵐下墨炎」(S、specialSkills登録済み)。' },
     { name:'斎藤道三(1202)', no:'1202', initialSkill:'蛇神咆哮', isHa:true, lv0Troops:5100, atkBase:1260, atkGrowth:69, defBase:1230, defGrowth:45, tacticsBase:740, tacticsGrowth:3.5, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。レアリティ「天」・職業「覇」。Cost5.5。固有スキル「攻:蛇神咆哮」(SSS、specialSkills登録済み)。既存の斎藤道三(3)(No.1297)とは別カードのためNo.を併記。' },
     { name:'織田信長(1166)', no:'1166', initialSkill:'冥界ノ覇神', lv0Troops:4620, atkBase:1240, atkGrowth:72, defBase:1240, defGrowth:57, tacticsBase:730, tacticsGrowth:3.5, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。レアリティ「天」・職業「覇」。Cost5。固有スキル「攻防:冥界ノ覇神」(SSS、specialSkills登録済み)。既存の織田信長(No.1997・No.1250・No.1286等)とは別カードのためNo.を併記。' },
-    { name:'竹中半兵衛(1215)', no:'1215', initialSkill:'天計千年鳳凰', lv0Troops:4690, atkBase:1240, atkGrowth:52, defBase:1270, defGrowth:72, tacticsBase:800, tacticsGrowth:4.0, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。レアリティ「天」・職業「覇」。Cost5。固有スキル「防:天計千年鳳凰」(SSS、specialSkills登録済み)。既存の竹中半兵衛(智絶千算・No.1275等)とは別カードのためNo.を併記。' }
+    { name:'竹中半兵衛(1215)', no:'1215', initialSkill:'天計千年鳳凰', lv0Troops:4690, atkBase:1240, atkGrowth:52, defBase:1270, defGrowth:72, tacticsBase:800, tacticsGrowth:4.0, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。レアリティ「天」・職業「覇」。Cost5。固有スキル「防:天計千年鳳凰」(SSS、specialSkills登録済み)。既存の竹中半兵衛(智絶千算・No.1275等)とは別カードのためNo.を併記。' },
+    { name:'高山マリア', no:'2394', initialSkill:'聖廉母堂', lv0Troops:3450, atkBase:1120, atkGrowth:45, defBase:1120, defGrowth:45, tacticsBase:540.0, tacticsGrowth:2.5, rankGrades:{yari:'B',yumi:'S',uma:'A',ki:'A'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'characters-kyoku.html No.2394(高山マリア)の登録確認済み数値をそのまま反映(2026年8月)。characters-kyoku.htmlの新規登録フロー確立作業(ユーザーと共同)で赤丸化した武将をattack-simulator.htmlへ反映する初回ケース。固有スキル「聖廉母堂」(A、specialSkills登録済み)。' },
+    { name:'小山田信茂', no:'2395', initialSkill:'破軍一投', lv0Troops:3440, atkBase:1030, atkGrowth:33, defBase:1140, defGrowth:47, tacticsBase:510.0, tacticsGrowth:2.5, rankGrades:{yari:'A',yumi:'A',uma:'B',ki:'S'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'characters-kyoku.html No.2395(小山田信茂)の登録確認済み数値をそのまま反映(2026年8月)。固有スキル「破軍一投」(A、specialSkills登録済み)。' },
+    { name:'高橋紹運', no:'2396', initialSkill:'乱世ノ華', lv0Troops:4280, atkBase:1010, atkGrowth:30, defBase:1130, defGrowth:46, tacticsBase:510.0, tacticsGrowth:2.5, rankGrades:{yari:'S',yumi:'A',uma:'B',ki:'A'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'characters-kyoku.html No.2396(高橋紹運)の登録確認済み数値をそのまま反映(2026年8月)。固有スキル「乱世ノ華」(A、specialSkills登録済み)。' }
   ];
 
   // ============ 未登録スキルのエラー表示 ============

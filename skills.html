@@ -155,7 +155,8 @@
       effectSummary:"SS/LV10 確率 44% 攻撃上昇/対象:全　無尽\n①(係数×防御参加武将数)%を攻撃効果に加算する\n②無尽を持つため部隊消費コストを-0.5する",
       categoryLinks:[
         {href:"skills-count-atk.html", label:"人数依存(攻)スキル一覧を見る"},
-        {href:"skills-mujin.html", label:"無尽スキル一覧を見る"}
+        {href:"skills-mujin.html", label:"無尽スキル一覧を見る"},
+        {href:"skills-cost.html", label:"コスト減少スキル一覧を見る"}
       ],
       sourceCharacters:[
         {name:"毛利輝元(復刻)【覇】", no:"10075", slot:"C"},
@@ -178,7 +179,8 @@
       name:"覆天征軍", rank:"SS", baseRate:100, target:"全 無尽2", hasMujin:true,
       effectSummary:"SS/LV10 確率 100% 攻撃900%上昇/対象:全　無尽2\n①攻撃900%上昇する(TR1〜TR5は未確認)\n②無尽2を持つため部隊消費コストを-1.0する",
       categoryLinks:[
-        {href:"skills-mujin.html", label:"無尽スキル一覧を見る"}
+        {href:"skills-mujin.html", label:"無尽スキル一覧を見る"},
+        {href:"skills-cost.html", label:"コスト減少スキル一覧を見る"}
       ],
       sourceCharacters:[
         {name:"本多忠勝(2)", no:"1303", slot:"S1"},
@@ -199,7 +201,8 @@
       effectSummary:"SSS/LV10 確率 46% 攻撃上昇/対象:全　無尽\n①(係数×防御参加武将数)%を攻撃効果に加算する\n②無尽を持つため部隊消費コストを-0.5する",
       categoryLinks:[
         {href:"skills-count-atk.html", label:"人数依存(攻)スキル一覧を見る"},
-        {href:"skills-mujin.html", label:"無尽スキル一覧を見る"}
+        {href:"skills-mujin.html", label:"無尽スキル一覧を見る"},
+        {href:"skills-cost.html", label:"コスト減少スキル一覧を見る"}
       ],
       sourceCharacters:[
         {name:"毛利輝元(復刻)【覇】", no:"10075", slot:"S1"},
@@ -368,7 +371,8 @@
       effectSummary:"SS/LV10 確率 50% 防御上昇/対象:全　無尽\n①(係数×防御参加武将数)%を防御効果に加算する\n②無尽を持つため部隊消費コストを-0.5する",
       categoryLinks:[
         {href:"skills-count-def.html", label:"人数依存(防)スキル一覧を見る"},
-        {href:"skills-mujin.html", label:"無尽スキル一覧を見る"}
+        {href:"skills-mujin.html", label:"無尽スキル一覧を見る"},
+        {href:"skills-cost.html", label:"コスト減少スキル一覧を見る"}
       ],
       sourceCharacters:[
         {name:"石田三成(7)【覇】", no:"1299", slot:"S1"}
@@ -509,11 +513,15 @@
     {
       name:"龍驤虎躍", rank:"SS", baseRate:60, target:"全",
       effectSummary:"SS/LV10 確率 60% 攻防810%上昇/対象:全\n①攻撃810%上昇する\n②防御810%上昇する\n③部隊消費コストを1低下する(模倣不可)",
+      categoryLinks:[
+        {href:"skills-cost.html", label:"コスト減少スキル一覧を見る"}
+      ],
       sourceCharacters:[
         {name:"小西行長(2)", no:"1308", slot:"S2"},
         {name:"福島正則(4)", no:"1305", slot:"A"},
         {name:"真田昌幸(5)", no:"1304", slot:"S2"},
         {name:"大道寺政繁", no:"2386", slot:"S1", db:"kyoku"},
+        {name:"小山田信茂", no:"2395", slot:"S1", db:"kyoku"},
         {name:"藤堂高虎(2)", no:"1270", slot:"A"},
         {name:"最上義光(覇)", no:"1262", slot:"A"},
         {name:"相良義陽(3)", no:"1258", slot:"C"},
@@ -525,8 +533,24 @@
         {name:"上杉謙信(覇2)", no:"1238", slot:"B・C"}
       ],
       ownHiddenCandidate: {skill:"龍驤虎躍", rank:"SS"},
+      grantedViaSkills: [{skill:"破軍一投", rank:"A"}],
+      // 2026年3月16日メンテ後に鍛錬解放。最大TRはTR3(ixagno.blog.fc2.com blog-entry-10906「【龍驤虎躍】の鍛錬解放」に全TR段階の数値記載あり、ユーザー提供)。
       trTable:[
-        {level:"LV10", points:"-", effect:"全　確率 60% / 攻撃 810%上昇+防御810%上昇(コスト-1)"}
+        {level:"LV10", points:"-", effect:"全　確率 60% / 攻撃 810%上昇+防御810%上昇(コスト-1)"},
+        {level:"TR1", points:"10", effect:"全　確率 60% / 攻撃 910%上昇+防御910%上昇(コスト-1)"},
+        {level:"TR2", points:"40", effect:"全　確率 60% / 攻撃 1040%上昇+防御1040%上昇(コスト-1.5)"},
+        {level:"TR3", points:"90", effect:"全　確率 60% / 攻撃 1200%上昇+防御1200%上昇(コスト-2)"}
+      ]
+    },
+    {
+      // A-3-9例外(2026-08-04追加): 移植後合成候補(afterSkill)が既存ページ持ちの龍驤虎躍[SS]のため、Aランクだが単独ページ作成対象
+      name:"破軍一投", rank:"A", baseRate:100, target:"砲・器",
+      effectSummary:"A/LV10 確率 100% 防御220%上昇/対象:砲・器\n模倣不可\n①防御220%上昇する\n②所領防御陣形の第肆列目以降の部隊にもこのスキルの効果がかかる(自身の所属部隊には重複しない)",
+      sourceCharacters:[
+        {name:"小山田信茂", no:"2395", slot:"A・B・C", db:"kyoku"}
+      ],
+      trTable:[
+        {level:"LV10", points:"-", effect:"砲・器　確率 100% / 防御 220%上昇(所領防御陣形第4列以降の部隊にも適用)"}
       ]
     },
     {
@@ -1182,7 +1206,8 @@
       effectSummary:"SS/LV10 確率 100% 攻撃1010%上昇/対象:全　無尽　不屈1\n①攻撃1010%上昇する\n②無尽を持つため部隊消費コストを-0.5する",
       categoryLinks:[
         {href:"skills-mujin.html", label:"無尽スキル一覧を見る"},
-        {href:"skills-fukutsu.html", label:"不屈スキル一覧を見る"}
+        {href:"skills-fukutsu.html", label:"不屈スキル一覧を見る"},
+        {href:"skills-cost.html", label:"コスト減少スキル一覧を見る"}
       ],
       sourceCharacters:[
         {name:"毛利輝元(復刻)【覇】", no:"10075", slot:"B"},
@@ -1754,13 +1779,48 @@
       sourceCharacters:[
         {name:"大谷吉継(2)", no:"1230", slot:"B"},
         {name:"稲葉一鉄", no:"2392", slot:"C", db:"kyoku"},
+        {name:"高橋紹運", no:"2396", slot:"C", db:"kyoku"},
         {name:"宇喜多秀家(2)", no:"1217", slot:"A"},
         {name:"六角承禎(2)", no:"1254", slot:"S2"},
         {name:"羽柴秀吉", no:"1208", slot:"B"}
       ],
       ownHiddenCandidate: {skill:"天衣無縫神戒", rank:"SS"},
+      grantedViaSkills: [{skill:"戦陣 無縫", rank:"A"}],
       trTable:[
         {level:"LV10", points:"-", effect:"全　確率 50% / 防御 30.02%上昇(部隊総コストで変動)"}
+      ]
+    },
+    {
+      // A-3-9例外(2026-08-04追加): 移植後合成候補(afterSkill)が既存ページ持ちの天衣無縫神戒[SS]のため、Aランクだが単独ページ作成対象。
+      // ixagno.blog.fc2.com(blog-entry-9570「【防御】総コスト依存スキルの比較」)で確率42%・対象全・防御(部隊総コストで変動)の純防御スキルと確認。
+      // 45do.info側は稲葉一鉄・高橋紹運の2武将のページのみ「確率100%/対象馬砲器/攻撃防御155%+卓越15%」という誤った数値が記載されていたが、
+      // 他の3武将(大道寺政繁・後藤又兵衛・津軽為信)の45do.infoページ+ixagno.blog.fc2.comの数値が一致するためそちらを正とした。
+      name:"戦陣 無縫", rank:"A", baseRate:42, target:"全",
+      effectSummary:"A/LV10 確率 42% 防御上昇/対象:全\n①部隊総コストに応じて防御効果が変化する(LV10基準80%上昇)",
+      sourceCharacters:[
+        {name:"大道寺政繁", no:"2386", slot:"C", db:"kyoku"},
+        {name:"後藤又兵衛", no:"2390", slot:"B", db:"kyoku"},
+        {name:"稲葉一鉄", no:"2392", slot:"A・B", db:"kyoku"},
+        {name:"津軽為信", no:"2359", slot:"S2", db:"kyoku"},
+        {name:"高橋紹運", no:"2396", slot:"A・B", db:"kyoku"}
+      ],
+      ownHiddenCandidate: {skill:"戦陣 無縫", rank:"A"},
+      grantedViaSkills: [{skill:"凜武艶姫", rank:"A"}],
+      trTable:[
+        {level:"LV10", points:"-", effect:"全　確率 42% / 防御 80%上昇(部隊総コストで変動)"}
+      ]
+    },
+    {
+      // A-3-9例外(2026-08-04追加): 移植後合成候補(afterSkill)が既存ページ持ちの戦陣無縫[A]のため、Aランクだが単独ページ作成対象。
+      // ixanary.com個別スキルページ(skills/凜武艶姫)で確率+40%/対象弓・砲・器/防御15%上昇(部隊総コストで変動)を確認。
+      name:"凜武艶姫", rank:"A", baseRate:40, target:"弓・砲・器",
+      effectSummary:"A/LV10 確率 40% 防御上昇/対象:弓・砲・器\n①部隊総コストに応じて防御効果が変化する(LV10基準15%上昇)",
+      sourceCharacters:[
+        {name:"後藤又兵衛", no:"2390", slot:"A", db:"kyoku"}
+      ],
+      ownHiddenCandidate: {skill:"凜武艶姫", rank:"A"},
+      trTable:[
+        {level:"LV10", points:"-", effect:"弓・砲・器　確率 40% / 防御 15%上昇(部隊総コストで変動)"}
       ]
     },
     {
@@ -1773,6 +1833,7 @@
         {name:"徳川秀忠", no:"1234", slot:"C"},
         {name:"大谷吉継(2)", no:"1230", slot:"C"},
         {name:"丸目長恵", no:"2387", slot:"C・S1", db:"kyoku"},
+        {name:"高橋紹運", no:"2396", slot:"S2", db:"kyoku"},
         {name:"豊臣秀吉(5)", no:"1255", slot:"S2"},
         {name:"蜂須賀小六", no:"1223", slot:"S1"},
         {name:"島津家久", no:"1261", slot:"S2"}
@@ -1788,6 +1849,7 @@
       sourceCharacters:[
         {name:"大谷吉継(2)", no:"1230", slot:"S1"},
         {name:"稲葉一鉄", no:"2392", slot:"S1", db:"kyoku"},
+        {name:"高橋紹運", no:"2396", slot:"S1", db:"kyoku"},
         {name:"宇喜多秀家(2)", no:"1217", slot:"C"},
         {name:"六角承禎(2)", no:"1254", slot:"B"},
         {name:"島津義弘(3)", no:"1232", slot:"C"},
@@ -1796,8 +1858,9 @@
         {name:"鍋島直茂", no:"1283", slot:"A"}
       ],
       ownHiddenCandidate: {skill:"国津破邪ノ楯", rank:"SS"},
+      // ixanary.comの個別スキルページ(skills/国津破邪ノ楯)でLV1・LV10のみ確認、TR行の記載無し(2026-08-04、鍛錬レベルは存在しない)
       trTable:[
-        {level:"LV10", points:"-", effect:"全　確率 60% / 防御 60.04%上昇(部隊総コストで変動、TR別データは未確認)"}
+        {level:"LV10", points:"-", effect:"全　確率 60% / 防御 60.04%上昇(部隊総コストで変動)"}
       ]
     },
     {
@@ -2051,7 +2114,8 @@
       effectSummary:"S/LV10 確率 55% 防御740%上昇/対象:槍・弓・器・鉄　無尽\n①防御740%上昇する\n②無尽を持つため部隊消費コストを-0.5する\n③部隊コスト10以下で効果2倍となる(TR1時10.5以下、TR2時11以下、TR3時12以下、TR4時13以下、TR5時14以下、TR6時15以下)\n④TR6(パラレル版)では確率65%に上昇する",
       // 福島正則(4)No.1305の初期スキル自身が自己参照(S1)候補になっているケース。characters.html#1305と同一データ
       categoryLinks:[
-        {href:"skills-mujin.html", label:"無尽スキル一覧を見る"}
+        {href:"skills-mujin.html", label:"無尽スキル一覧を見る"},
+        {href:"skills-cost.html", label:"コスト減少スキル一覧を見る"}
       ],
       sourceCharacters:[
         {name:"福島正則(4)", no:"1305", slot:"S1"}
@@ -2730,7 +2794,8 @@
       effectSummary:"SSS/LV10 確率 100% 攻撃360%上昇/対象:全　無尽　覇道\n模倣不可\n部隊長時限定\n①部隊内の全極限スキルに無尽を付与する\n②自部隊内の無尽を持つスキルの攻撃効果を2倍する\n③自部隊内の各小隊長の無尽を持たない初期スキルは攻撃戦闘時に無効化され保護不可(覇道天聖等の保護スキルでも無効化を防げない)",
       categoryLinks:[
         {href:"skills-mujin.html", label:"無尽スキル一覧を見る"},
-        {href:"skills-hadou.html", label:"覇道スキル一覧を見る"}
+        {href:"skills-hadou.html", label:"覇道スキル一覧を見る"},
+        {href:"skills-cost.html", label:"コスト減少スキル一覧を見る"}
       ],
       sourceCharacters:[
         {name:"豊臣秀吉【覇】", no:"1274", slot:"移植不可"}
@@ -2749,7 +2814,8 @@
       name:"智絶千算", rank:"SSS", baseRate:100, target:"全 無尽", noMimic:true,
       effectSummary:"SSS/LV10 確率 100% 攻撃680%上昇/対象:全　無尽\n模倣不可\n①攻撃680%上昇する\n②無尽を持つため部隊消費コストを-0.5する\n③対象兵科指揮時、極限スキルの攻撃効果が3.5倍となる",
       categoryLinks:[
-        {href:"skills-mujin.html", label:"無尽スキル一覧を見る"}
+        {href:"skills-mujin.html", label:"無尽スキル一覧を見る"},
+        {href:"skills-cost.html", label:"コスト減少スキル一覧を見る"}
       ],
       sourceCharacters:[
         {name:"竹中半兵衛【覇】", no:"1275", slot:"移植不可"}
@@ -2776,7 +2842,8 @@
       name:"王佐ノ指揮", rank:"S", baseRate:100, target:"全 無尽",
       effectSummary:"S/LV10 確率 100% 攻撃520%上昇 防御520%上昇/対象:全　無尽\n①攻撃520%上昇 防御520%上昇する\n②無尽を持つため部隊消費コストを-0.5する\n③部隊内全武将の兵科対象の全スキルに「砲」対象を追加する",
       categoryLinks:[
-        {href:"skills-mujin.html", label:"無尽スキル一覧を見る"}
+        {href:"skills-mujin.html", label:"無尽スキル一覧を見る"},
+        {href:"skills-cost.html", label:"コスト減少スキル一覧を見る"}
       ],
       sourceCharacters:[
         {name:"羽柴秀長", no:"1278", slot:"移植不可"}
@@ -3337,8 +3404,40 @@
         {name:"高山マリア", no:"2394", slot:"A", db:"kyoku"}
       ],
       ownHiddenCandidate: {skill:"戦陣 吟詠", rank:"A"},
+      grantedViaSkills: [{skill:"日輪ノ守護者", rank:"A"}, {skill:"勝旗勇躍", rank:"A"}],
       trTable:[
         {level:"LV10", points:"-", effect:"全　確率 100% / 攻撃 340%上昇+防御 340%上昇(部隊内卓越追加確率+20%)"}
+      ]
+    },
+    {
+      // A-3-9例外(2026-08-04追加): 移植後合成候補(afterSkill)が既存ページ持ちの戦陣吟詠[A]のため、Aランクだが単独ページ作成対象。
+      name:"日輪ノ守護者", rank:"A", baseRate:65, target:"弓・砲・器",
+      effectSummary:"A/LV10 確率 65% 攻撃340%上昇/対象:弓・砲・器\n①攻撃340%上昇する\n②防御340%上昇する\n③破壊110%上昇する",
+      sourceCharacters:[
+        {name:"佐久間信盛", no:"2397", slot:"A", db:"kyoku"}
+      ],
+      ownHiddenCandidate: {skill:"日輪ノ守護者", rank:"A"},
+      trTable:[
+        {level:"LV10", points:"-", effect:"弓・砲・器　確率 65% / 攻撃 340%上昇+防御 340%上昇+破壊 110%上昇"}
+      ]
+    },
+    {
+      // A-3-9例外(2026-08-04追加): 移植後合成候補(afterSkill)が既存ページ持ちの戦陣吟詠[A]のため、Aランクだが単独ページ作成対象。
+      // trTableは北条綱成(No.2374、このスキルの初期スキル所持武将)の登録済みTR1〜TR5データをそのまま転記。
+      name:"勝旗勇躍", rank:"A", baseRate:100, target:"槍・馬・器・騎",
+      effectSummary:"A/LV10 確率 100% 攻撃440%上昇/対象:槍・馬・器・騎\n模倣不可\n①攻撃440%上昇する\n②防御440%上昇する\n③このスキルを所持する武将の全スキルの卓越確率に50%を加算する",
+      sourceCharacters:[
+        {name:"北条綱成", no:"2374", slot:"移植不可", db:"kyoku"},
+        {name:"佐久間信盛", no:"2397", slot:"B", db:"kyoku"}
+      ],
+      ownHiddenCandidate: {skill:"勝旗勇躍", rank:"A"},
+      trTable:[
+        {level:"LV10", points:"-", effect:"槍・馬・器・騎　確率 100% / 攻撃 440%上昇+防御 440%上昇(卓越確率+50%)"},
+        {level:"TR1", points:"10", effect:"槍・馬・器・騎　確率 100% / 攻撃 450%上昇+防御 450%上昇(卓越確率+55%)"},
+        {level:"TR2", points:"40", effect:"槍・馬・器・騎　確率 100% / 攻撃 470%上昇+防御 470%上昇(卓越確率+60%)"},
+        {level:"TR3", points:"90", effect:"槍・馬・器・騎　確率 100% / 攻撃 500%上昇+防御 500%上昇(卓越確率+65%)"},
+        {level:"TR4", points:"150", effect:"槍・馬・器・騎　確率 100% / 攻撃 540%上昇+防御 540%上昇(卓越確率+70%)"},
+        {level:"TR5", points:"200", effect:"槍・馬・器・騎　確率 100% / 攻撃 600%上昇+防御 600%上昇(卓越確率+80%)"}
       ]
     },
     {
