@@ -179,11 +179,12 @@
       trTable:[
         {level:"LV10", points:"-", effect:"槍・器・鉄　確率 50% / 攻撃 430%上昇"}
       ],
-      // 45do.info+ixagno.blog.fc2.com(blog-entry-10092)確認済み: A/Bの荒龍奸爪は移植後「志半ノ矛楯」に、Cの今樊噲は移植後「戦陣 吟詠」に変化。今樊噲・志半ノ矛楯・戦陣吟詠はA以下のためskills.html新規ページ化なし
+      // 45do.info+ixagno.blog.fc2.com(blog-entry-10092)確認済み: A/Bの荒龍奸爪は移植後「志半ノ矛楯」に変化。今樊噲・志半ノ矛楯・戦陣吟詠はA以下のためskills.html新規ページ化なし
+      // 2026-08-05訂正: Cの今樊噲は「戦陣吟詠に変化」としていたが誤り(佐久間信盛No.2397登録時に発覚した同種の誤りと同じパターン)。自己参照が正しい
       synthesisTable:[
         {slot:"A", skill:"荒龍奸爪", rank:"A", afterSkill:"志半ノ矛楯", afterRank:"A", target:"槍・器・鉄", rate:"50%", effectShort:"攻撃430%上昇(強襲専用部隊でコスト消費-1.5・模倣不可)"},
         {slot:"B", skill:"荒龍奸爪", rank:"A", afterSkill:"志半ノ矛楯", afterRank:"A", target:"槍・器・鉄", rate:"50%", effectShort:"攻撃430%上昇(強襲専用部隊でコスト消費-1.5・模倣不可)"},
-        {slot:"C", skill:"今樊噲", rank:"A", afterSkill:"戦陣 吟詠", afterRank:"A", target:"槍・弓・器・鉄", rate:"+50%", effectShort:"攻撃350%上昇+強襲専用部隊でコスト消費-1.5(模倣不可)"},
+        {slot:"C", skill:"今樊噲", rank:"A", afterSkill:"今樊噲", afterRank:"A", target:"槍・弓・器・鉄", rate:"+50%", effectShort:"攻撃350%上昇+強襲専用部隊でコスト消費-1.5(模倣不可)"},
         {slot:"S1", skill:"志半ノ矛楯", rank:"A", afterSkill:"志半ノ矛楯", afterRank:"A", target:"全", rate:"+65%", effectShort:"攻撃465%上昇+防御465%上昇(模倣不可)"},
         {slot:"S2", skill:"志半ノ矛楯", rank:"A", afterSkill:"志半ノ矛楯", afterRank:"A", target:"全", rate:"+65%", effectShort:"攻撃465%上昇+防御465%上昇(模倣不可)"}
       ], reviewedOk:true},
@@ -491,10 +492,11 @@
         {level:"TR4", points:"150", effect:"槍・馬・器・騎　確率 100% / 攻撃 540%上昇+防御 540%上昇(卓越確率+70%)"},
         {level:"TR5", points:"200", effect:"槍・馬・器・騎　確率 100% / 攻撃 600%上昇+防御 600%上昇(卓越確率+80%)"}
       ],
-      // 45do.info+ixagno.blog.fc2.com(blog-entry-9881)確認済み: A/Bの勝旗勇躍は移植後「戦陣 吟詠」に、Cの霊妙秘剣は移植後「戦陣 剣舞」に変化(自己参照ではない)
+      // 45do.info+ixagno.blog.fc2.com(blog-entry-9881)確認済み: Cの霊妙秘剣は移植後「戦陣 剣舞」に変化(自己参照ではない)
+      // 2026-08-05訂正: A/Bの勝旗勇躍は「戦陣吟詠に変化」としていたが誤り。佐久間信盛(No.2397)登録時にixanary.comの合成テーブル(1次/2次/3次)で確認した通り、1次の時点では自己参照が正しい
       synthesisTable:[
-        {slot:"A", skill:"勝旗勇躍", rank:"A", afterSkill:"戦陣 吟詠", afterRank:"A", target:"槍・馬・器・騎 卓越", rate:"100%", effectShort:"攻撃440%上昇+防御440%上昇+部隊内卓越確率+50%(模倣不可)"},
-        {slot:"B", skill:"勝旗勇躍", rank:"A", afterSkill:"戦陣 吟詠", afterRank:"A", target:"槍・馬・器・騎 卓越", rate:"100%", effectShort:"攻撃440%上昇+防御440%上昇+部隊内卓越確率+50%(模倣不可)"},
+        {slot:"A", skill:"勝旗勇躍", rank:"A", afterSkill:"勝旗勇躍", afterRank:"A", target:"槍・馬・器・騎 卓越", rate:"100%", effectShort:"攻撃440%上昇+防御440%上昇(卓越確率+50%・模倣不可)"},
+        {slot:"B", skill:"勝旗勇躍", rank:"A", afterSkill:"勝旗勇躍", afterRank:"A", target:"槍・馬・器・騎 卓越", rate:"100%", effectShort:"攻撃440%上昇+防御440%上昇(卓越確率+50%・模倣不可)"},
         {slot:"C", skill:"霊妙秘剣", rank:"A", afterSkill:"戦陣 剣舞", afterRank:"A", target:"槍・馬・砲 飛翔6 卓越", rate:"+100%", effectShort:"攻撃180%上昇+防御180%上昇(卓越:追加確率-30%で3倍・0%超のみ抽選・模倣不可)"},
         {slot:"S1", skill:"戦陣 吟詠", rank:"A", afterSkill:"戦陣 吟詠", afterRank:"A", target:"全 卓越", rate:"+100%", effectShort:"攻撃340%上昇+防御340%上昇+部隊内卓越追加確率+20%(模倣不可・特殊効果は自部隊内では重複不可)"},
         {slot:"S2", skill:"戦陣 吟詠", rank:"A", afterSkill:"戦陣 吟詠", afterRank:"A", target:"全 卓越", rate:"+100%", effectShort:"攻撃340%上昇+防御340%上昇+部隊内卓越追加確率+20%(模倣不可・特殊効果は自部隊内では重複不可)"}
@@ -509,13 +511,14 @@
       trTable:[
         {level:"LV10", points:"-", effect:"槍・砲・器　確率 60% / 攻撃 460%上昇+破壊 100%上昇"}
       ],
-      // 45do.info+ixagno.blog.fc2.com(blog-entry-9880)確認済み: A/B/Cの覇立槍は移植後「戦陣疾駆」に変化。S1の戦陣疾駆は移植後、保護スキル「十束ノ神域」[SS]に、S2の日輪ノ守護者は移植後「戦陣吟詠」に変化
+      // 45do.info+ixagno.blog.fc2.com(blog-entry-9880)確認済み: A/B/Cの覇立槍は移植後「戦陣疾駆」に変化。S1の戦陣疾駆は移植後、保護スキル「十束ノ神域」[SS]に変化
+      // 2026-08-05訂正: S2の日輪ノ守護者は「戦陣吟詠に変化」としていたが誤り。佐久間信盛(No.2397)の登録時にixanary.comの合成テーブル(1次/2次/3次)で確認した通り、1次の時点では自己参照が正しい
       synthesisTable:[
         {slot:"A", skill:"覇立槍", rank:"A", afterSkill:"戦陣 疾駆", afterRank:"A", target:"槍・砲・器", rate:"60%", effectShort:"攻撃460%上昇+破壊100%上昇"},
         {slot:"B", skill:"覇立槍", rank:"A", afterSkill:"戦陣 疾駆", afterRank:"A", target:"槍・砲・器", rate:"60%", effectShort:"攻撃460%上昇+破壊100%上昇"},
         {slot:"C", skill:"覇立槍", rank:"A", afterSkill:"戦陣 疾駆", afterRank:"A", target:"槍・砲・器", rate:"60%", effectShort:"攻撃460%上昇+破壊100%上昇"},
         {slot:"S1", skill:"戦陣 疾駆", rank:"A", afterSkill:"十束ノ神域", afterRank:"SS", target:"全", rate:"+100%", effectShort:"速度170%上昇+破壊170%上昇"},
-        {slot:"S2", skill:"日輪ノ守護者", rank:"A", afterSkill:"戦陣 吟詠", afterRank:"A", target:"弓・砲・器", rate:"+65%", effectShort:"攻撃340%上昇+防御340%上昇+破壊110%上昇"}
+        {slot:"S2", skill:"日輪ノ守護者", rank:"A", afterSkill:"日輪ノ守護者", afterRank:"A", target:"弓・砲・器", rate:"+65%", effectShort:"攻撃340%上昇+防御340%上昇+破壊110%上昇"}
       ], reviewedOk:true},
     {name:"斎藤利三", no:"2376", ch:"未確認", cost:4.5, troop:"槍馬器騎攻", sub:"", effect:"部隊内レアリティA以上のスキル数に応じ攻撃上昇",
       furigana:"さいとうとしみつ", illustrator:"西野幸治",
@@ -713,14 +716,16 @@
       initialSkill:"覇軍ノ勇士",
       skillDetail:"A/LV10 確率 48% 攻撃320%上昇/対象:槍・砲・器\n①攻撃320%上昇する\n②防御320%上昇する\n③部隊内の「覇軍ノ勇士」スキル数×120%を攻防効果に加算する(4人時攻撃800%上昇+防御800%上昇)",
       trTable:[
-        {level:"LV10", points:"-", effect:"槍・砲・器　確率 48% / 攻撃800%上昇+防御800%上昇(320%+120%×覇軍ノ勇士所持数4人)"}
+        {level:"LV10", points:"-", effect:"槍・砲・器　確率 48% / 攻撃・防御 320%+120%×覇軍ノ勇士所持数(4人)=800%上昇"}
       ],
-      // 45do.info生HTML(ordinary/0344)の合成テーブル確認。A=日輪ノ守護者[A]→戦陣吟詠[A]、B=勝旗勇躍[A]→戦陣吟詠[A](いずれも既存の森可成No.2375・北条綱成No.2374と同じ移植パターン、戦陣吟詠の正しい性能を反映)/C=戦陣吟詠[A](自己参照)/S1=戦陣神楽[A](自己参照)/S2=志半ノ矛楯[A](自己参照)
+      // 45do.info生HTML(ordinary/0344)の合成テーブル確認。A=日輪ノ守護者[A](自己参照)/B=勝旗勇躍[A](自己参照)/C=戦陣吟詠[A](自己参照)/S1=戦陣神楽[A](自己参照)/S2=志半ノ矛楯[A](自己参照)
+      // 2026-08-05訂正: 当初A/Bを「戦陣吟詠に変化」として登録したが誤りだった。ixanary.comの日輪ノ守護者個別ページの合成テーブル(1次/2次/3次)を確認したところ、
+      // 戦陣吟詠への変化は複数回の追加合成を経た2次以降の話であり、佐久間信盛カード自身が示す1次の時点では日輪ノ守護者・勝旗勇躍のまま(自己参照)が正しい。
       synthesisTable:[
-        {slot:"A", skill:"日輪ノ守護者", rank:"A", afterSkill:"戦陣 吟詠", afterRank:"A", target:"全", rate:"100%", effectShort:"攻撃340%上昇+防御340%上昇+部隊内卓越追加確率+20%(模倣不可・特殊効果は自部隊内では重複不可)"},
-        {slot:"B", skill:"勝旗勇躍", rank:"A", afterSkill:"戦陣 吟詠", afterRank:"A", target:"全", rate:"100%", effectShort:"攻撃340%上昇+防御340%上昇+部隊内卓越追加確率+20%(模倣不可・特殊効果は自部隊内では重複不可)"},
+        {slot:"A", skill:"日輪ノ守護者", rank:"A", afterSkill:"日輪ノ守護者", afterRank:"A", target:"弓・砲・器", rate:"65%", effectShort:"攻撃340%上昇+防御340%上昇+破壊110%上昇"},
+        {slot:"B", skill:"勝旗勇躍", rank:"A", afterSkill:"勝旗勇躍", afterRank:"A", target:"槍・馬・器・騎", rate:"100%", effectShort:"攻撃440%上昇+防御440%上昇(卓越確率+50%・模倣不可)"},
         {slot:"C", skill:"戦陣 吟詠", rank:"A", afterSkill:"戦陣 吟詠", afterRank:"A", target:"全", rate:"100%", effectShort:"攻撃340%上昇+防御340%上昇+部隊内卓越追加確率+20%(模倣不可・特殊効果は自部隊内では重複不可)"},
-        {slot:"S1", skill:"戦陣 神楽", rank:"A", afterSkill:"戦陣 神楽", afterRank:"A", target:"全 飛翔4 卓越", rate:"100%", effectShort:"攻撃77%上昇(卓越:追加確率30%で2倍)"},
+        {slot:"S1", skill:"戦陣 神楽", rank:"A", afterSkill:"遠呂智ノ閃光", afterRank:"SS", target:"全", rate:"100%", effectShort:"攻撃125%上昇(卓越:追加確率15%で4倍)"},
         {slot:"S2", skill:"志半ノ矛楯", rank:"A", afterSkill:"志半ノ矛楯", afterRank:"A", target:"全", rate:"65%", effectShort:"攻撃465%上昇+防御465%上昇(模倣不可)"}
       ]}
   ];
@@ -744,7 +749,7 @@
   }
 
   // スキルデータベース(skills.html)にページがあるスキル名の一覧。ここに載っているスキルはリンク化する。
-  const KK_LINKED_SKILLS = ['入来神舞', '天磐船', '豊国ノ寵将', '天衣無縫神戒', '国津破邪ノ楯', '不滅ノ鬼神', '朧雲ノ閃撃', '瞬刻無影', '国一丸', '氷塊三連撃', '龍驤虎躍', '十束ノ神域', '仙剣破斬', '神光征軍', '天聖宝冠', '海神ノ浮船', '遠呂智ノ閃光', '朧雲ノ蓮撃', '悪屋形', '朝曇ノ明麗', '風林火山', '転歌', '風狂幻術', '戦陣 吟詠', '飛蝶野分', '聖廉母堂', '破軍一投', '戦陣 無縫', '凜武艶姫', '日輪ノ守護者', '勝旗勇躍'];
+  const KK_LINKED_SKILLS = ['入来神舞', '天磐船', '豊国ノ寵将', '天衣無縫神戒', '国津破邪ノ楯', '不滅ノ鬼神', '朧雲ノ閃撃', '瞬刻無影', '国一丸', '氷塊三連撃', '龍驤虎躍', '十束ノ神域', '仙剣破斬', '神光征軍', '天聖宝冠', '海神ノ浮船', '遠呂智ノ閃光', '朧雲ノ蓮撃', '悪屋形', '朝曇ノ明麗', '風林火山', '転歌', '風狂幻術', '戦陣 吟詠', '飛蝶野分', '聖廉母堂', '破軍一投', '戦陣 無縫', '凜武艶姫', '日輪ノ守護者', '勝旗勇躍', '戦陣 神楽'];
 
   function kkSkillLink(skillName, rank){
     const label = kkEscapeHtml(skillName)+' '+kkEscapeHtml(rank||'');
