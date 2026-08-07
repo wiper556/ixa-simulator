@@ -79,9 +79,21 @@
   .gacha-btn:disabled{opacity:.5;cursor:default;filter:none;transform:none;}
 
   .bulk-draw-wrap{text-align:center;margin:-10px 0 22px;}
-  .gacha-btn.bulk{font-size:13px;padding:11px 22px;}
-  .gacha-btn.bulk.unlocked{background:linear-gradient(135deg,#3a3a3a,#000);color:#f0d98a;box-shadow:0 3px 10px rgba(0,0,0,.3);}
-  .bulk-note{margin:8px auto 0;max-width:520px;font-size:11.5px;line-height:1.75;color:var(--muted);}
+  .gacha-btn.bulk{font-size:13px;padding:11px 22px;
+    background:linear-gradient(135deg,#3a3a3a,#000);color:#f0d98a;box-shadow:0 3px 10px rgba(0,0,0,.3);}
+  /* 解放ボタンはページ下部にあるため、上部に現れたことに気づけるよう一度光らせる */
+  .gacha-btn.bulk.just-unlocked{animation:bulkUnlockFlash 1.6s ease-out;}
+  @keyframes bulkUnlockFlash{
+    0%,100%{box-shadow:0 3px 10px rgba(0,0,0,.3);}
+    15%,45%{box-shadow:0 0 0 4px rgba(255,215,0,.6), 0 3px 14px rgba(0,0,0,.35);}
+    30%,60%{box-shadow:0 0 0 10px rgba(255,215,0,0), 0 3px 14px rgba(0,0,0,.35);}
+  }
+
+  .bulk-unlock-section{margin:26px 0 4px;padding-top:18px;border-top:1px dashed var(--line);text-align:center;}
+  .bulk-unlock-section .gacha-btn.secondary{font-size:12px;padding:9px 18px;}
+  .bulk-unlock-note{margin:9px auto 0;max-width:540px;font-size:11px;line-height:1.8;color:var(--muted);}
+  .bulk-unlock-done{margin:0;font-size:11.5px;color:var(--muted);}
+  @media (prefers-reduced-motion: reduce){ .gacha-btn.bulk.just-unlocked{animation:none;} }
 
   /* 100連は通常のカード演出だと長すぎるので、小さめのカードを1枚ずつ出す。
      既存の .tier-◯ .gacha-card-front のグラデーションをそのまま使い回すため、
@@ -396,11 +408,10 @@
           <img src="assets/img/gacha-btn-ten.png" alt="10連を引く">
         </button>
       </div>
-      <div class="bulk-draw-wrap">
-        <!-- 文言は H5_ADS_ENABLED に応じてスクリプト側で差し替える。
-             ここには広告が無効な場合(=現状)の文言を書いておく。 -->
-        <button id="drawBulkBtn" class="gacha-btn bulk unlocked">100連を一気に引く</button>
-        <p id="bulkNote" class="bulk-note">10連を10回引いた場合と全く同じ結果になります(確率・ランキングの扱いは一切変わりません)。</p>
+      <!-- 既定では隠しておき、ページ下部(コメント欄の下)の解放ボタンを押した時だけ出す。
+           単発・10連の隣に常設すると、そちらを引く人が減ってしまうため。 -->
+      <div class="bulk-draw-wrap" id="bulkDrawWrap" style="display:none;">
+        <button id="drawBulkBtn" class="gacha-btn bulk">100連を一気に引く</button>
       </div>
       <div id="gachaCards" class="gacha-cards"></div>
       <div id="bulkSummary"></div>
@@ -491,6 +502,13 @@
     </div>
 
     <div id="pageComments"></div>
+
+    <!-- 100連一括の入口。目立たせたくないのでコメント欄より下に置いている。
+         文言は H5_ADS_ENABLED に応じてスクリプト側で差し替える。 -->
+    <div class="bulk-unlock-section" id="bulkUnlockSection">
+      <button id="bulkUnlockBtn" class="gacha-btn secondary">100連一括を解放する</button>
+      <p class="bulk-unlock-note" id="bulkUnlockNote"></p>
+    </div>
   </main>
 
   <footer class="site-footer">
@@ -1409,24 +1427,28 @@
   // (インセンティブ付き広告)にあたるため、H5 Games Ads の承認前に true にしてはいけない。
   const H5_ADS_ENABLED = false;
 
-  // 広告が無効な間は最初から解放しておく。見せる広告が無いのに「解放」の一手間を
-  // 挟むのは実態と合わないため、ロック状態は広告を出せる時だけ存在させる。
-  // H5_ADS_ENABLED を true にすればロック状態と広告向けの文言が自動的に復活する。
-  let bulkUnlocked = !H5_ADS_ENABLED; // 解放状態はページを更新するとリセットされる(仕様どおり)
+  // 解放の入口はコメント欄の下に置いている。単発・10連の隣に常設すると
+  // そちらを引く人が減ってしまうため、探した人だけが見つけられる位置にしてある。
+  let bulkUnlocked = false; // 解放状態はページを更新するとリセットされる(仕様どおり)
 
-  const BULK_LABEL_LOCKED = '▶ 動画広告を見て「100連一括」を解放';
-  const BULK_LABEL_READY  = '100連を一気に引く';
-  const BULK_NOTE_LOCKED  = '解放するとページを更新するまで何度でも、100連をまとめて引けます。<br>'
-    + '広告を見なくても10連を10回引けば全く同じ結果になります(確率・ランキングの扱いは一切変わりません)。';
-  const BULK_NOTE_READY   = '10連を10回引いた場合と全く同じ結果になります(確率・ランキングの扱いは一切変わりません)。';
+  document.getElementById('bulkUnlockBtn').textContent =
+    H5_ADS_ENABLED ? '▶ 動画広告を見て100連一括を解放' : '100連一括を解放する';
+  document.getElementById('bulkUnlockNote').innerHTML =
+    '解放すると、ページ上部に「100連を一気に引く」ボタンが出ます。ページを更新するまで何度でも引けます。<br>'
+    + (H5_ADS_ENABLED ? '広告を見なくても10連を10回引けば' : '10連を10回引いた場合と')
+    + '全く同じ結果になります(確率・ランキングの扱いは一切変わりません)。';
 
-  function updateBulkBtn(){
-    const btn = document.getElementById('drawBulkBtn');
-    btn.textContent = bulkUnlocked ? BULK_LABEL_READY : BULK_LABEL_LOCKED;
-    btn.classList.toggle('unlocked', bulkUnlocked);
-    document.getElementById('bulkNote').innerHTML = bulkUnlocked ? BULK_NOTE_READY : BULK_NOTE_LOCKED;
+  function unlockBulk(){
+    if(bulkUnlocked) return;
+    bulkUnlocked = true;
+    const wrap = document.getElementById('bulkDrawWrap');
+    wrap.style.display = '';
+    document.getElementById('bulkUnlockSection').innerHTML =
+      '<p class="bulk-unlock-done">100連一括を解放しました(ページを更新すると元に戻ります)</p>';
+    // 解放ボタンはページ下部にあるので、上部に現れたボタンまで運んで一度光らせる
+    wrap.scrollIntoView({behavior:'smooth', block:'center'});
+    document.getElementById('drawBulkBtn').classList.add('just-unlocked');
   }
-  updateBulkBtn();
 
   // 100連は通常のカード演出(1枚あたり約260ms+レア時の再回転)だと数分かかってしまうので、
   // 小さめのカードを1枚ずつテンポよく出す。一気に結果だけ出すと作業感が強く、
@@ -1495,20 +1517,14 @@
     });
   }
 
-  function grantBulk(){
-    bulkUnlocked = true;
-    updateBulkBtn();
-    runBulkDraw();
-  }
-
   function requestBulkUnlock(){
-    // 広告ブロッカー等で広告SDKが読み込めていない場合も解放する。
-    // 広告は時短の対価であって、広告を出せなかった人を締め出すための関門ではない。
-    if(typeof adBreak !== 'function'){ grantBulk(); return; }
-    const btn = document.getElementById('drawBulkBtn');
+    // 広告が無効な間、および広告ブロッカー等で広告SDKが読み込めていない場合は
+    // そのまま解放する。広告は時短の対価であって、締め出すための関門ではない。
+    if(!H5_ADS_ENABLED || typeof adBreak !== 'function'){ unlockBulk(); return; }
+    const btn = document.getElementById('bulkUnlockBtn');
     btn.disabled = true;
     let granted = false;
-    const grantOnce = ()=>{ if(granted) return; granted = true; grantBulk(); };
+    const grantOnce = ()=>{ if(granted) return; granted = true; unlockBulk(); };
     adBreak({
       type: 'reward',
       name: 'bulk-draw-100',
@@ -1524,9 +1540,11 @@
     });
   }
 
+  document.getElementById('bulkUnlockBtn').addEventListener('click', requestBulkUnlock);
+
   document.getElementById('drawBulkBtn').addEventListener('click', ()=>{
     if(busy) return;
-    if(bulkUnlocked) runBulkDraw(); else requestBulkUnlock();
+    runBulkDraw();
   });
 
   document.getElementById('clearHistoryBtn').addEventListener('click', ()=>{
