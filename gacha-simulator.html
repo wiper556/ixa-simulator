@@ -13,7 +13,7 @@
     - gacha-kuji-2026-07-06.html … 2026年7月6日〜31章終了まで(期末プラチナ天獲得イベント)
 
   【ランキング機能について】
-  パラレル12種コンプリート連数ランキングはSupabase(rankingsテーブル)に保存している。
+  通常天12種コンプリート連数ランキングはSupabase(rankingsテーブル)に保存している。
   次の期間に切り替える際は、スクリプト内の定数 KUJI_SCOPE を新しい期間の識別子に変更すること
   (変更しないと過去の期間の記録と混ざって表示されてしまう)。
 -->
@@ -349,7 +349,7 @@
     </div>
 
     <div id="completePanel" class="complete-panel" style="display:none;">
-      <h2>🎉 パラレル12種コンプリート!</h2>
+      <h2>🎉 通常天12種コンプリート!</h2>
       <p><span id="completeCount">0</span>連で達成しました。ランキングに登録しますか?(名前等は登録されず、完了日時のみ記録されます)</p>
       <div class="complete-form">
         <button id="completeSubmitBtn" class="gacha-btn">登録する</button>
@@ -358,7 +358,7 @@
     </div>
 
     <div class="content-block">
-      <h2>パラレル12種コンプリート連数ランキング</h2>
+      <h2>通常天12種コンプリート連数ランキング</h2>
 
       <h3>最速コンプリート TOP10</h3>
       <div id="rankingBest" class="ranking-list"><p class="note">読み込み中...</p></div>
@@ -417,8 +417,7 @@
       </table>
       </div>
       <p class="note">10連は1〜9枚目まで通常確率で抽選し、その中に傑・天・極が1枚も無かった場合、10枚目は傑・天・極のいずれかが確定します(救済枠)。既に傑・天・極が出ている場合、10枚目は右から2列目の上昇した確率で抽選されます。<br>
-      ※各レア度の武将ごとの内訳は、ゲーム内の確率情報ページに表示される「提供割合」に基づいています。10連10枚目については、ブースト時・救済時それぞれの実際の内訳表を個別に反映しています。<br>
-      ※32章のくじでは、パラレル(プラチナ)天は抽選テーブル上の確率(各0.0060%)でのみ出現します。31章までの「通常版の天を一度引くと以後同名の天でパラレル版が確定する」というボーナスは廃止されました(当時の挙動は<a href="gacha-kuji-2026-07-06.html">2026年7月6日 〜 31章終了まで　期末プラチナ天獲得イベント</a>のページで確認できます)。</p>
+      ※各レア度の武将ごとの内訳は、ゲーム内の確率情報ページに表示される「提供割合」に基づいています。10連10枚目については、ブースト時・救済時それぞれの実際の内訳表を個別に反映しています。</p>
     </div>
 
     <div class="content-block">
@@ -454,7 +453,7 @@
   const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im95a3pnemFna3l5Z29iYmZrbXdxIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODQ4ODE2NzMsImV4cCI6MjEwMDQ1NzY3M30.lP8rcREG6iy_A9qA3oDrZh1uf5y3OQeBhGieMFgbUEs';
   const supabaseClient = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
   const KUJI_SCOPE = '2026-08-07'; // 期間限定くじの識別子。次の期間に切り替わったら変更する(32章くじ開始で更新)
-  const KUJI_RANKING_TITLE = 'パラレル12種コンプリート';
+  const KUJI_RANKING_TITLE = '通常天12種コンプリート';
 
   function formatDateTime(iso){
     const d = new Date(iso);
@@ -1041,20 +1040,20 @@
   const ketsuStats = KETSU_CHARS.map(c => ({no:c.no, name:c.name, count:0, pulls:[]}));
 
   const TEN_UNIQUE_DEF = [
-    {name:'豊臣秀長', normalNo:1298, parallelNo:31298},
-    {name:'石田三成', normalNo:1299, parallelNo:31299},
-    {name:'大谷吉継', normalNo:1300, parallelNo:31300},
-    {name:'上杉景勝', normalNo:1301, parallelNo:31301},
-    {name:'佐竹義宣', normalNo:1302, parallelNo:31302},
-    {name:'本多忠勝', normalNo:1303, parallelNo:31303},
-    {name:'真田昌幸', normalNo:1304, parallelNo:31304},
-    {name:'福島正則', normalNo:1305, parallelNo:31305},
-    {name:'毛利輝元', normalNo:1306, parallelNo:31306},
-    {name:'立花宗茂', normalNo:1307, parallelNo:31307},
-    {name:'小西行長', normalNo:1308, parallelNo:31308},
-    {name:'津軽為信', normalNo:1309, parallelNo:31309},
+    {name:'織田信秀', normalNo:1310, parallelNo:31310},
+    {name:'斎藤道三', normalNo:1311, parallelNo:31311},
+    {name:'今川義元', normalNo:1312, parallelNo:31312},
+    {name:'松平清康', normalNo:1313, parallelNo:31313},
+    {name:'大内義隆', normalNo:1314, parallelNo:31314},
+    {name:'北条氏綱', normalNo:1315, parallelNo:31315},
+    {name:'尼子経久', normalNo:1316, parallelNo:31316},
+    {name:'細川晴元', normalNo:1317, parallelNo:31317},
+    {name:'武田晴信', normalNo:1318, parallelNo:31318},
+    {name:'朝倉宗滴', normalNo:1319, parallelNo:31319},
+    {name:'伊達稙宗', normalNo:1320, parallelNo:31320},
+    {name:'六角定頼', normalNo:1321, parallelNo:31321},
     {name:'上杉謙信', normalNo:10074, parallelNo:null},
-    {name:'毛利輝元(覇)', normalNo:10075, parallelNo:null},
+    {name:'毛利輝元', normalNo:10075, parallelNo:null},
     {name:'最上義光', normalNo:10076, parallelNo:null},
   ];
   const tenStats = TEN_UNIQUE_DEF.map(e => ({
@@ -1251,13 +1250,18 @@
     checkParallelCompletion();
   }
 
-  // ============ パラレル12種コンプリート検知 ============
+  // ============ 通常天12種コンプリート検知 ============
+  // 【2026-08-07・32章くじでの条件変更】
+  // 31章くじではコンプリート条件を「パラレル(プラチナ)天12種を全て獲得」としていたが、
+  // 32章くじではパラレル獲得ボーナスが廃止され各0.0060%でしか出ないため、
+  // 条件を「通常版の天12種(No.1310〜1321)を1枚以上ずつ獲得」に変更した。
+  // 10074〜10076(復刻天)はパラレルを持たない別枠のため対象外。
   let parallelCompleteHandled = false;
   let parallelCompleteSubmitted = false;
   let parallelCompleteCount = null;
 
   function isParallelComplete(){
-    return tenStats.filter(e=>e.parallelNo!==null).every(e=>e.parallelCount>0);
+    return tenStats.filter(e=>e.parallelNo!==null).every(e=>e.normalCount>0);
   }
 
   function checkParallelCompletion(){
