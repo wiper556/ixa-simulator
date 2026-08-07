@@ -1328,6 +1328,98 @@
         {slot:"C", skill:"仙境解脱", rank:"SS", afterSkill:"仙境解脱", afterRank:"SS", target:"全", rate:"48%", effectShort:"防御910%上昇+コスト-1.5"},
         {slot:"S1", skill:"琳聖風雅", rank:""},
         {slot:"S2", skill:"月詠ノ覇威", rank:"SS", afterSkill:"月詠ノ覇威", afterRank:"SS", target:"全", rate:"100%", effectShort:"攻防各344%上昇+部隊卓越確率+15%"}
+      ]},
+
+    {name:"渡辺了", no:"2857", ch:"未確認", cost:3, troop:"槍攻", sub:"", effect:"8部隊以下の対人攻撃で失った足軽/長槍足軽の40%が治療対象になる",
+      furigana:"わたなべさとる", illustrator:"鏑木康隆",
+      imageFull:"assets/img/characters/no2857_full.png", imageChar:"assets/img/characters/no2857_char.png",
+      atkBase:1230, atkGrowth:66, defBase:1070, defGrowth:51, tacticsBase:520.0, tacticsGrowth:2.5, lv0Troops:3570,
+      rankGrades:{yari:'SS', yumi:'B', uma:'A', ki:'A'},
+      initialSkill:"天衝破軍槍",
+      skillDetail:"S/LV10 確率 50% 攻撃1000%上昇/対象:槍\n模倣不可・特殊効果は自部隊と他の自分の部隊内で重複不可\n①攻撃1000%上昇する\n②8部隊以下の対人攻撃戦闘時自部隊と他の自分の部隊が戦闘で失った「足軽」「長槍足軽」の40%が治療所の治療対象となる",
+      trTable:[
+        {level:"LV10", points:"-", effect:"槍　確率 50% / 攻撃 1000%上昇(失った足軽・長槍足軽の40%が治療対象)"},
+        {level:"TR5", points:"200", effect:"槍　確率 50% / 攻撃 1510%上昇(失った足軽・長槍足軽の50%が治療対象)"}
+      ],
+      // ixanary.comにカード・スキルページとも未掲載(2026-08-08時点)のため別ソースで確定。
+      // 合成候補は ameblo.jp/kotodaixa/entry-12971894278「2026年7月追加武将［極編］」の
+      // 候補スキル1〜3=A/B/C、隠し候補スキル=S1、同一No合成スキル=S2 の対応で登録。
+      // 同記事は移植後(2次)を載せていないため afterSkill は入れていない。
+      synthesisTable:[
+        {slot:"A", skill:"千人狩", rank:""},
+        {slot:"B", skill:"開闢ノ逆鉾", rank:""},
+        {slot:"C", skill:"叛逆近景", rank:""},
+        {slot:"S1", skill:"天衝破軍槍", rank:"S"},
+        {slot:"S2", skill:"開闢ノ逆鉾", rank:""}
+      ]},
+
+    {name:"北条氏照", no:"7021", ch:"未確認", cost:3, troop:"槍砲器防", sub:"", effect:"部隊コスト10以下で防御効果2倍",
+      furigana:"ほうじょううじてる",
+      imageFull:"assets/img/characters/no7021_full.png", imageChar:"assets/img/characters/no7021_char.png",
+      atkBase:1050, atkGrowth:36, defBase:1150, defGrowth:45, tacticsBase:550.0, tacticsGrowth:2.5, lv0Troops:3470,
+      rankGrades:{yari:'S', yumi:'A', uma:'B', ki:'A'},
+      initialSkill:"虎落",
+      skillDetail:"A/LV10 確率 48% 防御400%上昇/対象:槍・砲・器\n①防御400%上昇する\n②部隊コスト10以下で効果が2倍になる",
+      trTable:[
+        {level:"LV10", points:"-", effect:"槍・砲・器　確率 48% / 防御 400%上昇(部隊コスト10以下で2倍)"},
+        {level:"TR2", points:"40", effect:"槍・砲・器　確率 48% / 防御 500%上昇(部隊コスト12以下で2倍)"}
+      ],
+      // ixanary.comにカード・スキルページとも未掲載(2026-08-08時点)のため別ソースで確定。
+      // 合成候補は ameblo.jp/kotodaixa/entry-12971894278 の
+      // 候補スキル1〜3=A/B/C、隠し候補スキル=S1、同一No合成スキル=S2 の対応で登録。
+      // 同記事は移植後(2次)を載せていないため afterSkill は入れていない。
+      synthesisTable:[
+        {slot:"A", skill:"武神ノ采配", rank:"A"},
+        {slot:"B", skill:"鉄国", rank:"A"},
+        {slot:"C", skill:"破窮ノ勇将", rank:"A"},
+        {slot:"S1", skill:"虎落", rank:"A"},
+        {slot:"S2", skill:"志半ノ矛楯", rank:"A", target:"全", rate:"+65%", effectShort:"攻撃465%上昇+防御465%上昇(模倣不可)"}
+      ]},
+
+    {name:"土井利勝", no:"7022", ch:"未確認", cost:4.5, troop:"砲器攻", sub:"", effect:"自部隊同時攻撃時、合流自部隊数-2の不屈を得る",
+      furigana:"どいとしかつ", illustrator:"末冨正直",
+      imageFull:"assets/img/characters/no7022_full.png", imageChar:"assets/img/characters/no7022_char.png",
+      atkBase:1160, atkGrowth:46, defBase:1030, defGrowth:33, tacticsBase:530.0, tacticsGrowth:2.5, lv0Troops:4290,
+      rankGrades:{yari:'A', yumi:'A', uma:'B', ki:'S'},
+      initialSkill:"万機泰平",
+      skillDetail:"A/LV10 確率 40% 攻撃600%上昇/対象:砲・器\n①攻撃600%上昇する\n②自部隊同時攻撃時この武将は合流自部隊数-2の不屈を得る(特殊効果は模倣不可)",
+      trTable:[
+        {level:"LV10", points:"-", effect:"砲・器　確率 40% / 攻撃 600%上昇(自部隊同時攻撃時に合流自部隊数-2の不屈)"}
+      ],
+      // ixanary.comにカード・スキルページとも未掲載(2026-08-08時点)のため別ソースで確定。
+      // 合成候補は ameblo.jp/kotodaixa/entry-12971894278 の
+      // 候補スキル1〜3=A/B/C、隠し候補スキル=S1、同一No合成スキル=S2 の対応で登録。
+      // 同記事は移植後(2次)を載せていないため afterSkill は入れていない。
+      synthesisTable:[
+        {slot:"A", skill:"御旗ノ守護者", rank:"A"},
+        {slot:"B", skill:"破克閃剣", rank:"A"},
+        {slot:"C", skill:"星詠ム仁将", rank:"A"},
+        {slot:"S1", skill:"万機泰平", rank:"A"},
+        {slot:"S2", skill:"志半ノ矛楯", rank:"A", target:"全", rate:"+65%", effectShort:"攻撃465%上昇+防御465%上昇(模倣不可)"}
+      ]},
+
+    {name:"加藤嘉明", no:"7405", ch:"未確認", cost:5.5, troop:"全攻", sub:"", effect:"部隊内の「海賊衆」を指揮する武将数で総攻撃力上昇",
+      furigana:"かとうよしあき", illustrator:"正子公也",
+      imageFull:"assets/img/characters/no7405_full.png", imageChar:"assets/img/characters/no7405_char.png",
+      atkBase:1240, atkGrowth:65, defBase:1090, defGrowth:54, tacticsBase:540.0, tacticsGrowth:2.5, lv0Troops:5040,
+      rankGrades:{yari:'A', yumi:'S', uma:'A', ki:'A'},
+      initialSkill:"剛毅謀慮",
+      skillDetail:"S/LV10 確率 40% 総攻撃(係数×海賊衆武将数)%上昇/対象:全\n模倣不可\n①対象兵科を指揮した戦闘時部隊総攻撃力が(自部隊内の「海賊衆」を指揮する武将数×9)%上昇する",
+      trTable:[
+        {level:"LV10", points:"-", effect:"全　確率 40% / 総攻撃 9%×海賊衆武将数(4人)=36.0%"},
+        {level:"TR5", points:"200", effect:"全　確率 40% / 総攻撃 12.5%×海賊衆武将数(4人)=50.0%"}
+      ],
+      // ixanary.comにカード・スキルページとも未掲載(2026-08-08時点)のため別ソースで確定。
+      // 合成候補は ameblo.jp/kotodaixa/entry-12971894278 の
+      // 候補スキル1〜3=A/B/C、隠し候補スキル=S1、同一No合成スキル=S2 の対応で登録。
+      // 同記事は移植後(2次)を載せていないため afterSkill は入れていない。
+      // 海賊衆武将数は部隊4枠を想定した参考値(No.1298の無尽武将数と同じ扱い)。
+      synthesisTable:[
+        {slot:"A", skill:"七槍の智", rank:""},
+        {slot:"B", skill:"破軍騎行", rank:""},
+        {slot:"C", skill:"千里必勝ノ神算", rank:""},
+        {slot:"S1", skill:"船手衆ノ極意", rank:""},
+        {slot:"S2", skill:"開闢ノ逆鉾", rank:""}
       ]}
   ];
 
