@@ -1094,7 +1094,9 @@
       const paraPullCell = hasParallel
         ? (e.parallelPulls.length ? e.parallelPulls.join('・')+'連目' : '-')
         : '-';
-      return '<tr><td>'+e.name+'</td><td data-label="通常">'+e.normalCount+'枚</td>'+
+      // 32章開幕くじではコンプリート条件が「通常天12種を1枚以上ずつ」なので、
+      // 獲得済みの通常天を朱色で強調して進捗が一目で分かるようにする
+      return '<tr><td>'+e.name+'</td><td data-label="通常"'+(e.normalCount ? ' class="has-count"' : '')+'>'+e.normalCount+'枚</td>'+
         '<td data-label="パラレル"'+(hasParallel && e.parallelCount ? ' class="has-count"' : '')+'>'+paraCountCell+'</td>'+
         '<td data-label="パラレルを獲得した通算連数">'+paraPullCell+'</td></tr>';
     }).join('');
