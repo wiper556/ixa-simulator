@@ -758,6 +758,30 @@
         {slot:"C", skill:"戦陣 吟詠", rank:"A", afterSkill:"戦陣 吟詠", afterRank:"A", target:"全", rate:"100%", effectShort:"攻撃340%上昇+防御340%上昇+部隊内卓越追加確率+20%(模倣不可・特殊効果は自部隊内では重複不可)"},
         {slot:"S1", skill:"戦陣 神楽", rank:"A", afterSkill:"遠呂智ノ閃光", afterRank:"SS", target:"全 飛翔4", rate:"100%", effectShort:"攻撃 77%上昇(卓越:追加確率30%で2倍)", afterTarget:"全", afterRate:"100%", afterEffectShort:"攻撃 125%上昇(卓越追加確率15%・4倍、TR別データは未確認)"},
         {slot:"S2", skill:"志半ノ矛楯", rank:"A", afterSkill:"志半ノ矛楯", afterRank:"A", target:"全", rate:"65%", effectShort:"攻撃465%上昇+防御465%上昇(模倣不可)"}
+      ]},
+
+    {name:"宇佐美定満", no:"2398", ch:"未確認", cost:3, troop:"全攻", sub:"", effect:"自軍武将のスキル発動率+3%(重複効果無し)",
+      furigana:"うさみさだみつ", illustrator:"末冨正直",
+      imageFull:"assets/img/characters/no2398_full.png", imageChar:"assets/img/characters/no2398_char.png",
+      atkBase:1140, atkGrowth:47, defBase:1020, defGrowth:32, tacticsBase:550.0, tacticsGrowth:2.5, lv0Troops:3460,
+      rankGrades:{yari:'S', yumi:'A', uma:'B', ki:'A'},
+      initialSkill:"神変機略",
+      skillDetail:"A/LV10 確率 100% 攻撃420%上昇/対象:全\n①攻撃420%上昇する\n②自軍武将のスキル発動率が3%上昇する(発動率上昇は重複効果無し)",
+      trTable:[
+        {level:"LV10", points:"-", effect:"全　確率 100% / 攻撃 420%上昇(自軍武将のスキル発動率+3%)"},
+        {level:"TR1", points:"10", effect:"全　確率 100% / 攻撃 470%上昇(自軍武将のスキル発動率+4%)"},
+        {level:"TR2", points:"40", effect:"全　確率 100% / 攻撃 520%上昇(自軍武将のスキル発動率+5%)"}
+      ],
+      // ixanary.com(cards/2398 と skills/神変機略 の生HTML)で確認(2026-08-08)。
+      // カード画像の装飾フォントでは「神変譎略」と読めるが、skillsリンクの正式名称は「神変機略」。
+      // 合成テーブルはスキルページの1次(=skill)・2次(=afterSkill)から取得。TR3以降はixanaryに存在しない(LV1/LV10/TR1/TR2のみ)。
+      // 各候補スキルの対象・確率・効果はサイト内の既存登録(同一スキルの他武将分)と一致させた。
+      synthesisTable:[
+        {slot:"A", skill:"戦陣 吟詠", rank:"A", afterSkill:"戦陣 吟詠", afterRank:"A", target:"全 卓越", rate:"+100%", effectShort:"攻撃340%上昇+防御340%上昇+部隊内卓越追加確率+20%(模倣不可・特殊効果は自部隊内では重複不可)"},
+        {slot:"B", skill:"十束ノ神域", rank:"SS", afterSkill:"天聖宝冠", afterRank:"SSS", target:"全 覇道", rate:"100%", effectShort:"攻撃320%上昇+速度70%上昇+覇道を持つため所属部隊の武将のスキルを無効化・発動率低下から保護", afterTarget:"全", afterRate:"45%", afterEffectShort:"攻撃 100%+5%×防御参加武将数(280人)=1500.0%"},
+        {slot:"C", skill:"宿木", rank:"B", afterSkill:"宿木", afterRank:"B", target:"部隊長", rate:"+55%", effectShort:"部隊長の初期スキルを模倣(戦闘スキルのみ)"},
+        {slot:"S1", skill:"乱世ノ歸人", rank:"A", afterSkill:"入来神舞", afterRank:"S", target:"部隊長", rate:"+50%", effectShort:"部隊長の模倣可能な初期スキルを模倣(卓越:追加確率30%で1.2倍)", afterTarget:"部隊長", afterRate:"55%", afterEffectShort:"部隊長の初期スキルを1.1倍に強化して模倣(TR別データは未確認)"},
+        {slot:"S2", skill:"志半ノ矛楯", rank:"A", afterSkill:"志半ノ矛楯", afterRank:"A", target:"全", rate:"+65%", effectShort:"攻撃465%上昇+防御465%上昇(模倣不可)"}
       ]}
   ];
 
