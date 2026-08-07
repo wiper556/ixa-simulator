@@ -373,9 +373,10 @@
         </button>
       </div>
       <div class="bulk-draw-wrap">
-        <button id="drawBulkBtn" class="gacha-btn bulk">▶ 動画広告を見て「100連一括」を解放</button>
-        <p class="bulk-note">解放するとページを更新するまで何度でも、100連を演出なしで引けます。<br>
-        広告を見なくても10連を10回引けば全く同じ結果になります(確率・ランキングの扱いは一切変わりません)。</p>
+        <!-- 文言は H5_ADS_ENABLED に応じてスクリプト側で差し替える。
+             ここには広告が無効な場合(=現状)の文言を書いておく。 -->
+        <button id="drawBulkBtn" class="gacha-btn bulk unlocked">100連を一気に引く(演出なし)</button>
+        <p id="bulkNote" class="bulk-note">10連を10回引いた場合と全く同じ結果になります(確率・ランキングの扱いは一切変わりません)。</p>
       </div>
       <div id="gachaCards" class="gacha-cards"></div>
       <div id="gachaTally" class="gacha-tally">累計 0連</div>
@@ -1376,13 +1377,24 @@
   // (インセンティブ付き広告)にあたるため、H5 Games Ads の承認前に true にしてはいけない。
   const H5_ADS_ENABLED = false;
 
-  let bulkUnlocked = false; // ページを更新するとリセットされる(仕様どおり)
+  // 広告が無効な間は最初から解放しておく。見せる広告が無いのに「解放」の一手間を
+  // 挟むのは実態と合わないため、ロック状態は広告を出せる時だけ存在させる。
+  // H5_ADS_ENABLED を true にすればロック状態と広告向けの文言が自動的に復活する。
+  let bulkUnlocked = !H5_ADS_ENABLED; // 解放状態はページを更新するとリセットされる(仕様どおり)
+
+  const BULK_LABEL_LOCKED = '▶ 動画広告を見て「100連一括」を解放';
+  const BULK_LABEL_READY  = '100連を一気に引く(演出なし)';
+  const BULK_NOTE_LOCKED  = '解放するとページを更新するまで何度でも、100連を演出なしで引けます。<br>'
+    + '広告を見なくても10連を10回引けば全く同じ結果になります(確率・ランキングの扱いは一切変わりません)。';
+  const BULK_NOTE_READY   = '10連を10回引いた場合と全く同じ結果になります(確率・ランキングの扱いは一切変わりません)。';
 
   function updateBulkBtn(){
     const btn = document.getElementById('drawBulkBtn');
-    btn.textContent = bulkUnlocked ? '100連を一気に引く(演出なし)' : '▶ 動画広告を見て「100連一括」を解放';
+    btn.textContent = bulkUnlocked ? BULK_LABEL_READY : BULK_LABEL_LOCKED;
     btn.classList.toggle('unlocked', bulkUnlocked);
+    document.getElementById('bulkNote').innerHTML = bulkUnlocked ? BULK_NOTE_READY : BULK_NOTE_LOCKED;
   }
+  updateBulkBtn();
 
   // 100連はカード演出を出さず内訳サマリだけを表示する(演出スキップが広告の対価そのもの)。
   // 傑・天の武将名は下の獲得ログに従来どおり出るので、見たい情報は失われない。
@@ -1410,18 +1422,20 @@
     setBusy(false);
   }
 
+  function grantBulk(){
+    bulkUnlocked = true;
+    updateBulkBtn();
+    runBulkDraw();
+  }
+
   function requestBulkUnlock(){
-    if(!H5_ADS_ENABLED){ bulkUnlocked = true; updateBulkBtn(); runBulkDraw(); return; }
+    // 広告ブロッカー等で広告SDKが読み込めていない場合も解放する。
+    // 広告は時短の対価であって、広告を出せなかった人を締め出すための関門ではない。
+    if(typeof adBreak !== 'function'){ grantBulk(); return; }
     const btn = document.getElementById('drawBulkBtn');
     btn.disabled = true;
     let granted = false;
-    const grantOnce = ()=>{
-      if(granted) return;
-      granted = true;
-      bulkUnlocked = true;
-      updateBulkBtn();
-      runBulkDraw();
-    };
+    const grantOnce = ()=>{ if(granted) return; granted = true; grantBulk(); };
     adBreak({
       type: 'reward',
       name: 'bulk-draw-100',
