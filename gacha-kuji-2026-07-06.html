@@ -1,4 +1,11 @@
 <!DOCTYPE html>
+<!--
+  【このファイルについて】
+  期間限定くじ「2026年7月6日〜31章終了まで」の内容を固定で再現した記録用ページ。
+  gacha-simulator.html が次の期間のルールに切り替わった後も、当時の内容をそのまま遊べるように残している。
+  index.html 等の通常導線にはリンクせず、URLを直接開いた場合のみ閲覧・プレイできる。
+  内容を変更しないこと(当時の記録としての価値が失われるため)。
+-->
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
@@ -8,13 +15,26 @@
 <title>戦国くじ 2026年7月6日〜31章終了まで(記録用)｜戦国IXA シミュレーター置き場</title>
 <meta name="description" content="戦国IXA(Sengoku IXA)の期間限定くじ(2026年7月6日〜31章終了まで)の排出確率・演出を再現した記録用ページ。最新のくじはくじシミュレーターをご利用ください。">
 <link rel="stylesheet" href="assets/css/site.css">
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <style>
   .archive-banner{
     font-size:13px;color:var(--muted);background:var(--bg-panel-2);border:1px solid var(--line);
     border-radius:6px;padding:10px 14px;margin:0 0 16px;line-height:1.7;
   }
   .archive-banner a{color:var(--vermillion-bright);font-weight:700;}
-  .rate-table{width:100%;border-collapse:collapse;font-size:12.5px;margin:14px 0;}
+
+  .period-banner{
+    display:inline-block;font-size:12px;font-weight:700;color:var(--vermillion-bright);
+    background:rgba(184,64,47,0.08);border:1px solid var(--vermillion);border-radius:5px;
+    padding:4px 10px;margin:0 0 10px;
+  }
+  .archive-banner{
+    font-size:13px;color:var(--muted);background:var(--bg-panel-2);border:1px solid var(--line);
+    border-radius:6px;padding:10px 14px;margin:0 0 16px;line-height:1.7;
+  }
+  .archive-banner a{color:var(--vermillion-bright);font-weight:700;}
+  .table-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:14px 0;}
+  .rate-table{width:100%;min-width:560px;border-collapse:collapse;font-size:12.5px;margin:0;}
   .rate-table th,.rate-table td{border:1px solid var(--line);padding:7px 9px;text-align:center;}
   .rate-table th{background:var(--bg-panel-2);color:var(--muted);font-weight:700;}
   .rate-table td.tier-name{font-family:'Noto Serif JP',serif;font-weight:700;}
@@ -40,7 +60,7 @@
   .gacha-btn-image:active{transform:translateY(0) scale(1);}
   .gacha-btn-image:disabled{opacity:.5;cursor:default;transform:none;}
 
-  .stats-table{width:100%;border-collapse:collapse;font-size:12px;margin-top:10px;}
+  .stats-table{width:100%;min-width:460px;border-collapse:collapse;font-size:12px;margin:0;}
   .stats-table th,.stats-table td{border:1px solid var(--line);padding:6px 8px;text-align:center;}
   .stats-table th{background:var(--bg-panel-2);color:var(--muted);font-weight:700;}
   .stats-table td:first-child{text-align:left;font-family:'Noto Serif JP',serif;}
@@ -56,13 +76,38 @@
   .rare-log-row.rare-log-ten .rare-log-tag{color:#6b7280;}
   .rare-log-row.rare-log-tenpara{border-left-color:#b46bff;background:linear-gradient(90deg, rgba(255,107,107,.10), rgba(107,199,255,.10));}
   .rare-log-row.rare-log-tenpara .rare-log-tag{
-    background:linear-gradient(90deg,#ff6b6b,#ffb84d,#ffe14d,#6bff8f,#6bc7ff,#b46bff);
+    background:linear-gradient(90deg,#ff6b6b,#ffb84d,#ffe14d,#6bff8f,#6bc7ff,#b46bff,#ff6b6b);
+    background-size:300% 100%;
     -webkit-background-clip:text;background-clip:text;color:transparent;font-weight:900;
+    animation:rainbowShift 3s linear infinite;
   }
+  @keyframes rainbowShift{0%{background-position:0% 0%;}100%{background-position:150% 0%;}}
 
   .gacha-cards{display:flex;flex-wrap:wrap;gap:14px;justify-content:center;min-height:170px;perspective:900px;}
   .gacha-card{width:118px;height:170px;position:relative;transform-style:preserve-3d;transition:transform .6s cubic-bezier(.2,.8,.2,1);}
   .gacha-card.flipped{transform:rotateY(180deg);}
+  .gacha-card.spin-again.flipped{transform:rotateY(540deg);transition-duration:.7s;}
+  .landed-burst-fx{
+    position:absolute;inset:-25%;border-radius:50%;pointer-events:none;z-index:3;
+    background:radial-gradient(circle, rgba(255,255,255,.95) 0%, rgba(255,255,255,0) 65%);
+    animation:landedBurstFx .55s ease-out forwards;
+  }
+  @keyframes landedBurstFx{
+    0%{opacity:0;transform:scale(.2);}
+    35%{opacity:1;transform:scale(1);}
+    100%{opacity:0;transform:scale(1.7);}
+  }
+  .landed-spark{
+    position:absolute;width:30%;height:30%;border-radius:50%;pointer-events:none;z-index:4;
+    animation:landedSparkFx .5s ease-out forwards;
+  }
+  .landed-spark.spark-yellow{background:radial-gradient(circle, rgba(255,224,140,.85) 0%, rgba(255,224,140,0) 70%);}
+  .landed-spark.spark-red{background:radial-gradient(circle, rgba(255,140,120,.85) 0%, rgba(255,140,120,0) 70%);}
+  @keyframes landedSparkFx{
+    0%{opacity:0;transform:scale(.2);}
+    45%{opacity:1;transform:scale(1);}
+    100%{opacity:0;transform:scale(1.5);}
+  }
   .gacha-card-face{position:absolute;inset:0;border-radius:10px;backface-visibility:hidden;overflow:hidden;
     display:flex;flex-direction:column;align-items:center;justify-content:center;font-family:'Noto Serif JP',serif;}
   .gacha-card-back{background:linear-gradient(135deg,#5b4632,#2b2f38);border:2px solid var(--gold);color:var(--gold-bright);font-size:26px;font-weight:900;}
@@ -76,12 +121,60 @@
   .tier-特 .gacha-card-front{background:linear-gradient(160deg,#ff6b5c,#d0332a 55%,#8f1f18);border-color:#ff9a8c;color:#fff;text-shadow:0 1px 3px rgba(0,0,0,.5);}
   .tier-極 .gacha-card-front{background:linear-gradient(160deg,#3a3a3a,#0d0d0d 60%,#000000);border-color:#5a5a5a;color:#f0d98a;text-shadow:0 1px 3px rgba(0,0,0,.7);}
   .tier-天 .gacha-card-front{background:linear-gradient(160deg,#ffffff,#f2f2f2 55%,#dcdcdc);border-color:#ffffff;color:#2b2f38;text-shadow:none;box-shadow:0 0 16px rgba(255,255,255,.65), 0 1px 4px rgba(0,0,0,.15);}
-  .tier-傑 .gacha-card-front{background:linear-gradient(160deg,#fff6c9,#ffd700 45%,#c9910f);border-color:#fff2b8;color:#5b3d00;text-shadow:0 1px 2px rgba(255,255,255,.4);box-shadow:0 0 22px rgba(255,215,0,.7);animation:ketsuPulse 1.4s ease-in-out infinite;}
-  @keyframes ketsuPulse{0%,100%{box-shadow:0 0 18px rgba(255,215,0,.5);}50%{box-shadow:0 0 32px rgba(255,215,0,.95);}}
+  .tier-傑 .gacha-card-front{
+    background:linear-gradient(160deg,#fff6c9,#ffd700 45%,#c9910f);color:#5b3d00;text-shadow:0 1px 2px rgba(255,255,255,.4);
+    border-width:3px;animation:ketsuBorder 2.4s linear infinite;
+    position:absolute;overflow:hidden;
+  }
+  .tier-傑 .gacha-card-front .tier-label,
+  .tier-傑 .gacha-card-front .tier-kana,
+  .tier-傑 .gacha-card-front .tier-charname,
+  .tier-傑 .gacha-card-front .tier-no{
+    position:relative;z-index:2;
+  }
+  .tier-傑 .gacha-card-front::before{
+    content:'';position:absolute;inset:-20% -60%;z-index:1;pointer-events:none;
+    background:repeating-linear-gradient(115deg,
+      rgba(255,215,0,.55) 0%, rgba(255,255,255,.8) 10%,
+      rgba(255,180,40,.55) 20%, rgba(255,110,60,.4) 26%,
+      rgba(255,215,0,.55) 32%
+    );
+    background-size:100% 100%;
+    animation:holoSweep 2.2s linear infinite;
+    mix-blend-mode:multiply;
+  }
+  @keyframes ketsuBorder{
+    0%{border-color:#ffd700;box-shadow:0 0 20px rgba(255,215,0,.7);}
+    50%{border-color:#fff6c9;box-shadow:0 0 36px rgba(255,235,150,1);}
+    100%{border-color:#ffd700;box-shadow:0 0 20px rgba(255,215,0,.7);}
+  }
 
   .tier-天.ten-parallel .gacha-card-front{
     background:linear-gradient(160deg,#ffffff,#f5f5f5 60%,#e8e8e8);color:#2b2f38;text-shadow:none;
     border-width:3px;animation:tenParaBorder 3s linear infinite;
+    position:absolute;overflow:hidden;
+  }
+  .tier-天.ten-parallel .gacha-card-front .tier-label,
+  .tier-天.ten-parallel .gacha-card-front .tier-kana,
+  .tier-天.ten-parallel .gacha-card-front .tier-charname,
+  .tier-天.ten-parallel .gacha-card-front .tier-no{
+    position:relative;z-index:2;
+  }
+  .tier-天.ten-parallel .gacha-card-front::before{
+    content:'';position:absolute;inset:-20% -60%;z-index:1;pointer-events:none;
+    background:repeating-linear-gradient(115deg,
+      rgba(255,90,90,.5) 0%, rgba(255,190,60,.5) 6%,
+      rgba(255,255,255,.75) 10%,
+      rgba(120,255,140,.5) 14%, rgba(90,190,255,.5) 20%,
+      rgba(190,110,255,.5) 26%, rgba(255,90,90,.5) 32%
+    );
+    background-size:100% 100%;
+    animation:holoSweep 2.6s linear infinite;
+    mix-blend-mode:multiply;
+  }
+  @keyframes holoSweep{
+    0%{transform:translate(-15%,-15%);}
+    100%{transform:translate(15%,15%);}
   }
   @keyframes tenParaBorder{
     0%{border-color:#ff6b6b;box-shadow:0 0 16px rgba(255,107,107,.6);}
@@ -99,8 +192,10 @@
     background-size:250% 250%;animation:shineSweep 1s ease-out;
   }
   @keyframes shineSweep{0%{background-position:200% 0;}100%{background-position:-50% 0;}}
+  .gacha-card.tier-特.reveal-shine .gacha-card-front::after{opacity:.28;}
 
   .gacha-tally{margin-top:18px;font-size:12.5px;color:var(--muted);font-family:'JetBrains Mono',monospace;}
+  .clear-history-wrap{margin-top:22px;padding-top:18px;border-top:1px dashed var(--line);}
   .gacha-history{margin-top:10px;text-align:center;}
   .history-chip{display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;border-radius:6px;margin:3px;font-size:12px;font-weight:700;color:#fff;font-family:'Noto Serif JP',serif;cursor:default;}
   .history-chip.tier-上{background:linear-gradient(135deg,#fff6a0,#ffd400);color:#5b4400;}
@@ -109,15 +204,91 @@
   .history-chip.tier-天{background:linear-gradient(135deg,#ffffff,#dcdcdc);color:#2b2f38;border:1px solid #cfcfcf;}
   .history-chip.tier-傑{background:linear-gradient(135deg,#fff6c9,#ffd700);color:#5b3d00;}
   .history-chip.chip-tenpara{
-    background:linear-gradient(135deg,#ff6b6b,#ffe14d,#6bff8f,#6bc7ff,#b46bff);color:#fff;
+    background:linear-gradient(135deg,#ff6b6b,#ffe14d,#6bff8f,#6bc7ff,#b46bff,#ff6b6b);
+    background-size:300% 300%;color:#fff;
     text-shadow:0 1px 2px rgba(0,0,0,.5);
+    animation:rainbowShift2d 3s linear infinite;
   }
+  @keyframes rainbowShift2d{0%{background-position:0% 50%;}100%{background-position:150% 50%;}}
+
+  .complete-panel{
+    margin:24px 0;padding:18px 20px;border-radius:10px;text-align:center;
+    background:linear-gradient(135deg, rgba(255,215,0,.14), rgba(184,64,47,.08));
+    border:1px solid var(--gold);
+  }
+  .complete-panel h2{font-family:'Noto Serif JP',serif;color:var(--vermillion-bright);margin:0 0 8px;font-size:18px;}
+  .complete-panel #completeCount{font-weight:900;font-size:20px;color:var(--gold-bright);}
+  .complete-form{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-top:12px;}
+  .complete-form input{
+    font-family:'Zen Kaku Gothic New',sans-serif;font-size:13px;padding:9px 12px;
+    border:1px solid var(--line);border-radius:6px;width:200px;max-width:60vw;
+  }
+
+  .ranking-list{margin-top:10px;}
+  .ranking-ol{list-style:none;margin:0;padding:0;counter-reset:rank;}
+  .ranking-ol li{
+    counter-increment:rank;display:flex;align-items:center;gap:10px;
+    padding:8px 10px;border-bottom:1px dashed var(--line);font-size:13.5px;
+  }
+  .ranking-ol li::before{
+    content:counter(rank);flex-shrink:0;width:24px;height:24px;border-radius:50%;
+    background:var(--bg-panel-2);border:1px solid var(--line);color:var(--muted);
+    display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;
+  }
+  .ranking-ol li:nth-child(1)::before{background:linear-gradient(135deg,#fff6c9,#ffd700);border-color:#c9910f;color:#5b3d00;}
+  .ranking-ol li:nth-child(2)::before{background:#e8e8e8;border-color:#b0b0b0;color:#555;}
+  .ranking-ol li:nth-child(3)::before{background:#f0d3ae;border-color:#c98a4b;color:#5b3d00;}
+  .ranking-name{flex:1;font-family:'JetBrains Mono',monospace;font-size:12.5px;color:var(--muted);}
+  .ranking-value{font-family:'JetBrains Mono',monospace;font-weight:700;color:var(--vermillion-bright);}
+  .content-block h3{font-family:'Noto Serif JP',serif;font-size:14.5px;margin:22px 0 6px;color:var(--gold-bright);}
 
   .sim-version-badge{
     position:fixed; bottom:6px; right:8px; z-index:9999;
     font-family:'JetBrains Mono',monospace; font-size:10px; color:#9a9382;
     background:rgba(255,255,255,0.85); padding:2px 7px; border-radius:4px;
     border:1px solid var(--line); pointer-events:none; user-select:text;
+  }
+
+  @media (max-width:480px){
+    .gacha-cards{gap:8px;}
+    .gacha-card{width:88px;height:126px;}
+    .gacha-card-front{padding:4px;}
+    .gacha-card-front .tier-label{font-size:16px;}
+    .gacha-card-front .tier-kana{font-size:7.5px;}
+    .gacha-card-front .tier-charname{font-size:10px;margin-top:5px;}
+    .gacha-card-front .tier-no{font-size:7px;}
+    .gacha-btn-image img{width:100px;}
+    .gacha-btn{font-size:15px;padding:13px 22px;}
+    .rare-log-row{font-size:13.5px;}
+    .history-chip{width:32px;height:32px;font-size:13px;}
+  }
+
+  /* 表を画面幅に応じて自動で列数が変わる「カード形式」にする(横スクロールさせない) */
+  @media (max-width:600px){
+    .table-scroll{overflow-x:visible;}
+    .rate-table, .stats-table{min-width:0;width:100%;border:none;font-size:13.5px;}
+    .rate-table thead, .stats-table thead{display:none;}
+    .rate-table tbody, .stats-table tbody{
+      display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:8px;
+    }
+    .rate-table tr, .stats-table tr{
+      display:block;border:1px solid var(--line);border-radius:8px;
+      padding:8px 12px;background:var(--bg-panel);
+    }
+    .rate-table td, .stats-table td{
+      display:flex;justify-content:space-between;align-items:center;gap:10px;
+      border:none;border-bottom:1px dashed var(--line);padding:6px 0;text-align:right;
+    }
+    .rate-table td:last-child, .stats-table td:last-child{border-bottom:none;}
+    .rate-table td::before, .stats-table td::before{
+      content:attr(data-label);font-weight:700;color:var(--muted);font-size:11.5px;
+      text-align:left;flex-shrink:0;
+    }
+    .rate-table td.tier-name, .stats-table td:first-child{
+      display:block;text-align:left;font-size:15px;font-weight:900;
+      border-bottom:1px solid var(--line);margin-bottom:4px;padding-bottom:6px;
+    }
+    .rate-table td.tier-name::before, .stats-table td:first-child::before{content:none;}
   }
 </style>
 </head>
@@ -146,26 +317,8 @@
   <main class="site-main">
     <h1 class="page-title">戦国くじ(2026年7月6日〜31章終了まで)</h1>
     <p class="archive-banner">このページは期間限定くじ「2026年7月6日〜31章終了まで」の内容を固定で再現した記録用ページです。この期間が終了し次のくじに切り替わった後も、当時の内容をそのまま確認できます。現在開催中のくじは<a href="gacha-simulator.html">くじシミュレーター</a>をご覧ください。</p>
-    <p class="page-lead">実際のくじの排出確率に沿って、無料でくじを引く感覚を楽しめます。何連引いても課金は発生しません。引いた武将の名前まで表示されます。画像表示は今後追加予定です。</p>
-
-    <div class="content-block">
-      <h2>排出確率</h2>
-      <table class="rate-table">
-        <thead>
-          <tr><th>レア度</th><th>単発 / 10連1〜9枚目</th><th>10連10枚目<br>(1〜9枚目に傑・天・極あり)</th><th>10連10枚目<br>(1〜9枚目が特・上のみ)</th></tr>
-        </thead>
-        <tbody>
-          <tr><td class="tier-name">傑</td><td>0.018%</td><td>0.036%</td><td>0.036%</td></tr>
-          <tr><td class="tier-name">天</td><td>3.000%</td><td>11.000%</td><td>11.000%</td></tr>
-          <tr><td class="tier-name">極</td><td>15.000%</td><td>30.000%</td><td>88.964%</td></tr>
-          <tr><td class="tier-name">特</td><td>36.500%</td><td>18.964%</td><td>0.000%</td></tr>
-          <tr><td class="tier-name">上</td><td>45.482%</td><td>40.000%</td><td>0.000%</td></tr>
-        </tbody>
-      </table>
-      <p class="note">10連は1〜9枚目まで通常確率で抽選し、その中に傑・天・極が1枚も無かった場合、10枚目は傑・天・極のいずれかが確定します(救済枠)。既に傑・天・極が出ている場合、10枚目は右から2列目の上昇した確率で抽選されます。<br>
-      ※各レア度の武将ごとの内訳は、ゲーム内の確率情報ページに表示される「提供割合」に基づいています。10連10枚目については、ブースト時・救済時それぞれの実際の内訳表を個別に反映しています。<br>
-      ※パラレル版が存在する天武将(12名)は、通常版を一度引くと、以後同名の天武将を引いた際にパラレル版が確定するボーナスが発生します。ただしこのボーナスはパラレル版を1回でも獲得すると終了し、以後は元の確率(通常/パラレルの按分)に戻ります(このページを開いている間の履歴で判定、武将ごとに独立)。</p>
-    </div>
+    <p class="period-banner">開催期間: 2026年7月6日 〜 31章終了まで</p>
+    <p class="page-lead">実際のくじの排出確率に沿って、無料でくじを引く感覚を楽しめます。引いた武将の名前まで表示されます。</p>
 
     <div class="gacha-stage">
       <div class="gacha-buttons">
@@ -175,10 +328,34 @@
         <button id="drawTenBtn" class="gacha-btn-image" aria-label="10連を引く">
           <img src="assets/img/gacha-btn-ten.png" alt="10連を引く">
         </button>
-        <button id="clearHistoryBtn" class="gacha-btn secondary">履歴をクリア</button>
       </div>
       <div id="gachaCards" class="gacha-cards"></div>
       <div id="gachaTally" class="gacha-tally">累計 0連</div>
+      <div class="clear-history-wrap">
+        <button id="clearHistoryBtn" class="gacha-btn secondary">履歴をクリア</button>
+      </div>
+    </div>
+
+    <div id="completePanel" class="complete-panel" style="display:none;">
+      <h2>🎉 パラレル12種コンプリート!</h2>
+      <p><span id="completeCount">0</span>連で達成しました。ランキングに登録しますか?(名前等は登録されず、完了日時のみ記録されます)</p>
+      <div class="complete-form">
+        <button id="completeSubmitBtn" class="gacha-btn">登録する</button>
+      </div>
+      <p id="completeSubmitMsg" class="note" style="display:none;"></p>
+    </div>
+
+    <div class="content-block">
+      <h2>パラレル12種コンプリート連数ランキング</h2>
+
+      <h3>最速コンプリート TOP10</h3>
+      <div id="rankingBest" class="ranking-list"><p class="note">読み込み中...</p></div>
+
+      <h3>最遅コンプリート WORST5</h3>
+      <div id="rankingWorst" class="ranking-list"><p class="note">読み込み中...</p></div>
+
+      <h3>直近の記録</h3>
+      <div id="rankingRecent" class="ranking-list"><p class="note">読み込み中...</p></div>
     </div>
 
     <div class="content-block">
@@ -188,23 +365,48 @@
 
     <div class="content-block">
       <h2>傑 個体別カウント(3種)</h2>
+      <div class="table-scroll">
       <table class="stats-table">
         <thead><tr><th>武将</th><th>枚数</th><th>獲得した通算連数</th></tr></thead>
         <tbody id="ketsuStatsBody"></tbody>
       </table>
+      </div>
     </div>
 
     <div class="content-block">
       <h2>天 個体別カウント(15種)</h2>
+      <div class="table-scroll">
       <table class="stats-table">
         <thead><tr><th>武将</th><th>通常</th><th>パラレル</th><th>パラレルを獲得した通算連数</th></tr></thead>
         <tbody id="tenStatsBody"></tbody>
       </table>
+      </div>
     </div>
 
     <div class="content-block">
       <h2>これまでの結果</h2>
       <div id="gachaHistory" class="gacha-history"></div>
+    </div>
+
+    <div class="content-block">
+      <h2>排出確率</h2>
+      <div class="table-scroll">
+      <table class="rate-table">
+        <thead>
+          <tr><th>レア度</th><th>単発 / 10連1〜9枚目</th><th>10連10枚目<br>(1〜9枚目に傑・天・極あり)</th><th>10連10枚目<br>(1〜9枚目が特・上のみ)</th></tr>
+        </thead>
+        <tbody>
+          <tr><td class="tier-name">傑</td><td data-label="単発 / 10連1〜9枚目">0.018%</td><td data-label="10連10枚目(ブースト)">0.036%</td><td data-label="10連10枚目(救済)">0.036%</td></tr>
+          <tr><td class="tier-name">天</td><td data-label="単発 / 10連1〜9枚目">3.000%</td><td data-label="10連10枚目(ブースト)">11.000%</td><td data-label="10連10枚目(救済)">11.000%</td></tr>
+          <tr><td class="tier-name">極</td><td data-label="単発 / 10連1〜9枚目">15.000%</td><td data-label="10連10枚目(ブースト)">30.000%</td><td data-label="10連10枚目(救済)">88.964%</td></tr>
+          <tr><td class="tier-name">特</td><td data-label="単発 / 10連1〜9枚目">36.500%</td><td data-label="10連10枚目(ブースト)">18.964%</td><td data-label="10連10枚目(救済)">0.000%</td></tr>
+          <tr><td class="tier-name">上</td><td data-label="単発 / 10連1〜9枚目">45.482%</td><td data-label="10連10枚目(ブースト)">40.000%</td><td data-label="10連10枚目(救済)">0.000%</td></tr>
+        </tbody>
+      </table>
+      </div>
+      <p class="note">10連は1〜9枚目まで通常確率で抽選し、その中に傑・天・極が1枚も無かった場合、10枚目は傑・天・極のいずれかが確定します(救済枠)。既に傑・天・極が出ている場合、10枚目は右から2列目の上昇した確率で抽選されます。<br>
+      ※各レア度の武将ごとの内訳は、ゲーム内の確率情報ページに表示される「提供割合」に基づいています。10連10枚目については、ブースト時・救済時それぞれの実際の内訳表を個別に反映しています。<br>
+      ※パラレル版が存在する天武将(12名)は、通常版を一度引くと、以後同名の天武将を引いた際にパラレル版が確定するボーナスが発生します。ただしこのボーナスはパラレル版を1回でも獲得すると終了し、以後は元の確率(通常/パラレルの按分)に戻ります(このページを開いている間の履歴で判定、武将ごとに独立)。</p>
     </div>
     <div id="pageComments"></div>
   </main>
@@ -219,11 +421,65 @@
   <div class="sim-version-badge" id="simVersionBadge">v-</div>
 
 <script>
-  const GACHA_VERSION = 'v2026-07-24.11';
+  const GACHA_VERSION = 'v2026-07-29.32';
   document.addEventListener('DOMContentLoaded', ()=>{
     const badge = document.getElementById('simVersionBadge');
     if(badge) badge.textContent = GACHA_VERSION;
+    loadRanking();
   });
+
+  // ============ ランキング(Supabase) ============
+  const SUPABASE_URL = 'https://oykzgzagkyygobbfkmwq.supabase.co';
+  const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im95a3pnemFna3l5Z29iYmZrbXdxIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODQ4ODE2NzMsImV4cCI6MjEwMDQ1NzY3M30.lP8rcREG6iy_A9qA3oDrZh1uf5y3OQeBhGieMFgbUEs';
+  const supabaseClient = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+  const KUJI_SCOPE = '2026-07-06'; // 期間限定くじの識別子。次の期間に切り替わったら変更する
+  const KUJI_RANKING_TITLE = 'パラレル12種コンプリート';
+
+  function formatDateTime(iso){
+    const d = new Date(iso);
+    const pad = n => String(n).padStart(2,'0');
+    return d.getFullYear()+'/'+pad(d.getMonth()+1)+'/'+pad(d.getDate())+' '+pad(d.getHours())+':'+pad(d.getMinutes());
+  }
+
+  async function loadRankingSection(elId, orderBy, ascending, limit){
+    const listEl = document.getElementById(elId);
+    const {data, error} = await supabaseClient
+      .from('rankings')
+      .select('value, created_at')
+      .eq('simulator_type', 'kuji')
+      .eq('scope', KUJI_SCOPE)
+      .eq('title', KUJI_RANKING_TITLE)
+      .order(orderBy, {ascending})
+      .limit(limit);
+    if(error){
+      listEl.innerHTML = '<p class="note">読み込みに失敗しました。</p>';
+      return;
+    }
+    if(!data || data.length===0){
+      listEl.innerHTML = '<p class="note">まだ記録がありません。</p>';
+      return;
+    }
+    listEl.innerHTML = '<ol class="ranking-ol">' + data.map(row=>
+      '<li><span class="ranking-name">'+formatDateTime(row.created_at)+'</span><span class="ranking-value">'+row.value+'連</span></li>'
+    ).join('') + '</ol>';
+  }
+
+  function loadRanking(){
+    loadRankingSection('rankingBest', 'value', true, 10);
+    loadRankingSection('rankingWorst', 'value', false, 5);
+    loadRankingSection('rankingRecent', 'created_at', false, 5);
+  }
+
+  async function submitRanking(value){
+    const {error} = await supabaseClient.from('rankings').insert({
+      simulator_type: 'kuji',
+      scope: KUJI_SCOPE,
+      title: KUJI_RANKING_TITLE,
+      value: value,
+      value_unit: '連',
+    });
+    return error;
+  }
 
   const TIER_ORDER = ['傑','天','極','特','上'];
   const TIER_KANA = {傑:'ケツ',天:'テン',極:'キョク',特:'トク',上:'ジョウ'};
@@ -749,12 +1005,15 @@
     let rareHit = false;
     for(let i=0;i<9;i++){
       const d = drawOneFull(BASE_RATES, TIER_CHAR_LISTS);
+      recordDraw(d); // 天のパラレル化ボーナス消費を同じ10連の中でも即座に反映させるため、生成直後に記録する
       results.push(d);
       if(d.tier==='傑' || d.tier==='天' || d.tier==='極') rareHit = true;
     }
     const tenthRates = rareHit ? TENTH_BOOST_RATES : TENTH_GUARANTEE_RATES;
     const tenthCharLists = rareHit ? TIER_CHAR_LISTS_BOOST : TIER_CHAR_LISTS_GUARANTEE;
-    results.push(drawOneFull(tenthRates, tenthCharLists));
+    const tenthDraw = drawOneFull(tenthRates, tenthCharLists);
+    recordDraw(tenthDraw);
+    results.push(tenthDraw);
     return results;
   }
 
@@ -808,7 +1067,7 @@
 
   function renderStatsPanel(){
     document.getElementById('ketsuStatsBody').innerHTML = ketsuStats.map(e=>
-      '<tr><td>No.'+e.no+' '+e.name+'</td><td'+(e.count?' class="has-count"':'')+'>'+e.count+'枚</td><td>'+
+      '<tr><td>No.'+e.no+' '+e.name+'</td><td data-label="枚数"'+(e.count?' class="has-count"':'')+'>'+e.count+'枚</td><td data-label="獲得した通算連数">'+
       (e.pulls.length ? e.pulls.join('・')+'連目' : '-') + '</td></tr>'
     ).join('');
 
@@ -818,9 +1077,9 @@
       const paraPullCell = hasParallel
         ? (e.parallelPulls.length ? e.parallelPulls.join('・')+'連目' : '-')
         : '-';
-      return '<tr><td>'+e.name+'</td><td>'+e.normalCount+'枚</td>'+
-        '<td'+(hasParallel && e.parallelCount ? ' class="has-count"' : '')+'>'+paraCountCell+'</td>'+
-        '<td>'+paraPullCell+'</td></tr>';
+      return '<tr><td>'+e.name+'</td><td data-label="通常">'+e.normalCount+'枚</td>'+
+        '<td data-label="パラレル"'+(hasParallel && e.parallelCount ? ' class="has-count"' : '')+'>'+paraCountCell+'</td>'+
+        '<td data-label="パラレルを獲得した通算連数">'+paraPullCell+'</td></tr>';
     }).join('');
   }
 
@@ -828,6 +1087,56 @@
     busy = v;
     document.getElementById('drawOneBtn').disabled = v;
     document.getElementById('drawTenBtn').disabled = v;
+  }
+
+  const FLIP_MS = 600;
+  const RESPIN_PAUSE_MS = 150;
+  const RESPIN_MS = 700;
+  const BURST_MS = 550;
+
+  function generateSparkPositions(count){
+    const cols = count <= 3 ? count : Math.ceil(count/2);
+    const rows = Math.ceil(count/cols);
+    const cellW = 100/cols, cellH = 100/rows;
+    const cells = [];
+    for(let r=0;r<rows;r++){ for(let c=0;c<cols;c++){ cells.push({r,c}); } }
+    // セルの割り当て順もシャッフルして、火花が出る順番に規則性が出ないようにする
+    for(let i=cells.length-1;i>0;i--){
+      const j = Math.floor(Math.random()*(i+1));
+      [cells[i], cells[j]] = [cells[j], cells[i]];
+    }
+    return cells.slice(0, count).map((cell, i)=>{
+      const jitterX = (0.2 + Math.random()*0.6) * cellW;
+      const jitterY = (0.2 + Math.random()*0.6) * cellH;
+      return {
+        top: (cell.r*cellH + jitterY).toFixed(1)+'%',
+        left: (cell.c*cellW + jitterX).toFixed(1)+'%',
+        cls: Math.random() < 0.5 ? 'spark-yellow' : 'spark-red',
+        delay: i*60,
+      };
+    });
+  }
+
+  function triggerLandedBurst(card, tier){
+    const front = card.querySelector('.gacha-card-front');
+    const fx = document.createElement('div');
+    fx.className = 'landed-burst-fx';
+    front.appendChild(fx);
+    setTimeout(()=>{ fx.remove(); }, BURST_MS + 50);
+
+    if(tier === '天' || tier === '傑'){
+      const isEnhanced = tier === '傑' || card.classList.contains('ten-parallel');
+      const sparks = generateSparkPositions(isEnhanced ? 8 : 5);
+      sparks.forEach(pos=>{
+        const spark = document.createElement('div');
+        spark.className = 'landed-spark '+pos.cls;
+        spark.style.top = pos.top;
+        spark.style.left = pos.left;
+        spark.style.animationDelay = pos.delay+'ms';
+        front.appendChild(spark);
+        setTimeout(()=>{ spark.remove(); }, BURST_MS + 470);
+      });
+    }
   }
 
   function renderCards(draws){
@@ -848,12 +1157,28 @@
           detailHtml +
         '</div>';
       stage.appendChild(card);
-      return card;
+      return {card, tier, isTopTier: (tier==='天' || tier==='傑')};
     });
-    cardEls.forEach((card, i)=>{
-      setTimeout(()=>{ card.classList.add('flipped','reveal-shine'); }, 250 + i*260);
+
+    let maxFinish = 0;
+    cardEls.forEach(({card, tier, isTopTier}, i)=>{
+      const triggerAt = 250 + i*260;
+      setTimeout(()=>{
+        card.classList.add('flipped');
+        if(tier !== '上') card.classList.add('reveal-shine');
+      }, triggerAt);
+
+      let finishAt = triggerAt + FLIP_MS;
+      if(isTopTier){
+        const respinAt = triggerAt + FLIP_MS + RESPIN_PAUSE_MS;
+        setTimeout(()=>{ card.classList.add('spin-again'); }, respinAt);
+        const burstAt = respinAt + RESPIN_MS;
+        setTimeout(()=>{ triggerLandedBurst(card, tier); }, burstAt);
+        finishAt = burstAt + BURST_MS;
+      }
+      if(finishAt > maxFinish) maxFinish = finishAt;
     });
-    return 250 + cardEls.length*260;
+    return maxFinish;
   }
 
   function updateTally(){
@@ -895,24 +1220,64 @@
     });
   }
 
-  function recordResults(draws){
-    draws.forEach(({tier, detail})=>{
-      tally[tier]++;
-      totalDraws++;
-      recordDetailStats(tier, detail, totalDraws);
-    });
+  function recordDraw(draw){
+    const {tier, detail} = draw;
+    tally[tier]++;
+    totalDraws++;
+    recordDetailStats(tier, detail, totalDraws);
+  }
+
+  function renderPostDrawUI(draws){
     updateTally();
     updateHistory(draws);
     updateRareLog(draws);
     renderStatsPanel();
+    checkParallelCompletion();
   }
+
+  // ============ パラレル12種コンプリート検知 ============
+  let parallelCompleteHandled = false;
+  let parallelCompleteSubmitted = false;
+  let parallelCompleteCount = null;
+
+  function isParallelComplete(){
+    return tenStats.filter(e=>e.parallelNo!==null).every(e=>e.parallelCount>0);
+  }
+
+  function checkParallelCompletion(){
+    if(parallelCompleteHandled) return;
+    if(isParallelComplete()){
+      parallelCompleteHandled = true;
+      parallelCompleteCount = totalDraws;
+      document.getElementById('completeCount').textContent = parallelCompleteCount;
+      document.getElementById('completePanel').style.display = 'block';
+    }
+  }
+
+  document.getElementById('completeSubmitBtn').addEventListener('click', async ()=>{
+    if(parallelCompleteSubmitted || parallelCompleteCount===null) return;
+    const btn = document.getElementById('completeSubmitBtn');
+    const msg = document.getElementById('completeSubmitMsg');
+    btn.disabled = true;
+    const error = await submitRanking(parallelCompleteCount);
+    msg.style.display = 'block';
+    if(error){
+      msg.textContent = '登録に失敗しました。時間をおいて再度お試しください。';
+      btn.disabled = false;
+    } else {
+      parallelCompleteSubmitted = true;
+      msg.textContent = 'ランキングに登録しました!';
+      loadRanking();
+    }
+  });
 
   document.getElementById('drawOneBtn').addEventListener('click', ()=>{
     if(busy) return;
     setBusy(true);
     const draw = drawOneFull(BASE_RATES, TIER_CHAR_LISTS);
+    recordDraw(draw);
     const dur = renderCards([draw]);
-    setTimeout(()=>{ recordResults([draw]); setBusy(false); }, dur);
+    setTimeout(()=>{ renderPostDrawUI([draw]); setBusy(false); }, dur);
   });
 
   document.getElementById('drawTenBtn').addEventListener('click', ()=>{
@@ -920,7 +1285,7 @@
     setBusy(true);
     const draws = drawTenFull();
     const dur = renderCards(draws);
-    setTimeout(()=>{ recordResults(draws); setBusy(false); }, dur);
+    setTimeout(()=>{ renderPostDrawUI(draws); setBusy(false); }, dur);
   });
 
   document.getElementById('clearHistoryBtn').addEventListener('click', ()=>{
@@ -936,6 +1301,13 @@
     document.getElementById('rareLog').innerHTML = '<p class="rare-log-empty">まだ獲得していません</p>';
     document.getElementById('gachaHistory').innerHTML = '';
     document.getElementById('gachaCards').innerHTML = '';
+
+    parallelCompleteHandled = false;
+    parallelCompleteSubmitted = false;
+    parallelCompleteCount = null;
+    document.getElementById('completePanel').style.display = 'none';
+    document.getElementById('completeSubmitMsg').style.display = 'none';
+    document.getElementById('completeSubmitBtn').disabled = false;
   });
 
   renderStatsPanel();
@@ -943,7 +1315,6 @@
   </div>
 </div>
 
-<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script src="assets/js/comments-widget.js"></script>
 <script>renderCommentsWidget('pageComments', 'page:gacha-kuji-2026-07-06');</script>
 <script src="assets/js/site-sidebar.js"></script>
