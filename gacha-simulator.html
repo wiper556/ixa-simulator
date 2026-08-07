@@ -5,8 +5,10 @@
   次の期間のくじルールに切り替える際は、まず本ファイルの現在の内容を
   gacha-kuji-YYYY-MM-DD.html という名前で複製・保存してから(過去のくじ用の固定ページとして残す)、
   本ファイル(gacha-simulator.html)を新ルールで上書きすること。
-  過去のくじページはindex.html等の通常導線にはリンクせず、URLを直接開いた場合のみ閲覧・プレイできるようにする。
-  現行の期間アーカイブ: gacha-kuji-2026-07-06.html (2026年7月6日〜31章終了まで、本ファイルと同内容のスナップショット)
+  アーカイブしたら本ファイル下部の「過去のくじ」セクションにリンクを1行追加すること
+  (2026-08-07にユーザー指示で方針変更。それ以前は「通常導線にはリンクせずURL直打ちのみ」としていた)。
+  アーカイブ一覧:
+    - gacha-kuji-2026-07-06.html … 2026年7月6日〜31章終了まで(期末プラチナ天獲得イベント)
 
   【ランキング機能について】
   パラレル12種コンプリート連数ランキングはSupabase(rankingsテーブル)に保存している。
@@ -40,6 +42,14 @@
   .rate-table th{background:var(--bg-panel-2);color:var(--muted);font-weight:700;}
   .rate-table td.tier-name{font-family:'Noto Serif JP',serif;font-weight:700;}
   .note{color:var(--muted);font-size:12px;line-height:1.7;margin-top:10px;}
+  .past-kuji-list{list-style:none;padding:0;margin:10px 0 0;}
+  .past-kuji-list li{border-top:1px solid var(--line);}
+  .past-kuji-list li:last-child{border-bottom:1px solid var(--line);}
+  .past-kuji-list a{
+    display:block;padding:11px 4px;font-size:13.5px;color:var(--vermillion-bright);
+    font-weight:700;text-decoration:none;line-height:1.6;
+  }
+  .past-kuji-list a:hover{background:var(--bg-panel-2);}
 
   .gacha-stage{margin:30px 0 10px;text-align:center;}
   .gacha-buttons{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-bottom:24px;}
@@ -408,6 +418,15 @@
       ※各レア度の武将ごとの内訳は、ゲーム内の確率情報ページに表示される「提供割合」に基づいています。10連10枚目については、ブースト時・救済時それぞれの実際の内訳表を個別に反映しています。<br>
       ※パラレル版が存在する天武将(12名)は、通常版を一度引くと、以後同名の天武将を引いた際にパラレル版が確定するボーナスが発生します。ただしこのボーナスはパラレル版を1回でも獲得すると終了し、以後は元の確率(通常/パラレルの按分)に戻ります(このページを開いている間の履歴で判定、武将ごとに独立)。</p>
     </div>
+
+    <div class="content-block">
+      <h2>過去のくじ</h2>
+      <p class="note">終了した期間のくじも、当時の排出確率のまま引けます。</p>
+      <ul class="past-kuji-list">
+        <li><a href="gacha-kuji-2026-07-06.html">2026年7月6日 〜 31章終了まで　期末プラチナ天獲得イベント</a></li>
+      </ul>
+    </div>
+
     <div id="pageComments"></div>
   </main>
 
