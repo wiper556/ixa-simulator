@@ -782,6 +782,552 @@
         {slot:"C", skill:"宿木", rank:"B", afterSkill:"宿木", afterRank:"B", target:"部隊長", rate:"+55%", effectShort:"部隊長の初期スキルを模倣(戦闘スキルのみ)"},
         {slot:"S1", skill:"乱世ノ歸人", rank:"A", afterSkill:"入来神舞", afterRank:"S", target:"部隊長", rate:"+50%", effectShort:"部隊長の模倣可能な初期スキルを模倣(卓越:追加確率30%で1.2倍)", afterTarget:"部隊長", afterRate:"55%", afterEffectShort:"部隊長の初期スキルを1.1倍に強化して模倣(TR別データは未確認)"},
         {slot:"S2", skill:"志半ノ矛楯", rank:"A", afterSkill:"志半ノ矛楯", afterRank:"A", target:"全", rate:"+65%", effectShort:"攻撃465%上昇+防御465%上昇(模倣不可)"}
+      ]},
+
+    {name:"斎藤龍興", no:"2399", ch:"未確認", cost:4, troop:"砲器防", sub:"", effect:"所領防御陣形の第壱〜第参列目配置時、防御効果2倍",
+      furigana:"さいとうたつおき", illustrator:"ジョージ",
+      imageFull:"assets/img/characters/no2399_full.png", imageChar:"assets/img/characters/no2399_char.png",
+      atkBase:1030, atkGrowth:33, defBase:1150, defGrowth:47, tacticsBase:530.0, tacticsGrowth:2.5, lv0Troops:4010,
+      rankGrades:{yari:'B', yumi:'A', uma:'A', ki:'S'},
+      initialSkill:"望国術策",
+      skillDetail:"A/LV10 確率 37% 防御225%上昇/対象:砲・器\n模倣不可\n①防御225%上昇する\n②所領防御陣形の第壱列目か第弐列目か第参列目に配置時防御効果が2倍になる",
+      trTable:[
+        {level:"LV10", points:"-", effect:"砲・器　確率 37% / 防御 225%上昇(所領防御陣形の第壱〜第参列目配置時2倍)"}
+      ],
+      // ixanary.com(cards/2399 と skills/望国術策 の生HTML)で確認(2026-08-08)。
+      // 合成テーブルはスキルページの1次(=移植前)・2次(=移植後)から取得。
+      // 候補スキルの対象・確率・効果はサイト内の既存登録から転記(未登録のスキルは空のまま)。
+      synthesisTable:[
+        {slot:"A", skill:"覇軍ノ勇士", rank:"A", afterSkill:"戦陣 神楽", afterRank:"A", afterTarget:"全 飛翔4", afterRate:"100%", afterEffectShort:"攻撃 77%上昇(卓越:追加確率30%で2倍)"},
+        {slot:"B", skill:"覇軍ノ勇士", rank:"A", afterSkill:"戦陣 神楽", afterRank:"A", afterTarget:"全 飛翔4", afterRate:"100%", afterEffectShort:"攻撃 77%上昇(卓越:追加確率30%で2倍)"},
+        {slot:"C", skill:"望国術策", rank:"A", afterSkill:"望国術策", afterRank:"A"},
+        {slot:"S1", skill:"望国術策", rank:"A", afterSkill:"望国術策", afterRank:"A"},
+        {slot:"S2", skill:"志半ノ矛楯", rank:"A", afterSkill:"志半ノ矛楯", afterRank:"A", target:"全", rate:"+65%", effectShort:"攻撃465%上昇+防御465%上昇(模倣不可)"}
+      ]},
+
+    {name:"望月千代女", no:"2855", ch:"未確認", cost:4.5, troop:"全攻", sub:"", effect:"敵の攻撃側武将数依存スキルの計算に自分を+1名追加させる",
+      furigana:"もちづきちよめ", illustrator:"影井由宇",
+      imageFull:"assets/img/characters/no2855_full.png", imageChar:"assets/img/characters/no2855_char.png",
+      atkBase:1220, atkGrowth:64, defBase:1100, defGrowth:54, tacticsBase:550.0, tacticsGrowth:2.5, lv0Troops:4600,
+      rankGrades:{yari:'A', yumi:'A', uma:'A', ki:'S'},
+      initialSkill:"虎巫",
+      skillDetail:"S/LV10 確率 50% 攻撃1000%上昇/対象:全\n模倣不可・特殊効果は部隊内重複不可\n①攻撃1000%上昇する\n②攻撃戦闘時攻撃側武将数を数えて効果が変動する敵軍防御側の武将スキルはこの武将の分を+1名追加して効果を計算する",
+      trTable:[
+        {level:"LV10", points:"-", effect:"全　確率 50% / 攻撃 1000%上昇(敵の攻撃側武将数依存スキルに+1名)"},
+        {level:"TR5", points:"200", effect:"全　確率 50% / 攻撃 1500%上昇(敵の攻撃側武将数依存スキルに+3名)"}
+      ],
+      // ixanary.com(cards/2855 と skills/虎巫 の生HTML)で確認(2026-08-08)。
+      // 合成テーブルはスキルページの1次(=移植前)・2次(=移植後)から取得。
+      // 候補スキルの対象・確率・効果はサイト内の既存登録から転記(未登録のスキルは空のまま)。
+      synthesisTable:[
+        {slot:"A", skill:"歩き巫女", rank:"D", afterSkill:"蒼刃ノ輔曳", afterRank:"D"},
+        {slot:"B", skill:"虎賁統帥", rank:"SS", afterSkill:"虎賁統帥", afterRank:"SS", target:"全 撤退 覇道", rate:"100%", effectShort:"攻撃1130%上昇+速度200%上昇"},
+        {slot:"C", skill:"天甲破山", rank:"S", afterSkill:"天焉相克", afterRank:"SS", afterTarget:"槍・弓・馬", afterRate:"70%", afterEffectShort:"攻撃30%上昇(部隊総コスト依存)"},
+        {slot:"S1", skill:"虎巫", rank:"S", afterSkill:"虎巫", afterRank:"S"},
+        {slot:"S2", skill:"瞬刻無影", rank:"S", afterSkill:"朧雲ノ閃撃", afterRank:"SSS", target:"部隊長", rate:"100%", effectShort:"100% / 効果 部隊長の初期スキルを1.1倍に強化して模倣(確率45%)+速度 100%上昇(確率100%)(TRなし)", afterTarget:"全", afterRate:"100%", afterEffectShort:"攻撃170%上昇+速度240%上昇"}
+      ]},
+
+    {name:"伊藤一刀斎", no:"2856", ch:"未確認", cost:5, troop:"全攻防", sub:"", effect:"職業「剣豪」限定/部隊内の剣豪の最大指揮兵数+3000",
+      furigana:"いとういっとうさい", illustrator:"塚本陽子",
+      imageFull:"assets/img/characters/no2856_full.png", imageChar:"assets/img/characters/no2856_char.png",
+      atkBase:2070, atkGrowth:157, defBase:2070, defGrowth:157, tacticsBase:520.0, tacticsGrowth:2.5, lv0Troops:5600,
+      rankGrades:{yari:'SS', yumi:'A', uma:'B', ki:'A'},
+      initialSkill:"払捨刀夢想",
+      skillDetail:"S/LV10 確率 50% 攻撃1350%上昇+防御1350%上昇/対象:全\n模倣不可・部隊内重複不可\n①職業「剣豪」にのみ効果がある\n②攻撃1350%上昇する\n③防御1350%上昇する\n④この武将を除く所属部隊の職業「剣豪」武将の最大指揮兵数に3000を加算する",
+      trTable:[
+        {level:"LV10", points:"-", effect:"全　確率 50% / 攻撃 1350%上昇+防御 1350%上昇(職業「剣豪」限定・剣豪の最大指揮兵数+3000)"}
+      ],
+      // ixanary.com(cards/2856 と skills/払捨刀夢想 の生HTML)で確認(2026-08-08)。
+      // 合成テーブルはスキルページの1次(=移植前)・2次(=移植後)から取得。
+      // 候補スキルの対象・確率・効果はサイト内の既存登録から転記(未登録のスキルは空のまま)。
+      synthesisTable:[
+        {slot:"A", skill:"義陣絶刀", rank:"S", afterSkill:"國才連豪", afterRank:"SS", target:"全 飛翔17", rate:"55%", effectShort:"攻撃840%上昇+防御840%上昇", afterTarget:"全", afterRate:"50%", afterEffectShort:"防御が係数×同スキル所持武将数で上昇"},
+        {slot:"B", skill:"月詠ノ覇威", rank:"SS", afterSkill:"月詠ノ覇威", afterRank:"SS", target:"全", rate:"100%", effectShort:"攻防各344%上昇+部隊卓越確率+15%"},
+        {slot:"C", skill:"布刀玉ノ策", rank:"SS", afterSkill:"布刀玉ノ策", afterRank:"SS", target:"全", rate:"100%", effectShort:"攻撃940%上昇(防御同値)+自軍全武将の卓越確率20%上昇"},
+        {slot:"S1", skill:"一刀ノ伝承", rank:"S", afterSkill:"一刀ノ伝承", afterRank:"S"},
+        {slot:"S2", skill:"龍驤虎躍", rank:"SS", afterSkill:"龍驤虎躍", afterRank:"SS", target:"全", rate:"60%", effectShort:"攻防810%上昇+コスト-1"}
+      ]},
+
+    {name:"志村光安", no:"7001", ch:"未確認", cost:3, troop:"馬器騎攻", sub:"", effect:"攻撃参加した自軍全部隊の帰還速度2.5倍",
+      furigana:"しむらあきやす", illustrator:"JUNNY",
+      imageFull:"assets/img/characters/no7001_full.png", imageChar:"assets/img/characters/no7001_char.png",
+      atkBase:1150, atkGrowth:47, defBase:1050, defGrowth:36, tacticsBase:510.0, tacticsGrowth:2.5, lv0Troops:3450,
+      rankGrades:{yari:'A', yumi:'B', uma:'S', ki:'A'},
+      initialSkill:"剛心嬰城",
+      skillDetail:"A/LV10 確率 100% 攻撃420%上昇+速度90%上昇/対象:馬・器・騎\n①攻撃420%上昇する\n②速度90%上昇する\n③攻撃参加した自軍全部隊の帰還速度が2.5倍になる(帰還効果は模倣・重複不可)",
+      trTable:[
+        {level:"LV10", points:"-", effect:"馬・器・騎　確率 100% / 攻撃 420%上昇+速度 90%上昇(帰還速度2.5倍)"},
+        {level:"TR1", points:"10", effect:"馬・器・騎　確率 100% / 攻撃 470%上昇+速度 100%上昇(帰還速度3倍)"},
+        {level:"TR2", points:"40", effect:"馬・器・騎　確率 100% / 攻撃 530%上昇+速度 130%上昇(帰還速度3.5倍)"}
+      ],
+      // ixanary.com(cards/7001 と skills/剛心嬰城 の生HTML)で確認(2026-08-08)。
+      // 合成テーブルはスキルページの1次(=移植前)・2次(=移植後)から取得。
+      // 候補スキルの対象・確率・効果はサイト内の既存登録から転記(未登録のスキルは空のまま)。
+      synthesisTable:[
+        {slot:"A", skill:"騎聖", rank:"A", afterSkill:"神光征軍", afterRank:"SS", target:"全", rate:"+100%", effectShort:"攻撃80%上昇+速度50%上昇(武将コストで変動)", afterTarget:"全", afterRate:"100%", afterEffectShort:"全攻90%上昇+全速200%上昇"},
+        {slot:"B", skill:"騎聖", rank:"A", afterSkill:"神光征軍", afterRank:"SS", target:"全", rate:"+100%", effectShort:"攻撃80%上昇+速度50%上昇(武将コストで変動)", afterTarget:"全", afterRate:"100%", afterEffectShort:"全攻90%上昇+全速200%上昇"},
+        {slot:"C", skill:"剛心嬰城", rank:"A", afterSkill:"剛心嬰城", afterRank:"A"},
+        {slot:"S1", skill:"剛心嬰城", rank:"A", afterSkill:"剛心嬰城", afterRank:"A"},
+        {slot:"S2", skill:"志半ノ矛楯", rank:"A", afterSkill:"志半ノ矛楯", afterRank:"A", target:"全", rate:"+65%", effectShort:"攻撃465%上昇+防御465%上昇(模倣不可)"}
+      ]},
+
+    {name:"平塚為広", no:"7002", ch:"未確認", cost:4, troop:"槍砲器攻", sub:"", effect:"卓越でのみ発動/攻撃440%上昇+飛翔14",
+      furigana:"ひらつかためひろ",
+      imageFull:"assets/img/characters/no7002_full.png", imageChar:"assets/img/characters/no7002_char.png",
+      atkBase:1140, atkGrowth:46, defBase:1060, defGrowth:37, tacticsBase:530.0, tacticsGrowth:2.5, lv0Troops:4010,
+      rankGrades:{yari:'S', yumi:'A', uma:'B', ki:'A'},
+      initialSkill:"訣歌天響",
+      skillDetail:"A/LV10 攻撃440%上昇/対象:槍・砲・器 飛翔14\n①通常確率では発動しない\n②卓越の追加確率50%で発動し攻撃440%上昇しかつ飛翔14を得る(攻撃戦闘時のみ発動・二重卓越不可・飛翔獲得部分は模倣不可)",
+      trTable:[
+        {level:"LV10", points:"-", effect:"槍・砲・器 飛翔14　卓越追加確率 50% / 攻撃 440%上昇(通常確率では発動せず)"}
+      ],
+      // ixanary.com(cards/7002 と skills/訣歌天響 の生HTML)で確認(2026-08-08)。
+      // 合成テーブルはスキルページの1次(=移植前)・2次(=移植後)から取得。
+      // 候補スキルの対象・確率・効果はサイト内の既存登録から転記(未登録のスキルは空のまま)。
+      synthesisTable:[
+        {slot:"A", skill:"覇軍ノ勇士", rank:"A", afterSkill:"戦陣 神楽", afterRank:"A", afterTarget:"全 飛翔4", afterRate:"100%", afterEffectShort:"攻撃 77%上昇(卓越:追加確率30%で2倍)"},
+        {slot:"B", skill:"戦陣 剣舞", rank:"A", afterSkill:"仙剣破斬", afterRank:"SSS", afterTarget:"全", afterRate:"100%", afterEffectShort:"攻撃115%上昇+防御115%上昇(卓越で4倍)"},
+        {slot:"C", skill:"訣歌天響", rank:"A", afterSkill:"訣歌天響", afterRank:"A"},
+        {slot:"S1", skill:"訣歌天響", rank:"A", afterSkill:"訣歌天響", afterRank:"A"},
+        {slot:"S2", skill:"志半ノ矛楯", rank:"A", afterSkill:"志半ノ矛楯", afterRank:"A", target:"全", rate:"+65%", effectShort:"攻撃465%上昇+防御465%上昇(模倣不可)"}
+      ]},
+
+    {name:"片倉小十郎", no:"7003", ch:"未確認", cost:2.5, troop:"全攻", sub:"", effect:"所属部隊を含む3部隊で自部隊同時攻撃が可能",
+      furigana:"かたくらこじゅうろう", illustrator:"JaneMere",
+      imageFull:"assets/img/characters/no7003_full.png", imageChar:"assets/img/characters/no7003_char.png",
+      atkBase:1140, atkGrowth:46, defBase:1050, defGrowth:36, tacticsBase:530.0, tacticsGrowth:2.5, lv0Troops:3250,
+      rankGrades:{yari:'A', yumi:'A', uma:'A', ki:'A'},
+      initialSkill:"覇業ノ楔",
+      skillDetail:"A/LV10 所属部隊を含む3部隊で自部隊同時攻撃/対象:全\n①所属部隊を含む3部隊で自部隊同時攻撃を行うことができる(重複不可)",
+      trTable:[
+        {level:"LV10", points:"-", effect:"全　所属部隊を含む3部隊で自部隊同時攻撃を行うことができる(重複不可)"},
+        {level:"TR1", points:"10", effect:"全　確率 100% / 速度 100%上昇(所属部隊を含む3部隊で自部隊同時攻撃)"},
+        {level:"TR2", points:"40", effect:"全　確率 100% / 速度 150%上昇(所属部隊を含む3部隊で自部隊同時攻撃)"}
+      ],
+      // ixanary.com(cards/7003 と skills/覇業ノ楔 の生HTML)で確認(2026-08-08)。
+      // 合成テーブルはスキルページの1次(=移植前)・2次(=移植後)から取得。
+      // 候補スキルの対象・確率・効果はサイト内の既存登録から転記(未登録のスキルは空のまま)。
+      synthesisTable:[
+        {slot:"A", skill:"騎聖", rank:"A", afterSkill:"神光征軍", afterRank:"SS", target:"全", rate:"+100%", effectShort:"攻撃80%上昇+速度50%上昇(武将コストで変動)", afterTarget:"全", afterRate:"100%", afterEffectShort:"全攻90%上昇+全速200%上昇"},
+        {slot:"B", skill:"戦陣 疾駆", rank:"A", afterSkill:"十束ノ神域", afterRank:"SS", target:"全", rate:"+100%", effectShort:"速度170%上昇+破壊170%上昇", afterTarget:"全 覇道", afterRate:"100%", afterEffectShort:"攻撃320%上昇+速度70%上昇+覇道を持つため所属部隊の武将のスキルを無効化・発動率低下から保護"},
+        {slot:"C", skill:"十束ノ神域", rank:"SS", afterSkill:"天聖宝冠", afterRank:"SSS", target:"全 覇道", rate:"100%", effectShort:"攻撃320%上昇+速度70%上昇+覇道を持つため所属部隊の武将のスキルを無効化・発動率低下から保護", afterTarget:"全", afterRate:"45%", afterEffectShort:"攻撃100%上昇+防御参加武将数×5%を攻撃効果に加算"},
+        {slot:"S1", skill:"氷塊ノ夾撃", rank:"S", afterSkill:"氷塊三連撃", afterRank:"SSS", afterTarget:"全", afterRate:"45%", afterEffectShort:"攻撃170%上昇(自部隊同時攻撃時コスト最大2除外)"},
+        {slot:"S2", skill:"志半ノ矛楯", rank:"A", afterSkill:"志半ノ矛楯", afterRank:"A", target:"全", rate:"+65%", effectShort:"攻撃465%上昇+防御465%上昇(模倣不可)"}
+      ]},
+
+    {name:"太原雪斎", no:"7004", ch:"未確認", cost:4.5, troop:"槍砲器防", sub:"", effect:"敵軍部隊数×2.6%を防御効果に加算",
+      furigana:"たいげんせっさい",
+      imageFull:"assets/img/characters/no7004_full.png", imageChar:"assets/img/characters/no7004_char.png",
+      atkBase:1050, atkGrowth:36, defBase:1150, defGrowth:47, tacticsBase:520.0, tacticsGrowth:2.5, lv0Troops:4290,
+      rankGrades:{yari:'S', yumi:'B', uma:'A', ki:'A'},
+      initialSkill:"悉皆執権",
+      skillDetail:"A/LV10 確率 48% 防御410%上昇/対象:槍・砲・器\n①防御410%上昇する\n②敵軍部隊数×2.6%を防御効果に加算する",
+      trTable:[
+        {level:"LV10", points:"-", effect:"槍・砲・器　確率 48% / 防御 410%+2.6%×敵軍部隊数"}
+      ],
+      // ixanary.com(cards/7004 と skills/悉皆執権 の生HTML)で確認(2026-08-08)。
+      // 合成テーブルはスキルページの1次(=移植前)・2次(=移植後)から取得。
+      // 候補スキルの対象・確率・効果はサイト内の既存登録から転記(未登録のスキルは空のまま)。
+      synthesisTable:[
+        {slot:"A", skill:"覇軍ノ勇士", rank:"A", afterSkill:"戦陣 神楽", afterRank:"A", afterTarget:"全 飛翔4", afterRate:"100%", afterEffectShort:"攻撃 77%上昇(卓越:追加確率30%で2倍)"},
+        {slot:"B", skill:"戦陣 無縫", rank:"A", afterSkill:"天衣無縫神戒", afterRank:"SS", target:"全", rate:"42%", effectShort:"防御 80%上昇(部隊総コストで変動)", afterTarget:"全", afterRate:"50%", afterEffectShort:"防御30.02%上昇(部隊総コスト依存)"},
+        {slot:"C", skill:"悉皆執権", rank:"A", afterSkill:"悉皆執権", afterRank:"A"},
+        {slot:"S1", skill:"悉皆執権", rank:"A", afterSkill:"悉皆執権", afterRank:"A"},
+        {slot:"S2", skill:"志半ノ矛楯", rank:"A", afterSkill:"志半ノ矛楯", afterRank:"A", target:"全", rate:"+65%", effectShort:"攻撃465%上昇+防御465%上昇(模倣不可)"}
+      ]},
+
+    {name:"北条幻庵", no:"7005", ch:"未確認", cost:3, troop:"砲器防", sub:"", effect:"所領防御陣形配置時、編成コスト消費-2",
+      furigana:"ほうじょうげんあん", illustrator:"西野幸治",
+      imageFull:"assets/img/characters/no7005_full.png", imageChar:"assets/img/characters/no7005_char.png",
+      atkBase:1040, atkGrowth:34, defBase:1130, defGrowth:46, tacticsBase:580.0, tacticsGrowth:2.5, lv0Troops:3460,
+      rankGrades:{yari:'B', yumi:'A', uma:'A', ki:'S'},
+      initialSkill:"王佐ノ導き",
+      skillDetail:"A/LV10 確率 55% 防御430%上昇/対象:砲・器\n模倣不可\n①防御430%上昇する\n②所領防御陣形に配置時この武将の編成コスト消費を-2する",
+      trTable:[
+        {level:"LV10", points:"-", effect:"砲・器　確率 55% / 防御 430%上昇(所領防御陣形配置時コスト-2)"},
+        {level:"TR1", points:"10", effect:"砲・器　確率 55% / 防御 500%上昇(所領防御陣形配置時コスト-2)"},
+        {level:"TR2", points:"40", effect:"砲・器　確率 55% / 防御 570%上昇(所領防御陣形配置時コスト-2.5)"}
+      ],
+      // ixanary.com(cards/7005 と skills/王佐ノ導き の生HTML)で確認(2026-08-08)。
+      // 合成テーブルはスキルページの1次(=移植前)・2次(=移植後)から取得。
+      // 候補スキルの対象・確率・効果はサイト内の既存登録から転記(未登録のスキルは空のまま)。
+      synthesisTable:[
+        {slot:"A", skill:"望国術策", rank:"A", afterSkill:"望国術策", afterRank:"A"},
+        {slot:"B", skill:"神記一筆", rank:"D", afterSkill:"総構え", afterRank:"B"},
+        {slot:"C", skill:"戦陣 吟詠", rank:"A", afterSkill:"戦陣 吟詠", afterRank:"A", target:"全 卓越", rate:"+100%", effectShort:"攻撃340%上昇+防御340%上昇+部隊内卓越追加確率+20%(模倣不可・特殊効果は自部隊内では重複不可)"},
+        {slot:"S1", skill:"転歌", rank:"A", afterSkill:"入来神舞", afterRank:"S", target:"部隊長", rate:"80%", effectShort:"効果 部隊長の初期スキルを模倣(戦闘スキルのみ、TR別データは未確認)", afterTarget:"部隊長", afterRate:"55%", afterEffectShort:"効果 部隊長の初期スキルを1.1倍に強化して模倣(TR別データは未確認)"},
+        {slot:"S2", skill:"志半ノ矛楯", rank:"A", afterSkill:"志半ノ矛楯", afterRank:"A", target:"全", rate:"+65%", effectShort:"攻撃465%上昇+防御465%上昇(模倣不可)"}
+      ]},
+
+    {name:"秋山信友", no:"7006", ch:"未確認", cost:3.5, troop:"槍馬砲器攻", sub:"", effect:"自部隊同時攻撃で消費する名声値-20",
+      furigana:"あきやまのぶとも", illustrator:"青空あおい",
+      imageFull:"assets/img/characters/no7006_full.png", imageChar:"assets/img/characters/no7006_char.png",
+      atkBase:1130, atkGrowth:46, defBase:1030, defGrowth:33, tacticsBase:550.0, tacticsGrowth:2.5, lv0Troops:3790,
+      rankGrades:{yari:'S', yumi:'A', uma:'A', ki:'B'},
+      initialSkill:"虎軍先兵",
+      skillDetail:"A/LV10 確率 50% 攻撃440%上昇/対象:槍・馬・砲・器\n①攻撃440%上昇する\n②所属部隊を含む自部隊同時攻撃で消費する名声値を-20する(重複不可)",
+      trTable:[
+        {level:"LV10", points:"-", effect:"槍・馬・砲・器　確率 50% / 攻撃 440%上昇(自部隊同時攻撃の名声値-20)"}
+      ],
+      // ixanary.com(cards/7006 と skills/虎軍先兵 の生HTML)で確認(2026-08-08)。
+      // 合成テーブルはスキルページの1次(=移植前)・2次(=移植後)から取得。
+      // 候補スキルの対象・確率・効果はサイト内の既存登録から転記(未登録のスキルは空のまま)。
+      synthesisTable:[
+        {slot:"A", skill:"朧雲ノ突撃", rank:"S", afterSkill:"朧雲ノ閃撃", afterRank:"SSS", afterTarget:"全", afterRate:"100%", afterEffectShort:"攻撃170%上昇+速度240%上昇"},
+        {slot:"B", skill:"虎国ノ至賢", rank:"A", afterSkill:"志半ノ矛楯", afterRank:"A", target:"馬・砲・器", rate:"100%", effectShort:"攻撃450%上昇+速度100%上昇(模倣不可)", afterTarget:"全", afterRate:"+65%", afterEffectShort:"攻撃465%上昇+防御465%上昇(模倣不可)"},
+        {slot:"C", skill:"虎軍先兵", rank:"A", afterSkill:"虎軍先兵", afterRank:"A"},
+        {slot:"S1", skill:"虎軍先兵", rank:"A", afterSkill:"虎軍先兵", afterRank:"A"},
+        {slot:"S2", skill:"志半ノ矛楯", rank:"A", afterSkill:"志半ノ矛楯", afterRank:"A", target:"全", rate:"+65%", effectShort:"攻撃465%上昇+防御465%上昇(模倣不可)"}
+      ]},
+
+    {name:"志賀親次", no:"7007", ch:"未確認", cost:4, troop:"弓砲器防", sub:"", effect:"拠点待機90分ごとに防御効果1.5倍(上限5回)",
+      furigana:"しがちかつぐ", illustrator:"岩元辰郎",
+      imageFull:"assets/img/characters/no7007_full.png", imageChar:"assets/img/characters/no7007_char.png",
+      atkBase:1030, atkGrowth:33, defBase:1150, defGrowth:47, tacticsBase:530.0, tacticsGrowth:2.5, lv0Troops:4010,
+      rankGrades:{yari:'A', yumi:'S', uma:'B', ki:'A'},
+      initialSkill:"破窮ノ勇将",
+      skillDetail:"A/LV10 確率 60% 防御100%上昇/対象:弓・砲・器\n①防御100%上昇する\n②拠点待機90分ごとに防御効果が1.5倍になる(上限5回)",
+      trTable:[
+        {level:"LV10", points:"-", effect:"弓・砲・器　確率 60% / 防御 100%上昇(拠点待機90分ごとに1.5倍・上限5回)"},
+        {level:"TR1", points:"10", effect:"弓・砲・器　確率 60% / 防御 105%上昇(拠点待機80分ごとに1.5倍・上限5回)"},
+        {level:"TR2", points:"40", effect:"弓・砲・器　確率 60% / 防御 120%上昇(拠点待機70分ごとに1.5倍・上限5回)"}
+      ],
+      // ixanary.com(cards/7007 と skills/破窮ノ勇将 の生HTML)で確認(2026-08-08)。
+      // 合成テーブルはスキルページの1次(=移植前)・2次(=移植後)から取得。
+      // 候補スキルの対象・確率・効果はサイト内の既存登録から転記(未登録のスキルは空のまま)。
+      synthesisTable:[
+        {slot:"A", skill:"彷徨う福音", rank:"B", afterSkill:"彷徨う福音", afterRank:"B"},
+        {slot:"B", skill:"戦陣 神屋", rank:"A", afterSkill:"神屋楯比売命", afterRank:"SS", afterTarget:"自身", afterRate:"", afterEffectShort:"自身の初期スキルを模倣(戦闘スキルのみ)"},
+        {slot:"C", skill:"破窮ノ勇将", rank:"A", afterSkill:"破窮ノ勇将", afterRank:"A"},
+        {slot:"S1", skill:"破窮ノ勇将", rank:"A", afterSkill:"破窮ノ勇将", afterRank:"A"},
+        {slot:"S2", skill:"志半ノ矛楯", rank:"A", afterSkill:"志半ノ矛楯", afterRank:"A", target:"全", rate:"+65%", effectShort:"攻撃465%上昇+防御465%上昇(模倣不可)"}
+      ]},
+
+    {name:"池田輝政", no:"7008", ch:"未確認", cost:3.5, troop:"全攻", sub:"", effect:"破壊した耐久値に応じて資源獲得(獲得率15%)",
+      furigana:"いけだてるまさ",
+      imageFull:"assets/img/characters/no7008_full.png", imageChar:"assets/img/characters/no7008_char.png",
+      atkBase:1140, atkGrowth:46, defBase:1050, defGrowth:36, tacticsBase:560.0, tacticsGrowth:2.5, lv0Troops:3790,
+      rankGrades:{yari:'S', yumi:'B', uma:'A', ki:'A'},
+      initialSkill:"西国将軍",
+      skillDetail:"A/LV10 確率 100% 攻撃430%上昇+破壊70%上昇/対象:全\n①攻撃430%上昇する\n②破壊70%上昇する\n③資源獲得率が15%になり破壊した耐久値に応じて資源を獲得する",
+      trTable:[
+        {level:"LV10", points:"-", effect:"全　確率 100% / 攻撃 430%上昇+破壊 70%上昇(資源獲得率15%)"}
+      ],
+      // ixanary.com(cards/7008 と skills/西国将軍 の生HTML)で確認(2026-08-08)。
+      // 合成テーブルはスキルページの1次(=移植前)・2次(=移植後)から取得。
+      // 候補スキルの対象・確率・効果はサイト内の既存登録から転記(未登録のスキルは空のまま)。
+      synthesisTable:[
+        {slot:"A", skill:"西国ノ覇将", rank:"A", afterSkill:"紅蓮ノ刹", afterRank:"S"},
+        {slot:"B", skill:"戦陣 疾駆", rank:"A", afterSkill:"十束ノ神域", afterRank:"SS", target:"全", rate:"+100%", effectShort:"速度170%上昇+破壊170%上昇", afterTarget:"全 覇道", afterRate:"100%", afterEffectShort:"攻撃320%上昇+速度70%上昇+覇道を持つため所属部隊の武将のスキルを無効化・発動率低下から保護"},
+        {slot:"C", skill:"西国将軍", rank:"A", afterSkill:"西国将軍", afterRank:"A"},
+        {slot:"S1", skill:"西国将軍", rank:"A", afterSkill:"西国将軍", afterRank:"A"},
+        {slot:"S2", skill:"志半ノ矛楯", rank:"A", afterSkill:"志半ノ矛楯", afterRank:"A", target:"全", rate:"+65%", effectShort:"攻撃465%上昇+防御465%上昇(模倣不可)"}
+      ]},
+
+    {name:"仙石秀久", no:"7009", ch:"未確認", cost:3, troop:"槍弓器鉄防", sub:"", effect:"自部隊の武将ダメージ軽減3%(重複発動上限4)",
+      furigana:"せんごくひでひさ", illustrator:"hakus",
+      imageFull:"assets/img/characters/no7009_full.png", imageChar:"assets/img/characters/no7009_char.png",
+      atkBase:1040, atkGrowth:34, defBase:1150, defGrowth:47, tacticsBase:520.0, tacticsGrowth:2.5, lv0Troops:3460,
+      rankGrades:{yari:'S', yumi:'A', uma:'B', ki:'A'},
+      initialSkill:"無心武響",
+      skillDetail:"A/LV10 確率 42% 防御360%上昇/対象:槍・弓・器・鉄\n①防御360%上昇する\n②自部隊の武将ダメージを3%軽減する(重複発動上限数4)",
+      trTable:[
+        {level:"LV10", points:"-", effect:"槍・弓・器・鉄　確率 42% / 防御 360%上昇(武将ダメージ軽減3%)"},
+        {level:"TR1", points:"10", effect:"槍・弓・器・鉄　確率 47% / 防御 410%上昇(武将ダメージ軽減3%)"},
+        {level:"TR2", points:"40", effect:"槍・弓・器・鉄　確率 47% / 防御 460%上昇(武将ダメージ軽減4%)"}
+      ],
+      // ixanary.com(cards/7009 と skills/無心武響 の生HTML)で確認(2026-08-08)。
+      // 合成テーブルはスキルページの1次(=移植前)・2次(=移植後)から取得。
+      // 候補スキルの対象・確率・効果はサイト内の既存登録から転記(未登録のスキルは空のまま)。
+      synthesisTable:[
+        {slot:"A", skill:"王道ノ極意", rank:"B", afterSkill:"戦陣 轟砲", afterRank:"A"},
+        {slot:"B", skill:"不死鳥", rank:"B", afterSkill:"不死鳥", afterRank:"B"},
+        {slot:"C", skill:"破克閃剣", rank:"A", afterSkill:"戦陣 剣舞", afterRank:"A", target:"槍・弓・器", rate:"+48%", effectShort:"攻撃350%上昇+不屈1"},
+        {slot:"S1", skill:"無心武響", rank:"A", afterSkill:"無心武響", afterRank:"A"},
+        {slot:"S2", skill:"志半ノ矛楯", rank:"A", afterSkill:"志半ノ矛楯", afterRank:"A", target:"全", rate:"+65%", effectShort:"攻撃465%上昇+防御465%上昇(模倣不可)"}
+      ]},
+
+    {name:"土橋平次", no:"7010", ch:"未確認", cost:4, troop:"弓砲器攻防", sub:"", effect:"攻撃・防御・破壊を同時に上昇",
+      furigana:"つちばしへいじ", illustrator:"Natto-7",
+      imageFull:"assets/img/characters/no7010_full.png", imageChar:"assets/img/characters/no7010_char.png",
+      atkBase:1140, atkGrowth:45, defBase:1140, defGrowth:45, tacticsBase:520.0, tacticsGrowth:2.5, lv0Troops:4010,
+      rankGrades:{yari:'B', yumi:'A', uma:'A', ki:'S'},
+      initialSkill:"鉄国",
+      skillDetail:"A/LV10 確率 40% 攻撃440%上昇+防御440%上昇+破壊110%上昇/対象:弓・砲・器\n①攻撃440%上昇する\n②防御440%上昇する\n③破壊110%上昇する",
+      trTable:[
+        {level:"LV10", points:"-", effect:"弓・砲・器　確率 40% / 攻撃 440%上昇+防御 440%上昇+破壊 110%上昇"}
+      ],
+      // ixanary.com(cards/7010 と skills/鉄国 の生HTML)で確認(2026-08-08)。
+      // 合成テーブルはスキルページの1次(=移植前)・2次(=移植後)から取得。
+      // 候補スキルの対象・確率・効果はサイト内の既存登録から転記(未登録のスキルは空のまま)。
+      synthesisTable:[
+        {slot:"A", skill:"漆黒ノ銃騎兵", rank:"A", afterSkill:"六字の采配", afterRank:"B"},
+        {slot:"B", skill:"炎天轟砲", rank:"A", afterSkill:"鼓腹撃壌", afterRank:"A"},
+        {slot:"C", skill:"鉄国", rank:"A", afterSkill:"鉄国", afterRank:"A"},
+        {slot:"S1", skill:"鉄国", rank:"A", afterSkill:"鉄国", afterRank:"A"},
+        {slot:"S2", skill:"志半ノ矛楯", rank:"A", afterSkill:"志半ノ矛楯", afterRank:"A", target:"全", rate:"+65%", effectShort:"攻撃465%上昇+防御465%上昇(模倣不可)"}
+      ]},
+
+    {name:"板垣信方", no:"7011", ch:"未確認", cost:4, troop:"馬砲器攻防", sub:"", effect:"卓越追加確率10%で攻防効果3倍",
+      furigana:"いたがきのぶかた", illustrator:"池田宗隆",
+      imageFull:"assets/img/characters/no7011_full.png", imageChar:"assets/img/characters/no7011_char.png",
+      atkBase:1150, atkGrowth:45, defBase:1150, defGrowth:45, tacticsBase:520.0, tacticsGrowth:2.5, lv0Troops:4010,
+      rankGrades:{yari:'B', yumi:'A', uma:'S', ki:'A'},
+      initialSkill:"御旗ノ守護者",
+      skillDetail:"A/LV10 確率 100% 攻撃230%上昇+防御230%上昇/対象:馬・砲・器 卓越\n①攻撃230%上昇する\n②防御230%上昇する\n③卓越の追加確率10%で攻防効果が3倍になる",
+      trTable:[
+        {level:"LV10", points:"-", effect:"馬・砲・器 卓越　確率 100% / 攻撃 230%上昇+防御 230%上昇(卓越追加確率10%で3倍)"},
+        {level:"TR1", points:"10", effect:"馬・砲・器 卓越　確率 100% / 攻撃 230%上昇+防御 230%上昇(卓越追加確率15%で3倍)"},
+        {level:"TR2", points:"40", effect:"馬・砲・器 卓越　確率 100% / 攻撃 235%上昇+防御 235%上昇(卓越追加確率20%で3倍)"}
+      ],
+      // ixanary.com(cards/7011 と skills/御旗ノ守護者 の生HTML)で確認(2026-08-08)。
+      // 合成テーブルはスキルページの1次(=移植前)・2次(=移植後)から取得。
+      // 候補スキルの対象・確率・効果はサイト内の既存登録から転記(未登録のスキルは空のまま)。
+      synthesisTable:[
+        {slot:"A", skill:"霊妙秘剣", rank:"A", afterSkill:"戦陣 剣舞", afterRank:"A", target:"槍・馬・砲 飛翔6 卓越", rate:"+100%", effectShort:"攻撃180%上昇+防御180%上昇(卓越:追加確率-30%で3倍・0%超のみ抽選・模倣不可)"},
+        {slot:"B", skill:"龍門ノ賢者", rank:"A", afterSkill:"志半ノ矛楯", afterRank:"A", target:"弓・器・焙 卓越", rate:"100%", effectShort:"攻撃190%上昇(卓越:追加確率10%で3倍)", afterTarget:"全", afterRate:"+65%", afterEffectShort:"攻撃465%上昇+防御465%上昇(模倣不可)"},
+        {slot:"C", skill:"戦陣 剣舞", rank:"A", afterSkill:"仙剣破斬", afterRank:"SSS", afterTarget:"全", afterRate:"100%", afterEffectShort:"攻撃115%上昇+防御115%上昇(卓越で4倍)"},
+        {slot:"S1", skill:"御旗ノ守護者", rank:"A", afterSkill:"御旗ノ守護者", afterRank:"A"},
+        {slot:"S2", skill:"志半ノ矛楯", rank:"A", afterSkill:"志半ノ矛楯", afterRank:"A", target:"全", rate:"+65%", effectShort:"攻撃465%上昇+防御465%上昇(模倣不可)"}
+      ]},
+
+    {name:"依田信蕃", no:"7012", ch:"未確認", cost:3, troop:"槍馬器騎攻", sub:"", effect:"攻撃と速度を同時に上昇",
+      furigana:"よだのぶしげ", illustrator:"タクヤ",
+      imageFull:"assets/img/characters/no7012_full.png", imageChar:"assets/img/characters/no7012_char.png",
+      atkBase:1160, atkGrowth:47, defBase:1040, defGrowth:34, tacticsBase:520.0, tacticsGrowth:2.5, lv0Troops:3470,
+      rankGrades:{yari:'A', yumi:'B', uma:'S', ki:'A'},
+      initialSkill:"弧将墨守",
+      skillDetail:"A/LV10 確率 40% 攻撃600%上昇/対象:槍・馬・器・騎\n①攻撃600%上昇する\n②速度70%上昇する(確率100%)",
+      trTable:[
+        {level:"LV10", points:"-", effect:"槍・馬・器・騎　確率 40% / 攻撃 600%上昇(速度 70%上昇は確率100%)"}
+      ],
+      // ixanary.com(cards/7012 と skills/弧将墨守 の生HTML)で確認(2026-08-08)。
+      // 合成テーブルはスキルページの1次(=移植前)・2次(=移植後)から取得。
+      // 候補スキルの対象・確率・効果はサイト内の既存登録から転記(未登録のスキルは空のまま)。
+      synthesisTable:[
+        {slot:"A", skill:"虎国ノ至賢", rank:"A", afterSkill:"志半ノ矛楯", afterRank:"A", target:"馬・砲・器", rate:"100%", effectShort:"攻撃450%上昇+速度100%上昇(模倣不可)", afterTarget:"全", afterRate:"+65%", afterEffectShort:"攻撃465%上昇+防御465%上昇(模倣不可)"},
+        {slot:"B", skill:"湖裂騎刃", rank:"A", afterSkill:"不滅ノ鬼神", afterRank:"S", target:"弓・馬・器・騎", rate:"+100%", effectShort:"攻撃150%上昇+速度40%上昇+帰還時間短縮(3分・模倣不可)", afterTarget:"全", afterRate:"100%", afterEffectShort:"100% / 攻撃 100%上昇(確率70%)+速度 70%上昇(確率100%)(TR別データは未確認)"},
+        {slot:"C", skill:"戦陣 疾駆", rank:"A", afterSkill:"十束ノ神域", afterRank:"SS", target:"全", rate:"+100%", effectShort:"速度170%上昇+破壊170%上昇", afterTarget:"全 覇道", afterRate:"100%", afterEffectShort:"攻撃320%上昇+速度70%上昇+覇道を持つため所属部隊の武将のスキルを無効化・発動率低下から保護"},
+        {slot:"S1", skill:"弧将墨守", rank:"A", afterSkill:"弧将墨守", afterRank:"A"},
+        {slot:"S2", skill:"志半ノ矛楯", rank:"A", afterSkill:"志半ノ矛楯", afterRank:"A", target:"全", rate:"+65%", effectShort:"攻撃465%上昇+防御465%上昇(模倣不可)"}
+      ]},
+
+    {name:"本多正純", no:"7013", ch:"未確認", cost:3.5, troop:"槍砲器防", sub:"", effect:"格付「戦果」上位の城主が敵軍にいると防御効果5倍",
+      furigana:"ほんだまさずみ", illustrator:"JUNNY",
+      imageFull:"assets/img/characters/no7013_full.png", imageChar:"assets/img/characters/no7013_char.png",
+      atkBase:1050, atkGrowth:36, defBase:1160, defGrowth:47, tacticsBase:550.0, tacticsGrowth:2.5, lv0Troops:3790,
+      rankGrades:{yari:'S', yumi:'B', uma:'A', ki:'A'},
+      initialSkill:"謀虎因子",
+      skillDetail:"A/LV10 確率 48% 防御160%上昇/対象:槍・砲・器\n①防御160%上昇する\n②所有者より全体格付「戦果」が上位の城主が敵軍にいた場合このスキルの防御効果が5倍になる(本丸防御陣形・所領防御陣形でのみ発動)",
+      trTable:[
+        {level:"LV10", points:"-", effect:"槍・砲・器　確率 48% / 防御 160%上昇(格付「戦果」上位の敵城主がいると5倍)"},
+        {level:"TR1", points:"10", effect:"槍・砲・器　確率 48% / 防御 180%上昇(格付「戦果」上位の敵城主がいると5倍)"},
+        {level:"TR2", points:"40", effect:"槍・砲・器　確率 48% / 防御 210%上昇(格付「戦果」上位の敵城主がいると5倍)"}
+      ],
+      // ixanary.com(cards/7013 と skills/謀虎因子 の生HTML)で確認(2026-08-08)。
+      // 合成テーブルはスキルページの1次(=移植前)・2次(=移植後)から取得。
+      // 候補スキルの対象・確率・効果はサイト内の既存登録から転記(未登録のスキルは空のまま)。
+      synthesisTable:[
+        {slot:"A", skill:"望国術策", rank:"A", afterSkill:"望国術策", afterRank:"A"},
+        {slot:"B", skill:"悉皆執権", rank:"A", afterSkill:"悉皆執権", afterRank:"A"},
+        {slot:"C", skill:"江虎謀牙", rank:"A", afterSkill:"籠城の妙技", afterRank:"A", afterTarget:"全", afterRate:"+100%", afterEffectShort:"防御50%上昇(卓越:追加確率15%で3倍)"},
+        {slot:"S1", skill:"謀虎因子", rank:"A", afterSkill:"謀虎因子", afterRank:"A"},
+        {slot:"S2", skill:"志半ノ矛楯", rank:"A", afterSkill:"志半ノ矛楯", afterRank:"A", target:"全", rate:"+65%", effectShort:"攻撃465%上昇+防御465%上昇(模倣不可)"}
+      ]},
+
+    {name:"上杉景虎", no:"7014", ch:"未確認", cost:4.5, troop:"弓砲器攻", sub:"", effect:"武将のコストで攻撃効果が変化",
+      furigana:"うえすぎかげとら", illustrator:"ちゃきん",
+      imageFull:"assets/img/characters/no7014_full.png", imageChar:"assets/img/characters/no7014_char.png",
+      atkBase:1150, atkGrowth:47, defBase:1060, defGrowth:37, tacticsBase:530.0, tacticsGrowth:2.5, lv0Troops:4290,
+      rankGrades:{yari:'B', yumi:'S', uma:'A', ki:'A'},
+      initialSkill:"三国将風",
+      skillDetail:"A/LV10 確率 42% 攻撃675%上昇/対象:弓・砲・器\n①攻撃675%上昇する(武将のコストで攻撃効果が変化する)",
+      trTable:[
+        {level:"LV10", points:"-", effect:"弓・砲・器　確率 42% / 攻撃 675%上昇(武将のコストで効果が変化)"}
+      ],
+      // ixanary.com(cards/7014 と skills/三国将風 の生HTML)で確認(2026-08-08)。
+      // 合成テーブルはスキルページの1次(=移植前)・2次(=移植後)から取得。
+      // 候補スキルの対象・確率・効果はサイト内の既存登録から転記(未登録のスキルは空のまま)。
+      synthesisTable:[
+        {slot:"A", skill:"戦陣 吟詠", rank:"A", afterSkill:"戦陣 吟詠", afterRank:"A", target:"全 卓越", rate:"+100%", effectShort:"攻撃340%上昇+防御340%上昇+部隊内卓越追加確率+20%(模倣不可・特殊効果は自部隊内では重複不可)"},
+        {slot:"B", skill:"黎明雲龍", rank:"A", afterSkill:"十字飛車", afterRank:"A"},
+        {slot:"C", skill:"勝旗勇躍", rank:"A", afterSkill:"戦陣 吟詠", afterRank:"A", target:"槍・馬・器・騎 卓越", rate:"100%", effectShort:"攻撃440%上昇+防御440%上昇(卓越確率+50%・模倣不可)", afterTarget:"全 卓越", afterRate:"+100%", afterEffectShort:"攻撃340%上昇+防御340%上昇+部隊内卓越追加確率+20%(模倣不可・特殊効果は自部隊内では重複不可)"},
+        {slot:"S1", skill:"三国将風", rank:"A", afterSkill:"三国将風", afterRank:"A"},
+        {slot:"S2", skill:"志半ノ矛楯", rank:"A", afterSkill:"志半ノ矛楯", afterRank:"A", target:"全", rate:"+65%", effectShort:"攻撃465%上昇+防御465%上昇(模倣不可)"}
+      ]},
+
+    {name:"森長可", no:"7015", ch:"未確認", cost:3.5, troop:"槍器鉄防", sub:"", effect:"所領防御陣形の第伍列目配置時、防御効果5倍",
+      furigana:"もりながよし", illustrator:"JaneMere",
+      imageFull:"assets/img/characters/no7015_full.png", imageChar:"assets/img/characters/no7015_char.png",
+      atkBase:1030, atkGrowth:33, defBase:1170, defGrowth:48, tacticsBase:540.0, tacticsGrowth:2.5, lv0Troops:3790,
+      rankGrades:{yari:'SS', yumi:'B', uma:'B', ki:'A'},
+      initialSkill:"人間無骨",
+      skillDetail:"A/LV10 確率 45% 防御170%上昇/対象:槍・器・鉄\n模倣不可\n①防御170%上昇する\n②所領防御陣形の第伍列目に配置時防御効果が5倍になる",
+      trTable:[
+        {level:"LV10", points:"-", effect:"槍・器・鉄　確率 45% / 防御 170%上昇(所領防御陣形の第伍列目配置時5倍)"},
+        {level:"TR1", points:"10", effect:"槍・器・鉄　確率 45% / 防御 190%上昇(所領防御陣形の第伍列目配置時5倍)"},
+        {level:"TR2", points:"40", effect:"槍・器・鉄　確率 45% / 防御 220%上昇(所領防御陣形の第伍列目配置時5倍)"}
+      ],
+      // ixanary.com(cards/7015 と skills/人間無骨 の生HTML)で確認(2026-08-08)。
+      // 合成テーブルはスキルページの1次(=移植前)・2次(=移植後)から取得。
+      // 候補スキルの対象・確率・効果はサイト内の既存登録から転記(未登録のスキルは空のまま)。
+      synthesisTable:[
+        {slot:"A", skill:"鬼滅刺", rank:"A", afterSkill:"布都御魂ノ鬨", afterRank:"SS", afterTarget:"全", afterRate:"35%", afterEffectShort:"攻撃20%上昇+防御20%上昇(部隊内S以上スキル数×20%)"},
+        {slot:"B", skill:"武神ノ采配", rank:"A", afterSkill:"武神ノ采配", afterRank:"A", target:"馬・砲・器", rate:"56%", effectShort:"防御95%上昇(拠点待機90分毎に1.5倍・上限5回)"},
+        {slot:"C", skill:"覇軍ノ勇士", rank:"A", afterSkill:"戦陣 神楽", afterRank:"A", afterTarget:"全 飛翔4", afterRate:"100%", afterEffectShort:"攻撃 77%上昇(卓越:追加確率30%で2倍)"},
+        {slot:"S1", skill:"人間無骨", rank:"A", afterSkill:"人間無骨", afterRank:"A"},
+        {slot:"S2", skill:"志半ノ矛楯", rank:"A", afterSkill:"志半ノ矛楯", afterRank:"A", target:"全", rate:"+65%", effectShort:"攻撃465%上昇+防御465%上昇(模倣不可)"}
+      ]},
+
+    {name:"早川殿", no:"7016", ch:"未確認", cost:3, troop:"全攻防", sub:"", effect:"部隊内姫武将の発動率+10%・卓越追加確率+25%",
+      furigana:"はやかわどの", illustrator:"mado＊pen",
+      imageFull:"assets/img/characters/no7016_full.png", imageChar:"assets/img/characters/no7016_char.png",
+      atkBase:1130, atkGrowth:45, defBase:1130, defGrowth:45, tacticsBase:520.0, tacticsGrowth:2.5, lv0Troops:3470,
+      rankGrades:{yari:'A', yumi:'A', uma:'B', ki:'S'},
+      initialSkill:"仁婦ノ加護",
+      skillDetail:"A/LV10 確率 100% 攻撃600%上昇+防御600%上昇/対象:全\n模倣不可・特殊効果は自部隊内では重複不可\n①攻撃600%上昇する\n②防御600%上昇する\n③部隊内姫武将のスキル発動率を+10%し卓越追加確率を+25%する",
+      trTable:[
+        {level:"LV10", points:"-", effect:"全　確率 100% / 攻撃 600%上昇+防御 600%上昇(姫武将の発動率+10%・卓越追加確率+25%)"}
+      ],
+      // ixanary.com(cards/7016 と skills/仁婦ノ加護 の生HTML)で確認(2026-08-08)。
+      // 合成テーブルはスキルページの1次(=移植前)・2次(=移植後)から取得。
+      // 候補スキルの対象・確率・効果はサイト内の既存登録から転記(未登録のスキルは空のまま)。
+      synthesisTable:[
+        {slot:"A", skill:"戦陣 吟詠", rank:"A", afterSkill:"戦陣 吟詠", afterRank:"A", target:"全 卓越", rate:"+100%", effectShort:"攻撃340%上昇+防御340%上昇+部隊内卓越追加確率+20%(模倣不可・特殊効果は自部隊内では重複不可)"},
+        {slot:"B", skill:"転歌", rank:"A", afterSkill:"入来神舞", afterRank:"S", target:"部隊長", rate:"80%", effectShort:"効果 部隊長の初期スキルを模倣(戦闘スキルのみ、TR別データは未確認)", afterTarget:"部隊長", afterRate:"55%", afterEffectShort:"効果 部隊長の初期スキルを1.1倍に強化して模倣(TR別データは未確認)"},
+        {slot:"C", skill:"清賢ノ遊姫", rank:"A", afterSkill:"入来神舞", afterRank:"S", afterTarget:"部隊長", afterRate:"55%", afterEffectShort:"効果 部隊長の初期スキルを1.1倍に強化して模倣(TR別データは未確認)"},
+        {slot:"S1", skill:"仁婦ノ加護", rank:"A", afterSkill:"仁婦ノ加護", afterRank:"A"},
+        {slot:"S2", skill:"志半ノ矛楯", rank:"A", afterSkill:"志半ノ矛楯", afterRank:"A", target:"全", rate:"+65%", effectShort:"攻撃465%上昇+防御465%上昇(模倣不可)"}
+      ]},
+
+    {name:"池田恒興", no:"7017", ch:"未確認", cost:3.5, troop:"全攻", sub:"", effect:"自軍1部隊での攻撃で攻撃効果3倍",
+      furigana:"いけだつねおき", illustrator:"三好載克",
+      imageFull:"assets/img/characters/no7017_full.png", imageChar:"assets/img/characters/no7017_char.png",
+      atkBase:1160, atkGrowth:47, defBase:1060, defGrowth:37, tacticsBase:520.0, tacticsGrowth:2.5, lv0Troops:3790,
+      rankGrades:{yari:'S', yumi:'A', uma:'B', ki:'A'},
+      initialSkill:"飛蝶中入",
+      skillDetail:"A/LV10 確率 40% 攻撃300%上昇/対象:全\n①攻撃300%上昇する\n②自軍1部隊での攻撃で攻撃効果が3倍になる",
+      trTable:[
+        {level:"LV10", points:"-", effect:"全　確率 40% / 攻撃 300%上昇(自軍1部隊での攻撃で3倍)"},
+        {level:"TR2", points:"40", effect:"全　確率 40% / 攻撃 400%上昇(自軍1部隊での攻撃で3倍)"}
+      ],
+      // ixanary.com(cards/7017 と skills/飛蝶中入 の生HTML)で確認(2026-08-08)。
+      // 合成テーブルはスキルページの1次(=移植前)・2次(=移植後)から取得。
+      // 候補スキルの対象・確率・効果はサイト内の既存登録から転記(未登録のスキルは空のまま)。
+      synthesisTable:[
+        {slot:"A", skill:"月暈", rank:"A", afterSkill:"志半ノ矛楯", afterRank:"A", target:"全", rate:"42%", effectShort:"攻撃250%上昇(自軍1部隊での攻撃時3倍)", afterTarget:"全", afterRate:"+65%", afterEffectShort:"攻撃465%上昇+防御465%上昇(模倣不可)"},
+        {slot:"B", skill:"西国将軍", rank:"A", afterSkill:"西国将軍", afterRank:"A"},
+        {slot:"C", skill:"飛蝶野分", rank:"B", afterSkill:"風狂幻術", afterRank:"B", target:"部隊長", rate:"60%", effectShort:"効果 部隊長の初期スキルを模倣(戦闘スキルのみ)(TR別データは未確認)", afterTarget:"部隊長", afterRate:"+53%", afterEffectShort:"部隊長の初期スキルを模倣(戦闘スキルのみ)"},
+        {slot:"S1", skill:"飛蝶中入", rank:"A", afterSkill:"飛蝶中入", afterRank:"A"},
+        {slot:"S2", skill:"志半ノ矛楯", rank:"A", afterSkill:"志半ノ矛楯", afterRank:"A", target:"全", rate:"+65%", effectShort:"攻撃465%上昇+防御465%上昇(模倣不可)"}
+      ]},
+
+    {name:"六角定頼", no:"7018", ch:"未確認", cost:4, troop:"槍馬砲攻", sub:"", effect:"対人攻撃戦闘に勝利時、名声を20回復",
+      furigana:"ろっかくさだより", illustrator:"西野幸治",
+      imageFull:"assets/img/characters/no7018_full.png", imageChar:"assets/img/characters/no7018_char.png",
+      atkBase:1160, atkGrowth:47, defBase:1050, defGrowth:36, tacticsBase:550.0, tacticsGrowth:2.5, lv0Troops:4010,
+      rankGrades:{yari:'A', yumi:'B', uma:'S', ki:'A'},
+      initialSkill:"先見ノ直観",
+      skillDetail:"A/LV10 確率 50% 攻撃600%上昇/対象:槍・馬・砲\n模倣不可・特殊効果は部隊内重複不可\n①攻撃600%上昇する\n②対人での攻撃戦闘に勝利時名声を20回復する",
+      trTable:[
+        {level:"LV10", points:"-", effect:"槍・馬・砲　確率 50% / 攻撃 600%上昇(対人攻撃勝利時に名声+20)"}
+      ],
+      // ixanary.com(cards/7018 と skills/先見ノ直観 の生HTML)で確認(2026-08-08)。
+      // 合成テーブルはスキルページの1次(=移植前)・2次(=移植後)から取得。
+      // 候補スキルの対象・確率・効果はサイト内の既存登録から転記(未登録のスキルは空のまま)。
+      synthesisTable:[
+        {slot:"A", skill:"騎迅強襲", rank:"B", afterSkill:"遁世影武者", afterRank:"B", afterTarget:"部隊長", afterRate:"+50%", afterEffectShort:"部隊長の初期スキルを模倣(戦闘スキルのみ)"},
+        {slot:"B", skill:"湖裂騎刃", rank:"A", afterSkill:"不滅ノ鬼神", afterRank:"S", target:"弓・馬・器・騎", rate:"+100%", effectShort:"攻撃150%上昇+速度40%上昇+帰還時間短縮(3分・模倣不可)", afterTarget:"全", afterRate:"100%", afterEffectShort:"100% / 攻撃 100%上昇(確率70%)+速度 70%上昇(確率100%)(TR別データは未確認)"},
+        {slot:"C", skill:"闘火将帥", rank:"A", afterSkill:"氷塊三連撃", afterRank:"SSS", target:"槍・馬・砲", rate:"50%", effectShort:"攻撃430%上昇+対人攻撃勝利時名声+20(模倣不可・特殊効果は部隊内重複不可)", afterTarget:"全", afterRate:"45%", afterEffectShort:"攻撃170%上昇(自部隊同時攻撃時コスト最大2除外)"},
+        {slot:"S1", skill:"先見ノ直観", rank:"A", afterSkill:"先見ノ直観", afterRank:"A"},
+        {slot:"S2", skill:"志半ノ矛楯", rank:"A", afterSkill:"志半ノ矛楯", afterRank:"A", target:"全", rate:"+65%", effectShort:"攻撃465%上昇+防御465%上昇(模倣不可)"}
+      ]},
+
+    {name:"可児才蔵", no:"7019", ch:"未確認", cost:4, troop:"槍砲器攻", sub:"", effect:"卓越でのみ発動/攻撃590%上昇+飛翔14",
+      furigana:"かにさいぞう", illustrator:"添田一平",
+      imageFull:"assets/img/characters/no7019_full.png", imageChar:"assets/img/characters/no7019_char.png",
+      atkBase:1150, atkGrowth:46, defBase:1060, defGrowth:37, tacticsBase:560.0, tacticsGrowth:2.5, lv0Troops:4010,
+      rankGrades:{yari:'S', yumi:'A', uma:'B', ki:'A'},
+      initialSkill:"笹ノ墓標",
+      skillDetail:"A/LV10 攻撃590%上昇/対象:槍・砲・器 飛翔14\n模倣不可\n①通常確率では発動しない\n②卓越の追加確率50%で発動し攻撃590%上昇しかつ飛翔14を得る(攻撃戦闘時のみ発動・飛翔獲得部分は二重卓越不可)",
+      trTable:[
+        {level:"LV10", points:"-", effect:"槍・砲・器 飛翔14　卓越追加確率 50% / 攻撃 590%上昇(通常確率では発動せず)"},
+        {level:"TR2", points:"40", effect:"槍・砲・器 飛翔16　卓越追加確率 50% / 攻撃 720%上昇(通常確率では発動せず)"}
+      ],
+      // ixanary.com(cards/7019 と skills/笹ノ墓標 の生HTML)で確認(2026-08-08)。
+      // 合成テーブルはスキルページの1次(=移植前)・2次(=移植後)から取得。
+      // 候補スキルの対象・確率・効果はサイト内の既存登録から転記(未登録のスキルは空のまま)。
+      synthesisTable:[
+        {slot:"A", skill:"覇立槍", rank:"A", afterSkill:"戦陣 疾駆", afterRank:"A", target:"槍・砲・器", rate:"60%", effectShort:"攻撃460%上昇+破壊100%上昇", afterTarget:"全", afterRate:"+100%", afterEffectShort:"速度170%上昇+破壊170%上昇"},
+        {slot:"B", skill:"訣歌天響", rank:"A", afterSkill:"訣歌天響", afterRank:"A"},
+        {slot:"C", skill:"勝旗勇躍", rank:"A", afterSkill:"戦陣 吟詠", afterRank:"A", target:"槍・馬・器・騎 卓越", rate:"100%", effectShort:"攻撃440%上昇+防御440%上昇(卓越確率+50%・模倣不可)", afterTarget:"全 卓越", afterRate:"+100%", afterEffectShort:"攻撃340%上昇+防御340%上昇+部隊内卓越追加確率+20%(模倣不可・特殊効果は自部隊内では重複不可)"},
+        {slot:"S1", skill:"笹ノ墓標", rank:"A", afterSkill:"笹ノ墓標", afterRank:"A"},
+        {slot:"S2", skill:"志半ノ矛楯", rank:"A", afterSkill:"志半ノ矛楯", afterRank:"A", target:"全", rate:"+65%", effectShort:"攻撃465%上昇+防御465%上昇(模倣不可)"}
+      ]},
+
+    {name:"斎藤朝信", no:"7020", ch:"未確認", cost:4.5, troop:"砲器防", sub:"", effect:"本丸防御陣形配置時、編成コスト消費-1",
+      furigana:"さいとうとものぶ", illustrator:"青空あおい",
+      imageFull:"assets/img/characters/no7020_full.png", imageChar:"assets/img/characters/no7020_char.png",
+      atkBase:1050, atkGrowth:36, defBase:1150, defGrowth:46, tacticsBase:540.0, tacticsGrowth:2.5, lv0Troops:4290,
+      rankGrades:{yari:'A', yumi:'A', uma:'B', ki:'S'},
+      initialSkill:"隻眼ノ晏子",
+      skillDetail:"A/LV10 確率 40% 防御600%上昇/対象:砲・器\n模倣不可\n①防御600%上昇する\n②本丸防御陣形に配置時この武将の編成コスト消費を-1する",
+      trTable:[
+        {level:"LV10", points:"-", effect:"砲・器　確率 40% / 防御 600%上昇(本丸防御陣形配置時コスト-1)"}
+      ],
+      // ixanary.com(cards/7020 と skills/隻眼ノ晏子 の生HTML)で確認(2026-08-08)。
+      // 合成テーブルはスキルページの1次(=移植前)・2次(=移植後)から取得。
+      // 候補スキルの対象・確率・効果はサイト内の既存登録から転記(未登録のスキルは空のまま)。
+      synthesisTable:[
+        {slot:"A", skill:"自在ノ用兵", rank:"A", afterSkill:"戦陣 神楽", afterRank:"A", afterTarget:"全 飛翔4", afterRate:"100%", afterEffectShort:"攻撃 77%上昇(卓越:追加確率30%で2倍)"},
+        {slot:"B", skill:"御旗ノ守護者", rank:"A", afterSkill:"御旗ノ守護者", afterRank:"A"},
+        {slot:"C", skill:"悉皆執権", rank:"A", afterSkill:"悉皆執権", afterRank:"A"},
+        {slot:"S1", skill:"隻眼ノ晏子", rank:"A", afterSkill:"隻眼ノ晏子", afterRank:"A"},
+        {slot:"S2", skill:"志半ノ矛楯", rank:"A", afterSkill:"志半ノ矛楯", afterRank:"A", target:"全", rate:"+65%", effectShort:"攻撃465%上昇+防御465%上昇(模倣不可)"}
+      ]},
+
+    {name:"蒲生氏郷", no:"7403", ch:"未確認", cost:4, troop:"全攻", sub:"", effect:"飛翔19/攻撃戦闘では飛翔50とみなす",
+      furigana:"がもううじさと", illustrator:"正子公也",
+      imageFull:"assets/img/characters/no7403_full.png", imageChar:"assets/img/characters/no7403_char.png",
+      atkBase:1240, atkGrowth:65, defBase:1090, defGrowth:53, tacticsBase:560.0, tacticsGrowth:3, lv0Troops:4400,
+      rankGrades:{yari:'A', yumi:'A', uma:'S', ki:'A'},
+      initialSkill:"白銀双鶴",
+      skillDetail:"S/LV10 確率 55% 攻撃730%上昇/対象:全 飛翔19\n模倣不可\n①攻撃730%上昇する\n②速度200%上昇する(確率100%)\n③飛翔19を得る(初期スキルとして発動しかつ攻撃戦闘であれば飛翔50とみなす)",
+      trTable:[
+        {level:"LV10", points:"-", effect:"全 飛翔19　確率 55% / 攻撃 730%上昇+速度 200%上昇(攻撃戦闘では飛翔50とみなす)"},
+        {level:"TR5", points:"200", effect:"全 飛翔24　確率 55% / 攻撃 1500%上昇+速度 250%上昇(攻撃戦闘では飛翔60とみなす)"}
+      ],
+      // ixanary.com(cards/7403 と skills/白銀双鶴 の生HTML)で確認(2026-08-08)。
+      // 合成テーブルはスキルページの1次(=移植前)・2次(=移植後)から取得。
+      // 候補スキルの対象・確率・効果はサイト内の既存登録から転記(未登録のスキルは空のまま)。
+      synthesisTable:[
+        {slot:"A", skill:"獅子王", rank:"A", afterSkill:"銀翼神騎兵", afterRank:"S"},
+        {slot:"B", skill:"神羅聖域", rank:"SS", afterSkill:"神羅聖域", afterRank:"SS", target:"全 覇道", rate:"40%", effectShort:"攻撃900%上昇"},
+        {slot:"C", skill:"星神闘覇", rank:"SSS", afterSkill:"星神闘覇", afterRank:"SSS", target:"全 飛翔15", rate:"100%", effectShort:"攻撃 770%上昇+速度200%上昇(TR別データは未確認)"},
+        {slot:"S1", skill:"白銀双鶴", rank:"S", afterSkill:"白銀双鶴", afterRank:"S"},
+        {slot:"S2", skill:"魔弾奏者", rank:"S", afterSkill:"星神闘覇", afterRank:"SSS", target:"槍・弓・砲・器 飛翔10", rate:"64%", effectShort:"攻撃50%上昇(飛翔値合計×9%加算)", afterTarget:"全 飛翔15", afterRate:"100%", afterEffectShort:"攻撃 770%上昇+速度200%上昇(TR別データは未確認)"}
+      ]},
+
+    {name:"大内周防介", no:"7404", ch:"未確認", cost:4, troop:"全防", sub:"", effect:"お茶アイコン付与数×10を陣形内全武将の最大指揮兵数に加算",
+      furigana:"おおうちすおうのすけ", illustrator:"正子公也",
+      imageFull:"assets/img/characters/no7404_full.png", imageChar:"assets/img/characters/no7404_char.png",
+      atkBase:1090, atkGrowth:53, defBase:1240, defGrowth:65, tacticsBase:560.0, tacticsGrowth:3, lv0Troops:4390,
+      rankGrades:{yari:'A', yumi:'A', uma:'A', ki:'S'},
+      initialSkill:"文治興隆",
+      skillDetail:"S/LV10 お茶アイコン付与数×10を陣形内全武将の最大指揮兵数に加算/対象:全\n模倣不可・重複不可\n①この武将に30個まで「お茶アイコン」を付与できる\n②本丸防御陣形・所領防御陣形に配置時配置中の陣形内の全武将の最大指揮兵数に(この武将の「お茶アイコン」付与数×10)を加算する",
+      trTable:[
+        {level:"LV10", points:"-", effect:"全　お茶アイコン付与数(最大30個)×10 を陣形内全武将の最大指揮兵数に加算"},
+        {level:"TR5", points:"200", effect:"全　お茶アイコン付与数(最大30個)×15 を陣形内全武将の最大指揮兵数に加算"}
+      ],
+      // ixanary.com(cards/7404 と skills/文治興隆 の生HTML)で確認(2026-08-08)。
+      // 合成テーブルはスキルページの1次(=移植前)・2次(=移植後)から取得。
+      // 候補スキルの対象・確率・効果はサイト内の既存登録から転記(未登録のスキルは空のまま)。
+      synthesisTable:[
+        {slot:"A", skill:"狂奏", rank:"B", afterSkill:"狂奏", afterRank:"B"},
+        {slot:"B", skill:"茶人の教え", rank:"F", afterSkill:"茶人の教え", afterRank:"F"},
+        {slot:"C", skill:"仙境解脱", rank:"SS", afterSkill:"仙境解脱", afterRank:"SS", target:"全", rate:"48%", effectShort:"防御910%上昇+コスト-1.5"},
+        {slot:"S1", skill:"琳聖風雅", rank:""},
+        {slot:"S2", skill:"月詠ノ覇威", rank:"SS", afterSkill:"月詠ノ覇威", afterRank:"SS", target:"全", rate:"100%", effectShort:"攻防各344%上昇+部隊卓越確率+15%"}
       ]}
   ];
 
