@@ -23,8 +23,17 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7334304987274613"
+<!-- AdSense本体。data-ad-frequency-hint は H5 Games Ads(リワード広告)用の設定で、
+     承認が降りるまでは通常のディスプレイ広告の動作に影響しない。 -->
+<script async data-ad-frequency-hint="30s"
+     src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7334304987274613"
      crossorigin="anonymous"></script>
+<script>
+  // H5 Games Ad Placement API。adBreak()/adConfig() を定義するだけで、
+  // 実際に呼ぶかどうかはスクリプト内の H5_ADS_ENABLED で制御している。
+  window.adsbygoogle = window.adsbygoogle || [];
+  window.adBreak = window.adConfig = function(o){ adsbygoogle.push(o); };
+</script>
 <title>くじシミュレーター｜戦国IXA シミュレーター置き場</title>
 <meta name="description" content="戦国IXA(Sengoku IXA)のくじを引く感覚を無料で楽しめる非公式ファンメイドツール。排出確率に沿ってカードをめくり、レア度・武将名を演出付きで表示します。">
 <link rel="stylesheet" href="assets/css/site.css">
@@ -68,6 +77,26 @@
   .gacha-btn.secondary{background:#fff;color:var(--muted);border:1px solid var(--line);box-shadow:none;}
   .gacha-btn.secondary:hover{color:var(--vermillion-bright);border-color:var(--vermillion);}
   .gacha-btn:disabled{opacity:.5;cursor:default;filter:none;transform:none;}
+
+  .bulk-draw-wrap{text-align:center;margin:-10px 0 22px;}
+  .gacha-btn.bulk{font-size:13px;padding:11px 22px;}
+  .gacha-btn.bulk.unlocked{background:linear-gradient(135deg,#3a3a3a,#000);color:#f0d98a;box-shadow:0 3px 10px rgba(0,0,0,.3);}
+  .bulk-note{margin:8px auto 0;max-width:520px;font-size:11.5px;line-height:1.75;color:var(--muted);}
+
+  .bulk-summary{width:100%;text-align:center;padding:14px 12px;border-radius:10px;
+    background:var(--bg-panel-2);border:1px solid var(--line);}
+  .bulk-summary-head{font-family:'Noto Serif JP',serif;font-weight:700;font-size:14px;margin-bottom:12px;}
+  .bulk-summary-grid{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;}
+  .bulk-sum-cell{display:inline-flex;align-items:baseline;gap:6px;padding:7px 14px;border-radius:7px;
+    font-size:15px;font-weight:700;font-variant-numeric:tabular-nums;}
+  .bulk-sum-cell b{font-family:'Noto Serif JP',serif;font-size:12px;}
+  .bulk-sum-cell.tier-上{background:linear-gradient(135deg,#fff6a0,#ffd400);color:#5b4400;}
+  .bulk-sum-cell.tier-特{background:linear-gradient(135deg,#ff6b5c,#d0332a);color:#fff;}
+  .bulk-sum-cell.tier-極{background:linear-gradient(135deg,#3a3a3a,#000);color:#f0d98a;}
+  .bulk-sum-cell.tier-天{background:linear-gradient(135deg,#fff,#dcdcdc);color:#2b2f38;border:1px solid #cfcfcf;}
+  .bulk-sum-cell.tier-傑{background:linear-gradient(135deg,#fff6c9,#ffd700);color:#5b3d00;}
+  .bulk-summary-para{margin-top:11px;font-weight:700;font-size:13px;color:var(--vermillion-bright);}
+  .bulk-summary-note{margin-top:10px;font-size:11px;color:var(--muted);}
 
   .gacha-btn-image{background:none;border:none;padding:0;cursor:pointer;line-height:0;transition:transform .12s ease, filter .12s ease;}
   .gacha-btn-image img{width:88px;height:auto;display:block;filter:drop-shadow(0 3px 8px rgba(184,64,47,0.4));}
@@ -342,6 +371,11 @@
         <button id="drawTenBtn" class="gacha-btn-image" aria-label="10連を引く">
           <img src="assets/img/gacha-btn-ten.png" alt="10連を引く">
         </button>
+      </div>
+      <div class="bulk-draw-wrap">
+        <button id="drawBulkBtn" class="gacha-btn bulk">▶ 動画広告を見て「100連一括」を解放</button>
+        <p class="bulk-note">解放するとページを更新するまで何度でも、100連を演出なしで引けます。<br>
+        広告を見なくても10連を10回引けば全く同じ結果になります(確率・ランキングの扱いは一切変わりません)。</p>
       </div>
       <div id="gachaCards" class="gacha-cards"></div>
       <div id="gachaTally" class="gacha-tally">累計 0連</div>
@@ -1034,6 +1068,15 @@
     return results;
   }
 
+  // 100連一括。10連を10回まわす形で実装する。
+  // 100回 drawOneFull() を呼ぶと10枚目のブースト/救済判定が働かず別物の確率になってしまうため、
+  // 必ず drawTenFull() を経由させること(手動で10連を10回引いた場合と完全に同じ結果にするため)。
+  function drawHundredFull(){
+    let all = [];
+    for(let i=0;i<10;i++) all = all.concat(drawTenFull());
+    return all;
+  }
+
   const tally = {傑:0, 天:0, 極:0, 特:0, 上:0};
   let totalDraws = 0;
   let busy = false;
@@ -1106,6 +1149,7 @@
     busy = v;
     document.getElementById('drawOneBtn').disabled = v;
     document.getElementById('drawTenBtn').disabled = v;
+    document.getElementById('drawBulkBtn').disabled = v;
   }
 
   const FLIP_MS = 600;
@@ -1215,7 +1259,11 @@
       chip.title = detail ? (detail.name+'(No.'+detail.no+')') : tier;
       hist.prepend(chip);
     });
+    // 100連一括を繰り返すと際限なくDOMが増えて重くなるため、古いものから捨てる。
+    // 累計や個体別カウントは別途保持しているので集計結果には影響しない。
+    while(hist.childElementCount > HISTORY_MAX_CHIPS) hist.removeChild(hist.lastElementChild);
   }
+  const HISTORY_MAX_CHIPS = 300;
 
   const TEN_PARALLEL_NOS = new Set(Object.values(TEN_PARALLEL_MAP));
 
@@ -1244,6 +1292,12 @@
     tally[tier]++;
     totalDraws++;
     recordDetailStats(tier, detail, totalDraws);
+    // コンプリート達成連数は「達成したその1連」の時点で確定させる。
+    // renderPostDrawUI() 側でまとめて判定すると、10連なら最大9連・100連一括なら最大99連ぶん
+    // 多い数がランキングに載ってしまい、まとめて引いた人だけ不利になる。
+    if(parallelCompleteCount === null && tier === '天' && isParallelComplete()){
+      parallelCompleteCount = totalDraws;
+    }
   }
 
   function renderPostDrawUI(draws){
@@ -1270,9 +1324,9 @@
 
   function checkParallelCompletion(){
     if(parallelCompleteHandled) return;
-    if(isParallelComplete()){
+    // 達成連数は recordDraw() が確定済み。ここは表示するだけ。
+    if(parallelCompleteCount !== null){
       parallelCompleteHandled = true;
-      parallelCompleteCount = totalDraws;
       document.getElementById('completeCount').textContent = parallelCompleteCount;
       document.getElementById('completePanel').style.display = 'block';
     }
@@ -1310,6 +1364,82 @@
     const draws = drawTenFull();
     const dur = renderCards(draws);
     setTimeout(()=>{ renderPostDrawUI(draws); setBusy(false); }, dur);
+  });
+
+  // ============ 100連一括(リワード広告で解放) ============
+  // 【設計方針】広告で売っているのは「時短」だけ。広告を見なくても10連を10回引けば
+  // 全く同じ結果に到達でき、抽選確率もランキングの扱いも一括かどうかで一切変わらない。
+  //
+  // H5_ADS_ENABLED: AdSense の H5 Games Ads(リワード広告)の承認が降りたら true にする。
+  // false の間はボタンを押した時点で無条件に解放され、広告は一切呼び出さない。
+  // 【重要】ページ上部の通常のディスプレイ広告に報酬を紐づけるのはAdSenseのポリシー違反
+  // (インセンティブ付き広告)にあたるため、H5 Games Ads の承認前に true にしてはいけない。
+  const H5_ADS_ENABLED = false;
+
+  let bulkUnlocked = false; // ページを更新するとリセットされる(仕様どおり)
+
+  function updateBulkBtn(){
+    const btn = document.getElementById('drawBulkBtn');
+    btn.textContent = bulkUnlocked ? '100連を一気に引く(演出なし)' : '▶ 動画広告を見て「100連一括」を解放';
+    btn.classList.toggle('unlocked', bulkUnlocked);
+  }
+
+  // 100連はカード演出を出さず内訳サマリだけを表示する(演出スキップが広告の対価そのもの)。
+  // 傑・天の武将名は下の獲得ログに従来どおり出るので、見たい情報は失われない。
+  function renderBulkSummary(draws){
+    const c = {傑:0, 天:0, 極:0, 特:0, 上:0};
+    let para = 0;
+    draws.forEach(({tier, detail})=>{
+      c[tier]++;
+      if(tier==='天' && detail && TEN_PARALLEL_NOS.has(detail.no)) para++;
+    });
+    const cells = TIER_ORDER.map(t=>
+      '<span class="bulk-sum-cell tier-'+t+'"><b>'+t+'</b>'+c[t]+'</span>').join('');
+    document.getElementById('gachaCards').innerHTML =
+      '<div class="bulk-summary"><div class="bulk-summary-head">100連の結果</div>'+
+      '<div class="bulk-summary-grid">'+cells+'</div>'+
+      (para ? '<div class="bulk-summary-para">パラレル天 '+para+'枚!</div>' : '')+
+      '<div class="bulk-summary-note">武将名は下の獲得ログ・履歴で確認できます</div></div>';
+  }
+
+  function runBulkDraw(){
+    setBusy(true);
+    const draws = drawHundredFull();
+    renderBulkSummary(draws);
+    renderPostDrawUI(draws);
+    setBusy(false);
+  }
+
+  function requestBulkUnlock(){
+    if(!H5_ADS_ENABLED){ bulkUnlocked = true; updateBulkBtn(); runBulkDraw(); return; }
+    const btn = document.getElementById('drawBulkBtn');
+    btn.disabled = true;
+    let granted = false;
+    const grantOnce = ()=>{
+      if(granted) return;
+      granted = true;
+      bulkUnlocked = true;
+      updateBulkBtn();
+      runBulkDraw();
+    };
+    adBreak({
+      type: 'reward',
+      name: 'bulk-draw-100',
+      beforeReward(showAdFn){ showAdFn(); },
+      adViewed: grantOnce,
+      adDismissed(){ /* 途中で閉じた場合は解放しない */ },
+      adBreakDone(info){
+        btn.disabled = false;
+        // 在庫切れ・頻度上限など、ユーザーの操作以外の理由で広告を出せなかった場合は解放する。
+        // 広告は時短の対価であって、広告が出せなかった人を締め出すための関門ではない。
+        if(info.breakStatus !== 'viewed' && info.breakStatus !== 'dismissed') grantOnce();
+      }
+    });
+  }
+
+  document.getElementById('drawBulkBtn').addEventListener('click', ()=>{
+    if(busy) return;
+    if(bulkUnlocked) runBulkDraw(); else requestBulkUnlock();
   });
 
   document.getElementById('clearHistoryBtn').addEventListener('click', ()=>{
