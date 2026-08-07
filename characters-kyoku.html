@@ -165,7 +165,7 @@
       synthesisTable:[
         {slot:"A", skill:"月暈", rank:"A", afterSkill:"志半ノ矛楯", afterRank:"A", target:"全", rate:"42%", effectShort:"攻撃250%上昇(自軍1部隊での攻撃時3倍)"},
         {slot:"B", skill:"月暈", rank:"A", afterSkill:"志半ノ矛楯", afterRank:"A", target:"全", rate:"42%", effectShort:"攻撃250%上昇(自軍1部隊での攻撃時3倍)"},
-        {slot:"C", skill:"入来神舞", rank:"S", afterSkill:"飛蝶野分", afterRank:"B", target:"部隊長", rate:"+55%", effectShort:"部隊長の初期スキルを1.1倍に強化して模倣"},
+        {slot:"C", skill:"入来神舞", rank:"S", afterSkill:"飛蝶野分", afterRank:"B", target:"部隊長", rate:"55%", effectShort:"効果 部隊長の初期スキルを1.1倍に強化して模倣(TR別データは未確認)", afterTarget:"部隊長", afterRate:"60%", afterEffectShort:"効果 部隊長の初期スキルを模倣(戦闘スキルのみ)(TR別データは未確認)"},
         {slot:"S1", skill:"志半ノ矛楯", rank:"A", afterSkill:"志半ノ矛楯", afterRank:"A", target:"全", rate:"+65%", effectShort:"攻撃465%上昇+防御465%上昇(模倣不可)"},
         {slot:"S2", skill:"志半ノ矛楯", rank:"A", afterSkill:"志半ノ矛楯", afterRank:"A", target:"全", rate:"+65%", effectShort:"攻撃465%上昇+防御465%上昇(模倣不可)"}
       ], reviewedOk:true},
@@ -184,7 +184,7 @@
       synthesisTable:[
         {slot:"A", skill:"荒龍奸爪", rank:"A", afterSkill:"志半ノ矛楯", afterRank:"A", target:"槍・器・鉄", rate:"50%", effectShort:"攻撃430%上昇(強襲専用部隊でコスト消費-1.5・模倣不可)"},
         {slot:"B", skill:"荒龍奸爪", rank:"A", afterSkill:"志半ノ矛楯", afterRank:"A", target:"槍・器・鉄", rate:"50%", effectShort:"攻撃430%上昇(強襲専用部隊でコスト消費-1.5・模倣不可)"},
-        {slot:"C", skill:"今樊噲", rank:"A", afterSkill:"今樊噲", afterRank:"A", target:"槍・弓・器・鉄", rate:"+50%", effectShort:"攻撃350%上昇+強襲専用部隊でコスト消費-1.5(模倣不可)"},
+        {slot:"C", skill:"今樊噲", rank:"A", afterSkill:"戦陣 吟詠", afterRank:"A", target:"槍・弓・器・鉄", rate:"+50%", effectShort:"攻撃350%上昇+強襲専用部隊でコスト消費-1.5(模倣不可)", afterTarget:"全", afterRate:"100%", afterEffectShort:"攻撃 340%上昇+防御 340%上昇(部隊内卓越追加確率+20%)"},
         {slot:"S1", skill:"志半ノ矛楯", rank:"A", afterSkill:"志半ノ矛楯", afterRank:"A", target:"全", rate:"+65%", effectShort:"攻撃465%上昇+防御465%上昇(模倣不可)"},
         {slot:"S2", skill:"志半ノ矛楯", rank:"A", afterSkill:"志半ノ矛楯", afterRank:"A", target:"全", rate:"+65%", effectShort:"攻撃465%上昇+防御465%上昇(模倣不可)"}
       ], reviewedOk:true},
@@ -222,7 +222,7 @@
       synthesisTable:[
         {slot:"A", skill:"夜叉美濃", rank:"A", afterSkill:"志半ノ矛楯", afterRank:"A", target:"槍・弓・器・鉄 兵站", rate:"50%", effectShort:"防御410%上昇+破壊120%上昇"},
         {slot:"B", skill:"夜叉美濃", rank:"A", afterSkill:"志半ノ矛楯", afterRank:"A", target:"槍・弓・器・鉄 兵站", rate:"50%", effectShort:"防御410%上昇+破壊120%上昇"},
-        {slot:"C", skill:"戦陣 疾駆", rank:"A", afterSkill:"十束ノ神域", afterRank:"SS", target:"全", rate:"+100%", effectShort:"速度170%上昇+破壊170%上昇"},
+        {slot:"C", skill:"戦陣 疾駆", rank:"A", afterSkill:"十束ノ神域", afterRank:"SS", target:"全", rate:"+100%", effectShort:"速度170%上昇+破壊170%上昇", afterTarget:"全 覇道", afterRate:"100%", afterEffectShort:"攻撃 320%上昇+速度70%上昇(TR別データは未確認)"},
         {slot:"S1", skill:"志半ノ矛楯", rank:"A", afterSkill:"志半ノ矛楯", afterRank:"A", target:"全", rate:"+65%", effectShort:"攻撃465%上昇+防御465%上昇(模倣不可)"},
         {slot:"S2", skill:"志半ノ矛楯", rank:"A", afterSkill:"志半ノ矛楯", afterRank:"A", target:"全", rate:"+65%", effectShort:"攻撃465%上昇+防御465%上昇(模倣不可)"}
       ], reviewedOk:true},
@@ -243,9 +243,9 @@
       // Cのeffectは2026-08-04に確認・修正: ixagno.blog.fc2.com(blog-entry-9570「【防御】総コスト依存スキルの比較」+blog-entry-10361「稲葉一鉄の能力と考察」)で天衣無縫神戒の正確な性能(確率50%/防御30.02%上昇)を確認
       // A/Bのeffectも2026-08-04に確認・修正: 「防御15%上昇」は豊家ノ滅塞自身の値(部隊総コストで変動する式の基準値)を誤って表示していた。ixanary.com個別スキルページで籠城の妙技の正しい性能(確率100%/対象全/防御50%上昇・卓越:追加確率15%で3倍)を確認
       synthesisTable:[
-        {slot:"A", skill:"豊家ノ滅塞", rank:"B", afterSkill:"籠城の妙技", afterRank:"A", target:"全", rate:"100%", effectShort:"防御50%上昇(卓越:追加確率15%で3倍)"},
-        {slot:"B", skill:"豊家ノ滅塞", rank:"B", afterSkill:"籠城の妙技", afterRank:"A", target:"全", rate:"100%", effectShort:"防御50%上昇(卓越:追加確率15%で3倍)"},
-        {slot:"C", skill:"戦陣 無縫", rank:"A", afterSkill:"天衣無縫神戒", afterRank:"SS", target:"全", rate:"50%", effectShort:"防御30.02%上昇(部隊総コストで変動)"},
+        {slot:"A", skill:"豊家ノ滅塞", rank:"B", afterSkill:"籠城の妙技", afterRank:"A", target:"弓・砲・器", rate:"+42%", effectShort:"防御15%上昇(部隊の総コストで変動)", afterTarget:"全", afterRate:"+100%", afterEffectShort:"防御50%上昇(卓越:追加確率15%で3倍)"},
+        {slot:"B", skill:"豊家ノ滅塞", rank:"B", afterSkill:"籠城の妙技", afterRank:"A", target:"弓・砲・器", rate:"+42%", effectShort:"防御15%上昇(部隊の総コストで変動)", afterTarget:"全", afterRate:"+100%", afterEffectShort:"防御50%上昇(卓越:追加確率15%で3倍)"},
+        {slot:"C", skill:"戦陣 無縫", rank:"A", afterSkill:"天衣無縫神戒", afterRank:"SS", target:"全", rate:"42%", effectShort:"防御 80%上昇(部隊総コストで変動)", afterTarget:"全", afterRate:"50%", afterEffectShort:"防御 30.02%上昇(部隊総コストで変動)"},
         {slot:"S1", skill:"龍驤虎躍", rank:"SS", afterSkill:"龍驤虎躍", afterRank:"SS", target:"全", rate:"+60%", effectShort:"攻撃810%上昇+防御810%上昇+コスト消費-1(特殊効果は模倣不可)"},
         {slot:"S2", skill:"志半ノ矛楯", rank:"A", afterSkill:"志半ノ矛楯", afterRank:"A", target:"全", rate:"+65%", effectShort:"攻撃465%上昇+防御465%上昇(模倣不可)"}
       ], reviewedOk:true},
@@ -261,8 +261,8 @@
       ],
       // 45do.info+ixagno.blog.fc2.com(blog-entry-10241)確認済み: A/Bの飛炎剣風は移植後「天磐船」に変化(自己参照ではない)
       synthesisTable:[
-        {slot:"A", skill:"飛炎剣風", rank:"A", afterSkill:"天磐船", afterRank:"SS", target:"槍・砲・器", rate:"70%", effectShort:"防御80%上昇+破壊80%上昇+防御参加武将数依存5.6%"},
-        {slot:"B", skill:"飛炎剣風", rank:"A", afterSkill:"天磐船", afterRank:"SS", target:"槍・砲・器", rate:"70%", effectShort:"防御80%上昇+破壊80%上昇+防御参加武将数依存5.6%"},
+        {slot:"A", skill:"飛炎剣風", rank:"A", afterSkill:"天磐船", afterRank:"SS", target:"槍・砲・器", rate:"70%", effectShort:"防御80%上昇+破壊80%上昇+防御参加武将数依存5.6%", afterTarget:"全", afterRate:"56%", afterEffectShort:"防御 3.8%×防御参加武将数(280人)=1064.0%"},
+        {slot:"B", skill:"飛炎剣風", rank:"A", afterSkill:"天磐船", afterRank:"SS", target:"槍・砲・器", rate:"70%", effectShort:"防御80%上昇+破壊80%上昇+防御参加武将数依存5.6%", afterTarget:"全", afterRate:"56%", afterEffectShort:"防御 3.8%×防御参加武将数(280人)=1064.0%"},
         {slot:"C", skill:"天磐船", rank:"SS", afterSkill:"天磐船", afterRank:"SS", target:"全", rate:"+56%", effectShort:"防御(3.8×防御参加武将数)%上昇"},
         {slot:"S1", skill:"天磐船", rank:"SS", afterSkill:"天磐船", afterRank:"SS", target:"全", rate:"+56%", effectShort:"防御(3.8×防御参加武将数)%上昇"},
         {slot:"S2", skill:"志半ノ矛楯", rank:"A", afterSkill:"志半ノ矛楯", afterRank:"A", target:"全", rate:"+65%", effectShort:"攻撃465%上昇+防御465%上昇(模倣不可)"}
@@ -299,7 +299,7 @@
       ],
       // 45do.info+ixagno.blog.fc2.com(blog-entry-10265)確認済み: Aの十束ノ神域は移植後「天聖宝冠」[SSS]に変化。B/C/S1(戦線邁進)/S2(志半ノ矛楯)は自己参照で両ソース一致
       synthesisTable:[
-        {slot:"A", skill:"十束ノ神域", rank:"SS", afterSkill:"天聖宝冠", afterRank:"SSS", target:"全 覇道", rate:"+100%", effectShort:"攻撃320%上昇+速度70%上昇+覇道(スキル無効化・発動率低下から保護)"},
+        {slot:"A", skill:"十束ノ神域", rank:"SS", afterSkill:"天聖宝冠", afterRank:"SSS", target:"全 覇道", rate:"100%", effectShort:"攻撃 320%上昇+速度70%上昇(TR別データは未確認)", afterTarget:"全", afterRate:"45%", afterEffectShort:"攻撃 100%+5%×防御参加武将数(280人)=1500.0%"},
         {slot:"B", skill:"戦線邁進", rank:"A", afterSkill:"戦線邁進", afterRank:"A", target:"槍・砲・器", rate:"65%", effectShort:"攻撃420%上昇+防御参加武将数依存5.5%"},
         {slot:"C", skill:"戦線邁進", rank:"A", afterSkill:"戦線邁進", afterRank:"A", target:"槍・砲・器", rate:"65%", effectShort:"攻撃420%上昇+防御参加武将数依存5.5%"},
         {slot:"S1", skill:"戦線邁進", rank:"A", afterSkill:"戦線邁進", afterRank:"A", target:"槍・砲・器", rate:"65%", effectShort:"攻撃420%上昇+防御参加武将数依存5.5%"},
@@ -320,8 +320,8 @@
       // 45do.info+ixagno.blog.fc2.com(blog-entry-10313)確認済み: Aの凜武艶姫は移植後「戦陣無縫」に、Bの戦陣無縫は移植後「天衣無縫神戒」[SS]に変化。C/S1は自己参照(武神ノ采配)で両ソース一致
       // Aのeffectは2026-08-04に確認・修正: 戦陣無縫の正しい性能(確率42%/防御80%上昇、ixagno.blog.fc2.com blog-entry-9570)を反映
       synthesisTable:[
-        {slot:"A", skill:"凜武艶姫", rank:"A", afterSkill:"戦陣 無縫", afterRank:"A", target:"全", rate:"42%", effectShort:"防御80%上昇(部隊総コストで変動)"},
-        {slot:"B", skill:"戦陣 無縫", rank:"A", afterSkill:"天衣無縫神戒", afterRank:"SS", target:"全", rate:"50%", effectShort:"防御30.02%上昇(部隊総コストで変動)"},
+        {slot:"A", skill:"凜武艶姫", rank:"A", afterSkill:"戦陣 無縫", afterRank:"A", target:"弓・砲・器", rate:"40%", effectShort:"防御 15%上昇(部隊総コストで変動)", afterTarget:"全", afterRate:"42%", afterEffectShort:"防御 80%上昇(部隊総コストで変動)"},
+        {slot:"B", skill:"戦陣 無縫", rank:"A", afterSkill:"天衣無縫神戒", afterRank:"SS", target:"全", rate:"42%", effectShort:"防御 80%上昇(部隊総コストで変動)", afterTarget:"全", afterRate:"50%", afterEffectShort:"防御 30.02%上昇(部隊総コストで変動)"},
         {slot:"C", skill:"武神ノ采配", rank:"A", afterSkill:"武神ノ采配", afterRank:"A", target:"馬・砲・器", rate:"56%", effectShort:"防御95%上昇(拠点待機90分毎に1.5倍・上限5回)"},
         {slot:"S1", skill:"武神ノ采配", rank:"A", afterSkill:"武神ノ采配", afterRank:"A", target:"馬・砲・器", rate:"56%", effectShort:"防御95%上昇(拠点待機90分毎に1.5倍・上限5回)"},
         {slot:"S2", skill:"志半ノ矛楯", rank:"A", afterSkill:"志半ノ矛楯", afterRank:"A", target:"全", rate:"+65%", effectShort:"攻撃465%上昇+防御465%上昇(模倣不可)"}
@@ -338,7 +338,7 @@
       ],
       // 45do.info+ixagno.blog.fc2.com(blog-entry-10312)確認済み: Aの空陣鳴響は移植後「悪屋形」[S]に、Bの破克閃剣は移植後「戦陣 剣舞」に変化。C/S1は自己参照(星詠ム仁将)で両ソース一致
       synthesisTable:[
-        {slot:"A", skill:"空陣鳴響", rank:"A", afterSkill:"悪屋形", afterRank:"S", target:"槍・弓・馬・砲", rate:"+60%", effectShort:"攻撃300%上昇+自部隊同時攻撃時消費名声-20(重複不可)"},
+        {slot:"A", skill:"空陣鳴響", rank:"A", afterSkill:"悪屋形", afterRank:"S", target:"槍・弓・馬・砲", rate:"+60%", effectShort:"攻撃300%上昇+自部隊同時攻撃時消費名声-20(重複不可)", afterTarget:"全", afterRate:"19%", afterEffectShort:"攻撃 80%上昇+自部隊同時攻撃時消費名声-8(重複不可、TR別データは未確認)"},
         {slot:"B", skill:"破克閃剣", rank:"A", afterSkill:"戦陣 剣舞", afterRank:"A", target:"槍・弓・器", rate:"+48%", effectShort:"攻撃350%上昇+不屈1"},
         {slot:"C", skill:"星詠ム仁将", rank:"A", afterSkill:"星詠ム仁将", afterRank:"A", target:"弓・馬・器・焙 不屈", rate:"38%", effectShort:"攻撃410%上昇+合流自部隊数-2の不屈(特殊効果は模倣不可)"},
         {slot:"S1", skill:"星詠ム仁将", rank:"A", afterSkill:"星詠ム仁将", afterRank:"A", target:"弓・馬・器・焙 不屈", rate:"38%", effectShort:"攻撃410%上昇+合流自部隊数-2の不屈(特殊効果は模倣不可)"},
@@ -360,8 +360,8 @@
       // A/Bのeffectは2026-08-04に確認・修正: 45do.info本ページの「戦陣 無縫」欄(確率+100%/馬砲器/攻撃防御155%+卓越15%)は他武将のデータと矛盾する誤記と判明。
       // ixagno.blog.fc2.com(blog-entry-9570)の総コスト依存防御スキル比較表で「戦陣 無縫」は確率42%・対象全・攻撃効果なしの純防御スキルと確認、移植後の天衣無縫神戒(確率50%/防御30.02%上昇)を正として修正
       synthesisTable:[
-        {slot:"A", skill:"戦陣 無縫", rank:"A", afterSkill:"天衣無縫神戒", afterRank:"SS", target:"全", rate:"50%", effectShort:"防御30.02%上昇(部隊総コストで変動)"},
-        {slot:"B", skill:"戦陣 無縫", rank:"A", afterSkill:"天衣無縫神戒", afterRank:"SS", target:"全", rate:"50%", effectShort:"防御30.02%上昇(部隊総コストで変動)"},
+        {slot:"A", skill:"戦陣 無縫", rank:"A", afterSkill:"天衣無縫神戒", afterRank:"SS", target:"全", rate:"42%", effectShort:"防御 80%上昇(部隊総コストで変動)", afterTarget:"全", afterRate:"50%", afterEffectShort:"防御 30.02%上昇(部隊総コストで変動)"},
+        {slot:"B", skill:"戦陣 無縫", rank:"A", afterSkill:"天衣無縫神戒", afterRank:"SS", target:"全", rate:"42%", effectShort:"防御 80%上昇(部隊総コストで変動)", afterTarget:"全", afterRate:"50%", afterEffectShort:"防御 30.02%上昇(部隊総コストで変動)"},
         {slot:"C", skill:"天衣無縫神戒", rank:"SS", afterSkill:"天衣無縫神戒", afterRank:"SS", target:"全", rate:"+50%", effectShort:"防御30.02%上昇(部隊の総コストで変動)"},
         {slot:"S1", skill:"国津破邪ノ楯", rank:"SS", afterSkill:"国津破邪ノ楯", afterRank:"SS", target:"全", rate:"+60%", effectShort:"防御60.04%上昇(部隊の総コストで変動)"},
         {slot:"S2", skill:"志半ノ矛楯", rank:"A", afterSkill:"志半ノ矛楯", afterRank:"A", target:"全", rate:"+65%", effectShort:"攻撃465%上昇+防御465%上昇(模倣不可)"}
@@ -378,7 +378,7 @@
       ],
       // 45do.info+ixagno.blog.fc2.com(blog-entry-10360)確認済み: Aの鬼十河は移植後「朝曇ノ明麗」[S]に変化。B/C/S1は自己参照(大剛一念)で両ソース一致
       synthesisTable:[
-        {slot:"A", skill:"鬼十河", rank:"A", afterSkill:"朝曇ノ明麗", afterRank:"S", target:"槍・砲・器", rate:"+50%", effectShort:"防御360%上昇+所領防御陣形配置時コスト消費-1(模倣不可)"},
+        {slot:"A", skill:"鬼十河", rank:"A", afterSkill:"朝曇ノ明麗", afterRank:"S", target:"槍・砲・器", rate:"+50%", effectShort:"防御360%上昇+所領防御陣形配置時コスト消費-1(模倣不可)", afterTarget:"全", afterRate:"46%", afterEffectShort:"防御 290%上昇(所領防御陣形第4列配置時1.5倍+飛翔7取得・模倣不可、TR別データは未確認)"},
         {slot:"B", skill:"大剛一念", rank:"A", afterSkill:"大剛一念", afterRank:"A", target:"槍・砲・器", rate:"46%", effectShort:"防御280%上昇(最大指揮兵数と同数指揮時1.5倍)"},
         {slot:"C", skill:"大剛一念", rank:"A", afterSkill:"大剛一念", afterRank:"A", target:"槍・砲・器", rate:"46%", effectShort:"防御280%上昇(最大指揮兵数と同数指揮時1.5倍)"},
         {slot:"S1", skill:"大剛一念", rank:"A", afterSkill:"大剛一念", afterRank:"A", target:"槍・砲・器", rate:"46%", effectShort:"防御280%上昇(最大指揮兵数と同数指揮時1.5倍)"},
@@ -399,8 +399,8 @@
         {slot:"A", skill:"青葉ノ仁王", rank:"A", afterSkill:"乱世ノ歸人", afterRank:"A", target:"槍・弓・砲 卓越", rate:"100%", effectShort:"攻撃110%上昇(卓越:追加確率20%で兵士被害10%減少)"},
         {slot:"B", skill:"青葉ノ仁王", rank:"A", afterSkill:"乱世ノ歸人", afterRank:"A", target:"槍・弓・砲 卓越", rate:"100%", effectShort:"攻撃110%上昇(卓越:追加確率20%で兵士被害10%減少)"},
         {slot:"C", skill:"宿木", rank:"B", afterSkill:"宿木", afterRank:"B", target:"部隊長", rate:"+55%", effectShort:"部隊長の初期スキルを模倣(戦闘スキルのみ)"},
-        {slot:"S1", skill:"乱世ノ歸人", rank:"A", afterSkill:"入来神舞", afterRank:"S", target:"部隊長", rate:"+50%", effectShort:"部隊長の模倣可能な初期スキルを模倣(卓越:追加確率30%で1.2倍)"},
-        {slot:"S2", skill:"飛蝶野分", rank:"B", afterSkill:"風狂幻術", afterRank:"B", target:"部隊長", rate:"+60%", effectShort:"部隊長の初期スキルを模倣(戦闘スキルのみ)"}
+        {slot:"S1", skill:"乱世ノ歸人", rank:"A", afterSkill:"入来神舞", afterRank:"S", target:"部隊長", rate:"+50%", effectShort:"部隊長の模倣可能な初期スキルを模倣(卓越:追加確率30%で1.2倍)", afterTarget:"部隊長", afterRate:"55%", afterEffectShort:"効果 部隊長の初期スキルを1.1倍に強化して模倣(TR別データは未確認)"},
+        {slot:"S2", skill:"飛蝶野分", rank:"B", afterSkill:"風狂幻術", afterRank:"B", target:"部隊長", rate:"60%", effectShort:"効果 部隊長の初期スキルを模倣(戦闘スキルのみ)(TR別データは未確認)", afterTarget:"部隊長", afterRate:"53%", afterEffectShort:"効果 部隊長の初期スキルを模倣(戦闘スキルのみ、TR別データは未確認)"}
       ], reviewedOk:true},
     {name:"今川氏真", no:"2358", ch:"未確認", cost:4.5, troop:"-", sub:"", effect:"所属部隊の部隊長の初期スキルを模倣(戦闘スキルのみ)",
       furigana:"いまがわうじざね", illustrator:"JUNNY",
@@ -414,11 +414,11 @@
       ],
       // 45do.info+ixagno.blog.fc2.com(blog-entry-9417)確認済み: A/Bの転歌は移植後「入来神舞」[S]に、S1/S2の入来神舞は移植後「飛蝶野分」に変化(自己参照ではない)
       synthesisTable:[
-        {slot:"A", skill:"転歌", rank:"A", afterSkill:"入来神舞", afterRank:"S", target:"部隊長", rate:"80%", effectShort:"部隊長の初期スキルを模倣(戦闘スキルのみ)"},
-        {slot:"B", skill:"転歌", rank:"A", afterSkill:"入来神舞", afterRank:"S", target:"部隊長", rate:"80%", effectShort:"部隊長の初期スキルを模倣(戦闘スキルのみ)"},
+        {slot:"A", skill:"転歌", rank:"A", afterSkill:"入来神舞", afterRank:"S", target:"部隊長", rate:"80%", effectShort:"効果 部隊長の初期スキルを模倣(戦闘スキルのみ、TR別データは未確認)", afterTarget:"部隊長", afterRate:"55%", afterEffectShort:"効果 部隊長の初期スキルを1.1倍に強化して模倣(TR別データは未確認)"},
+        {slot:"B", skill:"転歌", rank:"A", afterSkill:"入来神舞", afterRank:"S", target:"部隊長", rate:"80%", effectShort:"効果 部隊長の初期スキルを模倣(戦闘スキルのみ、TR別データは未確認)", afterTarget:"部隊長", afterRate:"55%", afterEffectShort:"効果 部隊長の初期スキルを1.1倍に強化して模倣(TR別データは未確認)"},
         {slot:"C", skill:"風狂幻術", rank:"B", afterSkill:"風狂幻術", afterRank:"B", target:"部隊長", rate:"+53%", effectShort:"部隊長の初期スキルを模倣(戦闘スキルのみ)"},
-        {slot:"S1", skill:"入来神舞", rank:"S", afterSkill:"飛蝶野分", afterRank:"B", target:"部隊長", rate:"+55%", effectShort:"部隊長の初期スキルを1.1倍に強化して模倣"},
-        {slot:"S2", skill:"入来神舞", rank:"S", afterSkill:"飛蝶野分", afterRank:"B", target:"部隊長", rate:"+55%", effectShort:"部隊長の初期スキルを1.1倍に強化して模倣"}
+        {slot:"S1", skill:"入来神舞", rank:"S", afterSkill:"飛蝶野分", afterRank:"B", target:"部隊長", rate:"55%", effectShort:"効果 部隊長の初期スキルを1.1倍に強化して模倣(TR別データは未確認)", afterTarget:"部隊長", afterRate:"60%", afterEffectShort:"効果 部隊長の初期スキルを模倣(戦闘スキルのみ)(TR別データは未確認)"},
+        {slot:"S2", skill:"入来神舞", rank:"S", afterSkill:"飛蝶野分", afterRank:"B", target:"部隊長", rate:"55%", effectShort:"効果 部隊長の初期スキルを1.1倍に強化して模倣(TR別データは未確認)", afterTarget:"部隊長", afterRate:"60%", afterEffectShort:"効果 部隊長の初期スキルを模倣(戦闘スキルのみ)(TR別データは未確認)"}
       ], reviewedOk:true},
     {name:"津軽為信", no:"2359", ch:"未確認", cost:4.5, troop:"-", sub:"", effect:"自領以外加勢時のみ追加スキルの防御効果2倍(模倣不可)",
       furigana:"つがるためのぶ", illustrator:"末冨正直",
@@ -434,11 +434,11 @@
       // S1の戦陣凪は移植後「海神ノ浮船」[SS](ixanary.comでランクSS確認)に、S2の戦陣無縫は移植後「天衣無縫神戒」[SS]に変化(自己参照ではない)
       // A/Bのeffectは2026-08-04に確認・修正: 籠城の妙技の正しい性能(確率100%/対象全/防御50%上昇・卓越:追加確率15%で3倍、ixanary.com個別スキルページ確認)を反映
       synthesisTable:[
-        {slot:"A", skill:"豊家ノ滅塞", rank:"B", afterSkill:"籠城の妙技", afterRank:"A", target:"全", rate:"100%", effectShort:"防御50%上昇(卓越:追加確率15%で3倍)"},
-        {slot:"B", skill:"豊家ノ滅塞", rank:"B", afterSkill:"籠城の妙技", afterRank:"A", target:"全", rate:"100%", effectShort:"防御50%上昇(卓越:追加確率15%で3倍)"},
-        {slot:"C", skill:"龍神ノ加護", rank:"A", afterSkill:"朧雲ノ蓮撃", afterRank:"S", target:"馬・砲・器", rate:"+46%", effectShort:"防御135%上昇+本丸防御陣形配置時コスト消費-0.5(模倣不可)"},
-        {slot:"S1", skill:"戦陣 凪", rank:"A", afterSkill:"海神ノ浮船", afterRank:"SS", target:"全 飛翔2", rate:"+60%", effectShort:"防御110%上昇+自軍防御参加武将数30以上で防御効果2倍"},
-        {slot:"S2", skill:"戦陣 無縫", rank:"A", afterSkill:"天衣無縫神戒", afterRank:"SS", target:"全", rate:"50%", effectShort:"防御30.02%上昇(部隊総コストで変動)"}
+        {slot:"A", skill:"豊家ノ滅塞", rank:"B", afterSkill:"籠城の妙技", afterRank:"A", target:"弓・砲・器", rate:"+42%", effectShort:"防御15%上昇(部隊の総コストで変動)", afterTarget:"全", afterRate:"+100%", afterEffectShort:"防御50%上昇(卓越:追加確率15%で3倍)"},
+        {slot:"B", skill:"豊家ノ滅塞", rank:"B", afterSkill:"籠城の妙技", afterRank:"A", target:"弓・砲・器", rate:"+42%", effectShort:"防御15%上昇(部隊の総コストで変動)", afterTarget:"全", afterRate:"+100%", afterEffectShort:"防御50%上昇(卓越:追加確率15%で3倍)"},
+        {slot:"C", skill:"龍神ノ加護", rank:"A", afterSkill:"朧雲ノ蓮撃", afterRank:"S", target:"馬・砲・器", rate:"+46%", effectShort:"防御135%上昇+本丸防御陣形配置時コスト消費-0.5(模倣不可)", afterTarget:"弓・砲・器", afterRate:"35%", afterEffectShort:"攻撃 12%上昇+防御12%上昇(所属部隊内レアリティS以上スキル数×12%、TR別データは未確認)"},
+        {slot:"S1", skill:"戦陣 凪", rank:"A", afterSkill:"海神ノ浮船", afterRank:"SS", target:"全 飛翔2", rate:"+60%", effectShort:"防御110%上昇+自軍防御参加武将数30以上で防御効果2倍", afterTarget:"全 飛翔4", afterRate:"48%", afterEffectShort:"防御 3.5%×防御参加武将数(280人)=980.0%"},
+        {slot:"S2", skill:"戦陣 無縫", rank:"A", afterSkill:"天衣無縫神戒", afterRank:"SS", target:"全", rate:"42%", effectShort:"防御 80%上昇(部隊総コストで変動)", afterTarget:"全", afterRate:"50%", afterEffectShort:"防御 30.02%上昇(部隊総コストで変動)"}
       ], reviewedOk:true},
     {name:"井伊直孝", no:"2366", ch:"未確認", cost:4, troop:"-", sub:"", effect:"追加スキルの速度効果2倍(模倣不可)",
       furigana:"いいなおたか", illustrator:"JaneMere",
@@ -452,11 +452,11 @@
       ],
       // 45do.info+ixagno.blog.fc2.com(blog-entry-9637)確認済み: 自己スキル(炎牛武陣)は候補に含まれず。Aの湖裂騎刃は移植後「不滅ノ鬼神」[S]に、B/Cの騎聖は移植後「神光征軍」[SS]に、S1/S2の不滅ノ鬼神は移植後「朧雲ノ閃撃」[SSS]に変化
       synthesisTable:[
-        {slot:"A", skill:"湖裂騎刃", rank:"A", afterSkill:"不滅ノ鬼神", afterRank:"S", target:"弓・馬・器・騎", rate:"+100%", effectShort:"攻撃150%上昇+速度40%上昇+帰還時間短縮(3分・模倣不可)"},
-        {slot:"B", skill:"騎聖", rank:"A", afterSkill:"神光征軍", afterRank:"SS", target:"全", rate:"+100%", effectShort:"攻撃80%上昇+速度50%上昇(武将コストで変動)"},
-        {slot:"C", skill:"騎聖", rank:"A", afterSkill:"神光征軍", afterRank:"SS", target:"全", rate:"+100%", effectShort:"攻撃80%上昇+速度50%上昇(武将コストで変動)"},
-        {slot:"S1", skill:"不滅ノ鬼神", rank:"S", afterSkill:"朧雲ノ閃撃", afterRank:"SSS", target:"全", rate:"70%/100%", effectShort:"攻撃100%上昇(確率70%)+速度70%上昇(確率100%)"},
-        {slot:"S2", skill:"不滅ノ鬼神", rank:"S", afterSkill:"朧雲ノ閃撃", afterRank:"SSS", target:"全", rate:"70%/100%", effectShort:"攻撃100%上昇(確率70%)+速度70%上昇(確率100%)"}
+        {slot:"A", skill:"湖裂騎刃", rank:"A", afterSkill:"不滅ノ鬼神", afterRank:"S", target:"弓・馬・器・騎", rate:"+100%", effectShort:"攻撃150%上昇+速度40%上昇+帰還時間短縮(3分・模倣不可)", afterTarget:"全", afterRate:"100%", afterEffectShort:"100% / 攻撃 100%上昇(確率70%)+速度 70%上昇(確率100%)(TR別データは未確認)"},
+        {slot:"B", skill:"騎聖", rank:"A", afterSkill:"神光征軍", afterRank:"SS", target:"全", rate:"+100%", effectShort:"攻撃80%上昇+速度50%上昇(武将コストで変動)", afterTarget:"全", afterRate:"100%", afterEffectShort:"攻撃 90%上昇+速度200%上昇(TRなし)"},
+        {slot:"C", skill:"騎聖", rank:"A", afterSkill:"神光征軍", afterRank:"SS", target:"全", rate:"+100%", effectShort:"攻撃80%上昇+速度50%上昇(武将コストで変動)", afterTarget:"全", afterRate:"100%", afterEffectShort:"攻撃 90%上昇+速度200%上昇(TRなし)"},
+        {slot:"S1", skill:"不滅ノ鬼神", rank:"S", afterSkill:"朧雲ノ閃撃", afterRank:"SSS", target:"全", rate:"100%", effectShort:"100% / 攻撃 100%上昇(確率70%)+速度 70%上昇(確率100%)(TR別データは未確認)", afterTarget:"全", afterRate:"100%", afterEffectShort:"攻撃170%上昇+速度240%上昇"},
+        {slot:"S2", skill:"不滅ノ鬼神", rank:"S", afterSkill:"朧雲ノ閃撃", afterRank:"SSS", target:"全", rate:"100%", effectShort:"100% / 攻撃 100%上昇(確率70%)+速度 70%上昇(確率100%)(TR別データは未確認)", afterTarget:"全", afterRate:"100%", afterEffectShort:"攻撃170%上昇+速度240%上昇"}
       ], reviewedOk:true},
     {name:"三好義賢", no:"2368", ch:"未確認", cost:4, troop:"-", sub:"", effect:"追加スキルの攻撃効果2倍(模倣不可)",
       furigana:"みよしよしかた", illustrator:"BISAI",
@@ -471,10 +471,10 @@
       // 45do.info+ixagno.blog.fc2.com(blog-entry-9695)確認済み: 自己スキル(悌王ノ指揮)は候補に含まれず。Aの鬼神ノ戦域は移植後「戦陣 神楽」に、Bの遁世影武者は移植後「風林火山」[S]に、
       // Cの戦陣神楽は移植後、卓越スキル「遠呂智ノ閃光」[SS]に、S1の入来神舞は移植後「飛蝶野分」に変化(S2の戦陣吟詠は自己参照)
       synthesisTable:[
-        {slot:"A", skill:"鬼神ノ戦域", rank:"A", afterSkill:"戦陣 神楽", afterRank:"A", target:"槍・馬・騎 飛翔4 卓越", rate:"+55%", effectShort:"攻撃84%上昇(卓越:追加確率40%で1.5倍)"},
-        {slot:"B", skill:"遁世影武者", rank:"B", afterSkill:"風林火山", afterRank:"S", target:"部隊長", rate:"+50%", effectShort:"部隊長の初期スキルを模倣(戦闘スキルのみ)"},
-        {slot:"C", skill:"戦陣 神楽", rank:"A", afterSkill:"遠呂智ノ閃光", afterRank:"SS", target:"全 飛翔4 卓越", rate:"+100%", effectShort:"攻撃77%上昇(卓越:追加確率30%で2倍)"},
-        {slot:"S1", skill:"入来神舞", rank:"S", afterSkill:"飛蝶野分", afterRank:"B", target:"部隊長", rate:"+55%", effectShort:"部隊長の初期スキルを1.1倍に強化して模倣"},
+        {slot:"A", skill:"鬼神ノ戦域", rank:"A", afterSkill:"戦陣 神楽", afterRank:"A", target:"槍・馬・騎 飛翔4 卓越", rate:"+55%", effectShort:"攻撃84%上昇(卓越:追加確率40%で1.5倍)", afterTarget:"全 飛翔4", afterRate:"100%", afterEffectShort:"攻撃 77%上昇(卓越:追加確率30%で2倍)"},
+        {slot:"B", skill:"遁世影武者", rank:"B", afterSkill:"風林火山", afterRank:"S", target:"部隊長", rate:"+50%", effectShort:"部隊長の初期スキルを模倣(戦闘スキルのみ)", afterTarget:"槍・弓・馬", afterRate:"25%", afterEffectShort:"攻撃 15%上昇+破壊5%上昇(TR別データは未確認)"},
+        {slot:"C", skill:"戦陣 神楽", rank:"A", afterSkill:"遠呂智ノ閃光", afterRank:"SS", target:"全 飛翔4", rate:"100%", effectShort:"攻撃 77%上昇(卓越:追加確率30%で2倍)", afterTarget:"全", afterRate:"100%", afterEffectShort:"攻撃 125%上昇(卓越追加確率15%・4倍、TR別データは未確認)"},
+        {slot:"S1", skill:"入来神舞", rank:"S", afterSkill:"飛蝶野分", afterRank:"B", target:"部隊長", rate:"55%", effectShort:"効果 部隊長の初期スキルを1.1倍に強化して模倣(TR別データは未確認)", afterTarget:"部隊長", afterRate:"60%", afterEffectShort:"効果 部隊長の初期スキルを模倣(戦闘スキルのみ)(TR別データは未確認)"},
         {slot:"S2", skill:"戦陣 吟詠", rank:"A", afterSkill:"戦陣 吟詠", afterRank:"A", target:"全 卓越", rate:"+100%", effectShort:"攻撃340%上昇+防御340%上昇+部隊内卓越追加確率+20%(模倣不可・特殊効果は自部隊内では重複不可)"}
       ], reviewedOk:true},
     {name:"北条綱成", no:"2374", ch:"未確認", cost:4.5, troop:"槍馬器騎攻防", sub:"", effect:"攻防上昇+部隊内スキルの卓越確率+50%(模倣不可)",
@@ -495,8 +495,8 @@
       // 45do.info+ixagno.blog.fc2.com(blog-entry-9881)確認済み: Cの霊妙秘剣は移植後「戦陣 剣舞」に変化(自己参照ではない)
       // 2026-08-05訂正: A/Bの勝旗勇躍は「戦陣吟詠に変化」としていたが誤り。佐久間信盛(No.2397)登録時にixanary.comの合成テーブル(1次/2次/3次)で確認した通り、1次の時点では自己参照が正しい
       synthesisTable:[
-        {slot:"A", skill:"勝旗勇躍", rank:"A", afterSkill:"勝旗勇躍", afterRank:"A", target:"槍・馬・器・騎 卓越", rate:"100%", effectShort:"攻撃440%上昇+防御440%上昇(卓越確率+50%・模倣不可)"},
-        {slot:"B", skill:"勝旗勇躍", rank:"A", afterSkill:"勝旗勇躍", afterRank:"A", target:"槍・馬・器・騎 卓越", rate:"100%", effectShort:"攻撃440%上昇+防御440%上昇(卓越確率+50%・模倣不可)"},
+        {slot:"A", skill:"勝旗勇躍", rank:"A", afterSkill:"戦陣 吟詠", afterRank:"A", target:"槍・馬・器・騎 卓越", rate:"100%", effectShort:"攻撃440%上昇+防御440%上昇(卓越確率+50%・模倣不可)", afterTarget:"全", afterRate:"100%", afterEffectShort:"攻撃 340%上昇+防御 340%上昇(部隊内卓越追加確率+20%)"},
+        {slot:"B", skill:"勝旗勇躍", rank:"A", afterSkill:"戦陣 吟詠", afterRank:"A", target:"槍・馬・器・騎 卓越", rate:"100%", effectShort:"攻撃440%上昇+防御440%上昇(卓越確率+50%・模倣不可)", afterTarget:"全", afterRate:"100%", afterEffectShort:"攻撃 340%上昇+防御 340%上昇(部隊内卓越追加確率+20%)"},
         {slot:"C", skill:"霊妙秘剣", rank:"A", afterSkill:"戦陣 剣舞", afterRank:"A", target:"槍・馬・砲 飛翔6 卓越", rate:"+100%", effectShort:"攻撃180%上昇+防御180%上昇(卓越:追加確率-30%で3倍・0%超のみ抽選・模倣不可)"},
         {slot:"S1", skill:"戦陣 吟詠", rank:"A", afterSkill:"戦陣 吟詠", afterRank:"A", target:"全 卓越", rate:"+100%", effectShort:"攻撃340%上昇+防御340%上昇+部隊内卓越追加確率+20%(模倣不可・特殊効果は自部隊内では重複不可)"},
         {slot:"S2", skill:"戦陣 吟詠", rank:"A", afterSkill:"戦陣 吟詠", afterRank:"A", target:"全 卓越", rate:"+100%", effectShort:"攻撃340%上昇+防御340%上昇+部隊内卓越追加確率+20%(模倣不可・特殊効果は自部隊内では重複不可)"}
@@ -517,8 +517,8 @@
         {slot:"A", skill:"覇立槍", rank:"A", afterSkill:"戦陣 疾駆", afterRank:"A", target:"槍・砲・器", rate:"60%", effectShort:"攻撃460%上昇+破壊100%上昇"},
         {slot:"B", skill:"覇立槍", rank:"A", afterSkill:"戦陣 疾駆", afterRank:"A", target:"槍・砲・器", rate:"60%", effectShort:"攻撃460%上昇+破壊100%上昇"},
         {slot:"C", skill:"覇立槍", rank:"A", afterSkill:"戦陣 疾駆", afterRank:"A", target:"槍・砲・器", rate:"60%", effectShort:"攻撃460%上昇+破壊100%上昇"},
-        {slot:"S1", skill:"戦陣 疾駆", rank:"A", afterSkill:"十束ノ神域", afterRank:"SS", target:"全", rate:"+100%", effectShort:"速度170%上昇+破壊170%上昇"},
-        {slot:"S2", skill:"日輪ノ守護者", rank:"A", afterSkill:"日輪ノ守護者", afterRank:"A", target:"弓・砲・器", rate:"+65%", effectShort:"攻撃340%上昇+防御340%上昇+破壊110%上昇"}
+        {slot:"S1", skill:"戦陣 疾駆", rank:"A", afterSkill:"十束ノ神域", afterRank:"SS", target:"全", rate:"+100%", effectShort:"速度170%上昇+破壊170%上昇", afterTarget:"全 覇道", afterRate:"100%", afterEffectShort:"攻撃 320%上昇+速度70%上昇(TR別データは未確認)"},
+        {slot:"S2", skill:"日輪ノ守護者", rank:"A", afterSkill:"戦陣 吟詠", afterRank:"A", target:"弓・砲・器", rate:"+65%", effectShort:"攻撃340%上昇+防御340%上昇+破壊110%上昇", afterTarget:"全", afterRate:"100%", afterEffectShort:"攻撃 340%上昇+防御 340%上昇(部隊内卓越追加確率+20%)"}
       ], reviewedOk:true},
     {name:"斎藤利三", no:"2376", ch:"未確認", cost:4.5, troop:"槍馬器騎攻", sub:"", effect:"部隊内レアリティA以上のスキル数に応じ攻撃上昇",
       furigana:"さいとうとしみつ", illustrator:"西野幸治",
@@ -536,7 +536,7 @@
       synthesisTable:[
         {slot:"A", skill:"雨下義炎", rank:"A", afterSkill:"志半ノ矛楯", afterRank:"A", target:"槍・馬・器・騎", rate:"43%", effectShort:"攻撃 所属部隊内のレアリティA以上のスキル個数×30%"},
         {slot:"B", skill:"雨下義炎", rank:"A", afterSkill:"志半ノ矛楯", afterRank:"A", target:"槍・馬・器・騎", rate:"43%", effectShort:"攻撃 所属部隊内のレアリティA以上のスキル個数×30%"},
-        {slot:"C", skill:"転歌", rank:"A", afterSkill:"入来神舞", afterRank:"S", target:"部隊長", rate:"+80%", effectShort:"部隊長の初期スキルを模倣(戦闘スキルのみ)"},
+        {slot:"C", skill:"転歌", rank:"A", afterSkill:"入来神舞", afterRank:"S", target:"部隊長", rate:"80%", effectShort:"効果 部隊長の初期スキルを模倣(戦闘スキルのみ、TR別データは未確認)", afterTarget:"部隊長", afterRate:"55%", afterEffectShort:"効果 部隊長の初期スキルを1.1倍に強化して模倣(TR別データは未確認)"},
         {slot:"S1", skill:"志半ノ矛楯", rank:"A", afterSkill:"志半ノ矛楯", afterRank:"A", target:"全", rate:"+65%", effectShort:"攻撃465%上昇+防御465%上昇(模倣不可)"},
         {slot:"S2", skill:"志半ノ矛楯", rank:"A", afterSkill:"志半ノ矛楯", afterRank:"A", target:"全", rate:"+65%", effectShort:"攻撃465%上昇+防御465%上昇(模倣不可)"}
       ], reviewedOk:true},
@@ -554,7 +554,7 @@
       synthesisTable:[
         {slot:"A", skill:"虎国ノ至賢", rank:"A", afterSkill:"志半ノ矛楯", afterRank:"A", target:"馬・砲・器", rate:"100%", effectShort:"攻撃450%上昇+速度100%上昇(模倣不可)"},
         {slot:"B", skill:"虎国ノ至賢", rank:"A", afterSkill:"志半ノ矛楯", afterRank:"A", target:"馬・砲・器", rate:"100%", effectShort:"攻撃450%上昇+速度100%上昇(模倣不可)"},
-        {slot:"C", skill:"瞬刻無影", rank:"S", afterSkill:"朧雲ノ閃撃", afterRank:"SSS", target:"部隊長", rate:"+45%/+100%", effectShort:"部隊長の初期スキルを1.1倍に強化して模倣+速度100%上昇"},
+        {slot:"C", skill:"瞬刻無影", rank:"S", afterSkill:"朧雲ノ閃撃", afterRank:"SSS", target:"部隊長", rate:"100%", effectShort:"100% / 効果 部隊長の初期スキルを1.1倍に強化して模倣(確率45%)+速度 100%上昇(確率100%)(TRなし)", afterTarget:"全", afterRate:"100%", afterEffectShort:"攻撃170%上昇+速度240%上昇"},
         {slot:"S1", skill:"志半ノ矛楯", rank:"A", afterSkill:"志半ノ矛楯", afterRank:"A", target:"全", rate:"+65%", effectShort:"攻撃465%上昇+防御465%上昇(模倣不可)"},
         {slot:"S2", skill:"志半ノ矛楯", rank:"A", afterSkill:"志半ノ矛楯", afterRank:"A", target:"全", rate:"+65%", effectShort:"攻撃465%上昇+防御465%上昇(模倣不可)"}
       ], reviewedOk:true},
@@ -574,7 +574,7 @@
       synthesisTable:[
         {slot:"A", skill:"龍門ノ賢者", rank:"A", afterSkill:"志半ノ矛楯", afterRank:"A", target:"弓・器・焙 卓越", rate:"100%", effectShort:"攻撃190%上昇(卓越:追加確率10%で3倍)"},
         {slot:"B", skill:"龍門ノ賢者", rank:"A", afterSkill:"志半ノ矛楯", afterRank:"A", target:"弓・器・焙 卓越", rate:"100%", effectShort:"攻撃190%上昇(卓越:追加確率10%で3倍)"},
-        {slot:"C", skill:"国一丸", rank:"S", afterSkill:"仙剣破斬", afterRank:"SSS", target:"槍・馬・器・騎 飛翔6 卓越", rate:"+100%", effectShort:"攻撃210%上昇(卓越:追加確率1%で3倍+飛翔16取得)"},
+        {slot:"C", skill:"国一丸", rank:"S", afterSkill:"仙剣破斬", afterRank:"SSS", target:"槍・馬・器・騎 飛翔6 卓越", rate:"100%", effectShort:"攻撃 210%上昇(卓越:追加確率1%で3倍+飛翔16)(TR別データは未確認)", afterTarget:"全", afterRate:"100%", afterEffectShort:"攻撃115%上昇+防御115%上昇(卓越追加確率35%・4倍)"},
         {slot:"S1", skill:"志半ノ矛楯", rank:"A", afterSkill:"志半ノ矛楯", afterRank:"A", target:"全", rate:"+65%", effectShort:"攻撃465%上昇+防御465%上昇(模倣不可)"},
         {slot:"S2", skill:"志半ノ矛楯", rank:"A", afterSkill:"志半ノ矛楯", afterRank:"A", target:"全", rate:"+65%", effectShort:"攻撃465%上昇+防御465%上昇(模倣不可)"}
       ], reviewedOk:true},
@@ -590,9 +590,9 @@
       ],
       // 45do.info+ixagno.blog.fc2.com(blog-entry-9960)確認済み: 自己スキル(甲山ノ猛虎)は候補に含まれず。Aの戦陣疾駆は移植後、保護スキル「十束ノ神域」[SS]に、B/Cの騎聖は移植後「神光征軍」[SS]に変化
       synthesisTable:[
-        {slot:"A", skill:"戦陣 疾駆", rank:"A", afterSkill:"十束ノ神域", afterRank:"SS", target:"全", rate:"+100%", effectShort:"速度170%上昇+破壊170%上昇"},
-        {slot:"B", skill:"騎聖", rank:"A", afterSkill:"神光征軍", afterRank:"SS", target:"全", rate:"+100%", effectShort:"攻撃80%上昇+速度50%上昇(武将コストで変動)"},
-        {slot:"C", skill:"騎聖", rank:"A", afterSkill:"神光征軍", afterRank:"SS", target:"全", rate:"+100%", effectShort:"攻撃80%上昇+速度50%上昇(武将コストで変動)"},
+        {slot:"A", skill:"戦陣 疾駆", rank:"A", afterSkill:"十束ノ神域", afterRank:"SS", target:"全", rate:"+100%", effectShort:"速度170%上昇+破壊170%上昇", afterTarget:"全 覇道", afterRate:"100%", afterEffectShort:"攻撃 320%上昇+速度70%上昇(TR別データは未確認)"},
+        {slot:"B", skill:"騎聖", rank:"A", afterSkill:"神光征軍", afterRank:"SS", target:"全", rate:"+100%", effectShort:"攻撃80%上昇+速度50%上昇(武将コストで変動)", afterTarget:"全", afterRate:"100%", afterEffectShort:"攻撃 90%上昇+速度200%上昇(TRなし)"},
+        {slot:"C", skill:"騎聖", rank:"A", afterSkill:"神光征軍", afterRank:"SS", target:"全", rate:"+100%", effectShort:"攻撃80%上昇+速度50%上昇(武将コストで変動)", afterTarget:"全", afterRate:"100%", afterEffectShort:"攻撃 90%上昇+速度200%上昇(TRなし)"},
         {slot:"S1", skill:"志半ノ矛楯", rank:"A", afterSkill:"志半ノ矛楯", afterRank:"A", target:"全", rate:"+65%", effectShort:"攻撃465%上昇+防御465%上昇(模倣不可)"},
         {slot:"S2", skill:"志半ノ矛楯", rank:"A", afterSkill:"志半ノ矛楯", afterRank:"A", target:"全", rate:"+65%", effectShort:"攻撃465%上昇+防御465%上昇(模倣不可)"}
       ], reviewedOk:true},
@@ -611,9 +611,9 @@
       ],
       // 45do.info+ixagno.blog.fc2.com(blog-entry-10008)確認済み: Aのオプクワは移植後「戦陣 神楽」に、B/Cの闘火将帥は移植後「氷塊三連撃」[SSS]に変化(自己参照ではない)
       synthesisTable:[
-        {slot:"A", skill:"オプクワ", rank:"A", afterSkill:"戦陣 神楽", afterRank:"A", target:"槍・弓・砲", rate:"+55%", effectShort:"攻撃140%上昇+対人攻撃勝利時名声+20(模倣不可・特殊効果は部隊内重複不可)"},
-        {slot:"B", skill:"闘火将帥", rank:"A", afterSkill:"氷塊三連撃", afterRank:"SSS", target:"槍・馬・砲", rate:"50%", effectShort:"攻撃430%上昇+対人攻撃勝利時名声+20(模倣不可・特殊効果は部隊内重複不可)"},
-        {slot:"C", skill:"闘火将帥", rank:"A", afterSkill:"氷塊三連撃", afterRank:"SSS", target:"槍・馬・砲", rate:"50%", effectShort:"攻撃430%上昇+対人攻撃勝利時名声+20(模倣不可・特殊効果は部隊内重複不可)"},
+        {slot:"A", skill:"オプクワ", rank:"A", afterSkill:"戦陣 神楽", afterRank:"A", target:"槍・弓・砲", rate:"+55%", effectShort:"攻撃140%上昇+対人攻撃勝利時名声+20(模倣不可・特殊効果は部隊内重複不可)", afterTarget:"全 飛翔4", afterRate:"100%", afterEffectShort:"攻撃 77%上昇(卓越:追加確率30%で2倍)"},
+        {slot:"B", skill:"闘火将帥", rank:"A", afterSkill:"氷塊三連撃", afterRank:"SSS", target:"槍・馬・砲", rate:"50%", effectShort:"攻撃430%上昇+対人攻撃勝利時名声+20(模倣不可・特殊効果は部隊内重複不可)", afterTarget:"全", afterRate:"45%", afterEffectShort:"攻撃 170%上昇(自部隊同時攻撃時コスト最大2除外)"},
+        {slot:"C", skill:"闘火将帥", rank:"A", afterSkill:"氷塊三連撃", afterRank:"SSS", target:"槍・馬・砲", rate:"50%", effectShort:"攻撃430%上昇+対人攻撃勝利時名声+20(模倣不可・特殊効果は部隊内重複不可)", afterTarget:"全", afterRate:"45%", afterEffectShort:"攻撃 170%上昇(自部隊同時攻撃時コスト最大2除外)"},
         {slot:"S1", skill:"氷塊三連撃", rank:"SSS", afterSkill:"氷塊三連撃", afterRank:"SSS", target:"全", rate:"+45%", effectShort:"攻撃170%上昇+自部隊同時攻撃時コストを最大2まで除外(模倣不可)"},
         {slot:"S2", skill:"志半ノ矛楯", rank:"A", afterSkill:"志半ノ矛楯", afterRank:"A", target:"全", rate:"+65%", effectShort:"攻撃465%上昇+防御465%上昇(模倣不可)"}
       ], reviewedOk:true},
@@ -629,7 +629,7 @@
       ],
       // 45do.info+ixagno.blog.fc2.com(blog-entry-10007)確認済み: Aの鬼十河は移植後「朝曇ノ明麗」[S]に、B/Cの列侯擁媛は移植後「志半ノ矛楯」に変化(自己参照ではない)
       synthesisTable:[
-        {slot:"A", skill:"鬼十河", rank:"A", afterSkill:"朝曇ノ明麗", afterRank:"S", target:"槍・砲・器", rate:"+15%", effectShort:"防御120%上昇+所領防御陣形配置時コスト消費-1(模倣不可)"},
+        {slot:"A", skill:"鬼十河", rank:"A", afterSkill:"朝曇ノ明麗", afterRank:"S", target:"槍・砲・器", rate:"+15%", effectShort:"防御120%上昇+所領防御陣形配置時コスト消費-1(模倣不可)", afterTarget:"全", afterRate:"46%", afterEffectShort:"防御 290%上昇(所領防御陣形第4列配置時1.5倍+飛翔7取得・模倣不可、TR別データは未確認)"},
         {slot:"B", skill:"列侯擁媛", rank:"A", afterSkill:"志半ノ矛楯", afterRank:"A", target:"弓・砲・器", rate:"36%", effectShort:"防御(敵部隊移動速度÷0.7)%上昇(最大の敵部隊移動速度を参照)"},
         {slot:"C", skill:"列侯擁媛", rank:"A", afterSkill:"志半ノ矛楯", afterRank:"A", target:"弓・砲・器", rate:"36%", effectShort:"防御(敵部隊移動速度÷0.7)%上昇(最大の敵部隊移動速度を参照)"},
         {slot:"S1", skill:"志半ノ矛楯", rank:"A", afterSkill:"志半ノ矛楯", afterRank:"A", target:"全", rate:"+65%", effectShort:"攻撃465%上昇+防御465%上昇(模倣不可)"},
@@ -656,7 +656,7 @@
       // A=戦陣吟詠[A]→戦陣吟詠[A](自己参照)/B=十束ノ神域[SS]→天聖宝冠[SSS](skills.html側ownHiddenCandidateとも一致)/C・S1=聖廉母堂[A]→聖廉母堂[A](自己参照)/S2=志半ノ矛楯[A]→志半ノ矛楯[A](自己参照)
       synthesisTable:[
         {slot:"A", skill:"戦陣 吟詠", rank:"A", afterSkill:"戦陣 吟詠", afterRank:"A", target:"全", rate:"+100%", effectShort:"攻撃340%上昇+防御340%上昇+部隊内卓越追加確率+20%(模倣不可・特殊効果は自部隊内では重複不可)"},
-        {slot:"B", skill:"十束ノ神域", rank:"SS", afterSkill:"天聖宝冠", afterRank:"SSS", target:"全 覇道", rate:"100%", effectShort:"攻撃320%上昇+速度70%上昇+覇道を持つため所属部隊の武将のスキルを無効化・発動率低下から保護"},
+        {slot:"B", skill:"十束ノ神域", rank:"SS", afterSkill:"天聖宝冠", afterRank:"SSS", target:"全 覇道", rate:"100%", effectShort:"攻撃 320%上昇+速度70%上昇(TR別データは未確認)", afterTarget:"全", afterRate:"45%", afterEffectShort:"攻撃 100%+5%×防御参加武将数(280人)=1500.0%"},
         {slot:"C", skill:"聖廉母堂", rank:"A", afterSkill:"聖廉母堂", afterRank:"A", target:"弓・砲・器", rate:"100%", effectShort:"攻撃410%上昇+防御410%上昇+部隊内卓越追加確率20%上昇(模倣不可・特殊効果は自部隊内では重複不可)"},
         {slot:"S1", skill:"聖廉母堂", rank:"A", afterSkill:"聖廉母堂", afterRank:"A", target:"弓・砲・器", rate:"100%", effectShort:"攻撃410%上昇+防御410%上昇+部隊内卓越追加確率20%上昇(模倣不可・特殊効果は自部隊内では重複不可)"},
         {slot:"S2", skill:"志半ノ矛楯", rank:"A", afterSkill:"志半ノ矛楯", afterRank:"A", target:"全", rate:"+65%", effectShort:"攻撃465%上昇+防御465%上昇(模倣不可)"}
@@ -675,9 +675,9 @@
       // 45do.info生HTML(ordinary/0340)の合成テーブル確認。初期スキル(破軍一投)の移植後合成候補は必ずS1のスキルになる(ユーザー指摘の確認方法)ため、
       // A/B/C=破軍一投[A]→龍驤虎躍[SS](移植後、skills.html側sourceCharactersに追記)/S1=龍驤虎躍[SS](自己参照)/S2=志半ノ矛楯[A](自己参照、高山マリアS2と同一効果で数値も一致確認)
       synthesisTable:[
-        {slot:"A", skill:"破軍一投", rank:"A", afterSkill:"龍驤虎躍", afterRank:"SS", target:"全", rate:"+60%", effectShort:"攻撃810%上昇+防御810%上昇+部隊消費コストを1低下(模倣不可)"},
-        {slot:"B", skill:"破軍一投", rank:"A", afterSkill:"龍驤虎躍", afterRank:"SS", target:"全", rate:"+60%", effectShort:"攻撃810%上昇+防御810%上昇+部隊消費コストを1低下(模倣不可)"},
-        {slot:"C", skill:"破軍一投", rank:"A", afterSkill:"龍驤虎躍", afterRank:"SS", target:"全", rate:"+60%", effectShort:"攻撃810%上昇+防御810%上昇+部隊消費コストを1低下(模倣不可)"},
+        {slot:"A", skill:"破軍一投", rank:"A", afterSkill:"龍驤虎躍", afterRank:"SS", target:"砲・器", rate:"100%", effectShort:"防御 220%上昇(所領防御陣形第4列以降の部隊にも適用)", afterTarget:"全", afterRate:"60%", afterEffectShort:"攻撃 810%上昇+防御810%上昇(コスト-1)"},
+        {slot:"B", skill:"破軍一投", rank:"A", afterSkill:"龍驤虎躍", afterRank:"SS", target:"砲・器", rate:"100%", effectShort:"防御 220%上昇(所領防御陣形第4列以降の部隊にも適用)", afterTarget:"全", afterRate:"60%", afterEffectShort:"攻撃 810%上昇+防御810%上昇(コスト-1)"},
+        {slot:"C", skill:"破軍一投", rank:"A", afterSkill:"龍驤虎躍", afterRank:"SS", target:"砲・器", rate:"100%", effectShort:"防御 220%上昇(所領防御陣形第4列以降の部隊にも適用)", afterTarget:"全", afterRate:"60%", afterEffectShort:"攻撃 810%上昇+防御810%上昇(コスト-1)"},
         {slot:"S1", skill:"龍驤虎躍", rank:"SS", afterSkill:"龍驤虎躍", afterRank:"SS", target:"全", rate:"+60%", effectShort:"攻撃810%上昇+防御810%上昇+部隊消費コストを1低下(模倣不可)"},
         {slot:"S2", skill:"志半ノ矛楯", rank:"A", afterSkill:"志半ノ矛楯", afterRank:"A", target:"全", rate:"+65%", effectShort:"攻撃465%上昇+防御465%上昇(模倣不可)"}
       ], reviewedOk:true, approved:true},
@@ -700,8 +700,8 @@
       // A/Bのeffectは2026-08-04に確認・修正: 45do.info本ページの「戦陣 無縫」欄(確率100%/馬砲器/攻撃防御155%+卓越15%)は他武将のデータと矛盾する誤記と判明。
       // ixagno.blog.fc2.com(blog-entry-9570)で天衣無縫神戒の正確な性能(確率50%/防御30.02%上昇)を確認、これを正として修正
       synthesisTable:[
-        {slot:"A", skill:"戦陣 無縫", rank:"A", afterSkill:"天衣無縫神戒", afterRank:"SS", target:"全", rate:"50%", effectShort:"防御30.02%上昇(部隊総コストで変動)"},
-        {slot:"B", skill:"戦陣 無縫", rank:"A", afterSkill:"天衣無縫神戒", afterRank:"SS", target:"全", rate:"50%", effectShort:"防御30.02%上昇(部隊総コストで変動)"},
+        {slot:"A", skill:"戦陣 無縫", rank:"A", afterSkill:"天衣無縫神戒", afterRank:"SS", target:"全", rate:"42%", effectShort:"防御 80%上昇(部隊総コストで変動)", afterTarget:"全", afterRate:"50%", afterEffectShort:"防御 30.02%上昇(部隊総コストで変動)"},
+        {slot:"B", skill:"戦陣 無縫", rank:"A", afterSkill:"天衣無縫神戒", afterRank:"SS", target:"全", rate:"42%", effectShort:"防御 80%上昇(部隊総コストで変動)", afterTarget:"全", afterRate:"50%", afterEffectShort:"防御 30.02%上昇(部隊総コストで変動)"},
         {slot:"C", skill:"天衣無縫神戒", rank:"SS", afterSkill:"天衣無縫神戒", afterRank:"SS", target:"全", rate:"50%", effectShort:"防御30.02%上昇(部隊総コストで変動)"},
         {slot:"S1", skill:"国津破邪ノ楯", rank:"SS", afterSkill:"国津破邪ノ楯", afterRank:"SS", target:"全", rate:"60%", effectShort:"防御60.04%上昇(部隊総コストで変動)"},
         {slot:"S2", skill:"天磐船", rank:"SS", afterSkill:"天磐船", afterRank:"SS", target:"全", rate:"56%", effectShort:"防御(3.8×防御参加武将数)%上昇=1064.0%(280人時)"}
@@ -722,10 +722,10 @@
       // 2026-08-05訂正: 当初A/Bを「戦陣吟詠に変化」として登録したが誤りだった。ixanary.comの日輪ノ守護者個別ページの合成テーブル(1次/2次/3次)を確認したところ、
       // 戦陣吟詠への変化は複数回の追加合成を経た2次以降の話であり、佐久間信盛カード自身が示す1次の時点では日輪ノ守護者・勝旗勇躍のまま(自己参照)が正しい。
       synthesisTable:[
-        {slot:"A", skill:"日輪ノ守護者", rank:"A", afterSkill:"日輪ノ守護者", afterRank:"A", target:"弓・砲・器", rate:"65%", effectShort:"攻撃340%上昇+防御340%上昇+破壊110%上昇"},
-        {slot:"B", skill:"勝旗勇躍", rank:"A", afterSkill:"勝旗勇躍", afterRank:"A", target:"槍・馬・器・騎", rate:"100%", effectShort:"攻撃440%上昇+防御440%上昇(卓越確率+50%・模倣不可)"},
+        {slot:"A", skill:"日輪ノ守護者", rank:"A", afterSkill:"戦陣 吟詠", afterRank:"A", target:"弓・砲・器", rate:"65%", effectShort:"攻撃 340%上昇+防御 340%上昇+破壊 110%上昇", afterTarget:"全", afterRate:"100%", afterEffectShort:"攻撃 340%上昇+防御 340%上昇(部隊内卓越追加確率+20%)"},
+        {slot:"B", skill:"勝旗勇躍", rank:"A", afterSkill:"戦陣 吟詠", afterRank:"A", target:"槍・馬・器・騎", rate:"100%", effectShort:"攻撃 440%上昇+防御 440%上昇(卓越確率+50%)", afterTarget:"全", afterRate:"100%", afterEffectShort:"攻撃 340%上昇+防御 340%上昇(部隊内卓越追加確率+20%)"},
         {slot:"C", skill:"戦陣 吟詠", rank:"A", afterSkill:"戦陣 吟詠", afterRank:"A", target:"全", rate:"100%", effectShort:"攻撃340%上昇+防御340%上昇+部隊内卓越追加確率+20%(模倣不可・特殊効果は自部隊内では重複不可)"},
-        {slot:"S1", skill:"戦陣 神楽", rank:"A", afterSkill:"遠呂智ノ閃光", afterRank:"SS", target:"全", rate:"100%", effectShort:"攻撃125%上昇(卓越:追加確率15%で4倍)"},
+        {slot:"S1", skill:"戦陣 神楽", rank:"A", afterSkill:"遠呂智ノ閃光", afterRank:"SS", target:"全 飛翔4", rate:"100%", effectShort:"攻撃 77%上昇(卓越:追加確率30%で2倍)", afterTarget:"全", afterRate:"100%", afterEffectShort:"攻撃 125%上昇(卓越追加確率15%・4倍、TR別データは未確認)"},
         {slot:"S2", skill:"志半ノ矛楯", rank:"A", afterSkill:"志半ノ矛楯", afterRank:"A", target:"全", rate:"65%", effectShort:"攻撃465%上昇+防御465%上昇(模倣不可)"}
       ]}
   ];
@@ -910,11 +910,22 @@
         '<div class="kk-detail-block"><h2>合成素材にした場合の候補スキル</h2>'
         + '<div class="kk-table-scroll"><table class="kk-stat-table"><thead><tr><th>候補</th><th>初期スキル</th><th>移植後合成候補</th></tr></thead><tbody>'
         + g.synthesisTable.map(function(row){
-            const targetLabel = row.target ? '対象:'+kkColorizeMujin(row.target)+' ' : '';
-            const rateLabel = row.rate ? '確率'+kkEscapeHtml(row.rate)+' ' : '';
-            const desc = (row.target || row.rate || row.effectShort) ? '<div class="kk-synth-desc">'+targetLabel+rateLabel+kkColorizeMujin(row.effectShort||'')+'</div>' : '';
+            // 移植前(skill)と移植後(afterSkill)は別スキルのことがあり、性能も異なる。
+            // target/rate/effectShort は移植前の性能、after* は移植後の性能を表す。
+            // after* が未指定の場合は移植前の値をそのまま流用する(自己参照の行では同じ値になるため)。
+            const buildDesc = function(t, r, e){
+              const tl = t ? '対象:'+kkColorizeMujin(t)+' ' : '';
+              const rl = r ? '確率'+kkEscapeHtml(r)+' ' : '';
+              return (t || r || e) ? '<div class="kk-synth-desc">'+tl+rl+kkColorizeMujin(e||'')+'</div>' : '';
+            };
+            const desc = buildDesc(row.target, row.rate, row.effectShort);
+            const hasAfterOwn = (row.afterTarget || row.afterRate || row.afterEffectShort);
+            // 移植後が別スキルなのに専用の性能が未登録の場合、移植前の数値を流用すると誤情報になるため何も出さない
+            const afterDesc = hasAfterOwn
+              ? buildDesc(row.afterTarget || row.target, row.afterRate || row.rate, row.afterEffectShort || row.effectShort)
+              : (row.afterSkill === row.skill ? desc : '');
             const skillLabel = '<div class="kk-synth-cell"><span class="kk-synth-name">'+kkSkillLink(row.skill, row.rank)+'</span>'+desc+'</div>';
-            const afterLabel = row.afterSkill ? ('<div class="kk-synth-cell"><span class="kk-synth-name">'+kkSkillLink(row.afterSkill, row.afterRank)+'</span>'+desc+'</div>') : '-';
+            const afterLabel = row.afterSkill ? ('<div class="kk-synth-cell"><span class="kk-synth-name">'+kkSkillLink(row.afterSkill, row.afterRank)+'</span>'+afterDesc+'</div>') : '-';
             return '<tr><td>'+kkEscapeHtml(row.slot)+'</td><td>'+skillLabel+'</td>'
               + '<td>'+afterLabel+'</td></tr>';
           }).join('')

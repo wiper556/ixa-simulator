@@ -549,6 +549,8 @@
       sourceCharacters:[
         {name:"小山田信茂", no:"2395", slot:"A・B・C", db:"kyoku"}
       ],
+      // このスキルを持つカードを合成素材にすると龍驤虎躍[SS]に変化する(小山田信茂No.2395 A/B/C枠で確認)
+      ownHiddenCandidate: {skill:"龍驤虎躍", rank:"SS"},
       trTable:[
         {level:"LV10", points:"-", effect:"砲・器　確率 100% / 防御 220%上昇(所領防御陣形第4列以降の部隊にも適用)"}
       ]
@@ -595,7 +597,9 @@
         {name:"前田利家(4)", no:"1269", slot:"A"},
         {name:"宇喜多直家(3)", no:"1256", slot:"S1"},
         {name:"毛利輝元(覇)", no:"1251", slot:"C"},
-        {name:"武田信虎(2)", no:"1240", slot:"S1"}
+        {name:"武田信虎(2)", no:"1240", slot:"S1"},
+        // 上杉謙信(覇2)No.1238のB・C枠(ixanary「神気乱龍」個別ページ1次B/C=星神闘覇で確認、2026-08-07)
+        {name:"上杉謙信(覇2)", no:"1238", slot:"B・C"}
       ],
       ownHiddenCandidate: {skill:"星神闘覇", rank:"SS"},
       trTable:[
@@ -796,7 +800,7 @@
       sourceCharacters:[
         {name:"斎藤道三(3)", no:"1297", slot:"A"}
       ],
-      ownHiddenCandidate: {skill:"国呑ノ蟒蛇", rank:"S"},
+      ownHiddenCandidate: {skill:"幻像鏡花", rank:"SSS"},
       trTable:[
         {level:"LV10", points:"-", coefficient:"5.4", effect:"槍・弓・器・鉄　確率 42% / 防御 5.4%×防御参加武将数(280人)=1512.0%(卓越追加確率-20%で1.5倍=2268.0%)"},
         {level:"TR1", points:"10", coefficient:"5.5", effect:"槍・弓・器・鉄　確率 42% / 防御 5.5%×防御参加武将数(280人)=1540.0%(卓越追加確率-15%で1.5倍=2310.0%)"},
@@ -817,7 +821,7 @@
       sourceCharacters:[
         {name:"伊達政宗(6)", no:"1292", slot:"A"}
       ],
-      ownHiddenCandidate: {skill:"龍気剣鳴", rank:"S"},
+      ownHiddenCandidate: {skill:"幻像鏡花", rank:"SSS"},
       trTable:[
         {level:"LV10", points:"-", coefficient:"5.3", effect:"槍・馬・器・騎　確率 40% / 攻撃 5.3%×防御参加武将数(280人)=1484.0%(卓越追加確率-20%で1.5倍=2226.0%)"},
         {level:"TR1", points:"10", coefficient:"5.4", effect:"槍・馬・器・騎　確率 40% / 攻撃 5.4%×防御参加武将数(280人)=1512.0%(卓越追加確率-15%で1.5倍=2268.0%)"},
@@ -837,7 +841,7 @@
       sourceCharacters:[
         {name:"島津義弘(4)", no:"1294", slot:"B"}
       ],
-      ownHiddenCandidate: {skill:"雄武英略", rank:"S"},
+      ownHiddenCandidate: {skill:"焼尽神無", rank:"SS"},
       trTable:[
         {level:"LV10", points:"-", effect:"全　確率 60% / 攻撃 550%上昇(不屈2・コスト除外3)"},
         {level:"TR1", points:"10", effect:"全　確率 60% / 攻撃 610%上昇(不屈2・コスト除外3.5)"},
@@ -914,6 +918,9 @@
     {
       name:"神機采配", rank:"S", baseRate:50, target:"全 飛翔9", noMimic:true,
       effectSummary:"S/LV10 確率 50% 防御420%上昇/対象:全　飛翔9\n模倣不可\n①防御420%上昇する\n②防御戦闘時、所属部隊の武将は飛翔値の代わりに飛翔値+4(TR以降+5〜+7)を持つ(部隊内重複不可・計算エンジン未対応)\n③敵軍各部隊で飛翔最高の武将は飛翔をLV10で5(TR以降6〜10)失う(自軍内重複不可・計算エンジン未対応)",
+      categoryLinks:[
+        {href:"skills-hishou-def.html", label:"飛翔スキル一覧(防御)を見る"}
+      ],
       sourceCharacters:[
         {name:"上杉謙信(復刻)【覇】", no:"10074", slot:"S1"}
       ],
@@ -1035,6 +1042,7 @@
       ],
       sourceCharacters:[
         {name:"毛利輝元(5)", no:"1306", slot:"A・S2"},
+        {name:"井伊直政", no:"1233", slot:"S2"},
         {name:"細川幽斎(復刻)【天】", no:"10070", slot:"S2"},
         {name:"島津義弘(4)", no:"1294", slot:"S2"},
         {name:"毛利元就(4)", no:"1293", slot:"A"},
@@ -1319,7 +1327,7 @@
         {name:"島津義弘(3)", no:"1232", slot:"B"},
         {name:"竹中半兵衛(1215)", no:"1215", slot:"S1"}
       ],
-      ownHiddenCandidate: {skill:"黄泉醜女ノ屍兵", rank:"SS"},
+      ownHiddenCandidate: {skill:"天地黎明", rank:"SSS"},
       trTable:[
         {level:"LV10", points:"-", effect:"全　確率 54% / 防御 200%上昇(70以下の被ダメージ上限45)"},
         {level:"TR1", points:"10", effect:"全　確率 54% / 防御 300%上昇(70以下の被ダメージ上限44)"},
@@ -1417,7 +1425,7 @@
         {name:"長尾景虎", no:"10064", slot:"B"},
         {name:"石田三成", no:"1277", slot:"移植不可"}
       ],
-      ownHiddenCandidate: {skill:"義陣絶刀", rank:"S"},
+      ownHiddenCandidate: {skill:"國才連豪", rank:"SS"},
       trTable:[
         {level:"LV10", points:"-", effect:"全 飛翔17　確率 55% / 攻撃 840%上昇+防御840%上昇"},
         {level:"TR1", points:"10", effect:"全 飛翔17　確率 55% / 攻撃 920%上昇+防御920%上昇"},
@@ -1517,7 +1525,7 @@
       sourceCharacters:[
         {name:"長尾景虎(1206)", no:"1206", slot:"A・B"}
       ],
-      ownHiddenCandidate: {skill:"氷神懸龍", rank:"S"},
+      ownHiddenCandidate: {skill:"天津日ノ太刀", rank:"SS"},
       trTable:[
         {level:"LV10", points:"-", effect:"槍・砲・器 飛翔4　確率 100% / 攻撃 88%上昇(4部隊以下で2倍)"}
       ]
@@ -1546,7 +1554,8 @@
       name:"天津日ノ太刀", rank:"SS", baseRate:57, target:"全 飛翔4",
       effectSummary:"SS/LV10 確率 57% 攻撃184%上昇/対象:全　飛翔4\n①攻撃184%上昇する\n②卓越:追加確率75%で攻撃効果が2倍になる\n③飛翔4を持つ(敵軍に飛翔を持つ武将が4人未満のとき通常武将ダメージを受けない)",
       categoryLinks:[
-        {href:"skills-hishou-atk.html", label:"飛翔スキル一覧(攻撃)を見る"}
+        {href:"skills-hishou-atk.html", label:"飛翔スキル一覧(攻撃)を見る"},
+        {href:"skills-takuetsu.html", label:"卓越スキル一覧を見る"}
       ],
       sourceCharacters:[
         {name:"長野業正", no:"1248", slot:"S2"},
@@ -1577,7 +1586,7 @@
       sourceCharacters:[
         {name:"大友宗麟(1210)", no:"1210", slot:"A・B"}
       ],
-      ownHiddenCandidate: {skill:"無鹿ノ幻律", rank:"S"},
+      ownHiddenCandidate: {skill:"神屋楯比売命", rank:"SS"},
       trTable:[
         {level:"LV10", points:"-", effect:"全　確率 70% / 防御 80%上昇(90分毎に1.5倍、上限4回)"}
       ]
@@ -1593,7 +1602,7 @@
         {name:"大友宗麟(1210)", no:"1210", slot:"C"},
         {name:"今川義元", no:"1203", slot:"A"}
       ],
-      ownHiddenCandidate: {skill:"八重言代主神", rank:"SS"},
+      ownHiddenCandidate: {skill:"無窮天斥陣", rank:"SS"},
       trTable:[
         {level:"LV10", points:"-", effect:"自身　確率 70% / 初期スキル(戦闘スキルのみ)を模倣(1倍)"}
       ]
@@ -1667,9 +1676,11 @@
         {href:"skills-hishou-atk.html", label:"飛翔スキル一覧(攻撃)を見る"}
       ],
       sourceCharacters:[
-        {name:"佐久間信盛", no:"2397", slot:"S1", db:"kyoku"}
+        {name:"佐久間信盛", no:"2397", slot:"S1", db:"kyoku"},
+        {name:"三好義賢", no:"2368", slot:"C", db:"kyoku"}
       ],
-      ownHiddenCandidate: {skill:"戦陣 神楽", rank:"A"},
+      // このスキルを持つカードを合成素材にすると遠呂智ノ閃光[SS]に変化する(ixanary.com個別ページ 2次 S1 で確認)
+      ownHiddenCandidate: {skill:"遠呂智ノ閃光", rank:"SS"},
       trTable:[
         {level:"LV10", points:"-", effect:"全 飛翔4　確率 100% / 攻撃 77%上昇(卓越:追加確率30%で2倍)"}
       ]
@@ -1680,7 +1691,8 @@
       effectSummary:"SS/LV10 確率 100% 攻撃210%上昇/対象:全　飛翔5\n模倣不可\n①攻撃210%上昇する\n②防御210%上昇する\n③このスキルを所持する武将の全スキルの卓越確率に35%を加算する",
       categoryLinks:[
         {href:"skills-hishou-atk.html", label:"飛翔スキル一覧(攻撃)を見る"},
-        {href:"skills-hishou-def.html", label:"飛翔スキル一覧(防御)を見る"}
+        {href:"skills-hishou-def.html", label:"飛翔スキル一覧(防御)を見る"},
+        {href:"skills-takuetsu.html", label:"卓越スキル一覧を見る"}
       ],
       sourceCharacters:[
         {name:"石田三成(4)", no:"1229", slot:"C・S2"},
@@ -1692,7 +1704,7 @@
         {name:"真田幸村(覇)", no:"1227", slot:"A"},
         {name:"竹中半兵衛(1215)", no:"1215", slot:"S2"}
       ],
-      ownHiddenCandidate: {skill:"建御雷神ノ閃光", rank:"SS"},
+      ownHiddenCandidate: {skill:"八幡神ノ威光", rank:"SSS"},
       trTable:[
         {level:"LV10", points:"-", effect:"全 飛翔5　確率 100% / 攻撃210%上昇+防御210%上昇(卓越確率+35%)"}
       ]
@@ -1822,7 +1834,8 @@
         {name:"津軽為信", no:"2359", slot:"S2", db:"kyoku"},
         {name:"高橋紹運", no:"2396", slot:"A・B", db:"kyoku"}
       ],
-      ownHiddenCandidate: {skill:"戦陣 無縫", rank:"A"},
+      // このスキルを持つカードを合成素材にすると天衣無縫神戒[SS]に変化する(複数武将のsynthesisTable・ixanary個別ページで確認)
+      ownHiddenCandidate: {skill:"天衣無縫神戒", rank:"SS"},
       grantedViaSkills: [{skill:"凜武艶姫", rank:"A"}],
       trTable:[
         {level:"LV10", points:"-", effect:"全　確率 42% / 防御 80%上昇(部隊総コストで変動)"}
@@ -1836,7 +1849,8 @@
       sourceCharacters:[
         {name:"後藤又兵衛", no:"2390", slot:"A", db:"kyoku"}
       ],
-      ownHiddenCandidate: {skill:"凜武艶姫", rank:"A"},
+      // このスキルを持つカードを合成素材にすると戦陣 無縫[A]に変化する(後藤又兵衛No.2390 A枠で確認)
+      ownHiddenCandidate: {skill:"戦陣 無縫", rank:"A"},
       trTable:[
         {level:"LV10", points:"-", effect:"弓・砲・器　確率 40% / 防御 15%上昇(部隊総コストで変動)"}
       ]
@@ -1885,12 +1899,13 @@
       name:"天封界斬", rank:"S", baseRate:30, target:"槍・弓・砲・器 兵站",
       effectSummary:"S/LV10 確率 30% 防御上昇/対象:槍・弓・砲・器　兵站\n①(3.6×防御参加武将数)%を防御効果に加算する\n②防御参加武将数が90以下の時、防御効果が1.5倍になる",
       categoryLinks:[
-        {href:"skills-heitan.html", label:"兵站スキル一覧を見る"}
+        {href:"skills-heitan.html", label:"兵站スキル一覧を見る"},
+        {href:"skills-count-def.html", label:"人数依存(防)スキル一覧を見る"}
       ],
       sourceCharacters:[
         {name:"徳川秀忠", no:"1234", slot:"A・B"}
       ],
-      ownHiddenCandidate: {skill:"天封界斬", rank:"S"},
+      ownHiddenCandidate: {skill:"黄泉醜女ノ屍兵", rank:"SS"},
       trTable:[
         {level:"LV10", points:"-", coefficient:"3.6", effect:"槍・弓・砲・器 兵站　確率 30% / 防御 3.6%×防御参加武将数(280人)=1008.0%(90人以下で1.5倍)"}
       ]
@@ -1904,7 +1919,7 @@
       sourceCharacters:[
         {name:"浅井長政(4)", no:"1244", slot:"A"}
       ],
-      ownHiddenCandidate: {skill:"義心江龍", rank:"S"},
+      ownHiddenCandidate: {skill:"天宇受売命", rank:"SSS"},
       trTable:[
         {level:"LV10", points:"-", effect:"槍・砲・器 不屈1　確率 55% / 攻撃 420%上昇(敗北時、指揮兵が1000まで回復)"}
       ]
@@ -1927,6 +1942,9 @@
     {
       name:"仙剣破斬", rank:"SSS", baseRate:100, target:"全",
       effectSummary:"SSS/LV10 確率 100% 攻撃115%上昇/対象:全\n①攻撃115%上昇する\n②防御115%上昇する\n③卓越:追加確率35%で攻撃効果が4倍になる",
+      categoryLinks:[
+        {href:"skills-takuetsu.html", label:"卓越スキル一覧を見る"}
+      ],
       sourceCharacters:[
         {name:"島津義久", no:"1285", slot:"A"},
         {name:"長野業正", no:"1248", slot:"C"}
@@ -1940,6 +1958,9 @@
       // 長野業正(No.1248)自身の初期スキル(移植不可)
       name:"斑将閃牙", rank:"S", baseRate:100, target:"全", noMimic:true,
       effectSummary:"S/LV10 確率 100% 対象:全\n模倣不可\n①攻撃戦闘時、この武将が持つ卓越スキルは二度卓越できる(2回目の卓越確率は+15%される)",
+      categoryLinks:[
+        {href:"skills-takuetsu.html", label:"卓越スキル一覧を見る"}
+      ],
       sourceCharacters:[
         {name:"長野業正", no:"1248", slot:"移植不可"}
       ],
@@ -1997,7 +2018,7 @@
         {name:"長尾景虎", no:"10064", slot:"S2"},
         {name:"宇喜多秀家", no:"1281", slot:"移植不可"}
       ],
-      ownHiddenCandidate: {skill:"王花尖剣", rank:"S"},
+      ownHiddenCandidate: {skill:"國才連豪", rank:"SS"},
       trTable:[
         {level:"LV10", points:"-", effect:"槍・馬・砲・器 飛翔10　確率 64% / 防御 320%+（飛翔値合計×10%）上昇"},
         {level:"TR1", points:"10", effect:"槍・馬・砲・器 飛翔10　確率 64% / 防御 320%+（飛翔値合計×10.4%）上昇"},
@@ -2080,7 +2101,7 @@
       sourceCharacters:[
         {name:"柴田勝家", no:"1216", slot:"A・B"}
       ],
-      ownHiddenCandidate: {skill:"万鬼闘帝", rank:"S"},
+      ownHiddenCandidate: {skill:"天津甕星ノ雷", rank:"SS"},
       trTable:[
         {level:"LV10", points:"-", effect:"全 覇道　確率 100% / 攻撃 210%上昇"}
       ]
@@ -2095,7 +2116,7 @@
       sourceCharacters:[
         {name:"直江兼続(4)", no:"1266", slot:"A・B"}
       ],
-      ownHiddenCandidate: {skill:"三全将帥", rank:"S"},
+      ownHiddenCandidate: {skill:"神羅聖域", rank:"SS"},
       trTable:[
         {level:"LV10", points:"-", coefficient:"6.2", effect:"槍・弓・器・騎　確率 48% / 防御 6.2%×防御参加武将数(280人)=1736.0%(卓越:追加確率10%で1.2倍)"},
         {level:"TR1", points:"-", coefficient:"6.3", effect:"槍・弓・器・騎　確率 48% / 防御 6.3%×防御参加武将数(280人)=1764.0%(卓越:追加確率10%で1.2倍)"},
@@ -2285,7 +2306,7 @@
         {name:"武田晴信", no:"1205", slot:"S1"},
         {name:"今川義元", no:"1203", slot:"S2"}
       ],
-      ownHiddenCandidate: {skill:"天焉相克", rank:"SS"},
+      ownHiddenCandidate: {skill:"八重言代主神", rank:"SS"},
       trTable:[
         {level:"LV10", points:"-", effect:"槍・弓・馬　確率 70% / 全攻 30%上昇(部隊の総コストで効果が変化)"}
       ]
@@ -2504,10 +2525,13 @@
       // この武将自身の初期スキル(北条氏政(5) No.1253のsynthesisTable候補A・B)
       name:"八界経略", rank:"S", baseRate:100, target:"槍・弓・砲・器", noMimic:true,
       effectSummary:"S/LV10 確率 100% 攻撃420%上昇/対象:槍・弓・砲・器\n模倣不可\n①攻撃420%上昇する\n②防御420%上昇する\n③部隊内武将のスキル発動率+15%を得る\n④卓越の追加確率+50%を得る(特殊効果は自部隊内では重複不可)",
+      categoryLinks:[
+        {href:"skills-takuetsu.html", label:"卓越スキル一覧を見る"}
+      ],
       sourceCharacters:[
         {name:"北条氏政(5)", no:"1253", slot:"A・B"}
       ],
-      ownHiddenCandidate: {skill:"八界経略", rank:"S"},
+      ownHiddenCandidate: {skill:"閃裂討鬼", rank:"SS"},
       trTable:[
         {level:"LV10", points:"-", effect:"槍・弓・砲・器　確率 100% / 攻撃420%上昇+防御420%上昇(発動率+15%・卓越追加確率+50%)"}
       ]
@@ -2523,7 +2547,7 @@
       sourceCharacters:[
         {name:"森蘭丸", no:"1211", slot:"A・B"}
       ],
-      ownHiddenCandidate: {skill:"天奏幻武", rank:"S"},
+      ownHiddenCandidate: {skill:"加具土ノ神域", rank:"SS"},
       trTable:[
         {level:"LV10", points:"-", coefficient:"3", effect:"槍・弓・焙　確率 100% / 攻撃 3%×防御参加武将数(280人)=840%(卓越追加確率30%で1.5倍)"}
       ]
@@ -2535,7 +2559,7 @@
       sourceCharacters:[
         {name:"島津義久(1219)", no:"1219", slot:"A・B"}
       ],
-      ownHiddenCandidate: {skill:"破邪轟砲", rank:"S"},
+      ownHiddenCandidate: {skill:"四至ノ神域", rank:"SSS"},
       trTable:[
         {level:"LV10", points:"-", effect:"全　確率 50% / 攻撃200%上昇+防御200%上昇(部隊内初期スキルに砲対象追加)"}
       ]
@@ -2550,7 +2574,7 @@
       sourceCharacters:[
         {name:"九鬼嘉隆", no:"1212", slot:"A・B"}
       ],
-      ownHiddenCandidate: {skill:"甲塞ノ龍砲", rank:"S"},
+      ownHiddenCandidate: {skill:"海神ノ浮船", rank:"SS"},
       trTable:[
         {level:"LV10", points:"-", effect:"弓・砲・器 飛翔4　確率 15% / 防御 134%上昇(敵軍4部隊以下で2倍)"}
       ]
@@ -2577,7 +2601,7 @@
       sourceCharacters:[
         {name:"直江兼続(3)", no:"1228", slot:"A・B"}
       ],
-      ownHiddenCandidate: {skill:"閻魔ノ裁き", rank:"S"},
+      ownHiddenCandidate: {skill:"月詠ノ覇威", rank:"SS"},
       trTable:[
         {level:"LV10", points:"-", effect:"全　確率 100% / 攻撃184%上昇+防御184%上昇(卓越追加確率+25%)"}
       ]
@@ -2589,7 +2613,7 @@
       sourceCharacters:[
         {name:"島津義弘(3)", no:"1232", slot:"A"}
       ],
-      ownHiddenCandidate: {skill:"鬼神ノ軍法", rank:"S"},
+      ownHiddenCandidate: {skill:"四天轟雷", rank:"SS"},
       trTable:[
         {level:"LV10", points:"-", effect:"槍・馬・器　確率 62% / 防御 190%上昇(本丸防御陣形時コスト消費-1.5)"}
       ]
@@ -2601,7 +2625,7 @@
       sourceCharacters:[
         {name:"村上武吉(2)", no:"1257", slot:"C"}
       ],
-      ownHiddenCandidate: {skill:"海王怒涛", rank:"S"},
+      ownHiddenCandidate: {skill:"破軍騎行", rank:"SS"},
       trTable:[
         {level:"LV10", points:"-", effect:"弓・馬・砲・器　確率 55% / 攻撃 440%上昇(自部隊同時攻撃時、合流し不足(部隊数-2)を得る)"}
       ]
@@ -2613,7 +2637,7 @@
       sourceCharacters:[
         {name:"松平元康", no:"1207", slot:"A・B"}
       ],
-      ownHiddenCandidate: {skill:"四界偃武", rank:"S"},
+      ownHiddenCandidate: {skill:"加具土ノ神域", rank:"SS"},
       trTable:[
         {level:"LV10", points:"-", effect:"槍・弓・器・鉄　確率 38% / 攻撃 敵軍総武将コスト×0.8%"}
       ]
@@ -2625,7 +2649,7 @@
       sourceCharacters:[
         {name:"相良義陽(3)", no:"1258", slot:"A・B"}
       ],
-      ownHiddenCandidate: {skill:"義陣響野", rank:"S"},
+      ownHiddenCandidate: {skill:"氷塊三連撃", rank:"SSS"},
       trTable:[
         {level:"LV10", points:"-", effect:"槍・馬・砲・器　確率 35% / 攻撃 敵軍総武将コスト×1.4%"}
       ]
@@ -2637,7 +2661,7 @@
       sourceCharacters:[
         {name:"佐竹義宣(2)", no:"1267", slot:"A・B"}
       ],
-      ownHiddenCandidate: {skill:"義響鉄心", rank:"S"},
+      ownHiddenCandidate: {skill:"神羅聖域", rank:"SS"},
       trTable:[
         {level:"LV10", points:"-", effect:"槍・弓・砲・器　確率 50% / 防御 200%上昇(第伍列配置時3倍)"}
       ]
@@ -2647,12 +2671,13 @@
       name:"刈世公子", rank:"S", baseRate:25, target:"弓・馬・器・焙", noMimic:true,
       effectSummary:"S/LV10 卓越 追加確率25% 攻撃440%上昇/対象:弓・馬・器・焙\n模倣不可\n①通常確率では発動せず卓越時のみ追加確率25%で発動する\n②発動時攻撃440%上昇する\n③発動時飛翔17を得る(攻撃戦闘時のみ発動・飛翔獲得部分は二重卓越不可)",
       categoryLinks:[
-        {href:"skills-hishou-atk.html", label:"飛翔スキル一覧(攻撃)を見る"}
+        {href:"skills-hishou-atk.html", label:"飛翔スキル一覧(攻撃)を見る"},
+        {href:"skills-takuetsu.html", label:"卓越スキル一覧を見る"}
       ],
       sourceCharacters:[
         {name:"小早川秀秋(4)", no:"1271", slot:"A・B"}
       ],
-      ownHiddenCandidate: {skill:"刈世公子", rank:"S"},
+      ownHiddenCandidate: {skill:"照闇騎行", rank:"SS"},
       trTable:[
         {level:"LV10", points:"-", effect:"弓・馬・器・焙　卓越追加確率 25% / 攻撃 440%上昇(飛翔17取得)"}
       ]
@@ -2667,7 +2692,7 @@
       sourceCharacters:[
         {name:"立花宗茂(2)", no:"1231", slot:"C"}
       ],
-      ownHiddenCandidate: {skill:"天翔雷神", rank:"S"},
+      ownHiddenCandidate: {skill:"十束ノ神域", rank:"SS"},
       trTable:[
         {level:"LV10", points:"-", effect:"弓・馬・焙 飛翔10　確率 50% / 攻撃 45%上昇+飛翔値合計×8%加算"}
       ]
@@ -2679,7 +2704,7 @@
       sourceCharacters:[
         {name:"武田信虎(2)", no:"1240", slot:"A"}
       ],
-      ownHiddenCandidate: {skill:"猛虎嵐陣", rank:"S"},
+      ownHiddenCandidate: {skill:"星神闘覇", rank:"SSS"},
       trTable:[
         {level:"LV10", points:"-", effect:"弓・馬・器・騎　確率 100% / 攻撃 450%上昇+速度 100%上昇"}
       ]
@@ -2695,7 +2720,7 @@
       sourceCharacters:[
         {name:"蜂須賀小六", no:"1223", slot:"A"}
       ],
-      ownHiddenCandidate: {skill:"無双六界ノ博奕", rank:"S"},
+      ownHiddenCandidate: {skill:"天磐船", rank:"SS"},
       trTable:[
         {level:"LV10", points:"-", coefficient:"3.2", effect:"槍・弓・器・鉄　確率 50% / 防御 3.2%×防御参加武将数(280人)=896%(卓越追加確率20%で1.5倍)"}
       ]
@@ -2881,7 +2906,7 @@
       sourceCharacters:[
         {name:"荒木村重", no:"1279", slot:"移植不可"}
       ],
-      ownHiddenCandidate: {skill:"魔導禁鎖", rank:"S"},
+      ownHiddenCandidate: {skill:"月煌侵蝕", rank:"SSS"},
       trTable:[
         {level:"LV10", points:"-", coefficient:"8.4", effect:"槍・弓・砲・器　確率 58% / 防御 8.4%×防御参加武将数=上昇(120人以下で1.5倍)"},
         {level:"TR5", points:"最大鍛錬", coefficient:"13", effect:"槍・弓・砲・器　確率 58% / 防御 13%×防御参加武将数=上昇(120人以下で1.5倍)"}
@@ -2911,7 +2936,7 @@
       sourceCharacters:[
         {name:"黒田長政", no:"1282", slot:"移植不可"}
       ],
-      ownHiddenCandidate: {skill:"一調天成", rank:"S"},
+      ownHiddenCandidate: {skill:"戦華雄渾", rank:"SS"},
       trTable:[
         {level:"LV10", points:"-", coefficient:"13", effect:"槍・弓・馬・砲　確率 50% / 攻撃 13%×飛翔を持たない防御参加武将数=上昇"},
         {level:"TR5", points:"最大鍛錬", coefficient:"18", effect:"槍・弓・馬・砲　確率 50% / 攻撃 18%×飛翔を持たない防御参加武将数=上昇"}
@@ -2941,7 +2966,7 @@
       sourceCharacters:[
         {name:"加藤清正", no:"1284", slot:"A・B"}
       ],
-      ownHiddenCandidate: {skill:"虎伐閃衝", rank:"S"},
+      ownHiddenCandidate: {skill:"万物神勇", rank:"SSS"},
       // ixanary.com生HTML照合(2026-08-02): スキルページ(/skills/虎伐閃衝/)にLV1・LV10・TR1〜TR5の全段階が公開されている。
       trTable:[
         {level:"LV10", points:"-", coefficient:"2.1", effect:"槍・砲・器　確率 36% / 攻撃 敵軍総武将コスト×2.1%=上昇"},
@@ -2985,6 +3010,9 @@
       // 黒田官兵衛【覇】(No.1214)自身の初期スキル(移植不可)
       name:"鼎不死巴", rank:"SSS", baseRate:100, target:"全", noMimic:true,
       effectSummary:"SSS/LV10 確率 100% 攻撃240%上昇/対象:全\n模倣不可\n①攻撃240%上昇する\n②防御240%上昇する\n③部隊内武将のスキル発動率+10%を得る\n④卓越の追加確率+40%を得る(特殊効果は自部隊内では重複不可)",
+      categoryLinks:[
+        {href:"skills-takuetsu.html", label:"卓越スキル一覧を見る"}
+      ],
       sourceCharacters:[
         {name:"黒田官兵衛【覇】", no:"1214", slot:"移植不可"}
       ],
@@ -3051,6 +3079,9 @@
       // 伊達政宗(覇3)(No.1226)自身の初期スキル(移植不可)。破天ノ竜撃は公式解説で模倣可能と明記されている数少ない例外スキル
       name:"破天ノ竜撃", rank:"SSS", baseRate:32, target:"全",
       effectSummary:"SSS/LV10 確率 32% 攻撃180%上昇/対象:全\n①攻撃180%上昇する\n②防御180%上昇する\n③自部隊内で卓越発動したスキル数×80%を攻防効果に加算する",
+      categoryLinks:[
+        {href:"skills-takuetsu.html", label:"卓越スキル一覧を見る"}
+      ],
       sourceCharacters:[
         {name:"伊達政宗(覇3)", no:"1226", slot:"移植不可"}
       ],
@@ -3071,7 +3102,7 @@
       sourceCharacters:[
         {name:"島津家久", no:"1261", slot:"移植不可"}
       ],
-      ownHiddenCandidate: {skill:"神将火剣", rank:"S"},
+      ownHiddenCandidate: {skill:"万里嵐壁", rank:"SS"},
       trTable:[
         {level:"LV10", points:"-", effect:"槍・馬・砲・器　確率 50% / 防御 150%上昇(同兵種指揮武将数×12%加算)"}
       ]
@@ -3219,7 +3250,7 @@
       sourceCharacters:[
         {name:"水野勝成", no:"1236", slot:"A"}
       ],
-      ownHiddenCandidate: {skill:"倫魁不羈", rank:"S"},
+      ownHiddenCandidate: {skill:"十束ノ神域", rank:"SS"},
       trTable:[
         {level:"LV10", points:"-", effect:"槍・弓・馬・砲　確率 55% / 攻撃 4%×防御参加武将数(280人)=1120%"}
       ]
@@ -3416,7 +3447,11 @@
         {name:"三好義賢", no:"2368", slot:"S2", db:"kyoku"},
         {name:"北条綱成", no:"2374", slot:"S1・S2", db:"kyoku"},
         // 高山マリア(2394)のsynthesisTable A枠(2026-08-02追加)
-        {name:"高山マリア", no:"2394", slot:"A", db:"kyoku"}
+        {name:"高山マリア", no:"2394", slot:"A", db:"kyoku"},
+        {name:"佐久間信盛", no:"2397", slot:"C", db:"kyoku"},
+        // 長尾為景(2383)はC枠の今樊噲[A]経由で入手する。今樊噲はA以下で独自ページを持たないため
+        // grantedViaSkills化せず直接列挙する(A-3-12の但し書き)。
+        {name:"長尾為景", no:"2383", slot:"C(今樊噲経由)", db:"kyoku"}
       ],
       ownHiddenCandidate: {skill:"戦陣 吟詠", rank:"A"},
       // 2026-08-07追加: ixanary.com個別ページの合成テーブル(2次)で日輪ノ守護者[A]・勝旗勇躍[A](共に佐久間信盛No.2397のA/B枠)がA/B枠限定で戦陣吟詠に変化することを確認。
@@ -3431,9 +3466,11 @@
       name:"日輪ノ守護者", rank:"A", baseRate:65, target:"弓・砲・器",
       effectSummary:"A/LV10 確率 65% 攻撃340%上昇/対象:弓・砲・器\n①攻撃340%上昇する\n②防御340%上昇する\n③破壊110%上昇する",
       sourceCharacters:[
-        {name:"佐久間信盛", no:"2397", slot:"A", db:"kyoku"}
+        {name:"佐久間信盛", no:"2397", slot:"A", db:"kyoku"},
+        {name:"森可成", no:"2375", slot:"S2", db:"kyoku"}
       ],
-      ownHiddenCandidate: {skill:"日輪ノ守護者", rank:"A"},
+      // このスキルを持つカードを合成素材にすると戦陣吟詠[A]に変化する(ixanary.com個別ページ 2次 で確認)
+      ownHiddenCandidate: {skill:"戦陣 吟詠", rank:"A"},
       trTable:[
         {level:"LV10", points:"-", effect:"弓・砲・器　確率 65% / 攻撃 340%上昇+防御 340%上昇+破壊 110%上昇"}
       ]
@@ -3443,11 +3480,15 @@
       // trTableは北条綱成(No.2374、このスキルの初期スキル所持武将)の登録済みTR1〜TR5データをそのまま転記。
       name:"勝旗勇躍", rank:"A", baseRate:100, target:"槍・馬・器・騎",
       effectSummary:"A/LV10 確率 100% 攻撃440%上昇/対象:槍・馬・器・騎\n模倣不可\n①攻撃440%上昇する\n②防御440%上昇する\n③このスキルを所持する武将の全スキルの卓越確率に50%を加算する",
+      categoryLinks:[
+        {href:"skills-takuetsu.html", label:"卓越スキル一覧を見る"}
+      ],
       sourceCharacters:[
-        {name:"北条綱成", no:"2374", slot:"移植不可", db:"kyoku"},
+        {name:"北条綱成", no:"2374", slot:"A・B", db:"kyoku"},
         {name:"佐久間信盛", no:"2397", slot:"B", db:"kyoku"}
       ],
-      ownHiddenCandidate: {skill:"勝旗勇躍", rank:"A"},
+      // このスキルを持つカードを合成素材にすると戦陣吟詠[A]に変化する(ixanary.com個別ページ 2次 A/B で確認)
+      ownHiddenCandidate: {skill:"戦陣 吟詠", rank:"A"},
       trTable:[
         {level:"LV10", points:"-", effect:"槍・馬・器・騎　確率 100% / 攻撃 440%上昇+防御 440%上昇(卓越確率+50%)"},
         {level:"TR1", points:"10", effect:"槍・馬・器・騎　確率 100% / 攻撃 450%上昇+防御 450%上昇(卓越確率+55%)"},
@@ -3500,7 +3541,7 @@
       sourceCharacters:[
         {name:"豊臣秀吉(5)", no:"1255", slot:"A・B"}
       ],
-      ownHiddenCandidate: {skill:"日輪ノ選剣", rank:"S"},
+      ownHiddenCandidate: {skill:"永世ノ天隻", rank:"SS"},
       trTable:[
         {level:"LV10", points:"-", coefficient:"6", effect:"槍・弓・砲・器　確率 60% / 防御 6%×防御参加武将数(280人)=1680%(120以下で1.5倍)"}
       ]
@@ -3515,7 +3556,7 @@
       sourceCharacters:[
         {name:"本願寺顕如(2)", no:"1246", slot:"A・B"}
       ],
-      ownHiddenCandidate: {skill:"法威燦煌", rank:"S"},
+      ownHiddenCandidate: {skill:"龍驤虎躍", rank:"SS"},
       trTable:[
         {level:"LV10", points:"-", effect:"槍・馬・砲・器　確率 55% / 防御 440%上昇(敵軍卓越追加確率-9%・重複上限2)"}
       ]
@@ -3530,7 +3571,7 @@
       sourceCharacters:[
         {name:"朝倉義景", no:"1243", slot:"A"}
       ],
-      ownHiddenCandidate: {skill:"万界寂香", rank:"S"},
+      ownHiddenCandidate: {skill:"思金神ノ深謀", rank:"SS"},
       trTable:[
         {level:"LV10", points:"-", effect:"槍・砲・器 飛翔6　確率 45% / 防御 330%上昇(自拠点防御時1.5倍)"}
       ]
@@ -3545,7 +3586,7 @@
       sourceCharacters:[
         {name:"立花道雪", no:"1247", slot:"A・B"}
       ],
-      ownHiddenCandidate: {skill:"鎮西ノ雷神", rank:"S"},
+      ownHiddenCandidate: {skill:"八幡神ノ威光", rank:"SSS"},
       trTable:[
         {level:"LV10", points:"-", effect:"槍・弓・器・焙　確率 60% / 攻撃 300%上昇(飛翔なし防御参加武将数×6%加算)"}
       ]
@@ -3557,7 +3598,7 @@
       sourceCharacters:[
         {name:"武田勝頼(5)", no:"1252", slot:"A・B"}
       ],
-      ownHiddenCandidate: {skill:"陥城騎王", rank:"S"},
+      ownHiddenCandidate: {skill:"破邪後輝", rank:"SS"},
       trTable:[
         {level:"LV10", points:"-", effect:"弓・馬・砲・器　確率 45% / 攻撃 200%上昇(自軍攻撃武将数×10%加算)"}
       ]
@@ -3572,7 +3613,7 @@
       sourceCharacters:[
         {name:"宇喜多直家(3)", no:"1256", slot:"A・B"}
       ],
-      ownHiddenCandidate: {skill:"魔弾奏者", rank:"S"},
+      ownHiddenCandidate: {skill:"星神闘覇", rank:"SSS"},
       trTable:[
         {level:"LV10", points:"-", effect:"槍・弓・砲・器 飛翔10　確率 64% / 攻撃 50%上昇(飛翔値合計×9%加算)"}
       ]
@@ -3600,7 +3641,7 @@
       sourceCharacters:[
         {name:"蒲生氏郷(2)", no:"1265", slot:"A・B・C"}
       ],
-      ownHiddenCandidate: {skill:"天限ノ麒麟", rank:"S"},
+      ownHiddenCandidate: {skill:"虚実兵妙", rank:"SS"},
       trTable:[
         {level:"LV10", points:"-", effect:"槍・馬・器・焙 兵站　確率 45% / 防御150%上昇+破壊150%上昇(防御参加武将数×6.5%加算)"},
         {level:"TR1", points:"10", effect:"槍・馬・器・焙 兵站　確率 45% / 防御170%上昇+破壊160%上昇(防御参加武将数×6.5%加算)"},
@@ -3637,7 +3678,7 @@
       sourceCharacters:[
         {name:"北条氏直", no:"1273", slot:"A・B"}
       ],
-      ownHiddenCandidate: {skill:"仁侯ノ決断", rank:"S"},
+      ownHiddenCandidate: {skill:"至天ノ御剣", rank:"SSS"},
       trTable:[
         {level:"LV10", points:"-", effect:"全　確率 100% / 攻撃450%上昇+防御450%上昇(卓越確率+15%)"},
         {level:"TR1", points:"10", effect:"全　確率 100% / 攻撃490%上昇+防御490%上昇(卓越確率+17%)"},
