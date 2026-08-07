@@ -15,7 +15,7 @@
     - gacha-kuji-2026-07-06.html … 2026年7月6日〜31章終了まで(期末プラチナ天獲得イベント)
 
   【ランキング機能について】
-  通常天12種コンプリート連数ランキングはSupabase(rankingsテーブル)に保存している。
+  天12種コンプリート連数ランキングはSupabase(rankingsテーブル)に保存している。
   次の期間に切り替える際は、スクリプト内の定数 KUJI_SCOPE を新しい期間の識別子に変更すること
   (変更しないと過去の期間の記録と混ざって表示されてしまう)。
 -->
@@ -83,7 +83,28 @@
   .gacha-btn.bulk.unlocked{background:linear-gradient(135deg,#3a3a3a,#000);color:#f0d98a;box-shadow:0 3px 10px rgba(0,0,0,.3);}
   .bulk-note{margin:8px auto 0;max-width:520px;font-size:11.5px;line-height:1.75;color:var(--muted);}
 
-  .bulk-summary{width:100%;text-align:center;padding:14px 12px;border-radius:10px;
+  /* 100連は通常のカード演出だと長すぎるので、小さめのカードを1枚ずつ出す。
+     既存の .tier-◯ .gacha-card-front のグラデーションをそのまま使い回すため、
+     カード内の構造は通常カードの表面と同じにしてある。 */
+  .gacha-cards.bulk-mode{gap:5px;align-content:flex-start;padding:6px;
+    max-height:min(56vh,400px);overflow-y:auto;}
+  .bulk-card{width:54px;height:76px;position:relative;flex:0 0 auto;
+    opacity:0;transform:scale(.55);animation:bulkPop .26s cubic-bezier(.2,1.5,.4,1) forwards;}
+  .bulk-card .gacha-card-front{transform:none;padding:3px;border-width:1.5px;border-radius:7px;}
+  .bulk-card .tier-label{font-size:14px;}
+  .bulk-card .tier-charname{font-size:7.5px;margin-top:4px;line-height:1.2;}
+  .bulk-card.bulk-rare{animation:bulkPopRare .42s cubic-bezier(.2,1.5,.4,1) forwards;}
+  @keyframes bulkPop{to{opacity:1;transform:scale(1);}}
+  @keyframes bulkPopRare{
+    0%{opacity:0;transform:scale(.4) rotate(-8deg);}
+    55%{opacity:1;transform:scale(1.22) rotate(3deg);}
+    100%{opacity:1;transform:scale(1) rotate(0);}
+  }
+  @media (prefers-reduced-motion: reduce){
+    .bulk-card,.bulk-card.bulk-rare{animation-duration:.01ms;opacity:1;transform:none;}
+  }
+
+  .bulk-summary{width:100%;text-align:center;padding:14px 12px;margin-top:14px;border-radius:10px;
     background:var(--bg-panel-2);border:1px solid var(--line);}
   .bulk-summary-head{font-family:'Noto Serif JP',serif;font-weight:700;font-size:14px;margin-bottom:12px;}
   .bulk-summary-grid{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;}
@@ -296,6 +317,9 @@
   @media (max-width:480px){
     .gacha-cards{gap:8px;}
     .gacha-card{width:88px;height:126px;}
+    .bulk-card{width:48px;height:68px;}
+    .bulk-card .tier-label{font-size:12px;}
+    .bulk-card .tier-charname{font-size:7px;margin-top:3px;}
     .gacha-card-front{padding:4px;}
     .gacha-card-front .tier-label{font-size:16px;}
     .gacha-card-front .tier-kana{font-size:7.5px;}
@@ -375,10 +399,11 @@
       <div class="bulk-draw-wrap">
         <!-- 文言は H5_ADS_ENABLED に応じてスクリプト側で差し替える。
              ここには広告が無効な場合(=現状)の文言を書いておく。 -->
-        <button id="drawBulkBtn" class="gacha-btn bulk unlocked">100連を一気に引く(演出なし)</button>
+        <button id="drawBulkBtn" class="gacha-btn bulk unlocked">100連を一気に引く</button>
         <p id="bulkNote" class="bulk-note">10連を10回引いた場合と全く同じ結果になります(確率・ランキングの扱いは一切変わりません)。</p>
       </div>
       <div id="gachaCards" class="gacha-cards"></div>
+      <div id="bulkSummary"></div>
       <div id="gachaTally" class="gacha-tally">累計 0連</div>
       <div class="clear-history-wrap">
         <button id="clearHistoryBtn" class="gacha-btn secondary">履歴をクリア</button>
@@ -386,7 +411,7 @@
     </div>
 
     <div id="completePanel" class="complete-panel" style="display:none;">
-      <h2>🎉 通常天12種コンプリート!</h2>
+      <h2>🎉 天12種コンプリート!</h2>
       <p><span id="completeCount">0</span>連で達成しました。ランキングに登録しますか?(名前等は登録されず、完了日時のみ記録されます)</p>
       <div class="complete-form">
         <button id="completeSubmitBtn" class="gacha-btn">登録する</button>
@@ -395,7 +420,7 @@
     </div>
 
     <div class="content-block">
-      <h2>通常天12種コンプリート連数ランキング</h2>
+      <h2>天12種コンプリート連数ランキング</h2>
 
       <h3>最速コンプリート TOP10</h3>
       <div id="rankingBest" class="ranking-list"><p class="note">読み込み中...</p></div>
@@ -490,6 +515,10 @@
   const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im95a3pnemFna3l5Z29iYmZrbXdxIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODQ4ODE2NzMsImV4cCI6MjEwMDQ1NzY3M30.lP8rcREG6iy_A9qA3oDrZh1uf5y3OQeBhGieMFgbUEs';
   const supabaseClient = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
   const KUJI_SCOPE = '2026-08-07'; // 期間限定くじの識別子。次の期間に切り替わったら変更する(32章開幕くじ開始で更新)
+  // rankingsテーブルの絞り込みキー。画面に出る名称(「天12種コンプリート」)とは別物で、
+  // ここを変えると過去の記録が一覧から消えてしまう。
+  // 2026-08-07にコンプリート条件を「通常版のみ」→「通常/パラレルどちらでも可」に緩和したが、
+  // 既に登録された記録を残すことを優先してキーは変えていない。
   const KUJI_RANKING_TITLE = '通常天12種コンプリート';
 
   function formatDateTime(iso){
@@ -1138,8 +1167,8 @@
       const paraPullCell = hasParallel
         ? (e.parallelPulls.length ? e.parallelPulls.join('・')+'連目' : '-')
         : '-';
-      // 32章開幕くじではコンプリート条件が「通常天12種を1枚以上ずつ」なので、
-      // 獲得済みの通常天を朱色で強調して進捗が一目で分かるようにする
+      // コンプリート条件は「天12種を1枚以上ずつ」で、通常版・パラレル版のどちらでも成立する。
+      // そのため両方の列とも、獲得済みなら朱色で強調して進捗が一目で分かるようにする
       return '<tr><td>'+e.name+'</td><td data-label="通常"'+(e.normalCount ? ' class="has-count"' : '')+'>'+e.normalCount+'枚</td>'+
         '<td data-label="パラレル"'+(hasParallel && e.parallelCount ? ' class="has-count"' : '')+'>'+paraCountCell+'</td>'+
         '<td data-label="パラレルを獲得した通算連数">'+paraPullCell+'</td></tr>';
@@ -1205,6 +1234,7 @@
 
   function renderCards(draws){
     const stage = document.getElementById('gachaCards');
+    stopBulkReveal(); // 100連の演出が動いていたら中断して通常のカード表示に戻す
     stage.innerHTML = '';
     const cardEls = draws.map(({tier, detail})=>{
       const card = document.createElement('div');
@@ -1309,18 +1339,20 @@
     checkParallelCompletion();
   }
 
-  // ============ 通常天12種コンプリート検知 ============
+  // ============ 天12種コンプリート検知 ============
   // 【2026-08-07・32章開幕くじでの条件変更】
   // 31章の期末プラチナ天獲得イベントではコンプリート条件を「パラレル(プラチナ)天12種を全て獲得」としていたが、
   // 32章開幕くじではパラレル獲得ボーナスが廃止され各0.0060%でしか出ないため、
-  // 条件を「通常版の天12種(No.1310〜1321)を1枚以上ずつ獲得」に変更した。
+  // 条件を「天12種(No.1310〜1321)を1枚以上ずつ獲得」に変更した。
+  // 通常版とパラレル版は同じ武将の別バージョンなので、どちらを引いてもその1種は揃った扱いにする。
   // 10074〜10076(復刻天)はパラレルを持たない別枠のため対象外。
   let parallelCompleteHandled = false;
   let parallelCompleteSubmitted = false;
   let parallelCompleteCount = null;
 
   function isParallelComplete(){
-    return tenStats.filter(e=>e.parallelNo!==null).every(e=>e.normalCount>0);
+    // 通常版・パラレル(プラチナ)版のどちらかを引いていれば、その1種は揃った扱いにする
+    return tenStats.filter(e=>e.parallelNo!==null).every(e=>e.normalCount>0 || e.parallelCount>0);
   }
 
   function checkParallelCompletion(){
@@ -1383,8 +1415,8 @@
   let bulkUnlocked = !H5_ADS_ENABLED; // 解放状態はページを更新するとリセットされる(仕様どおり)
 
   const BULK_LABEL_LOCKED = '▶ 動画広告を見て「100連一括」を解放';
-  const BULK_LABEL_READY  = '100連を一気に引く(演出なし)';
-  const BULK_NOTE_LOCKED  = '解放するとページを更新するまで何度でも、100連を演出なしで引けます。<br>'
+  const BULK_LABEL_READY  = '100連を一気に引く';
+  const BULK_NOTE_LOCKED  = '解放するとページを更新するまで何度でも、100連をまとめて引けます。<br>'
     + '広告を見なくても10連を10回引けば全く同じ結果になります(確率・ランキングの扱いは一切変わりません)。';
   const BULK_NOTE_READY   = '10連を10回引いた場合と全く同じ結果になります(確率・ランキングの扱いは一切変わりません)。';
 
@@ -1396,8 +1428,48 @@
   }
   updateBulkBtn();
 
-  // 100連はカード演出を出さず内訳サマリだけを表示する(演出スキップが広告の対価そのもの)。
-  // 傑・天の武将名は下の獲得ログに従来どおり出るので、見たい情報は失われない。
+  // 100連は通常のカード演出(1枚あたり約260ms+レア時の再回転)だと数分かかってしまうので、
+  // 小さめのカードを1枚ずつテンポよく出す。一気に結果だけ出すと作業感が強く、
+  // 広告を見た場合のアドバンテージも大きくなりすぎるため、引いている感触は残す。
+  const BULK_STAGGER_MS = 90;     // 1枚あたりの出現間隔
+  const BULK_RARE_PAUSE_MS = 260; // 傑・天が出たら次の1枚まで一拍おく
+  let bulkRevealToken = 0;        // 演出中に履歴クリア等が入った時に中断するための世代番号
+
+  function stopBulkReveal(){
+    bulkRevealToken++;
+    document.getElementById('gachaCards').classList.remove('bulk-mode');
+    document.getElementById('bulkSummary').innerHTML = '';
+  }
+
+  function renderBulkCards(draws, onDone){
+    const stage = document.getElementById('gachaCards');
+    stopBulkReveal();
+    const token = bulkRevealToken;
+    stage.innerHTML = '';
+    stage.classList.add('bulk-mode');
+
+    let t = 0;
+    draws.forEach(({tier, detail})=>{
+      const isRare = (tier === '天' || tier === '傑');
+      setTimeout(()=>{
+        if(token !== bulkRevealToken) return;
+        const card = document.createElement('div');
+        card.className = 'bulk-card tier-'+tier + (isRare ? ' bulk-rare' : '');
+        if(tier==='天' && detail && TEN_PARALLEL_NOS.has(detail.no)) card.classList.add('ten-parallel');
+        card.title = detail ? (detail.name+'(No.'+detail.no+')') : tier;
+        card.innerHTML = '<div class="gacha-card-face gacha-card-front">'
+          + '<div class="tier-label">'+tier+'</div>'
+          + (detail ? '<div class="tier-charname">'+detail.name+'</div>' : '')
+          + '</div>';
+        stage.appendChild(card);
+        stage.scrollTop = stage.scrollHeight; // 出たばかりのカードが常に見えるようにする
+      }, t);
+      t += BULK_STAGGER_MS + (isRare ? BULK_RARE_PAUSE_MS : 0);
+    });
+
+    setTimeout(()=>{ if(token === bulkRevealToken) onDone(); }, t + 150);
+  }
+
   function renderBulkSummary(draws){
     const c = {傑:0, 天:0, 極:0, 特:0, 上:0};
     let para = 0;
@@ -1407,19 +1479,20 @@
     });
     const cells = TIER_ORDER.map(t=>
       '<span class="bulk-sum-cell tier-'+t+'"><b>'+t+'</b>'+c[t]+'</span>').join('');
-    document.getElementById('gachaCards').innerHTML =
+    document.getElementById('bulkSummary').innerHTML =
       '<div class="bulk-summary"><div class="bulk-summary-head">100連の結果</div>'+
       '<div class="bulk-summary-grid">'+cells+'</div>'+
-      (para ? '<div class="bulk-summary-para">パラレル天 '+para+'枚!</div>' : '')+
-      '<div class="bulk-summary-note">武将名は下の獲得ログ・履歴で確認できます</div></div>';
+      (para ? '<div class="bulk-summary-para">パラレル天 '+para+'枚!</div>' : '')+'</div>';
   }
 
   function runBulkDraw(){
     setBusy(true);
     const draws = drawHundredFull();
-    renderBulkSummary(draws);
-    renderPostDrawUI(draws);
-    setBusy(false);
+    renderBulkCards(draws, ()=>{
+      renderBulkSummary(draws);
+      renderPostDrawUI(draws);
+      setBusy(false);
+    });
   }
 
   function grantBulk(){
@@ -1457,6 +1530,8 @@
   });
 
   document.getElementById('clearHistoryBtn').addEventListener('click', ()=>{
+    stopBulkReveal(); // 100連の演出中でも中断できるようにする
+    setBusy(false);
     TIER_ORDER.forEach(t=>tally[t]=0);
     totalDraws = 0;
     ketsuStats.forEach(e=>{ e.count=0; e.pulls=[]; });
