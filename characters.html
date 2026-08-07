@@ -613,7 +613,8 @@
     {name:"豊臣秀吉【覇(5)】", no:"1287", ch:"30章", cost:5.0, troop:"弓馬砲器防", sub:"覇道", effect:"部隊内覇武将数×200%上昇／部隊長時は効果2倍", reviewedOk:true, approved:true,
       furigana:"とよとみひでよし", illustrator:"直良有祐",
       imageFull:"assets/img/characters/no1287_full.png", imageChar:"assets/img/characters/no1287_char.png",
-      atkBase:1210, atkGrowth:66, defBase:1330, defGrowth:83, tacticsBase:870.0, tacticsGrowth:4.5, lv0Troops:5000,
+      // 兵法成長値は2026-08-07にixanary.com(cards/1287の成長推移表 870→1190=80P×4.0)+45do.info(ordinary/0360「兵法：4.0」)の2ソースで訂正(旧: 4.5)
+      atkBase:1210, atkGrowth:66, defBase:1330, defGrowth:83, tacticsBase:870.0, tacticsGrowth:4.0, lv0Troops:5000,
       // カード画像照合済み(2026-07-30): 槍A/弓S/馬X/器A
       rankGrades:{yari:'A', yumi:'S', uma:'X', ki:'A'},
       initialSkill:"暘谷ノ人傑",
@@ -1528,7 +1529,8 @@
     {name:"徳川秀忠", no:"1234", ch:"25章", cost:3.5, troop:"槍弓砲器防", sub:"兵站", effect:"防御参加武将数依存／90人以下で効果1.5倍", reviewedOk:true,
       furigana:"とくがわひでただ", illustrator:"直良有祐",
       imageFull:"assets/img/characters/no1234_full.png", imageChar:"assets/img/characters/no1234_char.png",
-      atkBase:1060, atkGrowth:66, defBase:1200, defGrowth:30, tacticsBase:660.0, tacticsGrowth:3.0, lv0Troops:4250,
+      // 成長値は2026-08-07にixanary.com(cards/1234の成長推移表)+45do.info(ordinary/0108)の2ソースで訂正(旧: 攻66/防30)
+      atkBase:1060, atkGrowth:40, defBase:1200, defGrowth:66, tacticsBase:660.0, tacticsGrowth:3.0, lv0Troops:4250,
       // カード画像照合済み(2026-08-02): 槍S/弓A/馬A/器S
       rankGrades:{yari:'S', yumi:'A', uma:'A', ki:'S'},
       initialSkill:"天封界斬",
@@ -2474,6 +2476,8 @@
         {slot:"S1", skill:"海神ノ浮船", rank:"SS", afterSkill:"海神ノ浮船", afterRank:"SS", rate:"48%", target:"全 飛翔4", effectShort:"防御(3.5×防御参加武将数)%上昇(敵軍飛翔持ち4人未満の時通常武将ダメージを受けない)"},
         {slot:"S2", skill:"天奏聖譚曲", rank:"SS", afterSkill:"天奏聖譚曲", afterRank:"SS", rate:"70%", target:"砲・器", effectShort:"防御(2.5×防御参加武将数)%上昇"}
       ]},
+    // cost:3.5 はカード画像(no1213_char.png)で直接確認済み。ixanary.com(cards/1213)は cost 5 と表記しているが
+    // カード左上の表示が Cost3.5 のためこちらを正とする(2026-08-07、機械監査で不一致として出るが訂正不要)。
     {name:"荒木村重(2)", no:"1213", ch:"23章", cost:3.5, troop:"槍弓馬器攻防", sub:"", effect:"部隊内武将スキル発動率上昇", reviewedOk:true,
       furigana:"あらきむらしげ", illustrator:"直良有祐",
       imageFull:"assets/img/characters/no1213_full.png", imageChar:"assets/img/characters/no1213_char.png",
