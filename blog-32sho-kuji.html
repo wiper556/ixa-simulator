@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7334304987274613"
+     crossorigin="anonymous"></script>
+<title>32章開幕くじは何連で天12種そろうのか｜戦国IXA シミュレーター置き場</title>
+<meta name="description" content="戦国IXA 32章開幕くじの排出確率を整理し、天12種コンプリートに必要な連数を2万回シミュレーションで実測しました。10枚目のブースト・救済の仕組みと、パラレル天がなぜ現実的でないかも解説します。">
+<link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body>
+<div class="site-layout">
+  <aside class="site-sidebar" id="siteSidebar">
+    <div class="sidebar-header">
+      <span class="sidebar-title">メニュー</span>
+    </div>
+    <nav class="sidebar-nav">
+      <a href="index.html">シミュレーター一覧</a>
+      <a href="attack-simulator.html">攻撃/防御シミュレーター</a>
+      <a href="gacha-simulator.html">くじシミュレーター</a>
+      <a href="characters-hub.html">武将データベース</a>
+      <a href="skills-hub.html">スキル一覧</a>
+      <a href="blog.html">記事</a>
+      <a href="about.html">このサイトについて</a>
+      <a href="privacy.html">プライバシーポリシー</a>
+    </nav>
+  </aside>
+
+  <div class="site-content">
+  <header class="site-header">
+    <a class="site-logo" href="index.html">戦国IXA シミュレーター置き場</a>
+  </header>
+
+  <main class="site-main">
+    <p class="article-meta"><a href="blog.html">記事一覧</a> ／ 2026年8月8日</p>
+    <h1 class="page-title">32章開幕くじは何連で天12種そろうのか</h1>
+    <p class="page-lead">2万回シミュレーションして分かった、実際に必要な連数と10枚目の仕組み。</p>
+
+    <div class="content-block">
+      <p>32章「覇界動乱〜戦雲の暁に煌めく群雄〜」が2026年8月7日に開幕し、天武将が12枚追加されました。開幕くじを回すかどうか判断するには「12種そろえるのに何連必要か」が知りたいところですが、これは公式には出ていません。</p>
+      <p>そこで、当サイトの<a href="gacha-simulator.html">くじシミュレーター</a>に入れてある排出確率テーブルをそのまま使い、<strong>12種そろうまで引き続ける試行を2万回</strong>回して分布を取りました。以下の数字はすべてその実測値です。</p>
+    </div>
+
+    <div class="content-block">
+      <h2>結論: 中央値は1,260連</h2>
+      <p>天12種(No.1310〜1321)を1枚以上ずつそろえるまでに必要だった連数です。通常版・パラレル版のどちらでも「そろった」として数えています。</p>
+
+      <div class="table-scroll">
+        <table class="article-table">
+          <thead><tr><th>指標</th><th>連数</th><th>意味</th></tr></thead>
+          <tbody>
+            <tr><td>最速</td><td>280連</td><td>2万回中いちばん運が良かった試行</td></tr>
+            <tr><td>上位10%</td><td>770連</td><td>10人に1人はここまでにそろう</td></tr>
+            <tr><td>上位25%</td><td>970連</td><td>4人に1人はここまで</td></tr>
+            <tr class="row-emph"><td>中央値</td><td>1,260連</td><td><strong>半分の人がここまでにそろう</strong></td></tr>
+            <tr><td>平均</td><td>1,355連</td><td>運が悪い側に引っ張られて中央値より大きい</td></tr>
+            <tr><td>下位25%</td><td>1,630連</td><td>4人に1人はこれ以上かかる</td></tr>
+            <tr><td>下位10%</td><td>2,050連</td><td>10人に1人はこれ以上かかる</td></tr>
+            <tr><td>最遅</td><td>5,650連</td><td>2万回中いちばん運が悪かった試行</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p><strong>目安として1,300連前後、覚悟しておくなら2,000連</strong>というのが実感に近い数字です。平均(1,355連)が中央値(1,260連)より大きいのは、極端に長引く試行が分布を引き伸ばしているためで、こういう分布では平均より中央値を見たほうが体感に合います。</p>
+      <p>最速280連と最遅5,650連で20倍の開きがあります。「知り合いは800連でそろえた」という話が出ても、それは上位25%に入る運の良い例だと考えてください。</p>
+    </div>
+
+    <div class="content-block">
+      <h2>排出確率のおさらい</h2>
+      <p>1〜9枚目に適用される基本確率です。</p>
+      <div class="table-scroll">
+        <table class="article-table">
+          <thead><tr><th>レア度</th><th>確率</th><th>2万回×n連での実測</th></tr></thead>
+          <tbody>
+            <tr><td>傑</td><td>0.018%</td><td>0.019%</td></tr>
+            <tr><td>天</td><td>2.500%</td><td>2.504%</td></tr>
+            <tr><td>極</td><td>20.000%</td><td>19.972%</td></tr>
+            <tr><td>特</td><td>36.500%</td><td>36.565%</td></tr>
+            <tr><td>上</td><td>40.982%</td><td>40.940%</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>実測が公称値とほぼ一致しているので、シミュレーターの抽選部分は正しく動いています。</p>
+    </div>
+
+    <div class="content-block">
+      <h2>10枚目だけルールが違う</h2>
+      <p>10連の10枚目は、1〜9枚目の結果によって確率が切り替わります。ここを知らないと「10連の期待値」を読み違えます。</p>
+
+      <h3>1〜9枚目に極以上が出ていた場合(ブースト)</h3>
+      <div class="table-scroll">
+        <table class="article-table">
+          <thead><tr><th>レア度</th><th>傑</th><th>天</th><th>極</th><th>特</th><th>上</th></tr></thead>
+          <tbody><tr><td>確率</td><td>0.036%</td><td>10.000%</td><td>40.000%</td><td>9.964%</td><td>40.000%</td></tr></tbody>
+        </table>
+      </div>
+
+      <h3>1〜9枚目に極以上が1枚も出ていない場合(救済)</h3>
+      <div class="table-scroll">
+        <table class="article-table">
+          <thead><tr><th>レア度</th><th>傑</th><th>天</th><th>極</th><th>特</th><th>上</th></tr></thead>
+          <tbody><tr><td>確率</td><td>0.036%</td><td>10.000%</td><td>89.964%</td><td>0%</td><td>0%</td></tr></tbody>
+        </table>
+      </div>
+
+      <p>救済側は<strong>極以上が確定</strong>します。ただし救済が発動するのは実測で<strong>10.12%</strong>、つまり10連10回のうち1回程度で、残りの89.88%はブースト側です。「9枚しょぼくても10枚目で極が来る」という体感は、この1割の救済が印象に残りやすいだけで、通常はブースト側の40%抽選になります。</p>
+      <p>いずれにせよ<strong>10枚目の天は10%</strong>で、1〜9枚目の2.5%より4倍出やすくなっています。10連の天期待値は「2.5%×9 + 10%×1 = 0.325枚」で、単発を10回引くより多くなります。<strong>単発より10連のほうが有利</strong>なのはこの10枚目の差によるものです。</p>
+    </div>
+
+    <div class="content-block">
+      <h2>パラレル天は狙うものではない</h2>
+      <p>31章までは「通常版の天を1枚引くと、以後同名の天はパラレル版が確定する」というボーナスがありました。<strong>32章ではこれが廃止され</strong>、パラレル天は抽選テーブル上の確率でしか出ません。</p>
+      <p>その確率は12種合計で<strong>0.072%</strong>です。1連あたり1,389回に1回。天そのものが2.5%で出ることを考えると、<strong>出た天のうちパラレル版である割合は約2.9%</strong>にすぎません。</p>
+      <p>そのため当サイトのコンプリート判定も「通常版・パラレル版のどちらでも1種としてカウント」に変更しています。パラレル12種をそろえる遊び方は、32章では現実的な目標になりません。</p>
+      <p class="note-inline">31章当時の挙動は<a href="gacha-kuji-2026-07-06.html">2026年7月6日〜31章終了まで 期末プラチナ天獲得イベント</a>のページで今も引けます。</p>
+    </div>
+
+    <div class="content-block">
+      <h2>まとめ</h2>
+      <ul>
+        <li>天12種コンプリートの中央値は<strong>1,260連</strong>、平均1,355連。覚悟しておくなら2,000連</li>
+        <li>10枚目は天10%。<strong>単発より10連のほうが期待値が高い</strong></li>
+        <li>救済(極以上確定)が発動するのは10連10回に1回程度</li>
+        <li>パラレル天は0.072%。32章では狙う対象ではない</li>
+      </ul>
+      <p>実際に引いた感覚を試したい場合は<a href="gacha-simulator.html">くじシミュレーター</a>をどうぞ。この記事と同じ確率テーブルで動いているので、ここに書いた分布がそのまま再現できます。</p>
+    </div>
+
+    <div id="pageComments"></div>
+  </main>
+
+  <footer class="site-footer">
+    <p>本サイトは戦国IXA(Sengoku IXA)の非公式ファンメイドツールです。運営会社・関連団体とは一切関係ありません。<br>
+    記載されている会社名・製品名・システム名などは、各社の商標、または登録商標です。<br>
+    © SQUARE ENIX</p>
+    <p><a href="about.html">このサイトについて</a> ・ <a href="privacy.html">プライバシーポリシー</a></p>
+  </footer>
+
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="assets/js/comments-widget.js"></script>
+<script>renderCommentsWidget('pageComments', 'page:blog-32sho-kuji');</script>
+<script src="assets/js/site-sidebar.js"></script>
+</body>
+</html>

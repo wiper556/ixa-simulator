@@ -5,8 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7334304987274613"
      crossorigin="anonymous"></script>
-<title>このサイトについて｜戦国IXA シミュレーター置き場</title>
-<meta name="description" content="戦国IXA シミュレーター置き場の運営方針・免責事項について。">
+<title>記事一覧｜戦国IXA シミュレーター置き場</title>
+<meta name="description" content="戦国IXAのくじ確率・スキル性能・部隊編成について、実データとシミュレーションをもとに検証した記事の一覧です。">
 <link rel="stylesheet" href="assets/css/site.css">
 </head>
 <body>
@@ -33,26 +33,28 @@
   </header>
 
   <main class="site-main">
-    <h1 class="page-title">このサイトについて</h1>
-    <p class="page-lead">戦国IXA(Sengoku IXA)を遊んでいる中で欲しくなった計算ツールを、個人で作って公開しています。</p>
+    <h1 class="page-title">記事</h1>
+    <p class="page-lead">「実際のところ何連必要なのか」「このスキルはどれくらい強いのか」を、推測ではなく実データとシミュレーションで確かめた記事を置いています。</p>
+
+    <ul class="article-list">
+      <li class="article-card">
+        <p class="article-date">2026年8月8日</p>
+        <h2><a href="blog-32sho-kuji.html">32章開幕くじは何連で天12種そろうのか</a></h2>
+        <p>32章の排出確率を整理し、天12種コンプリートに必要な連数を2万回シミュレーションで実測しました。中央値は1,260連。10枚目だけ確率が切り替わる仕組み(ブーストと救済)と、単発より10連が有利になる理由、パラレル天が32章では狙う対象にならない理由もまとめています。</p>
+        <p class="article-tags">くじ ／ 確率検証 ／ 32章</p>
+      </li>
+    </ul>
 
     <div class="content-block">
-      <h2>非公式のファンメイドツールです</h2>
-      <p>当サイトは、株式会社スクウェア・エニックスおよび戦国IXAの運営・開発に関わる各社様とは一切関係のない、個人が趣味で制作・運営している非公式のファンサイトです。ゲーム内の武将名・スキル名等の名称は、ゲームの内容を分かりやすく示すためにそのまま使用していますが、それらの著作権・商標権は各権利者に帰属します。</p>
-      <p>掲載している数値・スキル効果は、公開されている攻略情報サイト等をもとに個人で確認・整理したものです。内容の正確性を保証するものではなく、実際のゲーム内容と差異がある場合があります。誤りに気づかれた際は、お気軽にご指摘いただけると助かります。</p>
-    </div>
-
-    <div class="content-block">
-      <h2>今後の予定</h2>
+      <h2>これから書く予定のもの</h2>
       <ul>
-        <li>攻撃/防御シミュレーターの機能拡充</li>
-        <li>くじシミュレーターへの武将名・画像表示の追加</li>
-        <li>合成シミュレーターの追加</li>
-        <li>部隊構成ランキング機能</li>
-        <li>ユーザー同士が気軽に感想を書き込める掲示板機能</li>
+        <li>人数依存スキルは何人から強いのか(防御参加武将数ごとの実効値比較)</li>
+        <li>卓越の追加確率をどこまで積むと得か</li>
+        <li>コスト減少スキルを何枚積むと1枠増えるのか</li>
       </ul>
-      <p>思いついた機能から少しずつ追加していく方針のため、順不同・時期未定でご了承ください。</p>
+      <p>思いついた順に書いていくため、時期は未定です。取り上げてほしいテーマがあれば各ページのコメント欄で教えてください。</p>
     </div>
+
     <div id="pageComments"></div>
   </main>
 
@@ -68,7 +70,7 @@
 
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script src="assets/js/comments-widget.js"></script>
-<script>renderCommentsWidget('pageComments', 'page:about');</script>
+<script>renderCommentsWidget('pageComments', 'page:blog');</script>
 <script src="assets/js/site-sidebar.js"></script>
 </body>
 </html>

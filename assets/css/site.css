@@ -157,3 +157,23 @@ body{
 .content-block h2{font-family:'Noto Serif JP', serif;font-size:18px;margin:28px 0 10px;color:var(--vermillion-bright);}
 .content-block p{margin:0 0 12px;}
 .content-block ul{margin:0 0 12px;padding-left:1.4em;}
+
+/* ============ 記事(blog.html / blog-*.html) ============ */
+.article-meta{font-size:12px;color:var(--muted);margin:0 0 6px;}
+.article-meta a{color:var(--muted);}
+.table-scroll{overflow-x:auto;margin:0 0 14px;}
+.article-table{border-collapse:collapse;width:100%;min-width:420px;font-size:13.5px;}
+.article-table th,.article-table td{border:1px solid var(--line);padding:7px 11px;text-align:left;}
+.article-table th{background:var(--bg-panel-2, #f2ece0);color:var(--muted);font-weight:700;white-space:nowrap;}
+.article-table td:nth-child(2){font-variant-numeric:tabular-nums;white-space:nowrap;}
+.article-table tr.row-emph td{background:rgba(201,80,61,.07);}
+.note-inline{font-size:12.5px;color:var(--muted);}
+
+.article-list{list-style:none;margin:0 0 8px;padding:0;display:flex;flex-direction:column;gap:14px;}
+.article-card{border:1px solid var(--line);border-radius:9px;padding:16px 18px;background:var(--bg-panel);}
+.article-card h2{font-family:'Noto Serif JP',serif;font-size:17px;margin:0 0 8px;}
+.article-card h2 a{color:var(--vermillion-bright);text-decoration:none;}
+.article-card h2 a:hover{text-decoration:underline;}
+.article-card p{margin:0;font-size:13.5px;line-height:1.8;}
+.article-date{font-size:11.5px;color:var(--muted);margin:0 0 4px !important;}
+.article-tags{margin-top:8px !important;font-size:11.5px;color:var(--muted);}
