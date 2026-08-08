@@ -177,3 +177,15 @@ body{
 .article-card p{margin:0;font-size:13.5px;line-height:1.8;}
 .article-date{font-size:11.5px;color:var(--muted);margin:0 0 4px !important;}
 .article-tags{margin-top:8px !important;font-size:11.5px;color:var(--muted);}
+
+/* ============ 静的書き出しセクション(tools/prerender.py) ============
+   クローラー向けに中身を静的HTMLで持たせるためのセクションだが、
+   隠しテキストはクローキング扱いになるため利用者にも通常どおり見える形にしている。
+   1体ずつ開かないと読めない詳細をまとめて読める場所として実際に役に立つ。 */
+.pr-static{margin-top:40px;padding-top:22px;border-top:2px solid var(--line);}
+.pr-static > h2{font-family:'Noto Serif JP',serif;font-size:19px;margin:0 0 6px;color:var(--vermillion-bright);}
+.pr-lead{font-size:13px;color:var(--muted);margin:0 0 20px;line-height:1.8;}
+.pr-detail{border:1px solid var(--line);border-radius:9px;padding:14px 16px;margin-bottom:16px;background:var(--bg-panel);}
+.pr-detail-title{font-family:'Noto Serif JP',serif;font-size:15.5px;margin:0 0 10px;padding-bottom:7px;border-bottom:1px dashed var(--line);}
+.pr-detail img{max-width:100%;height:auto;}
+.pr-detail table{max-width:100%;}
