@@ -167,9 +167,10 @@
   const generals = [
     {name:"織田信秀【覇】", no:"1310", ch:"32章", cost:7, troop:"全攻", sub:"", effect:"覇道/追加・極限スキルの攻撃・破壊効果2.5倍",
       illustrator:"直良有祐",
-      // カード画像は未取得(スクリーンショットが手元に無いため)。入手後に crop_card.py で作成する。
+      imageFull:"assets/img/characters/no1310_full.png", imageChar:"assets/img/characters/no1310_char.png",
+      // 画像はixagno記事掲載のカード画像から切り出した(JPEG劣化のためハート検出はTOL=50)。
       atkBase:1320, atkGrowth:96, defBase:1200, defGrowth:64, tacticsBase:860.0, tacticsGrowth:4.0, lv0Troops:6100,
-      rankGrades:{yari:'A', yumi:'A', uma:'S', ki:'S'},
+      rankGrades:{yari:'A', yumi:'A', uma:'S', ki:'X'},
       initialSkill:"覇界ノ天虎",
       skillDetail:"SSS/LV10 確率 100% 攻撃1000%上昇/対象:全　覇道\n模倣不可\n①攻撃1000%上昇する\n②このスキルを持つ武将カードは追加・極限スキルの攻撃・破壊効果が2.5倍となる",
       trTable:[
@@ -192,15 +193,16 @@
         {slot:"S2", skill:"神羅聖域", rank:"SS", afterSkill:"神羅聖域", afterRank:"SS", target:"全 覇道", rate:"40%", effectShort:"攻撃900%上昇"}
       ]},
 
-    {name:"斎藤道三（2）【覇】", no:"1311", ch:"32章", cost:6, troop:"全防", sub:"", effect:"部隊長時、対象兵科指揮で部隊総防御力65%上昇",
+    {name:"斎藤道三（2）【覇】", no:"1311", ch:"32章", cost:6, troop:"全防", sub:"", effect:"部隊長時、対象兵科指揮で部隊総防御力55%上昇",
       illustrator:"直良有祐",
-      // カード画像は未取得(スクリーンショットが手元に無いため)。入手後に crop_card.py で作成する。
+      imageFull:"assets/img/characters/no1311_full.png", imageChar:"assets/img/characters/no1311_char.png",
+      // 画像はixagno記事掲載のカード画像から切り出した(JPEG劣化のためハート検出はTOL=50)。
       atkBase:1230, atkGrowth:66, defBase:1310, defGrowth:84, tacticsBase:850.0, tacticsGrowth:4.0, lv0Troops:5500,
       rankGrades:{yari:'X', yumi:'A', uma:'A', ki:'S'},
       initialSkill:"蛇神幻計",
-      skillDetail:"SSS/LV10 確率 40%/対象:全\n模倣不可\n①対象兵科を指揮した戦闘時部隊総防御力が65%上昇する(部隊長時限定)",
+      skillDetail:"SSS/LV10 確率 40%/対象:全\n模倣不可\n①対象兵科を指揮した戦闘時部隊総防御力が55%上昇する(部隊長時限定)",
       trTable:[
-        {level:"LV10", points:"-", effect:"全　確率 40% / 部隊総防御力 65%上昇(部隊長時限定)"},
+        {level:"LV10", points:"-", effect:"全　確率 40% / 部隊総防御力 55%上昇(部隊長時限定)"},
         {level:"TR1", points:"10", effect:"確率：+42％ / 対象 全 対象兵科を指揮した戦闘時、部隊総防御力が58%上昇 (部隊長時限定・模倣不可)"},
         {level:"TR2", points:"40", effect:"確率：+45％ / 対象 全 対象兵科を指揮した戦闘時、部隊総防御力が62%上昇 (部隊長時限定・模倣不可)"},
         {level:"TR3", points:"90", effect:"確率：+50％ / 対象 全 対象兵科を指揮した戦闘時、部隊総防御力が67%上昇 (部隊長時限定・模倣不可)"},
@@ -221,13 +223,14 @@
 
     {name:"今川義元（3）【覇】", no:"1312", ch:"32章", cost:6.5, troop:"弓攻", sub:"", effect:"部隊長かつ自合流時、所属部隊の弓兵科の兵士攻撃力が上昇",
       illustrator:"直良有祐",
-      // カード画像は未取得(スクリーンショットが手元に無いため)。入手後に crop_card.py で作成する。
+      imageFull:"assets/img/characters/no1312_full.png", imageChar:"assets/img/characters/no1312_char.png",
+      // 画像はixagno記事掲載のカード画像から切り出した(JPEG劣化のためハート検出はTOL=50)。
       atkBase:1310, atkGrowth:85, defBase:1200, defGrowth:64, tacticsBase:850.0, tacticsGrowth:4.0, lv0Troops:5800,
       rankGrades:{yari:'A', yumi:'XX', uma:'A', ki:'A'},
       initialSkill:"怪童冥滅",
-      skillDetail:"SSS/LV10 弓兵科の兵士攻撃力上昇/対象:弓\n模倣不可\n①所属部隊内の弓兵科の兵士攻撃力が上昇する\n②上昇量は所属部隊の武将コスト(カード表記)の合計値と所属部隊の自合流(使用コスト)の差1につき+0.9(ただし前者の方が大きい場合に限る)(部隊長時かつ自合流時限定)",
+      skillDetail:"SSS/LV10 弓兵科の兵士攻撃力上昇/対象:弓\n模倣不可\n①所属部隊内の弓兵科の兵士攻撃力が上昇する\n②(所属部隊の武将コスト[カード表記のもの]合計値)と(所属部隊の自合流使用コスト)の差1につき+0.9上昇する(ただし前者の方が大きい場合に限る)(部隊長時かつ自合流時限定)",
       trTable:[
-        {level:"LV10", points:"-", effect:"弓　所属部隊内の弓兵科の兵士攻撃力が上昇(部隊長時かつ自合流時限定)"},
+        {level:"LV10", points:"-", effect:"所属部隊内の弓兵科の兵士攻撃力が上昇 (所属部隊の武将コスト[カード表記のもの]合計値)と (所属部隊の自合流使用コスト)の差1につき、+0.9"},
         {level:"TR1", points:"10", effect:"所属部隊内の弓兵科の兵士攻撃力が上昇 (所属部隊の武将コスト[カード表記のもの]合計値)と (所属部隊の自合流使用コスト)の差1につき、+0.95"},
         {level:"TR2", points:"40", effect:"所属部隊内の弓兵科の兵士攻撃力が上昇 (所属部隊の武将コスト[カード表記のもの]合計値)と (所属部隊の自合流使用コスト)の差1につき、+1"},
         {level:"TR3", points:"90", effect:"所属部隊内の弓兵科の兵士攻撃力が上昇 (所属部隊の武将コスト[カード表記のもの]合計値)と (所属部隊の自合流使用コスト)の差1につき、+1.1"},
@@ -248,7 +251,8 @@
 
     {name:"松平清康（2）", no:"1313", ch:"32章", cost:5.5, troop:"弓器焙騎攻", sub:"", effect:"卓越追加確率-60%だが発動すれば攻撃効果3倍",
       illustrator:"直良有祐",
-      // カード画像は未取得(スクリーンショットが手元に無いため)。入手後に crop_card.py で作成する。
+      imageFull:"assets/img/characters/no1313_full.png", imageChar:"assets/img/characters/no1313_char.png",
+      // 画像はixagno記事掲載のカード画像から切り出した(JPEG劣化のためハート検出はTOL=50)。
       atkBase:1270, atkGrowth:73, defBase:1110, defGrowth:52, tacticsBase:660.0, tacticsGrowth:3.0, lv0Troops:5350,
       rankGrades:{yari:'A', yumi:'S', uma:'A', ki:'S'},
       initialSkill:"十三ノ奇跡",
@@ -275,7 +279,8 @@
 
     {name:"大内義隆（3）", no:"1314", ch:"32章", cost:5, troop:"砲器防", sub:"", effect:"防御参加武将数150以下の自領以外の加勢戦闘時、防御効果3倍",
       illustrator:"直良有祐",
-      // カード画像は未取得(スクリーンショットが手元に無いため)。入手後に crop_card.py で作成する。
+      imageFull:"assets/img/characters/no1314_full.png", imageChar:"assets/img/characters/no1314_char.png",
+      // 画像はixagno記事掲載のカード画像から切り出した(JPEG劣化のためハート検出はTOL=50)。
       atkBase:1060, atkGrowth:47, defBase:1270, defGrowth:73, tacticsBase:670.0, tacticsGrowth:3.0, lv0Troops:5150,
       rankGrades:{yari:'A', yumi:'A', uma:'A', ki:'SS'},
       initialSkill:"鳳凰ノ幻華",
@@ -302,7 +307,8 @@
 
     {name:"北条氏綱（2）", no:"1315", ch:"32章", cost:5, troop:"全防", sub:"", effect:"陣形内で卓越発動した模倣スキル数×150%の全防御上昇",
       illustrator:"直良有祐",
-      // カード画像は未取得(スクリーンショットが手元に無いため)。入手後に crop_card.py で作成する。
+      imageFull:"assets/img/characters/no1315_full.png", imageChar:"assets/img/characters/no1315_char.png",
+      // 画像はixagno記事掲載のカード画像から切り出した(JPEG劣化のためハート検出はTOL=50)。
       atkBase:1060, atkGrowth:46, defBase:1260, defGrowth:72, tacticsBase:680.0, tacticsGrowth:3.5, lv0Troops:5150,
       rankGrades:{yari:'S', yumi:'A', uma:'A', ki:'S'},
       initialSkill:"覇城統陣",
@@ -321,7 +327,7 @@
       // 基礎値・兵科適性・LV10効果・鍛錬表・合成テーブルは同サイトの個別記事(blog-entry-11147)。
       synthesisTable:[
         {slot:"A", skill:"八界経略", rank:"S", afterSkill:"閃裂討鬼", afterRank:"SS", target:"槍・弓・砲・器", rate:"100%", effectShort:"攻撃420%上昇+防御420%上昇(発動率+15%・卓越追加確率+50%)"},
-        {slot:"B", skill:"布刀玉ノ策", rank:"SS", target:"全", rate:"100%", effectShort:"攻撃940%上昇(防御同値)+自軍全武将の卓越確率20%上昇"},
+        {slot:"B", skill:"布刀玉ノ策", rank:"SS", afterSkill:"布刀玉ノ策", afterRank:"SS", target:"全", rate:"100%", effectShort:"攻撃940%上昇(防御同値)+自軍全武将の卓越確率20%上昇"},
         {slot:"C", skill:"経津主神ノ剣", rank:"SSS", afterSkill:"経津主神ノ剣", afterRank:"SSS", target:"自身", rate:"45%", effectShort:"模倣した初期スキルの効果を1.35〜1.5倍に強化"},
         {slot:"S1", skill:"万界神謀", rank:"SS", afterSkill:"万界神謀", afterRank:"SS"},
         {slot:"S2", skill:"月詠ノ覇威", rank:"SS", afterSkill:"月詠ノ覇威", afterRank:"SS", target:"全", rate:"100%", effectShort:"攻防各344%上昇+部隊卓越確率+15%"}
@@ -329,7 +335,8 @@
 
     {name:"尼子経久（3）", no:"1316", ch:"32章", cost:5.5, troop:"-", sub:"", effect:"自領以外の加勢戦闘時、追加・極限スキルの防御効果2倍",
       illustrator:"直良有祐",
-      // カード画像は未取得(スクリーンショットが手元に無いため)。入手後に crop_card.py で作成する。
+      imageFull:"assets/img/characters/no1316_full.png", imageChar:"assets/img/characters/no1316_char.png",
+      // 画像はixagno記事掲載のカード画像から切り出した(JPEG劣化のためハート検出はTOL=50)。
       atkBase:1090, atkGrowth:49, defBase:1280, defGrowth:74, tacticsBase:690.0, tacticsGrowth:3.5, lv0Troops:5340,
       rankGrades:{yari:'S', yumi:'A', uma:'S', ki:'A'},
       initialSkill:"月読ノ冥略",
@@ -356,7 +363,8 @@
 
     {name:"細川晴元（2）", no:"1317", ch:"32章", cost:5.5, troop:"弓砲器攻", sub:"", effect:"対象兵科指揮時、極限スキルの攻撃効果3.5倍",
       illustrator:"直良有祐",
-      // カード画像は未取得(スクリーンショットが手元に無いため)。入手後に crop_card.py で作成する。
+      imageFull:"assets/img/characters/no1317_full.png", imageChar:"assets/img/characters/no1317_char.png",
+      // 画像はixagno記事掲載のカード画像から切り出した(JPEG劣化のためハート検出はTOL=50)。
       atkBase:1280, atkGrowth:74, defBase:1090, defGrowth:49, tacticsBase:670.0, tacticsGrowth:3.0, lv0Troops:5350,
       rankGrades:{yari:'A', yumi:'S', uma:'A', ki:'S'},
       initialSkill:"凶狂威令",
@@ -383,7 +391,8 @@
 
     {name:"武田晴信（4）", no:"1318", ch:"32章", cost:4, troop:"-", sub:"", effect:"撤退/追加スキルの攻撃・速度効果2.5倍",
       illustrator:"直良有祐",
-      // カード画像は未取得(スクリーンショットが手元に無いため)。入手後に crop_card.py で作成する。
+      imageFull:"assets/img/characters/no1318_full.png", imageChar:"assets/img/characters/no1318_char.png",
+      // 画像はixagno記事掲載のカード画像から切り出した(JPEG劣化のためハート検出はTOL=50)。
       atkBase:1260, atkGrowth:72, defBase:1050, defGrowth:48, tacticsBase:680.0, tacticsGrowth:3.5, lv0Troops:4750,
       rankGrades:{yari:'A', yumi:'A', uma:'SS', ki:'A'},
       initialSkill:"焔天滅刻",
@@ -410,7 +419,8 @@
 
     {name:"朝倉宗滴", no:"1319", ch:"32章", cost:5, troop:"槍砲器防", sub:"", effect:"部隊内の同スキル所持武将数で防御効果が倍増",
       illustrator:"直良有祐",
-      // カード画像は未取得(スクリーンショットが手元に無いため)。入手後に crop_card.py で作成する。
+      imageFull:"assets/img/characters/no1319_full.png", imageChar:"assets/img/characters/no1319_char.png",
+      // 画像はixagno記事掲載のカード画像から切り出した(JPEG劣化のためハート検出はTOL=50)。
       atkBase:1100, atkGrowth:49, defBase:1250, defGrowth:73, tacticsBase:680.0, tacticsGrowth:3.5, lv0Troops:5160,
       rankGrades:{yari:'S', yumi:'A', uma:'A', ki:'S'},
       initialSkill:"不敗ノ滅陣",
@@ -437,7 +447,8 @@
 
     {name:"伊達稙宗", no:"1320", ch:"32章", cost:3, troop:"全攻", sub:"", effect:"攻撃時、敵軍の被害兵数7%増加",
       illustrator:"直良有祐",
-      // カード画像は未取得(スクリーンショットが手元に無いため)。入手後に crop_card.py で作成する。
+      imageFull:"assets/img/characters/no1320_full.png", imageChar:"assets/img/characters/no1320_char.png",
+      // 画像はixagno記事掲載のカード画像から切り出した(JPEG劣化のためハート検出はTOL=50)。
       atkBase:1250, atkGrowth:72, defBase:1060, defGrowth:45, tacticsBase:660.0, tacticsGrowth:3.0, lv0Troops:4280,
       rankGrades:{yari:'S', yumi:'S', uma:'A', ki:'A'},
       initialSkill:"黒翼竜",
@@ -464,7 +475,8 @@
 
     {name:"六角定頼", no:"1321", ch:"32章", cost:5.5, troop:"弓馬焙騎攻", sub:"", effect:"自軍城主数10以上で攻撃効果3倍",
       illustrator:"直良有祐",
-      // カード画像は未取得(スクリーンショットが手元に無いため)。入手後に crop_card.py で作成する。
+      imageFull:"assets/img/characters/no1321_full.png", imageChar:"assets/img/characters/no1321_char.png",
+      // 画像はixagno記事掲載のカード画像から切り出した(JPEG劣化のためハート検出はTOL=50)。
       atkBase:1260, atkGrowth:73, defBase:1080, defGrowth:48, tacticsBase:690.0, tacticsGrowth:3.5, lv0Troops:5340,
       rankGrades:{yari:'A', yumi:'S', uma:'S', ki:'A'},
       initialSkill:"天弦ノ威軍",
