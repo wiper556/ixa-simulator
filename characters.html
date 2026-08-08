@@ -165,6 +165,330 @@
      内部計算用のgeneralGrowthDBとは別物で、こちらは一般公開・閲覧専用。
   ============================================ */
   const generals = [
+    {name:"織田信秀【覇】", no:"1310", ch:"32章", cost:7, troop:"全攻", sub:"", effect:"覇道/追加・極限スキルの攻撃・破壊効果2.5倍",
+      illustrator:"直良有祐",
+      // カード画像は未取得(スクリーンショットが手元に無いため)。入手後に crop_card.py で作成する。
+      atkBase:1320, atkGrowth:96, defBase:1200, defGrowth:64, tacticsBase:860.0, tacticsGrowth:4.0, lv0Troops:6100,
+      rankGrades:{yari:'A', yumi:'A', uma:'S', ki:'S'},
+      initialSkill:"覇界ノ天虎",
+      skillDetail:"SSS/LV10 確率 100% 攻撃1000%上昇/対象:全　覇道\n模倣不可\n①攻撃1000%上昇する\n②このスキルを持つ武将カードは追加・極限スキルの攻撃・破壊効果が2.5倍となる",
+      trTable:[
+        {level:"LV10", points:"-", effect:"全 覇道　確率 100% / 攻撃 1000%上昇(追加・極限スキルの攻撃・破壊効果2.5倍)"},
+        {level:"TR1", points:"10", effect:"確率 100% / 対象 全 攻撃：1060%上昇 覇道 このスキルを持つ武将カードは、 追加・極限スキルの攻撃・破壊効果が2.6倍"},
+        {level:"TR2", points:"40", effect:"確率 100% / 対象 全 攻撃：1140%上昇 覇道 このスキルを持つ武将カードは、 追加・極限スキルの攻撃・破壊効果が2.7倍"},
+        {level:"TR3", points:"90", effect:"確率 100% / 対象 全 攻撃：1240%上昇 覇道 このスキルを持つ武将カードは、 追加・極限スキルの攻撃・破壊効果が2.8倍"},
+        {level:"TR4", points:"150", effect:"確率 100% / 対象 全 攻撃：1360%上昇 覇道 このスキルを持つ武将カードは、 追加・極限スキルの攻撃・破壊効果が2.9倍"},
+        {level:"TR5", points:"200", effect:"確率 100% / 対象 全 攻撃：1500%上昇 覇道 このスキルを持つ武将カードは、 追加・極限スキルの攻撃・破壊効果が3倍"}
+      ],
+      // 2026-08-07開幕の32章新天。ixanary.comは2026-08-08時点で未対応(cards/1310 は404)のため
+      // 別ソースで確定させた。スキル名・作家名は公式ニュース(スクウェア・エニックス発表)、
+      // コスト/指揮兵数/成長値は ixagno.blog.fc2.com【天】武将一覧、
+      // 基礎値・兵科適性・LV10効果・鍛錬表・合成テーブルは同サイトの個別記事(blog-entry-11144)。
+      synthesisTable:[
+        {slot:"A", skill:"勇冠三軍", rank:"SSS", afterSkill:"勇冠三軍", afterRank:"SSS", target:"全", rate:"45%", effectShort:"攻撃50%+係数×人数で上昇"},
+        {slot:"B", skill:"万界神謀", rank:"SS", afterSkill:"万界神謀", afterRank:"SS"},
+        {slot:"C", skill:"絶界滅刃", rank:"SS", afterSkill:"絶界滅刃", afterRank:"SS"},
+        {slot:"S1", skill:"皇天覇虎", rank:"SSS", afterSkill:"皇天覇虎", afterRank:"SSS"},
+        {slot:"S2", skill:"神羅聖域", rank:"SS", afterSkill:"神羅聖域", afterRank:"SS", target:"全 覇道", rate:"40%", effectShort:"攻撃900%上昇"}
+      ]},
+
+    {name:"斎藤道三（2）【覇】", no:"1311", ch:"32章", cost:6, troop:"全防", sub:"", effect:"部隊長時、対象兵科指揮で部隊総防御力65%上昇",
+      illustrator:"直良有祐",
+      // カード画像は未取得(スクリーンショットが手元に無いため)。入手後に crop_card.py で作成する。
+      atkBase:1230, atkGrowth:66, defBase:1310, defGrowth:84, tacticsBase:850.0, tacticsGrowth:4.0, lv0Troops:5500,
+      rankGrades:{yari:'X', yumi:'A', uma:'A', ki:'S'},
+      initialSkill:"蛇神幻計",
+      skillDetail:"SSS/LV10 確率 40%/対象:全\n模倣不可\n①対象兵科を指揮した戦闘時部隊総防御力が65%上昇する(部隊長時限定)",
+      trTable:[
+        {level:"LV10", points:"-", effect:"全　確率 40% / 部隊総防御力 65%上昇(部隊長時限定)"},
+        {level:"TR1", points:"10", effect:"確率：+42％ / 対象 全 対象兵科を指揮した戦闘時、部隊総防御力が58%上昇 (部隊長時限定・模倣不可)"},
+        {level:"TR2", points:"40", effect:"確率：+45％ / 対象 全 対象兵科を指揮した戦闘時、部隊総防御力が62%上昇 (部隊長時限定・模倣不可)"},
+        {level:"TR3", points:"90", effect:"確率：+50％ / 対象 全 対象兵科を指揮した戦闘時、部隊総防御力が67%上昇 (部隊長時限定・模倣不可)"},
+        {level:"TR4", points:"150", effect:"確率：+55％ / 対象 全 対象兵科を指揮した戦闘時、部隊総防御力が73%上昇 (部隊長時限定・模倣不可)"},
+        {level:"TR5", points:"200", effect:"確率：+60％ / 対象 全 対象兵科を指揮した戦闘時、部隊総防御力が80%上昇 (部隊長時限定・模倣不可)"}
+      ],
+      // 2026-08-07開幕の32章新天。ixanary.comは2026-08-08時点で未対応(cards/1311 は404)のため
+      // 別ソースで確定させた。スキル名・作家名は公式ニュース(スクウェア・エニックス発表)、
+      // コスト/指揮兵数/成長値は ixagno.blog.fc2.com【天】武将一覧、
+      // 基礎値・兵科適性・LV10効果・鍛錬表・合成テーブルは同サイトの個別記事(blog-entry-11141)。
+      synthesisTable:[
+        {slot:"A", skill:"月煌侵蝕", rank:"SSS", afterSkill:"月煌侵蝕", afterRank:"SSS", target:"全 兵站", rate:"45%", effectShort:"防御を係数×人数で上昇"},
+        {slot:"B", skill:"熾炎破天", rank:"SS", afterSkill:"熾炎破天", afterRank:"SS"},
+        {slot:"C", skill:"覇天金剛", rank:"SS", afterSkill:"覇天金剛", afterRank:"SS"},
+        {slot:"S1", skill:"虚妄ノ神蛇", rank:"SSS", afterSkill:"虚妄ノ神蛇", afterRank:"SSS"},
+        {slot:"S2", skill:"國才連豪", rank:"SS", afterSkill:"國才連豪", afterRank:"SS", target:"全", rate:"50%", effectShort:"防御が係数×同スキル所持武将数で上昇"}
+      ]},
+
+    {name:"今川義元（3）【覇】", no:"1312", ch:"32章", cost:6.5, troop:"弓攻", sub:"", effect:"部隊長かつ自合流時、所属部隊の弓兵科の兵士攻撃力が上昇",
+      illustrator:"直良有祐",
+      // カード画像は未取得(スクリーンショットが手元に無いため)。入手後に crop_card.py で作成する。
+      atkBase:1310, atkGrowth:85, defBase:1200, defGrowth:64, tacticsBase:850.0, tacticsGrowth:4.0, lv0Troops:5800,
+      rankGrades:{yari:'A', yumi:'XX', uma:'A', ki:'A'},
+      initialSkill:"怪童冥滅",
+      skillDetail:"SSS/LV10 弓兵科の兵士攻撃力上昇/対象:弓\n模倣不可\n①所属部隊内の弓兵科の兵士攻撃力が上昇する\n②上昇量は所属部隊の武将コスト(カード表記)の合計値と所属部隊の自合流(使用コスト)の差1につき+0.9(ただし前者の方が大きい場合に限る)(部隊長時かつ自合流時限定)",
+      trTable:[
+        {level:"LV10", points:"-", effect:"弓　所属部隊内の弓兵科の兵士攻撃力が上昇(部隊長時かつ自合流時限定)"},
+        {level:"TR1", points:"10", effect:"所属部隊内の弓兵科の兵士攻撃力が上昇 (所属部隊の武将コスト[カード表記のもの]合計値)と (所属部隊の自合流使用コスト)の差1につき、+0.95"},
+        {level:"TR2", points:"40", effect:"所属部隊内の弓兵科の兵士攻撃力が上昇 (所属部隊の武将コスト[カード表記のもの]合計値)と (所属部隊の自合流使用コスト)の差1につき、+1"},
+        {level:"TR3", points:"90", effect:"所属部隊内の弓兵科の兵士攻撃力が上昇 (所属部隊の武将コスト[カード表記のもの]合計値)と (所属部隊の自合流使用コスト)の差1につき、+1.1"},
+        {level:"TR4", points:"150", effect:"所属部隊内の弓兵科の兵士攻撃力が上昇 (所属部隊の武将コスト[カード表記のもの]合計値)と (所属部隊の自合流使用コスト)の差1につき、+1.2"},
+        {level:"TR5", points:"200", effect:"所属部隊内の弓兵科の兵士攻撃力が上昇 (所属部隊の武将コスト[カード表記のもの]合計値)と (所属部隊の自合流使用コスト)の差1につき、+1.3"}
+      ],
+      // 2026-08-07開幕の32章新天。ixanary.comは2026-08-08時点で未対応(cards/1312 は404)のため
+      // 別ソースで確定させた。スキル名・作家名は公式ニュース(スクウェア・エニックス発表)、
+      // コスト/指揮兵数/成長値は ixagno.blog.fc2.com【天】武将一覧、
+      // 基礎値・兵科適性・LV10効果・鍛錬表・合成テーブルは同サイトの個別記事(blog-entry-11142)。
+      synthesisTable:[
+        {slot:"A", skill:"覇天金剛", rank:"SS", afterSkill:"覇天金剛", afterRank:"SS"},
+        {slot:"B", skill:"絶界滅刃", rank:"SS", afterSkill:"絶界滅刃", afterRank:"SS"},
+        {slot:"C", skill:"魁星ノ神弓", rank:"SSS", afterSkill:"魁星ノ神弓", afterRank:"SSS"},
+        {slot:"S1", skill:"魁星ノ神弓", rank:"SSS", afterSkill:"魁星ノ神弓", afterRank:"SSS"},
+        {slot:"S2", skill:"龍驤虎躍", rank:"SS", afterSkill:"龍驤虎躍", afterRank:"SS", target:"全", rate:"60%", effectShort:"攻防810%上昇+コスト-1"}
+      ]},
+
+    {name:"松平清康（2）", no:"1313", ch:"32章", cost:5.5, troop:"弓器焙騎攻", sub:"", effect:"卓越追加確率-60%だが発動すれば攻撃効果3倍",
+      illustrator:"直良有祐",
+      // カード画像は未取得(スクリーンショットが手元に無いため)。入手後に crop_card.py で作成する。
+      atkBase:1270, atkGrowth:73, defBase:1110, defGrowth:52, tacticsBase:660.0, tacticsGrowth:3.0, lv0Troops:5350,
+      rankGrades:{yari:'A', yumi:'S', uma:'A', ki:'S'},
+      initialSkill:"十三ノ奇跡",
+      skillDetail:"S/LV10 確率 100% 攻撃350%上昇/対象:弓・器・焙・騎　卓越\n①攻撃350%上昇する\n②卓越の追加確率-60%で攻撃効果が3倍になる(卓越の追加確率が0%を超える時のみ卓越抽選される)",
+      trTable:[
+        {level:"LV10", points:"-", effect:"弓・器・焙・騎 卓越　確率 100% / 攻撃 350%上昇(卓越追加確率-60%・発動時3倍)"},
+        {level:"TR1", points:"10", effect:"確率 100% / 対象 弓/器/焙/騎 攻撃：360%上昇 卓越：追加確率-55%で攻撃効果が3倍"},
+        {level:"TR2", points:"40", effect:"確率 100% / 対象 弓/器/焙/騎 攻撃：370%上昇 卓越：追加確率-50%で攻撃効果が3倍"},
+        {level:"TR3", points:"90", effect:"確率 100% / 対象 弓/器/焙/騎 攻撃：380%上昇 卓越：追加確率-40%で攻撃効果が3倍"},
+        {level:"TR4", points:"150", effect:"確率 100% / 対象 弓/器/焙/騎 攻撃：400%上昇 卓越：追加確率-30%で攻撃効果が3倍"},
+        {level:"TR5", points:"200", effect:"確率 100% / 対象 弓/器/焙/騎 攻撃：420%上昇 卓越：追加確率-20%で攻撃効果が3倍"}
+      ],
+      // 2026-08-07開幕の32章新天。ixanary.comは2026-08-08時点で未対応(cards/1313 は404)のため
+      // 別ソースで確定させた。スキル名・作家名は公式ニュース(スクウェア・エニックス発表)、
+      // コスト/指揮兵数/成長値は ixagno.blog.fc2.com【天】武将一覧、
+      // 基礎値・兵科適性・LV10効果・鍛錬表・合成テーブルは同サイトの個別記事(blog-entry-11145)。
+      synthesisTable:[
+        {slot:"A", skill:"絶界滅刃", rank:"SS", afterSkill:"絶界滅刃", afterRank:"SS"},
+        {slot:"B", skill:"思金神ノ深謀", rank:"SS", afterSkill:"思金神ノ深謀", afterRank:"SS", target:"部隊長", rate:"60%", effectShort:"部隊長の初期スキルを模倣(卓越時1.3倍)"},
+        {slot:"C", skill:"幻像鏡花", rank:"SSS", afterSkill:"幻像鏡花", afterRank:"SSS", target:"部隊長", rate:"56%", effectShort:"部隊長の初期スキルを卓越:追加確率40%で1.35倍にして模倣"},
+        {slot:"S1", skill:"十三ノ奇跡", rank:"S", afterSkill:"十三ノ奇跡", afterRank:"S"},
+        {slot:"S2", skill:"戦華雄渾", rank:"SS", afterSkill:"戦華雄渾", afterRank:"SS", target:"全", rate:"100%", effectShort:"攻防各140%上昇(卓越時4倍)"}
+      ]},
+
+    {name:"大内義隆（3）", no:"1314", ch:"32章", cost:5, troop:"砲器防", sub:"", effect:"防御参加武将数150以下の自領以外の加勢戦闘時、防御効果3倍",
+      illustrator:"直良有祐",
+      // カード画像は未取得(スクリーンショットが手元に無いため)。入手後に crop_card.py で作成する。
+      atkBase:1060, atkGrowth:47, defBase:1270, defGrowth:73, tacticsBase:670.0, tacticsGrowth:3.0, lv0Troops:5150,
+      rankGrades:{yari:'A', yumi:'A', uma:'A', ki:'SS'},
+      initialSkill:"鳳凰ノ幻華",
+      skillDetail:"S/LV10 確率 50% 防御700%上昇/対象:砲・器\n①防御700%上昇する\n②防御参加武将数が150以下の自領以外の加勢戦闘時防御効果が3倍になる",
+      trTable:[
+        {level:"LV10", points:"-", effect:"砲・器　確率 50% / 防御 700%上昇(防御参加武将数150以下の自領以外の加勢で3倍)"},
+        {level:"TR1", points:"10", effect:"確率 50% / 対象 砲/器 防御：730%上昇 防御参加武将数が150以下の自領以外の加勢戦闘時、防御効果3倍"},
+        {level:"TR2", points:"40", effect:"確率 50% / 対象 砲/器 防御：760%上昇 防御参加武将数が150以下の自領以外の加勢戦闘時、防御効果3倍"},
+        {level:"TR3", points:"90", effect:"確率 50% / 対象 砲/器 防御：800%上昇 防御参加武将数が150以下の自領以外の加勢戦闘時、防御効果3倍"},
+        {level:"TR4", points:"150", effect:"確率 50% / 対象 砲/器 防御：890%上昇 防御参加武将数が150以下の自領以外の加勢戦闘時、防御効果3倍"},
+        {level:"TR5", points:"200", effect:"確率 50% / 対象 砲/器 防御：1000%上昇 防御参加武将数が150以下の自領以外の加勢戦闘時、防御効果3倍"}
+      ],
+      // 2026-08-07開幕の32章新天。ixanary.comは2026-08-08時点で未対応(cards/1314 は404)のため
+      // 別ソースで確定させた。スキル名・作家名は公式ニュース(スクウェア・エニックス発表)、
+      // コスト/指揮兵数/成長値は ixagno.blog.fc2.com【天】武将一覧、
+      // 基礎値・兵科適性・LV10効果・鍛錬表・合成テーブルは同サイトの個別記事(blog-entry-11146)。
+      synthesisTable:[
+        {slot:"A", skill:"覇天金剛", rank:"SS", afterSkill:"覇天金剛", afterRank:"SS"},
+        {slot:"B", skill:"千里必勝ノ神算", rank:"SS", afterSkill:"千里必勝ノ神算", afterRank:"SS", target:"全 覇道", rate:"42%", effectShort:"攻撃1010%上昇(防御同値)+破壊150%上昇"},
+        {slot:"C", skill:"梵天浄界", rank:"SSS", afterSkill:"梵天浄界", afterRank:"SSS", target:"全", rate:"60%", effectShort:"防御50%+破壊を係数×人数で上昇"},
+        {slot:"S1", skill:"鳳凰ノ幻華", rank:"S", afterSkill:"鳳凰ノ幻華", afterRank:"S"},
+        {slot:"S2", skill:"國才連豪", rank:"SS", afterSkill:"國才連豪", afterRank:"SS", target:"全", rate:"50%", effectShort:"防御が係数×同スキル所持武将数で上昇"}
+      ]},
+
+    {name:"北条氏綱（2）", no:"1315", ch:"32章", cost:5, troop:"全防", sub:"", effect:"陣形内で卓越発動した模倣スキル数×150%の全防御上昇",
+      illustrator:"直良有祐",
+      // カード画像は未取得(スクリーンショットが手元に無いため)。入手後に crop_card.py で作成する。
+      atkBase:1060, atkGrowth:46, defBase:1260, defGrowth:72, tacticsBase:680.0, tacticsGrowth:3.5, lv0Troops:5150,
+      rankGrades:{yari:'S', yumi:'A', uma:'A', ki:'S'},
+      initialSkill:"覇城統陣",
+      skillDetail:"S/LV10 全防御(模倣スキル卓越発動数×150)%上昇/対象:全\n模倣不可\n①本丸防御陣形・所領防御陣形に配置時所属陣形内の模倣スキルが卓越発動した部隊に下記の効果を与える\n②全防御が(その部隊内で卓越発動した模倣スキル数×150)%上昇する",
+      trTable:[
+        {level:"LV10", points:"-", effect:"全　全防御 (部隊内で卓越発動した模倣スキル数×150)%上昇(本丸・所領防御陣形限定)"},
+        {level:"TR1", points:"10", effect:"本丸防御陣形／所領防御陣形に配置時のみ発動 所属陣形内の模倣スキルが卓越発動した部隊に下記の効果 全防御：【その部隊内で卓越発動した模倣スキル数×160】%上昇"},
+        {level:"TR2", points:"40", effect:"本丸防御陣形／所領防御陣形に配置時のみ発動 所属陣形内の模倣スキルが卓越発動した部隊に下記の効果 全防御：【その部隊内で卓越発動した模倣スキル数×170】%上昇"},
+        {level:"TR3", points:"90", effect:"本丸防御陣形／所領防御陣形に配置時のみ発動 所属陣形内の模倣スキルが卓越発動した部隊に下記の効果 全防御：【その部隊内で卓越発動した模倣スキル数×180】%上昇"},
+        {level:"TR4", points:"150", effect:"本丸防御陣形／所領防御陣形に配置時のみ発動 所属陣形内の模倣スキルが卓越発動した部隊に下記の効果 全防御：【その部隊内で卓越発動した模倣スキル数×190】%上昇"},
+        {level:"TR5", points:"200", effect:"本丸防御陣形／所領防御陣形に配置時のみ発動 所属陣形内の模倣スキルが卓越発動した部隊に下記の効果 全防御：【その部隊内で卓越発動した模倣スキル数×200】%上昇"}
+      ],
+      // 2026-08-07開幕の32章新天。ixanary.comは2026-08-08時点で未対応(cards/1315 は404)のため
+      // 別ソースで確定させた。スキル名・作家名は公式ニュース(スクウェア・エニックス発表)、
+      // コスト/指揮兵数/成長値は ixagno.blog.fc2.com【天】武将一覧、
+      // 基礎値・兵科適性・LV10効果・鍛錬表・合成テーブルは同サイトの個別記事(blog-entry-11147)。
+      synthesisTable:[
+        {slot:"A", skill:"八界経略", rank:"S", afterSkill:"閃裂討鬼", afterRank:"SS", target:"槍・弓・砲・器", rate:"100%", effectShort:"攻撃420%上昇+防御420%上昇(発動率+15%・卓越追加確率+50%)"},
+        {slot:"B", skill:"布刀玉ノ策", rank:"SS", target:"全", rate:"100%", effectShort:"攻撃940%上昇(防御同値)+自軍全武将の卓越確率20%上昇"},
+        {slot:"C", skill:"経津主神ノ剣", rank:"SSS", afterSkill:"経津主神ノ剣", afterRank:"SSS", target:"自身", rate:"45%", effectShort:"模倣した初期スキルの効果を1.35〜1.5倍に強化"},
+        {slot:"S1", skill:"万界神謀", rank:"SS", afterSkill:"万界神謀", afterRank:"SS"},
+        {slot:"S2", skill:"月詠ノ覇威", rank:"SS", afterSkill:"月詠ノ覇威", afterRank:"SS", target:"全", rate:"100%", effectShort:"攻防各344%上昇+部隊卓越確率+15%"}
+      ]},
+
+    {name:"尼子経久（3）", no:"1316", ch:"32章", cost:5.5, troop:"-", sub:"", effect:"自領以外の加勢戦闘時、追加・極限スキルの防御効果2倍",
+      illustrator:"直良有祐",
+      // カード画像は未取得(スクリーンショットが手元に無いため)。入手後に crop_card.py で作成する。
+      atkBase:1090, atkGrowth:49, defBase:1280, defGrowth:74, tacticsBase:690.0, tacticsGrowth:3.5, lv0Troops:5340,
+      rankGrades:{yari:'S', yumi:'A', uma:'S', ki:'A'},
+      initialSkill:"月読ノ冥略",
+      skillDetail:"S/LV10 追加・極限スキルの防御効果2倍/対象:-\n模倣不可\n①このスキルを持つ武将カードは自領以外の加勢戦闘時のみ追加スキルの防御効果が2倍になる\n②極限スキルの防御効果が2倍になる",
+      trTable:[
+        {level:"LV10", points:"-", effect:"-　自領以外の加勢戦闘時、追加スキル・極限スキルの防御効果が2倍"},
+        {level:"TR1", points:"10", effect:"自領以外の加勢戦闘時のみ、 追加スキルの防御効果が2倍 極限スキルの防御効果が2.1倍"},
+        {level:"TR2", points:"40", effect:"自領以外の加勢戦闘時のみ、 追加スキルの防御効果が2倍 極限スキルの防御効果が2.3倍"},
+        {level:"TR3", points:"90", effect:"自領以外の加勢戦闘時のみ、 追加スキルの防御効果が2倍 極限スキルの防御効果が2.5倍"},
+        {level:"TR4", points:"150", effect:"自領以外の加勢戦闘時のみ、 追加スキルの防御効果が2倍 極限スキルの防御効果が2.7倍"},
+        {level:"TR5", points:"200", effect:"自領以外の加勢戦闘時のみ、 追加スキルの防御効果が2倍 極限スキルの防御効果が3倍"}
+      ],
+      // 2026-08-07開幕の32章新天。ixanary.comは2026-08-08時点で未対応(cards/1316 は404)のため
+      // 別ソースで確定させた。スキル名・作家名は公式ニュース(スクウェア・エニックス発表)、
+      // コスト/指揮兵数/成長値は ixagno.blog.fc2.com【天】武将一覧、
+      // 基礎値・兵科適性・LV10効果・鍛錬表・合成テーブルは同サイトの個別記事(blog-entry-11148)。
+      synthesisTable:[
+        {slot:"A", skill:"千里必勝ノ神算", rank:"SS", afterSkill:"千里必勝ノ神算", afterRank:"SS", target:"全 覇道", rate:"42%", effectShort:"攻撃1010%上昇(防御同値)+破壊150%上昇"},
+        {slot:"B", skill:"虚実兵妙", rank:"SS", afterSkill:"虚実兵妙", afterRank:"SS", target:"全", rate:"100%", effectShort:"防御740%上昇+敵軍卓越確率-8%"},
+        {slot:"C", skill:"従魔絶神", rank:"SSS", afterSkill:"従魔絶神", afterRank:"SSS", target:"全 飛翔13", rate:"43%", effectShort:"防御を係数×人数で上昇"},
+        {slot:"S1", skill:"岳王ノ加護", rank:"SS", afterSkill:"岳王ノ加護", afterRank:"SS", target:"全 無尽", rate:"50%", effectShort:"防御を係数×人数で上昇"},
+        {slot:"S2", skill:"月煌侵蝕", rank:"SSS", afterSkill:"月煌侵蝕", afterRank:"SSS", target:"全 兵站", rate:"45%", effectShort:"防御を係数×人数で上昇"}
+      ]},
+
+    {name:"細川晴元（2）", no:"1317", ch:"32章", cost:5.5, troop:"弓砲器攻", sub:"", effect:"対象兵科指揮時、極限スキルの攻撃効果3.5倍",
+      illustrator:"直良有祐",
+      // カード画像は未取得(スクリーンショットが手元に無いため)。入手後に crop_card.py で作成する。
+      atkBase:1280, atkGrowth:74, defBase:1090, defGrowth:49, tacticsBase:670.0, tacticsGrowth:3.0, lv0Troops:5350,
+      rankGrades:{yari:'A', yumi:'S', uma:'A', ki:'S'},
+      initialSkill:"凶狂威令",
+      skillDetail:"S/LV10 確率 100% 攻撃510%上昇/対象:弓・砲・器\n模倣不可\n①攻撃510%上昇する\n②対象兵科指揮時極限スキルの攻撃効果が3.5倍となる",
+      trTable:[
+        {level:"LV10", points:"-", effect:"弓・砲・器　確率 100% / 攻撃 510%上昇(極限スキルの攻撃効果3.5倍)"},
+        {level:"TR1", points:"10", effect:"確率 100% / 対象 弓/砲/器 攻撃：550%上昇 対象兵科指揮時、極限スキルの攻撃効果が3.6倍"},
+        {level:"TR2", points:"40", effect:"確率 100% / 対象 弓/砲/器 攻撃：630%上昇 対象兵科指揮時、極限スキルの攻撃効果が3.8倍"},
+        {level:"TR3", points:"90", effect:"確率 100% / 対象 弓/砲/器 攻撃：730%上昇 対象兵科指揮時、極限スキルの攻撃効果が4倍"},
+        {level:"TR4", points:"150", effect:"確率 100% / 対象 弓/砲/器 攻撃：850%上昇 対象兵科指揮時、極限スキルの攻撃効果が4.2倍"},
+        {level:"TR5", points:"200", effect:"確率 100% / 対象 弓/砲/器 攻撃：990%上昇 対象兵科指揮時、極限スキルの攻撃効果が4.5倍"}
+      ],
+      // 2026-08-07開幕の32章新天。ixanary.comは2026-08-08時点で未対応(cards/1317 は404)のため
+      // 別ソースで確定させた。スキル名・作家名は公式ニュース(スクウェア・エニックス発表)、
+      // コスト/指揮兵数/成長値は ixagno.blog.fc2.com【天】武将一覧、
+      // 基礎値・兵科適性・LV10効果・鍛錬表・合成テーブルは同サイトの個別記事(blog-entry-11149)。
+      synthesisTable:[
+        {slot:"A", skill:"絶無灰尽", rank:"SS", afterSkill:"絶無灰尽", afterRank:"SS", target:"全 無尽 不屈1", rate:"", effectShort:"攻撃1010%上昇+無尽(部隊消費コスト-0.5)"},
+        {slot:"B", skill:"覆天征軍", rank:"SS", afterSkill:"覆天征軍", afterRank:"SS", target:"全 無尽2", rate:"100%", effectShort:"攻撃900%上昇"},
+        {slot:"C", skill:"覇天金剛", rank:"SS", afterSkill:"覇天金剛", afterRank:"SS"},
+        {slot:"S1", skill:"絶界滅刃", rank:"SS", afterSkill:"絶界滅刃", afterRank:"SS"},
+        {slot:"S2", skill:"開闢ノ逆鉾", rank:"SS", afterSkill:"開闢ノ逆鉾", afterRank:"SS", target:"全", rate:"100%", effectShort:"攻撃254%上昇(卓越追加確率30%で兵士被害15%減少)"}
+      ]},
+
+    {name:"武田晴信（4）", no:"1318", ch:"32章", cost:4, troop:"-", sub:"", effect:"撤退/追加スキルの攻撃・速度効果2.5倍",
+      illustrator:"直良有祐",
+      // カード画像は未取得(スクリーンショットが手元に無いため)。入手後に crop_card.py で作成する。
+      atkBase:1260, atkGrowth:72, defBase:1050, defGrowth:48, tacticsBase:680.0, tacticsGrowth:3.5, lv0Troops:4750,
+      rankGrades:{yari:'A', yumi:'A', uma:'SS', ki:'A'},
+      initialSkill:"焔天滅刻",
+      skillDetail:"S/LV10 追加スキルの攻撃・速度効果2.5倍/対象:-　撤退\n模倣不可\n①このスキルを持つ武将カードは追加スキルの攻撃・速度効果が2.5倍となる",
+      trTable:[
+        {level:"LV10", points:"-", effect:"- 撤退　追加スキルの攻撃・速度効果が2.5倍"},
+        {level:"TR1", points:"10", effect:"撤退 このスキルを持つ武将カードは、 追加スキルの攻撃・速度効果が2.6倍となる"},
+        {level:"TR2", points:"40", effect:"撤退 このスキルを持つ武将カードは、 追加スキルの攻撃・速度効果が2.7倍となる"},
+        {level:"TR3", points:"90", effect:"撤退 このスキルを持つ武将カードは、 追加スキルの攻撃・速度効果が2.8倍となる"},
+        {level:"TR4", points:"150", effect:"撤退 このスキルを持つ武将カードは、 追加スキルの攻撃・速度効果が2.9倍となる"},
+        {level:"TR5", points:"200", effect:"撤退 このスキルを持つ武将カードは、 追加スキルの攻撃・速度効果が3倍となる"}
+      ],
+      // 2026-08-07開幕の32章新天。ixanary.comは2026-08-08時点で未対応(cards/1318 は404)のため
+      // 別ソースで確定させた。スキル名・作家名は公式ニュース(スクウェア・エニックス発表)、
+      // コスト/指揮兵数/成長値は ixagno.blog.fc2.com【天】武将一覧、
+      // 基礎値・兵科適性・LV10効果・鍛錬表・合成テーブルは同サイトの個別記事(blog-entry-11150)。
+      synthesisTable:[
+        {slot:"A", skill:"刹那無影", rank:"SS", afterSkill:"刹那無影", afterRank:"SS", target:"部隊長", rate:"55%", effectShort:"部隊長の模倣可能な初期スキルを1.15倍に強化して模倣+速度200%上昇"},
+        {slot:"B", skill:"天甲破山", rank:"S", afterSkill:"天焉相克", afterRank:"SS"},
+        {slot:"C", skill:"天焉破山", rank:"S", afterSkill:"天焉破山", afterRank:"S"},
+        {slot:"S1", skill:"虎賁統帥", rank:"SS", afterSkill:"虎賁統帥", afterRank:"SS", target:"全 撤退 覇道", rate:"100%", effectShort:"攻撃1130%上昇+速度200%上昇"},
+        {slot:"S2", skill:"星神闘覇", rank:"SS", afterSkill:"星神闘覇", afterRank:"SS", target:"全 飛翔15", rate:"100%", effectShort:"攻撃 770%上昇+速度200%上昇(TR別データは未確認)"}
+      ]},
+
+    {name:"朝倉宗滴", no:"1319", ch:"32章", cost:5, troop:"槍砲器防", sub:"", effect:"部隊内の同スキル所持武将数で防御効果が倍増",
+      illustrator:"直良有祐",
+      // カード画像は未取得(スクリーンショットが手元に無いため)。入手後に crop_card.py で作成する。
+      atkBase:1100, atkGrowth:49, defBase:1250, defGrowth:73, tacticsBase:680.0, tacticsGrowth:3.5, lv0Troops:5160,
+      rankGrades:{yari:'S', yumi:'A', uma:'A', ki:'S'},
+      initialSkill:"不敗ノ滅陣",
+      skillDetail:"S/LV10 確率 55% 防御400%上昇/対象:槍・砲・器　飛翔15\n①このスキルの基礎値を400%として防御効果を計算する\n②防御400%上昇する(部隊内の最大スキルLVの「不敗ノ滅陣」が持つ基礎値×部隊内の同スキル所持武将数)",
+      trTable:[
+        {level:"LV10", points:"-", effect:"槍・砲・器 飛翔15　確率 55% / 防御 400%上昇(基礎値400%×部隊内の同スキル所持武将数)"},
+        {level:"TR1", points:"10", effect:"確率 55% / 対象 槍/砲/器 飛翔15 このスキルの基礎値を420%とし、 防御効果を計算／防御：420%上昇"},
+        {level:"TR2", points:"40", effect:"確率 55% / 対象 槍/砲/器 飛翔15 このスキルの基礎値を450%とし、防御効果を計算／防御：450%上昇"},
+        {level:"TR3", points:"90", effect:"確率 55% / 対象 槍/砲/器 飛翔15 このスキルの基礎値を490%とし、防御効果を計算／防御：490%上昇"},
+        {level:"TR4", points:"150", effect:"確率 55% / 対象 槍/砲/器 飛翔15 このスキルの基礎値を540%とし、防御効果を計算／防御：540%上昇"},
+        {level:"TR5", points:"200", effect:"確率 55% / 対象 槍/砲/器 飛翔15 このスキルの基礎値を600%とし、防御効果を計算／防御：600%上昇"}
+      ],
+      // 2026-08-07開幕の32章新天。ixanary.comは2026-08-08時点で未対応(cards/1319 は404)のため
+      // 別ソースで確定させた。スキル名・作家名は公式ニュース(スクウェア・エニックス発表)、
+      // コスト/指揮兵数/成長値は ixagno.blog.fc2.com【天】武将一覧、
+      // 基礎値・兵科適性・LV10効果・鍛錬表・合成テーブルは同サイトの個別記事(blog-entry-11151)。
+      synthesisTable:[
+        {slot:"A", skill:"熾炎破天", rank:"SS", afterSkill:"熾炎破天", afterRank:"SS"},
+        {slot:"B", skill:"仙境解脱", rank:"SS", target:"全", rate:"48%", effectShort:"防御910%上昇+コスト-1.5"},
+        {slot:"C", skill:"不敗ノ滅陣", rank:"S", afterSkill:"不敗ノ滅陣", afterRank:"S"},
+        {slot:"S1", skill:"不敗ノ滅陣", rank:"S", afterSkill:"不敗ノ滅陣", afterRank:"S"},
+        {slot:"S2", skill:"火槍猛進", rank:"S", afterSkill:"火槍猛進", afterRank:"S", target:"槍・弓・器・鉄 無尽", rate:"55%", effectShort:"防御740%×2(部隊コスト10以下)=1480%上昇"}
+      ]},
+
+    {name:"伊達稙宗", no:"1320", ch:"32章", cost:3, troop:"全攻", sub:"", effect:"攻撃時、敵軍の被害兵数7%増加",
+      illustrator:"直良有祐",
+      // カード画像は未取得(スクリーンショットが手元に無いため)。入手後に crop_card.py で作成する。
+      atkBase:1250, atkGrowth:72, defBase:1060, defGrowth:45, tacticsBase:660.0, tacticsGrowth:3.0, lv0Troops:4280,
+      rankGrades:{yari:'S', yumi:'S', uma:'A', ki:'A'},
+      initialSkill:"黒翼竜",
+      skillDetail:"S/LV10 確率 50% 敵軍の被害兵数7%増加/対象:全\n模倣不可\n①攻撃時敵軍の被害兵数が7%増加する(部隊内重複上限1・自軍全体の合計で上限100%まで)",
+      trTable:[
+        {level:"LV10", points:"-", effect:"全　確率 50% / 攻撃時に敵軍の被害兵数 7%増加(部隊内重複上限1・自軍合計で上限100%)"},
+        {level:"TR1", points:"10", effect:"確率 50% / 対象 全 攻撃時、敵軍の被害兵数：7.5%増加（模倣不可・部隊内重複上限1・自軍全体の合計で上限100%まで）"},
+        {level:"TR2", points:"40", effect:"確率 50% / 対象 全 攻撃時、敵軍の被害兵数：8%増加（模倣不可・部隊内重複上限1・自軍全体の合計で上限100%まで）"},
+        {level:"TR3", points:"90", effect:"確率 50% / 対象 全 攻撃時、敵軍の被害兵数：8.5%増加（模倣不可・部隊内重複上限1・自軍全体の合計で上限100%まで）"},
+        {level:"TR4", points:"150", effect:"確率 50% / 対象 全 攻撃時、敵軍の被害兵数：9%増加（模倣不可・部隊内重複上限1・自軍全体の合計で上限100%まで）"},
+        {level:"TR5", points:"200", effect:"確率 50% / 対象 全 攻撃時、敵軍の被害兵数：10%増加（模倣不可・部隊内重複上限1・自軍全体の合計で上限100%まで）"}
+      ],
+      // 2026-08-07開幕の32章新天。ixanary.comは2026-08-08時点で未対応(cards/1320 は404)のため
+      // 別ソースで確定させた。スキル名・作家名は公式ニュース(スクウェア・エニックス発表)、
+      // コスト/指揮兵数/成長値は ixagno.blog.fc2.com【天】武将一覧、
+      // 基礎値・兵科適性・LV10効果・鍛錬表・合成テーブルは同サイトの個別記事(blog-entry-11152)。
+      synthesisTable:[
+        {slot:"A", skill:"焼尽神無", rank:"SS", afterSkill:"焼尽神無", afterRank:"SS", target:"全 無尽", rate:"44%", effectShort:"攻撃を係数×人数で上昇"},
+        {slot:"B", skill:"終焉焦土", rank:"SSS", afterSkill:"終焉焦土", afterRank:"SSS", target:"全 無尽", rate:"46%", effectShort:"攻撃を係数×人数で上昇"},
+        {slot:"C", skill:"八幡神ノ威光", rank:"SSS", afterSkill:"八幡神ノ威光", afterRank:"SSS", target:"部隊長", rate:"70%", effectShort:"部隊長の模倣可能な初期スキルを1.25倍模倣"},
+        {slot:"S1", skill:"黒翼竜", rank:"S", afterSkill:"黒翼竜", afterRank:"S"},
+        {slot:"S2", skill:"破軍騎行", rank:"SS", afterSkill:"破軍騎行", afterRank:"SS", target:"全 不屈2", rate:"100%", effectShort:"攻撃750%上昇"}
+      ]},
+
+    {name:"六角定頼", no:"1321", ch:"32章", cost:5.5, troop:"弓馬焙騎攻", sub:"", effect:"自軍城主数10以上で攻撃効果3倍",
+      illustrator:"直良有祐",
+      // カード画像は未取得(スクリーンショットが手元に無いため)。入手後に crop_card.py で作成する。
+      atkBase:1260, atkGrowth:73, defBase:1080, defGrowth:48, tacticsBase:690.0, tacticsGrowth:3.5, lv0Troops:5340,
+      rankGrades:{yari:'A', yumi:'S', uma:'S', ki:'A'},
+      initialSkill:"天弦ノ威軍",
+      skillDetail:"S/LV10 確率 45% 攻撃1000%上昇/対象:弓・馬・焙・騎　不屈1\n①攻撃1000%上昇する\n②自軍城主数が10以上で攻撃効果が3倍になる",
+      trTable:[
+        {level:"LV10", points:"-", effect:"弓・馬・焙・騎 不屈1　確率 45% / 攻撃 1000%上昇(自軍城主数10以上で3倍)"},
+        {level:"TR1", points:"10", effect:"確率 45% / 対象 弓/馬/焙/騎 攻撃：1060%上昇 不屈1 自軍城主数が10以上で攻撃効果が3倍"},
+        {level:"TR2", points:"40", effect:"確率 45% / 対象 弓/馬/焙/騎 攻撃：1120%上昇 不屈1 自軍城主数が10以上で攻撃効果が3倍"},
+        {level:"TR3", points:"90", effect:"確率 45% / 対象 弓/馬/焙/騎 攻撃：1200%上昇 不屈1 自軍城主数が10以上で攻撃効果が3倍"},
+        {level:"TR4", points:"150", effect:"確率 45% / 対象 弓/馬/焙/騎 攻撃：1300%上昇 不屈1 自軍城主数が10以上で攻撃効果が3倍"},
+        {level:"TR5", points:"200", effect:"確率 45% / 対象 弓/馬/焙/騎 攻撃：1400%上昇 不屈1 自軍城主数が10以上で攻撃効果が3倍"}
+      ],
+      // 2026-08-07開幕の32章新天。ixanary.comは2026-08-08時点で未対応(cards/1321 は404)のため
+      // 別ソースで確定させた。スキル名・作家名は公式ニュース(スクウェア・エニックス発表)、
+      // コスト/指揮兵数/成長値は ixagno.blog.fc2.com【天】武将一覧、
+      // 基礎値・兵科適性・LV10効果・鍛錬表・合成テーブルは同サイトの個別記事(blog-entry-11140)。
+      synthesisTable:[
+        {slot:"A", skill:"天地超克", rank:"SSS", afterSkill:"天地超克", afterRank:"SSS", target:"全 不屈1", rate:"46%", effectShort:"攻撃を係数×人数で上昇"},
+        {slot:"B", skill:"勇冠三軍", rank:"SSS", afterSkill:"勇冠三軍", afterRank:"SSS", target:"全", rate:"45%", effectShort:"攻撃50%+係数×人数で上昇"},
+        {slot:"C", skill:"摩利支天ノ法", rank:"SSS", afterSkill:"摩利支天ノ法", afterRank:"SSS", target:"部隊長", rate:"70%", effectShort:"部隊長の初期スキルを1.25倍模倣"},
+        {slot:"S1", skill:"天弦ノ威軍", rank:"S", afterSkill:"天弦ノ威軍", afterRank:"S"},
+        {slot:"S2", skill:"万物神勇", rank:"SSS", afterSkill:"万物神勇", afterRank:"SSS", target:"全 撤退", rate:"43%", effectShort:"攻撃を係数×人数で上昇"}
+      ]},
+
     {name:"豊臣秀長【覇】", no:"1298", ch:"31章", cost:5.5, troop:"砲器攻", sub:"無尽2", effect:"対象兵科指揮時、無尽スキル数で総攻撃力上昇", reviewedOk:true, approved:true,
       furigana:"とよとみひでなが", illustrator:"直良有祐",
       imageFull:"assets/img/characters/no1298_full.png", imageChar:"assets/img/characters/no1298_char.png",
