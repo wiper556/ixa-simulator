@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7334304987274613"
+     crossorigin="anonymous"></script>
+<title>本丸防御陣形シミュレーター｜戦国IXA シミュレーター置き場</title>
+<meta name="description" content="戦国IXAの本丸防御陣形(6列×4人)の総防御力を計算し、攻撃側の兵科ごとにどこが弱点になるかを表示します。編成コストの上限チェックにも対応。">
+<link rel="stylesheet" href="assets/css/site.css">
+<style>
+  /* ============ 本丸防御陣形シミュレーター専用の見た目 ============ */
+  .hm-controls{
+    display:flex; flex-wrap:wrap; gap:14px 22px; align-items:flex-end;
+    padding:14px 16px; border:1px solid var(--line,#d8d2c4); border-radius:8px;
+    background:var(--panel,#fbf9f4); margin-bottom:18px;
+  }
+  .hm-field{ display:flex; flex-direction:column; gap:4px; }
+  .hm-field label{ font-size:12px; font-weight:700; letter-spacing:.04em; opacity:.75; }
+  .hm-field input, .hm-field select{
+    font:inherit; padding:5px 8px; border:1px solid var(--line,#c9c2b2);
+    border-radius:5px; background:#fff; color:inherit;
+  }
+  .hm-field input[type="number"]{ width:8.5em; }
+  .hm-field .hm-wide{ width:11em; }
+  .hm-actions{ display:flex; gap:8px; }
+  .hm-btn{
+    font:inherit; font-weight:700; cursor:pointer; padding:7px 14px;
+    border:1px solid var(--line,#b9b1a0); border-radius:5px; background:#fff; color:inherit;
+  }
+  .hm-btn:hover{ background:#f0ece1; }
+  .hm-btn-primary{ background:#7a1f1f; border-color:#7a1f1f; color:#fff; }
+  .hm-btn-primary:hover{ background:#631919; }
+
+  /* 陣形グリッド */
+  .hm-row{
+    display:grid; grid-template-columns:repeat(4, minmax(0,1fr)) 250px; gap:10px;
+    padding:10px; margin-bottom:10px; border:1px solid var(--line,#d8d2c4); border-radius:8px;
+  }
+  .hm-row.hm-row-double{ border-color:#b08a2e; background:rgba(196,154,54,.07); }
+  .hm-slot{ display:flex; flex-direction:column; gap:4px; min-width:0; }
+  .hm-slot input, .hm-slot select{
+    font:inherit; font-size:13px; padding:4px 6px; width:100%; box-sizing:border-box;
+    border:1px solid var(--line,#c9c2b2); border-radius:4px; background:#fff; color:inherit;
+  }
+  .hm-slot .hm-leader{ font-size:11px; font-weight:700; color:#7a1f1f; letter-spacing:.06em; }
+  .hm-slot .hm-meta{ font-size:11px; line-height:1.45; opacity:.72; word-break:break-all; }
+  .hm-slot .hm-meta.hm-warn{ color:#a8410f; opacity:1; font-weight:700; }
+  .hm-sum{
+    display:flex; flex-direction:column; justify-content:center; gap:3px;
+    padding-left:12px; border-left:1px dashed var(--line,#cfc7b6); font-size:12px;
+  }
+  .hm-sum .hm-sum-main{ font-size:19px; font-weight:700; font-variant-numeric:tabular-nums; }
+  .hm-badge{
+    display:inline-block; font-size:11px; font-weight:700; padding:1px 7px; border-radius:99px;
+    background:#b08a2e; color:#fff; letter-spacing:.04em;
+  }
+
+  /* 結果 */
+  .hm-total{
+    display:flex; flex-wrap:wrap; gap:10px 34px; align-items:baseline;
+    padding:16px; border:2px solid #7a1f1f; border-radius:8px; margin:20px 0 18px;
+  }
+  .hm-total .hm-total-num{ font-size:30px; font-weight:700; font-variant-numeric:tabular-nums; }
+  .hm-total .hm-cost-over{ color:#a8410f; font-weight:700; }
+  .hm-scroll{ overflow-x:auto; }
+  table.hm-table{ border-collapse:collapse; width:100%; font-size:13px; }
+  table.hm-table th, table.hm-table td{
+    border:1px solid var(--line,#d8d2c4); padding:6px 10px; text-align:right;
+    font-variant-numeric:tabular-nums; white-space:nowrap;
+  }
+  table.hm-table th{ background:var(--panel,#f3efe4); text-align:center; font-weight:700; }
+  table.hm-table td.hm-lbl{ text-align:left; font-variant-numeric:normal; }
+  table.hm-table td.hm-weak{ background:rgba(168,65,15,.14); font-weight:700; }
+  .hm-note{ font-size:12px; line-height:1.7; opacity:.8; }
+  @media (max-width: 900px){
+    .hm-row{ grid-template-columns:repeat(2, minmax(0,1fr)); }
+    .hm-sum{ grid-column:1 / -1; border-left:0; border-top:1px dashed var(--line,#cfc7b6); padding:8px 0 0; }
+  }
+</style>
+</head>
+<body>
+<div class="site-layout">
+  <aside class="site-sidebar" id="siteSidebar">
+    <div class="sidebar-header">
+      <span class="sidebar-title">メニュー</span>
+    </div>
+    <nav class="sidebar-nav">
+      <a href="index.html">シミュレーター一覧</a>
+      <a href="attack-simulator.html">攻撃/防御シミュレーター</a>
+      <a href="honmaru-simulator.html">本丸防御陣形</a>
+      <a href="gacha-simulator.html">くじシミュレーター</a>
+      <a href="characters-hub.html">武将データベース</a>
+      <a href="skills-hub.html">スキル一覧</a>
+      <a href="blog.html">記事</a>
+      <a href="about.html">このサイトについて</a>
+      <a href="privacy.html">プライバシーポリシー</a>
+    </nav>
+  </aside>
+
+  <div class="site-content">
+  <header class="site-header">
+    <a class="site-logo" href="index.html">戦国IXA シミュレーター置き場</a>
+  </header>
+
+  <main class="site-main">
+    <h1 class="page-title">本丸防御陣形シミュレーター</h1>
+    <p class="page-lead">本丸防御陣形(6列×4人=24名)の総防御力を計算します。攻撃してくる部隊の兵科ごとに防御力がどう変わるかを並べるので、どの兵科で攻められると弱いかが分かります。</p>
+
+    <div class="hm-controls">
+      <div class="hm-field">
+        <label for="hmCostLimit">編成コスト上限</label>
+        <input type="number" id="hmCostLimit" value="60" min="0" step="0.5">
+      </div>
+      <div class="hm-field">
+        <label for="hmBreak">ランク(全員に適用)</label>
+        <select id="hmBreak" class="hm-wide">
+          <option>限界突破</option>
+          <option>極限突破</option>
+          <option>極限突破+0.5</option>
+          <option selected>天限突破</option>
+          <option>天限突破+0.5</option>
+        </select>
+      </div>
+      <div class="hm-field">
+        <label for="hmAlloc">ステ振り(全員に適用)</label>
+        <select id="hmAlloc" class="hm-wide">
+          <option selected>防御振り</option>
+          <option>攻撃振り</option>
+          <option>バランス振り</option>
+          <option>兵法振り</option>
+        </select>
+      </div>
+      <div class="hm-field">
+        <label for="hmBulkSoldier">兵種を一括で入れる</label>
+        <select id="hmBulkSoldier" class="hm-wide"><option value="">選択して適用</option></select>
+      </div>
+      <div class="hm-actions">
+        <button type="button" class="hm-btn hm-btn-primary" id="hmCalc">計算する</button>
+        <button type="button" class="hm-btn" id="hmFillTroops">兵数を最大にする</button>
+        <button type="button" class="hm-btn" id="hmClear">全部消す</button>
+      </div>
+    </div>
+
+    <div id="hmGrid"></div>
+
+    <div class="hm-total">
+      <div>
+        <div style="font-size:12px;font-weight:700;opacity:.7;">陣形総防御力(兵科相性なし)</div>
+        <div class="hm-total-num" id="hmTotalDef">0</div>
+      </div>
+      <div>
+        <div style="font-size:12px;font-weight:700;opacity:.7;">編成コスト</div>
+        <div class="hm-total-num" id="hmTotalCost">0</div>
+      </div>
+      <div>
+        <div style="font-size:12px;font-weight:700;opacity:.7;">総兵数</div>
+        <div class="hm-total-num" id="hmTotalTroops">0</div>
+      </div>
+      <div>
+        <div style="font-size:12px;font-weight:700;opacity:.7;">配置人数</div>
+        <div class="hm-total-num" id="hmTotalMembers">0 / 24</div>
+      </div>
+    </div>
+
+    <div class="content-block">
+      <h2>攻撃側の兵科別ウィークポイント</h2>
+      <p class="hm-note">攻めてくる部隊の兵科ごとに、防御側の防御力がどう変わるかを出しています。数値が小さいほどその兵科に弱いということです。色が付いているのが最も弱い兵科です。</p>
+      <div class="hm-scroll">
+        <table class="hm-table" id="hmWeakTable"></table>
+      </div>
+      <p class="hm-note" id="hmWeakNote"></p>
+    </div>
+
+    <div class="content-block">
+      <h2>計算の中身</h2>
+      <ul class="hm-note">
+        <li>部隊防御力 = Σ(武将防御力 + 指揮兵士数 × 兵士防御力) × 統率補正α × (1 + 初期スキルの防御%上昇合計 ÷ 100)</li>
+        <li><strong>1列目と6列目は部隊総防御力が2倍</strong>になります(公式ヘルプ)。表では2倍を掛けた後の値を出しています。</li>
+        <li>兵科相性は防御側の防御力にかかる補正です。槍は騎馬に強く、騎馬は弓に強く、弓は槍に強い、という3すくみに、兵器兵科との相性を加えたものを使っています。鉄砲足軽は槍兵科、焙烙火矢は弓兵科、騎馬鉄砲は騎馬兵科として相性判定します(スキルの発動対象としては兵器兵科のままです)。</li>
+        <li>統率①②は武将データの統率ランクから自動で入れています。手で直せます。</li>
+        <li>スキルは<strong>初期スキルのみ</strong>を自動で見ています。追加スキル・極限スキル、陣形の配置位置に依存する効果、加勢限定の倍率はまだ計算に入っていません。</li>
+      </ul>
+    </div>
+
+    <div id="pageComments"></div>
+  </main>
+
+  <footer class="site-footer">
+    <p>本サイトは戦国IXA(Sengoku IXA)の非公式ファンメイドツールです。運営会社・関連団体とは一切関係ありません。<br>
+    記載されている会社名・製品名・システム名などは、各社の商標、または登録商標です。<br>
+    © SQUARE ENIX</p>
+    <p><a href="about.html">このサイトについて</a> ・ <a href="privacy.html">プライバシーポリシー</a></p>
+  </footer>
+
+  </div>
+</div>
+
+<datalist id="hmGeneralList"></datalist>
+
+<script src="assets/js/ixa-data.js"></script>
+<script>
+(function(){
+  'use strict';
+  const $ = id => document.getElementById(id);
+  const ROWS = 6, COLS = 4;                 // 本丸防御陣形は6列×4人=24名
+  const DOUBLE_ROWS = [0, ROWS - 1];        // 1列目と6列目は部隊総防御力が2倍
+  const STORE_KEY = 'ixaHonmaruFormation.v1';
+  const fmt = n => (Math.round(n) || 0).toLocaleString('ja-JP');
+
+  // 兵種の統率影響('槍'等)を武将データの rankGrades のキーに対応させる
+  const INFLUENCE_TO_GRADE = { '槍':'yari', '弓':'yumi', '騎馬':'uma', '兵器':'ki' };
+
+  // 盤面の状態。[row][col] = {name, soldier, troops, r1, r2}
+  let board = [];
+  for(let r = 0; r < ROWS; r++){
+    board.push(Array.from({length: COLS}, () => ({name:'', soldier:'', troops:'', r1:'', r2:''})));
+  }
+
+  /* ============ 武将・兵種の検索 ============ */
+
+  // 「織田信長」「1997」「織田信長(1997)」のいずれでも引けるようにする
+  function findGeneral(text){
+    const q = (text || '').trim();
+    if(!q) return null;
+    let e = generalGrowthDB.find(g => g.name === q);
+    if(e) return e;
+    e = generalGrowthDB.find(g => g.no === q);
+    if(e) return e;
+    const m = q.match(/[（(]\s*(\d+)\s*[)）]\s*$/);
+    if(m){
+      e = generalGrowthDB.find(g => g.no === m[1]);
+      if(e) return e;
+    }
+    return generalGrowthDB.find(g => g.name.startsWith(q)) || null;
+  }
+
+  const soldierOf = name => soldierDB.find(s => s.name === name) || null;
+
+  /* ============ 1人分の防御力 ============ */
+
+  // 統率ランクの表記ゆれ(ixawiki一括登録分に「.S」「.SS」のような先頭ドット付きがある)を
+  // rankOrder に載る形に寄せる。中身が不明な記号なので、ドットを外した素のランクとして扱い、
+  // 画面側には「要確認」を出して手で直せるようにしておく。
+  function normalizeGrade(g){
+    if(!g) return '';
+    const s = String(g).replace(/^\.+/, '');
+    return rankOrder.indexOf(s) === -1 ? '' : s;
+  }
+  const gradeIsUncertain = g => !!g && /^\./.test(String(g));
+
+  // その兵種を率いるときに参照される統率①②を、武将データの rankGrades から決める
+  function autoRanks(entry, soldier){
+    if(!entry || !soldier) return {r1:'', r2:'', uncertain:false};
+    if(entry.rarity === '傑') return {r1:'XXX', r2:'XXX', uncertain:false};
+    const g = entry.rankGrades;
+    if(!g) return {r1:'', r2:'', uncertain:false};
+    const keys = soldier.rankInfluence.map(x => INFLUENCE_TO_GRADE[x]).filter(Boolean);
+    if(!keys.length) return {r1:'', r2:'', uncertain:false};
+    const raw1 = g[keys[0]], raw2 = g[keys[1] || keys[0]];
+    return {
+      r1: normalizeGrade(raw1),
+      r2: normalizeGrade(raw2),
+      uncertain: gradeIsUncertain(raw1) || gradeIsUncertain(raw2)
+    };
+  }
+
+  // 突破ランクに応じた指揮兵士数の上限
+  function maxTroopsOf(entry, bt){
+    if(!entry) return null;
+    if(entry.rarity === '傑' && entry.lv0Troops !== undefined) return entry.lv0Troops;
+    if(entry.statsByRank && entry.statsByRank[bt] && entry.statsByRank[bt].troops !== undefined){
+      return entry.statsByRank[bt].troops;
+    }
+    if(entry.lv0Troops !== undefined){
+      const v = calcTroopsForBreakthrough(entry.lv0Troops, bt, !!entry.isHa);
+      return v === null ? entry.lv0Troops : v;
+    }
+    return null;
+  }
+
+  // ステ振り後の防御力
+  function defOf(entry, bt, alloc){
+    if(!entry) return 0;
+    const pts = BREAKTHROUGH_POINTS[bt] || 0;
+    if(alloc === '防御振り')      return entry.defBase + entry.defGrowth * pts;
+    if(alloc === 'バランス振り')  return entry.defBase + entry.defGrowth * (pts / 3);
+    return entry.defBase; // 攻撃振り・兵法振りでは防御は初期値のまま
+  }
+
+  /* ============ スキル ============ */
+
+  // そのスキルが「防御」側の効果かどうかを判定する。
+  // statTarget / variableFormula.statTarget があればそれを使い、無ければ説明文の
+  // 「S(防御)」「A(攻撃・…)」のような表記から読む。
+  function skillStat(sk){
+    if(sk.statTarget) return sk.statTarget;
+    if(sk.variableFormula && sk.variableFormula.statTarget) return sk.variableFormula.statTarget;
+    const note = sk.note || '';
+    const m = note.match(/[（(]\s*(攻撃|防御)/);
+    if(m) return m[1] === '防御' ? 'def' : 'atk';
+    if(/防御/.test(note) && !/攻撃/.test(note)) return 'def';
+    return null;
+  }
+
+  // 対象兵科・対象兵種のゲート(攻防シミュレーターの matchesTroopTarget と同じ考え方)
+  function troopMatches(sk, soldier){
+    if(!sk.targetTroopCategories && !sk.targetSoldierNames) return true;
+    if(!soldier) return false;
+    const inCat  = sk.targetTroopCategories ? sk.targetTroopCategories.includes(soldier.category) : false;
+    const inName = sk.targetSoldierNames ? sk.targetSoldierNames.includes(soldier.name) : false;
+    return inCat || inName;
+  }
+
+  // 初期スキルによる防御%上昇。計算できないもの(変動値・陣形依存など)は 0 として扱い、
+  // 名前だけ返して画面に「参考」と出す。
+  function skillDefPct(entry, soldier){
+    const empty = {pct:0, label:'', pending:''};
+    if(!entry || !entry.initialSkill) return empty;
+    const sk = specialSkills[entry.initialSkill];
+    if(!sk) return {pct:0, label:'', pending: entry.initialSkill + '(未登録)'};
+    if(skillStat(sk) !== 'def') return {pct:0, label:'', pending:''};
+    if(!troopMatches(sk, soldier)) return {pct:0, label:'', pending: entry.initialSkill + '(兵科対象外)'};
+    if(sk.trTable && sk.trTable.base !== undefined){
+      return {pct: sk.trTable.base, label: entry.initialSkill + ' +' + sk.trTable.base + '%', pending:''};
+    }
+    return {pct:0, label:'', pending: entry.initialSkill + '(自動計算対象外)'};
+  }
+
+  /* ============ 盤面の描画 ============ */
+
+  function buildGrid(){
+    const host = $('hmGrid');
+    host.innerHTML = '';
+    for(let r = 0; r < ROWS; r++){
+      const row = document.createElement('div');
+      row.className = 'hm-row' + (DOUBLE_ROWS.includes(r) ? ' hm-row-double' : '');
+      for(let c = 0; c < COLS; c++){
+        const slot = document.createElement('div');
+        slot.className = 'hm-slot';
+        slot.innerHTML =
+          '<span class="hm-leader">' + (r+1) + '列目 ' + (c === 0 ? '部隊長' : ('小隊長' + c)) + '</span>' +
+          '<input type="text" list="hmGeneralList" placeholder="武将名 または カードNo." id="hm_n_' + r + '_' + c + '">' +
+          '<select id="hm_s_' + r + '_' + c + '"></select>' +
+          '<input type="number" min="0" step="1" placeholder="兵数" id="hm_t_' + r + '_' + c + '">' +
+          '<span class="hm-meta" id="hm_m_' + r + '_' + c + '"></span>';
+        row.appendChild(slot);
+      }
+      const sum = document.createElement('div');
+      sum.className = 'hm-sum';
+      sum.innerHTML =
+        '<div>' + (r+1) + '列目' + (DOUBLE_ROWS.includes(r) ? ' <span class="hm-badge">総防御力2倍</span>' : '') + '</div>' +
+        '<div class="hm-sum-main" id="hm_rowdef_' + r + '">0</div>' +
+        '<div id="hm_rowinfo_' + r + '" style="opacity:.75;">コスト 0 ／ 兵数 0</div>';
+      row.appendChild(sum);
+      host.appendChild(row);
+    }
+
+    // 兵種プルダウン(空欄+全兵種)
+    const opts = '<option value=""></option>' +
+      soldierDB.map(s => '<option value="' + s.name + '">' + s.name + '</option>').join('');
+    for(let r = 0; r < ROWS; r++){
+      for(let c = 0; c < COLS; c++){
+        $('hm_s_' + r + '_' + c).innerHTML = opts;
+        ['hm_n_', 'hm_s_', 'hm_t_'].forEach(prefix => {
+          const el = $(prefix + r + '_' + c);
+          el.addEventListener('change', () => { readCell(r, c, prefix === 'hm_n_'); recalc(); });
+          el.addEventListener('input',  () => { readCell(r, c, prefix === 'hm_n_'); });
+        });
+      }
+    }
+    $('hmBulkSoldier').innerHTML = '<option value="">選択して適用</option>' +
+      soldierDB.map(s => '<option value="' + s.name + '">' + s.name + '</option>').join('');
+    $('hmGeneralList').innerHTML = generalGrowthDB
+      .map(g => '<option value="' + g.name + '">No.' + g.no + '</option>').join('');
+  }
+
+  // 入力欄 → board。武将名が変わったときは兵数を上限で埋め直す。
+  function readCell(r, c, nameChanged){
+    const cell = board[r][c];
+    cell.name    = $('hm_n_' + r + '_' + c).value;
+    cell.soldier = $('hm_s_' + r + '_' + c).value;
+    cell.troops  = $('hm_t_' + r + '_' + c).value;
+    if(nameChanged){
+      const entry = findGeneral(cell.name);
+      const max = maxTroopsOf(entry, $('hmBreak').value);
+      if(entry && max && !cell.troops){
+        cell.troops = String(max);
+        $('hm_t_' + r + '_' + c).value = cell.troops;
+      }
+    }
+  }
+
+  /* ============ 計算 ============ */
+
+  // 1人分。attackerCat を渡すと兵科相性補正を掛けた値を返す。
+  function evalCell(cell, bt, alloc, attackerCat){
+    const out = {def:0, cost:0, troops:0, entry:null, soldier:null, skill:null, ranks:null};
+    const entry = findGeneral(cell.name);
+    if(!entry) return out;
+    out.entry = entry;
+    const soldier = soldierOf(cell.soldier);
+    out.soldier = soldier;
+
+    const troops = Math.max(0, parseFloat(cell.troops) || 0);
+    out.troops = troops;
+    out.cost = (typeof entry.cost === 'number') ? entry.cost : 0;
+
+    const ranks = (cell.r1 && cell.r2) ? {r1:cell.r1, r2:cell.r2, uncertain:false} : autoRanks(entry, soldier);
+    out.ranks = ranks;
+
+    const alpha = getAptMultiplier(ranks.r1, ranks.r2);
+    let soldierDef = soldier ? soldier.def : 0;
+    if(attackerCat && soldier){
+      soldierDef = soldierDef * troopCompatRate(attackerCat, soldier) / 100;
+    }
+    out.def = (defOf(entry, bt, alloc) + troops * soldierDef) * alpha;
+    out.skill = skillDefPct(entry, soldier);
+    return out;
+  }
+
+  // 1列(=1部隊)分。スキルの防御%は部隊全体の合計に掛ける(攻防シミュレーターと同じ扱い)。
+  function evalRow(r, bt, alloc, attackerCat){
+    let raw = 0, cost = 0, troops = 0, pct = 0, members = 0;
+    const cells = [];
+    for(let c = 0; c < COLS; c++){
+      const v = evalCell(board[r][c], bt, alloc, attackerCat);
+      cells.push(v);
+      if(v.entry){ members++; cost += v.cost; }
+      raw += v.def; troops += v.troops;
+      if(v.skill) pct += v.skill.pct;
+    }
+    const doubled = DOUBLE_ROWS.includes(r) ? 2 : 1;
+    return { def: raw * (1 + pct / 100) * doubled, cost, troops, members, pct, cells };
+  }
+
+  function recalc(){
+    const bt = $('hmBreak').value, alloc = $('hmAlloc').value;
+    let total = 0, cost = 0, troops = 0, members = 0;
+
+    for(let r = 0; r < ROWS; r++){
+      const row = evalRow(r, bt, alloc, null);
+      total += row.def; cost += row.cost; troops += row.troops; members += row.members;
+      $('hm_rowdef_' + r).textContent = fmt(row.def);
+      $('hm_rowinfo_' + r).textContent =
+        'コスト ' + row.cost + ' ／ 兵数 ' + fmt(row.troops) +
+        (row.pct ? ' ／ スキル +' + row.pct + '%' : '');
+
+      // 各セルの補足表示
+      for(let c = 0; c < COLS; c++){
+        const v = row.cells[c];
+        const el = $('hm_m_' + r + '_' + c);
+        if(!v.entry){
+          el.className = 'hm-meta';
+          el.textContent = board[r][c].name ? '武将データに無い名前です' : '';
+          continue;
+        }
+        const parts = ['防' + fmt(defOf(v.entry, bt, alloc)), 'コスト' + (v.cost || '?')];
+        if(v.ranks && v.ranks.r1) parts.push('統率' + v.ranks.r1 + '/' + v.ranks.r2);
+        if(v.skill && v.skill.label) parts.push(v.skill.label);
+        if(v.skill && v.skill.pending) parts.push(v.skill.pending);
+        el.className = 'hm-meta' + ((v.ranks && v.ranks.uncertain) ? ' hm-warn' : '');
+        el.textContent = parts.join(' ／ ') + ((v.ranks && v.ranks.uncertain) ? ' ※統率要確認' : '');
+      }
+    }
+
+    $('hmTotalDef').textContent = fmt(total);
+    $('hmTotalTroops').textContent = fmt(troops);
+    $('hmTotalMembers').textContent = members + ' / 24';
+    const limit = parseFloat($('hmCostLimit').value) || 0;
+    const costEl = $('hmTotalCost');
+    costEl.textContent = cost + ' / ' + limit;
+    costEl.className = 'hm-total-num' + (cost > limit ? ' hm-cost-over' : '');
+
+    renderWeakTable(bt, alloc);
+    save();
+  }
+
+  function renderWeakTable(bt, alloc){
+    const cats = TROOP_COMPAT_CATEGORIES;
+    const rows = [];
+    const totals = {};
+    cats.forEach(cat => { totals[cat] = 0; });
+
+    for(let r = 0; r < ROWS; r++){
+      const vals = {};
+      cats.forEach(cat => {
+        const v = evalRow(r, bt, alloc, cat).def;
+        vals[cat] = v; totals[cat] += v;
+      });
+      rows.push(vals);
+    }
+
+    const anyone = Object.values(totals).some(v => v > 0);
+    const min = anyone ? Math.min(...cats.map(c => totals[c])) : null;
+
+    let html = '<thead><tr><th>防御側</th>' +
+      cats.map(c => '<th>' + c + 'で攻められた場合</th>').join('') + '</tr></thead><tbody>';
+    for(let r = 0; r < ROWS; r++){
+      const rowMin = Math.min(...cats.map(c => rows[r][c]));
+      html += '<tr><td class="hm-lbl">' + (r+1) + '列目' +
+        (DOUBLE_ROWS.includes(r) ? '(2倍)' : '') + '</td>' +
+        cats.map(c => '<td' + ((rows[r][c] > 0 && rows[r][c] === rowMin) ? ' class="hm-weak"' : '') +
+          '>' + fmt(rows[r][c]) + '</td>').join('') + '</tr>';
+    }
+    html += '<tr><td class="hm-lbl"><strong>陣形合計</strong></td>' +
+      cats.map(c => '<td' + ((min !== null && totals[c] === min && totals[c] > 0) ? ' class="hm-weak"' : '') +
+        '><strong>' + fmt(totals[c]) + '</strong></td>').join('') + '</tr>';
+    html += '</tbody>';
+    $('hmWeakTable').innerHTML = html;
+
+    if(!anyone){
+      $('hmWeakNote').textContent = '武将と兵種を入れると弱点が出ます。';
+      return;
+    }
+    const weakest = cats.filter(c => totals[c] === min);
+    const max = Math.max(...cats.map(c => totals[c]));
+    const diff = min > 0 ? Math.round((max / min) * 100) / 100 : 0;
+    $('hmWeakNote').textContent =
+      'いまの陣形は「' + weakest.join('・') + '」で攻められたときが最も弱く、最も強い兵科と比べて防御力が ' +
+      diff + '倍 の開きがあります。';
+  }
+
+  /* ============ 保存・復元 ============ */
+
+  function save(){
+    try{
+      localStorage.setItem(STORE_KEY, JSON.stringify({
+        board: board,
+        costLimit: $('hmCostLimit').value,
+        breakthrough: $('hmBreak').value,
+        alloc: $('hmAlloc').value
+      }));
+    }catch(e){ /* 保存できなくても計算は続ける */ }
+  }
+
+  function load(){
+    let d = null;
+    try{ d = JSON.parse(localStorage.getItem(STORE_KEY) || 'null'); }catch(e){ d = null; }
+    if(!d) return;
+    if(d.costLimit)    $('hmCostLimit').value = d.costLimit;
+    if(d.breakthrough) $('hmBreak').value = d.breakthrough;
+    if(d.alloc)        $('hmAlloc').value = d.alloc;
+    if(!Array.isArray(d.board)) return;
+    for(let r = 0; r < ROWS; r++){
+      for(let c = 0; c < COLS; c++){
+        const src = (d.board[r] || [])[c];
+        if(!src) continue;
+        board[r][c] = Object.assign({name:'', soldier:'', troops:'', r1:'', r2:''}, src);
+        $('hm_n_' + r + '_' + c).value = board[r][c].name || '';
+        $('hm_s_' + r + '_' + c).value = board[r][c].soldier || '';
+        $('hm_t_' + r + '_' + c).value = board[r][c].troops || '';
+      }
+    }
+  }
+
+  /* ============ 操作ボタン ============ */
+
+  function bindControls(){
+    $('hmCalc').addEventListener('click', recalc);
+    ['hmCostLimit', 'hmBreak', 'hmAlloc'].forEach(id => {
+      $(id).addEventListener('change', recalc);
+    });
+    $('hmBulkSoldier').addEventListener('change', e => {
+      const v = e.target.value;
+      if(!v) return;
+      for(let r = 0; r < ROWS; r++){
+        for(let c = 0; c < COLS; c++){
+          board[r][c].soldier = v;
+          $('hm_s_' + r + '_' + c).value = v;
+        }
+      }
+      recalc();
+    });
+    $('hmFillTroops').addEventListener('click', () => {
+      const bt = $('hmBreak').value;
+      for(let r = 0; r < ROWS; r++){
+        for(let c = 0; c < COLS; c++){
+          const entry = findGeneral(board[r][c].name);
+          const max = maxTroopsOf(entry, bt);
+          if(entry && max){
+            board[r][c].troops = String(max);
+            $('hm_t_' + r + '_' + c).value = board[r][c].troops;
+          }
+        }
+      }
+      recalc();
+    });
+    $('hmClear').addEventListener('click', () => {
+      for(let r = 0; r < ROWS; r++){
+        for(let c = 0; c < COLS; c++){
+          board[r][c] = {name:'', soldier:'', troops:'', r1:'', r2:''};
+          $('hm_n_' + r + '_' + c).value = '';
+          $('hm_s_' + r + '_' + c).value = '';
+          $('hm_t_' + r + '_' + c).value = '';
+        }
+      }
+      recalc();
+    });
+  }
+
+  buildGrid();
+  bindControls();
+  load();
+  recalc();
+})();
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="assets/js/comments-widget.js"></script>
+<script>renderCommentsWidget('pageComments', 'page:honmaru-simulator');</script>
+<script src="assets/js/site-sidebar.js"></script>
+</body>
+</html>

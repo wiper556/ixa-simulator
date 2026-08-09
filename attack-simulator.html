@@ -511,25 +511,12 @@
      が揃い次第、下のcalcBreakthroughStat()を使って自動計算に組み込む想定。
      現時点ではUI表示・自動反映はしていない(データ未整備のため)。
   ============================================ */
-  const BREAKTHROUGH_POINTS = {
-    '0Lv': 0,
-    '★0 0Lv': 80,
-    '★0 20Lv': 170,
-    '★1 20Lv': 260,
-    '★2 20Lv': 360,
-    '★3 20Lv': 480,
-    '★4 20Lv': 500,
-    '限界突破': 630,
-    '極限突破': 660,
-    '極限突破+0.5': 660,   // ステータス配分ポイントは極限突破と同じ。任意選択でコスト+0.5・指揮兵数+200が別途付与される
-    '天限突破': 690,
-    '天限突破+0.5': 690    // ステータス配分ポイントは天限突破と同じ。任意選択でコスト+0.5・指揮兵数+200が別途付与される
-  };
+  // BREAKTHROUGH_POINTS は assets/js/ixa-data.js に移動
 
   // 「+0.5」系は、極限突破/天限突破した武将カードに対して任意(一度きり)で選べる
   // 「コスト+0.5 かつ 指揮兵数+200」の追加効果を表す(公式ヘルプより)。
   // ステータス配分ポイント自体は元の突破ランクと変わらない。
-  const COST_BONUS_PLUS05 = { cost: 0.5, troops: 200 };
+  // COST_BONUS_PLUS05 は assets/js/ixa-data.js に移動
 
   // 初期値・成長値・突破種別・割り振りポイント数から最終ステータス値を算出
   function calcBreakthroughStat(initialValue, growthValue, breakthroughType, allocatedPoints){
@@ -2086,10 +2073,7 @@
      覇武将は通常武将と異なり、ランクアップ1回につき指揮兵数+200が付与される
      (通常武将は+100)。統率力のランクアップそのものは覇武将でも通常と同じ+1ランク。
   ============================================ */
-  const RANKUP_TROOPS_BONUS = {
-    normal: 100, // 通常武将: ランクアップ1回につき指揮兵数+100
-    ha: 200      // 覇武将: ランクアップ1回につき指揮兵数+200
-  };
+  // RANKUP_TROOPS_BONUS は assets/js/ixa-data.js に移動
 
   /* ============ 指揮兵士数の汎用計算式 ============
      武将ごとに突破ランク別の実測値をすべて登録するのは現実的でないため、
@@ -2109,37 +2093,16 @@
        troops(天限突破)     = troops(極限突破) + 800
        troops(天限突破+0.5) = troops(天限突破) + 200
   ============================================ */
-  const STANDARD_RANKUP_COUNT = 6; // 今川義元の実測データから逆算(要検証の暫定共通値)
+  // STANDARD_RANKUP_COUNT は assets/js/ixa-data.js に移動 // 今川義元の実測データから逆算(要検証の暫定共通値)
 
-  function calcTroopsForBreakthrough(lv0Troops, breakthroughType, isHa){
-    const rankupBonus = isHa ? RANKUP_TROOPS_BONUS.ha : RANKUP_TROOPS_BONUS.normal;
-    const genkaiTroops = lv0Troops + (STANDARD_RANKUP_COUNT * rankupBonus); // 限界突破
-    const gokugenTroops = genkaiTroops + 800; // 極限突破
-    const tenGenTroops = gokugenTroops + 800; // 天限突破
-    switch(breakthroughType){
-      case '限界突破':     return genkaiTroops;
-      case '極限突破':     return gokugenTroops;
-      case '極限突破+0.5': return gokugenTroops + 200;
-      case '天限突破':     return tenGenTroops;
-      case '天限突破+0.5': return tenGenTroops + 200;
-      default: return null; // 0Lv〜★4等、対象外の段階
-    }
-  }
+  // calcTroopsForBreakthrough は assets/js/ixa-data.js に移動
 
   /* ============ レアリティ「傑」の特殊ルール(公式ヘルプより) ============
      傑レアリティの武将カードは、他のレアリティと以下の点で扱いが異なる。
      今後、傑武将をgeneralGrowthDBに登録する際は entry.rarity = '傑' を設定することで、
      下記ルールが自動的に適用される想定(現時点では該当武将未登録のためルールのみ準備)。
   ============================================ */
-  const KETSU_RARITY_RULES = {
-    allRanksXXX: true,          // 統率ランク(槍/弓/騎馬/兵器)は全て自動的に「XXX」になる(カード表面には表記なし)
-    noSkillSlots: true,         // 初期スキル・追加スキル枠・極限スキル枠を持たない(スキル追加合成/強化合成の対象外)
-    rankLevelZero: true,        // ランク/レベルは常に0(ランクアップ合成・レベルアップ合成の対象外)
-    treatedAsBreakthrough: '天限突破', // 部隊ランクボーナス算出時、および武将ランク/部隊ランク依存のスキル効果計算では「天限突破」として扱う
-    maxPerSquad: 1,             // 1部隊に1枚のみ配置可能(本丸/所領防御陣形では各列に1枚ずつ)
-    noSimultaneousAttackWithKetsu: true, // 傑を含む部隊同士では自部隊同時攻撃ができない
-    note: 'レアリティ「傑」の武将カードに適用される特殊ルール。generalGrowthDBの武将エントリに rarity: "傑" を設定すると適用対象になる想定'
-  };
+  // KETSU_RARITY_RULES は assets/js/ixa-data.js に移動
 
     // generalGrowthDB は assets/js/ixa-data.js に移動
 
@@ -2477,28 +2440,15 @@
     recalcSquadStats(); // 手入力フラグを解除した欄を自動計算値(バランス振りの均等配分値)に戻す
   }
 
-  const rankOrder = ["B","A","S","SS","SSS","X","XX","XXX"];
+  // rankOrder は assets/js/ixa-data.js に移動
 
   /* ============ 統率ランク組み合わせ補正表(α) ============
      出典: ixagno.blog.fc2.com「統率は【XXX】まで上げるべきか？」の22章補正表(B〜XXXの8ランク×8ランク)。
      単一統率で決まる兵科は①=②で参照する。2つの統率が影響する兵種は①②にそれぞれの統率ランクを入れる。
      部隊合計攻撃力/防御力の計算で、各武将の(武将攻撃力+指揮兵士数×兵士攻撃力)にこの倍率αを掛ける。
   ============================================ */
-  const rankTable = {
-    B:   [1.000,1.025,1.050,1.075,1.100,1.125,1.150,1.200],
-    A:   [1.025,1.050,1.075,1.100,1.125,1.150,1.175,1.225],
-    S:   [1.050,1.075,1.100,1.125,1.150,1.175,1.200,1.250],
-    SS:  [1.075,1.100,1.125,1.150,1.175,1.200,1.225,1.275],
-    SSS: [1.100,1.125,1.150,1.175,1.200,1.225,1.250,1.300],
-    X:   [1.125,1.150,1.175,1.200,1.225,1.250,1.275,1.325],
-    XX:  [1.150,1.175,1.200,1.225,1.250,1.275,1.300,1.350],
-    XXX: [1.200,1.225,1.250,1.275,1.300,1.325,1.350,1.400]
-  };
-  function getAptMultiplier(r1, r2){
-    if(!r1 || !r2 || !rankTable[r1]) return 1;
-    const idx = rankOrder.indexOf(r2);
-    return idx === -1 ? 1 : rankTable[r1][idx];
-  }
+  // rankTable は assets/js/ixa-data.js に移動
+  // getAptMultiplier は assets/js/ixa-data.js に移動
 
   /* ============ 兵士データベース ============
      兵科ごとの兵種名・攻撃力・防御力・移動速度・破壊力・訓練時間・統率力の影響を登録。
@@ -2509,11 +2459,7 @@
   // ============ スキル対象欄の一文字略称と兵種の対応(参考データ) ============
   // スキルの「対象」欄で兵器兵科(砲兵科)内の特定の兵種のみを指す場合に使われる略称。
   // スキル登録時は該当武将のtargetSoldierNamesにこの兵種名を設定する(カテゴリ全体ではない点に注意)。
-  const TROOP_ABBREVIATION_SOLDIER_MAP = {
-    '鉄': '鉄砲足軽',
-    '騎': '騎馬鉄砲',
-    '焙': '焙烙火矢'
-  };
+  // TROOP_ABBREVIATION_SOLDIER_MAP は assets/js/ixa-data.js に移動
 
     // soldierDB は assets/js/ixa-data.js に移動
   // 兵士選択プルダウンでの表示順(ユーザー指定により砲兵科を先頭に配置。それ以外はsoldierDB内の元の並び順を維持)。
