@@ -45,7 +45,6 @@
   }
   .hm-slot .hm-leader{ font-size:11px; font-weight:700; color:#7a1f1f; letter-spacing:.06em; }
   .hm-slot .hm-meta{ font-size:11px; line-height:1.45; opacity:.72; word-break:break-all; }
-  .hm-slot .hm-meta.hm-warn{ color:#a8410f; opacity:1; font-weight:700; }
   .hm-sum{
     display:flex; flex-direction:column; justify-content:center; gap:3px;
     padding-left:12px; border-left:1px dashed var(--line,#cfc7b6); font-size:12px;
@@ -239,29 +238,23 @@
 
   /* ============ 1人分の防御力 ============ */
 
-  // 統率ランクの表記ゆれ(ixawiki一括登録分に「.S」「.SS」のような先頭ドット付きがある)を
-  // rankOrder に載る形に寄せる。中身が不明な記号なので、ドットを外した素のランクとして扱い、
-  // 画面側には「要確認」を出して手で直せるようにしておく。
   function normalizeGrade(g){
     if(!g) return '';
-    const s = String(g).replace(/^\.+/, '');
+    const s = String(g).trim();
     return rankOrder.indexOf(s) === -1 ? '' : s;
   }
-  const gradeIsUncertain = g => !!g && /^\./.test(String(g));
 
   // その兵種を率いるときに参照される統率①②を、武将データの rankGrades から決める
   function autoRanks(entry, soldier){
-    if(!entry || !soldier) return {r1:'', r2:'', uncertain:false};
-    if(entry.rarity === '傑') return {r1:'XXX', r2:'XXX', uncertain:false};
+    if(!entry || !soldier) return {r1:'', r2:''};
+    if(entry.rarity === '傑') return {r1:'XXX', r2:'XXX'};
     const g = entry.rankGrades;
-    if(!g) return {r1:'', r2:'', uncertain:false};
+    if(!g) return {r1:'', r2:''};
     const keys = soldier.rankInfluence.map(x => INFLUENCE_TO_GRADE[x]).filter(Boolean);
-    if(!keys.length) return {r1:'', r2:'', uncertain:false};
-    const raw1 = g[keys[0]], raw2 = g[keys[1] || keys[0]];
+    if(!keys.length) return {r1:'', r2:''};
     return {
-      r1: normalizeGrade(raw1),
-      r2: normalizeGrade(raw2),
-      uncertain: gradeIsUncertain(raw1) || gradeIsUncertain(raw2)
+      r1: normalizeGrade(g[keys[0]]),
+      r2: normalizeGrade(g[keys[1] || keys[0]])
     };
   }
 
@@ -406,7 +399,7 @@
     out.troops = troops;
     out.cost = (typeof entry.cost === 'number') ? entry.cost : 0;
 
-    const ranks = (cell.r1 && cell.r2) ? {r1:cell.r1, r2:cell.r2, uncertain:false} : autoRanks(entry, soldier);
+    const ranks = (cell.r1 && cell.r2) ? {r1:cell.r1, r2:cell.r2} : autoRanks(entry, soldier);
     out.ranks = ranks;
 
     const alpha = getAptMultiplier(ranks.r1, ranks.r2);
@@ -459,8 +452,8 @@
         if(v.ranks && v.ranks.r1) parts.push('統率' + v.ranks.r1 + '/' + v.ranks.r2);
         if(v.skill && v.skill.label) parts.push(v.skill.label);
         if(v.skill && v.skill.pending) parts.push(v.skill.pending);
-        el.className = 'hm-meta' + ((v.ranks && v.ranks.uncertain) ? ' hm-warn' : '');
-        el.textContent = parts.join(' ／ ') + ((v.ranks && v.ranks.uncertain) ? ' ※統率要確認' : '');
+        el.className = 'hm-meta';
+        el.textContent = parts.join(' ／ ');
       }
     }
 
