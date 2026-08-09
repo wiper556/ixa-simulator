@@ -1887,6 +1887,7 @@
             '【2026年7月三度目修正】ixanary.com生HTMLで卓越のTR別追加確率を確認し、国呑ノ蟒蛇と同様にtakuetsuChanceTableで自動計算対応した。'
     },
     '坂西都督': {
+      targetTroopCategories: ['弓兵科','兵器兵科(砲兵科)','兵器兵科(器兵科)'],
       note: 'S(攻撃)。確率はLV10〜TR5共通で+45%、TR6で+45%/対象:弓砲器。攻撃:150%上昇+敵軍部隊数×30%(LV10)、TR1=×32%、TR2=×34%、TR3=×37%、TR4=×40%、TR5=×44%、TR6=×45%+不屈1。敵軍部隊数依存のため計算エンジンは未実装(参考データのみ、固定150%部分のみ参考値)。'
     },
     '布刀玉ノ策': {
@@ -1983,6 +1984,7 @@
             '【2026年7月修正】以前は計算エンジン未対応(参考データのみ)扱いにしていたが、既存のvariableFormula(defenderCount)機構で計算可能だったため対応した。'
     },
     '神将火剣': {
+      targetTroopCategories: ['槍兵科','騎馬兵科','兵器兵科(砲兵科)','兵器兵科(器兵科)'],
       activationType: 'triggered', statTarget: 'def',
       trTable: { base: 150 }, baseRate: 50,
       note: 'S(防御)。確率:LV1+10%→LV10+50%/対象:槍馬砲器。防御:150%上昇(自動反映、LV10)+自軍内で同じ兵種を指揮している武将数×12%を防御効果に加算。' +
@@ -2074,6 +2076,8 @@
 
     /* ============ ユーザー指定スキル名リスト・チャンク2/4 ============ */
     '火槍猛進': {
+      targetTroopCategories: ['槍兵科','弓兵科','兵器兵科(器兵科)'],
+      targetSoldierNames: ['鉄砲足軽'],
       activationType: 'triggered', statTarget: 'def',
       // 【2026年7月再々検証】ixanary.comの「無尽スキルまとめ」記事で防御スキル枠の無尽スキルと確認、hasMujinフラグを復活。
       hasMujin: true, // 無尽(部隊消費コスト-0.5、ixanary.com「無尽スキルまとめ」記事で確認)
@@ -2085,6 +2089,7 @@
             '【2026年7月四度目修正】パラレル【天】版(No.31305)でTR6が解禁されたためixagno.blog.fc2.comで確認し追加登録。あわせて確率をbaseRate(固定55%)からrateTable(base:55,TR6:65)に変更(TR6のみ確率が異なるため)。'
     },
     'ジャンプ': {
+      targetTroopCategories: ['槍兵科','兵器兵科(砲兵科)','兵器兵科(器兵科)'],
       activationType: 'triggered', statTarget: 'atk',
       trTable: { base: 230, TR1: 250, TR2: 280, TR3: 330 }, baseRate: 100,
       note: 'S(攻撃)。確率:LV1 30%→LV10以降100%/対象:槍砲器。攻撃:LV1=75%上昇、LV10=230%上昇、TR1=250%、TR2=280%、TR3=330%(自動反映対応、TR4・TR5は情報源に記載なし)。「飛翔15以上のとき飛翔を全て失う代わりに攻撃効果5倍」は参考データのみ。'
@@ -2171,16 +2176,20 @@
       note: 'S(攻防・模倣不可)。確率+100%/対象:全。LV1:攻撃・防御各70%上昇、LV10:攻撃・防御各250%上昇(自動反映は攻撃分のみ、防御は同値。鍛錬TR別数値は情報源に記載なし)。「卓越:追加確率-50%で攻防効果3倍(卓越追加確率が0%超の時のみ抽選)」は参考データのみ。'
     },
     '御旗ノ守護者': {
+      targetTroopCategories: ['騎馬兵科','兵器兵科(砲兵科)','兵器兵科(器兵科)'],
       activationType: 'triggered', statTarget: 'atk',
       trTable: { base: 230, TR1: 230, TR2: 235 }, baseRate: 100,
       note: 'A(卓越スキル・攻防)。確率100%/対象:馬砲器。攻撃・防御各:LV10=230%上昇+卓越追加確率10%で3倍、TR1=230%+卓越15%、TR2=235%+卓越20%(自動反映は攻撃%上昇分のみ、防御は同値。TR3〜TR5は情報源に記載なし)。板垣信方(No.7011)が習得可能。卓越部分は参考データのみ。'
     },
     '国一丸': {
+      targetTroopCategories: ['槍兵科','騎馬兵科','兵器兵科(器兵科)'],
+      targetSoldierNames: ['騎馬鉄砲'],
       activationType: 'triggered', statTarget: 'atk',
       trTable: { base: 210 }, baseRate: 100,
       note: 'S(攻撃・卓越スキル)。確率+100%/対象:槍馬器騎。LV1:攻撃60%上昇+飛翔6、LV10:攻撃210%上昇+飛翔6(自動反映は攻撃%上昇分のみ、鍛錬TR別数値は情報源に記載なし)。「攻撃戦闘時、卓越:追加確率1%(LV1)〜5%(LV10)で攻撃効果3倍・飛翔16取得(飛翔取得部分は模倣不可)」は参考データのみ。'
     },
     '霊妙秘剣': {
+      targetTroopCategories: ['槍兵科','騎馬兵科','兵器兵科(砲兵科)'],
       activationType: 'triggered', statTarget: 'atk', noMimic: true,
       trTable: { base: 180 }, baseRate: 100,
       note: 'A(攻防・卓越スキル・模倣不可)。確率+100%/対象:槍馬砲。LV1:攻撃・防御各60%上昇、LV10:攻撃・防御各180%上昇(自動反映は攻撃分のみ、防御は同値。鍛錬TR別数値は情報源に記載なし)。「卓越:追加確率-30%で攻防効果3倍(卓越追加確率が0%超の時のみ抽選)」は参考データのみ。'
@@ -2191,11 +2200,13 @@
       note: 'S(攻撃・卓越スキル・模倣不可)。確率+100%/対象:全。LV1:攻撃130%上昇+卓越追加確率-10%で兵士被害6%減少、LV10:攻撃395%上昇(自動反映は攻撃分のみ、鍛錬TR別数値は情報源に記載なし)。「部隊内重複上限2」「卓越:追加確率1%で自部隊の兵士被害20%減少」は参考データのみ。'
     },
     '青葉ノ仁王': {
+      targetTroopCategories: ['槍兵科','弓兵科','兵器兵科(砲兵科)'],
       activationType: 'triggered', statTarget: 'atk', noMimic: true,
       trTable: { base: 110 }, baseRate: 100,
       note: 'A(攻撃・卓越スキル・模倣不可)。確率+100%/対象:槍弓砲。LV1:攻撃34%上昇+卓越追加確率10%で兵士被害5%減少、LV10:攻撃110%上昇+卓越追加確率20%で兵士被害10%減少(自動反映は攻撃分のみ、鍛錬TR別数値は情報源に記載なし)。「部隊内重複上限2」は参考データのみ。'
     },
     '氷嶺不撓': {
+      targetTroopCategories: ['弓兵科','騎馬兵科','兵器兵科(砲兵科)','兵器兵科(器兵科)'],
       activationType: 'triggered', statTarget: 'atk', hasSoar: true,
       trTable: { base: 50, TR6: 50 }, baseRate: 54,
       soarValueTable: { TR6: 17 }, // TR6はパラレル版No.40073で解禁、飛翔値17(ixagno.blog.fc2.com確認)。base(LV10)は飛翔15だが未登録(参考情報のみ・要検証)
@@ -2259,11 +2270,14 @@
             '鍛錬TR別数値は情報源に記載なし。里見義弘(2)(No.1245)固有スキル。'
     },
     '金城ノ黒鷹': {
+      targetTroopCategories: ['槍兵科','騎馬兵科','兵器兵科(器兵科)'],
+      targetSoldierNames: ['鉄砲足軽'],
       activationType: 'triggered', statTarget: 'def',
       trTable: { base: 120 }, baseRate: 49,
       note: 'S(防御)。確率:LV1+31%→LV10+49%/対象:槍馬器鉄。防御:LV1=60%上昇、LV10=120%上昇(自動反映)+「攻撃側敵軍全武将のうちこの武将のコストを上回るコスト部分の総和×16%を防御効果に加算」(参考データのみ・計算エンジン未対応)。鍛錬TR別数値は情報源に記載なし。'
     },
     '凶天殺界': {
+      targetTroopCategories: ['騎馬兵科','兵器兵科(砲兵科)','兵器兵科(器兵科)'],
       activationType: 'triggered', statTarget: 'def',
       trTable: { base: 70 }, baseRate: 40,
       note: 'SSS(合成不可スキル・防御)。確率:LV1+17%→LV10+40%/対象:馬砲器。防御:LV1=25%上昇、LV10=70%上昇(自動反映)+「攻撃側敵軍全武将のうちこの武将のコストを上回るコスト部分の総和×係数(LV1=1.6%、LV10=4%)を防御効果に加算」(参考データのみ)。鍛錬TR別数値は情報源に記載なし。'
@@ -2294,11 +2308,13 @@
             '【2026年7月修正】以前は防御の防御参加武将数依存部分も含め計算エンジン未対応(参考データのみ)扱いにしていたが、既存のvariableFormula(defenderCount)機構で防御部分は計算可能だったため対応した。'
     },
     '王花尖剣': {
+      targetTroopCategories: ['槍兵科','騎馬兵科','兵器兵科(砲兵科)','兵器兵科(器兵科)'],
       activationType: 'triggered', statTarget: 'def',
       trTable: { base: 320 }, baseRate: 64,
       note: 'S(防御)。確率:LV1+20%→LV10以降+64%/対象:槍馬砲器。防御:320%上昇+飛翔10(LV10、自動反映は320%分のみ)+部隊内全武将の飛翔値合計×係数を防御に加算(LV1=3.3%、LV10=10%、TR1=10.4%、TR2=11%、TR3=11.8%、TR4=13%、TR5=14.5%、参考データのみ)。宇喜多秀家(No.1281)の固有スキル。'
     },
     '砕島天鬼槍': {
+      targetTroopCategories: ['槍兵科','騎馬兵科','兵器兵科(砲兵科)','兵器兵科(器兵科)'],
       activationType: 'triggered', statTarget: 'def',
       trTable: { base: 250, TR1: 255, TR2: 260, TR3: 270, TR4: 285, TR5: 300 }, baseRate: 100,
       note: 'S(防御・卓越スキル)。確率+100%/対象:槍馬砲器。防御:LV10=250%上昇、TR1=255%、TR2=260%、TR3=270%、TR4=285%、TR5=300%(自動反映対応)。「卓越:追加確率-50%(LV10)〜-10%(TR5)で防御効果3倍(卓越追加確率が0%超の時のみ抽選)」は参考データのみ。長宗我部元親(復刻)(No.10069)の固有スキル。'
@@ -5507,7 +5523,7 @@
     {name:'母衣衆',   category:'騎馬兵科', atk:27, def:27, moveSpeed:23, destructPower:7, trainingTime:'-',    rankInfluence:['騎馬']},
 
     {name:'破城鎚',   category:'兵器兵科(器兵科)', atk:18, def:16, moveSpeed:13, destructPower:12, trainingTime:'40秒',  rankInfluence:['兵器']},
-    {name:'攻城槌',   category:'兵器兵科(器兵科)', atk:23, def:20, moveSpeed:14, destructPower:12, trainingTime:'60秒',  rankInfluence:['兵器']},
+    {name:'攻城櫓',   category:'兵器兵科(器兵科)', atk:23, def:20, moveSpeed:14, destructPower:12, trainingTime:'60秒',  rankInfluence:['兵器']},
     {name:'穴太衆',   category:'兵器兵科(器兵科)', atk:25, def:25, moveSpeed:15, destructPower:15, trainingTime:'110秒', rankInfluence:['兵器']},
     {name:'大筒兵',   category:'兵器兵科(器兵科)', atk:28, def:26, moveSpeed:14, destructPower:20, trainingTime:'120秒', rankInfluence:['弓','兵器']},
 
