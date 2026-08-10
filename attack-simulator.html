@@ -140,6 +140,10 @@
   table.sheet td.cell select.cell-error:focus{
     border-color:#d0332a;background:#ffe0e0;
   }
+  /* 発動率(卓越含む)が100%でないスキルの上昇%欄。
+     期待値としては満額では入らない値であることをひと目で分かるようにする */
+  table.sheet td.cell input.rate-uncertain{border-color:#d0332a;background:#fff1f0;}
+  table.sheet td.cell input.rate-uncertain:focus{border-color:#d0332a;background:#ffe4e2;}
   .rank-pair{display:flex;gap:2px;}
   .rank-pair select{flex:1;}
   .effect-pair{display:flex;gap:2px;align-items:center;}
@@ -3505,6 +3509,20 @@
         const el = $('real_' + cellId(key, col));
         if(!el) return;
         const real = effectiveRateOf(col, key, bonus);
+        // 【2026-08-10追加】発動率(卓越含む)が100%でないスキルは上昇%欄の枠を青から赤に変え、
+        // 「期待値として満額では入らない値」であることをひと目で分かるようにする。
+        // 判定は (1)実発動率が100%未満 (2)期待値と最大値が異なる(=卓越が不確定) のいずれか。
+        // 卓越が確定(部隊内加算で100%到達)または起こり得ない(0%以下)場合はval=valMaxになるので、
+        // (2)は「卓越の抽選結果次第で値が変わる」場合だけ真になる。
+        const valInput = $(cellId(key, col, 'val'));
+        if(valInput){
+          const cell = sheetData[col] && sheetData[col][key];
+          const hasVal = cell && cell.val !== undefined && cell.val !== '';
+          const takuetsuUncertain = hasVal && cell.valMax !== undefined && cell.valMax !== '' &&
+                                    parseFloat(cell.valMax) !== parseFloat(cell.val);
+          const uncertain = !!(hasVal && ((real !== null && real < 100) || takuetsuUncertain));
+          valInput.classList.toggle('rate-uncertain', uncertain);
+        }
         if(real === null){
           el.textContent = '実発動率: -';
           return;
