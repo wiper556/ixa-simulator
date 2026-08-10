@@ -1472,13 +1472,18 @@
               const mult = sk.takuetsu.multiplier;
               // noDoubleTakuetsu(「二重卓越禁止」明記のスキル用)が設定されていれば、部隊内に二重卓越があっても適用しない
               const doubleBonusPct = sk.noDoubleTakuetsu ? null : columnHasDoubleTakuetsu(col);
+              // 【2026-08-10修正】卓越確率が0%以下のスキル(十三ノ奇跡の-60%、国呑ノ蟒蛇の-20%など)は
+              // 「他スキルで卓越確率が加算され0%を超えたときのみ卓越抽選される」というゲーム仕様のため、
+              // 抽選自体が起こり得ない(p=0)ときは最大値にも倍率を掛けない。
+              // 以前は確率に関わらず倍率を掛けていたため、絶対に起きない卓越を含んだ最大値が出ていた。
               if(doubleBonusPct !== null){
                 const p2 = Math.min(100, Math.max(0, tkChance + squadTakuetsuBonus + doubleBonusPct)) / 100;
                 const factor = (1 - p1 + p1 * mult) * (1 - p2 + p2 * mult);
-                effectMax = Math.round(effect * mult * mult * 100) / 100; // 1回目・2回目とも卓越成功した場合
+                const maxMult = (p1 > 0 ? mult : 1) * (p2 > 0 ? mult : 1); // 抽選され得る回数ぶんだけ倍率を掛ける
+                effectMax = Math.round(effect * maxMult * 100) / 100;
                 effect = Math.round(effect * factor * 100) / 100;
               } else {
-                effectMax = Math.round(effect * mult * 100) / 100; // 卓越が必ず成功した場合
+                effectMax = Math.round(effect * (p1 > 0 ? mult : 1) * 100) / 100; // 卓越が必ず成功した場合
                 effect = Math.round(effect * (1 + p1 * (mult - 1)) * 100) / 100;
               }
             }
