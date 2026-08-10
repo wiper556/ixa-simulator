@@ -159,6 +159,21 @@
   .squad-total-row{display:grid;grid-template-columns:2fr 1fr;gap:12px;margin-top:16px;}
   .squad-total-row.cols-3{grid-template-columns:1.3fr 1fr 1.3fr;align-items:stretch;}
   .squad-total-row.cols-4-compact{grid-template-columns:repeat(4,1fr);gap:10px;align-items:stretch;}
+
+    /* スマホでの横はみ出し対策(2026-08-10)。
+       画面幅390pxで文書幅が525pxになり横スクロールが必要だったため、
+       ヘッダーを縦積みにして、中の要素が最小幅で突っ張らないようにする。
+       表は .panel の overflow-x:auto で枠内スクロールさせる(従来どおり)。 */
+    @media (max-width:640px){
+      .wrap{ padding-left:10px; padding-right:10px; box-sizing:border-box; }
+      .header{ flex-direction:column; align-items:stretch; gap:10px; }
+      .header > *{ max-width:100%; min-width:0; }
+      .header *{ min-width:0; }
+      .mode-toggle-btn{ white-space:normal; width:100%; }
+      .seal{ align-self:flex-start; }
+      .panel{ padding-left:12px; padding-right:12px; }
+    }
+
   @media (max-width:640px){
     .squad-total-row{grid-template-columns:1fr;}
     .squad-total-row.cols-3{grid-template-columns:1fr;}
