@@ -52,6 +52,16 @@ const specialSkills = {
           '【2026-08-10追加】specialSkillsに未登録だったため、部隊に入れても「被害減無し」警告が' +
           '消えない不具合があった(警告の判定はeffectCategory:"兵士被害減少"を見ている)。'
   },
+  '富楼那ノ化身': {
+    noMimic: true, // 「模倣不可」明記
+    activationType: 'triggered',
+    targetTroopCategories: ['槍兵科','兵器兵科(砲兵科)','兵器兵科(器兵科)'], // 対象:槍/砲/器
+    baseRate: 70, // 確率+70%(LV10)
+    totalAtkBoostPct: 15, // 部隊総攻撃力15%上昇(LV10・模倣不可)
+    note: 'A(攻撃)。確率:LV1+25%→LV10+70%/対象:槍砲器。対象兵科を指揮した戦闘時、部隊総攻撃力が4%(LV1)→15%(LV10)上昇(模倣不可)。' +
+          '覇神絶域と同系の総攻撃力上昇スキル(totalAtkBoostPct、自動反映対応)。A(鍛錬情報なし)のためTR無し。' +
+          '斎藤朝信(2439)(No.2439)固有スキル。ixanary.com/cards/2439とixawikiで確認(2026-08-11)。'
+  },
   '鳳凰ノ幻華': {
     activationType: 'triggered',
     statTarget: 'def',
@@ -3456,7 +3466,7 @@ const generalGrowthDB = [
   { name:'弥助', no:'2430', rankGrades:{yari:'A',yumi:'B',uma:'B',ki:'A'}, initialSkill:'漆黒ノ牛鬼', lv0Troops:0, atkBase:800, atkGrowth:45, defBase:800, defGrowth:50, tacticsBase:500, tacticsGrowth:2.0, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。職業「将」。Cost0.5。指揮兵数(Lv0)は情報源記載値0(要再確認)。固有スキル「特:漆黒ノ牛鬼」(A)。 カード画像+ixawikiの2ソースで統率(槍A/弓B/馬B/器A)一致確認(2026-08-11)。武将DBページ(characters-kyoku.html)登録済み。' },
   { name:'柳生十兵衛(2432)', no:'2432', rankGrades:{yari:'S',yumi:'A',uma:'A',ki:'A'}, initialSkill:'柳生新陰当流', lv0Troops:3300, atkBase:1000, atkGrowth:65, defBase:1200, defGrowth:120, tacticsBase:500, tacticsGrowth:2.5, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。職業「将」。Cost3。固有スキル「柳生新陰当流」(A)。 カード画像+ixawikiの2ソースで統率(槍S/弓A/馬A/器A)一致確認(2026-08-11)。武将DBページ(characters-kyoku.html)登録済み。' },
   { name:'佐竹義重(2437)', no:'2437', rankGrades:{yari:'S',yumi:'A',uma:'A',ki:'A'}, initialSkill:'黒旋月光', lv0Troops:3850, atkBase:1140, atkGrowth:40, defBase:1050, defGrowth:35, tacticsBase:520, tacticsGrowth:3.0, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。職業「将」。Cost4。固有スキル「黒旋月光」(A)。 カード画像+ixawikiの2ソースで統率(槍S/弓A/馬A/器A)一致確認(2026-08-11)。武将DBページ(characters-kyoku.html)登録済み。同名の天カード(No.1047/1060/1182/1242)と区別するためNo併記。' },
-  { name:'斎藤朝信', no:'2439', initialSkill:'富楼那ノ化身', lv0Troops:3850, atkBase:1070, atkGrowth:42, defBase:1000, defGrowth:32, tacticsBase:500, tacticsGrowth:2.5, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。職業「将」。Cost4。固有スキル「攻:富楼那ノ化身」(A)。' },
+  { name:'斎藤朝信(2439)', no:'2439', rankGrades:{yari:'S',yumi:'A',uma:'A',ki:'A'}, initialSkill:'富楼那ノ化身', lv0Troops:3850, atkBase:1070, atkGrowth:42, defBase:1000, defGrowth:32, tacticsBase:500, tacticsGrowth:2.5, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。職業「将」。Cost4。固有スキル「攻:富楼那ノ化身」(A)。 カード画像+ixawikiの2ソースで統率(槍S/弓A/馬A/器A)一致確認(2026-08-11)。武将DBページ(characters-kyoku.html)登録済み。総攻撃力上昇スキルとしてspecialSkillsにも登録。同名の別カード(No.2059/2266/7020等)と区別するためNo併記。' },
   { name:'片倉景綱', no:'2443', initialSkill:'月下闇龍', lv0Troops:3340, atkBase:980, atkGrowth:34, defBase:1150, defGrowth:47, tacticsBase:520, tacticsGrowth:2.5, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。職業「将」。Cost3。固有スキル「月下闇龍」。' },
   { name:'佐々木小次郎(2450)', no:'2450', initialSkill:'巌流燕返し', lv0Troops:4900, atkBase:1270, atkGrowth:60, defBase:1550, defGrowth:80, tacticsBase:520, tacticsGrowth:2.5, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。職業「剣」。Cost4.5。固有スキル「防:巌流燕返し」(S)。' },
   { name:'延沢満延', no:'2456', initialSkill:'八楯剛陣', lv0Troops:4470, atkBase:1090, atkGrowth:48, defBase:1120, defGrowth:62, tacticsBase:520, tacticsGrowth:2.5, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。職業「将」。Cost4.5。固有スキル「防:八楯剛陣」(S)。' },
