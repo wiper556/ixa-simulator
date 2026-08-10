@@ -1618,6 +1618,18 @@ const specialSkills = {
     trTable: { base: 220, TR1: 230, TR2: 240, TR3: 260 }, baseRate: 100,
     note: 'S(攻防)。確率+100%/対象:全。攻撃・防御各:LV10=220%上昇、TR1=230%、TR2=240%、TR3=260%(自動反映は攻撃分のみ、防御は同値。TR4・TR5は情報源に記載なし)。「卓越:追加確率-10%で攻防効果3倍(卓越追加確率が0%超の時のみ抽選)」は参考データのみ。'
   },
+  '神谷活心流': {
+    noMimic: true, // 「模倣不可」明記
+    activationType: 'triggered',
+    statTarget: 'atk',
+    trTable: { base:420, TR1:470, TR2:580, TR3:780, TR4:1050, TR5:1380 }, // 攻撃%上昇=防御%上昇(同値、ixanaryスキルページで全TR確認)
+    baseRate: 100, // 確率+100%(LV10〜TR5共通)
+    takuetsuRateBonus: 40, // 部隊内卓越追加確率+40%(LV10。TR2=45/TR4=55/TR5=80だがtakuetsuRateBonusはTR非対応のためLV10値で登録・自部隊内重複不可)
+    note: 'S(攻防)。確率+100%/対象:全。攻撃420%(LV10)〜1380%(TR5)上昇+防御同値。' +
+          '部隊内「剣豪」武将スキル発動率+20〜40%(発動率側は手入力対応・自動反映外)。' +
+          '卓越追加確率+40%(LV10)〜+80%(TR5)(takuetsuRateBonusはLV10値40で登録、TR別は現エンジン非対応・模倣不可・自部隊内重複不可)。' +
+          '神谷薫(No.2607)固有スキル。るろうに剣心コラボ。ixanaryスキルページで全TR値を確認(2026-08-11)。'
+  },
   '旋龍突渦': {
     activationType: 'triggered',
     statTarget: 'atk',
@@ -3569,7 +3581,7 @@ const generalGrowthDB = [
   { name:'志々雄真実(2603)', no:'2603', rankGrades:{yari:'SS',yumi:'B',uma:'B',ki:'S'}, initialSkill:'紅蓮ノ刃', lv0Troops:4690, atkBase:2050, atkGrowth:157, defBase:1700, defGrowth:120, tacticsBase:530, tacticsGrowth:2.5, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。職業「剣」。Cost3.5。るろうに剣心コラボカード。固有スキル「紅蓮ノ刃」(S)。既存の志々雄真実【覇】(No.10053)とは別カードのためNo.を併記。 カード画像で統率(槍SS/弓B/馬B/器S)を拡大確認(2026-08-11)。武将DBページ(characters-kyoku.html)登録済み。るろうに剣心コラボ。' },
   { name:'四乃森蒼紫', no:'2605', rankGrades:{yari:'A',yumi:'A',uma:'A',ki:'S'}, initialSkill:'回天剣舞', lv0Troops:4570, atkBase:1070, atkGrowth:46, defBase:1220, defGrowth:62, tacticsBase:560, tacticsGrowth:3.0, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。職業「忍」。Cost4.5。るろうに剣心コラボカード。固有スキル「回天剣舞」(防御用)。 カード画像で統率(槍A/弓A/馬A/器S)を拡大確認(2026-08-11)。武将DBページ(characters-kyoku.html)登録済み。るろうに剣心コラボ。' },
   { name:'巻町操', no:'2606', rankGrades:{yari:'A',yumi:'A',uma:'A',ki:'S'}, initialSkill:'貫殺飛苦無', lv0Troops:3540, atkBase:1190, atkGrowth:57, defBase:1100, defGrowth:47, tacticsBase:510, tacticsGrowth:2.5, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。職業「忍」。Cost3。るろうに剣心コラボカード。固有スキル「攻速:貫殺飛苦無」(S)。 カード画像で統率(槍A/弓A/馬A/器S)を拡大確認(2026-08-11)。武将DBページ(characters-kyoku.html)登録済み。るろうに剣心コラボ。' },
-  { name:'神谷薫', no:'2607', initialSkill:'神谷活心流', lv0Troops:4680, atkBase:1900, atkGrowth:130, defBase:1900, defGrowth:130, tacticsBase:510, tacticsGrowth:2.5, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。職業「剣」。Cost3.5。るろうに剣心コラボカード。固有スキル「神谷活心流」(S)。' },
+  { name:'神谷薫', no:'2607', rankGrades:{yari:'S',yumi:'A',uma:'A',ki:'A'}, initialSkill:'神谷活心流', lv0Troops:4680, atkBase:1900, atkGrowth:130, defBase:1900, defGrowth:130, tacticsBase:510, tacticsGrowth:2.5, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。職業「剣」。Cost3.5。るろうに剣心コラボカード。固有スキル「神谷活心流」(S)。 カード画像で統率(槍S/弓A/馬A/器A)を拡大確認(2026-08-11)。武将DBページ(characters-kyoku.html)登録済み。部隊内卓越+40%スキルとしてspecialSkillsにも登録。るろうに剣心コラボ。' },
   { name:'明神弥彦', no:'2608', initialSkill:'見様見真似', lv0Troops:1660, atkBase:1080, atkGrowth:46, defBase:1200, defGrowth:61, tacticsBase:510, tacticsGrowth:2.5, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。職業「将」。Cost0。るろうに剣心コラボカード。固有スキル「防:見様見真似」(S)。' },
   { name:'相楽左之助(2609)', no:'2609', initialSkill:'悪一文字', lv0Troops:4580, atkBase:1220, atkGrowth:64, defBase:1080, defGrowth:47, tacticsBase:520, tacticsGrowth:2.5, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。職業「将」。Cost4.5。るろうに剣心コラボカード。固有スキル「破:悪一文字」(S)。既存の相楽左之助【覇】(No.10067)とは別カードのためNo.を併記。' },
   { name:'高荷恵', no:'2610', initialSkill:'慈愛ノ癒術', lv0Troops:1, atkBase:550, atkGrowth:1, defBase:550, defGrowth:1, tacticsBase:650, tacticsGrowth:3.5, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。職業「医」。Cost0。るろうに剣心コラボカード。指揮兵数(Lv0)は情報源記載値1(要再確認)。固有スキル「特:慈愛ノ癒術」(S)。' },
