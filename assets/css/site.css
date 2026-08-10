@@ -189,3 +189,33 @@ body{
 .pr-detail-title{font-family:'Noto Serif JP',serif;font-size:15.5px;margin:0 0 10px;padding-bottom:7px;border-bottom:1px dashed var(--line);}
 .pr-detail img{max-width:100%;height:auto;}
 .pr-detail table{max-width:100%;}
+
+/* 記事内で意図的に行をあけたい箇所(ワード原稿の空行を再現する) */
+.article-gap{ height:1.1em; }
+.article-gap3{ height:3.3em; }
+.article-gap6{ height:6.6em; }
+
+/* 記事ページは本文を少し大きくする(既定より+2px) */
+.article-page p,
+.article-page li{ font-size:16px; }
+.article-page .page-lead{ font-size:15.5px; }
+.article-page .article-table th,
+.article-page .article-table td{ font-size:15.5px; }
+.article-page h2{ font-size:20px; }
+/* 強調したい一文 */
+.article-page .article-emph{ font-size:25px; line-height:1.5; }
+
+/* 記事は行間と段落の間隔を広めに取る(詰まって見えるため) */
+.article-page p{ line-height:2.0; margin:0 0 1.5em; }
+.article-page .content-block{ margin-top:2.6em; }
+.article-page h2{ margin:1.8em 0 0.8em; line-height:1.6; }
+.article-page .table-scroll{ margin:1.6em 0 2.0em; }
+.article-page .article-table th,
+.article-page .article-table td{ padding:11px 14px; line-height:1.8; }
+.article-page .page-lead{ line-height:1.9; margin-bottom:1.6em; }
+.article-gap8{ height:8.8em; }
+/* 記事中の画像 */
+.article-figure{ margin:1.8em 0; }
+.article-figure img{ max-width:100%; height:auto; display:block; }
+/* 結論の一文(赤・大きめ) */
+.article-page .article-conclusion{ font-size:20px; font-weight:700; color:#b3261e; }
