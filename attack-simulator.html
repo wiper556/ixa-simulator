@@ -75,6 +75,14 @@
   }
 
   .hado-warning{display:inline-flex;align-items:center;gap:6px;margin-left:12px;vertical-align:middle;}
+  /* 部隊内卓越確率のバッジ。警告(赤)ではなく情報表示なので金系にする */
+  .takuetsu-info{
+    display:inline-flex;align-items:center;gap:6px;margin-left:12px;vertical-align:middle;
+    padding:1px 9px;border-radius:12px;border:1px solid var(--gold);
+    background:linear-gradient(135deg, rgba(201,162,39,0.16), rgba(184,64,47,0.08));
+  }
+  .takuetsu-info-label{font-size:10px;color:var(--muted);font-family:'Zen Kaku Gothic New',sans-serif;font-weight:400;}
+  .takuetsu-info-value{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:11.5px;color:var(--gold-bright);white-space:nowrap;}
   .hado-warning-icon{
     display:inline-flex;align-items:center;justify-content:center;
     width:18px;height:18px;border-radius:50%;
@@ -125,6 +133,13 @@
   /* 攻撃／防御／兵法 のように複数の入力欄を1行にまとめたセル */
   .multi-pair{display:flex;gap:3px;}
   .multi-pair > .multi-part{flex:1;min-width:0;}
+  /* 兵士が未選択の欄。通常の青枠と区別できるよう赤枠+薄い赤背景にする */
+  table.sheet td.cell select.cell-error{
+    border-color:#d0332a;background:#ffecec;
+  }
+  table.sheet td.cell select.cell-error:focus{
+    border-color:#d0332a;background:#ffe0e0;
+  }
   .rank-pair{display:flex;gap:2px;}
   .rank-pair select{flex:1;}
   .effect-pair{display:flex;gap:2px;align-items:center;}
@@ -162,6 +177,7 @@
   .squad-total-row{display:grid;grid-template-columns:2fr 1fr;gap:12px;margin-top:16px;}
   .squad-total-row.cols-3{grid-template-columns:1.3fr 1fr 1.3fr;align-items:stretch;}
   .squad-total-row.cols-4-compact{grid-template-columns:repeat(4,1fr);gap:10px;align-items:stretch;}
+  .squad-total-row.cols-3-compact{grid-template-columns:repeat(3,1fr);gap:10px;align-items:stretch;}
 
     /* スマホでの横はみ出し対策(2026-08-10)。
        画面幅390pxで文書幅が525pxになり横スクロールが必要だったため、
@@ -204,6 +220,7 @@
     .squad-total-row{grid-template-columns:1fr;}
     .squad-total-row.cols-3{grid-template-columns:1fr;}
     .squad-total-row.cols-4-compact{grid-template-columns:1fr 1fr;}
+    .squad-total-row.cols-3-compact{grid-template-columns:1fr 1fr;}
   }
   .squad-total-box.compact-box{
     flex-direction:column;align-items:flex-start;gap:2px;padding:10px 12px;
@@ -267,10 +284,16 @@
   td.cell-combo > div + div{margin-top:2px;}
   td.cell-combo .effect-pair input{font-size:11.5px;padding:4px 4px;}
   td.cell-combo input[type="text"]{padding:5px 7px;}
-  /* 実発動率は独立した行にすると4行ぶん縦を食うため、上昇%欄の右隣に並べる */
-  td.cell-combo > div:last-child{display:flex;align-items:center;gap:5px;}
-  td.cell-combo > div:last-child > .effect-pair{flex:1;min-width:0;}
-  td.cell-combo .fx-real-rate{margin-top:0;white-space:nowrap;font-size:9.5px;text-align:right;}
+  /* 実発動率は独立した行にすると4行ぶん縦を食うため、上昇%欄の右隣に並べる。
+     ただし「実発動率: 100.00% 上昇%: 770.00(1050.00)」のように文言が長くなると
+     入力欄が押し出されて消えてしまうため、収まらないときは折り返して行を増やす
+     (flex-wrap)。入力欄には最低幅を持たせ、どんな場合でも潰れないようにする。 */
+  td.cell-combo > div:last-child{display:flex;align-items:center;gap:5px;flex-wrap:wrap;}
+  td.cell-combo > div:last-child > .effect-pair{flex:1 1 110px;min-width:110px;}
+  td.cell-combo .fx-real-rate{
+    margin-top:0;font-size:9.5px;text-align:right;
+    flex:1 1 auto;min-width:0;white-space:normal;line-height:1.3;
+  }
 
 
   .footnote{margin-top:16px;padding-top:12px;border-top:1px solid var(--line);font-size:11px;color:#5c6478;line-height:1.7;}
@@ -346,6 +369,7 @@
   .panel-title .battle-var-box{padding:3px 9px;gap:7px;margin-bottom:0;flex:0 0 auto;border-radius:5px;}
   .panel-title .battle-var-label{font-size:11px;min-width:0;font-family:'Zen Kaku Gothic New',sans-serif;font-weight:400;}
   .panel-title #defenderCountInput,
+  .panel-title #fameInput,
   .panel-title #enemyCostInput{width:78px;padding:3px 7px;font-size:12px;}
 
   /* 表の行そのものをもう一段詰める */
@@ -538,12 +562,24 @@
         <span class="hado-warning-icon">!</span>
         <span class="hado-warning-text">模倣不可</span>
       </span>
+      <!-- 卓越が絡むスキルを部隊に入れているときだけ、部隊内の卓越確率加算を出す。
+           各スキル固有の卓越確率(マイナスのこともある)にこの値が足されて実際の卓越確率になる。 -->
+      <span id="takuetsuInfo" class="takuetsu-info" style="display:none;">
+        <span class="takuetsu-info-label">部隊内卓越確率</span>
+        <span class="takuetsu-info-value" id="takuetsuInfoValue">+0%</span>
+      </span>
       <!-- 防御参加武将数・敵軍総武将コストは、独立した帯にすると1行ぶん場所を取るため
            パネル見出しの右端に寄せている -->
       <div class="battle-var-row">
         <div class="battle-var-box">
           <div class="battle-var-label">防御参加武将数</div>
           <input type="number" id="defenderCountInput" min="0" max="280" step="1" placeholder="0〜280">
+        </div>
+        <!-- 名声は元は下の集計枠にあったが、防御参加武将数と入力位置が離れていて
+             行き来しづらかったため、戦闘変数としてここへまとめた -->
+        <div class="battle-var-box">
+          <div class="battle-var-label">名声</div>
+          <input type="number" id="fameInput" min="0" step="1" value="0">
         </div>
         <div class="battle-var-box" id="enemyCostBox" style="display:none;">
           <div class="battle-var-label">敵軍総武将コスト(虎伐閃衝用)</div>
@@ -556,15 +592,11 @@
          そのスキルの発動率/上昇%が並ぶので、対応関係も分かりやすくなっている。 -->
     <table class="sheet" id="skillTable"></table>
 
-    <div class="squad-total-row cols-4-compact" style="margin-top:14px;">
+    <div class="squad-total-row cols-3-compact" style="margin-top:14px;">
       <div class="squad-total-box compact-box">
         <div class="squad-total-label" id="squadSkillAtkLabel">攻撃力上昇</div>
         <div class="squad-total-value" id="squadSkillAtkValue">0%</div>
         <div class="squad-total-value" id="squadSkillAtkMaxValue" style="font-size:11px;color:var(--muted);">最大値: 0%</div>
-      </div>
-      <div class="squad-total-box compact-box">
-        <div class="squad-total-label">名声</div>
-        <input type="number" id="fameInput" min="0" step="1" value="0" class="fame-input-compact">
       </div>
       <div class="squad-total-box compact-box">
         <div class="squad-total-label">部隊移動速度</div>
@@ -1585,6 +1617,38 @@
       }
     }
     return false;
+  }
+
+  // ============ 部隊内卓越確率の表示 ============
+  // 卓越が絡むスキル(卓越を持つスキル/卓越確率を上げるスキル)を部隊に入れているときだけ、
+  // 部隊内の卓越確率加算をバッジで出す。各スキル固有の卓越確率にこの値が加算されて
+  // 実際の卓越確率になる(0%以下なら卓越抽選は行われない)。
+  // 十三ノ奇跡(-60%)のように単体では抽選されないスキルがあり、部隊内の加算値が
+  // 見えないと「なぜ卓越しないのか」が分からないため表示する。
+  function squadHasTakuetsuRelatedSkill(){
+    const skillFields = ['skillInit','skillAdd1','skillAdd2','skillUltimate'];
+    for(let col=0; col<4; col++){
+      for(const fk of skillFields){
+        const text = (sheetData[col] && sheetData[col][fk]) || '';
+        if(!text) continue;
+        for(const skName of Object.keys(specialSkills)){
+          if(!text.includes(skName)) continue;
+          const sk = specialSkills[skName];
+          if(sk.takuetsu || sk.takuetsuRateBonus || sk.critRateBonusTable || sk.selfCritRateBonusTable) return true;
+        }
+      }
+    }
+    return false;
+  }
+
+  function updateTakuetsuInfo(){
+    const el = $('takuetsuInfo');
+    if(!el) return;
+    if(!squadHasTakuetsuRelatedSkill()){ el.style.display = 'none'; return; }
+    const bonus = computeSquadTakuetsuRateBonus();
+    const valEl = $('takuetsuInfoValue');
+    if(valEl) valEl.textContent = (bonus >= 0 ? '+' : '') + (Math.round(bonus * 100) / 100) + '%';
+    el.style.display = 'inline-flex';
   }
 
   function updateHadoWarning(){
@@ -2883,6 +2947,9 @@
       sheetData[col][rowKey] = $(cellId(rowKey,col)).value;
     }
     saveSheet();
+    // 武将名・兵士を触ったら、兵士未選択の赤枠を即座に付け外しする
+    // (計算ボタンを押すまで気付けないと、入力し直しの手間になるため)
+    if(rowKey === 'general' || rowKey === 'soldier') updateSoldierErrorMarks();
     // 「指揮兵士数」「攻撃力」「防御力」「兵法値」欄をユーザーが直接編集した場合、次回の
     // 自動計算(recalcSquadStats)で上書きされないよう、それぞれ手入力フラグを立てる
     // (武将名が変わるまで手入力を優先する)。
@@ -3580,12 +3647,38 @@
   // 旧名での呼び出しとの互換用エイリアス
   function renderSquadTotalAttack(){ renderSquadTotal(); }
 
+  // ============ 兵士未選択のチェック ============
+  // 武将名を入れているのに兵士を選んでいない列は、兵士攻撃力が0として計算され
+  // 結果が実際より小さく出てしまう。気付けるよう赤枠にし、計算時はエラーで止める。
+  // 4列すべて使うとは限らないので、「武将名が入っていない列」は未使用とみなして対象外。
+  function columnsMissingSoldier(){
+    const missing = [];
+    for(let col=0; col<4; col++){
+      const general = (sheetData[col] && sheetData[col]['general']) || '';
+      const soldier = (sheetData[col] && sheetData[col]['soldier']) || '';
+      if(general && !soldier) missing.push(col);
+    }
+    return missing;
+  }
+
+  // 兵士欄の赤枠表示を今の入力内容に合わせて付け外しする
+  function updateSoldierErrorMarks(){
+    const missing = columnsMissingSoldier();
+    for(let col=0; col<4; col++){
+      const el = $(cellId('soldier', col));
+      if(!el) continue;
+      el.classList.toggle('cell-error', missing.includes(col));
+    }
+    return missing;
+  }
+
   function updateSoldierNote(col){
     const id = cellId('soldier', col);
     const noteEl = $('note_'+id);
     renderPossessionCheckboxes(col);
     if(!noteEl) return;
     const name = $(id).value;
+    updateSoldierErrorMarks();
     const s = soldierDB.find(sd => sd.name === name);
     if(!s){ noteEl.textContent = ''; return; }
     const infl = s.rankInfluence.length === 1
@@ -3794,6 +3887,7 @@
   // 部隊ステータス・スキル発動率/上昇効果・各種合計値をすべて再計算し直す。
   function runFullCalculation(){
     for(let col=0; col<4; col++){ updateSoldierNote(col); }
+    updateSoldierErrorMarks();
     for(let col=0; col<4; col++){ renderYasukeCheckbox(col); }
     for(let col=0; col<4; col++){
       validateSkillField(col, 'skillAdd1');
@@ -3821,6 +3915,7 @@
     updateSoarValues();
     applyVariableSkillsToEffectTable();
     updateHadoWarning();
+    updateTakuetsuInfo();
     updateCasualtyWarning();
     updateSquadConflictWarning();
     updateEnemyCostBoxVisibility();
@@ -3843,6 +3938,16 @@
       fameInput.scrollIntoView({ behavior: 'smooth', block: 'center' });
       fameInput.focus();
       alert('名声が未入力です。名声を入力してから計算してください。');
+      return;
+    }
+    // 【2026-08-10追加】兵士が未選択の列があると兵士攻撃力が0で計算され、
+    // 実際より小さい結果が出てしまうため、名声と同様に計算を止めて知らせる。
+    const missingSoldier = updateSoldierErrorMarks();
+    if(missingSoldier.length){
+      const el = $(cellId('soldier', missingSoldier[0]));
+      if(el){ el.scrollIntoView({ behavior: 'smooth', block: 'center' }); el.focus(); }
+      const cols = missingSoldier.map(c=>COLS[c]).join('・');
+      alert('兵士が選択されていません(' + cols + ')。兵士を選んでから計算してください。');
       return;
     }
     runFullCalculation();
