@@ -1195,6 +1195,16 @@
             }
           }
           if(effect === undefined){ clearFx(); return; } // 模倣元に数値効果(戦闘スキル)が無い場合
+          // 【2026-08-11修正】模倣した場合も、模倣元スキルの対象兵科と「模倣した列」の兵士が
+          // 一致しなければ効果は乗らない(直接所持時と同じ扱い)。以前は模倣経路だけこの判定が抜けており、
+          // 赤備え(馬)部隊で十三ノ奇跡(対象:弓・器・焙・騎)を模倣すると、直接所持では0になるのに
+          // 模倣コピーには攻撃上昇が乗ってしまうバグがあった(ユーザー指摘)。
+          // 発動率は模倣スキル自身のものなのでそのまま維持する。
+          if(!matchesTroopTarget(col, sourceSk)){
+            effect = 0;
+            if(speed !== undefined) speed = 0;
+            if(destruct !== undefined) destruct = 0;
+          }
           let effectMax = effect; // 期待値(effect)と並行して、卓越が毎回成功した場合の最大値を積み上げていく
           // 模倣元スキル自身が「卓越:追加確率X%でY倍」という自己卓越効果を持つ場合(遠呂智ノ閃光等)、
           // 模倣時にもその効果を反映する。二重卓越(columnHasDoubleTakuetsu)は、模倣元スキルにnoDoubleTakuetsuが
