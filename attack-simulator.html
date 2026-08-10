@@ -79,9 +79,15 @@
   }
 
   .hado-warning{display:inline-flex;align-items:center;gap:6px;margin-left:12px;vertical-align:middle;}
-  /* 未完全警告(黄色)。スキルはあるが実発動率100%未満で、発動しない戦闘があり得る状態 */
-  .partial-warning-icon{color:#e0a400;font-size:15px;line-height:1;}
-  .partial-warning-text{color:#c79100;font-weight:700;font-size:12px;}
+  /* 未完全警告。スキルはあるが実発動率100%未満で、発動しない戦闘があり得る状態。
+     文字色だけの黄色は見出しの金色(--gold-bright)と同化して埋もれるため、
+     濃い橙+薄橙のチップ背景で「無し」(赤)ほどではないが目に入る強さにする。 */
+  .hado-warning.partial{
+    background:#fff0dc;border:1.5px solid #e06400;border-radius:4px;
+    padding:2px 9px;gap:5px;
+  }
+  .partial-warning-icon{color:#e06400;font-size:15px;line-height:1;font-weight:900;}
+  .partial-warning-text{color:#a83c00;font-weight:700;font-size:12px;}
   /* 部隊内卓越確率のバッジ。警告(赤)ではなく情報表示なので金系にする */
   .takuetsu-info{
     display:inline-flex;align-items:center;gap:6px;margin-left:12px;vertical-align:middle;
