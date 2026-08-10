@@ -52,6 +52,18 @@ const specialSkills = {
           '【2026-08-10追加】specialSkillsに未登録だったため、部隊に入れても「被害減無し」警告が' +
           '消えない不具合があった(警告の判定はeffectCategory:"兵士被害減少"を見ている)。'
   },
+  '日輪豊国': {
+    noMimic: true, // 「模倣不可」明記
+    activationType: 'triggered',
+    statTarget: 'atk',
+    trTable: { base:170 }, // 攻撃170%上昇=防御170%上昇(同値、LV10のみ・鍛錬情報なし)
+    baseRate: 100, // 確率+100%(LV10)
+    takuetsuRateBonus: 20, // 部隊内武将の卓越追加確率+20%(自部隊内重複不可)
+    note: 'S(攻防)。確率:LV1+100%→LV10+100%/対象:全。攻撃170%上昇+防御170%上昇(LV10)。' +
+          '部隊内武将スキル発動率+5%(発動率側は手入力対応・自動反映外)+卓越追加確率+20%' +
+          '(takuetsuRateBonus、自動反映対応・模倣不可・自部隊内重複不可)。' +
+          '木下藤吉郎(2573)(No.2573)固有スキル。戦国幻包み【日輪】パック。ixanary.com/cards/2573とixawikiで確認(2026-08-11)。'
+  },
   '波濤ノ剛撃': {
     noMimic: true, // 「模倣不可」明記
     activationType: 'triggered',
@@ -3774,7 +3786,7 @@ const generalGrowthDB = [
   { name:'新城', no:'2554', rankGrades:{yari:'A',yumi:'A',uma:'A',ki:'A'}, cost: 2, initialSkill:'淡雪ノ舞', lv0Troops:2700, atkBase:970, atkGrowth:26, defBase:1000, defGrowth:54, tacticsBase:490, tacticsGrowth:2, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'2026-08-10追加のカード画像(スキルLV1形式)とixanary.comで一括登録。コスト・指揮兵数・初期値・成長値はixanaryの武将データ表。指揮兵数はマニュアルB-01のとおり★0-0の値をlv0Troopsに入れている。カード画像+ixawikiの2ソースで統率(槍A/弓A/馬A/器A)一致確認(2026-08-11)。武将DBページ(characters-kyoku.html)登録済み。聖夜包みパックの限定カード。ixanary記載のLV10性能: 確率：+55% / 対象 弓砲器 / 防御：10%上昇 / （所属部隊のレアリティB以上のスキル個数 x10%）。' },
   { name:'お市(2558)', no:'2558', rankGrades:{yari:'A',yumi:'A',uma:'A',ki:'S'}, cost: 4.5, initialSkill:'魔界ノ美姫', lv0Troops:4460, atkBase:1150, atkGrowth:52, defBase:1150, defGrowth:52, tacticsBase:530, tacticsGrowth:3, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'2026-08-10追加のカード画像(スキルLV1形式)とixanary.comで一括登録。コスト・指揮兵数・初期値・成長値はixanaryの武将データ表。指揮兵数はマニュアルB-01のとおり★0-0の値をlv0Troopsに入れている。カード画像+ixawikiの2ソースで統率(槍A/弓A/馬A/器S)一致確認(2026-08-11)。武将DBページ(characters-kyoku.html)登録済み。同名の別カード(No.1050/1951/2535/2906)と区別するためNo併記。ixanary記載のLV10性能: 確率：+100% / 対象 全 / 攻撃：162%上昇 防御：162%上昇 / 部隊内の姫武将が4以上のとき、【部隊スキル】の発動率+40%（模倣不可・特殊効果は重複不可）。' },
   { name:'京極竜子(2559)', no:'2559', rankGrades:{yari:'A',yumi:'A',uma:'A',ki:'S'}, cost: 4, initialSkill:'聖女ノ恩寵', lv0Troops:4210, atkBase:1050, atkGrowth:42, defBase:1160, defGrowth:54, tacticsBase:520, tacticsGrowth:3, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'2026-08-10追加のカード画像(スキルLV1形式)とixanary.comで一括登録。コスト・指揮兵数・初期値・成長値はixanaryの武将データ表。指揮兵数はマニュアルB-01のとおり★0-0の値をlv0Troopsに入れている。カード画像+ixawikiの2ソースで統率(槍A/弓A/馬A/器S)一致確認(2026-08-11)。武将DBページ(characters-kyoku.html)登録済み。同名の別カード(No.2621/2984/3232)と区別するためNo併記。ixanary記載のLV10性能: 確率：+100% / 対象：追加スキル / このスキルを持つ武将カードは、自領以外の加勢戦闘時のみ、追加スキルの防御効果が2.5倍になる（模倣不可） / 永井豪。' },
-  { name:'木下藤吉郎', no:'2573', cost: 4, initialSkill:'日輪豊国', lv0Troops:4760, atkBase:1130, atkGrowth:54, defBase:1130, defGrowth:54, tacticsBase:600, tacticsGrowth:3.5, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'2026-08-10追加のカード画像(スキルLV1形式)とixanary.comで一括登録。コスト・指揮兵数・初期値・成長値はixanaryの武将データ表。指揮兵数はマニュアルB-01のとおり★0-0の値をlv0Troopsに入れている。**統率(rankGrades)は未取得**・覇かどうか/合成候補/スキルのTR別数値も未確認のため要検証。ixanary記載のLV10性能: 確率：+100% / 対象 全 / 攻撃：170%上昇 防御：170%上昇 / 部隊内武将スキル発動率+5%、卓越追加確率+20%（模倣不可・特殊効果は自部隊内では重複不可）。' },
+  { name:'木下藤吉郎(2573)', no:'2573', rankGrades:{yari:'A',yumi:'A',uma:'A',ki:'S'}, cost: 4, initialSkill:'日輪豊国', lv0Troops:4760, atkBase:1130, atkGrowth:54, defBase:1130, defGrowth:54, tacticsBase:600, tacticsGrowth:3.5, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'2026-08-10追加のカード画像(スキルLV1形式)とixanary.comで一括登録。コスト・指揮兵数・初期値・成長値はixanaryの武将データ表。指揮兵数はマニュアルB-01のとおり★0-0の値をlv0Troopsに入れている。カード画像+ixawikiの2ソースで統率(槍A/弓A/馬A/器S)一致確認(2026-08-11)。武将DBページ(characters-kyoku.html)登録済み。部隊内卓越確率+20%スキルとしてspecialSkillsにも登録。ixanary記載のLV10性能: 確率：+100% / 対象 全 / 攻撃：170%上昇 防御：170%上昇 / 部隊内武将スキル発動率+5%、卓越追加確率+20%（模倣不可・特殊効果は自部隊内では重複不可）。' },
   { name:'独眼竜政宗', no:'2582', cost: 5, initialSkill:'飛竜星照', lv0Troops:4750, atkBase:1220, atkGrowth:64, defBase:1100, defGrowth:51, tacticsBase:540, tacticsGrowth:3, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'2026-08-10追加のカード画像(スキルLV1形式)とixanary.comで一括登録。コスト・指揮兵数・初期値・成長値はixanaryの武将データ表。指揮兵数はマニュアルB-01のとおり★0-0の値をlv0Troopsに入れている。**統率(rankGrades)は未取得**・覇かどうか/合成候補/スキルのTR別数値も未確認のため要検証。ixanary記載のLV10性能: 対象 全 / 通常確率では発動せず、卓越：追加確率45%で発動し、攻撃：440%上昇、かつ飛翔12を得る（攻撃戦闘時のみ発動、飛翔獲得部分は模倣不可・二重卓越不可） / 武井宏之。' },
   { name:'西郷局', no:'2583', cost: 4, initialSkill:'葵ノ慈母', lv0Troops:4250, atkBase:1100, atkGrowth:51, defBase:1150, defGrowth:51, tacticsBase:530, tacticsGrowth:2.5, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'2026-08-10追加のカード画像(スキルLV1形式)とixanary.comで一括登録。コスト・指揮兵数・初期値・成長値はixanaryの武将データ表。指揮兵数はマニュアルB-01のとおり★0-0の値をlv0Troopsに入れている。**統率(rankGrades)は未取得**・覇かどうか/合成候補/スキルのTR別数値も未確認のため要検証。ixanary記載のLV10性能: 確率：+50% / 対象 槍弓器鉄 / 防御：110%上昇 / 自拠点防御時は防御効果3倍。' },
   { name:'佐々木巌流', no:'2591', cost: 5, initialSkill:'幻渦龍刀', lv0Troops:5600, atkBase:2000, atkGrowth:155, defBase:2000, defGrowth:155, tacticsBase:530, tacticsGrowth:3, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'2026-08-10追加のカード画像(スキルLV1形式)とixanary.comで一括登録。コスト・指揮兵数・初期値・成長値はixanaryの武将データ表。指揮兵数はマニュアルB-01のとおり★0-0の値をlv0Troopsに入れている。**統率(rankGrades)は未取得**・覇かどうか/合成候補/スキルのTR別数値も未確認のため要検証。ixanary記載のLV10性能: 確率：+100% / 対象 全 / 攻撃：250%上昇 防御：250%上昇 / 卓越：追加確率-50%で攻防効果が3倍（卓越追加確率が0%を超える時のみ卓越抽選される／模倣不可）。' },
