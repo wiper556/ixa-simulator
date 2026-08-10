@@ -40,10 +40,18 @@
     <p class="page-lead">「実際のところ何連必要なのか」「このスキルはどれくらい強いのか」を、推測ではなく実データとシミュレーションで確かめた記事を置いています。</p>
 
     <div class="content-block">
+      <!-- 記事カード: 題名+冒頭2行(記事本文の書き出しをそのまま抜粋、CSSのline-clampで2行に切る)+サムネイル。
+           抜粋は記事の書き出しを一字一句そのまま使うこと(要約や書き換えをしない)。 -->
       <ul class="article-list">
-        <li>
-          <a href="blog-32sho-kuji.html">32章開幕くじは何連で天12種そろうのか</a>
-          <span class="article-list-date">2026年8月10日</span>
+        <li class="article-card">
+          <a class="article-card-link" href="blog-32sho-kuji.html">
+            <div class="article-card-body">
+              <h2>32章開幕くじは何連で天12種そろうのか</h2>
+              <div class="article-card-date">2026年8月10日</div>
+              <p class="article-card-excerpt">昨季末に「伊吹は天下を取りに行く」さんの【確率論】パラレル天を引くには金くじ何連が必要か？をみて興味本位でシミュレーターを作ってみた。武将画像もなくまだまだ作成途中ではあるものの、シミュレーターとしては完成。人力で何度か回してみたものの、回数ごとにばらつきが大きいのでAIに丸投げした結果</p>
+            </div>
+            <div class="article-card-thumb"><img src="assets/img/blog/kuji-gold-10.png" alt="" loading="lazy" decoding="async"></div>
+          </a>
         </li>
       </ul>
     </div>

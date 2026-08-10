@@ -170,11 +170,26 @@ body{
 .note-inline{font-size:12.5px;color:var(--muted);}
 
 .article-list{list-style:none;margin:0 0 8px;padding:0;display:flex;flex-direction:column;gap:14px;}
-.article-card{border:1px solid var(--line);border-radius:9px;padding:16px 18px;background:var(--bg-panel);}
-.article-card h2{font-family:'Noto Serif JP',serif;font-size:17px;margin:0 0 8px;}
-.article-card h2 a{color:var(--vermillion-bright);text-decoration:none;}
-.article-card h2 a:hover{text-decoration:underline;}
-.article-card p{margin:0;font-size:13.5px;line-height:1.8;}
+/* 記事カード(blog.html)。題名+日付+冒頭2行の抜粋+サムネイルで、カード全体がリンク。
+   抜粋はline-clampで2行に切り、あふれた分は…で省略する。 */
+.article-card{border:1px solid var(--line);border-radius:9px;padding:0;background:var(--bg-panel);overflow:hidden;}
+.article-card:hover{border-color:var(--gold);}
+.article-card-link{display:flex;align-items:stretch;color:inherit;text-decoration:none;}
+.article-card-body{flex:1;min-width:0;padding:16px 18px;}
+.article-card h2{font-family:'Noto Serif JP',serif;font-size:17px;margin:0 0 6px;color:var(--vermillion-bright);}
+.article-card-link:hover h2{text-decoration:underline;}
+.article-card-date{font-size:12px;color:var(--muted);margin:0 0 8px;}
+.article-card-excerpt{
+  margin:0;font-size:13.5px;line-height:1.8;color:var(--paper);
+  display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;
+}
+.article-card-thumb{flex:0 0 190px;border-left:1px solid var(--line);}
+.article-card-thumb img{width:100%;height:100%;object-fit:cover;display:block;}
+@media (max-width:640px){
+  .article-card-thumb{flex-basis:110px;}
+  .article-card-body{padding:12px 14px;}
+  .article-card h2{font-size:15px;}
+}
 .article-date{font-size:11.5px;color:var(--muted);margin:0 0 4px !important;}
 .article-tags{margin-top:8px !important;font-size:11.5px;color:var(--muted);}
 
