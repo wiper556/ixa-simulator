@@ -95,6 +95,13 @@
     background:linear-gradient(135deg, rgba(201,162,39,0.16), rgba(184,64,47,0.08));
   }
   .takuetsu-info-label{font-size:10px;color:var(--muted);font-family:'Zen Kaku Gothic New',sans-serif;font-weight:400;}
+  /* 01スキル表の列見出しに出す不屈バッジ(中身が空なら非表示) */
+  .fukutsu-badge{
+    display:inline-block;margin-left:6px;padding:0 6px;border-radius:9px;
+    font-family:'JetBrains Mono',monospace;font-size:10px;font-weight:700;
+    color:#fff;background:#7a4d10;border:1px solid var(--gold);vertical-align:middle;
+  }
+  .fukutsu-badge:empty{display:none;}
   .takuetsu-info-value{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:11.5px;color:var(--gold-bright);white-space:nowrap;}
   .hado-warning-icon{
     display:inline-flex;align-items:center;justify-content:center;
@@ -1773,6 +1780,16 @@
     return best;
   }
 
+  // 01スキル表の列見出しに不屈合計値を表示する(0なら非表示)
+  function updateFukutsuHeaders(){
+    for(let col=0; col<4; col++){
+      const el = $('fukutsu_h_'+col);
+      if(!el) continue;
+      const total = computeGeneralFukutsu(col);
+      el.textContent = total > 0 ? '不屈'+total : '';
+    }
+  }
+
   function updateHadoWarning(){
     const el = $('hadoWarning');
     const partialEl = $('hadoPartialWarning');
@@ -3054,8 +3071,12 @@
   function currentColGroups(){ return isSpLayout() ? SP_COL_GROUPS : PC_COL_GROUPS; }
 
   function buildTable(tableEl, rows){
+    // 01スキルの表の列見出しには、その列の武将が持つ不屈の合計値を表示するバッジを置く
+    // (不屈=攻撃戦闘敗北時に指揮兵が値×1000まで回復。ユーザー要望2026-08-11)。
+    // 値の更新はupdateFukutsuHeaders()が行う(スキル入力変更後の再計算時)。
+    const isSkillTable = tableEl && tableEl.id === 'skillTable';
     const html = currentColGroups().map(cols => {
-      const head = '<tr><th></th>' + cols.map(c=>`<th>${COLS[c]}</th>`).join('') + '</tr>';
+      const head = '<tr><th></th>' + cols.map(c=>`<th>${COLS[c]}${isSkillTable ? `<span class="fukutsu-badge" id="fukutsu_h_${c}"></span>` : ''}</th>`).join('') + '</tr>';
       const body = rows.map(row => {
         let tds = `<td class="row-label">${row.label}</td>`;
         cols.forEach(col => {
@@ -4159,6 +4180,7 @@
     updateSoarValues();
     applyVariableSkillsToEffectTable();
     updateHadoWarning();
+    updateFukutsuHeaders();
     updateTakuetsuInfo();
     updateCasualtyWarning();
     updateSquadConflictWarning();
