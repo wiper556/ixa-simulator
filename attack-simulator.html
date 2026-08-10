@@ -354,7 +354,9 @@
   td.cell-combo .effect-pair input{padding:3px 4px;}
   .panel{padding:10px 12px 12px;margin-bottom:10px;}
 
-  /* 兵士のプルダウンは「選択してください」「騎馬鉄砲」など文字数が多いので、他より1段小さくする */
+  /* 兵士のプルダウンは「焙烙火矢」「攻城櫓」など兵種名が長く、
+     スマホ幅では右端の▼と重なりやすいので他より1段小さくする
+     (未選択時の表示も「選択してください」から「兵士選択」に短縮済み) */
   table.sheet td.cell select.soldier-select{font-size:11.5px;}
 
   /* スマホ向けの詰め直し(再指定)。
@@ -372,6 +374,10 @@
     td.cell-combo input[type="text"]{padding:4px 5px;}
     td.cell-combo .effect-pair input{font-size:10.5px;padding:3px 3px;}
     td.cell-combo .fx-real-rate{font-size:8.5px;}
+    /* 攻撃／防御／兵法 のように複数欄をまとめた行は、スマホの狭い列幅で横に3つ並べると
+       1欄あたり40px程度になり、数値もplaceholderも読めなくなる。スマホでは縦に積む。
+       (縦を詰める目的はPCで1画面に収めることなので、ここは可読性を優先する) */
+    .multi-pair{flex-direction:column;gap:2px;}
     /* 見出しの右端に寄せた凡例・戦闘変数は、幅が足りないので折り返して左寄せに戻す */
     .panel-title .legend{margin-left:0;}
     .panel-title .battle-var-row{margin-left:0;width:100%;}
@@ -2737,7 +2743,7 @@
         return `<optgroup label="${cat}">${opts}</optgroup>`;
       }).join('');
       return `<div>
-        <select id="${id}" class="soldier-select"><option value="">選択してください</option>${groups}</select>
+        <select id="${id}" class="soldier-select"><option value="">兵士選択</option>${groups}</select>
         <div class="sub-label" id="note_${id}" style="margin-top:3px;display:none;"></div>
         <div id="possess_${id}" style="margin-top:4px;"></div>
       </div>`;
