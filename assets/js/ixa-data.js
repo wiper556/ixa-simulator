@@ -123,6 +123,7 @@ const specialSkills = {
           '朝倉宗滴(No.1319)固有スキル。2026-08-08登録。'
   },
   '天弦ノ威軍': {
+    fukutsu: 1, // 不屈1(2026-08-11一括付与: noteに記載があるのにフィールドが無く不屈バッジ・被害減判定に反映されていなかった)
     activationType: 'triggered',
     statTarget: 'atk',
     targetTroopCategories: ['弓兵科','騎馬兵科','兵器兵科(砲兵科)'],
@@ -1162,6 +1163,7 @@ const specialSkills = {
           '武将本体(波姫・No.2848)は成長率(攻撃/防御/兵法の成長値)が今回のカード画像からは確認できなかったため、generalGrowthDBには未登録。'
   },
   '偃武覇陣': {
+    fukutsu: 1, // 不屈1(2026-08-11一括付与: noteに記載があるのにフィールドが無く不屈バッジ・被害減判定に反映されていなかった)
     noMimic: true, // 「模倣不可」明記
     activationType: 'triggered', // ②: 攻撃したときに発動するタイプ
     // 2026-07-30 ixanary.com生HTML確認: LV10=760%、TR1=810%、TR2=880%、TR3=1000%、TR4=1180%、TR5=1440%(TR6無し)
@@ -1244,6 +1246,7 @@ const specialSkills = {
      trTable/baseRateで自動反映する。
   ============================================ */
   '破軍騎行': {
+    fukutsu: 2, // 不屈2(2026-08-11一括付与: noteに記載があるのにフィールドが無く不屈バッジ・被害減判定に反映されていなかった)
     activationType: 'triggered', statTarget: 'atk',
     trTable: { base: 750 }, baseRate: 100,
     note: 'SS(合成専用スキル)。確率+100%/対象:全。LV1:攻撃480%上昇、LV10:攻撃750%上昇。不屈2(攻撃戦闘敗北時、指揮兵が不屈の数値×1000まで回復)。鍛錬TR別数値は情報源に記載なし。'
@@ -1331,6 +1334,7 @@ const specialSkills = {
           '【2026年7月三度目修正】ixanary.com生HTMLで卓越のTR別追加確率を確認し、国呑ノ蟒蛇と同様にtakuetsuChanceTableで自動計算対応した。'
   },
   '坂西都督': {
+    fukutsu: 1, // 不屈1(2026-08-11一括付与: noteに記載があるのにフィールドが無く不屈バッジ・被害減判定に反映されていなかった)
     targetTroopCategories: ['弓兵科','兵器兵科(砲兵科)','兵器兵科(器兵科)'],
     note: 'S(攻撃)。確率はLV10〜TR5共通で+45%、TR6で+45%/対象:弓砲器。攻撃:150%上昇+敵軍部隊数×30%(LV10)、TR1=×32%、TR2=×34%、TR3=×37%、TR4=×40%、TR5=×44%、TR6=×45%+不屈1。敵軍部隊数依存のため計算エンジンは未実装(参考データのみ、固定150%部分のみ参考値)。'
   },
@@ -1614,6 +1618,18 @@ const specialSkills = {
     trTable: { base: 220, TR1: 230, TR2: 240, TR3: 260 }, baseRate: 100,
     note: 'S(攻防)。確率+100%/対象:全。攻撃・防御各:LV10=220%上昇、TR1=230%、TR2=240%、TR3=260%(自動反映は攻撃分のみ、防御は同値。TR4・TR5は情報源に記載なし)。「卓越:追加確率-10%で攻防効果3倍(卓越追加確率が0%超の時のみ抽選)」は参考データのみ。'
   },
+  '旋龍突渦': {
+    activationType: 'triggered',
+    statTarget: 'atk',
+    trTable: { base:450, TR1:490, TR2:540, TR3:600, TR4:670, TR5:750 }, // 攻撃%上昇(ixanaryスキルページで全TR確認)
+    destructTrTable: { base:150, TR1:160, TR2:170, TR3:180, TR4:210, TR5:250 }, // 破壊%上昇
+    baseRate: 55, // 確率+55%(LV10〜TR5共通)
+    fukutsu: 2, // 不屈2(攻撃戦闘敗北時、指揮兵2000まで回復)
+    note: 'S(攻破)。確率+55%/対象:全。不屈2・撤退。攻撃450%(LV10)〜750%(TR5)上昇+破壊150%〜250%上昇。' +
+          '騎馬鉄砲(所属部隊)の速度+2〜+4・破壊+2〜+7(参考データのみ)。' +
+          '自身or部隊内武将が通常部隊枠から外れるとき、HPが最大60%(LV10)〜90%(TR5)まで回復(特殊効果は模倣と部隊内重複不可・参考データのみ)。' +
+          '伊達藤次郎(No.2600)固有スキル。ixanaryスキルページで全TR値を確認(2026-08-11)。'
+  },
   '幻渦龍刀': {
     activationType: 'triggered', statTarget: 'atk', noMimic: true,
     trTable: { base: 250 }, baseRate: 100,
@@ -1830,6 +1846,7 @@ const specialSkills = {
           '【2026年7月修正】部隊長のスキルを誤参照していたバグを修正(mimicsOwnInitialSkillに分離、ユーザー指摘)。'
   },
   'ためる': {
+    fukutsu: 1, // 不屈1(2026-08-11一括付与: noteに記載があるのにフィールドが無く不屈バッジ・被害減判定に反映されていなかった)
     mimicsOwnInitialSkill: true, baseRate: 100,
     mimicMultiplierTable: { base: 1.15, TR1: 1.17, TR2: 1.2, TR3: 1.25 },
     note: 'SS(合成専用スキル・特)。確率+100%/対象:自身。LV1:等倍で模倣、LV10:1.15倍、TR1:1.17倍、TR2:1.2倍、TR3:1.25倍(自動反映)。「不屈1 兵站」は参考データのみ。TR4・TR5は情報源に記載なし。クイナ(No.2627)の固有スキルとは別(たべる参照)。' +
@@ -1904,6 +1921,7 @@ const specialSkills = {
     note: 'S(特)。確率:LV1+13%→LV10+40%/対象:部隊長。LV1は等倍、LV10は1.2倍にして模倣(自動反映)。鍛錬TR別数値は情報源に記載なし。'
   },
   '盛興弓箭': {
+    fukutsu: 2, // 不屈2(2026-08-11一括付与: noteに記載があるのにフィールドが無く不屈バッジ・被害減判定に反映されていなかった)
     mimicsSquadLeaderInitialSkill: true, baseRate: 45,
     mimicMultiplierTable: { base: 1.2 },
     note: 'S(特・不屈2)。確率:LV1+15%→LV10+45%/対象:部隊長(対象部隊長が不屈2を保持していることが条件)。1.2倍にして模倣(自動反映、条件判定は未対応)。小笠原長棟(No.2837)の固有スキル。鍛錬TR別数値は情報源に記載なし。'
@@ -1929,6 +1947,7 @@ const specialSkills = {
     note: 'SSS(合成専用スキル・特)。確率:LV1+25%→LV10+70%/対象:部隊長。LV10=1.25倍にして模倣(自動反映)。鍛錬TR別数値は情報源に記載なし。'
   },
   '明神ノ鈴音': {
+    fukutsu: 1, // 不屈1(2026-08-11一括付与: noteに記載があるのにフィールドが無く不屈バッジ・被害減判定に反映されていなかった)
     mimicsSquadLeaderInitialSkill: true, baseRate: 50,
     mimicMultiplierTable: { base: 1.15, TR1: 1.19, TR2: 1.24, TR3: 1.30 },
     note: 'S(特・不屈1・兵站)。確率:LV1+16%→LV10=50%、TR1=55%、TR2=60%、TR3=70%/対象:部隊長。LV10=1.15倍、TR1=1.19倍、TR2=1.24倍、TR3=1.30倍にして模倣(自動反映)。「不屈1・兵站」の付与は参考データのみ。TR4・TR5は情報源に記載なし。'
@@ -2626,6 +2645,7 @@ const specialSkills = {
           'スキル説明の全文: ①防御330%上昇する ②飛翔6を持つ ③自拠点防御時は防御効果が1.5倍になる'
   },
   '義心江龍': {
+    fukutsu: 1, // 不屈1(2026-08-11一括付与: noteに記載があるのにフィールドが無く不屈バッジ・被害減判定に反映されていなかった)
     targetTroopCategories: ['槍兵科','兵器兵科(砲兵科)','兵器兵科(器兵科)'],
     trTable: { base: 420 },
     baseRate: 55,
@@ -2662,12 +2682,14 @@ const specialSkills = {
           'スキル説明の全文: ①攻撃380%上昇する ②対象兵科(砲)指揮時極限スキルの攻撃効果が3.5倍となる'
   },
   '荷天滅陣': {
+    fukutsu: 1, // 不屈1(2026-08-11一括付与: noteに記載があるのにフィールドが無く不屈バッジ・被害減判定に反映されていなかった)
     trTable: { base: 760 },
     baseRate: 100,
     note: 'SSS(攻撃)。確率+100%(LV10)/対象:全。攻撃:LV10=760%上昇(自動反映対応)。織田信長（8）【覇】(No.1250)の固有スキル。武将データベースの登録内容から反映(2026年8月)' +
           '。鍛錬TR別の数値は未登録のためLV10のみ。スキル説明の全文: ①攻撃760%上昇する ②不屈1を持つ ③所属部隊を含む4部隊までで自合流を行うことができる ④4部隊での自合流時部隊消費コストを5低下する(特殊効果は模倣・重複不可)'
   },
   '西覇冠軍': {
+    fukutsu: 1, // 不屈1(2026-08-11一括付与: noteに記載があるのにフィールドが無く不屈バッジ・被害減判定に反映されていなかった)
     noMimic: true, // skillDetailの「模倣不可」記載より
     trTable: { base: 540 },
     baseRate: 100,
@@ -3542,7 +3564,7 @@ const generalGrowthDB = [
   { name:'帰蝶(2592)', no:'2592', rankGrades:{yari:'A',yumi:'A',uma:'A',ki:'S'}, initialSkill:'舞蝶朧月', lv0Troops:4760, atkBase:1150, atkGrowth:57, defBase:1150, defGrowth:57, tacticsBase:550, tacticsGrowth:3.0, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。職業「姫」。Cost5。固有スキル「舞蝶朧月」。既存の帰蝶(No.10046)とは別カードのためNo.を併記。 カード画像+ixawikiの2ソースで統率(槍A/弓A/馬A/器S)一致確認(2026-08-11)。武将DBページ(characters-kyoku.html)登録済み。同名の別カード(No.2555/2617/2752等)と区別するためNo併記。' },
   { name:'細川幽斎(2597)', no:'2597', initialSkill:'覇争眼識', lv0Troops:4310, atkBase:1070, atkGrowth:51, defBase:1180, defGrowth:58, tacticsBase:510, tacticsGrowth:2.5, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。職業「将」。Cost4。固有スキル「防:覇争眼識」(S)。既存の細川幽斎(No.10044)(No.10070)とは別カードのためNo.を併記。' },
   { name:'細川ガラシャ(2599)', no:'2599', rankGrades:{yari:'A',yumi:'A',uma:'A',ki:'S'}, initialSkill:'潔花咲然', lv0Troops:4770, atkBase:1140, atkGrowth:57, defBase:1140, defGrowth:57, tacticsBase:560, tacticsGrowth:3.0, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。職業「姫」。Cost5。固有スキル「潔花咲然」(S)。 カード画像+ixawikiの2ソースで統率(槍A/弓A/馬A/器S)一致確認(2026-08-11)。武将DBページ(characters-kyoku.html)登録済み。同名の別カードと区別するためNo併記。' },
-  { name:'伊達藤次郎', no:'2600', initialSkill:'旋龍突渦', lv0Troops:4580, atkBase:1220, atkGrowth:65, defBase:1100, defGrowth:49, tacticsBase:530, tacticsGrowth:3.0, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。職業「将」。Cost4。固有スキル「攻破:旋龍突渦」(S)。伊達政宗の幼名。' },
+  { name:'伊達藤次郎', no:'2600', rankGrades:{yari:'A',yumi:'A',uma:'S',ki:'A'}, initialSkill:'旋龍突渦', lv0Troops:4580, atkBase:1220, atkGrowth:65, defBase:1100, defGrowth:49, tacticsBase:530, tacticsGrowth:3.0, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。職業「将」。Cost4。固有スキル「攻破:旋龍突渦」(S)。伊達政宗の幼名。 カード画像+ixawikiの2ソースで統率(槍A/弓A/馬S/器A)一致確認(2026-08-11)。武将DBページ(characters-kyoku.html)登録済み。不屈2・撤退持ちスキルとしてspecialSkillsにも登録(全TR値ixanaryスキルページ確認)。' },
   { name:'斎藤一(2602)', no:'2602', initialSkill:'牙突', lv0Troops:4990, atkBase:1800, atkGrowth:130, defBase:2000, defGrowth:155, tacticsBase:530, tacticsGrowth:2.5, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。職業「剣」。Cost4.5。るろうに剣心コラボカード。固有スキル「牙突」(S、自領以外での援軍戦闘時に防御効果上昇)。既存の斎藤一【覇】(No.10066)とは別カードのためNo.を併記。' },
   { name:'志々雄真実(2603)', no:'2603', initialSkill:'紅蓮ノ刃', lv0Troops:4690, atkBase:2050, atkGrowth:157, defBase:1700, defGrowth:120, tacticsBase:530, tacticsGrowth:2.5, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。職業「剣」。Cost3.5。るろうに剣心コラボカード。固有スキル「紅蓮ノ刃」(S)。既存の志々雄真実【覇】(No.10053)とは別カードのためNo.を併記。' },
   { name:'四乃森蒼紫', no:'2605', initialSkill:'回天剣舞', lv0Troops:4570, atkBase:1070, atkGrowth:46, defBase:1220, defGrowth:62, tacticsBase:560, tacticsGrowth:3.0, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。職業「忍」。Cost4.5。るろうに剣心コラボカード。固有スキル「回天剣舞」(防御用)。' },
