@@ -79,6 +79,9 @@
   }
 
   .hado-warning{display:inline-flex;align-items:center;gap:6px;margin-left:12px;vertical-align:middle;}
+  /* 未完全警告(黄色)。スキルはあるが実発動率100%未満で、発動しない戦闘があり得る状態 */
+  .partial-warning-icon{color:#e0a400;font-size:15px;line-height:1;}
+  .partial-warning-text{color:#c79100;font-weight:700;font-size:12px;}
   /* 部隊内卓越確率のバッジ。警告(赤)ではなく情報表示なので金系にする */
   .takuetsu-info{
     display:inline-flex;align-items:center;gap:6px;margin-left:12px;vertical-align:middle;
@@ -588,9 +591,19 @@
         <span class="hado-warning-icon">!</span>
         <span class="hado-warning-text">覇道無し</span>
       </span>
+      <!-- 未完全=スキル自体は部隊にあるが実発動率100%未満(発動しない戦闘があり得る)。
+           「無し」(赤)と区別して黄色の△!で示す。 -->
+      <span id="hadoPartialWarning" class="hado-warning partial" style="display:none;">
+        <span class="partial-warning-icon">⚠</span>
+        <span class="partial-warning-text">覇道未完全</span>
+      </span>
       <span id="casualtyWarning" class="hado-warning" style="display:none;">
         <span class="hado-warning-icon">!</span>
         <span class="hado-warning-text">被害減無し</span>
+      </span>
+      <span id="casualtyPartialWarning" class="hado-warning partial" style="display:none;">
+        <span class="partial-warning-icon">⚠</span>
+        <span class="partial-warning-text">被害減未完全</span>
       </span>
       <span id="mujinDisabledWarning" class="hado-warning" style="display:none;">
         <span class="hado-warning-icon">!</span>
@@ -1525,9 +1538,13 @@
                 }
               }
             }
-            // 対象兵科が指定されているスキルは、選択中の兵士の兵科と一致しない場合、効果が乗らないため0にする
+            // 対象兵科が指定されているスキルは、選択中の兵士の兵科と一致しない場合、効果が乗らないため0にする。
+            // 【2026-08-10修正】発動率(rate)は0にしない。スキルの発動自体は兵科と無関係で、
+            // 兵科不一致で無効になるのは攻撃%等の効果部分だけ(十死一生の兵士被害減少5%のように
+            // 兵科不問で働く効果もある)。以前はrate=0にしていたため、実発動率が
+            // 「0+発動率ボーナス」という誤った値で表示されていた(ユーザー指摘)。
+            // 期待値への影響はない(効果0×発動率=0のまま)。
             if(effect !== undefined && !matchesTroopTarget(col, sk)){
-              rate = 0;
               effect = 0;
               speed = (speed !== undefined) ? 0 : speed;
               destruct = (destruct !== undefined) ? 0 : destruct;
@@ -1700,10 +1717,47 @@
     el.style.display = 'inline-flex';
   }
 
+  // 指定条件(pred)に合うスキルが部隊内にある場合、その実発動率(基礎発動率+発動率ボーナス、
+  // 上限100%)の最大値を返す。該当スキルが無い、または発動率データが無ければnull。
+  // 「覇道未完全」「被害減未完全」(スキルはあるが発動しない戦闘があり得る)の判定に使う。
+  function bestEffectiveRateOfSkills(pred){
+    const bonus = computeActivationRateBonus();
+    const skillFields = ['skillInit','skillAdd1','skillAdd2','skillUltimate'];
+    let best = null;
+    for(let col=0; col<4; col++){
+      for(const fk of skillFields){
+        const text = (sheetData[col] && sheetData[col][fk]) || '';
+        if(!text) continue;
+        for(const skName of Object.keys(specialSkills)){
+          if(!text.includes(skName)) continue;
+          const sk = specialSkills[skName];
+          if(!pred(sk)) continue;
+          let base = sk.baseRate;
+          if(sk.rateTable){
+            const trMatch = text.match(/TR(\d)/i);
+            const tier = (trMatch && sk.rateTable['TR'+trMatch[1]] !== undefined) ? 'TR'+trMatch[1] : 'base';
+            base = sk.rateTable[tier];
+          }
+          if(base === undefined) continue;
+          const real = Math.min(100, base + bonus);
+          if(best === null || real > best) best = real;
+        }
+      }
+    }
+    return best;
+  }
+
   function updateHadoWarning(){
     const el = $('hadoWarning');
+    const partialEl = $('hadoPartialWarning');
     if(!el) return;
-    el.style.display = squadHasHadoProtection() ? 'none' : 'inline-flex';
+    const has = squadHasHadoProtection();
+    el.style.display = has ? 'none' : 'inline-flex';
+    if(partialEl){
+      // 覇道スキルはあるが、最も高い実発動率でも100%未満 → 発動しない戦闘があり得る
+      const best = has ? bestEffectiveRateOfSkills(sk => sk.hasHado) : null;
+      partialEl.style.display = (has && best !== null && best < 100) ? 'inline-flex' : 'none';
+    }
   }
 
   // ============ 部隊編成エラーチェック(傑武将×Xスキル混在・同名武将重複・傑武将2名以上) ============
@@ -2051,10 +2105,24 @@
     // (「被害減無し」は攻撃側の兵士ロスに関する警告のため、防御シミュレーター側では対象外とする)。
     if(simMode === 'defense'){
       el.style.display = 'none';
+      const pEl = $('casualtyPartialWarning');
+      if(pEl) pEl.style.display = 'none';
       return;
     }
-    const hasReduction = squadHasCasualtyReduction() || squadAllGeneralsHaveFukutsu();
+    const fukutsuAll = squadAllGeneralsHaveFukutsu();
+    const hasReduction = squadHasCasualtyReduction() || fukutsuAll;
     el.style.display = hasReduction ? 'none' : 'inline-flex';
+    const partialEl = $('casualtyPartialWarning');
+    if(partialEl){
+      // 不屈は常時効果(発動率の概念なし)なので、全員不屈なら常に完全。
+      // 被害減スキル頼みの場合のみ、最も高い実発動率が100%未満なら未完全とする。
+      let showPartial = false;
+      if(hasReduction && !fukutsuAll){
+        const best = bestEffectiveRateOfSkills(sk => sk.effectCategory === '兵士被害減少');
+        showPartial = best !== null && best < 100;
+      }
+      partialEl.style.display = showPartial ? 'inline-flex' : 'none';
+    }
   }
 
   // 部隊内の指定スキル名を持つ列(武将)を探す(見つからなければ-1)。部隊長限定ではない汎用検索。
