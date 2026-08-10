@@ -316,13 +316,18 @@
   .sub-label{line-height:1.3;}
 
   .squad-total-row{gap:9px;margin-top:10px;}
-  .squad-total-box{padding:8px 13px;gap:9px;}
+  .squad-total-box{padding:6px 12px;gap:8px;}
   .squad-total-label{font-size:11.5px;}
-  .squad-total-value{font-size:19px;}
-  .squad-total-box.compact-box{padding:7px 11px;gap:1px;}
+  .squad-total-value{font-size:18px;}
+  .squad-total-box.compact-box{padding:6px 10px;gap:1px;}
   .compact-box .squad-total-value{font-size:15px;}
-  .activation-rate-box{gap:5px;}
-  .activation-rate-sub{gap:3px;}
+  /* 発動率ボーナスの枠は「見出し+内訳2つ」で3段になり、この行全体の高さを決めてしまう。
+     内訳の2つを横に並べて2段に収め、部隊攻撃力・指揮兵士数の枠と高さをそろえる。 */
+  .activation-rate-box{gap:4px;}
+  .activation-rate-sub{flex-direction:row;flex-wrap:wrap;gap:4px;}
+  .activation-rate-sub .tactics-bonus-badge{width:auto;flex:1 1 auto;padding:1px 8px;}
+  .activation-rate-sub .tactics-bonus-label{font-size:9.5px;}
+  .activation-rate-sub .tactics-bonus-value{font-size:11px;}
 
   /* 計算式の折りたたみは閉じている状態が既定なので、見出し1行ぶんまで詰める。
      複数並ぶ場合は横に並べて行数を稼ぐ(開いたときは全幅に戻す)。 */
@@ -332,6 +337,9 @@
   .footnote-row{display:flex;flex-wrap:wrap;gap:0 22px;margin-top:8px;padding-top:7px;border-top:1px solid var(--line);}
   .footnote-row > details.footnote{margin-top:0;padding-top:0;border-top:none;flex:0 1 auto;}
   .footnote-row > details.footnote[open]{flex:1 1 100%;}
+
+  /* 見出し行に寄せた凡例。見出しの一部として右端に小さく置く */
+  .panel-title .legend{margin-left:auto;margin-bottom:0;font-size:10.5px;font-family:'Zen Kaku Gothic New',sans-serif;font-weight:400;}
 
   /* 見出し行に寄せた戦闘変数(防御参加武将数など)は、見出しの一部として小さく収める */
   .panel-title .battle-var-row{margin-left:auto;margin-bottom:0;gap:8px;}
@@ -345,6 +353,30 @@
   td.cell-combo input[type="text"]{padding:4px 7px;}
   td.cell-combo .effect-pair input{padding:3px 4px;}
   .panel{padding:10px 12px 12px;margin-bottom:10px;}
+
+  /* 兵士のプルダウンは「選択してください」「騎馬鉄砲」など文字数が多いので、他より1段小さくする */
+  table.sheet td.cell select.soldier-select{font-size:11.5px;}
+
+  /* スマホ向けの詰め直し(再指定)。
+     上の縦圧縮ブロックは通常指定なので、記述位置が後ろのぶん
+     前方の @media (max-width:640px) の文字サイズ・余白を打ち消してしまう。
+     打ち消されたぶんをここで指定し直す(メディアクエリは詳細度を上げないため、
+     スマホ用の指定は必ず通常指定より後ろに置く必要がある)。 */
+  @media (max-width:640px){
+    table.sheet th{font-size:11.5px;padding:5px 4px;}
+    table.sheet td.row-label{font-size:10.5px;padding:5px 5px;}
+    table.sheet td.cell input, table.sheet td.cell select{font-size:11.5px;padding:4px 5px;}
+    /* プルダウンは右端の▼と文字が重ならないよう、右側だけ余白を多めに取る */
+    table.sheet td.cell select{padding-right:18px;}
+    table.sheet td.cell select.soldier-select{font-size:10.5px;}
+    td.cell-combo input[type="text"]{padding:4px 5px;}
+    td.cell-combo .effect-pair input{font-size:10.5px;padding:3px 3px;}
+    td.cell-combo .fx-real-rate{font-size:8.5px;}
+    /* 見出しの右端に寄せた凡例・戦闘変数は、幅が足りないので折り返して左寄せに戻す */
+    .panel-title .legend{margin-left:0;}
+    .panel-title .battle-var-row{margin-left:0;width:100%;}
+    .panel-title .battle-var-box{flex:1 1 auto;}
+  }
 
   /* タブレット〜小さめPC(641〜700px)向け。640px以下はスマホ用の2列レイアウト
      (min-width:0で画面幅に収める)が効くよう、この指定の対象から外している。
@@ -429,8 +461,10 @@
 
   <!-- 部隊編成表 -->
   <div class="panel">
-    <div class="panel-title"><span class="num">00</span> 基本ステータス</div>
-    <div class="legend"><span class="swatch blue"></span>手入力欄</div>
+    <!-- 凡例は独立した行にすると1行ぶん縦を食うため、見出しの右端に寄せている -->
+    <div class="panel-title"><span class="num">00</span> 基本ステータス
+      <div class="legend"><span class="swatch blue"></span>手入力欄</div>
+    </div>
     <table class="sheet" id="basicTable"></table>
 
     <div class="squad-total-row cols-3">
@@ -2703,7 +2737,7 @@
         return `<optgroup label="${cat}">${opts}</optgroup>`;
       }).join('');
       return `<div>
-        <select id="${id}"><option value="">選択してください</option>${groups}</select>
+        <select id="${id}" class="soldier-select"><option value="">選択してください</option>${groups}</select>
         <div class="sub-label" id="note_${id}" style="margin-top:3px;display:none;"></div>
         <div id="possess_${id}" style="margin-top:4px;"></div>
       </div>`;
