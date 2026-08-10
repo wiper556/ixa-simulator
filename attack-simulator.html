@@ -611,8 +611,11 @@
     <details class="footnote" style="margin-top:8px;">
       <summary>計算式を表示(攻撃力上昇・名声・部隊移動速度・部隊破壊力)</summary>
       <div class="footnote-body">
-        <b>攻撃力上昇:</b> <span id="squadSkillAtkHelpText">4武将×初期/追加1/追加2/極限スキルの「上昇%」欄(16枠)の合計値をそのまま合算表示しています(部隊合計攻撃力の計算には含まれません)。
-        卓越(たくえつ)を持つスキルは、期待値(卓越確率で重み付けした平均)と最大値(卓越が必ず成功したと仮定した値)の両方を集計しています。卓越を持たないスキルは期待値=最大値です。</span><br><br>
+        <b>攻撃力上昇:</b> <span id="squadSkillAtkHelpText">4武将×初期/追加1/追加2/極限スキルの「上昇%」欄(16枠)を集計しています(部隊合計攻撃力の計算には含まれません)。
+        <b>期待値</b> = Σ(実発動率 × 上昇%)。実発動率は各スキルの発動率に発動率ボーナス(兵法値+部隊ランク)を足した値(上限100%)で、各枠の右側に表示しています。卓越を持つスキルの「上昇%」自体も卓越確率で重み付けした平均です。
+        <b>最大値</b> = Σ(上昇%の最大値)。16枠すべてが発動し、卓越もすべて成功したと仮定した値なので、発動率は掛けていません。
+        したがって発動率100%かつ卓越確率100%(または卓越無し)のスキルだけで組んだ場合にのみ、期待値=最大値になります。
+        【2026-08-10修正】以前は卓越の確率だけ期待値に織り込み、発動率は無視して上昇%をそのまま合計していたため、実発動率が低いスキルも満額で加算されていました。</span><br><br>
         <b>名声:</b> 所持名声による自部隊への攻撃力/防御力上昇(部隊共通)。最終攻撃力/防御力の計算にのみ反映されます。<br><br>
         <b>部隊移動速度:</b> <span id="squadSpeedFormula">-</span> 部隊移動速度 = (1 + 16個のスキルの「速度%」の総和÷100) × 兵士移動速度。兵士移動速度は、部隊内で兵士を選択している列のうち最も遅い(最小の)ものを暫定的に採用しています。
         移動時間(秒) = (900 × 移動距離) ÷ 部隊移動速度 + 30。この式で距離1・5・10それぞれの移動時間を算出し、●分▲秒の形式で表示しています。<br><br>
@@ -633,8 +636,8 @@
     <details class="footnote" style="margin-top:8px;">
       <summary id="finalAtkSummaryText">計算式を表示(総攻撃力上昇スキルの判定内訳を含む)</summary>
       <div class="footnote-body">
-        <b>計算式:</b> <span id="finalAtkFormulaHelpText">最終攻撃力 = 部隊攻撃力 × 名声補正 × (1 + 攻撃力上昇(01スキル欄の16枠合計%) ÷ 100) × 総攻撃力上昇(覇神絶域等、対象兵科を指揮しているスキルのみ合算)。「計算する」ボタンを押すと更新されます。
-        卓越を持つスキルがある場合、期待値(平均)と最大値(卓越が毎回成功したと仮定)の両方を表示します。</span>
+        <b>計算式:</b> <span id="finalAtkFormulaHelpText">最終攻撃力 = 部隊攻撃力 × 名声補正 × (1 + 攻撃力上昇(01スキル欄の16枠の集計%) ÷ 100) × 総攻撃力上昇(覇神絶域等、対象兵科を指揮しているスキルのみ合算)。「計算する」ボタンを押すと更新されます。
+        期待値は実発動率と卓越確率の両方で重み付けした平均、最大値は16枠すべてが発動し卓越もすべて成功したと仮定した値です。</span>
         <div id="totalAtkBoostDebug" style="margin-top:6px;"></div>
       </div>
     </details>
@@ -2744,7 +2747,7 @@
     {key:'fx2', label:'追加1', type:'effectpair'},
     {key:'fx3', label:'追加2', type:'effectpair'},
     {key:'fx4', label:'極限スキル', type:'effectpair'},
-    {key:'fxTotal', label:'合計上昇効果(%)', type:'computed'}
+    {key:'fxTotal', label:'合計上昇効果(期待値)', type:'computed'}
   ];
 
   // ============ スキル表の描画順(スキル欄と上昇効果欄の一体化) ============
@@ -3087,11 +3090,43 @@
   }
 
   // スキル発動率・上昇効果ブロックの「合計上昇効果」を再計算して表示する
+  // ============ 実発動率の共通計算 ============
+  // 発動率ボーナス(兵法値ボーナス+部隊ランクボーナス)の合計。表示用のrender関数とは別に
+  // 値だけ欲しい箇所で使う(computeSquadTacticsBonus/computeSquadRankBonusは副作用なし)。
+  function computeActivationRateBonus(){
+    return computeSquadTacticsBonus().bonus + computeSquadRankBonus().bonus;
+  }
+
+  // スキル枠(fx1〜fx4)の実発動率(%)。基礎発動率+発動率ボーナス、上限100%。
+  // 発動率が未入力の枠(手入力で上昇%だけ入れた場合など)はnullを返す。
+  function effectiveRateOf(col, key, bonus){
+    const cell = sheetData[col] && sheetData[col][key];
+    if(!cell) return null;
+    const baseRate = parseFloat(cell.rate);
+    if(isNaN(baseRate) || cell.rate === '') return null;
+    return Math.min(100, Math.round((baseRate + bonus) * 100) / 100);
+  }
+
+  // 【2026-08-10修正】期待値に実発動率を掛けるようにした。
+  // 以前は卓越の確率だけ期待値に織り込み、発動率は無視して上昇%をそのまま合計していたため、
+  // 実発動率73%のスキルも満額で加算され、「期待値」と「最大値」が同じ値になっていた。
+  // 同じ確率事象なのに片方だけ平均を取るのは筋が通らないため、発動率も掛ける。
+  //   期待値 = Σ(実発動率 × 上昇%(卓越の期待値込み))
+  //   最大値 = Σ(上昇%の最大値)  ← 全部発動し全部卓越した場合。発動率は掛けない
+  // 発動率が未入力の枠は100%扱い(手入力値を勝手に減らさないため)。
+  function expectedFxValue(col, key, bonus){
+    const cell = sheetData[col] && sheetData[col][key];
+    if(!cell) return 0;
+    const v = parseFloat(cell.val);
+    if(isNaN(v)) return 0;
+    const rate = effectiveRateOf(col, key, bonus);
+    return rate === null ? v : v * rate / 100;
+  }
+
   function updateSkillEffectTotal(col){
-    const total = ['fx1','fx2','fx3','fx4'].reduce((sum, key)=>{
-      const v = sheetData[col] && sheetData[col][key] ? parseFloat(sheetData[col][key].val) : 0;
-      return sum + (isNaN(v) ? 0 : v);
-    }, 0);
+    const bonus = computeActivationRateBonus();
+    const total = ['fx1','fx2','fx3','fx4'].reduce((sum, key)=>
+      sum + expectedFxValue(col, key, bonus), 0);
     const el = $(cellId('fxTotal', col));
     if(el) el.textContent = fmtPct(total) + '%';
     ['fx1','fx2','fx3','fx4'].forEach(key => updateFxValMaxDisplay(col, key));
@@ -3164,25 +3199,36 @@
   // ============ 16スキル合計攻撃上昇 ============
   // 4武将×4スキル枠(初期/追加1/追加2/極限)=16個の「上昇%」欄(fx1〜4のval)を単純合算して表示する。
   // 部隊合計攻撃力の計算式には含めない、あくまで表示用の合計値。
-  function renderSquadSkillAtkTotal(){
-    let atkSum = 0;
-    let atkSumMax = 0;
+  // 16枠(4武将×4スキル枠)の上昇%を集計する。
+  // 期待値は実発動率で重み付け、最大値は「全部発動+全部卓越成功」なので重み付けしない。
+  // 「攻撃力上昇」欄と「最終攻撃力」欄の両方から呼ぶ(以前は同じ集計を2か所に書いていたため、
+  //  片方だけ直すと食い違う状態になっていた)。
+  function computeSkillBoostTotals(){
+    const bonus = computeActivationRateBonus();
+    let sum = 0, sumMax = 0;
     for(let col=0; col<4; col++){
       ['fx1','fx2','fx3','fx4'].forEach(key=>{
         const cell = sheetData[col] && sheetData[col][key];
         if(!cell) return;
+        sum += expectedFxValue(col, key, bonus);
         const v = parseFloat(cell.val);
-        if(!isNaN(v)) atkSum += v;
         const vMax = cell.valMax !== undefined && cell.valMax !== '' ? parseFloat(cell.valMax) : v;
-        if(!isNaN(vMax)) atkSumMax += vMax;
+        if(!isNaN(vMax)) sumMax += vMax;
       });
     }
+    return { sum: Math.round(sum * 100) / 100, sumMax: Math.round(sumMax * 100) / 100 };
+  }
+
+  function renderSquadSkillAtkTotal(){
+    const totals = computeSkillBoostTotals();
+    const atkSum = totals.sum;
+    const atkSumMax = totals.sumMax;
     const valueEl = $('squadSkillAtkValue');
     const maxValueEl = $('squadSkillAtkMaxValue');
     const formulaEl = $('squadSkillAtkFormula');
     if(valueEl) valueEl.textContent = (Math.round(atkSum * 100) / 100) + '%';
     if(maxValueEl) maxValueEl.textContent = '最大値: ' + (Math.round(atkSumMax * 100) / 100) + '%';
-    if(formulaEl) formulaEl.textContent = `4武将×4スキル枠(初期/追加1/追加2/極限)の上昇%合計`;
+    if(formulaEl) formulaEl.textContent = `期待値=Σ(実発動率×上昇%) / 最大値=Σ(上昇%の最大値)`;
   }
 
   // ============ 最終攻撃力/最終防御力(部隊攻撃力・防御力 × 上昇%) ============
@@ -3233,20 +3279,9 @@
     // simModeに応じて攻撃側/防御側の集計関数を切り替えるよう修正した(ユーザー指摘)。
     const totalAtkBoost = simMode === 'defense' ? computeSquadTotalDefBoostMultiplier() : computeSquadTotalAtkBoostMultiplier(); // 覇神絶域・怨龍烈牙など「総攻撃力/防御力上昇」スキルの合成倍率
     const squadAtk = squadAtkBase * fameMult * totalAtkBoost.multiplier; // 名声補正・総攻撃力/防御力上昇を乗算した後の値
-    let skillAtkSum = 0;
-    let skillAtkSumMax = 0;
-    for(let col=0; col<4; col++){
-      ['fx1','fx2','fx3','fx4'].forEach(key=>{
-        const cell = sheetData[col] && sheetData[col][key];
-        if(!cell) return;
-        const v = parseFloat(cell.val);
-        if(!isNaN(v)) skillAtkSum += v;
-        const vMax = cell.valMax !== undefined && cell.valMax !== '' ? parseFloat(cell.valMax) : v;
-        if(!isNaN(vMax)) skillAtkSumMax += vMax;
-      });
-    }
-    const skillAtkPct = Math.round(skillAtkSum * 100) / 100;
-    const skillAtkPctMax = Math.round(skillAtkSumMax * 100) / 100;
+    const skillTotals = computeSkillBoostTotals();
+    const skillAtkPct = skillTotals.sum;       // 実発動率で重み付けした期待値
+    const skillAtkPctMax = skillTotals.sumMax; // 全発動+全卓越成功を仮定した最大値
     const finalAtk = squadAtk * (1 + skillAtkPct / 100);
     const finalAtkMax = squadAtk * (1 + skillAtkPctMax / 100);
     const valueEl = $('finalAtkValue');
@@ -3469,12 +3504,11 @@
       ['fx1','fx2','fx3','fx4'].forEach(key=>{
         const el = $('real_' + cellId(key, col));
         if(!el) return;
-        const baseRate = sheetData[col] && sheetData[col][key] ? parseFloat(sheetData[col][key].rate) : NaN;
-        if(isNaN(baseRate) || sheetData[col][key].rate === ''){
+        const real = effectiveRateOf(col, key, bonus);
+        if(real === null){
           el.textContent = '実発動率: -';
           return;
         }
-        const real = Math.min(100, Math.round((baseRate + bonus) * 100) / 100);
         // specialSkillsに rateNote があれば実発動率の後ろに短い注記を出す。
         // 「条件を満たした前提で数値を入れてある」スキル(天弦ノ威軍の自軍城主数10以上など)の
         // 前提を利用者に伝えるためのもの。fx1〜fx4はskillInit/skillAdd1/skillAdd2/skillUltimateに対応する。
