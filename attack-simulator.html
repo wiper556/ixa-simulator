@@ -163,15 +163,38 @@
     /* スマホでの横はみ出し対策(2026-08-10)。
        画面幅390pxで文書幅が525pxになり横スクロールが必要だったため、
        ヘッダーを縦積みにして、中の要素が最小幅で突っ張らないようにする。
-       表は .panel の overflow-x:auto で枠内スクロールさせる(従来どおり)。 */
+
+       表(table.sheet)は「ラベル列+4列」で min-width:640px を持っており、
+       スマホでは必ず .panel の中で横スクロールが必要になっていた。
+       これを解消するため、スマホでは buildTable() が
+       「部隊長・小隊1」「小隊2・小隊3」の2列ずつ2ブロックに分けて描画する
+       (JS側 SP_COL_GROUPS / isSpLayout を参照)。列が2つに減るので
+       min-width を外して画面幅に収める。 */
     @media (max-width:640px){
       .wrap{ padding-left:10px; padding-right:10px; box-sizing:border-box; }
       .header{ flex-direction:column; align-items:stretch; gap:10px; }
       .header > *{ max-width:100%; min-width:0; }
       .header *{ min-width:0; }
+      /* ボタン列はインラインstyleで display:flex 指定のため、.header の縦積みだけでは
+         横並びのまま潰れて重なる。ここで明示的に折り返す。 */
+      .header-actions{ flex-wrap:wrap; }
+      .header-actions > button{ flex:1 1 100%; }
       .mode-toggle-btn{ white-space:normal; width:100%; }
       .seal{ align-self:flex-start; }
       .panel{ padding-left:12px; padding-right:12px; }
+
+      table.sheet{ min-width:0; table-layout:fixed; }
+      table.sheet th{ font-size:12px; padding:7px 4px; }
+      table.sheet td.row-label{
+        font-size:10.5px; padding:7px 5px;
+        /* nowrapのままだと「スキル発動率・上昇効果」等の長いラベルが列幅を押し広げるため折り返す */
+        white-space:normal; word-break:break-all; width:82px;
+      }
+      table.sheet td.cell input, table.sheet td.cell select{ font-size:12px; padding:7px 5px; }
+      .effect-pair .sep{ padding:0 1px; }
+      /* 2ブロック目(小隊2・小隊3)の見出し行は、直前のブロックとの区切りが分かるよう間を空ける */
+      table.sheet tbody + tbody tr:first-child th,
+      table.sheet tbody + tbody tr:first-child td{ border-top:3px solid var(--vermillion); }
     }
 
   @media (max-width:640px){
@@ -254,7 +277,11 @@
   .no-result{color:var(--muted);font-size:13px;padding:10px 2px;}
   select#targetCol{background:#ffffff;border:1px solid var(--line);color:var(--paper);border-radius:5px;padding:9px 11px;font-family:'JetBrains Mono',monospace;}
 
-  @media (max-width:700px){
+  /* タブレット〜小さめPC(641〜700px)向け。640px以下はスマホ用の2列レイアウト
+     (min-width:0で画面幅に収める)が効くよう、この指定の対象から外している。
+     ここを単なる max-width:700px にすると、記述位置が後ろのぶんスマホ側の
+     min-width:0 を打ち消してしまい、表が560pxのまま横スクロールになる。 */
+  @media (min-width:641px) and (max-width:700px){
     table.sheet{min-width:560px;}
   }
 
@@ -323,7 +350,7 @@
       <div class="header-sub">部隊長・小隊1〜3、計4名分の武将データを入力する表です。武将名・兵士・スキルを入力すると、攻撃力/防御力/兵法値・指揮兵士数・スキル効果・最終攻撃力/防御力などを自動計算します(武将データベース未登録の場合や、ステ振りで「バランス振り」を選んだ場合の攻撃力/防御力/兵法値は手入力できます)。</div>
       <div class="header-sub" id="futureFeatureNote" style="margin-top:3px;color:var(--gold);">※将来的に4合流攻撃導入予定</div>
     </div>
-    <div style="display:flex;align-items:center;gap:12px;">
+    <div class="header-actions" style="display:flex;align-items:center;gap:12px;">
       <button id="resetBtn" class="reset-btn">🗑 リセット</button>
       <button id="calcBtnTop" class="calc-btn" onclick="handleCalcButtonClick('calcBtnTop')">🧮 計算する</button>
       <button id="modeToggleBtn" class="mode-toggle-btn">🛡 防御シミュレーターに切替</button>
@@ -2592,17 +2619,31 @@
     return '';
   }
 
+  // ============ 表のレイアウト(PC=4列 / スマホ=2列×2ブロック) ============
+  // 「ラベル列+4列」は幅640px以上を要求するため、スマホでは必ず横スクロールになっていた。
+  // そこでスマホ幅では「部隊長・小隊1」と「小隊2・小隊3」の2ブロックに分け、
+  // 1つの<table>の中に<tbody>を2つ並べる形で縦に積む。
+  // (別テーブルに分けるとセルのidが重複するため、あくまで同一テーブル内で分割する)
+  const SP_MEDIA = '(max-width:640px)';
+  const PC_COL_GROUPS = [[0,1,2,3]];
+  const SP_COL_GROUPS = [[0,1],[2,3]];
+  function isSpLayout(){
+    return typeof window.matchMedia === 'function' && window.matchMedia(SP_MEDIA).matches;
+  }
+  function currentColGroups(){ return isSpLayout() ? SP_COL_GROUPS : PC_COL_GROUPS; }
+
   function buildTable(tableEl, rows){
-    let thead = '<tr><th></th>' + COLS.map(c=>`<th>${c}</th>`).join('') + '</tr>';
-    let tbody = rows.map(row => {
-      let tds = `<td class="row-label">${row.label}</td>`;
-      for(let col=0; col<4; col++){
-        tds += `<td class="cell">${buildCell(row, col)}</td>`;
-      }
-      const rowClass = row.type === 'computed' ? ' class="total-row"' : '';
-      return `<tr${rowClass}>${tds}</tr>`;
+    const html = currentColGroups().map(cols => {
+      const head = '<tr><th></th>' + cols.map(c=>`<th>${COLS[c]}</th>`).join('') + '</tr>';
+      const body = rows.map(row => {
+        let tds = `<td class="row-label">${row.label}</td>`;
+        cols.forEach(col => { tds += `<td class="cell">${buildCell(row, col)}</td>`; });
+        const rowClass = row.type === 'computed' ? ' class="total-row"' : '';
+        return `<tr${rowClass}>${tds}</tr>`;
+      }).join('');
+      return '<tbody>' + head + body + '</tbody>';
     }).join('');
-    tableEl.innerHTML = thead + tbody;
+    tableEl.innerHTML = html;
   }
 
   buildTable($('basicTable'), basicRows);
@@ -3658,6 +3699,41 @@
     runFullCalculation();
   }
   loadSheet();
+
+  // ============ 画面幅の変化に応じた表の作り直し ============
+  // PC(4列)とスマホ(2列×2ブロック)ではテーブルのHTML構造が変わるため、
+  // 640pxの境界をまたいだときだけ表を作り直す。
+  // 作り直すとinput要素が全て新品になるので、リセット時と同様に
+  // イベントリスナー・検索予測を再登録し、sheetDataから入力値を復元する。
+  // (幅が変わるたびに毎回作り直すとスマホのアドレスバー開閉でも走ってしまうため、
+  //  モードが実際に切り替わったときのみ実行する)
+  function rebuildTablesForLayout(){
+    buildTable($('basicTable'), basicRows);
+    buildTable($('skillTable'), skillRows);
+    buildTable($('skillEffectTable'), skillEffectRows);
+    attachListeners(basicRows);
+    attachListeners(skillRows);
+    attachListeners(skillEffectRows);
+    for(let col=0; col<4; col++){ attachGeneralAutocomplete(col); }
+    for(let col=0; col<4; col++){
+      ['skillInit','skillAdd1','skillAdd2','skillUltimate'].forEach(fk => attachSkillAutocomplete(fk, col));
+    }
+    [...basicRows, ...skillRows, ...skillEffectRows].forEach(row=>{
+      for(let col=0; col<4; col++){ applyCellValue(row, col); }
+    });
+    updateStatAllocOptions();
+    for(let col=0; col<4; col++){
+      updateSoldierNote(col);
+      renderPossessionCheckboxes(col);
+    }
+    runFullCalculation();
+  }
+  if(typeof window.matchMedia === 'function'){
+    const spQuery = window.matchMedia(SP_MEDIA);
+    const onLayoutChange = ()=>{ rebuildTablesForLayout(); };
+    if(typeof spQuery.addEventListener === 'function') spQuery.addEventListener('change', onLayoutChange);
+    else if(typeof spQuery.addListener === 'function') spQuery.addListener(onLayoutChange); // 古いSafari向け
+  }
 
   // ============ リセットボタン ============
   // 部隊編成表(4列分の武将・スキル・ステータス等の入力内容)と戦闘変数(防御参加武将数・名声)を
