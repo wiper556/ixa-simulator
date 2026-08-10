@@ -179,7 +179,7 @@
   .tactics-bonus-value{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:12px;color:var(--gold-bright);white-space:nowrap;}
 
   .squad-total-row{display:grid;grid-template-columns:2fr 1fr;gap:12px;margin-top:16px;}
-  .squad-total-row.cols-3{grid-template-columns:1.3fr 1fr 1.3fr;align-items:stretch;}
+  .squad-total-row.cols-4{grid-template-columns:1.25fr 0.8fr 0.95fr 1.3fr;align-items:stretch;}
   .squad-total-row.cols-4-compact{grid-template-columns:repeat(4,1fr);gap:10px;align-items:stretch;}
   .squad-total-row.cols-3-compact{grid-template-columns:repeat(3,1fr);gap:10px;align-items:stretch;}
 
@@ -222,7 +222,7 @@
 
   @media (max-width:640px){
     .squad-total-row{grid-template-columns:1fr;}
-    .squad-total-row.cols-3{grid-template-columns:1fr;}
+    .squad-total-row.cols-4{grid-template-columns:1fr;}
     .squad-total-row.cols-4-compact{grid-template-columns:1fr 1fr;}
     .squad-total-row.cols-3-compact{grid-template-columns:1fr 1fr;}
   }
@@ -501,7 +501,7 @@
     </div>
     <table class="sheet" id="basicTable"></table>
 
-    <div class="squad-total-row cols-3">
+    <div class="squad-total-row cols-4">
       <div class="squad-total-box">
         <div class="squad-total-label" id="squadTotalLabel">部隊攻撃力</div>
         <div class="squad-total-formula" id="squadAtkFormula" style="display:none;">-</div>
@@ -511,6 +511,11 @@
       <div class="squad-total-box">
         <div class="squad-total-label">指揮兵士数</div>
         <div class="squad-total-value" id="squadTroopsValue">0</div>
+      </div>
+      <div class="squad-total-box">
+        <div class="squad-total-label">部隊コスト</div>
+        <div class="squad-total-value" id="squadCostValue">0</div>
+        <div class="squad-total-formula" id="squadCostSub"></div>
       </div>
       <div class="squad-total-box activation-rate-box">
         <div class="activation-rate-header">
@@ -2093,6 +2098,62 @@
   // すべて合算し、(1+合計%/100)を返す。この倍率は部隊合計攻撃力に対して別途乗算する。
   // 部隊内(4列)のうち、初期/追加/極限いずれかのスキル枠に「無尽」持ちスキルを装備している武将(列)の人数を数える
   // (天導仁翼「無尽スキル保有武将数×係数%上昇」のような、無尽武将数に応じたスキルの計算に使う)。
+  // ============ 部隊コスト(コスト減スキル加味) ============
+  // 部隊コスト = Σ(武将コスト) − コスト減。
+  // コスト減の内訳:
+  //  ・無尽: スキル1つにつき-0.5(無尽2=mujinValue:2なら-1)。極限スキル枠に入れた登録スキルは
+  //    ゲーム仕様上常に無尽扱い(幻王ノ采配等の既存実装 isMujinSlot と同じ判定)
+  //  ・龍驤虎躍の「部隊消費コスト低下」(costReductionTable、TR別に1〜2)
+  // 武将名が入っていない列は、武将コストもその列のスキルも数えない。
+  // generalGrowthDBにcost未登録の武将は「?」として別掲する(勝手に0で数えない)。
+  function computeSquadCost(){
+    const skillFields = ['skillInit','skillAdd1','skillAdd2','skillUltimate'];
+    let base = 0, reduction = 0;
+    const unknown = [];
+    for(let col=0; col<4; col++){
+      const name = (sheetData[col] && sheetData[col]['general']) || '';
+      if(!name) continue;
+      const entry = findGeneralEntry(name);
+      if(entry && entry.cost !== undefined) base += entry.cost;
+      else unknown.push(COLS[col]);
+      skillFields.forEach(fk=>{
+        const text = (sheetData[col] && sheetData[col][fk]) || '';
+        if(!text) return;
+        // 最長一致で1スキルに絞る(スキル名が別スキル名の一部になっている場合の誤マッチ対策)
+        let matched = null;
+        Object.keys(specialSkills).forEach(n=>{
+          if(text.includes(n) && (!matched || n.length > matched.length)) matched = n;
+        });
+        if(!matched) return;
+        const sk = specialSkills[matched];
+        if(sk.hasMujin || fk === 'skillUltimate'){
+          reduction += 0.5 * (sk.mujinValue || 1);
+        }
+        if(sk.costReductionTable){
+          const trMatch = text.match(/TR(\d)/i);
+          const tier = (trMatch && sk.costReductionTable['TR'+trMatch[1]] !== undefined) ? 'TR'+trMatch[1] : 'base';
+          reduction += sk.costReductionTable[tier] || 0;
+        }
+      });
+    }
+    return { base: base, reduction: reduction, total: Math.max(0, base - reduction), unknown: unknown };
+  }
+
+  function renderSquadCost(){
+    const el = $('squadCostValue');
+    if(!el) return;
+    const c = computeSquadCost();
+    const r1 = v => Math.round(v * 10) / 10;
+    el.textContent = r1(c.total) + (c.unknown.length ? ' +?' : '');
+    const sub = $('squadCostSub');
+    if(sub){
+      const parts = ['基礎 ' + r1(c.base)];
+      if(c.reduction) parts.push('コスト減 -' + r1(c.reduction));
+      if(c.unknown.length) parts.push('コスト不明: ' + c.unknown.join('・'));
+      sub.textContent = (c.base || c.reduction || c.unknown.length) ? parts.join(' ／ ') : '';
+    }
+  }
+
   function countMujinHoldingGenerals(){
     const map = window.mujinMap || computeMujinMap();
     const skillFields = ['skillInit','skillAdd1','skillAdd2','skillUltimate'];
@@ -3982,6 +4043,7 @@
     for(let col=0; col<4; col++){ updateSkillEffectTotal(col); }
     updateAllEffectiveRates();
     renderSquadTotalAttack();
+    renderSquadCost();
     renderSquadSkillAtkTotal();
     renderFinalAttackPower();
     renderSquadSpeed();
