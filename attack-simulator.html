@@ -122,6 +122,9 @@
   table.sheet td.cell input.muted-cell:hover{border-color:#c9c0a4;}
   table.sheet td.cell input.muted-cell:read-only{cursor:not-allowed;background:#e6e4dc;}
   table.sheet td.cell input.muted-cell:read-only:hover{border-color:#dcd4bd;}
+  /* 攻撃／防御／兵法 のように複数の入力欄を1行にまとめたセル */
+  .multi-pair{display:flex;gap:3px;}
+  .multi-pair > .multi-part{flex:1;min-width:0;}
   .rank-pair{display:flex;gap:2px;}
   .rank-pair select{flex:1;}
   .effect-pair{display:flex;gap:2px;align-items:center;}
@@ -237,19 +240,37 @@
   .final-highlight-box .squad-total-formula{color:#ecd9ae;}
   .final-highlight-box .squad-conflict-msg{color:#ffb3a8;}
 
+  /* 防御参加武将数・敵軍総武将コストは、縦に積むと2段ぶん場所を取るので横並びにする
+     (敵軍総武将コスト側は虎伐閃衝を入れたときだけ表示される) */
+  .battle-var-row{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:10px;}
+  .battle-var-row > .battle-var-box{flex:1 1 260px;margin-bottom:0;}
   .battle-var-box{
-    display:flex;align-items:center;gap:12px;margin-bottom:12px;padding:10px 14px;
+    display:flex;align-items:center;gap:10px;margin-bottom:10px;padding:6px 12px;
     background:#ffffff;border:1px solid var(--line);border-radius:6px;flex-wrap:wrap;
   }
-  .battle-var-label{font-size:12.5px;color:var(--muted);flex:1;min-width:180px;}
+  .battle-var-label{font-size:12px;color:var(--muted);flex:1;min-width:150px;}
   .battle-var-sub{display:block;font-size:10.5px;color:#5c6478;margin-top:2px;}
-  #defenderCountInput{width:100px;flex-shrink:0;background:var(--input-bg);border:1px solid var(--input-border);color:var(--paper);border-radius:4px;padding:8px 10px;font-family:'JetBrains Mono',monospace;font-size:14px;}
-  #fameInput{width:100px;flex-shrink:0;background:var(--input-bg);border:1px solid var(--input-border);color:var(--paper);border-radius:4px;padding:8px 10px;font-family:'JetBrains Mono',monospace;font-size:14px;}
+  #defenderCountInput{width:100px;flex-shrink:0;background:var(--input-bg);border:1px solid var(--input-border);color:var(--paper);border-radius:4px;padding:6px 10px;font-family:'JetBrains Mono',monospace;font-size:13px;}
+  #fameInput{width:100px;flex-shrink:0;background:var(--input-bg);border:1px solid var(--input-border);color:var(--paper);border-radius:4px;padding:6px 10px;font-family:'JetBrains Mono',monospace;font-size:13px;}
 
   .fx-real-rate{
-    font-family:'JetBrains Mono',monospace;font-size:10.5px;color:var(--gold-bright);
-    margin-top:3px;text-align:center;
+    font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--gold-bright);
+    margin-top:1px;text-align:center;line-height:1.25;
   }
+  /* 中身が空のときに1行ぶんの高さを取らないようにする(上昇%の最大値表示など) */
+  .fx-real-rate:empty{display:none;}
+
+  /* ============ スキル欄+発動率/上昇効果の一体セル(2026-08-10) ============
+     スキル名の入力欄の直下に、そのスキルの発動率・上昇%を並べる。
+     元は別テーブルで2行ぶん使っていたものを1行にまとめている。 */
+  td.cell-combo{padding:2px;}
+  td.cell-combo > div + div{margin-top:2px;}
+  td.cell-combo .effect-pair input{font-size:11.5px;padding:4px 4px;}
+  td.cell-combo input[type="text"]{padding:5px 7px;}
+  /* 実発動率は独立した行にすると4行ぶん縦を食うため、上昇%欄の右隣に並べる */
+  td.cell-combo > div:last-child{display:flex;align-items:center;gap:5px;}
+  td.cell-combo > div:last-child > .effect-pair{flex:1;min-width:0;}
+  td.cell-combo .fx-real-rate{margin-top:0;white-space:nowrap;font-size:9.5px;text-align:right;}
 
 
   .footnote{margin-top:16px;padding-top:12px;border-top:1px solid var(--line);font-size:11px;color:#5c6478;line-height:1.7;}
@@ -276,6 +297,54 @@
   .res-btn:hover{filter:brightness(1.1);}
   .no-result{color:var(--muted);font-size:13px;padding:10px 2px;}
   select#targetCol{background:#ffffff;border:1px solid var(--line);color:var(--paper);border-radius:5px;padding:9px 11px;font-family:'JetBrains Mono',monospace;}
+
+  /* ============================================================
+     縦圧縮(2026-08-10)
+     「基本ステータス〜計算するボタン」をPCで1画面に収めるための詰め直し。
+     基準となる余白・文字サイズはこのブロックにまとめて上書きしている
+     (元の値を直接書き換えず後段で上書きしているのは、どこを詰めたのかを
+      1か所で見渡せるようにするため)。
+     ============================================================ */
+  .panel{padding:12px 14px 14px;margin-bottom:12px;}
+  .panel-title{font-size:13px;margin:0 0 9px;padding-bottom:6px;gap:8px;}
+  .legend{font-size:10.5px;margin-bottom:7px;gap:12px;}
+
+  table.sheet th{font-size:12px;padding:5px 8px;}
+  table.sheet td.row-label{font-size:11px;padding:4px 9px;}
+  table.sheet td.cell{padding:2px;}
+  table.sheet td.cell input, table.sheet td.cell select{font-size:12.5px;padding:5px 8px;}
+  .sub-label{line-height:1.3;}
+
+  .squad-total-row{gap:9px;margin-top:10px;}
+  .squad-total-box{padding:8px 13px;gap:9px;}
+  .squad-total-label{font-size:11.5px;}
+  .squad-total-value{font-size:19px;}
+  .squad-total-box.compact-box{padding:7px 11px;gap:1px;}
+  .compact-box .squad-total-value{font-size:15px;}
+  .activation-rate-box{gap:5px;}
+  .activation-rate-sub{gap:3px;}
+
+  /* 計算式の折りたたみは閉じている状態が既定なので、見出し1行ぶんまで詰める。
+     複数並ぶ場合は横に並べて行数を稼ぐ(開いたときは全幅に戻す)。 */
+  .footnote{margin-top:8px;padding-top:7px;font-size:10.5px;line-height:1.6;}
+  details.footnote summary{font-size:11px;}
+  details.footnote .footnote-body{margin-top:6px;}
+  .footnote-row{display:flex;flex-wrap:wrap;gap:0 22px;margin-top:8px;padding-top:7px;border-top:1px solid var(--line);}
+  .footnote-row > details.footnote{margin-top:0;padding-top:0;border-top:none;flex:0 1 auto;}
+  .footnote-row > details.footnote[open]{flex:1 1 100%;}
+
+  /* 見出し行に寄せた戦闘変数(防御参加武将数など)は、見出しの一部として小さく収める */
+  .panel-title .battle-var-row{margin-left:auto;margin-bottom:0;gap:8px;}
+  .panel-title .battle-var-box{padding:3px 9px;gap:7px;margin-bottom:0;flex:0 0 auto;border-radius:5px;}
+  .panel-title .battle-var-label{font-size:11px;min-width:0;font-family:'Zen Kaku Gothic New',sans-serif;font-weight:400;}
+  .panel-title #defenderCountInput,
+  .panel-title #enemyCostInput{width:78px;padding:3px 7px;font-size:12px;}
+
+  /* 表の行そのものをもう一段詰める */
+  table.sheet td.cell input, table.sheet td.cell select{padding:4px 7px;}
+  td.cell-combo input[type="text"]{padding:4px 7px;}
+  td.cell-combo .effect-pair input{padding:3px 4px;}
+  .panel{padding:10px 12px 12px;margin-bottom:10px;}
 
   /* タブレット〜小さめPC(641〜700px)向け。640px以下はスマホ用の2列レイアウト
      (min-width:0で画面幅に収める)が効くよう、この指定の対象から外している。
@@ -392,20 +461,23 @@
         </div>
       </div>
     </div>
-    <details class="footnote" style="margin-top:8px;">
+    <!-- 閉じた状態の計算式トグルは1行ずつ縦に積むと場所を取るため、横並びにまとめている -->
+    <div class="footnote-row">
+    <details class="footnote">
       <summary>計算式を表示(部隊合計攻撃力/防御力)</summary>
       <div class="footnote-body">
         <b>計算式:</b> <span id="squadAtkFormulaHelpText">部隊合計攻撃力 = Σ(各武将攻撃力 + 指揮兵士数×兵士攻撃力) × 統率補正α。「兵士」欄で選んだ兵種の攻撃力(兵士データベース)を使用し、未選択の列は兵士攻撃力を0として計算します。
         この欄には名声補正・総攻撃力上昇(覇神絶域等)は含みません(これらは下の「最終攻撃力」欄の計算にのみ反映されます)。</span>
       </div>
     </details>
-    <details class="footnote" style="margin-top:4px;">
+    <details class="footnote">
       <summary>計算式を表示(部隊ランクボーナス)</summary>
       <div class="footnote-body">
         <b>計算式:</b> 部隊ランクボーナスは、各武将の「ランク」欄(突破段階)から自動推測した武将ランク(限界突破=6、極限突破(+0.5)=7、天限突破(+0.5)=8、未配置の列は0)を4人分合計した値(★0〜32、部隊ランク)に応じた発動率上昇。
         ★12未満(★0〜★11)は+0%、★12=+1.95%〜★32=+12%(実測テーブルに基づく)。兵法値ボーナスとは別枠で加算し、実発動率に反映されます。
       </div>
     </details>
+    </div>
   </div>
 
   <div class="panel">
@@ -426,22 +498,23 @@
         <span class="hado-warning-icon">!</span>
         <span class="hado-warning-text">模倣不可</span>
       </span>
+      <!-- 防御参加武将数・敵軍総武将コストは、独立した帯にすると1行ぶん場所を取るため
+           パネル見出しの右端に寄せている -->
+      <div class="battle-var-row">
+        <div class="battle-var-box">
+          <div class="battle-var-label">防御参加武将数</div>
+          <input type="number" id="defenderCountInput" min="0" max="280" step="1" placeholder="0〜280">
+        </div>
+        <div class="battle-var-box" id="enemyCostBox" style="display:none;">
+          <div class="battle-var-label">敵軍総武将コスト(虎伐閃衝用)</div>
+          <input type="number" id="enemyCostInput" min="0" step="0.1" placeholder="0">
+        </div>
+      </div>
     </div>
+    <!-- 【2026-08-10】スキル欄と発動率・上昇効果欄は元は別々の表(skillTable / skillEffectTable)
+         だったが、縦の長さを詰めるため1つの表に統合した。スキル名の入力欄のすぐ下に
+         そのスキルの発動率/上昇%が並ぶので、対応関係も分かりやすくなっている。 -->
     <table class="sheet" id="skillTable"></table>
-
-    <div class="divider-label" style="margin-top:20px;">スキル発動率・上昇効果(表示用・手入力)</div>
-
-    <div class="battle-var-box">
-      <div class="battle-var-label">防御参加武将数</div>
-      <input type="number" id="defenderCountInput" min="0" max="280" step="1" placeholder="0〜280">
-    </div>
-
-    <div class="battle-var-box" id="enemyCostBox" style="display:none;">
-      <div class="battle-var-label">敵軍総武将コスト(虎伐閃衝用)</div>
-      <input type="number" id="enemyCostInput" min="0" step="0.1" placeholder="0">
-    </div>
-
-    <table class="sheet" id="skillEffectTable"></table>
 
     <div class="squad-total-row cols-4-compact" style="margin-top:14px;">
       <div class="squad-total-box compact-box">
@@ -2515,12 +2588,29 @@
     {key:'soldier', label:'兵士', type:'soldierselect'},
     {key:'general', label:'武将名', type:'text'},
     {key:'statAlloc', label:'ステ振り', type:'select', options:['攻撃振り','防御振り','バランス振り','兵法振り']},
-    {key:'atk', label:'攻撃力', type:'number', muted:true},
-    {key:'def', label:'防御力', type:'number', muted:true},
-    {key:'tactics', label:'兵法値', type:'number', muted:true},
+    {key:'atk', label:'攻撃力', type:'number', muted:true, placeholder:'攻撃'},
+    {key:'def', label:'防御力', type:'number', muted:true, placeholder:'防御'},
+    {key:'tactics', label:'兵法値', type:'number', muted:true, placeholder:'兵法'},
     {key:'rank', label:'統率①／②', type:'rankpair'},
-    {key:'troops', label:'指揮兵士数', type:'number', muted:true},
+    {key:'troops', label:'指揮兵士数', type:'number', muted:true, placeholder:'指揮兵士数'},
     {key:'breakthrough', label:'ランク', type:'select', options:['限界突破','極限突破','極限突破+0.5','天限突破','天限突破+0.5'], default:'天限突破'}
+  ];
+
+  // ============ 基本ステータス表の描画順(縦圧縮 2026-08-10) ============
+  // 攻撃力/防御力/兵法値は同じ「基礎ステータス」、ランク(突破段階)と指揮兵士数は
+  // 対応関係にあるので、それぞれ1行にまとめて表示する。3行ぶん縦が縮む。
+  // スキル表と同じく、まとめるのは描画だけ。sheetDataのキー・セルのid・
+  // 計算ロジック・保存形式はすべて従来のまま(applyCellValueとattachListenersは
+  // 引き続きbasicRowsを回せばよい)。
+  const basicRowByKey = {};
+  basicRows.forEach(r => { basicRowByKey[r.key] = r; });
+  const basicRenderRows = [
+    basicRowByKey['soldier'],
+    basicRowByKey['general'],
+    basicRowByKey['statAlloc'],
+    { label:'攻撃／防御／兵法', type:'multi', parts:['atk','def','tactics'] },
+    basicRowByKey['rank'],
+    { label:'ランク／指揮兵士数', type:'multi', parts:['breakthrough','troops'] }
   ];
 
   const skillRows = [
@@ -2540,8 +2630,23 @@
     {key:'fxTotal', label:'合計上昇効果(%)', type:'computed'}
   ];
 
+  // ============ スキル表の描画順(スキル欄と上昇効果欄の一体化) ============
+  // 【2026-08-10】縦の長さを詰めるため、スキル名の表と発動率・上昇効果の表を1つに統合した。
+  // 保存・計算に使うデータのキーは従来のまま(skillInit等 と fx1等 は別キー)で、
+  // ここでは「同じセルの中に縦に並べて描画する」という表示上の対応だけを定義する。
+  // そのため applyCellValue / attachListeners は skillRows・skillEffectRows を
+  // 今までどおり別々に回せばよく、計算ロジック側は一切変更していない。
+  const SKILL_FX_PAIR = { skillInit:'fx1', skillAdd1:'fx2', skillAdd2:'fx3', skillUltimate:'fx4' };
+  const skillMergedRows = skillRows
+    .map(r => SKILL_FX_PAIR[r.key] ? Object.assign({}, r, { fxKey: SKILL_FX_PAIR[r.key] }) : r)
+    .concat(skillEffectRows.filter(r => r.key === 'fxTotal'));
+
   // sheetData[colIndex][rowKey] = value ; rank stored as {r1, r2}
   let sheetData = [{},{},{},{}];
+  // 保存済みデータの復元(loadSheet)が済んだかどうか。詳細はsaveSheetのコメントを参照。
+  // 読み込み中の早い段階で呼ばれるsaveSheetからも参照するため、ここで宣言しておく
+  // (saveSheetの直前に置くと、その時点ではまだ初期化されておらず参照エラーになる)。
+  let sheetRestored = false;
 
   function cellId(rowKey, col, sub){ return 'cell_'+rowKey+'_'+col+(sub?('_'+sub):''); }
 
@@ -2572,12 +2677,14 @@
     }
     if(row.type === 'number'){
       const cls = row.muted ? ' class="muted-cell"' : '';
+      // 複数の欄を1行にまとめた行(type:'multi')では、どの欄がどの項目か分かるようにplaceholderを出す
+      const ph = row.placeholder ? ` placeholder="${row.placeholder}"` : '';
       // 「飛翔値」欄・部隊長(col===0)のみ: るろうに剣心(1741・攻撃時)/京都動乱(1753・防御時)の
       // カード所持効果チェックボックス用コンテナ(部隊長が飛翔1以上を持つ場合のみ中身が表示される)。
       const soarBoxHtml = (row.key === 'soar' && col === 0)
         ? `<div id="rurouniSoarBox_${col}" style="margin-top:4px;"></div>`
         : '';
-      return `<input type="number" id="${id}"${cls}>${soarBoxHtml}`;
+      return `<input type="number" id="${id}"${cls}${ph}>${soarBoxHtml}`;
     }
     if(row.type === 'select'){
       const opts = row.options.map(o=>`<option value="${o}" ${o===row.default?'selected':''}>${o}</option>`).join('');
@@ -2616,6 +2723,12 @@
     if(row.type === 'computed'){
       return `<div class="total-cell" id="${id}">0%</div>`;
     }
+    if(row.type === 'multi'){
+      // 複数の項目を横に並べて1行にまとめる。中身は元の行定義をそのまま使うので
+      // セルのidも入力欄の種類も従来と同一。
+      return '<div class="multi-pair">' + row.parts.map(k =>
+        `<div class="multi-part">${buildCell(basicRowByKey[k], col)}</div>`).join('') + '</div>';
+    }
     return '';
   }
 
@@ -2637,7 +2750,12 @@
       const head = '<tr><th></th>' + cols.map(c=>`<th>${COLS[c]}</th>`).join('') + '</tr>';
       const body = rows.map(row => {
         let tds = `<td class="row-label">${row.label}</td>`;
-        cols.forEach(col => { tds += `<td class="cell">${buildCell(row, col)}</td>`; });
+        cols.forEach(col => {
+          // fxKeyを持つ行(スキル欄)は、同じセル内にそのスキルの発動率・上昇効果欄も重ねて描画する
+          let inner = buildCell(row, col);
+          if(row.fxKey) inner += buildCell({ key: row.fxKey, type: 'effectpair' }, col);
+          tds += `<td class="cell${row.fxKey ? ' cell-combo' : ''}">${inner}</td>`;
+        });
         const rowClass = row.type === 'computed' ? ' class="total-row"' : '';
         return `<tr${rowClass}>${tds}</tr>`;
       }).join('');
@@ -2646,9 +2764,8 @@
     tableEl.innerHTML = html;
   }
 
-  buildTable($('basicTable'), basicRows);
-  buildTable($('skillTable'), skillRows);
-  buildTable($('skillEffectTable'), skillEffectRows);
+  buildTable($('basicTable'), basicRenderRows);
+  buildTable($('skillTable'), skillMergedRows);
 
   function attachListeners(rows){
     rows.forEach(row=>{
@@ -3596,7 +3713,15 @@
   }
   loadBattleVariables();
 
+  // ============ 部隊編成表の保存 ============
+  // 【2026-08-10修正】ページを開き直すと部隊編成が毎回消える不具合の対策。
+  // 読み込み時の呼び出し順が
+  //   loadBattleVariables() → applyVariableSkillsToEffectTable() → saveSheet()
+  //   → (その後で) loadSheet() が localStorage を読む
+  // となっており、保存済みデータを読み出す前に「空のsheetData」で上書き保存して
+  // しまっていた。loadSheet()が復元を終えるまでは保存しないようガードする。
   async function saveSheet(){
+    if(!sheetRestored) return;
     try{ localStorage.setItem('ixa-sim-squad-sheet', JSON.stringify(sheetData)); }
     catch(e){ console.error('保存に失敗しました', e); }
   }
@@ -3692,6 +3817,9 @@
         for(let col=0; col<4; col++){ sheetData[col] = loaded[col] || {}; }
       }
     }catch(e){ /* no saved data yet */ }
+    // ここから先(復元後)の変更は保存してよい。この行より前でsaveSheet()が呼ばれても
+    // 空データで上書きしないよう、saveSheet側でガードしている。
+    sheetRestored = true;
     [...basicRows, ...skillRows, ...skillEffectRows].forEach(row=>{
       for(let col=0; col<4; col++){ applyCellValue(row, col); }
     });
@@ -3708,9 +3836,8 @@
   // (幅が変わるたびに毎回作り直すとスマホのアドレスバー開閉でも走ってしまうため、
   //  モードが実際に切り替わったときのみ実行する)
   function rebuildTablesForLayout(){
-    buildTable($('basicTable'), basicRows);
-    buildTable($('skillTable'), skillRows);
-    buildTable($('skillEffectTable'), skillEffectRows);
+    buildTable($('basicTable'), basicRenderRows);
+    buildTable($('skillTable'), skillMergedRows);
     attachListeners(basicRows);
     attachListeners(skillRows);
     attachListeners(skillEffectRows);
@@ -3747,9 +3874,8 @@
     for(let col=0; col<4; col++){ sheetData[col] = {}; }
     battleVariables.defenderCount = 0;
     battleVariables.fame = 0;
-    buildTable($('basicTable'), basicRows);
-    buildTable($('skillTable'), skillRows);
-    buildTable($('skillEffectTable'), skillEffectRows);
+    buildTable($('basicTable'), basicRenderRows);
+    buildTable($('skillTable'), skillMergedRows);
     attachListeners(basicRows);
     attachListeners(skillRows);
     attachListeners(skillEffectRows);
