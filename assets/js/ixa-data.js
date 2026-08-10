@@ -1077,9 +1077,13 @@ const specialSkills = {
     baseRate: 100, // 確率+100%(通常発動)
     trRequiredPoints: { TR1:10, TR2:40, TR3:90, TR4:150, TR5:200 },
     // 仙剣破斬(卓越で攻撃効果が倍増するタイプ)と構造は似ているが、こちらは卓越で「被害減少」が
-    // 発生するタイプ。被害減少の具体的な数値は登録不要(ユーザー指示)だが、effectCategoryを
-    // 設定することで「被害減無し」警告(squadHasCasualtyReduction)の判定対象にする。
+    // 発生するタイプ。effectCategoryを設定することで「被害減無し」警告の判定対象にする。
+    // 【2026-08-11修正】被害減少は卓越が発動しないと発生しない(ユーザー指摘)。
+    // casualtyReductionTakuetsuChanceTableに卓越追加確率(LV10=30%〜TR5=80%)を持たせ、
+    // 「被害減不完全」警告の判定はこの卓越確率も掛けて行う(ixanaryスキルページで確認)。
     effectCategory: '兵士被害減少',
+    casualtyReductionTakuetsuChanceTable: { base:30, TR1:40, TR2:50, TR3:60, TR4:70, TR5:80 },
+    casualtyReductionTable: { base:15, TR1:16, TR2:17, TR3:18, TR4:19, TR5:20 }, // 卓越発動時の兵士被害減少%(参考値)
     note: 'SS・LV10。確率+100%/対象:全。攻撃%上昇(通常発動分・自動反映対応): LV10(鍛錬前)=254% ／ TR1(10P)=350% ／ TR2(40P)=450% ／ ' +
           'TR3(90P)=560% ／ TR4(150P)=680% ／ TR5(200P)=810%。' +
           '仙剣破斬(卓越で攻撃効果が倍増するタイプ)と構造は類似しているが、こちらは「卓越:攻撃戦闘時、追加確率で自部隊の兵士被害が減少する」タイプ' +
