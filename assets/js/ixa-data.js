@@ -40,6 +40,18 @@ const specialSkills = {
           '「焙」は焙烙火矢=砲兵科、「騎」は騎馬鉄砲。' +
           '松平清康（2）(No.1313)固有スキル。2026-08-08登録。'
   },
+  '六字の采配': {
+    effectCategory: '兵士被害減少',
+    statTarget: 'atk',
+    targetTroopCategories: ['兵器兵科(砲兵科)'],
+    trTable: { base:25 },
+    baseRate: 30,
+    note: 'B(攻撃)。確率:LV1+17%→LV10+30%/対象:砲。攻撃25%上昇(LV10、LV1は14%)。' +
+          '攻撃時のみ自部隊の兵士被害10%減少(LV10、LV1は4.5%)。B(鍛錬なし)のためTR無し。' +
+          '下間頼廉(No.2120)固有スキル。ixanary.comのスキルページで確認(2026-08-10)。' +
+          '【2026-08-10追加】specialSkillsに未登録だったため、部隊に入れても「被害減無し」警告が' +
+          '消えない不具合があった(警告の判定はeffectCategory:"兵士被害減少"を見ている)。'
+  },
   '鳳凰ノ幻華': {
     activationType: 'triggered',
     statTarget: 'def',

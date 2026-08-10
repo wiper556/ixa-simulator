@@ -1185,16 +1185,24 @@
             mimicTakuetsuEntry = mimicSk.mimicTakuetsuTable[ownTier];
           }
           if(mimicTakuetsuEntry){
-            const p = Math.min(100, mimicTakuetsuEntry.chance) / 100;
+            // 【2026-08-10修正】部隊内の卓越確率上昇(八界経略・嵐下墨炎等)が、模倣スキル自身の
+            // 卓越にだけ加算されていなかった。通常スキルの卓越(applyVariableSkillsToEffectTable内)は
+            // 部隊内加算を足しているのに、この模倣側だけ素の追加確率のまま計算していたため、
+            // 部隊内卓越確率が100%を超えていても期待値が最大値に届かない状態になっていた。
+            // 通常スキル側と同じく、部隊内加算を足したうえで0〜100%にクランプする。
+            const mimicTkBase = mimicTakuetsuEntry.chance + computeSquadTakuetsuRateBonus();
+            const p = Math.min(100, Math.max(0, mimicTkBase)) / 100;
             const mult = mimicTakuetsuEntry.multiplier;
             const doubleBonusPct = mimicSk.noDoubleTakuetsu ? null : columnHasDoubleTakuetsu(col);
             if(doubleBonusPct !== null){
-              const p2 = Math.min(100, mimicTakuetsuEntry.chance + doubleBonusPct) / 100;
+              const p2 = Math.min(100, Math.max(0, mimicTkBase + doubleBonusPct)) / 100;
               const factor = (1 - p + p * mult) * (1 - p2 + p2 * mult);
-              effectMax = Math.round(effectMax * mult * mult * 100) / 100;
+              // 抽選され得ない(確率0%)ぶんは最大値にも倍率を掛けない
+              const maxMult = (p > 0 ? mult : 1) * (p2 > 0 ? mult : 1);
+              effectMax = Math.round(effectMax * maxMult * 100) / 100;
               effect = Math.round(effect * factor * 100) / 100;
             } else {
-              effectMax = Math.round(effectMax * mult * 100) / 100;
+              effectMax = Math.round(effectMax * (p > 0 ? mult : 1) * 100) / 100;
               effect = Math.round(effect * (1 + p * (mult - 1)) * 100) / 100;
             }
           }
