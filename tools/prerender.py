@@ -37,41 +37,11 @@ TARGETS = {
         "container": "gdbList",
         "list_js": "() => { gdbRenderList(gdbSortByChapterThenNo(generals.slice())); "
                    "return document.getElementById('gdbList').innerHTML; }",
-        "detail_js": """() => {
-            const host = document.getElementById('gdbDetailBody');
-            const keep = host.innerHTML;
-            const out = gdbSortByChapterThenNo(generals.slice()).map(g => {
-              gdbRenderDetail(g);
-              return '<article class="pr-detail" id="pr-' + g.no + '">'
-                   + '<h3 class="pr-detail-title">No.' + g.no + ' ' + g.name + '</h3>'
-                   + host.innerHTML + '</article>';
-            }).join('\\n');
-            host.innerHTML = keep;
-            return out;
-          }""",
-        "detail_heading": "全武将のスキル詳細",
-        "detail_lead": "上の一覧から1体ずつ開かなくても読めるよう、登録している全武将の"
-                       "ステータス・スキル効果・鍛錬レベル別性能・合成候補をまとめて掲載しています。",
     },
     "characters-kyoku.html": {
         "container": "kkList",
         "list_js": "() => { kkRenderList(kkSortByChapterThenNo(kyokuGenerals.slice())); "
                    "return document.getElementById('kkList').innerHTML; }",
-        "detail_js": """() => {
-            const host = document.getElementById('kkDetailBody');
-            const keep = host.innerHTML;
-            const out = kkSortByChapterThenNo(kyokuGenerals.slice()).map(g => {
-              kkRenderDetail(g);
-              return '<article class="pr-detail" id="pr-' + g.no + '">'
-                   + '<h3 class="pr-detail-title">No.' + g.no + ' ' + g.name + '</h3>'
-                   + host.innerHTML + '</article>';
-            }).join('\\n');
-            host.innerHTML = keep;
-            return out;
-          }""",
-        "detail_heading": "全極武将のスキル詳細",
-        "detail_lead": "登録している全極武将のステータス・スキル効果・鍛錬レベル別性能・"
-                       "合成候補をまとめて掲載しています。",
     },
 }
 
@@ -173,13 +143,14 @@ def run(page_names):
                 pg.close()
                 continue
             list_html = pg.evaluate(cfg["list_js"])
-            detail_html = pg.evaluate(cfg["detail_js"])
+            detail_html = pg.evaluate(cfg["detail_js"]) if cfg.get("detail_js") else None
             pg.close()
 
             # 静的セクションは全武将分の画像を含むため、そのままだと初回表示で100枚以上を
             # 一斉に読みに行ってしまう。遅延読み込みを付ける(表示位置に来るまで読まない)。
-            detail_html = re.sub(r'<img (?![^>]*loading=)',
-                                 '<img loading="lazy" decoding="async" ', detail_html)
+            if detail_html is not None:
+                detail_html = re.sub(r'<img (?![^>]*loading=)',
+                                     '<img loading="lazy" decoding="async" ', detail_html)
 
             # 1) 一覧: 既存コンテナの中に埋める(JSが起動すると同じ内容で上書きされる)。
             #    2回目以降はマーカー間を差し替えるだけにして、実行のたびにマーカーが増えないようにする。
@@ -196,7 +167,12 @@ def run(page_names):
                 src = (src[:m.start(2)] + "\n" + (BEGIN % "list") + "\n" + list_html
                        + "\n" + (END % "list") + "\n" + src[m.end(2):])
 
-            # 2) 詳細: 可視セクションとして追加/差し替え
+            # 2) 詳細: detail_js を持つページだけ、可視セクションとして追加/差し替えする。
+            #    武将データベースは一覧だけを見たいというユーザー判断(2026-08-10)で detail を外した。
+            if detail_html is None:
+                path.write_text(src, encoding="utf-8", newline="")
+                log.append("%-26s 一覧%6d字 を書き出し" % (name, len(list_html)))
+                continue
             section = ('<section class="pr-static" id="prStatic">\n'
                        '  <h2>%s</h2>\n  <p class="pr-lead">%s</p>\n%s\n</section>'
                        % (cfg["detail_heading"], cfg["detail_lead"], detail_html))
