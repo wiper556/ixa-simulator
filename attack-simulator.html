@@ -1518,6 +1518,25 @@
         Object.keys(specialSkills).forEach(skName=>{
           if(text.includes(skName)){
             const sk = specialSkills[skName];
+            // 【2026-08-11修正】覇神絶域・雄飛新世のような「総攻撃力/防御力上昇」だけを持つスキル
+            // (通常の上昇%を持たない)は、val欄に「総攻撃力+30%」という文字列をDOMへ直接書くだけで
+            // sheetDataを更新していなかったため、前にその枠へ入れていたスキルの数値が残り、
+            // 合計上昇効果に加算され続ける不具合があった(ユーザー指摘: 織田信長(9)【覇】の列で
+            // 前のスキルの3360%が合計に乗っていた)。ここで枠を明示的に空にしておく。
+            const isTotalBoostOnly = !sk.variableFormula && !sk.trTable &&
+              (sk.totalAtkBoostPct !== undefined || sk.totalDefBoostPct !== undefined ||
+               sk.totalAtkBoostPctTable || sk.totalDefBoostPctTable || sk.totalAtkBoostPerMujinTable);
+            if(isTotalBoostOnly){
+              const fxKeyTB = skillFieldToFx[fieldKey];
+              sheetData[col][fxKeyTB] = { rate:'', val:'', valMax:'', speed:'', destruct:'' };
+              const rateInputTB = $(cellId(fxKeyTB, col, 'rate'));
+              const speedInputTB = $(cellId(fxKeyTB, col, 'speed'));
+              const destructInputTB = $(cellId(fxKeyTB, col, 'destruct'));
+              if(rateInputTB) rateInputTB.value = '';
+              if(speedInputTB) speedInputTB.value = '';
+              if(destructInputTB) destructInputTB.value = '';
+              // val欄の表示はupdateTotalBoostCellDisplayが「総攻撃力+30%」に上書きするのでここでは触らない
+            }
             const ultimateMult = (fieldKey === 'skillUltimate') ? 1.2 : 1; // 極限スキル枠は攻撃・防御・増加係数が1.2倍
             let rate, effect, speed, destruct;
             let variableEffectMax; // variableFormula(squadSoarSum等)由来の「最大値」候補(卓越が必ず成功した想定の飛翔値合計を使用)
