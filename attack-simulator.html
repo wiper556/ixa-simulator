@@ -329,6 +329,30 @@
   details.footnote[open] summary::before{content:"▼ ";}
   details.footnote .footnote-body{margin-top:8px;}
 
+  /* ============ 機能一覧(計算ボタンの下・閉じた状態が既定) ============ */
+  .feature-list{
+    margin-top:22px;border:1px solid var(--line);border-radius:6px;
+    background:var(--bg-panel);
+  }
+  .feature-list > summary{
+    cursor:pointer;user-select:none;list-style:none;
+    font-family:'Noto Serif JP',serif;font-weight:700;font-size:13.5px;
+    color:var(--gold-bright);padding:11px 16px;letter-spacing:.06em;
+  }
+  .feature-list > summary::-webkit-details-marker{display:none;}
+  .feature-list > summary::after{content:"▼";font-size:10px;margin-left:8px;display:inline-block;}
+  .feature-list[open] > summary{border-bottom:1px dashed var(--line);}
+  .feature-list[open] > summary::after{transform:rotate(180deg);}
+  .feature-list > summary:hover{color:var(--gold);}
+  .feature-list-body{padding:4px 18px 16px;font-size:12.5px;color:var(--paper);line-height:1.75;}
+  .feature-list-body h3{
+    font-family:'Noto Serif JP',serif;font-size:12.5px;font-weight:700;
+    color:var(--vermillion-bright);margin:14px 0 5px;letter-spacing:.04em;
+  }
+  .feature-list-body ul{margin:0;padding-left:1.25em;}
+  .feature-list-body li{margin-bottom:3px;}
+  .feature-list-note{margin:14px 0 0;font-size:11.5px;color:var(--muted);}
+
   #searchBox{font-family:'Zen Kaku Gothic New',sans-serif;font-size:15px;padding:11px 14px;width:100%;background:#ffffff;border:1px solid var(--line);color:var(--paper);border-radius:5px;}
   #searchBox:focus{outline:none;border-color:var(--gold);}
   .res-card{background:#ffffff;border:1px solid var(--line);border-radius:5px;padding:12px 14px;display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap;margin-bottom:8px;}
@@ -522,7 +546,8 @@
   <div class="header">
     <div>
       <h1 id="mainTitle">攻撃シミュレーター</h1>
-      <div class="header-sub">部隊長・小隊1〜3、計4名分の武将データを入力する表です。武将名・兵士・スキルを入力すると、攻撃力/防御力/兵法値・指揮兵士数・スキル効果・最終攻撃力/防御力などを自動計算します(武将データベース未登録の場合や、ステ振りで「バランス振り」を選んだ場合の攻撃力/防御力/兵法値は手入力できます)。</div>
+      <!-- 以前ここに置いていた長い説明文は、常時表示だと縦を食うだけなので削除した。
+           内容はページ下部(計算ボタンの下)の「機能一覧」トグルに移してある。 -->
       <div class="header-sub" id="futureFeatureNote" style="margin-top:3px;color:var(--gold);">※将来的に4合流攻撃導入予定</div>
     </div>
     <div class="header-actions" style="display:flex;align-items:center;gap:12px;">
@@ -710,17 +735,70 @@
     <button id="calcBtnBottom" class="calc-btn calc-btn-bottom" onclick="handleCalcButtonClick('calcBtnBottom')">🧮 計算する</button>
   </div>
 
+  <!-- 搭載機能の一覧。常時表示だと邪魔なので閉じた状態で置き、押したときだけ開く。
+       機能を追加・変更したらこの一覧も必ず更新すること(ここが仕様の説明窓口になる)。 -->
+  <details class="feature-list">
+    <summary>機能一覧</summary>
+    <div class="feature-list-body">
+      <h3>部隊編成</h3>
+      <ul>
+        <li>部隊長・小隊1〜3の計4名を入力し、部隊攻撃力/防御力・指揮兵士数・部隊コストを自動計算</li>
+        <li>武将名は入力補完付き。武将データベースに登録済みの武将なら、攻撃力・防御力・兵法値・指揮兵士数・統率を自動入力</li>
+        <li>ステ振り(攻撃振り/防御振り/バランス振り/兵法振り)と突破ランク(限界突破〜天限突破+0.5)に応じてステータスを再計算。バランス振りや未登録の武将は手入力もできる</li>
+        <li>兵士は兵士データベースから選択し、兵士攻撃力・防御力・破壊力・移動速度を反映</li>
+        <li>弥助(No.2430)のカード所持効果に対応。武将名が織田信長/三郎信長のときだけチェック欄が出て、指揮兵士数+240〜960を加算</li>
+      </ul>
+
+      <h3>スキル</h3>
+      <ul>
+        <li>1武将あたり初期スキル・追加1・追加2・極限スキルの4枠、部隊全体で16枠。スキル名は入力補完付きで、発動率と上昇%を自動入力</li>
+        <li>対象兵科の判定に対応。その列で指揮している兵種がスキルの対象外なら効果0として扱う</li>
+        <li>模倣スキル(部隊長模倣など)を自動で解決。模倣元スキルが対象兵科外なら、模倣した側も効果0になる</li>
+        <li>卓越に対応。スキル固有の卓越確率に部隊内卓越確率の加算を反映し、期待値に織り込む</li>
+        <li>不屈を持つスキルを入れると、01スキル欄の見出しにその武将の不屈値を表示</li>
+        <li>覇道スキル・被害減スキルの有無を警告表示。部隊にあるが実発動率が100%未満の場合は「不完全」として区別</li>
+        <li>無尽などのコスト減スキルを加味した部隊コストを表示</li>
+        <li>総攻撃力上昇スキル(覇神絶域など)は、対象兵科を指揮している場合だけ最終攻撃力に合算</li>
+        <li>虎伐閃衝など敵軍の総武将コストを使うスキルを入れると、専用の入力欄が出る</li>
+      </ul>
+
+      <h3>発動率</h3>
+      <ul>
+        <li>発動率ボーナス = 兵法値ボーナス + 部隊ランクボーナス(★0〜32) + スキルによる発動率上昇(八界経略など)</li>
+        <li>各スキル枠に、ボーナスを足したあとの実発動率(上限100%)を表示</li>
+        <li>実発動率や卓越確率が100%に満たないスキルは、上昇%の欄を赤枠にして取りこぼしがあることを示す</li>
+      </ul>
+
+      <h3>計算結果</h3>
+      <ul>
+        <li>部隊攻撃力/防御力・指揮兵士数・部隊コスト・発動率ボーナス</li>
+        <li>攻撃力上昇(期待値/最大値)。期待値は実発動率と卓越確率で重み付けした平均、最大値は16枠すべてが発動し卓越もすべて成功した場合の値</li>
+        <li>部隊移動速度と、移動距離1・5・10それぞれの移動時間</li>
+        <li>部隊破壊力(兵科が混在する場合は兵科ごとに算出して合算)</li>
+        <li>最終攻撃力/防御力(期待値/最大値)。名声補正と総攻撃力上昇を反映</li>
+        <li>各項目に「計算式を表示」トグルがあり、何をどう計算しているかを確認できる</li>
+      </ul>
+
+      <h3>その他</h3>
+      <ul>
+        <li>攻撃シミュレーターと防御シミュレーターをボタンひとつで切替。防御側では防御参加武将数を入力できる</li>
+        <li>入力内容はブラウザ内に自動保存され、閉じても次に開いたときに復元される(サーバーには送信されない)</li>
+        <li>兵士を選ばずに計算するとエラーを出し、該当セルを赤枠で示す</li>
+        <li>リセットボタンで編成と戦闘変数をまとめて消去</li>
+      </ul>
+
+      <p class="feature-list-note">未対応: 陣補正、TR6以降・Xスキル、同時攻撃(4合流)、本丸防御の列位置による補正。</p>
+    </div>
+  </details>
+
 
   <!-- 以前はここにDisqusの「バグ報告・ご意見」欄を置いていたが、他ページと同じ
        自前のコメント欄(ページ下部の #pageComments / comments-widget.js)と二重になっていたため撤去した。
        計算結果の不具合報告もそちらで受ける。 -->
 
-  <div style="margin-top:32px;padding-top:16px;border-top:1px solid var(--line);font-size:11px;color:var(--muted);line-height:1.7;text-align:center;">
-    <p>本ツールは戦国IXA(Sengoku IXA)の非公式ファンメイドツールです。運営会社・関連団体とは一切関係ありません。<br>
-    記載されている会社名・製品名・システム名などは、各社の商標、または登録商標です。<br>
-    © SQUARE ENIX</p>
-    <p><a href="index.html" style="color:var(--muted);">シミュレーター一覧</a> ・ <a href="blog.html" style="color:var(--muted);">記事</a> ・ <a href="privacy.html" style="color:var(--muted);">プライバシーポリシー</a></p>
-  </div>
+  <!-- ここに置いていた免責文(本ツールは〜)は、サイドバー導入時に追加した .site-footer の
+       免責文(本サイトは〜)と同じ内容が2つ並ぶ二重表示になっていたため削除した。
+       ナビゲーションリンクもサイドバーと重複するため不要。 -->
 
 </div>
 
@@ -737,7 +815,7 @@
   // 【必須】attack-simulator.html を変更したコミットでは、必ずこの定数も一緒に更新すること。
   // 表示文言の変更・CSSの微調整であっても対象(ユーザーがスクショで版を判別できなくなるため)。
   // 更新忘れが繰り返し発生しているので、編集したらコミット前にここを見に来る。
-  const SIMULATOR_VERSION = 'v2026-08-11.1';
+  const SIMULATOR_VERSION = 'v2026-08-11.3';
   document.addEventListener('DOMContentLoaded', ()=>{
     const badge = document.getElementById('simVersionBadge');
     if(badge) badge.textContent = SIMULATOR_VERSION;
