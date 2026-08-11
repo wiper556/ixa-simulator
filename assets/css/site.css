@@ -97,7 +97,10 @@ body{
    (伏雷蒼樹の発動率テキストが長すぎて発生した横スクロール事案の根本原因)
    min-width:0で「stretchで縮められる」ようにし、実際の折り返し/スクロールは各ページの
    overflow-x:auto包み側に委ねる。 */
-.site-main{max-width:960px;margin:0 auto;padding:32px 16px 60px;min-width:0;}
+/* margin:0 auto(交差軸のautoマージン)だけだと align-self:stretch が無効化され、
+   幅が中身依存(fit-content)になる。中身が狭いページ(characters-hub等)でコメント欄まで
+   一緒に縮んでしまっていたので、width:100% + align-self:center で常に960pxまで広げる。 */
+.site-main{max-width:960px;width:100%;align-self:center;padding:32px 16px 60px;min-width:0;box-sizing:border-box;}
 
 .site-footer{
   margin-top:40px;padding:22px 16px;border-top:1px solid var(--line);
