@@ -161,7 +161,7 @@
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script src="assets/js/comments-widget.js"></script>
 <script>
-  const CHAR_DB_VERSION = 'v2026-08-12.1';
+  const CHAR_DB_VERSION = 'v2026-08-12.2';
   document.addEventListener('DOMContentLoaded', ()=>{
     const badge = document.getElementById('simVersionBadge');
     if(badge) badge.textContent = CHAR_DB_VERSION;
@@ -433,12 +433,12 @@
       initialSkill:"不敗ノ滅陣",
       skillDetail:"S/LV10 確率 55% 防御400%上昇/対象:槍・砲・器　飛翔15\n①このスキルの基礎値を400%として防御効果を計算する\n②防御400%上昇する(部隊内の最大スキルLVの「不敗ノ滅陣」が持つ基礎値×部隊内の同スキル所持武将数)",
       trTable:[
-        {level:"LV10", points:"-", effect:"槍・砲・器 飛翔15　確率 55% / 防御 400%上昇(基礎値400%×部隊内の同スキル所持武将数)"},
-        {level:"TR1", points:"10", effect:"確率 55% / 対象 槍/砲/器 飛翔15 このスキルの基礎値を420%とし、 防御効果を計算／防御：420%上昇"},
-        {level:"TR2", points:"40", effect:"確率 55% / 対象 槍/砲/器 飛翔15 このスキルの基礎値を450%とし、防御効果を計算／防御：450%上昇"},
-        {level:"TR3", points:"90", effect:"確率 55% / 対象 槍/砲/器 飛翔15 このスキルの基礎値を490%とし、防御効果を計算／防御：490%上昇"},
-        {level:"TR4", points:"150", effect:"確率 55% / 対象 槍/砲/器 飛翔15 このスキルの基礎値を540%とし、防御効果を計算／防御：540%上昇"},
-        {level:"TR5", points:"200", effect:"確率 55% / 対象 槍/砲/器 飛翔15 このスキルの基礎値を600%とし、防御効果を計算／防御：600%上昇"}
+        {level:"LV10", points:"-", effect:"槍・砲・器 飛翔15　確率 55% / 防御 基礎値400%×部隊内の同スキル所持武将数(4人)=1600%上昇"},
+        {level:"TR1", points:"10", effect:"槍・砲・器 飛翔15　確率 55% / 防御 基礎値420%×部隊内の同スキル所持武将数(4人)=1680%上昇"},
+        {level:"TR2", points:"40", effect:"槍・砲・器 飛翔15　確率 55% / 防御 基礎値450%×部隊内の同スキル所持武将数(4人)=1800%上昇"},
+        {level:"TR3", points:"90", effect:"槍・砲・器 飛翔15　確率 55% / 防御 基礎値490%×部隊内の同スキル所持武将数(4人)=1960%上昇"},
+        {level:"TR4", points:"150", effect:"槍・砲・器 飛翔15　確率 55% / 防御 基礎値540%×部隊内の同スキル所持武将数(4人)=2160%上昇"},
+        {level:"TR5", points:"200", effect:"槍・砲・器 飛翔15　確率 55% / 防御 基礎値600%×部隊内の同スキル所持武将数(4人)=2400%上昇"}
       ],
       // 2026-08-07開幕の32章新天。ixanary.comは2026-08-08時点で未対応(cards/1319 は404)のため
       // 別ソースで確定させた。スキル名・作家名は公式ニュース(スクウェア・エニックス発表)、

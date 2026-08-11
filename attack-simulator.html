@@ -805,6 +805,12 @@
 <script src="assets/js/ixa-data.js"></script>
 <script>
   const $ = id => document.getElementById(id);
+
+  // specialSkills は「スキル名 → 定義オブジェクト」のマップで、値だけ渡されると自分の名前が分からない。
+  // 部隊内の同スキル所持数を数える処理(computeSameSkillSquadInfo)などで名前が要るため、
+  // 読み込み直後に一度だけ各定義へ自分のキーを持たせておく。
+  Object.keys(specialSkills).forEach(k => { specialSkills[k].__name = k; });
+
   // ============ バージョン表示 ============
   // 画面右下のバッジに表示する。ユーザーが「今どのバージョンのファイルを見ているか」を
   // スクリーンショットからでも判別できるようにするための識別子。
@@ -815,7 +821,7 @@
   // 【必須】attack-simulator.html を変更したコミットでは、必ずこの定数も一緒に更新すること。
   // 表示文言の変更・CSSの微調整であっても対象(ユーザーがスクショで版を判別できなくなるため)。
   // 更新忘れが繰り返し発生しているので、編集したらコミット前にここを見に来る。
-  const SIMULATOR_VERSION = 'v2026-08-11.3';
+  const SIMULATOR_VERSION = 'v2026-08-12.1';
   document.addEventListener('DOMContentLoaded', ()=>{
     const badge = document.getElementById('simVersionBadge');
     if(badge) badge.textContent = SIMULATOR_VERSION;
@@ -999,6 +1005,29 @@
   // ultimateMultが1.2の場合(極限スキル枠に配置された場合)、trTable系スキルと同様に「初期値(base)」と
   // 「1人あたりの増加係数(perUnit)」の両方を1.2倍する(以前はperUnitのみ1.2倍する誤った実装だった。
   // 例: 初期値100%・係数10%のスキルなら、極限枠では初期値120%・係数12%になるのが正しい。ユーザー指摘により修正)。
+  // 「部隊内の同スキル所持武将数」で効果が変わるスキル(不敗ノ滅陣など)のための集計。
+  // 数えるのは枠ではなく武将(列)で、1人が複数枠に同じスキルを持っていても1人と数える。
+  // 基礎値はカードの記載どおり「部隊内の最大スキルLVのもの」を全員が共有するので、
+  // 部隊内で最も高いTR段階も併せて返す。
+  const SAME_SKILL_TIERS = ['base','TR1','TR2','TR3','TR4','TR5','TR6'];
+  function computeSameSkillSquadInfo(skName){
+    const skillFields = ['skillInit','skillAdd1','skillAdd2','skillUltimate'];
+    let count = 0, best = 0;
+    for(let col=0; col<4; col++){
+      let found = false;
+      skillFields.forEach(fk=>{
+        const text = (sheetData[col] && sheetData[col][fk]) || '';
+        if(!text || !text.includes(skName)) return;
+        found = true;
+        const m = text.match(/TR(\d)/i);
+        const idx = m ? Math.min(SAME_SKILL_TIERS.length - 1, parseInt(m[1], 10)) : 0;
+        if(idx > best) best = idx;
+      });
+      if(found) count++;
+    }
+    return { count: count, tier: SAME_SKILL_TIERS[best] };
+  }
+
   function computeVariableSkillValues(sk, ultimateMult, tier){
     const mult = ultimateMult || 1;
     const formula = sk.variableFormula;
@@ -1012,15 +1041,21 @@
     const isSoarSum = formula.variable === 'squadSoarSum';
     const isXCount = formula.variable === 'xSkillCount';
     const isHaCount = formula.variable === 'haGeneralCount';
+    const isSameSkill = formula.variable === 'sameSkillCount';
+    const sameInfo = isSameSkill ? computeSameSkillSquadInfo(sk.__name || '') : null;
     const varValue = isSoarSum ? computeSquadSoarSumExpected()
       : isXCount ? countXSkillsInSquad()
       : isHaCount ? countHaGeneralsInSquad()
+      : isSameSkill ? sameInfo.count
       : (battleVariables[formula.variable] || 0);
     const varValueMax = isSoarSum ? computeSquadSoarSum() : varValue;
     // perUnitTable(TR別の増加係数)があればそれを優先、無ければ従来のperUnit(固定値)を使う
+    // sameSkillCount系は「部隊内の最大スキルLVの基礎値」を全員が使うため、
+    // その枠自身のTRではなく部隊内で最も高いTR段階を採用する。
     let perUnit = formula.perUnit;
     if(formula.perUnitTable){
-      const t = (tier && formula.perUnitTable[tier] !== undefined) ? tier : 'base';
+      const wanted = isSameSkill ? sameInfo.tier : tier;
+      const t = (wanted && formula.perUnitTable[wanted] !== undefined) ? wanted : 'base';
       perUnit = formula.perUnitTable[t];
     }
     // rateTable(TR別の確率/発動率)があればそれを優先、無ければ従来のsk.baseRate(固定値)を使う
