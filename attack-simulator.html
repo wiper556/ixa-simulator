@@ -576,6 +576,11 @@
             <span class="tactics-bonus-label">部隊ランクボーナス(★<span id="squadRankStars">0</span>)</span>
             <span class="tactics-bonus-value" id="rankBonusValue">+0.0%</span>
           </div>
+          <!-- 八界経略等「部隊内武将のスキル発動率上昇」を持つスキルがあるときだけ表示する内訳 -->
+          <div class="tactics-bonus-badge" id="skillRateBonusBox" style="display:none;">
+            <span class="tactics-bonus-label">スキルによる発動率上昇</span>
+            <span class="tactics-bonus-value" id="skillRateBonusValue">+0.0%</span>
+          </div>
         </div>
       </div>
     </div>
@@ -2241,9 +2246,13 @@
   // ============ 部隊コスト(コスト減スキル加味) ============
   // 部隊コスト = Σ(武将コスト) − コスト減。
   // コスト減の内訳:
-  //  ・無尽: スキル1つにつき-0.5(無尽2=mujinValue:2なら-1)。極限スキル枠に入れた登録スキルは
-  //    ゲーム仕様上常に無尽扱い(幻王ノ采配等の既存実装 isMujinSlot と同じ判定)
+  //  ・無尽: スキル1つにつき-0.5(無尽2=mujinValue:2なら-1)
   //  ・龍驤虎躍の「部隊消費コスト低下」(costReductionTable、TR別に1〜2)
+  // 【2026-08-11修正】当初は「極限スキル枠(skillUltimate)に入れた登録スキルは常に無尽扱い」
+  // という条件も入れていたが誤り。無尽持ちが1つも無い部隊でコストが-2される不具合が出た
+  // (ユーザー指摘: 4列の極限枠×0.5)。既存の isMujinSlot(幻王ノ采配等の倍率判定)で
+  // 極限枠を無尽扱いするのは「無尽スキルの効果を倍にする」系スキルとの相互作用の話であり、
+  // 部隊消費コストの-0.5は無尽キーワードを持つスキル自身にのみ付く。条件から除外した。
   // 武将名が入っていない列は、武将コストもその列のスキルも数えない。
   // generalGrowthDBにcost未登録の武将は「?」として別掲する(勝手に0で数えない)。
   function computeSquadCost(){
@@ -2266,7 +2275,7 @@
         });
         if(!matched) return;
         const sk = specialSkills[matched];
-        if(sk.hasMujin || fk === 'skillUltimate'){
+        if(sk.hasMujin || sk.mujinValue){
           reduction += 0.5 * (sk.mujinValue || 1);
         }
         if(sk.costReductionTable){
@@ -3302,8 +3311,40 @@
   // ============ 実発動率の共通計算 ============
   // 発動率ボーナス(兵法値ボーナス+部隊ランクボーナス)の合計。表示用のrender関数とは別に
   // 値だけ欲しい箇所で使う(computeSquadTacticsBonus/computeSquadRankBonusは副作用なし)。
+  // 部隊内(4人×4スキル枠=16枠)にある「部隊内武将のスキル発動率上昇」スキル
+  // (skillActivationRateBonusを持つもの。八界経略+15%、鍋島直茂の水鏡ノ采配+15%等)の合計値を返す。
+  // 【2026-08-11実装】これまでデータ(skillActivationRateBonus)は登録済みだったが実発動率に加算されておらず、
+  // 八界経略を入れても発動率が上がらなかった(ユーザー指摘。卓越確率側だけ効いていた)。
+  // 兵法値ボーナス・部隊ランクボーナスと同じ土俵で実発動率に加算する。
+  // 【対象兵科を問わず発動】この発動率バフは対象兵科を指揮していなくても効く
+  // (攻撃%上昇部分だけが兵科不一致で0になる)ため、matchesTroopTargetでの判定は行わない。
+  // noSquadDuplicate(部隊内重複不可)が明記されたスキルは、複数枠にあっても1つ分だけ数える。
+  function computeSquadSkillActivationRateBonus(){
+    let bonus = 0;
+    const counted = new Set();
+    const skillFields = ['skillInit','skillAdd1','skillAdd2','skillUltimate'];
+    for(let col=0; col<4; col++){
+      skillFields.forEach(fk=>{
+        const text = (sheetData[col] && sheetData[col][fk]) || '';
+        if(!text) return;
+        Object.keys(specialSkills).forEach(skName=>{
+          if(!text.includes(skName)) return;
+          const sk = specialSkills[skName];
+          if(!sk.skillActivationRateBonus) return;
+          if(sk.noSquadDuplicate){
+            if(counted.has(skName)) return;
+            counted.add(skName);
+          }
+          bonus += sk.skillActivationRateBonus;
+        });
+      });
+    }
+    return bonus;
+  }
+
   function computeActivationRateBonus(){
-    return computeSquadTacticsBonus().bonus + computeSquadRankBonus().bonus;
+    return computeSquadTacticsBonus().bonus + computeSquadRankBonus().bonus
+         + computeSquadSkillActivationRateBonus();
   }
 
   // スキル枠(fx1〜fx4)の実発動率(%)。基礎発動率+発動率ボーナス、上限100%。
@@ -3705,10 +3746,16 @@
   function updateAllEffectiveRates(){
     const tacticsBonus = renderTacticsBonusDisplay();
     const rankBonus = renderSquadRankBonusDisplay();
-    const bonus = tacticsBonus + rankBonus;
-    // 兵法値ボーナス+部隊ランクボーナスの合計を「発動率ボーナス」として表示する
+    const skillBonus = computeSquadSkillActivationRateBonus();
+    const bonus = tacticsBonus + rankBonus + skillBonus;
+    // 兵法値ボーナス+部隊ランクボーナス+スキルによる発動率上昇の合計を「発動率ボーナス」として表示する
     const activationRateEl = $('activationRateBonusValue');
     if(activationRateEl) activationRateEl.textContent = '+' + (Math.round(bonus*100)/100) + '%';
+    // スキル由来の発動率上昇は、あるときだけ内訳バッジを出す(八界経略等)
+    const skillBonusBox = $('skillRateBonusBox');
+    const skillBonusVal = $('skillRateBonusValue');
+    if(skillBonusBox) skillBonusBox.style.display = skillBonus ? '' : 'none';
+    if(skillBonusVal) skillBonusVal.textContent = '+' + (Math.round(skillBonus*100)/100) + '%';
     for(let col=0; col<4; col++){
       ['fx1','fx2','fx3','fx4'].forEach(key=>{
         const el = $('real_' + cellId(key, col));
