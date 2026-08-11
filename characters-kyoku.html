@@ -145,7 +145,7 @@
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script src="assets/js/comments-widget.js"></script>
 <script>
-  const KYOKU_DB_VERSION = 'v2026-07-29.3';
+  const KYOKU_DB_VERSION = 'v2026-08-12.1';
   document.addEventListener('DOMContentLoaded', ()=>{
     const badge = document.getElementById('simVersionBadge');
     if(badge) badge.textContent = KYOKU_DB_VERSION;
@@ -3568,6 +3568,23 @@
         + '</tbody></table></div>'
         + (g.synthesisNote ? '<p class="kk-detail-meta" style="margin-top:6px;">'+kkEscapeHtml(g.synthesisNote)+'</p>' : '')
         + '</div>'
+      ) : '')
+      // 関連記事。articles を持つ武将だけに出る汎用フィールドで、
+      // 見た目は記事一覧(blog.html)と同じ .article-card 系(site.css)をそのまま使う。
+      + (g.articles && g.articles.length ? (
+        '<div class="kk-detail-block"><h2>この武将を扱った記事</h2>'
+        + '<ul class="article-list">'
+        + g.articles.map(function(a){
+            return '<li class="article-card"><a class="article-card-link" href="'+kkEscapeHtml(a.href)+'">'
+              + '<div class="article-card-body">'
+                + '<h2>'+kkEscapeHtml(a.title)+'</h2>'
+                + (a.date ? '<div class="article-card-date">'+kkEscapeHtml(a.date)+'</div>' : '')
+                + (a.excerpt ? '<p class="article-card-excerpt">'+kkEscapeHtml(a.excerpt)+'</p>' : '')
+              + '</div>'
+              + (a.thumb ? '<div class="article-card-thumb"><img src="'+kkEscapeHtml(a.thumb)+'" alt="" loading="lazy" decoding="async"></div>' : '')
+              + '</a></li>';
+          }).join('')
+        + '</ul></div>'
       ) : '')
       + (g.illustrator ? '<p class="kk-illust-credit">Illust. '+kkEscapeHtml(g.illustrator)+'</p>' : '');
   }

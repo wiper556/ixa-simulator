@@ -161,7 +161,7 @@
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script src="assets/js/comments-widget.js"></script>
 <script>
-  const CHAR_DB_VERSION = 'v2026-08-01.4';
+  const CHAR_DB_VERSION = 'v2026-08-12.1';
   document.addEventListener('DOMContentLoaded', ()=>{
     const badge = document.getElementById('simVersionBadge');
     if(badge) badge.textContent = CHAR_DB_VERSION;
@@ -482,6 +482,12 @@
 
     {name:"六角定頼", no:"1321", ch:"32章", cost:5.5, troop:"弓馬焙騎攻", sub:"", effect:"自軍城主数10以上で攻撃効果3倍",
       illustrator:"直良有祐",
+      // 関連記事(汎用フィールド)。抜粋は記事本文の書き出しをそのまま使う(blog.htmlのカードと同じ方針)
+      articles:[
+        {href:"blog-rokkaku-sadayori.html", title:"六角定頼は無課金の星になれるか？", date:"2026年8月11日",
+         excerpt:"32章が始まって、すでに数日経過。いろんなところで新天の考察が進んでいますが、私は六角定頼模倣部隊について検証していきます。効果を見る限り盟主戦のイメージがつきやすいですが、少数精鋭系の小規模同盟や影武者狩り、32章から追加された蔵攻撃にも有用です。",
+         thumb:"assets/img/characters/no1321_full.png"}
+      ],
       imageFull:"assets/img/characters/no1321_full.png", imageChar:"assets/img/characters/no1321_char.png",
       // 画像はixagno記事掲載のカード画像から切り出した(JPEG劣化のためハート検出はTOL=50)。
       atkBase:1260, atkGrowth:73, defBase:1080, defGrowth:48, tacticsBase:690.0, tacticsGrowth:3.5, lv0Troops:5340,
@@ -3425,6 +3431,23 @@
         + '</tbody></table></div>'
         + '<p class="gdb-detail-meta" style="margin-top:6px;">攻撃%上昇=部隊移動速度÷除数×100%(除数はLV10=32／TR1=31／TR2=30／TR3=28／TR4=26／TR5=24／TR6=22)</p>'
         + '</div>'
+      ) : '')
+      // 関連記事。articles を持つ武将だけに出る汎用フィールドで、
+      // 見た目は記事一覧(blog.html)と同じ .article-card 系(site.css)をそのまま使う。
+      + (g.articles && g.articles.length ? (
+        '<div class="gdb-detail-block"><h2>この武将を扱った記事</h2>'
+        + '<ul class="article-list">'
+        + g.articles.map(function(a){
+            return '<li class="article-card"><a class="article-card-link" href="'+gdbEscapeHtml(a.href)+'">'
+              + '<div class="article-card-body">'
+                + '<h2>'+gdbEscapeHtml(a.title)+'</h2>'
+                + (a.date ? '<div class="article-card-date">'+gdbEscapeHtml(a.date)+'</div>' : '')
+                + (a.excerpt ? '<p class="article-card-excerpt">'+gdbEscapeHtml(a.excerpt)+'</p>' : '')
+              + '</div>'
+              + (a.thumb ? '<div class="article-card-thumb"><img src="'+gdbEscapeHtml(a.thumb)+'" alt="" loading="lazy" decoding="async"></div>' : '')
+              + '</a></li>';
+          }).join('')
+        + '</ul></div>'
       ) : '')
       + (g.illustrator ? '<p class="gdb-illust-credit">Illust. '+gdbEscapeHtml(g.illustrator)+'</p>' : '');
   }
