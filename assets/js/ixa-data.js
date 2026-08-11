@@ -1618,6 +1618,20 @@ const specialSkills = {
     trTable: { base: 220, TR1: 230, TR2: 240, TR3: 260 }, baseRate: 100,
     note: 'S(攻防)。確率+100%/対象:全。攻撃・防御各:LV10=220%上昇、TR1=230%、TR2=240%、TR3=260%(自動反映は攻撃分のみ、防御は同値。TR4・TR5は情報源に記載なし)。「卓越:追加確率-10%で攻防効果3倍(卓越追加確率が0%超の時のみ抽選)」は参考データのみ。'
   },
+  '悪一文字': {
+    noMimic: true, // 「模倣不可」明記
+    activationType: 'triggered',
+    statTarget: 'atk',
+    destructTrTable: { base:120, TR1:200, TR2:350, TR3:450, TR4:650, TR5:850 }, // 破壊%上昇(攻撃%上昇は無し)
+    rateTable: { base:28, TR1:30, TR2:40, TR3:50, TR4:65, TR5:100 },
+    baseRate: 28,
+    fukutsu: 1, // 自身が持つ不屈1
+    note: 'S(破壊)。確率+28%(LV10)〜+100%(TR5)/対象:全。不屈1。破壊120%(LV10)〜850%(TR5)上昇。' +
+          '攻撃%上昇は持たない(破壊専用スキル)。' +
+          '「所属部隊のうち自身を除く武将の初期スキルは不屈1(TR3以降は不屈2、TR5は不屈3)を得る」は' +
+          '他武将への付与のため現エンジン未対応(参考データのみ・模倣不可・自部隊内重複不可)。' +
+          '相楽左之助(No.2609)固有スキル。るろうに剣心コラボ。ixanaryスキルページで全TR値を確認(2026-08-11)。'
+  },
   '神谷活心流': {
     noMimic: true, // 「模倣不可」明記
     activationType: 'triggered',
@@ -3583,7 +3597,7 @@ const generalGrowthDB = [
   { name:'巻町操', no:'2606', rankGrades:{yari:'A',yumi:'A',uma:'A',ki:'S'}, initialSkill:'貫殺飛苦無', lv0Troops:3540, atkBase:1190, atkGrowth:57, defBase:1100, defGrowth:47, tacticsBase:510, tacticsGrowth:2.5, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。職業「忍」。Cost3。るろうに剣心コラボカード。固有スキル「攻速:貫殺飛苦無」(S)。 カード画像で統率(槍A/弓A/馬A/器S)を拡大確認(2026-08-11)。武将DBページ(characters-kyoku.html)登録済み。るろうに剣心コラボ。' },
   { name:'神谷薫', no:'2607', rankGrades:{yari:'S',yumi:'A',uma:'A',ki:'A'}, initialSkill:'神谷活心流', lv0Troops:4680, atkBase:1900, atkGrowth:130, defBase:1900, defGrowth:130, tacticsBase:510, tacticsGrowth:2.5, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。職業「剣」。Cost3.5。るろうに剣心コラボカード。固有スキル「神谷活心流」(S)。 カード画像で統率(槍S/弓A/馬A/器A)を拡大確認(2026-08-11)。武将DBページ(characters-kyoku.html)登録済み。部隊内卓越+40%スキルとしてspecialSkillsにも登録。るろうに剣心コラボ。' },
   { name:'明神弥彦', no:'2608', rankGrades:{yari:'S',yumi:'B',uma:'A',ki:'S'}, initialSkill:'見様見真似', lv0Troops:1660, atkBase:1080, atkGrowth:46, defBase:1200, defGrowth:61, tacticsBase:510, tacticsGrowth:2.5, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。職業「将」。Cost0。るろうに剣心コラボカード。固有スキル「防:見様見真似」(S)。 カード画像で統率(槍S/弓B/馬A/器S)を拡大確認(2026-08-11)。武将DBページ(characters-kyoku.html)登録済み。るろうに剣心コラボ。所領防御陣形の列依存効果持ち。' },
-  { name:'相楽左之助(2609)', no:'2609', initialSkill:'悪一文字', lv0Troops:4580, atkBase:1220, atkGrowth:64, defBase:1080, defGrowth:47, tacticsBase:520, tacticsGrowth:2.5, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。職業「将」。Cost4.5。るろうに剣心コラボカード。固有スキル「破:悪一文字」(S)。既存の相楽左之助【覇】(No.10067)とは別カードのためNo.を併記。' },
+  { name:'相楽左之助(2609)', no:'2609', rankGrades:{yari:'A',yumi:'A',uma:'A',ki:'S'}, initialSkill:'悪一文字', lv0Troops:4580, atkBase:1220, atkGrowth:64, defBase:1080, defGrowth:47, tacticsBase:520, tacticsGrowth:2.5, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。職業「将」。Cost4.5。るろうに剣心コラボカード。固有スキル「破:悪一文字」(S)。既存の相楽左之助【覇】(No.10067)とは別カードのためNo.を併記。 カード画像で統率(槍A/弓A/馬A/器S)を拡大確認(2026-08-11)。武将DBページ(characters-kyoku.html)登録済み。不屈1持ちの破壊専用スキルとしてspecialSkillsにも登録。るろうに剣心コラボ。' },
   { name:'高荷恵', no:'2610', initialSkill:'慈愛ノ癒術', lv0Troops:1, atkBase:550, atkGrowth:1, defBase:550, defGrowth:1, tacticsBase:650, tacticsGrowth:3.5, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。職業「医」。Cost0。るろうに剣心コラボカード。指揮兵数(Lv0)は情報源記載値1(要再確認)。固有スキル「特:慈愛ノ癒術」(S)。' },
   { name:'鵜堂刃衛', no:'2611', initialSkill:'心の一方', lv0Troops:4980, atkBase:1800, atkGrowth:135, defBase:1920, defGrowth:135, tacticsBase:540, tacticsGrowth:2.5, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。職業「剣」。Cost4.5。るろうに剣心コラボカード。固有スキル「心の一方」(A)。' },
   { name:'沢下条張', no:'2613', initialSkill:'我流大蛇', lv0Troops:3340, atkBase:1910, atkGrowth:142, defBase:1840, defGrowth:136, tacticsBase:510, tacticsGrowth:2.5, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。職業「剣」。Cost3。るろうに剣心コラボカード。固有スキル「我流大蛇」。' },
