@@ -127,6 +127,30 @@ EVASIONS = [
     ("監査に足した根拠が書式外", "docs/RULE-VIOLATIONS.md",
      "| 足した(PreToolUse) |", "| 足した |",
      "「足した」とだけ書いて停止を解除する"),
+    # --- 第3回レッドチームで実際に抜けられた形 ---
+    ("違反ログの行を解釈できない", "docs/RULE-VIOLATIONS.md",
+     "| 2026-08-12 | W-13 |", "\n| 2026-08-12 | W-13 |",
+     "表の途中に空行を入れて以降を消す"),
+    ("違反ログのタグが空", "docs/RULE-VIOLATIONS.md",
+     "| I-01 | 自己承認 |", "| I-01 |  |",
+     "タグ欄を空にして2回目判定から外す"),
+    ("監査に足したチェックが実在しない", "docs/RULE-VIOLATIONS.md",
+     "| 足した(pre-commit) |", "| 足した(e) |",
+     "1文字で実在照合を通す(部分一致)"),
+    ("違反ログの行が消えた", "docs/RULE-VIOLATIONS.md",
+     "| 2026-08-12 | T-01 | 既知の罠を記憶で回避 | 軽 |",
+     "| 2026-08-13 | T-01 | 既知の罠を記憶で回避 | 軽 |",
+     "過去行の日付を書き換えて別物にする"),
+    ("PreToolUseの配線が消えた", ".claude/settings.json",
+     "no_heredoc_backslash.py", "no_heredoc_DISABLED.py",
+     "T-01フックの登録を外す"),
+    ("CIの検査が抜けている", ".github/workflows/rules.yml",
+     "python tools/lock.py", "python tools/lock.py --skip",
+     "CIから錠前の検査を外す"),
+    ("CIが失敗しても止まらない", ".github/workflows/rules.yml",
+     "      - name: ルール索引と違反ログの整合",
+     "      - name: ルール索引と違反ログの整合\n        continue-on-error: true",
+     "CIを赤でも通るようにする"),
 ]
 
 
@@ -266,6 +290,37 @@ def main():
     print("\n自己テストが無いチェック種別: %d件" % len(missing))
     for x in missing:
         print("   " + x)
+
+    # G-8/F-12(2026-08-13 第3回): 未カバーの一覧は印字するだけで終了コードに影響せず、
+    # しかも covered も known も実装から動的に作っているので、
+    # **チェックを丸ごと消すと分母からも消えて緑のまま**だった(S-01の再演)。
+    # 上限を置いて、増えたら赤にする。減るのは歓迎なので自動で締める。
+    cap_path = os.path.join(ROOT, "tools", "selftest_uncovered.txt")
+    cap = None
+    if os.path.exists(cap_path):
+        for line in io.open(cap_path, encoding="utf-8"):
+            line = line.strip()
+            if line and not line.startswith("#"):
+                cap = int(line.split()[0])
+                break
+    if cap is None:
+        io.open(cap_path, "w", encoding="utf-8", newline="\n").write(
+            "# 自己テストの注入ケースが無いチェック種別の上限。\n"
+            "# 増えたら赤にする(新しいチェックを無検査で足させないため)。\n"
+            "# 減らすのは歓迎。減ったら自動でここも締まる。\n"
+            "%d\n" % len(missing))
+        print("上限を %d件として tools/selftest_uncovered.txt に記録した。" % len(missing))
+    elif len(missing) > cap:
+        print("\n[失敗] 未カバーが上限 %d件 を超えて %d件になった。" % (cap, len(missing)))
+        print("  新しく足したチェックには CASES / EVASIONS に注入ケースを置く。")
+        ng += 1
+    elif len(missing) < cap:
+        io.open(cap_path, "w", encoding="utf-8", newline="\n").write(
+            "# 自己テストの注入ケースが無いチェック種別の上限。\n"
+            "# 増えたら赤にする(新しいチェックを無検査で足させないため)。\n"
+            "# 減らすのは歓迎。減ったら自動でここも締まる。\n"
+            "%d\n" % len(missing))
+        print("上限を %d → %d件 に締めた。" % (cap, len(missing)))
 
     return 1 if (ng or skip or not same) else 0
 

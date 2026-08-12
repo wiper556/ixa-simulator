@@ -1,0 +1,218 @@
+# -*- coding: utf-8 -*-
+"""「あるはずのもの」を外に固定する錠前。
+
+なぜ要るか(2026-08-13 第3回レッドチーム、4体が同じ結論に達した):
+
+  検査する側が、検査される側と同じ可変物を素材にしていた。
+
+第2回で「検査する側と比べる側を同じツリーから取る」に揃えた結果、
+**ツリーを書ける者が比較基準も書ける**状態になった。実証された抜け道:
+
+ ・監査のチェックを丸ごと消す      → 自己テストは分母からも消えるので緑のまま(G-8/I-5)
+ ・監査の条件だけ緩める(呼び出しは残す) → 何も鳴らない(H-3)
+ ・直せないHIGHは武将ごと消す      → 集合の差しか見ていないので通る(H-7)
+ ・索引からルール行を消す          → 件数表記を直せば無検査(I-8)
+ ・違反ログの行を消す              → 何も鳴らない(F-4)
+ ・タグ表に1行足してから使う        → 2回目判定が外れる(F-5/H-10)
+ ・フックの正本に1行足す           → 一致検査は「正本と同じか」しか見ない(G-7)
+ ・ワークフロー/フック設定を消す     → どの検査の対象でもない(F-8/H-9/G-9)
+
+共通するのは「**減った・すり替わった**ことを誰も見ていない」こと。
+増えるのは自由、**減るのは要申告**にするための一覧をここに置く。
+
+    python tools/lock.py            # 今の状態と錠前を突き合わせる
+    python tools/lock.py --update   # 錠前を今の状態に合わせる(増加を取り込む)
+
+`--update` で減らすときは理由が要る(`--reason`)。理由は tools/lock_reason.txt に残る。
+"""
+import datetime
+import hashlib
+import io
+import json
+import os
+import re
+import sys
+
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+PATH = os.path.join(ROOT, "tools", "checks.lock")
+REASON = os.path.join(ROOT, "tools", "lock_reason.txt")
+
+# 消えたら困るファイル。中身のハッシュまで見るもの(門番そのもの)は HASHED に置く。
+HASHED = ("tools/hooks/pre-commit", "tools/hooks/pre-merge-commit",
+          "tools/hooks/pre-push", "tools/hooks/no_heredoc_backslash.py")
+PRESENT = (".github/workflows/rules.yml", ".claude/settings.json",
+           "docs/rollback-floor.txt", "docs/RULES.md", "docs/RULE-OPERATION.md",
+           "docs/RULE-VIOLATIONS.md", "tools/audit_baseline.json")
+ARRAYS = {"characters.html": "generals", "characters-kyoku.html": "kyokuGenerals",
+          "characters-ketsu.html": "ketsuGenerals"}
+
+
+def _read(rel):
+    p = os.path.join(ROOT, rel)
+    if not os.path.exists(p):
+        return None
+    with io.open(p, encoding="utf-8", newline="") as f:
+        return f.read()
+
+
+def _sha(text):
+    return hashlib.sha256(text.replace("\r\n", "\n").encode("utf-8")).hexdigest()[:16]
+
+
+def current():
+    """今のリポジトリから「あるはずのもの」を集める。"""
+    sys.path.insert(0, os.path.join(ROOT, "tools"))
+    import rules as R
+    R.ROOT = ROOT
+    R.RULES = os.path.join(ROOT, "docs", "RULES.md")
+    R.VIOL = os.path.join(ROOT, "docs", "RULE-VIOLATIONS.md")
+
+    # 監査が出しうるチェック種別(実装から集める)
+    a = _read("tools/audit_characters.py") or ""
+    cats = {x for x in re.findall(r'(?<![\w.])add\("([^"]+)"', a) if "%s" not in x}
+    cats |= set(re.findall(r'out\.append\(\("([^"]+)"', _read("tools/rules.py") or ""))
+
+    # 武将の件数(母集団。減る方向を無条件で通さないため)
+    counts = {}
+    try:
+        from audit_characters import extract_array
+        for f, v in ARRAYS.items():
+            counts[f] = len(extract_array(os.path.join(ROOT, f), v))
+    except Exception as e:
+        counts = {"__error__": str(e)}
+
+    # 違反ログの各行(消したこと・書き換えたことを検出する)
+    vio = {}
+    for r in R.violations():
+        if r["parse_error"]:
+            continue
+        vio["%s|%s" % (r["date"], r["id"])] = _sha(
+            "|".join([r["cause"], r["sev"], r["what"], r["impact"]]))
+
+    return {
+        "checks": sorted(cats),
+        "rule_ids": sorted(R.rule_ids()),
+        "cause_tags": sorted(R.cause_tags()),
+        "entry_counts": counts,
+        "violations": vio,
+        "hooks": {f: _sha(_read(f) or "") for f in HASHED},
+        "present": sorted(PRESENT),
+    }
+
+
+def load():
+    if not os.path.exists(PATH):
+        return None
+    with io.open(PATH, encoding="utf-8") as f:
+        return json.load(f)
+
+
+def problems():
+    """(種別, 深刻度, 本文)。錠前と今の状態のズレを出す。"""
+    lock = load()
+    if lock is None:
+        return [("錠前が無い", "HIGH",
+                 "tools/checks.lock が無い。`python tools/lock.py --update` で作る")]
+    cur = current()
+    out = []
+
+    def gone(kind, before, now, how):
+        for x in sorted(set(before) - set(now)):
+            out.append((kind, "HIGH", "「%s」が消えている。%s" % (x, how)))
+
+    gone("監査チェックが消えた", lock["checks"], cur["checks"],
+         "チェックを消すと、そのルールは誰も見ていないことになる。"
+         "意図した削除なら `python tools/lock.py --update --reason \"...\"`")
+    gone("ルールが索引から消えた", lock["rule_ids"], cur["rule_ids"],
+         "索引に無いルールは「存在しない」扱いになる。消すのは廃止と同義")
+    gone("根本原因タグが消えた", lock["cause_tags"], cur["cause_tags"],
+         "過去の違反の分類が変わる")
+    gone("必須ファイルが消えた", lock["present"], cur["present"],
+         "門番か、その設定そのもの")
+
+    # タグの追加は「2回目判定を外す」手口に使われたので、増えたことも知らせる
+    for x in sorted(set(cur["cause_tags"]) - set(lock["cause_tags"])):
+        out.append(("根本原因タグが増えた", "MID",
+                    "「%s」が追加された。新しいタグを使うと、同じ原因の違反が"
+                    "別々に数えられて2回目の停止が外れる。本当に別の原因か確かめる" % x))
+
+    # 違反ログの行が消えた/書き換わった
+    for k, h in sorted(lock["violations"].items()):
+        if k not in cur["violations"]:
+            out.append(("違反ログの行が消えた", "HIGH",
+                        "%s の行が無くなっている。違反ログは消さない" % k))
+        elif cur["violations"][k] != h:
+            out.append(("違反ログの過去行が書き換わった", "HIGH",
+                        "%s の内容(原因/区分/何をしたか/影響)が変わっている" % k))
+
+    # 母集団が減った
+    for f, n in sorted(lock["entry_counts"].items()):
+        m = cur["entry_counts"].get(f)
+        if isinstance(n, int) and isinstance(m, int) and m < n:
+            out.append(("武将の件数が減った", "HIGH",
+                        "%s が %d体 → %d体。直せない指摘を、その武将ごと消していないか"
+                        % (f, n, m)))
+
+    # 門番の中身
+    for f, h in sorted(lock["hooks"].items()):
+        m = cur["hooks"].get(f)
+        if m is None:
+            out.append(("門番のファイルが消えた", "HIGH", f))
+        elif m != h:
+            out.append(("門番の中身が変わった", "HIGH",
+                        "%s のハッシュが %s → %s。1行足すだけで全検査を無言化できるので、"
+                        "変更は錠前の更新とセットで行う" % (f, h, m)))
+    return out
+
+
+def update(reason):
+    lock = load()
+    cur = current()
+    shrink = []
+    if lock:
+        for key in ("checks", "rule_ids", "cause_tags", "present"):
+            shrink += ["%s:%s" % (key, x) for x in set(lock[key]) - set(cur[key])]
+        shrink += ["violations:" + k for k in set(lock["violations"]) - set(cur["violations"])]
+        for f, n in lock["entry_counts"].items():
+            m = cur["entry_counts"].get(f)
+            if isinstance(n, int) and isinstance(m, int) and m < n:
+                shrink.append("entry_counts:%s %d→%d" % (f, n, m))
+        for f, h in lock["hooks"].items():
+            if cur["hooks"].get(f) != h:
+                shrink.append("hooks:" + f)
+    if shrink and not reason:
+        print("錠前を縮める変更が %d件ある。--reason \"なぜ減らすのか\" が要る。" % len(shrink))
+        for x in shrink[:20]:
+            print("  - " + x)
+        return 1
+    with io.open(PATH, "w", encoding="utf-8", newline="\n") as f:
+        json.dump(cur, f, ensure_ascii=False, indent=1, sort_keys=True)
+    if shrink:
+        io.open(REASON, "a", encoding="utf-8").write(
+            "%s\t-%d\t%s\t%s\n" % (datetime.date.today().isoformat(), len(shrink),
+                                   ",".join(shrink[:8]), reason))
+        print("縮めた %d件の理由を tools/lock_reason.txt に追記した。" % len(shrink))
+    print("錠前を更新した: チェック%d / ルール%d / タグ%d / 違反ログ%d行"
+          % (len(cur["checks"]), len(cur["rule_ids"]),
+             len(cur["cause_tags"]), len(cur["violations"])))
+    return 0
+
+
+if __name__ == "__main__":
+    sys.stdout.reconfigure(encoding="utf-8")
+    if "--update" in sys.argv:
+        rs = ""
+        if "--reason" in sys.argv:
+            rs = sys.argv[sys.argv.index("--reason") + 1]
+        sys.exit(update(rs))
+    p = problems()
+    if not p:
+        lk = load() or {}
+        print("錠前と一致している(チェック%d / ルール%d / 違反ログ%d行)"
+              % (len(lk.get("checks", [])), len(lk.get("rule_ids", [])),
+                 len(lk.get("violations", {}))))
+        sys.exit(0)
+    print("錠前とのズレ %d件" % len(p))
+    for cat, sev, msg in p:
+        print("  [%s] %s: %s" % (sev, cat, msg))
+    sys.exit(1)

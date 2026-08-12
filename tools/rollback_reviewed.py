@@ -135,12 +135,29 @@ def main():
         return 1
     since = sys.argv[sys.argv.index("--since") + 1]
     apply_ = "--apply" in sys.argv
-    if git("rev-parse", "--verify", since).returncode != 0:
-        print("起点 %s を解決できない。" % since)
+    # F-11(第3回): `--since HEAD^{tree}` はコミットでないため
+    # merge-base --is-ancestor が必ず失敗し、下限の検査を素通りできた。
+    # コミットとして解決できるものだけを受け付ける。
+    r = git("rev-parse", "--verify", "--quiet", since + "^{commit}")
+    if r.returncode != 0 or not r.stdout.strip():
+        print("起点 %s をコミットとして解決できない。" % since)
+        print("(ツリーやタグの中身ではなく、コミットを指定する)")
         return 1
+    since = r.stdout.strip()
 
     fl = floor_ref()
-    if fl and git("rev-parse", "--verify", fl).returncode == 0:
+    # G-2/H-8/I-4(第3回、3体が指摘): 下限が無い/解決できないときに
+    # 「注意」を出してそのまま続行していた。ファイルを消すだけで下限が消え、
+    # 消したこと自体も誰も見ていなかった。無ければ止める(フェイルクローズ)。
+    if not fl:
+        print("[停止] %s が無い。巻き戻しの下限を確認できない。" % FLOOR)
+        print("下限が無い状態で巻き戻すと、範囲を自分で好きに狭められる。")
+        print("ファイルを復元する: git checkout -- %s" % FLOOR)
+        return 1
+    if git("rev-parse", "--verify", "--quiet", fl + "^{commit}").returncode != 0:
+        print("[停止] 下限 %s をコミットとして解決できない。%s を確認する。" % (fl[:12], FLOOR))
+        return 1
+    if True:
         # 下限が起点の祖先でない = 起点のほうが古いか無関係 → OK
         # 下限が起点の子孫でもない、という状態も無関係なので許す
         newer = git("merge-base", "--is-ancestor", fl, since).returncode == 0
@@ -153,10 +170,6 @@ def main():
             print("重い違反の巻き戻しでは、狭く取った誤りは検出できないので、")
             print("下限より古い起点を使う。下限自体を動かすにはユーザーの確認が要る。")
             return 1
-    elif fl:
-        print("[注意] 下限 %s を解決できない。%s を確認する。" % (fl[:12], FLOOR))
-    else:
-        print("[注意] %s が無いので下限の検査ができない。" % FLOOR)
 
     import tempfile
     tmp = tempfile.mkdtemp(prefix="rollback_")

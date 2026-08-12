@@ -58,7 +58,54 @@ jobs:
           PY
 
       - name: ルール索引と違反ログの整合
+        # 2026-08-13: rules.py が印字するだけで終了コードを変えていなかったので、
+        # このステップは常に緑の飾りだった(第3回 I-7b)。今は sys.exit する。
         run: python tools/rules.py
+
+      - name: 錠前(チェック・ルール・違反ログ・母集団が減っていないか)
+        run: python tools/lock.py
+
+      - name: 赤丸(approved)がリモートより増えていないか
+        # ローカルの pre-push は無効化できるので、ここでも見る(第3回 G-6)。
+        run: |
+          git fetch --quiet origin "+refs/heads/*:refs/remotes/origin/*" || true
+          python - <<'PY'
+          import json, os, subprocess, sys
+          sys.path.insert(0, "tools")
+          from audit_characters import extract_array
+          A = {"characters.html": "generals", "characters-kyoku.html": "kyokuGenerals",
+               "characters-ketsu.html": "ketsuGenerals"}
+          def marks(ref):
+              out = set()
+              for f, v in A.items():
+                  if ref is None:
+                      if not os.path.exists(f):
+                          continue
+                      src = f
+                  else:
+                      r = subprocess.run(["git", "show", "%s:%s" % (ref, f)],
+                                         capture_output=True, text=True, encoding="utf-8")
+                      if r.returncode:
+                          continue
+                      src = "/tmp/_%s" % f.replace("/", "_")
+                      open(src, "w", encoding="utf-8").write(r.stdout)
+                  for g in extract_array(src, v):
+                      if g.get("approved"):
+                          out.add("%s:%s" % (f, g.get("no")))
+              return out
+          base = os.environ.get("GITHUB_BASE_REF") or "origin/master"
+          try:
+              before = marks(base)
+          except Exception as e:
+              print("比較対象 %s を読めない(%s)。初回は素通りする。" % (base, e))
+              sys.exit(0)
+          now = marks(None)
+          gained = sorted(now - before)
+          print("赤丸: %d件(比較対象 %d件)" % (len(now), len(before)))
+          for x in gained:
+              print("  + " + x)
+          sys.exit(1 if gained else 0)
+          PY
 
       - name: ページのJS構文
         run: python tools/check_js.py

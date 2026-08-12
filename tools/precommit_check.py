@@ -29,6 +29,7 @@
     python tools/precommit_check.py --mode push
     python tools/precommit_check.py --accept --reason "なぜ残すのか"
 """
+import datetime
 import io
 import json
 import os
@@ -36,7 +37,6 @@ import re
 import shutil
 import subprocess
 import sys
-import tarfile
 import tempfile
 
 sys.stdout.reconfigure(encoding="utf-8")
@@ -51,8 +51,13 @@ ARRAY_OF = {"characters.html": "generals", "characters-kyoku.html": "kyokuGenera
 # E-2: 展開したツリーにこれが無ければ、隠されたか壊れたと見なして止める。
 # ここに挙げたものは「無くても監査が動いてしまう」= 消せば静かに検査を減らせるファイル。
 REQUIRED = ("docs/RULES.md", "docs/RULE-VIOLATIONS.md", "docs/RULE-OPERATION.md",
+            "docs/rollback-floor.txt",
             "tools/audit_baseline.json", "tools/audit_characters.py", "tools/rules.py",
+            "tools/lock.py", "tools/checks.lock", "tools/check_js.py",
+            "tools/audit_selftest.py", "tools/install_hooks.py",
             "tools/hooks/pre-commit", "tools/hooks/pre-merge-commit", "tools/hooks/pre-push",
+            "tools/hooks/no_heredoc_backslash.py",
+            ".github/workflows/rules.yml", ".claude/settings.json",
             "assets/css/site.css") + DATA_FILES
 
 
@@ -72,28 +77,94 @@ def load(path):
         return json.load(f)
 
 
+def load_text(text):
+    try:
+        return json.loads(text)
+    except Exception:
+        return []
+
+
 def key(x):
     return "%s|%s|%s" % (x["sev"], x["cat"], x["msg"])
 
 
+MARK_SRC = r"""
+import io, json, os, sys
+sys.path.insert(0, os.path.join(os.getcwd(), "tools"))
+from audit_characters import extract_array
+ARRAY_OF = {"characters.html": "generals", "characters-kyoku.html": "kyokuGenerals",
+            "characters-ketsu.html": "ketsuGenerals"}
+ap, rv = [], []
+for f, var in ARRAY_OF.items():
+    if not os.path.exists(f):
+        continue
+    for g in extract_array(f, var):
+        if g.get("approved"):
+            ap.append("%s:%s" % (f, g.get("no")))
+        if g.get("reviewedOk"):
+            rv.append("%s:%s" % (f, g.get("no")))
+print("@@MARKS@@" + json.dumps({"approved": ap, "reviewed": rv}))
+"""
+
+
+def marks(path):
+    """そのツリーの赤丸・黄丸の集合を、**そのツリーのコードで**数える。
+
+    G-5(2026-08-13 第3回レッドチーム): 以前は作業ツリーの audit_characters を
+    import していた。ステージしない7行を足すだけで赤丸の増分検査が黙り、
+    出力は正常時と1文字も違わなかった。さらに tools/__pycache__ は gitignore
+    されているので、.pyc だけ差し替えれば git status も空のまま抜けられた。
+    import をやめ、取り出したツリーの中で -B(バイトコードを使わない)で走らせる。
+    """
+    r = run([sys.executable, "-B", "-c", MARK_SRC], cwd=path)
+    for line in (r.stdout or "").split("\n"):
+        if line.startswith("@@MARKS@@"):
+            d = json.loads(line[len("@@MARKS@@"):])
+            return set(d["approved"]), set(d["reviewed"])
+    print("  ! %s の解析に失敗。検証マークのチェックを飛ばさず止める。" % path)
+    print((r.stdout or "")[-400:])
+    print((r.stderr or "")[-400:])
+    return None, None
+
+
 def approved_set(path):
-    """A-3: 正規表現でなく監査ツールと同じJS評価でエントリを取る。
-    ネストした {} でエントリ境界を見失わないため。"""
-    sys.path.insert(0, os.path.join(ROOT, "tools"))
-    from audit_characters import extract_array
-    out = set()
-    for f, var in ARRAY_OF.items():
-        p = os.path.join(path, f)
-        if not os.path.exists(p):
+    return marks(path)[0]
+
+
+def gate_source_clean():
+    """F-1(第3回): 門番のコードを**ステージせずに**書き換えると全検査が無効化できた。
+
+    `dirty` 判定は「ステージ済みかつ作業ツリーでも変更されている」ものしか見ないので、
+    ステージしないツール改造は素通りした。しかも事後に checkout すれば痕跡が残らない。
+    検査する道具に未コミットの差分がある状態では、門番は動かない。
+    """
+    out = run(["git", "status", "--porcelain", "--",
+               "tools", ".github", ".claude/settings.json"]).stdout
+    bad = []
+    for l in out.split("\n"):
+        if len(l) < 4:
             continue
-        try:
-            for g in extract_array(p, var):
-                if g.get("approved"):
-                    out.add("%s:%s" % (f, g.get("no")))
-        except Exception as e:
-            print("  ! %s の解析に失敗(%s)。approvedチェックを飛ばさず止める。" % (f, e))
-            return None
-    return out
+        path = l[3:].strip().strip('"')
+        if path.startswith(("tools/audit_out/", "tools/__pycache__/")):
+            continue
+        # XY path。X=インデックス側 / Y=作業ツリー側。
+        # ステージ済み(X)は検査対象ツリーに入るので問題ない。
+        # 危ないのは「ステージしていない改変(Y)」と「追跡されていないファイル(??)」。
+        if l[:2] == "??" or l[1] != " ":
+            bad.append(l)
+    if not bad:
+        return True
+    print("=" * 62)
+    print("[停止] 検査に使う道具に、ステージしていない変更がある: %d件" % len(bad))
+    print("=" * 62)
+    for l in bad[:10]:
+        print("  " + l)
+    print()
+    print("この状態だと、検査するコードとコミットされるコードが別になる。")
+    print("第3回レッドチームは、これで全検査を無効化したうえで")
+    print("正常時と1文字も違わない出力を出せることを実証している。")
+    print("git add でそろえるか、退避してから実行する。")
+    return False
 
 
 def export_tree(ref, dest, require=True):
@@ -256,10 +327,22 @@ def check_push():
                         mb = run(["git", "merge-base", local, cand]).stdout.strip()
                         base_ref = mb or cand
                         break
-            now = approved_set(tmp)
-            before = None
+            now, now_rv = marks(tmp)
+            before = before_rv = None
             if base_ref and export_tree(base_ref, old, require=False):
-                before = approved_set(old)
+                before, before_rv = marks(old)
+            # I-3(第3回): 黄丸(reviewedOk)を止める仕組みが1つも無く、
+            # 107体を一括で「検証済み」に昇格させても新規HIGHは1件だけだった。
+            # 止めはしないが、増分は必ず名前つきで出す。
+            gained_rv = sorted((now_rv or set()) - (before_rv or set()))
+            if gained_rv:
+                print()
+                print("[確認] 新しく黄丸(reviewedOk)になった武将: %d件" % len(gained_rv))
+                for x in gained_rv[:15]:
+                    print("   " + x)
+                if len(gained_rv) > 15:
+                    print("   ... ほか%d件" % (len(gained_rv) - 15))
+                print("   黄丸は manual A-1〜A-5 を通した武将だけ。まとめて付けていないか。")
             if before is None:
                 print()
                 print("[注意] 比較対象(%s)を取れないので、赤丸の増分は判定していない。"
@@ -304,8 +387,18 @@ def main():
         print("--mode は commit / merge / push のいずれか。受け取った値: %r" % mode)
         return 1
 
+    # 出力に「いつ・どのツリーの結果か」を必ず入れる。
+    # I-12(第3回): これが無いと、きれいだった時点の本物の出力を後から貼れてしまう。
+    head = run(["git", "rev-parse", "--short", "HEAD"]).stdout.strip()
+    tree = run(["git", "write-tree"]).stdout.strip()[:12]
+    print("[%s] mode=%s HEAD=%s tree=%s"
+          % (datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"), mode, head, tree))
+
     # A-7: どのモードでも、まずフックそのものが正本どおりかを見る
     if not hooks_ok():
+        return 1
+    # F-1: 検査に使う道具が未コミットで書き換わっていないか
+    if not gate_source_clean():
         return 1
     if mode == "push":
         return check_push()
@@ -347,7 +440,7 @@ def main():
             print((r.stderr or "")[-1500:])
             return 1
         cur = load(os.path.join(target, "tools", "audit_out", "findings.json"))
-        approved_now = approved_set(target)
+        approved_now, reviewed_now = marks(target)
         base = baseline_of(target)      # E-1: 比べる相手も同じツリーから
     finally:
         shutil.rmtree(tmp, ignore_errors=True)
@@ -358,6 +451,25 @@ def main():
             print("--reason \"なぜ残すのか\" が要る。理由なしでベースラインは動かせない。")
             return 1
         reason = sys.argv[sys.argv.index("--reason") + 1]
+        # H-11/G-11(第3回): 理由 "-" の1文字で全件を1発で飲めた。
+        if len(reason.strip()) < 10:
+            print("理由が短すぎる(10文字以上)。何を、なぜ残すのかを書く。")
+            return 1
+        # I-1(第3回): 運用そのものを見ているHIGH(2回目の停止・錠前・フック)まで
+        # ベースラインに載せられた。データの指摘を飲むついでに規律が消えるので、
+        # 運用側の種別は載せられないようにする。
+        BANNED = ("2回目の違反", "違反ログ", "フックが正本と違う", "門番",
+                  "錠前", "監査チェックが消えた", "ルールが索引から消えた",
+                  "必須ファイルが消えた", "武将の件数が減った", "監査に足した")
+        blocked = [x for x in cur if key(x) not in {key(y) for y in base}
+                   and any(b in x["cat"] for b in BANNED)]
+        if blocked:
+            print("[停止] 運用そのものを見ている指摘は --accept で飲めない: %d件" % len(blocked))
+            for x in blocked[:10]:
+                print("  [%s] %s %s" % (x["sev"], x["cat"], x["msg"][:100]))
+            print()
+            print("これらは「規律が壊れている」という報せなので、直すしかない。")
+            return 1
         base_keys = {key(x) for x in base}
         add_ = [x for x in cur if key(x) not in base_keys]
         drop = [x for x in base if key(x) not in {key(y) for y in cur}]
@@ -379,6 +491,27 @@ def main():
         print("理由を tools/audit_baseline_reason.txt に追記し、両方をステージした。")
         print("このコミットに含めること。")
         return 0
+
+    # F-2/H-2(第3回、2体が指摘): --accept は「使ってもよい入口」であって必須ではなく、
+    # baseline はただの追跡ファイルだった。新しく出た findings をそのまま追記して
+    # git add すれば commit も push も CI も通り、理由ファイルには1行も残らなかった。
+    # ベースラインが増えているのに、同じコミットで理由が増えていなければ止める。
+    if "tools/audit_baseline.json" in staged:
+        head_base = load_text(run(["git", "show", "HEAD:tools/audit_baseline.json"]).stdout)
+        n_before = len(head_base)
+        n_after = len(base)
+        if n_after > n_before:
+            r_before = run(["git", "show", "HEAD:tools/audit_baseline_reason.txt"]).stdout or ""
+            r_after = run(["git", "show", ":tools/audit_baseline_reason.txt"]).stdout or ""
+            if len(r_after.strip().split("\n")) <= len(r_before.strip().split("\n")):
+                ng = True
+                print("=" * 62)
+                print("[停止] ベースラインが %d件 → %d件 に増えているのに理由が無い"
+                      % (n_before, n_after))
+                print("=" * 62)
+                print("手で書き足さず、次を使う:")
+                print('  python tools/precommit_check.py --accept --reason "なぜ残すのか"')
+                print("(理由は tools/audit_baseline_reason.txt に残り、同じコミットに入る)")
 
     cur_keys = {key(x) for x in cur}
     base_keys = {key(x) for x in base}
@@ -451,8 +584,15 @@ def main():
     # 列挙する側を反転させる。W-13が守りたいのは
     # 「サイトに出る成果物の変更に、規則の変更を紛れ込ませない」なので、
     # **サイトに出るもの以外を除外**する形にする。
+    # G-10(第3回): rule_docs が `docs/RULE`(大文字)始まりだけだったので、
+    # `docs/rollback-floor.txt`(巻き戻しの下限)と `.claude/agents/*.md`(エージェント定義)は
+    # 「ルール文書」にも「作業」にも入らず、データ更新コミットに同梱できた。
+    # 下限を「いまここまで確認した」に書き換える操作が、作業に紛れ込ませられた。
     rule_docs = [f for f in staged
-                 if f.startswith("docs/RULE") or f == "docs/character-registration-manual.md"]
+                 if f.startswith(("docs/RULE", "docs/rollback-floor",
+                                  ".claude/agents/", ".github/workflows/"))
+                 or f in ("docs/character-registration-manual.md",
+                          ".claude/settings.json", "tools/checks.lock")]
     NOT_WORK = ("docs/", "tools/", ".github/", ".claude/", ".gitignore", "README")
     work = [f for f in staged if not f.startswith(NOT_WORK)]
     if rule_docs and work:

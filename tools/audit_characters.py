@@ -39,7 +39,14 @@ def extract_array(path, varname):
     with io.open(path, encoding="utf-8") as f:
         html = f.read()
     for s in re.findall(r"<script>([\s\S]*?)</script>", html):
-        m = re.search(r"(?:const|let|var)\s+" + re.escape(varname) + r"\s*=\s*", s)
+        # H-6(2026-08-13 第3回レッドチーム): コメントを剥がしていなかったので、
+        #   // 旧データ: const ketsuGenerals = []
+        # という行を先頭のscriptに1つ置くだけで、監査が空配列を掴んだ。
+        # load() が例外を握りつぶすため警告すら出ず、commit も push も通った。
+        # 宣言を探すときだけコメントを消した文字列で位置を決める(本体は元の s から取る)。
+        masked = re.sub(r"/\*[\s\S]*?\*/", lambda x: " " * len(x.group(0)), s)
+        masked = re.sub(r"(?m)//[^\n]*", lambda x: " " * len(x.group(0)), masked)
+        m = re.search(r"(?:const|let|var)\s+" + re.escape(varname) + r"\s*=\s*", masked)
         if not m:
             continue
         start = m.end()
@@ -296,7 +303,8 @@ def main():
     try:
         from reslog import sources as _res_sources
     except Exception:
-        _res_sources = lambda k: []
+        def _res_sources(k, verified_only=False):
+            return []
     ORDER = ["LV10", "TR1", "TR2", "TR3", "TR4", "TR5", "TR6"]
     seen_unk = set()
     for g, src in targets + [(s, "skills.html") for s in D["skills"]]:
@@ -314,7 +322,12 @@ def main():
         if not skill:
             continue
         key = "TR:" + skill
-        got = _res_sources(key)
+        # F-7/G-1/H-1/I-2(2026-08-13 第3回レッドチーム、4体が独立に指摘):
+        # reslog.py の docstring は「証拠つき(fetch_and_log)の件数だけを数える」と
+        # 書いていたのに、ここが verified_only を渡していなかった。
+        # HTTPを1回も叩かず log() を2回呼ぶだけでHIGHが消えていた。
+        # I-01(調べずに「未確認」と書いた重い違反)を防ぐための検査そのものが空だった。
+        got = _res_sources(key, verified_only=True)
         if len(got) < 2 and key not in seen_unk:
             seen_unk.add(key)
             add("未確認の根拠なし", "HIGH",
@@ -515,6 +528,17 @@ def main():
             add(cat, sev, msg)
     except Exception as e:
         add("ルール索引の検査が動かない", "HIGH", "tools/rules.py が失敗: %s" % e)
+
+    # 第3回レッドチーム: 検査そのもの・比較基準・母集団を、検査される側が
+    # 同じコミットで書き換えられた。「減った/すり替わった」を錠前で見る。
+    try:
+        import lock as _lock
+        _lock.ROOT = ROOT
+        _lock.PATH = os.path.join(ROOT, "tools", "checks.lock")
+        for cat, sev, msg in _lock.problems():
+            add(cat, sev, msg)
+    except Exception as e:
+        add("錠前の検査が動かない", "HIGH", "tools/lock.py が失敗: %s" % e)
 
     # A-7: 門番のフックそのものが正本どおりに入っているか。
     # ここを見ないと「機械で止めている」という前提が確かめられない(.git/hooks はgit管理外)。
