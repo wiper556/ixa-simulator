@@ -5,44 +5,95 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7334304987274613"
      crossorigin="anonymous"></script>
-<title>傑武将一覧｜戦国IXA シミュレーター置き場</title>
-<meta name="description" content="戦国IXA(Sengoku IXA)の傑武将3種(織田信長・豊臣秀吉・徳川家康)のカード画像・ステータス・スキル効果の一覧。">
+<title>傑武将データベース｜戦国IXA シミュレーター置き場</title>
+<meta name="description" content="戦国IXA(Sengoku IXA)の傑武将3種(織田信長・豊臣秀吉・徳川家康)のカード画像・ステータス・スキル効果を確認できる非公式ファンメイドツール。">
 <link rel="stylesheet" href="assets/css/site.css">
 <style>
   body{background:#ffffff;}
-  .kt-table-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;}
-  .kt-table{width:100%;border-collapse:collapse;font-size:13px;}
-  .kt-table th,.kt-table td{border:1px solid var(--line);padding:9px 10px;text-align:center;white-space:nowrap;vertical-align:top;}
-  .kt-table th{background:var(--bg-panel-2);color:var(--muted);font-weight:700;white-space:nowrap;}
-  .kt-table td.kt-col-card{padding:6px;width:120px;}
-  .kt-table td.kt-col-card img{width:108px;height:auto;display:block;border-radius:4px;border:1px solid var(--line);}
-  .kt-table td.kt-col-name{text-align:left;font-family:'Noto Serif JP',serif;font-weight:700;white-space:nowrap;}
-  .kt-table td.kt-col-name .kt-kana{display:block;font-family:'Zen Kaku Gothic New',sans-serif;font-weight:400;font-size:11px;color:var(--muted);margin-top:2px;}
-  .kt-table td.kt-col-skill{text-align:left;font-family:'Noto Serif JP',serif;font-weight:700;color:var(--vermillion-bright);white-space:nowrap;}
-  .kt-table td.kt-num{font-family:'JetBrains Mono',monospace;}
-  .kt-table td.kt-col-effect{text-align:left;white-space:normal;min-width:300px;}
-  .kt-table td.kt-col-effect ul{margin:0;padding-left:1.1em;}
-  .kt-table td.kt-col-effect li{margin-bottom:3px;line-height:1.55;}
-  .kt-table td.kt-col-effect li.kt-battle{color:var(--paper);}
-  .kt-table td.kt-col-effect li.kt-flavor{color:var(--muted);}
-  .kt-table td.kt-col-effect .kt-note{display:block;margin-top:6px;font-size:11.5px;color:var(--muted);}
-  .kt-hado{color:#b8402f;font-weight:700;}
-  .kt-hishou{color:#f8b500;font-weight:700;}
-  .kt-note-lead{color:var(--muted);font-size:12px;line-height:1.7;margin:0 0 14px;}
 
-  @media (max-width:700px){
-    .kt-table{font-size:12px;}
-    .kt-table th,.kt-table td{padding:6px 7px;}
-    .kt-table td.kt-col-card{width:78px;}
-    .kt-table td.kt-col-card img{width:70px;}
-    .kt-table td.kt-col-effect{min-width:220px;}
+  .kt-search{margin-bottom:14px;}
+  .kt-search input{
+    width:100%;font-family:'Zen Kaku Gothic New',sans-serif;font-size:15px;padding:11px 14px;
+    background:#fff;border:1px solid var(--line);color:var(--paper);border-radius:5px;
   }
+  .kt-search input:focus{outline:none;border-color:var(--gold);}
+
+  .kt-list-table{width:100%;border-collapse:collapse;font-size:12.5px;}
+  .kt-list-table th,.kt-list-table td{border:1px solid var(--line);padding:8px 10px;text-align:center;vertical-align:middle;white-space:nowrap;}
+  .kt-list-table th{background:var(--bg-panel-2);color:var(--muted);font-weight:700;}
+  .kt-list-table tr:hover td{background:var(--bg-panel-2);}
+  .kt-list-table td.kt-col-name{text-align:left;}
+  .kt-list-table td.kt-col-name a{font-family:'Noto Serif JP',serif;font-weight:700;color:var(--paper);text-decoration:none;}
+  .kt-list-table td.kt-col-name a:hover{color:var(--vermillion-bright);}
+  .kt-list-table td.kt-col-effect{text-align:left;white-space:normal;min-width:260px;color:var(--muted);line-height:1.6;}
+
+  .kt-atkdef-badge{display:inline-block;font-size:11px;font-weight:700;border-radius:4px;padding:2px 8px;white-space:nowrap;}
+  .kt-atkdef-badge.atk{background:rgba(184,64,47,0.12);color:var(--vermillion-bright);}
+  .kt-atkdef-badge.def{background:rgba(46,125,50,0.12);color:#2e7d32;}
+  .kt-atkdef-badge.both{background:rgba(169,124,10,0.15);color:var(--gold-bright);}
+  .kt-atkdef-badge.other{background:rgba(107,114,128,0.12);color:var(--muted);}
+
+  .kt-branch-badge{
+    display:inline-flex;align-items:center;justify-content:center;width:18px;height:18px;
+    font-size:10.5px;font-weight:700;border-radius:3px;background:var(--bg-panel-2);
+    border:1px solid var(--line);color:var(--paper);margin:1px;
+  }
+  .kt-branch-fallback{font-size:11px;color:var(--muted);white-space:normal;}
+
+  .kt-subtag{font-size:10px;background:rgba(0,172,193,0.12);color:#00838f;border-radius:10px;padding:1px 7px;font-weight:700;display:inline-block;margin:1px;white-space:nowrap;}
+
+  .kt-no-result{color:var(--muted);font-size:12px;padding:14px;text-align:center;}
+
+  .kt-detail-head{display:flex;gap:20px;flex-wrap:wrap;margin-bottom:20px;}
+  .kt-detail-img{max-width:100%;width:460px;border-radius:8px;border:1px solid var(--line);}
+  .kt-detail-img-placeholder{
+    width:460px;max-width:100%;height:220px;border-radius:8px;border:1px dashed var(--line);
+    display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:13px;
+  }
+  .kt-detail-title{font-family:'Noto Serif JP',serif;font-weight:900;font-size:22px;color:var(--paper);}
+  .kt-detail-furigana{font-size:12px;color:var(--muted);margin-left:8px;font-weight:400;}
+  .kt-detail-meta{font-size:13px;color:var(--muted);margin:6px 0 14px;}
+
+  .kt-detail-block{margin-bottom:20px;}
+  .kt-detail-block h2{font-family:'Noto Serif JP',serif;font-size:15px;margin:0 0 8px;color:var(--vermillion-bright);border-bottom:1px dashed var(--line);padding-bottom:6px;}
+  .kt-table-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;}
+  .kt-stat-table{width:100%;border-collapse:collapse;font-size:13px;}
+  .kt-stat-table th,.kt-stat-table td{border:1px solid var(--line);padding:8px 10px;text-align:center;white-space:nowrap;}
+  .kt-stat-table th{background:var(--bg-panel-2);color:var(--muted);font-weight:700;}
+  .kt-stat-table td[style*="text-align:left"]{white-space:normal;min-width:220px;}
+  .kt-col-narrow{width:64px;}
+  .kt-synth-cell{display:flex;align-items:center;gap:10px;text-align:left;}
+  .kt-synth-cell .kt-synth-name{flex-shrink:0;}
+  .kt-synth-desc{
+    width:150px;height:32px;flex-shrink:0;
+    font-size:11px;color:var(--muted);line-height:1.4;white-space:normal;text-align:left;
+    overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;
+  }
+
+  @media (max-width:600px){
+    .kt-stat-table{font-size:12px;}
+    .kt-stat-table th,.kt-stat-table td{padding:6px 8px;}
+  }
+  .kt-skill-name{font-family:'Noto Serif JP',serif;font-weight:700;font-size:15px;color:var(--gold-bright);margin-bottom:6px;}
+  .kt-skill-detail{font-size:13.5px;line-height:1.8;}
+  .kt-illust-credit{font-size:12px;color:var(--muted);text-align:right;}
+  .kt-no-detail{color:var(--muted);font-size:13px;padding:20px;text-align:center;border:1px dashed var(--line);border-radius:8px;}
 
   .sim-version-badge{
     position:fixed; bottom:6px; right:8px; z-index:9999;
     font-family:'JetBrains Mono',monospace; font-size:10px; color:#9a9382;
     background:rgba(255,255,255,0.85); padding:2px 7px; border-radius:4px;
     border:1px solid var(--line); pointer-events:none; user-select:text;
+  }
+
+  /* 傑は3種だけなので一覧にもカード画像を出す(他ランクの一覧は画像なし) */
+  .kt-list-table td.kt-col-card{padding:6px;width:112px;}
+  .kt-list-table td.kt-col-card img{width:100px;height:auto;display:block;border-radius:4px;border:1px solid var(--line);}
+  .kt-always{margin:0;padding-left:1.15em;}
+  .kt-always li{margin-bottom:3px;line-height:1.6;color:var(--muted);font-size:12.5px;}
+  @media (max-width:700px){
+    .kt-list-table td.kt-col-card{width:74px;}
+    .kt-list-table td.kt-col-card img{width:66px;}
   }
 </style>
 <link rel="icon" href="favicon.ico" sizes="any">
@@ -72,98 +123,18 @@
   </header>
 
   <main class="site-main">
-    <h1 class="page-title">傑武将一覧</h1>
-    <p class="kt-note-lead">
-      傑は3種のみで、統率・コスト・鍛錬の表示を持たない特殊なカード。
-      効果欄は上から順に、戦闘に影響する効果(濃い文字)、拠点の見た目や階位が変わる常時効果(薄い文字)の並びにしている。
-      3種とも「所属部隊の武将が持つスキルを無効化や発動率低下から保護」を持つため<span class="kt-hado">覇道</span>スキルにあたる。
-    </p>
-
-    <div class="kt-table-scroll">
-      <table class="kt-table">
-        <thead>
-          <tr>
-            <th>カード</th><th>No.</th><th>武将名</th><th>スキル</th>
-            <th>攻撃</th><th>防御</th><th>兵法</th><th>指揮兵数</th><th>効果</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td class="kt-col-card"><img src="assets/img/characters/no20001_char.png" alt="織田信長(No.20001)のカード" loading="lazy" decoding="async"></td>
-            <td class="kt-num">20001</td>
-            <td class="kt-col-name">織田信長<span class="kt-kana">おだのぶなが</span></td>
-            <td class="kt-col-skill">天魔絶界</td>
-            <td class="kt-num">70000</td>
-            <td class="kt-num">50000</td>
-            <td class="kt-num">5000</td>
-            <td class="kt-num">25000</td>
-            <td class="kt-col-effect">
-              <ul>
-                <li class="kt-battle">所属部隊の「鉄砲足軽」の攻撃力・防御力が+7される</li>
-                <li class="kt-battle">同じ合流攻撃に参加する他部隊の「鉄砲足軽」の攻撃力が+3される</li>
-                <li class="kt-battle">確率+100% / 対象:全 / 攻撃666%上昇</li>
-                <li class="kt-battle">所属部隊の武将が持つスキルを無効化や発動率低下から保護(<span class="kt-hado">覇道</span>)</li>
-                <li class="kt-flavor">本領と陣、出城が黄金造りになる</li>
-                <li class="kt-flavor">チャットの文字色が金色になる</li>
-                <li class="kt-flavor">位階有効時、階位が正一位となる</li>
-                <li class="kt-flavor">陣獲得時、陣のレベルが5になる</li>
-              </ul>
-              <span class="kt-note">上記の効果はすべて模倣不可・重複不可</span>
-            </td>
-          </tr>
-          <tr>
-            <td class="kt-col-card"><img src="assets/img/characters/no20002_char.png" alt="豊臣秀吉(No.20002)のカード" loading="lazy" decoding="async"></td>
-            <td class="kt-num">20002</td>
-            <td class="kt-col-name">豊臣秀吉<span class="kt-kana">とよとみひでよし</span></td>
-            <td class="kt-col-skill">覇軍 悉国平定</td>
-            <td class="kt-num">60000</td>
-            <td class="kt-num">60000</td>
-            <td class="kt-num">5500</td>
-            <td class="kt-num">24000</td>
-            <td class="kt-col-effect">
-              <ul>
-                <li class="kt-battle">所属部隊の武将が持つスキルを無効化や発動率低下から保護(<span class="kt-hado">覇道</span>)</li>
-                <li class="kt-battle">所属部隊の「騎馬鉄砲」の攻撃力・防御力が+7される</li>
-                <li class="kt-battle">同じ合流攻撃に参加する他部隊の「騎馬鉄砲」の攻撃力が+3される</li>
-                <li class="kt-battle">【黄金造り】の拠点配置時、武将攻撃力と武将防御力が1.5倍される</li>
-                <li class="kt-battle">確率+100% / 対象:全 / 攻撃550%上昇 防御550%上昇</li>
-                <li class="kt-flavor">本領と陣、出城が黄金造りになる</li>
-                <li class="kt-flavor">チャットの文字色が金色になる</li>
-                <li class="kt-flavor">位階有効時、階位が正一位となる</li>
-                <li class="kt-flavor">陣獲得時、陣のレベルが5になる</li>
-              </ul>
-              <span class="kt-note">上記の効果はすべて模倣不可・重複不可</span>
-            </td>
-          </tr>
-          <tr>
-            <td class="kt-col-card"><img src="assets/img/characters/no20003_char.png" alt="徳川家康(No.20003)のカード" loading="lazy" decoding="async"></td>
-            <td class="kt-num">20003</td>
-            <td class="kt-col-name">徳川家康<span class="kt-kana">とくがわいえやす</span></td>
-            <td class="kt-col-skill">神威蓋世</td>
-            <td class="kt-num">65000</td>
-            <td class="kt-num">65000</td>
-            <td class="kt-num">5000</td>
-            <td class="kt-num">25000</td>
-            <td class="kt-col-effect">
-              <ul>
-                <li class="kt-battle">所属部隊の「焙烙火矢」の攻撃力・防御力が+7される</li>
-                <li class="kt-battle">同じ合流攻撃に参加する他部隊の「焙烙火矢」の攻撃力が+3される</li>
-                <li class="kt-battle">確率+100% / 対象:全 / 攻撃500%上昇 防御500%上昇　<span class="kt-hishou">飛翔10</span></li>
-                <li class="kt-battle">所属部隊の武将が持つスキルを無効化や発動率低下から保護(<span class="kt-hado">覇道</span>)</li>
-                <li class="kt-flavor">合戦中1回まで「葵紋の陣」を作成できる(「葵紋の陣」は【傑】を含む部隊でしか攻撃できず陣破壊スキルに破壊されない／この武将が作成した「葵紋の陣」のみ距離4以内の同盟員の陣も「葵紋の陣」となる)</li>
-                <li class="kt-flavor">本領と陣、出城が黄金造りになる</li>
-                <li class="kt-flavor">チャットの文字色が金色になる</li>
-                <li class="kt-flavor">位階有効時、階位が正一位となる</li>
-                <li class="kt-flavor">陣獲得時、陣のレベルが5になる</li>
-              </ul>
-              <span class="kt-note">上記の全効果は模倣・重複不可</span>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+    <div id="listView">
+      <h1 class="page-title">傑武将データベース</h1>
+      <p class="kt-note-lead">傑は3種のみ。鍛錬(TR)が無く効果は固定で、合成素材にもできない特殊なカード。行を押すと詳細を開く。</p>
+      <div id="ktList"></div>
+      <div id="pageComments"></div>
     </div>
 
-    <div id="pageComments"></div>
+    <div id="detailView" style="display:none;">
+      <p class="kt-back-link"><a href="characters-ketsu.html">← 傑武将一覧に戻る</a></p>
+      <div id="ktDetailBody"></div>
+      <div id="ktComments"></div>
+    </div>
   </main>
 
   <footer class="site-footer">
@@ -180,16 +151,159 @@
 
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script src="assets/js/comments-widget.js"></script>
-<script>renderCommentsWidget('pageComments', 'page:characters-ketsu');</script>
 <script src="assets/js/site-sidebar.js"></script>
 <script>
-  // 傑は3種だけで内容もほとんど変わらないため、他の一覧ページのようなJS配列＋prerenderは使わず
-  // 直接HTMLで書いている。カードが増えたらtbodyに行を足すこと。
-  const KETSU_LIST_VERSION = 'v2026-08-12.1';
+
+  // 傑は3種のみ。鍛錬(TR)が無く効果は固定、合成素材にもできないため、
+  // trTable / synthesisTable / cost / rankGrades は持たせていない。
+  // 数値と効果文はカード画像から直接読み取った(傑はカード上にNo.表示が無いため、
+  // No.はくじの提供割合表(ゲーム内「確率情報」)に準拠している)。
+  const ketsuGenerals = [
+    {name:"織田信長", no:"20001", furigana:"おだのぶなが", illustrator:"直良有祐",
+      troop:"全攻", sub:"", hasHado:true,
+      effect:"鉄砲足軽の攻防+7／攻撃666%上昇(覇道)",
+      imageFull:"assets/img/characters/no20001_full.png", imageChar:"assets/img/characters/no20001_char.png",
+      atkBase:70000, defBase:50000, tacticsBase:5000, lv0Troops:25000,
+      initialSkill:"天魔絶界",
+      skillDetail:"傑/効果固定 確率 100% 攻撃666%上昇/対象:全　覇道\n模倣不可・重複不可\n①攻撃666%上昇する\n②所属部隊の「鉄砲足軽」の攻撃力・防御力が+7される\n③同じ合流攻撃に参加する他部隊の「鉄砲足軽」の攻撃力が+3される\n④所属部隊の武将が持つスキルを無効化や発動率低下から保護する",
+      alwaysEffects:[
+        "本領と陣、出城が黄金造りになる",
+        "チャットの文字色が金色になる",
+        "位階有効時、階位が正一位となる",
+        "陣獲得時、陣のレベルが5になる"
+      ]},
+
+    {name:"豊臣秀吉", no:"20002", furigana:"とよとみひでよし", illustrator:"直良有祐",
+      troop:"全攻防", sub:"", hasHado:true,
+      effect:"騎馬鉄砲の攻防+7／攻防550%上昇／黄金造りの拠点で武将攻防1.5倍(覇道)",
+      imageFull:"assets/img/characters/no20002_full.png", imageChar:"assets/img/characters/no20002_char.png",
+      atkBase:60000, defBase:60000, tacticsBase:5500, lv0Troops:24000,
+      initialSkill:"覇軍 悉国平定",
+      skillDetail:"傑/効果固定 確率 100% 攻撃550%上昇/対象:全　覇道\n模倣不可・重複不可\n①攻撃550%上昇する\n②防御550%上昇する\n③所属部隊の「騎馬鉄砲」の攻撃力・防御力が+7される\n④同じ合流攻撃に参加する他部隊の「騎馬鉄砲」の攻撃力が+3される\n⑤【黄金造り】の拠点に配置時は武将攻撃力と武将防御力が1.5倍される\n⑥所属部隊の武将が持つスキルを無効化や発動率低下から保護する",
+      alwaysEffects:[
+        "本領と陣、出城が黄金造りになる",
+        "チャットの文字色が金色になる",
+        "位階有効時、階位が正一位となる",
+        "陣獲得時、陣のレベルが5になる"
+      ]},
+
+    {name:"徳川家康", no:"20003", furigana:"とくがわいえやす", illustrator:"直良有祐",
+      troop:"全攻防", sub:"飛翔10", hasHado:true,
+      effect:"焙烙火矢の攻防+7／攻防500%上昇+飛翔10(覇道)",
+      imageFull:"assets/img/characters/no20003_full.png", imageChar:"assets/img/characters/no20003_char.png",
+      atkBase:65000, defBase:65000, tacticsBase:5000, lv0Troops:25000,
+      initialSkill:"神威蓋世",
+      skillDetail:"傑/効果固定 確率 100% 攻撃500%上昇/対象:全　覇道　飛翔10\n模倣不可・重複不可\n①攻撃500%上昇する\n②防御500%上昇する\n③飛翔10を得る\n④所属部隊の「焙烙火矢」の攻撃力・防御力が+7される\n⑤同じ合流攻撃に参加する他部隊の「焙烙火矢」の攻撃力が+3される\n⑥所属部隊の武将が持つスキルを無効化や発動率低下から保護する",
+      alwaysEffects:[
+        "合戦中1回まで「葵紋の陣」を作成できる(「葵紋の陣」は【傑】を含む部隊でしか攻撃できず陣破壊スキルに破壊されない／この武将が作成した「葵紋の陣」のみ距離4以内の同盟員の陣も「葵紋の陣」となる)",
+        "本領と陣、出城が黄金造りになる",
+        "チャットの文字色が金色になる",
+        "位階有効時、階位が正一位となる",
+        "陣獲得時、陣のレベルが5になる"
+      ]}
+  ];
+
+
+  function ktEscapeHtml(s){
+    return String(s).replace(/[&<>"']/g, function(c){
+      return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];
+    });
+  }
+  // 無尽・撤退・飛翔・覇道などの語に色を付ける(極ページと同じ扱い)
+  function ktColorize(s){
+    return ktEscapeHtml(s)
+      .replace(/飛翔\d*/g, function(m){ return '<span style="color:#f8b500;font-weight:700;">'+m+'</span>'; })
+      .replace(/覇道/g, '<span style="color:#b8402f;font-weight:700;">覇道</span>')
+      .replace(/卓越/g, '<span style="color:#2e7d32;font-weight:700;">卓越</span>')
+      .replace(/\n/g, '<br>');
+  }
+  function ktAtkDefBadge(troop){
+    const a = troop.includes('攻'), d = troop.includes('防');
+    if(a && d) return {cls:'both', label:'攻防'};
+    if(a) return {cls:'atk', label:'攻撃'};
+    if(d) return {cls:'def', label:'防御'};
+    return {cls:'other', label:'特殊'};
+  }
+
+  function ktRenderList(){
+    const rows = ketsuGenerals.map(function(g){
+      const ad = ktAtkDefBadge(g.troop);
+      return '<tr onclick="location.hash=\'' + g.no + '\';" style="cursor:pointer;">'
+        + '<td class="kt-col-card"><img src="'+g.imageChar+'" alt="'+ktEscapeHtml(g.name)+'のカード" loading="lazy" decoding="async"></td>'
+        + '<td>'+g.no+'</td>'
+        + '<td class="kt-col-name"><a href="#'+g.no+'">'+ktEscapeHtml(g.name)+'</a></td>'
+        + '<td>'+ktEscapeHtml(g.initialSkill)+'</td>'
+        + '<td><span class="kt-atkdef-badge '+ad.cls+'">'+ad.label+'</span></td>'
+        + '<td>'+g.atkBase+'</td><td>'+g.defBase+'</td><td>'+g.tacticsBase+'</td><td>'+g.lv0Troops+'</td>'
+        + '<td class="kt-col-effect">'+ktColorize(g.effect)+'</td>'
+        + '</tr>';
+    }).join('');
+    document.getElementById('ktList').innerHTML =
+      '<div class="kt-table-scroll"><table class="kt-list-table"><thead><tr>'
+      + '<th>カード</th><th>No.</th><th>武将名</th><th>スキル</th><th>攻防</th>'
+      + '<th>攻撃</th><th>防御</th><th>兵法</th><th>指揮兵数</th><th>スキル効果</th>'
+      + '</tr></thead><tbody>' + rows + '</tbody></table></div>';
+  }
+
+  function ktRenderDetail(g){
+    const body = document.getElementById('ktDetailBody');
+    body.innerHTML =
+      '<div class="kt-detail-head">'
+        + '<img class="kt-detail-img" src="'+g.imageFull+'" alt="'+ktEscapeHtml(g.name)+'">'
+        + '<div>'
+          + '<h1 class="kt-detail-title">'+ktEscapeHtml(g.name)+'<span class="kt-detail-furigana">'+ktEscapeHtml(g.furigana)+'</span></h1>'
+          + '<p class="kt-detail-meta">No.'+g.no+' ／ 指揮兵数'+g.lv0Troops+'</p>'
+          + '<div class="kt-detail-block">'
+            + '<h2>ステータス</h2>'
+            + '<div class="kt-table-scroll"><table class="kt-stat-table">'
+            + '<thead><tr><th>攻撃</th><th>防御</th><th>兵法</th></tr></thead>'
+            + '<tbody><tr><td>'+g.atkBase+'</td><td>'+g.defBase+'</td><td>'+g.tacticsBase+'</td></tr></tbody>'
+            + '</table></div>'
+            + '<p class="kt-detail-meta" style="margin-top:6px;">傑は突破による成長やステータス振り分けが無いため、表示値がそのまま最終値になる。</p>'
+          + '</div>'
+        + '</div>'
+      + '</div>'
+      + '<div class="kt-detail-block">'
+        + '<h2>スキル</h2>'
+        + '<div class="kt-skill-name">'+ktEscapeHtml(g.initialSkill)+'</div>'
+        + '<div class="kt-skill-detail">'+ktColorize(g.skillDetail)+'</div>'
+      + '</div>'
+      + '<div class="kt-detail-block">'
+        + '<h2>常時効果(戦闘以外)</h2>'
+        + '<ul class="kt-always">' + g.alwaysEffects.map(function(t){ return '<li>'+ktEscapeHtml(t)+'</li>'; }).join('') + '</ul>'
+      + '</div>'
+      + '<p class="kt-detail-meta">傑は鍛錬(TR)が無く効果は固定。合成素材にもできないため、鍛錬表と合成候補の欄は無い。</p>'
+      + '<p class="kt-illust-credit">Illust. '+ktEscapeHtml(g.illustrator)+'</p>';
+  }
+
+  function ktRoute(){
+    const hash = decodeURIComponent(location.hash.replace('#',''));
+    const listView = document.getElementById('listView');
+    const detailView = document.getElementById('detailView');
+    const g = hash ? ketsuGenerals.find(function(x){ return x.no === hash; }) : null;
+    if(!g){
+      listView.style.display = '';
+      detailView.style.display = 'none';
+      if(window.renderCommentsWidget) renderCommentsWidget('pageComments', 'page:characters-ketsu');
+      return;
+    }
+    listView.style.display = 'none';
+    detailView.style.display = '';
+    ktRenderDetail(g);
+    if(window.renderCommentsWidget) renderCommentsWidget('ktComments', 'charketsu:'+g.no);
+    window.scrollTo(0, 0);
+  }
+
+  window.addEventListener('hashchange', ktRoute);
+  ktRenderList();
+  ktRoute();
+
+  const KETSU_DB_VERSION = 'v2026-08-12.2';
   (function(){
     const badge = document.getElementById('simVersionBadge');
-    if(badge) badge.textContent = KETSU_LIST_VERSION;
+    if(badge) badge.textContent = KETSU_DB_VERSION;
   })();
+
 </script>
 </body>
 </html>
