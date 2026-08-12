@@ -65,7 +65,16 @@
   .past-kuji-list a:hover{background:var(--bg-panel-2);}
 
   .gacha-stage{margin:30px 0 10px;text-align:center;}
-  .gacha-buttons{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-bottom:24px;}
+  .gacha-buttons{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-bottom:10px;}
+  .sound-toggle-wrap{display:flex;justify-content:center;margin-bottom:20px;}
+  .sound-toggle{
+    display:inline-flex;align-items:center;gap:6px;cursor:pointer;
+    font-family:'Zen Kaku Gothic New',sans-serif;font-size:12px;color:var(--muted);
+    background:#fff;border:1px solid var(--line);border-radius:999px;padding:5px 14px;
+    transition:color .12s ease, border-color .12s ease;
+  }
+  .sound-toggle:hover{color:var(--gold-bright);border-color:var(--gold);}
+  .sound-toggle[aria-pressed="true"]{color:var(--vermillion-bright);border-color:var(--vermillion);}
   .gacha-btn{
     font-family:'Zen Kaku Gothic New',sans-serif;font-weight:700;font-size:14px;
     padding:12px 26px;border-radius:8px;border:none;cursor:pointer;color:#fff;
@@ -426,6 +435,13 @@
           <img src="assets/img/gacha-btn-ten.png" alt="10連を引く">
         </button>
       </div>
+      <!-- 効果音は既定オフ。いきなり音が鳴ると驚くため、押して有効にしてもらう方式にしている。
+           設定はlocalStorageに残るので次回以降は開いた時点から有効。 -->
+      <div class="sound-toggle-wrap">
+        <button id="soundToggleBtn" class="sound-toggle" aria-pressed="false">
+          <span class="sound-icon" aria-hidden="true">🔈</span><span class="sound-text">効果音オフ</span>
+        </button>
+      </div>
       <!-- 既定では隠しておき、ページ下部(コメント欄の下)の解放ボタンを押した時だけ出す。
            単発・10連の隣に常設すると、そちらを引く人が減ってしまうため。 -->
       <div class="bulk-draw-wrap" id="bulkDrawWrap" style="display:none;">
@@ -539,7 +555,7 @@
   <div class="sim-version-badge" id="simVersionBadge">v-</div>
 
 <script>
-  const GACHA_VERSION = 'v2026-08-12.4';
+  const GACHA_VERSION = 'v2026-08-12.5';
   document.addEventListener('DOMContentLoaded', ()=>{
     const badge = document.getElementById('simVersionBadge');
     if(badge) badge.textContent = GACHA_VERSION;
@@ -1246,6 +1262,116 @@
     });
   }
 
+  // ============ 効果音(Web Audio APIで合成・音声ファイル無し) ============
+  // 音声ファイルを置かずにその場で波形を作っているので、リポジトリが重くならず読み込み待ちも無い。
+  // ブラウザはユーザー操作前の音出しを禁止しているため、AudioContextはトグルを押した時に初めて作る。
+  const SOUND_KEY = 'ixaGachaSoundOn';
+  let soundOn = false;
+  let audioCtx = null;
+
+  function ensureAudio(){
+    if(audioCtx) return audioCtx;
+    const AC = window.AudioContext || window.webkitAudioContext;
+    if(!AC) return null;
+    audioCtx = new AC();
+    return audioCtx;
+  }
+
+  // ホワイトノイズのバッファ(めくり音・花火の弾ける音の素材)。使い回すので1回だけ作る。
+  let noiseBuf = null;
+  function getNoise(ctx){
+    if(noiseBuf) return noiseBuf;
+    const len = Math.floor(ctx.sampleRate * 1.2);
+    noiseBuf = ctx.createBuffer(1, len, ctx.sampleRate);
+    const d = noiseBuf.getChannelData(0);
+    for(let i=0; i<len; i++) d[i] = Math.random() * 2 - 1;
+    return noiseBuf;
+  }
+
+  // カードをめくる音。紙が擦れる「シュッ」を、ノイズをバンドパスに通して短く鳴らして作る。
+  function playFlipSound(){
+    if(!soundOn) return;
+    const ctx = ensureAudio();
+    if(!ctx) return;
+    const t = ctx.currentTime;
+    const src = ctx.createBufferSource();
+    src.buffer = getNoise(ctx);
+    const bp = ctx.createBiquadFilter();
+    bp.type = 'bandpass';
+    bp.frequency.setValueAtTime(1800, t);
+    bp.frequency.exponentialRampToValueAtTime(4200, t + 0.09); // 擦り上げる感じに周波数を上げる
+    bp.Q.value = 0.9;
+    const g = ctx.createGain();
+    g.gain.setValueAtTime(0.0001, t);
+    g.gain.exponentialRampToValueAtTime(0.16, t + 0.012);
+    g.gain.exponentialRampToValueAtTime(0.0001, t + 0.14);
+    src.connect(bp).connect(g).connect(ctx.destination);
+    src.start(t);
+    src.stop(t + 0.16);
+  }
+
+  // 天・傑が出たときの花火。低い「ドン」(サイン波の下降)＋弾ける粒(ノイズを細かく刻む)の2段構え。
+  function playFireworkSound(){
+    if(!soundOn) return;
+    const ctx = ensureAudio();
+    if(!ctx) return;
+    const t = ctx.currentTime;
+
+    const boom = ctx.createOscillator();
+    boom.type = 'sine';
+    boom.frequency.setValueAtTime(160, t);
+    boom.frequency.exponentialRampToValueAtTime(38, t + 0.42);
+    const bg = ctx.createGain();
+    bg.gain.setValueAtTime(0.0001, t);
+    bg.gain.exponentialRampToValueAtTime(0.32, t + 0.02);
+    bg.gain.exponentialRampToValueAtTime(0.0001, t + 0.5);
+    boom.connect(bg).connect(ctx.destination);
+    boom.start(t);
+    boom.stop(t + 0.52);
+
+    // 打ち上がった後にパチパチと散る粒。間隔と音量をばらけさせて機械的に聞こえないようにする。
+    for(let i=0; i<14; i++){
+      const at = t + 0.06 + Math.random() * 0.55;
+      const s = ctx.createBufferSource();
+      s.buffer = getNoise(ctx);
+      const hp = ctx.createBiquadFilter();
+      hp.type = 'highpass';
+      hp.frequency.value = 2200 + Math.random() * 2600;
+      const g = ctx.createGain();
+      const vol = 0.05 + Math.random() * 0.07;
+      g.gain.setValueAtTime(0.0001, at);
+      g.gain.exponentialRampToValueAtTime(vol, at + 0.006);
+      g.gain.exponentialRampToValueAtTime(0.0001, at + 0.1);
+      s.connect(hp).connect(g).connect(ctx.destination);
+      s.start(at);
+      s.stop(at + 0.12);
+    }
+  }
+
+  function applySoundToggleUi(btn){
+    btn.setAttribute('aria-pressed', soundOn ? 'true' : 'false');
+    btn.querySelector('.sound-icon').textContent = soundOn ? '🔊' : '🔈';
+    btn.querySelector('.sound-text').textContent = soundOn ? '効果音オン' : '効果音オフ';
+  }
+
+  (function initSound(){
+    const btn = document.getElementById('soundToggleBtn');
+    if(!btn) return;
+    try{ soundOn = localStorage.getItem(SOUND_KEY) === '1'; }catch(e){}
+    applySoundToggleUi(btn);
+    btn.addEventListener('click', ()=>{
+      soundOn = !soundOn;
+      try{ localStorage.setItem(SOUND_KEY, soundOn ? '1' : '0'); }catch(e){}
+      applySoundToggleUi(btn);
+      if(soundOn){
+        // クリックという操作の中でAudioContextを作らないと、ブラウザにsuspendedのまま止められる
+        const ctx = ensureAudio();
+        if(ctx && ctx.state === 'suspended') ctx.resume();
+        playFlipSound(); // オンにしたことが分かるように1回鳴らす
+      }
+    });
+  })();
+
   function triggerLandedBurst(card, tier){
     const front = card.querySelector('.gacha-card-front');
     const fx = document.createElement('div');
@@ -1254,6 +1380,7 @@
     setTimeout(()=>{ fx.remove(); }, BURST_MS + 50);
 
     if(tier === '天' || tier === '傑'){
+      playFireworkSound(); // 火花が散るのと同じタイミングで鳴らす
       const isEnhanced = tier === '傑' || card.classList.contains('ten-parallel');
       const sparks = generateSparkPositions(isEnhanced ? 8 : 5);
       sparks.forEach(pos=>{
@@ -1326,6 +1453,7 @@
       setTimeout(()=>{
         card.classList.add('flipped');
         if(tier !== '上') card.classList.add('reveal-shine');
+        playFlipSound();
       }, triggerAt);
 
       let finishAt = triggerAt + FLIP_MS;
