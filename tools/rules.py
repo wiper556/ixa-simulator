@@ -53,6 +53,9 @@ def rule_ids():
 
 
 SEV = ("軽", "中", "重")
+# 監査の種別ではなく、門番の名前。これらは注入ケースの対象にならない。
+TOOL_NAMES = {"pre-commit", "pre-push", "pre-merge-commit", "PreToolUse",
+              "audit_selftest", "check_js", "install_hooks", "lock"}
 
 
 def _table_lines(text, header_key):
@@ -122,6 +125,17 @@ def cause_tags():
     return {c[0] for _raw, c in _table_lines(_read(VIOL), "タグ") if len(c) >= 2}
 
 
+def selftest_covered():
+    """`audit_selftest.py` に注入ケースがあるチェック種別。
+
+    「自己承認」が3回目になったので(2026-08-13 I-01)、instanceではなくパターンを塞ぐ。
+    3回とも形は同じ: **チェックを足したと書いたが、それが鳴ることを確かめていない。**
+    種別が実在するかだけでなく、**鳴ることを示す注入ケースがあるか**まで見る。
+    """
+    src = _read(os.path.join(ROOT, "tools", "audit_selftest.py"))
+    return set(re.findall(r'^\s{4}\("([^"]+)",', src, re.M))
+
+
 def known_checks():
     """監査が実際に出しうるチェック種別の名前。
 
@@ -132,8 +146,7 @@ def known_checks():
     names |= set(re.findall(r'out\.append\(\("([^"]+)"',
                             _read(os.path.join(ROOT, "tools", "rules.py"))))
     # 監査ではなく pre-commit / PreToolUse で止めているものも「機械で見ている」に含める
-    names |= {"pre-commit", "pre-push", "pre-merge-commit", "PreToolUse",
-              "audit_selftest", "check_js", "install_hooks"}
+    names |= TOOL_NAMES
     return names
 
 
@@ -259,6 +272,18 @@ def problems():
                 # 「足した(e)」の1文字で通った("e" が "pre-commit" の部分文字列)。
                 # 完全一致にする。
                 unknown = [x for x in named if x not in checks]
+                # 「自己承認」3回目(2026-08-13 I-01)への対処。
+                # 種別が実在しても、鳴ることを確かめていなければ「足した」とは言えない。
+                # 実際 I-01 は、種別も文言もあるのに配線が無く、検査は常に空だった。
+                cov = selftest_covered()
+                audit_cats = {x for x in named if x in checks and x not in TOOL_NAMES}
+                unproven = sorted(audit_cats - cov)
+                if unproven:
+                    out.append(("足したチェックに自己テストが無い", "HIGH",
+                                "%s %s: 「%s」に注入ケースが無い。"
+                                "鳴ることを確かめていないものを「足した」と書かない"
+                                "(audit_selftest.py の CASES / EVASIONS に追加する)"
+                                % (r["date"], r["id"], "/".join(unproven)[:60])))
                 if unknown:
                     out.append(("監査に足したチェックが実在しない", "HIGH",
                                 "%s %s: 「%s」という名前のチェックは無い。"

@@ -144,6 +144,11 @@ def problems():
         elif cur["violations"][k] != h:
             out.append(("違反ログの過去行が書き換わった", "HIGH",
                         "%s の内容(原因/区分/何をしたか/影響)が変わっている" % k))
+    # 新しい行を錠前に取り込まないと、その行は「消しても気づかれない」ままになる。
+    for k in sorted(set(cur["violations"]) - set(lock["violations"])):
+        out.append(("違反ログの新しい行が錠前に無い", "MID",
+                    "%s を `python tools/lock.py --update` で取り込む。"
+                    "取り込むまで、この行は消しても検出されない" % k))
 
     # 母集団が減った
     for f, n in sorted(lock["entry_counts"].items()):

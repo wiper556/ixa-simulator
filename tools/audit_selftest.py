@@ -137,6 +137,12 @@ EVASIONS = [
     ("監査に足したチェックが実在しない", "docs/RULE-VIOLATIONS.md",
      "| 足した(pre-commit) |", "| 足した(e) |",
      "1文字で実在照合を通す(部分一致)"),
+    ("足したチェックに自己テストが無い", "docs/RULE-VIOLATIONS.md",
+     "| 足した(未確認の根拠なし) |", "| 足した(categoryLinks漏れ) |",
+     "注入ケースの無い種別を「足した」と書く"),
+    ("違反ログの新しい行が錠前に無い", "docs/RULE-VIOLATIONS.md",
+     "| 2026-08-13 | I-01 |", "| 2026-08-14 | I-01 |",
+     "錠前に取り込まれていない行を足す"),
     ("違反ログの行が消えた", "docs/RULE-VIOLATIONS.md",
      "| 2026-08-12 | T-01 | 既知の罠を記憶で回避 | 軽 |",
      "| 2026-08-13 | T-01 | 既知の罠を記憶で回避 | 軽 |",
@@ -309,7 +315,7 @@ def main():
     # `add(cat, sev, msg)` の1行で橋渡ししているので**まるごと会計の外**にあり、
     # そこに新しいチェックを足しても「自己テストが無い」に現れなかった。
     # また set の `.add("初期:%s")` を拾って、存在しない種別を2件表示していた。
-    covered = {c for c, _f, _o, _n in CASES} | {c for c, _f, _o, _n, _w in EVASIONS}
+    covered = {c for c, _f, _o, _n in CASES} | {ev[0] for ev in EVASIONS}
     src = io.open(os.path.join(ROOT, "tools", "audit_characters.py"), encoding="utf-8").read()
     known = {x for x in re.findall(r'(?<![\w.])add\("([^"]+)"', src) if "%s" not in x}
     try:
