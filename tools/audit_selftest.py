@@ -183,13 +183,15 @@ EVASIONS = [
      '{level:"TR5", points:"200", effect:"テスト値"},\n        {level:"TR6", points:"パラレル", effect:null}\n'
      '      ],\n      // 合成テーブルはixanaryスキルページ「百識ノ計」',
      "調査ログに手書き2件を足して黙らせる",
-     ("tools/research_log.json", '{\n "TR:',
+     # アンカーはJSONの開き括弧だけにする。中のキー名を目印にすると、
+     # 調査ログに項目が増えた日に外れる(I-14と同じ形。実際CIで外れた)。
+     ("tools/research_log.json", '{\n "',
       '{\n "TR:百識ノ計": [\n'
       '  {"date": "2026-08-13", "evidence": "manual", "found": false,\n'
       '   "result": "手書き(自己テスト用)", "source": "ixanary", "url": "https://example.invalid/1"},\n'
       '  {"date": "2026-08-13", "evidence": "manual", "found": false,\n'
       '   "result": "手書き(自己テスト用)", "source": "ixawiki", "url": "https://example.invalid/2"}\n'
-      ' ],\n "TR:')),
+      ' ],\n "')),
     ("CIが失敗しても止まらない", ".github/workflows/rules.yml",
      "      - name: ルール索引と違反ログの整合",
      "      - name: ルール索引と違反ログの整合\n        continue-on-error: true",
