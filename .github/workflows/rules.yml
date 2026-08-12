@@ -38,6 +38,14 @@ jobs:
           python -m pip install --quiet quickjs playwright
           python -m playwright install --with-deps chromium
 
+      - name: フックを導入する(新規クローンで install_hooks が動くかの確認も兼ねる)
+        # クローン直後はフックが1つも入っていない(第2回 E-22)。
+        # 監査はフックの導入状況もHIGHで見るので、ここで実際に入れる。
+        # 「新しいクローンで手順どおりに導入できるか」を毎回確かめることにもなる。
+        run: |
+          python tools/install_hooks.py
+          python tools/install_hooks.py --check
+
       - name: 監査(HIGHがベースラインより増えていないか)
         run: |
           python tools/audit_characters.py
