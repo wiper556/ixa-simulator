@@ -147,6 +147,22 @@ EVASIONS = [
     ("CIの検査が抜けている", ".github/workflows/rules.yml",
      "run: python tools/lock.py", "run: echo 錠前の検査は省略",
      "CIから錠前の検査を外す"),
+    # I-01の対策そのもの。4体のレッドチームが全員ここを突いた(F-7/G-1/H-1/I-2)。
+    # 未確認の段を作ったうえで、調査ログに「手書きの」記録を2件足す。
+    # 証拠(HTTPの取得結果)が無い記録は数えないので、HIGHは消えないはず。
+    ("未確認の根拠なし", "characters-kyoku.html",
+     '{level:"TR5", points:"200", effect:null},\n        {level:"TR6", points:"パラレル", effect:null}\n'
+     '      ],\n      // 合成テーブルはixanaryスキルページ「百識ノ計」',
+     '{level:"TR5", points:"200", effect:"テスト値"},\n        {level:"TR6", points:"パラレル", effect:null}\n'
+     '      ],\n      // 合成テーブルはixanaryスキルページ「百識ノ計」',
+     "調査ログに手書き2件を足して黙らせる",
+     ("tools/research_log.json", '{\n "TR:',
+      '{\n "TR:百識ノ計": [\n'
+      '  {"date": "2026-08-13", "evidence": "manual", "found": false,\n'
+      '   "result": "手書き(自己テスト用)", "source": "ixanary", "url": "https://example.invalid/1"},\n'
+      '  {"date": "2026-08-13", "evidence": "manual", "found": false,\n'
+      '   "result": "手書き(自己テスト用)", "source": "ixawiki", "url": "https://example.invalid/2"}\n'
+      ' ],\n "TR:')),
     ("CIが失敗しても止まらない", ".github/workflows/rules.yml",
      "      - name: ルール索引と違反ログの整合",
      "      - name: ルール索引と違反ログの整合\n        continue-on-error: true",
@@ -226,17 +242,33 @@ def main():
     # E-15: 「違反を入れたら鳴るか」だけでなく「黙らせる書き方をしても鳴るか」を見る。
     # 検査を回避する形は、違反そのものより見つけにくい。
     print("\n-- 検査を黙らせようとしたときに、ちゃんと鳴るか --")
-    for cat, rel, old, new, why in EVASIONS:
-        path = os.path.join(ROOT, rel)
-        src = io.open(path, encoding="utf-8", newline="").read()
-        if old not in src:
+    for ev in EVASIONS:
+        cat, rel, old, new, why = ev[:5]
+        # 2つのファイルを同時に触らないと再現できない回避もある
+        # (例: 未確認の段を作る + 調査ログに手書きの記録を足す)
+        extra = ev[5] if len(ev) > 5 else None
+        edits = [(rel, old, new)] + ([extra] if extra else [])
+        srcs, missing = {}, False
+        for r, o, _n in edits:
+            p = os.path.join(ROOT, r)
+            srcs[r] = io.open(p, encoding="utf-8", newline="").read()
+            if o not in srcs[r]:
+                missing = True
+        if missing:
             print("  skip %-30s (注入位置が見つからない)" % why)
             skip += 1
             continue
-        bak = os.path.join(tmp, "ev_" + rel.replace("/", "_").replace("\\", "_"))
-        shutil.copy2(path, bak)
+        baks = {}
+        for r in srcs:
+            b = os.path.join(tmp, "ev_" + r.replace("/", "_").replace("\\", "_"))
+            shutil.copy2(os.path.join(ROOT, r), b)
+            baks[r] = b
+        path = os.path.join(ROOT, rel)
+        src = srcs[rel]
         try:
-            io.open(path, "w", encoding="utf-8", newline="").write(src.replace(old, new, 1))
+            for r, o, n in edits:
+                io.open(os.path.join(ROOT, r), "w", encoding="utf-8",
+                        newline="").write(srcs[r].replace(o, n, 1))
             if cat == "__行数__":
                 # 「指摘が増えるか」ではなく「行が数え落とされないか」を見るケース
                 got_rows = violation_rows()
@@ -255,7 +287,8 @@ def main():
                 print("  NG   %-30s 黙らせられた(%s が %d件のまま)" % (why, cat, got[cat]))
                 ng += 1
         finally:
-            shutil.copy2(bak, path)
+            for r, b in baks.items():
+                shutil.copy2(b, os.path.join(ROOT, r))
 
     print("\n検出できた %d / 検出できず %d / 注入位置が無い %d" % (ok, ng, skip))
     after = audit()
