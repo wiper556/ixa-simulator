@@ -555,7 +555,7 @@
   <div class="sim-version-badge" id="simVersionBadge">v-</div>
 
 <script>
-  const GACHA_VERSION = 'v2026-08-12.5';
+  const GACHA_VERSION = 'v2026-08-12.6';
   document.addEventListener('DOMContentLoaded', ()=>{
     const badge = document.getElementById('simVersionBadge');
     if(badge) badge.textContent = GACHA_VERSION;
@@ -1265,86 +1265,209 @@
   // ============ 効果音(Web Audio APIで合成・音声ファイル無し) ============
   // 音声ファイルを置かずにその場で波形を作っているので、リポジトリが重くならず読み込み待ちも無い。
   // ブラウザはユーザー操作前の音出しを禁止しているため、AudioContextはトグルを押した時に初めて作る。
+  //
+  // 【2026-08-12 作り直し】最初の版は「ノイズ1本+サイン波1本・残響なし」で薄い音だった。
+  // 安っぽく聞こえる原因はほぼ残響の有無だったので、合成インパルス応答のリバーブを通し、
+  // さらに音を複数の層に分け、鳴るたびに音程と定位を少しずつ変えて機械的な繰り返しを避けている。
   const SOUND_KEY = 'ixaGachaSoundOn';
   let soundOn = false;
   let audioCtx = null;
+  let masterBus = null;   // 全部の音をここに集める(コンプレッサーで音割れを防ぐ)
+  let reverbSend = null;  // ここに送るとリバーブがかかる
 
   function ensureAudio(){
     if(audioCtx) return audioCtx;
     const AC = window.AudioContext || window.webkitAudioContext;
     if(!AC) return null;
     audioCtx = new AC();
+
+    const comp = audioCtx.createDynamicsCompressor();
+    comp.threshold.value = -14;
+    comp.knee.value = 22;
+    comp.ratio.value = 5;
+    comp.attack.value = 0.004;
+    comp.release.value = 0.22;
+    masterBus = audioCtx.createGain();
+    masterBus.gain.value = 1.6; // 実測ピークが低すぎたので上げた(超過分はコンプレッサーが抑える)
+    masterBus.connect(comp).connect(audioCtx.destination);
+
+    // リバーブ用のインパルス応答をその場で作る(指数減衰させたステレオノイズ)。
+    // 前半だけ少し密度を上げると、平坦なノイズより初期反射らしく聞こえる。
+    const sec = 1.8, sr = audioCtx.sampleRate;
+    const len = Math.floor(sr * sec);
+    const ir = audioCtx.createBuffer(2, len, sr);
+    for(let ch=0; ch<2; ch++){
+      const d = ir.getChannelData(ch);
+      for(let k=0; k<len; k++){
+        const t = k / len;
+        const early = t < 0.08 ? 1.6 : 1.0;
+        d[k] = (Math.random() * 2 - 1) * Math.pow(1 - t, 2.6) * early;
+      }
+    }
+    const conv = audioCtx.createConvolver();
+    conv.buffer = ir;
+    const wet = audioCtx.createGain();
+    wet.gain.value = 0.9;
+    reverbSend = audioCtx.createGain();
+    reverbSend.gain.value = 1;
+    reverbSend.connect(conv).connect(wet).connect(masterBus);
     return audioCtx;
   }
 
-  // ホワイトノイズのバッファ(めくり音・花火の弾ける音の素材)。使い回すので1回だけ作る。
+  // ホワイトノイズのバッファ(擦れ音・弾ける音の素材)。使い回すので1回だけ作る。
   let noiseBuf = null;
   function getNoise(ctx){
     if(noiseBuf) return noiseBuf;
-    const len = Math.floor(ctx.sampleRate * 1.2);
+    const len = Math.floor(ctx.sampleRate * 2);
     noiseBuf = ctx.createBuffer(1, len, ctx.sampleRate);
     const d = noiseBuf.getChannelData(0);
     for(let i=0; i<len; i++) d[i] = Math.random() * 2 - 1;
     return noiseBuf;
   }
 
-  // カードをめくる音。紙が擦れる「シュッ」を、ノイズをバンドパスに通して短く鳴らして作る。
+  // 1つの音の出口。pan(定位)とwet(リバーブに送る量)をまとめて面倒みる。
+  function makeVoice(ctx, pan, wet){
+    const g = ctx.createGain();
+    const out = ctx.createStereoPanner ? ctx.createStereoPanner() : null;
+    if(out){ out.pan.value = pan; g.connect(out); out.connect(masterBus); }
+    else { g.connect(masterBus); }
+    if(wet > 0){
+      const sendGain = ctx.createGain();
+      sendGain.gain.value = wet;
+      g.connect(sendGain).connect(reverbSend);
+    }
+    return g;
+  }
+
+  function noiseSource(ctx, at, dur){
+    const src = ctx.createBufferSource();
+    src.buffer = getNoise(ctx);
+    src.playbackRate.value = 0.85 + Math.random() * 0.3; // 毎回わずかに音色を変える
+    src.loop = true;
+    src.loopEnd = 2;
+    src.start(at, Math.random() * 1.5);
+    src.stop(at + dur);
+    return src;
+  }
+
+  const rnd = (a, b) => a + Math.random() * (b - a);
+
+  // ---- カードをめくる音 ----
+  // 「布が擦れるシュッ」と「指から離れるパチッ」の2層。同じ音の連発に聞こえないよう
+  // 掃引先の周波数と定位を毎回振っている。
   function playFlipSound(){
     if(!soundOn) return;
     const ctx = ensureAudio();
     if(!ctx) return;
-    const t = ctx.currentTime;
-    const src = ctx.createBufferSource();
-    src.buffer = getNoise(ctx);
+    const t = ctx.currentTime + 0.005;
+    const pan = rnd(-0.35, 0.35);
+
+    // 層1: 擦れ。バンドパスを下から上へ掃引する
+    const swishDur = rnd(0.15, 0.2);
+    const s1 = noiseSource(ctx, t, swishDur + 0.05);
     const bp = ctx.createBiquadFilter();
     bp.type = 'bandpass';
-    bp.frequency.setValueAtTime(1800, t);
-    bp.frequency.exponentialRampToValueAtTime(4200, t + 0.09); // 擦り上げる感じに周波数を上げる
-    bp.Q.value = 0.9;
-    const g = ctx.createGain();
-    g.gain.setValueAtTime(0.0001, t);
-    g.gain.exponentialRampToValueAtTime(0.16, t + 0.012);
-    g.gain.exponentialRampToValueAtTime(0.0001, t + 0.14);
-    src.connect(bp).connect(g).connect(ctx.destination);
-    src.start(t);
-    src.stop(t + 0.16);
+    bp.Q.value = 1.1;
+    bp.frequency.setValueAtTime(rnd(700, 900), t);
+    bp.frequency.exponentialRampToValueAtTime(rnd(2600, 3400), t + swishDur * 0.65);
+    bp.frequency.exponentialRampToValueAtTime(rnd(1100, 1500), t + swishDur);
+    const g1 = makeVoice(ctx, pan, 0.16);
+    g1.gain.setValueAtTime(0.0001, t);
+    g1.gain.exponentialRampToValueAtTime(0.17, t + 0.018);
+    g1.gain.exponentialRampToValueAtTime(0.0001, t + swishDur);
+    s1.connect(bp).connect(g1);
+
+    // 層2: 弾ける瞬間。擦りの終わり際に短く重ねる
+    const snapAt = t + swishDur * 0.72;
+    const s2 = noiseSource(ctx, snapAt, 0.05);
+    const hp = ctx.createBiquadFilter();
+    hp.type = 'highpass';
+    hp.frequency.value = rnd(3800, 5600);
+    const g2 = makeVoice(ctx, pan, 0.22);
+    g2.gain.setValueAtTime(0.0001, snapAt);
+    g2.gain.exponentialRampToValueAtTime(0.13, snapAt + 0.005);
+    g2.gain.exponentialRampToValueAtTime(0.0001, snapAt + 0.045);
+    s2.connect(hp).connect(g2);
+
+    // 層3: カードが台に当たる低い成分。無いと軽すぎる
+    const body = ctx.createOscillator();
+    body.type = 'triangle';
+    body.frequency.setValueAtTime(rnd(220, 280), snapAt);
+    body.frequency.exponentialRampToValueAtTime(rnd(90, 120), snapAt + 0.09);
+    const g3 = makeVoice(ctx, pan, 0.1);
+    g3.gain.setValueAtTime(0.0001, snapAt);
+    g3.gain.exponentialRampToValueAtTime(0.07, snapAt + 0.008);
+    g3.gain.exponentialRampToValueAtTime(0.0001, snapAt + 0.1);
+    body.connect(g3);
+    body.start(snapAt);
+    body.stop(snapAt + 0.12);
   }
 
-  // 天・傑が出たときの花火。低い「ドン」(サイン波の下降)＋弾ける粒(ノイズを細かく刻む)の2段構え。
+  // ---- 天・傑が出たときの花火 ----
+  // 打ち上げのヒュー → 開くドン(サブ+胴鳴り) → パチパチと散る粒、の3段構え。
+  // 粒はリバーブ多めにして遠くで散っているように聞かせる。
   function playFireworkSound(){
     if(!soundOn) return;
     const ctx = ensureAudio();
     if(!ctx) return;
-    const t = ctx.currentTime;
+    const t = ctx.currentTime + 0.01;
+    const boomAt = t + 0.3;
 
-    const boom = ctx.createOscillator();
-    boom.type = 'sine';
-    boom.frequency.setValueAtTime(160, t);
-    boom.frequency.exponentialRampToValueAtTime(38, t + 0.42);
-    const bg = ctx.createGain();
-    bg.gain.setValueAtTime(0.0001, t);
-    bg.gain.exponentialRampToValueAtTime(0.32, t + 0.02);
-    bg.gain.exponentialRampToValueAtTime(0.0001, t + 0.5);
-    boom.connect(bg).connect(ctx.destination);
-    boom.start(t);
-    boom.stop(t + 0.52);
+    // 打ち上げのヒュー(細く高い音を上げていく)
+    const whistle = ctx.createOscillator();
+    whistle.type = 'triangle';
+    whistle.frequency.setValueAtTime(380, t);
+    whistle.frequency.exponentialRampToValueAtTime(1500, boomAt);
+    const wg = makeVoice(ctx, rnd(-0.15, 0.15), 0.25);
+    wg.gain.setValueAtTime(0.0001, t);
+    wg.gain.exponentialRampToValueAtTime(0.045, t + 0.06);
+    wg.gain.exponentialRampToValueAtTime(0.0001, boomAt + 0.02);
+    whistle.connect(wg);
+    whistle.start(t);
+    whistle.stop(boomAt + 0.05);
 
-    // 打ち上がった後にパチパチと散る粒。間隔と音量をばらけさせて機械的に聞こえないようにする。
-    for(let i=0; i<14; i++){
-      const at = t + 0.06 + Math.random() * 0.55;
-      const s = ctx.createBufferSource();
-      s.buffer = getNoise(ctx);
-      const hp = ctx.createBiquadFilter();
-      hp.type = 'highpass';
-      hp.frequency.value = 2200 + Math.random() * 2600;
-      const g = ctx.createGain();
-      const vol = 0.05 + Math.random() * 0.07;
+    // 開いた瞬間の低い衝撃(サイン波を一気に下げる)
+    const sub = ctx.createOscillator();
+    sub.type = 'sine';
+    sub.frequency.setValueAtTime(150, boomAt);
+    sub.frequency.exponentialRampToValueAtTime(32, boomAt + 0.55);
+    const sg = makeVoice(ctx, 0, 0.3);
+    sg.gain.setValueAtTime(0.0001, boomAt);
+    sg.gain.exponentialRampToValueAtTime(0.42, boomAt + 0.015);
+    sg.gain.exponentialRampToValueAtTime(0.0001, boomAt + 0.62);
+    sub.connect(sg);
+    sub.start(boomAt);
+    sub.stop(boomAt + 0.65);
+
+    // 胴鳴り(ローパスを閉じていくノイズ)。サブだけだと「ボッ」で終わるのでこれで厚みを出す
+    const bodyNoise = noiseSource(ctx, boomAt, 0.42);
+    const lp = ctx.createBiquadFilter();
+    lp.type = 'lowpass';
+    lp.frequency.setValueAtTime(1100, boomAt);
+    lp.frequency.exponentialRampToValueAtTime(160, boomAt + 0.4);
+    lp.Q.value = 0.7;
+    const bg = makeVoice(ctx, 0, 0.45);
+    bg.gain.setValueAtTime(0.0001, boomAt);
+    bg.gain.exponentialRampToValueAtTime(0.3, boomAt + 0.012);
+    bg.gain.exponentialRampToValueAtTime(0.0001, boomAt + 0.42);
+    bodyNoise.connect(lp).connect(bg);
+
+    // 散る粒。左右にばらけさせ、後半ほど小さく・高くして遠ざかる感じにする
+    const grains = 30;
+    for(let i=0; i<grains; i++){
+      const prog = i / grains;
+      const at = boomAt + 0.04 + Math.pow(Math.random(), 0.7) * 1.15;
+      const s = noiseSource(ctx, at, 0.09);
+      const f = ctx.createBiquadFilter();
+      f.type = 'bandpass';
+      f.frequency.value = rnd(2200, 7000);
+      f.Q.value = rnd(1.5, 4);
+      const g = makeVoice(ctx, rnd(-0.8, 0.8), 0.55);
+      const vol = rnd(0.05, 0.11) * (1 - prog * 0.55);
       g.gain.setValueAtTime(0.0001, at);
-      g.gain.exponentialRampToValueAtTime(vol, at + 0.006);
-      g.gain.exponentialRampToValueAtTime(0.0001, at + 0.1);
-      s.connect(hp).connect(g).connect(ctx.destination);
-      s.start(at);
-      s.stop(at + 0.12);
+      g.gain.exponentialRampToValueAtTime(vol, at + 0.004);
+      g.gain.exponentialRampToValueAtTime(0.0001, at + rnd(0.05, 0.1));
+      s.connect(f).connect(g);
     }
   }
 
