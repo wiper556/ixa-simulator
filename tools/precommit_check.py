@@ -302,6 +302,14 @@ def check_push():
                 print("=" * 62)
                 print((r.stdout or "").strip()[-1200:])
 
+            # I-9/I-10(第3回): 公開されるページとデータが一致しているか。
+            # 生成物を手で書き換えても、再生成を忘れても、これまで通っていた。
+            # 実際に生成して比べる(約1分)。commitのたびには重いのでpushだけ。
+            r = run([sys.executable, os.path.join("tools", "check_generated.py"), local])
+            if r.returncode != 0:
+                ng = True
+                print((r.stdout or "").strip()[-1500:])
+
             new_high = [x for x in cur if x["sev"] == "HIGH" and key(x) not in base_keys]
             new_mid = [x for x in cur if x["sev"] != "HIGH" and key(x) not in base_keys]
             if new_high:
@@ -634,18 +642,33 @@ def main():
             print("=" * 62)
             print("右下のバッジを同じコミットで更新する(RULES.md P-03)。軽微な変更も対象。")
 
-    # A-5: 入力ファイルを出力に数えていたので警告が構造的に出なかった。出力集合から除く。
+    # I-10(第3回): ここには「再生成し忘れたか」を推測する警告が2つあったが、
+    # どちらも構造的に空振りしていた。P-01は characters.html に PRERENDER という
+    # 文字列があるかを見ていたが、その文字列は常駐しているので入力自身が出力に数えられ、
+    # P-02は無関係な生成物1枚をステージするだけで満たせた。
+    # 推測をやめ、push のときに実際に再生成して差分を見る(tools/check_generated.py)。
     if [f for f in staged if f in DATA_FILES]:
-        gen = [f for f in staged if f.startswith(("busho/", "skill/")) or f == "sitemap.xml"]
-        pr = [f for f in staged if f.startswith("skills-") and f.endswith(".html")]
-        pr += [f for f in staged if f in ("characters.html", "characters-kyoku.html")
-               and "PRERENDER" in (run(["git", "show", ":" + f]).stdout or "")]
-        if not gen:
-            print("\n[注意] データを触ったが busho/ skill/ sitemap.xml に差分が無い。"
-                  " gen_detail_pages.py の実行漏れ(P-02)。")
-        if not pr:
-            print("[注意] prerender の出力ページに差分が無い。"
-                  " prerender.py の実行漏れ(P-01)。")
+        print("\n[注意] データを触った。prerender と gen_detail_pages を回すこと(P-01/P-02)。")
+        print("       回し忘れは push のときに検査される(tools/check_generated.py、約1分)。")
+
+    # I-9(第3回): 生成ページを手で書き換えても通った。
+    # 再生成の差分検査は「マーカーの間」しか見ないので、外側への追記は捕まえられない。
+    # 生成物だけが変わっていて、データも生成器も触っていないなら、手で書いたということ。
+    gen_only = [f for f in staged if f.startswith(("busho/", "skill/"))]
+    if gen_only:
+        cause = [f for f in staged
+                 if f in DATA_FILES or f.startswith("tools/") or f == "sitemap.xml"]
+        if not cause:
+            ng = True
+            print()
+            print("=" * 62)
+            print("[停止] 生成物だけが変わっている: %d件" % len(gen_only))
+            print("=" * 62)
+            for f in gen_only[:8]:
+                print("  " + f)
+            print()
+            print("busho/ と skill/ は生成物なので手で編集しない(P-02)。")
+            print("直すのはデータ側(characters*.html / skills.html)で、そのあと再生成する。")
 
     # A-2: MIDも必ず出す。「監査OK」で丸めない。
     print()
