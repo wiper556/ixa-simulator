@@ -103,6 +103,21 @@ def main():
         print("赤丸はユーザーが明言したときだけ(RULES.md D-14)。")
         print("会話中に該当武将の承認発言があった場合のみ、この行を残してよい。")
 
+    # P-03: attack-simulator.html を触ったら SIMULATOR_VERSION も同じコミットで上げる。
+    # git の差分でしか判定できないので監査ではなくここで見る。
+    sim = run(["git", "diff", "--cached", "-U0", "--", "attack-simulator.html"]).stdout
+    if sim.strip():
+        bumped = any(l.startswith("+") and "SIMULATOR_VERSION" in l
+                     for l in sim.split("\n"))
+        if not bumped:
+            ng = True
+            print()
+            print("=" * 62)
+            print("[停止] attack-simulator.html を変更しているが SIMULATOR_VERSION が上がっていない")
+            print("=" * 62)
+            print("右下のバッジ(const SIMULATOR_VERSION)を同じコミットで更新する(RULES.md P-03)。")
+            print("軽微な文言/CSS変更も対象。")
+
     # 再生成の実行漏れ(警告のみ。止めるほどの確度で判定できないため)
     st = run(["git", "diff", "--cached", "--name-only"]).stdout.split()
     touched = [f for f in st if f in DATA_FILES]

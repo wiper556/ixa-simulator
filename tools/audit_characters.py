@@ -75,13 +75,28 @@ def extract_array(path, varname):
 
 def load():
     p = lambda n: os.path.join(ROOT, n)
-    return {
+    d = {
         "generals": extract_array(p("characters.html"), "generals"),
         "kyokuGenerals": extract_array(p("characters-kyoku.html"), "kyokuGenerals"),
         "skills": extract_array(p("skills.html"), "skills"),
         "LINKED_SKILLS": extract_array(p("characters.html"), "LINKED_SKILLS"),
         "KK_LINKED_SKILLS": extract_array(p("characters-kyoku.html"), "KK_LINKED_SKILLS"),
     }
+    # 傑は少数だが sourceCharacters の db 判定(S-07)に要る
+    try:
+        d["ketsuGenerals"] = extract_array(p("characters-ketsu.html"), "ketsuGenerals")
+    except Exception:
+        d["ketsuGenerals"] = []
+    # シミュレーター側(P-04)。JSファイルなので生テキストで持つ
+    with io.open(p(os.path.join("assets", "js", "ixa-data.js")), encoding="utf-8") as f:
+        d["ixaDataSrc"] = f.read()
+    # 一覧ページ(S-06)。各ページが sourceCharacters を独自に複製している
+    d["listPages"] = {}
+    for n in sorted(os.listdir(ROOT)):
+        if n.startswith("skills-") and n.endswith(".html"):
+            with io.open(p(n), encoding="utf-8") as f:
+                d["listPages"][n] = f.read()
+    return d
 
 
 def status(g):
@@ -301,6 +316,195 @@ def main():
                 "「%s」の%sが未確認表示だが、調査ログの情報源が%d件(2件以上必要)。"
                 "調べてから埋めるか、当たった先を tools/reslog.py で記録する"
                 % (skill, "/".join(blanks), len(got)))
+
+    # ============================================================
+    # 2026-08-12追加分。docs/RULES.md で「機械○ / 監査✗」だった項目を埋める。
+    # いずれも同日に手作業で見つかった不備で、監査に無かったから見逃していた。
+    # ============================================================
+    RANKS_HI = ("S", "SS", "SSS", "X", "XX", "XXX")
+    all_g = D["generals"] + D["kyokuGenerals"] + D["ketsuGenerals"]
+    kyoku_no = {g["no"] for g in D["kyokuGenerals"]}
+    ketsu_no = {g["no"] for g in D["ketsuGenerals"]}
+
+    # S-01: S以上のスキルにページが無い(初期スキルだけでなく合成候補も対象)
+    # 2026-08-12、初期スキルしか数えず「0件」と誤報告した(違反S-01)。合成候補で31種漏れていた。
+    miss_pages = {}
+    for g in all_g:
+        det = g.get("skillDetail") or ""
+        ini = g.get("initialSkill")
+        if ini and ini not in skills and det.split("/")[0].strip() in RANKS_HI:
+            miss_pages.setdefault(ini, set()).add("初期:%s" % g["no"])
+        for row in g.get("synthesisTable") or []:
+            for nk, rk in (("skill", "rank"), ("afterSkill", "afterRank")):
+                nm, rk_ = row.get(nk), row.get(rk)
+                if nm and rk_ in RANKS_HI and nm not in skills:
+                    miss_pages.setdefault(nm, set()).add("候補:%s" % g["no"])
+    for nm, where in sorted(miss_pages.items()):
+        add("S以上でページ無し", "HIGH",
+            "「%s」のskills.htmlページが無い(%d箇所で参照: %s)"
+            % (nm, len(where), "/".join(sorted(where)[:4])))
+
+    # S-07: sourceCharacters の db 指定ミス(極なのに characters.html を指す等)
+    for page, src in [("skills.html", None)] + [(n, t) for n, t in D["listPages"].items()]:
+        text = src if src is not None else None
+        if text is None:
+            with io.open(os.path.join(ROOT, "skills.html"), encoding="utf-8") as f:
+                text = f.read()
+        for m in re.finditer(r'\{name:"([^"]*)", no:"(\d+)"([^{}]*)\}', text):
+            no, rest = m.group(2), m.group(3)
+            want = "kyoku" if no in kyoku_no else ("ketsu" if no in ketsu_no else None)
+            got = re.search(r'db:"([^"]*)"', rest)
+            got = got.group(1) if got else None
+            if got != want:
+                add("sourceCharactersのdb", "HIGH",
+                    "%s: %s No.%s の db が %s(正しくは %s)"
+                    % (page, m.group(1), no, got or "無し", want or "無し(通常DB)"))
+
+    # D-08 / V-01: trTable の段が飛んでいる
+    ORD = ["LV10", "TR1", "TR2", "TR3", "TR4", "TR5", "TR6"]
+    for g, src in [(x, "武将") for x in all_g] + [(s, "スキル") for s in D["skills"]]:
+        lv = [r.get("level") for r in (g.get("trTable") or [])]
+        idx = [ORD.index(x) for x in lv if x in ORD]
+        if idx and sorted(idx) != list(range(min(idx), max(idx) + 1)):
+            add("trTableの段飛び", "MID", "[%s] %s %s: %s"
+                % (src, g.get("name"), g.get("no") or "", "/".join(lv)))
+
+    # P-04: シミュレーター側(ixa-data.js)に cost が無い
+    body = D["ixaDataSrc"][D["ixaDataSrc"].index("const generalGrowthDB"):]
+    for m in re.finditer(r"^  \{ name:'([^']+)', no:'(\d+)'(.*)$", body, re.M):
+        no = m.group(2)
+        if len(no) == 5 and no[0] in "34":   # パラレルはコスト概念なし
+            continue
+        if not re.search(r"\bcost:\s*[\d.]+", m.group(3)):
+            add("シミュのcost未設定", "MID", "%s No.%s に cost が無い" % (m.group(1), no))
+
+    # F-07: effectShort の接頭辞の剥がし損ね
+    for g in all_g:
+        for row in g.get("synthesisTable") or []:
+            for k in ("effectShort", "afterEffectShort"):
+                v = row.get(k) or ""
+                if re.match(r"^[\d.]+%\s*/", v) or v.startswith("効果 ") or " / 効果 " in v:
+                    add("effectShortの接頭辞", "MID", "%s No.%s %s枠 %s: %s"
+                        % (g["name"], g["no"], row.get("slot"), k, v[:60]))
+
+    # S-06: 一覧ページ側の sourceCharacters の同期漏れ
+    for page, text in D["listPages"].items():
+        for m in re.finditer(r'\{name:"([^"]+)", skillPage:"[^"]*"', text):
+            nm = m.group(1)
+            if nm not in skills:
+                continue
+            seg = text[m.start():m.start() + 4000]
+            listed = {x for x in re.findall(r'no:"(\d+)"', seg.split("]}", 1)[0])}
+            main_ = {c.get("no") for c in (skills[nm].get("sourceCharacters") or [])}
+            missing = main_ - listed
+            if missing:
+                add("一覧の逆引き同期漏れ", "MID", "%s の「%s」に %s が無い(skills.html側にはある)"
+                    % (page, nm, "/".join(sorted(missing))[:60]))
+
+    # D-03: ドット付きランク
+    for g in all_g:
+        for k, v in (g.get("rankGrades") or {}).items():
+            if isinstance(v, str) and v.startswith("."):
+                add("ドット付きランク", "MID", "%s No.%s %s=%s" % (g["name"], g["no"], k, v))
+
+    # D-09: synthesisTable の行が5枠そろっていない
+    for g in all_g:
+        st = g.get("synthesisTable")
+        if st is not None and {r.get("slot") for r in st} - {"A", "B", "C", "S1", "S2"} == set() \
+                and len(st) not in (0, 5):
+            add("synthesisTableの行数", "MID", "%s No.%s: %d行(A/B/C/S1/S2の5行が標準)"
+                % (g["name"], g["no"], len(st)))
+
+    # D-10 / D-11: slot の独自語
+    for s in D["skills"]:
+        for c in (s.get("sourceCharacters") or []):
+            sl = c.get("slot") or ""
+            if sl and not re.fullmatch(r"(A|B|C|S1|S2|移植不可)(・(A|B|C|S1|S2))*(\(.*\))?", sl):
+                add("slotの独自語", "MID", "「%s」の %s No.%s: slot=%s"
+                    % (s["name"], c.get("name"), c.get("no"), sl))
+
+    # D-12: 武将名の表記ゆれ(半角括弧・半角【】まわり)
+    for g in all_g:
+        nm = g.get("name") or ""
+        if re.search(r"\(\d+\)|\(覇\)|\(復刻\)", nm):
+            add("武将名の表記ゆれ", "MID", "No.%s %s(全角（）/-復刻-/【覇】に統一)" % (g["no"], nm))
+
+    # D-13: データ内に生のHTMLタグ
+    for g, lbl in [(x, "武将") for x in all_g] + [(s, "スキル") for s in D["skills"]]:
+        for k in ("skillDetail", "effectSummary", "effect"):
+            v = g.get(k) or ""
+            if "<" in v and re.search(r"<\w+[^>]*>", v):
+                add("データ内のHTMLタグ", "MID", "[%s] %s の %s" % (lbl, g.get("name"), k))
+
+    # F-02: 修飾語なしの「模倣不可」が①より後ろにある
+    for g, lbl in [(x, "武将") for x in all_g] + [(s, "スキル") for s in D["skills"]]:
+        t = g.get("skillDetail") or g.get("effectSummary") or ""
+        if "模倣不可" not in t or "①" not in t:
+            continue
+        lines = t.split("\n")
+        solo = [i for i, l in enumerate(lines) if l.strip() == "模倣不可"]
+        first = next((i for i, l in enumerate(lines) if l.startswith("①")), None)
+        if solo and first is not None and min(solo) > first:
+            add("模倣不可の位置", "MID", "[%s] %s: 模倣不可が①より後ろ" % (lbl, g.get("name")))
+
+    # D-07: テンプレートのフィールドを省略していない(nullで明示する)
+    NEED = ["ch", "cost", "troop", "sub", "effect", "furigana", "illustrator",
+            "atkBase", "atkGrowth", "defBase", "defGrowth", "tacticsBase",
+            "tacticsGrowth", "lv0Troops", "rankGrades", "initialSkill", "skillDetail"]
+    for g in D["generals"] + D["kyokuGenerals"]:
+        lack = [k for k in NEED if k not in g]
+        if lack:
+            add("フィールドの省略", "MID", "%s No.%s: %s が無い(nullで明示する)"
+                % (g["name"], g["no"], "/".join(lack)))
+
+    # D-15: synthesisTable が埋まっていないのに黄丸/赤丸になっている
+    for g, src in targets:
+        st = g.get("synthesisTable") or []
+        if not st or all(not r.get("skill") for r in st):
+            add("合成表なしで検証済み", "HIGH", "[%s] %s No.%s: synthesisTable が空のまま"
+                % (status(g), g["name"], g["no"]))
+
+    # S-13: 初期スキルがA/B/C枠に載っているなら、その afterSkill は S1 のスキルと一致する
+    for g in all_g:
+        st = g.get("synthesisTable") or []
+        s1 = next((r.get("skill") for r in st if r.get("slot") == "S1"), None)
+        ini = g.get("initialSkill")
+        if not s1 or not ini:
+            continue
+        for r in st:
+            if r.get("slot") in ("A", "B", "C") and r.get("skill") == ini \
+                    and r.get("afterSkill") and r["afterSkill"] != s1:
+                add("移植後がS1と不一致", "MID",
+                    "%s No.%s %s枠: %s→%s だが S1 は %s(A-3-13)"
+                    % (g["name"], g["no"], r["slot"], ini, r["afterSkill"], s1))
+
+    # F-01: skillDetail に読点(、)を使わない
+    for g, lbl in [(x, "武将") for x in all_g] + [(s, "スキル") for s in D["skills"]]:
+        t = g.get("skillDetail") or g.get("effectSummary") or ""
+        if "、" in t:
+            add("skillDetailに読点", "MID", "[%s] %s: 「、」が%d個"
+                % (lbl, g.get("name"), t.count("、")))
+
+    # V-04: 横スクロールの根本原因になる min-width の欠落
+    css_path = os.path.join(ROOT, "assets", "css", "site.css")
+    if os.path.exists(css_path):
+        with io.open(css_path, encoding="utf-8") as f:
+            css = f.read()
+        m = re.search(r"\.site-main\{([^}]*)\}", css)
+        if m and "min-width:0" not in m.group(1).replace(" ", ""):
+            add("横スクロール対策の欠落", "HIGH",
+                ".site-main に min-width:0 が無い([[feedback_horizontal_scroll_root_cause]])")
+
+    # V-05: サイト上の出典言及
+    for n in sorted(os.listdir(ROOT)):
+        if not n.endswith(".html"):
+            continue
+        with io.open(os.path.join(ROOT, n), encoding="utf-8") as f:
+            html = f.read()
+        vis = re.sub(r"<script[\s\S]*?</script>|<!--[\s\S]*?-->", " ", html)
+        for kw in ("出典元", "出典:", "出典："):
+            if kw in vis:
+                add("サイト上の出典言及", "MID", "%s に「%s」" % (n, kw))
 
     # ---- 外部照合 ----
     ext = []

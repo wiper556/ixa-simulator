@@ -10,6 +10,36 @@
   "msg": "「舞蝶朧月」: 登録→月詠ノ覇威 / 武将側→黒飛燕剣"
  },
  {
+  "cat": "合成表なしで検証済み",
+  "sev": "HIGH",
+  "msg": "[赤丸] 南光坊天海 No.10063: synthesisTable が空のまま"
+ },
+ {
+  "cat": "合成表なしで検証済み",
+  "sev": "HIGH",
+  "msg": "[赤丸] 世良田二郎三郎 No.10065: synthesisTable が空のまま"
+ },
+ {
+  "cat": "合成表なしで検証済み",
+  "sev": "HIGH",
+  "msg": "[赤丸] 斎藤一【覇】 No.10066: synthesisTable が空のまま"
+ },
+ {
+  "cat": "合成表なしで検証済み",
+  "sev": "HIGH",
+  "msg": "[赤丸] 相楽左之助【覇】 No.10067: synthesisTable が空のまま"
+ },
+ {
+  "cat": "合成表なしで検証済み",
+  "sev": "HIGH",
+  "msg": "[赤丸] 長宗我部元親-復刻- No.10069: synthesisTable が空のまま"
+ },
+ {
+  "cat": "合成表なしで検証済み",
+  "sev": "HIGH",
+  "msg": "[青丸] 織田信長(2595) No.2595: synthesisTable が空のまま"
+ },
+ {
   "cat": "移植後の性能未設定",
   "sev": "HIGH",
   "msg": "[青丸] 佐竹義重(2437) No.2437 C枠: 轟閻 霹靂火→武神八幡陣 の after* が未設定"
@@ -685,6 +715,781 @@
   "msg": "「無双英傑」: 武将側では→覇王絶世"
  },
  {
+  "cat": "skillDetailに読点",
+  "sev": "MID",
+  "msg": "[武将] 上杉謙信（2）【覇】: 「、」が1個"
+ },
+ {
+  "cat": "skillDetailに読点",
+  "sev": "MID",
+  "msg": "[武将] 毛利輝元【覇】: 「、」が1個"
+ },
+ {
+  "cat": "skillDetailに読点",
+  "sev": "MID",
+  "msg": "[武将] 最上義光【覇】: 「、」が1個"
+ },
+ {
+  "cat": "skillDetailに読点",
+  "sev": "MID",
+  "msg": "[武将] 上杉景勝（6）: 「、」が1個"
+ },
+ {
+  "cat": "skillDetailに読点",
+  "sev": "MID",
+  "msg": "[武将] 本多忠勝（2）: 「、」が2個"
+ },
+ {
+  "cat": "skillDetailに読点",
+  "sev": "MID",
+  "msg": "[武将] 真田昌幸（5）: 「、」が1個"
+ },
+ {
+  "cat": "skillDetailに読点",
+  "sev": "MID",
+  "msg": "[武将] 福島正則（4）: 「、」が5個"
+ },
+ {
+  "cat": "skillDetailに読点",
+  "sev": "MID",
+  "msg": "[武将] 毛利輝元（5）: 「、」が1個"
+ },
+ {
+  "cat": "skillDetailに読点",
+  "sev": "MID",
+  "msg": "[武将] 小西行長（2）: 「、」が1個"
+ },
+ {
+  "cat": "skillDetailに読点",
+  "sev": "MID",
+  "msg": "[武将] 津軽為信: 「、」が1個"
+ },
+ {
+  "cat": "skillDetailに読点",
+  "sev": "MID",
+  "msg": "[武将] 織田信長（9）【覇】: 「、」が1個"
+ },
+ {
+  "cat": "skillDetailに読点",
+  "sev": "MID",
+  "msg": "[武将] 豊臣秀吉（5）【覇】: 「、」が2個"
+ },
+ {
+  "cat": "skillDetailに読点",
+  "sev": "MID",
+  "msg": "[武将] 長宗我部元親（7）: 「、」が1個"
+ },
+ {
+  "cat": "skillDetailに読点",
+  "sev": "MID",
+  "msg": "[武将] 武田信玄（6）: 「、」が2個"
+ },
+ {
+  "cat": "skillDetailに読点",
+  "sev": "MID",
+  "msg": "[武将] 上杉謙信（5）: 「、」が2個"
+ },
+ {
+  "cat": "skillDetailに読点",
+  "sev": "MID",
+  "msg": "[武将] 島津義弘（4）: 「、」が1個"
+ },
+ {
+  "cat": "skillDetailに読点",
+  "sev": "MID",
+  "msg": "[武将] 北条早雲（2）: 「、」が1個"
+ },
+ {
+  "cat": "skillDetailに読点",
+  "sev": "MID",
+  "msg": "[武将] 百地三太夫: 「、」が2個"
+ },
+ {
+  "cat": "skillDetailに読点",
+  "sev": "MID",
+  "msg": "[武将] 長尾景虎: 「、」が2個"
+ },
+ {
+  "cat": "skillDetailに読点",
+  "sev": "MID",
+  "msg": "[武将] 竹中半兵衛【覇】: 「、」が1個"
+ },
+ {
+  "cat": "skillDetailに読点",
+  "sev": "MID",
+  "msg": "[武将] 結城秀康: 「、」が1個"
+ },
+ {
+  "cat": "skillDetailに読点",
+  "sev": "MID",
+  "msg": "[武将] 荒木村重: 「、」が1個"
+ },
+ {
+  "cat": "skillDetailに読点",
+  "sev": "MID",
+  "msg": "[武将] 小早川隆景: 「、」が2個"
+ },
+ {
+  "cat": "skillDetailに読点",
+  "sev": "MID",
+  "msg": "[武将] 鍋島直茂: 「、」が1個"
+ },
+ {
+  "cat": "skillDetailに読点",
+  "sev": "MID",
+  "msg": "[武将] 上杉謙信-復刻-【覇】: 「、」が1個"
+ },
+ {
+  "cat": "skillDetailに読点",
+  "sev": "MID",
+  "msg": "[武将] 毛利輝元-復刻-【覇】: 「、」が1個"
+ },
+ {
+  "cat": "skillDetailに読点",
+  "sev": "MID",
+  "msg": "[武将] 最上義光-復刻-【覇】: 「、」が1個"
+ },
+ {
+  "cat": "skillDetailに読点",
+  "sev": "MID",
+  "msg": "[武将] 島津義久: 「、」が1個"
+ },
+ {
+  "cat": "skillDetailに読点",
+  "sev": "MID",
+  "msg": "[武将] 斎藤道三【覇】: 「、」が1個"
+ },
+ {
+  "cat": "skillDetailに読点",
+  "sev": "MID",
+  "msg": "[武将] 徳川秀忠: 「、」が1個"
+ },
+ {
+  "cat": "skillDetailに読点",
+  "sev": "MID",
+  "msg": "[武将] 浅井長政（4）: 「、」が1個"
+ },
+ {
+  "cat": "skillDetailに読点",
+  "sev": "MID",
+  "msg": "[武将] 長野業正: 「、」が1個"
+ },
+ {
+  "cat": "skillDetailに読点",
+  "sev": "MID",
+  "msg": "[武将] 村上武吉（2）: 「、」が1個"
+ },
+ {
+  "cat": "skillDetailに読点",
+  "sev": "MID",
+  "msg": "[武将] 藤堂高虎（2）: 「、」が1個"
+ },
+ {
+  "cat": "skillDetailに読点",
+  "sev": "MID",
+  "msg": "[武将] 高橋紹運: 「、」が1個"
+ },
+ {
+  "cat": "skillDetailに読点",
+  "sev": "MID",
+  "msg": "[武将] 細川幽斎(2427): 「、」が2個"
+ },
+ {
+  "cat": "skillDetailに読点",
+  "sev": "MID",
+  "msg": "[武将] 弥助(2430): 「、」が1個"
+ },
+ {
+  "cat": "skillDetailに読点",
+  "sev": "MID",
+  "msg": "[武将] 斎藤朝信(2439): 「、」が1個"
+ },
+ {
+  "cat": "skillDetailに読点",
+  "sev": "MID",
+  "msg": "[武将] 片倉景綱(2443): 「、」が1個"
+ },
+ {
+  "cat": "skillDetailに読点",
+  "sev": "MID",
+  "msg": "[武将] 佐々木小次郎(2450): 「、」が1個"
+ },
+ {
+  "cat": "skillDetailに読点",
+  "sev": "MID",
+  "msg": "[武将] 飯田覚兵衛: 「、」が1個"
+ },
+ {
+  "cat": "skillDetailに読点",
+  "sev": "MID",
+  "msg": "[武将] ヴァリニャーノ: 「、」が2個"
+ },
+ {
+  "cat": "skillDetailに読点",
+  "sev": "MID",
+  "msg": "[武将] 宇喜多秀家(2460): 「、」が1個"
+ },
+ {
+  "cat": "skillDetailに読点",
+  "sev": "MID",
+  "msg": "[武将] 小早川秀秋(2461): 「、」が1個"
+ },
+ {
+  "cat": "skillDetailに読点",
+  "sev": "MID",
+  "msg": "[武将] 由布雪下: 「、」が1個"
+ },
+ {
+  "cat": "skillDetailに読点",
+  "sev": "MID",
+  "msg": "[武将] 宮本武蔵(2444): 「、」が1個"
+ },
+ {
+  "cat": "skillDetailに読点",
+  "sev": "MID",
+  "msg": "[武将] お市(2558): 「、」が1個"
+ },
+ {
+  "cat": "skillDetailに読点",
+  "sev": "MID",
+  "msg": "[武将] 京極竜子(2559): 「、」が2個"
+ },
+ {
+  "cat": "skillDetailに読点",
+  "sev": "MID",
+  "msg": "[武将] 茶々(2574): 「、」が1個"
+ },
+ {
+  "cat": "skillDetailに読点",
+  "sev": "MID",
+  "msg": "[武将] 独眼竜政宗: 「、」が4個"
+ },
+ {
+  "cat": "skillDetailに読点",
+  "sev": "MID",
+  "msg": "[武将] 島津豊久(2593): 「、」が1個"
+ },
+ {
+  "cat": "skillDetailに読点",
+  "sev": "MID",
+  "msg": "[武将] 那須与一: 「、」が1個"
+ },
+ {
+  "cat": "skillDetailに読点",
+  "sev": "MID",
+  "msg": "[武将] 細川ガラシャ(2599): 「、」が1個"
+ },
+ {
+  "cat": "skillDetailに読点",
+  "sev": "MID",
+  "msg": "[武将] 伊達藤次郎: 「、」が1個"
+ },
+ {
+  "cat": "skillDetailに読点",
+  "sev": "MID",
+  "msg": "[武将] 緋村抜刀斎: 「、」が3個"
+ },
+ {
+  "cat": "skillDetailに読点",
+  "sev": "MID",
+  "msg": "[武将] 斎藤一: 「、」が2個"
+ },
+ {
+  "cat": "skillDetailに読点",
+  "sev": "MID",
+  "msg": "[武将] 瀬田宗次郎: 「、」が1個"
+ },
+ {
+  "cat": "skillDetailに読点",
+  "sev": "MID",
+  "msg": "[武将] 四乃森蒼紫: 「、」が1個"
+ },
+ {
+  "cat": "skillDetailに読点",
+  "sev": "MID",
+  "msg": "[武将] 巻町操: 「、」が1個"
+ },
+ {
+  "cat": "skillDetailに読点",
+  "sev": "MID",
+  "msg": "[武将] 明神弥彦: 「、」が1個"
+ },
+ {
+  "cat": "skillDetailに読点",
+  "sev": "MID",
+  "msg": "[武将] 駒形由美: 「、」が1個"
+ },
+ {
+  "cat": "skillDetailに読点",
+  "sev": "MID",
+  "msg": "[スキル] 覇道ノ泰斗: 「、」が1個"
+ },
+ {
+  "cat": "skillDetailに読点",
+  "sev": "MID",
+  "msg": "[スキル] 破軍騎行: 「、」が1個"
+ },
+ {
+  "cat": "skillDetailに読点",
+  "sev": "MID",
+  "msg": "[スキル] 雄武英略: 「、」が1個"
+ },
+ {
+  "cat": "skillDetailに読点",
+  "sev": "MID",
+  "msg": "[スキル] 不制于天地人: 「、」が1個"
+ },
+ {
+  "cat": "skillDetailに読点",
+  "sev": "MID",
+  "msg": "[スキル] 神機采配: 「、」が1個"
+ },
+ {
+  "cat": "skillDetailに読点",
+  "sev": "MID",
+  "msg": "[スキル] 虚実兵妙: 「、」が1個"
+ },
+ {
+  "cat": "skillDetailに読点",
+  "sev": "MID",
+  "msg": "[スキル] 月詠ノ覇威: 「、」が1個"
+ },
+ {
+  "cat": "skillDetailに読点",
+  "sev": "MID",
+  "msg": "[スキル] 武天蜻蛉切: 「、」が2個"
+ },
+ {
+  "cat": "skillDetailに読点",
+  "sev": "MID",
+  "msg": "[スキル] 封法大十字: 「、」が2個"
+ },
+ {
+  "cat": "skillDetailに読点",
+  "sev": "MID",
+  "msg": "[スキル] 黄泉醜女ノ屍兵: 「、」が1個"
+ },
+ {
+  "cat": "skillDetailに読点",
+  "sev": "MID",
+  "msg": "[スキル] 龍国ノ武威: 「、」が1個"
+ },
+ {
+  "cat": "skillDetailに読点",
+  "sev": "MID",
+  "msg": "[スキル] 轟渦ノ神将: 「、」が2個"
+ },
+ {
+  "cat": "skillDetailに読点",
+  "sev": "MID",
+  "msg": "[スキル] 破軍星 皇: 「、」が1個"
+ },
+ {
+  "cat": "skillDetailに読点",
+  "sev": "MID",
+  "msg": "[スキル] 天封界斬: 「、」が1個"
+ },
+ {
+  "cat": "skillDetailに読点",
+  "sev": "MID",
+  "msg": "[スキル] 義心江龍: 「、」が1個"
+ },
+ {
+  "cat": "skillDetailに読点",
+  "sev": "MID",
+  "msg": "[スキル] 斑将閃牙: 「、」が1個"
+ },
+ {
+  "cat": "skillDetailに読点",
+  "sev": "MID",
+  "msg": "[スキル] 天宇受売命: 「、」が1個"
+ },
+ {
+  "cat": "skillDetailに読点",
+  "sev": "MID",
+  "msg": "[スキル] 火槍猛進: 「、」が5個"
+ },
+ {
+  "cat": "skillDetailに読点",
+  "sev": "MID",
+  "msg": "[スキル] 文治ノ護剣: 「、」が1個"
+ },
+ {
+  "cat": "skillDetailに読点",
+  "sev": "MID",
+  "msg": "[スキル] 歴然ノ妙策: 「、」が2個"
+ },
+ {
+  "cat": "skillDetailに読点",
+  "sev": "MID",
+  "msg": "[スキル] 閃裂討鬼: 「、」が1個"
+ },
+ {
+  "cat": "skillDetailに読点",
+  "sev": "MID",
+  "msg": "[スキル] 飛将ノ武略: 「、」が1個"
+ },
+ {
+  "cat": "skillDetailに読点",
+  "sev": "MID",
+  "msg": "[スキル] 西覇冠軍: 「、」が1個"
+ },
+ {
+  "cat": "skillDetailに読点",
+  "sev": "MID",
+  "msg": "[スキル] 虎将鉄牙: 「、」が1個"
+ },
+ {
+  "cat": "skillDetailに読点",
+  "sev": "MID",
+  "msg": "[スキル] 雄飛新世: 「、」が1個"
+ },
+ {
+  "cat": "skillDetailに読点",
+  "sev": "MID",
+  "msg": "[スキル] 智絶千算: 「、」が1個"
+ },
+ {
+  "cat": "skillDetailに読点",
+  "sev": "MID",
+  "msg": "[スキル] 覇槍ノ武威: 「、」が1個"
+ },
+ {
+  "cat": "skillDetailに読点",
+  "sev": "MID",
+  "msg": "[スキル] 魔導禁鎖: 「、」が1個"
+ },
+ {
+  "cat": "skillDetailに読点",
+  "sev": "MID",
+  "msg": "[スキル] 西天ノ仁星: 「、」が2個"
+ },
+ {
+  "cat": "skillDetailに読点",
+  "sev": "MID",
+  "msg": "[スキル] 朝曇ノ明麗: 「、」が1個"
+ },
+ {
+  "cat": "skillDetailに読点",
+  "sev": "MID",
+  "msg": "[スキル] 神気乱龍: 「、」が1個"
+ },
+ {
+  "cat": "skillDetailに読点",
+  "sev": "MID",
+  "msg": "[スキル] 不撓六文銭: 「、」が1個"
+ },
+ {
+  "cat": "skillDetailに読点",
+  "sev": "MID",
+  "msg": "[スキル] 暘谷ノ人傑: 「、」が2個"
+ },
+ {
+  "cat": "skillDetailに読点",
+  "sev": "MID",
+  "msg": "[スキル] 蓋方軍慮: 「、」が1個"
+ },
+ {
+  "cat": "skillDetailに読点",
+  "sev": "MID",
+  "msg": "[スキル] 凛乎穿進: 「、」が2個"
+ },
+ {
+  "cat": "skillDetailに読点",
+  "sev": "MID",
+  "msg": "[スキル] 月下闇龍: 「、」が1個"
+ },
+ {
+  "cat": "skillDetailに読点",
+  "sev": "MID",
+  "msg": "[スキル] 巌流燕返し: 「、」が1個"
+ },
+ {
+  "cat": "skillDetailに読点",
+  "sev": "MID",
+  "msg": "[スキル] 牛鬼ノ攻城: 「、」が1個"
+ },
+ {
+  "cat": "skillDetailに読点",
+  "sev": "MID",
+  "msg": "[スキル] 聖光ノ遊星: 「、」が2個"
+ },
+ {
+  "cat": "skillDetailに読点",
+  "sev": "MID",
+  "msg": "[スキル] 三十五ノ兵法: 「、」が1個"
+ },
+ {
+  "cat": "skillDetailに読点",
+  "sev": "MID",
+  "msg": "[スキル] 魔界ノ美姫: 「、」が1個"
+ },
+ {
+  "cat": "skillDetailに読点",
+  "sev": "MID",
+  "msg": "[スキル] 聖女ノ恩寵: 「、」が2個"
+ },
+ {
+  "cat": "skillDetailに読点",
+  "sev": "MID",
+  "msg": "[スキル] 天華爛漫: 「、」が1個"
+ },
+ {
+  "cat": "skillDetailに読点",
+  "sev": "MID",
+  "msg": "[スキル] 飛竜星照: 「、」が4個"
+ },
+ {
+  "cat": "skillDetailに読点",
+  "sev": "MID",
+  "msg": "[スキル] 旋龍突渦: 「、」が1個"
+ },
+ {
+  "cat": "skillDetailに読点",
+  "sev": "MID",
+  "msg": "[スキル] 龍槌閃・惨: 「、」が3個"
+ },
+ {
+  "cat": "skillDetailに読点",
+  "sev": "MID",
+  "msg": "[スキル] 牙突: 「、」が2個"
+ },
+ {
+  "cat": "skillDetailに読点",
+  "sev": "MID",
+  "msg": "[スキル] 縮地: 「、」が1個"
+ },
+ {
+  "cat": "skillDetailに読点",
+  "sev": "MID",
+  "msg": "[スキル] 回天剣舞: 「、」が1個"
+ },
+ {
+  "cat": "skillDetailに読点",
+  "sev": "MID",
+  "msg": "[スキル] 貫殺飛苦無: 「、」が1個"
+ },
+ {
+  "cat": "skillDetailに読点",
+  "sev": "MID",
+  "msg": "[スキル] 見様見真似: 「、」が1個"
+ },
+ {
+  "cat": "skillDetailに読点",
+  "sev": "MID",
+  "msg": "[スキル] 虎王烈迅: 「、」が2個"
+ },
+ {
+  "cat": "skillDetailに読点",
+  "sev": "MID",
+  "msg": "[スキル] 冥国ノ双鎌: 「、」が1個"
+ },
+ {
+  "cat": "skillDetailに読点",
+  "sev": "MID",
+  "msg": "[スキル] 氷塊ノ夾撃: 「、」が1個"
+ },
+ {
+  "cat": "skillDetailに読点",
+  "sev": "MID",
+  "msg": "[スキル] 煙霞迷霧: 「、」が1個"
+ },
+ {
+  "cat": "skillDetailに読点",
+  "sev": "MID",
+  "msg": "[スキル] 神農医方: 「、」が3個"
+ },
+ {
+  "cat": "skillDetailに読点",
+  "sev": "MID",
+  "msg": "[スキル] 錘焔ノ空帯: 「、」が1個"
+ },
+ {
+  "cat": "skillDetailに読点",
+  "sev": "MID",
+  "msg": "[スキル] 錘焔ノ藍帯: 「、」が1個"
+ },
+ {
+  "cat": "skillDetailに読点",
+  "sev": "MID",
+  "msg": "[スキル] 飛幻忍術: 「、」が1個"
+ },
+ {
+  "cat": "フィールドの省略",
+  "sev": "MID",
+  "msg": "織田信秀【覇】 No.1310: furigana が無い(nullで明示する)"
+ },
+ {
+  "cat": "フィールドの省略",
+  "sev": "MID",
+  "msg": "斎藤道三（2）【覇】 No.1311: furigana が無い(nullで明示する)"
+ },
+ {
+  "cat": "フィールドの省略",
+  "sev": "MID",
+  "msg": "今川義元（3）【覇】 No.1312: furigana が無い(nullで明示する)"
+ },
+ {
+  "cat": "フィールドの省略",
+  "sev": "MID",
+  "msg": "松平清康（2） No.1313: furigana が無い(nullで明示する)"
+ },
+ {
+  "cat": "フィールドの省略",
+  "sev": "MID",
+  "msg": "大内義隆（3） No.1314: furigana が無い(nullで明示する)"
+ },
+ {
+  "cat": "フィールドの省略",
+  "sev": "MID",
+  "msg": "北条氏綱（2） No.1315: furigana が無い(nullで明示する)"
+ },
+ {
+  "cat": "フィールドの省略",
+  "sev": "MID",
+  "msg": "尼子経久（3） No.1316: furigana が無い(nullで明示する)"
+ },
+ {
+  "cat": "フィールドの省略",
+  "sev": "MID",
+  "msg": "細川晴元（2） No.1317: furigana が無い(nullで明示する)"
+ },
+ {
+  "cat": "フィールドの省略",
+  "sev": "MID",
+  "msg": "武田晴信（4） No.1318: furigana が無い(nullで明示する)"
+ },
+ {
+  "cat": "フィールドの省略",
+  "sev": "MID",
+  "msg": "朝倉宗滴 No.1319: furigana が無い(nullで明示する)"
+ },
+ {
+  "cat": "フィールドの省略",
+  "sev": "MID",
+  "msg": "伊達稙宗 No.1320: furigana が無い(nullで明示する)"
+ },
+ {
+  "cat": "フィールドの省略",
+  "sev": "MID",
+  "msg": "六角定頼 No.1321: furigana が無い(nullで明示する)"
+ },
+ {
+  "cat": "フィールドの省略",
+  "sev": "MID",
+  "msg": "南光坊天海 No.10063: furigana/illustrator/atkBase/atkGrowth/defBase/defGrowth/tacticsBase/tacticsGrowth/lv0Troops/rankGrades/initialSkill/skillDetail が無い(nullで明示する)"
+ },
+ {
+  "cat": "フィールドの省略",
+  "sev": "MID",
+  "msg": "世良田二郎三郎 No.10065: furigana/illustrator/atkBase/atkGrowth/defBase/defGrowth/tacticsBase/tacticsGrowth/lv0Troops/rankGrades/initialSkill/skillDetail が無い(nullで明示する)"
+ },
+ {
+  "cat": "フィールドの省略",
+  "sev": "MID",
+  "msg": "斎藤一【覇】 No.10066: furigana/illustrator/atkBase/atkGrowth/defBase/defGrowth/tacticsBase/tacticsGrowth/lv0Troops/rankGrades/initialSkill/skillDetail が無い(nullで明示する)"
+ },
+ {
+  "cat": "フィールドの省略",
+  "sev": "MID",
+  "msg": "相楽左之助【覇】 No.10067: furigana/illustrator/atkBase/atkGrowth/defBase/defGrowth/tacticsBase/tacticsGrowth/lv0Troops/rankGrades/initialSkill/skillDetail が無い(nullで明示する)"
+ },
+ {
+  "cat": "フィールドの省略",
+  "sev": "MID",
+  "msg": "長宗我部元親-復刻- No.10069: furigana/illustrator/atkBase/atkGrowth/defBase/defGrowth/tacticsBase/tacticsGrowth/lv0Troops/rankGrades/initialSkill/skillDetail が無い(nullで明示する)"
+ },
+ {
+  "cat": "フィールドの省略",
+  "sev": "MID",
+  "msg": "平塚為広 No.7002: illustrator が無い(nullで明示する)"
+ },
+ {
+  "cat": "フィールドの省略",
+  "sev": "MID",
+  "msg": "太原雪斎 No.7004: illustrator が無い(nullで明示する)"
+ },
+ {
+  "cat": "フィールドの省略",
+  "sev": "MID",
+  "msg": "池田輝政 No.7008: illustrator が無い(nullで明示する)"
+ },
+ {
+  "cat": "フィールドの省略",
+  "sev": "MID",
+  "msg": "北条氏照 No.7021: illustrator が無い(nullで明示する)"
+ },
+ {
+  "cat": "一覧の逆引き同期漏れ",
+  "sev": "MID",
+  "msg": "skills-hishou-def.html の「朝曇ノ明麗」に 2615 が無い(skills.html側にはある)"
+ },
+ {
+  "cat": "一覧の逆引き同期漏れ",
+  "sev": "MID",
+  "msg": "skills-leadermimic.html の「八幡神ノ威光」に 1320/2604 が無い(skills.html側にはある)"
+ },
+ {
+  "cat": "一覧の逆引き同期漏れ",
+  "sev": "MID",
+  "msg": "skills-leadermimic.html の「摩利支天ノ法」に 1321/2590/2608 が無い(skills.html側にはある)"
+ },
+ {
+  "cat": "一覧の逆引き同期漏れ",
+  "sev": "MID",
+  "msg": "skills-leadermimic.html の「刹那無影」に 1318/2604 が無い(skills.html側にはある)"
+ },
+ {
+  "cat": "一覧の逆引き同期漏れ",
+  "sev": "MID",
+  "msg": "skills-leadermimic.html の「転歌」に 2609/7005/7016 が無い(skills.html側にはある)"
+ },
+ {
+  "cat": "一覧の逆引き同期漏れ",
+  "sev": "MID",
+  "msg": "skills-leadermimic.html の「風狂幻術」に 2430 が無い(skills.html側にはある)"
+ },
+ {
+  "cat": "一覧の逆引き同期漏れ",
+  "sev": "MID",
+  "msg": "skills-leadermimic.html の「入来神舞」に 2558/2559/2609 が無い(skills.html側にはある)"
+ },
+ {
+  "cat": "一覧の逆引き同期漏れ",
+  "sev": "MID",
+  "msg": "skills-leadermimic.html の「瞬刻無影」に 2604/2855 が無い(skills.html側にはある)"
+ },
+ {
+  "cat": "一覧の逆引き同期漏れ",
+  "sev": "MID",
+  "msg": "skills-leadermimic.html の「飛蝶野分」に 7017 が無い(skills.html側にはある)"
+ },
+ {
+  "cat": "一覧の逆引き同期漏れ",
+  "sev": "MID",
+  "msg": "skills-takuetsu.html の「布刀玉ノ策」に 1315/2856 が無い(skills.html側にはある)"
+ },
+ {
+  "cat": "一覧の逆引き同期漏れ",
+  "sev": "MID",
+  "msg": "skills-takuetsu.html の「虚実兵妙」に 1316 が無い(skills.html側にはある)"
+ },
+ {
+  "cat": "一覧の逆引き同期漏れ",
+  "sev": "MID",
+  "msg": "skills-takuetsu.html の「勝旗勇躍」に 2397/7014/7019 が無い(skills.html側にはある)"
+ },
+ {
+  "cat": "一覧の逆引き同期漏れ",
+  "sev": "MID",
+  "msg": "skills-takuetsu.html の「月詠ノ覇威」に 1315/2582/2589/2590/2591/2607/2614/2856/7404 が無い(skills.html側にはある)"
+ },
+ {
+  "cat": "一覧の逆引き同期漏れ",
+  "sev": "MID",
+  "msg": "skills-takuetsu.html の「戦陣 吟詠」に 2397/2398/2612/2614/7005/7014/7016 が無い(skills.html側にはある)"
+ },
+ {
   "cat": "未計算式",
   "sev": "MID",
   "msg": "[赤丸] 荒木村重 No.1279 TR1: 槍弓砲器　確率 58% / 防御(8.7×防御参加武将数)%上昇 防御参加武将数が120以下の時、防御効果1.5倍(模倣不可)"
@@ -728,5 +1533,175 @@
   "cat": "未計算式",
   "sev": "MID",
   "msg": "[赤丸] 武田晴信 No.1205 LV10: 槍・弓・馬・器　確率 45% / 攻撃 5%×自軍攻撃武将数"
+ },
+ {
+  "cat": "武将名の表記ゆれ",
+  "sev": "MID",
+  "msg": "No.1206 長尾景虎(1206)(全角（）/-復刻-/【覇】に統一)"
+ },
+ {
+  "cat": "武将名の表記ゆれ",
+  "sev": "MID",
+  "msg": "No.1210 大友宗麟(1210)(全角（）/-復刻-/【覇】に統一)"
+ },
+ {
+  "cat": "武将名の表記ゆれ",
+  "sev": "MID",
+  "msg": "No.1218 真田昌幸(1218)(全角（）/-復刻-/【覇】に統一)"
+ },
+ {
+  "cat": "武将名の表記ゆれ",
+  "sev": "MID",
+  "msg": "No.1219 島津義久(1219)(全角（）/-復刻-/【覇】に統一)"
+ },
+ {
+  "cat": "武将名の表記ゆれ",
+  "sev": "MID",
+  "msg": "No.1215 竹中半兵衛(1215)(全角（）/-復刻-/【覇】に統一)"
+ },
+ {
+  "cat": "武将名の表記ゆれ",
+  "sev": "MID",
+  "msg": "No.2401 塚原卜伝(2401)(全角（）/-復刻-/【覇】に統一)"
+ },
+ {
+  "cat": "武将名の表記ゆれ",
+  "sev": "MID",
+  "msg": "No.2402 森可成(2402)(全角（）/-復刻-/【覇】に統一)"
+ },
+ {
+  "cat": "武将名の表記ゆれ",
+  "sev": "MID",
+  "msg": "No.2403 服部半蔵(2403)(全角（）/-復刻-/【覇】に統一)"
+ },
+ {
+  "cat": "武将名の表記ゆれ",
+  "sev": "MID",
+  "msg": "No.2412 高山右近(2412)(全角（）/-復刻-/【覇】に統一)"
+ },
+ {
+  "cat": "武将名の表記ゆれ",
+  "sev": "MID",
+  "msg": "No.2416 志賀親次(2416)(全角（）/-復刻-/【覇】に統一)"
+ },
+ {
+  "cat": "武将名の表記ゆれ",
+  "sev": "MID",
+  "msg": "No.2424 宇喜多秀家(2424)(全角（）/-復刻-/【覇】に統一)"
+ },
+ {
+  "cat": "武将名の表記ゆれ",
+  "sev": "MID",
+  "msg": "No.2427 細川幽斎(2427)(全角（）/-復刻-/【覇】に統一)"
+ },
+ {
+  "cat": "武将名の表記ゆれ",
+  "sev": "MID",
+  "msg": "No.2430 弥助(2430)(全角（）/-復刻-/【覇】に統一)"
+ },
+ {
+  "cat": "武将名の表記ゆれ",
+  "sev": "MID",
+  "msg": "No.2432 柳生十兵衛(2432)(全角（）/-復刻-/【覇】に統一)"
+ },
+ {
+  "cat": "武将名の表記ゆれ",
+  "sev": "MID",
+  "msg": "No.2437 佐竹義重(2437)(全角（）/-復刻-/【覇】に統一)"
+ },
+ {
+  "cat": "武将名の表記ゆれ",
+  "sev": "MID",
+  "msg": "No.2439 斎藤朝信(2439)(全角（）/-復刻-/【覇】に統一)"
+ },
+ {
+  "cat": "武将名の表記ゆれ",
+  "sev": "MID",
+  "msg": "No.2443 片倉景綱(2443)(全角（）/-復刻-/【覇】に統一)"
+ },
+ {
+  "cat": "武将名の表記ゆれ",
+  "sev": "MID",
+  "msg": "No.2450 佐々木小次郎(2450)(全角（）/-復刻-/【覇】に統一)"
+ },
+ {
+  "cat": "武将名の表記ゆれ",
+  "sev": "MID",
+  "msg": "No.2460 宇喜多秀家(2460)(全角（）/-復刻-/【覇】に統一)"
+ },
+ {
+  "cat": "武将名の表記ゆれ",
+  "sev": "MID",
+  "msg": "No.2461 小早川秀秋(2461)(全角（）/-復刻-/【覇】に統一)"
+ },
+ {
+  "cat": "武将名の表記ゆれ",
+  "sev": "MID",
+  "msg": "No.2440 井伊直政(2440)(全角（）/-復刻-/【覇】に統一)"
+ },
+ {
+  "cat": "武将名の表記ゆれ",
+  "sev": "MID",
+  "msg": "No.2444 宮本武蔵(2444)(全角（）/-復刻-/【覇】に統一)"
+ },
+ {
+  "cat": "武将名の表記ゆれ",
+  "sev": "MID",
+  "msg": "No.2448 武田勝頼(2448)(全角（）/-復刻-/【覇】に統一)"
+ },
+ {
+  "cat": "武将名の表記ゆれ",
+  "sev": "MID",
+  "msg": "No.2449 吉川元春(2449)(全角（）/-復刻-/【覇】に統一)"
+ },
+ {
+  "cat": "武将名の表記ゆれ",
+  "sev": "MID",
+  "msg": "No.2558 お市(2558)(全角（）/-復刻-/【覇】に統一)"
+ },
+ {
+  "cat": "武将名の表記ゆれ",
+  "sev": "MID",
+  "msg": "No.2559 京極竜子(2559)(全角（）/-復刻-/【覇】に統一)"
+ },
+ {
+  "cat": "武将名の表記ゆれ",
+  "sev": "MID",
+  "msg": "No.2573 木下藤吉郎(2573)(全角（）/-復刻-/【覇】に統一)"
+ },
+ {
+  "cat": "武将名の表記ゆれ",
+  "sev": "MID",
+  "msg": "No.2574 茶々(2574)(全角（）/-復刻-/【覇】に統一)"
+ },
+ {
+  "cat": "武将名の表記ゆれ",
+  "sev": "MID",
+  "msg": "No.2592 帰蝶(2592)(全角（）/-復刻-/【覇】に統一)"
+ },
+ {
+  "cat": "武将名の表記ゆれ",
+  "sev": "MID",
+  "msg": "No.2593 島津豊久(2593)(全角（）/-復刻-/【覇】に統一)"
+ },
+ {
+  "cat": "武将名の表記ゆれ",
+  "sev": "MID",
+  "msg": "No.2595 織田信長(2595)(全角（）/-復刻-/【覇】に統一)"
+ },
+ {
+  "cat": "武将名の表記ゆれ",
+  "sev": "MID",
+  "msg": "No.2599 細川ガラシャ(2599)(全角（）/-復刻-/【覇】に統一)"
+ },
+ {
+  "cat": "移植後がS1と不一致",
+  "sev": "MID",
+  "msg": "雑賀孫市（4） No.1220 A枠: 天棲八咫烏→天棲八咫烏 だが S1 は 十束ノ神域(A-3-13)"
+ },
+ {
+  "cat": "移植後がS1と不一致",
+  "sev": "MID",
+  "msg": "雑賀孫市（4） No.1220 B枠: 天棲八咫烏→天棲八咫烏 だが S1 は 十束ノ神域(A-3-13)"
  }
 ]
