@@ -14,17 +14,8 @@
         "hooks": [
           {
             "type": "command",
-            "command": "powershell -NoProfile -Command \"(New-Object Media.SoundPlayer 'C:\\Windows\\Media\\Windows Notify System Generic.wav').PlaySync()\""
-          }
-        ]
-      }
-    ],
-    "PermissionRequest": [
-      {
-        "hooks": [
-          {
-            "type": "command",
-            "command": "powershell -NoProfile -Command \"(New-Object Media.SoundPlayer 'C:\\Windows\\Media\\Windows Notify System Generic.wav').PlaySync()\""
+            "command": "powershell -NoProfile -Command \"(New-Object Media.SoundPlayer 'C:\\Windows\\Media\\Ring07.wav').PlaySync()\"",
+            "statusMessage": "完了通知音を再生中..."
           }
         ]
       }
@@ -34,7 +25,8 @@
         "hooks": [
           {
             "type": "command",
-            "command": "powershell -NoProfile -Command \"(New-Object Media.SoundPlayer 'C:\\Windows\\Media\\Windows Notify System Generic.wav').PlaySync()\""
+            "command": "powershell -NoProfile -Command \"(New-Object Media.SoundPlayer 'c:\\Users\\uesug\\ixa-simulator\\.claude\\sounds\\notify_bell.wav').PlaySync()\"",
+            "statusMessage": "確認の通知音を再生中..."
           }
         ]
       }
