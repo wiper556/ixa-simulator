@@ -65,81 +65,7 @@
   .past-kuji-list a:hover{background:var(--bg-panel-2);}
 
   .gacha-stage{margin:30px 0 10px;text-align:center;}
-  .gacha-buttons{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-bottom:10px;}
-  .sound-toggle-wrap{display:flex;justify-content:center;margin-bottom:20px;}
-  .sound-toggle{
-    display:inline-flex;align-items:center;gap:6px;cursor:pointer;
-    font-family:'Zen Kaku Gothic New',sans-serif;font-size:12px;color:var(--muted);
-    background:#fff;border:1px solid var(--line);border-radius:999px;padding:5px 14px;
-    transition:color .12s ease, border-color .12s ease;
-  }
-  .sound-toggle:hover{color:var(--gold-bright);border-color:var(--gold);}
-  .sound-toggle[aria-pressed="true"]{color:var(--vermillion-bright);border-color:var(--vermillion);}
-  .gacha-btn{
-    font-family:'Zen Kaku Gothic New',sans-serif;font-weight:700;font-size:14px;
-    padding:12px 26px;border-radius:8px;border:none;cursor:pointer;color:#fff;
-    background:linear-gradient(135deg, var(--vermillion), var(--gold));
-    box-shadow:0 3px 10px rgba(184,64,47,0.35);transition:transform .12s ease, filter .12s ease;
-  }
-  .gacha-btn:hover{filter:brightness(1.08);transform:translateY(-1px);}
-  .gacha-btn:active{transform:translateY(0);}
-  .gacha-btn.secondary{background:#fff;color:var(--muted);border:1px solid var(--line);box-shadow:none;}
-  .gacha-btn.secondary:hover{color:var(--vermillion-bright);border-color:var(--vermillion);}
-  .gacha-btn:disabled{opacity:.5;cursor:default;filter:none;transform:none;}
-
-  .bulk-draw-wrap{text-align:center;margin:-10px 0 22px;}
-  .gacha-btn.bulk{font-size:13px;padding:11px 22px;
-    background:linear-gradient(135deg,#3a3a3a,#000);color:#f0d98a;box-shadow:0 3px 10px rgba(0,0,0,.3);}
-  /* 解放ボタンはページ下部にあるため、上部に現れたことに気づけるよう一度光らせる */
-  .gacha-btn.bulk.just-unlocked{animation:bulkUnlockFlash 1.6s ease-out;}
-  @keyframes bulkUnlockFlash{
-    0%,100%{box-shadow:0 3px 10px rgba(0,0,0,.3);}
-    15%,45%{box-shadow:0 0 0 4px rgba(255,215,0,.6), 0 3px 14px rgba(0,0,0,.35);}
-    30%,60%{box-shadow:0 0 0 10px rgba(255,215,0,0), 0 3px 14px rgba(0,0,0,.35);}
-  }
-
-  .bulk-unlock-section{margin:26px 0 4px;padding-top:18px;border-top:1px dashed var(--line);text-align:center;}
-  .bulk-unlock-section .gacha-btn.secondary{font-size:12px;padding:9px 18px;}
-  .bulk-unlock-note{margin:9px auto 0;max-width:540px;font-size:11px;line-height:1.8;color:var(--muted);}
-  .bulk-unlock-done{margin:0;font-size:11.5px;color:var(--muted);}
-  @media (prefers-reduced-motion: reduce){ .gacha-btn.bulk.just-unlocked{animation:none;} }
-
-  /* 100連は通常のカード演出だと長すぎるので、小さめのカードを1枚ずつ出す。
-     既存の .tier-◯ .gacha-card-front のグラデーションをそのまま使い回すため、
-     カード内の構造は通常カードの表面と同じにしてある。 */
-  .gacha-cards.bulk-mode{gap:5px;align-content:flex-start;padding:6px;
-    max-height:min(56vh,400px);overflow-y:auto;}
-  .bulk-card{width:54px;height:76px;position:relative;flex:0 0 auto;
-    opacity:0;transform:scale(.55);animation:bulkPop .26s cubic-bezier(.2,1.5,.4,1) forwards;}
-  .bulk-card .gacha-card-front{transform:none;padding:3px;border-width:1.5px;border-radius:7px;}
-  .bulk-card .tier-label{font-size:14px;}
-  .bulk-card .tier-charname{font-size:7.5px;margin-top:4px;line-height:1.2;}
-  .bulk-card.bulk-rare{animation:bulkPopRare .42s cubic-bezier(.2,1.5,.4,1) forwards;}
-  @keyframes bulkPop{to{opacity:1;transform:scale(1);}}
-  @keyframes bulkPopRare{
-    0%{opacity:0;transform:scale(.4) rotate(-8deg);}
-    55%{opacity:1;transform:scale(1.22) rotate(3deg);}
-    100%{opacity:1;transform:scale(1) rotate(0);}
-  }
-  @media (prefers-reduced-motion: reduce){
-    .bulk-card,.bulk-card.bulk-rare{animation-duration:.01ms;opacity:1;transform:none;}
-  }
-
-  .bulk-summary{width:100%;text-align:center;padding:14px 12px;margin-top:14px;border-radius:10px;
-    background:var(--bg-panel-2);border:1px solid var(--line);}
-  .bulk-summary-head{font-family:'Noto Serif JP',serif;font-weight:700;font-size:14px;margin-bottom:12px;}
-  .bulk-summary-grid{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;}
-  .bulk-sum-cell{display:inline-flex;align-items:baseline;gap:6px;padding:7px 14px;border-radius:7px;
-    font-size:15px;font-weight:700;font-variant-numeric:tabular-nums;}
-  .bulk-sum-cell b{font-family:'Noto Serif JP',serif;font-size:12px;}
-  .bulk-sum-cell.tier-上{background:linear-gradient(135deg,#fff6a0,#ffd400);color:#5b4400;}
-  .bulk-sum-cell.tier-特{background:linear-gradient(135deg,#ff6b5c,#d0332a);color:#fff;}
-  .bulk-sum-cell.tier-極{background:linear-gradient(135deg,#3a3a3a,#000);color:#f0d98a;}
-  .bulk-sum-cell.tier-天{background:linear-gradient(135deg,#fff,#dcdcdc);color:#2b2f38;border:1px solid #cfcfcf;}
-  .bulk-sum-cell.tier-傑{background:linear-gradient(135deg,#fff6c9,#ffd700);color:#5b3d00;}
-  .bulk-summary-para{margin-top:11px;font-weight:700;font-size:13px;color:var(--vermillion-bright);}
-  .bulk-summary-note{margin-top:10px;font-size:11px;color:var(--muted);}
-
+  .gacha-buttons{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-bottom:24px;}
   .gacha-btn-image{background:none;border:none;padding:0;cursor:pointer;line-height:0;transition:transform .12s ease, filter .12s ease;}
   /* くじ札は縦横とも2倍(88px→176px)。引いた武将カード(.gacha-card)の大きさは変えない。 */
   /* 2枚を横並びのまま収めたいので、狭い画面では画面幅に追従させる(375px幅でも折り返さない) */
@@ -435,13 +361,6 @@
           <img src="assets/img/gacha-btn-ten.png" alt="10連を引く">
         </button>
       </div>
-      <!-- 効果音は既定オフ。いきなり音が鳴ると驚くため、押して有効にしてもらう方式にしている。
-           設定はlocalStorageに残るので次回以降は開いた時点から有効。 -->
-      <div class="sound-toggle-wrap">
-        <button id="soundToggleBtn" class="sound-toggle" aria-pressed="false">
-          <span class="sound-icon" aria-hidden="true">🔈</span><span class="sound-text">効果音オフ</span>
-        </button>
-      </div>
       <!-- 既定では隠しておき、ページ下部(コメント欄の下)の解放ボタンを押した時だけ出す。
            単発・10連の隣に常設すると、そちらを引く人が減ってしまうため。 -->
       <div class="bulk-draw-wrap" id="bulkDrawWrap" style="display:none;">
@@ -555,7 +474,7 @@
   <div class="sim-version-badge" id="simVersionBadge">v-</div>
 
 <script>
-  const GACHA_VERSION = 'v2026-08-12.6';
+  const GACHA_VERSION = 'v2026-08-12.7';
   document.addEventListener('DOMContentLoaded', ()=>{
     const badge = document.getElementById('simVersionBadge');
     if(badge) badge.textContent = GACHA_VERSION;
@@ -1262,239 +1181,6 @@
     });
   }
 
-  // ============ 効果音(Web Audio APIで合成・音声ファイル無し) ============
-  // 音声ファイルを置かずにその場で波形を作っているので、リポジトリが重くならず読み込み待ちも無い。
-  // ブラウザはユーザー操作前の音出しを禁止しているため、AudioContextはトグルを押した時に初めて作る。
-  //
-  // 【2026-08-12 作り直し】最初の版は「ノイズ1本+サイン波1本・残響なし」で薄い音だった。
-  // 安っぽく聞こえる原因はほぼ残響の有無だったので、合成インパルス応答のリバーブを通し、
-  // さらに音を複数の層に分け、鳴るたびに音程と定位を少しずつ変えて機械的な繰り返しを避けている。
-  const SOUND_KEY = 'ixaGachaSoundOn';
-  let soundOn = false;
-  let audioCtx = null;
-  let masterBus = null;   // 全部の音をここに集める(コンプレッサーで音割れを防ぐ)
-  let reverbSend = null;  // ここに送るとリバーブがかかる
-
-  function ensureAudio(){
-    if(audioCtx) return audioCtx;
-    const AC = window.AudioContext || window.webkitAudioContext;
-    if(!AC) return null;
-    audioCtx = new AC();
-
-    const comp = audioCtx.createDynamicsCompressor();
-    comp.threshold.value = -14;
-    comp.knee.value = 22;
-    comp.ratio.value = 5;
-    comp.attack.value = 0.004;
-    comp.release.value = 0.22;
-    masterBus = audioCtx.createGain();
-    masterBus.gain.value = 1.6; // 実測ピークが低すぎたので上げた(超過分はコンプレッサーが抑える)
-    masterBus.connect(comp).connect(audioCtx.destination);
-
-    // リバーブ用のインパルス応答をその場で作る(指数減衰させたステレオノイズ)。
-    // 前半だけ少し密度を上げると、平坦なノイズより初期反射らしく聞こえる。
-    const sec = 1.8, sr = audioCtx.sampleRate;
-    const len = Math.floor(sr * sec);
-    const ir = audioCtx.createBuffer(2, len, sr);
-    for(let ch=0; ch<2; ch++){
-      const d = ir.getChannelData(ch);
-      for(let k=0; k<len; k++){
-        const t = k / len;
-        const early = t < 0.08 ? 1.6 : 1.0;
-        d[k] = (Math.random() * 2 - 1) * Math.pow(1 - t, 2.6) * early;
-      }
-    }
-    const conv = audioCtx.createConvolver();
-    conv.buffer = ir;
-    const wet = audioCtx.createGain();
-    wet.gain.value = 0.9;
-    reverbSend = audioCtx.createGain();
-    reverbSend.gain.value = 1;
-    reverbSend.connect(conv).connect(wet).connect(masterBus);
-    return audioCtx;
-  }
-
-  // ホワイトノイズのバッファ(擦れ音・弾ける音の素材)。使い回すので1回だけ作る。
-  let noiseBuf = null;
-  function getNoise(ctx){
-    if(noiseBuf) return noiseBuf;
-    const len = Math.floor(ctx.sampleRate * 2);
-    noiseBuf = ctx.createBuffer(1, len, ctx.sampleRate);
-    const d = noiseBuf.getChannelData(0);
-    for(let i=0; i<len; i++) d[i] = Math.random() * 2 - 1;
-    return noiseBuf;
-  }
-
-  // 1つの音の出口。pan(定位)とwet(リバーブに送る量)をまとめて面倒みる。
-  function makeVoice(ctx, pan, wet){
-    const g = ctx.createGain();
-    const out = ctx.createStereoPanner ? ctx.createStereoPanner() : null;
-    if(out){ out.pan.value = pan; g.connect(out); out.connect(masterBus); }
-    else { g.connect(masterBus); }
-    if(wet > 0){
-      const sendGain = ctx.createGain();
-      sendGain.gain.value = wet;
-      g.connect(sendGain).connect(reverbSend);
-    }
-    return g;
-  }
-
-  function noiseSource(ctx, at, dur){
-    const src = ctx.createBufferSource();
-    src.buffer = getNoise(ctx);
-    src.playbackRate.value = 0.85 + Math.random() * 0.3; // 毎回わずかに音色を変える
-    src.loop = true;
-    src.loopEnd = 2;
-    src.start(at, Math.random() * 1.5);
-    src.stop(at + dur);
-    return src;
-  }
-
-  const rnd = (a, b) => a + Math.random() * (b - a);
-
-  // ---- カードをめくる音 ----
-  // 「布が擦れるシュッ」と「指から離れるパチッ」の2層。同じ音の連発に聞こえないよう
-  // 掃引先の周波数と定位を毎回振っている。
-  function playFlipSound(){
-    if(!soundOn) return;
-    const ctx = ensureAudio();
-    if(!ctx) return;
-    const t = ctx.currentTime + 0.005;
-    const pan = rnd(-0.35, 0.35);
-
-    // 層1: 擦れ。バンドパスを下から上へ掃引する
-    const swishDur = rnd(0.15, 0.2);
-    const s1 = noiseSource(ctx, t, swishDur + 0.05);
-    const bp = ctx.createBiquadFilter();
-    bp.type = 'bandpass';
-    bp.Q.value = 1.1;
-    bp.frequency.setValueAtTime(rnd(700, 900), t);
-    bp.frequency.exponentialRampToValueAtTime(rnd(2600, 3400), t + swishDur * 0.65);
-    bp.frequency.exponentialRampToValueAtTime(rnd(1100, 1500), t + swishDur);
-    const g1 = makeVoice(ctx, pan, 0.16);
-    g1.gain.setValueAtTime(0.0001, t);
-    g1.gain.exponentialRampToValueAtTime(0.17, t + 0.018);
-    g1.gain.exponentialRampToValueAtTime(0.0001, t + swishDur);
-    s1.connect(bp).connect(g1);
-
-    // 層2: 弾ける瞬間。擦りの終わり際に短く重ねる
-    const snapAt = t + swishDur * 0.72;
-    const s2 = noiseSource(ctx, snapAt, 0.05);
-    const hp = ctx.createBiquadFilter();
-    hp.type = 'highpass';
-    hp.frequency.value = rnd(3800, 5600);
-    const g2 = makeVoice(ctx, pan, 0.22);
-    g2.gain.setValueAtTime(0.0001, snapAt);
-    g2.gain.exponentialRampToValueAtTime(0.13, snapAt + 0.005);
-    g2.gain.exponentialRampToValueAtTime(0.0001, snapAt + 0.045);
-    s2.connect(hp).connect(g2);
-
-    // 層3: カードが台に当たる低い成分。無いと軽すぎる
-    const body = ctx.createOscillator();
-    body.type = 'triangle';
-    body.frequency.setValueAtTime(rnd(220, 280), snapAt);
-    body.frequency.exponentialRampToValueAtTime(rnd(90, 120), snapAt + 0.09);
-    const g3 = makeVoice(ctx, pan, 0.1);
-    g3.gain.setValueAtTime(0.0001, snapAt);
-    g3.gain.exponentialRampToValueAtTime(0.07, snapAt + 0.008);
-    g3.gain.exponentialRampToValueAtTime(0.0001, snapAt + 0.1);
-    body.connect(g3);
-    body.start(snapAt);
-    body.stop(snapAt + 0.12);
-  }
-
-  // ---- 天・傑が出たときの花火 ----
-  // 打ち上げのヒュー → 開くドン(サブ+胴鳴り) → パチパチと散る粒、の3段構え。
-  // 粒はリバーブ多めにして遠くで散っているように聞かせる。
-  function playFireworkSound(){
-    if(!soundOn) return;
-    const ctx = ensureAudio();
-    if(!ctx) return;
-    const t = ctx.currentTime + 0.01;
-    const boomAt = t + 0.3;
-
-    // 打ち上げのヒュー(細く高い音を上げていく)
-    const whistle = ctx.createOscillator();
-    whistle.type = 'triangle';
-    whistle.frequency.setValueAtTime(380, t);
-    whistle.frequency.exponentialRampToValueAtTime(1500, boomAt);
-    const wg = makeVoice(ctx, rnd(-0.15, 0.15), 0.25);
-    wg.gain.setValueAtTime(0.0001, t);
-    wg.gain.exponentialRampToValueAtTime(0.045, t + 0.06);
-    wg.gain.exponentialRampToValueAtTime(0.0001, boomAt + 0.02);
-    whistle.connect(wg);
-    whistle.start(t);
-    whistle.stop(boomAt + 0.05);
-
-    // 開いた瞬間の低い衝撃(サイン波を一気に下げる)
-    const sub = ctx.createOscillator();
-    sub.type = 'sine';
-    sub.frequency.setValueAtTime(150, boomAt);
-    sub.frequency.exponentialRampToValueAtTime(32, boomAt + 0.55);
-    const sg = makeVoice(ctx, 0, 0.3);
-    sg.gain.setValueAtTime(0.0001, boomAt);
-    sg.gain.exponentialRampToValueAtTime(0.42, boomAt + 0.015);
-    sg.gain.exponentialRampToValueAtTime(0.0001, boomAt + 0.62);
-    sub.connect(sg);
-    sub.start(boomAt);
-    sub.stop(boomAt + 0.65);
-
-    // 胴鳴り(ローパスを閉じていくノイズ)。サブだけだと「ボッ」で終わるのでこれで厚みを出す
-    const bodyNoise = noiseSource(ctx, boomAt, 0.42);
-    const lp = ctx.createBiquadFilter();
-    lp.type = 'lowpass';
-    lp.frequency.setValueAtTime(1100, boomAt);
-    lp.frequency.exponentialRampToValueAtTime(160, boomAt + 0.4);
-    lp.Q.value = 0.7;
-    const bg = makeVoice(ctx, 0, 0.45);
-    bg.gain.setValueAtTime(0.0001, boomAt);
-    bg.gain.exponentialRampToValueAtTime(0.3, boomAt + 0.012);
-    bg.gain.exponentialRampToValueAtTime(0.0001, boomAt + 0.42);
-    bodyNoise.connect(lp).connect(bg);
-
-    // 散る粒。左右にばらけさせ、後半ほど小さく・高くして遠ざかる感じにする
-    const grains = 30;
-    for(let i=0; i<grains; i++){
-      const prog = i / grains;
-      const at = boomAt + 0.04 + Math.pow(Math.random(), 0.7) * 1.15;
-      const s = noiseSource(ctx, at, 0.09);
-      const f = ctx.createBiquadFilter();
-      f.type = 'bandpass';
-      f.frequency.value = rnd(2200, 7000);
-      f.Q.value = rnd(1.5, 4);
-      const g = makeVoice(ctx, rnd(-0.8, 0.8), 0.55);
-      const vol = rnd(0.05, 0.11) * (1 - prog * 0.55);
-      g.gain.setValueAtTime(0.0001, at);
-      g.gain.exponentialRampToValueAtTime(vol, at + 0.004);
-      g.gain.exponentialRampToValueAtTime(0.0001, at + rnd(0.05, 0.1));
-      s.connect(f).connect(g);
-    }
-  }
-
-  function applySoundToggleUi(btn){
-    btn.setAttribute('aria-pressed', soundOn ? 'true' : 'false');
-    btn.querySelector('.sound-icon').textContent = soundOn ? '🔊' : '🔈';
-    btn.querySelector('.sound-text').textContent = soundOn ? '効果音オン' : '効果音オフ';
-  }
-
-  (function initSound(){
-    const btn = document.getElementById('soundToggleBtn');
-    if(!btn) return;
-    try{ soundOn = localStorage.getItem(SOUND_KEY) === '1'; }catch(e){}
-    applySoundToggleUi(btn);
-    btn.addEventListener('click', ()=>{
-      soundOn = !soundOn;
-      try{ localStorage.setItem(SOUND_KEY, soundOn ? '1' : '0'); }catch(e){}
-      applySoundToggleUi(btn);
-      if(soundOn){
-        // クリックという操作の中でAudioContextを作らないと、ブラウザにsuspendedのまま止められる
-        const ctx = ensureAudio();
-        if(ctx && ctx.state === 'suspended') ctx.resume();
-        playFlipSound(); // オンにしたことが分かるように1回鳴らす
-      }
-    });
-  })();
-
   function triggerLandedBurst(card, tier){
     const front = card.querySelector('.gacha-card-front');
     const fx = document.createElement('div');
@@ -1503,7 +1189,6 @@
     setTimeout(()=>{ fx.remove(); }, BURST_MS + 50);
 
     if(tier === '天' || tier === '傑'){
-      playFireworkSound(); // 火花が散るのと同じタイミングで鳴らす
       const isEnhanced = tier === '傑' || card.classList.contains('ten-parallel');
       const sparks = generateSparkPositions(isEnhanced ? 8 : 5);
       sparks.forEach(pos=>{
@@ -1576,7 +1261,6 @@
       setTimeout(()=>{
         card.classList.add('flipped');
         if(tier !== '上') card.classList.add('reveal-shine');
-        playFlipSound();
       }, triggerAt);
 
       let finishAt = triggerAt + FLIP_MS;
