@@ -2239,11 +2239,13 @@
       //  ixawikiは「黒飛燕剣[S] S1候補」と明記しており、評価コメントでも黒飛燕剣がS2枠である旨が語られている。
       //  ixawiki側を採用したまま据え置く(監査ツールがixanary基準で不一致を出すが誤修正しないこと)。
       synthesisTable:[
-        {slot:"A", skill:"舞蝶朧月", rank:"S", afterSkill:"黒飛燕剣", afterRank:"S", target:"部隊長", rate:"+50%", effectShort:"部隊長の初期スキルを模倣(卓越:追加確率20%で1.25倍にして模倣)", afterTarget:"部隊長", afterRate:"+50%", afterEffectShort:"飛翔4(所属部隊の部隊長が持つ模倣可能な初期スキルを模倣する卓越追加確率50%で通常攻撃／防御効果を1.2倍して模倣する)"},
-        {slot:"B", skill:"舞蝶朧月", rank:"S", afterSkill:"黒飛燕剣", afterRank:"S", target:"部隊長", rate:"+50%", effectShort:"部隊長の初期スキルを模倣(卓越:追加確率20%で1.25倍にして模倣)", afterTarget:"部隊長", afterRate:"+50%", afterEffectShort:"飛翔4(所属部隊の部隊長が持つ模倣可能な初期スキルを模倣する卓越追加確率50%で通常攻撃／防御効果を1.2倍して模倣する)"},
-        {slot:"C", skill:"傾国ノ艶姫", rank:"S", afterSkill:"摩利支天ノ法", afterRank:"SSS", target:"部隊長", rate:"+60%", effectShort:"部隊長の初期スキルを模倣(卓越:追加確率30%で1.2倍にして模倣)", afterTarget:"部隊長", afterRate:"+70%", afterEffectShort:"模倣倍率1.25倍"},
-        {slot:"S1", skill:"黒飛燕剣", rank:"S", afterSkill:"傾国ノ艶姫", afterRank:"S", target:"部隊長", rate:"+50%", effectShort:"飛翔4+部隊長の初期スキルを模倣(卓越:追加確率50%で1.2倍にして模倣)", afterTarget:"部隊長", afterRate:"+60%", afterEffectShort:"所属部隊の部隊長が持つ模倣可能な初期スキルを模倣する(卓越・追加確率30%で通常攻撃／防御効果を1.2倍して模倣する)"},
-        {slot:"S2", skill:"黒飛燕剣", rank:"S", afterSkill:"傾国ノ艶姫", afterRank:"S", target:"部隊長", rate:"+50%", effectShort:"飛翔4+部隊長の初期スキルを模倣(卓越:追加確率50%で1.2倍にして模倣)", afterTarget:"部隊長", afterRate:"+60%", afterEffectShort:"所属部隊の部隊長が持つ模倣可能な初期スキルを模倣する(卓越・追加確率30%で通常攻撃／防御効果を1.2倍して模倣する)"}
+        // 2026-08-13訂正: B以降が1枠ずつずれていた。
+        // ixanary.com/skills/舞蝶朧月(No.2592のカード)の合成テーブルで1次/2次を確認。
+        {slot:"A", skill:"舞蝶朧月", rank:"S", afterSkill:"月詠ノ覇威", afterRank:"SS", target:"部隊長", rate:"+50%", effectShort:"部隊長の初期スキルを模倣(卓越:追加確率20%で1.25倍にして模倣)", afterTarget:"全", afterRate:"+100%", afterEffectShort:"攻撃344%上昇+防御344%上昇+自軍全武将全スキルの卓越確率に加算(自軍内重複上限2・模倣不可)"},
+        {slot:"B", skill:"傾国ノ艶姫", rank:"S", afterSkill:"摩利支天ノ法", afterRank:"SSS", target:"部隊長", rate:"+60%", effectShort:"部隊長の初期スキルを模倣(卓越:追加確率30%で1.2倍にして模倣)", afterTarget:"部隊長", afterRate:"+70%", afterEffectShort:"部隊長の初期スキルを模倣(1.25倍に強化して模倣)"},
+        {slot:"C", skill:"黒飛燕剣", rank:"S", afterSkill:"傾国ノ艶姫", afterRank:"S", target:"部隊長", rate:"+50%", effectShort:"飛翔4+部隊長の初期スキルを模倣(卓越:追加確率50%で1.2倍にして模倣)", afterTarget:"部隊長", afterRate:"+60%", afterEffectShort:"部隊長の初期スキルを模倣(卓越:追加確率30%で1.2倍にして模倣)"},
+        {slot:"S1", skill:"月詠ノ覇威", rank:"SS", afterSkill:"月詠ノ覇威", afterRank:"SS", target:"全", rate:"+100%", effectShort:"攻撃344%上昇+防御344%上昇+自軍全武将全スキルの卓越確率に加算(自軍内重複上限2・模倣不可)", afterTarget:"全", afterRate:"+100%", afterEffectShort:"攻撃344%上昇+防御344%上昇+自軍全武将全スキルの卓越確率に加算(自軍内重複上限2・模倣不可)"},
+        {slot:"S2", skill:"黒飛燕剣", rank:"S", afterSkill:"傾国ノ艶姫", afterRank:"S", target:"部隊長", rate:"+50%", effectShort:"飛翔4+部隊長の初期スキルを模倣(卓越:追加確率50%で1.2倍にして模倣)", afterTarget:"部隊長", afterRate:"+60%", afterEffectShort:"部隊長の初期スキルを模倣(卓越:追加確率30%で1.2倍にして模倣)"}
       ]},
 
     {name:"島津豊久(2593)", no:"2593", ch:"未確認", cost:4, troop:"槍馬器攻", sub:"",
@@ -2391,8 +2393,8 @@
         {slot:"A", skill:"乱世ノ歸人", rank:"A", afterSkill:"入来神舞", afterRank:"S", target:"部隊長", rate:"+50%", effectShort:"部隊長の初期スキルを模倣(卓越:追加確率30%で1.2倍にして模倣)", afterTarget:"部隊長", afterRate:"+55%", afterEffectShort:"部隊長の初期スキルを1.1倍に強化して模倣(TR別データは未確認)"},
         {slot:"B", skill:"黒飛燕剣", rank:"S", afterSkill:"傾国ノ艶姫", afterRank:"S", target:"部隊長", rate:"+50%", effectShort:"飛翔4+部隊長の初期スキルを模倣(卓越:追加確率50%で1.2倍にして模倣)", afterTarget:"部隊長", afterRate:"+60%", afterEffectShort:"所属部隊の部隊長が持つ模倣可能な初期スキルを模倣する(卓越・追加確率30%で通常攻撃／防御効果を1.2倍して模倣する)"},
         {slot:"C", skill:"潔花咲然", rank:"S", afterSkill:"舞蝶朧月", afterRank:"S", target:"部隊長", rate:"+45%", effectShort:"部隊長の初期スキルを模倣(卓越:追加確率30%で1.15倍にして模倣・帰還2分)", afterTarget:"部隊長", afterRate:"+50%", afterEffectShort:"卓越追加確率20%・1.25倍"},
-        {slot:"S1", skill:"舞蝶朧月", rank:"S", afterSkill:"黒飛燕剣", afterRank:"S", target:"部隊長", rate:"+50%", effectShort:"部隊長の初期スキルを模倣(卓越:追加確率20%で1.25倍にして模倣)", afterTarget:"部隊長", afterRate:"+50%", afterEffectShort:"飛翔4(所属部隊の部隊長が持つ模倣可能な初期スキルを模倣する卓越追加確率50%で通常攻撃／防御効果を1.2倍して模倣する)"},
-        {slot:"S2", skill:"舞蝶朧月", rank:"S", afterSkill:"黒飛燕剣", afterRank:"S", target:"部隊長", rate:"+50%", effectShort:"部隊長の初期スキルを模倣(卓越:追加確率20%で1.25倍にして模倣)", afterTarget:"部隊長", afterRate:"+50%", afterEffectShort:"飛翔4(所属部隊の部隊長が持つ模倣可能な初期スキルを模倣する卓越追加確率50%で通常攻撃／防御効果を1.2倍して模倣する)"}
+        {slot:"S1", skill:"舞蝶朧月", rank:"S", afterSkill:"月詠ノ覇威", afterRank:"SS", target:"部隊長", rate:"+50%", effectShort:"部隊長の初期スキルを模倣(卓越:追加確率20%で1.25倍にして模倣)", afterTarget:"全", afterRate:"+100%", afterEffectShort:"攻撃344%上昇+防御344%上昇+自軍全武将全スキルの卓越確率に加算(自軍内重複上限2・模倣不可)"},
+        {slot:"S2", skill:"舞蝶朧月", rank:"S", afterSkill:"月詠ノ覇威", afterRank:"SS", target:"部隊長", rate:"+50%", effectShort:"部隊長の初期スキルを模倣(卓越:追加確率20%で1.25倍にして模倣)", afterTarget:"全", afterRate:"+100%", afterEffectShort:"攻撃344%上昇+防御344%上昇+自軍全武将全スキルの卓越確率に加算(自軍内重複上限2・模倣不可)"}
       ]},
 
     {name:"伊達藤次郎", no:"2600", ch:"未確認", cost:4, troop:"全攻破", sub:"不屈2 撤退",
