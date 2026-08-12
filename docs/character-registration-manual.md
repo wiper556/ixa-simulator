@@ -310,6 +310,20 @@ ixanaryの突破ランク別の値を`statsByRank`に写すと、全ランクで
 3. **連携ページの更新**(スキル一覧ページ等、判明次第対応)。無尽/覇道/撤退/不屈/飛翔/兵站等のキーワード一覧ページへの追加、synthesisTableのS以上候補スキルのskills.htmlページ新規作成・LINKED_SKILLS・sourceCharacters同期は、A節A-2/A-3と同じ手順・同じチェック項目(重複登録チェック・sourceCharacters逆引き確認含む)で行う。
 4. **責任者(ユーザー)の確認。** 黄丸(`reviewedOk:true`)をユーザーが確認し「問題ない」と言ったら`approved:true`(赤丸)にする。同じタイミングで元スクリーンショットのアーカイブ([[feedback_character_screenshot_workflow]]の「赤丸化とアーカイブは同一作業」原則)も忘れず行う。
 5. **攻撃・防御シミュレーターへの反映。** `attack-simulator.html`の武将本体一括登録配列(6000行台以降)にこの武将のステータス・rankGradesを追加する。新規スキルを伴う場合は`specialSkills`にもLV10〜TR6のtrTable/baseRateを反映する([[feedback_skill_page_update_rule]]手順5参照——これを怠ると鍛錬レベル選択でLV10以外の数値がシミュレーターに反映されない)。
+6. **静的HTMLと単独ページの再生成。** `python tools/prerender.py` と `python tools/gen_detail_pages.py` を実行する(D-2参照)。後者を忘れると、追加した武将の `busho/{No}.html` が存在しないまま一覧だけが更新された状態になる。
+
+### 情報源のURL形式(調べ直す手間を省くためのメモ)
+
+| ソース | URL |
+|---|---|
+| ixanary カードページ | `https://ixanary.com/cards/{No}/` — コスト・指揮(★0-0)・成長値・LV1/LV10のスキル効果・ふりがな・絵師。**合成テーブルはここには無い** |
+| ixanary スキルページ | `https://ixanary.com/skills/{スキル名}` — A/B/C/S1/S2 × 1次/2次/3次の合成テーブルはこちら |
+| ixawiki カードページ | `https://ixawiki.com/index.php?BushoCard%2F{No}{名前}` — **名前部分はEUC-JPでURLエンコードする**。統率力・コスト・指揮兵数・初期値/成長値・合成候補テーブル |
+
+**ixawikiのURLは `https://ixawiki.com/wiki/BushoCard/...` ではない**(2026-08-12に404で詰まった)。
+PukiWiki形式の `index.php?` + EUC-JPエンコードが正しい。Pythonなら
+`'https://ixawiki.com/index.php?' + urllib.parse.quote(('BushoCard/%s%s' % (no, name)).encode('euc_jp'), safe='')`。
+文字化けを避けるため、レスポンスも `euc_jp` でデコードすること。
 
 **工数実績(目安):**
 - 2026-07-30、16体を1エージェントに一括で任せたところ、既存データ構造の調査だけで時間を使い切り、実質0体しか完了しなかった。**新規登録は検証作業より遥かに重い**(スクショ特定・切り抜き・データ調査を全てゼロから行うため)。1エージェントに複数体を一括で渡すのは避け、1体ずつ完走させてから次を割り当てる方式に変更する(2026-07-30〜)。
@@ -408,7 +422,22 @@ ixanaryの突破ランク別の値を`statsByRank`に写すと、全ランクで
 ```bash
 python tools/prerender.py          # 全17ページの静的HTMLを再生成
 python tools/prerender.py --check  # 一致しているかだけ確認(書き換えない。ズレていたら終了コード1)
+python tools/gen_detail_pages.py   # 武将/スキルごとの単独ページ(busho/・skill/)を再生成
 ```
+
+### D-2-2. 単独ページの再生成(2026-08-12追加)
+
+`tools/gen_detail_pages.py` は `busho/{No}.html` と `skill/{名前}.html` を作り直し、
+各DBページの「このページの単独URL」リンクと `sitemap.xml` まで更新する。
+**武将やスキルを1体でも足したら必ず走らせること。** 走らせないと、
+追加した武将の単独ページが存在しないまま一覧だけが更新された状態になる。
+
+- 生成物(`busho/` `skill/`)は手で編集しない。次の再生成で消える
+- 描画は各DBページの描画関数を実機で動かしてinnerHTMLを取る作りなので、
+  本体の表示を直せば再生成するだけで単独ページも追随する
+- 何度走らせても出力は同じ(冪等)。差分が出たらそれは本体データが変わったということ
+- 一時HTTPサーバを自前で立てる。`skills.html` の「初期スキル保持者」欄が
+  実行時fetchで他ページを読むため `file://` では描画できない
 
 ### なぜ必要か
 
