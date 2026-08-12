@@ -1213,7 +1213,11 @@
       // 潔花咲然を持つ細川幽斎(復刻)【天】(10070・Bスロット)を合成素材にすると移植後に舞蝶朧月へ変化するため、
       // 武将を直接列挙せずスキル参照で記載する(2026-08-03ルール統一)
       grantedViaSkills:[{skill:"潔花咲然", rank:"S"}],
-      ownHiddenCandidate: {skill:"舞蝶朧月", rank:"S"},
+      // 【2026-08-12修正】自己参照(舞蝶朧月→舞蝶朧月)で登録されていたが誤り。
+      // ixanary.com/skills/舞蝶朧月 の合成テーブルのA枠(1次=舞蝶朧月[S] → 2次=月詠ノ覇威[SS])を確認して訂正した。
+      // [[feedback_skill_hidden_candidate_rule]]どおり、他武将の既存登録ではなく
+      // スキル個別ページの合成テーブルを根拠にしている。
+      ownHiddenCandidate: {skill:"月詠ノ覇威", rank:"SS"},
       trTable:[
         {level:"LV10", points:"-", effect:"部隊長　確率 50% / 卓越追加確率20%・1.25倍"}
       ]
@@ -3384,7 +3388,11 @@
       sourceCharacters:[
         {name:"津軽為信", no:"2359", slot:"C(龍神ノ加護経由)", db:"kyoku"}
       ],
-      ownHiddenCandidate: {skill:"朧雲ノ蓮撃", rank:"S"},
+      // 【2026-08-12修正】自己参照(朧雲ノ蓮撃→朧雲ノ蓮撃)で登録されていたが誤り。
+      // ixanary.com/skills/朧雲ノ蓮撃 の合成テーブルのA枠(1次=朧雲ノ蓮撃[S] → 2次=朧雲ノ進撃[SSS])を確認して訂正した。
+      // [[feedback_skill_hidden_candidate_rule]]どおり、他武将の既存登録ではなく
+      // スキル個別ページの合成テーブルを根拠にしている。
+      ownHiddenCandidate: {skill:"朧雲ノ進撃", rank:"SSS"},
       trTable:[
         {level:"LV10", points:"-", effect:"弓・砲・器　確率 35% / 攻撃 12%上昇+防御12%上昇(所属部隊内レアリティS以上スキル数×12%、TR別データは未確認)"}
       ]
@@ -3397,7 +3405,11 @@
         {name:"安宅冬康", no:"2391", slot:"A(空陣鳴響経由)", db:"kyoku"},
         {name:"大宝寺義氏", no:"2455", slot:"A・B"}
       ],
-      ownHiddenCandidate: {skill:"悪屋形", rank:"S"},
+      // 【2026-08-12修正】自己参照(悪屋形→悪屋形)で登録されていたが誤り。
+      // ixanary.com/skills/悪屋形 の合成テーブルのA枠・B枠(1次=悪屋形[S] → 2次=氷塊三連撃[SSS])を確認して訂正した。
+      // [[feedback_skill_hidden_candidate_rule]]どおり、他武将の既存登録ではなく
+      // スキル個別ページの合成テーブルを根拠にしている。
+      ownHiddenCandidate: {skill:"氷塊三連撃", rank:"SSS"},
       trTable:[
         {level:"LV10", points:"-", effect:"全　確率 19% / 攻撃 80%上昇+自部隊同時攻撃時消費名声-8(重複不可、TR別データは未確認)"}
       ]

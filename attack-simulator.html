@@ -834,7 +834,7 @@
   // 【必須】attack-simulator.html を変更したコミットでは、必ずこの定数も一緒に更新すること。
   // 表示文言の変更・CSSの微調整であっても対象(ユーザーがスクショで版を判別できなくなるため)。
   // 更新忘れが繰り返し発生しているので、編集したらコミット前にここを見に来る。
-  const SIMULATOR_VERSION = 'v2026-08-12.6';
+  const SIMULATOR_VERSION = 'v2026-08-12.7';
   document.addEventListener('DOMContentLoaded', ()=>{
     const badge = document.getElementById('simVersionBadge');
     if(badge) badge.textContent = SIMULATOR_VERSION;
@@ -2687,6 +2687,14 @@
        troops(極限突破+0.5) = troops(極限突破) + 200
        troops(天限突破)     = troops(極限突破) + 800
        troops(天限突破+0.5) = troops(天限突破) + 200
+
+     【2026-08-12 ユーザー確認済み・機械的に直さないこと】
+     「+0.5」は指揮兵士数だけが+200増え、攻撃力・防御力・兵法値は一切増えない。
+     ゲームの実挙動がそうなっていることをユーザーに確認済み。
+     ixanary.comの成長表の「極限突破」「天限突破」列は+0.5版の値なので(マニュアルB-01)、
+     指揮兵士数だけを見ると本ツールの「極限突破」「天限突破」と200ずれて見えるが、
+     これは不整合ではなく正しい。攻撃力はどちらでも同値になるため、
+     ixanaryの値は本ツールの+0.5あり/なしのどちらとも一致する。
   ============================================ */
   // STANDARD_RANKUP_COUNT は assets/js/ixa-data.js に移動 // 今川義元の実測データから逆算(要検証の暫定共通値)
 
