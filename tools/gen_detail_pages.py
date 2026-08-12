@@ -280,8 +280,12 @@ def main(HOST):
                  img=BASE + 'assets/img/icon-192.png'))
         print('%s/index.html … %d件' % (d, len(items)))
 
+    # 2026-08-13: os.environ['TEMP'] は Windows にしか無く、CI(Linux)で KeyError になった。
+    # 生成したページの一覧を後から見るためだけの控えなので、環境に依存しない置き場にする。
+    import tempfile
     json.dump({k: [list(x) for x in v] for k, v in made.items()},
-              open(os.path.join(os.environ['TEMP'], 'gen_pages_made.json'), 'w', encoding='utf-8'),
+              open(os.path.join(tempfile.gettempdir(), 'gen_pages_made.json'),
+                   'w', encoding='utf-8'),
               ensure_ascii=False)
     print('\n合計 %d ページ' % (len(made['busho']) + len(made['skill']) + 2))
 
