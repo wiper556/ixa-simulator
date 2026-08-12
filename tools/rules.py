@@ -171,6 +171,41 @@ def problems():
                         "最終棚卸しが %s(%d日前)。%d日を超えた。"
                         "RULE-OPERATION.md「定期的な棚卸し」を実施する" % (d, age, STALE_DAYS)))
 
+    # G-9/H-9/F-8(第3回): 門番を起動する設定そのものが、どの検査の対象でもなかった。
+    # `.claude/settings.json` の hooks を消す、CIのトリガを1行変える、
+    # ワークフローを消す、のどれも指摘0件で通った。中身を見る。
+    st = _read(os.path.join(ROOT, ".claude", "settings.json"))
+    if not st:
+        out.append(("PreToolUseの設定が無い", "HIGH",
+                    ".claude/settings.json が読めない。T-01を止めるフックの登録先"))
+    elif "no_heredoc_backslash.py" not in st:
+        out.append(("PreToolUseの配線が消えた", "HIGH",
+                    ".claude/settings.json に no_heredoc_backslash.py の登録が無い。"
+                    "T-01(ヒアドキュメントのバックスラッシュ)を止めるフックが外れている"))
+    elif "PowerShell" not in st:
+        out.append(("PreToolUseがBashだけ", "MID",
+                    "matcher に PowerShell が入っていない。ツールを変えるだけで"
+                    "T-01フックを素通りできる(第3回 F-9/G-12/I-11)"))
+
+    wf = _read(os.path.join(ROOT, ".github", "workflows", "rules.yml"))
+    if not wf:
+        out.append(("CIのワークフローが無い", "HIGH",
+                    ".github/workflows/rules.yml が読めない。"
+                    "ローカルのフックを無効化されたときの唯一の受け皿"))
+    else:
+        for need, why in (('branches: ["**"]', "全ブランチのpushで走る設定"),
+                          ("audit_characters.py", "監査"),
+                          ("tools/rules.py", "索引と違反ログの整合"),
+                          ("check_js.py", "ページのJS構文"),
+                          ("audit_selftest.py", "監査の自己テスト"),
+                          ("tools/lock.py", "錠前")):
+            if need not in wf:
+                out.append(("CIの検査が抜けている", "HIGH",
+                            "rules.yml に「%s」が無い(%s)" % (need, why)))
+        if "continue-on-error" in wf:
+            out.append(("CIが失敗しても止まらない", "HIGH",
+                        "rules.yml に continue-on-error がある。赤でも通ってしまう"))
+
     all_rows = violations()
     if not all_rows and os.path.exists(VIOL):
         out.append(("違反ログを読めない", "HIGH",
@@ -264,41 +299,6 @@ if __name__ == "__main__":
     ids = rule_ids()
     print("ルール: %d件 %s" % (len(ids), dict(collections.Counter(k[0] for k in ids))))
     print("最終棚卸し: %s" % (last_inventory() or "記録なし"))
-    # G-9/H-9/F-8(第3回): 門番を起動する設定そのものが、どの検査の対象でもなかった。
-    # `.claude/settings.json` の hooks を消す、CIのトリガを1行変える、
-    # ワークフローを消す、のどれも指摘0件で通った。中身を見る。
-    st = _read(os.path.join(ROOT, ".claude", "settings.json"))
-    if not st:
-        out.append(("PreToolUseの設定が無い", "HIGH",
-                    ".claude/settings.json が読めない。T-01を止めるフックの登録先"))
-    elif "no_heredoc_backslash.py" not in st:
-        out.append(("PreToolUseの配線が消えた", "HIGH",
-                    ".claude/settings.json に no_heredoc_backslash.py の登録が無い。"
-                    "T-01(ヒアドキュメントのバックスラッシュ)を止めるフックが外れている"))
-    elif "PowerShell" not in st:
-        out.append(("PreToolUseがBashだけ", "MID",
-                    "matcher に PowerShell が入っていない。ツールを変えるだけで"
-                    "T-01フックを素通りできる(第3回 F-9/G-12/I-11)"))
-
-    wf = _read(os.path.join(ROOT, ".github", "workflows", "rules.yml"))
-    if not wf:
-        out.append(("CIのワークフローが無い", "HIGH",
-                    ".github/workflows/rules.yml が読めない。"
-                    "ローカルのフックを無効化されたときの唯一の受け皿"))
-    else:
-        for need, why in (('branches: ["**"]', "全ブランチのpushで走る設定"),
-                          ("audit_characters.py", "監査"),
-                          ("tools/rules.py", "索引と違反ログの整合"),
-                          ("check_js.py", "ページのJS構文"),
-                          ("audit_selftest.py", "監査の自己テスト"),
-                          ("tools/lock.py", "錠前")):
-            if need not in wf:
-                out.append(("CIの検査が抜けている", "HIGH",
-                            "rules.yml に「%s」が無い(%s)" % (need, why)))
-        if "continue-on-error" in wf:
-            out.append(("CIが失敗しても止まらない", "HIGH",
-                        "rules.yml に continue-on-error がある。赤でも通ってしまう"))
-
     rows = violations()
     print("違反ログ: %d件" % len(rows))
     for r in rows:
