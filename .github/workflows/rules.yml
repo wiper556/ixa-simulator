@@ -31,9 +31,11 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: playwright を入れる(check_js が使う)
+      - name: 必要なものを入れる
+        # quickjs: audit_characters.py が JS配列を実際に評価して取り出すのに使う
+        # playwright: check_js.py がページの構文を見るのに使う
         run: |
-          python -m pip install --quiet playwright
+          python -m pip install --quiet quickjs playwright
           python -m playwright install --with-deps chromium
 
       - name: 監査(HIGHがベースラインより増えていないか)
