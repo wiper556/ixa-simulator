@@ -268,6 +268,40 @@ def main():
             if re.search(r"[×x]\s*(防御参加武将数|無尽武将数|[^\d\s)=]*武将数|人数)", eff) and "=" not in eff:
                 add("未計算式", "MID", "[%s] %s No.%s %s: %s" % (status(g), g["name"], g["no"], row.get("level"), eff))
 
+    # 「未確認」と表示される段には、調べた先の記録が要る(RULES.md I-01)
+    # 表示規則(RULES.md V-01): 値が判明している一番上の段までは、空でも「未確認」として出る。
+    # そこで終わりにするのが2026-08-12の違反(I-01)だったので、
+    # tools/research_log.json に2ソース以上の記録が無い「未確認」はHIGHにする。
+    sys.path.insert(0, os.path.join(ROOT, "tools"))
+    try:
+        from reslog import sources as _res_sources
+    except Exception:
+        _res_sources = lambda k: []
+    ORDER = ["LV10", "TR1", "TR2", "TR3", "TR4", "TR5", "TR6"]
+    seen_unk = set()
+    for g, src in targets + [(s, "skills.html") for s in D["skills"]]:
+        rows = g.get("trTable") or []
+        filled = [ORDER.index(r["level"]) for r in rows
+                  if r.get("effect") and r.get("level", "").startswith("TR")]
+        if not filled:
+            continue
+        blanks = [r["level"] for r in rows
+                  if r.get("level", "").startswith("TR") and not r.get("effect")
+                  and ORDER.index(r["level"]) < max(filled)]
+        if not blanks:
+            continue
+        skill = g.get("initialSkill") if src != "skills.html" else g.get("name")
+        if not skill:
+            continue
+        key = "TR:" + skill
+        got = _res_sources(key)
+        if len(got) < 2 and key not in seen_unk:
+            seen_unk.add(key)
+            add("未確認の根拠なし", "HIGH",
+                "「%s」の%sが未確認表示だが、調査ログの情報源が%d件(2件以上必要)。"
+                "調べてから埋めるか、当たった先を tools/reslog.py で記録する"
+                % (skill, "/".join(blanks), len(got)))
+
     # ---- 外部照合 ----
     ext = []
     if ONLINE:
@@ -353,6 +387,14 @@ def main():
         elif not ONLINE:
             f.write("\n(--online を付けると ixanary との外部照合も行う)\n")
     print("wrote " + os.path.join(OUT, "report.txt"))
+
+    # pre-commitフックが差分を取れるよう、機械可読な形でも出す。
+    # 本文(msg)をそのままキーにすると件数や武将名の変化で別物になってしまうので、
+    # 「種別+深刻度+本文」の組をそのまま指紋として使い、集合の差で新規発生を判定する。
+    with io.open(os.path.join(OUT, "findings.json"), "w", encoding="utf-8") as f:
+        json.dump([{"cat": c, "sev": s, "msg": m} for c, s, m in R],
+                  f, ensure_ascii=False, indent=1)
+    print("wrote " + os.path.join(OUT, "findings.json"))
 
 
 if __name__ == "__main__":

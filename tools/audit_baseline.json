@@ -1,0 +1,732 @@
+[
+ {
+  "cat": "afterSkill不一致",
+  "sev": "HIGH",
+  "msg": "「天衣無縫神戒」が武将により別スキルに化けている: →天衣無縫神戒(大谷吉継（2） No.1230 B枠, 六角承禎（2） No.1254 S2枠, 羽柴秀吉 No.1208 B枠, 宇喜多秀家（2） No.1217 A枠, 稲葉一鉄 No.2392 C枠, 高橋紹運 No.2396 C枠) / →幽冥主宰大神(西郷局 No.2583 B枠, 西郷局 No.2583 C枠)"
+ },
+ {
+  "cat": "ownHiddenCandidate不整合",
+  "sev": "HIGH",
+  "msg": "「舞蝶朧月」: 登録→月詠ノ覇威 / 武将側→黒飛燕剣"
+ },
+ {
+  "cat": "移植後の性能未設定",
+  "sev": "HIGH",
+  "msg": "[青丸] 佐竹義重(2437) No.2437 C枠: 轟閻 霹靂火→武神八幡陣 の after* が未設定"
+ },
+ {
+  "cat": "移植後の性能未設定",
+  "sev": "HIGH",
+  "msg": "[青丸] 武田勝頼(2448) No.2448 A枠: 比類なき大将→騎神炎山 の after* が未設定"
+ },
+ {
+  "cat": "移植後の性能未設定",
+  "sev": "HIGH",
+  "msg": "[青丸] 武田勝頼(2448) No.2448 B枠: 比類なき大将→騎神炎山 の after* が未設定"
+ },
+ {
+  "cat": "移植後の性能未設定",
+  "sev": "HIGH",
+  "msg": "[青丸] 武田勝頼(2448) No.2448 C枠: 比類なき大将→騎神炎山 の after* が未設定"
+ },
+ {
+  "cat": "移植後の性能未設定",
+  "sev": "HIGH",
+  "msg": "[青丸] 蒲生氏郷 No.7403 A枠: 獅子王→銀翼神騎兵 の after* が未設定"
+ },
+ {
+  "cat": "LINKED_SKILLS",
+  "sev": "MID",
+  "msg": "LINKED_SKILLS 未登録だがページ有り: 不撓六文銭"
+ },
+ {
+  "cat": "LINKED_SKILLS",
+  "sev": "MID",
+  "msg": "LINKED_SKILLS 未登録だがページ有り: 倚天滅陣"
+ },
+ {
+  "cat": "LINKED_SKILLS",
+  "sev": "MID",
+  "msg": "LINKED_SKILLS 未登録だがページ有り: 凛乎穿進"
+ },
+ {
+  "cat": "LINKED_SKILLS",
+  "sev": "MID",
+  "msg": "LINKED_SKILLS 未登録だがページ有り: 北天ノ奔馬"
+ },
+ {
+  "cat": "LINKED_SKILLS",
+  "sev": "MID",
+  "msg": "LINKED_SKILLS 未登録だがページ有り: 北天幻将"
+ },
+ {
+  "cat": "LINKED_SKILLS",
+  "sev": "MID",
+  "msg": "LINKED_SKILLS 未登録だがページ有り: 国盗ノ懸槍"
+ },
+ {
+  "cat": "LINKED_SKILLS",
+  "sev": "MID",
+  "msg": "LINKED_SKILLS 未登録だがページ有り: 外道煉獄"
+ },
+ {
+  "cat": "LINKED_SKILLS",
+  "sev": "MID",
+  "msg": "LINKED_SKILLS 未登録だがページ有り: 夢妖剣"
+ },
+ {
+  "cat": "LINKED_SKILLS",
+  "sev": "MID",
+  "msg": "LINKED_SKILLS 未登録だがページ有り: 天導仁翼"
+ },
+ {
+  "cat": "LINKED_SKILLS",
+  "sev": "MID",
+  "msg": "LINKED_SKILLS 未登録だがページ有り: 島穿鬼槍"
+ },
+ {
+  "cat": "LINKED_SKILLS",
+  "sev": "MID",
+  "msg": "LINKED_SKILLS 未登録だがページ有り: 暘谷ノ人傑"
+ },
+ {
+  "cat": "LINKED_SKILLS",
+  "sev": "MID",
+  "msg": "LINKED_SKILLS 未登録だがページ有り: 炎帝伐鬼"
+ },
+ {
+  "cat": "LINKED_SKILLS",
+  "sev": "MID",
+  "msg": "LINKED_SKILLS 未登録だがページ有り: 炎馬帝"
+ },
+ {
+  "cat": "LINKED_SKILLS",
+  "sev": "MID",
+  "msg": "LINKED_SKILLS 未登録だがページ有り: 烈火ノ闘将"
+ },
+ {
+  "cat": "LINKED_SKILLS",
+  "sev": "MID",
+  "msg": "LINKED_SKILLS 未登録だがページ有り: 無窮天斥陣"
+ },
+ {
+  "cat": "LINKED_SKILLS",
+  "sev": "MID",
+  "msg": "LINKED_SKILLS 未登録だがページ有り: 獄香ノ爆宴"
+ },
+ {
+  "cat": "LINKED_SKILLS",
+  "sev": "MID",
+  "msg": "LINKED_SKILLS 未登録だがページ有り: 神気乱龍"
+ },
+ {
+  "cat": "LINKED_SKILLS",
+  "sev": "MID",
+  "msg": "LINKED_SKILLS 未登録だがページ有り: 義戦ノ旗手"
+ },
+ {
+  "cat": "LINKED_SKILLS",
+  "sev": "MID",
+  "msg": "LINKED_SKILLS 未登録だがページ有り: 蓋方軍慮"
+ },
+ {
+  "cat": "LINKED_SKILLS",
+  "sev": "MID",
+  "msg": "LINKED_SKILLS 未登録だがページ有り: 虎王炎神"
+ },
+ {
+  "cat": "LINKED_SKILLS",
+  "sev": "MID",
+  "msg": "LINKED_SKILLS 未登録だがページ有り: 虎王烈迅"
+ },
+ {
+  "cat": "LINKED_SKILLS",
+  "sev": "MID",
+  "msg": "LINKED_SKILLS 未登録だがページ有り: 裂波驍槍"
+ },
+ {
+  "cat": "LINKED_SKILLS",
+  "sev": "MID",
+  "msg": "LINKED_SKILLS 未登録だがページ有り: 謀神ノ経略"
+ },
+ {
+  "cat": "LINKED_SKILLS",
+  "sev": "MID",
+  "msg": "LINKED_SKILLS 未登録だがページ有り: 豊国天万"
+ },
+ {
+  "cat": "LINKED_SKILLS",
+  "sev": "MID",
+  "msg": "LINKED_SKILLS 未登録だがページ有り: 豊州ノ雅王"
+ },
+ {
+  "cat": "LINKED_SKILLS",
+  "sev": "MID",
+  "msg": "KK_LINKED_SKILLS 未登録だがページ有り: 一刀ノ伝承"
+ },
+ {
+  "cat": "LINKED_SKILLS",
+  "sev": "MID",
+  "msg": "KK_LINKED_SKILLS 未登録だがページ有り: 三十五ノ兵法"
+ },
+ {
+  "cat": "LINKED_SKILLS",
+  "sev": "MID",
+  "msg": "KK_LINKED_SKILLS 未登録だがページ有り: 傾国ノ艶姫"
+ },
+ {
+  "cat": "LINKED_SKILLS",
+  "sev": "MID",
+  "msg": "KK_LINKED_SKILLS 未登録だがページ有り: 八楯剛陣"
+ },
+ {
+  "cat": "LINKED_SKILLS",
+  "sev": "MID",
+  "msg": "KK_LINKED_SKILLS 未登録だがページ有り: 冥国ノ双鎌"
+ },
+ {
+  "cat": "LINKED_SKILLS",
+  "sev": "MID",
+  "msg": "KK_LINKED_SKILLS 未登録だがページ有り: 剛毅謀慮"
+ },
+ {
+  "cat": "LINKED_SKILLS",
+  "sev": "MID",
+  "msg": "KK_LINKED_SKILLS 未登録だがページ有り: 十死一生"
+ },
+ {
+  "cat": "LINKED_SKILLS",
+  "sev": "MID",
+  "msg": "KK_LINKED_SKILLS 未登録だがページ有り: 回天剣舞"
+ },
+ {
+  "cat": "LINKED_SKILLS",
+  "sev": "MID",
+  "msg": "KK_LINKED_SKILLS 未登録だがページ有り: 城壁の護り"
+ },
+ {
+  "cat": "LINKED_SKILLS",
+  "sev": "MID",
+  "msg": "KK_LINKED_SKILLS 未登録だがページ有り: 天廟斬算"
+ },
+ {
+  "cat": "LINKED_SKILLS",
+  "sev": "MID",
+  "msg": "KK_LINKED_SKILLS 未登録だがページ有り: 天穿神滅"
+ },
+ {
+  "cat": "LINKED_SKILLS",
+  "sev": "MID",
+  "msg": "KK_LINKED_SKILLS 未登録だがページ有り: 天綾の誓約"
+ },
+ {
+  "cat": "LINKED_SKILLS",
+  "sev": "MID",
+  "msg": "KK_LINKED_SKILLS 未登録だがページ有り: 天華爛漫"
+ },
+ {
+  "cat": "LINKED_SKILLS",
+  "sev": "MID",
+  "msg": "KK_LINKED_SKILLS 未登録だがページ有り: 天衝破軍槍"
+ },
+ {
+  "cat": "LINKED_SKILLS",
+  "sev": "MID",
+  "msg": "KK_LINKED_SKILLS 未登録だがページ有り: 巌流燕返し"
+ },
+ {
+  "cat": "LINKED_SKILLS",
+  "sev": "MID",
+  "msg": "KK_LINKED_SKILLS 未登録だがページ有り: 幻渦龍刀"
+ },
+ {
+  "cat": "LINKED_SKILLS",
+  "sev": "MID",
+  "msg": "KK_LINKED_SKILLS 未登録だがページ有り: 幽冥主宰大神"
+ },
+ {
+  "cat": "LINKED_SKILLS",
+  "sev": "MID",
+  "msg": "KK_LINKED_SKILLS 未登録だがページ有り: 式神ノ冥王"
+ },
+ {
+  "cat": "LINKED_SKILLS",
+  "sev": "MID",
+  "msg": "KK_LINKED_SKILLS 未登録だがページ有り: 悪一文字"
+ },
+ {
+  "cat": "LINKED_SKILLS",
+  "sev": "MID",
+  "msg": "KK_LINKED_SKILLS 未登録だがページ有り: 慈愛ノ癒術"
+ },
+ {
+  "cat": "LINKED_SKILLS",
+  "sev": "MID",
+  "msg": "KK_LINKED_SKILLS 未登録だがページ有り: 払捨刀夢想"
+ },
+ {
+  "cat": "LINKED_SKILLS",
+  "sev": "MID",
+  "msg": "KK_LINKED_SKILLS 未登録だがページ有り: 文治興隆"
+ },
+ {
+  "cat": "LINKED_SKILLS",
+  "sev": "MID",
+  "msg": "KK_LINKED_SKILLS 未登録だがページ有り: 旋龍突渦"
+ },
+ {
+  "cat": "LINKED_SKILLS",
+  "sev": "MID",
+  "msg": "KK_LINKED_SKILLS 未登録だがページ有り: 日輪豊国"
+ },
+ {
+  "cat": "LINKED_SKILLS",
+  "sev": "MID",
+  "msg": "KK_LINKED_SKILLS 未登録だがページ有り: 月下闇龍"
+ },
+ {
+  "cat": "LINKED_SKILLS",
+  "sev": "MID",
+  "msg": "KK_LINKED_SKILLS 未登録だがページ有り: 朧雲ノ突撃"
+ },
+ {
+  "cat": "LINKED_SKILLS",
+  "sev": "MID",
+  "msg": "KK_LINKED_SKILLS 未登録だがページ有り: 根津諏訪流鷹術"
+ },
+ {
+  "cat": "LINKED_SKILLS",
+  "sev": "MID",
+  "msg": "KK_LINKED_SKILLS 未登録だがページ有り: 武神八幡陣"
+ },
+ {
+  "cat": "LINKED_SKILLS",
+  "sev": "MID",
+  "msg": "KK_LINKED_SKILLS 未登録だがページ有り: 比類なき大将"
+ },
+ {
+  "cat": "LINKED_SKILLS",
+  "sev": "MID",
+  "msg": "KK_LINKED_SKILLS 未登録だがページ有り: 氷塊ノ夾撃"
+ },
+ {
+  "cat": "LINKED_SKILLS",
+  "sev": "MID",
+  "msg": "KK_LINKED_SKILLS 未登録だがページ有り: 氷瀑ノ封印"
+ },
+ {
+  "cat": "LINKED_SKILLS",
+  "sev": "MID",
+  "msg": "KK_LINKED_SKILLS 未登録だがページ有り: 氷瀑ノ封神"
+ },
+ {
+  "cat": "LINKED_SKILLS",
+  "sev": "MID",
+  "msg": "KK_LINKED_SKILLS 未登録だがページ有り: 無双英傑"
+ },
+ {
+  "cat": "LINKED_SKILLS",
+  "sev": "MID",
+  "msg": "KK_LINKED_SKILLS 未登録だがページ有り: 無空ノ極剣"
+ },
+ {
+  "cat": "LINKED_SKILLS",
+  "sev": "MID",
+  "msg": "KK_LINKED_SKILLS 未登録だがページ有り: 無窮天斥陣"
+ },
+ {
+  "cat": "LINKED_SKILLS",
+  "sev": "MID",
+  "msg": "KK_LINKED_SKILLS 未登録だがページ有り: 煙霞迷霧"
+ },
+ {
+  "cat": "LINKED_SKILLS",
+  "sev": "MID",
+  "msg": "KK_LINKED_SKILLS 未登録だがページ有り: 牙突"
+ },
+ {
+  "cat": "LINKED_SKILLS",
+  "sev": "MID",
+  "msg": "KK_LINKED_SKILLS 未登録だがページ有り: 牛鬼ノ攻城"
+ },
+ {
+  "cat": "LINKED_SKILLS",
+  "sev": "MID",
+  "msg": "KK_LINKED_SKILLS 未登録だがページ有り: 白銀双鶴"
+ },
+ {
+  "cat": "LINKED_SKILLS",
+  "sev": "MID",
+  "msg": "KK_LINKED_SKILLS 未登録だがページ有り: 破城 羅刹"
+ },
+ {
+  "cat": "LINKED_SKILLS",
+  "sev": "MID",
+  "msg": "KK_LINKED_SKILLS 未登録だがページ有り: 破軍星"
+ },
+ {
+  "cat": "LINKED_SKILLS",
+  "sev": "MID",
+  "msg": "KK_LINKED_SKILLS 未登録だがページ有り: 神谷活心流"
+ },
+ {
+  "cat": "LINKED_SKILLS",
+  "sev": "MID",
+  "msg": "KK_LINKED_SKILLS 未登録だがページ有り: 神農医方"
+ },
+ {
+  "cat": "LINKED_SKILLS",
+  "sev": "MID",
+  "msg": "KK_LINKED_SKILLS 未登録だがページ有り: 紅蓮ノ刃"
+ },
+ {
+  "cat": "LINKED_SKILLS",
+  "sev": "MID",
+  "msg": "KK_LINKED_SKILLS 未登録だがページ有り: 紅蓮ノ刹"
+ },
+ {
+  "cat": "LINKED_SKILLS",
+  "sev": "MID",
+  "msg": "KK_LINKED_SKILLS 未登録だがページ有り: 縮地"
+ },
+ {
+  "cat": "LINKED_SKILLS",
+  "sev": "MID",
+  "msg": "KK_LINKED_SKILLS 未登録だがページ有り: 聖光ノ遊星"
+ },
+ {
+  "cat": "LINKED_SKILLS",
+  "sev": "MID",
+  "msg": "KK_LINKED_SKILLS 未登録だがページ有り: 聖女ノ恩寵"
+ },
+ {
+  "cat": "LINKED_SKILLS",
+  "sev": "MID",
+  "msg": "KK_LINKED_SKILLS 未登録だがページ有り: 茅纒之矟ノ煌"
+ },
+ {
+  "cat": "LINKED_SKILLS",
+  "sev": "MID",
+  "msg": "KK_LINKED_SKILLS 未登録だがページ有り: 荒破閃神"
+ },
+ {
+  "cat": "LINKED_SKILLS",
+  "sev": "MID",
+  "msg": "KK_LINKED_SKILLS 未登録だがページ有り: 葵ノ慈母"
+ },
+ {
+  "cat": "LINKED_SKILLS",
+  "sev": "MID",
+  "msg": "KK_LINKED_SKILLS 未登録だがページ有り: 虎巫"
+ },
+ {
+  "cat": "LINKED_SKILLS",
+  "sev": "MID",
+  "msg": "KK_LINKED_SKILLS 未登録だがページ有り: 覇王絶世"
+ },
+ {
+  "cat": "LINKED_SKILLS",
+  "sev": "MID",
+  "msg": "KK_LINKED_SKILLS 未登録だがページ有り: 見様見真似"
+ },
+ {
+  "cat": "LINKED_SKILLS",
+  "sev": "MID",
+  "msg": "KK_LINKED_SKILLS 未登録だがページ有り: 貫殺飛苦無"
+ },
+ {
+  "cat": "LINKED_SKILLS",
+  "sev": "MID",
+  "msg": "KK_LINKED_SKILLS 未登録だがページ有り: 轟閻 霹靂火"
+ },
+ {
+  "cat": "LINKED_SKILLS",
+  "sev": "MID",
+  "msg": "KK_LINKED_SKILLS 未登録だがページ有り: 銀翼神騎兵"
+ },
+ {
+  "cat": "LINKED_SKILLS",
+  "sev": "MID",
+  "msg": "KK_LINKED_SKILLS 未登録だがページ有り: 錘焔ノ空帯"
+ },
+ {
+  "cat": "LINKED_SKILLS",
+  "sev": "MID",
+  "msg": "KK_LINKED_SKILLS 未登録だがページ有り: 錘焔ノ藍帯"
+ },
+ {
+  "cat": "LINKED_SKILLS",
+  "sev": "MID",
+  "msg": "KK_LINKED_SKILLS 未登録だがページ有り: 風魔ノ夜討"
+ },
+ {
+  "cat": "LINKED_SKILLS",
+  "sev": "MID",
+  "msg": "KK_LINKED_SKILLS 未登録だがページ有り: 飛幻忍術"
+ },
+ {
+  "cat": "LINKED_SKILLS",
+  "sev": "MID",
+  "msg": "KK_LINKED_SKILLS 未登録だがページ有り: 飛竜星照"
+ },
+ {
+  "cat": "LINKED_SKILLS",
+  "sev": "MID",
+  "msg": "KK_LINKED_SKILLS 未登録だがページ有り: 騎神炎山"
+ },
+ {
+  "cat": "LINKED_SKILLS",
+  "sev": "MID",
+  "msg": "KK_LINKED_SKILLS 未登録だがページ有り: 騒速ノ神撃"
+ },
+ {
+  "cat": "LINKED_SKILLS",
+  "sev": "MID",
+  "msg": "KK_LINKED_SKILLS 未登録だがページ有り: 魔界ノ美姫"
+ },
+ {
+  "cat": "LINKED_SKILLS",
+  "sev": "MID",
+  "msg": "KK_LINKED_SKILLS 未登録だがページ有り: 黒衣ノ軍師"
+ },
+ {
+  "cat": "LINKED_SKILLS",
+  "sev": "MID",
+  "msg": "KK_LINKED_SKILLS 未登録だがページ有り: 黒飛燕剣"
+ },
+ {
+  "cat": "LINKED_SKILLS",
+  "sev": "MID",
+  "msg": "KK_LINKED_SKILLS 未登録だがページ有り: 龍槌閃・惨"
+ },
+ {
+  "cat": "categoryLinks漏れ",
+  "sev": "MID",
+  "msg": "「鳳凰ノ幻華」: 人数依存一覧へのリンク無し"
+ },
+ {
+  "cat": "categoryLinks漏れ",
+  "sev": "MID",
+  "msg": "「覇城統陣」: 『卓越』があるが skills-takuetsu.html へのリンク無し"
+ },
+ {
+  "cat": "categoryLinks漏れ",
+  "sev": "MID",
+  "msg": "「天導仁翼」: 『無尽』があるが skills-mujin.html へのリンク無し"
+ },
+ {
+  "cat": "categoryLinks漏れ",
+  "sev": "MID",
+  "msg": "「義戦ノ旗手」: 『無尽』があるが skills-mujin.html へのリンク無し"
+ },
+ {
+  "cat": "categoryLinks漏れ",
+  "sev": "MID",
+  "msg": "「不撓六文銭」: 『無尽』があるが skills-mujin.html へのリンク無し"
+ },
+ {
+  "cat": "categoryLinks漏れ",
+  "sev": "MID",
+  "msg": "「暘谷ノ人傑」: 『覇道』があるが skills-hadou.html へのリンク無し"
+ },
+ {
+  "cat": "categoryLinks漏れ",
+  "sev": "MID",
+  "msg": "「蓋方軍慮」: 『兵站』があるが skills-heitan.html へのリンク無し"
+ },
+ {
+  "cat": "categoryLinks漏れ",
+  "sev": "MID",
+  "msg": "「謀神ノ経略」: 『卓越』があるが skills-takuetsu.html へのリンク無し"
+ },
+ {
+  "cat": "categoryLinks漏れ",
+  "sev": "MID",
+  "msg": "「裂波驍槍」: 『卓越』があるが skills-takuetsu.html へのリンク無し"
+ },
+ {
+  "cat": "categoryLinks漏れ",
+  "sev": "MID",
+  "msg": "「倚天滅陣」: 『不屈』があるが skills-fukutsu.html へのリンク無し"
+ },
+ {
+  "cat": "categoryLinks漏れ",
+  "sev": "MID",
+  "msg": "「島穿鬼槍」: 『卓越』があるが skills-takuetsu.html へのリンク無し"
+ },
+ {
+  "cat": "categoryLinks漏れ",
+  "sev": "MID",
+  "msg": "「烈火ノ闘将」: 『撤退』があるが skills-taitai.html へのリンク無し"
+ },
+ {
+  "cat": "categoryLinks漏れ",
+  "sev": "MID",
+  "msg": "「烈火ノ闘将」: 『卓越』があるが skills-takuetsu.html へのリンク無し"
+ },
+ {
+  "cat": "categoryLinks漏れ",
+  "sev": "MID",
+  "msg": "「烈火ノ闘将」: 人数依存一覧へのリンク無し"
+ },
+ {
+  "cat": "categoryLinks漏れ",
+  "sev": "MID",
+  "msg": "「炎帝伐鬼」: 『卓越』があるが skills-takuetsu.html へのリンク無し"
+ },
+ {
+  "cat": "categoryLinks漏れ",
+  "sev": "MID",
+  "msg": "「炎帝伐鬼」: 人数依存一覧へのリンク無し"
+ },
+ {
+  "cat": "categoryLinks漏れ",
+  "sev": "MID",
+  "msg": "「豊国天万」: 『卓越』があるが skills-takuetsu.html へのリンク無し"
+ },
+ {
+  "cat": "categoryLinks漏れ",
+  "sev": "MID",
+  "msg": "「比類なき大将」: 『卓越』があるが skills-takuetsu.html へのリンク無し"
+ },
+ {
+  "cat": "categoryLinks漏れ",
+  "sev": "MID",
+  "msg": "「日輪豊国」: 『卓越』があるが skills-takuetsu.html へのリンク無し"
+ },
+ {
+  "cat": "categoryLinks漏れ",
+  "sev": "MID",
+  "msg": "「飛竜星照」: 『卓越』があるが skills-takuetsu.html へのリンク無し"
+ },
+ {
+  "cat": "categoryLinks漏れ",
+  "sev": "MID",
+  "msg": "「無空ノ極剣」: 『卓越』があるが skills-takuetsu.html へのリンク無し"
+ },
+ {
+  "cat": "categoryLinks漏れ",
+  "sev": "MID",
+  "msg": "「幻渦龍刀」: 『卓越』があるが skills-takuetsu.html へのリンク無し"
+ },
+ {
+  "cat": "categoryLinks漏れ",
+  "sev": "MID",
+  "msg": "「旋龍突渦」: 『撤退』があるが skills-taitai.html へのリンク無し"
+ },
+ {
+  "cat": "categoryLinks漏れ",
+  "sev": "MID",
+  "msg": "「旋龍突渦」: 『不屈』があるが skills-fukutsu.html へのリンク無し"
+ },
+ {
+  "cat": "categoryLinks漏れ",
+  "sev": "MID",
+  "msg": "「龍槌閃・惨」: 『卓越』があるが skills-takuetsu.html へのリンク無し"
+ },
+ {
+  "cat": "categoryLinks漏れ",
+  "sev": "MID",
+  "msg": "「神谷活心流」: 『卓越』があるが skills-takuetsu.html へのリンク無し"
+ },
+ {
+  "cat": "categoryLinks漏れ",
+  "sev": "MID",
+  "msg": "「悪一文字」: 『不屈』があるが skills-fukutsu.html へのリンク無し"
+ },
+ {
+  "cat": "categoryLinks漏れ",
+  "sev": "MID",
+  "msg": "「傾国ノ艶姫」: 『卓越』があるが skills-takuetsu.html へのリンク無し"
+ },
+ {
+  "cat": "categoryLinks漏れ",
+  "sev": "MID",
+  "msg": "「天廟斬算」: 人数依存一覧へのリンク無し"
+ },
+ {
+  "cat": "categoryLinks漏れ",
+  "sev": "MID",
+  "msg": "「根津諏訪流鷹術」: 『卓越』があるが skills-takuetsu.html へのリンク無し"
+ },
+ {
+  "cat": "categoryLinks漏れ",
+  "sev": "MID",
+  "msg": "「神農医方」: 『卓越』があるが skills-takuetsu.html へのリンク無し"
+ },
+ {
+  "cat": "categoryLinks漏れ",
+  "sev": "MID",
+  "msg": "「紅蓮ノ刹」: 『卓越』があるが skills-takuetsu.html へのリンク無し"
+ },
+ {
+  "cat": "categoryLinks漏れ",
+  "sev": "MID",
+  "msg": "「黒飛燕剣」: 『卓越』があるが skills-takuetsu.html へのリンク無し"
+ },
+ {
+  "cat": "ownHiddenCandidate未設定",
+  "sev": "MID",
+  "msg": "「天廟斬算」: 武将側では→八重言代主神"
+ },
+ {
+  "cat": "ownHiddenCandidate未設定",
+  "sev": "MID",
+  "msg": "「天綾の誓約」: 武将側では→天焉相克"
+ },
+ {
+  "cat": "ownHiddenCandidate未設定",
+  "sev": "MID",
+  "msg": "「式神ノ冥王」: 武将側では→荒破閃神"
+ },
+ {
+  "cat": "ownHiddenCandidate未設定",
+  "sev": "MID",
+  "msg": "「無双英傑」: 武将側では→覇王絶世"
+ },
+ {
+  "cat": "未計算式",
+  "sev": "MID",
+  "msg": "[赤丸] 荒木村重 No.1279 TR1: 槍弓砲器　確率 58% / 防御(8.7×防御参加武将数)%上昇 防御参加武将数が120以下の時、防御効果1.5倍(模倣不可)"
+ },
+ {
+  "cat": "未計算式",
+  "sev": "MID",
+  "msg": "[赤丸] 荒木村重 No.1279 TR2: 槍弓砲器　確率 58% / 防御(9.2×防御参加武将数)%上昇 防御参加武将数が120以下の時、防御効果1.5倍(模倣不可)"
+ },
+ {
+  "cat": "未計算式",
+  "sev": "MID",
+  "msg": "[赤丸] 荒木村重 No.1279 TR3: 槍弓砲器　確率 58% / 防御(9.9×防御参加武将数)%上昇 防御参加武将数が120以下の時、防御効果1.5倍(模倣不可)"
+ },
+ {
+  "cat": "未計算式",
+  "sev": "MID",
+  "msg": "[赤丸] 荒木村重 No.1279 TR4: 槍弓砲器　確率 58% / 防御(11×防御参加武将数)%上昇 防御参加武将数が120以下の時、防御効果1.5倍(模倣不可)"
+ },
+ {
+  "cat": "未計算式",
+  "sev": "MID",
+  "msg": "[赤丸] 黒田長政 No.1282 TR1: 槍弓馬砲　確率 50% / 攻撃(13.5×飛翔を持たない防御参加武将数)%上昇(模倣不可)"
+ },
+ {
+  "cat": "未計算式",
+  "sev": "MID",
+  "msg": "[赤丸] 黒田長政 No.1282 TR2: 槍弓馬砲　確率 50% / 攻撃(14.2×飛翔を持たない防御参加武将数)%上昇(模倣不可)"
+ },
+ {
+  "cat": "未計算式",
+  "sev": "MID",
+  "msg": "[赤丸] 黒田長政 No.1282 TR3: 槍弓馬砲　確率 50% / 攻撃(15×飛翔を持たない防御参加武将数)%上昇(模倣不可)"
+ },
+ {
+  "cat": "未計算式",
+  "sev": "MID",
+  "msg": "[赤丸] 黒田長政 No.1282 TR4: 槍弓馬砲　確率 50% / 攻撃(16×飛翔を持たない防御参加武将数)%上昇(模倣不可)"
+ },
+ {
+  "cat": "未計算式",
+  "sev": "MID",
+  "msg": "[赤丸] 武田晴信 No.1205 LV10: 槍・弓・馬・器　確率 45% / 攻撃 5%×自軍攻撃武将数"
+ }
+]
