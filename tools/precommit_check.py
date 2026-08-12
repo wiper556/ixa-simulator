@@ -48,9 +48,21 @@ ARRAY_OF = {"characters.html": "generals", "characters-kyoku.html": "kyokuGenera
             "characters-ketsu.html": "ketsuGenerals"}
 
 
-def run(cmd, cwd=ROOT):
+# E-2: 展開したツリーにこれが無ければ、隠されたか壊れたと見なして止める。
+# ここに挙げたものは「無くても監査が動いてしまう」= 消せば静かに検査を減らせるファイル。
+REQUIRED = ("docs/RULES.md", "docs/RULE-VIOLATIONS.md", "docs/RULE-OPERATION.md",
+            "tools/audit_baseline.json", "tools/audit_characters.py", "tools/rules.py",
+            "tools/hooks/pre-commit", "tools/hooks/pre-merge-commit", "tools/hooks/pre-push",
+            "assets/css/site.css") + DATA_FILES
+
+
+def run(cmd, cwd=ROOT, env=None):
+    e = None
+    if env:
+        e = os.environ.copy()
+        e.update(env)
     return subprocess.run(cmd, cwd=cwd, capture_output=True, text=True,
-                          encoding="utf-8", errors="replace")
+                          encoding="utf-8", errors="replace", env=e)
 
 
 def load(path):
@@ -84,16 +96,38 @@ def approved_set(path):
     return out
 
 
-def export_tree(ref, dest):
-    """任意のコミットの中身を取り出す。push検査で HEAD / リモート側を見るのに使う。"""
-    r = subprocess.run(["git", "archive", "--format=tar", ref], cwd=ROOT, capture_output=True)
-    if r.returncode != 0:
+def export_tree(ref, dest, require=True):
+    """任意のコミットの中身を取り出す。push検査で HEAD / リモート側を見るのに使う。
+
+    E-2(2026-08-12 第2回レッドチーム指摘): 以前は `git archive` を使っていたが、
+    これは `.gitattributes` の `export-ignore` を尊重する。
+    追跡外の `.git/info/attributes` に1行書くだけで、**git status をきれいに保ったまま**
+    好きなファイルを検査の目から消せた(違反ログ・RULES.md・CSS など、
+    「無くても監査が動く」ものは全部隠せた)。
+
+    read-tree + checkout-index は export-ignore を見ないので、こちらを使う。
+    そのうえで、消えていたら困るファイルの存在を毎回確かめる。
+    """
+    idx = os.path.join(tempfile.mkdtemp(prefix="idx_"), "index")
+    env = {"GIT_INDEX_FILE": idx}
+    if run(["git", "read-tree", ref], env=env).returncode != 0:
         return False
-    with tarfile.open(fileobj=io.BytesIO(r.stdout)) as t:
-        try:
-            t.extractall(dest, filter="data")
-        except TypeError:      # filter は Python 3.12 から
-            t.extractall(dest)
+    if run(["git", "checkout-index", "-a", "-f", "--prefix=%s%s" % (dest, os.sep)],
+           env=env).returncode != 0:
+        return False
+    if require:
+        miss = [f for f in REQUIRED if not os.path.exists(os.path.join(dest, f))]
+        if miss:
+            print("=" * 62)
+            print("[停止] 検査対象のツリーから必須ファイルが消えている: %d件" % len(miss))
+            print("=" * 62)
+            for f in miss[:10]:
+                print("  " + f)
+            print()
+            print("消えていると、その分の検査が黙って行われなくなる。")
+            print("`.gitattributes` / `.git/info/attributes` の export-ignore、")
+            print("または本当に削除していないかを確認する。")
+            return False
     return True
 
 
@@ -106,6 +140,22 @@ def audit_tree(path):
         print((r.stderr or "")[-1200:])
         return None
     return load(os.path.join(path, "tools", "audit_out", "findings.json"))
+
+
+def baseline_of(tree):
+    """E-1: ベースラインは**検査するツリーの中身**から読む。
+
+    以前は作業ツリーの `tools/audit_baseline.json` を読んでいた。
+    一方 findings は「ステージ済みの内容」から作っていたので、
+    **baseline をステージせずに書き換えるだけで**HIGHの増分が消え、
+    commit も push も通った。しかも baseline はコミットに入らないので痕跡が残らない。
+    検査する側と比べる側は同じツリーから取る。
+    """
+    p = os.path.join(tree, "tools", "audit_baseline.json")
+    if not os.path.exists(p):
+        print("[注意] 検査対象ツリーに tools/audit_baseline.json が無い。空として扱う。")
+        return []
+    return load(p)
 
 
 def hooks_ok():
@@ -138,21 +188,27 @@ def check_push():
     """
     # フックの標準入力から <localref> <localsha> <remoteref> <remotesha> が来る
     pushing = []
+    deleting = 0
     try:
         for line in sys.stdin.read().split("\n"):
             p = line.split()
-            if len(p) == 4 and p[1] != "0" * 40:
-                pushing.append((p[1], p[3]))
+            if len(p) != 4:
+                continue
+            if p[1] == "0" * 40:      # ブランチ削除。検査するツリーが無い
+                deleting += 1
+                continue
+            pushing.append((p[0], p[1], p[2], p[3]))
     except Exception:
         pass
     if not pushing:
+        if deleting:
+            print("削除のみの push。検査するツリーが無いので何もしない。")
+            return 0
         remote = run(["git", "rev-parse", "origin/master"]).stdout.strip()
-        pushing = [("HEAD", remote or "")]
+        pushing = [("HEAD", "HEAD", "", remote or "")]
 
     ng = False
-    base = load(BASELINE)
-    base_keys = {key(x) for x in base}
-    for local, remote in pushing:
+    for localref, local, remoteref, remote in pushing:
         tmp = tempfile.mkdtemp(prefix="prepush_")
         old = tempfile.mkdtemp(prefix="prepush_old_")
         try:
@@ -162,6 +218,19 @@ def check_push():
             cur = audit_tree(tmp)
             if cur is None:
                 return 1
+            # E-1: ベースラインも押し出すツリーの中身から取る
+            base_keys = {key(x) for x in baseline_of(tmp)}
+
+            # E-5: 以前は監査HIGHと赤丸しか見ていなかったので、`--no-verify` で入れた
+            # 構文エラーがそのまま外へ出た。押し出すツリーそのものにも check_js を回す。
+            r = run([sys.executable, os.path.join("tools", "check_js.py")], cwd=tmp)
+            if r.returncode != 0:
+                ng = True
+                print("=" * 62)
+                print("[停止] push しようとしているページのJSが構文エラー(T-06/T-07)")
+                print("=" * 62)
+                print((r.stdout or "").strip()[-1200:])
+
             new_high = [x for x in cur if x["sev"] == "HIGH" and key(x) not in base_keys]
             new_mid = [x for x in cur if x["sev"] != "HIGH" and key(x) not in base_keys]
             if new_high:
@@ -175,16 +244,34 @@ def check_push():
                 print("pre-commit を通していない経路(rebase/cherry-pick/--no-verify/merge)で")
                 print("入った可能性がある。直してから push する。")
 
+            # E-6: リモート側が無い(新規ブランチ・タグ)とき、以前は「比較対象=空集合」
+            # として扱っていたので、赤丸147件が全部「新規」に見えて必ず止まった。
+            # worktree運用では日常的に起きるので、逃げ道が --no-verify しか無くなっていた。
+            # 比較の基準は「その内容が既にリモートのどこかに在るか」なので、
+            # remote が無いときは共通の祖先(既定ブランチとのmerge-base)を使う。
+            base_ref = remote if (remote and remote != "0" * 40) else None
+            if base_ref is None:
+                for cand in ("origin/master", "origin/main", "master", "main"):
+                    if run(["git", "rev-parse", "--verify", "-q", cand]).returncode == 0:
+                        mb = run(["git", "merge-base", local, cand]).stdout.strip()
+                        base_ref = mb or cand
+                        break
             now = approved_set(tmp)
-            before = set()
-            if remote and remote != "0" * 40 and export_tree(remote, old):
-                before = approved_set(old) or set()
+            before = None
+            if base_ref and export_tree(base_ref, old, require=False):
+                before = approved_set(old)
+            if before is None:
+                print()
+                print("[注意] 比較対象(%s)を取れないので、赤丸の増分は判定していない。"
+                      % (base_ref or "なし"))
+                before = now or set()
             gained = sorted((now or set()) - before)
             if gained:
                 ng = True
                 print()
                 print("=" * 62)
-                print("[停止] リモートに無い approved:true が %d件含まれている" % len(gained))
+                print("[停止] %s に無い approved:true が %d件含まれている"
+                      % (base_ref[:12] if base_ref else "比較対象", len(gained)))
                 print("=" * 62)
                 for x in gained[:10]:
                     print("  " + x)
@@ -212,6 +299,10 @@ def main():
     mode = "commit"
     if "--mode" in sys.argv:
         mode = sys.argv[sys.argv.index("--mode") + 1]
+    # E-23: 未知の mode を黙って commit 扱いにしていた。綴り違いで検査が変わるのは危ない。
+    if mode not in ("commit", "merge", "push"):
+        print("--mode は commit / merge / push のいずれか。受け取った値: %r" % mode)
+        return 1
 
     # A-7: どのモードでも、まずフックそのものが正本どおりかを見る
     if not hooks_ok():
@@ -239,9 +330,16 @@ def main():
     tmp = tempfile.mkdtemp(prefix="precommit_")
     try:
         r = run(["git", "checkout-index", "-a", "-f", "--prefix=%s%s" % (tmp, os.sep)])
-        target = tmp if r.returncode == 0 else ROOT
-        if target == ROOT:
-            print("[注意] ステージ内容を取り出せなかったので作業ツリーを検査する。")
+        if r.returncode != 0:
+            print("[停止] ステージ内容を取り出せない。作業ツリーで代用すると、")
+            print("検査する物とコミットされる物が別になるので進めない。")
+            print((r.stderr or "")[-600:])
+            return 1
+        target = tmp
+        miss = [f for f in REQUIRED if not os.path.exists(os.path.join(target, f))]
+        if miss:
+            print("[停止] ステージ済みツリーから必須ファイルが消えている: %s" % ", ".join(miss[:6]))
+            return 1
         r = run([sys.executable, os.path.join("tools", "audit_characters.py")], cwd=target)
         if r.returncode != 0:
             print("監査ツールが失敗した。コミットを止める。")
@@ -250,10 +348,9 @@ def main():
             return 1
         cur = load(os.path.join(target, "tools", "audit_out", "findings.json"))
         approved_now = approved_set(target)
+        base = baseline_of(target)      # E-1: 比べる相手も同じツリーから
     finally:
         shutil.rmtree(tmp, ignore_errors=True)
-
-    base = load(BASELINE)
 
     if "--accept" in sys.argv:
         # A-1: 理由を必須にし、何を飲み込むのかを印字してから書く
@@ -276,7 +373,11 @@ def main():
                 encoding="utf-8").write("%s\t+%d/-%d\t%s\n"
                                         % (run(["git", "rev-parse", "--short", "HEAD"]).stdout.strip(),
                                            len(add_), len(drop), reason))
-        print("理由を tools/audit_baseline_reason.txt に追記した。")
+        # E-23: 以前はどちらもステージしなかったので、違反を通したコミットと
+        # 承認の記録が別のコミットに分かれた(記録だけ永久に入らないこともあった)。
+        run(["git", "add", "tools/audit_baseline.json", "tools/audit_baseline_reason.txt"])
+        print("理由を tools/audit_baseline_reason.txt に追記し、両方をステージした。")
+        print("このコミットに含めること。")
         return 0
 
     cur_keys = {key(x) for x in cur}
@@ -345,10 +446,15 @@ def main():
     # この2件は「根本原因=手順の自己改変」で2回続いた。作業のついでに規則を書き換えると、
     # 変更が作業差分に埋もれて確認を取る機会そのものが消える。
     # 全部は機械で見られないが、以下の2つは見える。
+    # E-12: 以前は「作業」を DATA_FILES + busho/ + skill/ + シミュレーターに限っていたので、
+    # CSS・トップページ・一覧の prerender 出力はルール変更と同梱できた。
+    # 列挙する側を反転させる。W-13が守りたいのは
+    # 「サイトに出る成果物の変更に、規則の変更を紛れ込ませない」なので、
+    # **サイトに出るもの以外を除外**する形にする。
     rule_docs = [f for f in staged
                  if f.startswith("docs/RULE") or f == "docs/character-registration-manual.md"]
-    work = [f for f in staged if f in DATA_FILES
-            or f.startswith(("busho/", "skill/")) or f == "attack-simulator.html"]
+    NOT_WORK = ("docs/", "tools/", ".github/", ".claude/", ".gitignore", "README")
+    work = [f for f in staged if not f.startswith(NOT_WORK)]
     if rule_docs and work:
         ng = True
         print()
@@ -368,15 +474,25 @@ def main():
               "原文側も同じコミットで直す(W-14)。列の追記だけならこの注意は無視してよい。")
 
     # P-03
-    sim = run(["git", "diff", "--cached", "-U0", "--", "attack-simulator.html"]).stdout
-    if sim.strip() and not any(l.startswith("+") and "SIMULATOR_VERSION" in l
-                               for l in sim.split("\n")):
-        ng = True
-        print()
-        print("=" * 62)
-        print("[停止] attack-simulator.html を変えたが SIMULATOR_VERSION が上がっていない")
-        print("=" * 62)
-        print("右下のバッジを同じコミットで更新する(RULES.md P-03)。軽微な変更も対象。")
+    # E-13: 以前は差分に文字列 SIMULATOR_VERSION が現れたかだけを見ていたので、
+    # HTMLコメントにその単語を書くだけで通った。値そのものを HEAD と比べる。
+    if "attack-simulator.html" in staged:
+        def simver(text):
+            m = re.search(r"SIMULATOR_VERSION\s*=\s*['\"]([^'\"]+)", text or "")
+            return m.group(1) if m else None
+        before = simver(run(["git", "show", "HEAD:attack-simulator.html"]).stdout)
+        after = simver(run(["git", "show", ":attack-simulator.html"]).stdout)
+        if after is None:
+            ng = True
+            print()
+            print("[停止] attack-simulator.html から SIMULATOR_VERSION を読み取れない(P-03)")
+        elif before == after:
+            ng = True
+            print()
+            print("=" * 62)
+            print("[停止] attack-simulator.html を変えたが SIMULATOR_VERSION が %s のまま" % after)
+            print("=" * 62)
+            print("右下のバッジを同じコミットで更新する(RULES.md P-03)。軽微な変更も対象。")
 
     # A-5: 入力ファイルを出力に数えていたので警告が構造的に出なかった。出力集合から除く。
     if [f for f in staged if f in DATA_FILES]:

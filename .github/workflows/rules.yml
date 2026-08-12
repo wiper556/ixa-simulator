@@ -1,0 +1,78 @@
+name: ルール検査
+
+# なぜ要るか(第2回レッドチーム E-3 / E-4 / E-22、および E-1 / E-2 の残り):
+#
+# ローカルの門番は全部「ローカルの設定で自分を無効化できる」という同じ形をしている。
+#   ・`core.hooksPath` を別の場所へ向ければフック3つが全部死ぬ(検出役もフックなので一緒に死ぬ)
+#   ・新しいクローンや worktree には、そもそもフックが1つも入っていない
+#   ・`--no-verify` は commit と push の両方にある
+# 検出する側と検出される側が同じ機械に乗っている限り、この形は消えない。
+#
+# GitHub 側で同じ検査を回せば、ローカルで何をしても push した内容は必ず一度は見られる。
+# **これが E-3 / E-4 / E-22 をまとめて塞ぐ唯一の構造的な手。**
+#
+# 注意: これは push されて初めて働く。ローカルに置いただけでは何も起きない。
+
+on:
+  push:
+    branches: ["**"]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: playwright を入れる(check_js が使う)
+        run: |
+          python -m pip install --quiet playwright
+          python -m playwright install --with-deps chromium
+
+      - name: 監査(HIGHがベースラインより増えていないか)
+        run: |
+          python tools/audit_characters.py
+          python - <<'PY'
+          import io, json, sys
+          def load(p):
+              try:
+                  return json.load(io.open(p, encoding="utf-8"))
+              except Exception:
+                  return []
+          def k(x): return "%s|%s|%s" % (x["sev"], x["cat"], x["msg"])
+          cur = load("tools/audit_out/findings.json")
+          base = {k(x) for x in load("tools/audit_baseline.json")}
+          new = [x for x in cur if x["sev"] == "HIGH" and k(x) not in base]
+          print("HIGH %d件(新規%d) / 全%d件"
+                % (sum(1 for x in cur if x["sev"] == "HIGH"), len(new), len(cur)))
+          for x in new:
+              print("  [%s] %s" % (x["cat"], x["msg"][:150]))
+          sys.exit(1 if new else 0)
+          PY
+
+      - name: ルール索引と違反ログの整合
+        run: python tools/rules.py
+
+      - name: ページのJS構文
+        run: python tools/check_js.py
+
+      - name: フックの正本が揃っているか
+        # クローン直後はフックが入っていないのが正常なので、
+        # ここでは「正本のファイルが存在し、中身が期待どおりか」だけを見る。
+        run: |
+          for f in pre-commit pre-merge-commit pre-push; do
+            test -f "tools/hooks/$f" || { echo "tools/hooks/$f が無い"; exit 1; }
+            grep -q "precommit_check.py" "tools/hooks/$f" || {
+              echo "tools/hooks/$f が門番を呼んでいない"; exit 1; }
+          done
+          echo "フックの正本3件を確認した"
+
+      - name: 監査の自己テスト(チェックが本当に鳴るか)
+        run: python tools/audit_selftest.py

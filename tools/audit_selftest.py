@@ -26,9 +26,16 @@ FINDINGS = os.path.join(ROOT, "tools", "audit_out", "findings.json")
 
 # (チェック種別, 触るファイル, 置換前, 置換後)
 CASES = [
+    # E-14(2026-08-12 第2回レッドチーム指摘): 1ルールに1ケースだと、
+    # そのルールの**別の分岐**を丸ごと消しても緑のままになる。
+    # 実際、監査から「合成候補の走査」を削除(=違反S-01そのものの再現)しても
+    # 19/19 OK・exit 0 で通った。分岐ごとに1ケース置く。
     ("S以上でページ無し", "characters.html",
-     # Sランクの初期スキルで試す(Aランクは規約上そもそもページ不要なので対象外になる)
+     # 分岐1: 初期スキル(Aランクは規約上ページ不要なので対象外になる。Sで試す)
      'initialSkill:"天弦ノ威軍"', 'initialSkill:"存在しない架空スキルS"'),
+    ("S以上でページ無し", "characters.html",
+     # 分岐2: 合成候補。S-01はこちらを数えていなかったのが原因だった。
+     'skill:"天弦ノ威軍"', 'skill:"存在しない架空の合成候補SS"'),
     ("sourceCharactersのdb", "skills.html",
      '{name:"佐渡島方治", no:"2614", slot:"S1", db:"kyoku"}',
      '{name:"佐渡島方治", no:"2614", slot:"S1"}'),
@@ -81,9 +88,9 @@ CASES = [
     # W-14(中)の監査欄を「まだ」に戻すと、未対応として数えられ、
     # 同時に根本原因「手順の自己改変」が2回目のまま未解決になる。
     ("違反ログに未対応が残っている", "docs/RULE-VIOLATIONS.md",
-     "| 足した(索引だけの変更をpre-commitが警告 + 件数ずれを監査が検出) |", "| まだ |"),
+     "| 足した(pre-commit + ルール件数の表記ずれ) |", "| まだ |"),
     ("2回目の違反で作業停止中", "docs/RULE-VIOLATIONS.md",
-     "| 足した(ルール文書と作業の混在をpre-commitで停止) |", "| まだ |"),
+     "| 足した(pre-commit) |", "| まだ |"),
 
     ("未確認の根拠なし", "characters-kyoku.html",
      '{level:"TR5", points:"200", effect:null},\n        {level:"TR6", points:"パラレル", effect:null}\n'
@@ -91,6 +98,49 @@ CASES = [
      '{level:"TR5", points:"200", effect:"テスト値"},\n        {level:"TR6", points:"パラレル", effect:null}\n'
      '      ],\n      // 合成テーブルはixanaryスキルページ「百識ノ計」'),
 ]
+
+
+# 「検査を黙らせる書き方」。違反そのものより見つけにくいので、別枠で試す。
+# (種別, 触るファイル, 置換前, 置換後, 何を試しているか)
+EVASIONS = [
+    ("違反ログの行を解釈できない", "docs/RULE-VIOLATIONS.md",
+     "| 2026-08-12 | T-01 |", "| 2026/08/12 | T-01 |",
+     "日付の区切りを / に変える"),
+    ("違反ログの行を解釈できない", "docs/RULE-VIOLATIONS.md",
+     "| 2026-08-12 | W-13 | 手順の自己改変 | 中 |",
+     "| 2026-08-12 | W-13 | 手順の自己改変 |",
+     "列を減らして行を短くする"),
+    # 行頭の空白は正規化して読むので「解釈できない」にはならない。
+    # 正しい期待は「その行が数え落とされないこと」なので、行数で見る。
+    ("__行数__", "docs/RULE-VIOLATIONS.md",
+     "\n| 2026-08-12 | S-01 |", "\n  | 2026-08-12 | S-01 |",
+     "行頭に空白を入れる"),
+    ("違反ログの区分が不正", "docs/RULE-VIOLATIONS.md",
+     "| W-14 | 手順の自己改変 | 中 |", "| W-14 | 手順の自己改変 | 中程度 |",
+     "区分を別の語にして集計から外す"),
+    ("違反ログのタグが表に無い", "docs/RULE-VIOLATIONS.md",
+     "| I-01 | 自己承認 |", "| I-01 | うっかり見落とし |",
+     "タグを新造して2回目判定を外す"),
+    ("監査に足したチェックが実在しない", "docs/RULE-VIOLATIONS.md",
+     "| 足した(pre-commit) |", "| 足した(ちゃんと対応済み) |",
+     "実在しないチェック名を書く"),
+    ("監査に足した根拠が書式外", "docs/RULE-VIOLATIONS.md",
+     "| 足した(PreToolUse) |", "| 足した |",
+     "「足した」とだけ書いて停止を解除する"),
+]
+
+
+def violation_rows():
+    """違反ログから読み取れた行数。書式を崩して行を隠せないかを見るのに使う。"""
+    r = subprocess.run([sys.executable, "-c",
+                        "import sys;sys.path.insert(0,'tools');import rules;"
+                        "print(len([x for x in rules.violations() "
+                        "if not x['parse_error']]))"],
+                       cwd=ROOT, capture_output=True, text=True, encoding="utf-8")
+    try:
+        return int((r.stdout or "").strip())
+    except ValueError:
+        return -1
 
 
 def audit():
@@ -108,8 +158,25 @@ def audit():
 
 
 def main():
+    # E-16: 以前は本物の作業ツリーを書き換えながら走っていた。強制終了すると
+    # 門番フックの正本や違反ログが改変されたまま残り、案内どおり
+    # `install_hooks.py` を実行すると**壊れた正本が .git/hooks に複製されて緑になった**。
+    # どんな状態で中断されても元に戻せるよう、走る前にツリーがきれいであることを要求する。
+    st = subprocess.run(["git", "status", "--porcelain"], cwd=ROOT,
+                        capture_output=True, text=True, encoding="utf-8").stdout.strip()
+    if st and "--force" not in sys.argv:
+        print("[停止] 作業ツリーに未コミットの変更がある。")
+        print("この自己テストは実ファイルに違反を注入して復元する。途中で落ちると")
+        print("注入が残り、それが正本として焼き付く(第2回レッドチーム E-16)。")
+        print("先にコミットするか退避してから実行する。承知のうえなら --force。")
+        for l in st.split("\n")[:10]:
+            print("  " + l)
+        return 1
+
     base = audit()
-    print("注入前: %d種別 / 合計%d件\n" % (len(base), sum(base.values())))
+    base_rows = violation_rows()
+    print("注入前: %d種別 / 合計%d件 / 違反ログ%d行\n"
+          % (len(base), sum(base.values()), base_rows))
     ok = ng = skip = 0
     tmp = tempfile.mkdtemp()
     for cat, rel, old, new in CASES:
@@ -132,6 +199,40 @@ def main():
                 ng += 1
         finally:
             shutil.copy2(bak, path)
+    # E-15: 「違反を入れたら鳴るか」だけでなく「黙らせる書き方をしても鳴るか」を見る。
+    # 検査を回避する形は、違反そのものより見つけにくい。
+    print("\n-- 検査を黙らせようとしたときに、ちゃんと鳴るか --")
+    for cat, rel, old, new, why in EVASIONS:
+        path = os.path.join(ROOT, rel)
+        src = io.open(path, encoding="utf-8", newline="").read()
+        if old not in src:
+            print("  skip %-30s (注入位置が見つからない)" % why)
+            skip += 1
+            continue
+        bak = os.path.join(tmp, "ev_" + rel.replace("/", "_").replace("\\", "_"))
+        shutil.copy2(path, bak)
+        try:
+            io.open(path, "w", encoding="utf-8", newline="").write(src.replace(old, new, 1))
+            if cat == "__行数__":
+                # 「指摘が増えるか」ではなく「行が数え落とされないか」を見るケース
+                got_rows = violation_rows()
+                if got_rows == base_rows:
+                    print("  OK   %-30s 行数が変わらない(%d件)" % (why, got_rows))
+                    ok += 1
+                else:
+                    print("  NG   %-30s 行が消えた(%d件 → %d件)" % (why, base_rows, got_rows))
+                    ng += 1
+                continue
+            got = audit()
+            if got[cat] > base[cat]:
+                print("  OK   %-30s 鳴った(%s)" % (why, cat))
+                ok += 1
+            else:
+                print("  NG   %-30s 黙らせられた(%s が %d件のまま)" % (why, cat, got[cat]))
+                ng += 1
+        finally:
+            shutil.copy2(bak, path)
+
     print("\n検出できた %d / 検出できず %d / 注入位置が無い %d" % (ok, ng, skip))
     after = audit()
     same = after == base
@@ -145,9 +246,22 @@ def main():
         print("  CASES の置換文字列を今のデータに合わせる。")
 
     # 自己テストが用意されていないチェック種別を可視化する
-    covered = {c for c, _f, _o, _n in CASES}
+    #
+    # E-17(2026-08-12 第2回レッドチーム指摘): 以前は audit_characters.py の
+    # `add("...")` という書き方だけを数えていた。rules.py 由来のチェックは
+    # `add(cat, sev, msg)` の1行で橋渡ししているので**まるごと会計の外**にあり、
+    # そこに新しいチェックを足しても「自己テストが無い」に現れなかった。
+    # また set の `.add("初期:%s")` を拾って、存在しない種別を2件表示していた。
+    covered = {c for c, _f, _o, _n in CASES} | {c for c, _f, _o, _n, _w in EVASIONS}
     src = io.open(os.path.join(ROOT, "tools", "audit_characters.py"), encoding="utf-8").read()
-    known = set(re.findall(r'add\("([^"]+)"', src))
+    known = {x for x in re.findall(r'(?<![\w.])add\("([^"]+)"', src) if "%s" not in x}
+    try:
+        sys.path.insert(0, os.path.join(ROOT, "tools"))
+        import rules as _rules
+        known |= set(re.findall(r'out\.append\(\("([^"]+)"',
+                                io.open(_rules.__file__, encoding="utf-8").read()))
+    except Exception as e:
+        print("\n[注意] rules.py の種別を数えられない: %s" % e)
     missing = sorted(known - covered)
     print("\n自己テストが無いチェック種別: %d件" % len(missing))
     for x in missing:

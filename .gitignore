@@ -1,7 +1,16 @@
-﻿node_modules/
+node_modules/
 .DS_Store
-.claude/
 .agent-status
+
+# .claude は丸ごと除外していたが、ここにルール運用の一部が入っている:
+#  ・エージェント定義(どのルール文書を読むか)
+#  ・T-01 を止める PreToolUse フックの設定
+# 除外していると新しいクローンや worktree でこれらが消え、
+# 「機械で止めている」はずのものが静かに無くなる(第2回レッドチーム E-21)。
+# 個人設定(settings.local.json)と作業用ディレクトリだけを除外する。
+.claude/settings.local.json
+.claude/worktrees/
+.claude/sounds/
 
 # Word の一時ロックファイル
 ~$*

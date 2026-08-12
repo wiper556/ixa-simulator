@@ -52,18 +52,72 @@ def rule_ids():
     return out
 
 
+SEV = ("軽", "中", "重")
+
+
+def _table_lines(text, header_key):
+    """指定の見出しを持つ表の、データ行だけを返す。
+
+    E-8 対応: 以前は「| で始まり8列で日付形式に一致する行」だけを拾い、
+    条件を満たさない行は**黙って捨てて**いた。列を1つ減らす・日付を `2026/08/13` にする・
+    行頭に空白を1つ入れる、のどれかで違反行を検査から消せた(実証済み)。
+    表の範囲を先に決めてから、その中の行は全部「解釈できたか」を見る。
+    """
+    out, inside = [], False
+    for raw in text.split("\n"):
+        line = raw.rstrip()
+        s = line.strip()
+        if not s.startswith("|"):
+            if inside and s == "":
+                inside = False
+            continue
+        cells = [x.strip() for x in s.strip("|").split("|")]
+        if not inside:
+            if header_key in cells:
+                inside = True
+            continue
+        if set("".join(cells)) <= set("-: "):     # 区切り行
+            continue
+        out.append((raw, cells))
+    return out
+
+
 def violations():
-    """違反ログの行。列は | 日付 | ID | 根本原因 | 区分 | 何をしたか | 影響 | 対応 | 監査 |"""
+    """違反ログの行。列は | 日付 | ID | 根本原因 | 区分 | 何をしたか | 影響 | 対応 | 監査 |
+
+    解釈できない行は捨てずに parse_error として返す。捨てると隠せてしまうため。
+    """
     rows = []
-    for line in _read(VIOL).split("\n"):
-        if not line.startswith("|"):
+    for raw, c in _table_lines(_read(VIOL), "根本原因"):
+        if len(c) != 8 or not re.match(r"^\d{4}-\d{2}-\d{2}$", c[0]):
+            rows.append({"parse_error": raw.strip()[:110], "date": "", "id": "",
+                         "cause": "", "sev": "", "what": "", "impact": "",
+                         "fix": "", "audit": ""})
             continue
-        c = [x.strip() for x in line.strip().strip("|").split("|")]
-        if len(c) < 8 or not re.match(r"^\d{4}-\d{2}-\d{2}$", c[0]):
-            continue
-        rows.append({"date": c[0], "id": c[1], "cause": c[2], "sev": c[3],
-                     "what": c[4], "impact": c[5], "fix": c[6], "audit": c[7]})
+        rows.append({"parse_error": None, "date": c[0], "id": c[1], "cause": c[2],
+                     "sev": c[3], "what": c[4], "impact": c[5], "fix": c[6],
+                     "audit": c[7]})
     return rows
+
+
+def cause_tags():
+    """ログ末尾のタグ表に載っている根本原因タグ。ここに無いタグは使えない。"""
+    return {c[0] for _raw, c in _table_lines(_read(VIOL), "タグ") if len(c) >= 2}
+
+
+def known_checks():
+    """監査が実際に出しうるチェック種別の名前。
+
+    「監査に足した」と書いたときに、その種別が本当に存在するかを照合するために使う。
+    """
+    names = set(re.findall(r'add\("([^"]+)"', _read(os.path.join(ROOT, "tools",
+                                                                 "audit_characters.py"))))
+    names |= set(re.findall(r'out\.append\(\("([^"]+)"',
+                            _read(os.path.join(ROOT, "tools", "rules.py"))))
+    # 監査ではなく pre-commit / PreToolUse で止めているものも「機械で見ている」に含める
+    names |= {"pre-commit", "pre-push", "pre-merge-commit", "PreToolUse",
+              "audit_selftest", "check_js", "install_hooks"}
+    return names
 
 
 def last_inventory():
@@ -100,18 +154,58 @@ def problems():
                         "最終棚卸しが %s(%d日前)。%d日を超えた。"
                         "RULE-OPERATION.md「定期的な棚卸し」を実施する" % (d, age, STALE_DAYS)))
 
-    rows = violations()
-    if not rows and os.path.exists(VIOL):
+    all_rows = violations()
+    if not all_rows and os.path.exists(VIOL):
         out.append(("違反ログを読めない", "HIGH",
                     "docs/RULE-VIOLATIONS.md から1行も取れない。列構成が変わった可能性"))
 
+    # E-8: 解釈できない行を黙って捨てない。捨てれば書式を崩すだけで隠せる。
+    for r in all_rows:
+        if r["parse_error"]:
+            out.append(("違反ログの行を解釈できない", "HIGH",
+                        "8列 + 日付YYYY-MM-DD の形になっていない: 「%s」。"
+                        "崩れた行は検査から外れるので、書式を直す" % r["parse_error"]))
+    rows = [r for r in all_rows if not r["parse_error"]]
+
     # C-3: 実在しないIDを書けば、そのルールは「初犯」のままにできてしまう
+    tags = cause_tags()
+    checks = known_checks()
     for r in rows:
         if r["id"] not in ids:
             out.append(("違反ログのIDが索引に無い", "HIGH",
                         "%s の ID「%s」は docs/RULES.md に無い。"
                         "実在するルールIDを使う(無いなら先に索引へ追加する)"
                         % (r["date"], r["id"])))
+        # E-9: 区分は3語のみ。「中程度」等と書けば未対応の集計から外れてしまう。
+        if r["sev"] not in SEV:
+            out.append(("違反ログの区分が不正", "HIGH",
+                        "%s %s の区分「%s」は 軽/中/重 のいずれでもない"
+                        % (r["date"], r["id"], r["sev"])))
+        # E-9: タグを毎回新造すれば、根本原因での2回目判定が永久に発火しない。
+        if r["cause"] and r["cause"] not in tags:
+            out.append(("違反ログのタグが表に無い", "HIGH",
+                        "%s %s のタグ「%s」は末尾のタグ表に無い。"
+                        "その場限りのタグを作らない(2回目判定が無効になる)"
+                        % (r["date"], r["id"], r["cause"])))
+        # E-9: 「足した」と書くだけで停止が解除できた。種別名を要求し、実在を照合する。
+        a = r["audit"]
+        if a.startswith("足した"):
+            m = re.match(r"^足した\((.+)\)$", a)
+            if not m:
+                out.append(("監査に足した根拠が書式外", "HIGH",
+                            "%s %s: 「足した(チェック種別)」の形で書く。今は「%s」"
+                            % (r["date"], r["id"], a[:40])))
+            else:
+                # 「/」ではパス名が割れるので区切りに使わない
+                named = [x.strip() for x in re.split(r"[+、,]", m.group(1))]
+                unknown = [x for x in named
+                           if not any(k in x or x in k for k in checks)]
+                if unknown:
+                    out.append(("監査に足したチェックが実在しない", "HIGH",
+                                "%s %s: 「%s」に対応するチェックが見つからない。"
+                                "audit_characters.py / rules.py の種別名か、"
+                                "pre-commit / pre-push / PreToolUse / check_js 等を書く"
+                                % (r["date"], r["id"], "/".join(unknown)[:60])))
 
     # C-3: 2回目の判定。IDだけでなく根本原因のタグでも数える。
     for label, key in (("ルールID", "id"), ("根本原因", "cause")):

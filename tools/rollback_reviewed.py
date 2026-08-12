@@ -21,6 +21,7 @@
 """
 import io
 import os
+import re
 import subprocess
 import sys
 
@@ -50,26 +51,81 @@ def entries_at(ref, path, var, tmpdir):
 
 
 def entry_span(s, no):
-    """データファイル中の、その武将のエントリの範囲 (開始, 終了)。"""
-    for q in ('"', "'"):
-        k = s.find("no:%s%s%s" % (q, no, q))
-        if k < 0:
-            k = s.find("no: %s%s%s" % (q, no, q))
-        if k >= 0:
-            break
-    if k < 0:
+    """データファイル中の、その武将のエントリの範囲 (開始, 終了)。
+
+    E-11(2026-08-12 第2回レッドチーム指摘): 以前は開き括弧を後方探索するとき
+    `("{n", "{ ", "{\\n")` に当たるまで戻っていた。先頭キーが `name`/`no` 以外
+    (`{db:"kyoku", ...`)だと当たらず、**1つ前の武将のエントリ**を指した。
+    `--apply` すると別人の黄丸を落として対象は残る。
+    また文字列の中の `}` で深さ計算が壊れた。
+
+    直し方: 深さを数えながら前へ戻り、深さ0の位置にある `{` を開きとみなす。
+    文字列とコメントは飛ばす。範囲内に目的の `no:` が入っていることを確かめる。
+    """
+    m = re.search(r"""no:\s*["'](%s)["']""" % re.escape(str(no)), s)
+    if not m:
         return None
-    i = s.rfind("{", 0, k)          # エントリの開き括弧まで戻る
-    while i > 0 and s[i:i + 2] not in ("{n", "{ ", "{\n"):
-        i = s.rfind("{", 0, i)
+    k = m.start()
+
+    # k から前へ、深さ0で見つかる '{' がエントリの開き
+    depth = 0
+    i = k
+    while i > 0:
+        i -= 1
+        c = s[i]
+        if c == "}":
+            depth += 1
+        elif c == "{":
+            if depth == 0:
+                break
+            depth -= 1
+    else:
+        return None
+
+    # そこから前向きに、文字列を飛ばしつつ対応する '}' を探す
     d = 0
-    for j in range(i, len(s)):
-        if s[j] == "{":
+    j = i
+    n = len(s)
+    while j < n:
+        c = s[j]
+        if c in "\"'":
+            q = c
+            j += 1
+            while j < n and s[j] != q:
+                j += 2 if s[j] == "\\" else 1
+        elif c == "{":
             d += 1
-        elif s[j] == "}":
+        elif c == "}":
             d -= 1
             if d == 0:
-                return (i, j + 1)
+                span = (i, j + 1)
+                # 取れた範囲に目的のエントリが入っているか(別人を掴んでいないか)
+                return span if i <= k < j else None
+        j += 1
+    return None
+
+
+FAILED = 0
+FLOOR = "docs/rollback-floor.txt"
+
+
+def floor_ref():
+    """これより新しい起点は選べない、という下限。
+
+    E-10(2026-08-12 第2回レッドチーム指摘): 起点を指定するのは巻き戻す本人なので、
+    `--since HEAD` と書けば対象0件にできた(実証済み)。「迷ったら古いほうを取る」は
+    文書にあるだけで、狭い起点を拒む仕組みが無かった。
+
+    `docs/rollback-floor.txt` にユーザーが最後に確認した時点のコミットを書いておき、
+    それより新しい起点を拒否する。この下限を動かせるのはユーザーの確認があったときだけ。
+    """
+    p = os.path.join(ROOT, FLOOR)
+    if not os.path.exists(p):
+        return None
+    for line in io.open(p, encoding="utf-8"):
+        line = line.strip()
+        if line and not line.startswith("#"):
+            return line.split()[0]
     return None
 
 
@@ -82,6 +138,25 @@ def main():
     if git("rev-parse", "--verify", since).returncode != 0:
         print("起点 %s を解決できない。" % since)
         return 1
+
+    fl = floor_ref()
+    if fl and git("rev-parse", "--verify", fl).returncode == 0:
+        # 下限が起点の祖先でない = 起点のほうが古いか無関係 → OK
+        # 下限が起点の子孫でもない、という状態も無関係なので許す
+        newer = git("merge-base", "--is-ancestor", fl, since).returncode == 0
+        same = (git("rev-parse", since).stdout.strip()
+                == git("rev-parse", fl).stdout.strip())
+        if newer and not same:
+            print("[停止] 起点 %s は下限 %s より新しい。" % (since, fl[:12]))
+            print()
+            print("下限は %s に書いてある「ユーザーが最後に確認した時点」。" % FLOOR)
+            print("重い違反の巻き戻しでは、狭く取った誤りは検出できないので、")
+            print("下限より古い起点を使う。下限自体を動かすにはユーザーの確認が要る。")
+            return 1
+    elif fl:
+        print("[注意] 下限 %s を解決できない。%s を確認する。" % (fl[:12], FLOOR))
+    else:
+        print("[注意] %s が無いので下限の検査ができない。" % FLOOR)
 
     import tempfile
     tmp = tempfile.mkdtemp(prefix="rollback_")
@@ -106,20 +181,33 @@ def main():
                                        "  ← 起点に存在しない(新規)" if no not in before else ""))
         total += len(hits)
         if apply_:
+            done, failed = 0, []
             for no in hits:
                 sp = entry_span(s, no)
                 if not sp:
-                    print("   ! No.%s のエントリ位置を特定できない。手で直す。" % no)
+                    failed.append(no)
                     continue
                 a, b = sp
                 seg = s[a:b]
+                hit = False
                 for pat in ("reviewedOk:true", "reviewedOk: true", "reviewedOk:!0"):
                     if pat in seg:
-                        seg = seg.replace(pat, pat.replace("true", "false").replace("!0", "false"))
+                        seg = seg.replace(pat, "reviewedOk:false")
+                        hit = True
                         break
+                if not hit:
+                    # E-11: 置換が空振りしても「戻した」と表示していた。空振りは失敗。
+                    failed.append(no)
+                    continue
                 s = s[:a] + seg + s[b:]
+                done += 1
             io.open(full, "w", encoding="utf-8", newline="").write(s)
-            print("   → 青丸に戻した")
+            print("   → %d件を青丸に戻した" % done)
+            if failed:
+                print("   ! %d件は書き換えられなかった: %s" % (len(failed), ", ".join(failed)))
+                print("     手で直す。戻し漏れたまま先に進まない。")
+                global FAILED
+                FAILED += len(failed)
 
     print()
     if total == 0:

@@ -26,10 +26,17 @@ sys.stdin.reconfigure(encoding="utf-8")
 
 
 def heredoc_bodies(cmd):
-    """ヒアドキュメントの本文だけを取り出す。"""
+    """ヒアドキュメントの本文だけを取り出す。
+
+    E-19(2026-08-12 第2回レッドチーム指摘): 以前の正規表現は区切り語を
+    `[A-Za-z_][A-Za-z0-9_]*` に限り、引用も `'` `"` だけを見ていた。
+    そのため POSIX で正当な `<<\\TAG`(バックスラッシュで引用)と
+    `<<'P-Y'`(ハイフン入り)が素通りした。同じ危険形の別表記なので拾う。
+    """
     out = []
-    for m in re.finditer(r"<<-?\s*(['\"]?)([A-Za-z_][A-Za-z0-9_]*)\1", cmd):
-        tag = m.group(2)
+    # <<  [-]  [\]  ['|"]  TAG  ['|"]
+    for m in re.finditer(r"<<-?\s*(\\?)(['\"]?)([^\s;&|<>()'\"]+)\2", cmd):
+        tag = m.group(3)
         rest = cmd[m.end():]
         end = re.search(r"^\s*%s\s*$" % re.escape(tag), rest, re.M)
         out.append((tag, rest[:end.start()] if end else rest))

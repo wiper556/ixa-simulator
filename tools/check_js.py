@@ -14,6 +14,7 @@ prerender は警告を出していたが、警告は止めないので素通り�
     python tools/check_js.py a.html b.html   # ファイルを指定
 """
 import io
+import json
 import os
 import re
 import sys
@@ -24,10 +25,21 @@ PARSE = ("src => { try { new Function(src); return 'ok'; }"
 
 
 def targets(argv):
+    """既定はルート直下 + 生成物(busho/ skill/)。
+
+    E-20(2026-08-12 第2回レッドチーム指摘): 以前はルート直下だけを見ていたので、
+    生成した574ページは検査の外だった。現状インラインJSは無いが、
+    生成器を変えれば入りうるし、JSON-LDは既に入っている。
+    """
     if argv:
         return argv
-    return [n for n in sorted(os.listdir(ROOT))
-            if n.endswith(".html") and os.path.isfile(os.path.join(ROOT, n))]
+    out = [n for n in sorted(os.listdir(ROOT))
+           if n.endswith(".html") and os.path.isfile(os.path.join(ROOT, n))]
+    for d in ("busho", "skill"):
+        p = os.path.join(ROOT, d)
+        if os.path.isdir(p):
+            out += ["%s/%s" % (d, n) for n in sorted(os.listdir(p)) if n.endswith(".html")]
+    return out
 
 
 def main():
@@ -43,17 +55,37 @@ def main():
             if not os.path.exists(path) or not path.endswith(".html"):
                 continue
             s = io.open(path, encoding="utf-8").read()
-            # 外部読み込み(src=)と、JSONを入れるだけの型(ld+json等)は対象外
             for m in re.finditer(r"<script([^>]*)>([\s\S]*?)</script>", s):
-                attr = m.group(1)
-                if "src=" in attr:
-                    continue
+                attr, body = m.group(1), m.group(2)
+                line = s[:m.start(2)].count("\n") + 1
                 t = re.search(r'type=["\']([^"\']+)', attr)
-                if t and "javascript" not in t.group(1) and t.group(1) != "module":
+                kind = (t.group(1).strip().lower() if t else "")
+
+                # E-20: JSONを入れる型は new Function に通らないので、JSONとして検査する。
+                # 生成器が武将名を埋め込んでいるので、名前に " が混じれば壊れる。
+                # 以前はどこも見ていなかった。
+                if "json" in kind:
+                    if body.strip():
+                        try:
+                            json.loads(body)
+                        except Exception as e:
+                            bad.append((n, line, "JSONとして壊れている: %s" % e))
+                            print("  NG %s (%d行目 <script %s>): JSONが壊れている: %s"
+                                  % (n, line, kind, e))
                     continue
-                r = pg.evaluate(PARSE, m.group(2))
+                if kind and "javascript" not in kind and kind != "module":
+                    continue
+                if not body.strip():
+                    continue
+
+                r = pg.evaluate(PARSE, body)
                 if r != "ok":
-                    line = s[:m.start(1)].count("\n") + 1
+                    # E-20: src付きタグの中身はブラウザが実行しないので落とさないが、
+                    # 「書いたのに動かない」を見逃さないよう知らせる。
+                    if "src=" in attr:
+                        print("  ?  %s (%d行目): src付き<script>の中身が構文エラー: %s"
+                              % (n, line, r))
+                        continue
                     bad.append((n, line, r))
                     print("  NG %s (%d行目からの<script>): %s" % (n, line, r))
         b.close()
