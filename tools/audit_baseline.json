@@ -1,5 +1,20 @@
 [
  {
+  "cat": "S以上でページ無し",
+  "sev": "HIGH",
+  "msg": "「壬生ノ狼牙」のskills.htmlページが無い(1箇所で参照: 初期:10066)"
+ },
+ {
+  "cat": "S以上でページ無し",
+  "sev": "HIGH",
+  "msg": "「筋骨隆々」のskills.htmlページが無い(1箇所で参照: 候補:10067)"
+ },
+ {
+  "cat": "S以上でページ無し",
+  "sev": "HIGH",
+  "msg": "「護国王器」のskills.htmlページが無い(1箇所で参照: 初期:10065)"
+ },
+ {
   "cat": "afterSkill不一致",
   "sev": "HIGH",
   "msg": "「天衣無縫神戒」が武将により別スキルに化けている: →天衣無縫神戒(大谷吉継（2） No.1230 B枠, 六角承禎（2） No.1254 S2枠, 羽柴秀吉 No.1208 B枠, 宇喜多秀家（2） No.1217 A枠, 稲葉一鉄 No.2392 C枠, 高橋紹運 No.2396 C枠) / →幽冥主宰大神(西郷局 No.2583 B枠, 西郷局 No.2583 C枠)"
@@ -7,37 +22,12 @@
  {
   "cat": "ownHiddenCandidate不整合",
   "sev": "HIGH",
+  "msg": "「伏雷蒼樹」: 登録→伏雷蒼樹 / 武将側→幻像鏡花"
+ },
+ {
+  "cat": "ownHiddenCandidate不整合",
+  "sev": "HIGH",
   "msg": "「舞蝶朧月」: 登録→月詠ノ覇威 / 武将側→黒飛燕剣"
- },
- {
-  "cat": "合成表なしで検証済み",
-  "sev": "HIGH",
-  "msg": "[赤丸] 南光坊天海 No.10063: synthesisTable が空のまま"
- },
- {
-  "cat": "合成表なしで検証済み",
-  "sev": "HIGH",
-  "msg": "[赤丸] 世良田二郎三郎 No.10065: synthesisTable が空のまま"
- },
- {
-  "cat": "合成表なしで検証済み",
-  "sev": "HIGH",
-  "msg": "[赤丸] 斎藤一【覇】 No.10066: synthesisTable が空のまま"
- },
- {
-  "cat": "合成表なしで検証済み",
-  "sev": "HIGH",
-  "msg": "[赤丸] 相楽左之助【覇】 No.10067: synthesisTable が空のまま"
- },
- {
-  "cat": "合成表なしで検証済み",
-  "sev": "HIGH",
-  "msg": "[赤丸] 長宗我部元親-復刻- No.10069: synthesisTable が空のまま"
- },
- {
-  "cat": "合成表なしで検証済み",
-  "sev": "HIGH",
-  "msg": "[青丸] 織田信長(2595) No.2595: synthesisTable が空のまま"
  },
  {
   "cat": "categoryLinks漏れ",
@@ -205,6 +195,16 @@
   "msg": "「黒飛燕剣」: 『卓越』があるが skills-takuetsu.html へのリンク無し"
  },
  {
+  "cat": "categoryLinks漏れ",
+  "sev": "MID",
+  "msg": "「牙突・弐式」: 『無尽』があるが skills-mujin.html へのリンク無し"
+ },
+ {
+  "cat": "categoryLinks漏れ",
+  "sev": "MID",
+  "msg": "「砕島天鬼槍」: 『卓越』があるが skills-takuetsu.html へのリンク無し"
+ },
+ {
   "cat": "ownHiddenCandidate未設定",
   "sev": "MID",
   "msg": "「天廟斬算」: 武将側では→八重言代主神"
@@ -312,12 +312,27 @@
  {
   "cat": "skillDetailに読点",
   "sev": "MID",
+  "msg": "[武将] 南光坊天海: 「、」が1個"
+ },
+ {
+  "cat": "skillDetailに読点",
+  "sev": "MID",
   "msg": "[武将] 百地三太夫: 「、」が2個"
  },
  {
   "cat": "skillDetailに読点",
   "sev": "MID",
   "msg": "[武将] 長尾景虎: 「、」が2個"
+ },
+ {
+  "cat": "skillDetailに読点",
+  "sev": "MID",
+  "msg": "[武将] 世良田二郎三郎: 「、」が2個"
+ },
+ {
+  "cat": "skillDetailに読点",
+  "sev": "MID",
+  "msg": "[武将] 斎藤一【覇】: 「、」が1個"
  },
  {
   "cat": "skillDetailに読点",
@@ -823,6 +838,11 @@
   "cat": "skillDetailに読点",
   "sev": "MID",
   "msg": "[スキル] 飛幻忍術: 「、」が1個"
+ },
+ {
+  "cat": "skillDetailに読点",
+  "sev": "MID",
+  "msg": "[スキル] 虚実法容: 「、」が1個"
  },
  {
   "cat": "未計算式",

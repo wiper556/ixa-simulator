@@ -457,8 +457,11 @@ def main():
             add("フィールドの省略", "MID", "%s No.%s: %s が無い(nullで明示する)"
                 % (g["name"], g["no"], "/".join(lack)))
 
-    # D-15: synthesisTable が埋まっていないのに黄丸/赤丸になっている
+    # D-15: synthesisTable が埋まっていないのに黄丸/赤丸になっている。
+    # 青丸(登録しただけ)は未完成でよいので対象外([[project_registration_manualization]])。
     for g, src in targets:
+        if status(g) not in ("黄丸", "赤丸"):
+            continue
         st = g.get("synthesisTable") or []
         if not st or all(not r.get("skill") for r in st):
             add("合成表なしで検証済み", "HIGH", "[%s] %s No.%s: synthesisTable が空のまま"
