@@ -1549,6 +1549,20 @@ const specialSkills = {
   },
 
   /* ============ ユーザー指定スキル名リスト・チャンク2/4 ============ */
+  '華焰': {
+    noMimic: true, // 「模倣不可」明記
+    targetTroopCategories: ['兵器兵科(砲兵科)','兵器兵科(器兵科)'], // 対象:砲/器
+    activationType: 'triggered', statTarget: 'def',
+    trTable: { base:375 }, // 防御375%上昇(LV10のみ・鍛錬情報なし)
+    baseRate: 58, // 確率+58%(LV10)。LV1は+19%
+    note: 'A(防御)。確率:LV1+19%→LV10+58%/対象:砲器。防御375%上昇(LV10)。' +
+          '「所領防御陣形に配置時、この武将の編成コスト消費を-1.5する(模倣不可)」は' +
+          '部隊コストを一律で下げる無尽(hasMujin)とは別物で、所領防御陣形に置いたときだけ' +
+          'この武将自身のコストが下がる自己限定型。陣形配置を扱う仕組みが無いため計算エンジン未対応(参考データのみ)。' +
+          '駒形由美(No.2615)固有スキル。スキル名は「華焔」ではなく「華焰」' +
+          '(ixanaryのURL・ixawikiのHTML実体参照&#28976;がともに焰。カード画像では判別不能)。' +
+          'ixanary.com/cards/2615とixawiki BushoCard/2615で確認(2026-08-12)。'
+  },
   '火槍猛進': {
     targetTroopCategories: ['槍兵科','弓兵科','兵器兵科(器兵科)'],
     targetSoldierNames: ['鉄砲足軽'],
@@ -3891,7 +3905,7 @@ const generalGrowthDB = [
   { name:'織田信長(2595)', no:'2595', rankGrades:{yari:'A',yumi:'A',uma:'A',ki:'S'}, cost: 3.5, initialSkill:'我こそ絶対悪よ', lv0Troops:3720, atkBase:1090, atkGrowth:42, defBase:1090, defGrowth:42, tacticsBase:560, tacticsGrowth:2.5, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'2026-08-10追加のカード画像(スキルLV1形式)とixanary.comで一括登録。コスト・指揮兵数・初期値・成長値はixanaryの武将データ表。指揮兵数はマニュアルB-01のとおり★0-0の値をlv0Troopsに入れている。カード画像+ixawikiの2ソースで統率(槍A/弓A/馬A/器S)一致確認(2026-08-11)。武将DBページ(characters-kyoku.html)登録済み。DRIFTERSコラボ。同名の別カード多数と区別するためNo併記。ixanary記載のLV10性能: 確率：+100% / 対象 槍砲器 / 攻撃：350% 防御：350%上昇 / このスキルを所持する武将の全スキルの卓越確率に30%を加算する（模倣不可）。' },
   { name:'悠久山安慈', no:'2612', cost: 4.5, initialSkill:'二重の極み', lv0Troops:4270, atkBase:1110, atkGrowth:44, defBase:1110, defGrowth:44, tacticsBase:520, tacticsGrowth:2.5, rankGrades:{yari:'A',yumi:'A',uma:'A',ki:'A'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'カード画像(LV1形式)+ixanary.com/cards/2612+ixawiki BushoCard/2612で確認。コスト4.5・指揮4270(★0-0)・初期値1110/1110/520・成長+44/+44/+2.5。統率はカード画像とixawikiの2ソース一致(槍A/弓A/馬A/器A)。覇表記なし。LV10性能: 確率+100% / 対象 全 / 攻撃340%上昇 防御340%上昇 / 卓越:追加確率100%で攻防効果が2倍(模倣不可)。るろうに剣心コラボ。TR別の数値はixanary・ixawikiのどちらにも記載なし。' },
   { name:'佐渡島方治', no:'2614', cost: 3, rankGrades:{yari:'B',yumi:'S',uma:'B',ki:'S'}, initialSkill:'百識ノ計', lv0Troops:3380, atkBase:1060, atkGrowth:37, defBase:1060, defGrowth:37, tacticsBase:580, tacticsGrowth:2.5, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'極。職業「将」。Cost3。カード画像(スキルLV1形式)+ixanary.com/cards/2614+ixawiki BushoCard/2614佐渡島方治の3点で確認(2026-08-12)。指揮兵数はマニュアルB-01のとおり★0-0の値(3380)をlv0Troopsに入れている。統率(槍B/弓S/馬B/器S)はカード画像とixawikiの2ソース一致。覇表記なし。LV10性能: 確率+100%/対象 弓器焙/攻撃390%上昇・防御390%上昇/部隊内武将の全スキルの卓越追加確率が25%上昇(模倣不可・特殊効果は自部隊内では重複不可)。TR別数値はixanary・ixawikiのどちらにも記載が無い(A・鍛錬情報なし)。るろうに剣心コラボカード。' },
-  { name:'駒形由美', no:'2615', cost: 3, initialSkill:'華焰', lv0Troops:3390, atkBase:1010, atkGrowth:32, defBase:1120, defGrowth:45, tacticsBase:520, tacticsGrowth:2.5, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'2026-08-10追加のカード画像(スキルLV1形式)とixanary.comで一括登録。コスト・指揮兵数・初期値・成長値はixanaryの武将データ表。指揮兵数はマニュアルB-01のとおり★0-0の値をlv0Troopsに入れている。**統率(rankGrades)は未取得**・覇かどうか/合成候補/スキルのTR別数値も未確認のため要検証。ixanary記載のLV10性能: 確率：+58% / 対象 砲器 / 防御：375%上昇 / 所領防御陣形に配置時、この武将の編成コスト消費を-1.5する（模倣不可）。' },
+  { name:'駒形由美', no:'2615', cost: 3, rankGrades:{yari:'A',yumi:'A',uma:'B',ki:'S'}, initialSkill:'華焰', lv0Troops:3390, atkBase:1010, atkGrowth:32, defBase:1120, defGrowth:45, tacticsBase:520, tacticsGrowth:2.5, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'極。Cost3。カード画像(スキルLV1形式)+ixanary.com/cards/2615+ixawiki BushoCard/2615駒形由美の3点で確認(2026-08-12)。統率(槍A/弓A/馬B/器S)はカード画像とixawikiの2ソース一致。覇表記なし。カード上の指揮兵士数3990は限界突破済みの表示なので、B-01どおり★0-0の3390をlv0Troopsに採用。LV10性能: 確率+58%/対象 砲器/防御375%上昇/所領防御陣形に配置時、この武将の編成コスト消費を-1.5する(模倣不可)。TR別数値はixanary・ixawikiのどちらにも記載が無い(A・鍛錬情報なし)。るろうに剣心コラボカード。' },
   { name:'帰蝶', no:'2617', cost: 3, initialSkill:'聖夜ノ守り', lv0Troops:3540, atkBase:1080, atkGrowth:46, defBase:1200, defGrowth:61, tacticsBase:550, tacticsGrowth:2.5, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'2026-08-10追加のカード画像(スキルLV1形式)とixanary.comで一括登録。コスト・指揮兵数・初期値・成長値はixanaryの武将データ表。指揮兵数はマニュアルB-01のとおり★0-0の値をlv0Troopsに入れている。**統率(rankGrades)は未取得**・覇かどうか/合成候補/スキルのTR別数値も未確認のため要検証。ixanary記載のLV10性能: 確率:+55% / 対象 全 / 防御：485%上昇 / 所領防御陣形に配置時、この武将の編成コスト消費を-2する（模倣不可）。' },
   { name:'ねね', no:'2618', cost: 3, initialSkill:'豊国安寧', lv0Troops:3540, atkBase:1050, atkGrowth:44, defBase:1180, defGrowth:58, tacticsBase:520, tacticsGrowth:2.5, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'2026-08-10追加のカード画像(スキルLV1形式)とixanary.comで一括登録。コスト・指揮兵数・初期値・成長値はixanaryの武将データ表。指揮兵数はマニュアルB-01のとおり★0-0の値をlv0Troopsに入れている。**統率(rankGrades)は未取得**・覇かどうか/合成候補/スキルのTR別数値も未確認のため要検証。ixanary記載のLV10性能: 確率：+50% / 対象 全 / 防御：500%上昇 / 所領防御陣形に配置時、この武将の編成コスト消費を-2する（模倣不可）。' },
   { name:'甲斐姫', no:'2619', cost: 4.5, initialSkill:'美人剛腕', lv0Troops:4590, atkBase:1050, atkGrowth:44, defBase:1180, defGrowth:58, tacticsBase:520, tacticsGrowth:2.5, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'2026-08-10追加のカード画像(スキルLV1形式)とixanary.comで一括登録。コスト・指揮兵数・初期値・成長値はixanaryの武将データ表。指揮兵数はマニュアルB-01のとおり★0-0の値をlv0Troopsに入れている。**統率(rankGrades)は未取得**・覇かどうか/合成候補/スキルのTR別数値も未確認のため要検証。ixanary記載のLV10性能: 確率：+55% / 対象 全 / 防御：780%上昇 / （職業「姫」の武将に対してのみ効果あり）。' },
