@@ -263,7 +263,10 @@
     el.innerHTML = list.map(function(s){
       const visibleSources = mjHideS2 ? (s.sourceCharacters || []).filter(function(c){ return !mjIsS2Slot(c.slot); }) : (s.sourceCharacters || []);
       const sources = visibleSources.map(function(c){
-        return '<a href="characters.html#'+encodeURIComponent(c.no)+'">'+mjEscapeHtml(c.name)+'('+mjEscapeHtml(c.slot)+')</a>';
+        // 極・傑の武将は別ページなので、dbを見て行き先を切り替える
+      const dbPage = c.db === 'kyoku' ? 'characters-kyoku.html'
+                   : c.db === 'ketsu' ? 'characters-ketsu.html' : 'characters.html';
+      return '<a href="'+dbPage+'#'+encodeURIComponent(c.no)+'">'+mjEscapeHtml(c.name)+'('+mjEscapeHtml(c.slot)+')</a>';
       }).join('<br>') || '-';
       return '<tr><td><a href="'+s.skillPage+'">'+mjEscapeHtml(s.name)+'</a></td><td>'+mjEscapeHtml(s.baseRate||'-')+'</td><td>'+mjColorizeMujin(s.target||'-')+'</td>'
         + '<td>'+mjColorizeMujin(s.costReduction||'-')+'</td>'

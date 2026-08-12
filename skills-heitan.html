@@ -225,7 +225,8 @@
     el.innerHTML = list.map(function(s){
       const visibleSources = htHideS2 ? (s.sourceCharacters || []).filter(function(c){ return !htIsS2Slot(c.slot); }) : (s.sourceCharacters || []);
       const sources = visibleSources.map(function(c){
-        const dbPage = c.db === 'kyoku' ? 'characters-kyoku.html' : 'characters.html';
+        const dbPage = c.db === 'kyoku' ? 'characters-kyoku.html'
+                     : c.db === 'ketsu' ? 'characters-ketsu.html' : 'characters.html';
         return '<a href="'+dbPage+'#'+encodeURIComponent(c.no)+'">'+htEscapeHtml(c.name)+'('+htEscapeHtml(c.slot)+')</a>';
       }).join('<br>') || '-';
       return '<tr><td><a href="'+s.skillPage+'">'+htEscapeHtml(s.name)+'</a></td><td>'+htEscapeHtml(s.baseRate||'-')+'</td><td>'+htColorizeMujin(s.target||'-')+'</td>'

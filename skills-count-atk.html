@@ -427,7 +427,8 @@
       const s = row.s;
       const visibleSources = scHideS2 ? (s.sourceCharacters || []).filter(function(c){ return !scIsS2Slot(c.slot); }) : (s.sourceCharacters || []);
       const sources = visibleSources.map(function(c){
-        const dbPage = c.db === 'kyoku' ? 'characters-kyoku.html' : 'characters.html';
+        const dbPage = c.db === 'kyoku' ? 'characters-kyoku.html'
+                     : c.db === 'ketsu' ? 'characters-ketsu.html' : 'characters.html';
         return '<a href="'+dbPage+'#'+encodeURIComponent(c.no)+'">'+scEscapeHtml(c.name)+'('+scEscapeHtml(c.slot)+')</a>';
       }).join('<br>') || '-';
       const lv10Value = scFormatNum(row.lv10Num);
