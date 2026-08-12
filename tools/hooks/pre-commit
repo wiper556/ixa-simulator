@@ -1,0 +1,11 @@
+#!/bin/sh
+# ルール運用の門番(docs/RULE-OPERATION.md)。
+# 「コミット前に監査を実行する」を人の裁量から外すためのフック。
+#
+# このファイルが正本。.git/hooks/ の中身は tools/install_hooks.py が複製したもので、
+# 監査(A-7)が両者の一致を見ている。.git/hooks/ を直接編集しても、次の監査で差分が出る。
+#
+# 一時的に外したいときは git commit --no-verify だが、
+# 使ったらその旨を報告すること(黙って迂回しない)。
+# なお --no-verify で通した内容も pre-push で改めて検査される。
+exec python tools/precommit_check.py --mode commit

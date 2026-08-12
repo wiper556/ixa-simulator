@@ -276,11 +276,16 @@ def main():
         if "防御参加武将数" in text and not any("count" in (c or "") for c in cl):
             add("categoryLinks漏れ", "MID", "「%s」: 人数依存一覧へのリンク無し" % s["name"])
 
-    # 未計算の式
+    # 未計算の式。
+    # 母数が決まっているのは [[feedback_count_dependent_skill_format]] の2つだけ
+    # (部隊内系=4人 / 防御参加武将数=280人)。
+    # 「飛翔を持たない防御参加武将数」「自軍攻撃武将数」のような、敵味方の編成しだいで
+    # 決まる部分集合には母数が無いので、数値化を求めない(サイト全体で symbolic のまま揃えている)。
+    KNOWN_BASE = re.compile(r"[×x]\s*(?<!飛翔を持たない)(防御参加武将数|部隊内[^\d\s)=]*武将数|無尽武将数)")
     for g, src in targets:
         for row in g.get("trTable") or []:
             eff = row.get("effect") or ""
-            if re.search(r"[×x]\s*(防御参加武将数|無尽武将数|[^\d\s)=]*武将数|人数)", eff) and "=" not in eff:
+            if KNOWN_BASE.search(eff) and not re.search(r"=\s*[\d.]", eff):
                 add("未計算式", "MID", "[%s] %s No.%s %s: %s" % (status(g), g["name"], g["no"], row.get("level"), eff))
 
     # 「未確認」と表示される段には、調べた先の記録が要る(RULES.md I-01)
@@ -497,6 +502,33 @@ def main():
         if m and "min-width:0" not in m.group(1).replace(" ", ""):
             add("横スクロール対策の欠落", "HIGH",
                 ".site-main に min-width:0 が無い([[feedback_horizontal_scroll_root_cause]])")
+
+    # C-3/C-4/D-5: ルール索引と違反ログ自体の腐りを見る。
+    # 索引が腐ると「ルールを認識できない」状態に戻るので、データと同じ扱いで監査する。
+    try:
+        sys.path.insert(0, os.path.join(ROOT, "tools"))
+        import rules as _rules
+        _rules.ROOT = ROOT
+        _rules.RULES = os.path.join(ROOT, "docs", "RULES.md")
+        _rules.VIOL = os.path.join(ROOT, "docs", "RULE-VIOLATIONS.md")
+        for cat, sev, msg in _rules.problems():
+            add(cat, sev, msg)
+    except Exception as e:
+        add("ルール索引の検査が動かない", "HIGH", "tools/rules.py が失敗: %s" % e)
+
+    # A-7: 門番のフックそのものが正本どおりに入っているか。
+    # ここを見ないと「機械で止めている」という前提が確かめられない(.git/hooks はgit管理外)。
+    # precommit_check は取り出した一時ツリーで監査を回すので、そこでは .git が無い。
+    # 本物のリポジトリで走ったときだけ見る(本物では毎回見るので抜け道にはならない)。
+    if os.path.exists(os.path.join(ROOT, ".git")):
+        try:
+            sys.path.insert(0, os.path.join(ROOT, "tools"))
+            from install_hooks import diffs as _hook_diffs
+            for h, why in _hook_diffs():
+                add("フックが正本と違う", "HIGH",
+                    "%s: %s(python tools/install_hooks.py で入れ直す)" % (h, why))
+        except Exception as e:
+            add("フックが正本と違う", "HIGH", "フックの確認自体ができない: %s" % e)
 
     # V-05: サイト上の出典言及
     for n in sorted(os.listdir(ROOT)):

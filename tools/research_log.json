@@ -2,13 +2,23 @@
  "TR:一刀ノ伝承": [
   {
    "date": "2026-08-12",
+   "evidence": {
+    "bytes": 27663,
+    "sha256": "b7bc0a158d1db59b",
+    "status": 200
+   },
    "found": false,
-   "result": "TR1〜4のセルが空",
+   "result": "TR1〜4のセルが空(TR1/TR2/TR3/TR4)",
    "source": "ixanary",
    "url": "https://ixanary.com/skills/%E4%B8%80%E5%88%80%E3%83%8E%E4%BC%9D%E6%89%BF"
   },
   {
    "date": "2026-08-12",
+   "evidence": {
+    "bytes": 40026,
+    "sha256": "ef6cfaa7c7852510",
+    "status": 200
+   },
    "found": false,
    "result": "TR行: TR5",
    "source": "ixawiki",
@@ -45,15 +55,25 @@
  "TR:文治興隆": [
   {
    "date": "2026-08-12",
+   "evidence": {
+    "bytes": 29408,
+    "sha256": "06cf86182c1fa27e",
+    "status": 200
+   },
    "found": false,
-   "result": "TR1〜TR4の<td>が空(生HTMLで確認)",
+   "result": "TR1〜4のセルが空(TR1/TR2/TR3/TR4)",
    "source": "ixanary",
    "url": "https://ixanary.com/skills/%E6%96%87%E6%B2%BB%E8%88%88%E9%9A%86"
   },
   {
    "date": "2026-08-12",
+   "evidence": {
+    "bytes": 39461,
+    "sha256": "6a7e4df5351cb43f",
+    "status": 200
+   },
    "found": false,
-   "result": "TR1〜TR4の記載なし(または該当ページ未作成)",
+   "result": "TR行: TR5",
    "source": "ixawiki",
    "url": "https://ixawiki.com/index.php?BushoCard%2F7404%C2%E7%C6%E2%BC%FE%CB%C9%B2%F0"
   }
@@ -102,15 +122,25 @@
   },
   {
    "date": "2026-08-12",
+   "evidence": {
+    "bytes": 30499,
+    "sha256": "e24e0c76fff2c74c",
+    "status": 200
+   },
    "found": false,
-   "result": "TR1〜TR4の<td>が空(生HTMLで確認)",
+   "result": "TR1〜4のセルが空(TR1/TR2/TR3/TR4)",
    "source": "ixanary",
    "url": "https://ixanary.com/skills/%E7%99%BD%E9%8A%80%E5%8F%8C%E9%B6%B4"
   },
   {
    "date": "2026-08-12",
+   "evidence": {
+    "bytes": 39583,
+    "sha256": "dffc411dfce3260a",
+    "status": 200
+   },
    "found": false,
-   "result": "TR1〜TR4の記載なし(または該当ページ未作成)",
+   "result": "TR行: TR5",
    "source": "ixawiki",
    "url": "https://ixawiki.com/index.php?BushoCard%2F7403%B3%F7%C0%B8%BB%E1%B6%BF"
   }
@@ -118,15 +148,25 @@
  "TR:笹ノ墓標": [
   {
    "date": "2026-08-12",
+   "evidence": {
+    "bytes": 30733,
+    "sha256": "6c13b715d7227464",
+    "status": 200
+   },
    "found": false,
-   "result": "TR1の<td>が空(生HTMLで確認)",
+   "result": "TR1〜4のセルが空(TR1/TR3/TR4)",
    "source": "ixanary",
    "url": "https://ixanary.com/skills/%E7%AC%B9%E3%83%8E%E5%A2%93%E6%A8%99"
   },
   {
    "date": "2026-08-12",
-   "found": false,
-   "result": "TR1の記載なし(または該当ページ未作成)",
+   "evidence": {
+    "bytes": 39203,
+    "sha256": "5ac3ae64d1848523",
+    "status": 200
+   },
+   "found": true,
+   "result": "TR行: TR2",
    "source": "ixawiki",
    "url": "https://ixawiki.com/index.php?BushoCard%2F7019%B2%C4%BB%F9%BA%CD%C2%A2"
   }
@@ -143,15 +183,25 @@
  "TR:虎巫": [
   {
    "date": "2026-08-12",
+   "evidence": {
+    "bytes": 30300,
+    "sha256": "4ff64b1a6265e2ea",
+    "status": 200
+   },
    "found": false,
-   "result": "TR1〜TR4の<td>が空(生HTMLで確認)",
+   "result": "TR1〜4のセルが空(TR1/TR2/TR3/TR4)",
    "source": "ixanary",
    "url": "https://ixanary.com/skills/%E8%99%8E%E5%B7%AB"
   },
   {
    "date": "2026-08-12",
+   "evidence": {
+    "bytes": 40486,
+    "sha256": "cdc12257785866c3",
+    "status": 200
+   },
    "found": false,
-   "result": "TR1〜TR4の記載なし(または該当ページ未作成)",
+   "result": "TR行: TR5",
    "source": "ixawiki",
    "url": "https://ixawiki.com/index.php?BushoCard%2F2855%CB%BE%B7%EE%C0%E9%C2%E5%BD%F7"
   }
@@ -159,15 +209,25 @@
  "TR:虎落": [
   {
    "date": "2026-08-12",
+   "evidence": {
+    "bytes": 28310,
+    "sha256": "af094299287f2105",
+    "status": 200
+   },
    "found": false,
-   "result": "TR1の<td>が空(生HTMLで確認)",
+   "result": "TR1〜4のセルが空(TR1/TR3/TR4)",
    "source": "ixanary",
    "url": "https://ixanary.com/skills/%E8%99%8E%E8%90%BD"
   },
   {
    "date": "2026-08-12",
+   "evidence": {
+    "bytes": 7106,
+    "sha256": "8ebfa5645e2a03e6",
+    "status": 200
+   },
    "found": false,
-   "result": "TR1の記載なし(または該当ページ未作成)",
+   "result": "ページ未作成",
    "source": "ixawiki",
    "url": "https://ixawiki.com/index.php?BushoCard%2F7021%CB%CC%BE%F2%BB%E1%BE%C8"
   }
@@ -193,15 +253,25 @@
  "TR:飛蝶中入": [
   {
    "date": "2026-08-12",
+   "evidence": {
+    "bytes": 28667,
+    "sha256": "57ffc13ef7d1c483",
+    "status": 200
+   },
    "found": false,
-   "result": "TR1の<td>が空(生HTMLで確認)",
+   "result": "TR1〜4のセルが空(TR1/TR3/TR4)",
    "source": "ixanary",
    "url": "https://ixanary.com/skills/%E9%A3%9B%E8%9D%B6%E4%B8%AD%E5%85%A5"
   },
   {
    "date": "2026-08-12",
-   "found": false,
-   "result": "TR1の記載なし(または該当ページ未作成)",
+   "evidence": {
+    "bytes": 39223,
+    "sha256": "7d1f8986df953cc7",
+    "status": 200
+   },
+   "found": true,
+   "result": "TR行: TR2",
    "source": "ixawiki",
    "url": "https://ixawiki.com/index.php?BushoCard%2F7017%C3%D3%C5%C4%B9%B1%B6%BD"
   }

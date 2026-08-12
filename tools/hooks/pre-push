@@ -1,0 +1,7 @@
+#!/bin/sh
+# A-6(2026-08-12レッドチーム指摘)への対応。最後の関所。
+#
+# pre-commit は rebase・cherry-pick・--no-verify で素通りできる。
+# それらは全部「push する」で合流するので、ここで push される中身そのものを検査する。
+# 途中の経路が何であれ、外に出る内容は必ず一度は監査を通ることになる。
+exec python tools/precommit_check.py --mode push

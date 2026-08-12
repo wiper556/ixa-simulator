@@ -35,20 +35,60 @@ def _save(d):
         json.dump(d, f, ensure_ascii=False, indent=1, sort_keys=True)
 
 
-def log(key, source, url, result, found):
-    """1回の確認を記録する。同じ key×source は上書き(最後に見た結果を残す)。"""
+def _write(key, source, url, result, found, evidence):
     d = _load()
     entries = [e for e in d.get(key, []) if e["source"] != source]
     entries.append({"source": source, "url": url, "result": result,
-                    "found": bool(found),
+                    "found": bool(found), "evidence": evidence,
                     "date": datetime.date.today().isoformat()})
     d[key] = sorted(entries, key=lambda e: e["source"])
     _save(d)
 
 
-def sources(key):
-    """その項目で当たった情報源の一覧。"""
-    return [e["source"] for e in _load().get(key, [])]
+def log(key, source, url, result, found):
+    """手書きの記録。証拠が無いので evidence:"manual" として残る。
+    監査は証拠つき(fetch_and_log)の件数だけを2ソース判定に数える。"""
+    _write(key, source, url, result, found, "manual")
+
+
+def fetch_and_log(key, source, url, encoding="utf-8", judge=None):
+    """実際に取得してから記録する。手書きで済ませられないようにするための入口。
+
+    A-9(2026-08-12レッドチーム指摘)への対応。log() は文字列を受け取るだけなので、
+    ワンライナーで「見たことにする」のを止められなかった。こちらは自分でHTTPを叩き、
+    ステータス・本文長・本文のSHA256を証拠として残す。
+
+    judge(text) -> (result:str, found:bool) を渡すと、取得本文から判定まで行う。
+    """
+    import hashlib
+    import urllib.request
+    try:
+        req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+        with urllib.request.urlopen(req, timeout=30) as r:
+            raw = r.read()
+            status = r.getcode()
+    except Exception as e:
+        _write(key, source, url, "取得失敗: %s" % e, False,
+               evidence={"status": None, "bytes": 0, "sha256": None})
+        return None
+    text = raw.decode(encoding, "replace")
+    result, found = judge(text) if judge else ("取得した(%d bytes)" % len(raw), True)
+    _write(key, source, url, result, found,
+           evidence={"status": status, "bytes": len(raw),
+                     "sha256": hashlib.sha256(raw).hexdigest()[:16]})
+    return text
+
+
+def sources(key, verified_only=False):
+    """その項目で当たった情報源の一覧。
+    verified_only=True なら fetch_and_log で取得した(証拠つきの)ものだけ返す。"""
+    out = []
+    for e in _load().get(key, []):
+        ev = e.get("evidence")
+        if verified_only and not (isinstance(ev, dict) and ev.get("status")):
+            continue
+        out.append(e["source"])
+    return out
 
 
 def checked(key, minimum=2):

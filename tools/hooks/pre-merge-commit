@@ -1,0 +1,9 @@
+#!/bin/sh
+# A-6(2026-08-12レッドチーム指摘)への対応。
+# git merge が作るコミットでは pre-commit が呼ばれない。worktree運用でマージが日常なので、
+# 「マージなら監査を通さずに入れられる」という抜け道になっていた。
+#
+# ※ fast-forward マージと、コンフリクト解決後の git commit は
+#    このフックを通らない(前者はコミットを作らない/後者は pre-commit を通る)。
+#    どちらも最終的には pre-push が受け止める。
+exec python tools/precommit_check.py --mode merge

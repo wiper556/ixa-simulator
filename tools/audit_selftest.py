@@ -13,6 +13,7 @@
 import io
 import json
 import os
+import re
 import shutil
 import subprocess
 import sys
@@ -107,8 +108,27 @@ def main():
             shutil.copy2(bak, path)
     print("\n検出できた %d / 検出できず %d / 判定不能・スキップ %d" % (ok, ng, skip))
     after = audit()
-    print("復元後に出ている種別が元と同じ:", after == base)
-    return 1 if ng else 0
+    same = after == base
+    print("復元後に出ている種別が元と同じ:", same)
+
+    # A-8(2026-08-12レッドチーム指摘): skipを成功扱いにすると、データが変わって
+    # 注入位置が見つからなくなったときに「0 OK / 0 NG / 全部skip」で合格に見えてしまう。
+    # skipは失敗として扱い、直すべき場所を出す。
+    if skip:
+        print("\n[失敗] スキップ/判定不能が %d件。" % skip)
+        print("  ・注入位置が見つからない → CASES の置換文字列を今のデータに合わせる")
+        print("  ・元から出ている → その指摘を先に解消しないと、このチェックは検証できない")
+
+    # 自己テストが用意されていないチェック種別を可視化する
+    covered = {c for c, _f, _o, _n in CASES}
+    src = io.open(os.path.join(ROOT, "tools", "audit_characters.py"), encoding="utf-8").read()
+    known = set(re.findall(r'add\("([^"]+)"', src))
+    missing = sorted(known - covered)
+    print("\n自己テストが無いチェック種別: %d件" % len(missing))
+    for x in missing:
+        print("   " + x)
+
+    return 1 if (ng or skip or not same) else 0
 
 
 sys.exit(main())
