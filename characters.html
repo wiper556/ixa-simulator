@@ -677,7 +677,9 @@
         {level:"LV10", points:"-", effect:"全　確率 100% / 攻撃740%上昇(飛翔再定義)"},
         {level:"TR1", points:"10", effect:"全　確率 100% / 攻撃740%上昇+防御560%上昇(飛翔再定義)"},
         {level:"TR2", points:"40", effect:"全　確率 100% / 攻撃940%上昇+防御940%上昇(飛翔再定義)"},
-        {level:"TR3", points:"90", effect:"全　確率 100% / 攻撃1270%上昇+防御1270%上昇(飛翔再定義)"}
+        {level:"TR3", points:"90", effect:"全　確率 100% / 攻撃1270%上昇+防御1270%上昇(飛翔再定義)"},
+        {level:"TR4", points:"150", effect:null},
+        {level:"TR5", points:"200", effect:null}
       ],
       // 45do.info確認(生HTML照合済み、2026-07-31): https://45do.info/ordinary/0158/ のskiladd_wrap内、候補A/B/C/S1/S2の見出し5個と直後のスキル名5個が位置対応。afterSkill/afterRankは移植後テーブルの記載が無いため候補と同一値を採用。
       synthesisTable:[
@@ -1472,6 +1474,10 @@
       // ixanary.com生HTML照合(2026-08-02): カード画像のスキル欄にLV10とTR5(鍛錬)の2枠のみ表示されており、TR1〜TR4は実在しない(存在すれば同様に表示されるはずだが無い)。
       trTable:[
         {level:"LV10", points:"-", effect:"全　確率 100% / 攻撃 680%上昇(無尽 部隊消費コスト-0.5・極限スキル効果3.5倍)"},
+        {level:"TR1", points:"10", effect:null},
+        {level:"TR2", points:"40", effect:null},
+        {level:"TR3", points:"90", effect:null},
+        {level:"TR4", points:"150", effect:null},
         {level:"TR5", points:"最大鍛錬", effect:"全　確率 100% / 攻撃 1730%上昇(無尽 部隊消費コスト-0.5・極限スキル効果3.5倍)"}
       ],
       // 45do.info(ordinary/0318)生HTML照合+ameameixa.com(post-12334「29章天武将スキル一覧」表のNo.1275行)の両ソースでA/B/C/S1/S2の並びが一致確認済み。afterSkill(移植後変化)はixagno未掲載のため45do.info記載の等級のまま。
@@ -1493,6 +1499,10 @@
       // ixanary.com生HTML照合(2026-08-02): カード画像のスキル欄にLV10とTR5(鍛錬)の2枠のみ表示されており、TR1〜TR4は実在しない。
       trTable:[
         {level:"LV10", points:"-", effect:"全　確率 100% / 攻撃 200%上昇(討伐ゲージ÷100倍・討伐ゲージ回復量+3)"},
+        {level:"TR1", points:"10", effect:null},
+        {level:"TR2", points:"40", effect:null},
+        {level:"TR3", points:"90", effect:null},
+        {level:"TR4", points:"150", effect:null},
         {level:"TR5", points:"最大鍛錬", effect:"全　確率 100% / 攻撃 940%上昇(討伐ゲージ÷100倍・討伐ゲージ回復量+6)"}
       ],
       // 45do.info(ordinary/0317)生HTML照合+ameameixa.com(post-12334「29章天武将スキル一覧」表のNo.1276行)の両ソースでA/B/C/S1/S2の並びが一致確認済み。
@@ -1518,6 +1528,10 @@
       // ixanary.com生HTML照合(2026-08-02): カード画像のスキル欄にLV10とTR5(鍛錬)の2枠のみ表示されており、TR1〜TR4は実在しない。
       trTable:[
         {level:"LV10", points:"-", effect:"全 飛翔17　確率 55% / 攻撃 840%上昇 防御 840%上昇"},
+        {level:"TR1", points:"10", effect:null},
+        {level:"TR2", points:"40", effect:null},
+        {level:"TR3", points:"90", effect:null},
+        {level:"TR4", points:"150", effect:null},
         {level:"TR5", points:"最大鍛錬", effect:"全 飛翔17　確率 55% / 攻撃 1750%上昇 防御 1750%上昇"}
       ],
       // 45do.info(ordinary/0316)生HTML照合+ameameixa.com(post-12334「29章天武将スキル一覧」表のNo.1277行)の両ソースでA/B/C/S1/S2の並びが一致確認済み。A/Bは自身の初期スキル(義陣絶刀)がそのまま候補になる自己参照枠。
@@ -1543,6 +1557,10 @@
       // ixanary.com生HTML照合(2026-08-02): カード画像のスキル欄にLV10とTR5(鍛錬)の2枠のみ表示されており、TR1〜TR4は実在しない。
       trTable:[
         {level:"LV10", points:"-", effect:"全　確率 100% / 攻撃 520%上昇 防御 520%上昇(無尽 部隊消費コスト-0.5)"},
+        {level:"TR1", points:"10", effect:null},
+        {level:"TR2", points:"40", effect:null},
+        {level:"TR3", points:"90", effect:null},
+        {level:"TR4", points:"150", effect:null},
         {level:"TR5", points:"最大鍛錬", effect:"全　確率 100% / 攻撃 1400%上昇 防御 1400%上昇(無尽 部隊消費コスト-0.5)"}
       ],
       // 45do.info(ordinary/0315)生HTML照合+ameameixa.com(post-12334「29章天武将スキル一覧」表のNo.1278行)の両ソースでA/B/C/S1/S2の並びが一致確認済み。
@@ -1567,6 +1585,10 @@
       // ixanary.com生HTML照合(2026-08-02): カード画像のスキル欄にLV10とTR5(鍛錬)の2枠のみ表示されており、TR1〜TR4は実在しない。
       trTable:[
         {level:"LV10", points:"-", coefficient:"8.4", effect:"槍・弓・砲・器　確率 58% / 防御 8.4%×防御参加武将数(280人)=2352.0%上昇(防御参加武将数120人以下の場合は1.5倍)"},
+        {level:"TR1", points:"10", effect:null},
+        {level:"TR2", points:"40", effect:null},
+        {level:"TR3", points:"90", effect:null},
+        {level:"TR4", points:"150", effect:null},
         {level:"TR5", points:"最大鍛錬", coefficient:"13", effect:"槍・弓・砲・器　確率 58% / 防御 13%×防御参加武将数(280人)=3640.0%上昇(防御参加武将数120人以下の場合は1.5倍)"}
       ],
       // 45do.info(ordinary/0314)生HTML照合+ameameixa.com(post-12334「29章天武将スキル一覧」表のNo.1279行)の両ソースでA/B/C/S1/S2の並びが一致確認済み。A/Bは自身の初期スキル(魔導禁鎖)がそのまま候補になる自己参照枠。
@@ -1591,6 +1613,10 @@
       // ixanary.com生HTML照合(2026-08-02): カード画像のスキル欄にLV10とTR5(鍛錬)の2枠のみ表示されており、TR1〜TR4は実在しない。
       trTable:[
         {level:"LV10", points:"-", effect:"追加スキル 兵站　確率 100% / 防御効果倍率 2.5倍(自領以外の加勢戦闘時のみ)"},
+        {level:"TR1", points:"10", effect:null},
+        {level:"TR2", points:"40", effect:null},
+        {level:"TR3", points:"90", effect:null},
+        {level:"TR4", points:"150", effect:null},
         {level:"TR5", points:"最大鍛錬", effect:"追加スキル 兵站　確率 100% / 防御効果倍率 3倍(自領以外の加勢戦闘時のみ)"}
       ],
       // 45do.info(ordinary/0313)生HTML照合+ameameixa.com(post-12334「29章天武将スキル一覧」表のNo.1280行)の両ソースでA/B/C/S1/S2の並びが一致確認済み。
@@ -1615,6 +1641,10 @@
       // ixanary.com生HTML照合(2026-08-02): カード画像のスキル欄にLV10とTR5(鍛錬)の2枠のみ表示されており、TR1〜TR4は実在しない。
       trTable:[
         {level:"LV10", points:"-", effect:"槍・馬・砲・器 飛翔10　確率 64% / 防御 320%上昇(飛翔値合計×10%加算)"},
+        {level:"TR1", points:"10", effect:null},
+        {level:"TR2", points:"40", effect:null},
+        {level:"TR3", points:"90", effect:null},
+        {level:"TR4", points:"150", effect:null},
         {level:"TR5", points:"最大鍛錬", effect:"槍・馬・砲・器 飛翔10　確率 64% / 防御 320%上昇(飛翔値合計×14.5%加算)"}
       ],
       // 45do.info(ordinary/0312)生HTML照合+ameameixa.com(post-12334「29章天武将スキル一覧」表のNo.1281行)の両ソースでA/B/C/S1/S2の並びが一致確認済み。A/Bは自身の初期スキル(王花尖剣)がそのまま候補になる自己参照枠。
@@ -1639,6 +1669,10 @@
       // ixanary.com生HTML照合(2026-08-02): カード画像のスキル欄にLV10とTR5(鍛錬)の2枠のみ表示されており、TR1〜TR4は実在しない。
       trTable:[
         {level:"LV10", points:"-", coefficient:"13", effect:"槍・弓・馬・砲　確率 50% / 攻撃 13%×飛翔を持たない防御参加武将数=上昇"},
+        {level:"TR1", points:"10", effect:null},
+        {level:"TR2", points:"40", effect:null},
+        {level:"TR3", points:"90", effect:null},
+        {level:"TR4", points:"150", effect:null},
         {level:"TR5", points:"最大鍛錬", coefficient:"18", effect:"槍・弓・馬・砲　確率 50% / 攻撃 18%×飛翔を持たない防御参加武将数=上昇"}
       ],
       // 45do.info(ordinary/0311)生HTML照合+ameameixa.com(post-12334「29章天武将スキル一覧」表のNo.1282行)の両ソースでA/B/C/S1/S2の並びが一致確認済み。A/Bは自身の初期スキル(一調天成)がそのまま候補になる自己参照枠。
@@ -3400,6 +3434,28 @@
   document.getElementById('gdbSearchBox').addEventListener('input', gdbDoSearch);
 
   // ============ 詳細表示 ============
+
+  // 鍛錬表の行を絞る。LV10は常に出し、TR行は値が判明している一番上の段までを
+  // 連続して出す(その範囲で値が無い段は「未確認」と表示する)。
+  // 段を隠すと「LV10 → TR5」のように飛んで見え、TR1〜4が存在しないと誤解される。
+  function gdbVisibleTrRows(rows){
+    if(!rows || !rows.length) return [];
+    const order = ['LV10','TR1','TR2','TR3','TR4','TR5','TR6'];
+    const has = function(r){ return r.effect !== null && r.effect !== undefined && r.effect !== ''; };
+    let top = -1;
+    rows.forEach(function(r){
+      if(r.level !== 'LV10' && has(r)){
+        const i = order.indexOf(r.level);
+        if(i > top) top = i;
+      }
+    });
+    return rows.filter(function(r){
+      if(r.level === 'LV10') return true;
+      const i = order.indexOf(r.level);
+      return i !== -1 && i <= top;
+    });
+  }
+
   function gdbRenderDetail(g){
     const body = document.getElementById('gdbDetailBody');
     if(!gdbHasDetail(g)){
@@ -3447,7 +3503,7 @@
       + (g.trTable ? (
         '<div class="gdb-detail-block"><h2>鍛錬レベル別性能</h2>'
         + '<div class="gdb-table-scroll"><table class="gdb-stat-table"><thead><tr><th>レベル</th><th class="gdb-col-narrow">必要ポイント</th><th>効果</th></tr></thead><tbody>'
-        + g.trTable.filter(function(row){ return row.level === 'LV10' || (row.effect !== null && row.effect !== undefined && row.effect !== ''); }).map(function(row){ return '<tr><td>'+gdbEscapeHtml(row.level)+'</td><td class="gdb-col-narrow">'+gdbEscapeHtml(row.points||'-')+'</td><td style="text-align:left;">'+gdbColorizeMujin(row.effect)+'</td></tr>'; }).join('')
+        + gdbVisibleTrRows(g.trTable).map(function(row){ return '<tr><td>'+gdbEscapeHtml(row.level)+'</td><td class="gdb-col-narrow">'+gdbEscapeHtml(row.points||'-')+'</td><td style="text-align:left;">'+(row.effect ? gdbColorizeMujin(row.effect) : '<span style="color:var(--muted);">未確認</span>')+'</td></tr>'; }).join('')
         + '</tbody></table></div></div>'
       ) : '')
       + (g.mimicRarityTable ? (
