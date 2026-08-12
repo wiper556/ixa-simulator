@@ -161,7 +161,7 @@
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script src="assets/js/comments-widget.js"></script>
 <script>
-  const CHAR_DB_VERSION = 'v2026-08-12.3';
+  const CHAR_DB_VERSION = 'v2026-08-12.5';
   document.addEventListener('DOMContentLoaded', ()=>{
     const badge = document.getElementById('simVersionBadge');
     if(badge) badge.textContent = CHAR_DB_VERSION;
@@ -199,9 +199,9 @@
       // 基礎値・兵科適性・LV10効果・鍛錬表・合成テーブルは同サイトの個別記事(blog-entry-11144)。
       synthesisTable:[
         {slot:"A", skill:"勇冠三軍", rank:"SSS", afterSkill:"勇冠三軍", afterRank:"SSS", target:"全", rate:"45%", effectShort:"攻撃50%+係数×人数で上昇"},
-        {slot:"B", skill:"万界神謀", rank:"SS", afterSkill:"万界神謀", afterRank:"SS"},
-        {slot:"C", skill:"絶界滅刃", rank:"SS", afterSkill:"絶界滅刃", afterRank:"SS"},
-        {slot:"S1", skill:"皇天覇虎", rank:"SSS", afterSkill:"皇天覇虎", afterRank:"SSS"},
+        {slot:"B", skill:"万界神謀", rank:"SS", afterSkill:"万界神謀", afterRank:"SS", target:"全 卓越", rate:"+100%", effectShort:"攻撃800%上昇+防御800%上昇(部隊内武将スキル発動率+20%・卓越追加確率+70%・模倣不可・特殊効果は自部隊内では重複不可)"},
+        {slot:"C", skill:"絶界滅刃", rank:"SS", afterSkill:"絶界滅刃", afterRank:"SS", target:"全", rate:"+40%", effectShort:"基礎値340%×部隊内の同スキル所持武将数(4人)=1360%上昇"},
+        {slot:"S1", skill:"皇天覇虎", rank:"SSS", afterSkill:"皇天覇虎", afterRank:"SSS", target:"全", rate:"+45%", effectShort:"攻撃 100%+12.5%×防御参加武将数(280人)=3600.0%上昇(模倣不可)"},
         {slot:"S2", skill:"神羅聖域", rank:"SS", afterSkill:"神羅聖域", afterRank:"SS", target:"全 覇道", rate:"40%", effectShort:"攻撃900%上昇"}
       ]},
 
@@ -232,9 +232,9 @@
       // 基礎値・兵科適性・LV10効果・鍛錬表・合成テーブルは同サイトの個別記事(blog-entry-11141)。
       synthesisTable:[
         {slot:"A", skill:"月煌侵蝕", rank:"SSS", afterSkill:"月煌侵蝕", afterRank:"SSS", target:"全 兵站", rate:"45%", effectShort:"防御を係数×人数で上昇"},
-        {slot:"B", skill:"熾炎破天", rank:"SS", afterSkill:"熾炎破天", afterRank:"SS"},
-        {slot:"C", skill:"覇天金剛", rank:"SS", afterSkill:"覇天金剛", afterRank:"SS"},
-        {slot:"S1", skill:"虚妄ノ神蛇", rank:"SSS", afterSkill:"虚妄ノ神蛇", afterRank:"SSS"},
+        {slot:"B", skill:"熾炎破天", rank:"SS", afterSkill:"熾炎破天", afterRank:"SS", target:"全 無尽2", rate:"+50%", effectShort:"防御 780%×2(部隊コスト8以下)=1560%上昇"},
+        {slot:"C", skill:"覇天金剛", rank:"SS", afterSkill:"覇天金剛", afterRank:"SS", target:"全", rate:"+100%", effectShort:"攻撃1350%上昇+防御1350%上昇+速度100%上昇"},
+        {slot:"S1", skill:"虚妄ノ神蛇", rank:"SSS", afterSkill:"虚妄ノ神蛇", afterRank:"SSS", target:"全", rate:"+50%", effectShort:"防御 14.8%×防御参加武将数(280人)=4144.0%上昇"},
         {slot:"S2", skill:"國才連豪", rank:"SS", afterSkill:"國才連豪", afterRank:"SS", target:"全", rate:"50%", effectShort:"防御が係数×同スキル所持武将数で上昇"}
       ]},
 
@@ -264,10 +264,10 @@
       // コスト/指揮兵数/成長値は ixagno.blog.fc2.com【天】武将一覧、
       // 基礎値・兵科適性・LV10効果・鍛錬表・合成テーブルは同サイトの個別記事(blog-entry-11142)。
       synthesisTable:[
-        {slot:"A", skill:"覇天金剛", rank:"SS", afterSkill:"覇天金剛", afterRank:"SS"},
-        {slot:"B", skill:"絶界滅刃", rank:"SS", afterSkill:"絶界滅刃", afterRank:"SS"},
-        {slot:"C", skill:"魁星ノ神弓", rank:"SSS", afterSkill:"魁星ノ神弓", afterRank:"SSS"},
-        {slot:"S1", skill:"魁星ノ神弓", rank:"SSS", afterSkill:"魁星ノ神弓", afterRank:"SSS"},
+        {slot:"A", skill:"覇天金剛", rank:"SS", afterSkill:"覇天金剛", afterRank:"SS", target:"全", rate:"+100%", effectShort:"攻撃1350%上昇+防御1350%上昇+速度100%上昇"},
+        {slot:"B", skill:"絶界滅刃", rank:"SS", afterSkill:"絶界滅刃", afterRank:"SS", target:"全", rate:"+40%", effectShort:"基礎値340%×部隊内の同スキル所持武将数(4人)=1360%上昇"},
+        {slot:"C", skill:"魁星ノ神弓", rank:"SSS", afterSkill:"魁星ノ神弓", afterRank:"SSS", target:"弓 不屈2", rate:"+60%", effectShort:"攻撃1650%上昇+速度150%上昇(自部隊同時攻撃時は部隊総コストからこの武将分を最大4まで除外)"},
+        {slot:"S1", skill:"魁星ノ神弓", rank:"SSS", afterSkill:"魁星ノ神弓", afterRank:"SSS", target:"弓 不屈2", rate:"+60%", effectShort:"攻撃1650%上昇+速度150%上昇(自部隊同時攻撃時は部隊総コストからこの武将分を最大4まで除外)"},
         {slot:"S2", skill:"龍驤虎躍", rank:"SS", afterSkill:"龍驤虎躍", afterRank:"SS", target:"全", rate:"60%", effectShort:"攻防810%上昇+コスト-1"}
       ]},
 
@@ -297,10 +297,10 @@
       // コスト/指揮兵数/成長値は ixagno.blog.fc2.com【天】武将一覧、
       // 基礎値・兵科適性・LV10効果・鍛錬表・合成テーブルは同サイトの個別記事(blog-entry-11145)。
       synthesisTable:[
-        {slot:"A", skill:"絶界滅刃", rank:"SS", afterSkill:"絶界滅刃", afterRank:"SS"},
+        {slot:"A", skill:"絶界滅刃", rank:"SS", afterSkill:"絶界滅刃", afterRank:"SS", target:"全", rate:"+40%", effectShort:"基礎値340%×部隊内の同スキル所持武将数(4人)=1360%上昇"},
         {slot:"B", skill:"思金神ノ深謀", rank:"SS", afterSkill:"思金神ノ深謀", afterRank:"SS", target:"部隊長", rate:"60%", effectShort:"部隊長の初期スキルを模倣(卓越時1.3倍)"},
         {slot:"C", skill:"幻像鏡花", rank:"SSS", afterSkill:"幻像鏡花", afterRank:"SSS", target:"部隊長", rate:"56%", effectShort:"部隊長の初期スキルを卓越:追加確率40%で1.35倍にして模倣"},
-        {slot:"S1", skill:"十三ノ奇跡", rank:"S", afterSkill:"十三ノ奇跡", afterRank:"S"},
+        {slot:"S1", skill:"十三ノ奇跡", rank:"S", afterSkill:"十三ノ奇跡", afterRank:"S", target:"弓・器・焙・騎 卓越", rate:"+100%", effectShort:"攻撃350%上昇(卓越:追加確率-60%で3倍・0%超のみ抽選)"},
         {slot:"S2", skill:"戦華雄渾", rank:"SS", afterSkill:"戦華雄渾", afterRank:"SS", target:"全", rate:"100%", effectShort:"攻防各140%上昇(卓越時4倍)"}
       ]},
 
@@ -330,10 +330,10 @@
       // コスト/指揮兵数/成長値は ixagno.blog.fc2.com【天】武将一覧、
       // 基礎値・兵科適性・LV10効果・鍛錬表・合成テーブルは同サイトの個別記事(blog-entry-11146)。
       synthesisTable:[
-        {slot:"A", skill:"覇天金剛", rank:"SS", afterSkill:"覇天金剛", afterRank:"SS"},
+        {slot:"A", skill:"覇天金剛", rank:"SS", afterSkill:"覇天金剛", afterRank:"SS", target:"全", rate:"+100%", effectShort:"攻撃1350%上昇+防御1350%上昇+速度100%上昇"},
         {slot:"B", skill:"千里必勝ノ神算", rank:"SS", afterSkill:"千里必勝ノ神算", afterRank:"SS", target:"全 覇道", rate:"42%", effectShort:"攻撃1010%上昇(防御同値)+破壊150%上昇"},
         {slot:"C", skill:"梵天浄界", rank:"SSS", afterSkill:"梵天浄界", afterRank:"SSS", target:"全", rate:"60%", effectShort:"防御50%+破壊を係数×人数で上昇"},
-        {slot:"S1", skill:"鳳凰ノ幻華", rank:"S", afterSkill:"鳳凰ノ幻華", afterRank:"S"},
+        {slot:"S1", skill:"鳳凰ノ幻華", rank:"S", afterSkill:"鳳凰ノ幻華", afterRank:"S", target:"砲・器", rate:"+50%", effectShort:"防御700%上昇(防御参加武将数150以下の自領以外の加勢で3倍)"},
         {slot:"S2", skill:"國才連豪", rank:"SS", afterSkill:"國才連豪", afterRank:"SS", target:"全", rate:"50%", effectShort:"防御が係数×同スキル所持武将数で上昇"}
       ]},
 
@@ -431,8 +431,8 @@
       synthesisTable:[
         {slot:"A", skill:"絶無灰尽", rank:"SS", afterSkill:"絶無灰尽", afterRank:"SS", target:"全 無尽 不屈1", rate:"", effectShort:"攻撃1010%上昇+無尽(部隊消費コスト-0.5)"},
         {slot:"B", skill:"覆天征軍", rank:"SS", afterSkill:"覆天征軍", afterRank:"SS", target:"全 無尽2", rate:"100%", effectShort:"攻撃900%上昇"},
-        {slot:"C", skill:"覇天金剛", rank:"SS", afterSkill:"覇天金剛", afterRank:"SS"},
-        {slot:"S1", skill:"絶界滅刃", rank:"SS", afterSkill:"絶界滅刃", afterRank:"SS"},
+        {slot:"C", skill:"覇天金剛", rank:"SS", afterSkill:"覇天金剛", afterRank:"SS", target:"全", rate:"+100%", effectShort:"攻撃1350%上昇+防御1350%上昇+速度100%上昇"},
+        {slot:"S1", skill:"絶界滅刃", rank:"SS", afterSkill:"絶界滅刃", afterRank:"SS", target:"全", rate:"+40%", effectShort:"基礎値340%×部隊内の同スキル所持武将数(4人)=1360%上昇"},
         {slot:"S2", skill:"開闢ノ逆鉾", rank:"SS", afterSkill:"開闢ノ逆鉾", afterRank:"SS", target:"全", rate:"100%", effectShort:"攻撃254%上昇(卓越追加確率30%で兵士被害15%減少)"}
       ]},
 
@@ -495,10 +495,10 @@
       // コスト/指揮兵数/成長値は ixagno.blog.fc2.com【天】武将一覧、
       // 基礎値・兵科適性・LV10効果・鍛錬表・合成テーブルは同サイトの個別記事(blog-entry-11151)。
       synthesisTable:[
-        {slot:"A", skill:"熾炎破天", rank:"SS", afterSkill:"熾炎破天", afterRank:"SS"},
-        {slot:"B", skill:"仙境解脱", rank:"SS", target:"全", rate:"48%", effectShort:"防御910%上昇+コスト-1.5"},
-        {slot:"C", skill:"不敗ノ滅陣", rank:"S", afterSkill:"不敗ノ滅陣", afterRank:"S"},
-        {slot:"S1", skill:"不敗ノ滅陣", rank:"S", afterSkill:"不敗ノ滅陣", afterRank:"S"},
+        {slot:"A", skill:"熾炎破天", rank:"SS", afterSkill:"熾炎破天", afterRank:"SS", target:"全 無尽2", rate:"+50%", effectShort:"防御 780%×2(部隊コスト8以下)=1560%上昇"},
+        {slot:"B", skill:"仙境解脱", rank:"SS", afterSkill:"仙境解脱", afterRank:"SS", target:"全", rate:"48%", effectShort:"防御910%上昇+コスト-1.5"},
+        {slot:"C", skill:"不敗ノ滅陣", rank:"S", afterSkill:"不敗ノ滅陣", afterRank:"S", target:"槍・砲・器 飛翔15", rate:"+55%", effectShort:"基礎値400%×部隊内の同スキル所持武将数(4人)=1600%上昇"},
+        {slot:"S1", skill:"不敗ノ滅陣", rank:"S", afterSkill:"不敗ノ滅陣", afterRank:"S", target:"槍・砲・器 飛翔15", rate:"+55%", effectShort:"基礎値400%×部隊内の同スキル所持武将数(4人)=1600%上昇"},
         {slot:"S2", skill:"火槍猛進", rank:"S", afterSkill:"火槍猛進", afterRank:"S", target:"槍・弓・器・鉄 無尽", rate:"55%", effectShort:"防御740%×2(部隊コスト10以下)=1480%上昇"}
       ]},
 
@@ -531,7 +531,7 @@
         {slot:"A", skill:"焼尽神無", rank:"SS", afterSkill:"焼尽神無", afterRank:"SS", target:"全 無尽", rate:"44%", effectShort:"攻撃を係数×人数で上昇"},
         {slot:"B", skill:"終焉焦土", rank:"SSS", afterSkill:"終焉焦土", afterRank:"SSS", target:"全 無尽", rate:"46%", effectShort:"攻撃を係数×人数で上昇"},
         {slot:"C", skill:"八幡神ノ威光", rank:"SSS", afterSkill:"八幡神ノ威光", afterRank:"SSS", target:"部隊長", rate:"70%", effectShort:"部隊長の模倣可能な初期スキルを1.25倍模倣"},
-        {slot:"S1", skill:"黒翼竜", rank:"S", afterSkill:"黒翼竜", afterRank:"S"},
+        {slot:"S1", skill:"黒翼竜", rank:"S", afterSkill:"黒翼竜", afterRank:"S", target:"全", rate:"+50%", effectShort:"攻撃時に敵軍の被害兵数 7%増加(部隊内重複上限1・自軍合計で上限100%)"},
         {slot:"S2", skill:"破軍騎行", rank:"SS", afterSkill:"破軍騎行", afterRank:"SS", target:"全 不屈2", rate:"100%", effectShort:"攻撃750%上昇"}
       ]},
 
@@ -570,7 +570,7 @@
         {slot:"A", skill:"天地超克", rank:"SSS", afterSkill:"天地超克", afterRank:"SSS", target:"全 不屈1", rate:"46%", effectShort:"攻撃を係数×人数で上昇"},
         {slot:"B", skill:"勇冠三軍", rank:"SSS", afterSkill:"勇冠三軍", afterRank:"SSS", target:"全", rate:"45%", effectShort:"攻撃50%+係数×人数で上昇"},
         {slot:"C", skill:"摩利支天ノ法", rank:"SSS", afterSkill:"摩利支天ノ法", afterRank:"SSS", target:"部隊長", rate:"70%", effectShort:"部隊長の初期スキルを1.25倍模倣"},
-        {slot:"S1", skill:"天弦ノ威軍", rank:"S", afterSkill:"天弦ノ威軍", afterRank:"S"},
+        {slot:"S1", skill:"天弦ノ威軍", rank:"S", afterSkill:"天弦ノ威軍", afterRank:"S", target:"弓・馬・焙・騎 不屈1", rate:"+45%", effectShort:"攻撃1000%上昇(自軍城主数10以上で3倍)"},
         {slot:"S2", skill:"万物神勇", rank:"SSS", afterSkill:"万物神勇", afterRank:"SSS", target:"全 撤退", rate:"43%", effectShort:"攻撃を係数×人数で上昇"}
       ]},
 
@@ -3278,7 +3278,7 @@
   }
 
   // スキルデータベース(skills.html)にページがあるスキル名の一覧。ここに載っているスキルはリンク化する。
-  const LINKED_SKILLS = ['勇冠三軍', '焼尽神無', '覆天征軍', '終焉焦土', '万物神勇', '経津主神ノ剣', '従魔絶神', '梵天浄界', '岳王ノ加護', '國才連豪', '虎賁統帥', '天地超克', '神羅聖域', '信明義星', '千里必勝ノ神算', '刹那無影', '月煌侵蝕', '虚実兵妙', '仙境解脱', '幻像鏡花', '開闢ノ逆鉾', '思金神ノ深謀', '戦華雄渾', '月詠ノ覇威', '絶無灰尽', '八幡神ノ威光', '龍驤虎躍', '永世ノ天隻', '黄泉醜女ノ屍兵', '高津姫神', '義陣絶刀', '破国八陣', '轟渦ノ神将', '王花尖剣', '泰厳射手', '国呑ノ蟒蛇', '虚空ノ導', '龍気剣鳴', '雄武英略', '坂西都督', '摩利支天ノ法', '不制于天地人', '神機采配', '十束ノ神域', '天聖宝冠', '四天轟雷', '火之迦具土神', '天香山命', '天津甕星ノ雷', '布都御魂ノ鬨', '天宇受売命', '万鬼闘帝', '三全将帥', '布刀玉ノ策', '火槍猛進', '神屋楯比売命', '四至ノ神域', '文治ノ護剣', '至天ノ御剣', '歴然ノ妙策', '聖剣深鏡', '星神闘覇', '龍国ノ武威', '武天蜻蛉切', '伏雷蒼樹', '天啓ノ神撃', '加具土ノ神域', '八重言代主神', '旌旗翳天ノ覇陣', '破軍騎行', '破邪後輝', '天磐船', '万里嵐壁', '遠呂智ノ閃光', '三千世界神将', '覇王征軍', '天焉相克', '天奏聖譚曲', '海神ノ浮船', '建御雷神ノ槌', '天衣無縫神戒', '禍津日神ノ謀', '国津破邪ノ楯', '星宿劫ノ法壁', '天岩戸ノ神域', '天頂ノ電光', '建御雷神ノ閃光', '天地黎明', '猛火ノ追撃', '閃裂討鬼', '神光征軍', '照闇騎行', '飛龍衝天', '氷神懸龍', '天津日ノ太刀', '破軍星 皇', '無鹿ノ幻律', '国堅大神', '天之尾羽張', '天封界斬', '義心江龍', '仙剣破斬', '封法大十字', '九字ノ呪法', '虚実ノ理合', '潔花咲然', '舞蝶朧月', '古今虚実ノ法', '八目鳴鏑ノ奏', '騎虎神道', '氷塊ノ障壁', '氷塊三連撃', '天弓星宿陣', '朧雲ノ閃撃', '八界経略', '天奏幻武', '破邪轟砲', '甲塞ノ龍砲', '天棲八咫烏', '閻魔ノ裁き', '鬼神ノ軍法', '海王怒涛', '四界偃武', '義陣響野', '義響鉄心', '刈世公子', '天翔雷神', '猛虎嵐陣', '無双六界ノ博奕', '入来神舞', '豊国ノ寵将', '不滅ノ鬼神', '瞬刻無影', '国一丸', '飛将ノ武略', '西覇冠軍', '虎将鉄牙', '雄飛新世', '幻王ノ采配', '智絶千算', '覇槍ノ武威', '王佐ノ指揮', '魔導禁鎖', '西天ノ仁星', '一調天成', '旋渦訣刀', '虎伐閃衝', '炎国覇弾', '蛇神咆哮', '鼎不死巴', '六冥緋侠ノ神謀', '無苦ノ武神', '冥界ノ千里眼', '赤凰幻舞', '破天ノ竜撃', '神将火剣', '乱界遊泳', '神気煌龍', '天覇冠軍', '虎皇鋼牙', '覇道ノ泰斗', '倫魁不羈', '偃武覇陣', '紅蓮ノ闘神', '魔狂ノ業歌', '破界ノ轟砲', '不屈ノ天弓', '天計千年鳳凰', '滅神五芒星', '日輪ノ狒王', '凶星ノ斬光', '金城ノ黒鷹', '獅子ノ炯眼', '斑将閃牙', '法威燦煌', '日輪ノ選剣', '烈界 渡海龍', '万界寂香', '鎮西ノ雷神', '陥城騎王', '魔弾奏者', '龍父絶砲', '天限ノ麒麟', '灼槍不褪', '仁侯ノ決断', '十三ノ奇跡'];
+  const LINKED_SKILLS = ['勇冠三軍', '焼尽神無', '覆天征軍', '終焉焦土', '万物神勇', '経津主神ノ剣', '従魔絶神', '梵天浄界', '岳王ノ加護', '國才連豪', '虎賁統帥', '天地超克', '神羅聖域', '信明義星', '千里必勝ノ神算', '刹那無影', '月煌侵蝕', '虚実兵妙', '仙境解脱', '幻像鏡花', '開闢ノ逆鉾', '思金神ノ深謀', '戦華雄渾', '月詠ノ覇威', '絶無灰尽', '八幡神ノ威光', '龍驤虎躍', '永世ノ天隻', '黄泉醜女ノ屍兵', '高津姫神', '義陣絶刀', '破国八陣', '轟渦ノ神将', '王花尖剣', '泰厳射手', '国呑ノ蟒蛇', '虚空ノ導', '龍気剣鳴', '雄武英略', '坂西都督', '摩利支天ノ法', '不制于天地人', '神機采配', '十束ノ神域', '天聖宝冠', '四天轟雷', '火之迦具土神', '天香山命', '天津甕星ノ雷', '布都御魂ノ鬨', '天宇受売命', '万鬼闘帝', '三全将帥', '布刀玉ノ策', '火槍猛進', '神屋楯比売命', '四至ノ神域', '文治ノ護剣', '至天ノ御剣', '歴然ノ妙策', '聖剣深鏡', '星神闘覇', '龍国ノ武威', '武天蜻蛉切', '伏雷蒼樹', '天啓ノ神撃', '加具土ノ神域', '八重言代主神', '旌旗翳天ノ覇陣', '破軍騎行', '破邪後輝', '天磐船', '万里嵐壁', '遠呂智ノ閃光', '三千世界神将', '覇王征軍', '天焉相克', '天奏聖譚曲', '海神ノ浮船', '建御雷神ノ槌', '天衣無縫神戒', '禍津日神ノ謀', '国津破邪ノ楯', '星宿劫ノ法壁', '天岩戸ノ神域', '天頂ノ電光', '建御雷神ノ閃光', '天地黎明', '猛火ノ追撃', '閃裂討鬼', '神光征軍', '照闇騎行', '飛龍衝天', '氷神懸龍', '天津日ノ太刀', '破軍星 皇', '無鹿ノ幻律', '国堅大神', '天之尾羽張', '天封界斬', '義心江龍', '仙剣破斬', '封法大十字', '九字ノ呪法', '虚実ノ理合', '潔花咲然', '舞蝶朧月', '古今虚実ノ法', '八目鳴鏑ノ奏', '騎虎神道', '氷塊ノ障壁', '氷塊三連撃', '天弓星宿陣', '朧雲ノ閃撃', '八界経略', '天奏幻武', '破邪轟砲', '甲塞ノ龍砲', '天棲八咫烏', '閻魔ノ裁き', '鬼神ノ軍法', '海王怒涛', '四界偃武', '義陣響野', '義響鉄心', '刈世公子', '天翔雷神', '猛虎嵐陣', '無双六界ノ博奕', '入来神舞', '豊国ノ寵将', '不滅ノ鬼神', '瞬刻無影', '国一丸', '飛将ノ武略', '西覇冠軍', '虎将鉄牙', '雄飛新世', '幻王ノ采配', '智絶千算', '覇槍ノ武威', '王佐ノ指揮', '魔導禁鎖', '西天ノ仁星', '一調天成', '旋渦訣刀', '虎伐閃衝', '炎国覇弾', '蛇神咆哮', '鼎不死巴', '六冥緋侠ノ神謀', '無苦ノ武神', '冥界ノ千里眼', '赤凰幻舞', '破天ノ竜撃', '神将火剣', '乱界遊泳', '神気煌龍', '天覇冠軍', '虎皇鋼牙', '覇道ノ泰斗', '倫魁不羈', '偃武覇陣', '紅蓮ノ闘神', '魔狂ノ業歌', '破界ノ轟砲', '不屈ノ天弓', '天計千年鳳凰', '滅神五芒星', '日輪ノ狒王', '凶星ノ斬光', '金城ノ黒鷹', '獅子ノ炯眼', '斑将閃牙', '法威燦煌', '日輪ノ選剣', '烈界 渡海龍', '万界寂香', '鎮西ノ雷神', '陥城騎王', '魔弾奏者', '龍父絶砲', '天限ノ麒麟', '灼槍不褪', '仁侯ノ決断', '十三ノ奇跡', '覇界ノ天虎', '蛇神幻計', '怪童冥滅', '鳳凰ノ幻華', '覇城統陣', '月読ノ冥略', '凶狂威令', '焔天滅刻', '不敗ノ滅陣', '黒翼竜', '天弦ノ威軍', '万界神謀', '絶界滅刃', '皇天覇虎', '熾炎破天', '覇天金剛', '虚妄ノ神蛇', '魁星ノ神弓', '天甲破山', '天焉破山'];
 
   function gdbSkillLink(skillName, rank){
     const label = gdbEscapeHtml(skillName)+' '+gdbEscapeHtml(rank||'');
