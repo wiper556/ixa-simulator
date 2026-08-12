@@ -787,7 +787,8 @@
         <li>リセットボタンで編成と戦闘変数をまとめて消去</li>
       </ul>
 
-      <p class="feature-list-note">未対応: 陣補正、TR6以降・Xスキル、同時攻撃(4合流)、本丸防御の列位置による補正。</p>
+      <p class="feature-list-note">未対応: 陣補正、Xスキル、同時攻撃(4合流)、本丸防御の列位置による補正。<br>
+        TR6は32章天の6スキル(覇界ノ天虎・凶狂威令・鳳凰ノ幻華・十三ノ奇跡・天弦ノ威軍・不敗ノ滅陣)のみ選択・計算に対応。</p>
     </div>
   </details>
 
@@ -821,7 +822,7 @@
   // 【必須】attack-simulator.html を変更したコミットでは、必ずこの定数も一緒に更新すること。
   // 表示文言の変更・CSSの微調整であっても対象(ユーザーがスクショで版を判別できなくなるため)。
   // 更新忘れが繰り返し発生しているので、編集したらコミット前にここを見に来る。
-  const SIMULATOR_VERSION = 'v2026-08-12.2';
+  const SIMULATOR_VERSION = 'v2026-08-12.3';
   document.addEventListener('DOMContentLoaded', ()=>{
     const badge = document.getElementById('simVersionBadge');
     if(badge) badge.textContent = SIMULATOR_VERSION;

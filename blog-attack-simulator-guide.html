@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7334304987274613"
+     crossorigin="anonymous"></script>
+<title>攻撃シミュレーターの使い方｜戦国IXA シミュレーター置き場</title>
+<meta name="description" content="戦国IXAの攻撃/防御シミュレーターの使い方。兵士・武将名・スキルの3つを入れるだけで最終攻撃力が出ます。期待値と最大値の違い、赤枠と警告の意味も解説します。">
+<link rel="stylesheet" href="assets/css/site.css">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="192x192" href="assets/img/icon-192.png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+</head>
+<body>
+<div class="site-layout">
+  <aside class="site-sidebar" id="siteSidebar">
+    <div class="sidebar-header">
+      <span class="sidebar-title">メニュー</span>
+    </div>
+    <nav class="sidebar-nav">
+      <a href="index.html">シミュレーター一覧</a>
+      <a href="attack-simulator.html">攻撃/防御シミュレーター</a>
+      <a href="gacha-simulator.html">くじシミュレーター</a>
+      <a href="characters-hub.html">武将データベース</a>
+      <a href="skills-hub.html">スキル一覧</a>
+      <a href="blog.html">記事</a>
+      <a href="privacy.html">プライバシーポリシー</a>
+    </nav>
+  </aside>
+
+  <div class="site-content">
+  <header class="site-header">
+    <a class="site-logo" href="index.html">戦国IXA シミュレーター置き場</a>
+  </header>
+
+  <main class="site-main article-page">
+    <p class="article-meta"><a href="blog.html">記事一覧</a> ／ 2026年8月12日</p>
+    <h1 class="page-title">攻撃シミュレーターの使い方</h1>
+    <p class="page-lead">入れるのは兵士・武将名・スキルの3つだけです。あとは自動で計算されます。</p>
+
+    <div class="content-block">
+      <p><a href="attack-simulator.html">攻撃/防御シミュレーター</a>は、部隊長と小隊1〜3の計4名分を入力すると、最終攻撃力までを自動で出すツールです。<br>
+      入力欄が多く見えますが、実際に手で入れるのは3つだけで、残りは武将データベースから引いて埋まります。</p>
+
+      <div class="article-gap3"></div>
+    </div>
+
+    <div class="content-block">
+      <h2>1. 兵士・武将名・スキルの3つを入れる</h2>
+
+      <p>最初はこの状態です。青枠が手入力できる欄です。</p>
+
+      <figure class="article-figure">
+        <img src="assets/img/blog/guide-01-basic-empty.png" alt="00基本ステータス欄の初期状態" loading="lazy" decoding="async">
+      </figure>
+
+      <p>上から順に、</p>
+      <ol>
+        <li><strong>兵士</strong>をプルダウンで選ぶ。ここを選ばずに計算を押すとエラーになり、選んでいない列が赤枠になります</li>
+        <li><strong>武将名</strong>を打つ。候補が出るので選べば、攻撃力・防御力・兵法値・指揮兵士数・統率が自動で入ります</li>
+        <li><strong>スキル名</strong>を打つ。こちらも候補が出て、選ぶと発動率と上昇%が自動で入ります</li>
+      </ol>
+
+      <p>武将データベースに無い武将や、ステ振りで「バランス振り」を選んだ場合は、攻撃力などを手で打ち込めます。<br>
+      ランク(限界突破〜天限突破+0.5)を変えると指揮兵士数とステータスが計算し直されます。</p>
+
+      <p>4人ぶん入れて「計算する」を押すと、こうなります。</p>
+
+      <figure class="article-figure">
+        <img src="assets/img/blog/guide-02-basic-filled.png" alt="4名を入力して計算した後の00基本ステータス欄" loading="lazy" decoding="async">
+      </figure>
+
+      <div class="article-gap3"></div>
+    </div>
+
+    <div class="content-block">
+      <h2>2. 下に出る4つの数字</h2>
+
+      <div class="table-scroll">
+        <table class="article-table">
+          <thead><tr><th>項目</th><th>意味</th></tr></thead>
+          <tbody>
+            <tr><td>部隊攻撃力</td><td>Σ(各武将の攻撃力 + 指揮兵士数×兵士攻撃力) × 統率補正。名声と総攻撃力上昇はまだ含みません</td></tr>
+            <tr><td>指揮兵士数</td><td>4人の合計。兵士を選んでいない列は0として扱います</td></tr>
+            <tr><td>部隊コスト</td><td>無尽などのコスト減スキルを引いた後の値。減る前の値は「基礎」として下に小さく出ます</td></tr>
+            <tr><td>発動率ボーナス</td><td>兵法値ボーナス + 部隊ランクボーナス(★0〜32) + スキルによる発動率上昇の合計</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p>部隊ランクボーナスは、4人のランク欄から推測した武将ランク(限界突破=6、極限突破=7、天限突破=8)を合計した★の数で決まります。★12未満は+0%、★32で+12%です。</p>
+
+      <div class="article-gap3"></div>
+    </div>
+
+    <div class="content-block">
+      <h2>3. スキル欄の見かた</h2>
+
+      <figure class="article-figure">
+        <img src="assets/img/blog/guide-03-skill.png" alt="01スキル欄。実発動率・赤枠・警告・最終攻撃力" loading="lazy" decoding="async">
+      </figure>
+
+      <p>スキル名の下の数字が上昇%、その右下に出るのが<strong>実発動率</strong>です。実発動率は、スキル本来の発動率に発動率ボーナスを足した値(上限100%)です。<br>
+      上の画像では部隊長の天弦ノ威軍が45%+23%で68%、小隊1・2の摩利支天ノ法が70%+23%で93%になっています。</p>
+
+      <p><strong>上昇%の欄が赤枠になっているのは、実発動率が100%に届いていない印です。</strong>青枠のままなら毎回必ず発動します。<br>
+      小隊3の十三ノ奇跡だけ青枠なのは、このスキルの発動率がもともと100%だからです。</p>
+
+      <div class="article-gap3"></div>
+    </div>
+
+    <div class="content-block">
+      <h2>4. 期待値と最大値のちがい</h2>
+
+      <figure class="article-figure">
+        <img src="assets/img/blog/guide-04-final.png" alt="最終攻撃力の期待値と最大値" loading="lazy" decoding="async">
+      </figure>
+
+      <p>最終攻撃力が2つ出るのは、発動率と卓越があるからです。</p>
+
+      <div class="table-scroll">
+        <table class="article-table">
+          <thead><tr><th></th><th>中身</th></tr></thead>
+          <tbody>
+            <tr class="row-emph"><td>期待値</td><td>Σ(実発動率 × 上昇%)。卓越を持つスキルは卓越確率でも重み付けした平均</td></tr>
+            <tr><td>最大値</td><td>Σ(上昇%)。16枠すべてが発動し、卓越もすべて成功した場合の値</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p>上の例だと期待値1億4664万に対して最大値1億6965万で、2300万ほど差があります。この差は「発動しない枠がある」ぶんです。<br>
+      <strong>発動率100%かつ卓越なし(または卓越確率100%)のスキルだけで組んだときだけ、期待値と最大値が一致します。</strong></p>
+
+      <p>どちらを見るべきかは目的によります。1発の上振れを狙うなら最大値、何回も攻撃したときの平均を知りたいなら期待値です。</p>
+
+      <div class="article-gap3"></div>
+    </div>
+
+    <div class="content-block">
+      <h2>5. 効果が乗らないときに疑うところ</h2>
+
+      <p>スキルを入れたのに上昇%が0のままなら、たいてい<strong>対象兵科</strong>です。<br>
+      その列で指揮している兵種がスキルの対象外だと、効果は0として扱われます。赤備え(騎馬)の部隊に弓対象のスキルを入れても乗らない、という挙動をそのまま再現しています。<br>
+      部隊長模倣も同じで、模倣元のスキルが対象兵科外なら、模倣した側も0になります。</p>
+
+      <p>スキル欄の見出しに出る警告も手がかりになります。</p>
+
+      <div class="table-scroll">
+        <table class="article-table">
+          <thead><tr><th>表示</th><th>意味</th></tr></thead>
+          <tbody>
+            <tr><td>覇道無し／被害減無し</td><td>そのスキルが部隊に1つも入っていない</td></tr>
+            <tr><td>覇道不完全／被害減不完全</td><td>入ってはいるが実発動率が100%未満で、発動しない戦闘があり得る</td></tr>
+            <tr><td>無効スキルあり</td><td>他のスキルによって無効化されている枠がある</td></tr>
+            <tr><td>模倣不可</td><td>模倣しようとした元スキルが模倣できないものだった</td></tr>
+            <tr><td>部隊内卓越確率</td><td>卓越が絡むスキルを入れたときだけ出る。各スキル固有の卓越確率にこの値が足される</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p>部隊長の名前の横に出ている「不屈1」のような表示は、その武将のスキルが持つ不屈の値です。</p>
+
+      <div class="article-gap3"></div>
+    </div>
+
+    <div class="content-block">
+      <h2>6. 防御を計算したいとき</h2>
+
+      <p>右上の「🛡 防御シミュレーターに切替」を押すと、同じ入力のまま防御側の計算に変わります。防御側では「防御参加武将数」を入れられるようになり、人数依存のスキルがその人数で計算されます。</p>
+
+      <p>入力内容はブラウザに自動保存されるので、閉じても次に開いたときに残っています。全部消したいときは「🗑 リセット」です(確認が出ます)。</p>
+
+      <div class="article-gap3"></div>
+    </div>
+
+    <div class="content-block">
+      <h2>7. 計算式を確かめたいとき</h2>
+
+      <p>各項目の下にある「▶ 計算式を表示」を開くと、何をどう掛けているかが出ます。数字が思ったのと違うときは、まずここを見ると原因が分かります。</p>
+
+      <p>ページ下部の「機能一覧」には、対応している機能と<strong>まだ対応していないこと</strong>をまとめてあります。</p>
+
+      <figure class="article-figure">
+        <img src="assets/img/blog/guide-05-features.png" alt="ページ下部の機能一覧" loading="lazy" decoding="async">
+      </figure>
+
+      <p>2026年8月12日時点で未対応なのは、陣補正・Xスキル・同時攻撃(4合流)・本丸防御の列位置による補正です。<br>
+      とくに陣補正が入っていないぶん、実際の火力は表示よりもう少し出ます。</p>
+
+      <p>TR6は32章の天6スキル(覇界ノ天虎・凶狂威令・鳳凰ノ幻華・十三ノ奇跡・天弦ノ威軍・不敗ノ滅陣)だけ選べます。スキル名を入れたあとに出る段階選択でTR6を選ぶと、パラレル天の数値で計算されます。</p>
+
+      <div class="article-gap4"></div>
+
+      <p class="article-conclusion">まずは兵士と武将名を入れて「計算する」を押してみてください。</p>
+
+      <div class="article-gap"></div>
+
+      <p>おかしな数字が出たり、欲しい機能があれば下のコメント欄で教えてもらえると助かります。</p>
+    </div>
+
+    <div id="pageComments"></div>
+  </main>
+
+  <footer class="site-footer">
+    <p>本サイトは戦国IXA(Sengoku IXA)の非公式ファンメイドツールです。運営会社・関連団体とは一切関係ありません。<br>
+    記載されている会社名・製品名・システム名などは、各社の商標、または登録商標です。<br>
+    © SQUARE ENIX</p>
+    <p><a href="privacy.html">プライバシーポリシー</a></p>
+  </footer>
+
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="assets/js/comments-widget.js"></script>
+<script>renderCommentsWidget('pageComments', 'page:blog-attack-simulator-guide');</script>
+<script src="assets/js/site-sidebar.js"></script>
+</body>
+</html>
