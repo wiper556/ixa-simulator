@@ -145,7 +145,7 @@ EVASIONS = [
      "no_heredoc_backslash.py", "no_heredoc_DISABLED.py",
      "T-01フックの登録を外す"),
     ("CIの検査が抜けている", ".github/workflows/rules.yml",
-     "python tools/lock.py", "python tools/lock.py --skip",
+     "run: python tools/lock.py", "run: echo 錠前の検査は省略",
      "CIから錠前の検査を外す"),
     ("CIが失敗しても止まらない", ".github/workflows/rules.yml",
      "      - name: ルール索引と違反ログの整合",
