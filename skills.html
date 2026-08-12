@@ -117,6 +117,7 @@
 
     <div id="detailView" style="display:none;">
       <div id="sklDetailBody"></div>
+      <p id="sklPermalink" class="detail-permalink"></p>
       <div id="sklComments"></div>
     </div>
   </main>
@@ -4552,6 +4553,12 @@
     detailView.style.display = '';
     sklRenderDetail(s);
     if(window.renderCommentsWidget) renderCommentsWidget('sklComments', 'skill:'+s.name);
+    // PERMALINK:start この項目だけの単独ページ(検索から直接来られるようにしている)
+    (function(){
+      const box = document.getElementById('sklPermalink');
+      if(box) box.innerHTML = '<a href="' + 'skill/'+encodeURIComponent(s.name.replace(/[ \u3000]/g,'_'))+'.html' + '">このページの単独URL</a>';
+    })();
+    // PERMALINK:end
     window.scrollTo(0, 0);
   }
 

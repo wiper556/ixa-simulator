@@ -155,6 +155,7 @@
 
     <div id="detailView" style="display:none;">
       <div id="gdbDetailBody"></div>
+      <p id="gdbPermalink" class="detail-permalink"></p>
       <div id="gdbComments"></div>
     </div>
 
@@ -3543,6 +3544,12 @@
     detailView.style.display = '';
     gdbRenderDetail(g);
     if(window.renderCommentsWidget) renderCommentsWidget('gdbComments', 'char:'+g.no);
+    // PERMALINK:start この項目だけの単独ページ(検索から直接来られるようにしている)
+    (function(){
+      const box = document.getElementById('gdbPermalink');
+      if(box) box.innerHTML = '<a href="' + 'busho/'+g.no+'.html' + '">このページの単独URL</a>';
+    })();
+    // PERMALINK:end
     window.scrollTo(0, 0);
   }
 

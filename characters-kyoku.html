@@ -139,6 +139,7 @@
 
     <div id="detailView" style="display:none;">
       <div id="kkDetailBody"></div>
+      <p id="kkPermalink" class="detail-permalink"></p>
       <div id="kkComments"></div>
     </div>
 
@@ -3686,6 +3687,12 @@
     detailView.style.display = '';
     kkRenderDetail(g);
     if(window.renderCommentsWidget) renderCommentsWidget('kkComments', 'charkyoku:'+g.no);
+    // PERMALINK:start この項目だけの単独ページ(検索から直接来られるようにしている)
+    (function(){
+      const box = document.getElementById('kkPermalink');
+      if(box) box.innerHTML = '<a href="' + 'busho/'+g.no+'.html' + '">このページの単独URL</a>';
+    })();
+    // PERMALINK:end
     window.scrollTo(0, 0);
   }
 

@@ -144,6 +144,7 @@
     <div id="detailView" style="display:none;">
       <p class="kt-back-link"><a href="characters-ketsu.html">← 傑武将一覧に戻る</a></p>
       <div id="ktDetailBody"></div>
+      <p id="ktPermalink" class="detail-permalink"></p>
       <div id="ktComments"></div>
     </div>
   </main>
@@ -302,6 +303,12 @@
     detailView.style.display = '';
     ktRenderDetail(g);
     if(window.renderCommentsWidget) renderCommentsWidget('ktComments', 'charketsu:'+g.no);
+    // PERMALINK:start この項目だけの単独ページ(検索から直接来られるようにしている)
+    (function(){
+      const box = document.getElementById('ktPermalink');
+      if(box) box.innerHTML = '<a href="' + 'busho/'+g.no+'.html' + '">このページの単独URL</a>';
+    })();
+    // PERMALINK:end
     window.scrollTo(0, 0);
   }
 
