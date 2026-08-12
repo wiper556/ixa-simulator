@@ -44,7 +44,28 @@ fast-forwardマージ(コミットを作らないので当然)、`git merge --no
 そして**フックそのものを無効化する設定**。
 最後のものはローカルだけでは原理的に塞げない(検出役もフックだから)。
 **`.github/workflows/rules.yml` がGitHub側で同じ検査を回すのは、この一点のためにある。**
-逆に言えば、**pushしていない間はローカルの門番しか無い。**
+
+### push の手順(2026-08-13〜、masterはブランチ保護つき)
+
+masterは保護されていて、**CIの `check` が通ったコミットしか入らない**。
+管理者にも適用されるので、直接 `git push origin master` は弾かれる:
+
+```
+remote: - Required status check "check" is expected.
+```
+
+CIはpushの後に走るので、先に作業ブランチへ出して結果を待つ。
+
+```bash
+git push origin master:refs/heads/work     # 作業ブランチとして先に出す
+gh run watch $(gh run list --workflow=rules.yml --limit 1 --json databaseId --jq '.[0].databaseId')
+git push origin master                     # 同じコミットなので、緑ならそのまま通る
+git push origin --delete work              # 後片付け
+```
+
+**赤なら直す。** ここを飛ばす手段は、ローカルには無い。
+これが「私が自分でゲートを外せる」という問題への唯一の構造的な答えなので、
+面倒でも迂回しない(迂回できたらそれ自体が違反であり、報告する)。
 
 **手で起動しない。** 止まる条件:
 
