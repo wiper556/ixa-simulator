@@ -196,6 +196,20 @@
   .gacha-card-front .tier-charname{font-size:12px;font-weight:700;margin-top:8px;line-height:1.25;text-align:center;}
   .gacha-card-front .tier-no{font-size:8.5px;margin-top:2px;opacity:.8;font-family:'JetBrains Mono',monospace;}
 
+  /* 傑・天・天パラレル・極で、TYPE2のカード画像を持っている武将は色だけの札ではなく実物のカード絵を出す。
+     100連(.bulk-card)は1枚が54pxしかなく絵が潰れるので対象外(従来の色札のまま)。 */
+  .gacha-card-front.has-art{padding:0;background:#161616;}
+  .gacha-card-front .card-art{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top center;z-index:1;}
+  .gacha-card-front.has-art .art-caption{
+    position:absolute;left:0;right:0;bottom:0;z-index:2;padding:12px 3px 4px;text-align:center;
+    background:linear-gradient(to top, rgba(0,0,0,.85), rgba(0,0,0,.55) 55%, rgba(0,0,0,0));
+    color:#fff;text-shadow:0 1px 3px rgba(0,0,0,.9);
+  }
+  .gacha-card-front.has-art .art-caption .tier-charname{font-size:11px;font-weight:700;margin:0;line-height:1.2;}
+  .gacha-card-front.has-art .art-caption .tier-no{font-size:8px;margin-top:1px;opacity:.85;}
+  /* 傑のホロ演出は絵の上に薄く重ねる(そのままだと絵が見えなくなる) */
+  .tier-傑 .gacha-card-front.has-art::before{z-index:3;opacity:.4;}
+
   .tier-上 .gacha-card-front{background:linear-gradient(160deg,#fff6a0,#ffd400 55%,#e0a800);border-color:#fff4b0;color:#5b4400;text-shadow:0 1px 2px rgba(255,255,255,.5);}
   .tier-特 .gacha-card-front{background:linear-gradient(160deg,#ff6b5c,#d0332a 55%,#8f1f18);border-color:#ff9a8c;color:#fff;text-shadow:0 1px 3px rgba(0,0,0,.5);}
   .tier-極 .gacha-card-front{background:linear-gradient(160deg,#3a3a3a,#0d0d0d 60%,#000000);border-color:#5a5a5a;color:#f0d98a;text-shadow:0 1px 3px rgba(0,0,0,.7);}
@@ -525,7 +539,7 @@
   <div class="sim-version-badge" id="simVersionBadge">v-</div>
 
 <script>
-  const GACHA_VERSION = 'v2026-08-12.1';
+  const GACHA_VERSION = 'v2026-08-12.2';
   document.addEventListener('DOMContentLoaded', ()=>{
     const badge = document.getElementById('simVersionBadge');
     if(badge) badge.textContent = GACHA_VERSION;
@@ -1254,6 +1268,25 @@
     }
   }
 
+  // 傑・天・極のうち、TYPE2のカード画像(assets/img/characters/no{No}_char.png)を持っている武将のNo.。
+  // ここに無い武将(現状は傑3体=20001織田信長/20002豊臣秀吉/20003徳川家康)は従来どおり色だけの札で出す。
+  // 画像を追加したらこの配列にNo.を足すこと。
+  const CARD_ART_NOS = new Set([
+    1310, 1311, 1312, 1313, 1314, 1315, 1316, 1317, 1318, 1319, 1320, 1321,
+    2336, 2358, 2359, 2366, 2368, 2374, 2375, 2376, 2377, 2378, 2379, 2380,
+    2381, 2382, 2383, 2384, 2385, 2386, 2387, 2388, 2389, 2390, 2391, 2392,
+    2393, 2394, 2395, 2396, 2397, 2398, 2399, 2855, 2856, 2857,
+    7001, 7002, 7003, 7004, 7005, 7006, 7007, 7008, 7009, 7010, 7011, 7012,
+    7013, 7014, 7015, 7016, 7017, 7018, 7019, 7020, 7021, 7022,
+    7403, 7404, 7405, 10074, 10075, 10076,
+    31310, 31311, 31312, 31313, 31314, 31315, 31316, 31317, 31318, 31319, 31320, 31321
+  ]);
+  const ART_TIERS = new Set(['傑', '天', '極']);
+  function cardArtSrc(tier, detail){
+    if(!detail || !ART_TIERS.has(tier) || !CARD_ART_NOS.has(detail.no)) return null;
+    return 'assets/img/characters/no' + detail.no + '_char.png';
+  }
+
   function renderCards(draws){
     const stage = document.getElementById('gachaCards');
     stopBulkReveal(); // 100連の演出が動いていたら中断して通常のカード表示に戻す
@@ -1265,12 +1298,22 @@
       const detailHtml = detail
         ? '<div class="tier-charname">'+detail.name+'</div><div class="tier-no">No.'+detail.no+'</div>'
         : '';
+      const art = cardArtSrc(tier, detail);
+      // 裏面が表を向くのは250ms後なので、ここで先に読み込ませておけば初回でも白抜けしない
+      if(art){ const pre = new Image(); pre.src = art; }
+      const frontInner = art
+        ? '<img class="card-art" src="'+art+'" alt="'+detail.name+'" decoding="async">' +
+          '<div class="art-caption">' +
+            '<div class="tier-charname">'+detail.name+'</div>' +
+            '<div class="tier-no">No.'+detail.no+'</div>' +
+          '</div>'
+        : '<div class="tier-label">'+tier+'</div>' +
+          '<div class="tier-kana">'+TIER_KANA[tier]+'</div>' +
+          detailHtml;
       card.innerHTML =
         '<div class="gacha-card-face gacha-card-back">?</div>' +
-        '<div class="gacha-card-face gacha-card-front">' +
-          '<div class="tier-label">'+tier+'</div>' +
-          '<div class="tier-kana">'+TIER_KANA[tier]+'</div>' +
-          detailHtml +
+        '<div class="gacha-card-face gacha-card-front'+(art ? ' has-art' : '')+'">' +
+          frontInner +
         '</div>';
       stage.appendChild(card);
       return {card, tier, isTopTier: (tier==='天' || tier==='傑')};
