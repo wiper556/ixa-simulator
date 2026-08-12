@@ -10,6 +10,7 @@
 
     python tools/audit_selftest.py
 """
+import collections
 import io
 import json
 import os
@@ -63,6 +64,27 @@ CASES = [
     ("横スクロール対策の欠落", "assets/css/site.css",
      ".site-main{max-width:960px;width:100%;align-self:center;padding:32px 16px 60px;min-width:0;",
      ".site-main{max-width:960px;width:100%;align-self:center;padding:32px 16px 60px;"),
+    # --- 2026-08-12に足した、ルール索引・違反ログ・フック自身を見るチェック ---
+    # ここを自己テスト無しで置くと、S-01(自作の検査を自分で合格判定)の再演になる。
+    ("フックが正本と違う", "tools/hooks/pre-push",
+     "exec python tools/precommit_check.py --mode push",
+     "exec python tools/precommit_check.py --mode push  # 正本を書き換えた"),
+    # 索引に行を1つ足すと実数が増え、他文書の「N件の索引」という表記が古くなる。
+    # 数字そのものを書き換える形にすると、ルールが増えるたびにこのケースが壊れる。
+    ("ルール件数の表記ずれ", "docs/RULES.md",
+     "| T-07 |", "| Z-01 | 自己テスト用の架空ルール | - | × | ✗ |\n| T-07 |"),
+    ("棚卸しの期限切れ", "docs/RULES.md",
+     "最終棚卸し: 2026-08-12", "最終棚卸し: 2020-01-01"),
+    ("違反ログのIDが索引に無い", "docs/RULE-VIOLATIONS.md",
+     "| 2026-08-12 | T-01 | 既知の罠を記憶で回避 |",
+     "| 2026-08-12 | Z-99 | 既知の罠を記憶で回避 |"),
+    # W-14(中)の監査欄を「まだ」に戻すと、未対応として数えられ、
+    # 同時に根本原因「手順の自己改変」が2回目のまま未解決になる。
+    ("違反ログに未対応が残っている", "docs/RULE-VIOLATIONS.md",
+     "| 足した(索引だけの変更をpre-commitが警告 + 件数ずれを監査が検出) |", "| まだ |"),
+    ("2回目の違反で作業停止中", "docs/RULE-VIOLATIONS.md",
+     "| 足した(ルール文書と作業の混在をpre-commitで停止) |", "| まだ |"),
+
     ("未確認の根拠なし", "characters-kyoku.html",
      '{level:"TR5", points:"200", effect:null},\n        {level:"TR6", points:"パラレル", effect:null}\n'
      '      ],\n      // 合成テーブルはixanaryスキルページ「百識ノ計」',
@@ -72,15 +94,22 @@ CASES = [
 
 
 def audit():
+    """種別ごとの件数。集合(あるか無いか)で見ると、元から出ている種別を検証できない。
+
+    2026-08-12(第2回レッドチーム対応前の自己点検):
+    集合で比べていたため「S以上でページ無し」と「武将名の表記ゆれ」が
+    『元から出ているため判定不能』になり、自己テストが恒常的に赤だった。
+    赤が続くと見なくなるので、件数で比べて増えたかどうかを見る。
+    """
     subprocess.run([sys.executable, os.path.join("tools", "audit_characters.py")],
                    cwd=ROOT, capture_output=True)
     with io.open(FINDINGS, encoding="utf-8") as f:
-        return {x["cat"] for x in json.load(f)}
+        return collections.Counter(x["cat"] for x in json.load(f))
 
 
 def main():
     base = audit()
-    print("注入前に出ている種別: %d\n" % len(base))
+    print("注入前: %d種別 / 合計%d件\n" % (len(base), sum(base.values())))
     ok = ng = skip = 0
     tmp = tempfile.mkdtemp()
     for cat, rel, old, new in CASES:
@@ -95,29 +124,25 @@ def main():
         try:
             io.open(path, "w", encoding="utf-8", newline="").write(src.replace(old, new, 1))
             got = audit()
-            if cat in got and cat not in base:
-                print("  OK   %-22s 検出した" % cat)
+            if got[cat] > base[cat]:
+                print("  OK   %-22s 検出した(%d件 → %d件)" % (cat, base[cat], got[cat]))
                 ok += 1
-            elif cat in base:
-                print("  --   %-22s 元から出ているため判定不能" % cat)
-                skip += 1
             else:
-                print("  NG   %-22s 違反を入れても検出しない" % cat)
+                print("  NG   %-22s 違反を入れても増えない(%d件のまま)" % (cat, got[cat]))
                 ng += 1
         finally:
             shutil.copy2(bak, path)
-    print("\n検出できた %d / 検出できず %d / 判定不能・スキップ %d" % (ok, ng, skip))
+    print("\n検出できた %d / 検出できず %d / 注入位置が無い %d" % (ok, ng, skip))
     after = audit()
     same = after == base
-    print("復元後に出ている種別が元と同じ:", same)
+    print("復元後の件数が元と同じ:", same)
 
     # A-8(2026-08-12レッドチーム指摘): skipを成功扱いにすると、データが変わって
     # 注入位置が見つからなくなったときに「0 OK / 0 NG / 全部skip」で合格に見えてしまう。
     # skipは失敗として扱い、直すべき場所を出す。
     if skip:
-        print("\n[失敗] スキップ/判定不能が %d件。" % skip)
-        print("  ・注入位置が見つからない → CASES の置換文字列を今のデータに合わせる")
-        print("  ・元から出ている → その指摘を先に解消しないと、このチェックは検証できない")
+        print("\n[失敗] 注入位置が見つからないケースが %d件。" % skip)
+        print("  CASES の置換文字列を今のデータに合わせる。")
 
     # 自己テストが用意されていないチェック種別を可視化する
     covered = {c for c, _f, _o, _n in CASES}
