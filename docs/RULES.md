@@ -148,7 +148,7 @@ categoryLinksを「付けない」と決めたのも作業中の自己判断だ�
 
 | ID | 内容 | 原文 |
 |---|---|---|
-| T-01 | Bashヒアドキュメントはバックスラッシュを1段消費する。エスケープを含む文字列はWrite/Editで書く | [[project_heredoc_backslash_trap]] |
+| T-01 | Bashヒアドキュメントはバックスラッシュを1段消費する。エスケープを含む文字列はWrite/Editで書く | [[project_heredoc_backslash_trap]] / **PreToolUseフックで自動的に止まる**(`tools/hooks/no_heredoc_backslash.py`) |
 | T-02 | 画像切り抜きはTYPE1=466x315 / TYPE2=224x315の絶対固定、ハートマーク基準 | [[project_screenshot_batch_2026-07-29]] |
 | T-03 | PowerShellスクリプトは`-ExecutionPolicy Bypass`を付ける | manual C節 |
 | T-04 | `generalGrowthDB`は単引用符、他は二重引用符。片方だけ置換するとずれる | manual F-1 |
