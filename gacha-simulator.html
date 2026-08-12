@@ -134,7 +134,7 @@
   .gacha-btn-image{background:none;border:none;padding:0;cursor:pointer;line-height:0;transition:transform .12s ease, filter .12s ease;}
   /* くじ札は縦横とも2倍(88px→176px)。引いた武将カード(.gacha-card)の大きさは変えない。 */
   /* 2枚を横並びのまま収めたいので、狭い画面では画面幅に追従させる(375px幅でも折り返さない) */
-  .gacha-btn-image img{width:min(176px,42vw);height:auto;display:block;filter:drop-shadow(0 4px 12px rgba(184,64,47,0.4));}
+  .gacha-btn-image img{width:min(141px,34vw);height:auto;display:block;filter:drop-shadow(0 4px 12px rgba(184,64,47,0.4));}
   .gacha-btn-image:hover{transform:translateY(-2px) scale(1.04);}
   .gacha-btn-image:active{transform:translateY(0) scale(1);}
   .gacha-btn-image:disabled{opacity:.5;cursor:default;transform:none;}
@@ -539,7 +539,7 @@
   <div class="sim-version-badge" id="simVersionBadge">v-</div>
 
 <script>
-  const GACHA_VERSION = 'v2026-08-12.2';
+  const GACHA_VERSION = 'v2026-08-12.4';
   document.addEventListener('DOMContentLoaded', ()=>{
     const badge = document.getElementById('simVersionBadge');
     if(badge) badge.textContent = GACHA_VERSION;
@@ -1269,9 +1269,10 @@
   }
 
   // 傑・天・極のうち、TYPE2のカード画像(assets/img/characters/no{No}_char.png)を持っている武将のNo.。
-  // ここに無い武将(現状は傑3体=20001織田信長/20002豊臣秀吉/20003徳川家康)は従来どおり色だけの札で出す。
-  // 画像を追加したらこの配列にNo.を足すこと。
+  // ここに無い武将は従来どおり色だけの札で出す。画像を追加したらこの配列にNo.を足すこと。
+  // 2026-08-12時点でくじプールの傑3体・天27体・極59体すべてに画像がある。
   const CARD_ART_NOS = new Set([
+    20001, 20002, 20003,
     1310, 1311, 1312, 1313, 1314, 1315, 1316, 1317, 1318, 1319, 1320, 1321,
     2336, 2358, 2359, 2366, 2368, 2374, 2375, 2376, 2377, 2378, 2379, 2380,
     2381, 2382, 2383, 2384, 2385, 2386, 2387, 2388, 2389, 2390, 2391, 2392,
