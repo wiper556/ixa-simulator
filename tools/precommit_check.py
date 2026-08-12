@@ -22,6 +22,7 @@
 import io
 import json
 import os
+import re
 import subprocess
 import sys
 
@@ -86,11 +87,28 @@ def main():
         print("でベースラインに載せる(黙って通さない)。")
 
     # approved:true(赤丸)の自動付与は RULES.md D-14 で禁止。
-    # ドキュメントやこのスクリプト自身にも同じ文字列が出るので、
-    # **武将データのファイルに限って**見る(初回の試運転でドキュメントに誤反応した)。
-    d = run(["git", "diff", "--cached", "-U0", "--"] + list(DATA_FILES))
-    added_approved = [l for l in d.stdout.split("\n")
-                      if l.startswith("+") and "approved:true" in l]
+    #
+    # 行単位のdiffで見ると誤検知する。既に赤丸の武将の行に別のフィールドを足しただけでも
+    # 行ごと「追加」に見えるため(2026-08-12、省略フィールドの補完で5件誤検知した)。
+    # そこで **どのNoが赤丸か** を HEAD と比較して、新しく赤丸になったNoだけを止める。
+    def approved_nos(text):
+        out = set()
+        for m in re.finditer(r'\{name:"[^"]*", no:"(\d+)"([^{}]*)', text):
+            if "approved:true" in m.group(2):
+                out.add(m.group(1))
+        return out
+
+    added_approved = []
+    for f in DATA_FILES:
+        if not os.path.exists(os.path.join(ROOT, f)):
+            continue
+        old = run(["git", "show", "HEAD:" + f]).stdout
+        new = run(["git", "show", ":" + f]).stdout      # ステージ済みの内容
+        if not new:
+            continue
+        gained = approved_nos(new) - approved_nos(old)
+        for no in sorted(gained):
+            added_approved.append("%s: No.%s が新しく approved:true になっている" % (f, no))
     if added_approved:
         ng = True
         print()

@@ -1306,7 +1306,7 @@
       synthesisTable:[
         {slot:"A", skill:"戦陣 破軍", rank:"A", afterSkill:"天穿神滅", afterRank:"SS", target:null, rate:null, effectShort:null, afterTarget:"砲器", afterRate:"+50%", afterEffectShort:"攻撃((ランク+1)xコストx3) %上昇(部隊ランクとコストで効果が変化)"},
         {slot:"B", skill:"戦陣 無双", rank:"A", afterSkill:"無双英傑", afterRank:"SS", target:null, rate:null, effectShort:null, afterTarget:"全", afterRate:"+50%", afterEffectShort:"攻撃99.9%上昇+防御99.9%上昇(部隊消費コストを0.5低下・特殊効果は模倣不可)"},
-        {slot:"C", skill:"轟閻 霹靂火", rank:"S", afterSkill:"武神八幡陣", afterRank:"SS", target:null, rate:null, effectShort:null},
+        {slot:"C", skill:"轟閻 霹靂火", rank:"S", afterSkill:"武神八幡陣", afterRank:"SS", target:null, rate:null, effectShort:null, afterTarget:"全", afterRate:"+60%", afterEffectShort:"防御NULL%上昇 (部隊の総コストで効果が変化します)"},
         {slot:"S1", skill:"鬼滅刺", rank:"A", afterSkill:"布都御魂ノ鬨", afterRank:"SS", target:null, rate:null, effectShort:null, afterTarget:"全", afterRate:"+35%", afterEffectShort:"攻撃 40%上昇+防御 40%上昇(部隊内レアリティS以上のスキル個数×20%加算)"},
         {slot:"S2", skill:"鼓腹撃壌", rank:"A", afterSkill:"天焉相克", afterRank:"SS", target:null, rate:null, effectShort:null, afterTarget:"槍・弓・馬", afterRate:"+70%", afterEffectShort:"全攻 30%上昇(部隊の総コストで効果が変化)"}
       ]},
@@ -1824,9 +1824,9 @@
       ],
       // 合成テーブルはixawiki(1次候補+2次候補+S2候補のLV10効果)
       synthesisTable:[
-        {slot:"A", skill:"比類なき大将", rank:"S", afterSkill:"騎神炎山", afterRank:"S", target:null, rate:null, effectShort:null},
-        {slot:"B", skill:"比類なき大将", rank:"S", afterSkill:"騎神炎山", afterRank:"S", target:null, rate:null, effectShort:null},
-        {slot:"C", skill:"比類なき大将", rank:"S", afterSkill:"騎神炎山", afterRank:"S", target:null, rate:null, effectShort:null},
+        {slot:"A", skill:"比類なき大将", rank:"S", afterSkill:"騎神炎山", afterRank:"S", target:null, rate:null, effectShort:null, afterTarget:"馬器騎", afterRate:"+40%", afterEffectShort:"攻撃75%上昇 防御75%上昇 速度50%上昇"},
+        {slot:"B", skill:"比類なき大将", rank:"S", afterSkill:"騎神炎山", afterRank:"S", target:null, rate:null, effectShort:null, afterTarget:"馬器騎", afterRate:"+40%", afterEffectShort:"攻撃75%上昇 防御75%上昇 速度50%上昇"},
+        {slot:"C", skill:"比類なき大将", rank:"S", afterSkill:"騎神炎山", afterRank:"S", target:null, rate:null, effectShort:null, afterTarget:"馬器騎", afterRate:"+40%", afterEffectShort:"攻撃75%上昇 防御75%上昇 速度50%上昇"},
         {slot:"S1", skill:"騎神炎山", rank:"S", afterSkill:"遁世影武者", afterRank:"B", target:null, rate:null, effectShort:null, afterTarget:"部隊長", afterRate:"+50%", afterEffectShort:"所属部隊の部隊長が持つ初期スキルを模倣する(戦闘スキルのみ)"},
         {slot:"S2", skill:"建御雷神ノ槌", rank:"SS", afterSkill:"建御雷神ノ槌", afterRank:"SS", target:"全", rate:"+100%", effectShort:"攻撃135%上昇+防御135%上昇(所持武将の全スキルの卓越確率+30%・模倣不可)"}
       ]},
@@ -3014,7 +3014,7 @@
         {slot:"S2", skill:"志半ノ矛楯", rank:"A", afterSkill:"志半ノ矛楯", afterRank:"A", target:"全", rate:"+65%", effectShort:"攻撃465%上昇+防御465%上昇(模倣不可)"}
       ]},
 
-    {name:"平塚為広", no:"7002", ch:"未確認", cost:4, troop:"槍砲器攻", sub:"", effect:"卓越でのみ発動/攻撃440%上昇+飛翔14",
+    {name:"平塚為広", no:"7002", illustrator:"SQUARE ENIX", ch:"未確認", cost:4, troop:"槍砲器攻", sub:"", effect:"卓越でのみ発動/攻撃440%上昇+飛翔14",
       furigana:"ひらつかためひろ",
       imageFull:"assets/img/characters/no7002_full.png", imageChar:"assets/img/characters/no7002_char.png",
       atkBase:1140, atkGrowth:46, defBase:1060, defGrowth:37, tacticsBase:530.0, tacticsGrowth:2.5, lv0Troops:4010,
@@ -3061,7 +3061,7 @@
         {slot:"S2", skill:"志半ノ矛楯", rank:"A", afterSkill:"志半ノ矛楯", afterRank:"A", target:"全", rate:"+65%", effectShort:"攻撃465%上昇+防御465%上昇(模倣不可)"}
       ]},
 
-    {name:"太原雪斎", no:"7004", ch:"未確認", cost:4.5, troop:"槍砲器防", sub:"", effect:"敵軍部隊数×2.6%を防御効果に加算",
+    {name:"太原雪斎", no:"7004", illustrator:"SQUARE ENIX", ch:"未確認", cost:4.5, troop:"槍砲器防", sub:"", effect:"敵軍部隊数×2.6%を防御効果に加算",
       furigana:"たいげんせっさい",
       imageFull:"assets/img/characters/no7004_full.png", imageChar:"assets/img/characters/no7004_char.png",
       atkBase:1050, atkGrowth:36, defBase:1150, defGrowth:47, tacticsBase:520.0, tacticsGrowth:2.5, lv0Troops:4290,
@@ -3155,7 +3155,7 @@
         {slot:"S2", skill:"志半ノ矛楯", rank:"A", afterSkill:"志半ノ矛楯", afterRank:"A", target:"全", rate:"+65%", effectShort:"攻撃465%上昇+防御465%上昇(模倣不可)"}
       ]},
 
-    {name:"池田輝政", no:"7008", ch:"未確認", cost:3.5, troop:"全攻", sub:"", effect:"破壊した耐久値に応じて資源獲得(獲得率15%)",
+    {name:"池田輝政", no:"7008", illustrator:"SQUARE ENIX", ch:"未確認", cost:3.5, troop:"全攻", sub:"", effect:"破壊した耐久値に応じて資源獲得(獲得率15%)",
       furigana:"いけだてるまさ",
       imageFull:"assets/img/characters/no7008_full.png", imageChar:"assets/img/characters/no7008_char.png",
       atkBase:1140, atkGrowth:46, defBase:1050, defGrowth:36, tacticsBase:560.0, tacticsGrowth:2.5, lv0Troops:3790,
@@ -3477,7 +3477,7 @@
       // 合成テーブルはスキルページの1次(=移植前)・2次(=移植後)から取得。
       // 候補スキルの対象・確率・効果はサイト内の既存登録から転記(未登録のスキルは空のまま)。
       synthesisTable:[
-        {slot:"A", skill:"獅子王", rank:"A", afterSkill:"銀翼神騎兵", afterRank:"S"},
+        {slot:"A", skill:"獅子王", rank:"A", afterSkill:"銀翼神騎兵", afterRank:"S", afterTarget:"弓馬器", afterRate:"+100%", afterEffectShort:"攻撃64%上昇 防御64%上昇 速度50%上昇"},
         {slot:"B", skill:"神羅聖域", rank:"SS", afterSkill:"神羅聖域", afterRank:"SS", target:"全 覇道", rate:"40%", effectShort:"攻撃900%上昇"},
         {slot:"C", skill:"星神闘覇", rank:"SSS", afterSkill:"星神闘覇", afterRank:"SSS", target:"全 飛翔15", rate:"100%", effectShort:"攻撃 770%上昇+速度200%上昇(TR別データは未確認)"},
         {slot:"S1", skill:"白銀双鶴", rank:"S", afterSkill:"白銀双鶴", afterRank:"S"},
@@ -3537,7 +3537,7 @@
         {slot:"S2", skill:"開闢ノ逆鉾", rank:""}
       ]},
 
-    {name:"北条氏照", no:"7021", ch:"未確認", cost:3, troop:"槍砲器防", sub:"", effect:"部隊コスト10以下で防御効果2倍",
+    {name:"北条氏照", no:"7021", illustrator:"SQUARE ENIX", ch:"未確認", cost:3, troop:"槍砲器防", sub:"", effect:"部隊コスト10以下で防御効果2倍",
       furigana:"ほうじょううじてる",
       imageFull:"assets/img/characters/no7021_full.png", imageChar:"assets/img/characters/no7021_char.png",
       atkBase:1050, atkGrowth:36, defBase:1150, defGrowth:45, tacticsBase:550.0, tacticsGrowth:2.5, lv0Troops:3470,
@@ -3634,7 +3634,7 @@
   }
 
   // スキルデータベース(skills.html)にページがあるスキル名の一覧。ここに載っているスキルはリンク化する。
-  const KK_LINKED_SKILLS = ['入来神舞', '天磐船', '豊国ノ寵将', '天衣無縫神戒', '国津破邪ノ楯', '不滅ノ鬼神', '朧雲ノ閃撃', '瞬刻無影', '国一丸', '氷塊三連撃', '龍驤虎躍', '十束ノ神域', '仙剣破斬', '神光征軍', '天聖宝冠', '海神ノ浮船', '遠呂智ノ閃光', '朧雲ノ蓮撃', '悪屋形', '朝曇ノ明麗', '風林火山', '転歌', '風狂幻術', '戦陣 吟詠', '飛蝶野分', '聖廉母堂', '破軍一投', '戦陣 無縫', '凜武艶姫', '日輪ノ守護者', '勝旗勇躍', '戦陣 神楽', '万里嵐壁', '三千世界神将', '仙境解脱', '八幡神ノ威光', '八重言代主神', '刹那無影', '千里必勝ノ神算', '四天轟雷', '国堅大神', '國才連豪', '天之尾羽張', '天地黎明', '天奏聖譚曲', '天津日ノ太刀', '天津甕星ノ雷', '天焉相克', '天翔雷神', '天頂ノ電光', '天香山命', '布刀玉ノ策', '布都御魂ノ鬨', '建御雷神ノ槌', '建御雷神ノ閃光', '摩利支天ノ法', '旌旗翳天ノ覇陣', '星神闘覇', '月詠ノ覇威', '永世ノ天隻', '潔花咲然', '火之迦具土神', '照闇騎行', '破軍星 皇', '破軍騎行', '破邪後輝', '神屋楯比売命', '神羅聖域', '禍津日神ノ謀', '義陣絶刀', '至天ノ御剣', '舞蝶朧月', '虎賁統帥', '覇王征軍', '開闢ノ逆鉾', '飛龍衝天', '高津姫神', '魔弾奏者', '黄泉醜女ノ屍兵', '十三ノ奇跡', '覇界ノ天虎', '蛇神幻計', '怪童冥滅', '鳳凰ノ幻華', '覇城統陣', '月読ノ冥略', '凶狂威令', '焔天滅刻', '不敗ノ滅陣', '黒翼竜', '天弦ノ威軍', '万界神謀', '絶界滅刃', '皇天覇虎', '熾炎破天', '覇天金剛', '虚妄ノ神蛇', '魁星ノ神弓', '天甲破山', '天焉破山', '天岩戸ノ神域', '波濤ノ剛撃'];
+  const KK_LINKED_SKILLS = ['入来神舞', '天磐船', '豊国ノ寵将', '天衣無縫神戒', '国津破邪ノ楯', '不滅ノ鬼神', '朧雲ノ閃撃', '瞬刻無影', '国一丸', '氷塊三連撃', '龍驤虎躍', '十束ノ神域', '仙剣破斬', '神光征軍', '天聖宝冠', '海神ノ浮船', '遠呂智ノ閃光', '朧雲ノ蓮撃', '悪屋形', '朝曇ノ明麗', '風林火山', '転歌', '風狂幻術', '戦陣 吟詠', '飛蝶野分', '聖廉母堂', '破軍一投', '戦陣 無縫', '凜武艶姫', '日輪ノ守護者', '勝旗勇躍', '戦陣 神楽', '万里嵐壁', '三千世界神将', '仙境解脱', '八幡神ノ威光', '八重言代主神', '刹那無影', '千里必勝ノ神算', '四天轟雷', '国堅大神', '國才連豪', '天之尾羽張', '天地黎明', '天奏聖譚曲', '天津日ノ太刀', '天津甕星ノ雷', '天焉相克', '天翔雷神', '天頂ノ電光', '天香山命', '布刀玉ノ策', '布都御魂ノ鬨', '建御雷神ノ槌', '建御雷神ノ閃光', '摩利支天ノ法', '旌旗翳天ノ覇陣', '星神闘覇', '月詠ノ覇威', '永世ノ天隻', '潔花咲然', '火之迦具土神', '照闇騎行', '破軍星 皇', '破軍騎行', '破邪後輝', '神屋楯比売命', '神羅聖域', '禍津日神ノ謀', '義陣絶刀', '至天ノ御剣', '舞蝶朧月', '虎賁統帥', '覇王征軍', '開闢ノ逆鉾', '飛龍衝天', '高津姫神', '魔弾奏者', '黄泉醜女ノ屍兵', '天甲破山', '天岩戸ノ神域', '波濤ノ剛撃', '一刀ノ伝承', '三十五ノ兵法', '傾国ノ艶姫', '八楯剛陣', '冥国ノ双鎌', '剛毅謀慮', '十死一生', '回天剣舞', '城壁の護り', '天廟斬算', '天穿神滅', '天綾の誓約', '天華爛漫', '天衝破軍槍', '巌流燕返し', '幻渦龍刀', '幽冥主宰大神', '式神ノ冥王', '悪一文字', '慈愛ノ癒術', '払捨刀夢想', '文治興隆', '旋龍突渦', '日輪豊国', '月下闇龍', '朧雲ノ突撃', '根津諏訪流鷹術', '武神八幡陣', '比類なき大将', '氷塊ノ夾撃', '氷瀑ノ封印', '氷瀑ノ封神', '無双英傑', '無空ノ極剣', '無窮天斥陣', '煙霞迷霧', '牙突', '牛鬼ノ攻城', '白銀双鶴', '破城 羅刹', '破軍星', '神谷活心流', '神農医方', '紅蓮ノ刃', '紅蓮ノ刹', '縮地', '聖光ノ遊星', '聖女ノ恩寵', '茅纒之矟ノ煌', '荒破閃神', '葵ノ慈母', '虎巫', '覇王絶世', '見様見真似', '貫殺飛苦無', '轟閻 霹靂火', '銀翼神騎兵', '錘焔ノ空帯', '錘焔ノ藍帯', '風魔ノ夜討', '飛幻忍術', '飛竜星照', '騎神炎山', '騒速ノ神撃', '魔界ノ美姫', '黒衣ノ軍師', '黒飛燕剣', '龍槌閃・惨'];
 
   function kkSkillLink(skillName, rank){
     const label = kkEscapeHtml(skillName)+' '+kkEscapeHtml(rank||'');
