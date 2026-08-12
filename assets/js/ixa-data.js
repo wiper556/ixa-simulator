@@ -17,7 +17,7 @@ const specialSkills = {
     noMimic: true,
     activationType: 'triggered',
     statTarget: 'atk',
-    trTable: { base:1000, TR1:1060, TR2:1140, TR3:1240, TR4:1360, TR5:1500 },
+    trTable: { base:1000, TR1:1060, TR2:1140, TR3:1240, TR4:1360, TR5:1500, TR6:1550 },
     baseRate: 100,
     note: '確率+100%/対象:全。攻撃1000%上昇(LV10)〜1500%上昇(TR5)。覇道を持つため所属部隊の武将のスキルを' +
           '無効化・発動率低下から保護する。「追加・極限スキルの攻撃・破壊効果が2.5倍(TR5で3倍)」は' +
@@ -29,10 +29,10 @@ const specialSkills = {
     statTarget: 'atk',
     targetTroopCategories: ['弓兵科','兵器兵科(器兵科)','兵器兵科(砲兵科)'],
     targetSoldierNames: ['騎馬鉄砲'],
-    trTable: { base:350, TR1:360, TR2:370, TR3:380, TR4:400, TR5:420 },
+    trTable: { base:350, TR1:360, TR2:370, TR3:380, TR4:400, TR5:420, TR6:440 },
     baseRate: 100,
     takuetsu: { multiplier: 3 },
-    takuetsuChanceTable: { base:-60, TR1:-55, TR2:-50, TR3:-40, TR4:-30, TR5:-20 }, // characters.html No.1313 の鍛錬表より。マイナス値はp1計算時に0%へクランプされる
+    takuetsuChanceTable: { base:-60, TR1:-55, TR2:-50, TR3:-40, TR4:-30, TR5:-20, TR6:10 }, // characters.html No.1313 の鍛錬表より。マイナス値はp1計算時に0%へクランプされる
     note: '確率+100%/対象:弓・器・焙・騎。攻撃350%上昇(LV10)〜420%上昇(TR5)。' +
           '卓越:追加確率-60%(LV10)〜-20%(TR5)で攻撃効果3倍。追加確率がマイナスのため、' +
           '他スキルで卓越確率を積み上げて0%を超えた時のみ抽選される。' +
@@ -90,7 +90,8 @@ const specialSkills = {
     activationType: 'triggered',
     statTarget: 'def',
     targetTroopCategories: ['兵器兵科(砲兵科)','兵器兵科(器兵科)'],
-    trTable: { base:700, TR1:730, TR2:760, TR3:800, TR4:890, TR5:1000 },
+    trTable: { base:700, TR1:730, TR2:760, TR3:800, TR4:890, TR5:1000, TR6:1000 },
+    rateTable: { base:50, TR6:60 }, // TR6のみ確率+60%(加勢時3倍の条件も防御参加武将数300以下に緩和)
     baseRate: 50,
     note: '確率+50%/対象:砲・器。防御700%上昇(LV10)〜1000%上昇(TR5)。' +
           '「防御参加武将数が150以下の自領以外の加勢戦闘時、防御効果3倍」は' +
@@ -102,7 +103,7 @@ const specialSkills = {
     activationType: 'triggered',
     statTarget: 'atk',
     targetTroopCategories: ['弓兵科','兵器兵科(砲兵科)','兵器兵科(器兵科)'],
-    trTable: { base:510, TR1:550, TR2:630, TR3:730, TR4:850, TR5:990 },
+    trTable: { base:510, TR1:550, TR2:630, TR3:730, TR4:850, TR5:990, TR6:1180 },
     baseRate: 100,
     note: '確率+100%/対象:弓・砲・器。攻撃510%上昇(LV10)〜990%上昇(TR5)。' +
           '「対象兵科指揮時、極限スキルの攻撃効果が3.5倍(TR5で4.5倍)」は極限スキル側への' +
@@ -118,11 +119,12 @@ const specialSkills = {
     // 係数(=基礎値)には部隊内で最も高いTR段階のものを使う(computeVariableSkillValues)。
     variableFormula: {
       statTarget: 'def', base: 0,
-      perUnitTable: { base:400, TR1:420, TR2:450, TR3:490, TR4:540, TR5:600 },
+      perUnitTable: { base:400, TR1:420, TR2:450, TR3:490, TR4:540, TR5:600, TR6:650 },
       variable: 'sameSkillCount'
     },
-    trTable: { base:400, TR1:420, TR2:450, TR3:490, TR4:540, TR5:600 }, // 1人所持時の参考値(段階選択UI用)
+    trTable: { base:400, TR1:420, TR2:450, TR3:490, TR4:540, TR5:600, TR6:650 }, // 1人所持時の参考値(段階選択UI用)
     baseRate: 55,
+    rateTable: { base:55, TR6:65 }, // TR6のみ確率+65%(飛翔も15→17になるが飛翔は段階別テーブル非対応)
     hasSoar: true,
     soarValue: 15,
     note: '確率+55%/対象:槍・砲・器、飛翔15。基礎値400%(LV10)〜600%(TR5)。' +
@@ -138,8 +140,10 @@ const specialSkills = {
     targetSoldierNames: ['騎馬鉄砲'],
     // 「自軍城主数が10以上で攻撃効果が3倍」は通常満たしている前提のため、3倍を織り込んだ値を入れてある。
     // 素の値は LV10:1000 / TR1:1060 / TR2:1120 / TR3:1200 / TR4:1300 / TR5:1400。
-    trTable: { base:3000, TR1:3180, TR2:3360, TR3:3600, TR4:3900, TR5:4200 },
+    trTable: { base:3000, TR1:3180, TR2:3360, TR3:3600, TR4:3900, TR5:4200, TR6:4350 },
     baseRate: 45,
+    rateTable: { base:45, TR6:55 }, // TR6のみ確率+55%
+    // TR6では不屈も1→2になるが、不屈は段階別テーブルを持たない実装のため反映していない
     rateNote: '城主10以上前提',
     note: '確率+45%/対象:弓・馬・焙・騎、不屈1。攻撃1000%上昇(LV10)〜1400%上昇(TR5)。' +
           '「自軍城主数が10以上で攻撃効果が3倍」は通常満たしている前提のため、' +
