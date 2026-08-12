@@ -41,7 +41,14 @@ import io, os, re, json, subprocess, sys, urllib.parse
 sys.stdout.reconfigure(encoding="utf-8")
 from playwright.sync_api import sync_playwright
 
-ROOT = r'c:\Users\uesug\ixa-simulator'
+# 2026-08-13: ここは r'c:\Users\uesug\ixa-simulator' の決め打ちだった。
+# **どこで実行しても本体リポジトリに chdir する**ので、
+#  ・CI(Linux)では起動した瞬間に FileNotFoundError
+#  ・git worktree や clone で回しても、生成されるのは本体のほう
+# という状態だった。tools/check_generated.py が「一致している」と言っていたのは、
+# 取り出したツリーではなく本体を再生成した結果を見ていたからで、検査になっていなかった。
+# スクリプトの位置からリポジトリの根を求める。
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BASE = 'https://wiper556.github.io/ixa-simulator/'
 os.chdir(ROOT)
 
