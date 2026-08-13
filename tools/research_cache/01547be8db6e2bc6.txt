@@ -1,0 +1,755 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="ja">
+<head>
+ <meta http-equiv="content-type" content="application/xhtml+xml; charset=EUC-JP" />
+ <meta name="robots" content="index,follow" />
+<meta description="戦国IXA（戦国イクサ） Wiki ブラウザゲーム">
+<meta keywords="戦国IXA,戦国,IXA,sengokuixa,SQUARE,スクウェア,YAHOO,攻略,wiki,裏技,裏ワザ">
+<title>BushoCard - 戦国IXA Wiki</title>
+ <link rel="stylesheet" type="text/css" media="screen" href="./css/ixa/pukiwiki.css?20111211">
+ <link rel="stylesheet" type="text/css" media="screen" href="./css/common/common.css?20111210">
+ <link rel="shortcut icon" href="./image/ixa/favicon.ico" type="image/x-icon">
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+
+<script type="text/javascript" src="./js/common/utils.js"></script>
+<script type="text/javascript"><!--
+scrolltotop.init(540);
+//--></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-17978830-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+<body>
+<div id="header">
+ <a href="index.php"><img id="logo" src="./image/ixa/toplogo.png" alt="戦国IXA" title="戦国IXA" /></a>
+ <h1 class="title"><a href="https://ixawiki.com/index.php?plugin=related&amp;page=BushoCard">BushoCard</a> </h1>
+</div>
+<div id="navigator"><a href="https://ixawiki.com/index.php?FrontPage">ホーム</a><span class="space"></span><a href="https://ixawiki.com/index.php?plugin=newpage&amp;refer=BushoCard">新規</a><a href="https://ixawiki.com/index.php?cmd=edit&amp;page=BushoCard">編集</a><a href="https://ixawiki.com/index.php?plugin=attach&amp;pcmd=upload&amp;page=BushoCard">添付</a><span class="space"></span><a href="https://ixawiki.com/index.php?cmd=list">一覧</a><a href="https://ixawiki.com/index.php?cmd=search">単語検索</a><a href="https://ixawiki.com/index.php?RecentChanges">最終更新</a><a href="https://ixawiki.com/index.php?cmd=diff&amp;page=BushoCard">差分</a><a href="https://ixawiki.com/index.php?cmd=backup&amp;page=BushoCard">バックアップ</a><span class="space"></span><a href="https://ixawiki.com/index.php?cmd=help">ヘルプ</a><span class="navi_acc"></span></div>
+<div id="contents">
+<table class="contents" width="100%" border="0" cellspacing="0" cellpadding="0">
+ <tr>
+  <td class="ltable" valign="top"><div id="menubar">
+  <form action="https://ixawiki.com/index.php" method="get" id="searchform">
+<div><input type="hidden" name="encode_hint" value="ぷ" /></div>
+ <div class="search">
+  <input type="hidden" name="cmd" value="search" />
+  <input type="text" placeholder="Search" name="word" value="" size="20" class="searchinput"/>
+  <input type="submit" value="検索" class="btn success searchbutton"/>
+  <input type="radio" name="type" id="_p_search_AND" value="AND"  checked="checked" />
+  <label for="_p_search_AND">AND検索</label>
+  <input type="radio" name="type" id="_p_search_OR" value="OR"   />
+  <label for="_p_search_OR">OR検索</label>
+ </div>
+</form>
+<h4 id="content_1_0">ゲーム概要</h4>
+<p><a href="https://ixawiki.com/index.php?Guide%2F%A5%B2%A1%BC%A5%E0%BE%D2%B2%F0" title="Guide/ゲーム紹介">ゲーム紹介</a><br />
+<a href="https://ixawiki.com/index.php?Guide%2F%BB%CF%A4%E1%A4%EB%C1%B0%A4%CE%C3%ED%B0%D5%C5%C0" title="Guide/始める前の注意点"><span class="b">始める前の注意点</span></a><br />
+<a href="https://ixawiki.com/index.php?Guide%2F%B9%F1" title="Guide/国">国</a>　<a href="https://ixawiki.com/index.php?Guide%2F%C6%B1%CC%C1" title="Guide/同盟">同盟</a>　<a href="https://ixawiki.com/index.php?Guide%2F%BE%EB%BC%E7" title="Guide/城主">城主</a>　<a href="https://ixawiki.com/index.php?%CD%D1%B8%EC%BD%B8" title="用語集">用語</a><br />
+<a href="https://ixawiki.com/index.php?%C0%EF%B9%F1%A4%AF%A4%B8" title="戦国くじ">戦国くじ</a>　<a href="https://ixawiki.com/index.php?FAQ" title="FAQ">FAQ</a><br /></p>
+
+<h4 id="content_1_1">武将カード</h4>
+<p><a href="https://ixawiki.com/index.php?Busho%2F%C9%F0%BE%AD%A5%AB%A1%BC%A5%C9%B3%B5%CD%D7" title="Busho/武将カード概要">武将概要</a>　<a href="https://ixawiki.com/index.php?Busho%2F%C9%F0%BE%AD%A5%AB%A1%BC%A5%C9%B0%EC%CD%F7%2F%BF%B7%A5%AB%A1%BC%A5%C9" title="Busho/武将カード一覧/新カード">最新カード</a><br /></p>
+<div class="ie5"><table class="style_table" cellspacing="1" border="0"><thead><tr><td class="c" style="width:40px;" colspan="4"><a href="https://ixawiki.com/index.php?Busho%2F%C9%F0%BE%AD%A5%AB%A1%BC%A5%C9%B0%EC%CD%F7" title="Busho/武将カード一覧">武将カード一覧（全）</a></td></tr>
+</thead>
+<tbody><tr><td class="c" rowspan="3">レ<br class="spacer" />ア<br class="spacer" />別</td><td class="c" style="width:40px;"><a href="https://ixawiki.com/index.php?Busho%2F%C9%F0%BE%AD%A5%AB%A1%BC%A5%C9%B0%EC%CD%F7%28%C5%B7%29" title="Busho/武将カード一覧(天)"><img src="https://ixawiki.com/index.php?plugin=ref&amp;page=Busho%2F%C9%F0%BE%AD%A5%AB%A1%BC%A5%C9%B3%B5%CD%D7&amp;src=%C5%B7.png" alt="天.png" title="天.png" width="30" height="30" /></a></td><td class="c" style="width:40px;"><a href="https://ixawiki.com/index.php?Busho%2F%C9%F0%BE%AD%A5%AB%A1%BC%A5%C9%B0%EC%CD%F7%28%B6%CB%29" title="Busho/武将カード一覧(極)"><img src="https://ixawiki.com/index.php?plugin=ref&amp;page=Busho%2F%C9%F0%BE%AD%A5%AB%A1%BC%A5%C9%B3%B5%CD%D7&amp;src=%B6%CB.png" alt="極.png" title="極.png" width="30" height="30" /></a></td><td class="c" style="width:40px;"><a href="https://ixawiki.com/index.php?Busho%2F%C9%F0%BE%AD%A5%AB%A1%BC%A5%C9%B0%EC%CD%F7%28%C6%C3%29" title="Busho/武将カード一覧(特)"><img src="https://ixawiki.com/index.php?plugin=ref&amp;page=Busho%2F%C9%F0%BE%AD%A5%AB%A1%BC%A5%C9%B3%B5%CD%D7&amp;src=%C6%C3.png" alt="特.png" title="特.png" width="30" height="30" /></a></td></tr>
+<tr><td class="c" style="width:40px;"><a href="https://ixawiki.com/index.php?Busho%2F%C9%F0%BE%AD%A5%AB%A1%BC%A5%C9%B0%EC%CD%F7%28%BE%E5%29" title="Busho/武将カード一覧(上)"><img src="https://ixawiki.com/index.php?plugin=ref&amp;page=Busho%2F%C9%F0%BE%AD%A5%AB%A1%BC%A5%C9%B3%B5%CD%D7&amp;src=%BE%E5.png" alt="上.png" title="上.png" width="30" height="30" /></a></td><td class="c" style="width:40px;"><a href="https://ixawiki.com/index.php?Busho%2F%C9%F0%BE%AD%A5%AB%A1%BC%A5%C9%B0%EC%CD%F7%28%BD%F8%29" title="Busho/武将カード一覧(序)"><img src="https://ixawiki.com/index.php?plugin=ref&amp;page=Busho%2F%C9%F0%BE%AD%A5%AB%A1%BC%A5%C9%B3%B5%CD%D7&amp;src=%BD%F8.png" alt="序.png" title="序.png" width="30" height="30" /></a></td><td class="c" style="width:40px;"><a href="https://ixawiki.com/index.php?Busho%2F%C9%F0%BE%AD%A5%AB%A1%BC%A5%C9%B0%EC%CD%F7%28%B7%E6%29" title="Busho/武将カード一覧(傑)"><img src="https://ixawiki.com/index.php?plugin=ref&amp;page=Busho%2F%C9%F0%BE%AD%A5%AB%A1%BC%A5%C9%B3%B5%CD%D7&amp;src=%B7%E6.png" alt="傑.png" title="傑.png" width="30" height="30" /></a></td></tr>
+<tr><td class="c" style="width:40px;"><a href="https://ixawiki.com/index.php?Busho%2F%C9%F0%BE%AD%A5%AB%A1%BC%A5%C9%B0%EC%CD%F7%28%C2%BE%29" title="Busho/武将カード一覧(他)"><img src="https://ixawiki.com/index.php?plugin=ref&amp;page=Busho%2F%C9%F0%BE%AD%A5%AB%A1%BC%A5%C9%B3%B5%CD%D7&amp;src=%C2%BEL.png" alt="他L.png" title="他L.png" width="30" height="30" /></a></td><td class="c" style="width:40px;"></td><td class="c" style="width:40px;"></td></tr>
+</tbody>
+</table></div>
+<p><a href="https://ixawiki.com/index.php?Busho%2F%C9%F0%BE%AD%A5%AB%A1%BC%A5%C9%B2%E8%C1%FC" title="Busho/武将カード画像">画像</a>
+<a href="https://ixawiki.com/index.php?Busho%2F%A5%AB%A1%BC%A5%C9%BC%E8%B0%FA" title="Busho/カード取引">カード取引</a>
+<a href="https://ixawiki.com/index.php?Busho%2F%A5%A4%A5%E9%A5%B9%A5%C8%CA%CC" title="Busho/イラスト別">イラスト別</a></p>
+
+<h4 id="content_1_2">武将スキル</h4>
+<p><a href="https://ixawiki.com/index.php?Busho%2F%C9%F0%BE%AD%A5%B9%A5%AD%A5%EB" title="Busho/武将スキル">武将スキル</a><br />
+<a href="https://ixawiki.com/index.php?Busho%2F%C9%F4%C2%E2%A5%B9%A5%AD%A5%EB" title="Busho/部隊スキル">部隊スキル</a><br />
+<a href="https://ixawiki.com/index.php?%C9%F0%BE%AD%C4%C9%B2%C3%A5%B9%A5%AD%A5%EB%B0%EC%CD%F7" title="武将追加スキル一覧">武将追加スキル一覧</a><br /></p>
+
+<h4 id="content_1_3">武将カード育成</h4>
+<p><a href="https://ixawiki.com/index.php?Busho%2F%C9%F0%BE%AD%A5%AB%A1%BC%A5%C9%B0%E9%C0%AE" title="Busho/武将カード育成">育成概要</a>　<a href="https://ixawiki.com/index.php?Busho%2F%C9%AC%CD%D7%B7%D0%B8%B3%C3%CD" title="Busho/必要経験値">必要経験値</a><br />
+<a href="https://ixawiki.com/index.php?Busho%2F%C9%F0%BE%AD%A5%AB%A1%BC%A5%C9%B9%E7%C0%AE" title="Busho/武将カード合成">合成概要</a>　<a href="https://ixawiki.com/index.php?%A5%B9%A5%AD%A5%EB%C6%BB%BE%EC" title="スキル道場">スキル道場</a><br /></p>
+
+<h4 id="content_1_4">所領・開拓</h4>
+<p><a href="https://ixawiki.com/index.php?Other%2FNPC%B6%F5%A4%AD%C3%CF" title="Other/NPC空き地">NPC空き地</a>　<a href="https://ixawiki.com/index.php?Other%2F%BD%EA%CE%CE" title="Other/所領">所領</a></p>
+
+<h4 id="content_1_5">内政</h4>
+<p><a href="https://ixawiki.com/index.php?Domestic%2F%B7%FA%C3%DB%A5%C4%A5%EA%A1%BC" title="Domestic/建築ツリー">建築ツリー</a>　<a href="https://ixawiki.com/index.php?Domestic%2F%BB%DC%C0%DF" title="Domestic/施設">施設</a><br />
+<a href="https://ixawiki.com/index.php?Busho%2F%CA%BC%BB%CE%B0%EC%CD%F7" title="Busho/兵士一覧">研究/兵士一覧</a>　<a href="https://ixawiki.com/index.php?%C8%EB%B6%AD%C3%B5%BA%F7" title="秘境探索">秘境探索</a><br />
+<a href="https://ixawiki.com/index.php?%B2%CC%BF%B4%B0%DB%B6%AD" title="果心異境">果心異境</a></p>
+
+<h4 id="content_1_6">合戦</h4>
+<p><a href="https://ixawiki.com/index.php?%B9%E7%C0%EF%B3%B5%CD%D7" title="合戦概要">合戦概要</a>　<a href="https://ixawiki.com/index.php?%B9%E7%C0%EF%A5%AC%A5%A4%A5%C9" title="合戦ガイド">合戦ガイド</a><br />
+<a href="https://ixawiki.com/index.php?%C0%EF%B8%F9%A4%C8%B9%E7%C0%EF%CA%F3%BD%B7" title="戦功と合戦報酬">戦功と合戦報酬</a>　<a href="https://ixawiki.com/index.php?%CC%BE%C0%BC%A4%C8%BB%DC%A4%B7" title="名声と施し">名声と施し</a><br /></p>
+
+<h4 id="content_1_7">クエスト/刷新</h4>
+<p><a href="https://ixawiki.com/index.php?%A5%AF%A5%A8%A5%B9%A5%C8" title="クエスト">クエスト</a>　<a href="https://ixawiki.com/index.php?%A5%EF%A1%BC%A5%EB%A5%C9%BA%FE%BF%B7" title="ワールド刷新">ワールド刷新</a>
+<br /></p>
+
+<h4 id="content_1_8">イベント</h4>
+<p><a href="https://ixawiki.com/index.php?%A5%A4%A5%D9%A5%F3%A5%C8%2F%B8%B8%A4%CE%C9%F0%BE%AD%C2%E7%B6%C2%B1%E3" title="イベント/幻の武将大饗宴">幻の武将大饗宴</a><br />
+<a href="https://ixawiki.com/index.php?%A4%EF%A4%F3%A4%C0%A4%D5%A4%EB%C7%D5%28%B2%BE%29" title="わんだふる杯(仮)">わんだふる杯(仮)</a><br />
+<br /></p>
+
+<h4 id="content_1_9">その他</h4>
+<p><a href="https://ixawiki.com/index.php?%A5%B3%A5%E1%A5%F3%A5%C8" title="コメント">コメント</a><br />
+<a href="https://ixawiki.com/index.php?BushoCard%2F%A5%C6%A5%F3%A5%D7%A5%EC" title="BushoCard/テンプレ">テンプレ(武将カード)</a><br /></p>
+<div style="text-align:right">total:704769<br class="spacer" />
+today:7<br class="spacer" />
+yesterday:17<br class="spacer" />
+<span style="font-size:12px;display:inline-block;line-height:130%;text-indent:0px">online:42</span><br class="spacer" />
+<br /></div>
+<h5>最新の10件</h5>
+<div class="recent"><strong>2026-08-13</strong>
+<ul class="recent_list">
+ <li><a href="https://ixawiki.com/index.php?exam-preparation" title="exam-preparation">exam-preparation</a></li>
+ <li><a href="https://ixawiki.com/index.php?exam-preparation-2026" title="exam-preparation-2026">exam-preparation-2026</a></li>
+ <li><a href="https://ixawiki.com/index.php?rc88rucom" title="rc88rucom">rc88rucom</a></li>
+ <li><a href="https://ixawiki.com/index.php?fun79onl1" title="fun79onl1">fun79onl1</a></li>
+ <li><a href="https://ixawiki.com/index.php?sdcsdrf34rf" title="sdcsdrf34rf">sdcsdrf34rf</a></li>
+ <li><a href="https://ixawiki.com/index.php?32winndesign" title="32winndesign">32winndesign</a></li>
+ <li><a href="https://ixawiki.com/index.php?RecentDeleted" title="RecentDeleted">RecentDeleted</a></li>
+</ul>
+<strong>2026-08-12</strong>
+<ul class="recent_list">
+ <li><a href="https://ixawiki.com/index.php?BushoCard%2F2008%BB%A8%B2%EC%C2%B9%BB%D4" title="BushoCard/2008雑賀孫市">BushoCard/2008雑賀孫市</a></li>
+ <li><a href="https://ixawiki.com/index.php?MenuBar" title="MenuBar">MenuBar</a></li>
+ <li><a href="https://ixawiki.com/index.php?%A5%B3%A5%E1%A5%F3%A5%C8%2FBushoCard%2F10072%A4%AA%A4%DE%A4%C4" title="コメント/BushoCard/10072おまつ">コメント/BushoCard/10072おまつ</a></li>
+</ul>
+</div>
+<div class="clear"></div>
+<p><br />
+<a href="https://ixawiki.com/index.php?RecentChanges" title="RecentChanges">最終更新</a></p>
+
+</div></td>
+  <td class="ctable" valign="top">
+   <div id ="topicpath"><a href="https://ixawiki.com/index.php?FrontPage" title="FrontPage">Top</a> &gt; BushoCard</div>   <div id="body"><h2 id="content_1_0">武将カード簡易一覧  <a class="anchor_super" id="c2bd09fc" href="http://www.ixawiki.com/index.php?BushoCard#c2bd09fc" title="c2bd09fc">&dagger;</a> <a class="anchor_super" href="http://www.ixawiki.com/index.php?cmd=edit&amp;page=BushoCard&amp;id=c2bd09fc"><img src="./image/common/plus/paraedit.png" width="9" height="9" alt="Edit" title="Edit" /></a></h2>
+<ul class="list1" style="padding-left:16px;margin-left:16px">
+<li><a id="list_1" href="http://www.ixawiki.com/index.php?BushoCard%2F1001%BF%A5%C5%C4%BF%AE%C4%B9" title="BushoCard/1001織田信長 ">BushoCard/1001織田信長</a>
+</li>
+<li><a id="list_2" href="http://www.ixawiki.com/index.php?BushoCard%2F1002%C2%AD%CD%F8%B5%C1%BE%BC" title="BushoCard/1002足利義昭 ">BushoCard/1002足利義昭</a>
+</li>
+<li><a id="list_3" href="http://www.ixawiki.com/index.php?BushoCard%2F1003%C9%F0%C5%C4%BF%AE%B8%BC" title="BushoCard/1003武田信玄 ">BushoCard/1003武田信玄</a>
+</li>
+<li><a id="list_4" href="http://www.ixawiki.com/index.php?BushoCard%2F1004%BE%E5%BF%F9%B8%AC%BF%AE" title="BushoCard/1004上杉謙信 ">BushoCard/1004上杉謙信</a>
+</li>
+<li><a id="list_5" href="http://www.ixawiki.com/index.php?BushoCard%2F1005%CC%D3%CD%F8%B8%B5%BD%A2" title="BushoCard/1005毛利元就 ">BushoCard/1005毛利元就</a>
+</li>
+<li><a id="list_6" href="http://www.ixawiki.com/index.php?BushoCard%2F1006%CB%CC%BE%F2%BB%E1%B9%AF" title="BushoCard/1006北条氏康 ">BushoCard/1006北条氏康</a>
+</li>
+<li><a id="list_7" href="http://www.ixawiki.com/index.php?BushoCard%2F1007%C6%C1%C0%EE%B2%C8%B9%AF" title="BushoCard/1007徳川家康 ">BushoCard/1007徳川家康</a>
+</li>
+<li><a id="list_8" href="http://www.ixawiki.com/index.php?BushoCard%2F1008%C0%F5%B0%E6%C4%B9%C0%AF" title="BushoCard/1008浅井長政 ">BushoCard/1008浅井長政</a>
+</li>
+<li><a id="list_9" href="http://www.ixawiki.com/index.php?BushoCard%2F1009%C5%E7%C4%C5%B5%C1%B5%D7" title="BushoCard/1009島津義久 ">BushoCard/1009島津義久</a>
+</li>
+<li><a id="list_10" href="http://www.ixawiki.com/index.php?BushoCard%2F1010%C4%B9%BD%A1%B2%E6%C9%F4%B8%B5%BF%C6" title="BushoCard/1010長宗我部元親 ">BushoCard/1010長宗我部元親</a>
+</li>
+<li><a id="list_11" href="http://www.ixawiki.com/index.php?BushoCard%2F1011%C2%E7%CD%A7%BD%A1%CE%DB" title="BushoCard/1011大友宗麟 ">BushoCard/1011大友宗麟</a>
+</li>
+<li><a id="list_12" href="http://www.ixawiki.com/index.php?BushoCard%2F1012%BA%C7%BE%E5%B5%C1%B8%F7" title="BushoCard/1012最上義光 ">BushoCard/1012最上義光</a>
+</li>
+<li><a id="list_13" href="http://www.ixawiki.com/index.php?BushoCard%2F1013%B0%CB%C3%A3%C0%AF%BD%A1" title="BushoCard/1013伊達政宗 ">BushoCard/1013伊達政宗</a>
+</li>
+<li><a id="list_14" href="http://www.ixawiki.com/index.php?BushoCard%2F1014%CB%AD%BF%C3%BD%A8%B5%C8" title="BushoCard/1014豊臣秀吉 ">BushoCard/1014豊臣秀吉</a>
+</li>
+<li><a id="list_15" href="http://www.ixawiki.com/index.php?BushoCard%2F1015%C6%C1%C0%EE%B2%C8%B9%AF" title="BushoCard/1015徳川家康 ">BushoCard/1015徳川家康</a>
+</li>
+<li><a id="list_16" href="http://www.ixawiki.com/index.php?BushoCard%2F1016%C0%D0%C5%C4%BB%B0%C0%AE" title="BushoCard/1016石田三成 ">BushoCard/1016石田三成</a>
+</li>
+<li><a id="list_17" href="http://www.ixawiki.com/index.php?BushoCard%2F1017%B9%F5%C5%C4%C7%A1%BF%E5" title="BushoCard/1017黒田如水 ">BushoCard/1017黒田如水</a>
+</li>
+<li><a id="list_18" href="http://www.ixawiki.com/index.php?BushoCard%2F1018%BF%A5%C5%C4%BF%AE%C4%B9" title="BushoCard/1018織田信長 ">BushoCard/1018織田信長</a>
+</li>
+<li><a id="list_19" href="http://www.ixawiki.com/index.php?BushoCard%2F1019%C2%AD%CD%F8%B5%C1%BE%BC" title="BushoCard/1019足利義昭 ">BushoCard/1019足利義昭</a>
+</li>
+<li><a id="list_20" href="http://www.ixawiki.com/index.php?BushoCard%2F1020%C9%F0%C5%C4%BF%AE%B8%BC" title="BushoCard/1020武田信玄 ">BushoCard/1020武田信玄</a>
+</li>
+<li><a id="list_21" href="http://www.ixawiki.com/index.php?BushoCard%2F1021%BE%E5%BF%F9%B8%AC%BF%AE" title="BushoCard/1021上杉謙信 ">BushoCard/1021上杉謙信</a>
+</li>
+<li><a id="list_22" href="http://www.ixawiki.com/index.php?BushoCard%2F1022%CC%D3%CD%F8%B8%B5%BD%A2" title="BushoCard/1022毛利元就 ">BushoCard/1022毛利元就</a>
+</li>
+<li><a id="list_23" href="http://www.ixawiki.com/index.php?BushoCard%2F1023%CB%CC%BE%F2%BB%E1%B9%AF" title="BushoCard/1023北条氏康 ">BushoCard/1023北条氏康</a>
+</li>
+<li><a id="list_24" href="http://www.ixawiki.com/index.php?BushoCard%2F1024%C6%C1%C0%EE%B2%C8%B9%AF" title="BushoCard/1024徳川家康 ">BushoCard/1024徳川家康</a>
+</li>
+<li><a id="list_25" href="http://www.ixawiki.com/index.php?BushoCard%2F1025%C0%F5%B0%E6%C4%B9%C0%AF" title="BushoCard/1025浅井長政 ">BushoCard/1025浅井長政</a>
+</li>
+<li><a id="list_26" href="http://www.ixawiki.com/index.php?BushoCard%2F1026%C5%E7%C4%C5%B5%C1%B5%D7" title="BushoCard/1026島津義久 ">BushoCard/1026島津義久</a>
+</li>
+<li><a id="list_27" href="http://www.ixawiki.com/index.php?BushoCard%2F1027%C4%B9%BD%A1%B2%E6%C9%F4%B8%B5%BF%C6" title="BushoCard/1027長宗我部元親 ">BushoCard/1027長宗我部元親</a>
+</li>
+<li><a id="list_28" href="http://www.ixawiki.com/index.php?BushoCard%2F1028%C2%E7%CD%A7%BD%A1%CE%DB" title="BushoCard/1028大友宗麟 ">BushoCard/1028大友宗麟</a>
+</li>
+<li><a id="list_29" href="http://www.ixawiki.com/index.php?BushoCard%2F1029%BA%C7%BE%E5%B5%C1%B8%F7" title="BushoCard/1029最上義光 ">BushoCard/1029最上義光</a>
+</li>
+<li><a id="list_30" href="http://www.ixawiki.com/index.php?BushoCard%2F1030%B0%CB%C3%A3%C0%AF%BD%A1" title="BushoCard/1030伊達政宗 ">BushoCard/1030伊達政宗</a>
+</li>
+<li><a id="list_31" href="http://www.ixawiki.com/index.php?BushoCard%2F1031%CB%AD%BF%C3%BD%A8%B5%C8" title="BushoCard/1031豊臣秀吉 ">BushoCard/1031豊臣秀吉</a>
+</li>
+<li><a id="list_32" href="http://www.ixawiki.com/index.php?BushoCard%2F1032%C0%D0%C5%C4%BB%B0%C0%AE" title="BushoCard/1032石田三成 ">BushoCard/1032石田三成</a>
+</li>
+<li><a id="list_33" href="http://www.ixawiki.com/index.php?BushoCard%2F1033%B9%F5%C5%C4%C7%A1%BF%E5" title="BushoCard/1033黒田如水 ">BushoCard/1033黒田如水</a>
+</li>
+<li><a id="list_34" href="http://www.ixawiki.com/index.php?BushoCard%2F1034%BA%A3%C0%EE%B5%C1%B8%B5" title="BushoCard/1034今川義元 ">BushoCard/1034今川義元</a>
+</li>
+<li><a id="list_35" href="http://www.ixawiki.com/index.php?BushoCard%2F1035%CD%E4" title="BushoCard/1035淀 ">BushoCard/1035淀</a>
+</li>
+<li><a id="list_36" href="http://www.ixawiki.com/index.php?BushoCard%2F1036%CC%C0%C3%D2%B8%F7%BD%A8" title="BushoCard/1036明智光秀 ">BushoCard/1036明智光秀</a>
+</li>
+<li><a id="list_37" href="http://www.ixawiki.com/index.php?BushoCard%2F1037%BF%BF%C5%C4%BE%BB%B9%AC" title="BushoCard/1037真田昌幸 ">BushoCard/1037真田昌幸</a>
+</li>
+<li><a id="list_38" href="http://www.ixawiki.com/index.php?BushoCard%2F1038%BB%A8%B2%EC%C2%B9%BB%D4" title="BushoCard/1038雑賀孫市 ">BushoCard/1038雑賀孫市</a>
+</li>
+<li><a id="list_39" href="http://www.ixawiki.com/index.php?BushoCard%2F1039%BE%E5%BF%F9%B7%CA%BE%A1" title="BushoCard/1039上杉景勝 ">BushoCard/1039上杉景勝</a>
+</li>
+<li><a id="list_40" href="http://www.ixawiki.com/index.php?BushoCard%2F1040%CC%D3%CD%F8%B5%B1%B8%B5" title="BushoCard/1040毛利輝元 ">BushoCard/1040毛利輝元</a>
+</li>
+<li><a id="list_41" href="http://www.ixawiki.com/index.php?BushoCard%2F1041%C6%C1%C0%EE%B2%C8%B9%AF" title="BushoCard/1041徳川家康 ">BushoCard/1041徳川家康</a>
+</li>
+<li><a id="list_42" href="http://www.ixawiki.com/index.php?BushoCard%2F1042%B1%A7%B4%EE%C2%BF%BD%A8%B2%C8" title="BushoCard/1042宇喜多秀家 ">BushoCard/1042宇喜多秀家</a>
+</li>
+<li><a id="list_43" href="http://www.ixawiki.com/index.php?BushoCard%2F1043%B2%C3%C6%A3%C0%B6%C0%B5" title="BushoCard/1043加藤清正 ">BushoCard/1043加藤清正</a>
+</li>
+<li><a id="list_44" href="http://www.ixawiki.com/index.php?BushoCard%2F1044%CA%A1%C5%E7%C0%B5%C2%A7" title="BushoCard/1044福島正則 ">BushoCard/1044福島正則</a>
+</li>
+<li><a id="list_45" href="http://www.ixawiki.com/index.php?BushoCard%2F1045%C5%E7%C4%C5%B5%C1%B9%B0" title="BushoCard/1045島津義弘 ">BushoCard/1045島津義弘</a>
+</li>
+<li><a id="list_46" href="http://www.ixawiki.com/index.php?BushoCard%2F1046%BF%A5%C5%C4%BF%AE%C4%B9" title="BushoCard/1046織田信長 ">BushoCard/1046織田信長</a>
+</li>
+<li><a id="list_47" href="http://www.ixawiki.com/index.php?BushoCard%2F1047%BA%B4%C3%DD%B5%C1%BD%C5" title="BushoCard/1047佐竹義重 ">BushoCard/1047佐竹義重</a>
+</li>
+<li><a id="list_48" href="http://www.ixawiki.com/index.php?BushoCard%2F1048%BB%A8%B2%EC%C2%B9%BB%D4" title="BushoCard/1048雑賀孫市 ">BushoCard/1048雑賀孫市</a>
+</li>
+<li><a id="list_49" href="http://www.ixawiki.com/index.php?BushoCard%2F1049%CB%CC%BE%F2%BB%E1%B9%AF" title="BushoCard/1049北条氏康 ">BushoCard/1049北条氏康</a>
+</li>
+<li><a id="list_50" href="http://www.ixawiki.com/index.php?BushoCard%2F1050%A4%AA%BB%D4" title="BushoCard/1050お市 ">BushoCard/1050お市</a>
+</li>
+<li><a id="list_51" href="http://www.ixawiki.com/index.php?BushoCard%2F1051%CB%AD%BF%C3%BD%A8%B5%C8" title="BushoCard/1051豊臣秀吉 ">BushoCard/1051豊臣秀吉</a>
+</li>
+<li><a id="list_52" href="http://www.ixawiki.com/index.php?BushoCard%2F1052%C5%E7%C4%C5%B5%C1%B5%D7" title="BushoCard/1052島津義久 ">BushoCard/1052島津義久</a>
+</li>
+<li><a id="list_53" href="http://www.ixawiki.com/index.php?BushoCard%2F1053%C1%B0%C5%C4%CD%F8%B2%C8" title="BushoCard/1053前田利家 ">BushoCard/1053前田利家</a>
+</li>
+<li><a id="list_54" href="http://www.ixawiki.com/index.php?BushoCard%2F1054%BE%E5%BF%F9%B7%CA%BE%A1" title="BushoCard/1054上杉景勝 ">BushoCard/1054上杉景勝</a>
+</li>
+<li><a id="list_55" href="http://www.ixawiki.com/index.php?BushoCard%2F1055%C6%C1%C0%EE%B2%C8%B9%AF" title="BushoCard/1055徳川家康 ">BushoCard/1055徳川家康</a>
+</li>
+<li><a id="list_56" href="http://www.ixawiki.com/index.php?BushoCard%2F1056%CC%D3%CD%F8%B5%B1%B8%B5" title="BushoCard/1056毛利輝元 ">BushoCard/1056毛利輝元</a>
+</li>
+<li><a id="list_57" href="http://www.ixawiki.com/index.php?BushoCard%2F1057%B0%CB%C3%A3%C0%AF%BD%A1" title="BushoCard/1057伊達政宗 ">BushoCard/1057伊達政宗</a>
+</li>
+<li><a id="list_58" href="http://www.ixawiki.com/index.php?BushoCard%2F1058%CB%CC%BE%F2%BB%E1%C0%AF" title="BushoCard/1058北条氏政 ">BushoCard/1058北条氏政</a>
+</li>
+<li><a id="list_59" href="http://www.ixawiki.com/index.php?BushoCard%2F1059%C4%B9%BD%A1%B2%E6%C9%F4%B8%B5%BF%C6" title="BushoCard/1059長宗我部元親 ">BushoCard/1059長宗我部元親</a>
+</li>
+<li><a id="list_60" href="http://www.ixawiki.com/index.php?BushoCard%2F1060%BA%B4%C3%DD%B5%C1%BD%C5" title="BushoCard/1060佐竹義重 ">BushoCard/1060佐竹義重</a>
+</li>
+<li><a id="list_61" href="http://www.ixawiki.com/index.php?BushoCard%2F1061%CE%B6%C2%A4%BB%FB%CE%B4%BF%AE" title="BushoCard/1061龍造寺隆信 ">BushoCard/1061龍造寺隆信</a>
+</li>
+<li><a id="list_62" href="http://www.ixawiki.com/index.php?BushoCard%2F1062%BC%C6%C5%C4%BE%A1%B2%C8" title="BushoCard/1062柴田勝家 ">BushoCard/1062柴田勝家</a>
+</li>
+<li><a id="list_63" href="http://www.ixawiki.com/index.php?BushoCard%2F1063%C9%F0%C5%C4%BF%AE%B8%BC" title="BushoCard/1063武田信玄 ">BushoCard/1063武田信玄</a>
+</li>
+<li><a id="list_64" href="http://www.ixawiki.com/index.php?BushoCard%2F1064%BE%E5%BF%F9%B8%AC%BF%AE" title="BushoCard/1064上杉謙信 ">BushoCard/1064上杉謙信</a>
+</li>
+<li><a id="list_65" href="http://www.ixawiki.com/index.php?BushoCard%2F1065%BA%D8%C6%A3%C6%BB%BB%B0" title="BushoCard/1065斎藤道三 ">BushoCard/1065斎藤道三</a>
+</li>
+<li><a id="list_66" href="http://www.ixawiki.com/index.php?BushoCard%2F1066%BB%B0%B9%A5%C4%B9%B7%C4" title="BushoCard/1066三好長慶 ">BushoCard/1066三好長慶</a>
+</li>
+<li><a id="list_67" href="http://www.ixawiki.com/index.php?BushoCard%2F1067%C6%F4%BB%D2%C0%B2%B5%D7" title="BushoCard/1067尼子晴久 ">BushoCard/1067尼子晴久</a>
+</li>
+<li><a id="list_68" href="http://www.ixawiki.com/index.php?BushoCard%2F1068%B0%CB%C3%A3%C0%AF%BD%A1" title="BushoCard/1068伊達政宗 ">BushoCard/1068伊達政宗</a>
+</li>
+<li><a id="list_69" href="http://www.ixawiki.com/index.php?BushoCard%2F1069%BE%E5%BF%F9%B7%CA%BE%A1" title="BushoCard/1069上杉景勝 ">BushoCard/1069上杉景勝</a>
+</li>
+<li><a id="list_70" href="http://www.ixawiki.com/index.php?BushoCard%2F1070%BF%BF%C5%C4%BE%BB%B9%AC" title="BushoCard/1070真田昌幸 ">BushoCard/1070真田昌幸</a>
+</li>
+<li><a id="list_71" href="http://www.ixawiki.com/index.php?BushoCard%2F1071%CA%A1%C5%E7%C0%B5%C2%A7" title="BushoCard/1071福島正則 ">BushoCard/1071福島正則</a>
+</li>
+<li><a id="list_72" href="http://www.ixawiki.com/index.php?BushoCard%2F1072%C0%D0%C5%C4%BB%B0%C0%AE" title="BushoCard/1072石田三成 ">BushoCard/1072石田三成</a>
+</li>
+<li><a id="list_73" href="http://www.ixawiki.com/index.php?BushoCard%2F1073%B1%A7%B4%EE%C2%BF%BD%A8%B2%C8" title="BushoCard/1073宇喜多秀家 ">BushoCard/1073宇喜多秀家</a>
+</li>
+<li><a id="list_74" href="http://www.ixawiki.com/index.php?BushoCard%2F1074%C4%B9%BD%A1%B2%E6%C9%F4%C0%B9%BF%C6" title="BushoCard/1074長宗我部盛親 ">BushoCard/1074長宗我部盛親</a>
+</li>
+<li><a id="list_75" href="http://www.ixawiki.com/index.php?BushoCard%2F1075%B2%C3%C6%A3%C0%B6%C0%B5" title="BushoCard/1075加藤清正 ">BushoCard/1075加藤清正</a>
+</li>
+<li><a id="list_76" href="http://www.ixawiki.com/index.php?BushoCard%2F1076%CE%A9%B2%D6%BD%A1%CC%D0" title="BushoCard/1076立花宗茂 ">BushoCard/1076立花宗茂</a>
+</li>
+<li><a id="list_77" href="http://www.ixawiki.com/index.php?BushoCard%2F1077%BE%AE%C1%E1%C0%EE%BD%A8%BD%A9" title="BushoCard/1077小早川秀秋 ">BushoCard/1077小早川秀秋</a>
+</li>
+<li><a id="list_78" href="http://www.ixawiki.com/index.php?BushoCard%2F1078%C5%E7%C4%C5%B5%C1%B9%B0" title="BushoCard/1078島津義弘 ">BushoCard/1078島津義弘</a>
+</li>
+<li><a id="list_79" href="http://www.ixawiki.com/index.php?BushoCard%2F1079%A4%CD%A4%CD" title="BushoCard/1079ねね ">BushoCard/1079ねね</a>
+</li>
+<li><a id="list_80" href="http://www.ixawiki.com/index.php?BushoCard%2F1080%BF%BF%C5%C4%BF%AE%C8%CB" title="BushoCard/1080真田信繁 ">BushoCard/1080真田信繁</a>
+</li>
+<li><a id="list_81" href="http://www.ixawiki.com/index.php?BushoCard%2F1081%CC%C0%C3%D2%B8%F7%BD%A8" title="BushoCard/1081明智光秀 ">BushoCard/1081明智光秀</a>
+</li>
+<li><a id="list_82" href="http://www.ixawiki.com/index.php?BushoCard%2F1082%BF%A5%C5%C4%BF%AE%C4%B9" title="BushoCard/1082織田信長 ">BushoCard/1082織田信長</a>
+</li>
+<li><a id="list_83" href="http://www.ixawiki.com/index.php?BushoCard%2F1083%CB%AD%BF%C3%BD%A8%B5%C8" title="BushoCard/1083豊臣秀吉 ">BushoCard/1083豊臣秀吉</a>
+</li>
+<li><a id="list_84" href="http://www.ixawiki.com/index.php?BushoCard%2F1084%C6%C1%C0%EE%B2%C8%B9%AF" title="BushoCard/1084徳川家康 ">BushoCard/1084徳川家康</a>
+</li>
+<li><a id="list_85" href="http://www.ixawiki.com/index.php?BushoCard%2F1085%CC%D3%CD%F8%B5%B1%B8%B5" title="BushoCard/1085毛利輝元 ">BushoCard/1085毛利輝元</a>
+</li>
+<li><a id="list_86" href="http://www.ixawiki.com/index.php?BushoCard%2F1086%CB%CC%BE%F2%BB%E1%C0%AF" title="BushoCard/1086北条氏政 ">BushoCard/1086北条氏政</a>
+</li>
+<li><a id="list_87" href="http://www.ixawiki.com/index.php?BushoCard%2F1087%C4%B9%BD%A1%B2%E6%C9%F4%B8%B5%BF%C6" title="BushoCard/1087長宗我部元親 ">BushoCard/1087長宗我部元親</a>
+</li>
+<li><a id="list_88" href="http://www.ixawiki.com/index.php?BushoCard%2F1088%C5%E7%C4%C5%B5%C1%B5%D7" title="BushoCard/1088島津義久 ">BushoCard/1088島津義久</a>
+</li>
+<li><a id="list_89" href="http://www.ixawiki.com/index.php?BushoCard%2F1089%BC%C6%C5%C4%BE%A1%B2%C8" title="BushoCard/1089柴田勝家 ">BushoCard/1089柴田勝家</a>
+</li>
+<li><a id="list_90" href="http://www.ixawiki.com/index.php?BushoCard%2F1090%CE%A4%B8%AB%B5%C1%F4%A1" title="BushoCard/1090里見義堯 ">BushoCard/1090里見義堯</a>
+</li>
+<li><a id="list_91" href="http://www.ixawiki.com/index.php?BushoCard%2F1091%C9%F0%C5%C4%BE%A1%CD%EA" title="BushoCard/1091武田勝頼 ">BushoCard/1091武田勝頼</a>
+</li>
+<li><a id="list_92" href="http://www.ixawiki.com/index.php?BushoCard%2F1092%C1%EA%C7%CF%B5%C1%B0%FD" title="BushoCard/1092相馬義胤 ">BushoCard/1092相馬義胤</a>
+</li>
+<li><a id="list_93" href="http://www.ixawiki.com/index.php?BushoCard%2F1093%B0%E6%B0%CB%C4%BE%B8%D7" title="BushoCard/1093井伊直虎 ">BushoCard/1093井伊直虎</a>
+</li>
+<li><a id="list_94" href="http://www.ixawiki.com/index.php?BushoCard%2F1094%BB%B0%B9%A5%C4%B9%B7%C4" title="BushoCard/1094三好長慶 ">BushoCard/1094三好長慶</a>
+</li>
+<li><a id="list_95" href="http://www.ixawiki.com/index.php?BushoCard%2F1095%CB%CC%BE%F2%BB%E1%B9%AF" title="BushoCard/1095北条氏康 ">BushoCard/1095北条氏康</a>
+</li>
+<li><a id="list_96" href="http://www.ixawiki.com/index.php?BushoCard%2F1096%BF%A5%C5%C4%BF%AE%BD%A8" title="BushoCard/1096織田信秀 ">BushoCard/1096織田信秀</a>
+</li>
+<li><a id="list_97" href="http://www.ixawiki.com/index.php?BushoCard%2F1097%BA%D8%C6%A3%C6%BB%BB%B0" title="BushoCard/1097斎藤道三 ">BushoCard/1097斎藤道三</a>
+</li>
+<li><a id="list_98" href="http://www.ixawiki.com/index.php?BushoCard%2F1098%C9%F0%C5%C4%C0%B2%BF%AE" title="BushoCard/1098武田晴信 ">BushoCard/1098武田晴信</a>
+</li>
+<li><a id="list_99" href="http://www.ixawiki.com/index.php?BushoCard%2F1099%C4%B9%C8%F8%B7%CA%B8%D7" title="BushoCard/1099長尾景虎 ">BushoCard/1099長尾景虎</a>
+</li>
+<li><a id="list_100" href="http://www.ixawiki.com/index.php?BushoCard%2F1100%C6%EE%C9%F4%C0%B2%C0%AF" title="BushoCard/1100南部晴政 ">BushoCard/1100南部晴政</a>
+</li>
+<li><a id="list_101" href="http://www.ixawiki.com/index.php?BushoCard%2F1101%C4%AB%C1%D2%B9%A7%B7%CA" title="BushoCard/1101朝倉孝景 ">BushoCard/1101朝倉孝景</a>
+</li>
+<li><a id="list_102" href="http://www.ixawiki.com/index.php?BushoCard%2F1102%C6%F4%BB%D2%C0%B2%B5%D7" title="BushoCard/1102尼子晴久 ">BushoCard/1102尼子晴久</a>
+</li>
+<li><a id="list_103" href="http://www.ixawiki.com/index.php?BushoCard%2F1103%BA%A3%C0%EE%B5%C1%B8%B5" title="BushoCard/1103今川義元 ">BushoCard/1103今川義元</a>
+</li>
+<li><a id="list_104" href="http://www.ixawiki.com/index.php?BushoCard%2F1104%C2%E7%C6%E2%B5%C1%CE%B4" title="BushoCard/1104大内義隆 ">BushoCard/1104大内義隆</a>
+</li>
+<li><a id="list_105" href="http://www.ixawiki.com/index.php?BushoCard%2F1105%C5%E7%C4%C5%B5%AE%B5%D7" title="BushoCard/1105島津貴久 ">BushoCard/1105島津貴久</a>
+</li>
+<li><a id="list_106" href="http://www.ixawiki.com/index.php?BushoCard%2F1106%C2%AD%CD%F8%B5%C1%B5%B1" title="BushoCard/1106足利義輝 ">BushoCard/1106足利義輝</a>
+</li>
+<li><a id="list_107" href="http://www.ixawiki.com/index.php?BushoCard%2F1107%CB%CC%BE%F2%C1%E1%B1%C0" title="BushoCard/1107北条早雲 ">BushoCard/1107北条早雲</a>
+</li>
+<li><a id="list_108" href="http://www.ixawiki.com/index.php?BushoCard%2F1108%C6%F4%BB%D2%B7%D0%B5%D7" title="BushoCard/1108尼子経久 ">BushoCard/1108尼子経久</a>
+</li>
+<li><a id="list_109" href="http://www.ixawiki.com/index.php?BushoCard%2F1109%B0%C2%C5%EC%B0%A6%B5%A8" title="BushoCard/1109安東愛季 ">BushoCard/1109安東愛季</a>
+</li>
+<li><a id="list_110" href="http://www.ixawiki.com/index.php?BushoCard%2F1110%B3%F7%C0%B8%BB%E1%B6%BF" title="BushoCard/1110蒲生氏郷 ">BushoCard/1110蒲生氏郷</a>
+</li>
+<li><a id="list_111" href="http://www.ixawiki.com/index.php?BushoCard%2F1111%CB%DC%B4%EA%BB%FB%B8%B2%C7%A1" title="BushoCard/1111本願寺顕如 ">BushoCard/1111本願寺顕如</a>
+</li>
+<li><a id="list_112" href="http://www.ixawiki.com/index.php?BushoCard%2F1112%BE%AE%C5%C4%BB%E1%BC%A3" title="BushoCard/1112小田氏治 ">BushoCard/1112小田氏治</a>
+</li>
+<li><a id="list_113" href="http://www.ixawiki.com/index.php?BushoCard%2F1113%C2%BC%BE%E5%B5%C1%C0%B6" title="BushoCard/1113村上義清 ">BushoCard/1113村上義清</a>
+</li>
+<li><a id="list_114" href="http://www.ixawiki.com/index.php?BushoCard%2F1114%BE%BE%B1%CA%B5%D7%BD%A8" title="BushoCard/1114松永久秀 ">BushoCard/1114松永久秀</a>
+</li>
+<li><a id="list_115" href="http://www.ixawiki.com/index.php?BushoCard%2F1115%C4%B9%BD%A1%B2%E6%C9%F4%C0%B9%BF%C6" title="BushoCard/1115長宗我部盛親 ">BushoCard/1115長宗我部盛親</a>
+</li>
+<li><a id="list_116" href="http://www.ixawiki.com/index.php?BushoCard%2F1116%C1%EA%CE%C9%B5%C1%CD%DB" title="BushoCard/1116相良義陽 ">BushoCard/1116相良義陽</a>
+</li>
+<li><a id="list_117" href="http://www.ixawiki.com/index.php?BushoCard%2F1117%CB%AD%BF%C3%BD%A8%CD%EA" title="BushoCard/1117豊臣秀頼 ">BushoCard/1117豊臣秀頼</a>
+</li>
+<li><a id="list_118" href="http://www.ixawiki.com/index.php?BushoCard%2F1118%BF%A5%C5%C4%BF%AE%C4%B9" title="BushoCard/1118織田信長 ">BushoCard/1118織田信長</a>
+</li>
+<li><a id="list_119" href="http://www.ixawiki.com/index.php?BushoCard%2F1119%C6%C1%C0%EE%B2%C8%B9%AF" title="BushoCard/1119徳川家康 ">BushoCard/1119徳川家康</a>
+</li>
+<li><a id="list_120" href="http://www.ixawiki.com/index.php?BushoCard%2F1120%B1%A9%BC%C6%BD%A8%B5%C8" title="BushoCard/1120羽柴秀吉 ">BushoCard/1120羽柴秀吉</a>
+</li>
+<li><a id="list_121" href="http://www.ixawiki.com/index.php?BushoCard%2F1121%BE%E5%BF%F9%B7%CA%BE%A1" title="BushoCard/1121上杉景勝 ">BushoCard/1121上杉景勝</a>
+</li>
+<li><a id="list_122" href="http://www.ixawiki.com/index.php?BushoCard%2F1122%BC%C6%C5%C4%BE%A1%B2%C8" title="BushoCard/1122柴田勝家 ">BushoCard/1122柴田勝家</a>
+</li>
+<li><a id="list_123" href="http://www.ixawiki.com/index.php?BushoCard%2F1123%CB%CC%BE%F2%BB%E1%C0%AF" title="BushoCard/1123北条氏政 ">BushoCard/1123北条氏政</a>
+</li>
+<li><a id="list_124" href="http://www.ixawiki.com/index.php?BushoCard%2F1124%CC%D3%CD%F8%B5%B1%B8%B5" title="BushoCard/1124毛利輝元 ">BushoCard/1124毛利輝元</a>
+</li>
+<li><a id="list_125" href="http://www.ixawiki.com/index.php?BushoCard%2F1125%B0%CB%C5%EC%B5%C1%CD%B4" title="BushoCard/1125伊東義祐 ">BushoCard/1125伊東義祐</a>
+</li>
+<li><a id="list_126" href="http://www.ixawiki.com/index.php?BushoCard%2F1126%C9%F0%C5%C4%BE%A1%CD%EA" title="BushoCard/1126武田勝頼 ">BushoCard/1126武田勝頼</a>
+</li>
+<li><a id="list_127" href="http://www.ixawiki.com/index.php?BushoCard%2F1127%CE%A4%B8%AB%B5%C1%F4%A1" title="BushoCard/1127里見義堯 ">BushoCard/1127里見義堯</a>
+</li>
+<li><a id="list_128" href="http://www.ixawiki.com/index.php?BushoCard%2F1128%BA%C7%BE%E5%B5%C1%B8%F7" title="BushoCard/1128最上義光 ">BushoCard/1128最上義光</a>
+</li>
+<li><a id="list_129" href="http://www.ixawiki.com/index.php?BushoCard%2F1129%B1%A7%B4%EE%C2%BF%C4%BE%B2%C8" title="BushoCard/1129宇喜多直家 ">BushoCard/1129宇喜多直家</a>
+</li>
+<li><a id="list_130" href="http://www.ixawiki.com/index.php?BushoCard%2F1130%CC%D3%CD%F8%B8%B5%BD%A2" title="BushoCard/1130毛利元就 ">BushoCard/1130毛利元就</a>
+</li>
+<li><a id="list_131" href="http://www.ixawiki.com/index.php?BushoCard%2F1131%BA%A3%C0%EE%B5%C1%B8%B5" title="BushoCard/1131今川義元 ">BushoCard/1131今川義元</a>
+</li>
+<li><a id="list_132" href="http://www.ixawiki.com/index.php?BushoCard%2F1132%BA%D9%C0%EE%C0%B2%B8%B5" title="BushoCard/1132細川晴元 ">BushoCard/1132細川晴元</a>
+</li>
+<li><a id="list_133" href="http://www.ixawiki.com/index.php?BushoCard%2F1133%E9%C3%CC%BE%C0%B9%BB%E1" title="BushoCard/1133蘆名盛氏 ">BushoCard/1133蘆名盛氏</a>
+</li>
+<li><a id="list_134" href="http://www.ixawiki.com/index.php?BushoCard%2F1134%BF%A5%C5%C4%BF%AE%BD%A8" title="BushoCard/1134織田信秀 ">BushoCard/1134織田信秀</a>
+</li>
+<li><a id="list_135" href="http://www.ixawiki.com/index.php?BushoCard%2F1135%BE%BE%CA%BF%C0%B6%B9%AF" title="BushoCard/1135松平清康 ">BushoCard/1135松平清康</a>
+</li>
+<li><a id="list_136" href="http://www.ixawiki.com/index.php?BushoCard%2F1136%BA%D8%C6%A3%C6%BB%BB%B0" title="BushoCard/1136斎藤道三 ">BushoCard/1136斎藤道三</a>
+</li>
+<li><a id="list_137" href="http://www.ixawiki.com/index.php?BushoCard%2F1137%B0%CB%C3%A3%C0%B2%BD%A1" title="BushoCard/1137伊達晴宗 ">BushoCard/1137伊達晴宗</a>
+</li>
+<li><a id="list_138" href="http://www.ixawiki.com/index.php?BushoCard%2F1138%C6%F4%BB%D2%B7%D0%B5%D7" title="BushoCard/1138尼子経久 ">BushoCard/1138尼子経久</a>
+</li>
+<li><a id="list_139" href="http://www.ixawiki.com/index.php?BushoCard%2F1139%CB%CC%BE%F2%C1%E1%B1%C0" title="BushoCard/1139北条早雲 ">BushoCard/1139北条早雲</a>
+</li>
+<li><a id="list_140" href="http://www.ixawiki.com/index.php?BushoCard%2F1140%C4%AB%C1%D2%B9%A7%B7%CA" title="BushoCard/1140朝倉孝景 ">BushoCard/1140朝倉孝景</a>
+</li>
+<li><a id="list_141" href="http://www.ixawiki.com/index.php?BushoCard%2F1141%C5%E7%C4%C5%C3%E9%CE%C9" title="BushoCard/1141島津忠良 ">BushoCard/1141島津忠良</a>
+</li>
+<li><a id="list_142" href="http://www.ixawiki.com/index.php?BushoCard%2F1142%C0%D0%C5%C4%BB%B0%C0%AE" title="BushoCard/1142石田三成 ">BushoCard/1142石田三成</a>
+</li>
+<li><a id="list_143" href="http://www.ixawiki.com/index.php?BushoCard%2F1143%B9%F5%C5%C4%C7%A1%BF%E5" title="BushoCard/1143黒田如水 ">BushoCard/1143黒田如水</a>
+</li>
+<li><a id="list_144" href="http://www.ixawiki.com/index.php?BushoCard%2F1144%B2%C3%C6%A3%C0%B6%C0%B5" title="BushoCard/1144加藤清正 ">BushoCard/1144加藤清正</a>
+</li>
+<li><a id="list_145" href="http://www.ixawiki.com/index.php?BushoCard%2F1145%C4%BE%B9%BE%B7%F3%C2%B3" title="BushoCard/1145直江兼続 ">BushoCard/1145直江兼続</a>
+</li>
+<li><a id="list_146" href="http://www.ixawiki.com/index.php?BushoCard%2F1146%C2%C0%C5%C4%C6%BB%DE%F5" title="BushoCard/1146太田道灌 ">BushoCard/1146太田道灌</a>
+</li>
+<li><a id="list_147" href="http://www.ixawiki.com/index.php?BushoCard%2F1147%BF%BF%C5%C4%B9%AC%C2%BC" title="BushoCard/1147真田幸村 ">BushoCard/1147真田幸村</a>
+</li>
+<li><a id="list_148" href="http://www.ixawiki.com/index.php?BushoCard%2F1148%BE%BE%CA%BF%B8%B5%B9%AF" title="BushoCard/1148松平元康 ">BushoCard/1148松平元康</a>
+</li>
+<li><a id="list_149" href="http://www.ixawiki.com/index.php?BushoCard%2F1149%C2%E7%C3%AB%B5%C8%B7%D1" title="BushoCard/1149大谷吉継 ">BushoCard/1149大谷吉継</a>
+</li>
+<li><a id="list_150" href="http://www.ixawiki.com/index.php?BushoCard%2F1150%BE%BE%B1%CA%B5%D7%BD%A8" title="BushoCard/1150松永久秀 ">BushoCard/1150松永久秀</a>
+</li>
+<li><a id="list_151" href="http://www.ixawiki.com/index.php?BushoCard%2F1151%C2%BC%BE%E5%C9%F0%B5%C8" title="BushoCard/1151村上武吉 ">BushoCard/1151村上武吉</a>
+</li>
+<li><a id="list_152" href="http://www.ixawiki.com/index.php?BushoCard%2F1152%CE%A9%B2%D6%BD%A1%CC%D0" title="BushoCard/1152立花宗茂 ">BushoCard/1152立花宗茂</a>
+</li>
+<li><a id="list_153" href="http://www.ixawiki.com/index.php?BushoCard%2F1153%C6%E9%C5%E7%C4%BE%CC%D0" title="BushoCard/1153鍋島直茂 ">BushoCard/1153鍋島直茂</a>
+</li>
+<li><a id="list_154" href="http://www.ixawiki.com/index.php?BushoCard%2F1154%E9%C3%CC%BE%C0%B9%BB%E1" title="BushoCard/1154蘆名盛氏 ">BushoCard/1154蘆名盛氏</a>
+</li>
+<li><a id="list_155" href="http://www.ixawiki.com/index.php?BushoCard%2F1155%C6%F4%BB%D2%B7%D0%B5%D7" title="BushoCard/1155尼子経久 ">BushoCard/1155尼子経久</a>
+</li>
+<li><a id="list_156" href="http://www.ixawiki.com/index.php?BushoCard%2F1156%BE%E5%BF%F9%B7%FB%C0%AF" title="BushoCard/1156上杉憲政 ">BushoCard/1156上杉憲政</a>
+</li>
+<li><a id="list_157" href="http://www.ixawiki.com/index.php?BushoCard%2F1157%C9%F0%C5%C4%BF%AE%B8%D7" title="BushoCard/1157武田信虎 ">BushoCard/1157武田信虎</a>
+</li>
+<li><a id="list_158" href="http://www.ixawiki.com/index.php?BushoCard%2F1158%CB%CC%BE%F2%BB%E1%B9%CB" title="BushoCard/1158北条氏綱 ">BushoCard/1158北条氏綱</a>
+</li>
+<li><a id="list_159" href="http://www.ixawiki.com/index.php?BushoCard%2F1159%CB%CC%C8%AB%B6%F1%B6%B5" title="BushoCard/1159北畠具教 ">BushoCard/1159北畠具教</a>
+</li>
+<li><a id="list_160" href="http://www.ixawiki.com/index.php?BushoCard%2F1160%BA%A3%C0%EE%BB%E1%BF%C6" title="BushoCard/1160今川氏親 ">BushoCard/1160今川氏親</a>
+</li>
+<li><a id="list_161" href="http://www.ixawiki.com/index.php?BushoCard%2F1161%CF%BB%B3%D1%BE%B5%C4%F7" title="BushoCard/1161六角承禎 ">BushoCard/1161六角承禎</a>
+</li>
+<li><a id="list_162" href="http://www.ixawiki.com/index.php?BushoCard%2F1162%B0%EC%BE%F2%B7%F3%C4%EA" title="BushoCard/1162一条兼定 ">BushoCard/1162一条兼定</a>
+</li>
+<li><a id="list_163" href="http://www.ixawiki.com/index.php?BushoCard%2F1163%C5%E7%C4%C5%B5%AE%B5%D7" title="BushoCard/1163島津貴久 ">BushoCard/1163島津貴久</a>
+</li>
+<li><a id="list_164" href="http://www.ixawiki.com/index.php?BushoCard%2F1164%C2%E7%CD%A7%BD%A1%CE%DB" title="BushoCard/1164大友宗麟 ">BushoCard/1164大友宗麟</a>
+</li>
+<li><a id="list_165" href="http://www.ixawiki.com/index.php?BushoCard%2F1165%CE%B6%C2%A4%BB%FB%CE%B4%BF%AE" title="BushoCard/1165龍造寺隆信 ">BushoCard/1165龍造寺隆信</a>
+</li>
+<li><a id="list_166" href="http://www.ixawiki.com/index.php?BushoCard%2F1166%BF%A5%C5%C4%BF%AE%C4%B9" title="BushoCard/1166織田信長 ">BushoCard/1166織田信長</a>
+</li>
+<li><a id="list_167" href="http://www.ixawiki.com/index.php?BushoCard%2F1167%CB%AD%BF%C3%BD%A8%B5%C8" title="BushoCard/1167豊臣秀吉 ">BushoCard/1167豊臣秀吉</a>
+</li>
+<li><a id="list_168" href="http://www.ixawiki.com/index.php?BushoCard%2F1168%C6%C1%C0%EE%B2%C8%B9%AF" title="BushoCard/1168徳川家康 ">BushoCard/1168徳川家康</a>
+</li>
+<li><a id="list_169" href="http://www.ixawiki.com/index.php?BushoCard%2F1169%C4%B9%BD%A1%B2%E6%C9%F4%B8%B5%BF%C6" title="BushoCard/1169長宗我部元親 ">BushoCard/1169長宗我部元親</a>
+</li>
+<li><a id="list_170" href="http://www.ixawiki.com/index.php?BushoCard%2F1170%BB%B0%B9%A5%C4%B9%B7%C4" title="BushoCard/1170三好長慶 ">BushoCard/1170三好長慶</a>
+</li>
+<li><a id="list_171" href="http://www.ixawiki.com/index.php?BushoCard%2F1171%CB%CC%BE%F2%BB%E1%B9%AF" title="BushoCard/1171北条氏康 ">BushoCard/1171北条氏康</a>
+</li>
+<li><a id="list_172" href="http://www.ixawiki.com/index.php?BushoCard%2F1172%C9%F0%C5%C4%BF%AE%B8%BC" title="BushoCard/1172武田信玄 ">BushoCard/1172武田信玄</a>
+</li>
+<li><a id="list_173" href="http://www.ixawiki.com/index.php?BushoCard%2F1173%BE%E5%BF%F9%B8%AC%BF%AE" title="BushoCard/1173上杉謙信 ">BushoCard/1173上杉謙信</a>
+</li>
+<li><a id="list_174" href="http://www.ixawiki.com/index.php?BushoCard%2F1174%B0%CB%C3%A3%C0%AF%BD%A1" title="BushoCard/1174伊達政宗 ">BushoCard/1174伊達政宗</a>
+</li>
+<li><a id="list_175" href="http://www.ixawiki.com/index.php?BushoCard%2F1175%C0%F5%B0%E6%C4%B9%C0%AF" title="BushoCard/1175浅井長政 ">BushoCard/1175浅井長政</a>
+</li>
+<li><a id="list_176" href="http://www.ixawiki.com/index.php?BushoCard%2F1176%C5%E7%C4%C5%B5%C1%B5%D7" title="BushoCard/1176島津義久 ">BushoCard/1176島津義久</a>
+</li>
+<li><a id="list_177" href="http://www.ixawiki.com/index.php?BushoCard%2F1177%CC%D3%CD%F8%B8%B5%BD%A2" title="BushoCard/1177毛利元就 ">BushoCard/1177毛利元就</a>
+</li>
+<li><a id="list_178" href="http://www.ixawiki.com/index.php?BushoCard%2F1178%C2%AD%CD%F8%B5%C1%BE%BC" title="BushoCard/1178足利義昭 ">BushoCard/1178足利義昭</a>
+</li>
+<li><a id="list_179" href="http://www.ixawiki.com/index.php?BushoCard%2F1179%CB%DC%B4%EA%BB%FB%B8%B2%C7%A1" title="BushoCard/1179本願寺顕如 ">BushoCard/1179本願寺顕如</a>
+</li>
+<li><a id="list_180" href="http://www.ixawiki.com/index.php?BushoCard%2F1180%B0%C2%C5%EC%B0%A6%B5%A8" title="BushoCard/1180安東愛季 ">BushoCard/1180安東愛季</a>
+</li>
+<li><a id="list_181" href="http://www.ixawiki.com/index.php?BushoCard%2F1181%C6%EE%C9%F4%C0%B2%C0%AF" title="BushoCard/1181南部晴政 ">BushoCard/1181南部晴政</a>
+</li>
+<li><a id="list_182" href="http://www.ixawiki.com/index.php?BushoCard%2F1182%BA%B4%C3%DD%B5%C1%BD%C5" title="BushoCard/1182佐竹義重 ">BushoCard/1182佐竹義重</a>
+</li>
+<li><a id="list_183" href="http://www.ixawiki.com/index.php?BushoCard%2F1183%CE%A4%B8%AB%B5%C1%B9%B0" title="BushoCard/1183里見義弘 ">BushoCard/1183里見義弘</a>
+</li>
+<li><a id="list_184" href="http://www.ixawiki.com/index.php?BushoCard%2F1184%C9%F0%C5%C4%BE%A1%CD%EA" title="BushoCard/1184武田勝頼 ">BushoCard/1184武田勝頼</a>
+</li>
+<li><a id="list_185" href="http://www.ixawiki.com/index.php?BushoCard%2F1185%C1%B0%C5%C4%CD%F8%B2%C8" title="BushoCard/1185前田利家 ">BushoCard/1185前田利家</a>
+</li>
+<li><a id="list_186" href="http://www.ixawiki.com/index.php?BushoCard%2F1186%BB%A8%B2%EC%C2%B9%BB%D4" title="BushoCard/1186雑賀孫市 ">BushoCard/1186雑賀孫市</a>
+</li>
+<li><a id="list_187" href="http://www.ixawiki.com/index.php?BushoCard%2F1187%B1%A7%B4%EE%C2%BF%C4%BE%B2%C8" title="BushoCard/1187宇喜多直家 ">BushoCard/1187宇喜多直家</a>
+</li>
+<li><a id="list_188" href="http://www.ixawiki.com/index.php?BushoCard%2F1188%CD%AD%C7%CF%C0%B2%BF%AE" title="BushoCard/1188有馬晴信 ">BushoCard/1188有馬晴信</a>
+</li>
+<li><a id="list_189" href="http://www.ixawiki.com/index.php?BushoCard%2F1189%C1%EA%CE%C9%B5%C1%CD%DB" title="BushoCard/1189相良義陽 ">BushoCard/1189相良義陽</a>
+</li>
+<li><a id="list_190" href="http://www.ixawiki.com/index.php?BushoCard%2F1190%BE%E5%BF%F9%B7%CA%BE%A1" title="BushoCard/1190上杉景勝 ">BushoCard/1190上杉景勝</a>
+</li>
+<li><a id="list_191" href="http://www.ixawiki.com/index.php?BushoCard%2F1191%CC%D3%CD%F8%B5%B1%B8%B5" title="BushoCard/1191毛利輝元 ">BushoCard/1191毛利輝元</a>
+</li>
+<li><a id="list_192" href="http://www.ixawiki.com/index.php?BushoCard%2F1192%BA%C7%BE%E5%B5%C1%B8%F7" title="BushoCard/1192最上義光 ">BushoCard/1192最上義光</a>
+</li>
+<li><a id="list_193" href="http://www.ixawiki.com/index.php?BushoCard%2F1193%CB%DC%C2%BF%C3%E9%BE%A1" title="BushoCard/1193本多忠勝 ">BushoCard/1193本多忠勝</a>
+</li>
+<li><a id="list_194" href="http://www.ixawiki.com/index.php?BushoCard%2F1194%BF%BF%C5%C4%BF%AE%C7%B7" title="BushoCard/1194真田信之 ">BushoCard/1194真田信之</a>
+</li>
+<li><a id="list_195" href="http://www.ixawiki.com/index.php?BushoCard%2F1195%CA%A1%C5%E7%C0%B5%C2%A7" title="BushoCard/1195福島正則 ">BushoCard/1195福島正則</a>
+</li>
+<li><a id="list_196" href="http://www.ixawiki.com/index.php?BushoCard%2F1196%CB%AD%BF%C3%BD%A8%CD%EA" title="BushoCard/1196豊臣秀頼 ">BushoCard/1196豊臣秀頼</a>
+</li>
+<li><a id="list_197" href="http://www.ixawiki.com/index.php?BushoCard%2F1197%C6%A3%C6%B2%B9%E2%B8%D7" title="BushoCard/1197藤堂高虎 ">BushoCard/1197藤堂高虎</a>
+</li>
+<li><a id="list_198" href="http://www.ixawiki.com/index.php?BushoCard%2F1198%C4%B9%BD%A1%B2%E6%C9%F4%C0%B9%BF%C6" title="BushoCard/1198長宗我部盛親 ">BushoCard/1198長宗我部盛親</a>
+</li>
+<li><a id="list_199" href="http://www.ixawiki.com/index.php?BushoCard%2F1199%BE%AE%C1%E1%C0%EE%BD%A8%BD%A9" title="BushoCard/1199小早川秀秋 ">BushoCard/1199小早川秀秋</a>
+</li>
+<li><a id="list_200" href="http://www.ixawiki.com/index.php?BushoCard%2F1200%B9%F5%C5%C4%C4%B9%C0%AF" title="BushoCard/1200黒田長政 ">BushoCard/1200黒田長政</a>
+</li>
+<li><a id="list_201" href="http://www.ixawiki.com/index.php?BushoCard%2F1201%BE%B0%C7%AB%B2%A6" title="BushoCard/1201尚寧王 ">BushoCard/1201尚寧王</a>
+</li>
+<li><a id="list_202" href="http://www.ixawiki.com/index.php?BushoCard%2F1202%BA%D8%C6%A3%C6%BB%BB%B0" title="BushoCard/1202斎藤道三 ">BushoCard/1202斎藤道三</a>
+</li>
+<li><a id="list_203" href="http://www.ixawiki.com/index.php?BushoCard%2F1203%BA%A3%C0%EE%B5%C1%B8%B5" title="BushoCard/1203今川義元 ">BushoCard/1203今川義元</a>
+</li>
+<li><a id="list_204" href="http://www.ixawiki.com/index.php?BushoCard%2F1204%CC%C0%C3%D2%B8%F7%BD%A8" title="BushoCard/1204明智光秀 ">BushoCard/1204明智光秀</a>
+</li>
+<li><a id="list_205" href="http://www.ixawiki.com/index.php?BushoCard%2F1205%C9%F0%C5%C4%C0%B2%BF%AE" title="BushoCard/1205武田晴信 ">BushoCard/1205武田晴信</a>
+</li>
+<li><a id="list_206" href="http://www.ixawiki.com/index.php?BushoCard%2F1206%C4%B9%C8%F8%B7%CA%B8%D7" title="BushoCard/1206長尾景虎 ">BushoCard/1206長尾景虎</a>
+</li>
+<li><a id="list_207" href="http://www.ixawiki.com/index.php?BushoCard%2F1207%BE%BE%CA%BF%B8%B5%B9%AF" title="BushoCard/1207松平元康 ">BushoCard/1207松平元康</a>
+</li>
+<li><a id="list_208" href="http://www.ixawiki.com/index.php?BushoCard%2F1208%B1%A9%BC%C6%BD%A8%B5%C8" title="BushoCard/1208羽柴秀吉 ">BushoCard/1208羽柴秀吉</a>
+</li>
+<li><a id="list_209" href="http://www.ixawiki.com/index.php?BushoCard%2F1209%BE%BE%B1%CA%B5%D7%BD%A8" title="BushoCard/1209松永久秀 ">BushoCard/1209松永久秀</a>
+</li>
+<li><a id="list_210" href="http://www.ixawiki.com/index.php?BushoCard%2F1210%C2%E7%CD%A7%BD%A1%CE%DB" title="BushoCard/1210大友宗麟 ">BushoCard/1210大友宗麟</a>
+</li>
+<li><a id="list_211" href="http://www.ixawiki.com/index.php?BushoCard%2F1211%BF%B9%CD%F6%B4%DD" title="BushoCard/1211森蘭丸 ">BushoCard/1211森蘭丸</a>
+</li>
+<li><a id="list_212" href="http://www.ixawiki.com/index.php?BushoCard%2F1212%B6%E5%B5%B4%B2%C5%CE%B4" title="BushoCard/1212九鬼嘉隆 ">BushoCard/1212九鬼嘉隆</a>
+</li>
+<li><a id="list_213" href="http://www.ixawiki.com/index.php?BushoCard%2F1213%B9%D3%CC%DA%C2%BC%BD%C5" title="BushoCard/1213荒木村重 ">BushoCard/1213荒木村重</a>
+</li>
+<li><a id="list_214" href="http://www.ixawiki.com/index.php?BushoCard%2F1214%B9%F5%C5%C4%B4%B1%CA%BC%B1%D2" title="BushoCard/1214黒田官兵衛 ">BushoCard/1214黒田官兵衛</a>
+</li>
+<li><a id="list_215" href="http://www.ixawiki.com/index.php?BushoCard%2F1215%C3%DD%C3%E6%C8%BE%CA%BC%B1%D2" title="BushoCard/1215竹中半兵衛 ">BushoCard/1215竹中半兵衛</a>
+</li>
+<li><a id="list_216" href="http://www.ixawiki.com/index.php?BushoCard%2F1216%BC%C6%C5%C4%BE%A1%B2%C8" title="BushoCard/1216柴田勝家 ">BushoCard/1216柴田勝家</a>
+</li>
+<li><a id="list_217" href="http://www.ixawiki.com/index.php?BushoCard%2F1217%B1%A7%B4%EE%C2%BF%BD%A8%B2%C8" title="BushoCard/1217宇喜多秀家 ">BushoCard/1217宇喜多秀家</a>
+</li>
+<li><a id="list_218" href="http://www.ixawiki.com/index.php?BushoCard%2F1218%BF%BF%C5%C4%BE%BB%B9%AC" title="BushoCard/1218真田昌幸 ">BushoCard/1218真田昌幸</a>
+</li>
+<li><a id="list_219" href="http://www.ixawiki.com/index.php?BushoCard%2F1219%C5%E7%C4%C5%B5%C1%B5%D7" title="BushoCard/1219島津義久 ">BushoCard/1219島津義久</a>
+</li>
+<li><a id="list_220" href="http://www.ixawiki.com/index.php?BushoCard%2F1220%BB%A8%B2%EC%C2%B9%BB%D4" title="BushoCard/1220雑賀孫市 ">BushoCard/1220雑賀孫市</a>
+</li>
+<li><a id="list_221" href="http://www.ixawiki.com/index.php?BushoCard%2F1221%B2%C3%C6%A3%C0%B6%C0%B5" title="BushoCard/1221加藤清正 ">BushoCard/1221加藤清正</a>
+</li>
+<li><a id="list_222" href="http://www.ixawiki.com/index.php?BushoCard%2F1222%C1%B0%C5%C4%B7%C4%BC%A1" title="BushoCard/1222前田慶次 ">BushoCard/1222前田慶次</a>
+</li>
+<li><a id="list_223" href="http://www.ixawiki.com/index.php?BushoCard%2F1223%CB%AA%BF%DC%B2%EC%BE%AE%CF%BB" title="BushoCard/1223蜂須賀小六 ">BushoCard/1223蜂須賀小六</a>
+</li>
+<li><a id="list_224" href="http://www.ixawiki.com/index.php?BushoCard%2F1224%CB%D9%BD%A8%C0%AF" title="BushoCard/1224堀秀政 ">BushoCard/1224堀秀政</a>
+</li>
+<li><a id="list_225" href="http://www.ixawiki.com/index.php?BushoCard%2F1225%B6%E5%B8%CD%C0%AF%BC%C2" title="BushoCard/1225九戸政実 ">BushoCard/1225九戸政実</a>
+</li>
+<li><a id="list_226" href="http://www.ixawiki.com/index.php?BushoCard%2F1226%B0%CB%C3%A3%C0%AF%BD%A1" title="BushoCard/1226伊達政宗 ">BushoCard/1226伊達政宗</a>
+</li>
+<li><a id="list_227" href="http://www.ixawiki.com/index.php?BushoCard%2F1227%BF%BF%C5%C4%B9%AC%C2%BC" title="BushoCard/1227真田幸村 ">BushoCard/1227真田幸村</a>
+</li>
+<li><a id="list_228" href="http://www.ixawiki.com/index.php?BushoCard%2F1228%C4%BE%B9%BE%B7%F3%C2%B3" title="BushoCard/1228直江兼続 ">BushoCard/1228直江兼続</a>
+</li>
+<li><a id="list_229" href="http://www.ixawiki.com/index.php?BushoCard%2F1229%C0%D0%C5%C4%BB%B0%C0%AE" title="BushoCard/1229石田三成 ">BushoCard/1229石田三成</a>
+</li>
+<li><a id="list_230" href="http://www.ixawiki.com/index.php?BushoCard%2F1230%C2%E7%C3%AB%B5%C8%B7%D1" title="BushoCard/1230大谷吉継 ">BushoCard/1230大谷吉継</a>
+</li>
+<li><a id="list_231" href="http://www.ixawiki.com/index.php?BushoCard%2F1231%CE%A9%B2%D6%BD%A1%CC%D0" title="BushoCard/1231立花宗茂 ">BushoCard/1231立花宗茂</a>
+</li>
+<li><a id="list_232" href="http://www.ixawiki.com/index.php?BushoCard%2F1232%C5%E7%C4%C5%B5%C1%B9%B0" title="BushoCard/1232島津義弘 ">BushoCard/1232島津義弘</a>
+</li>
+<li><a id="list_233" href="http://www.ixawiki.com/index.php?BushoCard%2F1233%B0%E6%B0%CB%C4%BE%C0%AF" title="BushoCard/1233井伊直政 ">BushoCard/1233井伊直政</a>
+</li>
+<li><a id="list_234" href="http://www.ixawiki.com/index.php?BushoCard%2F1234%C6%C1%C0%EE%BD%A8%C3%E9" title="BushoCard/1234徳川秀忠 ">BushoCard/1234徳川秀忠</a>
+</li>
+<li><a id="list_235" href="http://www.ixawiki.com/index.php?BushoCard%2F1235%BA%D9%C0%EE%C3%E9%B6%BD" title="BushoCard/1235細川忠興 ">BushoCard/1235細川忠興</a>
+</li>
+<li><a id="list_236" href="http://www.ixawiki.com/index.php?BushoCard%2F1236%BF%E5%CC%EE%BE%A1%C0%AE" title="BushoCard/1236水野勝成 ">BushoCard/1236水野勝成</a>
+</li>
+<li><a id="list_237" href="http://www.ixawiki.com/index.php?BushoCard%2F1237%BB%B3%C6%E2%B0%EC%CB%AD" title="BushoCard/1237山内一豊 ">BushoCard/1237山内一豊</a>
+</li>
+<li><a id="list_238" href="http://www.ixawiki.com/index.php?BushoCard%2F1238%BE%E5%BF%F9%B8%AC%BF%AE" title="BushoCard/1238上杉謙信 ">BushoCard/1238上杉謙信</a>
+</li>
+<li><a id="list_239" href="http://www.ixawiki.com/index.php?BushoCard%2F1239%CB%CC%BE%F2%BB%E1%B9%AF" title="BushoCard/1239北条氏康 ">BushoCard/1239北条氏康</a>
+</li>
+<li><a id="list_240" href="http://www.ixawiki.com/index.php?BushoCard%2F1240%C9%F0%C5%C4%BF%AE%B8%D7" title="BushoCard/1240武田信虎 ">BushoCard/1240武田信虎</a>
+</li>
+<li><a id="list_241" href="http://www.ixawiki.com/index.php?BushoCard%2F1241%E9%C3%CC%BE%C0%B9%BB%E1" title="BushoCard/1241蘆名盛氏 ">BushoCard/1241蘆名盛氏</a>
+</li>
+<li><a id="list_242" href="http://www.ixawiki.com/index.php?BushoCard%2F1242%BA%B4%C3%DD%B5%C1%BD%C5" title="BushoCard/1242佐竹義重 ">BushoCard/1242佐竹義重</a>
+</li>
+<li><a id="list_243" href="http://www.ixawiki.com/index.php?BushoCard%2F1243%C4%AB%C1%D2%B5%C1%B7%CA" title="BushoCard/1243朝倉義景 ">BushoCard/1243朝倉義景</a>
+</li>
+<li><a id="list_244" href="http://www.ixawiki.com/index.php?BushoCard%2F1244%C0%F5%B0%E6%C4%B9%C0%AF" title="BushoCard/1244浅井長政 ">BushoCard/1244浅井長政</a>
+</li>
+<li><a id="list_245" href="http://www.ixawiki.com/index.php?BushoCard%2F1245%CE%A4%B8%AB%B5%C1%B9%B0" title="BushoCard/1245里見義弘 ">BushoCard/1245里見義弘</a>
+</li>
+<li><a id="list_246" href="http://www.ixawiki.com/index.php?BushoCard%2F1246%CB%DC%B4%EA%BB%FB%B8%B2%C7%A1" title="BushoCard/1246本願寺顕如 ">BushoCard/1246本願寺顕如</a>
+</li>
+<li><a id="list_247" href="http://www.ixawiki.com/index.php?BushoCard%2F1247%CE%A9%B2%D6%C6%BB%C0%E3" title="BushoCard/1247立花道雪 ">BushoCard/1247立花道雪</a>
+</li>
+<li><a id="list_248" href="http://www.ixawiki.com/index.php?BushoCard%2F1248%C4%B9%CC%EE%B6%C8%C0%B5" title="BushoCard/1248長野業正 ">BushoCard/1248長野業正</a>
+</li>
+<li><a id="list_249" href="http://www.ixawiki.com/index.php?BushoCard%2F1249%BB%B0%CF%BA%BF%AE%C4%B9" title="BushoCard/1249三郎信長 ">BushoCard/1249三郎信長</a>
+</li>
+<li><a id="list_250" href="http://www.ixawiki.com/index.php?BushoCard%2F1250%BF%A5%C5%C4%BF%AE%C4%B9" title="BushoCard/1250織田信長 ">BushoCard/1250織田信長</a>
+</li>
+<li><a id="list_251" href="http://www.ixawiki.com/index.php?BushoCard%2F1251%CC%D3%CD%F8%B5%B1%B8%B5" title="BushoCard/1251毛利輝元 ">BushoCard/1251毛利輝元</a>
+</li>
+<li><a id="list_252" href="http://www.ixawiki.com/index.php?BushoCard%2F1252%C9%F0%C5%C4%BE%A1%CD%EA" title="BushoCard/1252武田勝頼 ">BushoCard/1252武田勝頼</a>
+</li>
+<li><a id="list_253" href="http://www.ixawiki.com/index.php?BushoCard%2F1253%CB%CC%BE%F2%BB%E1%C0%AF" title="BushoCard/1253北条氏政 ">BushoCard/1253北条氏政</a>
+</li>
+<li><a id="list_254" href="http://www.ixawiki.com/index.php?BushoCard%2F1254%CF%BB%B3%D1%BE%B5%C4%F7" title="BushoCard/1254六角承禎 ">BushoCard/1254六角承禎</a>
+</li>
+<li><a id="list_255" href="http://www.ixawiki.com/index.php?BushoCard%2F1255%CB%AD%BF%C3%BD%A8%B5%C8" title="BushoCard/1255豊臣秀吉 ">BushoCard/1255豊臣秀吉</a>
+</li>
+<li><a id="list_256" href="http://www.ixawiki.com/index.php?BushoCard%2F1256%B1%A7%B4%EE%C2%BF%C4%BE%B2%C8" title="BushoCard/1256宇喜多直家 ">BushoCard/1256宇喜多直家</a>
+</li>
+<li><a id="list_257" href="http://www.ixawiki.com/index.php?BushoCard%2F1257%C2%BC%BE%E5%C9%F0%B5%C8" title="BushoCard/1257村上武吉 ">BushoCard/1257村上武吉</a>
+</li>
+<li><a id="list_258" href="http://www.ixawiki.com/index.php?BushoCard%2F1258%C1%EA%CE%C9%B5%C1%CD%DB" title="BushoCard/1258相良義陽 ">BushoCard/1258相良義陽</a>
+</li>
+<li><a id="list_259" href="http://www.ixawiki.com/index.php?BushoCard%2F1259%C4%B9%BD%A1%B2%E6%C9%F4%B8%B5%BF%C6" title="BushoCard/1259長宗我部元親 ">BushoCard/1259長宗我部元親</a>
+</li>
+<li><a id="list_260" href="http://www.ixawiki.com/index.php?BushoCard%2F1260%B0%CB%C3%A3%B5%B1%BD%A1" title="BushoCard/1260伊達輝宗 ">BushoCard/1260伊達輝宗</a>
+</li>
+<li><a id="list_261" href="http://www.ixawiki.com/index.php?BushoCard%2F1261%C5%E7%C4%C5%B2%C8%B5%D7" title="BushoCard/1261島津家久 ">BushoCard/1261島津家久</a>
+</li>
+<li><a id="list_262" href="http://www.ixawiki.com/index.php?BushoCard%2F1262%BA%C7%BE%E5%B5%C1%B8%F7" title="BushoCard/1262最上義光 ">BushoCard/1262最上義光</a>
+</li>
+<li><a id="list_263" href="http://www.ixawiki.com/index.php?BushoCard%2F1263%C6%C1%C0%EE%B2%C8%B9%AF" title="BushoCard/1263徳川家康 ">BushoCard/1263徳川家康</a>
+</li>
+<li><a id="list_264" href="http://www.ixawiki.com/index.php?BushoCard%2F1264%C1%EA%C7%CF%B5%C1%B0%FD" title="BushoCard/1264相馬義胤 ">BushoCard/1264相馬義胤</a>
+</li>
+<li><a id="list_265" href="http://www.ixawiki.com/index.php?BushoCard%2F1265%B3%F7%C0%B8%BB%E1%B6%BF" title="BushoCard/1265蒲生氏郷 ">BushoCard/1265蒲生氏郷</a>
+</li>
+<li><a id="list_266" href="http://www.ixawiki.com/index.php?BushoCard%2F1266%C4%BE%B9%BE%B7%F3%C2%B3" title="BushoCard/1266直江兼続 ">BushoCard/1266直江兼続</a>
+</li>
+<li><a id="list_267" href="http://www.ixawiki.com/index.php?BushoCard%2F1267%BA%B4%C3%DD%B5%C1%C0%EB" title="BushoCard/1267佐竹義宣 ">BushoCard/1267佐竹義宣</a>
+</li>
+<li><a id="list_268" href="http://www.ixawiki.com/index.php?BushoCard%2F1268%BF%BF%C5%C4%BF%AE%C8%CB" title="BushoCard/1268真田信繁 ">BushoCard/1268真田信繁</a>
+</li>
+<li><a id="list_269" href="http://www.ixawiki.com/index.php?BushoCard%2F1269%C1%B0%C5%C4%CD%F8%B2%C8" title="BushoCard/1269前田利家 ">BushoCard/1269前田利家</a>
+</li>
+<li><a id="list_270" href="http://www.ixawiki.com/index.php?BushoCard%2F1270%C6%A3%C6%B2%B9%E2%B8%D7" title="BushoCard/1270藤堂高虎 ">BushoCard/1270藤堂高虎</a>
+</li>
+<li><a id="list_271" href="http://www.ixawiki.com/index.php?BushoCard%2F1271%BE%AE%C1%E1%C0%EE%BD%A8%BD%A9" title="BushoCard/1271小早川秀秋 ">BushoCard/1271小早川秀秋</a>
+</li>
+<li><a id="list_272" href="http://www.ixawiki.com/index.php?BushoCard%2F1272%CB%AD%BF%C3%BD%A8%BC%A1" title="BushoCard/1272豊臣秀次 ">BushoCard/1272豊臣秀次</a>
+</li>
+<li><a id="list_273" href="http://www.ixawiki.com/index.php?BushoCard%2F1273%CB%CC%BE%F2%BB%E1%C4%BE" title="BushoCard/1273北条氏直 ">BushoCard/1273北条氏直</a>
+</li>
+<li><a id="list_274" href="http://www.ixawiki.com/index.php?BushoCard%2F1274%CB%AD%BF%C3%BD%A8%B5%C8" title="BushoCard/1274豊臣秀吉 ">BushoCard/1274豊臣秀吉</a>
+</li>
+<li><a id="list_275" href="http://www.ixawiki.com/index.php?BushoCard%2F1275%C3%DD%C3%E6%C8%BE%CA%BC%B1%D2" title="BushoCard/1275竹中半兵衛 ">BushoCard/1275竹中半兵衛</a>
+</li>
+<li><a id="list_276" href="http://www.ixawiki.com/index.php?BushoCard%2F1276%B7%EB%BE%EB%BD%A8%B9%AF" title="BushoCard/1276結城秀康 ">BushoCard/1276結城秀康</a>
+</li>
+<li><a id="list_277" href="http://www.ixawiki.com/index.php?BushoCard%2F1277%C0%D0%C5%C4%BB%B0%C0%AE" title="BushoCard/1277石田三成 ">BushoCard/1277石田三成</a>
+</li>
+<li><a id="list_278" href="http://www.ixawiki.com/index.php?BushoCard%2F1278%B1%A9%BC%C6%BD%A8%C4%B9" title="BushoCard/1278羽柴秀長 ">BushoCard/1278羽柴秀長</a>
+</li>
+<li><a id="list_279" href="http://www.ixawiki.com/index.php?BushoCard%2F1279%B9%D3%CC%DA%C2%BC%BD%C5" title="BushoCard/1279荒木村重 ">BushoCard/1279荒木村重</a>
+</li>
+<li><a id="list_280" href="http://www.ixawiki.com/index.php?BushoCard%2F1280%BE%AE%C1%E1%C0%EE%CE%B4%B7%CA" title="BushoCard/1280小早川隆景 ">BushoCard/1280小早川隆景</a>
+</li>
+<li><a id="list_281" href="http://www.ixawiki.com/index.php?BushoCard%2F1281%B1%A7%B4%EE%C2%BF%BD%A8%B2%C8" title="BushoCard/1281宇喜多秀家 ">BushoCard/1281宇喜多秀家</a>
+</li>
+<li><a id="list_282" href="http://www.ixawiki.com/index.php?BushoCard%2F1282%B9%F5%C5%C4%C4%B9%C0%AF" title="BushoCard/1282黒田長政 ">BushoCard/1282黒田長政</a>
+</li>
+<li><a id="list_283" href="http://www.ixawiki.com/index.php?BushoCard%2F1283%C6%E9%C5%E7%C4%BE%CC%D0" title="BushoCard/1283鍋島直茂 ">BushoCard/1283鍋島直茂</a>
+</li>
+<li><a id="list_284" href="http://www.ixawiki.com/index.php?BushoCard%2F1284%B2%C3%C6%A3%C0%B6%C0%B5" title="BushoCard/1284加藤清正 ">BushoCard/1284加藤清正</a>
+</li>
+<li><a id="list_285" href="http://www.ixawiki.com/index.php?BushoCard%2F1285%C5%E7%C4%C5%B5%C1%B5%D7" title="BushoCard/1285島津義久 ">BushoCard/1285島津義久</a>
+</li>
+<li><a id="list_286" href="http://www.ixawiki.com/index.php?BushoCard%2F1286%BF%A5%C5%C4%BF%AE%C4%B9" title="BushoCard/1286織田信長 ">BushoCard/1286織田信長</a>
+</li>
+<li><a id="list_287" href="http://www.ixawiki.com/index.php?BushoCard%2F1287%CB%AD%BF%C3%BD%A8%B5%C8" title="BushoCard/1287豊臣秀吉 ">BushoCard/1287豊臣秀吉</a>
+</li>
+<li><a id="list_288" href="http://www.ixawiki.com/index.php?BushoCard%2F1288%C6%C1%C0%EE%B2%C8%B9%AF" title="BushoCard/1288徳川家康 ">BushoCard/1288徳川家康</a>
+</li>
+<li><a id="list_289" href="http://www.ixawiki.com/index.php?BushoCard%2F1289%C4%B9%BD%A1%B2%E6%C9%F4%B8%B5%BF%C6" title="BushoCard/1289長宗我部元親 ">BushoCard/1289長宗我部元親</a>
+</li>
+<li><a id="list_290" href="http://www.ixawiki.com/index.php?BushoCard%2F1290%C9%F0%C5%C4%BF%AE%B8%BC" title="BushoCard/1290武田信玄 ">BushoCard/1290武田信玄</a>
+</li>
+<li><a id="list_291" href="http://www.ixawiki.com/index.php?BushoCard%2F1291%BE%E5%BF%F9%B8%AC%BF%AE" title="BushoCard/1291上杉謙信 ">BushoCard/1291上杉謙信</a>
+</li>
+<li><a id="list_292" href="http://www.ixawiki.com/index.php?BushoCard%2F1292%B0%CB%C3%A3%C0%AF%BD%A1" title="BushoCard/1292伊達政宗 ">BushoCard/1292伊達政宗</a>
+</li>
+<li><a id="list_293" href="http://www.ixawiki.com/index.php?BushoCard%2F1293%CC%D3%CD%F8%B8%B5%BD%A2" title="BushoCard/1293毛利元就 ">BushoCard/1293毛利元就</a>
+</li>
+<li><a id="list_294" href="http://www.ixawiki.com/index.php?BushoCard%2F1294%C5%E7%C4%C5%B5%C1%B9%B0" title="BushoCard/1294島津義弘 ">BushoCard/1294島津義弘</a>
+</li>
+<li><a id="list_295" href="http://www.ixawiki.com/index.php?BushoCard%2F1295%C2%E7%CD%A7%BD%A1%CE%DB" title="BushoCard/1295大友宗麟 ">BushoCard/1295大友宗麟</a>
+</li>
+<li><a id="list_296" href="http://www.ixawiki.com/index.php?BushoCard%2F1296%CB%CC%BE%F2%C1%E1%B1%C0" title="BushoCard/1296北条早雲 ">BushoCard/1296北条早雲</a>
+</li>
+<li><a id="list_297" href="http://www.ixawiki.com/index.php?BushoCard%2F1297%BA%D8%C6%A3%C6%BB%BB%B0" title="BushoCard/1297斎藤道三 ">BushoCard/1297斎藤道三</a>
+</li>
+<li><a id="list_298" href="http://www.ixawiki.com/index.php?BushoCard%2F1298%CB%AD%BF%C3%BD%A8%C4%B9%28%C7%C6%29" title="BushoCard/1298豊臣秀長(覇) ">BushoCard/1298豊臣秀長(覇)</a>
+</li>
+<li><a id="list_299" href="http://www.ixawiki.com/index.php?BushoCard%2F1299%C0%D0%C5%C4%BB%B0%C0%AE%28%C7%C6%29" title="BushoCard/1299石田三成(覇) ">BushoCard/1299石田三成(覇)</a>
+</li>
+<li><a id="list_300" href="http://www.ixawiki.com/index.php?BushoCard%2F1300%C2%E7%C3%AB%B5%C8%B7%D1%28%C7%C6%29" title="BushoCard/1300大谷吉継(覇) ">BushoCard/1300大谷吉継(覇)</a>
+</li>
+<li><a id="list_301" href="http://www.ixawiki.com/index.php?BushoCard%2F1301%BE%E5%BF%F9%B7%CA%BE%A1" title="BushoCard/1301上杉景勝 ">BushoCard/1301上杉景勝</a>
+</li>
+<li><a id="list_302" href="http://www.ixawiki.com/index.php?BushoCard%2F1302%BA%B4%C3%DD%B5%C1%C0%EB" title="BushoCard/1302佐竹義宣 ">BushoCard/1302佐竹義宣</a>
+</li>
+<li><a id="list_303" href="http://www.ixawiki.com/index.php?BushoCard%2F1303%CB%DC%C2%BF%C3%E9%BE%A1" title="BushoCard/1303本多忠勝 ">BushoCard/1303本多忠勝</a>
+</li>
+<li><a id="list_304" href="http://www.ixawiki.com/index.php?BushoCard%2F1304%BF%BF%C5%C4%BE%BB%B9%AC" title="BushoCard/1304真田昌幸 ">BushoCard/1304真田昌幸</a>
+</li>
+<li><a id="list_305" href="http://www.ixawiki.com/index.php?BushoCard%2F1305%CA%A1%C5%E7%C0%B5%C2%A7" title="BushoCard/1305福島正則 ">BushoCard/1305福島正則</a>
+</li>
+<li><a id="list_306" href="http://www.ixawiki.com/index.php?BushoCard%2F1306%CC%D3%CD%F8%B5%B1%B8%B5" title="BushoCard/1306毛利輝元 ">BushoCard/1306毛利輝元</a>
+</li>
+<li><a id="list_307" href="http://www.ixawiki.com/index.php?BushoCard%2F1307%CE%A9%B2%D6%BD%A1%CC%D0" title="BushoCard/1307立花宗茂 ">BushoCard/1307立花宗茂</a>
+</li>
+<li><a id="list_308" href="http://www.ixawiki.com/index.php?BushoCard%2F1308%BE%AE%C0%BE%B9%D4%C4%B9" title="BushoCard/1308小西行長 ">BushoCard/1308小西行長</a>
+</li>
+<li><a id="list_309" href="http://www.ixawiki.com/index.php?BushoCard%2F1309%C4%C5%B7%DA%B0%D9%BF%AE" title="BushoCard/1309津軽為信 ">BushoCard/1309津軽為信</a>
+</li>
+<li><a id="list_310" href="http://www.ixawiki.com/index.php?BushoCard%2F1701%A4%A4%A4%AF%A4%B

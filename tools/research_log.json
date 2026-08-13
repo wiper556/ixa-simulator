@@ -873,6 +873,53 @@
    "url": "https://ixawiki.com/index.php?BushoCard%2F7403%B3%F7%C0%B8%BB%E1%B6%BF"
   }
  ],
+ "TR:神変機略": [
+  {
+   "date": "2026-08-13",
+   "evidence": {
+    "bytes": 56929,
+    "cache": "ed626d139bce7fbc.txt",
+    "cache_bytes": 56929,
+    "cache_sha256": "2bfbfcf7d338c519",
+    "sha256": "2bfbfcf7d338c519",
+    "status": 200
+   },
+   "found": true,
+   "result": "宇佐美定満の記事",
+   "source": "ixagno",
+   "url": "https://ixagno.blog.fc2.com/blog-entry-10555.html"
+  },
+  {
+   "date": "2026-08-13",
+   "evidence": {
+    "bytes": 30884,
+    "cache": "f5ec7267fea5cdd8.txt",
+    "cache_bytes": 30884,
+    "cache_sha256": "e76abc63cc9bdc7a",
+    "sha256": "e76abc63cc9bdc7a",
+    "status": 200
+   },
+   "found": false,
+   "result": "TR1の記載なし(LV10とTR2のみ)",
+   "source": "ixanary",
+   "url": "https://ixanary.com/cards/2398/"
+  },
+  {
+   "date": "2026-08-13",
+   "evidence": {
+    "bytes": 37532,
+    "cache": "6711e22dbf1c379a.txt",
+    "cache_bytes": 37532,
+    "cache_sha256": "3c580f3db40d3320",
+    "sha256": "3c580f3db40d3320",
+    "status": 200
+   },
+   "found": false,
+   "result": "TR1の記載なし(Lv10とTR2のみ)",
+   "source": "ixawiki",
+   "url": "https://ixawiki.com/index.php?BushoCard%2F2398%B1%A7%BA%B4%C8%FE%C4%EA%CB%FE"
+  }
+ ],
  "TR:笹ノ墓標": [
   {
    "date": "2026-08-12",
@@ -1025,6 +1072,72 @@
    "result": "検索結果",
    "source": "ixawiki",
    "url": "https://ixawiki.com/index.php?cmd=search&word=1206&type=AND"
+  }
+ ],
+ "合成:乱世ノ歸人": [
+  {
+   "date": "2026-08-13",
+   "evidence": {
+    "bytes": 30250,
+    "cache": "6682d37e6752f2b8.txt",
+    "cache_bytes": 30250,
+    "cache_sha256": "5b40f54c886d3fbf",
+    "sha256": "5b40f54c886d3fbf",
+    "status": 200
+   },
+   "found": true,
+   "result": "入来神舞への言及あり",
+   "source": "ixanary",
+   "url": "https://ixanary.com/skills/%E4%B9%B1%E4%B8%96%E3%83%8E%E6%AD%B8%E4%BA%BA"
+  }
+ ],
+ "合成:神変機略": [
+  {
+   "date": "2026-08-13",
+   "evidence": {
+    "bytes": 28415,
+    "cache": "78a39fa8b62daee1.txt",
+    "cache_bytes": 28415,
+    "cache_sha256": "2bdf0be0bdabe1bf",
+    "sha256": "2bdf0be0bdabe1bf",
+    "status": 200
+   },
+   "found": true,
+   "result": "合成テーブルあり",
+   "source": "ixanary",
+   "url": "https://ixanary.com/skills/%E7%A5%9E%E5%A4%89%E6%A9%9F%E7%95%A5"
+  }
+ ],
+ "章:一覧": [
+  {
+   "date": "2026-08-13",
+   "evidence": {
+    "bytes": 6906,
+    "cache": "4c1699530214535e.txt",
+    "cache_bytes": 6906,
+    "cache_sha256": "a3dcb5a638ff9eeb",
+    "sha256": "a3dcb5a638ff9eeb",
+    "status": 200
+   },
+   "found": false,
+   "result": "カード番号らしき数字 18 個",
+   "source": "最新カード",
+   "url": "https://ixawiki.com/index.php?%BA%C7%BF%B7%A5%AB%A1%BC%A5%C9"
+  },
+  {
+   "date": "2026-08-13",
+   "evidence": {
+    "bytes": 500103,
+    "cache": "01547be8db6e2bc6.txt",
+    "cache_bytes": 65536,
+    "cache_sha256": "f6c24185b4e7fbe4",
+    "sha256": "9118d79e11f7fcaf",
+    "status": 200
+   },
+   "found": true,
+   "result": "カード番号らしき数字 10577 個",
+   "source": "武将カード一覧",
+   "url": "https://ixawiki.com/index.php?BushoCard"
   }
  ],
  "統率:10063": [
