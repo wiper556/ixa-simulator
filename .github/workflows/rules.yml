@@ -190,11 +190,20 @@ jobs:
         # フックは `git commit -n` や `git -c core.hooksPath=` で痕跡なく外せるので、
         # 「外されていても、ここで必ず1回は見られる」状態にする。
         run: |
+          # 2026-08-13: 比較元が取れないとき「最初のコミット」に落としていたので、
+          # **新しいブランチを push した1回目は必ず全履歴を検査していた**。
+          # 過去に入っている153件が毎回引っかかり、その回は絶対に緑にならない。
+          # (2回目以降の push では before が取れるので通る。だから気づきにくかった)
+          # 比較元は master との分岐点にする。今回の push で増えた分だけを見る。
           BASE="${{ github.event.before }}"
           if [ -z "$BASE" ] || [ "$BASE" = "0000000000000000000000000000000000000000" ] \
              || ! git cat-file -e "$BASE^{commit}" 2>/dev/null; then
+            BASE=$(git merge-base origin/master "$GITHUB_SHA" 2>/dev/null || true)
+            echo "比較元が取れないので master との分岐点から見る: $BASE"
+          fi
+          if [ -z "$BASE" ] || ! git cat-file -e "$BASE^{commit}" 2>/dev/null; then
             BASE=$(git rev-list --max-parents=0 HEAD | tail -1)
-            echo "比較元が取れないので最初のコミットから見る"
+            echo "分岐点も取れないので最初のコミットから見る"
           fi
           python tools/precommit_check.py --mode ci --range "$BASE..$GITHUB_SHA"
 
