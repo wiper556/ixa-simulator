@@ -71,10 +71,27 @@
    "db": "kyoku"
   }
  ],
+ "grantedViaSkills": [
+  {
+   "skill": "三全将帥",
+   "rank": "S"
+  },
+  {
+   "skill": "夢妖剣",
+   "rank": "S"
+  },
+  {
+   "skill": "義響鉄心",
+   "rank": "S"
+  }
+ ],
  "ownHiddenCandidate": {
   "skill": "神羅聖域",
   "rank": "SS"
  },
+ "notes": [
+  "2026-08-13: A-3-12の逆方向リンク。武将のsynthesisTableでは1次がこのスキルに変化するのに、こちら側から元スキルを指していなかった。1次→2次の組100件を元スキルのownHiddenCandidateと突き合わせ、矛盾0件を確かめたうえで機械的に張った。"
+ ],
  "trTable": [
   {
    "level": "LV10",

@@ -106,15 +106,23 @@
    "slot": "S2"
   }
  ],
- "ownHiddenCandidate": {
-  "skill": "龍驤虎躍",
-  "rank": "SS"
- },
  "grantedViaSkills": [
   {
    "skill": "破軍一投",
    "rank": "A"
+  },
+  {
+   "skill": "法威燦煌",
+   "rank": "S"
   }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "龍驤虎躍",
+  "rank": "SS"
+ },
+ "notes": [
+  "2026年3月16日メンテ後に鍛錬解放。最大TRはTR3(ixagno.blog.fc2.com blog-entry-10906「【龍驤虎躍】の鍛錬解放」に全TR段階の数値記載あり、ユーザー提供)。",
+  "2026-08-13: A-3-12の逆方向リンク。武将のsynthesisTableでは1次がこのスキルに変化するのに、こちら側から元スキルを指していなかった。1次→2次の組100件を元スキルのownHiddenCandidateと突き合わせ、矛盾0件を確かめたうえで機械的に張った。"
  ],
  "trTable": [
   {
@@ -147,8 +155,5 @@
    "points": "200",
    "effect": null
   }
- ],
- "notes": [
-  "2026年3月16日メンテ後に鍛錬解放。最大TRはTR3(ixagno.blog.fc2.com blog-entry-10906「【龍驤虎躍】の鍛錬解放」に全TR段階の数値記載あり、ユーザー提供)。"
  ]
 }

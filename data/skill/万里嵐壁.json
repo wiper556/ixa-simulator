@@ -51,10 +51,23 @@
    "db": "kyoku"
   }
  ],
+ "grantedViaSkills": [
+  {
+   "skill": "島穿鬼槍",
+   "rank": "S"
+  },
+  {
+   "skill": "神将火剣",
+   "rank": "S"
+  }
+ ],
  "ownHiddenCandidate": {
   "skill": "万里嵐壁",
   "rank": "SS"
  },
+ "notes": [
+  "2026-08-13: A-3-12の逆方向リンク。武将のsynthesisTableでは1次がこのスキルに変化するのに、こちら側から元スキルを指していなかった。1次→2次の組100件を元スキルのownHiddenCandidateと突き合わせ、矛盾0件を確かめたうえで機械的に張った。"
+ ],
  "trTable": [
   {
    "level": "LV10",

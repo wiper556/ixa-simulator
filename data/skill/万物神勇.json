@@ -59,10 +59,23 @@
    "slot": "S2"
   }
  ],
+ "grantedViaSkills": [
+  {
+   "skill": "北天ノ奔馬",
+   "rank": "S"
+  },
+  {
+   "skill": "虎伐閃衝",
+   "rank": "S"
+  }
+ ],
  "ownHiddenCandidate": {
   "skill": "万物神勇",
   "rank": "SSS"
  },
+ "notes": [
+  "2026-08-13: A-3-12の逆方向リンク。武将のsynthesisTableでは1次がこのスキルに変化するのに、こちら側から元スキルを指していなかった。1次→2次の組100件を元スキルのownHiddenCandidateと突き合わせ、矛盾0件を確かめたうえで機械的に張った。"
+ ],
  "trTable": [
   {
    "level": "LV10",

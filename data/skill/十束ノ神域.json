@@ -156,18 +156,41 @@
    "db": "kyoku"
   }
  ],
+ "grantedViaSkills": [
+  {
+   "skill": "倫魁不羈",
+   "rank": "S"
+  },
+  {
+   "skill": "天棲八咫烏",
+   "rank": "S"
+  },
+  {
+   "skill": "天翔雷神",
+   "rank": "S"
+  },
+  {
+   "skill": "炎帝伐鬼",
+   "rank": "S"
+  },
+  {
+   "skill": "炎馬帝",
+   "rank": "S"
+  }
+ ],
  "ownHiddenCandidate": {
   "skill": "天聖宝冠",
   "rank": "SSS"
  },
+ "notes": [
+  "ownHiddenCandidate: No.2389(宮部継潤)の合成候補データ(ixagno.blog.fc2.com blog-entry-10265確認)より、Aスロット十束ノ神域は移植後「天聖宝冠」[SSS]に変化することが判明したため更新",
+  "2026-08-13: A-3-12の逆方向リンク。武将のsynthesisTableでは1次がこのスキルに変化するのに、こちら側から元スキルを指していなかった。1次→2次の組100件を元スキルのownHiddenCandidateと突き合わせ、矛盾0件を確かめたうえで機械的に張った。"
+ ],
  "trTable": [
   {
    "level": "LV10",
    "points": "-",
    "effect": "全 覇道　確率 100% / 攻撃 320%上昇+速度70%上昇(TR別データは未確認)"
   }
- ],
- "notes": [
-  "ownHiddenCandidate: No.2389(宮部継潤)の合成候補データ(ixagno.blog.fc2.com blog-entry-10265確認)より、Aスロット十束ノ神域は移植後「天聖宝冠」[SSS]に変化することが判明したため更新"
  ]
 }

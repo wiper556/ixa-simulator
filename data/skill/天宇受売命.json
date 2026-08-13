@@ -45,18 +45,25 @@
    ]
   }
  ],
+ "grantedViaSkills": [
+  {
+   "skill": "義心江龍",
+   "rank": "S"
+  }
+ ],
  "ownHiddenCandidate": {
   "skill": "天宇受売命",
   "rank": "SSS"
  },
+ "notes": [
+  "合成専用スキル(武将カード本体は存在しない)。ixanary.comではLV10のみ確認、TR/鍛錬データなし。",
+  "2026-08-13: A-3-12の逆方向リンク。武将のsynthesisTableでは1次がこのスキルに変化するのに、こちら側から元スキルを指していなかった。1次→2次の組100件を元スキルのownHiddenCandidateと突き合わせ、矛盾0件を確かめたうえで機械的に張った。"
+ ],
  "trTable": [
   {
    "level": "LV10",
    "points": "-",
    "effect": "自身　確率 70% / 初期スキルを模倣(1.25倍)"
   }
- ],
- "notes": [
-  "合成専用スキル(武将カード本体は存在しない)。ixanary.comではLV10のみ確認、TR/鍛錬データなし。"
  ]
 }

@@ -73,15 +73,30 @@
    "db": "kyoku"
   }
  ],
- "ownHiddenCandidate": {
-  "skill": "遠呂智ノ閃光",
-  "rank": "SS"
- },
  "grantedViaSkills": [
   {
    "skill": "戦陣 神楽",
    "rank": "A"
+  },
+  {
+   "skill": "国盗ノ懸槍",
+   "rank": "S"
+  },
+  {
+   "skill": "根津諏訪流鷹術",
+   "rank": "S"
+  },
+  {
+   "skill": "豊国天万",
+   "rank": "S"
   }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "遠呂智ノ閃光",
+  "rank": "SS"
+ },
+ "notes": [
+  "2026-08-13: A-3-12の逆方向リンク。武将のsynthesisTableでは1次がこのスキルに変化するのに、こちら側から元スキルを指していなかった。1次→2次の組100件を元スキルのownHiddenCandidateと突き合わせ、矛盾0件を確かめたうえで機械的に張った。"
  ],
  "trTable": [
   {
