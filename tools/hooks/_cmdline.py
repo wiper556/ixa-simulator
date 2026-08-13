@@ -14,6 +14,19 @@ def segments(cmd, posix=True):
     posix=True だと `\` がエスケープとして消えるので、Windows のパスが別物になる。
     呼ぶ側は both() を使って両方見ること。
     """
+    # CA-1(第6回→第7回、再現済み・高): shlex は改行を**ただの空白**として扱うので、
+    # `echo hi\nrm <本物>/tools/lock.py` が1つの区画に潰れ、先頭の echo が
+    # 読み取り専用なので丸ごと許可された。bash は改行をコマンド区切りとして実行する。
+    # 復帰(\r)も同じ。先に行で割ってから、行ごとに shlex に掛ける。
+    segs = []
+    for line in re.split(r"[\r\n]+", cmd or ""):
+        if not line.strip():
+            continue
+        segs.extend(_segments_1line(line, posix))
+    return segs
+
+
+def _segments_1line(cmd, posix):
     try:
         lx = shlex.shlex(cmd, posix=posix, punctuation_chars=True)
         lx.whitespace_split = True
@@ -22,7 +35,7 @@ def segments(cmd, posix=True):
         toks = [t for t in re.split(r"\s+", (cmd or "").strip()) if t]
     segs, cur = [], []
     for t in toks:
-        if t and not t.strip("|&;<>()\n"):     # 区切り記号だけの token
+        if t and not t.strip("|&;<>()"):       # 区切り記号だけの token
             if cur:
                 segs.append(cur)
                 cur = []

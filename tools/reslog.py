@@ -21,6 +21,40 @@ import sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PATH = os.path.join(ROOT, "tools", "research_log.json")
+# CC-1(2026-08-13 第7回レッドチーム、高): evidence が dict で status が真なら
+# 証拠として数えていたので、JSON に2行手で足すだけで「2ソースに当たった」ことに
+# でき、HIGH が消えて緑で通った。取得本文の実体をここに残し、監査は実体から
+# ハッシュと大きさを計算して突き合わせる。手書きでは実体を用意できない。
+# (実体を偽造することは原理的には可能だが、その場合ページ本文まで捏造した
+#  ファイルが差分に現れる。黙って2行足すのとは痕跡の重さが違う。)
+CACHE = os.path.join(ROOT, "tools", "research_cache")
+LEGACY = os.path.join(ROOT, "tools", "reslog_legacy.txt")
+MIN_BYTES = 2000        # 実在のページでこれを下回ることはまず無い
+KEEP_BYTES = 65536      # 保存は先頭64KBまで(照合はこの範囲で行う)
+
+
+def _legacy():
+    """キャッシュ実体を持たない旧形式を、例外として認める組み合わせ。
+
+    「日付が古ければ通す」にすると、日付を書くだけで偽造が復活する。
+    名指しの一覧にして、錠前で守る。
+    """
+    out = set()
+    if not os.path.exists(LEGACY):
+        return out
+    for line in io.open(LEGACY, encoding="utf-8").read().split("\n"):
+        if line.startswith("#") or "\t" not in line:
+            continue
+        k, _, src = line.partition("\t")
+        out.add((k.strip(), src.strip()))
+    return out
+
+
+def cache_name(key, source):
+    import hashlib
+    h = hashlib.sha256((key + "|" + source).encode("utf-8")).hexdigest()[:16]
+    return h + ".txt"
+
 
 
 def _load():
@@ -73,20 +107,50 @@ def fetch_and_log(key, source, url, encoding="utf-8", judge=None):
         return None
     text = raw.decode(encoding, "replace")
     result, found = judge(text) if judge else ("取得した(%d bytes)" % len(raw), True)
+    body = raw[:KEEP_BYTES]
+    if not os.path.isdir(CACHE):
+        os.makedirs(CACHE)
+    name = cache_name(key, source)
+    with open(os.path.join(CACHE, name), "wb") as f:
+        f.write(body)
     _write(key, source, url, result, found,
            evidence={"status": status, "bytes": len(raw),
-                     "sha256": hashlib.sha256(raw).hexdigest()[:16]})
+                     "sha256": hashlib.sha256(raw).hexdigest()[:16],
+                     "cache": name,
+                     "cache_sha256": hashlib.sha256(body).hexdigest()[:16],
+                     "cache_bytes": len(body)})
     return text
 
 
 def sources(key, verified_only=False):
     """その項目で当たった情報源の一覧。
     verified_only=True なら fetch_and_log で取得した(証拠つきの)ものだけ返す。"""
+    import hashlib
     out = []
     for e in _load().get(key, []):
         ev = e.get("evidence")
-        if verified_only and not (isinstance(ev, dict) and ev.get("status")):
-            continue
+        if verified_only:
+            if not (isinstance(ev, dict) and ev.get("status")):
+                continue
+            # CC-1: 自己申告の数字ではなく、保存された本文の実体で確かめる。
+            name = ev.get("cache")
+            if not name:
+                if (key, e.get("source")) in _legacy():
+                    out.append(e["source"])   # 名指しの旧形式だけ例外
+                continue
+            p = os.path.join(CACHE, os.path.basename(str(name)))
+            if not os.path.exists(p):
+                continue
+            with open(p, "rb") as f:
+                body = f.read()
+            if len(body) < MIN_BYTES:
+                continue
+            if ev.get("cache_bytes") != len(body):
+                continue
+            if ev.get("cache_sha256") != hashlib.sha256(body).hexdigest()[:16]:
+                continue
+            if name != cache_name(key, e.get("source", "")):
+                continue        # 別項目のキャッシュの使い回しを防ぐ
         out.append(e["source"])
     return out
 

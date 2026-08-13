@@ -93,12 +93,17 @@ def _inside(path, root):
     # 実地1回目の不具合: 引用符を外す前に isabs を見ていたので、
     # `"C:/…/scratchpad/x.py"` のような**引用符つきの絶対パス**が相対パス扱いになり、
     # テスト環境の中なのに外と判定していた(自分がロックアウトされた)。
+    #
+    # CG(第7回、高): 文字列として正規化するだけで `..` を畳んでいなかったので、
+    # `C:/…/claude/../ixa-simulator/tools/lock.py` は「テスト環境で始まる」ため
+    # **中と判定された**。実体のパスまで畳んでから比べる。
     p = _norm(path)
     if not p:
         return False
     if not os.path.isabs(p):
-        p = _norm(os.path.abspath(p))
-    r = _norm(root)
+        p = os.path.abspath(p)
+    p = _norm(os.path.normpath(p))
+    r = _norm(os.path.normpath(root)) if root else ""
     return bool(r) and (p == r or p.startswith(r + "/"))
 
 
@@ -190,12 +195,31 @@ def check_segment(toks, sandbox, repo):
                     places.append(t[len(opt) + 1:])
                 elif opt == "-C" and t.startswith("-C") and len(t) > 2:
                     places.append(t[2:])
+        # サブコマンドは「オプションの値」を飛ばしてから拾う。
+        # `git -C <path> log` の最初の非オプションは <path> であって log ではない。
+        sub, j = "", 0
+        while j < len(args):
+            t = args[j]
+            if t in ("-C", "--git-dir", "--work-tree", "--namespace", "-c",
+                     "--config-env", "--exec-path"):
+                j += 2
+                continue
+            if t.startswith("-"):
+                j += 1
+                continue
+            sub = t
+            break
         if places:
             outside = [p for p in places if not _inside(p, sandbox)]
             if outside:
+                # CN / CO / CL-2(第7回): ここで即拒否していたので、
+                # ルール文が「本物は読むだけなら通す」と書いているのに
+                # `git -C <本物> log` が止まった。攻撃側が本物を読めないと
+                # 20分の回で指摘の質が落ちる。**読み取り専用なら通す。**
+                if sub in GIT_READ and sub != "config":
+                    return None
                 return "git の場所指定がテスト環境の外を指している(%s)" % outside[0]
             return None            # 全部サンドボックスの中なら何をしてもよい
-        sub = next((t for t in args if not t.startswith("-")), "")
         # 2. テスト環境を作る
         if sub == "clone":
             # BD-1(第6回、再現済み): `2>&1` が「2」に割れて末尾に残り、
@@ -214,6 +238,18 @@ def check_segment(toks, sandbox, repo):
         return "回の間に許した git は、-C でテスト環境を指すか、読み取り専用のものだけ(%s)" % (sub or "?")
 
     if cmd in ("python", "python3", "py", "sh", "bash", "node", "powershell", "pwsh"):
+        # CL-1(第7回、高): プログラム本文を渡す形を一切見ていなかった。
+        # `python -c "…" <サンドボックスのダミーパス>` と書くと、最初に「パスらしい」
+        # token を拾うだけの判定が末尾のダミーを見て許可した。本文は無検査。
+        # awk の本文は見るようにしたのに、その真横の python -c が素通りだった。
+        # 実体スクリプト以外の起動形は、回の間は全部拒否する。
+        for t in args:
+            low = t.lower()
+            if low in ("-c", "-m", "-e", "--eval", "--command", "-command",
+                       "-encodedcommand", "-ec", "/c", "/k", "-") or \
+                    low.startswith("-c=") or low.startswith("--command="):
+                return ("%s に本文を直接渡す形(%s)は回の間は不可。"
+                        "テスト環境の中のスクリプトを置いて実行する" % (cmd, t))
         target = next((t for t in args if _pathish(t)), None)
         if target and _inside(target, sandbox):
             return None
@@ -234,15 +270,44 @@ def check_segment(toks, sandbox, repo):
     return "回の間はホワイトリストに無いコマンドは通さない(%s)" % cmd
 
 
+def _strip_heredocs(cmd):
+    """ヒアドキュメントの本文をコマンド列から外す(本文はデータであってコマンドではない)。
+
+    外さないと、本文の中の行が「検査すべきコマンド」として読まれ、
+    正当なファイル作成まで止まる。書き込み先は下のリダイレクト検査が見る。
+    """
+    lines = (cmd or "").split("\n")
+    out, i = [], 0
+    while i < len(lines):
+        # `<<TAG` の印そのものも落とす。残すと TAG が単独の区画になり、
+        # コマンド名として読まれる(cat > x <<PY の PY が py と解釈された)。
+        _k = lines[i].find("<<")
+        out.append(lines[i][:_k] if _k >= 0 else lines[i])
+        m = re.search(r"<<-?\s*[\"']?([A-Za-z_][A-Za-z0-9_]*)[\"']?", lines[i])
+        i += 1
+        if not m:
+            continue
+        tag = m.group(1)
+        while i < len(lines) and lines[i].strip() != tag:
+            i += 1
+        i += 1                       # 終端タグも飛ばす
+    return "\n".join(out)
+
+
 def check_command(cmd, sandbox, repo):
-    for seg in both(cmd):
+    body = _strip_heredocs(cmd)
+    for seg in both(body):
         why = check_segment(list(seg), sandbox, repo)
         if why:
             return why, " ".join(seg)[:80]
     # リダイレクトの書き込み先。`>` の右は別 segment の先頭に来るので、
     # 元の文字列からも直接見る(`> ../x` のような相対も拾う)。
-    for m in re.finditer(r"(?<![0-9])>{1,2}\s*([^\s;|&]+)", cmd or ""):
+    # CL(第7回): `(?<![0-9])` で数字の直後を除外していたので `1> <本物>` が抜けた。
+    # `2>&1` のようなfd複製(> の右が &数字)だけを除いて、あとは全部見る。
+    for m in re.finditer(r"\d?>{1,2}\s*(&?[^\s;|&<>]+)", cmd or ""):
         t = m.group(1).strip('"').strip("'")
+        if t.startswith("&"):
+            continue                 # 2>&1 のような複製
         if not _inside(t, sandbox):
             return "書き込み先(リダイレクト)がテスト環境の外", t[:80]
     return None, None
@@ -336,6 +401,12 @@ MUST_PASS = [
     "for f in tools/*.py; do echo $f; done",
     "if grep -q hooksPath tools/lock.py; then echo yes; fi",
     "git -C c:/temp/claude/ba --git-dir=c:/temp/claude/ba/.git log",
+    # 第7回 CN/CO/CL-2: ルール文が「本物は読むだけなら通す」と書いている形。
+    "git -C c:/repo log --oneline -12",
+    "git -C c:/repo show HEAD:tools/lock.py",
+    "git -C c:/repo diff HEAD~1",
+    # 第7回 CF/CJ: ヒアドキュメントの本文が「コマンド」として読まれて止まっていた。
+    "cat > c:/temp/claude/ba/probe.py <<'PY'\nimport os\nrm = 1\nPY",
 ]
 MUST_BLOCK = [
     "python tools/install_hooks.py",              # 本物にフックを入れ直す
@@ -365,6 +436,24 @@ MUST_BLOCK = [
     "xargs rm < list.txt",
     "do rm c:/repo/tools/lock.py",
     "if true; then rm c:/repo/tools/lock.py; fi",
+    # 第7回 CA-1(高、再現済み): 改行でコマンドを割って、先頭の読み取り専用に隠す
+    "echo hi\nrm c:/repo/tools/lock.py",
+    "echo hi\nrm -rf c:/repo/tools",
+    "git -C c:/temp/claude/ba status\nrm c:/repo/tools/lock.py",
+    "ls\ncp c:/temp/claude/ba/tools/lock.py c:/repo/tools/lock.py",
+    "echo hi\rrm c:/repo/tools/lock.py",
+    "cat docs/RULES.md\n\nrm c:/repo/tools/lock.py",
+    # 第7回 CL-1(高): 本文を直接渡す形。末尾にサンドボックスのダミーを足す小細工つき
+    'python -c "import os" c:/temp/claude/ba/x.py',
+    "python -m http.server c:/temp/claude/ba/x.py",
+    "sh -c 'rm c:/repo/tools/lock.py' c:/temp/claude/ba/x.sh",
+    "node -e 'require(\"fs\")' c:/temp/claude/ba/x.js",
+    # 第7回 CG(高): `..` を畳んでいなかったので、テスト環境で始まるパスで外へ出られた
+    "rm c:/temp/claude/../ixa-simulator/tools/lock.py",
+    "cp x c:/temp/claude/ba/../../../repo/tools/lock.py",
+    # 第7回 CL: `1>` が数字の直後としてリダイレクト検査から外れていた
+    "echo pwned 1> c:/repo/PWNED",
+    "echo pwned 2> c:/repo/PWNED",
 ]
 
 

@@ -69,7 +69,10 @@ HASHED = ("tools/hooks/pre-commit", "tools/hooks/pre-merge-commit",
           # R-01〜R-08(2026-08-13): 攻撃側を縛る仕組み。ここが外れると
           # 「本物を触っていない」ことを誰も確かめないまま回が回る。
           "tools/redteam.py", "tools/hooks/no_redteam_write.py",
-          "tools/hooks/_cmdline.py")
+          "tools/hooks/_cmdline.py",
+          # CC-1(第7回): 旧形式の証拠を例外扱いする一覧。守らないと
+          # 「一覧に足す」だけで偽造の証拠が通ってしまう。
+          "tools/reslog_legacy.txt", "tools/reslog.py")
 # N-3(第4回): 縮小の記録 lock_reason.txt はどこにも守られておらず、
 # 消しても誰も気づかなかった。必須ファイルに入れる。
 # Y-5(第5回): research_log.json も無保護だった(「証拠つき」を手書きできる素材)。

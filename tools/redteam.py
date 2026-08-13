@@ -139,16 +139,31 @@ def _log_tampered():
     return None
 
 
-def started_digest():
-    """記録に残っている、最後の START のダイジェスト。"""
+def started_digest(started=None):
+    """記録に残っている START のダイジェスト。
+
+    CD-2(第7回): 「最後の START」を見ていたので、START 行を1本**追記**するだけで
+    ダイジェストを付け替えられた。追記なので改竄検査(prefix)も通ってしまう。
+    開いている回の開始時刻と一致する行だけを使い、END/ABORT を挟まない
+    連続した START は異常として扱う。
+    """
     if not os.path.exists(LOG):
         return None
-    last = None
+    hit, open_start = None, False
     for line in io.open(LOG, encoding="utf-8", newline="").read().split("\n"):
         c = line.split("\t")
-        if c and c[0] == "START" and len(c) >= 7:
-            last = c[6]
-    return last
+        if not c or not c[0]:
+            continue
+        if c[0] == "START":
+            if open_start:
+                return "連続START"      # 閉じずにもう1本開いている = 異常
+            open_start = True
+            if len(c) >= 7 and (started is None or c[1] == started):
+                hit = c[6]
+        elif c[0] in ("END", "ABORT", "END-FAILED"):
+            if c[0] != "END-FAILED":
+                open_start = False
+    return hit
 
 
 def head():
@@ -202,6 +217,12 @@ def cmd_start(label, sandbox):
         for l in d[:10]:
             print("  " + l)
         return 1
+    # 第7回 CB が狙っていた形: ラベルは1行1件の記録にそのまま入るので、
+    # 改行を入れれば「END」の行を偽造できた(--abort だけが検疫していた)。
+    for name, val in (("ラベル", label), ("テスト環境", sandbox or "")):
+        if "\t" in val or "\n" in val or "\r" in val:
+            print("[停止] %s にタブ・改行は使えない(記録が1行1件で壊れる)" % name)
+            return 1
     sandbox = (sandbox or default_sandbox()).replace("\\", "/").rstrip("/")
     if not os.path.isabs(sandbox):
         print("[停止] テスト環境は絶対パスで指定する。")
@@ -244,7 +265,12 @@ def cmd_check(quiet=False):
         print("[違反] HEAD が動いている: %s → %s" % (a["head"][:12], head()[:12]))
         n += 1
     # BD-5: リポジトリ外の記録が差し替えられていないか。
-    want = started_digest()
+    want = started_digest(a.get("started"))
+    if want == "連続START":
+        print("[違反] 記録に START が連続している。開いた回を閉じずに"
+              "もう1本開いた形跡がある(ダイジェストの付け替え)")
+        n += 1
+        want = None
     if want and digest(a["files"]) != want:
         print("[違反] 指紋の記録が START のときと違う(%s → %s)。"
               "リポジトリ外の active.json が差し替えられた疑い"
