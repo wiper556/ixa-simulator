@@ -430,8 +430,15 @@ def selftest():
         r = subprocess.run(["git", "for-each-ref", "--format=%(refname)"],
                            cwd=ROOT, capture_output=True, text=True,
                            encoding="utf-8")
-        if r.returncode or not (r.stdout or "").strip():
-            ng.append("git for-each-ref が参照を返していない。"
+        # 2026-08-13: ここは「出力が空でもNG」にしていた。CIの checkout は
+        # detached HEAD でローカルブランチを作らないので for-each-ref が空になり、
+        # Linux では必ず落ちていた(そのせいで CI は一度も緑になっていない)。
+        # 参照が0本なのは壊れているのではなく、そういう状態というだけ。
+        # HA-3 が本当に見たかったのは「参照が増えたら @refs が動くか」という
+        # **振る舞い**で、それは下のクローンでの検査が担っている。そちらは
+        # for-each-ref が壊れていれば必ず落ちるので、空を許しても弱くならない。
+        if r.returncode:
+            ng.append("git for-each-ref が失敗する。"
                       "@refs が中身の無いハッシュになる(EE-1)")
         else:
             # 使い捨てクローンで参照を1本足し、@refs が動くことを確かめる
@@ -442,13 +449,20 @@ def selftest():
             keep = globals()["ROOT"]
             try:
                 globals()["ROOT"] = rp
-                a = fingerprint().get("@refs")
-                subprocess.run(["git", "-C", rp, "branch", "rt-selftest-tmp"],
-                               capture_output=True)
-                b = fingerprint().get("@refs")
-                if a == b:
-                    ng.append("参照を1本足しても @refs が変わらない。"
-                              "指紋が参照を見ていない(EE-1)")
+                if not os.path.isdir(os.path.join(rp, ".git")):
+                    ng.append("使い捨てクローンを作れないので @refs の"
+                              "振る舞いを確かめられない")
+                else:
+                    a = fingerprint().get("@refs")
+                    # detached HEAD のクローンでもブランチは作れるように、
+                    # 明示的に HEAD を指して1本足す。
+                    subprocess.run(["git", "-C", rp, "branch",
+                                    "rt-selftest-tmp", "HEAD"],
+                                   capture_output=True)
+                    b = fingerprint().get("@refs")
+                    if a == b:
+                        ng.append("参照を1本足しても @refs が変わらない。"
+                                  "指紋が参照を見ていない(EE-1)")
             finally:
                 globals()["ROOT"] = keep
                 shutil.rmtree(d, ignore_errors=True)

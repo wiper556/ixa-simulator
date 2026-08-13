@@ -131,7 +131,13 @@ def _inside(path, root):
     p = _norm(path)
     if not p:
         return False
-    if not os.path.isabs(p):
+    # 2026-08-13: `C:/…` を絶対パスと見なすのは Windows の os.path.isabs だけ。
+    # LinuxのCIでは相対パス扱いになり、本物のリポジトリからの相対に解決されて
+    # 「テスト環境の外」と判定された。R-04 の自己テストが Linux で29件落ち、
+    # そのせいで CI は一度も緑になっていなかった(先に別のステップで落ちていて
+    # ここまで到達していなかったので、誰も気づけなかった)。
+    # ドライブ文字つきのパスは、どのOSで動いていても絶対パスとして扱う。
+    if not (os.path.isabs(p) or re.match(r"^[a-zA-Z]:/", p)):
         p = os.path.abspath(p)
     # 第10回: Windows のパスは大文字小文字を区別しないのに、ここは
     # 先頭のドライブ文字しか畳んでいなかった。`C:/Users` と `c:/users` が
