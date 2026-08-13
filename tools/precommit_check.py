@@ -138,9 +138,17 @@ def gate_source_clean():
     ステージしないツール改造は素通りした。しかも事後に checkout すれば痕跡が残らない。
     検査する道具に未コミットの差分がある状態では、門番は動かない。
     """
+    # Q-4(第4回): 巻き戻しの下限 docs/rollback-floor.txt は作業ツリーから読まれるのに、
+    # docs/ がこの監視の対象外だった。未ステージで書き換え→実行→復元で痕跡ゼロだった。
     out = run(["git", "status", "--porcelain", "--",
-               "tools", ".github", ".claude/settings.json"]).stdout
+               "tools", ".github", "docs", ".claude/settings.json"]).stdout
     bad = []
+    # L-3 / Q-2(第4回): __pycache__ に偽の .pyc を置いて検査を黙らせる手があった。
+    # 検査は -B で走らせるようにしたが、そもそも置かせない。
+    pyc = os.path.join(ROOT, "tools", "__pycache__")
+    if os.path.isdir(pyc):
+        shutil.rmtree(pyc, ignore_errors=True)
+        print("[注意] tools/__pycache__ を消した(偽の .pyc を置く手を塞ぐため)。")
     for l in out.split("\n"):
         if len(l) < 4:
             continue
@@ -229,15 +237,36 @@ def baseline_of(tree):
     return load(p)
 
 
+HOOKDIFF_SRC = r"""
+import json, os, sys
+sys.path.insert(0, os.path.join(os.getcwd(), "tools"))
+from install_hooks import diffs
+print("@@HOOKS@@" + json.dumps(diffs(), ensure_ascii=False))
+"""
+
+
 def hooks_ok():
-    """A-7: 導入済みフックが正本と一致しているか。"""
-    sys.path.insert(0, os.path.join(ROOT, "tools"))
-    try:
-        from install_hooks import diffs
-    except Exception as e:
-        print("[停止] tools/install_hooks.py を読めない(%s)。フックの正しさを確認できない。" % e)
+    """A-7: 導入済みフックが正本と一致しているか。
+
+    L-3 / Q-2(2026-08-13 第4回レッドチーム、2体が独立に指摘):
+    ここは素の `from install_hooks import diffs` だった。
+    `tools/__pycache__/` は gitignore されていて、しかも gate_source_clean が
+    明示的に飛ばしていたので、ソースの mtime/size に合わせた偽の .pyc を置くだけで
+    `diffs()` が空を返した。`.git/hooks/pre-commit` を `exit 0` に骨抜きにしても
+    「HIGH 0件」と表示され、git status も空。
+    **報告に貼れと言っている出力そのものが偽造できた。**
+    marks() は -B にしてあったのに、ここと監査側が取り残されていた。
+    """
+    r = run([sys.executable, "-B", "-c", HOOKDIFF_SRC])
+    bad = None
+    for line in (r.stdout or "").split("\n"):
+        if line.startswith("@@HOOKS@@"):
+            bad = json.loads(line[len("@@HOOKS@@"):])
+    if bad is None:
+        print("[停止] フックの一致を確認できない。")
+        print((r.stdout or "")[-400:])
+        print((r.stderr or "")[-400:])
         return False
-    bad = diffs()
     if bad:
         print("=" * 62)
         print("[停止] 導入済みフックが正本(tools/hooks/)と食い違っている")
@@ -336,6 +365,17 @@ def check_push():
                         base_ref = mb or cand
                         break
             now, now_rv = marks(tmp)
+            # Q-3(2026-08-13 第4回): commit側には「解析に失敗したら止める」があるのに、
+            # push側は None を空集合に落として黙って通していた。
+            # データファイルを1箇所いじって読めなくするだけで、
+            # --no-verify で入れた赤丸が最後の関所を通り抜けた。
+            if now is None:
+                ng = True
+                print()
+                print("=" * 62)
+                print("[停止] push しようとしている中身から検証マークを読めない")
+                print("=" * 62)
+                print("データ配列が評価できない状態。赤丸・黄丸の増分を確かめられないので通さない。")
             before = before_rv = None
             if base_ref and export_tree(base_ref, old, require=False):
                 before, before_rv = marks(old)
@@ -686,4 +726,8 @@ def main():
     return 1 if ng else 0
 
 
-sys.exit(main())
+
+# Q-6(2026-08-13 第4回レッドチーム): モジュール末尾で走らせていたので、
+# import した瞬間に走って SystemExit していた。テストや別のツールから読めるようにする。
+if __name__ == "__main__":
+    sys.exit(main())

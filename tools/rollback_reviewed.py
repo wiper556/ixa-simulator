@@ -110,7 +110,13 @@ FLOOR = "docs/rollback-floor.txt"
 
 
 def floor_ref():
-    """これより新しい起点は選べない、という下限。
+    """これより新しい起点は選べない、という下限。**HEADの中身から読む。**
+
+    Q-4 / P-3(2026-08-13 第4回レッドチーム): 以前は作業ツリーのファイルを読んでいた。
+    しかも `gate_source_clean()` の監視対象に `docs/` が入っていなかったので、
+    **未ステージで書き換え → 実行 → 元に戻す** で痕跡ゼロで下限を動かせた。
+    さらに単独コミットにすればW-13にも引っかからなかった。
+    コミットされた内容から読むことで、少なくとも履歴に残る形でしか動かせなくする。
 
     E-10(2026-08-12 第2回レッドチーム指摘): 起点を指定するのは巻き戻す本人なので、
     `--since HEAD` と書けば対象0件にできた(実証済み)。「迷ったら古いほうを取る」は
@@ -119,10 +125,11 @@ def floor_ref():
     `docs/rollback-floor.txt` にユーザーが最後に確認した時点のコミットを書いておき、
     それより新しい起点を拒否する。この下限を動かせるのはユーザーの確認があったときだけ。
     """
-    p = os.path.join(ROOT, FLOOR)
-    if not os.path.exists(p):
+    r = git("show", "HEAD:" + FLOOR)
+    text = r.stdout if r.returncode == 0 else ""
+    if not text:
         return None
-    for line in io.open(p, encoding="utf-8"):
+    for line in text.split("\n"):
         line = line.strip()
         if line and not line.startswith("#"):
             return line.split()[0]

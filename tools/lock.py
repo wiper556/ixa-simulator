@@ -38,11 +38,29 @@ PATH = os.path.join(ROOT, "tools", "checks.lock")
 REASON = os.path.join(ROOT, "tools", "lock_reason.txt")
 
 # 消えたら困るファイル。中身のハッシュまで見るもの(門番そのもの)は HASHED に置く。
+#
+# 2026-08-13 第4回レッドチーム: HASHED がフック4本だけだったため、
+#  P-1 CIの各ステップに `|| true` を足す → 全部緑のまま無言化
+#  P-4/M-2 settings.json の PreToolUse を PostToolUse に改名 → T-01が死ぬが指摘0件
+#  P-3 rollback-floor.txt を単独コミットで自分の足元まで進める
+#  J-2b checks.lock 自体を手で1行消す
+#  K-3/M-1 precommit_check.py / audit_characters.py を書き換えて固有の門番を消す
+#  Q-5 RULE-OPERATION.md の区分表を書き換えて全部を軽にする
+# がいずれも通った。「門を動かすもの」は中身ごと固定する。
 HASHED = ("tools/hooks/pre-commit", "tools/hooks/pre-merge-commit",
-          "tools/hooks/pre-push", "tools/hooks/no_heredoc_backslash.py")
-PRESENT = (".github/workflows/rules.yml", ".claude/settings.json",
-           "docs/rollback-floor.txt", "docs/RULES.md", "docs/RULE-OPERATION.md",
-           "docs/RULE-VIOLATIONS.md", "tools/audit_baseline.json")
+          "tools/hooks/pre-push", "tools/hooks/no_heredoc_backslash.py",
+          "tools/precommit_check.py", "tools/audit_characters.py",
+          "tools/rules.py", "tools/lock.py", "tools/audit_selftest.py",
+          "tools/check_js.py", "tools/check_generated.py", "tools/install_hooks.py",
+          "tools/reslog.py", "tools/rollback_reviewed.py",
+          ".github/workflows/rules.yml", ".claude/settings.json",
+          "docs/rollback-floor.txt", "docs/RULE-OPERATION.md",
+          "tools/selftest_uncovered.txt")
+# N-3(第4回): 縮小の記録 lock_reason.txt はどこにも守られておらず、
+# 消しても誰も気づかなかった。必須ファイルに入れる。
+PRESENT = ("docs/RULES.md", "docs/RULE-VIOLATIONS.md",
+           "tools/audit_baseline.json", "tools/audit_baseline_reason.txt",
+           "tools/lock_reason.txt", "tools/gate_selftest.py")
 ARRAYS = {"characters.html": "generals", "characters-kyoku.html": "kyokuGenerals",
           "characters-ketsu.html": "ketsuGenerals"}
 
@@ -59,6 +77,43 @@ def _sha(text):
     return hashlib.sha256(text.replace("\r\n", "\n").encode("utf-8")).hexdigest()[:16]
 
 
+def check_names():
+    """監査が出しうるチェック種別。**構文木から**集める。
+
+    J-1 / M-1補(2026-08-13 第4回レッドチーム): ここは
+    `add\\("([^"]+)"` という**テキストの正規表現**だった。
+    そのためチェック本体を消して名前だけコメントに残せば「消えていない」ことになり、
+    未カバーの24種別(S-03/S-04/S-05という対の関係の中核を含む)が
+    門番もCIも緑のまま完全に無検査にできた。
+    コメントも文字列リテラルも構文木には呼び出しとして現れないので、AST で数える。
+    """
+    import ast
+    out = set()
+    for rel, fn, argi in (("tools/audit_characters.py", "add", 0),
+                          ("tools/rules.py", "append", 0)):
+        src = _read(rel)
+        if not src:
+            continue
+        try:
+            tree = ast.parse(src)
+        except SyntaxError:
+            continue
+        for node in ast.walk(tree):
+            if not isinstance(node, ast.Call) or not node.args:
+                continue
+            name = getattr(node.func, "id", None) or getattr(node.func, "attr", None)
+            if name != fn:
+                continue
+            a = node.args[argi]
+            # rules.py は out.append(("種別", ...)) の形
+            if isinstance(a, ast.Tuple) and a.elts:
+                a = a.elts[0]
+            if isinstance(a, ast.Constant) and isinstance(a.value, str):
+                if "%s" not in a.value:
+                    out.add(a.value)
+    return out
+
+
 def current():
     """今のリポジトリから「あるはずのもの」を集める。"""
     sys.path.insert(0, os.path.join(ROOT, "tools"))
@@ -67,10 +122,7 @@ def current():
     R.RULES = os.path.join(ROOT, "docs", "RULES.md")
     R.VIOL = os.path.join(ROOT, "docs", "RULE-VIOLATIONS.md")
 
-    # 監査が出しうるチェック種別(実装から集める)
-    a = _read("tools/audit_characters.py") or ""
-    cats = {x for x in re.findall(r'(?<![\w.])add\("([^"]+)"', a) if "%s" not in x}
-    cats |= set(re.findall(r'out\.append\(\("([^"]+)"', _read("tools/rules.py") or ""))
+    cats = check_names()
 
     # 武将の件数(母集団。減る方向を無条件で通さないため)
     counts = {}
@@ -185,11 +237,27 @@ def update(reason):
         for f, h in lock["hooks"].items():
             if cur["hooks"].get(f) != h:
                 shrink.append("hooks:" + f)
-    if shrink and not reason:
-        print("錠前を縮める変更が %d件ある。--reason \"なぜ減らすのか\" が要る。" % len(shrink))
-        for x in shrink[:20]:
-            print("  - " + x)
-        return 1
+    # N-2 / J-2a(2026-08-13 第4回レッドチーム):
+    # --accept 側には「理由10文字以上」と禁止領域があるのに、
+    # 錠前を縮める入口には非空文字列1個で通る穴が残っていた。
+    # 錠前は違反ログ・チェック種別・ルールID・母集団を守る最後の砦なので、同じ検査を入れる。
+    if shrink:
+        if not reason or len(reason.strip()) < 10:
+            print("錠前を縮める変更が %d件ある。--reason \"なぜ減らすのか\"(10文字以上)が要る。"
+                  % len(shrink))
+            for x in shrink[:20]:
+                print("  - " + x)
+            return 1
+        # 違反ログの行を消す・門番の中身を変えるのは、理由だけでは通さない。
+        heavy = [x for x in shrink if x.startswith(("violations:", "hooks:"))]
+        if heavy and "--i-know" not in sys.argv:
+            print("[停止] 理由だけでは縮められないものが %d件ある:" % len(heavy))
+            for x in heavy[:10]:
+                print("  - " + x)
+            print()
+            print("違反ログの行と門番の中身は、消した記録そのもの/検査そのもの。")
+            print("本当に必要なら --i-know を付ける(コミットメッセージにも書くこと)。")
+            return 1
     with io.open(PATH, "w", encoding="utf-8", newline="\n") as f:
         json.dump(cur, f, ensure_ascii=False, indent=1, sort_keys=True)
     if shrink:

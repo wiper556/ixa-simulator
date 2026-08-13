@@ -33,51 +33,84 @@ ONLINE = "--online" in sys.argv
 
 
 # ---------------- データ抽出 ----------------
+# ページのJSはブラウザ前提なので、評価するための最小限の受け皿。
+# 触られても落ちないように、何を呼んでも自分を返すだけの物を渡す。
+_JS_STUB = """
+var __noop = function(){ return __stub; };
+var __stub = new Proxy(function(){}, {
+  get: function(t, k){ if (k === Symbol.toPrimitive) return function(){ return ""; };
+                       return __stub; },
+  set: function(){ return true; },
+  apply: function(){ return __stub; },
+  construct: function(){ return __stub; }
+});
+var document = __stub, window = __stub, navigator = __stub, location = __stub;
+var localStorage = __stub, sessionStorage = __stub, fetch = __noop, console = __stub;
+var setTimeout = __noop, setInterval = __noop, requestAnimationFrame = __noop;
+var addEventListener = __noop, alert = __noop, history = __stub, screen = __stub;
+"""
+
+
 def extract_array(path, varname):
-    """HTML内のJS配列を quickjs で実際に評価して取り出す(正規表現パースより確実)"""
+    """HTML内のJS配列を、**そのページを実行したときの値**として取り出す。
+
+    N-1(2026-08-13 第4回レッドチーム): 以前は `const generals = [ … ]` の
+    **リテラル部分だけ**を切り出して評価していた。ページが実際に描画に使うのは
+    変数の実行時の値なので、リテラルの後ろに1行足すだけで両者を食い違わせられた。
+
+        ];
+        generals.forEach(function(g){ if (g.no === '1310') { g.approved = true; } });
+
+    これで監査からは「130体・赤丸118」に見えるのに、ページ上は「131体・赤丸120」。
+    データを見る検査(赤丸の増分・錠前の母集団・rules)は全部この関数を通っているので、
+    一箇所で全部同時に盲目になった。「赤丸はユーザーが明言したときだけ」も1行で迂回された。
+
+    そこで、宣言を含む script を**丸ごと評価してから**変数を読む。
+    後から書き換えられていれば、その結果が取れる。
+    """
     from quickjs import Context
     with io.open(path, encoding="utf-8") as f:
         html = f.read()
-    for s in re.findall(r"<script>([\s\S]*?)</script>", html):
-        # H-6(2026-08-13 第3回レッドチーム): コメントを剥がしていなかったので、
-        #   // 旧データ: const ketsuGenerals = []
-        # という行を先頭のscriptに1つ置くだけで、監査が空配列を掴んだ。
-        # load() が例外を握りつぶすため警告すら出ず、commit も push も通った。
-        # 宣言を探すときだけコメントを消した文字列で位置を決める(本体は元の s から取る)。
+
+    blocks = [m.group(2) for m in
+              re.finditer(r"<script([^>]*)>([\s\S]*?)</script>", html)
+              if "src=" not in m.group(1)
+              and "json" not in (m.group(1) or "").lower()]
+
+    # 宣言を探すときはコメントを消した文字列で位置を決める(H-6)。
+    decl = re.compile(r"(?:const|let|var)\s+" + re.escape(varname) + r"\s*=")
+    target, at = None, None
+    for i, s in enumerate(blocks):
         masked = re.sub(r"/\*[\s\S]*?\*/", lambda x: " " * len(x.group(0)), s)
         masked = re.sub(r"(?m)//[^\n]*", lambda x: " " * len(x.group(0)), masked)
-        m = re.search(r"(?:const|let|var)\s+" + re.escape(varname) + r"\s*=\s*", masked)
-        if not m:
+        m = decl.search(masked)
+        if m:
+            target, at = i, m.span()
+            break
+    if target is None:
+        raise RuntimeError(varname + " not found in " + path)
+
+    # 宣言を globalThis への代入に書き換える。こうしておけば、
+    # そのブロックの後半(描画処理など)が落ちても、代入済みの値は残る。
+    # ページのJSはブラウザ前提なので途中で落ちるのが普通(別ファイルの関数を呼ぶ等)。
+    src = blocks[target]
+    src = src[:at[0]] + ("globalThis.%s =" % varname) + src[at[1]:]
+
+    ctx = Context()
+    ctx.eval(_JS_STUB)
+    for s in blocks[:target] + [src]:
+        try:
+            ctx.eval(s)
+        except Exception:
+            # 落ちた後ろに書いてある改変は拾えないが、それは check_js が別途見る。
             continue
-        start = m.end()
-        opener = s[start]
-        closer = {"[": "]", "{": "}"}[opener]
-        depth, i, in_str, ch_q, in_cmt = 0, start, False, "", False
-        while i < len(s):
-            c = s[i]
-            if in_cmt:
-                if c == "\n":
-                    in_cmt = False
-            elif in_str:
-                if c == "\\":
-                    i += 2
-                    continue
-                if c == ch_q:
-                    in_str = False
-            elif c in "\"'":
-                in_str, ch_q = True, c
-            elif c == "/" and i + 1 < len(s) and s[i + 1] == "/":
-                in_cmt = True
-                i += 1
-            elif c == opener:
-                depth += 1
-            elif c == closer:
-                depth -= 1
-                if depth == 0:
-                    break
-            i += 1
-        return json.loads(Context().eval("JSON.stringify(" + s[start:i + 1] + ")"))
-    raise RuntimeError(varname + " not found in " + path)
+    try:
+        out = ctx.eval("JSON.stringify(globalThis.%s)" % varname)
+    except Exception as e:
+        raise RuntimeError("%s の評価に失敗(%s): %s" % (varname, path, e))
+    if not out or out == "undefined":
+        raise RuntimeError("%s が評価後に取れない: %s" % (varname, path))
+    return json.loads(out)
 
 
 def load():
@@ -191,7 +224,20 @@ def main():
     chars = [(g, "天覇") for g in D["generals"]] + [(g, "極") for g in D["kyokuGenerals"]]
     targets = [(g, s) for g, s in chars if status(g) != "無印"]
     R = []
-    add = lambda cat, sev, msg: R.append((cat, sev, msg))
+    # M-1(2026-08-13 第4回レッドチーム): ここは1行のラムダで、
+    # 錠前はチェック名の文字列しか数えず、自己テストは固定の注入点でしか鳴らさない。
+    # そこで「登録作業中の武将は対象外」に見える1行を足すだけで、
+    # 特定武将の指摘を全種別まとめて握り潰せた(門番もCIも緑、出力も正常時と同一)。
+    #
+    # J-1(第4回): さらに、錠前が種別を集めるのは `add("名前"` という**テキスト**なので、
+    # チェック本体を消して名前をコメントに残せば「消えていない」ことになった。
+    #
+    # 対処は2つに分けた。
+    #  J-1 → 錠前と自己テストの種別収集を AST にする(コメントは構文木に出ない)
+    #  M-1 → audit_characters.py 自身を錠前のハッシュ対象に入れる(配り口の改変が分かる)
+    # ここは素直な関数のままにしておく。
+    def add(cat, sev, msg):
+        R.append((cat, sev, msg))
 
     for n, c in collections.Counter([s["name"] for s in D["skills"]]).items():
         if c > 1:
@@ -551,12 +597,29 @@ def main():
     # precommit_check は取り出した一時ツリーで監査を回すので、そこでは .git が無い。
     # 本物のリポジトリで走ったときだけ見る(本物では毎回見るので抜け道にはならない)。
     if os.path.exists(os.path.join(ROOT, ".git")):
+        # L-3 / Q-2(第4回): 素の import だと tools/__pycache__ に偽の .pyc を置くだけで
+        # diffs() が空を返した(gitignore されていて git status にも出ない)。
+        # バイトコードを使わない別プロセスで実行する。
         try:
-            sys.path.insert(0, os.path.join(ROOT, "tools"))
-            from install_hooks import diffs as _hook_diffs
-            for h, why in _hook_diffs():
+            import subprocess as _sp
+            _r = _sp.run([sys.executable, "-B", "-c",
+                          "import json,os,sys;"
+                          "sys.path.insert(0, os.path.join(os.getcwd(),'tools'));"
+                          "from install_hooks import diffs;"
+                          "print('@@H@@'+json.dumps(diffs(), ensure_ascii=False))"],
+                         cwd=ROOT, capture_output=True, text=True,
+                         encoding="utf-8", errors="replace")
+            got = None
+            for line in (_r.stdout or "").split("\n"):
+                if line.startswith("@@H@@"):
+                    got = json.loads(line[5:])
+            if got is None:
                 add("フックが正本と違う", "HIGH",
-                    "%s: %s(python tools/install_hooks.py で入れ直す)" % (h, why))
+                    "フックの確認自体ができない: %s" % ((_r.stderr or "")[-200:]))
+            else:
+                for h, why in got:
+                    add("フックが正本と違う", "HIGH",
+                        "%s: %s(python tools/install_hooks.py で入れ直す)" % (h, why))
         except Exception as e:
             add("フックが正本と違う", "HIGH", "フックの確認自体ができない: %s" % e)
 

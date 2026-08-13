@@ -138,3 +138,9 @@ jobs:
 
       - name: 監査の自己テスト(チェックが本当に鳴るか)
         run: python tools/audit_selftest.py
+
+      - name: 門番の自己テスト(precommit固有の停止条件が本当に止めるか)
+        # precommit_check.py はCIでは実行されないので、そこにしか無い停止条件
+        # (W-13 / P-03 / 生成物の手編集 / ベースライン理由 / 道具の未ステージ改変)は
+        # 検査の外にあった(第4回 K-3 / M-4 / L-1)。
+        run: python tools/gate_selftest.py

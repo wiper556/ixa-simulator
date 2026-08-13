@@ -131,9 +131,67 @@ def selftest_covered():
     「自己承認」が3回目になったので(2026-08-13 I-01)、instanceではなくパターンを塞ぐ。
     3回とも形は同じ: **チェックを足したと書いたが、それが鳴ることを確かめていない。**
     種別が実在するかだけでなく、**鳴ることを示す注入ケースがあるか**まで見る。
+
+    L-2 / M-5(2026-08-13 第4回レッドチーム): ここは
+    `^\\s{4}\\("([^"]+)",` という**テキストの正規表現**だった。
+    走らないリストや docstring に4スペース字下げで1行足すだけで
+    「注入ケースがある」ことにでき、しかも自己テストの未カバー件数も動かなかった。
+    実際に CASES / EVASIONS に入っているものだけを構文木から取る。
     """
+    import ast
     src = _read(os.path.join(ROOT, "tools", "audit_selftest.py"))
-    return set(re.findall(r'^\s{4}\("([^"]+)",', src, re.M))
+    if not src:
+        return set()
+    try:
+        tree = ast.parse(src)
+    except SyntaxError:
+        return set()
+    out = set()
+    for node in tree.body:
+        if not isinstance(node, ast.Assign):
+            continue
+        names = [t.id for t in node.targets if isinstance(t, ast.Name)]
+        if not ({"CASES", "EVASIONS"} & set(names)):
+            continue
+        if not isinstance(node.value, ast.List):
+            continue
+        for el in node.value.elts:
+            # ("種別", ...) と ("種別", ファイル) + v_set(...) の両方の形がある
+            first = None
+            if isinstance(el, ast.Tuple) and el.elts:
+                first = el.elts[0]
+            elif isinstance(el, ast.BinOp) and isinstance(el.left, ast.Tuple) \
+                    and el.left.elts:
+                first = el.left.elts[0]
+            if isinstance(first, ast.Constant) and isinstance(first.value, str):
+                out.add(first.value)
+    return out
+
+
+def gate_rule_ids():
+    """門番の自己テスト(gate_selftest.py)に筋書きがあるルールID。
+
+    L-1(第4回)対応。`足した(pre-commit)` のような門番名を認めるのは、
+    その門番がそのルールで実際に止まることを示す筋書きがあるときだけ。
+    """
+    import ast
+    src = _read(os.path.join(ROOT, "tools", "gate_selftest.py"))
+    if not src:
+        return set()
+    try:
+        tree = ast.parse(src)
+    except SyntaxError:
+        return set()
+    for node in tree.body:
+        if isinstance(node, ast.Assign) and any(
+                getattr(t, "id", None) == "CASES" for t in node.targets):
+            out = set()
+            for el in getattr(node.value, "elts", []):
+                if isinstance(el, ast.Tuple) and el.elts \
+                        and isinstance(el.elts[0], ast.Constant):
+                    out.add(el.elts[0].value)
+            return out
+    return set()
 
 
 def known_checks():
@@ -187,19 +245,47 @@ def problems():
     # G-9/H-9/F-8(第3回): 門番を起動する設定そのものが、どの検査の対象でもなかった。
     # `.claude/settings.json` の hooks を消す、CIのトリガを1行変える、
     # ワークフローを消す、のどれも指摘0件で通った。中身を見る。
-    st = _read(os.path.join(ROOT, ".claude", "settings.json"))
+    # P-4 / M-2(2026-08-13 第4回): ここは部分文字列しか見ていなかったので、
+    # `PreToolUse` を `PostToolUse` に**改名するだけ**でT-01フックが死ぬのに指摘0件だった
+    # (PostToolUseはツール実行後なので deny に意味が無い)。JSONとして構造で見る。
+    stp = os.path.join(ROOT, ".claude", "settings.json")
+    st = _read(stp)
     if not st:
         out.append(("PreToolUseの設定が無い", "HIGH",
                     ".claude/settings.json が読めない。T-01を止めるフックの登録先"))
-    elif "no_heredoc_backslash.py" not in st:
-        out.append(("PreToolUseの配線が消えた", "HIGH",
-                    ".claude/settings.json に no_heredoc_backslash.py の登録が無い。"
-                    "T-01(ヒアドキュメントのバックスラッシュ)を止めるフックが外れている"))
-    elif "PowerShell" not in st:
-        out.append(("PreToolUseがBashだけ", "MID",
-                    "matcher に PowerShell が入っていない。ツールを変えるだけで"
-                    "T-01フックを素通りできる(第3回 F-9/G-12/I-11)"))
+    else:
+        try:
+            import json as _json
+            cfg = _json.loads(st)
+        except Exception as e:
+            cfg = None
+            out.append(("PreToolUseの設定が壊れている", "HIGH",
+                        ".claude/settings.json をJSONとして読めない: %s" % e))
+        if cfg is not None:
+            groups = (cfg.get("hooks") or {}).get("PreToolUse") or []
+            wired = [(g.get("matcher") or "", h)
+                     for g in groups for h in (g.get("hooks") or [])
+                     if "no_heredoc_backslash.py" in (h.get("command") or "")]
+            if not wired:
+                out.append(("PreToolUseの配線が消えた", "HIGH",
+                            ".claude/settings.json の hooks.PreToolUse に "
+                            "no_heredoc_backslash.py の登録が無い。"
+                            "T-01を止めるフックが外れている"
+                            "(PostToolUse等へ改名されていないかも見る)"))
+            else:
+                mats = " ".join(m for m, _h in wired)
+                if "Bash" not in mats:
+                    out.append(("PreToolUseがBashを見ていない", "HIGH",
+                                "matcher が %r で Bash を含まない" % mats))
+                elif "PowerShell" not in mats:
+                    out.append(("PreToolUseがBashだけ", "MID",
+                                "matcher に PowerShell が入っていない。ツールを変えるだけで"
+                                "T-01フックを素通りできる(第3回 F-9/G-12/I-11)"))
 
+    # P-1(2026-08-13 第4回): ここも部分文字列だったので、各ステップに `|| true` を
+    # 足すだけでCIが全部緑のまま無言化できた(文字列は壊れず continue-on-error でもない)。
+    # しかも自己テストの「CIを赤でも通るようにする」という回避ケース自体が回避された。
+    # 実行される run の中身を1行ずつ見る。
     wf = _read(os.path.join(ROOT, ".github", "workflows", "rules.yml"))
     if not wf:
         out.append(("CIのワークフローが無い", "HIGH",
@@ -210,7 +296,9 @@ def problems():
                           ("audit_characters.py", "監査"),
                           ("tools/rules.py", "索引と違反ログの整合"),
                           ("check_js.py", "ページのJS構文"),
+                          ("check_generated.py", "生成物とデータの一致"),
                           ("audit_selftest.py", "監査の自己テスト"),
+                          ("gate_selftest.py", "門番の自己テスト"),
                           ("tools/lock.py", "錠前")):
             if need not in wf:
                 out.append(("CIの検査が抜けている", "HIGH",
@@ -218,6 +306,18 @@ def problems():
         if "continue-on-error" in wf:
             out.append(("CIが失敗しても止まらない", "HIGH",
                         "rules.yml に continue-on-error がある。赤でも通ってしまう"))
+        # 失敗を握り潰す書き方を、行単位で拾う
+        for i, line in enumerate(wf.split("\n"), 1):
+            if "python tools/" not in line:
+                continue
+            for bad in ("|| true", "|| :", "|| exit 0", "; true", "set +e"):
+                if bad in line:
+                    out.append(("CIが失敗しても止まらない", "HIGH",
+                                "rules.yml %d行目に「%s」がある: %s"
+                                % (i, bad, line.strip()[:80])))
+            if re.search(r"^\s*if\s*:\s*(false|\$\{\{\s*false)", line):
+                out.append(("CIが失敗しても止まらない", "HIGH",
+                            "rules.yml %d行目のステップが常にスキップされる" % i))
 
     all_rows = violations()
     if not all_rows and os.path.exists(VIOL):
@@ -276,6 +376,20 @@ def problems():
                 # 種別が実在しても、鳴ることを確かめていなければ「足した」とは言えない。
                 # 実際 I-01 は、種別も文言もあるのに配線が無く、検査は常に空だった。
                 cov = selftest_covered()
+                # L-1(2026-08-13 第4回レッドチーム): 門番名(pre-commit / lock 等)は
+                # 実在照合も自己テスト要求も素通りする**フリーパス**になっていた。
+                # 「足した(pre-commit)」の12文字で、いちばん重い2回目=作業停止が消えた。
+                # pre-commit がそのルールを本当に見ているかは誰も検査していない。
+                # 門番名を書くときは、それが何を止めるのかの説明を併記させる。
+                bare_tool = [x for x in named if x in TOOL_NAMES]
+                if bare_tool and len(named) == len(bare_tool) \
+                        and r["id"] not in gate_rule_ids():
+                    out.append(("門番名だけで済ませている", "HIGH",
+                                "%s %s: 「%s」だけでは、その門番がこのルールを"
+                                "本当に見ているか誰も確かめられない。"
+                                "tools/gate_selftest.py に %s の筋書きを足して"
+                                "止まることを示すか、監査の種別名を併記する"
+                                % (r["date"], r["id"], "/".join(bare_tool), r["id"])))
                 audit_cats = {x for x in named if x in checks and x not in TOOL_NAMES}
                 unproven = sorted(audit_cats - cov)
                 if unproven:
