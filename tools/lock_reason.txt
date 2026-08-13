@@ -1,3 +1,4 @@
 2026-08-13	-4	present:.github/workflows/rules.yml,present:docs/RULE-OPERATION.md,present:.claude/settings.json,present:docs/rollback-floor.txt	第4回レッドチーム対応。存在確認だけだった rules.yml / settings.json / RULE-OPERATION.md / rollback-floor.txt を、中身のハッシュを取る HASHED へ移した(保護は強くなっている)
 2026-08-13	-6	hooks:.github/workflows/rules.yml,hooks:tools/audit_selftest.py,hooks:tools/lock.py,hooks:tools/precommit_check.py,hooks:tools/rollback_reviewed.py,hooks:tools/rules.py	第4回レッドチーム23件の対応で監査・門番・錠前・自己テストを改修したため、HASHEDの内容を今の状態に更新する(門番の中身の変更を含む)
 2026-08-13	-1	hooks:tools/audit_selftest.py	自己テストに注入ケースを1件追加(PreToolUseの設定が壊れている)
+2026-08-13	-5	hooks:.claude/settings.json,hooks:.github/workflows/rules.yml,hooks:tools/audit_selftest.py,hooks:tools/lock.py,hooks:tools/rules.py	P-2対応。ブランチ保護を外す操作を止めるフックと、保護設定の期待値ファイルを追加した

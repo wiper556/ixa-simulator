@@ -18,6 +18,12 @@
             "command": "python \"$CLAUDE_PROJECT_DIR/tools/hooks/no_heredoc_backslash.py\"",
             "timeout": 15,
             "statusMessage": "T-01(ヒアドキュメントのバックスラッシュ)を確認中"
+          },
+          {
+            "type": "command",
+            "command": "python \"$CLAUDE_PROJECT_DIR/tools/hooks/no_protection_bypass.py\"",
+            "timeout": 15,
+            "statusMessage": "門番やブランチ保護を外す操作でないかを確認中"
           }
         ]
       }

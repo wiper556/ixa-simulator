@@ -1,0 +1,11 @@
+{
+  "_why": "P-2(2026-08-13 第4回レッドチーム): gh api は許可済みなので、ブランチ保護を確認なしで外せた。外す→push→戻す、で痕跡がリポジトリに残らない。ここに期待値を置き、CIが実物と突き合わせる。このファイルは tools/checks.lock の HASHED に入っているので、期待値を書き換えれば錠前が鳴る。",
+  "_branch": "master",
+  "allow_deletions": false,
+  "allow_force_pushes": false,
+  "enforce_admins": true,
+  "required_status_checks": {
+    "contexts": ["check"],
+    "strict": true
+  }
+}

@@ -263,6 +263,14 @@ def problems():
                         ".claude/settings.json をJSONとして読めない: %s" % e))
         if cfg is not None:
             groups = (cfg.get("hooks") or {}).get("PreToolUse") or []
+            # P-2(第4回): 門番やブランチ保護を外す操作を止めるフックも同様に配線を見る。
+            if not any("no_protection_bypass.py" in (h.get("command") or "")
+                       for g in groups for h in (g.get("hooks") or [])):
+                out.append(("保護を外す操作の見張りが消えた", "HIGH",
+                            ".claude/settings.json の hooks.PreToolUse に "
+                            "no_protection_bypass.py の登録が無い。"
+                            "ブランチ保護の削除・core.hooksPath の付け替え・"
+                            "--no-verify を止めるフックが外れている"))
             wired = [(g.get("matcher") or "", h)
                      for g in groups for h in (g.get("hooks") or [])
                      if "no_heredoc_backslash.py" in (h.get("command") or "")]

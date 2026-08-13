@@ -98,8 +98,14 @@ def _t01(repo):
     raise NotImplementedError
 
 
+def _p02hook(repo):
+    """P-2のフックが、保護やフックを外すコマンドを拒否するか(下の main で特別扱い)。"""
+    raise NotImplementedError
+
+
 CASES = [
     ("T-01", "ヒアドキュメントのバックスラッシュを拒否する", _t01, True),
+    ("P-02h", "ブランチ保護やフックを外すコマンドを拒否する", _p02hook, True),
     ("W-13", "ルール文書と作業を同じコミットに混ぜる", _w13, True),
     ("P-03", "シミュレーターを変えてバージョンを上げない", _p03, True),
     ("P-02", "生成物だけを手で書き換える", _genonly, True),
@@ -141,6 +147,19 @@ def main():
             continue
         sh(["git", "reset", "-q", "--hard", "HEAD"], repo)
         sh(["git", "clean", "-qfd"], repo)
+        if rid == "P-02h":
+            import json as _json
+            r = sh([sys.executable, "tools/hooks/no_protection_bypass.py"], repo,
+                   inp=_json.dumps({"tool_input": {"command":
+                                    "gh api -X DELETE repos/x/y/branches/master/protection"}}))
+            deny = '"deny"' in (r.stdout or "")
+            ok = deny == should_block
+            print("  %s %-8s %-34s %s"
+                  % ("OK  " if ok else "NG  ", rid, desc,
+                     "拒否した" if deny else "通した"))
+            if not ok:
+                ng += 1
+            continue
         if rid == "T-01":
             # PreToolUse フックは git の外側なので、スクリプトを直接叩いて判定を見る
             import json as _json

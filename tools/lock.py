@@ -49,6 +49,7 @@ REASON = os.path.join(ROOT, "tools", "lock_reason.txt")
 # がいずれも通った。「門を動かすもの」は中身ごと固定する。
 HASHED = ("tools/hooks/pre-commit", "tools/hooks/pre-merge-commit",
           "tools/hooks/pre-push", "tools/hooks/no_heredoc_backslash.py",
+          "tools/hooks/no_protection_bypass.py", "docs/branch-protection.json",
           "tools/precommit_check.py", "tools/audit_characters.py",
           "tools/rules.py", "tools/lock.py", "tools/audit_selftest.py",
           "tools/check_js.py", "tools/check_generated.py", "tools/install_hooks.py",

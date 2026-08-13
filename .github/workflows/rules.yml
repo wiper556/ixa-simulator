@@ -139,6 +139,51 @@ jobs:
       - name: 監査の自己テスト(チェックが本当に鳴るか)
         run: python tools/audit_selftest.py
 
+      - name: ブランチ保護が外されていないか
+        # P-2(第4回): gh api は許可済みなので保護を確認なしで外せた。
+        # 外した痕跡はリポジトリに残らないので、期待値と実物を突き合わせる。
+        # 権限が無くて読めないときは落とさない(その旨を出す)。
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python - <<'PY'
+          import json, os, subprocess, sys
+          want = json.load(open("docs/branch-protection.json", encoding="utf-8"))
+          repo = os.environ.get("GITHUB_REPOSITORY", "")
+          r = subprocess.run(
+              ["gh", "api", "repos/%s/branches/master/protection" % repo],
+              capture_output=True, text=True)
+          if r.returncode != 0:
+              print("保護設定を読めない(権限不足の可能性)。ここでは落とさない。")
+              print((r.stderr or "")[-300:])
+              sys.exit(0)
+          got = json.loads(r.stdout)
+          def dig(d, *ks):
+              for k in ks:
+                  d = (d or {}).get(k)
+              return d
+          bad = []
+          if dig(got, "enforce_admins", "enabled") != want["enforce_admins"]:
+              bad.append("enforce_admins")
+          if dig(got, "allow_force_pushes", "enabled") != want["allow_force_pushes"]:
+              bad.append("allow_force_pushes")
+          if dig(got, "allow_deletions", "enabled") != want["allow_deletions"]:
+              bad.append("allow_deletions")
+          rsc = got.get("required_status_checks") or {}
+          if rsc.get("strict") != want["required_status_checks"]["strict"]:
+              bad.append("required_status_checks.strict")
+          if sorted(rsc.get("contexts") or []) != sorted(
+                  want["required_status_checks"]["contexts"]):
+              bad.append("required_status_checks.contexts")
+          print("保護設定: %s" % json.dumps(
+              {"enforce_admins": dig(got, "enforce_admins", "enabled"),
+               "strict": rsc.get("strict"), "contexts": rsc.get("contexts")},
+              ensure_ascii=False))
+          if bad:
+              print("[停止] docs/branch-protection.json と違う: " + ", ".join(bad))
+          sys.exit(1 if bad else 0)
+          PY
+
       - name: 門番の自己テスト(precommit固有の停止条件が本当に止めるか)
         # precommit_check.py はCIでは実行されないので、そこにしか無い停止条件
         # (W-13 / P-03 / 生成物の手編集 / ベースライン理由 / 道具の未ステージ改変)は
