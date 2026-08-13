@@ -38,8 +38,10 @@ LOG = os.path.join(ROOT, "docs", "redteam-log.txt")
 # 指紋から外すもの。「走らせれば必ず変わる」ものだけ。
 SKIP_DIRS = (".git", "__pycache__", "node_modules", "tools/audit_out",
              ".claude/worktrees", ".claude/sounds", ".pytest_cache")
-# .git の中でも門番の実体だけは見る
-GIT_WATCH = ".git/hooks"
+# .git の中でも、門番の実体と設定は見る。
+# 第6回 BG: `.git/config` が指紋の外だったので、そこに core.hooksPath を書けば
+# 門番を丸ごと外したまま「本物は無傷」と表示できた。
+GIT_WATCH = (".git/hooks", ".git/config", ".git/info")
 # この道具自身の追記記録。指紋を採った直後に START 行を書くので、
 # 含めると必ず自分で自分を「変わった」と判定して回が閉じられなくなる(実地1回目の不具合)。
 # 追跡ファイルなので改竄は git の差分に出るし、開閉の対応は rules.py が見る。
@@ -67,7 +69,8 @@ def _rel(p):
 def _skip(rel):
     if rel in SKIP_FILES:
         return True
-    if rel.startswith(".git/") and not rel.startswith(GIT_WATCH + "/"):
+    if rel.startswith(".git/") and not any(rel == w or rel.startswith(w + "/")
+                                           for w in GIT_WATCH):
         return True
     for s in SKIP_DIRS:
         if s == ".git":
@@ -92,12 +95,60 @@ def fingerprint():
             rel = (rb + "/" + name).lstrip("/")
             if _skip(rel):
                 continue
+            p = os.path.join(base, name)
             try:
-                with open(os.path.join(base, name), "rb") as f:
-                    out[rel] = hashlib.sha256(f.read()).hexdigest()[:16]
+                with open(p, "rb") as f:
+                    h = hashlib.sha256(f.read()).hexdigest()[:16]
+                st = os.stat(p)
+                # 第6回 BD-4: 中身のハッシュだけだと「書き換えて→実行して→戻す」が
+                # 前後2点の比較では見えない。更新時刻と大きさも一緒に採る。
+                # 素朴な復元(内容を戻すだけ)はこれで必ず差分になる。
+                out[rel] = "%s:%d:%d" % (h, st.st_mtime_ns, st.st_size)
             except OSError as e:
                 out[rel] = "読めない: %s" % e
     return out
+
+
+def digest(files):
+    """指紋全体を1つのハッシュにまとめる。追跡ファイルに焼き付けるため。
+
+    第6回 BD-5: 指紋の実体 `~/.claude/redteam/<key>/active.json` はリポジトリの外に
+    あり、錠前もフックもCIも見ていなかった。サンドボックスの python は無条件で
+    走らせられるので、`files` を「今のツリー」で上書きすれば、本物を恒久的に
+    改変したままでも `--end` が「無傷だった」と言った。
+    START のときに全体のダイジェストを**追跡ファイル**(docs/redteam-log.txt)へ書き、
+    --end はそれと突き合わせる。書き換えるには追跡ファイルの過去行を触ることになり、
+    それは append-only の検査(_log_tampered)に引っかかる。
+    """
+    s = "\n".join("%s\t%s" % (k, files[k]) for k in sorted(files))
+    return hashlib.sha256(s.encode("utf-8")).hexdigest()[:16]
+
+
+def _log_tampered():
+    """記録の過去行が書き換えられていないか(追記だけのはず)。"""
+    r = subprocess.run(["git", "show", "HEAD:docs/redteam-log.txt"], cwd=ROOT,
+                       capture_output=True, text=True, encoding="utf-8")
+    if r.returncode:
+        return None                     # まだコミットされていない
+    old = (r.stdout or "").replace("\r\n", "\n")
+    cur = ""
+    if os.path.exists(LOG):
+        cur = io.open(LOG, encoding="utf-8", newline="").read().replace("\r\n", "\n")
+    if not cur.startswith(old):
+        return "docs/redteam-log.txt の過去行が書き換えられている(追記しかしないはず)"
+    return None
+
+
+def started_digest():
+    """記録に残っている、最後の START のダイジェスト。"""
+    if not os.path.exists(LOG):
+        return None
+    last = None
+    for line in io.open(LOG, encoding="utf-8", newline="").read().split("\n"):
+        c = line.split("\t")
+        if c and c[0] == "START" and len(c) >= 7:
+            last = c[6]
+    return last
 
 
 def head():
@@ -167,8 +218,10 @@ def cmd_start(label, sandbox):
         json.dumps({"label": label, "started": now(), "head": head(),
                     "root": ROOT, "sandbox": sandbox, "files": fp},
                    ensure_ascii=False, indent=1))
-    log("START\t%s\t%s\t%s\t%d files\t%s"
-        % (now(), head()[:12], label, len(fp), sandbox))
+    # 7列目に指紋全体のダイジェスト。追跡ファイルに焼き付けて、
+    # リポジトリ外の記録(active.json)を差し替えられても気づけるようにする(BD-5)。
+    log("START\t%s\t%s\t%s\t%d files\t%s\t%s"
+        % (now(), head()[:12], label, len(fp), sandbox, digest(fp)))
     print("レッドチームの回を開いた: %s" % label)
     print("  HEAD      : %s" % head()[:12])
     print("  指紋      : %d ファイル" % len(fp))
@@ -189,6 +242,18 @@ def cmd_check(quiet=False):
     n = len(added) + len(removed) + len(changed)
     if head() != a["head"]:
         print("[違反] HEAD が動いている: %s → %s" % (a["head"][:12], head()[:12]))
+        n += 1
+    # BD-5: リポジトリ外の記録が差し替えられていないか。
+    want = started_digest()
+    if want and digest(a["files"]) != want:
+        print("[違反] 指紋の記録が START のときと違う(%s → %s)。"
+              "リポジトリ外の active.json が差し替えられた疑い"
+              % (want, digest(a["files"])))
+        n += 1
+    # BD-2: 記録そのものの改竄。
+    t = _log_tampered()
+    if t:
+        print("[違反] " + t)
         n += 1
     if n == 0:
         if not quiet:

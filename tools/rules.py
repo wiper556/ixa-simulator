@@ -326,6 +326,20 @@ def _p_redteam(out, ids, n):
     # 記録そのものが消えた場合は錠前の PRESENT が「必須ファイルが消えた」で拾う。
     # ここで別種別を作ると、注入ケースを置けない(消す注入ができない)種別が増える。
     p = os.path.join(ROOT, "docs", "redteam-log.txt")
+    # BD-2(第6回): この記録は錠前の PRESENT(存在するか)だけで、**中身は誰も
+    # 守っていなかった**。_p_redteam の唯一の入力なので、行を消せば HIGH も MID も
+    # 消えた。「ABORT の痕跡は永久に残る」は成立していなかった。
+    # 追記しかしないファイルなので、コミット済みの内容が先頭に残っているかを見る。
+    import subprocess as _sp
+    r = _sp.run(["git", "show", "HEAD:docs/redteam-log.txt"], cwd=ROOT,
+                capture_output=True, text=True, encoding="utf-8")
+    if not r.returncode:
+        cur = _read(p).replace("\r\n", "\n")
+        if not cur.startswith((r.stdout or "").replace("\r\n", "\n")):
+            out.append(("レッドチームの記録が書き換えられた", "HIGH",
+                        "docs/redteam-log.txt は追記だけの記録なのに、"
+                        "コミット済みの過去行が変わっている。"
+                        "回の開閉・中断の履歴を消した疑い(R-02/R-03)"))
     opened, failed = None, []
     aborted = []
     for line in _read(p).split("\n"):
@@ -335,7 +349,11 @@ def _p_redteam(out, ids, n):
         if kind == "START":
             opened = line
         elif kind == "END":
-            opened, failed = None, []
+            # BD-3(第6回): ここで failed も空にしていたので、本物を触って
+            # END-FAILED が出ても、ツリーを戻して**次の回を普通に閉じるだけ**で
+            # 「レッドチームが本物を触った」の HIGH が消えた。記録を触る必要すら
+            # 無かった。END では消さない。消せるのは理由つきの ABORT だけ。
+            opened = None
         elif kind == "ABORT":
             # 出口はあるが、痕跡は永久に残る。監査は毎回これを報せ続ける。
             # 直前に END-FAILED(本物を触った)があったかも一緒に残す。
