@@ -75,21 +75,25 @@ CASES = [
     ("sourceCharactersのdb", "skills.html",
      '{name:"佐渡島方治", no:"2614", slot:"S1", db:"kyoku"}',
      '{name:"佐渡島方治", no:"2614", slot:"S1"}'),
+    # 2026-08-13: 作り替えで配列が生成物になり、コメントが要素の**前**に出るように
+    # なったので、`],\n      // 合成テーブルは…` を目印にしていた3件が全部外れた
+    # (自己テストがその場でskipとして報告し、失敗した)。目印を、コメントに依らない
+    # 「TR6行 → synthesisTable の1行目」に付け替える。百識ノ計は2614だけなので一意。
     ("trTableの段飛び", "characters-kyoku.html",
      '{level:"TR1", points:"10", effect:null},\n        {level:"TR2", points:"40", effect:null},\n'
      '        {level:"TR3", points:"90", effect:null},\n        {level:"TR4", points:"150", effect:null},\n'
      '        {level:"TR5", points:"200", effect:null},\n        {level:"TR6", points:"パラレル", effect:null}\n'
-     '      ],\n      // 合成テーブルはixanaryスキルページ「百識ノ計」',
+     '      ],\n      synthesisTable:[\n        {slot:"A", skill:"百識ノ計"',
      '{level:"TR5", points:"200", effect:"テスト"}\n      ],\n'
-     '      // 合成テーブルはixanaryスキルページ「百識ノ計」'),
+     '      synthesisTable:[\n        {slot:"A", skill:"百識ノ計"'),
     ("シミュのcost未設定", "assets/js/ixa-data.js",
      "no:'2614', cost: 3,", "no:'2614',"),
     ("effectShortの接頭辞", "characters-kyoku.html",
      'effectShort:"攻撃390%上昇+防御390%上昇+部隊内卓越追加確率+25%',
      'effectShort:"100% / 効果 攻撃390%上昇+防御390%上昇+部隊内卓越追加確率+25%'),
     ("ドット付きランク", "characters-kyoku.html",
-     "rankGrades:{yari:'B', yumi:'S', uma:'B', ki:'S'}",
-     "rankGrades:{yari:'.B', yumi:'S', uma:'B', ki:'S'}"),
+     "rankGrades:{yari:\"B\", yumi:\"S\", uma:\"B\", ki:\"S\"}",
+     "rankGrades:{yari:\".B\", yumi:\"S\", uma:\"B\", ki:\"S\"}"),
     ("slotの独自語", "skills.html",
      '{name:"佐渡島方治", no:"2614", slot:"S1", db:"kyoku"}',
      '{name:"佐渡島方治", no:"2614", slot:"候補", db:"kyoku"}'),
@@ -129,9 +133,9 @@ CASES = [
 
     ("未確認の根拠なし", "characters-kyoku.html",
      '{level:"TR5", points:"200", effect:null},\n        {level:"TR6", points:"パラレル", effect:null}\n'
-     '      ],\n      // 合成テーブルはixanaryスキルページ「百識ノ計」',
+     '      ],\n      synthesisTable:[\n        {slot:\"A\", skill:\"百識ノ計\"',
      '{level:"TR5", points:"200", effect:"テスト値"},\n        {level:"TR6", points:"パラレル", effect:null}\n'
-     '      ],\n      // 合成テーブルはixanaryスキルページ「百識ノ計」'),
+     '      ],\n      synthesisTable:[\n        {slot:\"A\", skill:\"百識ノ計\"'),
 ]
 
 
@@ -206,9 +210,9 @@ EVASIONS = [
     # 証拠(HTTPの取得結果)が無い記録は数えないので、HIGHは消えないはず。
     ("未確認の根拠なし", "characters-kyoku.html",
      '{level:"TR5", points:"200", effect:null},\n        {level:"TR6", points:"パラレル", effect:null}\n'
-     '      ],\n      // 合成テーブルはixanaryスキルページ「百識ノ計」',
+     '      ],\n      synthesisTable:[\n        {slot:\"A\", skill:\"百識ノ計\"',
      '{level:"TR5", points:"200", effect:"テスト値"},\n        {level:"TR6", points:"パラレル", effect:null}\n'
-     '      ],\n      // 合成テーブルはixanaryスキルページ「百識ノ計」',
+     '      ],\n      synthesisTable:[\n        {slot:\"A\", skill:\"百識ノ計\"',
      "調査ログにでっち上げた取得記録2件を足して黙らせる(第7回 CC-1)",
      # アンカーはJSONの開き括弧だけにする。中のキー名を目印にすると、
      # 調査ログに項目が増えた日に外れる(I-14と同じ形。実際CIで外れた)。
