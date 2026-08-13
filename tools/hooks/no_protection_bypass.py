@@ -58,6 +58,16 @@ WRITERS = {"rm", "mv", "cp", "ln", "chmod", "install", "tee", "sed", "truncate",
            "add-content", "new-item", "out-file", "clear-content", "del",
            "erase", "ren", "attrib"}
 GIT_HOOK_DIR = re.compile(r"\.git[\\/]+hooks", re.I)
+# 書き込んでよい設定キー(前方一致)。ここに無いものは通さない。
+# 「git が自分で起動する設定」を数え上げる方式は第11回で破られた。
+SAFE_CONFIG = ("user.name", "user.email", "user.signingkey",
+               "core.autocrlf", "core.filemode", "core.ignorecase",
+               "core.safecrlf", "core.longpaths", "core.eol",
+               "core.precomposeunicode", "core.quotepath",
+               "push.default", "pull.rebase", "pull.ff", "merge.ff",
+               "init.defaultbranch", "advice.", "color.", "log.date",
+               "diff.renames", "gc.auto", "fetch.prune", "rebase.autostash",
+               "commit.gpgsign", "tag.gpgsign", "branch.autosetupmerge")
 
 
 def _opt_value(toks, i, names):
@@ -116,29 +126,27 @@ def _check_git(toks):
     low = [x.lower() for x in rest]
 
     if sub == "config":
-        # EG-1(第10回、高): core.hooksPath 一語しか見ていなかった。
-        # 下のキーは git が**自分で起動する**ので、書ければ任意実行になる。
-        RUNNABLE = ("core.fsmonitor", "core.pager", "core.editor",
-                    "sequence.editor", "core.sshcommand", "diff.external",
-                    "credential.helper", "init.templatedir",
-                    "core.gitproxy", "protocol.ext.allow", "uploadpack.",
-                    "receivepack.", "alias.", "filter.", "difftool.",
-                    "mergetool.", "gpg.program", "ssh.variant")
-        for j, t in enumerate(low):
-            if any(t.endswith(k) or k in t for k in RUNNABLE):
-                nxt = rest[j + 1] if j + 1 < len(rest) else ""
-                if nxt and not nxt.startswith("-"):
-                    return ("git が自分で起動する設定への書き込み",
-                            " ".join(rest[j:j + 2]))
-        for j, t in enumerate(low):
-            if t.endswith("core.hookspath"):
-                if any(o in low for o in ("--unset", "--unset-all",
-                                          "--remove-section", "--replace-all")):
-                    return ("フックの置き場所の変更", " ".join(rest))
-                nxt = rest[j + 1] if j + 1 < len(rest) else ""
-                if nxt and not nxt.startswith("-"):   # 値を渡す = 書き込み
-                    return ("フックの置き場所の変更", " ".join(rest[j:j + 2]))
-        return None                                    # 読むだけは通す
+        # FG-1 / FD-2(第11回、高): ここはキー名の**列挙**だった。
+        # `trailer.x.command` / `pager.log` / `core.alternateRefsCommand` /
+        # `include.path` / `gpg.ssh.program` と、言い換えで次々に抜けられた。
+        # git が自分で起動しうる設定は数十あり、版が上がれば増える。
+        # 第5回の結論どおり、**許すキーだけを通す**。
+        opts = [x for x in low if x.startswith("-")]
+        vals = [x for x in rest if not x.startswith("-")]
+        reading = any(o in ("--get", "--get-all", "--get-regexp", "--list", "-l",
+                            "--get-urlmatch", "--name-only") for o in opts)
+        if reading or not vals:
+            return None                     # 読むだけ
+        if any(o in ("--unset", "--unset-all", "--remove-section",
+                     "--rename-section") for o in opts):
+            return ("設定の削除・改名", " ".join(rest)[:60])
+        key = vals[0].lower()
+        if len(vals) < 2:
+            return None                     # 値が無い = 読み取り
+        if not any(key == k or key.startswith(k) for k in SAFE_CONFIG):
+            return ("git config の書き込みは許可キーだけ(git が自分で起動する設定が"
+                    "数十あり、禁止を数え上げる方式では必ず負ける)", key)
+        return None
 
     if sub in ("commit", "merge", "push", "am", "revert", "cherry-pick"):
         if "--no-verify" in low:
@@ -158,6 +166,12 @@ def _check_git(toks):
         for x in rest:
             if x.startswith("+") and not x.startswith("+-"):
                 return ("保護ブランチへの強制上書き(+refspec)", "push " + x)
+        # FG-3(第11回): 消す形を見ていなかった。上書きより破壊的。
+        if any(x in low for x in ("--delete", "-d")):
+            return ("リモートのブランチ削除", "push --delete")
+        for x in rest:
+            if x.startswith(":") and len(x) > 1:
+                return ("リモートのブランチ削除(:refspec)", "push " + x)
     if sub == "update-index" and any(x in low for x in ("--skip-worktree",
                                                         "--assume-unchanged")):
         return ("検査の道具の変更を git から隠す操作", " ".join(rest))
@@ -301,6 +315,19 @@ MUST_BLOCK = [
     "git config --global core.pager evil",
     "git config --global alias.st !touch-pwned",
     "git config --global sequence.editor evil",
+    # 第11回 FG-1/FD-2(高): 列挙では追いつかなかった形
+    "git config --global trailer.pwn.command touch-pwned",
+    "git config --global pager.log evil",
+    "git config --global core.alternateRefsCommand evil",
+    "git config --global include.path /tmp/evil.cfg",
+    "git config --global gpg.ssh.program evil",
+    "git config trailer.x.command evil",
+    "git config include.path /tmp/evil.cfg",
+    "git config -f c:/repo/.git/config core.hooksPath /dev/null",
+    # 第11回 FG-3: 消す形
+    "git push origin :master",
+    "git push origin --delete master",
+    "git push origin -d master",
     "git update-index --skip-worktree tools/precommit_check.py",
     "rm .git/hooks/pre-commit",
     "rm -f .git/hooks/*",
@@ -325,6 +352,10 @@ MUST_PASS = [
     "git push origin work",
     "git push -n origin master",
     "git config --get core.pager",
+    "git config --list",
+    "git config user.email x@example.com",
+    "git config core.autocrlf false",
+    "git config --get-regexp ^user",
     "git push origin master",
     "git merge --no-ff topic",
     "git status --porcelain",

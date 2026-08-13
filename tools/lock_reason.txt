@@ -16,3 +16,4 @@
 2026-08-13	-2	hooks:docs/RULE-OPERATION.md,hooks:docs/RULES.md	R-09(攻撃側からユーザーへ接触しない)を追加。フックのホワイトリストが通すものを許可リストにも載せ、判断をフック内で完結させる
 2026-08-13	-3	hooks:docs/RULE-OPERATION.md,hooks:docs/RULES.md,hooks:tools/lock.py	攻撃側に渡す条件を docs/redteam-brief.md に正本化し、錠前で守る(回ごとに書き換わると回の比較ができない)
 2026-08-13	-7	hooks:docs/RULES.md,hooks:docs/redteam-brief.md,hooks:tools/audit_selftest.py,hooks:tools/hooks/no_protection_bypass.py,hooks:tools/hooks/no_redteam_write.py,hooks:tools/lock.py,hooks:tools/redteam.py	第10回の指摘5件を反映(錠前の権威をコード側へ・指紋に参照・+refspec・git config --global・-Cの無条件許可を廃止)
+2026-08-13	-3	hooks:tools/hooks/_cmdline.py,hooks:tools/hooks/no_protection_bypass.py,hooks:tools/hooks/no_redteam_write.py	第11回の指摘を反映(ヒアドキュメント印のtoken化・gitのサブコマンド白名簿・config書き込みのキー白名簿・削除refspec・回の判定のfail-closed)

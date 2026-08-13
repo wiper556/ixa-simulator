@@ -33,6 +33,22 @@ def _segments_1line(cmd, posix):
         toks = [t for t in lx if t]
     except ValueError:          # 引用符が閉じていない等
         toks = [t for t in re.split(r"\s+", (cmd or "").strip()) if t]
+    # FD-1(第11回、高): ヒアドキュメントの印は token として外す。
+    # 行を「最初の << より前」で切る実装だと、引用符の中の << を1つ書くだけで
+    # 行の残り(`; rm -rf <本物>` など)が丸ごと検査対象から消えた。
+    # shlex は引用符を解いてから token を返すので、ここで見る `<<` は
+    # **本当の演算子**だけ。印とタグの2つを捨て、残りは検査に回す。
+    out = []
+    skip_next = False
+    for t in toks:
+        if skip_next:
+            skip_next = False
+            continue
+        if t in ("<<", "<<-"):
+            skip_next = True        # 次の token はタグ名
+            continue
+        out.append(t)
+    toks = out
     segs, cur = [], []
     for t in toks:
         if t and not t.strip("|&;<>()"):       # 区切り記号だけの token
