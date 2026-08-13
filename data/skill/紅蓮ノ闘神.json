@@ -1,0 +1,34 @@
+{
+ "name": "紅蓮ノ闘神",
+ "rank": "SSS",
+ "baseRate": 60,
+ "target": "全 兵站",
+ "effectSummary": "SSS/LV10 確率 60% 防御255%上昇/対象:全　兵站\n①防御255%上昇する\n②部隊内で武将コストが武将スキルに影響するとき防御効果部分のみこの武将のコストを+1で計算する(特殊効果は部隊内重複不可・TR1〜TR5は未確認)",
+ "categoryLinks": [
+  {
+   "href": "skills-heitan.html",
+   "label": "兵站スキル一覧を見る"
+  }
+ ],
+ "sourceCharacters": [
+  {
+   "name": "真田幸村【覇】",
+   "no": "1227",
+   "slot": "移植不可"
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "紅蓮ノ闘神",
+  "rank": "SSS"
+ },
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全 兵站　確率 60% / 防御 255%上昇(コスト+1計算、TR別データは未確認)"
+  }
+ ],
+ "notes": [
+  "No.1227(真田幸村(覇))自身の初期スキル(SSS)。自己参照ではないが2026-08-01ルールにより無条件でページ作成"
+ ]
+}

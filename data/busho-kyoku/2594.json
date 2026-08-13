@@ -1,0 +1,147 @@
+{
+ "name": "那須与一",
+ "no": "2594",
+ "ch": "未確認",
+ "cost": 3,
+ "troop": "弓砲器防",
+ "sub": "",
+ "effect": "本丸防御陣形の第参列目以降に配置時、防御効果1.5倍",
+ "furigana": "なすのよいち",
+ "illustrator": "平野耕太・少年画報社/DRIFTERS製作委員会",
+ "imageFull": "assets/img/characters/no2594_full.png",
+ "imageChar": "assets/img/characters/no2594_char.png",
+ "atkBase": 1050,
+ "atkGrowth": 32,
+ "defBase": 1110,
+ "defGrowth": 46,
+ "tacticsBase": 520,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3360,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "S",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "負けてらんない",
+ "skillDetail": "A/LV10 確率 45% 防御240%上昇/対象:弓・砲・器\n①防御240%上昇する\n②本丸防御陣形の第参列目以降に配置時防御効果が1.5倍になる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓・砲・器　確率 45% / 防御 240%上昇(本丸防御陣形の第参列目以降に配置時、防御効果1.5倍)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": null
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": null
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": null
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": null
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": null
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": null
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "負けてらんない",
+   "rank": "A",
+   "afterSkill": "戦陣 凪",
+   "afterRank": "A",
+   "target": null,
+   "rate": null,
+   "effectShort": null,
+   "afterTarget": "全",
+   "afterRate": "+60%",
+   "afterEffectShort": "防御110%上昇(飛翔2・自軍防御参加武将が30以上の時、防御効果2倍)"
+  },
+  {
+   "slot": "B",
+   "skill": "負けてらんない",
+   "rank": "A",
+   "afterSkill": "戦陣 凪",
+   "afterRank": "A",
+   "target": null,
+   "rate": null,
+   "effectShort": null,
+   "afterTarget": "全",
+   "afterRate": "+60%",
+   "afterEffectShort": "防御110%上昇(飛翔2・自軍防御参加武将が30以上の時、防御効果2倍)"
+  },
+  {
+   "slot": "C",
+   "skill": "戦陣 凪",
+   "rank": "A",
+   "afterSkill": "海神ノ浮船",
+   "afterRank": "SS",
+   "target": null,
+   "rate": null,
+   "effectShort": null,
+   "afterTarget": "全 飛翔4",
+   "afterRate": "+48%",
+   "afterEffectShort": "防御 3.5%×防御参加武将数(280人)=980.0%"
+  },
+  {
+   "slot": "S1",
+   "skill": "戦陣 凪",
+   "rank": "A",
+   "afterSkill": "海神ノ浮船",
+   "afterRank": "SS",
+   "target": null,
+   "rate": null,
+   "effectShort": null,
+   "afterTarget": "全 飛翔4",
+   "afterRate": "+48%",
+   "afterEffectShort": "防御 3.5%×防御参加武将数(280人)=980.0%"
+  },
+  {
+   "slot": "S2",
+   "skill": "戦陣 破軍",
+   "rank": "A",
+   "afterSkill": "天穿神滅",
+   "afterRank": "SS",
+   "target": null,
+   "rate": null,
+   "effectShort": null,
+   "afterTarget": "砲器",
+   "afterRate": "+50%",
+   "afterEffectShort": "攻撃((ランク+1)xコストx3) %上昇(部隊ランクとコストで効果が変化)"
+  }
+ ],
+ "notes": [
+  "出典: カード画像(LV1形式: 極・統率 槍A/弓S/馬A/器A拡大確認・初期値1050/1110/520・コスト3・LV1スキル値。",
+  "  限界突破表示のため指揮3960は不採用、ixanaryの★0-0=3360を使用(B-00ルール))",
+  " + ixanary.com/cards/2594(成長+32/+46/+2.5・LV10: 確率+45%/弓砲器防240%/本丸第参列目以降で1.5倍。",
+  "   【漂流者コラボ】クエスト報酬)",
+  " + ixawiki BushoCard/2594(統率2次確認・合成テーブル1次/2次候補)。",
+  "統率はカード画像+ixawikiの2ソース一致。DRIFTERSコラボカード。",
+  "本丸防御陣形の配置列依存効果を持つ(本丸シミュレーターの将来実装対象として注記)。",
+  "スキルはA(鍛錬情報なし)のためTR1以降のeffectはnull。",
+  "合成テーブルはixawiki(1次候補+2次候補)",
+  "【2026-08-12 外部照合】合成テーブルはixawiki BushoCard/2594那須与一の候補表と一致している。",
+  " ixanaryのスキル個別ページはC/S1枠まわり(ixanaryは攻撃系の戦陣 召雷・天頂ノ電光を表示)が食い違うが、",
+  " この武将は防御カードで候補も防御スキル(戦陣 凪→海神ノ浮船)のはずであり、ixanary側が島津豊久(No.2593)の表を誤って載せていると判断した。",
+  " ixawiki側を採用したまま据え置く(監査ツールがixanary基準で不一致を出すが誤修正しないこと)。"
+ ]
+}

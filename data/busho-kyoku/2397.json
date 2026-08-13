@@ -1,0 +1,102 @@
+{
+ "name": "佐久間信盛",
+ "no": "2397",
+ "ch": "未確認",
+ "cost": 4,
+ "troop": "槍砲器攻防",
+ "sub": "",
+ "effect": "部隊内の同名スキル数に応じ攻防上昇",
+ "approved": true,
+ "furigana": "さくまのぶもり",
+ "illustrator": "西野幸治",
+ "imageFull": "assets/img/characters/no2397_full.png",
+ "imageChar": "assets/img/characters/no2397_char.png",
+ "atkBase": 1140,
+ "atkGrowth": 45,
+ "defBase": 1140,
+ "defGrowth": 45,
+ "tacticsBase": 500,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 4000,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "B",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "覇軍ノ勇士",
+ "skillDetail": "A/LV10 確率 48% 攻撃320%上昇/対象:槍・砲・器\n①攻撃320%上昇する\n②防御320%上昇する\n③部隊内の「覇軍ノ勇士」スキル数×120%を攻防効果に加算する(4人時攻撃800%上昇+防御800%上昇)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・砲・器　確率 48% / 攻撃・防御 320%+120%×覇軍ノ勇士所持数(4人)=800%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "日輪ノ守護者",
+   "rank": "A",
+   "afterSkill": "戦陣 吟詠",
+   "afterRank": "A",
+   "target": "弓・砲・器",
+   "rate": "65%",
+   "effectShort": "攻撃 340%上昇+防御 340%上昇+破壊 110%上昇",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 340%上昇+防御 340%上昇(部隊内卓越追加確率+20%)"
+  },
+  {
+   "slot": "B",
+   "skill": "勝旗勇躍",
+   "rank": "A",
+   "afterSkill": "戦陣 吟詠",
+   "afterRank": "A",
+   "target": "槍・馬・器・騎",
+   "rate": "100%",
+   "effectShort": "攻撃 440%上昇+防御 440%上昇(卓越確率+50%)",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 340%上昇+防御 340%上昇(部隊内卓越追加確率+20%)"
+  },
+  {
+   "slot": "C",
+   "skill": "戦陣 吟詠",
+   "rank": "A",
+   "afterSkill": "戦陣 吟詠",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "攻撃340%上昇+防御340%上昇+部隊内卓越追加確率+20%(模倣不可・特殊効果は自部隊内では重複不可)"
+  },
+  {
+   "slot": "S1",
+   "skill": "戦陣 神楽",
+   "rank": "A",
+   "afterSkill": "遠呂智ノ閃光",
+   "afterRank": "SS",
+   "target": "全 飛翔4",
+   "rate": "100%",
+   "effectShort": "攻撃 77%上昇(卓越:追加確率30%で2倍)",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 125%上昇(卓越追加確率15%・4倍、TR別データは未確認)"
+  },
+  {
+   "slot": "S2",
+   "skill": "志半ノ矛楯",
+   "rank": "A",
+   "afterSkill": "志半ノ矛楯",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "65%",
+   "effectShort": "攻撃465%上昇+防御465%上昇(模倣不可)"
+  }
+ ],
+ "notes": [
+  "45do.info生HTML(ordinary/0344)の合成テーブル確認。A=日輪ノ守護者[A](自己参照)/B=勝旗勇躍[A](自己参照)/C=戦陣吟詠[A](自己参照)/S1=戦陣神楽[A](自己参照)/S2=志半ノ矛楯[A](自己参照)",
+  "2026-08-05訂正: 当初A/Bを「戦陣吟詠に変化」として登録したが誤りだった。ixanary.comの日輪ノ守護者個別ページの合成テーブル(1次/2次/3次)を確認したところ、",
+  "戦陣吟詠への変化は複数回の追加合成を経た2次以降の話であり、佐久間信盛カード自身が示す1次の時点では日輪ノ守護者・勝旗勇躍のまま(自己参照)が正しい。"
+ ]
+}

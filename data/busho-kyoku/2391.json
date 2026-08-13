@@ -1,0 +1,103 @@
+{
+ "name": "安宅冬康",
+ "no": "2391",
+ "ch": "29章",
+ "cost": 4.5,
+ "troop": "弓馬器攻",
+ "sub": "不屈",
+ "effect": "自部隊同時攻撃時、不屈を得る(特殊効果は模倣不可)",
+ "approved": true,
+ "furigana": "あたぎふゆやす",
+ "illustrator": "JaneMere",
+ "imageFull": "assets/img/characters/no2391_full.png",
+ "imageChar": "assets/img/characters/no2391_char.png",
+ "atkBase": 1130,
+ "atkGrowth": 46,
+ "defBase": 1010,
+ "defGrowth": 31,
+ "tacticsBase": 520,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 4280,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "星詠ム仁将",
+ "skillDetail": "A/LV10 確率 38% 攻撃410%上昇/対象:弓・馬・器・焙　不屈\n①攻撃410%上昇する\n②自部隊同時攻撃時この武将は合流自部隊数-2の不屈を得る(特殊効果は模倣不可)",
+ "categoryLinks": [
+  {
+   "href": "skills-fukutsu.html",
+   "label": "不屈スキル一覧を見る"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓・馬・器・焙 不屈　確率 38% / 攻撃 410%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "空陣鳴響",
+   "rank": "A",
+   "afterSkill": "悪屋形",
+   "afterRank": "S",
+   "target": "槍・弓・馬・砲",
+   "rate": "+60%",
+   "effectShort": "攻撃300%上昇+自部隊同時攻撃時消費名声-20(重複不可)",
+   "afterTarget": "全",
+   "afterRate": "19%",
+   "afterEffectShort": "攻撃 80%上昇+自部隊同時攻撃時消費名声-8(重複不可、TR別データは未確認)"
+  },
+  {
+   "slot": "B",
+   "skill": "破克閃剣",
+   "rank": "A",
+   "afterSkill": "戦陣 剣舞",
+   "afterRank": "A",
+   "target": "槍・弓・器",
+   "rate": "+48%",
+   "effectShort": "攻撃350%上昇+不屈1",
+   "afterTarget": "全",
+   "afterRate": "+100%",
+   "afterEffectShort": "飛翔6(攻撃80%上昇+防御80%上昇卓越追加確率30%で攻防効果が4倍)"
+  },
+  {
+   "slot": "C",
+   "skill": "星詠ム仁将",
+   "rank": "A",
+   "afterSkill": "星詠ム仁将",
+   "afterRank": "A",
+   "target": "弓・馬・器・焙 不屈",
+   "rate": "38%",
+   "effectShort": "攻撃410%上昇+合流自部隊数-2の不屈(特殊効果は模倣不可)"
+  },
+  {
+   "slot": "S1",
+   "skill": "星詠ム仁将",
+   "rank": "A",
+   "afterSkill": "星詠ム仁将",
+   "afterRank": "A",
+   "target": "弓・馬・器・焙 不屈",
+   "rate": "38%",
+   "effectShort": "攻撃410%上昇+合流自部隊数-2の不屈(特殊効果は模倣不可)"
+  },
+  {
+   "slot": "S2",
+   "skill": "志半ノ矛楯",
+   "rank": "A",
+   "afterSkill": "志半ノ矛楯",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "+65%",
+   "effectShort": "攻撃465%上昇+防御465%上昇(模倣不可)"
+  }
+ ],
+ "notes": [
+  "45do.info+ixagno.blog.fc2.com(blog-entry-10312)確認済み: Aの空陣鳴響は移植後「悪屋形」[S]に、Bの破克閃剣は移植後「戦陣 剣舞」に変化。C/S1は自己参照(星詠ム仁将)で両ソース一致"
+ ]
+}

@@ -1,0 +1,71 @@
+{
+ "name": "覆天征軍",
+ "rank": "SS",
+ "baseRate": 100,
+ "target": "全 無尽2",
+ "hasMujin": true,
+ "effectSummary": "SS/LV10 確率 100% 攻撃900%上昇/対象:全　無尽2\n①攻撃900%上昇する(TR1〜TR5は未確認)\n②無尽2を持つため部隊消費コストを-1.0する",
+ "categoryLinks": [
+  {
+   "href": "skills-mujin.html",
+   "label": "無尽スキル一覧を見る"
+  },
+  {
+   "href": "skills-cost.html",
+   "label": "コスト減少スキル一覧を見る"
+  }
+ ],
+ "sourceCharacters": [
+  {
+   "name": "本多忠勝（2）",
+   "no": "1303",
+   "slot": "S1"
+  },
+  {
+   "name": "豊臣秀長【覇】",
+   "no": "1298",
+   "slot": "A"
+  },
+  {
+   "name": "細川晴元（2）",
+   "no": "1317",
+   "slot": "B"
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "覆天征軍",
+  "rank": "SS"
+ },
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全 無尽2　確率 100% / 攻撃 900%"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": "未確認"
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": "未確認"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": "未確認"
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": "未確認"
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": "未確認"
+  }
+ ]
+}

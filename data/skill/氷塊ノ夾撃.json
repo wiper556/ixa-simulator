@@ -1,0 +1,37 @@
+{
+ "name": "氷塊ノ夾撃",
+ "rank": "S",
+ "baseRate": 52,
+ "target": "全",
+ "noMimic": true,
+ "effectSummary": "S/LV10 確率：+52% / 対象 全 攻撃：118%上昇 自部隊同時攻撃時部隊総コストからこの武将分のコストを最大1.5で除外(模倣不可)",
+ "sourceCharacters": [
+  {
+   "name": "大宝寺義氏",
+   "no": "2455",
+   "slot": "C・S2",
+   "db": "kyoku"
+  },
+  {
+   "name": "片倉小十郎",
+   "no": "7003",
+   "slot": "S1",
+   "db": "kyoku"
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "氷塊三連撃",
+  "rank": "SSS"
+ },
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 52% / 攻撃118%上昇 自部隊同時攻撃時、部隊総コストからこの武将分のコストを最大1.5で除外(模倣不可)"
+  }
+ ],
+ "notes": [
+  "2026-08-12作成。合成候補に出てくるS以上はページを作る規約(A-3)の未処理分。",
+  "ixanary.com/skills/氷塊ノ夾撃 から取得。categoryLinksは9項目の判定が要るため付けていない。"
+ ]
+}

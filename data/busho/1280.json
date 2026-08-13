@@ -1,0 +1,124 @@
+{
+ "name": "小早川隆景",
+ "no": "1280",
+ "ch": "29章",
+ "cost": 5,
+ "troop": "防",
+ "sub": "兵站",
+ "effect": "加勢戦闘時は追加スキルの防御効果2.5倍",
+ "approved": true,
+ "furigana": "こばやかわたかかげ",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1280_full.png",
+ "imageChar": "assets/img/characters/no1280_char.png",
+ "atkBase": 1050,
+ "atkGrowth": 40,
+ "defBase": 1230,
+ "defGrowth": 70,
+ "tacticsBase": 690,
+ "tacticsGrowth": 3.5,
+ "lv0Troops": 5050,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "SS",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "西天ノ仁星",
+ "skillDetail": "S/LV10 確率 100% 対象:追加スキル　兵站\n模倣不可\n①このスキルを持つ武将カードは自領以外の加勢戦闘時のみ追加スキルの防御効果が2.5倍となる",
+ "categoryLinks": [
+  {
+   "href": "skills-heitan.html",
+   "label": "兵站スキル一覧を見る"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "追加スキル 兵站　確率 100% / 防御効果倍率 2.5倍(自領以外の加勢戦闘時のみ)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": "追加スキル　確率 100% / このスキルを持つ武将カードは、自領以外の加勢戦闘時のみ、追加スキルの防御効果が2.6倍となる(模倣不可) 兵站"
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": "追加スキル　確率 100% / このスキルを持つ武将カードは、自領以外の加勢戦闘時のみ、追加スキルの防御効果が2.7倍となる(模倣不可) 兵站"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": "追加スキル　確率 100% / このスキルを持つ武将カードは、自領以外の加勢戦闘時のみ、追加スキルの防御効果が2.8倍となる(模倣不可) 兵站"
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": "追加スキル　確率 100% / このスキルを持つ武将カードは、自領以外の加勢戦闘時のみ、追加スキルの防御効果が2.9倍となる(模倣不可) 兵站"
+  },
+  {
+   "level": "TR5",
+   "points": "最大鍛錬",
+   "effect": "追加スキル 兵站　確率 100% / 防御効果倍率 3倍(自領以外の加勢戦闘時のみ)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "万里嵐壁",
+   "rank": "SS",
+   "afterSkill": "万里嵐壁",
+   "afterRank": "SS",
+   "rate": "66%",
+   "target": "全",
+   "effectShort": "防御200%上昇+敵軍部隊数×40%加算"
+  },
+  {
+   "slot": "B",
+   "skill": "虚空ノ導",
+   "rank": "SSS",
+   "afterSkill": "虚空ノ導",
+   "afterRank": "SSS",
+   "rate": "70%",
+   "target": "自身",
+   "effectShort": "自身の初期スキルを模倣(卓越時1.3倍)"
+  },
+  {
+   "slot": "C",
+   "skill": "月煌侵蝕",
+   "rank": "SSS",
+   "afterSkill": "月煌侵蝕",
+   "afterRank": "SSS",
+   "rate": "45%",
+   "target": "全 兵站",
+   "effectShort": "防御を係数×人数で上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "従魔絶神",
+   "rank": "SSS",
+   "afterSkill": "従魔絶神",
+   "afterRank": "SSS",
+   "rate": "43%",
+   "target": "全 飛翔13",
+   "effectShort": "防御を係数×人数で上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "四天轟雷",
+   "rank": "SS",
+   "afterSkill": "四天轟雷",
+   "afterRank": "SS",
+   "rate": "100%",
+   "target": "全",
+   "effectShort": "攻防360%上昇+砲・器対象追加"
+  }
+ ],
+ "notes": [
+  "カード画像照合済み: 槍A/弓SS/馬A/器A",
+  "ixanary.com生HTML照合(2026-08-02): カード画像のスキル欄にLV10とTR5(鍛錬)の2枠のみ表示されており、TR1〜TR4は実在しない。",
+  "45do.info(ordinary/0313)生HTML照合+ameameixa.com(post-12334「29章天武将スキル一覧」表のNo.1280行)の両ソースでA/B/C/S1/S2の並びが一致確認済み。"
+ ]
+}

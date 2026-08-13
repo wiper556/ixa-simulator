@@ -1,0 +1,76 @@
+{
+ "name": "星神闘覇",
+ "rank": "SS",
+ "baseRate": 100,
+ "target": "全 飛翔15",
+ "effectSummary": "SS/LV10 確率 100% 攻撃770%上昇/対象:全　飛翔15\n①攻撃770%上昇する\n②速度200%上昇する",
+ "categoryLinks": [
+  {
+   "href": "skills-hishou-atk.html",
+   "label": "飛翔スキル一覧(攻撃)を見る"
+  }
+ ],
+ "sourceCharacters": [
+  {
+   "name": "立花宗茂（5）",
+   "no": "1307",
+   "slot": "A"
+  },
+  {
+   "name": "前田利家（4）",
+   "no": "1269",
+   "slot": "A"
+  },
+  {
+   "name": "宇喜多直家（3）",
+   "no": "1256",
+   "slot": "S1"
+  },
+  {
+   "name": "毛利輝元【覇】",
+   "no": "1251",
+   "slot": "C"
+  },
+  {
+   "name": "武田信虎（2）",
+   "no": "1240",
+   "slot": "S1"
+  },
+  {
+   "name": "上杉謙信（2）【覇】",
+   "no": "1238",
+   "slot": "B・C",
+   "note": [
+    "上杉謙信(覇2)No.1238のB・C枠(ixanary「神気乱龍」個別ページ1次B/C=星神闘覇で確認、2026-08-07)"
+   ]
+  },
+  {
+   "name": "武田晴信（4）",
+   "no": "1318",
+   "slot": "S2"
+  },
+  {
+   "name": "瀬田宗次郎",
+   "no": "2604",
+   "slot": "A",
+   "db": "kyoku"
+  },
+  {
+   "name": "蒲生氏郷",
+   "no": "7403",
+   "slot": "C",
+   "db": "kyoku"
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "星神闘覇",
+  "rank": "SS"
+ },
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全 飛翔15　確率 100% / 攻撃 770%上昇+速度200%上昇(TR別データは未確認)"
+  }
+ ]
+}

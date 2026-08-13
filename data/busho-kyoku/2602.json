@@ -1,0 +1,126 @@
+{
+ "name": "斎藤一",
+ "no": "2602",
+ "ch": "未確認",
+ "cost": 4.5,
+ "troop": "追加スキル防",
+ "sub": "",
+ "effect": "自領以外の加勢戦闘時のみ追加スキルの防御効果2.5倍(模倣不可)",
+ "furigana": "さいとうはじめ",
+ "illustrator": "NW/S,RKKD",
+ "imageFull": "assets/img/characters/no2602_full.png",
+ "imageChar": "assets/img/characters/no2602_char.png",
+ "atkBase": 1800,
+ "atkGrowth": 130,
+ "defBase": 2000,
+ "defGrowth": 155,
+ "tacticsBase": 530,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 4990,
+ "rankGrades": {
+  "yari": "SS",
+  "yumi": "A",
+  "uma": "B",
+  "ki": "A"
+ },
+ "initialSkill": "牙突",
+ "skillDetail": "S/LV10 確率 100% 追加スキルの防御効果2.5倍/対象:追加スキル\n模倣不可\n①このスキルを持つ武将カードは自領以外の加勢戦闘時のみ追加スキルの防御効果が2.5倍となる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "追加スキル　確率 100% / 自領以外の加勢戦闘時のみ追加スキルの防御効果2.5倍(模倣不可)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": "追加スキル　確率 100% / 加勢時のみ追加スキルの防御効果2.6倍"
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": "追加スキル　確率 100% / 加勢時のみ追加スキルの防御効果2.7倍"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": "追加スキル　確率 100% / 加勢時のみ追加スキルの防御効果2.8倍"
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": "追加スキル　確率 100% / 加勢時のみ追加スキルの防御効果2.9倍"
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": "追加スキル　確率 100% / 加勢時のみ追加スキルの防御効果3倍"
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": null
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "国津破邪ノ楯",
+   "rank": "SS",
+   "afterSkill": "国津破邪ノ楯",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "+60%",
+   "effectShort": "防御(部隊総コスト依存)%上昇(C25で423.75%)"
+  },
+  {
+   "slot": "B",
+   "skill": "旌旗翳天ノ覇陣",
+   "rank": "SS",
+   "afterSkill": "旌旗翳天ノ覇陣",
+   "afterRank": "SS",
+   "target": null,
+   "rate": null,
+   "effectShort": null
+  },
+  {
+   "slot": "C",
+   "skill": "万里嵐壁",
+   "rank": "SS",
+   "afterSkill": "万里嵐壁",
+   "afterRank": "SS",
+   "target": null,
+   "rate": null,
+   "effectShort": null
+  },
+  {
+   "slot": "S1",
+   "skill": "永世ノ天隻",
+   "rank": "SS",
+   "afterSkill": "永世ノ天隻",
+   "afterRank": "SS",
+   "target": null,
+   "rate": null,
+   "effectShort": null
+  },
+  {
+   "slot": "S2",
+   "skill": "三千世界神将",
+   "rank": "SS",
+   "afterSkill": "三千世界神将",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "+100%",
+   "effectShort": "防御120%上昇(本丸防御陣形配置時、編成コスト消費-1・模倣不可)"
+  }
+ ],
+ "notes": [
+  "出典: カード画像(LV10形式: 極・職業「剣」・統率 槍SS/弓A/馬B/器A拡大確認・初期値1800/2000/530・コスト4.5。",
+  "  天限突破表示のため指揮6590は不採用、ixanaryの★0-0=4990を使用(B-00ルール))",
+  " + ixanary.com/cards/2602(成長+130/+155/+2.5。るろうに剣心コラボ)",
+  " + ixanaryスキルページ「牙突」(LV1〜TR5全値+合成テーブル)。",
+  "No.2559(京極竜子・聖女ノ恩寵)と同効果の加勢時追加スキル防御倍化(こちらは鍛錬でTR5=3倍まで)。",
+  "初期スキルがSランクのためスキル個別ページの新規作成が必要(docsのTODOに記録済み)。",
+  "合成テーブルはixanaryスキルページ(1次/2次/3次、5枠すべて自己参照)"
+ ]
+}

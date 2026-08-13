@@ -1,0 +1,28 @@
+{
+ "name": "義陣響野",
+ "rank": "S",
+ "baseRate": 35,
+ "target": "槍・馬・砲・器",
+ "effectSummary": "S/LV10 確率 35% 攻撃(敵軍総武将コスト×1.4)%上昇/対象:槍・馬・砲・器\n①対象兵科(槍・馬・砲・器)を指揮した戦闘時攻撃力が敵軍総武将コスト×1.4%上昇する",
+ "sourceCharacters": [
+  {
+   "name": "相良義陽（3）",
+   "no": "1258",
+   "slot": "A・B"
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "氷塊三連撃",
+  "rank": "SSS"
+ },
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・馬・砲・器　確率 35% / 攻撃 敵軍総武将コスト×1.4%"
+  }
+ ],
+ "notes": [
+  "この武将自身の初期スキル(相良義陽(3) No.1258のsynthesisTable候補A・B)"
+ ]
+}

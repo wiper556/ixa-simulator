@@ -1,0 +1,100 @@
+{
+ "name": "武田勝頼（5）",
+ "no": "1252",
+ "ch": "27章",
+ "cost": 5,
+ "troop": "弓馬砲器攻",
+ "sub": "",
+ "effect": "自軍攻撃武将数依存で攻撃上昇",
+ "approved": true,
+ "furigana": "たけだかつより",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1252_full.png",
+ "imageChar": "assets/img/characters/no1252_char.png",
+ "atkBase": 1230,
+ "atkGrowth": 64,
+ "defBase": 1080,
+ "defGrowth": 41,
+ "tacticsBase": 650,
+ "tacticsGrowth": 3,
+ "lv0Troops": 4960,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "S",
+  "ki": "S"
+ },
+ "initialSkill": "陥城騎王",
+ "skillDetail": "S/LV10 確率 45% 攻撃200%上昇/対象:弓・馬・砲・器\n①攻撃200%上昇する\n②自軍攻撃武将数×10%を攻撃効果に加算する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓・馬・砲・器　確率 45% / 攻撃 200%上昇(自軍攻撃武将数×10%加算)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "陥城騎王",
+   "rank": "S",
+   "afterSkill": "破邪後輝",
+   "afterRank": "SS",
+   "rate": "45%",
+   "target": "弓・馬・砲・器",
+   "effectShort": "攻撃200%上昇(自軍攻撃武将数×10%加算)",
+   "afterTarget": "全 覇道",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 770%上昇+速度150%上昇+破壊150%上昇(TR以降のデータなし、LV10が最大値)"
+  },
+  {
+   "slot": "B",
+   "skill": "陥城騎王",
+   "rank": "S",
+   "afterSkill": "破邪後輝",
+   "afterRank": "SS",
+   "rate": "45%",
+   "target": "弓・馬・砲・器",
+   "effectShort": "攻撃200%上昇(自軍攻撃武将数×10%加算)",
+   "afterTarget": "全 覇道",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 770%上昇+速度150%上昇+破壊150%上昇(TR以降のデータなし、LV10が最大値)"
+  },
+  {
+   "slot": "C",
+   "skill": "四至ノ神域",
+   "rank": "SSS",
+   "afterSkill": "四至ノ神域",
+   "afterRank": "SSS",
+   "rate": "70%",
+   "target": "自身",
+   "effectShort": "自身が持つ初期スキルを通常攻撃/防御効果1.25倍にして模倣する"
+  },
+  {
+   "slot": "S1",
+   "skill": "破邪後輝",
+   "rank": "SS",
+   "afterSkill": "飛龍衝天",
+   "afterRank": "SS",
+   "rate": "100%",
+   "target": "全 覇道",
+   "effectShort": "攻撃770%上昇+速度150%上昇+破壊150%上昇+覇道を持つため所属部隊の武将のスキルを無効化・発動率低下から保護",
+   "afterTarget": "全 飛翔15",
+   "afterRate": "45%",
+   "afterEffectShort": "攻撃 200%+7.5%×防御参加武将数(280人)=2300.0%"
+  },
+  {
+   "slot": "S2",
+   "skill": "月詠ノ覇威",
+   "rank": "SS",
+   "afterSkill": "月詠ノ覇威",
+   "afterRank": "SS",
+   "rate": "100%",
+   "target": "全",
+   "effectShort": "攻撃344%上昇+防御344%上昇+自軍全武将全スキルの卓越確率に15%加算(模倣不可・自軍内重複上限2)"
+  }
+ ],
+ "notes": [
+  "synthesisTable: 45do.info生HTML(skiladd_wrap)+ixanary.com(陥城騎王スキルページの合成テーブル)で2ソース一致確認済み(2026-08-02)"
+ ]
+}

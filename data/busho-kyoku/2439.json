@@ -1,0 +1,142 @@
+{
+ "name": "斎藤朝信(2439)",
+ "no": "2439",
+ "ch": "未確認",
+ "cost": 4,
+ "troop": "槍砲器攻",
+ "sub": "",
+ "effect": "対象兵科指揮時、部隊総攻撃力15%上昇(模倣不可)",
+ "furigana": "さいとうとものぶ",
+ "illustrator": "正子公也",
+ "imageFull": "assets/img/characters/no2439_full.png",
+ "imageChar": "assets/img/characters/no2439_char.png",
+ "atkBase": 1070,
+ "atkGrowth": 42,
+ "defBase": 1000,
+ "defGrowth": 32,
+ "tacticsBase": 500,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3850,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "富楼那ノ化身",
+ "skillDetail": "A/LV10 確率 70% 部隊総攻撃力15%上昇/対象:槍・砲・器\n模倣不可\n①対象兵科を指揮した戦闘時部隊総攻撃力が15%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・砲・器　確率 70% / 部隊総攻撃力 15%上昇(模倣不可)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": null
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": null
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": null
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": null
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": null
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": null
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "戦陣 凱旋",
+   "rank": "A",
+   "afterSkill": "布都御魂ノ鬨",
+   "afterRank": "SS",
+   "target": null,
+   "rate": null,
+   "effectShort": null,
+   "afterTarget": "全",
+   "afterRate": "+35%",
+   "afterEffectShort": "攻撃 40%上昇+防御 40%上昇(部隊内レアリティS以上のスキル個数×20%加算)"
+  },
+  {
+   "slot": "B",
+   "skill": "戦陣 破軍",
+   "rank": "A",
+   "afterSkill": "天穿神滅",
+   "afterRank": "SS",
+   "target": null,
+   "rate": null,
+   "effectShort": null,
+   "afterTarget": "砲器",
+   "afterRate": "+50%",
+   "afterEffectShort": "攻撃((ランク+1)xコストx3) %上昇(部隊ランクとコストで効果が変化)"
+  },
+  {
+   "slot": "C",
+   "skill": "鬼滅刺",
+   "rank": "A",
+   "afterSkill": "布都御魂ノ鬨",
+   "afterRank": "SS",
+   "target": null,
+   "rate": null,
+   "effectShort": null,
+   "afterTarget": "全",
+   "afterRate": "+35%",
+   "afterEffectShort": "攻撃 40%上昇+防御 40%上昇(部隊内レアリティS以上のスキル個数×20%加算)"
+  },
+  {
+   "slot": "S1",
+   "skill": "鼓腹撃壌",
+   "rank": "A",
+   "afterSkill": "天焉相克",
+   "afterRank": "SS",
+   "target": null,
+   "rate": null,
+   "effectShort": null,
+   "afterTarget": "槍・弓・馬",
+   "afterRate": "+70%",
+   "afterEffectShort": "全攻 30%上昇(部隊の総コストで効果が変化)"
+  },
+  {
+   "slot": "S2",
+   "skill": "騎聖",
+   "rank": "A",
+   "afterSkill": "神光征軍",
+   "afterRank": "SS",
+   "target": null,
+   "rate": null,
+   "effectShort": null,
+   "afterTarget": "全",
+   "afterRate": "+100%",
+   "afterEffectShort": "攻撃 90%上昇+速度200%上昇(TRなし)"
+  }
+ ],
+ "notes": [
+  "出典: カード画像(LV1形式: 極・統率 槍S/弓A/馬A/器A拡大確認・初期値1070/1000/500・コスト4。",
+  "  ★5表示のため指揮4350は不採用、ixanaryの★0-0=3850を使用。スキル名はカード低解像度で",
+  "  「富棲那」に見えるがixanary+ixawikiの2ソースで「富楼那ノ化身」を確認)",
+  " + ixanary.com/cards/2439(成長+42/+32/+2.5・LV10: 確率+70%/部隊総攻撃力15%上昇・模倣不可)",
+  " + ixawiki BushoCard/2439(統率2次確認・合成テーブル1次/2次候補)。",
+  "統率はカード画像+ixawikiの2ソース一致。覇神絶域と同系の総攻撃力上昇スキル(シミュのspecialSkillsにも登録済み)。",
+  "スキルはA(鍛錬情報なし)のためTR1以降のeffectはnull。",
+  "合成テーブルはixawiki(1次候補+2次候補)"
+ ]
+}

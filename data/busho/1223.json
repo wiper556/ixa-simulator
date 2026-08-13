@@ -1,0 +1,104 @@
+{
+ "name": "蜂須賀小六",
+ "no": "1223",
+ "ch": "24章",
+ "cost": 4,
+ "troop": "槍弓器鉄防",
+ "sub": "",
+ "effect": "防御参加武将数依存で防御力上昇／卓越で効果1.5倍",
+ "approved": true,
+ "furigana": "はちすかころく",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1223_full.png",
+ "imageChar": "assets/img/characters/no1223_char.png",
+ "atkBase": 1080,
+ "atkGrowth": 46,
+ "defBase": 1210,
+ "defGrowth": 64,
+ "tacticsBase": 680,
+ "tacticsGrowth": 3.5,
+ "lv0Troops": 4490,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "S",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "無双六界ノ博奕",
+ "skillDetail": "S/LV10 確率 50% 防御(3.2×防御参加武将数)%上昇/対象:槍・弓・器・鉄\n①対象兵科(槍・弓・器・鉄)を指揮した戦闘時防御力が(3.2×防御参加武将数)%上昇する\n②卓越時追加確率20%で防御効果が1.5倍になる(TR1〜TR5は未確認)",
+ "categoryLinks": [
+  {
+   "href": "skills-count-def.html",
+   "label": "人数依存(防)スキル一覧を見る"
+  },
+  {
+   "href": "skills-takuetsu.html",
+   "label": "卓越スキル一覧を見る"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・弓・器・鉄　確率 50% / 防御 3.2%×防御参加武将数(280人)=896%(卓越追加確率20%で1.5倍)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "無双六界ノ博奕",
+   "rank": "S",
+   "afterSkill": "天磐船",
+   "afterRank": "SS",
+   "rate": "50%",
+   "target": "槍・弓・器・鉄",
+   "effectShort": "防御(3.2×防御参加武将数)%上昇(卓越で1.5倍)",
+   "afterTarget": "全",
+   "afterRate": "56%",
+   "afterEffectShort": "防御 3.8%×防御参加武将数(280人)=1064.0%"
+  },
+  {
+   "slot": "B",
+   "skill": "天奏聖譚曲",
+   "rank": "SS",
+   "afterSkill": "天奏聖譚曲",
+   "afterRank": "SS",
+   "rate": "70%",
+   "target": "砲・器",
+   "effectShort": "防御2.5%×防御参加武将数上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "海神ノ浮船",
+   "rank": "SS",
+   "afterSkill": "海神ノ浮船",
+   "afterRank": "SS",
+   "rate": "48%",
+   "target": "全 飛翔4",
+   "effectShort": "防御3.5%×防御参加武将数上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "天磐船",
+   "rank": "SS",
+   "afterSkill": "天磐船",
+   "afterRank": "SS",
+   "rate": "56%",
+   "target": "全",
+   "effectShort": "防御3.8%×防御参加武将数上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "天奏聖譚曲",
+   "rank": "SS",
+   "afterSkill": "天奏聖譚曲",
+   "afterRank": "SS",
+   "rate": "70%",
+   "target": "砲・器",
+   "effectShort": "防御2.5%×防御参加武将数上昇"
+  }
+ ],
+ "notes": [
+  "45do.info(生HTML skiladd_wrap)+ameameixa.com(スキルテーブル)の2ソース照合済み、両者一致"
+ ]
+}

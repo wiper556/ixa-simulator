@@ -1,0 +1,128 @@
+{
+ "name": "尼子経久（3）",
+ "no": "1316",
+ "furigana": "あまごつねひさ",
+ "ch": "32章",
+ "cost": 5.5,
+ "troop": "防",
+ "sub": "",
+ "effect": "自領以外の加勢戦闘時、追加・極限スキルの防御効果2倍",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1316_full.png",
+ "imageChar": "assets/img/characters/no1316_char.png",
+ "atkBase": 1090,
+ "atkGrowth": 49,
+ "defBase": 1280,
+ "defGrowth": 74,
+ "tacticsBase": 690,
+ "tacticsGrowth": 3.5,
+ "lv0Troops": 5340,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "S",
+  "ki": "A"
+ },
+ "initialSkill": "月読ノ冥略",
+ "skillDetail": "S/LV10 追加・極限スキルの防御効果2倍/対象:-\n模倣不可\n①このスキルを持つ武将カードは自領以外の加勢戦闘時のみ追加スキルの防御効果が2倍になる\n②極限スキルの防御効果が2倍になる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "-　自領以外の加勢戦闘時に追加スキルの防御効果2倍+極限スキルの防御効果2倍"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": "-　自領以外の加勢戦闘時に追加スキルの防御効果2倍+極限スキルの防御効果2.1倍"
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": "-　自領以外の加勢戦闘時に追加スキルの防御効果2倍+極限スキルの防御効果2.3倍"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": "-　自領以外の加勢戦闘時に追加スキルの防御効果2倍+極限スキルの防御効果2.5倍"
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": "-　自領以外の加勢戦闘時に追加スキルの防御効果2倍+極限スキルの防御効果2.7倍"
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": "-　自領以外の加勢戦闘時に追加スキルの防御効果2倍+極限スキルの防御効果3倍"
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": "-　自領以外の加勢戦闘時に追加スキルの防御効果2.2倍+極限スキルの防御効果3.2倍"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "千里必勝ノ神算",
+   "rank": "SS",
+   "afterSkill": "千里必勝ノ神算",
+   "afterRank": "SS",
+   "target": "全 覇道",
+   "rate": "42%",
+   "effectShort": "攻撃1010%上昇(防御同値)+破壊150%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "虚実兵妙",
+   "rank": "SS",
+   "afterSkill": "虚実兵妙",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "防御740%上昇+敵軍卓越確率-8%"
+  },
+  {
+   "slot": "C",
+   "skill": "従魔絶神",
+   "rank": "SSS",
+   "afterSkill": "従魔絶神",
+   "afterRank": "SSS",
+   "target": "全 飛翔13",
+   "rate": "43%",
+   "effectShort": "防御を係数×人数で上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "岳王ノ加護",
+   "rank": "SS",
+   "afterSkill": "岳王ノ加護",
+   "afterRank": "SS",
+   "target": "全 無尽",
+   "rate": "50%",
+   "effectShort": "防御を係数×人数で上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "月煌侵蝕",
+   "rank": "SSS",
+   "afterSkill": "月煌侵蝕",
+   "afterRank": "SSS",
+   "target": "全 兵站",
+   "rate": "45%",
+   "effectShort": "防御を係数×人数で上昇"
+  }
+ ],
+ "notes": [
+  "画像はixagno記事掲載のカード画像から切り出した(JPEG劣化のためハート検出はTOL=50)。",
+  "【2026-08-12】鍛錬表の書き方をLV10行(サイト共通書式)に統一。以前はTR1〜TR5だけ",
+  " 出典サイトの生テキストのままで、読点や項目の並びが他の武将と揃っていなかった。",
+  " TR6は通常カードのページには載っておらず、パラレル天カード(No.30000+元No.)の",
+  " ixanary.com/cards/3xxxx/ にのみ記載がある。そこから取得した。",
+  "2026-08-07開幕の32章新天。ixanary.comは2026-08-08時点で未対応(cards/1316 は404)のため",
+  "別ソースで確定させた。スキル名・作家名は公式ニュース(スクウェア・エニックス発表)、",
+  "コスト/指揮兵数/成長値は ixagno.blog.fc2.com【天】武将一覧、",
+  "基礎値・兵科適性・LV10効果・鍛錬表・合成テーブルは同サイトの個別記事(blog-entry-11148)。"
+ ]
+}

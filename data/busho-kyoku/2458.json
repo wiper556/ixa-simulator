@@ -1,0 +1,132 @@
+{
+ "name": "ヴァリニャーノ",
+ "no": "2458",
+ "ch": "未確認",
+ "cost": 4.5,
+ "troop": "全防",
+ "sub": "",
+ "effect": "防御(所持名声×3%、最大1000%)上昇。減少HPと同数の名声を消費",
+ "furigana": "う゛ぁりにゃーの",
+ "illustrator": "正子公也",
+ "imageFull": "assets/img/characters/no2458_full.png",
+ "imageChar": "assets/img/characters/no2458_char.png",
+ "atkBase": 1100,
+ "atkGrowth": 51,
+ "defBase": 1150,
+ "defGrowth": 58,
+ "tacticsBase": 540,
+ "tacticsGrowth": 3,
+ "lv0Troops": 4480,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "聖光ノ遊星",
+ "skillDetail": "S/LV10 確率 100% 防御(所持名声×3%)上昇/対象:全\n①防御(所持名声×3%最大1000%)上昇する\n②防御戦闘で減少したHPと同数の名声を消費する(複数発動時は各部隊につき消費量が最も大きい一件分のみ消費)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 防御 (所持名声×3%)上昇(最大1000%・防御戦闘で減少したHPと同数の名声を消費)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": null
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": null
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": null
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": null
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": null
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": null
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "三千世界神将",
+   "rank": "SS",
+   "afterSkill": "三千世界神将",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "+100%",
+   "effectShort": "防御120%上昇(本丸防御陣形配置時、編成コスト消費-1・模倣不可)"
+  },
+  {
+   "slot": "B",
+   "skill": "八重言代主神",
+   "rank": "SS",
+   "afterSkill": "無窮天斥陣",
+   "afterRank": "SS",
+   "target": "自身",
+   "rate": "+70%",
+   "effectShort": "自身の持つ初期スキルを模倣する(戦闘スキルのみ)",
+   "afterTarget": "槍弓馬",
+   "afterRate": "+40%",
+   "afterEffectShort": "防御63%上昇(攻撃部隊に兵器兵科がいれば効果1.5倍)"
+  },
+  {
+   "slot": "C",
+   "skill": "神屋楯比売命",
+   "rank": "SS",
+   "afterSkill": "神屋楯比売命",
+   "afterRank": "SS",
+   "target": "自身",
+   "rate": "+70%",
+   "effectShort": "自身の持つ初期スキルを模倣する(戦闘スキルのみ)"
+  },
+  {
+   "slot": "S1",
+   "skill": "高津姫神",
+   "rank": "SS",
+   "afterSkill": "高津姫神",
+   "afterRank": "SS",
+   "target": "自身",
+   "rate": "+70%",
+   "effectShort": "自身の持つ初期スキルを模倣する(戦闘スキルのみ)"
+  },
+  {
+   "slot": "S2",
+   "skill": "錘焔ノ空帯",
+   "rank": "S",
+   "afterSkill": "錘焔ノ藍帯",
+   "afterRank": "SSS",
+   "target": "全",
+   "rate": "+100%",
+   "effectShort": "防御114%上昇(本丸防御陣形配置時、編成コスト消費-1・模倣不可)",
+   "afterTarget": "全",
+   "afterRate": "+100%",
+   "afterEffectShort": "防御200%上昇(本丸防御陣形配置時、編成コスト消費-1.5・模倣不可)"
+  }
+ ],
+ "notes": [
+  "出典: カード画像(LV1形式: 極・職業「文」・統率 槍A/弓A/馬A/器S拡大確認・初期値1100/1150/540・コスト4.5。",
+  "  極限突破表示のため指揮5880は不採用、ixanaryの★0-0=4480を使用(B-00ルール))",
+  " + ixanary.com/cards/2458(成長+51/+58/+3.0・LV10: 確率+100%/全防(所持名声×3%、最大1000%)/減少HPと同数の名声消費・部隊スキル攻破.主への祈り)",
+  " + ixawiki BushoCard/2458(統率2次確認・合成テーブル1次/2次候補+A/S2候補のLV10効果)。",
+  "統率はカード画像+ixawikiの2ソース一致。初期スキルがSランクのためスキル個別ページの新規作成が必要",
+  "(docsのTODOに記録済み)。スキルはS(鍛錬情報なし)のためTR1以降のeffectはnull。",
+  "合成テーブルはixawiki(1次候補+2次候補+候補スキルのLV10効果)"
+ ]
+}

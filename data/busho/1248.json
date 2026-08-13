@@ -1,0 +1,98 @@
+{
+ "name": "長野業正",
+ "no": "1248",
+ "ch": "26章",
+ "cost": 5,
+ "troop": "攻",
+ "sub": "",
+ "effect": "自身の卓越スキルが二重卓越可能(2回目+15%)",
+ "approved": true,
+ "furigana": "ながのなりまさ",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1248_full.png",
+ "imageChar": "assets/img/characters/no1248_char.png",
+ "atkBase": 1200,
+ "atkGrowth": 65,
+ "defBase": 1090,
+ "defGrowth": 49,
+ "tacticsBase": 670,
+ "tacticsGrowth": 3,
+ "lv0Troops": 4930,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "S",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "斑将閃牙",
+ "skillDetail": "S/LV10 確率 100% 対象:全\n模倣不可\n①攻撃戦闘時この武将が持つ卓越スキルは二度卓越できる(2回目の卓越確率は+15%される)",
+ "categoryLinks": [
+  {
+   "href": "skills-takuetsu.html",
+   "label": "卓越スキル一覧を見る"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 二重卓越(2回目+15%)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "火之迦具土神",
+   "rank": "SS",
+   "afterSkill": "火之迦具土神",
+   "afterRank": "SS",
+   "rate": "100%",
+   "target": "槍・馬・砲",
+   "effectShort": "攻撃160%上昇(卓越追加確率25%で3倍)"
+  },
+  {
+   "slot": "B",
+   "skill": "遠呂智ノ閃光",
+   "rank": "SS",
+   "afterSkill": "遠呂智ノ閃光",
+   "afterRank": "SS",
+   "rate": "100%",
+   "target": "全",
+   "effectShort": "攻撃125%上昇+卓越:追加確率15%で攻撃効果が4倍"
+  },
+  {
+   "slot": "C",
+   "skill": "仙剣破斬",
+   "rank": "SSS",
+   "afterSkill": "仙剣破斬",
+   "afterRank": "SSS",
+   "rate": "100%",
+   "target": "全",
+   "effectShort": "攻撃115%上昇+防御115%上昇(卓越で4倍)"
+  },
+  {
+   "slot": "S1",
+   "skill": "至天ノ御剣",
+   "rank": "SSS",
+   "afterSkill": "至天ノ御剣",
+   "afterRank": "SSS",
+   "rate": "70%",
+   "target": "自身",
+   "effectShort": "自身の初期スキルを模倣(卓越で1.3倍)"
+  },
+  {
+   "slot": "S2",
+   "skill": "天津日ノ太刀",
+   "rank": "SS",
+   "afterSkill": "天津日ノ太刀",
+   "afterRank": "SS",
+   "rate": "57%",
+   "target": "全 飛翔4",
+   "effectShort": "攻撃184%上昇(卓越追加確率75%で2倍)"
+  }
+ ],
+ "notes": [
+  "カード画像照合済み(2026-08-02): 槍A/弓S/馬A/器S(rankGradesが未登録だったため追加)",
+  "45do.info(ordinary/0148)生HTML + ameameixa.com(bushocard-1248)生HTML の2ソースを突き合わせ。BのみameameixaがA(火之迦具土神)の重複記載になっており45do.infoのskiladd_wrap(構造化データ、遠呂智ノ閃光)と食い違ったため、より信頼性の高い45do.info側を採用(2026-08-02)"
+ ]
+}

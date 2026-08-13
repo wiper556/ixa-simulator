@@ -1,0 +1,54 @@
+{
+ "name": "炎国覇弾",
+ "rank": "S",
+ "baseRate": 100,
+ "target": "全",
+ "noMimic": true,
+ "effectSummary": "S/LV10 確率 100% 防御540%上昇/対象:全\n模倣不可\n①防御540%上昇する\n②所領防御陣形に配置時のみこの武将の最大指揮兵数は陣形内で最大指揮兵数の大きい武将と同兵数になる",
+ "sourceCharacters": [
+  {
+   "name": "島津義久",
+   "no": "1285",
+   "slot": "移植不可"
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "炎国覇弾",
+  "rank": "S"
+ },
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 防御 540%上昇"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": "全　確率 100% / 防御 620%上昇"
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": "全　確率 100% / 防御 760%上昇"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": "全　確率 100% / 防御 950%上昇"
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": "全　確率 100% / 防御 1200%上昇"
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": "全　確率 100% / 防御 1490%上昇"
+  }
+ ],
+ "notes": [
+  "島津義久(No.1285)自身の初期スキル(移植不可)"
+ ]
+}

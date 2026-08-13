@@ -1,0 +1,39 @@
+{
+ "name": "虚実ノ理合",
+ "rank": "S",
+ "baseRate": 40,
+ "target": "部隊長 覇道",
+ "effectSummary": "S/LV10 確率 40% 対象:部隊長　覇道\n①覇道を持つため所属部隊の武将のスキルを無効化や発動率低下から保護する\n②部隊長の持つ模倣可能な初期スキルを模倣する\n③卓越:追加確率10%で通常攻撃/防御効果を1.2倍にして模倣する",
+ "categoryLinks": [
+  {
+   "href": "skills-hadou.html",
+   "label": "覇道スキル一覧を見る"
+  },
+  {
+   "href": "skills-leadermimic.html",
+   "label": "部隊長模倣スキル一覧を見る"
+  },
+  {
+   "href": "skills-takuetsu.html",
+   "label": "卓越スキル一覧を見る"
+  }
+ ],
+ "sourceCharacters": [
+  {
+   "name": "細川幽斎-復刻-【天】",
+   "no": "10070",
+   "slot": "A"
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "虚実ノ理合",
+  "rank": "S"
+ },
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "部隊長 覇道　確率 40% / 卓越追加確率10%・1.2倍"
+  }
+ ]
+}

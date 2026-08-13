@@ -1,0 +1,107 @@
+{
+ "name": "森可成",
+ "no": "2375",
+ "ch": "未確認",
+ "cost": 4.5,
+ "troop": "槍砲器攻",
+ "sub": "",
+ "effect": "攻撃・破壊上昇",
+ "approved": true,
+ "furigana": "もりよしなり",
+ "illustrator": "ジョージ",
+ "imageFull": "assets/img/characters/no2375_full.png",
+ "imageChar": "assets/img/characters/no2375_char.png",
+ "atkBase": 1130,
+ "atkGrowth": 46,
+ "defBase": 1020,
+ "defGrowth": 32,
+ "tacticsBase": 520,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 4270,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "B",
+  "ki": "A"
+ },
+ "initialSkill": "覇立槍",
+ "skillDetail": "A/LV10 確率 60% 攻撃460%上昇/対象:槍・砲・器\n①攻撃460%上昇する\n②破壊100%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・砲・器　確率 60% / 攻撃 460%上昇+破壊 100%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "覇立槍",
+   "rank": "A",
+   "afterSkill": "戦陣 疾駆",
+   "afterRank": "A",
+   "target": "槍・砲・器",
+   "rate": "60%",
+   "effectShort": "攻撃460%上昇+破壊100%上昇",
+   "afterTarget": "全",
+   "afterRate": "+100%",
+   "afterEffectShort": "速度: 170%上昇(破壊: 170%上昇)"
+  },
+  {
+   "slot": "B",
+   "skill": "覇立槍",
+   "rank": "A",
+   "afterSkill": "戦陣 疾駆",
+   "afterRank": "A",
+   "target": "槍・砲・器",
+   "rate": "60%",
+   "effectShort": "攻撃460%上昇+破壊100%上昇",
+   "afterTarget": "全",
+   "afterRate": "+100%",
+   "afterEffectShort": "速度: 170%上昇(破壊: 170%上昇)"
+  },
+  {
+   "slot": "C",
+   "skill": "覇立槍",
+   "rank": "A",
+   "afterSkill": "戦陣 疾駆",
+   "afterRank": "A",
+   "target": "槍・砲・器",
+   "rate": "60%",
+   "effectShort": "攻撃460%上昇+破壊100%上昇",
+   "afterTarget": "全",
+   "afterRate": "+100%",
+   "afterEffectShort": "速度: 170%上昇(破壊: 170%上昇)"
+  },
+  {
+   "slot": "S1",
+   "skill": "戦陣 疾駆",
+   "rank": "A",
+   "afterSkill": "十束ノ神域",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "+100%",
+   "effectShort": "速度170%上昇+破壊170%上昇",
+   "afterTarget": "全 覇道",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 320%上昇+速度70%上昇(TR別データは未確認)"
+  },
+  {
+   "slot": "S2",
+   "skill": "日輪ノ守護者",
+   "rank": "A",
+   "afterSkill": "戦陣 吟詠",
+   "afterRank": "A",
+   "target": "弓・砲・器",
+   "rate": "+65%",
+   "effectShort": "攻撃340%上昇+防御340%上昇+破壊110%上昇",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 340%上昇+防御 340%上昇(部隊内卓越追加確率+20%)"
+  }
+ ],
+ "notes": [
+  "45do.info+ixagno.blog.fc2.com(blog-entry-9880)確認済み: A/B/Cの覇立槍は移植後「戦陣疾駆」に変化。S1の戦陣疾駆は移植後、保護スキル「十束ノ神域」[SS]に変化",
+  "2026-08-05訂正: S2の日輪ノ守護者は「戦陣吟詠に変化」としていたが誤り。佐久間信盛(No.2397)の登録時にixanary.comの合成テーブル(1次/2次/3次)で確認した通り、1次の時点では自己参照が正しい"
+ ]
+}

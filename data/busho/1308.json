@@ -1,0 +1,123 @@
+{
+ "name": "小西行長（2）",
+ "no": "1308",
+ "ch": "31章",
+ "cost": 5,
+ "troop": "全防",
+ "sub": "",
+ "effect": "所有者より全体格付「戦果」が上位の城主が敵軍にいた場合防御効果3倍",
+ "approved": true,
+ "furigana": "こにしゆきなが",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1308_full.png",
+ "imageChar": "assets/img/characters/no1308_char.png",
+ "atkBase": 1050,
+ "atkGrowth": 42,
+ "defBase": 1270,
+ "defGrowth": 72,
+ "tacticsBase": 680,
+ "tacticsGrowth": 3.5,
+ "lv0Troops": 5100,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "文治ノ護剣",
+ "skillDetail": "S/LV10 確率 48% 防御450%上昇/対象:全\n①防御450%上昇する\n②所有者より全体格付「戦果」が上位の城主が敵軍にいた場合このスキルの防御効果が3倍となる(本丸防御陣形・所領防御陣形のみ発動)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 48% / 防御 450%×3(戦果上位城主が敵にいる場合)=1350%"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": "全　確率 50% / 防御 475%×3(戦果上位城主が敵にいる場合)=1425%"
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": "全　確率 55% / 防御 510%×3(戦果上位城主が敵にいる場合)=1530%"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": "全　確率 60% / 防御 560%×3(戦果上位城主が敵にいる場合)=1680%"
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": "全　確率 65% / 防御 630%×3(戦果上位城主が敵にいる場合)=1890%"
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": "全　確率 70% / 防御 730%×3(戦果上位城主が敵にいる場合)=2190%"
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": "全　確率 100% / 防御 800%×3(戦果上位城主が敵にいる場合)=2400%"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "國才連豪",
+   "rank": "SS",
+   "afterSkill": "國才連豪",
+   "afterRank": "SS",
+   "rate": "50%",
+   "target": "全",
+   "effectShort": "防御を係数×國才連豪所持武将数で上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "至天ノ御剣",
+   "rank": "SSS",
+   "afterSkill": "至天ノ御剣",
+   "afterRank": "SSS",
+   "rate": "70%",
+   "target": "自身",
+   "effectShort": "自身の初期スキルを模倣(卓越時1.3倍)"
+  },
+  {
+   "slot": "C",
+   "skill": "文治ノ護剣",
+   "rank": "S",
+   "afterSkill": "文治ノ護剣",
+   "afterRank": "S",
+   "rate": "48%",
+   "target": "全",
+   "effectShort": "防御450%上昇(格上敵城主戦で3倍)"
+  },
+  {
+   "slot": "S1",
+   "skill": "文治ノ護剣",
+   "rank": "S",
+   "afterSkill": "文治ノ護剣",
+   "afterRank": "S",
+   "rate": "48%",
+   "target": "全",
+   "effectShort": "防御450%上昇(格上敵城主戦で3倍)"
+  },
+  {
+   "slot": "S2",
+   "skill": "龍驤虎躍",
+   "rank": "SS",
+   "afterSkill": "龍驤虎躍",
+   "afterRank": "SS",
+   "rate": "60%",
+   "target": "全",
+   "effectShort": "攻防810%上昇+コスト-1"
+  }
+ ],
+ "notes": [
+  "カード画像照合済み(2026-07-30): 槍S/弓A/馬A/器S(旧データはyari/ki・umaの値が誤って入れ替わっていたため修正)",
+  "ixanary.com生HTML照合(2026-07-31): atkGrowth42(旧52は誤り)・tacticsGrowth3.5(旧3.0は誤り)・defGrowthは72で一致。スキル文も「格付け」→「全体格付」、倍率「2倍」→「3倍」に修正(カード画像原文・ixanary両方で3倍を確認)。TR6(パラレル、確率100%/防御800%上昇)を追記。",
+  "ixagno.blog.fc2.com生HTML照合済み(2026-07-31、blog-entry-10825「小西行長(2)【天】(No.1308)の能力と考察」の合成テーブルで確認)+ameameixa.com(tenskil-31sho「【31章】天武将スキルテーブル一覧」表のNo.1308行)の両ソースでA/B/C/S1/S2の並びが一致確認済み(2026-08-02)。C・S1は共に自身の初期スキル(文治ノ護剣)のままという出典表記のため両枠ともそのまま登録。"
+ ]
+}

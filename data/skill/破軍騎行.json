@@ -1,0 +1,67 @@
+{
+ "name": "破軍騎行",
+ "rank": "SS",
+ "baseRate": 100,
+ "target": "全",
+ "effectSummary": "SS/LV10 確率 100% 攻撃750%上昇/対象:全\n①攻撃750%上昇する\n②不屈2を持つ(攻撃戦闘敗北時指揮兵が不屈の数値×1000まで回復)",
+ "categoryLinks": [
+  {
+   "href": "skills-fukutsu.html",
+   "label": "不屈スキル一覧を見る"
+  }
+ ],
+ "sourceCharacters": [
+  {
+   "name": "徳川家康（5）【覇】",
+   "no": "1263",
+   "slot": "A"
+  },
+  {
+   "name": "村上武吉（2）",
+   "no": "1257",
+   "slot": "S1"
+  },
+  {
+   "name": "毛利輝元【覇】",
+   "no": "1251",
+   "slot": "B"
+  },
+  {
+   "name": "織田信長（8）【覇】",
+   "no": "1250",
+   "slot": "B"
+  },
+  {
+   "name": "三郎信長",
+   "no": "1249",
+   "slot": "C"
+  },
+  {
+   "name": "北条氏康（3）【覇】",
+   "no": "1239",
+   "slot": "S1"
+  },
+  {
+   "name": "伊達稙宗",
+   "no": "1320",
+   "slot": "S2"
+  },
+  {
+   "name": "加藤嘉明",
+   "no": "7405",
+   "slot": "B",
+   "db": "kyoku"
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "破軍騎行",
+  "rank": "SS"
+ },
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全 不屈2　確率 100% / 攻撃 750%上昇"
+  }
+ ]
+}

@@ -1,0 +1,149 @@
+{
+ "name": "緋村抜刀斎",
+ "no": "2601",
+ "ch": "未確認",
+ "cost": 4,
+ "troop": "全攻",
+ "sub": "",
+ "effect": "通常確率では発動せず、卓越:追加確率40%で発動(攻撃400%+飛翔30)",
+ "furigana": "ひむらばっとうさい",
+ "illustrator": "NW/S,RKKD",
+ "imageFull": "assets/img/characters/no2601_full.png",
+ "imageChar": "assets/img/characters/no2601_char.png",
+ "atkBase": 2030,
+ "atkGrowth": 156,
+ "defBase": 1800,
+ "defGrowth": 130,
+ "tacticsBase": 510,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 4830,
+ "rankGrades": {
+  "yari": "SS",
+  "yumi": "B",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "龍槌閃・惨",
+ "skillDetail": "S/LV10 卓越:追加確率40%で発動 攻撃400%上昇/対象:全\n①通常確率では発動せず卓越:追加確率40%で発動する\n②発動時攻撃400%上昇する\n③発動時飛翔30を得る(攻撃戦闘時のみ発動・二重卓越不可・飛翔獲得部分は模倣不可)",
+ "categoryLinks": [
+  {
+   "href": "skills-takuetsu.html",
+   "label": "卓越スキル一覧を見る"
+  },
+  {
+   "href": "skills-hishou-atk.html",
+   "label": "飛翔スキル(攻撃)一覧を見る"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　卓越:追加確率 40%で発動 / 攻撃 400%上昇+飛翔30(攻撃戦闘時のみ・二重卓越不可・飛翔獲得部分は模倣不可)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": "全　卓越:追加確率 40%で発動 / 攻撃 510%上昇+飛翔30"
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": "全　卓越:追加確率 50%で発動 / 攻撃 510%上昇+飛翔35"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": "全　卓越:追加確率 60%で発動 / 攻撃 880%上昇+飛翔40"
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": "全　卓越:追加確率 80%で発動 / 攻撃 1280%上昇+飛翔40"
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": "全　卓越:追加確率 100%で発動 / 攻撃 1280%上昇+飛翔50"
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": null
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "風魔ノ夜討",
+   "rank": "S",
+   "afterSkill": "煙霞迷霧",
+   "afterRank": "S",
+   "target": null,
+   "rate": null,
+   "effectShort": null,
+   "afterTarget": "全",
+   "afterRate": "+70%",
+   "afterEffectShort": "飛翔8(攻撃110%上昇+防御110%上昇・所属部隊の武将が・飛翔X・を持つとき、それらは代わりに・飛翔[X+4]・を持つ(模倣不可・部隊内重複不可))"
+  },
+  {
+   "slot": "B",
+   "skill": "黒飛燕剣",
+   "rank": "S",
+   "afterSkill": "傾国ノ艶姫",
+   "afterRank": "S",
+   "target": "部隊長",
+   "rate": "+50%",
+   "effectShort": "飛翔4+部隊長の初期スキルを模倣(卓越:追加確率50%で1.2倍にして模倣)",
+   "afterTarget": "部隊長",
+   "afterRate": "+60%",
+   "afterEffectShort": "所属部隊の部隊長が持つ模倣可能な初期スキルを模倣する(卓越・追加確率30%で通常攻撃／防御効果を1.2倍して模倣する)"
+  },
+  {
+   "slot": "C",
+   "skill": "天翔雷神",
+   "rank": "S",
+   "afterSkill": "十束ノ神域",
+   "afterRank": "SS",
+   "target": null,
+   "rate": null,
+   "effectShort": null,
+   "afterTarget": "全 覇道",
+   "afterRate": "+100%",
+   "afterEffectShort": "攻撃 320%上昇+速度70%上昇(TR別データは未確認)"
+  },
+  {
+   "slot": "S1",
+   "skill": "至天ノ御剣",
+   "rank": "SSS",
+   "afterSkill": "至天ノ御剣",
+   "afterRank": "SSS",
+   "target": null,
+   "rate": null,
+   "effectShort": null
+  },
+  {
+   "slot": "S2",
+   "skill": "天翔雷神",
+   "rank": "S",
+   "afterSkill": "十束ノ神域",
+   "afterRank": "SS",
+   "target": null,
+   "rate": null,
+   "effectShort": null,
+   "afterTarget": "全 覇道",
+   "afterRate": "+100%",
+   "afterEffectShort": "攻撃 320%上昇+速度70%上昇(TR別データは未確認)"
+  }
+ ],
+ "notes": [
+  "出典: カード画像(LV10形式: 極・職業「剣」・統率 槍SS/弓B/馬A/器A拡大確認・初期値2030/1800/510・コスト4。",
+  "  天限突破表示のため指揮6430は不採用、ixanaryの★0-0=4830を使用(B-00ルール))",
+  " + ixanary.com/cards/2601(成長+156/+130/+2.5。るろうに剣心コラボ)",
+  " + ixanaryスキルページ「龍槌閃・惨」(LV1〜TR5の全鍛錬値+合成テーブル)。",
+  "統率はカード画像で確認(ixawikiは未参照だがixanaryカード+スキルページの2ソース)。",
+  "No.2582(独眼竜政宗・飛竜星照)と同系の卓越依存発動スキル。",
+  "初期スキルがSランクのためスキル個別ページの新規作成が必要(docsのTODOに記録済み)。",
+  "合成テーブルはixanaryスキルページ(1次/2次/3次)"
+ ]
+}

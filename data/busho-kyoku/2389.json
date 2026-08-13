@@ -1,0 +1,101 @@
+{
+ "name": "宮部継潤",
+ "no": "2389",
+ "ch": "29章",
+ "cost": 4,
+ "troop": "槍砲器攻",
+ "sub": "",
+ "effect": "防御参加武将数に応じて攻撃効果上昇",
+ "approved": true,
+ "furigana": "みやべけいじゅん",
+ "illustrator": "鏑木康隆",
+ "imageFull": "assets/img/characters/no2389_full.png",
+ "imageChar": "assets/img/characters/no2389_char.png",
+ "atkBase": 1140,
+ "atkGrowth": 47,
+ "defBase": 1000,
+ "defGrowth": 29,
+ "tacticsBase": 520,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3970,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "B",
+  "ki": "A"
+ },
+ "initialSkill": "戦線邁進",
+ "skillDetail": "A/LV10 確率 65% 攻撃420%上昇/対象:槍・砲・器\n①攻撃420%上昇する\n②防御参加武将数×5.5%を攻撃効果に加算する",
+ "categoryLinks": [
+  {
+   "href": "skills-count-atk.html",
+   "label": "人数依存(攻)スキル一覧を見る"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "coefficient": "5.5",
+   "effect": "槍・砲・器　確率 65% / 攻撃 420%上昇+防御参加武将数依存 5.5%×防御参加武将数(280人)=1540%"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "十束ノ神域",
+   "rank": "SS",
+   "afterSkill": "天聖宝冠",
+   "afterRank": "SSS",
+   "target": "全 覇道",
+   "rate": "100%",
+   "effectShort": "攻撃 320%上昇+速度70%上昇(TR別データは未確認)",
+   "afterTarget": "全",
+   "afterRate": "45%",
+   "afterEffectShort": "攻撃 100%+5%×防御参加武将数(280人)=1500.0%"
+  },
+  {
+   "slot": "B",
+   "skill": "戦線邁進",
+   "rank": "A",
+   "afterSkill": "戦線邁進",
+   "afterRank": "A",
+   "target": "槍・砲・器",
+   "rate": "65%",
+   "effectShort": "攻撃420%上昇+防御参加武将数依存5.5%"
+  },
+  {
+   "slot": "C",
+   "skill": "戦線邁進",
+   "rank": "A",
+   "afterSkill": "戦線邁進",
+   "afterRank": "A",
+   "target": "槍・砲・器",
+   "rate": "65%",
+   "effectShort": "攻撃420%上昇+防御参加武将数依存5.5%"
+  },
+  {
+   "slot": "S1",
+   "skill": "戦線邁進",
+   "rank": "A",
+   "afterSkill": "戦線邁進",
+   "afterRank": "A",
+   "target": "槍・砲・器",
+   "rate": "65%",
+   "effectShort": "攻撃420%上昇+防御参加武将数依存5.5%"
+  },
+  {
+   "slot": "S2",
+   "skill": "志半ノ矛楯",
+   "rank": "A",
+   "afterSkill": "志半ノ矛楯",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "+65%",
+   "effectShort": "攻撃465%上昇+防御465%上昇(模倣不可)"
+  }
+ ],
+ "notes": [
+  "45do.info+ixagno.blog.fc2.com(blog-entry-10265)確認済み: Aの十束ノ神域は移植後「天聖宝冠」[SSS]に変化。B/C/S1(戦線邁進)/S2(志半ノ矛楯)は自己参照で両ソース一致"
+ ]
+}

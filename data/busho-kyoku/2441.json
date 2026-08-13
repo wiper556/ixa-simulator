@@ -1,0 +1,128 @@
+{
+ "name": "由布雪下",
+ "no": "2441",
+ "ch": "未確認",
+ "cost": 4,
+ "troop": "全防",
+ "sub": "",
+ "effect": "防御戦闘勝利時、敵軍全武将に追加ダメージ+12(特殊効果は重複不可)",
+ "furigana": "ゆふせっか",
+ "illustrator": "正子公也",
+ "imageFull": "assets/img/characters/no2441_full.png",
+ "imageChar": "assets/img/characters/no2441_char.png",
+ "atkBase": 1020,
+ "atkGrowth": 38,
+ "defBase": 1070,
+ "defGrowth": 42,
+ "tacticsBase": 520,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3860,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "S",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "江河正攻",
+ "skillDetail": "A/LV10 確率 44% 防御90%上昇/対象:全\n①防御90%上昇する\n②防御戦闘勝利時敵軍全武将に追加ダメージ+12する(特殊効果は重複不可)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 44% / 防御 90%上昇(防御戦闘勝利時、敵軍全武将に追加ダメージ+12・特殊効果は重複不可)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": null
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": null
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": null
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": null
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": null
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": null
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "江河正攻",
+   "rank": "A",
+   "afterSkill": "籠城の妙技",
+   "afterRank": "A",
+   "target": null,
+   "rate": null,
+   "effectShort": null,
+   "afterTarget": "全",
+   "afterRate": "+100%",
+   "afterEffectShort": "防御50%上昇(卓越・追加確率15%で防御効果が3倍)"
+  },
+  {
+   "slot": "B",
+   "skill": "江河正攻",
+   "rank": "A",
+   "afterSkill": null,
+   "afterRank": null,
+   "target": null,
+   "rate": null,
+   "effectShort": null
+  },
+  {
+   "slot": "C",
+   "skill": "江河正攻",
+   "rank": "A",
+   "afterSkill": null,
+   "afterRank": null,
+   "target": null,
+   "rate": null,
+   "effectShort": null
+  },
+  {
+   "slot": "S1",
+   "skill": "籠城の妙技",
+   "rank": "A",
+   "afterSkill": null,
+   "afterRank": null,
+   "target": null,
+   "rate": null,
+   "effectShort": null
+  },
+  {
+   "slot": "S2",
+   "skill": "洞察",
+   "rank": "B",
+   "afterSkill": null,
+   "afterRank": null,
+   "target": null,
+   "rate": null,
+   "effectShort": null
+  }
+ ],
+ "notes": [
+  "出典: カード画像(LV1形式: 極・統率 槍A/弓S/馬A/器A拡大確認・初期値1020/1070/520・コスト4・LV1スキル値)",
+  " + ixanary.com/cards/2441(指揮3860(★0-0)・成長+38/+42/+2.5・LV10: 確率+44%/全防90%/防御勝利時に敵軍全武将へ追加ダメージ+12)",
+  " + ixawiki BushoCard/2441(統率2次確認・合成テーブル1次候補+Aの2次候補)。",
+  "統率はカード画像+ixawikiの2ソース一致。B/C/S1/S2の移植後変化先はixawikiがテンプレ未記入のためnull。",
+  "スキルはA(鍛錬情報なし)のためTR1以降のeffectはnull。",
+  "合成テーブルはixawiki(1次候補+Aの2次候補のみ判明)"
+ ]
+}

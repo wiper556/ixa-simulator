@@ -1,0 +1,125 @@
+{
+ "name": "最上義光-復刻-【覇】",
+ "no": "10076",
+ "ch": "31章",
+ "cost": 6,
+ "troop": "全防",
+ "sub": "覇道",
+ "effect": "本丸/所領防御陣形の最前列か最後列配置時、部隊総防御力25%上昇",
+ "approved": true,
+ "furigana": "もがみよしあき",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no10076_full.png",
+ "imageChar": "assets/img/characters/no10076_char.png",
+ "atkBase": 1220,
+ "atkGrowth": 65,
+ "defBase": 1310,
+ "defGrowth": 82,
+ "tacticsBase": 850,
+ "tacticsGrowth": 4,
+ "lv0Troops": 5450,
+ "rankGrades": {
+  "yari": "X",
+  "yumi": "A",
+  "uma": "SS",
+  "ki": "A"
+ },
+ "initialSkill": "虎皇鋼牙",
+ "skillDetail": "SSS/LV10 確率 45% 対象:全　覇道\n①本丸または所領防御陣形の最前列/最後列に配置時部隊総防御力が25%上昇する(模倣不可)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全 覇道　確率 45% / 最前列or最後列配置時、部隊総防御力+25%"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": "全 覇道　確率 45% / 最前列or最後列配置時、部隊総防御力+26%"
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": "全 覇道　確率 45% / 最前列or最後列配置時、部隊総防御力+27%"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": "全 覇道　確率 45% / 最前列or最後列配置時、部隊総防御力+28%"
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": "全 覇道　確率 45% / 最前列or最後列配置時、部隊総防御力+29%"
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": "全 覇道　確率 45% / 最前列or最後列配置時、部隊総防御力+30%"
+  }
+ ],
+ "categoryLinks": [
+  {
+   "href": "skills-hadou.html",
+   "label": "覇道スキル一覧を見る"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "歴然ノ妙策",
+   "rank": "SSS",
+   "afterSkill": "歴然ノ妙策",
+   "afterRank": "SSS",
+   "rate": "42%",
+   "target": "全",
+   "effectShort": "部隊総コスト依存の攻撃上昇(計算エンジン未対応)"
+  },
+  {
+   "slot": "B",
+   "skill": "仙境解脱",
+   "rank": "SS",
+   "afterSkill": "仙境解脱",
+   "afterRank": "SS",
+   "rate": "48%",
+   "target": "全",
+   "effectShort": "防御910%上昇+コスト-1.5"
+  },
+  {
+   "slot": "C",
+   "skill": "従魔絶神",
+   "rank": "SSS",
+   "afterSkill": "従魔絶神",
+   "afterRank": "SSS",
+   "rate": "43%",
+   "target": "全 飛翔13",
+   "effectShort": "防御を係数×人数で上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "梵天浄界",
+   "rank": "SSS",
+   "afterSkill": "梵天浄界",
+   "afterRank": "SSS",
+   "rate": "60%",
+   "target": "全",
+   "effectShort": "防御50%上昇+破壊を係数×人数で上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "聖剣深鏡",
+   "rank": "S",
+   "afterSkill": "聖剣深鏡",
+   "afterRank": "S",
+   "rate": "1%",
+   "target": "全",
+   "effectShort": "防御を係数×人数で上昇"
+  }
+ ],
+ "notes": [
+  "カード画像照合済み(2026-07-31): 槍X/弓A/馬SS/器A(旧データはyari/yumiの値が誤って入れ替わっていたため修正、画像をズームして再確認済み)。ixagno.blog.fc2.com(blog-entry-11096)の成長値(攻65/防82/兵法4.0)と一致確認。",
+  "ixagno.blog.fc2.com生HTML照合済み(2026-07-31、blog-entry-11096「最上義光(復刻)【覇(2)】(No.10076)の能力と考察」の合成テーブルで確認)。",
+  "45do.info(最新記事は2025年12月付#0386までで31章カード自体の記事が無い)・ixanary.com(/cards/10076/は404、31章復刻カード未収録)はいずれも本カードの合成テーブルが確認できず、二重ソース確認は現状不可(要ユーザー確認、10074/10075と同様の状況)。第二(B)枠の移植後スキルは出典元の表で空欄(リンク省略)だったため他4枠と同じく同一スキル継続と推定して登録(要検証)。",
+  "2026-08-02追加調査: ameameixa.com(bushocard-10076が404)も記事なしを確認。第二ソース発見できず単一ソース(ixagno)のまま、黄丸化は見送り。"
+ ]
+}

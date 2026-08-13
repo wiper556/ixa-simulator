@@ -1,0 +1,138 @@
+{
+ "name": "吉川元春",
+ "no": "2449",
+ "ch": "未確認",
+ "cost": 4,
+ "troop": "全攻防",
+ "sub": "",
+ "effect": "部隊内武将の全スキルの卓越追加確率+20%(模倣不可・自部隊内重複不可)",
+ "furigana": "きっかわもとはる",
+ "illustrator": "正子公也",
+ "imageFull": "assets/img/characters/no2449_full.png",
+ "imageChar": "assets/img/characters/no2449_char.png",
+ "atkBase": 1170,
+ "atkGrowth": 54,
+ "defBase": 1170,
+ "defGrowth": 54,
+ "tacticsBase": 530,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 4170,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "波濤ノ剛撃",
+ "skillDetail": "S/LV10 確率 50% 攻撃114%上昇/対象:全\n模倣不可\n①攻撃114%上昇する\n②防御114%上昇する\n③部隊内武将の全スキルの卓越追加確率が20%上昇する(特殊効果は自部隊内では重複不可)",
+ "categoryLinks": [
+  {
+   "href": "skills-takuetsu.html",
+   "label": "卓越スキル一覧を見る"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 50% / 攻撃 114%上昇+防御 114%上昇(部隊内武将の全スキルの卓越追加確率+20%・模倣不可・自部隊内重複不可)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": null
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": null
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": null
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": null
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": null
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": null
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "波濤ノ剛撃",
+   "rank": "S",
+   "afterSkill": "布都御魂ノ鬨",
+   "afterRank": "SS",
+   "target": null,
+   "rate": null,
+   "effectShort": null,
+   "afterTarget": "全",
+   "afterRate": "+35%",
+   "afterEffectShort": "攻撃 40%上昇+防御 40%上昇(部隊内レアリティS以上のスキル個数×20%加算)"
+  },
+  {
+   "slot": "B",
+   "skill": "波濤ノ剛撃",
+   "rank": "S",
+   "afterSkill": "布都御魂ノ鬨",
+   "afterRank": "SS",
+   "target": null,
+   "rate": null,
+   "effectShort": null,
+   "afterTarget": "全",
+   "afterRate": "+35%",
+   "afterEffectShort": "攻撃 40%上昇+防御 40%上昇(部隊内レアリティS以上のスキル個数×20%加算)"
+  },
+  {
+   "slot": "C",
+   "skill": "騒速ノ神撃",
+   "rank": "SS",
+   "afterSkill": "騒速ノ神撃",
+   "afterRank": "SS",
+   "target": null,
+   "rate": null,
+   "effectShort": null
+  },
+  {
+   "slot": "S1",
+   "skill": "布都御魂ノ鬨",
+   "rank": "SS",
+   "afterSkill": "布都御魂ノ鬨",
+   "afterRank": "SS",
+   "target": null,
+   "rate": null,
+   "effectShort": null
+  },
+  {
+   "slot": "S2",
+   "skill": "布都御魂ノ鬨",
+   "rank": "SS",
+   "afterSkill": "布都御魂ノ鬨",
+   "afterRank": "SS",
+   "target": null,
+   "rate": null,
+   "effectShort": null
+  }
+ ],
+ "notes": [
+  "出典: カード画像(LV1形式: 極・統率 槍S/弓A/馬A/器A拡大確認・初期値1170/1170/530・コスト4・LV1スキル値)",
+  " + ixanary.com/cards/2449(指揮4170(★0-0)・成長+54/+54/+2.5・LV10: 確率+50%/全攻防114%/部隊内卓越追加確率+20%)",
+  " + ixawiki BushoCard/2449(統率2次確認・合成テーブル1次/2次候補)。",
+  "統率はカード画像+ixawikiの2ソース一致。部隊内卓越確率上昇スキルとしてシミュのspecialSkillsにも登録済み",
+  "(takuetsuRateBonus:20)。攻撃+防御の同時変動はtrTableに併記(multistat規則)。",
+  "初期スキルがSランクのためスキル個別ページの新規作成が必要(docsのTODOに記録済み)。",
+  "合成テーブルはixawiki(1次候補+2次候補)"
+ ]
+}

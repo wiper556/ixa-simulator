@@ -1,0 +1,96 @@
+{
+ "name": "焼尽神無",
+ "rank": "SS",
+ "baseRate": 44,
+ "target": "全 無尽",
+ "hasMujin": true,
+ "effectSummary": "SS/LV10 確率 44% 攻撃上昇/対象:全　無尽\n①(係数×防御参加武将数)%を攻撃効果に加算する\n②無尽を持つため部隊消費コストを-0.5する",
+ "categoryLinks": [
+  {
+   "href": "skills-count-atk.html",
+   "label": "人数依存(攻)スキル一覧を見る"
+  },
+  {
+   "href": "skills-mujin.html",
+   "label": "無尽スキル一覧を見る"
+  },
+  {
+   "href": "skills-cost.html",
+   "label": "コスト減少スキル一覧を見る"
+  }
+ ],
+ "sourceCharacters": [
+  {
+   "name": "毛利輝元-復刻-【覇】",
+   "no": "10075",
+   "slot": "C"
+  },
+  {
+   "name": "本多忠勝（2）",
+   "no": "1303",
+   "slot": "B"
+  },
+  {
+   "name": "豊臣秀長【覇】",
+   "no": "1298",
+   "slot": "B"
+  },
+  {
+   "name": "島津義弘（4）",
+   "no": "1294",
+   "slot": "S1"
+  },
+  {
+   "name": "織田信長（9）【覇】",
+   "no": "1286",
+   "slot": "C"
+  },
+  {
+   "name": "伊達稙宗",
+   "no": "1320",
+   "slot": "A"
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "焼尽神無",
+  "rank": "SS"
+ },
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "coefficient": "6.9",
+   "effect": "全 無尽　確率 44% / 攻撃 6.9%×防御参加武将数(280人)=1932.0%"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "coefficient": "7.3",
+   "effect": "全 無尽　確率 44% / 攻撃 7.3%×防御参加武将数(280人)=2044.0%"
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "coefficient": "7.9",
+   "effect": "全 無尽　確率 44% / 攻撃 7.9%×防御参加武将数(280人)=2212.0%"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "coefficient": "8.8",
+   "effect": "全 無尽　確率 44% / 攻撃 8.8%×防御参加武将数(280人)=2464.0%"
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "coefficient": "10",
+   "effect": "全 無尽　確率 44% / 攻撃 10%×防御参加武将数(280人)=2800.0%"
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "coefficient": "12",
+   "effect": "全 無尽　確率 44% / 攻撃 12%×防御参加武将数(280人)=3360.0%"
+  }
+ ]
+}

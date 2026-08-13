@@ -1,0 +1,57 @@
+{
+ "name": "白銀双鶴",
+ "rank": "S",
+ "baseRate": 55,
+ "target": "全",
+ "noMimic": true,
+ "effectSummary": "S/LV10 確率 55% 攻撃730%上昇/対象:全 飛翔19\n模倣不可\n①攻撃730%上昇する\n②速度200%上昇する(確率100%)\n③飛翔19を得る(初期スキルとして発動しかつ攻撃戦闘であれば飛翔50とみなす)",
+ "sourceCharacters": [
+  {
+   "name": "蒲生氏郷",
+   "no": "7403",
+   "slot": "S1",
+   "db": "kyoku"
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "白銀双鶴",
+  "rank": "S"
+ },
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全 飛翔19　確率 55% / 攻撃 730%上昇+速度 200%上昇(攻撃戦闘では飛翔50とみなす)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": null
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": null
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": null
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": null
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": "全 飛翔24　確率 55% / 攻撃 1500%上昇+速度 250%上昇(攻撃戦闘では飛翔60とみなす)"
+  }
+ ],
+ "notes": [
+  "2026-08-12一括作成。S以上の初期スキルは無条件でページを作る規約(A-3-9)の未処理分。",
+  "内容は武将エントリの登録値をそのまま転記している。",
+  "categoryLinksは9項目の判定を1件ずつやる必要があるため意図的に付けていない(付け忘れではない)。"
+ ]
+}

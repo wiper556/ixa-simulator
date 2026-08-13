@@ -1,0 +1,132 @@
+{
+ "name": "北条綱成",
+ "no": "2374",
+ "ch": "未確認",
+ "cost": 4.5,
+ "troop": "槍馬器騎攻防",
+ "sub": "",
+ "effect": "攻防上昇+部隊内スキルの卓越確率+50%(模倣不可)",
+ "approved": true,
+ "furigana": "ほうじょうつなしげ",
+ "illustrator": "鹿角",
+ "imageFull": "assets/img/characters/no2374_full.png",
+ "imageChar": "assets/img/characters/no2374_char.png",
+ "atkBase": 1100,
+ "atkGrowth": 43,
+ "defBase": 1100,
+ "defGrowth": 43,
+ "tacticsBase": 510,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 4280,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "A",
+  "uma": "S",
+  "ki": "A"
+ },
+ "initialSkill": "勝旗勇躍",
+ "skillDetail": "A/LV10 確率 100% 攻撃440%上昇/対象:槍・馬・器・騎　卓越\n模倣不可\n①攻撃440%上昇する\n②防御440%上昇する\n③このスキルを所持する武将の全スキルの卓越確率に50%を加算する",
+ "categoryLinks": [
+  {
+   "href": "skills-takuetsu.html",
+   "label": "卓越スキル一覧を見る"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・馬・器・騎　確率 100% / 攻撃 440%上昇+防御 440%上昇(卓越確率+50%)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": "槍・馬・器・騎　確率 100% / 攻撃 450%上昇+防御 450%上昇(卓越確率+55%)"
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": "槍・馬・器・騎　確率 100% / 攻撃 470%上昇+防御 470%上昇(卓越確率+60%)"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": "槍・馬・器・騎　確率 100% / 攻撃 500%上昇+防御 500%上昇(卓越確率+65%)"
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": "槍・馬・器・騎　確率 100% / 攻撃 540%上昇+防御 540%上昇(卓越確率+70%)"
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": "槍・馬・器・騎　確率 100% / 攻撃 600%上昇+防御 600%上昇(卓越確率+80%)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "勝旗勇躍",
+   "rank": "A",
+   "afterSkill": "戦陣 吟詠",
+   "afterRank": "A",
+   "target": "槍・馬・器・騎 卓越",
+   "rate": "100%",
+   "effectShort": "攻撃440%上昇+防御440%上昇(卓越確率+50%・模倣不可)",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 340%上昇+防御 340%上昇(部隊内卓越追加確率+20%)"
+  },
+  {
+   "slot": "B",
+   "skill": "勝旗勇躍",
+   "rank": "A",
+   "afterSkill": "戦陣 吟詠",
+   "afterRank": "A",
+   "target": "槍・馬・器・騎 卓越",
+   "rate": "100%",
+   "effectShort": "攻撃440%上昇+防御440%上昇(卓越確率+50%・模倣不可)",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 340%上昇+防御 340%上昇(部隊内卓越追加確率+20%)"
+  },
+  {
+   "slot": "C",
+   "skill": "霊妙秘剣",
+   "rank": "A",
+   "afterSkill": "戦陣 剣舞",
+   "afterRank": "A",
+   "target": "槍・馬・砲 飛翔6 卓越",
+   "rate": "+100%",
+   "effectShort": "攻撃180%上昇+防御180%上昇(卓越:追加確率-30%で3倍・0%超のみ抽選・模倣不可)",
+   "afterTarget": "全",
+   "afterRate": "+100%",
+   "afterEffectShort": "飛翔6(攻撃80%上昇+防御80%上昇卓越追加確率30%で攻防効果が4倍)"
+  },
+  {
+   "slot": "S1",
+   "skill": "戦陣 吟詠",
+   "rank": "A",
+   "afterSkill": "戦陣 吟詠",
+   "afterRank": "A",
+   "target": "全 卓越",
+   "rate": "+100%",
+   "effectShort": "攻撃340%上昇+防御340%上昇+部隊内卓越追加確率+20%(模倣不可・特殊効果は自部隊内では重複不可)"
+  },
+  {
+   "slot": "S2",
+   "skill": "戦陣 吟詠",
+   "rank": "A",
+   "afterSkill": "戦陣 吟詠",
+   "afterRank": "A",
+   "target": "全 卓越",
+   "rate": "+100%",
+   "effectShort": "攻撃340%上昇+防御340%上昇+部隊内卓越追加確率+20%(模倣不可・特殊効果は自部隊内では重複不可)"
+  }
+ ],
+ "notes": [
+  "45do.info+ixagno.blog.fc2.com(blog-entry-9881)確認済み: Cの霊妙秘剣は移植後「戦陣 剣舞」に変化(自己参照ではない)",
+  "2026-08-05訂正: A/Bの勝旗勇躍は「戦陣吟詠に変化」としていたが誤り。佐久間信盛(No.2397)登録時にixanary.comの合成テーブル(1次/2次/3次)で確認した通り、1次の時点では自己参照が正しい"
+ ]
+}

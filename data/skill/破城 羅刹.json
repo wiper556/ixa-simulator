@@ -1,0 +1,61 @@
+{
+ "name": "破城 羅刹",
+ "rank": "S",
+ "baseRate": 100,
+ "target": "全",
+ "effectSummary": "S/LV10 確率 100% 攻撃124%上昇/対象:全\n①攻撃124%上昇する\n②破壊55%上昇する\n③資源獲得率12%(破壊した耐久値に応じて資源獲得)",
+ "sourceCharacters": [
+  {
+   "name": "森本儀太夫",
+   "no": "2453",
+   "slot": "A・B",
+   "db": "kyoku"
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "神屋楯比売命",
+  "rank": "SS"
+ },
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 攻撃 124%上昇+破壊 55%上昇(資源獲得率12%・破壊した耐久値に応じて資源獲得)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": null
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": null
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": null
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": null
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": null
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": null
+  }
+ ],
+ "notes": [
+  "2026-08-12一括作成。S以上の初期スキルは無条件でページを作る規約(A-3-9)の未処理分。",
+  "内容は武将エントリの登録値をそのまま転記している。",
+  "categoryLinksは9項目の判定を1件ずつやる必要があるため意図的に付けていない(付け忘れではない)。"
+ ]
+}

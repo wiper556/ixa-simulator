@@ -1,0 +1,108 @@
+{
+ "name": "志賀親次",
+ "no": "7007",
+ "ch": "未確認",
+ "cost": 4,
+ "troop": "弓砲器防",
+ "sub": "",
+ "effect": "拠点待機90分ごとに防御効果1.5倍(上限5回)",
+ "furigana": "しがちかつぐ",
+ "illustrator": "岩元辰郎",
+ "imageFull": "assets/img/characters/no7007_full.png",
+ "imageChar": "assets/img/characters/no7007_char.png",
+ "atkBase": 1030,
+ "atkGrowth": 33,
+ "defBase": 1150,
+ "defGrowth": 47,
+ "tacticsBase": 530,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 4010,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "S",
+  "uma": "B",
+  "ki": "A"
+ },
+ "initialSkill": "破窮ノ勇将",
+ "skillDetail": "A/LV10 確率 60% 防御100%上昇/対象:弓・砲・器\n①防御100%上昇する\n②拠点待機90分ごとに防御効果が1.5倍になる(上限5回)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓・砲・器　確率 60% / 防御 100%上昇(拠点待機90分ごとに1.5倍・上限5回)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": "弓・砲・器　確率 60% / 防御 105%上昇(拠点待機80分ごとに1.5倍・上限5回)"
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": "弓・砲・器　確率 60% / 防御 120%上昇(拠点待機70分ごとに1.5倍・上限5回)"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": null
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": null
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": null
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "彷徨う福音",
+   "rank": "B",
+   "afterSkill": "彷徨う福音",
+   "afterRank": "B"
+  },
+  {
+   "slot": "B",
+   "skill": "戦陣 神屋",
+   "rank": "A",
+   "afterSkill": "神屋楯比売命",
+   "afterRank": "SS",
+   "afterTarget": "自身",
+   "afterRate": "",
+   "afterEffectShort": "自身の初期スキルを模倣(戦闘スキルのみ)"
+  },
+  {
+   "slot": "C",
+   "skill": "破窮ノ勇将",
+   "rank": "A",
+   "afterSkill": "破窮ノ勇将",
+   "afterRank": "A"
+  },
+  {
+   "slot": "S1",
+   "skill": "破窮ノ勇将",
+   "rank": "A",
+   "afterSkill": "破窮ノ勇将",
+   "afterRank": "A"
+  },
+  {
+   "slot": "S2",
+   "skill": "志半ノ矛楯",
+   "rank": "A",
+   "afterSkill": "志半ノ矛楯",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "+65%",
+   "effectShort": "攻撃465%上昇+防御465%上昇(模倣不可)"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/7007 と skills/破窮ノ勇将 の生HTML)で確認(2026-08-08)。",
+  "合成テーブルはスキルページの1次(=移植前)・2次(=移植後)から取得。",
+  "候補スキルの対象・確率・効果はサイト内の既存登録から転記(未登録のスキルは空のまま)。"
+ ]
+}

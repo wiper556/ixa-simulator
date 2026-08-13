@@ -1,0 +1,22 @@
+{
+ "name": "銀翼神騎兵",
+ "rank": "S",
+ "baseRate": 100,
+ "target": "弓馬器",
+ "effectSummary": "S/LV10 対象 弓馬器 攻撃：64%上昇 確率：+100% 防御：64%上昇 確率：+100% 速度：50%上昇 確率：+100%",
+ "ownHiddenCandidate": {
+  "skill": "覇竜十架砲",
+  "rank": "S"
+ },
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓馬器　確率 100% / 攻撃64%上昇 防御64%上昇 速度50%上昇"
+  }
+ ],
+ "notes": [
+  "2026-08-12作成。合成候補に出てくるS以上はページを作る規約(A-3)の未処理分。",
+  "ixanary.com/skills/銀翼神騎兵 から取得。categoryLinksは9項目の判定が要るため付けていない。"
+ ]
+}

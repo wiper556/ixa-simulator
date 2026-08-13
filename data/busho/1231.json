@@ -1,0 +1,103 @@
+{
+ "name": "立花宗茂（2）",
+ "no": "1231",
+ "ch": "25章",
+ "cost": 4.5,
+ "troop": "弓馬攻",
+ "sub": "飛翔10",
+ "effect": "飛翔値合計依存で攻撃力上昇",
+ "approved": true,
+ "furigana": "たちばなむねしげ",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1231_full.png",
+ "imageChar": "assets/img/characters/no1231_char.png",
+ "atkBase": 1200,
+ "atkGrowth": 66,
+ "defBase": 1100,
+ "defGrowth": 40,
+ "tacticsBase": 630,
+ "tacticsGrowth": 3,
+ "lv0Troops": 4730,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "S",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "天翔雷神",
+ "skillDetail": "S/LV10 確率 50% 攻撃45%上昇/対象:弓・馬・焙 飛翔10\n①対象兵科(弓・馬・焙)を指揮した戦闘時攻撃力が45%上昇する\n②所属部隊の武将が戦闘時にもつ飛翔値の合計×8%を攻撃効果に加算する(TR1〜TR5は未確認)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓・馬・焙 飛翔10　確率 50% / 攻撃 45%上昇+飛翔値合計×8%加算"
+  }
+ ],
+ "categoryLinks": [
+  {
+   "href": "skills-hishou-atk.html",
+   "label": "飛翔スキル一覧(攻撃)を見る"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "天之尾羽張",
+   "rank": "SS",
+   "afterSkill": "天之尾羽張",
+   "afterRank": "SS",
+   "rate": "100%",
+   "target": "全",
+   "effectShort": "攻撃170%上昇+速度150%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "開闢ノ逆鉾",
+   "rank": "SS",
+   "afterSkill": "開闢ノ逆鉾",
+   "afterRank": "SS",
+   "rate": "100%",
+   "target": "全",
+   "effectShort": "攻撃254%上昇(卓越追加確率30%で兵士被害15%減少)"
+  },
+  {
+   "slot": "C",
+   "skill": "天翔雷神",
+   "rank": "S",
+   "afterSkill": "十束ノ神域",
+   "afterRank": "SS",
+   "rate": "50%",
+   "target": "弓・馬・焙 飛翔10",
+   "effectShort": "攻撃45%上昇+飛翔値合計×8%加算",
+   "afterTarget": "全 覇道",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 320%上昇+速度70%上昇(TR別データは未確認)"
+  },
+  {
+   "slot": "S1",
+   "skill": "十束ノ神域",
+   "rank": "SS",
+   "afterSkill": "天聖宝冠",
+   "afterRank": "SSS",
+   "rate": "100%",
+   "target": "全 覇道",
+   "effectShort": "攻撃320%上昇+速度70%上昇",
+   "afterTarget": "全",
+   "afterRate": "45%",
+   "afterEffectShort": "攻撃 100%+5%×防御参加武将数(280人)=1500.0%"
+  },
+  {
+   "slot": "S2",
+   "skill": "天頂ノ電光",
+   "rank": "SSS",
+   "afterSkill": "天頂ノ電光",
+   "afterRank": "SSS",
+   "rate": "12%",
+   "target": "全",
+   "effectShort": "攻撃190%上昇(部隊長なら発動率・効果3倍)"
+  }
+ ],
+ "notes": [
+  "45do.info(生HTML skiladd_wrap)+ameameixa.com(スキルテーブル)の2ソース照合済み。ameameixa側はS1のランク表記が[S]となっていたが45do.info(spec_box見出しでも[SS]表記)およびskills.htmlのランクがSSのため45do.info側を採用"
+ ]
+}

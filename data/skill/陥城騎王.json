@@ -1,0 +1,28 @@
+{
+ "name": "陥城騎王",
+ "rank": "S",
+ "baseRate": 45,
+ "target": "弓・馬・砲・器",
+ "effectSummary": "S/LV10 確率 45% 攻撃200%上昇/対象:弓・馬・砲・器\n①攻撃200%上昇する\n②自軍攻撃武将数×10%を攻撃効果に加算する",
+ "sourceCharacters": [
+  {
+   "name": "武田勝頼（5）",
+   "no": "1252",
+   "slot": "A・B"
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "破邪後輝",
+  "rank": "SS"
+ },
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓・馬・砲・器　確率 45% / 攻撃 200%上昇(自軍攻撃武将数×10%加算)"
+  }
+ ],
+ "notes": [
+  "No.1252(武田勝頼(5))の初期スキル(S、自身のsynthesisTable A・B枠で自己参照)。45do.info生HTML(ordinary/0211)+ixanary.com(skills/陥城騎王)で2ソース確認、TRなし(LV10のみ)"
+ ]
+}

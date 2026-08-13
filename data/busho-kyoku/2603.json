@@ -1,0 +1,130 @@
+{
+ "name": "志々雄真実",
+ "no": "2603",
+ "ch": "未確認",
+ "cost": 3.5,
+ "troop": "槍砲器攻",
+ "sub": "",
+ "effect": "強襲時または強襲部隊との戦闘時に効果3倍(模倣不可)",
+ "furigana": "ししおまこと",
+ "illustrator": "NW/S,RKKD",
+ "imageFull": "assets/img/characters/no2603_full.png",
+ "imageChar": "assets/img/characters/no2603_char.png",
+ "atkBase": 2050,
+ "atkGrowth": 157,
+ "defBase": 1700,
+ "defGrowth": 120,
+ "tacticsBase": 530,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 4690,
+ "rankGrades": {
+  "yari": "SS",
+  "yumi": "B",
+  "uma": "B",
+  "ki": "S"
+ },
+ "initialSkill": "紅蓮ノ刃",
+ "skillDetail": "S/LV10 確率 40% 攻撃385%上昇/対象:槍・砲・器\n模倣不可\n①攻撃385%上昇する\n②強襲時または強襲部隊との戦闘時に効果が3倍になる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・砲・器　確率 40% / 攻撃 385%上昇(強襲時または強襲部隊との戦闘時に効果3倍・模倣不可)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": "槍・砲・器　確率 40% / 攻撃 490%上昇(強襲時3倍)"
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": "槍・砲・器　確率 40% / 攻撃 680%上昇(強襲時3倍)"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": "槍・砲・器　確率 40% / 攻撃 940%上昇(強襲時3倍)"
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": "槍・砲・器　確率 40% / 攻撃 940%上昇(強襲時3.2倍)"
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": "槍・砲・器　確率 40% / 攻撃 940%上昇(強襲時3.5倍)"
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": null
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "天香山命",
+   "rank": "SS",
+   "afterSkill": "天香山命",
+   "afterRank": "SS",
+   "target": null,
+   "rate": null,
+   "effectShort": null
+  },
+  {
+   "slot": "B",
+   "skill": "紅蓮ノ刃",
+   "rank": "S",
+   "afterSkill": "照闇騎行",
+   "afterRank": "SS",
+   "target": "槍・砲・器",
+   "rate": "+40%",
+   "effectShort": "攻撃385%上昇(強襲時3倍・模倣不可)",
+   "afterTarget": "全",
+   "afterRate": "+100%",
+   "afterEffectShort": "攻撃 540%上昇+速度250%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "紅蓮ノ刃",
+   "rank": "S",
+   "afterSkill": "照闇騎行",
+   "afterRank": "SS",
+   "target": "槍・砲・器",
+   "rate": "+40%",
+   "effectShort": "攻撃385%上昇(強襲時3倍・模倣不可)",
+   "afterTarget": "全",
+   "afterRate": "+100%",
+   "afterEffectShort": "攻撃 540%上昇+速度250%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "照闇騎行",
+   "rank": "SS",
+   "afterSkill": "照闇騎行",
+   "afterRank": "SS",
+   "target": null,
+   "rate": null,
+   "effectShort": null
+  },
+  {
+   "slot": "S2",
+   "skill": "国堅大神",
+   "rank": "SS",
+   "afterSkill": "国堅大神",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "+60%",
+   "effectShort": "攻撃170%上昇+防御170%上昇(部隊消費コスト-1・特殊効果は模倣不可)"
+  }
+ ],
+ "notes": [
+  "出典: カード画像(LV10形式: 極・職業「剣」・統率 槍SS/弓B/馬B/器S拡大確認・初期値2050/1700/530・コスト3.5)",
+  " + ixanary.com/cards/2603(指揮4690(★0-0)・成長+157/+120/+2.5。るろうに剣心コラボ)",
+  " + ixanaryスキルページ「紅蓮ノ刃」(LV1〜TR5全値+合成テーブル)。",
+  "初期スキルがSランクのためスキル個別ページの新規作成が必要(docsのTODOに記録済み)。",
+  "合成テーブルはixanaryスキルページ(1次/2次/3次)"
+ ]
+}

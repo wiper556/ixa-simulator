@@ -1,0 +1,124 @@
+{
+ "name": "北条早雲（2）",
+ "no": "1296",
+ "ch": "30章",
+ "cost": 5.5,
+ "troop": "全攻",
+ "sub": "覇道",
+ "effect": "極限スキル含む追加スキル全ての攻撃・破壊効果が2倍",
+ "approved": true,
+ "furigana": "ほうじょうそううん",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1296_full.png",
+ "imageChar": "assets/img/characters/no1296_char.png",
+ "atkBase": 1250,
+ "atkGrowth": 72,
+ "defBase": 1100,
+ "defGrowth": 51,
+ "tacticsBase": 700,
+ "tacticsGrowth": 3.5,
+ "lv0Troops": 5300,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "S",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "覇道ノ泰斗",
+ "skillDetail": "S/LV10 確率 100% 攻撃500%上昇/対象:全　覇道\n模倣不可\n①攻撃500%上昇する\n②このスキルを持つ武将カードは追加・極限スキルの攻撃・破壊効果が2倍となる",
+ "categoryLinks": [
+  {
+   "href": "skills-hadou.html",
+   "label": "覇道スキル一覧を見る"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全 覇道　確率 100% / 攻撃 500%上昇(倍加率2倍)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": "全 覇道　確率 100% / 攻撃 540%上昇(倍加率2.1倍)"
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": "全 覇道　確率 100% / 攻撃 600%上昇(倍加率2.2倍)"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": "全 覇道　確率 100% / 攻撃 670%上昇(倍加率2.3倍)"
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": "全 覇道　確率 100% / 攻撃 750%上昇(倍加率2.4倍)"
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": "全 覇道　確率 100% / 攻撃 840%上昇(倍加率2.5倍)"
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": "全 覇道　確率 100% / 攻撃 1000%上昇(倍加率2.6倍)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "神羅聖域",
+   "rank": "SS",
+   "afterSkill": "神羅聖域",
+   "afterRank": "SS",
+   "rate": "40%",
+   "target": "全 覇道",
+   "effectShort": "攻撃900%上昇+防御900%上昇+破壊160%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "万物神勇",
+   "rank": "SSS",
+   "afterSkill": "万物神勇",
+   "afterRank": "SSS",
+   "rate": "43%",
+   "target": "全 撤退",
+   "effectShort": "攻撃を係数×人数で上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "天地超克",
+   "rank": "SSS",
+   "afterSkill": "天地超克",
+   "afterRank": "SSS",
+   "rate": "46%",
+   "target": "全 不屈1",
+   "effectShort": "攻撃を係数×人数で上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "勇冠三軍",
+   "rank": "SSS",
+   "afterSkill": "勇冠三軍",
+   "afterRank": "SSS",
+   "rate": "45%",
+   "target": "全",
+   "effectShort": "攻撃50%+係数×人数で上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "神羅聖域",
+   "rank": "SS",
+   "afterSkill": "神羅聖域",
+   "afterRank": "SS",
+   "rate": "40%",
+   "target": "全 覇道",
+   "effectShort": "攻撃900%上昇+防御900%上昇+破壊160%上昇"
+  }
+ ]
+}

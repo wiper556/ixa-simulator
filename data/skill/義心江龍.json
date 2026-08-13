@@ -1,0 +1,31 @@
+{
+ "name": "義心江龍",
+ "rank": "S",
+ "baseRate": 55,
+ "target": "槍・砲・器 不屈1",
+ "effectSummary": "S/LV10 確率 55% 攻撃420%上昇/対象:槍・砲・器　不屈1\n①攻撃420%上昇する\n②不屈1を持つ(攻撃戦闘敗北時指揮兵が不屈の数値×1000まで回復)",
+ "categoryLinks": [
+  {
+   "href": "skills-fukutsu.html",
+   "label": "不屈スキル一覧を見る"
+  }
+ ],
+ "sourceCharacters": [
+  {
+   "name": "浅井長政（4）",
+   "no": "1244",
+   "slot": "A"
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "天宇受売命",
+  "rank": "SSS"
+ },
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・砲・器 不屈1　確率 55% / 攻撃 420%上昇(敗北時、指揮兵が1000まで回復)"
+  }
+ ]
+}

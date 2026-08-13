@@ -1,0 +1,35 @@
+{
+ "name": "覇王征軍",
+ "rank": "SS",
+ "baseRate": 42,
+ "target": "全",
+ "effectSummary": "SS/LV10 確率 42% 攻撃上昇/対象:全\n①部隊総コストに応じて攻撃効果が変化する(LV10基準25.39%上昇)",
+ "sourceCharacters": [
+  {
+   "name": "斎藤道三【覇】",
+   "no": "1202",
+   "slot": "S2"
+  },
+  {
+   "name": "伊達輝宗",
+   "no": "1260",
+   "slot": "S2"
+  },
+  {
+   "name": "武田晴信",
+   "no": "1205",
+   "slot": "C"
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "覇王征軍",
+  "rank": "SS"
+ },
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 42% / 攻撃 25.39%上昇(部隊総コストで変動、TR別データは未確認)"
+  }
+ ]
+}

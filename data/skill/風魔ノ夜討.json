@@ -1,0 +1,30 @@
+{
+ "name": "風魔ノ夜討",
+ "rank": "S",
+ "baseRate": 70,
+ "target": "槍弓器焙",
+ "effectSummary": "S/LV10 確率：+70% / 対象 槍弓器焙 飛翔12 攻撃：(所属部隊の武将が戦闘時にもつ 飛翔 値の合計×7)%上昇",
+ "sourceCharacters": [
+  {
+   "name": "緋村抜刀斎",
+   "no": "2601",
+   "slot": "A",
+   "db": "kyoku"
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "煙霞迷霧",
+  "rank": "S"
+ },
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍弓器焙　確率 70% / 飛翔12 攻撃(所属部隊の武将が戦闘時にもつ 飛翔 値の合計×7)%上昇"
+  }
+ ],
+ "notes": [
+  "2026-08-12作成。合成候補に出てくるS以上はページを作る規約(A-3)の未処理分。",
+  "ixanary.com/skills/風魔ノ夜討 から取得。categoryLinksは9項目の判定が要るため付けていない。"
+ ]
+}

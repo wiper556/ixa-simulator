@@ -1,0 +1,106 @@
+{
+ "name": "直江兼続（3）",
+ "no": "1228",
+ "ch": "25章",
+ "cost": 4,
+ "troop": "全攻防",
+ "sub": "",
+ "effect": "攻防上昇／部隊内スキルの卓越追加確率上昇",
+ "approved": true,
+ "furigana": "なおえかねつぐ",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1228_full.png",
+ "imageChar": "assets/img/characters/no1228_char.png",
+ "atkBase": 1200,
+ "atkGrowth": 66,
+ "defBase": 1080,
+ "defGrowth": 48,
+ "tacticsBase": 650,
+ "tacticsGrowth": 3,
+ "lv0Troops": 4550,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "S",
+  "ki": "A"
+ },
+ "initialSkill": "閻魔ノ裁き",
+ "skillDetail": "S/LV10 確率 100% 攻撃184%上昇/対象:全\n模倣不可\n①攻撃184%上昇する\n②防御184%上昇する\n③部隊内武将の全スキルの卓越追加確率が25%上昇する(特殊効果は自部隊内では重複不可・TR1〜TR5は未確認)",
+ "categoryLinks": [
+  {
+   "href": "skills-takuetsu.html",
+   "label": "卓越スキル一覧を見る"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 攻撃 184%上昇+防御 184%上昇(卓越追加確率+25%)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "閻魔ノ裁き",
+   "rank": "S",
+   "afterSkill": "月詠ノ覇威",
+   "afterRank": "SS",
+   "rate": "100%",
+   "target": "全",
+   "effectShort": "攻撃184%上昇+防御184%上昇(卓越追加確率+25%)",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃344%上昇+防御344%上昇(卓越確率+15%)"
+  },
+  {
+   "slot": "B",
+   "skill": "閻魔ノ裁き",
+   "rank": "S",
+   "afterSkill": "月詠ノ覇威",
+   "afterRank": "SS",
+   "rate": "100%",
+   "target": "全",
+   "effectShort": "攻撃184%上昇+防御184%上昇(卓越追加確率+25%)",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃344%上昇+防御344%上昇(卓越確率+15%)"
+  },
+  {
+   "slot": "C",
+   "skill": "建御雷神ノ閃光",
+   "rank": "SS",
+   "afterSkill": "八幡神ノ威光",
+   "afterRank": "SSS",
+   "rate": "100%",
+   "target": "全 飛翔5",
+   "effectShort": "攻撃210%上昇+防御210%上昇+卓越確率+35%(模倣不可)",
+   "afterTarget": "部隊長",
+   "afterRate": "70%",
+   "afterEffectShort": "模倣倍率1.25倍"
+  },
+  {
+   "slot": "S1",
+   "skill": "月詠ノ覇威",
+   "rank": "SS",
+   "afterSkill": "月詠ノ覇威",
+   "afterRank": "SS",
+   "rate": "100%",
+   "target": "全",
+   "effectShort": "攻撃344%上昇+防御344%上昇+卓越確率+15%(模倣不可)"
+  },
+  {
+   "slot": "S2",
+   "skill": "開闢ノ逆鉾",
+   "rank": "SS",
+   "afterSkill": "開闢ノ逆鉾",
+   "afterRank": "SS",
+   "rate": "100%",
+   "target": "全",
+   "effectShort": "攻撃254%上昇(卓越追加確率30%で兵士被害15%減少)"
+  }
+ ],
+ "notes": [
+  "45do.info(生HTML skiladd_wrap)+ameameixa.com(スキルテーブル)の2ソース照合済み、両者一致"
+ ]
+}

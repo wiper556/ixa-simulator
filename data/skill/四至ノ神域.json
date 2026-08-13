@@ -1,0 +1,56 @@
+{
+ "name": "四至ノ神域",
+ "rank": "SSS",
+ "baseRate": 70,
+ "target": "自身",
+ "effectSummary": "SSS/LV10 確率 70% 対象:自身\n①自身が持つ初期スキルを模倣する\n②模倣時の通常攻撃防御効果を1.25倍に強化する",
+ "categoryLinks": [
+  {
+   "href": "skills-mimic.html",
+   "label": "自模倣スキル一覧を見る"
+  }
+ ],
+ "sourceCharacters": [
+  {
+   "name": "上杉景勝（6）",
+   "no": "1301",
+   "slot": "C"
+  },
+  {
+   "name": "相馬義胤（2）",
+   "no": "1264",
+   "slot": "C"
+  },
+  {
+   "name": "武田勝頼（5）",
+   "no": "1252",
+   "slot": "C"
+  },
+  {
+   "name": "蘆名盛氏（2）",
+   "no": "1241",
+   "slot": "S1"
+  },
+  {
+   "name": "細川忠興",
+   "no": "1235",
+   "slot": "S1"
+  },
+  {
+   "name": "島津義久(1219)",
+   "no": "1219",
+   "slot": "S1"
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "四至ノ神域",
+  "rank": "SSS"
+ },
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "自身　確率 70% / 効果倍率 1.25倍"
+  }
+ ]
+}

@@ -1,0 +1,111 @@
+{
+ "name": "相楽左之助【覇】",
+ "no": "10067",
+ "furigana": "さがらさのすけ",
+ "illustrator": "NW/S,RKKD 直良有祐",
+ "atkBase": 2500,
+ "atkGrowth": 0,
+ "defBase": 2450,
+ "defGrowth": 0,
+ "tacticsBase": 800,
+ "tacticsGrowth": 0,
+ "lv0Troops": 4960,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "X"
+ },
+ "initialSkill": "極衝爆砕",
+ "skillDetail": "SSS/LV10 確率：+37% / 対象 槍砲器 防御：150%上昇 自軍内で同兵種を指揮している武将数×13%を防御効果に加算",
+ "ch": "30章",
+ "cost": 5,
+ "troop": "槍砲器防",
+ "sub": "",
+ "effect": "自軍内での同一兵種依存",
+ "approved": true,
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍砲器　確率 37% / 防御150%上昇 自軍内で同兵種を指揮している武将数×13%を防御効果に加算"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": "槍砲器　確率 40% / 防御150%上昇 自軍内で同兵種を指揮している武将数×13.4%を防御効果に加算"
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": "槍砲器　確率 43% / 防御150%上昇 自軍内で同兵種を指揮している武将数×13.9%を防御効果に加算"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": "槍砲器　確率 46% / 防御150%上昇 自軍内で同兵種を指揮している武将数×14.5%を防御効果に加算"
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": "槍砲器　確率 49% / 防御150%上昇 自軍内で同兵種を指揮している武将数×15.2%を防御効果に加算"
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": "槍砲器　確率 52% / 防御150%上昇 自軍内で同兵種を指揮している武将数×16%を防御効果に加算"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "二重の極み",
+   "rank": "A",
+   "afterSkill": "二重の極み",
+   "afterRank": "A",
+   "target": null,
+   "rate": null,
+   "effectShort": null
+  },
+  {
+   "slot": "B",
+   "skill": "筋骨隆々",
+   "rank": "S",
+   "afterSkill": "筋骨隆々",
+   "afterRank": "S",
+   "target": null,
+   "rate": null,
+   "effectShort": null
+  },
+  {
+   "slot": "C",
+   "skill": "梵天浄界",
+   "rank": "SSS",
+   "afterSkill": "梵天浄界",
+   "afterRank": "SSS",
+   "target": null,
+   "rate": null,
+   "effectShort": null
+  },
+  {
+   "slot": "S1",
+   "skill": "極衝爆砕",
+   "rank": "SSS",
+   "afterSkill": "極衝爆砕",
+   "afterRank": "SSS",
+   "target": null,
+   "rate": null,
+   "effectShort": null
+  },
+  {
+   "slot": "S2",
+   "skill": "永世ノ天隻",
+   "rank": "SS",
+   "afterSkill": "永世ノ天隻",
+   "afterRank": "SS",
+   "target": null,
+   "rate": null,
+   "effectShort": null
+  }
+ ]
+}

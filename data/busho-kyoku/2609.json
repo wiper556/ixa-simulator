@@ -1,0 +1,142 @@
+{
+ "name": "相楽左之助",
+ "no": "2609",
+ "ch": "未確認",
+ "cost": 4.5,
+ "troop": "全破",
+ "sub": "不屈1",
+ "effect": "所属部隊のうち自身を除く武将の初期スキルに不屈1を付与(模倣不可・重複不可)",
+ "furigana": "さがらさのすけ",
+ "illustrator": "NW/S,RKKD",
+ "imageFull": "assets/img/characters/no2609_full.png",
+ "imageChar": "assets/img/characters/no2609_char.png",
+ "atkBase": 1220,
+ "atkGrowth": 64,
+ "defBase": 1080,
+ "defGrowth": 47,
+ "tacticsBase": 520,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 4580,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "悪一文字",
+ "skillDetail": "S/LV10 確率 28% 破壊120%上昇/対象:全　不屈1\n模倣不可\n①破壊120%上昇する\n②所属部隊のうち自身を除く武将の初期スキルは不屈1を得る(特殊効果は自部隊内では重複不可)",
+ "categoryLinks": [
+  {
+   "href": "skills-fukutsu.html",
+   "label": "不屈スキル一覧を見る"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 28% / 破壊 120%上昇(不屈1・自身を除く部隊内武将の初期スキルに不屈1付与・模倣不可・自部隊内重複不可)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": "全　確率 30% / 破壊 200%上昇(不屈1・他武将へ不屈1付与)"
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": "全　確率 40% / 破壊 350%上昇(不屈1・他武将へ不屈1付与)"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": "全　確率 50% / 破壊 450%上昇(不屈1・他武将へ不屈2付与)"
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": "全　確率 65% / 破壊 650%上昇(不屈1・他武将へ不屈2付与)"
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": "全　確率 100% / 破壊 850%上昇(不屈1・他武将へ不屈3付与)"
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": null
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "二重の極み",
+   "rank": "A",
+   "afterSkill": "二重の極み",
+   "afterRank": "A",
+   "target": "全 卓越",
+   "rate": "+100%",
+   "effectShort": "攻撃340%上昇+防御340%上昇(卓越:追加確率100%で2倍・模倣不可)"
+  },
+  {
+   "slot": "B",
+   "skill": "転歌",
+   "rank": "A",
+   "afterSkill": "入来神舞",
+   "afterRank": "S",
+   "target": null,
+   "rate": null,
+   "effectShort": null,
+   "afterTarget": "部隊長",
+   "afterRate": "+55%",
+   "afterEffectShort": "部隊長の初期スキルを1.1倍に強化して模倣(TR別データは未確認)"
+  },
+  {
+   "slot": "C",
+   "skill": "入来神舞",
+   "rank": "S",
+   "afterSkill": "飛蝶野分",
+   "afterRank": "B",
+   "target": "部隊長",
+   "rate": "+55%",
+   "effectShort": "部隊長の模倣可能な初期スキルを通常攻撃/防御効果1.1倍で模倣",
+   "afterTarget": "部隊長",
+   "afterRate": "+60%",
+   "afterEffectShort": "部隊長の初期スキルを模倣(戦闘スキルのみ)(TR別データは未確認)"
+  },
+  {
+   "slot": "S1",
+   "skill": "高津姫神",
+   "rank": "SS",
+   "afterSkill": "高津姫神",
+   "afterRank": "SS",
+   "target": "自身",
+   "rate": "+70%",
+   "effectShort": "自身の持つ初期スキルを模倣する(戦闘スキルのみ)"
+  },
+  {
+   "slot": "S2",
+   "skill": "十束ノ神域",
+   "rank": "SS",
+   "afterSkill": "天聖宝冠",
+   "afterRank": "SSS",
+   "target": "全",
+   "rate": "+100%",
+   "effectShort": "攻撃320%上昇+速度70%上昇(所属部隊のスキルを無効化・発動低下から保護)",
+   "afterTarget": "全",
+   "afterRate": "+45%",
+   "afterEffectShort": "攻撃 100%+5%×防御参加武将数(280人)=1500.0%"
+  }
+ ],
+ "notes": [
+  "出典: カード画像(LV1形式: 極・統率 槍A/弓A/馬A/器S拡大確認・初期値1220/1080/520・コスト4.5。",
+  "  限界突破表示のため指揮5180は不採用、ixanaryの★0-0=4580を使用(B-00ルール))",
+  " + ixanary.com/cards/2609(成長+64/+47/+2.5。るろうに剣心コラボ)",
+  " + ixanaryスキルページ「悪一文字」(LV1〜TR5全値+合成テーブル)。",
+  "自身が不屈1を持ち、さらに部隊内の他武将へも不屈を付与する(TR3以降は不屈2、TR5で不屈3)。",
+  "シミュのspecialSkillsにも登録済み(fukutsu:1/destructTrTable)。他武将への付与は現エンジン未対応。",
+  "初期スキルがSランクのためスキル個別ページの新規作成が必要(docsのTODOに記録済み)。",
+  "合成テーブルはixanaryスキルページ(1次/2次/3次)"
+ ]
+}

@@ -1,0 +1,117 @@
+{
+ "name": "池田恒興",
+ "no": "7017",
+ "ch": "未確認",
+ "cost": 3.5,
+ "troop": "全攻",
+ "sub": "",
+ "effect": "自軍1部隊での攻撃で攻撃効果3倍",
+ "furigana": "いけだつねおき",
+ "illustrator": "三好載克",
+ "imageFull": "assets/img/characters/no7017_full.png",
+ "imageChar": "assets/img/characters/no7017_char.png",
+ "atkBase": 1160,
+ "atkGrowth": 47,
+ "defBase": 1060,
+ "defGrowth": 37,
+ "tacticsBase": 520,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3790,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "B",
+  "ki": "A"
+ },
+ "initialSkill": "飛蝶中入",
+ "skillDetail": "A/LV10 確率 40% 攻撃300%上昇/対象:全\n①攻撃300%上昇する\n②自軍1部隊での攻撃で攻撃効果が3倍になる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 40% / 攻撃 300%上昇(自軍1部隊での攻撃で3倍)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": null
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": "全　確率 40% / 攻撃 400%上昇(自軍1部隊での攻撃で3倍)"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": null
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": null
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": null
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "月暈",
+   "rank": "A",
+   "afterSkill": "志半ノ矛楯",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "42%",
+   "effectShort": "攻撃250%上昇(自軍1部隊での攻撃時3倍)",
+   "afterTarget": "全",
+   "afterRate": "+65%",
+   "afterEffectShort": "攻撃465%上昇+防御465%上昇(模倣不可)"
+  },
+  {
+   "slot": "B",
+   "skill": "西国将軍",
+   "rank": "A",
+   "afterSkill": "西国将軍",
+   "afterRank": "A"
+  },
+  {
+   "slot": "C",
+   "skill": "飛蝶野分",
+   "rank": "B",
+   "afterSkill": "風狂幻術",
+   "afterRank": "B",
+   "target": "部隊長",
+   "rate": "60%",
+   "effectShort": "部隊長の初期スキルを模倣(戦闘スキルのみ)(TR別データは未確認)",
+   "afterTarget": "部隊長",
+   "afterRate": "+53%",
+   "afterEffectShort": "部隊長の初期スキルを模倣(戦闘スキルのみ)"
+  },
+  {
+   "slot": "S1",
+   "skill": "飛蝶中入",
+   "rank": "A",
+   "afterSkill": "飛蝶中入",
+   "afterRank": "A"
+  },
+  {
+   "slot": "S2",
+   "skill": "志半ノ矛楯",
+   "rank": "A",
+   "afterSkill": "志半ノ矛楯",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "+65%",
+   "effectShort": "攻撃465%上昇+防御465%上昇(模倣不可)"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/7017 と skills/飛蝶中入 の生HTML)で確認(2026-08-08)。",
+  "合成テーブルはスキルページの1次(=移植前)・2次(=移植後)から取得。",
+  "候補スキルの対象・確率・効果はサイト内の既存登録から転記(未登録のスキルは空のまま)。"
+ ]
+}

@@ -1,0 +1,122 @@
+{
+ "name": "相馬義胤（2）",
+ "no": "1264",
+ "ch": "28章",
+ "cost": 4.5,
+ "troop": "全攻",
+ "sub": "",
+ "effect": "同兵種の敵軍武将数依存で攻撃上昇",
+ "approved": true,
+ "furigana": "そうまよしたね",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1264_full.png",
+ "imageChar": "assets/img/characters/no1264_char.png",
+ "atkBase": 1250,
+ "atkGrowth": 71,
+ "defBase": 1030,
+ "defGrowth": 34,
+ "tacticsBase": 650,
+ "tacticsGrowth": 3,
+ "lv0Troops": 4800,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "S",
+  "ki": "S"
+ },
+ "initialSkill": "北天ノ奔馬",
+ "skillDetail": "S/LV10 確率 55% 攻撃150%上昇/対象:全\n模倣不可\n①攻撃150%上昇する\n②この武将と同じ兵種を指揮する敵軍武将数×12.5%を攻撃効果に加算する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 55% / 攻撃 150%上昇+同兵種敵軍武将数×12.5%加算"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": "全　確率 55% / 攻撃 150%上昇+同兵種敵軍武将数×12.7%加算"
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": "全　確率 55% / 攻撃 150%上昇+同兵種敵軍武将数×13%加算"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": "全　確率 55% / 攻撃 150%上昇+同兵種敵軍武将数×13.5%加算"
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": "全　確率 55% / 攻撃 150%上昇+同兵種敵軍武将数×14.2%加算"
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": "全　確率 55% / 攻撃 150%上昇+同兵種敵軍武将数×15%加算"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "北天ノ奔馬",
+   "rank": "S",
+   "afterSkill": "万物神勇",
+   "afterRank": "SSS",
+   "rate": "55%",
+   "target": "全",
+   "effectShort": "攻撃150%上昇+同兵種敵軍武将数×12.5%加算",
+   "afterTarget": "全 撤退",
+   "afterRate": "43%",
+   "afterEffectShort": "攻撃 9.2%×防御参加武将数(280人)=2576.0%"
+  },
+  {
+   "slot": "B",
+   "skill": "北天ノ奔馬",
+   "rank": "S",
+   "afterSkill": "万物神勇",
+   "afterRank": "SSS",
+   "rate": "55%",
+   "target": "全",
+   "effectShort": "攻撃150%上昇+同兵種敵軍武将数×12.5%加算",
+   "afterTarget": "全 撤退",
+   "afterRate": "43%",
+   "afterEffectShort": "攻撃 9.2%×防御参加武将数(280人)=2576.0%"
+  },
+  {
+   "slot": "C",
+   "skill": "四至ノ神域",
+   "rank": "SSS",
+   "afterSkill": "四至ノ神域",
+   "afterRank": "SSS",
+   "rate": "70%",
+   "target": "自身",
+   "effectShort": "自身が持つ初期スキルを通常攻撃/防御効果1.25倍にして模倣する"
+  },
+  {
+   "slot": "S1",
+   "skill": "万物神勇",
+   "rank": "SSS",
+   "afterSkill": "万物神勇",
+   "afterRank": "SSS",
+   "rate": "43%",
+   "target": "全 撤退",
+   "effectShort": "攻撃(9.2×防御参加武将数)%上昇+撤退(陣での防御戦闘に参加しない)"
+  },
+  {
+   "slot": "S2",
+   "skill": "開闢ノ逆鉾",
+   "rank": "SS",
+   "afterSkill": "開闢ノ逆鉾",
+   "afterRank": "SS",
+   "rate": "100%",
+   "target": "全",
+   "effectShort": "攻撃254%上昇+卓越:攻撃戦闘時追加確率30%で自部隊の兵士被害15%減少(部隊内重複上限2・模倣不可)"
+  }
+ ],
+ "notes": [
+  "synthesisTable: 45do.info生HTML(skiladd_wrap)+ixanary.com(北天ノ奔馬スキルページの合成テーブル)で2ソース一致確認済み(2026-08-02)。S1の万物神勇はixanary/skills.html/他の同スキル登録箇所と照合しrank:SSS(旧SSは誤り)に修正"
+ ]
+}

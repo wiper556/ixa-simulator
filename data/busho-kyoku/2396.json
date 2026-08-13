@@ -1,0 +1,124 @@
+{
+ "name": "高橋紹運",
+ "no": "2396",
+ "ch": "29章",
+ "cost": 4.5,
+ "troop": "槍弓砲器防",
+ "sub": "",
+ "effect": "対象兵科指揮時、部隊総防御力上昇(模倣不可)",
+ "furigana": "たかはしじょううん",
+ "illustrator": "Natto-7",
+ "imageFull": "assets/img/characters/no2396_full.png",
+ "imageChar": "assets/img/characters/no2396_char.png",
+ "atkBase": 1010,
+ "atkGrowth": 30,
+ "defBase": 1130,
+ "defGrowth": 46,
+ "tacticsBase": 510,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 4280,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "B",
+  "ki": "A"
+ },
+ "initialSkill": "乱世ノ華",
+ "skillDetail": "A/LV10 確率 40% 防御3%上昇/対象:槍・弓・砲・器\n模倣不可\n①対象兵科を指揮した戦闘時部隊総防御力が3%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・弓・砲・器　確率 40% / 総防御 3%上昇"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": "槍・弓・砲・器　確率 55% / 総防御 3%上昇"
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": "槍・弓・砲・器　確率 55% / 総防御 5%上昇"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": null
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": null
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": null
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "戦陣 無縫",
+   "rank": "A",
+   "afterSkill": "天衣無縫神戒",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "42%",
+   "effectShort": "防御 80%上昇(部隊総コストで変動)",
+   "afterTarget": "全",
+   "afterRate": "50%",
+   "afterEffectShort": "防御 30.02%上昇(部隊総コストで変動)"
+  },
+  {
+   "slot": "B",
+   "skill": "戦陣 無縫",
+   "rank": "A",
+   "afterSkill": "天衣無縫神戒",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "42%",
+   "effectShort": "防御 80%上昇(部隊総コストで変動)",
+   "afterTarget": "全",
+   "afterRate": "50%",
+   "afterEffectShort": "防御 30.02%上昇(部隊総コストで変動)"
+  },
+  {
+   "slot": "C",
+   "skill": "天衣無縫神戒",
+   "rank": "SS",
+   "afterSkill": "天衣無縫神戒",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "50%",
+   "effectShort": "防御30.02%上昇(部隊総コストで変動)"
+  },
+  {
+   "slot": "S1",
+   "skill": "国津破邪ノ楯",
+   "rank": "SS",
+   "afterSkill": "国津破邪ノ楯",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "60%",
+   "effectShort": "防御60.04%上昇(部隊総コストで変動)"
+  },
+  {
+   "slot": "S2",
+   "skill": "天磐船",
+   "rank": "SS",
+   "afterSkill": "天磐船",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "56%",
+   "effectShort": "防御(3.8×防御参加武将数)%上昇=1064.0%(280人時)"
+  }
+ ],
+ "approved": true,
+ "notes": [
+  "45do.info生HTML(ordinary/0343)の合成テーブル確認。初期スキル(乱世ノ華)は移植不可のためどのスロットにも出現せず、A/B=戦陣無縫[A]→天衣無縫神戒[SS](自己参照ではない、既存の稲葉一鉄No.2392と同じパターン)/C=天衣無縫神戒[SS]/S1=国津破邪ノ楯[SS]/S2=天磐船[SS](いずれも既存ページのsourceCharactersに追記済み)",
+  "A/Bのeffectは2026-08-04に確認・修正: 45do.info本ページの「戦陣 無縫」欄(確率100%/馬砲器/攻撃防御155%+卓越15%)は他武将のデータと矛盾する誤記と判明。",
+  "ixagno.blog.fc2.com(blog-entry-9570)で天衣無縫神戒の正確な性能(確率50%/防御30.02%上昇)を確認、これを正として修正"
+ ]
+}

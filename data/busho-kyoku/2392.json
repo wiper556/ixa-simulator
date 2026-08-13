@@ -1,0 +1,130 @@
+{
+ "name": "稲葉一鉄",
+ "no": "2392",
+ "ch": "29章",
+ "cost": 4,
+ "troop": "防",
+ "sub": "兵站",
+ "effect": "自領以外の加勢戦闘時のみ追加スキルの防御効果が2倍(模倣不可)",
+ "approved": true,
+ "furigana": "いなばいってつ",
+ "illustrator": "池田宗隆",
+ "imageFull": "assets/img/characters/no2392_full.png",
+ "imageChar": "assets/img/characters/no2392_char.png",
+ "atkBase": 1020,
+ "atkGrowth": 32,
+ "defBase": 1130,
+ "defGrowth": 46,
+ "tacticsBase": 510,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 4000,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "B",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "鉄花ノ陣",
+ "skillDetail": "A/LV10 確率 100% 対象:追加スキル　兵站\n模倣不可\n①このスキルを持つ武将カードは自領以外の加勢戦闘時のみ追加スキルの防御効果が2倍となる",
+ "categoryLinks": [
+  {
+   "href": "skills-heitan.html",
+   "label": "兵站スキル一覧を見る"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "追加スキル 兵站　確率 100% / 防御効果(自領以外加勢時) 2倍"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": "追加スキル 兵站　確率 100% / 防御効果(自領以外加勢時) 2.1倍"
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": "追加スキル 兵站　確率 100% / 防御効果(自領以外加勢時) 2.2倍"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": null
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": null
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": null
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "戦陣 無縫",
+   "rank": "A",
+   "afterSkill": "天衣無縫神戒",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "42%",
+   "effectShort": "防御 80%上昇(部隊総コストで変動)",
+   "afterTarget": "全",
+   "afterRate": "50%",
+   "afterEffectShort": "防御 30.02%上昇(部隊総コストで変動)"
+  },
+  {
+   "slot": "B",
+   "skill": "戦陣 無縫",
+   "rank": "A",
+   "afterSkill": "天衣無縫神戒",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "42%",
+   "effectShort": "防御 80%上昇(部隊総コストで変動)",
+   "afterTarget": "全",
+   "afterRate": "50%",
+   "afterEffectShort": "防御 30.02%上昇(部隊総コストで変動)"
+  },
+  {
+   "slot": "C",
+   "skill": "天衣無縫神戒",
+   "rank": "SS",
+   "afterSkill": "天衣無縫神戒",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "+50%",
+   "effectShort": "防御30.02%上昇(部隊の総コストで変動)"
+  },
+  {
+   "slot": "S1",
+   "skill": "国津破邪ノ楯",
+   "rank": "SS",
+   "afterSkill": "国津破邪ノ楯",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "+60%",
+   "effectShort": "防御60.04%上昇(部隊の総コストで変動)"
+  },
+  {
+   "slot": "S2",
+   "skill": "志半ノ矛楯",
+   "rank": "A",
+   "afterSkill": "志半ノ矛楯",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "+65%",
+   "effectShort": "攻撃465%上昇+防御465%上昇(模倣不可)"
+  }
+ ],
+ "notes": [
+  "45do.info+ixagno.blog.fc2.com(blog-entry-10361)確認済み: 自己スキル(鉄花ノ陣)は候補に含まれず。A/Bの戦陣無縫は移植後「天衣無縫神戒」[SS]に変化(自己参照ではない)",
+  "A/Bのeffectは2026-08-04に確認・修正: 45do.info本ページの「戦陣 無縫」欄(確率+100%/馬砲器/攻撃防御155%+卓越15%)は他武将のデータと矛盾する誤記と判明。",
+  "ixagno.blog.fc2.com(blog-entry-9570)の総コスト依存防御スキル比較表で「戦陣 無縫」は確率42%・対象全・攻撃効果なしの純防御スキルと確認、移植後の天衣無縫神戒(確率50%/防御30.02%上昇)を正として修正"
+ ]
+}

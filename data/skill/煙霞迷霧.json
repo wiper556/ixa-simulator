@@ -1,0 +1,31 @@
+{
+ "name": "煙霞迷霧",
+ "rank": "S",
+ "baseRate": 70,
+ "target": "全",
+ "noMimic": true,
+ "effectSummary": "S/LV10 確率：+70% / 対象 全 飛翔8 攻撃：110%上昇 防御：110%上昇 所属部隊の武将が 飛翔X を持つときそれらは代わりに 飛翔[X+4] を持つ(模倣不可・部隊内重複不可)",
+ "sourceCharacters": [
+  {
+   "name": "四乃森蒼紫",
+   "no": "2605",
+   "slot": "C",
+   "db": "kyoku"
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "煙霞迷霧",
+  "rank": "S"
+ },
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 70% / 飛翔8 攻撃110%上昇 防御110%上昇 所属部隊の武将が 飛翔X を持つとき、それらは代わりに 飛翔[X+4] を持つ(模倣不可・部隊内重複不可)"
+  }
+ ],
+ "notes": [
+  "2026-08-12作成。合成候補に出てくるS以上はページを作る規約(A-3)の未処理分。",
+  "ixanary.com/skills/煙霞迷霧 から取得。categoryLinksは9項目の判定が要るため付けていない。"
+ ]
+}

@@ -1,0 +1,30 @@
+{
+ "name": "轟閻 霹靂火",
+ "rank": "S",
+ "baseRate": 40,
+ "target": "砲",
+ "effectSummary": "S/LV10 確率：+40% / 対象 砲 防御：36%上昇",
+ "sourceCharacters": [
+  {
+   "name": "佐竹義重",
+   "no": "2437",
+   "slot": "C",
+   "db": "kyoku"
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "武神八幡陣",
+  "rank": "SS"
+ },
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "砲　確率 40% / 防御36%上昇"
+  }
+ ],
+ "notes": [
+  "2026-08-12作成。合成候補に出てくるS以上はページを作る規約(A-3)の未処理分。",
+  "ixanary.com/skills/轟閻 霹靂火 から取得。categoryLinksは9項目の判定が要るため付けていない。"
+ ]
+}

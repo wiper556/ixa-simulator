@@ -1,0 +1,134 @@
+{
+ "name": "豊臣秀吉【覇】",
+ "no": "1274",
+ "ch": "29章",
+ "cost": 6,
+ "troop": "全攻",
+ "sub": "無尽 覇道",
+ "effect": "部隊内の全極限スキルに無尽付与／無尽を持つスキルの攻撃効果2倍",
+ "approved": true,
+ "furigana": "とよとみひでよし",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1274_full.png",
+ "imageChar": "assets/img/characters/no1274_char.png",
+ "atkBase": 1290,
+ "atkGrowth": 81,
+ "defBase": 1220,
+ "defGrowth": 67,
+ "tacticsBase": 850,
+ "tacticsGrowth": 4,
+ "lv0Troops": 5420,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "SS",
+  "uma": "A",
+  "ki": "SS"
+ },
+ "initialSkill": "幻王ノ采配",
+ "skillDetail": "SSS/LV10 確率 100% 攻撃360%上昇/対象:全　無尽　覇道\n模倣不可\n部隊長時限定\n①部隊内の全極限スキルに無尽を付与する\n②自部隊内の無尽を持つスキルの攻撃効果を2倍する\n③自部隊内の各小隊長の無尽を持たない初期スキルは攻撃戦闘時に無効化され保護不可(覇道天聖等の保護スキルでも無効化を防げない)",
+ "categoryLinks": [
+  {
+   "href": "skills-mujin.html",
+   "label": "無尽スキル一覧を見る"
+  },
+  {
+   "href": "skills-hadou.html",
+   "label": "覇道スキル一覧を見る"
+  },
+  {
+   "href": "skills-cost.html",
+   "label": "コスト減少スキル一覧を見る"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全 無尽 覇道　確率 100% / 攻撃 360%上昇"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": "全 無尽 覇道　確率 100% / 攻撃 400%上昇"
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": "全 無尽 覇道　確率 100% / 攻撃 475%上昇"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": "全 無尽 覇道　確率 100% / 攻撃 585%上昇"
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": "全 無尽 覇道　確率 100% / 攻撃 730%上昇"
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": "全 無尽 覇道　確率 100% / 攻撃 920%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "神羅聖域",
+   "rank": "SS",
+   "afterSkill": "神羅聖域",
+   "afterRank": "SS",
+   "rate": "40%",
+   "target": "全 覇道",
+   "effectShort": "攻撃900%上昇+防御900%上昇+破壊160%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "閃裂討鬼",
+   "rank": "SS",
+   "afterSkill": "閃裂討鬼",
+   "afterRank": "SS",
+   "rate": "45%",
+   "target": "全",
+   "effectShort": "攻撃50%上昇(部隊総コストで変化)"
+  },
+  {
+   "slot": "C",
+   "skill": "絶無灰尽",
+   "rank": "SS",
+   "afterSkill": "絶無灰尽",
+   "afterRank": "SS",
+   "rate": "100%",
+   "target": "全 無尽 不屈1",
+   "effectShort": "攻撃1010%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "従魔絶神",
+   "rank": "SSS",
+   "afterSkill": "従魔絶神",
+   "afterRank": "SSS",
+   "rate": "43%",
+   "target": "全 飛翔13",
+   "effectShort": "防御を係数×人数で上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "破邪後輝",
+   "rank": "SS",
+   "afterSkill": "飛龍衝天",
+   "afterRank": "SS",
+   "rate": "100%",
+   "target": "全 覇道",
+   "effectShort": "攻撃 770%上昇+速度150%上昇+破壊150%上昇(TR以降のデータなし、LV10が最大値)",
+   "afterTarget": "全 飛翔15",
+   "afterRate": "45%",
+   "afterEffectShort": "攻撃 200%+7.5%×防御参加武将数(280人)=2300.0%"
+  }
+ ],
+ "notes": [
+  "生スクリーンショット照合済み(2026-07-30): 槍A/弓SS/馬A/器SS。ixanary.com側のjsonはyumi/kiba(弓/馬)の値が入れ替わって格納されているため画像基準を採用",
+  "45do.info(ordinary/0319)生HTML照合+ixagno.blog.fc2.com(blog-entry-10209)+ameameixa.com(post-12334「29章天武将スキル一覧」表のNo.1274行)の三ソースで一致確認済み。S2のみ移植後スキルが破邪後輝→飛龍衝天に変化(ixagno「初期テーブル/左記スキル移植後」対応表で確認、1251/毛利輝元(覇)のS1候補と同じ移植先)。"
+ ]
+}

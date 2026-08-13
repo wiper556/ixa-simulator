@@ -1,0 +1,30 @@
+{
+ "name": "武神八幡陣",
+ "rank": "SS",
+ "baseRate": 60,
+ "target": "全",
+ "effectSummary": "SS/LV10 確率：+60% / 対象 全 防御：NULL%上昇 (部隊の総コストで効果が変化します)",
+ "sourceCharacters": [
+  {
+   "name": "森可成(2402)",
+   "no": "2402",
+   "slot": "S2",
+   "db": "kyoku"
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "武神八幡陣",
+  "rank": "SS"
+ },
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 60% / 防御NULL%上昇 (部隊の総コストで効果が変化します)"
+  }
+ ],
+ "notes": [
+  "2026-08-12作成。合成候補に出てくるS以上はページを作る規約(A-3)の未処理分。",
+  "ixanary.com/skills/武神八幡陣 から取得。categoryLinksは9項目の判定が要るため付けていない。"
+ ]
+}

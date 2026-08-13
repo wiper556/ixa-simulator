@@ -1,0 +1,95 @@
+{
+ "name": "六角定頼",
+ "no": "7018",
+ "ch": "未確認",
+ "cost": 4,
+ "troop": "槍馬砲攻",
+ "sub": "",
+ "effect": "対人攻撃戦闘に勝利時、名声を20回復",
+ "furigana": "ろっかくさだより",
+ "illustrator": "西野幸治",
+ "imageFull": "assets/img/characters/no7018_full.png",
+ "imageChar": "assets/img/characters/no7018_char.png",
+ "atkBase": 1160,
+ "atkGrowth": 47,
+ "defBase": 1050,
+ "defGrowth": 36,
+ "tacticsBase": 550,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 4010,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "B",
+  "uma": "S",
+  "ki": "A"
+ },
+ "initialSkill": "先見ノ直観",
+ "skillDetail": "A/LV10 確率 50% 攻撃600%上昇/対象:槍・馬・砲\n模倣不可・特殊効果は部隊内重複不可\n①攻撃600%上昇する\n②対人での攻撃戦闘に勝利時名声を20回復する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・馬・砲　確率 50% / 攻撃 600%上昇(対人攻撃勝利時に名声+20)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "騎迅強襲",
+   "rank": "B",
+   "afterSkill": "遁世影武者",
+   "afterRank": "B",
+   "afterTarget": "部隊長",
+   "afterRate": "+50%",
+   "afterEffectShort": "部隊長の初期スキルを模倣(戦闘スキルのみ)"
+  },
+  {
+   "slot": "B",
+   "skill": "湖裂騎刃",
+   "rank": "A",
+   "afterSkill": "不滅ノ鬼神",
+   "afterRank": "S",
+   "target": "弓・馬・器・騎",
+   "rate": "+100%",
+   "effectShort": "攻撃150%上昇+速度40%上昇+帰還時間短縮(3分・模倣不可)",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 100%上昇(確率70%)+速度 70%上昇(確率100%)(TR別データは未確認)"
+  },
+  {
+   "slot": "C",
+   "skill": "闘火将帥",
+   "rank": "A",
+   "afterSkill": "氷塊三連撃",
+   "afterRank": "SSS",
+   "target": "槍・馬・砲",
+   "rate": "50%",
+   "effectShort": "攻撃430%上昇+対人攻撃勝利時名声+20(模倣不可・特殊効果は部隊内重複不可)",
+   "afterTarget": "全",
+   "afterRate": "45%",
+   "afterEffectShort": "攻撃170%上昇(自部隊同時攻撃時コスト最大2除外)"
+  },
+  {
+   "slot": "S1",
+   "skill": "先見ノ直観",
+   "rank": "A",
+   "afterSkill": "先見ノ直観",
+   "afterRank": "A"
+  },
+  {
+   "slot": "S2",
+   "skill": "志半ノ矛楯",
+   "rank": "A",
+   "afterSkill": "志半ノ矛楯",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "+65%",
+   "effectShort": "攻撃465%上昇+防御465%上昇(模倣不可)"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/7018 と skills/先見ノ直観 の生HTML)で確認(2026-08-08)。",
+  "合成テーブルはスキルページの1次(=移植前)・2次(=移植後)から取得。",
+  "候補スキルの対象・確率・効果はサイト内の既存登録から転記(未登録のスキルは空のまま)。"
+ ]
+}

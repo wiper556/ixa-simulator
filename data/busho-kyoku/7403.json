@@ -1,0 +1,117 @@
+{
+ "name": "蒲生氏郷",
+ "no": "7403",
+ "ch": "未確認",
+ "cost": 4,
+ "troop": "全攻",
+ "sub": "",
+ "effect": "飛翔19/攻撃戦闘では飛翔50とみなす",
+ "furigana": "がもううじさと",
+ "illustrator": "正子公也",
+ "imageFull": "assets/img/characters/no7403_full.png",
+ "imageChar": "assets/img/characters/no7403_char.png",
+ "atkBase": 1240,
+ "atkGrowth": 65,
+ "defBase": 1090,
+ "defGrowth": 53,
+ "tacticsBase": 560,
+ "tacticsGrowth": 3,
+ "lv0Troops": 4400,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "S",
+  "ki": "A"
+ },
+ "initialSkill": "白銀双鶴",
+ "skillDetail": "S/LV10 確率 55% 攻撃730%上昇/対象:全 飛翔19\n模倣不可\n①攻撃730%上昇する\n②速度200%上昇する(確率100%)\n③飛翔19を得る(初期スキルとして発動しかつ攻撃戦闘であれば飛翔50とみなす)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全 飛翔19　確率 55% / 攻撃 730%上昇+速度 200%上昇(攻撃戦闘では飛翔50とみなす)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": null
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": null
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": null
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": null
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": "全 飛翔24　確率 55% / 攻撃 1500%上昇+速度 250%上昇(攻撃戦闘では飛翔60とみなす)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "獅子王",
+   "rank": "A",
+   "afterSkill": "銀翼神騎兵",
+   "afterRank": "S",
+   "afterTarget": "弓馬器",
+   "afterRate": "+100%",
+   "afterEffectShort": "攻撃64%上昇 防御64%上昇 速度50%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "神羅聖域",
+   "rank": "SS",
+   "afterSkill": "神羅聖域",
+   "afterRank": "SS",
+   "target": "全 覇道",
+   "rate": "40%",
+   "effectShort": "攻撃900%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "星神闘覇",
+   "rank": "SSS",
+   "afterSkill": "星神闘覇",
+   "afterRank": "SSS",
+   "target": "全 飛翔15",
+   "rate": "100%",
+   "effectShort": "攻撃 770%上昇+速度200%上昇(TR別データは未確認)"
+  },
+  {
+   "slot": "S1",
+   "skill": "白銀双鶴",
+   "rank": "S",
+   "afterSkill": "白銀双鶴",
+   "afterRank": "S"
+  },
+  {
+   "slot": "S2",
+   "skill": "魔弾奏者",
+   "rank": "S",
+   "afterSkill": "星神闘覇",
+   "afterRank": "SSS",
+   "target": "槍・弓・砲・器 飛翔10",
+   "rate": "64%",
+   "effectShort": "攻撃50%上昇(飛翔値合計×9%加算)",
+   "afterTarget": "全 飛翔15",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 770%上昇+速度200%上昇(TR別データは未確認)"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/7403 と skills/白銀双鶴 の生HTML)で確認(2026-08-08)。",
+  "合成テーブルはスキルページの1次(=移植前)・2次(=移植後)から取得。",
+  "候補スキルの対象・確率・効果はサイト内の既存登録から転記(未登録のスキルは空のまま)。"
+ ]
+}

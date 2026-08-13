@@ -1,0 +1,92 @@
+{
+ "name": "早川殿",
+ "no": "7016",
+ "ch": "未確認",
+ "cost": 3,
+ "troop": "全攻防",
+ "sub": "",
+ "effect": "部隊内姫武将の発動率+10%・卓越追加確率+25%",
+ "furigana": "はやかわどの",
+ "illustrator": "mado＊pen",
+ "imageFull": "assets/img/characters/no7016_full.png",
+ "imageChar": "assets/img/characters/no7016_char.png",
+ "atkBase": 1130,
+ "atkGrowth": 45,
+ "defBase": 1130,
+ "defGrowth": 45,
+ "tacticsBase": 520,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3470,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "B",
+  "ki": "S"
+ },
+ "initialSkill": "仁婦ノ加護",
+ "skillDetail": "A/LV10 確率 100% 攻撃600%上昇+防御600%上昇/対象:全\n模倣不可・特殊効果は自部隊内では重複不可\n①攻撃600%上昇する\n②防御600%上昇する\n③部隊内姫武将のスキル発動率を+10%し卓越追加確率を+25%する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 攻撃 600%上昇+防御 600%上昇(姫武将の発動率+10%・卓越追加確率+25%)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "戦陣 吟詠",
+   "rank": "A",
+   "afterSkill": "戦陣 吟詠",
+   "afterRank": "A",
+   "target": "全 卓越",
+   "rate": "+100%",
+   "effectShort": "攻撃340%上昇+防御340%上昇+部隊内卓越追加確率+20%(模倣不可・特殊効果は自部隊内では重複不可)"
+  },
+  {
+   "slot": "B",
+   "skill": "転歌",
+   "rank": "A",
+   "afterSkill": "入来神舞",
+   "afterRank": "S",
+   "target": "部隊長",
+   "rate": "80%",
+   "effectShort": "部隊長の初期スキルを模倣(戦闘スキルのみ、TR別データは未確認)",
+   "afterTarget": "部隊長",
+   "afterRate": "55%",
+   "afterEffectShort": "部隊長の初期スキルを1.1倍に強化して模倣(TR別データは未確認)"
+  },
+  {
+   "slot": "C",
+   "skill": "清賢ノ遊姫",
+   "rank": "A",
+   "afterSkill": "入来神舞",
+   "afterRank": "S",
+   "afterTarget": "部隊長",
+   "afterRate": "55%",
+   "afterEffectShort": "部隊長の初期スキルを1.1倍に強化して模倣(TR別データは未確認)"
+  },
+  {
+   "slot": "S1",
+   "skill": "仁婦ノ加護",
+   "rank": "A",
+   "afterSkill": "仁婦ノ加護",
+   "afterRank": "A"
+  },
+  {
+   "slot": "S2",
+   "skill": "志半ノ矛楯",
+   "rank": "A",
+   "afterSkill": "志半ノ矛楯",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "+65%",
+   "effectShort": "攻撃465%上昇+防御465%上昇(模倣不可)"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/7016 と skills/仁婦ノ加護 の生HTML)で確認(2026-08-08)。",
+  "合成テーブルはスキルページの1次(=移植前)・2次(=移植後)から取得。",
+  "候補スキルの対象・確率・効果はサイト内の既存登録から転記(未登録のスキルは空のまま)。"
+ ]
+}

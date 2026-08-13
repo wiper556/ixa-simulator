@@ -1,0 +1,106 @@
+{
+ "name": "原虎胤",
+ "no": "2385",
+ "ch": "28章",
+ "cost": 4,
+ "troop": "槍弓器鉄防",
+ "sub": "兵站",
+ "effect": "防御・破壊上昇(兵站)",
+ "approved": true,
+ "furigana": "はらとらたね",
+ "illustrator": "鹿角",
+ "imageFull": "assets/img/characters/no2385_full.png",
+ "imageChar": "assets/img/characters/no2385_char.png",
+ "atkBase": 1010,
+ "atkGrowth": 30,
+ "defBase": 1140,
+ "defGrowth": 47,
+ "tacticsBase": 500,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3970,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "B",
+  "ki": "S"
+ },
+ "initialSkill": "夜叉美濃",
+ "skillDetail": "A/LV10 確率 50% 防御410%上昇/対象:槍・弓・器・鉄　兵站\n①防御410%上昇する\n②破壊120%上昇する",
+ "categoryLinks": [
+  {
+   "href": "skills-heitan.html",
+   "label": "兵站スキル一覧を見る"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・弓・器・鉄 兵站　確率 50% / 防御 410%上昇+破壊 120%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "夜叉美濃",
+   "rank": "A",
+   "afterSkill": "志半ノ矛楯",
+   "afterRank": "A",
+   "target": "槍・弓・器・鉄 兵站",
+   "rate": "50%",
+   "effectShort": "防御410%上昇+破壊120%上昇",
+   "afterTarget": "全",
+   "afterRate": "+65%",
+   "afterEffectShort": "攻撃465%上昇+防御465%上昇(模倣不可)"
+  },
+  {
+   "slot": "B",
+   "skill": "夜叉美濃",
+   "rank": "A",
+   "afterSkill": "志半ノ矛楯",
+   "afterRank": "A",
+   "target": "槍・弓・器・鉄 兵站",
+   "rate": "50%",
+   "effectShort": "防御410%上昇+破壊120%上昇",
+   "afterTarget": "全",
+   "afterRate": "+65%",
+   "afterEffectShort": "攻撃465%上昇+防御465%上昇(模倣不可)"
+  },
+  {
+   "slot": "C",
+   "skill": "戦陣 疾駆",
+   "rank": "A",
+   "afterSkill": "十束ノ神域",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "+100%",
+   "effectShort": "速度170%上昇+破壊170%上昇",
+   "afterTarget": "全 覇道",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 320%上昇+速度70%上昇(TR別データは未確認)"
+  },
+  {
+   "slot": "S1",
+   "skill": "志半ノ矛楯",
+   "rank": "A",
+   "afterSkill": "志半ノ矛楯",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "+65%",
+   "effectShort": "攻撃465%上昇+防御465%上昇(模倣不可)"
+  },
+  {
+   "slot": "S2",
+   "skill": "志半ノ矛楯",
+   "rank": "A",
+   "afterSkill": "志半ノ矛楯",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "+65%",
+   "effectShort": "攻撃465%上昇+防御465%上昇(模倣不可)"
+  }
+ ],
+ "notes": [
+  "45do.info+ixagno.blog.fc2.com(blog-entry-10157)確認済み: A/Bの夜叉美濃は移植後「志半ノ矛楯」に、Cの戦陣疾駆は移植後、保護スキル「十束ノ神域」[SS]に変化"
+ ]
+}

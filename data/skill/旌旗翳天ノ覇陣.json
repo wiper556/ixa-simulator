@@ -1,0 +1,55 @@
+{
+ "name": "旌旗翳天ノ覇陣",
+ "rank": "SS",
+ "baseRate": 54,
+ "target": "全 兵站",
+ "effectSummary": "SS/LV10 確率 54% 防御90.11%上昇/対象:全　兵站\n①防御90.11%上昇する(部隊の総コストで効果が変化・TR1〜TR5は未確認)",
+ "categoryLinks": [
+  {
+   "href": "skills-heitan.html",
+   "label": "兵站スキル一覧を見る"
+  }
+ ],
+ "sourceCharacters": [
+  {
+   "name": "本願寺顕如（2）",
+   "no": "1246",
+   "slot": "C"
+  },
+  {
+   "name": "六角承禎（2）",
+   "no": "1254",
+   "slot": "C"
+  },
+  {
+   "name": "真田幸村【覇】",
+   "no": "1227",
+   "slot": "S1"
+  },
+  {
+   "name": "鍋島直茂",
+   "no": "1283",
+   "slot": "B"
+  },
+  {
+   "name": "斎藤一",
+   "no": "2602",
+   "slot": "B",
+   "db": "kyoku"
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "旌旗翳天ノ覇陣",
+  "rank": "SS"
+ },
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全 兵站　確率 54% / 防御 90.11%上昇(部隊の総コストで効果が変化)"
+  }
+ ],
+ "notes": [
+  "本願寺顕如(2)(No.1246)synthesisTable候補C・45do.info生HTML照合済み(単一ソースのみ、TR1〜TR5未確認)"
+ ]
+}

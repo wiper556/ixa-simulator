@@ -1,0 +1,62 @@
+{
+ "name": "天宇受売命",
+ "rank": "SSS",
+ "baseRate": 70,
+ "target": "自身",
+ "effectSummary": "SSS/LV10 確率 70% 対象:自身\n①自身が持つ初期スキルを通常攻撃/防御効果を1.25倍して模倣する",
+ "categoryLinks": [
+  {
+   "href": "skills-mimic.html",
+   "label": "自模倣スキル一覧を見る"
+  }
+ ],
+ "sourceCharacters": [
+  {
+   "name": "浅井長政（4）",
+   "no": "1244",
+   "slot": "S1"
+  },
+  {
+   "name": "福島正則（4）",
+   "no": "1305",
+   "slot": "C"
+  },
+  {
+   "name": "豊臣秀吉（5）【覇】",
+   "no": "1287",
+   "slot": "S2"
+  },
+  {
+   "name": "小早川秀秋（4）",
+   "no": "1271",
+   "slot": "C"
+  },
+  {
+   "name": "長宗我部元親（6）",
+   "no": "1259",
+   "slot": "C"
+  },
+  {
+   "name": "結城秀康",
+   "no": "1276",
+   "slot": "C",
+   "note": [
+    "結城秀康(1276)のsynthesisTable C枠(A-3-11逆引き確認、2026-08-02)"
+   ]
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "天宇受売命",
+  "rank": "SSS"
+ },
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "自身　確率 70% / 初期スキルを模倣(1.25倍)"
+  }
+ ],
+ "notes": [
+  "合成専用スキル(武将カード本体は存在しない)。ixanary.comではLV10のみ確認、TR/鍛錬データなし。"
+ ]
+}

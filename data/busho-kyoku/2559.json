@@ -1,0 +1,131 @@
+{
+ "name": "京極竜子",
+ "no": "2559",
+ "ch": "未確認",
+ "cost": 4,
+ "troop": "追加スキル防",
+ "sub": "",
+ "effect": "自領以外の加勢戦闘時のみ追加スキルの防御効果2.5倍(模倣不可)",
+ "furigana": "きょうごくたつこ",
+ "illustrator": "永井豪",
+ "imageFull": "assets/img/characters/no2559_full.png",
+ "imageChar": "assets/img/characters/no2559_char.png",
+ "atkBase": 1050,
+ "atkGrowth": 42,
+ "defBase": 1160,
+ "defGrowth": 54,
+ "tacticsBase": 520,
+ "tacticsGrowth": 3,
+ "lv0Troops": 4210,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "聖女ノ恩寵",
+ "skillDetail": "S/LV10 確率 100% 追加スキルの防御効果2.5倍/対象:追加スキル\n模倣不可\n①このスキルを持つ武将カードは自領以外の加勢戦闘時のみ追加スキルの防御効果が2.5倍になる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "追加スキル　確率 100% / 自領以外の加勢戦闘時のみ追加スキルの防御効果2.5倍(模倣不可)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": null
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": null
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": null
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": null
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": null
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": null
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "宿木",
+   "rank": "B",
+   "afterSkill": "宿木",
+   "afterRank": "B",
+   "target": null,
+   "rate": null,
+   "effectShort": null
+  },
+  {
+   "slot": "B",
+   "skill": "宿木",
+   "rank": "B",
+   "afterSkill": "宿木",
+   "afterRank": "B",
+   "target": null,
+   "rate": null,
+   "effectShort": null
+  },
+  {
+   "slot": "C",
+   "skill": "入来神舞",
+   "rank": "S",
+   "afterSkill": "飛蝶野分",
+   "afterRank": "B",
+   "target": "部隊長",
+   "rate": "+55%",
+   "effectShort": "部隊長の模倣可能な初期スキルを通常攻撃/防御効果1.1倍で模倣",
+   "afterTarget": "部隊長",
+   "afterRate": "+60%",
+   "afterEffectShort": "部隊長の初期スキルを模倣(戦闘スキルのみ)(TR別データは未確認)"
+  },
+  {
+   "slot": "S1",
+   "skill": "乱世ノ歸人",
+   "rank": "A",
+   "afterSkill": "入来神舞",
+   "afterRank": "S",
+   "target": "部隊長",
+   "rate": "+50%",
+   "effectShort": "部隊長の模倣可能な初期スキルを模倣(卓越:追加確率30%で1.2倍にして模倣)",
+   "afterTarget": "部隊長",
+   "afterRate": "+55%",
+   "afterEffectShort": "部隊長の初期スキルを1.1倍に強化して模倣(TR別データは未確認)"
+  },
+  {
+   "slot": "S2",
+   "skill": "天奏聖譚曲",
+   "rank": "SS",
+   "afterSkill": "天奏聖譚曲",
+   "afterRank": "SS",
+   "target": "砲・器",
+   "rate": "+70%",
+   "effectShort": "防御(2.5×防御参加武将数)%上昇"
+  }
+ ],
+ "notes": [
+  "出典: カード画像(LV1形式: 極・統率 槍A/弓A/馬A/器S拡大確認・初期値1050/1160/520・コスト4・LV1スキル値)",
+  " + ixanary.com/cards/2559(指揮4210(★0-0)・成長+42/+54/+3.0・LV10: 自領以外の加勢戦闘時のみ追加スキルの防御効果2.5倍・模倣不可。絵師 永井豪)",
+  " + ixawiki BushoCard/2559(統率2次確認・合成テーブル1次/2次候補+C/S1/S2候補のLV10効果)。",
+  "統率はカード画像+ixawikiの2ソース一致。No.2427(細川幽斎・本領防御時2.5倍)の加勢版といえる対のスキル。",
+  "初期スキルがSランクのためスキル個別ページの新規作成が必要(docsのTODOに記録済み)。",
+  "合成テーブルはixawiki(1次候補+2次候補+候補スキルのLV10効果)"
+ ]
+}

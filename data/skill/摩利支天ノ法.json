@@ -1,0 +1,86 @@
+{
+ "name": "摩利支天ノ法",
+ "rank": "SSS",
+ "baseRate": 70,
+ "target": "部隊長",
+ "effectSummary": "SSS/LV10 確率 70% 対象:部隊長\n①部隊長の持つ模倣可能な初期スキルを1.25倍に強化して模倣する",
+ "categoryLinks": [
+  {
+   "href": "skills-leadermimic.html",
+   "label": "部隊長模倣スキル一覧を見る"
+  }
+ ],
+ "sourceCharacters": [
+  {
+   "name": "津軽為信",
+   "no": "1309",
+   "slot": "A"
+  },
+  {
+   "name": "百地三太夫",
+   "no": "10062",
+   "slot": "A"
+  },
+  {
+   "name": "竹中半兵衛【覇】",
+   "no": "1275",
+   "slot": "A",
+   "note": [
+    "竹中半兵衛【覇】(1275)のsynthesisTable A枠(A-3-11逆引き確認、2026-08-02)"
+   ]
+  },
+  {
+   "name": "豊臣秀吉（5）",
+   "no": "1255",
+   "slot": "C"
+  },
+  {
+   "name": "堀秀政",
+   "no": "1224",
+   "slot": "C"
+  },
+  {
+   "name": "明智光秀",
+   "no": "1204",
+   "slot": "S1"
+  },
+  {
+   "name": "今川義元",
+   "no": "1203",
+   "slot": "S1"
+  },
+  {
+   "name": "六角定頼",
+   "no": "1321",
+   "slot": "C"
+  },
+  {
+   "name": "宮本二天",
+   "no": "2590",
+   "slot": "B",
+   "db": "kyoku"
+  },
+  {
+   "name": "明神弥彦",
+   "no": "2608",
+   "slot": "S1",
+   "db": "kyoku"
+  },
+  {
+   "name": "南光坊天海",
+   "no": "10063",
+   "slot": "A"
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "摩利支天ノ法",
+  "rank": "SSS"
+ },
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "部隊長　確率 70% / 模倣倍率1.25倍"
+  }
+ ]
+}

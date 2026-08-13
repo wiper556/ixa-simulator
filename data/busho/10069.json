@@ -1,0 +1,106 @@
+{
+ "name": "長宗我部元親-復刻-",
+ "no": "10069",
+ "furigana": "ちょうそかべもとちか",
+ "illustrator": "SQUARE ENIX",
+ "atkBase": 1060,
+ "atkGrowth": 43,
+ "defBase": 1260,
+ "defGrowth": 72,
+ "tacticsBase": 660,
+ "tacticsGrowth": 3,
+ "lv0Troops": 5110,
+ "rankGrades": null,
+ "initialSkill": "砕島天鬼槍",
+ "skillDetail": "S/LV10 確率：+100% / 対象 槍馬砲器 防御：250%上昇 卓越 ：追加確率-50%で防御効果が3倍(卓越追加確率が0%を超える時のみ卓越抽選される)",
+ "ch": "30章",
+ "cost": 5,
+ "troop": "槍馬砲器防",
+ "sub": "",
+ "effect": "卓越発動時効果3倍",
+ "approved": true,
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍馬砲器　確率 100% / 防御250%上昇 卓越 追加確率-50%で防御効果が3倍(卓越追加確率が0%を超える時のみ卓越抽選される)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": "槍馬砲器　確率 100% / 防御255%上昇 卓越 追加確率-45%で防御効果が3倍(卓越追加確率が0%を超える時のみ卓越抽選される)"
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": "槍馬砲器　確率 100% / 防御260%上昇 卓越 追加確率-40%で防御効果が3倍(卓越追加確率が0%を超える時のみ卓越抽選される)"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": "槍馬砲器　確率 100% / 防御270%上昇 卓越 追加確率-30%で防御効果が3倍(卓越追加確率が0%を超える時のみ卓越抽選される)"
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": "槍馬砲器　確率 100% / 防御285%上昇 卓越 追加確率-20%で防御効果が3倍(卓越追加確率が0%を超える時のみ卓越抽選される)"
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": "槍馬砲器　確率 100% / 防御300%上昇 卓越 追加確率-10%で防御効果が3倍(卓越追加確率が0%を超える時のみ卓越抽選される)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "千里必勝ノ神算",
+   "rank": "SS",
+   "afterSkill": "千里必勝ノ神算",
+   "afterRank": "SS",
+   "target": null,
+   "rate": null,
+   "effectShort": null
+  },
+  {
+   "slot": "B",
+   "skill": "八幡神ノ威光",
+   "rank": "SSS",
+   "afterSkill": "八幡神ノ威光",
+   "afterRank": "SSS",
+   "target": null,
+   "rate": null,
+   "effectShort": null
+  },
+  {
+   "slot": "C",
+   "skill": "八幡神ノ威光",
+   "rank": "SSS",
+   "afterSkill": "八幡神ノ威光",
+   "afterRank": "SSS",
+   "target": null,
+   "rate": null,
+   "effectShort": null
+  },
+  {
+   "slot": "S1",
+   "skill": "砕島天鬼槍",
+   "rank": "S",
+   "afterSkill": "砕島天鬼槍",
+   "afterRank": "S",
+   "target": null,
+   "rate": null,
+   "effectShort": null
+  },
+  {
+   "slot": "S2",
+   "skill": "龍驤虎躍",
+   "rank": "SS",
+   "afterSkill": "龍驤虎躍",
+   "afterRank": "SS",
+   "target": null,
+   "rate": null,
+   "effectShort": null
+  }
+ ]
+}

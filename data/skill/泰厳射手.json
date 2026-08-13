@@ -1,0 +1,68 @@
+{
+ "name": "泰厳射手",
+ "rank": "S",
+ "baseRate": 60,
+ "target": "砲・器",
+ "effectSummary": "S/LV10 確率 60% 防御上昇/対象:砲・器\n①(係数×防御参加武将数)%を防御効果に加算する",
+ "categoryLinks": [
+  {
+   "href": "skills-count-def.html",
+   "label": "人数依存(防)スキル一覧を見る"
+  }
+ ],
+ "sourceCharacters": [
+  {
+   "name": "佐竹義宣（3）",
+   "no": "1302",
+   "slot": "S1"
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "泰厳射手",
+  "rank": "S"
+ },
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "coefficient": "11.5",
+   "effect": "砲・器　確率 60% / 防御 11.5%×防御参加武将数(280人)=3220.0%"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "coefficient": "11.8",
+   "effect": "砲・器　確率 60% / 防御 11.8%×防御参加武将数(280人)=3304.0%"
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "coefficient": "12.2",
+   "effect": "砲・器　確率 60% / 防御 12.2%×防御参加武将数(280人)=3416.0%"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "coefficient": "12.7",
+   "effect": "砲・器　確率 60% / 防御 12.7%×防御参加武将数(280人)=3556.0%"
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "coefficient": "13.3",
+   "effect": "砲・器　確率 60% / 防御 13.3%×防御参加武将数(280人)=3724.0%"
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "coefficient": "14",
+   "effect": "砲・器　確率 60% / 防御 14%×防御参加武将数(280人)=3920.0%"
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "coefficient": "14.7",
+   "effect": "砲・器　確率 100% / 防御 14.7%×防御参加武将数(280人)=4116.0%"
+  }
+ ]
+}

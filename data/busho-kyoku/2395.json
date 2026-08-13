@@ -1,0 +1,101 @@
+{
+ "name": "小山田信茂",
+ "no": "2395",
+ "ch": "29章",
+ "cost": 3,
+ "troop": "砲器防",
+ "sub": "",
+ "effect": "防御上昇+所領防御陣形の第4列以降にも効果適用(模倣不可)",
+ "furigana": "おやまだのぶしげ",
+ "illustrator": "タカハシタクヤ",
+ "imageFull": "assets/img/characters/no2395_full.png",
+ "imageChar": "assets/img/characters/no2395_char.png",
+ "atkBase": 1030,
+ "atkGrowth": 33,
+ "defBase": 1140,
+ "defGrowth": 47,
+ "tacticsBase": 510,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3440,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "B",
+  "ki": "S"
+ },
+ "initialSkill": "破軍一投",
+ "skillDetail": "A/LV10 確率 100% 防御220%上昇/対象:砲・器\n模倣不可\n①防御220%上昇する\n②所領防御陣形の第肆列目以降の部隊にもこのスキルの効果がかかる(自身の所属部隊には重複しない)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "砲・器　確率 100% / 防御 220%上昇(所領防御陣形第4列以降の部隊にも適用)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "破軍一投",
+   "rank": "A",
+   "afterSkill": "龍驤虎躍",
+   "afterRank": "SS",
+   "target": "砲・器",
+   "rate": "100%",
+   "effectShort": "防御 220%上昇(所領防御陣形第4列以降の部隊にも適用)",
+   "afterTarget": "全",
+   "afterRate": "60%",
+   "afterEffectShort": "攻撃 810%上昇+防御810%上昇(コスト-1)"
+  },
+  {
+   "slot": "B",
+   "skill": "破軍一投",
+   "rank": "A",
+   "afterSkill": "龍驤虎躍",
+   "afterRank": "SS",
+   "target": "砲・器",
+   "rate": "100%",
+   "effectShort": "防御 220%上昇(所領防御陣形第4列以降の部隊にも適用)",
+   "afterTarget": "全",
+   "afterRate": "60%",
+   "afterEffectShort": "攻撃 810%上昇+防御810%上昇(コスト-1)"
+  },
+  {
+   "slot": "C",
+   "skill": "破軍一投",
+   "rank": "A",
+   "afterSkill": "龍驤虎躍",
+   "afterRank": "SS",
+   "target": "砲・器",
+   "rate": "100%",
+   "effectShort": "防御 220%上昇(所領防御陣形第4列以降の部隊にも適用)",
+   "afterTarget": "全",
+   "afterRate": "60%",
+   "afterEffectShort": "攻撃 810%上昇+防御810%上昇(コスト-1)"
+  },
+  {
+   "slot": "S1",
+   "skill": "龍驤虎躍",
+   "rank": "SS",
+   "afterSkill": "龍驤虎躍",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "+60%",
+   "effectShort": "攻撃810%上昇+防御810%上昇+部隊消費コストを1低下(模倣不可)"
+  },
+  {
+   "slot": "S2",
+   "skill": "志半ノ矛楯",
+   "rank": "A",
+   "afterSkill": "志半ノ矛楯",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "+65%",
+   "effectShort": "攻撃465%上昇+防御465%上昇(模倣不可)"
+  }
+ ],
+ "approved": true,
+ "notes": [
+  "45do.info生HTML(ordinary/0340)の合成テーブル確認。初期スキル(破軍一投)の移植後合成候補は必ずS1のスキルになる(ユーザー指摘の確認方法)ため、",
+  "A/B/C=破軍一投[A]→龍驤虎躍[SS](移植後、skills.html側sourceCharactersに追記)/S1=龍驤虎躍[SS](自己参照)/S2=志半ノ矛楯[A](自己参照、高山マリアS2と同一効果で数値も一致確認)"
+ ]
+}

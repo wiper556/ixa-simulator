@@ -1,0 +1,92 @@
+{
+ "name": "真田昌幸",
+ "no": "1218",
+ "ch": "24章",
+ "cost": 2,
+ "troop": "槍弓馬攻",
+ "sub": "",
+ "effect": "敵軍本丸防御陣形のコスト差分依存",
+ "approved": true,
+ "furigana": "さなだまさゆき",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1218_full.png",
+ "imageChar": "assets/img/characters/no1218_char.png",
+ "atkBase": 1170,
+ "atkGrowth": 57,
+ "defBase": 1080,
+ "defGrowth": 35,
+ "tacticsBase": 650,
+ "tacticsGrowth": 3,
+ "lv0Troops": 3500,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "S",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "六冥緋侠ノ神謀",
+ "skillDetail": "S/LV10 確率 70% 攻撃70%上昇/対象:槍・弓・馬\n①攻撃70%上昇する\n②敵軍本丸防御陣形に配置された武将のうちこの武将のコストを下回る武将コスト差分の総和×50%を攻撃効果に加算する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・弓・馬　確率 70% / 攻撃 70%上昇(コスト差分総和×50%加算)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "破軍星 皇",
+   "rank": "SS",
+   "afterSkill": "破軍星 皇",
+   "afterRank": "SS",
+   "rate": "69%",
+   "target": "全",
+   "effectShort": "攻撃140%上昇(自部隊同時攻撃時コスト最大0.5除外・模倣不可)"
+  },
+  {
+   "slot": "B",
+   "skill": "天啓ノ神撃",
+   "rank": "SS",
+   "afterSkill": "天啓ノ神撃",
+   "afterRank": "SS",
+   "rate": "45%",
+   "target": "全",
+   "effectShort": "攻撃180%上昇(HP100以上で敵1部隊に追加ダメージ5・模倣不可)"
+  },
+  {
+   "slot": "C",
+   "skill": "火之迦具土神",
+   "rank": "SS",
+   "afterSkill": "火之迦具土神",
+   "afterRank": "SS",
+   "rate": "100%",
+   "target": "槍・馬・砲",
+   "effectShort": "攻撃160%上昇(卓越追加確率25%で3倍)"
+  },
+  {
+   "slot": "S1",
+   "skill": "遠呂智ノ閃光",
+   "rank": "SS",
+   "afterSkill": "遠呂智ノ閃光",
+   "afterRank": "SS",
+   "rate": "100%",
+   "target": "全",
+   "effectShort": "攻撃125%上昇+卓越:追加確率15%で攻撃効果が4倍"
+  },
+  {
+   "slot": "S2",
+   "skill": "国堅大神",
+   "rank": "SS",
+   "afterSkill": "国堅大神",
+   "afterRank": "SS",
+   "rate": "60%",
+   "target": "全",
+   "effectShort": "攻撃170%上昇+防御170%上昇(コスト-1)"
+  }
+ ],
+ "notes": [
+  "カード画像照合済み(2026-08-02): 槍S/弓S/馬A/器A",
+  "45do.info(ordinary/0022)生HTML + ameameixa.com(bushocard-1218)生HTML の2ソースで完全一致を確認(2026-08-02)"
+ ]
+}

@@ -1,0 +1,91 @@
+{
+ "name": "三郎信長",
+ "no": "1249",
+ "ch": "26章",
+ "cost": 5.5,
+ "troop": "砲攻",
+ "sub": "",
+ "effect": "対象兵科指揮時、極限スキルの攻撃効果が3.5倍",
+ "approved": true,
+ "furigana": "さぶろうのぶなが",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1249_full.png",
+ "imageChar": "assets/img/characters/no1249_char.png",
+ "atkBase": 1230,
+ "atkGrowth": 72,
+ "defBase": 1030,
+ "defGrowth": 40,
+ "tacticsBase": 690,
+ "tacticsGrowth": 3.5,
+ "lv0Troops": 5150,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "SS"
+ },
+ "initialSkill": "破界ノ轟砲",
+ "skillDetail": "S/LV10 確率 100% 攻撃380%上昇/対象:砲\n模倣不可\n①攻撃380%上昇する\n②対象兵科(砲)指揮時極限スキルの攻撃効果が3.5倍となる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "砲　確率 100% / 攻撃 380%上昇(極限スキル攻撃効果3.5倍)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "月詠ノ覇威",
+   "rank": "SS",
+   "afterSkill": "月詠ノ覇威",
+   "afterRank": "SS",
+   "rate": "100%",
+   "target": "全",
+   "effectShort": "攻撃344%上昇+防御344%上昇+卓越確率+15%(模倣不可)"
+  },
+  {
+   "slot": "B",
+   "skill": "猛火ノ追撃",
+   "rank": "SSS",
+   "afterSkill": "猛火ノ追撃",
+   "afterRank": "SSS",
+   "rate": "70%",
+   "target": "全",
+   "effectShort": "攻撃45%上昇(部隊総コスト依存)"
+  },
+  {
+   "slot": "C",
+   "skill": "破軍騎行",
+   "rank": "SS",
+   "afterSkill": "破軍騎行",
+   "afterRank": "SS",
+   "rate": "100%",
+   "target": "全 不屈2",
+   "effectShort": "攻撃750%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "龍驤虎躍",
+   "rank": "SS",
+   "afterSkill": "龍驤虎躍",
+   "afterRank": "SS",
+   "rate": "60%",
+   "target": "全",
+   "effectShort": "攻撃810%上昇+防御810%上昇(コスト-1)"
+  },
+  {
+   "slot": "S2",
+   "skill": "火之迦具土神",
+   "rank": "SS",
+   "afterSkill": "火之迦具土神",
+   "afterRank": "SS",
+   "rate": "100%",
+   "target": "槍・馬・砲",
+   "effectShort": "攻撃160%上昇(卓越追加確率25%で3倍)"
+  }
+ ],
+ "notes": [
+  "45do.info(生HTML skiladd_wrap)照合済み。ameameixa.comのスキルテーブルはB候補を「月詠ノ覇威」(A候補と同一)と記載していたが45do.infoのspec_box詳細と齟齬があり誤記と判断、45do.info側(猛火ノ追撃SSS)を採用"
+ ]
+}

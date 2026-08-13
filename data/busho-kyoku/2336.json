@@ -1,0 +1,113 @@
+{
+ "name": "伊達成実",
+ "no": "2336",
+ "ch": "未確認",
+ "cost": 4,
+ "troop": "槍弓砲攻",
+ "sub": "",
+ "effect": "攻撃戦闘時卓越で自部隊の兵士被害減少",
+ "approved": true,
+ "furigana": "だてしげざね",
+ "illustrator": "JaneMere",
+ "imageFull": "assets/img/characters/no2336_full.png",
+ "imageChar": "assets/img/characters/no2336_char.png",
+ "atkBase": 1100,
+ "atkGrowth": 42,
+ "defBase": 1050,
+ "defGrowth": 34,
+ "tacticsBase": 510,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3900,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "B",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "青葉ノ仁王",
+ "skillDetail": "A/LV10 確率 100% 攻撃110%上昇/対象:槍・弓・砲　卓越\n模倣不可\n①攻撃110%上昇する\n②卓越:攻撃戦闘時追加確率20%で自部隊の兵士被害が10%減少する(部隊内重複上限2)",
+ "categoryLinks": [
+  {
+   "href": "skills-higai.html",
+   "label": "兵士被害減少スキル一覧を見る"
+  },
+  {
+   "href": "skills-takuetsu.html",
+   "label": "卓越スキル一覧を見る"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・弓・砲　確率 100% / 攻撃 110%上昇(卓越:追加確率20%で兵士被害10%減少)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "青葉ノ仁王",
+   "rank": "A",
+   "afterSkill": "乱世ノ歸人",
+   "afterRank": "A",
+   "target": "槍・弓・砲 卓越",
+   "rate": "100%",
+   "effectShort": "攻撃110%上昇(卓越:追加確率20%で兵士被害10%減少)",
+   "afterTarget": "部隊長",
+   "afterRate": "+50%",
+   "afterEffectShort": "所属部隊の部隊長が持つ模倣可能な初期スキルを模倣する(卓越・追加確率30%で通常攻撃／防御効果を1.2倍して模倣する)"
+  },
+  {
+   "slot": "B",
+   "skill": "青葉ノ仁王",
+   "rank": "A",
+   "afterSkill": "乱世ノ歸人",
+   "afterRank": "A",
+   "target": "槍・弓・砲 卓越",
+   "rate": "100%",
+   "effectShort": "攻撃110%上昇(卓越:追加確率20%で兵士被害10%減少)",
+   "afterTarget": "部隊長",
+   "afterRate": "+50%",
+   "afterEffectShort": "所属部隊の部隊長が持つ模倣可能な初期スキルを模倣する(卓越・追加確率30%で通常攻撃／防御効果を1.2倍して模倣する)"
+  },
+  {
+   "slot": "C",
+   "skill": "宿木",
+   "rank": "B",
+   "afterSkill": "宿木",
+   "afterRank": "B",
+   "target": "部隊長",
+   "rate": "+55%",
+   "effectShort": "部隊長の初期スキルを模倣(戦闘スキルのみ)"
+  },
+  {
+   "slot": "S1",
+   "skill": "乱世ノ歸人",
+   "rank": "A",
+   "afterSkill": "入来神舞",
+   "afterRank": "S",
+   "target": "部隊長",
+   "rate": "+50%",
+   "effectShort": "部隊長の模倣可能な初期スキルを模倣(卓越:追加確率30%で1.2倍)",
+   "afterTarget": "部隊長",
+   "afterRate": "55%",
+   "afterEffectShort": "部隊長の初期スキルを1.1倍に強化して模倣(TR別データは未確認)"
+  },
+  {
+   "slot": "S2",
+   "skill": "飛蝶野分",
+   "rank": "B",
+   "afterSkill": "風狂幻術",
+   "afterRank": "B",
+   "target": "部隊長",
+   "rate": "60%",
+   "effectShort": "部隊長の初期スキルを模倣(戦闘スキルのみ)(TR別データは未確認)",
+   "afterTarget": "部隊長",
+   "afterRate": "53%",
+   "afterEffectShort": "部隊長の初期スキルを模倣(戦闘スキルのみ、TR別データは未確認)"
+  }
+ ],
+ "notes": [
+  "45do.info+ixagno.blog.fc2.com(blog-entry-8878)確認済み: A/Bの青葉ノ仁王は移植後「乱世ノ歸人」に、S1の乱世ノ歸人は移植後「入来神舞」[S]に、S2の飛蝶野分は移植後「風狂幻術」に変化。宿木・乱世ノ歸人・風狂幻術はA/B以下のためskills.html新規ページ化なし(飛蝶野分はユーザー明示依頼によりskills.htmlにページ作成済み)"
+ ]
+}

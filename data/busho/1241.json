@@ -1,0 +1,97 @@
+{
+ "name": "蘆名盛氏（2）",
+ "no": "1241",
+ "ch": "26章",
+ "cost": 4.5,
+ "troop": "槍馬器鉄防",
+ "sub": "",
+ "effect": "防御上昇(敵軍高コスト依存)",
+ "approved": true,
+ "furigana": "あしなもりうじ",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1241_full.png",
+ "imageChar": "assets/img/characters/no1241_char.png",
+ "atkBase": 1060,
+ "atkGrowth": 40,
+ "defBase": 1200,
+ "defGrowth": 66,
+ "tacticsBase": 660,
+ "tacticsGrowth": 3,
+ "lv0Troops": 4740,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "金城ノ黒鷹",
+ "skillDetail": "S/LV10 確率 49% 防御120%上昇/対象:槍・馬・器・鉄\n①防御120%上昇する\n②攻撃側敵軍全武将のうちこの武将のコストを上回る武将コスト部分の総和×16%を防御効果に加算する(TR1〜TR5は未確認)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・馬・器・鉄　確率 49% / 防御 120%上昇+敵軍超過コスト総和×16%加算"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "高津姫神",
+   "rank": "SS",
+   "afterSkill": "高津姫神",
+   "afterRank": "SS",
+   "rate": "70%",
+   "target": "自身",
+   "effectShort": "自身が持つ初期スキルを模倣する(戦闘スキルのみ)"
+  },
+  {
+   "slot": "B",
+   "skill": "八重言代主神",
+   "rank": "SS",
+   "afterSkill": "無窮天斥陣",
+   "afterRank": "SS",
+   "rate": "70%",
+   "target": "自身",
+   "effectShort": "自身が持つ初期スキルを模倣する(戦闘スキルのみ)",
+   "afterTarget": "槍弓馬",
+   "afterRate": "+40%",
+   "afterEffectShort": "防御63%上昇(攻撃部隊に兵器兵科がいれば効果1.5倍)"
+  },
+  {
+   "slot": "C",
+   "skill": "神屋楯比売命",
+   "rank": "SS",
+   "afterSkill": "神屋楯比売命",
+   "afterRank": "SS",
+   "rate": "70%",
+   "target": "自身",
+   "effectShort": "自身が持つ初期スキルを模倣する(戦闘スキルのみ)"
+  },
+  {
+   "slot": "S1",
+   "skill": "四至ノ神域",
+   "rank": "SSS",
+   "afterSkill": "四至ノ神域",
+   "afterRank": "SSS",
+   "rate": "70%",
+   "target": "自身",
+   "effectShort": "自身が持つ初期スキルを通常攻撃/防御効果1.25倍にして模倣する"
+  },
+  {
+   "slot": "S2",
+   "skill": "黄泉醜女ノ屍兵",
+   "rank": "SS",
+   "afterSkill": "天地黎明",
+   "afterRank": "SSS",
+   "rate": "54%",
+   "target": "全",
+   "effectShort": "防御200%上昇+防御戦闘時自部隊内武将が受ける70以下のダメージを最大45に軽減",
+   "afterTarget": "全",
+   "afterRate": "70%",
+   "afterEffectShort": "防御 270%上昇(HP99以下で3倍)"
+  }
+ ],
+ "notes": [
+  "45do.info(生HTML skiladd_wrap)+ameameixa.com(スキルテーブル)の2ソース照合済み。B候補はameameixa側がA候補と同一(高津姫神)の誤記とみられ、45do.info側(八重言代主神、skills.htmlにも登録済み)を採用。S1のランクは45do.info側がSSとしていたが、45do.info内の他ページ(No.1235)・ameameixa・skills.htmlがいずれもSSSのため、45do.info側のSS表記を誤記とみなしSSSに補正"
+ ]
+}

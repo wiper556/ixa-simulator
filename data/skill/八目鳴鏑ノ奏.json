@@ -1,0 +1,37 @@
+{
+ "name": "八目鳴鏑ノ奏",
+ "rank": "SS",
+ "baseRate": 37,
+ "target": "全",
+ "effectSummary": "SS/LV10 確率 37% 攻撃上昇/対象:全\n①(2.5×防御参加武将数)%を攻撃効果に加算する(TR1〜TR5は未確認)",
+ "categoryLinks": [
+  {
+   "href": "skills-count-atk.html",
+   "label": "人数依存(攻)スキル一覧を見る"
+  }
+ ],
+ "sourceCharacters": [
+  {
+   "name": "森蘭丸",
+   "no": "1211",
+   "slot": "S2"
+  },
+  {
+   "name": "松平元康",
+   "no": "1207",
+   "slot": "S2"
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "八目鳴鏑ノ奏",
+  "rank": "SS"
+ },
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "coefficient": "2.5",
+   "effect": "全　確率 37% / 攻撃 2.5%×防御参加武将数(280人)=700.0%"
+  }
+ ]
+}

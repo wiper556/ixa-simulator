@@ -1,0 +1,140 @@
+{
+ "name": "蒲生郷成",
+ "no": "2414",
+ "ch": "未確認",
+ "cost": 4,
+ "troop": "攻",
+ "sub": "",
+ "effect": "追加スキルの攻撃効果が(討伐ゲージ÷100)倍(最大300・模倣不可)",
+ "furigana": "がもうさとなり",
+ "illustrator": "正子公也",
+ "imageFull": "assets/img/characters/no2414_full.png",
+ "imageChar": "assets/img/characters/no2414_char.png",
+ "atkBase": 1050,
+ "atkGrowth": 48,
+ "defBase": 1020,
+ "defGrowth": 26,
+ "tacticsBase": 500,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3760,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "摺きれ久留子",
+ "skillDetail": "A/LV10 この武将の追加スキルの攻撃効果は(討伐ゲージ÷100)倍される\n模倣不可\n①この武将の追加スキルの攻撃効果は(討伐ゲージ÷100)倍される\n②討伐ゲージは最大300で計算する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "確率 - / 追加スキルの攻撃効果(討伐ゲージ÷100)倍(討伐ゲージは最大300で計算・模倣不可)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": null
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": null
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": null
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": null
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": null
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": null
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "戦陣 阿吽",
+   "rank": "A",
+   "afterSkill": "覇王征軍",
+   "afterRank": "SS",
+   "target": null,
+   "rate": null,
+   "effectShort": null,
+   "afterTarget": "全",
+   "afterRate": "+42%",
+   "afterEffectShort": "攻撃 25.39%上昇(部隊総コストで変動、TR別データは未確認)"
+  },
+  {
+   "slot": "B",
+   "skill": "戦陣 破軍",
+   "rank": "A",
+   "afterSkill": "天穿神滅",
+   "afterRank": "SS",
+   "target": null,
+   "rate": null,
+   "effectShort": null,
+   "afterTarget": "砲器",
+   "afterRate": "+50%",
+   "afterEffectShort": "攻撃((ランク+1)xコストx3) %上昇(部隊ランクとコストで効果が変化)"
+  },
+  {
+   "slot": "C",
+   "skill": "戦陣 無双",
+   "rank": "A",
+   "afterSkill": "無双英傑",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "+50%",
+   "effectShort": "攻撃67%上昇+防御67%上昇",
+   "afterTarget": "全",
+   "afterRate": "+50%",
+   "afterEffectShort": "攻撃99.9%上昇+防御99.9%上昇(部隊消費コストを0.5低下・特殊効果は模倣不可)"
+  },
+  {
+   "slot": "S1",
+   "skill": "戦陣 轟砲",
+   "rank": "A",
+   "afterSkill": "覇王絶世",
+   "afterRank": "SS",
+   "target": "砲・器",
+   "rate": "+45%",
+   "effectShort": "攻撃66%上昇+防御66%上昇",
+   "afterTarget": "全",
+   "afterRate": "+24%",
+   "afterEffectShort": "攻撃部隊ランクボーナスx15%上昇(部隊ランクボーナスで効果が変化)"
+  },
+  {
+   "slot": "S2",
+   "skill": "破軍星",
+   "rank": "SS",
+   "afterSkill": "破軍星",
+   "afterRank": "SS",
+   "target": "馬・砲・器",
+   "rate": "+40%",
+   "effectShort": "攻撃(18+コスト×8)%上昇+破壊(8+コスト×3)%上昇"
+  }
+ ],
+ "notes": [
+  "限定極(2019-12-22〜、ixaixa.com確認)。章は未確認。",
+  "討伐ゲージ0→300には12時間かかるため一度の合戦で使えるのは最大3回(ixaixaの注記)。",
+  "出典: カード画像(LV1形式: 極・統率 槍S/弓A/馬A/器A拡大確認・初期値1050/1020/500・コスト4・LV1スキル値。",
+  "  カードの指揮4260は★5表示のため不採用、ixanaryの★0-0=3760をlv0Troopsに使用(B-00ルール))",
+  " + ixanary.com/cards/2414(成長+48/+26/+2.5・LV10: 追加スキルの攻撃効果(討伐ゲージ÷100)倍・模倣不可)",
+  " + ixaixa.com/archives/8497(合成テーブル・各候補の効果)。",
+  "スキルはA(鍛錬情報なし)のためTR1以降のeffectはnull。",
+  "合成テーブルは登録時ixaixa.com単一ソースだったが、2026-08-12にixanaryのスキル個別ページ",
+  " (1次/2次候補)と全行一致することを確認し2ソースになった(tools/audit_characters.py --online)。"
+ ]
+}

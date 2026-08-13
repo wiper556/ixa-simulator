@@ -1,0 +1,29 @@
+{
+ "name": "猛虎嵐陣",
+ "rank": "S",
+ "baseRate": 100,
+ "target": "弓・馬・器・騎",
+ "noMimic": true,
+ "effectSummary": "S/LV10 確率 100% 攻撃450%上昇/対象:弓・馬・器・騎\n①対象兵科(弓・馬・器・騎)を指揮した戦闘時攻撃力が450%上昇する\n②速度が100%上昇する\n③対象兵科指揮時自部隊の帰還時間が2分を超えるとき2分で帰還できる(模倣不可・TR1〜TR5は未確認)",
+ "sourceCharacters": [
+  {
+   "name": "武田信虎（2）",
+   "no": "1240",
+   "slot": "A"
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "星神闘覇",
+  "rank": "SSS"
+ },
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓・馬・器・騎　確率 100% / 攻撃 450%上昇+速度 100%上昇"
+  }
+ ],
+ "notes": [
+  "この武将自身の初期スキル(武田信虎(2) No.1240のsynthesisTable候補A)"
+ ]
+}

@@ -1,0 +1,60 @@
+{
+ "name": "刹那無影",
+ "rank": "SS",
+ "baseRate": 55,
+ "target": "部隊長",
+ "effectSummary": "SS/LV10 確率 55% 対象:部隊長\n①部隊長の持つ模倣可能な初期スキルを1.15倍に強化して模倣する\n②速度200%上昇する(模倣とは別枠の固定効果)",
+ "categoryLinks": [
+  {
+   "href": "skills-leadermimic.html",
+   "label": "部隊長模倣スキル一覧を見る"
+  }
+ ],
+ "sourceCharacters": [
+  {
+   "name": "立花宗茂（5）",
+   "no": "1307",
+   "slot": "B"
+  },
+  {
+   "name": "武田信玄（6）",
+   "no": "1290",
+   "slot": "A"
+  },
+  {
+   "name": "前田利家（4）",
+   "no": "1269",
+   "slot": "B"
+  },
+  {
+   "name": "羽柴秀長",
+   "no": "1278",
+   "slot": "A",
+   "note": [
+    "羽柴秀長(1278)のsynthesisTable A枠(A-3-11逆引き確認、2026-08-02)"
+   ]
+  },
+  {
+   "name": "武田晴信（4）",
+   "no": "1318",
+   "slot": "A"
+  },
+  {
+   "name": "瀬田宗次郎",
+   "no": "2604",
+   "slot": "S1",
+   "db": "kyoku"
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "刹那無影",
+  "rank": "SS"
+ },
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "部隊長　確率 55% / 模倣倍率1.15倍+速度200%上昇"
+  }
+ ]
+}

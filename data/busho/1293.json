@@ -1,0 +1,124 @@
+{
+ "name": "毛利元就（4）",
+ "no": "1293",
+ "ch": "30章",
+ "cost": 4.5,
+ "troop": "全攻防",
+ "sub": "",
+ "effect": "部隊内の卓越率上昇／パラ天は飛翔40追加",
+ "approved": true,
+ "furigana": "もうりもとなり",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1293_full.png",
+ "imageChar": "assets/img/characters/no1293_char.png",
+ "atkBase": 1240,
+ "atkGrowth": 70,
+ "defBase": 1240,
+ "defGrowth": 70,
+ "tacticsBase": 700,
+ "tacticsGrowth": 3.5,
+ "lv0Troops": 4890,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "X"
+ },
+ "initialSkill": "謀神ノ経略",
+ "skillDetail": "S/LV10 確率 100% 攻防520%上昇/対象:全\n模倣不可\n①攻撃520%上昇する\n②防御520%上昇する\n③部隊内武将の全スキルの卓越発動率が50%上昇する(特殊効果は自部隊内では重複不可)\n④TR6(パラレル版)では飛翔40を追加取得する",
+ "categoryLinks": [
+  {
+   "href": "skills-takuetsu.html",
+   "label": "卓越スキル一覧を見る"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 攻防 520%上昇(卓越+50%)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": "全　確率 100% / 攻防 600%上昇(卓越+50%)"
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": "全　確率 100% / 攻防 730%上昇(卓越+55%)"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": "全　確率 100% / 攻防 980%上昇(卓越+60%)"
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": "全　確率 100% / 攻防 1330%上昇(卓越+70%)"
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": "全　確率 100% / 攻防 1740%上昇(卓越+100%)"
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": "全 飛翔40　確率 100% / 攻防 1960%上昇(卓越+140%)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "開闢ノ逆鉾",
+   "rank": "SS",
+   "afterSkill": "開闢ノ逆鉾",
+   "afterRank": "SS",
+   "rate": "100%",
+   "target": "全",
+   "effectShort": "攻撃254%上昇(卓越で兵士被害減少)"
+  },
+  {
+   "slot": "B",
+   "skill": "戦華雄渾",
+   "rank": "SS",
+   "afterSkill": "戦華雄渾",
+   "afterRank": "SS",
+   "rate": "100%",
+   "target": "全",
+   "effectShort": "攻防各140%上昇(卓越時4倍)"
+  },
+  {
+   "slot": "C",
+   "skill": "千里必勝ノ神算",
+   "rank": "SS",
+   "afterSkill": "千里必勝ノ神算",
+   "afterRank": "SS",
+   "rate": "42%",
+   "target": "全 覇道",
+   "effectShort": "攻防各1010%上昇+破壊150%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "千里必勝ノ神算",
+   "rank": "SS",
+   "afterSkill": "千里必勝ノ神算",
+   "afterRank": "SS",
+   "rate": "42%",
+   "target": "全 覇道",
+   "effectShort": "攻防各1010%上昇+破壊150%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "月詠ノ覇威",
+   "rank": "SS",
+   "afterSkill": "月詠ノ覇威",
+   "afterRank": "SS",
+   "rate": "100%",
+   "target": "全",
+   "effectShort": "攻防各344%上昇+部隊卓越確率+15%"
+  }
+ ]
+}

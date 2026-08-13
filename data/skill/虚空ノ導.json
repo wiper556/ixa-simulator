@@ -1,0 +1,58 @@
+{
+ "name": "虚空ノ導",
+ "rank": "SSS",
+ "baseRate": 70,
+ "target": "自身",
+ "effectSummary": "SSS/LV10 確率 70% 効果倍率上昇/対象:自身\n①自身が持つ初期スキルを模倣する\n②卓越:追加確率30%で通常攻撃/防御効果を1.3倍にして模倣する",
+ "categoryLinks": [
+  {
+   "href": "skills-mimic.html",
+   "label": "自模倣スキル一覧を見る"
+  },
+  {
+   "href": "skills-takuetsu.html",
+   "label": "卓越スキル一覧を見る"
+  }
+ ],
+ "sourceCharacters": [
+  {
+   "name": "本多忠勝（2）",
+   "no": "1303",
+   "slot": "C"
+  },
+  {
+   "name": "斎藤道三（3）",
+   "no": "1297",
+   "slot": "C"
+  },
+  {
+   "name": "藤堂高虎（2）",
+   "no": "1270",
+   "slot": "C"
+  },
+  {
+   "name": "織田信長（8）【覇】",
+   "no": "1250",
+   "slot": "C"
+  },
+  {
+   "name": "小早川隆景",
+   "no": "1280",
+   "slot": "B",
+   "note": [
+    "小早川隆景(1280)のsynthesisTable B枠(A-3-11逆引き確認、2026-08-02)"
+   ]
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "虚空ノ導",
+  "rank": "SSS"
+ },
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "自身　確率 70% / 卓越追加確率30%・1.3倍"
+  }
+ ]
+}

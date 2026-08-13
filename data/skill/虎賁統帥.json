@@ -1,0 +1,76 @@
+{
+ "name": "虎賁統帥",
+ "rank": "SS",
+ "baseRate": 100,
+ "target": "全 撤退 覇道",
+ "effectSummary": "SS/LV10 確率 100% 攻撃1130%上昇/対象:全　撤退　覇道\n①攻撃1130%上昇する\n②速度200%上昇する",
+ "categoryLinks": [
+  {
+   "href": "skills-taitai.html",
+   "label": "撤退スキル一覧を見る"
+  },
+  {
+   "href": "skills-hadou.html",
+   "label": "覇道スキル一覧を見る"
+  }
+ ],
+ "sourceCharacters": [
+  {
+   "name": "立花宗茂（5）",
+   "no": "1307",
+   "slot": "C"
+  },
+  {
+   "name": "大谷吉継（3）【覇】",
+   "no": "1300",
+   "slot": "A"
+  },
+  {
+   "name": "武田晴信（4）",
+   "no": "1318",
+   "slot": "S1"
+  },
+  {
+   "name": "望月千代女",
+   "no": "2855",
+   "slot": "B",
+   "db": "kyoku"
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "虎賁統帥",
+  "rank": "SS"
+ },
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全 撤退 覇道　確率 100% / 攻撃 1130%上昇+速度200%上昇"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": "全 撤退 覇道　確率 100% / 攻撃 1170%上昇+速度210%上昇"
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": "全 撤退 覇道　確率 100% / 攻撃 1260%上昇+速度220%上昇"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": "全 撤退 覇道　確率 100% / 攻撃 1440%上昇+速度230%上昇"
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": "全 撤退 覇道　確率 100% / 攻撃 1660%上昇+速度240%上昇"
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": "全 撤退 覇道　確率 100% / 攻撃 1910%上昇+速度250%上昇"
+  }
+ ]
+}

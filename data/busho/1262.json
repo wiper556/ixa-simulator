@@ -1,0 +1,126 @@
+{
+ "name": "最上義光【覇】",
+ "no": "1262",
+ "ch": "28章",
+ "cost": 5.5,
+ "troop": "全防",
+ "sub": "覇道",
+ "effect": "本丸/所領防御陣形の最前列か最後列配置時、部隊総防御力20%上昇",
+ "approved": true,
+ "furigana": "もがみよしあき",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1262_full.png",
+ "imageChar": "assets/img/characters/no1262_char.png",
+ "atkBase": 1200,
+ "atkGrowth": 64,
+ "defBase": 1310,
+ "defGrowth": 82,
+ "tacticsBase": 780,
+ "tacticsGrowth": 3.5,
+ "lv0Troops": 5170,
+ "rankGrades": {
+  "yari": "X",
+  "yumi": "A",
+  "uma": "S",
+  "ki": "A"
+ },
+ "initialSkill": "虎将鉄牙",
+ "skillDetail": "SSS/LV10 確率 45% 対象:全　覇道\n模倣不可\n①覇道を持つため所属部隊の武将のスキルを無効化や発動率低下から保護する\n②本丸または所領防御陣形の最前列か最後列に配置時部隊総防御力が20%上昇する",
+ "categoryLinks": [
+  {
+   "href": "skills-hadou.html",
+   "label": "覇道スキル一覧を見る"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全 覇道　確率 45% / 最前列か最後列配置時、部隊総防御力+20%"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": "全 覇道　確率 45% / 最前列か最後列配置時、部隊総防御力+21%"
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": "全 覇道　確率 45% / 最前列か最後列配置時、部隊総防御力+22%"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": "全 覇道　確率 45% / 最前列か最後列配置時、部隊総防御力+23%"
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": "全 覇道　確率 45% / 最前列か最後列配置時、部隊総防御力+24%"
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": "全 覇道　確率 45% / 最前列か最後列配置時、部隊総防御力+25%"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "龍驤虎躍",
+   "rank": "SS",
+   "afterSkill": "龍驤虎躍",
+   "afterRank": "SS",
+   "rate": "60%",
+   "target": "全",
+   "effectShort": "攻撃810%上昇+防御810%上昇+部隊消費コスト-1"
+  },
+  {
+   "slot": "B",
+   "skill": "永世ノ天隻",
+   "rank": "SS",
+   "afterSkill": "永世ノ天隻",
+   "afterRank": "SS",
+   "rate": "48%",
+   "target": "全 飛翔9",
+   "effectShort": "防御を係数×人数で上昇+飛翔9"
+  },
+  {
+   "slot": "C",
+   "skill": "虚実兵妙",
+   "rank": "SS",
+   "afterSkill": "虚実兵妙",
+   "afterRank": "SS",
+   "rate": "100%",
+   "target": "全",
+   "effectShort": "防御740%上昇+敵軍卓越確率-8%"
+  },
+  {
+   "slot": "S1",
+   "skill": "月煌侵蝕",
+   "rank": "SSS",
+   "afterSkill": "月煌侵蝕",
+   "afterRank": "SSS",
+   "rate": "45%",
+   "target": "全 兵站",
+   "effectShort": "防御を係数×人数で上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "黄泉醜女ノ屍兵",
+   "rank": "SS",
+   "afterSkill": "天地黎明",
+   "afterRank": "SSS",
+   "rate": "54%",
+   "target": "全",
+   "effectShort": "防御200%上昇+70以下の被ダメージを45に軽減",
+   "afterTarget": "全",
+   "afterRate": "70%",
+   "afterEffectShort": "防御 270%上昇(HP99以下で3倍)"
+  }
+ ],
+ "notes": [
+  "カード画像照合済み(2026-07-30): 槍X/弓A/馬S/器A",
+  "45do.info確認(生HTML照合済み): skiladd_wrapの見出し(候補A/B/C/S1/S2)と直後のスキル名が位置対応しており明示的。"
+ ]
+}

@@ -1,0 +1,133 @@
+{
+ "name": "鵜堂刃衛",
+ "no": "2611",
+ "ch": "未確認",
+ "cost": 4.5,
+ "troop": "全防",
+ "sub": "",
+ "effect": "防御戦闘時に敵軍の攻撃スキル発動率を-3%(特殊効果は重複不可)",
+ "furigana": "うどうじんえ",
+ "illustrator": "NW/S,RKKD",
+ "imageFull": "assets/img/characters/no2611_full.png",
+ "imageChar": "assets/img/characters/no2611_char.png",
+ "atkBase": 1800,
+ "atkGrowth": 135,
+ "defBase": 1920,
+ "defGrowth": 135,
+ "tacticsBase": 540,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 4980,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "B",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "心の一方",
+ "skillDetail": "A/LV10 確率 50% 防御420%上昇/対象:全\n①防御420%上昇する\n②防御戦闘時に敵軍の攻撃スキル発動率を-3%する(特殊効果は重複不可)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 50% / 防御 420%上昇(防御戦闘時に敵軍の攻撃スキル発動率-3%・特殊効果は重複不可)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": null
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": null
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": null
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": null
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": null
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": null
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "鬼十河",
+   "rank": "A",
+   "afterSkill": "朝曇ノ明麗",
+   "afterRank": "S",
+   "target": null,
+   "rate": null,
+   "effectShort": null,
+   "afterTarget": "全",
+   "afterRate": "+46%",
+   "afterEffectShort": "防御 290%上昇(所領防御陣形第4列配置時1.5倍+飛翔7取得・模倣不可、TR別データは未確認)"
+  },
+  {
+   "slot": "B",
+   "skill": "宝珠盛山",
+   "rank": "A",
+   "afterSkill": "朝曇ノ明麗",
+   "afterRank": "S",
+   "target": null,
+   "rate": null,
+   "effectShort": null,
+   "afterTarget": "全",
+   "afterRate": "+46%",
+   "afterEffectShort": "防御 290%上昇(所領防御陣形第4列配置時1.5倍+飛翔7取得・模倣不可、TR別データは未確認)"
+  },
+  {
+   "slot": "C",
+   "skill": "志半ノ矛楯",
+   "rank": "A",
+   "afterSkill": "志半ノ矛楯",
+   "afterRank": "A",
+   "target": null,
+   "rate": null,
+   "effectShort": null
+  },
+  {
+   "slot": "S1",
+   "skill": "心の一方",
+   "rank": "A",
+   "afterSkill": "心の一方",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "+50%",
+   "effectShort": "防御420%上昇(防御時に敵軍の攻撃スキル発動率-3%・重複不可)"
+  },
+  {
+   "slot": "S2",
+   "skill": "十束ノ神域",
+   "rank": "SS",
+   "afterSkill": "天聖宝冠",
+   "afterRank": "SSS",
+   "target": "全",
+   "rate": "+100%",
+   "effectShort": "攻撃320%上昇+速度70%上昇(所属部隊のスキルを無効化・発動低下から保護)",
+   "afterTarget": "全",
+   "afterRate": "+45%",
+   "afterEffectShort": "攻撃 100%+5%×防御参加武将数(280人)=1500.0%"
+  }
+ ],
+ "notes": [
+  "出典: カード画像(LV1形式: 極・職業「剣」・統率 槍S/弓B/馬A/器A拡大確認・初期値1800/1920/540・コスト4.5)",
+  " + ixanary.com/cards/2611(指揮4980(★0-0)・成長+135/+135/+2.5。るろうに剣心コラボ)",
+  " + ixanaryスキルページ「心の一方」(LV1/LV10+合成テーブル。鍛錬不可のためTRの記載なし)。",
+  "敵軍の攻撃スキル発動率を下げる妨害系。No.2412(高山右近)のS1候補「御用商人」(-20%)と同系。",
+  "合成テーブルはixanaryスキルページ(1次/2次/3次)"
+ ]
+}

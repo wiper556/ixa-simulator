@@ -1,0 +1,74 @@
+{
+ "name": "高津姫神",
+ "rank": "SS",
+ "baseRate": 70,
+ "target": "自身",
+ "effectSummary": "SS/LV10 確率 70% 対象:自身\n①自身が持つ初期スキルを模倣する(戦闘スキルのみ)",
+ "categoryLinks": [
+  {
+   "href": "skills-mimic.html",
+   "label": "自模倣スキル一覧を見る"
+  }
+ ],
+ "sourceCharacters": [
+  {
+   "name": "長尾景虎",
+   "no": "10064",
+   "slot": "A"
+  },
+  {
+   "name": "蘆名盛氏（2）",
+   "no": "1241",
+   "slot": "A"
+  },
+  {
+   "name": "細川忠興",
+   "no": "1235",
+   "slot": "B"
+  },
+  {
+   "name": "竹中半兵衛",
+   "no": "1215",
+   "slot": "B"
+  },
+  {
+   "name": "大友宗麟",
+   "no": "1210",
+   "slot": "S2"
+  },
+  {
+   "name": "今川義元",
+   "no": "1203",
+   "slot": "C"
+  },
+  {
+   "name": "谷津主水",
+   "no": "2419",
+   "slot": "C",
+   "db": "kyoku"
+  },
+  {
+   "name": "ヴァリニャーノ",
+   "no": "2458",
+   "slot": "S1",
+   "db": "kyoku"
+  },
+  {
+   "name": "相楽左之助",
+   "no": "2609",
+   "slot": "S1",
+   "db": "kyoku"
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "高津姫神",
+  "rank": "SS"
+ },
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "自身　確率 70% / 初期スキル(戦闘スキルのみ)を模倣(1倍)"
+  }
+ ]
+}

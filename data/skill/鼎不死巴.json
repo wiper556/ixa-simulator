@@ -1,0 +1,35 @@
+{
+ "name": "鼎不死巴",
+ "rank": "SSS",
+ "baseRate": 100,
+ "target": "全",
+ "noMimic": true,
+ "effectSummary": "SSS/LV10 確率 100% 攻撃240%上昇/対象:全\n模倣不可\n①攻撃240%上昇する\n②防御240%上昇する\n③部隊内武将のスキル発動率+10%を得る\n④卓越の追加確率+40%を得る(特殊効果は自部隊内では重複不可)",
+ "categoryLinks": [
+  {
+   "href": "skills-takuetsu.html",
+   "label": "卓越スキル一覧を見る"
+  }
+ ],
+ "sourceCharacters": [
+  {
+   "name": "黒田官兵衛【覇】",
+   "no": "1214",
+   "slot": "移植不可"
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "鼎不死巴",
+  "rank": "SSS"
+ },
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 攻撃240%上昇+防御240%上昇(発動率+10%・卓越追加確率+40%・TR別データは未確認)"
+  }
+ ],
+ "notes": [
+  "黒田官兵衛【覇】(No.1214)自身の初期スキル(移植不可)"
+ ]
+}

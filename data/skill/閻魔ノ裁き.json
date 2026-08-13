@@ -1,0 +1,35 @@
+{
+ "name": "閻魔ノ裁き",
+ "rank": "S",
+ "baseRate": 100,
+ "target": "全",
+ "noMimic": true,
+ "effectSummary": "S/LV10 確率 100% 攻撃184%上昇/対象:全\n①攻撃184%上昇する\n②防御184%上昇する\n③部隊内武将の全スキルの卓越追加確率が25%上昇する(特殊効果は自部隊内では重複不可・TR1〜TR5は未確認)",
+ "categoryLinks": [
+  {
+   "href": "skills-takuetsu.html",
+   "label": "卓越スキル一覧を見る"
+  }
+ ],
+ "sourceCharacters": [
+  {
+   "name": "直江兼続（3）",
+   "no": "1228",
+   "slot": "A・B"
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "月詠ノ覇威",
+  "rank": "SS"
+ },
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 攻撃184%上昇+防御184%上昇(卓越追加確率+25%)"
+  }
+ ],
+ "notes": [
+  "この武将自身の初期スキル(直江兼続(3) No.1228のsynthesisTable候補A・B)"
+ ]
+}

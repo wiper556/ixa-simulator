@@ -1,0 +1,94 @@
+{
+ "name": "里見義弘（2）",
+ "no": "1245",
+ "ch": "26章",
+ "cost": 5,
+ "troop": "全攻防",
+ "sub": "",
+ "effect": "卓越発動スキル数依存で攻防上昇",
+ "furigana": "さとみよしひろ",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1245_full.png",
+ "imageChar": "assets/img/characters/no1245_char.png",
+ "atkBase": 1170,
+ "atkGrowth": 57,
+ "defBase": 1170,
+ "defGrowth": 57,
+ "tacticsBase": 660,
+ "tacticsGrowth": 3,
+ "lv0Troops": 4920,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "S",
+  "ki": "A"
+ },
+ "initialSkill": "裂波驍槍",
+ "skillDetail": "S/LV10 確率 32% 攻撃160%上昇/対象:全\n①攻撃160%上昇する\n②防御160%上昇する\n③自部隊内で卓越発動したスキル数×65%を攻防効果に加算する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 32% / 攻撃 160%上昇+防御 160%上昇(卓越発動数×65%加算)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "四天轟雷",
+   "rank": "SS",
+   "afterSkill": "四天轟雷",
+   "afterRank": "SS",
+   "rate": "100%",
+   "target": "全",
+   "effectShort": "攻撃360%上昇+防御360%上昇(砲/器対象追加)"
+  },
+  {
+   "slot": "B",
+   "skill": "十束ノ神域",
+   "rank": "SS",
+   "afterSkill": "天聖宝冠",
+   "afterRank": "SSS",
+   "rate": "100%",
+   "target": "全 覇道",
+   "effectShort": "攻撃320%上昇+速度70%上昇",
+   "afterTarget": "全",
+   "afterRate": "45%",
+   "afterEffectShort": "攻撃 100%+5%×防御参加武将数(280人)=1500.0%"
+  },
+  {
+   "slot": "C",
+   "skill": "十束ノ神域",
+   "rank": "SS",
+   "afterSkill": "天聖宝冠",
+   "afterRank": "SSS",
+   "rate": "100%",
+   "target": "全 覇道",
+   "effectShort": "攻撃320%上昇+速度70%上昇",
+   "afterTarget": "全",
+   "afterRate": "45%",
+   "afterEffectShort": "攻撃 100%+5%×防御参加武将数(280人)=1500.0%"
+  },
+  {
+   "slot": "S1",
+   "skill": "思金神ノ深謀",
+   "rank": "SS",
+   "afterSkill": "思金神ノ深謀",
+   "afterRank": "SS",
+   "rate": "60%",
+   "target": "部隊長",
+   "effectShort": "部隊長の模倣可能な初期スキルを模倣(卓越で1.3倍)"
+  },
+  {
+   "slot": "S2",
+   "skill": "火之迦具土神",
+   "rank": "SS",
+   "afterSkill": "火之迦具土神",
+   "afterRank": "SS",
+   "rate": "100%",
+   "target": "槍・馬・砲",
+   "effectShort": "攻撃160%上昇(卓越追加確率25%で3倍)"
+  }
+ ],
+ "approved": true
+}

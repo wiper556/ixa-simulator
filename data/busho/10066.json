@@ -1,0 +1,114 @@
+{
+ "name": "斎藤一【覇】",
+ "no": "10066",
+ "furigana": "さいとうはじめ",
+ "illustrator": "NW/S,RKKD 直良有祐",
+ "atkBase": 2580,
+ "atkGrowth": 0,
+ "defBase": 2100,
+ "defGrowth": 0,
+ "tacticsBase": 870,
+ "tacticsGrowth": 0,
+ "lv0Troops": 5200,
+ "rankGrades": {
+  "yari": "X",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "壬生ノ狼牙",
+ "skillDetail": "SSS/LV10 確率：+100% / 対象 全 無尽 攻擊：500%上昇 このスキルを持つ武将カードは追加スキルの攻撃効果が2.5倍となる(模倣不可)",
+ "ch": "30章",
+ "cost": 5.5,
+ "troop": "全攻",
+ "sub": "無尽",
+ "effect": "追加スキルの攻撃効果2.5倍",
+ "approved": true,
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 無尽 攻擊500%上昇 このスキルを持つ武将カードは、追加スキルの攻撃効果が2.5倍となる(模倣不可)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": "全　確率 100% / 無尽 攻擊540%上昇 このスキルを持つ武将カードは、追加スキルの攻撃効果が2.6倍となる(模倣不可)"
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": "全　確率 100% / 無尽 攻擊600%上昇 このスキルを持つ武将カードは、追加スキルの攻撃効果が2.7倍となる(模倣不可)"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": "全　確率 100% / 無尽 攻擊670%上昇 このスキルを持つ武将カードは、追加スキルの攻撃効果が2.8倍となる(模倣不可)"
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": "全　確率 100% / 無尽 攻擊750%上昇 このスキルを持つ武将カードは、追加スキルの攻撃効果が2.9倍となる(模倣不可)"
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": "全　確率 100% / 無尽 攻擊840%上昇 このスキルを持つ武将カードは、追加スキルの攻撃効果が3倍となる(模倣不可)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "義陣絶刀",
+   "rank": "S",
+   "afterSkill": "國才連豪",
+   "afterRank": "SS",
+   "target": null,
+   "rate": null,
+   "effectShort": null,
+   "afterTarget": "全",
+   "afterRate": "+50%",
+   "afterEffectShort": "防御 310%×國才連豪所持武将数(4人)=1240.0%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "虚実兵妙",
+   "rank": "SS",
+   "afterSkill": "虚実兵妙",
+   "afterRank": "SS",
+   "target": null,
+   "rate": null,
+   "effectShort": null
+  },
+  {
+   "slot": "C",
+   "skill": "至天ノ御剣",
+   "rank": "SSS",
+   "afterSkill": "至天ノ御剣",
+   "afterRank": "SSS",
+   "target": null,
+   "rate": null,
+   "effectShort": null
+  },
+  {
+   "slot": "S1",
+   "skill": "勇冠三軍",
+   "rank": "SSS",
+   "afterSkill": "勇冠三軍",
+   "afterRank": "SSS",
+   "target": null,
+   "rate": null,
+   "effectShort": null
+  },
+  {
+   "slot": "S2",
+   "skill": "牙突・弐式",
+   "rank": "SS",
+   "afterSkill": "牙突・弐式",
+   "afterRank": "SS",
+   "target": null,
+   "rate": null,
+   "effectShort": null
+  }
+ ]
+}

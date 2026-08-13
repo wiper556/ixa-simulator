@@ -1,0 +1,39 @@
+{
+ "name": "刈世公子",
+ "rank": "S",
+ "baseRate": 25,
+ "target": "弓・馬・器・焙",
+ "noMimic": true,
+ "effectSummary": "S/LV10 卓越 追加確率25% 攻撃440%上昇/対象:弓・馬・器・焙\n模倣不可\n①通常確率では発動せず卓越時のみ追加確率25%で発動する\n②発動時攻撃440%上昇する\n③発動時飛翔17を得る(攻撃戦闘時のみ発動・飛翔獲得部分は二重卓越不可)",
+ "categoryLinks": [
+  {
+   "href": "skills-hishou-atk.html",
+   "label": "飛翔スキル一覧(攻撃)を見る"
+  },
+  {
+   "href": "skills-takuetsu.html",
+   "label": "卓越スキル一覧を見る"
+  }
+ ],
+ "sourceCharacters": [
+  {
+   "name": "小早川秀秋（4）",
+   "no": "1271",
+   "slot": "A・B"
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "照闇騎行",
+  "rank": "SS"
+ },
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓・馬・器・焙　卓越追加確率 25% / 攻撃 440%上昇(飛翔17取得)"
+  }
+ ],
+ "notes": [
+  "この武将自身の初期スキル(小早川秀秋(4) No.1271のsynthesisTable候補A・B)"
+ ]
+}

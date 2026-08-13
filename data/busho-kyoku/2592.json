@@ -1,0 +1,159 @@
+{
+ "name": "帰蝶",
+ "no": "2592",
+ "ch": "未確認",
+ "cost": 5,
+ "troop": "部隊長特",
+ "sub": "",
+ "effect": "部隊長の初期スキルを模倣(卓越:追加確率20%で1.25倍にして模倣)",
+ "furigana": "きちょう",
+ "illustrator": "正子公也",
+ "imageFull": "assets/img/characters/no2592_full.png",
+ "imageChar": "assets/img/characters/no2592_char.png",
+ "atkBase": 1150,
+ "atkGrowth": 57,
+ "defBase": 1150,
+ "defGrowth": 57,
+ "tacticsBase": 550,
+ "tacticsGrowth": 3,
+ "lv0Troops": 4760,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "舞蝶朧月",
+ "skillDetail": "S/LV10 確率 50% 部隊長の初期スキルを模倣/対象:部隊長　卓越\n①所属部隊の部隊長が持つ模倣可能な初期スキルを模倣する\n②卓越:追加確率20%で通常攻撃/防御効果を1.25倍して模倣する",
+ "categoryLinks": [
+  {
+   "href": "skills-leadermimic.html",
+   "label": "部隊長模倣スキル一覧を見る"
+  },
+  {
+   "href": "skills-takuetsu.html",
+   "label": "卓越スキル一覧を見る"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "部隊長　確率 50% / 部隊長の模倣可能な初期スキルを模倣(卓越:追加確率20%で通常攻撃/防御効果1.25倍にして模倣)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": null
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": null
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": null
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": null
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": null
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": null
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "舞蝶朧月",
+   "rank": "S",
+   "afterSkill": "月詠ノ覇威",
+   "afterRank": "SS",
+   "target": "部隊長",
+   "rate": "+50%",
+   "effectShort": "部隊長の初期スキルを模倣(卓越:追加確率20%で1.25倍にして模倣)",
+   "afterTarget": "全",
+   "afterRate": "+100%",
+   "afterEffectShort": "攻撃344%上昇+防御344%上昇+自軍全武将全スキルの卓越確率に加算(自軍内重複上限2・模倣不可)",
+   "note": [
+    "2026-08-13訂正: B以降が1枠ずつずれていた。",
+    "ixanary.com/skills/舞蝶朧月(No.2592のカード)の合成テーブルで1次/2次を確認。"
+   ]
+  },
+  {
+   "slot": "B",
+   "skill": "傾国ノ艶姫",
+   "rank": "S",
+   "afterSkill": "摩利支天ノ法",
+   "afterRank": "SSS",
+   "target": "部隊長",
+   "rate": "+60%",
+   "effectShort": "部隊長の初期スキルを模倣(卓越:追加確率30%で1.2倍にして模倣)",
+   "afterTarget": "部隊長",
+   "afterRate": "+70%",
+   "afterEffectShort": "部隊長の初期スキルを模倣(1.25倍に強化して模倣)"
+  },
+  {
+   "slot": "C",
+   "skill": "黒飛燕剣",
+   "rank": "S",
+   "afterSkill": "傾国ノ艶姫",
+   "afterRank": "S",
+   "target": "部隊長",
+   "rate": "+50%",
+   "effectShort": "飛翔4+部隊長の初期スキルを模倣(卓越:追加確率50%で1.2倍にして模倣)",
+   "afterTarget": "部隊長",
+   "afterRate": "+60%",
+   "afterEffectShort": "部隊長の初期スキルを模倣(卓越:追加確率30%で1.2倍にして模倣)"
+  },
+  {
+   "slot": "S1",
+   "skill": "月詠ノ覇威",
+   "rank": "SS",
+   "afterSkill": "月詠ノ覇威",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "+100%",
+   "effectShort": "攻撃344%上昇+防御344%上昇+自軍全武将全スキルの卓越確率に加算(自軍内重複上限2・模倣不可)",
+   "afterTarget": "全",
+   "afterRate": "+100%",
+   "afterEffectShort": "攻撃344%上昇+防御344%上昇+自軍全武将全スキルの卓越確率に加算(自軍内重複上限2・模倣不可)"
+  },
+  {
+   "slot": "S2",
+   "skill": "黒飛燕剣",
+   "rank": "S",
+   "afterSkill": "傾国ノ艶姫",
+   "afterRank": "S",
+   "target": "部隊長",
+   "rate": "+50%",
+   "effectShort": "飛翔4+部隊長の初期スキルを模倣(卓越:追加確率50%で1.2倍にして模倣)",
+   "afterTarget": "部隊長",
+   "afterRate": "+60%",
+   "afterEffectShort": "部隊長の初期スキルを模倣(卓越:追加確率30%で1.2倍にして模倣)"
+  }
+ ],
+ "notes": [
+  "出典: カード画像(LV1形式: 極・統率 槍A/弓A/馬A/器S拡大確認・初期値1150/1150/550・コスト5・LV1スキル値。",
+  "  天限突破表示のため指揮6960は不採用、ixanaryの★0-0=4760を使用(B-00ルール))",
+  " + ixanary.com/cards/2592(成長+57/+57/+3.0・LV10: 確率+50%/部隊長模倣/卓越20%で1.25倍。部隊スキル防.戦姫艶舞)",
+  " + ixawiki BushoCard/2592(統率2次確認・合成テーブル1次/2次候補+C/S1候補のLV10効果)。",
+  "統率はカード画像+ixawikiの2ソース一致。シミュのspecialSkills「舞蝶朧月」(mimicTakuetsu 20%/1.25倍)の元カード。",
+  "初期スキルがSランクのためスキル個別ページの新規作成が必要(docsのTODOに記録済み)。",
+  "合成テーブルはixawiki(1次候補+2次候補+候補スキルのLV10効果)",
+  "【2026-08-12 外部照合】合成テーブルはixawiki BushoCard/2592帰蝶の候補表と一致している。",
+  " ixanaryのスキル個別ページはA〜S1枠の候補の並び(ixanaryはA:舞蝶朧月→月詠ノ覇威 / B:傾国ノ艶姫 / C:黒飛燕剣 / S1:月詠ノ覇威)が食い違うが、",
+  " ixawikiは「黒飛燕剣[S] S1候補」と明記しており、評価コメントでも黒飛燕剣がS2枠である旨が語られている。",
+  " ixawiki側を採用したまま据え置く(監査ツールがixanary基準で不一致を出すが誤修正しないこと)。"
+ ]
+}

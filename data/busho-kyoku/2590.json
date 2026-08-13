@@ -1,0 +1,133 @@
+{
+ "name": "宮本二天",
+ "no": "2590",
+ "ch": "未確認",
+ "cost": 5,
+ "troop": "全攻防",
+ "sub": "",
+ "effect": "自軍内の職業「剣豪」全武将スキルの卓越確率+30%(重複上限6・模倣不可)",
+ "furigana": "みやもとにてん",
+ "illustrator": "影井由宇",
+ "imageFull": "assets/img/characters/no2590_full.png",
+ "imageChar": "assets/img/characters/no2590_char.png",
+ "atkBase": 2000,
+ "atkGrowth": 155,
+ "defBase": 2000,
+ "defGrowth": 155,
+ "tacticsBase": 530,
+ "tacticsGrowth": 3,
+ "lv0Troops": 5600,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "無空ノ極剣",
+ "skillDetail": "S/LV10 確率 100% 攻撃470%上昇/対象:全\n模倣不可\n①攻撃470%上昇する\n②防御470%上昇する\n③自軍内の職業「剣豪」である全武将スキルの卓越確率に30%を加算する(特殊効果の重複上限6)",
+ "categoryLinks": [
+  {
+   "href": "skills-takuetsu.html",
+   "label": "卓越スキル一覧を見る"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 攻撃 470%上昇+防御 470%上昇(自軍内の剣豪全武将スキルの卓越確率+30%・重複上限6・模倣不可)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": null
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": null
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": null
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": null
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": null
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": null
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "活人剣",
+   "rank": "A",
+   "afterSkill": null,
+   "afterRank": null,
+   "target": null,
+   "rate": null,
+   "effectShort": null
+  },
+  {
+   "slot": "B",
+   "skill": "摩利支天ノ法",
+   "rank": "SSS",
+   "afterSkill": null,
+   "afterRank": null,
+   "target": null,
+   "rate": null,
+   "effectShort": null
+  },
+  {
+   "slot": "C",
+   "skill": "開闢ノ逆鉾",
+   "rank": "SS",
+   "afterSkill": null,
+   "afterRank": null,
+   "target": "全",
+   "rate": "+100%",
+   "effectShort": "攻撃254%上昇(卓越:攻撃戦闘時、追加確率30%で兵士被害15%減少・部隊内重複上限2・模倣不可)"
+  },
+  {
+   "slot": "S1",
+   "skill": "仙剣破斬",
+   "rank": "SSS",
+   "afterSkill": null,
+   "afterRank": null,
+   "target": null,
+   "rate": null,
+   "effectShort": null
+  },
+  {
+   "slot": "S2",
+   "skill": "月詠ノ覇威",
+   "rank": "SS",
+   "afterSkill": null,
+   "afterRank": null,
+   "target": "全",
+   "rate": "+100%",
+   "effectShort": "攻撃344%上昇+防御344%上昇(自軍全部将全スキルの卓越確率+15%・模倣不可・自軍内重複上限2)"
+  }
+ ],
+ "notes": [
+  "出典: カード画像(LV1形式: 極・職業「剣」・統率 槍S/弓A/馬A/器S拡大確認・初期値2000/2000/530・コスト5・LV1スキル値。",
+  "  限界突破表示のため指揮5600(★0-0)とカード表示が一致するのはixanaryで確認)",
+  " + ixanary.com/cards/2590(指揮5600(★0-0)・成長+155/+155/+3.0・LV10: 確率+100%/全攻防470%/",
+  "   剣豪の卓越確率+30%・重複上限6・模倣不可。絵師 影井由宇)",
+  " + ixawiki BushoCard/2590(統率2次確認・合成1次候補のみ判明)。",
+  "統率はカード画像+ixawikiの2ソース一致。成長+155は剣豪級。2次候補はixawikiテンプレ未記入のため",
+  "afterSkillは全null(他カードの既存登録から推測しない=skill-hidden-candidateルール)。",
+  "初期スキルがSランクのためスキル個別ページの新規作成が必要(docsのTODOに記録済み)。"
+ ]
+}

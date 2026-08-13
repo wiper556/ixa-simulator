@@ -1,0 +1,143 @@
+{
+ "name": "西郷局",
+ "no": "2583",
+ "ch": "未確認",
+ "cost": 4,
+ "troop": "槍弓器鉄防",
+ "sub": "",
+ "effect": "自拠点防御時は防御効果3倍",
+ "furigana": "さいごうのつぼね",
+ "illustrator": "綾乙",
+ "imageFull": "assets/img/characters/no2583_full.png",
+ "imageChar": "assets/img/characters/no2583_char.png",
+ "atkBase": 1100,
+ "atkGrowth": 51,
+ "defBase": 1150,
+ "defGrowth": 51,
+ "tacticsBase": 530,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 4250,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "葵ノ慈母",
+ "skillDetail": "S/LV10 確率 50% 防御110%上昇/対象:槍・弓・器・鉄\n①防御110%上昇する\n②自拠点防御時は防御効果が3倍になる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・弓・器・鉄　確率 50% / 防御 110%上昇(自拠点防御時は防御効果3倍)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": null
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": null
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": null
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": null
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": null
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": null
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "戦陣 無縫",
+   "rank": "A",
+   "afterSkill": "天衣無縫神戒",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "+42%",
+   "effectShort": "防御(部隊総コスト依存)%上昇(総C25=351.03%)",
+   "afterTarget": "全",
+   "afterRate": "+50%",
+   "afterEffectShort": "防御(部隊総コスト依存)%上昇(総C25=393.79%)"
+  },
+  {
+   "slot": "B",
+   "skill": "天衣無縫神戒",
+   "rank": "SS",
+   "afterSkill": "天衣無縫神戒",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "+50%",
+   "effectShort": "部隊総コストに応じて防御効果が変化する(LV10基準30.02%上昇)",
+   "afterTarget": "全",
+   "afterRate": "+50%",
+   "afterEffectShort": "部隊総コストに応じて防御効果が変化する(LV10基準30.02%上昇)"
+  },
+  {
+   "slot": "C",
+   "skill": "天衣無縫神戒",
+   "rank": "SS",
+   "afterSkill": "天衣無縫神戒",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "+50%",
+   "effectShort": "部隊総コストに応じて防御効果が変化する(LV10基準30.02%上昇)",
+   "afterTarget": "全",
+   "afterRate": "+50%",
+   "afterEffectShort": "部隊総コストに応じて防御効果が変化する(LV10基準30.02%上昇)"
+  },
+  {
+   "slot": "S1",
+   "skill": "国津破邪ノ楯",
+   "rank": "SS",
+   "afterSkill": "国津破邪ノ楯",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "+60%",
+   "effectShort": "防御(部隊総コスト依存)%上昇(C25で423.75%)"
+  },
+  {
+   "slot": "S2",
+   "skill": "大樹ノ誓い",
+   "rank": "A",
+   "afterSkill": "戦陣 凪",
+   "afterRank": "A",
+   "target": null,
+   "rate": null,
+   "effectShort": null,
+   "afterTarget": "全",
+   "afterRate": "+60%",
+   "afterEffectShort": "防御110%上昇(飛翔2・自軍防御参加武将が30以上の時、防御効果2倍)"
+  }
+ ],
+ "notes": [
+  "出典: カード画像(LV1形式: 極・統率 槍S/弓A/馬A/器A拡大確認・初期値1100/1150/530・コスト4・LV1スキル値。",
+  "  限界突破表示のため指揮4850は不採用、ixanaryの★0-0=4250を使用(B-00ルール))",
+  " + ixanary.com/cards/2583(成長+51/+51/+2.5・LV10: 確率+50%/槍弓器鉄防110%/自拠点防御時3倍。",
+  "   「どうしよう家康」ログインボーナスカード・絵師 綾乙)",
+  " + ixawiki BushoCard/2583(統率2次確認・合成テーブル1次/2次候補+A/C候補のLV10効果)。",
+  "統率はカード画像+ixawikiの2ソース一致。「鉄」は鉄砲足軽。初期スキルがSランクのため",
+  "スキル個別ページの新規作成が必要(docsのTODOに記録済み)。",
+  "合成テーブルはixawiki(1次候補+2次候補+候補スキルのLV10効果)",
+  "【2026-08-12 外部照合】合成テーブルはixawiki BushoCard/2583西郷局の候補表と一致している。",
+  " ixanaryのスキル個別ページはB/C枠の移植後(サイト=幽冥主宰大神 / ixanary2次=天衣無縫神戒)が食い違うが、",
+  " ixanaryは3次まで天衣無縫神戒のままで幽冥主宰大神が一切出てこず、収録漏れと判断した。",
+  " ixawiki側を採用したまま据え置く(監査ツールがixanary基準で不一致を出すが誤修正しないこと)。"
+ ]
+}

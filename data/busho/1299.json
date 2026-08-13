@@ -1,0 +1,128 @@
+{
+ "name": "石田三成（7）【覇】",
+ "no": "1299",
+ "ch": "31章",
+ "cost": 6,
+ "troop": "全防",
+ "sub": "無尽",
+ "effect": "部隊内の全極限スキルに無尽付与／無尽を持つスキルの防御効果2倍",
+ "approved": true,
+ "furigana": "いしだみつなり",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1299_full.png",
+ "imageChar": "assets/img/characters/no1299_char.png",
+ "atkBase": 1230,
+ "atkGrowth": 66,
+ "defBase": 1310,
+ "defGrowth": 82,
+ "tacticsBase": 850,
+ "tacticsGrowth": 4,
+ "lv0Troops": 5450,
+ "rankGrades": {
+  "yari": "SS",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "X"
+ },
+ "initialSkill": "義戦ノ旗手",
+ "skillDetail": "SSS/LV10 確率 100% 防御360%上昇/対象:全　無尽\n模倣不可\n部隊長時限定\n①部隊内の全極限スキルに無尽を付与する(すでに無尽を持つ極限スキルには重ねて付与されない)\n②自部隊内の無尽を持つスキルの防御効果を2倍する(TR6のみ2.1倍このスキル自身も無尽持ちのため対象になる)\n③自部隊内の各小隊長(部隊長本人以外)が持つ無尽を持たない初期スキルは防御戦闘時に無効化され保護スキルでも防げない",
+ "categoryLinks": [
+  {
+   "href": "skills-cost.html",
+   "label": "コスト減少スキル一覧を見る"
+  },
+  {
+   "href": "skills-mujin.html",
+   "label": "無尽スキル一覧を見る"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全 無尽　確率 100% / 全防 360%"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": "全 無尽　確率 100% / 全防 400%"
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": "全 無尽　確率 100% / 全防 475%"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": "全 無尽　確率 100% / 全防 585%"
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": "全 無尽　確率 100% / 全防 730%"
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": "全 無尽　確率 100% / 全防 920%"
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": "全 無尽　確率 100% / 全防 1010%"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "経津主神ノ剣",
+   "rank": "SSS",
+   "afterSkill": "経津主神ノ剣",
+   "afterRank": "SSS",
+   "rate": "45%",
+   "target": "自身",
+   "effectShort": "模倣した初期スキルの効果を1.35〜1.5倍に強化"
+  },
+  {
+   "slot": "B",
+   "skill": "従魔絶神",
+   "rank": "SSS",
+   "afterSkill": "従魔絶神",
+   "afterRank": "SSS",
+   "rate": "43%",
+   "target": "全 飛翔13",
+   "effectShort": "防御を係数×人数で上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "梵天浄界",
+   "rank": "SSS",
+   "afterSkill": "梵天浄界",
+   "afterRank": "SSS",
+   "rate": "60%",
+   "target": "全",
+   "effectShort": "防御50%+破壊を係数×人数で上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "岳王ノ加護",
+   "rank": "SS",
+   "afterSkill": "岳王ノ加護",
+   "afterRank": "SS",
+   "rate": "50%",
+   "target": "全 無尽",
+   "effectShort": "防御を係数×人数で上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "國才連豪",
+   "rank": "SS",
+   "afterSkill": "國才連豪",
+   "afterRank": "SS",
+   "rate": "50%",
+   "target": "全",
+   "effectShort": "防御が係数×同スキル所持武将数で上昇"
+  }
+ ]
+}

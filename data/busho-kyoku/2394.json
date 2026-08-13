@@ -1,0 +1,126 @@
+{
+ "name": "高山マリア",
+ "no": "2394",
+ "ch": "29章",
+ "cost": 3,
+ "troop": "弓砲器攻防",
+ "sub": "",
+ "effect": "攻防上昇+部隊内スキルの卓越確率+20%(模倣不可)",
+ "furigana": "たかやままりあ",
+ "illustrator": "ぽしー",
+ "imageFull": "assets/img/characters/no2394_full.png",
+ "imageChar": "assets/img/characters/no2394_char.png",
+ "atkBase": 1120,
+ "atkGrowth": 45,
+ "defBase": 1120,
+ "defGrowth": 45,
+ "tacticsBase": 540,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3450,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "S",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "聖廉母堂",
+ "skillDetail": "A/LV10 確率 100% 攻撃410%上昇/対象:弓・砲・器\n模倣不可\n①攻撃410%上昇する\n②防御410%上昇する\n③部隊内武将の全スキルの卓越追加確率が20%上昇する(特殊効果は自部隊内では重複不可)",
+ "categoryLinks": [
+  {
+   "href": "skills-takuetsu.html",
+   "label": "卓越スキル一覧を見る"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓・砲・器　確率 100% / 攻撃 410%上昇+防御 410%上昇(部隊内卓越追加確率+20%)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": "弓・砲・器　確率 100% / 攻撃 450%上昇+防御 450%上昇(部隊内卓越追加確率+25%)"
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": "弓・砲・器　確率 100% / 攻撃 500%上昇+防御 500%上昇(部隊内卓越追加確率+30%)"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": null
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": null
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": null
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "戦陣 吟詠",
+   "rank": "A",
+   "afterSkill": "戦陣 吟詠",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "+100%",
+   "effectShort": "攻撃340%上昇+防御340%上昇+部隊内卓越追加確率+20%(模倣不可・特殊効果は自部隊内では重複不可)"
+  },
+  {
+   "slot": "B",
+   "skill": "十束ノ神域",
+   "rank": "SS",
+   "afterSkill": "天聖宝冠",
+   "afterRank": "SSS",
+   "target": "全 覇道",
+   "rate": "100%",
+   "effectShort": "攻撃 320%上昇+速度70%上昇(TR別データは未確認)",
+   "afterTarget": "全",
+   "afterRate": "45%",
+   "afterEffectShort": "攻撃 100%+5%×防御参加武将数(280人)=1500.0%"
+  },
+  {
+   "slot": "C",
+   "skill": "聖廉母堂",
+   "rank": "A",
+   "afterSkill": "聖廉母堂",
+   "afterRank": "A",
+   "target": "弓・砲・器",
+   "rate": "100%",
+   "effectShort": "攻撃410%上昇+防御410%上昇+部隊内卓越追加確率20%上昇(模倣不可・特殊効果は自部隊内では重複不可)"
+  },
+  {
+   "slot": "S1",
+   "skill": "聖廉母堂",
+   "rank": "A",
+   "afterSkill": "聖廉母堂",
+   "afterRank": "A",
+   "target": "弓・砲・器",
+   "rate": "100%",
+   "effectShort": "攻撃410%上昇+防御410%上昇+部隊内卓越追加確率20%上昇(模倣不可・特殊効果は自部隊内では重複不可)"
+  },
+  {
+   "slot": "S2",
+   "skill": "志半ノ矛楯",
+   "rank": "A",
+   "afterSkill": "志半ノ矛楯",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "+65%",
+   "effectShort": "攻撃465%上昇+防御465%上昇(模倣不可)"
+  }
+ ],
+ "approved": true,
+ "notes": [
+  "45do.info生HTML(ordinary/0339)のskiladd_wrap確認+ixagno.blog.fc2.com(blog-entry-10392)の合成テーブルで移植後の変化先も確認(2ソース一致):",
+  "A=戦陣吟詠[A]→戦陣吟詠[A](自己参照)/B=十束ノ神域[SS]→天聖宝冠[SSS](skills.html側ownHiddenCandidateとも一致)/C・S1=聖廉母堂[A]→聖廉母堂[A](自己参照)/S2=志半ノ矛楯[A]→志半ノ矛楯[A](自己参照)"
+ ]
+}

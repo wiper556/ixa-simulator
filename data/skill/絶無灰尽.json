@@ -1,0 +1,92 @@
+{
+ "name": "絶無灰尽",
+ "rank": "SS",
+ "baseRate": 100,
+ "target": "全 無尽 不屈1",
+ "effectSummary": "SS/LV10 確率 100% 攻撃1010%上昇/対象:全　無尽　不屈1\n①攻撃1010%上昇する\n②無尽を持つため部隊消費コストを-0.5する",
+ "categoryLinks": [
+  {
+   "href": "skills-mujin.html",
+   "label": "無尽スキル一覧を見る"
+  },
+  {
+   "href": "skills-fukutsu.html",
+   "label": "不屈スキル一覧を見る"
+  },
+  {
+   "href": "skills-cost.html",
+   "label": "コスト減少スキル一覧を見る"
+  }
+ ],
+ "sourceCharacters": [
+  {
+   "name": "毛利輝元-復刻-【覇】",
+   "no": "10075",
+   "slot": "B"
+  },
+  {
+   "name": "本多忠勝（2）",
+   "no": "1303",
+   "slot": "A"
+  },
+  {
+   "name": "島津義弘（4）",
+   "no": "1294",
+   "slot": "A"
+  },
+  {
+   "name": "豊臣秀吉【覇】",
+   "no": "1274",
+   "slot": "C"
+  },
+  {
+   "name": "羽柴秀長",
+   "no": "1278",
+   "slot": "S1",
+   "note": [
+    "羽柴秀長(1278)のsynthesisTable S1枠(A-3-11逆引き確認、2026-08-02)"
+   ]
+  },
+  {
+   "name": "細川晴元（2）",
+   "no": "1317",
+   "slot": "A"
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "絶無灰尽",
+  "rank": "SS"
+ },
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全 無尽 不屈1　確率 100% / 攻撃 1010%上昇"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": "全 無尽 不屈1　確率 100% / 攻撃 1055%上昇"
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": "全 無尽 不屈1　確率 100% / 攻撃 1115%上昇"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": "全 無尽 不屈1　確率 100% / 攻撃 1200%上昇"
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": "全 無尽 不屈1　確率 100% / 攻撃 1340%上昇"
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": "全 無尽 不屈1　確率 100% / 攻撃 1530%上昇"
+  }
+ ]
+}

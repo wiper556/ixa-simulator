@@ -1,0 +1,132 @@
+{
+ "name": "織田信長(2595)",
+ "no": "2595",
+ "ch": "未確認",
+ "cost": 3.5,
+ "troop": "槍砲器攻防",
+ "sub": "",
+ "effect": "所持武将の全スキルの卓越確率+30%(模倣不可)",
+ "furigana": "おだのぶなが",
+ "illustrator": "平野耕太・少年画報社/DRIFTERS製作委員会",
+ "imageFull": "assets/img/characters/no2595_full.png",
+ "imageChar": "assets/img/characters/no2595_char.png",
+ "atkBase": 1090,
+ "atkGrowth": 42,
+ "defBase": 1090,
+ "defGrowth": 42,
+ "tacticsBase": 560,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3720,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "我こそ絶対悪よ",
+ "skillDetail": "A/LV10 確率 100% 攻撃350%上昇/対象:槍・砲・器\n模倣不可\n①攻撃350%上昇する\n②防御350%上昇する\n③このスキルを所持する武将の全スキルの卓越確率に30%を加算する",
+ "categoryLinks": [
+  {
+   "href": "skills-takuetsu.html",
+   "label": "卓越スキル一覧を見る"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・砲・器　確率 100% / 攻撃 350%上昇+防御 350%上昇(所持武将の全スキルの卓越確率+30%・模倣不可)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": null
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": null
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": null
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": null
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": null
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": null
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": null,
+   "rank": null,
+   "afterSkill": null,
+   "afterRank": null,
+   "target": null,
+   "rate": null,
+   "effectShort": null
+  },
+  {
+   "slot": "B",
+   "skill": null,
+   "rank": null,
+   "afterSkill": null,
+   "afterRank": null,
+   "target": null,
+   "rate": null,
+   "effectShort": null
+  },
+  {
+   "slot": "C",
+   "skill": null,
+   "rank": null,
+   "afterSkill": null,
+   "afterRank": null,
+   "target": null,
+   "rate": null,
+   "effectShort": null
+  },
+  {
+   "slot": "S1",
+   "skill": null,
+   "rank": null,
+   "afterSkill": null,
+   "afterRank": null,
+   "target": null,
+   "rate": null,
+   "effectShort": null
+  },
+  {
+   "slot": "S2",
+   "skill": null,
+   "rank": null,
+   "afterSkill": null,
+   "afterRank": null,
+   "target": null,
+   "rate": null,
+   "effectShort": null
+  }
+ ],
+ "notes": [
+  "出典: カード画像(LV1形式: 極・統率 槍A/弓A/馬A/器S拡大確認・初期値1090/1090/560・コスト3.5・LV1スキル値。",
+  "  限界突破表示のため指揮4320は不採用、ixanaryの★0-0=3720を使用(B-00ルール))",
+  " + ixanary.com/cards/2595(成長+42/+42/+2.5・LV10: 確率+100%/槍砲器攻防350%/所持武将の卓越確率+30%。",
+  "   【漂流者コラボ】クエスト報酬)",
+  " + ixawiki BushoCard/2595(統率2次確認。合成テーブルはテンプレ未記入で1次候補も不明)。",
+  "統率はカード画像+ixawikiの2ソース一致。DRIFTERSコラボカード。",
+  "合成テーブルはixawiki未記入のため全null(要別ソース確認)。スキルはA(鍛錬情報なし)のためTR1以降のeffectはnull。"
+ ]
+}

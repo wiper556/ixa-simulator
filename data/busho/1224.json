@@ -1,0 +1,97 @@
+{
+ "name": "堀秀政",
+ "no": "1224",
+ "ch": "24章",
+ "cost": 5,
+ "troop": "弓馬器焙攻",
+ "sub": "飛翔2",
+ "effect": "攻撃上昇／対象兵科指揮時極限スキル攻撃効果3倍",
+ "approved": true,
+ "furigana": "ほりひでまさ",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1224_full.png",
+ "imageChar": "assets/img/characters/no1224_char.png",
+ "atkBase": 1220,
+ "atkGrowth": 66,
+ "defBase": 1090,
+ "defGrowth": 46,
+ "tacticsBase": 650,
+ "tacticsGrowth": 3,
+ "lv0Troops": 4820,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "S",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "凶星ノ斬光",
+ "skillDetail": "S/LV10 確率 100% 攻撃170%上昇/対象:弓・馬・器・焙　飛翔2\n模倣不可\n①攻撃170%上昇する\n②飛翔2を持つ\n③対象兵科指揮時極限スキルの攻撃効果が3倍となる(TR1〜TR5は未確認)",
+ "categoryLinks": [
+  {
+   "href": "skills-hishou-atk.html",
+   "label": "飛翔スキル一覧(攻撃)を見る"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓・馬・器・焙 飛翔2　確率 100% / 攻撃 170%上昇(極限スキル攻撃効果3倍)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "建御雷神ノ槌",
+   "rank": "SS",
+   "afterSkill": "建御雷神ノ槌",
+   "afterRank": "SS",
+   "rate": "100%",
+   "target": "全",
+   "effectShort": "攻撃135%上昇+防御135%上昇+卓越確率+30%(模倣不可)"
+  },
+  {
+   "slot": "B",
+   "skill": "天啓ノ神撃",
+   "rank": "SS",
+   "afterSkill": "天啓ノ神撃",
+   "afterRank": "SS",
+   "rate": "45%",
+   "target": "全",
+   "effectShort": "攻撃180%上昇(HP100以上で敵1部隊に追加ダメージ5・模倣不可)"
+  },
+  {
+   "slot": "C",
+   "skill": "摩利支天ノ法",
+   "rank": "SSS",
+   "afterSkill": "摩利支天ノ法",
+   "afterRank": "SSS",
+   "rate": "70%",
+   "target": "部隊長",
+   "effectShort": "部隊長の初期スキルを1.25倍模倣"
+  },
+  {
+   "slot": "S1",
+   "skill": "開闢ノ逆鉾",
+   "rank": "SS",
+   "afterSkill": "開闢ノ逆鉾",
+   "afterRank": "SS",
+   "rate": "100%",
+   "target": "全",
+   "effectShort": "攻撃254%上昇(卓越追加確率30%で兵士被害15%減少)"
+  },
+  {
+   "slot": "S2",
+   "skill": "布都御魂ノ鬨",
+   "rank": "SS",
+   "afterSkill": "布都御魂ノ鬨",
+   "afterRank": "SS",
+   "rate": "35%",
+   "target": "全",
+   "effectShort": "攻撃20%上昇+防御20%上昇(部隊内S以上スキル数×20%)"
+  }
+ ],
+ "notes": [
+  "45do.info(生HTML skiladd_wrap)+ameameixa.com(スキルテーブル)の2ソース照合済み、両者一致(この武将自身の初期スキルは候補に含まれない)"
+ ]
+}

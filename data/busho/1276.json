@@ -1,0 +1,121 @@
+{
+ "name": "結城秀康",
+ "no": "1276",
+ "ch": "29章",
+ "cost": 5.5,
+ "troop": "全攻",
+ "sub": "",
+ "effect": "討伐ゲージ依存",
+ "approved": true,
+ "furigana": "ゆうきひでやす",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1276_full.png",
+ "imageChar": "assets/img/characters/no1276_char.png",
+ "atkBase": 1250,
+ "atkGrowth": 71,
+ "defBase": 1100,
+ "defGrowth": 50,
+ "tacticsBase": 660,
+ "tacticsGrowth": 3,
+ "lv0Troops": 5250,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "S",
+  "ki": "A"
+ },
+ "initialSkill": "覇槍ノ武威",
+ "skillDetail": "S/LV10 確率 100% 攻撃200%上昇/対象:全\n模倣不可\n①攻撃200%上昇する\n②この武将の追加スキルの攻撃効果を(討伐ゲージ÷100)倍する(討伐ゲージは最大300で計算する)\n③対人での攻撃戦闘時部隊内武将の討伐ゲージを(敵軍被害兵数÷1000×3)回復する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 攻撃 200%上昇(討伐ゲージ÷100倍・討伐ゲージ回復量+3)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": "全　確率 100% / 全攻280%上昇 この武将の追加スキルの攻撃効果を(討伐ゲージ÷100)倍する(討伐ゲージは最大300で計算する) 対人での攻撃戦闘時、部隊内武将の討伐ゲージを(敵軍被害兵数÷1000×3.4)回復する(模倣不可)"
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": "全　確率 100% / 全攻400%上昇 この武将の追加スキルの攻撃効果を(討伐ゲージ÷100)倍する(討伐ゲージは最大300で計算する) 対人での攻撃戦闘時、部隊内武将の討伐ゲージを(敵軍被害兵数÷1000×3.8)回復する(模倣不可)"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": "全　確率 100% / 全攻550%上昇 この武将の追加スキルの攻撃効果を(討伐ゲージ÷100)倍する(討伐ゲージは最大300で計算する) 対人での攻撃戦闘時、部隊内武将の討伐ゲージを(敵軍被害兵数÷1000×4.3)回復する(模倣不可)"
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": "全　確率 100% / 全攻730%上昇 この武将の追加スキルの攻撃効果を(討伐ゲージ÷100)倍する(討伐ゲージは最大300で計算する) 対人での攻撃戦闘時、部隊内武将の討伐ゲージを(敵軍被害兵数÷1000×5)回復する(模倣不可)"
+  },
+  {
+   "level": "TR5",
+   "points": "最大鍛錬",
+   "effect": "全　確率 100% / 攻撃 940%上昇(討伐ゲージ÷100倍・討伐ゲージ回復量+6)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "破邪後輝",
+   "rank": "SS",
+   "afterSkill": "飛龍衝天",
+   "afterRank": "SS",
+   "rate": "100%",
+   "target": "全 覇道",
+   "effectShort": "攻撃770%上昇+速度150%上昇+破壊150%上昇",
+   "afterTarget": "全 飛翔15",
+   "afterRate": "45%",
+   "afterEffectShort": "攻撃 200%+7.5%×防御参加武将数(280人)=2300.0%"
+  },
+  {
+   "slot": "B",
+   "skill": "神羅聖域",
+   "rank": "SS",
+   "afterSkill": "神羅聖域",
+   "afterRank": "SS",
+   "rate": "40%",
+   "target": "全 覇道",
+   "effectShort": "攻撃900%上昇+防御900%上昇+破壊160%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "天宇受売命",
+   "rank": "SSS",
+   "afterSkill": "天宇受売命",
+   "afterRank": "SSS",
+   "rate": "70%",
+   "target": "自身",
+   "effectShort": "自身の初期スキルを1.25倍にして模倣"
+  },
+  {
+   "slot": "S1",
+   "skill": "天地超克",
+   "rank": "SSS",
+   "afterSkill": "天地超克",
+   "afterRank": "SSS",
+   "rate": "46%",
+   "target": "全 不屈1",
+   "effectShort": "攻撃を係数×人数で上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "飛龍衝天",
+   "rank": "SS",
+   "afterSkill": "飛龍衝天",
+   "afterRank": "SS",
+   "rate": "45%",
+   "target": "全 飛翔15",
+   "effectShort": "攻撃200%上昇+7.5%×防御参加武将数加算(模倣不可)"
+  }
+ ],
+ "notes": [
+  "カード画像照合済み: 槍S/弓A/馬S/器A",
+  "ixanary.com生HTML照合(2026-08-02): カード画像のスキル欄にLV10とTR5(鍛錬)の2枠のみ表示されており、TR1〜TR4は実在しない。",
+  "45do.info(ordinary/0317)生HTML照合+ameameixa.com(post-12334「29章天武将スキル一覧」表のNo.1276行)の両ソースでA/B/C/S1/S2の並びが一致確認済み。"
+ ]
+}

@@ -1,0 +1,135 @@
+{
+ "name": "木下藤吉郎",
+ "no": "2573",
+ "ch": "未確認",
+ "cost": 4,
+ "troop": "全攻防",
+ "sub": "",
+ "effect": "部隊内武将スキル発動率+5%・卓越追加確率+20%(模倣不可・自部隊内重複不可)",
+ "furigana": "きのしたとうきちろう",
+ "illustrator": "BISAI",
+ "imageFull": "assets/img/characters/no2573_full.png",
+ "imageChar": "assets/img/characters/no2573_char.png",
+ "atkBase": 1130,
+ "atkGrowth": 54,
+ "defBase": 1130,
+ "defGrowth": 54,
+ "tacticsBase": 600,
+ "tacticsGrowth": 3.5,
+ "lv0Troops": 4240,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "日輪豊国",
+ "skillDetail": "S/LV10 確率 100% 攻撃170%上昇/対象:全\n模倣不可\n①攻撃170%上昇する\n②防御170%上昇する\n③部隊内武将スキル発動率+5%する\n④卓越追加確率+20%する(特殊効果は自部隊内では重複不可)",
+ "categoryLinks": [
+  {
+   "href": "skills-takuetsu.html",
+   "label": "卓越スキル一覧を見る"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 攻撃 170%上昇+防御 170%上昇(部隊内武将スキル発動率+5%・卓越追加確率+20%・模倣不可・自部隊内重複不可)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": null
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": null
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": null
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": null
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": null
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": null
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "布都御魂ノ鬨",
+   "rank": "SS",
+   "afterSkill": "布都御魂ノ鬨",
+   "afterRank": "SS",
+   "target": null,
+   "rate": null,
+   "effectShort": null
+  },
+  {
+   "slot": "B",
+   "skill": "天奏聖譚曲",
+   "rank": "SS",
+   "afterSkill": "天奏聖譚曲",
+   "afterRank": "SS",
+   "target": "砲・器",
+   "rate": "+70%",
+   "effectShort": "防御(2.5×防御参加武将数)%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "海神ノ浮船",
+   "rank": "SS",
+   "afterSkill": "海神ノ浮船",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "+48%",
+   "effectShort": "防御(3.5×防御参加武将数)%上昇+飛翔4"
+  },
+  {
+   "slot": "S1",
+   "skill": "天磐船",
+   "rank": "SS",
+   "afterSkill": "天磐船",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "+56%",
+   "effectShort": "防御(3.8×防御参加武将数)%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "天奏聖譚曲",
+   "rank": "SS",
+   "afterSkill": "天奏聖譚曲",
+   "afterRank": "SS",
+   "target": "砲・器",
+   "rate": "+70%",
+   "effectShort": "防御(2.5×防御参加武将数)%上昇"
+  }
+ ],
+ "notes": [
+  "【2026-08-12訂正】指揮兵数はixanaryの★0-0(4760)を採っていたが、カード画像(★無し・LV.0で0/4240)と",
+  " ixawiki BushoCard/2573木下藤吉郎(指揮兵数4240)がどちらも4240で、ixanary側が誤りだった。",
+  "出典: カード画像(LV1形式: 極・統率 槍A/弓A/馬A/器S拡大確認・初期値1130/1130/600・コスト4・LV1スキル値)",
+  " + ixanary.com/cards/2573(指揮4760(★0-0)・成長+54/+54/+3.5・LV10: 確率+100%/全攻防170%/",
+  "   部隊内発動率+5%/卓越追加確率+20%。戦国幻包み【日輪】パック・絵師 BISAI)",
+  " + ixawiki BushoCard/2573(統率2次確認・合成テーブル(5枠すべて自己参照SS)+候補のLV10効果)。",
+  "統率はカード画像+ixawikiの2ソース一致。部隊内卓越確率上昇スキルとしてシミュのspecialSkillsにも",
+  "登録済み(takuetsuRateBonus:20)。初期スキルがSランクのためスキル個別ページの新規作成が必要",
+  "(docsのTODOに記録済み)。",
+  "合成テーブルはixawiki(5枠すべて自己参照)"
+ ]
+}

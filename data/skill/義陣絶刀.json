@@ -1,0 +1,76 @@
+{
+ "name": "義陣絶刀",
+ "rank": "S",
+ "baseRate": 55,
+ "target": "全 飛翔17",
+ "effectSummary": "S/LV10 確率 55% 攻防840%上昇/対象:全　飛翔17\n①攻撃840%上昇する\n②防御840%上昇する",
+ "categoryLinks": [
+  {
+   "href": "skills-hishou-atk.html",
+   "label": "飛翔スキル一覧(攻撃)を見る"
+  },
+  {
+   "href": "skills-hishou-def.html",
+   "label": "飛翔スキル一覧(防御)を見る"
+  }
+ ],
+ "sourceCharacters": [
+  {
+   "name": "長尾景虎",
+   "no": "10064",
+   "slot": "B"
+  },
+  {
+   "name": "石田三成",
+   "no": "1277",
+   "slot": "移植不可"
+  },
+  {
+   "name": "伊藤一刀斎",
+   "no": "2856",
+   "slot": "A",
+   "db": "kyoku"
+  },
+  {
+   "name": "斎藤一【覇】",
+   "no": "10066",
+   "slot": "A"
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "國才連豪",
+  "rank": "SS"
+ },
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全 飛翔17　確率 55% / 攻撃 840%上昇+防御840%上昇"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": "全 飛翔17　確率 55% / 攻撃 920%上昇+防御920%上昇"
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": "全 飛翔17　確率 55% / 攻撃 1040%上昇+防御1040%上昇"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": "全 飛翔17　確率 55% / 攻撃 1210%上昇+防御1210%上昇"
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": "全 飛翔17　確率 55% / 攻撃 1440%上昇+防御1440%上昇"
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": "全 飛翔17　確率 55% / 攻撃 1750%上昇+防御1750%上昇"
+  }
+ ]
+}

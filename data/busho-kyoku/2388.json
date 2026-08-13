@@ -1,0 +1,122 @@
+{
+ "name": "成松信勝",
+ "no": "2388",
+ "ch": "29章",
+ "cost": 4.5,
+ "troop": "全防",
+ "sub": "飛翔12",
+ "effect": "本丸防御第5列以降配置時、防御効果1.5倍+飛翔付与(模倣不可)",
+ "approved": true,
+ "furigana": "なりまつのぶかつ",
+ "illustrator": "hakus",
+ "imageFull": "assets/img/characters/no2388_full.png",
+ "imageChar": "assets/img/characters/no2388_char.png",
+ "atkBase": 1010,
+ "atkGrowth": 30,
+ "defBase": 1140,
+ "defGrowth": 47,
+ "tacticsBase": 500,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 4280,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "B",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "雷閃鉾",
+ "skillDetail": "A/LV10 確率 54% 防御300%上昇/対象:全　飛翔12\n模倣不可\n①防御300%上昇する\n②本丸防御陣形の第伍列目以降に配置時防御効果が1.5倍になり飛翔12を得る",
+ "categoryLinks": [
+  {
+   "href": "skills-hishou-def.html",
+   "label": "飛翔スキル一覧(防御)を見る"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全 飛翔12　確率 54% / 防御 300%上昇"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": "全 飛翔13　確率 54% / 防御 300%上昇"
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": "全 飛翔14　確率 54% / 防御 300%上昇"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": null
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": null
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": null
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "豊国ノ寵将",
+   "rank": "S",
+   "afterSkill": "豊国ノ寵将",
+   "afterRank": "S",
+   "target": "全 飛翔7",
+   "rate": "+70%",
+   "effectShort": "攻撃190%上昇+防御190%上昇+部隊内飛翔+2(模倣不可・部隊内重複不可)"
+  },
+  {
+   "slot": "B",
+   "skill": "雷閃鉾",
+   "rank": "A",
+   "afterSkill": "雷閃鉾",
+   "afterRank": "A",
+   "target": "全 飛翔12",
+   "rate": "54%",
+   "effectShort": "防御300%上昇(本丸防御第5列以降で1.5倍・模倣不可)"
+  },
+  {
+   "slot": "C",
+   "skill": "雷閃鉾",
+   "rank": "A",
+   "afterSkill": "雷閃鉾",
+   "afterRank": "A",
+   "target": "全 飛翔12",
+   "rate": "54%",
+   "effectShort": "防御300%上昇(本丸防御第5列以降で1.5倍・模倣不可)"
+  },
+  {
+   "slot": "S1",
+   "skill": "雷閃鉾",
+   "rank": "A",
+   "afterSkill": "雷閃鉾",
+   "afterRank": "A",
+   "target": "全 飛翔12",
+   "rate": "54%",
+   "effectShort": "防御300%上昇(本丸防御第5列以降で1.5倍・模倣不可)"
+  },
+  {
+   "slot": "S2",
+   "skill": "志半ノ矛楯",
+   "rank": "A",
+   "afterSkill": "志半ノ矛楯",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "+65%",
+   "effectShort": "攻撃465%上昇+防御465%上昇(模倣不可)"
+  }
+ ],
+ "notes": [
+  "45do.info+ixagno.blog.fc2.com(blog-entry-10266)確認済み: A(豊国ノ寵将)/B・C・S1(雷閃鉾)/S2(志半ノ矛楯)とも全て自己参照で両ソース一致"
+ ]
+}

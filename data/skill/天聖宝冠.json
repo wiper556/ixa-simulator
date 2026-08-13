@@ -1,0 +1,48 @@
+{
+ "name": "天聖宝冠",
+ "rank": "SSS",
+ "baseRate": 45,
+ "target": "全",
+ "noMimic": true,
+ "effectSummary": "SSS/LV10 確率 45% 攻撃100%上昇/対象:全\n模倣不可\n①攻撃100%上昇する\n②(5×防御参加武将数)%を攻撃効果に加算する",
+ "categoryLinks": [
+  {
+   "href": "skills-count-atk.html",
+   "label": "人数依存(攻)スキル一覧を見る"
+  }
+ ],
+ "sourceCharacters": [
+  {
+   "name": "伊達政宗（3）【覇】",
+   "no": "1226",
+   "slot": "C"
+  },
+  {
+   "name": "上杉謙信（2）【覇】",
+   "no": "1238",
+   "slot": "S1"
+  }
+ ],
+ "grantedViaSkills": [
+  {
+   "skill": "十束ノ神域",
+   "rank": "SS"
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "天聖宝冠",
+  "rank": "SSS"
+ },
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "coefficient": "5",
+   "effect": "全　確率 45% / 攻撃 100%+5%×防御参加武将数(280人)=1500.0%"
+  }
+ ],
+ "notes": [
+  "十束ノ神域を持つ武将を合成素材にすると移植後に天聖宝冠へ変化するため、",
+  "個別武将の列挙ではなくスキル同士の関係として記載する(2026-08-03ルール変更)"
+ ]
+}

@@ -1,0 +1,97 @@
+{
+ "name": "六角承禎（2）",
+ "no": "1254",
+ "ch": "27章",
+ "cost": 4.5,
+ "troop": "防",
+ "sub": "兵站",
+ "effect": "追加スキルの防御効果を2.5倍にする(自領以外への加勢戦闘時のみ)",
+ "approved": true,
+ "furigana": "ろっかくじょうてい",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1254_full.png",
+ "imageChar": "assets/img/characters/no1254_char.png",
+ "atkBase": 1070,
+ "atkGrowth": 45,
+ "defBase": 1230,
+ "defGrowth": 67,
+ "tacticsBase": 670,
+ "tacticsGrowth": 3,
+ "lv0Troops": 4770,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "SS",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "不屈ノ天弓",
+ "skillDetail": "S/LV10 確率 100% 対象:追加スキル 兵站\n模倣不可\n①このスキルを持つ武将カードは自領以外への加勢戦闘時のみ追加スキルの防御効果が2.5倍となる",
+ "categoryLinks": [
+  {
+   "href": "skills-heitan.html",
+   "label": "兵站スキル一覧を見る"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "追加スキル 兵站　確率 100% / 防御効果 2.5倍(自領以外への加勢戦闘時のみ)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "氷塊ノ障壁",
+   "rank": "SSS",
+   "afterSkill": "氷塊ノ障壁",
+   "afterRank": "SSS",
+   "rate": "70%",
+   "target": "全",
+   "effectShort": "防御45%上昇(部隊総コスト依存)"
+  },
+  {
+   "slot": "B",
+   "skill": "国津破邪ノ楯",
+   "rank": "SS",
+   "afterSkill": "国津破邪ノ楯",
+   "afterRank": "SS",
+   "rate": "60%",
+   "target": "全",
+   "effectShort": "防御60.04%上昇(部隊総コスト依存)"
+  },
+  {
+   "slot": "C",
+   "skill": "旌旗翳天ノ覇陣",
+   "rank": "SS",
+   "afterSkill": "旌旗翳天ノ覇陣",
+   "afterRank": "SS",
+   "rate": "54%",
+   "target": "全 兵站",
+   "effectShort": "防御90.11%上昇(部隊総コスト依存)"
+  },
+  {
+   "slot": "S1",
+   "skill": "永世ノ天隻",
+   "rank": "SS",
+   "afterSkill": "永世ノ天隻",
+   "afterRank": "SS",
+   "rate": "48%",
+   "target": "全 飛翔9",
+   "effectShort": "防御6.5%×防御参加武将数上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "天衣無縫神戒",
+   "rank": "SS",
+   "afterSkill": "天衣無縫神戒",
+   "afterRank": "SS",
+   "rate": "50%",
+   "target": "全",
+   "effectShort": "防御30.02%上昇(部隊総コスト依存)"
+  }
+ ],
+ "notes": [
+  "45do.info(生HTML skiladd_wrap)+ameameixa.com(27章天武将スキル一覧 https://ameameixa.com/27sho-ten-sukil、個別記事は404のため章一覧ページで代替確認)の2ソースでA〜S2のスキル名一致を確認(ランクは45do.info基準)"
+ ]
+}

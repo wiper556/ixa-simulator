@@ -1,0 +1,28 @@
+{
+ "name": "龍父絶砲",
+ "rank": "S",
+ "baseRate": 60,
+ "target": "槍・弓・砲・器",
+ "effectSummary": "S/LV10 確率 60% 攻撃420%上昇/対象:槍・弓・砲・器\n①攻撃420%上昇する\n②防御420%上昇する\n③部隊内で武将コストが武将スキルに影響するときこの武将のコストを+3で計算する(特殊効果は部隊内重複不可)",
+ "sourceCharacters": [
+  {
+   "name": "伊達輝宗",
+   "no": "1260",
+   "slot": "移植不可"
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "龍父絶砲",
+  "rank": "S"
+ },
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・弓・砲・器　確率 60% / 攻撃420%上昇+防御420%上昇(コスト+3計算)"
+  }
+ ],
+ "notes": [
+  "No.1260(伊達輝宗)の初期スキル(S)。自身のsynthesisTable(A/B/C/S1/S2)内では自己参照されていないため他武将への移植不可。45do.info生HTML(ordinary/0203)+ixanary.com(cards/1260)で2ソース確認、TRなし(LV10のみ)"
+ ]
+}

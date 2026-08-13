@@ -1,0 +1,137 @@
+{
+ "name": "谷津主水",
+ "no": "2419",
+ "ch": "未確認",
+ "cost": 2.5,
+ "troop": "全攻防",
+ "sub": "",
+ "effect": "攻撃62%上昇+防御62%上昇(確率100%)",
+ "furigana": "やつもんど",
+ "illustrator": "正子公也",
+ "imageFull": "assets/img/characters/no2419_full.png",
+ "imageChar": "assets/img/characters/no2419_char.png",
+ "atkBase": 950,
+ "atkGrowth": 28,
+ "defBase": 950,
+ "defGrowth": 28,
+ "tacticsBase": 520,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3040,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "猿面冠者",
+ "skillDetail": "A/LV10 確率 100% 攻撃62%上昇/対象:全\n①攻撃62%上昇する\n②防御62%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 攻撃 62%上昇+防御 62%上昇"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": null
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": null
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": null
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": null
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": null
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": null
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "戦陣 阿吽",
+   "rank": "A",
+   "afterSkill": "覇王征軍",
+   "afterRank": "SS",
+   "target": null,
+   "rate": null,
+   "effectShort": null,
+   "afterTarget": "全",
+   "afterRate": "+42%",
+   "afterEffectShort": "攻撃 25.39%上昇(部隊総コストで変動、TR別データは未確認)"
+  },
+  {
+   "slot": "B",
+   "skill": "戦陣 破軍",
+   "rank": "A",
+   "afterSkill": "天穿神滅",
+   "afterRank": "SS",
+   "target": null,
+   "rate": null,
+   "effectShort": null,
+   "afterTarget": "砲器",
+   "afterRate": "+50%",
+   "afterEffectShort": "攻撃((ランク+1)xコストx3) %上昇(部隊ランクとコストで効果が変化)"
+  },
+  {
+   "slot": "C",
+   "skill": "高津姫神",
+   "rank": "SS",
+   "afterSkill": "高津姫神",
+   "afterRank": "SS",
+   "target": "自身",
+   "rate": "+70%",
+   "effectShort": "自身の持つ初期スキルを模倣する(戦闘スキルのみ)"
+  },
+  {
+   "slot": "S1",
+   "skill": "神屋楯比売命",
+   "rank": "SS",
+   "afterSkill": "神屋楯比売命",
+   "afterRank": "SS",
+   "target": "自身",
+   "rate": "+70%",
+   "effectShort": "自身の持つ初期スキルを模倣する(戦闘スキルのみ)"
+  },
+  {
+   "slot": "S2",
+   "skill": "天焉相克",
+   "rank": "SS",
+   "afterSkill": "八重言代主神",
+   "afterRank": "SS",
+   "target": "槍・弓・馬",
+   "rate": "+70%",
+   "effectShort": "攻撃(部隊総コスト依存)%上昇",
+   "afterTarget": "自身",
+   "afterRate": "+70%",
+   "afterEffectShort": "自身の持つ初期スキルを模倣する(戦闘スキルのみ)"
+  }
+ ],
+ "notes": [
+  "限定極(2019-12-11〜、ixaixa.com確認)。章は未確認。自己模倣(自マネ)素材として知られるカード。",
+  "出典: カード画像(LV1形式: 極・統率 槍A/弓A/馬A/器S拡大確認・初期値950/950/520・コスト2.5・LV1スキル値)",
+  " + ixanary.com/cards/2419(指揮3040(★0-0)・成長+28/+28/+2.5・LV10: 確率+100%/全攻防62%)",
+  " + ixaixa.com/archives/7008(合成テーブル・各候補の効果)。",
+  "Bの移植後はarchives/7008では「天穿神滅[S]」表記だが、同サイトの他記事(8470/7014/8497)は",
+  "いずれも[SS]でありSS表記を採用(表記ゆれと判断、要2次確認)。",
+  "スキルはA(鍛錬情報なし)のためTR1以降のeffectはnull。",
+  "合成テーブルは登録時ixaixa.com単一ソースだったが、2026-08-12にixanaryのスキル個別ページ",
+  " (1次/2次候補)と全行一致することを確認し2ソースになった(tools/audit_characters.py --online)。"
+ ]
+}

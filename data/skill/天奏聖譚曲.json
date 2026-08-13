@@ -1,0 +1,48 @@
+{
+ "name": "天奏聖譚曲",
+ "rank": "SS",
+ "baseRate": 70,
+ "target": "砲・器",
+ "effectSummary": "SS/LV10 確率 70% 防御上昇/対象:砲・器\n①(2.5×防御参加武将数)%を防御効果に加算する(TR1〜TR5は未確認)",
+ "categoryLinks": [
+  {
+   "href": "skills-count-def.html",
+   "label": "人数依存(防)スキル一覧を見る"
+  }
+ ],
+ "sourceCharacters": [
+  {
+   "name": "蜂須賀小六",
+   "no": "1223",
+   "slot": "B・S2"
+  },
+  {
+   "name": "松永久秀",
+   "no": "1209",
+   "slot": "C・S2"
+  },
+  {
+   "name": "京極竜子",
+   "no": "2559",
+   "slot": "S2",
+   "db": "kyoku"
+  },
+  {
+   "name": "木下藤吉郎",
+   "no": "2573",
+   "slot": "B・S2",
+   "db": "kyoku"
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "天奏聖譚曲",
+  "rank": "SS"
+ },
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "砲・器　確率 70% / 防御 2.5%×防御参加武将数(280人)=700.0%"
+  }
+ ]
+}

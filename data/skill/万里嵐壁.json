@@ -1,0 +1,65 @@
+{
+ "name": "万里嵐壁",
+ "rank": "SS",
+ "baseRate": 66,
+ "target": "全",
+ "noMimic": true,
+ "effectSummary": "SS/LV10 確率 66% 防御200%上昇/対象:全\n①防御200%上昇する\n②敵軍部隊数×40%を防御効果に加算する(模倣不可)",
+ "sourceCharacters": [
+  {
+   "name": "島津義久",
+   "no": "1285",
+   "slot": "S2"
+  },
+  {
+   "name": "藤堂高虎（2）",
+   "no": "1270",
+   "slot": "B"
+  },
+  {
+   "name": "佐竹義宣（2）",
+   "no": "1267",
+   "slot": "C"
+  },
+  {
+   "name": "長宗我部元親（6）",
+   "no": "1259",
+   "slot": "S1"
+  },
+  {
+   "name": "小早川隆景",
+   "no": "1280",
+   "slot": "A",
+   "note": [
+    "小早川隆景(1280)のsynthesisTable A枠(A-3-11逆引き確認、2026-08-02)"
+   ]
+  },
+  {
+   "name": "鍋島直茂",
+   "no": "1283",
+   "slot": "S2"
+  },
+  {
+   "name": "島津家久",
+   "no": "1261",
+   "slot": "S1"
+  },
+  {
+   "name": "斎藤一",
+   "no": "2602",
+   "slot": "C",
+   "db": "kyoku"
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "万里嵐壁",
+  "rank": "SS"
+ },
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 66% / 防御 200%上昇+敵軍部隊数×40%(TR別データは未確認)"
+  }
+ ]
+}

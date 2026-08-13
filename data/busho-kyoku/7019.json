@@ -1,0 +1,117 @@
+{
+ "name": "可児才蔵",
+ "no": "7019",
+ "ch": "未確認",
+ "cost": 4,
+ "troop": "槍砲器攻",
+ "sub": "",
+ "effect": "卓越でのみ発動/攻撃590%上昇+飛翔14",
+ "furigana": "かにさいぞう",
+ "illustrator": "添田一平",
+ "imageFull": "assets/img/characters/no7019_full.png",
+ "imageChar": "assets/img/characters/no7019_char.png",
+ "atkBase": 1150,
+ "atkGrowth": 46,
+ "defBase": 1060,
+ "defGrowth": 37,
+ "tacticsBase": 560,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 4010,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "B",
+  "ki": "A"
+ },
+ "initialSkill": "笹ノ墓標",
+ "skillDetail": "A/LV10 攻撃590%上昇/対象:槍・砲・器 飛翔14\n模倣不可\n①通常確率では発動しない\n②卓越の追加確率50%で発動し攻撃590%上昇しかつ飛翔14を得る(攻撃戦闘時のみ発動・飛翔獲得部分は二重卓越不可)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・砲・器 飛翔14　卓越追加確率 50% / 攻撃 590%上昇(通常確率では発動せず)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": null
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": "槍・砲・器 飛翔16　卓越追加確率 50% / 攻撃 720%上昇(通常確率では発動せず)"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": null
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": null
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": null
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "覇立槍",
+   "rank": "A",
+   "afterSkill": "戦陣 疾駆",
+   "afterRank": "A",
+   "target": "槍・砲・器",
+   "rate": "60%",
+   "effectShort": "攻撃460%上昇+破壊100%上昇",
+   "afterTarget": "全",
+   "afterRate": "+100%",
+   "afterEffectShort": "速度170%上昇+破壊170%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "訣歌天響",
+   "rank": "A",
+   "afterSkill": "訣歌天響",
+   "afterRank": "A"
+  },
+  {
+   "slot": "C",
+   "skill": "勝旗勇躍",
+   "rank": "A",
+   "afterSkill": "戦陣 吟詠",
+   "afterRank": "A",
+   "target": "槍・馬・器・騎 卓越",
+   "rate": "100%",
+   "effectShort": "攻撃440%上昇+防御440%上昇(卓越確率+50%・模倣不可)",
+   "afterTarget": "全 卓越",
+   "afterRate": "+100%",
+   "afterEffectShort": "攻撃340%上昇+防御340%上昇+部隊内卓越追加確率+20%(模倣不可・特殊効果は自部隊内では重複不可)"
+  },
+  {
+   "slot": "S1",
+   "skill": "笹ノ墓標",
+   "rank": "A",
+   "afterSkill": "笹ノ墓標",
+   "afterRank": "A"
+  },
+  {
+   "slot": "S2",
+   "skill": "志半ノ矛楯",
+   "rank": "A",
+   "afterSkill": "志半ノ矛楯",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "+65%",
+   "effectShort": "攻撃465%上昇+防御465%上昇(模倣不可)"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/7019 と skills/笹ノ墓標 の生HTML)で確認(2026-08-08)。",
+  "合成テーブルはスキルページの1次(=移植前)・2次(=移植後)から取得。",
+  "候補スキルの対象・確率・効果はサイト内の既存登録から転記(未登録のスキルは空のまま)。"
+ ]
+}

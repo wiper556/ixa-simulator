@@ -1,0 +1,103 @@
+{
+ "name": "柴田勝家",
+ "no": "1216",
+ "ch": "24章",
+ "cost": 5,
+ "troop": "全攻",
+ "sub": "覇道",
+ "effect": "攻撃上昇／所属部隊のスキルを無効化から保護",
+ "approved": true,
+ "furigana": "しばたかついえ",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1216_full.png",
+ "imageChar": "assets/img/characters/no1216_char.png",
+ "atkBase": 1170,
+ "atkGrowth": 62,
+ "defBase": 1100,
+ "defGrowth": 40,
+ "tacticsBase": 660,
+ "tacticsGrowth": 3,
+ "lv0Troops": 4830,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "S",
+  "ki": "S"
+ },
+ "initialSkill": "万鬼闘帝",
+ "skillDetail": "S/LV10 確率 100% 攻撃210%上昇/対象:全　覇道\n①攻撃210%上昇する(TR1〜TR5は未確認)",
+ "categoryLinks": [
+  {
+   "href": "skills-hadou.html",
+   "label": "覇道スキル一覧を見る"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全 覇道　確率 100% / 攻撃 210%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "万鬼闘帝",
+   "rank": "S",
+   "afterSkill": "天津甕星ノ雷",
+   "afterRank": "SS",
+   "rate": "100%",
+   "target": "全 覇道",
+   "effectShort": "攻撃210%上昇",
+   "afterTarget": "全 覇道",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 170%上昇+速度70%上昇(TR別データは未確認)"
+  },
+  {
+   "slot": "B",
+   "skill": "万鬼闘帝",
+   "rank": "S",
+   "afterSkill": "天津甕星ノ雷",
+   "afterRank": "SS",
+   "rate": "100%",
+   "target": "全 覇道",
+   "effectShort": "攻撃210%上昇",
+   "afterTarget": "全 覇道",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 170%上昇+速度70%上昇(TR別データは未確認)"
+  },
+  {
+   "slot": "C",
+   "skill": "天香山命",
+   "rank": "SS",
+   "afterSkill": "天香山命",
+   "afterRank": "SS",
+   "rate": "100%",
+   "target": "全 覇道",
+   "effectShort": "攻撃120%上昇+速度90%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "天津甕星ノ雷",
+   "rank": "SS",
+   "afterSkill": "天津甕星ノ雷",
+   "afterRank": "SS",
+   "rate": "100%",
+   "target": "全 覇道",
+   "effectShort": "攻撃170%上昇+速度70%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "布都御魂ノ鬨",
+   "rank": "SS",
+   "afterSkill": "布都御魂ノ鬨",
+   "afterRank": "SS",
+   "rate": "35%",
+   "target": "全",
+   "effectShort": "攻撃40%上昇+防御40%上昇"
+  }
+ ],
+ "notes": [
+  "45do.info(https://45do.info/ordinary/0024/)生HTML skiladd_wrap+ameameixa.com(スキルテーブル)の2ソース照合済み、両者一致(2026-08-02再照合)"
+ ]
+}

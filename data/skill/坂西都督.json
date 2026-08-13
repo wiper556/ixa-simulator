@@ -1,0 +1,69 @@
+{
+ "name": "坂西都督",
+ "rank": "S",
+ "baseRate": 45,
+ "target": "弓・砲・器",
+ "effectSummary": "S/LV10 確率 45% 攻撃150%上昇/対象:弓・砲・器\n①攻撃150%上昇する(固定値)\n②敵軍部隊数×係数%を攻撃効果に加算する(係数はLV10=30)\n③TR6(パラレル版)では不屈1を追加取得する",
+ "categoryLinks": [
+  {
+   "href": "skills-fukutsu.html",
+   "label": "不屈スキル一覧を見る"
+  }
+ ],
+ "sourceCharacters": [
+  {
+   "name": "毛利輝元-復刻-【覇】",
+   "no": "10075",
+   "slot": "A"
+  },
+  {
+   "name": "毛利輝元（5）",
+   "no": "1306",
+   "slot": "S1",
+   "note": [
+    "characters.html#1306のsynthesisTableではS1枠(A-3-11確認時にslot誤記A→S1へ修正、2026-08-02)"
+   ]
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "坂西都督",
+  "rank": "S"
+ },
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓・砲・器　確率 45% / 攻撃 150%上昇+敵軍部隊数×30%"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": "弓・砲・器　確率 45% / 攻撃 150%上昇+敵軍部隊数×32%"
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": "弓・砲・器　確率 45% / 攻撃 150%上昇+敵軍部隊数×34%"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": "弓・砲・器　確率 45% / 攻撃 150%上昇+敵軍部隊数×37%"
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": "弓・砲・器　確率 45% / 攻撃 150%上昇+敵軍部隊数×40%"
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": "弓・砲・器　確率 45% / 攻撃 150%上昇+敵軍部隊数×44%"
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": "弓・砲・器 不屈1　確率 45% / 攻撃 150%上昇+敵軍部隊数×45%"
+  }
+ ]
+}

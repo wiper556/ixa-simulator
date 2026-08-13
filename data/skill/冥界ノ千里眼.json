@@ -1,0 +1,35 @@
+{
+ "name": "冥界ノ千里眼",
+ "rank": "S",
+ "baseRate": 100,
+ "target": "追加スキル 兵站",
+ "noMimic": true,
+ "effectSummary": "S/LV10 確率 100% 対象:追加スキル　兵站\n模倣不可\n①他城主の拠点に加勢中に部隊の兵士編成が可能になる\n②このスキルを持つ武将カードは追加スキルの防御・破壊効果が2倍となる",
+ "categoryLinks": [
+  {
+   "href": "skills-heitan.html",
+   "label": "兵站スキル一覧を見る"
+  }
+ ],
+ "sourceCharacters": [
+  {
+   "name": "大谷吉継（2）",
+   "no": "1230",
+   "slot": "移植不可"
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "冥界ノ千里眼",
+  "rank": "S"
+ },
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "追加スキル 兵站　確率 100% / 追加スキルの防御・破壊効果 2倍(TR別データは未確認)"
+  }
+ ],
+ "notes": [
+  "大谷吉継(2)(No.1230)自身の初期スキル(移植不可)"
+ ]
+}

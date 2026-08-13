@@ -1,0 +1,129 @@
+{
+ "name": "織田信長（9）【覇】",
+ "no": "1286",
+ "ch": "30章",
+ "cost": 6,
+ "troop": "砲器攻",
+ "sub": "覇道",
+ "effect": "部隊総攻撃力上昇",
+ "approved": true,
+ "furigana": "おだのぶなが",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1286_full.png",
+ "imageChar": "assets/img/characters/no1286_char.png",
+ "atkBase": 1320,
+ "atkGrowth": 83,
+ "defBase": 1200,
+ "defGrowth": 64,
+ "tacticsBase": 860,
+ "tacticsGrowth": 4,
+ "lv0Troops": 5470,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "X"
+ },
+ "initialSkill": "雄飛新世",
+ "skillDetail": "SSS/LV10 確率 37% 部隊総攻撃力上昇/対象:砲・器　覇道\n模倣不可\n①対象兵科(砲・器)を指揮した戦闘時部隊総攻撃力が30%上昇する\n②覇道を持つため所属部隊の武将のスキルを無効化や発動率低下から保護する",
+ "categoryLinks": [
+  {
+   "href": "skills-hadou.html",
+   "label": "覇道スキル一覧を見る"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "砲・器 覇道　確率 37% / 総攻撃 30%上昇"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": "砲・器 覇道　確率 37% / 総攻撃 31%上昇"
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": "砲・器 覇道　確率 37% / 総攻撃 33%上昇"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": "砲・器 覇道　確率 37% / 総攻撃 35%上昇"
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": "砲・器 覇道　確率 37% / 総攻撃 37%上昇"
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": "砲・器 覇道　確率 37% / 総攻撃 40%上昇"
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": "砲・器 覇道　確率 37% / 総攻撃 50%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "天地超克",
+   "rank": "SSS",
+   "afterSkill": "天地超克",
+   "afterRank": "SSS",
+   "rate": "46%",
+   "target": "全 不屈1",
+   "effectShort": "攻撃を係数×人数で上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "天地超克",
+   "rank": "SSS",
+   "afterSkill": "天地超克",
+   "afterRank": "SSS",
+   "rate": "46%",
+   "target": "全 不屈1",
+   "effectShort": "攻撃を係数×人数で上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "焼尽神無",
+   "rank": "SS",
+   "afterSkill": "焼尽神無",
+   "afterRank": "SS",
+   "rate": "44%",
+   "target": "全 無尽",
+   "effectShort": "攻撃を係数×人数で上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "勇冠三軍",
+   "rank": "SSS",
+   "afterSkill": "勇冠三軍",
+   "afterRank": "SSS",
+   "rate": "45%",
+   "target": "全",
+   "effectShort": "攻撃50%上昇+攻撃を係数×人数で上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "万物神勇",
+   "rank": "SSS",
+   "afterSkill": "万物神勇",
+   "afterRank": "SSS",
+   "rate": "43%",
+   "target": "全 撤退",
+   "effectShort": "攻撃を係数×人数で上昇"
+  }
+ ],
+ "notes": [
+  "カード画像照合済み(2026-07-30): 槍A/弓A/馬A/器X",
+  "TR6はixanary.com生HTML照合済み(パラレル【天】版No.31286でTR6解禁、部隊総攻撃力50%上昇・確率37%は全段階共通)。",
+  "45do.info(ordinary/0361)生HTML照合+ixagno.blog.fc2.com(blog-entry-11057、パラレル版記事内の「通常版」合成テーブル比較)の両ソースで一致確認済み。A・Bが同一スキル(天地超克)の点も両ソース一致。"
+ ]
+}

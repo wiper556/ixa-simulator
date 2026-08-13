@@ -1,0 +1,35 @@
+{
+ "name": "無苦ノ武神",
+ "rank": "S",
+ "baseRate": 55,
+ "target": "槍・馬・砲・器 飛翔2",
+ "noMimic": true,
+ "effectSummary": "S/LV10 確率 55% 攻撃94%上昇/対象:槍・馬・砲・器　飛翔2\n模倣不可\n①攻撃94%上昇する(4部隊以下の攻撃で効果2倍)\n②Sレア以上の追加/極限スキル1つにつき飛翔の値に4を加算する",
+ "categoryLinks": [
+  {
+   "href": "skills-hishou-atk.html",
+   "label": "飛翔スキル一覧(攻撃)を見る"
+  }
+ ],
+ "sourceCharacters": [
+  {
+   "name": "前田慶次",
+   "no": "1222",
+   "slot": "移植不可"
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "無苦ノ武神",
+  "rank": "S"
+ },
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・馬・砲・器 飛翔2　確率 55% / 攻撃 94%上昇(4部隊以下で2倍、追加/極限1つにつき飛翔+4)"
+  }
+ ],
+ "notes": [
+  "前田慶次(No.1222)自身の初期スキル(移植不可)"
+ ]
+}

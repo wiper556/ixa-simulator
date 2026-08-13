@@ -1,0 +1,137 @@
+{
+ "name": "悠久山安慈",
+ "no": "2612",
+ "ch": "未確認",
+ "cost": 4.5,
+ "troop": "全攻防",
+ "sub": "",
+ "effect": "卓越:追加確率100%で攻防効果2倍(模倣不可)",
+ "furigana": "ゆうきゅうざんあんじ",
+ "illustrator": "NW/S,RKKD",
+ "imageFull": "assets/img/characters/no2612_full.png",
+ "imageChar": "assets/img/characters/no2612_char.png",
+ "atkBase": 1110,
+ "atkGrowth": 44,
+ "defBase": 1110,
+ "defGrowth": 44,
+ "tacticsBase": 520,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 4270,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "二重の極み",
+ "skillDetail": "A/LV10 確率 100% 攻撃340%上昇/対象:全　卓越\n模倣不可\n①攻撃340%上昇する\n②防御340%上昇する\n③卓越:追加確率100%で攻防効果が2倍になる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 攻撃 340%上昇+防御 340%上昇(卓越:追加確率100%で攻防効果2倍・模倣不可)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": null
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": null
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": null
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": null
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": null
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": null
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "霊妙秘剣",
+   "rank": "A",
+   "afterSkill": "戦陣 剣舞",
+   "afterRank": "A",
+   "target": "槍・馬・砲 飛翔6 卓越",
+   "rate": "+100%",
+   "effectShort": "攻撃180%上昇+防御180%上昇(卓越:追加確率-30%で3倍・0%超のみ抽選・模倣不可)",
+   "afterTarget": "全 飛翔6 卓越",
+   "afterRate": "+100%",
+   "afterEffectShort": "攻撃80%上昇+防御80%上昇(卓越:追加確率30%で4倍)"
+  },
+  {
+   "slot": "B",
+   "skill": "霊妙秘剣",
+   "rank": "A",
+   "afterSkill": "戦陣 剣舞",
+   "afterRank": "A",
+   "target": "槍・馬・砲 飛翔6 卓越",
+   "rate": "+100%",
+   "effectShort": "攻撃180%上昇+防御180%上昇(卓越:追加確率-30%で3倍・0%超のみ抽選・模倣不可)",
+   "afterTarget": "全 飛翔6 卓越",
+   "afterRate": "+100%",
+   "afterEffectShort": "攻撃80%上昇+防御80%上昇(卓越:追加確率30%で4倍)"
+  },
+  {
+   "slot": "C",
+   "skill": "戦陣 剣舞",
+   "rank": "A",
+   "afterSkill": "仙剣破斬",
+   "afterRank": "SSS",
+   "target": "全 飛翔6 卓越",
+   "rate": "+100%",
+   "effectShort": "攻撃80%上昇+防御80%上昇(卓越:追加確率30%で4倍)",
+   "afterTarget": "全 卓越",
+   "afterRate": "+100%",
+   "afterEffectShort": "攻撃115%上昇+防御115%上昇(卓越:追加確率35%で4倍)"
+  },
+  {
+   "slot": "S1",
+   "skill": "二重の極み",
+   "rank": "A",
+   "afterSkill": "二重の極み",
+   "afterRank": "A",
+   "target": "全 卓越",
+   "rate": "+100%",
+   "effectShort": "攻撃340%上昇+防御340%上昇(卓越:追加確率100%で2倍・模倣不可)"
+  },
+  {
+   "slot": "S2",
+   "skill": "戦陣 吟詠",
+   "rank": "A",
+   "afterSkill": "戦陣 吟詠",
+   "afterRank": "A",
+   "target": "全 卓越",
+   "rate": "+100%",
+   "effectShort": "攻撃340%上昇+防御340%上昇+部隊内卓越追加確率+20%(模倣不可・特殊効果は自部隊内では重複不可)"
+  }
+ ],
+ "notes": [
+  "出典: カード画像(LV1形式: 極・職業「将」・統率 槍A/弓A/馬A/器A拡大確認・初期値1110/1110/520.0・コスト4.5・覇表記なし)",
+  " + ixanary.com/cards/2612(指揮4270(★0-0)・成長+44/+44/+2.5・LV10: 確率+100%/全攻防340%/",
+  "   卓越:追加確率100%で2倍・模倣不可。絵師 ©NW／S,RKKD。るろうに剣心コラボ)",
+  " + ixawiki BushoCard/2612悠久山安慈(統率 槍A/馬A/弓A/器A・コスト・指揮・初期値・成長値・LV10性能・合成テーブルが一致)。",
+  "統率はカード画像+ixawikiの2ソース一致。卓越追加確率が+100%(=常に成立)という珍しいタイプで、",
+  "実質「攻防680%上昇」として働く。TR別の数値はixanary・ixawikiのどちらにも記載が無い。",
+  "初期スキルがAランクのためスキル個別ページは作成しない(A以下は自動作成禁止)。",
+  "そのため卓越スキル一覧(skills-takuetsu.html)への掲載対象外で、categoryLinksも付けていない。",
+  "合成テーブルはixanaryスキルページ「二重の極み」とixawiki BushoCard/2612の1次/2次候補が完全一致(2ソース)"
+ ]
+}

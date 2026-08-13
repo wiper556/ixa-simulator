@@ -1,0 +1,108 @@
+{
+ "name": "津軽為信",
+ "no": "2359",
+ "ch": "未確認",
+ "cost": 4.5,
+ "troop": "防",
+ "sub": "",
+ "effect": "自領以外加勢時のみ追加スキルの防御効果2倍(模倣不可)",
+ "approved": true,
+ "furigana": "つがるためのぶ",
+ "illustrator": "末冨正直",
+ "imageFull": "assets/img/characters/no2359_full.png",
+ "imageChar": "assets/img/characters/no2359_char.png",
+ "atkBase": 1020,
+ "atkGrowth": 32,
+ "defBase": 1120,
+ "defGrowth": 46,
+ "tacticsBase": 530,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 4250,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "A",
+  "uma": "S",
+  "ki": "A"
+ },
+ "initialSkill": "北咲王花",
+ "skillDetail": "A/LV10 確率 100% 対象:追加スキル\n模倣不可\n①自領以外の加勢戦闘時のみ追加スキルの防御効果が2倍になる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "追加スキル　確率 100% / 防御効果(自領以外加勢時) 2倍"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "豊家ノ滅塞",
+   "rank": "B",
+   "afterSkill": "籠城の妙技",
+   "afterRank": "A",
+   "target": "弓・砲・器",
+   "rate": "+42%",
+   "effectShort": "防御15%上昇(部隊の総コストで変動)",
+   "afterTarget": "全",
+   "afterRate": "+100%",
+   "afterEffectShort": "防御50%上昇(卓越:追加確率15%で3倍)"
+  },
+  {
+   "slot": "B",
+   "skill": "豊家ノ滅塞",
+   "rank": "B",
+   "afterSkill": "籠城の妙技",
+   "afterRank": "A",
+   "target": "弓・砲・器",
+   "rate": "+42%",
+   "effectShort": "防御15%上昇(部隊の総コストで変動)",
+   "afterTarget": "全",
+   "afterRate": "+100%",
+   "afterEffectShort": "防御50%上昇(卓越:追加確率15%で3倍)"
+  },
+  {
+   "slot": "C",
+   "skill": "龍神ノ加護",
+   "rank": "A",
+   "afterSkill": "朧雲ノ蓮撃",
+   "afterRank": "S",
+   "target": "馬・砲・器",
+   "rate": "+46%",
+   "effectShort": "防御135%上昇+本丸防御陣形配置時コスト消費-0.5(模倣不可)",
+   "afterTarget": "弓・砲・器",
+   "afterRate": "35%",
+   "afterEffectShort": "攻撃 12%上昇+防御12%上昇(所属部隊内レアリティS以上スキル数×12%、TR別データは未確認)"
+  },
+  {
+   "slot": "S1",
+   "skill": "戦陣 凪",
+   "rank": "A",
+   "afterSkill": "海神ノ浮船",
+   "afterRank": "SS",
+   "target": "全 飛翔2",
+   "rate": "+60%",
+   "effectShort": "防御110%上昇+自軍防御参加武将数30以上で防御効果2倍",
+   "afterTarget": "全 飛翔4",
+   "afterRate": "48%",
+   "afterEffectShort": "防御 3.5%×防御参加武将数(280人)=980.0%"
+  },
+  {
+   "slot": "S2",
+   "skill": "戦陣 無縫",
+   "rank": "A",
+   "afterSkill": "天衣無縫神戒",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "42%",
+   "effectShort": "防御 80%上昇(部隊総コストで変動)",
+   "afterTarget": "全",
+   "afterRate": "50%",
+   "afterEffectShort": "防御 30.02%上昇(部隊総コストで変動)"
+  }
+ ],
+ "notes": [
+  "45do.info+ixagno.blog.fc2.com(blog-entry-9416)確認済み: 自己スキル(北咲王花)は候補に含まれず。A/Bの豊家ノ滅塞は移植後「籠城の妙技」に、Cの龍神ノ加護は移植後「朧雲ノ蓮撃」[S](ixanary.comでランクS確認)に、",
+  "S1の戦陣凪は移植後「海神ノ浮船」[SS](ixanary.comでランクSS確認)に、S2の戦陣無縫は移植後「天衣無縫神戒」[SS]に変化(自己参照ではない)",
+  "A/Bのeffectは2026-08-04に確認・修正: 籠城の妙技の正しい性能(確率100%/対象全/防御50%上昇・卓越:追加確率15%で3倍、ixanary.com個別スキルページ確認)を反映"
+ ]
+}

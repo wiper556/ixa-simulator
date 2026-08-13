@@ -1,0 +1,92 @@
+{
+ "name": "伊藤一刀斎",
+ "no": "2856",
+ "ch": "未確認",
+ "cost": 5,
+ "troop": "全攻防",
+ "sub": "",
+ "effect": "職業「剣豪」限定/部隊内の剣豪の最大指揮兵数+3000",
+ "furigana": "いとういっとうさい",
+ "illustrator": "塚本陽子",
+ "imageFull": "assets/img/characters/no2856_full.png",
+ "imageChar": "assets/img/characters/no2856_char.png",
+ "atkBase": 2070,
+ "atkGrowth": 157,
+ "defBase": 2070,
+ "defGrowth": 157,
+ "tacticsBase": 520,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 5600,
+ "rankGrades": {
+  "yari": "SS",
+  "yumi": "A",
+  "uma": "B",
+  "ki": "A"
+ },
+ "initialSkill": "払捨刀夢想",
+ "skillDetail": "S/LV10 確率 50% 攻撃1350%上昇+防御1350%上昇/対象:全\n模倣不可・部隊内重複不可\n①職業「剣豪」にのみ効果がある\n②攻撃1350%上昇する\n③防御1350%上昇する\n④この武将を除く所属部隊の職業「剣豪」武将の最大指揮兵数に3000を加算する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 50% / 攻撃 1350%上昇+防御 1350%上昇(職業「剣豪」限定・剣豪の最大指揮兵数+3000)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "義陣絶刀",
+   "rank": "S",
+   "afterSkill": "國才連豪",
+   "afterRank": "SS",
+   "target": "全 飛翔17",
+   "rate": "55%",
+   "effectShort": "攻撃840%上昇+防御840%上昇",
+   "afterTarget": "全",
+   "afterRate": "50%",
+   "afterEffectShort": "防御が係数×同スキル所持武将数で上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "月詠ノ覇威",
+   "rank": "SS",
+   "afterSkill": "月詠ノ覇威",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "攻防各344%上昇+部隊卓越確率+15%"
+  },
+  {
+   "slot": "C",
+   "skill": "布刀玉ノ策",
+   "rank": "SS",
+   "afterSkill": "布刀玉ノ策",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "攻撃940%上昇(防御同値)+自軍全武将の卓越確率20%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "一刀ノ伝承",
+   "rank": "S",
+   "afterSkill": "一刀ノ伝承",
+   "afterRank": "S"
+  },
+  {
+   "slot": "S2",
+   "skill": "龍驤虎躍",
+   "rank": "SS",
+   "afterSkill": "龍驤虎躍",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "60%",
+   "effectShort": "攻防810%上昇+コスト-1"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/2856 と skills/払捨刀夢想 の生HTML)で確認(2026-08-08)。",
+  "合成テーブルはスキルページの1次(=移植前)・2次(=移植後)から取得。",
+  "候補スキルの対象・確率・効果はサイト内の既存登録から転記(未登録のスキルは空のまま)。"
+ ]
+}

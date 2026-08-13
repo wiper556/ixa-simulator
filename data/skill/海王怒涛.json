@@ -1,0 +1,29 @@
+{
+ "name": "海王怒涛",
+ "rank": "S",
+ "baseRate": 55,
+ "target": "弓・馬・砲・器",
+ "noMimic": true,
+ "effectSummary": "S/LV10 確率 55% 攻撃440%上昇/対象:弓・馬・砲・器\n①攻撃440%上昇する\n②自部隊同時攻撃時この武将は合流し自部隊数-2の不足を得る(特殊効果は模倣不可)",
+ "sourceCharacters": [
+  {
+   "name": "村上武吉（2）",
+   "no": "1257",
+   "slot": "C"
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "破軍騎行",
+  "rank": "SS"
+ },
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓・馬・砲・器　確率 55% / 攻撃 440%上昇(自部隊同時攻撃時、合流し不足(部隊数-2)を得る)"
+  }
+ ],
+ "notes": [
+  "この武将自身の初期スキル(村上武吉(2) No.1257のsynthesisTable候補C)"
+ ]
+}

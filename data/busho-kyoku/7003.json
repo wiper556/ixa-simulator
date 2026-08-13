@@ -1,0 +1,126 @@
+{
+ "name": "片倉小十郎",
+ "no": "7003",
+ "ch": "未確認",
+ "cost": 2.5,
+ "troop": "全攻",
+ "sub": "",
+ "effect": "所属部隊を含む3部隊で自部隊同時攻撃が可能",
+ "furigana": "かたくらこじゅうろう",
+ "illustrator": "JaneMere",
+ "imageFull": "assets/img/characters/no7003_full.png",
+ "imageChar": "assets/img/characters/no7003_char.png",
+ "atkBase": 1140,
+ "atkGrowth": 46,
+ "defBase": 1050,
+ "defGrowth": 36,
+ "tacticsBase": 530,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3250,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "覇業ノ楔",
+ "skillDetail": "A/LV10 所属部隊を含む3部隊で自部隊同時攻撃/対象:全\n模倣不可\n①所属部隊を含む3部隊で自部隊同時攻撃を行うことができる(重複不可)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　所属部隊を含む3部隊で自部隊同時攻撃を行うことができる(重複不可)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": "全　確率 100% / 速度 100%上昇(所属部隊を含む3部隊で自部隊同時攻撃)"
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": "全　確率 100% / 速度 150%上昇(所属部隊を含む3部隊で自部隊同時攻撃)"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": null
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": null
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": null
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "騎聖",
+   "rank": "A",
+   "afterSkill": "神光征軍",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "+100%",
+   "effectShort": "攻撃80%上昇+速度50%上昇(武将コストで変動)",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "全攻90%上昇+全速200%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "戦陣 疾駆",
+   "rank": "A",
+   "afterSkill": "十束ノ神域",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "+100%",
+   "effectShort": "速度170%上昇+破壊170%上昇",
+   "afterTarget": "全 覇道",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃320%上昇+速度70%上昇+覇道を持つため所属部隊の武将のスキルを無効化・発動率低下から保護"
+  },
+  {
+   "slot": "C",
+   "skill": "十束ノ神域",
+   "rank": "SS",
+   "afterSkill": "天聖宝冠",
+   "afterRank": "SSS",
+   "target": "全 覇道",
+   "rate": "100%",
+   "effectShort": "攻撃320%上昇+速度70%上昇+覇道を持つため所属部隊の武将のスキルを無効化・発動率低下から保護",
+   "afterTarget": "全",
+   "afterRate": "45%",
+   "afterEffectShort": "攻撃100%上昇+防御参加武将数×5%を攻撃効果に加算"
+  },
+  {
+   "slot": "S1",
+   "skill": "氷塊ノ夾撃",
+   "rank": "S",
+   "afterSkill": "氷塊三連撃",
+   "afterRank": "SSS",
+   "afterTarget": "全",
+   "afterRate": "45%",
+   "afterEffectShort": "攻撃170%上昇(自部隊同時攻撃時コスト最大2除外)"
+  },
+  {
+   "slot": "S2",
+   "skill": "志半ノ矛楯",
+   "rank": "A",
+   "afterSkill": "志半ノ矛楯",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "+65%",
+   "effectShort": "攻撃465%上昇+防御465%上昇(模倣不可)"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/7003 と skills/覇業ノ楔 の生HTML)で確認(2026-08-08)。",
+  "合成テーブルはスキルページの1次(=移植前)・2次(=移植後)から取得。",
+  "候補スキルの対象・確率・効果はサイト内の既存登録から転記(未登録のスキルは空のまま)。"
+ ]
+}

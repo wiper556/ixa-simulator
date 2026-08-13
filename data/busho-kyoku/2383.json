@@ -1,0 +1,101 @@
+{
+ "name": "長尾為景",
+ "no": "2383",
+ "ch": "28章",
+ "cost": 3,
+ "troop": "槍器鉄攻",
+ "sub": "",
+ "effect": "強襲専用部隊配置時、部隊コスト消費-1.5(模倣不可)",
+ "approved": true,
+ "furigana": "ながおためかげ",
+ "illustrator": "Natto-7",
+ "imageFull": "assets/img/characters/no2383_full.png",
+ "imageChar": "assets/img/characters/no2383_char.png",
+ "atkBase": 1110,
+ "atkGrowth": 46,
+ "defBase": 1010,
+ "defGrowth": 32,
+ "tacticsBase": 540,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3410,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "荒龍奸爪",
+ "skillDetail": "A/LV10 確率 50% 攻撃430%上昇/対象:槍・器・鉄\n模倣不可\n①強襲専用部隊に配置時この武将の部隊コスト消費を1.5減らす(コスト減算はこの武将のコスト分まで)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・器・鉄　確率 50% / 攻撃 430%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "荒龍奸爪",
+   "rank": "A",
+   "afterSkill": "志半ノ矛楯",
+   "afterRank": "A",
+   "target": "槍・器・鉄",
+   "rate": "50%",
+   "effectShort": "攻撃430%上昇(強襲専用部隊でコスト消費-1.5・模倣不可)",
+   "afterTarget": "全",
+   "afterRate": "+65%",
+   "afterEffectShort": "攻撃465%上昇+防御465%上昇(模倣不可)"
+  },
+  {
+   "slot": "B",
+   "skill": "荒龍奸爪",
+   "rank": "A",
+   "afterSkill": "志半ノ矛楯",
+   "afterRank": "A",
+   "target": "槍・器・鉄",
+   "rate": "50%",
+   "effectShort": "攻撃430%上昇(強襲専用部隊でコスト消費-1.5・模倣不可)",
+   "afterTarget": "全",
+   "afterRate": "+65%",
+   "afterEffectShort": "攻撃465%上昇+防御465%上昇(模倣不可)"
+  },
+  {
+   "slot": "C",
+   "skill": "今樊噲",
+   "rank": "A",
+   "afterSkill": "戦陣 吟詠",
+   "afterRank": "A",
+   "target": "槍・弓・器・鉄",
+   "rate": "+50%",
+   "effectShort": "攻撃350%上昇+強襲専用部隊でコスト消費-1.5(模倣不可)",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 340%上昇+防御 340%上昇(部隊内卓越追加確率+20%)"
+  },
+  {
+   "slot": "S1",
+   "skill": "志半ノ矛楯",
+   "rank": "A",
+   "afterSkill": "志半ノ矛楯",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "+65%",
+   "effectShort": "攻撃465%上昇+防御465%上昇(模倣不可)"
+  },
+  {
+   "slot": "S2",
+   "skill": "志半ノ矛楯",
+   "rank": "A",
+   "afterSkill": "志半ノ矛楯",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "+65%",
+   "effectShort": "攻撃465%上昇+防御465%上昇(模倣不可)"
+  }
+ ],
+ "notes": [
+  "45do.info+ixagno.blog.fc2.com(blog-entry-10092)確認済み: A/Bの荒龍奸爪は移植後「志半ノ矛楯」に変化。今樊噲・志半ノ矛楯・戦陣吟詠はA以下のためskills.html新規ページ化なし",
+  "2026-08-05訂正: Cの今樊噲は「戦陣吟詠に変化」としていたが誤り(佐久間信盛No.2397登録時に発覚した同種の誤りと同じパターン)。自己参照が正しい"
+ ]
+}

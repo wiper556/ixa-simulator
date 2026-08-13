@@ -1,0 +1,81 @@
+{
+ "name": "終焉焦土",
+ "rank": "SSS",
+ "baseRate": 46,
+ "target": "全 無尽",
+ "hasMujin": true,
+ "effectSummary": "SSS/LV10 確率 46% 攻撃上昇/対象:全　無尽\n①(係数×防御参加武将数)%を攻撃効果に加算する\n②無尽を持つため部隊消費コストを-0.5する",
+ "categoryLinks": [
+  {
+   "href": "skills-count-atk.html",
+   "label": "人数依存(攻)スキル一覧を見る"
+  },
+  {
+   "href": "skills-mujin.html",
+   "label": "無尽スキル一覧を見る"
+  },
+  {
+   "href": "skills-cost.html",
+   "label": "コスト減少スキル一覧を見る"
+  }
+ ],
+ "sourceCharacters": [
+  {
+   "name": "毛利輝元-復刻-【覇】",
+   "no": "10075",
+   "slot": "S1"
+  },
+  {
+   "name": "豊臣秀長【覇】",
+   "no": "1298",
+   "slot": "S1"
+  },
+  {
+   "name": "伊達稙宗",
+   "no": "1320",
+   "slot": "B"
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "終焉焦土",
+  "rank": "SSS"
+ },
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "coefficient": "9.6",
+   "effect": "全 無尽　確率 46% / 攻撃 9.6%×防御参加武将数(280人)=2688.0%"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "coefficient": "10",
+   "effect": "全 無尽　確率 46% / 攻撃 10%×防御参加武将数(280人)=2800.0%"
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "coefficient": "10.5",
+   "effect": "全 無尽　確率 46% / 攻撃 10.5%×防御参加武将数(280人)=2940.0%"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "coefficient": "11.1",
+   "effect": "全 無尽　確率 46% / 攻撃 11.1%×防御参加武将数(280人)=3108.0%"
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "coefficient": "11.7",
+   "effect": "全 無尽　確率 46% / 攻撃 11.7%×防御参加武将数(280人)=3276.0%"
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "coefficient": "12.5",
+   "effect": "全 無尽　確率 46% / 攻撃 12.5%×防御参加武将数(280人)=3500.0%"
+  }
+ ]
+}

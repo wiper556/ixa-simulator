@@ -1,0 +1,97 @@
+{
+ "name": "今川義元",
+ "no": "1203",
+ "ch": "23章",
+ "cost": 5,
+ "troop": "全攻",
+ "sub": "",
+ "effect": "追加スキルの攻撃・破壊効果を2.5倍にする",
+ "approved": true,
+ "furigana": "いまがわよしもと",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1203_full.png",
+ "imageChar": "assets/img/characters/no1203_char.png",
+ "atkBase": 1280,
+ "atkGrowth": 75,
+ "defBase": 1240,
+ "defGrowth": 50,
+ "tacticsBase": 750,
+ "tacticsGrowth": 3.5,
+ "lv0Troops": 4670,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "S",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "赤凰幻舞",
+ "skillDetail": "SSS/LV10 確率 100% 対象:追加スキル\n①このスキルを持つ武将カードは追加スキル(追加1/追加2/極限)の攻撃・破壊効果が2.5倍となる(模倣不可)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "追加スキル　確率 100% / 攻撃・破壊効果 2.5倍"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "八重言代主神",
+   "rank": "SS",
+   "afterSkill": "無窮天斥陣",
+   "afterRank": "SS",
+   "rate": "70%",
+   "target": "自身",
+   "effectShort": "初期スキルを模倣(戦闘スキルのみ、1倍)",
+   "afterTarget": "槍弓馬",
+   "afterRate": "+40%",
+   "afterEffectShort": "防御63%上昇(攻撃部隊に兵器兵科がいれば効果1.5倍)"
+  },
+  {
+   "slot": "B",
+   "skill": "神屋楯比売命",
+   "rank": "SS",
+   "afterSkill": "神屋楯比売命",
+   "afterRank": "SS",
+   "rate": "70%",
+   "target": "自身",
+   "effectShort": "初期スキルを模倣(戦闘スキルのみ、1倍)"
+  },
+  {
+   "slot": "C",
+   "skill": "高津姫神",
+   "rank": "SS",
+   "afterSkill": "高津姫神",
+   "afterRank": "SS",
+   "rate": "70%",
+   "target": "自身",
+   "effectShort": "初期スキルを模倣(戦闘スキルのみ、1倍)"
+  },
+  {
+   "slot": "S1",
+   "skill": "摩利支天ノ法",
+   "rank": "SSS",
+   "afterSkill": "摩利支天ノ法",
+   "afterRank": "SSS",
+   "rate": "70%",
+   "target": "部隊長",
+   "effectShort": "部隊長の初期スキルを1.25倍模倣"
+  },
+  {
+   "slot": "S2",
+   "skill": "天焉相克",
+   "rank": "SS",
+   "afterSkill": "八重言代主神",
+   "afterRank": "SS",
+   "rate": "70%",
+   "target": "槍・弓・馬",
+   "effectShort": "攻撃30%上昇(部隊総コスト依存)",
+   "afterTarget": "自身",
+   "afterRate": "70%",
+   "afterEffectShort": "初期スキル(戦闘スキルのみ)を模倣(1倍)"
+  }
+ ],
+ "notes": [
+  "45do.info(skiladd_wrap) + ameameixa.com(bushocard-1203)生HTML の2ソースで完全一致を確認(2026-08-02、この武将自身の初期スキルは候補に含まれない)"
+ ]
+}

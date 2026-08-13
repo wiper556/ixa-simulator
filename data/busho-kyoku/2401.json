@@ -1,0 +1,132 @@
+{
+ "name": "塚原卜伝",
+ "no": "2401",
+ "ch": "未確認",
+ "cost": 3.5,
+ "troop": "槍弓器攻",
+ "sub": "",
+ "effect": "部隊長なら発動率と効果が4倍(模倣不可)",
+ "furigana": "つかはらぼくでん",
+ "illustrator": "正子公也",
+ "imageFull": "assets/img/characters/no2401_full.png",
+ "imageChar": "assets/img/characters/no2401_char.png",
+ "atkBase": 1100,
+ "atkGrowth": 66,
+ "defBase": 1050,
+ "defGrowth": 40,
+ "tacticsBase": 490,
+ "tacticsGrowth": 1.5,
+ "lv0Troops": 3500,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "剣聖 建御雷",
+ "skillDetail": "B/LV10 確率 15% 攻撃18%上昇/対象:槍・弓・器\n模倣不可\n①攻撃18%上昇する\n②部隊長なら発動率と効果が4倍になる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・弓・器　確率 15% / 攻撃 18%上昇(部隊長なら発動率と効果4倍・模倣不可)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": null
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": null
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": null
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": null
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": null
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": null
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "剣術 攻乃型",
+   "rank": "E",
+   "afterSkill": "迅速行軍",
+   "afterRank": "E",
+   "target": null,
+   "rate": null,
+   "effectShort": null,
+   "afterTarget": "全",
+   "afterRate": "+100%",
+   "afterEffectShort": "速度20%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "戦巧者",
+   "rank": "D",
+   "afterSkill": "大貉",
+   "afterRank": "D",
+   "target": null,
+   "rate": null,
+   "effectShort": null,
+   "afterTarget": "槍弓器",
+   "afterRate": "+32%",
+   "afterEffectShort": "攻撃34%上昇(破壊17%上昇)"
+  },
+  {
+   "slot": "C",
+   "skill": "予覚の残香",
+   "rank": "B",
+   "afterSkill": "予覚の残香",
+   "afterRank": "B",
+   "target": "槍・弓・器",
+   "rate": "+7%",
+   "effectShort": "攻撃54%上昇(相手軍の武将数20以上で必ず発動)"
+  },
+  {
+   "slot": "S1",
+   "skill": "剣聖 建御雷",
+   "rank": "B",
+   "afterSkill": "剣聖 建御雷",
+   "afterRank": "B",
+   "target": "槍・弓・器",
+   "rate": "+15%",
+   "effectShort": "攻撃18%上昇(部隊長なら発動率と効果4倍・模倣不可)"
+  },
+  {
+   "slot": "S2",
+   "skill": "戦鬼侵軍",
+   "rank": "B",
+   "afterSkill": "戦鬼侵軍",
+   "afterRank": "B",
+   "target": "槍・砲・器",
+   "rate": "+15%",
+   "effectShort": "攻撃54%上昇(合流攻撃時は必ず発動)"
+  }
+ ],
+ "notes": [
+  "限定極(2019-12-21〜2020-01-06排出、ixaixa.com確認)。章は未確認。",
+  "出典: カード画像(LV1形式: 名前・No.・統率・初期値・コスト・レア度「極」・スキルLV1値)",
+  " + ixanary.com/cards/2401(コスト3.5・指揮3500・成長+66/+40/+1.5・LV10スキル値・ふりがな・絵師)",
+  " + ixaixa.com/archives/8467(合成テーブルA/B/C/S1/S2・各候補の効果・限定極の排出期間)。",
+  "スキルはB(鍛錬不可)のためTR1以降のeffectはnullのまま(表示側で自動非表示)。",
+  "合成テーブルは登録時ixaixa.com単一ソースだったが、2026-08-12にixanaryのスキル個別ページ",
+  " (1次/2次候補)と全行一致することを確認し2ソースになった(tools/audit_characters.py --online)。"
+ ]
+}

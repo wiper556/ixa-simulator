@@ -1,0 +1,103 @@
+{
+ "name": "豊臣秀吉（5）",
+ "no": "1255",
+ "ch": "27章",
+ "cost": 5,
+ "troop": "槍弓砲器防",
+ "sub": "",
+ "effect": "防御参加武将数依存で防御上昇",
+ "approved": true,
+ "furigana": "とよとみひでよし",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1255_full.png",
+ "imageChar": "assets/img/characters/no1255_char.png",
+ "atkBase": 1070,
+ "atkGrowth": 44,
+ "defBase": 1220,
+ "defGrowth": 65,
+ "tacticsBase": 700,
+ "tacticsGrowth": 3.5,
+ "lv0Troops": 4960,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "S",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "日輪ノ選剣",
+ "skillDetail": "S/LV10 確率 60% 防御(6×防御参加武将数)%上昇/対象:槍・弓・砲・器\n①防御(6×防御参加武将数)%上昇する\n②防御参加武将数が120以下の時防御効果が1.5倍となる",
+ "categoryLinks": [
+  {
+   "href": "skills-count-def.html",
+   "label": "人数依存(防)スキル一覧を見る"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・弓・砲・器　確率 60% / 防御 6%×防御参加武将数(280人)=1680%(120以下で1.5倍)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "日輪ノ選剣",
+   "rank": "S",
+   "afterSkill": "永世ノ天隻",
+   "afterRank": "SS",
+   "rate": "60%",
+   "target": "槍・弓・砲・器",
+   "effectShort": "防御(6×防御参加武将数)%上昇(120以下で1.5倍)",
+   "afterTarget": "全 飛翔9",
+   "afterRate": "48%",
+   "afterEffectShort": "防御 6.5%×防御参加武将数(280人)=1820.0%"
+  },
+  {
+   "slot": "B",
+   "skill": "日輪ノ選剣",
+   "rank": "S",
+   "afterSkill": "永世ノ天隻",
+   "afterRank": "SS",
+   "rate": "60%",
+   "target": "槍・弓・砲・器",
+   "effectShort": "防御(6×防御参加武将数)%上昇(120以下で1.5倍)",
+   "afterTarget": "全 飛翔9",
+   "afterRate": "48%",
+   "afterEffectShort": "防御 6.5%×防御参加武将数(280人)=1820.0%"
+  },
+  {
+   "slot": "C",
+   "skill": "摩利支天ノ法",
+   "rank": "SSS",
+   "afterSkill": "摩利支天ノ法",
+   "afterRank": "SSS",
+   "rate": "70%",
+   "target": "部隊長",
+   "effectShort": "所属部隊の部隊長が持つ模倣可能な初期スキルを通常攻撃/防御効果1.25倍にして模倣する"
+  },
+  {
+   "slot": "S1",
+   "skill": "永世ノ天隻",
+   "rank": "SS",
+   "afterSkill": "永世ノ天隻",
+   "afterRank": "SS",
+   "rate": "48%",
+   "target": "全 飛翔9",
+   "effectShort": "防御(6.5×防御参加武将数)%上昇(敵軍飛翔持ち9人未満の時通常武将ダメージを受けない)"
+  },
+  {
+   "slot": "S2",
+   "skill": "天磐船",
+   "rank": "SS",
+   "afterSkill": "天磐船",
+   "afterRank": "SS",
+   "rate": "56%",
+   "target": "全",
+   "effectShort": "防御(3.8×防御参加武将数)%上昇"
+  }
+ ],
+ "notes": [
+  "synthesisTable: 45do.info生HTML(skiladd_wrap)+ixanary.com(日輪ノ選剣スキルページの合成テーブル)で2ソース一致確認済み(2026-08-02)"
+ ]
+}

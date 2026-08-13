@@ -1,0 +1,30 @@
+{
+ "name": "破軍星",
+ "rank": "SS",
+ "baseRate": 40,
+ "target": "馬砲器",
+ "effectSummary": "SS/LV10 確率：+40% / 対象 馬砲器 攻撃：(18+コストx8) %上昇 破壊：(8+コストx3) %上昇 (武将のコストで効果が変化します)",
+ "sourceCharacters": [
+  {
+   "name": "蒲生郷成",
+   "no": "2414",
+   "slot": "S2",
+   "db": "kyoku"
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "破軍星",
+  "rank": "SS"
+ },
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "馬砲器　確率 40% / 攻撃(18+コストx8) %上昇 破壊(8+コストx3) %上昇 (武将のコストで効果が変化します)"
+  }
+ ],
+ "notes": [
+  "2026-08-12作成。合成候補に出てくるS以上はページを作る規約(A-3)の未処理分。",
+  "ixanary.com/skills/破軍星 から取得。categoryLinksは9項目の判定が要るため付けていない。"
+ ]
+}

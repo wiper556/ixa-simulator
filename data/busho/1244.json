@@ -1,0 +1,101 @@
+{
+ "name": "浅井長政（4）",
+ "no": "1244",
+ "ch": "26章",
+ "cost": 4.5,
+ "troop": "槍砲器攻",
+ "sub": "不屈1",
+ "effect": "攻撃敗北時に指揮兵が不屈値×1000まで回復",
+ "approved": true,
+ "furigana": "あさいながまさ",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1244_full.png",
+ "imageChar": "assets/img/characters/no1244_char.png",
+ "atkBase": 1210,
+ "atkGrowth": 64,
+ "defBase": 1100,
+ "defGrowth": 42,
+ "tacticsBase": 660,
+ "tacticsGrowth": 3,
+ "lv0Troops": 4750,
+ "rankGrades": {
+  "yari": "SS",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "義心江龍",
+ "skillDetail": "S/LV10 確率 55% 攻撃420%上昇/対象:槍・砲・器　不屈1\n①攻撃420%上昇する\n②不屈1を持つ(攻撃戦闘敗北時指揮兵が不屈の数値×1000まで回復)",
+ "categoryLinks": [
+  {
+   "href": "skills-fukutsu.html",
+   "label": "不屈スキル一覧を見る"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・砲・器 不屈1　確率 55% / 攻撃 420%上昇(敗北時、指揮兵が1000まで回復)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "義心江龍",
+   "rank": "S",
+   "afterSkill": "天宇受売命",
+   "afterRank": "SSS",
+   "rate": "55%",
+   "target": "槍・砲・器 不屈1",
+   "effectShort": "攻撃420%上昇(敗北時、指揮兵が1000まで回復)",
+   "afterTarget": "自身",
+   "afterRate": "70%",
+   "afterEffectShort": "初期スキルを模倣(1.25倍)"
+  },
+  {
+   "slot": "B",
+   "skill": "天頂ノ電光",
+   "rank": "SSS",
+   "afterSkill": "天頂ノ電光",
+   "afterRank": "SSS",
+   "rate": "12%",
+   "target": "全",
+   "effectShort": "攻撃190%上昇(部隊長なら発動率・効果3倍)"
+  },
+  {
+   "slot": "C",
+   "skill": "開闢ノ逆鉾",
+   "rank": "SS",
+   "afterSkill": "開闢ノ逆鉾",
+   "afterRank": "SS",
+   "rate": "100%",
+   "target": "全",
+   "effectShort": "攻撃254%上昇(卓越追加確率30%で兵士被害15%減少)"
+  },
+  {
+   "slot": "S1",
+   "skill": "天宇受売命",
+   "rank": "SS",
+   "afterSkill": "天宇受売命",
+   "afterRank": "SS",
+   "rate": "70%",
+   "target": "自身",
+   "effectShort": "自身の初期スキルを1.25倍にして模倣"
+  },
+  {
+   "slot": "S2",
+   "skill": "神光征軍",
+   "rank": "SS",
+   "afterSkill": "神光征軍",
+   "afterRank": "SS",
+   "rate": "100%",
+   "target": "全",
+   "effectShort": "全攻90%上昇+全速200%上昇"
+  }
+ ],
+ "notes": [
+  "カード画像照合済み(2026-08-02): 槍SS/弓A/馬A/器A(旧データの\".SS\"表記の誤記を修正)",
+  "45do.info(ordinary/0152)生HTML + ameameixa.com(bushocard-1244)生HTML の2ソースを突き合わせ。BのみameameixaがA(義心江龍)の重複記載になっており45do.infoのskiladd_wrap(構造化データ、天頂ノ電光)と食い違ったため、より信頼性の高い45do.info側を採用(2026-08-02)"
+ ]
+}

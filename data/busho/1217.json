@@ -1,0 +1,97 @@
+{
+ "name": "宇喜多秀家（2）",
+ "no": "1217",
+ "ch": "24章",
+ "cost": 5,
+ "troop": "槍馬器防",
+ "sub": "飛翔2",
+ "effect": "対象兵科指揮時、極限スキルの防御効果が3倍",
+ "approved": true,
+ "furigana": "うきたひでいえ",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1217_full.png",
+ "imageChar": "assets/img/characters/no1217_char.png",
+ "atkBase": 1080,
+ "atkGrowth": 40,
+ "defBase": 1190,
+ "defGrowth": 62,
+ "tacticsBase": 690,
+ "tacticsGrowth": 3.5,
+ "lv0Troops": 4810,
+ "rankGrades": {
+  "yari": "SS",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "烈界 渡海龍",
+ "skillDetail": "S/LV10 確率 100% 防御170%上昇/対象:槍・馬・器・鉄　飛翔2\n模倣不可\n①防御170%上昇する\n②飛翔2を持つ\n③対象兵科指揮時極限スキルの防御効果が3倍となる",
+ "categoryLinks": [
+  {
+   "href": "skills-hishou-def.html",
+   "label": "飛翔スキル一覧(防御)を見る"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・馬・器・鉄 飛翔2　確率 100% / 防御 170%上昇(極限スキル防御効果3倍)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "天衣無縫神戒",
+   "rank": "SS",
+   "afterSkill": "天衣無縫神戒",
+   "afterRank": "SS",
+   "rate": "50%",
+   "target": "全",
+   "effectShort": "防御30.02%上昇(部隊の総コストで効果が変化)"
+  },
+  {
+   "slot": "B",
+   "skill": "禍津日神ノ謀",
+   "rank": "SS",
+   "afterSkill": "禍津日神ノ謀",
+   "afterRank": "SS",
+   "rate": "70%",
+   "target": "全",
+   "effectShort": "防御145%上昇+自部隊の武将ダメージ軽減3%(重複発動上限4)"
+  },
+  {
+   "slot": "C",
+   "skill": "国津破邪ノ楯",
+   "rank": "SS",
+   "afterSkill": "国津破邪ノ楯",
+   "afterRank": "SS",
+   "rate": "60%",
+   "target": "全",
+   "effectShort": "防御60.04%上昇(部隊の総コストで効果が変化)"
+  },
+  {
+   "slot": "S1",
+   "skill": "海神ノ浮船",
+   "rank": "SS",
+   "afterSkill": "海神ノ浮船",
+   "afterRank": "SS",
+   "rate": "48%",
+   "target": "全 飛翔4",
+   "effectShort": "防御(3.5×防御参加武将数)%上昇(敵軍飛翔持ち4人未満の時通常武将ダメージを受けない)"
+  },
+  {
+   "slot": "S2",
+   "skill": "星宿劫ノ法壁",
+   "rank": "SS",
+   "afterSkill": "星宿劫ノ法壁",
+   "afterRank": "SS",
+   "rate": "49%",
+   "target": "全",
+   "effectShort": "防御120%上昇+本丸防御陣形の第参列目以降配置時、防御効果が3倍"
+  }
+ ],
+ "notes": [
+  "synthesisTable: 45do.info生HTML(skiladd_wrap)+ixanary.com(天衣無縫神戒スキルページの合成テーブル)で2ソース一致確認済み(2026-08-02)。45do.info上ではこの武将のみ「海神ノ浮舟」表記だが、ixanary.comの正式表記「海神ノ浮船」(松永久秀1209のS1と同一スキル)に統一"
+ ]
+}

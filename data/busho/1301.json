@@ -1,0 +1,215 @@
+{
+ "name": "上杉景勝（6）",
+ "no": "1301",
+ "ch": "31章",
+ "cost": 5.5,
+ "troop": "全防",
+ "sub": "",
+ "effect": "模倣スキルのレアリティ係数によって防御効果が上昇",
+ "approved": true,
+ "furigana": "うえすぎかげかつ",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1301_full.png",
+ "imageChar": "assets/img/characters/no1301_char.png",
+ "atkBase": 1090,
+ "atkGrowth": 49,
+ "defBase": 1260,
+ "defGrowth": 72,
+ "tacticsBase": 680,
+ "tacticsGrowth": 3.5,
+ "lv0Troops": 5300,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "S",
+  "ki": "A"
+ },
+ "initialSkill": "龍国ノ武威",
+ "skillDetail": "S/LV10 確率 35% 防御600%上昇/対象:全\n本丸/所領防御陣形時のみ発動する\n①防御600%上昇する\n②このスキルを模倣したスキルの場合防御600%×(0.6÷模倣スキルのレアリティ係数)上昇する(①の代わりに②が発動)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 35% / 防御 600%上昇"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": "全　確率 38% / 防御 615%上昇"
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": "全　確率 40% / 防御 630%上昇"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": "全　確率 45% / 防御 650%上昇"
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": "全　確率 50% / 防御 680%上昇"
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": "全　確率 60% / 防御 700%上昇"
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": "全　確率 70% / 防御 720%上昇"
+  }
+ ],
+ "mimicRarityTable": {
+  "title": "模倣スキルのレアリティ係数別 防御上昇値(0.6÷係数)",
+  "levels": [
+   "LV10",
+   "TR1",
+   "TR2",
+   "TR3",
+   "TR4",
+   "TR5",
+   "TR6"
+  ],
+  "rows": [
+   {
+    "rarity": "X",
+    "coef": "0.1",
+    "multiplier": "6.0倍",
+    "values": [
+     "3600%",
+     "3690%",
+     "3780%",
+     "3900%",
+     "4080%",
+     "4200%",
+     "4320%"
+    ]
+   },
+   {
+    "rarity": "SSS",
+    "coef": "0.2",
+    "multiplier": "3.0倍",
+    "values": [
+     "1800%",
+     "1845%",
+     "1890%",
+     "1950%",
+     "2040%",
+     "2100%",
+     "2160%"
+    ]
+   },
+   {
+    "rarity": "SS",
+    "coef": "0.3",
+    "multiplier": "2.0倍",
+    "values": [
+     "1200%",
+     "1230%",
+     "1260%",
+     "1300%",
+     "1360%",
+     "1400%",
+     "1440%"
+    ]
+   },
+   {
+    "rarity": "S",
+    "coef": "0.4",
+    "multiplier": "1.5倍",
+    "values": [
+     "900%",
+     "922.5%",
+     "945%",
+     "975%",
+     "1020%",
+     "1050%",
+     "1080%"
+    ]
+   },
+   {
+    "rarity": "A",
+    "coef": "0.5",
+    "multiplier": "1.2倍",
+    "values": [
+     "720%",
+     "738%",
+     "756%",
+     "780%",
+     "816%",
+     "840%",
+     "864%"
+    ]
+   },
+   {
+    "rarity": "B",
+    "coef": "0.6",
+    "multiplier": "1.0倍",
+    "values": [
+     "600%",
+     "615%",
+     "630%",
+     "650%",
+     "680%",
+     "700%",
+     "720%"
+    ]
+   }
+  ]
+ },
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "破国八陣",
+   "rank": "SS",
+   "afterSkill": "破国八陣",
+   "afterRank": "SS",
+   "target": "全",
+   "effectShort": "防御1030%上昇+攻撃部隊の特殊効果付き初期スキル無効化(模倣不可)"
+  },
+  {
+   "slot": "B",
+   "skill": "神屋楯比売命",
+   "rank": "SS",
+   "afterSkill": "神屋楯比売命",
+   "afterRank": "SS",
+   "target": "自身",
+   "effectShort": "自身の初期スキルを模倣(戦闘スキルのみ)"
+  },
+  {
+   "slot": "C",
+   "skill": "四至ノ神域",
+   "rank": "SSS",
+   "afterSkill": "四至ノ神域",
+   "afterRank": "SSS",
+   "target": "自身",
+   "effectShort": "自身の初期スキルを1.25倍にして模倣"
+  },
+  {
+   "slot": "S1",
+   "skill": "経津主神ノ剣",
+   "rank": "SSS",
+   "afterSkill": "経津主神ノ剣",
+   "afterRank": "SSS",
+   "target": "自身",
+   "effectShort": "自身の初期スキルを1.35倍にして模倣"
+  },
+  {
+   "slot": "S2",
+   "skill": "月詠ノ覇威",
+   "rank": "SS",
+   "afterSkill": "月詠ノ覇威",
+   "afterRank": "SS",
+   "target": "全",
+   "effectShort": "攻撃344%上昇+防御344%上昇+自軍卓越確率上昇(模倣不可)"
+  }
+ ],
+ "notes": [
+  "カード画像照合済み(2026-07-30): 槍S/弓A/馬S/器A",
+  "ixanary.com(skills/龍国ノ武威、合成テーブル欄)+ameameixa.com(【31章】天武将スキルテーブル一覧)の生HTML照合済み(2026-07-31)。両ソースでA〜S2のスキル名が完全一致。"
+ ]
+}

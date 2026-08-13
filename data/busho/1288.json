@@ -1,0 +1,139 @@
+{
+ "name": "徳川家康（6）【覇】",
+ "no": "1288",
+ "ch": "30章",
+ "cost": 5.5,
+ "troop": "弓砲器攻防",
+ "sub": "覇道",
+ "effect": "卓越発動率100%超過分を加算",
+ "approved": true,
+ "furigana": "とくがわいえやす",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1288_full.png",
+ "imageChar": "assets/img/characters/no1288_char.png",
+ "atkBase": 1280,
+ "atkGrowth": 81,
+ "defBase": 1280,
+ "defGrowth": 81,
+ "tacticsBase": 850,
+ "tacticsGrowth": 4,
+ "lv0Troops": 5220,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "X",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "伏雷蒼樹",
+ "skillDetail": "SSS/LV10 確率 卓越追加確率50%で発動(通常確率では発動しない) 攻防200%上昇/対象:弓・砲・器　覇道\n①卓越の追加発動確率50%で発動する\n②攻防各200%上昇する\n③卓越追加確率のうち100%を超えた分を超過分×5.5%として攻防効果に加算する(二重卓越不可)",
+ "categoryLinks": [
+  {
+   "href": "skills-hadou.html",
+   "label": "覇道スキル一覧を見る"
+  },
+  {
+   "href": "skills-takuetsu.html",
+   "label": "卓越スキル一覧を見る"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "卓越追加確率50%で発動 / 攻防200%上昇 / 超過分×5.5%"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": "卓越追加確率60%で発動 / 攻防200%上昇 / 超過分×5.6%"
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": "卓越追加確率70%で発動 / 攻防200%上昇 / 超過分×5.8%"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": "卓越追加確率90%で発動 / 攻防200%上昇 / 超過分×6.0%"
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": "卓越追加確率120%で発動 / 攻防200%上昇 / 超過分×6.4%"
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": "卓越追加確率150%で発動 / 攻防200%上昇 / 超過分×6.8%"
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": "卓越追加確率200%で発動 / 攻防200%上昇 / 超過分×7.0%"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "千里必勝ノ神算",
+   "rank": "SS",
+   "afterSkill": "千里必勝ノ神算",
+   "afterRank": "SS",
+   "rate": "42%",
+   "target": "全 覇道",
+   "effectShort": "攻撃1010%上昇+防御1010%上昇+破壊150%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "千里必勝ノ神算",
+   "rank": "SS",
+   "afterSkill": "千里必勝ノ神算",
+   "afterRank": "SS",
+   "rate": "42%",
+   "target": "全 覇道",
+   "effectShort": "攻撃1010%上昇+防御1010%上昇+破壊150%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "幻像鏡花",
+   "rank": "SSS",
+   "afterSkill": "幻像鏡花",
+   "afterRank": "SSS",
+   "rate": "56%",
+   "target": "部隊長",
+   "effectShort": "部隊長の模倣可能な初期スキルを卓越:追加確率40%で1.35倍にして模倣"
+  },
+  {
+   "slot": "S1",
+   "skill": "幻像鏡花",
+   "rank": "SSS",
+   "afterSkill": "幻像鏡花",
+   "afterRank": "SSS",
+   "rate": "56%",
+   "target": "部隊長",
+   "effectShort": "部隊長の模倣可能な初期スキルを卓越:追加確率40%で1.35倍にして模倣"
+  },
+  {
+   "slot": "S2",
+   "skill": "至天ノ御剣",
+   "rank": "SSS",
+   "afterSkill": "至天ノ御剣",
+   "afterRank": "SSS",
+   "rate": "70%",
+   "target": "自身",
+   "effectShort": "卓越:追加確率30%で自身の初期スキルを1.3倍にして模倣"
+  }
+ ],
+ "variants": {
+  "parallel": {
+   "no": "31288",
+   "label": "パラレル"
+  }
+ },
+ "currentlyInKuji": false,
+ "notes": [
+  "カード画像照合済み(2026-07-30、2026-08-02再確認): 槍A/弓X/馬A/器S(ixanaryの構造化データはyumi/kibaフィールドが実際のバッジ配置と逆に格納されている、画像の目視結果を優先)。旧データの'.S'(ドット付き)は画像上ドット無し'S'と区別がつかないため修正。",
+  "45do.info生HTML照合(skiladd_wrapの見出しA/B/C/S1/S2と直後のスキル名が位置対応)+ameameixa.com(post-12627「30章天武将スキル一覧」表のNo.1288行)の両ソースで一致確認済み(2026-08-02)。千里必勝ノ神算がA/B、幻像鏡花がC/S1、至天ノ御剣がS2に重複割当。"
+ ]
+}

@@ -1,0 +1,25 @@
+{
+ "name": "氷塊ノ障壁",
+ "rank": "SSS",
+ "baseRate": 70,
+ "target": "全",
+ "effectSummary": "SSS/LV10 確率 70% 防御45%上昇/対象:全\n①防御効果が上昇する(部隊の総コストで効果が変化・TR1〜TR5は未確認)",
+ "sourceCharacters": [
+  {
+   "name": "六角承禎（2）",
+   "no": "1254",
+   "slot": "A"
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "氷塊ノ障壁",
+  "rank": "SSS"
+ },
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 70% / 防御 45%上昇(部隊総コスト依存)"
+  }
+ ]
+}

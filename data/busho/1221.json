@@ -1,0 +1,107 @@
+{
+ "name": "加藤清正（4）",
+ "no": "1221",
+ "ch": "24章",
+ "cost": 3.5,
+ "troop": "槍器攻",
+ "sub": "",
+ "effect": "防御参加武将数依存で攻撃上昇／卓越で効果1.5倍",
+ "approved": true,
+ "furigana": "かとうきよまさ",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1221_full.png",
+ "imageChar": "assets/img/characters/no1221_char.png",
+ "atkBase": 1250,
+ "atkGrowth": 75,
+ "defBase": 1000,
+ "defGrowth": 25,
+ "tacticsBase": 640,
+ "tacticsGrowth": 3,
+ "lv0Troops": 4220,
+ "rankGrades": {
+  "yari": "SS",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "炎帝伐鬼",
+ "skillDetail": "S/LV10 確率 40% 攻撃(3.5×防御参加武将数)%上昇/対象:槍・器・鉄\n①対象兵科(槍・器・鉄)を指揮した戦闘時防御参加武将数×3.5%攻撃力が上昇する\n②卓越:追加確率15%で攻撃効果が1.5倍となる",
+ "categoryLinks": [
+  {
+   "href": "skills-count-atk.html",
+   "label": "人数依存(攻)スキル一覧を見る"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "coefficient": "3.5",
+   "effect": "槍・器・鉄　確率 40% / 攻撃 3.5%×防御参加武将数(280人)=980%(卓越追加確率15%で1.5倍)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "炎帝伐鬼",
+   "rank": "S",
+   "afterSkill": "十束ノ神域",
+   "afterRank": "SS",
+   "rate": "40%",
+   "target": "槍・器・鉄",
+   "effectShort": "攻撃(3.5×防御参加武将数)%上昇(卓越追加確率15%で1.5倍)",
+   "afterTarget": "全 覇道",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 320%上昇+速度70%上昇(TR別データは未確認)"
+  },
+  {
+   "slot": "B",
+   "skill": "炎帝伐鬼",
+   "rank": "S",
+   "afterSkill": "十束ノ神域",
+   "afterRank": "SS",
+   "rate": "40%",
+   "target": "槍・器・鉄",
+   "effectShort": "攻撃(3.5×防御参加武将数)%上昇(卓越追加確率15%で1.5倍)",
+   "afterTarget": "全 覇道",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 320%上昇+速度70%上昇(TR別データは未確認)"
+  },
+  {
+   "slot": "C",
+   "skill": "加具土ノ神域",
+   "rank": "SS",
+   "afterSkill": "加具土ノ神域",
+   "afterRank": "SS",
+   "rate": "25%",
+   "target": "全",
+   "effectShort": "攻撃(3.4×防御参加武将数)%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "十束ノ神域",
+   "rank": "SS",
+   "afterSkill": "天聖宝冠",
+   "afterRank": "SSS",
+   "rate": "100%",
+   "target": "全 覇道",
+   "effectShort": "攻撃320%上昇+速度70%上昇+覇道を持つため所属部隊の武将のスキルを無効化・発動率低下から保護",
+   "afterTarget": "全",
+   "afterRate": "45%",
+   "afterEffectShort": "攻撃 100%+5%×防御参加武将数(280人)=1500.0%"
+  },
+  {
+   "slot": "S2",
+   "skill": "天岩戸ノ神域",
+   "rank": "SS",
+   "afterSkill": "天岩戸ノ神域",
+   "afterRank": "SS",
+   "rate": "70%",
+   "target": "全",
+   "effectShort": "攻撃(2.8×防御参加武将数)%上昇"
+  }
+ ],
+ "notes": [
+  "synthesisTable: 45do.info生HTML(skiladd_wrap)+ixanary.com(炎帝伐鬼スキルページの合成テーブル)で2ソース一致確認済み(2026-08-02)"
+ ]
+}

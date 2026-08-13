@@ -1,0 +1,130 @@
+{
+ "name": "難攻不落の天守",
+ "no": "2589",
+ "ch": "未確認",
+ "cost": 3,
+ "troop": "全防破",
+ "sub": "",
+ "effect": "防御400%上昇+破壊150%上昇(レベル20固定・成長なし)",
+ "furigana": "なんこうふらくのてんしゅ",
+ "illustrator": "戦国IXA",
+ "imageFull": "assets/img/characters/no2589_full.png",
+ "imageChar": "assets/img/characters/no2589_char.png",
+ "atkBase": 1930,
+ "atkGrowth": 0,
+ "defBase": 1930,
+ "defGrowth": 0,
+ "tacticsBase": 193,
+ "tacticsGrowth": 0,
+ "lv0Troops": 19300,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "B",
+  "uma": "B",
+  "ki": "B"
+ },
+ "initialSkill": "城壁の護り",
+ "skillDetail": "S/LV10 確率 100% 防御400%上昇/対象:全\n①防御400%上昇する\n②破壊150%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 防御 400%上昇+破壊 150%上昇"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": null
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": null
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": null
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": null
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": null
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": null
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "天綾の誓約",
+   "rank": "SS",
+   "afterSkill": "天焉相克",
+   "afterRank": "SS",
+   "target": null,
+   "rate": null,
+   "effectShort": null,
+   "afterTarget": "槍・弓・馬",
+   "afterRate": "+70%",
+   "afterEffectShort": "全攻 30%上昇(部隊の総コストで効果が変化)"
+  },
+  {
+   "slot": "B",
+   "skill": "天磐船",
+   "rank": "SS",
+   "afterSkill": "天磐船",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "+56%",
+   "effectShort": "防御(3.8×防御参加武将数)%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "四天轟雷",
+   "rank": "SS",
+   "afterSkill": "四天轟雷",
+   "afterRank": "SS",
+   "target": null,
+   "rate": null,
+   "effectShort": null
+  },
+  {
+   "slot": "S1",
+   "skill": "月詠ノ覇威",
+   "rank": "SS",
+   "afterSkill": "月詠ノ覇威",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "+100%",
+   "effectShort": "攻撃344%上昇+防御344%上昇(自軍全部将全スキルの卓越確率+15%・模倣不可・自軍内重複上限2)"
+  },
+  {
+   "slot": "S2",
+   "skill": null,
+   "rank": null,
+   "afterSkill": null,
+   "afterRank": null,
+   "target": null,
+   "rate": null,
+   "effectShort": "S2枠なし(このカードは合成候補4枠)"
+  }
+ ],
+ "notes": [
+  "出典: カード画像(極・統率 槍B/弓B/馬B/器B拡大確認・初期値1930/1930/193・コスト3・スキルLV10表示)",
+  " + ixanary.com/cards/2589(指揮19300・成長値なし(成長しない)。「【逆転 弱者の戦略】戦果10000以上」クエスト報酬)",
+  " + ixawiki BushoCard/2589(統率2次確認・ランク0/レベル20固定・初期スキルLV10・",
+  "   ランクアップ/レベルアップ/スキル追加不可・合成テーブルはA/B/C/S1の4枠のみ)。",
+  "統率はカード画像+ixawikiの2ソース一致。特殊な城カード(成長・スキル追加不可、模倣は可能とのコメントあり)。",
+  "防御+破壊の同時変動はtrTableに併記(multistat規則)。初期スキルがSランクのため",
+  "スキル個別ページの新規作成が必要(docsのTODOに記録済み)。",
+  "合成テーブルはixawiki(このカードは素材時A/B/C/S1の4枠のみ。S2枠は存在しない)"
+ ]
+}

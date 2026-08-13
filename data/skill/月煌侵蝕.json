@@ -1,0 +1,112 @@
+{
+ "name": "月煌侵蝕",
+ "rank": "SSS",
+ "baseRate": 45,
+ "target": "全 兵站",
+ "effectSummary": "SSS/LV10 確率 45% 防御上昇/対象:全　兵站\n①(係数×防御参加武将数)%を防御効果に加算する",
+ "categoryLinks": [
+  {
+   "href": "skills-count-def.html",
+   "label": "人数依存(防)スキル一覧を見る"
+  },
+  {
+   "href": "skills-heitan.html",
+   "label": "兵站スキル一覧を見る"
+  }
+ ],
+ "sourceCharacters": [
+  {
+   "name": "佐竹義宣（3）",
+   "no": "1302",
+   "slot": "C・S2"
+  },
+  {
+   "name": "長宗我部元親（7）",
+   "no": "1289",
+   "slot": "B・S2"
+  },
+  {
+   "name": "豊臣秀吉（5）【覇】",
+   "no": "1287",
+   "slot": "A"
+  },
+  {
+   "name": "藤堂高虎（2）",
+   "no": "1270",
+   "slot": "S1"
+  },
+  {
+   "name": "最上義光【覇】",
+   "no": "1262",
+   "slot": "S1"
+  },
+  {
+   "name": "荒木村重",
+   "no": "1279",
+   "slot": "S1",
+   "note": [
+    "荒木村重(1279)のsynthesisTable S1枠(A-3-11逆引き確認、2026-08-02)"
+   ]
+  },
+  {
+   "name": "小早川隆景",
+   "no": "1280",
+   "slot": "C",
+   "note": [
+    "小早川隆景(1280)のsynthesisTable C枠(A-3-11逆引き確認、2026-08-02)"
+   ]
+  },
+  {
+   "name": "斎藤道三（2）【覇】",
+   "no": "1311",
+   "slot": "A"
+  },
+  {
+   "name": "尼子経久（3）",
+   "no": "1316",
+   "slot": "S2"
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "月煌侵蝕",
+  "rank": "SSS"
+ },
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "coefficient": "7.6",
+   "effect": "全 兵站　確率 45% / 防御 7.6%×防御参加武将数(280人)=2128.0%"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "coefficient": "7.7",
+   "effect": "全 兵站　確率 45% / 防御 7.7%×防御参加武将数(280人)=2156.0%"
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "coefficient": "8",
+   "effect": "全 兵站　確率 45% / 防御 8%×防御参加武将数(280人)=2240.0%"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "coefficient": "8.4",
+   "effect": "全 兵站　確率 45% / 防御 8.4%×防御参加武将数(280人)=2352.0%"
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "coefficient": "9",
+   "effect": "全 兵站　確率 45% / 防御 9%×防御参加武将数(280人)=2520.0%"
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "coefficient": "10",
+   "effect": "全 兵站　確率 45% / 防御 10%×防御参加武将数(280人)=2800.0%"
+  }
+ ]
+}

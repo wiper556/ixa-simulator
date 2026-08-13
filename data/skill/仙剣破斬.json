@@ -1,0 +1,48 @@
+{
+ "name": "仙剣破斬",
+ "rank": "SSS",
+ "baseRate": 100,
+ "target": "全",
+ "effectSummary": "SSS/LV10 確率 100% 攻撃115%上昇/対象:全\n①攻撃115%上昇する\n②防御115%上昇する\n③卓越:追加確率35%で攻撃効果が4倍になる",
+ "categoryLinks": [
+  {
+   "href": "skills-takuetsu.html",
+   "label": "卓越スキル一覧を見る"
+  }
+ ],
+ "sourceCharacters": [
+  {
+   "name": "島津義久",
+   "no": "1285",
+   "slot": "A"
+  },
+  {
+   "name": "長野業正",
+   "no": "1248",
+   "slot": "C"
+  },
+  {
+   "name": "宮本二天",
+   "no": "2590",
+   "slot": "S1",
+   "db": "kyoku"
+  },
+  {
+   "name": "神谷薫",
+   "no": "2607",
+   "slot": "B",
+   "db": "kyoku"
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "仙剣破斬",
+  "rank": "SSS"
+ },
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 攻撃115%上昇+防御115%上昇(卓越追加確率35%・4倍)"
+  }
+ ]
+}

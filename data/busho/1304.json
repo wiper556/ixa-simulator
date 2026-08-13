@@ -1,0 +1,132 @@
+{
+ "name": "真田昌幸（5）",
+ "no": "1304",
+ "ch": "31章",
+ "cost": 5,
+ "troop": "防",
+ "sub": "無尽",
+ "effect": "追加・極限スキルの防御・破壊効果が2倍",
+ "approved": true,
+ "furigana": "さなだまさゆき",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1304_full.png",
+ "imageChar": "assets/img/characters/no1304_char.png",
+ "atkBase": 1090,
+ "atkGrowth": 49,
+ "defBase": 1270,
+ "defGrowth": 72,
+ "tacticsBase": 690,
+ "tacticsGrowth": 3.5,
+ "lv0Troops": 5110,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "S",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "不撓六文銭",
+ "skillDetail": "S/LV10 確率 100% 防御500%上昇/対象:全　無尽\n模倣不可\n①防御500%上昇する\n②無尽を持つため部隊消費コストを-0.5する\n③このスキルを持つ武将カードは追加・極限スキルの防御・破壊効果が2倍となる",
+ "categoryLinks": [
+  {
+   "href": "skills-mujin.html",
+   "label": "無尽スキル一覧を見る"
+  },
+  {
+   "href": "skills-cost.html",
+   "label": "コスト減少スキル一覧を見る"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全 無尽　確率 100% / 防御 500%上昇(効果2倍)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": "全 無尽　確率 100% / 防御 540%上昇(効果2.1倍)"
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": "全 無尽　確率 100% / 防御 600%上昇(効果2.2倍)"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": "全 無尽　確率 100% / 防御 670%上昇(効果2.3倍)"
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": "全 無尽　確率 100% / 防御 750%上昇(効果2.4倍)"
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": "全 無尽　確率 100% / 防御 840%上昇(効果2.5倍)"
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": "全 無尽　確率 100% / 防御 1000%上昇(効果2.6倍)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "國才連豪",
+   "rank": "SS",
+   "afterSkill": "國才連豪",
+   "afterRank": "SS",
+   "rate": "50%",
+   "target": "全",
+   "effectShort": "防御が係数×同スキル所持武将数で上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "千里必勝ノ神算",
+   "rank": "SS",
+   "afterSkill": "千里必勝ノ神算",
+   "afterRank": "SS",
+   "rate": "42%",
+   "target": "全 覇道",
+   "effectShort": "攻撃1010%上昇(防御同値)+破壊150%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "布刀玉ノ策",
+   "rank": "SS",
+   "afterSkill": "布刀玉ノ策",
+   "afterRank": "SS",
+   "rate": "100%",
+   "target": "全",
+   "effectShort": "攻撃940%上昇(防御同値)+自軍全武将の卓越確率20%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "幻像鏡花",
+   "rank": "SSS",
+   "afterSkill": "幻像鏡花",
+   "afterRank": "SSS",
+   "rate": "56%",
+   "target": "部隊長",
+   "effectShort": "部隊長の初期スキルを卓越:追加確率40%で1.35倍にして模倣"
+  },
+  {
+   "slot": "S2",
+   "skill": "龍驤虎躍",
+   "rank": "SS",
+   "afterSkill": "龍驤虎躍",
+   "afterRank": "SS",
+   "rate": "60%",
+   "target": "全",
+   "effectShort": "攻防810%上昇+コスト-1"
+  }
+ ],
+ "notes": [
+  "カード画像照合済み(2026-07-30): 槍A/弓S/馬A/器S(旧データはyari/uma・yumi/kiの値が誤って入れ替わっていたため修正)",
+  "synthesisTable: ixanary.com(/skills/不撓六文銭/ 合成テーブル)とixagno.blog.fc2.com(blog-entry-10829)で照合済み、A/B/C/S1/S2とも両ソース一致"
+ ]
+}

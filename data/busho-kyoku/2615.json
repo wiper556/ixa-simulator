@@ -1,0 +1,152 @@
+{
+ "name": "駒形由美",
+ "no": "2615",
+ "ch": "未確認",
+ "cost": 3,
+ "troop": "砲器防",
+ "sub": "",
+ "effect": "所領防御陣形配置時、この武将の編成コスト消費-1.5(模倣不可)",
+ "furigana": "こまがたゆみ",
+ "illustrator": "NW/S,RKKD",
+ "imageFull": "assets/img/characters/no2615_full.png",
+ "imageChar": "assets/img/characters/no2615_char.png",
+ "atkBase": 1010,
+ "atkGrowth": 32,
+ "defBase": 1120,
+ "defGrowth": 45,
+ "tacticsBase": 520,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3390,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "B",
+  "ki": "S"
+ },
+ "initialSkill": "華焰",
+ "skillDetail": "A/LV10 確率 58% 防御375%上昇/対象:砲・器\n模倣不可\n①防御375%上昇する\n②所領防御陣形に配置時この武将の編成コスト消費を-1.5する",
+ "categoryLinks": [
+  {
+   "href": "skills-cost.html",
+   "label": "コスト減少スキル一覧を見る"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "砲・器　確率 58% / 防御 375%上昇(所領防御陣形配置時、この武将の編成コスト消費-1.5・模倣不可)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": null
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": null
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": null
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": null
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": null
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": null
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "華焰",
+   "rank": "A",
+   "afterSkill": "朝曇ノ明麗",
+   "afterRank": "S",
+   "target": "砲・器",
+   "rate": "+58%",
+   "effectShort": "防御375%上昇(所領防御陣形配置時、この武将の編成コスト消費-1.5・模倣不可)",
+   "afterTarget": "全",
+   "afterRate": "+46%",
+   "afterEffectShort": "防御290%上昇(所領防御陣形の第肆列目に配置時、防御効果1.5倍+飛翔7取得・模倣不可)"
+  },
+  {
+   "slot": "B",
+   "skill": "華焰",
+   "rank": "A",
+   "afterSkill": "朝曇ノ明麗",
+   "afterRank": "S",
+   "target": "砲・器",
+   "rate": "+58%",
+   "effectShort": "防御375%上昇(所領防御陣形配置時、この武将の編成コスト消費-1.5・模倣不可)",
+   "afterTarget": "全",
+   "afterRate": "+46%",
+   "afterEffectShort": "防御290%上昇(所領防御陣形の第肆列目に配置時、防御効果1.5倍+飛翔7取得・模倣不可)"
+  },
+  {
+   "slot": "C",
+   "skill": "華焰",
+   "rank": "A",
+   "afterSkill": "朝曇ノ明麗",
+   "afterRank": "S",
+   "target": "砲・器",
+   "rate": "+58%",
+   "effectShort": "防御375%上昇(所領防御陣形配置時、この武将の編成コスト消費-1.5・模倣不可)",
+   "afterTarget": "全",
+   "afterRate": "+46%",
+   "afterEffectShort": "防御290%上昇(所領防御陣形の第肆列目に配置時、防御効果1.5倍+飛翔7取得・模倣不可)"
+  },
+  {
+   "slot": "S1",
+   "skill": "朝曇ノ明麗",
+   "rank": "S",
+   "afterSkill": "海神ノ浮船",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "+46%",
+   "effectShort": "防御290%上昇(所領防御陣形の第肆列目に配置時、防御効果1.5倍+飛翔7取得・模倣不可)",
+   "afterTarget": "全",
+   "afterRate": "+48%",
+   "afterEffectShort": "防御(3.5×防御参加武将数)%を加算+飛翔4"
+  },
+  {
+   "slot": "S2",
+   "skill": "志半ノ矛楯",
+   "rank": "A",
+   "afterSkill": "志半ノ矛楯",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "+65%",
+   "effectShort": "攻撃465%上昇+防御465%上昇(模倣不可)"
+  }
+ ],
+ "notes": [
+  "出典: カード画像(LV1形式: 極・統率 槍A/弓A/馬B/器S拡大確認・初期値1010/1120/520.0・コスト3・覇表記なし)",
+  " + ixanary.com/cards/2615(指揮3390(★0-0)・成長+32/+45/+2.5・LV10: 確率+58%/砲器/防御375%上昇/",
+  "   所領防御陣形配置時に編成コスト-1.5。絵師 ©NW／S,RKKD。るろうに剣心コラボ)",
+  " + ixawiki BushoCard/2615駒形由美(統率 槍A/馬B/弓A/器S・コスト3.0・指揮3390・初期値・成長値・",
+  "   LV10性能・合成候補テーブルがixanaryと完全一致)。",
+  "【B-01の罠】カード上の指揮兵士数3990は限界突破済みの表示。★0-0の3390をlv0Troopsに採用した。",
+  "スキル名は「華焔」ではなく「華焰」。カード画像の解像度では焔/焰を判別できないが、",
+  "ixanary(ページタイトル・URLとも華焰。華焔は404)とixawiki(HTML実体参照&#28976;=焰)の",
+  "2ソースが焰で一致するためこちらを採用している。",
+  "初期スキルはAランクのためスキル個別ページは作成しない(A以下は自動作成禁止)。",
+  "コスト減少スキル一覧(skills-cost.html)には武将ページを指すエントリを追加してcategoryLinksの",
+  "基準(E-0: 初期スキルが一覧のエントリになっていること)を満たしている。",
+  "TR別の数値はixanary・ixawikiのどちらにも記載が無い(A・鍛錬情報なし)。",
+  "合成テーブルはixanaryスキルページ「華焰」とixawiki BushoCard/2615の1次/2次候補が完全一致(2ソース)。",
+  "候補スキルの効果もixawikiの同ページに併記されているものを使用。"
+ ]
+}

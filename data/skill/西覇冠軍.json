@@ -1,0 +1,57 @@
+{
+ "name": "西覇冠軍",
+ "rank": "SSS",
+ "baseRate": 100,
+ "target": "全 不屈1",
+ "noMimic": true,
+ "effectSummary": "SSS/LV10 確率 100% 攻撃540%上昇/対象:全　不屈1\n模倣不可\n①攻撃540%上昇する\n②不屈1を持つ\n③自身合流時自分の他部隊にもこの攻撃効果を加算する\n④部隊総コストからこの武将分のコストを最大3(TR3以降3.5)まで除外する(部隊内重複不可)",
+ "categoryLinks": [
+  {
+   "href": "skills-fukutsu.html",
+   "label": "不屈スキル一覧を見る"
+  }
+ ],
+ "sourceCharacters": [
+  {
+   "name": "毛利輝元【覇】",
+   "no": "1251",
+   "slot": "移植不可"
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "西覇冠軍",
+  "rank": "SSS"
+ },
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全 不屈1　確率 100% / 攻撃 540%上昇(コスト除外3)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": "全 不屈1　確率 100% / 攻撃 570%上昇(コスト除外3)"
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": "全 不屈1　確率 100% / 攻撃 610%上昇(コスト除外3)"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": "全 不屈1　確率 100% / 攻撃 660%上昇(コスト除外3.5)"
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": "全 不屈1　確率 100% / 攻撃 720%上昇(コスト除外3.5)"
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": "全 不屈1　確率 100% / 攻撃 800%上昇(コスト除外3.5)"
+  }
+ ]
+}

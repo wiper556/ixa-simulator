@@ -1,0 +1,36 @@
+{
+ "name": "天封界斬",
+ "rank": "S",
+ "baseRate": 30,
+ "target": "槍・弓・砲・器 兵站",
+ "effectSummary": "S/LV10 確率 30% 防御上昇/対象:槍・弓・砲・器　兵站\n①(3.6×防御参加武将数)%を防御効果に加算する\n②防御参加武将数が90以下の時防御効果が1.5倍になる",
+ "categoryLinks": [
+  {
+   "href": "skills-heitan.html",
+   "label": "兵站スキル一覧を見る"
+  },
+  {
+   "href": "skills-count-def.html",
+   "label": "人数依存(防)スキル一覧を見る"
+  }
+ ],
+ "sourceCharacters": [
+  {
+   "name": "徳川秀忠",
+   "no": "1234",
+   "slot": "A・B"
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "黄泉醜女ノ屍兵",
+  "rank": "SS"
+ },
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "coefficient": "3.6",
+   "effect": "槍・弓・砲・器 兵站　確率 30% / 防御 3.6%×防御参加武将数(280人)=1008.0%(90人以下で1.5倍)"
+  }
+ ]
+}

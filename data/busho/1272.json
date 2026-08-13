@@ -1,0 +1,122 @@
+{
+ "name": "豊臣秀次",
+ "no": "1272",
+ "ch": "28章",
+ "cost": 4,
+ "troop": "弓馬器鉄防",
+ "sub": "",
+ "effect": "本丸防御第六列配置時、防御効果3倍",
+ "approved": true,
+ "furigana": "とよとみひでつぐ",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1272_full.png",
+ "imageChar": "assets/img/characters/no1272_char.png",
+ "atkBase": 1070,
+ "atkGrowth": 44,
+ "defBase": 1230,
+ "defGrowth": 67,
+ "tacticsBase": 670,
+ "tacticsGrowth": 3,
+ "lv0Troops": 4600,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "S",
+  "ki": "A"
+ },
+ "initialSkill": "夢妖剣",
+ "skillDetail": "S/LV10 確率 50% 防御200%上昇/対象:弓・馬・器・鉄\n模倣不可\n①防御200%上昇する\n②本丸防御陣形の第陸列目に配置時防御効果が3倍となる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓・馬・器・鉄　確率 50% / 防御 200%上昇(第陸列配置時3倍)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": "弓・馬・器・鉄　確率 50% / 防御 220%上昇(第陸列配置時3倍)"
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": "弓・馬・器・鉄　確率 50% / 防御 250%上昇(第陸列配置時3倍)"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": "弓・馬・器・鉄　確率 50% / 防御 290%上昇(第陸列配置時3倍)"
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": "弓・馬・器・鉄　確率 50% / 防御 330%上昇(第陸列配置時3倍)"
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": "弓・馬・器・鉄　確率 50% / 防御 380%上昇(第陸列配置時3倍)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "夢妖剣",
+   "rank": "S",
+   "afterSkill": "神羅聖域",
+   "afterRank": "SS",
+   "rate": "50%",
+   "target": "弓・馬・器・鉄",
+   "effectShort": "防御200%上昇(第陸列配置時3倍)",
+   "afterTarget": "全 覇道",
+   "afterRate": "40%",
+   "afterEffectShort": "攻撃 900%上昇+防御900%上昇+破壊150%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "夢妖剣",
+   "rank": "S",
+   "afterSkill": "神羅聖域",
+   "afterRank": "SS",
+   "rate": "50%",
+   "target": "弓・馬・器・鉄",
+   "effectShort": "防御200%上昇(第陸列配置時3倍)",
+   "afterTarget": "全 覇道",
+   "afterRate": "40%",
+   "afterEffectShort": "攻撃 900%上昇+防御900%上昇+破壊150%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "永世ノ天隻",
+   "rank": "SS",
+   "afterSkill": "永世ノ天隻",
+   "afterRank": "SS",
+   "rate": "48%",
+   "target": "全 飛翔9",
+   "effectShort": "防御(6.5×防御参加武将数)%上昇(敵軍飛翔持ち9人未満の時通常武将ダメージを受けない)"
+  },
+  {
+   "slot": "S1",
+   "skill": "神羅聖域",
+   "rank": "SS",
+   "afterSkill": "神羅聖域",
+   "afterRank": "SS",
+   "rate": "40%",
+   "target": "全 覇道",
+   "effectShort": "攻撃900%上昇+防御900%上昇+破壊150%上昇+所属部隊武将のスキルを無効化・発動率低下から保護"
+  },
+  {
+   "slot": "S2",
+   "skill": "三千世界神将",
+   "rank": "SS",
+   "afterSkill": "三千世界神将",
+   "afterRank": "SS",
+   "rate": "100%",
+   "target": "全",
+   "effectShort": "防御120%上昇+本丸防御陣形配置時この武将の編成コスト消費-1(模倣不可)"
+  }
+ ],
+ "notes": [
+  "synthesisTable: 45do.info生HTML(skiladd_wrap)+ixanary.com(夢妖剣スキルページの合成テーブル)で2ソース一致確認済み(2026-08-02)"
+ ]
+}

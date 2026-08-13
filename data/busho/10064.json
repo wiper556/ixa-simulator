@@ -1,0 +1,122 @@
+{
+ "name": "長尾景虎",
+ "no": "10064",
+ "ch": "30章",
+ "cost": 4.5,
+ "troop": "全防",
+ "sub": "",
+ "effect": "極限スキルの効果2倍／飛翔値3倍",
+ "approved": true,
+ "furigana": "ながおかげとら",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no10064_full.png",
+ "imageChar": "assets/img/characters/no10064_char.png",
+ "atkBase": 1060,
+ "atkGrowth": 43,
+ "defBase": 1260,
+ "defGrowth": 72,
+ "tacticsBase": 680,
+ "tacticsGrowth": 3.5,
+ "lv0Troops": 4900,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "S",
+  "ki": "A"
+ },
+ "initialSkill": "凛乎穿進",
+ "skillDetail": "S/LV10 確率 100% 防御690%上昇/対象:全\n模倣不可\n①防御690%上昇する\n②対象兵科指揮時極限スキルの防御効果を2倍にする\n③飛翔値をもつ場合自身の飛翔値を3倍にする(飛翔が無い場合は適用しない)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 防御 690%上昇(極限2倍・飛翔3倍)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": "全　確率 100% / 防御 770%上昇(飛翔3倍)"
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": "全　確率 100% / 防御 910%上昇(飛翔3.1倍)"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": "全　確率 100% / 防御 1130%上昇(飛翔3.2倍)"
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": "全　確率 100% / 防御 1400%上昇(飛翔3.3倍)"
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": "全　確率 100% / 防御 1790%上昇(飛翔3.5倍)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "高津姫神",
+   "rank": "SS",
+   "afterSkill": "高津姫神",
+   "afterRank": "SS",
+   "rate": "70%",
+   "target": "自身",
+   "effectShort": "自身の初期スキルを模倣(戦闘スキルのみ)"
+  },
+  {
+   "slot": "B",
+   "skill": "義陣絶刀",
+   "rank": "S",
+   "afterSkill": "國才連豪",
+   "afterRank": "SS",
+   "rate": "55%",
+   "target": "全 飛翔17",
+   "effectShort": "攻撃840%上昇+防御840%上昇",
+   "afterTarget": "全",
+   "afterRate": "50%",
+   "afterEffectShort": "防御 310%×國才連豪所持武将数(4人)=1240.0%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "破国八陣",
+   "rank": "SS",
+   "afterSkill": "破国八陣",
+   "afterRank": "SS",
+   "rate": "30%",
+   "target": "全",
+   "effectShort": "防御1030%上昇+特殊効果付き初期スキル無効化"
+  },
+  {
+   "slot": "S1",
+   "skill": "轟渦ノ神将",
+   "rank": "S",
+   "afterSkill": "轟渦ノ神将",
+   "afterRank": "S",
+   "rate": "50%",
+   "target": "全",
+   "effectShort": "防御500%上昇+兵士補正0.8倍"
+  },
+  {
+   "slot": "S2",
+   "skill": "王花尖剣",
+   "rank": "S",
+   "afterSkill": "國才連豪",
+   "afterRank": "SS",
+   "rate": "64%",
+   "target": "槍・馬・砲・器 飛翔10",
+   "effectShort": "防御320%上昇+飛翔値合計×10%加算",
+   "afterTarget": "全",
+   "afterRate": "50%",
+   "afterEffectShort": "防御 310%×國才連豪所持武将数(4人)=1240.0%上昇"
+  }
+ ],
+ "notes": [
+  "45do.info確認(生HTML照合済み): skiladd_wrapの見出し(候補A/B/C/S1/S2)と直後のスキル名が位置対応しており明示的。"
+ ]
+}

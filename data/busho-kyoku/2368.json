@@ -1,0 +1,104 @@
+{
+ "name": "三好義賢",
+ "no": "2368",
+ "ch": "未確認",
+ "cost": 4,
+ "troop": "攻",
+ "sub": "",
+ "effect": "追加スキルの攻撃効果2倍(模倣不可)",
+ "approved": true,
+ "furigana": "みよしよしかた",
+ "illustrator": "BISAI",
+ "imageFull": "assets/img/characters/no2368_full.png",
+ "imageChar": "assets/img/characters/no2368_char.png",
+ "atkBase": 1120,
+ "atkGrowth": 46,
+ "defBase": 1040,
+ "defGrowth": 32,
+ "tacticsBase": 520,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3960,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "B",
+  "uma": "S",
+  "ki": "A"
+ },
+ "initialSkill": "悌王ノ指揮",
+ "skillDetail": "A/LV10 確率 100% 対象:追加スキル\n模倣不可\n①このスキルを持つ武将カードは追加スキルの攻撃効果が2倍になる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "追加スキル　確率 100% / 攻撃効果 2倍"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "鬼神ノ戦域",
+   "rank": "A",
+   "afterSkill": "戦陣 神楽",
+   "afterRank": "A",
+   "target": "槍・馬・騎 飛翔4 卓越",
+   "rate": "+55%",
+   "effectShort": "攻撃84%上昇(卓越:追加確率40%で1.5倍)",
+   "afterTarget": "全 飛翔4",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 77%上昇(卓越:追加確率30%で2倍)"
+  },
+  {
+   "slot": "B",
+   "skill": "遁世影武者",
+   "rank": "B",
+   "afterSkill": "風林火山",
+   "afterRank": "S",
+   "target": "部隊長",
+   "rate": "+50%",
+   "effectShort": "部隊長の初期スキルを模倣(戦闘スキルのみ)",
+   "afterTarget": "槍・弓・馬",
+   "afterRate": "25%",
+   "afterEffectShort": "攻撃 15%上昇+破壊5%上昇(TR別データは未確認)"
+  },
+  {
+   "slot": "C",
+   "skill": "戦陣 神楽",
+   "rank": "A",
+   "afterSkill": "遠呂智ノ閃光",
+   "afterRank": "SS",
+   "target": "全 飛翔4",
+   "rate": "100%",
+   "effectShort": "攻撃 77%上昇(卓越:追加確率30%で2倍)",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 125%上昇(卓越追加確率15%・4倍、TR別データは未確認)"
+  },
+  {
+   "slot": "S1",
+   "skill": "入来神舞",
+   "rank": "S",
+   "afterSkill": "飛蝶野分",
+   "afterRank": "B",
+   "target": "部隊長",
+   "rate": "55%",
+   "effectShort": "部隊長の初期スキルを1.1倍に強化して模倣(TR別データは未確認)",
+   "afterTarget": "部隊長",
+   "afterRate": "60%",
+   "afterEffectShort": "部隊長の初期スキルを模倣(戦闘スキルのみ)(TR別データは未確認)"
+  },
+  {
+   "slot": "S2",
+   "skill": "戦陣 吟詠",
+   "rank": "A",
+   "afterSkill": "戦陣 吟詠",
+   "afterRank": "A",
+   "target": "全 卓越",
+   "rate": "+100%",
+   "effectShort": "攻撃340%上昇+防御340%上昇+部隊内卓越追加確率+20%(模倣不可・特殊効果は自部隊内では重複不可)"
+  }
+ ],
+ "notes": [
+  "45do.info+ixagno.blog.fc2.com(blog-entry-9695)確認済み: 自己スキル(悌王ノ指揮)は候補に含まれず。Aの鬼神ノ戦域は移植後「戦陣 神楽」に、Bの遁世影武者は移植後「風林火山」[S]に、",
+  "Cの戦陣神楽は移植後、卓越スキル「遠呂智ノ閃光」[SS]に、S1の入来神舞は移植後「飛蝶野分」に変化(S2の戦陣吟詠は自己参照)"
+ ]
+}

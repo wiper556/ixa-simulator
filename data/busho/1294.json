@@ -1,0 +1,131 @@
+{
+ "name": "島津義弘（4）",
+ "no": "1294",
+ "ch": "30章",
+ "cost": 5.5,
+ "troop": "全攻",
+ "sub": "不屈2",
+ "effect": "自部隊同時攻撃時、コスト除外／パラレル天では不屈5",
+ "approved": true,
+ "furigana": "しまづよしひろ",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1294_full.png",
+ "imageChar": "assets/img/characters/no1294_char.png",
+ "atkBase": 1250,
+ "atkGrowth": 72,
+ "defBase": 1110,
+ "defGrowth": 52,
+ "tacticsBase": 680,
+ "tacticsGrowth": 3.5,
+ "lv0Troops": 5290,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "S",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "雄武英略",
+ "skillDetail": "S/LV10 確率 60% 攻撃550%上昇/対象:全\n①攻撃550%上昇する\n②自部隊同時攻撃時部隊総コストからこの武将分のコストを最大3(TR6で6)まで除外する(模倣不可)",
+ "categoryLinks": [
+  {
+   "href": "skills-fukutsu.html",
+   "label": "不屈スキル一覧を見る"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 60% / 攻撃 550%上昇(不屈2・コスト除外3)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": "全　確率 60% / 攻撃 610%上昇(不屈2・コスト除外3.5)"
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": "全　確率 60% / 攻撃 750%上昇(不屈2・コスト除外4)"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": "全　確率 60% / 攻撃 1020%上昇(不屈2・コスト除外4.5)"
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": "全　確率 60% / 攻撃 1380%上昇(不屈2・コスト除外5)"
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": "全　確率 60% / 攻撃 1790%上昇(不屈2・コスト除外5.5)"
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": "全　確率 100% / 攻撃 1980%上昇(不屈5・コスト除外6)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "絶無灰尽",
+   "rank": "SS",
+   "afterSkill": "絶無灰尽",
+   "afterRank": "SS",
+   "rate": "100%",
+   "target": "全 無尽 不屈1",
+   "effectShort": "攻撃1010%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "雄武英略",
+   "rank": "S",
+   "afterSkill": "焼尽神無",
+   "afterRank": "SS",
+   "rate": "60%",
+   "target": "全",
+   "effectShort": "攻撃550%上昇(不屈2)",
+   "afterTarget": "全 無尽",
+   "afterRate": "44%",
+   "afterEffectShort": "攻撃 6.9%×防御参加武将数(280人)=1932.0%"
+  },
+  {
+   "slot": "C",
+   "skill": "千里必勝ノ神算",
+   "rank": "SS",
+   "afterSkill": "千里必勝ノ神算",
+   "afterRank": "SS",
+   "rate": "42%",
+   "target": "全 覇道",
+   "effectShort": "攻防各1010%上昇+破壊150%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "焼尽神無",
+   "rank": "SS",
+   "afterSkill": "焼尽神無",
+   "afterRank": "SS",
+   "rate": "44%",
+   "target": "全 無尽",
+   "effectShort": "攻撃を係数×人数で上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "開闢ノ逆鉾",
+   "rank": "SS",
+   "afterSkill": "開闢ノ逆鉾",
+   "afterRank": "SS",
+   "rate": "100%",
+   "target": "全",
+   "effectShort": "攻撃254%上昇(卓越で兵士被害減少)"
+  }
+ ],
+ "notes": [
+  "45do.info生HTML照合済み(2026-07-29、skiladd_wrapの位置対応で確認)。ただし雄武英略のみ「SS」表記だったが、",
+  "ixanary.com+ユーザー確認済みの実際の階級(S、attack-simulator.htmlの雄武英略ノート参照)を優先採用。"
+ ]
+}

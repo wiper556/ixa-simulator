@@ -1,0 +1,125 @@
+{
+ "name": "岡左内",
+ "no": "2384",
+ "ch": "28章",
+ "cost": 3,
+ "troop": "全攻",
+ "sub": "",
+ "effect": "自合流時、他部隊にも攻撃効果を加算(模倣不可)",
+ "approved": true,
+ "furigana": "おかさない",
+ "illustrator": "nemui",
+ "imageFull": "assets/img/characters/no2384_full.png",
+ "imageChar": "assets/img/characters/no2384_char.png",
+ "atkBase": 1120,
+ "atkGrowth": 46,
+ "defBase": 1010,
+ "defGrowth": 32,
+ "tacticsBase": 530,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3410,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "B",
+  "uma": "S",
+  "ki": "A"
+ },
+ "initialSkill": "酔狂なる聖将",
+ "skillDetail": "A/LV10 確率 100% 攻撃160%上昇/対象:全\n模倣不可\n①自合流時他の自分の部隊にもこのスキルの攻撃効果を加算する(部隊内重複不可)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 攻撃 160%上昇"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": "全　確率 100% / 攻撃 190%上昇"
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": "全　確率 100% / 攻撃 250%上昇"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": null
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": null
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": null
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "酔狂なる聖将",
+   "rank": "A",
+   "afterSkill": "甲山ノ猛虎",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "攻撃160%上昇(自合流時他部隊にも加算・模倣不可)",
+   "afterTarget": "馬器騎",
+   "afterRate": "+100%",
+   "afterEffectShort": "攻撃430%上昇 / 速度100%上昇(自部隊同時攻撃時、参加自部隊中最速の部隊移動時間を用いて合流出陣できる(模倣不可))"
+  },
+  {
+   "slot": "B",
+   "skill": "酔狂なる聖将",
+   "rank": "A",
+   "afterSkill": "甲山ノ猛虎",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "攻撃160%上昇(自合流時他部隊にも加算・模倣不可)",
+   "afterTarget": "馬器騎",
+   "afterRate": "+100%",
+   "afterEffectShort": "攻撃430%上昇 / 速度100%上昇(自部隊同時攻撃時、参加自部隊中最速の部隊移動時間を用いて合流出陣できる(模倣不可))"
+  },
+  {
+   "slot": "C",
+   "skill": "志半ノ矛楯",
+   "rank": "A",
+   "afterSkill": "志半ノ矛楯",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "+65%",
+   "effectShort": "攻撃465%上昇+防御465%上昇(模倣不可)"
+  },
+  {
+   "slot": "S1",
+   "skill": "甲山ノ猛虎",
+   "rank": "A",
+   "afterSkill": "志半ノ矛楯",
+   "afterRank": "A",
+   "target": "馬・器・騎",
+   "rate": "+100%",
+   "effectShort": "攻撃430%上昇+速度100%上昇(合流出陣時最速部隊の移動時間を使用・模倣不可)",
+   "afterTarget": "全",
+   "afterRate": "+65%",
+   "afterEffectShort": "攻撃465%上昇+防御465%上昇(模倣不可)"
+  },
+  {
+   "slot": "S2",
+   "skill": "志半ノ矛楯",
+   "rank": "A",
+   "afterSkill": "志半ノ矛楯",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "+65%",
+   "effectShort": "攻撃465%上昇+防御465%上昇(模倣不可)"
+  }
+ ],
+ "notes": [
+  "45do.info+ixagno.blog.fc2.com(blog-entry-10158)確認済み: A/Bの酔狂なる聖将は移植後「甲山ノ猛虎」に、S1の甲山ノ猛虎は移植後「志半ノ矛楯」に変化。甲山ノ猛虎・志半ノ矛楯はA以下のためskills.html新規ページ化なし"
+ ]
+}

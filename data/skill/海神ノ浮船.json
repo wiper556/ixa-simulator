@@ -1,0 +1,87 @@
+{
+ "name": "海神ノ浮船",
+ "rank": "SS",
+ "baseRate": 48,
+ "target": "全 飛翔4",
+ "effectSummary": "SS/LV10 確率 48% 防御上昇/対象:全　飛翔4\n①(3.5×防御参加武将数)%を防御効果に加算する\n②飛翔4を持つ(敵軍に飛翔を持つ武将が4人未満のとき通常武将ダメージを受けない)",
+ "categoryLinks": [
+  {
+   "href": "skills-count-def.html",
+   "label": "人数依存(防)スキル一覧を見る"
+  },
+  {
+   "href": "skills-hishou-def.html",
+   "label": "飛翔スキル一覧(防御)を見る"
+  }
+ ],
+ "sourceCharacters": [
+  {
+   "name": "徳川秀忠",
+   "no": "1234",
+   "slot": "S2"
+  },
+  {
+   "name": "大谷吉継（2）",
+   "no": "1230",
+   "slot": "A"
+  },
+  {
+   "name": "蜂須賀小六",
+   "no": "1223",
+   "slot": "C"
+  },
+  {
+   "name": "九鬼嘉隆",
+   "no": "1212",
+   "slot": "S1"
+  },
+  {
+   "name": "竹中半兵衛",
+   "no": "1215",
+   "slot": "C"
+  },
+  {
+   "name": "宇喜多秀家（2）",
+   "no": "1217",
+   "slot": "S1"
+  },
+  {
+   "name": "松永久秀",
+   "no": "1209",
+   "slot": "S1"
+  },
+  {
+   "name": "津軽為信",
+   "no": "2359",
+   "slot": "S1(戦陣 凪経由)",
+   "db": "kyoku",
+   "note": [
+    "津軽為信(2359)characters-kyoku.html synthesisTable S1枠(元スキル「戦陣 凪」[A])の移植後afterSkillが「海神ノ浮船」であることを確認済み。戦陣凪はA以下のためskills.html独自ページを持たず、経由先ページが無いのでここに直接記載する"
+   ]
+  },
+  {
+   "name": "延沢満延",
+   "no": "2456",
+   "slot": "B",
+   "db": "kyoku"
+  },
+  {
+   "name": "木下藤吉郎",
+   "no": "2573",
+   "slot": "C",
+   "db": "kyoku"
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "海神ノ浮船",
+  "rank": "SS"
+ },
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "coefficient": "3.5",
+   "effect": "全 飛翔4　確率 48% / 防御 3.5%×防御参加武将数(280人)=980.0%"
+  }
+ ]
+}

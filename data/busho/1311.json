@@ -1,0 +1,128 @@
+{
+ "name": "斎藤道三（2）【覇】",
+ "no": "1311",
+ "furigana": "さいとうどうさん",
+ "ch": "32章",
+ "cost": 6,
+ "troop": "全防",
+ "sub": "",
+ "effect": "部隊長時、対象兵科指揮で部隊総防御力55%上昇",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1311_full.png",
+ "imageChar": "assets/img/characters/no1311_char.png",
+ "atkBase": 1230,
+ "atkGrowth": 66,
+ "defBase": 1310,
+ "defGrowth": 84,
+ "tacticsBase": 850,
+ "tacticsGrowth": 4,
+ "lv0Troops": 5500,
+ "rankGrades": {
+  "yari": "X",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "蛇神幻計",
+ "skillDetail": "SSS/LV10 確率 40%/対象:全\n模倣不可\n①対象兵科を指揮した戦闘時部隊総防御力が55%上昇する(部隊長時限定)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 40% / 部隊総防御力 55%上昇(部隊長時限定)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": "全　確率 42% / 部隊総防御力 58%上昇(部隊長時限定)"
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": "全　確率 45% / 部隊総防御力 62%上昇(部隊長時限定)"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": "全　確率 50% / 部隊総防御力 67%上昇(部隊長時限定)"
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": "全　確率 55% / 部隊総防御力 73%上昇(部隊長時限定)"
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": "全　確率 60% / 部隊総防御力 80%上昇(部隊長時限定)"
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": "全　確率 70% / 部隊総防御力 84%上昇(部隊長時限定)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "月煌侵蝕",
+   "rank": "SSS",
+   "afterSkill": "月煌侵蝕",
+   "afterRank": "SSS",
+   "target": "全 兵站",
+   "rate": "45%",
+   "effectShort": "防御を係数×人数で上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "熾炎破天",
+   "rank": "SS",
+   "afterSkill": "熾炎破天",
+   "afterRank": "SS",
+   "target": "全 無尽2",
+   "rate": "+50%",
+   "effectShort": "防御 780%×2(部隊コスト8以下)=1560%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "覇天金剛",
+   "rank": "SS",
+   "afterSkill": "覇天金剛",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "+100%",
+   "effectShort": "攻撃1350%上昇+防御1350%上昇+速度100%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "虚妄ノ神蛇",
+   "rank": "SSS",
+   "afterSkill": "虚妄ノ神蛇",
+   "afterRank": "SSS",
+   "target": "全",
+   "rate": "+50%",
+   "effectShort": "防御 14.8%×防御参加武将数(280人)=4144.0%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "國才連豪",
+   "rank": "SS",
+   "afterSkill": "國才連豪",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "50%",
+   "effectShort": "防御が係数×同スキル所持武将数で上昇"
+  }
+ ],
+ "notes": [
+  "画像はixagno記事掲載のカード画像から切り出した(JPEG劣化のためハート検出はTOL=50)。",
+  "【2026-08-12】鍛錬表の書き方をLV10行(サイト共通書式)に統一。以前はTR1〜TR5だけ",
+  " 出典サイトの生テキストのままで、読点や項目の並びが他の武将と揃っていなかった。",
+  " TR6は通常カードのページには載っておらず、パラレル天カード(No.30000+元No.)の",
+  " ixanary.com/cards/3xxxx/ にのみ記載がある。そこから取得した。",
+  "2026-08-07開幕の32章新天。ixanary.comは2026-08-08時点で未対応(cards/1311 は404)のため",
+  "別ソースで確定させた。スキル名・作家名は公式ニュース(スクウェア・エニックス発表)、",
+  "コスト/指揮兵数/成長値は ixagno.blog.fc2.com【天】武将一覧、",
+  "基礎値・兵科適性・LV10効果・鍛錬表・合成テーブルは同サイトの個別記事(blog-entry-11141)。"
+ ]
+}

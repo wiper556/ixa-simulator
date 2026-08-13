@@ -1,0 +1,46 @@
+{
+ "name": "天頂ノ電光",
+ "rank": "SSS",
+ "baseRate": 12,
+ "target": "全",
+ "noMimic": true,
+ "effectSummary": "SSS/LV10 確率 12% 攻撃190%上昇/対象:全\n模倣不可\n①攻撃190%上昇する\n②部隊長ならば発動率と効果が3倍になる",
+ "sourceCharacters": [
+  {
+   "name": "浅井長政（4）",
+   "no": "1244",
+   "slot": "B"
+  },
+  {
+   "name": "村上武吉（2）",
+   "no": "1257",
+   "slot": "B"
+  },
+  {
+   "name": "立花宗茂（2）",
+   "no": "1231",
+   "slot": "S2"
+  },
+  {
+   "name": "島津義久(1219)",
+   "no": "1219",
+   "slot": "S2"
+  },
+  {
+   "name": "九戸政実",
+   "no": "1225",
+   "slot": "C"
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "天頂ノ電光",
+  "rank": "SSS"
+ },
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 12% / 攻撃 190%上昇(部隊長時、確率・効果3倍)"
+  }
+ ]
+}
