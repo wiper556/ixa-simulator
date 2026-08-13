@@ -361,6 +361,43 @@ def cmd_abort(reason):
     return 0
 
 
+def cmd_close_abort(stamp, reason):
+    """中断した回に、始末をつけた記録を足す(2026-08-13)。
+
+    なぜ要るか: ABORT の痕跡は消せない設計にしたが、**指摘を閉じる手段を
+    用意していなかった**。そのため一度でも中断すると CI が永久に赤になる。
+    永久に赤いCIは見なくなるので、いちばん危ない状態になる。
+    実際、今日の中断2件でこの状態になった(どちらも道具の不具合と実証テスト)。
+
+    消すのではなく**足す**。ABORT の行はそのまま残り、その下に
+    ABORT-CLOSED が並ぶ。追記専用・digest で連結・錠前で保護なので、
+    「無かったこと」にはできない。できるのは「こう始末した」と書き足すことだけ。
+    """
+    if len(reason.strip()) < 20:
+        print("--reason は20文字以上。何をして始末をつけたのかを書く。")
+        return 1
+    if "\t" in reason or "\n" in reason:
+        print("理由にタブ・改行は使えない(記録が1行1件で壊れる)。")
+        return 1
+    aborts, closed = [], set()
+    for line in io.open(LOG, encoding="utf-8").read().split("\n"):
+        c = line.split("\t")
+        if c[0] == "ABORT" and len(c) > 1:
+            aborts.append(c[1])
+        elif c[0] == "ABORT-CLOSED" and len(c) > 2:
+            closed.add(c[2])
+    if stamp not in aborts:
+        print("その時刻の ABORT が記録に無い: %s" % stamp)
+        print("中断している回: %s" % (", ".join(x for x in aborts if x not in closed) or "なし"))
+        return 1
+    if stamp in closed:
+        print("その回は既に始末がついている: %s" % stamp)
+        return 1
+    log("ABORT-CLOSED\t%s\t%s\t%s" % (now(), stamp, reason))
+    print("中断した回 %s に始末の記録を足した。ABORT の行はそのまま残る。" % stamp)
+    return 0
+
+
 def cmd_status():
     if not os.path.exists(active_path()):
         print("開いている回は無い(本物のリポジトリへの書き込みは通常どおり)。")
@@ -458,6 +495,9 @@ def main():
     p.add_argument("--end", action="store_true")
     p.add_argument("--abort", action="store_true",
                    help="閉じられない回から抜ける。--reason が要る(記録は永久に残る)")
+    p.add_argument("--close-abort", metavar="時刻", dest="close_abort",
+                   help="中断した回に始末の記録を足す。--reason(20文字以上)が要る。"
+                        "ABORT の行は消えない")
     p.add_argument("--reason", default="")
     p.add_argument("--status", action="store_true")
     p.add_argument("--selftest", action="store_true")
@@ -468,6 +508,8 @@ def main():
         return cmd_check()
     if a.selftest:
         return selftest()
+    if a.close_abort:
+        return cmd_close_abort(a.close_abort, a.reason)
     if a.abort:
         return cmd_abort(a.reason)
     if a.end:

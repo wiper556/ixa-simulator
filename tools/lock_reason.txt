@@ -25,3 +25,4 @@
 2026-08-13	-1	hooks:tools/hooks/no_redteam_write.py	第14回: 緩和の前提が誤りだったので inline コード実行を撤回。env/time を発射台扱いに、awk の system とパイプ、sed -i.bak を塞いだ
 2026-08-13	-3	hooks:tools/audit_characters.py,hooks:tools/check_generated.py,hooks:tools/lock.py	作り替えで門番2本を意図的に変更。audit_characters.status()は画像が無い武将を監査対象外にしていた穴を塞ぎ(251体に復帰)、check_generatedはbuild_data.pyを先頭で回して配列の手編集とビルド漏れを同じ検査で止めるようにした。あわせて生成の要である build_data/extract_data/verify_extract/reset_marks を守り先に追加
 2026-08-13	-1	hooks:tools/audit_selftest.py	自己テストの目印3件を作り替え後の書き方に付け替えた。配列が生成物になりコメントが要素の前に出るようになったため、コメントを目印にしていた注入位置が外れて4種別が無検査になっていた(自己テストがskipとして自ら報告)。検出58/見逃し0/注入位置なし0に復帰
+2026-08-13	-3	hooks:tools/audit_selftest.py,hooks:tools/redteam.py,hooks:tools/rules.py	中断した回の指摘を閉じる ABORT-CLOSED を追加。一度でも中断するとCIが永久に赤になり、赤いCIは見なくなるので最も危険な状態だった。記録は消せないまま、始末の記録を足せるようにした。宛先が実在しない始末はHIGHで止める検査と自己テストも同時に入れた

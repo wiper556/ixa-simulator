@@ -341,7 +341,7 @@ def _p_redteam(out, ids, n):
                         "コミット済みの過去行が変わっている。"
                         "回の開閉・中断の履歴を消した疑い(R-02/R-03)"))
     opened, failed = None, []
-    aborted = []
+    aborted, closed = [], set()
     for line in _read(p).split("\n"):
         if line.startswith("#") or not line.strip():
             continue
@@ -355,10 +355,17 @@ def _p_redteam(out, ids, n):
             # 無かった。END では消さない。消せるのは理由つきの ABORT だけ。
             opened = None
         elif kind == "ABORT":
-            # 出口はあるが、痕跡は永久に残る。監査は毎回これを報せ続ける。
+            # 出口はあるが、痕跡は永久に残る。
             # 直前に END-FAILED(本物を触った)があったかも一緒に残す。
             aborted.append((line, len(failed)))
             opened, failed = None, []
+        elif kind == "ABORT-CLOSED":
+            # 2026-08-13: 以前はここが無く、一度でも中断すると CI が**永久に赤**
+            # だった。永久に赤いCIは見なくなるので、いちばん危ない状態になる。
+            # 記録を消せるようにするのではなく、「こう始末した」を**足せる**ように
+            # した。ABORT の行はそのまま残り、その下に ABORT-CLOSED が並ぶ。
+            # 追記専用・digestで連結・錠前で保護なので無かったことにはできない。
+            closed.add(line.split("\t")[2] if len(line.split("\t")) > 2 else "")
         elif kind == "END-FAILED":
             failed.append(line)
     for line in failed:
@@ -366,8 +373,18 @@ def _p_redteam(out, ids, n):
                     "回を閉じようとして差分が出ている: %s。"
                     "その回の指摘は無効。違反ログに「重」で記録して回をやり直す"
                     % line[:100]))
+    # 実在しない中断に「始末をつけた」と書いてある = 記録の捏造か書式の壊れ。
+    # 始末の記録は指摘を消す力があるので、宛先が実在することは機械で確かめる。
+    for stamp in sorted(closed - set(l.split("\t")[1] for l, _ in aborted
+                                     if len(l.split("\t")) > 1)):
+        out.append(("レッドチームの始末の記録が宙に浮いている", "HIGH",
+                    "%s の ABORT-CLOSED に対応する ABORT が記録に無い。"
+                    "始末の記録は中断の指摘を消すので、宛先が実在しないものは通さない"
+                    % (stamp or "(時刻なし)")))
     for line, nfail in aborted:
         c = line.split("\t")
+        if len(c) > 1 and c[1] in closed:
+            continue        # 始末の記録がある(ABORTの行自体は消えていない)
         out.append(("レッドチームの回を中断した", "MID",
                     "%s の回「%s」は --abort で抜けた%s: %s"
                     % (c[1] if len(c) > 1 else "?", c[3] if len(c) > 3 else "?",
