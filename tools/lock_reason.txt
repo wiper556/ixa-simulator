@@ -23,3 +23,4 @@
 2026-08-13	-4	hooks:tools/hooks/_cmdline.py,hooks:tools/hooks/no_protection_bypass.py,hooks:tools/hooks/no_redteam_write.py,hooks:tools/redteam.py	第13回: ヒアドキュメント判定を文字走査に作り直し、shlexのcommentersを止め、失敗時は行を捨てないfail-closedにした
 2026-08-13	-3	hooks:docs/RULE-OPERATION.md,hooks:docs/redteam-brief.md,hooks:tools/hooks/no_redteam_write.py	ホワイトリストを緩和(ユーザー指示)。道具名でなく書き込み先で判定し、通常作業で普通に使う形を通す
 2026-08-13	-1	hooks:tools/hooks/no_redteam_write.py	第14回: 緩和の前提が誤りだったので inline コード実行を撤回。env/time を発射台扱いに、awk の system とパイプ、sed -i.bak を塞いだ
+2026-08-13	-3	hooks:tools/audit_characters.py,hooks:tools/check_generated.py,hooks:tools/lock.py	作り替えで門番2本を意図的に変更。audit_characters.status()は画像が無い武将を監査対象外にしていた穴を塞ぎ(251体に復帰)、check_generatedはbuild_data.pyを先頭で回して配列の手編集とビルド漏れを同じ検査で止めるようにした。あわせて生成の要である build_data/extract_data/verify_extract/reset_marks を守り先に追加

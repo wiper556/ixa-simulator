@@ -74,7 +74,13 @@ HASHED = ("tools/hooks/pre-commit", "tools/hooks/pre-merge-commit",
           # 「一覧に足す」だけで偽造の証拠が通ってしまう。
           "tools/reslog_legacy.txt", "tools/reslog.py",
           # 攻撃側に渡す条件の正本。回ごとに書き換わると回の比較ができない。
-          "docs/redteam-brief.md")
+          "docs/redteam-brief.md",
+          # 2026-08-13の作り替え。正本が data/ に移り、ページ内の配列は生成物になった。
+          # build_data.py は**公開されるページの中身をそのまま決める**ので、ここが
+          # 野放しだと data/ をいくら検査しても意味が無い(生成の途中で差し替えられる)。
+          # extract/verify は受け入れ検査、reset_marks は印を外す一方向の道具。
+          "tools/build_data.py", "tools/extract_data.py",
+          "tools/verify_extract.py", "tools/reset_marks.py")
 # N-3(第4回): 縮小の記録 lock_reason.txt はどこにも守られておらず、
 # 消しても誰も気づかなかった。必須ファイルに入れる。
 # Y-5(第5回): research_log.json も無保護だった(「証拠つき」を手書きできる素材)。

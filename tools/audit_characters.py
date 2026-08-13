@@ -139,12 +139,21 @@ def load():
     return d
 
 
+HAS_DATA = ("imageFull", "initialSkill", "atkBase", "skillDetail",
+            "trTable", "synthesisTable")
+
+
 def status(g):
     if g.get("approved"):
         return "赤丸"
     if g.get("reviewedOk"):
         return "黄丸"
-    if g.get("imageFull"):
+    # 2026-08-13: 以前はここが `if g.get("imageFull")` だけだった。印を全件外した
+    # ときに、画像だけ無い5体(10063/10065/10066/10067/10069)がまるごと監査から
+    # 消えて発覚した。赤丸判定が先に当たっていたので今までは対象に入っていただけで、
+    # **画像が無い武将は監査されない**という穴が最初から空いていた。
+    # 中身(初期スキル・数値・表)が1つでもあるなら青丸として監査する。
+    if any(g.get(k) for k in HAS_DATA):
         return "青丸"
     return "無印"
 
