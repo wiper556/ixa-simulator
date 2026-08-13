@@ -145,6 +145,7 @@ def _p02forms(repo):
 # 期待する文言を持たせ、それが出力に現れることまで確かめる。
 CASES = [
     ("T-01", "ヒアドキュメントのバックスラッシュを拒否する", _t01, True, "T-01"),
+    ("T-08", "コミットメッセージのコマンド置換を拒否する", _t01, True, "T-08"),
     ("P-02h", "ブランチ保護やフックを外すコマンドを拒否する", _p02hook, True, "P-2"),
     ("P-02f", "保護外しの書き方を全部止める(読み取りは通す)", _p02forms, True, ""),
     ("P-02w", "Write/Edit で .git/ を直接書くのを止める", _p02forms, True, ""),
@@ -233,12 +234,18 @@ def main():
                 ng += 1
                 print("     " + (r.stdout or "").strip()[-300:])
             continue
-        if rid == "T-01":
+        if rid in ("T-01", "T-08"):
             # PreToolUse フックは git の外側なので、スクリプトを直接叩いて判定を見る
             import json as _json
             bs = chr(92)
-            cmd = ("python - <<'PY'" + chr(10)
-                   + 's=re.sub(r"(a)", r"' + bs + '1b", s)' + chr(10) + "PY")
+            if rid == "T-08":
+                # 二重引用符の中のバックティックはシェルが実行してしまう。
+                # 同じ事故を2回起こして、どちらも push 後に気づいた。
+                cmd = ('git commit -m "本文に ' + chr(96) + 'git for-each-ref'
+                       + chr(96) + ' を書く"')
+            else:
+                cmd = ("python - <<'PY'" + chr(10)
+                       + 's=re.sub(r"(a)", r"' + bs + '1b", s)' + chr(10) + "PY")
             r = sh([sys.executable, "tools/hooks/no_heredoc_backslash.py"], repo,
                    inp=_json.dumps({"tool_input": {"command": cmd}}))
             deny = ('"permissionDecision": "deny"' in (r.stdout or "")
