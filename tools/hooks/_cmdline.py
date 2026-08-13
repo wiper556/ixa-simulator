@@ -27,9 +27,19 @@ def segments(cmd, posix=True):
 
 
 def _segments_1line(cmd, posix):
+    # ヒアドキュメントの印は、token 比較ではなく**位置**で切る。
+    # token 比較だと引用符を外したあとの `'<<'` と区別が付かない(HC-2)。
+    hit = heredoc_at(cmd)
+    if hit:
+        cmd = cmd[:hit[1]] + " " + cmd[hit[2]:]
     try:
         lx = shlex.shlex(cmd, posix=posix, punctuation_chars=True)
         lx.whitespace_split = True
+        # HF-1(第13回、高): shlex の既定は commenters="#" で、**行のどこにあっても**
+        # # 以降を捨てる。bash は単語の途中・末尾の # をただの文字として扱うので、
+        # `echo x#; rm -rf <本物>` が「echo x」だけに見えていた。
+        # 回のフックだけでなく、常時走る P-2 まで同じ理由で無効化された。
+        lx.commenters = ""
         toks = [t for t in lx if t]
     except ValueError:          # 引用符が閉じていない等
         toks = [t for t in re.split(r"\s+", (cmd or "").strip()) if t]
@@ -38,20 +48,11 @@ def _segments_1line(cmd, posix):
     # 行の残り(`; rm -rf <本物>` など)が丸ごと検査対象から消えた。
     # shlex は引用符を解いてから token を返すので、ここで見る `<<` は
     # **本当の演算子**だけ。印とタグの2つを捨て、残りは検査に回す。
-    out = []
-    skip_next = False
-    for t in toks:
-        if skip_next:
-            skip_next = False
-            continue
-        if t in ("<<", "<<-"):
-            skip_next = True        # 次の token はタグ名
-            continue
-        out.append(t)
-    toks = out
     segs, cur = [], []
     for t in toks:
-        if t and not t.strip("|&;<>()"):       # 区切り記号だけの token
+        # `<` は入力なので書き込み先を作らない。区切りに数えると
+        # `grep -c '<<' <ファイル>` の後ろが「書き込み先」に見えて誤検知する。
+        if t and not t.strip("|&;>()"):        # 区切り記号だけの token
             if cur:
                 segs.append(cur)
                 cur = []
@@ -87,22 +88,72 @@ def strip_env(toks):
     return env, toks
 
 
-def heredoc_tag(line, posix=True):
-    """その行が**本当に**ヒアドキュメントを開始しているなら、そのタグ名。
+def heredoc_at(line):
+    """行の中の「本物の」ヒアドキュメント演算子を探す。
 
-    GD-1(第12回、高): ここを正規表現でやると、引用符の中の `<<TAG` を
-    ヒアドキュメントの始まりと誤読して、後ろの行を検査から落とす。
-    shlex は引用符を解いてから token を返すので、ここで見える `<<` は
-    本物の演算子だけ。引用符が閉じていない行は「開始していない」と答える
-    (安全側。検査対象として残る)。
+    返すのは (タグ名, 開始位置, 終了位置) か None。
+
+    HC-1 / HC-2(第13回、高): ここは shlex の token 比較だった。
+    posix モードの shlex は引用符を**外してから** token を返すので、
+    `'<<'` と裸の `<<` が区別できず、第11回・第12回で潰したはずの
+    「引用符の中の <<」がそのまま通っていた。
+    `$(( 1 << N ))`(算術左シフト)も演算子と誤読していた。
+    引用符と算術展開の内側を追いながら1文字ずつ見る。
     """
-    try:
-        lx = shlex.shlex(line, posix=posix, punctuation_chars=True)
-        lx.whitespace_split = True
-        toks = [t for t in lx if t]
-    except ValueError:
-        return None
-    for i, t in enumerate(toks):
-        if t in ("<<", "<<-") and i + 1 < len(toks):
-            return toks[i + 1]
+    n = len(line)
+    k = 0
+    sq = dq = False          # 引用符の中か
+    arith = 0                # $(( )) の深さ
+    while k < n:
+        c = line[k]
+        if c == "\\" and not sq:
+            k += 2
+            continue
+        if c == "'" and not dq:
+            sq = not sq
+            k += 1
+            continue
+        if c == '"' and not sq:
+            dq = not dq
+            k += 1
+            continue
+        if not sq and not dq:
+            if line.startswith("$((", k):
+                arith += 1
+                k += 3
+                continue
+            if arith and line.startswith("))", k):
+                arith -= 1
+                k += 2
+                continue
+            if arith == 0 and line.startswith("<<", k):
+                if line.startswith("<<<", k):
+                    k += 3           # ヒア文字列。本文行を持たない
+                    continue
+                j = k + 2
+                if j < n and line[j] == "-":
+                    j += 1
+                while j < n and line[j] in " \t":
+                    j += 1
+                q = ""
+                if j < n and line[j] in "'\"":
+                    q = line[j]
+                    j += 1
+                st = j
+                while j < n and (line[j].isalnum() or line[j] == "_"):
+                    j += 1
+                tag = line[st:j]
+                if q and j < n and line[j] == q:
+                    j += 1
+                if not tag:
+                    k += 2
+                    continue
+                return tag, k, j
+        k += 1
     return None
+
+
+def heredoc_tag(line, posix=True):
+    """互換用。タグ名だけ返す。"""
+    hit = heredoc_at(line)
+    return hit[0] if hit else None

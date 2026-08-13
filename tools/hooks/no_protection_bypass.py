@@ -328,6 +328,10 @@ MUST_BLOCK = [
     "git push origin :master",
     "git push origin --delete master",
     "git push origin -d master",
+    # 第13回 HF-1(高): # で行の残りが消え、常時走るこのフックも無効化された
+    "echo x#; git commit --no-verify -m x",
+    "echo x#; git push --force origin master",
+    "echo x#; git config core.hooksPath /dev/null",
     "git update-index --skip-worktree tools/precommit_check.py",
     "rm .git/hooks/pre-commit",
     "rm -f .git/hooks/*",

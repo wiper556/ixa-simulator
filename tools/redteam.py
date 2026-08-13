@@ -387,6 +387,34 @@ def selftest():
     fp = fingerprint()
     if "@refs" not in fp:
         ng.append("指紋に参照(@refs)が入っていない。push を捕まえられない(EE-1)")
+    else:
+        # HA-3(第13回): 鍵の有無だけ見ていたので、値が参照を反映しなくなっても
+        # (for-each-ref が失敗して空でも)緑のままだった。**振る舞い**を見る。
+        r = subprocess.run(["git", "for-each-ref", "--format=%(refname)"],
+                           cwd=ROOT, capture_output=True, text=True,
+                           encoding="utf-8")
+        if r.returncode or not (r.stdout or "").strip():
+            ng.append("git for-each-ref が参照を返していない。"
+                      "@refs が中身の無いハッシュになる(EE-1)")
+        else:
+            # 使い捨てクローンで参照を1本足し、@refs が動くことを確かめる
+            d = tempfile.mkdtemp(prefix="rt_refs_")
+            rp = os.path.join(d, "r")
+            subprocess.run(["git", "clone", "-q", ROOT.replace("\\", "/"), rp],
+                           capture_output=True)
+            keep = globals()["ROOT"]
+            try:
+                globals()["ROOT"] = rp
+                a = fingerprint().get("@refs")
+                subprocess.run(["git", "-C", rp, "branch", "rt-selftest-tmp"],
+                               capture_output=True)
+                b = fingerprint().get("@refs")
+                if a == b:
+                    ng.append("参照を1本足しても @refs が変わらない。"
+                              "指紋が参照を見ていない(EE-1)")
+            finally:
+                globals()["ROOT"] = keep
+                shutil.rmtree(d, ignore_errors=True)
     if not any(k.startswith(".git/refs") or k == ".git/HEAD" for k in fp):
         ng.append("指紋に .git/refs / .git/HEAD が入っていない(EE-1)")
     # .git の中でも見ない場所があること(全部入れると走らせるたびに変わる)

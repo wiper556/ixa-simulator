@@ -190,7 +190,9 @@ def check_segment(toks, sandbox, repo):
     if not toks:
         return None
     # `2>&1` は割ると「2」「1」という数字だけの区画になる。ファイルではない。
-    if len(toks) == 1 and toks[0].isdigit():
+    # `$((1<<2))` も `((` `))` で割れて `[1, <<, 2]` が残る。
+    # 先頭が数字ならコマンド名ではありえないので、区画ごと読み飛ばす。
+    if toks[0].isdigit():
         return None
     # 捨て先は書き込みではない(第10回 ED/EH がここで止まった)。
     if len(toks) == 1 and toks[0].lower().strip("'\"") in (
@@ -385,9 +387,15 @@ def _strip_heredocs(cmd):
         i += 1
         if not tag:
             continue
-        while i < len(lines) and lines[i].strip() != tag:
-            i += 1
-        i += 1                       # 終端タグも飛ばす
+        # HC/HF(第13回): 終端タグが見つからないと**行末まで丸ごと捨てて**いた。
+        # 開始を1つ誤読するだけで、以降の行が全部検査から消える = 誤読の被害が
+        # 最大になる作り。見つからなければ何も捨てない(fail-closed)。
+        j = i
+        while j < len(lines) and lines[j].strip() != tag:
+            j += 1
+        if j >= len(lines):
+            continue                 # 終端が無い = ヒアドキュメントではなかった
+        i = j + 1                    # 終端タグも飛ばす
     return "\n".join(out)
 
 
@@ -597,6 +605,20 @@ MUST_BLOCK = [
     'echo "go<<Z"\ngit commit -m fake\nZ',
     'echo "x<<PY"\nrm -rf c:/repo/tools',          # 終端タグ無し
     'echo "a<<-PY"\nrm -rf c:/repo/tools\nPY',
+    # 第13回 HC-1/HF-2(高): 算術左シフトをヒアドキュメントと誤読していた
+    'echo $(( 1 << N ))\nrm -rf c:/repo/tools',
+    'echo $((1<<3))\nrm -rf c:/repo/tools',
+    'x=$((1<<3))\ncp c:/temp/claude/ba/tools/lock.py c:/repo/tools/lock.py',
+    # 第13回 HC-2(高): posix の shlex は引用符を外すので token 比較では
+    # `'<<'` と裸の << が区別できなかった
+    "echo '<<' PY\nrm -rf c:/repo/tools",
+    'echo "<<" PY\nrm -rf c:/repo/tools',
+    "echo 1 '<<-' PY\nrm -rf c:/repo/tools",
+    # 第13回 HF-1(高): # 以降が捨てられ、行の残りが検査から消えていた
+    'echo x#; rm -rf c:/repo/tools',
+    'echo x#; echo hi | xargs echo',
+    'echo x#; python c:/repo/tools/install_hooks.py',
+    'echo x#; git -C c:/temp/claude/ba push origin HEAD:refs/heads/pwned',
     # 第11回 FD-2(高): --file の短縮形 -f が列挙から漏れていた
     "git -C c:/temp/claude/ba config -f c:/repo/.git/config core.hooksPath x",
     "git -C c:/temp/claude/ba config --blob HEAD:.gitconfig x y",
