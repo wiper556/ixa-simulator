@@ -1,0 +1,47 @@
+{
+ "name": "瞬刻無影",
+ "rank": "S",
+ "baseRate": 45,
+ "target": "部隊長",
+ "effectSummary": "S/LV10 対象:部隊長\n①確率45%で部隊長の初期スキルを1.1倍に強化して模倣する\n②確率100%で速度100%上昇する(TRなし)",
+ "categoryLinks": [
+  {
+   "href": "skills-leadermimic.html",
+   "label": "部隊長模倣スキル一覧を見る"
+  }
+ ],
+ "sourceCharacters": [
+  {
+   "name": "武田信繁",
+   "no": "2377",
+   "slot": "C",
+   "db": "kyoku"
+  },
+  {
+   "name": "瀬田宗次郎",
+   "no": "2604",
+   "slot": "B",
+   "db": "kyoku"
+  },
+  {
+   "name": "望月千代女",
+   "no": "2855",
+   "slot": "S2",
+   "db": "kyoku"
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "朧雲ノ閃撃",
+  "rank": "SSS"
+ },
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "部隊長　確率 45%/100% / 効果 部隊長の初期スキルを1.1倍に強化して模倣(確率45%)+速度 100%上昇(確率100%)(TRなし)"
+  }
+ ],
+ "notes": [
+  "ownHiddenCandidate: No.2377(武田信繁)の合成候補データ(ixagno.blog.fc2.com blog-entry-9904確認)より、瞬刻無影は移植後「朧雲ノ閃撃」[SSS]に変化することが判明したため更新"
+ ]
+}

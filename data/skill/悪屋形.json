@@ -1,0 +1,39 @@
+{
+ "name": "悪屋形",
+ "rank": "S",
+ "baseRate": 19,
+ "target": "全",
+ "effectSummary": "S/LV10 確率 19% 攻撃80%上昇/対象:全\n①攻撃80%上昇する\n②所属部隊を含む自部隊同時攻撃時消費名声-8(重複不可)",
+ "sourceCharacters": [
+  {
+   "name": "安宅冬康",
+   "no": "2391",
+   "slot": "A(空陣鳴響経由)",
+   "db": "kyoku"
+  },
+  {
+   "name": "大宝寺義氏",
+   "no": "2455",
+   "slot": "A・B",
+   "db": "kyoku"
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "氷塊三連撃",
+  "rank": "SSS"
+ },
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 19% / 攻撃 80%上昇+自部隊同時攻撃時消費名声-8(重複不可、TR別データは未確認)"
+  }
+ ],
+ "notes": [
+  "ixanary.com(/skills/悪屋形/、原本No.2455)確認。No.2391(安宅冬康)の合成候補データ(ixagno.blog.fc2.com blog-entry-10312確認)より、Aスロット「空陣鳴響」の移植後合成候補として判明したためページ新規作成",
+  "【2026-08-12修正】自己参照(悪屋形→悪屋形)で登録されていたが誤り。",
+  "ixanary.com/skills/悪屋形 の合成テーブルのA枠・B枠(1次=悪屋形[S] → 2次=氷塊三連撃[SSS])を確認して訂正した。",
+  "[[feedback_skill_hidden_candidate_rule]]どおり、他武将の既存登録ではなく",
+  "スキル個別ページの合成テーブルを根拠にしている。"
+ ]
+}

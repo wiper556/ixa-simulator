@@ -1,0 +1,143 @@
+{
+ "name": "武田勝頼",
+ "no": "2448",
+ "ch": "未確認",
+ "cost": 4.5,
+ "troop": "全攻防",
+ "sub": "",
+ "effect": "自部隊内で卓越発動したスキル数×40%を攻防効果に加算(模倣不可)",
+ "furigana": "たけだかつより",
+ "illustrator": "正子公也",
+ "imageFull": "assets/img/characters/no2448_full.png",
+ "imageChar": "assets/img/characters/no2448_char.png",
+ "atkBase": 1100,
+ "atkGrowth": 49,
+ "defBase": 1100,
+ "defGrowth": 49,
+ "tacticsBase": 500,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 4420,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "比類なき大将",
+ "skillDetail": "S/LV10 確率 70% 攻撃70%上昇/対象:全\n模倣不可\n①攻撃70%上昇する\n②防御70%上昇する\n③自部隊内で卓越発動したスキル数×40%を攻防効果に加算する",
+ "categoryLinks": [
+  {
+   "href": "skills-takuetsu.html",
+   "label": "卓越スキル一覧を見る"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 70% / 攻撃 70%上昇+防御 70%上昇(自部隊内で卓越発動したスキル数×40%を攻防効果に加算・模倣不可)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": null
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": null
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": null
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": null
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": null
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": null
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "比類なき大将",
+   "rank": "S",
+   "afterSkill": "騎神炎山",
+   "afterRank": "S",
+   "target": null,
+   "rate": null,
+   "effectShort": null,
+   "afterTarget": "馬器騎",
+   "afterRate": "+40%",
+   "afterEffectShort": "攻撃75%上昇 防御75%上昇 速度50%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "比類なき大将",
+   "rank": "S",
+   "afterSkill": "騎神炎山",
+   "afterRank": "S",
+   "target": null,
+   "rate": null,
+   "effectShort": null,
+   "afterTarget": "馬器騎",
+   "afterRate": "+40%",
+   "afterEffectShort": "攻撃75%上昇 防御75%上昇 速度50%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "比類なき大将",
+   "rank": "S",
+   "afterSkill": "騎神炎山",
+   "afterRank": "S",
+   "target": null,
+   "rate": null,
+   "effectShort": null,
+   "afterTarget": "馬器騎",
+   "afterRate": "+40%",
+   "afterEffectShort": "攻撃75%上昇 防御75%上昇 速度50%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "騎神炎山",
+   "rank": "S",
+   "afterSkill": "遁世影武者",
+   "afterRank": "B",
+   "target": null,
+   "rate": null,
+   "effectShort": null,
+   "afterTarget": "部隊長",
+   "afterRate": "+50%",
+   "afterEffectShort": "所属部隊の部隊長が持つ初期スキルを模倣する(戦闘スキルのみ)"
+  },
+  {
+   "slot": "S2",
+   "skill": "建御雷神ノ槌",
+   "rank": "SS",
+   "afterSkill": "建御雷神ノ槌",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "+100%",
+   "effectShort": "攻撃135%上昇+防御135%上昇(所持武将の全スキルの卓越確率+30%・模倣不可)"
+  }
+ ],
+ "notes": [
+  "出典: カード画像(LV1形式: 極・統率 槍S/弓A/馬A/器A拡大確認・初期値1100/1100/500・コスト4.5・LV1スキル値)",
+  " + ixanary.com/cards/2448(指揮4420(★0-0)・成長+49/+49/+2.5・LV10: 確率+70%/全攻防70%/卓越発動スキル数×40%加算・模倣不可)",
+  " + ixawiki BushoCard/2448(統率2次確認・合成テーブル1次/2次候補+S2候補のLV10効果)。",
+  "統率はカード画像+ixawikiの2ソース一致。攻撃+防御の同時変動はtrTableに併記(multistat規則)。",
+  "初期スキルがSランクのためスキル個別ページの新規作成が必要(docsのTODOに記録済み)。",
+  "合成テーブルはixawiki(1次候補+2次候補+S2候補のLV10効果)"
+ ]
+}

@@ -1,0 +1,133 @@
+{
+ "name": "細川幽斎-復刻-【天】",
+ "no": "10070",
+ "ch": "30章",
+ "cost": 4.5,
+ "troop": "-",
+ "sub": "",
+ "effect": "部隊長の初期スキルを模倣して保護・強化",
+ "furigana": "ほそかわゆうさい",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no10070_full.png",
+ "imageChar": "assets/img/characters/no10070_char.png",
+ "atkBase": 1200,
+ "atkGrowth": 69,
+ "defBase": 1250,
+ "defGrowth": 71,
+ "tacticsBase": 700,
+ "tacticsGrowth": 3.5,
+ "lv0Troops": 4900,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "S",
+  "ki": "A"
+ },
+ "initialSkill": "古今虚実ノ法",
+ "skillDetail": "S/LV10 確率 40% 対象:部隊長　覇道\n模倣不可\n①覇道を持つため所属部隊の武将のスキルを無効化や発動率低下から保護する\n②部隊長の持つ模倣可能な初期スキルを模倣する\n③卓越時に通常攻撃/防御効果を強化する(追加確率20%・1.25倍)",
+ "categoryLinks": [
+  {
+   "href": "skills-leadermimic.html",
+   "label": "部隊長模倣スキル一覧を見る"
+  },
+  {
+   "href": "skills-hadou.html",
+   "label": "覇道スキル一覧を見る"
+  },
+  {
+   "href": "skills-takuetsu.html",
+   "label": "卓越スキル一覧を見る"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "部隊長 覇道　保護・模倣確率40% / 卓越追加確率20%・1.25倍"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": "部隊長 覇道　保護・模倣確率50% / 卓越追加確率25%・1.27倍"
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": "部隊長 覇道　保護・模倣確率60% / 卓越追加確率30%・1.3倍"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": "部隊長 覇道　保護・模倣確率70% / 卓越追加確率35%・1.33倍"
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": "部隊長 覇道　保護・模倣確率80% / 卓越追加確率40%・1.36倍"
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": "部隊長 覇道　保護・模倣確率100% / 卓越追加確率50%・1.4倍"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "虚実ノ理合",
+   "rank": "S",
+   "afterSkill": "虚実ノ理合",
+   "afterRank": "S",
+   "rate": "40%",
+   "target": "部隊長 覇道",
+   "effectShort": "部隊長の初期スキルを模倣(卓越時1.2倍)"
+  },
+  {
+   "slot": "B",
+   "skill": "潔花咲然",
+   "rank": "S",
+   "afterSkill": "舞蝶朧月",
+   "afterRank": "S",
+   "rate": "45%",
+   "target": "部隊長",
+   "effectShort": "卓越追加確率30%・1.15倍(帰還時間短縮は別枠 確率100%)",
+   "afterTarget": "部隊長",
+   "afterRate": "50%",
+   "afterEffectShort": "卓越追加確率20%・1.25倍"
+  },
+  {
+   "slot": "C",
+   "skill": "思金神ノ深謀",
+   "rank": "SS",
+   "afterSkill": "思金神ノ深謀",
+   "afterRank": "SS",
+   "rate": "60%",
+   "target": "部隊長",
+   "effectShort": "部隊長の初期スキルを模倣(卓越時1.3倍)"
+  },
+  {
+   "slot": "S1",
+   "skill": "古今虚実ノ法",
+   "rank": "S",
+   "afterSkill": "古今虚実ノ法",
+   "afterRank": "S",
+   "rate": "40%",
+   "target": "部隊長 覇道",
+   "effectShort": "部隊長の初期スキルを模倣(卓越時1.25倍)"
+  },
+  {
+   "slot": "S2",
+   "skill": "開闢ノ逆鉾",
+   "rank": "SS",
+   "afterSkill": "開闢ノ逆鉾",
+   "afterRank": "SS",
+   "rate": "100%",
+   "target": "全",
+   "effectShort": "攻撃254%上昇+卓越時兵士被害減少"
+  }
+ ],
+ "notes": [
+  "カード画像照合済み(2026-07-30): 槍S/弓A/馬S/器A",
+  "ixagno.blog.fc2.com(blog-entry-10782)の「初期テーブル/左記スキル移植後」対応表で確認。45do.infoに本カードの記事が見当たらず単一ソースのみ(2026年1月追加の新カードのため未掲載の可能性)。B枠のみ移植後スキルが潔花咲然→舞蝶朧月に変化。"
+ ]
+}

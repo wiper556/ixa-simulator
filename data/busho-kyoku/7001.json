@@ -1,0 +1,117 @@
+{
+ "name": "志村光安",
+ "no": "7001",
+ "ch": "未確認",
+ "cost": 3,
+ "troop": "馬器騎攻",
+ "sub": "",
+ "effect": "攻撃参加した自軍全部隊の帰還速度2.5倍",
+ "furigana": "しむらあきやす",
+ "illustrator": "JUNNY",
+ "imageFull": "assets/img/characters/no7001_full.png",
+ "imageChar": "assets/img/characters/no7001_char.png",
+ "atkBase": 1150,
+ "atkGrowth": 47,
+ "defBase": 1050,
+ "defGrowth": 36,
+ "tacticsBase": 510,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3450,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "B",
+  "uma": "S",
+  "ki": "A"
+ },
+ "initialSkill": "剛心嬰城",
+ "skillDetail": "A/LV10 確率 100% 攻撃420%上昇+速度90%上昇/対象:馬・器・騎\n①攻撃420%上昇する\n②速度90%上昇する\n③攻撃参加した自軍全部隊の帰還速度が2.5倍になる(帰還効果は模倣・重複不可)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "馬・器・騎　確率 100% / 攻撃 420%上昇+速度 90%上昇(帰還速度2.5倍)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": "馬・器・騎　確率 100% / 攻撃 470%上昇+速度 100%上昇(帰還速度3倍)"
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": "馬・器・騎　確率 100% / 攻撃 530%上昇+速度 130%上昇(帰還速度3.5倍)"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": null
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": null
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": null
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "騎聖",
+   "rank": "A",
+   "afterSkill": "神光征軍",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "+100%",
+   "effectShort": "攻撃80%上昇+速度50%上昇(武将コストで変動)",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "全攻90%上昇+全速200%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "騎聖",
+   "rank": "A",
+   "afterSkill": "神光征軍",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "+100%",
+   "effectShort": "攻撃80%上昇+速度50%上昇(武将コストで変動)",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "全攻90%上昇+全速200%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "剛心嬰城",
+   "rank": "A",
+   "afterSkill": "剛心嬰城",
+   "afterRank": "A"
+  },
+  {
+   "slot": "S1",
+   "skill": "剛心嬰城",
+   "rank": "A",
+   "afterSkill": "剛心嬰城",
+   "afterRank": "A"
+  },
+  {
+   "slot": "S2",
+   "skill": "志半ノ矛楯",
+   "rank": "A",
+   "afterSkill": "志半ノ矛楯",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "+65%",
+   "effectShort": "攻撃465%上昇+防御465%上昇(模倣不可)"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/7001 と skills/剛心嬰城 の生HTML)で確認(2026-08-08)。",
+  "合成テーブルはスキルページの1次(=移植前)・2次(=移植後)から取得。",
+  "候補スキルの対象・確率・効果はサイト内の既存登録から転記(未登録のスキルは空のまま)。"
+ ]
+}

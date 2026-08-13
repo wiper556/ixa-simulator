@@ -1,0 +1,103 @@
+{
+ "name": "丸目長恵",
+ "no": "2387",
+ "ch": "29章",
+ "cost": 4.5,
+ "troop": "槍砲器防",
+ "sub": "",
+ "effect": "防御参加武将数に応じて防御効果上昇",
+ "furigana": "まるめながよし",
+ "illustrator": "末冨正直",
+ "imageFull": "assets/img/characters/no2387_full.png",
+ "imageChar": "assets/img/characters/no2387_char.png",
+ "atkBase": 1190,
+ "atkGrowth": 68,
+ "defBase": 1540,
+ "defGrowth": 118,
+ "tacticsBase": 500,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 4590,
+ "rankGrades": {
+  "yari": "SS",
+  "yumi": "B",
+  "uma": "B",
+  "ki": "A"
+ },
+ "initialSkill": "飛炎剣風",
+ "skillDetail": "A/LV10 確率 70% 防御80%上昇/対象:槍・砲・器\n①防御80%上昇する\n②破壊80%上昇する\n③防御参加武将数×5.6%を防御効果に加算する",
+ "categoryLinks": [
+  {
+   "href": "skills-count-def.html",
+   "label": "人数依存(防)スキル一覧を見る"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "coefficient": "5.6",
+   "effect": "槍・砲・器　確率 70% / 防御 80%上昇+破壊 80%上昇+防御参加武将数依存 5.6%×防御参加武将数(280人)=1568%"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "飛炎剣風",
+   "rank": "A",
+   "afterSkill": "天磐船",
+   "afterRank": "SS",
+   "target": "槍・砲・器",
+   "rate": "70%",
+   "effectShort": "防御80%上昇+破壊80%上昇+防御参加武将数依存5.6%",
+   "afterTarget": "全",
+   "afterRate": "56%",
+   "afterEffectShort": "防御 3.8%×防御参加武将数(280人)=1064.0%"
+  },
+  {
+   "slot": "B",
+   "skill": "飛炎剣風",
+   "rank": "A",
+   "afterSkill": "天磐船",
+   "afterRank": "SS",
+   "target": "槍・砲・器",
+   "rate": "70%",
+   "effectShort": "防御80%上昇+破壊80%上昇+防御参加武将数依存5.6%",
+   "afterTarget": "全",
+   "afterRate": "56%",
+   "afterEffectShort": "防御 3.8%×防御参加武将数(280人)=1064.0%"
+  },
+  {
+   "slot": "C",
+   "skill": "天磐船",
+   "rank": "SS",
+   "afterSkill": "天磐船",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "+56%",
+   "effectShort": "防御(3.8×防御参加武将数)%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "天磐船",
+   "rank": "SS",
+   "afterSkill": "天磐船",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "+56%",
+   "effectShort": "防御(3.8×防御参加武将数)%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "志半ノ矛楯",
+   "rank": "A",
+   "afterSkill": "志半ノ矛楯",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "+65%",
+   "effectShort": "攻撃465%上昇+防御465%上昇(模倣不可)"
+  }
+ ],
+ "notes": [
+  "45do.info+ixagno.blog.fc2.com(blog-entry-10241)確認済み: A/Bの飛炎剣風は移植後「天磐船」に変化(自己参照ではない)"
+ ]
+}

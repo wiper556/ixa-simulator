@@ -1,0 +1,73 @@
+{
+ "name": "乱世ノ歸人",
+ "rank": "A",
+ "baseRate": 50,
+ "target": "部隊長",
+ "effectSummary": "A/LV10 確率 50% 対象:部隊長\n①部隊長の持つ模倣可能な初期スキルを模倣する\n②卓越:追加確率30%で通常攻撃/防御効果を1.2倍にして模倣する",
+ "categoryLinks": [
+  {
+   "href": "skills-leadermimic.html",
+   "label": "部隊長模倣スキル一覧を見る"
+  },
+  {
+   "href": "skills-takuetsu.html",
+   "label": "卓越スキル一覧を見る"
+  }
+ ],
+ "sourceCharacters": [
+  {
+   "name": "伊達成実",
+   "no": "2336",
+   "slot": "S1",
+   "db": "kyoku"
+  },
+  {
+   "name": "宇佐美定満",
+   "no": "2398",
+   "slot": "S1",
+   "db": "kyoku"
+  },
+  {
+   "name": "お市",
+   "no": "2558",
+   "slot": "S1",
+   "db": "kyoku"
+  },
+  {
+   "name": "京極竜子",
+   "no": "2559",
+   "slot": "S1",
+   "db": "kyoku"
+  },
+  {
+   "name": "細川ガラシャ",
+   "no": "2599",
+   "slot": "A",
+   "db": "kyoku"
+  },
+  {
+   "name": "高荷恵",
+   "no": "2610",
+   "slot": "A",
+   "db": "kyoku"
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "入来神舞",
+  "rank": "S"
+ },
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "部隊長　確率 50% / 効果 部隊長の初期スキルを模倣(卓越:追加確率30%で1.2倍)"
+  }
+ ],
+ "notes": [
+  "A-3-9の例外(2026-08-04)により新規作成: 入来神舞[S](独自ページあり)の移植前スキルにあたるため、",
+  "ランクAでもページ作成対象になる。これが無いと入来神舞側のgrantedViaSkillsから逆引きできない。",
+  "ixanary.com(/skills/乱世ノ歸人/)生HTML確認(2026-08-13): LV1 確率+23%・1.02倍 / LV10 確率+50%・1.2倍。TR段階なし。",
+  "合成テーブル1次のS1が入来神舞[S]、2次が飛蝶野分[B]、3次が風狂幻術[B](同ページ)。",
+  "寿桂尼(No.2320)の初期スキル。同武将は当サイト未登録のため、sourceCharactersには合成候補として持つ武将のみを載せる。"
+ ]
+}

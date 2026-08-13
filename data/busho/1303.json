@@ -1,0 +1,117 @@
+{
+ "name": "本多忠勝（2）",
+ "no": "1303",
+ "ch": "31章",
+ "cost": 2.5,
+ "troop": "全攻",
+ "sub": "",
+ "effect": "8部隊以下の攻撃時、卓越確率+480%／部隊内武将の卓越確率+15%",
+ "furigana": "ほんだただかつ",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1303_full.png",
+ "imageChar": "assets/img/characters/no1303_char.png",
+ "atkBase": 1270,
+ "atkGrowth": 73,
+ "defBase": 1080,
+ "defGrowth": 48,
+ "tacticsBase": 670,
+ "tacticsGrowth": 3,
+ "lv0Troops": 4060,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "S",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "武天蜻蛉切",
+ "skillDetail": "S/LV10 確率 100% 攻撃800%上昇/対象:全\n模倣不可\n①攻撃800%上昇する\n②8部隊以下の攻撃戦闘時このスキルを所持する武将の全スキルの卓越追加確率が480%上昇する(同じ列の卓越依存スキルにのみ加算)\n③8部隊以下の攻撃戦闘時部隊内武将全スキルの卓越発動率が15%上昇する(特殊効果は自部隊内では重複不可)",
+ "categoryLinks": [
+  {
+   "href": "skills-takuetsu.html",
+   "label": "卓越スキル一覧を見る"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 攻撃 800%上昇(卓越自己+480%/部隊+15%)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": "全　確率 100% / 攻撃 880%上昇(卓越自己+500%/部隊+16%)"
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": "全　確率 100% / 攻撃 1000%上昇(卓越自己+530%/部隊+17%)"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": "全　確率 100% / 攻撃 1150%上昇(卓越自己+560%/部隊+19%)"
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": "全　確率 100% / 攻撃 1320%上昇(卓越自己+590%/部隊+21%)"
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": "全　確率 100% / 攻撃 1570%上昇(卓越自己+620%/部隊+23%)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "絶無灰尽",
+   "rank": "SS",
+   "afterSkill": "絶無灰尽",
+   "afterRank": "SS",
+   "target": "全 無尽 不屈1",
+   "effectShort": "攻撃1010%上昇+無尽(部隊消費コスト-0.5)"
+  },
+  {
+   "slot": "B",
+   "skill": "焼尽神無",
+   "rank": "SS",
+   "afterSkill": "焼尽神無",
+   "afterRank": "SS",
+   "target": "全 無尽",
+   "effectShort": "攻撃を係数×人数で上昇+無尽(部隊消費コスト-0.5)"
+  },
+  {
+   "slot": "C",
+   "skill": "虚空ノ導",
+   "rank": "SSS",
+   "afterSkill": "虚空ノ導",
+   "afterRank": "SSS",
+   "target": "自身",
+   "effectShort": "卓越:追加確率30%で自身の初期スキルを1.3倍にして模倣"
+  },
+  {
+   "slot": "S1",
+   "skill": "覆天征軍",
+   "rank": "SS",
+   "afterSkill": "覆天征軍",
+   "afterRank": "SS",
+   "target": "全 無尽2",
+   "effectShort": "攻撃900%上昇+無尽2(部隊消費コスト-1.0)"
+  },
+  {
+   "slot": "S2",
+   "skill": "月詠ノ覇威",
+   "rank": "SS",
+   "afterSkill": "月詠ノ覇威",
+   "afterRank": "SS",
+   "target": "全",
+   "effectShort": "攻撃344%上昇+防御344%上昇+自軍卓越確率上昇(模倣不可)"
+  }
+ ],
+ "notes": [
+  "カード画像照合済み(2026-07-30): 槍S/弓S/馬A/器A",
+  "ixanary.com(skills/武天蜻蛉切、合成テーブル欄)+ameameixa.com(【31章】天武将スキルテーブル一覧)の生HTML照合済み(2026-07-31)。両ソースでA〜S2のスキル名が完全一致。"
+ ]
+}

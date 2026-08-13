@@ -1,0 +1,127 @@
+{
+ "name": "毛利輝元（5）",
+ "no": "1306",
+ "ch": "31章",
+ "cost": 5,
+ "troop": "弓砲器攻",
+ "sub": "",
+ "effect": "敵軍部隊数依存",
+ "furigana": "もうりてるもと",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1306_full.png",
+ "imageChar": "assets/img/characters/no1306_char.png",
+ "atkBase": 1270,
+ "atkGrowth": 72,
+ "defBase": 1100,
+ "defGrowth": 51,
+ "tacticsBase": 690,
+ "tacticsGrowth": 3.5,
+ "lv0Troops": 5110,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "S",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "坂西都督",
+ "skillDetail": "S/LV10 確率 45% 攻撃150%上昇/対象:弓・砲・器\n①攻撃150%上昇する(固定値)\n②敵軍部隊数×係数%を攻撃効果に加算する(係数はLV10=30/計算エンジン未対応)\n③TR6(パラレル版)では不屈1を追加取得する",
+ "categoryLinks": [
+  {
+   "href": "skills-fukutsu.html",
+   "label": "不屈スキル一覧を見る"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓・砲・器　確率 45% / 攻撃 150%上昇+敵軍部隊数×30%"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": "弓・砲・器　確率 45% / 攻撃 150%上昇+敵軍部隊数×32%"
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": "弓・砲・器　確率 45% / 攻撃 150%上昇+敵軍部隊数×34%"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": "弓・砲・器　確率 45% / 攻撃 150%上昇+敵軍部隊数×37%"
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": "弓・砲・器　確率 45% / 攻撃 150%上昇+敵軍部隊数×40%"
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": "弓・砲・器　確率 45% / 攻撃 150%上昇+敵軍部隊数×44%"
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": "弓・砲・器 不屈1　確率 45% / 攻撃 150%上昇+敵軍部隊数×45%"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "開闢ノ逆鉾",
+   "rank": "SS",
+   "afterSkill": "開闢ノ逆鉾",
+   "afterRank": "SS",
+   "rate": "100%",
+   "target": "全",
+   "effectShort": "攻撃254%上昇(卓越追加確率30%で兵士被害15%減少)"
+  },
+  {
+   "slot": "B",
+   "skill": "布刀玉ノ策",
+   "rank": "SS",
+   "afterSkill": "布刀玉ノ策",
+   "afterRank": "SS",
+   "rate": "100%",
+   "target": "全 卓越",
+   "effectShort": "攻撃970%上昇+防御970%上昇+卓越確率+22%(TR1)"
+  },
+  {
+   "slot": "C",
+   "skill": "勇冠三軍",
+   "rank": "SSS",
+   "afterSkill": "勇冠三軍",
+   "afterRank": "SSS",
+   "rate": "45%",
+   "target": "全",
+   "effectShort": "攻撃50%上昇+防御参加武将数依存加算"
+  },
+  {
+   "slot": "S1",
+   "skill": "坂西都督",
+   "rank": "S",
+   "afterSkill": "坂西都督",
+   "afterRank": "S",
+   "rate": "45%",
+   "target": "弓・砲・器",
+   "effectShort": "攻撃150%上昇+敵軍部隊数×係数%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "開闢ノ逆鉾",
+   "rank": "SS",
+   "afterSkill": "開闢ノ逆鉾",
+   "afterRank": "SS",
+   "rate": "100%",
+   "target": "全",
+   "effectShort": "攻撃254%上昇(卓越追加確率30%で兵士被害15%減少)"
+  }
+ ],
+ "notes": [
+  "カード画像照合済み(2026-07-30): 槍A/弓S/馬A/器S(旧データはyari/uma・yumi/kiの値が誤って入れ替わっていたため修正)",
+  "ixagno.blog.fc2.com生HTML照合済み(2026-07-31、blog-entry-10827)+ameameixa.com(tenskil-31sho「【31章】天武将スキルテーブル一覧」表のNo.1306行)の両ソースでA/B/C/S1/S2の並びが一致確認済み(2026-08-02)。B枠の移植後スキル(布刀玉ノ策→?)はユーザー確認により布刀玉ノ策(SS)と判明。"
+ ]
+}

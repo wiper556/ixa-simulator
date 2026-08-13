@@ -1,0 +1,99 @@
+{
+ "name": "朝倉義景",
+ "no": "1243",
+ "ch": "26章",
+ "cost": 2,
+ "troop": "槍砲器防",
+ "sub": "飛翔6",
+ "effect": "自拠点防御時は防御効果1.5倍",
+ "furigana": "あさくらよしかげ",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1243_full.png",
+ "imageChar": "assets/img/characters/no1243_char.png",
+ "atkBase": 1060,
+ "atkGrowth": 40,
+ "defBase": 1180,
+ "defGrowth": 65,
+ "tacticsBase": 650,
+ "tacticsGrowth": 3,
+ "lv0Troops": 3600,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "万界寂香",
+ "skillDetail": "S/LV10 確率 45% 防御330%上昇/対象:槍・砲・器　飛翔6\n①防御330%上昇する\n②飛翔6を持つ\n③自拠点防御時は防御効果が1.5倍になる",
+ "categoryLinks": [
+  {
+   "href": "skills-hishou-def.html",
+   "label": "飛翔スキル一覧(防御)を見る"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・砲・器 飛翔6　確率 45% / 防御 330%上昇(自拠点防御時1.5倍)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "万界寂香",
+   "rank": "S",
+   "afterSkill": "思金神ノ深謀",
+   "afterRank": "SS",
+   "rate": "45%",
+   "target": "槍・砲・器 飛翔6",
+   "effectShort": "防御330%上昇(自拠点防御時1.5倍)",
+   "afterTarget": "部隊長",
+   "afterRate": "60%",
+   "afterEffectShort": "卓越追加確率35%・1.3倍"
+  },
+  {
+   "slot": "B",
+   "skill": "禍津日神ノ謀",
+   "rank": "SS",
+   "afterSkill": "禍津日神ノ謀",
+   "afterRank": "SS",
+   "rate": "70%",
+   "target": "全",
+   "effectShort": "防御145%上昇+自部隊の武将ダメージ軽減3%(重複発動上限4)"
+  },
+  {
+   "slot": "C",
+   "skill": "天地黎明",
+   "rank": "SSS",
+   "afterSkill": "天地黎明",
+   "afterRank": "SSS",
+   "rate": "70%",
+   "target": "全",
+   "effectShort": "防御270%上昇+武将HP99以下の時、防御効果が3倍になる"
+  },
+  {
+   "slot": "S1",
+   "skill": "思金神ノ深謀",
+   "rank": "SS",
+   "afterSkill": "思金神ノ深謀",
+   "afterRank": "SS",
+   "rate": "60%",
+   "target": "部隊長",
+   "effectShort": "所属部隊の部隊長が持つ模倣可能な初期スキルを模倣する(卓越:追加確率35%で通常攻撃/防御効果1.3倍にして模倣)"
+  },
+  {
+   "slot": "S2",
+   "skill": "神屋楯比売命",
+   "rank": "SS",
+   "afterSkill": "神屋楯比売命",
+   "afterRank": "SS",
+   "rate": "70%",
+   "target": "自身",
+   "effectShort": "自身が持つ初期スキルを模倣する(戦闘スキルのみ)"
+  }
+ ],
+ "notes": [
+  "synthesisTable: 45do.info生HTML(skiladd_wrap)+ixanary.com(万界寂香スキルページの合成テーブル)で2ソース一致確認済み(2026-08-02)"
+ ]
+}

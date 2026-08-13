@@ -1,0 +1,133 @@
+{
+ "name": "弥助",
+ "no": "2430",
+ "ch": "未確認",
+ "cost": 0.5,
+ "troop": "特",
+ "sub": "",
+ "effect": "所持で自身の「織田信長」の最大指揮兵数に本武将の最大指揮兵数×40%を加算(模倣不可・重複不可)",
+ "furigana": "やすけ",
+ "illustrator": "正子公也",
+ "imageFull": "assets/img/characters/no2430_full.png",
+ "imageChar": "assets/img/characters/no2430_char.png",
+ "atkBase": 800,
+ "atkGrowth": 45,
+ "defBase": 800,
+ "defGrowth": 50,
+ "tacticsBase": 500,
+ "tacticsGrowth": 2,
+ "lv0Troops": 0,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "B",
+  "uma": "B",
+  "ki": "A"
+ },
+ "initialSkill": "漆黒ノ牛鬼",
+ "skillDetail": "A/LV10 カード所持効果/対象:織田信長\n模倣不可・重複不可\n①このカードを所持していると自身の「織田信長」の最大指揮兵数にこの武将の最大指揮兵数×40%が加算される",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "カード所持効果 / 自身の「織田信長」の最大指揮兵数に本武将の最大指揮兵数×40%を加算(模倣不可・重複不可)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": null
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": null
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": null
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": null
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": null
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": null
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "鬼滅刺",
+   "rank": "A",
+   "afterSkill": "布都御魂ノ鬨",
+   "afterRank": "SS",
+   "target": null,
+   "rate": null,
+   "effectShort": null,
+   "afterTarget": "全",
+   "afterRate": "+35%",
+   "afterEffectShort": "攻撃 40%上昇+防御 40%上昇(部隊内レアリティS以上のスキル個数×20%加算)"
+  },
+  {
+   "slot": "B",
+   "skill": "遁世影武者",
+   "rank": "B",
+   "afterSkill": "風林火山",
+   "afterRank": "S",
+   "target": null,
+   "rate": null,
+   "effectShort": null,
+   "afterTarget": "槍・弓・馬",
+   "afterRate": "+25%",
+   "afterEffectShort": "攻撃 15%上昇+破壊5%上昇(TR別データは未確認)"
+  },
+  {
+   "slot": "C",
+   "skill": "風狂幻術",
+   "rank": "B",
+   "afterSkill": "風狂幻術",
+   "afterRank": "B",
+   "target": null,
+   "rate": null,
+   "effectShort": null
+  },
+  {
+   "slot": "S1",
+   "skill": "宿木",
+   "rank": "B",
+   "afterSkill": "宿木",
+   "afterRank": "B",
+   "target": null,
+   "rate": null,
+   "effectShort": null
+  },
+  {
+   "slot": "S2",
+   "skill": "天正筆才",
+   "rank": "A",
+   "afterSkill": null,
+   "afterRank": null,
+   "target": null,
+   "rate": null,
+   "effectShort": null
+  }
+ ],
+ "notes": [
+  "出典: カード画像(LV1形式: 極・統率 槍A/弓B/馬B/器A拡大確認・初期値800/800/500・LV1スキル値。",
+  "  カードは天限突破表示のため指揮2400は不採用。コストはカード上「1」に見えるが",
+  "  B-00の信用6項目にコストは含まれず、ixanaryの0.5を採用)",
+  " + ixanary.com/cards/2430(コスト0.5・指揮0(★0-0)・成長+45/+50/+2.0・LV10: 最大指揮兵数×40%加算)",
+  " + ixawiki BushoCard/2430(統率 槍A/弓B/馬B/器Aの2次確認・合成テーブル)。",
+  "攻撃シミュレーターの「弥助所持」チェックボックス(織田信長の指揮兵士数+240〜960)の元になっているカード。",
+  "統率はカード画像+ixawikiの2ソース一致。スキルはA(鍛錬情報なし)のためTR1以降のeffectはnull。",
+  "合成テーブルはixawiki(1次候補+2次候補)。S2の2次候補は記載なし"
+ ]
+}

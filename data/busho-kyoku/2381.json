@@ -1,0 +1,99 @@
+{
+ "name": "千代",
+ "no": "2381",
+ "ch": "未確認",
+ "cost": 2,
+ "troop": "弓砲器防",
+ "sub": "",
+ "effect": "敵部隊速度に応じ防御上昇",
+ "furigana": "ちよ",
+ "illustrator": "てもし",
+ "imageFull": "assets/img/characters/no2381_full.png",
+ "imageChar": "assets/img/characters/no2381_char.png",
+ "atkBase": 1020,
+ "atkGrowth": 33,
+ "defBase": 1110,
+ "defGrowth": 44,
+ "tacticsBase": 540,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 2610,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "B",
+  "uma": "S",
+  "ki": "A"
+ },
+ "initialSkill": "列侯擁媛",
+ "skillDetail": "A/LV10 確率 36% 対象:弓・砲・器\n①防御が(敵部隊移動速度÷0.7)%上昇する(最も大きい敵部隊移動速度を参照)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓・砲・器　確率 36% / 防御 (敵部隊移動速度÷0.7)%上昇(最大の敵部隊移動速度を参照)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "鬼十河",
+   "rank": "A",
+   "afterSkill": "朝曇ノ明麗",
+   "afterRank": "S",
+   "target": "槍・砲・器",
+   "rate": "+15%",
+   "effectShort": "防御120%上昇+所領防御陣形配置時コスト消費-1(模倣不可)",
+   "afterTarget": "全",
+   "afterRate": "46%",
+   "afterEffectShort": "防御 290%上昇(所領防御陣形第4列配置時1.5倍+飛翔7取得・模倣不可、TR別データは未確認)"
+  },
+  {
+   "slot": "B",
+   "skill": "列侯擁媛",
+   "rank": "A",
+   "afterSkill": "志半ノ矛楯",
+   "afterRank": "A",
+   "target": "弓・砲・器",
+   "rate": "36%",
+   "effectShort": "防御(敵部隊移動速度÷0.7)%上昇(最大の敵部隊移動速度を参照)",
+   "afterTarget": "全",
+   "afterRate": "+65%",
+   "afterEffectShort": "攻撃465%上昇+防御465%上昇(模倣不可)"
+  },
+  {
+   "slot": "C",
+   "skill": "列侯擁媛",
+   "rank": "A",
+   "afterSkill": "志半ノ矛楯",
+   "afterRank": "A",
+   "target": "弓・砲・器",
+   "rate": "36%",
+   "effectShort": "防御(敵部隊移動速度÷0.7)%上昇(最大の敵部隊移動速度を参照)",
+   "afterTarget": "全",
+   "afterRate": "+65%",
+   "afterEffectShort": "攻撃465%上昇+防御465%上昇(模倣不可)"
+  },
+  {
+   "slot": "S1",
+   "skill": "志半ノ矛楯",
+   "rank": "A",
+   "afterSkill": "志半ノ矛楯",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "+65%",
+   "effectShort": "攻撃465%上昇+防御465%上昇(模倣不可)"
+  },
+  {
+   "slot": "S2",
+   "skill": "志半ノ矛楯",
+   "rank": "A",
+   "afterSkill": "志半ノ矛楯",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "+65%",
+   "effectShort": "攻撃465%上昇+防御465%上昇(模倣不可)"
+  }
+ ],
+ "notes": [
+  "45do.info+ixagno.blog.fc2.com(blog-entry-10007)確認済み: Aの鬼十河は移植後「朝曇ノ明麗」[S]に、B/Cの列侯擁媛は移植後「志半ノ矛楯」に変化(自己参照ではない)"
+ ]
+}

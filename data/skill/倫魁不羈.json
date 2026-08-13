@@ -1,0 +1,34 @@
+{
+ "name": "倫魁不羈",
+ "rank": "S",
+ "baseRate": 55,
+ "target": "槍・弓・馬・砲",
+ "effectSummary": "S/LV10 確率 55% 攻撃(4×防御参加武将数)%上昇/対象:槍・弓・馬・砲\n①対象兵科(槍・弓・馬・砲)を指揮した戦闘時攻撃力が(4×防御参加武将数)%上昇する(TR1〜TR5は未確認)",
+ "categoryLinks": [
+  {
+   "href": "skills-count-atk.html",
+   "label": "人数依存(攻)スキル一覧を見る"
+  }
+ ],
+ "sourceCharacters": [
+  {
+   "name": "水野勝成",
+   "no": "1236",
+   "slot": "A"
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "十束ノ神域",
+  "rank": "SS"
+ },
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・弓・馬・砲　確率 55% / 攻撃 4%×防御参加武将数(280人)=1120%"
+  }
+ ],
+ "notes": [
+  "No.1236(水野勝成)自身の初期スキル。自己参照(synthesisTable Aスロット)のため無条件でページ作成"
+ ]
+}

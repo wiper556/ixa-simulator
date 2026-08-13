@@ -1,0 +1,71 @@
+{
+ "name": "土井利勝",
+ "no": "7022",
+ "ch": "未確認",
+ "cost": 4.5,
+ "troop": "砲器攻",
+ "sub": "",
+ "effect": "自部隊同時攻撃時、合流自部隊数-2の不屈を得る",
+ "furigana": "どいとしかつ",
+ "illustrator": "末冨正直",
+ "imageFull": "assets/img/characters/no7022_full.png",
+ "imageChar": "assets/img/characters/no7022_char.png",
+ "atkBase": 1160,
+ "atkGrowth": 46,
+ "defBase": 1030,
+ "defGrowth": 33,
+ "tacticsBase": 530,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 4290,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "B",
+  "ki": "S"
+ },
+ "initialSkill": "万機泰平",
+ "skillDetail": "A/LV10 確率 40% 攻撃600%上昇/対象:砲・器\n①攻撃600%上昇する\n②自部隊同時攻撃時この武将は合流自部隊数-2の不屈を得る(特殊効果は模倣不可)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "砲・器　確率 40% / 攻撃 600%上昇(自部隊同時攻撃時に合流自部隊数-2の不屈)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "御旗ノ守護者",
+   "rank": "A"
+  },
+  {
+   "slot": "B",
+   "skill": "破克閃剣",
+   "rank": "A"
+  },
+  {
+   "slot": "C",
+   "skill": "星詠ム仁将",
+   "rank": "A"
+  },
+  {
+   "slot": "S1",
+   "skill": "万機泰平",
+   "rank": "A"
+  },
+  {
+   "slot": "S2",
+   "skill": "志半ノ矛楯",
+   "rank": "A",
+   "target": "全",
+   "rate": "+65%",
+   "effectShort": "攻撃465%上昇+防御465%上昇(模倣不可)"
+  }
+ ],
+ "notes": [
+  "ixanary.comにカード・スキルページとも未掲載(2026-08-08時点)のため別ソースで確定。",
+  "合成候補は ameblo.jp/kotodaixa/entry-12971894278 の",
+  "候補スキル1〜3=A/B/C、隠し候補スキル=S1、同一No合成スキル=S2 の対応で登録。",
+  "同記事は移植後(2次)を載せていないため afterSkill は入れていない。"
+ ]
+}

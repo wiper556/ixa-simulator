@@ -1,0 +1,131 @@
+{
+ "name": "上杉謙信-復刻-【覇】",
+ "no": "10074",
+ "ch": "31章",
+ "cost": 4,
+ "troop": "全攻",
+ "sub": "",
+ "effect": "攻防上昇／飛翔値として所属部隊内の飛翔値合計+10を得る",
+ "furigana": "うえすぎけんしん",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no10074_full.png",
+ "imageChar": "assets/img/characters/no10074_char.png",
+ "atkBase": 1280,
+ "atkGrowth": 81,
+ "defBase": 1280,
+ "defGrowth": 81,
+ "tacticsBase": 840,
+ "tacticsGrowth": 4,
+ "lv0Troops": 4450,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "S",
+  "uma": "A",
+  "ki": "X"
+ },
+ "initialSkill": "神気煌龍",
+ "skillDetail": "SSS/LV10 確率 100% 攻撃970%上昇/対象:全\n①攻撃970%上昇する\n②防御970%上昇する\n③この武将は飛翔｛所属部隊内の他武将が戦闘時に持つ飛翔値の合計+10｝を得る(特殊効果は模倣不可)",
+ "categoryLinks": [
+  {
+   "href": "skills-hishou-atk.html",
+   "label": "飛翔スキル一覧(攻撃)を見る"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 攻撃970%上昇+防御970%上昇(飛翔+10)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": "全　確率 100% / 攻撃1060%上昇+防御1060%上昇(飛翔+11)"
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": "全　確率 100% / 攻撃1160%上昇+防御1160%上昇(飛翔+13)"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": "全　確率 100% / 攻撃1270%上昇+防御1270%上昇(飛翔+15)"
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": "全　確率 100% / 攻撃1390%上昇+防御1390%上昇(飛翔+17)"
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": "全　確率 100% / 攻撃1530%上昇+防御1530%上昇(飛翔+20)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "轟渦ノ神将",
+   "rank": "S",
+   "afterSkill": "轟渦ノ神将",
+   "afterRank": "S",
+   "rate": "50%",
+   "target": "全",
+   "effectShort": "防御500%上昇+兵士補正0.8倍"
+  },
+  {
+   "slot": "B",
+   "skill": "八幡神ノ威光",
+   "rank": "SSS",
+   "afterSkill": "八幡神ノ威光",
+   "afterRank": "SSS",
+   "rate": "70%",
+   "target": "部隊長",
+   "effectShort": "部隊長の初期スキルを1.25倍模倣"
+  },
+  {
+   "slot": "C",
+   "skill": "幻像鏡花",
+   "rank": "SSS",
+   "afterSkill": "幻像鏡花",
+   "afterRank": "SSS",
+   "rate": "56%",
+   "target": "部隊長",
+   "effectShort": "部隊長の初期スキルを模倣(卓越時1.35倍)"
+  },
+  {
+   "slot": "S1",
+   "skill": "神機采配",
+   "rank": "S",
+   "afterSkill": "従魔絶神",
+   "afterRank": "SSS",
+   "rate": "50%",
+   "target": "全 飛翔9",
+   "effectShort": "防御 420%上昇(飛翔+4/敵軍飛翔最高-5)",
+   "afterTarget": "全 飛翔13",
+   "afterRate": "43%",
+   "afterEffectShort": "防御 9.4%×防御参加武将数(280人)=2632.0%"
+  },
+  {
+   "slot": "S2",
+   "skill": "王花尖剣",
+   "rank": "S",
+   "afterSkill": "國才連豪",
+   "afterRank": "SS",
+   "rate": "64%",
+   "target": "槍・馬・砲・器 飛翔10",
+   "effectShort": "防御 320%+（飛翔値合計×10%）上昇",
+   "afterTarget": "全",
+   "afterRate": "50%",
+   "afterEffectShort": "防御 310%×國才連豪所持武将数(4人)=1240.0%上昇"
+  }
+ ],
+ "notes": [
+  "カード画像照合済み(2026-07-30): 槍A/弓S/馬A/器X",
+  "ixagno.blog.fc2.com生HTML照合済み(2026-07-29、blog-entry-11098の合成テーブルで初期テーブル/移植後の対応を確認)。",
+  "A/B/Cは初期テーブル=移植後で同一。S1/S2は移植後(afterSkill)の性能をrate/target/effectShortに反映(神機采配の効果詳細は45do.info/ordinary/0337「白井入道浄三」記事、skills.html記載の既存データで確認)。",
+  "2026-07-31再検証: 45do.info(最新記事は2025年12月付#0386までで31章カード自体の記事が無い、サイト内検索「上杉謙信」も0件)・ixanary.com(サイト全面リニューアル後、/cards/10074/は404で31章カード未収録)はいずれも本カード用の合成テーブル記事なし。ixagno.blog.fc2.com生HTML(blog-entry-11098)を再取得し下記5枠のslot/skill/rank/afterSkill・統率4バッジ(槍A/弓S/馬A/器X)・ステータス成長値(攻81/防81/兵法4.0)・trTable全行を再照合し完全一致を確認済み(45do.info/ixanary.comとの二重ソース確認は現状不可、要ユーザー確認)。",
+  "2026-08-02追加調査: ameameixa.com(bushocard-10074が404)も記事なしを確認。第二ソース発見できず単一ソース(ixagno)のまま、黄丸化は見送り。"
+ ]
+}

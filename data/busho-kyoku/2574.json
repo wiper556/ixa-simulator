@@ -1,0 +1,130 @@
+{
+ "name": "茶々",
+ "no": "2574",
+ "ch": "未確認",
+ "cost": 3.5,
+ "troop": "追加スキル攻速",
+ "sub": "",
+ "effect": "追加スキルの攻撃・速度効果が2倍(模倣不可)",
+ "furigana": "ちゃちゃ",
+ "illustrator": "BISAI",
+ "imageFull": "assets/img/characters/no2574_full.png",
+ "imageChar": "assets/img/characters/no2574_char.png",
+ "atkBase": 1160,
+ "atkGrowth": 57,
+ "defBase": 1120,
+ "defGrowth": 50,
+ "tacticsBase": 520,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 4160,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "天華爛漫",
+ "skillDetail": "S/LV10 確率 100% 追加スキルの攻撃・速度効果2倍/対象:追加スキル\n模倣不可\n①このスキルを持つ武将カードは追加スキルの攻撃・速度効果が2倍となる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "追加スキル　確率 100% / 追加スキルの攻撃・速度効果2倍(模倣不可)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": null
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": null
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": null
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": null
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": null
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": null
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "不滅ノ鬼神",
+   "rank": "S",
+   "afterSkill": "朧雲ノ閃撃",
+   "afterRank": "SSS",
+   "target": null,
+   "rate": null,
+   "effectShort": null,
+   "afterTarget": "全",
+   "afterRate": "+100%",
+   "afterEffectShort": "攻撃170%上昇+速度240%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "天之尾羽張",
+   "rank": "SS",
+   "afterSkill": "天之尾羽張",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "+100%",
+   "effectShort": "攻撃170%上昇+速度150%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "神光征軍",
+   "rank": "SS",
+   "afterSkill": "神光征軍",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "+100%",
+   "effectShort": "攻撃90%上昇+速度200%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "朧雲ノ閃撃",
+   "rank": "SSS",
+   "afterSkill": "朧雲ノ閃撃",
+   "afterRank": "SSS",
+   "target": "全",
+   "rate": "+100%",
+   "effectShort": "攻撃170%上昇+速度240%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "神光征軍",
+   "rank": "SS",
+   "afterSkill": "神光征軍",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "+100%",
+   "effectShort": "攻撃90%上昇+速度200%上昇"
+  }
+ ],
+ "notes": [
+  "出典: カード画像(LV1形式: 極・統率 槍A/弓A/馬A/器S拡大確認・初期値1160/1120/520・コスト3.5・LV1スキル値。",
+  "  天限突破表示のため指揮6360は不採用、ixanaryの★0-0=4160を使用(B-00ルール))",
+  " + ixanary.com/cards/2574(成長+57/+50/+2.5・LV10: 追加スキルの攻撃・速度効果2倍・模倣不可。",
+  "   戦国幻包み【華】パック・絵師 BISAI)",
+  " + ixawiki BushoCard/2574(統率2次確認・合成テーブル1次/2次候補+候補スキルのLV10効果)。",
+  "統率はカード画像+ixawikiの2ソース一致。初期スキルがSランクのためスキル個別ページの新規作成が必要",
+  "(docsのTODOに記録済み)。",
+  "合成テーブルはixawiki(1次候補+2次候補+候補スキルのLV10効果)"
+ ]
+}

@@ -1,0 +1,139 @@
+{
+ "name": "沢下条張",
+ "no": "2613",
+ "ch": "未確認",
+ "cost": 3,
+ "troop": "槍砲器攻速破",
+ "sub": "",
+ "effect": "攻撃400%上昇+破壊120%上昇+速度120%上昇",
+ "furigana": "さわげじょうちょう",
+ "illustrator": "NW/S,RKKD",
+ "imageFull": "assets/img/characters/no2613_full.png",
+ "imageChar": "assets/img/characters/no2613_char.png",
+ "atkBase": 1910,
+ "atkGrowth": 142,
+ "defBase": 1840,
+ "defGrowth": 136,
+ "tacticsBase": 510,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3340,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "B",
+  "ki": "S"
+ },
+ "initialSkill": "我流大蛇",
+ "skillDetail": "A/LV10 確率 100% 攻撃400%上昇/対象:槍・砲・器\n①攻撃400%上昇する\n②破壊120%上昇する\n③速度120%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・砲・器　確率 100% / 攻撃 400%上昇+破壊 120%上昇+速度 120%上昇"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": null
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": null
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": null
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": null
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": null
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": null
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "我流大蛇",
+   "rank": "A",
+   "afterSkill": "戦陣 勝鬨",
+   "afterRank": "A",
+   "target": "槍・砲・器",
+   "rate": "+100%",
+   "effectShort": "攻撃400%上昇+破壊120%上昇+速度120%上昇",
+   "afterTarget": "全",
+   "afterRate": "+35%",
+   "afterEffectShort": "攻撃77%上昇+防御77%上昇+速度40%上昇(速度のみ確率100%)"
+  },
+  {
+   "slot": "B",
+   "skill": "我流大蛇",
+   "rank": "A",
+   "afterSkill": "戦陣 勝鬨",
+   "afterRank": "A",
+   "target": "槍・砲・器",
+   "rate": "+100%",
+   "effectShort": "攻撃400%上昇+破壊120%上昇+速度120%上昇",
+   "afterTarget": "全",
+   "afterRate": "+35%",
+   "afterEffectShort": "攻撃77%上昇+防御77%上昇+速度40%上昇(速度のみ確率100%)"
+  },
+  {
+   "slot": "C",
+   "skill": "我流大蛇",
+   "rank": "A",
+   "afterSkill": "戦陣 勝鬨",
+   "afterRank": "A",
+   "target": "槍・砲・器",
+   "rate": "+100%",
+   "effectShort": "攻撃400%上昇+破壊120%上昇+速度120%上昇",
+   "afterTarget": "全",
+   "afterRate": "+35%",
+   "afterEffectShort": "攻撃77%上昇+防御77%上昇+速度40%上昇(速度のみ確率100%)"
+  },
+  {
+   "slot": "S1",
+   "skill": "戦陣 勝鬨",
+   "rank": "A",
+   "afterSkill": "天岩戸ノ神域",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "+35%",
+   "effectShort": "攻撃77%上昇+防御77%上昇+速度40%上昇(速度のみ確率100%)",
+   "afterTarget": "全",
+   "afterRate": "+70%",
+   "afterEffectShort": "攻撃 2.8%×防御参加武将数(280人)=784.0%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "志半ノ矛楯",
+   "rank": "A",
+   "afterSkill": "志半ノ矛楯",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "+65%",
+   "effectShort": "攻撃465%上昇+防御465%上昇(模倣不可)"
+  }
+ ],
+ "notes": [
+  "出典: カード画像(LV1形式: 極・職業「剣」・統率 槍A/弓A/馬B/器S拡大確認・初期値1910/1840/510.0・コスト3・覇表記なし)",
+  " + ixanary.com/cards/2613(指揮3340(★0-0)・成長+142/+136/+2.5・LV10: 確率+100%/槍砲器/",
+  "   攻撃400%・破壊120%・速度120%。絵師 ©NW／S,RKKD。るろうに剣心コラボ)",
+  " + ixawiki BushoCard/2613沢下条張(コスト3.0・指揮3340・統率 槍A/馬B/弓A/器Sが一致)。",
+  "カード上の指揮4140は極限突破済み表示のため、B-01どおりixanaryの★0-0=3340を採用。",
+  "TR別の数値はixanary・ixawikiのどちらにも記載が無い。",
+  "攻撃・破壊・速度が同時に動くので[[feedback_multistat_trtable_rule]]どおりtrTableに3つとも書く。",
+  "合成テーブルはixanaryスキルページ「我流大蛇」とixawiki BushoCard/2613の1次/2次候補が完全一致(2ソース)"
+ ]
+}

@@ -1,0 +1,76 @@
+{
+ "name": "岳王ノ加護",
+ "rank": "SS",
+ "baseRate": 50,
+ "target": "全 無尽",
+ "hasMujin": true,
+ "effectSummary": "SS/LV10 確率 50% 防御上昇/対象:全　無尽\n①(係数×防御参加武将数)%を防御効果に加算する\n②無尽を持つため部隊消費コストを-0.5する",
+ "categoryLinks": [
+  {
+   "href": "skills-count-def.html",
+   "label": "人数依存(防)スキル一覧を見る"
+  },
+  {
+   "href": "skills-mujin.html",
+   "label": "無尽スキル一覧を見る"
+  },
+  {
+   "href": "skills-cost.html",
+   "label": "コスト減少スキル一覧を見る"
+  }
+ ],
+ "sourceCharacters": [
+  {
+   "name": "石田三成（7）【覇】",
+   "no": "1299",
+   "slot": "S1"
+  },
+  {
+   "name": "尼子経久（3）",
+   "no": "1316",
+   "slot": "S1"
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "岳王ノ加護",
+  "rank": "SS"
+ },
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "coefficient": "10",
+   "effect": "全 無尽　確率 50% / 防御 10%×防御参加武将数(280人)=2800.0%"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "coefficient": "10.5",
+   "effect": "全 無尽　確率 50% / 防御 10.5%×防御参加武将数(280人)=2940.0%"
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "coefficient": "11.2",
+   "effect": "全 無尽　確率 50% / 防御 11.2%×防御参加武将数(280人)=3136.0%"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "coefficient": "12.2",
+   "effect": "全 無尽　確率 50% / 防御 12.2%×防御参加武将数(280人)=3416.0%"
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "coefficient": "13.5",
+   "effect": "全 無尽　確率 50% / 防御 13.5%×防御参加武将数(280人)=3780.0%"
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "coefficient": "15",
+   "effect": "全 無尽　確率 50% / 防御 15%×防御参加武将数(280人)=4200.0%"
+  }
+ ]
+}

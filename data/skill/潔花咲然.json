@@ -1,0 +1,41 @@
+{
+ "name": "潔花咲然",
+ "rank": "S",
+ "baseRate": 45,
+ "target": "部隊長",
+ "effectSummary": "S/LV10 確率 45% 対象:部隊長\n①部隊長の持つ模倣可能な初期スキルを模倣する\n②卓越:追加確率30%で通常攻撃/防御効果を1.15倍にして模倣する\n③自部隊の帰還時間が2分を超えるとき2分で帰還できる(確率100%)",
+ "categoryLinks": [
+  {
+   "href": "skills-leadermimic.html",
+   "label": "部隊長模倣スキル一覧を見る"
+  },
+  {
+   "href": "skills-takuetsu.html",
+   "label": "卓越スキル一覧を見る"
+  }
+ ],
+ "sourceCharacters": [
+  {
+   "name": "細川幽斎-復刻-【天】",
+   "no": "10070",
+   "slot": "B"
+  },
+  {
+   "name": "細川ガラシャ",
+   "no": "2599",
+   "slot": "C",
+   "db": "kyoku"
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "舞蝶朧月",
+  "rank": "S"
+ },
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "部隊長　確率 45% / 卓越追加確率30%・1.15倍(帰還時間短縮は別枠 確率100%)"
+  }
+ ]
+}

@@ -1,0 +1,114 @@
+{
+ "name": "森長可",
+ "no": "7015",
+ "ch": "未確認",
+ "cost": 3.5,
+ "troop": "槍器鉄防",
+ "sub": "",
+ "effect": "所領防御陣形の第伍列目配置時、防御効果5倍",
+ "furigana": "もりながよし",
+ "illustrator": "JaneMere",
+ "imageFull": "assets/img/characters/no7015_full.png",
+ "imageChar": "assets/img/characters/no7015_char.png",
+ "atkBase": 1030,
+ "atkGrowth": 33,
+ "defBase": 1170,
+ "defGrowth": 48,
+ "tacticsBase": 540,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3790,
+ "rankGrades": {
+  "yari": "SS",
+  "yumi": "B",
+  "uma": "B",
+  "ki": "A"
+ },
+ "initialSkill": "人間無骨",
+ "skillDetail": "A/LV10 確率 45% 防御170%上昇/対象:槍・器・鉄\n模倣不可\n①防御170%上昇する\n②所領防御陣形の第伍列目に配置時防御効果が5倍になる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・器・鉄　確率 45% / 防御 170%上昇(所領防御陣形の第伍列目配置時5倍)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": "槍・器・鉄　確率 45% / 防御 190%上昇(所領防御陣形の第伍列目配置時5倍)"
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": "槍・器・鉄　確率 45% / 防御 220%上昇(所領防御陣形の第伍列目配置時5倍)"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": null
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": null
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": null
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "鬼滅刺",
+   "rank": "A",
+   "afterSkill": "布都御魂ノ鬨",
+   "afterRank": "SS",
+   "afterTarget": "全",
+   "afterRate": "35%",
+   "afterEffectShort": "攻撃20%上昇+防御20%上昇(部隊内S以上スキル数×20%)"
+  },
+  {
+   "slot": "B",
+   "skill": "武神ノ采配",
+   "rank": "A",
+   "afterSkill": "武神ノ采配",
+   "afterRank": "A",
+   "target": "馬・砲・器",
+   "rate": "56%",
+   "effectShort": "防御95%上昇(拠点待機90分毎に1.5倍・上限5回)"
+  },
+  {
+   "slot": "C",
+   "skill": "覇軍ノ勇士",
+   "rank": "A",
+   "afterSkill": "戦陣 神楽",
+   "afterRank": "A",
+   "afterTarget": "全 飛翔4",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 77%上昇(卓越:追加確率30%で2倍)"
+  },
+  {
+   "slot": "S1",
+   "skill": "人間無骨",
+   "rank": "A",
+   "afterSkill": "人間無骨",
+   "afterRank": "A"
+  },
+  {
+   "slot": "S2",
+   "skill": "志半ノ矛楯",
+   "rank": "A",
+   "afterSkill": "志半ノ矛楯",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "+65%",
+   "effectShort": "攻撃465%上昇+防御465%上昇(模倣不可)"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/7015 と skills/人間無骨 の生HTML)で確認(2026-08-08)。",
+  "合成テーブルはスキルページの1次(=移植前)・2次(=移植後)から取得。",
+  "候補スキルの対象・確率・効果はサイト内の既存登録から転記(未登録のスキルは空のまま)。"
+ ]
+}

@@ -1,0 +1,133 @@
+{
+ "name": "石田三成",
+ "no": "1277",
+ "ch": "29章",
+ "cost": 4.5,
+ "troop": "全攻防",
+ "sub": "飛翔17",
+ "effect": "-",
+ "furigana": "いしだみつなり",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1277_full.png",
+ "imageChar": "assets/img/characters/no1277_char.png",
+ "atkBase": 1240,
+ "atkGrowth": 67,
+ "defBase": 1240,
+ "defGrowth": 67,
+ "tacticsBase": 690,
+ "tacticsGrowth": 3.5,
+ "lv0Troops": 4830,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "S",
+  "uma": "S",
+  "ki": "A"
+ },
+ "initialSkill": "義陣絶刀",
+ "skillDetail": "S/LV10 確率 55% 攻撃840%上昇 防御840%上昇/対象:全　飛翔17",
+ "categoryLinks": [
+  {
+   "href": "skills-hishou-atk.html",
+   "label": "飛翔スキル一覧(攻撃)を見る"
+  },
+  {
+   "href": "skills-hishou-def.html",
+   "label": "飛翔スキル一覧(防御)を見る"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全 飛翔17　確率 55% / 攻撃 840%上昇 防御 840%上昇"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": "全　確率 55% / 飛翔17 攻撃920%上昇 防御920%上昇"
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": "全　確率 55% / 飛翔17 攻撃1040%上昇 防御1040%上昇"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": "全　確率 55% / 飛翔17 攻撃1210%上昇 防御1210%上昇"
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": "全　確率 55% / 飛翔17 攻撃1440%上昇 防御1440%上昇"
+  },
+  {
+   "level": "TR5",
+   "points": "最大鍛錬",
+   "effect": "全 飛翔17　確率 55% / 攻撃 1750%上昇 防御 1750%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "義陣絶刀",
+   "rank": "S",
+   "afterSkill": "國才連豪",
+   "afterRank": "SS",
+   "rate": "55%",
+   "target": "全 飛翔17",
+   "effectShort": "攻撃840%上昇+防御840%上昇",
+   "afterTarget": "全",
+   "afterRate": "50%",
+   "afterEffectShort": "防御 310%×國才連豪所持武将数(4人)=1240.0%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "義陣絶刀",
+   "rank": "S",
+   "afterSkill": "國才連豪",
+   "afterRank": "SS",
+   "rate": "55%",
+   "target": "全 飛翔17",
+   "effectShort": "攻撃840%上昇+防御840%上昇",
+   "afterTarget": "全",
+   "afterRate": "50%",
+   "afterEffectShort": "防御 310%×國才連豪所持武将数(4人)=1240.0%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "國才連豪",
+   "rank": "SS",
+   "afterSkill": "國才連豪",
+   "afterRank": "SS",
+   "rate": "50%",
+   "target": "全",
+   "effectShort": "防御が係数×同スキル所持武将数で上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "國才連豪",
+   "rank": "SS",
+   "afterSkill": "國才連豪",
+   "afterRank": "SS",
+   "rate": "50%",
+   "target": "全",
+   "effectShort": "防御が係数×同スキル所持武将数で上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "四天轟雷",
+   "rank": "SS",
+   "afterSkill": "四天轟雷",
+   "afterRank": "SS",
+   "rate": "100%",
+   "target": "全",
+   "effectShort": "攻防360%上昇+砲・器対象追加"
+  }
+ ],
+ "notes": [
+  "カード画像照合済み: 槍A/弓S/馬S/器A",
+  "ixanary.com生HTML照合(2026-08-02): カード画像のスキル欄にLV10とTR5(鍛錬)の2枠のみ表示されており、TR1〜TR4は実在しない。",
+  "45do.info(ordinary/0316)生HTML照合+ameameixa.com(post-12334「29章天武将スキル一覧」表のNo.1277行)の両ソースでA/B/C/S1/S2の並びが一致確認済み。A/Bは自身の初期スキル(義陣絶刀)がそのまま候補になる自己参照枠。"
+ ]
+}

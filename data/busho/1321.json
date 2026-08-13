@@ -1,0 +1,138 @@
+{
+ "name": "六角定頼",
+ "no": "1321",
+ "furigana": "ろっかくさだより",
+ "ch": "32章",
+ "cost": 5.5,
+ "troop": "弓馬焙騎攻",
+ "sub": "",
+ "effect": "自軍城主数10以上で攻撃効果3倍",
+ "illustrator": "直良有祐",
+ "articles": [
+  {
+   "href": "blog-rokkaku-sadayori.html",
+   "title": "六角定頼は無課金の星になれるか？",
+   "date": "2026年8月11日",
+   "excerpt": "32章が始まって、すでに数日経過。いろんなところで新天の考察が進んでいますが、私は六角定頼模倣部隊について検証していきます。効果を見る限り盟主戦のイメージがつきやすいですが、少数精鋭系の小規模同盟や影武者狩り、32章から追加された蔵攻撃にも有用です。",
+   "thumb": "assets/img/characters/no1321_full.png"
+  }
+ ],
+ "imageFull": "assets/img/characters/no1321_full.png",
+ "imageChar": "assets/img/characters/no1321_char.png",
+ "atkBase": 1260,
+ "atkGrowth": 73,
+ "defBase": 1080,
+ "defGrowth": 48,
+ "tacticsBase": 690,
+ "tacticsGrowth": 3.5,
+ "lv0Troops": 5340,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "S",
+  "uma": "S",
+  "ki": "A"
+ },
+ "initialSkill": "天弦ノ威軍",
+ "skillDetail": "S/LV10 確率 45% 攻撃1000%上昇/対象:弓・馬・焙・騎　不屈1\n①攻撃1000%上昇する\n②自軍城主数が10以上で攻撃効果が3倍になる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓・馬・焙・騎 不屈1　確率 45% / 攻撃 1000%上昇(自軍城主数10以上で3倍)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": "弓・馬・焙・騎 不屈1　確率 45% / 攻撃 1060%上昇(自軍城主数10以上で3倍)"
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": "弓・馬・焙・騎 不屈1　確率 45% / 攻撃 1120%上昇(自軍城主数10以上で3倍)"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": "弓・馬・焙・騎 不屈1　確率 45% / 攻撃 1200%上昇(自軍城主数10以上で3倍)"
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": "弓・馬・焙・騎 不屈1　確率 45% / 攻撃 1300%上昇(自軍城主数10以上で3倍)"
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": "弓・馬・焙・騎 不屈1　確率 45% / 攻撃 1400%上昇(自軍城主数10以上で3倍)"
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": "弓・馬・焙・騎 不屈2　確率 55% / 攻撃 1450%上昇(自軍城主数10以上で3倍)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "天地超克",
+   "rank": "SSS",
+   "afterSkill": "天地超克",
+   "afterRank": "SSS",
+   "target": "全 不屈1",
+   "rate": "46%",
+   "effectShort": "攻撃を係数×人数で上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "勇冠三軍",
+   "rank": "SSS",
+   "afterSkill": "勇冠三軍",
+   "afterRank": "SSS",
+   "target": "全",
+   "rate": "45%",
+   "effectShort": "攻撃50%+係数×人数で上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "摩利支天ノ法",
+   "rank": "SSS",
+   "afterSkill": "摩利支天ノ法",
+   "afterRank": "SSS",
+   "target": "部隊長",
+   "rate": "70%",
+   "effectShort": "部隊長の初期スキルを1.25倍模倣"
+  },
+  {
+   "slot": "S1",
+   "skill": "天弦ノ威軍",
+   "rank": "S",
+   "afterSkill": "天弦ノ威軍",
+   "afterRank": "S",
+   "target": "弓・馬・焙・騎 不屈1",
+   "rate": "+45%",
+   "effectShort": "攻撃1000%上昇(自軍城主数10以上で3倍)"
+  },
+  {
+   "slot": "S2",
+   "skill": "万物神勇",
+   "rank": "SSS",
+   "afterSkill": "万物神勇",
+   "afterRank": "SSS",
+   "target": "全 撤退",
+   "rate": "43%",
+   "effectShort": "攻撃を係数×人数で上昇"
+  }
+ ],
+ "notes": [
+  "関連記事(汎用フィールド)。抜粋は記事本文の書き出しをそのまま使う(blog.htmlのカードと同じ方針)",
+  "画像はixagno記事掲載のカード画像から切り出した(JPEG劣化のためハート検出はTOL=50)。",
+  "【2026-08-12】鍛錬表の書き方をLV10行(サイト共通書式)に統一。以前はTR1〜TR5だけ",
+  " 出典サイトの生テキストのままで、読点や項目の並びが他の武将と揃っていなかった。",
+  " TR6は通常カードのページには載っておらず、パラレル天カード(No.30000+元No.)の",
+  " ixanary.com/cards/3xxxx/ にのみ記載がある。そこから取得した。",
+  "2026-08-07開幕の32章新天。ixanary.comは2026-08-08時点で未対応(cards/1321 は404)のため",
+  "別ソースで確定させた。スキル名・作家名は公式ニュース(スクウェア・エニックス発表)、",
+  "コスト/指揮兵数/成長値は ixagno.blog.fc2.com【天】武将一覧、",
+  "基礎値・兵科適性・LV10効果・鍛錬表・合成テーブルは同サイトの個別記事(blog-entry-11140)。"
+ ]
+}

@@ -1,0 +1,127 @@
+{
+ "name": "大道寺政繁",
+ "no": "2386",
+ "ch": "29章",
+ "cost": 4,
+ "troop": "防",
+ "sub": "",
+ "effect": "追加スキルの防御・破壊効果が2倍(模倣不可)",
+ "furigana": "だいどうじまさしげ",
+ "illustrator": "青空あおい",
+ "imageFull": "assets/img/characters/no2386_full.png",
+ "imageChar": "assets/img/characters/no2386_char.png",
+ "atkBase": 1000,
+ "atkGrowth": 29,
+ "defBase": 1140,
+ "defGrowth": 47,
+ "tacticsBase": 550,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3970,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "応穏ノ守護者",
+ "skillDetail": "A/LV10 確率 100% 対象:追加スキル\n模倣不可\n①このスキルを持つ武将カードは追加スキルの防御・破壊効果が2倍となる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "追加スキル　確率 100% / 防御・破壊効果 2倍"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": "追加スキル　確率 100% / 防御・破壊効果 2.1倍"
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": "追加スキル　確率 100% / 防御・破壊効果 2.2倍"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": null
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": null
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": null
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "豊家ノ滅塞",
+   "rank": "B",
+   "afterSkill": "籠城の妙技",
+   "afterRank": "A",
+   "target": "弓・砲・器",
+   "rate": "+42%",
+   "effectShort": "防御15%上昇(部隊の総コストで変動)",
+   "afterTarget": "全",
+   "afterRate": "+100%",
+   "afterEffectShort": "防御50%上昇(卓越:追加確率15%で3倍)"
+  },
+  {
+   "slot": "B",
+   "skill": "豊家ノ滅塞",
+   "rank": "B",
+   "afterSkill": "籠城の妙技",
+   "afterRank": "A",
+   "target": "弓・砲・器",
+   "rate": "+42%",
+   "effectShort": "防御15%上昇(部隊の総コストで変動)",
+   "afterTarget": "全",
+   "afterRate": "+100%",
+   "afterEffectShort": "防御50%上昇(卓越:追加確率15%で3倍)"
+  },
+  {
+   "slot": "C",
+   "skill": "戦陣 無縫",
+   "rank": "A",
+   "afterSkill": "天衣無縫神戒",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "42%",
+   "effectShort": "防御 80%上昇(部隊総コストで変動)",
+   "afterTarget": "全",
+   "afterRate": "50%",
+   "afterEffectShort": "防御 30.02%上昇(部隊総コストで変動)"
+  },
+  {
+   "slot": "S1",
+   "skill": "龍驤虎躍",
+   "rank": "SS",
+   "afterSkill": "龍驤虎躍",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "+60%",
+   "effectShort": "攻撃810%上昇+防御810%上昇+コスト消費-1(特殊効果は模倣不可)"
+  },
+  {
+   "slot": "S2",
+   "skill": "志半ノ矛楯",
+   "rank": "A",
+   "afterSkill": "志半ノ矛楯",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "+65%",
+   "effectShort": "攻撃465%上昇+防御465%上昇(模倣不可)"
+  }
+ ],
+ "notes": [
+  "45do.info+ixagno.blog.fc2.com(blog-entry-10242)確認済み: 自己スキル(応穏ノ守護者)は候補に含まれず。A/Bの豊家ノ滅塞は移植後「籠城の妙技」に、Cの戦陣無縫は移植後「天衣無縫神戒」に変化。",
+  "豊家ノ滅塞のランクは45do.infoでは[A]表記だがixagno/No.2359側では[B]表記のため、同一スキルが複数武将で登場するNo.2359のB表記を正としてBに修正(45do.info側の表記ゆれと判断)",
+  "Cのeffectは2026-08-04に確認・修正: ixagno.blog.fc2.com(blog-entry-9570「【防御】総コスト依存スキルの比較」+blog-entry-10361「稲葉一鉄の能力と考察」)で天衣無縫神戒の正確な性能(確率50%/防御30.02%上昇)を確認",
+  "A/Bのeffectも2026-08-04に確認・修正: 「防御15%上昇」は豊家ノ滅塞自身の値(部隊総コストで変動する式の基準値)を誤って表示していた。ixanary.com個別スキルページで籠城の妙技の正しい性能(確率100%/対象全/防御50%上昇・卓越:追加確率15%で3倍)を確認"
+ ]
+}

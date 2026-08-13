@@ -1,0 +1,62 @@
+{
+ "name": "三十五ノ兵法",
+ "rank": "S",
+ "baseRate": 5,
+ "target": "-",
+ "noMimic": true,
+ "effectSummary": "S/LV10 確率 5% 敵軍のB以下スキルの攻撃効果×0.6/対象:-\n模倣不可・重複不可\n①防御戦闘時攻撃側敵軍で発動したレアリティB以下の武将スキルの攻撃効果を×0.6で計算する",
+ "sourceCharacters": [
+  {
+   "name": "宮本武蔵",
+   "no": "2444",
+   "slot": "S1",
+   "db": "kyoku"
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "三十五ノ兵法",
+  "rank": "S"
+ },
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "確率 5% / 防御戦闘時、攻撃側敵軍で発動したB以下の武将スキルの攻撃効果を×0.6で計算(重複不可・模倣不可)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": null
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": null
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": null
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": null
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": null
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": null
+  }
+ ],
+ "notes": [
+  "2026-08-12一括作成。S以上の初期スキルは無条件でページを作る規約(A-3-9)の未処理分。",
+  "内容は武将エントリの登録値をそのまま転記している。",
+  "categoryLinksは9項目の判定を1件ずつやる必要があるため意図的に付けていない(付け忘れではない)。"
+ ]
+}

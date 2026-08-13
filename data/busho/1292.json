@@ -1,0 +1,140 @@
+{
+ "name": "伊達政宗（6）",
+ "no": "1292",
+ "ch": "30章",
+ "cost": 4.5,
+ "troop": "槍馬器騎攻",
+ "sub": "",
+ "effect": "防御参加武将数依存／卓越発動時効果1.5倍",
+ "furigana": "だてまさむね",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1292_full.png",
+ "imageChar": "assets/img/characters/no1292_char.png",
+ "atkBase": 1260,
+ "atkGrowth": 68,
+ "defBase": 1110,
+ "defGrowth": 41,
+ "tacticsBase": 690,
+ "tacticsGrowth": 3.5,
+ "lv0Troops": 4900,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "S",
+  "ki": "A"
+ },
+ "initialSkill": "龍気剣鳴",
+ "skillDetail": "S/LV10 確率 40% 攻撃上昇/対象:槍・馬・器・騎\n①(係数×防御参加武将数)%を攻撃効果に加算する(係数はLV10=5.3)\n②卓越:追加確率-20%(LV10)〜+50%(TR6)で攻撃効果1.5倍",
+ "categoryLinks": [
+  {
+   "href": "skills-count-atk.html",
+   "label": "人数依存(攻)スキル一覧を見る"
+  },
+  {
+   "href": "skills-takuetsu.html",
+   "label": "卓越スキル一覧を見る"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "coefficient": "5.3",
+   "effect": "槍・馬・器・騎　確率 40% / 攻撃 5.3%×防御参加武将数(280人)=1484.0%(卓越追加確率-20%で1.5倍=2226.0%)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "coefficient": "5.4",
+   "effect": "槍・馬・器・騎　確率 40% / 攻撃 5.4%×防御参加武将数(280人)=1512.0%(卓越追加確率-15%で1.5倍=2268.0%)"
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "coefficient": "5.6",
+   "effect": "槍・馬・器・騎　確率 45% / 攻撃 5.6%×防御参加武将数(280人)=1568.0%(卓越追加確率-10%で1.5倍=2352.0%)"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "coefficient": "6",
+   "effect": "槍・馬・器・騎　確率 50% / 攻撃 6%×防御参加武将数(280人)=1680.0%(卓越追加確率1%で1.5倍=2520.0%)"
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "coefficient": "6.5",
+   "effect": "槍・馬・器・騎　確率 60% / 攻撃 6.5%×防御参加武将数(280人)=1820.0%(卓越追加確率10%で1.5倍=2730.0%)"
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "coefficient": "7",
+   "effect": "槍・馬・器・騎　確率 70% / 攻撃 7%×防御参加武将数(280人)=1960.0%(卓越追加確率20%で1.5倍=2940.0%)"
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "coefficient": "7.5",
+   "effect": "槍・馬・器・騎　確率 80% / 攻撃 7.5%×防御参加武将数(280人)=2100.0%(卓越追加確率50%で1.5倍=3150.0%)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "龍気剣鳴",
+   "rank": "S",
+   "afterSkill": "幻像鏡花",
+   "afterRank": "SSS",
+   "rate": "40%",
+   "target": "槍・馬・器・騎",
+   "effectShort": "攻撃を係数×人数で上昇",
+   "afterTarget": "部隊長",
+   "afterRate": "56%",
+   "afterEffectShort": "卓越追加確率40%・1.35倍"
+  },
+  {
+   "slot": "B",
+   "skill": "思金神ノ深謀",
+   "rank": "SS",
+   "afterSkill": "思金神ノ深謀",
+   "afterRank": "SS",
+   "rate": "60%",
+   "target": "部隊長",
+   "effectShort": "部隊長の初期スキルを模倣(卓越時1.3倍)"
+  },
+  {
+   "slot": "C",
+   "skill": "幻像鏡花",
+   "rank": "SSS",
+   "afterSkill": "幻像鏡花",
+   "afterRank": "SSS",
+   "rate": "56%",
+   "target": "部隊長",
+   "effectShort": "部隊長の初期スキルを模倣(卓越時1.35倍)"
+  },
+  {
+   "slot": "S1",
+   "skill": "幻像鏡花",
+   "rank": "SSS",
+   "afterSkill": "幻像鏡花",
+   "afterRank": "SSS",
+   "rate": "56%",
+   "target": "部隊長",
+   "effectShort": "部隊長の初期スキルを模倣(卓越時1.35倍)"
+  },
+  {
+   "slot": "S2",
+   "skill": "開闢ノ逆鉾",
+   "rank": "SS",
+   "afterSkill": "開闢ノ逆鉾",
+   "afterRank": "SS",
+   "rate": "100%",
+   "target": "全",
+   "effectShort": "攻撃254%上昇(卓越で兵士被害減少)"
+  }
+ ],
+ "notes": [
+  "45do.info生HTML照合済み(2026-07-29、skiladd_wrapの位置対応で確認)。"
+ ]
+}

@@ -1,0 +1,141 @@
+{
+ "name": "甲斐宗運",
+ "no": "2459",
+ "ch": "未確認",
+ "cost": 2.5,
+ "troop": "全防",
+ "sub": "",
+ "effect": "自軍武将のスキル発動率+3%(特殊効果は自軍内重複上限2)",
+ "furigana": "かいそううん",
+ "illustrator": "正子公也",
+ "imageFull": "assets/img/characters/no2459_full.png",
+ "imageChar": "assets/img/characters/no2459_char.png",
+ "atkBase": 1000,
+ "atkGrowth": 37,
+ "defBase": 1200,
+ "defGrowth": 52,
+ "tacticsBase": 560,
+ "tacticsGrowth": 3,
+ "lv0Troops": 3120,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "黒衣ノ軍師",
+ "skillDetail": "S/LV10 確率 100% 防御190%上昇/対象:全\n①防御190%上昇する\n②自軍武将のスキル発動率を+3%する(特殊効果は自軍内重複上限2)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 防御 190%上昇(自軍武将のスキル発動率+3%・特殊効果は自軍内重複上限2)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": null
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": null
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": null
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": null
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": null
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": null
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "戦陣 凪",
+   "rank": "A",
+   "afterSkill": "海神ノ浮船",
+   "afterRank": "SS",
+   "target": null,
+   "rate": null,
+   "effectShort": null,
+   "afterTarget": "全 飛翔4",
+   "afterRate": "+48%",
+   "afterEffectShort": "防御 3.5%×防御参加武将数(280人)=980.0%"
+  },
+  {
+   "slot": "B",
+   "skill": "黒衣ノ軍師",
+   "rank": "S",
+   "afterSkill": "天磐船",
+   "afterRank": "SS",
+   "target": null,
+   "rate": null,
+   "effectShort": null,
+   "afterTarget": "全",
+   "afterRate": "+56%",
+   "afterEffectShort": "防御 3.8%×防御参加武将数(280人)=1064.0%"
+  },
+  {
+   "slot": "C",
+   "skill": "黒衣ノ軍師",
+   "rank": "S",
+   "afterSkill": "天磐船",
+   "afterRank": "SS",
+   "target": null,
+   "rate": null,
+   "effectShort": null,
+   "afterTarget": "全",
+   "afterRate": "+56%",
+   "afterEffectShort": "防御 3.8%×防御参加武将数(280人)=1064.0%"
+  },
+  {
+   "slot": "S1",
+   "skill": "天磐船",
+   "rank": "SS",
+   "afterSkill": "天磐船",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "+56%",
+   "effectShort": "防御(3.8×防御参加武将数)%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "氷瀑ノ封印",
+   "rank": "S",
+   "afterSkill": "氷瀑ノ封神",
+   "afterRank": "SSS",
+   "target": "全",
+   "rate": "+25%",
+   "effectShort": "防御90%上昇(攻撃部隊の特殊効果付き初期スキルを全て無効化・模倣不可)",
+   "afterTarget": "全",
+   "afterRate": "+30%",
+   "afterEffectShort": "防御200%上昇(攻撃部隊の特殊効果付き初期スキルを全て無効化・模倣不可)"
+  }
+ ],
+ "notes": [
+  "【2026-08-12】指揮兵数はixawikiが3150、ixanaryの★0-0が3120で食い違うが、",
+  " カード画像が★5表示で3620。他カード(No.2456: ★0-0=4470→★5で4970)と同じく",
+  " 1つ星あたり+100なので、逆算すると★0-0=3120でixanary側が正しい。3120を維持する。",
+  "出典: カード画像(LV1形式: 極・統率 槍A/弓A/馬A/器S拡大確認・初期値1000/1200/560・コスト2.5・LV1スキル値。",
+  "  ★5表示のため指揮3620は不採用、ixanaryの★0-0=3120を使用(B-00ルール))",
+  " + ixanary.com/cards/2459(成長+37/+52/+3.0・LV10: 確率+100%/全防190%/自軍武将のスキル発動率+3%)",
+  " + ixawiki BushoCard/2459(統率2次確認・合成テーブル1次/2次候補+S1/S2候補のLV10効果)。",
+  "統率はカード画像+ixawikiの2ソース一致。初期スキルがSランクのためスキル個別ページの新規作成が必要",
+  "(docsのTODOに記録済み)。スキルはS(鍛錬情報なし)のためTR1以降のeffectはnull。",
+  "合成テーブルはixawiki(1次候補+2次候補+候補スキルのLV10効果)"
+ ]
+}

@@ -1,0 +1,144 @@
+{
+ "name": "佐渡島方治",
+ "no": "2614",
+ "ch": "未確認",
+ "cost": 3,
+ "troop": "弓器焙攻防",
+ "sub": "",
+ "effect": "部隊内武将の全スキルの卓越追加確率+25%(模倣不可・自部隊内重複不可)",
+ "furigana": "さどじまほうじ",
+ "illustrator": "NW/S,RKKD",
+ "imageFull": "assets/img/characters/no2614_full.png",
+ "imageChar": "assets/img/characters/no2614_char.png",
+ "atkBase": 1060,
+ "atkGrowth": 37,
+ "defBase": 1060,
+ "defGrowth": 37,
+ "tacticsBase": 580,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3380,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "S",
+  "uma": "B",
+  "ki": "S"
+ },
+ "initialSkill": "百識ノ計",
+ "skillDetail": "A/LV10 確率 100% 攻撃390%上昇/対象:弓・器・焙\n模倣不可\n①攻撃390%上昇する\n②防御390%上昇する\n③部隊内武将の全スキルの卓越追加確率が25%上昇する(特殊効果は自部隊内では重複不可)",
+ "categoryLinks": [
+  {
+   "href": "skills-takuetsu.html",
+   "label": "卓越スキル一覧を見る"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓・器・焙　確率 100% / 攻撃 390%上昇+防御 390%上昇(部隊内武将の全スキルの卓越追加確率+25%・模倣不可・自部隊内重複不可)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": null
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": null
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": null
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": null
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": null
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": null
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "百識ノ計",
+   "rank": "A",
+   "afterSkill": "月詠ノ覇威",
+   "afterRank": "SS",
+   "target": "弓・器・焙",
+   "rate": "+100%",
+   "effectShort": "攻撃390%上昇+防御390%上昇+部隊内卓越追加確率+25%(模倣不可・特殊効果は自部隊内では重複不可)",
+   "afterTarget": "全",
+   "afterRate": "+100%",
+   "afterEffectShort": "攻撃344%上昇+防御344%上昇+自軍全武将全スキルの卓越確率+15%(模倣不可・自軍内重複上限2)"
+  },
+  {
+   "slot": "B",
+   "skill": "百識ノ計",
+   "rank": "A",
+   "afterSkill": "月詠ノ覇威",
+   "afterRank": "SS",
+   "target": "弓・器・焙",
+   "rate": "+100%",
+   "effectShort": "攻撃390%上昇+防御390%上昇+部隊内卓越追加確率+25%(模倣不可・特殊効果は自部隊内では重複不可)",
+   "afterTarget": "全",
+   "afterRate": "+100%",
+   "afterEffectShort": "攻撃344%上昇+防御344%上昇+自軍全武将全スキルの卓越確率+15%(模倣不可・自軍内重複上限2)"
+  },
+  {
+   "slot": "C",
+   "skill": "波濤ノ剛撃",
+   "rank": "S",
+   "afterSkill": "布都御魂ノ鬨",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "+50%",
+   "effectShort": "攻撃114%上昇+防御114%上昇+部隊内卓越追加確率+20%(模倣不可・特殊効果は自部隊内では重複不可)",
+   "afterTarget": "全",
+   "afterRate": "+35%",
+   "afterEffectShort": "攻撃40%上昇+防御40%上昇(所属部隊内のレアリティS以上のスキル個数×20%を加算)"
+  },
+  {
+   "slot": "S1",
+   "skill": "月詠ノ覇威",
+   "rank": "SS",
+   "afterSkill": "月詠ノ覇威",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "+100%",
+   "effectShort": "攻撃344%上昇+防御344%上昇+自軍全武将全スキルの卓越確率+15%(模倣不可・自軍内重複上限2)"
+  },
+  {
+   "slot": "S2",
+   "skill": "戦陣 吟詠",
+   "rank": "A",
+   "afterSkill": "戦陣 吟詠",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "+100%",
+   "effectShort": "攻撃340%上昇+防御340%上昇+部隊内卓越追加確率+20%(模倣不可・特殊効果は自部隊内では重複不可)"
+  }
+ ],
+ "notes": [
+  "出典: カード画像(LV1形式: 極・職業「将」・統率 槍B/弓S/馬B/器S拡大確認・初期値1060/1060/580.0・コスト3・覇表記なし)",
+  " + ixanary.com/cards/2614(指揮3380(★0-0)・成長+37/+37/+2.5・LV10: 確率+100%/弓器焙/",
+  "   攻撃390%・防御390%・部隊内卓越追加確率+25%。絵師 ©NW／S,RKKD。るろうに剣心コラボ)",
+  " + ixawiki BushoCard/2614佐渡島方治(統率 槍B/馬B/弓S/器S・コスト3.0・指揮3380・初期値・成長値・",
+  "   LV10性能・合成候補テーブルがixanaryと完全一致)。",
+  "統率はカード画像+ixawikiの2ソース一致。攻撃+防御が同時に動くのでtrTableに併記(multistat規則)。",
+  "初期スキル「百識ノ計」はAランクのためスキル個別ページは作成しない(A以下は自動作成禁止)。",
+  "TR別の数値はixanary・ixawikiのどちらにも記載が無い(A・鍛錬情報なし)。",
+  "合成テーブルはixanaryスキルページ「百識ノ計」とixawiki BushoCard/2614の1次/2次候補が完全一致(2ソース)。",
+  "候補スキルの効果もixawikiの同ページに併記されているものを使用。"
+ ]
+}

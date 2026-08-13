@@ -1,0 +1,46 @@
+{
+ "name": "魔弾奏者",
+ "rank": "S",
+ "baseRate": 64,
+ "target": "槍・弓・砲・器　飛翔10",
+ "effectSummary": "S/LV10 確率 64% 攻撃50%上昇/対象:槍・弓・砲・器　飛翔10\n①攻撃50%上昇する\n②所属部隊の武将が戦闘時にもつ飛翔値の合計×9%を攻撃効果に加算する",
+ "categoryLinks": [
+  {
+   "href": "skills-hishou-atk.html",
+   "label": "飛翔スキル一覧(攻撃)を見る"
+  }
+ ],
+ "sourceCharacters": [
+  {
+   "name": "宇喜多直家（3）",
+   "no": "1256",
+   "slot": "A・B"
+  },
+  {
+   "name": "巻町操",
+   "no": "2606",
+   "slot": "S1",
+   "db": "kyoku"
+  },
+  {
+   "name": "蒲生氏郷",
+   "no": "7403",
+   "slot": "S2",
+   "db": "kyoku"
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "星神闘覇",
+  "rank": "SSS"
+ },
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・弓・砲・器 飛翔10　確率 64% / 攻撃 50%上昇(飛翔値合計×9%加算)"
+  }
+ ],
+ "notes": [
+  "No.1256(宇喜多直家(3))の初期スキル(S、自身のsynthesisTable A・B枠で自己参照)。45do.info生HTML(ordinary/0207)+ixanary.com(skills/魔弾奏者)で2ソース確認、TRなし(LV10のみ)"
+ ]
+}

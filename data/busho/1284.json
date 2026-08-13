@@ -1,0 +1,129 @@
+{
+ "name": "加藤清正",
+ "no": "1284",
+ "ch": "29章",
+ "cost": 5,
+ "troop": "槍砲器攻",
+ "sub": "",
+ "effect": "敵軍の総コスト依存",
+ "furigana": "かとうきよまさ",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1284_full.png",
+ "imageChar": "assets/img/characters/no1284_char.png",
+ "atkBase": 1260,
+ "atkGrowth": 72,
+ "defBase": 1060,
+ "defGrowth": 48,
+ "tacticsBase": 650,
+ "tacticsGrowth": 3,
+ "lv0Troops": 5040,
+ "rankGrades": {
+  "yari": "SS",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "虎伐閃衝",
+ "skillDetail": "S/LV10 確率 36% 攻撃(敵軍総武将コスト×係数)%上昇/対象:槍・砲・器\n模倣不可\n①攻撃を敵軍総武将コスト×係数(LV10=2.1)%で上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "coefficient": "2.1",
+   "effect": "槍・砲・器　確率 36% / 攻撃 敵軍総武将コスト×2.1%=上昇"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "coefficient": "2.2",
+   "effect": "槍・砲・器　確率 38% / 攻撃 敵軍総武将コスト×2.2%=上昇"
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "coefficient": "2.3",
+   "effect": "槍・砲・器　確率 40% / 攻撃 敵軍総武将コスト×2.3%=上昇"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "coefficient": "2.5",
+   "effect": "槍・砲・器　確率 44% / 攻撃 敵軍総武将コスト×2.5%=上昇"
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "coefficient": "2.8",
+   "effect": "槍・砲・器　確率 50% / 攻撃 敵軍総武将コスト×2.8%=上昇"
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "coefficient": "3.2",
+   "effect": "槍・砲・器　確率 57% / 攻撃 敵軍総武将コスト×3.2%=上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "虎伐閃衝",
+   "rank": "S",
+   "afterSkill": "万物神勇",
+   "afterRank": "SSS",
+   "rate": "36%",
+   "target": "槍・砲・器",
+   "effectShort": "攻撃を敵軍総武将コスト×係数で上昇(模倣不可)",
+   "afterTarget": "全 撤退",
+   "afterRate": "43%",
+   "afterEffectShort": "攻撃 9.2%×防御参加武将数(280人)=2576.0%"
+  },
+  {
+   "slot": "B",
+   "skill": "虎伐閃衝",
+   "rank": "S",
+   "afterSkill": "万物神勇",
+   "afterRank": "SSS",
+   "rate": "36%",
+   "target": "槍・砲・器",
+   "effectShort": "攻撃を敵軍総武将コスト×係数で上昇(模倣不可)",
+   "afterTarget": "全 撤退",
+   "afterRate": "43%",
+   "afterEffectShort": "攻撃 9.2%×防御参加武将数(280人)=2576.0%"
+  },
+  {
+   "slot": "C",
+   "skill": "飛龍衝天",
+   "rank": "SS",
+   "afterSkill": "飛龍衝天",
+   "afterRank": "SS",
+   "rate": "45%",
+   "target": "全 飛翔15",
+   "effectShort": "攻撃200%上昇+7.5%×防御参加武将数加算(模倣不可)"
+  },
+  {
+   "slot": "S1",
+   "skill": "万物神勇",
+   "rank": "SSS",
+   "afterSkill": "万物神勇",
+   "afterRank": "SSS",
+   "rate": "43%",
+   "target": "全 撤退",
+   "effectShort": "攻撃を係数×人数で上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "開闢ノ逆鉾",
+   "rank": "SS",
+   "afterSkill": "開闢ノ逆鉾",
+   "afterRank": "SS",
+   "rate": "100%",
+   "target": "全",
+   "effectShort": "攻撃254%上昇(卓越追加確率30%で兵士被害15%減少)"
+  }
+ ],
+ "notes": [
+  "カード画像照合済み: 槍SS/弓A/馬A/器A",
+  "ixanary.com生HTML照合(2026-08-02): スキルページ(/skills/虎伐閃衝/)にLV1・LV10・TR1〜TR5の全段階が公開されている。TR5では確率も36%→57%に上昇する点に注意。",
+  "45do.info(ordinary/0309)生HTML + ixagno.blog.fc2.com(blog-entry-10199)生HTML の2ソースで完全一致を確認(2026-08-02)。A/Bは自身の初期スキル(虎伐閃衝)がそのまま候補になる自己参照枠。"
+ ]
+}

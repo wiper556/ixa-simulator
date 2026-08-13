@@ -1,0 +1,130 @@
+{
+ "name": "羽柴秀長",
+ "no": "1278",
+ "ch": "29章",
+ "cost": 4.5,
+ "troop": "全攻防",
+ "sub": "無尽",
+ "effect": "部隊内の全スキルに「砲」対象を追加",
+ "furigana": "はしばひでなが",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1278_full.png",
+ "imageChar": "assets/img/characters/no1278_char.png",
+ "atkBase": 1230,
+ "atkGrowth": 66,
+ "defBase": 1230,
+ "defGrowth": 66,
+ "tacticsBase": 670,
+ "tacticsGrowth": 3,
+ "lv0Troops": 4840,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "王佐ノ指揮",
+ "skillDetail": "S/LV10 確率 100% 攻撃520%上昇 防御520%上昇/対象:全　無尽\n①攻撃520%上昇 防御520%上昇する\n②無尽を持つため部隊消費コストを-0.5する\n③部隊内全武将の兵科対象の全スキルに「砲」対象を追加する",
+ "categoryLinks": [
+  {
+   "href": "skills-mujin.html",
+   "label": "無尽スキル一覧を見る"
+  },
+  {
+   "href": "skills-cost.html",
+   "label": "コスト減少スキル一覧を見る"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 攻撃 520%上昇 防御 520%上昇(無尽 部隊消費コスト-0.5)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": "全　確率 100% / 攻撃590%上昇 防御590%上昇 無尽(部隊消費コスト-0.5) 部隊内全武将の兵科対象の全スキルに「砲」対象を追加"
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": "全　確率 100% / 攻撃730%上昇 防御730%上昇 無尽(部隊消費コスト-0.5) 部隊内全武将の兵科対象の全スキルに「砲」対象を追加"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": "全　確率 100% / 攻撃920%上昇 防御920%上昇 無尽(部隊消費コスト-0.5) 部隊内全武将の兵科対象の全スキルに「砲」対象を追加"
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": "全　確率 100% / 攻撃1140%上昇 防御1140%上昇 無尽(部隊消費コスト-0.5) 部隊内全武将の兵科対象の全スキルに「砲」対象を追加"
+  },
+  {
+   "level": "TR5",
+   "points": "最大鍛錬",
+   "effect": "全　確率 100% / 攻撃 1400%上昇 防御 1400%上昇(無尽 部隊消費コスト-0.5)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "刹那無影",
+   "rank": "SS",
+   "afterSkill": "刹那無影",
+   "afterRank": "SS",
+   "rate": "55%",
+   "target": "部隊長",
+   "effectShort": "部隊長の初期スキルを1.15倍模倣+速度200%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "思金神ノ深謀",
+   "rank": "SS",
+   "afterSkill": "思金神ノ深謀",
+   "afterRank": "SS",
+   "rate": "60%",
+   "target": "部隊長",
+   "effectShort": "部隊長の模倣可能な初期スキルを模倣(卓越時1.3倍)"
+  },
+  {
+   "slot": "C",
+   "skill": "國才連豪",
+   "rank": "SS",
+   "afterSkill": "國才連豪",
+   "afterRank": "SS",
+   "rate": "50%",
+   "target": "全",
+   "effectShort": "防御が係数×同スキル所持武将数で上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "絶無灰尽",
+   "rank": "SS",
+   "afterSkill": "絶無灰尽",
+   "afterRank": "SS",
+   "rate": "100%",
+   "target": "全 無尽 不屈1",
+   "effectShort": "攻撃1010%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "十束ノ神域",
+   "rank": "SS",
+   "afterSkill": "天聖宝冠",
+   "afterRank": "SSS",
+   "rate": "100%",
+   "target": "全 覇道",
+   "effectShort": "攻撃320%上昇+速度70%上昇+覇道を持つため所属部隊の武将のスキルを無効化・発動率低下から保護",
+   "afterTarget": "全",
+   "afterRate": "45%",
+   "afterEffectShort": "攻撃 100%+5%×防御参加武将数(280人)=1500.0%"
+  }
+ ],
+ "notes": [
+  "カード画像照合済み: 槍S/弓A/馬A/器S",
+  "ixanary.com生HTML照合(2026-08-02): カード画像のスキル欄にLV10とTR5(鍛錬)の2枠のみ表示されており、TR1〜TR4は実在しない。",
+  "45do.info(ordinary/0315)生HTML照合+ameameixa.com(post-12334「29章天武将スキル一覧」表のNo.1278行)の両ソースでA/B/C/S1/S2の並びが一致確認済み。"
+ ]
+}

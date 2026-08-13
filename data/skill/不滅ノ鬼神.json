@@ -1,0 +1,32 @@
+{
+ "name": "不滅ノ鬼神",
+ "rank": "S",
+ "baseRate": 100,
+ "target": "全",
+ "effectSummary": "S/LV10 対象:全\n①確率70%で攻撃100%上昇する\n②確率100%で速度70%上昇する",
+ "sourceCharacters": [
+  {
+   "name": "井伊直孝",
+   "no": "2366",
+   "slot": "S1・S2",
+   "db": "kyoku"
+  },
+  {
+   "name": "茶々",
+   "no": "2574",
+   "slot": "A",
+   "db": "kyoku"
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "朧雲ノ閃撃",
+  "rank": "SSS"
+ },
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 70%/100% / 攻撃 100%上昇(確率70%)+速度 70%上昇(確率100%)(TR別データは未確認)"
+  }
+ ]
+}

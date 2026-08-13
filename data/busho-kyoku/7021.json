@@ -1,0 +1,96 @@
+{
+ "name": "北条氏照",
+ "no": "7021",
+ "illustrator": "SQUARE ENIX",
+ "ch": "未確認",
+ "cost": 3,
+ "troop": "槍砲器防",
+ "sub": "",
+ "effect": "部隊コスト10以下で防御効果2倍",
+ "furigana": "ほうじょううじてる",
+ "imageFull": "assets/img/characters/no7021_full.png",
+ "imageChar": "assets/img/characters/no7021_char.png",
+ "atkBase": 1050,
+ "atkGrowth": 36,
+ "defBase": 1150,
+ "defGrowth": 45,
+ "tacticsBase": 550,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3470,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "B",
+  "ki": "A"
+ },
+ "initialSkill": "虎落",
+ "skillDetail": "A/LV10 確率 48% 防御400%上昇/対象:槍・砲・器\n①防御400%上昇する\n②部隊コスト10以下で効果が2倍になる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・砲・器　確率 48% / 防御 400%上昇(部隊コスト10以下で2倍)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": null
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": "槍・砲・器　確率 48% / 防御 500%上昇(部隊コスト12以下で2倍)"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": null
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": null
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": null
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "武神ノ采配",
+   "rank": "A"
+  },
+  {
+   "slot": "B",
+   "skill": "鉄国",
+   "rank": "A"
+  },
+  {
+   "slot": "C",
+   "skill": "破窮ノ勇将",
+   "rank": "A"
+  },
+  {
+   "slot": "S1",
+   "skill": "虎落",
+   "rank": "A"
+  },
+  {
+   "slot": "S2",
+   "skill": "志半ノ矛楯",
+   "rank": "A",
+   "target": "全",
+   "rate": "+65%",
+   "effectShort": "攻撃465%上昇+防御465%上昇(模倣不可)"
+  }
+ ],
+ "notes": [
+  "ixanary.comにカード・スキルページとも未掲載(2026-08-08時点)のため別ソースで確定。",
+  "合成候補は ameblo.jp/kotodaixa/entry-12971894278 の",
+  "候補スキル1〜3=A/B/C、隠し候補スキル=S1、同一No合成スキル=S2 の対応で登録。",
+  "同記事は移植後(2次)を載せていないため afterSkill は入れていない。"
+ ]
+}

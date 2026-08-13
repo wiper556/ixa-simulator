@@ -1,0 +1,45 @@
+{
+ "name": "天香山命",
+ "rank": "SS",
+ "baseRate": 100,
+ "target": "全 覇道",
+ "effectSummary": "SS/LV10 確率 100% 攻撃120%上昇/対象:全　覇道\n①攻撃120%上昇する\n②速度90%上昇する",
+ "categoryLinks": [
+  {
+   "href": "skills-hadou.html",
+   "label": "覇道スキル一覧を見る"
+  }
+ ],
+ "sourceCharacters": [
+  {
+   "name": "柴田勝家",
+   "no": "1216",
+   "slot": "C"
+  },
+  {
+   "name": "細川忠興",
+   "no": "1235",
+   "slot": "A"
+  },
+  {
+   "name": "志々雄真実",
+   "no": "2603",
+   "slot": "A",
+   "db": "kyoku"
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "天香山命",
+  "rank": "SS"
+ },
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全 覇道　確率 100% / 攻撃 120%上昇+速度90%上昇"
+  }
+ ],
+ "notes": [
+  "柴田勝家(No.1216)synthesisTable候補C・ixanary生HTML確認済み(TRなし、LV10のみ)"
+ ]
+}

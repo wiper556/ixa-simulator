@@ -1,0 +1,37 @@
+{
+ "name": "破軍星 皇",
+ "rank": "SS",
+ "baseRate": 69,
+ "target": "全",
+ "noMimic": true,
+ "effectSummary": "SS/LV10 確率 69% 攻撃140%上昇/対象:全\n模倣不可\n①攻撃140%上昇する\n②自部隊同時攻撃時部隊総コストからこの武将分のコストを最大0.5まで除外する",
+ "sourceCharacters": [
+  {
+   "name": "真田昌幸",
+   "no": "1218",
+   "slot": "A"
+  },
+  {
+   "name": "長尾景虎(1206)",
+   "no": "1206",
+   "slot": "S2"
+  },
+  {
+   "name": "飯田覚兵衛",
+   "no": "2452",
+   "slot": "S2",
+   "db": "kyoku"
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "破軍星 皇",
+  "rank": "SS"
+ },
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 69% / 攻撃 140%上昇(コスト最大0.5除外、TR別データは未確認)"
+  }
+ ]
+}

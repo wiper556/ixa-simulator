@@ -1,0 +1,32 @@
+{
+ "name": "天綾の誓約",
+ "rank": "SS",
+ "baseRate": 60,
+ "target": "全",
+ "effectSummary": "SS/LV10 確率：+60% / 対象 全 攻撃：99.9%上昇 防御：99.9%上昇 破壊：150%上昇",
+ "sourceCharacters": [
+  {
+   "name": "飯田覚兵衛",
+   "no": "2452",
+   "slot": "C",
+   "db": "kyoku"
+  },
+  {
+   "name": "難攻不落の天守",
+   "no": "2589",
+   "slot": "A",
+   "db": "kyoku"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 60% / 攻撃99.9%上昇 防御99.9%上昇 破壊150%上昇"
+  }
+ ],
+ "notes": [
+  "2026-08-12作成。合成候補に出てくるS以上はページを作る規約(A-3)の未処理分。",
+  "ixanary.com/skills/天綾の誓約 から取得。categoryLinksは9項目の判定が要るため付けていない。"
+ ]
+}

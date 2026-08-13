@@ -1,0 +1,59 @@
+{
+ "name": "建御雷神ノ槌",
+ "rank": "SS",
+ "baseRate": 100,
+ "target": "全",
+ "noMimic": true,
+ "effectSummary": "SS/LV10 確率 100% 攻撃135%上昇/対象:全\n模倣不可\n①攻撃135%上昇する\n②防御135%上昇する\n③このスキルを所持する武将の全スキルの卓越確率に30%を加算する",
+ "categoryLinks": [
+  {
+   "href": "skills-takuetsu.html",
+   "label": "卓越スキル一覧を見る"
+  }
+ ],
+ "sourceCharacters": [
+  {
+   "name": "黒田官兵衛【覇】",
+   "no": "1214",
+   "slot": "B"
+  },
+  {
+   "name": "荒木村重（2）",
+   "no": "1213",
+   "slot": "S1"
+  },
+  {
+   "name": "堀秀政",
+   "no": "1224",
+   "slot": "A"
+  },
+  {
+   "name": "明智光秀",
+   "no": "1204",
+   "slot": "S2"
+  },
+  {
+   "name": "佐々木小次郎",
+   "no": "2450",
+   "slot": "S2",
+   "db": "kyoku"
+  },
+  {
+   "name": "武田勝頼",
+   "no": "2448",
+   "slot": "S2",
+   "db": "kyoku"
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "建御雷神ノ槌",
+  "rank": "SS"
+ },
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 攻撃135%上昇+防御135%上昇(卓越確率+30%)"
+  }
+ ]
+}

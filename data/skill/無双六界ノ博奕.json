@@ -1,0 +1,39 @@
+{
+ "name": "無双六界ノ博奕",
+ "rank": "S",
+ "baseRate": 50,
+ "target": "槍・弓・器・鉄",
+ "effectSummary": "S/LV10 確率 50% 防御(3.2×防御参加武将数)%上昇/対象:槍・弓・器・鉄\n①対象兵科(槍・弓・器・鉄)を指揮した戦闘時防御力が(3.2×防御参加武将数)%上昇する\n②卓越時追加確率20%で防御効果が1.5倍になる(TR1〜TR5は未確認)",
+ "categoryLinks": [
+  {
+   "href": "skills-count-def.html",
+   "label": "人数依存(防)スキル一覧を見る"
+  },
+  {
+   "href": "skills-takuetsu.html",
+   "label": "卓越スキル一覧を見る"
+  }
+ ],
+ "sourceCharacters": [
+  {
+   "name": "蜂須賀小六",
+   "no": "1223",
+   "slot": "A"
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "天磐船",
+  "rank": "SS"
+ },
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "coefficient": "3.2",
+   "effect": "槍・弓・器・鉄　確率 50% / 防御 3.2%×防御参加武将数(280人)=896%(卓越追加確率20%で1.5倍)"
+  }
+ ],
+ "notes": [
+  "この武将自身の初期スキル(蜂須賀小六 No.1223のsynthesisTable候補A)"
+ ]
+}

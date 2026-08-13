@@ -1,0 +1,102 @@
+{
+ "name": "天地超克",
+ "rank": "SSS",
+ "baseRate": 46,
+ "target": "全 不屈1",
+ "effectSummary": "SSS/LV10 確率 46% 攻撃上昇/対象:全　不屈1\n①(係数×防御参加武将数)%を攻撃効果に加算する(固定上昇分なし)",
+ "categoryLinks": [
+  {
+   "href": "skills-count-atk.html",
+   "label": "人数依存(攻)スキル一覧を見る"
+  },
+  {
+   "href": "skills-fukutsu.html",
+   "label": "不屈スキル一覧を見る"
+  }
+ ],
+ "sourceCharacters": [
+  {
+   "name": "大谷吉継（3）【覇】",
+   "no": "1300",
+   "slot": "B"
+  },
+  {
+   "name": "北条早雲",
+   "no": "1296",
+   "slot": "C"
+  },
+  {
+   "name": "武田信玄（6）",
+   "no": "1290",
+   "slot": "S1"
+  },
+  {
+   "name": "織田信長（9）【覇】",
+   "no": "1286",
+   "slot": "A・B"
+  },
+  {
+   "name": "竹中半兵衛【覇】",
+   "no": "1275",
+   "slot": "C・S1",
+   "note": [
+    "竹中半兵衛【覇】(1275)のsynthesisTable C・S1枠(A-3-11逆引き確認、2026-08-02)"
+   ]
+  },
+  {
+   "name": "結城秀康",
+   "no": "1276",
+   "slot": "S1",
+   "note": [
+    "結城秀康(1276)のsynthesisTable S1枠(A-3-11逆引き確認、2026-08-02)"
+   ]
+  },
+  {
+   "name": "六角定頼",
+   "no": "1321",
+   "slot": "A"
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "天地超克",
+  "rank": "SSS"
+ },
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "coefficient": "9.6",
+   "effect": "全 不屈1　確率 46% / 攻撃 9.6%×防御参加武将数(280人)=2688.0%"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "coefficient": "10",
+   "effect": "全 不屈1　確率 46% / 攻撃 10%×防御参加武将数(280人)=2800.0%"
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "coefficient": "10.5",
+   "effect": "全 不屈1　確率 46% / 攻撃 10.5%×防御参加武将数(280人)=2940.0%"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "coefficient": "11.2",
+   "effect": "全 不屈1　確率 46% / 攻撃 11.2%×防御参加武将数(280人)=3136.0%"
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "coefficient": "12.2",
+   "effect": "全 不屈1　確率 46% / 攻撃 12.2%×防御参加武将数(280人)=3416.0%"
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "coefficient": "13.5",
+   "effect": "全 不屈1　確率 46% / 攻撃 13.5%×防御参加武将数(280人)=3780.0%"
+  }
+ ]
+}

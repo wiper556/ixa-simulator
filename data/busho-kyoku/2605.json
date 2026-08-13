@@ -1,0 +1,130 @@
+{
+ "name": "四乃森蒼紫",
+ "no": "2605",
+ "ch": "未確認",
+ "cost": 4.5,
+ "troop": "全防",
+ "sub": "",
+ "effect": "防御戦闘時、防御側武将数カウントの対象にならない(模倣不可)",
+ "furigana": "しのもりあおし",
+ "illustrator": "NW/S,RKKD",
+ "imageFull": "assets/img/characters/no2605_full.png",
+ "imageChar": "assets/img/characters/no2605_char.png",
+ "atkBase": 1070,
+ "atkGrowth": 46,
+ "defBase": 1220,
+ "defGrowth": 62,
+ "tacticsBase": 560,
+ "tacticsGrowth": 3,
+ "lv0Troops": 4570,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "回天剣舞",
+ "skillDetail": "S/LV10 確率 100% 防御450%上昇/対象:全\n模倣不可\n①防御450%上昇する\n②防御戦闘時この武将は防御側武将数を数えてスキルの発動条件や効果を決定する攻撃側武将スキルのカウント対象にならない",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 防御 450%上昇(防御側武将数カウントの対象にならない・模倣不可)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": "全　確率 100% / 防御 550%上昇"
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": "全　確率 100% / 防御 730%上昇"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": "全　確率 100% / 防御 1030%上昇"
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": "全　確率 100% / 防御 1450%上昇"
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": "全　確率 100% / 防御 1980%上昇"
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": null
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "禍津日神ノ謀",
+   "rank": "SS",
+   "afterSkill": "禍津日神ノ謀",
+   "afterRank": "SS",
+   "target": null,
+   "rate": null,
+   "effectShort": null
+  },
+  {
+   "slot": "B",
+   "skill": "豊国ノ寵将",
+   "rank": "S",
+   "afterSkill": null,
+   "afterRank": null,
+   "target": "全",
+   "rate": "+70%",
+   "effectShort": "攻撃190%上昇+防御190%上昇(飛翔7・所属部隊の飛翔Xを飛翔[X+2]に・模倣不可)"
+  },
+  {
+   "slot": "C",
+   "skill": "煙霞迷霧",
+   "rank": "S",
+   "afterSkill": "煙霞迷霧",
+   "afterRank": "S",
+   "target": null,
+   "rate": null,
+   "effectShort": null
+  },
+  {
+   "slot": "S1",
+   "skill": "永世ノ天隻",
+   "rank": "SS",
+   "afterSkill": "永世ノ天隻",
+   "afterRank": "SS",
+   "target": null,
+   "rate": null,
+   "effectShort": null
+  },
+  {
+   "slot": "S2",
+   "skill": "黄泉醜女ノ屍兵",
+   "rank": "SS",
+   "afterSkill": "天地黎明",
+   "afterRank": "SSS",
+   "target": null,
+   "rate": null,
+   "effectShort": null,
+   "afterTarget": "全",
+   "afterRate": "+70%",
+   "afterEffectShort": "防御 270%上昇(HP99以下で3倍)"
+  }
+ ],
+ "notes": [
+  "出典: カード画像(LV1形式: 極・職業「忍」・統率 槍A/弓A/馬A/器S拡大確認・初期値1070/1220/560・コスト4.5。",
+  "  極限突破表示のため指揮5970は不採用、ixanaryの★0-0=4570を使用(B-00ルール))",
+  " + ixanary.com/cards/2605(指揮4570(★0-0)・成長+46/+62/+3.0)",
+  " + ixanaryスキルページ「回天剣舞」(LV1〜TR5全値+合成テーブル)。るろうに剣心コラボ。",
+  "合成2次候補行は4項目で5列と整合せず、位置関係からA/C/S1は自己参照・S2:黄泉醜女ノ屍兵→天地黎明SSSと判断、",
+  "B(豊国ノ寵将)の移植後はnull(推測で埋めない)。",
+  "初期スキルがSランクのためスキル個別ページの新規作成が必要(docsのTODOに記録済み)。",
+  "合成テーブルはixanaryスキルページ(1次/2次/3次)"
+ ]
+}

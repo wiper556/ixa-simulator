@@ -1,0 +1,106 @@
+{
+ "name": "大内周防介",
+ "no": "7404",
+ "ch": "未確認",
+ "cost": 4,
+ "troop": "全防",
+ "sub": "",
+ "effect": "お茶アイコン付与数×10を陣形内全武将の最大指揮兵数に加算",
+ "furigana": "おおうちすおうのすけ",
+ "illustrator": "正子公也",
+ "imageFull": "assets/img/characters/no7404_full.png",
+ "imageChar": "assets/img/characters/no7404_char.png",
+ "atkBase": 1090,
+ "atkGrowth": 53,
+ "defBase": 1240,
+ "defGrowth": 65,
+ "tacticsBase": 560,
+ "tacticsGrowth": 3,
+ "lv0Troops": 4390,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "文治興隆",
+ "skillDetail": "S/LV10 お茶アイコン付与数×10を陣形内全武将の最大指揮兵数に加算/対象:全\n模倣不可・重複不可\n①この武将に30個まで「お茶アイコン」を付与できる\n②本丸防御陣形・所領防御陣形に配置時配置中の陣形内の全武将の最大指揮兵数に(この武将の「お茶アイコン」付与数×10)を加算する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　お茶アイコン付与数(最大30個)×10 を陣形内全武将の最大指揮兵数に加算"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": null
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": null
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": null
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": null
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": "全　お茶アイコン付与数(最大30個)×15 を陣形内全武将の最大指揮兵数に加算"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "狂奏",
+   "rank": "B",
+   "afterSkill": "狂奏",
+   "afterRank": "B"
+  },
+  {
+   "slot": "B",
+   "skill": "茶人の教え",
+   "rank": "F",
+   "afterSkill": "茶人の教え",
+   "afterRank": "F"
+  },
+  {
+   "slot": "C",
+   "skill": "仙境解脱",
+   "rank": "SS",
+   "afterSkill": "仙境解脱",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "48%",
+   "effectShort": "防御910%上昇+コスト-1.5"
+  },
+  {
+   "slot": "S1",
+   "skill": "琳聖風雅",
+   "rank": ""
+  },
+  {
+   "slot": "S2",
+   "skill": "月詠ノ覇威",
+   "rank": "SS",
+   "afterSkill": "月詠ノ覇威",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "攻防各344%上昇+部隊卓越確率+15%"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/7404 と skills/文治興隆 の生HTML)で確認(2026-08-08)。",
+  "合成テーブルはスキルページの1次(=移植前)・2次(=移植後)から取得。",
+  "候補スキルの対象・確率・効果はサイト内の既存登録から転記(未登録のスキルは空のまま)。"
+ ]
+}

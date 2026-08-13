@@ -1,0 +1,96 @@
+{
+ "name": "島津義弘（3）",
+ "no": "1232",
+ "ch": "25章",
+ "cost": 4,
+ "troop": "槍馬器防",
+ "sub": "",
+ "effect": "防御上昇／本丸防御陣形時編成コスト消費-1",
+ "furigana": "しまづよしひろ",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1232_full.png",
+ "imageChar": "assets/img/characters/no1232_char.png",
+ "atkBase": 1080,
+ "atkGrowth": 46,
+ "defBase": 1230,
+ "defGrowth": 65,
+ "tacticsBase": 690,
+ "tacticsGrowth": 3.5,
+ "lv0Troops": 4550,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "S",
+  "ki": "S"
+ },
+ "initialSkill": "鬼神ノ軍法",
+ "skillDetail": "S/LV10 確率 62% 防御190%上昇/対象:槍・馬・器\n模倣不可\n①防御190%上昇する\n②本丸防御陣形に配置時この武将の編成コスト消費を-1.5する(TR1〜TR5は未確認)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・馬・器　確率 62% / 防御 190%上昇(本丸防御陣形時コスト消費-1.5)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "鬼神ノ軍法",
+   "rank": "S",
+   "afterSkill": "四天轟雷",
+   "afterRank": "SS",
+   "rate": "62%",
+   "target": "槍・馬・器",
+   "effectShort": "防御190%上昇(本丸防御陣形時コスト消費-1.5)",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 360%上昇+防御 360%上昇(砲・器対象追加)"
+  },
+  {
+   "slot": "B",
+   "skill": "黄泉醜女ノ屍兵",
+   "rank": "SS",
+   "afterSkill": "天地黎明",
+   "afterRank": "SSS",
+   "rate": "54%",
+   "target": "全",
+   "effectShort": "防御200%上昇(70以下被ダメージ上限45)",
+   "afterTarget": "全",
+   "afterRate": "70%",
+   "afterEffectShort": "防御 270%上昇(HP99以下で3倍)"
+  },
+  {
+   "slot": "C",
+   "skill": "国津破邪ノ楯",
+   "rank": "SS",
+   "afterSkill": "国津破邪ノ楯",
+   "afterRank": "SS",
+   "rate": "60%",
+   "target": "全",
+   "effectShort": "防御60.04%上昇(部隊総コスト依存)"
+  },
+  {
+   "slot": "S1",
+   "skill": "四天轟雷",
+   "rank": "SS",
+   "afterSkill": "四天轟雷",
+   "afterRank": "SS",
+   "rate": "100%",
+   "target": "全",
+   "effectShort": "攻撃360%上昇+防御360%上昇(部隊内初期スキルに砲・器対象追加)"
+  },
+  {
+   "slot": "S2",
+   "skill": "星宿劫ノ法壁",
+   "rank": "SS",
+   "afterSkill": "星宿劫ノ法壁",
+   "afterRank": "SS",
+   "rate": "49%",
+   "target": "全",
+   "effectShort": "防御120%上昇(本丸防御陣形第参列目以降で3倍)"
+  }
+ ],
+ "notes": [
+  "45do.info(生HTML skiladd_wrap)+ameameixa.com(スキルテーブル)の2ソース照合済み、両者一致(この武将自身の初期スキルは候補にA枠のみ含まれる)"
+ ]
+}

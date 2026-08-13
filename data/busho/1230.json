@@ -1,0 +1,98 @@
+{
+ "name": "大谷吉継（2）",
+ "no": "1230",
+ "ch": "25章",
+ "cost": 4.5,
+ "troop": "防",
+ "sub": "兵站",
+ "effect": "加勢中に部隊編成可能／追加スキルの防御・破壊効果2倍",
+ "furigana": "おおたによしつぐ",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1230_full.png",
+ "imageChar": "assets/img/characters/no1230_char.png",
+ "atkBase": 1090,
+ "atkGrowth": 46,
+ "defBase": 1220,
+ "defGrowth": 62,
+ "tacticsBase": 660,
+ "tacticsGrowth": 3,
+ "lv0Troops": 4740,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "SS"
+ },
+ "initialSkill": "冥界ノ千里眼",
+ "skillDetail": "S/LV10 確率 100% 対象:追加スキル　兵站\n模倣不可\n①他城主の拠点に加勢中に部隊の兵士編成が可能になる\n②このスキルを持つ武将カードは追加スキルの防御・破壊効果が2倍となる",
+ "categoryLinks": [
+  {
+   "href": "skills-heitan.html",
+   "label": "兵站スキル一覧を見る"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "追加スキル 兵站　確率 100% / 追加スキルの防御・破壊効果 2倍"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "海神ノ浮船",
+   "rank": "SS",
+   "afterSkill": "海神ノ浮船",
+   "afterRank": "SS",
+   "rate": "48%",
+   "target": "全 飛翔4",
+   "effectShort": "防御3.5%×防御参加武将数上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "天衣無縫神戒",
+   "rank": "SS",
+   "afterSkill": "天衣無縫神戒",
+   "afterRank": "SS",
+   "rate": "50%",
+   "target": "全",
+   "effectShort": "防御30.02%上昇(部隊総コスト依存)"
+  },
+  {
+   "slot": "C",
+   "skill": "天磐船",
+   "rank": "SS",
+   "afterSkill": "天磐船",
+   "afterRank": "SS",
+   "rate": "56%",
+   "target": "全",
+   "effectShort": "防御3.8%×防御参加武将数上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "国津破邪ノ楯",
+   "rank": "SS",
+   "afterSkill": "国津破邪ノ楯",
+   "afterRank": "SS",
+   "rate": "60%",
+   "target": "全",
+   "effectShort": "防御60.04%上昇(部隊総コスト依存)"
+  },
+  {
+   "slot": "S2",
+   "skill": "布都御魂ノ鬨",
+   "rank": "SS",
+   "afterSkill": "布都御魂ノ鬨",
+   "afterRank": "SS",
+   "rate": "35%",
+   "target": "全",
+   "effectShort": "攻撃40%上昇+防御40%上昇+所属部隊内のレアリティS以上のスキル個数×20%を攻防効果に加算"
+  }
+ ],
+ "notes": [
+  "ixanary.com確認: attack-simulator.htmlのNo.1230growth値(defBase660/tacticsBase620)は誤りだったためixanary.comの値(defBase1220/tacticsBase660、スクリーンショットと一致)を採用",
+  "カード画像照合済み(2026-08-02): 槍A/弓A/馬A/器SS",
+  "45do.info(ordinary/0112)生HTML + ameameixa.com(bushocard-1230)生HTML の2ソースで完全一致を確認(2026-08-02)"
+ ]
+}

@@ -1,0 +1,137 @@
+{
+ "name": "服部半蔵",
+ "no": "2403",
+ "ch": "未確認",
+ "cost": 3.5,
+ "troop": "全防",
+ "sub": "",
+ "effect": "被害兵士Ptの2%+獲得防御Ptの5%の銅銭獲得(自拠点防御時4倍)",
+ "furigana": "はっとりはんぞう",
+ "illustrator": "正子公也",
+ "imageFull": "assets/img/characters/no2403_full.png",
+ "imageChar": "assets/img/characters/no2403_char.png",
+ "atkBase": 1050,
+ "atkGrowth": 47,
+ "defBase": 1050,
+ "defGrowth": 47,
+ "tacticsBase": 510,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3500,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "夜叉源氏車",
+ "skillDetail": "A/LV10 確率 50% 防御50%上昇/対象:全\n①防御50%上昇する\n②全防御自部隊被害兵士ポイントの2%+獲得防御ポイントの5%の銅銭を獲得する\n③自拠点防御時は銅銭獲得量が4倍になる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 50% / 防御 50%上昇(被害兵士Ptの2%+獲得防御Ptの5%の銅銭獲得・自拠点防御時4倍)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": null
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": null
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": null
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": null
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": null
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": null
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "戦陣 阿吽",
+   "rank": "A",
+   "afterSkill": "覇王征軍",
+   "afterRank": "SS",
+   "target": null,
+   "rate": null,
+   "effectShort": null,
+   "afterTarget": "全",
+   "afterRate": "+42%",
+   "afterEffectShort": "攻撃 25.39%上昇(部隊総コストで変動、TR別データは未確認)"
+  },
+  {
+   "slot": "B",
+   "skill": "戦陣 破軍",
+   "rank": "A",
+   "afterSkill": "天穿神滅",
+   "afterRank": "SS",
+   "target": null,
+   "rate": null,
+   "effectShort": null,
+   "afterTarget": "砲器",
+   "afterRate": "+50%",
+   "afterEffectShort": "攻撃((ランク+1)xコストx3) %上昇(部隊ランクとコストで効果が変化)"
+  },
+  {
+   "slot": "C",
+   "skill": "戦陣 一閃",
+   "rank": "A",
+   "afterSkill": "神光征軍",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "+50%",
+   "effectShort": "攻撃50%上昇+速度50%上昇",
+   "afterTarget": "全",
+   "afterRate": "+100%",
+   "afterEffectShort": "攻撃 90%上昇+速度200%上昇(TRなし)"
+  },
+  {
+   "slot": "S1",
+   "skill": "禄寿応穏",
+   "rank": "A",
+   "afterSkill": "禄寿応穏",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "+35%",
+   "effectShort": "防御35%上昇(銅銭獲得率7.5%・防御で倒した兵数に応じ防御参加者全員が銅銭獲得)"
+  },
+  {
+   "slot": "S2",
+   "skill": "洞察",
+   "rank": "B",
+   "afterSkill": "洞察",
+   "afterRank": "B",
+   "target": "全",
+   "rate": "+30%",
+   "effectShort": "防御(部隊ランクスキル発動率×10)%上昇"
+  }
+ ],
+ "notes": [
+  "限定極(2019-12-11〜、ixaixa.com確認)。章は未確認。職業「忍」・部隊スキル「速.忍び衆」(ixanary)。",
+  "スキル名はカード画像の低解像度では「夜叉源兵車」に見えるが、ixanary・ixaixaの両ソースで「夜叉源氏車」を確認。",
+  "出典: カード画像(LV1形式: 極・統率バッジ拡大確認・初期値1050/1050/510・コスト3.5・LV1スキル値。",
+  "  このカードは天限突破済み表示のため指揮兵数5700は採用せず、ixanaryの★0-0=3500をlv0Troopsに使用(B-00ルール))",
+  " + ixanary.com/cards/2403(成長+47/+47/+2.5・LV10: 確率+50%/全防50%/被害兵士Pt2%+獲得防御Pt5%の銅銭・自拠点4倍)",
+  " + ixaixa.com/archives/7014(合成テーブル・各候補の効果)。",
+  "スキルはA(鍛錬情報なし)のためTR1以降のeffectはnull。",
+  "合成テーブルは登録時ixaixa.com単一ソースだったが、2026-08-12にixanaryのスキル個別ページ",
+  " (1次/2次候補)と全行一致することを確認し2ソースになった(tools/audit_characters.py --online)。"
+ ]
+}

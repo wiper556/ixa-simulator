@@ -1,0 +1,63 @@
+{
+ "name": "聖剣深鏡",
+ "rank": "S",
+ "baseRate": 1,
+ "target": "全",
+ "noMimic": true,
+ "effectSummary": "S/LV10 確率 1% 防御上昇/対象:全\n模倣不可\n①(係数×防御参加武将数)%を防御効果に加算する(係数はLV10=11)",
+ "categoryLinks": [
+  {
+   "href": "skills-count-def.html",
+   "label": "人数依存(防)スキル一覧を見る"
+  }
+ ],
+ "sourceCharacters": [
+  {
+   "name": "最上義光-復刻-【覇】",
+   "no": "10076",
+   "slot": "S2"
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "聖剣深鏡",
+  "rank": "S"
+ },
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "coefficient": "11",
+   "effect": "全　確率 1% / 防御 11%×防御参加武将数(280人)=3080.0%"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "coefficient": "11.4",
+   "effect": "全　確率 1% / 防御 11.4%×防御参加武将数(280人)=3192.0%"
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "coefficient": "12.3",
+   "effect": "全　確率 1% / 防御 12.3%×防御参加武将数(280人)=3444.0%"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "coefficient": "13.6",
+   "effect": "全　確率 1% / 防御 13.6%×防御参加武将数(280人)=3808.0%"
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "coefficient": "15.4",
+   "effect": "全　確率 1% / 防御 15.4%×防御参加武将数(280人)=4312.0%"
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "coefficient": "17.6",
+   "effect": "全　確率 1% / 防御 17.6%×防御参加武将数(280人)=4928.0%"
+  }
+ ]
+}

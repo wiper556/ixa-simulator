@@ -64,7 +64,12 @@ def main():
         print("作業ツリーを作れない: " + (r.stderr or "")[-300:])
         return 1
     try:
-        for tool in ("gen_detail_pages.py", "prerender.py"):
+        # build_data を先頭に置くのが要点(2026-08-13の作り替え)。正本は
+        # data/busho*/ と data/skill/ に移り、ページ内の配列は生成物になった。
+        # ここで作り直すことで、次の2つが**どちらも**同じ1つの検査で止まる:
+        #   ・data/ を直したのにページを再生成していない
+        #   ・ページの配列を手で書き換えた(data/ から作り直すと消える)
+        for tool in ("build_data.py", "gen_detail_pages.py", "prerender.py"):
             r = run([sys.executable, os.path.join("tools", tool)], cwd=wt)
             if r.returncode != 0:
                 print("[停止] %s が失敗した。" % tool)
@@ -101,11 +106,13 @@ def main():
         if len(real) > 20:
             print("  ... ほか%d件" % (len(real) - 20))
         print()
-        print("原因は次のどちらか:")
-        print("  ・データを変えたのに再生成していない(P-01/P-02)")
-        print("    → python tools/prerender.py と python tools/gen_detail_pages.py を回す")
+        print("原因は次のどれか:")
+        print("  ・data/ を変えたのに再生成していない(P-01/P-02)")
+        print("    → python tools/build_data.py → prerender.py → gen_detail_pages.py の順に回す")
         print("  ・生成物を手で書き換えた")
-        print("    → busho/ skill/ は生成物なので手で編集しない。データ側を直す")
+        print("    → busho/ skill/ は生成物なので手で編集しない。data/ 側を直す")
+        print("  ・characters*.html / skills.html の中の配列を手で書き換えた")
+        print("    → 配列も生成物になった。正本は data/busho*/{No}.json と data/skill/{名前}.json")
         return 1
     finally:
         run(["git", "worktree", "remove", "--force", wt])

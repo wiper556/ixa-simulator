@@ -1,0 +1,105 @@
+{
+ "name": "井伊直孝",
+ "no": "2366",
+ "ch": "未確認",
+ "cost": 4,
+ "troop": "攻",
+ "sub": "",
+ "effect": "追加スキルの速度効果2倍(模倣不可)",
+ "furigana": "いいなおたか",
+ "illustrator": "JaneMere",
+ "imageFull": "assets/img/characters/no2366_full.png",
+ "imageChar": "assets/img/characters/no2366_char.png",
+ "atkBase": 1120,
+ "atkGrowth": 46,
+ "defBase": 1040,
+ "defGrowth": 32,
+ "tacticsBase": 520,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3960,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "B",
+  "uma": "S",
+  "ki": "A"
+ },
+ "initialSkill": "炎牛武陣",
+ "skillDetail": "A/LV10 確率 100% 対象:追加スキル\n模倣不可\n①このスキルを持つ武将カードは追加スキルの速度効果が2倍になる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "追加スキル　確率 100% / 速度効果 2倍"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "湖裂騎刃",
+   "rank": "A",
+   "afterSkill": "不滅ノ鬼神",
+   "afterRank": "S",
+   "target": "弓・馬・器・騎",
+   "rate": "+100%",
+   "effectShort": "攻撃150%上昇+速度40%上昇+帰還時間短縮(3分・模倣不可)",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 100%上昇(確率70%)+速度 70%上昇(確率100%)(TR別データは未確認)"
+  },
+  {
+   "slot": "B",
+   "skill": "騎聖",
+   "rank": "A",
+   "afterSkill": "神光征軍",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "+100%",
+   "effectShort": "攻撃80%上昇+速度50%上昇(武将コストで変動)",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 90%上昇+速度200%上昇(TRなし)"
+  },
+  {
+   "slot": "C",
+   "skill": "騎聖",
+   "rank": "A",
+   "afterSkill": "神光征軍",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "+100%",
+   "effectShort": "攻撃80%上昇+速度50%上昇(武将コストで変動)",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 90%上昇+速度200%上昇(TRなし)"
+  },
+  {
+   "slot": "S1",
+   "skill": "不滅ノ鬼神",
+   "rank": "S",
+   "afterSkill": "朧雲ノ閃撃",
+   "afterRank": "SSS",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "攻撃 100%上昇(確率70%)+速度 70%上昇(確率100%)(TR別データは未確認)",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃170%上昇+速度240%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "不滅ノ鬼神",
+   "rank": "S",
+   "afterSkill": "朧雲ノ閃撃",
+   "afterRank": "SSS",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "攻撃 100%上昇(確率70%)+速度 70%上昇(確率100%)(TR別データは未確認)",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃170%上昇+速度240%上昇"
+  }
+ ],
+ "notes": [
+  "45do.info+ixagno.blog.fc2.com(blog-entry-9637)確認済み: 自己スキル(炎牛武陣)は候補に含まれず。Aの湖裂騎刃は移植後「不滅ノ鬼神」[S]に、B/Cの騎聖は移植後「神光征軍」[SS]に、S1/S2の不滅ノ鬼神は移植後「朧雲ノ閃撃」[SSS]に変化"
+ ]
+}

@@ -1,0 +1,57 @@
+{
+ "name": "葵ノ慈母",
+ "rank": "S",
+ "baseRate": 50,
+ "target": "槍・弓・器・鉄",
+ "effectSummary": "S/LV10 確率 50% 防御110%上昇/対象:槍・弓・器・鉄\n①防御110%上昇する\n②自拠点防御時は防御効果が3倍になる",
+ "sourceCharacters": [
+  {
+   "name": "西郷局",
+   "no": "2583",
+   "slot": "移植不可",
+   "db": "kyoku"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・弓・器・鉄　確率 50% / 防御 110%上昇(自拠点防御時は防御効果3倍)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": null
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": null
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": null
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": null
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": null
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": null
+  }
+ ],
+ "notes": [
+  "2026-08-12一括作成。S以上の初期スキルは無条件でページを作る規約(A-3-9)の未処理分。",
+  "内容は武将エントリの登録値をそのまま転記している。",
+  "categoryLinksは9項目の判定を1件ずつやる必要があるため意図的に付けていない(付け忘れではない)。"
+ ]
+}

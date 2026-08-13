@@ -1,0 +1,100 @@
+{
+ "name": "大友宗麟",
+ "no": "1210",
+ "ch": "23章",
+ "cost": 4,
+ "troop": "全防",
+ "sub": "",
+ "effect": "拠点待機90分ごとに防御効果1.5倍(上限4回)",
+ "furigana": "おおともそうりん",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1210_full.png",
+ "imageChar": "assets/img/characters/no1210_char.png",
+ "atkBase": 1070,
+ "atkGrowth": 39,
+ "defBase": 1160,
+ "defGrowth": 60,
+ "tacticsBase": 650,
+ "tacticsGrowth": 3,
+ "lv0Troops": 4370,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "S",
+  "ki": "A"
+ },
+ "initialSkill": "無鹿ノ幻律",
+ "skillDetail": "S/LV10 確率 70% 防御80%上昇/対象:全\n①防御80%上昇する\n②拠点待機90分ごとに防御効果が1.5倍になる(上限4回)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 70% / 防御 80%上昇(90分毎に1.5倍、上限4回)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "無鹿ノ幻律",
+   "rank": "S",
+   "afterSkill": "神屋楯比売命",
+   "afterRank": "SS",
+   "rate": "70%",
+   "target": "全",
+   "effectShort": "防御80%上昇(90分毎に1.5倍、上限4回)",
+   "afterTarget": "自身",
+   "afterRate": "70%",
+   "afterEffectShort": "初期スキル(戦闘スキルのみ)を模倣(1倍)"
+  },
+  {
+   "slot": "B",
+   "skill": "無鹿ノ幻律",
+   "rank": "S",
+   "afterSkill": "神屋楯比売命",
+   "afterRank": "SS",
+   "rate": "70%",
+   "target": "全",
+   "effectShort": "防御80%上昇(90分毎に1.5倍、上限4回)",
+   "afterTarget": "自身",
+   "afterRate": "70%",
+   "afterEffectShort": "初期スキル(戦闘スキルのみ)を模倣(1倍)"
+  },
+  {
+   "slot": "C",
+   "skill": "八重言代主神",
+   "rank": "SS",
+   "afterSkill": "無窮天斥陣",
+   "afterRank": "SS",
+   "rate": "70%",
+   "target": "自身",
+   "effectShort": "初期スキルを模倣(戦闘スキルのみ、1倍)",
+   "afterTarget": "槍弓馬",
+   "afterRate": "+40%",
+   "afterEffectShort": "防御63%上昇(攻撃部隊に兵器兵科がいれば効果1.5倍)"
+  },
+  {
+   "slot": "S1",
+   "skill": "神屋楯比売命",
+   "rank": "SS",
+   "afterSkill": "神屋楯比売命",
+   "afterRank": "SS",
+   "rate": "70%",
+   "target": "自身",
+   "effectShort": "初期スキルを模倣(戦闘スキルのみ、1倍)"
+  },
+  {
+   "slot": "S2",
+   "skill": "高津姫神",
+   "rank": "SS",
+   "afterSkill": "高津姫神",
+   "afterRank": "SS",
+   "rate": "70%",
+   "target": "自身",
+   "effectShort": "初期スキルを模倣(戦闘スキルのみ、1倍)"
+  }
+ ],
+ "notes": [
+  "カード画像照合済み(2026-08-02): 槍S/弓A/馬S/器A",
+  "45do.info(ordinary/0065)生HTML + ameameixa.com(bushocard-1210)生HTML の2ソースで完全一致を確認(2026-08-02)"
+ ]
+}

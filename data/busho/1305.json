@@ -1,0 +1,131 @@
+{
+ "name": "福島正則（4）",
+ "no": "1305",
+ "ch": "31章",
+ "cost": 3,
+ "troop": "槍弓器鉄防",
+ "sub": "無尽",
+ "effect": "部隊コスト10以下で効果2倍",
+ "furigana": "ふくしままさのり",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1305_full.png",
+ "imageChar": "assets/img/characters/no1305_char.png",
+ "atkBase": 1060,
+ "atkGrowth": 42,
+ "defBase": 1260,
+ "defGrowth": 72,
+ "tacticsBase": 660,
+ "tacticsGrowth": 3,
+ "lv0Troops": 4230,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "S",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "火槍猛進",
+ "skillDetail": "S/LV10 確率 55% 防御740%上昇/対象:槍・弓・器・鉄　無尽\n①防御740%上昇する\n②無尽を持つため部隊消費コストを-0.5する\n③部隊コスト10以下で効果2倍となる(TR1時10.5以下TR2時11以下TR3時12以下TR4時13以下TR5時14以下TR6時15以下)\n④TR6(パラレル版)では確率65%に上昇する",
+ "categoryLinks": [
+  {
+   "href": "skills-mujin.html",
+   "label": "無尽スキル一覧を見る"
+  },
+  {
+   "href": "skills-cost.html",
+   "label": "コスト減少スキル一覧を見る"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・弓・器・鉄 無尽　確率 55% / 防御 740%×2(部隊コスト10以下)=1480%上昇"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": "槍・弓・器・鉄 無尽　確率 55% / 防御 760%×2(部隊コスト10.5以下)=1520%上昇"
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": "槍・弓・器・鉄 無尽　確率 55% / 防御 800%×2(部隊コスト11以下)=1600%上昇"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": "槍・弓・器・鉄 無尽　確率 55% / 防御 880%×2(部隊コスト12以下)=1760%上昇"
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": "槍・弓・器・鉄 無尽　確率 55% / 防御 970%×2(部隊コスト13以下)=1940%上昇"
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": "槍・弓・器・鉄 無尽　確率 55% / 防御 1090%×2(部隊コスト14以下)=2180%上昇"
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": "槍・弓・器・鉄 無尽　確率 65% / 防御 1180%×2(部隊コスト15以下)=2360%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "龍驤虎躍",
+   "rank": "SS",
+   "afterSkill": "龍驤虎躍",
+   "afterRank": "SS",
+   "rate": "60%",
+   "target": "全",
+   "effectShort": "攻防810%上昇+コスト-1"
+  },
+  {
+   "slot": "B",
+   "skill": "仙境解脱",
+   "rank": "SS",
+   "afterSkill": "仙境解脱",
+   "afterRank": "SS",
+   "rate": "48%",
+   "target": "全",
+   "effectShort": "防御910%上昇+コスト-1.5"
+  },
+  {
+   "slot": "C",
+   "skill": "天宇受売命",
+   "rank": "SSS",
+   "afterSkill": "天宇受売命",
+   "afterRank": "SSS",
+   "rate": "70%",
+   "target": "自身",
+   "effectShort": "自身の初期スキルを1.25倍にして模倣"
+  },
+  {
+   "slot": "S1",
+   "skill": "火槍猛進",
+   "rank": "S",
+   "afterSkill": "火槍猛進",
+   "afterRank": "S",
+   "rate": "55%",
+   "target": "槍・弓・器・鉄 無尽",
+   "effectShort": "防御740%×2(部隊コスト10以下)=1480%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "四天轟雷",
+   "rank": "SS",
+   "afterSkill": "四天轟雷",
+   "afterRank": "SS",
+   "rate": "100%",
+   "target": "全",
+   "effectShort": "攻防360%上昇+砲・器対象追加"
+  }
+ ],
+ "notes": [
+  "カード画像照合済み(2026-07-30): 槍S/弓S/馬A/器A(旧データはuma/yumiの値が誤って入れ替わっていたため修正)",
+  "synthesisTable: ixanary.com(/skills/火槍猛進/ 合成テーブル)とixagno.blog.fc2.com(blog-entry-10828)で照合済み、A/B/C/S1/S2とも両ソース一致。S1は自己参照(火槍猛進自身)"
+ ]
+}

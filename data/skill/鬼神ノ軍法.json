@@ -1,0 +1,29 @@
+{
+ "name": "鬼神ノ軍法",
+ "rank": "S",
+ "baseRate": 62,
+ "target": "槍・馬・器",
+ "noMimic": true,
+ "effectSummary": "S/LV10 確率 62% 防御190%上昇/対象:槍・馬・器\n①防御190%上昇する\n②本丸防御陣形に配置時この武将の編成コスト消費を-1.5する(模倣不可・TR1〜TR5は未確認)",
+ "sourceCharacters": [
+  {
+   "name": "島津義弘（3）",
+   "no": "1232",
+   "slot": "A"
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "四天轟雷",
+  "rank": "SS"
+ },
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・馬・器　確率 62% / 防御 190%上昇(本丸防御陣形時コスト消費-1.5)"
+  }
+ ],
+ "notes": [
+  "この武将自身の初期スキル(島津義弘(3) No.1232のsynthesisTable候補A)"
+ ]
+}

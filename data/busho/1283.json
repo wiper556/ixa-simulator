@@ -1,0 +1,117 @@
+{
+ "name": "鍋島直茂",
+ "no": "1283",
+ "ch": "29章",
+ "cost": 5,
+ "troop": "全防",
+ "sub": "",
+ "effect": "防御効果のみコスト【+1】計算",
+ "furigana": "なべしまなおしげ",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1283_full.png",
+ "imageChar": "assets/img/characters/no1283_char.png",
+ "atkBase": 1060,
+ "atkGrowth": 45,
+ "defBase": 1250,
+ "defGrowth": 72,
+ "tacticsBase": 670,
+ "tacticsGrowth": 3,
+ "lv0Troops": 5060,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "S",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "旋渦訣刀",
+ "skillDetail": "S/LV10 確率 58% 防御480%上昇/対象:全\n①防御480%上昇する\n②部隊内で武将コストが武将スキルに影響するとき防御効果部分のみこの武将のコストを+1で計算する(特殊効果は部隊内重複不可)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 58% / 防御 480%上昇(コスト+1計算・重複不可)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": "全　確率 58% / 防御 600%上昇(コスト+1.0計算・重複不可)"
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": "全　確率 58% / 防御 600%上昇(コスト+1.1計算・重複不可)"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": "全　確率 58% / 防御 600%上昇(コスト+1.2計算・重複不可)"
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": "全　確率 58% / 防御 880%上昇(コスト+1.3計算・重複不可)"
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": "全　確率 58% / 防御 880%上昇(コスト+1.5計算・重複不可)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "国津破邪ノ楯",
+   "rank": "SS",
+   "afterSkill": "国津破邪ノ楯",
+   "afterRank": "SS",
+   "rate": "60%",
+   "target": "全",
+   "effectShort": "防御60.04%上昇(部隊総コスト依存)"
+  },
+  {
+   "slot": "B",
+   "skill": "旌旗翳天ノ覇陣",
+   "rank": "SS",
+   "afterSkill": "旌旗翳天ノ覇陣",
+   "afterRank": "SS",
+   "rate": "54%",
+   "target": "全 兵站",
+   "effectShort": "防御90.11%上昇(部隊総コスト依存)"
+  },
+  {
+   "slot": "C",
+   "skill": "國才連豪",
+   "rank": "SS",
+   "afterSkill": "國才連豪",
+   "afterRank": "SS",
+   "rate": "50%",
+   "target": "全",
+   "effectShort": "防御が係数×同スキル所持武将数で上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "従魔絶神",
+   "rank": "SSS",
+   "afterSkill": "従魔絶神",
+   "afterRank": "SSS",
+   "rate": "43%",
+   "target": "全 飛翔13",
+   "effectShort": "防御を係数×人数で上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "万里嵐壁",
+   "rank": "SS",
+   "afterSkill": "万里嵐壁",
+   "afterRank": "SS",
+   "rate": "66%",
+   "target": "全",
+   "effectShort": "防御200%上昇+敵軍部隊数×40%加算"
+  }
+ ],
+ "notes": [
+  "カード画像照合済み: 槍S/弓S/馬A/器A",
+  "ixagno.blog.fc2.com(blog-entry-10200)生HTML照合済み(2026-08-02): TR1〜TR4の実在を確認し追記",
+  "45do.info(ordinary/0310)生HTML + ixagno.blog.fc2.com(blog-entry-10200)生HTML の2ソースでA/B/C/S1/S2の対応を突き合わせ、完全一致を確認(2026-08-02)"
+ ]
+}

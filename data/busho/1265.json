@@ -1,0 +1,137 @@
+{
+ "name": "蒲生氏郷（2）",
+ "no": "1265",
+ "ch": "28章",
+ "cost": 4.5,
+ "troop": "槍馬器防",
+ "sub": "兵站",
+ "effect": "防御参加武将数依存で防御・破壊上昇",
+ "furigana": "がもううじさと",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1265_full.png",
+ "imageChar": "assets/img/characters/no1265_char.png",
+ "atkBase": 1060,
+ "atkGrowth": 44,
+ "defBase": 1230,
+ "defGrowth": 68,
+ "tacticsBase": 650,
+ "tacticsGrowth": 3,
+ "lv0Troops": 4800,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "S",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "天限ノ麒麟",
+ "skillDetail": "S/LV10 確率 45% 防御150%上昇/対象:槍・馬・器・焙　兵站\n模倣不可\n①防御150%上昇する\n②破壊150%上昇する\n③防御参加武将数×6.5%を防御効果に加算する",
+ "categoryLinks": [
+  {
+   "href": "skills-heitan.html",
+   "label": "兵站スキル一覧を見る"
+  },
+  {
+   "href": "skills-count-def.html",
+   "label": "人数依存(防)スキル一覧を見る"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・馬・器・焙 兵站　確率 45% / 防御150%上昇+破壊150%上昇(防御参加武将数×6.5%加算)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": "槍・馬・器・焙 兵站　確率 45% / 防御170%上昇+破壊160%上昇(防御参加武将数×6.5%加算)"
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": "槍・馬・器・焙 兵站　確率 45% / 防御200%上昇+破壊170%上昇(防御参加武将数×6.5%加算)"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": "槍・馬・器・焙 兵站　確率 45% / 防御240%上昇+破壊180%上昇(防御参加武将数×6.5%加算)"
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": "槍・馬・器・焙 兵站　確率 45% / 防御290%上昇+破壊190%上昇(防御参加武将数×6.5%加算)"
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": "槍・馬・器・焙 兵站　確率 45% / 防御350%上昇+破壊200%上昇(防御参加武将数×6.5%加算)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "天限ノ麒麟",
+   "rank": "S",
+   "afterSkill": "虚実兵妙",
+   "afterRank": "SS",
+   "rate": "45%",
+   "target": "槍・馬・器・焙 兵站",
+   "effectShort": "防御150%上昇+破壊150%上昇(防御参加武将数×6.5%加算)",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "防御 740%上昇(敵軍卓越確率-8%)"
+  },
+  {
+   "slot": "B",
+   "skill": "天限ノ麒麟",
+   "rank": "S",
+   "afterSkill": "虚実兵妙",
+   "afterRank": "SS",
+   "rate": "45%",
+   "target": "槍・馬・器・焙 兵站",
+   "effectShort": "防御150%上昇+破壊150%上昇(防御参加武将数×6.5%加算)",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "防御 740%上昇(敵軍卓越確率-8%)"
+  },
+  {
+   "slot": "C",
+   "skill": "天限ノ麒麟",
+   "rank": "S",
+   "afterSkill": "虚実兵妙",
+   "afterRank": "SS",
+   "rate": "45%",
+   "target": "槍・馬・器・焙 兵站",
+   "effectShort": "防御150%上昇+破壊150%上昇(防御参加武将数×6.5%加算)",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "防御 740%上昇(敵軍卓越確率-8%)"
+  },
+  {
+   "slot": "S1",
+   "skill": "虚実兵妙",
+   "rank": "SS",
+   "afterSkill": "虚実兵妙",
+   "afterRank": "SS",
+   "rate": "100%",
+   "target": "全",
+   "effectShort": "防御740%上昇+防衛戦闘時敵軍の卓越確率-8%する(自軍内重複上限2)"
+  },
+  {
+   "slot": "S2",
+   "skill": "黄泉醜女ノ屍兵",
+   "rank": "SS",
+   "afterSkill": "天地黎明",
+   "afterRank": "SSS",
+   "rate": "54%",
+   "target": "全",
+   "effectShort": "防御200%上昇+防御戦闘時自部隊内武将が受ける70以下のダメージを最大45に軽減",
+   "afterTarget": "全",
+   "afterRate": "70%",
+   "afterEffectShort": "防御 270%上昇(HP99以下で3倍)"
+  }
+ ],
+ "notes": [
+  "synthesisTable: 45do.info生HTML(skiladd_wrap)+ixanary.com(天限ノ麒麟スキルページの合成テーブル)で2ソース一致確認済み(2026-08-02)"
+ ]
+}

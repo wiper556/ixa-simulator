@@ -1,0 +1,29 @@
+{
+ "name": "義響鉄心",
+ "rank": "S",
+ "baseRate": 50,
+ "target": "槍・弓・砲・器",
+ "noMimic": true,
+ "effectSummary": "S/LV10 確率 50% 防御200%上昇/対象:槍・弓・砲・器\n①防御200%上昇する\n②所領防御陣形の第伍列目に配置時防御効果が3倍となる(模倣不可)",
+ "sourceCharacters": [
+  {
+   "name": "佐竹義宣（2）",
+   "no": "1267",
+   "slot": "A・B"
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "神羅聖域",
+  "rank": "SS"
+ },
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・弓・砲・器　確率 50% / 防御 200%上昇(第伍列配置時3倍)"
+  }
+ ],
+ "notes": [
+  "この武将自身の初期スキル(佐竹義宣(2) No.1267のsynthesisTable候補A・B)"
+ ]
+}

@@ -1,0 +1,37 @@
+{
+ "name": "神農医方",
+ "rank": "S",
+ "baseRate": 100,
+ "target": "全",
+ "noMimic": true,
+ "effectSummary": "S/LV10 確率：+100% / 対象 全 飛翔4 攻撃：220%上昇 攻撃時 卓越 ：追加確率45%で所属部隊の武将は 飛翔X の代わりに 飛翔[X+7] を持つ(模倣不可・部隊内重複不可・二重卓越不可)",
+ "categoryLinks": [
+  {
+   "href": "skills-takuetsu.html",
+   "label": "卓越スキル一覧を見る"
+  }
+ ],
+ "sourceCharacters": [
+  {
+   "name": "高荷恵",
+   "no": "2610",
+   "slot": "C",
+   "db": "kyoku"
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "月詠ノ覇威",
+  "rank": "SS"
+ },
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 飛翔4 攻撃220%上昇 攻撃時、 卓越 追加確率45%で、所属部隊の武将は、 飛翔X の代わりに 飛翔[X+7] を持つ(模倣不可・部隊内重複不可・二重卓越不可)"
+  }
+ ],
+ "notes": [
+  "2026-08-12作成。合成候補に出てくるS以上はページを作る規約(A-3)の未処理分。",
+  "ixanary.com/skills/神農医方 から取得。categoryLinksは9項目の判定が要るため付けていない。"
+ ]
+}

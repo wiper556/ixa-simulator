@@ -1,0 +1,117 @@
+{
+ "name": "望月千代女",
+ "no": "2855",
+ "ch": "未確認",
+ "cost": 4.5,
+ "troop": "全攻",
+ "sub": "",
+ "effect": "敵の攻撃側武将数依存スキルの計算に自分を+1名追加させる",
+ "furigana": "もちづきちよめ",
+ "illustrator": "影井由宇",
+ "imageFull": "assets/img/characters/no2855_full.png",
+ "imageChar": "assets/img/characters/no2855_char.png",
+ "atkBase": 1220,
+ "atkGrowth": 64,
+ "defBase": 1100,
+ "defGrowth": 54,
+ "tacticsBase": 550,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 4600,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "虎巫",
+ "skillDetail": "S/LV10 確率 50% 攻撃1000%上昇/対象:全\n模倣不可・特殊効果は部隊内重複不可\n①攻撃1000%上昇する\n②攻撃戦闘時攻撃側武将数を数えて効果が変動する敵軍防御側の武将スキルはこの武将の分を+1名追加して効果を計算する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 50% / 攻撃 1000%上昇(敵の攻撃側武将数依存スキルに+1名)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": null
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": null
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": null
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": null
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": "全　確率 50% / 攻撃 1500%上昇(敵の攻撃側武将数依存スキルに+3名)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "歩き巫女",
+   "rank": "D",
+   "afterSkill": "蒼刃ノ輔曳",
+   "afterRank": "D",
+   "afterTarget": "弓器",
+   "afterRate": "+35%",
+   "afterEffectShort": "防御27%上昇(攻撃部隊に兵器兵科がいれば効果2倍)"
+  },
+  {
+   "slot": "B",
+   "skill": "虎賁統帥",
+   "rank": "SS",
+   "afterSkill": "虎賁統帥",
+   "afterRank": "SS",
+   "target": "全 撤退 覇道",
+   "rate": "100%",
+   "effectShort": "攻撃1130%上昇+速度200%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "天甲破山",
+   "rank": "S",
+   "afterSkill": "天焉相克",
+   "afterRank": "SS",
+   "afterTarget": "槍・弓・馬",
+   "afterRate": "70%",
+   "afterEffectShort": "攻撃30%上昇(部隊総コスト依存)"
+  },
+  {
+   "slot": "S1",
+   "skill": "虎巫",
+   "rank": "S",
+   "afterSkill": "虎巫",
+   "afterRank": "S"
+  },
+  {
+   "slot": "S2",
+   "skill": "瞬刻無影",
+   "rank": "S",
+   "afterSkill": "朧雲ノ閃撃",
+   "afterRank": "SSS",
+   "target": "部隊長",
+   "rate": "+45%",
+   "effectShort": "部隊長の初期スキルを1.1倍に強化して模倣(確率45%)+速度 100%上昇(確率100%)(TRなし)",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃170%上昇+速度240%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/2855 と skills/虎巫 の生HTML)で確認(2026-08-08)。",
+  "合成テーブルはスキルページの1次(=移植前)・2次(=移植後)から取得。",
+  "候補スキルの対象・確率・効果はサイト内の既存登録から転記(未登録のスキルは空のまま)。"
+ ]
+}

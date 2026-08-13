@@ -1,0 +1,124 @@
+{
+ "name": "斎藤利三",
+ "no": "2376",
+ "ch": "未確認",
+ "cost": 4.5,
+ "troop": "槍馬器騎攻",
+ "sub": "",
+ "effect": "部隊内レアリティA以上のスキル数に応じ攻撃上昇",
+ "furigana": "さいとうとしみつ",
+ "illustrator": "西野幸治",
+ "imageFull": "assets/img/characters/no2376_full.png",
+ "imageChar": "assets/img/characters/no2376_char.png",
+ "atkBase": 1120,
+ "atkGrowth": 46,
+ "defBase": 1020,
+ "defGrowth": 32,
+ "tacticsBase": 530,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 4270,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "B",
+  "uma": "S",
+  "ki": "A"
+ },
+ "initialSkill": "雨下義炎",
+ "skillDetail": "A/LV10 確率 43% 攻撃上昇/対象:槍・馬・器・騎\n①所属部隊内のレアリティA以上のスキル個数×30%を攻撃効果に加算する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・馬・器・騎　確率 43% / 攻撃 所属部隊内のレアリティA以上のスキル個数×30%"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": "槍・馬・器・騎　確率 43% / 攻撃 所属部隊内のレアリティA以上のスキル個数×33%"
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": "槍・馬・器・騎　確率 43% / 攻撃 所属部隊内のレアリティA以上のスキル個数×40%"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": null
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": null
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": null
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "雨下義炎",
+   "rank": "A",
+   "afterSkill": "志半ノ矛楯",
+   "afterRank": "A",
+   "target": "槍・馬・器・騎",
+   "rate": "43%",
+   "effectShort": "攻撃 所属部隊内のレアリティA以上のスキル個数×30%",
+   "afterTarget": "全",
+   "afterRate": "+65%",
+   "afterEffectShort": "攻撃465%上昇+防御465%上昇(模倣不可)"
+  },
+  {
+   "slot": "B",
+   "skill": "雨下義炎",
+   "rank": "A",
+   "afterSkill": "志半ノ矛楯",
+   "afterRank": "A",
+   "target": "槍・馬・器・騎",
+   "rate": "43%",
+   "effectShort": "攻撃 所属部隊内のレアリティA以上のスキル個数×30%",
+   "afterTarget": "全",
+   "afterRate": "+65%",
+   "afterEffectShort": "攻撃465%上昇+防御465%上昇(模倣不可)"
+  },
+  {
+   "slot": "C",
+   "skill": "転歌",
+   "rank": "A",
+   "afterSkill": "入来神舞",
+   "afterRank": "S",
+   "target": "部隊長",
+   "rate": "80%",
+   "effectShort": "部隊長の初期スキルを模倣(戦闘スキルのみ、TR別データは未確認)",
+   "afterTarget": "部隊長",
+   "afterRate": "55%",
+   "afterEffectShort": "部隊長の初期スキルを1.1倍に強化して模倣(TR別データは未確認)"
+  },
+  {
+   "slot": "S1",
+   "skill": "志半ノ矛楯",
+   "rank": "A",
+   "afterSkill": "志半ノ矛楯",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "+65%",
+   "effectShort": "攻撃465%上昇+防御465%上昇(模倣不可)"
+  },
+  {
+   "slot": "S2",
+   "skill": "志半ノ矛楯",
+   "rank": "A",
+   "afterSkill": "志半ノ矛楯",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "+65%",
+   "effectShort": "攻撃465%上昇+防御465%上昇(模倣不可)"
+  }
+ ],
+ "notes": [
+  "45do.info+ixagno.blog.fc2.com(blog-entry-9905)確認済み: A/Bの雨下義炎は移植後「志半ノ矛楯」に、Cの転歌は移植後「入来神舞」[S]に変化(自己参照ではない)"
+ ]
+}

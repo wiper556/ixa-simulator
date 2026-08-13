@@ -4,4 +4,15 @@
 # pre-commit は rebase・cherry-pick・--no-verify で素通りできる。
 # それらは全部「push する」で合流するので、ここで push される中身そのものを検査する。
 # 途中の経路が何であれ、外に出る内容は必ず一度は監査を通ることになる。
-exec python tools/precommit_check.py --mode push
+#
+# Z-1(第5回): tools/ に未追跡の .py を置くと import を乗っ取れたので、
+# -P 起動 + シェル側での事前確認を入れた(pre-commit と同じ)。
+
+STRAY=$(git status --porcelain -- tools | grep '^??' | grep '\.py$' || true)
+if [ -n "$STRAY" ]; then
+  echo "[停止] tools/ に追跡されていない .py がある(import乗っ取り対策・第5回 Z-1)"
+  echo "$STRAY"
+  exit 1
+fi
+
+exec python -P tools/precommit_check.py --mode push

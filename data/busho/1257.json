@@ -1,0 +1,96 @@
+{
+ "name": "村上武吉（2）",
+ "no": "1257",
+ "ch": "27章",
+ "cost": 4,
+ "troop": "弓馬砲器攻",
+ "sub": "",
+ "effect": "自部隊同時攻撃時に合流し不足数を得る",
+ "furigana": "むらかみたけよし",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1257_full.png",
+ "imageChar": "assets/img/characters/no1257_char.png",
+ "atkBase": 1240,
+ "atkGrowth": 64,
+ "defBase": 1080,
+ "defGrowth": 50,
+ "tacticsBase": 650,
+ "tacticsGrowth": 3,
+ "lv0Troops": 4560,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "SS",
+  "ki": "A"
+ },
+ "initialSkill": "海王怒涛",
+ "skillDetail": "S/LV10 確率 55% 攻撃440%上昇/対象:弓・馬・砲・器\n①攻撃440%上昇する\n②自部隊同時攻撃時この武将は合流し自部隊数-2の不足を得る(特殊効果は模倣不可)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓・馬・砲・器　確率 55% / 攻撃 440%上昇(自部隊同時攻撃時、合流し不足(部隊数-2)を得る)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "十束ノ神域",
+   "rank": "SS",
+   "afterSkill": "天聖宝冠",
+   "afterRank": "SSS",
+   "rate": "100%",
+   "target": "全 覇道",
+   "effectShort": "攻撃320%上昇+速度70%上昇",
+   "afterTarget": "全",
+   "afterRate": "45%",
+   "afterEffectShort": "攻撃 100%+5%×防御参加武将数(280人)=1500.0%"
+  },
+  {
+   "slot": "B",
+   "skill": "天頂ノ電光",
+   "rank": "SSS",
+   "afterSkill": "天頂ノ電光",
+   "afterRank": "SSS",
+   "rate": "12%",
+   "target": "全",
+   "effectShort": "攻撃190%上昇(部隊長なら発動率・効果3倍)"
+  },
+  {
+   "slot": "C",
+   "skill": "海王怒涛",
+   "rank": "S",
+   "afterSkill": "破軍騎行",
+   "afterRank": "SS",
+   "rate": "55%",
+   "target": "弓・馬・砲・器",
+   "effectShort": "攻撃440%上昇(自部隊同時攻撃時合流し不足を得る)",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 750%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "破軍騎行",
+   "rank": "SS",
+   "afterSkill": "破軍騎行",
+   "afterRank": "SS",
+   "rate": "100%",
+   "target": "全 不屈2",
+   "effectShort": "攻撃750%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "月詠ノ覇威",
+   "rank": "SS",
+   "afterSkill": "月詠ノ覇威",
+   "afterRank": "SS",
+   "rate": "100%",
+   "target": "全",
+   "effectShort": "攻撃344%上昇+防御344%上昇+卓越確率+15%(模倣不可)"
+  }
+ ],
+ "notes": [
+  "45do.info生HTML(skiladd_wrap) + ixagno.blog.fc2.com(blog-entry-9520、検索クエリ「No.1257」で発見)生HTML の2ソースで完全一致を確認(2026-08-02再検証)"
+ ]
+}

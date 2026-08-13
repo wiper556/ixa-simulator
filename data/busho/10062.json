@@ -1,0 +1,129 @@
+{
+ "name": "百地三太夫",
+ "no": "10062",
+ "ch": "29章",
+ "cost": 5.5,
+ "troop": "-",
+ "sub": "撤退",
+ "effect": "部隊長の初期スキルを模倣して強化発動",
+ "furigana": "ももちさんだゆう",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no10062_full.png",
+ "imageChar": "assets/img/characters/no10062_char.png",
+ "atkBase": 1210,
+ "atkGrowth": 70,
+ "defBase": 1210,
+ "defGrowth": 70,
+ "tacticsBase": 710,
+ "tacticsGrowth": 4,
+ "lv0Troops": 5250,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "X"
+ },
+ "initialSkill": "封法大十字",
+ "skillDetail": "S/LV10 確率 40% 対象:部隊長　撤退\n模倣不可\n①部隊長撤退時所属部隊の部隊長が持つ模倣可能な初期スキルを通常攻撃/防御効果を1.24倍して模倣する\n②撤退を持つため部隊は陣での防御戦闘に参加しない",
+ "categoryLinks": [
+  {
+   "href": "skills-taitai.html",
+   "label": "撤退スキル一覧を見る"
+  },
+  {
+   "href": "skills-leadermimic.html",
+   "label": "部隊長模倣スキル一覧を見る"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "部隊長 撤退　確率 40% / 模倣倍率 1.24倍"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": "部隊長 撤退　確率 45% / 模倣倍率 1.24倍"
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": "部隊長 撤退　確率 50% / 模倣倍率 1.3倍"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": "部隊長 撤退　確率 55% / 模倣倍率 1.35倍"
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": "部隊長 撤退　確率 65% / 模倣倍率 1.4倍"
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": "部隊長 撤退　確率 70% / 模倣倍率 1.5倍"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "摩利支天ノ法",
+   "rank": "SSS",
+   "afterSkill": "摩利支天ノ法",
+   "afterRank": "SSS",
+   "rate": "70%",
+   "target": "部隊長",
+   "effectShort": "部隊長の初期スキルを1.25倍模倣"
+  },
+  {
+   "slot": "B",
+   "skill": "八幡神ノ威光",
+   "rank": "SSS",
+   "afterSkill": "八幡神ノ威光",
+   "afterRank": "SSS",
+   "rate": "70%",
+   "target": "部隊長",
+   "effectShort": "部隊長の初期スキルを1.25倍模倣"
+  },
+  {
+   "slot": "C",
+   "skill": "封法大十字",
+   "rank": "S",
+   "afterSkill": "封法大十字",
+   "afterRank": "S",
+   "rate": "40%",
+   "target": "部隊長 撤退",
+   "effectShort": "部隊長撤退時、部隊長の初期スキルを1.24倍模倣"
+  },
+  {
+   "slot": "S1",
+   "skill": "封法大十字",
+   "rank": "S",
+   "afterSkill": "封法大十字",
+   "afterRank": "S",
+   "rate": "40%",
+   "target": "部隊長 撤退",
+   "effectShort": "部隊長撤退時、部隊長の初期スキルを1.24倍模倣"
+  },
+  {
+   "slot": "S2",
+   "skill": "九字ノ呪法",
+   "rank": "S",
+   "afterSkill": "摩利支天ノ法",
+   "afterRank": "SSS",
+   "rate": "40%",
+   "target": "部隊長",
+   "effectShort": "模倣倍率 1.2倍(TR以降のデータなし、LV10が最大値)",
+   "afterTarget": "部隊長",
+   "afterRate": "70%",
+   "afterEffectShort": "模倣倍率1.25倍"
+  }
+ ],
+ "notes": [
+  "カード画像照合済み(2026-07-30): 槍A/弓A/馬A/器X",
+  "45do.info(ordinary/0349)生HTML照合+ixagno.blog.fc2.com(blog-entry-10436)の両ソースで一致確認済み。S2のみ移植後スキルが九字ノ呪法→摩利支天ノ法に変化(ixagno「初期テーブル/左記スキル移植後」対応表で確認)。"
+ ]
+}

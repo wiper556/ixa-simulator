@@ -1,0 +1,141 @@
+{
+ "name": "佐竹義重",
+ "no": "2437",
+ "ch": "未確認",
+ "cost": 4,
+ "troop": "攻",
+ "sub": "",
+ "effect": "追加スキルの攻撃効果が(討伐ゲージ÷100)倍(最大300・模倣不可)",
+ "furigana": "さたけよししげ",
+ "illustrator": "正子公也",
+ "imageFull": "assets/img/characters/no2437_full.png",
+ "imageChar": "assets/img/characters/no2437_char.png",
+ "atkBase": 1140,
+ "atkGrowth": 40,
+ "defBase": 1050,
+ "defGrowth": 35,
+ "tacticsBase": 520,
+ "tacticsGrowth": 3,
+ "lv0Troops": 3850,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "黒旋月光",
+ "skillDetail": "A/LV10 この武将の追加スキルの攻撃効果は(討伐ゲージ÷100)倍される\n模倣不可\n①この武将の追加スキルの攻撃効果は(討伐ゲージ÷100)倍される\n②討伐ゲージは最大300で計算する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "確率 - / 追加スキルの攻撃効果(討伐ゲージ÷100)倍(討伐ゲージは最大300で計算・模倣不可)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": null
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": null
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": null
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": null
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": null
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": null
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "戦陣 破軍",
+   "rank": "A",
+   "afterSkill": "天穿神滅",
+   "afterRank": "SS",
+   "target": null,
+   "rate": null,
+   "effectShort": null,
+   "afterTarget": "砲器",
+   "afterRate": "+50%",
+   "afterEffectShort": "攻撃((ランク+1)xコストx3) %上昇(部隊ランクとコストで効果が変化)"
+  },
+  {
+   "slot": "B",
+   "skill": "戦陣 無双",
+   "rank": "A",
+   "afterSkill": "無双英傑",
+   "afterRank": "SS",
+   "target": null,
+   "rate": null,
+   "effectShort": null,
+   "afterTarget": "全",
+   "afterRate": "+50%",
+   "afterEffectShort": "攻撃99.9%上昇+防御99.9%上昇(部隊消費コストを0.5低下・特殊効果は模倣不可)"
+  },
+  {
+   "slot": "C",
+   "skill": "轟閻 霹靂火",
+   "rank": "S",
+   "afterSkill": "武神八幡陣",
+   "afterRank": "SS",
+   "target": null,
+   "rate": null,
+   "effectShort": null,
+   "afterTarget": "全",
+   "afterRate": "+60%",
+   "afterEffectShort": "防御NULL%上昇 (部隊の総コストで効果が変化します)"
+  },
+  {
+   "slot": "S1",
+   "skill": "鬼滅刺",
+   "rank": "A",
+   "afterSkill": "布都御魂ノ鬨",
+   "afterRank": "SS",
+   "target": null,
+   "rate": null,
+   "effectShort": null,
+   "afterTarget": "全",
+   "afterRate": "+35%",
+   "afterEffectShort": "攻撃 40%上昇+防御 40%上昇(部隊内レアリティS以上のスキル個数×20%加算)"
+  },
+  {
+   "slot": "S2",
+   "skill": "鼓腹撃壌",
+   "rank": "A",
+   "afterSkill": "天焉相克",
+   "afterRank": "SS",
+   "target": null,
+   "rate": null,
+   "effectShort": null,
+   "afterTarget": "槍・弓・馬",
+   "afterRate": "+70%",
+   "afterEffectShort": "全攻 30%上昇(部隊の総コストで効果が変化)"
+  }
+ ],
+ "notes": [
+  "出典: カード画像(LV1形式: 極・統率 槍S/弓A/馬A/器A拡大確認・初期値1140/1050/520・コスト4・LV1スキル値。",
+  "  天限突破表示のため指揮6050は不採用、ixanaryの★0-0=3850を使用(B-00ルール))",
+  " + ixanary.com/cards/2437(成長+40/+35/+3.0・LV10: 追加スキルの攻撃効果(討伐ゲージ÷100)倍・模倣不可)",
+  " + ixawiki BushoCard/2437(統率2次確認・合成テーブル1次/2次候補)。",
+  "統率はカード画像+ixawikiの2ソース一致。No.2414(蒲生郷成・摺きれ久留子)と同系の討伐ゲージ依存スキル。",
+  "スキルはA(鍛錬情報なし)のためTR1以降のeffectはnull。",
+  "合成テーブルはixawiki(1次候補+2次候補)"
+ ]
+}

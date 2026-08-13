@@ -1,0 +1,127 @@
+{
+ "name": "北条氏直",
+ "no": "1273",
+ "ch": "28章",
+ "cost": 4.5,
+ "troop": "全攻防",
+ "sub": "",
+ "effect": "自軍全武将全スキルの卓越確率上昇",
+ "furigana": "ほうじょううじなお",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1273_full.png",
+ "imageChar": "assets/img/characters/no1273_char.png",
+ "atkBase": 1220,
+ "atkGrowth": 65,
+ "defBase": 1220,
+ "defGrowth": 65,
+ "tacticsBase": 690,
+ "tacticsGrowth": 3.5,
+ "lv0Troops": 4790,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "仁侯ノ決断",
+ "skillDetail": "S/LV10 確率 100% 攻撃450%上昇/対象:全\n模倣不可\n①攻撃450%上昇する\n②防御450%上昇する\n③自軍全武将全スキルの卓越確率に15%を加算する(自軍内重複上限2)",
+ "categoryLinks": [
+  {
+   "href": "skills-takuetsu.html",
+   "label": "卓越スキル一覧を見る"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 攻撃450%上昇+防御450%上昇(卓越確率+15%)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": "全　確率 100% / 攻撃490%上昇+防御490%上昇(卓越確率+17%)"
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": "全　確率 100% / 攻撃550%上昇+防御550%上昇(卓越確率+19%)"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": "全　確率 100% / 攻撃620%上昇+防御620%上昇(卓越確率+21%)"
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": "全　確率 100% / 攻撃700%上昇+防御700%上昇(卓越確率+23%)"
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": "全　確率 100% / 攻撃790%上昇+防御790%上昇(卓越確率+25%)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "仁侯ノ決断",
+   "rank": "S",
+   "afterSkill": "至天ノ御剣",
+   "afterRank": "SSS",
+   "rate": "100%",
+   "target": "全",
+   "effectShort": "攻撃450%上昇+防御450%上昇(卓越確率+15%)",
+   "afterTarget": "自身",
+   "afterRate": "70%",
+   "afterEffectShort": "初期スキルを模倣(卓越追加確率30%・1.3倍)"
+  },
+  {
+   "slot": "B",
+   "skill": "仁侯ノ決断",
+   "rank": "S",
+   "afterSkill": "至天ノ御剣",
+   "afterRank": "SSS",
+   "rate": "100%",
+   "target": "全",
+   "effectShort": "攻撃450%上昇+防御450%上昇(卓越確率+15%)",
+   "afterTarget": "自身",
+   "afterRate": "70%",
+   "afterEffectShort": "初期スキルを模倣(卓越追加確率30%・1.3倍)"
+  },
+  {
+   "slot": "C",
+   "skill": "閃裂討鬼",
+   "rank": "SS",
+   "afterSkill": "閃裂討鬼",
+   "afterRank": "SS",
+   "rate": "45%",
+   "target": "全",
+   "effectShort": "攻撃50%上昇(部隊の総コストで効果が変化)+部隊内で武将コストがスキルに影響する時攻撃効果部分のみこの武将のコストを+0.5で計算"
+  },
+  {
+   "slot": "S1",
+   "skill": "至天ノ御剣",
+   "rank": "SSS",
+   "afterSkill": "至天ノ御剣",
+   "afterRank": "SSS",
+   "rate": "70%",
+   "target": "自身",
+   "effectShort": "自身が持つ初期スキルを模倣する(卓越:追加確率30%で通常攻撃/防御効果1.3倍にして模倣)"
+  },
+  {
+   "slot": "S2",
+   "skill": "遠呂智ノ閃光",
+   "rank": "SS",
+   "afterSkill": "遠呂智ノ閃光",
+   "afterRank": "SS",
+   "rate": "100%",
+   "target": "全",
+   "effectShort": "攻撃125%上昇+卓越:追加確率15%で攻撃効果が4倍"
+  }
+ ],
+ "notes": [
+  "synthesisTable: 45do.info生HTML(skiladd_wrap)+ixanary.com(仁侯ノ決断スキルページの合成テーブル)で2ソース一致確認済み(2026-08-02)。45do.info上のページタイトルは「北条氏政」表記だが、これは45do.info側の誤記(同スキル仁侯ノ決断はixanary.com No.1273=北条氏直で確認、既存の北条氏政(5)はNo.1253で別スキル)。C行の閃裂討鬼は45do.info側で数値が伏字(●)だったが、skills.html側で豊臣秀吉【覇】(1274)B分の確定値(確率45%/攻撃50%上昇)に統合済みのためその値を採用"
+ ]
+}

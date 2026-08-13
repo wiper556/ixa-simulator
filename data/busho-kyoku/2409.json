@@ -1,0 +1,135 @@
+{
+ "name": "舞兵庫",
+ "no": "2409",
+ "ch": "未確認",
+ "cost": 3.5,
+ "troop": "馬砲器攻速",
+ "sub": "",
+ "effect": "部隊内で最も速い兵士速度で移動",
+ "furigana": "まいひょうご",
+ "illustrator": "正子公也",
+ "imageFull": "assets/img/characters/no2409_full.png",
+ "imageChar": "assets/img/characters/no2409_char.png",
+ "atkBase": 1000,
+ "atkGrowth": 32,
+ "defBase": 980,
+ "defGrowth": 27,
+ "tacticsBase": 510,
+ "tacticsGrowth": 2,
+ "lv0Troops": 3500,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "B",
+  "uma": "S",
+  "ki": "A"
+ },
+ "initialSkill": "マシラ炎舞",
+ "skillDetail": "A/LV10 確率 100% 攻撃55%上昇/対象:馬・砲・器\n①攻撃55%上昇する\n②速度50%上昇する\n③部隊内で最も速い兵士速度で移動する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "馬・砲・器　確率 100% / 攻撃 55%上昇+速度 50%上昇(部隊内で最も速い兵士速度で移動)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": null
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": null
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": null
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": null
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": null
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": null
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "黒鬼刺",
+   "rank": "D",
+   "afterSkill": "鬼神刺",
+   "afterRank": "B",
+   "target": null,
+   "rate": null,
+   "effectShort": null,
+   "afterTarget": "全",
+   "afterRate": "+20%",
+   "afterEffectShort": "攻撃(コスト×10) %上昇(武将コストによって効果が変化)"
+  },
+  {
+   "slot": "B",
+   "skill": "喰野虎",
+   "rank": "B",
+   "afterSkill": "喰野虎",
+   "afterRank": "B",
+   "target": null,
+   "rate": null,
+   "effectShort": null
+  },
+  {
+   "slot": "C",
+   "skill": "騎迅強襲",
+   "rank": "B",
+   "afterSkill": "遁世影武者",
+   "afterRank": "B",
+   "target": "槍・馬・器",
+   "rate": "+30%",
+   "effectShort": "攻撃35%上昇+速度25%上昇",
+   "afterTarget": "部隊長",
+   "afterRate": "+50%",
+   "afterEffectShort": "所属部隊の部隊長が持つ初期スキルを模倣する(戦闘スキルのみ)"
+  },
+  {
+   "slot": "S1",
+   "skill": "仁将無双",
+   "rank": "B",
+   "afterSkill": "仁将無双",
+   "afterRank": "B",
+   "target": "槍・馬・砲",
+   "rate": "+17%",
+   "effectShort": "攻撃・防御((1+ランク)×コスト×2.1)%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "天廟斬算",
+   "rank": "S",
+   "afterSkill": "八重言代主神",
+   "afterRank": "SS",
+   "target": "弓・器",
+   "rate": "+35%",
+   "effectShort": "攻撃(1.7×防御参加武将数)%上昇",
+   "afterTarget": "自身",
+   "afterRate": "+70%",
+   "afterEffectShort": "自身の持つ初期スキルを模倣する(戦闘スキルのみ)"
+  }
+ ],
+ "notes": [
+  "限定極(2019-12-14〜、ixaixa.com確認)。章は未確認。",
+  "出典: カード画像(LV1形式: 極・統率 槍A/弓B/馬S/器A拡大確認・初期値1000/980/510・コスト3.5・LV1スキル値)",
+  " + ixanary.com/cards/2409(指揮3500(★0-0)・成長+32/+27/+2.0・LV10: 確率+100%/馬砲器攻55%/速度50%/最速移動)",
+  " + ixaixa.com/archives/7416(合成テーブル・各候補の効果)。",
+  "スキルはA(鍛錬情報なし)のためTR1以降のeffectはnull。",
+  "合成テーブルは登録時ixaixa.com単一ソースだったが、2026-08-12にixanaryのスキル個別ページ",
+  " (1次/2次候補)と全行一致することを確認し2ソースになった(tools/audit_characters.py --online)。"
+ ]
+}

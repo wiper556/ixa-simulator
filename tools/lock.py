@@ -56,12 +56,38 @@ HASHED = ("tools/hooks/pre-commit", "tools/hooks/pre-merge-commit",
           "tools/reslog.py", "tools/rollback_reviewed.py",
           ".github/workflows/rules.yml", ".claude/settings.json",
           "docs/rollback-floor.txt", "docs/RULE-OPERATION.md",
-          "tools/selftest_uncovered.txt")
+          "tools/selftest_uncovered.txt",
+          # 第5回で「HASHEDから漏れていた」と指摘された分:
+          #  Y-3/U-2/T-2/V-2/X-1 門番の自己テスト自体が無検査で、CASESに1行足すだけで
+          #    任意のルールIDに「門番が見ている」証拠を作れた
+          #  Y-2 検査器(check_generated)は入れたのに、その入力である生成器が野放しだった。
+          #    生成器に4行足すだけで「手書きページが残ったまま緑」にできた
+          #  X-5 RULES.md の中身が自由で、棚卸し日に不正な日付を書けば
+          #    rules.problems() が例外で落ち、約30種別がHIGH1件に丸まる
+          "tools/gate_selftest.py", "tools/gen_detail_pages.py", "tools/prerender.py",
+          "docs/RULES.md", "tools/hooks/no_git_internal_write.py",
+          # R-01〜R-08(2026-08-13): 攻撃側を縛る仕組み。ここが外れると
+          # 「本物を触っていない」ことを誰も確かめないまま回が回る。
+          "tools/redteam.py", "tools/hooks/no_redteam_write.py",
+          "tools/hooks/_cmdline.py",
+          # CC-1(第7回): 旧形式の証拠を例外扱いする一覧。守らないと
+          # 「一覧に足す」だけで偽造の証拠が通ってしまう。
+          "tools/reslog_legacy.txt", "tools/reslog.py",
+          # 攻撃側に渡す条件の正本。回ごとに書き換わると回の比較ができない。
+          "docs/redteam-brief.md",
+          # 2026-08-13の作り替え。正本が data/ に移り、ページ内の配列は生成物になった。
+          # build_data.py は**公開されるページの中身をそのまま決める**ので、ここが
+          # 野放しだと data/ をいくら検査しても意味が無い(生成の途中で差し替えられる)。
+          # extract/verify は受け入れ検査、reset_marks は印を外す一方向の道具。
+          "tools/build_data.py", "tools/extract_data.py",
+          "tools/verify_extract.py", "tools/reset_marks.py")
 # N-3(第4回): 縮小の記録 lock_reason.txt はどこにも守られておらず、
 # 消しても誰も気づかなかった。必須ファイルに入れる。
-PRESENT = ("docs/RULES.md", "docs/RULE-VIOLATIONS.md",
+# Y-5(第5回): research_log.json も無保護だった(「証拠つき」を手書きできる素材)。
+PRESENT = ("docs/RULE-VIOLATIONS.md",
            "tools/audit_baseline.json", "tools/audit_baseline_reason.txt",
-           "tools/lock_reason.txt", "tools/gate_selftest.py")
+           "tools/lock_reason.txt", "tools/research_log.json",
+           "docs/redteam-log.txt")
 ARRAYS = {"characters.html": "generals", "characters-kyoku.html": "kyokuGenerals",
           "characters-ketsu.html": "ketsuGenerals"}
 
@@ -78,7 +104,7 @@ def _sha(text):
     return hashlib.sha256(text.replace("\r\n", "\n").encode("utf-8")).hexdigest()[:16]
 
 
-def check_names():
+def check_names(only=None):
     """監査が出しうるチェック種別。**構文木から**集める。
 
     J-1 / M-1補(2026-08-13 第4回レッドチーム): ここは
@@ -92,6 +118,10 @@ def check_names():
     out = set()
     for rel, fn, argi in (("tools/audit_characters.py", "add", 0),
                           ("tools/rules.py", "append", 0)):
+        # W-4/X-2(第5回): 「どのファイルが出した種別か」で絞れるようにする。
+        # 門番の --accept が、飲んでよい指摘かを**語の列挙**で決めていたため。
+        if only and rel not in only:
+            continue
         src = _read(rel)
         if not src:
             continue
@@ -148,8 +178,15 @@ def current():
         "cause_tags": sorted(R.cause_tags()),
         "entry_counts": counts,
         "violations": vio,
-        "hooks": {f: _sha(_read(f) or "") for f in HASHED},
-        "present": sorted(PRESENT),
+        # U-4(第5回): ファイルが無くても空文字列のハッシュが入るので、
+        # 「消えた」分岐が到達不能だった。無いときは None にする。
+        "hooks": {f: (_sha(_read(f)) if _read(f) is not None else None) for f in HASHED},
+        # U-3(第5回): ここは `sorted(PRESENT)` と**定数をそのまま返して**いた。
+        # 同じ定数どうしを比べるので「必須ファイルが消えた」は原理的に発火せず、
+        # 承認履歴(audit_baseline_reason.txt)も縮小履歴(lock_reason.txt)も
+        # 消し放題で、出力は正常時と区別がつかなかった。実ファイルを見る。
+        "present": sorted(f for f in PRESENT
+                          if os.path.exists(os.path.join(ROOT, f))),
     }
 
 
@@ -210,6 +247,21 @@ def problems():
             out.append(("武将の件数が減った", "HIGH",
                         "%s が %d体 → %d体。直せない指摘を、その武将ごと消していないか"
                         % (f, n, m)))
+
+    # EL-1(2026-08-13 第10回、高): ここは lock["hooks"] を軸に回していた。
+    # cur["hooks"] のキーは定数 HASHED から作られるので常に全部揃うのに、
+    # **錠前側に無いキーは1件も比較されない**。つまり checks.lock から1行
+    # 消すだけで、そのファイルは無検査になった。30本まるごと消しても
+    # 「錠前と一致している」と表示された。
+    # 権威は**コード側の定数**。錠前は値の比較にだけ使う。
+    for f in sorted(set(HASHED) - set(lock["hooks"])):
+        out.append(("錠前から守り先が抜けている", "HIGH",
+                    "%s が checks.lock に無い。錠前は「載っているものだけ」を\n"
+                    "比べるので、載っていないファイルは無検査になる。"
+                    "`python tools/lock.py --update` で取り込む" % f))
+    for f in sorted(set(PRESENT) - set(lock["present"])):
+        out.append(("錠前から守り先が抜けている", "HIGH",
+                    "%s(必須ファイル)が checks.lock に無い" % f))
 
     # 門番の中身
     for f, h in sorted(lock["hooks"].items()):

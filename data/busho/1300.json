@@ -1,0 +1,117 @@
+{
+ "name": "大谷吉継（3）【覇】",
+ "no": "1300",
+ "ch": "31章",
+ "cost": 5,
+ "troop": "全攻",
+ "sub": "",
+ "effect": "対人戦闘時、戦闘で受けたダメージに応じて最大HPが減少",
+ "furigana": "おおたによしつぐ",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1300_full.png",
+ "imageChar": "assets/img/characters/no1300_char.png",
+ "atkBase": 1300,
+ "atkGrowth": 80,
+ "defBase": 1240,
+ "defGrowth": 67,
+ "tacticsBase": 860,
+ "tacticsGrowth": 4,
+ "lv0Troops": 5040,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "XX"
+ },
+ "initialSkill": "信明義星",
+ "skillDetail": "SSS/LV10 確率 100% 攻撃740%上昇/対象:全\n①対人攻撃戦闘時ランダムな加勢1部隊の全武将は戦闘で受けたダメージ(固定ダメージ除く)×係数だけ最大HPが減少する(部隊を外れるまで持続 係数はLV10=0.2)(模倣不可・部隊内重複不可・同一敵部隊への重複不可)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 攻撃 740%上昇(HP減少係数0.2)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": "全　確率 100% / 攻撃 800%上昇(HP減少係数0.21)"
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": "全　確率 100% / 攻撃 920%上昇(HP減少係数0.22)"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": "全　確率 100% / 攻撃 1100%上昇(HP減少係数0.24)"
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": "全　確率 100% / 攻撃 1290%上昇(HP減少係数0.26)"
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": "全　確率 100% / 攻撃 1490%上昇(HP減少係数0.3)"
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": "全　確率 100% / 攻撃 1640%上昇(HP減少係数0.33)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "虎賁統帥",
+   "rank": "SS",
+   "afterSkill": "虎賁統帥",
+   "afterRank": "SS",
+   "rate": "100%",
+   "target": "全 撤退 覇道",
+   "effectShort": "攻撃1130%上昇+速度200%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "天地超克",
+   "rank": "SSS",
+   "afterSkill": "天地超克",
+   "afterRank": "SSS",
+   "rate": "46%",
+   "target": "全 不屈1",
+   "effectShort": "攻撃を係数×人数で上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "勇冠三軍",
+   "rank": "SSS",
+   "afterSkill": "勇冠三軍",
+   "afterRank": "SSS",
+   "rate": "45%",
+   "target": "全",
+   "effectShort": "攻撃50%+係数×人数で上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "信明義星",
+   "rank": "SSS",
+   "afterSkill": "信明義星",
+   "afterRank": "SSS",
+   "rate": "100%",
+   "target": "全",
+   "effectShort": "攻撃740%上昇+加勢部隊HP減少"
+  },
+  {
+   "slot": "S2",
+   "skill": "神羅聖域",
+   "rank": "SS",
+   "afterSkill": "神羅聖域",
+   "afterRank": "SS",
+   "rate": "40%",
+   "target": "全 覇道",
+   "effectShort": "攻撃900%上昇"
+  }
+ ]
+}

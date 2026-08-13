@@ -1,0 +1,122 @@
+{
+ "name": "後藤又兵衛",
+ "no": "2390",
+ "ch": "29章",
+ "cost": 4,
+ "troop": "馬砲器防",
+ "sub": "",
+ "effect": "拠点待機時間に応じて防御効果1.5倍(上限5回)",
+ "furigana": "ごとうまたべえ",
+ "illustrator": "BISAI",
+ "imageFull": "assets/img/characters/no2390_full.png",
+ "imageChar": "assets/img/characters/no2390_char.png",
+ "atkBase": 1020,
+ "atkGrowth": 32,
+ "defBase": 1140,
+ "defGrowth": 47,
+ "tacticsBase": 500,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 4000,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "B",
+  "uma": "S",
+  "ki": "A"
+ },
+ "initialSkill": "武神ノ采配",
+ "skillDetail": "A/LV10 確率 56% 防御95%上昇/対象:馬・砲・器\n①防御95%上昇する\n②拠点待機90分ごとに防御効果が1.5倍になる(上限5回)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "馬・砲・器　確率 56% / 防御 95%上昇(拠点待機90分毎に1.5倍・上限5回)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": "馬・砲・器　確率 56% / 防御 100%上昇(拠点待機80分毎に1.5倍・上限5回)"
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": "馬・砲・器　確率 56% / 防御 115%上昇(拠点待機70分毎に1.5倍・上限5回)"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": null
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": null
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": null
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "凜武艶姫",
+   "rank": "A",
+   "afterSkill": "戦陣 無縫",
+   "afterRank": "A",
+   "target": "弓・砲・器",
+   "rate": "40%",
+   "effectShort": "防御 15%上昇(部隊総コストで変動)",
+   "afterTarget": "全",
+   "afterRate": "42%",
+   "afterEffectShort": "防御 80%上昇(部隊総コストで変動)"
+  },
+  {
+   "slot": "B",
+   "skill": "戦陣 無縫",
+   "rank": "A",
+   "afterSkill": "天衣無縫神戒",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "42%",
+   "effectShort": "防御 80%上昇(部隊総コストで変動)",
+   "afterTarget": "全",
+   "afterRate": "50%",
+   "afterEffectShort": "防御 30.02%上昇(部隊総コストで変動)"
+  },
+  {
+   "slot": "C",
+   "skill": "武神ノ采配",
+   "rank": "A",
+   "afterSkill": "武神ノ采配",
+   "afterRank": "A",
+   "target": "馬・砲・器",
+   "rate": "56%",
+   "effectShort": "防御95%上昇(拠点待機90分毎に1.5倍・上限5回)"
+  },
+  {
+   "slot": "S1",
+   "skill": "武神ノ采配",
+   "rank": "A",
+   "afterSkill": "武神ノ采配",
+   "afterRank": "A",
+   "target": "馬・砲・器",
+   "rate": "56%",
+   "effectShort": "防御95%上昇(拠点待機90分毎に1.5倍・上限5回)"
+  },
+  {
+   "slot": "S2",
+   "skill": "志半ノ矛楯",
+   "rank": "A",
+   "afterSkill": "志半ノ矛楯",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "+65%",
+   "effectShort": "攻撃465%上昇+防御465%上昇(模倣不可)"
+  }
+ ],
+ "notes": [
+  "45do.info+ixagno.blog.fc2.com(blog-entry-10313)確認済み: Aの凜武艶姫は移植後「戦陣無縫」に、Bの戦陣無縫は移植後「天衣無縫神戒」[SS]に変化。C/S1は自己参照(武神ノ采配)で両ソース一致",
+  "Aのeffectは2026-08-04に確認・修正: 戦陣無縫の正しい性能(確率42%/防御80%上昇、ixagno.blog.fc2.com blog-entry-9570)を反映"
+ ]
+}

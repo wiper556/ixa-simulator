@@ -1,0 +1,58 @@
+{
+ "name": "魔界ノ美姫",
+ "rank": "S",
+ "baseRate": 100,
+ "target": "全",
+ "noMimic": true,
+ "effectSummary": "S/LV10 確率 100% 攻撃162%上昇/対象:全\n模倣不可\n①攻撃162%上昇する\n②防御162%上昇する\n③部隊内の姫武将が4以上のとき【部隊スキル】の発動率+40%する(特殊効果は重複不可)",
+ "sourceCharacters": [
+  {
+   "name": "お市",
+   "no": "2558",
+   "slot": "移植不可",
+   "db": "kyoku"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 攻撃 162%上昇+防御 162%上昇(部隊内の姫武将4以上で【部隊スキル】の発動率+40%・模倣不可・重複不可)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": null
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": null
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": null
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": null
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": null
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": null
+  }
+ ],
+ "notes": [
+  "2026-08-12一括作成。S以上の初期スキルは無条件でページを作る規約(A-3-9)の未処理分。",
+  "内容は武将エントリの登録値をそのまま転記している。",
+  "categoryLinksは9項目の判定を1件ずつやる必要があるため意図的に付けていない(付け忘れではない)。"
+ ]
+}

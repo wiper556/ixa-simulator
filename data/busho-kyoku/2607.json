@@ -1,0 +1,139 @@
+{
+ "name": "神谷薫",
+ "no": "2607",
+ "ch": "未確認",
+ "cost": 3.5,
+ "troop": "全攻防",
+ "sub": "",
+ "effect": "部隊内「剣豪」武将スキル発動率+20%・卓越追加確率+40%(模倣不可・重複不可)",
+ "furigana": "かみやかおる",
+ "illustrator": "NW/S,RKKD",
+ "imageFull": "assets/img/characters/no2607_full.png",
+ "imageChar": "assets/img/characters/no2607_char.png",
+ "atkBase": 1900,
+ "atkGrowth": 130,
+ "defBase": 1900,
+ "defGrowth": 130,
+ "tacticsBase": 510,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 4680,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "神谷活心流",
+ "skillDetail": "S/LV10 確率 100% 攻撃420%上昇/対象:全\n模倣不可\n①攻撃420%上昇する\n②防御420%上昇する\n③部隊内「剣豪」武将スキル発動率+20%する\n④卓越追加確率+40%する(特殊効果は自部隊内では重複不可)",
+ "categoryLinks": [
+  {
+   "href": "skills-takuetsu.html",
+   "label": "卓越スキル一覧を見る"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 攻撃 420%上昇+防御 420%上昇(剣豪発動率+20%・卓越追加確率+40%・模倣不可・自部隊内重複不可)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": "全　確率 100% / 攻撃 470%上昇+防御 470%上昇(剣豪発動率+25%・卓越+40%)"
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": "全　確率 100% / 攻撃 580%上昇+防御 580%上昇(剣豪発動率+25%・卓越+45%)"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": "全　確率 100% / 攻撃 780%上昇+防御 780%上昇(剣豪発動率+30%・卓越+45%)"
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": "全　確率 100% / 攻撃 1050%上昇+防御 1050%上昇(剣豪発動率+30%・卓越+55%)"
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": "全　確率 100% / 攻撃 1380%上昇+防御 1380%上昇(剣豪発動率+40%・卓越+80%)"
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": null
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "活人剣",
+   "rank": "A",
+   "afterSkill": "鬼滅刺",
+   "afterRank": "A",
+   "target": null,
+   "rate": null,
+   "effectShort": null,
+   "afterTarget": "全",
+   "afterRate": "+100%",
+   "afterEffectShort": "攻撃70%上昇+防御70%上昇(このスキルを所持する武将の全スキルの卓越確率に25%を加算する(模倣不可))"
+  },
+  {
+   "slot": "B",
+   "skill": "仙剣破斬",
+   "rank": "SSS",
+   "afterSkill": "仙剣破斬",
+   "afterRank": "SSS",
+   "target": null,
+   "rate": null,
+   "effectShort": null
+  },
+  {
+   "slot": "C",
+   "skill": "遠呂智ノ閃光",
+   "rank": "SS",
+   "afterSkill": "遠呂智ノ閃光",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "+100%",
+   "effectShort": "攻撃125%上昇(卓越:追加確率15%で攻撃効果4倍)"
+  },
+  {
+   "slot": "S1",
+   "skill": "根津諏訪流鷹術",
+   "rank": "S",
+   "afterSkill": "遠呂智ノ閃光",
+   "afterRank": "SS",
+   "target": null,
+   "rate": null,
+   "effectShort": null,
+   "afterTarget": "全",
+   "afterRate": "+100%",
+   "afterEffectShort": "攻撃 125%上昇(卓越追加確率15%・4倍、TR別データは未確認)"
+  },
+  {
+   "slot": "S2",
+   "skill": "月詠ノ覇威",
+   "rank": "SS",
+   "afterSkill": "月詠ノ覇威",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "+100%",
+   "effectShort": "攻撃344%上昇+防御344%上昇(自軍全部将全スキルの卓越確率+15%・模倣不可・自軍内重複上限2)"
+  }
+ ],
+ "notes": [
+  "出典: カード画像(LV1形式: 極・職業「剣」・統率 槍S/弓A/馬A/器A拡大確認・初期値1900/1900/510・コスト3.5。",
+  "  限界突破表示のため指揮4680(★0-0)はixanaryと一致)",
+  " + ixanary.com/cards/2607(指揮4680(★0-0)・成長+130/+130/+2.5。るろうに剣心コラボ)",
+  " + ixanaryスキルページ「神谷活心流」(LV1〜TR5全値+合成テーブル)。",
+  "部隊内卓越確率上昇スキルとしてシミュのspecialSkillsにも登録済み(takuetsuRateBonus:40)。",
+  "攻撃+防御の同時変動はtrTableに併記(multistat規則)。",
+  "初期スキルがSランクのためスキル個別ページの新規作成が必要(docsのTODOに記録済み)。",
+  "合成テーブルはixanaryスキルページ(1次/2次/3次)"
+ ]
+}

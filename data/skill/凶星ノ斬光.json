@@ -1,0 +1,35 @@
+{
+ "name": "凶星ノ斬光",
+ "rank": "S",
+ "baseRate": 100,
+ "target": "弓・馬・器・焙 飛翔2",
+ "noMimic": true,
+ "effectSummary": "S/LV10 確率 100% 攻撃170%上昇/対象:弓・馬・器・焙　飛翔2\n模倣不可\n①攻撃170%上昇する\n②飛翔2を持つ\n③対象兵科指揮時極限スキルの攻撃効果が3倍となる(TR1〜TR5は未確認)",
+ "categoryLinks": [
+  {
+   "href": "skills-hishou-atk.html",
+   "label": "飛翔スキル一覧(攻撃)を見る"
+  }
+ ],
+ "sourceCharacters": [
+  {
+   "name": "堀秀政",
+   "no": "1224",
+   "slot": "移植不可"
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "凶星ノ斬光",
+  "rank": "S"
+ },
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓・馬・器・焙 飛翔2　確率 100% / 攻撃 170%上昇(極限スキル攻撃効果3倍、TR別データは未確認)"
+  }
+ ],
+ "notes": [
+  "No.1224(堀秀政)自身の初期スキル。自己参照ではないが2026-08-01ルールにより無条件でページ作成"
+ ]
+}

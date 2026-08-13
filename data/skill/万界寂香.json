@@ -1,0 +1,34 @@
+{
+ "name": "万界寂香",
+ "rank": "S",
+ "baseRate": 45,
+ "target": "槍・砲・器　飛翔6",
+ "effectSummary": "S/LV10 確率 45% 防御330%上昇/対象:槍・砲・器　飛翔6\n①防御330%上昇する\n②飛翔6を持つ\n③自拠点防御時は防御効果が1.5倍になる",
+ "categoryLinks": [
+  {
+   "href": "skills-hishou-def.html",
+   "label": "飛翔スキル一覧(防御)を見る"
+  }
+ ],
+ "sourceCharacters": [
+  {
+   "name": "朝倉義景",
+   "no": "1243",
+   "slot": "A"
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "思金神ノ深謀",
+  "rank": "SS"
+ },
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・砲・器 飛翔6　確率 45% / 防御 330%上昇(自拠点防御時1.5倍)"
+  }
+ ],
+ "notes": [
+  "No.1243(朝倉義景)の初期スキル(S、自身のsynthesisTable A枠で自己参照)。45do.info生HTML+ixanary.com(cards/1243)で2ソース確認、TRなし(LV10のみ)"
+ ]
+}

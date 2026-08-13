@@ -1,0 +1,29 @@
+{
+ "name": "風林火山",
+ "rank": "S",
+ "baseRate": 25,
+ "target": "槍・弓・馬",
+ "effectSummary": "S/LV10 確率 25% 攻撃15%上昇/対象:槍・弓・馬\n①攻撃15%上昇する\n②破壊5%上昇する",
+ "sourceCharacters": [
+  {
+   "name": "三好義賢",
+   "no": "2368",
+   "slot": "B(遁世影武者経由)",
+   "db": "kyoku"
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "風林火山",
+  "rank": "S"
+ },
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・弓・馬　確率 25% / 攻撃 15%上昇+破壊5%上昇(TR別データは未確認)"
+  }
+ ],
+ "notes": [
+  "ixanary.com(/skills/風林火山/、原本No.1003)確認。No.2368(三好義賢)の合成候補データ(ixagno.blog.fc2.com blog-entry-9695確認)より、Bスロット「遁世影武者」の移植後合成候補として判明したためページ新規作成"
+ ]
+}

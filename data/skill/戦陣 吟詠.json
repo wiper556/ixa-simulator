@@ -1,0 +1,116 @@
+{
+ "name": "戦陣 吟詠",
+ "rank": "A",
+ "baseRate": 100,
+ "target": "全",
+ "effectSummary": "A/LV10 確率 100% 攻撃340%上昇/対象:全\n模倣不可\n①攻撃340%上昇する\n②防御340%上昇する\n③部隊内武将の全スキルの卓越追加確率が20%上昇する(特殊効果は自部隊内では重複不可)",
+ "categoryLinks": [
+  {
+   "href": "skills-takuetsu.html",
+   "label": "卓越スキル一覧を見る"
+  }
+ ],
+ "sourceCharacters": [
+  {
+   "name": "三好義賢",
+   "no": "2368",
+   "slot": "S2",
+   "db": "kyoku"
+  },
+  {
+   "name": "北条綱成",
+   "no": "2374",
+   "slot": "S1・S2",
+   "db": "kyoku"
+  },
+  {
+   "name": "高山マリア",
+   "no": "2394",
+   "slot": "A",
+   "db": "kyoku",
+   "note": [
+    "高山マリア(2394)のsynthesisTable A枠(2026-08-02追加)"
+   ]
+  },
+  {
+   "name": "佐久間信盛",
+   "no": "2397",
+   "slot": "C",
+   "db": "kyoku"
+  },
+  {
+   "name": "長尾為景",
+   "no": "2383",
+   "slot": "C(今樊噲経由)",
+   "db": "kyoku",
+   "note": [
+    "長尾為景(2383)はC枠の今樊噲[A]経由で入手する。今樊噲はA以下で独自ページを持たないため",
+    "grantedViaSkills化せず直接列挙する(A-3-12の但し書き)。"
+   ]
+  },
+  {
+   "name": "宇佐美定満",
+   "no": "2398",
+   "slot": "A",
+   "db": "kyoku"
+  },
+  {
+   "name": "悠久山安慈",
+   "no": "2612",
+   "slot": "S2",
+   "db": "kyoku"
+  },
+  {
+   "name": "佐渡島方治",
+   "no": "2614",
+   "slot": "S2",
+   "db": "kyoku"
+  },
+  {
+   "name": "北条幻庵",
+   "no": "7005",
+   "slot": "C",
+   "db": "kyoku"
+  },
+  {
+   "name": "上杉景虎",
+   "no": "7014",
+   "slot": "A",
+   "db": "kyoku"
+  },
+  {
+   "name": "早川殿",
+   "no": "7016",
+   "slot": "A",
+   "db": "kyoku"
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "戦陣 吟詠",
+  "rank": "A"
+ },
+ "grantedViaSkills": [
+  {
+   "skill": "日輪ノ守護者",
+   "rank": "A"
+  },
+  {
+   "skill": "勝旗勇躍",
+   "rank": "A"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 攻撃 340%上昇+防御 340%上昇(部隊内卓越追加確率+20%)"
+  }
+ ],
+ "notes": [
+  "ixanary.com生HTML(/skills/戦陣%20吟詠/)確認: LV1/LV10のみでTR段階なし(合成専用スキル、武将カード本体は存在しない)。",
+  "ランクはAだがユーザー明示依頼によりskills.html新規ページを作成(通常はA以下自動作成しない運用の例外)。",
+  "characters-kyoku.htmlのNo.2368/2374/2375/2383のsynthesisTableでafterSkill:\"戦陣 吟詠\"として複数箇所に登場。",
+  "2026-08-07追加: ixanary.com個別ページの合成テーブル(2次)で日輪ノ守護者[A]・勝旗勇躍[A](共に佐久間信盛No.2397のA/B枠)がA/B枠限定で戦陣吟詠に変化することを確認。",
+  "両スキルとも独自ページを持つのでgrantedViaSkillsで参照する(戦陣神楽→遠呂智ノ閃光と同型のA-3-9例外パターン)。"
+ ]
+}

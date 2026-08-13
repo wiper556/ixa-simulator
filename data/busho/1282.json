@@ -1,0 +1,134 @@
+{
+ "name": "黒田長政",
+ "no": "1282",
+ "ch": "29章",
+ "cost": 5,
+ "troop": "槍弓馬砲攻",
+ "sub": "",
+ "effect": "飛翔を持たない防御参加数依存",
+ "furigana": "くろだながまさ",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1282_full.png",
+ "imageChar": "assets/img/characters/no1282_char.png",
+ "atkBase": 1260,
+ "atkGrowth": 72,
+ "defBase": 1120,
+ "defGrowth": 51,
+ "tacticsBase": 670,
+ "tacticsGrowth": 3,
+ "lv0Troops": 5060,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "S",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "一調天成",
+ "skillDetail": "S/LV10 確率 50% 攻撃(係数×飛翔を持たない防御参加武将数)%上昇/対象:槍・弓・馬・砲\n模倣不可\n①攻撃を係数(LV10=13)×飛翔を持たない防御参加武将数で上昇する",
+ "categoryLinks": [
+  {
+   "href": "skills-count-atk.html",
+   "label": "人数依存(攻)スキル一覧を見る"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "coefficient": "13",
+   "effect": "槍・弓・馬・砲　確率 50% / 攻撃 13%×飛翔を持たない防御参加武将数=上昇"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": "槍・弓・馬・砲　確率 50% / 攻撃 13.5%×飛翔を持たない防御参加武将数=上昇(模倣不可)"
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": "槍・弓・馬・砲　確率 50% / 攻撃 14.2%×飛翔を持たない防御参加武将数=上昇(模倣不可)"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": "槍・弓・馬・砲　確率 50% / 攻撃 15%×飛翔を持たない防御参加武将数=上昇(模倣不可)"
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": "槍・弓・馬・砲　確率 50% / 攻撃 16%×飛翔を持たない防御参加武将数=上昇(模倣不可)"
+  },
+  {
+   "level": "TR5",
+   "points": "最大鍛錬",
+   "coefficient": "18",
+   "effect": "槍・弓・馬・砲　確率 50% / 攻撃 18%×飛翔を持たない防御参加武将数=上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "一調天成",
+   "rank": "S",
+   "afterSkill": "戦華雄渾",
+   "afterRank": "SS",
+   "rate": "50%",
+   "target": "槍・弓・馬・砲",
+   "effectShort": "攻撃を係数×飛翔を持たない防御参加武将数で上昇(模倣不可)",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻防 各140%上昇(卓越追加確率25%・4倍)"
+  },
+  {
+   "slot": "B",
+   "skill": "一調天成",
+   "rank": "S",
+   "afterSkill": "戦華雄渾",
+   "afterRank": "SS",
+   "rate": "50%",
+   "target": "槍・弓・馬・砲",
+   "effectShort": "攻撃を係数×飛翔を持たない防御参加武将数で上昇(模倣不可)",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻防 各140%上昇(卓越追加確率25%・4倍)"
+  },
+  {
+   "slot": "C",
+   "skill": "閃裂討鬼",
+   "rank": "SS",
+   "afterSkill": "閃裂討鬼",
+   "afterRank": "SS",
+   "rate": "45%",
+   "target": "全",
+   "effectShort": "攻撃50%上昇(部隊総コストで変化)+コスト+0.5計算"
+  },
+  {
+   "slot": "S1",
+   "skill": "戦華雄渾",
+   "rank": "SS",
+   "afterSkill": "戦華雄渾",
+   "afterRank": "SS",
+   "rate": "100%",
+   "target": "全",
+   "effectShort": "攻防各140%上昇(卓越時4倍)"
+  },
+  {
+   "slot": "S2",
+   "skill": "十束ノ神域",
+   "rank": "SS",
+   "afterSkill": "天聖宝冠",
+   "afterRank": "SSS",
+   "rate": "100%",
+   "target": "全 覇道",
+   "effectShort": "攻撃320%上昇+速度70%上昇+覇道を持つため所属部隊の武将のスキルを無効化・発動率低下から保護",
+   "afterTarget": "全",
+   "afterRate": "45%",
+   "afterEffectShort": "攻撃 100%+5%×防御参加武将数(280人)=1500.0%"
+  }
+ ],
+ "notes": [
+  "カード画像照合済み: 槍A/弓S/馬A/器S",
+  "ixanary.com生HTML照合(2026-08-02): カード画像のスキル欄にLV10とTR5(鍛錬)の2枠のみ表示されており、TR1〜TR4は実在しない。",
+  "45do.info(ordinary/0311)生HTML照合+ameameixa.com(post-12334「29章天武将スキル一覧」表のNo.1282行)の両ソースでA/B/C/S1/S2の並びが一致確認済み。A/Bは自身の初期スキル(一調天成)がそのまま候補になる自己参照枠。"
+ ]
+}

@@ -1,0 +1,137 @@
+{
+ "name": "高荷恵",
+ "no": "2610",
+ "ch": "未確認",
+ "cost": 0,
+ "troop": "剣豪特",
+ "sub": "",
+ "effect": "職業「剣豪」武将のHP回復時間20%短縮(重複不可・カード所持で効果あり)",
+ "furigana": "たかにめぐみ",
+ "illustrator": "NW/S,RKKD",
+ "imageFull": "assets/img/characters/no2610_full.png",
+ "imageChar": "assets/img/characters/no2610_char.png",
+ "atkBase": 550,
+ "atkGrowth": 1,
+ "defBase": 550,
+ "defGrowth": 1,
+ "tacticsBase": 650,
+ "tacticsGrowth": 3.5,
+ "lv0Troops": 1,
+ "rankGrades": {
+  "yari": "C",
+  "yumi": "C",
+  "uma": "C",
+  "ki": "C"
+ },
+ "initialSkill": "慈愛ノ癒術",
+ "skillDetail": "S/LV10 確率 100% 剣豪のHP回復時間20%短縮/対象:剣豪\n①職業「剣豪」武将のHP回復時間を20%短縮する(重複不可・カード所持で効果あり)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "剣豪　確率 100% / 職業「剣豪」武将のHP回復時間 20%短縮(重複不可・カード所持で効果あり)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": "剣豪　確率 100% / HP回復時間 25%短縮"
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": "剣豪　確率 100% / HP回復時間 35%短縮"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": "剣豪　確率 100% / HP回復時間 50%短縮"
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": "剣豪　確率 100% / HP回復時間 60%短縮"
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": "剣豪　確率 100% / HP回復時間 75%短縮"
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": null
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "乱世ノ歸人",
+   "rank": "A",
+   "afterSkill": "入来神舞",
+   "afterRank": "S",
+   "target": "部隊長",
+   "rate": "+50%",
+   "effectShort": "部隊長の初期スキルを模倣(卓越:追加確率30%で1.2倍にして模倣)",
+   "afterTarget": "部隊長",
+   "afterRate": "+55%",
+   "afterEffectShort": "部隊長の初期スキルを1.1倍に強化して模倣(TR別データは未確認)"
+  },
+  {
+   "slot": "B",
+   "skill": "傾国ノ艶姫",
+   "rank": "S",
+   "afterSkill": "摩利支天ノ法",
+   "afterRank": "SSS",
+   "target": "部隊長",
+   "rate": "+60%",
+   "effectShort": "部隊長の初期スキルを模倣(卓越:追加確率30%で1.2倍にして模倣)",
+   "afterTarget": "部隊長",
+   "afterRate": "+70%",
+   "afterEffectShort": "模倣倍率1.25倍"
+  },
+  {
+   "slot": "C",
+   "skill": "神農医方",
+   "rank": "S",
+   "afterSkill": "月詠ノ覇威",
+   "afterRank": "SS",
+   "target": null,
+   "rate": null,
+   "effectShort": null,
+   "afterTarget": "全",
+   "afterRate": "+100%",
+   "afterEffectShort": "攻撃344%上昇+防御344%上昇(卓越確率+15%)"
+  },
+  {
+   "slot": "S1",
+   "skill": "破邪後輝",
+   "rank": "SS",
+   "afterSkill": "飛龍衝天",
+   "afterRank": "SS",
+   "target": null,
+   "rate": null,
+   "effectShort": null,
+   "afterTarget": "全 飛翔15",
+   "afterRate": "+45%",
+   "afterEffectShort": "攻撃 200%+7.5%×防御参加武将数(280人)=2300.0%"
+  },
+  {
+   "slot": "S2",
+   "skill": "開闢ノ逆鉾",
+   "rank": "SS",
+   "afterSkill": "開闢ノ逆鉾",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "+100%",
+   "effectShort": "攻撃254%上昇(卓越:攻撃戦闘時、追加確率30%で兵士被害15%減少・部隊内重複上限2・模倣不可)"
+  }
+ ],
+ "notes": [
+  "出典: カード画像(LV1形式: 極・統率 槍C/弓C/馬C/器C・初期値550/550/650・コスト0・HP5/5・指揮兵数0/1)",
+  " + ixanary.com/cards/2610(指揮1(★0-0)・成長+1/+1/+3.5。るろうに剣心コラボ)",
+  " + ixanaryスキルページ「慈愛ノ癒術」(LV1〜TR5全値+合成テーブル)。",
+  "戦闘用ではなくカード所持効果のサポートカード(指揮兵数1・成長ほぼ無し)。",
+  "初期スキルがSランクのためスキル個別ページの新規作成が必要(docsのTODOに記録済み)。",
+  "合成テーブルはixanaryスキルページ(1次/2次/3次)"
+ ]
+}

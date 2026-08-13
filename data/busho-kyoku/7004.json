@@ -1,0 +1,89 @@
+{
+ "name": "太原雪斎",
+ "no": "7004",
+ "illustrator": "SQUARE ENIX",
+ "ch": "未確認",
+ "cost": 4.5,
+ "troop": "槍砲器防",
+ "sub": "",
+ "effect": "敵軍部隊数×2.6%を防御効果に加算",
+ "furigana": "たいげんせっさい",
+ "imageFull": "assets/img/characters/no7004_full.png",
+ "imageChar": "assets/img/characters/no7004_char.png",
+ "atkBase": 1050,
+ "atkGrowth": 36,
+ "defBase": 1150,
+ "defGrowth": 47,
+ "tacticsBase": 520,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 4290,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "B",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "悉皆執権",
+ "skillDetail": "A/LV10 確率 48% 防御410%上昇/対象:槍・砲・器\n①防御410%上昇する\n②敵軍部隊数×2.6%を防御効果に加算する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・砲・器　確率 48% / 防御 410%+2.6%×敵軍部隊数"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "覇軍ノ勇士",
+   "rank": "A",
+   "afterSkill": "戦陣 神楽",
+   "afterRank": "A",
+   "afterTarget": "全 飛翔4",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 77%上昇(卓越:追加確率30%で2倍)"
+  },
+  {
+   "slot": "B",
+   "skill": "戦陣 無縫",
+   "rank": "A",
+   "afterSkill": "天衣無縫神戒",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "42%",
+   "effectShort": "防御 80%上昇(部隊総コストで変動)",
+   "afterTarget": "全",
+   "afterRate": "50%",
+   "afterEffectShort": "防御30.02%上昇(部隊総コスト依存)"
+  },
+  {
+   "slot": "C",
+   "skill": "悉皆執権",
+   "rank": "A",
+   "afterSkill": "悉皆執権",
+   "afterRank": "A"
+  },
+  {
+   "slot": "S1",
+   "skill": "悉皆執権",
+   "rank": "A",
+   "afterSkill": "悉皆執権",
+   "afterRank": "A"
+  },
+  {
+   "slot": "S2",
+   "skill": "志半ノ矛楯",
+   "rank": "A",
+   "afterSkill": "志半ノ矛楯",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "+65%",
+   "effectShort": "攻撃465%上昇+防御465%上昇(模倣不可)"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/7004 と skills/悉皆執権 の生HTML)で確認(2026-08-08)。",
+  "合成テーブルはスキルページの1次(=移植前)・2次(=移植後)から取得。",
+  "候補スキルの対象・確率・効果はサイト内の既存登録から転記(未登録のスキルは空のまま)。"
+ ]
+}

@@ -1,0 +1,93 @@
+{
+ "name": "栗山利安",
+ "no": "2393",
+ "ch": "29章",
+ "cost": 4.5,
+ "troop": "槍砲器防",
+ "sub": "",
+ "effect": "最大指揮兵数と同数指揮時、防御効果1.5倍",
+ "furigana": "くりやまとしやす",
+ "illustrator": "添田一平",
+ "imageFull": "assets/img/characters/no2393_full.png",
+ "imageChar": "assets/img/characters/no2393_char.png",
+ "atkBase": 1010,
+ "atkGrowth": 30,
+ "defBase": 1140,
+ "defGrowth": 47,
+ "tacticsBase": 500,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 4280,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "B"
+ },
+ "initialSkill": "大剛一念",
+ "skillDetail": "A/LV10 確率 46% 防御280%上昇/対象:槍・砲・器\n①防御280%上昇する\n②この武将の最大指揮兵数と同数の兵士を指揮時防御効果を1.5倍にする",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・砲・器　確率 46% / 防御 280%上昇(最大指揮兵数と同数指揮時1.5倍)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "鬼十河",
+   "rank": "A",
+   "afterSkill": "朝曇ノ明麗",
+   "afterRank": "S",
+   "target": "槍・砲・器",
+   "rate": "+50%",
+   "effectShort": "防御360%上昇+所領防御陣形配置時コスト消費-1(模倣不可)",
+   "afterTarget": "全",
+   "afterRate": "46%",
+   "afterEffectShort": "防御 290%上昇(所領防御陣形第4列配置時1.5倍+飛翔7取得・模倣不可、TR別データは未確認)"
+  },
+  {
+   "slot": "B",
+   "skill": "大剛一念",
+   "rank": "A",
+   "afterSkill": "大剛一念",
+   "afterRank": "A",
+   "target": "槍・砲・器",
+   "rate": "46%",
+   "effectShort": "防御280%上昇(最大指揮兵数と同数指揮時1.5倍)"
+  },
+  {
+   "slot": "C",
+   "skill": "大剛一念",
+   "rank": "A",
+   "afterSkill": "大剛一念",
+   "afterRank": "A",
+   "target": "槍・砲・器",
+   "rate": "46%",
+   "effectShort": "防御280%上昇(最大指揮兵数と同数指揮時1.5倍)"
+  },
+  {
+   "slot": "S1",
+   "skill": "大剛一念",
+   "rank": "A",
+   "afterSkill": "大剛一念",
+   "afterRank": "A",
+   "target": "槍・砲・器",
+   "rate": "46%",
+   "effectShort": "防御280%上昇(最大指揮兵数と同数指揮時1.5倍)"
+  },
+  {
+   "slot": "S2",
+   "skill": "志半ノ矛楯",
+   "rank": "A",
+   "afterSkill": "志半ノ矛楯",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "+65%",
+   "effectShort": "攻撃465%上昇+防御465%上昇(模倣不可)"
+  }
+ ],
+ "notes": [
+  "45do.info+ixagno.blog.fc2.com(blog-entry-10360)確認済み: Aの鬼十河は移植後「朝曇ノ明麗」[S]に変化。B/C/S1は自己参照(大剛一念)で両ソース一致"
+ ]
+}

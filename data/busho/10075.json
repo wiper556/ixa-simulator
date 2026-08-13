@@ -1,0 +1,124 @@
+{
+ "name": "毛利輝元-復刻-【覇】",
+ "no": "10075",
+ "ch": "31章",
+ "cost": 3,
+ "troop": "全攻",
+ "sub": "不屈2",
+ "effect": "自由合流時に他部隊の同スキル効果を加算／コストを最大3まで除外",
+ "furigana": "もうりてるもと",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no10075_full.png",
+ "imageChar": "assets/img/characters/no10075_char.png",
+ "atkBase": 1300,
+ "atkGrowth": 82,
+ "defBase": 1230,
+ "defGrowth": 65,
+ "tacticsBase": 860,
+ "tacticsGrowth": 4,
+ "lv0Troops": 3700,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "X",
+  "uma": "A",
+  "ki": "SS"
+ },
+ "initialSkill": "天覇冠軍",
+ "skillDetail": "SSS/LV10 確率 100% 攻撃1000%上昇/対象:全　不屈2\n模倣不可\n①攻撃1000%上昇する\n②所属部隊を含む4部隊までで自合流を行える\n③自合流時他の自分の部隊にもこのスキルの攻撃効果を加算する\n④部隊総コストからこの武将分のコストを最大3まで除外する(部隊内重複不可)",
+ "categoryLinks": [
+  {
+   "href": "skills-fukutsu.html",
+   "label": "不屈スキル一覧を見る"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全 不屈2　確率 100% / 攻撃 1000%上昇(自合流4部隊まで/コスト除外最大3)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": "全 不屈2　確率 100% / 攻撃 1050%上昇(自合流4部隊まで/コスト除外最大3)"
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": "全 不屈2　確率 100% / 攻撃 1120%上昇(自合流4部隊まで/コスト除外最大3)"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": "全 不屈2　確率 100% / 攻撃 1230%上昇(自合流4部隊まで/コスト除外最大3.5)"
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": "全 不屈2　確率 100% / 攻撃 1360%上昇(自合流4部隊まで/コスト除外最大3.5)"
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": "全 不屈2　確率 100% / 攻撃 1500%上昇(自合流4部隊まで/コスト除外最大3.5)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "坂西都督",
+   "rank": "S",
+   "afterSkill": "坂西都督",
+   "afterRank": "S",
+   "rate": "45%",
+   "target": "弓・砲・器",
+   "effectShort": "攻撃150%上昇+敵軍部隊数×係数%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "絶無灰尽",
+   "rank": "SS",
+   "afterSkill": "絶無灰尽",
+   "afterRank": "SS",
+   "rate": "100%",
+   "target": "全 無尽 不屈1",
+   "effectShort": "攻撃1010%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "焼尽神無",
+   "rank": "SS",
+   "afterSkill": "焼尽神無",
+   "afterRank": "SS",
+   "rate": "44%",
+   "target": "全 無尽",
+   "effectShort": "攻撃を係数×人数で上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "終焉焦土",
+   "rank": "SSS",
+   "afterSkill": "終焉焦土",
+   "afterRank": "SSS",
+   "rate": "46%",
+   "target": "全 無尽",
+   "effectShort": "攻撃を係数×人数で上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "神羅聖域",
+   "rank": "SS",
+   "afterSkill": "神羅聖域",
+   "afterRank": "SS",
+   "rate": "40%",
+   "target": "全 覇道",
+   "effectShort": "攻撃900%上昇+防御900%上昇+破壊150%上昇"
+  }
+ ],
+ "notes": [
+  "カード画像照合済み(2026-07-30): 槍A/弓X/馬A/器SS",
+  "ixagno.blog.fc2.com生HTML照合済み(2026-07-29、blog-entry-11097の合成テーブルで初期テーブル/移植後の対応を確認、A/B/C/S1/S2とも移植後も同一スキル)。",
+  "2026-07-31再検証: 45do.info(最新記事は2025年12月付#0386までで31章カード自体の記事が無い)・ixanary.com(サイト全面リニューアル後、/cards/10075/は404で31章カード未収録)はいずれも本カード用の合成テーブル記事なし。ixagno.blog.fc2.com生HTML(blog-entry-11097)を再取得し下記5枠・統率4バッジ(槍A/弓X/馬A/器SS)・ステータス成長値(攻82/防65/兵法4.0)・trTable全行(TR1〜TR5の攻撃%/コスト除外上限)を再照合し完全一致を確認済み(45do.info/ixanary.comとの二重ソース確認は現状不可、要ユーザー確認)。",
+  "2026-08-02追加調査: ameameixa.com(bushocard-10075が404)も記事なしを確認。第二ソース発見できず単一ソース(ixagno)のまま、黄丸化は見送り。"
+ ]
+}

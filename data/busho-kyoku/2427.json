@@ -1,0 +1,130 @@
+{
+ "name": "細川幽斎",
+ "no": "2427",
+ "ch": "未確認",
+ "cost": 4,
+ "troop": "追加スキル防",
+ "sub": "",
+ "effect": "本領防御時のみ追加スキルの防御効果2.5倍(模倣不可)",
+ "furigana": "ほそかわゆうさい",
+ "illustrator": "正子公也",
+ "imageFull": "assets/img/characters/no2427_full.png",
+ "imageChar": "assets/img/characters/no2427_char.png",
+ "atkBase": 990,
+ "atkGrowth": 34,
+ "defBase": 1070,
+ "defGrowth": 52,
+ "tacticsBase": 540,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3800,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "S",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "開城ノ勅命",
+ "skillDetail": "A/LV10 確率 100% 追加スキルの防御効果2.5倍/対象:追加スキル\n模倣不可\n①このスキルを持つ武将カードは自分の本領防御時のみ追加スキルの防御効果が2.5倍となる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "追加スキル　確率 100% / 本領防御時のみ追加スキルの防御効果2.5倍(模倣不可)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": null
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": null
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": null
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": null
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": null
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": null
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "玄武の落延",
+   "rank": "B",
+   "afterSkill": "将軍親政",
+   "afterRank": "A",
+   "target": null,
+   "rate": null,
+   "effectShort": null,
+   "afterTarget": "槍馬",
+   "afterRate": "+30%",
+   "afterEffectShort": "攻撃7%上昇(防御7%上昇・戦闘に参加した自軍全部隊に効果)"
+  },
+  {
+   "slot": "B",
+   "skill": "不死鳥",
+   "rank": "B",
+   "afterSkill": "不死鳥",
+   "afterRank": "B",
+   "target": null,
+   "rate": null,
+   "effectShort": null
+  },
+  {
+   "slot": "C",
+   "skill": "王舎城",
+   "rank": "B",
+   "afterSkill": "王舎城",
+   "afterRank": "B",
+   "target": null,
+   "rate": null,
+   "effectShort": null
+  },
+  {
+   "slot": "S1",
+   "skill": "風狂魔術",
+   "rank": "A",
+   "afterSkill": "風狂魔術",
+   "afterRank": "A",
+   "target": null,
+   "rate": null,
+   "effectShort": null
+  },
+  {
+   "slot": "S2",
+   "skill": "戦陣 凱旋",
+   "rank": "A",
+   "afterSkill": "布都御魂ノ鬨",
+   "afterRank": "SS",
+   "target": null,
+   "rate": null,
+   "effectShort": null,
+   "afterTarget": "全",
+   "afterRate": "+35%",
+   "afterEffectShort": "攻撃 40%上昇+防御 40%上昇(部隊内レアリティS以上のスキル個数×20%加算)"
+  }
+ ],
+ "notes": [
+  "出典: カード画像(LV1形式: 極・統率 槍A/弓S/馬A/器A拡大確認・初期値990/1070/540・コスト4・LV1スキル値)",
+  " + ixanary.com/cards/2427(指揮3800(★0-0)・成長+34/+52/+2.5・LV10: 本領防御時のみ追加スキルの防御効果2.5倍・模倣不可)",
+  " + ixawiki BushoCard/2427(統率 槍A/弓S/馬A/器Aの2次確認・合成テーブル1次/2次候補)。",
+  "統率はカード画像+ixawikiの2ソース一致。章は未確認。スキルはA(鍛錬情報なし)のためTR1以降のeffectはnull。",
+  "合成テーブルはixawiki(1次候補+2次候補)。ixaixaに記事無し"
+ ]
+}

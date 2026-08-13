@@ -1,0 +1,40 @@
+{
+ "name": "筋骨隆々",
+ "rank": "S",
+ "baseRate": 9,
+ "target": "全",
+ "effectSummary": "S/LV1 確率：+9% / 対象 全 不屈1 兵站 攻撃：270%上昇 防御：270%上昇",
+ "categoryLinks": [
+  {
+   "href": "skills-fukutsu.html",
+   "label": "不屈スキル一覧を見る"
+  },
+  {
+   "href": "skills-heitan.html",
+   "label": "兵站スキル一覧を見る"
+  }
+ ],
+ "sourceCharacters": [
+  {
+   "name": "相楽左之助【覇】",
+   "no": "10067",
+   "slot": "B"
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "筋骨隆々",
+  "rank": "S"
+ },
+ "trTable": [
+  {
+   "level": "LV1",
+   "points": "-",
+   "effect": "全　確率 9% / 不屈1 兵站 攻撃270%上昇+防御270%上昇"
+  }
+ ],
+ "notes": [
+  "2026-08-13作成。S以上はページを作る規約(RULES.md S-01)の未処理分。",
+  "ixanary.com/skills/筋骨隆々 から取得(reslogに証拠つきで記録)。",
+  "合成専用スキルなので出典にはLV1しか無い。鍛錬の段は存在しない。"
+ ]
+}

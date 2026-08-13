@@ -1,0 +1,129 @@
+{
+ "name": "宇喜多秀家(2424)",
+ "no": "2424",
+ "ch": "未確認",
+ "cost": 4,
+ "troop": "全防",
+ "sub": "",
+ "effect": "拠点防衛敗北時、拠点から距離2以内の敵陣を全破壊(戦功無し・重複不可)",
+ "furigana": "うきたひでいえ",
+ "illustrator": "正子公也",
+ "imageFull": "assets/img/characters/no2424_full.png",
+ "imageChar": "assets/img/characters/no2424_char.png",
+ "atkBase": 1040,
+ "atkGrowth": 30,
+ "defBase": 1050,
+ "defGrowth": 47,
+ "tacticsBase": 520,
+ "tacticsGrowth": 3,
+ "lv0Troops": 3750,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "豊国絢爛ノ士",
+ "skillDetail": "A/LV10 確率 100% 拠点防衛敗北時に発動/対象:全\n①拠点防衛敗北時にスキル発動する\n②拠点から距離2以内の敵陣を全破壊する(陣破壊戦功無し・重複不可)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 拠点防衛敗北時、拠点から距離2以内の敵陣を全破壊(陣破壊戦功無し・重複不可)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": null
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": null
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": null
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": null
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": null
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": null
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "戦陣 凱旋",
+   "rank": "A",
+   "afterSkill": "布都御魂ノ鬨",
+   "afterRank": "SS",
+   "target": null,
+   "rate": null,
+   "effectShort": null,
+   "afterTarget": "全",
+   "afterRate": "+35%",
+   "afterEffectShort": "攻撃 40%上昇+防御 40%上昇(部隊内レアリティS以上のスキル個数×20%加算)"
+  },
+  {
+   "slot": "B",
+   "skill": "戦陣 破軍",
+   "rank": "A",
+   "afterSkill": null,
+   "afterRank": null,
+   "target": null,
+   "rate": null,
+   "effectShort": null
+  },
+  {
+   "slot": "C",
+   "skill": "不死鳥",
+   "rank": "B",
+   "afterSkill": null,
+   "afterRank": null,
+   "target": null,
+   "rate": null,
+   "effectShort": null
+  },
+  {
+   "slot": "S1",
+   "skill": "剣聖新陰",
+   "rank": "A",
+   "afterSkill": null,
+   "afterRank": null,
+   "target": null,
+   "rate": null,
+   "effectShort": null
+  },
+  {
+   "slot": "S2",
+   "skill": "戦陣 龍馬",
+   "rank": "A",
+   "afterSkill": null,
+   "afterRank": null,
+   "target": null,
+   "rate": null,
+   "effectShort": null
+  }
+ ],
+ "notes": [
+  "通常極(2020-03-05追加、4gamer/Gamerのニュース記事で確認)。章は未確認。",
+  "出典: カード画像(LV1形式: 極・統率 槍S/弓A/馬A/器A拡大確認・初期値1040/1050/520・コスト4。",
+  "  カードは極限突破表示のため指揮5150は不採用、ixanary/ixawikiの★0-0=3750を使用(B-00ルール))",
+  " + ixanary.com/cards/2424(成長+30/+47/+3.0・LV10: 確率+100%/拠点防衛敗北時に距離2以内の敵陣全破壊)",
+  " + ixawiki BushoCard/2424(統率 槍S/弓A/馬A/器Aの2次確認・合成1次候補・Aの2次候補)。",
+  "統率はカード画像+ixawikiの2ソース一致。スキルはA(鍛錬情報なし)のためTR1以降のeffectはnull。",
+  "合成テーブルはixawiki(1次候補+Aの2次候補のみ判明)。B/C/S1/S2の移植後変化先はixawikiに記載なくnull"
+ ]
+}

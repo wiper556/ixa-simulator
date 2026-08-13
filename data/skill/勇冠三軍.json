@@ -1,0 +1,102 @@
+{
+ "name": "勇冠三軍",
+ "rank": "SSS",
+ "baseRate": 45,
+ "target": "全",
+ "noMimic": true,
+ "effectSummary": "SSS/LV10 確率 45% 攻撃50%上昇/対象:全\n①攻撃50%上昇する(固定値)\n②(係数×防御参加武将数)%を攻撃効果に加算する(模倣不可)",
+ "categoryLinks": [
+  {
+   "href": "skills-count-atk.html",
+   "label": "人数依存(攻)スキル一覧を見る"
+  }
+ ],
+ "sourceCharacters": [
+  {
+   "name": "毛利輝元（5）",
+   "no": "1306",
+   "slot": "C"
+  },
+  {
+   "name": "大谷吉継（3）【覇】",
+   "no": "1300",
+   "slot": "C"
+  },
+  {
+   "name": "豊臣秀長【覇】",
+   "no": "1298",
+   "slot": "C"
+  },
+  {
+   "name": "北条早雲",
+   "no": "1296",
+   "slot": "S1"
+  },
+  {
+   "name": "織田信長（9）【覇】",
+   "no": "1286",
+   "slot": "S1"
+  },
+  {
+   "name": "織田信秀【覇】",
+   "no": "1310",
+   "slot": "A"
+  },
+  {
+   "name": "六角定頼",
+   "no": "1321",
+   "slot": "B"
+  },
+  {
+   "name": "斎藤一【覇】",
+   "no": "10066",
+   "slot": "S1"
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "勇冠三軍",
+  "rank": "SSS"
+ },
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "coefficient": "10.2",
+   "effect": "全　確率 45% / 攻撃 50%+10.2%×防御参加武将数(280人)=2906.0%"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "coefficient": "10.8",
+   "effect": "全　確率 45% / 攻撃 50%+10.8%×防御参加武将数(280人)=3074.0%"
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "coefficient": "11.5",
+   "effect": "全　確率 45% / 攻撃 50%+11.5%×防御参加武将数(280人)=3270.0%"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "coefficient": "12.4",
+   "effect": "全　確率 45% / 攻撃 50%+12.4%×防御参加武将数(280人)=3522.0%"
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "coefficient": "13.5",
+   "effect": "全　確率 45% / 攻撃 50%+13.5%×防御参加武将数(280人)=3830.0%"
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "coefficient": "15.0",
+   "effect": "全　確率 45% / 攻撃 50%+15.0%×防御参加武将数(280人)=4250.0%"
+  }
+ ],
+ "notes": [
+  "このスキルを習得済みのカードを合成素材にした時に出現する隠し候補スキル。",
+  "武将ページ(characters.html)のsynthesisTableで、このスキルが該当する候補枠のafterSkill/afterRankと同じ値になる。"
+ ]
+}

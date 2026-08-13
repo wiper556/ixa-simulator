@@ -1,0 +1,137 @@
+{
+ "name": "直江兼続（4）",
+ "no": "1266",
+ "ch": "28章",
+ "cost": 5,
+ "troop": "槍弓器騎防",
+ "sub": "",
+ "effect": "防御参加武将数依存／卓越で効果1.2倍",
+ "furigana": "なおえかねつぐ",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1266_full.png",
+ "imageChar": "assets/img/characters/no1266_char.png",
+ "atkBase": 1050,
+ "atkGrowth": 36,
+ "defBase": 1250,
+ "defGrowth": 70,
+ "tacticsBase": 680,
+ "tacticsGrowth": 3.5,
+ "lv0Troops": 4980,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "S",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "三全将帥",
+ "skillDetail": "S/LV10 確率 48% 防御上昇/対象:槍・弓・器・騎\n①(6.2×防御参加武将数)%を防御効果に加算する\n②卓越:追加確率10%で防御効果が1.2倍になる(模倣不可)",
+ "categoryLinks": [
+  {
+   "href": "skills-count-def.html",
+   "label": "人数依存(防)スキル一覧を見る"
+  },
+  {
+   "href": "skills-takuetsu.html",
+   "label": "卓越スキル一覧を見る"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "coefficient": "6.2",
+   "effect": "槍・弓・器・騎　確率 48% / 防御 6.2%×防御参加武将数(280人)=1736.0%(卓越:追加確率10%で1.2倍)"
+  },
+  {
+   "level": "TR1",
+   "points": "-",
+   "coefficient": "6.3",
+   "effect": "槍・弓・器・騎　確率 48% / 防御 6.3%×防御参加武将数(280人)=1764.0%(卓越:追加確率10%で1.2倍)"
+  },
+  {
+   "level": "TR2",
+   "points": "-",
+   "coefficient": "6.4",
+   "effect": "槍・弓・器・騎　確率 48% / 防御 6.4%×防御参加武将数(280人)=1792.0%(卓越:追加確率10%で1.2倍)"
+  },
+  {
+   "level": "TR3",
+   "points": "-",
+   "coefficient": "6.5",
+   "effect": "槍・弓・器・騎　確率 48% / 防御 6.5%×防御参加武将数(280人)=1820.0%(卓越:追加確率10%で1.2倍)"
+  },
+  {
+   "level": "TR4",
+   "points": "-",
+   "coefficient": "6.6",
+   "effect": "槍・弓・器・騎　確率 48% / 防御 6.6%×防御参加武将数(280人)=1848.0%(卓越:追加確率10%で1.2倍)"
+  },
+  {
+   "level": "TR5",
+   "points": "-",
+   "coefficient": "6.7",
+   "effect": "槍・弓・器・騎　確率 48% / 防御 6.7%×防御参加武将数(280人)=1876.0%(卓越:追加確率10%で1.2倍)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "三全将帥",
+   "rank": "S",
+   "afterSkill": "神羅聖域",
+   "afterRank": "SS",
+   "rate": "48%",
+   "target": "槍・弓・器・騎",
+   "effectShort": "防御6.2%×防御参加武将数上昇(卓越で1.2倍)",
+   "afterTarget": "全 覇道",
+   "afterRate": "40%",
+   "afterEffectShort": "攻撃 900%上昇+防御900%上昇+破壊150%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "三全将帥",
+   "rank": "S",
+   "afterSkill": "神羅聖域",
+   "afterRank": "SS",
+   "rate": "48%",
+   "target": "槍・弓・器・騎",
+   "effectShort": "防御6.2%×防御参加武将数上昇(卓越で1.2倍)",
+   "afterTarget": "全 覇道",
+   "afterRate": "40%",
+   "afterEffectShort": "攻撃 900%上昇+防御900%上昇+破壊150%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "八幡神ノ威光",
+   "rank": "SSS",
+   "afterSkill": "八幡神ノ威光",
+   "afterRank": "SSS",
+   "rate": "70%",
+   "target": "部隊長",
+   "effectShort": "部隊長の初期スキルを1.25倍模倣"
+  },
+  {
+   "slot": "S1",
+   "skill": "神羅聖域",
+   "rank": "SS",
+   "afterSkill": "神羅聖域",
+   "afterRank": "SS",
+   "rate": "40%",
+   "target": "全 覇道",
+   "effectShort": "攻撃900%上昇+防御900%上昇+破壊150%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "永世ノ天隻",
+   "rank": "SS",
+   "afterSkill": "永世ノ天隻",
+   "afterRank": "SS",
+   "rate": "48%",
+   "target": "全 飛翔9",
+   "effectShort": "防御を係数×人数で上昇"
+  }
+ ],
+ "notes": [
+  "45do.info確認: 生HTML(skiladd_wrap)のcandidate A/B/C/S1/S2見出しとdivの並び順が1:1対応していることを確認済み"
+ ]
+}

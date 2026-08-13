@@ -1,0 +1,128 @@
+{
+ "name": "毛利輝元【覇】",
+ "no": "1251",
+ "ch": "27章",
+ "cost": 3,
+ "troop": "全攻",
+ "sub": "不屈1",
+ "effect": "自身合流時、自分の他部隊にもこの攻撃効果を加算／コストを最大3(TR3以降3.5)まで除外",
+ "furigana": "もうりてるもと",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1251_full.png",
+ "imageChar": "assets/img/characters/no1251_char.png",
+ "atkBase": 1280,
+ "atkGrowth": 76,
+ "defBase": 1200,
+ "defGrowth": 65,
+ "tacticsBase": 770,
+ "tacticsGrowth": 3.5,
+ "lv0Troops": 3700,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "X",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "西覇冠軍",
+ "skillDetail": "SSS/LV10 確率 100% 攻撃540%上昇/対象:全　不屈1\n模倣不可\n①攻撃540%上昇する\n②不屈1を持つ\n③自身合流時自分の他部隊にもこの攻撃効果を加算する\n④部隊総コストからこの武将分のコストを最大3(TR3以降3.5)まで除外する(部隊内重複不可)",
+ "categoryLinks": [
+  {
+   "href": "skills-fukutsu.html",
+   "label": "不屈スキル一覧を見る"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全 不屈1　確率 100% / 攻撃 540%上昇(コスト除外3)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": "全 不屈1　確率 100% / 攻撃 570%上昇(コスト除外3)"
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": "全 不屈1　確率 100% / 攻撃 610%上昇(コスト除外3)"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": "全 不屈1　確率 100% / 攻撃 660%上昇(コスト除外3.5)"
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": "全 不屈1　確率 100% / 攻撃 720%上昇(コスト除外3.5)"
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": "全 不屈1　確率 100% / 攻撃 800%上昇(コスト除外3.5)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "龍驤虎躍",
+   "rank": "SS",
+   "afterSkill": "龍驤虎躍",
+   "afterRank": "SS",
+   "rate": "60%",
+   "target": "全",
+   "effectShort": "攻防810%上昇+コスト-1"
+  },
+  {
+   "slot": "B",
+   "skill": "破軍騎行",
+   "rank": "SS",
+   "afterSkill": "破軍騎行",
+   "afterRank": "SS",
+   "rate": "100%",
+   "target": "全 不屈2",
+   "effectShort": "攻撃750%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "星神闘覇",
+   "rank": "SS",
+   "afterSkill": "星神闘覇",
+   "afterRank": "SS",
+   "rate": "100%",
+   "target": "全 飛翔15",
+   "effectShort": "攻撃770%上昇+速度200%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "破邪後輝",
+   "rank": "SS",
+   "afterSkill": "飛龍衝天",
+   "afterRank": "SS",
+   "rate": "100%",
+   "target": "全 覇道",
+   "effectShort": "攻撃 770%上昇+速度150%上昇+破壊150%上昇(TR以降のデータなし、LV10が最大値)",
+   "afterTarget": "全 飛翔15",
+   "afterRate": "45%",
+   "afterEffectShort": "攻撃 200%+7.5%×防御参加武将数(280人)=2300.0%"
+  },
+  {
+   "slot": "S2",
+   "skill": "十束ノ神域",
+   "rank": "SS",
+   "afterSkill": "天聖宝冠",
+   "afterRank": "SSS",
+   "rate": "100%",
+   "target": "全 覇道",
+   "effectShort": "攻撃 320%上昇+速度70%上昇(TR別データは未確認)",
+   "afterTarget": "全",
+   "afterRate": "45%",
+   "afterEffectShort": "攻撃 100%+5%×防御参加武将数(280人)=1500.0%"
+  }
+ ],
+ "notes": [
+  "カード画像照合済み(2026-07-30): 槍A/弓X/馬A/器S",
+  "45do.info(ordinary/0212)生HTML照合+ixagno.blog.fc2.com(blog-entry-9527)の両ソースで一致確認済み。S1/S2の移植後スキルはixagnoの「初期テーブル/左記スキル移植後」対応表に基づく。"
+ ]
+}

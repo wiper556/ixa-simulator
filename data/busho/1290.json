@@ -1,0 +1,126 @@
+{
+ "name": "武田信玄（6）",
+ "no": "1290",
+ "ch": "30章",
+ "cost": 5,
+ "troop": "赤備え",
+ "sub": "撤退",
+ "effect": "所属部隊内の赤備えの兵士攻防速が上昇",
+ "furigana": "たけだしんげん",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1290_full.png",
+ "imageChar": "assets/img/characters/no1290_char.png",
+ "atkBase": 1250,
+ "atkGrowth": 71,
+ "defBase": 1250,
+ "defGrowth": 71,
+ "tacticsBase": 680,
+ "tacticsGrowth": 3,
+ "lv0Troops": 5110,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "XX",
+  "ki": "A"
+ },
+ "initialSkill": "虎王烈迅",
+ "skillDetail": "S/LV10 常時発動　撤退\n①所属部隊内の「赤備え」兵士の攻撃力+10/防御力+10/移動速度+1上昇する\n②TR3以降は攻撃参加時の自軍全部隊の帰還速度も倍化する(模倣不可・自部隊内重複不可)",
+ "categoryLinks": [
+  {
+   "href": "skills-taitai.html",
+   "label": "撤退スキル一覧を見る"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "赤備え 撤退　常時 / 攻撃+10 防御+10 速度+1"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": "赤備え 撤退　常時 / 攻撃+11 防御+11 速度+1"
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": "赤備え 撤退　常時 / 攻撃+12 防御+12 速度+1"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": "赤備え 撤退　常時 / 攻撃+13 防御+13 速度+1(帰還速度3倍)"
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": "赤備え 撤退　常時 / 攻撃+14 防御+14 速度+1(帰還速度4倍)"
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": "赤備え 撤退　常時 / 攻撃+16 防御+16 速度+2(帰還速度5倍)"
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": "赤備え 撤退　常時 / 攻撃+18 防御+18 速度+3(帰還速度8倍)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "刹那無影",
+   "rank": "SS",
+   "afterSkill": "刹那無影",
+   "afterRank": "SS",
+   "rate": "55%",
+   "target": "部隊長",
+   "effectShort": "部隊長の初期スキルを1.15倍模倣+速度200%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "神羅聖域",
+   "rank": "SS",
+   "afterSkill": "神羅聖域",
+   "afterRank": "SS",
+   "rate": "40%",
+   "target": "全 覇道",
+   "effectShort": "攻撃900%上昇+防御900%上昇+破壊150%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "千里必勝ノ神算",
+   "rank": "SS",
+   "afterSkill": "千里必勝ノ神算",
+   "afterRank": "SS",
+   "rate": "42%",
+   "target": "全 覇道",
+   "effectShort": "攻防各1010%上昇+破壊150%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "天地超克",
+   "rank": "SSS",
+   "afterSkill": "天地超克",
+   "afterRank": "SSS",
+   "rate": "46%",
+   "target": "全 不屈1",
+   "effectShort": "攻撃を係数×人数で上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "神羅聖域",
+   "rank": "SS",
+   "afterSkill": "神羅聖域",
+   "afterRank": "SS",
+   "rate": "40%",
+   "target": "全 覇道",
+   "effectShort": "攻撃900%上昇+防御900%上昇+破壊150%上昇"
+  }
+ ],
+ "notes": [
+  "ユーザーのゲーム内確認により訂正済み(2026-07-29)。"
+ ]
+}

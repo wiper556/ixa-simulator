@@ -1,0 +1,91 @@
+{
+ "name": "北条氏康（3）【覇】",
+ "no": "1239",
+ "ch": "26章",
+ "cost": 0.5,
+ "troop": "全攻防",
+ "sub": "",
+ "effect": "所属部隊武将の最大指揮兵数+3000",
+ "furigana": "ほうじょううじやす",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1239_full.png",
+ "imageChar": "assets/img/characters/no1239_char.png",
+ "atkBase": 1260,
+ "atkGrowth": 71,
+ "defBase": 1260,
+ "defGrowth": 71,
+ "tacticsBase": 760,
+ "tacticsGrowth": 3.5,
+ "lv0Troops": 2000,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "S",
+  "uma": "S",
+  "ki": "S"
+ },
+ "initialSkill": "獅子ノ炯眼",
+ "skillDetail": "SSS/LV10 確率 60% 攻撃720%上昇/対象:全\n模倣不可\n①攻撃720%上昇する\n②防御720%上昇する\n③この武将を除く所属部隊の武将の最大指揮兵数に3000を加算する(部隊内重複不可)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 60% / 攻撃720%上昇+防御720%上昇(他武将の最大指揮兵数+3000)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "月詠ノ覇威",
+   "rank": "SS",
+   "afterSkill": "月詠ノ覇威",
+   "afterRank": "SS",
+   "rate": "100%",
+   "target": "全",
+   "effectShort": "攻撃344%上昇+防御344%上昇+卓越確率+15%(模倣不可)"
+  },
+  {
+   "slot": "B",
+   "skill": "龍驤虎躍",
+   "rank": "SS",
+   "afterSkill": "龍驤虎躍",
+   "afterRank": "SS",
+   "rate": "60%",
+   "target": "全",
+   "effectShort": "攻撃810%上昇+防御810%上昇(コスト-1・模倣不可)"
+  },
+  {
+   "slot": "C",
+   "skill": "龍驤虎躍",
+   "rank": "SS",
+   "afterSkill": "龍驤虎躍",
+   "afterRank": "SS",
+   "rate": "60%",
+   "target": "全",
+   "effectShort": "攻撃810%上昇+防御810%上昇(コスト-1・模倣不可)"
+  },
+  {
+   "slot": "S1",
+   "skill": "破軍騎行",
+   "rank": "SS",
+   "afterSkill": "破軍騎行",
+   "afterRank": "SS",
+   "rate": "100%",
+   "target": "全 不屈2",
+   "effectShort": "攻撃750%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "月詠ノ覇威",
+   "rank": "SS",
+   "afterSkill": "月詠ノ覇威",
+   "afterRank": "SS",
+   "rate": "100%",
+   "target": "全",
+   "effectShort": "攻撃344%上昇+防御344%上昇+卓越確率+15%(模倣不可)"
+  }
+ ],
+ "notes": [
+  "カード画像照合済み(2026-08-02): 槍A/弓S/馬S/器S(旧データは\".S\"表記の誤記+kiのAを誤読していたため修正、画像を8倍ズームして再確認)",
+  "45do.info(ordinary/0157)生HTML + ameameixa.com(bushocard-1239)生HTML の2ソースで完全一致を確認(2026-08-02)"
+ ]
+}

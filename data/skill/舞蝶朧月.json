@@ -1,0 +1,56 @@
+{
+ "name": "舞蝶朧月",
+ "rank": "S",
+ "baseRate": 50,
+ "target": "部隊長",
+ "effectSummary": "S/LV10 確率 50% 対象:部隊長\n①部隊長の持つ模倣可能な初期スキルを模倣する\n②卓越:追加確率20%で通常攻撃/防御効果を1.25倍にして模倣する",
+ "categoryLinks": [
+  {
+   "href": "skills-leadermimic.html",
+   "label": "部隊長模倣スキル一覧を見る"
+  },
+  {
+   "href": "skills-takuetsu.html",
+   "label": "卓越スキル一覧を見る"
+  }
+ ],
+ "sourceCharacters": [
+  {
+   "name": "帰蝶",
+   "no": "2592",
+   "slot": "A・B",
+   "db": "kyoku"
+  },
+  {
+   "name": "細川ガラシャ",
+   "no": "2599",
+   "slot": "S1・S2",
+   "db": "kyoku"
+  }
+ ],
+ "grantedViaSkills": [
+  {
+   "skill": "潔花咲然",
+   "rank": "S"
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "月詠ノ覇威",
+  "rank": "SS"
+ },
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "部隊長　確率 50% / 卓越追加確率20%・1.25倍"
+  }
+ ],
+ "notes": [
+  "潔花咲然を持つ細川幽斎(復刻)【天】(10070・Bスロット)を合成素材にすると移植後に舞蝶朧月へ変化するため、",
+  "武将を直接列挙せずスキル参照で記載する(2026-08-03ルール統一)",
+  "【2026-08-12修正】自己参照(舞蝶朧月→舞蝶朧月)で登録されていたが誤り。",
+  "ixanary.com/skills/舞蝶朧月 の合成テーブルのA枠(1次=舞蝶朧月[S] → 2次=月詠ノ覇威[SS])を確認して訂正した。",
+  "[[feedback_skill_hidden_candidate_rule]]どおり、他武将の既存登録ではなく",
+  "スキル個別ページの合成テーブルを根拠にしている。"
+ ]
+}

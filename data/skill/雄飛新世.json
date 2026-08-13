@@ -1,0 +1,62 @@
+{
+ "name": "雄飛新世",
+ "rank": "SSS",
+ "baseRate": 37,
+ "target": "砲・器 覇道",
+ "noMimic": true,
+ "effectSummary": "SSS/LV10 確率 37% 部隊総攻撃力上昇/対象:砲・器　覇道\n模倣不可\n①対象兵科(砲・器)を指揮した戦闘時部隊総攻撃力が30%上昇する\n②覇道を持つため所属部隊の武将のスキルを無効化や発動率低下から保護する",
+ "categoryLinks": [
+  {
+   "href": "skills-hadou.html",
+   "label": "覇道スキル一覧を見る"
+  }
+ ],
+ "sourceCharacters": [
+  {
+   "name": "織田信長（9）【覇】",
+   "no": "1286",
+   "slot": "移植不可"
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "雄飛新世",
+  "rank": "SSS"
+ },
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "砲・器 覇道　確率 37% / 総攻撃 30%上昇"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": "砲・器 覇道　確率 37% / 総攻撃 31%上昇"
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": "砲・器 覇道　確率 37% / 総攻撃 33%上昇"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": "砲・器 覇道　確率 37% / 総攻撃 35%上昇"
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": "砲・器 覇道　確率 37% / 総攻撃 37%上昇"
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": "砲・器 覇道　確率 37% / 総攻撃 40%上昇"
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": "砲・器 覇道　確率 37% / 総攻撃 50%上昇"
+  }
+ ]
+}

@@ -1,0 +1,96 @@
+{
+ "name": "松平元康",
+ "no": "1207",
+ "ch": "23章",
+ "cost": 4.5,
+ "troop": "槍弓器鉄攻",
+ "sub": "",
+ "effect": "敵軍総武将コスト依存で対象兵科の攻撃力上昇",
+ "furigana": "まつだいらもとやす",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1207_full.png",
+ "imageChar": "assets/img/characters/no1207_char.png",
+ "atkBase": 1150,
+ "atkGrowth": 58,
+ "defBase": 1050,
+ "defGrowth": 33,
+ "tacticsBase": 640,
+ "tacticsGrowth": 3.5,
+ "lv0Troops": 4670,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "S",
+  "uma": "S",
+  "ki": "A"
+ },
+ "initialSkill": "四界偃武",
+ "skillDetail": "S/LV10 確率 38% 攻撃(敵軍総武将コスト×0.8)%上昇/対象:槍・弓・器・鉄\n①対象兵科(槍・弓・器・鉄)を指揮した戦闘時攻撃力が敵軍総武将コスト×0.8%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・弓・器・鉄　確率 38% / 攻撃 敵軍総武将コスト×0.8%"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "四界偃武",
+   "rank": "S",
+   "afterSkill": "加具土ノ神域",
+   "afterRank": "SS",
+   "rate": "38%",
+   "target": "槍・弓・器・鉄",
+   "effectShort": "攻撃(敵軍総武将コスト×0.8)%上昇",
+   "afterTarget": "全",
+   "afterRate": "25%",
+   "afterEffectShort": "攻撃 3.4%×防御参加武将数(280人)=952.0%"
+  },
+  {
+   "slot": "B",
+   "skill": "四界偃武",
+   "rank": "S",
+   "afterSkill": "加具土ノ神域",
+   "afterRank": "SS",
+   "rate": "38%",
+   "target": "槍・弓・器・鉄",
+   "effectShort": "攻撃(敵軍総武将コスト×0.8)%上昇",
+   "afterTarget": "全",
+   "afterRate": "25%",
+   "afterEffectShort": "攻撃 3.4%×防御参加武将数(280人)=952.0%"
+  },
+  {
+   "slot": "C",
+   "skill": "天岩戸ノ神域",
+   "rank": "SS",
+   "afterSkill": "天岩戸ノ神域",
+   "afterRank": "SS",
+   "rate": "70%",
+   "target": "全",
+   "effectShort": "攻撃2.8%×防御参加武将数上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "加具土ノ神域",
+   "rank": "SS",
+   "afterSkill": "加具土ノ神域",
+   "afterRank": "SS",
+   "rate": "25%",
+   "target": "全",
+   "effectShort": "攻撃3.4%×防御参加武将数上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "八目鳴鏑ノ奏",
+   "rank": "SS",
+   "afterSkill": "八目鳴鏑ノ奏",
+   "afterRank": "SS",
+   "rate": "37%",
+   "target": "全",
+   "effectShort": "攻撃2.5%×防御参加武将数上昇"
+  }
+ ],
+ "notes": [
+  "45do.info(skiladd_wrap) + ameameixa.com(bushocard-1207)生HTML の2ソースで完全一致を確認(2026-08-02)"
+ ]
+}

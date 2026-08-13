@@ -1,0 +1,136 @@
+{
+ "name": "森可成(2402)",
+ "no": "2402",
+ "ch": "未確認",
+ "cost": 3.5,
+ "troop": "全防",
+ "sub": "",
+ "effect": "防御時に敵軍の攻撃スキル発動率を-5%(特殊効果は重複不可)",
+ "furigana": "もりよしなり",
+ "illustrator": "正子公也",
+ "imageFull": "assets/img/characters/no2402_full.png",
+ "imageChar": "assets/img/characters/no2402_char.png",
+ "atkBase": 1000,
+ "atkGrowth": 28,
+ "defBase": 1100,
+ "defGrowth": 29,
+ "tacticsBase": 480,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3500,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "S",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "覇王ノ守人",
+ "skillDetail": "B/LV10 確率 50% 防御57%上昇/対象:全\n①防御57%上昇する\n②防御時に敵軍の攻撃スキル発動率を-5%する(特殊効果は重複不可)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 50% / 防御 57%上昇(防御時に敵軍の攻撃スキル発動率-5%・特殊効果は重複不可)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": null
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": null
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": null
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": null
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": null
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": null
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "暁光",
+   "rank": "D",
+   "afterSkill": "屈指の勇将",
+   "afterRank": "D",
+   "target": null,
+   "rate": null,
+   "effectShort": null,
+   "afterTarget": "全",
+   "afterRate": "+37%",
+   "afterEffectShort": "攻撃22%上昇(防御22%上昇)"
+  },
+  {
+   "slot": "B",
+   "skill": "戦陣 阿吽",
+   "rank": "A",
+   "afterSkill": "覇王征軍",
+   "afterRank": "SS",
+   "target": null,
+   "rate": null,
+   "effectShort": null,
+   "afterTarget": "全",
+   "afterRate": "+42%",
+   "afterEffectShort": "攻撃 25.39%上昇(部隊総コストで変動、TR別データは未確認)"
+  },
+  {
+   "slot": "C",
+   "skill": "戦陣 破軍",
+   "rank": "A",
+   "afterSkill": "天穿神滅",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "+44%",
+   "effectShort": "攻撃66%上昇+防御66%上昇",
+   "afterTarget": "砲器",
+   "afterRate": "+50%",
+   "afterEffectShort": "攻撃((ランク+1)xコストx3) %上昇(部隊ランクとコストで効果が変化)"
+  },
+  {
+   "slot": "S1",
+   "skill": "覇王ノ守人",
+   "rank": "B",
+   "afterSkill": "覇王ノ守人",
+   "afterRank": "B",
+   "target": "全",
+   "rate": "+50%",
+   "effectShort": "防御57%上昇(防御時に敵軍の攻撃スキル発動率-5%・特殊効果は重複不可)"
+  },
+  {
+   "slot": "S2",
+   "skill": "武神八幡陣",
+   "rank": "SS",
+   "afterSkill": "武神八幡陣",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "+60%",
+   "effectShort": "防御(部隊総コスト依存)%上昇"
+  }
+ ],
+ "notes": [
+  "限定極(2019-12-21〜、ixaixa.com確認)。章は未確認。同名の極No.2375(覇立槍)とは別カード。",
+  "出典: カード画像(LV1形式: 極・統率バッジ拡大確認・初期値1000/1100/480・コスト3.5・LV1スキル値)",
+  " + ixanary.com/cards/2402(指揮3500(★0-0)・成長+28/+29/+2.5・LV10: 確率+50%/全防57%/発動率-5%・ふりがな・絵師)",
+  " + ixaixa.com/archives/8470(合成テーブル)。",
+  "ixaixaは「確率57%」と記載しているがカードLV1(+30%)→ixanary LV10(+50%)の系列と矛盾するため、",
+  "確率はixanary(50%)を採用。スキルはB(鍛錬不可)のためTR1以降のeffectはnull。",
+  "合成テーブルは登録時ixaixa.com単一ソースだったが、2026-08-12にixanaryのスキル個別ページ",
+  " (1次/2次候補)と全行一致することを確認し2ソースになった(tools/audit_characters.py --online)。"
+ ]
+}

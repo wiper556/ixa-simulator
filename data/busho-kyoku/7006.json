@@ -1,0 +1,89 @@
+{
+ "name": "秋山信友",
+ "no": "7006",
+ "ch": "未確認",
+ "cost": 3.5,
+ "troop": "槍馬砲器攻",
+ "sub": "",
+ "effect": "自部隊同時攻撃で消費する名声値-20",
+ "furigana": "あきやまのぶとも",
+ "illustrator": "青空あおい",
+ "imageFull": "assets/img/characters/no7006_full.png",
+ "imageChar": "assets/img/characters/no7006_char.png",
+ "atkBase": 1130,
+ "atkGrowth": 46,
+ "defBase": 1030,
+ "defGrowth": 33,
+ "tacticsBase": 550,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3790,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "B"
+ },
+ "initialSkill": "虎軍先兵",
+ "skillDetail": "A/LV10 確率 50% 攻撃440%上昇/対象:槍・馬・砲・器\n①攻撃440%上昇する\n②所属部隊を含む自部隊同時攻撃で消費する名声値を-20する(重複不可)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・馬・砲・器　確率 50% / 攻撃 440%上昇(自部隊同時攻撃の名声値-20)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "朧雲ノ突撃",
+   "rank": "S",
+   "afterSkill": "朧雲ノ閃撃",
+   "afterRank": "SSS",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃170%上昇+速度240%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "虎国ノ至賢",
+   "rank": "A",
+   "afterSkill": "志半ノ矛楯",
+   "afterRank": "A",
+   "target": "馬・砲・器",
+   "rate": "100%",
+   "effectShort": "攻撃450%上昇+速度100%上昇(模倣不可)",
+   "afterTarget": "全",
+   "afterRate": "+65%",
+   "afterEffectShort": "攻撃465%上昇+防御465%上昇(模倣不可)"
+  },
+  {
+   "slot": "C",
+   "skill": "虎軍先兵",
+   "rank": "A",
+   "afterSkill": "虎軍先兵",
+   "afterRank": "A"
+  },
+  {
+   "slot": "S1",
+   "skill": "虎軍先兵",
+   "rank": "A",
+   "afterSkill": "虎軍先兵",
+   "afterRank": "A"
+  },
+  {
+   "slot": "S2",
+   "skill": "志半ノ矛楯",
+   "rank": "A",
+   "afterSkill": "志半ノ矛楯",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "+65%",
+   "effectShort": "攻撃465%上昇+防御465%上昇(模倣不可)"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/7006 と skills/虎軍先兵 の生HTML)で確認(2026-08-08)。",
+  "合成テーブルはスキルページの1次(=移植前)・2次(=移植後)から取得。",
+  "候補スキルの対象・確率・効果はサイト内の既存登録から転記(未登録のスキルは空のまま)。"
+ ]
+}

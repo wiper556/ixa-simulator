@@ -1,0 +1,127 @@
+{
+ "name": "竹中半兵衛【覇】",
+ "no": "1275",
+ "ch": "29章",
+ "cost": 6,
+ "troop": "全攻",
+ "sub": "無尽",
+ "effect": "極限スキル枠の攻撃効果3.5倍",
+ "furigana": "たけなかはんべえ",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1275_full.png",
+ "imageChar": "assets/img/characters/no1275_char.png",
+ "atkBase": 1270,
+ "atkGrowth": 76,
+ "defBase": 1210,
+ "defGrowth": 66,
+ "tacticsBase": 890,
+ "tacticsGrowth": 4.5,
+ "lv0Troops": 5400,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "S",
+  "uma": "A",
+  "ki": "X"
+ },
+ "initialSkill": "智絶千算",
+ "skillDetail": "SSS/LV10 確率 100% 攻撃680%上昇/対象:全　無尽\n模倣不可\n①攻撃680%上昇する\n②無尽を持つため部隊消費コストを-0.5する\n③対象兵科指揮時極限スキルの攻撃効果が3.5倍となる",
+ "categoryLinks": [
+  {
+   "href": "skills-mujin.html",
+   "label": "無尽スキル一覧を見る"
+  },
+  {
+   "href": "skills-cost.html",
+   "label": "コスト減少スキル一覧を見る"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 攻撃 680%上昇(無尽 部隊消費コスト-0.5・極限スキル効果3.5倍)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": "全　確率 100% / 攻撃750%上昇 無尽(部隊消費コスト-0.5) 対象兵科指揮時、極限スキルの攻撃効果が3.5倍となる(模倣不可)"
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": "全　確率 100% / 攻撃910%上昇 無尽(部隊消費コスト-0.5) 対象兵科指揮時、極限スキルの攻撃効果が3.5倍となる(模倣不可)"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": "全　確率 100% / 攻撃1130%上昇 無尽(部隊消費コスト-0.5) 対象兵科指揮時、極限スキルの攻撃効果が3.5倍となる(模倣不可)"
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": "全　確率 100% / 攻撃1400%上昇 無尽(部隊消費コスト-0.5) 対象兵科指揮時、極限スキルの攻撃効果が3.5倍となる(模倣不可)"
+  },
+  {
+   "level": "TR5",
+   "points": "最大鍛錬",
+   "effect": "全　確率 100% / 攻撃 1730%上昇(無尽 部隊消費コスト-0.5・極限スキル効果3.5倍)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "摩利支天ノ法",
+   "rank": "SSS",
+   "afterSkill": "摩利支天ノ法",
+   "afterRank": "SSS",
+   "rate": "70%",
+   "target": "部隊長",
+   "effectShort": "部隊長の初期スキルを1.25倍模倣"
+  },
+  {
+   "slot": "B",
+   "skill": "万物神勇",
+   "rank": "SSS",
+   "afterSkill": "万物神勇",
+   "afterRank": "SSS",
+   "rate": "43%",
+   "target": "全 撤退",
+   "effectShort": "攻撃を係数×人数で上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "天地超克",
+   "rank": "SSS",
+   "afterSkill": "天地超克",
+   "afterRank": "SSS",
+   "rate": "46%",
+   "target": "全 不屈1",
+   "effectShort": "攻撃を係数×人数で上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "天地超克",
+   "rank": "SSS",
+   "afterSkill": "天地超克",
+   "afterRank": "SSS",
+   "rate": "46%",
+   "target": "全 不屈1",
+   "effectShort": "攻撃を係数×人数で上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "四天轟雷",
+   "rank": "SS",
+   "afterSkill": "四天轟雷",
+   "afterRank": "SS",
+   "rate": "100%",
+   "target": "全",
+   "effectShort": "攻防360%上昇+砲・器対象追加"
+  }
+ ],
+ "notes": [
+  "カード画像照合済み: 槍A/弓S/馬A/器X(ixanary側jsonはyumi/kiba値が実画像と入れ替わっているため画像基準を採用)",
+  "ixanary.com生HTML照合(2026-08-02): カード画像のスキル欄にLV10とTR5(鍛錬)の2枠のみ表示されており、TR1〜TR4は実在しない(存在すれば同様に表示されるはずだが無い)。",
+  "45do.info(ordinary/0318)生HTML照合+ameameixa.com(post-12334「29章天武将スキル一覧」表のNo.1275行)の両ソースでA/B/C/S1/S2の並びが一致確認済み。afterSkill(移植後変化)はixagno未掲載のため45do.info記載の等級のまま。"
+ ]
+}

@@ -1,0 +1,96 @@
+{
+ "name": "島津義久(1219)",
+ "no": "1219",
+ "ch": "24章",
+ "cost": 4,
+ "troop": "全攻防",
+ "sub": "",
+ "effect": "部隊内全武将の初期スキルに「砲」対象を追加",
+ "furigana": "しまづよしひさ",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1219_full.png",
+ "imageChar": "assets/img/characters/no1219_char.png",
+ "atkBase": 1160,
+ "atkGrowth": 57,
+ "defBase": 1160,
+ "defGrowth": 57,
+ "tacticsBase": 660,
+ "tacticsGrowth": 3,
+ "lv0Troops": 4500,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "SS"
+ },
+ "initialSkill": "破邪轟砲",
+ "skillDetail": "S/LV10 確率 50% 攻撃200%上昇/対象:全\n①攻撃200%上昇する\n②防御200%上昇する\n③部隊内全武将の兵科対象の初期スキルに「砲」対象を追加する(TR1〜TR5は未確認)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 50% / 攻撃200%上昇+防御200%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "破邪轟砲",
+   "rank": "S",
+   "afterSkill": "四至ノ神域",
+   "afterRank": "SSS",
+   "rate": "50%",
+   "target": "全",
+   "effectShort": "攻撃200%上昇+防御200%上昇",
+   "afterTarget": "自身",
+   "afterRate": "70%",
+   "afterEffectShort": "倍率 1.25倍"
+  },
+  {
+   "slot": "B",
+   "skill": "破邪轟砲",
+   "rank": "S",
+   "afterSkill": "四至ノ神域",
+   "afterRank": "SSS",
+   "rate": "50%",
+   "target": "全",
+   "effectShort": "攻撃200%上昇+防御200%上昇",
+   "afterTarget": "自身",
+   "afterRate": "70%",
+   "afterEffectShort": "倍率 1.25倍"
+  },
+  {
+   "slot": "C",
+   "skill": "神屋楯比売命",
+   "rank": "SS",
+   "afterSkill": "神屋楯比売命",
+   "afterRank": "SS",
+   "rate": "70%",
+   "target": "自身",
+   "effectShort": "初期スキルを模倣(戦闘スキルのみ、1倍)"
+  },
+  {
+   "slot": "S1",
+   "skill": "四至ノ神域",
+   "rank": "SS",
+   "afterSkill": "四至ノ神域",
+   "afterRank": "SS",
+   "rate": "70%",
+   "target": "自身",
+   "effectShort": "初期スキルを1.25倍模倣"
+  },
+  {
+   "slot": "S2",
+   "skill": "天頂ノ電光",
+   "rank": "SSS",
+   "afterSkill": "天頂ノ電光",
+   "afterRank": "SSS",
+   "rate": "12%",
+   "target": "全",
+   "effectShort": "攻撃190%上昇(部隊長なら発動率・効果3倍)"
+  }
+ ],
+ "notes": [
+  "45do.info(生HTML skiladd_wrap)+ameameixa.com(スキルテーブル)の2ソース照合済み、両者一致(ameameixa側の表記「天頂ノ雷光」は45do.info/skills.html準拠の「天頂ノ電光」の表記揺れとみなす)"
+ ]
+}

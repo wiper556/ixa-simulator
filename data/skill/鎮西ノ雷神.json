@@ -1,0 +1,34 @@
+{
+ "name": "鎮西ノ雷神",
+ "rank": "S",
+ "baseRate": 60,
+ "target": "槍・弓・器・焙",
+ "effectSummary": "S/LV10 確率 60% 攻撃300%上昇/対象:槍・弓・器・焙\n①攻撃300%上昇する\n②飛翔を持たない防御参加武将数×6%を攻撃効果に加算する",
+ "categoryLinks": [
+  {
+   "href": "skills-count-atk.html",
+   "label": "人数依存(攻)スキル一覧を見る"
+  }
+ ],
+ "sourceCharacters": [
+  {
+   "name": "立花道雪",
+   "no": "1247",
+   "slot": "A・B"
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "八幡神ノ威光",
+  "rank": "SSS"
+ },
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・弓・器・焙　確率 60% / 攻撃 300%上昇(飛翔なし防御参加武将数×6%加算)"
+  }
+ ],
+ "notes": [
+  "No.1247(立花道雪)の初期スキル(S、自身のsynthesisTable A・B枠で自己参照)。45do.info生HTML(ordinary/0149)+ixanary.com(cards/1247)で2ソース確認、TRなし(LV10のみ)"
+ ]
+}

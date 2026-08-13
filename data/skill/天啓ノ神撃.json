@@ -1,0 +1,41 @@
+{
+ "name": "天啓ノ神撃",
+ "rank": "SS",
+ "baseRate": 45,
+ "target": "全",
+ "noMimic": true,
+ "effectSummary": "SS/LV10 確率 45% 攻撃180%上昇/対象:全\n模倣不可\n①攻撃180%上昇する\n②攻撃戦闘時この武将のHPが100以上であればランダムな敵1部隊の全武将に追加ダメージを5与える(敵1部隊に対して効果一つまで)",
+ "sourceCharacters": [
+  {
+   "name": "真田昌幸",
+   "no": "1218",
+   "slot": "B"
+  },
+  {
+   "name": "水野勝成",
+   "no": "1236",
+   "slot": "B"
+  },
+  {
+   "name": "堀秀政",
+   "no": "1224",
+   "slot": "B"
+  },
+  {
+   "name": "明智光秀",
+   "no": "1204",
+   "slot": "C"
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "天啓ノ神撃",
+  "rank": "SS"
+ },
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 45% / 攻撃 180%上昇(追加ダメージ5)"
+  }
+ ]
+}

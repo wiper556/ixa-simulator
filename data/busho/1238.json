@@ -1,0 +1,119 @@
+{
+ "name": "上杉謙信（2）【覇】",
+ "no": "1238",
+ "ch": "26章",
+ "cost": 4,
+ "troop": "全攻",
+ "sub": "",
+ "effect": "自身を除く部隊内武将の飛翔値の合計を自身の飛翔値とする",
+ "furigana": "うえすぎけんしん",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1238_full.png",
+ "imageChar": "assets/img/characters/no1238_char.png",
+ "atkBase": 1280,
+ "atkGrowth": 75,
+ "defBase": 1220,
+ "defGrowth": 66,
+ "tacticsBase": 760,
+ "tacticsGrowth": 3.5,
+ "lv0Troops": 4450,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "S",
+  "uma": "A",
+  "ki": "SS"
+ },
+ "initialSkill": "神気乱龍",
+ "skillDetail": "SSS/LV10 確率 100% 攻撃740%上昇/対象:全\n①攻撃740%上昇する(TR1のみ防御560%と非対称)\n②この武将は自身を除く部隊内武将が戦闘時にもつ飛翔値の合計に等しい飛翔値を得る(特殊効果は模倣不可)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 攻撃740%上昇(飛翔再定義)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": "全　確率 100% / 攻撃740%上昇+防御560%上昇(飛翔再定義)"
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": "全　確率 100% / 攻撃940%上昇+防御940%上昇(飛翔再定義)"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": "全　確率 100% / 攻撃1270%上昇+防御1270%上昇(飛翔再定義)"
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": null
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": null
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "月詠ノ覇威",
+   "rank": "SS",
+   "afterSkill": "月詠ノ覇威",
+   "afterRank": "SS",
+   "rate": "100%",
+   "target": "全",
+   "effectShort": "攻防各344%上昇+部隊卓越確率+15%"
+  },
+  {
+   "slot": "B",
+   "skill": "星神闘覇",
+   "rank": "SSS",
+   "afterSkill": "星神闘覇",
+   "afterRank": "SSS",
+   "rate": "100%",
+   "target": "全 飛翔15",
+   "effectShort": "攻撃 770%上昇+速度200%上昇(TR別データは未確認)"
+  },
+  {
+   "slot": "C",
+   "skill": "星神闘覇",
+   "rank": "SSS",
+   "afterSkill": "星神闘覇",
+   "afterRank": "SSS",
+   "rate": "100%",
+   "target": "全 飛翔15",
+   "effectShort": "攻撃 770%上昇+速度200%上昇(TR別データは未確認)"
+  },
+  {
+   "slot": "S1",
+   "skill": "天聖宝冠",
+   "rank": "SSS",
+   "afterSkill": "天聖宝冠",
+   "afterRank": "SSS",
+   "rate": "45%",
+   "target": "全",
+   "effectShort": "攻撃100%上昇+防御参加武将数×5%を攻撃効果に加算"
+  },
+  {
+   "slot": "S2",
+   "skill": "十束ノ神域",
+   "rank": "SS",
+   "afterSkill": "天聖宝冠",
+   "afterRank": "SSS",
+   "rate": "100%",
+   "target": "全 覇道",
+   "effectShort": "攻撃320%上昇+速度70%上昇+覇道を持つため所属部隊の武将のスキルを無効化・発動率低下から保護",
+   "afterTarget": "全",
+   "afterRate": "45%",
+   "afterEffectShort": "攻撃 100%+5%×防御参加武将数(280人)=1500.0%"
+  }
+ ],
+ "notes": [
+  "カード画像照合済み(2026-07-30): 槍A/弓S/馬A/器SS(旧データはuma/yumiの値が誤って入れ替わっていたため修正)",
+  "45do.info確認(生HTML照合済み、2026-07-31): https://45do.info/ordinary/0158/ のskiladd_wrap内、候補A/B/C/S1/S2の見出し5個と直後のスキル名5個が位置対応。afterSkill/afterRankは移植後テーブルの記載が無いため候補と同一値を採用。"
+ ]
+}

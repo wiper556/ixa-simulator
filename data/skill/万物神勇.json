@@ -1,0 +1,104 @@
+{
+ "name": "万物神勇",
+ "rank": "SSS",
+ "baseRate": 43,
+ "target": "全 撤退",
+ "effectSummary": "SSS/LV10 確率 43% 攻撃上昇/対象:全　撤退\n①(係数×防御参加武将数)%を攻撃効果に加算する(固定上昇分なし)\n②撤退を持つため部隊は陣での防御戦闘に参加しない",
+ "categoryLinks": [
+  {
+   "href": "skills-count-atk.html",
+   "label": "人数依存(攻)スキル一覧を見る"
+  },
+  {
+   "href": "skills-taitai.html",
+   "label": "撤退スキル一覧を見る"
+  }
+ ],
+ "sourceCharacters": [
+  {
+   "name": "豊臣秀長【覇】",
+   "no": "1298",
+   "slot": "S2"
+  },
+  {
+   "name": "北条早雲",
+   "no": "1296",
+   "slot": "B"
+  },
+  {
+   "name": "織田信長（9）【覇】",
+   "no": "1286",
+   "slot": "S2"
+  },
+  {
+   "name": "相馬義胤（2）",
+   "no": "1264",
+   "slot": "S1"
+  },
+  {
+   "name": "徳川家康（5）【覇】",
+   "no": "1263",
+   "slot": "S1"
+  },
+  {
+   "name": "竹中半兵衛【覇】",
+   "no": "1275",
+   "slot": "B",
+   "note": [
+    "竹中半兵衛【覇】(1275)のsynthesisTable B枠(A-3-11逆引き確認、2026-08-02)"
+   ]
+  },
+  {
+   "name": "加藤清正",
+   "no": "1284",
+   "slot": "S1"
+  },
+  {
+   "name": "六角定頼",
+   "no": "1321",
+   "slot": "S2"
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "万物神勇",
+  "rank": "SSS"
+ },
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "coefficient": "9.2",
+   "effect": "全 撤退　確率 43% / 攻撃 9.2%×防御参加武将数(280人)=2576.0%"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "coefficient": "9.3",
+   "effect": "全 撤退　確率 43% / 攻撃 9.3%×防御参加武将数(280人)=2604.0%"
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "coefficient": "9.6",
+   "effect": "全 撤退　確率 43% / 攻撃 9.6%×防御参加武将数(280人)=2688.0%"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "coefficient": "10.2",
+   "effect": "全 撤退　確率 43% / 攻撃 10.2%×防御参加武将数(280人)=2856.0%"
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "coefficient": "11",
+   "effect": "全 撤退　確率 43% / 攻撃 11%×防御参加武将数(280人)=3080.0%"
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "coefficient": "12",
+   "effect": "全 撤退　確率 43% / 攻撃 12%×防御参加武将数(280人)=3360.0%"
+  }
+ ]
+}

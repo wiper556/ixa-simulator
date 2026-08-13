@@ -1,0 +1,117 @@
+{
+ "name": "北条幻庵",
+ "no": "7005",
+ "ch": "未確認",
+ "cost": 3,
+ "troop": "砲器防",
+ "sub": "",
+ "effect": "所領防御陣形配置時、編成コスト消費-2",
+ "furigana": "ほうじょうげんあん",
+ "illustrator": "西野幸治",
+ "imageFull": "assets/img/characters/no7005_full.png",
+ "imageChar": "assets/img/characters/no7005_char.png",
+ "atkBase": 1040,
+ "atkGrowth": 34,
+ "defBase": 1130,
+ "defGrowth": 46,
+ "tacticsBase": 580,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3460,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "王佐ノ導き",
+ "skillDetail": "A/LV10 確率 55% 防御430%上昇/対象:砲・器\n模倣不可\n①防御430%上昇する\n②所領防御陣形に配置時この武将の編成コスト消費を-2する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "砲・器　確率 55% / 防御 430%上昇(所領防御陣形配置時コスト-2)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": "砲・器　確率 55% / 防御 500%上昇(所領防御陣形配置時コスト-2)"
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": "砲・器　確率 55% / 防御 570%上昇(所領防御陣形配置時コスト-2.5)"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": null
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": null
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": null
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "望国術策",
+   "rank": "A",
+   "afterSkill": "望国術策",
+   "afterRank": "A"
+  },
+  {
+   "slot": "B",
+   "skill": "神記一筆",
+   "rank": "D",
+   "afterSkill": "総構え",
+   "afterRank": "B",
+   "afterTarget": "全",
+   "afterRate": "+35%",
+   "afterEffectShort": "防御30%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "戦陣 吟詠",
+   "rank": "A",
+   "afterSkill": "戦陣 吟詠",
+   "afterRank": "A",
+   "target": "全 卓越",
+   "rate": "+100%",
+   "effectShort": "攻撃340%上昇+防御340%上昇+部隊内卓越追加確率+20%(模倣不可・特殊効果は自部隊内では重複不可)"
+  },
+  {
+   "slot": "S1",
+   "skill": "転歌",
+   "rank": "A",
+   "afterSkill": "入来神舞",
+   "afterRank": "S",
+   "target": "部隊長",
+   "rate": "80%",
+   "effectShort": "部隊長の初期スキルを模倣(戦闘スキルのみ、TR別データは未確認)",
+   "afterTarget": "部隊長",
+   "afterRate": "55%",
+   "afterEffectShort": "部隊長の初期スキルを1.1倍に強化して模倣(TR別データは未確認)"
+  },
+  {
+   "slot": "S2",
+   "skill": "志半ノ矛楯",
+   "rank": "A",
+   "afterSkill": "志半ノ矛楯",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "+65%",
+   "effectShort": "攻撃465%上昇+防御465%上昇(模倣不可)"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/7005 と skills/王佐ノ導き の生HTML)で確認(2026-08-08)。",
+  "合成テーブルはスキルページの1次(=移植前)・2次(=移植後)から取得。",
+  "候補スキルの対象・確率・効果はサイト内の既存登録から転記(未登録のスキルは空のまま)。"
+ ]
+}

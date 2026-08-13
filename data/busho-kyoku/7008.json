@@ -1,0 +1,89 @@
+{
+ "name": "池田輝政",
+ "no": "7008",
+ "illustrator": "SQUARE ENIX",
+ "ch": "未確認",
+ "cost": 3.5,
+ "troop": "全攻",
+ "sub": "",
+ "effect": "破壊した耐久値に応じて資源獲得(獲得率15%)",
+ "furigana": "いけだてるまさ",
+ "imageFull": "assets/img/characters/no7008_full.png",
+ "imageChar": "assets/img/characters/no7008_char.png",
+ "atkBase": 1140,
+ "atkGrowth": 46,
+ "defBase": 1050,
+ "defGrowth": 36,
+ "tacticsBase": 560,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3790,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "B",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "西国将軍",
+ "skillDetail": "A/LV10 確率 100% 攻撃430%上昇+破壊70%上昇/対象:全\n①攻撃430%上昇する\n②破壊70%上昇する\n③資源獲得率が15%になり破壊した耐久値に応じて資源を獲得する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 攻撃 430%上昇+破壊 70%上昇(資源獲得率15%)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "西国ノ覇将",
+   "rank": "A",
+   "afterSkill": "紅蓮ノ刹",
+   "afterRank": "S",
+   "afterTarget": "槍砲器",
+   "afterRate": "+100%",
+   "afterEffectShort": "攻撃82%上昇(卓越・追加確率40%で攻撃効果が2.5倍)"
+  },
+  {
+   "slot": "B",
+   "skill": "戦陣 疾駆",
+   "rank": "A",
+   "afterSkill": "十束ノ神域",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "+100%",
+   "effectShort": "速度170%上昇+破壊170%上昇",
+   "afterTarget": "全 覇道",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃320%上昇+速度70%上昇+覇道を持つため所属部隊の武将のスキルを無効化・発動率低下から保護"
+  },
+  {
+   "slot": "C",
+   "skill": "西国将軍",
+   "rank": "A",
+   "afterSkill": "西国将軍",
+   "afterRank": "A"
+  },
+  {
+   "slot": "S1",
+   "skill": "西国将軍",
+   "rank": "A",
+   "afterSkill": "西国将軍",
+   "afterRank": "A"
+  },
+  {
+   "slot": "S2",
+   "skill": "志半ノ矛楯",
+   "rank": "A",
+   "afterSkill": "志半ノ矛楯",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "+65%",
+   "effectShort": "攻撃465%上昇+防御465%上昇(模倣不可)"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/7008 と skills/西国将軍 の生HTML)で確認(2026-08-08)。",
+  "合成テーブルはスキルページの1次(=移植前)・2次(=移植後)から取得。",
+  "候補スキルの対象・確率・効果はサイト内の既存登録から転記(未登録のスキルは空のまま)。"
+ ]
+}

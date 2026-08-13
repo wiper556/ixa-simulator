@@ -1,0 +1,131 @@
+{
+ "name": "武田晴信（4）",
+ "no": "1318",
+ "furigana": "たけだはるのぶ",
+ "ch": "32章",
+ "cost": 4,
+ "troop": "攻",
+ "sub": "",
+ "effect": "撤退/追加スキルの攻撃・速度効果2.5倍",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1318_full.png",
+ "imageChar": "assets/img/characters/no1318_char.png",
+ "atkBase": 1260,
+ "atkGrowth": 72,
+ "defBase": 1050,
+ "defGrowth": 48,
+ "tacticsBase": 680,
+ "tacticsGrowth": 3.5,
+ "lv0Troops": 4750,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "SS",
+  "ki": "A"
+ },
+ "initialSkill": "焔天滅刻",
+ "skillDetail": "S/LV10 追加スキルの攻撃・速度効果2.5倍/対象:-　撤退\n模倣不可\n①このスキルを持つ武将カードは追加スキルの攻撃・速度効果が2.5倍となる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "- 撤退　追加スキルの攻撃・速度効果が2.5倍"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": "- 撤退　追加スキルの攻撃・速度効果が2.6倍"
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": "- 撤退　追加スキルの攻撃・速度効果が2.7倍"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": "- 撤退　追加スキルの攻撃・速度効果が2.8倍"
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": "- 撤退　追加スキルの攻撃・速度効果が2.9倍"
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": "- 撤退　追加スキルの攻撃・速度効果が3倍"
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": "- 撤退　追加スキルの攻撃・速度効果が3.1倍(自部隊同時攻撃時は参加自部隊中最速の部隊移動時間で合流出陣)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "刹那無影",
+   "rank": "SS",
+   "afterSkill": "刹那無影",
+   "afterRank": "SS",
+   "target": "部隊長",
+   "rate": "55%",
+   "effectShort": "部隊長の模倣可能な初期スキルを1.15倍に強化して模倣+速度200%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "天甲破山",
+   "rank": "S",
+   "afterSkill": "天焉相克",
+   "afterRank": "SS",
+   "target": "槍・弓・馬",
+   "rate": "+50%",
+   "effectShort": "対象兵科を指揮した攻撃時のみ敵軍の総防御力を5%低下(模倣・重複不可)",
+   "afterTarget": "槍・弓・馬",
+   "afterRate": "70%",
+   "afterEffectShort": "攻撃30%上昇(部隊総コスト依存)"
+  },
+  {
+   "slot": "C",
+   "skill": "天焉破山",
+   "rank": "S",
+   "afterSkill": "天焉破山",
+   "afterRank": "S",
+   "target": "全",
+   "rate": "+55%",
+   "effectShort": "攻撃戦闘時に敵軍の総防御力を10%低下(模倣・重複不可)"
+  },
+  {
+   "slot": "S1",
+   "skill": "虎賁統帥",
+   "rank": "SS",
+   "afterSkill": "虎賁統帥",
+   "afterRank": "SS",
+   "target": "全 撤退 覇道",
+   "rate": "100%",
+   "effectShort": "攻撃1130%上昇+速度200%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "星神闘覇",
+   "rank": "SS",
+   "afterSkill": "星神闘覇",
+   "afterRank": "SS",
+   "target": "全 飛翔15",
+   "rate": "100%",
+   "effectShort": "攻撃 770%上昇+速度200%上昇(TR別データは未確認)"
+  }
+ ],
+ "notes": [
+  "画像はixagno記事掲載のカード画像から切り出した(JPEG劣化のためハート検出はTOL=50)。",
+  "【2026-08-12】鍛錬表の書き方をLV10行(サイト共通書式)に統一。以前はTR1〜TR5だけ",
+  " 出典サイトの生テキストのままで、読点や項目の並びが他の武将と揃っていなかった。",
+  " TR6は通常カードのページには載っておらず、パラレル天カード(No.30000+元No.)の",
+  " ixanary.com/cards/3xxxx/ にのみ記載がある。そこから取得した。",
+  "2026-08-07開幕の32章新天。ixanary.comは2026-08-08時点で未対応(cards/1318 は404)のため",
+  "別ソースで確定させた。スキル名・作家名は公式ニュース(スクウェア・エニックス発表)、",
+  "コスト/指揮兵数/成長値は ixagno.blog.fc2.com【天】武将一覧、",
+  "基礎値・兵科適性・LV10効果・鍛錬表・合成テーブルは同サイトの個別記事(blog-entry-11150)。"
+ ]
+}

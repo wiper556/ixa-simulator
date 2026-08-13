@@ -1,0 +1,108 @@
+{
+ "name": "石田三成（4）",
+ "no": "1229",
+ "ch": "25章",
+ "cost": 4,
+ "troop": "槍馬砲器攻",
+ "sub": "飛翔4",
+ "effect": "卓越で攻撃効果3倍かつ飛翔12取得",
+ "furigana": "いしだみつなり",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1229_full.png",
+ "imageChar": "assets/img/characters/no1229_char.png",
+ "atkBase": 1220,
+ "atkGrowth": 70,
+ "defBase": 1080,
+ "defGrowth": 42,
+ "tacticsBase": 650,
+ "tacticsGrowth": 3,
+ "lv0Troops": 4540,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "S",
+  "ki": "A"
+ },
+ "initialSkill": "豊国天万",
+ "skillDetail": "S/LV10 確率 50% 攻撃110%上昇/対象:槍・馬・砲・器　飛翔4\n①攻撃110%上昇する\n②飛翔4を持つ\n③攻撃戦闘時卓越:追加確率30%で攻撃効果が3倍となりかつ飛翔12を得る(飛翔獲得部分のみ模倣不可)",
+ "categoryLinks": [
+  {
+   "href": "skills-hishou-atk.html",
+   "label": "飛翔スキル一覧(攻撃)を見る"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・馬・砲・器 飛翔4　確率 50% / 攻撃 110%上昇(卓越時3倍+飛翔12取得)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "豊国天万",
+   "rank": "S",
+   "afterSkill": "遠呂智ノ閃光",
+   "afterRank": "SS",
+   "rate": "50%",
+   "target": "槍・馬・砲・器 飛翔4",
+   "effectShort": "攻撃110%上昇+卓越時追加確率30%で攻撃効果3倍+飛翔12取得(飛翔獲得部分のみ模倣不可)",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 125%上昇(卓越追加確率15%・4倍、TR別データは未確認)"
+  },
+  {
+   "slot": "B",
+   "skill": "豊国天万",
+   "rank": "S",
+   "afterSkill": "遠呂智ノ閃光",
+   "afterRank": "SS",
+   "rate": "50%",
+   "target": "槍・馬・砲・器 飛翔4",
+   "effectShort": "攻撃110%上昇+卓越時追加確率30%で攻撃効果3倍+飛翔12取得(飛翔獲得部分のみ模倣不可)",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 125%上昇(卓越追加確率15%・4倍、TR別データは未確認)"
+  },
+  {
+   "slot": "C",
+   "skill": "建御雷神ノ閃光",
+   "rank": "SS",
+   "afterSkill": "八幡神ノ威光",
+   "afterRank": "SSS",
+   "rate": "100%",
+   "target": "全 飛翔5",
+   "effectShort": "攻撃210%上昇+防御210%上昇+このスキルを所持する武将の全スキルの卓越確率に35%加算(模倣不可)",
+   "afterTarget": "部隊長",
+   "afterRate": "70%",
+   "afterEffectShort": "模倣倍率1.25倍"
+  },
+  {
+   "slot": "S1",
+   "skill": "遠呂智ノ閃光",
+   "rank": "SS",
+   "afterSkill": "遠呂智ノ閃光",
+   "afterRank": "SS",
+   "rate": "100%",
+   "target": "全",
+   "effectShort": "攻撃125%上昇+卓越:追加確率15%で攻撃効果が4倍"
+  },
+  {
+   "slot": "S2",
+   "skill": "建御雷神ノ閃光",
+   "rank": "SS",
+   "afterSkill": "八幡神ノ威光",
+   "afterRank": "SSS",
+   "rate": "100%",
+   "target": "全 飛翔5",
+   "effectShort": "攻撃210%上昇+防御210%上昇+このスキルを所持する武将の全スキルの卓越確率に35%加算(模倣不可)",
+   "afterTarget": "部隊長",
+   "afterRate": "70%",
+   "afterEffectShort": "模倣倍率1.25倍"
+  }
+ ],
+ "notes": [
+  "synthesisTable: 45do.info生HTML(skiladd_wrap)+ixanary.com(豊国天万スキルページの合成テーブル)で2ソース一致確認済み(2026-08-02)"
+ ]
+}

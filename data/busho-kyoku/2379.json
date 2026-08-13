@@ -1,0 +1,99 @@
+{
+ "name": "飯富虎昌",
+ "no": "2379",
+ "ch": "未確認",
+ "cost": 3,
+ "troop": "馬器騎攻",
+ "sub": "",
+ "effect": "攻撃・速度上昇+合流出陣時間短縮(模倣不可)",
+ "furigana": "おぶとらまさ",
+ "illustrator": "タカハシタクヤ",
+ "imageFull": "assets/img/characters/no2379_full.png",
+ "imageChar": "assets/img/characters/no2379_char.png",
+ "atkBase": 1120,
+ "atkGrowth": 46,
+ "defBase": 1010,
+ "defGrowth": 32,
+ "tacticsBase": 530,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3410,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "A",
+  "uma": "S",
+  "ki": "A"
+ },
+ "initialSkill": "甲山ノ猛虎",
+ "skillDetail": "A/LV10 確率 100% 攻撃430%上昇/対象:馬・器・騎\n模倣不可\n①攻撃430%上昇する\n②速度100%上昇する\n③自部隊同時攻撃時参加自部隊中最速の部隊移動時間を用いて合流出陣できる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "馬・器・騎　確率 100% / 攻撃 430%上昇+速度 100%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "戦陣 疾駆",
+   "rank": "A",
+   "afterSkill": "十束ノ神域",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "+100%",
+   "effectShort": "速度170%上昇+破壊170%上昇",
+   "afterTarget": "全 覇道",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 320%上昇+速度70%上昇(TR別データは未確認)"
+  },
+  {
+   "slot": "B",
+   "skill": "騎聖",
+   "rank": "A",
+   "afterSkill": "神光征軍",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "+100%",
+   "effectShort": "攻撃80%上昇+速度50%上昇(武将コストで変動)",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 90%上昇+速度200%上昇(TRなし)"
+  },
+  {
+   "slot": "C",
+   "skill": "騎聖",
+   "rank": "A",
+   "afterSkill": "神光征軍",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "+100%",
+   "effectShort": "攻撃80%上昇+速度50%上昇(武将コストで変動)",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 90%上昇+速度200%上昇(TRなし)"
+  },
+  {
+   "slot": "S1",
+   "skill": "志半ノ矛楯",
+   "rank": "A",
+   "afterSkill": "志半ノ矛楯",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "+65%",
+   "effectShort": "攻撃465%上昇+防御465%上昇(模倣不可)"
+  },
+  {
+   "slot": "S2",
+   "skill": "志半ノ矛楯",
+   "rank": "A",
+   "afterSkill": "志半ノ矛楯",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "+65%",
+   "effectShort": "攻撃465%上昇+防御465%上昇(模倣不可)"
+  }
+ ],
+ "notes": [
+  "45do.info+ixagno.blog.fc2.com(blog-entry-9960)確認済み: 自己スキル(甲山ノ猛虎)は候補に含まれず。Aの戦陣疾駆は移植後、保護スキル「十束ノ神域」[SS]に、B/Cの騎聖は移植後「神光征軍」[SS]に変化"
+ ]
+}

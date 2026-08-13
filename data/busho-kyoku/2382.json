@@ -1,0 +1,124 @@
+{
+ "name": "留守政景",
+ "no": "2382",
+ "ch": "28章",
+ "cost": 3.5,
+ "troop": "全攻",
+ "sub": "",
+ "effect": "自軍1部隊のみでの攻撃時、攻撃効果3倍",
+ "furigana": "るすまさかげ",
+ "illustrator": "BISAI",
+ "imageFull": "assets/img/characters/no2382_full.png",
+ "imageChar": "assets/img/characters/no2382_char.png",
+ "atkBase": 1140,
+ "atkGrowth": 47,
+ "defBase": 1010,
+ "defGrowth": 30,
+ "tacticsBase": 520,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3740,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "B",
+  "ki": "A"
+ },
+ "initialSkill": "月暈",
+ "skillDetail": "A/LV10 確率 42% 攻撃250%上昇/対象:全\n①自軍1部隊での攻撃時攻撃効果を3倍にする",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 42% / 攻撃 250%上昇"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": "全　確率 42% / 攻撃 300%上昇"
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": "全　確率 42% / 攻撃 390%上昇"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": null
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": null
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": null
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "月暈",
+   "rank": "A",
+   "afterSkill": "志半ノ矛楯",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "42%",
+   "effectShort": "攻撃250%上昇(自軍1部隊での攻撃時3倍)",
+   "afterTarget": "全",
+   "afterRate": "+65%",
+   "afterEffectShort": "攻撃465%上昇+防御465%上昇(模倣不可)"
+  },
+  {
+   "slot": "B",
+   "skill": "月暈",
+   "rank": "A",
+   "afterSkill": "志半ノ矛楯",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "42%",
+   "effectShort": "攻撃250%上昇(自軍1部隊での攻撃時3倍)",
+   "afterTarget": "全",
+   "afterRate": "+65%",
+   "afterEffectShort": "攻撃465%上昇+防御465%上昇(模倣不可)"
+  },
+  {
+   "slot": "C",
+   "skill": "入来神舞",
+   "rank": "S",
+   "afterSkill": "飛蝶野分",
+   "afterRank": "B",
+   "target": "部隊長",
+   "rate": "55%",
+   "effectShort": "部隊長の初期スキルを1.1倍に強化して模倣(TR別データは未確認)",
+   "afterTarget": "部隊長",
+   "afterRate": "60%",
+   "afterEffectShort": "部隊長の初期スキルを模倣(戦闘スキルのみ)(TR別データは未確認)"
+  },
+  {
+   "slot": "S1",
+   "skill": "志半ノ矛楯",
+   "rank": "A",
+   "afterSkill": "志半ノ矛楯",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "+65%",
+   "effectShort": "攻撃465%上昇+防御465%上昇(模倣不可)"
+  },
+  {
+   "slot": "S2",
+   "skill": "志半ノ矛楯",
+   "rank": "A",
+   "afterSkill": "志半ノ矛楯",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "+65%",
+   "effectShort": "攻撃465%上昇+防御465%上昇(模倣不可)"
+  }
+ ],
+ "notes": [
+  "45do.info+ixagno.blog.fc2.com(blog-entry-10093)確認済み: A/Bの月暈は移植後「志半ノ矛楯」に、Cの入来神舞は移植後「飛蝶野分」に変化(自己参照ではない)"
+ ]
+}

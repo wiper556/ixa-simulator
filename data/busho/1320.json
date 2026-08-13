@@ -1,0 +1,128 @@
+{
+ "name": "伊達稙宗",
+ "no": "1320",
+ "furigana": "だてたねむね",
+ "ch": "32章",
+ "cost": 3,
+ "troop": "全攻",
+ "sub": "",
+ "effect": "攻撃時、敵軍の被害兵数7%増加",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1320_full.png",
+ "imageChar": "assets/img/characters/no1320_char.png",
+ "atkBase": 1250,
+ "atkGrowth": 72,
+ "defBase": 1060,
+ "defGrowth": 45,
+ "tacticsBase": 660,
+ "tacticsGrowth": 3,
+ "lv0Troops": 4280,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "S",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "黒翼竜",
+ "skillDetail": "S/LV10 確率 50% 敵軍の被害兵数7%増加/対象:全\n模倣不可\n①攻撃時敵軍の被害兵数が7%増加する(部隊内重複上限1・自軍全体の合計で上限100%まで)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 50% / 攻撃時に敵軍の被害兵数 7%増加(部隊内重複上限1・自軍合計で上限100%)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": "全　確率 50% / 攻撃時に敵軍の被害兵数 7.5%増加(部隊内重複上限1・自軍合計で上限100%)"
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": "全　確率 50% / 攻撃時に敵軍の被害兵数 8%増加(部隊内重複上限1・自軍合計で上限100%)"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": "全　確率 50% / 攻撃時に敵軍の被害兵数 8.5%増加(部隊内重複上限1・自軍合計で上限100%)"
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": "全　確率 50% / 攻撃時に敵軍の被害兵数 9%増加(部隊内重複上限1・自軍合計で上限100%)"
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": "全　確率 50% / 攻撃時に敵軍の被害兵数 10%増加(部隊内重複上限1・自軍合計で上限100%)"
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": "全　確率 60% / 攻撃時に敵軍の被害兵数 10%増加(部隊内重複上限2・自軍合計で上限100%)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "焼尽神無",
+   "rank": "SS",
+   "afterSkill": "焼尽神無",
+   "afterRank": "SS",
+   "target": "全 無尽",
+   "rate": "44%",
+   "effectShort": "攻撃を係数×人数で上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "終焉焦土",
+   "rank": "SSS",
+   "afterSkill": "終焉焦土",
+   "afterRank": "SSS",
+   "target": "全 無尽",
+   "rate": "46%",
+   "effectShort": "攻撃を係数×人数で上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "八幡神ノ威光",
+   "rank": "SSS",
+   "afterSkill": "八幡神ノ威光",
+   "afterRank": "SSS",
+   "target": "部隊長",
+   "rate": "70%",
+   "effectShort": "部隊長の模倣可能な初期スキルを1.25倍模倣"
+  },
+  {
+   "slot": "S1",
+   "skill": "黒翼竜",
+   "rank": "S",
+   "afterSkill": "黒翼竜",
+   "afterRank": "S",
+   "target": "全",
+   "rate": "+50%",
+   "effectShort": "攻撃時に敵軍の被害兵数 7%増加(部隊内重複上限1・自軍合計で上限100%)"
+  },
+  {
+   "slot": "S2",
+   "skill": "破軍騎行",
+   "rank": "SS",
+   "afterSkill": "破軍騎行",
+   "afterRank": "SS",
+   "target": "全 不屈2",
+   "rate": "100%",
+   "effectShort": "攻撃750%上昇"
+  }
+ ],
+ "notes": [
+  "画像はixagno記事掲載のカード画像から切り出した(JPEG劣化のためハート検出はTOL=50)。",
+  "【2026-08-12】鍛錬表の書き方をLV10行(サイト共通書式)に統一。以前はTR1〜TR5だけ",
+  " 出典サイトの生テキストのままで、読点や項目の並びが他の武将と揃っていなかった。",
+  " TR6は通常カードのページには載っておらず、パラレル天カード(No.30000+元No.)の",
+  " ixanary.com/cards/3xxxx/ にのみ記載がある。そこから取得した。",
+  "2026-08-07開幕の32章新天。ixanary.comは2026-08-08時点で未対応(cards/1320 は404)のため",
+  "別ソースで確定させた。スキル名・作家名は公式ニュース(スクウェア・エニックス発表)、",
+  "コスト/指揮兵数/成長値は ixagno.blog.fc2.com【天】武将一覧、",
+  "基礎値・兵科適性・LV10効果・鍛錬表・合成テーブルは同サイトの個別記事(blog-entry-11152)。"
+ ]
+}

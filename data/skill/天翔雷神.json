@@ -1,0 +1,40 @@
+{
+ "name": "天翔雷神",
+ "rank": "S",
+ "baseRate": 50,
+ "target": "弓・馬・焙 飛翔10",
+ "effectSummary": "S/LV10 確率 50% 攻撃45%上昇/対象:弓・馬・焙　飛翔10\n①対象兵科(弓・馬・焙)を指揮した戦闘時攻撃力が45%上昇する\n②所属部隊の武将が戦闘時にもつ飛翔値の合計×8%を攻撃効果に加算する(TR1〜TR5は未確認)",
+ "categoryLinks": [
+  {
+   "href": "skills-hishou-atk.html",
+   "label": "飛翔スキル一覧(攻撃)を見る"
+  }
+ ],
+ "sourceCharacters": [
+  {
+   "name": "立花宗茂（2）",
+   "no": "1231",
+   "slot": "C"
+  },
+  {
+   "name": "緋村抜刀斎",
+   "no": "2601",
+   "slot": "C・S2",
+   "db": "kyoku"
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "十束ノ神域",
+  "rank": "SS"
+ },
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓・馬・焙 飛翔10　確率 50% / 攻撃 45%上昇+飛翔値合計×8%加算"
+  }
+ ],
+ "notes": [
+  "この武将自身の初期スキル(立花宗茂(2) No.1231のsynthesisTable候補C)"
+ ]
+}

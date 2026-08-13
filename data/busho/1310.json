@@ -1,0 +1,128 @@
+{
+ "name": "織田信秀【覇】",
+ "no": "1310",
+ "furigana": "おだのぶひで",
+ "ch": "32章",
+ "cost": 7,
+ "troop": "全攻",
+ "sub": "",
+ "effect": "覇道/追加・極限スキルの攻撃・破壊効果2.5倍",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1310_full.png",
+ "imageChar": "assets/img/characters/no1310_char.png",
+ "atkBase": 1320,
+ "atkGrowth": 96,
+ "defBase": 1200,
+ "defGrowth": 64,
+ "tacticsBase": 860,
+ "tacticsGrowth": 4,
+ "lv0Troops": 6100,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "S",
+  "ki": "X"
+ },
+ "initialSkill": "覇界ノ天虎",
+ "skillDetail": "SSS/LV10 確率 100% 攻撃1000%上昇/対象:全　覇道\n模倣不可\n①攻撃1000%上昇する\n②このスキルを持つ武将カードは追加・極限スキルの攻撃・破壊効果が2.5倍となる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全 覇道　確率 100% / 攻撃 1000%上昇(追加・極限スキルの攻撃・破壊効果2.5倍)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": "全 覇道　確率 100% / 攻撃 1060%上昇(追加・極限スキルの攻撃・破壊効果2.6倍)"
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": "全 覇道　確率 100% / 攻撃 1140%上昇(追加・極限スキルの攻撃・破壊効果2.7倍)"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": "全 覇道　確率 100% / 攻撃 1240%上昇(追加・極限スキルの攻撃・破壊効果2.8倍)"
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": "全 覇道　確率 100% / 攻撃 1360%上昇(追加・極限スキルの攻撃・破壊効果2.9倍)"
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": "全 覇道　確率 100% / 攻撃 1500%上昇(追加・極限スキルの攻撃・破壊効果3倍)"
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": "全 覇道　確率 100% / 攻撃 1550%上昇(追加・極限スキルの攻撃・破壊効果3.1倍)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "勇冠三軍",
+   "rank": "SSS",
+   "afterSkill": "勇冠三軍",
+   "afterRank": "SSS",
+   "target": "全",
+   "rate": "45%",
+   "effectShort": "攻撃50%+係数×人数で上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "万界神謀",
+   "rank": "SS",
+   "afterSkill": "万界神謀",
+   "afterRank": "SS",
+   "target": "全 卓越",
+   "rate": "+100%",
+   "effectShort": "攻撃800%上昇+防御800%上昇(部隊内武将スキル発動率+20%・卓越追加確率+70%・模倣不可・特殊効果は自部隊内では重複不可)"
+  },
+  {
+   "slot": "C",
+   "skill": "絶界滅刃",
+   "rank": "SS",
+   "afterSkill": "絶界滅刃",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "+40%",
+   "effectShort": "基礎値340%×部隊内の同スキル所持武将数(4人)=1360%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "皇天覇虎",
+   "rank": "SSS",
+   "afterSkill": "皇天覇虎",
+   "afterRank": "SSS",
+   "target": "全",
+   "rate": "+45%",
+   "effectShort": "攻撃 100%+12.5%×防御参加武将数(280人)=3600.0%上昇(模倣不可)"
+  },
+  {
+   "slot": "S2",
+   "skill": "神羅聖域",
+   "rank": "SS",
+   "afterSkill": "神羅聖域",
+   "afterRank": "SS",
+   "target": "全 覇道",
+   "rate": "40%",
+   "effectShort": "攻撃900%上昇"
+  }
+ ],
+ "notes": [
+  "画像はixagno記事掲載のカード画像から切り出した(JPEG劣化のためハート検出はTOL=50)。",
+  "【2026-08-12】鍛錬表の書き方をLV10行(サイト共通書式)に統一。以前はTR1〜TR5だけ",
+  " 出典サイトの生テキストのままで、読点や項目の並びが他の武将と揃っていなかった。",
+  " TR6は通常カードのページには載っておらず、パラレル天カード(No.30000+元No.)の",
+  " ixanary.com/cards/3xxxx/ にのみ記載がある。そこから取得した。",
+  "2026-08-07開幕の32章新天。ixanary.comは2026-08-08時点で未対応(cards/1310 は404)のため",
+  "別ソースで確定させた。スキル名・作家名は公式ニュース(スクウェア・エニックス発表)、",
+  "コスト/指揮兵数/成長値は ixagno.blog.fc2.com【天】武将一覧、",
+  "基礎値・兵科適性・LV10効果・鍛錬表・合成テーブルは同サイトの個別記事(blog-entry-11144)。"
+ ]
+}

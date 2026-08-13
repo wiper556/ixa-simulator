@@ -1,0 +1,31 @@
+{
+ "name": "錘焔ノ空帯",
+ "rank": "S",
+ "baseRate": 100,
+ "target": "全",
+ "noMimic": true,
+ "effectSummary": "S/LV10 確率：+100% / 対象 全 防御：114%上昇 本丸防御陣形に配置時この武将の編成コスト消費を-1する(模倣不可)",
+ "sourceCharacters": [
+  {
+   "name": "ヴァリニャーノ",
+   "no": "2458",
+   "slot": "S2",
+   "db": "kyoku"
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "錘焔ノ藍帯",
+  "rank": "SSS"
+ },
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 防御114%上昇 本丸防御陣形に配置時、この武将の編成コスト消費を-1する(模倣不可)"
+  }
+ ],
+ "notes": [
+  "2026-08-12作成。合成候補に出てくるS以上はページを作る規約(A-3)の未処理分。",
+  "ixanary.com/skills/錘焔ノ空帯 から取得。categoryLinksは9項目の判定が要るため付けていない。"
+ ]
+}

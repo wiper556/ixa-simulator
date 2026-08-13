@@ -1,0 +1,53 @@
+{
+ "name": "八重言代主神",
+ "rank": "SS",
+ "baseRate": 70,
+ "target": "自身",
+ "effectSummary": "SS/LV10 確率 70% 対象:自身\n①自身が持つ初期スキルを模倣する(戦闘スキルのみ)",
+ "categoryLinks": [
+  {
+   "href": "skills-mimic.html",
+   "label": "自模倣スキル一覧を見る"
+  }
+ ],
+ "sourceCharacters": [
+  {
+   "name": "蘆名盛氏（2）",
+   "no": "1241",
+   "slot": "B"
+  },
+  {
+   "name": "大友宗麟",
+   "no": "1210",
+   "slot": "C"
+  },
+  {
+   "name": "今川義元",
+   "no": "1203",
+   "slot": "A"
+  },
+  {
+   "name": "森本儀太夫",
+   "no": "2453",
+   "slot": "S2",
+   "db": "kyoku"
+  },
+  {
+   "name": "ヴァリニャーノ",
+   "no": "2458",
+   "slot": "B",
+   "db": "kyoku"
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "無窮天斥陣",
+  "rank": "SS"
+ },
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "自身　確率 70% / 初期スキル(戦闘スキルのみ)を模倣(1倍)"
+  }
+ ]
+}

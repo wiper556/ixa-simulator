@@ -1,0 +1,129 @@
+{
+ "name": "宇喜多秀家",
+ "no": "1281",
+ "ch": "29章",
+ "cost": 4,
+ "troop": "槍馬砲器防",
+ "sub": "飛翔10",
+ "effect": "飛翔値の合計×10％を加算",
+ "furigana": "うきたひでいえ",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1281_full.png",
+ "imageChar": "assets/img/characters/no1281_char.png",
+ "atkBase": 1090,
+ "atkGrowth": 49,
+ "defBase": 1240,
+ "defGrowth": 71,
+ "tacticsBase": 650,
+ "tacticsGrowth": 3,
+ "lv0Troops": 4650,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "S",
+  "ki": "A"
+ },
+ "initialSkill": "王花尖剣",
+ "skillDetail": "S/LV10 確率 64% 防御320%上昇/対象:槍・馬・砲・器　飛翔10\n①防御320%上昇する\n②所属部隊の武将が戦闘時にもつ飛翔値の合計×10%を防御効果に加算する",
+ "categoryLinks": [
+  {
+   "href": "skills-hishou-def.html",
+   "label": "飛翔スキル一覧(防御)を見る"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・馬・砲・器 飛翔10　確率 64% / 防御 320%上昇(飛翔値合計×10%加算)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": "槍馬砲器　確率 64% / 防御320%上昇 飛翔10 所属部隊の武将が戦闘時にもつ飛翔値の合計×10.4%を防御効果に加算"
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": "槍馬砲器　確率 64% / 防御320%上昇 飛翔10 所属部隊の武将が戦闘時にもつ飛翔値の合計×11%を防御効果に加算"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": "槍馬砲器　確率 64% / 防御320%上昇 飛翔10 所属部隊の武将が戦闘時にもつ飛翔値の合計×11.8%を防御効果に加算"
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": "槍馬砲器　確率 64% / 防御320%上昇 飛翔10 所属部隊の武将が戦闘時にもつ飛翔値の合計×13%を防御効果に加算"
+  },
+  {
+   "level": "TR5",
+   "points": "最大鍛錬",
+   "effect": "槍・馬・砲・器 飛翔10　確率 64% / 防御 320%上昇(飛翔値合計×14.5%加算)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "王花尖剣",
+   "rank": "S",
+   "afterSkill": "國才連豪",
+   "afterRank": "SS",
+   "rate": "64%",
+   "target": "槍・馬・砲・器 飛翔10",
+   "effectShort": "防御320%上昇+飛翔値合計×10%加算",
+   "afterTarget": "全",
+   "afterRate": "50%",
+   "afterEffectShort": "防御 310%×國才連豪所持武将数(4人)=1240.0%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "王花尖剣",
+   "rank": "S",
+   "afterSkill": "國才連豪",
+   "afterRank": "SS",
+   "rate": "64%",
+   "target": "槍・馬・砲・器 飛翔10",
+   "effectShort": "防御320%上昇+飛翔値合計×10%加算",
+   "afterTarget": "全",
+   "afterRate": "50%",
+   "afterEffectShort": "防御 310%×國才連豪所持武将数(4人)=1240.0%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "虚実兵妙",
+   "rank": "SS",
+   "afterSkill": "虚実兵妙",
+   "afterRank": "SS",
+   "rate": "100%",
+   "target": "全",
+   "effectShort": "防御740%上昇+敵軍卓越確率-8%"
+  },
+  {
+   "slot": "S1",
+   "skill": "國才連豪",
+   "rank": "SS",
+   "afterSkill": "國才連豪",
+   "afterRank": "SS",
+   "rate": "50%",
+   "target": "全",
+   "effectShort": "防御が係数×同スキル所持武将数で上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "永世ノ天隻",
+   "rank": "SS",
+   "afterSkill": "永世ノ天隻",
+   "afterRank": "SS",
+   "rate": "48%",
+   "target": "全 飛翔9",
+   "effectShort": "防御を係数×人数で上昇+飛翔9"
+  }
+ ],
+ "notes": [
+  "カード画像照合済み: 槍S/弓A/馬S/器A",
+  "ixanary.com生HTML照合(2026-08-02): カード画像のスキル欄にLV10とTR5(鍛錬)の2枠のみ表示されており、TR1〜TR4は実在しない。",
+  "45do.info(ordinary/0312)生HTML照合+ameameixa.com(post-12334「29章天武将スキル一覧」表のNo.1281行)の両ソースでA/B/C/S1/S2の並びが一致確認済み。A/Bは自身の初期スキル(王花尖剣)がそのまま候補になる自己参照枠。"
+ ]
+}

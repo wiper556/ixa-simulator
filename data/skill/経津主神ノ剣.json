@@ -1,0 +1,66 @@
+{
+ "name": "経津主神ノ剣",
+ "rank": "SSS",
+ "baseRate": 45,
+ "target": "自身",
+ "effectSummary": "SSS/LV10 確率 45% 効果倍率上昇/対象:自身\n①自身が持つ初期スキルを模倣する\n②模倣時の通常攻撃防御効果を1.35倍に強化する(TR5で1.5倍)",
+ "categoryLinks": [
+  {
+   "href": "skills-mimic.html",
+   "label": "自模倣スキル一覧を見る"
+  }
+ ],
+ "sourceCharacters": [
+  {
+   "name": "上杉景勝（6）",
+   "no": "1301",
+   "slot": "S1"
+  },
+  {
+   "name": "石田三成（7）【覇】",
+   "no": "1299",
+   "slot": "A"
+  },
+  {
+   "name": "北条氏綱（2）",
+   "no": "1315",
+   "slot": "C"
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "経津主神ノ剣",
+  "rank": "SSS"
+ },
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "自身　確率 45% / 効果倍率 1.35倍"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": "自身　確率 50% / 効果倍率 1.36倍"
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": "自身　確率 50% / 効果倍率 1.38倍"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": "自身　確率 50% / 効果倍率 1.4倍"
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": "自身　確率 50% / 効果倍率 1.45倍"
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": "自身　確率 50% / 効果倍率 1.5倍"
+  }
+ ]
+}

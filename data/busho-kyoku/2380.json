@@ -1,0 +1,124 @@
+{
+ "name": "柿崎景家",
+ "no": "2380",
+ "ch": "未確認",
+ "cost": 4,
+ "troop": "槍馬砲攻",
+ "sub": "",
+ "effect": "攻撃上昇+勝利時名声回復(模倣不可)",
+ "furigana": "かきざきかげいえ",
+ "illustrator": "三好載克",
+ "imageFull": "assets/img/characters/no2380_full.png",
+ "imageChar": "assets/img/characters/no2380_char.png",
+ "atkBase": 1130,
+ "atkGrowth": 46,
+ "defBase": 1030,
+ "defGrowth": 32,
+ "tacticsBase": 530,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3970,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "B",
+  "uma": "S",
+  "ki": "A"
+ },
+ "initialSkill": "闘火将帥",
+ "skillDetail": "A/LV10 確率 50% 攻撃430%上昇/対象:槍・馬・砲\n模倣不可\n①攻撃430%上昇する\n②対人での攻撃戦闘に勝利時名声を20回復する(特殊効果は部隊内重複不可)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・馬・砲　確率 50% / 攻撃 430%上昇(勝利時名声+20)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": "槍・馬・砲　確率 50% / 攻撃 588%上昇(勝利時名声+22)"
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": "槍・馬・砲　確率 50% / 攻撃 708%上昇(勝利時名声+25)"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": "槍・馬・砲　確率 50% / 攻撃 708%上昇(勝利時名声+25)"
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": null
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": null
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "オプクワ",
+   "rank": "A",
+   "afterSkill": "戦陣 神楽",
+   "afterRank": "A",
+   "target": "槍・弓・砲",
+   "rate": "+55%",
+   "effectShort": "攻撃140%上昇+対人攻撃勝利時名声+20(模倣不可・特殊効果は部隊内重複不可)",
+   "afterTarget": "全 飛翔4",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 77%上昇(卓越:追加確率30%で2倍)"
+  },
+  {
+   "slot": "B",
+   "skill": "闘火将帥",
+   "rank": "A",
+   "afterSkill": "氷塊三連撃",
+   "afterRank": "SSS",
+   "target": "槍・馬・砲",
+   "rate": "50%",
+   "effectShort": "攻撃430%上昇+対人攻撃勝利時名声+20(模倣不可・特殊効果は部隊内重複不可)",
+   "afterTarget": "全",
+   "afterRate": "45%",
+   "afterEffectShort": "攻撃 170%上昇(自部隊同時攻撃時コスト最大2除外)"
+  },
+  {
+   "slot": "C",
+   "skill": "闘火将帥",
+   "rank": "A",
+   "afterSkill": "氷塊三連撃",
+   "afterRank": "SSS",
+   "target": "槍・馬・砲",
+   "rate": "50%",
+   "effectShort": "攻撃430%上昇+対人攻撃勝利時名声+20(模倣不可・特殊効果は部隊内重複不可)",
+   "afterTarget": "全",
+   "afterRate": "45%",
+   "afterEffectShort": "攻撃 170%上昇(自部隊同時攻撃時コスト最大2除外)"
+  },
+  {
+   "slot": "S1",
+   "skill": "氷塊三連撃",
+   "rank": "SSS",
+   "afterSkill": "氷塊三連撃",
+   "afterRank": "SSS",
+   "target": "全",
+   "rate": "+45%",
+   "effectShort": "攻撃170%上昇+自部隊同時攻撃時コストを最大2まで除外(模倣不可)"
+  },
+  {
+   "slot": "S2",
+   "skill": "志半ノ矛楯",
+   "rank": "A",
+   "afterSkill": "志半ノ矛楯",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "+65%",
+   "effectShort": "攻撃465%上昇+防御465%上昇(模倣不可)"
+  }
+ ],
+ "notes": [
+  "45do.info+ixagno.blog.fc2.com(blog-entry-10008)確認済み: Aのオプクワは移植後「戦陣 神楽」に、B/Cの闘火将帥は移植後「氷塊三連撃」[SSS]に変化(自己参照ではない)"
+ ]
+}

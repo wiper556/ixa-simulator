@@ -1,0 +1,134 @@
+{
+ "name": "小早川秀秋",
+ "no": "2461",
+ "ch": "未確認",
+ "cost": 4.5,
+ "troop": "特",
+ "sub": "",
+ "effect": "同国城主の緑陣を1合戦2回まで攻撃可(戦功・攻撃/破壊P獲得不可)",
+ "furigana": "こばやかわひであき",
+ "illustrator": "正子公也",
+ "imageFull": "assets/img/characters/no2461_full.png",
+ "imageChar": "assets/img/characters/no2461_char.png",
+ "atkBase": 1150,
+ "atkGrowth": 60,
+ "defBase": 1090,
+ "defGrowth": 50,
+ "tacticsBase": 540,
+ "tacticsGrowth": 3,
+ "lv0Troops": 4500,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "S",
+  "ki": "A"
+ },
+ "initialSkill": "冥国ノ双鎌",
+ "skillDetail": "S/LV10 同国城主の緑陣を1合戦2回まで攻撃可/対象:-\n①同国城主の緑陣を1合戦2回まで攻撃可\n②戦功と攻撃・破壊P獲得不可\n③防御側は見舞に全被害兵返還と銀銭1を獲得する(模倣重複不可・被害陣の陣破壊スキルは不発動銀銭受取は1合戦1回)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "確率 - / 同国城主の緑陣を1合戦2回まで攻撃可(戦功・攻撃/破壊P獲得不可。防御側は見舞に全被害兵返還と銀銭1を獲得・模倣重複不可)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": null
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": null
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": null
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": null
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": null
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": null
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "火之迦具土神",
+   "rank": "SS",
+   "afterSkill": "火之迦具土神",
+   "afterRank": "SS",
+   "target": "槍・馬・砲",
+   "rate": "+100%",
+   "effectShort": "攻撃160%上昇(卓越:追加確率25%で3倍)"
+  },
+  {
+   "slot": "B",
+   "skill": "天津日ノ太刀",
+   "rank": "SS",
+   "afterSkill": "天津日ノ太刀",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "+57%",
+   "effectShort": "攻撃184%上昇(卓越:追加確率75%で2倍)+飛翔4"
+  },
+  {
+   "slot": "C",
+   "skill": "十束ノ神域",
+   "rank": "SS",
+   "afterSkill": "天聖宝冠",
+   "afterRank": "SSS",
+   "target": "全",
+   "rate": "+100%",
+   "effectShort": "攻撃320%上昇+速度70%上昇(所属部隊のスキルを無効化・発動低下から保護)",
+   "afterTarget": "全",
+   "afterRate": "+45%",
+   "afterEffectShort": "攻撃 100%+5%×防御参加武将数(280人)=1500.0%"
+  },
+  {
+   "slot": "S1",
+   "skill": "建御雷神ノ閃光",
+   "rank": "SS",
+   "afterSkill": "八幡神ノ威光",
+   "afterRank": "SSS",
+   "target": null,
+   "rate": null,
+   "effectShort": null,
+   "afterTarget": "部隊長",
+   "afterRate": "+70%",
+   "afterEffectShort": "模倣倍率1.25倍"
+  },
+  {
+   "slot": "S2",
+   "skill": "建御雷神ノ閃光",
+   "rank": "SS",
+   "afterSkill": "八幡神ノ威光",
+   "afterRank": "SSS",
+   "target": null,
+   "rate": null,
+   "effectShort": null,
+   "afterTarget": "部隊長",
+   "afterRate": "+70%",
+   "afterEffectShort": "模倣倍率1.25倍"
+  }
+ ],
+ "notes": [
+  "出典: カード画像(LV10形式: 極・統率 槍A/弓A/馬S/器A拡大確認・初期値1150/1090/540・コスト4.5)",
+  " + ixanary.com/cards/2461(指揮4500(★0-0)・成長+60/+50/+3.0・LV10効果全文。LV1の効果記載なし)",
+  " + ixawiki BushoCard/2461(統率2次確認・「入手時点でスキルLv10」の特殊カードであることを確認・合成テーブル)。",
+  "統率はカード画像+ixawikiの2ソース一致。戦闘数値のないシステム系スキル。",
+  "初期スキルがSランクのためスキル個別ページの新規作成が必要(docsのTODOに記録済み)。",
+  "合成テーブルはixawiki(1次候補+2次候補+候補スキルのLV10効果)"
+ ]
+}

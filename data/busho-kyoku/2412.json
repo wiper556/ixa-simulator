@@ -1,0 +1,139 @@
+{
+ "name": "高山右近",
+ "no": "2412",
+ "ch": "未確認",
+ "cost": 4,
+ "troop": "槍馬器鉄攻防",
+ "sub": "",
+ "effect": "所持しているとデッキコスト上限が1増加(特殊効果は重複不可)",
+ "furigana": "たかやまうこん",
+ "illustrator": "正子公也",
+ "imageFull": "assets/img/characters/no2412_full.png",
+ "imageChar": "assets/img/characters/no2412_char.png",
+ "atkBase": 1070,
+ "atkGrowth": 35,
+ "defBase": 1070,
+ "defGrowth": 35,
+ "tacticsBase": 520,
+ "tacticsGrowth": 3,
+ "lv0Troops": 3740,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "静寂ノ福者",
+ "skillDetail": "A/LV10 確率 45% 攻撃65%上昇/対象:槍・馬・器・鉄\n①攻撃65%上昇する\n②防御65%上昇する\n③このカードを所持しているとデッキコスト上限が1増加する(特殊効果は重複不可)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・馬・器・鉄　確率 45% / 攻撃 65%上昇+防御 65%上昇(所持でデッキコスト上限+1・特殊効果は重複不可)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": null
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": null
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": null
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": null
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": null
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": null
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "聖戦の進軍",
+   "rank": "B",
+   "afterSkill": "八咫烏",
+   "afterRank": "B",
+   "target": null,
+   "rate": null,
+   "effectShort": null,
+   "afterTarget": "砲器",
+   "afterRate": "+35%",
+   "afterEffectShort": "防御30%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "夢買い",
+   "rank": "A",
+   "afterSkill": "風狂幻術",
+   "afterRank": "B",
+   "target": null,
+   "rate": null,
+   "effectShort": null,
+   "afterTarget": "部隊長",
+   "afterRate": "+53%",
+   "afterEffectShort": "部隊長の初期スキルを模倣(戦闘スキルのみ、TR別データは未確認)"
+  },
+  {
+   "slot": "C",
+   "skill": "彷徨う福音",
+   "rank": "B",
+   "afterSkill": "彷徨う福音",
+   "afterRank": "B",
+   "target": "全",
+   "rate": "+20%",
+   "effectShort": "銅銭獲得率2.5%(対人撃破兵数に応じて自軍全員が銅銭獲得・重複発動上限数4)"
+  },
+  {
+   "slot": "S1",
+   "skill": "御用商人",
+   "rank": "C",
+   "afterSkill": "封技閃影",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "+40%",
+   "effectShort": "防御時に攻撃側の攻撃スキル発動率を-20%",
+   "afterTarget": "全",
+   "afterRate": "+40%",
+   "afterEffectShort": "攻撃時に敵軍のスキル発動率を-10%(重複不可)"
+  },
+  {
+   "slot": "S2",
+   "skill": "戦陣 轟砲",
+   "rank": "A",
+   "afterSkill": "覇王絶世",
+   "afterRank": "SS",
+   "target": "砲・器",
+   "rate": "+45%",
+   "effectShort": "攻撃66%上昇+防御66%上昇",
+   "afterTarget": "全",
+   "afterRate": "+24%",
+   "afterEffectShort": "攻撃部隊ランクボーナスx15%上昇(部隊ランクボーナスで効果が変化)"
+  }
+ ],
+ "notes": [
+  "限定極(2019-12-22〜、ixaixa.com確認)。章は未確認。「鉄」は鉄砲足軽。",
+  "出典: カード画像(LV1形式: 極・統率 槍A/弓A/馬A/器S拡大確認・初期値1070/1070/520・コスト4・LV1スキル値。",
+  "  カードの指揮兵数4240は★5表示のため不採用、ixanaryの★0-0=3740をlv0Troopsに使用(B-00ルール))",
+  " + ixanary.com/cards/2412(成長+35/+35/+3.0・LV10: 確率+45%/槍馬器鉄攻防65%/デッキコスト上限+1)",
+  " + ixaixa.com/archives/8491(合成テーブル・各候補の効果)。",
+  "スキルはA(鍛錬情報なし)のためTR1以降のeffectはnull。",
+  "合成テーブルは登録時ixaixa.com単一ソースだったが、2026-08-12にixanaryのスキル個別ページ",
+  " (1次/2次候補)と全行一致することを確認し2ソースになった(tools/audit_characters.py --online)。"
+ ]
+}

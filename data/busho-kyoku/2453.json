@@ -1,0 +1,135 @@
+{
+ "name": "森本儀太夫",
+ "no": "2453",
+ "ch": "未確認",
+ "cost": 4,
+ "troop": "全攻破",
+ "sub": "",
+ "effect": "破壊した耐久値に応じて資源獲得(獲得率12%)",
+ "furigana": "もりもとぎだゆう",
+ "illustrator": "正子公也",
+ "imageFull": "assets/img/characters/no2453_full.png",
+ "imageChar": "assets/img/characters/no2453_char.png",
+ "atkBase": 1140,
+ "atkGrowth": 55,
+ "defBase": 1060,
+ "defGrowth": 41,
+ "tacticsBase": 520,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 4200,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "破城 羅刹",
+ "skillDetail": "S/LV10 確率 100% 攻撃124%上昇/対象:全\n①攻撃124%上昇する\n②破壊55%上昇する\n③資源獲得率12%(破壊した耐久値に応じて資源獲得)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 攻撃 124%上昇+破壊 55%上昇(資源獲得率12%・破壊した耐久値に応じて資源獲得)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": null
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": null
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": null
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": null
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": null
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": null
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "破城 羅刹",
+   "rank": "S",
+   "afterSkill": "神屋楯比売命",
+   "afterRank": "SS",
+   "target": null,
+   "rate": null,
+   "effectShort": null,
+   "afterTarget": "自身",
+   "afterRate": "+70%",
+   "afterEffectShort": "初期スキル(戦闘スキルのみ)を模倣(1倍)"
+  },
+  {
+   "slot": "B",
+   "skill": "破城 羅刹",
+   "rank": "S",
+   "afterSkill": "神屋楯比売命",
+   "afterRank": "SS",
+   "target": null,
+   "rate": null,
+   "effectShort": null,
+   "afterTarget": "自身",
+   "afterRate": "+70%",
+   "afterEffectShort": "初期スキル(戦闘スキルのみ)を模倣(1倍)"
+  },
+  {
+   "slot": "C",
+   "skill": "覚悟十躰",
+   "rank": "A",
+   "afterSkill": "覚悟十躰",
+   "afterRank": "A",
+   "target": null,
+   "rate": null,
+   "effectShort": null
+  },
+  {
+   "slot": "S1",
+   "skill": "神屋楯比売命",
+   "rank": "SS",
+   "afterSkill": "神屋楯比売命",
+   "afterRank": "SS",
+   "target": "自身",
+   "rate": "+70%",
+   "effectShort": "自身の持つ初期スキルを模倣する(戦闘スキルのみ)"
+  },
+  {
+   "slot": "S2",
+   "skill": "八重言代主神",
+   "rank": "SS",
+   "afterSkill": "無窮天斥陣",
+   "afterRank": "SS",
+   "target": "自身",
+   "rate": "+70%",
+   "effectShort": "自身の持つ初期スキルを模倣する(戦闘スキルのみ)",
+   "afterTarget": "槍弓馬",
+   "afterRate": "+40%",
+   "afterEffectShort": "防御63%上昇(攻撃部隊に兵器兵科がいれば効果1.5倍)"
+  }
+ ],
+ "notes": [
+  "出典: カード画像(LV1形式: 極・統率 槍S/弓A/馬A/器A拡大確認・初期値1140/1060/520・コスト4・LV1スキル値。",
+  "  極限突破表示のため指揮5600は不採用、ixanaryの★0-0=4200を使用(B-00ルール))",
+  " + ixanary.com/cards/2453(成長+55/+41/+2.5・LV10: 確率+100%/全攻124%/破壊55%/資源獲得率12%)",
+  " + ixawiki BushoCard/2453(統率2次確認・合成テーブル1次/2次候補)。",
+  "統率はカード画像+ixawikiの2ソース一致。攻撃+破壊の同時変動はtrTableに併記(multistat規則)。",
+  "初期スキルがSランクのためスキル個別ページの新規作成が必要(docsのTODOに記録済み)。",
+  "合成テーブルはixawiki(1次候補+2次候補)"
+ ]
+}

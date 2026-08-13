@@ -1,0 +1,134 @@
+{
+ "name": "飯田覚兵衛",
+ "no": "2452",
+ "ch": "未確認",
+ "cost": 4.5,
+ "troop": "全攻",
+ "sub": "",
+ "effect": "自部隊同時攻撃時、他の自分の部隊にも攻撃効果を加算(模倣不可・部隊内重複不可)",
+ "furigana": "いいだかくべえ",
+ "illustrator": "正子公也",
+ "imageFull": "assets/img/characters/no2452_full.png",
+ "imageChar": "assets/img/characters/no2452_char.png",
+ "atkBase": 1180,
+ "atkGrowth": 58,
+ "defBase": 1100,
+ "defGrowth": 48,
+ "tacticsBase": 510,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 4450,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "牛鬼ノ攻城",
+ "skillDetail": "S/LV10 確率 60% 攻撃124%上昇/対象:全\n模倣不可\n①攻撃124%上昇する\n②自部隊同時攻撃時他の自分の部隊にもこのスキルの攻撃効果を加算する(部隊内重複不可)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 60% / 攻撃 124%上昇(自部隊同時攻撃時、他の自分の部隊にも攻撃効果を加算・模倣不可・部隊内重複不可)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": null
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": null
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": null
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": null
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": null
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": null
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "銃槍 轟攻陣",
+   "rank": "A",
+   "afterSkill": "銃槍 轟攻陣",
+   "afterRank": "A",
+   "target": null,
+   "rate": null,
+   "effectShort": null
+  },
+  {
+   "slot": "B",
+   "skill": "無双英傑",
+   "rank": "SS",
+   "afterSkill": "覇王絶世",
+   "afterRank": "SS",
+   "target": null,
+   "rate": null,
+   "effectShort": null,
+   "afterTarget": "全",
+   "afterRate": "+24%",
+   "afterEffectShort": "攻撃部隊ランクボーナスx15%上昇(部隊ランクボーナスで効果が変化)"
+  },
+  {
+   "slot": "C",
+   "skill": "天綾の誓約",
+   "rank": "SS",
+   "afterSkill": "天焉相克",
+   "afterRank": "SS",
+   "target": null,
+   "rate": null,
+   "effectShort": null,
+   "afterTarget": "槍・弓・馬",
+   "afterRate": "+70%",
+   "afterEffectShort": "全攻 30%上昇(部隊の総コストで効果が変化)"
+  },
+  {
+   "slot": "S1",
+   "skill": "式神ノ冥王",
+   "rank": "SS",
+   "afterSkill": "荒破閃神",
+   "afterRank": "SS",
+   "target": null,
+   "rate": null,
+   "effectShort": null,
+   "afterTarget": "全",
+   "afterRate": "+45%",
+   "afterEffectShort": "攻撃110%上昇(6部隊以下の攻撃で効果2倍)"
+  },
+  {
+   "slot": "S2",
+   "skill": "破軍星 皇",
+   "rank": "SS",
+   "afterSkill": "破軍星 皇",
+   "afterRank": "SS",
+   "target": null,
+   "rate": null,
+   "effectShort": null
+  }
+ ],
+ "notes": [
+  "出典: カード画像(LV1形式: 極・統率 槍S/弓A/馬A/器A拡大確認・初期値1180/1100/510・コスト4.5・LV1スキル値)",
+  " + ixanary.com/cards/2452(指揮4450(★0-0)・成長+58/+48/+2.5・LV10: 確率+60%/全攻124%/同時攻撃時に他部隊へも加算)",
+  " + ixawiki BushoCard/2452(統率2次確認・合成テーブル1次/2次候補)。",
+  "統率はカード画像+ixawikiの2ソース一致。初期スキルがSランクのためスキル個別ページの新規作成が必要",
+  "(docsのTODOに記録済み)。スキルはS(鍛錬情報なし)のためTR1以降のeffectはnull。",
+  "合成テーブルはixawiki(1次候補+2次候補)"
+ ]
+}

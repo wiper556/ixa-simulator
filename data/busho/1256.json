@@ -1,0 +1,102 @@
+{
+ "name": "宇喜多直家（3）",
+ "no": "1256",
+ "ch": "27章",
+ "cost": 4,
+ "troop": "槍弓砲器攻",
+ "sub": "飛翔10",
+ "effect": "飛翔値合計依存で攻撃上昇",
+ "furigana": "うきたなおいえ",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1256_full.png",
+ "imageChar": "assets/img/characters/no1256_char.png",
+ "atkBase": 1210,
+ "atkGrowth": 67,
+ "defBase": 1100,
+ "defGrowth": 33,
+ "tacticsBase": 670,
+ "tacticsGrowth": 3,
+ "lv0Troops": 4570,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "SS"
+ },
+ "initialSkill": "魔弾奏者",
+ "skillDetail": "S/LV10 確率 64% 攻撃50%上昇/対象:槍・弓・砲・器　飛翔10\n①攻撃50%上昇する\n②所属部隊の武将が戦闘時にもつ飛翔値の合計×9%を攻撃効果に加算する",
+ "categoryLinks": [
+  {
+   "href": "skills-hishou-atk.html",
+   "label": "飛翔スキル一覧(攻撃)を見る"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・弓・砲・器 飛翔10　確率 64% / 攻撃 50%上昇(飛翔値合計×9%加算)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "魔弾奏者",
+   "rank": "S",
+   "afterSkill": "星神闘覇",
+   "afterRank": "SSS",
+   "rate": "64%",
+   "target": "槍・弓・砲・器 飛翔10",
+   "effectShort": "攻撃50%上昇(飛翔値合計×9%加算)",
+   "afterTarget": "全 飛翔15",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 770%上昇+速度200%上昇(TR別データは未確認)"
+  },
+  {
+   "slot": "B",
+   "skill": "魔弾奏者",
+   "rank": "S",
+   "afterSkill": "星神闘覇",
+   "afterRank": "SSS",
+   "rate": "64%",
+   "target": "槍・弓・砲・器 飛翔10",
+   "effectShort": "攻撃50%上昇(飛翔値合計×9%加算)",
+   "afterTarget": "全 飛翔15",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 770%上昇+速度200%上昇(TR別データは未確認)"
+  },
+  {
+   "slot": "C",
+   "skill": "開闢ノ逆鉾",
+   "rank": "SS",
+   "afterSkill": "開闢ノ逆鉾",
+   "afterRank": "SS",
+   "rate": "100%",
+   "target": "全",
+   "effectShort": "攻撃254%上昇+卓越:攻撃戦闘時追加確率30%で自部隊の兵士被害15%減少(部隊内重複上限2・模倣不可)"
+  },
+  {
+   "slot": "S1",
+   "skill": "星神闘覇",
+   "rank": "SS",
+   "afterSkill": "星神闘覇",
+   "afterRank": "SS",
+   "rate": "100%",
+   "target": "全 飛翔15",
+   "effectShort": "攻撃770%上昇+速度200%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "神光征軍",
+   "rank": "SS",
+   "afterSkill": "神光征軍",
+   "afterRank": "SS",
+   "rate": "100%",
+   "target": "全",
+   "effectShort": "全攻90%上昇+全速200%上昇"
+  }
+ ],
+ "notes": [
+  "synthesisTable: 45do.info生HTML(skiladd_wrap)+ixanary.com(魔弾奏者スキルページの合成テーブル)で2ソース一致確認済み(2026-08-02)。星神闘覇はixanary.com単体ではSSS表記だが、45do.info(1256/1269両方の生HTML)+skills.html登録値のSSと2対1で一致するためSSを採用"
+ ]
+}

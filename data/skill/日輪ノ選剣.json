@@ -1,0 +1,35 @@
+{
+ "name": "日輪ノ選剣",
+ "rank": "S",
+ "baseRate": 60,
+ "target": "槍・弓・砲・器",
+ "effectSummary": "S/LV10 確率 60% 防御(6×防御参加武将数)%上昇/対象:槍・弓・砲・器\n①防御(6×防御参加武将数)%上昇する\n②防御参加武将数が120以下の時防御効果が1.5倍となる",
+ "categoryLinks": [
+  {
+   "href": "skills-count-def.html",
+   "label": "人数依存(防)スキル一覧を見る"
+  }
+ ],
+ "sourceCharacters": [
+  {
+   "name": "豊臣秀吉（5）",
+   "no": "1255",
+   "slot": "A・B"
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "永世ノ天隻",
+  "rank": "SS"
+ },
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "coefficient": "6",
+   "effect": "槍・弓・砲・器　確率 60% / 防御 6%×防御参加武将数(280人)=1680%(120以下で1.5倍)"
+  }
+ ],
+ "notes": [
+  "No.1255(豊臣秀吉(5))の初期スキル(S、自身のsynthesisTable A/B枠で自己参照)。ixanary.com生HTML(skills/日輪ノ選剣)確認、TRなし(LV1/LV10のみ)"
+ ]
+}

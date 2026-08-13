@@ -1,0 +1,120 @@
+{
+ "name": "板垣信方",
+ "no": "7011",
+ "ch": "未確認",
+ "cost": 4,
+ "troop": "馬砲器攻防",
+ "sub": "",
+ "effect": "卓越追加確率10%で攻防効果3倍",
+ "furigana": "いたがきのぶかた",
+ "illustrator": "池田宗隆",
+ "imageFull": "assets/img/characters/no7011_full.png",
+ "imageChar": "assets/img/characters/no7011_char.png",
+ "atkBase": 1150,
+ "atkGrowth": 45,
+ "defBase": 1150,
+ "defGrowth": 45,
+ "tacticsBase": 520,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 4010,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "A",
+  "uma": "S",
+  "ki": "A"
+ },
+ "initialSkill": "御旗ノ守護者",
+ "skillDetail": "A/LV10 確率 100% 攻撃230%上昇+防御230%上昇/対象:馬・砲・器 卓越\n①攻撃230%上昇する\n②防御230%上昇する\n③卓越の追加確率10%で攻防効果が3倍になる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "馬・砲・器 卓越　確率 100% / 攻撃 230%上昇+防御 230%上昇(卓越追加確率10%で3倍)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": "馬・砲・器 卓越　確率 100% / 攻撃 230%上昇+防御 230%上昇(卓越追加確率15%で3倍)"
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": "馬・砲・器 卓越　確率 100% / 攻撃 235%上昇+防御 235%上昇(卓越追加確率20%で3倍)"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": null
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": null
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": null
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "霊妙秘剣",
+   "rank": "A",
+   "afterSkill": "戦陣 剣舞",
+   "afterRank": "A",
+   "target": "槍・馬・砲 飛翔6 卓越",
+   "rate": "+100%",
+   "effectShort": "攻撃180%上昇+防御180%上昇(卓越:追加確率-30%で3倍・0%超のみ抽選・模倣不可)",
+   "afterTarget": "全",
+   "afterRate": "+100%",
+   "afterEffectShort": "飛翔6(攻撃80%上昇+防御80%上昇卓越追加確率30%で攻防効果が4倍)"
+  },
+  {
+   "slot": "B",
+   "skill": "龍門ノ賢者",
+   "rank": "A",
+   "afterSkill": "志半ノ矛楯",
+   "afterRank": "A",
+   "target": "弓・器・焙 卓越",
+   "rate": "100%",
+   "effectShort": "攻撃190%上昇(卓越:追加確率10%で3倍)",
+   "afterTarget": "全",
+   "afterRate": "+65%",
+   "afterEffectShort": "攻撃465%上昇+防御465%上昇(模倣不可)"
+  },
+  {
+   "slot": "C",
+   "skill": "戦陣 剣舞",
+   "rank": "A",
+   "afterSkill": "仙剣破斬",
+   "afterRank": "SSS",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃115%上昇+防御115%上昇(卓越で4倍)"
+  },
+  {
+   "slot": "S1",
+   "skill": "御旗ノ守護者",
+   "rank": "A",
+   "afterSkill": "御旗ノ守護者",
+   "afterRank": "A"
+  },
+  {
+   "slot": "S2",
+   "skill": "志半ノ矛楯",
+   "rank": "A",
+   "afterSkill": "志半ノ矛楯",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "+65%",
+   "effectShort": "攻撃465%上昇+防御465%上昇(模倣不可)"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/7011 と skills/御旗ノ守護者 の生HTML)で確認(2026-08-08)。",
+  "合成テーブルはスキルページの1次(=移植前)・2次(=移植後)から取得。",
+  "候補スキルの対象・確率・効果はサイト内の既存登録から転記(未登録のスキルは空のまま)。"
+ ]
+}

@@ -1,0 +1,60 @@
+{
+ "name": "封法大十字",
+ "rank": "S",
+ "baseRate": 40,
+ "target": "部隊長 撤退",
+ "effectSummary": "S/LV10 確率 40% 対象:部隊長　撤退\n①部隊長撤退時所属部隊の部隊長が持つ模倣可能な初期スキルを通常攻撃/防御効果を1.24倍して模倣する\n②撤退を持つため部隊は陣での防御戦闘に参加しない",
+ "categoryLinks": [
+  {
+   "href": "skills-taitai.html",
+   "label": "撤退スキル一覧を見る"
+  },
+  {
+   "href": "skills-leadermimic.html",
+   "label": "部隊長模倣スキル一覧を見る"
+  }
+ ],
+ "sourceCharacters": [
+  {
+   "name": "百地三太夫",
+   "no": "10062",
+   "slot": "C・S1"
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "封法大十字",
+  "rank": "S"
+ },
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "部隊長 撤退　確率 40% / 模倣倍率 1.24倍"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": "部隊長 撤退　確率 45% / 模倣倍率 1.24倍"
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": "部隊長 撤退　確率 50% / 模倣倍率 1.3倍"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": "部隊長 撤退　確率 55% / 模倣倍率 1.35倍"
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": "部隊長 撤退　確率 65% / 模倣倍率 1.4倍"
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": "部隊長 撤退　確率 70% / 模倣倍率 1.5倍"
+  }
+ ]
+}

@@ -1,0 +1,96 @@
+{
+ "name": "島津家久",
+ "no": "1261",
+ "ch": "27章",
+ "cost": 4,
+ "troop": "槍馬砲器防",
+ "sub": "",
+ "effect": "自軍内の同兵種武将数依存",
+ "furigana": "しまづいえひさ",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1261_full.png",
+ "imageChar": "assets/img/characters/no1261_char.png",
+ "atkBase": 1060,
+ "atkGrowth": 40,
+ "defBase": 1190,
+ "defGrowth": 66,
+ "tacticsBase": 650,
+ "tacticsGrowth": 3,
+ "lv0Troops": 4560,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "神将火剣",
+ "skillDetail": "S/LV10 確率 50% 防御150%上昇/対象:槍・馬・砲・器\n①防御150%上昇する\n②自軍内で同じ兵種を指揮している武将数×12%を防御効果に加算する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・馬・砲・器　確率 50% / 防御 150%上昇(同兵種指揮武将数×12%加算)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "神将火剣",
+   "rank": "S",
+   "afterSkill": "万里嵐壁",
+   "afterRank": "SS",
+   "rate": "50%",
+   "target": "槍・馬・砲・器",
+   "effectShort": "防御150%上昇(同兵種指揮武将数×12%加算)",
+   "afterTarget": "全",
+   "afterRate": "66%",
+   "afterEffectShort": "防御 200%上昇+敵軍部隊数×40%(TR別データは未確認)"
+  },
+  {
+   "slot": "B",
+   "skill": "神将火剣",
+   "rank": "S",
+   "afterSkill": "万里嵐壁",
+   "afterRank": "SS",
+   "rate": "50%",
+   "target": "槍・馬・砲・器",
+   "effectShort": "防御150%上昇(同兵種指揮武将数×12%加算)",
+   "afterTarget": "全",
+   "afterRate": "66%",
+   "afterEffectShort": "防御 200%上昇+敵軍部隊数×40%(TR別データは未確認)"
+  },
+  {
+   "slot": "C",
+   "skill": "八幡神ノ威光",
+   "rank": "SSS",
+   "afterSkill": "八幡神ノ威光",
+   "afterRank": "SSS",
+   "rate": "70%",
+   "target": "部隊長",
+   "effectShort": "部隊長の初期スキルを1.25倍模倣"
+  },
+  {
+   "slot": "S1",
+   "skill": "万里嵐壁",
+   "rank": "SS",
+   "afterSkill": "万里嵐壁",
+   "afterRank": "SS",
+   "rate": "66%",
+   "target": "全",
+   "effectShort": "防御200%上昇+敵軍部隊数×40%加算(模倣不可)"
+  },
+  {
+   "slot": "S2",
+   "skill": "天磐船",
+   "rank": "SS",
+   "afterSkill": "天磐船",
+   "afterRank": "SS",
+   "rate": "56%",
+   "target": "全",
+   "effectShort": "防御3.8%×防御参加武将数上昇"
+  }
+ ],
+ "notes": [
+  "45do.info(ordinary/0202)生HTML + ixagno.blog.fc2.com(blog-entry-9516、検索クエリ「No.1261」で発見)生HTML の2ソースで完全一致を確認(2026-08-02再検証)"
+ ]
+}

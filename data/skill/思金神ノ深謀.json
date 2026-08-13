@@ -1,0 +1,78 @@
+{
+ "name": "思金神ノ深謀",
+ "rank": "SS",
+ "baseRate": 60,
+ "target": "部隊長",
+ "effectSummary": "SS/LV10 確率 60% 対象:部隊長\n①部隊長の持つ模倣可能な初期スキルを模倣する\n②卓越:追加確率35%で通常攻撃/防御効果を1.3倍にして模倣する",
+ "categoryLinks": [
+  {
+   "href": "skills-leadermimic.html",
+   "label": "部隊長模倣スキル一覧を見る"
+  },
+  {
+   "href": "skills-takuetsu.html",
+   "label": "卓越スキル一覧を見る"
+  }
+ ],
+ "sourceCharacters": [
+  {
+   "name": "細川幽斎-復刻-【天】",
+   "no": "10070",
+   "slot": "C"
+  },
+  {
+   "name": "斎藤道三（3）",
+   "no": "1297",
+   "slot": "B"
+  },
+  {
+   "name": "伊達政宗（6）",
+   "no": "1292",
+   "slot": "B"
+  },
+  {
+   "name": "真田信繁",
+   "no": "1268",
+   "slot": "C"
+  },
+  {
+   "name": "北条氏政（5）",
+   "no": "1253",
+   "slot": "C"
+  },
+  {
+   "name": "里見義弘（2）",
+   "no": "1245",
+   "slot": "S1"
+  },
+  {
+   "name": "朝倉義景",
+   "no": "1243",
+   "slot": "S1"
+  },
+  {
+   "name": "羽柴秀長",
+   "no": "1278",
+   "slot": "B",
+   "note": [
+    "羽柴秀長(1278)のsynthesisTable B枠(A-3-11逆引き確認、2026-08-02)"
+   ]
+  },
+  {
+   "name": "松平清康（2）",
+   "no": "1313",
+   "slot": "B"
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "思金神ノ深謀",
+  "rank": "SS"
+ },
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "部隊長　確率 60% / 卓越追加確率35%・1.3倍"
+  }
+ ]
+}

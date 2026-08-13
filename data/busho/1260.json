@@ -1,0 +1,93 @@
+{
+ "name": "伊達輝宗",
+ "no": "1260",
+ "ch": "27章",
+ "cost": 5,
+ "troop": "槍弓砲器攻防",
+ "sub": "",
+ "effect": "部隊内コスト影響時、自身のコストを+3計算",
+ "furigana": "だててるむね",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1260_full.png",
+ "imageChar": "assets/img/characters/no1260_char.png",
+ "atkBase": 1200,
+ "atkGrowth": 62,
+ "defBase": 1200,
+ "defGrowth": 62,
+ "tacticsBase": 660,
+ "tacticsGrowth": 3,
+ "lv0Troops": 4950,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "S",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "龍父絶砲",
+ "skillDetail": "S/LV10 確率 60% 攻撃420%上昇/対象:槍・弓・砲・器\n①攻撃420%上昇する\n②防御420%上昇する\n③部隊内で武将コストが武将スキルに影響するときこの武将のコストを+3で計算する(特殊効果は部隊内重複不可)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・弓・砲・器　確率 60% / 攻撃420%上昇+防御420%上昇(コスト+3計算)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "四天轟雷",
+   "rank": "SS",
+   "afterSkill": "四天轟雷",
+   "afterRank": "SS",
+   "rate": "100%",
+   "target": "全",
+   "effectShort": "攻撃360%上昇+防御360%上昇+部隊内全武将の兵科対象の全スキルに砲・器対象を追加"
+  },
+  {
+   "slot": "B",
+   "skill": "天焉相克",
+   "rank": "SS",
+   "afterSkill": "八重言代主神",
+   "afterRank": "SS",
+   "rate": "70%",
+   "target": "槍・弓・馬",
+   "effectShort": "全攻30%上昇(部隊の総コストで効果が変化)",
+   "afterTarget": "自身",
+   "afterRate": "70%",
+   "afterEffectShort": "初期スキル(戦闘スキルのみ)を模倣(1倍)"
+  },
+  {
+   "slot": "C",
+   "skill": "猛火ノ追撃",
+   "rank": "SSS",
+   "afterSkill": "猛火ノ追撃",
+   "afterRank": "SSS",
+   "rate": "70%",
+   "target": "全",
+   "effectShort": "全攻45%上昇(部隊の総コストで効果が変化)"
+  },
+  {
+   "slot": "S1",
+   "skill": "閃裂討鬼",
+   "rank": "SS",
+   "afterSkill": "閃裂討鬼",
+   "afterRank": "SS",
+   "rate": "45%",
+   "target": "全",
+   "effectShort": "攻撃50%上昇(部隊の総コストで効果が変化)+部隊内で武将コストがスキルに影響する時攻撃効果部分のみこの武将のコストを+0.5で計算"
+  },
+  {
+   "slot": "S2",
+   "skill": "覇王征軍",
+   "rank": "SS",
+   "afterSkill": "覇王征軍",
+   "afterRank": "SS",
+   "rate": "42%",
+   "target": "全",
+   "effectShort": "全攻25.39%上昇(部隊の総コストで効果が変化)"
+  }
+ ],
+ "notes": [
+  "synthesisTable: 45do.info生HTML(skiladd_wrap)照合済み+ixanary.com(各候補スキルページの合成テーブル)で2ソース一致確認済み(2026-08-02)。S1の閃裂討鬼は45do.info側で数値が伏字(●)だったが、skills.html側で豊臣秀吉【覇】(1274)B分の確定値(確率45%/攻撃50%上昇)と統合済みのためその値を採用。Cの猛火ノ追撃はixanary.com上でSSSと確認、skills.html側の重複登録(rank:SS版)をSSSへ統合"
+ ]
+}

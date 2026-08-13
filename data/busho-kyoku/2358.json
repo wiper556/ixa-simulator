@@ -1,0 +1,108 @@
+{
+ "name": "今川氏真",
+ "no": "2358",
+ "ch": "未確認",
+ "cost": 4.5,
+ "troop": "-",
+ "sub": "",
+ "effect": "所属部隊の部隊長の初期スキルを模倣(戦闘スキルのみ)",
+ "furigana": "いまがわうじざね",
+ "illustrator": "JUNNY",
+ "imageFull": "assets/img/characters/no2358_full.png",
+ "imageChar": "assets/img/characters/no2358_char.png",
+ "atkBase": 1070,
+ "atkGrowth": 40,
+ "defBase": 1070,
+ "defGrowth": 40,
+ "tacticsBase": 530,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 4300,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "転歌",
+ "skillDetail": "A/LV10 確率 80% 対象:部隊長\n模倣不可\n①所属部隊の部隊長が持つ初期スキルを模倣する(戦闘スキルのみ)",
+ "categoryLinks": [
+  {
+   "href": "skills-leadermimic.html",
+   "label": "部隊長模倣スキル一覧を見る"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "部隊長　確率 80% / 効果 部隊長の初期スキルを模倣(戦闘スキルのみ)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "転歌",
+   "rank": "A",
+   "afterSkill": "入来神舞",
+   "afterRank": "S",
+   "target": "部隊長",
+   "rate": "80%",
+   "effectShort": "部隊長の初期スキルを模倣(戦闘スキルのみ、TR別データは未確認)",
+   "afterTarget": "部隊長",
+   "afterRate": "55%",
+   "afterEffectShort": "部隊長の初期スキルを1.1倍に強化して模倣(TR別データは未確認)"
+  },
+  {
+   "slot": "B",
+   "skill": "転歌",
+   "rank": "A",
+   "afterSkill": "入来神舞",
+   "afterRank": "S",
+   "target": "部隊長",
+   "rate": "80%",
+   "effectShort": "部隊長の初期スキルを模倣(戦闘スキルのみ、TR別データは未確認)",
+   "afterTarget": "部隊長",
+   "afterRate": "55%",
+   "afterEffectShort": "部隊長の初期スキルを1.1倍に強化して模倣(TR別データは未確認)"
+  },
+  {
+   "slot": "C",
+   "skill": "風狂幻術",
+   "rank": "B",
+   "afterSkill": "風狂幻術",
+   "afterRank": "B",
+   "target": "部隊長",
+   "rate": "+53%",
+   "effectShort": "部隊長の初期スキルを模倣(戦闘スキルのみ)"
+  },
+  {
+   "slot": "S1",
+   "skill": "入来神舞",
+   "rank": "S",
+   "afterSkill": "飛蝶野分",
+   "afterRank": "B",
+   "target": "部隊長",
+   "rate": "55%",
+   "effectShort": "部隊長の初期スキルを1.1倍に強化して模倣(TR別データは未確認)",
+   "afterTarget": "部隊長",
+   "afterRate": "60%",
+   "afterEffectShort": "部隊長の初期スキルを模倣(戦闘スキルのみ)(TR別データは未確認)"
+  },
+  {
+   "slot": "S2",
+   "skill": "入来神舞",
+   "rank": "S",
+   "afterSkill": "飛蝶野分",
+   "afterRank": "B",
+   "target": "部隊長",
+   "rate": "55%",
+   "effectShort": "部隊長の初期スキルを1.1倍に強化して模倣(TR別データは未確認)",
+   "afterTarget": "部隊長",
+   "afterRate": "60%",
+   "afterEffectShort": "部隊長の初期スキルを模倣(戦闘スキルのみ)(TR別データは未確認)"
+  }
+ ],
+ "notes": [
+  "45do.info+ixagno.blog.fc2.com(blog-entry-9417)確認済み: A/Bの転歌は移植後「入来神舞」[S]に、S1/S2の入来神舞は移植後「飛蝶野分」に変化(自己参照ではない)"
+ ]
+}

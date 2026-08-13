@@ -1,0 +1,52 @@
+{
+ "name": "天津甕星ノ雷",
+ "rank": "SS",
+ "baseRate": 100,
+ "target": "全 覇道",
+ "effectSummary": "SS/LV10 確率 100% 攻撃170%上昇/対象:全　覇道\n①攻撃170%上昇する\n②速度70%上昇する",
+ "categoryLinks": [
+  {
+   "href": "skills-hadou.html",
+   "label": "覇道スキル一覧を見る"
+  }
+ ],
+ "sourceCharacters": [
+  {
+   "name": "斎藤道三【覇】",
+   "no": "1202",
+   "slot": "C・S1"
+  },
+  {
+   "name": "水野勝成",
+   "no": "1236",
+   "slot": "C"
+  },
+  {
+   "name": "井伊直政",
+   "no": "1233",
+   "slot": "C"
+  },
+  {
+   "name": "柴田勝家",
+   "no": "1216",
+   "slot": "S1"
+  },
+  {
+   "name": "佐野昌綱",
+   "no": "2457",
+   "slot": "B",
+   "db": "kyoku"
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "天津甕星ノ雷",
+  "rank": "SS"
+ },
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全 覇道　確率 100% / 攻撃 170%上昇+速度70%上昇(TR別データは未確認)"
+  }
+ ]
+}

@@ -1,0 +1,139 @@
+{
+ "name": "伊達藤次郎",
+ "no": "2600",
+ "ch": "未確認",
+ "cost": 4,
+ "troop": "全攻破",
+ "sub": "不屈2 撤退",
+ "effect": "騎馬鉄砲(所属部隊)速度+2破壊+2。部隊枠から外れる時HP最大60%回復",
+ "furigana": "だてとうじろう",
+ "illustrator": "BISAI",
+ "imageFull": "assets/img/characters/no2600_full.png",
+ "imageChar": "assets/img/characters/no2600_char.png",
+ "atkBase": 1220,
+ "atkGrowth": 65,
+ "defBase": 1100,
+ "defGrowth": 49,
+ "tacticsBase": 530,
+ "tacticsGrowth": 3,
+ "lv0Troops": 4580,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "S",
+  "ki": "A"
+ },
+ "initialSkill": "旋龍突渦",
+ "skillDetail": "S/LV10 確率 55% 攻撃450%上昇/対象:全　不屈2　撤退\n①攻撃450%上昇する\n②破壊150%上昇する\n③騎馬鉄砲(所属部隊)の速度+2・破壊+2する\n④自身or部隊内武将が通常部隊枠から外れるときHPが最大60%まで回復する(特殊効果は模倣と部隊内重複不可)",
+ "categoryLinks": [
+  {
+   "href": "skills-fukutsu.html",
+   "label": "不屈スキル一覧を見る"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 55% / 攻撃 450%上昇+破壊 150%上昇(騎鉄速度+2破壊+2・部隊枠から外れる時HP最大60%回復)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": "全　確率 55% / 攻撃 490%上昇+破壊 160%上昇(騎鉄速度+2.3破壊+2.5・HP最大63%回復)"
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": "全　確率 55% / 攻撃 540%上昇+破壊 170%上昇(騎鉄速度+2.5破壊+3.2・HP最大67%回復)"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": "全　確率 55% / 攻撃 600%上昇+破壊 180%上昇(騎鉄速度+3破壊+4・HP最大72%回復)"
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": "全　確率 55% / 攻撃 670%上昇+破壊 210%上昇(騎鉄速度+3.4破壊+5・HP最大80%回復)"
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": "全　確率 55% / 攻撃 750%上昇+破壊 250%上昇(騎鉄速度+4破壊+7・HP最大90%回復)"
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": null
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "戦陣 疾駆",
+   "rank": "A",
+   "afterSkill": "十束ノ神域",
+   "afterRank": "SS",
+   "target": null,
+   "rate": null,
+   "effectShort": null,
+   "afterTarget": "全 覇道",
+   "afterRate": "+100%",
+   "afterEffectShort": "攻撃 320%上昇+速度70%上昇(TR別データは未確認)"
+  },
+  {
+   "slot": "B",
+   "skill": "志半ノ矛楯",
+   "rank": "A",
+   "afterSkill": "志半ノ矛楯",
+   "afterRank": "A",
+   "target": null,
+   "rate": null,
+   "effectShort": null
+  },
+  {
+   "slot": "C",
+   "skill": "神光征軍",
+   "rank": "SS",
+   "afterSkill": "神光征軍",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "+100%",
+   "effectShort": "攻撃90%上昇+速度200%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "十束ノ神域",
+   "rank": "SS",
+   "afterSkill": "天聖宝冠",
+   "afterRank": "SSS",
+   "target": "全",
+   "rate": "+100%",
+   "effectShort": "攻撃320%上昇+速度70%上昇(所属部隊のスキルを無効化・発動低下から保護)",
+   "afterTarget": "全",
+   "afterRate": "+45%",
+   "afterEffectShort": "攻撃 100%+5%×防御参加武将数(280人)=1500.0%"
+  },
+  {
+   "slot": "S2",
+   "skill": "志半ノ矛楯",
+   "rank": "A",
+   "afterSkill": "志半ノ矛楯",
+   "afterRank": "A",
+   "target": null,
+   "rate": null,
+   "effectShort": null
+  }
+ ],
+ "notes": [
+  "出典: カード画像(LV10形式: 極・統率 槍A/弓A/馬S/器A拡大確認・初期値1220/1100/530・コスト4)",
+  " + ixanary.com/cards/2600(指揮4580(★0-0)・成長+65/+49/+3.0。絵師 BISAI)",
+  " + ixanaryスキルページ「旋龍突渦」(LV1〜TR5の全鍛錬値+合成テーブル)",
+  " + ixawiki BushoCard/2600(統率2次確認)。",
+  "統率はカード画像+ixawikiの2ソース一致。攻撃+破壊の同時変動はtrTableに併記(multistat規則)。",
+  "シミュのspecialSkillsにも登録済み(trTable/destructTrTable/fukutsu:2)。",
+  "初期スキルがSランクのためスキル個別ページの新規作成が必要(docsのTODOに記録済み)。",
+  "合成テーブルはixanaryスキルページ(1次/2次/3次)"
+ ]
+}

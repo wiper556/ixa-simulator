@@ -1,0 +1,229 @@
+{
+ "name": "立花宗茂（5）",
+ "no": "1307",
+ "ch": "31章",
+ "cost": 4,
+ "troop": "槍馬器騎攻+速度",
+ "sub": "",
+ "effect": "部隊移動速度依存",
+ "furigana": "たちばなむねしげ",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1307_full.png",
+ "imageChar": "assets/img/characters/no1307_char.png",
+ "atkBase": 1250,
+ "atkGrowth": 72,
+ "defBase": 1110,
+ "defGrowth": 52,
+ "tacticsBase": 660,
+ "tacticsGrowth": 3,
+ "lv0Troops": 4700,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "S",
+  "ki": "A"
+ },
+ "initialSkill": "飛将ノ武略",
+ "skillDetail": "S/LV10 確率 100% 速度200%上昇/対象:槍・馬・器・騎\n①攻撃が部隊移動速度÷除数×100%上昇する(除数はLV10=32/TR1=31/TR2=30/TR3=28/TR4=26/TR5=24/TR6=22 攻撃シミュレーターで自動計算に対応済み)\n②速度200%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・馬・器・騎　確率 100% / 速度 200%上昇(攻撃は速度÷32×100%)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": "槍・馬・器・騎　確率 100% / 速度 210%上昇(攻撃は速度÷31×100%)"
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": "槍・馬・器・騎　確率 100% / 速度 220%上昇(攻撃は速度÷30×100%)"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": "槍・馬・器・騎　確率 100% / 速度 230%上昇(攻撃は速度÷28×100%)"
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": "槍・馬・器・騎　確率 100% / 速度 240%上昇(攻撃は速度÷26×100%)"
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": "槍・馬・器・騎　確率 100% / 速度 250%上昇(攻撃は速度÷24×100%)"
+  },
+  {
+   "level": "TR6",
+   "points": "200",
+   "effect": "槍・馬・器・騎　確率 100% / 速度 270%上昇(攻撃は速度÷22×100%)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "星神闘覇",
+   "rank": "SS",
+   "afterSkill": "星神闘覇",
+   "afterRank": "SS",
+   "rate": "100%",
+   "target": "全 飛翔15",
+   "effectShort": "攻撃770%上昇+速度200%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "刹那無影",
+   "rank": "SS",
+   "afterSkill": "刹那無影",
+   "afterRank": "SS",
+   "rate": "55%",
+   "target": "部隊長",
+   "effectShort": "部隊長の模倣可能な初期スキルを1.15倍に強化して模倣+速度200%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "虎賁統帥",
+   "rank": "SS",
+   "afterSkill": "虎賁統帥",
+   "afterRank": "SS",
+   "rate": "100%",
+   "target": "全 撤退 覇道",
+   "effectShort": "攻撃1130%上昇+速度200%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "飛将ノ武略",
+   "rank": "S",
+   "afterSkill": "飛将ノ武略",
+   "afterRank": "S",
+   "rate": "100%",
+   "target": "槍・馬・器・騎",
+   "effectShort": "速度200%上昇(攻撃は速度÷32×100%、参考値1%)"
+  },
+  {
+   "slot": "S2",
+   "skill": "照闇騎行",
+   "rank": "SS",
+   "afterSkill": "照闇騎行",
+   "afterRank": "SS",
+   "rate": "100%",
+   "target": "全",
+   "effectShort": "攻撃540%上昇+速度250%上昇"
+  }
+ ],
+ "speedAtkLookupTable": {
+  "speeds": [
+   500,
+   600,
+   700,
+   800,
+   900,
+   1000,
+   1100
+  ],
+  "rows": [
+   {
+    "level": "LV10",
+    "divisor": 32,
+    "values": [
+     1562.5,
+     1875,
+     2187.5,
+     2500,
+     2812.5,
+     3125,
+     3437.5
+    ]
+   },
+   {
+    "level": "TR1",
+    "divisor": 31,
+    "values": [
+     1612.9,
+     1935.5,
+     2258.1,
+     2580.6,
+     2903.2,
+     3225.8,
+     3548.4
+    ]
+   },
+   {
+    "level": "TR2",
+    "divisor": 30,
+    "values": [
+     1666.7,
+     2000,
+     2333.3,
+     2666.7,
+     3000,
+     3333.3,
+     3666.7
+    ]
+   },
+   {
+    "level": "TR3",
+    "divisor": 28,
+    "values": [
+     1785.7,
+     2142.9,
+     2500,
+     2857.1,
+     3214.3,
+     3571.4,
+     3928.6
+    ]
+   },
+   {
+    "level": "TR4",
+    "divisor": 26,
+    "values": [
+     1923.1,
+     2307.7,
+     2692.3,
+     3076.9,
+     3461.5,
+     3846.2,
+     4230.8
+    ]
+   },
+   {
+    "level": "TR5",
+    "divisor": 24,
+    "values": [
+     2083.3,
+     2500,
+     2916.7,
+     3333.3,
+     3750,
+     4166.7,
+     4583.3
+    ]
+   },
+   {
+    "level": "TR6",
+    "divisor": 22,
+    "values": [
+     2272.7,
+     2727.3,
+     3181.8,
+     3636.4,
+     4090.9,
+     4545.5,
+     5000
+    ]
+   }
+  ]
+ },
+ "notes": [
+  "カード画像照合済み(2026-07-30): 槍S/弓A/馬S/器A(旧データはyari/uma・yumiの値が誤って入れ替わっていたため修正)",
+  "ixagno.blog.fc2.com生HTML照合済み(blog-entry-10826、＜合成テーブル＞: 第一=星神闘覇[SS] 第二=刹那無影[SS] 第三=虎賁統帥[SS] S1=飛将ノ武略[S] S2=照闇騎行[SS])",
+  "ameameixa.com「【31章】天武将スキルテーブル一覧」(tenskil-31sho)のNo.1307行(A=星神闘覇 B=刹那無影 C=虎賁統帥 S1=飛将ノ武略 S2=照闇騎行)とも一致、2ソース照合済みにつき黄丸化。",
+  "No.1307専用の早見表(ユーザー指定)。攻撃%上昇=部隊移動速度÷除数×100%(除数はskillDetail/trTableと同じ値)。",
+  "汎用化はせず、この武将のオブジェクトにのみ持たせるハードコード値(gdbRenderDetail側でg.speedAtkLookupTableが",
+  "あるときだけ描画する)。値はいずれも speed/divisor*100 を小数点第2位で四捨五入し小数点第1位まで表示。"
+ ]
+}

@@ -1,0 +1,131 @@
+{
+ "name": "荒木村重",
+ "no": "1279",
+ "ch": "29章",
+ "cost": 4,
+ "troop": "槍弓砲器防",
+ "sub": "",
+ "effect": "防御参加数依存／120名以下の時は効果1.5倍",
+ "furigana": "あらきむらしげ",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1279_full.png",
+ "imageChar": "assets/img/characters/no1279_char.png",
+ "atkBase": 1050,
+ "atkGrowth": 41,
+ "defBase": 1240,
+ "defGrowth": 71,
+ "tacticsBase": 660,
+ "tacticsGrowth": 3,
+ "lv0Troops": 4630,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "S",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "魔導禁鎖",
+ "skillDetail": "S/LV10 確率 58% 防御(係数×防御参加武将数)%上昇/対象:槍・弓・砲・器\n模倣不可\n①防御を係数(LV10=8.4)×防御参加武将数で上昇する\n②防御参加武将数が120以下の時防御効果1.5倍となる",
+ "categoryLinks": [
+  {
+   "href": "skills-count-def.html",
+   "label": "人数依存(防)スキル一覧を見る"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "coefficient": "8.4",
+   "effect": "槍・弓・砲・器　確率 58% / 防御 8.4%×防御参加武将数(280人)=2352.0%上昇(防御参加武将数120人以下の場合は1.5倍)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": "槍・弓・砲・器　確率 58% / 防御 8.7%×防御参加武将数(280人)=2436.0%上昇(防御参加武将数120人以下の場合は1.5倍)"
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": "槍・弓・砲・器　確率 58% / 防御 9.2%×防御参加武将数(280人)=2576.0%上昇(防御参加武将数120人以下の場合は1.5倍)"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": "槍・弓・砲・器　確率 58% / 防御 9.9%×防御参加武将数(280人)=2772.0%上昇(防御参加武将数120人以下の場合は1.5倍)"
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": "槍・弓・砲・器　確率 58% / 防御 11%×防御参加武将数(280人)=3080.0%上昇(防御参加武将数120人以下の場合は1.5倍)"
+  },
+  {
+   "level": "TR5",
+   "points": "最大鍛錬",
+   "coefficient": "13",
+   "effect": "槍・弓・砲・器　確率 58% / 防御 13%×防御参加武将数(280人)=3640.0%上昇(防御参加武将数120人以下の場合は1.5倍)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "魔導禁鎖",
+   "rank": "S",
+   "afterSkill": "月煌侵蝕",
+   "afterRank": "SSS",
+   "rate": "58%",
+   "target": "槍・弓・砲・器",
+   "effectShort": "防御を係数×人数で上昇(120人以下で1.5倍)",
+   "afterTarget": "全 兵站",
+   "afterRate": "45%",
+   "afterEffectShort": "防御 7.6%×防御参加武将数(280人)=2128.0%"
+  },
+  {
+   "slot": "B",
+   "skill": "魔導禁鎖",
+   "rank": "S",
+   "afterSkill": "月煌侵蝕",
+   "afterRank": "SSS",
+   "rate": "58%",
+   "target": "槍・弓・砲・器",
+   "effectShort": "防御を係数×人数で上昇(120人以下で1.5倍)",
+   "afterTarget": "全 兵站",
+   "afterRate": "45%",
+   "afterEffectShort": "防御 7.6%×防御参加武将数(280人)=2128.0%"
+  },
+  {
+   "slot": "C",
+   "skill": "八幡神ノ威光",
+   "rank": "SSS",
+   "afterSkill": "八幡神ノ威光",
+   "afterRank": "SSS",
+   "rate": "70%",
+   "target": "部隊長",
+   "effectShort": "部隊長の初期スキルを1.25倍模倣"
+  },
+  {
+   "slot": "S1",
+   "skill": "月煌侵蝕",
+   "rank": "SSS",
+   "afterSkill": "月煌侵蝕",
+   "afterRank": "SSS",
+   "rate": "45%",
+   "target": "全 兵站",
+   "effectShort": "防御を係数×人数で上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "永世ノ天隻",
+   "rank": "SS",
+   "afterSkill": "永世ノ天隻",
+   "afterRank": "SS",
+   "rate": "48%",
+   "target": "全 飛翔9",
+   "effectShort": "防御を係数×人数で上昇+飛翔9"
+  }
+ ],
+ "notes": [
+  "カード画像照合済み: 槍S/弓S/馬A/器A",
+  "ixanary.com生HTML照合(2026-08-02): カード画像のスキル欄にLV10とTR5(鍛錬)の2枠のみ表示されており、TR1〜TR4は実在しない。",
+  "45do.info(ordinary/0314)生HTML照合+ameameixa.com(post-12334「29章天武将スキル一覧」表のNo.1279行)の両ソースでA/B/C/S1/S2の並びが一致確認済み。A/Bは自身の初期スキル(魔導禁鎖)がそのまま候補になる自己参照枠。"
+ ]
+}

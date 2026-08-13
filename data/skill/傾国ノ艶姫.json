@@ -1,0 +1,42 @@
+{
+ "name": "傾国ノ艶姫",
+ "rank": "S",
+ "baseRate": 60,
+ "target": "部隊長",
+ "effectSummary": "S/LV10 確率：+60% / 対象 部隊長 所属部隊の部隊長が持つ模倣可能な初期スキルを模倣する 卓越 ：追加確率30%で通常攻撃/防御効果を1.2倍して模倣する",
+ "categoryLinks": [
+  {
+   "href": "skills-takuetsu.html",
+   "label": "卓越スキル一覧を見る"
+  }
+ ],
+ "sourceCharacters": [
+  {
+   "name": "帰蝶",
+   "no": "2592",
+   "slot": "C",
+   "db": "kyoku"
+  },
+  {
+   "name": "高荷恵",
+   "no": "2610",
+   "slot": "B",
+   "db": "kyoku"
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "摩利支天ノ法",
+  "rank": "SSS"
+ },
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "部隊長　確率 60% / 所属部隊の部隊長が持つ模倣可能な初期スキルを模倣する 卓越 追加確率30%で通常攻撃/防御効果を1.2倍して模倣する"
+  }
+ ],
+ "notes": [
+  "2026-08-12作成。合成候補に出てくるS以上はページを作る規約(A-3)の未処理分。",
+  "ixanary.com/skills/傾国ノ艶姫 から取得。categoryLinksは9項目の判定が要るため付けていない。"
+ ]
+}

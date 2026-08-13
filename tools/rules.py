@@ -198,11 +198,17 @@ def known_checks():
     """監査が実際に出しうるチェック種別の名前。
 
     「監査に足した」と書いたときに、その種別が本当に存在するかを照合するために使う。
+
+    S-4 / T-5 / Y-6(2026-08-13 第5回、3体が指摘): ここは正規表現だった。
+    `lock.check_names()` は同じ穴を塞いで構文木から取るようにしたのに、
+    **こちらは直っていなかった**。コメントや docstring に `add("架空の種別")` と
+    1行書くだけで、違反ログの「足した(架空の種別)」が実在照合を通った。
+    錠前と同じ AST の実装を使う(2つ持たない)。
     """
-    names = set(re.findall(r'add\("([^"]+)"', _read(os.path.join(ROOT, "tools",
-                                                                 "audit_characters.py"))))
-    names |= set(re.findall(r'out\.append\(\("([^"]+)"',
-                            _read(os.path.join(ROOT, "tools", "rules.py"))))
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    import lock as L
+    L.ROOT = ROOT
+    names = set(L.check_names())
     # 監査ではなく pre-commit / PreToolUse で止めているものも「機械で見ている」に含める
     names |= TOOL_NAMES
     return names
@@ -213,12 +219,27 @@ def last_inventory():
     return m.group(1) if m else None
 
 
-def problems():
-    """(種別, 深刻度, 本文) のリスト。監査がそのまま指摘として出す。"""
-    out = []
-    ids = rule_ids()
-    n = len(ids)
+def _guard(out, label, fn, *a):
+    """区画ごとに囲って走らせる。
 
+    X-5(2026-08-13 第5回): ここは1本の長い関数だったので、途中で例外が出ると
+    **それ以降の約30種別がまるごと出力から消えた**。
+    `docs/RULES.md` の「最終棚卸し: 2026-99-99」の1行で
+    `datetime.date.fromisoformat` が落ち、違反ログの検査まで全部黙る。
+    区画ごとに囲って、落ちた区画だけを指摘に変える。
+    """
+    try:
+        fn(out, *a)
+    except Exception as e:
+        out.append(("ルール検査が例外で落ちた", "HIGH",
+                    "「%s」の検査が %s: %s で落ちた。"
+                    "この区画の指摘は**一切出ていない**。素材(RULES.md/違反ログ/"
+                    "settings.json/rules.yml)の書式が壊れていないか先に直す"
+                    % (label, type(e).__name__, e)))
+
+
+def _p_ruledoc(out, ids, n):
+    """ルール索引の件数と棚卸しの期限。"""
     # D-5: 索引の件数表記が実数とずれていないか。ずれ=棚卸しがされていない合図。
     for f in ("docs/RULES.md", "docs/RULE-OPERATION.md",
               ".claude/agents/data-writer.md", ".claude/agents/kanshi-yaku.md"):
@@ -242,6 +263,142 @@ def problems():
                         "最終棚卸しが %s(%d日前)。%d日を超えた。"
                         "RULE-OPERATION.md「定期的な棚卸し」を実施する" % (d, age, STALE_DAYS)))
 
+
+def retired_sources():
+    """`docs/RULES.md` が「使わない」と書いている情報源を、索引から読み取る。
+
+    一覧をここに書き写すと、索引を直したときにこちらが古いままになる(それが W-14)。
+    索引を唯一の入口にしたまま機械が読めるように、索引の本文から取る。
+    """
+    out = set()
+    for line in _read(RULES).split("\n"):
+        for m in re.finditer(r"([^|。、]*)は使わない", line):
+            out |= set(re.findall(r"[A-Za-z0-9][A-Za-z0-9.\-]*\."
+                                  r"(?:com|info|net|jp|org)", m.group(1)))
+    return out
+
+
+# 「もう使わない」と分かる書き方。これが同じ行にあれば、注記なので通す。
+_RETIRED_OK = ("使わない", "使用しない", "参照しない", "候補から外", "外れた",
+               "除外", "廃止", "やめ", "旧", "禁止")
+
+
+def _p_sources(out, ids, n):
+    """廃止した情報源が、手順の原文に残っていないか。
+
+    W-14(2026-08-12)そのもの。I-02(情報源の変更)を `docs/RULES.md` にだけ書いて、
+    マニュアル13箇所・エージェント定義5箇所が旧ソースを指したままだった。
+    「索引を直したが原文を直していない」を機械で見る。
+
+    対象は**手順**だけ。ファイル名に日付が入っているものは、その日の作業記録なので
+    当時の記述のままでよい(過去の記録まで書き換えるほうが害が大きい)。
+    """
+    dead = retired_sources()
+    if not dead:
+        return
+    targets = []
+    for rel in ("docs", ".claude/agents"):
+        d = os.path.join(ROOT, rel.replace("/", os.sep))
+        for name in sorted(os.listdir(d)) if os.path.isdir(d) else []:
+            if not name.endswith(".md"):
+                continue
+            if re.search(r"\d{4}-\d{2}-\d{2}", name):   # その日の作業記録
+                continue
+            targets.append(rel + "/" + name)
+    for rel in targets:
+        for i, line in enumerate(_read(os.path.join(ROOT, *rel.split("/")))
+                                 .split("\n"), 1):
+            hit = sorted(s for s in dead if s in line)
+            if not hit or any(w in line for w in _RETIRED_OK):
+                continue
+            out.append(("廃止した情報源が手順に残っている", "HIGH",
+                        "%s:%d が %s を指したまま。索引(I-02)を直したときに"
+                        "原文を直し忘れている。使わないなら、その行にそう書く"
+                        % (rel, i, "/".join(hit))))
+
+
+def _p_redteam(out, ids, n):
+    """レッドチームの回が、開きっぱなし/閉じ損ねになっていないか(R-02/R-03)。
+
+    `docs/redteam-log.txt` は追記だけの記録。START に対応する END が無ければ、
+    回が閉じられていない = 本物が無傷だったことを誰も確かめていない。
+    """
+    # 記録そのものが消えた場合は錠前の PRESENT が「必須ファイルが消えた」で拾う。
+    # ここで別種別を作ると、注入ケースを置けない(消す注入ができない)種別が増える。
+    p = os.path.join(ROOT, "docs", "redteam-log.txt")
+    # BD-2(第6回): この記録は錠前の PRESENT(存在するか)だけで、**中身は誰も
+    # 守っていなかった**。_p_redteam の唯一の入力なので、行を消せば HIGH も MID も
+    # 消えた。「ABORT の痕跡は永久に残る」は成立していなかった。
+    # 追記しかしないファイルなので、コミット済みの内容が先頭に残っているかを見る。
+    import subprocess as _sp
+    r = _sp.run(["git", "show", "HEAD:docs/redteam-log.txt"], cwd=ROOT,
+                capture_output=True, text=True, encoding="utf-8")
+    if not r.returncode:
+        cur = _read(p).replace("\r\n", "\n")
+        if not cur.startswith((r.stdout or "").replace("\r\n", "\n")):
+            out.append(("レッドチームの記録が書き換えられた", "HIGH",
+                        "docs/redteam-log.txt は追記だけの記録なのに、"
+                        "コミット済みの過去行が変わっている。"
+                        "回の開閉・中断の履歴を消した疑い(R-02/R-03)"))
+    opened, failed = None, []
+    aborted, closed = [], set()
+    for line in _read(p).split("\n"):
+        if line.startswith("#") or not line.strip():
+            continue
+        kind = line.split("\t")[0]
+        if kind == "START":
+            opened = line
+        elif kind == "END":
+            # BD-3(第6回): ここで failed も空にしていたので、本物を触って
+            # END-FAILED が出ても、ツリーを戻して**次の回を普通に閉じるだけ**で
+            # 「レッドチームが本物を触った」の HIGH が消えた。記録を触る必要すら
+            # 無かった。END では消さない。消せるのは理由つきの ABORT だけ。
+            opened = None
+        elif kind == "ABORT":
+            # 出口はあるが、痕跡は永久に残る。
+            # 直前に END-FAILED(本物を触った)があったかも一緒に残す。
+            aborted.append((line, len(failed)))
+            opened, failed = None, []
+        elif kind == "ABORT-CLOSED":
+            # 2026-08-13: 以前はここが無く、一度でも中断すると CI が**永久に赤**
+            # だった。永久に赤いCIは見なくなるので、いちばん危ない状態になる。
+            # 記録を消せるようにするのではなく、「こう始末した」を**足せる**ように
+            # した。ABORT の行はそのまま残り、その下に ABORT-CLOSED が並ぶ。
+            # 追記専用・digestで連結・錠前で保護なので無かったことにはできない。
+            closed.add(line.split("\t")[2] if len(line.split("\t")) > 2 else "")
+        elif kind == "END-FAILED":
+            failed.append(line)
+    for line in failed:
+        out.append(("レッドチームが本物を触った", "HIGH",
+                    "回を閉じようとして差分が出ている: %s。"
+                    "その回の指摘は無効。違反ログに「重」で記録して回をやり直す"
+                    % line[:100]))
+    # 実在しない中断に「始末をつけた」と書いてある = 記録の捏造か書式の壊れ。
+    # 始末の記録は指摘を消す力があるので、宛先が実在することは機械で確かめる。
+    for stamp in sorted(closed - set(l.split("\t")[1] for l, _ in aborted
+                                     if len(l.split("\t")) > 1)):
+        out.append(("レッドチームの始末の記録が宙に浮いている", "HIGH",
+                    "%s の ABORT-CLOSED に対応する ABORT が記録に無い。"
+                    "始末の記録は中断の指摘を消すので、宛先が実在しないものは通さない"
+                    % (stamp or "(時刻なし)")))
+    for line, nfail in aborted:
+        c = line.split("\t")
+        if len(c) > 1 and c[1] in closed:
+            continue        # 始末の記録がある(ABORTの行自体は消えていない)
+        out.append(("レッドチームの回を中断した", "MID",
+                    "%s の回「%s」は --abort で抜けた%s: %s"
+                    % (c[1] if len(c) > 1 else "?", c[3] if len(c) > 3 else "?",
+                       "(本物に差分が出たあと)" if nfail else "",
+                       c[4] if len(c) > 4 else "(理由なし)")))
+    if opened:
+        out.append(("レッドチームの回が閉じていない", "HIGH",
+                    "%s に開いた回が閉じられていない。"
+                    "python tools/redteam.py --end で本物が無傷か確かめる"
+                    % opened.split("\t")[1] if "\t" in opened else opened[:60]))
+
+
+def _p_settings(out, ids, n):
+    """門番を起動する設定(.claude/settings.json)そのもの。"""
     # G-9/H-9/F-8(第3回): 門番を起動する設定そのものが、どの検査の対象でもなかった。
     # `.claude/settings.json` の hooks を消す、CIのトリガを1行変える、
     # ワークフローを消す、のどれも指摘0件で通った。中身を見る。
@@ -289,7 +446,62 @@ def problems():
                     out.append(("PreToolUseがBashだけ", "MID",
                                 "matcher に PowerShell が入っていない。ツールを変えるだけで"
                                 "T-01フックを素通りできる(第3回 F-9/G-12/I-11)"))
+            # T-4 / V-4 / AA-6(第5回): matcher が Bash 系だけだったので、
+            # **Write / Edit は一切見張られていなかった**。コマンドを実行せずに
+            # `.git/hooks/pre-commit` を書き換えれば門番を無力化できた。
+            wmats = " ".join(g.get("matcher") or "" for g in groups
+                             for h in (g.get("hooks") or [])
+                             if "no_git_internal_write.py" in (h.get("command") or ""))
+            if not wmats:
+                out.append((".git直接書き換えの見張りが消えた", "HIGH",
+                            ".claude/settings.json の hooks.PreToolUse に "
+                            "no_git_internal_write.py の登録が無い。"
+                            "Write/Edit で .git/hooks を上書きすれば門番を消せる"))
+            elif "Write" not in wmats or "Edit" not in wmats:
+                out.append((".git直接書き換えの見張りが消えた", "HIGH",
+                            "no_git_internal_write.py の matcher が %r。"
+                            "Write と Edit の両方を含める必要がある" % wmats))
+            # R-04: レッドチームの回の見張り。回が開いている間だけ効くので、
+            # 配線が外れていても普段は何も起きない = 気づけない。配線自体を見る。
+            rmats = " ".join(g.get("matcher") or "" for g in groups
+                             for h in (g.get("hooks") or [])
+                             if "no_redteam_write.py" in (h.get("command") or ""))
+            need = ("Bash", "Write", "Edit")
+            if not rmats:
+                out.append(("レッドチームの見張りが消えた", "HIGH",
+                            ".claude/settings.json の hooks.PreToolUse に "
+                            "no_redteam_write.py の登録が無い。攻撃側が本物の"
+                            "作業ツリーを触れてしまう(R-04)"))
+            elif any(x not in rmats for x in need):
+                out.append(("レッドチームの見張りが消えた", "HIGH",
+                            "no_redteam_write.py の matcher が %r。"
+                            "%s を全部含める必要がある" % (rmats, "/".join(need))))
 
+    # AA-5(第5回): `.claude/settings.local.json` は誰も見ていなかった。
+    # 個人設定は後勝ちなので、ここに hooks を書けば共有側の門番を丸ごと上書きできる。
+    # gitignore 済み=共有されない=**差分にも出ない**ので、いちばん痕跡が残らない。
+    lp = os.path.join(ROOT, ".claude", "settings.local.json")
+    if os.path.exists(lp):
+        try:
+            import json as _json
+            loc = _json.loads(_read(lp) or "{}")
+        except Exception as e:
+            out.append(("個人設定が壊れている", "MID",
+                        ".claude/settings.local.json をJSONとして読めない: %s" % e))
+            loc = {}
+        if loc.get("hooks"):
+            out.append(("個人設定が門番を上書きしている", "HIGH",
+                        ".claude/settings.local.json に hooks がある。"
+                        "個人設定は後勝ちなので、共有側の PreToolUse を無効化できる。"
+                        "フックの定義は .claude/settings.json だけに置く"))
+        for key in ("disableAllHooks", "disableBypassPermissionsMode"):
+            if key in loc:
+                out.append(("個人設定が門番を上書きしている", "HIGH",
+                            ".claude/settings.local.json に %s がある" % key))
+
+
+def _p_ci(out, ids, n):
+    """CI のワークフローが本当に落ちる作りか。"""
     # P-1(2026-08-13 第4回): ここも部分文字列だったので、各ステップに `|| true` を
     # 足すだけでCIが全部緑のまま無言化できた(文字列は壊れず continue-on-error でもない)。
     # しかも自己テストの「CIを赤でも通るようにする」という回避ケース自体が回避された。
@@ -327,6 +539,9 @@ def problems():
                 out.append(("CIが失敗しても止まらない", "HIGH",
                             "rules.yml %d行目のステップが常にスキップされる" % i))
 
+
+def _p_violations(out, ids, n):
+    """違反ログの中身。"""
     all_rows = violations()
     if not all_rows and os.path.exists(VIOL):
         out.append(("違反ログを読めない", "HIGH",
@@ -390,13 +605,19 @@ def problems():
                 # pre-commit がそのルールを本当に見ているかは誰も検査していない。
                 # 門番名を書くときは、それが何を止めるのかの説明を併記させる。
                 bare_tool = [x for x in named if x in TOOL_NAMES]
-                if bare_tool and len(named) == len(bare_tool) \
-                        and r["id"] not in gate_rule_ids():
+                # Y-1 / T-1 / W-3(2026-08-13 第5回、3体が指摘):
+                # `len(named) == len(bare_tool)` だったので、**無関係な監査種別を
+                # 1語併記するだけ**で照合が丸ごとスキップされた。
+                # 現に自分で書いた W-14 の行がその形になっていた
+                # (「ルール件数の表記ずれ」は「原文18箇所を直さなかった」と無関係)。
+                # 併記は免罪符にしない。門番名を書いた時点で筋書きを要求する。
+                if bare_tool and r["id"] not in gate_rule_ids():
                     out.append(("門番名だけで済ませている", "HIGH",
                                 "%s %s: 「%s」だけでは、その門番がこのルールを"
                                 "本当に見ているか誰も確かめられない。"
                                 "tools/gate_selftest.py に %s の筋書きを足して"
-                                "止まることを示すか、監査の種別名を併記する"
+                                "止まることを示す(監査の種別名の併記では免除しない。"
+                                "第5回 Y-1: 無関係な種別を1語足すだけで外せた)"
                                 % (r["date"], r["id"], "/".join(bare_tool), r["id"])))
                 audit_cats = {x for x in named if x in checks and x not in TOOL_NAMES}
                 unproven = sorted(audit_cats - cov)
@@ -440,6 +661,25 @@ def problems():
                     % (len(open_), "/".join(r["id"] for r in open_))))
     return out
 
+
+def problems():
+    """(種別, 深刻度, 本文) のリスト。監査がそのまま指摘として出す。"""
+    out = []
+    try:
+        ids = rule_ids()
+    except Exception as e:
+        out.append(("ルール検査が例外で落ちた", "HIGH",
+                    "ルール索引を読めない: %s: %s" % (type(e).__name__, e)))
+        return out
+    n = len(ids)
+    for label, fn in (("ルール索引と棚卸し", _p_ruledoc),
+                      ("廃止した情報源", _p_sources),
+                      ("レッドチームの回", _p_redteam),
+                      ("PreToolUseの設定", _p_settings),
+                      ("CIのワークフロー", _p_ci),
+                      ("違反ログ", _p_violations)):
+        _guard(out, label, fn, ids, n)
+    return out
 
 if __name__ == "__main__":
     sys.stdout.reconfigure(encoding="utf-8")

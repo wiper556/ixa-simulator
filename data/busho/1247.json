@@ -1,0 +1,105 @@
+{
+ "name": "立花道雪",
+ "no": "1247",
+ "ch": "26章",
+ "cost": 3.5,
+ "troop": "槍弓器攻",
+ "sub": "",
+ "effect": "飛翔を持たない防御参加武将数依存で攻撃上昇",
+ "furigana": "たちばなどうせつ",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1247_full.png",
+ "imageChar": "assets/img/characters/no1247_char.png",
+ "atkBase": 1250,
+ "atkGrowth": 75,
+ "defBase": 1010,
+ "defGrowth": 25,
+ "tacticsBase": 650,
+ "tacticsGrowth": 3,
+ "lv0Troops": 4260,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "S",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "鎮西ノ雷神",
+ "skillDetail": "S/LV10 確率 60% 攻撃300%上昇/対象:槍・弓・器・焙\n①攻撃300%上昇する\n②飛翔を持たない防御参加武将数×6%を攻撃効果に加算する",
+ "categoryLinks": [
+  {
+   "href": "skills-count-atk.html",
+   "label": "人数依存(攻)スキル一覧を見る"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・弓・器・焙　確率 60% / 攻撃 300%上昇(飛翔なし防御参加武将数×6%加算)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "鎮西ノ雷神",
+   "rank": "S",
+   "afterSkill": "八幡神ノ威光",
+   "afterRank": "SSS",
+   "rate": "60%",
+   "target": "槍・弓・器・焙",
+   "effectShort": "攻撃300%上昇(飛翔なし防御参加武将数×6%加算)",
+   "afterTarget": "部隊長",
+   "afterRate": "70%",
+   "afterEffectShort": "模倣倍率1.25倍"
+  },
+  {
+   "slot": "B",
+   "skill": "鎮西ノ雷神",
+   "rank": "S",
+   "afterSkill": "八幡神ノ威光",
+   "afterRank": "SSS",
+   "rate": "60%",
+   "target": "槍・弓・器・焙",
+   "effectShort": "攻撃300%上昇(飛翔なし防御参加武将数×6%加算)",
+   "afterTarget": "部隊長",
+   "afterRate": "70%",
+   "afterEffectShort": "模倣倍率1.25倍"
+  },
+  {
+   "slot": "C",
+   "skill": "十束ノ神域",
+   "rank": "SS",
+   "afterSkill": "天聖宝冠",
+   "afterRank": "SSS",
+   "rate": "100%",
+   "target": "全 覇道",
+   "effectShort": "攻撃320%上昇+速度70%上昇+覇道を持つため所属部隊の武将のスキルを無効化・発動率低下から保護",
+   "afterTarget": "全",
+   "afterRate": "45%",
+   "afterEffectShort": "攻撃 100%+5%×防御参加武将数(280人)=1500.0%"
+  },
+  {
+   "slot": "S1",
+   "skill": "八幡神ノ威光",
+   "rank": "SSS",
+   "afterSkill": "八幡神ノ威光",
+   "afterRank": "SSS",
+   "rate": "70%",
+   "target": "部隊長",
+   "effectShort": "所属部隊の部隊長が持つ模倣可能な初期スキルを通常攻撃/防御効果1.25倍にして模倣する"
+  },
+  {
+   "slot": "S2",
+   "skill": "神屋楯比売命",
+   "rank": "SS",
+   "afterSkill": "神屋楯比売命",
+   "afterRank": "SS",
+   "rate": "70%",
+   "target": "自身",
+   "effectShort": "自身が持つ初期スキルを模倣する(戦闘スキルのみ)"
+  }
+ ],
+ "notes": [
+  "synthesisTable: 45do.info生HTML(skiladd_wrap)+ixanary.com(鎮西ノ雷神スキルページの合成テーブル)で2ソース一致確認済み(2026-08-02)"
+ ]
+}

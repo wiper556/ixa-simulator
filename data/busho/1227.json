@@ -1,0 +1,99 @@
+{
+ "name": "真田幸村【覇】",
+ "no": "1227",
+ "ch": "25章",
+ "cost": 5,
+ "troop": "全防",
+ "sub": "兵站",
+ "effect": "防御時、部隊内で武将コストが影響するときこの武将のコストを+1で計算",
+ "furigana": "さなだゆきむら",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1227_full.png",
+ "imageChar": "assets/img/characters/no1227_char.png",
+ "atkBase": 1250,
+ "atkGrowth": 56,
+ "defBase": 1280,
+ "defGrowth": 72,
+ "tacticsBase": 740,
+ "tacticsGrowth": 3.5,
+ "lv0Troops": 4750,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "S",
+  "ki": "S"
+ },
+ "initialSkill": "紅蓮ノ闘神",
+ "skillDetail": "SSS/LV10 確率 60% 防御255%上昇/対象:全　兵站\n①防御255%上昇する\n②部隊内で武将コストが武将スキルに影響するとき防御効果部分のみこの武将のコストを+1で計算する(特殊効果は部隊内重複不可・TR1〜TR5は未確認)",
+ "categoryLinks": [
+  {
+   "href": "skills-heitan.html",
+   "label": "兵站スキル一覧を見る"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全 兵站　確率 60% / 防御 255%上昇(コスト+1計算)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "建御雷神ノ閃光",
+   "rank": "SS",
+   "afterSkill": "八幡神ノ威光",
+   "afterRank": "SSS",
+   "rate": "100%",
+   "target": "全 飛翔5",
+   "effectShort": "攻撃210%上昇+防御210%上昇+卓越確率+35%(模倣不可)",
+   "afterTarget": "部隊長",
+   "afterRate": "70%",
+   "afterEffectShort": "模倣倍率1.25倍"
+  },
+  {
+   "slot": "B",
+   "skill": "四天轟雷",
+   "rank": "SS",
+   "afterSkill": "四天轟雷",
+   "afterRank": "SS",
+   "rate": "100%",
+   "target": "全",
+   "effectShort": "攻撃360%上昇+防御360%上昇(部隊内初期スキルに砲・器対象追加)"
+  },
+  {
+   "slot": "C",
+   "skill": "八幡神ノ威光",
+   "rank": "SSS",
+   "afterSkill": "八幡神ノ威光",
+   "afterRank": "SSS",
+   "rate": "70%",
+   "target": "部隊長",
+   "effectShort": "部隊長の初期スキルを1.25倍模倣"
+  },
+  {
+   "slot": "S1",
+   "skill": "旌旗翳天ノ覇陣",
+   "rank": "SS",
+   "afterSkill": "旌旗翳天ノ覇陣",
+   "afterRank": "SS",
+   "rate": "54%",
+   "target": "全 兵站",
+   "effectShort": "防御90.11%上昇(部隊総コスト依存)"
+  },
+  {
+   "slot": "S2",
+   "skill": "国津破邪ノ楯",
+   "rank": "SS",
+   "afterSkill": "国津破邪ノ楯",
+   "afterRank": "SS",
+   "rate": "60%",
+   "target": "全",
+   "effectShort": "防御60.04%上昇(部隊総コスト依存)"
+  }
+ ],
+ "notes": [
+  "45do.info(生HTML skiladd_wrap)+ameameixa.com(スキルテーブル)の2ソース照合済み、両者一致"
+ ]
+}

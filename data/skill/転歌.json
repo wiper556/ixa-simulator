@@ -1,0 +1,60 @@
+{
+ "name": "転歌",
+ "rank": "A",
+ "baseRate": 80,
+ "target": "部隊長",
+ "effectSummary": "A/LV10 確率 80% 対象:部隊長\n①所属部隊の部隊長が持つ初期スキルを模倣する(戦闘スキルのみ)",
+ "categoryLinks": [
+  {
+   "href": "skills-leadermimic.html",
+   "label": "部隊長模倣スキル一覧を見る"
+  }
+ ],
+ "sourceCharacters": [
+  {
+   "name": "今川氏真",
+   "no": "2358",
+   "slot": "A・B",
+   "db": "kyoku"
+  },
+  {
+   "name": "斎藤利三",
+   "no": "2376",
+   "slot": "C",
+   "db": "kyoku"
+  },
+  {
+   "name": "相楽左之助",
+   "no": "2609",
+   "slot": "B",
+   "db": "kyoku"
+  },
+  {
+   "name": "北条幻庵",
+   "no": "7005",
+   "slot": "S1",
+   "db": "kyoku"
+  },
+  {
+   "name": "早川殿",
+   "no": "7016",
+   "slot": "B",
+   "db": "kyoku"
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "入来神舞",
+  "rank": "S"
+ },
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "部隊長　確率 80% / 効果 部隊長の初期スキルを模倣(戦闘スキルのみ、TR別データは未確認)"
+  }
+ ],
+ "notes": [
+  "ユーザー明示依頼によりA/Bランクだが新規作成。ixanary.com(/skills/転歌/)生HTML確認(確率LV1+25%→LV10+80%/対象部隊長/戦闘スキルのみ模倣・倍率補正なし)+attack-simulator.htmlのspecialSkills記載と一致。",
+  "今川氏真(No.2358)の固有スキル。characters-kyoku.html synthesisTableでA/Bスロットに自己参照で掲載(45do.info+ixagno.blog.fc2.com blog-entry-9417確認済み)、斎藤利三(No.2376)のCスロットにも掲載(blog-entry-9905確認済み)。"
+ ]
+}

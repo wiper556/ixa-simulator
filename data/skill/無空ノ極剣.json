@@ -1,0 +1,64 @@
+{
+ "name": "無空ノ極剣",
+ "rank": "S",
+ "baseRate": 100,
+ "target": "全",
+ "noMimic": true,
+ "effectSummary": "S/LV10 確率 100% 攻撃470%上昇/対象:全\n模倣不可\n①攻撃470%上昇する\n②防御470%上昇する\n③自軍内の職業「剣豪」である全武将スキルの卓越確率に30%を加算する(特殊効果の重複上限6)",
+ "categoryLinks": [
+  {
+   "href": "skills-takuetsu.html",
+   "label": "卓越スキル一覧を見る"
+  }
+ ],
+ "sourceCharacters": [
+  {
+   "name": "宮本二天",
+   "no": "2590",
+   "slot": "移植不可",
+   "db": "kyoku"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 攻撃 470%上昇+防御 470%上昇(自軍内の剣豪全武将スキルの卓越確率+30%・重複上限6・模倣不可)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": null
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": null
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": null
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": null
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": null
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": null
+  }
+ ],
+ "notes": [
+  "2026-08-12一括作成。S以上の初期スキルは無条件でページを作る規約(A-3-9)の未処理分。",
+  "内容は武将エントリの登録値をそのまま転記している。",
+  "categoryLinksは9項目の判定を1件ずつやる必要があるため意図的に付けていない(付け忘れではない)。"
+ ]
+}

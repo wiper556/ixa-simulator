@@ -1,0 +1,106 @@
+{
+ "name": "本願寺顕如（2）",
+ "no": "1246",
+ "ch": "26章",
+ "cost": 4.5,
+ "troop": "槍馬砲器防",
+ "sub": "",
+ "effect": "防御上昇／防御戦闘時敵軍の卓越追加確率を低下",
+ "furigana": "ほんがんじけんにょ",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1246_full.png",
+ "imageChar": "assets/img/characters/no1246_char.png",
+ "atkBase": 1080,
+ "atkGrowth": 46,
+ "defBase": 1230,
+ "defGrowth": 65,
+ "tacticsBase": 680,
+ "tacticsGrowth": 3.5,
+ "lv0Troops": 4750,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "S",
+  "ki": "A"
+ },
+ "initialSkill": "法威燦煌",
+ "skillDetail": "S/LV10 確率 55% 防御440%上昇/対象:槍・馬・砲・器\n①防御440%上昇する\n②防御戦闘時敵軍の卓越追加確率を-9%する(自軍内重複上限2)",
+ "categoryLinks": [
+  {
+   "href": "skills-takuetsu.html",
+   "label": "卓越スキル一覧を見る"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・馬・砲・器　確率 55% / 防御 440%上昇(敵軍卓越追加確率-9%・重複上限2)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "法威燦煌",
+   "rank": "S",
+   "afterSkill": "龍驤虎躍",
+   "afterRank": "SS",
+   "rate": "55%",
+   "target": "槍・馬・砲・器",
+   "effectShort": "防御440%上昇(敵軍卓越追加確率-9%・重複上限2)",
+   "afterTarget": "全",
+   "afterRate": "60%",
+   "afterEffectShort": "攻撃 810%上昇+防御810%上昇(コスト-1)"
+  },
+  {
+   "slot": "B",
+   "skill": "法威燦煌",
+   "rank": "S",
+   "afterSkill": "龍驤虎躍",
+   "afterRank": "SS",
+   "rate": "55%",
+   "target": "槍・馬・砲・器",
+   "effectShort": "防御440%上昇(敵軍卓越追加確率-9%・重複上限2)",
+   "afterTarget": "全",
+   "afterRate": "60%",
+   "afterEffectShort": "攻撃 810%上昇+防御810%上昇(コスト-1)"
+  },
+  {
+   "slot": "C",
+   "skill": "旌旗翳天ノ覇陣",
+   "rank": "SS",
+   "afterSkill": "旌旗翳天ノ覇陣",
+   "afterRank": "SS",
+   "rate": "54%",
+   "target": "全 兵站",
+   "effectShort": "防御90.11%上昇(部隊の総コストで効果が変化)"
+  },
+  {
+   "slot": "S1",
+   "skill": "龍驤虎躍",
+   "rank": "SS",
+   "afterSkill": "龍驤虎躍",
+   "afterRank": "SS",
+   "rate": "60%",
+   "target": "全",
+   "effectShort": "攻撃810%上昇+防御810%上昇+部隊消費コスト-1(特殊効果は模倣不可)"
+  },
+  {
+   "slot": "S2",
+   "skill": "黄泉醜女ノ屍兵",
+   "rank": "SS",
+   "afterSkill": "天地黎明",
+   "afterRank": "SSS",
+   "rate": "54%",
+   "target": "全",
+   "effectShort": "防御200%上昇+防御戦闘時自部隊内武将が受ける70以下のダメージを最大45に軽減",
+   "afterTarget": "全",
+   "afterRate": "70%",
+   "afterEffectShort": "防御 270%上昇(HP99以下で3倍)"
+  }
+ ],
+ "notes": [
+  "カード画像照合済み(2026-07-30): 兵法初期値は680.0(旧データ660.0は誤り)",
+  "synthesisTable: 45do.info生HTML(skiladd_wrap)+ixanary.com(法威燦煌スキルページの合成テーブル)で2ソース一致確認済み(2026-08-02)"
+ ]
+}

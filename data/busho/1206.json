@@ -1,0 +1,103 @@
+{
+ "name": "長尾景虎(1206)",
+ "no": "1206",
+ "ch": "23章",
+ "cost": 4.5,
+ "troop": "槍砲器攻",
+ "sub": "飛翔4",
+ "effect": "4部隊以下の攻撃で効果2倍",
+ "furigana": "ながおかげとら",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1206_full.png",
+ "imageChar": "assets/img/characters/no1206_char.png",
+ "atkBase": 1170,
+ "atkGrowth": 59,
+ "defBase": 1060,
+ "defGrowth": 34,
+ "tacticsBase": 640,
+ "tacticsGrowth": 3,
+ "lv0Troops": 4680,
+ "rankGrades": {
+  "yari": "SS",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "氷神懸龍",
+ "skillDetail": "S/LV10 確率 100% 攻撃88%上昇/対象:槍・砲・器　飛翔4\n①攻撃88%上昇する(4部隊以下の攻撃で効果2倍)\n②飛翔4を持つ(敵軍に飛翔を持つ武将が4人未満のとき通常武将ダメージを受けない)",
+ "categoryLinks": [
+  {
+   "href": "skills-hishou-atk.html",
+   "label": "飛翔スキル一覧(攻撃)を見る"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・砲・器 飛翔4　確率 100% / 攻撃 88%上昇(4部隊以下で2倍)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "氷神懸龍",
+   "rank": "S",
+   "afterSkill": "天津日ノ太刀",
+   "afterRank": "SS",
+   "rate": "100%",
+   "target": "槍・砲・器 飛翔4",
+   "effectShort": "攻撃88%上昇(4部隊以下で2倍)+飛翔4",
+   "afterTarget": "全 飛翔4",
+   "afterRate": "57%",
+   "afterEffectShort": "攻撃 184%上昇(卓越追加確率75%・2倍、TR別データは未確認)"
+  },
+  {
+   "slot": "B",
+   "skill": "氷神懸龍",
+   "rank": "S",
+   "afterSkill": "天津日ノ太刀",
+   "afterRank": "SS",
+   "rate": "100%",
+   "target": "槍・砲・器 飛翔4",
+   "effectShort": "攻撃88%上昇(4部隊以下で2倍)+飛翔4",
+   "afterTarget": "全 飛翔4",
+   "afterRate": "57%",
+   "afterEffectShort": "攻撃 184%上昇(卓越追加確率75%・2倍、TR別データは未確認)"
+  },
+  {
+   "slot": "C",
+   "skill": "火之迦具土神",
+   "rank": "SS",
+   "afterSkill": "火之迦具土神",
+   "afterRank": "SS",
+   "rate": "100%",
+   "target": "槍・馬・砲",
+   "effectShort": "攻撃160%上昇(卓越追加確率25%で3倍)"
+  },
+  {
+   "slot": "S1",
+   "skill": "天津日ノ太刀",
+   "rank": "SS",
+   "afterSkill": "天津日ノ太刀",
+   "afterRank": "SS",
+   "rate": "57%",
+   "target": "全 飛翔4",
+   "effectShort": "攻撃184%上昇(卓越追加確率75%で2倍)"
+  },
+  {
+   "slot": "S2",
+   "skill": "破軍星 皇",
+   "rank": "SS",
+   "afterSkill": "破軍星 皇",
+   "afterRank": "SS",
+   "rate": "69%",
+   "target": "全",
+   "effectShort": "攻撃140%上昇(自部隊同時攻撃時コスト最大0.5除外・模倣不可)"
+  }
+ ],
+ "notes": [
+  "カード画像照合済み(2026-08-02): 槍SS/弓A/馬A/器A",
+  "45do.info(ordinary/0069)生HTML + ameameixa.com(bushocard-1206)生HTML の2ソースで完全一致を確認(2026-08-02)"
+ ]
+}

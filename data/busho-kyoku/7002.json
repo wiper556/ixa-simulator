@@ -1,0 +1,86 @@
+{
+ "name": "平塚為広",
+ "no": "7002",
+ "illustrator": "SQUARE ENIX",
+ "ch": "未確認",
+ "cost": 4,
+ "troop": "槍砲器攻",
+ "sub": "",
+ "effect": "卓越でのみ発動/攻撃440%上昇+飛翔14",
+ "furigana": "ひらつかためひろ",
+ "imageFull": "assets/img/characters/no7002_full.png",
+ "imageChar": "assets/img/characters/no7002_char.png",
+ "atkBase": 1140,
+ "atkGrowth": 46,
+ "defBase": 1060,
+ "defGrowth": 37,
+ "tacticsBase": 530,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 4010,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "B",
+  "ki": "A"
+ },
+ "initialSkill": "訣歌天響",
+ "skillDetail": "A/LV10 攻撃440%上昇/対象:槍・砲・器 飛翔14\n①通常確率では発動しない\n②卓越の追加確率50%で発動し攻撃440%上昇しかつ飛翔14を得る(攻撃戦闘時のみ発動・二重卓越不可・飛翔獲得部分は模倣不可)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・砲・器 飛翔14　卓越追加確率 50% / 攻撃 440%上昇(通常確率では発動せず)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "覇軍ノ勇士",
+   "rank": "A",
+   "afterSkill": "戦陣 神楽",
+   "afterRank": "A",
+   "afterTarget": "全 飛翔4",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 77%上昇(卓越:追加確率30%で2倍)"
+  },
+  {
+   "slot": "B",
+   "skill": "戦陣 剣舞",
+   "rank": "A",
+   "afterSkill": "仙剣破斬",
+   "afterRank": "SSS",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃115%上昇+防御115%上昇(卓越で4倍)"
+  },
+  {
+   "slot": "C",
+   "skill": "訣歌天響",
+   "rank": "A",
+   "afterSkill": "訣歌天響",
+   "afterRank": "A"
+  },
+  {
+   "slot": "S1",
+   "skill": "訣歌天響",
+   "rank": "A",
+   "afterSkill": "訣歌天響",
+   "afterRank": "A"
+  },
+  {
+   "slot": "S2",
+   "skill": "志半ノ矛楯",
+   "rank": "A",
+   "afterSkill": "志半ノ矛楯",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "+65%",
+   "effectShort": "攻撃465%上昇+防御465%上昇(模倣不可)"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/7002 と skills/訣歌天響 の生HTML)で確認(2026-08-08)。",
+  "合成テーブルはスキルページの1次(=移植前)・2次(=移植後)から取得。",
+  "候補スキルの対象・確率・効果はサイト内の既存登録から転記(未登録のスキルは空のまま)。"
+ ]
+}

@@ -1,0 +1,37 @@
+{
+ "name": "氷瀑ノ封印",
+ "rank": "S",
+ "baseRate": 25,
+ "target": "全",
+ "noMimic": true,
+ "effectSummary": "S/LV10 確率：+25% / 対象 全 防御：90%上昇 攻撃部隊の武将が持つ特殊効果付き初期スキルを全て無効化(模倣不可)",
+ "sourceCharacters": [
+  {
+   "name": "延沢満延",
+   "no": "2456",
+   "slot": "S2",
+   "db": "kyoku"
+  },
+  {
+   "name": "甲斐宗運",
+   "no": "2459",
+   "slot": "S2",
+   "db": "kyoku"
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "氷瀑ノ封神",
+  "rank": "SSS"
+ },
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 25% / 防御90%上昇 攻撃部隊の武将が持つ特殊効果付き初期スキルを全て無効化(模倣不可)"
+  }
+ ],
+ "notes": [
+  "2026-08-12作成。合成候補に出てくるS以上はページを作る規約(A-3)の未処理分。",
+  "ixanary.com/skills/氷瀑ノ封印 から取得。categoryLinksは9項目の判定が要るため付けていない。"
+ ]
+}

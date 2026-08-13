@@ -1,0 +1,155 @@
+{
+ "name": "細川ガラシャ",
+ "no": "2599",
+ "ch": "未確認",
+ "cost": 5,
+ "troop": "部隊長特",
+ "sub": "",
+ "effect": "部隊長の初期スキルを模倣(卓越30%で1.15倍)+帰還時間2分超なら2分で帰還",
+ "furigana": "ほそかわがらしゃ",
+ "illustrator": "藤島康介",
+ "imageFull": "assets/img/characters/no2599_full.png",
+ "imageChar": "assets/img/characters/no2599_char.png",
+ "atkBase": 1140,
+ "atkGrowth": 57,
+ "defBase": 1140,
+ "defGrowth": 57,
+ "tacticsBase": 560,
+ "tacticsGrowth": 3,
+ "lv0Troops": 4770,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "潔花咲然",
+ "skillDetail": "S/LV10 確率 45% 部隊長の初期スキルを模倣/対象:部隊長　卓越\n①所属部隊の部隊長が持つ模倣可能な初期スキルを模倣する\n②卓越:追加確率30%で通常攻撃/防御効果を1.15倍して模倣する\n③確率+100%で自部隊の帰還時間が2分を超えるとき/2分で帰還できる",
+ "categoryLinks": [
+  {
+   "href": "skills-leadermimic.html",
+   "label": "部隊長模倣スキル一覧を見る"
+  },
+  {
+   "href": "skills-takuetsu.html",
+   "label": "卓越スキル一覧を見る"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "部隊長　確率 45% / 部隊長の模倣可能な初期スキルを模倣(卓越:追加確率30%で1.15倍にして模倣・帰還時間2分超なら2分で帰還)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": null
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": null
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": null
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": null
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": null
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": null
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "乱世ノ歸人",
+   "rank": "A",
+   "afterSkill": "入来神舞",
+   "afterRank": "S",
+   "target": "部隊長",
+   "rate": "+50%",
+   "effectShort": "部隊長の初期スキルを模倣(卓越:追加確率30%で1.2倍にして模倣)",
+   "afterTarget": "部隊長",
+   "afterRate": "+55%",
+   "afterEffectShort": "部隊長の初期スキルを1.1倍に強化して模倣(TR別データは未確認)"
+  },
+  {
+   "slot": "B",
+   "skill": "黒飛燕剣",
+   "rank": "S",
+   "afterSkill": "傾国ノ艶姫",
+   "afterRank": "S",
+   "target": "部隊長",
+   "rate": "+50%",
+   "effectShort": "飛翔4+部隊長の初期スキルを模倣(卓越:追加確率50%で1.2倍にして模倣)",
+   "afterTarget": "部隊長",
+   "afterRate": "+60%",
+   "afterEffectShort": "所属部隊の部隊長が持つ模倣可能な初期スキルを模倣する(卓越・追加確率30%で通常攻撃／防御効果を1.2倍して模倣する)"
+  },
+  {
+   "slot": "C",
+   "skill": "潔花咲然",
+   "rank": "S",
+   "afterSkill": "舞蝶朧月",
+   "afterRank": "S",
+   "target": "部隊長",
+   "rate": "+45%",
+   "effectShort": "部隊長の初期スキルを模倣(卓越:追加確率30%で1.15倍にして模倣・帰還2分)",
+   "afterTarget": "部隊長",
+   "afterRate": "+50%",
+   "afterEffectShort": "卓越追加確率20%・1.25倍"
+  },
+  {
+   "slot": "S1",
+   "skill": "舞蝶朧月",
+   "rank": "S",
+   "afterSkill": "月詠ノ覇威",
+   "afterRank": "SS",
+   "target": "部隊長",
+   "rate": "+50%",
+   "effectShort": "部隊長の初期スキルを模倣(卓越:追加確率20%で1.25倍にして模倣)",
+   "afterTarget": "全",
+   "afterRate": "+100%",
+   "afterEffectShort": "攻撃344%上昇+防御344%上昇+自軍全武将全スキルの卓越確率に加算(自軍内重複上限2・模倣不可)"
+  },
+  {
+   "slot": "S2",
+   "skill": "舞蝶朧月",
+   "rank": "S",
+   "afterSkill": "月詠ノ覇威",
+   "afterRank": "SS",
+   "target": "部隊長",
+   "rate": "+50%",
+   "effectShort": "部隊長の初期スキルを模倣(卓越:追加確率20%で1.25倍にして模倣)",
+   "afterTarget": "全",
+   "afterRate": "+100%",
+   "afterEffectShort": "攻撃344%上昇+防御344%上昇+自軍全武将全スキルの卓越確率に加算(自軍内重複上限2・模倣不可)"
+  }
+ ],
+ "notes": [
+  "出典: カード画像(LV1形式: 極・統率 槍A/弓A/馬A/器S拡大確認・初期値1140/1140/560・コスト5・LV1スキル値。",
+  "  天限突破表示のため指揮6970は不採用、ixanaryの★0-0=4770を使用(B-00ルール))",
+  " + ixanary.com/cards/2599(成長+57/+57/+3.0・LV10: 確率+45%/部隊長模倣/卓越30%で1.15倍/帰還2分。絵師 藤島康介)",
+  " + ixawiki BushoCard/2599(統率2次確認・合成テーブル1次/2次候補)。",
+  "統率はカード画像+ixawikiの2ソース一致。初期スキルがSランクのためスキル個別ページの新規作成が必要",
+  "(docsのTODOに記録済み)。",
+  "合成テーブルはixawiki(1次候補+2次候補)",
+  "【2026-08-12 外部照合】合成テーブルはixawiki BushoCard/2599細川ガラシャの候補表と一致している。",
+  " ixanaryのスキル個別ページはS1/S2枠の移植後(サイト=黒飛燕剣 / ixanary2次=月詠ノ覇威)が食い違うが、",
+  " ixawikiは3次候補まで黒飛燕剣→傾国ノ艶姫と一貫しており、帰蝶(No.2592)と同じ食い違い方をしている。",
+  " ixawiki側を採用したまま据え置く(監査ツールがixanary基準で不一致を出すが誤修正しないこと)。"
+ ]
+}

@@ -1,0 +1,96 @@
+{
+ "name": "竹中半兵衛",
+ "no": "1215",
+ "ch": "24章",
+ "cost": 5,
+ "troop": "全防",
+ "sub": "",
+ "effect": "追加スキルの防御・破壊効果を2.5倍にする",
+ "furigana": "たけなかはんべえ",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1215_full.png",
+ "imageChar": "assets/img/characters/no1215_char.png",
+ "atkBase": 1240,
+ "atkGrowth": 52,
+ "defBase": 1270,
+ "defGrowth": 72,
+ "tacticsBase": 800,
+ "tacticsGrowth": 4,
+ "lv0Troops": 4690,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "S",
+  "uma": "S",
+  "ki": "A"
+ },
+ "initialSkill": "天計千年鳳凰",
+ "skillDetail": "SSS/LV10 確率 100% 対象:追加スキル\n模倣不可\n①このスキルを持つ武将カードは追加スキル(追加1/追加2/極限)の防御・破壊効果が2.5倍となる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "追加スキル　確率 100% / 防御・破壊効果 2.5倍"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "神屋楯比売命",
+   "rank": "SS",
+   "afterSkill": "神屋楯比売命",
+   "afterRank": "SS",
+   "rate": "70%",
+   "target": "自身",
+   "effectShort": "初期スキルを模倣(戦闘スキルのみ、1倍)"
+  },
+  {
+   "slot": "B",
+   "skill": "高津姫神",
+   "rank": "SS",
+   "afterSkill": "高津姫神",
+   "afterRank": "SS",
+   "rate": "70%",
+   "target": "自身",
+   "effectShort": "初期スキルを模倣(戦闘スキルのみ、1倍)"
+  },
+  {
+   "slot": "C",
+   "skill": "海神ノ浮船",
+   "rank": "SS",
+   "afterSkill": "海神ノ浮船",
+   "afterRank": "SS",
+   "rate": "48%",
+   "target": "全 飛翔4",
+   "effectShort": "防御3.5%×防御参加武将数上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "黄泉醜女ノ屍兵",
+   "rank": "SS",
+   "afterSkill": "天地黎明",
+   "afterRank": "SSS",
+   "rate": "54%",
+   "target": "全",
+   "effectShort": "防御200%上昇(70以下被ダメージ上限45)",
+   "afterTarget": "全",
+   "afterRate": "70%",
+   "afterEffectShort": "防御 270%上昇(HP99以下で3倍)"
+  },
+  {
+   "slot": "S2",
+   "skill": "建御雷神ノ閃光",
+   "rank": "SS",
+   "afterSkill": "八幡神ノ威光",
+   "afterRank": "SSS",
+   "rate": "100%",
+   "target": "全 飛翔5",
+   "effectShort": "攻撃210%上昇+防御210%上昇+卓越確率+35%(模倣不可)",
+   "afterTarget": "部隊長",
+   "afterRate": "70%",
+   "afterEffectShort": "模倣倍率1.25倍"
+  }
+ ],
+ "notes": [
+  "45do.info(生HTML skiladd_wrap)+ameameixa.com(スキルテーブル)の2ソース照合済み、両者一致(この武将自身の初期スキルは候補に含まれない)"
+ ]
+}

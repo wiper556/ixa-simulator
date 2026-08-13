@@ -1,0 +1,118 @@
+{
+ "name": "世良田二郎三郎",
+ "no": "10065",
+ "furigana": "せらだじろうさぶろう",
+ "illustrator": "SQUARE ENIX",
+ "atkBase": 1270,
+ "atkGrowth": 72,
+ "defBase": 1050,
+ "defGrowth": 40,
+ "tacticsBase": 660,
+ "tacticsGrowth": 3,
+ "lv0Troops": 5100,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "S",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "護国王器",
+ "skillDetail": "S/LV10 確率：+100% / 対象 全 攻撃：620%上昇 / 8部隊以下の攻撃戦闘時このスキルを所持する武将の全スキルの 卓越 追加確率が350%上昇部隊内武将の全スキルの卓越追加確率が30%上昇(模倣不可・特殊効果は自部隊内では重複不可)",
+ "ch": "30章",
+ "cost": 5,
+ "troop": "全攻",
+ "sub": "",
+ "effect": "8部隊以下の攻撃戦闘時、卓越確率上昇",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 攻撃620%上昇 / 8部隊以下の攻撃戦闘時、このスキルを所持する武将の全スキルの 卓越 追加確率が350%上昇、部隊内武将の全スキルの卓越追加確率が30%上昇(模倣不可・特殊効果は自部隊内では重複不可)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": "全　確率 100% / 攻撃710%上昇 / 8部隊以下の攻撃戦闘時、このスキルを所持する武将の全スキルの 卓越 追加確率が360%上昇、部隊内武将の全スキルの卓越追加確率が30%上昇(模倣不可・特殊効果は自部隊内では重複不可)"
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": "全　確率 100% / 攻撃870%上昇 / 8部隊以下の攻撃戦闘時、このスキルを所持する武将の全スキルの 卓越 追加確率が380%上昇、部隊内武将の全スキルの卓越追加確率が32%上昇(模倣不可・特殊効果は自部隊内では重複不可)"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": "全　確率 100% / 攻撃1100%上昇 / 8部隊以下の攻撃戦闘時、このスキルを所持する武将の全スキルの 卓越 追加確率が400%上昇、部隊内武将の全スキルの卓越追加確率が35%上昇(模倣不可・特殊効果は自部隊内では重複不可)"
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": "全　確率 100% / 攻撃1380%上昇 / 8部隊以下の攻撃戦闘時、このスキルを所持する武将の全スキルの 卓越 追加確率が420%上昇、部隊内武将の全スキルの卓越追加確率が40%上昇(模倣不可・特殊効果は自部隊内では重複不可)"
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": "全　確率 100% / 攻撃1730%上昇 / 8部隊以下の攻撃戦闘時、このスキルを所持する武将の全スキルの 卓越 追加確率が450%上昇、部隊内武将の全スキルの卓越追加確率が45%上昇(模倣不可・特殊効果は自部隊内では重複不可)"
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": "全　確率 100% / 攻撃1900%上昇 / 8部隊以下の攻撃戦闘時、このスキルを所持する武将の全スキルの 卓越 追加確率が500%上昇、部隊内武将の全スキルの卓越追加確率が50%上昇(模倣不可・特殊効果は自部隊内では重複不可)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "千里必勝ノ神算",
+   "rank": "SS",
+   "afterSkill": "千里必勝ノ神算",
+   "afterRank": "SS",
+   "target": null,
+   "rate": null,
+   "effectShort": null
+  },
+  {
+   "slot": "B",
+   "skill": "千里必勝ノ神算",
+   "rank": "SS",
+   "afterSkill": "千里必勝ノ神算",
+   "afterRank": "SS",
+   "target": null,
+   "rate": null,
+   "effectShort": null
+  },
+  {
+   "slot": "C",
+   "skill": "幻像鏡花",
+   "rank": "SSS",
+   "afterSkill": "幻像鏡花",
+   "afterRank": "SSS",
+   "target": null,
+   "rate": null,
+   "effectShort": null
+  },
+  {
+   "slot": "S1",
+   "skill": "幻像鏡花",
+   "rank": "SSS",
+   "afterSkill": "幻像鏡花",
+   "afterRank": "SSS",
+   "target": null,
+   "rate": null,
+   "effectShort": null
+  },
+  {
+   "slot": "S2",
+   "skill": "伏雷蒼樹",
+   "rank": "SSS",
+   "afterSkill": "幻像鏡花",
+   "afterRank": "SSS",
+   "target": null,
+   "rate": null,
+   "effectShort": null,
+   "afterTarget": "部隊長",
+   "afterRate": "+56%",
+   "afterEffectShort": "卓越追加確率40%・1.35倍"
+  }
+ ]
+}

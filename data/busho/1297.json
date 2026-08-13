@@ -1,0 +1,140 @@
+{
+ "name": "斎藤道三（3）",
+ "no": "1297",
+ "ch": "30章",
+ "cost": 5,
+ "troop": "槍弓器鉄防",
+ "sub": "",
+ "effect": "防御参加武将数依存／卓越発動時は効果1.5倍",
+ "furigana": "さいとうどうさん",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1297_full.png",
+ "imageChar": "assets/img/characters/no1297_char.png",
+ "atkBase": 1100,
+ "atkGrowth": 48,
+ "defBase": 1250,
+ "defGrowth": 71,
+ "tacticsBase": 670,
+ "tacticsGrowth": 3,
+ "lv0Troops": 5090,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "S",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "国呑ノ蟒蛇",
+ "skillDetail": "S/LV10 確率 42% 防御上昇/対象:槍・弓・器・鉄\n①(係数×防御参加武将数)%を防御効果に加算する(係数はLV10=5.4)\n②卓越:追加確率-20%(LV10)〜+50%(TR6)で防御効果1.5倍",
+ "categoryLinks": [
+  {
+   "href": "skills-count-def.html",
+   "label": "人数依存(防)スキル一覧を見る"
+  },
+  {
+   "href": "skills-takuetsu.html",
+   "label": "卓越スキル一覧を見る"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "coefficient": "5.4",
+   "effect": "槍・弓・器・鉄　確率 42% / 防御 5.4%×防御参加武将数(280人)=1512.0%(卓越追加確率-20%で1.5倍=2268.0%)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "coefficient": "5.5",
+   "effect": "槍・弓・器・鉄　確率 42% / 防御 5.5%×防御参加武将数(280人)=1540.0%(卓越追加確率-15%で1.5倍=2310.0%)"
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "coefficient": "5.7",
+   "effect": "槍・弓・器・鉄　確率 47% / 防御 5.7%×防御参加武将数(280人)=1596.0%(卓越追加確率-10%で1.5倍=2394.0%)"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "coefficient": "6",
+   "effect": "槍・弓・器・鉄　確率 52% / 防御 6%×防御参加武将数(280人)=1680.0%(卓越追加確率1%で1.5倍=2520.0%)"
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "coefficient": "6.4",
+   "effect": "槍・弓・器・鉄　確率 57% / 防御 6.4%×防御参加武将数(280人)=1792.0%(卓越追加確率10%で1.5倍=2688.0%)"
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "coefficient": "7.2",
+   "effect": "槍・弓・器・鉄　確率 70% / 防御 7.2%×防御参加武将数(280人)=2016.0%(卓越追加確率20%で1.5倍=3024.0%)"
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "coefficient": "7.7",
+   "effect": "槍・弓・器・鉄　確率 80% / 防御 7.7%×防御参加武将数(280人)=2156.0%(卓越追加確率50%で1.5倍=3234.0%)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "国呑ノ蟒蛇",
+   "rank": "S",
+   "afterSkill": "幻像鏡花",
+   "afterRank": "SSS",
+   "rate": "42%",
+   "target": "槍・弓・器・鉄",
+   "effectShort": "防御を係数×人数で上昇(卓越時1.5倍)",
+   "afterTarget": "部隊長",
+   "afterRate": "56%",
+   "afterEffectShort": "卓越追加確率40%・1.35倍"
+  },
+  {
+   "slot": "B",
+   "skill": "思金神ノ深謀",
+   "rank": "SS",
+   "afterSkill": "思金神ノ深謀",
+   "afterRank": "SS",
+   "rate": "60%",
+   "target": "部隊長",
+   "effectShort": "部隊長の模倣可能な初期スキルを模倣(卓越時1.3倍)"
+  },
+  {
+   "slot": "C",
+   "skill": "虚空ノ導",
+   "rank": "SSS",
+   "afterSkill": "虚空ノ導",
+   "afterRank": "SSS",
+   "rate": "70%",
+   "target": "自身",
+   "effectShort": "自身の初期スキルを模倣(卓越時1.3倍)"
+  },
+  {
+   "slot": "S1",
+   "skill": "幻像鏡花",
+   "rank": "SSS",
+   "afterSkill": "幻像鏡花",
+   "afterRank": "SSS",
+   "rate": "56%",
+   "target": "部隊長",
+   "effectShort": "部隊長の模倣可能な初期スキルを模倣(卓越時1.35倍)"
+  },
+  {
+   "slot": "S2",
+   "skill": "永世ノ天隻",
+   "rank": "SS",
+   "afterSkill": "永世ノ天隻",
+   "afterRank": "SS",
+   "rate": "48%",
+   "target": "全 飛翔9",
+   "effectShort": "防御を係数×人数で上昇+飛翔9"
+  }
+ ],
+ "notes": [
+  "45do.info生HTML照合済み(2026-07-29、skiladd_wrapの位置対応で確認)。"
+ ]
+}

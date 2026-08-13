@@ -1,0 +1,62 @@
+{
+ "name": "十死一生",
+ "rank": "S",
+ "baseRate": 42,
+ "target": "槍・弓・馬",
+ "noMimic": true,
+ "effectSummary": "S/LV10 確率 42% 攻撃160%上昇/対象:槍・弓・馬\n模倣不可\n①攻撃160%上昇する\n②攻撃時のみ自部隊の兵士被害を5%減少する",
+ "sourceCharacters": [
+  {
+   "name": "佐野昌綱",
+   "no": "2457",
+   "slot": "C",
+   "db": "kyoku"
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "開闢ノ逆鉾",
+  "rank": "SS"
+ },
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・弓・馬　確率 42% / 攻撃 160%上昇(攻撃時のみ自部隊の兵士被害5%減少・模倣不可)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": null
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": null
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": null
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": null
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": null
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": null
+  }
+ ],
+ "notes": [
+  "2026-08-12一括作成。S以上の初期スキルは無条件でページを作る規約(A-3-9)の未処理分。",
+  "内容は武将エントリの登録値をそのまま転記している。",
+  "categoryLinksは9項目の判定を1件ずつやる必要があるため意図的に付けていない(付け忘れではない)。"
+ ]
+}

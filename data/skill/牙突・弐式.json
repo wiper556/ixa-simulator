@@ -1,0 +1,60 @@
+{
+ "name": "牙突・弐式",
+ "rank": "SS",
+ "baseRate": 40,
+ "target": "全",
+ "effectSummary": "SS/LV10 確率：+40% / 対象 全 無尽 攻擊：1020%上昇",
+ "categoryLinks": [
+  {
+   "href": "skills-mujin.html",
+   "label": "無尽スキル一覧を見る"
+  }
+ ],
+ "sourceCharacters": [
+  {
+   "name": "斎藤一【覇】",
+   "no": "10066",
+   "slot": "S2"
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "牙突・弐式",
+  "rank": "SS"
+ },
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 40% / 無尽 攻擊1020%上昇"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": "全　確率 40% / 無尽 攻擊1060%上昇"
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": "全　確率 45% / 無尽 攻擊1130%上昇"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": "全　確率 50% / 無尽 攻擊1210%上昇"
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": "全　確率 55% / 無尽 攻擊1350%上昇"
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": "全　確率 60% / 無尽 攻擊1550%上昇"
+  }
+ ],
+ "notes": [
+  "2026-08-12作成。合成候補に出てくるS以上はページを作る規約(A-3)の未処理分。",
+  "ixanary.com/skills/牙突・弐式 から取得。categoryLinksは9項目の判定が要るため付けていない。"
+ ]
+}

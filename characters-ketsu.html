@@ -170,50 +170,30 @@
   // trTable / synthesisTable / cost / rankGrades は持たせていない。
   // 数値と効果文はカード画像から直接読み取った(傑はカード上にNo.表示が無いため、
   // No.はくじの提供割合表(ゲーム内「確率情報」)に準拠している)。
+  // BUILD:ketsuGenerals:start ここから下は tools/build_data.py が data/busho-ketsu/ から生成しています。直接編集しないこと
   const ketsuGenerals = [
-    {name:"織田信長", no:"20001", furigana:"おだのぶなが", illustrator:"直良有祐",
-      troop:"全攻", sub:"", hasHado:true,
-      effect:"鉄砲足軽の攻防+7／攻撃666%上昇(覇道)",
-      imageFull:"assets/img/characters/no20001_full.png", imageChar:"assets/img/characters/no20001_char.png",
-      atkBase:70000, defBase:50000, tacticsBase:5000, lv0Troops:25000,
-      initialSkill:"天魔絶界",
+    {name:"織田信長", no:"20001", furigana:"おだのぶなが", illustrator:"直良有祐", troop:"全攻", sub:"", hasHado:true,
+      effect:"鉄砲足軽の攻防+7／攻撃666%上昇(覇道)", imageFull:"assets/img/characters/no20001_full.png",
+      imageChar:"assets/img/characters/no20001_char.png", atkBase:70000, defBase:50000, tacticsBase:5000,
+      lv0Troops:25000, initialSkill:"天魔絶界",
       skillDetail:"傑/効果固定 確率 100% 攻撃666%上昇/対象:全　覇道\n模倣不可・重複不可\n①攻撃666%上昇する\n②所属部隊の「鉄砲足軽」の攻撃力・防御力が+7される\n③同じ合流攻撃に参加する他部隊の「鉄砲足軽」の攻撃力が+3される\n④所属部隊の武将が持つスキルを無効化や発動率低下から保護する",
-      alwaysEffects:[
-        "本領と陣、出城が黄金造りになる",
-        "チャットの文字色が金色になる",
-        "位階有効時、階位が正一位となる",
-        "陣獲得時、陣のレベルが5になる"
-      ]},
+      alwaysEffects:["本領と陣、出城が黄金造りになる", "チャットの文字色が金色になる", "位階有効時、階位が正一位となる", "陣獲得時、陣のレベルが5になる"]},
 
-    {name:"豊臣秀吉", no:"20002", furigana:"とよとみひでよし", illustrator:"直良有祐",
-      troop:"全攻防", sub:"", hasHado:true,
-      effect:"騎馬鉄砲の攻防+7／攻防550%上昇／黄金造りの拠点で武将攻防1.5倍(覇道)",
-      imageFull:"assets/img/characters/no20002_full.png", imageChar:"assets/img/characters/no20002_char.png",
-      atkBase:60000, defBase:60000, tacticsBase:5500, lv0Troops:24000,
-      initialSkill:"覇軍 悉国平定",
+    {name:"豊臣秀吉", no:"20002", furigana:"とよとみひでよし", illustrator:"直良有祐", troop:"全攻防", sub:"", hasHado:true,
+      effect:"騎馬鉄砲の攻防+7／攻防550%上昇／黄金造りの拠点で武将攻防1.5倍(覇道)", imageFull:"assets/img/characters/no20002_full.png",
+      imageChar:"assets/img/characters/no20002_char.png", atkBase:60000, defBase:60000, tacticsBase:5500,
+      lv0Troops:24000, initialSkill:"覇軍 悉国平定",
       skillDetail:"傑/効果固定 確率 100% 攻撃550%上昇/対象:全　覇道\n模倣不可・重複不可\n①攻撃550%上昇する\n②防御550%上昇する\n③所属部隊の「騎馬鉄砲」の攻撃力・防御力が+7される\n④同じ合流攻撃に参加する他部隊の「騎馬鉄砲」の攻撃力が+3される\n⑤【黄金造り】の拠点に配置時は武将攻撃力と武将防御力が1.5倍される\n⑥所属部隊の武将が持つスキルを無効化や発動率低下から保護する",
-      alwaysEffects:[
-        "本領と陣、出城が黄金造りになる",
-        "チャットの文字色が金色になる",
-        "位階有効時、階位が正一位となる",
-        "陣獲得時、陣のレベルが5になる"
-      ]},
+      alwaysEffects:["本領と陣、出城が黄金造りになる", "チャットの文字色が金色になる", "位階有効時、階位が正一位となる", "陣獲得時、陣のレベルが5になる"]},
 
-    {name:"徳川家康", no:"20003", furigana:"とくがわいえやす", illustrator:"直良有祐",
-      troop:"全攻防", sub:"飛翔10", hasHado:true,
-      effect:"焙烙火矢の攻防+7／攻防500%上昇+飛翔10(覇道)",
-      imageFull:"assets/img/characters/no20003_full.png", imageChar:"assets/img/characters/no20003_char.png",
-      atkBase:65000, defBase:65000, tacticsBase:5000, lv0Troops:25000,
-      initialSkill:"神威蓋世",
+    {name:"徳川家康", no:"20003", furigana:"とくがわいえやす", illustrator:"直良有祐", troop:"全攻防", sub:"飛翔10", hasHado:true,
+      effect:"焙烙火矢の攻防+7／攻防500%上昇+飛翔10(覇道)", imageFull:"assets/img/characters/no20003_full.png",
+      imageChar:"assets/img/characters/no20003_char.png", atkBase:65000, defBase:65000, tacticsBase:5000,
+      lv0Troops:25000, initialSkill:"神威蓋世",
       skillDetail:"傑/効果固定 確率 100% 攻撃500%上昇/対象:全　覇道　飛翔10\n模倣不可・重複不可\n①攻撃500%上昇する\n②防御500%上昇する\n③飛翔10を得る\n④所属部隊の「焙烙火矢」の攻撃力・防御力が+7される\n⑤同じ合流攻撃に参加する他部隊の「焙烙火矢」の攻撃力が+3される\n⑥所属部隊の武将が持つスキルを無効化や発動率低下から保護する",
-      alwaysEffects:[
-        "合戦中1回まで「葵紋の陣」を作成できる(「葵紋の陣」は【傑】を含む部隊でしか攻撃できず陣破壊スキルに破壊されない／この武将が作成した「葵紋の陣」のみ距離4以内の同盟員の陣も「葵紋の陣」となる)",
-        "本領と陣、出城が黄金造りになる",
-        "チャットの文字色が金色になる",
-        "位階有効時、階位が正一位となる",
-        "陣獲得時、陣のレベルが5になる"
-      ]}
+      alwaysEffects:["合戦中1回まで「葵紋の陣」を作成できる(「葵紋の陣」は【傑】を含む部隊でしか攻撃できず陣破壊スキルに破壊されない／この武将が作成した「葵紋の陣」のみ距離4以内の同盟員の陣も「葵紋の陣」となる)", "本領と陣、出城が黄金造りになる", "チャットの文字色が金色になる", "位階有効時、階位が正一位となる", "陣獲得時、陣のレベルが5になる"]}
   ];
+  // BUILD:ketsuGenerals:end
 
 
   function ktEscapeHtml(s){

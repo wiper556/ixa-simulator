@@ -1,0 +1,57 @@
+{
+ "name": "虎巫",
+ "rank": "S",
+ "baseRate": 50,
+ "target": "全",
+ "noMimic": true,
+ "effectSummary": "S/LV10 確率 50% 攻撃1000%上昇/対象:全\n模倣不可・特殊効果は部隊内重複不可\n①攻撃1000%上昇する\n②攻撃戦闘時攻撃側武将数を数えて効果が変動する敵軍防御側の武将スキルはこの武将の分を+1名追加して効果を計算する",
+ "sourceCharacters": [
+  {
+   "name": "望月千代女",
+   "no": "2855",
+   "slot": "S1",
+   "db": "kyoku"
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "虎巫",
+  "rank": "S"
+ },
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 50% / 攻撃 1000%上昇(敵の攻撃側武将数依存スキルに+1名)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": null
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": null
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": null
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": null
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": "全　確率 50% / 攻撃 1500%上昇(敵の攻撃側武将数依存スキルに+3名)"
+  }
+ ],
+ "notes": [
+  "2026-08-12一括作成。S以上の初期スキルは無条件でページを作る規約(A-3-9)の未処理分。",
+  "内容は武将エントリの登録値をそのまま転記している。",
+  "categoryLinksは9項目の判定を1件ずつやる必要があるため意図的に付けていない(付け忘れではない)。"
+ ]
+}
