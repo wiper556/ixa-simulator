@@ -85,3 +85,24 @@ def strip_env(toks):
         env.append(toks[0])
         toks = toks[1:]
     return env, toks
+
+
+def heredoc_tag(line, posix=True):
+    """その行が**本当に**ヒアドキュメントを開始しているなら、そのタグ名。
+
+    GD-1(第12回、高): ここを正規表現でやると、引用符の中の `<<TAG` を
+    ヒアドキュメントの始まりと誤読して、後ろの行を検査から落とす。
+    shlex は引用符を解いてから token を返すので、ここで見える `<<` は
+    本物の演算子だけ。引用符が閉じていない行は「開始していない」と答える
+    (安全側。検査対象として残る)。
+    """
+    try:
+        lx = shlex.shlex(line, posix=posix, punctuation_chars=True)
+        lx.whitespace_split = True
+        toks = [t for t in lx if t]
+    except ValueError:
+        return None
+    for i, t in enumerate(toks):
+        if t in ("<<", "<<-") and i + 1 < len(toks):
+            return toks[i + 1]
+    return None

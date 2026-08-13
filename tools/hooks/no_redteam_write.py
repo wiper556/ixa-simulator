@@ -41,7 +41,7 @@ import re
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from _cmdline import base, both, strip_env      # noqa: E402
+from _cmdline import base, both, heredoc_tag, strip_env      # noqa: E402
 
 sys.stdout.reconfigure(encoding="utf-8")
 sys.stdin.reconfigure(encoding="utf-8")
@@ -377,11 +377,14 @@ def _strip_heredocs(cmd):
         # 行の残りが検査から消えた。行はそのまま渡し、印の除去は
         # _cmdline.segments() が token 単位で行う。
         out.append(lines[i])
-        m = re.search(r"<<-?\s*[\"']?([A-Za-z_][A-Za-z0-9_]*)[\"']?", lines[i])
+        # GD-1(第12回、高): ここは引用符を理解しない正規表現だった。
+        # `echo "x<<PY"` の中の `<<PY` を開始と誤読して、後ろの行を
+        # 検査に渡す前に落としていた(終端タグすら不要だった)。
+        # 判定を token 側に一本化する。
+        tag = heredoc_tag(lines[i])
         i += 1
-        if not m:
+        if not tag:
             continue
-        tag = m.group(1)
         while i < len(lines) and lines[i].strip() != tag:
             i += 1
         i += 1                       # 終端タグも飛ばす
@@ -588,6 +591,12 @@ MUST_BLOCK = [
     'echo "x<<PY" ; rm -rf c:/repo/tools',
     'echo "<<PY" && rm c:/repo/tools/lock.py',
     'echo "x<<PY" ; echo hi | xargs echo',
+    # 第12回 GD-1(高): **複数行**にすると行削除が先に効いて素通りしていた
+    'echo "x<<PY"\nrm -rf c:/repo/tools\nPY',
+    'echo "start<<END"\ncp c:/temp/claude/ba/tools/lock.py c:/repo/tools/lock.py\nEND',
+    'echo "go<<Z"\ngit commit -m fake\nZ',
+    'echo "x<<PY"\nrm -rf c:/repo/tools',          # 終端タグ無し
+    'echo "a<<-PY"\nrm -rf c:/repo/tools\nPY',
     # 第11回 FD-2(高): --file の短縮形 -f が列挙から漏れていた
     "git -C c:/temp/claude/ba config -f c:/repo/.git/config core.hooksPath x",
     "git -C c:/temp/claude/ba config --blob HEAD:.gitconfig x y",
