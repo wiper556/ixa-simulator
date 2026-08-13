@@ -148,6 +148,7 @@ CASES = [
     ("P-02h", "ブランチ保護やフックを外すコマンドを拒否する", _p02hook, True, "P-2"),
     ("P-02f", "保護外しの書き方を全部止める(読み取りは通す)", _p02forms, True, ""),
     ("P-02w", "Write/Edit で .git/ を直接書くのを止める", _p02forms, True, ""),
+    ("R-04", "テスト環境の外を触らせない(ホワイトリスト)", _p02forms, True, ""),
     ("W-13", "ルール文書と作業を同じコミットに混ぜる", _w13, True,
      "ルール文書の変更と作業の変更が同じコミットに混ざっている"),
     ("P-03", "シミュレーターを変えてバージョンを上げない", _p03, True,
@@ -201,9 +202,10 @@ def main():
             continue
         sh(["git", "reset", "-q", "--hard", "HEAD"], repo)
         sh(["git", "clean", "-qfd"], repo)
-        if rid in ("P-02f", "P-02w"):
-            script = ("tools/hooks/no_protection_bypass.py" if rid == "P-02f"
-                      else "tools/hooks/no_git_internal_write.py")
+        if rid in ("P-02f", "P-02w", "R-04"):
+            script = {"P-02f": "tools/hooks/no_protection_bypass.py",
+                      "P-02w": "tools/hooks/no_git_internal_write.py",
+                      "R-04": "tools/hooks/no_redteam_write.py"}[rid]
             r = sh([sys.executable, "-P", script, "--selftest"], repo)
             ok = r.returncode == 0
             print("  %s %-8s %-34s %s"

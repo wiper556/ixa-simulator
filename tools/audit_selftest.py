@@ -115,8 +115,10 @@ CASES = [
     # 数字そのものを書き換える形にすると、ルールが増えるたびにこのケースが壊れる。
     ("ルール件数の表記ずれ", "docs/RULES.md",
      "| T-07 |", "| Z-01 | 自己テスト用の架空ルール | - | × | ✗ |\n| T-07 |"),
+    # 棚卸しをした日にアンカーが外れるので、日付を含まない前置きで指す。
+    # 前に1行差し込むと last_inventory() は先に見つけたほうを読む。
     ("棚卸しの期限切れ", "docs/RULES.md",
-     "最終棚卸し: 2026-08-12", "最終棚卸し: 2020-01-01"),
+     "\n最終棚卸し: ", "\n最終棚卸し: 2020-01-01\n古い記録: "),
     # 以下は違反ログを触る。位置(何行目の何列目)で指すので、
     # 行が増えても監査欄が埋まってもアンカーが壊れない(I-14)。
     ("違反ログのIDが索引に無い", VIOL) + v_set(0, 1, "Z-99"),
@@ -256,26 +258,26 @@ EVASIONS = [
     ("レッドチームの見張りが消えた", ".claude/settings.json",
      "no_redteam_write.py", "no_redteam_DISABLED.py",
      "攻撃側の見張りを外す"),
-    ("レッドチームの回が閉じていない", "docs/redteam-log.txt",
-     "# START / END の対応",
-     "START\t2026-08-13 00:00:00\tdeadbeef1234\t架空の回\t1 files\tc:/temp\n"
-     "# START / END の対応",
+    ("レッドチームの回が閉じていない", "docs/redteam-log.txt", "@@append@@",
+     "START\t2026-08-13 00:00:00\tdeadbeef1234\t架空の回\t1 files\tc:/temp\tdead\n",
      "回を開いたまま閉じない(本物が無傷か誰も確かめていない)"),
     # BD-2(第6回): 記録の中身は誰も守っていなかった。過去行を消せば全部消えた。
     ("レッドチームの記録が書き換えられた", "docs/redteam-log.txt",
      "# レッドチームの回の開閉記録", "# (書き換えた)",
      "回の履歴を消すために過去行を書き換える"),
-    ("レッドチームが本物を触った", "docs/redteam-log.txt",
-     "# START / END の対応",
-     "END-FAILED\t2026-08-13 00:00:00\tdeadbeef1234\t架空の回\n"
-     "# START / END の対応",
+    ("レッドチームの回を中断した", "docs/redteam-log.txt", "@@append@@",
+     "START\t2026-08-13 00:00:00\tdeadbeef1234\t架空の回\t1 files\tc:/temp\tdead\n"
+     "ABORT\t2026-08-13 00:00:01\tdeadbeef1234\t架空の回\t自己テスト用の中断\n",
+     "中断の痕跡が報され続けるか"),
+    ("レッドチームが本物を触った", "docs/redteam-log.txt", "@@append@@",
+     "END-FAILED\t2026-08-13 00:00:00\tdeadbeef1234\t架空の回\n",
      "本物を触ったまま回を閉じようとした記録を握りつぶす"),
     # R-6/S-6: エージェント定義が門番の見張りの外だった。
     # `.claude/agents/` の未ステージ改変で止まるかは gate_selftest 側で見る。
     # X-5: 素材を1行壊すと、そこから先の約30種別がまるごと黙った。
     # 区画ごとに囲ったので、壊れた区画だけが指摘になる。
     ("ルール検査が例外で落ちた", "docs/RULES.md",
-     "最終棚卸し: 2026-08-12", "最終棚卸し: 2026-99-99",
+     "\n最終棚卸し: ", "\n最終棚卸し: 2026-99-99\n元の記録: ",
      "棚卸し日を壊して以降の検査を全部黙らせる"),
 ]
 
@@ -363,6 +365,10 @@ def main():
             p = os.path.join(ROOT, r)
             # old が None のケースは「そのファイルを作る」。gitignore されていて
             # 元から存在しないもの(.claude/settings.local.json)を試すために要る。
+            if o == "@@append@@":
+                srcs[r] = io.open(p, encoding="utf-8", newline="").read() \
+                    if os.path.exists(p) else ""
+                continue
             if o is None:
                 srcs[r] = "" if not os.path.exists(p) else \
                     io.open(p, encoding="utf-8", newline="").read()
@@ -391,8 +397,10 @@ def main():
         try:
             for r, o, n in edits:
                 io.open(os.path.join(ROOT, r), "w", encoding="utf-8",
-                        newline="").write(n if o is None
-                                          else srcs[r].replace(o, n, 1))
+                        newline="").write(
+                            n if o is None else
+                            (srcs[r] + n) if o == "@@append@@" else
+                            srcs[r].replace(o, n, 1))
             if cat == "__行数__":
                 # 「指摘が増えるか」ではなく「行が数え落とされないか」を見るケース
                 got_rows = violation_rows()
