@@ -73,8 +73,8 @@
    "rate": null,
    "effectShort": null,
    "afterTarget": "全",
-   "afterRate": "+42%",
-   "afterEffectShort": "攻撃 25.39%上昇(部隊総コストで変動、TR別データは未確認)"
+   "afterRate": "42%",
+   "afterEffectShort": "攻撃 25.39%上昇(部隊総コストで変動、TRなし)"
   },
   {
    "slot": "B",
@@ -82,11 +82,11 @@
    "rank": "A",
    "afterSkill": "天穿神滅",
    "afterRank": "SS",
-   "target": null,
-   "rate": null,
-   "effectShort": null,
+   "target": "全",
+   "rate": "44%",
+   "effectShort": "攻撃66%上昇(防御66%上昇)",
    "afterTarget": "砲器",
-   "afterRate": "+50%",
+   "afterRate": "50%",
    "afterEffectShort": "攻撃((ランク+1)xコストx3) %上昇(部隊ランクとコストで効果が変化)"
   },
   {
@@ -96,10 +96,10 @@
    "afterSkill": "神光征軍",
    "afterRank": "SS",
    "target": "全",
-   "rate": "+50%",
+   "rate": "50%",
    "effectShort": "攻撃50%上昇+速度50%上昇",
    "afterTarget": "全",
-   "afterRate": "+100%",
+   "afterRate": "100%",
    "afterEffectShort": "攻撃 90%上昇+速度200%上昇(TRなし)"
   },
   {
@@ -109,7 +109,7 @@
    "afterSkill": "禄寿応穏",
    "afterRank": "A",
    "target": "全",
-   "rate": "+35%",
+   "rate": "35%",
    "effectShort": "防御35%上昇(銅銭獲得率7.5%・防御で倒した兵数に応じ防御参加者全員が銅銭獲得)"
   },
   {
@@ -119,7 +119,7 @@
    "afterSkill": "洞察",
    "afterRank": "B",
    "target": "全",
-   "rate": "+30%",
+   "rate": "30%",
    "effectShort": "防御(部隊ランクスキル発動率×10)%上昇"
   }
  ],

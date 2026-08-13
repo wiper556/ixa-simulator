@@ -70,11 +70,11 @@
    "afterSkill": "入来神舞",
    "afterRank": "S",
    "target": "部隊長",
-   "rate": "+50%",
-   "effectShort": "部隊長の初期スキルを模倣(卓越:追加確率30%で1.2倍にして模倣)",
+   "rate": "50%",
+   "effectShort": "所属部隊の部隊長が持つ模倣可能な初期スキルを模倣する(卓越・追加確率30%で通常攻撃／防御効果を1.2倍して模倣する)",
    "afterTarget": "部隊長",
-   "afterRate": "+55%",
-   "afterEffectShort": "部隊長の初期スキルを1.1倍に強化して模倣(TR別データは未確認)"
+   "afterRate": "55%",
+   "afterEffectShort": "部隊長の模倣可能な初期スキルを1.1倍に強化して模倣(TRなし)"
   },
   {
    "slot": "B",
@@ -83,11 +83,11 @@
    "afterSkill": "摩利支天ノ法",
    "afterRank": "SSS",
    "target": "部隊長",
-   "rate": "+60%",
-   "effectShort": "部隊長の初期スキルを模倣(卓越:追加確率30%で1.2倍にして模倣)",
+   "rate": "60%",
+   "effectShort": "所属部隊の部隊長が持つ模倣可能な初期スキルを模倣する(卓越・追加確率30%で通常攻撃／防御効果を1.2倍して模倣する)",
    "afterTarget": "部隊長",
-   "afterRate": "+70%",
-   "afterEffectShort": "模倣倍率1.25倍"
+   "afterRate": "70%",
+   "afterEffectShort": "所属部隊の部隊長が持つ模倣可能な初期スキルを通常攻撃/防御効果1.25倍にして模倣する"
   },
   {
    "slot": "C",
@@ -99,8 +99,8 @@
    "rate": null,
    "effectShort": null,
    "afterTarget": "全",
-   "afterRate": "+100%",
-   "afterEffectShort": "攻撃344%上昇+防御344%上昇(卓越確率+15%)"
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃344%上昇+防御344%上昇+自軍全武将全スキルの卓越確率に15%加算(模倣不可・自軍内重複上限2)"
   },
   {
    "slot": "S1",
@@ -108,12 +108,12 @@
    "rank": "SS",
    "afterSkill": "飛龍衝天",
    "afterRank": "SS",
-   "target": null,
+   "target": "全 覇道",
    "rate": null,
-   "effectShort": null,
+   "effectShort": "攻撃770%上昇+速度150%上昇+破壊150%上昇+覇道を持つため所属部隊の武将のスキルを無効化・発動率低下から保護",
    "afterTarget": "全 飛翔15",
-   "afterRate": "+45%",
-   "afterEffectShort": "攻撃 200%+7.5%×防御参加武将数(280人)=2300.0%"
+   "afterRate": "45%",
+   "afterEffectShort": "攻撃200%上昇+(7.5×防御参加武将数)%を攻撃効果に加算(模倣不可)"
   },
   {
    "slot": "S2",
@@ -122,8 +122,8 @@
    "afterSkill": "開闢ノ逆鉾",
    "afterRank": "SS",
    "target": "全",
-   "rate": "+100%",
-   "effectShort": "攻撃254%上昇(卓越:攻撃戦闘時、追加確率30%で兵士被害15%減少・部隊内重複上限2・模倣不可)"
+   "rate": "100%",
+   "effectShort": "攻撃254%上昇+卓越:攻撃戦闘時追加確率30%で自部隊の兵士被害15%減少(部隊内重複上限2・模倣不可)"
   }
  ],
  "notes": [

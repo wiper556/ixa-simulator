@@ -37,10 +37,24 @@
    "slot": "S1"
   }
  ],
+ "grantedViaSkills": [
+  {
+   "skill": "四界偃武",
+   "rank": "S"
+  },
+  {
+   "skill": "天奏幻武",
+   "rank": "S"
+  }
+ ],
  "ownHiddenCandidate": {
   "skill": "加具土ノ神域",
   "rank": "SS"
  },
+ "notes": [
+  "水野勝成(No.1236)S2・加藤清正(4)(No.1221)C・45do.info生HTML照合済み(単一ソースのみ、TR1〜TR5未確認)",
+  "2026-08-13: A-3-12の逆方向リンク。武将のsynthesisTableでは1次がこのスキルに変化するのに、こちら側から元スキルを指していなかった。1次→2次の組100件を元スキルのownHiddenCandidateと突き合わせ、矛盾0件を確かめたうえで機械的に張った。"
+ ],
  "trTable": [
   {
    "level": "LV10",
@@ -48,8 +62,5 @@
    "coefficient": "3.4",
    "effect": "全　確率 25% / 攻撃 3.4%×防御参加武将数(280人)=952.0%"
   }
- ],
- "notes": [
-  "水野勝成(No.1236)S2・加藤清正(4)(No.1221)C・45do.info生HTML照合済み(単一ソースのみ、TR1〜TR5未確認)"
  ]
 }

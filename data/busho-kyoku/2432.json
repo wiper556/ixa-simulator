@@ -69,11 +69,11 @@
    "rank": "A",
    "afterSkill": "神光征軍",
    "afterRank": "SS",
-   "target": null,
+   "target": "全",
    "rate": null,
-   "effectShort": null,
+   "effectShort": "攻撃50%上昇+速度50%上昇",
    "afterTarget": "全",
-   "afterRate": "+100%",
+   "afterRate": "100%",
    "afterEffectShort": "攻撃 90%上昇+速度200%上昇(TRなし)"
   },
   {
@@ -86,7 +86,7 @@
    "rate": null,
    "effectShort": null,
    "afterTarget": "全",
-   "afterRate": "+60%",
+   "afterRate": "60%",
    "afterEffectShort": "防御100%上昇(自部隊の武将ダメージ軽減3%・重複発動上限数4)"
   },
   {
@@ -95,12 +95,12 @@
    "rank": "A",
    "afterSkill": "三千世界神将",
    "afterRank": "SS",
-   "target": null,
+   "target": "全",
    "rate": null,
-   "effectShort": null,
+   "effectShort": "防御50%上昇(卓越・追加確率15%で防御効果が3倍)",
    "afterTarget": "全",
-   "afterRate": "+100%",
-   "afterEffectShort": "防御 120%上昇(本丸防御陣形時コスト消費-1)"
+   "afterRate": "100%",
+   "afterEffectShort": "防御120%上昇+本丸防御陣形配置時この武将の編成コスト消費-1(模倣不可)"
   },
   {
    "slot": "S1",
@@ -108,9 +108,9 @@
    "rank": "SS",
    "afterSkill": "布都御魂ノ鬨",
    "afterRank": "SS",
-   "target": null,
+   "target": "全",
    "rate": null,
-   "effectShort": null
+   "effectShort": "攻撃40%上昇+防御40%上昇+所属部隊内のレアリティS以上のスキル個数×20%を攻防効果に加算"
   },
   {
    "slot": "S2",

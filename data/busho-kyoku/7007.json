@@ -63,7 +63,9 @@
    "skill": "彷徨う福音",
    "rank": "B",
    "afterSkill": "彷徨う福音",
-   "afterRank": "B"
+   "afterRank": "B",
+   "target": "全",
+   "effectShort": "銅銭獲得率2.5%(対人撃破兵数に応じて自軍全員が銅銭獲得・重複発動上限数4)"
   },
   {
    "slot": "B",
@@ -73,7 +75,7 @@
    "afterRank": "SS",
    "afterTarget": "自身",
    "afterRate": "",
-   "afterEffectShort": "自身の初期スキルを模倣(戦闘スキルのみ)"
+   "afterEffectShort": "自身が持つ初期スキルを模倣する(戦闘スキルのみ)"
   },
   {
    "slot": "C",
@@ -96,7 +98,7 @@
    "afterSkill": "志半ノ矛楯",
    "afterRank": "A",
    "target": "全",
-   "rate": "+65%",
+   "rate": "65%",
    "effectShort": "攻撃465%上昇+防御465%上昇(模倣不可)"
   }
  ],

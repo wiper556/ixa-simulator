@@ -73,7 +73,7 @@
    "rate": null,
    "effectShort": null,
    "afterTarget": "砲器",
-   "afterRate": "+35%",
+   "afterRate": "35%",
    "afterEffectShort": "防御30%上昇"
   },
   {
@@ -86,8 +86,8 @@
    "rate": null,
    "effectShort": null,
    "afterTarget": "部隊長",
-   "afterRate": "+53%",
-   "afterEffectShort": "部隊長の初期スキルを模倣(戦闘スキルのみ、TR別データは未確認)"
+   "afterRate": "53%",
+   "afterEffectShort": "部隊長の初期スキルを模倣(戦闘スキルのみ、TRなし)"
   },
   {
    "slot": "C",
@@ -96,7 +96,7 @@
    "afterSkill": "彷徨う福音",
    "afterRank": "B",
    "target": "全",
-   "rate": "+20%",
+   "rate": "20%",
    "effectShort": "銅銭獲得率2.5%(対人撃破兵数に応じて自軍全員が銅銭獲得・重複発動上限数4)"
   },
   {
@@ -106,10 +106,10 @@
    "afterSkill": "封技閃影",
    "afterRank": "A",
    "target": "全",
-   "rate": "+40%",
+   "rate": "40%",
    "effectShort": "防御時に攻撃側の攻撃スキル発動率を-20%",
    "afterTarget": "全",
-   "afterRate": "+40%",
+   "afterRate": "40%",
    "afterEffectShort": "攻撃時に敵軍のスキル発動率を-10%(重複不可)"
   },
   {
@@ -119,10 +119,10 @@
    "afterSkill": "覇王絶世",
    "afterRank": "SS",
    "target": "砲・器",
-   "rate": "+45%",
-   "effectShort": "攻撃66%上昇+防御66%上昇",
+   "rate": "45%",
+   "effectShort": "攻撃66%上昇(防御66%上昇)",
    "afterTarget": "全",
-   "afterRate": "+24%",
+   "afterRate": "24%",
    "afterEffectShort": "攻撃部隊ランクボーナスx15%上昇(部隊ランクボーナスで効果が変化)"
   }
  ],

@@ -69,11 +69,11 @@
    "rank": "D",
    "afterSkill": "屈指の勇将",
    "afterRank": "D",
-   "target": null,
+   "target": "全",
    "rate": null,
-   "effectShort": null,
+   "effectShort": "攻撃38%上昇(防御38%上昇)",
    "afterTarget": "全",
-   "afterRate": "+37%",
+   "afterRate": "37%",
    "afterEffectShort": "攻撃22%上昇(防御22%上昇)"
   },
   {
@@ -86,8 +86,8 @@
    "rate": null,
    "effectShort": null,
    "afterTarget": "全",
-   "afterRate": "+42%",
-   "afterEffectShort": "攻撃 25.39%上昇(部隊総コストで変動、TR別データは未確認)"
+   "afterRate": "42%",
+   "afterEffectShort": "攻撃 25.39%上昇(部隊総コストで変動、TRなし)"
   },
   {
    "slot": "C",
@@ -96,10 +96,10 @@
    "afterSkill": "天穿神滅",
    "afterRank": "SS",
    "target": "全",
-   "rate": "+44%",
-   "effectShort": "攻撃66%上昇+防御66%上昇",
+   "rate": "44%",
+   "effectShort": "攻撃66%上昇(防御66%上昇)",
    "afterTarget": "砲器",
-   "afterRate": "+50%",
+   "afterRate": "50%",
    "afterEffectShort": "攻撃((ランク+1)xコストx3) %上昇(部隊ランクとコストで効果が変化)"
   },
   {
@@ -109,7 +109,7 @@
    "afterSkill": "覇王ノ守人",
    "afterRank": "B",
    "target": "全",
-   "rate": "+50%",
+   "rate": "50%",
    "effectShort": "防御57%上昇(防御時に敵軍の攻撃スキル発動率-5%・特殊効果は重複不可)"
   },
   {
@@ -119,8 +119,8 @@
    "afterSkill": "武神八幡陣",
    "afterRank": "SS",
    "target": "全",
-   "rate": "+60%",
-   "effectShort": "防御(部隊総コスト依存)%上昇"
+   "rate": "60%",
+   "effectShort": "防御NULL%上昇 (部隊の総コストで効果が変化します)"
   }
  ],
  "notes": [

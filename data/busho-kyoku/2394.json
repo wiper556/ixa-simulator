@@ -70,8 +70,8 @@
    "rank": "A",
    "afterSkill": "戦陣 吟詠",
    "afterRank": "A",
-   "target": "全",
-   "rate": "+100%",
+   "target": "全 卓越",
+   "rate": "100%",
    "effectShort": "攻撃340%上昇+防御340%上昇+部隊内卓越追加確率+20%(模倣不可・特殊効果は自部隊内では重複不可)"
   },
   {
@@ -82,10 +82,10 @@
    "afterRank": "SSS",
    "target": "全 覇道",
    "rate": "100%",
-   "effectShort": "攻撃 320%上昇+速度70%上昇(TR別データは未確認)",
+   "effectShort": "攻撃320%上昇+速度70%上昇+覇道を持つため所属部隊の武将のスキルを無効化・発動率低下から保護",
    "afterTarget": "全",
    "afterRate": "45%",
-   "afterEffectShort": "攻撃 100%+5%×防御参加武将数(280人)=1500.0%"
+   "afterEffectShort": "攻撃100%上昇((5.0×防御参加武将数)%を攻撃効果に加算・模倣不可)"
   },
   {
    "slot": "C",
@@ -114,7 +114,7 @@
    "afterSkill": "志半ノ矛楯",
    "afterRank": "A",
    "target": "全",
-   "rate": "+65%",
+   "rate": "65%",
    "effectShort": "攻撃465%上昇+防御465%上昇(模倣不可)"
   }
  ],

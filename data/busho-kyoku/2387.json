@@ -51,7 +51,7 @@
    "effectShort": "防御80%上昇+破壊80%上昇+防御参加武将数依存5.6%",
    "afterTarget": "全",
    "afterRate": "56%",
-   "afterEffectShort": "防御 3.8%×防御参加武将数(280人)=1064.0%"
+   "afterEffectShort": "防御(3.8×防御参加武将数)%上昇=1064.0%(280人時)"
   },
   {
    "slot": "B",
@@ -64,7 +64,7 @@
    "effectShort": "防御80%上昇+破壊80%上昇+防御参加武将数依存5.6%",
    "afterTarget": "全",
    "afterRate": "56%",
-   "afterEffectShort": "防御 3.8%×防御参加武将数(280人)=1064.0%"
+   "afterEffectShort": "防御(3.8×防御参加武将数)%上昇=1064.0%(280人時)"
   },
   {
    "slot": "C",
@@ -73,8 +73,8 @@
    "afterSkill": "天磐船",
    "afterRank": "SS",
    "target": "全",
-   "rate": "+56%",
-   "effectShort": "防御(3.8×防御参加武将数)%上昇"
+   "rate": "56%",
+   "effectShort": "防御(3.8×防御参加武将数)%上昇=1064.0%(280人時)"
   },
   {
    "slot": "S1",
@@ -83,8 +83,8 @@
    "afterSkill": "天磐船",
    "afterRank": "SS",
    "target": "全",
-   "rate": "+56%",
-   "effectShort": "防御(3.8×防御参加武将数)%上昇"
+   "rate": "56%",
+   "effectShort": "防御(3.8×防御参加武将数)%上昇=1064.0%(280人時)"
   },
   {
    "slot": "S2",
@@ -93,7 +93,7 @@
    "afterSkill": "志半ノ矛楯",
    "afterRank": "A",
    "target": "全",
-   "rate": "+65%",
+   "rate": "65%",
    "effectShort": "攻撃465%上昇+防御465%上昇(模倣不可)"
   }
  ],

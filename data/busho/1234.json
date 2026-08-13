@@ -55,7 +55,7 @@
    "effectShort": "防御3.6%×防御参加武将数上昇(90人以下で1.5倍)",
    "afterTarget": "全",
    "afterRate": "54%",
-   "afterEffectShort": "防御 200%上昇(70以下の被ダメージ上限45)"
+   "afterEffectShort": "防御200%上昇+防御戦闘時自部隊内武将が受ける70以下のダメージを最大45に軽減"
   },
   {
    "slot": "B",
@@ -68,7 +68,7 @@
    "effectShort": "防御3.6%×防御参加武将数上昇(90人以下で1.5倍)",
    "afterTarget": "全",
    "afterRate": "54%",
-   "afterEffectShort": "防御 200%上昇(70以下の被ダメージ上限45)"
+   "afterEffectShort": "防御200%上昇+防御戦闘時自部隊内武将が受ける70以下のダメージを最大45に軽減"
   },
   {
    "slot": "C",
@@ -78,7 +78,7 @@
    "afterRank": "SS",
    "rate": "56%",
    "target": "全",
-   "effectShort": "防御3.8%×防御参加武将数上昇"
+   "effectShort": "防御(3.8×防御参加武将数)%上昇=1064.0%(280人時)"
   },
   {
    "slot": "S1",
@@ -91,7 +91,7 @@
    "effectShort": "防御200%上昇+防御戦闘時自部隊内武将が受ける70以下のダメージを最大45に軽減",
    "afterTarget": "全",
    "afterRate": "70%",
-   "afterEffectShort": "防御 270%上昇(HP99以下で3倍)"
+   "afterEffectShort": "防御270%上昇+武将HP99以下の時、防御効果が3倍になる"
   },
   {
    "slot": "S2",
@@ -101,7 +101,7 @@
    "afterRank": "SS",
    "rate": "48%",
    "target": "全 飛翔4",
-   "effectShort": "防御3.5%×防御参加武将数上昇"
+   "effectShort": "防御(3.5×防御参加武将数)%上昇(敵軍飛翔持ち4人未満の時通常武将ダメージを受けない)"
   }
  ],
  "notes": [

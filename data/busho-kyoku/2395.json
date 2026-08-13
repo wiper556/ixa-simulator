@@ -44,7 +44,7 @@
    "effectShort": "防御 220%上昇(所領防御陣形第4列以降の部隊にも適用)",
    "afterTarget": "全",
    "afterRate": "60%",
-   "afterEffectShort": "攻撃 810%上昇+防御810%上昇(コスト-1)"
+   "afterEffectShort": "攻撃810%上昇+防御810%上昇+部隊消費コスト-1(特殊効果は模倣不可)"
   },
   {
    "slot": "B",
@@ -57,7 +57,7 @@
    "effectShort": "防御 220%上昇(所領防御陣形第4列以降の部隊にも適用)",
    "afterTarget": "全",
    "afterRate": "60%",
-   "afterEffectShort": "攻撃 810%上昇+防御810%上昇(コスト-1)"
+   "afterEffectShort": "攻撃810%上昇+防御810%上昇+部隊消費コスト-1(特殊効果は模倣不可)"
   },
   {
    "slot": "C",
@@ -70,7 +70,7 @@
    "effectShort": "防御 220%上昇(所領防御陣形第4列以降の部隊にも適用)",
    "afterTarget": "全",
    "afterRate": "60%",
-   "afterEffectShort": "攻撃 810%上昇+防御810%上昇(コスト-1)"
+   "afterEffectShort": "攻撃810%上昇+防御810%上昇+部隊消費コスト-1(特殊効果は模倣不可)"
   },
   {
    "slot": "S1",
@@ -79,8 +79,8 @@
    "afterSkill": "龍驤虎躍",
    "afterRank": "SS",
    "target": "全",
-   "rate": "+60%",
-   "effectShort": "攻撃810%上昇+防御810%上昇+部隊消費コストを1低下(模倣不可)"
+   "rate": "60%",
+   "effectShort": "攻撃810%上昇+防御810%上昇+部隊消費コスト-1(特殊効果は模倣不可)"
   },
   {
    "slot": "S2",
@@ -89,7 +89,7 @@
    "afterSkill": "志半ノ矛楯",
    "afterRank": "A",
    "target": "全",
-   "rate": "+65%",
+   "rate": "65%",
    "effectShort": "攻撃465%上昇+防御465%上昇(模倣不可)"
   }
  ],

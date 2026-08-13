@@ -69,12 +69,12 @@
    "rank": "A",
    "afterSkill": "布都御魂ノ鬨",
    "afterRank": "SS",
-   "target": null,
+   "target": "全",
    "rate": null,
-   "effectShort": null,
+   "effectShort": "攻撃70%上昇+防御70%上昇(このスキルを所持する武将の全スキルの卓越確率に25%を加算する(模倣不可))",
    "afterTarget": "全",
-   "afterRate": "+35%",
-   "afterEffectShort": "攻撃 40%上昇+防御 40%上昇(部隊内レアリティS以上のスキル個数×20%加算)"
+   "afterRate": "35%",
+   "afterEffectShort": "攻撃40%上昇+防御40%上昇+所属部隊内のレアリティS以上のスキル個数×20%を攻防効果に加算"
   },
   {
    "slot": "B",
@@ -82,12 +82,12 @@
    "rank": "A",
    "afterSkill": "布都御魂ノ鬨",
    "afterRank": "SS",
-   "target": null,
+   "target": "全",
    "rate": null,
-   "effectShort": null,
+   "effectShort": "攻撃70%上昇+防御70%上昇(このスキルを所持する武将の全スキルの卓越確率に25%を加算する(模倣不可))",
    "afterTarget": "全",
-   "afterRate": "+35%",
-   "afterEffectShort": "攻撃 40%上昇+防御 40%上昇(部隊内レアリティS以上のスキル個数×20%加算)"
+   "afterRate": "35%",
+   "afterEffectShort": "攻撃40%上昇+防御40%上昇+所属部隊内のレアリティS以上のスキル個数×20%を攻防効果に加算"
   },
   {
    "slot": "C",
@@ -99,7 +99,7 @@
    "rate": null,
    "effectShort": null,
    "afterTarget": "全",
-   "afterRate": "+100%",
+   "afterRate": "100%",
    "afterEffectShort": "攻撃70%上昇+防御70%上昇(このスキルを所持する武将の全スキルの卓越確率に25%を加算する(模倣不可))"
   },
   {
@@ -109,7 +109,7 @@
    "afterSkill": "三十五ノ兵法",
    "afterRank": "S",
    "target": null,
-   "rate": "+5%",
+   "rate": "5%",
    "effectShort": "防御時、敵軍のB以下スキルの攻撃効果を×0.6で計算(重複不可・模倣不可)"
   },
   {
@@ -122,7 +122,7 @@
    "rate": null,
    "effectShort": null,
    "afterTarget": "全",
-   "afterRate": "+37%",
+   "afterRate": "37%",
    "afterEffectShort": "防御(敵部隊移動速度÷1.5)%上昇(最も部隊移動速度の大きい敵部隊の数値を参照する)"
   }
  ],

@@ -66,7 +66,7 @@
    "afterRank": "SS",
    "rate": "70%",
    "target": "自身",
-   "effectShort": "自身の初期スキルを模倣(戦闘スキルのみ)"
+   "effectShort": "自身が持つ初期スキルを模倣する(戦闘スキルのみ)"
   },
   {
    "slot": "B",
@@ -89,7 +89,7 @@
    "afterRank": "SS",
    "rate": "30%",
    "target": "全",
-   "effectShort": "防御1030%上昇+特殊効果付き初期スキル無効化"
+   "effectShort": "防御1030%上昇+攻撃部隊の特殊効果付き初期スキル無効化(模倣不可)"
   },
   {
    "slot": "S1",
@@ -109,7 +109,7 @@
    "afterRank": "SS",
    "rate": "64%",
    "target": "槍・馬・砲・器 飛翔10",
-   "effectShort": "防御320%上昇+飛翔値合計×10%加算",
+   "effectShort": "防御 320%+（飛翔値合計×10%）上昇",
    "afterTarget": "全",
    "afterRate": "50%",
    "afterEffectShort": "防御 310%×國才連豪所持武将数(4人)=1240.0%上昇"

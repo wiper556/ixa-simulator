@@ -73,8 +73,8 @@
    "rate": null,
    "effectShort": null,
    "afterTarget": "全",
-   "afterRate": "+35%",
-   "afterEffectShort": "攻撃 40%上昇+防御 40%上昇(部隊内レアリティS以上のスキル個数×20%加算)"
+   "afterRate": "35%",
+   "afterEffectShort": "攻撃40%上昇+防御40%上昇+所属部隊内のレアリティS以上のスキル個数×20%を攻防効果に加算"
   },
   {
    "slot": "B",
@@ -82,9 +82,9 @@
    "rank": "A",
    "afterSkill": null,
    "afterRank": null,
-   "target": null,
-   "rate": null,
-   "effectShort": null
+   "target": "全",
+   "rate": "44%",
+   "effectShort": "攻撃66%上昇(防御66%上昇)"
   },
   {
    "slot": "C",

@@ -79,9 +79,9 @@
    "rank": "SS",
    "afterSkill": null,
    "afterRank": null,
-   "target": "全",
-   "rate": "+48%",
-   "effectShort": "防御(3.5×防御参加武将数)%上昇+飛翔4"
+   "target": "全 飛翔4",
+   "rate": "48%",
+   "effectShort": "防御(3.5×防御参加武将数)%上昇(敵軍飛翔持ち4人未満の時通常武将ダメージを受けない)"
   },
   {
    "slot": "C",
@@ -100,7 +100,7 @@
    "afterSkill": null,
    "afterRank": null,
    "target": "全",
-   "rate": "+30%",
+   "rate": "30%",
    "effectShort": "防御200%上昇(攻撃部隊の武将が持つ特殊効果付き初期スキルを全て無効化・模倣不可)"
   },
   {
@@ -109,9 +109,9 @@
    "rank": "S",
    "afterSkill": null,
    "afterRank": null,
-   "target": null,
-   "rate": null,
-   "effectShort": null
+   "target": "全",
+   "rate": "25%",
+   "effectShort": "防御90%上昇(攻撃部隊の特殊効果付き初期スキルを全て無効化・模倣不可)"
   }
  ],
  "notes": [

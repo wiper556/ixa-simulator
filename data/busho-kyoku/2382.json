@@ -68,7 +68,7 @@
    "rate": "42%",
    "effectShort": "攻撃250%上昇(自軍1部隊での攻撃時3倍)",
    "afterTarget": "全",
-   "afterRate": "+65%",
+   "afterRate": "65%",
    "afterEffectShort": "攻撃465%上昇+防御465%上昇(模倣不可)"
   },
   {
@@ -81,7 +81,7 @@
    "rate": "42%",
    "effectShort": "攻撃250%上昇(自軍1部隊での攻撃時3倍)",
    "afterTarget": "全",
-   "afterRate": "+65%",
+   "afterRate": "65%",
    "afterEffectShort": "攻撃465%上昇+防御465%上昇(模倣不可)"
   },
   {
@@ -92,10 +92,10 @@
    "afterRank": "B",
    "target": "部隊長",
    "rate": "55%",
-   "effectShort": "部隊長の初期スキルを1.1倍に強化して模倣(TR別データは未確認)",
+   "effectShort": "部隊長の模倣可能な初期スキルを1.1倍に強化して模倣(TRなし)",
    "afterTarget": "部隊長",
    "afterRate": "60%",
-   "afterEffectShort": "部隊長の初期スキルを模倣(戦闘スキルのみ)(TR別データは未確認)"
+   "afterEffectShort": "部隊長の初期スキルを模倣(戦闘スキルのみ)(TRなし)"
   },
   {
    "slot": "S1",
@@ -104,7 +104,7 @@
    "afterSkill": "志半ノ矛楯",
    "afterRank": "A",
    "target": "全",
-   "rate": "+65%",
+   "rate": "65%",
    "effectShort": "攻撃465%上昇+防御465%上昇(模倣不可)"
   },
   {
@@ -114,7 +114,7 @@
    "afterSkill": "志半ノ矛楯",
    "afterRank": "A",
    "target": "全",
-   "rate": "+65%",
+   "rate": "65%",
    "effectShort": "攻撃465%上昇+防御465%上昇(模倣不可)"
   }
  ],

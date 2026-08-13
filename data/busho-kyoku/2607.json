@@ -79,7 +79,7 @@
    "rate": null,
    "effectShort": null,
    "afterTarget": "全",
-   "afterRate": "+100%",
+   "afterRate": "100%",
    "afterEffectShort": "攻撃70%上昇+防御70%上昇(このスキルを所持する武将の全スキルの卓越確率に25%を加算する(模倣不可))"
   },
   {
@@ -88,9 +88,9 @@
    "rank": "SSS",
    "afterSkill": "仙剣破斬",
    "afterRank": "SSS",
-   "target": null,
-   "rate": null,
-   "effectShort": null
+   "target": "全 卓越",
+   "rate": "100%",
+   "effectShort": "攻撃115%上昇+防御115%上昇(卓越:追加確率35%で4倍)"
   },
   {
    "slot": "C",
@@ -99,8 +99,8 @@
    "afterSkill": "遠呂智ノ閃光",
    "afterRank": "SS",
    "target": "全",
-   "rate": "+100%",
-   "effectShort": "攻撃125%上昇(卓越:追加確率15%で攻撃効果4倍)"
+   "rate": "100%",
+   "effectShort": "攻撃 125%上昇(卓越追加確率15%・4倍、TR5で攻撃160%)"
   },
   {
    "slot": "S1",
@@ -112,8 +112,8 @@
    "rate": null,
    "effectShort": null,
    "afterTarget": "全",
-   "afterRate": "+100%",
-   "afterEffectShort": "攻撃 125%上昇(卓越追加確率15%・4倍、TR別データは未確認)"
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 125%上昇(卓越追加確率15%・4倍、TR5で攻撃160%)"
   },
   {
    "slot": "S2",
@@ -122,8 +122,8 @@
    "afterSkill": "月詠ノ覇威",
    "afterRank": "SS",
    "target": "全",
-   "rate": "+100%",
-   "effectShort": "攻撃344%上昇+防御344%上昇(自軍全部将全スキルの卓越確率+15%・模倣不可・自軍内重複上限2)"
+   "rate": "100%",
+   "effectShort": "攻撃344%上昇+防御344%上昇+自軍全武将全スキルの卓越確率に15%加算(模倣不可・自軍内重複上限2)"
   }
  ],
  "notes": [

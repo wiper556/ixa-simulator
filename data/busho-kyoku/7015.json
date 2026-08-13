@@ -66,7 +66,9 @@
    "afterRank": "SS",
    "afterTarget": "全",
    "afterRate": "35%",
-   "afterEffectShort": "攻撃20%上昇+防御20%上昇(部隊内S以上スキル数×20%)"
+   "afterEffectShort": "攻撃40%上昇+防御40%上昇+所属部隊内のレアリティS以上のスキル個数×20%を攻防効果に加算",
+   "target": "全",
+   "effectShort": "攻撃70%上昇+防御70%上昇(このスキルを所持する武将の全スキルの卓越確率に25%を加算する(模倣不可))"
   },
   {
    "slot": "B",
@@ -102,7 +104,7 @@
    "afterSkill": "志半ノ矛楯",
    "afterRank": "A",
    "target": "全",
-   "rate": "+65%",
+   "rate": "65%",
    "effectShort": "攻撃465%上昇+防御465%上昇(模倣不可)"
   }
  ],

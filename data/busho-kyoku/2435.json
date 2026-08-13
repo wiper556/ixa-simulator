@@ -73,7 +73,7 @@
    "rate": null,
    "effectShort": null,
    "afterTarget": "全",
-   "afterRate": "+50%",
+   "afterRate": "50%",
    "afterEffectShort": "攻撃70%上昇(部隊内全武将の兵科対象の初期スキルに「砲」対象を追加)"
   },
   {
@@ -82,12 +82,12 @@
    "rank": "A",
    "afterSkill": "布都御魂ノ鬨",
    "afterRank": "SS",
-   "target": null,
+   "target": "全",
    "rate": null,
-   "effectShort": null,
+   "effectShort": "攻撃70%上昇+防御70%上昇(このスキルを所持する武将の全スキルの卓越確率に25%を加算する(模倣不可))",
    "afterTarget": "全",
-   "afterRate": "+35%",
-   "afterEffectShort": "攻撃 40%上昇+防御 40%上昇(部隊内レアリティS以上のスキル個数×20%加算)"
+   "afterRate": "35%",
+   "afterEffectShort": "攻撃40%上昇+防御40%上昇+所属部隊内のレアリティS以上のスキル個数×20%を攻防効果に加算"
   },
   {
    "slot": "C",
@@ -99,7 +99,7 @@
    "rate": null,
    "effectShort": null,
    "afterTarget": "部隊長",
-   "afterRate": "+50%",
+   "afterRate": "50%",
    "afterEffectShort": "所属部隊の部隊長が持つ初期スキルを模倣する(戦闘スキルのみ)"
   },
   {
@@ -108,9 +108,9 @@
    "rank": "A",
    "afterSkill": "隼人演武",
    "afterRank": "A",
-   "target": null,
+   "target": "全",
    "rate": null,
-   "effectShort": null
+   "effectShort": "攻撃70%上昇(部隊内全武将の兵科対象の初期スキルに「砲」対象を追加)"
   },
   {
    "slot": "S2",
@@ -122,7 +122,7 @@
    "rate": null,
    "effectShort": null,
    "afterTarget": "全",
-   "afterRate": "+100%",
+   "afterRate": "100%",
    "afterEffectShort": "攻撃 90%上昇+速度200%上昇(TRなし)"
   }
  ],

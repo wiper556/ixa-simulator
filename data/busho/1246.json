@@ -50,7 +50,7 @@
    "effectShort": "防御440%上昇(敵軍卓越追加確率-9%・重複上限2)",
    "afterTarget": "全",
    "afterRate": "60%",
-   "afterEffectShort": "攻撃 810%上昇+防御810%上昇(コスト-1)"
+   "afterEffectShort": "攻撃810%上昇+防御810%上昇+部隊消費コスト-1(特殊効果は模倣不可)"
   },
   {
    "slot": "B",
@@ -63,7 +63,7 @@
    "effectShort": "防御440%上昇(敵軍卓越追加確率-9%・重複上限2)",
    "afterTarget": "全",
    "afterRate": "60%",
-   "afterEffectShort": "攻撃 810%上昇+防御810%上昇(コスト-1)"
+   "afterEffectShort": "攻撃810%上昇+防御810%上昇+部隊消費コスト-1(特殊効果は模倣不可)"
   },
   {
    "slot": "C",
@@ -96,7 +96,7 @@
    "effectShort": "防御200%上昇+防御戦闘時自部隊内武将が受ける70以下のダメージを最大45に軽減",
    "afterTarget": "全",
    "afterRate": "70%",
-   "afterEffectShort": "防御 270%上昇(HP99以下で3倍)"
+   "afterEffectShort": "防御270%上昇+武将HP99以下の時、防御効果が3倍になる"
   }
  ],
  "notes": [

@@ -40,7 +40,7 @@
    "afterSkill": "戦陣 神楽",
    "afterRank": "A",
    "target": "槍・馬・騎 飛翔4 卓越",
-   "rate": "+55%",
+   "rate": "55%",
    "effectShort": "攻撃84%上昇(卓越:追加確率40%で1.5倍)",
    "afterTarget": "全 飛翔4",
    "afterRate": "100%",
@@ -53,11 +53,11 @@
    "afterSkill": "風林火山",
    "afterRank": "S",
    "target": "部隊長",
-   "rate": "+50%",
-   "effectShort": "部隊長の初期スキルを模倣(戦闘スキルのみ)",
+   "rate": "50%",
+   "effectShort": "所属部隊の部隊長が持つ初期スキルを模倣する(戦闘スキルのみ)",
    "afterTarget": "槍・弓・馬",
    "afterRate": "25%",
-   "afterEffectShort": "攻撃 15%上昇+破壊5%上昇(TR別データは未確認)"
+   "afterEffectShort": "攻撃 15%上昇+破壊5%上昇(TRなし)"
   },
   {
    "slot": "C",
@@ -70,7 +70,7 @@
    "effectShort": "攻撃 77%上昇(卓越:追加確率30%で2倍)",
    "afterTarget": "全",
    "afterRate": "100%",
-   "afterEffectShort": "攻撃 125%上昇(卓越追加確率15%・4倍、TR別データは未確認)"
+   "afterEffectShort": "攻撃 125%上昇(卓越追加確率15%・4倍、TR5で攻撃160%)"
   },
   {
    "slot": "S1",
@@ -80,10 +80,10 @@
    "afterRank": "B",
    "target": "部隊長",
    "rate": "55%",
-   "effectShort": "部隊長の初期スキルを1.1倍に強化して模倣(TR別データは未確認)",
+   "effectShort": "部隊長の模倣可能な初期スキルを1.1倍に強化して模倣(TRなし)",
    "afterTarget": "部隊長",
    "afterRate": "60%",
-   "afterEffectShort": "部隊長の初期スキルを模倣(戦闘スキルのみ)(TR別データは未確認)"
+   "afterEffectShort": "部隊長の初期スキルを模倣(戦闘スキルのみ)(TRなし)"
   },
   {
    "slot": "S2",
@@ -92,7 +92,7 @@
    "afterSkill": "戦陣 吟詠",
    "afterRank": "A",
    "target": "全 卓越",
-   "rate": "+100%",
+   "rate": "100%",
    "effectShort": "攻撃340%上昇+防御340%上昇+部隊内卓越追加確率+20%(模倣不可・特殊効果は自部隊内では重複不可)"
   }
  ],

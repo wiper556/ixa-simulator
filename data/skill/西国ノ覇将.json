@@ -1,0 +1,32 @@
+{
+ "name": "西国ノ覇将",
+ "rank": "A",
+ "baseRate": 42,
+ "target": "槍・馬・砲 飛翔5",
+ "effectSummary": "A/LV10 確率 42% 攻撃30%上昇/対象:槍・馬・砲　飛翔5\n①攻撃30%上昇する(部隊の総コストで効果が変化する)\n②飛翔5を持つ(敵軍に飛翔を持つ武将が5人未満のとき通常武将ダメージを受けない)",
+ "categoryLinks": [
+  {
+   "href": "skills-hishou-atk.html",
+   "label": "飛翔スキル一覧(攻撃)を見る"
+  }
+ ],
+ "sourceCharacters": [
+  {
+   "name": "池田輝政",
+   "no": "7008",
+   "slot": "A",
+   "db": "kyoku"
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "紅蓮ノ刹",
+  "rank": "S"
+ },
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・馬・砲 飛翔5　確率 42% / 攻撃 30%上昇(部隊の総コストで効果が変化)"
+  }
+ ]
+}

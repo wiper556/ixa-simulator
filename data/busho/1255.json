@@ -50,7 +50,7 @@
    "effectShort": "防御(6×防御参加武将数)%上昇(120以下で1.5倍)",
    "afterTarget": "全 飛翔9",
    "afterRate": "48%",
-   "afterEffectShort": "防御 6.5%×防御参加武将数(280人)=1820.0%"
+   "afterEffectShort": "防御(6.5×防御参加武将数)%上昇(敵軍飛翔持ち9人未満の時通常武将ダメージを受けない)"
   },
   {
    "slot": "B",
@@ -63,7 +63,7 @@
    "effectShort": "防御(6×防御参加武将数)%上昇(120以下で1.5倍)",
    "afterTarget": "全 飛翔9",
    "afterRate": "48%",
-   "afterEffectShort": "防御 6.5%×防御参加武将数(280人)=1820.0%"
+   "afterEffectShort": "防御(6.5×防御参加武将数)%上昇(敵軍飛翔持ち9人未満の時通常武将ダメージを受けない)"
   },
   {
    "slot": "C",
@@ -93,7 +93,7 @@
    "afterRank": "SS",
    "rate": "56%",
    "target": "全",
-   "effectShort": "防御(3.8×防御参加武将数)%上昇"
+   "effectShort": "防御(3.8×防御参加武将数)%上昇=1064.0%(280人時)"
   }
  ],
  "notes": [

@@ -65,11 +65,11 @@
    "afterSkill": "神光征軍",
    "afterRank": "SS",
    "target": "全",
-   "rate": "+100%",
+   "rate": "100%",
    "effectShort": "攻撃80%上昇+速度50%上昇(武将コストで変動)",
    "afterTarget": "全",
    "afterRate": "100%",
-   "afterEffectShort": "全攻90%上昇+全速200%上昇"
+   "afterEffectShort": "攻撃 90%上昇+速度200%上昇(TRなし)"
   },
   {
    "slot": "B",
@@ -78,8 +78,8 @@
    "afterSkill": "十束ノ神域",
    "afterRank": "SS",
    "target": "全",
-   "rate": "+100%",
-   "effectShort": "速度170%上昇+破壊170%上昇",
+   "rate": "100%",
+   "effectShort": "速度: 170%上昇(破壊: 170%上昇)",
    "afterTarget": "全 覇道",
    "afterRate": "100%",
    "afterEffectShort": "攻撃320%上昇+速度70%上昇+覇道を持つため所属部隊の武将のスキルを無効化・発動率低下から保護"
@@ -95,7 +95,7 @@
    "effectShort": "攻撃320%上昇+速度70%上昇+覇道を持つため所属部隊の武将のスキルを無効化・発動率低下から保護",
    "afterTarget": "全",
    "afterRate": "45%",
-   "afterEffectShort": "攻撃100%上昇+防御参加武将数×5%を攻撃効果に加算"
+   "afterEffectShort": "攻撃100%上昇((5.0×防御参加武将数)%を攻撃効果に加算・模倣不可)"
   },
   {
    "slot": "S1",
@@ -105,7 +105,10 @@
    "afterRank": "SSS",
    "afterTarget": "全",
    "afterRate": "45%",
-   "afterEffectShort": "攻撃170%上昇(自部隊同時攻撃時コスト最大2除外)"
+   "afterEffectShort": "攻撃170%上昇(同時攻撃時、部隊総コストからこの武将分を最大2まで除外・模倣不可)",
+   "target": "全",
+   "rate": "52%",
+   "effectShort": "攻撃118%上昇(同時攻撃時、部隊総コストからこの武将分を最大1.5まで除外・模倣不可)"
   },
   {
    "slot": "S2",
@@ -114,7 +117,7 @@
    "afterSkill": "志半ノ矛楯",
    "afterRank": "A",
    "target": "全",
-   "rate": "+65%",
+   "rate": "65%",
    "effectShort": "攻撃465%上昇+防御465%上昇(模倣不可)"
   }
  ],

@@ -72,8 +72,8 @@
    "target": null,
    "rate": null,
    "effectShort": null,
-   "afterTarget": "全",
-   "afterRate": "+60%",
+   "afterTarget": "全 飛翔2",
+   "afterRate": "60%",
    "afterEffectShort": "防御110%上昇(飛翔2・自軍防御参加武将が30以上の時、防御効果2倍)"
   },
   {
@@ -85,8 +85,8 @@
    "target": null,
    "rate": null,
    "effectShort": null,
-   "afterTarget": "全",
-   "afterRate": "+60%",
+   "afterTarget": "全 飛翔2",
+   "afterRate": "60%",
    "afterEffectShort": "防御110%上昇(飛翔2・自軍防御参加武将が30以上の時、防御効果2倍)"
   },
   {
@@ -95,12 +95,12 @@
    "rank": "A",
    "afterSkill": "海神ノ浮船",
    "afterRank": "SS",
-   "target": null,
+   "target": "全 飛翔2",
    "rate": null,
-   "effectShort": null,
+   "effectShort": "防御110%上昇(飛翔2・自軍防御参加武将が30以上の時、防御効果2倍)",
    "afterTarget": "全 飛翔4",
-   "afterRate": "+48%",
-   "afterEffectShort": "防御 3.5%×防御参加武将数(280人)=980.0%"
+   "afterRate": "48%",
+   "afterEffectShort": "防御(3.5×防御参加武将数)%上昇(敵軍飛翔持ち4人未満の時通常武将ダメージを受けない)"
   },
   {
    "slot": "S1",
@@ -108,12 +108,12 @@
    "rank": "A",
    "afterSkill": "海神ノ浮船",
    "afterRank": "SS",
-   "target": null,
+   "target": "全 飛翔2",
    "rate": null,
-   "effectShort": null,
+   "effectShort": "防御110%上昇(飛翔2・自軍防御参加武将が30以上の時、防御効果2倍)",
    "afterTarget": "全 飛翔4",
-   "afterRate": "+48%",
-   "afterEffectShort": "防御 3.5%×防御参加武将数(280人)=980.0%"
+   "afterRate": "48%",
+   "afterEffectShort": "防御(3.5×防御参加武将数)%上昇(敵軍飛翔持ち4人未満の時通常武将ダメージを受けない)"
   },
   {
    "slot": "S2",
@@ -121,11 +121,11 @@
    "rank": "A",
    "afterSkill": "天穿神滅",
    "afterRank": "SS",
-   "target": null,
-   "rate": null,
-   "effectShort": null,
+   "target": "全",
+   "rate": "44%",
+   "effectShort": "攻撃66%上昇(防御66%上昇)",
    "afterTarget": "砲器",
-   "afterRate": "+50%",
+   "afterRate": "50%",
    "afterEffectShort": "攻撃((ランク+1)xコストx3) %上昇(部隊ランクとコストで効果が変化)"
   }
  ],

@@ -74,7 +74,7 @@
    "rate": "100%",
    "effectShort": "攻撃190%上昇(卓越:追加確率10%で3倍)",
    "afterTarget": "全",
-   "afterRate": "+65%",
+   "afterRate": "65%",
    "afterEffectShort": "攻撃465%上昇+防御465%上昇(模倣不可)"
   },
   {
@@ -87,7 +87,7 @@
    "rate": "100%",
    "effectShort": "攻撃190%上昇(卓越:追加確率10%で3倍)",
    "afterTarget": "全",
-   "afterRate": "+65%",
+   "afterRate": "65%",
    "afterEffectShort": "攻撃465%上昇+防御465%上昇(模倣不可)"
   },
   {
@@ -98,10 +98,10 @@
    "afterRank": "SSS",
    "target": "槍・馬・器・騎 飛翔6 卓越",
    "rate": "100%",
-   "effectShort": "攻撃 210%上昇(卓越:追加確率1%で3倍+飛翔16)(TR別データは未確認)",
-   "afterTarget": "全",
+   "effectShort": "攻撃 210%上昇(卓越:追加確率1%で3倍+飛翔16)(TRなし)",
+   "afterTarget": "全 卓越",
    "afterRate": "100%",
-   "afterEffectShort": "攻撃115%上昇+防御115%上昇(卓越追加確率35%・4倍)"
+   "afterEffectShort": "攻撃115%上昇+防御115%上昇(卓越:追加確率35%で4倍)"
   },
   {
    "slot": "S1",
@@ -110,7 +110,7 @@
    "afterSkill": "志半ノ矛楯",
    "afterRank": "A",
    "target": "全",
-   "rate": "+65%",
+   "rate": "65%",
    "effectShort": "攻撃465%上昇+防御465%上昇(模倣不可)"
   },
   {
@@ -120,7 +120,7 @@
    "afterSkill": "志半ノ矛楯",
    "afterRank": "A",
    "target": "全",
-   "rate": "+65%",
+   "rate": "65%",
    "effectShort": "攻撃465%上昇+防御465%上昇(模倣不可)"
   }
  ],

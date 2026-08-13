@@ -69,11 +69,11 @@
    "rank": "A",
    "afterSkill": "天穿神滅",
    "afterRank": "SS",
-   "target": null,
-   "rate": null,
-   "effectShort": null,
+   "target": "全",
+   "rate": "44%",
+   "effectShort": "攻撃66%上昇(防御66%上昇)",
    "afterTarget": "砲器",
-   "afterRate": "+50%",
+   "afterRate": "50%",
    "afterEffectShort": "攻撃((ランク+1)xコストx3) %上昇(部隊ランクとコストで効果が変化)"
   },
   {
@@ -82,11 +82,11 @@
    "rank": "A",
    "afterSkill": "無双英傑",
    "afterRank": "SS",
-   "target": null,
+   "target": "全",
    "rate": null,
-   "effectShort": null,
+   "effectShort": "攻撃67%上昇+防御67%上昇",
    "afterTarget": "全",
-   "afterRate": "+50%",
+   "afterRate": "50%",
    "afterEffectShort": "攻撃99.9%上昇+防御99.9%上昇(部隊消費コストを0.5低下・特殊効果は模倣不可)"
   },
   {
@@ -99,7 +99,7 @@
    "rate": null,
    "effectShort": null,
    "afterTarget": "全",
-   "afterRate": "+60%",
+   "afterRate": "60%",
    "afterEffectShort": "防御NULL%上昇 (部隊の総コストで効果が変化します)"
   },
   {
@@ -108,12 +108,12 @@
    "rank": "A",
    "afterSkill": "布都御魂ノ鬨",
    "afterRank": "SS",
-   "target": null,
+   "target": "全",
    "rate": null,
-   "effectShort": null,
+   "effectShort": "攻撃70%上昇+防御70%上昇(このスキルを所持する武将の全スキルの卓越確率に25%を加算する(模倣不可))",
    "afterTarget": "全",
-   "afterRate": "+35%",
-   "afterEffectShort": "攻撃 40%上昇+防御 40%上昇(部隊内レアリティS以上のスキル個数×20%加算)"
+   "afterRate": "35%",
+   "afterEffectShort": "攻撃40%上昇+防御40%上昇+所属部隊内のレアリティS以上のスキル個数×20%を攻防効果に加算"
   },
   {
    "slot": "S2",
@@ -121,11 +121,11 @@
    "rank": "A",
    "afterSkill": "天焉相克",
    "afterRank": "SS",
-   "target": null,
+   "target": "槍弓馬",
    "rate": null,
-   "effectShort": null,
+   "effectShort": "攻撃89%上昇",
    "afterTarget": "槍・弓・馬",
-   "afterRate": "+70%",
+   "afterRate": "70%",
    "afterEffectShort": "全攻 30%上昇(部隊の総コストで効果が変化)"
   }
  ],

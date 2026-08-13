@@ -86,8 +86,8 @@
    "afterSkill": null,
    "afterRank": null,
    "target": "全",
-   "rate": "+100%",
-   "effectShort": "攻撃125%上昇(卓越:追加確率15%で攻撃効果4倍)"
+   "rate": "100%",
+   "effectShort": "攻撃 125%上昇(卓越追加確率15%・4倍、TR5で攻撃160%)"
   },
   {
    "slot": "C",
@@ -96,7 +96,7 @@
    "afterSkill": null,
    "afterRank": null,
    "target": "槍・馬・砲",
-   "rate": "+100%",
+   "rate": "100%",
    "effectShort": "攻撃160%上昇(卓越:追加確率25%で攻撃効果3倍)"
   },
   {
@@ -106,7 +106,7 @@
    "afterSkill": null,
    "afterRank": null,
    "target": "全",
-   "rate": "+100%",
+   "rate": "100%",
    "effectShort": "攻撃250%上昇+防御250%上昇(卓越:追加確率-50%で3倍・模倣不可)"
   },
   {
@@ -116,8 +116,8 @@
    "afterSkill": null,
    "afterRank": null,
    "target": "全",
-   "rate": "+100%",
-   "effectShort": "攻撃344%上昇+防御344%上昇(自軍全部将全スキルの卓越確率+15%・模倣不可・自軍内重複上限2)"
+   "rate": "100%",
+   "effectShort": "攻撃344%上昇+防御344%上昇+自軍全武将全スキルの卓越確率に15%加算(模倣不可・自軍内重複上限2)"
   }
  ],
  "notes": [

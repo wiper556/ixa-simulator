@@ -72,10 +72,23 @@
    "slot": "A"
   }
  ],
+ "grantedViaSkills": [
+  {
+   "skill": "九字ノ呪法",
+   "rank": "S"
+  },
+  {
+   "skill": "傾国ノ艶姫",
+   "rank": "S"
+  }
+ ],
  "ownHiddenCandidate": {
   "skill": "摩利支天ノ法",
   "rank": "SSS"
  },
+ "notes": [
+  "2026-08-13: A-3-12の逆方向リンク。武将のsynthesisTableでは1次がこのスキルに変化するのに、こちら側から元スキルを指していなかった。1次→2次の組100件を元スキルのownHiddenCandidateと突き合わせ、矛盾0件を確かめたうえで機械的に張った。"
+ ],
  "trTable": [
   {
    "level": "LV10",

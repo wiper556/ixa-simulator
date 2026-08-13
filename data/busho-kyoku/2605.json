@@ -69,9 +69,9 @@
    "rank": "SS",
    "afterSkill": "禍津日神ノ謀",
    "afterRank": "SS",
-   "target": null,
+   "target": "全",
    "rate": null,
-   "effectShort": null
+   "effectShort": "防御145%上昇+自部隊の武将ダメージ軽減3%(重複発動上限4)"
   },
   {
    "slot": "B",
@@ -79,8 +79,8 @@
    "rank": "S",
    "afterSkill": null,
    "afterRank": null,
-   "target": "全",
-   "rate": "+70%",
+   "target": "全 飛翔7",
+   "rate": "70%",
    "effectShort": "攻撃190%上昇+防御190%上昇(飛翔7・所属部隊の飛翔Xを飛翔[X+2]に・模倣不可)"
   },
   {
@@ -89,9 +89,9 @@
    "rank": "S",
    "afterSkill": "煙霞迷霧",
    "afterRank": "S",
-   "target": null,
+   "target": "全",
    "rate": null,
-   "effectShort": null
+   "effectShort": "飛翔8(攻撃110%上昇+防御110%上昇・所属部隊の武将が・飛翔X・を持つとき、それらは代わりに・飛翔[X+4]・を持つ(模倣不可・部隊内重複不可))"
   },
   {
    "slot": "S1",
@@ -99,9 +99,9 @@
    "rank": "SS",
    "afterSkill": "永世ノ天隻",
    "afterRank": "SS",
-   "target": null,
+   "target": "全 飛翔9",
    "rate": null,
-   "effectShort": null
+   "effectShort": "防御(6.5×防御参加武将数)%上昇(敵軍飛翔持ち9人未満の時通常武将ダメージを受けない)"
   },
   {
    "slot": "S2",
@@ -109,12 +109,12 @@
    "rank": "SS",
    "afterSkill": "天地黎明",
    "afterRank": "SSS",
-   "target": null,
+   "target": "全",
    "rate": null,
-   "effectShort": null,
+   "effectShort": "防御200%上昇+防御戦闘時自部隊内武将が受ける70以下のダメージを最大45に軽減",
    "afterTarget": "全",
-   "afterRate": "+70%",
-   "afterEffectShort": "防御 270%上昇(HP99以下で3倍)"
+   "afterRate": "70%",
+   "afterEffectShort": "防御270%上昇+武将HP99以下の時、防御効果が3倍になる"
   }
  ],
  "notes": [

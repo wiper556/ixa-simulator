@@ -77,7 +77,7 @@
    "afterRank": "SS",
    "rate": "100%",
    "target": "全",
-   "effectShort": "防御740%上昇+敵軍卓越確率-8%"
+   "effectShort": "防御740%上昇+防衛戦闘時敵軍の卓越確率-8%する(自軍内重複上限2)"
   },
   {
    "slot": "B",
@@ -97,7 +97,7 @@
    "afterRank": "SSS",
    "rate": "43%",
    "target": "全 飛翔13",
-   "effectShort": "防御を係数×人数で上昇"
+   "effectShort": "防御 9.4%×防御参加武将数(280人)=2632.0%"
   },
   {
    "slot": "S1",
@@ -107,7 +107,7 @@
    "afterRank": "SSS",
    "rate": "60%",
    "target": "全",
-   "effectShort": "防御50%+破壊を係数×人数で上昇"
+   "effectShort": "防御50%上昇+破壊を係数×人数で上昇"
   },
   {
    "slot": "S2",

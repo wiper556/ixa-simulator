@@ -67,8 +67,8 @@
    "target": "全",
    "rate": "100%",
    "effectShort": "攻撃160%上昇(自合流時他部隊にも加算・模倣不可)",
-   "afterTarget": "馬器騎",
-   "afterRate": "+100%",
+   "afterTarget": "馬・器・騎",
+   "afterRate": "100%",
    "afterEffectShort": "攻撃430%上昇 / 速度100%上昇(自部隊同時攻撃時、参加自部隊中最速の部隊移動時間を用いて合流出陣できる(模倣不可))"
   },
   {
@@ -80,8 +80,8 @@
    "target": "全",
    "rate": "100%",
    "effectShort": "攻撃160%上昇(自合流時他部隊にも加算・模倣不可)",
-   "afterTarget": "馬器騎",
-   "afterRate": "+100%",
+   "afterTarget": "馬・器・騎",
+   "afterRate": "100%",
    "afterEffectShort": "攻撃430%上昇 / 速度100%上昇(自部隊同時攻撃時、参加自部隊中最速の部隊移動時間を用いて合流出陣できる(模倣不可))"
   },
   {
@@ -91,7 +91,7 @@
    "afterSkill": "志半ノ矛楯",
    "afterRank": "A",
    "target": "全",
-   "rate": "+65%",
+   "rate": "65%",
    "effectShort": "攻撃465%上昇+防御465%上昇(模倣不可)"
   },
   {
@@ -101,10 +101,10 @@
    "afterSkill": "志半ノ矛楯",
    "afterRank": "A",
    "target": "馬・器・騎",
-   "rate": "+100%",
-   "effectShort": "攻撃430%上昇+速度100%上昇(合流出陣時最速部隊の移動時間を使用・模倣不可)",
+   "rate": "100%",
+   "effectShort": "攻撃430%上昇 / 速度100%上昇(自部隊同時攻撃時、参加自部隊中最速の部隊移動時間を用いて合流出陣できる(模倣不可))",
    "afterTarget": "全",
-   "afterRate": "+65%",
+   "afterRate": "65%",
    "afterEffectShort": "攻撃465%上昇+防御465%上昇(模倣不可)"
   },
   {
@@ -114,7 +114,7 @@
    "afterSkill": "志半ノ矛楯",
    "afterRank": "A",
    "target": "全",
-   "rate": "+65%",
+   "rate": "65%",
    "effectShort": "攻撃465%上昇+防御465%上昇(模倣不可)"
   }
  ],

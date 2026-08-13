@@ -70,10 +70,10 @@
    "afterSkill": "魔弾奏者",
    "afterRank": "S",
    "target": "全",
-   "rate": "+100%",
+   "rate": "100%",
    "effectShort": "攻撃420%上昇+速度135%上昇(最速合流出陣・帰還速度3倍・模倣・重複不可)",
-   "afterTarget": "槍・弓・砲・器　飛翔10",
-   "afterRate": "+64%",
+   "afterTarget": "槍・弓・砲・器 飛翔10",
+   "afterRate": "64%",
    "afterEffectShort": "攻撃 50%上昇(飛翔値合計×9%加算)"
   },
   {
@@ -83,10 +83,10 @@
    "afterSkill": "魔弾奏者",
    "afterRank": "S",
    "target": "全",
-   "rate": "+100%",
+   "rate": "100%",
    "effectShort": "攻撃420%上昇+速度135%上昇(最速合流出陣・帰還速度3倍・模倣・重複不可)",
-   "afterTarget": "槍・弓・砲・器　飛翔10",
-   "afterRate": "+64%",
+   "afterTarget": "槍・弓・砲・器 飛翔10",
+   "afterRate": "64%",
    "afterEffectShort": "攻撃 50%上昇(飛翔値合計×9%加算)"
   },
   {
@@ -99,7 +99,7 @@
    "rate": null,
    "effectShort": null,
    "afterTarget": "全",
-   "afterRate": "+70%",
+   "afterRate": "70%",
    "afterEffectShort": "飛翔8(攻撃110%上昇+防御110%上昇・所属部隊の武将が・飛翔X・を持つとき、それらは代わりに・飛翔[X+4]・を持つ(模倣不可・部隊内重複不可))"
   },
   {
@@ -108,12 +108,12 @@
    "rank": "S",
    "afterSkill": "星神闘覇",
    "afterRank": "SSS",
-   "target": null,
-   "rate": null,
-   "effectShort": null,
+   "target": "槍・弓・砲・器 飛翔10",
+   "rate": "64%",
+   "effectShort": "攻撃 50%上昇(飛翔値合計×9%加算)",
    "afterTarget": "全 飛翔15",
-   "afterRate": "+100%",
-   "afterEffectShort": "攻撃 770%上昇+速度200%上昇(TR別データは未確認)"
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 740%上昇+速度200%上昇(TR5で攻撃1660%・速度300%)"
   },
   {
    "slot": "S2",
@@ -122,7 +122,7 @@
    "afterSkill": "氷塊三連撃",
    "afterRank": "SSS",
    "target": "全",
-   "rate": "+45%",
+   "rate": "45%",
    "effectShort": "攻撃170%上昇(同時攻撃時、部隊総コストからこの武将分を最大2まで除外・模倣不可)"
   }
  ],

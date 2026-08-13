@@ -79,7 +79,7 @@
    "rate": null,
    "effectShort": null,
    "afterTarget": "馬器騎",
-   "afterRate": "+40%",
+   "afterRate": "40%",
    "afterEffectShort": "攻撃75%上昇 防御75%上昇 速度50%上昇"
   },
   {
@@ -92,7 +92,7 @@
    "rate": null,
    "effectShort": null,
    "afterTarget": "馬器騎",
-   "afterRate": "+40%",
+   "afterRate": "40%",
    "afterEffectShort": "攻撃75%上昇 防御75%上昇 速度50%上昇"
   },
   {
@@ -105,7 +105,7 @@
    "rate": null,
    "effectShort": null,
    "afterTarget": "馬器騎",
-   "afterRate": "+40%",
+   "afterRate": "40%",
    "afterEffectShort": "攻撃75%上昇 防御75%上昇 速度50%上昇"
   },
   {
@@ -114,11 +114,11 @@
    "rank": "S",
    "afterSkill": "遁世影武者",
    "afterRank": "B",
-   "target": null,
+   "target": "馬器騎",
    "rate": null,
-   "effectShort": null,
+   "effectShort": "攻撃75%上昇 防御75%上昇 速度50%上昇",
    "afterTarget": "部隊長",
-   "afterRate": "+50%",
+   "afterRate": "50%",
    "afterEffectShort": "所属部隊の部隊長が持つ初期スキルを模倣する(戦闘スキルのみ)"
   },
   {
@@ -128,8 +128,8 @@
    "afterSkill": "建御雷神ノ槌",
    "afterRank": "SS",
    "target": "全",
-   "rate": "+100%",
-   "effectShort": "攻撃135%上昇+防御135%上昇(所持武将の全スキルの卓越確率+30%・模倣不可)"
+   "rate": "100%",
+   "effectShort": "攻撃135%上昇+防御135%上昇+このスキルを所持する武将の全スキルの卓越確率に30%加算(模倣不可)"
   }
  ],
  "notes": [

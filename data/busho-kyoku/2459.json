@@ -69,12 +69,12 @@
    "rank": "A",
    "afterSkill": "海神ノ浮船",
    "afterRank": "SS",
-   "target": null,
+   "target": "全 飛翔2",
    "rate": null,
-   "effectShort": null,
+   "effectShort": "防御110%上昇(飛翔2・自軍防御参加武将が30以上の時、防御効果2倍)",
    "afterTarget": "全 飛翔4",
-   "afterRate": "+48%",
-   "afterEffectShort": "防御 3.5%×防御参加武将数(280人)=980.0%"
+   "afterRate": "48%",
+   "afterEffectShort": "防御(3.5×防御参加武将数)%上昇(敵軍飛翔持ち4人未満の時通常武将ダメージを受けない)"
   },
   {
    "slot": "B",
@@ -86,8 +86,8 @@
    "rate": null,
    "effectShort": null,
    "afterTarget": "全",
-   "afterRate": "+56%",
-   "afterEffectShort": "防御 3.8%×防御参加武将数(280人)=1064.0%"
+   "afterRate": "56%",
+   "afterEffectShort": "防御(3.8×防御参加武将数)%上昇=1064.0%(280人時)"
   },
   {
    "slot": "C",
@@ -99,8 +99,8 @@
    "rate": null,
    "effectShort": null,
    "afterTarget": "全",
-   "afterRate": "+56%",
-   "afterEffectShort": "防御 3.8%×防御参加武将数(280人)=1064.0%"
+   "afterRate": "56%",
+   "afterEffectShort": "防御(3.8×防御参加武将数)%上昇=1064.0%(280人時)"
   },
   {
    "slot": "S1",
@@ -109,8 +109,8 @@
    "afterSkill": "天磐船",
    "afterRank": "SS",
    "target": "全",
-   "rate": "+56%",
-   "effectShort": "防御(3.8×防御参加武将数)%上昇"
+   "rate": "56%",
+   "effectShort": "防御(3.8×防御参加武将数)%上昇=1064.0%(280人時)"
   },
   {
    "slot": "S2",
@@ -119,11 +119,11 @@
    "afterSkill": "氷瀑ノ封神",
    "afterRank": "SSS",
    "target": "全",
-   "rate": "+25%",
+   "rate": "25%",
    "effectShort": "防御90%上昇(攻撃部隊の特殊効果付き初期スキルを全て無効化・模倣不可)",
    "afterTarget": "全",
-   "afterRate": "+30%",
-   "afterEffectShort": "防御200%上昇(攻撃部隊の特殊効果付き初期スキルを全て無効化・模倣不可)"
+   "afterRate": "30%",
+   "afterEffectShort": "防御200%上昇(攻撃部隊の武将が持つ特殊効果付き初期スキルを全て無効化・模倣不可)"
   }
  ],
  "notes": [

@@ -69,12 +69,12 @@
    "rank": "A",
    "afterSkill": "布都御魂ノ鬨",
    "afterRank": "SS",
-   "target": null,
+   "target": "全",
    "rate": null,
-   "effectShort": null,
+   "effectShort": "攻撃70%上昇+防御70%上昇(このスキルを所持する武将の全スキルの卓越確率に25%を加算する(模倣不可))",
    "afterTarget": "全",
-   "afterRate": "+35%",
-   "afterEffectShort": "攻撃 40%上昇+防御 40%上昇(部隊内レアリティS以上のスキル個数×20%加算)"
+   "afterRate": "35%",
+   "afterEffectShort": "攻撃40%上昇+防御40%上昇+所属部隊内のレアリティS以上のスキル個数×20%を攻防効果に加算"
   },
   {
    "slot": "B",
@@ -82,12 +82,12 @@
    "rank": "B",
    "afterSkill": "風林火山",
    "afterRank": "S",
-   "target": null,
+   "target": "部隊長",
    "rate": null,
-   "effectShort": null,
+   "effectShort": "所属部隊の部隊長が持つ初期スキルを模倣する(戦闘スキルのみ)",
    "afterTarget": "槍・弓・馬",
-   "afterRate": "+25%",
-   "afterEffectShort": "攻撃 15%上昇+破壊5%上昇(TR別データは未確認)"
+   "afterRate": "25%",
+   "afterEffectShort": "攻撃 15%上昇+破壊5%上昇(TRなし)"
   },
   {
    "slot": "C",
@@ -95,9 +95,9 @@
    "rank": "B",
    "afterSkill": "風狂幻術",
    "afterRank": "B",
-   "target": null,
-   "rate": null,
-   "effectShort": null
+   "target": "部隊長",
+   "rate": "53%",
+   "effectShort": "部隊長の初期スキルを模倣(戦闘スキルのみ、TRなし)"
   },
   {
    "slot": "S1",
@@ -105,9 +105,9 @@
    "rank": "B",
    "afterSkill": "宿木",
    "afterRank": "B",
-   "target": null,
-   "rate": null,
-   "effectShort": null
+   "target": "部隊長",
+   "rate": "55%",
+   "effectShort": "部隊長の初期スキルを模倣(戦闘スキルのみ)"
   },
   {
    "slot": "S2",

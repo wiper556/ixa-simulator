@@ -100,7 +100,7 @@
    "afterRank": "SSS",
    "target": "部隊長",
    "rate": "70%",
-   "effectShort": "部隊長の初期スキルを1.25倍模倣"
+   "effectShort": "所属部隊の部隊長が持つ模倣可能な初期スキルを通常攻撃/防御効果1.25倍にして模倣する"
   },
   {
    "slot": "S1",
@@ -109,7 +109,7 @@
    "afterSkill": "天弦ノ威軍",
    "afterRank": "S",
    "target": "弓・馬・焙・騎 不屈1",
-   "rate": "+45%",
+   "rate": "45%",
    "effectShort": "攻撃1000%上昇(自軍城主数10以上で3倍)"
   },
   {
@@ -120,7 +120,7 @@
    "afterRank": "SSS",
    "target": "全 撤退",
    "rate": "43%",
-   "effectShort": "攻撃を係数×人数で上昇"
+   "effectShort": "攻撃(9.2×防御参加武将数)%上昇+撤退(陣での防御戦闘に参加しない)"
   }
  ],
  "notes": [

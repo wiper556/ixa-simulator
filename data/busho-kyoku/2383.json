@@ -43,7 +43,7 @@
    "rate": "50%",
    "effectShort": "攻撃430%上昇(強襲専用部隊でコスト消費-1.5・模倣不可)",
    "afterTarget": "全",
-   "afterRate": "+65%",
+   "afterRate": "65%",
    "afterEffectShort": "攻撃465%上昇+防御465%上昇(模倣不可)"
   },
   {
@@ -56,7 +56,7 @@
    "rate": "50%",
    "effectShort": "攻撃430%上昇(強襲専用部隊でコスト消費-1.5・模倣不可)",
    "afterTarget": "全",
-   "afterRate": "+65%",
+   "afterRate": "65%",
    "afterEffectShort": "攻撃465%上昇+防御465%上昇(模倣不可)"
   },
   {
@@ -66,11 +66,11 @@
    "afterSkill": "戦陣 吟詠",
    "afterRank": "A",
    "target": "槍・弓・器・鉄",
-   "rate": "+50%",
+   "rate": "50%",
    "effectShort": "攻撃350%上昇+強襲専用部隊でコスト消費-1.5(模倣不可)",
-   "afterTarget": "全",
+   "afterTarget": "全 卓越",
    "afterRate": "100%",
-   "afterEffectShort": "攻撃 340%上昇+防御 340%上昇(部隊内卓越追加確率+20%)"
+   "afterEffectShort": "攻撃340%上昇+防御340%上昇+部隊内卓越追加確率+20%(模倣不可・特殊効果は自部隊内では重複不可)"
   },
   {
    "slot": "S1",
@@ -79,7 +79,7 @@
    "afterSkill": "志半ノ矛楯",
    "afterRank": "A",
    "target": "全",
-   "rate": "+65%",
+   "rate": "65%",
    "effectShort": "攻撃465%上昇+防御465%上昇(模倣不可)"
   },
   {
@@ -89,7 +89,7 @@
    "afterSkill": "志半ノ矛楯",
    "afterRank": "A",
    "target": "全",
-   "rate": "+65%",
+   "rate": "65%",
    "effectShort": "攻撃465%上昇+防御465%上昇(模倣不可)"
   }
  ],

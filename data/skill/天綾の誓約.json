@@ -18,15 +18,20 @@
    "db": "kyoku"
   }
  ],
+ "ownHiddenCandidate": {
+  "skill": "天焉相克",
+  "rank": "SS"
+ },
+ "notes": [
+  "2026-08-12作成。合成候補に出てくるS以上はページを作る規約(A-3)の未処理分。",
+  "ixanary.com/skills/天綾の誓約 から取得。categoryLinksは9項目の判定が要るため付けていない。",
+  "2026-08-13: 移植後スキルが未設定だった。武将のsynthesisTableで 天綾の誓約 → 天焉相克[SS] と記録されているので補った(監査の「ownHiddenCandidate未設定」4件のうちの1つ)。"
+ ],
  "trTable": [
   {
    "level": "LV10",
    "points": "-",
    "effect": "全　確率 60% / 攻撃99.9%上昇 防御99.9%上昇 破壊150%上昇"
   }
- ],
- "notes": [
-  "2026-08-12作成。合成候補に出てくるS以上はページを作る規約(A-3)の未処理分。",
-  "ixanary.com/skills/天綾の誓約 から取得。categoryLinksは9項目の判定が要るため付けていない。"
  ]
 }
