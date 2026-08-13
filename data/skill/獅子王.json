@@ -1,0 +1,27 @@
+{
+ "name": "獅子王",
+ "rank": "A",
+ "baseRate": 49,
+ "target": "全",
+ "noMimic": true,
+ "effectSummary": "A/LV10 確率 49% 攻撃69%上昇/対象:全\n模倣不可\n①攻撃69%上昇する\n②自合流時他の自分の部隊にもこのスキルの攻撃効果を加算する(部隊内重複不可)",
+ "sourceCharacters": [
+  {
+   "name": "蒲生氏郷",
+   "no": "7403",
+   "slot": "A",
+   "db": "kyoku"
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "銀翼神騎兵",
+  "rank": "S"
+ },
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 49% / 攻撃 69%上昇(自合流時に他の自部隊にも加算・模倣不可・部隊内重複不可)"
+  }
+ ]
+}
