@@ -280,7 +280,13 @@ def main():
         if re.search(r"飛翔(?!を持たない)", text) and "飛翔" in (s.get("target") or "") \
                 and not any("hishou" in (c or "") for c in cl):
             add("categoryLinks漏れ", "MID", "「%s」: 飛翔一覧へのリンク無し" % s["name"])
-        if "防御参加武将数" in text and not any("count" in (c or "") for c in cl):
+        # 2026-08-13: 「防御参加武将数」を含むだけで拾っていたので、
+        # 「防御参加武将数が150以下のとき効果3倍」のように**人数を条件に使っているだけ**の
+        # スキルまで人数依存一覧へ誘導していた(鳳凰ノ幻華)。
+        # C-01は「一覧のエントリとして載っている一覧だけ」なので、
+        # 効果が人数に比例するもの(×防御参加武将数)に限る。
+        prop = re.search(r"[×x\*)]\s*防御参加武将数|防御参加武将数\s*[×x\*]", text)
+        if prop and not any("count" in (c or "") for c in cl):
             add("categoryLinks漏れ", "MID", "「%s」: 人数依存一覧へのリンク無し" % s["name"])
 
     # 未計算の式。
