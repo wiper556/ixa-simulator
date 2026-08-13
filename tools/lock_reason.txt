@@ -3,3 +3,4 @@
 2026-08-13	-1	hooks:tools/audit_selftest.py	自己テストに注入ケースを1件追加(PreToolUseの設定が壊れている)
 2026-08-13	-5	hooks:.claude/settings.json,hooks:.github/workflows/rules.yml,hooks:tools/audit_selftest.py,hooks:tools/lock.py,hooks:tools/rules.py	P-2対応。ブランチ保護を外す操作を止めるフックと、保護設定の期待値ファイルを追加した
 2026-08-13	-12	present:docs/RULES.md,present:tools/gate_selftest.py,hooks:.claude/settings.json,hooks:.github/workflows/rules.yml,hooks:tools/audit_selftest.py,hooks:tools/hooks/no_protection_bypass.py,hooks:tools/hooks/pre-commit,hooks:tools/hooks/pre-merge-commit	第5回レッドチーム49件の修正で門番9本を改訂(P-2再実装/区画分割/AST化/HASHED追加)。中身の変更は本コミットの差分そのもの
+2026-08-13	-1	hooks:tools/audit_selftest.py	自己テストに注入ケース5件を追加(廃止情報源/個人設定2件/.git直接書き換え2件)し、注入枠組みにファイル作成を足した
