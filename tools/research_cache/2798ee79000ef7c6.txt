@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="https://blog-imgs-123.fc2.com/i/x/a/ixagno/cb5ku-xm0kg-001.ico">
+<title>【鍛錬】が可能なスキルの性能比較と優先度 | 戦国IXA攻略　ランカーへの近道！</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "戦国IXA攻略　ランカーへの近道！",
+  "url": "https://ixagno.blog.fc2.com/"
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"BlogPosting",
+  "headline":"【鍛錬】が可能なスキルの性能比較と優先度",
+  "description":"【戦国ixa攻略サイト・ブログ】最新の仕様や武将考察、スキル性能比較、火力比較、果心異境攻略などを掲載。プレイ日記も交えながら毎日更新。攻略Wikiには無い情報をいち早くお届け。",
+  "author":{
+    "@type":"Person",
+    "name":"影武者"
+  },
+  "publisher":{
+    "@type":"Organization",
+    "name":"戦国IXA攻略　ランカーへの近道！",
+    "logo":{
+      "@type":"ImageObject",
+      "url":"https://blog-imgs-184.fc2.com/i/x/a/ixagno/2026062520473371a.jpg"
+    }
+  }
+}
+</script>
+
+<meta content="width=device-width, initial-scale=1.0, user-scalable=yes" name="viewport">
+<meta content="telephone=no" name="format-detection">
+<meta content="影武者" name="author">
+<meta property="og:site_name" content="戦国IXA攻略　ランカーへの近道！" />
+<meta name="google-site-verification" content="L50kN20gYu61AfYLvu95RowUt37DoR6D5C4XUyaC1oI" />
+
+<!-- ========================================================
+     【SEO最適化】各ページの特性に合わせた robots タグの一本化
+     ======================================================== -->
+<!-- 
+  【完全解決】FC2のページ判定タグ（page_area等）がバグで誤動作するため一斉撤去。
+  ブログ全体のインデックス登録（個別記事、トップ含む）を無条件で100%許可する安全な記述にリセット。
+-->
+<meta name="robots" content="max-image-preview:large">
+
+
+
+<!--個別記事ページ：記事の概要（または記事冒頭）を出力-->
+<meta name="description" content="戦国IXA　鍛錬後のスキル性能比較鍛錬可能になった旧武将、旧スキル一覧ｔ含めたTR5の性能と鍛錬優先度を掲載。■更新履歴・2026年8月【思金神ノ深謀】が鍛錬可能になったので追加・2026年3月【龍驤虎躍】が鍛錬可能になったので追加・2025年12月【破軍騎行】が鍛錬可能になったので追加・2025年10月【星神闘覇】が鍛錬可能になったので追加鍛錬Lv別のスキル性能については、各スキルや武将名のリンク先で確認することができます。..." />
+
+
+<!-- ========================================================
+     【SEO最適化】各ページの canonical（正規化）設定
+     ======================================================== -->
+<link rel="canonical" href="https://ixagno.blog.fc2.com/blog-entry-9844.html">
+
+<!-- ヘッダー画像の最優先プリロード -->
+<link rel="preload" as="image" href="https://blog-imgs-158.fc2.com/i/x/a/ixagno/202412051915335b9.jpg" fetchpriority="high">
+
+<!-- 本体CSSを最速で非同期読み込み -->
+<link rel="stylesheet" href="https://blog-imgs-184.fc2.com/i/x/a/ixagno/css/35a5b.css" media="print" onload="this.media='all'; this.onload=null; document.documentElement.style.visibility='visible';">
+<noscript><link rel="stylesheet" href="https://blog-imgs-184.fc2.com/i/x/a/ixagno/css/35a5b.css"></noscript>
+<style>
+  /* 【超重要：チラつき防止】CSSの準備が整うまで画面全体の描画を「一瞬だけ隠す」設定 */
+  html { visibility: hidden; }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; background-repeat: no-repeat; }
+  body { background: #000; font-family: sans-serif; overflow-x: hidden; }
+  
+  /* PCでのヘッダー設定（背景黒＋右寄せ画像を1行にまとめました） */
+  .topimg { 
+    height: 120px; 
+    display: flex; 
+    align-items: center; 
+    
+    /* ↓【重要】paddingの左側（300px）を大きくあけて、文字を右に押し出します */
+    padding: 0 20px 0 300px; 
+    
+    /* ↓【重要】画像の位置を 100% 0（右）から 0 0（左）に変更しました */
+    background: #000 url('https://blog-imgs-184.fc2.com/i/x/a/ixagno/2026061523501806f.jpg') 0 0 no-repeat;
+    background-size: contain;
+  }
+  
+  #blog-name img { display: block; max-height: 50px; width: auto; }
+  
+@media only screen and (max-width: 530px) {
+  .topimg { 
+    height: auto; 
+    padding: 10px; 
+    display: block; 
+    /* ↓【重要】この行を追加して、PC版の背景画像を完全にリセット（消去）します */
+    background-image: none; 
+  }
+  
+  #blog-name img { max-height: 40px; margin: 0 auto; }
+  .box10 { width: 99%; height: auto; float: none; margin: 10px auto; }
+}
+  ins.adsbygoogle { display: block; background: transparent; }
+</style> <!-- ★必ずこのスタイルの閉じタグより前にすべてのCSSを収めます -->
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://ixagno.blog.fc2.com/blog-entry-9844.html">
+<meta property="og:title" content="【鍛錬】が可能なスキルの性能比較と優先度">
+<meta property="og:description" content="戦国IXA　鍛錬後のスキル性能比較鍛錬可能になった旧武将、旧スキル一覧ｔ含めたTR5の性能と鍛錬優先度を掲載。■更新履歴・2026年8月【思金神ノ深謀】が鍛錬可能になったので追加・2026年3月【龍驤虎躍】が鍛錬可能になったので追加・2025年12月【破軍騎行】が鍛錬可能になったので追加・2025年10月【星神闘覇】が鍛錬可能になったので追加鍛錬Lv別のスキル性能については、各スキルや武将名のリンク先で確認することができます。...">
+<meta property="og:image" content="https://blog-imgs-173.fc2.com/i/x/a/ixagno/202408200020418ff.jpg">
+</head>
+<body>
+<div class="topimg1"></div>
+<div id="wrapper">
+<div id="box" class="clearfix">
+<div class="topimg">
+<header>
+      <h1 id="blog-name">
+        <a href="https://ixagno.blog.fc2.com/" title="戦国IXA攻略　ランカーへの近道！ ホームへ">戦国IXA攻略　ランカーへの近道！</a>
+      </h1>
+    </header>
+</div>
+
+<div id="nabimenu">
+  <ul>
+    <li><a href="https://ixagno.blog.fc2.com/">攻略TOP</a></li>
+    <li><a href="https://sengokuixa.jp/" target="_blank" rel="noopener" title="公式サイトへ">IXA 公式サイト</a></li>
+    <li><a href="https://ixagno.blog.fc2.com/blog-entry-3242.html">スキル性能比較</a></li>
+    <li><a href="https://ixagno.blog.fc2.com/blog-entry-8539.html" title="果心異境">果心異境</a></li>
+    <li><a href="https://ixagno.blog.fc2.com/blog-entry-6603.html" title="影武者残党">影武者残党</a></li>
+    <li><a href="https://ixagno.blog.fc2.com/blog-entry-9799.html" title="合戦日程">合戦日程</a></li>
+    <li><a href="https://ixagno.blog.fc2.com/blog-category-86.html" title="武将一覧">武将一覧</a></li>
+    <li><a href="https://ixagno.blog.fc2.com/blog-entry-1570.html">よくある質問</a></li>
+  </ul>
+</div>
+
+<div class="pan_box">
+  <!-- パンくずリストここから（Google対応構造化マークアップ） -->
+    <ol class="breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
+    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+      <a itemprop="item" href="https://ixagno.blog.fc2.com/" title="トップページへ"><span itemprop="name">トップページ</span></a>
+      <meta itemprop="position" content="1" />
+    </li>
+    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+      <a itemprop="item" href="/blog-category-159.html"><span itemprop="name">鍛錬</span></a>
+      <meta itemprop="position" content="2" />
+    </li>
+    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+      <span itemprop="name" class="current">【鍛錬】が可能なスキルの性能比較と優先度</span>
+      <meta itemprop="position" content="3" />
+    </li>  </ol>
+  
+  
+  
+    <!-- パンくずリストここまで -->
+</div>
+
+
+<div class="blog">
+<div id="left-box">
+<div class="menu_title" style="text-align: center;">サイト内検索</div>
+<div class="box10">
+<script async src="https://cse.google.com/cse.js?cx=0018c88b6f6c444b8">
+</script>
+<div class="gcse-searchbox-only"></div>
+</div>
+
+<hr>
+<div class="adbox4">
+<!-- IXAサイドバー左上 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1721180882256192"
+     data-ad-slot="8715212431"
+     data-ad-format="vertical"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+<!--プラグイン１-->
+
+<section class="menu_block">
+<div class="menu_title" style="text-align:center">レアリティ別武将【一覧表】</div>
+<div id="m1451237">
+<div class="menu-box">
+<div style="text-align:left"></div>
+<div class="plugin-freearea" style="text-align:left">
+  　<a href="https://ixagno.blog.fc2.com/blog-entry-10740.html" title="傑【一覧表】">【傑】武将一覧</a><br>
+
+　<a href="http://ixagno.blog.fc2.com/blog-entry-3744.html" title="【天】一覧">【天】武将一覧</a><br>
+
+　<a href="https://ixagno.blog.fc2.com/blog-entry-11077.html" title="【パラレル天】武将一覧">【パラレル天】武将一覧</a><br>
+
+　<a href="http://ixagno.blog.fc2.com/blog-entry-1294.html" title="【シクレ】【限定】【コラボ】一覧">【限定】【シクレ】武将一覧</a><br>
+
+　<a href="http://ixagno.blog.fc2.com/blog-entry-654.html" title="【極】武将一覧">【極】武将一覧</a><br>
+
+　<a href="http://ixagno.blog.fc2.com/blog-entry-504.html" title="【特】武将一覧">【特】武将一覧</a><br>
+
+　<a href="https://ixagno.blog.fc2.com/blog-entry-312.html" title="剣豪と将剣豪の成長値比較 ">【剣豪】【将剣豪】の成長値比較 </a><br>
+</div>
+<div style="text-align:left"></div>
+</div></div></section>
+
+<section class="menu_block">
+<div class="menu_title" style="text-align:center">【童】【饗宴】【祝】【雅】【他】</div>
+<div id="m1450827">
+<div class="menu-box">
+<div style="text-align:left"></div>
+<div class="plugin-freearea" style="text-align:left">
+  　<a href="https://ixagno.blog.fc2.com/blog-entry-6545.html" title="【童】一覧と合成テーブル">【童】一覧と合成テーブル</a><br>
+
+　<a href="http://ixagno.blog.fc2.com/blog-entry-975.html" title="【饗宴】【雅】【化】【祝】カードの合成テーブルや使い方">【饗宴】【雅】【化】【祝】一覧</a><br>
+</div>
+<div style="text-align:left"></div>
+</div></div></section>
+
+<section class="menu_block">
+<div class="menu_title" style="text-align:center">おすすめ排停武将</div>
+<div id="m1451260">
+<div class="menu-box">
+<div style="text-align:left"></div>
+<div class="plugin-freearea" style="text-align:left">
+  　<a href="https://ixagno.blog.fc2.com/blog-entry-7805.html" title="使い勝手の良い旧武将【攻撃編】">使い勝手の良い旧武将【攻撃編】</a><br>
+
+　<a href="https://ixagno.blog.fc2.com/blog-entry-7806.html" title="使い勝手の良い旧武将【防御編】">使い勝手の良い旧武将【防御編】</a><br>
+
+　<a href="https://ixagno.blog.fc2.com/blog-entry-10425.html" title="保有しておきたいおすすめ旧武将">保有しておきたいおすすめ旧武将</a>
+</div>
+<div style="text-align:left"></div>
+</div></div></section>
+
+<section class="menu_block">
+<div class="menu_title" style="text-align:center">部隊の火力比較</div>
+<div id="m1451222">
+<div class="menu-box">
+<div style="text-align:left"></div>
+<div class="plugin-freearea" style="text-align:center">
+  <a href="https://ixagno.blog.fc2.com/blog-entry-11042.html" title="【無尽】【飛翔】【卓越】【剣豪】【総コスト】部隊の火力比較【一覧】">【無尽】【飛翔】【卓越】【剣豪】【総コスト】<br>部隊火力比較【一覧】</a>　<span style="color:#ED0000">NEW</span><br>
+
+</div>
+<div style="text-align:left"></div>
+</div></div></section>
+
+<section class="menu_block">
+<div class="menu_title" style="text-align:center">ゲームの仕様と序盤の進め方</div>
+<div id="m1450460">
+<div class="menu-box">
+<div style="text-align:left"></div>
+<div class="plugin-freearea" style="text-align:left">
+  　<a href="https://ixagno.blog.fc2.com/blog-entry-1570.html" title="良くある質問">よくあるご質問（FAQ）</a><br>
+
+　<a href="https://ixagno.blog.fc2.com/blog-category-129.html" title="章別の仕様と章別攻略：一覧">新章の仕様と変更点【一覧】</a><br>
+
+　<a href="https://ixagno.blog.fc2.com/blog-entry-751.html" title="序盤を効率良く進める新規向け講座">序盤を効率良く進めるには</a><br>
+
+　<a href="https://ixagno.blog.fc2.com/blog-entry-9531.html" title="「指南クエスト」の進め方と注意点">「指南クエスト」の進め方と注意点</a><br>
+
+　<a href="https://ixagno.blog.fc2.com/blog-entry-8160.html" title="「スピードくじ」のシリアルコード入力方法">シリアルコード入力方法</a><br>
+
+<br>
+<hr>
+<div class="adbox4">
+<!-- IXA記事中サイドバー(縦長) -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1721180882256192"
+     data-ad-slot="8627374915"
+     data-ad-format="vertical"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div style="text-align:left"></div>
+</div></div></section>
+
+<section class="menu_block">
+<div class="menu_title" style="text-align:center">城主関連</div>
+<div id="m1451269">
+<div class="menu-box">
+<div style="text-align:center"></div>
+<div class="plugin-freearea" style="text-align:left">
+  　<a href="https://ixagno.blog.fc2.com/blog-category-132.html" title="位階制度の効果や報奨内容">位階</a> │ <a href="https://ixagno.blog.fc2.com/blog-category-140.html" title="影城主の仕様について">影城主</a> │ <a href="https://ixagno.blog.fc2.com/blog-entry-1306.html" title="同盟について：一覧">同盟</a> │<a href="https://ixagno.blog.fc2.com/blog-entry-340.html" title="IXA占い">IXA占い</a> │ <a href="https://ixagno.blog.fc2.com/blog-category-38-0.html" title="金山">金山</a><br>
+
+　<a href="https://ixagno.blog.fc2.com/blog-entry-7750.html" title="「勘定」の仕様">勘定</a> │ <a href="https://ixagno.blog.fc2.com/blog-entry-9321.html" title="「離反」の仕様変更">離反</a> │ <a href="https://ixagno.blog.fc2.com/blog-entry-1200.html" title="刷新について：一覧">刷新</a> │ <a href="https://ixagno.blog.fc2.com/blog-entry-8932.html" title="異名の設定方法と入手条件">異名</a> │ <a href="https://ixagno.blog.fc2.com/blog-entry-9504.html" title="「論功行賞」">論功行賞</a><br>
+
+　<a href="https://ixagno.blog.fc2.com/blog-entry-3785.html" title="出品上限額">出品上限額と手数料</a>　│　<a href="https://ixagno.blog.fc2.com/blog-entry-7485.html" title="「銀銭」">銀銭の仕様</a><br>
+
+　<a href="https://ixagno.blog.fc2.com/blog-entry-7678.html" title="「殊勲」と「殊勲交換所」">「殊勲」と「殊勲交換所」</a><br>
+
+　<a href="https://ixagno.blog.fc2.com/blog-entry-7687.html" title="「殊勲交換所」でのアイテム交換優先順位">「殊勲交換所」でのアイテム交換優先順位</a><br>
+
+　<a href="https://ixagno.blog.fc2.com/blog-entry-10639.html" title="【祝】傑の欠片について">【祝】傑の欠片の入手方法</a><br>
+
+　<a href="https://ixagno.blog.fc2.com/blog-entry-8602.html" title="つづらと「万華鏡」「総取手形」入手方法">「万華鏡」「総取手形」の入手方法</a><br>
+
+　<a href="https://ixagno.blog.fc2.com/blog-entry-10212.html" title="戦国 回転遊技(スロット)のボーナス当選率と継続率">回転遊技(スロット)のボーナス当選率と継続率</a><br>
+
+
+</div>
+<div style="text-align:center"></div>
+</div></div></section>
+
+<section class="menu_block">
+<div class="menu_title" style="text-align:center">鍛錬</div>
+<div id="m1451241">
+<div class="menu-box">
+<div style="text-align:left"></div>
+<div class="plugin-freearea" style="text-align:left">
+  　<a href="https://ixagno.blog.fc2.com/blog-entry-9844.html" title="鍛錬が可能なスキルと性能【一覧】">鍛錬が可能なスキルと性能 一覧</a><br>
+
+　<a href="https://ixagno.blog.fc2.com/blog-entry-10122.html" title="おすすめ鍛錬武将">おすすめ鍛錬武将</a><br>
+
+　<a href="https://ixagno.blog.fc2.com/blog-entry-9838.html" title="鍛錬の仕様">鍛錬の仕様</a>　<span style="color:#ED0000">NEW</span><br>
+
+
+　<a href="https://ixagno.blog.fc2.com/blog-entry-10916.html" title="鍛錬は100%か、それとも1枚チャレンジが良いのか？">鍛錬は100%？それとも1枚どっちが良い？</a><br>
+</div>
+<div style="text-align:left"></div>
+</div></div></section>
+
+<section class="menu_block">
+<div class="menu_title" style="text-align:center">Xスキル</div>
+<div id="m1451268">
+<div class="menu-box">
+<div style="text-align:left"></div>
+<div class="plugin-freearea" style="text-align:left">
+  　<a href="https://ixagno.blog.fc2.com/blog-entry-11166.html" title="Xスキル【黎天烈光】の性能">Xスキル【黎天烈光】の性能</a>　<span style="color:#ED0000">NEW</span><br>
+
+　<a href="https://ixagno.blog.fc2.com/blog-entry-10526.html" title="Xスキル【雷轟滅星】の性能と追加方法">Xスキル【雷轟滅星】の性能</a><br>
+
+　<a href="https://ixagno.blog.fc2.com/blog-entry-9529.html" title="Xスキル【天穿奏覇】の性能と追加方法">Xスキル【天穿奏覇】の性能</a><br>
+
+　<a href="https://ixagno.blog.fc2.com/blog-entry-8991.html" title="Xスキル【火焔武闘】の性能と追加方法">Xスキル【火焔武闘】の性能</a>
+</div>
+<div style="text-align:left"></div>
+</div></div></section>
+
+<section class="menu_block">
+<div class="menu_title" style="text-align:center">合成(スキル追加、強化、S2、特殊)</div>
+<div id="m1450761">
+<div class="menu-box">
+<div style="text-align:left"></div>
+<div class="plugin-freearea" style="text-align:left">
+  　<a href="https://ixagno.blog.fc2.com/blog-entry-488.html" title="合成攻略">合成の仕様【一覧】</a><br>
+
+　<a href="https://ixagno.blog.fc2.com/blog-entry-6990.html" title="スキル追加合成の成功率を上げる方法">スキル追加合成の成功率を上げる方法</a><br>
+
+　<a href="https://ixagno.blog.fc2.com/blog-entry-8146.html" title="復刻天カードの継承特殊合成の仕様変更">特殊合成の仕様(復刻天継承合体)</a><br>
+
+　<a href="http://ixagno.blog.fc2.com/blog-entry-3242.html" title="おすすめスキルと移植素材【一覧】">スキルの性能比較と移植素材【一覧】</a><br>
+
+　<a href="https://ixagno.blog.fc2.com/blog-category-147.html" title="合成専用の新スキル【一覧】">合成専用の新スキル【一覧】</a>　<span style="color:#ED0000">NEW</span><br>
+
+　<a href="https://ixagno.blog.fc2.com/blog-category-135.html" title="特殊候補と性能">特殊候補と現在のスキル性能</a>　<span style="color:#ED0000">NEW</span>
+</div>
+<div style="text-align:left"></div>
+</div></div></section>
+
+<section class="menu_block">
+<div class="menu_title" style="text-align:center">スキル攻略</div>
+<div id="m1450461">
+<div class="menu-box">
+<div style="text-align:left"></div>
+<div class="plugin-freearea" style="text-align:left">
+  　<a href="https://ixagno.blog.fc2.com/blog-entry-488.html" title="スキル合成や情報仕様【一覧】">スキル合成や情報仕様【一覧】</a><br>
+
+　<a href="https://ixagno.blog.fc2.com/blog-entry-6560.html" title="極限スキルの仕様と注意点">極限スキルの仕様と注意点</a><br>
+
+　<a href="https://ixagno.blog.fc2.com/blog-entry-9647.html" title="模倣不可スキルと特殊効果について">「模倣不可」スキルと特殊効果について</a><br>
+
+　<a href="https://ixagno.blog.fc2.com/blog-entry-4667.html" title="スキル「重複不可」の対象について">「重複不可」スキルの条件について</a><br>
+
+　<a href="https://ixagno.blog.fc2.com/blog-entry-6624.html" title="無効化保護スキルの対象について">無効化保護スキルの対象について</a><br>
+
+　<a href="https://ixagno.blog.fc2.com/blog-entry-8640.html" title="武将HPダメージ軽減系のスキルは干渉するのか？">HPダメージ軽減系のスキル同士の干渉</a><br>
+
+　<a href="https://ixagno.blog.fc2.com/blog-entry-1331.html" title="部隊スキルの仕様">部隊スキルの仕様</a><br>
+
+　<a href="https://ixagno.blog.fc2.com/blog-entry-3070.html" title="部隊ランクボーナスの上昇率と仕様について">部隊ランクボーナス</a>
+
+</div>
+<div style="text-align:left"></div>
+</div></div></section>
+
+<section class="menu_block">
+<div class="menu_title" style="text-align:center">武将育成とランクアップ</div>
+<div id="m1450462">
+<div class="menu-box">
+<div style="text-align:left"></div>
+<div class="plugin-freearea" style="text-align:left">
+  　<a href="https://ixagno.blog.fc2.com/blog-entry-587.html" title="武将育成の攻略：一覧">武将育成の攻略【一覧】</a><br>
+
+　<a href="https://ixagno.blog.fc2.com/blog-entry-451.html" title="武将ステータスの意味とポイント振りの基本">武将ステータスの意味とポイント振りの基本</a><br>
+
+　<a href="https://ixagno.blog.fc2.com/blog-entry-7398.html" title="ランクアップの仕様と恩恵、各ランク別成功確率">ランクアップの仕様と恩恵、<br>　各ランク別成功確率【一覧】</a><br>
+</div>
+<div style="text-align:left"></div>
+</div></div></section>
+
+<section class="menu_block">
+<div class="menu_title" style="text-align:center">武将のHP回復速度</div>
+<div id="m1451271">
+<div class="menu-box">
+<div style="text-align:left"></div>
+<div class="plugin-freearea" style="text-align:left">
+  　<a href="https://ixagno.blog.fc2.com/blog-entry-8003.html" title="武将HPの最大値とHP回復時間">武将のレア度別HP回復時間</a>
+</div>
+<div style="text-align:left"></div>
+</div></div></section>
+
+<section class="menu_block">
+<div class="menu_title" style="text-align:center">合戦</div>
+<div id="m1450464">
+<div class="menu-box">
+<div style="text-align:left"></div>
+<div class="plugin-freearea" style="text-align:left">
+  　<a href="https://ixagno.blog.fc2.com/blog-entry-461.html" title="合戦の仕様">合戦の仕様【一覧】</a><br>
+
+　<a href="https://ixagno.blog.fc2.com/blog-entry-10495.html" title="「サポート専用部隊」の仕様">「サポート専用部隊」の仕様</a><br>
+
+　<a href="https://ixagno.blog.fc2.com/blog-entry-8616.html" title="出城の仕様">「出城」の仕様と変更点</a><br>
+
+　<a href="https://ixagno.blog.fc2.com/blog-entry-7303.html" title="「本丸防御陣形」">「本丸防御陣形」の仕様</a><br>
+
+　<a href="https://ixagno.blog.fc2.com/blog-entry-9293.html" title="所領防御陣形について">「所領防御陣形」の仕様</a><br>
+
+　<a href="https://ixagno.blog.fc2.com/blog-entry-7304.html" title="本丸防御ボーナスの仕様変更">本丸防御ボーナスの仕様と変更点</a><br>
+
+　<a href="https://ixagno.blog.fc2.com/blog-entry-6604.html" title="陣の仕様と攻防ボーナス">陣の仕様と攻防ボーナス</a><br>
+
+　<a href="https://ixagno.blog.fc2.com/blog-category-139.html" title="加勢について">加勢の仕様と上限数について</a><br>
+
+　<a href="https://ixagno.blog.fc2.com/blog-category-153.html" title="兵士関連">兵士のステータスと兵科相性について</a><br>
+</div>
+<div style="text-align:left"></div>
+</div></div></section>
+
+<section class="menu_block">
+<div class="menu_title" style="text-align:center">合戦二日目の影武者と弐ノ陣</div>
+<div id="m1451275">
+<div class="menu-box">
+<div style="text-align:left"></div>
+<div class="plugin-freearea" style="text-align:left">
+  　<a href="https://ixagno.blog.fc2.com/blog-entry-5933.html"  title="影武者の仕様">合戦二日目「影武者」の仕様</a><br>
+
+　<a href="https://ixagno.blog.fc2.com/blog-entry-9650.html" title="弐ノ陣の仕様">合戦二日目「弐ノ陣」の仕様</a><br>
+
+</div>
+<div style="text-align:left"></div>
+</div></div></section>
+
+<section class="menu_block">
+<div class="menu_title" style="text-align:center">天下統一戦/国力対抗戦</div>
+<div id="m1451289">
+<div class="menu-box">
+<div style="text-align:left"></div>
+<div class="plugin-freearea" style="text-align:left">
+  　<a href="https://ixagno.blog.fc2.com/blog-entry-10112.html" title="「天下統一戦」の仕様">「天下統一戦」の仕様</a><br>
+
+　<a href="https://ixagno.blog.fc2.com/blog-entry-10409.html" title="「国力対抗戦」の仕様を簡潔にまとめてみた">「国力対抗戦」の仕様</a>
+</div>
+<div style="text-align:left"></div>
+</div></div></section>
+
+<section class="menu_block">
+<div class="menu_title" style="text-align:center">わんだふる杯</div>
+<div id="m1451239">
+<div class="menu-box">
+<div style="text-align:left"></div>
+<div class="plugin-freearea" style="text-align:left">
+  　<a href="https://ixagno.blog.fc2.com/blog-entry-10708.html" title="「わんだふる杯」の仕様">「わんだふる杯」の仕様</a><br>
+
+　<a href="https://ixagno.blog.fc2.com/blog-entry-10501.html" title="「地方豪族砦」「豪族」「富裕豪族」「ワンコイン鉱山」の兵数や敵兵科">「砦」「鉱山」の兵数や敵兵科</a><br>
+
+
+</div>
+<div style="text-align:left"></div>
+</div></div></section>
+
+<section class="menu_block">
+<div class="menu_title" style="text-align:center">内政(所領・開拓・施設)</div>
+<div id="m1450463">
+<div class="menu-box">
+<div style="text-align:left"></div>
+<div class="plugin-freearea" style="text-align:left">
+  　<a href="https://ixagno.blog.fc2.com/blog-category-70.html" title="内政攻略:一覧">内政の仕様【一覧】</a><br>
+
+　<a href="https://ixagno.blog.fc2.com/blog-entry-8575.html" title="村と支城の割合と本領の施設数について">村と支城の割合と本領の施設数について</a><br>
+
+　<a href="https://ixagno.blog.fc2.com/blog-entry-3905.html" title="所領開拓の手順">所領開拓のおすすめ手順</a>
+</div>
+<div style="text-align:left"></div>
+</div></div></section>
+
+<section class="menu_block">
+<div class="menu_title" style="text-align:center">果心異境</div>
+<div id="m1451117">
+<div class="menu-box">
+<div style="text-align:left"></div>
+<div class="plugin-freearea" style="text-align:left">
+  　<a href="https://ixagno.blog.fc2.com/blog-entry-8539.html" title="「果心異境」の仕様と砦攻略">「果心異境」の仕様と各砦別攻略</a>
+</div>
+<div style="text-align:left"></div>
+</div></div></section>
+
+<section class="menu_block">
+<div class="menu_title" style="text-align:center">秘境探索・大殿</div>
+<div id="m1450629">
+<div class="menu-box">
+<div style="text-align:left"></div>
+<div class="plugin-freearea" style="text-align:left">
+  　<a href="https://ixagno.blog.fc2.com/blog-category-154.html" title="秘境探索の仕様">「秘境探索」の仕様と秘境兵交換</a><br>
+
+　<a href="https://ixagno.blog.fc2.com/blog-category-27-0.html" title="秘境大殿攻略情報：一覧">「秘境大殿」攻略と報酬内容</a>
+
+
+</div>
+<div style="text-align:left"></div>
+</div></div></section>
+
+<section class="menu_block">
+<div class="menu_title" style="text-align:center">影武者残党・陣触の仕様</div>
+<div id="m1451270">
+<div class="menu-box">
+<div style="text-align:left"></div>
+<div class="plugin-freearea" style="text-align:left">
+  　<a href="https://ixagno.blog.fc2.com/blog-entry-6603.html" title="影武者残党">「影武者残党」</a>　│　<a href="https://ixagno.blog.fc2.com/blog-entry-8016.html" title="陣触">「陣触」</a><br>
+
+
+
+</div>
+<div style="text-align:left"></div>
+</div></div></section>
+
+<!--/プラグイン１-->
+
+<!--プラグイン２-->
+
+<div class="menu_title" style="text-align:center">32章からの新仕様/変更点</div>
+<div id="m1451304">
+<div class="menu-box">
+<div style="text-align:left"></div>
+<div class="plugin-freearea" style="text-align:center">
+  　<a href="https://ixagno.blog.fc2.com/blog-entry-11106.html" title="「覇界動乱」の仕様とアップデート内容">「覇界動乱」の仕様とアップデート内容</a><br>
+
+　<a href="https://ixagno.blog.fc2.com/blog-entry-11143.html" title="32章から「鍛錬」ポイントの調整で緩和">「鍛錬」ポイントの調整で緩和</a>　<span style="color:#ED0000">NEW</span><br>
+</div>
+<div style="text-align:left"></div> 
+</div></div>
+
+<div class="menu_title" style="text-align:center">31章からの新仕様/変更点</div>
+<div id="m1451230">
+<div class="menu-box">
+<div style="text-align:center"></div>
+<div class="plugin-freearea" style="text-align:center">
+  　<a href="https://ixagno.blog.fc2.com/blog-entry-10792.html" title="「義天連星」アップデート内容">「義天連星」アップデート内容</a><br>
+
+　<a href="https://ixagno.blog.fc2.com/blog-entry-10965.html" title="「天守攻略戦」の仕様">「天守攻略戦」の仕様</a>　<br>
+
+　<a href="https://ixagno.blog.fc2.com/blog-entry-10908.html" title="鍛錬の仕様変更">鍛錬の仕様変更</a><br>
+
+　<a href="https://ixagno.blog.fc2.com/blog-entry-10924.html" title="「合流攻撃時の部隊到着時間」の仕様変更">「合流攻撃時の部隊到着時間」の仕様変更</a><br>
+
+　<a href="https://ixagno.blog.fc2.com/blog-entry-10884.html" title="兵士一括練兵の注意点と訓練キャンセル">一括練兵の注意点と訓練キャンセル</a><br>
+
+
+</div>
+<div style="text-align:center"></div> 
+</div></div>
+
+<div class="menu_title" style="text-align:center">戦国くじ</div>
+<div id="m1450955">
+<div class="menu-box">
+<div style="text-align:left"></div>
+<div class="plugin-freearea" style="text-align:center">
+  　<a href="https://ixagno.blog.fc2.com/blog-category-160.html" title="極選くじや位階くじ等の各種くじの仕様や注意点【一覧】">各種くじの仕様や注意点【一覧】</a><br>
+
+　<a href="https://ixagno.blog.fc2.com/blog-entry-34.html" title="各くじの統計/レア別排出確率">各くじの統計/レア別排出確率</a><br>
+</div>
+<div style="text-align:left"></div> 
+</div></div>
+
+<div class="menu_title" style="text-align:center">どのくじを引くべきか？</div>
+<div id="m1451218">
+<div class="menu-box">
+<div style="text-align:left"></div>
+<div class="plugin-freearea" style="text-align:center">
+  　<a href="https://ixagno.blog.fc2.com/blog-entry-9470.html" title="課金くじならどれを引くべきか？">課金くじならどれを引くべきか？</a><br>
+
+　<a href="https://ixagno.blog.fc2.com/blog-entry-7339.html" title="「戦上くじ」「戦くじ」 引くならどっち？">「戦上」と「戦くじ」 引くならどっち？</a><br>
+
+　<a href="https://ixagno.blog.fc2.com/blog-entry-7341.html" title="「天上くじ」「天下くじ」 引くならどっち？">「天上」と「天下くじ」 引くならどっち？</a><br>
+
+　<a href="https://ixagno.blog.fc2.com/blog-entry-7340.html" title="「天戦くじ」「天神くじ」 引くならどっち？">「天戦」と「天神くじ」 引くならどっち？</a>
+</div>
+<div style="text-align:left"></div> 
+</div></div>
+
+<div class="menu_title" style="text-align:center">パック販売</div>
+<div id="m1451240">
+<div class="menu-box">
+<div style="text-align:center"></div>
+<div class="plugin-freearea" style="text-align:center">
+  <a href="https://ixagno.blog.fc2.com/blog-entry-10216.html" title="29章から金6000で購入可能な「戦国大名包み」が販売。">「戦国大名包み」買う価値は？</a><br>
+
+<a href="https://ixagno.blog.fc2.com/blog-entry-10215.html" title="即出陣「戦国 若武者包み」">「戦国 若武者包み」買う価値は？</a>
+
+
+</div>
+<div style="text-align:center"></div> 
+</div></div>
+
+<div class="menu_title" style="text-align:center">幻の武将大饗宴(復刻祭)</div>
+<div id="m1451303">
+<div class="menu-box">
+<div style="text-align:left"></div>
+<div class="plugin-freearea" style="text-align:center">
+  <a href="https://ixagno.blog.fc2.com/blog-entry-10385.html" title="極選【幻】/超極選【幻】のおすすめ【天】【覇】【傑】【パラ天】を抜粋">極選【幻】/超極選【幻】のおすすめ【天】【覇】【傑】【パラ天】を抜粋</a><br>
+
+<a href="https://ixagno.blog.fc2.com/blog-entry-10384.html" title="極選【幻】くじのおすすめ【極/特】を抜粋">極選【幻】くじのおすすめ【極/特】を抜粋</a><br>
+
+<a href="https://ixagno.blog.fc2.com/blog-entry-10100.html" title="幻ポイントで交換したいおすすめ【天】武将">幻ポイントで交換したいおすすめ【天】</a><br>
+
+<a href="https://ixagno.blog.fc2.com/blog-entry-11017.html" title="幻ポイントで交換したいおすすめ【極】【特】武将">幻ポイントで交換したいおすすめ【極】【特】</a><br>
+
+<a href="https://ixagno.blog.fc2.com/blog-entry-10406.html" title="幻くじラインナップをコピーできる機能の実装と使い方">幻くじラインナップをコピーできる機能</a><br>
+</div>
+<div style="text-align:left"></div> 
+</div></div>
+
+<div class="menu_title" style="text-align:center">合戦スケジュールと刷新日程</div>
+<div id="m1451235">
+<div class="menu-box">
+<div style="text-align:center"></div>
+<div class="plugin-freearea" style="text-align:center">
+  <a href="https://ixagno.blog.fc2.com/blog-entry-9799.html" title="合戦スケジュール表">合戦スケジュールと影残党、大殿日程</a><br>
+
+
+<a href="https://ixagno.blog.fc2.com/blog-category-82.html" title="新章突入までの各種日程">新章突入までの各種日程</a><br>
+</div>
+<div style="text-align:center"></div> 
+</div></div>
+
+<div class="menu_title" style="text-align:center">その他</div>
+<div id="m1450466">
+<div class="menu-box">
+<div style="text-align:center"></div>
+<div class="plugin-freearea" style="text-align:center">
+  <a href="https://ixagno.blog.fc2.com/blog-entry-454.html" title="小ネタ：一覧">小ネタ【一覧】</a><br>
+
+<a href="https://ixagno.blog.fc2.com/blog-entry-11001.html" title="IXAやブラウザゲームの操作に適したマウスに買い替えたい">IXAやブラウザゲームの操作に適したマウス</a><br>
+
+<a href="https://ixagno.blog.fc2.com/blog-entry-1703.html" title="無料登録のポイントサイトを利用して位階分の課金を稼ぐ">ポイントサイトを利用して位階分の課金を稼ぐ</a><br>
+
+<a href="https://ixagno.blog.fc2.com/blog-category-0.html" title="管理人からのお知らせ">管理人からのお知らせ</a><br>
+<a href="https://ixagno.blog.fc2.com/blog-entry-613.html" title="不正アクセス対策とフィッシング詐欺">不正アクセス対策とフィッシング詐欺に注意</a>
+</div>
+<div style="text-align:center"></div> 
+</div></div>
+
+<div class="menu_title" style="text-align:center">最新コメント</div>
+<div id="m1451238">
+<div class="menu-box">
+<div style="text-align:center"></div>
+  <a href="https://ixagno.blog.fc2.com/blog-entry-11173.html#comment25350" title="Re: 覇が出ない"> ・<span class="fc2_owner_comment" style="color:#008000;">影武者＠管理人</span>:刷新二日目も天神くじ10枚勝負　今度こそっ！ (08/13)</a><hr><a href="https://ixagno.blog.fc2.com/blog-entry-11173.html#comment25349" title="覇が出ない"> ・農民:刷新二日目も天神くじ10枚勝負　今度こそっ！ (08/13)</a><hr><a href="https://ixagno.blog.fc2.com/blog-entry-11140.html#comment25348" title="Re: タイトルなし"> ・<span class="fc2_owner_comment" style="color:#008000;">影武者＠管理人</span>:六角定頼【天】(No.1321)の能力と考察 (08/12)</a><hr><a href="https://ixagno.blog.fc2.com/blog-entry-11140.html#comment25347" title=""> ・名無しの城主:六角定頼【天】(No.1321)の能力と考察 (08/12)</a><hr><a href="https://ixagno.blog.fc2.com/blog-entry-3188.html#comment25346" title="Re: 確認です"> ・<span class="fc2_owner_comment" style="color:#008000;">影武者＠管理人</span>:【速度スキル】性能比較と移植に必要な素材一覧 (08/11)</a><hr>
+<div style="text-align:center"></div> 
+</div></div>
+
+<div class="menu_title" style="text-align:center">リンク</div>
+<div id="m1450689">
+<div class="menu-box">
+<div style="text-align:center"></div>
+<div class="plugin-freearea" style="text-align:center">
+  ・<a href="https://blog.jp.square-enix.com/ixa/" title="IXA公式 佐藤Pは天下統一の夢を見るか？">IXA公式 佐藤Pは天下統一の夢を見るか？</a><br>
+・<a href="https://noroshi-sengokuixa.hatenablog.com/" title="戦国IXA のろしのBLOG">戦国IXA のろしのBLOG</a><br>
+・<a href="http://ameblo.jp/yoshitsuna-u/" title="うっちーの戦国IXAブログ">うっちーの戦国IXAブログ</a>
+
+</div>
+<div style="text-align:center"></div> 
+</div></div>
+
+<!--/プラグイン２-->
+</div>
+
+<div id="content">
+
+
+<main>
+<!-- トップページ ここから-->
+
+<div id="content1">
+<article class="blog-con">
+<div class="entry_title"><h2 id="entry9844">【鍛錬】が可能なスキルの性能比較と優先度</a></h2></div>
+<div class="entry_date">更新日：2026-08-09  <a href="#blogcomment">コメント数(5)</a></div>
+
+<div class="con_body ">
+<span style="background-color: rgb(255, 255, 153);"><strong><span style="font-size: large;">戦国IXA　鍛錬後のスキル性能比較</span></strong></span><br><br>鍛錬可能になった旧武将、旧スキル一覧ｔ含めたTR5の性能と鍛錬優先度を掲載。<br><br><blockquote><p><span style="color: rgb(153, 51, 0);"><span style="font-size: large;">■更新履歴</span></span><br>・2026年8月【思金神ノ深謀】が鍛錬可能になったので追加<br>・2026年3月【龍驤虎躍】が鍛錬可能になったので追加<br>・2025年12月【破軍騎行】が鍛錬可能になったので追加<br>・2025年10月【星神闘覇】が鍛錬可能になったので追加</p></blockquote><br>鍛錬Lv別のスキル性能については、各スキルや武将名のリンク先で確認することができます。<br><br><span style="background-color: rgb(204, 255, 204);"><span style="font-size: large;">攻撃スキル</span></span><br><table cellspacing="1" cellpadding="3" width="710" summary="スキル別追加方法" border="1"><tbody><tr><td style="text-align: center;" bgcolor="#000000"><span style="color: rgb(255, 255, 255); background-color: rgb(0, 0, 0);">スキル名</span></td><td style="text-align: center;" bgcolor="#000000"><span style="color: rgb(255, 255, 255); background-color: rgb(0, 0, 0);">優先度</span></td><td style="text-align: center;" bgcolor="#000000"></td><td colspan="2" style="text-align: center;" bgcolor="#000000"><span style="color: rgb(255, 255, 255); text-align: center; background-color: rgb(0, 0, 0);">最大鍛錬時の性能</span></td></tr><tr><td style="text-align: center;"><a href="https://ixagno.blog.fc2.com/blog-entry-10660.html">星神闘覇</a></td><td style="text-align: center;">中</td><td style="text-align: center;"><span style="color: rgb(255, 102, 0);">飛翔15</span></td><td colspan="2"><div>&#160;攻撃：1660%</div><div>&#160;速度：300%</div></td></tr><tr><td style="text-align: center;"><a href="https://ixagno.blog.fc2.com/blog-entry-10749.html">破軍騎行</a></td><td style="text-align: center;">中</td><td style="text-align: center;"><span style="color: rgb(51, 153, 102);">不屈2</span></td><td colspan="2"><div>&#160;攻撃：1300%</div></td></tr><tr><td style="text-align: center;" bgcolor="#000000"><span style="color: rgb(255, 255, 255);">卓越スキル</span></td><td style="text-align: center;" bgcolor="#000000"><span style="color: rgb(255, 255, 255); background-color: rgb(0, 0, 0);">優先度</span><linkclump-plus></linkclump-plus></td><td style="text-align: center;" bgcolor="#000000"><span style="color: rgb(255, 255, 255);">特殊</span></td><td colspan="2" style="text-align: center;" bgcolor="#000000"><span style="color: rgb(255, 255, 255); text-align: center; background-color: rgb(0, 0, 0);">最大鍛錬時の性能</span></td></tr><tr><td style="text-align: center;"><a href="https://ixagno.blog.fc2.com/blog-entry-9845.html" title="開闢ノ逆鉾">開闢ノ逆鉾</a></td><td style="text-align: center;">中</td><td style="text-align: center;"></td><td colspan="2">&#160;攻撃:810%<br>&#160;卓越確率【80%】で自部隊兵士被害【20%減少】</td></tr><tr><td style="text-align: center;"><a href="https://ixagno.blog.fc2.com/blog-entry-9854.html" title="遠呂智ノ閃光">遠呂智ノ閃光</a></td><td style="text-align: center;">低</td><td style="text-align: center;"></td><td colspan="2">&#160;攻撃:160%<br>&#160;4倍で【640%】2回卓越で【2560%】</td></tr></tbody></table>
+<div class="adbox">
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-1721180882256192"
+     data-ad-slot="2250280747"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+<a name="more" id="more"></a><span style="background-color: rgb(204, 255, 204);"><span style="font-size: large;">防御スキル</span></span><br><table cellspacing="1" cellpadding="3" width="710" summary="スキル別追加方法" border="1"><tbody><tr><td bgcolor="#000000" style="text-align: center;"><font color="#ffffff">人数依存系</font></td><td bgcolor="#000000" style="text-align: center;"><span style="color: rgb(255, 255, 255);">優先度</span></td><td bgcolor="#000000" style="text-align: center;"><span style="color: rgb(255, 255, 255);">特殊</span></td><td style="text-align: center;" bgcolor="#000000"><font color="#ffffff">最大鍛錬時の性能</font></td></tr><tr><td style="text-align: center;"><a href="https://ixagno.blog.fc2.com/blog-entry-9856.html" title="永世ノ天隻">永世ノ天隻</a></td><td style="text-align: center;">低</td><td style="text-align: center;"><span style="color: rgb(255, 102, 0);">飛翔9</span></td><td style="text-align: left;">&#160;防御:(9×防御参加武将数)%上昇</td></tr><tr><td style="text-align: center;"><a href="https://ixagno.blog.fc2.com/blog-entry-9851.html" title="万里嵐壁">万里嵐壁</a><linkclump-plus></linkclump-plus></td><td style="text-align: center;">低</td><td style="text-align: center;"></td><td style="text-align: left;">&#160;防御:500%<br>&#160;敵軍部隊数×52%を防御効果に加算<linkclump-plus></linkclump-plus></td></tr><tr><td style="text-align: center;" bgcolor="#000000"><span style="color: rgb(255, 255, 255);">スキル名</span></td><td style="text-align: center;" bgcolor="#000000"><span style="color: rgb(255, 255, 255); background-color: rgb(0, 0, 0);">優先度</span><linkclump-plus></linkclump-plus></td><td style="text-align: center;" bgcolor="#000000"><span style="color: rgb(255, 255, 255);">特殊</span></td><td style="text-align: left;" bgcolor="#000000"><div style="text-align: center;"><span style="color: rgb(255, 255, 255); background-color: rgb(0, 0, 0);">最大鍛錬時の性能</span><linkclump-plus></linkclump-plus></div><linkclump-plus></linkclump-plus></td></tr><tr><td style="text-align: center;"><a href="https://ixagno.blog.fc2.com/blog-entry-9857.html" title="黄泉醜女ノ屍兵">黄泉醜女ノ屍兵</a></td><td style="text-align: center;">中</td><td style="text-align: center;"></td><td style="text-align: left;">&#160;防御:860%<br>&#160;70以下のダメージは最大【25】になる</td></tr><tr><td style="text-align: center;" bgcolor="#000000"><span style="color: rgb(255, 255, 255);">コスト消費軽減</span></td><td style="text-align: center;" bgcolor="#000000"><span style="color: rgb(255, 255, 255); background-color: rgb(0, 0, 0);">優先度</span><linkclump-plus></linkclump-plus></td><td style="text-align: center;" bgcolor="#000000"><span style="color: rgb(255, 255, 255);">特殊</span></td><td style="text-align: center;" bgcolor="#000000"><span style="color: rgb(255, 255, 255); text-align: center; background-color: rgb(0, 0, 0);">最大鍛錬時の性能</span><linkclump-plus></linkclump-plus></td></tr><tr><td style="text-align: center;"><a href="https://ixagno.blog.fc2.com/blog-entry-9858.html" title="三千世界神将">三千世界神将</a></td><td style="text-align: center;">低</td><td style="text-align: center;"></td><td style="text-align: left;">&#160;防御:780%<br>&#160;本丸防御陣形配備時、この武将の編成コスト【-3】</td></tr></tbody></table><br><br><span style="background-color: rgb(204, 255, 204);"><span style="font-size: large;">攻防対応スキル</span></span><br><table cellspacing="1" cellpadding="3" width="710" summary="スキル別追加方法" border="1"><tbody><tr><td bgcolor="#000000" style="text-align: center;"><span style="color: rgb(255, 255, 255);">スキル名</span></td><td bgcolor="#000000" style="text-align: center;"><span style="color: rgb(255, 255, 255);">優先度</span></td><td bgcolor="#000000" style="text-align: center;"><span style="color: rgb(255, 255, 255);">特殊</span></td><td colspan="2" style="text-align: center;" bgcolor="#000000"><span style="color: rgb(255, 255, 255);">最大鍛錬時の性能</span></td></tr><tr><td style="text-align: center;"><a href="https://ixagno.blog.fc2.com/blog-entry-11155.html">思金神ノ深謀</a></td><td style="text-align: center;">中</td><td style="text-align: center;"></td><td colspan="2"><div>&#160;確率：+100%　/　対象　部隊長</div><div>&#160;所属部隊の部隊長が持つ模倣可能な初期スキルを模倣</div><div>&#160;<span style="color: rgb(51, 153, 102);">卓越</span>：追加確率50%で<br>&#160;通常攻撃／防御効果を1.45倍して模倣する</div></td></tr><tr><td style="text-align: center;"><a href="https://ixagno.blog.fc2.com/blog-entry-10338.html" title="月詠ノ覇威">月詠ノ覇威</a></td><td style="text-align: center;">高<br>(<span style="color: rgb(128, 0, 128);">※</span>)</td><td style="text-align: center;"></td><td colspan="2"><div>&#160;全攻防：1260%&#160;&#160;</div><div>&#160;自軍全武将全スキルの卓越確率に25%を加算する<br><span style="color: rgb(128, 0, 128);">&#160;※TRの上限が3なので上げやすい</span></div></td></tr><tr><td style="text-align: center;"><a href="https://ixagno.blog.fc2.com/blog-entry-9848.html" title="神羅聖域">神羅聖域</a>　</td><td style="text-align: center;">低</td><td style="text-align: center;"><span style="color: rgb(255, 0, 0);">覇道</span></td><td colspan="2"><div>&#160;攻撃:1240%&#160; 防御:1240%<br>&#160;破壊:200%</div></td></tr><tr><td style="text-align: center;"><a href="https://ixagno.blog.fc2.com/blog-entry-10906.html">龍驤虎躍</a></td><td style="text-align: center;">中<br>(<span style="color: rgb(128, 0, 128);">※</span>)</td><td style="text-align: center;"></td><td colspan="2"><div>&#160;確率：+60%　/　対象　全</div><div>&#160;攻撃：1200%上昇　防御：1200%上昇</div><div>&#160;部隊消費コストを2低下<br><span style="color: rgb(128, 0, 128);">&#160;※TRの上限が3なので上げやすい</span></div></td></tr><tr><td style="text-align: center;"><a href="https://ixagno.blog.fc2.com/blog-entry-9852.html" title="四天轟雷">四天轟雷</a></td><td style="text-align: center;">低</td><td style="text-align: center;"></td><td colspan="2">&#160;攻撃:960%&#160;防御:960%<br>&#160;部隊内全武将に「砲」「器」対象を追加</td></tr></tbody></table><br><br><span style="background-color: rgb(204, 255, 204);"><span style="font-size: large;">鍛錬可能になった旧武将一覧</span></span><br><table cellspacing="1" cellpadding="3" width="710" summary="スキル別追加方法" border="1"><tbody><tr><td bgcolor="#000000" style="text-align: center;"><font color="#ffffff">天武将</font></td><td bgcolor="#000000" style="text-align: center;"><span style="color: rgb(255, 255, 255);">優先度</span></td><td colspan="2" style="text-align: center;" bgcolor="#000000"><span style="color: rgb(255, 255, 255);">最大鍛錬時の性能</span></td></tr><tr><td style="text-align: center;"><a href="https://ixagno.blog.fc2.com/blog-entry-9526.html" title="織田信長【覇(8)】">織田信長【覇(8)】</a></td><td style="text-align: center;">中</td><td colspan="2">&#160;全攻:【1100%】<br>&#160;自部隊4合流時の部隊消費コスト【7】低下</td></tr><tr><td style="text-align: center;"><a href="https://ixagno.blog.fc2.com/blog-entry-9247.html">上杉謙信(2)【覇】</a></td><td style="text-align: center;">高<br>(<span style="color: rgb(128, 0, 128);">※</span>)</td><td colspan="2">&#160;全攻防【1270%】<br>&#160;所属部隊内の飛翔合計値の飛翔値を得る<br>&#160;<span style="color: rgb(128, 0, 128);">※TRの上限が3なので上げやすい</span></td></tr><tr><td style="text-align: center;"><a href="https://ixagno.blog.fc2.com/blog-entry-9527.html" title="毛利輝元【覇(3)】">毛利輝元【覇(3)】</a></td><td style="text-align: center;">中</td><td colspan="2">&#160;全攻:【800%】<br>&#160;自合流時に他部隊にも攻撃効果を加算し、<br>&#160;この武将のコストを最大【3.5】まで除外</td></tr><tr><td style="text-align: center;"><a href="https://ixagno.blog.fc2.com/blog-entry-9627.html" title="和田惟政">和田惟政</a>&#160;</td><td style="text-align: center;">中</td><td colspan="2">&#160;(部隊移動速度÷30×100%)<br>&#160;速度:250%</td></tr><tr><td style="text-align: center;"><a href="https://ixagno.blog.fc2.com/blog-entry-8912.html" title="伊達政宗【覇(3)">伊達政宗【覇(3)】</a>&#160;</td><td style="text-align: center;">中</td><td colspan="2">&#160;全攻防:250%<br>&#160;卓越発動したスキル数×95%を攻防値に加算</td></tr><tr><td style="text-align: center;"><a href="https://ixagno.blog.fc2.com/blog-entry-7231.html" title="伊達政宗【覇(2)】">伊達政宗【覇(2)】</a></td><td style="text-align: center;">中</td><td colspan="2">&#160;攻撃:1440%　確率:70%<br>&#160;防御:1100%　確率:70%<br>&#160;速度:200%</td></tr><tr><td style="text-align: center;"><a href="https://ixagno.blog.fc2.com/blog-entry-9033.html" title="今井宗久">今井宗久</a></td><td style="text-align: center;">中</td><td colspan="2">&#160;全攻防:800%</td></tr><tr><td style="text-align: center;"><a href="https://ixagno.blog.fc2.com/blog-entry-8576.html" title="黒田官兵衛【覇】">黒田官兵衛【覇】</a></td><td style="text-align: center;">低</td><td colspan="2">&#160;全攻防:1100%<br>&#160;部隊内武将スキル発動率+30%<br>&#160;卓越発動率+60%</td></tr><tr><td style="text-align: center;"><a href="https://ixagno.blog.fc2.com/blog-entry-9484.html" title="上杉景勝【覇】(復刻)">上杉景勝【覇】</a>&#160;</td><td style="text-align: center;">低</td><td colspan="2">&#160;攻撃:300%　防御:300%<br>&#160;<span style="color: rgb(51, 153, 102);">※鍛錬Lv1から攻防対応へ変化</span><br>&#160;発動した名称の異なるスキル数×100%を加算</td></tr><tr><td style="text-align: center;"><a href="https://ixagno.blog.fc2.com/blog-entry-8920.html" title="井伊直政">井伊直政</a>&#160;</td><td style="text-align: center;">低</td><td colspan="2">&#160;攻撃:820%　速度:250%<br>&#160;攻撃力減少を受けない距離が40延長される</td></tr><tr><td style="text-align: center;"><a href="https://ixagno.blog.fc2.com/blog-entry-7636.html" title="本願寺顕如【覇】">本願寺顕如【覇】</a></td><td style="text-align: center;">低</td><td colspan="2">&#160;全防:250%<br>&#160;武将コスト差分の総和×20%を加算</td></tr><tr><td style="text-align: center;" bgcolor="#000000"><span style="color: rgb(255, 255, 255);">極武将</span></td><td style="text-align: center;" bgcolor="#000000"><span style="color: rgb(255, 255, 255); background-color: rgb(0, 0, 0);">優先度</span></td><td colspan="2" style="text-align: center;" bgcolor="#000000"><span style="color: rgb(255, 255, 255); text-align: center; background-color: rgb(0, 0, 0);">最大TRの性能</span></td></tr><tr><td style="text-align: center;"><a href="https://ixagno.blog.fc2.com/blog-entry-6125.html">甲賀弦之介【極】</a></td><td style="text-align: center;">高</td><td colspan="2">&#160;発動率：70%<br>&#160;上限はTR3で発動率のみ上昇する</td></tr></tbody></table><br><br><span style="background-color: rgb(204, 255, 255);"><span style="font-size: large;">■鍛錬の優先度について</span></span><br><br>個人的な独断と偏見によるもので、上記表の優先度については以下のようなになってますが、<br><br>・高＝優先して鍛錬したい<br>・中＝余裕があれば<br>・低＝他を優先<br><br>どのスキルを鍛錬するかはその人が持つ武将や部隊構成、その時の環境によっても大きく変わると思いますので、参考程度に。<br><br><blockquote><p><span style="color: rgb(153, 51, 0);">■鍛錬する前に今一度そのスキルは重要か考えたい</span><br><br>頑張って最大Lvまで鍛錬しても半年(刷新)後には型落ちになるスキルもあるだろうし、実際にコラボ武将の登場により数ヶ月で価値が下がったスキルもありました。<br><br>鍛錬に必要なポイントは膨大なので取捨選択が大事になる為、他では替えが効かない特殊効果付き、且つその特殊効果の性能がアップするスキルを優先するのが無難だと考えてます。</p></blockquote><br>
+<div class="adbox">
+<!-- IXA 記事下レス -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1721180882256192"
+     data-ad-slot="8582307357"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+<div class="knkij">
+<div class="relate_list_area cf">
+<h3 class="relate_list_title">関連記事</h3>
+<a href="/blog-entry-9844.html">
+<div class="relate_item  relate_list_now">
+<div class="relate_img_wrap">
+<div class="relate_img" style="background-image: url(https://blogthumbnail.fc2.com/r72/173/i/x/a/ixagno/202408200020418ff.jpg);"></div>
+</div>
+<div class="relate_about">
+<div class="relate_title">【鍛錬】が可能なスキルの性能比較と優先度</div>
+<div class="relate_date">
+2026-08-09</div>
+</div>
+</div>
+</a><a href="/blog-entry-11155.html">
+<div class="relate_item ">
+<div class="relate_img_wrap">
+<div class="relate_img" style="background-image: url(https://blogthumbnail.fc2.com/r72/169/i/x/a/ixagno/20230811003637b82.jpg);"></div>
+</div>
+<div class="relate_about">
+<div class="relate_title">【思金神ノ深謀】の鍛錬解放</div>
+<div class="relate_date">
+2026-08-07</div>
+</div>
+</div>
+</a><a href="/blog-entry-9838.html">
+<div class="relate_item ">
+<div class="relate_img_wrap">
+<div class="relate_img" style="background-image: url(https://blogthumbnail.fc2.com/r72/173/i/x/a/ixagno/20240809174429d2d.jpg);"></div>
+</div>
+<div class="relate_about">
+<div class="relate_title">鍛錬の仕様と鍛錬ポイントについて</div>
+<div class="relate_date">
+2026-08-07</div>
+</div>
+</div>
+</a><a href="/blog-entry-10122.html">
+<div class="relate_item ">
+<div class="relate_img_wrap">
+<div class="relate_img" style="background-image: url(https://blogthumbnail.fc2.com/r72/158/i/x/a/ixagno/20241219174818da8.jpg);"></div>
+</div>
+<div class="relate_about">
+<div class="relate_title">鍛錬おすすめ武将</div>
+<div class="relate_date">
+2026-07-05</div>
+</div>
+</div>
+</a><a href="/blog-entry-10908.html">
+<div class="relate_item ">
+<div class="relate_img_wrap">
+<div class="relate_img" style="background-image: url(https://blogthumbnail.fc2.com/r72/184/i/x/a/ixagno/20260317233748c83.jpg);"></div>
+</div>
+<div class="relate_about">
+<div class="relate_title"> 鍛錬の仕様変更について</div>
+<div class="relate_date">
+2026-03-18</div>
+</div>
+</div>
+</a></div>
+
+カテゴリー: <a href="/blog-category-159.html">鍛錬</a><br>
+<hr><br>
+
+<h3  id="1"class="relate_list_title">サイト内検索</h3>
+<div class="box10">
+<script async src="https://cse.google.com/cse.js?cx=0018c88b6f6c444b8">
+</script>
+<div class="gcse-searchbox-only"></div>
+</div>
+
+</div>
+<div onclick="obj=document.getElementById('xxxxx').style; obj.display=(obj.display=='none')?'block':'none';">
+<a style="cursor:pointer;"><div class="entry_title2" id="blogcomment">▼コメントを書く(開閉)▲</div></a>
+</div>
+<!--コメント投稿-->
+<div id="xxxxx" style="display:none;clear:both;">
+<div class="con_body clearfix">
+<form method="post" action="https://ixagno.blog.fc2.com/blog-entry-9844.html" name="comment_form">
+<div class="form-left">
+<input type="hidden" name="mode" value="regist">
+<input type="hidden" name="comment[no]" value="9844">
+<label for="name">名前:</label>
+<input id="name" type="text" name="comment[name]"required="required" placeholder="入力してください。" value="" onblur="this.style.backgroundColor='';" onfocus="this.style.backgroundColor='#feeae7';"><br>
+<label for="name">タイトル:</label>
+<input id="subject" type="text" name="comment[title]" value="" onblur="if (!this.value) this.value = defaultValue; this.style.backgroundColor='';" onfocus="if (this.value == defaultValue) this.value = ''; this.style.backgroundColor='#feeae7';"><br>
+<label for="url">URL:</label><br>
+<input id="url" type="text" name="comment[url]" value="" onblur="this.style.backgroundColor='';" onfocus="this.style.backgroundColor='#feeae7';">
+</div>
+<label for="comment">本文:</label>
+<textarea id="comment" rows="6" name="comment[body]" placeholder="ここへ入力する前に下記注意点1～5を必ずご確認下さい。注意点を守って頂けないコメントについては対応を控えさせて頂きます。" onblur="this.style.backgroundColor='';" onfocus="this.style.backgroundColor='#feeae7';"></textarea><br>
+<label for="himitu">Secret:</label><input id="himitu" type="checkbox" name="comment[himitu]">管理人のみコメント閲覧可に設定<br>
+<p><input type="submit" value="送信">　※コメントは管理人の認証後に表示するようにしてます<br>
+<p style="margin-top: 20px;"><font size="3" color="red">注意点：</font></p>
+
+1：記事を読まずに質問される方が増えております。既に記事内やコメント欄に答えが書いてある事もあるので、質問の前にご確認下さい。<br>
+
+2：記事の内容とは関係ない質問の場合は「<a href="https://ixagno.blog.fc2.com/blog-entry-1570.html" title="よくある質問や仕様確認">よくある質問や仕様確認</a>」のコメント欄へお願いします<br>
+
+3：投稿者名を度々変更される方の質問やご意見等については対応を控えさせて頂きます。ご了承下さい。<br>
+
+4：スキル性能や部隊スキル等の情報については画像添付のご協力をお願いします。※画像無しの情報を鵜呑みにして失敗してからは画像での確認を心がけてます。<br>
+
+5：スパム対策で英数字のみの場合は弾かれる可能性があるのでご注意下さい。
+
+</p></form></div>
+<div id="xxxxx" style="display:none;clear:both;">
+</div></div><br>
+<div class="entry_title2" id="blogcomment">コメント一覧(5) <a href="https://ixagno.blog.fc2.com/blog-entry-9844.html#blogcomment"></a></div>
+<div id="topentry_comment_area9844" style="text-align:left"> 
+<article class="com_block">
+<div class="com_title">　</div>
+優先度ありがてぇ天はXスキルで要求されるから<br>とりあえず出た通常極全部高スキルにぶち込むかなぁ<div class="com_state">2024-08-20 </div>
+</article><article class="com_block">
+<div class="com_title">管理人のみ閲覧できます　</div>
+このコメントは管理人のみ閲覧できます<div class="com_state">2024-12-22 </div>
+</article><article class="com_block">
+<div class="com_title">Re: リンク元の表題が　<span class="fc2_owner_comment" style="color:#008000;">影武者＠管理人</span></div>
+変更前の状態のが残っていたようです＾＾；<br><br>修正しておきます。<br>また何か気がついた事がありましたら、よろしくお願いします。<div class="com_state">2024-12-22 </div>
+</article><article class="com_block">
+<div class="com_title">管理人のみ閲覧できます　</div>
+このコメントは管理人のみ閲覧できます<div class="com_state">2026-08-09 </div>
+</article><article class="com_block">
+<div class="com_title">Re: 今回追加になった思金ですが、　<span class="fc2_owner_comment" style="color:#008000;">影武者＠管理人</span></div>
+連絡ありがとうございます。<br>見落としていたので助かりました。<br><br>また何か気がついた事がありましたら、よろしくお願いします。<div class="com_state">2026-08-09 </div>
+</article></div>
+<div style="text-align:right"> 
+</div></article>
+<!--/コメント投稿-->
+<!--コメント編集-->
+<div class="menu3">
+<!--/コメント編集-->
+</div></div>
+<!--/blog-con--><!-- トップページ　ここまで -->
+</main>
+</div>
+
+</div></div>
+</div></div></div>
+<!-- class="blog"　ここまで --><!-- id="content"　ここまで --><!-- id="box"　ここまで -->
+<div id="footer">
+<!-- コピーライト　ここから -->
+<a href="https://ixagno.blog.fc2.com/blog-entry-263.html" title="プライバシーポリシー" style="display: inline-block; margin-bottom: 20px;">プライバシーポリシー</a><br>
+当サイトは、PCでダウンロード不要・基本プレイ無料で遊べるPCブラウザゲーム「戦国IXA」の攻略ブログ<br>
+記載されている会社名・製品名・システム名等は各社の商標、または登録商標です<br>
+&copy; 2026 SQUARE ENIX CO., LTD. All Rights Reserved.<br>
+&copy; 2026 戦国IXA攻略　ランカーへの近道！<!-- genre:48 --><!-- sub_genre:70 --><!-- sp_banner:0 --><!-- passive:0 --><!-- lang:ja --><!-- HeadBar:0 --><!-- VT:blog --><!-- nad:1 --> <!-- コピーライト　ここまで --></div>
+<script>for(let s=1,c=new Date,n=document.querySelectorAll('[data-newdate]'),i=0;i<n.length;i++){let d=new Date(n[i].dataset.newdate);d.setDate(d.getDate()+s),c<d&&(n[i].classList.add('new'))}</script>
+<script>function pagenavi(a,e){var t="";if(""!=t){var r="",n="";""===n&&(n="");var p=".html",l=-1;n.slice(-5)===p?l=n.lastIndexOf("-"):(p="",l=n.lastIndexOf("="));var s=n.slice(0,l+1);t=Number(t);var f,g,i,c=1==r?"<span>1</span>":'<a href="'+s+0+p+'">1</a>',h=e-4;for(e>=t?(f=2,g=t-1):h/2+2>=r?(f=2,g=e-2):r>t-h/2-1?(f=t-e+3,g=t-1):(f=r-Math.floor(h/2),g=f+h-1),f>2&&(c+='<a href="'+s+((i=Math.ceil(f/2))-1)+p+'" title="'+i+'" class="dot">…</a>'),l=f;g>=l;l++)c+=l==r?"<span>"+l+"</span>":'<a href="'+s+(l-1)+p+'">'+l+"</a>";t-1>g&&(c+='<a href="'+s+((i=Math.ceil((g+t)/2))-1)+p+'" title="'+i+'" class="dot">…</a>'),t>1&&(c+=r==t?"<span>"+t+"</span>":'<a href="'+s+(t-1)+p+'">'+t+"</a>"),document.getElementById(a).innerHTML=c}}
+/* 第２引数は表示したいリンク数に変更する */
+pagenavi("pagenavi", 7);</script>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsb
