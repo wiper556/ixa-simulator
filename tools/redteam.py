@@ -25,6 +25,7 @@
 """
 import argparse
 import datetime
+import shutil
 import hashlib
 import io
 import json
@@ -372,6 +373,54 @@ def cmd_status():
     return 0
 
 
+def selftest():
+    """道具そのものの自己テスト。CI と門番テストから叩く。
+
+    実地で1回確かめても、次に誰かが直したときに壊れれば意味がない。
+    ここで見るのは「壊れると気づけなくなる」2点だけ。
+    """
+    import tempfile
+    ng = []
+
+    # EE-1(第10回): 参照が指紋に入っているか。
+    # 入っていないと、クローンから本物へ push しても「無傷」と出る。
+    fp = fingerprint()
+    if "@refs" not in fp:
+        ng.append("指紋に参照(@refs)が入っていない。push を捕まえられない(EE-1)")
+    if not any(k.startswith(".git/refs") or k == ".git/HEAD" for k in fp):
+        ng.append("指紋に .git/refs / .git/HEAD が入っていない(EE-1)")
+    # .git の中でも見ない場所があること(全部入れると走らせるたびに変わる)
+    if any(k.startswith(".git/objects") for k in fp):
+        ng.append("指紋に .git/objects が入っている。走らせるたびに変わってしまう")
+
+    # FG-4(第11回): 記録が「開いている」のに実体が無ければ、開いている扱いにする。
+    sys.path.insert(0, os.path.join(ROOT, "tools", "hooks"))
+    import no_redteam_write as W
+    tmp = tempfile.mkdtemp(prefix="rt_self_")
+    os.makedirs(os.path.join(tmp, "docs"))
+    io.open(os.path.join(tmp, "docs", "redteam-log.txt"), "w",
+            encoding="utf-8", newline="\n").write(
+        "START\t2026-01-01 00:00:00\tdead\t自己テスト\t1 files\t/tmp\tdead\n")
+    keep = W.ROOT
+    try:
+        W.ROOT = tmp
+        if not W._log_says_open():
+            ng.append("未クローズの START を「開いている」と読めていない(FG-4)")
+        io.open(os.path.join(tmp, "docs", "redteam-log.txt"), "a",
+                encoding="utf-8", newline="\n").write(
+            "END\t2026-01-01 00:00:01\tdead\t自己テスト\t差分なし\n")
+        if W._log_says_open():
+            ng.append("END の後も「開いている」と読んでいる(FG-4)")
+    finally:
+        W.ROOT = keep
+        shutil.rmtree(tmp, ignore_errors=True)
+
+    for x in ng:
+        print("  NG  " + x)
+    print("指紋 %d項目 / 失敗 %d件" % (len(fp), len(ng)))
+    return 1 if ng else 0
+
+
 def main():
     p = argparse.ArgumentParser(add_help=True)
     p.add_argument("--start", metavar="ラベル")
@@ -383,11 +432,14 @@ def main():
                    help="閉じられない回から抜ける。--reason が要る(記録は永久に残る)")
     p.add_argument("--reason", default="")
     p.add_argument("--status", action="store_true")
+    p.add_argument("--selftest", action="store_true")
     a = p.parse_args()
     if a.start:
         return cmd_start(a.start, a.sandbox)
     if a.check:
         return cmd_check()
+    if a.selftest:
+        return selftest()
     if a.abort:
         return cmd_abort(a.reason)
     if a.end:

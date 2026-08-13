@@ -19,3 +19,4 @@
 2026-08-13	-3	hooks:tools/hooks/_cmdline.py,hooks:tools/hooks/no_protection_bypass.py,hooks:tools/hooks/no_redteam_write.py	第11回の指摘を反映(ヒアドキュメント印のtoken化・gitのサブコマンド白名簿・config書き込みのキー白名簿・削除refspec・回の判定のfail-closed)
 2026-08-13	-2	hooks:tools/hooks/_cmdline.py,hooks:tools/hooks/no_redteam_write.py	第12回GD-1: ヒアドキュメントの行削除が正規表現のまま残っていたのをtoken判定に一本化
 2026-08-13	-3	hooks:docs/RULE-OPERATION.md,hooks:docs/RULES.md,hooks:docs/redteam-brief.md	R-09に罰則を明記(確認を上げた瞬間に無条件NO。穴を見つけられないことより悪い失敗)
+2026-08-13	-2	hooks:tools/gate_selftest.py,hooks:tools/redteam.py	確かめていなかった修正2件(EE-1の参照指紋・FG-4のfail-closed)を実地確認し、壊れたら鳴るよう自己テストに組み込んだ
