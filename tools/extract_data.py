@@ -183,7 +183,42 @@ def safe_name(s):
     return re.sub(r'[\\/:*?"<>|]', "_", s)
 
 
-def run(check_only=False):
+def guard(check_only, force):
+    """既に data/ がある状態で走らせるのを止める(2026-08-13、実地で踏んだ)。
+
+    この道具は**1回限りの引っ越し用**。正本が data/ に移ったあとに走らせると、
+    ページ側(生成物)から data/ を作り直すことになり、逆流する。
+
+    実際に踏んだ: 引っ越し後に何気なく走らせたら、notes が 255ファイル・555行
+    消えた。build_data は要素直下の notes を要素の**前**にコメントとして書き出すが、
+    extract 側は要素の `{...}` の中しか見ないので、拾い直せない。
+    コミット前に気づいて git checkout で戻せたが、気づかなければ出典の記録が
+    まとめて消えていた。
+
+    往復で保つように直すより、**走らせないようにする**ほうが正しい。
+    引っ越しはもう終わっているので、この道具の出番は原則もう無い。
+    """
+    if check_only or force:
+        return
+    live = [d for _p, _a, d, _k in TARGETS
+            if os.path.isdir(os.path.join(ROOT, d))
+            and any(f.endswith(".json") for f in os.listdir(os.path.join(ROOT, d)))]
+    if live:
+        print("[停止] 正本(data/)が既にある: %s" % ", ".join(live))
+        print()
+        print("この道具はページ内の配列から data/ を作る**引っ越し用**で、1回限りのもの。")
+        print("いま走らせるとページ(生成物)から正本を作り直すことになり、逆流する。")
+        print("要素直下の notes は build_data が要素の前に書き出すので拾い直せず、")
+        print("出典の記録がまとめて消える(実地で 255ファイル・555行 消した)。")
+        print()
+        print("  data/ を直したい      → JSONを直接編集して python tools/build_data.py")
+        print("  食い違いを見たい      → python tools/verify_extract.py")
+        print("  それでも作り直したい  → --force(何が消えるか分かっている場合だけ)")
+        raise SystemExit(1)
+
+
+def run(check_only=False, force=False):
+    guard(check_only, force)
     total, notes_total = 0, 0
     for page, array, outdir, keyfld in TARGETS:
         path = os.path.join(ROOT, page)
@@ -219,4 +254,4 @@ def run(check_only=False):
 
 if __name__ == "__main__":
     sys.stdout.reconfigure(encoding="utf-8")
-    run(check_only="--check" in sys.argv)
+    run(check_only="--check" in sys.argv, force="--force" in sys.argv)

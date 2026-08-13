@@ -28,3 +28,4 @@
 2026-08-13	-3	hooks:tools/audit_selftest.py,hooks:tools/redteam.py,hooks:tools/rules.py	中断した回の指摘を閉じる ABORT-CLOSED を追加。一度でも中断するとCIが永久に赤になり、赤いCIは見なくなるので最も危険な状態だった。記録は消せないまま、始末の記録を足せるようにした。宛先が実在しない始末はHIGHで止める検査と自己テストも同時に入れた
 2026-08-13	-2	hooks:tools/hooks/no_redteam_write.py,hooks:tools/redteam.py	自己テスト2件がLinuxで必ず落ちる作りだったのを直した。R-04はドライブ文字つきパスをWindowsのisabsでしか絶対と見なしておらず本物からの相対に解決されていた。R-03はdetached HEADで参照0本の状態を故障扱いしていた。どちらもCIが一度も緑にならない原因
 2026-08-13	-4	hooks:docs/RULE-OPERATION.md,hooks:docs/RULES.md,hooks:tools/gate_selftest.py,hooks:tools/hooks/no_heredoc_backslash.py	T-08(コミットメッセージのコマンド置換)をPreToolUseフックに追加。同じ事故を2回起こし、どちらもpush後に気づいてP-2が--forceを止めるため直せなかった。gate_selftestに筋書きを足し、RULES.mdに行を追加してルール件数の表記を90に揃えた
+2026-08-13	-1	hooks:tools/extract_data.py	extract_data.py に逆流防止の門を付けた。正本がdata/に移ったあとに走らせるとページ(生成物)から正本を作り直すことになり、要素直下のnotesを拾い直せず出典の記録が消える。実地で255ファイル555行を消してコミット前に気づいた。引っ越しは1回限りなので走らせないようにする
