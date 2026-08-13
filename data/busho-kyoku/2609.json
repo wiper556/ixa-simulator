@@ -76,7 +76,7 @@
    "afterSkill": "二重の極み",
    "afterRank": "A",
    "target": "全 卓越",
-   "rate": "+100%",
+   "rate": "100%",
    "effectShort": "攻撃340%上昇+防御340%上昇(卓越:追加確率100%で2倍・模倣不可)"
   },
   {
@@ -89,7 +89,7 @@
    "rate": "80%",
    "effectShort": "部隊長の初期スキルを模倣(戦闘スキルのみ、TR別データは未確認)",
    "afterTarget": "部隊長",
-   "afterRate": "+55%",
+   "afterRate": "55%",
    "afterEffectShort": "部隊長の初期スキルを1.1倍に強化して模倣(TR別データは未確認)"
   },
   {
@@ -99,10 +99,10 @@
    "afterSkill": "飛蝶野分",
    "afterRank": "B",
    "target": "部隊長",
-   "rate": "+55%",
+   "rate": "55%",
    "effectShort": "部隊長の模倣可能な初期スキルを通常攻撃/防御効果1.1倍で模倣",
    "afterTarget": "部隊長",
-   "afterRate": "+60%",
+   "afterRate": "60%",
    "afterEffectShort": "部隊長の初期スキルを模倣(戦闘スキルのみ)(TR別データは未確認)"
   },
   {
@@ -112,7 +112,7 @@
    "afterSkill": "高津姫神",
    "afterRank": "SS",
    "target": "自身",
-   "rate": "+70%",
+   "rate": "70%",
    "effectShort": "自身の持つ初期スキルを模倣する(戦闘スキルのみ)"
   },
   {
@@ -122,10 +122,10 @@
    "afterSkill": "天聖宝冠",
    "afterRank": "SSS",
    "target": "全",
-   "rate": "+100%",
+   "rate": "100%",
    "effectShort": "攻撃320%上昇+速度70%上昇(所属部隊のスキルを無効化・発動低下から保護)",
    "afterTarget": "全",
-   "afterRate": "+45%",
+   "afterRate": "45%",
    "afterEffectShort": "攻撃 100%+5%×防御参加武将数(280人)=1500.0%"
   }
  ],

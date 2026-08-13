@@ -73,7 +73,7 @@
    "rate": null,
    "effectShort": null,
    "afterTarget": "全",
-   "afterRate": "+20%",
+   "afterRate": "20%",
    "afterEffectShort": "攻撃(コスト×10) %上昇(武将コストによって効果が変化)"
   },
   {
@@ -93,10 +93,10 @@
    "afterSkill": "遁世影武者",
    "afterRank": "B",
    "target": "槍・馬・器",
-   "rate": "+30%",
+   "rate": "30%",
    "effectShort": "攻撃35%上昇+速度25%上昇",
    "afterTarget": "部隊長",
-   "afterRate": "+50%",
+   "afterRate": "50%",
    "afterEffectShort": "所属部隊の部隊長が持つ初期スキルを模倣する(戦闘スキルのみ)"
   },
   {
@@ -106,7 +106,7 @@
    "afterSkill": "仁将無双",
    "afterRank": "B",
    "target": "槍・馬・砲",
-   "rate": "+17%",
+   "rate": "17%",
    "effectShort": "攻撃・防御((1+ランク)×コスト×2.1)%上昇"
   },
   {
@@ -116,10 +116,10 @@
    "afterSkill": "八重言代主神",
    "afterRank": "SS",
    "target": "弓・器",
-   "rate": "+35%",
+   "rate": "35%",
    "effectShort": "攻撃(1.7×防御参加武将数)%上昇",
    "afterTarget": "自身",
-   "afterRate": "+70%",
+   "afterRate": "70%",
    "afterEffectShort": "自身の持つ初期スキルを模倣する(戦闘スキルのみ)"
   }
  ],

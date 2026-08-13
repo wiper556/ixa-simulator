@@ -70,7 +70,7 @@
    "afterSkill": "火之迦具土神",
    "afterRank": "SS",
    "target": "槍・馬・砲",
-   "rate": "+100%",
+   "rate": "100%",
    "effectShort": "攻撃160%上昇(卓越:追加確率25%で3倍)"
   },
   {
@@ -80,7 +80,7 @@
    "afterSkill": "天津日ノ太刀",
    "afterRank": "SS",
    "target": "全",
-   "rate": "+57%",
+   "rate": "57%",
    "effectShort": "攻撃184%上昇(卓越:追加確率75%で2倍)+飛翔4"
   },
   {
@@ -90,10 +90,10 @@
    "afterSkill": "天聖宝冠",
    "afterRank": "SSS",
    "target": "全",
-   "rate": "+100%",
+   "rate": "100%",
    "effectShort": "攻撃320%上昇+速度70%上昇(所属部隊のスキルを無効化・発動低下から保護)",
    "afterTarget": "全",
-   "afterRate": "+45%",
+   "afterRate": "45%",
    "afterEffectShort": "攻撃 100%+5%×防御参加武将数(280人)=1500.0%"
   },
   {
@@ -106,7 +106,7 @@
    "rate": null,
    "effectShort": null,
    "afterTarget": "部隊長",
-   "afterRate": "+70%",
+   "afterRate": "70%",
    "afterEffectShort": "模倣倍率1.25倍"
   },
   {
@@ -119,7 +119,7 @@
    "rate": null,
    "effectShort": null,
    "afterTarget": "部隊長",
-   "afterRate": "+70%",
+   "afterRate": "70%",
    "afterEffectShort": "模倣倍率1.25倍"
   }
  ],
