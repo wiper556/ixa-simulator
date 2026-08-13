@@ -112,6 +112,9 @@ def check_segment(toks, sandbox, repo):
     _env, toks = strip_env(toks)
     if not toks:
         return None
+    # `2>&1` は割ると「2」「1」という数字だけの区画になる。ファイルではない。
+    if len(toks) == 1 and toks[0].isdigit():
+        return None
     # `> ファイル` のリダイレクト先は、区切りで割ると「パス1個だけの区画」になる。
     if len(toks) == 1 and _pathish(toks[0]):
         if _inside(toks[0], sandbox):
@@ -264,6 +267,8 @@ MUST_PASS = [
     "python -P c:/repo/tools/redteam.py --end",
     "cd c:/repo",
     "cd c:/repo && git log --oneline -3",
+    "python c:/temp/claude/ba/tools/install_hooks.py 2>&1 | tail -2",
+    "git log --oneline -5 2>&1",
 ]
 MUST_BLOCK = [
     "python tools/install_hooks.py",              # 本物にフックを入れ直す

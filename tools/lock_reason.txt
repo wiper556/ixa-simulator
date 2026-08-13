@@ -8,3 +8,4 @@
 2026-08-13	-2	hooks:tools/hooks/no_redteam_write.py,hooks:tools/redteam.py	実地1回目で見つかった4件を修正(引用符つき絶対パス誤判定・-P付き起動・cd・自分の記録を指紋に含めていた)
 2026-08-13	-2	hooks:tools/redteam.py,hooks:tools/rules.py	--abort の出口とABORT記録を追加。閉じられない回から抜ける唯一の手段で、痕跡は永久にMIDで残る
 2026-08-13	-1	hooks:tools/rules.py	中断の記録に「本物に差分が出たあとか」を残すようにrules.pyを変更
+2026-08-13	-1	hooks:tools/hooks/no_redteam_write.py	2>&1 が数字だけの区画になり誤検知していたのを修正。通す形を21件に拡張
