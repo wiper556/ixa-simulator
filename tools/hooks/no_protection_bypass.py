@@ -116,6 +116,20 @@ def _check_git(toks):
     low = [x.lower() for x in rest]
 
     if sub == "config":
+        # EG-1(第10回、高): core.hooksPath 一語しか見ていなかった。
+        # 下のキーは git が**自分で起動する**ので、書ければ任意実行になる。
+        RUNNABLE = ("core.fsmonitor", "core.pager", "core.editor",
+                    "sequence.editor", "core.sshcommand", "diff.external",
+                    "credential.helper", "init.templatedir",
+                    "core.gitproxy", "protocol.ext.allow", "uploadpack.",
+                    "receivepack.", "alias.", "filter.", "difftool.",
+                    "mergetool.", "gpg.program", "ssh.variant")
+        for j, t in enumerate(low):
+            if any(t.endswith(k) or k in t for k in RUNNABLE):
+                nxt = rest[j + 1] if j + 1 < len(rest) else ""
+                if nxt and not nxt.startswith("-"):
+                    return ("git が自分で起動する設定への書き込み",
+                            " ".join(rest[j:j + 2]))
         for j, t in enumerate(low):
             if t.endswith("core.hookspath"):
                 if any(o in low for o in ("--unset", "--unset-all",
@@ -139,6 +153,11 @@ def _check_git(toks):
                 any(x.startswith("--force-with-lease") or
                     x.startswith("--force-if-includes") for x in low):
             return ("保護ブランチへの強制上書き", "push --force")
+        # EE-2(第10回、高): refspec の先頭 `+` は --force と同義。
+        # 語の列挙だけを見ていたので、`push origin +master` が素通りした。
+        for x in rest:
+            if x.startswith("+") and not x.startswith("+-"):
+                return ("保護ブランチへの強制上書き(+refspec)", "push " + x)
     if sub == "update-index" and any(x in low for x in ("--skip-worktree",
                                                         "--assume-unchanged")):
         return ("検査の道具の変更を git から隠す操作", " ".join(rest))
@@ -273,6 +292,15 @@ MUST_BLOCK = [
     "git push --no-verify",
     "git push --force origin master",
     "git push --force-with-lease origin master",
+    # 第10回 EE-2(高): refspec の `+` は --force と同義
+    "git push origin +master",
+    "git push origin +HEAD:refs/heads/master",
+    "git -C /tmp/x push origin +master",
+    # 第10回 EG-1(高): git が自分で起動する設定
+    "git config --global core.fsmonitor touch-pwned",
+    "git config --global core.pager evil",
+    "git config --global alias.st !touch-pwned",
+    "git config --global sequence.editor evil",
     "git update-index --skip-worktree tools/precommit_check.py",
     "rm .git/hooks/pre-commit",
     "rm -f .git/hooks/*",
@@ -296,6 +324,8 @@ MUST_PASS = [
     'git commit -m "gh api -X DELETE …/protection を拒否する"',
     "git push origin work",
     "git push -n origin master",
+    "git config --get core.pager",
+    "git push origin master",
     "git merge --no-ff topic",
     "git status --porcelain",
     "python tools/install_hooks.py",

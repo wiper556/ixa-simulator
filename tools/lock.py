@@ -242,6 +242,21 @@ def problems():
                         "%s が %d体 → %d体。直せない指摘を、その武将ごと消していないか"
                         % (f, n, m)))
 
+    # EL-1(2026-08-13 第10回、高): ここは lock["hooks"] を軸に回していた。
+    # cur["hooks"] のキーは定数 HASHED から作られるので常に全部揃うのに、
+    # **錠前側に無いキーは1件も比較されない**。つまり checks.lock から1行
+    # 消すだけで、そのファイルは無検査になった。30本まるごと消しても
+    # 「錠前と一致している」と表示された。
+    # 権威は**コード側の定数**。錠前は値の比較にだけ使う。
+    for f in sorted(set(HASHED) - set(lock["hooks"])):
+        out.append(("錠前から守り先が抜けている", "HIGH",
+                    "%s が checks.lock に無い。錠前は「載っているものだけ」を\n"
+                    "比べるので、載っていないファイルは無検査になる。"
+                    "`python tools/lock.py --update` で取り込む" % f))
+    for f in sorted(set(PRESENT) - set(lock["present"])):
+        out.append(("錠前から守り先が抜けている", "HIGH",
+                    "%s(必須ファイル)が checks.lock に無い" % f))
+
     # 門番の中身
     for f, h in sorted(lock["hooks"].items()):
         m = cur["hooks"].get(f)

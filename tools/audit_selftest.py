@@ -244,6 +244,11 @@ EVASIONS = [
     (".git直接書き換えの見張りが消えた", ".claude/settings.json",
      '"matcher": "Write|Edit|NotebookEdit"', '"matcher": "NotebookEdit"',
      "matcher から Write/Edit を外す"),
+    # EL-1(第10回、高): 錠前ファイルから守り先のキーを1行消すと、
+    # そのファイルは無検査になった(30本まるごと消しても「一致している」)。
+    ("錠前から守り先が抜けている", "tools/checks.lock",
+     '"tools/audit_characters.py":', '"tools/audit_characters_X.py":',
+     "錠前から守り先を1行消して無検査にする"),
     # AA-5: 個人設定(gitignore済み=差分に出ない)は誰も見ていなかった。
     # 後勝ちなので、ここに hooks を書けば共有側の門番を丸ごと無効化できた。
     # 元から無いこともあるファイルなので、old=None(作る)で試す。

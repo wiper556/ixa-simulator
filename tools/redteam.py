@@ -41,7 +41,12 @@ SKIP_DIRS = (".git", "__pycache__", "node_modules", "tools/audit_out",
 # .git の中でも、門番の実体と設定は見る。
 # 第6回 BG: `.git/config` が指紋の外だったので、そこに core.hooksPath を書けば
 # 門番を丸ごと外したまま「本物は無傷」と表示できた。
-GIT_WATCH = (".git/hooks", ".git/config", ".git/info")
+GIT_WATCH = (".git/hooks", ".git/config", ".git/info",
+             # EE-1(第10回、高): 参照が指紋の外だったので、クローンから
+             # `push origin HEAD:refs/heads/x` で本物に検査を通していない
+             # コミットを入れても「無傷」と出た。作業ツリーは動かないが、
+             # リポジトリの中身は動いている。
+             ".git/refs", ".git/packed-refs", ".git/HEAD")
 # この道具自身の追記記録。指紋を採った直後に START 行を書くので、
 # 含めると必ず自分で自分を「変わった」と判定して回が閉じられなくなる(実地1回目の不具合)。
 # 追跡ファイルなので改竄は git の差分に出るし、開閉の対応は rules.py が見る。
@@ -87,6 +92,14 @@ def fingerprint():
     いちばん簡単な抜け道になるため。
     """
     out = {}
+    # 参照は「ファイルとして」だけでなく一覧としても採る。
+    # packed-refs と loose ref のどちらに入るかは git の都合で変わるため。
+    r = subprocess.run(["git", "for-each-ref",
+                        "--format=%(refname) %(objectname)"],
+                       cwd=ROOT, capture_output=True, text=True,
+                       encoding="utf-8")
+    out["@refs"] = hashlib.sha256(
+        (r.stdout or "").encode("utf-8")).hexdigest()[:16]
     for base, dirs, files in os.walk(ROOT):
         rb = _rel(base) if base != ROOT else ""
         dirs[:] = [d for d in sorted(dirs)
