@@ -40,6 +40,10 @@ SKIP_DIRS = (".git", "__pycache__", "node_modules", "tools/audit_out",
              ".claude/worktrees", ".claude/sounds", ".pytest_cache")
 # .git の中でも門番の実体だけは見る
 GIT_WATCH = ".git/hooks"
+# この道具自身の追記記録。指紋を採った直後に START 行を書くので、
+# 含めると必ず自分で自分を「変わった」と判定して回が閉じられなくなる(実地1回目の不具合)。
+# 追跡ファイルなので改竄は git の差分に出るし、開閉の対応は rules.py が見る。
+SKIP_FILES = ("docs/redteam-log.txt",)
 
 
 def state_dir():
@@ -61,6 +65,8 @@ def _rel(p):
 
 
 def _skip(rel):
+    if rel in SKIP_FILES:
+        return True
     if rel.startswith(".git/") and not rel.startswith(GIT_WATCH + "/"):
         return True
     for s in SKIP_DIRS:
@@ -223,6 +229,33 @@ def cmd_end():
     return 0
 
 
+def cmd_abort(reason):
+    """回を中断する。閉じられない状態から抜ける唯一の出口。
+
+    `--end` は本物に差分があると閉じない(それでいい)。だが道具側の不具合で
+    閉じられなくなることもある(実際、初日に自分の記録を指紋に入れていて詰まった)。
+    出口が無いと、次に困った人が記録を手で消す。それがいちばん悪い。
+
+    出口は残すが、**痕跡は永久に残す**: ABORT は追跡ファイルに書かれ、
+    監査が毎回 MID で「中断した回がある」と言い続ける。
+    ごまかすには追跡ファイルに嘘の理由を書くことになり、それは記録に残る嘘になる。
+    """
+    if len(reason.strip()) < 10:
+        print("--reason は10文字以上。なぜ閉じられなかったのかを書く。")
+        return 1
+    if "\t" in reason or "\n" in reason:
+        print("理由にタブ・改行は使えない(記録が1行1件で壊れる)。")
+        return 1
+    label = "(記録なし)"
+    if os.path.exists(active_path()):
+        label = json.load(io.open(active_path(), encoding="utf-8"))["label"]
+        os.remove(active_path())
+    log("ABORT\t%s\t%s\t%s\t%s" % (now(), head()[:12], label, reason))
+    print("回を中断した: %s" % label)
+    print("理由を docs/redteam-log.txt に残した。監査はこれを MID で報せ続ける。")
+    return 0
+
+
 def cmd_status():
     if not os.path.exists(active_path()):
         print("開いている回は無い(本物のリポジトリへの書き込みは通常どおり)。")
@@ -242,12 +275,17 @@ def main():
                    help="テスト環境の場所。既定は <TEMP>/claude")
     p.add_argument("--check", action="store_true")
     p.add_argument("--end", action="store_true")
+    p.add_argument("--abort", action="store_true",
+                   help="閉じられない回から抜ける。--reason が要る(記録は永久に残る)")
+    p.add_argument("--reason", default="")
     p.add_argument("--status", action="store_true")
     a = p.parse_args()
     if a.start:
         return cmd_start(a.start, a.sandbox)
     if a.check:
         return cmd_check()
+    if a.abort:
+        return cmd_abort(a.reason)
     if a.end:
         return cmd_end()
     return cmd_status()

@@ -326,7 +326,8 @@ def _p_redteam(out, ids, n):
     # 記録そのものが消えた場合は錠前の PRESENT が「必須ファイルが消えた」で拾う。
     # ここで別種別を作ると、注入ケースを置けない(消す注入ができない)種別が増える。
     p = os.path.join(ROOT, "docs", "redteam-log.txt")
-    opened = None
+    opened, failed = None, []
+    aborted = []
     for line in _read(p).split("\n"):
         if line.startswith("#") or not line.strip():
             continue
@@ -334,12 +335,24 @@ def _p_redteam(out, ids, n):
         if kind == "START":
             opened = line
         elif kind == "END":
-            opened = None
+            opened, failed = None, []
+        elif kind == "ABORT":
+            # 出口はあるが、痕跡は永久に残る。監査は毎回これを報せ続ける。
+            opened, failed = None, []
+            aborted.append(line)
         elif kind == "END-FAILED":
-            out.append(("レッドチームが本物を触った", "HIGH",
-                        "回を閉じようとして差分が出ている: %s。"
-                        "その回の指摘は無効。違反ログに「重」で記録して回をやり直す"
-                        % line[:100]))
+            failed.append(line)
+    for line in failed:
+        out.append(("レッドチームが本物を触った", "HIGH",
+                    "回を閉じようとして差分が出ている: %s。"
+                    "その回の指摘は無効。違反ログに「重」で記録して回をやり直す"
+                    % line[:100]))
+    for line in aborted:
+        c = line.split("\t")
+        out.append(("レッドチームの回を中断した", "MID",
+                    "%s の回「%s」は --abort で抜けた: %s"
+                    % (c[1] if len(c) > 1 else "?", c[3] if len(c) > 3 else "?",
+                       c[4] if len(c) > 4 else "(理由なし)")))
     if opened:
         out.append(("レッドチームの回が閉じていない", "HIGH",
                     "%s に開いた回が閉じられていない。"

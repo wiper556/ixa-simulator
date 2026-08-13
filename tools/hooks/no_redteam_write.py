@@ -58,7 +58,9 @@ READ_ONLY = {"cat", "head", "tail", "grep", "rg", "ls", "dir", "find", "wc",
              "sort", "uniq", "diff", "stat", "file", "basename", "dirname",
              "echo", "true", "false", "pwd", "date", "which", "type", "nl",
              "cut", "tr", "comm", "md5sum", "sha256sum", "printf", "seq",
-             "get-content", "select-string", "get-childitem", "measure-object"}
+             "get-content", "select-string", "get-childitem", "measure-object",
+             # 移動するだけで何も書かない。続くコマンドは別区画として個別に見る。
+             "cd", "set-location", "pushd", "popd"}
 
 
 def _norm(p):
@@ -69,8 +71,16 @@ def _norm(p):
 
 
 def _inside(path, root):
-    p, r = _norm(os.path.abspath(path) if not os.path.isabs(path) else path), _norm(root)
-    return p == r or p.startswith(r + "/")
+    # 実地1回目の不具合: 引用符を外す前に isabs を見ていたので、
+    # `"C:/…/scratchpad/x.py"` のような**引用符つきの絶対パス**が相対パス扱いになり、
+    # テスト環境の中なのに外と判定していた(自分がロックアウトされた)。
+    p = _norm(path)
+    if not p:
+        return False
+    if not os.path.isabs(p):
+        p = _norm(os.path.abspath(p))
+    r = _norm(root)
+    return bool(r) and (p == r or p.startswith(r + "/"))
 
 
 def state_dir():
@@ -111,8 +121,11 @@ def check_segment(toks, sandbox, repo):
     args = toks[1:]
 
     # 4. 回そのものを扱う道具
-    if cmd in ("python", "python3", "py") and args:
-        if base(args[0]) == "redteam.py" and _inside(args[0], repo):
+    # 実地1回目の不具合: `args[0]` だけを見ていたので `python -P tools/redteam.py`
+    # (フラグが前に付く形)が通らず、回を閉じる手段が無くなった。
+    if cmd in ("python", "python3", "py"):
+        script = next((t for t in args if not t.startswith("-")), None)
+        if script and base(script) == "redteam.py" and _inside(script, repo):
             return None
 
     # 1. サンドボックスの中で完結するもの
@@ -246,6 +259,11 @@ MUST_PASS = [
     "rm -rf c:/temp/claude/ba",
     "echo hello",
     "git -C c:/temp/claude/ba log > c:/temp/claude/ba/out.txt",
+    # 実地1回目で自分がロックアウトされた形。全部通らないといけない。
+    'python "c:/temp/claude/ba/tools/check_js.py"',
+    "python -P c:/repo/tools/redteam.py --end",
+    "cd c:/repo",
+    "cd c:/repo && git log --oneline -3",
 ]
 MUST_BLOCK = [
     "python tools/install_hooks.py",              # 本物にフックを入れ直す

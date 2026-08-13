@@ -5,3 +5,5 @@
 2026-08-13	-12	present:docs/RULES.md,present:tools/gate_selftest.py,hooks:.claude/settings.json,hooks:.github/workflows/rules.yml,hooks:tools/audit_selftest.py,hooks:tools/hooks/no_protection_bypass.py,hooks:tools/hooks/pre-commit,hooks:tools/hooks/pre-merge-commit	第5回レッドチーム49件の修正で門番9本を改訂(P-2再実装/区画分割/AST化/HASHED追加)。中身の変更は本コミットの差分そのもの
 2026-08-13	-1	hooks:tools/audit_selftest.py	自己テストに注入ケース5件を追加(廃止情報源/個人設定2件/.git直接書き換え2件)し、注入枠組みにファイル作成を足した
 2026-08-13	-7	hooks:.claude/settings.json,hooks:docs/RULE-OPERATION.md,hooks:docs/RULES.md,hooks:tools/audit_selftest.py,hooks:tools/hooks/no_protection_bypass.py,hooks:tools/lock.py,hooks:tools/rules.py	レッドチームの回を機械化(R-01〜R-08): 指紋・ホワイトリストのフック・開閉記録を追加し、共通のコマンド解析を1本に集約
+2026-08-13	-2	hooks:tools/hooks/no_redteam_write.py,hooks:tools/redteam.py	実地1回目で見つかった4件を修正(引用符つき絶対パス誤判定・-P付き起動・cd・自分の記録を指紋に含めていた)
+2026-08-13	-2	hooks:tools/redteam.py,hooks:tools/rules.py	--abort の出口とABORT記録を追加。閉じられない回から抜ける唯一の手段で、痕跡は永久にMIDで残る
