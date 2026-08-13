@@ -100,6 +100,15 @@
     border:1px solid var(--line); pointer-events:none; user-select:text;
   }
 
+  /* 一覧の行にカーソルを置いたときの顔出し(TYPE2を7割の大きさで) */
+  .cardhover-pop{
+    position:fixed; z-index:10000; pointer-events:none; display:none;
+    padding:4px; background:#fff; border:1px solid var(--line);
+    border-radius:6px; box-shadow:0 6px 20px rgba(0,0,0,0.22);
+  }
+  .cardhover-pop img{ display:block; width:157px; height:auto; border-radius:3px; }
+  @media (hover:none){ .cardhover-pop{ display:none !important; } }
+
 </style>
 </head>
 <body>
