@@ -26,6 +26,17 @@
             "statusMessage": "門番やブランチ保護を外す操作でないかを確認中"
           }
         ]
+      },
+      {
+        "matcher": "Write|Edit|NotebookEdit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python \"$CLAUDE_PROJECT_DIR/tools/hooks/no_git_internal_write.py\"",
+            "timeout": 15,
+            "statusMessage": ".git/ の直接書き換えでないかを確認中"
+          }
+        ]
       }
     ]
   }

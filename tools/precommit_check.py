@@ -61,6 +61,10 @@ REQUIRED = ("docs/RULES.md", "docs/RULE-VIOLATIONS.md", "docs/RULE-OPERATION.md"
             "assets/css/site.css") + DATA_FILES
 
 
+# 「作業」= サイトに出るもの。これ以外はルール・道具の側(W-13)。
+NOT_WORK = ("docs/", "tools/", ".github/", ".claude/", ".gitignore", "README")
+
+
 def run(cmd, cwd=ROOT, env=None):
     e = None
     if env:
@@ -68,6 +72,30 @@ def run(cmd, cwd=ROOT, env=None):
         e.update(env)
     return subprocess.run(cmd, cwd=cwd, capture_output=True, text=True,
                           encoding="utf-8", errors="replace", env=e)
+
+
+def run_py(src_or_args, cwd=ROOT):
+    """検査用のPythonを、**既存の .pyc を一切参照しない**形で走らせる。
+
+    S-1(2026-08-13 第5回レッドチーム): `-B` は「書かない」だけで「読む」のは止めない。
+    しかも __pycache__ の掃除は gate_source_clean(=検査の後)にあった。
+    偽の .pyc を置き直せば、フックを骨抜きにしても「HIGH 0件」と表示できた。
+    キャッシュの参照先を毎回空の捨て場所に向けて、既存の .pyc を見ないようにする。
+    Z-1 対策の -P(スクリプト位置を sys.path に入れない)も併せて付ける。
+    """
+    d = tempfile.mkdtemp(prefix="pycache_")
+    args = ([sys.executable, "-B", "-P"]
+            + (["-c", src_or_args] if isinstance(src_or_args, str) else src_or_args))
+    return run(args, cwd=cwd, env={"PYTHONPYCACHEPREFIX": d, "PYTHONDONTWRITEBYTECODE": "1"})
+
+
+def purge_pycache():
+    """tools/__pycache__ を消す。検査より**前**に呼ぶ。"""
+    p = os.path.join(ROOT, "tools", "__pycache__")
+    if os.path.isdir(p):
+        shutil.rmtree(p, ignore_errors=True)
+        return True
+    return False
 
 
 def load(path):
@@ -116,7 +144,7 @@ def marks(path):
     されているので、.pyc だけ差し替えれば git status も空のまま抜けられた。
     import をやめ、取り出したツリーの中で -B(バイトコードを使わない)で走らせる。
     """
-    r = run([sys.executable, "-B", "-c", MARK_SRC], cwd=path)
+    r = run_py(MARK_SRC, cwd=path)
     for line in (r.stdout or "").split("\n"):
         if line.startswith("@@MARKS@@"):
             d = json.loads(line[len("@@MARKS@@"):])
@@ -140,20 +168,22 @@ def gate_source_clean():
     """
     # Q-4(第4回): 巻き戻しの下限 docs/rollback-floor.txt は作業ツリーから読まれるのに、
     # docs/ がこの監視の対象外だった。未ステージで書き換え→実行→復元で痕跡ゼロだった。
+    # R-6 / S-6(第5回): `.claude/settings.json` だけを見ていたので、
+    # **エージェント定義(`.claude/agents/`)は見張りの外**だった。
+    # 「検証は省略してよい」の1行を未ステージで入れて作業させ、あとで戻せば痕跡ゼロ。
+    # `.claude` ごと見る(ローカル設定・音・worktree は下で除外)。
     out = run(["git", "status", "--porcelain", "--",
-               "tools", ".github", "docs", ".claude/settings.json"]).stdout
+               "tools", ".github", "docs", ".claude"]).stdout
     bad = []
-    # L-3 / Q-2(第4回): __pycache__ に偽の .pyc を置いて検査を黙らせる手があった。
-    # 検査は -B で走らせるようにしたが、そもそも置かせない。
-    pyc = os.path.join(ROOT, "tools", "__pycache__")
-    if os.path.isdir(pyc):
-        shutil.rmtree(pyc, ignore_errors=True)
-        print("[注意] tools/__pycache__ を消した(偽の .pyc を置く手を塞ぐため)。")
     for l in out.split("\n"):
         if len(l) < 4:
             continue
         path = l[3:].strip().strip('"')
-        if path.startswith(("tools/audit_out/", "tools/__pycache__/")):
+        if path.startswith(("tools/audit_out/", "tools/__pycache__/",
+                            ".claude/worktrees/", ".claude/sounds/")):
+            continue
+        # 個人設定は共有しない(.gitignore 済み)。ただし**中身は AA-5 で別途見る**。
+        if path == ".claude/settings.local.json":
             continue
         # XY path。X=インデックス側 / Y=作業ツリー側。
         # ステージ済み(X)は検査対象ツリーに入るので問題ない。
@@ -257,7 +287,7 @@ def hooks_ok():
     **報告に貼れと言っている出力そのものが偽造できた。**
     marks() は -B にしてあったのに、ここと監査側が取り残されていた。
     """
-    r = run([sys.executable, "-B", "-c", HOOKDIFF_SRC])
+    r = run_py(HOOKDIFF_SRC)
     bad = None
     for line in (r.stdout or "").split("\n"):
         if line.startswith("@@HOOKS@@"):
@@ -426,11 +456,117 @@ def check_push():
     return 1 if ng else 0
 
 
+def commit_files(sha):
+    return [x for x in run(["git", "show", "--pretty=", "--name-only", sha]).stdout.split("\n")
+            if x.strip()]
+
+
+def blob(sha, path):
+    r = run(["git", "show", "%s:%s" % (sha, path)])
+    return r.stdout if r.returncode == 0 else None
+
+
+def check_range(rng):
+    """Z-3 / AA-7(2026-08-13 第5回レッドチーム): 門番にしかない停止条件を、CIでも見る。
+
+    W-13 / P-03 / 生成物だけの手編集 / ベースライン増加の理由 は
+    `precommit_check.py` の中にしか実装が無く、CIは一度もそのコミット自身を判定していなかった。
+    `gate_selftest.py` は「門番のコードが**架空の**違反を止めるか」を見るだけで、
+    目の前のコミットとは無関係。だからフックを黙らせた瞬間に第二の防衛線が無かった。
+
+    実際、P-03 と W-13 を同時に踏んだコミットでCI相当を回して全部緑になることが実証された。
+    ここで push された範囲の各コミットに同じ判定を当てる。
+    ローカルのフックは速度のための前倒しで、**本当の関所はここ**という位置づけにする。
+    """
+    r = run(["git", "rev-list", "--reverse", rng])
+    if r.returncode != 0:
+        print("範囲 %s を解決できない。" % rng)
+        return 1
+    shas = [x for x in r.stdout.split("\n") if x.strip()]
+    print("検査するコミット: %d件 (%s)" % (len(shas), rng))
+    ng = 0
+    for sha in shas:
+        short = sha[:8]
+        files = commit_files(sha)
+        if not files:
+            continue
+        bad = []
+
+        # W-13: ルール文書の変更と、サイトに出るものの変更を同じコミットに混ぜない
+        rule_docs = [f for f in files
+                     if f.startswith(("docs/", ".claude/agents/", ".github/workflows/"))
+                     or f in (".claude/settings.json", "tools/checks.lock")]
+        work = [f for f in files if not f.startswith(NOT_WORK)]
+        if rule_docs and work:
+            bad.append("W-13 ルール文書(%s)と作業(%s)が同じコミット"
+                       % (rule_docs[0], work[0]))
+
+        # P-03: シミュレーターを変えたらバージョンの値を上げる
+        if "attack-simulator.html" in files:
+            def ver(s):
+                t = blob(s, "attack-simulator.html") or ""
+                m = re.search(r"SIMULATOR_VERSION\s*=\s*['\"]([^'\"]+)", t)
+                return m.group(1) if m else None
+            if ver(sha) == ver(sha + "^"):
+                bad.append("P-03 SIMULATOR_VERSION が %s のまま" % ver(sha))
+
+        # 生成物だけの手編集
+        gen = [f for f in files if f.startswith(("busho/", "skill/"))]
+        if gen and not [f for f in files
+                        if f in DATA_FILES or f.startswith("tools/") or f == "sitemap.xml"]:
+            bad.append("生成物だけが変わっている(%d件)。手で編集していないか" % len(gen))
+
+        # ベースラインが増えたのに理由が増えていない
+        if "tools/audit_baseline.json" in files:
+            a = load_text(blob(sha + "^", "tools/audit_baseline.json") or "[]")
+            b = load_text(blob(sha, "tools/audit_baseline.json") or "[]")
+            # R-3: 件数ではなく鍵の集合で見る(1件消して1件足すと件数は動かない)
+            ka = {(x.get("cat"), x.get("sev"), x.get("msg")) for x in a}
+            kb = {(x.get("cat"), x.get("sev"), x.get("msg")) for x in b}
+            if kb - ka:
+                ra = [l for l in (blob(sha + "^", "tools/audit_baseline_reason.txt")
+                                  or "").replace("\r", "").split("\n") if l.strip()]
+                rb = [l for l in (blob(sha, "tools/audit_baseline_reason.txt")
+                                  or "").replace("\r", "").split("\n") if l.strip()]
+                app = rb[len(ra):]
+                if rb[:len(ra)] != ra:
+                    bad.append("ベースラインの理由ファイルの過去行が書き換えられている")
+                elif not app:
+                    bad.append("ベースラインに %d件 増えたのに理由が無い" % len(kb - ka))
+                elif any(not re.match(r"^[0-9a-f]{7,40}\t\+\d+/-\d+\t.{10,}$", l)
+                         for l in app):
+                    bad.append("ベースラインの理由が --accept の書式ではない")
+
+        if bad:
+            ng += 1
+            print("  [停止] %s %s" % (short, run(["git", "log", "-1", "--format=%s", sha])
+                                      .stdout.strip()[:50]))
+            for x in bad:
+                print("      " + x)
+        else:
+            print("  ok    %s" % short)
+    print()
+    print("門番固有の条件に触れたコミット: %d件" % ng)
+    if ng:
+        print("ローカルのフックを通していれば止まっていたもの。")
+        print("フックを外した経路(-n / --no-verify / core.hooksPath の差し替え)で")
+        print("入った可能性がある。")
+    return 1 if ng else 0
+
+
 def main():
     mode = "commit"
     if "--mode" in sys.argv:
         mode = sys.argv[sys.argv.index("--mode") + 1]
     # E-23: 未知の mode を黙って commit 扱いにしていた。綴り違いで検査が変わるのは危ない。
+    # Z-3: CIから push された範囲を検査するモード。フックとは独立に走る。
+    if mode == "ci":
+        rng = sys.argv[sys.argv.index("--range") + 1] if "--range" in sys.argv else None
+        if not rng:
+            print("--range <base>..<head> が要る。")
+            return 1
+        return check_range(rng)
+
     if mode not in ("commit", "merge", "push"):
         print("--mode は commit / merge / push のいずれか。受け取った値: %r" % mode)
         return 1
@@ -441,6 +577,23 @@ def main():
     tree = run(["git", "write-tree"]).stdout.strip()[:12]
     print("[%s] mode=%s HEAD=%s tree=%s"
           % (datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"), mode, head, tree))
+
+    # S-1(第5回): 掃除は**検査より前**。以前は gate_source_clean の中(=hooks_ok の後)に
+    # あったので、偽の .pyc を置き直せば毎回フック検査を黙らせられた。
+    purge_pycache()
+
+    # Z-1(第5回): tools/ に未追跡の .py があると import を乗っ取れる。
+    # フック側でも見ているが、直接呼ばれたときのために門番自身でも見る。
+    stray = [l[3:].strip() for l in
+             run(["git", "status", "--porcelain", "--", "tools"]).stdout.split("\n")
+             if l.startswith("??") and l.strip().endswith(".py")]
+    if stray:
+        print("=" * 62)
+        print("[停止] tools/ に追跡されていない .py がある: %s" % ", ".join(stray[:5]))
+        print("=" * 62)
+        print("門番は tools/ を sys.path に載せるので、標準ライブラリと同じ名前の")
+        print("ファイルを置くと import を乗っ取れる(第5回 Z-1)。消すか add する。")
+        return 1
 
     # A-7: どのモードでも、まずフックそのものが正本どおりかを見る
     if not hooks_ok():
@@ -503,14 +656,29 @@ def main():
         if len(reason.strip()) < 10:
             print("理由が短すぎる(10文字以上)。何を、なぜ残すのかを書く。")
             return 1
+        # R-4(第5回): 理由は1行1件で追記される。タブや改行が入ると行の形が壊れ、
+        # 手編集の検査(書式照合)をすり抜ける行を **--accept 自身が** 書けてしまう。
+        if "\t" in reason or "\n" in reason or "\r" in reason:
+            print("理由にタブ・改行は使えない(記録が1行1件で壊れる)。")
+            return 1
         # I-1(第3回): 運用そのものを見ているHIGH(2回目の停止・錠前・フック)まで
         # ベースラインに載せられた。データの指摘を飲むついでに規律が消えるので、
         # 運用側の種別は載せられないようにする。
+        # W-4 / X-2(第5回): ここは**語の列挙**だった。列挙に無い言葉で種別を作れば
+        # 運用の指摘でも --accept で飲めた。実際、この日に足した
+        # 「廃止した情報源が手順に残っている」「個人設定が門番を上書きしている」
+        # 「ルール検査が例外で落ちた」はどれも列挙に当たらない。
+        # 語ではなく**発生元**で決める: rules.py が出す種別は運用の指摘なので全部不可。
+        sys.path.insert(0, os.path.join(ROOT, "tools"))
+        import lock as _L
+        _L.ROOT = ROOT
+        from_rules = _L.check_names(only=("tools/rules.py",))
         BANNED = ("2回目の違反", "違反ログ", "フックが正本と違う", "門番",
                   "錠前", "監査チェックが消えた", "ルールが索引から消えた",
                   "必須ファイルが消えた", "武将の件数が減った", "監査に足した")
         blocked = [x for x in cur if key(x) not in {key(y) for y in base}
-                   and any(b in x["cat"] for b in BANNED)]
+                   and (x["cat"] in from_rules
+                        or any(b in x["cat"] for b in BANNED))]
         if blocked:
             print("[停止] 運用そのものを見ている指摘は --accept で飲めない: %d件" % len(blocked))
             for x in blocked[:10]:
@@ -546,17 +714,36 @@ def main():
     # ベースラインが増えているのに、同じコミットで理由が増えていなければ止める。
     if "tools/audit_baseline.json" in staged:
         head_base = load_text(run(["git", "show", "HEAD:tools/audit_baseline.json"]).stdout)
-        n_before = len(head_base)
-        n_after = len(base)
-        if n_after > n_before:
+        # R-3(第5回): ここは**件数**しか見ていなかった。本物の指摘を1件消して
+        # 無害な行を1件足せば、件数が動かないので理由を1行も書かずに黙らせられた。
+        # 件数ではなく**鍵の集合**の差を見る。
+        added = {key(x) for x in base} - {key(x) for x in head_base}
+        if added:
             r_before = run(["git", "show", "HEAD:tools/audit_baseline_reason.txt"]).stdout or ""
             r_after = run(["git", "show", ":tools/audit_baseline_reason.txt"]).stdout or ""
-            if len(r_after.strip().split("\n")) <= len(r_before.strip().split("\n")):
+            lb = [l for l in r_before.replace("\r", "").split("\n") if l.strip()]
+            la = [l for l in r_after.replace("\r", "").split("\n") if l.strip()]
+            appended = la[len(lb):]
+            why = None
+            if la[:len(lb)] != lb:
+                why = "理由ファイルの過去行が書き換えられている"
+            elif not appended:
+                why = "ベースラインに %d件 増えたのに理由が1行も増えていない" % len(added)
+            else:
+                # R-4(第5回): 中身は何でもよかったので、空行や「.」1文字で通った。
+                # --accept が書く形(<sha>\t+N/-M\t理由10文字以上)であることまで見る。
+                bad = [l for l in appended
+                       if not re.match(r"^[0-9a-f]{7,40}\t\+\d+/-\d+\t.{10,}$", l)]
+                if bad:
+                    why = ("理由の行が --accept の書式ではない: 「%s」"
+                           % bad[0][:60])
+            if why:
                 ng = True
                 print("=" * 62)
-                print("[停止] ベースラインが %d件 → %d件 に増えているのに理由が無い"
-                      % (n_before, n_after))
+                print("[停止] ベースラインの手編集: %s" % why)
                 print("=" * 62)
+                for k in sorted(added)[:5]:
+                    print("  + %s" % str(k)[:110])
                 print("手で書き足さず、次を使う:")
                 print('  python tools/precommit_check.py --accept --reason "なぜ残すのか"')
                 print("(理由は tools/audit_baseline_reason.txt に残り、同じコミットに入る)")
@@ -641,7 +828,7 @@ def main():
                                   ".claude/agents/", ".github/workflows/"))
                  or f in ("docs/character-registration-manual.md",
                           ".claude/settings.json", "tools/checks.lock")]
-    NOT_WORK = ("docs/", "tools/", ".github/", ".claude/", ".gitignore", "README")
+    # NOT_WORK はモジュール定数(check_range と共有する)
     work = [f for f in staged if not f.startswith(NOT_WORK)]
     if rule_docs and work:
         ng = True

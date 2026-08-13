@@ -5,7 +5,28 @@
 # このファイルが正本。.git/hooks/ の中身は tools/install_hooks.py が複製したもので、
 # 監査(A-7)が両者の一致を見ている。.git/hooks/ を直接編集しても、次の監査で差分が出る。
 #
+# Z-1(2026-08-13 第5回レッドチーム): `python tools/precommit_check.py` だと
+# sys.path[0] が tools/ になり、**未追跡の tools/json.py を1個置くだけで**
+# import 時点で門番が死んだ(しかも任意の出力を印字できた)。
+# 未追跡ファイルの検査は main() の中、つまり全部の import が終わった後にしか走らない。
+#   → -P でスクリプトの位置を sys.path に入れない(Python 3.11+)
+#   → python が走る前に、シェル側で tools/ の未追跡ファイルを見る
+#
 # 一時的に外したいときは git commit --no-verify だが、
 # 使ったらその旨を報告すること(黙って迂回しない)。
-# なお --no-verify で通した内容も pre-push で改めて検査される。
-exec python tools/precommit_check.py --mode commit
+# なお外して通した内容も pre-push と CI で改めて検査される。
+
+# 検査の道具の隣に、追跡されていない .py が置かれていないか(import 乗っ取り対策)
+STRAY=$(git status --porcelain -- tools | grep '^??' | grep '\.py$' || true)
+if [ -n "$STRAY" ]; then
+  echo "=============================================================="
+  echo "[停止] tools/ に追跡されていない .py がある"
+  echo "=============================================================="
+  echo "$STRAY"
+  echo
+  echo "門番は tools/ を sys.path に載せて動くので、標準ライブラリと同じ名前の"
+  echo "ファイルを置くと import を乗っ取れる(第5回 Z-1)。消すか add すること。"
+  exit 1
+fi
+
+exec python -P tools/precommit_check.py --mode commit

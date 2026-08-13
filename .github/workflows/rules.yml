@@ -184,6 +184,20 @@ jobs:
           sys.exit(1 if bad else 0)
           PY
 
+      - name: push された各コミットに、門番固有の停止条件を当てる
+        # Z-3 / AA-7(第5回): W-13 / P-03 / 生成物の手編集 / ベースライン理由 は
+        # precommit_check.py にしか実装が無く、CIはコミット自身を一度も見ていなかった。
+        # フックは `git commit -n` や `git -c core.hooksPath=` で痕跡なく外せるので、
+        # 「外されていても、ここで必ず1回は見られる」状態にする。
+        run: |
+          BASE="${{ github.event.before }}"
+          if [ -z "$BASE" ] || [ "$BASE" = "0000000000000000000000000000000000000000" ] \
+             || ! git cat-file -e "$BASE^{commit}" 2>/dev/null; then
+            BASE=$(git rev-list --max-parents=0 HEAD | tail -1)
+            echo "比較元が取れないので最初のコミットから見る"
+          fi
+          python tools/precommit_check.py --mode ci --range "$BASE..$GITHUB_SHA"
+
       - name: 門番の自己テスト(precommit固有の停止条件が本当に止めるか)
         # precommit_check.py はCIでは実行されないので、そこにしか無い停止条件
         # (W-13 / P-03 / 生成物の手編集 / ベースライン理由 / 道具の未ステージ改変)は
