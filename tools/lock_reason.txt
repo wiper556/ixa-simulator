@@ -13,3 +13,4 @@
 2026-08-13	-5	hooks:tools/audit_selftest.py,hooks:tools/hooks/_cmdline.py,hooks:tools/hooks/no_redteam_write.py,hooks:tools/redteam.py,hooks:tools/reslog.py	第7回の指摘を反映(改行区切り・python -c・..の畳み込み・読み取りgit・ヒアドキュメント・1>・調査ログの証拠実体化・START付け替え・ラベル検疫)
 2026-08-13	-2	hooks:tools/lock.py,hooks:tools/reslog.py	旧形式の証拠を名指しの一覧でだけ認める(日付判定だと偽造が復活するため)。一覧とreslog.pyを錠前に入れる
 2026-08-13	-2	hooks:tools/audit_selftest.py,hooks:tools/gate_selftest.py	自己テストの注入位置を日付とログ内容に依存しない形へ。中断の注入ケース追加。門番テストにR-04のホワイトリストを追加
+2026-08-13	-2	hooks:docs/RULE-OPERATION.md,hooks:docs/RULES.md	R-09(攻撃側からユーザーへ接触しない)を追加。フックのホワイトリストが通すものを許可リストにも載せ、判断をフック内で完結させる
