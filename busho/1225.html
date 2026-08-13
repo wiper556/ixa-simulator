@@ -39,6 +39,15 @@
   .gdb-list-table td.gdb-col-name{text-align:left;}
   .gdb-list-table td.gdb-col-name a{font-family:'Noto Serif JP',serif;font-weight:700;color:var(--paper);text-decoration:none;}
   .gdb-list-table td.gdb-col-name a:hover{color:var(--vermillion-bright);}
+
+  /* 一覧の行にカーソルを置いたときの顔出し(TYPE2を7割の大きさで) */
+  .cardhover-pop{
+    position:fixed; z-index:10000; pointer-events:none; display:none;
+    padding:4px; background:#fff; border:1px solid var(--line);
+    border-radius:6px; box-shadow:0 6px 20px rgba(0,0,0,0.22);
+  }
+  .cardhover-pop img{ display:block; width:157px; height:auto; border-radius:3px; }
+  @media (hover:none){ .cardhover-pop{ display:none !important; } }
   .gdb-list-table td.gdb-col-effect{text-align:left;color:var(--muted);line-height:1.5;}
   .gdb-list-table col.gdb-col-no{width:7%;}
   .gdb-list-table col.gdb-col-nameW{width:14%;}
