@@ -37,6 +37,17 @@
             "statusMessage": ".git/ の直接書き換えでないかを確認中"
           }
         ]
+      },
+      {
+        "matcher": "Bash|PowerShell|Write|Edit|NotebookEdit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python \"$CLAUDE_PROJECT_DIR/tools/hooks/no_redteam_write.py\"",
+            "timeout": 15,
+            "statusMessage": "レッドチームの回が開いていないかを確認中"
+          }
+        ]
       }
     ]
   }

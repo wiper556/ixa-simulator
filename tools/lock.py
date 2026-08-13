@@ -65,13 +65,18 @@ HASHED = ("tools/hooks/pre-commit", "tools/hooks/pre-merge-commit",
           #  X-5 RULES.md の中身が自由で、棚卸し日に不正な日付を書けば
           #    rules.problems() が例外で落ち、約30種別がHIGH1件に丸まる
           "tools/gate_selftest.py", "tools/gen_detail_pages.py", "tools/prerender.py",
-          "docs/RULES.md", "tools/hooks/no_git_internal_write.py")
+          "docs/RULES.md", "tools/hooks/no_git_internal_write.py",
+          # R-01〜R-08(2026-08-13): 攻撃側を縛る仕組み。ここが外れると
+          # 「本物を触っていない」ことを誰も確かめないまま回が回る。
+          "tools/redteam.py", "tools/hooks/no_redteam_write.py",
+          "tools/hooks/_cmdline.py")
 # N-3(第4回): 縮小の記録 lock_reason.txt はどこにも守られておらず、
 # 消しても誰も気づかなかった。必須ファイルに入れる。
 # Y-5(第5回): research_log.json も無保護だった(「証拠つき」を手書きできる素材)。
 PRESENT = ("docs/RULE-VIOLATIONS.md",
            "tools/audit_baseline.json", "tools/audit_baseline_reason.txt",
-           "tools/lock_reason.txt", "tools/research_log.json")
+           "tools/lock_reason.txt", "tools/research_log.json",
+           "docs/redteam-log.txt")
 ARRAYS = {"characters.html": "generals", "characters-kyoku.html": "kyokuGenerals",
           "characters-ketsu.html": "ketsuGenerals"}
 

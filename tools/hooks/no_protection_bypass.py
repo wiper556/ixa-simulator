@@ -31,9 +31,12 @@
     python tools/hooks/no_protection_bypass.py --selftest   # 止めるべき形/通すべき形の確認
 """
 import json
+import os
 import re
-import shlex
 import sys
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from _cmdline import base as _base, both as _both      # noqa: E402
 
 sys.stdout.reconfigure(encoding="utf-8")
 sys.stdin.reconfigure(encoding="utf-8")
@@ -55,37 +58,6 @@ WRITERS = {"rm", "mv", "cp", "ln", "chmod", "install", "tee", "sed", "truncate",
            "add-content", "new-item", "out-file", "clear-content", "del",
            "erase", "ren", "attrib"}
 GIT_HOOK_DIR = re.compile(r"\.git[\\/]+hooks", re.I)
-
-
-def _segments(cmd, posix=True):
-    """`;` `&&` `|` `>` などで区切って、コマンドごとの token 列にする。
-
-    posix=True だと `\\` がエスケープとして消えるので、Windows のパス
-    (`.git\\hooks\\pre-commit`)が別物になる。check() は posix=False でも
-    もう一度見る。
-    """
-    try:
-        lx = shlex.shlex(cmd, posix=posix, punctuation_chars=True)
-        lx.whitespace_split = True
-        toks = [t for t in lx if t]
-    except ValueError:          # 引用符が閉じていない等
-        toks = [t for t in re.split(r"\s+", (cmd or "").strip()) if t]
-    segs, cur = [], []
-    for t in toks:
-        if t and not t.strip("|&;<>()\n"):     # 区切り記号だけの token
-            if cur:
-                segs.append(cur)
-                cur = []
-            continue
-        cur.append(t)
-    if cur:
-        segs.append(cur)
-    return segs
-
-
-def _base(tok):
-    b = re.split(r"[\\/]", tok or "")[-1].lower()
-    return b[:-4] if b.endswith(".exe") else b
 
 
 def _opt_value(toks, i, names):
@@ -269,15 +241,10 @@ def _check_segment(toks, depth=0):
 
 def check(cmd, depth=0):
     """止めるなら (理由, 該当箇所) を返す。通すなら None。"""
-    seen = []
-    for posix in (True, False):
-        for seg in _segments(cmd or "", posix):
-            if seg in seen:
-                continue
-            seen.append(seg)
-            hit = _check_segment(seg, depth)
-            if hit:
-                return hit
+    for seg in _both(cmd):
+        hit = _check_segment(seg, depth)
+        if hit:
+            return hit
     return None
 
 

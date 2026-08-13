@@ -317,6 +317,36 @@ def _p_sources(out, ids, n):
                         % (rel, i, "/".join(hit))))
 
 
+def _p_redteam(out, ids, n):
+    """レッドチームの回が、開きっぱなし/閉じ損ねになっていないか(R-02/R-03)。
+
+    `docs/redteam-log.txt` は追記だけの記録。START に対応する END が無ければ、
+    回が閉じられていない = 本物が無傷だったことを誰も確かめていない。
+    """
+    # 記録そのものが消えた場合は錠前の PRESENT が「必須ファイルが消えた」で拾う。
+    # ここで別種別を作ると、注入ケースを置けない(消す注入ができない)種別が増える。
+    p = os.path.join(ROOT, "docs", "redteam-log.txt")
+    opened = None
+    for line in _read(p).split("\n"):
+        if line.startswith("#") or not line.strip():
+            continue
+        kind = line.split("\t")[0]
+        if kind == "START":
+            opened = line
+        elif kind == "END":
+            opened = None
+        elif kind == "END-FAILED":
+            out.append(("レッドチームが本物を触った", "HIGH",
+                        "回を閉じようとして差分が出ている: %s。"
+                        "その回の指摘は無効。違反ログに「重」で記録して回をやり直す"
+                        % line[:100]))
+    if opened:
+        out.append(("レッドチームの回が閉じていない", "HIGH",
+                    "%s に開いた回が閉じられていない。"
+                    "python tools/redteam.py --end で本物が無傷か確かめる"
+                    % opened.split("\t")[1] if "\t" in opened else opened[:60]))
+
+
 def _p_settings(out, ids, n):
     """門番を起動する設定(.claude/settings.json)そのもの。"""
     # G-9/H-9/F-8(第3回): 門番を起動する設定そのものが、どの検査の対象でもなかった。
@@ -381,6 +411,21 @@ def _p_settings(out, ids, n):
                 out.append((".git直接書き換えの見張りが消えた", "HIGH",
                             "no_git_internal_write.py の matcher が %r。"
                             "Write と Edit の両方を含める必要がある" % wmats))
+            # R-04: レッドチームの回の見張り。回が開いている間だけ効くので、
+            # 配線が外れていても普段は何も起きない = 気づけない。配線自体を見る。
+            rmats = " ".join(g.get("matcher") or "" for g in groups
+                             for h in (g.get("hooks") or [])
+                             if "no_redteam_write.py" in (h.get("command") or ""))
+            need = ("Bash", "Write", "Edit")
+            if not rmats:
+                out.append(("レッドチームの見張りが消えた", "HIGH",
+                            ".claude/settings.json の hooks.PreToolUse に "
+                            "no_redteam_write.py の登録が無い。攻撃側が本物の"
+                            "作業ツリーを触れてしまう(R-04)"))
+            elif any(x not in rmats for x in need):
+                out.append(("レッドチームの見張りが消えた", "HIGH",
+                            "no_redteam_write.py の matcher が %r。"
+                            "%s を全部含める必要がある" % (rmats, "/".join(need))))
 
     # AA-5(第5回): `.claude/settings.local.json` は誰も見ていなかった。
     # 個人設定は後勝ちなので、ここに hooks を書けば共有側の門番を丸ごと上書きできる。
@@ -579,6 +624,7 @@ def problems():
     n = len(ids)
     for label, fn in (("ルール索引と棚卸し", _p_ruledoc),
                       ("廃止した情報源", _p_sources),
+                      ("レッドチームの回", _p_redteam),
                       ("PreToolUseの設定", _p_settings),
                       ("CIのワークフロー", _p_ci),
                       ("違反ログ", _p_violations)):
