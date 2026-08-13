@@ -342,6 +342,8 @@ python tools/redteam.py --start "第N回 BA〜BJ"   [--sandbox <パス>]
 | 通すもの | 例 |
 |---|---|
 | テスト環境の中で完結するもの | `git -C <sandbox>/ba commit`、`python <sandbox>/ba/tools/...` |
+| 書き込み先がテスト環境の中のもの | `sed -i`、`sort -o`、`cp`、`mv`、`rm`、`tee` |
+| 起こす先が読み取り専用のもの | `find -exec grep`、`xargs grep` |
 | テスト環境を作るもの | `git clone <本物> <sandbox>/ba` |
 | 本物を読むだけのもの | `git log` / `show` / `status` / `grep` / `cat` / `head` … |
 | 回そのものを扱うもの | `python tools/redteam.py --check` |
@@ -369,6 +371,12 @@ python tools/redteam.py --end
 - 指摘は**自分でテスト環境に再現してから**直す。再現できないものを「直した」と書かない(R-06)。
 - 直したら、その形が二度と通らないことを`tools/gate_selftest.py`か
   `tools/audit_selftest.py`の注入ケースにする。ケースが無い修正は「直した」と言わない。
+
+**判断の原則(2026-08-13にユーザー指示で緩和)**: 道具の名前で止めるのをやめ、
+**書き込み先がテスト環境の中かどうか**で決める。
+通常作業で普通に使う形まで止めると攻撃側の手が止まり、指摘の質が落ちる。
+止めているのは「外に出ること」だけで、中で何をするかは制限しない
+(中では `python <sandbox>/x.py` で任意実行できるので、形だけ止めても意味がない)。
 
 ### ユーザーに触らせない
 

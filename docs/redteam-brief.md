@@ -46,8 +46,14 @@
   `cat` / `head` / `tail` / `grep` / `ls` / `wc` / `diff` / `stat` /
   `find`(`-delete` `-exec` 等は不可)/ `sed -n`(`-i` は不可)/
   `awk`(`>` を含むと不可)/ `sort`(`-o` は不可)/ `for` / `if` / パイプ / `2>&1`
-- `mkdir` / `cp` / `mv` / `rm` は、触る先が全部
-  `C:/Users/uesug/AppData/Local/Temp/claude/` の中のときだけ
+- `mkdir` / `cp` / `mv` / `rm` / `sed -i` / `sort -o` / `tee` は、
+  **書き込み先が全部** `C:/Users/uesug/AppData/Local/Temp/claude/` の中のときだけ
+- `find -exec` / `xargs` は、起こすコマンドが読み取り専用なら通る
+  (`find ... -exec grep -l x {} ;` / `find ... | xargs grep -l x`)
+- `python -c` / `-m`、`node -e` は、引数のどこにもテスト環境の外を指す
+  パスが無ければ通る(サンドボックスの中では任意実行できるので、
+  形を止めても意味がない。止めているのは**外を指すこと**だけ)
+- `sh -c` / `bash -c` は中身をそのまま検査する(コマンドを起こすため)
 - Write / Edit ツールは `C:/Users/uesug/AppData/Local/Temp/claude/` の中のファイルだけ
 
 確認が飛ばないようにするための書き方(**守らないとユーザーに確認が飛ぶ**):
