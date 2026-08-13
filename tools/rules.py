@@ -338,8 +338,9 @@ def _p_redteam(out, ids, n):
             opened, failed = None, []
         elif kind == "ABORT":
             # 出口はあるが、痕跡は永久に残る。監査は毎回これを報せ続ける。
+            # 直前に END-FAILED(本物を触った)があったかも一緒に残す。
+            aborted.append((line, len(failed)))
             opened, failed = None, []
-            aborted.append(line)
         elif kind == "END-FAILED":
             failed.append(line)
     for line in failed:
@@ -347,11 +348,12 @@ def _p_redteam(out, ids, n):
                     "回を閉じようとして差分が出ている: %s。"
                     "その回の指摘は無効。違反ログに「重」で記録して回をやり直す"
                     % line[:100]))
-    for line in aborted:
+    for line, nfail in aborted:
         c = line.split("\t")
         out.append(("レッドチームの回を中断した", "MID",
-                    "%s の回「%s」は --abort で抜けた: %s"
+                    "%s の回「%s」は --abort で抜けた%s: %s"
                     % (c[1] if len(c) > 1 else "?", c[3] if len(c) > 3 else "?",
+                       "(本物に差分が出たあと)" if nfail else "",
                        c[4] if len(c) > 4 else "(理由なし)")))
     if opened:
         out.append(("レッドチームの回が閉じていない", "HIGH",
