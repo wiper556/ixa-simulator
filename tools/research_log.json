@@ -1,4 +1,18 @@
 {
+ "CARD:1220": [
+  {
+   "date": "2026-08-13",
+   "evidence": {
+    "bytes": 33440,
+    "sha256": "ab7bc4f869b6e93a",
+    "status": 200
+   },
+   "found": false,
+   "result": "カードページ取得",
+   "source": "ixanary",
+   "url": "https://ixanary.com/cards/1220"
+  }
+ ],
  "CARDBODY:1206": [
   {
    "date": "2026-08-13",
@@ -489,6 +503,62 @@
    "url": "https://ixanary.com/cards/2599"
   }
  ],
+ "HIDDEN2:天廟斬算": [
+  {
+   "date": "2026-08-13",
+   "evidence": {
+    "bytes": 28403,
+    "sha256": "42942ea9a41ca3bf",
+    "status": 200
+   },
+   "found": true,
+   "result": "合成テーブル取得",
+   "source": "ixanary",
+   "url": "https://ixanary.com/skills/%E5%A4%A9%E5%BB%9F%E6%96%AC%E7%AE%97"
+  }
+ ],
+ "HIDDEN2:天綾の誓約": [
+  {
+   "date": "2026-08-13",
+   "evidence": {
+    "bytes": 30426,
+    "sha256": "89b67de201740f6f",
+    "status": 200
+   },
+   "found": true,
+   "result": "合成テーブル取得",
+   "source": "ixanary",
+   "url": "https://ixanary.com/skills/%E5%A4%A9%E7%B6%BE%E3%81%AE%E8%AA%93%E7%B4%84"
+  }
+ ],
+ "HIDDEN2:式神ノ冥王": [
+  {
+   "date": "2026-08-13",
+   "evidence": {
+    "bytes": 29617,
+    "sha256": "82ed9d9a3db8aaa1",
+    "status": 200
+   },
+   "found": true,
+   "result": "合成テーブル取得",
+   "source": "ixanary",
+   "url": "https://ixanary.com/skills/%E5%BC%8F%E7%A5%9E%E3%83%8E%E5%86%A5%E7%8E%8B"
+  }
+ ],
+ "HIDDEN2:無双英傑": [
+  {
+   "date": "2026-08-13",
+   "evidence": {
+    "bytes": 29330,
+    "sha256": "321f4bad542763cf",
+    "status": 200
+   },
+   "found": true,
+   "result": "合成テーブル取得",
+   "source": "ixanary",
+   "url": "https://ixanary.com/skills/%E7%84%A1%E5%8F%8C%E8%8B%B1%E5%82%91"
+  }
+ ],
  "HIDDEN:伏雷蒼樹": [
   {
    "date": "2026-08-13",
@@ -515,6 +585,34 @@
    "result": "合成テーブル取得",
    "source": "ixanary",
    "url": "https://ixanary.com/skills/%E8%88%9E%E8%9D%B6%E6%9C%A7%E6%9C%88"
+  }
+ ],
+ "RAW:天廟斬算": [
+  {
+   "date": "2026-08-13",
+   "evidence": {
+    "bytes": 28403,
+    "sha256": "42942ea9a41ca3bf",
+    "status": 200
+   },
+   "found": true,
+   "result": "生",
+   "source": "ixanary",
+   "url": "https://ixanary.com/skills/%E5%A4%A9%E5%BB%9F%E6%96%AC%E7%AE%97"
+  }
+ ],
+ "RAW:天綾の誓約": [
+  {
+   "date": "2026-08-13",
+   "evidence": {
+    "bytes": 30426,
+    "sha256": "89b67de201740f6f",
+    "status": 200
+   },
+   "found": true,
+   "result": "生",
+   "source": "ixanary",
+   "url": "https://ixanary.com/skills/%E5%A4%A9%E7%B6%BE%E3%81%AE%E8%AA%93%E7%B4%84"
   }
  ],
  "SKILLPAGE:壬生ノ狼牙": [
@@ -571,6 +669,20 @@
    "result": "合成テーブル取得",
    "source": "ixanary",
    "url": "https://ixanary.com/skills/%E8%AD%B7%E5%9B%BD%E7%8E%8B%E5%99%A8"
+  }
+ ],
+ "TABLE:1220": [
+  {
+   "date": "2026-08-13",
+   "evidence": {
+    "bytes": 28715,
+    "sha256": "039620330f1caadc",
+    "status": 200
+   },
+   "found": true,
+   "result": "合成テーブル取得",
+   "source": "ixanary",
+   "url": "https://ixanary.com/skills/%E5%A4%A9%E6%A3%B2%20%E5%85%AB%E5%92%AB%E7%83%8F"
   }
  ],
  "TABLE:2392": [
