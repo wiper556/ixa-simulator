@@ -77,7 +77,7 @@
    "afterRank": "SS",
    "rate": "100%",
    "target": "全 無尽 不屈1",
-   "effectShort": "攻撃1010%上昇"
+   "effectShort": "攻撃1010%上昇+無尽(部隊消費コスト-0.5)"
   },
   {
    "slot": "B",
@@ -100,7 +100,7 @@
    "afterRank": "SS",
    "rate": "42%",
    "target": "全 覇道",
-   "effectShort": "攻防各1010%上昇+破壊150%上昇"
+   "effectShort": "攻撃1010%上昇+防御1010%上昇+破壊150%上昇"
   },
   {
    "slot": "S1",
@@ -110,7 +110,7 @@
    "afterRank": "SS",
    "rate": "44%",
    "target": "全 無尽",
-   "effectShort": "攻撃を係数×人数で上昇"
+   "effectShort": "攻撃 6.9%×防御参加武将数(280人)=1932.0%"
   },
   {
    "slot": "S2",
@@ -120,7 +120,7 @@
    "afterRank": "SS",
    "rate": "100%",
    "target": "全",
-   "effectShort": "攻撃254%上昇(卓越で兵士被害減少)"
+   "effectShort": "攻撃254%上昇+卓越:攻撃戦闘時追加確率30%で自部隊の兵士被害15%減少(部隊内重複上限2・模倣不可)"
   }
  ],
  "notes": [

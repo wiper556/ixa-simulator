@@ -77,10 +77,10 @@
    "afterRank": "SSS",
    "target": "全",
    "rate": "55%",
-   "effectShort": "攻撃95%上昇(6部隊以下の攻撃で効果2倍)+飛翔4",
+   "effectShort": "攻撃95%上昇(6部隊以下の攻撃で効果2倍)(飛翔4・敵軍に飛翔を持つ武将が4人未満のとき通常武将ダメージを受けない)",
    "afterTarget": "全",
    "afterRate": "12%",
-   "afterEffectShort": "攻撃190%上昇(部隊長なら発動率と効果3倍)"
+   "afterEffectShort": "攻撃190%上昇+部隊長なら発動率と効果が3倍(模倣不可)"
   },
   {
    "slot": "B",
@@ -88,9 +88,9 @@
    "rank": "SS",
    "afterSkill": "天津甕星ノ雷",
    "afterRank": "SS",
-   "target": "全",
+   "target": "全 覇道",
    "rate": "100%",
-   "effectShort": "攻撃170%上昇+速度70%上昇(所属部隊のスキルを無効化・発動率低下から保護)"
+   "effectShort": "攻撃170%上昇+速度70%上昇+覇道を持つため所属部隊の武将のスキルを無効化・発動率低下から保護"
   },
   {
    "slot": "C",
@@ -103,7 +103,7 @@
    "effectShort": "攻撃160%上昇(攻撃時のみ兵士被害5%減少・模倣不可)",
    "afterTarget": "全",
    "afterRate": "100%",
-   "afterEffectShort": "攻撃 254%上昇(卓越追加確率30%で兵士被害15%減少)"
+   "afterEffectShort": "攻撃254%上昇+卓越:攻撃戦闘時追加確率30%で自部隊の兵士被害15%減少(部隊内重複上限2・模倣不可)"
   },
   {
    "slot": "S1",
@@ -111,9 +111,9 @@
    "rank": "SS",
    "afterSkill": "開闢ノ逆鉾",
    "afterRank": "SS",
-   "target": null,
+   "target": "全",
    "rate": null,
-   "effectShort": null
+   "effectShort": "攻撃254%上昇+卓越:攻撃戦闘時追加確率30%で自部隊の兵士被害15%減少(部隊内重複上限2・模倣不可)"
   },
   {
    "slot": "S2",
@@ -121,9 +121,9 @@
    "rank": "SS",
    "afterSkill": "天津日ノ太刀",
    "afterRank": "SS",
-   "target": null,
+   "target": "全 飛翔4",
    "rate": null,
-   "effectShort": null
+   "effectShort": "攻撃 184%上昇(卓越追加確率75%・2倍、TRなし)"
   }
  ],
  "notes": [

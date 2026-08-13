@@ -75,9 +75,9 @@
    "rank": "SS",
    "afterSkill": "布都御魂ノ鬨",
    "afterRank": "SS",
-   "target": null,
+   "target": "全",
    "rate": null,
-   "effectShort": null
+   "effectShort": "攻撃40%上昇+防御40%上昇+所属部隊内のレアリティS以上のスキル個数×20%を攻防効果に加算"
   },
   {
    "slot": "B",
@@ -95,9 +95,9 @@
    "rank": "SS",
    "afterSkill": "海神ノ浮船",
    "afterRank": "SS",
-   "target": "全",
+   "target": "全 飛翔4",
    "rate": "48%",
-   "effectShort": "防御(3.5×防御参加武将数)%上昇+飛翔4"
+   "effectShort": "防御(3.5×防御参加武将数)%上昇(敵軍飛翔持ち4人未満の時通常武将ダメージを受けない)"
   },
   {
    "slot": "S1",
@@ -107,7 +107,7 @@
    "afterRank": "SS",
    "target": "全",
    "rate": "56%",
-   "effectShort": "防御(3.8×防御参加武将数)%上昇"
+   "effectShort": "防御(3.8×防御参加武将数)%上昇=1064.0%(280人時)"
   },
   {
    "slot": "S2",

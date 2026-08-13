@@ -87,10 +87,10 @@
    "afterRank": "S",
    "target": "部隊長",
    "rate": "80%",
-   "effectShort": "部隊長の初期スキルを模倣(戦闘スキルのみ、TR別データは未確認)",
+   "effectShort": "部隊長の初期スキルを模倣(戦闘スキルのみ、TRなし)",
    "afterTarget": "部隊長",
    "afterRate": "55%",
-   "afterEffectShort": "部隊長の初期スキルを1.1倍に強化して模倣(TR別データは未確認)"
+   "afterEffectShort": "部隊長の模倣可能な初期スキルを1.1倍に強化して模倣(TRなし)"
   },
   {
    "slot": "C",
@@ -100,10 +100,10 @@
    "afterRank": "B",
    "target": "部隊長",
    "rate": "55%",
-   "effectShort": "部隊長の模倣可能な初期スキルを通常攻撃/防御効果1.1倍で模倣",
+   "effectShort": "部隊長の模倣可能な初期スキルを1.1倍に強化して模倣(TRなし)",
    "afterTarget": "部隊長",
    "afterRate": "60%",
-   "afterEffectShort": "部隊長の初期スキルを模倣(戦闘スキルのみ)(TR別データは未確認)"
+   "afterEffectShort": "部隊長の初期スキルを模倣(戦闘スキルのみ)(TRなし)"
   },
   {
    "slot": "S1",
@@ -113,7 +113,7 @@
    "afterRank": "SS",
    "target": "自身",
    "rate": "70%",
-   "effectShort": "自身の持つ初期スキルを模倣する(戦闘スキルのみ)"
+   "effectShort": "自身が持つ初期スキルを模倣する(戦闘スキルのみ)"
   },
   {
    "slot": "S2",
@@ -121,12 +121,12 @@
    "rank": "SS",
    "afterSkill": "天聖宝冠",
    "afterRank": "SSS",
-   "target": "全",
+   "target": "全 覇道",
    "rate": "100%",
-   "effectShort": "攻撃320%上昇+速度70%上昇(所属部隊のスキルを無効化・発動低下から保護)",
+   "effectShort": "攻撃320%上昇+速度70%上昇+覇道を持つため所属部隊の武将のスキルを無効化・発動率低下から保護",
    "afterTarget": "全",
    "afterRate": "45%",
-   "afterEffectShort": "攻撃 100%+5%×防御参加武将数(280人)=1500.0%"
+   "afterEffectShort": "攻撃100%上昇((5.0×防御参加武将数)%を攻撃効果に加算・模倣不可)"
   }
  ],
  "notes": [

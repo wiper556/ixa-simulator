@@ -44,7 +44,7 @@
    "effectShort": "防御15%上昇(部隊の総コストで変動)",
    "afterTarget": "全",
    "afterRate": "100%",
-   "afterEffectShort": "防御50%上昇(卓越:追加確率15%で3倍)"
+   "afterEffectShort": "防御50%上昇(卓越・追加確率15%で防御効果が3倍)"
   },
   {
    "slot": "B",
@@ -57,7 +57,7 @@
    "effectShort": "防御15%上昇(部隊の総コストで変動)",
    "afterTarget": "全",
    "afterRate": "100%",
-   "afterEffectShort": "防御50%上昇(卓越:追加確率15%で3倍)"
+   "afterEffectShort": "防御50%上昇(卓越・追加確率15%で防御効果が3倍)"
   },
   {
    "slot": "C",
@@ -70,7 +70,7 @@
    "effectShort": "防御135%上昇+本丸防御陣形配置時コスト消費-0.5(模倣不可)",
    "afterTarget": "弓・砲・器",
    "afterRate": "35%",
-   "afterEffectShort": "攻撃 12%上昇+防御12%上昇(所属部隊内レアリティS以上スキル数×12%、TR別データは未確認)"
+   "afterEffectShort": "攻撃 12%上昇+防御12%上昇(所属部隊内レアリティS以上スキル数×12%、TRなし)"
   },
   {
    "slot": "S1",
@@ -80,10 +80,10 @@
    "afterRank": "SS",
    "target": "全 飛翔2",
    "rate": "60%",
-   "effectShort": "防御110%上昇+自軍防御参加武将数30以上で防御効果2倍",
+   "effectShort": "防御110%上昇(飛翔2・自軍防御参加武将が30以上の時、防御効果2倍)",
    "afterTarget": "全 飛翔4",
    "afterRate": "48%",
-   "afterEffectShort": "防御 3.5%×防御参加武将数(280人)=980.0%"
+   "afterEffectShort": "防御(3.5×防御参加武将数)%上昇(敵軍飛翔持ち4人未満の時通常武将ダメージを受けない)"
   },
   {
    "slot": "S2",
@@ -93,10 +93,10 @@
    "afterRank": "SS",
    "target": "全",
    "rate": "42%",
-   "effectShort": "防御 80%上昇(部隊総コストで変動)",
+   "effectShort": "防御(部隊総コスト依存)%上昇(総C25=351.03%)",
    "afterTarget": "全",
    "afterRate": "50%",
-   "afterEffectShort": "防御 30.02%上昇(部隊総コストで変動)"
+   "afterEffectShort": "部隊総コストに応じて防御効果が変化する(LV10基準30.02%上昇)"
   }
  ],
  "notes": [

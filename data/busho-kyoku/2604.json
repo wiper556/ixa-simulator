@@ -69,9 +69,9 @@
    "rank": "SSS",
    "afterSkill": "星神闘覇",
    "afterRank": "SSS",
-   "target": null,
+   "target": "全 飛翔15",
    "rate": null,
-   "effectShort": null
+   "effectShort": "攻撃 770%上昇+速度200%上昇(TR別データは未確認)"
   },
   {
    "slot": "B",
@@ -92,9 +92,9 @@
    "rank": "SSS",
    "afterSkill": "八幡神ノ威光",
    "afterRank": "SSS",
-   "target": null,
+   "target": "部隊長",
    "rate": null,
-   "effectShort": null
+   "effectShort": "所属部隊の部隊長が持つ模倣可能な初期スキルを通常攻撃/防御効果1.25倍にして模倣する"
   },
   {
    "slot": "S1",
@@ -102,9 +102,9 @@
    "rank": "SS",
    "afterSkill": "刹那無影",
    "afterRank": "SS",
-   "target": null,
+   "target": "部隊長",
    "rate": null,
-   "effectShort": null
+   "effectShort": "所属部隊の部隊長が持つ初期スキルを通常攻撃/防御効果1.15倍にして模倣する+速度200%上昇(確率100%)"
   },
   {
    "slot": "S2",
@@ -112,12 +112,12 @@
    "rank": "SS",
    "afterSkill": "天聖宝冠",
    "afterRank": "SSS",
-   "target": "全",
+   "target": "全 覇道",
    "rate": "100%",
-   "effectShort": "攻撃320%上昇+速度70%上昇(所属部隊のスキルを無効化・発動低下から保護)",
+   "effectShort": "攻撃320%上昇+速度70%上昇+覇道を持つため所属部隊の武将のスキルを無効化・発動率低下から保護",
    "afterTarget": "全",
    "afterRate": "45%",
-   "afterEffectShort": "攻撃 100%+5%×防御参加武将数(280人)=1500.0%"
+   "afterEffectShort": "攻撃100%上昇((5.0×防御参加武将数)%を攻撃効果に加算・模倣不可)"
   }
  ],
  "notes": [

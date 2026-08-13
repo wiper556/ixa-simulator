@@ -177,7 +177,7 @@
    "afterSkill": "神屋楯比売命",
    "afterRank": "SS",
    "target": "自身",
-   "effectShort": "自身の初期スキルを模倣(戦闘スキルのみ)"
+   "effectShort": "自身が持つ初期スキルを模倣する(戦闘スキルのみ)"
   },
   {
    "slot": "C",
@@ -186,7 +186,7 @@
    "afterSkill": "四至ノ神域",
    "afterRank": "SSS",
    "target": "自身",
-   "effectShort": "自身の初期スキルを1.25倍にして模倣"
+   "effectShort": "自身が持つ初期スキルを通常攻撃/防御効果1.25倍にして模倣する"
   },
   {
    "slot": "S1",
@@ -204,7 +204,7 @@
    "afterSkill": "月詠ノ覇威",
    "afterRank": "SS",
    "target": "全",
-   "effectShort": "攻撃344%上昇+防御344%上昇+自軍卓越確率上昇(模倣不可)"
+   "effectShort": "攻撃344%上昇+防御344%上昇+自軍全武将全スキルの卓越確率に15%加算(模倣不可・自軍内重複上限2)"
   }
  ],
  "notes": [

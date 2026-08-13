@@ -41,7 +41,7 @@
    "afterRank": "SS",
    "rate": "70%",
    "target": "自身",
-   "effectShort": "初期スキルを模倣(戦闘スキルのみ、1倍)",
+   "effectShort": "自身が持つ初期スキルを模倣する(戦闘スキルのみ)",
    "afterTarget": "槍弓馬",
    "afterRate": "40%",
    "afterEffectShort": "防御63%上昇(攻撃部隊に兵器兵科がいれば効果1.5倍)"
@@ -54,7 +54,7 @@
    "afterRank": "SS",
    "rate": "70%",
    "target": "自身",
-   "effectShort": "初期スキルを模倣(戦闘スキルのみ、1倍)"
+   "effectShort": "自身が持つ初期スキルを模倣する(戦闘スキルのみ)"
   },
   {
    "slot": "C",
@@ -64,7 +64,7 @@
    "afterRank": "SS",
    "rate": "70%",
    "target": "自身",
-   "effectShort": "初期スキルを模倣(戦闘スキルのみ、1倍)"
+   "effectShort": "自身が持つ初期スキルを模倣する(戦闘スキルのみ)"
   },
   {
    "slot": "S1",
@@ -74,7 +74,7 @@
    "afterRank": "SSS",
    "rate": "70%",
    "target": "部隊長",
-   "effectShort": "部隊長の初期スキルを1.25倍模倣"
+   "effectShort": "所属部隊の部隊長が持つ模倣可能な初期スキルを通常攻撃/防御効果1.25倍にして模倣する"
   },
   {
    "slot": "S2",
@@ -84,10 +84,10 @@
    "afterRank": "SS",
    "rate": "70%",
    "target": "槍・弓・馬",
-   "effectShort": "攻撃30%上昇(部隊総コスト依存)",
+   "effectShort": "全攻 30%上昇(部隊の総コストで効果が変化)",
    "afterTarget": "自身",
    "afterRate": "70%",
-   "afterEffectShort": "初期スキル(戦闘スキルのみ)を模倣(1倍)"
+   "afterEffectShort": "自身が持つ初期スキルを模倣する(戦闘スキルのみ)"
   }
  ],
  "notes": [

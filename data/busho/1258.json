@@ -44,7 +44,7 @@
    "effectShort": "攻撃(敵軍総武将コスト×1.4)%上昇",
    "afterTarget": "全",
    "afterRate": "45%",
-   "afterEffectShort": "攻撃 170%上昇(自部隊同時攻撃時コスト最大2除外)"
+   "afterEffectShort": "攻撃170%上昇(同時攻撃時、部隊総コストからこの武将分を最大2まで除外・模倣不可)"
   },
   {
    "slot": "B",
@@ -57,7 +57,7 @@
    "effectShort": "攻撃(敵軍総武将コスト×1.4)%上昇",
    "afterTarget": "全",
    "afterRate": "45%",
-   "afterEffectShort": "攻撃 170%上昇(自部隊同時攻撃時コスト最大2除外)"
+   "afterEffectShort": "攻撃170%上昇(同時攻撃時、部隊総コストからこの武将分を最大2まで除外・模倣不可)"
   },
   {
    "slot": "C",
@@ -67,7 +67,7 @@
    "afterRank": "SS",
    "rate": "60%",
    "target": "全",
-   "effectShort": "攻撃810%上昇+防御810%上昇(コスト-1)"
+   "effectShort": "攻撃810%上昇+防御810%上昇+部隊消費コスト-1(特殊効果は模倣不可)"
   },
   {
    "slot": "S1",
@@ -77,7 +77,7 @@
    "afterRank": "SSS",
    "rate": "45%",
    "target": "全",
-   "effectShort": "攻撃170%上昇(自部隊同時攻撃時コスト最大2除外)"
+   "effectShort": "攻撃170%上昇(同時攻撃時、部隊総コストからこの武将分を最大2まで除外・模倣不可)"
   },
   {
    "slot": "S2",
@@ -87,7 +87,7 @@
    "afterRank": "SS",
    "rate": "60%",
    "target": "全",
-   "effectShort": "攻撃170%上昇+防御170%上昇(コスト-1)"
+   "effectShort": "攻撃170%上昇+防御170%上昇(部隊消費コスト-1・特殊効果は模倣不可)"
   }
  ],
  "notes": [

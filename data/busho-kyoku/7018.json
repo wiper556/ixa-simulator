@@ -41,7 +41,9 @@
    "afterRank": "B",
    "afterTarget": "部隊長",
    "afterRate": "50%",
-   "afterEffectShort": "部隊長の初期スキルを模倣(戦闘スキルのみ)"
+   "afterEffectShort": "所属部隊の部隊長が持つ初期スキルを模倣する(戦闘スキルのみ)",
+   "target": "槍・馬・器",
+   "effectShort": "攻撃35%上昇+速度25%上昇"
   },
   {
    "slot": "B",
@@ -54,7 +56,7 @@
    "effectShort": "攻撃150%上昇+速度40%上昇+帰還時間短縮(3分・模倣不可)",
    "afterTarget": "全",
    "afterRate": "100%",
-   "afterEffectShort": "攻撃 100%上昇(確率70%)+速度 70%上昇(確率100%)(TR別データは未確認)"
+   "afterEffectShort": "攻撃 100%上昇(確率70%)+速度 70%上昇(確率100%)(TRなし)"
   },
   {
    "slot": "C",
@@ -67,7 +69,7 @@
    "effectShort": "攻撃430%上昇+対人攻撃勝利時名声+20(模倣不可・特殊効果は部隊内重複不可)",
    "afterTarget": "全",
    "afterRate": "45%",
-   "afterEffectShort": "攻撃170%上昇(自部隊同時攻撃時コスト最大2除外)"
+   "afterEffectShort": "攻撃170%上昇(同時攻撃時、部隊総コストからこの武将分を最大2まで除外・模倣不可)"
   },
   {
    "slot": "S1",

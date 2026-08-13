@@ -47,10 +47,10 @@
    "afterRank": "S",
    "target": "部隊長",
    "rate": "80%",
-   "effectShort": "部隊長の初期スキルを模倣(戦闘スキルのみ、TR別データは未確認)",
+   "effectShort": "部隊長の初期スキルを模倣(戦闘スキルのみ、TRなし)",
    "afterTarget": "部隊長",
    "afterRate": "55%",
-   "afterEffectShort": "部隊長の初期スキルを1.1倍に強化して模倣(TR別データは未確認)"
+   "afterEffectShort": "部隊長の模倣可能な初期スキルを1.1倍に強化して模倣(TRなし)"
   },
   {
    "slot": "B",
@@ -60,10 +60,10 @@
    "afterRank": "S",
    "target": "部隊長",
    "rate": "80%",
-   "effectShort": "部隊長の初期スキルを模倣(戦闘スキルのみ、TR別データは未確認)",
+   "effectShort": "部隊長の初期スキルを模倣(戦闘スキルのみ、TRなし)",
    "afterTarget": "部隊長",
    "afterRate": "55%",
-   "afterEffectShort": "部隊長の初期スキルを1.1倍に強化して模倣(TR別データは未確認)"
+   "afterEffectShort": "部隊長の模倣可能な初期スキルを1.1倍に強化して模倣(TRなし)"
   },
   {
    "slot": "C",
@@ -73,7 +73,7 @@
    "afterRank": "B",
    "target": "部隊長",
    "rate": "53%",
-   "effectShort": "部隊長の初期スキルを模倣(戦闘スキルのみ)"
+   "effectShort": "部隊長の初期スキルを模倣(戦闘スキルのみ、TRなし)"
   },
   {
    "slot": "S1",
@@ -83,10 +83,10 @@
    "afterRank": "B",
    "target": "部隊長",
    "rate": "55%",
-   "effectShort": "部隊長の初期スキルを1.1倍に強化して模倣(TR別データは未確認)",
+   "effectShort": "部隊長の模倣可能な初期スキルを1.1倍に強化して模倣(TRなし)",
    "afterTarget": "部隊長",
    "afterRate": "60%",
-   "afterEffectShort": "部隊長の初期スキルを模倣(戦闘スキルのみ)(TR別データは未確認)"
+   "afterEffectShort": "部隊長の初期スキルを模倣(戦闘スキルのみ)(TRなし)"
   },
   {
    "slot": "S2",
@@ -96,10 +96,10 @@
    "afterRank": "B",
    "target": "部隊長",
    "rate": "55%",
-   "effectShort": "部隊長の初期スキルを1.1倍に強化して模倣(TR別データは未確認)",
+   "effectShort": "部隊長の模倣可能な初期スキルを1.1倍に強化して模倣(TRなし)",
    "afterTarget": "部隊長",
    "afterRate": "60%",
-   "afterEffectShort": "部隊長の初期スキルを模倣(戦闘スキルのみ)(TR別データは未確認)"
+   "afterEffectShort": "部隊長の初期スキルを模倣(戦闘スキルのみ)(TRなし)"
   }
  ],
  "notes": [

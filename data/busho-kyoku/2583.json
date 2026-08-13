@@ -74,7 +74,7 @@
    "effectShort": "防御(部隊総コスト依存)%上昇(総C25=351.03%)",
    "afterTarget": "全",
    "afterRate": "50%",
-   "afterEffectShort": "防御(部隊総コスト依存)%上昇(総C25=393.79%)"
+   "afterEffectShort": "部隊総コストに応じて防御効果が変化する(LV10基準30.02%上昇)"
   },
   {
    "slot": "B",
@@ -121,7 +121,7 @@
    "target": null,
    "rate": null,
    "effectShort": null,
-   "afterTarget": "全",
+   "afterTarget": "全 飛翔2",
    "afterRate": "60%",
    "afterEffectShort": "防御110%上昇(飛翔2・自軍防御参加武将が30以上の時、防御効果2倍)"
   }

@@ -74,7 +74,7 @@
    "effectShort": null,
    "afterTarget": "全",
    "afterRate": "42%",
-   "afterEffectShort": "攻撃 25.39%上昇(部隊総コストで変動、TR別データは未確認)"
+   "afterEffectShort": "攻撃 25.39%上昇(部隊総コストで変動、TRなし)"
   },
   {
    "slot": "B",
@@ -84,7 +84,7 @@
    "afterRank": "SS",
    "target": "全",
    "rate": "44%",
-   "effectShort": "攻撃66%上昇+防御66%上昇",
+   "effectShort": "攻撃66%上昇(防御66%上昇)",
    "afterTarget": "砲器",
    "afterRate": "50%",
    "afterEffectShort": "攻撃((ランク+1)xコストx3) %上昇(部隊ランクとコストで効果が変化)"
@@ -97,7 +97,7 @@
    "afterRank": "SS",
    "target": "自身",
    "rate": "70%",
-   "effectShort": "自身の持つ初期スキルを模倣する(戦闘スキルのみ)"
+   "effectShort": "自身が持つ初期スキルを模倣する(戦闘スキルのみ)"
   },
   {
    "slot": "S1",
@@ -107,7 +107,7 @@
    "afterRank": "SS",
    "target": "自身",
    "rate": "70%",
-   "effectShort": "自身の持つ初期スキルを模倣する(戦闘スキルのみ)"
+   "effectShort": "自身が持つ初期スキルを模倣する(戦闘スキルのみ)"
   },
   {
    "slot": "S2",
@@ -117,10 +117,10 @@
    "afterRank": "SS",
    "target": "槍・弓・馬",
    "rate": "70%",
-   "effectShort": "攻撃(部隊総コスト依存)%上昇",
+   "effectShort": "全攻 30%上昇(部隊の総コストで効果が変化)",
    "afterTarget": "自身",
    "afterRate": "70%",
-   "afterEffectShort": "自身の持つ初期スキルを模倣する(戦闘スキルのみ)"
+   "afterEffectShort": "自身が持つ初期スキルを模倣する(戦闘スキルのみ)"
   }
  ],
  "notes": [

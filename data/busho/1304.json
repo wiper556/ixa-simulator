@@ -91,7 +91,7 @@
    "afterRank": "SS",
    "rate": "42%",
    "target": "全 覇道",
-   "effectShort": "攻撃1010%上昇(防御同値)+破壊150%上昇"
+   "effectShort": "攻撃1010%上昇+防御1010%上昇+破壊150%上昇"
   },
   {
    "slot": "C",
@@ -100,7 +100,7 @@
    "afterSkill": "布刀玉ノ策",
    "afterRank": "SS",
    "rate": "100%",
-   "target": "全",
+   "target": "全 卓越",
    "effectShort": "攻撃940%上昇(防御同値)+自軍全武将の卓越確率20%上昇"
   },
   {
@@ -111,7 +111,7 @@
    "afterRank": "SSS",
    "rate": "56%",
    "target": "部隊長",
-   "effectShort": "部隊長の初期スキルを卓越:追加確率40%で1.35倍にして模倣"
+   "effectShort": "部隊長の模倣可能な初期スキルを卓越:追加確率40%で1.35倍にして模倣"
   },
   {
    "slot": "S2",
@@ -121,7 +121,7 @@
    "afterRank": "SS",
    "rate": "60%",
    "target": "全",
-   "effectShort": "攻防810%上昇+コスト-1"
+   "effectShort": "攻撃810%上昇+防御810%上昇+部隊消費コスト-1(特殊効果は模倣不可)"
   }
  ],
  "notes": [
