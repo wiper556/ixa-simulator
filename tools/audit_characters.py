@@ -502,6 +502,20 @@ def main():
                 add("slotの独自語", "MID", "「%s」の %s No.%s: slot=%s"
                     % (s["name"], c.get("name"), c.get("no"), sl))
 
+    # V-07(2026-08-13、ユーザー決定): 合成表の確率に「+」を付けない。
+    # 同じスキルなのに武将ごとに「+70%」と「70%」が混在していた(520項目)。
+    # 数値そのものはスキルページの確率と全行一致していて、割れていたのは書式だけ。
+    # trTable / effectSummary が「確率 100%」と + なしなので、そちらに揃えた。
+    # 放っておくと1件ずつ書き足されて元に戻るので、機械で見張る。
+    for g in all_g:
+        for row in (g.get("synthesisTable") or []):
+            for k in ("rate", "afterRate"):
+                v = row.get(k)
+                if isinstance(v, str) and re.fullmatch(r"\+\d+(\.\d+)?%", v):
+                    add("確率に+が付いている", "MID",
+                        "No.%s %s の %s枠 %s=%s(「+」を外して %s に揃える)"
+                        % (g["no"], g.get("name"), row.get("slot"), k, v, v[1:]))
+
     # D-12: 武将名の表記ゆれ(半角括弧・半角【】まわり)
     for g in all_g:
         nm = g.get("name") or ""

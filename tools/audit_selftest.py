@@ -97,6 +97,12 @@ CASES = [
     ("slotの独自語", "skills.html",
      '{name:"佐渡島方治", no:"2614", slot:"S1", db:"kyoku"}',
      '{name:"佐渡島方治", no:"2614", slot:"候補", db:"kyoku"}'),
+    # V-07(2026-08-13): 確率の「+」を1件書き戻して、見張りが鳴るか。
+    ("確率に+が付いている", "characters-kyoku.html",
+     '{slot:"A", skill:"百識ノ計", rank:"A", afterSkill:"月詠ノ覇威", afterRank:"SS", '
+     'target:"弓・器・焙", rate:"100%"',
+     '{slot:"A", skill:"百識ノ計", rank:"A", afterSkill:"月詠ノ覇威", afterRank:"SS", '
+     'target:"弓・器・焙", rate:"+100%"'),
     ("武将名の表記ゆれ", "characters-kyoku.html",
      '{name:"佐渡島方治", no:"2614"', '{name:"佐渡島方治(2)", no:"2614"'),
     ("データ内のHTMLタグ", "characters-kyoku.html",

@@ -119,6 +119,7 @@
 | V-04 | 横スクロールは`.site-main`の`min-width:0`が根本原因。内部スクロールに寄せる | [[feedback_horizontal_scroll_root_cause]] | ○ |● |
 | V-05 | サイト上に出典元への言及を書かない | [[feedback_no_external_source_citation]] | ○ |● |
 | V-06 | 記事に「今後の予定リスト」「ネタ募集」を書かない | [[feedback_no_public_backlog]] | × | ✗ |
+| V-07 | `synthesisTable`の`rate`/`afterRate`に「+」を付けない(`70%`であって`+70%`ではない)。`trTable`/`effectSummary`の「確率 100%」に揃える | 2026-08-13ユーザー決定(520項目が混在していた) | ○ |● |
 
 ## 8. 進め方・報告
 
