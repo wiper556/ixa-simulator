@@ -77,6 +77,11 @@ git push origin --delete work              # 後片付け
 5. ステージしたページの**JSが構文エラー**(T-06/T-07)。pushのときは全604ページを見る
 6. **ルール文書の変更と作業の変更が同じコミットに混ざっている**(W-13)
    — 「作業」= `docs/` `tools/` `.github/` `.claude/` 以外、つまりサイトに出るもの
+   — 「ルール文書」= `docs/` 全部 ・ `.claude/agents/` ・ `.github/workflows/` ・ `.claude/settings.json`
+   — **`tools/checks.lock` は対象外**(2026-08-14 ユーザー承認)。錠前は `lock.py --update` が
+     作業ツリーから作る生成物で、道具と母集団が同時に動く変更ではどの順に分けても
+     一時的に食い違い、前に進めなくなる。縮めるときの `--i-know --reason` と
+     `tools/lock_reason.txt` が記録を担保している
 7. `attack-simulator.html`を変えたのに`SIMULATOR_VERSION`の**値**が同じ(P-03)
 8. ステージ済みの内容と作業ツリーが食い違っている(検査した物とコミットする物が別になる)
 

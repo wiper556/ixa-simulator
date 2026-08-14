@@ -64,6 +64,20 @@ def _w13_other_docs(repo):
     sh(["git", "add", "docs/data-audit-2026-08-12.md", "index.html"], repo)
 
 
+def _w13_lock_ok(repo):
+    """錠前(tools/checks.lock)と作業を同じコミットに入れる。**止まってはいけない。**
+
+    2026-08-14(ユーザー承認): 錠前は生成物で、道具と母集団が同時に動く変更では
+    どの順に分けても一時的に食い違う。W-13の対象から外した。
+    外したことが後から静かに戻らないよう、通ることを筋書きとして固定する。
+    """
+    # 中身の意味は変えない(空行を1つ入れるだけ)。錠前の値を動かすと
+    # 「監査チェックが消えた」など別の停止条件に当たって、W-13を試せなくなる。
+    edit(repo, "tools/checks.lock", '{\n "cause_tags"', '{\n\n "cause_tags"')
+    edit(repo, "index.html", "</body>", "<!-- テスト -->\n</body>")
+    sh(["git", "add", "tools/checks.lock", "index.html"], repo)
+
+
 def _p03(repo):
     """attack-simulator.html を変えたのに SIMULATOR_VERSION の値を上げない。"""
     edit(repo, "attack-simulator.html", "</body>", "<!-- テスト -->\n</body>")
@@ -167,6 +181,7 @@ CASES = [
      "ルール文書の変更と作業の変更が同じコミットに混ざっている"),
     ("W-13b", "docs/ の他の文書を作業と混ぜる(CIとの食い違い)", _w13_other_docs, True,
      "ルール文書の変更と作業の変更が同じコミットに混ざっている"),
+    ("W-13c", "錠前と作業を混ぜる(止まってはいけない)", _w13_lock_ok, False, ""),
     ("P-03", "シミュレーターを変えてバージョンを上げない", _p03, True,
      "SIMULATOR_VERSION"),
     ("P-02", "生成物だけを手で書き換える", _genonly, True, "生成物だけが変わっている"),
