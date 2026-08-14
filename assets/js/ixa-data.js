@@ -1670,6 +1670,42 @@ const specialSkills = {
           '【2026年7月再修正】パラレル【天】版(No.31297)でTR6が解禁されたためixagno.blog.fc2.comで確認し追加登録。' +
           '【2026年7月三度目修正】ixanary.com生HTMLでTR1〜TR6の確率・係数の欠落分(TR1〜TR4の確率、TR4係数)を確認して補完。卓越のTR別追加確率もtakuetsuChanceTableとして新規対応した(エンジン側にTR別テーブル+0%下限クランプの仕組みを追加)。'
   },
+  '無刀幻斬': {
+    effectAxis: 'def', // 防御側
+    noMimic: true, // 「模倣不可」明記
+    activationType: 'triggered',
+    statTarget: 'def',
+    // 「部隊内の武将の防御力を2.5倍」。部隊長時限定で部隊全員(本人含む)の武将防御力に掛かる。
+    // 飛天ノ閃剣(攻撃版)と同じ仕組み。TRは無くLV10のみ。
+    condition: 'leader_squadwide',
+    defaultMultiplier: 2.5, // LV10。LV1は1.4倍
+    trTable: { base: 210 }, // 防御%上昇(LV10)。LV1は100%
+    baseRate: 100, // 確率+100%
+    soarValue: 4, // 飛翔4
+    note: 'S(防御・模倣不可・部隊長時限定)。確率+100%/対象:全。防御210%上昇・飛翔4。' +
+          '①部隊内の武将(本人含む)の防御力を2.5倍にする(LV1は1.4倍)。部隊長時限定で、飛天ノ閃剣の防御版。' +
+          '②それらの武将は武将防御力減少スキルから保護される(この保護は計算エンジン未対応・参考データのみ)。' +
+          '柳生石舟斎(No.10024)の固有スキル。TRは無くLV1/LV10の2段のみ。' +
+          'ixanary.com(skills/無刀幻斬)とixawiki(BushoCard/10024柳生石舟斎)で確認(2026-08-14)。'
+  },
+  '無刀夢幻': {
+    effectAxis: 'def', // 防御側
+    noMimic: true, // 「模倣不可」明記
+    activationType: 'triggered',
+    statTarget: 'def',
+    // 無刀幻斬の上位。倍率は鍛錬段階で上がる(飛天ノ閃剣とまったく同じ刻み)。
+    condition: 'leader_squadwide',
+    trLevels: { base:2.5, TR1:2.5, TR2:2.6, TR3:2.7, TR4:2.8, TR5:3 },
+    defaultMultiplier: 3, // TR不明時のフォールバック(最大値=TR5想定)
+    trTable: { base:720, TR1:800, TR2:920, TR3:1080, TR4:1300, TR5:1480 }, // 防御%上昇。LV1は240%
+    baseRate: 100, // 確率+100%(全段共通)
+    soarValue: 6, // 飛翔6
+    note: 'S(防御・模倣不可・部隊長時限定)。確率+100%/対象:全。飛翔6。' +
+          '防御%上昇: LV10=720% / TR1=800% / TR2=920% / TR3=1080% / TR4=1300% / TR5=1480%(LV1は240%)。' +
+          '①部隊内の武将(本人含む)の防御力を倍にする: LV10・TR1=2.5倍 / TR2=2.6 / TR3=2.7 / TR4=2.8 / TR5=3倍(LV1は1.1倍)。' +
+          '②それらの武将は武将防御力減少スキルから保護される(この保護は計算エンジン未対応・参考データのみ)。' +
+          '柳生石舟斎(No.10060)の固有スキル。ixanary.com(skills/無刀夢幻)とixawiki(BushoCard/10060柳生石舟斎)で確認(2026-08-14)。'
+  },
   '覇謀海霊': {
     effectAxis: 'def', // 防御側(正本 data/skill/覇謀海霊.json の効果文より)
     noMimic: true, // 「模倣不可」明記
@@ -2766,7 +2802,14 @@ const specialSkills = {
     activationType: 'triggered', statTarget: 'def', noMimic: true,
     trTable: { base: 430, TR5: 1200 }, baseRate: 100, // 防御:LV10=430%→TR5=1200%・確率+100%
     skillActivationRateBonus: 2, // 自軍武将のスキル発動率+2%(LV10値。TR5は+5%と鍛錬で変化するが、本フィールドは固定値のためLV10値を登録)
-    note: 'S(防御・模倣不可)。確率+100%/対象:全。防御:LV10=430%上昇→TR5(鍛錬最高段階)=1200%上昇(自動反映対応、TR1〜TR4は情報源に記載なし)。「部隊内武将防御力をLV10=1.4倍→TR5=1.5倍」「自軍武将のスキル発動率+2%(LV10)→+5%(TR5、自部隊内で最大4つまで重複可能)」は参考データのみ(skillActivationRateBonusはLV10値の2を登録)。坪井将監(No.2491)の固有スキル。'
+    // 「部隊内武将防御力をLV10=1.4倍→TR5=1.5倍」。**部隊長でなくても発動する**(ユーザーがゲーム内で確認、2026-08-14)ため
+    // 部隊長限定のleader_squadwideではなくanywhereSquadwideBoost側で持つ。無刀夢幻(部隊長限定)とは別枠なので掛け算で積算される。
+    // 倍率は%で持つ決まりなので1.4倍=+40%。TR1〜TR4は情報源に記載が無くbase(=+40%)に落ちる。
+    anywhereSquadwideBoostTable: { def: { base: 40, TR5: 50 } },
+    note: 'S(防御・模倣不可)。確率+100%/対象:全。防御:LV10=430%上昇→TR5(鍛錬最高段階)=1200%上昇(自動反映対応、TR1〜TR4は情報源に記載なし)。' +
+          '「部隊内武将防御力をLV10=1.4倍→TR5=1.5倍」は2026-08-14に自動反映対応(anywhereSquadwideBoostTable)。' +
+          '部隊長でなくても発動することはユーザーがゲーム内で確認済みで、無刀夢幻のような部隊長限定の倍率とは別枠として掛け合わせる。' +
+          '「自軍武将のスキル発動率+2%(LV10)→+5%(TR5、自部隊内で最大4つまで重複可能)」は参考データのみ(skillActivationRateBonusはLV10値の2を登録)。坪井将監(No.2491)の固有スキル。'
   },
   '神明旗手': {
     noMimic: true,
@@ -3941,7 +3984,7 @@ const generalGrowthDB = [
   { name:'北条氏康(10021)', no:'10021', cost: 4, initialSkill:'獅子神ノ廻城', lv0Troops:4410, atkBase:1120, atkGrowth:41, defBase:1200, defGrowth:62, tacticsBase:650, tacticsGrowth:3.0, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。Cost4。固有スキル「防:獅子神ノ廻城」(S)。既存の北条氏康(覇3)(No.1239)とは別カードのためNo.を併記。' },
   { name:'宮本武蔵(10022)', no:'10022', cost: 5, initialSkill:'二天界斬', lv0Troops:5850, atkBase:2200, atkGrowth:150, defBase:2500, defGrowth:170, tacticsBase:690, tacticsGrowth:3.5, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。Cost5・職業「剣」。固有スキル「防:二天界斬」(S)。同じく職業「剣」の宮本武蔵(No.10068)とは別カードのためNo.を併記。職業「剣」の指揮兵数ペナルティは未確認のため未設定。' },
   { name:'佐々木小次郎', no:'10023', cost: 5, initialSkill:'応龍空斬', lv0Troops:5850, atkBase:2400, atkGrowth:170, defBase:2100, defGrowth:150, tacticsBase:690, tacticsGrowth:3.5, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。Cost5・職業「剣」。固有スキル「攻:応龍空斬」(S)。' },
-  { name:'柳生石舟斎(10024)', no:'10024', cost: 5, initialSkill:'無刀幻斬', lv0Troops:5850, atkBase:2100, atkGrowth:150, defBase:2400, defGrowth:170, tacticsBase:680, tacticsGrowth:3.5, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。Cost5・職業「剣」。固有スキル「無刀幻斬」(S)。同じく柳生石舟斎(No.10060)とは別カードのためNo.を併記。' },
+  { name:'柳生石舟斎(10024)', no:'10024', noRankupTroops:true, cost: 5, initialSkill:'無刀幻斬', lv0Troops:5850, atkBase:2100, atkGrowth:150, defBase:2400, defGrowth:170, tacticsBase:680, tacticsGrowth:3.5, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。Cost5・職業「剣」。固有スキル「無刀幻斬」(S)。同じく柳生石舟斎(No.10060)とは別カードのためNo.を併記。' },
   { name:'武田信玄(10025)', no:'10025', cost: 5, initialSkill:'風林火山', lv0Troops:4710, atkBase:1280, atkGrowth:75, defBase:1250, defGrowth:66, tacticsBase:760, tacticsGrowth:3.5, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。Cost5。固有スキル「攻:覇:風林火山」(SSS、確率+60%(LV10)/対象全/攻撃(7×自軍攻撃武将数)%上昇)。同じく武田信玄(No.10035)とは別カードのためNo.を併記。' },
   { name:'毛利元就(10026)', no:'10026', cost: 5, initialSkill:'謀神', lv0Troops:4700, atkBase:1260, atkGrowth:73, defBase:1260, defGrowth:69, tacticsBase:810, tacticsGrowth:4.0, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。Cost5。固有スキル「覇:謀神」(SSS)。既存の毛利元就(4)(No.1293)とは別カードのためNo.を併記。' },
   { name:'長宗我部元親(10027)', no:'10027', cost: 4.5, initialSkill:'姫鬼無双', lv0Troops:4550, atkBase:1060, atkGrowth:44, defBase:1190, defGrowth:64, tacticsBase:760, tacticsGrowth:3.5, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。Cost4.5。固有スキル「防:覇:姫鬼無双」(SSS)。既存の長宗我部元親(6)(7)(復刻)とは別カードのためNo.を併記。' },
@@ -3972,7 +4015,7 @@ const generalGrowthDB = [
   { name:'小西行長(10057)', no:'10057', cost: 5, initialSkill:'信心不抜', lv0Troops:5070, atkBase:1250, atkGrowth:71, defBase:1060, defGrowth:48, tacticsBase:700, tacticsGrowth:4.0, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。Cost5。固有スキル「信心不抜」(S)。既存の小西行長(2)(No.1308)とは別カードのためNo.を併記。' },
   { name:'高山右近', no:'10058', cost: 5.5, initialSkill:'聖剣深鏡', lv0Troops:5260, atkBase:1090, atkGrowth:49, defBase:1260, defGrowth:72, tacticsBase:700, tacticsGrowth:4.0, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。Cost5.5。固有スキル「防:聖剣深鏡」(S)。' },
   { name:'ルイス・フロイス', no:'10059', cost: 5, initialSkill:'流運水将', lv0Troops:5060, atkBase:1210, atkGrowth:70, defBase:1210, defGrowth:70, tacticsBase:700, tacticsGrowth:4.0, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。Cost5。固有スキル「攻防:流運水将」(S)。' },
-  { name:'柳生石舟斎(10060)', no:'10060', cost: 5.5, initialSkill:'無刀夢幻', lv0Troops:6150, atkBase:2100, atkGrowth:150, defBase:2500, defGrowth:172, tacticsBase:680, tacticsGrowth:3.5, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。Cost5.5・職業「剣」。新陰流無刀取りの開祖。固有スキル「無刀夢幻」(S)。同じく柳生石舟斎(No.10024)とは別カードのためNo.を併記。' },
+  { name:'柳生石舟斎(10060)', no:'10060', noRankupTroops:true, cost: 5.5, initialSkill:'無刀夢幻', lv0Troops:6150, atkBase:2100, atkGrowth:150, defBase:2500, defGrowth:172, tacticsBase:680, tacticsGrowth:3.5, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。Cost5.5・職業「剣」。新陰流無刀取りの開祖。固有スキル「無刀夢幻」(S)。同じく柳生石舟斎(No.10024)とは別カードのためNo.を併記。' },
   { name:'百地三太夫', no:'10062', cost: 5.5, initialSkill:'封法大十字', lv0Troops:5250, atkBase:1210, atkGrowth:70, defBase:1210, defGrowth:70, tacticsBase:710, tacticsGrowth:4.0, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。Cost5.5・職業「忍」。固有スキル「封法大十字」(S)。' },
   { name:'宮本武蔵(10068)', no:'10068', cost: 5.5, initialSkill:'二天羅刹斬', lv0Troops:6150, atkBase:2100, atkGrowth:150, defBase:2550, defGrowth:172, tacticsBase:690, tacticsGrowth:3.5, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。Cost5.5・職業「剣」。固有スキル「防:二天羅刹斬」(S)。同じく宮本武蔵(No.10022)とは別カードのためNo.を併記。' },
   { name:'細川幽斎-復刻-【天】', no:'10070', cost: 4.5, initialSkill:'古今虚実ノ法', lv0Troops:4900, atkBase:1200, atkGrowth:69, defBase:1250, defGrowth:71, tacticsBase:700, tacticsGrowth:3.5, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。Cost4.5。固有スキル「特:古今虚実ノ法」(S)。同じく細川幽斎(No.10044)とは別カードのためNo.を併記。' },
@@ -4075,7 +4118,7 @@ const generalGrowthDB = [
   { name:'細川幽斎(2597)', no:'2597', cost: 4, initialSkill:'覇争眼識', lv0Troops:4310, atkBase:1070, atkGrowth:51, defBase:1180, defGrowth:58, tacticsBase:510, tacticsGrowth:2.5, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。職業「将」。Cost4。固有スキル「防:覇争眼識」(S)。既存の細川幽斎(No.10044)(No.10070)とは別カードのためNo.を併記。' },
   { name:'細川ガラシャ', no:'2599', cost: 5, rankGrades:{yari:'A',yumi:'A',uma:'A',ki:'S'}, initialSkill:'潔花咲然', lv0Troops:4770, atkBase:1140, atkGrowth:57, defBase:1140, defGrowth:57, tacticsBase:560, tacticsGrowth:3.0, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。職業「姫」。Cost5。固有スキル「潔花咲然」(S)。 カード画像+ixawikiの2ソースで統率(槍A/弓A/馬A/器S)一致確認(2026-08-11)。武将DBページ(characters-kyoku.html)登録済み。同名の別カードと区別するためNo併記。' },
   { name:'伊達藤次郎', no:'2600', cost: 4, rankGrades:{yari:'A',yumi:'A',uma:'S',ki:'A'}, initialSkill:'旋龍突渦', lv0Troops:4580, atkBase:1220, atkGrowth:65, defBase:1100, defGrowth:49, tacticsBase:530, tacticsGrowth:3.0, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。職業「将」。Cost4。固有スキル「攻破:旋龍突渦」(S)。伊達政宗の幼名。 カード画像+ixawikiの2ソースで統率(槍A/弓A/馬S/器A)一致確認(2026-08-11)。武将DBページ(characters-kyoku.html)登録済み。不屈2・撤退持ちスキルとしてspecialSkillsにも登録(全TR値ixanaryスキルページ確認)。' },
-  { name:'斎藤一(2602)', no:'2602', cost: 4.5, rankGrades:{yari:'SS',yumi:'A',uma:'B',ki:'A'}, initialSkill:'牙突', lv0Troops:4990, atkBase:1800, atkGrowth:130, defBase:2000, defGrowth:155, tacticsBase:530, tacticsGrowth:2.5, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。職業「剣」。Cost4.5。るろうに剣心コラボカード。固有スキル「牙突」(S、自領以外での援軍戦闘時に防御効果上昇)。既存の斎藤一【覇】(No.10066)とは別カードのためNo.を併記。 カード画像で統率(槍SS/弓A/馬B/器A)を拡大確認(2026-08-11)。武将DBページ(characters-kyoku.html)登録済み。るろうに剣心コラボ。' },
+  { name:'斎藤一(2602)', no:'2602', noRankupTroops:true, cost: 4.5, rankGrades:{yari:'SS',yumi:'A',uma:'B',ki:'A'}, initialSkill:'牙突', lv0Troops:4990, atkBase:1800, atkGrowth:130, defBase:2000, defGrowth:155, tacticsBase:530, tacticsGrowth:2.5, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。職業「剣」。Cost4.5。るろうに剣心コラボカード。固有スキル「牙突」(S、自領以外での援軍戦闘時に防御効果上昇)。既存の斎藤一【覇】(No.10066)とは別カードのためNo.を併記。 カード画像で統率(槍SS/弓A/馬B/器A)を拡大確認(2026-08-11)。武将DBページ(characters-kyoku.html)登録済み。るろうに剣心コラボ。' },
   { name:'志々雄真実(2603)', no:'2603', cost: 3.5, rankGrades:{yari:'SS',yumi:'B',uma:'B',ki:'S'}, initialSkill:'紅蓮ノ刃', lv0Troops:4690, atkBase:2050, atkGrowth:157, defBase:1700, defGrowth:120, tacticsBase:530, tacticsGrowth:2.5, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。職業「剣」。Cost3.5。るろうに剣心コラボカード。固有スキル「紅蓮ノ刃」(S)。既存の志々雄真実【覇】(No.10053)とは別カードのためNo.を併記。 カード画像で統率(槍SS/弓B/馬B/器S)を拡大確認(2026-08-11)。武将DBページ(characters-kyoku.html)登録済み。るろうに剣心コラボ。' },
   { name:'四乃森蒼紫', no:'2605', cost: 4.5, rankGrades:{yari:'A',yumi:'A',uma:'A',ki:'S'}, initialSkill:'回天剣舞', lv0Troops:4570, atkBase:1070, atkGrowth:46, defBase:1220, defGrowth:62, tacticsBase:560, tacticsGrowth:3.0, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。職業「忍」。Cost4.5。るろうに剣心コラボカード。固有スキル「回天剣舞」(防御用)。 カード画像で統率(槍A/弓A/馬A/器S)を拡大確認(2026-08-11)。武将DBページ(characters-kyoku.html)登録済み。るろうに剣心コラボ。' },
   { name:'巻町操', no:'2606', cost: 3, rankGrades:{yari:'A',yumi:'A',uma:'A',ki:'S'}, initialSkill:'貫殺飛苦無', lv0Troops:3540, atkBase:1190, atkGrowth:57, defBase:1100, defGrowth:47, tacticsBase:510, tacticsGrowth:2.5, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。職業「忍」。Cost3。るろうに剣心コラボカード。固有スキル「攻速:貫殺飛苦無」(S)。 カード画像で統率(槍A/弓A/馬A/器S)を拡大確認(2026-08-11)。武将DBページ(characters-kyoku.html)登録済み。るろうに剣心コラボ。' },
@@ -4477,8 +4520,14 @@ const RANKUP_TROOPS_BONUS = {
 
 const STANDARD_RANKUP_COUNT = 6;
 
-function calcTroopsForBreakthrough(lv0Troops, breakthroughType, isHa){
-  const rankupBonus = isHa ? RANKUP_TROOPS_BONUS.ha : RANKUP_TROOPS_BONUS.normal;
+// 第3引数は武将のエントリ。以前は isHa(真偽値)を渡していたので、真偽値でも動くようにしてある。
+function calcTroopsForBreakthrough(lv0Troops, breakthroughType, general){
+  const g = (general && typeof general === 'object') ? general : { isHa: !!general };
+  // 職業「剣」(剣豪)は通常のランクアップで指揮兵士数が増えない(ユーザーがゲーム内で確認、2026-08-14)。
+  // 通常武将は6回×100=600、覇は6回×200=1200が乗るところを、剣豪は0にする。
+  const rankupBonus = g.noRankupTroops
+    ? 0
+    : (g.isHa ? RANKUP_TROOPS_BONUS.ha : RANKUP_TROOPS_BONUS.normal);
   const genkaiTroops = lv0Troops + (STANDARD_RANKUP_COUNT * rankupBonus); // 限界突破
   const gokugenTroops = genkaiTroops + 800; // 極限突破
   const tenGenTroops = gokugenTroops + 800; // 天限突破

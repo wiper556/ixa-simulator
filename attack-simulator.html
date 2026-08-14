@@ -854,7 +854,7 @@
   // 【必須】attack-simulator.html を変更したコミットでは、必ずこの定数も一緒に更新すること。
   // 表示文言の変更・CSSの微調整であっても対象(ユーザーがスクショで版を判別できなくなるため)。
   // 更新忘れが繰り返し発生しているので、編集したらコミット前にここを見に来る。
-  const SIMULATOR_VERSION = 'v2026-08-14.11';
+  const SIMULATOR_VERSION = 'v2026-08-14.13';
   document.addEventListener('DOMContentLoaded', ()=>{
     const badge = document.getElementById('simVersionBadge');
     if(badge) badge.textContent = SIMULATOR_VERSION;
@@ -2850,6 +2850,17 @@
             // どこからも見られていなかった。蛇神幻計(No.1311)のように
             // 部隊長時だけ効くスキルが、小隊に置いても効いてしまう。
             if(sk.leaderOnly && col !== 0) return;
+            // 鍛錬で倍率が変わるもの(天膂ノ闘士 LV10=1.4倍→TR5=1.5倍)はテーブルを優先する。
+            // 段が載っていない鍛錬レベルはbaseに落とす(trTableと同じ扱い)。
+            const tbl = sk.anywhereSquadwideBoostTable;
+            if(tbl && tbl[statTarget]){
+              const m = text.match(/TR(\d)/i);
+              const tier = (m && tbl[statTarget]['TR'+m[1]] !== undefined) ? 'TR'+m[1] : 'base';
+              if(tbl[statTarget][tier] !== undefined){
+                multiplier *= (1 + tbl[statTarget][tier] / 100);
+                return;
+              }
+            }
             if(sk.anywhereSquadwideBoost && sk.anywhereSquadwideBoost[statTarget] !== undefined){
               multiplier *= (1 + sk.anywhereSquadwideBoost[statTarget] / 100);
             }
@@ -3092,6 +3103,11 @@
   function recalcSquadStats(){
     const leaderAtkMult = computeLeaderSquadwideMultiplier('atk');
     const anywhereAtkMult = computeAnywhereSquadwideMultiplier('atk'); // 閃龍ノ御剣など、保持者位置を問わない部隊全体バフ
+    // 防御側にも同じ2つを用意する(2026-08-14。以前は防御だけ自己バフしか掛けていなかった)。
+    // 部隊長限定(無刀幻斬・無刀夢幻)と位置を問わないもの(天膂ノ闘士)は別々に数えて掛け合わせるので、
+    // 両方を持つ部隊では倍率が積算される。
+    const leaderDefMult = computeLeaderSquadwideMultiplier('def');
+    const anywhereDefMult = computeAnywhereSquadwideMultiplier('def');
     const koshouraiHolderCol = findSkillHolderColumn('虚松籟'); // 見つからなければ-1
     const koshourai = specialSkills['虚松籟'];
 
@@ -3153,7 +3169,7 @@
       } else if(entry.statsByRank && entry.statsByRank[breakthroughType] && entry.statsByRank[breakthroughType].troops !== undefined){
         rawTroops = entry.statsByRank[breakthroughType].troops;
       } else if(entry.lv0Troops !== undefined){
-        rawTroops = calcTroopsForBreakthrough(entry.lv0Troops, breakthroughType, !!entry.isHa);
+        rawTroops = calcTroopsForBreakthrough(entry.lv0Troops, breakthroughType, entry);
       }
       // 職業「剣」(水色背景アイコン)を持つ武将は、通常武将より指揮兵士数が少ない。
       // 限界突破・極限突破・天限突破(いずれも本ツールの選択肢)は一律-600(ユーザー確認済み)。
@@ -3178,10 +3194,14 @@
       const atkMult = leaderAtkMult * anywhereAtkMult * computeSelfBoostMultiplier(col, 'atk');
       const finalAtk = Math.round(rawAtk * atkMult);
 
-      // 防御力: 素の値 × 自己バフ(このスキルの保持者自身のみ)
+      // 防御力: 素の値 × 部隊長スキル × 位置を問わない部隊全体バフ × 自己バフ
+      // 【2026-08-14修正】防御側だけ部隊全体の倍率を掛けていなかった(自己バフのみ)。
+      // 無刀幻斬・無刀夢幻(柳生石舟斎)の「部隊内の武将の防御力を2.5倍」や
+      // 天膂ノ闘士(坪井将監)の「部隊内武将防御力を1.4倍」が、データを入れても
+      // 武将防御力に出ないままだった(ユーザー指摘)。攻撃側と同じ形にそろえる。
       let finalDef = null;
       if(rawDef !== null){
-        const defMult = computeSelfBoostMultiplier(col, 'def');
+        const defMult = leaderDefMult * anywhereDefMult * computeSelfBoostMultiplier(col, 'def');
         finalDef = Math.round(rawDef * defMult);
       }
 
