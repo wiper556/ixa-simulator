@@ -1475,6 +1475,9 @@ const specialSkills = {
   '龍気剣鳴': {
     effectAxis: 'atk', // 攻撃側(正本 data/skill/龍気剣鳴.json の効果文より)
     targetTroopCategories: ['槍兵科','騎馬兵科','兵器兵科(器兵科)'], // 対象:槍/馬/器(+「騎」は騎馬兵科と重複のため区別せず登録)
+    // 「騎」は 騎馬鉄砲 のこと。鉄砲足軽・騎馬鉄砲・焙烙火矢はどれもカテゴリが
+    // 「兵器兵科(砲兵科)」で区別できないため、名指しで足す(2026-08-14)。
+    targetSoldierNames: ['騎馬鉄砲'], // 対象:槍・馬・器・騎
     variableFormula: {
       statTarget: 'atk', base: 0, variable: 'defenderCount',
       perUnitTable: { base:5.3, TR1:5.4, TR2:5.6, TR3:6, TR4:6.5, TR5:7, TR6:7.5 } // TR6はパラレル版No.31292で解禁(ixagno.blog.fc2.com確認)
@@ -1552,6 +1555,21 @@ const specialSkills = {
     soarValue: 5,
     note: '飛翔5。飛翔値の自動集計(最大値を採用)に載せるための登録。攻撃/防御の効果そのものは未登録で、計算には反映していない。2026-08-14、飛翔を持つのに飛翔値が入っていないスキルの一括点検で追加。'
   },
+  '戦陣 吟詠': {
+    effectAxis: 'both', // 攻防両方(正本 data/skill/戦陣 吟詠.json の効果文より)
+    noMimic: true, // 「模倣不可」明記
+    trTable: { base: 340 }, // 攻撃340%上昇・防御340%上昇(同値のため共通のtrTableで代用)
+    baseRate: 100, // 確率+100%
+    takuetsuRateBonus: 20, // 部隊内武将の全スキルの卓越追加確率+20%(自部隊内重複不可)
+    note: 'A(攻防・模倣不可)。確率+100%/対象:全。攻撃340%上昇・防御340%上昇(自動反映対応)。' +
+          '部隊内武将の全スキルの卓越追加確率+20%(computeSquadTakuetsuRateBonus経由で自動反映)。' +
+          '「特殊効果は自部隊内では重複不可」だが、卓越追加確率の合算は他の同種スキルと同様に' +
+          '重複判定していない(複数枠に入れると多重に足される)点は制限事項として残る。' +
+          '初期スキルに持つ武将は無く、三好義賢(2368)・北条綱成(2374)・高山マリア(2394)・' +
+          '佐久間信盛(2397)等の合成候補として出る。' +
+          '【2026-08-14追加】これまでspecialSkillsに登録が無く、合成候補として選んでも' +
+          '上昇%が一切出なかった。TRは情報源に記載が無くLV10のみ。'
+  },
   '戦陣 神楽': {
     hasSoar: true,
     soarValue: 4,
@@ -1609,6 +1627,9 @@ const specialSkills = {
     effectAxis: 'def', // 防御側(正本 data/skill/不制于天地人.json の効果文より)
     noMimic: true,
     targetTroopCategories: ['槍兵科','弓兵科','兵器兵科(器兵科)'], // 対象:槍/弓/器/鉄(鉄は兵科分類上、器兵科等に含まれるものとして扱う)
+    // 「鉄」は 鉄砲足軽 のこと。鉄砲足軽・騎馬鉄砲・焙烙火矢はどれもカテゴリが
+    // 「兵器兵科(砲兵科)」で区別できないため、名指しで足す(2026-08-14)。
+    targetSoldierNames: ['鉄砲足軽'], // 対象:槍・弓・器・鉄
     variableFormula: {
       statTarget: 'def', base: 0, variable: 'defenderCount',
       perUnitTable: { base:8.5, TR1:8.7, TR2:9, TR3:9.3, TR4:9.6, TR5:10.2, TR6:11.2 } // TR6はパラレル版No.31309で解禁(ixagno.blog.fc2.com確認)
@@ -1656,6 +1677,9 @@ const specialSkills = {
   '国呑ノ蟒蛇': {
     effectAxis: 'def', // 防御側(正本 data/skill/国呑ノ蟒蛇.json の効果文より)
     targetTroopCategories: ['槍兵科','弓兵科','兵器兵科(器兵科)'], // 対象:槍/弓/器/鉄
+    // 「鉄」は 鉄砲足軽 のこと。鉄砲足軽・騎馬鉄砲・焙烙火矢はどれもカテゴリが
+    // 「兵器兵科(砲兵科)」で区別できないため、名指しで足す(2026-08-14)。
+    targetSoldierNames: ['鉄砲足軽'], // 対象:槍・弓・器・鉄
     variableFormula: {
       statTarget: 'def', base: 0, variable: 'defenderCount',
       perUnitTable: { base:5.4, TR1:5.5, TR2:5.7, TR3:6, TR4:6.4, TR5:7.2, TR6:7.7 } // ixanary.com生HTML確認(2026-07-29)。TR6はパラレル版No.31297で解禁
@@ -4371,7 +4395,7 @@ const generalGrowthDB = [
   { name:'九鬼嘉隆', no:'2464', cost: 4.5, initialSkill:'鬼宿将艦', lv0Troops:4550, atkBase:1130, atkGrowth:56, defBase:1130, defGrowth:56, tacticsBase:550, tacticsGrowth:3, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'2026-08-10追加のカード画像(スキルLV1形式)とixanary.comで登録。コスト・指揮兵数・初期値・成長値はixanaryの武将データ表。指揮兵数はB-01のとおり★0-0の値をlv0Troopsに入れている(突破ランク別の値は+0.5版のため使わない)。**統率は未取得**(切り抜きに失敗して画像が無いため)。覇かどうか・合成候補・スキルのTR別数値は未確認。ixanary記載のLV10性能: 所属部隊内の「海賊衆」の兵士攻撃力と兵士防御力が「10」上昇（模倣不可・自部隊内で重複不可） / 正子公也 / 「海賊大名」の異名をとった、志摩の戦国大名だワン！。' },
   { name:'初鹿野信昌', no:'2463', cost: 3, initialSkill:'香車伝右衛門', lv0Troops:3500, atkBase:1150, atkGrowth:57, defBase:1120, defGrowth:52, tacticsBase:560, tacticsGrowth:3, rankGrades:{yari:'A',yumi:'A',uma:'S',ki:'A'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'2026-08-10追加のカード画像(スキルLV1形式)とixanary.comで登録。コスト・指揮兵数・初期値・成長値はixanaryの武将データ表。指揮兵数はB-01のとおり★0-0の値をlv0Troopsに入れている(突破ランク別の値は+0.5版のため使わない)。統率は切り抜き画像のバッジを一括で読み取ったもの(槍A/弓A/馬S/器A)。**個別のズーム確認は未実施のため要検証。**覇かどうか・合成候補・スキルのTR別数値は未確認。ixanary記載のLV10性能: 確率：+100% / 対象 馬砲器 / 攻撃：210%上昇 速度：120%上昇 / 飛翔9 / 自部隊同時攻撃時、参加自部隊中最速の部隊移動時間を用いて合流出陣できる（模倣不可）。' },
   { name:'塚原卜伝', no:'2401', cost: 3.5, initialSkill:'剣聖 建御雷', lv0Troops:3500, atkBase:1100, atkGrowth:66, defBase:1050, defGrowth:40, tacticsBase:490, tacticsGrowth:1.5, rankGrades:{yari:'S',yumi:'A',uma:'A',ki:'A'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'限定極(2019-12-21〜、ixaixa.com確認)。カード画像(LV1形式)で統率(槍S/弓A/馬A/器A)・初期値・コスト・No.を確認、ixanary.com/cards/2401でコスト3.5・指揮3500(★0-0)・成長値・LV10スキル値を確認(2026-08-10)。旧名「塚原卜伝 剣聖 建御雷」はスキル名混入のため表記統一ルール(マニュアルF-0)に沿いNo併記へ変更。固有スキル「剣聖 建御雷」(B・鍛錬不可): 確率15%/槍弓器攻18%上昇/部隊長なら発動率と効果4倍(模倣不可)。武将DBページ(characters-kyoku.html)登録済み。' },
-  { name:'森可成(2402)', no:'2402', cost: 3.5, initialSkill:'覇王ノ守人', rankGrades:{yari:'A',yumi:'S',uma:'A',ki:'A'}, lv0Troops:3500, atkBase:1000, atkGrowth:28, defBase:1100, defGrowth:29, tacticsBase:480, tacticsGrowth:2.5, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'2026-08-10追加のカード画像(スキルLV1形式)とixanary.comで一括登録。コスト・指揮兵数・初期値・成長値はixanaryの武将データ表。指揮兵数はマニュアルB-01のとおり★0-0の値をlv0Troopsに入れている。カード画像(LV1形式)で統率(槍A/弓S/馬A/器A)を拡大確認・覇表記なし(2026-08-10)。限定極(2019-12-21〜、ixaixa.com確認)。スキルはB(鍛錬不可)。武将DBページ(characters-kyoku.html)登録済み。同名の極No.2375(覇立槍)と区別するためNo併記へ変更。ixanary記載のLV10性能: 確率：+50% / 対象 全 / 防御：57%上昇 / 防御時に敵軍の攻撃スキル発動率を-5%（特殊効果は重複不可）。' },
+  { name:'森可成', no:'2402', cost: 3.5, initialSkill:'覇王ノ守人', rankGrades:{yari:'A',yumi:'S',uma:'A',ki:'A'}, lv0Troops:3500, atkBase:1000, atkGrowth:28, defBase:1100, defGrowth:29, tacticsBase:480, tacticsGrowth:2.5, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'2026-08-10追加のカード画像(スキルLV1形式)とixanary.comで一括登録。コスト・指揮兵数・初期値・成長値はixanaryの武将データ表。指揮兵数はマニュアルB-01のとおり★0-0の値をlv0Troopsに入れている。カード画像(LV1形式)で統率(槍A/弓S/馬A/器A)を拡大確認・覇表記なし(2026-08-10)。限定極(2019-12-21〜、ixaixa.com確認)。スキルはB(鍛錬不可)。武将DBページ(characters-kyoku.html)登録済み。同名の極No.2375(覇立槍)と区別するためNo併記へ変更。ixanary記載のLV10性能: 確率：+50% / 対象 全 / 防御：57%上昇 / 防御時に敵軍の攻撃スキル発動率を-5%（特殊効果は重複不可）。' },
   { name:'舞兵庫', no:'2409', cost: 3.5, initialSkill:'マシラ炎舞', rankGrades:{yari:'A',yumi:'B',uma:'S',ki:'A'}, lv0Troops:3500, atkBase:1000, atkGrowth:32, defBase:980, defGrowth:27, tacticsBase:510, tacticsGrowth:2, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'2026-08-10追加のカード画像(スキルLV1形式)とixanary.comで一括登録。コスト・指揮兵数・初期値・成長値はixanaryの武将データ表。指揮兵数はマニュアルB-01のとおり★0-0の値をlv0Troopsに入れている。カード画像(LV1形式)で統率(槍A/弓B/馬S/器A)を拡大確認・覇表記なし(2026-08-10)。限定極(2019-12-14〜、ixaixa.com確認)。武将DBページ(characters-kyoku.html)登録済み。ixanary記載のLV10性能: 確率：+100% / 対象 馬砲器 / 攻撃：55%上昇 / 速度：50%上昇。' },
   { name:'高山右近', no:'2412', rankGrades:{yari:'A',yumi:'A',uma:'A',ki:'S'}, cost: 4, initialSkill:'静寂ノ福者', lv0Troops:3740, atkBase:1070, atkGrowth:35, defBase:1070, defGrowth:35, tacticsBase:520, tacticsGrowth:3, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'2026-08-10追加のカード画像(スキルLV1形式)とixanary.comで一括登録。コスト・指揮兵数・初期値・成長値はixanaryの武将データ表。指揮兵数はマニュアルB-01のとおり★0-0の値をlv0Troopsに入れている。カード画像(LV1形式)で統率(槍A/弓A/馬A/器S)を拡大確認・覇表記なし(2026-08-10)。限定極(2019-12-22〜、ixaixa.com確認)。武将DBページ(characters-kyoku.html)登録済み。同名の別カード(No.2836等)と区別するためNo併記。ixanary記載のLV10性能: 確率：+45% / 対象 槍馬器鉄 / 攻撃：65%上昇 防御：65%上昇 / このカードを所持しているとデッキコスト上限が1増加（特殊効果は重複不可）。' },
   { name:'志賀親次(2416)', no:'2416', rankGrades:{yari:'S',yumi:'A',uma:'A',ki:'A'}, cost: 1, initialSkill:'天正ノ楠木', lv0Troops:1540, atkBase:1070, atkGrowth:47, defBase:1000, defGrowth:25, tacticsBase:520, tacticsGrowth:2.5, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'2026-08-10追加のカード画像(スキルLV1形式)とixanary.comで一括登録。コスト・指揮兵数・初期値・成長値はixanaryの武将データ表。指揮兵数はマニュアルB-01のとおり★0-0の値をlv0Troopsに入れている。カード画像(LV1形式)で統率(槍S/弓A/馬A/器A)を拡大確認・覇表記なし(2026-08-10)。限定極(2019-12-16〜、ixaixa.com確認)。武将DBページ(characters-kyoku.html)登録済み。同名の別カード(No.7007等)と区別するためNo併記。ixanary記載のLV10性能: 確率：+62% / 対象 槍器鉄 / 攻撃防御：（部隊ランクボーナス×10） %上昇 / （部隊ランクボーナスで効果が変化）。' },
