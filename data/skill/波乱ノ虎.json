@@ -3,7 +3,7 @@
  "rank": "S",
  "baseRate": 45.0,
  "target": "全",
- "effectSummary": "S/LV10 確率 45% 防御 0%上昇/対象:全",
+ "effectSummary": "S/LV10 確率 45% 防御(部隊ランクボーナス×15)%上昇/対象:全\n①防御(部隊ランクボーナス×15)%上昇する\n②部隊ランクボーナスで効果が変化する(★28で135%)",
  "categoryLinks": [],
  "sourceCharacters": [
   {
@@ -18,13 +18,19 @@
  ],
  "notes": [
   "ixanary.com(skills/波乱ノ虎)から登録(2026-08-14)。S以上のスキルはページを作る決まり(S-01)にもとづく新規作成。",
-  "対象・確率・効果文はixanaryの表記をうちの書式に直したもの。categoryLinksとsourceCharactersは各武将の登録時に追記する。"
+  "対象・確率・効果文はixanaryの表記をうちの書式に直したもの。categoryLinksとsourceCharactersは各武将の登録時に追記する。",
+  "基本値は防御0%上昇で部隊ランクボーナス×15%が実際の上昇値になる方式(ixanary記載の★28での参考値=135%から裏取り)。",
+  "ownHiddenCandidateは、このスキルが1次候補として載っている枠(自己参照のC枠)の2次候補から(S-08)。"
  ],
  "trTable": [
   {
    "level": "LV10",
    "points": "-",
-   "effect": "全　確率 45% / 防御 0%上昇"
+   "effect": "全　確率 45% / 防御(部隊ランクボーナス×15)%上昇(★28=135%)"
   }
- ]
+ ],
+ "ownHiddenCandidate": {
+  "skill": "覇獄竜王",
+  "rank": "SS"
+ }
 }

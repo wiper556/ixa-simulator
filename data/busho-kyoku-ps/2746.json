@@ -1,0 +1,103 @@
+{
+ "name": "足利義稙",
+ "no": "2746",
+ "ch": "未確認",
+ "cost": 3.0,
+ "troop": "全",
+ "sub": "",
+ "effect": "攻撃 20%上昇 速度 32%上昇",
+ "furigana": "あしかがよしたね",
+ "illustrator": "BISAI",
+ "imageFull": "assets/img/characters/no2746_full.png",
+ "imageChar": "assets/img/characters/no2746_char.png",
+ "atkBase": 920,
+ "atkGrowth": 26.0,
+ "defBase": 900,
+ "defGrowth": 24.0,
+ "tacticsBase": 500.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3170,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "S",
+  "uma": "S",
+  "ki": "B"
+ },
+ "initialSkill": "流れ公方",
+ "skillDetail": "A/LV10 確率 100% 攻撃 20%上昇 速度 32%上昇/対象:全\n①攻撃が20%上昇 速度 32%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 攻撃 20%上昇 速度 32%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "迅速行軍",
+   "rank": "E",
+   "afterSkill": "弓隊突撃",
+   "afterRank": "F",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "速度 20%上昇",
+   "afterTarget": "弓",
+   "afterRate": "15%",
+   "afterEffectShort": "攻撃 20%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "大動員",
+   "rank": "B",
+   "afterSkill": "大動員",
+   "afterRank": "B",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "攻撃 8%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "湖水渡り",
+   "rank": "B",
+   "afterSkill": "天戒 五芒星",
+   "afterRank": "S",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "距離とスキルレベルで速度が変化",
+   "afterTarget": "馬砲",
+   "afterRate": "35%",
+   "afterEffectShort": "攻撃 40%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "流れ公方",
+   "rank": "A",
+   "afterSkill": "流れ公方",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "攻撃 20%上昇 速度 32%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "妙計暗躍",
+   "rank": "A",
+   "afterSkill": "天賦の神算",
+   "afterRank": "B",
+   "target": "全",
+   "rate": "15%",
+   "effectShort": "攻撃戦闘勝利時のみ、敵軍全武将に追加ダメージ+35(重複不可)",
+   "afterTarget": "全",
+   "afterRate": "50%",
+   "afterEffectShort": "攻撃 12%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/2746 と skills/流れ公方)およびixawiki(BushoCard/2746足利義稙)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

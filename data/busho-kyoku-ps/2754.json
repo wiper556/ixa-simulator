@@ -1,0 +1,106 @@
+{
+ "name": "早川殿",
+ "no": "2754",
+ "ch": "未確認",
+ "cost": 3.5,
+ "troop": "槍弓馬器攻",
+ "sub": "",
+ "effect": "攻撃 90%上昇",
+ "furigana": "はやかわどの",
+ "illustrator": "木下月乃",
+ "imageFull": "assets/img/characters/no2754_full.png",
+ "imageChar": "assets/img/characters/no2754_char.png",
+ "atkBase": 960,
+ "atkGrowth": 26.0,
+ "defBase": 960,
+ "defGrowth": 26.0,
+ "tacticsBase": 520.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3460,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "赤鳥ノ舞",
+ "skillDetail": "A/LV10 確率 37% 攻撃 90%上昇/対象:槍弓馬器\n①攻撃が90%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍弓馬器　確率 37% / 攻撃 90%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "槍隊急襲",
+   "rank": "F",
+   "afterSkill": "槍隊守備",
+   "afterRank": "F",
+   "target": "槍",
+   "rate": "16%",
+   "effectShort": "槍攻：7.5%上昇",
+   "afterTarget": "槍",
+   "afterRate": "16%",
+   "afterEffectShort": "防御 (コストx5) %上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "青葉ノ奏",
+   "rank": "D",
+   "afterSkill": "赤鬼刺",
+   "afterRank": "D",
+   "target": "槍弓馬",
+   "rate": "8%",
+   "effectShort": "攻撃 47%上昇",
+   "afterTarget": "槍弓馬",
+   "afterRate": "15%",
+   "afterEffectShort": "攻撃 (コストx12) %上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "王妃の矜持",
+   "rank": "A",
+   "afterSkill": "将軍親政",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "攻撃 7%上昇",
+   "afterTarget": "槍馬",
+   "afterRate": "30%",
+   "afterEffectShort": "攻撃 7%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "波瀾ノ夕立",
+   "rank": "B",
+   "afterSkill": "波瀾ノ夕立",
+   "afterRank": "B",
+   "target": "槍砲器",
+   "rate": "36%",
+   "effectShort": "防御 43%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "王佐ノ才",
+   "rank": "B",
+   "afterSkill": "覇国無双",
+   "afterRank": "S",
+   "target": "弓馬砲器",
+   "rate": "40%",
+   "effectShort": "攻撃 54%上昇",
+   "afterTarget": "全",
+   "afterRate": "35%",
+   "afterEffectShort": "攻撃 40%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/2754 と skills/赤鳥ノ舞)およびixawiki(BushoCard/2754早川殿)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

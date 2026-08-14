@@ -97,7 +97,7 @@
    "afterRank": "A",
    "target": null,
    "rate": null,
-   "effectShort": null,
+   "effectShort": "攻撃55%上昇+防御55%上昇(自軍全武将全スキルの卓越確率に7%を加算・模倣不可・自軍内重複上限4)",
    "afterTarget": "全",
    "afterRate": "100%",
    "afterEffectShort": "攻撃70%上昇+防御70%上昇(このスキルを所持する武将の全スキルの卓越確率に25%を加算する(模倣不可))"
@@ -110,7 +110,8 @@
    "afterRank": "S",
    "target": null,
    "rate": "5%",
-   "effectShort": "防御時、敵軍のB以下スキルの攻撃効果を×0.6で計算(重複不可・模倣不可)"
+   "effectShort": "防御時、敵軍のB以下スキルの攻撃効果を×0.6で計算(重複不可・模倣不可)",
+   "afterEffectShort": "防御戦闘時、攻撃側敵軍で発動したB以下の武将スキルの攻撃効果を×0.6で計算(重複不可・模倣不可)"
   },
   {
    "slot": "S2",
@@ -120,7 +121,7 @@
    "afterRank": "A",
    "target": null,
    "rate": null,
-   "effectShort": null,
+   "effectShort": "防御77%上昇(卓越:追加確率20%で防御効果が1.5倍)",
    "afterTarget": "全",
    "afterRate": "37%",
    "afterEffectShort": "防御(敵部隊移動速度÷1.5)%上昇(最も部隊移動速度の大きい敵部隊の数値を参照する)"

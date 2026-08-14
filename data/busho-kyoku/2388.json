@@ -83,7 +83,8 @@
    "afterRank": "A",
    "target": "全 飛翔12",
    "rate": "54%",
-   "effectShort": "防御300%上昇(本丸防御第5列以降で1.5倍・模倣不可)"
+   "effectShort": "防御300%上昇(本丸防御第5列以降で1.5倍・模倣不可)",
+   "afterEffectShort": "防御300%上昇(本丸防御第5列以降で1.5倍・模倣不可)"
   },
   {
    "slot": "C",
@@ -93,7 +94,8 @@
    "afterRank": "A",
    "target": "全 飛翔12",
    "rate": "54%",
-   "effectShort": "防御300%上昇(本丸防御第5列以降で1.5倍・模倣不可)"
+   "effectShort": "防御300%上昇(本丸防御第5列以降で1.5倍・模倣不可)",
+   "afterEffectShort": "防御300%上昇(本丸防御第5列以降で1.5倍・模倣不可)"
   },
   {
    "slot": "S1",
@@ -103,7 +105,8 @@
    "afterRank": "A",
    "target": "全 飛翔12",
    "rate": "54%",
-   "effectShort": "防御300%上昇(本丸防御第5列以降で1.5倍・模倣不可)"
+   "effectShort": "防御300%上昇(本丸防御第5列以降で1.5倍・模倣不可)",
+   "afterEffectShort": "防御300%上昇(本丸防御第5列以降で1.5倍・模倣不可)"
   },
   {
    "slot": "S2",
@@ -113,7 +116,10 @@
    "afterRank": "A",
    "target": "全",
    "rate": "65%",
-   "effectShort": "攻撃465%上昇+防御465%上昇(模倣不可)"
+   "effectShort": "攻撃465%上昇+防御465%上昇(模倣不可)",
+   "afterEffectShort": "攻撃 465%上昇+防御 465%上昇(模倣不可)",
+   "afterTarget": "全",
+   "afterRate": "65%"
   }
  ],
  "notes": [

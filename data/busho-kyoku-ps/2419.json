@@ -71,7 +71,7 @@
    "afterRank": "SS",
    "target": null,
    "rate": null,
-   "effectShort": null,
+   "effectShort": "攻撃42%上昇+防御42%上昇",
    "afterTarget": "全",
    "afterRate": "42%",
    "afterEffectShort": "攻撃 25.39%上昇(部隊総コストで変動、TRなし)"
@@ -97,7 +97,8 @@
    "afterRank": "SS",
    "target": "自身",
    "rate": "70%",
-   "effectShort": "自身が持つ初期スキルを模倣する(戦闘スキルのみ)"
+   "effectShort": "自身が持つ初期スキルを模倣する(戦闘スキルのみ)",
+   "afterEffectShort": "自身が持つ初期スキルを模倣する(戦闘スキルのみ)"
   },
   {
    "slot": "S1",
@@ -107,7 +108,8 @@
    "afterRank": "SS",
    "target": "自身",
    "rate": "70%",
-   "effectShort": "自身が持つ初期スキルを模倣する(戦闘スキルのみ)"
+   "effectShort": "自身が持つ初期スキルを模倣する(戦闘スキルのみ)",
+   "afterEffectShort": "自身が持つ初期スキルを模倣する(戦闘スキルのみ)"
   },
   {
    "slot": "S2",

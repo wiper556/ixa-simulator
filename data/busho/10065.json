@@ -69,7 +69,8 @@
    "afterRank": "SS",
    "target": "全 覇道",
    "rate": "42%",
-   "effectShort": "攻撃1010%上昇+防御1010%上昇+破壊150%上昇"
+   "effectShort": "攻撃1010%上昇+防御1010%上昇+破壊150%上昇",
+   "afterEffectShort": "攻撃1010%上昇+防御1010%上昇+破壊150%上昇"
   },
   {
    "slot": "B",
@@ -79,7 +80,8 @@
    "afterRank": "SS",
    "target": "全 覇道",
    "rate": "42%",
-   "effectShort": "攻撃1010%上昇+防御1010%上昇+破壊150%上昇"
+   "effectShort": "攻撃1010%上昇+防御1010%上昇+破壊150%上昇",
+   "afterEffectShort": "攻撃1010%上昇+防御1010%上昇+破壊150%上昇"
   },
   {
    "slot": "C",
@@ -89,7 +91,8 @@
    "afterRank": "SSS",
    "target": "部隊長",
    "rate": "56%",
-   "effectShort": "部隊長の模倣可能な初期スキルを卓越:追加確率40%で1.35倍にして模倣"
+   "effectShort": "部隊長の模倣可能な初期スキルを卓越:追加確率40%で1.35倍にして模倣",
+   "afterEffectShort": "部隊長の模倣可能な初期スキルを卓越:追加確率40%で1.35倍にして模倣"
   },
   {
    "slot": "S1",
@@ -99,7 +102,8 @@
    "afterRank": "SSS",
    "target": "部隊長",
    "rate": "56%",
-   "effectShort": "部隊長の模倣可能な初期スキルを卓越:追加確率40%で1.35倍にして模倣"
+   "effectShort": "部隊長の模倣可能な初期スキルを卓越:追加確率40%で1.35倍にして模倣",
+   "afterEffectShort": "部隊長の模倣可能な初期スキルを卓越:追加確率40%で1.35倍にして模倣"
   },
   {
    "slot": "S2",
@@ -107,9 +111,9 @@
    "rank": "SSS",
    "afterSkill": "幻像鏡花",
    "afterRank": "SSS",
-   "target": null,
-   "rate": null,
-   "effectShort": null,
+   "target": "弓・砲・器 覇道",
+   "rate": "卓越50%",
+   "effectShort": "攻防 各200%上昇(卓越追加確率50%で発動・超過分×5.5%)",
    "afterTarget": "部隊長",
    "afterRate": "56%",
    "afterEffectShort": "部隊長の模倣可能な初期スキルを卓越:追加確率40%で1.35倍にして模倣"

@@ -52,9 +52,9 @@
    "rank": "S",
    "afterSkill": "猛火ノ追撃",
    "afterRank": "SSS",
-   "target": null,
-   "rate": null,
-   "effectShort": null,
+   "target": "部隊長",
+   "rate": "60%",
+   "effectShort": "所属部隊の部隊長が持つ模倣可能な初期スキルを通常攻撃/防御効果を1.1倍して模倣する",
    "afterTarget": "全",
    "afterRate": "70%",
    "afterEffectShort": "攻撃 45%上昇(部隊総コストで変動、TRなし)"
@@ -65,9 +65,9 @@
    "rank": "S",
    "afterSkill": "摩利支天ノ法",
    "afterRank": "SSS",
-   "target": null,
-   "rate": null,
-   "effectShort": null,
+   "target": "部隊長 不屈2",
+   "rate": "45%",
+   "effectShort": "所属部隊の部隊長が持つ模倣可能な初期スキルを通常攻撃/防御効果を1.2倍して模倣する",
    "afterTarget": "部隊長",
    "afterRate": "70%",
    "afterEffectShort": "模倣倍率1.25倍"
@@ -80,7 +80,8 @@
    "afterRank": "SSS",
    "target": "部隊長",
    "rate": "70%",
-   "effectShort": "模倣倍率1.25倍"
+   "effectShort": "模倣倍率1.25倍",
+   "afterEffectShort": "所属部隊の部隊長が持つ模倣可能な初期スキルを通常攻撃/防御効果1.25倍にして模倣する"
   },
   {
    "slot": "S2",

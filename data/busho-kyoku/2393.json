@@ -54,7 +54,8 @@
    "afterRank": "A",
    "target": "槍・砲・器",
    "rate": "46%",
-   "effectShort": "防御280%上昇(最大指揮兵数と同数指揮時1.5倍)"
+   "effectShort": "防御280%上昇(最大指揮兵数と同数指揮時1.5倍)",
+   "afterEffectShort": "防御280%上昇(最大指揮兵数と同数指揮時1.5倍)"
   },
   {
    "slot": "C",
@@ -64,7 +65,8 @@
    "afterRank": "A",
    "target": "槍・砲・器",
    "rate": "46%",
-   "effectShort": "防御280%上昇(最大指揮兵数と同数指揮時1.5倍)"
+   "effectShort": "防御280%上昇(最大指揮兵数と同数指揮時1.5倍)",
+   "afterEffectShort": "防御280%上昇(最大指揮兵数と同数指揮時1.5倍)"
   },
   {
    "slot": "S1",
@@ -74,7 +76,8 @@
    "afterRank": "A",
    "target": "槍・砲・器",
    "rate": "46%",
-   "effectShort": "防御280%上昇(最大指揮兵数と同数指揮時1.5倍)"
+   "effectShort": "防御280%上昇(最大指揮兵数と同数指揮時1.5倍)",
+   "afterEffectShort": "防御280%上昇(最大指揮兵数と同数指揮時1.5倍)"
   },
   {
    "slot": "S2",
@@ -84,7 +87,10 @@
    "afterRank": "A",
    "target": "全",
    "rate": "65%",
-   "effectShort": "攻撃465%上昇+防御465%上昇(模倣不可)"
+   "effectShort": "攻撃465%上昇+防御465%上昇(模倣不可)",
+   "afterEffectShort": "攻撃 465%上昇+防御 465%上昇(模倣不可)",
+   "afterTarget": "全",
+   "afterRate": "65%"
   }
  ],
  "notes": [

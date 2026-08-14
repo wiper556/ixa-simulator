@@ -77,7 +77,8 @@
    "afterRank": "SS",
    "target": "全",
    "rate": "100%",
-   "effectShort": "防御740%上昇+防衛戦闘時敵軍の卓越確率-8%する(自軍内重複上限2)"
+   "effectShort": "防御740%上昇+防衛戦闘時敵軍の卓越確率-8%する(自軍内重複上限2)",
+   "afterEffectShort": "防御 740%上昇(敵軍卓越確率-8%)"
   },
   {
    "slot": "C",
@@ -87,7 +88,8 @@
    "afterRank": "SSS",
    "target": "自身",
    "rate": "70%",
-   "effectShort": "自身が持つ初期スキルを模倣する(卓越:追加確率30%で通常攻撃/防御効果1.3倍にして模倣)"
+   "effectShort": "自身が持つ初期スキルを模倣する(卓越:追加確率30%で通常攻撃/防御効果1.3倍にして模倣)",
+   "afterEffectShort": "自身が持つ初期スキルを模倣する(卓越:追加確率30%で通常攻撃/防御効果1.3倍にして模倣)"
   },
   {
    "slot": "S1",
@@ -106,9 +108,10 @@
    "rank": "SS",
    "afterSkill": "牙突・弐式",
    "afterRank": "SS",
-   "target": null,
-   "rate": null,
-   "effectShort": null
+   "target": "全 無尽",
+   "rate": "40%",
+   "effectShort": "攻撃1020%上昇",
+   "afterEffectShort": "攻撃1020%上昇"
   }
  ]
 }

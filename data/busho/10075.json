@@ -72,7 +72,8 @@
    "afterRank": "S",
    "rate": "45%",
    "target": "弓・砲・器",
-   "effectShort": "攻撃150%上昇+敵軍部隊数×係数%上昇"
+   "effectShort": "攻撃150%上昇+敵軍部隊数×係数%上昇",
+   "afterEffectShort": "攻撃 150%上昇+敵軍部隊数×30%"
   },
   {
    "slot": "B",
@@ -82,7 +83,8 @@
    "afterRank": "SS",
    "rate": "100%",
    "target": "全 無尽 不屈1",
-   "effectShort": "攻撃1010%上昇+無尽(部隊消費コスト-0.5)"
+   "effectShort": "攻撃1010%上昇+無尽(部隊消費コスト-0.5)",
+   "afterEffectShort": "攻撃 1010%上昇"
   },
   {
    "slot": "C",
@@ -92,7 +94,8 @@
    "afterRank": "SS",
    "rate": "44%",
    "target": "全 無尽",
-   "effectShort": "攻撃 6.9%×防御参加武将数(280人)=1932.0%"
+   "effectShort": "攻撃 6.9%×防御参加武将数(280人)=1932.0%",
+   "afterEffectShort": "攻撃 6.9%×防御参加武将数(280人)=1932.0%"
   },
   {
    "slot": "S1",
@@ -102,7 +105,8 @@
    "afterRank": "SSS",
    "rate": "46%",
    "target": "全 無尽",
-   "effectShort": "攻撃を係数×人数で上昇"
+   "effectShort": "攻撃を係数×人数で上昇",
+   "afterEffectShort": "攻撃 9.6%×防御参加武将数(280人)=2688.0%"
   },
   {
    "slot": "S2",
@@ -112,7 +116,8 @@
    "afterRank": "SS",
    "rate": "40%",
    "target": "全 覇道",
-   "effectShort": "攻撃900%上昇+防御900%上昇+破壊150%上昇+所属部隊武将のスキルを無効化・発動率低下から保護"
+   "effectShort": "攻撃900%上昇+防御900%上昇+破壊150%上昇+所属部隊武将のスキルを無効化・発動率低下から保護",
+   "afterEffectShort": "攻撃 900%上昇+防御900%上昇+破壊150%上昇"
   }
  ],
  "notes": [

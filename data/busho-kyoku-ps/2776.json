@@ -1,0 +1,103 @@
+{
+ "name": "細川忠利",
+ "no": "2776",
+ "ch": "未確認",
+ "cost": 3.0,
+ "troop": "全防",
+ "sub": "",
+ "effect": "防御 72%上昇",
+ "furigana": "ほそかわただとし",
+ "illustrator": "MASANORI KAMATA",
+ "imageFull": "assets/img/characters/no2776_full.png",
+ "imageChar": "assets/img/characters/no2776_char.png",
+ "atkBase": 1000,
+ "atkGrowth": 34.0,
+ "defBase": 1040,
+ "defGrowth": 42.0,
+ "tacticsBase": 500.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3280,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "名門ノ戒律",
+ "skillDetail": "A/LV10 確率 42% 防御 72%上昇/対象:全\n①防御が72%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 42% / 防御 72%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "槍隊守備",
+   "rank": "F",
+   "afterSkill": "槍隊急襲",
+   "afterRank": "F",
+   "target": "槍",
+   "rate": "16%",
+   "effectShort": "防御 (コストx5) %上昇",
+   "afterTarget": "槍",
+   "afterRate": "16%",
+   "afterEffectShort": "槍攻：7.5%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "屈指の勇将",
+   "rank": "D",
+   "afterSkill": "屈指の勇将",
+   "afterRank": "D",
+   "target": "全",
+   "rate": "37%",
+   "effectShort": "攻撃 22%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "戦陣 破軍",
+   "rank": "A",
+   "afterSkill": "天穿神滅",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "44%",
+   "effectShort": "攻撃 66%上昇+防御 66%上昇",
+   "afterTarget": "砲器",
+   "afterRate": "50%",
+   "afterEffectShort": "攻撃((ランク+1)xコストx3) %上昇 部隊ランクとコストで効果が変化"
+  },
+  {
+   "slot": "S1",
+   "skill": "洞察",
+   "rank": "B",
+   "afterSkill": "洞察",
+   "afterRank": "B",
+   "target": "全",
+   "rate": "30%",
+   "effectShort": "防御 7.5%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "戦陣 無双",
+   "rank": "A",
+   "afterSkill": "無双英傑",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "50%",
+   "effectShort": "攻撃 67%上昇",
+   "afterTarget": "全",
+   "afterRate": "50%",
+   "afterEffectShort": "攻撃99.9%上昇 防御99.9%上昇 部隊消費コストを0.5低下 (特殊効果は模倣不可)"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/2776 と skills/名門ノ戒律)およびixawiki(BushoCard/2776細川忠利)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

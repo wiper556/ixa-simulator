@@ -110,7 +110,8 @@
    "afterRank": "SS",
    "target": "全",
    "rate": "60%",
-   "effectShort": "防御(部隊総コスト依存)%上昇(C25で423.75%)"
+   "effectShort": "防御(部隊総コスト依存)%上昇(C25で423.75%)",
+   "afterEffectShort": "防御 60.04%上昇(部隊総コストで変動)"
   },
   {
    "slot": "S2",
@@ -120,7 +121,7 @@
    "afterRank": "A",
    "target": null,
    "rate": null,
-   "effectShort": null,
+   "effectShort": "防御90%上昇(拠点待機60分ごとに防御効果1.5倍・上限3回)",
    "afterTarget": "全 飛翔2",
    "afterRate": "60%",
    "afterEffectShort": "防御110%上昇(飛翔2・自軍防御参加武将が30以上の時、防御効果2倍)"

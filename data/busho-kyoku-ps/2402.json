@@ -84,7 +84,7 @@
    "afterRank": "SS",
    "target": null,
    "rate": null,
-   "effectShort": null,
+   "effectShort": "攻撃42%上昇+防御42%上昇",
    "afterTarget": "全",
    "afterRate": "42%",
    "afterEffectShort": "攻撃 25.39%上昇(部隊総コストで変動、TRなし)"
@@ -120,7 +120,8 @@
    "afterRank": "SS",
    "target": "全",
    "rate": "60%",
-   "effectShort": "防御NULL%上昇 (部隊の総コストで効果が変化します)"
+   "effectShort": "防御NULL%上昇 (部隊の総コストで効果が変化します)",
+   "afterEffectShort": "防御NULL%上昇 (部隊の総コストで効果が変化します)"
   }
  ],
  "notes": [

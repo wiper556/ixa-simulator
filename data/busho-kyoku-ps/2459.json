@@ -84,7 +84,7 @@
    "afterRank": "SS",
    "target": null,
    "rate": null,
-   "effectShort": null,
+   "effectShort": "防御190%上昇(自軍武将のスキル発動率+3%・特殊効果は自軍内重複上限2)",
    "afterTarget": "全",
    "afterRate": "56%",
    "afterEffectShort": "防御(3.8×防御参加武将数)%上昇=1064.0%(280人時)"
@@ -97,7 +97,7 @@
    "afterRank": "SS",
    "target": null,
    "rate": null,
-   "effectShort": null,
+   "effectShort": "防御190%上昇(自軍武将のスキル発動率+3%・特殊効果は自軍内重複上限2)",
    "afterTarget": "全",
    "afterRate": "56%",
    "afterEffectShort": "防御(3.8×防御参加武将数)%上昇=1064.0%(280人時)"
@@ -110,7 +110,8 @@
    "afterRank": "SS",
    "target": "全",
    "rate": "56%",
-   "effectShort": "防御(3.8×防御参加武将数)%上昇=1064.0%(280人時)"
+   "effectShort": "防御(3.8×防御参加武将数)%上昇=1064.0%(280人時)",
+   "afterEffectShort": "防御 3.8%×防御参加武将数(280人)=1064.0%"
   },
   {
    "slot": "S2",

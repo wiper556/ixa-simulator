@@ -80,7 +80,8 @@
    "afterRank": "B",
    "target": "全",
    "rate": "30%",
-   "effectShort": "攻撃戦闘勝利時のみ、敵軍1部隊の武将に追加ダメージ+45"
+   "effectShort": "攻撃戦闘勝利時のみ、敵軍1部隊の武将に追加ダメージ+45",
+   "afterEffectShort": "攻撃戦闘勝利時のみ、敵軍1部隊の武将に追加ダメージ+45"
   },
   {
    "slot": "S2",
@@ -90,7 +91,8 @@
    "afterRank": "A",
    "target": "全",
    "rate": "60%",
-   "effectShort": "防御 5%上昇"
+   "effectShort": "防御 5%上昇",
+   "afterEffectShort": "防御 5%上昇"
   }
  ],
  "notes": [

@@ -71,7 +71,7 @@
    "afterRank": "SS",
    "target": null,
    "rate": null,
-   "effectShort": null,
+   "effectShort": "攻撃99.9%上昇+防御99.9%上昇+破壊150%上昇",
    "afterTarget": "槍・弓・馬",
    "afterRate": "70%",
    "afterEffectShort": "全攻 30%上昇(部隊の総コストで効果が変化)"
@@ -84,7 +84,8 @@
    "afterRank": "SS",
    "target": "全",
    "rate": "56%",
-   "effectShort": "防御(3.8×防御参加武将数)%上昇=1064.0%(280人時)"
+   "effectShort": "防御(3.8×防御参加武将数)%上昇=1064.0%(280人時)",
+   "afterEffectShort": "防御 3.8%×防御参加武将数(280人)=1064.0%"
   },
   {
    "slot": "C",
@@ -94,7 +95,8 @@
    "afterRank": "SS",
    "target": "全",
    "rate": "100%",
-   "effectShort": "攻撃360%上昇+防御360%上昇+部隊内全武将の兵科対象の全スキルに砲・器対象を追加"
+   "effectShort": "攻撃360%上昇+防御360%上昇+部隊内全武将の兵科対象の全スキルに砲・器対象を追加",
+   "afterEffectShort": "攻撃 360%上昇+防御 360%上昇(砲・器対象追加)"
   },
   {
    "slot": "S1",
@@ -104,7 +106,8 @@
    "afterRank": "SS",
    "target": "全",
    "rate": "100%",
-   "effectShort": "攻撃344%上昇+防御344%上昇+自軍全武将全スキルの卓越確率に15%加算(模倣不可・自軍内重複上限2)"
+   "effectShort": "攻撃344%上昇+防御344%上昇+自軍全武将全スキルの卓越確率に15%加算(模倣不可・自軍内重複上限2)",
+   "afterEffectShort": "攻撃344%上昇+防御344%上昇(卓越確率+15%)"
   },
   {
    "slot": "S2",

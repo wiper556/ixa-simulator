@@ -43,7 +43,8 @@
    "afterRate": "50%",
    "afterEffectShort": "所属部隊の部隊長が持つ初期スキルを模倣する(戦闘スキルのみ)",
    "target": "槍・馬・器",
-   "effectShort": "攻撃35%上昇+速度25%上昇"
+   "rate": "100%",
+   "effectShort": "攻撃 35%上昇(確率30%)+速度 25%上昇"
   },
   {
    "slot": "B",
@@ -76,7 +77,11 @@
    "skill": "先見ノ直観",
    "rank": "A",
    "afterSkill": "先見ノ直観",
-   "afterRank": "A"
+   "afterRank": "A",
+   "target": "槍・馬・砲",
+   "rate": "50%",
+   "effectShort": "攻撃 600%上昇(対人攻撃勝利時に名声+20)",
+   "afterEffectShort": "攻撃 600%上昇(対人攻撃勝利時に名声+20)"
   },
   {
    "slot": "S2",
@@ -86,7 +91,10 @@
    "afterRank": "A",
    "target": "全",
    "rate": "65%",
-   "effectShort": "攻撃465%上昇+防御465%上昇(模倣不可)"
+   "effectShort": "攻撃465%上昇+防御465%上昇(模倣不可)",
+   "afterEffectShort": "攻撃 465%上昇+防御 465%上昇(模倣不可)",
+   "afterTarget": "全",
+   "afterRate": "65%"
   }
  ],
  "notes": [

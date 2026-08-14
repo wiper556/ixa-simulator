@@ -1,0 +1,103 @@
+{
+ "name": "内藤如安",
+ "no": "2741",
+ "ch": "未確認",
+ "cost": 3.0,
+ "troop": "器",
+ "sub": "",
+ "effect": "破壊 26%上昇/銅銭獲得率：3%",
+ "furigana": "ないとうじょあん",
+ "illustrator": "紺藤ココン",
+ "imageFull": "assets/img/characters/no2741_full.png",
+ "imageChar": "assets/img/characters/no2741_char.png",
+ "atkBase": 850,
+ "atkGrowth": 19.0,
+ "defBase": 830,
+ "defGrowth": 18.0,
+ "tacticsBase": 445.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 3150,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "B",
+  "ki": "S"
+ },
+ "initialSkill": "聖洗の祝砲",
+ "skillDetail": "A/LV10 確率 39% 破壊 26%上昇/銅銭獲得率：3%/対象:器\n①破壊 26%上昇/銅銭獲得率：3%",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "器　確率 39% / 破壊 26%上昇/銅銭獲得率：3%"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "城崩し",
+   "rank": "D",
+   "afterSkill": "謀殺",
+   "afterRank": "D",
+   "target": "器",
+   "rate": "35%",
+   "effectShort": "破壊 20%上昇",
+   "afterTarget": "全",
+   "afterRate": "15%",
+   "afterEffectShort": "攻撃戦闘勝利時のみ、敵軍1部隊の武将に追加ダメージ+35"
+  },
+  {
+   "slot": "B",
+   "skill": "国潰し",
+   "rank": "D",
+   "afterSkill": "弓隊円陣",
+   "afterRank": "D",
+   "target": "器",
+   "rate": "12%",
+   "effectShort": "破壊 35%上昇",
+   "afterTarget": "弓",
+   "afterRate": "40%",
+   "afterEffectShort": "防御 20%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "国貫き",
+   "rank": "E",
+   "afterSkill": "兵器運用術",
+   "afterRank": "E",
+   "target": "器",
+   "rate": "25%",
+   "effectShort": "破壊 (コストx6.5) %上昇",
+   "afterTarget": "砲器",
+   "afterRate": "100%",
+   "afterEffectShort": "速度 25%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "聖洗の祝砲",
+   "rank": "A",
+   "afterSkill": "聖洗の祝砲",
+   "afterRank": "A",
+   "target": "器",
+   "rate": "39%",
+   "effectShort": "破壊 26%上昇/銅銭獲得率：3%"
+  },
+  {
+   "slot": "S2",
+   "skill": "武功浄財",
+   "rank": "A",
+   "afterSkill": "武功浄財",
+   "afterRank": "A",
+   "target": null,
+   "rate": "20%",
+   "effectShort": "対象 合流 銅銭獲得率：2.5%"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/2741 と skills/聖洗の祝砲)およびixawiki(BushoCard/2741内藤如安)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

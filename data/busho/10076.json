@@ -72,7 +72,8 @@
    "afterRank": "SSS",
    "rate": "42%",
    "target": "全",
-   "effectShort": "部隊総コスト依存の攻撃上昇(計算エンジン未対応)"
+   "effectShort": "部隊総コスト依存の攻撃上昇(計算エンジン未対応)",
+   "afterEffectShort": "攻撃 25.04%上昇(部隊総コスト依存、計算エンジン未対応、コスト計算+0.5)"
   },
   {
    "slot": "B",
@@ -93,7 +94,8 @@
    "afterRank": "SSS",
    "rate": "43%",
    "target": "全 飛翔13",
-   "effectShort": "防御 9.4%×防御参加武将数(280人)=2632.0%"
+   "effectShort": "防御 9.4%×防御参加武将数(280人)=2632.0%",
+   "afterEffectShort": "防御 9.4%×防御参加武将数(280人)=2632.0%"
   },
   {
    "slot": "S1",
@@ -103,7 +105,8 @@
    "afterRank": "SSS",
    "rate": "60%",
    "target": "全",
-   "effectShort": "防御50%上昇+破壊を係数×人数で上昇"
+   "effectShort": "防御50%上昇+破壊を係数×人数で上昇",
+   "afterEffectShort": "防御50%上昇+破壊 10%×防御参加武将数(280人)=2800.0%"
   },
   {
    "slot": "S2",
@@ -113,7 +116,8 @@
    "afterRank": "S",
    "rate": "1%",
    "target": "全",
-   "effectShort": "防御を係数×人数で上昇"
+   "effectShort": "防御を係数×人数で上昇",
+   "afterEffectShort": "防御 11%×防御参加武将数(280人)=3080.0%"
   }
  ],
  "notes": [

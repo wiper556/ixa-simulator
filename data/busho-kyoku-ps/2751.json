@@ -1,0 +1,103 @@
+{
+ "name": "里見義堯",
+ "no": "2751",
+ "ch": "未確認",
+ "cost": 3.0,
+ "troop": "全攻",
+ "sub": "",
+ "effect": "攻撃 30%上昇",
+ "furigana": "さとみよしたか",
+ "illustrator": "isuZU",
+ "imageFull": "assets/img/characters/no2751_full.png",
+ "imageChar": "assets/img/characters/no2751_char.png",
+ "atkBase": 980,
+ "atkGrowth": 27.0,
+ "defBase": 910,
+ "defGrowth": 23.0,
+ "tacticsBase": 490.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3140,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "万年君",
+ "skillDetail": "A/LV10 確率 100% 攻撃 30%上昇/対象:全\n①攻撃が30%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 攻撃 30%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "弓撃の真髄",
+   "rank": "E",
+   "afterSkill": "三矢の教え",
+   "afterRank": "D",
+   "target": "弓",
+   "rate": "20%",
+   "effectShort": "攻撃 15%上昇",
+   "afterTarget": "槍弓",
+   "afterRate": "20%",
+   "afterEffectShort": "攻撃 20%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "刹那の猛勇",
+   "rank": "D",
+   "afterSkill": "義兵進軍",
+   "afterRank": "C",
+   "target": "全",
+   "rate": "30%",
+   "effectShort": "攻撃 10%上昇",
+   "afterTarget": "槍弓馬砲",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 7%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "屈指の勇将",
+   "rank": "D",
+   "afterSkill": "屈指の勇将",
+   "afterRank": "D",
+   "target": "全",
+   "rate": "37%",
+   "effectShort": "攻撃 22%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "質実剛健",
+   "rank": "B",
+   "afterSkill": "質実剛健",
+   "afterRank": "B",
+   "target": "弓馬砲",
+   "rate": "27%",
+   "effectShort": "攻撃防御 ((1+武将ランク)x武将コストx1.9) %上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "海王ノ碇戟",
+   "rank": "S",
+   "afterSkill": "覇王征軍",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "17%",
+   "effectShort": "攻撃 67%上昇",
+   "afterTarget": "全",
+   "afterRate": "42%",
+   "afterEffectShort": "攻撃 25.39%上昇(部隊総コストで変動、TRなし)"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/2751 と skills/万年君)およびixawiki(BushoCard/2751里見義堯)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

@@ -39,6 +39,9 @@
    "rank": "S",
    "afterSkill": "朧雲ノ閃撃",
    "afterRank": "SSS",
+   "target": "槍弓馬器",
+   "rate": "100%",
+   "effectShort": "攻撃 120%上昇+速度 70%上昇",
    "afterTarget": "全",
    "afterRate": "100%",
    "afterEffectShort": "攻撃170%上昇+速度240%上昇"
@@ -61,14 +64,22 @@
    "skill": "虎軍先兵",
    "rank": "A",
    "afterSkill": "虎軍先兵",
-   "afterRank": "A"
+   "afterRank": "A",
+   "target": "槍・馬・砲・器",
+   "rate": "50%",
+   "effectShort": "攻撃 440%上昇(自部隊同時攻撃の名声値-20)",
+   "afterEffectShort": "攻撃 440%上昇(自部隊同時攻撃の名声値-20)"
   },
   {
    "slot": "S1",
    "skill": "虎軍先兵",
    "rank": "A",
    "afterSkill": "虎軍先兵",
-   "afterRank": "A"
+   "afterRank": "A",
+   "target": "槍・馬・砲・器",
+   "rate": "50%",
+   "effectShort": "攻撃 440%上昇(自部隊同時攻撃の名声値-20)",
+   "afterEffectShort": "攻撃 440%上昇(自部隊同時攻撃の名声値-20)"
   },
   {
    "slot": "S2",
@@ -78,7 +89,10 @@
    "afterRank": "A",
    "target": "全",
    "rate": "65%",
-   "effectShort": "攻撃465%上昇+防御465%上昇(模倣不可)"
+   "effectShort": "攻撃465%上昇+防御465%上昇(模倣不可)",
+   "afterEffectShort": "攻撃 465%上昇+防御 465%上昇(模倣不可)",
+   "afterTarget": "全",
+   "afterRate": "65%"
   }
  ],
  "notes": [

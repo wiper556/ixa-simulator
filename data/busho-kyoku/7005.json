@@ -63,7 +63,11 @@
    "skill": "望国術策",
    "rank": "A",
    "afterSkill": "望国術策",
-   "afterRank": "A"
+   "afterRank": "A",
+   "target": "砲・器",
+   "rate": "37%",
+   "effectShort": "防御 225%上昇(所領防御陣形の第壱〜第参列目配置時2倍)",
+   "afterEffectShort": "防御 225%上昇(所領防御陣形の第壱〜第参列目配置時2倍)"
   },
   {
    "slot": "B",
@@ -71,6 +75,9 @@
    "rank": "D",
    "afterSkill": "総構え",
    "afterRank": "B",
+   "target": "全",
+   "rate": "35%",
+   "effectShort": "防御 20%上昇+防御時のみ自軍の兵士被害数2%減少(重複・模倣不可)",
    "afterTarget": "全",
    "afterRate": "35%",
    "afterEffectShort": "防御30%上昇"
@@ -83,7 +90,8 @@
    "afterRank": "A",
    "target": "全 卓越",
    "rate": "100%",
-   "effectShort": "攻撃340%上昇+防御340%上昇+部隊内卓越追加確率+20%(模倣不可・特殊効果は自部隊内では重複不可)"
+   "effectShort": "攻撃340%上昇+防御340%上昇+部隊内卓越追加確率+20%(模倣不可・特殊効果は自部隊内では重複不可)",
+   "afterEffectShort": "攻撃 340%上昇+防御 340%上昇(部隊内卓越追加確率+20%)"
   },
   {
    "slot": "S1",
@@ -106,7 +114,10 @@
    "afterRank": "A",
    "target": "全",
    "rate": "65%",
-   "effectShort": "攻撃465%上昇+防御465%上昇(模倣不可)"
+   "effectShort": "攻撃465%上昇+防御465%上昇(模倣不可)",
+   "afterEffectShort": "攻撃 465%上昇+防御 465%上昇(模倣不可)",
+   "afterTarget": "全",
+   "afterRate": "65%"
   }
  ],
  "notes": [

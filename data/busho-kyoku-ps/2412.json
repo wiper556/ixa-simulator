@@ -71,7 +71,7 @@
    "afterRank": "B",
    "target": null,
    "rate": null,
-   "effectShort": null,
+   "effectShort": "攻撃4%上昇+速度45%上昇",
    "afterTarget": "砲器",
    "afterRate": "35%",
    "afterEffectShort": "防御30%上昇"
@@ -84,7 +84,7 @@
    "afterRank": "B",
    "target": null,
    "rate": null,
-   "effectShort": null,
+   "effectShort": "攻撃0%上昇(名声値で効果が変化)",
    "afterTarget": "部隊長",
    "afterRate": "53%",
    "afterEffectShort": "部隊長の初期スキルを模倣(戦闘スキルのみ、TRなし)"
@@ -97,7 +97,8 @@
    "afterRank": "B",
    "target": "全",
    "rate": "20%",
-   "effectShort": "銅銭獲得率2.5%(対人撃破兵数に応じて自軍全員が銅銭獲得・重複発動上限数4)"
+   "effectShort": "銅銭獲得率2.5%(対人撃破兵数に応じて自軍全員が銅銭獲得・重複発動上限数4)",
+   "afterEffectShort": "銅銭獲得率2.5%(対人撃破兵数に応じて自軍全員が銅銭獲得・重複発動上限数4)"
   },
   {
    "slot": "S1",

@@ -39,6 +39,9 @@
    "rank": "A",
    "afterSkill": "紅蓮ノ刹",
    "afterRank": "S",
+   "target": "槍馬砲 飛翔5",
+   "rate": "42%",
+   "effectShort": "攻撃 30%上昇(部隊の総コストで変動)",
    "afterTarget": "槍砲器",
    "afterRate": "100%",
    "afterEffectShort": "攻撃82%上昇(卓越・追加確率40%で攻撃効果が2.5倍)"
@@ -61,14 +64,22 @@
    "skill": "西国将軍",
    "rank": "A",
    "afterSkill": "西国将軍",
-   "afterRank": "A"
+   "afterRank": "A",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "攻撃 430%上昇+破壊 70%上昇(資源獲得率15%)",
+   "afterEffectShort": "攻撃 430%上昇+破壊 70%上昇(資源獲得率15%)"
   },
   {
    "slot": "S1",
    "skill": "西国将軍",
    "rank": "A",
    "afterSkill": "西国将軍",
-   "afterRank": "A"
+   "afterRank": "A",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "攻撃 430%上昇+破壊 70%上昇(資源獲得率15%)",
+   "afterEffectShort": "攻撃 430%上昇+破壊 70%上昇(資源獲得率15%)"
   },
   {
    "slot": "S2",
@@ -78,7 +89,10 @@
    "afterRank": "A",
    "target": "全",
    "rate": "65%",
-   "effectShort": "攻撃465%上昇+防御465%上昇(模倣不可)"
+   "effectShort": "攻撃465%上昇+防御465%上昇(模倣不可)",
+   "afterEffectShort": "攻撃 465%上昇+防御 465%上昇(模倣不可)",
+   "afterTarget": "全",
+   "afterRate": "65%"
   }
  ],
  "notes": [

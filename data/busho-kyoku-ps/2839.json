@@ -66,7 +66,8 @@
    "afterRank": "SS",
    "target": "全",
    "rate": "60%",
-   "effectShort": "攻撃 810%上昇+防御810%上昇(コスト-1)"
+   "effectShort": "攻撃 810%上昇+防御810%上昇(コスト-1)",
+   "afterEffectShort": "攻撃 810%上昇+防御810%上昇(コスト-1)"
   },
   {
    "slot": "B",
@@ -87,9 +88,9 @@
    "rank": "S",
    "afterSkill": "神羅聖域",
    "afterRank": "SS",
-   "target": null,
-   "rate": null,
-   "effectShort": null,
+   "target": "部隊長",
+   "rate": "50%",
+   "effectShort": "所属部隊の部隊長が持つ模倣可能な初期スキルを通常攻撃/防御効果を1.15倍して模倣する",
    "afterTarget": "全 覇道",
    "afterRate": "40%",
    "afterEffectShort": "攻撃 900%上昇+防御900%上昇+破壊150%上昇"
@@ -102,7 +103,8 @@
    "afterRank": "SS",
    "target": "全 覇道",
    "rate": "40%",
-   "effectShort": "攻撃 900%上昇+防御900%上昇+破壊150%上昇"
+   "effectShort": "攻撃 900%上昇+防御900%上昇+破壊150%上昇",
+   "afterEffectShort": "攻撃 900%上昇+防御900%上昇+破壊150%上昇"
   },
   {
    "slot": "S2",
@@ -112,7 +114,8 @@
    "afterRank": "SS",
    "target": "部隊長",
    "rate": "55%",
-   "effectShort": "模倣倍率1.15倍+速度200%上昇"
+   "effectShort": "模倣倍率1.15倍+速度200%上昇",
+   "afterEffectShort": "所属部隊の部隊長が持つ初期スキルを通常攻撃/防御効果1.15倍にして模倣する+速度200%上昇(確率100%)"
   }
  ],
  "notes": [

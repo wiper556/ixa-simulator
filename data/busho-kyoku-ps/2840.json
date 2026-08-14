@@ -79,7 +79,8 @@
    "afterRank": "SS",
    "target": "自身",
    "rate": "70%",
-   "effectShort": "初期スキル(戦闘スキルのみ)を模倣(1倍)"
+   "effectShort": "初期スキル(戦闘スキルのみ)を模倣(1倍)",
+   "afterEffectShort": "自身が持つ初期スキルを模倣する(戦闘スキルのみ)"
   },
   {
    "slot": "C",
@@ -87,9 +88,9 @@
    "rank": "S",
    "afterSkill": "舞蝶朧月",
    "afterRank": "S",
-   "target": null,
-   "rate": null,
-   "effectShort": null,
+   "target": "部隊長 兵站",
+   "rate": "60%",
+   "effectShort": "所属部隊の部隊長が持つ模倣可能な初期スキルを通常攻撃/防御効果を1.15倍して模倣する",
    "afterTarget": "部隊長",
    "afterRate": "50%",
    "afterEffectShort": "卓越追加確率20%・1.25倍"

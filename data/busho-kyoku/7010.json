@@ -39,6 +39,9 @@
    "rank": "A",
    "afterSkill": "六字の采配",
    "afterRank": "B",
+   "target": "馬器騎",
+   "rate": "100%",
+   "effectShort": "攻撃 155%上昇(確率55%)+速度 65%上昇(攻撃参加した自軍全部隊の帰還速度3倍・帰還効果は模倣・重複不可)",
    "afterTarget": "砲",
    "afterRate": "30%",
    "afterEffectShort": "攻撃25%上昇(攻撃時のみ自部隊の兵士被害10%減少)"
@@ -49,6 +52,9 @@
    "rank": "A",
    "afterSkill": "鼓腹撃壌",
    "afterRank": "A",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "攻撃 70%上昇(自部隊同時攻撃の名声値-20・重複不可)",
    "afterTarget": "槍弓馬",
    "afterRate": "33%",
    "afterEffectShort": "攻撃89%上昇"
@@ -58,14 +64,22 @@
    "skill": "鉄国",
    "rank": "A",
    "afterSkill": "鉄国",
-   "afterRank": "A"
+   "afterRank": "A",
+   "target": "弓・砲・器",
+   "rate": "40%",
+   "effectShort": "攻撃 440%上昇+防御 440%上昇+破壊 110%上昇",
+   "afterEffectShort": "攻撃 440%上昇+防御 440%上昇+破壊 110%上昇"
   },
   {
    "slot": "S1",
    "skill": "鉄国",
    "rank": "A",
    "afterSkill": "鉄国",
-   "afterRank": "A"
+   "afterRank": "A",
+   "target": "弓・砲・器",
+   "rate": "40%",
+   "effectShort": "攻撃 440%上昇+防御 440%上昇+破壊 110%上昇",
+   "afterEffectShort": "攻撃 440%上昇+防御 440%上昇+破壊 110%上昇"
   },
   {
    "slot": "S2",
@@ -75,7 +89,10 @@
    "afterRank": "A",
    "target": "全",
    "rate": "65%",
-   "effectShort": "攻撃465%上昇+防御465%上昇(模倣不可)"
+   "effectShort": "攻撃465%上昇+防御465%上昇(模倣不可)",
+   "afterEffectShort": "攻撃 465%上昇+防御 465%上昇(模倣不可)",
+   "afterTarget": "全",
+   "afterRate": "65%"
   }
  ],
  "notes": [

@@ -98,7 +98,8 @@
    "afterRank": "SS",
    "target": "全",
    "rate": "50%",
-   "effectShort": "部隊総コストに応じて防御効果が変化する(LV10基準30.02%上昇)"
+   "effectShort": "部隊総コストに応じて防御効果が変化する(LV10基準30.02%上昇)",
+   "afterEffectShort": "防御 30.02%上昇(部隊総コストで変動)"
   },
   {
    "slot": "S1",
@@ -108,7 +109,8 @@
    "afterRank": "SS",
    "target": "全",
    "rate": "60%",
-   "effectShort": "防御(部隊総コスト依存)%上昇(C25で423.75%)"
+   "effectShort": "防御(部隊総コスト依存)%上昇(C25で423.75%)",
+   "afterEffectShort": "防御 60.04%上昇(部隊総コストで変動)"
   },
   {
    "slot": "S2",
@@ -118,7 +120,10 @@
    "afterRank": "A",
    "target": "全",
    "rate": "65%",
-   "effectShort": "攻撃465%上昇+防御465%上昇(模倣不可)"
+   "effectShort": "攻撃465%上昇+防御465%上昇(模倣不可)",
+   "afterEffectShort": "攻撃 465%上昇+防御 465%上昇(模倣不可)",
+   "afterTarget": "全",
+   "afterRate": "65%"
   }
  ],
  "notes": [

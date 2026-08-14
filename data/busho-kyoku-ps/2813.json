@@ -3,9 +3,9 @@
  "no": "2813",
  "ch": "未確認",
  "cost": 4.0,
- "troop": null,
+ "troop": "全攻",
  "sub": "",
- "effect": null,
+ "effect": "攻撃(150×合流攻撃時に自軍の同じ同盟に所属する「盟主」「盟主補佐」「軍師」の人数)%上昇",
  "furigana": "うえすぎけんしん",
  "illustrator": "鏑木康隆",
  "imageFull": "assets/img/characters/no2813_full.png",
@@ -24,12 +24,12 @@
   "ki": "A"
  },
  "initialSkill": "麗将車懸",
- "skillDetail": null,
+ "skillDetail": "S/LV10 確率 35% 攻撃(150×合流攻撃時に自軍の同じ同盟に所属する「盟主」「盟主補佐」「軍師」の人数)%上昇/対象:全　飛翔9\n①攻撃が(150×合流攻撃時に自軍の同じ同盟に所属する「盟主」「盟主補佐」「軍師」の人数)%上昇する\n②「軍師」が使用すると発動率が2倍になる",
  "trTable": [
   {
    "level": "LV10",
    "points": "-",
-   "effect": "全 飛翔9　確率 35%"
+   "effect": "全　飛翔9　確率 35% / 攻撃(150×合流攻撃時に自軍の同じ同盟に所属する「盟主」「盟主補佐」「軍師」の人数)%上昇(「軍師」使用時は発動率2倍)"
   }
  ],
  "synthesisTable": [
@@ -65,9 +65,9 @@
    "rank": "S",
    "afterSkill": "麗将車懸",
    "afterRank": "S",
-   "target": null,
-   "rate": null,
-   "effectShort": null
+   "target": "全 飛翔9",
+   "rate": "35%",
+   "effectShort": "攻撃(150×合流攻撃時に自軍の同じ同盟に所属する「盟主」「盟主補佐」「軍師」の人数)%上昇(「軍師」使用時は発動率2倍)"
   },
   {
    "slot": "S1",
@@ -75,9 +75,9 @@
    "rank": "S",
    "afterSkill": "麗将車懸",
    "afterRank": "S",
-   "target": null,
-   "rate": null,
-   "effectShort": null
+   "target": "全 飛翔9",
+   "rate": "35%",
+   "effectShort": "攻撃(150×合流攻撃時に自軍の同じ同盟に所属する「盟主」「盟主補佐」「軍師」の人数)%上昇(「軍師」使用時は発動率2倍)"
   },
   {
    "slot": "S2",

@@ -71,7 +71,7 @@
    "afterRank": "A",
    "target": null,
    "rate": null,
-   "effectShort": null,
+   "effectShort": "防御40%上昇(兵士被害増加・武将追加ダメージのスキル効果を全て無効化)",
    "afterTarget": "槍馬",
    "afterRate": "30%",
    "afterEffectShort": "攻撃7%上昇(防御7%上昇・戦闘に参加した自軍全部隊に効果)"
@@ -84,7 +84,8 @@
    "afterRank": "B",
    "target": null,
    "rate": null,
-   "effectShort": null
+   "effectShort": "防御34%上昇(自部隊の武将ダメージ軽減6%・重複発動上限数4)",
+   "afterEffectShort": "防御34%上昇(自部隊の武将ダメージ軽減6%・重複発動上限数4)"
   },
   {
    "slot": "C",
@@ -94,7 +95,8 @@
    "afterRank": "B",
    "target": null,
    "rate": null,
-   "effectShort": null
+   "effectShort": "防御20%上昇(所属拠点の残耐久で効果変化)",
+   "afterEffectShort": "防御 20%上昇"
   },
   {
    "slot": "S1",
@@ -104,7 +106,8 @@
    "afterRank": "A",
    "target": null,
    "rate": null,
-   "effectShort": null
+   "effectShort": "防御(敵部隊移動速度÷1)%上昇(最も部隊移動速度の大きい敵部隊の数値を参照)",
+   "afterEffectShort": "防御(敵部隊移動速度÷1)%上昇(最も部隊移動速度の大きい敵部隊の数値を参照)"
   },
   {
    "slot": "S2",
@@ -114,7 +117,7 @@
    "afterRank": "SS",
    "target": null,
    "rate": null,
-   "effectShort": null,
+   "effectShort": "攻撃87%上昇+防御87%上昇",
    "afterTarget": "全",
    "afterRate": "35%",
    "afterEffectShort": "攻撃40%上昇+防御40%上昇+所属部隊内のレアリティS以上のスキル個数×20%を攻防効果に加算"

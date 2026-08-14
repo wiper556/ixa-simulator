@@ -1,0 +1,106 @@
+{
+ "name": "小西行長",
+ "no": "2747",
+ "ch": "未確認",
+ "cost": 3.5,
+ "troop": "全",
+ "sub": "",
+ "effect": "部隊内全武将が持つ全スキルに「器」対象を追加する(兵科対象スキル限定・模倣不可)",
+ "furigana": "こにしゆきなが",
+ "illustrator": "戸橋ことみ",
+ "imageFull": "assets/img/characters/no2747_full.png",
+ "imageChar": "assets/img/characters/no2747_char.png",
+ "atkBase": 980,
+ "atkGrowth": 27.0,
+ "defBase": 920,
+ "defGrowth": 24.0,
+ "tacticsBase": 510.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3400,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "B",
+  "ki": "S"
+ },
+ "initialSkill": "武装商船",
+ "skillDetail": "A/LV10 確率 100% 部隊内全武将が持つ全スキルに「器」対象を追加する(兵科対象スキル限定・模倣不可)/対象:全\n①部隊内全武将が持つ全スキルに「器」対象を追加する(兵科対象スキル限定・模倣不可)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 部隊内全武将が持つ全スキルに「器」対象を追加する(兵科対象スキル限定・模倣不可)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "兵器運用術",
+   "rank": "E",
+   "afterSkill": "兵器突撃",
+   "afterRank": "F",
+   "target": "砲器",
+   "rate": "100%",
+   "effectShort": "速度 25%上昇",
+   "afterTarget": "器",
+   "afterRate": "15%",
+   "afterEffectShort": "攻撃 20%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "鉄甲水軍",
+   "rank": "B",
+   "afterSkill": "釣り野伏 鬼",
+   "afterRank": "B",
+   "target": "砲",
+   "rate": "26%",
+   "effectShort": "攻撃 25%上昇",
+   "afterTarget": "砲",
+   "afterRate": "20%",
+   "afterEffectShort": "攻撃 30%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "武装商船",
+   "rank": "A",
+   "afterSkill": "鉄砲商人",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "部隊内全武将が持つ全スキルに「器」対象を追加する(兵科対象スキル限定・模倣不可)",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "部隊内全武将が持つ全スキルに「砲」対象を追加する(兵科対象スキル限定・模倣不可)"
+  },
+  {
+   "slot": "S1",
+   "skill": "鉄砲商人",
+   "rank": "A",
+   "afterSkill": "遁世影武者",
+   "afterRank": "B",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "部隊内全武将が持つ全スキルに「砲」対象を追加する(兵科対象スキル限定・模倣不可)",
+   "afterTarget": "部隊長",
+   "afterRate": "50%",
+   "afterEffectShort": "所属部隊の部隊長が持つ初期スキルを模倣する(戦闘スキルのみ)"
+  },
+  {
+   "slot": "S2",
+   "skill": "村上舟戦要法",
+   "rank": "A",
+   "afterSkill": "村上舟戦要法",
+   "afterRank": "A",
+   "target": "槍弓器",
+   "rate": "44%",
+   "effectShort": "攻撃 (1.2x防御参加武将数)%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/2747 と skills/武装商船)およびixawiki(BushoCard/2747小西行長)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

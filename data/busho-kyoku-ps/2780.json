@@ -1,0 +1,103 @@
+{
+ "name": "小堀遠州",
+ "no": "2780",
+ "ch": "未確認",
+ "cost": 2.0,
+ "troop": null,
+ "sub": "",
+ "effect": null,
+ "furigana": "こぼりえんしゅう",
+ "illustrator": "鹿角",
+ "imageFull": "assets/img/characters/no2780_full.png",
+ "imageChar": "assets/img/characters/no2780_char.png",
+ "atkBase": 900,
+ "atkGrowth": 24.0,
+ "defBase": 900,
+ "defGrowth": 24.0,
+ "tacticsBase": 510.0,
+ "tacticsGrowth": 3.0,
+ "lv0Troops": 2500,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "B",
+  "uma": "B",
+  "ki": "A"
+ },
+ "initialSkill": "遠州流",
+ "skillDetail": null,
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 -% / 資源保有可能量：150000増加"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "風狂幻術",
+   "rank": "B",
+   "afterSkill": "風狂幻術",
+   "afterRank": "B",
+   "target": "部隊長",
+   "rate": "53%",
+   "effectShort": "効果 部隊長の初期スキルを模倣(戦闘スキルのみ、TRなし)"
+  },
+  {
+   "slot": "B",
+   "skill": "戦陣 破軍",
+   "rank": "A",
+   "afterSkill": "天穿神滅",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "44%",
+   "effectShort": "攻撃 66%上昇+防御 66%上昇",
+   "afterTarget": "砲器",
+   "afterRate": "50%",
+   "afterEffectShort": "攻撃((ランク+1)xコストx3) %上昇 部隊ランクとコストで効果が変化"
+  },
+  {
+   "slot": "C",
+   "skill": "保食",
+   "rank": "C",
+   "afterSkill": "千成瓢箪",
+   "afterRank": "B",
+   "target": "全",
+   "rate": "40%",
+   "effectShort": "資源獲得率：5%",
+   "afterTarget": "槍馬砲",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 16%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "覚悟十躰",
+   "rank": "A",
+   "afterSkill": "覚悟十躰",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "30%",
+   "effectShort": "資源獲得率：15%"
+  },
+  {
+   "slot": "S2",
+   "skill": "戦陣 無双",
+   "rank": "A",
+   "afterSkill": "無双英傑",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "50%",
+   "effectShort": "攻撃 67%上昇",
+   "afterTarget": "全",
+   "afterRate": "50%",
+   "afterEffectShort": "攻撃99.9%上昇 防御99.9%上昇 部隊消費コストを0.5低下 (特殊効果は模倣不可)"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/2780 と skills/遠州流)およびixawiki(BushoCard/2780小堀遠州)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

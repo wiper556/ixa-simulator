@@ -1,0 +1,100 @@
+{
+ "name": "足利義晴",
+ "no": "2767",
+ "ch": "未確認",
+ "cost": 3.5,
+ "troop": "槍器鉄防",
+ "sub": "",
+ "effect": "防御 70%上昇",
+ "furigana": "あしかがよしはる",
+ "illustrator": "BISAI",
+ "imageFull": "assets/img/characters/no2767_full.png",
+ "imageChar": "assets/img/characters/no2767_char.png",
+ "atkBase": 1000,
+ "atkGrowth": 24.0,
+ "defBase": 1020,
+ "defGrowth": 30.0,
+ "tacticsBase": 510.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3520,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "江州大樹",
+ "skillDetail": "A/LV10 確率 35% 防御 70%上昇/対象:槍器鉄\n①防御が70%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍器鉄　確率 35% / 防御 70%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "槍隊堅守",
+   "rank": "F",
+   "afterSkill": "槍隊襲撃",
+   "afterRank": "F",
+   "target": "槍",
+   "rate": "20%",
+   "effectShort": "防御 10%上昇",
+   "afterTarget": "槍",
+   "afterRate": "20%",
+   "afterEffectShort": "攻撃 10%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "蛟竜ノ塞",
+   "rank": "D",
+   "afterSkill": "懐刀",
+   "afterRank": "D",
+   "target": "砲器",
+   "rate": "36%",
+   "effectShort": "防御 34%上昇",
+   "afterTarget": "馬砲器",
+   "afterRate": "32%",
+   "afterEffectShort": "防御 35%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "閃光破陣",
+   "rank": "B",
+   "afterSkill": "閃光破陣",
+   "afterRank": "B",
+   "target": "槍馬器",
+   "rate": "35%",
+   "effectShort": "防御 2.7%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "江州大樹",
+   "rank": "A",
+   "afterSkill": "江州大樹",
+   "afterRank": "A",
+   "target": "槍器鉄",
+   "rate": "35%",
+   "effectShort": "防御 70%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "川並衆",
+   "rank": "B",
+   "afterSkill": "川並衆",
+   "afterRank": "B",
+   "target": "槍弓砲器",
+   "rate": "44%",
+   "effectShort": "防御 60%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/2767 と skills/江州大樹)およびixawiki(BushoCard/2767足利義晴)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

@@ -63,14 +63,22 @@
    "skill": "望国術策",
    "rank": "A",
    "afterSkill": "望国術策",
-   "afterRank": "A"
+   "afterRank": "A",
+   "target": "砲・器",
+   "rate": "37%",
+   "effectShort": "防御 225%上昇(所領防御陣形の第壱〜第参列目配置時2倍)",
+   "afterEffectShort": "防御 225%上昇(所領防御陣形の第壱〜第参列目配置時2倍)"
   },
   {
    "slot": "B",
    "skill": "悉皆執権",
    "rank": "A",
    "afterSkill": "悉皆執権",
-   "afterRank": "A"
+   "afterRank": "A",
+   "target": "槍・砲・器",
+   "rate": "48%",
+   "effectShort": "防御 410%+2.6%×敵軍部隊数",
+   "afterEffectShort": "防御 410%+2.6%×敵軍部隊数"
   },
   {
    "slot": "C",
@@ -78,6 +86,9 @@
    "rank": "A",
    "afterSkill": "籠城の妙技",
    "afterRank": "A",
+   "target": "槍弓砲",
+   "rate": "100%",
+   "effectShort": "防御 (所持名声×2%・最大400%)%上昇(防御戦闘で減少したHP÷2の名声を消費・複数発動時は各部隊につき消費量が最も大きい一件のみ消費)",
    "afterTarget": "全",
    "afterRate": "100%",
    "afterEffectShort": "防御50%上昇(卓越・追加確率15%で防御効果が3倍)"
@@ -87,7 +98,11 @@
    "skill": "謀虎因子",
    "rank": "A",
    "afterSkill": "謀虎因子",
-   "afterRank": "A"
+   "afterRank": "A",
+   "target": "槍・砲・器",
+   "rate": "48%",
+   "effectShort": "防御 160%上昇(格付「戦果」上位の敵城主がいると5倍)",
+   "afterEffectShort": "防御 160%上昇(格付「戦果」上位の敵城主がいると5倍)"
   },
   {
    "slot": "S2",
@@ -97,7 +112,10 @@
    "afterRank": "A",
    "target": "全",
    "rate": "65%",
-   "effectShort": "攻撃465%上昇+防御465%上昇(模倣不可)"
+   "effectShort": "攻撃465%上昇+防御465%上昇(模倣不可)",
+   "afterEffectShort": "攻撃 465%上昇+防御 465%上昇(模倣不可)",
+   "afterTarget": "全",
+   "afterRate": "65%"
   }
  ],
  "notes": [

@@ -61,7 +61,8 @@
    "afterRank": "A",
    "target": "槍・砲・器",
    "rate": "65%",
-   "effectShort": "攻撃420%上昇+防御参加武将数依存5.5%"
+   "effectShort": "攻撃420%上昇+防御参加武将数依存5.5%",
+   "afterEffectShort": "攻撃420%上昇+防御参加武将数依存5.5%"
   },
   {
    "slot": "C",
@@ -71,7 +72,8 @@
    "afterRank": "A",
    "target": "槍・砲・器",
    "rate": "65%",
-   "effectShort": "攻撃420%上昇+防御参加武将数依存5.5%"
+   "effectShort": "攻撃420%上昇+防御参加武将数依存5.5%",
+   "afterEffectShort": "攻撃420%上昇+防御参加武将数依存5.5%"
   },
   {
    "slot": "S1",
@@ -81,7 +83,8 @@
    "afterRank": "A",
    "target": "槍・砲・器",
    "rate": "65%",
-   "effectShort": "攻撃420%上昇+防御参加武将数依存5.5%"
+   "effectShort": "攻撃420%上昇+防御参加武将数依存5.5%",
+   "afterEffectShort": "攻撃420%上昇+防御参加武将数依存5.5%"
   },
   {
    "slot": "S2",
@@ -91,7 +94,10 @@
    "afterRank": "A",
    "target": "全",
    "rate": "65%",
-   "effectShort": "攻撃465%上昇+防御465%上昇(模倣不可)"
+   "effectShort": "攻撃465%上昇+防御465%上昇(模倣不可)",
+   "afterEffectShort": "攻撃 465%上昇+防御 465%上昇(模倣不可)",
+   "afterTarget": "全",
+   "afterRate": "65%"
   }
  ],
  "notes": [

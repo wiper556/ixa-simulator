@@ -71,7 +71,7 @@
    "afterRank": "E",
    "target": null,
    "rate": null,
-   "effectShort": null,
+   "effectShort": "攻撃20%上昇",
    "afterTarget": "全",
    "afterRate": "100%",
    "afterEffectShort": "速度20%上昇"
@@ -84,7 +84,7 @@
    "afterRank": "D",
    "target": null,
    "rate": null,
-   "effectShort": null,
+   "effectShort": "攻撃36%上昇(2部隊以下の攻撃で効果1.5倍)",
    "afterTarget": "槍弓器",
    "afterRate": "32%",
    "afterEffectShort": "攻撃34%上昇(破壊17%上昇)"
@@ -97,7 +97,8 @@
    "afterRank": "B",
    "target": "槍・弓・器",
    "rate": "7%",
-   "effectShort": "攻撃54%上昇(相手軍の武将数20以上で必ず発動)"
+   "effectShort": "攻撃54%上昇(相手軍の武将数20以上で必ず発動)",
+   "afterEffectShort": "攻撃54%上昇(相手軍の武将数20以上で必ず発動)"
   },
   {
    "slot": "S1",
@@ -107,7 +108,8 @@
    "afterRank": "B",
    "target": "槍・弓・器",
    "rate": "15%",
-   "effectShort": "攻撃18%上昇(部隊長なら発動率と効果4倍・模倣不可)"
+   "effectShort": "攻撃18%上昇(部隊長なら発動率と効果4倍・模倣不可)",
+   "afterEffectShort": "攻撃18%上昇(部隊長なら発動率と効果4倍・模倣不可)"
   },
   {
    "slot": "S2",

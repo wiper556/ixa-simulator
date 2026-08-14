@@ -66,7 +66,8 @@
    "afterRank": "S",
    "afterTarget": "弓馬器",
    "afterRate": "100%",
-   "afterEffectShort": "攻撃64%上昇 防御64%上昇 速度50%上昇"
+   "afterEffectShort": "攻撃64%上昇 防御64%上昇 速度50%上昇",
+   "effectShort": "攻撃 69%上昇(自合流時に他の自部隊にも加算・模倣不可・部隊内重複不可)"
   },
   {
    "slot": "B",
@@ -76,7 +77,8 @@
    "afterRank": "SS",
    "target": "全 覇道",
    "rate": "40%",
-   "effectShort": "攻撃900%上昇+防御900%上昇+破壊150%上昇+所属部隊武将のスキルを無効化・発動率低下から保護"
+   "effectShort": "攻撃900%上昇+防御900%上昇+破壊150%上昇+所属部隊武将のスキルを無効化・発動率低下から保護",
+   "afterEffectShort": "攻撃 900%上昇+防御900%上昇+破壊150%上昇"
   },
   {
    "slot": "C",
@@ -86,14 +88,17 @@
    "afterRank": "SS",
    "target": "全 飛翔15",
    "rate": "100%",
-   "effectShort": "攻撃 740%上昇+速度200%上昇(TR5で攻撃1660%・速度300%)"
+   "effectShort": "攻撃 740%上昇+速度200%上昇(TR5で攻撃1660%・速度300%)",
+   "afterEffectShort": "攻撃 740%上昇+速度 200%上昇"
   },
   {
    "slot": "S1",
    "skill": "白銀双鶴",
    "rank": "S",
    "afterSkill": "白銀双鶴",
-   "afterRank": "S"
+   "afterRank": "S",
+   "effectShort": "攻撃 730%上昇+速度 200%上昇(攻撃戦闘では飛翔50とみなす)",
+   "afterEffectShort": "攻撃 730%上昇+速度 200%上昇(攻撃戦闘では飛翔50とみなす)"
   },
   {
    "slot": "S2",

@@ -64,7 +64,8 @@
    "afterRank": "A",
    "target": "全 卓越",
    "rate": "100%",
-   "effectShort": "攻撃340%上昇+防御340%上昇(卓越:追加確率100%で2倍・模倣不可)"
+   "effectShort": "攻撃340%上昇+防御340%上昇(卓越:追加確率100%で2倍・模倣不可)",
+   "afterEffectShort": "攻撃340%上昇+防御340%上昇(卓越:追加確率100%で2倍・模倣不可)"
   },
   {
    "slot": "B",
@@ -72,9 +73,10 @@
    "rank": "S",
    "afterSkill": "筋骨隆々",
    "afterRank": "S",
-   "target": null,
-   "rate": null,
-   "effectShort": null
+   "target": "全 不屈1 兵站",
+   "rate": "9%",
+   "effectShort": "攻撃270%上昇+防御270%上昇",
+   "afterEffectShort": "攻撃270%上昇+防御270%上昇"
   },
   {
    "slot": "C",
@@ -84,7 +86,8 @@
    "afterRank": "SSS",
    "target": "全",
    "rate": "60%",
-   "effectShort": "防御50%上昇+破壊を係数×人数で上昇"
+   "effectShort": "防御50%上昇+破壊を係数×人数で上昇",
+   "afterEffectShort": "防御50%上昇+破壊 10%×防御参加武将数(280人)=2800.0%"
   },
   {
    "slot": "S1",
@@ -92,9 +95,10 @@
    "rank": "SSS",
    "afterSkill": "極衝爆砕",
    "afterRank": "SSS",
-   "target": null,
-   "rate": null,
-   "effectShort": null
+   "target": "槍・砲・器",
+   "rate": "37%",
+   "effectShort": "防御150%上昇+自軍内で同兵種を指揮している武将数×13%を防御効果に加算",
+   "afterEffectShort": "防御150%上昇 自軍内で同兵種を指揮している武将数×13%を防御効果に加算"
   },
   {
    "slot": "S2",
@@ -104,7 +108,8 @@
    "afterRank": "SS",
    "target": "全 飛翔9",
    "rate": "48%",
-   "effectShort": "防御(6.5×防御参加武将数)%上昇(敵軍飛翔持ち9人未満の時通常武将ダメージを受けない)"
+   "effectShort": "防御(6.5×防御参加武将数)%上昇(敵軍飛翔持ち9人未満の時通常武将ダメージを受けない)",
+   "afterEffectShort": "防御 6.5%×防御参加武将数(280人)=1820.0%"
   }
  ]
 }

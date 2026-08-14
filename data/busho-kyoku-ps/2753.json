@@ -1,0 +1,100 @@
+{
+ "name": "古田織部",
+ "no": "2753",
+ "ch": "未確認",
+ "cost": 3.5,
+ "troop": "全",
+ "sub": "",
+ "effect": "防御 42%上昇",
+ "furigana": "ふるたおりべ",
+ "illustrator": "鏑木康隆",
+ "imageFull": "assets/img/characters/no2753_full.png",
+ "imageChar": "assets/img/characters/no2753_char.png",
+ "atkBase": 960,
+ "atkGrowth": 26.0,
+ "defBase": 990,
+ "defGrowth": 28.0,
+ "tacticsBase": 500.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3460,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "茶鬼",
+ "skillDetail": "A/LV10 確率 50% 防御 42%上昇/対象:全\n①防御が42%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 50% / 防御 42%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "鉄壁の備え",
+   "rank": "D",
+   "afterSkill": "城崩し",
+   "afterRank": "D",
+   "target": "全",
+   "rate": "40%",
+   "effectShort": "防御 15%上昇",
+   "afterTarget": "器",
+   "afterRate": "35%",
+   "afterEffectShort": "破壊 20%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "屈指の勇将",
+   "rank": "D",
+   "afterSkill": "屈指の勇将",
+   "afterRank": "D",
+   "target": "全",
+   "rate": "37%",
+   "effectShort": "攻撃 22%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "玄武の落延",
+   "rank": "B",
+   "afterSkill": "将軍親政",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "防御 40%上昇",
+   "afterTarget": "槍馬",
+   "afterRate": "30%",
+   "afterEffectShort": "攻撃 7%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "万端の用人",
+   "rank": "B",
+   "afterSkill": "万端の用人",
+   "afterRank": "B",
+   "target": "全",
+   "rate": "45%",
+   "effectShort": "防御 45%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "茶人の教え",
+   "rank": "F",
+   "afterSkill": "茶人の教え",
+   "afterRank": "F",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "デッキ上武将回復率：15%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/2753 と skills/茶鬼)およびixawiki(BushoCard/2753古田織部)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

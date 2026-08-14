@@ -66,7 +66,8 @@
    "afterRank": "SS",
    "rate": "60%",
    "target": "全",
-   "effectShort": "防御(部隊総コスト依存)%上昇(C25で423.75%)"
+   "effectShort": "防御(部隊総コスト依存)%上昇(C25で423.75%)",
+   "afterEffectShort": "防御 60.04%上昇(部隊総コストで変動)"
   },
   {
    "slot": "B",
@@ -76,7 +77,8 @@
    "afterRank": "SS",
    "rate": "54%",
    "target": "全 兵站",
-   "effectShort": "防御90.11%上昇(部隊の総コストで効果が変化)"
+   "effectShort": "防御90.11%上昇(部隊の総コストで効果が変化)",
+   "afterEffectShort": "防御 90.11%上昇(部隊の総コストで効果が変化)"
   },
   {
    "slot": "C",
@@ -97,7 +99,8 @@
    "afterRank": "SSS",
    "rate": "43%",
    "target": "全 飛翔13",
-   "effectShort": "防御 9.4%×防御参加武将数(280人)=2632.0%"
+   "effectShort": "防御 9.4%×防御参加武将数(280人)=2632.0%",
+   "afterEffectShort": "防御 9.4%×防御参加武将数(280人)=2632.0%"
   },
   {
    "slot": "S2",
@@ -107,7 +110,8 @@
    "afterRank": "SS",
    "rate": "66%",
    "target": "全",
-   "effectShort": "防御200%上昇+敵軍部隊数×40%を防御効果に加算(模倣不可)"
+   "effectShort": "防御200%上昇+敵軍部隊数×40%を防御効果に加算(模倣不可)",
+   "afterEffectShort": "防御 200%上昇(敵軍部隊数×40%を防御効果に加算・模倣不可)"
   }
  ],
  "notes": [

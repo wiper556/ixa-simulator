@@ -89,14 +89,22 @@
    "skill": "剛心嬰城",
    "rank": "A",
    "afterSkill": "剛心嬰城",
-   "afterRank": "A"
+   "afterRank": "A",
+   "target": "馬・器・騎",
+   "rate": "100%",
+   "effectShort": "攻撃 420%上昇+速度 90%上昇(帰還速度2.5倍)",
+   "afterEffectShort": "攻撃 420%上昇+速度 90%上昇(帰還速度2.5倍)"
   },
   {
    "slot": "S1",
    "skill": "剛心嬰城",
    "rank": "A",
    "afterSkill": "剛心嬰城",
-   "afterRank": "A"
+   "afterRank": "A",
+   "target": "馬・器・騎",
+   "rate": "100%",
+   "effectShort": "攻撃 420%上昇+速度 90%上昇(帰還速度2.5倍)",
+   "afterEffectShort": "攻撃 420%上昇+速度 90%上昇(帰還速度2.5倍)"
   },
   {
    "slot": "S2",
@@ -106,7 +114,10 @@
    "afterRank": "A",
    "target": "全",
    "rate": "65%",
-   "effectShort": "攻撃465%上昇+防御465%上昇(模倣不可)"
+   "effectShort": "攻撃465%上昇+防御465%上昇(模倣不可)",
+   "afterEffectShort": "攻撃 465%上昇+防御 465%上昇(模倣不可)",
+   "afterTarget": "全",
+   "afterRate": "65%"
   }
  ],
  "notes": [
