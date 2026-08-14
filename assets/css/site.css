@@ -130,6 +130,41 @@ body{
 .tool-card .badge.live{background:rgba(201,162,39,0.18);color:var(--gold-bright);border:1px solid var(--gold);}
 .tool-card .badge.soon{background:rgba(107,114,128,0.12);color:var(--muted);border:1px solid var(--line);}
 
+/* 武将データベースのハブだけ、カードの色でランクが分かるようにする
+   (2026-08-14 ユーザー依頼)。全部が同じ朱色の枠で並んでいて見分けが
+   つかなかった。色はゲーム内のカード枠に合わせてある。
+     傑 金 / 天 白 / 極(通常) 黒 / プラチナ・シークレット 紫地に銀枠
+   .tool-card の既定より後ろに置き、クラスを重ねて特定度を上げている。 */
+.tool-card.rank-ketsu{
+  background:linear-gradient(135deg, rgba(201,145,15,0.22), rgba(201,145,15,0.06));
+  border:1px solid var(--gold);
+}
+.tool-card.rank-ketsu h3{color:#8a6508;}
+.tool-card.rank-ketsu:hover{box-shadow:0 6px 16px rgba(169,124,10,0.28);}
+
+.tool-card.rank-ten{
+  background:#ffffff;
+  border:1px solid #cfc7b4;
+}
+.tool-card.rank-ten h3{color:var(--paper);}
+.tool-card.rank-ten:hover{box-shadow:0 6px 16px rgba(43,47,56,0.18);}
+
+.tool-card.rank-kyoku{
+  background:linear-gradient(135deg, #2c2c2c, #151515);
+  border:1px solid #3f3f3f;
+}
+.tool-card.rank-kyoku h3{color:#dccfa0;}
+.tool-card.rank-kyoku p{color:#b8b3a5;}
+.tool-card.rank-kyoku:hover{box-shadow:0 6px 16px rgba(0,0,0,0.35);}
+
+.tool-card.rank-kyoku-ps{
+  background:linear-gradient(135deg, #4b2b6e, #311c4a);
+  border:1px solid #c6cad2;
+}
+.tool-card.rank-kyoku-ps h3{color:#ecdcff;}
+.tool-card.rank-kyoku-ps p{color:#d2c9e2;}
+.tool-card.rank-kyoku-ps:hover{box-shadow:0 6px 16px rgba(75,43,110,0.40);}
+
 .page-title{font-family:'Noto Serif JP', serif;font-weight:900;font-size:26px;margin:0 0 8px;}
 .page-lead{color:var(--muted);font-size:13.5px;line-height:1.7;margin:0 0 8px;}
 

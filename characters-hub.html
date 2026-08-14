@@ -9,10 +9,15 @@
 <meta name="description" content="戦国IXA(Sengoku IXA)の武将データベース関連ページ一覧。天武将データベース・極武将データベースへのリンク集。">
 <link rel="stylesheet" href="assets/css/site.css">
 <style>
-  .char-hub-list{display:flex;flex-direction:column;gap:10px;max-width:420px;}
+  .char-hub-list{display:flex;flex-direction:column;gap:10px;max-width:720px;}
   .char-hub-list .tool-card{padding:14px 16px;}
   .char-hub-list .tool-card h3{font-size:15px;}
   .char-hub-list .tool-card p{font-size:12.5px;}
+  /* 同じレアリティは横に並べる(極は通常極とプラチナ・シークレットの2つ)。
+     狭い画面では縦に折り返す。 */
+  .char-hub-row{display:flex;gap:10px;}
+  .char-hub-row .tool-card{flex:1 1 0;min-width:0;}
+  @media (max-width:600px){ .char-hub-row{flex-direction:column;} }
 </style>
 <link rel="icon" href="favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="192x192" href="assets/img/icon-192.png">
@@ -56,20 +61,27 @@
     <p class="page-lead">ランクに応じて武将データベースを選べます。</p>
 
     <div class="char-hub-list">
-      <a class="tool-card" href="characters-ketsu.html">
+      <a class="tool-card rank-ketsu" href="characters-ketsu.html">
         <h3>傑武将データベース</h3>
-        <p>傑ランク3種のカード画像・ステータス・スキル効果を確認できます(鍛錬・合成候補は傑には無いため掲載していません)。</p>
+        <p>傑ランク3種のカード画像・ステータス・スキル効果を確認できます。</p>
       </a>
 
-      <a class="tool-card" href="characters.html">
+      <a class="tool-card rank-ten" href="characters.html">
         <h3>天武将データベース</h3>
         <p>天・覇ランクの武将のカード画像・ステータス・統率・スキル詳細・合成候補を確認できます。</p>
       </a>
 
-      <a class="tool-card" href="characters-kyoku.html">
-        <h3>極武将データベース</h3>
-        <p>極ランクの武将のカード画像・ステータス・統率・スキル詳細を確認できます。</p>
-      </a>
+      <div class="char-hub-row">
+        <a class="tool-card rank-kyoku" href="characters-kyoku.html">
+          <h3>極武将データベース</h3>
+          <p>通常極の武将のカード画像・ステータス・統率・スキル詳細を確認できます。</p>
+        </a>
+
+        <a class="tool-card rank-kyoku-ps" href="characters-kyoku-ps.html">
+          <h3>極プラチナ・シークレットデータベース</h3>
+          <p>プラチナ極とシークレット極の武将をまとめています。</p>
+        </a>
+      </div>
     </div>
     <div id="pageComments"></div>
       <div class="content-block">

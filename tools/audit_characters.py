@@ -164,13 +164,18 @@ def load_source(page, array):
 
     返り値: (正本の全データ, 食い違いの説明)
     """
-    from build_data import current_order, load_entries
+    from build_data import current_order, derived, load_entries
     outdir, keyfld = {a: (d, k) for _p, a, d, k in DATA_TARGETS}[array]
     path = os.path.join(ROOT, page)
     with io.open(path, encoding="utf-8") as f:
         text = f.read()
     full = [_drop_notes(e) for e in
             load_entries(outdir, keyfld, current_order(text, array, keyfld))]
+    # 正本に持たせず No. から出している値(極の種別など)。
+    # ページ側にはこれが載るので、比べる相手にも同じ規則で足しておく。
+    # 手で書き換えられていれば、ここで食い違いとして出る。
+    for e in full:
+        e.update(derived(e, array))
 
     bad = []
     live = extract_array(path, array)
@@ -190,15 +195,22 @@ def load():
     d, tamper = {}, []
     for page, array in (("characters.html", "generals"),
                         ("characters-kyoku.html", "kyokuGenerals"),
+                        ("characters-kyoku-ps.html", "kyokuPsGenerals"),
                         # 傑は少数だが sourceCharacters の db 判定(S-07)に要る
                         ("characters-ketsu.html", "ketsuGenerals"),
                         ("skills.html", "skills")):
         d[array], bad = load_source(page, array)
         tamper += bad
     d["tamper"] = tamper
+    # 2026-08-14: 極は「通常極」と「プラチナ+シークレット」の2ページに分かれた。
+    # 検査の中身は極かどうかで決まり、どちらのページに載っているかは関係ないので、
+    # 以降はまとめた kyokuAll を使う。ページごとに見るのは改変の突き合わせだけ。
+    d["kyokuAll"] = d["kyokuGenerals"] + d["kyokuPsGenerals"]
     # LINKED_SKILLS はページが手で持っている配列(生成物ではない)ので、そのまま読む
     d["LINKED_SKILLS"] = extract_array(p("characters.html"), "LINKED_SKILLS")
     d["KK_LINKED_SKILLS"] = extract_array(p("characters-kyoku.html"), "KK_LINKED_SKILLS")
+    d["KP_LINKED_SKILLS"] = extract_array(p("characters-kyoku-ps.html"),
+                                          "KP_LINKED_SKILLS")
     # シミュレーター側(P-04)。JSファイルなので生テキストで持つ
     with io.open(p(os.path.join("assets", "js", "ixa-data.js")), encoding="utf-8") as f:
         d["ixaDataSrc"] = f.read()
@@ -302,7 +314,7 @@ def parse_generations(html):
 def main():
     D = load()
     skills = {s["name"]: s for s in D["skills"]}
-    chars = [(g, "天覇") for g in D["generals"]] + [(g, "極") for g in D["kyokuGenerals"]]
+    chars = [(g, "天覇") for g in D["generals"]] + [(g, "極") for g in D["kyokuAll"]]
     targets = [(g, s) for g, s in chars if status(g) != "無印"]
     R = []
     # M-1(2026-08-13 第4回レッドチーム): ここは1行のラムダで、
@@ -383,7 +395,8 @@ def main():
 
     # LINKED_SKILLS
     for arr, label, glist in [(D["LINKED_SKILLS"], "LINKED_SKILLS", D["generals"]),
-                              (D["KK_LINKED_SKILLS"], "KK_LINKED_SKILLS", D["kyokuGenerals"])]:
+                              (D["KK_LINKED_SKILLS"], "KK_LINKED_SKILLS", D["kyokuGenerals"]),
+                       (D["KP_LINKED_SKILLS"], "KP_LINKED_SKILLS", D["kyokuPsGenerals"])]:
         for n in arr:
             if n not in skills:
                 add("LINKED_SKILLS", "MID", "%s の「%s」が skills.html に無い" % (label, n))
@@ -479,8 +492,8 @@ def main():
     # いずれも同日に手作業で見つかった不備で、監査に無かったから見逃していた。
     # ============================================================
     RANKS_HI = ("S", "SS", "SSS", "X", "XX", "XXX")
-    all_g = D["generals"] + D["kyokuGenerals"] + D["ketsuGenerals"]
-    kyoku_no = {g["no"] for g in D["kyokuGenerals"]}
+    all_g = D["generals"] + D["kyokuAll"] + D["ketsuGenerals"]
+    kyoku_no = {g["no"] for g in D["kyokuAll"]}
     ketsu_no = {g["no"] for g in D["ketsuGenerals"]}
 
     # S-01: S以上のスキルにページが無い(初期スキルだけでなく合成候補も対象)
@@ -634,7 +647,7 @@ def main():
     NEED = ["ch", "cost", "troop", "sub", "effect", "furigana", "illustrator",
             "atkBase", "atkGrowth", "defBase", "defGrowth", "tacticsBase",
             "tacticsGrowth", "lv0Troops", "rankGrades", "initialSkill", "skillDetail"]
-    for g in D["generals"] + D["kyokuGenerals"]:
+    for g in D["generals"] + D["kyokuAll"]:
         lack = [k for k in NEED if k not in g]
         if lack:
             add("フィールドの省略", "MID", "%s No.%s: %s が無い(nullで明示する)"

@@ -44,6 +44,10 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TARGETS = [
     ("characters.html", "generals", "data/busho", "no"),
     ("characters-kyoku.html", "kyokuGenerals", "data/busho-kyoku", "no"),
+    # 2026-08-14: 極を「通常極」と「プラチナ極+シークレット極」に分けた。
+    # 分け方はカードNo.の100の位(build_data.kyoku_type)。番号で決まるので
+    # 置き場所も固定でよく、道具側は今までどおり1ページ=1フォルダで扱える。
+    ("characters-kyoku-ps.html", "kyokuPsGenerals", "data/busho-kyoku-ps", "no"),
     ("characters-ketsu.html", "ketsuGenerals", "data/busho-ketsu", "no"),
     ("skills.html", "skills", "data/skill", "name"),
 ]

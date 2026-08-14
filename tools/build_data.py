@@ -83,10 +83,46 @@ BUSHO_LIST_FIELDS = [
 LIST_FIELDS = {
     "generals": BUSHO_LIST_FIELDS,
     "kyokuGenerals": BUSHO_LIST_FIELDS,
+    "kyokuPsGenerals": BUSHO_LIST_FIELDS,
     "ketsuGenerals": BUSHO_LIST_FIELDS + [
         "atkBase", "defBase", "tacticsBase", "lv0Troops"],
     "skills": ["name", "rank", "sourceCharacters"],
 }
+
+
+# 極の種別。カードNo.の100の位で決まる(ユーザー、2026-08-14)。
+#
+#   0〜3  通常極          枠は黒
+#   4〜6  プラチナ極      枠は銀(灰色)
+#   7〜8  シークレット極  枠は紫  ※将来9まで広がる可能性あり
+#
+# もともと1000の位の2が極を表していたが、通常極とプラチナが番号の上限まで
+# 埋まったので、7千台も極に割り当てられている。だから判定に使うのは
+# 1000の位ではなく100の位。
+#
+# **持たせずに毎回この規則から出す。** No.から一意に決まる値なので、
+# JSON側にも書くと片方だけ古くなる余地ができる。9が増えたらここだけ直す。
+KYOKU_TYPES = ("通常極", "プラチナ極", "シークレット極")
+
+
+def kyoku_type(no):
+    try:
+        h = (int(str(no)) // 100) % 10
+    except (TypeError, ValueError):
+        return None
+    return KYOKU_TYPES[0] if h <= 3 else (KYOKU_TYPES[1] if h <= 6 else KYOKU_TYPES[2])
+
+
+def derived(entry, array):
+    """正本には持たせず、カードNo.から毎回出す値。
+
+    ここが唯一の決め所。ページを組み立てる側(slim)と、
+    ページの値が正しいかを見る側(audit_characters.load_source)の
+    両方がこれを呼ぶので、規則がずれることがない。
+    """
+    if array in ("kyokuGenerals", "kyokuPsGenerals"):
+        return {"kyokuType": kyoku_type(entry.get("no"))}
+    return {}
 
 
 def slim(entry, array):
@@ -98,8 +134,10 @@ def slim(entry, array):
     fields = LIST_FIELDS.get(array)
     if fields is None:
         return entry
-    return collections.OrderedDict(
+    out = collections.OrderedDict(
         (k, v) for k, v in entry.items() if k in fields)
+    out.update(derived(entry, array))
+    return out
 
 
 def js_value(v):

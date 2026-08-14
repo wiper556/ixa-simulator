@@ -89,6 +89,7 @@ PRESENT = ("docs/RULE-VIOLATIONS.md",
            "tools/lock_reason.txt", "tools/research_log.json",
            "docs/redteam-log.txt")
 ARRAYS = {"characters.html": "generals", "characters-kyoku.html": "kyokuGenerals",
+          "characters-kyoku-ps.html": "kyokuPsGenerals",
           "characters-ketsu.html": "ketsuGenerals"}
 
 
