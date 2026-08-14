@@ -296,6 +296,19 @@
     font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--gold-bright);
     margin-top:1px;text-align:center;line-height:1.25;
   }
+  /* 「自軍内で同じ兵種を指揮している武将数」の手入力。効果の枠の下に出す。
+     部隊の中身からは計算できない値なので、利用者に書いてもらう(2026-08-14)。 */
+  .fx-soldier-count{
+    margin-top:3px;display:flex;align-items:center;gap:4px;justify-content:center;
+  }
+  .fx-soldier-count .mc-label{
+    font-size:10px;color:var(--muted);white-space:nowrap;
+  }
+  .fx-soldier-count input{
+    width:58px;flex-shrink:0;background:var(--input-bg);border:1px solid var(--gold);
+    color:var(--paper);border-radius:4px;padding:2px 5px;
+    font-family:'JetBrains Mono',monospace;font-size:11px;text-align:right;
+  }
   /* 中身が空のときに1行ぶんの高さを取らないようにする(上昇%の最大値表示など) */
   .fx-real-rate:empty{display:none;}
 
@@ -834,7 +847,7 @@
   // 【必須】attack-simulator.html を変更したコミットでは、必ずこの定数も一緒に更新すること。
   // 表示文言の変更・CSSの微調整であっても対象(ユーザーがスクショで版を判別できなくなるため)。
   // 更新忘れが繰り返し発生しているので、編集したらコミット前にここを見に来る。
-  const SIMULATOR_VERSION = 'v2026-08-14.3';
+  const SIMULATOR_VERSION = 'v2026-08-14.5';
   document.addEventListener('DOMContentLoaded', ()=>{
     const badge = document.getElementById('simVersionBadge');
     if(badge) badge.textContent = SIMULATOR_VERSION;
@@ -1041,7 +1054,76 @@
     return { count: count, tier: SAME_SKILL_TIERS[best] };
   }
 
-  function computeVariableSkillValues(sk, ultimateMult, tier){
+  // ============ 兵士ごとの参加武将数(手入力) ============
+  // 「自軍内で同じ兵種を指揮している武将数」に比例するスキル(神将火剣など)のための入力。
+  // 防御参加武将数(defenderCount)とは別物で、部隊の中身からも計算できない
+  // (自軍全体の話で、このツールは4人分しか持っていない)。だから利用者に書いてもらう。
+  //
+  // **兵士名をキーにする。** 同じ兵士を使っている列は同じ値を共有し、
+  // 兵士が違えば連動しない(弓足軽と長弓兵は別の兵士、というユーザー指摘)。
+  const manualSoldierCounts = {};
+
+  function soldierOf(col){
+    return (sheetData[col] && sheetData[col]['soldier']) || '';
+  }
+
+  function manualCountFor(col){
+    const s = soldierOf(col);
+    return s ? (parseFloat(manualSoldierCounts[s]) || 0) : 0;
+  }
+
+  // その枠のスキルが「同じ兵種の武将数」に比例するものかどうか
+  function slotUsesSoldierCount(col, fk){
+    const text = (sheetData[col] && sheetData[col][fk]) || '';
+    if(!text) return false;
+    return Object.keys(specialSkills).some(n =>
+      text.includes(n) && specialSkills[n].variableFormula &&
+      specialSkills[n].variableFormula.variable === 'sameSoldierCount');
+  }
+
+  // 該当スキルが入っている枠にだけ入力欄を出し、兵士名ごとの値をそろえる。
+  const FX_TO_SKILL_FIELD = { fx1:'skillInit', fx2:'skillAdd1', fx3:'skillAdd2', fx4:'skillUltimate' };
+
+  function updateSoldierCountBoxes(){
+    for(let col=0; col<4; col++){
+      const soldier = soldierOf(col);
+      Object.keys(FX_TO_SKILL_FIELD).forEach(fxKey=>{
+        const box = $('mc_' + cellId(fxKey, col));
+        const input = $(cellId(fxKey, col, 'mcount'));
+        if(!box || !input) return;
+        const need = slotUsesSoldierCount(col, FX_TO_SKILL_FIELD[fxKey]);
+        box.style.display = need ? '' : 'none';
+        if(!need) return;
+        const label = $('mclabel_' + cellId(fxKey, col));
+        if(label) label.textContent = (soldier ? soldier : '同兵種') + ' 参加武将数';
+        // 兵士名が同じ列は同じ値になる。兵士未選択のときは共有しない。
+        const shared = soldier ? manualSoldierCounts[soldier] : undefined;
+        const want = (shared === undefined || shared === null) ? '' : String(shared);
+        if(input.value !== want) input.value = want;
+      });
+    }
+  }
+
+  function attachSoldierCountInputs(){
+    for(let col=0; col<4; col++){
+      Object.keys(FX_TO_SKILL_FIELD).forEach(fxKey=>{
+        const input = $(cellId(fxKey, col, 'mcount'));
+        if(!input || input.dataset.mcBound) return;
+        input.dataset.mcBound = '1';
+        input.addEventListener('input', ()=>{
+          const soldier = soldierOf(col);
+          if(!soldier) return;   // 兵士が決まっていないと、どこに紐づけるか決められない
+          const v = input.value.trim();
+          if(v === '') delete manualSoldierCounts[soldier];
+          else manualSoldierCounts[soldier] = Math.max(0, parseInt(v, 10) || 0);
+          updateSoldierCountBoxes();   // 同じ兵士の他の列にも同じ値を入れる
+          applyVariableSkillsToEffectTable();
+        });
+      });
+    }
+  }
+
+  function computeVariableSkillValues(sk, ultimateMult, tier, col){
     const mult = ultimateMult || 1;
     const formula = sk.variableFormula;
     // squadSoarSum(部隊内飛翔値合計)はbattleVariablesの手入力値ではなく、その場で動的に計算する
@@ -1055,11 +1137,14 @@
     const isXCount = formula.variable === 'xSkillCount';
     const isHaCount = formula.variable === 'haGeneralCount';
     const isSameSkill = formula.variable === 'sameSkillCount';
+    // sameSoldierCount(同じ兵種を指揮している武将数)は、その列の兵士に紐づく手入力値
+    const isSoldierCount = formula.variable === 'sameSoldierCount';
     const sameInfo = isSameSkill ? computeSameSkillSquadInfo(sk.__name || '') : null;
     const varValue = isSoarSum ? computeSquadSoarSumExpected()
       : isXCount ? countXSkillsInSquad()
       : isHaCount ? countHaGeneralsInSquad()
       : isSameSkill ? sameInfo.count
+      : isSoldierCount ? manualCountFor(col)
       : (battleVariables[formula.variable] || 0);
     const varValueMax = isSoarSum ? computeSquadSoarSum() : varValue;
     // perUnitTable(TR別の増加係数)があればそれを優先、無ければ従来のperUnit(固定値)を使う
@@ -1319,7 +1404,7 @@
           let effect, speed, destruct;
           if(sourceSk.variableFormula){
             const tierVar = (trMatch && sourceSk.variableFormula.perUnitTable && sourceSk.variableFormula.perUnitTable['TR'+trMatch[1]] !== undefined) ? 'TR'+trMatch[1] : 'base';
-            const r = computeVariableSkillValues(sourceSk, ultimateMult, tierVar);
+            const r = computeVariableSkillValues(sourceSk, ultimateMult, tierVar, col);
             effect = r.effect;
           } else if(sourceSk.trTable){
             const tier = (trMatch && sourceSk.trTable['TR'+trMatch[1]] !== undefined) ? 'TR'+trMatch[1] : 'base';
@@ -1649,6 +1734,10 @@
   }
 
   function applyVariableSkillsToEffectTable(){
+    // 「同じ兵種の武将数」の入力欄は、その枠にスキルが入って初めて出る。
+    // スキル名や兵士を変えるたびに出し入れとラベルを合わせ直す。
+    attachSoldierCountInputs();
+    updateSoldierCountBoxes();
     const skillFieldToFx = { skillInit:'fx1', skillAdd1:'fx2', skillAdd2:'fx3', skillUltimate:'fx4' };
     const squadTakuetsuBonus = computeSquadTakuetsuRateBonus(); // 部隊内の卓越確率上昇スキルの合計
     for(let col=0; col<4; col++){
@@ -1658,6 +1747,10 @@
         Object.keys(specialSkills).forEach(skName=>{
           if(text.includes(skName)){
             const sk = specialSkills[skName];
+            // 2026-08-14: leaderOnly(部隊長時限定)はデータにあるだけで
+            // どこからも見られていなかった。蛇神幻計(No.1311)のように
+            // 部隊長時だけ効くスキルが、小隊に置いても効いてしまう。
+            if(sk.leaderOnly && col !== 0) return;
             // 【2026-08-11修正】覇神絶域・雄飛新世のような「総攻撃力/防御力上昇」だけを持つスキル
             // (通常の上昇%を持たない)は、val欄に「総攻撃力+30%」という文字列をDOMへ直接書くだけで
             // sheetDataを更新していなかったため、前にその枠へ入れていたスキルの数値が残り、
@@ -1683,7 +1776,7 @@
             if(sk.variableFormula){
               const trMatchVar = text.match(/TR(\d)/i);
               const tierVar = (trMatchVar && sk.variableFormula.perUnitTable && sk.variableFormula.perUnitTable['TR'+trMatchVar[1]] !== undefined) ? 'TR'+trMatchVar[1] : 'base';
-              ({ rate, effect, effectMax: variableEffectMax } = computeVariableSkillValues(sk, ultimateMult, tierVar));
+              ({ rate, effect, effectMax: variableEffectMax } = computeVariableSkillValues(sk, ultimateMult, tierVar, col));
             } else if(sk.trTable && (sk.baseRate !== undefined || sk.rateTable)){
               // スキル名に含まれる"TR1"〜"TR5"を優先。なければLV10時点(base)の値を使う
               const trMatch = text.match(/TR(\d)/i);
@@ -2490,6 +2583,10 @@
         Object.keys(specialSkills).forEach(skName=>{
           if(text.includes(skName)){
             const sk = specialSkills[skName];
+            // 2026-08-14: leaderOnly(部隊長時限定)はデータにあるだけで
+            // どこからも見られていなかった。蛇神幻計(No.1311)のように
+            // 部隊長時だけ効くスキルが、小隊に置いても効いてしまう。
+            if(sk.leaderOnly && col !== 0) return;
             const isMujinSlot = !!(sk.hasMujin || fk === 'skillUltimate');
             const mujinMult = (master && isMujinSlot) ? master.multiplier : 1;
             if(sk.totalAtkBoostPct !== undefined){
@@ -2552,6 +2649,10 @@
         Object.keys(specialSkills).forEach(skName=>{
           if(text.includes(skName)){
             const sk = specialSkills[skName];
+            // 2026-08-14: leaderOnly(部隊長時限定)はデータにあるだけで
+            // どこからも見られていなかった。蛇神幻計(No.1311)のように
+            // 部隊長時だけ効くスキルが、小隊に置いても効いてしまう。
+            if(sk.leaderOnly && col !== 0) return;
             const isMujinSlot = !!(sk.hasMujin || fk === 'skillUltimate');
             const mujinMult = (master && isMujinSlot) ? master.multiplier : 1;
             if(sk.totalDefBoostPct !== undefined){
@@ -2640,6 +2741,10 @@
         Object.keys(specialSkills).forEach(skName=>{
           if(text.includes(skName)){
             const sk = specialSkills[skName];
+            // 2026-08-14: leaderOnly(部隊長時限定)はデータにあるだけで
+            // どこからも見られていなかった。蛇神幻計(No.1311)のように
+            // 部隊長時だけ効くスキルが、小隊に置いても効いてしまう。
+            if(sk.leaderOnly && col !== 0) return;
             if(sk.anywhereSquadwideBoost && sk.anywhereSquadwideBoost[statTarget] !== undefined){
               multiplier *= (1 + sk.anywhereSquadwideBoost[statTarget] / 100);
             }
@@ -3237,6 +3342,10 @@
         </div>
         <div class="fx-real-rate" id="real_${cellId(row.key,col)}">実発動率: -</div>
         <div class="fx-real-rate" id="valmax_${cellId(row.key,col)}"></div>
+        <div class="fx-soldier-count" id="mc_${cellId(row.key,col)}" style="display:none;">
+          <span class="mc-label" id="mclabel_${cellId(row.key,col)}"></span>
+          <input type="number" id="${cellId(row.key,col,'mcount')}" min="0" step="1" placeholder="人数">
+        </div>
       </div>`;
     }
     if(row.type === 'computed'){
@@ -3977,13 +4086,14 @@
           const uncertain = !!(hasVal && ((real !== null && real < 100) || takuetsuUncertain));
           valInput.classList.toggle('rate-uncertain', uncertain);
         }
-        if(real === null){
-          el.textContent = '実発動率: -';
-          return;
-        }
         // specialSkillsに rateNote があれば実発動率の後ろに短い注記を出す。
         // 「条件を満たした前提で数値を入れてある」スキル(天弦ノ威軍の自軍城主数10以上など)の
         // 前提を利用者に伝えるためのもの。fx1〜fx4はskillInit/skillAdd1/skillAdd2/skillUltimateに対応する。
+        //
+        // 2026-08-14: この計算は「実発動率: -」で先に return する後ろにあったので、
+        // **発動率を持たないスキルには注記が出なかった**。月読ノ冥略(No.1316)は
+        // 発動率の無い倍率スキルなので「(加勢時のみ)」が出ず、条件が伝わらなかった。
+        // 注記は発動率の有無と関係ないので、先に求めて両方の分岐で出す。
         const skillField = {fx1:'skillInit', fx2:'skillAdd1', fx3:'skillAdd2', fx4:'skillUltimate'}[key];
         const skillText = (sheetData[col] && sheetData[col][skillField]) || '';
         let rateNote = '';
@@ -3992,7 +4102,12 @@
             if(skillText.includes(n) && specialSkills[n].rateNote) rateNote = specialSkills[n].rateNote;
           });
         }
-        el.textContent = `実発動率: ${fmtPct(real)}%` + (rateNote ? `(${rateNote})` : '');
+        const noteSuffix = rateNote ? `(${rateNote})` : '';
+        if(real === null){
+          el.textContent = '実発動率: -' + noteSuffix;
+          return;
+        }
+        el.textContent = `実発動率: ${fmtPct(real)}%` + noteSuffix;
       });
     }
   }
