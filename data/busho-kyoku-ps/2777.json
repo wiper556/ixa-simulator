@@ -3,9 +3,9 @@
  "no": "2777",
  "ch": "未確認",
  "cost": 1.0,
- "troop": null,
+ "troop": "特",
  "sub": "",
- "effect": null,
+ "effect": "「鉄砲足軽」の兵士防御力+1(重複不可・効果範囲は所持者部隊の兵士のみ)",
  "furigana": "しばつじせいえもん",
  "illustrator": "平坂康也",
  "imageFull": "assets/img/characters/no2777_full.png",
@@ -24,12 +24,12 @@
   "ki": "S"
  },
  "initialSkill": "芝辻砲",
- "skillDetail": null,
+ "skillDetail": "A/LV10 カード所持効果/対象:鉄砲足軽\n①このカードを所持していると「鉄砲足軽」の兵士防御力が+1される\n②効果範囲は所持者部隊の兵士のみで重複不可",
  "trTable": [
   {
    "level": "LV10",
    "points": "-",
-   "effect": "全　確率 -% / このカードを所持していると、「鉄砲足軽」の兵士防御力が+1される(重複不可・効果範囲は所持者部隊の兵士のみ)"
+   "effect": "カード所持効果 / 「鉄砲足軽」の兵士防御力+1(重複不可・効果範囲は所持者部隊の兵士のみ)"
   }
  ],
  "synthesisTable": [

@@ -67,8 +67,8 @@
    "afterRank": "A",
    "target": "全",
    "rate": "35%",
-   "effectShort": "防御 35%上昇 / 銅銭獲得率：7.5%",
-   "afterEffectShort": "防御 35%上昇 / 銅銭獲得率：7.5%"
+   "effectShort": "防御 35%上昇(銅銭獲得率7.5%・防御で倒した兵数に応じ防御参加者全員が銅銭獲得)",
+   "afterEffectShort": "防御 35%上昇(銅銭獲得率7.5%・防御で倒した兵数に応じ防御参加者全員が銅銭獲得)"
   },
   {
    "slot": "C",
@@ -78,10 +78,10 @@
    "afterRank": "C",
    "target": "全",
    "rate": "36%",
-   "effectShort": "防御 46%上昇/銅銭獲得率：4%",
+   "effectShort": "防御 46%上昇(銅銭獲得率4%・対人撃破兵数に応じて銅銭獲得)",
    "afterTarget": "全",
    "afterRate": "35%",
-   "afterEffectShort": "銅銭獲得率：5%"
+   "afterEffectShort": "銅銭獲得率5%(参加した対人攻撃/防御で倒した兵数×銅銭獲得率=獲得銅銭)"
   },
   {
    "slot": "S1",

@@ -3,9 +3,9 @@
  "no": "2780",
  "ch": "未確認",
  "cost": 2.0,
- "troop": null,
+ "troop": "特",
  "sub": "",
- "effect": null,
+ "effect": "資源保有可能量150000増加",
  "furigana": "こぼりえんしゅう",
  "illustrator": "鹿角",
  "imageFull": "assets/img/characters/no2780_full.png",
@@ -24,12 +24,12 @@
   "ki": "A"
  },
  "initialSkill": "遠州流",
- "skillDetail": null,
+ "skillDetail": "A/LV10 カード所持効果/対象:自身\n①資源保有可能量が150000増加する",
  "trTable": [
   {
    "level": "LV10",
    "points": "-",
-   "effect": "全　確率 -% / 資源保有可能量：150000増加"
+   "effect": "カード所持効果 / 資源保有可能量150000増加"
   }
  ],
  "synthesisTable": [
@@ -41,7 +41,7 @@
    "afterRank": "B",
    "target": "部隊長",
    "rate": "53%",
-   "effectShort": "効果 部隊長の初期スキルを模倣(戦闘スキルのみ、TRなし)"
+   "effectShort": "部隊長の初期スキルを模倣(戦闘スキルのみ、TRなし)"
   },
   {
    "slot": "B",
@@ -64,7 +64,7 @@
    "afterRank": "B",
    "target": "全",
    "rate": "40%",
-   "effectShort": "資源獲得率：5%",
+   "effectShort": "資源獲得率5%",
    "afterTarget": "槍馬砲",
    "afterRate": "100%",
    "afterEffectShort": "攻撃 16%上昇"
@@ -77,7 +77,7 @@
    "afterRank": "A",
    "target": "全",
    "rate": "30%",
-   "effectShort": "資源獲得率：15%"
+   "effectShort": "資源獲得率15%"
   },
   {
    "slot": "S2",
