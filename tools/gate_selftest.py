@@ -52,6 +52,18 @@ def _w13(repo):
     sh(["git", "add", "docs/RULE-OPERATION.md", "index.html"], repo)
 
 
+def _w13_other_docs(repo):
+    """docs/ の、RULE で始まらない文書を作業と混ぜる。
+
+    2026-08-14: フックは `docs/RULE…` だけをルール文書とみなしていたので、
+    docs/synthesis-gaps-2026-08-14.md(作業メモ)は素通りし、CIだけが止めた。
+    上の _w13 は docs/RULE-OPERATION.md を使うので、この抜けを踏まなかった。
+    """
+    edit(repo, "docs/data-audit-2026-08-12.md", "\n", "\nテスト\n")
+    edit(repo, "index.html", "</body>", "<!-- テスト -->\n</body>")
+    sh(["git", "add", "docs/data-audit-2026-08-12.md", "index.html"], repo)
+
+
 def _p03(repo):
     """attack-simulator.html を変えたのに SIMULATOR_VERSION の値を上げない。"""
     edit(repo, "attack-simulator.html", "</body>", "<!-- テスト -->\n</body>")
@@ -152,6 +164,8 @@ CASES = [
     ("R-04", "テスト環境の外を触らせない(ホワイトリスト)", _p02forms, True, ""),
     ("R-03", "指紋と回の判定が壊れていないか", _p02forms, True, ""),
     ("W-13", "ルール文書と作業を同じコミットに混ぜる", _w13, True,
+     "ルール文書の変更と作業の変更が同じコミットに混ざっている"),
+    ("W-13b", "docs/ の他の文書を作業と混ぜる(CIとの食い違い)", _w13_other_docs, True,
      "ルール文書の変更と作業の変更が同じコミットに混ざっている"),
     ("P-03", "シミュレーターを変えてバージョンを上げない", _p03, True,
      "SIMULATOR_VERSION"),
