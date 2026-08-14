@@ -1670,6 +1670,42 @@ const specialSkills = {
           '【2026年7月再修正】パラレル【天】版(No.31297)でTR6が解禁されたためixagno.blog.fc2.comで確認し追加登録。' +
           '【2026年7月三度目修正】ixanary.com生HTMLでTR1〜TR6の確率・係数の欠落分(TR1〜TR4の確率、TR4係数)を確認して補完。卓越のTR別追加確率もtakuetsuChanceTableとして新規対応した(エンジン側にTR別テーブル+0%下限クランプの仕組みを追加)。'
   },
+  '無刀幻斬': {
+    effectAxis: 'def', // 防御側
+    noMimic: true, // 「模倣不可」明記
+    activationType: 'triggered',
+    statTarget: 'def',
+    // 「部隊内の武将の防御力を2.5倍」。部隊長時限定で部隊全員(本人含む)の武将防御力に掛かる。
+    // 飛天ノ閃剣(攻撃版)と同じ仕組み。TRは無くLV10のみ。
+    condition: 'leader_squadwide',
+    defaultMultiplier: 2.5, // LV10。LV1は1.4倍
+    trTable: { base: 210 }, // 防御%上昇(LV10)。LV1は100%
+    baseRate: 100, // 確率+100%
+    soarValue: 4, // 飛翔4
+    note: 'S(防御・模倣不可・部隊長時限定)。確率+100%/対象:全。防御210%上昇・飛翔4。' +
+          '①部隊内の武将(本人含む)の防御力を2.5倍にする(LV1は1.4倍)。部隊長時限定で、飛天ノ閃剣の防御版。' +
+          '②それらの武将は武将防御力減少スキルから保護される(この保護は計算エンジン未対応・参考データのみ)。' +
+          '柳生石舟斎(No.10024)の固有スキル。TRは無くLV1/LV10の2段のみ。' +
+          'ixanary.com(skills/無刀幻斬)とixawiki(BushoCard/10024柳生石舟斎)で確認(2026-08-14)。'
+  },
+  '無刀夢幻': {
+    effectAxis: 'def', // 防御側
+    noMimic: true, // 「模倣不可」明記
+    activationType: 'triggered',
+    statTarget: 'def',
+    // 無刀幻斬の上位。倍率は鍛錬段階で上がる(飛天ノ閃剣とまったく同じ刻み)。
+    condition: 'leader_squadwide',
+    trLevels: { base:2.5, TR1:2.5, TR2:2.6, TR3:2.7, TR4:2.8, TR5:3 },
+    defaultMultiplier: 3, // TR不明時のフォールバック(最大値=TR5想定)
+    trTable: { base:720, TR1:800, TR2:920, TR3:1080, TR4:1300, TR5:1480 }, // 防御%上昇。LV1は240%
+    baseRate: 100, // 確率+100%(全段共通)
+    soarValue: 6, // 飛翔6
+    note: 'S(防御・模倣不可・部隊長時限定)。確率+100%/対象:全。飛翔6。' +
+          '防御%上昇: LV10=720% / TR1=800% / TR2=920% / TR3=1080% / TR4=1300% / TR5=1480%(LV1は240%)。' +
+          '①部隊内の武将(本人含む)の防御力を倍にする: LV10・TR1=2.5倍 / TR2=2.6 / TR3=2.7 / TR4=2.8 / TR5=3倍(LV1は1.1倍)。' +
+          '②それらの武将は武将防御力減少スキルから保護される(この保護は計算エンジン未対応・参考データのみ)。' +
+          '柳生石舟斎(No.10060)の固有スキル。ixanary.com(skills/無刀夢幻)とixawiki(BushoCard/10060柳生石舟斎)で確認(2026-08-14)。'
+  },
   '覇謀海霊': {
     effectAxis: 'def', // 防御側(正本 data/skill/覇謀海霊.json の効果文より)
     noMimic: true, // 「模倣不可」明記
@@ -2766,7 +2802,14 @@ const specialSkills = {
     activationType: 'triggered', statTarget: 'def', noMimic: true,
     trTable: { base: 430, TR5: 1200 }, baseRate: 100, // 防御:LV10=430%→TR5=1200%・確率+100%
     skillActivationRateBonus: 2, // 自軍武将のスキル発動率+2%(LV10値。TR5は+5%と鍛錬で変化するが、本フィールドは固定値のためLV10値を登録)
-    note: 'S(防御・模倣不可)。確率+100%/対象:全。防御:LV10=430%上昇→TR5(鍛錬最高段階)=1200%上昇(自動反映対応、TR1〜TR4は情報源に記載なし)。「部隊内武将防御力をLV10=1.4倍→TR5=1.5倍」「自軍武将のスキル発動率+2%(LV10)→+5%(TR5、自部隊内で最大4つまで重複可能)」は参考データのみ(skillActivationRateBonusはLV10値の2を登録)。坪井将監(No.2491)の固有スキル。'
+    // 「部隊内武将防御力をLV10=1.4倍→TR5=1.5倍」。**部隊長でなくても発動する**(ユーザーがゲーム内で確認、2026-08-14)ため
+    // 部隊長限定のleader_squadwideではなくanywhereSquadwideBoost側で持つ。無刀夢幻(部隊長限定)とは別枠なので掛け算で積算される。
+    // 倍率は%で持つ決まりなので1.4倍=+40%。TR1〜TR4は情報源に記載が無くbase(=+40%)に落ちる。
+    anywhereSquadwideBoostTable: { def: { base: 40, TR5: 50 } },
+    note: 'S(防御・模倣不可)。確率+100%/対象:全。防御:LV10=430%上昇→TR5(鍛錬最高段階)=1200%上昇(自動反映対応、TR1〜TR4は情報源に記載なし)。' +
+          '「部隊内武将防御力をLV10=1.4倍→TR5=1.5倍」は2026-08-14に自動反映対応(anywhereSquadwideBoostTable)。' +
+          '部隊長でなくても発動することはユーザーがゲーム内で確認済みで、無刀夢幻のような部隊長限定の倍率とは別枠として掛け合わせる。' +
+          '「自軍武将のスキル発動率+2%(LV10)→+5%(TR5、自部隊内で最大4つまで重複可能)」は参考データのみ(skillActivationRateBonusはLV10値の2を登録)。坪井将監(No.2491)の固有スキル。'
   },
   '神明旗手': {
     noMimic: true,
