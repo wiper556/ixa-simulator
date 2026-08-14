@@ -3807,3 +3807,21 @@
     window.addEventListener('scroll', function(){ if (pop) pop.style.display = 'none'; }, true);
   })();
 </script>
+<script>
+  // 古い #No / #スキル名 形式で来た人を、個別URLへ送る(2026-08-14)。
+  // 一覧から個別ページへ飛ぶようにしたので、同ページ内の詳細パネルは
+  // 「古いリンクの受け皿」だけになった。ここで転送しておくと、
+  // 次に一覧から重い詳細データを外すときにリンクが死なない。
+  (function(){
+    function go(){
+      var h = decodeURIComponent((location.hash || '').replace(/^#/, ''));
+      if (!h) return;
+      var dir = 'busho/';
+      var name = dir === 'skill/' ? encodeURIComponent(h) : h.replace(/[^0-9]/g, '');
+      if (!name) return;
+      location.replace(dir + name + '.html');
+    }
+    go();
+    window.addEventListener('hashchange', go);
+  })();
+</script>
