@@ -834,7 +834,7 @@
   // 【必須】attack-simulator.html を変更したコミットでは、必ずこの定数も一緒に更新すること。
   // 表示文言の変更・CSSの微調整であっても対象(ユーザーがスクショで版を判別できなくなるため)。
   // 更新忘れが繰り返し発生しているので、編集したらコミット前にここを見に来る。
-  const SIMULATOR_VERSION = 'v2026-08-14.2';
+  const SIMULATOR_VERSION = 'v2026-08-14.3';
   document.addEventListener('DOMContentLoaded', ()=>{
     const badge = document.getElementById('simVersionBadge');
     if(badge) badge.textContent = SIMULATOR_VERSION;
@@ -1184,54 +1184,70 @@
   //   multiplyStatFields: 倍加対象の数値(省略時は['val']=攻撃%上昇のみ。['val','destruct']なら破壊%上昇も対象)
   // 同じ列(武将)の対象スキル枠の該当数値に倍率を掛ける。討伐ゲージ等の専用リソースを使わず、
   // 固定/TR別の倍率として簡略実装したもの。
+  //   multiplySpecs: 枠ごとに倍率が違うスキル用(2026-08-14追加)。
+  //     [{fields:['fx2','fx3'], table:{base:2, TR6:2.2}}, {fields:['fx4'], table:{...}}]
+  //     月読ノ冥略(No.1316)は「追加スキル2倍・極限スキル2〜3.2倍」と枠ごとに倍率が
+  //     違うので、1つの倍率を複数の枠に掛ける従来の形では書けなかった。
   function applyAdditionalSkillMultiplierEffects(){
     const skillFields = ['skillInit','skillAdd1','skillAdd2','skillUltimate'];
     for(let col=0; col<4; col++){
-      let multiplier = 1;
-      let targetFields = null;
-      let statFields = null;
+      // 枠(fx)ごと・数値(val/destruct)ごとに倍率をためる。
+      // 同じ枠に複数のスキルが効くときは掛け合わせる(従来と同じ挙動)。
+      const perField = {};
+      const bump = (fields, stats, m) => {
+        (fields || ['fx2','fx3']).forEach(f=>{
+          perField[f] = perField[f] || {};
+          (stats || ['val']).forEach(st=>{ perField[f][st] = (perField[f][st] || 1) * m; });
+        });
+      };
       skillFields.forEach(fk=>{
         const text = (sheetData[col] && sheetData[col][fk]) || '';
         if(!text) return;
+        const trMatch = text.match(/TR(\d)/i);
+        const pick = (tbl) => {
+          const tier = (trMatch && tbl['TR'+trMatch[1]] !== undefined) ? 'TR'+trMatch[1] : 'base';
+          return tbl[tier];
+        };
         Object.keys(specialSkills).forEach(skName=>{
           if(!text.includes(skName)) return;
           const sk = specialSkills[skName];
+          if(Array.isArray(sk.multiplySpecs)){
+            sk.multiplySpecs.forEach(spec=>{
+              const m = spec.table ? pick(spec.table) : spec.by;
+              if(m) bump(spec.fields, spec.stats, m);
+            });
+            return;
+          }
           let m = null;
           if(sk.multiplyAdditionalSkillsByTable){
-            const trMatch = text.match(/TR(\d)/i);
-            const tier = (trMatch && sk.multiplyAdditionalSkillsByTable['TR'+trMatch[1]] !== undefined) ? 'TR'+trMatch[1] : 'base';
-            m = sk.multiplyAdditionalSkillsByTable[tier];
+            m = pick(sk.multiplyAdditionalSkillsByTable);
           } else if(sk.multiplyAdditionalSkillsBy){
             m = sk.multiplyAdditionalSkillsBy;
           }
-          if(m){
-            multiplier *= m;
-            targetFields = sk.multiplyTargetFields || targetFields || ['fx2','fx3'];
-            statFields = sk.multiplyStatFields || statFields || ['val'];
-          }
+          if(m) bump(sk.multiplyTargetFields, sk.multiplyStatFields, m);
         });
       });
-      if(multiplier !== 1){
-        const fields = targetFields || ['fx2','fx3'];
-        const stats = statFields || ['val'];
-        fields.forEach(fxKey=>{
-          const cell = sheetData[col][fxKey];
-          if(!cell) return;
-          stats.forEach(statKey=>{
-            if(cell[statKey] !== undefined && cell[statKey] !== ''){
-              const newVal = Math.round(parseFloat(cell[statKey]) * multiplier * 100) / 100;
-              cell[statKey] = String(newVal);
-              const input = $(cellId(fxKey, col, statKey));
-              if(input) input.value = fmtPct(newVal);
-            }
-          });
+      let touched = false;
+      Object.keys(perField).forEach(fxKey=>{
+        const cell = sheetData[col][fxKey];
+        if(!cell) return;
+        Object.keys(perField[fxKey]).forEach(statKey=>{
+          const multiplier = perField[fxKey][statKey];
+          if(multiplier === 1) return;
+          if(cell[statKey] !== undefined && cell[statKey] !== ''){
+            const newVal = Math.round(parseFloat(cell[statKey]) * multiplier * 100) / 100;
+            cell[statKey] = String(newVal);
+            const input = $(cellId(fxKey, col, statKey));
+            if(input) input.value = fmtPct(newVal);
+            touched = true;
+          }
           // valMax(最大値)もvalと同じ倍率で更新する(期待値/最大値の整合性を保つため)
-          if(stats.includes('val') && cell.valMax !== undefined && cell.valMax !== ''){
+          if(statKey === 'val' && cell.valMax !== undefined && cell.valMax !== ''){
             cell.valMax = String(Math.round(parseFloat(cell.valMax) * multiplier * 100) / 100);
           }
         });
-        updateSkillEffectTotal(col);
-      }
+      });
+      if(touched) updateSkillEffectTotal(col);
     }
   }
 
