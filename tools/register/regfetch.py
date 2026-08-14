@@ -111,14 +111,25 @@ def parse_ixawiki_card(lines):
     return d
 
 
+LEVEL_LINE = re.compile(r"^(LV\d+|TR\d) \| (.+)$")
+# 効果文の続きではない行。ここに当たったら次の行を連結しない。
+# 2026-08-15: 以前は次の行を**無条件に**連結していた。効果が1行で終わっている段
+# では次の段の行や「合成テーブル」という見出しがそのまま効果文の末尾にくっつき、
+# 傾世ノ華では全6段が次の段と連結され、TR5に「合成テーブル」が混入していた。
+NOT_CONT = re.compile(r"^(?:LV\d+|TR\d)\s*\||^(?:合成テーブル|合成素材|武将カード"
+                      r"|武将スキル|※|・\d次|開発|Home)")
+
+
 def parse_ixanary_skill(lines):
     d = {"levels": [], "synthesis": {}, "noSynthesis": False}
     for i, ln in enumerate(lines):
-        m = re.match(r"^(LV\d+|TR\d) \| (.+)$", ln)
+        m = LEVEL_LINE.match(ln)
         if m:
+            nxt = lines[i + 1] if i + 1 < len(lines) else ""
+            if NOT_CONT.match(nxt.strip()):
+                nxt = ""
             d["levels"].append({"level": m.group(1),
-                                "text": (m.group(2) + " " +
-                                         (lines[i + 1] if i + 1 < len(lines) else "")).strip()})
+                                "text": (m.group(2) + " " + nxt).strip()})
         if ln.startswith("1次 | ") or ln.startswith("2次 | "):
             key = "first" if ln.startswith("1次") else "second"
             d["synthesis"][key] = [x.strip() for x in ln.split("|")[1:]]
