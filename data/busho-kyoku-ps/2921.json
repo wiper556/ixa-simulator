@@ -1,0 +1,103 @@
+{
+ "name": "松永久秀",
+ "no": "2921",
+ "ch": "未確認",
+ "cost": 1.0,
+ "troop": null,
+ "sub": "",
+ "effect": null,
+ "furigana": "まつながひさひで",
+ "illustrator": "正子公也",
+ "imageFull": "assets/img/characters/no2921_full.png",
+ "imageChar": "assets/img/characters/no2921_char.png",
+ "atkBase": 700,
+ "atkGrowth": 15.0,
+ "defBase": 700,
+ "defGrowth": 15.0,
+ "tacticsBase": 600.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 1500,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "災禍ノ老仙",
+ "skillDetail": null,
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全 敵軍の兵士被害数+25%　確率 50%"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "国貫き",
+   "rank": "E",
+   "afterSkill": "兵器運用術",
+   "afterRank": "E",
+   "target": "器",
+   "rate": "25%",
+   "effectShort": "破壊 (コストx6.5) %上昇",
+   "afterTarget": "砲器",
+   "afterRate": "100%",
+   "afterEffectShort": "速度 25%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "毒饅頭",
+   "rank": "E",
+   "afterSkill": "謀殺",
+   "afterRank": "D",
+   "target": "全",
+   "rate": "10%",
+   "effectShort": "攻撃戦闘勝利時のみ、敵軍1部隊の武将に追加ダメージ+20",
+   "afterTarget": "全",
+   "afterRate": "15%",
+   "afterEffectShort": "攻撃戦闘勝利時のみ、敵軍1部隊の武将に追加ダメージ+35"
+  },
+  {
+   "slot": "C",
+   "skill": "謀殺",
+   "rank": "D",
+   "afterSkill": "鉄壁の備え",
+   "afterRank": "D",
+   "target": "全",
+   "rate": "15%",
+   "effectShort": "攻撃戦闘勝利時のみ、敵軍1部隊の武将に追加ダメージ+35",
+   "afterTarget": "全",
+   "afterRate": "40%",
+   "afterEffectShort": "防御 15%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "爆雷平蜘蛛",
+   "rank": "B",
+   "afterSkill": "爆雷平蜘蛛",
+   "afterRank": "B",
+   "target": "全",
+   "rate": "30%",
+   "effectShort": "攻撃戦闘勝利時のみ、敵軍1部隊の武将に追加ダメージ+45"
+  },
+  {
+   "slot": "S2",
+   "skill": "堅国の絆",
+   "rank": "A",
+   "afterSkill": "堅国の絆",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "60%",
+   "effectShort": "防御 5%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/2921 と skills/災禍ノ老仙)およびixawiki(BushoCard/2921松永久秀)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}
