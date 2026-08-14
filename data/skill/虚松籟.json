@@ -1,0 +1,35 @@
+{
+ "name": "虚松籟",
+ "rank": "S",
+ "baseRate": 100.0,
+ "target": "全",
+ "effectSummary": "S/LV10 確率 100% 攻撃 250%上昇 / 防御 250%上昇/対象:全",
+ "categoryLinks": [],
+ "sourceCharacters": [
+  {
+   "name": "長谷川等伯",
+   "no": "2827",
+   "slot": "C",
+   "db": "kyoku",
+   "note": [
+    "長谷川等伯(2827)のsynthesisTable C枠(2026-08-15)"
+   ]
+  }
+ ],
+ "notes": [
+  "ixanary.com(skills/虚松籟)から登録(2026-08-14)。S以上のスキルはページを作る決まり(S-01)にもとづく新規作成。",
+  "対象・確率・効果文はixanaryの表記をうちの書式に直したもの。categoryLinksとsourceCharactersは各武将の登録時に追記する。",
+  "ownHiddenCandidateは、このスキルが1次候補として載っている枠(2827 長谷川等伯 C枠)の2次候補から(S-08)。"
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 攻撃 250%上昇 / 防御 250%上昇"
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "虚松籟",
+  "rank": "S"
+ }
+}

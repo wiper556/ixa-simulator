@@ -1,0 +1,100 @@
+{
+ "name": "俵屋宗達",
+ "no": "2825",
+ "ch": "未確認",
+ "cost": 3.0,
+ "troop": null,
+ "sub": "",
+ "effect": null,
+ "furigana": "たわらやそうたつ",
+ "illustrator": "鏑木康隆",
+ "imageFull": "assets/img/characters/no2825_full.png",
+ "imageChar": "assets/img/characters/no2825_char.png",
+ "atkBase": 850,
+ "atkGrowth": 20.0,
+ "defBase": 850,
+ "defGrowth": 20.0,
+ "tacticsBase": 620.0,
+ "tacticsGrowth": 3.0,
+ "lv0Troops": 3350,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "嵐下墨炎",
+ "skillDetail": null,
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全 部隊内武将の全スキルの卓越追加確率が70%上昇(模倣不可・特殊効果は自部隊内では重複不可)　確率 50%"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "嵐下墨炎",
+   "rank": "S",
+   "afterSkill": "月詠ノ覇威",
+   "afterRank": "SS",
+   "target": null,
+   "rate": null,
+   "effectShort": null,
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃344%上昇+防御344%上昇(卓越確率+15%)"
+  },
+  {
+   "slot": "B",
+   "skill": "嵐下墨炎",
+   "rank": "S",
+   "afterSkill": "月詠ノ覇威",
+   "afterRank": "SS",
+   "target": null,
+   "rate": null,
+   "effectShort": null,
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃344%上昇+防御344%上昇(卓越確率+15%)"
+  },
+  {
+   "slot": "C",
+   "skill": "月詠ノ覇威",
+   "rank": "SS",
+   "afterSkill": "月詠ノ覇威",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "攻撃344%上昇+防御344%上昇(卓越確率+15%)"
+  },
+  {
+   "slot": "S1",
+   "skill": "月詠ノ覇威",
+   "rank": "SS",
+   "afterSkill": "月詠ノ覇威",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "攻撃344%上昇+防御344%上昇(卓越確率+15%)"
+  },
+  {
+   "slot": "S2",
+   "skill": "月詠ノ覇威",
+   "rank": "SS",
+   "afterSkill": "月詠ノ覇威",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "攻撃344%上昇+防御344%上昇(卓越確率+15%)"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/2825 と skills/嵐下墨炎)およびixawiki(BushoCard/2825俵屋宗達)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

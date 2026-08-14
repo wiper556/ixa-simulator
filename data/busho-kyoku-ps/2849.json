@@ -1,0 +1,122 @@
+{
+ "name": "赤井輝子",
+ "no": "2849",
+ "ch": "未確認",
+ "cost": 4.5,
+ "troop": "槍弓砲器防",
+ "sub": "",
+ "effect": "防御 400%上昇",
+ "furigana": "あかいてるこ",
+ "illustrator": "BISAI",
+ "imageFull": "assets/img/characters/no2849_full.png",
+ "imageChar": "assets/img/characters/no2849_char.png",
+ "atkBase": 1110,
+ "atkGrowth": 55.0,
+ "defBase": 1240,
+ "defGrowth": 65.0,
+ "tacticsBase": 520.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 4590,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "天凛不抜",
+ "skillDetail": "S/LV10 確率 100% 防御 400%上昇/対象:槍弓砲器\n①防御が400%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍弓砲器　確率 100% / 防御 400%上昇"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": "槍弓砲器　確率 100% / 防御 460%上昇"
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": "槍弓砲器　確率 100% / 防御 600%上昇"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": "槍弓砲器　確率 100% / 防御 800%上昇"
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": "槍弓砲器　確率 100% / 防御 1090%上昇"
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": "槍弓砲器　確率 100% / 防御 1480%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "美人剛腕",
+   "rank": "S",
+   "afterSkill": "美人剛腕",
+   "afterRank": "S",
+   "target": "全",
+   "rate": "55%",
+   "effectShort": "防御 780%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "針葉浄美",
+   "rank": "S",
+   "afterSkill": "針葉浄美",
+   "afterRank": "S",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "防御 480%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "舞蝶朧月",
+   "rank": "S",
+   "afterSkill": "月詠ノ覇威",
+   "afterRank": "SS",
+   "target": "部隊長",
+   "rate": "50%",
+   "effectShort": "卓越追加確率20%・1.25倍",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃344%上昇+防御344%上昇(卓越確率+15%)"
+  },
+  {
+   "slot": "S1",
+   "skill": "舞姫武神",
+   "rank": "SS",
+   "afterSkill": "舞姫武神",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "攻撃 910%上昇 防御 910%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "美人剛腕",
+   "rank": "S",
+   "afterSkill": "美人剛腕",
+   "afterRank": "S",
+   "target": "全",
+   "rate": "55%",
+   "effectShort": "防御 780%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/2849 と skills/天凛不抜)およびixawiki(BushoCard/2849赤井輝子)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

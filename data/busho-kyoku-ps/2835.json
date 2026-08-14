@@ -1,0 +1,128 @@
+{
+ "name": "大友義鑑",
+ "no": "2835",
+ "ch": "未確認",
+ "cost": 4.5,
+ "troop": "全防",
+ "sub": "",
+ "effect": "防御 400%上昇",
+ "furigana": "おおともよしあき",
+ "illustrator": "鏑木康隆",
+ "imageFull": "assets/img/characters/no2835_full.png",
+ "imageChar": "assets/img/characters/no2835_char.png",
+ "atkBase": 1060,
+ "atkGrowth": 45.0,
+ "defBase": 1230,
+ "defGrowth": 60.0,
+ "tacticsBase": 540.0,
+ "tacticsGrowth": 3.0,
+ "lv0Troops": 4580,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "S",
+  "ki": "A"
+ },
+ "initialSkill": "豊州ノ蠍",
+ "skillDetail": "S/LV10 確率 55% 防御 400%上昇/対象:全\n①防御が400%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 55% / 防御 400%上昇"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": "全　確率 55% / 防御 410%上昇"
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": "全　確率 55% / 防御 420%上昇"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": "全　確率 55% / 防御 435%上昇"
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": "全　確率 55% / 防御 450%上昇"
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": "全　確率 55% / 防御 475%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "豊州ノ蠍",
+   "rank": "S",
+   "afterSkill": "三千世界神将",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "55%",
+   "effectShort": "防御 400%上昇",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "防御 120%上昇(本丸防御陣形時コスト消費-1)"
+  },
+  {
+   "slot": "B",
+   "skill": "豊州ノ蠍",
+   "rank": "S",
+   "afterSkill": "三千世界神将",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "55%",
+   "effectShort": "防御 400%上昇",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "防御 120%上昇(本丸防御陣形時コスト消費-1)"
+  },
+  {
+   "slot": "C",
+   "skill": "永世ノ天隻",
+   "rank": "SS",
+   "afterSkill": "永世ノ天隻",
+   "afterRank": "SS",
+   "target": "全 飛翔9",
+   "rate": "48%",
+   "effectShort": "防御 6.5%×防御参加武将数(280人)=1820.0%"
+  },
+  {
+   "slot": "S1",
+   "skill": "三千世界神将",
+   "rank": "SS",
+   "afterSkill": "三千世界神将",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "防御 120%上昇(本丸防御陣形時コスト消費-1)"
+  },
+  {
+   "slot": "S2",
+   "skill": "黄泉醜女ノ屍兵",
+   "rank": "SS",
+   "afterSkill": "天地黎明",
+   "afterRank": "SSS",
+   "target": "全",
+   "rate": "54%",
+   "effectShort": "防御 200%上昇(70以下の被ダメージ上限45)",
+   "afterTarget": "全",
+   "afterRate": "70%",
+   "afterEffectShort": "防御 270%上昇(HP99以下で3倍)"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/2835 と skills/豊州ノ蠍)およびixawiki(BushoCard/2835大友義鑑)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

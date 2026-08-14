@@ -1,0 +1,100 @@
+{
+ "name": "禰津常安",
+ "no": "2822",
+ "ch": "未確認",
+ "cost": 4.0,
+ "troop": "全攻",
+ "sub": "",
+ "effect": "攻撃 85%上昇 飛翔12",
+ "furigana": "ねづじょうあん",
+ "illustrator": "池田宗隆",
+ "imageFull": "assets/img/characters/no2822_full.png",
+ "imageChar": "assets/img/characters/no2822_char.png",
+ "atkBase": 1160,
+ "atkGrowth": 57.0,
+ "defBase": 1100,
+ "defGrowth": 51.0,
+ "tacticsBase": 540.0,
+ "tacticsGrowth": 3.0,
+ "lv0Troops": 4260,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "S",
+  "ki": "A"
+ },
+ "initialSkill": "根津諏訪流鷹術",
+ "skillDetail": "S/LV10 確率 100% 攻撃 85%上昇 飛翔12/対象:全\n①攻撃 85%上昇 飛翔12",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 攻撃 85%上昇 飛翔12"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "根津諏訪流鷹術",
+   "rank": "S",
+   "afterSkill": "遠呂智ノ閃光",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "攻撃85%上昇 飛翔12 卓越 追加確率20%で攻撃効果が5倍 (模倣不可)",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 125%上昇(卓越追加確率15%・4倍)"
+  },
+  {
+   "slot": "B",
+   "skill": "根津諏訪流鷹術",
+   "rank": "S",
+   "afterSkill": "遠呂智ノ閃光",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "攻撃85%上昇 飛翔12 卓越 追加確率20%で攻撃効果が5倍 (模倣不可)",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 125%上昇(卓越追加確率15%・4倍)"
+  },
+  {
+   "slot": "C",
+   "skill": "火之迦具土神",
+   "rank": "SS",
+   "afterSkill": "火之迦具土神",
+   "afterRank": "SS",
+   "target": "槍・馬・砲",
+   "rate": "100%",
+   "effectShort": "攻撃 160%上昇(卓越追加確率25%・3倍、TRなし)"
+  },
+  {
+   "slot": "S1",
+   "skill": "遠呂智ノ閃光",
+   "rank": "SS",
+   "afterSkill": "遠呂智ノ閃光",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "攻撃 125%上昇(卓越追加確率15%・4倍)"
+  },
+  {
+   "slot": "S2",
+   "skill": "火之迦具土神",
+   "rank": "SS",
+   "afterSkill": "火之迦具土神",
+   "afterRank": "SS",
+   "target": "槍・馬・砲",
+   "rate": "100%",
+   "effectShort": "攻撃 160%上昇(卓越追加確率25%・3倍、TRなし)"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/2822 と skills/根津諏訪流鷹術)およびixawiki(BushoCard/2822禰津常安)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

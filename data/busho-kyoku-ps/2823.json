@@ -1,0 +1,97 @@
+{
+ "name": "織田有楽斎",
+ "no": "2823",
+ "ch": "未確認",
+ "cost": 3.0,
+ "troop": null,
+ "sub": "",
+ "effect": null,
+ "furigana": "おだうらくさい",
+ "illustrator": "影井由宇",
+ "imageFull": "assets/img/characters/no2823_full.png",
+ "imageChar": "assets/img/characters/no2823_char.png",
+ "atkBase": 800,
+ "atkGrowth": 15.0,
+ "defBase": 800,
+ "defGrowth": 15.0,
+ "tacticsBase": 650.0,
+ "tacticsGrowth": 3.5,
+ "lv0Troops": 3200,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "B",
+  "uma": "B",
+  "ki": "SS"
+ },
+ "initialSkill": "有楽流",
+ "skillDetail": null,
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全 部隊内武将スキル発動率+40%(部隊内重複不可)　確率 100%"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "天香山命",
+   "rank": "SS",
+   "afterSkill": "天香山命",
+   "afterRank": "SS",
+   "target": "全 覇道",
+   "rate": "100%",
+   "effectShort": "攻撃 120%上昇+速度90%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "八重言代主神",
+   "rank": "SS",
+   "afterSkill": "無窮天斥陣",
+   "afterRank": "SS",
+   "target": "自身",
+   "rate": "70%",
+   "effectShort": "初期スキル(戦闘スキルのみ)を模倣(1倍)",
+   "afterTarget": "槍弓馬",
+   "afterRate": "40%",
+   "afterEffectShort": "防御63%上昇 (攻撃部隊に兵器兵科がいれば効果1.5倍)"
+  },
+  {
+   "slot": "C",
+   "skill": "八幡神ノ威光",
+   "rank": "SSS",
+   "afterSkill": "八幡神ノ威光",
+   "afterRank": "SSS",
+   "target": "部隊長",
+   "rate": "70%",
+   "effectShort": "模倣倍率1.25倍"
+  },
+  {
+   "slot": "S1",
+   "skill": "茶人の教え",
+   "rank": "F",
+   "afterSkill": "茶人の教え",
+   "afterRank": "F",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "デッキ上武将回復率：15%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "月詠ノ覇威",
+   "rank": "SS",
+   "afterSkill": "月詠ノ覇威",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "攻撃344%上昇+防御344%上昇(卓越確率+15%)"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/2823 と skills/有楽流)およびixawiki(BushoCard/2823織田有楽斎)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}
