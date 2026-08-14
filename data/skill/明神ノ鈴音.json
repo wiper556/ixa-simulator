@@ -1,0 +1,64 @@
+{
+ "name": "明神ノ鈴音",
+ "rank": "S",
+ "baseRate": 50,
+ "target": "部隊長 不屈1 兵站",
+ "effectSummary": "S/LV10 確率 50% 部隊長の初期スキルを1.15倍で模倣/対象:部隊長　不屈1 兵站\n①所属部隊の部隊長が持つ模倣可能な初期スキルを通常攻撃/防御効果を1.15倍して模倣する\n②不屈1を持つ",
+ "categoryLinks": [
+  {
+   "href": "skills-leadermimic.html",
+   "label": "部隊長模倣スキル一覧を見る"
+  },
+  {
+   "href": "skills-fukutsu.html",
+   "label": "不屈スキル一覧を見る"
+  },
+  {
+   "href": "skills-heitan.html",
+   "label": "兵站スキル一覧を見る"
+  }
+ ],
+ "sourceCharacters": [
+  {
+   "name": "鶴姫",
+   "no": "2852",
+   "slot": "S1",
+   "db": "kyoku",
+   "note": [
+    "鶴姫(2852)のsynthesisTable S1枠(2026-08-14)"
+   ]
+  }
+ ],
+ "notes": [
+  "ixanary.com(skills/明神ノ鈴音)で確認(2026-08-14)。鶴姫(No.2852)の初期スキル。",
+  "模倣の倍率は鍛錬で上がる: LV10=1.15倍 / TR1=1.19 / TR2=1.24 / TR3=1.3(LV1は倍率なし)。",
+  "確率も上がる: LV10=50% / TR1=55% / TR2=60% / TR3=70%(LV1は16%)。TR4以降は情報源に無い。",
+  "ownHiddenCandidateは、このスキルが1次候補として載っている枠(2852 鶴姫 S1枠)の2次候補から(S-08)。"
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "部隊長 不屈1 兵站　確率 50% / 部隊長の初期スキルを攻撃・防御1.15倍で模倣"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": "部隊長 不屈1 兵站　確率 55% / 部隊長の初期スキルを攻撃・防御1.19倍で模倣"
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": "部隊長 不屈1 兵站　確率 60% / 部隊長の初期スキルを攻撃・防御1.24倍で模倣"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": "部隊長 不屈1 兵站　確率 70% / 部隊長の初期スキルを攻撃・防御1.3倍で模倣"
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "明神ノ鈴音",
+  "rank": "S"
+ }
+}
