@@ -297,17 +297,20 @@
     margin-top:1px;text-align:center;line-height:1.25;
   }
   /* 「自軍内で同じ兵種を指揮している武将数」の手入力。効果の枠の下に出す。
-     部隊の中身からは計算できない値なので、利用者に書いてもらう(2026-08-14)。 */
+     部隊の中身からは計算できない値なので、利用者に書いてもらう(2026-08-14)。
+     ラベルを横に置いたら枠からはみ出して下の行に重なったので、
+     枠の中(プレースホルダ)に「焙烙火矢 参加武将数」を入れる形にした。 */
   .fx-soldier-count{
-    margin-top:3px;display:flex;align-items:center;gap:4px;justify-content:center;
-  }
-  .fx-soldier-count .mc-label{
-    font-size:10px;color:var(--muted);white-space:nowrap;
+    margin-top:3px;
   }
   .fx-soldier-count input{
-    width:58px;flex-shrink:0;background:var(--input-bg);border:1px solid var(--gold);
-    color:var(--paper);border-radius:4px;padding:2px 5px;
+    width:100%;box-sizing:border-box;background:var(--input-bg);
+    border:1px solid var(--gold);color:var(--paper);border-radius:4px;padding:2px 6px;
     font-family:'JetBrains Mono',monospace;font-size:11px;text-align:right;
+  }
+  .fx-soldier-count input::placeholder{
+    font-family:'Zen Kaku Gothic New',sans-serif;font-size:10px;color:var(--muted);
+    text-align:left;
   }
   /* 中身が空のときに1行ぶんの高さを取らないようにする(上昇%の最大値表示など) */
   .fx-real-rate:empty{display:none;}
@@ -847,7 +850,7 @@
   // 【必須】attack-simulator.html を変更したコミットでは、必ずこの定数も一緒に更新すること。
   // 表示文言の変更・CSSの微調整であっても対象(ユーザーがスクショで版を判別できなくなるため)。
   // 更新忘れが繰り返し発生しているので、編集したらコミット前にここを見に来る。
-  const SIMULATOR_VERSION = 'v2026-08-14.5';
+  const SIMULATOR_VERSION = 'v2026-08-14.6';
   document.addEventListener('DOMContentLoaded', ()=>{
     const badge = document.getElementById('simVersionBadge');
     if(badge) badge.textContent = SIMULATOR_VERSION;
@@ -1084,6 +1087,13 @@
   // 該当スキルが入っている枠にだけ入力欄を出し、兵士名ごとの値をそろえる。
   const FX_TO_SKILL_FIELD = { fx1:'skillInit', fx2:'skillAdd1', fx3:'skillAdd2', fx4:'skillUltimate' };
 
+  // 入力の上限。自軍内で同じ兵種を指揮している武将数なので、
+  // 防御参加武将数より多くはならない。未入力のときは仕様上の上限280を使う。
+  function soldierCountMax(){
+    const n = parseFloat(battleVariables.defenderCount);
+    return (n && n > 0) ? Math.min(280, Math.floor(n)) : 280;
+  }
+
   function updateSoldierCountBoxes(){
     for(let col=0; col<4; col++){
       const soldier = soldierOf(col);
@@ -1094,8 +1104,10 @@
         const need = slotUsesSoldierCount(col, FX_TO_SKILL_FIELD[fxKey]);
         box.style.display = need ? '' : 'none';
         if(!need) return;
-        const label = $('mclabel_' + cellId(fxKey, col));
-        if(label) label.textContent = (soldier ? soldier : '同兵種') + ' 参加武将数';
+        // 何を入れる欄なのかは枠の中に出す(横に置くとはみ出して下の行に重なる)
+        input.placeholder = (soldier ? soldier : '同兵種') + ' 参加武将数';
+        // 上限は防御参加武将数。自軍内の話なので、それより多くなることはない。
+        input.max = String(soldierCountMax());
         // 兵士名が同じ列は同じ値になる。兵士未選択のときは共有しない。
         const shared = soldier ? manualSoldierCounts[soldier] : undefined;
         const want = (shared === undefined || shared === null) ? '' : String(shared);
@@ -1115,7 +1127,11 @@
           if(!soldier) return;   // 兵士が決まっていないと、どこに紐づけるか決められない
           const v = input.value.trim();
           if(v === '') delete manualSoldierCounts[soldier];
-          else manualSoldierCounts[soldier] = Math.max(0, parseInt(v, 10) || 0);
+          else {
+            const n = Math.max(0, Math.min(soldierCountMax(), parseInt(v, 10) || 0));
+            manualSoldierCounts[soldier] = n;
+            if(String(n) !== v) input.value = String(n);   // 上限を超えたら丸める
+          }
           updateSoldierCountBoxes();   // 同じ兵士の他の列にも同じ値を入れる
           applyVariableSkillsToEffectTable();
         });
@@ -3343,7 +3359,6 @@
         <div class="fx-real-rate" id="real_${cellId(row.key,col)}">実発動率: -</div>
         <div class="fx-real-rate" id="valmax_${cellId(row.key,col)}"></div>
         <div class="fx-soldier-count" id="mc_${cellId(row.key,col)}" style="display:none;">
-          <span class="mc-label" id="mclabel_${cellId(row.key,col)}"></span>
           <input type="number" id="${cellId(row.key,col,'mcount')}" min="0" step="1" placeholder="人数">
         </div>
       </div>`;
@@ -4415,6 +4430,11 @@
     v = Math.max(0, Math.min(280, v));
     battleVariables.defenderCount = v;
     saveBattleVariables();
+    // 防御参加武将数を下げたら、「同じ兵種の武将数」もそれを超えないよう丸める
+    const cap = soldierCountMax();
+    Object.keys(manualSoldierCounts).forEach(k=>{
+      if(manualSoldierCounts[k] > cap) manualSoldierCounts[k] = cap;
+    });
     applyVariableSkillsToEffectTable();
   });
 
