@@ -75,7 +75,10 @@ def v_set(i, col, val):
 #   data/skill/月詠ノ覇威.json   佐渡島方治をS1枠の所持武将に持つ
 
 BUSHO = "data/busho/1321.json"
-KYOKU = "data/busho-kyoku/2614.json"
+# 2026-08-14: 極を通常極とプラチナ・シークレットに分けたとき、2614(佐渡島方治)は
+# カードNo.の100の位が6=プラチナ極なので data/busho-kyoku-ps/ へ移った。
+# ここのパスが古いままでCIが落ちた(FileNotFoundError)。
+KYOKU = "data/busho-kyoku-ps/2614.json"
 SKILL = "data/skill/月詠ノ覇威.json"
 
 # (チェック種別, 触るファイル, 置換前, 置換後)
