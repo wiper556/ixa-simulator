@@ -20,10 +20,28 @@
 **出力は今までと同じJSの書き方に揃えて、正本の置き場所だけを移す。**
 表示も検査もそのまま通ることを確かめてから、次の段へ進む。
 
+■一覧ページには「一覧に要る分」しか書かない(2026-08-14)
+
+以前はここで全フィールドを書き出していたので、一覧を開くだけで
+鍛錬表・合成表・スキル本文まで全部ダウンロードすることになっていた。
+characters.html 533KB / characters-kyoku.html 504KB / skills.html 548KB。
+そのうち約8割は、一覧の表示にも検索にも使われない詳細データだった。
+
+詳細は busho/{No}.html ・ skill/{名前}.html に分かれており、
+そちらは data/ から直接組み立てる(gen_detail_pages.py)。
+つまり一覧ページに詳細を積む理由がもう無い。
+
+    LIST_FIELDS … 一覧に載せるフィールド。ここに無いものは data/ にだけ置く。
+
+**フィールドを一覧で使いたくなったら、まず LIST_FIELDS に足す。**
+足さずに使うと undefined になる(ページのJSは静かに空欄を描く)。
+
 ■コメント
 
-JSON側の "notes"(要素全体) と 行の "note" を、// のコメント行として書き戻す。
-データとしては出力しない(ページに余分なフィールドを増やさないため)。
+data/ の "notes"(要素全体) と 行の "note" は**書き戻さない**。
+以前はページ側に // として復元していたが、正本が data/ に移った今、
+ページは生成物でしかなく、そこに出典の記録を積む意味が無い
+(3ページ合計で約1,500行あった)。記録は data/*.json 側にある。
 
     python tools/build_data.py            # 全部
     python tools/build_data.py --dry-run  # 差分の有無だけ見る
@@ -43,6 +61,45 @@ BEGIN = ("  // BUILD:%s:start ここから下は tools/build_data.py が %s か�
          "生成しています。直接編集しないこと")
 END = "  // BUILD:%s:end"
 WRAP = 118
+
+# 一覧ページに載せるフィールド(配列名 → フィールド名の集合)。
+# 中身は「一覧の表・並べ替え・検索・●マークが実際に読んでいるもの」だけ。
+# 詳細だけで使うフィールド(鍛錬表・合成表・成長値・スキル本文など)は載せない。
+#
+# 武将の一覧が読むもの:
+#   表   no / name / ch / cost / troop / sub / effect / imageChar(ホバーの顔出し)
+#   検索 furigana / initialSkill
+#   ●   imageFull(画像の有無) / approved / reviewedOk
+#
+# スキルの一覧が読むもの:
+#   表   name / rank
+#   検索 sourceCharacters[].name(所持武将の名前で引けるようにしてある)
+#
+# 傑(ketsuGenerals)は一覧に数値まで並べる作りなので、対象が増える。
+BUSHO_LIST_FIELDS = [
+    "no", "name", "furigana", "ch", "cost", "troop", "sub", "effect",
+    "imageChar", "imageFull", "initialSkill", "approved", "reviewedOk",
+]
+LIST_FIELDS = {
+    "generals": BUSHO_LIST_FIELDS,
+    "kyokuGenerals": BUSHO_LIST_FIELDS,
+    "ketsuGenerals": BUSHO_LIST_FIELDS + [
+        "atkBase", "defBase", "tacticsBase", "lv0Troops"],
+    "skills": ["name", "rank", "sourceCharacters"],
+}
+
+
+def slim(entry, array):
+    """一覧に載せる分だけを、元の並び順のまま抜き出す。
+
+    並び順を変えないのが要点。JSON.stringify の結果が変わると
+    verify_extract.py の突き合わせが通らなくなる。
+    """
+    fields = LIST_FIELDS.get(array)
+    if fields is None:
+        return entry
+    return collections.OrderedDict(
+        (k, v) for k, v in entry.items() if k in fields)
 
 
 def js_value(v):
@@ -75,10 +132,10 @@ def emit_entry(entry, ind="    "):
 
     **キーの並び順は元のまま保つ。** 並びを変えると JSON.stringify の結果が
     変わってしまい、受け入れ検査(verify_extract.py)が通らなくなる。
+
+    notes / note(出典の記録)は書き出さない。正本は data/*.json 側にある。
     """
     out = []
-    for line in entry.get("notes", []):
-        out.append("%s// %s" % (ind, line))
 
     # 連続するスカラーを1かたまり、{...}が並ぶ配列を1かたまりとして区切る
     segs, run = [], []
@@ -116,8 +173,6 @@ def emit_entry(entry, ind="    "):
             k, rows = payload
             lines.append("%s:[" % k)
             for ri, row in enumerate(rows):
-                for line in row.get("note", []):
-                    lines.append("  // %s" % line)
                 clean = collections.OrderedDict(
                     (kk, vv) for kk, vv in row.items() if kk != "note")
                 lines.append("  %s%s" % (js_value(clean),
@@ -178,7 +233,8 @@ def current_order(text, array, keyfld):
 
 def replace_array(text, array, outdir, keyfld):
     """配列の中身を差し替え、生成ブロックのマーカーで囲む。"""
-    entries = load_entries(outdir, keyfld, current_order(text, array, keyfld))
+    entries = [slim(e, array) for e in
+               load_entries(outdir, keyfld, current_order(text, array, keyfld))]
     lo, hi = array_span(text, array)
     decl = text.rfind("\n", 0, text.rfind("=", 0, lo)) + 1
     tail = text.find("\n", hi)
@@ -203,7 +259,10 @@ def main(dry=False):
         text = io.open(p, encoding="utf-8", newline="").read()
         new, n = replace_array(text, array, outdir, keyfld)
         same = new == text
-        print("  %-24s %3d件 %s" % (page, n, "変化なし" if same else "書き換え"))
+        print("  %-24s %3d件 %s (%dKB→%dKB)"
+              % (page, n, "変化なし" if same else "書き換え",
+                 len(text.encode("utf-8")) // 1024,
+                 len(new.encode("utf-8")) // 1024))
         if not same and not dry:
             io.open(p, "w", encoding="utf-8", newline="").write(new)
             changed += 1

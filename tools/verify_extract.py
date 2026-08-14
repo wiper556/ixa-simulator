@@ -1,8 +1,13 @@
 # -*- coding: utf-8 -*-
-"""切り出したJSONが、ページ本体の配列と1バイトも違わないことを確かめる。
+"""ページの配列が、正本(data/)から作れるものと1バイトも違わないことを確かめる。
 
-作り直しの第1工程(extract_data.py)の受け入れ検査。notes / note は
-コメントから起こした新しいフィールドなので、比較の前に取り除く。
+もとは作り直しの第1工程(extract_data.py)の受け入れ検査だった。
+2026-08-14に一覧ページが**一覧に要るフィールドだけ**を持つようになったので、
+比べる相手も「正本を LIST_FIELDS で絞ったもの」に変えてある。
+
+ ・notes / note は出典の記録なのでページには出さない。比較前に落とす。
+ ・ページ側に、正本に無いフィールドが増えていないかも見る
+   (絞り込みを通さずに手で足した、という状態を捕まえる)。
 
     python tools/verify_extract.py
 """
@@ -14,6 +19,7 @@ import sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(ROOT, "tools"))
+from build_data import slim  # noqa: E402
 from extract_data import TARGETS, evaluate_array, safe_name  # noqa: E402
 
 
@@ -44,7 +50,8 @@ def main():
             saved = json.load(io.open(p, encoding="utf-8"),
                               object_pairs_hook=collections.OrderedDict)
             a = json.dumps(entry, ensure_ascii=False, sort_keys=False)
-            b = json.dumps(drop_notes(saved), ensure_ascii=False, sort_keys=False)
+            b = json.dumps(slim(drop_notes(saved), array),
+                           ensure_ascii=False, sort_keys=False)
             if a != b:
                 miss += 1
                 print("  [不一致] %s / %s" % (outdir, key))

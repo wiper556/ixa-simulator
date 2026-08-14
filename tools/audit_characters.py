@@ -23,6 +23,9 @@ ixanary のスキル個別ページ(/skills/{スキル名}/)の合成テーブ�
 import json, io, re, os, sys, time, collections, urllib.parse, urllib.request
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, os.path.join(ROOT, "tools"))
+from extract_data import TARGETS as DATA_TARGETS  # noqa: E402
+
 OUT = os.path.join(ROOT, "tools", "audit_out")
 CACHE_SKILL = os.path.join(OUT, "cache_skill")
 CACHE_CARD = os.path.join(OUT, "cache_card")
@@ -113,20 +116,89 @@ def extract_array(path, varname):
     return json.loads(out)
 
 
+def _drop_notes(x):
+    """出典の記録(notes / note)は監査の対象データではないので落とす。"""
+    if isinstance(x, dict):
+        return {k: _drop_notes(v) for k, v in x.items() if k not in ("notes", "note")}
+    if isinstance(x, list):
+        return [_drop_notes(v) for v in x]
+    return x
+
+
+def _page_matches(page_val, src_val):
+    """ページに**載っている**値が、正本と同じかどうか。
+
+     ・ページに無いものは見ない  … 一覧に載せないフィールドは正本にだけある
+     ・ページに余分にあるものは不一致 … 実行時に足された/手で書き足した の形
+    """
+    if isinstance(page_val, dict):
+        return (isinstance(src_val, dict)
+                and all(k in src_val and _page_matches(v, src_val[k])
+                        for k, v in page_val.items()))
+    if isinstance(page_val, list):
+        return (isinstance(src_val, list) and len(page_val) == len(src_val)
+                and all(_page_matches(a, b) for a, b in zip(page_val, src_val)))
+    return page_val == src_val
+
+
+def load_source(page, array):
+    """正本(data/)を読み、ページの配列が正本と食い違っていないかも見る。
+
+    2026-08-14: 一覧ページには**一覧に要る分しか置かなくなった**
+    (build_data.LIST_FIELDS)。鍛錬表も合成表もページ上には無いので、
+    監査する中身は正本 data/ から取る。
+
+    ただし、それだけにすると N-1(第4回レッドチーム)で塞いだ穴が開き直る。
+    N-1 は「配列の後ろに1行足して実行時に値を書き換える」手口だった:
+
+        ];
+        generals.forEach(function(g){ if (g.no === '1310') { g.approved = true; } });
+
+    正本しか見なければ、ページ上だけ赤丸が増えていても監査は気づかない。
+    そこで **ページを実行した結果を、正本と突き合わせる**。
+
+    比べ方は「ページに載っている値が正本と同じか」。何を載せるかの決定
+    (build_data.LIST_FIELDS)には踏み込まない。載せる/載せないの取り違えは
+    tools/check_generated.py が別に見る(正本から作り直して差分を取る)ので、
+    ここで二重に持つと、絞り込みを変えるたびに両方直すことになる。
+
+    返り値: (正本の全データ, 食い違いの説明)
+    """
+    from build_data import current_order, load_entries
+    outdir, keyfld = {a: (d, k) for _p, a, d, k in DATA_TARGETS}[array]
+    path = os.path.join(ROOT, page)
+    with io.open(path, encoding="utf-8") as f:
+        text = f.read()
+    full = [_drop_notes(e) for e in
+            load_entries(outdir, keyfld, current_order(text, array, keyfld))]
+
+    bad = []
+    live = extract_array(path, array)
+    if len(live) != len(full):
+        bad.append("%s の %s は実行後 %d件、正本(%s)は %d件"
+                   % (page, array, len(live), outdir, len(full)))
+    else:
+        for src, one in zip(full, live):
+            if not _page_matches(one, src):
+                bad.append("%s の %s「%s」がページ上で正本と違う値になっている"
+                           % (page, array, src.get(keyfld)))
+    return full, bad
+
+
 def load():
     p = lambda n: os.path.join(ROOT, n)
-    d = {
-        "generals": extract_array(p("characters.html"), "generals"),
-        "kyokuGenerals": extract_array(p("characters-kyoku.html"), "kyokuGenerals"),
-        "skills": extract_array(p("skills.html"), "skills"),
-        "LINKED_SKILLS": extract_array(p("characters.html"), "LINKED_SKILLS"),
-        "KK_LINKED_SKILLS": extract_array(p("characters-kyoku.html"), "KK_LINKED_SKILLS"),
-    }
-    # 傑は少数だが sourceCharacters の db 判定(S-07)に要る
-    try:
-        d["ketsuGenerals"] = extract_array(p("characters-ketsu.html"), "ketsuGenerals")
-    except Exception:
-        d["ketsuGenerals"] = []
+    d, tamper = {}, []
+    for page, array in (("characters.html", "generals"),
+                        ("characters-kyoku.html", "kyokuGenerals"),
+                        # 傑は少数だが sourceCharacters の db 判定(S-07)に要る
+                        ("characters-ketsu.html", "ketsuGenerals"),
+                        ("skills.html", "skills")):
+        d[array], bad = load_source(page, array)
+        tamper += bad
+    d["tamper"] = tamper
+    # LINKED_SKILLS はページが手で持っている配列(生成物ではない)ので、そのまま読む
+    d["LINKED_SKILLS"] = extract_array(p("characters.html"), "LINKED_SKILLS")
+    d["KK_LINKED_SKILLS"] = extract_array(p("characters-kyoku.html"), "KK_LINKED_SKILLS")
     # シミュレーター側(P-04)。JSファイルなので生テキストで持つ
     with io.open(p(os.path.join("assets", "js", "ixa-data.js")), encoding="utf-8") as f:
         d["ixaDataSrc"] = f.read()
@@ -247,6 +319,12 @@ def main():
     # ここは素直な関数のままにしておく。
     def add(cat, sev, msg):
         R.append((cat, sev, msg))
+
+    # 公開されるページの値が、監査している正本と違う(N-1の再発防止。load_source参照)
+    for m in D["tamper"]:
+        add("ページの配列が正本と違う", "HIGH",
+            m + " / 配列は data/ からの生成物。手で書き換えず "
+                "`python tools/build_data.py` で作り直す")
 
     for n, c in collections.Counter([s["name"] for s in D["skills"]]).items():
         if c > 1:
@@ -424,14 +502,26 @@ def main():
             % (nm, len(where), "/".join(sorted(where)[:4])))
 
     # S-07: sourceCharacters の db 指定ミス(極なのに characters.html を指す等)
-    for page, src in [("skills.html", None)] + [(n, t) for n, t in D["listPages"].items()]:
-        text = src if src is not None else None
-        if text is None:
-            with io.open(os.path.join(ROOT, "skills.html"), encoding="utf-8") as f:
-                text = f.read()
+    def db_want(no):
+        return "kyoku" if no in kyoku_no else ("ketsu" if no in ketsu_no else None)
+
+    # 2026-08-14: ここは skills.html の**本文**を正規表現で読んでいた。
+    # 配列が data/skill/ からの生成物になったので、判定は正本の側で行う。
+    # (本文を読んだままだと、正本を直しても生成するまで鳴らない)
+    for s in D["skills"]:
+        for row in s.get("sourceCharacters") or []:
+            no = str(row.get("no") or "")
+            want, got = db_want(no), row.get("db")
+            if got != want:
+                add("sourceCharactersのdb", "HIGH",
+                    "data/skill/%s.json: %s No.%s の db が %s(正しくは %s)"
+                    % (s.get("name"), row.get("name"), no,
+                       got or "無し", want or "無し(通常DB)"))
+    # 一覧ページ(skills-*.html)は sourceCharacters を独自に複製しているので、本文を見る
+    for page, text in D["listPages"].items():
         for m in re.finditer(r'\{name:"([^"]*)", no:"(\d+)"([^{}]*)\}', text):
             no, rest = m.group(2), m.group(3)
-            want = "kyoku" if no in kyoku_no else ("ketsu" if no in ketsu_no else None)
+            want = db_want(no)
             got = re.search(r'db:"([^"]*)"', rest)
             got = got.group(1) if got else None
             if got != want:

@@ -12,6 +12,12 @@ prerender.py と同じで、生成物(busho/ ・ skill/)は手で編集しない
 
 作り: 描画は各DBページが持つ描画関数を実機で動かしてinnerHTMLを取り出す。
 描画ロジックを二重に持たないので、本体を直せば再生成するだけで追随する。
+
+データの出どころ(2026-08-14に変更): **正本の data/ を直接読んで、
+1件ずつ描画関数に渡す。** 以前はページ内の配列を JSON.stringify して
+取り出していたが、一覧ページには一覧に要るフィールドしか置かなくなった
+(build_data.py の LIST_FIELDS)ので、配列からは詳細が取れない。
+描画関数だけを借りて、渡す値は正本から持ってくる形にしてある。
 """
 import contextlib
 import functools
@@ -59,6 +65,30 @@ SRC = [
     ('characters-ketsu.html', 'ketsuGenerals', 'ktRenderDetail',  'ktDetailBody',  'busho', '傑武将', 'characters-ketsu.html'),
     ('skills.html',           'skills',        'sklRenderDetail', 'sklDetailBody', 'skill', 'スキル', 'skills.html'),
 ]
+
+sys.path.insert(0, os.path.join(ROOT, 'tools'))
+from build_data import current_order, load_entries  # noqa: E402
+from extract_data import TARGETS as DATA_TARGETS  # noqa: E402
+
+# 配列名 → (正本の置き場, キーになるフィールド)
+DATA_DIR = {a: (d, k) for _p, a, d, k in DATA_TARGETS}
+
+
+def drop_notes(x):
+    """出典の記録は描画に使わないので、渡す前に落とす。"""
+    if isinstance(x, dict):
+        return {k: drop_notes(v) for k, v in x.items() if k not in ('notes', 'note')}
+    if isinstance(x, list):
+        return [drop_notes(v) for v in x]
+    return x
+
+
+def load_full(src, array):
+    """正本(data/)から全フィールドを、一覧と同じ並び順で読む。"""
+    outdir, keyfld = DATA_DIR[array]
+    text = io.open(os.path.join(ROOT, src), encoding='utf-8').read()
+    order = current_order(text, array, keyfld)
+    return [drop_notes(e) for e in load_entries(outdir, keyfld, order)]
 
 NAV = '''  <aside class="site-sidebar" id="siteSidebar">
     <div class="sidebar-header"><span class="sidebar-title">メニュー</span></div>
@@ -184,16 +214,12 @@ def main(HOST):
 
     # 先に全ページのNo./スキル名を集めておく(リンク書き換えの判定に使う)
     known_nos, known_skills = set(), set()
-    with sync_playwright() as pw0:
-        b0 = pw0.chromium.launch()
-        for src, var, _f, _c, outdir, _k, _l in SRC:
-            p0 = b0.new_page()
-            p0.goto(HOST + src, wait_until='networkidle'); p0.wait_for_timeout(400)
-            for e in p0.evaluate('()=>JSON.parse(JSON.stringify(%s))' % var):
-                (known_nos if outdir == 'busho' else known_skills).add(
-                    e['no'] if outdir == 'busho' else e['name'])
-            p0.close()
-        b0.close()
+    full = {}
+    for src, var, _f, _c, outdir, _k, _l in SRC:
+        full[var] = load_full(src, var)
+        for e in full[var]:
+            (known_nos if outdir == 'busho' else known_skills).add(
+                e['no'] if outdir == 'busho' else e['name'])
     print('リンク先候補: 武将%d / スキル%d' % (len(known_nos), len(known_skills)))
 
     with sync_playwright() as pw:
@@ -207,14 +233,19 @@ def main(HOST):
             pg.on('pageerror', lambda e: errs.append(str(e)))
             pg.goto(HOST + src, wait_until='networkidle')
             pg.wait_for_timeout(700)
-            data = pg.evaluate('()=>JSON.parse(JSON.stringify(%s))' % var)
+            data = full[var]
 
-            for idx, e in enumerate(data):
-                # const宣言の配列はwindowのプロパティにならないので、
-                # 変数名・関数名はJSソースに直接埋め込んで参照する
+            # スキルの詳細は他スキルのLV10効果を併記する(隠し候補・合成先)。
+            # 一覧の配列には鍛錬表が無いので、正本の全データを積んでおく。
+            if var == 'skills':
+                pg.evaluate('(all)=>{ window.__sklAllSkills = all; }', data)
+
+            for e in data:
+                # 描画関数だけをページから借りて、値は正本(data/)から渡す。
+                # 関数名は const 宣言でwindowに乗らないので、JSソースに直接書く。
                 detail = pg.evaluate(
-                    '(idx)=>{ %s(%s[idx]); const el=document.getElementById("%s");'
-                    ' return el ? el.innerHTML : null; }' % (fn, var, cid), idx)
+                    '(g)=>{ %s(g); const el=document.getElementById("%s");'
+                    ' return el ? el.innerHTML : null; }' % (fn, cid), e)
                 if not detail:
                     print('  ! 描画できない:', e.get('name')); continue
                 detail = fix_paths(detail, known_nos, known_skills)
@@ -292,55 +323,20 @@ def main(HOST):
 
 
 def wire():
-    # ---------- 1. 詳細パネルの下に単独ページへのリンク ----------
-    # (ページ, 詳細bodyのid, リンク先の作り方JS)
-    PERMA = [
-        ('characters.html',       'gdbDetailBody', 'gdbRoute',  "'busho/'+g.no+'.html'",  'g'),
-        ('characters-kyoku.html', 'kkDetailBody',  'kkRoute',   "'busho/'+g.no+'.html'",  'g'),
-        ('characters-ketsu.html', 'ktDetailBody',  'ktRoute',   "'busho/'+g.no+'.html'",  'g'),
-        ('skills.html',           'sklDetailBody', 'sklRoute',
-         "'skill/'+encodeURIComponent(s.name.replace(/[ \\u3000]/g,'_'))+'.html'", 's'),
-    ]
-    for f, bodyid, routefn, expr, var in PERMA:
-        s = io.open(f, encoding='utf-8', newline='').read()
-        boxid = bodyid.replace('DetailBody', 'Permalink')
-    
-        # 置き場所: 詳細bodyの直後(コメント欄の前)
-        anchor = '<div id="%s"></div>' % bodyid
-        assert anchor in s, f
-        if ('id="%s"' % boxid) not in s:
-            s = s.replace(anchor, anchor + '\n      <p id="%s" class="detail-permalink"></p>' % boxid, 1)
-    
-        # ルーティングで中身を入れる。
-        # 開始/終了マーカーで挟み、再実行時はマーカーごと消してから入れ直す
-        # (目印なしで正規表現に範囲を推測させると、入れ子になって二重化する)
-        BEG, END = '    // PERMALINK:start', '    // PERMALINK:end'
-        s = re.sub(re.escape(BEG) + r'.*?' + re.escape(END) + r'\n', '', s, flags=re.S)
+    # ---------- 1. 「このページの単独URL」リンクは廃止(2026-08-14) ----------
+    # 一覧の行と武将名が直接 busho/{No}.html を指すようになり、
+    # ページ内の詳細パネルは表示されなくなったので、そこに置いた
+    # 単独ページへのリンクは誰の目にも触れない。差し込み処理ごと畳んだ。
+    # 既に入っているブロックは、ここで取り除く。
+    for f in ('characters.html', 'characters-kyoku.html',
+              'characters-ketsu.html', 'skills.html'):
+        s0 = io.open(f, encoding='utf-8', newline='').read()
+        s = re.sub(r'    // PERMALINK:start.*?    // PERMALINK:end\n', '', s0, flags=re.S)
+        s = re.sub(r'\n *<p id="\w+Permalink" class="detail-permalink"></p>', '', s)
+        if s != s0:
+            io.open(f, 'w', encoding='utf-8', newline='').write(s)
+            print('  単独URLリンクの残りを撤去:', f)
 
-        anchor2 = "    window.scrollTo(0, 0);\n  }\n\n  window.addEventListener('hashchange', %s);" % routefn
-        assert anchor2 in s, '差し込み位置が見つからない: ' + f
-        block = (
-            BEG + ' この項目だけの単独ページ(検索から直接来られるようにしている)\n'
-            '    (function(){\n'
-            "      const box = document.getElementById('%s');\n"
-            '      if(box) box.innerHTML = \'<a href="\' + %s + \'">このページの単独URL</a>\';\n'
-            '    })();\n' % (boxid, expr)
-            + END + '\n')
-        s = s.replace(anchor2, block + anchor2, 1)
-        io.open(f, 'w', encoding='utf-8', newline='').write(s)
-        print('  リンク追加:', f)
-    
-    # 見た目(共通CSSに1つだけ足す)
-    css = io.open('assets/css/site.css', encoding='utf-8', newline='').read()
-    if '.detail-permalink' not in css:
-        css += ('\n/* 武将/スキルの詳細から、その項目だけの単独ページ(busho/・skill/)へ行くリンク。\n'
-                '   検索エンジンに単独ページの存在を伝える導線も兼ねている。 */\n'
-                '.detail-permalink{margin:18px 0 0;font-size:12.5px;}\n'
-                '.detail-permalink a{color:var(--muted);}\n'
-                '.detail-permalink a:hover{color:var(--vermillion-bright);}\n')
-        io.open('assets/css/site.css', 'w', encoding='utf-8', newline='').write(css)
-        print('  CSS追加: .detail-permalink')
-    
     # ---------- 2. ハブページから索引へ ----------
     HUB = [('characters-hub.html', 'busho/', '武将ページ一覧(1体ずつ)',
             'カードNo.ごとの単独ページです。検索やブックマークから直接開けます。'),

@@ -136,7 +136,7 @@
   <main class="site-main">
     <div id="listView">
       <h1 class="page-title">傑武将データベース</h1>
-      <p class="kt-note-lead">傑は3種のみ。鍛錬(TR)が無く効果は固定で、合成素材にもできない特殊なカード。行を押すと詳細を開く。</p>
+      <p class="kt-note-lead">傑は3種のみ。鍛錬(TR)が無く効果は固定で、合成素材にもできない特殊なカード。行を押すとその武将のページを開く。</p>
       <div id="ktList"></div>
       <div id="pageComments"></div>
     </div>
@@ -144,7 +144,6 @@
     <div id="detailView" style="display:none;">
       <p class="kt-back-link"><a href="characters-ketsu.html">← 傑武将一覧に戻る</a></p>
       <div id="ktDetailBody"></div>
-      <p id="ktPermalink" class="detail-permalink"></p>
       <div id="ktComments"></div>
     </div>
   </main>
@@ -172,26 +171,18 @@
   // No.はくじの提供割合表(ゲーム内「確率情報」)に準拠している)。
   // BUILD:ketsuGenerals:start ここから下は tools/build_data.py が data/busho-ketsu/ から生成しています。直接編集しないこと
   const ketsuGenerals = [
-    {name:"織田信長", no:"20001", furigana:"おだのぶなが", illustrator:"直良有祐", troop:"全攻", sub:"", hasHado:true,
-      effect:"鉄砲足軽の攻防+7／攻撃666%上昇(覇道)", imageFull:"assets/img/characters/no20001_full.png",
-      imageChar:"assets/img/characters/no20001_char.png", atkBase:70000, defBase:50000, tacticsBase:5000,
-      lv0Troops:25000, initialSkill:"天魔絶界",
-      skillDetail:"傑/効果固定 確率 100% 攻撃666%上昇/対象:全　覇道\n模倣不可・重複不可\n①攻撃666%上昇する\n②所属部隊の「鉄砲足軽」の攻撃力・防御力が+7される\n③同じ合流攻撃に参加する他部隊の「鉄砲足軽」の攻撃力が+3される\n④所属部隊の武将が持つスキルを無効化や発動率低下から保護する",
-      alwaysEffects:["本領と陣、出城が黄金造りになる", "チャットの文字色が金色になる", "位階有効時、階位が正一位となる", "陣獲得時、陣のレベルが5になる"]},
+    {name:"織田信長", no:"20001", furigana:"おだのぶなが", troop:"全攻", sub:"", effect:"鉄砲足軽の攻防+7／攻撃666%上昇(覇道)",
+      imageFull:"assets/img/characters/no20001_full.png", imageChar:"assets/img/characters/no20001_char.png",
+      atkBase:70000, defBase:50000, tacticsBase:5000, lv0Troops:25000, initialSkill:"天魔絶界"},
 
-    {name:"豊臣秀吉", no:"20002", furigana:"とよとみひでよし", illustrator:"直良有祐", troop:"全攻防", sub:"", hasHado:true,
+    {name:"豊臣秀吉", no:"20002", furigana:"とよとみひでよし", troop:"全攻防", sub:"",
       effect:"騎馬鉄砲の攻防+7／攻防550%上昇／黄金造りの拠点で武将攻防1.5倍(覇道)", imageFull:"assets/img/characters/no20002_full.png",
       imageChar:"assets/img/characters/no20002_char.png", atkBase:60000, defBase:60000, tacticsBase:5500,
-      lv0Troops:24000, initialSkill:"覇軍 悉国平定",
-      skillDetail:"傑/効果固定 確率 100% 攻撃550%上昇/対象:全　覇道\n模倣不可・重複不可\n①攻撃550%上昇する\n②防御550%上昇する\n③所属部隊の「騎馬鉄砲」の攻撃力・防御力が+7される\n④同じ合流攻撃に参加する他部隊の「騎馬鉄砲」の攻撃力が+3される\n⑤【黄金造り】の拠点に配置時は武将攻撃力と武将防御力が1.5倍される\n⑥所属部隊の武将が持つスキルを無効化や発動率低下から保護する",
-      alwaysEffects:["本領と陣、出城が黄金造りになる", "チャットの文字色が金色になる", "位階有効時、階位が正一位となる", "陣獲得時、陣のレベルが5になる"]},
+      lv0Troops:24000, initialSkill:"覇軍 悉国平定"},
 
-    {name:"徳川家康", no:"20003", furigana:"とくがわいえやす", illustrator:"直良有祐", troop:"全攻防", sub:"飛翔10", hasHado:true,
-      effect:"焙烙火矢の攻防+7／攻防500%上昇+飛翔10(覇道)", imageFull:"assets/img/characters/no20003_full.png",
-      imageChar:"assets/img/characters/no20003_char.png", atkBase:65000, defBase:65000, tacticsBase:5000,
-      lv0Troops:25000, initialSkill:"神威蓋世",
-      skillDetail:"傑/効果固定 確率 100% 攻撃500%上昇/対象:全　覇道　飛翔10\n模倣不可・重複不可\n①攻撃500%上昇する\n②防御500%上昇する\n③飛翔10を得る\n④所属部隊の「焙烙火矢」の攻撃力・防御力が+7される\n⑤同じ合流攻撃に参加する他部隊の「焙烙火矢」の攻撃力が+3される\n⑥所属部隊の武将が持つスキルを無効化や発動率低下から保護する",
-      alwaysEffects:["合戦中1回まで「葵紋の陣」を作成できる(「葵紋の陣」は【傑】を含む部隊でしか攻撃できず陣破壊スキルに破壊されない／この武将が作成した「葵紋の陣」のみ距離4以内の同盟員の陣も「葵紋の陣」となる)", "本領と陣、出城が黄金造りになる", "チャットの文字色が金色になる", "位階有効時、階位が正一位となる", "陣獲得時、陣のレベルが5になる"]}
+    {name:"徳川家康", no:"20003", furigana:"とくがわいえやす", troop:"全攻防", sub:"飛翔10", effect:"焙烙火矢の攻防+7／攻防500%上昇+飛翔10(覇道)",
+      imageFull:"assets/img/characters/no20003_full.png", imageChar:"assets/img/characters/no20003_char.png",
+      atkBase:65000, defBase:65000, tacticsBase:5000, lv0Troops:25000, initialSkill:"神威蓋世"}
   ];
   // BUILD:ketsuGenerals:end
 
@@ -220,10 +211,12 @@
   function ktRenderList(){
     const rows = ketsuGenerals.map(function(g){
       const ad = ktAtkDefBadge(g.troop);
-      return '<tr onclick="location.hash=\'' + g.no + '\';" style="cursor:pointer;">'
+      // 2026-08-14: 天・極と同じく、行も武将名も個別ページ(busho/{No}.html)へ向ける
+      const href = 'busho/'+g.no+'.html';
+      return '<tr onclick="location.href=\'' + href + '\';" style="cursor:pointer;">'
         + '<td class="kt-col-card"><img src="'+g.imageChar+'" alt="'+ktEscapeHtml(g.name)+'のカード" loading="lazy" decoding="async"></td>'
         + '<td>'+g.no+'</td>'
-        + '<td class="kt-col-name"><a href="#'+g.no+'">'+ktEscapeHtml(g.name)+'</a></td>'
+        + '<td class="kt-col-name"><a href="'+href+'">'+ktEscapeHtml(g.name)+'</a></td>'
         + '<td>'+ktEscapeHtml(g.initialSkill)+'</td>'
         + '<td><span class="kt-atkdef-badge '+ad.cls+'">'+ad.label+'</span></td>'
         + '<td>'+g.atkBase+'</td><td>'+g.defBase+'</td><td>'+g.tacticsBase+'</td><td>'+g.lv0Troops+'</td>'
@@ -268,31 +261,17 @@
       + '<p class="kt-illust-credit">Illust. '+ktEscapeHtml(g.illustrator)+'</p>';
   }
 
+  // 2026-08-14: 詳細は busho/{No}.html に完全に分けた。このページは一覧だけを出す。
+  // 古い #No で来た人は、ページ末尾の転送スクリプトが個別ページへ送る。
+  //
+  // **ktRenderDetail は消さないこと。** busho/{No}.html の中身は
+  // tools/gen_detail_pages.py がこの関数を実機で動かして作っている。
   function ktRoute(){
-    const hash = decodeURIComponent(location.hash.replace('#',''));
-    const listView = document.getElementById('listView');
-    const detailView = document.getElementById('detailView');
-    const g = hash ? ketsuGenerals.find(function(x){ return x.no === hash; }) : null;
-    if(!g){
-      listView.style.display = '';
-      detailView.style.display = 'none';
-      if(window.renderCommentsWidget) renderCommentsWidget('pageComments', 'page:characters-ketsu');
-      return;
-    }
-    listView.style.display = 'none';
-    detailView.style.display = '';
-    ktRenderDetail(g);
-    if(window.renderCommentsWidget) renderCommentsWidget('ktComments', 'charketsu:'+g.no);
-    // PERMALINK:start この項目だけの単独ページ(検索から直接来られるようにしている)
-    (function(){
-      const box = document.getElementById('ktPermalink');
-      if(box) box.innerHTML = '<a href="' + 'busho/'+g.no+'.html' + '">このページの単独URL</a>';
-    })();
-    // PERMALINK:end
-    window.scrollTo(0, 0);
+    document.getElementById('listView').style.display = '';
+    document.getElementById('detailView').style.display = 'none';
+    if(window.renderCommentsWidget) renderCommentsWidget('pageComments', 'page:characters-ketsu');
   }
 
-  window.addEventListener('hashchange', ktRoute);
   ktRenderList();
   ktRoute();
 
@@ -302,6 +281,22 @@
     if(badge) badge.textContent = KETSU_DB_VERSION;
   })();
 
+</script>
+<script>
+  // 古い #No / #スキル名 形式で来た人を、個別URLへ送る(2026-08-14)。
+  // 一覧からは個別ページへ直接飛ぶようになり、このページに詳細パネルは無い。
+  // 転送しておかないと、外に出回っている古いリンクが「一覧が開くだけ」になる。
+  (function(){
+    function go(){
+      var h = decodeURIComponent((location.hash || '').replace(/^#/, ''));
+      if (!h) return;
+      var name = h.replace(/[^0-9]/g, '');
+      if (!name) return;
+      location.replace('busho/' + name + '.html');
+    }
+    go();
+    window.addEventListener('hashchange', go);
+  })();
 </script>
 </body>
 </html>

@@ -253,8 +253,3 @@ body{
 /* 結論の一文(赤・大きめ) */
 .article-page .article-conclusion{ font-size:20px; font-weight:700; color:#b3261e; }
 
-/* 武将/スキルの詳細から、その項目だけの単独ページ(busho/・skill/)へ行くリンク。
-   検索エンジンに単独ページの存在を伝える導線も兼ねている。 */
-.detail-permalink{margin:18px 0 0;font-size:12.5px;}
-.detail-permalink a{color:var(--muted);}
-.detail-permalink a:hover{color:var(--vermillion-bright);}
