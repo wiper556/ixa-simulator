@@ -1,0 +1,106 @@
+{
+ "name": "東郷重位",
+ "no": "2795",
+ "ch": "未確認",
+ "cost": 3.0,
+ "troop": "全攻",
+ "sub": "",
+ "effect": "攻撃 70%上昇 攻撃戦闘時、この武将のHPが100上であれば、ランダムな敵1部隊の全武将に追加ダメージを20与える(敵1部隊に対して効果一つまで・模倣不可)",
+ "furigana": "とうごうちゅうい",
+ "illustrator": "黒葉.K",
+ "imageFull": "assets/img/characters/no2795_full.png",
+ "imageChar": "assets/img/characters/no2795_char.png",
+ "atkBase": 1150,
+ "atkGrowth": 64.0,
+ "defBase": 1120,
+ "defGrowth": 49.0,
+ "tacticsBase": 500.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3300,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "示現流",
+ "skillDetail": "A/LV10 確率 45% 攻撃 70%上昇 攻撃戦闘時、この武将のHPが100上であれば、ランダムな敵1部隊の全武将に追加ダメージを20与える(敵1部隊に対して効果一つまで・模倣不可)/対象:全\n①攻撃 70%上昇 攻撃戦闘時、この武将のHPが100上であれば、ランダムな敵1部隊の全武将に追加ダメージを20与える(敵1部隊に対して効果一つまで・模倣不可)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 45% / 攻撃 70%上昇 攻撃戦闘時、この武将のHPが100上であれば、ランダムな敵1部隊の全武将に追加ダメージを20与える(敵1部隊に対して効果一つまで・模倣不可)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "戦陣 阿吽",
+   "rank": "A",
+   "afterSkill": "覇王征軍",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "25%",
+   "effectShort": "攻撃 42%上昇",
+   "afterTarget": "全",
+   "afterRate": "42%",
+   "afterEffectShort": "攻撃 25.39%上昇(部隊総コストで変動、TRなし)"
+  },
+  {
+   "slot": "B",
+   "skill": "戦陣 破軍",
+   "rank": "A",
+   "afterSkill": "天穿神滅",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "44%",
+   "effectShort": "攻撃 66%上昇+防御 66%上昇",
+   "afterTarget": "砲器",
+   "afterRate": "50%",
+   "afterEffectShort": "攻撃((ランク+1)xコストx3) %上昇 部隊ランクとコストで効果が変化"
+  },
+  {
+   "slot": "C",
+   "skill": "戦陣 一閃",
+   "rank": "A",
+   "afterSkill": "神光征軍",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "50%",
+   "effectShort": "攻撃 50%上昇",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 90%上昇+速度200%上昇(TRなし)"
+  },
+  {
+   "slot": "S1",
+   "skill": "鬼滅刺",
+   "rank": "A",
+   "afterSkill": "布都御魂ノ鬨",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "攻撃 70%上昇 防御 70%上昇",
+   "afterTarget": "全",
+   "afterRate": "35%",
+   "afterEffectShort": "攻撃 40%上昇+防御 40%上昇(部隊内レアリティS以上のスキル個数×20%加算)"
+  },
+  {
+   "slot": "S2",
+   "skill": "眠り猫",
+   "rank": "A",
+   "afterSkill": "眠り猫",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "攻撃 35%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/2795 と skills/示現流)およびixawiki(BushoCard/2795東郷重位)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

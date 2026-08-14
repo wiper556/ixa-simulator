@@ -1,0 +1,100 @@
+{
+ "name": "上杉謙信",
+ "no": "2813",
+ "ch": "未確認",
+ "cost": 4.0,
+ "troop": null,
+ "sub": "",
+ "effect": null,
+ "furigana": "うえすぎけんしん",
+ "illustrator": "鏑木康隆",
+ "imageFull": "assets/img/characters/no2813_full.png",
+ "imageChar": "assets/img/characters/no2813_char.png",
+ "atkBase": 1130,
+ "atkGrowth": 57.0,
+ "defBase": 1070,
+ "defGrowth": 49.0,
+ "tacticsBase": 520.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 4220,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "麗将車懸",
+ "skillDetail": null,
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全 飛翔9　確率 35%"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "救天慈愛",
+   "rank": "S",
+   "afterSkill": "開闢ノ逆鉾",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "70%",
+   "effectShort": "攻撃 (3.5x防御参加武将数)%上昇",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 254%上昇(卓越追加確率30%で兵士被害15%減少)"
+  },
+  {
+   "slot": "B",
+   "skill": "救天慈愛",
+   "rank": "S",
+   "afterSkill": "開闢ノ逆鉾",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "70%",
+   "effectShort": "攻撃 (3.5x防御参加武将数)%上昇",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 254%上昇(卓越追加確率30%で兵士被害15%減少)"
+  },
+  {
+   "slot": "C",
+   "skill": "麗将車懸",
+   "rank": "S",
+   "afterSkill": "麗将車懸",
+   "afterRank": "S",
+   "target": null,
+   "rate": null,
+   "effectShort": null
+  },
+  {
+   "slot": "S1",
+   "skill": "麗将車懸",
+   "rank": "S",
+   "afterSkill": "麗将車懸",
+   "afterRank": "S",
+   "target": null,
+   "rate": null,
+   "effectShort": null
+  },
+  {
+   "slot": "S2",
+   "skill": "天津甕星ノ雷",
+   "rank": "SS",
+   "afterSkill": "天津甕星ノ雷",
+   "afterRank": "SS",
+   "target": "全 覇道",
+   "rate": "100%",
+   "effectShort": "攻撃 170%上昇+速度70%上昇(TRなし)"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/2813 と skills/麗将車懸)およびixawiki(BushoCard/2813上杉謙信)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

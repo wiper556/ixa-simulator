@@ -1,0 +1,100 @@
+{
+ "name": "藤林長門守",
+ "no": "2783",
+ "ch": "未確認",
+ "cost": 0.0,
+ "troop": null,
+ "sub": "",
+ "effect": null,
+ "furigana": "ふじばやしながとのかみ",
+ "illustrator": "BISAI",
+ "imageFull": "assets/img/characters/no2783_full.png",
+ "imageChar": "assets/img/characters/no2783_char.png",
+ "atkBase": 1020,
+ "atkGrowth": 40.0,
+ "defBase": 1020,
+ "defGrowth": 40.0,
+ "tacticsBase": 570.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 1590,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "万川集海",
+ "skillDetail": null,
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 -% / このカードを所持していると、「焙烙火矢」の兵士攻撃力が+1、兵士防御力が+1される(重複不可・効果範囲は所持者部隊の兵士のみ) 合成テーブル"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "戦陣 破軍",
+   "rank": "A",
+   "afterSkill": "天穿神滅",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "44%",
+   "effectShort": "攻撃 66%上昇+防御 66%上昇",
+   "afterTarget": "砲器",
+   "afterRate": "50%",
+   "afterEffectShort": "攻撃((ランク+1)xコストx3) %上昇 部隊ランクとコストで効果が変化"
+  },
+  {
+   "slot": "B",
+   "skill": "飛び六方",
+   "rank": "A",
+   "afterSkill": "飛び六方",
+   "afterRank": "A",
+   "target": "槍砲器",
+   "rate": "50%",
+   "effectShort": "攻撃 45%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "忍祖千里眼",
+   "rank": "B",
+   "afterSkill": "忍祖千里眼",
+   "afterRank": "B",
+   "target": "槍砲器",
+   "rate": "40%",
+   "effectShort": "防御 49%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "武装商船",
+   "rank": "A",
+   "afterSkill": "鉄砲商人",
+   "afterRank": "A",
+   "target": null,
+   "rate": null,
+   "effectShort": null,
+   "afterTarget": null,
+   "afterRate": null,
+   "afterEffectShort": null
+  },
+  {
+   "slot": "S2",
+   "skill": "根来鉄砲衆",
+   "rank": "A",
+   "afterSkill": "根来鉄砲衆",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "50%",
+   "effectShort": "防御 70%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/2783 と skills/万川集海)およびixawiki(BushoCard/2783藤林長門守)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

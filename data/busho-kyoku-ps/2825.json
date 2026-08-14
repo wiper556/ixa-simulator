@@ -5,7 +5,7 @@
  "cost": 3.0,
  "troop": null,
  "sub": "",
- "effect": null,
+ "effect": "部隊内武将の全スキルの卓越追加確率が70%上昇(模倣不可・特殊効果は自部隊内では重複不可)",
  "furigana": "たわらやそうたつ",
  "illustrator": "鏑木康隆",
  "imageFull": "assets/img/characters/no2825_full.png",
@@ -24,12 +24,12 @@
   "ki": "S"
  },
  "initialSkill": "嵐下墨炎",
- "skillDetail": null,
+ "skillDetail": "S/LV10 確率 50% 部隊内武将の全スキルの卓越追加確率が70%上昇/対象:全\n模倣不可\n①部隊内武将の全スキルの卓越追加確率が70%上昇する(特殊効果は自部隊内では重複不可)",
  "trTable": [
   {
    "level": "LV10",
    "points": "-",
-   "effect": "全 部隊内武将の全スキルの卓越追加確率が70%上昇(模倣不可・特殊効果は自部隊内では重複不可)　確率 50%"
+   "effect": "全　確率 50% / 部隊内武将の全スキルの卓越追加確率が70%上昇(模倣不可・特殊効果は自部隊内では重複不可)"
   }
  ],
  "synthesisTable": [
@@ -39,9 +39,9 @@
    "rank": "S",
    "afterSkill": "月詠ノ覇威",
    "afterRank": "SS",
-   "target": null,
-   "rate": null,
-   "effectShort": null,
+   "target": "全",
+   "rate": "50%",
+   "effectShort": "部隊内武将の全スキルの卓越追加確率が70%上昇(模倣不可・特殊効果は自部隊内では重複不可)",
    "afterTarget": "全",
    "afterRate": "100%",
    "afterEffectShort": "攻撃344%上昇+防御344%上昇(卓越確率+15%)"
@@ -52,9 +52,9 @@
    "rank": "S",
    "afterSkill": "月詠ノ覇威",
    "afterRank": "SS",
-   "target": null,
-   "rate": null,
-   "effectShort": null,
+   "target": "全",
+   "rate": "50%",
+   "effectShort": "部隊内武将の全スキルの卓越追加確率が70%上昇(模倣不可・特殊効果は自部隊内では重複不可)",
    "afterTarget": "全",
    "afterRate": "100%",
    "afterEffectShort": "攻撃344%上昇+防御344%上昇(卓越確率+15%)"

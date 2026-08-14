@@ -24,37 +24,37 @@
   "ki": "S"
  },
  "initialSkill": "影国ノ加護",
- "skillDetail": null,
+ "skillDetail": "S/LV10 確率 55% 部隊長の初期スキルを模倣/対象:部隊長\n模倣不可\n①所属部隊の部隊長が持つ模倣可能な初期スキルを模倣する\n②この武将が飛翔Xを持つとき飛翔[X+4]となる",
  "trTable": [
   {
    "level": "LV10",
    "points": "-",
-   "effect": "部隊長　確率 55%"
+   "effect": "部隊長　確率 55% / 部隊長の初期スキルを模倣(この武将の飛翔X→X+4)"
   },
   {
    "level": "TR1",
    "points": "10",
-   "effect": "部隊長　確率 55%"
+   "effect": "部隊長　確率 55% / 部隊長の初期スキルを模倣(この武将の飛翔X→X+5)"
   },
   {
    "level": "TR2",
    "points": "40",
-   "effect": "部隊長　確率 55%"
+   "effect": "部隊長　確率 55% / 部隊長の初期スキルを模倣(この武将の飛翔X→X+6)"
   },
   {
    "level": "TR3",
    "points": "90",
-   "effect": "部隊長　確率 55%"
+   "effect": "部隊長　確率 55% / 部隊長の初期スキルを模倣(この武将の飛翔X→X+8)"
   },
   {
    "level": "TR4",
    "points": "150",
-   "effect": "部隊長　確率 55%"
+   "effect": "部隊長　確率 55%(TR4以降は情報源に無い)"
   },
   {
    "level": "TR5",
    "points": "200",
-   "effect": "部隊長　確率 55%"
+   "effect": "部隊長　確率 55%(TR4以降は情報源に無い)"
   }
  ],
  "synthesisTable": [

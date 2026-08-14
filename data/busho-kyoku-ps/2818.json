@@ -1,0 +1,100 @@
+{
+ "name": "藤原惺窩",
+ "no": "2818",
+ "ch": "未確認",
+ "cost": 5.0,
+ "troop": "全防",
+ "sub": "",
+ "effect": "防御 170%上昇",
+ "furigana": "ふじわらせいか",
+ "illustrator": "塚本陽子",
+ "imageFull": "assets/img/characters/no2818_full.png",
+ "imageChar": "assets/img/characters/no2818_char.png",
+ "atkBase": 1120,
+ "atkGrowth": 50.0,
+ "defBase": 1220,
+ "defGrowth": 64.0,
+ "tacticsBase": 540.0,
+ "tacticsGrowth": 3.5,
+ "lv0Troops": 4750,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "幕天席地",
+ "skillDetail": "S/LV10 確率 100% 防御 170%上昇/対象:全\n①防御が170%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 防御 170%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "錘焔ノ空帯",
+   "rank": "S",
+   "afterSkill": "錘焔ノ藍帯",
+   "afterRank": "SSS",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "防御114%上昇 本丸防御陣形に配置時、この武将の編成コスト消費を-1する(模倣不可)",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "防御200%上昇 本丸防御陣形に配属時、この武将の編成コストを-1.5する(模倣不可)"
+  },
+  {
+   "slot": "B",
+   "skill": "三千世界神将",
+   "rank": "SS",
+   "afterSkill": "三千世界神将",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "防御 120%上昇(本丸防御陣形時コスト消費-1)"
+  },
+  {
+   "slot": "C",
+   "skill": "錘焔ノ藍帯",
+   "rank": "SSS",
+   "afterSkill": "錘焔ノ藍帯",
+   "afterRank": "SSS",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "防御200%上昇 本丸防御陣形に配属時、この武将の編成コストを-1.5する(模倣不可)"
+  },
+  {
+   "slot": "S1",
+   "skill": "一期一会",
+   "rank": "C",
+   "afterSkill": "神速",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "デッキ上武将回復率：20%上昇",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "速度 55%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "布都御魂ノ鬨",
+   "rank": "SS",
+   "afterSkill": "布都御魂ノ鬨",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "35%",
+   "effectShort": "攻撃 40%上昇+防御 40%上昇(部隊内レアリティS以上のスキル個数×20%加算)"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/2818 と skills/幕天席地)およびixawiki(BushoCard/2818藤原惺窩)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

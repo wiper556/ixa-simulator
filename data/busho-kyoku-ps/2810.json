@@ -1,0 +1,100 @@
+{
+ "name": "真理姫",
+ "no": "2810",
+ "ch": "未確認",
+ "cost": 1.0,
+ "troop": "全攻",
+ "sub": "",
+ "effect": "攻撃 140%上昇 防御 140%上昇",
+ "furigana": "まりひめ",
+ "illustrator": "綾乙",
+ "imageFull": "assets/img/characters/no2810_full.png",
+ "imageChar": "assets/img/characters/no2810_char.png",
+ "atkBase": 1140,
+ "atkGrowth": 52.0,
+ "defBase": 1140,
+ "defGrowth": 52.0,
+ "tacticsBase": 550.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 1550,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "S",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "哀姫星霜",
+ "skillDetail": "S/LV10 確率 100% 攻撃 140%上昇 防御 140%上昇/対象:全\n①攻撃が140%上昇 防御 140%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 攻撃 140%上昇 防御 140%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "鬼滅刺",
+   "rank": "A",
+   "afterSkill": "布都御魂ノ鬨",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "攻撃 70%上昇 防御 70%上昇",
+   "afterTarget": "全",
+   "afterRate": "35%",
+   "afterEffectShort": "攻撃 40%上昇+防御 40%上昇(部隊内レアリティS以上のスキル個数×20%加算)"
+  },
+  {
+   "slot": "B",
+   "skill": "鬼滅刺",
+   "rank": "A",
+   "afterSkill": "布都御魂ノ鬨",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "攻撃 70%上昇 防御 70%上昇",
+   "afterTarget": "全",
+   "afterRate": "35%",
+   "afterEffectShort": "攻撃 40%上昇+防御 40%上昇(部隊内レアリティS以上のスキル個数×20%加算)"
+  },
+  {
+   "slot": "C",
+   "skill": "神屋楯比売命",
+   "rank": "SS",
+   "afterSkill": "神屋楯比売命",
+   "afterRank": "SS",
+   "target": "自身",
+   "rate": "70%",
+   "effectShort": "初期スキル(戦闘スキルのみ)を模倣(1倍)"
+  },
+  {
+   "slot": "S1",
+   "skill": "天頂ノ電光",
+   "rank": "SSS",
+   "afterSkill": "天頂ノ電光",
+   "afterRank": "SSS",
+   "target": "全",
+   "rate": "12%",
+   "effectShort": "攻撃 190%上昇(部隊長時、確率・効果3倍)"
+  },
+  {
+   "slot": "S2",
+   "skill": "布都御魂ノ鬨",
+   "rank": "SS",
+   "afterSkill": "布都御魂ノ鬨",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "35%",
+   "effectShort": "攻撃 40%上昇+防御 40%上昇(部隊内レアリティS以上のスキル個数×20%加算)"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/2810 と skills/哀姫星霜)およびixawiki(BushoCard/2810真理姫)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

@@ -1,0 +1,106 @@
+{
+ "name": "山科言継",
+ "no": "2817",
+ "ch": "未確認",
+ "cost": 0.5,
+ "troop": null,
+ "sub": "",
+ "effect": null,
+ "furigana": "やましなときつぐ",
+ "illustrator": "西野幸治",
+ "imageFull": "assets/img/characters/no2817_full.png",
+ "imageChar": "assets/img/characters/no2817_char.png",
+ "atkBase": 1050,
+ "atkGrowth": 35.0,
+ "defBase": 1050,
+ "defGrowth": 35.0,
+ "tacticsBase": 570.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 1850,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "風韻書房",
+ "skillDetail": null,
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 -% / このカードを所持していると、銀銭の生産上限が+100される(模倣不可・重複不可、同名スキルは新舞台突入～刷新の間に一つのみ有効) 合成テーブル"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "御金改役",
+   "rank": "A",
+   "afterSkill": "商器千才",
+   "afterRank": "A",
+   "target": null,
+   "rate": null,
+   "effectShort": "このカードを所持していると、銀銭の生産上限が+50される(模倣不可・重複不可、同名スキルは新舞台突入～刷新の間に一つのみ有効) 合成テーブル",
+   "afterTarget": "全",
+   "afterRate": "45%",
+   "afterEffectShort": "攻撃 55%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "御金改役",
+   "rank": "A",
+   "afterSkill": "商器千才",
+   "afterRank": "A",
+   "target": null,
+   "rate": null,
+   "effectShort": "このカードを所持していると、銀銭の生産上限が+50される(模倣不可・重複不可、同名スキルは新舞台突入～刷新の間に一つのみ有効) 合成テーブル",
+   "afterTarget": "全",
+   "afterRate": "45%",
+   "afterEffectShort": "攻撃 55%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "八重言代主神",
+   "rank": "SS",
+   "afterSkill": "無窮天斥陣",
+   "afterRank": "SS",
+   "target": "自身",
+   "rate": "70%",
+   "effectShort": "初期スキル(戦闘スキルのみ)を模倣(1倍)",
+   "afterTarget": "槍弓馬",
+   "afterRate": "40%",
+   "afterEffectShort": "防御63%上昇 (攻撃部隊に兵器兵科がいれば効果1.5倍)"
+  },
+  {
+   "slot": "S1",
+   "skill": "神屋楯比売命",
+   "rank": "SS",
+   "afterSkill": "神屋楯比売命",
+   "afterRank": "SS",
+   "target": "自身",
+   "rate": "70%",
+   "effectShort": "初期スキル(戦闘スキルのみ)を模倣(1倍)"
+  },
+  {
+   "slot": "S2",
+   "skill": "商器偉才",
+   "rank": "A",
+   "afterSkill": "武人の浄財",
+   "afterRank": "C",
+   "target": null,
+   "rate": null,
+   "effectShort": "合戦中に獲得した総合ポイントの0.9+(武将ランク×0.3) %の銅銭を合戦終了時に獲得(重複不可・カード所持で効果あり・武将ランクで効果が変動) 合成テーブル",
+   "afterTarget": "全",
+   "afterRate": "35%",
+   "afterEffectShort": "銅銭獲得率：5%"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/2817 と skills/風韻書房)およびixawiki(BushoCard/2817山科言継)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

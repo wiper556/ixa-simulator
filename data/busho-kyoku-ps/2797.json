@@ -1,0 +1,103 @@
+{
+ "name": "後藤庄三郎",
+ "no": "2797",
+ "ch": "未確認",
+ "cost": 1.0,
+ "troop": null,
+ "sub": "",
+ "effect": null,
+ "furigana": "ごとうしょうざぶろう",
+ "illustrator": "鏑木康隆",
+ "imageFull": "assets/img/characters/no2797_full.png",
+ "imageChar": "assets/img/characters/no2797_char.png",
+ "atkBase": 470,
+ "atkGrowth": 16.0,
+ "defBase": 470,
+ "defGrowth": 16.0,
+ "tacticsBase": 500.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 1500,
+ "rankGrades": {
+  "yari": "C",
+  "yumi": "C",
+  "uma": "C",
+  "ki": "B"
+ },
+ "initialSkill": "御金改役",
+ "skillDetail": null,
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 -% / このカードを所持していると、銀銭の生産上限が+50される(模倣不可・重複不可、同名スキルは新舞台突入～刷新の間に一つのみ有効) 合成テーブル"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "算命術",
+   "rank": "D",
+   "afterSkill": "算命術",
+   "afterRank": "D",
+   "target": "全",
+   "rate": null,
+   "effectShort": "攻撃 (自部隊兵法合計÷100)%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "彷徨う福音",
+   "rank": "B",
+   "afterSkill": "彷徨う福音",
+   "afterRank": "B",
+   "target": "全",
+   "rate": "20%",
+   "effectShort": "銅銭獲得率：2.5%"
+  },
+  {
+   "slot": "C",
+   "skill": "呂宋の豪商",
+   "rank": "A",
+   "afterSkill": "武人の浄財",
+   "afterRank": "C",
+   "target": "全",
+   "rate": "36%",
+   "effectShort": "防御 46%上昇/銅銭獲得率：4%",
+   "afterTarget": "全",
+   "afterRate": "35%",
+   "afterEffectShort": "銅銭獲得率：5%"
+  },
+  {
+   "slot": "S1",
+   "skill": "商器千才",
+   "rank": "A",
+   "afterSkill": "武人の浄財",
+   "afterRank": "C",
+   "target": "全",
+   "rate": "45%",
+   "effectShort": "攻撃 55%上昇",
+   "afterTarget": "全",
+   "afterRate": "35%",
+   "afterEffectShort": "銅銭獲得率：5%"
+  },
+  {
+   "slot": "S2",
+   "skill": "大願ノ道頓堀",
+   "rank": "A",
+   "afterSkill": "呂宋の豪商",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "70%",
+   "effectShort": "防御 70%上昇",
+   "afterTarget": "全",
+   "afterRate": "36%",
+   "afterEffectShort": "防御 46%上昇/銅銭獲得率：4%"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/2797 と skills/御金改役)およびixawiki(BushoCard/2797後藤庄三郎)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

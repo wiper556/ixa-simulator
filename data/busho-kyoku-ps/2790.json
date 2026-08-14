@@ -1,0 +1,88 @@
+{
+ "name": "安楽庵策伝",
+ "no": "2790",
+ "ch": "未確認",
+ "cost": 0.0,
+ "troop": null,
+ "sub": "",
+ "effect": null,
+ "furigana": "あんらくあんさくでん",
+ "illustrator": "西野幸治",
+ "imageFull": "assets/img/characters/no2790_full.png",
+ "imageChar": "assets/img/characters/no2790_char.png",
+ "atkBase": 990,
+ "atkGrowth": 35.0,
+ "defBase": 990,
+ "defGrowth": 35.0,
+ "tacticsBase": 530.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 1590,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": null,
+ "skillDetail": null,
+ "trTable": [],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": null,
+   "rank": null,
+   "afterSkill": null,
+   "afterRank": null,
+   "target": null,
+   "rate": null,
+   "effectShort": null
+  },
+  {
+   "slot": "B",
+   "skill": null,
+   "rank": null,
+   "afterSkill": null,
+   "afterRank": null,
+   "target": null,
+   "rate": null,
+   "effectShort": null
+  },
+  {
+   "slot": "C",
+   "skill": null,
+   "rank": null,
+   "afterSkill": null,
+   "afterRank": null,
+   "target": null,
+   "rate": null,
+   "effectShort": null
+  },
+  {
+   "slot": "S1",
+   "skill": null,
+   "rank": null,
+   "afterSkill": null,
+   "afterRank": null,
+   "target": null,
+   "rate": null,
+   "effectShort": null
+  },
+  {
+   "slot": "S2",
+   "skill": null,
+   "rank": null,
+   "afterSkill": null,
+   "afterRank": null,
+   "target": null,
+   "rate": null,
+   "effectShort": null
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/2790 と skills/None)およびixawiki(BushoCard/2790安楽庵策伝)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

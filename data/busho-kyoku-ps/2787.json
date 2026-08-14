@@ -1,0 +1,88 @@
+{
+ "name": "近衛信尹",
+ "no": "2787",
+ "ch": "未確認",
+ "cost": 1.0,
+ "troop": null,
+ "sub": "",
+ "effect": null,
+ "furigana": "このえのぶただ",
+ "illustrator": "影井由宇",
+ "imageFull": "assets/img/characters/no2787_full.png",
+ "imageChar": "assets/img/characters/no2787_char.png",
+ "atkBase": 900,
+ "atkGrowth": 22.0,
+ "defBase": 900,
+ "defGrowth": 22.0,
+ "tacticsBase": 570.0,
+ "tacticsGrowth": 3.0,
+ "lv0Troops": 1900,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": null,
+ "skillDetail": null,
+ "trTable": [],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": null,
+   "rank": null,
+   "afterSkill": null,
+   "afterRank": null,
+   "target": null,
+   "rate": null,
+   "effectShort": null
+  },
+  {
+   "slot": "B",
+   "skill": null,
+   "rank": null,
+   "afterSkill": null,
+   "afterRank": null,
+   "target": null,
+   "rate": null,
+   "effectShort": null
+  },
+  {
+   "slot": "C",
+   "skill": null,
+   "rank": null,
+   "afterSkill": null,
+   "afterRank": null,
+   "target": null,
+   "rate": null,
+   "effectShort": null
+  },
+  {
+   "slot": "S1",
+   "skill": null,
+   "rank": null,
+   "afterSkill": null,
+   "afterRank": null,
+   "target": null,
+   "rate": null,
+   "effectShort": null
+  },
+  {
+   "slot": "S2",
+   "skill": null,
+   "rank": null,
+   "afterSkill": null,
+   "afterRank": null,
+   "target": null,
+   "rate": null,
+   "effectShort": null
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/2787 と skills/None)およびixawiki(BushoCard/2787近衛信尹)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

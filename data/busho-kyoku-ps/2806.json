@@ -1,0 +1,100 @@
+{
+ "name": "宍戸梅軒",
+ "no": "2806",
+ "ch": "未確認",
+ "cost": 3.0,
+ "troop": "槍砲器攻",
+ "sub": "",
+ "effect": "攻撃 95%上昇",
+ "furigana": "ししどばいけん",
+ "illustrator": "西野幸治",
+ "imageFull": "assets/img/characters/no2806_full.png",
+ "imageChar": "assets/img/characters/no2806_char.png",
+ "atkBase": 1140,
+ "atkGrowth": 45.0,
+ "defBase": 1000,
+ "defGrowth": 36.0,
+ "tacticsBase": 500.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3600,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "B",
+  "ki": "S"
+ },
+ "initialSkill": "宍戸八重垣流",
+ "skillDetail": "S/LV10 確率 52% 攻撃 95%上昇/対象:槍砲器\n①攻撃が95%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍砲器　確率 52% / 攻撃 95%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "喰代ノ梟忍",
+   "rank": "A",
+   "afterSkill": "遁世影武者",
+   "afterRank": "B",
+   "target": "全",
+   "rate": "45%",
+   "effectShort": "攻撃 70%上昇",
+   "afterTarget": null,
+   "afterRate": null,
+   "afterEffectShort": null
+  },
+  {
+   "slot": "B",
+   "skill": "夜叉源氏轟",
+   "rank": "A",
+   "afterSkill": "夜叉源氏轟",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "40%",
+   "effectShort": "攻撃 90%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "絡繰傀儡",
+   "rank": "A",
+   "afterSkill": "絡繰傀儡",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "50%",
+   "effectShort": "攻撃 92%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "宍戸八重垣流",
+   "rank": "S",
+   "afterSkill": "宍戸八重垣流",
+   "afterRank": "S",
+   "target": "槍砲器",
+   "rate": "52%",
+   "effectShort": "攻撃 95%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "武装商船",
+   "rank": "A",
+   "afterSkill": "鉄砲商人",
+   "afterRank": "A",
+   "target": null,
+   "rate": null,
+   "effectShort": null,
+   "afterTarget": null,
+   "afterRate": null,
+   "afterEffectShort": null
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/2806 と skills/宍戸八重垣流)およびixawiki(BushoCard/2806宍戸梅軒)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

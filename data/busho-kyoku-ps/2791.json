@@ -1,0 +1,109 @@
+{
+ "name": "天草四郎時貞",
+ "no": "2791",
+ "ch": "未確認",
+ "cost": 4.0,
+ "troop": "全攻",
+ "sub": "",
+ "effect": "攻撃 90%上昇",
+ "furigana": "あまくさしろうときさだ",
+ "illustrator": "塚本陽子",
+ "imageFull": "assets/img/characters/no2791_full.png",
+ "imageChar": "assets/img/characters/no2791_char.png",
+ "atkBase": 1130,
+ "atkGrowth": 49.0,
+ "defBase": 1130,
+ "defGrowth": 49.0,
+ "tacticsBase": 540.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3830,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "S",
+  "ki": "A"
+ },
+ "initialSkill": "奇跡",
+ "skillDetail": "A/LV10 確率 100% 攻撃 90%上昇/対象:全\n①攻撃が90%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 攻撃 90%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "鬼滅刺",
+   "rank": "A",
+   "afterSkill": "布都御魂ノ鬨",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "攻撃 70%上昇 防御 70%上昇",
+   "afterTarget": "全",
+   "afterRate": "35%",
+   "afterEffectShort": "攻撃 40%上昇+防御 40%上昇(部隊内レアリティS以上のスキル個数×20%加算)"
+  },
+  {
+   "slot": "B",
+   "skill": "戦陣 破軍",
+   "rank": "A",
+   "afterSkill": "天穿神滅",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "44%",
+   "effectShort": "攻撃 66%上昇+防御 66%上昇",
+   "afterTarget": "砲器",
+   "afterRate": "50%",
+   "afterEffectShort": "攻撃((ランク+1)xコストx3) %上昇 部隊ランクとコストで効果が変化"
+  },
+  {
+   "slot": "C",
+   "skill": "戦陣 勝鬨",
+   "rank": "A",
+   "afterSkill": "天岩戸ノ神域",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "35%",
+   "effectShort": "攻撃 77%上昇",
+   "afterTarget": "全",
+   "afterRate": "70%",
+   "afterEffectShort": "攻撃 2.8%×防御参加武将数(280人)=784.0%"
+  },
+  {
+   "slot": "S1",
+   "skill": "騎聖",
+   "rank": "A",
+   "afterSkill": "神光征軍",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "攻撃 (武将コストxNull) %",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 90%上昇+速度200%上昇(TRなし)"
+  },
+  {
+   "slot": "S2",
+   "skill": "神童覚醒",
+   "rank": "C",
+   "afterSkill": "鬼謀 国砕",
+   "afterRank": "B",
+   "target": "名声",
+   "rate": "100%",
+   "effectShort": "領地内名声回復率：10%上昇(重複不可)",
+   "afterTarget": "上級器",
+   "afterRate": "35%",
+   "afterEffectShort": "攻撃 10%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/2791 と skills/奇跡)およびixawiki(BushoCard/2791天草四郎時貞)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

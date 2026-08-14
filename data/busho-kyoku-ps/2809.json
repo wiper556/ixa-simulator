@@ -1,0 +1,97 @@
+{
+ "name": "山中鹿介",
+ "no": "2809",
+ "ch": "未確認",
+ "cost": 4.0,
+ "troop": "槍砲器防",
+ "sub": "",
+ "effect": "対象兵科を指揮した戦闘時、部隊総防御力が15%上昇(模倣不可)",
+ "furigana": "やまなかしかのすけ",
+ "illustrator": "ジョージ",
+ "imageFull": "assets/img/characters/no2809_full.png",
+ "imageChar": "assets/img/characters/no2809_char.png",
+ "atkBase": 1080,
+ "atkGrowth": 49.0,
+ "defBase": 1110,
+ "defGrowth": 55.0,
+ "tacticsBase": 520.0,
+ "tacticsGrowth": 3.0,
+ "lv0Troops": 4200,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "御家再興ノ秘策",
+ "skillDetail": "S/LV10 確率 70% 対象兵科を指揮した戦闘時、部隊総防御力が15%上昇(模倣不可)/対象:槍砲器\n①対象兵科を指揮した戦闘時、部隊総防御力が15%上昇(模倣不可)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍砲器　確率 70% / 対象兵科を指揮した戦闘時、部隊総防御力が15%上昇(模倣不可)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "三千世界神将",
+   "rank": "SS",
+   "afterSkill": "三千世界神将",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "防御 120%上昇(本丸防御陣形時コスト消費-1)"
+  },
+  {
+   "slot": "B",
+   "skill": "星宿劫ノ法壁",
+   "rank": "SS",
+   "afterSkill": "星宿劫ノ法壁",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "49%",
+   "effectShort": "防御 120%上昇(第参列目以降配置時3倍)"
+  },
+  {
+   "slot": "C",
+   "skill": "禍津日神ノ謀",
+   "rank": "SS",
+   "afterSkill": "禍津日神ノ謀",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "70%",
+   "effectShort": "防御 145%上昇(武将ダメージ軽減3%・重複上限4)"
+  },
+  {
+   "slot": "S1",
+   "skill": "禍津日神ノ謀",
+   "rank": "SS",
+   "afterSkill": "禍津日神ノ謀",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "70%",
+   "effectShort": "防御 145%上昇(武将ダメージ軽減3%・重複上限4)"
+  },
+  {
+   "slot": "S2",
+   "skill": "錘焔ノ空帯",
+   "rank": "S",
+   "afterSkill": "錘焔ノ藍帯",
+   "afterRank": "SSS",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "防御114%上昇 本丸防御陣形に配置時、この武将の編成コスト消費を-1する(模倣不可)",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "防御200%上昇 本丸防御陣形に配属時、この武将の編成コストを-1.5する(模倣不可)"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/2809 と skills/御家再興ノ秘策)およびixawiki(BushoCard/2809山中鹿介)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}
