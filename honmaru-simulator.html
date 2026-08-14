@@ -279,7 +279,7 @@
       return entry.statsByRank[bt].troops;
     }
     if(entry.lv0Troops !== undefined){
-      const v = calcTroopsForBreakthrough(entry.lv0Troops, bt, !!entry.isHa);
+      const v = calcTroopsForBreakthrough(entry.lv0Troops, bt, entry);
       return v === null ? entry.lv0Troops : v;
     }
     return null;
