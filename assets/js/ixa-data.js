@@ -1555,6 +1555,40 @@ const specialSkills = {
     soarValue: 5,
     note: '飛翔5。飛翔値の自動集計(最大値を採用)に載せるための登録。攻撃/防御の効果そのものは未登録で、計算には反映していない。2026-08-14、飛翔を持つのに飛翔値が入っていないスキルの一括点検で追加。'
   },
+  '二天羅刹斬': {
+    effectAxis: 'def', // 防御側
+    noMimic: true, // 「模倣不可」明記
+    activationType: 'triggered',
+    statTarget: 'def',
+    trTable: { base:320, TR1:350, TR2:420, TR3:520, TR4:630, TR5:750 }, // 防御%上昇。LV1は100%
+    baseRate: 100, // 確率+100%(全段共通)
+    // 参州烈聖と同型。防御戦闘時のみ二重卓越。2回目専用のボーナスは書かれていないので0。
+    grantsDoubleTakuetsu: { bonusPct: 0, scope: 'def' },
+    critRateBonusTable: { base:30, TR1:35, TR2:40, TR3:50, TR4:60, TR5:100 }, // 部隊内卓越追加確率
+    note: 'S(防御・模倣不可)。確率+100%/対象:全。' +
+          '防御%上昇: LV10=320% / TR1=350% / TR2=420% / TR3=520% / TR4=630% / TR5=750%(LV1は100%)。' +
+          '①防御戦闘時、この武将が持つ卓越スキルは二度卓越できる(grantsDoubleTakuetsu、scope:def)。' +
+          '②部隊内武将の卓越追加確率+30%(LV10)→TR5=+100%(critRateBonusTable経由で自動反映)。' +
+          '宮本武蔵(No.10068)の固有スキル。' +
+          '【2026-08-14追加】これまでspecialSkillsに登録が無く、防御%上昇も二重卓越も効いていなかった。' +
+          '「卓越確率の加算効果は自部隊内重複不可」は他の同種スキルと同様に重複判定していない。' +
+          'ixanary.com(skills/二天羅刹斬)で確認。'
+  },
+  '赫々ノ陣頭': {
+    effectAxis: 'def', // 防御側
+    noMimic: true, // 「模倣不可」明記
+    activationType: 'triggered',
+    statTarget: 'def',
+    trTable: { base: 240 }, // 防御%上昇(LV10)。LV1は80%。TRは情報源に記載なし
+    baseRate: 100, // 確率+100%
+    // 防御戦闘時のみ二重卓越。こちらは2回目の卓越確率が+15%される(LV1は+3%)。
+    grantsDoubleTakuetsu: { bonusPct: 15, scope: 'def' },
+    note: 'S(防御・模倣不可)。確率+100%/対象:全。防御240%上昇(LV1は80%)。' +
+          '防御戦闘時、この武将が持つ卓越スキルは二度卓越できる(2回目の卓越確率は+15%。LV1は+3%)。' +
+          '山県昌景(No.10039)の固有スキル。TRは情報源に記載が無くLV10のみ。' +
+          '【2026-08-14追加】これまでspecialSkillsに登録が無く、防御%上昇も二重卓越も効いていなかった。' +
+          'ixanary.com(skills/赫々ノ陣頭)で確認。'
+  },
   '参州烈聖': {
     effectAxis: 'def', // 防御側
     noMimic: true, // 「模倣不可」明記
