@@ -854,7 +854,7 @@
   // 【必須】attack-simulator.html を変更したコミットでは、必ずこの定数も一緒に更新すること。
   // 表示文言の変更・CSSの微調整であっても対象(ユーザーがスクショで版を判別できなくなるため)。
   // 更新忘れが繰り返し発生しているので、編集したらコミット前にここを見に来る。
-  const SIMULATOR_VERSION = 'v2026-08-14.7';
+  const SIMULATOR_VERSION = 'v2026-08-14.8';
   document.addEventListener('DOMContentLoaded', ()=>{
     const badge = document.getElementById('simVersionBadge');
     if(badge) badge.textContent = SIMULATOR_VERSION;
@@ -873,7 +873,15 @@
   // 'attack'=攻撃シミュレーター(既定) / 'defense'=防御シミュレーター
   // 武将・スキル・兵士構成などのデータは共通。部隊合計の集計対象(攻撃力↔防御力)のみ切り替える。
   // 今後、攻撃専用・防御専用と明示されない変更は、両モードに同じように反映すること。
+  //
+  // どちらを開いていたかは記憶する。以前は毎回'attack'から始まるため、
+  // 防御シミュレーターを見ているときにページを更新すると攻撃側に飛んでいた(ユーザー指摘)。
+  // 表を組み立てる前に決めておく必要があるので、ここで直接localStorageを読む。
+  const SIM_MODE_KEY = 'ixa-sim-mode';
   let simMode = 'attack';
+  try{
+    if(localStorage.getItem(SIM_MODE_KEY) === 'defense') simMode = 'defense';
+  }catch(e){ /* localStorageが使えない環境では既定の攻撃モードのまま */ }
 
   const COLS = ["部隊長","小隊1","小隊2","小隊3"];
   /* ============ 突破ポイント制度 ============
@@ -1038,6 +1046,29 @@
   // ultimateMultが1.2の場合(極限スキル枠に配置された場合)、trTable系スキルと同様に「初期値(base)」と
   // 「1人あたりの増加係数(perUnit)」の両方を1.2倍する(以前はperUnitのみ1.2倍する誤った実装だった。
   // 例: 初期値100%・係数10%のスキルなら、極限枠では初期値120%・係数12%になるのが正しい。ユーザー指摘により修正)。
+  // ============ スキルの効果が攻撃側か防御側か ============
+  // 「攻撃250%上昇」のスキルは防御シミュレーターでは効かないし、その逆も効かない。
+  // 以前はこの区別が無く、01スキル欄に入れたスキルの上昇%が、攻撃・防御どちらの
+  // モードでもそのまま上昇%の合計・最終攻撃力/防御力に乗っていた(ユーザー指摘)。
+  //
+  // 軸は ixa-data.js の effectAxis('atk'/'def'/'both')に持たせてある。
+  // 値は正本 data/skill/{名前}.json の効果文(「/ 攻撃 …」「/ 防御 …」「/ 攻防 …」)から取った。
+  // effectAxis が無いスキルは、これまでどおり両モードで効かせる(黙って消さない)。
+  function currentModeAxis(){ return simMode === 'defense' ? 'def' : 'atk'; }
+
+  function skillEffectAxis(sk){
+    if(sk.effectAxis) return sk.effectAxis;
+    // variableFormula 系は以前から statTarget を持っている
+    if(sk.variableFormula && sk.variableFormula.statTarget) return sk.variableFormula.statTarget;
+    return 'both';
+  }
+
+  // 今のモードでこのスキルの上昇%が効くかどうか
+  function skillAffectsCurrentMode(sk){
+    const axis = skillEffectAxis(sk);
+    return axis === 'both' || axis === currentModeAxis();
+  }
+
   // 「部隊内の同スキル所持武将数」で効果が変わるスキル(不敗ノ滅陣など)のための集計。
   // 数えるのは枠ではなく武将(列)で、1人が複数枠に同じスキルを持っていても1人と数える。
   // 基礎値はカードの記載どおり「部隊内の最大スキルLVのもの」を全員が共有するので、
@@ -1303,10 +1334,15 @@
       // 枠(fx)ごと・数値(val/destruct)ごとに倍率をためる。
       // 同じ枠に複数のスキルが効くときは掛け合わせる(従来と同じ挙動)。
       const perField = {};
-      const bump = (fields, stats, m) => {
+      const bump = (fields, stats, m, mAxis) => {
         (fields || ['fx2','fx3']).forEach(f=>{
           perField[f] = perField[f] || {};
-          (stats || ['val']).forEach(st=>{ perField[f][st] = (perField[f][st] || 1) * m; });
+          (stats || ['val']).forEach(st=>{
+            // 「追加スキルの攻撃効果が2倍」は防御シミュレーターでは効かない(逆も同じ)。
+            // 止めるのは上昇%(val)だけ。速度%・破壊%は攻防とは別の軸なのでそのまま倍にする。
+            if(st === 'val' && mAxis && mAxis !== 'both' && mAxis !== currentModeAxis()) return;
+            perField[f][st] = (perField[f][st] || 1) * m;
+          });
         });
       };
       skillFields.forEach(fk=>{
@@ -1323,7 +1359,7 @@
           if(Array.isArray(sk.multiplySpecs)){
             sk.multiplySpecs.forEach(spec=>{
               const m = spec.table ? pick(spec.table) : spec.by;
-              if(m) bump(spec.fields, spec.stats, m);
+              if(m) bump(spec.fields, spec.stats, m, sk.multiplyAxis);
             });
             return;
           }
@@ -1333,7 +1369,7 @@
           } else if(sk.multiplyAdditionalSkillsBy){
             m = sk.multiplyAdditionalSkillsBy;
           }
-          if(m) bump(sk.multiplyTargetFields, sk.multiplyStatFields, m);
+          if(m) bump(sk.multiplyTargetFields, sk.multiplyStatFields, m, sk.multiplyAxis);
         });
       });
       let touched = false;
@@ -1432,7 +1468,10 @@
             effect = r.effect;
           } else if(sourceSk.trTable){
             const tier = (trMatch && sourceSk.trTable['TR'+trMatch[1]] !== undefined) ? 'TR'+trMatch[1] : 'base';
-            effect = Math.round(sourceSk.trTable[tier] * ultimateMult * 100) / 100;
+            // 模倣元の攻撃側/防御側の値。防御シミュレーターで値が異なるスキル(月詠ノ覇威等)は防御側の表を使う
+            const mimicTable = (currentModeAxis() === 'def' && sourceSk.defTrTable) ? sourceSk.defTrTable : sourceSk.trTable;
+            const mimicTier = mimicTable[tier] !== undefined ? tier : 'base';
+            effect = Math.round(mimicTable[mimicTier] * ultimateMult * 100) / 100;
             if(sourceSk.speedTrTable && sourceSk.speedTrTable[tier] !== undefined) speed = Math.round(sourceSk.speedTrTable[tier] * ultimateMult * 100) / 100;
             if(sourceSk.destructTrTable && sourceSk.destructTrTable[tier] !== undefined) destruct = Math.round(sourceSk.destructTrTable[tier] * ultimateMult * 100) / 100;
             // 伏雷蒼樹等: 模倣時もオーバーフロー分(卓越追加確率100%超過分)を反映する。
@@ -1466,6 +1505,8 @@
             if(speed !== undefined) speed = 0;
             if(destruct !== undefined) destruct = 0;
           }
+          // 模倣元が攻撃スキルなら防御シミュレーターでは効かない(直接持っている場合と同じ扱い)
+          if(!skillAffectsCurrentMode(sourceSk)) effect = 0;
           let effectMax = effect; // 期待値(effect)と並行して、卓越が毎回成功した場合の最大値を積み上げていく
           // 模倣元スキル自身が「卓越:追加確率X%でY倍」という自己卓越効果を持つ場合(遠呂智ノ閃光等)、
           // 模倣時にもその効果を反映する。二重卓越(columnHasDoubleTakuetsu)は、模倣元スキルにnoDoubleTakuetsuが
@@ -1810,7 +1851,11 @@
               } else {
                 rate = sk.baseRate;
               }
-              effect = Math.round(sk.trTable[tier] * ultimateMult * 100) / 100;
+              // 防御シミュレーターで、攻撃側と防御側で値が違うスキル(月詠ノ覇威・神気乱龍)は
+              // 防御側の表を使う。片側しか持たないスキルは今までどおりtrTableだけを見る。
+              const effTable = (currentModeAxis() === 'def' && sk.defTrTable) ? sk.defTrTable : sk.trTable;
+              const effTier = effTable[tier] !== undefined ? tier : 'base';
+              effect = Math.round(effTable[effTier] * ultimateMult * 100) / 100;
               // 【2026年7月修正】速度%上昇は極限スキル枠に置いても1.2倍の対象外(ユーザー指摘により判明)。
               // 攻撃・防御・破壊効果とは異なり、常にTR表の値をそのまま使う。
               if(sk.speedTrTable && sk.speedTrTable[tier] !== undefined){
@@ -1852,6 +1897,13 @@
               effect = 0;
               speed = (speed !== undefined) ? 0 : speed;
               destruct = (destruct !== undefined) ? 0 : destruct;
+              variableEffectMax = (variableEffectMax !== undefined) ? 0 : variableEffectMax;
+            }
+            // 攻撃シミュレーターに防御スキル、防御シミュレーターに攻撃スキルの上昇%は乗せない。
+            // 兵科不一致と同じ扱いで、発動率はそのまま・上昇%だけ0にする
+            // (速度%・破壊%は攻防とは別の軸なのでここでは触らない)。
+            if(effect !== undefined && !skillAffectsCurrentMode(sk)){
+              effect = 0;
               variableEffectMax = (variableEffectMax !== undefined) ? 0 : variableEffectMax;
             }
             // 卓越(たくえつ)の期待値換算: 卓越確率(スキル自身の値+部隊内の卓越確率上昇スキルの合計)に応じて、
@@ -4406,8 +4458,9 @@
     }
   }
 
-  modeToggleBtn.addEventListener('click', ()=>{
-    simMode = simMode === 'attack' ? 'defense' : 'attack';
+  // 見出し・ボタン・表示の切替をまとめたもの。切替ボタンと、読み込み時の復元の
+  // 両方から呼ぶ(片方だけを直すと表示とsimModeがずれるため、必ずここに足すこと)。
+  function applyMode(){
     if(simMode === 'defense'){
       modeToggleBtn.textContent = '⚔ 攻撃シミュレーターに切替';
       mainTitle.textContent = '防御シミュレーター';
@@ -4424,10 +4477,20 @@
     updateModeLabels();
     updateStatAllocOptions();
     recalcSquadStats();
+    // 攻撃スキル/防御スキルのどちらが効くかがモードで変わるので、01スキル欄の上昇%を計算し直す。
+    // これを忘れると、切り替えた直後だけ前のモードの数値が残る。
+    applyVariableSkillsToEffectTable();
     renderSquadTotal();
     renderFinalAttackPower();
     renderSquadSkillAtkTotal();
     updateCasualtyWarning();
+  }
+
+  modeToggleBtn.addEventListener('click', ()=>{
+    simMode = simMode === 'attack' ? 'defense' : 'attack';
+    try{ localStorage.setItem(SIM_MODE_KEY, simMode); }
+    catch(e){ /* 保存できなくても切替自体は動かす */ }
+    applyMode();
   });
 
   // 防御参加武将数などの戦闘変数の入力・永続化
@@ -4636,6 +4699,9 @@
     runFullCalculation();
   }
   loadSheet();
+  // 前回どちらを開いていたかを画面に反映する。部隊編成の復元が終わってから呼ぶ
+  // (applyModeは部隊合計の再計算まで行うため、中身が入った状態で走らせる必要がある)。
+  applyMode();
 
   // ============ 画面幅の変化に応じた表の作り直し ============
   // PC(4列)とスマホ(2列×2ブロック)ではテーブルのHTML構造が変わるため、

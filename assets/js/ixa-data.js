@@ -13,6 +13,7 @@
 const specialSkills = {
   // ---- 2026-08-08 32章新天(No.1310〜1321)の固有スキル ----
   '覇界ノ天虎': {
+    effectAxis: 'atk', // 攻撃側(正本 data/skill/覇界ノ天虎.json の効果文より)
     hasHado: true, // 覇道(所属部隊の武将のスキルを無効化・発動率低下から保護)。2026-08-11付与: note内で「覇道を持つため〜保護」と明記されているのにフラグが無かった
     noMimic: true,
     activationType: 'triggered',
@@ -25,6 +26,7 @@ const specialSkills = {
           '織田信秀【覇】(No.1310)固有スキル。2026-08-08、32章新天として登録。'
   },
   '十三ノ奇跡': {
+    effectAxis: 'atk', // 攻撃側(正本 data/skill/十三ノ奇跡.json の効果文より)
     activationType: 'triggered',
     statTarget: 'atk',
     targetTroopCategories: ['弓兵科','兵器兵科(器兵科)','兵器兵科(砲兵科)'],
@@ -42,6 +44,7 @@ const specialSkills = {
           '松平清康（2）(No.1313)固有スキル。2026-08-08登録。'
   },
   '六字の采配': {
+    effectAxis: 'atk', // 攻撃側(正本 data/skill/六字の采配.json の効果文より)
     effectCategory: '兵士被害減少',
     statTarget: 'atk',
     targetTroopCategories: ['兵器兵科(砲兵科)'],
@@ -54,6 +57,7 @@ const specialSkills = {
           '消えない不具合があった(警告の判定はeffectCategory:"兵士被害減少"を見ている)。'
   },
   '日輪豊国': {
+    effectAxis: 'both', // 攻防両方(正本 data/skill/日輪豊国.json の効果文より)
     noMimic: true, // 「模倣不可」明記
     activationType: 'triggered',
     statTarget: 'atk',
@@ -66,6 +70,7 @@ const specialSkills = {
           '木下藤吉郎(No.2573)固有スキル。戦国幻包み【日輪】パック。ixanary.com/cards/2573とixawikiで確認(2026-08-11)。'
   },
   '百識ノ計': {
+    effectAxis: 'both', // 攻防両方(正本 data/skill/百識ノ計.json の効果文より)
     noMimic: true, // 「模倣不可」明記
     activationType: 'triggered',
     statTarget: 'atk',
@@ -79,6 +84,7 @@ const specialSkills = {
           '佐渡島方治(No.2614)固有スキル。ixanary.com/cards/2614とixawiki BushoCard/2614で確認(2026-08-12)。'
   },
   '波濤ノ剛撃': {
+    effectAxis: 'both', // 攻防両方(正本 data/skill/波濤ノ剛撃.json の効果文より)
     noMimic: true, // 「模倣不可」明記
     activationType: 'triggered',
     statTarget: 'atk',
@@ -100,6 +106,7 @@ const specialSkills = {
           '斎藤朝信(2439)(No.2439)固有スキル。ixanary.com/cards/2439とixawikiで確認(2026-08-11)。'
   },
   '鳳凰ノ幻華': {
+    effectAxis: 'def', // 防御側(正本 data/skill/鳳凰ノ幻華.json の効果文より)
     activationType: 'triggered',
     statTarget: 'def',
     targetTroopCategories: ['兵器兵科(砲兵科)','兵器兵科(器兵科)'],
@@ -112,6 +119,7 @@ const specialSkills = {
           '大内義隆（3）(No.1314)固有スキル。2026-08-08登録。'
   },
   '凶狂威令': {
+    effectAxis: 'atk', // 攻撃側(正本 data/skill/凶狂威令.json の効果文より)
     noMimic: true,
     activationType: 'triggered',
     statTarget: 'atk',
@@ -124,6 +132,7 @@ const specialSkills = {
           '細川晴元（2）(No.1317)固有スキル。2026-08-08登録。'
   },
   '不敗ノ滅陣': {
+    effectAxis: 'def', // 防御側(正本 data/skill/不敗ノ滅陣.json の効果文より)
     activationType: 'triggered',
     statTarget: 'def',
     targetTroopCategories: ['槍兵科','兵器兵科(砲兵科)','兵器兵科(器兵科)'],
@@ -146,6 +155,7 @@ const specialSkills = {
           'sameSkillCountの仕組みで自動反映に対応。朝倉宗滴(No.1319)固有スキル。'
   },
   '天弦ノ威軍': {
+    effectAxis: 'atk', // 攻撃側(正本 data/skill/天弦ノ威軍.json の効果文より)
     fukutsu: 1, // 不屈1(2026-08-11一括付与: noteに記載があるのにフィールドが無く不屈バッジ・被害減判定に反映されていなかった)
     activationType: 'triggered',
     statTarget: 'atk',
@@ -199,6 +209,7 @@ const specialSkills = {
     note: '本丸防御陣形・所領防御陣形に配置時、所属陣形内の模倣スキルが卓越発動した部隊に「全防御:(その部隊内で卓越発動した模倣スキル数×150)%上昇」を与える。模倣不可。陣形単位かつ他部隊への効果のため計算エンジン未対応(参考データのみ)。 北条氏綱（2）(No.1315)固有スキル。 2026-08-08、32章新天として登録。'
   },
   '月読ノ冥略': {
+    multiplyAxis: 'def', // 加勢時のみ追加・極限スキルの防御効果が倍加
     noMimic: true,
     // 追加スキルと極限スキルで倍率が違うので multiplySpecs(枠ごとの倍率)を使う。
     // 「自領以外の加勢戦闘時のみ」だが、加勢かどうかを区別する入力がまだ無いので
@@ -226,6 +237,7 @@ const specialSkills = {
   },
 
   '夢幻神童': {
+    effectAxis: 'atk', // 攻撃側(正本 data/skill/夢幻神童.json の効果文より)
     activationType: 'passive', // ①: 常時発動(部隊長設定のみが条件、攻撃タイミング等の発動判定は不要)
     statTarget: 'atk',
     condition: 'leader_squadwide', // 部隊長が持っていれば部隊全員(本人含む)に適用
@@ -244,6 +256,7 @@ const specialSkills = {
           '【飛翔持ち】飛翔8を持つ(soarValue:8)。「飛翔値」欄の自動計算(神気乱龍等)の対象になる。'
   },
   '虚松籟': {
+    effectAxis: 'both', // 攻防両方(正本 data/skill/虚松籟.json の効果文より)
     noSquadDuplicate: true, // note内の「重複不可」記載から自動付与(部隊内で同じ効果が複数発動しても1つ分のみ有効)
     activationType: 'triggered', // ②: 確率+100%と明記されているため攻撃時発動タイプ(自己のみ、基本ステータスへは自動反映しない)
     trTable: { base: 250 }, // 攻撃250%上昇・防御250%上昇(自己のみ、同値のため共通のtrTableで代用)
@@ -259,6 +272,7 @@ const specialSkills = {
           '換算比率1%であることを検証済みのため、基本ステータスの兵法値計算に自動反映している。'
   },
   '聖廉母堂': {
+    effectAxis: 'both', // 攻防両方(正本 data/skill/聖廉母堂.json の効果文より)
     noMimic: true, // note内の「模倣不可」記載から自動付与
     noSquadDuplicate: true, // note内の「重複不可」記載から自動付与(卓越確率上昇効果が部隊内で重複しない)
     activationType: 'triggered', // ②: 攻撃時発動タイプ
@@ -280,6 +294,7 @@ const specialSkills = {
           '高山マリア(No.2394)固有スキル(模倣不可)。2026年8月、characters-kyoku.html登録時の確認済み数値をattack-simulator.htmlに反映。'
   },
   '破軍一投': {
+    effectAxis: 'def', // 防御側(正本 data/skill/破軍一投.json の効果文より)
     noMimic: true, // note内の「模倣不可」記載から自動付与
     activationType: 'triggered', // ②: 攻撃時発動タイプ
     statTarget: 'def', // 防御%上昇のみ(攻撃効果は無し)
@@ -291,6 +306,7 @@ const specialSkills = {
           '小山田信茂(No.2395)固有スキル。2026年8月、characters-kyoku.html登録時の確認済み数値をattack-simulator.htmlに反映。'
   },
   '乱世ノ華': {
+    effectAxis: 'def', // 防御側(正本 data/skill/乱世ノ華.json の効果文より)
     noMimic: true, // note内の「模倣不可」記載から自動付与
     activationType: 'triggered', // ②: 攻撃時発動タイプ
     statTarget: 'def', // 部隊総防御力上昇のみ(攻撃効果は無し)
@@ -303,6 +319,7 @@ const specialSkills = {
           '2026年8月、characters-kyoku.html登録時の確認済み数値をattack-simulator.htmlに反映。'
   },
   '飛天ノ閃剣': {
+    effectAxis: 'atk', // 攻撃側(正本 data/skill/飛天ノ閃剣.json の効果文より)
     noMimic: true, // note内の「模倣不可」記載から自動付与(遁世影武者等の模倣スキルはこのスキルを模倣できない)
     // 【重要・訂正】以前は「自己バフ(selfBoost、部隊長本人のみ)」+「部隊全体倍率」の2つが別々に
     // 掛け算されるものとして実装していたが、実際のゲームでは「①部隊内武将(本人含む)全員への
@@ -338,6 +355,7 @@ const specialSkills = {
           '(以前は①②とは別に「自己バフ」として①②両方を保持者にだけ掛け算する誤った実装をしていたが、ユーザー提供の実データ検証により訂正した)'
   },
   '閃龍ノ御剣': {
+    effectAxis: 'atk', // 攻撃側(正本 data/skill/閃龍ノ御剣.json の効果文より)
     activationType: 'triggered', // ②: 攻撃したときに発動するタイプ(専用の発動率を持つ)
     hasHado: true, // 「覇道」タグ付き(スキル無効化・発動率低下などの妨害を受けない)
     // 鍛錬(TR)レベルごとの攻撃%上昇(部隊全体、②タイプなので基本ステータスへの自動反映はしない)
@@ -369,6 +387,7 @@ const specialSkills = {
           '部隊全体ボーナス(1回目・2回目とも等しく反映)のみで賄われる点に注意。'
   },
   '戦線邁進': {
+    effectAxis: 'atk', // 攻撃側(正本 data/skill/戦線邁進.json の効果文より)
     activationType: 'triggered', // ②: 攻撃したときに発動するタイプ
     targetTroopCategories: ['槍兵科','兵器兵科(砲兵科)','兵器兵科(器兵科)'], // 対象:槍/砲/器
     // 「防御参加武将数」という戦闘ごとに変動する変数に依存するタイプのスキル。
@@ -381,6 +400,7 @@ const specialSkills = {
           '対象兵科(槍/砲/器)以外の兵士を選択している場合は、発動率・上昇%とも0として自動セットされる(兵科不一致のため効果が乗らない旨を反映)。'
   },
   '天聖宝冠': {
+    effectAxis: 'atk', // 攻撃側(正本 data/skill/天聖宝冠.json の効果文より)
     noMimic: true, // note内の「模倣不可」記載から自動付与
     activationType: 'triggered', // ②: 攻撃時発動タイプ
     // 「防御参加武将数」という戦闘ごとに変動する変数に依存するタイプのスキル。固定100%+5×人数。
@@ -391,6 +411,7 @@ const specialSkills = {
           '上杉謙信(覇2)(No.1238)のsynthesisTable候補(S1)として2026年7月登録。'
   },
   '星神闘覇': {
+    effectAxis: 'atk', // 攻撃側(正本 data/skill/星神闘覇.json の効果文より)
     activationType: 'triggered', // ②: 攻撃したときに発動するタイプ
     // ============ 飛翔持ちスキル ============
     // 「飛翔」はオレンジ色表記の兵科条件で、飛翔値(数字)を持つ武将同士のみ影響し合う特殊な仕組み。
@@ -410,6 +431,7 @@ const specialSkills = {
           'スキル欄に入力すると「01 スキル・飛翔値」の発動率・上昇効果欄に攻撃%上昇分が自動反映される(速度上昇分は未反映・データのみ保持)。'
   },
   '幻王ノ采配': {
+    effectAxis: 'atk', // 攻撃側(正本 data/skill/幻王ノ采配.json の効果文より)
     noMimic: true, // note内の「模倣不可」記載から自動付与(遁世影武者等の模倣スキルはこのスキルを模倣できない)
     activationType: 'triggered', // ②: カード画像で「全攻:360%上昇」の数値効果を確認(確率+100%相当、自己のみ)
     trTable: { base: 360 }, // 攻撃360%上昇(自己のみ。基本ステータスには自動反映せず、01スキル欄に自動反映)
@@ -429,6 +451,7 @@ const specialSkills = {
           '①(未実装)。②(無尽持ちスキルの効果倍加)と③(非無尽初期スキルの効果停止・基本ステータス反映分は対象外)は自動計算に対応。攻撃360%上昇の部分も自動反映対応。'
   },
   '義戦ノ旗手': {
+    effectAxis: 'def', // 防御側(正本 data/skill/義戦ノ旗手.json の効果文より)
     noMimic: true, // note内の「模倣不可」記載から自動付与(遁世影武者等の模倣スキルはこのスキルを模倣できない)
     activationType: 'triggered', statTarget: 'def', // カード画像で「全防:360%上昇」の数値効果を確認(幻王ノ采配と同型)
     trTable: { base: 360, TR1: 400, TR2: 475, TR3: 585, TR4: 730, TR5: 920, TR6: 1010 }, // 防御%上昇(自己のみ、LV10〜TR6、ixanary.com確認)
@@ -445,6 +468,7 @@ const specialSkills = {
           '【2026年7月再修正】TR1〜TR5もixanary.comで確認して追加登録した。'
   },
   '遠呂智ノ閃光': {
+    effectAxis: 'atk', // 攻撃側(正本 data/skill/遠呂智ノ閃光.json の効果文より)
     activationType: 'triggered', // ②: 攻撃時発動タイプ
     // 通常カード(LV10・非極限枠表示)で攻撃125%上昇を確認、以前の極限枠画像からの逆算(150÷1.2=125)と一致
     trTable: { base:125, TR1:130, TR2:135, TR3:140, TR4:150, TR5:160 },
@@ -456,6 +480,7 @@ const specialSkills = {
           '卓越: 追加確率15%で攻撃効果が4倍。極限スキル枠に置いた場合はツールが自動で1.2倍する(例: TR5=160%→極限枠192%)。'
   },
   '根津諏訪流鷹術': {
+    effectAxis: 'atk', // 攻撃側(正本 data/skill/根津諏訪流鷹術.json の効果文より)
     noMimic: true, // note内の「模倣不可」記載から自動付与(遁世影武者等の模倣スキルはこのスキルを模倣できない)
     activationType: 'triggered', // ②: 攻撃時発動タイプ
     trTable: { base: 85 }, // 攻撃85%上昇(LV10のみ、TR未確認)
@@ -468,6 +493,7 @@ const specialSkills = {
           'TR(鍛錬)の詳細は今回未確認のためLV10(base)の値のみ登録。'
   },
   '十束ノ神域': {
+    effectAxis: 'atk', // 攻撃側(正本 data/skill/十束ノ神域.json の効果文より)
     activationType: 'triggered', // ②: 攻撃時発動タイプ
     hasHado: true, // 「所属部隊の武将が持つスキルを無効化や発動率低下スキルから保護」=覇道の保護効果と一致
     trTable: { base:320, TR1:420, TR2:540, TR3:680, TR4:830, TR5:980 },
@@ -481,12 +507,15 @@ const specialSkills = {
           'スキル欄に入力すると攻撃%上昇・速度%上昇が自動反映される。'
   },
   '神気乱龍': {
+    effectAxis: 'both', // 攻防両方(正本 data/skill/神気乱龍.json の効果文より)
     noMimic: true, // note内の「模倣不可」記載から自動付与(遁世影武者等の模倣スキルはこのスキルを模倣できない)
     activationType: 'passive', // ①: 確率記載なし。常時、自身の飛翔値を再定義するキーワード能力に近い性質
     soarAggregation: 'sum_others', // 自身を除く部隊内武将の飛翔値見込み(各自の最大値)の合計を、自身の飛翔値とする
-    // カード画像で確認した攻撃%上昇(確率+100%固定)。防御%上昇も概ね同値だが、TR1のみ攻撃740%・防御560%と非対称
-    // (本ツールの仕様上、攻撃%上昇の1系統しか保持できないため、この非対称部分は攻撃側の値で代表させている点に注意)。
+    // カード画像で確認した攻撃%上昇(確率+100%固定)。
     trTable: { base:740, TR1:740, TR2:940, TR3:1270 }, // TR4・TR5は今回未確認
+    // 防御側は攻撃側と値が違う段階がある。LV10は防御の記載が無く(攻撃のみ)、TR1は攻撃740%に対し防御560%。
+    // TR2以降は攻撃と同値。defTrTableがある場合、防御シミュレーターではこちらを使う。
+    defTrTable: { base:0, TR1:560, TR2:940, TR3:1270 },
     baseRate: 100, // 確率+100%
     trRequiredPoints: { TR1:10, TR2:40, TR3:90 },
     note: '【特殊効果は模倣不可】公式ヘルプ「スキル必勝攻略講座」で確認。確率+100%/対象:全。' +
@@ -496,6 +525,7 @@ const specialSkills = {
           '神気乱龍所持武将自身の飛翔値見込みを「他3名それぞれの飛翔値見込み(各自の最大値)の合計」として自動計算する(01 スキルの「飛翔値」欄に自動反映、手動上書きも可能)。'
   },
   '八界経略': {
+    effectAxis: 'both', // 攻防両方(正本 data/skill/八界経略.json の効果文より)
     noSquadDuplicate: true, // note内の「重複不可」記載から自動付与(部隊内で同じ効果が複数発動しても1つ分のみ有効)
     noMimic: true, // note内の「模倣不可」記載から自動付与(遁世影武者等の模倣スキルはこのスキルを模倣できない)
     activationType: 'triggered', // ②: 攻撃したときに発動するタイプ
@@ -522,6 +552,7 @@ const specialSkills = {
           '(攻撃%上昇のみ兵科不一致で無効になる)。実装上もmatchesTroopTargetによる兵科判定の対象外にしてある。'
   },
   '仙剣破斬': {
+    effectAxis: 'both', // 攻防両方(正本 data/skill/仙剣破斬.json の効果文より)
     activationType: 'triggered', // ②: 攻撃したときに発動するタイプ
     trTable: { base: 115 }, // 攻撃115%上昇・防御115%上昇(両方同じ値なので共通のtrTableで代用)
     baseRate: 100, // 確率+100%
@@ -535,6 +566,7 @@ const specialSkills = {
           '実装する場合は期待値換算: 実効上昇% = 115% ×(1 + 卓越発動率0.35×(4-1)) のような式が考えられる(要確認)。'
   },
   '破邪後輝': {
+    effectAxis: 'atk', // 攻撃側(正本 data/skill/破邪後輝.json の効果文より)
     activationType: 'triggered', // ②: 攻撃したときに発動するタイプ
     hasHado: true, // 効果文が「覇道」の保護効果(スキル無効化・発動率低下から保護)と一致
     trTable: { base: 770 }, // 攻撃770%上昇(LV10のみ、TR未確認)
@@ -546,6 +578,7 @@ const specialSkills = {
           'TR(鍛錬)の詳細は今回未確認のためLV10(base)の値のみ登録。スキル欄に入力すると攻撃%上昇・速度%上昇・破壊%上昇がすべて自動反映される。'
   },
   '十死一生': {
+    effectAxis: 'atk', // 攻撃側(正本 data/skill/十死一生.json の効果文より)
     noMimic: true, // note内の「模倣不可」記載から自動付与(遁世影武者等の模倣スキルはこのスキルを模倣できない)
     activationType: 'triggered', // ②: 攻撃したときに発動するタイプ
     targetTroopCategories: ['槍兵科','弓兵科','騎馬兵科'], // 対象:槍/弓/馬
@@ -592,6 +625,7 @@ const specialSkills = {
           '【2026年7月修正】パラレル【天】版(No.31290)でTR6が解禁されたためixagno.blog.fc2.comで確認し追加登録。'
   },
   '赤焔ノ絆': {
+    effectAxis: 'atk', // 攻撃側(正本 data/skill/赤焔ノ絆.json の効果文より)
     noSquadDuplicate: true, // note内の「重複不可」記載から自動付与(部隊内で同じ効果が複数発動しても1つ分のみ有効)
     noMimic: true, // note内の「模倣不可」記載から自動付与(遁世影武者等の模倣スキルはこのスキルを模倣できない)
     activationType: 'triggered', // ②: 攻撃したときに発動するタイプ
@@ -607,6 +641,7 @@ const specialSkills = {
           '③自軍全部隊の帰還時間が一定秒数(returnTimeTable参照。LV10:5分→TR5:2分)を超えるとき、その秒数で帰還できる(特殊効果は模倣不可・重複不可、未実装・参考情報)。'
   },
   '絡繰傀儡': {
+    effectAxis: 'atk', // 攻撃側(正本 data/skill/絡繰傀儡.json の効果文より)
     noSquadDuplicate: true, // note内の「重複不可」記載から自動付与(部隊内で同じ効果が複数発動しても1つ分のみ有効)
     noMimic: true, // note内の「模倣不可」記載から自動付与(遁世影武者等の模倣スキルはこのスキルを模倣できない)
     activationType: 'triggered', // ②: 攻撃したときに発動するタイプ(確率+50%明記のため)
@@ -618,6 +653,7 @@ const specialSkills = {
           '総コスト除外(totalCostExclusion)は将来的に使用する可能性があるためデータとして登録したが、計算エンジンは現時点では未実装(参考情報のみ)。'
   },
   '絶無灰尽': {
+    effectAxis: 'atk', // 攻撃側(正本 data/skill/絶無灰尽.json の効果文より)
     activationType: 'triggered', // ②: 攻撃したときに発動するタイプ
     trTable: { base: 1010, TR1: 1055, TR2: 1115, TR3: 1200, TR4: 1340, TR5: 1530 }, // 攻撃%上昇(LV10〜TR5、ixanary.com確認)
     baseRate: 100, // 確率+100%(全段階共通)
@@ -628,6 +664,7 @@ const specialSkills = {
           '【2026年7月再修正】一時的にTR6(1980%・不屈5・コスト除外6)を追加していたが、これは誤りだった。実際は島津義弘(4)(No.1294)の固有スキルは本スキルではなく「雄武英略」であり、TR6データはそちらに属するものだった(ユーザー指摘により判明)。本スキルにTR6は無く、TR5までで登録し直した。'
   },
   '雄武英略': {
+    effectAxis: 'atk', // 攻撃側(正本 data/skill/雄武英略.json の効果文より)
     activationType: 'triggered', // ②: 攻撃したときに発動するタイプ
     trTable: { base: 550, TR1: 610, TR2: 750, TR3: 1020, TR4: 1380, TR5: 1790, TR6: 1980 }, // 攻撃%上昇(LV10〜TR6、ixanary.com確認)
     rateTable: { base: 60, TR6: 100 }, // 確率はLV10〜TR5が+60%で共通、TR6のみ+100%
@@ -654,6 +691,7 @@ const specialSkills = {
           '例: 部隊攻撃力100万、覇神絶域(24%)と星神闘覇相当の総攻撃力上昇スキル(200%)が1つずつ付いている場合、100万×(1+0.24)×(1+2)=372万。'
   },
   '龍驤虎躍': {
+    effectAxis: 'both', // 攻防両方(正本 data/skill/龍驤虎躍.json の効果文より)
     noMimic: true, // note内の「模倣不可」記載から自動付与(遁世影武者等の模倣スキルはこのスキルを模倣できない)
     activationType: 'triggered', // ②: 攻撃したときに発動するタイプ
     trTable: { base:810, TR1:910, TR2:1040, TR3:1200 }, // 攻撃%上昇・防御%上昇(同値のため共通のtrTableで代用)。鍛錬上限はTR3まで
@@ -668,6 +706,7 @@ const specialSkills = {
           'これは内部データ(costReductionTable)としてのみ登録し、現時点ではシミュレーターの表示・計算には反映しない方針(将来的に使用する可能性はある)。'
   },
   '勇冠三軍': {
+    effectAxis: 'atk', // 攻撃側(正本 data/skill/勇冠三軍.json の効果文より)
     noMimic: true, // note内の「模倣不可」記載から自動付与(遁世影武者等の模倣スキルはこのスキルを模倣できない)
     activationType: 'triggered', // ②: 攻撃したときに発動するタイプ
     // 「天地超克」の上位互換スキル。攻撃50%上昇(固定)に加え、(係数×防御参加武将数)%を攻撃効果に加算する。
@@ -684,6 +723,7 @@ const specialSkills = {
           '「01 スキル・飛翔値」上部の「防御参加武将数」欄に数値を入れると、このスキルを持つスキル枠の発動率・上昇%が自動計算される(自動反映対応)。'
   },
   '天地超克': {
+    effectAxis: 'atk', // 攻撃側(正本 data/skill/天地超克.json の効果文より)
     activationType: 'triggered', // ②: 攻撃したときに発動するタイプ
     // 勇冠三軍の下位互換(元)スキル。固定上昇分は無く、(係数×防御参加武将数)%のみを攻撃効果に加算する。
     variableFormula: {
@@ -699,6 +739,7 @@ const specialSkills = {
           '「防御参加武将数」欄の入力で自動計算される(自動反映対応)。'
   },
   '百万石ノ慈雨': {
+    effectAxis: 'atk', // 攻撃側(正本 data/skill/百万石ノ慈雨.json の効果文より)
     activationType: 'triggered', // ②: 攻撃したときに発動するタイプ
     targetTroopCategories: ['弓兵科','兵器兵科(砲兵科)','兵器兵科(器兵科)'], // 対象:弓/砲/器
     // 確率(発動率)・攻撃係数ともに鍛錬レベルで変化する複合型。
@@ -715,6 +756,7 @@ const specialSkills = {
           '【2026年7月修正】パラレル【天】版(No.40072)でTR6が解禁されたためixagno.blog.fc2.comで確認し追加登録。'
   },
   '万物神勇': {
+    effectAxis: 'atk', // 攻撃側(正本 data/skill/万物神勇.json の効果文より)
     activationType: 'triggered', // ②: 攻撃したときに発動するタイプ
     // 確率は鍛錬レベルによらず固定(+43%)、攻撃係数のみ鍛錬レベルで上昇。
     variableFormula: {
@@ -729,6 +771,7 @@ const specialSkills = {
           '「防御参加武将数」欄の入力で自動計算される(自動反映対応)。'
   },
   '烈火ノ闘将': {
+    effectAxis: 'atk', // 攻撃側(正本 data/skill/烈火ノ闘将.json の効果文より)
     noMimic: true, // note内の「模倣不可」記載から自動付与(遁世影武者等の模倣スキルはこのスキルを模倣できない)
     activationType: 'triggered', // ②: 攻撃したときに発動するタイプ
     targetTroopCategories: ['弓兵科','騎馬兵科','兵器兵科(器兵科)'], // 対象:弓/馬/器(カテゴリ全体)
@@ -747,6 +790,7 @@ const specialSkills = {
           '「防御参加武将数」欄の入力で自動計算される(卓越の期待値換算にも対応・自動反映対応)。'
   },
   '極楽浄愛': {
+    effectAxis: 'atk', // 攻撃側(正本 data/skill/極楽浄愛.json の効果文より)
     activationType: 'triggered', // ②: 攻撃したときに発動するタイプ
     hasSoar: true,
     soarValue: 17,
@@ -762,6 +806,7 @@ const specialSkills = {
           '「防御参加武将数」欄の入力で自動計算される(自動反映対応)。'
   },
   '飛龍衝天': {
+    effectAxis: 'atk', // 攻撃側(正本 data/skill/飛龍衝天.json の効果文より)
     noMimic: true, // note内の「模倣不可」記載から自動付与(遁世影武者等の模倣スキルはこのスキルを模倣できない)
     activationType: 'triggered', // ②: 攻撃したときに発動するタイプ
     hasSoar: true,
@@ -778,6 +823,8 @@ const specialSkills = {
           '「防御参加武将数」欄の入力で自動計算される(自動反映対応)。'
   },
   '覇槍ノ武威': {
+    multiplyAxis: 'atk', // 追加スキルの攻撃効果を(討伐ゲージ÷100)倍
+    effectAxis: 'atk', // 攻撃側(正本 data/skill/覇槍ノ武威.json の効果文より)
     activationType: 'triggered', // ②: 攻撃したときに発動するタイプ
     // 結城秀康(No.1276・2025年2月追加の新天)の固有スキル。
     // 本来は「討伐ゲージ」(最大300、対人攻撃戦闘で敵軍被害兵数に応じ回復)という専用リソースに
@@ -797,6 +844,8 @@ const specialSkills = {
           'もう1つの「対人攻撃戦闘時、部隊内武将の討伐ゲージを回復」効果は、討伐ゲージ自体を使用しないため実装しない。'
   },
   '覇道ノ泰斗': {
+    multiplyAxis: 'atk', // 追加・極限スキルの攻撃・破壊効果が倍加
+    effectAxis: 'atk', // 攻撃側(正本 data/skill/覇道ノ泰斗.json の効果文より)
     noMimic: true, // note内の「模倣不可」記載から自動付与(遁世影武者等の模倣スキルはこのスキルを模倣できない)
     activationType: 'triggered', // ②: 攻撃したときに発動するタイプ
     hasHado: true, // 「覇道」タグ持ち
@@ -816,6 +865,7 @@ const specialSkills = {
           '【2026年7月修正】パラレル【天】版(No.31296)でTR6が解禁されたためixagno.blog.fc2.comで確認し追加登録。'
   },
   '縮地': {
+    multiplyAxis: 'atk', // 追加スキルの攻撃・速度効果が倍加
     noMimic: true, // note内の「模倣不可」記載から自動付与(遁世影武者等の模倣スキルはこのスキルを模倣できない)
     // このスキル自身には攻撃%上昇などの数値効果は無く(確率+100%/対象:追加スキル、という表記のみ)、
     // 「追加スキルの攻撃・速度効果を倍加する」効果のみを持つ純粋な倍率スキル。
@@ -829,6 +879,7 @@ const specialSkills = {
           'という効果のみを持つ: LV10=2倍 ／ 鍛錬Lv1(10P)=2.1倍 ／ Lv2(40P)=2.2倍 ／ Lv3(90P)=2.3倍 ／ Lv4(150P)=2.4倍 ／ Lv5(200P)=2.5倍(自動反映対応)。'
   },
   '獅子ノ炯眼': {
+    effectAxis: 'both', // 攻防両方(正本 data/skill/獅子ノ炯眼.json の効果文より)
     noSquadDuplicate: true, // note内の「重複不可」記載から自動付与(部隊内で同じ効果が複数発動しても1つ分のみ有効)
     noMimic: true, // note内の「模倣不可」記載から自動付与(遁世影武者等の模倣スキルはこのスキルを模倣できない)
     activationType: 'triggered', // ②: 攻撃したときに発動するタイプ
@@ -845,6 +896,7 @@ const specialSkills = {
           '指揮兵士数欄を手入力している(データベース未登録の)武将には自動加算されない。'
   },
   '神母五鈷戟': {
+    effectAxis: 'both', // 攻防両方(正本 data/skill/神母五鈷戟.json の効果文より)
     noSquadDuplicate: true, // note内の「重複不可」記載から自動付与(部隊内で同じ効果が複数発動しても1つ分のみ有効)
     noMimic: true, // note内の「模倣不可」記載から自動付与(遁世影武者等の模倣スキルはこのスキルを模倣できない)
     activationType: 'triggered', // ②: 攻撃したときに発動するタイプ
@@ -861,6 +913,7 @@ const specialSkills = {
           '(武将データベースに登録されている武将のみが対象、指揮兵士数欄を手入力している武将には自動加算されない)。'
   },
   '滅神五芒星': {
+    effectAxis: 'atk', // 攻撃側(正本 data/skill/滅神五芒星.json の効果文より)
     noMimic: true, // note内の「模倣不可」記載から自動付与(遁世影武者等の模倣スキルはこのスキルを模倣できない)
     activationType: 'triggered', // ②: 攻撃したときに発動するタイプ
     trTable: { base: 120 }, // 攻撃120%上昇(LV10。Lv1実測値は40%、TR詳細は今回未確認)
@@ -885,6 +938,7 @@ const specialSkills = {
           '(一時「琥将悶牙」という誤った名称に修正してしまっていたが、これは誤りだったため「斑将閃牙」に戻した)。'
   },
   '火之迦具土神': {
+    effectAxis: 'atk', // 攻撃側(正本 data/skill/火之迦具土神.json の効果文より)
     activationType: 'triggered', // ②: 攻撃したときに発動するタイプ
     targetTroopCategories: ['槍兵科','騎馬兵科','兵器兵科(砲兵科)'], // 対象:槍/馬/砲
     trTable: { base: 160 }, // 攻撃160%上昇(LV10、TR詳細は今回未確認)
@@ -894,6 +948,7 @@ const specialSkills = {
           '(卓越の期待値換算に対応。二重卓越を持つ武将(滅神五芒星・斑将閃牙等)と組み合わせた場合は2段抽選として自動計算される)。'
   },
   '戦陣剣舞': {
+    effectAxis: 'both', // 攻防両方(正本 data/skill/戦陣剣舞.json の効果文より)
     activationType: 'triggered', // ②: 攻撃したときに発動するタイプ
     hasSoar: true,
     soarValue: 6,
@@ -930,6 +985,7 @@ const specialSkills = {
           '模倣元スキルが「重複不可」の場合、部隊長本人の同スキルとの重複が発生するため1つ分のみ有効になる(noSquadDuplicateで判定・自動反映対応)。'
   },
   '龍槌閃・惨': {
+    effectAxis: 'atk', // 攻撃側(正本 data/skill/龍槌閃・惨.json の効果文より)
     activationType: 'triggered', // ②: 攻撃したときに発動するタイプ
     // 「通常確率では発動せず、卓越:追加確率X%で発動」という特殊タイプ。通常の発動率は0%で、
     // 卓越(追加確率)でのみ発動し、成功時に攻撃%上昇と飛翔を得る。rateTableに卓越発動率を、
@@ -947,6 +1003,7 @@ const specialSkills = {
           '自動反映対応(01スキル欄の発動率にはrateTableの卓越確率、上昇%にはtrTableの値がそのまま表示される)。'
   },
   '伏雷蒼樹': {
+    effectAxis: 'both', // 攻防両方(正本 data/skill/伏雷蒼樹.json の効果文より)
     activationType: 'triggered', // ②: 攻撃したときに発動するタイプ
     hasHado: true, // 「覇道」タグ持ち
     targetTroopCategories: ['弓兵科','兵器兵科(砲兵科)','兵器兵科(器兵科)'], // 対象:弓/砲/器
@@ -969,6 +1026,7 @@ const specialSkills = {
           '【2026年7月修正】以前は変換率を「超過%×変換率÷100」のパーセント表記として計算しており(TR5で超過200%なら213.6%相当)、ユーザー実例(1560%)より大幅に低い値になっていた不具合を修正。÷100を削除し、変換率をそのまま倍率として乗算するよう修正した。'
   },
   '飛将ノ武略': {
+    effectAxis: 'atk', // 攻撃側(正本 data/skill/飛将ノ武略.json の効果文より)
     activationType: 'triggered', // ②: 攻撃したときに発動するタイプ
     targetTroopCategories: ['槍兵科','騎馬兵科','兵器兵科(器兵科)'], // 対象:槍/馬/器
     // 【2026年8月バグ修正】対象表記「槍・馬・器・騎」の「騎」は、matchesTroopTarget付近のコメント(4004-4009行目)にある
@@ -994,6 +1052,7 @@ const specialSkills = {
           'applySpeedDependentAttackSkillsによる自動計算に対応した(部隊内の速度%上昇スキルが全て反映された後の最終的な部隊移動速度を使って攻撃%を算出)。'
   },
   '照闇騎行': {
+    effectAxis: 'atk', // 攻撃側(正本 data/skill/照闇騎行.json の効果文より)
     activationType: 'triggered', // ②: 攻撃したときに発動するタイプ
     trTable: { base: 540 }, // 攻撃540%上昇(LV10のみ、TR未確認)
     baseRate: 100, // 確率+100%
@@ -1003,6 +1062,7 @@ const specialSkills = {
           'TR(鍛錬)の詳細は今回未確認のためLV10(base)の値のみ登録。'
   },
   '虚実法容': {
+    effectAxis: 'def', // 防御側(正本 data/skill/虚実法容.json の効果文より)
     activationType: 'triggered', // ②: 攻撃したときに発動するタイプ
     trTable: { base: 760, TR1: 760, TR2: 760, TR3: 760, TR4: 760, TR5: 760, TR6: 760 }, // 防御%上昇(全段階760%で変化なし、ixanary.com確認)
     rateTable: { base: 38, TR1: 38, TR2: 40, TR3: 45, TR4: 50, TR5: 60, TR6: 70 }, // 確率(ixanary.com確認)
@@ -1016,6 +1076,8 @@ const specialSkills = {
           '【2026年7月再修正】TR1〜TR5もixanary.comで確認して追加登録した。'
   },
   '凛乎穿進': {
+    multiplyAxis: 'def', // 極限スキルの防御効果を2倍
+    effectAxis: 'def', // 防御側(正本 data/skill/凛乎穿進.json の効果文より)
     hasSoar: true,
     soarValue: 3,
     noMimic: true, // 「模倣不可」明記
@@ -1035,6 +1097,7 @@ const specialSkills = {
           '【2026年7月修正】以前はbase・TR6のみ登録されており、TR1〜TR5が未登録だったため追加した。'
   },
   '護国王器': {
+    effectAxis: 'atk', // 攻撃側(正本 data/skill/護国王器.json の効果文より)
     noMimic: true, // 「模倣不可」明記
     noSquadDuplicate: true, // 「自部隊内では重複不可」明記
     activationType: 'triggered', // ②: 攻撃したときに発動するタイプ
@@ -1052,6 +1115,8 @@ const specialSkills = {
           '【2026年7月再修正】本多忠勝(2)の武天蜻蛉切と同系統のスキルとユーザーから指摘があり、卓越確率上昇(自己限定・部隊内全体)を新機構(selfCritRateBonusTable/critRateBonusTable)で自動計算に対応した(以前は参考データのみだった)。'
   },
   '壬生ノ狼牙': {
+    multiplyAxis: 'atk', // 追加スキルの攻撃効果が2.5倍
+    effectAxis: 'atk', // 攻撃側(正本 data/skill/壬生ノ狼牙.json の効果文より)
     noMimic: true, // 「模倣不可」明記
     activationType: 'triggered', // ②: 攻撃したときに発動するタイプ
     hasMujin: true, // 「無尽」タグ持ち
@@ -1068,6 +1133,7 @@ const specialSkills = {
           '【2026年7月修正】以前はbase(LV10)とTR5のみ登録されており、TR1〜TR4が未登録だったため追加した。'
   },
   '極衝爆砕': {
+    effectAxis: 'def', // 防御側(正本 data/skill/極衝爆砕.json の効果文より)
     activationType: 'triggered', // ②: 攻撃したときに発動するタイプ
     targetTroopCategories: ['槍兵科','兵器兵科(砲兵科)','兵器兵科(器兵科)'], // 対象:槍/砲/器
     trTable: { base:150, TR1:150, TR2:150, TR3:150, TR4:150, TR5:150 }, // 防御%上昇(固定分。全段階とも150%で変化なし)
@@ -1083,6 +1149,7 @@ const specialSkills = {
           '【2026年7月修正】以前はbase・TR5のみ登録され、かつbaseの確率がLV1の値(37%)を誤って使っていたため、TR1〜TR4を追加し確率も修正した。'
   },
   '天翔雷神': {
+    effectAxis: 'atk', // 攻撃側(正本 data/skill/天翔雷神.json の効果文より)
     activationType: 'triggered', // ②: 攻撃したときに発動するタイプ
     targetTroopCategories: ['弓兵科','騎馬兵科'], // 対象:弓/馬
     targetSoldierNames: ['焙烙火矢'], // 対象:焙(=焙烙火矢単体)
@@ -1096,6 +1163,7 @@ const specialSkills = {
           'TR(鍛錬)詳細は今回未確認のためLV10(base)の値のみ登録。'
   },
   '風魔ノ夜討': {
+    effectAxis: 'atk', // 攻撃側(正本 data/skill/風魔ノ夜討.json の効果文より)
     activationType: 'triggered', // ②: 攻撃したときに発動するタイプ
     targetTroopCategories: ['槍兵科','弓兵科','兵器兵科(器兵科)'], // 対象:槍/弓/器
     targetSoldierNames: ['焙烙火矢'], // 対象:焙(=焙烙火矢単体)
@@ -1110,6 +1178,7 @@ const specialSkills = {
           'TR(鍛錬)詳細は今回未確認のためLV10(base)の値のみ登録。'
   },
   '魔弾奏者': {
+    effectAxis: 'atk', // 攻撃側(正本 data/skill/魔弾奏者.json の効果文より)
     activationType: 'triggered', // ②: 攻撃したときに発動するタイプ
     targetTroopCategories: ['槍兵科','弓兵科','兵器兵科(砲兵科)','兵器兵科(器兵科)'], // 対象:槍/弓/砲/器
     hasSoar: true,
@@ -1122,6 +1191,8 @@ const specialSkills = {
           'TR(鍛錬)詳細は今回未確認のためLV10(base)の値のみ登録。'
   },
   '天舞皆朱': {
+    multiplyAxis: 'atk', // 極限スキルの攻撃効果を2倍
+    effectAxis: 'atk', // 攻撃側(正本 data/skill/天舞皆朱.json の効果文より)
     noMimic: true, // 「模倣不可」明記
     activationType: 'triggered', // ②: 攻撃したときに発動するタイプ
     trTable: { base:690, TR1:770, TR2:910, TR3:1130, TR4:1400, TR5:1790 }, // 攻撃%上昇(自己)
@@ -1141,6 +1212,7 @@ const specialSkills = {
           '【2026年7月修正】飛翔値は常に整数で表示されるため、倍率適用後の小数点以下は切り上げ(computeBaseSoar内でMath.ceilを使用。以前は小数第2位までの四捨五入になっていたため修正)。'
   },
   '飛幻忍術': {
+    effectAxis: 'atk', // 攻撃側(正本 data/skill/飛幻忍術.json の効果文より)
     noMimic: true, // 「模倣不可」明記
     noSquadDuplicate: true, // 「自部隊内では重複不可」明記
     activationType: 'triggered', // ②: 攻撃したときに発動するタイプ
@@ -1156,6 +1228,7 @@ const specialSkills = {
           'TR(鍛錬)詳細は今回未確認のためLV10(base)の値のみ登録。どの武将の初期スキルかは今回のカード画像からは不明。'
   },
   '開闢ノ逆鉾': {
+    effectAxis: 'atk', // 攻撃側(正本 data/skill/開闢ノ逆鉾.json の効果文より)
     noMimic: true, // 「模倣不可」明記
     activationType: 'triggered', // ②: 攻撃したときに発動するタイプ
     trTable: { base:254, TR1:350, TR2:450, TR3:560, TR4:680, TR5:810 }, // 攻撃%上昇(通常発動分)
@@ -1175,6 +1248,7 @@ const specialSkills = {
           '(部隊内重複上限2・模倣不可)。被害減少の具体的な数値は登録不要のため未登録だが、effectCategoryにより「被害減無し」警告の抑制対象になる。'
   },
   '神農医方': {
+    effectAxis: 'atk', // 攻撃側(正本 data/skill/神農医方.json の効果文より)
     noMimic: true, // 「模倣不可」明記
     noSquadDuplicate: true, // 「部隊内重複不可」明記
     activationType: 'triggered', // ②: 攻撃したときに発動するタイプ
@@ -1193,6 +1267,7 @@ const specialSkills = {
           '発動条件自体は卓越確率45%(squadSoarBonusIfNonZero.chance、参考値・現状は常時適用の簡略実装)。'
   },
   '四天轟雷': {
+    effectAxis: 'both', // 攻防両方(正本 data/skill/四天轟雷.json の効果文より)
     activationType: 'triggered', // ②: 攻撃したときに発動するタイプ
     trTable: { base:360, TR1:440, TR2:540, TR3:670, TR4:810, TR5:960 }, // 攻撃%上昇・防御%上昇(同値のため共通のtrTableで代用)
     baseRate: 100, // 確率+100%
@@ -1207,6 +1282,7 @@ const specialSkills = {
           'matchesTroopTarget関数でこのスキルの有無を判定し、対象兵科(targetTroopCategories)を動的に拡張する形で自動反映対応済み。どの武将の初期スキルかは今回のカード画像からは不明。'
   },
   '飛姫舞刀': {
+    effectAxis: 'def', // 防御側(noteに「攻撃%上昇は無し」と明記。trTableには防御%上昇値を入れてある)
     noMimic: true, // 「模倣不可」明記
     activationType: 'triggered', // ②: 攻撃したときに発動するタイプ(防御専用スキル)
     targetTroopCategories: ['槍兵科','兵器兵科(砲兵科)','兵器兵科(器兵科)'], // 対象:槍/砲/器
@@ -1224,6 +1300,7 @@ const specialSkills = {
           '武将本体(波姫・No.2848)は成長率(攻撃/防御/兵法の成長値)が今回のカード画像からは確認できなかったため、generalGrowthDBには未登録。'
   },
   '偃武覇陣': {
+    effectAxis: 'both', // 攻防両方(正本 data/skill/偃武覇陣.json の効果文より)
     fukutsu: 1, // 不屈1(2026-08-11一括付与: noteに記載があるのにフィールドが無く不屈バッジ・被害減判定に反映されていなかった)
     noMimic: true, // 「模倣不可」明記
     activationType: 'triggered', // ②: 攻撃したときに発動するタイプ
@@ -1245,6 +1322,8 @@ const specialSkills = {
           'を持つが、HP・回復の概念が本ツールに無いため計算エンジンは未実装(参考データのみ)。'
   },
   '炎統極刃': {
+    multiplyAxis: 'atk', // 追加・極限スキルの攻撃・破壊効果が2倍
+    effectAxis: 'atk', // 攻撃側(正本 data/skill/炎統極刃.json の効果文より)
     noMimic: true, // 「模倣不可」明記
     activationType: 'triggered', // ②: 攻撃したときに発動するタイプ
     trTable: { base:770, TR1:1030, TR2:1410, TR3:1929, TR4:2830, TR5:4400 }, // 攻撃%上昇
@@ -1307,12 +1386,14 @@ const specialSkills = {
      trTable/baseRateで自動反映する。
   ============================================ */
   '破軍騎行': {
+    effectAxis: 'atk', // 攻撃側(正本 data/skill/破軍騎行.json の効果文より)
     fukutsu: 2, // 不屈2(2026-08-11一括付与: noteに記載があるのにフィールドが無く不屈バッジ・被害減判定に反映されていなかった)
     activationType: 'triggered', statTarget: 'atk',
     trTable: { base: 750 }, baseRate: 100,
     note: 'SS(合成専用スキル)。確率+100%/対象:全。LV1:攻撃480%上昇、LV10:攻撃750%上昇。不屈2(攻撃戦闘敗北時、指揮兵が不屈の数値×1000まで回復)。鍛錬TR別数値は情報源に記載なし。'
   },
   '永世ノ天隻': {
+    effectAxis: 'def', // 防御側(正本 data/skill/永世ノ天隻.json の効果文より)
     hasSoar: true,
     soarValue: 9,
     variableFormula: {
@@ -1330,18 +1411,23 @@ const specialSkills = {
           '敵軍部隊数依存のため計算エンジンは未実装(参考データのみ)。'
   },
   '黄泉醜女ノ屍兵': {
+    effectAxis: 'def', // 防御側(正本 data/skill/黄泉醜女ノ屍兵.json の効果文より)
     activationType: 'triggered', statTarget: 'def',
     trTable: { base: 200, TR1: 300, TR2: 420, TR3: 560, TR4: 710, TR5: 860 }, baseRate: 54,
     note: 'SS(合成専用スキル・防御)。確率:LV1+26%→LV10以降+54%/対象:全(自部隊内全武将)。防御:LV1=90%上昇、LV10=200%上昇、TR1=300%、TR2=420%、TR3=560%、TR4=710%、TR5=860%(自動反映対応)。' +
           '付随効果(参考データのみ・計算エンジン未対応):防御戦闘時、自部隊武将が受ける「N以下のダメージ」の上限を軽減。上限値はLV1=45、LV10=45、TR1=44、TR2=40、TR3=35、TR4=30、TR5=25。'
   },
   '月詠ノ覇威': {
+    effectAxis: 'both', // 攻防両方(正本 data/skill/月詠ノ覇威.json の効果文より)
     activationType: 'triggered', statTarget: 'atk',
     trTable: { base: 344, TR1: 570, TR2: 850, TR3: 1260 }, baseRate: 100,
+    // 防御側はTR1以降も344%のまま上がらない。防御シミュレーターではこちらを使う。
+    defTrTable: { base: 344, TR1: 344, TR2: 344, TR3: 344 },
     note: 'SS(合成専用スキル・攻防)。確率+100%/対象:全。LV1:攻撃・防御各50%上昇+卓越確率+2%、LV10:攻撃・防御各344%上昇+卓越確率+15%、TR1:攻撃570%・防御344%(防御は情報源記載のままTR以降も344%で変化なし)+卓越確率+15%、TR2:攻撃850%・防御344%+卓越確率+17%、TR3:攻撃1260%・防御344%+卓越確率+25%。' +
-          '「自軍全武将全スキルの卓越確率に加算」「自軍内重複上限2」の特殊効果あり(参考データのみ)。防御側の数値・卓越確率加算部分・重複上限は自動計算未対応。模倣不可。TR4・TR5は情報源に記載なし。'
+          '「自軍全武将全スキルの卓越確率に加算」「自軍内重複上限2」の特殊効果あり(参考データのみ)。卓越確率加算部分・重複上限は自動計算未対応。模倣不可。TR4・TR5は情報源に記載なし。'
   },
   '神羅聖域': {
+    effectAxis: 'both', // 攻防両方(正本 data/skill/神羅聖域.json の効果文より)
     hasHado: true, // 覇道(所属部隊の武将のスキルを無効化・発動率低下から保護)。2026-08-11付与: note先頭で「覇道」タグを明記しているのにフラグが無かった
     activationType: 'triggered', statTarget: 'atk',
     trTable: { base: 900, TR1: 940, TR2: 1000, TR3: 1070, TR4: 1150, TR5: 1240 }, baseRate: 40,
@@ -1349,6 +1435,7 @@ const specialSkills = {
           '破壊:LV10=150%、TR1=160%、TR2=170%、TR3=180%、TR4=190%、TR5=200%(破壊は自動計算未対応)。「覇道」タグにより所属部隊の武将のスキルを無効化・発動率低下から保護。'
   },
   '終焉焦土': {
+    effectAxis: 'atk', // 攻撃側(正本 data/skill/終焉焦土.json の効果文より)
     // 【2026年7月再々検証】ixanary.comの「部隊消費コストを抑える無尽スキルまとめ」記事(無尽スキル18個の一覧)で
     // 本スキルが攻撃スキル枠の無尽スキルとして明記されていることを確認。hasMujinフラグを復活させる。
     hasMujin: true, // 無尽(部隊消費コスト-0.5、ixanary.com「無尽スキルまとめ」記事で確認)
@@ -1363,6 +1450,7 @@ const specialSkills = {
           '【2026年7月再々修正】ixanary.comの「部隊消費コストを抑える無尽スキルまとめ」記事で無尽スキルと確認、hasMujinフラグを復活。'
   },
   '焼尽神無': {
+    effectAxis: 'atk', // 攻撃側(正本 data/skill/焼尽神無.json の効果文より)
     // 【2026年7月再々検証】ixanary.comの「部隊消費コストを抑える無尽スキルまとめ」記事(無尽スキル18個の一覧)で
     // 本スキルが攻撃スキル枠の無尽スキルとして明記されていることを確認。hasMujinフラグを復活させる。
     // (斎藤一【覇】+幻王ノ采配持ち豊臣秀吉【覇】での「強すぎる」報告は、無尽マスタリーの正規の倍加であり
@@ -1382,6 +1470,7 @@ const specialSkills = {
           '【2026年7月四度目修正】ユーザー報告により、ixanary.comのスキルページ記載数値(17.25等)は実際の2.5倍で掲載されていたことが判明。登録値を2.5で割って修正(LV10=6.9、TR1=7.3、TR2=7.9、TR3=8.8、TR4=10、TR5=12)。'
   },
   '龍気剣鳴': {
+    effectAxis: 'atk', // 攻撃側(正本 data/skill/龍気剣鳴.json の効果文より)
     targetTroopCategories: ['槍兵科','騎馬兵科','兵器兵科(器兵科)'], // 対象:槍/馬/器(+「騎」は騎馬兵科と重複のため区別せず登録)
     variableFormula: {
       statTarget: 'atk', base: 0, variable: 'defenderCount',
@@ -1403,6 +1492,7 @@ const specialSkills = {
     note: 'S(攻撃)。確率はLV10〜TR5共通で+45%、TR6で+45%/対象:弓砲器。攻撃:150%上昇+敵軍部隊数×30%(LV10)、TR1=×32%、TR2=×34%、TR3=×37%、TR4=×40%、TR5=×44%、TR6=×45%+不屈1。敵軍部隊数依存のため計算エンジンは未実装(参考データのみ、固定150%部分のみ参考値)。'
   },
   '布刀玉ノ策': {
+    effectAxis: 'both', // 攻防両方(正本 data/skill/布刀玉ノ策.json の効果文より)
     activationType: 'triggered', statTarget: 'atk',
     trTable: { base: 970, TR1: 970, TR2: 1030, TR3: 1150, TR4: 1300, TR5: 1520 }, baseRate: 100,
     note: 'SS(合成専用スキル・攻防・卓越確率上昇)。合成専用スキルのためLV10段階は存在せずTR1(10P)が初期値(baseキーにはTR1と同値を登録)。確率+100%(全段階共通)/対象:全。攻撃・防御は同値でTR1=970%、TR2=1030%、TR3=1150%、TR4=1300%、TR5=1520%(攻撃分のみ自動反映、防御は同値として参照)。' +
@@ -1412,6 +1502,7 @@ const specialSkills = {
     note: 'SS(合成専用スキル・攻撃)。確率+45%/対象:全。攻撃:LV1=50%上昇+自軍攻撃武将数×5%、LV10=150%上昇+自軍攻撃武将数×15%。自軍攻撃武将数依存のため計算エンジンは未実装(参考データのみ)。'
   },
   '聖剣深鏡': {
+    effectAxis: 'def', // 防御側(正本 data/skill/聖剣深鏡.json の効果文より)
     noMimic: true,
     variableFormula: {
       statTarget: 'def', base: 0, variable: 'defenderCount',
@@ -1423,6 +1514,7 @@ const specialSkills = {
           '【2026年7月修正】以前は計算エンジン未対応(参考データのみ)扱いにしていたが、既存のvariableFormula(defenderCount)機構で計算可能だったため対応した。'
   },
   '梵天浄界': {
+    effectAxis: 'def', // 防御側(正本 data/skill/梵天浄界.json の効果文より)
     variableFormula: {
       statTarget: 'def', base: 50, variable: 'defenderCount',
       perUnitTable: { base:10, TR1:10.5, TR2:11.3, TR3:12.5, TR4:14.1, TR5:16.2 }
@@ -1434,6 +1526,7 @@ const specialSkills = {
           '【2026年7月修正】以前は防御参加武将数依存の防御部分も含め計算エンジン未対応(参考データのみ)扱いにしていたが、既存のvariableFormula(defenderCount)機構で防御部分は計算可能だったため対応した。'
   },
   '岳王ノ加護': {
+    effectAxis: 'def', // 防御側(正本 data/skill/岳王ノ加護.json の効果文より)
     // 【2026年7月再々検証】ixanary.comの「無尽スキルまとめ」記事で防御スキル枠の無尽スキルと確認、hasMujinフラグを復活。
     hasMujin: true, // 無尽(部隊消費コスト-0.5、ixanary.com「無尽スキルまとめ」記事で確認)
     variableFormula: {
@@ -1482,6 +1575,7 @@ const specialSkills = {
     note: '飛翔12。飛翔値の自動集計(最大値を採用)に載せるための登録。攻撃/防御の効果そのものは未登録で、計算には反映していない。2026-08-14、飛翔を持つのに飛翔値が入っていないスキルの一括点検で追加。'
   },
   '従魔絶神': {
+    effectAxis: 'def', // 防御側(正本 data/skill/従魔絶神.json の効果文より)
     hasSoar: true,
     soarValue: 13,
     variableFormula: {
@@ -1494,6 +1588,7 @@ const specialSkills = {
           '【2026年7月修正】以前は計算エンジン未対応(参考データのみ)扱いにしていたが、既存のvariableFormula(defenderCount)機構で計算可能だったため対応した。'
   },
   '泰厳射手': {
+    effectAxis: 'def', // 防御側(正本 data/skill/泰厳射手.json の効果文より)
     targetTroopCategories: ['兵器兵科(砲兵科)'], // 対象:砲器
     variableFormula: {
       statTarget: 'def', base: 0, variable: 'defenderCount',
@@ -1508,6 +1603,7 @@ const specialSkills = {
           'あわせて確率がTR5でも+60%のままであること(TR6でのみ+100%に上昇)が判明し、以前TR5=+100%と誤登録していた点も修正した(ユーザー指摘により再調査)。'
   },
   '不制于天地人': {
+    effectAxis: 'def', // 防御側(正本 data/skill/不制于天地人.json の効果文より)
     noMimic: true,
     targetTroopCategories: ['槍兵科','弓兵科','兵器兵科(器兵科)'], // 対象:槍/弓/器/鉄(鉄は兵科分類上、器兵科等に含まれるものとして扱う)
     variableFormula: {
@@ -1521,6 +1617,7 @@ const specialSkills = {
           '【2026年7月再修正】パラレル【天】版(No.31309)でTR6が解禁されたためixagno.blog.fc2.comで確認し追加登録。'
   },
   '魔導禁鎖': {
+    effectAxis: 'def', // 防御側(正本 data/skill/魔導禁鎖.json の効果文より)
     noMimic: true,
     targetTroopCategories: ['槍兵科','弓兵科','兵器兵科(砲兵科)','兵器兵科(器兵科)'], // 対象:槍/弓/砲/器
     variableFormula: {
@@ -1533,6 +1630,7 @@ const specialSkills = {
           '【2026年7月修正】以前は計算エンジン未対応(参考データのみ)扱いにしていたが、既存のvariableFormula(defenderCount)機構で計算可能だったため対応した。'
   },
   '神将火剣': {
+    effectAxis: 'def', // 防御側(正本 data/skill/神将火剣.json の効果文より)
     targetTroopCategories: ['槍兵科','騎馬兵科','兵器兵科(砲兵科)','兵器兵科(器兵科)'],
     activationType: 'triggered', statTarget: 'def',
     // 防御150%上昇 + 自軍内で同じ兵種を指揮している武将数×12%。
@@ -1553,6 +1651,7 @@ const specialSkills = {
           '(弓足軽と長弓兵のように兵士が違えば連動しない)。鍛錬TR別数値は情報源に記載なし。'
   },
   '国呑ノ蟒蛇': {
+    effectAxis: 'def', // 防御側(正本 data/skill/国呑ノ蟒蛇.json の効果文より)
     targetTroopCategories: ['槍兵科','弓兵科','兵器兵科(器兵科)'], // 対象:槍/弓/器/鉄
     variableFormula: {
       statTarget: 'def', base: 0, variable: 'defenderCount',
@@ -1569,6 +1668,7 @@ const specialSkills = {
           '【2026年7月三度目修正】ixanary.com生HTMLでTR1〜TR6の確率・係数の欠落分(TR1〜TR4の確率、TR4係数)を確認して補完。卓越のTR別追加確率もtakuetsuChanceTableとして新規対応した(エンジン側にTR別テーブル+0%下限クランプの仕組みを追加)。'
   },
   '豊恩銘魂': {
+    effectAxis: 'def', // 防御側(正本 data/skill/豊恩銘魂.json の効果文より)
     // 【2026年7月再々検証】ixanary.comの「無尽スキルまとめ」記事で防御スキル枠の無尽スキルと確認、hasMujinフラグを復活。
     hasMujin: true, // 無尽(部隊消費コスト-0.5、ixanary.com「無尽スキルまとめ」記事で確認)
     variableFormula: {
@@ -1582,6 +1682,7 @@ const specialSkills = {
           '【2026年7月再々修正】ixanary.comの「無尽スキルまとめ」記事で無尽スキルと確認、hasMujinフラグを復活。'
   },
   '月煌侵蝕': {
+    effectAxis: 'def', // 防御側(正本 data/skill/月煌侵蝕.json の効果文より)
     variableFormula: {
       statTarget: 'def', base: 0, variable: 'defenderCount',
       perUnitTable: { base:7.6, TR1:7.7, TR2:8, TR3:8.4, TR4:9, TR5:10 }
@@ -1592,6 +1693,7 @@ const specialSkills = {
           '【2026年7月修正】以前は計算エンジン未対応(参考データのみ)扱いにしていたが、既存のvariableFormula(defenderCount)機構で計算可能だったため対応した。'
   },
   '牙突・弐式': {
+    effectAxis: 'atk', // 攻撃側(正本 data/skill/牙突・弐式.json の効果文より)
     activationType: 'triggered', statTarget: 'atk',
     // 【2026年7月再々検証】ixanary.comの「無尽スキルまとめ」記事で攻撃スキル枠の無尽スキルと確認、hasMujinフラグを復活。
     hasMujin: true, // 無尽(部隊消費コスト-0.5、ixanary.com「無尽スキルまとめ」記事で確認)
@@ -1600,6 +1702,7 @@ const specialSkills = {
           '【2026年7月再々修正】ixanary.comの「無尽スキルまとめ」記事で無尽スキルと確認、hasMujinフラグを復活(以前の削除は誤りだった)。'
   },
   '覆天征軍': {
+    effectAxis: 'atk', // 攻撃側(正本 data/skill/覆天征軍.json の効果文より)
     activationType: 'triggered', statTarget: 'atk',
     hasMujin: true, // 無尽(部隊消費コスト-1)
     trTable: { base: 900 }, baseRate: 100,
@@ -1607,6 +1710,7 @@ const specialSkills = {
           '【2026年7月修正】hasMujinフラグ未設定だったため追加。'
   },
   '信心不抜': {
+    effectAxis: 'atk', // 攻撃側(正本 data/skill/信心不抜.json の効果文より)
     activationType: 'triggered', statTarget: 'atk', noMimic: true, noSquadDuplicate: true,
     hasMujin: true, // 対象:全 無尽
     trTable: { base: 680, TR1: 715, TR2: 760, TR3: 820, TR4: 910, TR5: 1040 }, baseRate: 100,
@@ -1615,6 +1719,8 @@ const specialSkills = {
           '【2026年7月修正】hasMujinフラグ未設定だったため追加。'
   },
   '智絶千算': {
+    multiplyAxis: 'atk', // 極限スキルの攻撃効果が3.5倍
+    effectAxis: 'atk', // 攻撃側(正本 data/skill/智絶千算.json の効果文より)
     activationType: 'triggered', statTarget: 'atk', noMimic: true,
     hasMujin: true, // 無尽(部隊消費コスト-0.5)。ixanary.com「無尽スキルまとめ」記事でも攻撃スキル枠の無尽スキルと確認
     // 「対象兵科指揮時、極限スキルの攻撃効果が3.5倍」(全鍛錬レベル共通で3.5倍固定)。天舞皆朱・凛乎穿進と同じ仕組みで実装。
@@ -1629,6 +1735,7 @@ const specialSkills = {
           '【2026年7月再修正】「極限スキルの攻撃効果が3.5倍」が参考データのみ(未計算)になっていたため、multiplyAdditionalSkillsBy機構で自動反映するよう対応。'
   },
   '王佐ノ指揮': {
+    effectAxis: 'both', // 攻防両方(正本 data/skill/王佐ノ指揮.json の効果文より)
     activationType: 'triggered', statTarget: 'atk',
     hasMujin: true, // 無尽(コスト-0.5)
     trTable: { base: 520, TR1: 590, TR2: 730, TR3: 920, TR4: 1140, TR5: 1400 }, baseRate: 100,
@@ -1638,6 +1745,7 @@ const specialSkills = {
 
   /* ============ ユーザー指定スキル名リスト・チャンク2/4 ============ */
   '華焰': {
+    effectAxis: 'def', // 防御側(正本 data/skill/華焰.json の効果文より)
     noMimic: true, // 「模倣不可」明記
     targetTroopCategories: ['兵器兵科(砲兵科)','兵器兵科(器兵科)'], // 対象:砲/器
     activationType: 'triggered', statTarget: 'def',
@@ -1652,6 +1760,7 @@ const specialSkills = {
           'ixanary.com/cards/2615とixawiki BushoCard/2615で確認(2026-08-12)。'
   },
   '火槍猛進': {
+    effectAxis: 'def', // 防御側(正本 data/skill/火槍猛進.json の効果文より)
     targetTroopCategories: ['槍兵科','弓兵科','兵器兵科(器兵科)'],
     targetSoldierNames: ['鉄砲足軽'],
     activationType: 'triggered', statTarget: 'def',
@@ -1665,12 +1774,14 @@ const specialSkills = {
           '【2026年7月四度目修正】パラレル【天】版(No.31305)でTR6が解禁されたためixagno.blog.fc2.comで確認し追加登録。あわせて確率をbaseRate(固定55%)からrateTable(base:55,TR6:65)に変更(TR6のみ確率が異なるため)。'
   },
   'ジャンプ': {
+    effectAxis: 'atk', // 攻撃側(正本 data/skill/ジャンプ.json の効果文より)
     targetTroopCategories: ['槍兵科','兵器兵科(砲兵科)','兵器兵科(器兵科)'],
     activationType: 'triggered', statTarget: 'atk',
     trTable: { base: 230, TR1: 250, TR2: 280, TR3: 330 }, baseRate: 100,
     note: 'S(攻撃)。確率:LV1 30%→LV10以降100%/対象:槍砲器。攻撃:LV1=75%上昇、LV10=230%上昇、TR1=250%、TR2=280%、TR3=330%(自動反映対応、TR4・TR5は情報源に記載なし)。「飛翔15以上のとき飛翔を全て失う代わりに攻撃効果5倍」は参考データのみ。'
   },
   '虎賁統帥': {
+    effectAxis: 'atk', // 攻撃側(正本 data/skill/虎賁統帥.json の効果文より)
     hasHado: true, // 覇道(所属部隊の武将のスキルを無効化・発動率低下から保護)。2026-08-11付与: note先頭で「覇道」タグを明記しているのにフラグが無かった
     activationType: 'triggered', statTarget: 'atk',
     trTable: { base: 1130, TR1: 1170, TR2: 1260, TR3: 1440, TR4: 1660, TR5: 1910 },
@@ -1679,17 +1790,20 @@ const specialSkills = {
     note: 'SS(合成専用スキル・攻速・撤退・覇道)。確率+100%/対象:全 撤退 覇道。LV10:攻撃1130%上昇・速度200%上昇、TR1:攻撃1170%・速度210%、TR2:攻撃1260%・速度220%、TR3:攻撃1440%・速度230%、TR4:攻撃1660%・速度240%、TR5:攻撃1910%・速度250%(自動反映対応)。「覇道」タグにより所属部隊の武将が持つスキルを無効化・発動率低下から保護(参考データのみ)。'
   },
   '千里必勝ノ神算': {
+    effectAxis: 'both', // 攻防両方(正本 data/skill/千里必勝ノ神算.json の効果文より)
     activationType: 'triggered', statTarget: 'atk',
     trTable: { base: 1010, TR1: 1070, TR2: 1190, TR3: 1370, TR4: 1600, TR5: 1870 },
     rateTable: { base: 42, TR1: 45, TR2: 50, TR3: 55, TR4: 60, TR5: 70 },
     note: 'SS(合成専用スキル・攻防破)。LV10:確率+42%/攻撃・防御各1010%上昇(自動反映は確率・攻撃分、防御は同値)、破壊150%上昇(未対応)。TR1:確率+45%/1070%/破壊160%。TR2:確率+50%/1190%/破壊170%。TR3:確率+55%/1370%/破壊200%。TR4:確率+60%/1600%/破壊250%。TR5:確率+70%/1870%/破壊300%。「覇道」保護効果は参考データのみ。'
   },
   '虎巫': {
+    effectAxis: 'atk', // 攻撃側(正本 data/skill/虎巫.json の効果文より)
     activationType: 'triggered', statTarget: 'atk', noMimic: true, noSquadDuplicate: true,
     trTable: { base: 1000, TR5: 1500 }, baseRate: 50,
     note: 'S(攻撃・模倣不可・部隊内重複不可)。確率+50%/対象:全。LV1:攻撃310%上昇、LV10:攻撃1000%上昇、TR5:攻撃1500%上昇(自動反映、TR1〜TR4は情報源に記載なし)。「敵防御側の武将数カウント時、この武将を+1名(TR5は+3名)として計算」は参考データのみ。'
   },
   '義陣絶刀': {
+    effectAxis: 'both', // 攻防両方(正本 data/skill/義陣絶刀.json の効果文より)
     hasSoar: true,
     soarValue: 17,
     activationType: 'triggered', statTarget: 'atk',
@@ -1697,6 +1811,7 @@ const specialSkills = {
     note: 'S(攻防)。確率:LV1+18%→LV10以降+55%/対象:全 飛翔17。攻撃・防御各:LV10=840%上昇、TR1=920%、TR2=1040%、TR3=1210%、TR4=1440%、TR5=1750%(自動反映は攻撃分のみ、防御は同値。石田三成No.1277の固有スキル)。'
   },
   '信明義星': {
+    effectAxis: 'atk', // 攻撃側(正本 data/skill/信明義星.json の効果文より)
     activationType: 'triggered', statTarget: 'atk', noMimic: true, noSquadDuplicate: true,
     trTable: { base: 740, TR1: 800, TR2: 920, TR3: 1100, TR4: 1290, TR5: 1490, TR6: 1640 }, // TR6はパラレル版No.31300で解禁(ixagno.blog.fc2.com確認)
     baseRate: 100, // 確率は情報源に記載が無いため他の同格スキルに倣い100%と推定(要検証)
@@ -1705,6 +1820,7 @@ const specialSkills = {
           '【2026年7月修正】パラレル【天】版(No.31300)でTR6が解禁されたためixagno.blog.fc2.comで確認し追加登録。確率(baseRate)が未登録だったため100%と推定して追加(情報源に明記なし、要検証)。'
   },
   '白銀双鶴': {
+    effectAxis: 'atk', // 攻撃側(正本 data/skill/白銀双鶴.json の効果文より)
     activationType: 'triggered', statTarget: 'atk', noMimic: true, hasSoar: true,
     trTable: { base: 730, TR1: 800, TR2: 900, TR3: 1050, TR4: 1250, TR5: 1500 },
     speedTrTable: { base: 200, TR1: 210, TR2: 220, TR3: 230, TR4: 240, TR5: 250 },
@@ -1720,18 +1836,21 @@ const specialSkills = {
           '【2026年7月修正】soarValueTableフィールドの設定漏れにより、飛翔値欄が常に0と表示される不具合があったため追加。'
   },
   '國才連豪': {
+    effectAxis: 'def', // 防御側(正本 data/skill/國才連豪.json の効果文より)
     baseRate: 50, // 確率+50%(LV10以降固定。LV1は+16%)
     trTable: { base: 310, TR1: 335, TR2: 370, TR3: 420, TR4: 500, TR5: 610 }, // 防御%上昇「1名分」の値(ixanary.com確認)
     note: 'SS(合成専用スキル・防御)。確率:LV1+16%→LV10以降+50%/対象:全。防御:LV10=310%上昇、TR1=335%、TR2=370%、TR3=420%、TR4=500%、TR5=610%(自動反映は「所持武将1名分」として計算)。' +
           '実際の効果は「部隊内の『國才連豪』所持武将数」倍になるため、複数名が持つ場合はこの表示値を人数分で手動で掛け合わせて判断すること(乗算部分の自動計算は未実装)。'
   },
   '破国八陣': {
+    effectAxis: 'def', // 防御側(正本 data/skill/破国八陣.json の効果文より)
     noMimic: true,
     trTable: { base: 1030 }, statTarget: 'def', activationType: 'triggered',
     baseRate: 30,
     note: 'SS(合成専用スキル・防御・模倣不可)。確率:LV10+30%→鍛錬で最大+100%/対象:全。防御:LV10=1030%上昇(自動反映)、TR5=1900%(中間TR1〜TR4は情報源に記載なし)。「攻撃部隊の武将が持つ特殊効果付き初期スキルを全て無効化」は参考データのみ。'
   },
   '仙境解脱': {
+    effectAxis: 'def', // 防御側(正本 data/skill/仙境解脱.json の効果文より)
     activationType: 'triggered', statTarget: 'def', noMimic: true,
     trTable: { base: 910, TR1: 980, TR2: 1080, TR3: 1260, TR4: 1470, TR5: 1710 },
     rateTable: { base: 48, TR1: 50, TR2: 55, TR3: 60, TR4: 65, TR5: 70 }, // 確率もTRごとに上昇(ixanary.com確認)
@@ -1745,6 +1864,7 @@ const specialSkills = {
     note: 'S(合成専用スキル・防御)。確率:LV10 32%、TR1以上40%/対象:全。LV10:防御850%上昇+防御戦闘勝利時のみ敵1部隊の武将に追加ダメージ+15。TR1:確率+40%/防御1250%上昇/追加ダメージ+20(TR2〜TR5は情報源に記載なし)。「防御戦闘勝利時のみ」「敵1部隊限定」という条件付き効果のため計算エンジンは未実装(参考データのみ)。'
   },
   '雑魚ちらし': {
+    effectAxis: 'both', // 攻防両方(正本 data/skill/雑魚ちらし.json の効果文より)
     activationType: 'triggered', statTarget: 'atk',
     trTable: { base: 220, TR1: 230, TR2: 240, TR3: 260 }, baseRate: 100,
     note: 'S(攻防)。確率+100%/対象:全。攻撃・防御各:LV10=220%上昇、TR1=230%、TR2=240%、TR3=260%(自動反映は攻撃分のみ、防御は同値。TR4・TR5は情報源に記載なし)。「卓越:追加確率-10%で攻防効果3倍(卓越追加確率が0%超の時のみ抽選)」は参考データのみ。'
@@ -1764,6 +1884,7 @@ const specialSkills = {
           '相楽左之助(No.2609)固有スキル。るろうに剣心コラボ。ixanaryスキルページで全TR値を確認(2026-08-11)。'
   },
   '神谷活心流': {
+    effectAxis: 'both', // 攻防両方(正本 data/skill/神谷活心流.json の効果文より)
     noMimic: true, // 「模倣不可」明記
     activationType: 'triggered',
     statTarget: 'atk',
@@ -1776,6 +1897,7 @@ const specialSkills = {
           '神谷薫(No.2607)固有スキル。るろうに剣心コラボ。ixanaryスキルページで全TR値を確認(2026-08-11)。'
   },
   '旋龍突渦': {
+    effectAxis: 'atk', // 攻撃側(正本 data/skill/旋龍突渦.json の効果文より)
     activationType: 'triggered',
     statTarget: 'atk',
     trTable: { base:450, TR1:490, TR2:540, TR3:600, TR4:670, TR5:750 }, // 攻撃%上昇(ixanaryスキルページで全TR確認)
@@ -1788,6 +1910,7 @@ const specialSkills = {
           '伊達藤次郎(No.2600)固有スキル。ixanaryスキルページで全TR値を確認(2026-08-11)。'
   },
   '幻渦龍刀': {
+    effectAxis: 'both', // 攻防両方(正本 data/skill/幻渦龍刀.json の効果文より)
     activationType: 'triggered', statTarget: 'atk', noMimic: true,
     trTable: { base: 250 }, baseRate: 100,
     takuetsu: { multiplier: 3 },
@@ -1797,6 +1920,7 @@ const specialSkills = {
           '【2026-08-11修正】以前は参考データのみだったが、十三ノ奇跡と同じtakuetsuChanceTableの仕組みで自動反映に対応(部隊内卓越確率加算が51%以上で抽選開始)。佐々木巌流(No.2591)固有スキル。'
   },
   '二重の極み': {
+    effectAxis: 'both', // 攻防両方(正本 data/skill/二重の極み.json の効果文より)
     activationType: 'triggered', statTarget: 'atk', noMimic: true,
     trTable: { base: 340 }, baseRate: 100,
     takuetsu: { multiplier: 2 },
@@ -1806,12 +1930,14 @@ const specialSkills = {
           '鍛錬TR別の数値はixanary・ixawikiのどちらにも記載が無い。悠久山安慈(No.2612)固有スキル。'
   },
   '御旗ノ守護者': {
+    effectAxis: 'both', // 攻防両方(正本 data/skill/御旗ノ守護者.json の効果文より)
     targetTroopCategories: ['騎馬兵科','兵器兵科(砲兵科)','兵器兵科(器兵科)'],
     activationType: 'triggered', statTarget: 'atk',
     trTable: { base: 230, TR1: 230, TR2: 235 }, baseRate: 100,
     note: 'A(卓越スキル・攻防)。確率100%/対象:馬砲器。攻撃・防御各:LV10=230%上昇+卓越追加確率10%で3倍、TR1=230%+卓越15%、TR2=235%+卓越20%(自動反映は攻撃%上昇分のみ、防御は同値。TR3〜TR5は情報源に記載なし)。板垣信方(No.7011)が習得可能。卓越部分は参考データのみ。'
   },
   '国一丸': {
+    effectAxis: 'atk', // 攻撃側(正本 data/skill/国一丸.json の効果文より)
     hasSoar: true,
     soarValue: 6,
     targetTroopCategories: ['槍兵科','騎馬兵科','兵器兵科(器兵科)'],
@@ -1821,23 +1947,27 @@ const specialSkills = {
     note: 'S(攻撃・卓越スキル)。確率+100%/対象:槍馬器騎。LV1:攻撃60%上昇+飛翔6、LV10:攻撃210%上昇+飛翔6(自動反映は攻撃%上昇分のみ、鍛錬TR別数値は情報源に記載なし)。「攻撃戦闘時、卓越:追加確率1%(LV1)〜5%(LV10)で攻撃効果3倍・飛翔16取得(飛翔取得部分は模倣不可)」は参考データのみ。'
   },
   '霊妙秘剣': {
+    effectAxis: 'both', // 攻防両方(正本 data/skill/霊妙秘剣.json の効果文より)
     targetTroopCategories: ['槍兵科','騎馬兵科','兵器兵科(砲兵科)'],
     activationType: 'triggered', statTarget: 'atk', noMimic: true,
     trTable: { base: 180 }, baseRate: 100,
     note: 'A(攻防・卓越スキル・模倣不可)。確率+100%/対象:槍馬砲。LV1:攻撃・防御各60%上昇、LV10:攻撃・防御各180%上昇(自動反映は攻撃分のみ、防御は同値。鍛錬TR別数値は情報源に記載なし)。「卓越:追加確率-30%で攻防効果3倍(卓越追加確率が0%超の時のみ抽選)」は参考データのみ。'
   },
   '叛逆近景': {
+    effectAxis: 'atk', // 攻撃側(正本 data/skill/叛逆近景.json の効果文より)
     activationType: 'triggered', statTarget: 'atk', noMimic: true,
     trTable: { base: 395 }, baseRate: 100,
     note: 'S(攻撃・卓越スキル・模倣不可)。確率+100%/対象:全。LV1:攻撃130%上昇+卓越追加確率-10%で兵士被害6%減少、LV10:攻撃395%上昇(自動反映は攻撃分のみ、鍛錬TR別数値は情報源に記載なし)。「部隊内重複上限2」「卓越:追加確率1%で自部隊の兵士被害20%減少」は参考データのみ。'
   },
   '青葉ノ仁王': {
+    effectAxis: 'atk', // 攻撃側(正本 data/skill/青葉ノ仁王.json の効果文より)
     targetTroopCategories: ['槍兵科','弓兵科','兵器兵科(砲兵科)'],
     activationType: 'triggered', statTarget: 'atk', noMimic: true,
     trTable: { base: 110 }, baseRate: 100,
     note: 'A(攻撃・卓越スキル・模倣不可)。確率+100%/対象:槍弓砲。LV1:攻撃34%上昇+卓越追加確率10%で兵士被害5%減少、LV10:攻撃110%上昇+卓越追加確率20%で兵士被害10%減少(自動反映は攻撃分のみ、鍛錬TR別数値は情報源に記載なし)。「部隊内重複上限2」は参考データのみ。'
   },
   '氷嶺不撓': {
+    effectAxis: 'atk', // 攻撃側(正本 data/skill/氷嶺不撓.json の効果文より)
     targetTroopCategories: ['弓兵科','騎馬兵科','兵器兵科(砲兵科)','兵器兵科(器兵科)'],
     activationType: 'triggered', statTarget: 'atk', hasSoar: true,
     trTable: { base: 50, TR6: 50 }, baseRate: 54,
@@ -1846,6 +1976,7 @@ const specialSkills = {
           '【2026年7月修正】パラレル【天】版(No.40073)でTR6が解禁されたためixagno.blog.fc2.comで確認、TR6の飛翔値(17)のみsoarValueTableに追加登録(base=飛翔15は未登録のまま・要検証)。'
   },
   '王導剣影': {
+    effectAxis: 'atk', // 攻撃側(正本 data/skill/王導剣影.json の効果文より)
     activationType: 'triggered', statTarget: 'atk',
     trTable: { base: 1 },
     speedTrTable: { base: 200, TR1: 210, TR2: 220, TR3: 230, TR4: 240, TR5: 250 },
@@ -1853,11 +1984,13 @@ const specialSkills = {
     note: 'S(攻速)。確率+100%/対象:全。攻撃は全段階共通で1%上昇(部隊移動速度÷40×100%、自動反映は簡略化した固定値)。速度:LV10=200%上昇、TR1=210%、TR2=220%、TR3=230%、TR4=240%、TR5=250%(自動反映対応)。和田惟政(No.10045)の固有スキル。実際の攻撃%は部隊移動速度に依存するため参考値。'
   },
   '破天ノ竜撃': {
+    effectAxis: 'both', // 攻防両方(正本 data/skill/破天ノ竜撃.json の効果文より)
     activationType: 'triggered', statTarget: 'atk',
     trTable: { base: 180, TR1: 190, TR2: 200, TR3: 210, TR4: 225, TR5: 250 }, baseRate: 32,
     note: 'SSS(攻防)。確率+32%(全段階共通)/対象:全。攻撃・防御各:LV10=180%上昇、TR1=190%、TR2=200%、TR3=210%、TR4=225%、TR5=250%(自動反映は攻撃分のみ、防御は同値。TR3以前は防御190%で共通、TR5のみ防御も250%)。「自部隊内で卓越発動したスキル数×係数%を攻防効果に加算(LV10=80%、TR1=82%、TR2=84%、TR3=87%、TR4=90%、TR5=95%)」は参考データのみ(計算エンジン未対応)。'
   },
   '豊州ノ雅王': {
+    effectAxis: 'def', // 防御側(正本 data/skill/豊州ノ雅王.json の効果文より)
     // 大友宗麟(6)No.1295の初期スキル(赤丸)。2026-08-07、Step5(シミュレーター反映)の登録漏れを補完。
     noMimic: true, // 「模倣不可」記載から自動付与
     activationType: 'triggered', // ②: 攻撃時発動タイプ
@@ -1871,6 +2004,7 @@ const specialSkills = {
           '保持者以外の他部隊にも及ぶ効果のため計算エンジン未対応・参考データのみ。大友宗麟(6)(No.1295)固有スキル。'
   },
   '三全将帥': {
+    effectAxis: 'def', // 防御側(正本 data/skill/三全将帥.json の効果文より)
     // 直江兼続(4)No.1266の初期スキル(赤丸)。2026-08-07、Step5(シミュレーター反映)の登録漏れを補完。
     noMimic: true, // 卓越部分に「模倣不可」記載あり
     activationType: 'triggered', // ②: 攻撃時発動タイプ
@@ -1891,6 +2025,7 @@ const specialSkills = {
           '「防御参加武将数」欄の入力で自動計算される。直江兼続(4)(No.1266)固有スキル。'
   },
   '裂波驍槍': {
+    effectAxis: 'both', // 攻防両方(正本 data/skill/裂波驍槍.json の効果文より)
     // 里見義弘(2)No.1245の初期スキル(赤丸)。2026-08-07、Step5(シミュレーター反映)の登録漏れを補完。
     activationType: 'triggered', // ②: 攻撃時発動タイプ
     statTarget: 'atk', // 攻撃%上昇・防御%上昇は同値のため共通のtrTableで代用(自動反映は攻撃分のみ)
@@ -1902,6 +2037,7 @@ const specialSkills = {
           '鍛錬TR別数値は情報源に記載なし。里見義弘(2)(No.1245)固有スキル。'
   },
   '金城ノ黒鷹': {
+    effectAxis: 'def', // 防御側(正本 data/skill/金城ノ黒鷹.json の効果文より)
     targetTroopCategories: ['槍兵科','騎馬兵科','兵器兵科(器兵科)'],
     targetSoldierNames: ['鉄砲足軽'],
     activationType: 'triggered', statTarget: 'def',
@@ -1909,12 +2045,14 @@ const specialSkills = {
     note: 'S(防御)。確率:LV1+31%→LV10+49%/対象:槍馬器鉄。防御:LV1=60%上昇、LV10=120%上昇(自動反映)+「攻撃側敵軍全武将のうちこの武将のコストを上回るコスト部分の総和×16%を防御効果に加算」(参考データのみ・計算エンジン未対応)。鍛錬TR別数値は情報源に記載なし。'
   },
   '凶天殺界': {
+    effectAxis: 'def', // 防御側(正本 data/skill/凶天殺界.json の効果文より)
     targetTroopCategories: ['騎馬兵科','兵器兵科(砲兵科)','兵器兵科(器兵科)'],
     activationType: 'triggered', statTarget: 'def',
     trTable: { base: 70 }, baseRate: 40,
     note: 'SSS(合成不可スキル・防御)。確率:LV1+17%→LV10+40%/対象:馬砲器。防御:LV1=25%上昇、LV10=70%上昇(自動反映)+「攻撃側敵軍全武将のうちこの武将のコストを上回るコスト部分の総和×係数(LV1=1.6%、LV10=4%)を防御効果に加算」(参考データのみ)。鍛錬TR別数値は情報源に記載なし。'
   },
   '日輪ノ選剣': {
+    effectAxis: 'def', // 防御側(正本 data/skill/日輪ノ選剣.json の効果文より)
     targetTroopCategories: ['槍兵科','弓兵科','兵器兵科(砲兵科)','兵器兵科(器兵科)'], // 対象:槍/弓/砲/器
     variableFormula: { statTarget: 'def', base: 0, variable: 'defenderCount', perUnit: 6 },
     baseRate: 60, // 確率+60%(LV10。LV1は+20%。TR別データは今回未確認)
@@ -1923,6 +2061,7 @@ const specialSkills = {
           '【2026年7月修正】以前は計算エンジン未対応(参考データのみ)扱いにしていたが、既存のvariableFormula(defenderCount)機構で計算可能だったため対応した。'
   },
   '龍国ノ武威': {
+    effectAxis: 'def', // 防御側(正本 data/skill/龍国ノ武威.json の効果文より)
     activationType: 'triggered', statTarget: 'def',
     trTable: { base: 600, TR1: 615, TR2: 630, TR3: 650, TR4: 680, TR5: 700, TR6: 720 },
     rateTable: { base: 35, TR1: 38, TR2: 40, TR3: 45, TR4: 50, TR5: 60, TR6: 70 },
@@ -1932,6 +2071,7 @@ const specialSkills = {
 
   /* ============ ユーザー指定スキル名リスト・チャンク3/4 ============ */
   '飛炎剣風': {
+    effectAxis: 'def', // 防御側(正本 data/skill/飛炎剣風.json の効果文より)
     targetTroopCategories: ['槍兵科','兵器兵科(砲兵科)','兵器兵科(器兵科)'], // 対象:槍/砲/器
     variableFormula: { statTarget: 'def', base: 80, variable: 'defenderCount', perUnit: 5.6 },
     baseRate: 70, // 確率:LV10+70%(LV1は+23%)
@@ -1940,6 +2080,7 @@ const specialSkills = {
           '【2026年7月修正】以前は防御の防御参加武将数依存部分も含め計算エンジン未対応(参考データのみ)扱いにしていたが、既存のvariableFormula(defenderCount)機構で防御部分は計算可能だったため対応した。'
   },
   '王花尖剣': {
+    effectAxis: 'def', // 防御側(正本 data/skill/王花尖剣.json の効果文より)
     hasSoar: true,
     soarValue: 10,
     targetTroopCategories: ['槍兵科','騎馬兵科','兵器兵科(砲兵科)','兵器兵科(器兵科)'],
@@ -1948,17 +2089,20 @@ const specialSkills = {
     note: 'S(防御)。確率:LV1+20%→LV10以降+64%/対象:槍馬砲器。防御:320%上昇+飛翔10(LV10、自動反映は320%分のみ)+部隊内全武将の飛翔値合計×係数を防御に加算(LV1=3.3%、LV10=10%、TR1=10.4%、TR2=11%、TR3=11.8%、TR4=13%、TR5=14.5%、参考データのみ)。宇喜多秀家(No.1281)の固有スキル。'
   },
   '砕島天鬼槍': {
+    effectAxis: 'def', // 防御側(正本 data/skill/砕島天鬼槍.json の効果文より)
     targetTroopCategories: ['槍兵科','騎馬兵科','兵器兵科(砲兵科)','兵器兵科(器兵科)'],
     activationType: 'triggered', statTarget: 'def',
     trTable: { base: 250, TR1: 255, TR2: 260, TR3: 270, TR4: 285, TR5: 300 }, baseRate: 100,
     note: 'S(防御・卓越スキル)。確率+100%/対象:槍馬砲器。防御:LV10=250%上昇、TR1=255%、TR2=260%、TR3=270%、TR4=285%、TR5=300%(自動反映対応)。「卓越:追加確率-50%(LV10)〜-10%(TR5)で防御効果3倍(卓越追加確率が0%超の時のみ抽選)」は参考データのみ。長宗我部元親(復刻)(No.10069)の固有スキル。'
   },
   '天望照星': {
+    effectAxis: 'def', // 防御側(正本 data/skill/天望照星.json の効果文より)
     activationType: 'triggered', statTarget: 'def', noMimic: true,
     trTable: { base: 30.02 }, baseRate: 45,
     note: 'S(防御・模倣不可)。確率:LV1+12%→LV10+45%/対象:全。防御:LV1=10.02%上昇、LV10=30.02%上昇(自動反映、これは部隊の総コストで変化する式の簡略値)。「部隊内で武将コストがスキルに影響する際、防御効果部分のみこの武将のコストを+0.5で計算」は参考データのみ。明智十兵衛(No.10043)の固有スキル。鍛錬TR別数値は情報源に記載なし。'
   },
   '黒衣ノ元帥': {
+    effectAxis: 'def', // 防御側(正本 data/skill/黒衣ノ元帥.json の効果文より)
     activationType: 'triggered', statTarget: 'def', noMimic: false,
     trTable: { base: 100 }, baseRate: 100,
     note: 'S(防御・卓越スキル)。確率+100%/対象:飛翔6 兵站。防御:LV1=50%上昇、LV10=100%上昇(自動反映)。「卓越:追加確率11%(LV1)〜30%(LV10)で防御効果4倍」は参考データのみ。下間頼廉(No.2466)の固有スキル。鍛錬TR別数値は情報源に記載なし。'
@@ -1984,6 +2128,7 @@ const specialSkills = {
     note: 'SS(合成専用スキル・防御)。確率+50%(LV10)/対象:全。防御:部隊の総コストで効果が変化する式(具体的な係数は情報源に記載なし)。「部隊総コスト」依存のため計算エンジンは未実装(参考データのみ)。鍛錬TR別の数値は情報源に記載なし。'
   },
   '炎国覇弾': {
+    effectAxis: 'def', // 防御側(正本 data/skill/炎国覇弾.json の効果文より)
     activationType: 'triggered', statTarget: 'def', noMimic: true,
     trTable: { base: 540, TR1: 620, TR2: 760, TR3: 950, TR4: 1200, TR5: 1490 }, baseRate: 100,
     note: 'S(防御・模倣不可)。確率+100%/対象:全。防御:LV1=180%上昇、LV10=540%上昇、TR1=620%、TR2=760%、TR3=950%、TR4=1200%、TR5=1490%(自動反映対応)。「所領防御陣形に配置時のみ、この武将の最大指揮兵数は陣形内で最も最大指揮兵数の大きい武将と同数になる」は参考データのみ。島津義久(No.1285)の固有スキル。'
@@ -2228,6 +2373,7 @@ const specialSkills = {
     note: 'S(特・部隊長限定・飛翔依存・模倣不可)。確率:LV1 18%→LV10以降55%/対象:部隊長。「この武将が飛翔Xを持つとき飛翔[X+N]となる」(LV1:+1、LV10:+4、TR1:+5、TR2:+6、TR3:+8、TR4:+10、TR5:+12)。飛翔値を書き換える効果のため計算エンジンは未実装(参考データのみ)。多羅尾光俊(No.2841)の固有スキル。'
   },
   '煙霞迷霧': {
+    effectAxis: 'both', // 攻防両方(正本 data/skill/煙霞迷霧.json の効果文より)
     hasSoar: true,
     soarValue: 8,
     activationType: 'triggered', statTarget: 'atk', noMimic: true, noSquadDuplicate: true,
@@ -2235,6 +2381,7 @@ const specialSkills = {
     note: 'S(攻防・模倣不可・部隊内重複不可)。確率:LV1+43%→LV10+70%/対象:全 飛翔8。攻撃・防御各:LV10=110%上昇(自動反映は攻撃分のみ、防御は同値)。「所属部隊の武将が飛翔Xを持つとき飛翔[X+4]を持つ」は飛翔値を書き換える効果のため参考データのみ(計算エンジン未対応)。鍛錬TR別数値は情報源に記載なし。'
   },
   '豊国ノ寵将': {
+    effectAxis: 'both', // 攻防両方(正本 data/skill/豊国ノ寵将.json の効果文より)
     activationType: 'triggered', statTarget: 'atk', noMimic: true, noSquadDuplicate: true,
     hasSoar: true,
     soarValue: 7,
@@ -2242,6 +2389,7 @@ const specialSkills = {
     note: 'S(攻防・模倣不可・部隊内重複不可)。確率:LV1+43%→LV10+70%/対象:全 飛翔7。LV1:攻撃・防御各85%上昇、LV10:攻撃・防御各190%上昇(自動反映は攻撃分のみ、防御は同値)。「所属部隊の武将が飛翔Xを持つとき飛翔[X+2]を持つ」は飛翔値を書き換える効果のため参考データのみ。鍛錬TR別数値は情報源に記載なし。'
   },
   '神機采配': {
+    effectAxis: 'def', // 防御側(正本 data/skill/神機采配.json の効果文より)
     hasSoar: true,
     soarValue: 9,
     activationType: 'triggered', statTarget: 'def',
@@ -2280,6 +2428,7 @@ const specialSkills = {
           '原因は、fxセルの上昇%はapplyMujinMasterEffectsで倍加していたが、totalAtkBoostPerMujinTable経由の「部隊総攻撃力上昇」系はcomputeSquadTotalAtkBoostMultiplierという別処理で計算されており、そちらには無尽マスタリーの倍率が反映されていなかったこと。computeSquadTotalAtkBoostMultiplier側にも倍率適用ロジックを追加して修正。'
   },
   'キン肉バスター': {
+    effectAxis: 'atk', // 攻撃側(正本 data/skill/キン肉バスター.json の効果文より)
     activationType: 'triggered', statTarget: 'atk', noMimic: true, noSquadDuplicate: true,
     trTable: { base: 550 }, baseRate: 100, // LV1・LV10とも同値の固定スキル(ixanary.comでLV1=LV10=550%上昇を確認、TR記載なし)
     note: 'S(攻撃・模倣不可・重複不可)。確率+100%/対象:全。攻撃:550%上昇(LV1〜LV10まで同値の固定スキル、自動反映対応)。' +
@@ -2289,6 +2438,7 @@ const specialSkills = {
   /* ============ パラレル【天】版でTR6が解禁され、既存specialSkillsに未登録だったスキルの新規登録 ============
      ユーザー指示により、いずれもTR6のみを登録し、情報源(ixagno.blog.fc2.com)にTR1〜TR5の記載があっても登録しない。 */
   '文治ノ護剣': {
+    effectAxis: 'def', // 防御側(正本 data/skill/文治ノ護剣.json の効果文より)
     activationType: 'triggered', statTarget: 'def',
     trTable: { base: 450, TR1: 475, TR2: 510, TR3: 560, TR4: 630, TR5: 730, TR6: 800 }, // 防御%上昇(LV10〜TR6、ixanary.com確認)
     rateTable: { base: 48, TR1: 50, TR2: 55, TR3: 60, TR4: 65, TR5: 70, TR6: 100 }, // 確率
@@ -2298,6 +2448,7 @@ const specialSkills = {
           '【2026年7月修正】当初TR6のみ登録していたが、LV10〜TR5もixanary.comで確認して追加登録した。'
   },
   '不撓六文銭': {
+    effectAxis: 'def', // 防御側(正本 data/skill/不撓六文銭.json の効果文より)
     activationType: 'triggered', statTarget: 'def',
     trTable: { base: 500, TR1: 540, TR2: 600, TR3: 670, TR4: 750, TR5: 840, TR6: 1000 }, // 防御%上昇(LV10〜TR6、ixanary.com確認)
     baseRate: 100, // 確率+100%(全段階共通)
@@ -2307,6 +2458,7 @@ const specialSkills = {
           '【2026年7月修正】当初TR6のみ登録していたが、LV10〜TR5もixanary.comで確認して追加登録した。'
   },
   '武天蜻蛉切': {
+    effectAxis: 'atk', // 攻撃側(正本 data/skill/武天蜻蛉切.json の効果文より)
     activationType: 'triggered', statTarget: 'atk',
     trTable: { base: 800, TR1: 880, TR2: 1000, TR3: 1150, TR4: 1320, TR5: 1570, TR6: 1730 }, // 攻撃%上昇(LV10〜TR6、ixanary.com確認)
     baseRate: 100, // 確率+100%(全段階共通、ixanary.comで確認)
@@ -2322,6 +2474,7 @@ const specialSkills = {
           '【2026年7月三度目修正】ユーザー指摘により、部隊内武将向けの卓越発動率上昇のLV10値を誤登録(5%)していたことが判明、正しい15%に修正(ixanary.comで再確認)。'
   },
   '剛毅槍閃': {
+    multiplyAxis: 'def', // 極限スキルの防御効果が倍加
     activationType: 'triggered', statTarget: 'def', noMimic: false,
     hasMujin: true, // 無尽(ixanary.com「無尽スキルまとめ」記事で「その他」枠の無尽スキルと確認済み)
     targetTroopCategories: ['槍兵科','兵器兵科(砲兵科)','兵器兵科(器兵科)'], // 対象:槍/砲/器
@@ -2345,6 +2498,7 @@ const specialSkills = {
           '【2026年7月修正】当初TR6のみ登録していたが、LV10〜TR5もixanary.comで確認して追加登録した(段階別のためtotalAtkBoostPctをtotalAtkBoostPctTableに変更、computeSquadTotalAtkBoostMultiplier側にもTR別対応ロジックを追加)。'
   },
   '暘谷ノ人傑': {
+    effectAxis: 'def', // 防御側(正本 data/skill/暘谷ノ人傑.json の効果文より)
     activationType: 'triggered', statTarget: 'def',
     variableFormula: {
       statTarget: 'def', base: 0, variable: 'haGeneralCount',
@@ -2356,6 +2510,8 @@ const specialSkills = {
           '【2026年7月修正】当初「部隊内覇武将数」を計算エンジン未対応として参考データのみ扱いにしていたが、generalGrowthDBのisHaフラグで覇武将を判定できるため、新設のvariableFormula変数(haGeneralCount)で自動計算に対応した。あわせてLV10〜TR5もixanary.comで確認して追加登録。'
   },
   '蓋方軍慮': {
+    multiplyAxis: 'def', // 極限スキルの防御効果が倍加
+    effectAxis: 'def', // 防御側(正本 data/skill/蓋方軍慮.json の効果文より)
     activationType: 'triggered', statTarget: 'def',
     targetTroopCategories: ['槍兵科','兵器兵科(砲兵科)','兵器兵科(器兵科)'], // 対象:槍砲器兵站
     trTable: { base: 510, TR1: 550, TR2: 630, TR3: 730, TR4: 850, TR5: 990, TR6: 1180 }, // 防御%上昇(LV10〜TR6、ixanary.com確認)
@@ -2370,6 +2526,7 @@ const specialSkills = {
           '【2026年7月修正】以前は誤字「蓋方軍虚」で登録されていたが、正しくは「蓋方軍慮」(ixanary.com確認)。あわせてTR6のみだったLV10〜TR5もixanary.comで確認して追加登録した(generalGrowthDB側の初期スキル名表記も修正)。'
   },
   '轟渦ノ神将': {
+    effectAxis: 'def', // 防御側(正本 data/skill/轟渦ノ神将.json の効果文より)
     activationType: 'triggered', statTarget: 'def',
     trTable: { base: 500, TR1: 560, TR2: 690, TR3: 900, TR4: 1150, TR5: 1460, TR6: 1650 }, // 防御%上昇(LV10〜TR6、ixanary.com確認)
     rateTable: { base: 50, TR1: 55, TR2: 60, TR3: 65, TR4: 70, TR5: 80, TR6: 100 }, // 確率
@@ -2379,6 +2536,7 @@ const specialSkills = {
           '【2026年7月修正】以前は誤字「蟲渦ノ神将」で登録されていたが、正しくは「轟渦ノ神将」(ixanary.com確認)。あわせてTR6のみだったLV10〜TR5もixanary.comで確認して追加登録した(generalGrowthDB側の初期スキル名表記も修正)。'
   },
   '謀神ノ経略': {
+    effectAxis: 'both', // 攻防両方(正本 data/skill/謀神ノ経略.json の効果文より)
     activationType: 'triggered', statTarget: 'atk', hasSoar: true,
     trTable: { base: 520, TR1: 600, TR2: 730, TR3: 980, TR4: 1330, TR5: 1740, TR6: 1960 }, // 攻防%上昇(LV10〜TR6、ixanary.com確認)
     baseRate: 100, // 確率+100%(全段階共通)
@@ -2393,6 +2551,7 @@ const specialSkills = {
      rarity:'X' を設定すると、countXSkillsInSquad()による「部隊内Xスキル数」の自動集計対象になる。
      いずれも合成専用スキルでTR(鍛錬)段階の記載は無く、固定値のみ(ixanary.com確認、2026年7月)。 */
   '雷轟滅星': {
+    effectAxis: 'both', // 攻防両方(正本 data/skill/雷轟滅星.json の効果文より)
     rarity: 'X',
     activationType: 'triggered', statTarget: 'atk', noMimic: true,
     trTable: { base: 2000 }, baseRate: 100, // TR(鍛錬)段階なし、固定値
@@ -2402,6 +2561,7 @@ const specialSkills = {
           '部隊内重複上限3・「傑」職業の武将との併用不可(いずれも参考情報。傑との併用不可はupdateSquadConflictWarningで警告表示のみ対応、計算エンジンでの禁止は未実装)。'
   },
   '天穿奏覇': {
+    effectAxis: 'both', // 攻防両方(正本 data/skill/天穿奏覇.json の効果文より)
     rarity: 'X',
     activationType: 'triggered', statTarget: 'atk',
     variableFormula: { statTarget: 'atk', base: 0, variable: 'xSkillCount', perUnit: 500 },
@@ -2413,6 +2573,7 @@ const specialSkills = {
           '部隊内重複上限2・「覇」職業の武将との併用不可(参考情報、計算エンジン未対応)。'
   },
   '火焔武闘': {
+    effectAxis: 'both', // 攻防両方(正本 data/skill/火焔武闘.json の効果文より)
     rarity: 'X',
     activationType: 'triggered', statTarget: 'atk',
     variableFormula: { statTarget: 'atk', base: 0, variable: 'xSkillCount', perUnit: 720 },
@@ -2431,6 +2592,7 @@ const specialSkills = {
           '攻撃・防御の直接上昇値は無く、卓越追加確率上昇のみの特殊スキル。俵屋宗達(No.2825)の固有スキル。TR(鍛錬)詳細は情報源に記載なし。'
   },
   '虎伐閃衝': {
+    effectAxis: 'atk', // 攻撃側(正本 data/skill/虎伐閃衝.json の効果文より)
     noMimic: true, // 「模倣不可」明記
     targetTroopCategories: ['槍兵科','兵器兵科(砲兵科)','兵器兵科(器兵科)'], // 対象:槍砲器
     variableFormula: { statTarget: 'atk', base: 0, variable: 'enemyCost', perUnit: 2.1 },
@@ -2440,6 +2602,8 @@ const specialSkills = {
           '加藤清正(No.1284)の固有スキル(以前は誤字「虎伐悶衝」で登録されていたため「虎伐閃衝」に修正)。鍛錬TR別数値は今回未確認のためLV10のみ登録。'
   },
   '蛇神咆哮': {
+    multiplyAxis: 'atk', // 極限スキルの攻撃効果が3.5倍
+    effectAxis: 'atk', // 攻撃側(正本 data/skill/蛇神咆哮.json の効果文より)
     activationType: 'triggered', statTarget: 'atk', noMimic: true,
     trTable: { base: 240 }, baseRate: 100, // 攻撃240%上昇・確率+100%(LV10)
     multiplyAdditionalSkillsBy: 3.5, // 対象兵科指揮時、極限スキルの攻撃効果が3.5倍(LV10)
@@ -2449,6 +2613,7 @@ const specialSkills = {
           '斎藤道三(No.1202)の固有スキル。TR(鍛錬)段階の数値は情報源に記載なし(LV10のみ登録)。'
   },
   '花信風': {
+    effectAxis: 'def', // 防御側(正本 data/skill/花信風.json の効果文より)
     activationType: 'triggered', statTarget: 'def',
     noMimic: false, // 模倣不可なのは特殊効果(ランダム防御力低下スキル無効化)のみで、防御%上昇の基本効果自体は模倣可能(ユーザー指摘により修正)
     targetTroopCategories: ['弓兵科','兵器兵科(砲兵科)','兵器兵科(器兵科)'], // 対象:弓砲器
@@ -2463,6 +2628,7 @@ const specialSkills = {
           '春姫(No.2842)の固有スキル。ixanary.comで確認(2026年7月)。'
   },
   '神変機略': {
+    effectAxis: 'atk', // 攻撃側(正本 data/skill/神変機略.json の効果文より)
     activationType: 'triggered', statTarget: 'atk',
     trTable: { base: 420, TR1: 470, TR2: 520 },
     baseRate: 100, // 確率+100%
@@ -2490,6 +2656,7 @@ const specialSkills = {
     note: '(防御・模倣不可・重複不可)。確率+15%(LV10)。「防御戦闘時、攻撃側の各部隊内でもっとも兵法が高い武将の兵法値を0にする」という特殊効果のみで、攻撃/防御%上昇の値は無い。佐々木小次郎(No.2450)の固有スキル。相手の兵法値を書き換える効果のため計算エンジンは未実装(参考データのみ)。鍛錬TR別数値は情報源に記載なし。'
   },
   '八楯剛陣': {
+    effectAxis: 'def', // 防御側(正本 data/skill/八楯剛陣.json の効果文より)
     trTable: { base: 210 }, baseRate: 100, // 防御210%上昇・確率+100%(LV10。LV1は90%)
     note: 'S(防御)。確率+100%/対象:全。防御:LV1=90%上昇、LV10=210%上昇(自動反映対応)。「この武将が所属する陣・同盟陣は、陣・同盟陣を破壊するスキルから保護される(模倣不可)」は参考データのみ(防御%上昇部分は模倣可)。延沢満延(No.2456)の固有スキル。鍛錬TR別数値は情報源に記載なし。'
   },
@@ -2502,11 +2669,13 @@ const specialSkills = {
     note: '(特・模倣不可)。合戦中1回まで「葵紋の陣」を作成可能。「傑」を含む部隊でしか攻撃できず、陣破壊スキルに破壊されない/距離4以内の同盟員の陣も「葵紋の陣」となる。攻撃/防御%上昇は無く、陣形メカニクスのため計算エンジンは未実装(参考データのみ)。本多忠勝(No.2468)の固有スキル。鍛錬TR別数値は情報源に記載なし。'
   },
   '敢闘ノ気吹': {
+    effectAxis: 'atk', // 攻撃側(正本 data/skill/敢闘ノ気吹.json の効果文より)
     activationType: 'triggered', statTarget: 'atk',
     trTable: { base: 200 }, baseRate: 60, // 攻撃200%上昇・確率+60%(LV10)
     note: 'S(攻撃)。確率+60%/対象:全。攻撃:200%上昇(自動反映対応)。「この武将と同じ兵種を指揮する敵軍武将数×10%を攻撃効果に加算」は敵軍情報に依存するため計算エンジン未実装(参考データのみ、固定200%部分のみ自動反映)。大久保忠世(No.2478)の固有スキル。鍛錬TR別数値は情報源に記載なし。'
   },
   '金烏砲声': {
+    effectAxis: 'atk', // 攻撃側(正本 data/skill/金烏砲声.json の効果文より)
     activationType: 'triggered', statTarget: 'atk',
     trTable: { base: 370 }, baseRate: 65, // 攻撃370%上昇(LV10)・確率:LV1+20%→LV10+65%
     note: 'S(攻撃)。確率:LV1+20%→LV10+65%/対象:全。攻撃:370%上昇(自動反映対応、模倣可)。付随効果(参考データのみ・計算エンジン未対応):攻撃時、防御側の兵科補正をLV1=0.9倍→LV10=0.6倍に縮小(効果は累積するが有利不利は逆転しない、模倣不可)。' +
@@ -2514,6 +2683,7 @@ const specialSkills = {
           '雑賀孫市(No.2479)の固有スキル。鍛錬TR別数値は情報源に記載なし。'
   },
   '江龍義咆': {
+    effectAxis: 'def', // 防御側(正本 data/skill/江龍義咆.json の効果文より)
     activationType: 'triggered', statTarget: 'def',
     trTable: { base: 460, TR5: 800 }, baseRate: 100, // 防御:LV10=460%→TR5=800%・確率+100%
     note: 'S(防御)。確率+100%/対象:全。防御:LV10=460%上昇→TR5(鍛錬最高段階)=800%上昇(自動反映対応、模倣可。TR1〜TR4は情報源に記載なし)。' +
@@ -2526,6 +2696,7 @@ const specialSkills = {
     note: '(重複不可)。「母衣衆」の兵士攻撃力がLV10:+1→TR5(鍛錬最高段階):+2、兵士破壊力もTR5で+1される(効果範囲は所持者部隊の兵士のみ)。特定兵種への固定値ボーナスのため計算エンジンは未実装(参考データのみ)。貴田孫兵衛(No.2484)の固有スキル。TR1〜TR4は情報源に記載なし。'
   },
   '護城結鎖': {
+    effectAxis: 'def', // 防御側(正本 data/skill/護城結鎖.json の効果文より)
     activationType: 'triggered', statTarget: 'def',
     trTable: { base: 460, TR1: 530, TR2: 700, TR3: 910, TR4: 1350, TR5: 1790 }, baseRate: 48, // 防御:LV10=460%→TR5=1790%・確率+48%(固定)
     note: 'S(防御)。確率+48%(固定)/対象:本丸・所領防御陣形内でこの武将の縦横列に配置された武将と自身。防御%上昇(自動反映対応、模倣可、位置条件は未対応のため常時適用として計算): LV10=460% ／ TR1=530% ／ TR2=700% ／ TR3=910% ／ TR4=1350% ／ TR5=1790%。' +
@@ -2546,6 +2717,7 @@ const specialSkills = {
           '【2026年7月修正】以前は通常の防御%上昇スキル(trTable)として登録していたが、「部隊総防御力上昇」という別軸効果(総攻撃力上昇の防御版)として未実装だったため、totalDefBoostPctTableを新設して対応した(ユーザー指摘)。'
   },
   '武光照陣': {
+    effectAxis: 'atk', // 攻撃側(正本 data/skill/武光照陣.json の効果文より)
     activationType: 'triggered', statTarget: 'atk',
     targetTroopCategories: ['弓兵科','騎馬兵科','兵器兵科(砲兵科)','兵器兵科(器兵科)'], // 対象:弓馬砲器
     trTable: { base: 450, TR5: 1220 }, baseRate: 100, // 攻撃:LV10=450%→TR5=1220%・確率+100%
@@ -2554,6 +2726,7 @@ const specialSkills = {
           '「自部隊同時攻撃時、最速部隊の移動時間で合流出陣可能」「攻撃参加全自軍部隊の帰還速度がLV10=4倍→TR5=6倍」は参考データのみ。北信景(No.2488)の固有スキル。'
   },
   '槍禅一如': {
+    effectAxis: 'def', // 防御側(正本 data/skill/槍禅一如.json の効果文より)
     activationType: 'triggered', statTarget: 'def',
     trTable: { base: 420, TR1: 470, TR2: 570, TR3: 730, TR4: 980, TR5: 1340 }, baseRate: 10, // 防御:LV10=420%→TR5=1340%・確率+10%(固定)
     note: 'S(防御)。確率+10%(固定)/対象:全。防御%上昇(自動反映対応、模倣可): LV10=420% ／ TR1=470% ／ TR2=570% ／ TR3=730% ／ TR4=980% ／ TR5=1340%。' +
@@ -2562,6 +2735,7 @@ const specialSkills = {
           '加藤泰興(No.2489)の固有スキル。'
   },
   '天膂ノ闘士': {
+    effectAxis: 'def', // 防御側(正本 data/skill/天膂ノ闘士.json の効果文より)
     activationType: 'triggered', statTarget: 'def', noMimic: true,
     trTable: { base: 430, TR5: 1200 }, baseRate: 100, // 防御:LV10=430%→TR5=1200%・確率+100%
     skillActivationRateBonus: 2, // 自軍武将のスキル発動率+2%(LV10値。TR5は+5%と鍛錬で変化するが、本フィールドは固定値のためLV10値を登録)
@@ -2576,6 +2750,7 @@ const specialSkills = {
     note: '(特)。確率+35%/対象:3合流以上。飛翔6を持つ(soarValue:6)。「対人合流攻撃で倒した兵数に応じて攻撃参加者全員が銅銭獲得(LV10:6%→TR5(鍛錬最高段階):9%)」は参考データのみ(攻撃/防御%上昇は無い)。藤堂高虎(No.2494)の固有スキル。TR1〜TR4は情報源に記載なし。'
   },
   '天位智勇': {
+    effectAxis: 'atk', // 攻撃側(正本 data/skill/天位智勇.json の効果文より)
     activationType: 'triggered', statTarget: 'atk', noMimic: true,
     trTable: { base: 460, TR5: 1450 }, baseRate: 100, // 攻撃:LV10=460%→TR5=1450%・確率+100%
     skillActivationRateBonus: 15, // 自軍武将のスキル発動率+15%(LV10値。TR5は+20%と鍛錬で変化するが、本フィールドは固定値のためLV10値を登録)
@@ -2587,6 +2762,7 @@ const specialSkills = {
     note: '(防御・模倣不可・重複不可)。本丸防御陣形または所領防御陣形にて発動。所属部隊の「雑賀衆」兵士防御力がLV10:+5→TR5(鍛錬最高段階):+8上昇、同じ陣形内の他部隊の「雑賀衆」兵士防御力もLV10:+1→TR5:+2.5上昇。特定兵種への固定値ボーナスのため計算エンジンは未実装(参考データのみ)。的場昌長(No.2496)の固有スキル。TR1〜TR4は情報源に記載なし。'
   },
   '虎狩': {
+    effectAxis: 'def', // 防御側(正本 data/skill/虎狩.json の効果文より)
     activationType: 'triggered', statTarget: 'def', noMimic: true, leaderOnly: true,
     trTable: { base: 380, TR5: 820 }, baseRate: 100, // 防御:LV10=380%→TR5=820%・確率+100%
     note: 'S(防御・模倣不可・部隊長時限定)。確率+100%/対象:全。防御:LV10=380%上昇→TR5(鍛錬最高段階)=820%上昇(自動反映対応、TR1〜TR4は情報源に記載なし)。「所属部隊のコストを合計LV10:6→TR5:2に置き換える代わりに攻撃出陣不可」は参考データのみ。長野業正(No.2497)の固有スキル。'
@@ -2600,6 +2776,7 @@ const specialSkills = {
     note: '(重複不可)。合戦中に獲得した総合ポイントの(0.9+武将ランク×0.3)%の銅銭を合戦終了時に獲得。攻撃/防御%上昇は無く、銅銭獲得系の効果のため計算エンジンは未実装(参考データのみ)。津田宗及(No.2501)の固有スキル。TR段階の詳細は情報源に記載なし。'
   },
   '黄昏る福音': {
+    effectAxis: 'both', // 攻防両方(正本 data/skill/黄昏る福音.json の効果文より)
     activationType: 'triggered', noMimic: true,
     trTable: { base: 35 }, baseRate: 100, // 攻撃35%上昇・防御35%上昇(同値のため共通のtrTableで代用)・確率+100%(LV10)
     note: 'A(攻撃・防御・模倣不可)。確率+100%/対象:全。攻撃35%上昇・防御35%上昇(自動反映対応)。「同じ自拠点に所属または出陣する他の自部隊にも効果あり」は参考データのみ(部隊内自動反映分のみ計算)。ヴィレラ(No.2506)の固有スキル。鍛錬TR別数値は情報源に記載なし。'
@@ -2609,6 +2786,7 @@ const specialSkills = {
     note: '(特・模倣不可)。確率+100%/対象:追加スキル。このスキルを持つ武将カードは、追加スキルの速度効果が2倍となる。攻撃/防御%上昇は無く、他スキルの速度効果を倍加する特殊メカニクスのため計算エンジンは未実装(参考データのみ)。前田慶次(No.2509)の固有スキル。鍛錬TR別数値は情報源に記載なし。'
   },
   '砲神因子': {
+    effectAxis: 'def', // 防御側(正本 data/skill/砲神因子.json の効果文より)
     activationType: 'triggered', statTarget: 'def',
     targetTroopCategories: ['弓兵科','兵器兵科(砲兵科)','兵器兵科(器兵科)'], // 対象:弓砲器
     trTable: { base: 270 }, baseRate: 50, // 防御270%上昇・確率+50%(LV10)
@@ -2617,6 +2795,7 @@ const specialSkills = {
           '「加勢出陣時は速度効果3倍」は参考データのみ(計算エンジン未対応)。鈴木重朝(No.3565)の固有スキル。鍛錬TR別数値は情報源に記載なし(LV10のみ登録)。'
   },
   '覇軍 悉国平定': {
+    effectAxis: 'both', // 攻防両方(正本 data/skill/覇軍 悉国平定.json の効果文より)
     activationType: 'triggered', noMimic: true, noSquadDuplicate: true, hasHado: true,
     trTable: { base: 550 }, baseRate: 100, // 攻撃550%上昇・防御550%上昇(同値のため共通のtrTableで代用)・確率+100%
     troopTypeTarget: '騎馬鉄砲', troopBonusTable: { base: { atk: 7, def: 7 } }, // 所属部隊の騎馬鉄砲兵士攻撃力・防御力+7(自動反映対応、getActiveTroopStatBonus経由)
@@ -2627,6 +2806,7 @@ const specialSkills = {
           '豊臣秀吉【傑】(No.20002)の固有効果。ixanary.comで確認(2026年7月)。'
   },
   '天魔絶界': {
+    effectAxis: 'atk', // 攻撃側(noteより。「兵士攻撃力・兵士防御力+7」は兵士補正であってこのスキルの防御%上昇ではない)
     activationType: 'triggered', noMimic: true, noSquadDuplicate: true, hasHado: true,
     trTable: { base: 666 }, baseRate: 100, // 攻撃666%上昇・確率+100%
     troopTypeTarget: '鉄砲足軽', troopBonusTable: { base: { atk: 7, def: 7 } }, // 所属部隊の鉄砲足軽兵士攻撃力・防御力+7(自動反映対応)
@@ -2636,6 +2816,7 @@ const specialSkills = {
           '織田信長【傑】(No.20001)の固有効果。ixanary.comで確認(2026年7月)。'
   },
   '神威蓋世': {
+    effectAxis: 'both', // 攻防両方(正本 data/skill/神威蓋世.json の効果文より)
     activationType: 'triggered', noMimic: true, noSquadDuplicate: true, hasHado: true,
     trTable: { base: 500 }, baseRate: 100, // 攻撃500%上昇・防御500%上昇(同値のため共通のtrTableで代用)・確率+100%
     hasSoar: true, soarValue: 10,
@@ -2646,6 +2827,7 @@ const specialSkills = {
           '徳川家康【傑】(No.20003)の固有効果。ixanary.comで確認(2026年7月)。'
   },
   '至天ノ御旗': {
+    effectAxis: 'both', // 攻防両方(正本 data/skill/至天ノ御旗.json の効果文より)
     activationType: 'triggered', noMimic: true, noSquadDuplicate: true,
     trTable: { base: 770 }, baseRate: 100, // 攻撃770%上昇・防御770%上昇(同値のため共通のtrTableで代用)・確率+100%
     speedTrTable: { base: 350 }, // 速度350%上昇
@@ -2655,6 +2837,7 @@ const specialSkills = {
           '装飾効果(黄金化・正一位・陣Lv5化等)は参考データのみ。武田信玄【傑】(No.20004)の固有効果。ixanary.comで確認(2026年7月)。'
   },
   '神智天鏡': {
+    effectAxis: 'both', // 攻防両方(正本 data/skill/神智天鏡.json の効果文より)
     activationType: 'triggered', noMimic: true, noSquadDuplicate: true,
     trTable: { base: 3600 }, baseRate: 100, // 攻撃3600%上昇・防御3600%上昇(同値のため共通のtrTableで代用)・確率+100%
     skillActivationRateBonus: 10, takuetsuRateBonus: 15, // 自軍武将のスキル発動率+10%・卓越追加確率+15%(自動反映対応)
@@ -2664,6 +2847,7 @@ const specialSkills = {
           '「合流攻撃時他部隊鉄砲足軽攻撃+3」は計算エンジン未実装(単一部隊のみ扱うため対象外、参考データのみ)。黒田如水【傑】(No.20007)の固有効果。ixanary.comで確認(2026年7月)。'
   },
   '冥界ノ覇神': {
+    multiplyAxis: 'both', // 追加スキルの攻撃・防御・破壊効果が2.5倍
     noMimic: true, // 「模倣不可」明記
     baseRate: 100, // 確率+100%/対象:追加スキル
     // このスキル自身には攻撃%上昇等の数値効果は無く、「追加スキルの攻撃・防御・破壊効果を倍加する」効果のみを持つ
@@ -2675,6 +2859,7 @@ const specialSkills = {
           '鍛錬TR別数値は情報源に記載なし(LV10のみ登録)。織田信長(No.1166)の固有スキル。ixanary.comで確認(2026年7月)。'
   },
   '天計千年鳳凰': {
+    multiplyAxis: 'def', // 追加スキルの防御・破壊効果が2.5倍
     noMimic: true, // 「模倣不可」明記
     baseRate: 100, // 確率+100%/対象:追加スキル
     // このスキル自身には攻撃%上昇等の数値効果は無く、「追加スキルの防御・破壊効果を倍加する」効果のみを持つ
@@ -2689,6 +2874,7 @@ const specialSkills = {
           '鍛錬TR別数値は情報源に記載なし(LV10のみ登録)。竹中半兵衛(No.1215)の固有スキル。ixanary.comで確認(2026年7月)。'
   },
   '天壌八咫烏': {
+    effectAxis: 'atk', // 攻撃側(正本 data/skill/天壌八咫烏.json の効果文より)
     targetTroopCategories: ['槍兵科','弓兵科','兵器兵科(器兵科)'],
     targetSoldierNames: ['焙烙火矢'],
     variableFormula: { statTarget: 'atk', base: 0, variable: 'enemyCost', perUnit: 1 },
@@ -2697,6 +2883,7 @@ const specialSkills = {
           '。鍛錬TR別の数値は未登録のためLV10のみ。スキル説明の全文: ①対象兵科(槍・弓・器・焙)を指揮した戦闘時攻撃力が敵軍総武将コスト×1%上昇する(TR1〜TR5は未確認)'
   },
   '炎帝伐鬼': {
+    effectAxis: 'atk', // 攻撃側(正本 data/skill/炎帝伐鬼.json の効果文より)
     targetTroopCategories: ['槍兵科','兵器兵科(器兵科)'],
     targetSoldierNames: ['鉄砲足軽'],
     variableFormula: { statTarget: 'atk', base: 0, variable: 'defenderCount', perUnit: 3.5 },
@@ -2705,6 +2892,7 @@ const specialSkills = {
           '。鍛錬TR別の数値は未登録のためLV10のみ。スキル説明の全文: ①対象兵科(槍・器・鉄)を指揮した戦闘時防御参加武将数×3.5%攻撃力が上昇する ②卓越:追加確率15%で攻撃効果が1.5倍となる'
   },
   '無苦ノ武神': {
+    effectAxis: 'atk', // 攻撃側(正本 data/skill/無苦ノ武神.json の効果文より)
     noMimic: true, // skillDetailの「模倣不可」記載より
     targetTroopCategories: ['槍兵科','騎馬兵科','兵器兵科(砲兵科)','兵器兵科(器兵科)'],
     hasSoar: true, soarValue: 2,
@@ -2714,6 +2902,7 @@ const specialSkills = {
           'スキル説明の全文: ①攻撃94%上昇する(4部隊以下の攻撃で効果2倍) ②Sレア以上の追加/極限スキル1つにつき飛翔の値に4を加算する'
   },
   '無双六界ノ博奕': {
+    effectAxis: 'def', // 防御側(正本 data/skill/無双六界ノ博奕.json の効果文より)
     targetTroopCategories: ['槍兵科','弓兵科','兵器兵科(器兵科)'],
     targetSoldierNames: ['鉄砲足軽'],
     variableFormula: { statTarget: 'def', base: 0, variable: 'defenderCount', perUnit: 3.2 },
@@ -2722,6 +2911,7 @@ const specialSkills = {
           '。鍛錬TR別の数値は未登録のためLV10のみ。スキル説明の全文: ①対象兵科(槍・弓・器・鉄)を指揮した戦闘時防御力が(3.2×防御参加武将数)%上昇する ②卓越時追加確率20%で防御効果が1.5倍になる(TR1〜TR5は未確認)'
   },
   '凶星ノ斬光': {
+    effectAxis: 'atk', // 攻撃側(正本 data/skill/凶星ノ斬光.json の効果文より)
     noMimic: true, // skillDetailの「模倣不可」記載より
     targetTroopCategories: ['弓兵科','騎馬兵科','兵器兵科(器兵科)'],
     targetSoldierNames: ['焙烙火矢'],
@@ -2732,24 +2922,28 @@ const specialSkills = {
           '鍛錬TR別の数値は未登録のためLV10のみ。スキル説明の全文: ①攻撃170%上昇する ②飛翔2を持つ ③対象兵科指揮時極限スキルの攻撃効果が3倍となる(TR1〜TR5は未確認)'
   },
   '北天幻将': {
+    effectAxis: 'def', // 防御側(正本 data/skill/北天幻将.json の効果文より)
     trTable: { base: 120 },
     baseRate: 60,
     note: 'S(防御)。確率+60%(LV10)/対象:全。防御:LV10=120%上昇(自動反映対応)。九戸政実(No.1225)の固有スキル。武将データベースの登録内容から反映(2026年8月)。鍛錬TR別の数値は未登録のためLV10のみ。' +
           'スキル説明の全文: ①防御120%上昇する ②自拠点防御時は防御効果が3倍になる'
   },
   '破天ノ電撃': {
+    effectAxis: 'both', // 攻防両方(正本 data/skill/破天ノ電撃.json の効果文より)
     trTable: { base: 180 },
     baseRate: 32,
     note: 'SSS(攻撃)。確率+32%(LV10)/対象:全。攻撃:LV10=180%上昇(自動反映対応)。伊達政宗（3）【覇】(No.1226)の固有スキル。武将データベースの登録内容から反映(2026年8月)' +
           '。鍛錬TR別の数値は未登録のためLV10のみ。スキル説明の全文: ①攻撃180%上昇する ②防御180%上昇する ③自部隊内で卓越発動したスキル数×80%を攻防効果に加算する'
   },
   '紅蓮ノ護神': {
+    effectAxis: 'def', // 防御側(正本 data/skill/紅蓮ノ護神.json の効果文より)
     trTable: { base: 255 },
     baseRate: 60,
     note: 'SSS(防御)。確率+60%(LV10)/対象:全。防御:LV10=255%上昇(自動反映対応)。真田幸村【覇】(No.1227)の固有スキル。武将データベースの登録内容から反映(2026年8月)。鍛錬TR別の数値は未登録のためLV10のみ。' +
           'スキル説明の全文: ①防御255%上昇する ②部隊内で武将コストが武将スキルに影響するとき防御効果部分のみこの武将のコストを+1で計算する(特殊効果は部隊内重複不可・TR1〜TR5は未確認)'
   },
   '閻魔ノ裁き': {
+    effectAxis: 'both', // 攻防両方(正本 data/skill/閻魔ノ裁き.json の効果文より)
     noMimic: true, // skillDetailの「模倣不可」記載より
     trTable: { base: 184 },
     baseRate: 100,
@@ -2757,6 +2951,7 @@ const specialSkills = {
           'スキル説明の全文: ①攻撃184%上昇する ②防御184%上昇する ③部隊内武将の全スキルの卓越追加確率が25%上昇する(特殊効果は自部隊内では重複不可・TR1〜TR5は未確認)'
   },
   '豊国天万': {
+    effectAxis: 'atk', // 攻撃側(正本 data/skill/豊国天万.json の効果文より)
     targetTroopCategories: ['槍兵科','騎馬兵科','兵器兵科(砲兵科)','兵器兵科(器兵科)'],
     hasSoar: true, soarValue: 4,
     trTable: { base: 110 },
@@ -2765,6 +2960,7 @@ const specialSkills = {
           '。鍛錬TR別の数値は未登録のためLV10のみ。スキル説明の全文: ①攻撃110%上昇する ②飛翔4を持つ ③攻撃戦闘時卓越:追加確率30%で攻撃効果が3倍となりかつ飛翔12を得る(飛翔獲得部分のみ模倣不可)'
   },
   '日輪ノ狒王': {
+    effectAxis: 'def', // 防御側(正本 data/skill/日輪ノ狒王.json の効果文より)
     targetTroopCategories: ['弓兵科','兵器兵科(砲兵科)','兵器兵科(器兵科)'],
     trTable: { base: 90 },
     baseRate: 47,
@@ -2772,6 +2968,7 @@ const specialSkills = {
           'スキル説明の全文: ①防御90%上昇する ②攻撃側敵軍全武将のうちこの武将のコストを上回る武将コスト部分の総和×8%を防御効果に加算する'
   },
   '甲塞ノ龍砲': {
+    effectAxis: 'def', // 防御側(正本 data/skill/甲塞ノ龍砲.json の効果文より)
     targetTroopCategories: ['弓兵科','兵器兵科(砲兵科)','兵器兵科(器兵科)'],
     hasSoar: true, soarValue: 4,
     trTable: { base: 134 },
@@ -2780,12 +2977,14 @@ const specialSkills = {
           'スキル説明の全文: ①防御134%上昇する(敵軍4部隊以下で効果2倍) ②飛翔4を持つ(敵軍に飛翔を持つ武将が4人未満のとき通常武将ダメージを受けない)'
   },
   '万鬼闘帝': {
+    effectAxis: 'atk', // 攻撃側(正本 data/skill/万鬼闘帝.json の効果文より)
     trTable: { base: 210 },
     baseRate: 100,
     note: 'S(攻撃)。確率+100%(LV10)/対象:全。攻撃:LV10=210%上昇(自動反映対応)。柴田勝家(No.1216)の固有スキル。武将データベースの登録内容から反映(2026年8月)。鍛錬TR別の数値は未登録のためLV10のみ。' +
           'スキル説明の全文: ①攻撃210%上昇する(TR1〜TR5は未確認)'
   },
   '鬼神ノ軍法': {
+    effectAxis: 'def', // 防御側(正本 data/skill/鬼神ノ軍法.json の効果文より)
     noMimic: true, // skillDetailの「模倣不可」記載より
     targetTroopCategories: ['槍兵科','騎馬兵科','兵器兵科(器兵科)'],
     trTable: { base: 190 },
@@ -2794,6 +2993,7 @@ const specialSkills = {
           '。鍛錬TR別の数値は未登録のためLV10のみ。スキル説明の全文: ①防御190%上昇する ②本丸防御陣形に配置時この武将の編成コスト消費を-1.5する(TR1〜TR5は未確認)'
   },
   '炎馬帝': {
+    effectAxis: 'atk', // 攻撃側(正本 data/skill/炎馬帝.json の効果文より)
     targetTroopCategories: ['槍兵科','騎馬兵科','兵器兵科(砲兵科)'],
     trTable: { base: 210 },
     baseRate: 100,
@@ -2801,6 +3001,7 @@ const specialSkills = {
           'スキル説明の全文: ①攻撃210%上昇する ②速度100%上昇する ③対象兵科指揮時参加自部隊は攻撃力減少を受けずかつ距離が20延長される'
   },
   '倫蝮不蓁': {
+    effectAxis: 'atk', // 攻撃側(正本 data/skill/倫蝮不蓁.json の効果文より)
     targetTroopCategories: ['槍兵科','弓兵科','騎馬兵科','兵器兵科(砲兵科)'],
     variableFormula: { statTarget: 'atk', base: 0, variable: 'defenderCount', perUnit: 4 },
     baseRate: 55,
@@ -2808,12 +3009,14 @@ const specialSkills = {
           '。鍛錬TR別の数値は未登録のためLV10のみ。スキル説明の全文: ①対象兵科(槍・弓・馬・砲)を指揮した戦闘時攻撃力が(4×防御参加武将数)%上昇する(TR1〜TR5は未確認)'
   },
   '国盗ノ懸槍': {
+    effectAxis: 'atk', // 攻撃側(正本 data/skill/国盗ノ懸槍.json の効果文より)
     trTable: { base: 165 },
     baseRate: 45,
     note: 'S(攻撃)。確率+45%(LV10)/対象:全。攻撃:LV10=165%上昇(自動反映対応)。山内一豊(No.1237)の固有スキル。武将データベースの登録内容から反映(2026年8月)。鍛錬TR別の数値は未登録のためLV10のみ。' +
           'スキル説明の全文: ①攻撃165%上昇する(6部隊以下の攻撃で効果2倍)'
   },
   '猛虎嵐陣': {
+    effectAxis: 'atk', // 攻撃側(正本 data/skill/猛虎嵐陣.json の効果文より)
     noMimic: true, // skillDetailの「模倣不可」記載より
     targetTroopCategories: ['弓兵科','騎馬兵科','兵器兵科(器兵科)'],
     targetSoldierNames: ['騎馬鉄砲'],
@@ -2823,6 +3026,7 @@ const specialSkills = {
           '。鍛錬TR別の数値は未登録のためLV10のみ。スキル説明の全文: ①対象兵科(弓・馬・器・騎)を指揮した戦闘時攻撃力が450%上昇する ②速度が100%上昇する ③対象兵科指揮時自部隊の帰還時間が2分を超えるとき2分で帰還できる(TR1〜TR5は未確認)'
   },
   '万界寂香': {
+    effectAxis: 'def', // 防御側(正本 data/skill/万界寂香.json の効果文より)
     targetTroopCategories: ['槍兵科','兵器兵科(砲兵科)','兵器兵科(器兵科)'],
     hasSoar: true, soarValue: 6,
     trTable: { base: 330 },
@@ -2831,6 +3035,7 @@ const specialSkills = {
           'スキル説明の全文: ①防御330%上昇する ②飛翔6を持つ ③自拠点防御時は防御効果が1.5倍になる'
   },
   '義心江龍': {
+    effectAxis: 'atk', // 攻撃側(正本 data/skill/義心江龍.json の効果文より)
     fukutsu: 1, // 不屈1(2026-08-11一括付与: noteに記載があるのにフィールドが無く不屈バッジ・被害減判定に反映されていなかった)
     targetTroopCategories: ['槍兵科','兵器兵科(砲兵科)','兵器兵科(器兵科)'],
     trTable: { base: 420 },
@@ -2839,12 +3044,14 @@ const specialSkills = {
           '。鍛錬TR別の数値は未登録のためLV10のみ。スキル説明の全文: ①攻撃420%上昇する ②不屈1を持つ(攻撃戦闘敗北時、指揮兵が不屈の数値×1000まで回復)'
   },
   '斐波騰槍': {
+    effectAxis: 'both', // 攻防両方(正本 data/skill/斐波騰槍.json の効果文より)
     trTable: { base: 160 },
     baseRate: 32,
     note: 'S(攻撃)。確率+32%(LV10)/対象:全。攻撃:LV10=160%上昇(自動反映対応)。里見義弘（2）(No.1245)の固有スキル。武将データベースの登録内容から反映(2026年8月)。鍛錬TR別の数値は未登録のためLV10のみ。' +
           'スキル説明の全文: ①攻撃160%上昇する ②防御160%上昇する ③自部隊内で卓越発動したスキル数×65%を攻防効果に加算する'
   },
   '法威燦煌': {
+    effectAxis: 'def', // 防御側(正本 data/skill/法威燦煌.json の効果文より)
     targetTroopCategories: ['槍兵科','騎馬兵科','兵器兵科(砲兵科)','兵器兵科(器兵科)'],
     trTable: { base: 440 },
     baseRate: 55,
@@ -2852,6 +3059,7 @@ const specialSkills = {
           '。鍛錬TR別の数値は未登録のためLV10のみ。スキル説明の全文: ①防御440%上昇する ②防御戦闘時敵軍の卓越追加確率を-9%する(自軍内重複上限2)'
   },
   '鎮西ノ雷神': {
+    effectAxis: 'atk', // 攻撃側(正本 data/skill/鎮西ノ雷神.json の効果文より)
     targetTroopCategories: ['槍兵科','弓兵科','兵器兵科(器兵科)'],
     targetSoldierNames: ['焙烙火矢'],
     trTable: { base: 300 },
@@ -2860,6 +3068,7 @@ const specialSkills = {
           '鍛錬TR別の数値は未登録のためLV10のみ。スキル説明の全文: ①攻撃300%上昇する ②飛翔を持たない防御参加武将数×6%を攻撃効果に加算する'
   },
   '破界ノ轟砲': {
+    effectAxis: 'atk', // 攻撃側(正本 data/skill/破界ノ轟砲.json の効果文より)
     noMimic: true, // skillDetailの「模倣不可」記載より
     targetTroopCategories: ['兵器兵科(砲兵科)'],
     trTable: { base: 380 },
@@ -2868,6 +3077,7 @@ const specialSkills = {
           'スキル説明の全文: ①攻撃380%上昇する ②対象兵科(砲)指揮時極限スキルの攻撃効果が3.5倍となる'
   },
   '荷天滅陣': {
+    effectAxis: 'atk', // 攻撃側(正本 data/skill/荷天滅陣.json の効果文より)
     fukutsu: 1, // 不屈1(2026-08-11一括付与: noteに記載があるのにフィールドが無く不屈バッジ・被害減判定に反映されていなかった)
     trTable: { base: 760 },
     baseRate: 100,
@@ -2875,6 +3085,7 @@ const specialSkills = {
           '。鍛錬TR別の数値は未登録のためLV10のみ。スキル説明の全文: ①攻撃760%上昇する ②不屈1を持つ ③所属部隊を含む4部隊までで自合流を行うことができる ④4部隊での自合流時部隊消費コストを5低下する(特殊効果は模倣・重複不可)'
   },
   '西覇冠軍': {
+    effectAxis: 'atk', // 攻撃側(正本 data/skill/西覇冠軍.json の効果文より)
     fukutsu: 1, // 不屈1(2026-08-11一括付与: noteに記載があるのにフィールドが無く不屈バッジ・被害減判定に反映されていなかった)
     noMimic: true, // skillDetailの「模倣不可」記載より
     trTable: { base: 540 },
@@ -2884,6 +3095,7 @@ const specialSkills = {
           'まで除外する(部隊内重複不可)'
   },
   '陥城騎王': {
+    effectAxis: 'atk', // 攻撃側(正本 data/skill/陥城騎王.json の効果文より)
     targetTroopCategories: ['弓兵科','騎馬兵科','兵器兵科(砲兵科)','兵器兵科(器兵科)'],
     trTable: { base: 200 },
     baseRate: 45,
@@ -2891,6 +3103,7 @@ const specialSkills = {
           '。鍛錬TR別の数値は未登録のためLV10のみ。スキル説明の全文: ①攻撃200%上昇する ②自軍攻撃武将数×10%を攻撃効果に加算する'
   },
   '海王怒濤': {
+    effectAxis: 'atk', // 攻撃側(正本 data/skill/海王怒濤.json の効果文より)
     targetTroopCategories: ['弓兵科','騎馬兵科','兵器兵科(砲兵科)','兵器兵科(器兵科)'],
     trTable: { base: 440 },
     baseRate: 55,
@@ -2898,6 +3111,7 @@ const specialSkills = {
           '。鍛錬TR別の数値は未登録のためLV10のみ。スキル説明の全文: ①攻撃440%上昇する ②自部隊同時攻撃時、この武将は合流し自部隊数-2の不足を得る(特殊効果は模倣不可)'
   },
   '義陣響野': {
+    effectAxis: 'atk', // 攻撃側(正本 data/skill/義陣響野.json の効果文より)
     targetTroopCategories: ['槍兵科','騎馬兵科','兵器兵科(砲兵科)','兵器兵科(器兵科)'],
     variableFormula: { statTarget: 'atk', base: 0, variable: 'enemyCost', perUnit: 1.4 },
     baseRate: 35,
@@ -2905,6 +3119,7 @@ const specialSkills = {
           '。鍛錬TR別の数値は未登録のためLV10のみ。スキル説明の全文: ①対象兵科(槍・馬・砲・器)を指揮した戦闘時攻撃力が敵軍総武将コスト×1.4%上昇する'
   },
   '島穿覓槍': {
+    effectAxis: 'def', // 防御側(正本 data/skill/島穿覓槍.json の効果文より)
     noMimic: true, // skillDetailの「模倣不可」記載より
     targetTroopCategories: ['槍兵科','騎馬兵科','兵器兵科(砲兵科)','兵器兵科(器兵科)'],
     trTable: { base: 150 },
@@ -2913,6 +3128,7 @@ const specialSkills = {
           '。鍛錬TR別の数値は未登録のためLV10のみ。スキル説明の全文: ①防御150%上昇する ②卓越追加確率-20%で防御効果が4倍となる(卓越追加確率が0%を超える時のみ卓越抽選される)'
   },
   '龍父絶砲': {
+    effectAxis: 'both', // 攻防両方(正本 data/skill/龍父絶砲.json の効果文より)
     targetTroopCategories: ['槍兵科','弓兵科','兵器兵科(砲兵科)','兵器兵科(器兵科)'],
     trTable: { base: 420 },
     baseRate: 60,
@@ -2920,6 +3136,7 @@ const specialSkills = {
           '鍛錬TR別の数値は未登録のためLV10のみ。スキル説明の全文: ①攻撃420%上昇する ②防御420%上昇する ③部隊内で武将コストが武将スキルに影響するときこの武将のコストを+3で計算する(特殊効果は部隊内重複不可)'
   },
   '北天奔馬': {
+    effectAxis: 'atk', // 攻撃側(正本 data/skill/北天奔馬.json の効果文より)
     noMimic: true, // skillDetailの「模倣不可」記載より
     trTable: { base: 150 },
     baseRate: 55,
@@ -2927,6 +3144,7 @@ const specialSkills = {
           'スキル説明の全文: ①攻撃150%上昇する ②この武将と同じ兵種を指揮する敵軍武将数×12.5%を攻撃効果に加算する'
   },
   '天限ノ麒麟': {
+    effectAxis: 'def', // 防御側(正本 data/skill/天限ノ麒麟.json の効果文より)
     noMimic: true, // skillDetailの「模倣不可」記載より
     targetTroopCategories: ['槍兵科','騎馬兵科','兵器兵科(器兵科)'],
     targetSoldierNames: ['焙烙火矢'],
@@ -2936,6 +3154,7 @@ const specialSkills = {
           '。鍛錬TR別の数値は未登録のためLV10のみ。スキル説明の全文: ①防御150%上昇する ②破壊150%上昇する ③防御参加武将数×6.5%を防御効果に加算する'
   },
   '義響鉄心': {
+    effectAxis: 'def', // 防御側(正本 data/skill/義響鉄心.json の効果文より)
     noMimic: true, // skillDetailの「模倣不可」記載より
     targetTroopCategories: ['槍兵科','弓兵科','兵器兵科(砲兵科)','兵器兵科(器兵科)'],
     trTable: { base: 200 },
@@ -2944,6 +3163,7 @@ const specialSkills = {
           '。鍛錬TR別の数値は未登録のためLV10のみ。スキル説明の全文: ①防御200%上昇する ②所領防御陣形の第伍列目に配置時防御効果が3倍となる'
   },
   '烈火ノ麒将': {
+    effectAxis: 'atk', // 攻撃側(正本 data/skill/烈火ノ麒将.json の効果文より)
     noMimic: true, // skillDetailの「模倣不可」記載より
     targetTroopCategories: ['弓兵科','騎馬兵科','兵器兵科(器兵科)'],
     targetSoldierNames: ['鉄砲足軽'],
@@ -2953,6 +3173,7 @@ const specialSkills = {
           '。鍛錬TR別の数値は未登録のためLV10のみ。スキル説明の全文: ①攻撃(6.7×防御参加武将数)%上昇する ②撤退を持つ ③卓越追加確率10%で攻撃効果が1.2倍となる'
   },
   '灼槍不褪': {
+    effectAxis: 'atk', // 攻撃側(正本 data/skill/灼槍不褪.json の効果文より)
     noMimic: true, // skillDetailの「模倣不可」記載より
     trTable: { base: 470 },
     baseRate: 100,
@@ -2960,6 +3181,7 @@ const specialSkills = {
           'スキル説明の全文: ①攻撃470%上昇する ②所属部隊を含む4部隊までで自合流を行うことができる(特殊効果は重複不可)'
   },
   '乱界遊泳': {
+    effectAxis: 'def', // 防御側(正本 data/skill/乱界遊泳.json の効果文より)
     noMimic: true, // skillDetailの「模倣不可」記載より
     targetTroopCategories: ['槍兵科','騎馬兵科','兵器兵科(砲兵科)','兵器兵科(器兵科)'],
     trTable: { base: 400 },
@@ -2968,6 +3190,7 @@ const specialSkills = {
           '。鍛錬TR別の数値は未登録のためLV10のみ。スキル説明の全文: ①防御400%上昇する ②対象兵科指揮時、極限スキルの防御効果が3.5倍となる'
   },
   '夢妖剣': {
+    effectAxis: 'def', // 防御側(正本 data/skill/夢妖剣.json の効果文より)
     noMimic: true, // skillDetailの「模倣不可」記載より
     targetTroopCategories: ['弓兵科','騎馬兵科','兵器兵科(器兵科)'],
     targetSoldierNames: ['鉄砲足軽'],
@@ -2977,6 +3200,7 @@ const specialSkills = {
           '鍛錬TR別の数値は未登録のためLV10のみ。スキル説明の全文: ①防御200%上昇する ②本丸防御陣形の第陸列目に配置時防御効果が3倍となる'
   },
   '仁侯ノ決断': {
+    effectAxis: 'both', // 攻防両方(正本 data/skill/仁侯ノ決断.json の効果文より)
     noMimic: true, // skillDetailの「模倣不可」記載より
     trTable: { base: 450 },
     baseRate: 100,
@@ -2984,12 +3208,14 @@ const specialSkills = {
           'スキル説明の全文: ①攻撃450%上昇する ②防御450%上昇する ③自軍全武将全スキルの卓越確率に15%を加算する(自軍内重複上限2)'
   },
   '旋渦訣刀': {
+    effectAxis: 'def', // 防御側(正本 data/skill/旋渦訣刀.json の効果文より)
     trTable: { base: 480 },
     baseRate: 58,
     note: 'S(防御)。確率+58%(LV10)/対象:全。防御:LV10=480%上昇(自動反映対応)。鍋島直茂(No.1283)の固有スキル。武将データベースの登録内容から反映(2026年8月)。鍛錬TR別の数値は未登録のためLV10のみ。' +
           'スキル説明の全文: ①防御480%上昇する ②部隊内で武将コストが武将スキルに影響するとき、防御効果部分のみこの武将のコストを+1で計算する(特殊効果は部隊内重複不可)'
   },
   '獄香ノ爆宴': {
+    effectAxis: 'def', // 防御側(正本 data/skill/獄香ノ爆宴.json の効果文より)
     targetTroopCategories: ['兵器兵科(砲兵科)','兵器兵科(器兵科)'],
     trTable: { base: 60 },
     baseRate: 50,
@@ -2997,6 +3223,7 @@ const specialSkills = {
           'スキル説明の全文: ①防御60%上昇する ②自軍内で同兵種を指揮している武将数×3.8%を防御効果に加算する'
   },
   '外道煉獄': {
+    effectAxis: 'both', // 攻防両方(正本 data/skill/外道煉獄.json の効果文より)
     targetTroopCategories: ['槍兵科','弓兵科','騎馬兵科','兵器兵科(器兵科)'],
     targetSoldierNames: ['鉄砲足軽'],
     trTable: { base: 134 },
@@ -3005,6 +3232,7 @@ const specialSkills = {
           '。鍛錬TR別の数値は未登録のためLV10のみ。スキル説明の全文: ①攻撃134%上昇する ②防御134%上昇する ③部隊内武将のスキル発動率+15%を得る(特殊効果は部隊内重複不可)'
   },
   '烈界 渡海龍': {
+    effectAxis: 'def', // 防御側(正本 data/skill/烈界 渡海龍.json の効果文より)
     noMimic: true, // skillDetailの「模倣不可」記載より
     targetTroopCategories: ['槍兵科','騎馬兵科','兵器兵科(器兵科)'],
     targetSoldierNames: ['鉄砲足軽'],
@@ -3015,12 +3243,14 @@ const specialSkills = {
           '。鍛錬TR別の数値は未登録のためLV10のみ。スキル説明の全文: ①防御170%上昇する ②飛翔2を持つ ③対象兵科指揮時極限スキルの防御効果が3倍となる'
   },
   '神気煌龍': {
+    effectAxis: 'both', // 攻防両方(正本 data/skill/神気煌龍.json の効果文より)
     trTable: { base: 970 },
     baseRate: 100,
     note: 'SSS(攻撃)。確率+100%(LV10)/対象:全。攻撃:LV10=970%上昇(自動反映対応)。上杉謙信-復刻-【覇】(No.10074)の固有スキル。武将データベースの登録内容から反映(2026年8月)' +
           '。鍛錬TR別の数値は未登録のためLV10のみ。スキル説明の全文: ①攻撃970%上昇する ②防御970%上昇する ③この武将は、飛翔｛所属部隊内の他武将が戦闘時に持つ飛翔値の合計+10｝を得る(特殊効果は模倣不可)'
   },
   '天覇冠軍': {
+    effectAxis: 'atk', // 攻撃側(正本 data/skill/天覇冠軍.json の効果文より)
     noMimic: true, // skillDetailの「模倣不可」記載より
     trTable: { base: 1000 },
     baseRate: 100,
@@ -3028,6 +3258,7 @@ const specialSkills = {
           '。鍛錬TR別の数値は未登録のためLV10のみ。スキル説明の全文: ①攻撃1000%上昇する ②所属部隊を含む4部隊までで自合流を行える ③自合流時、他の自分の部隊にもこのスキルの攻撃効果を加算する ④部隊総コストからこの武将分のコストを最大3まで除外する(部隊内重複不可)'
   },
   '氷神懸龍': {
+    effectAxis: 'atk', // 攻撃側(正本 data/skill/氷神懸龍.json の効果文より)
     targetTroopCategories: ['槍兵科','兵器兵科(砲兵科)','兵器兵科(器兵科)'],
     hasSoar: true, soarValue: 4,
     trTable: { base: 88 },
@@ -3036,6 +3267,7 @@ const specialSkills = {
           '。鍛錬TR別の数値は未登録のためLV10のみ。スキル説明の全文: ①攻撃88%上昇する(4部隊以下の攻撃で効果2倍) ②飛翔4を持つ(敵軍に飛翔を持つ武将が4人未満のとき通常武将ダメージを受けない)'
   },
   '四界偃武': {
+    effectAxis: 'atk', // 攻撃側(正本 data/skill/四界偃武.json の効果文より)
     targetTroopCategories: ['槍兵科','弓兵科','兵器兵科(器兵科)'],
     targetSoldierNames: ['鉄砲足軽'],
     variableFormula: { statTarget: 'atk', base: 0, variable: 'enemyCost', perUnit: 0.8 },
@@ -3044,12 +3276,14 @@ const specialSkills = {
           '。鍛錬TR別の数値は未登録のためLV10のみ。スキル説明の全文: ①対象兵科(槍・弓・器・鉄)を指揮した戦闘時攻撃力が敵軍総武将コスト×0.8%上昇する'
   },
   '無鹿ノ幻律': {
+    effectAxis: 'def', // 防御側(正本 data/skill/無鹿ノ幻律.json の効果文より)
     trTable: { base: 80 },
     baseRate: 70,
     note: 'S(防御)。確率+70%(LV10)/対象:全。防御:LV10=80%上昇(自動反映対応)。大友宗麟(No.1210)の固有スキル。武将データベースの登録内容から反映(2026年8月)。鍛錬TR別の数値は未登録のためLV10のみ。' +
           'スキル説明の全文: ①防御80%上昇する ②拠点待機90分ごとに防御効果が1.5倍になる(上限4回)'
   },
   '天奏幻武': {
+    effectAxis: 'atk', // 攻撃側(正本 data/skill/天奏幻武.json の効果文より)
     targetTroopCategories: ['槍兵科','弓兵科'],
     targetSoldierNames: ['焙烙火矢'],
     variableFormula: { statTarget: 'atk', base: 0, variable: 'defenderCount', perUnit: 3 },
@@ -3058,6 +3292,7 @@ const specialSkills = {
           '。鍛錬TR別の数値は未登録のためLV10のみ。スキル説明の全文: ①対象兵科(槍・弓・焙)を指揮した戦闘時攻撃力が(3×防御参加武将数)%上昇する ②卓越時追加確率30%で攻撃効果が1.5倍になる(TR1〜TR5は未確認)'
   },
   '鼎不死巴': {
+    effectAxis: 'both', // 攻防両方(正本 data/skill/鼎不死巴.json の効果文より)
     noMimic: true, // skillDetailの「模倣不可」記載より
     trTable: { base: 240 },
     baseRate: 100,
@@ -3065,6 +3300,7 @@ const specialSkills = {
           '。鍛錬TR別の数値は未登録のためLV10のみ。スキル説明の全文: ①攻撃240%上昇する ②防御240%上昇する ③部隊内武将のスキル発動率+10%を得る ④卓越の追加確率+40%を得る(特殊効果は自部隊内では重複不可)'
   },
   '六冥緋侠ノ神謀': {
+    effectAxis: 'atk', // 攻撃側(正本 data/skill/六冥緋侠ノ神謀.json の効果文より)
     targetTroopCategories: ['槍兵科','弓兵科','騎馬兵科'],
     trTable: { base: 70 },
     baseRate: 70,
@@ -3072,12 +3308,14 @@ const specialSkills = {
           '。鍛錬TR別の数値は未登録のためLV10のみ。スキル説明の全文: ①攻撃70%上昇する ②敵軍本丸防御陣形に配置された武将のうちこの武将のコストを下回る武将コスト差分の総和×50%を攻撃効果に加算する'
   },
   '破邪轟砲': {
+    effectAxis: 'both', // 攻防両方(正本 data/skill/破邪轟砲.json の効果文より)
     trTable: { base: 200 },
     baseRate: 50,
     note: 'S(攻撃)。確率+50%(LV10)/対象:全。攻撃:LV10=200%上昇(自動反映対応)。島津義久（6）(No.1219)の固有スキル。武将データベースの登録内容から反映(2026年8月)。' +
           '鍛錬TR別の数値は未登録のためLV10のみ。スキル説明の全文: ①攻撃200%上昇する ②防御200%上昇する ③部隊内全武将の兵科対象の初期スキルに「砲」対象を追加する(TR1〜TR5は未確認)'
   },
   '勝旗勇躍': {
+    effectAxis: 'both', // 攻防両方(正本 data/skill/勝旗勇躍.json の効果文より)
     noMimic: true, // skillDetailの「模倣不可」記載より
     targetTroopCategories: ['槍兵科','騎馬兵科','兵器兵科(器兵科)'],
     targetSoldierNames: ['騎馬鉄砲'],
@@ -3087,6 +3325,7 @@ const specialSkills = {
           '。鍛錬TR別の数値は未登録のためLV10のみ。スキル説明の全文: ①攻撃440%上昇する ②防御440%上昇する ③このスキルを所持する武将の全スキルの卓越確率に50%を加算する'
   },
   '覇立槍': {
+    effectAxis: 'atk', // 攻撃側(正本 data/skill/覇立槍.json の効果文より)
     targetTroopCategories: ['槍兵科','兵器兵科(砲兵科)','兵器兵科(器兵科)'],
     trTable: { base: 460 },
     baseRate: 60,
@@ -3094,6 +3333,7 @@ const specialSkills = {
           'スキル説明の全文: ①攻撃460%上昇する ②破壊100%上昇する'
   },
   '虎国ノ至賢': {
+    effectAxis: 'atk', // 攻撃側(正本 data/skill/虎国ノ至賢.json の効果文より)
     noMimic: true, // skillDetailの「模倣不可」記載より
     targetTroopCategories: ['騎馬兵科','兵器兵科(砲兵科)','兵器兵科(器兵科)'],
     trTable: { base: 450 },
@@ -3102,6 +3342,7 @@ const specialSkills = {
           'スキル説明の全文: ①攻撃450%上昇する ②速度100%上昇する ③対象兵科指揮時自部隊の帰還時間が3分を超える場合3分で帰還できる'
   },
   '龍門ノ賢者': {
+    effectAxis: 'atk', // 攻撃側(正本 data/skill/龍門ノ賢者.json の効果文より)
     targetTroopCategories: ['弓兵科','兵器兵科(器兵科)'],
     targetSoldierNames: ['焙烙火矢'],
     trTable: { base: 190 },
@@ -3110,6 +3351,7 @@ const specialSkills = {
           'スキル説明の全文: ①攻撃190%上昇する ②卓越:追加確率10%で攻撃効果が3倍になる'
   },
   '甲山ノ猛虎': {
+    effectAxis: 'atk', // 攻撃側(正本 data/skill/甲山ノ猛虎.json の効果文より)
     noMimic: true, // skillDetailの「模倣不可」記載より
     targetTroopCategories: ['騎馬兵科','兵器兵科(器兵科)'],
     targetSoldierNames: ['騎馬鉄砲'],
@@ -3119,6 +3361,7 @@ const specialSkills = {
           'スキル説明の全文: ①攻撃430%上昇する ②速度100%上昇する ③自部隊同時攻撃時参加自部隊中最速の部隊移動時間を用いて合流出陣できる'
   },
   '闘火将帥': {
+    effectAxis: 'atk', // 攻撃側(正本 data/skill/闘火将帥.json の効果文より)
     noMimic: true, // skillDetailの「模倣不可」記載より
     targetTroopCategories: ['槍兵科','騎馬兵科','兵器兵科(砲兵科)'],
     trTable: { base: 430 },
@@ -3127,12 +3370,14 @@ const specialSkills = {
           'スキル説明の全文: ①攻撃430%上昇する ②対人での攻撃戦闘に勝利時名声を20回復する(特殊効果は部隊内重複不可)'
   },
   '月暈': {
+    effectAxis: 'atk', // 攻撃側(正本 data/skill/月暈.json の効果文より)
     trTable: { base: 250 },
     baseRate: 42,
     note: 'A(攻撃)。確率+42%(LV10)/対象:全。攻撃:LV10=250%上昇(自動反映対応)。留守政景(No.2382)の固有スキル。武将データベースの登録内容から反映(2026年8月)。鍛錬TR別の数値は未登録のためLV10のみ。' +
           'スキル説明の全文: ①自軍1部隊での攻撃時攻撃効果を3倍にする'
   },
   '荒龍奸爪': {
+    effectAxis: 'atk', // 攻撃側(正本 data/skill/荒龍奸爪.json の効果文より)
     noMimic: true, // skillDetailの「模倣不可」記載より
     targetTroopCategories: ['槍兵科','兵器兵科(器兵科)'],
     targetSoldierNames: ['鉄砲足軽'],
@@ -3142,6 +3387,7 @@ const specialSkills = {
           'スキル説明の全文: ①強襲専用部隊に配置時この武将の部隊コスト消費を1.5減らす(コスト減算はこの武将のコスト分まで)'
   },
   '酔狂なる聖将': {
+    effectAxis: 'atk', // 攻撃側(正本 data/skill/酔狂なる聖将.json の効果文より)
     noMimic: true, // skillDetailの「模倣不可」記載より
     trTable: { base: 160 },
     baseRate: 100,
@@ -3149,6 +3395,7 @@ const specialSkills = {
           'スキル説明の全文: ①自合流時他の自分の部隊にもこのスキルの攻撃効果を加算する(部隊内重複不可)'
   },
   '夜叉美濃': {
+    effectAxis: 'def', // 防御側(正本 data/skill/夜叉美濃.json の効果文より)
     targetTroopCategories: ['槍兵科','弓兵科','兵器兵科(器兵科)'],
     targetSoldierNames: ['鉄砲足軽'],
     trTable: { base: 410 },
@@ -3157,6 +3404,7 @@ const specialSkills = {
           'スキル説明の全文: ①防御410%上昇する ②破壊120%上昇する'
   },
   '雷閃鉾': {
+    effectAxis: 'def', // 防御側(正本 data/skill/雷閃鉾.json の効果文より)
     noMimic: true, // skillDetailの「模倣不可」記載より
     hasSoar: true, soarValue: 12,
     trTable: { base: 300 },
@@ -3165,6 +3413,7 @@ const specialSkills = {
           'スキル説明の全文: ①防御300%上昇する ②本丸防御陣形の第伍列目以降に配置時防御効果が1.5倍になり飛翔12を得る'
   },
   '武神ノ采配': {
+    effectAxis: 'def', // 防御側(正本 data/skill/武神ノ采配.json の効果文より)
     targetTroopCategories: ['騎馬兵科','兵器兵科(砲兵科)','兵器兵科(器兵科)'],
     trTable: { base: 95 },
     baseRate: 56,
@@ -3172,6 +3421,7 @@ const specialSkills = {
           'スキル説明の全文: ①防御95%上昇する ②拠点待機90分ごとに防御効果が1.5倍になる(上限5回)'
   },
   '星詠ム仁将': {
+    effectAxis: 'atk', // 攻撃側(正本 data/skill/星詠ム仁将.json の効果文より)
     targetTroopCategories: ['弓兵科','騎馬兵科','兵器兵科(器兵科)'],
     targetSoldierNames: ['焙烙火矢'],
     trTable: { base: 410 },
@@ -3180,6 +3430,7 @@ const specialSkills = {
           '鍛錬TR別の数値は未登録のためLV10のみ。スキル説明の全文: ①攻撃410%上昇する ②自部隊同時攻撃時この武将は合流自部隊数-2の不屈を得る(特殊効果は模倣不可)'
   },
   '大剛一念': {
+    effectAxis: 'def', // 防御側(正本 data/skill/大剛一念.json の効果文より)
     targetTroopCategories: ['槍兵科','兵器兵科(砲兵科)','兵器兵科(器兵科)'],
     trTable: { base: 280 },
     baseRate: 46,
@@ -3187,6 +3438,7 @@ const specialSkills = {
           'スキル説明の全文: ①防御280%上昇する ②この武将の最大指揮兵数と同数の兵士を指揮時防御効果を1.5倍にする'
   },
   '覇軍ノ勇士': {
+    effectAxis: 'both', // 攻防両方(正本 data/skill/覇軍ノ勇士.json の効果文より)
     targetTroopCategories: ['槍兵科','兵器兵科(砲兵科)','兵器兵科(器兵科)'],
     trTable: { base: 320 },
     baseRate: 48,
@@ -3194,6 +3446,7 @@ const specialSkills = {
           'スキル説明の全文: ①攻撃320%上昇する ②防御320%上昇する ③部隊内の「覇軍ノ勇士」スキル数×120%を攻防効果に加算する(4人時攻撃800%上昇+防御800%上昇)'
   },
   '冥界ノ千里眼': {
+    multiplyAxis: 'def', // 追加スキルの防御・破壊効果が2倍
     noMimic: true, // 「模倣不可」明記
     // このスキル自身には数値効果が無く、追加スキルの防御・破壊効果を倍加するのみ(縮地と同じ仕組み)。
     multiplyAdditionalSkillsBy: 2,
@@ -3205,6 +3458,7 @@ const specialSkills = {
           '大谷吉継（2）(No.1230)の固有スキル。鍛錬TR別の数値は未登録のためLV10のみ。'
   },
   '天封界斬': {
+    effectAxis: 'def', // 防御側(正本 data/skill/天封界斬.json の効果文より)
     targetTroopCategories: ['槍兵科','弓兵科','兵器兵科(砲兵科)','兵器兵科(器兵科)'],
     variableFormula: { statTarget: 'def', base: 0, variable: 'defenderCount', perUnit: 3.6 },
     baseRate: 30,
@@ -3243,6 +3497,7 @@ const specialSkills = {
           '攻撃戦闘時のみ発動・飛翔獲得部分は二重卓越不可。小早川秀秋（4）(No.1271)の固有スキル。対象:弓・馬・器・焙。'
   },
   '西天ノ仁星': {
+    multiplyAxis: 'def', // 加勢時のみ追加スキルの防御効果が倍加
     noMimic: true, // 「模倣不可」明記
     baseRate: 100,
     // 追加1・追加2(fx2/fx3)の防御%上昇に倍率を掛ける。
@@ -3291,6 +3546,7 @@ const specialSkills = {
           '津軽為信(No.2359)の固有スキル。'
   },
   '炎牛武陣': {
+    multiplyAxis: 'both', // 倍にするのは速度効果だけなので攻防の別は無い
     noMimic: true, // 「模倣不可」明記
     multiplyAdditionalSkillsBy: 2,
     multiplyTargetFields: ['fx2','fx3'], // 「追加スキル」表記のみのため縮地の前例に合わせて追加1・追加2
@@ -3306,6 +3562,7 @@ const specialSkills = {
           '片倉小十郎(No.7003)の固有スキル。'
   },
   '西国将軍': {
+    effectAxis: 'atk', // 攻撃側(正本 data/skill/西国将軍.json の効果文より)
     trTable: { base: 430 },
     destructTrTable: { base: 70 },
     baseRate: 100,
@@ -3314,6 +3571,7 @@ const specialSkills = {
           '池田輝政(No.7008)の固有スキル。鍛錬TR別の数値は未登録のためLV10のみ。'
   },
   '赤凰幻舞': {
+    multiplyAxis: 'atk', // 追加スキルの攻撃・破壊効果が2.5倍
     noMimic: true, // 「模倣不可」明記
     multiplyAdditionalSkillsBy: 2.5,
     multiplyTargetFields: ['fx2','fx3','fx4'], // 「追加1/追加2/極限」と明記があるため極限枠も対象
@@ -3324,6 +3582,7 @@ const specialSkills = {
           '今川義元(No.1203)の固有スキル。鍛錬TR別の数値は未登録のためLV10のみ。'
   },
   '悌王ノ指揮': {
+    multiplyAxis: 'atk', // 追加スキルの攻撃効果が2倍
     noMimic: true, // 「模倣不可」明記
     multiplyAdditionalSkillsBy: 2,
     multiplyTargetFields: ['fx2','fx3'], // 「追加スキル」表記のみのため縮地の前例に合わせて追加1・追加2
@@ -3348,6 +3607,7 @@ const specialSkills = {
           '千代(No.2381)の固有スキル。'
   },
   '応穏ノ守護者': {
+    multiplyAxis: 'def', // 追加スキルの防御・破壊効果が2倍
     noMimic: true, // 「模倣不可」明記
     multiplyAdditionalSkillsBy: 2,
     multiplyTargetFields: ['fx2','fx3'], // 「追加スキル」表記のみのため縮地の前例に合わせて追加1・追加2
