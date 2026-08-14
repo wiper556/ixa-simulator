@@ -854,7 +854,7 @@
   // 【必須】attack-simulator.html を変更したコミットでは、必ずこの定数も一緒に更新すること。
   // 表示文言の変更・CSSの微調整であっても対象(ユーザーがスクショで版を判別できなくなるため)。
   // 更新忘れが繰り返し発生しているので、編集したらコミット前にここを見に来る。
-  const SIMULATOR_VERSION = 'v2026-08-14.17';
+  const SIMULATOR_VERSION = 'v2026-08-14.18';
   document.addEventListener('DOMContentLoaded', ()=>{
     const badge = document.getElementById('simVersionBadge');
     if(badge) badge.textContent = SIMULATOR_VERSION;
@@ -1551,13 +1551,19 @@
             const p1 = Math.min(100, Math.max(0, tkChance + squadBonus)) / 100;
             const mult = sourceSk.takuetsu.multiplier;
             const doubleBonusPct = sourceSk.noDoubleTakuetsu ? null : columnHasDoubleTakuetsu(col);
+            // 【2026-08-14修正】卓越確率が0%以下のスキル(国呑ノ蟒蛇LV10の-20%、十三ノ奇跡の-60%など)は
+            // 抽選自体が起こり得ないので、最大値にも倍率を掛けない。直接持っている枠には
+            // 2026-08-10に入れた処理だが、**模倣経路だけ入っていなかった**(ユーザー指摘)。
+            // 国呑ノ蟒蛇LV10を模倣すると、直接は期待値=最大値=1512なのに
+            // 模倣コピーだけ最大値2268(二重卓越なら3402)と出ていた。
             if(doubleBonusPct !== null){
               const p2 = Math.min(100, Math.max(0, tkChance + squadBonus + doubleBonusPct)) / 100;
               const factor = (1 - p1 + p1 * mult) * (1 - p2 + p2 * mult);
-              effectMax = Math.round(effectMax * mult * mult * 100) / 100;
+              const maxMult = (p1 > 0 ? mult : 1) * (p2 > 0 ? mult : 1);
+              effectMax = Math.round(effectMax * maxMult * 100) / 100;
               effect = Math.round(effect * factor * 100) / 100;
             } else {
-              effectMax = Math.round(effectMax * mult * 100) / 100;
+              effectMax = Math.round(effectMax * (p1 > 0 ? mult : 1) * 100) / 100;
               effect = Math.round(effect * (1 + p1 * (mult - 1)) * 100) / 100;
             }
           }
@@ -1820,6 +1826,13 @@
           // 「||」でのフォールバックにより誤って既定値15に置き換えてしまわないよう、
           // 明示的に undefined チェックする(0 || 15 は15になってしまうため不可)。
           const g = specialSkills[skName].grantsDoubleTakuetsu;
+          // 【2026-08-14追加】二重卓越には「攻撃戦闘時」限定のものと「防御戦闘時」限定のものがある。
+          // 滅神五芒星・斑将閃牙・閃龍ノ御剣は攻撃戦闘時、参州烈聖(No.10056 徳川家康)は防御戦闘時。
+          // 以前はどちらも常時効いていたため、防御シミュレーターで攻撃用の二重卓越が乗り、
+          // 逆に参州烈聖は登録が無くて効かなかった(ユーザー指摘)。
+          // scope は currentModeAxis() と同じ 'atk' / 'def' で書く。既定は攻撃戦闘時。
+          const scope = g.scope || 'atk';
+          if(scope !== 'both' && scope !== currentModeAxis()) return;
           bonusPct = (g.bonusPct !== undefined) ? g.bonusPct : 15;
         }
       });
