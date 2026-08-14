@@ -299,17 +299,18 @@
   /* 「自軍内で同じ兵種を指揮している武将数」の手入力。効果の枠の下に出す。
      部隊の中身からは計算できない値なので、利用者に書いてもらう(2026-08-14)。
      ラベルを横に置いたら枠からはみ出して下の行に重なったので、
-     枠の中(プレースホルダ)に「焙烙火矢 参加武将数」を入れる形にした。 */
+     枠の中(プレースホルダ)に「焙烙火矢 参加武将数」を入れる形にした。
+     大きさはスキル名の入力欄にそろえる。実発動率の右隣に小さく出ていると
+     プレースホルダが途中で切れて、入力欄だと気づけなかった(利用者指摘)。 */
   .fx-soldier-count{
     margin-top:3px;
   }
-  .fx-soldier-count input{
-    width:100%;box-sizing:border-box;background:var(--input-bg);
-    border:1px solid var(--gold);color:var(--paper);border-radius:4px;padding:2px 6px;
-    font-family:'JetBrains Mono',monospace;font-size:11px;text-align:right;
+  table.sheet td.cell .fx-soldier-count input{
+    width:100%;box-sizing:border-box;border-color:var(--gold);
+    text-align:right;
   }
   .fx-soldier-count input::placeholder{
-    font-family:'Zen Kaku Gothic New',sans-serif;font-size:10px;color:var(--muted);
+    font-family:'Zen Kaku Gothic New',sans-serif;color:var(--muted);
     text-align:left;
   }
   /* 中身が空のときに1行ぶんの高さを取らないようにする(上昇%の最大値表示など) */
@@ -332,6 +333,9 @@
     margin-top:0;font-size:9.5px;text-align:right;
     flex:1 1 auto;min-width:0;white-space:normal;line-height:1.3;
   }
+  /* 人数の入力欄だけは実発動率と同じ行に並べず、1行まるごと使ってスキル名の欄と
+     同じ幅にする(上の行との間隔は親のgapが持つのでmargin-topは要らない) */
+  td.cell-combo > div:last-child > .fx-soldier-count{flex:1 0 100%;margin-top:0;}
 
 
   .footnote{margin-top:16px;padding-top:12px;border-top:1px solid var(--line);font-size:11px;color:#5c6478;line-height:1.7;}
@@ -850,7 +854,7 @@
   // 【必須】attack-simulator.html を変更したコミットでは、必ずこの定数も一緒に更新すること。
   // 表示文言の変更・CSSの微調整であっても対象(ユーザーがスクショで版を判別できなくなるため)。
   // 更新忘れが繰り返し発生しているので、編集したらコミット前にここを見に来る。
-  const SIMULATOR_VERSION = 'v2026-08-14.6';
+  const SIMULATOR_VERSION = 'v2026-08-14.7';
   document.addEventListener('DOMContentLoaded', ()=>{
     const badge = document.getElementById('simVersionBadge');
     if(badge) badge.textContent = SIMULATOR_VERSION;
@@ -1104,8 +1108,12 @@
         const need = slotUsesSoldierCount(col, FX_TO_SKILL_FIELD[fxKey]);
         box.style.display = need ? '' : 'none';
         if(!need) return;
-        // 何を入れる欄なのかは枠の中に出す(横に置くとはみ出して下の行に重なる)
-        input.placeholder = (soldier ? soldier : '同兵種') + ' 参加武将数';
+        // 何を入れる欄なのかは枠の中に出す(横に置くとはみ出して下の行に重なる)。
+        // スマホは1列100px程度しかなく兵士名まで入れると途中で切れるので、
+        // そこだけ「参加武将数」に縮める(兵士名は同じ列の兵士欄に出ている)。
+        const full = (soldier ? soldier : '同兵種') + ' 参加武将数';
+        input.placeholder = isSpLayout() ? '参加武将数' : full;
+        input.title = full;
         // 上限は防御参加武将数。自軍内の話なので、それより多くなることはない。
         input.max = String(soldierCountMax());
         // 兵士名が同じ列は同じ値になる。兵士未選択のときは共有しない。
