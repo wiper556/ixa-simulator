@@ -834,7 +834,7 @@
   // 【必須】attack-simulator.html を変更したコミットでは、必ずこの定数も一緒に更新すること。
   // 表示文言の変更・CSSの微調整であっても対象(ユーザーがスクショで版を判別できなくなるため)。
   // 更新忘れが繰り返し発生しているので、編集したらコミット前にここを見に来る。
-  const SIMULATOR_VERSION = 'v2026-08-14.3';
+  const SIMULATOR_VERSION = 'v2026-08-14.4';
   document.addEventListener('DOMContentLoaded', ()=>{
     const badge = document.getElementById('simVersionBadge');
     if(badge) badge.textContent = SIMULATOR_VERSION;
@@ -1658,6 +1658,10 @@
         Object.keys(specialSkills).forEach(skName=>{
           if(text.includes(skName)){
             const sk = specialSkills[skName];
+            // 2026-08-14: leaderOnly(部隊長時限定)はデータにあるだけで
+            // どこからも見られていなかった。蛇神幻計(No.1311)のように
+            // 部隊長時だけ効くスキルが、小隊に置いても効いてしまう。
+            if(sk.leaderOnly && col !== 0) return;
             // 【2026-08-11修正】覇神絶域・雄飛新世のような「総攻撃力/防御力上昇」だけを持つスキル
             // (通常の上昇%を持たない)は、val欄に「総攻撃力+30%」という文字列をDOMへ直接書くだけで
             // sheetDataを更新していなかったため、前にその枠へ入れていたスキルの数値が残り、
@@ -2490,6 +2494,10 @@
         Object.keys(specialSkills).forEach(skName=>{
           if(text.includes(skName)){
             const sk = specialSkills[skName];
+            // 2026-08-14: leaderOnly(部隊長時限定)はデータにあるだけで
+            // どこからも見られていなかった。蛇神幻計(No.1311)のように
+            // 部隊長時だけ効くスキルが、小隊に置いても効いてしまう。
+            if(sk.leaderOnly && col !== 0) return;
             const isMujinSlot = !!(sk.hasMujin || fk === 'skillUltimate');
             const mujinMult = (master && isMujinSlot) ? master.multiplier : 1;
             if(sk.totalAtkBoostPct !== undefined){
@@ -2552,6 +2560,10 @@
         Object.keys(specialSkills).forEach(skName=>{
           if(text.includes(skName)){
             const sk = specialSkills[skName];
+            // 2026-08-14: leaderOnly(部隊長時限定)はデータにあるだけで
+            // どこからも見られていなかった。蛇神幻計(No.1311)のように
+            // 部隊長時だけ効くスキルが、小隊に置いても効いてしまう。
+            if(sk.leaderOnly && col !== 0) return;
             const isMujinSlot = !!(sk.hasMujin || fk === 'skillUltimate');
             const mujinMult = (master && isMujinSlot) ? master.multiplier : 1;
             if(sk.totalDefBoostPct !== undefined){
@@ -2640,6 +2652,10 @@
         Object.keys(specialSkills).forEach(skName=>{
           if(text.includes(skName)){
             const sk = specialSkills[skName];
+            // 2026-08-14: leaderOnly(部隊長時限定)はデータにあるだけで
+            // どこからも見られていなかった。蛇神幻計(No.1311)のように
+            // 部隊長時だけ効くスキルが、小隊に置いても効いてしまう。
+            if(sk.leaderOnly && col !== 0) return;
             if(sk.anywhereSquadwideBoost && sk.anywhereSquadwideBoost[statTarget] !== undefined){
               multiplier *= (1 + sk.anywhereSquadwideBoost[statTarget] / 100);
             }
@@ -3977,13 +3993,14 @@
           const uncertain = !!(hasVal && ((real !== null && real < 100) || takuetsuUncertain));
           valInput.classList.toggle('rate-uncertain', uncertain);
         }
-        if(real === null){
-          el.textContent = '実発動率: -';
-          return;
-        }
         // specialSkillsに rateNote があれば実発動率の後ろに短い注記を出す。
         // 「条件を満たした前提で数値を入れてある」スキル(天弦ノ威軍の自軍城主数10以上など)の
         // 前提を利用者に伝えるためのもの。fx1〜fx4はskillInit/skillAdd1/skillAdd2/skillUltimateに対応する。
+        //
+        // 2026-08-14: この計算は「実発動率: -」で先に return する後ろにあったので、
+        // **発動率を持たないスキルには注記が出なかった**。月読ノ冥略(No.1316)は
+        // 発動率の無い倍率スキルなので「(加勢時のみ)」が出ず、条件が伝わらなかった。
+        // 注記は発動率の有無と関係ないので、先に求めて両方の分岐で出す。
         const skillField = {fx1:'skillInit', fx2:'skillAdd1', fx3:'skillAdd2', fx4:'skillUltimate'}[key];
         const skillText = (sheetData[col] && sheetData[col][skillField]) || '';
         let rateNote = '';
@@ -3992,7 +4009,12 @@
             if(skillText.includes(n) && specialSkills[n].rateNote) rateNote = specialSkills[n].rateNote;
           });
         }
-        el.textContent = `実発動率: ${fmtPct(real)}%` + (rateNote ? `(${rateNote})` : '');
+        const noteSuffix = rateNote ? `(${rateNote})` : '';
+        if(real === null){
+          el.textContent = '実発動率: -' + noteSuffix;
+          return;
+        }
+        el.textContent = `実発動率: ${fmtPct(real)}%` + noteSuffix;
       });
     }
   }
