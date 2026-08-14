@@ -446,7 +446,17 @@
   // ============ ランキング(Supabase) ============
   const SUPABASE_URL = 'https://oykzgzagkyygobbfkmwq.supabase.co';
   const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im95a3pnemFna3l5Z29iYmZrbXdxIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODQ4ODE2NzMsImV4cCI6MjEwMDQ1NzY3M30.lP8rcREG6iy_A9qA3oDrZh1uf5y3OQeBhGieMFgbUEs';
-  const supabaseClient = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+  // 【2026-08-14修正】gacha-simulator.html と同じ不具合。CDNが読めないと
+  // window.supabase が未定義になって例外が飛び、この<script>の残り(くじを引く
+  // ボタンの登録を含む)が丸ごと止まっていた。ランキングだけ諦めて先へ進める。
+  let supabaseClient = null;
+  try{
+    if(window.supabase && typeof window.supabase.createClient === 'function'){
+      supabaseClient = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+    }
+  }catch(e){
+    console.warn('ランキングの接続を用意できませんでした(くじ自体は使えます)', e);
+  }
   const KUJI_SCOPE = '2026-07-06'; // 期間限定くじの識別子。次の期間に切り替わったら変更する
   const KUJI_RANKING_TITLE = 'パラレル12種コンプリート';
 
@@ -458,6 +468,10 @@
 
   async function loadRankingSection(elId, orderBy, ascending, limit){
     const listEl = document.getElementById(elId);
+    if(!supabaseClient){
+      listEl.innerHTML = '<p class="note">ランキングを読み込めませんでした(くじは引けます)。</p>';
+      return;
+    }
     const {data, error} = await supabaseClient
       .from('rankings')
       .select('value, created_at')
@@ -486,6 +500,9 @@
   }
 
   async function submitRanking(value){
+    if(!supabaseClient){
+      return {message:'ランキングに接続できませんでした。'};
+    }
     const {error} = await supabaseClient.from('rankings').insert({
       simulator_type: 'kuji',
       scope: KUJI_SCOPE,
