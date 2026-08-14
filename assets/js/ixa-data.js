@@ -2899,7 +2899,7 @@ const specialSkills = {
     targetSoldierNames: ['鉄砲足軽'],
     trTable: { base: 134 },
     baseRate: 100,
-    note: 'S(攻撃)。確率+100%(LV10)/対象:槍・弓・馬・器・鉄。攻撃:LV10=134%上昇(自動反映対応)。荒木村重（2）(No.1213)の固有スキル。武将データベースの登録内容から反映(2026年8月)' +
+    note: 'S(攻撃)。確率+100%(LV10)/対象:槍・弓・馬・器・鉄。攻撃:LV10=134%上昇(自動反映対応)。荒木村重(No.1213)の固有スキル。武将データベースの登録内容から反映(2026年8月)' +
           '。鍛錬TR別の数値は未登録のためLV10のみ。スキル説明の全文: ①攻撃134%上昇する ②防御134%上昇する ③部隊内武将のスキル発動率+15%を得る(特殊効果は部隊内重複不可)'
   },
   '烈界 渡海龍': {
@@ -2930,7 +2930,7 @@ const specialSkills = {
     hasSoar: true, soarValue: 4,
     trTable: { base: 88 },
     baseRate: 100,
-    note: 'S(攻撃)。確率+100%(LV10)/対象:槍・砲・器。攻撃:LV10=88%上昇(自動反映対応)。長尾景虎(1206)(No.1206)の固有スキル。武将データベースの登録内容から反映(2026年8月)' +
+    note: 'S(攻撃)。確率+100%(LV10)/対象:槍・砲・器。攻撃:LV10=88%上昇(自動反映対応)。長尾景虎（2）(No.1206)の固有スキル。武将データベースの登録内容から反映(2026年8月)' +
           '。鍛錬TR別の数値は未登録のためLV10のみ。スキル説明の全文: ①攻撃88%上昇する(4部隊以下の攻撃で効果2倍) ②飛翔4を持つ(敵軍に飛翔を持つ武将が4人未満のとき通常武将ダメージを受けない)'
   },
   '四界偃武': {
@@ -2972,7 +2972,7 @@ const specialSkills = {
   '破邪轟砲': {
     trTable: { base: 200 },
     baseRate: 50,
-    note: 'S(攻撃)。確率+50%(LV10)/対象:全。攻撃:LV10=200%上昇(自動反映対応)。島津義久(1219)(No.1219)の固有スキル。武将データベースの登録内容から反映(2026年8月)。' +
+    note: 'S(攻撃)。確率+50%(LV10)/対象:全。攻撃:LV10=200%上昇(自動反映対応)。島津義久（6）(No.1219)の固有スキル。武将データベースの登録内容から反映(2026年8月)。' +
           '鍛錬TR別の数値は未登録のためLV10のみ。スキル説明の全文: ①攻撃200%上昇する ②防御200%上昇する ③部隊内全武将の兵科対象の初期スキルに「砲」対象を追加する(TR1〜TR5は未確認)'
   },
   '勝旗勇躍': {
@@ -3428,7 +3428,7 @@ const generalGrowthDB = [
   { name:'結城秀康', no:'1276', cost: 5.5, initialSkill:'覇槍ノ武威', lv0Troops:5250, atkBase:1250, atkGrowth:71, defBase:1100, defGrowth:50, tacticsBase:660, tacticsGrowth:3.0, rankGrades:{yari:'S',yumi:'A',uma:'S',ki:'A'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'カード画像(Lv0・No.1276)で初期値・成長率・指揮兵士数(5250)を確認済み。2025年2月追加の新天、Cost5.5。固有スキル「覇槍ノ武威」は討伐ゲージ連動の特殊スキル(specialSkills参照、計算エンジンは未実装)' },
   { name:'石田三成', no:'1277', cost: 4.5, initialSkill:'義陣絶刀', lv0Troops:4830, atkBase:1240, atkGrowth:67, defBase:1240, defGrowth:67, tacticsBase:690, tacticsGrowth:3.5, rankGrades:{yari:'A',yumi:'S',uma:'S',ki:'A'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixawiki武将カード一覧表より一括登録(要スポットチェック)' },
   { name:'羽柴秀長', no:'1278', cost: 4.5, initialSkill:'王佐ノ指揮', lv0Troops:4840, atkBase:1230, atkGrowth:66, defBase:1230, defGrowth:66, tacticsBase:670, tacticsGrowth:3.0, rankGrades:{yari:'A',yumi:'S',uma:'A',ki:'S'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixawiki武将カード一覧表より一括登録(要スポットチェック)' },
-  { name:'荒木村重', no:'1279', cost: 4.0, initialSkill:'魔導禁鎖', lv0Troops:4630, atkBase:1050, atkGrowth:41, defBase:1240, defGrowth:71, tacticsBase:660, tacticsGrowth:3.0, rankGrades:{yari:'S',yumi:'A',uma:'S',ki:'A'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixawiki武将カード一覧表より一括登録(要スポットチェック)' },
+  { name:'荒木村重（2）', no:'1279', cost: 4.0, initialSkill:'魔導禁鎖', lv0Troops:4630, atkBase:1050, atkGrowth:41, defBase:1240, defGrowth:71, tacticsBase:660, tacticsGrowth:3.0, rankGrades:{yari:'S',yumi:'A',uma:'S',ki:'A'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixawiki武将カード一覧表より一括登録(要スポットチェック)' },
   { name:'小早川隆景', no:'1280', cost: 5.0, initialSkill:'西天ノ仁星', lv0Troops:5050, atkBase:1050, atkGrowth:40, defBase:1230, defGrowth:70, tacticsBase:690, tacticsGrowth:3.5, rankGrades:{yari:'A',yumi:'SS',uma:'A',ki:'A'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixawiki武将カード一覧表より一括登録(要スポットチェック)' },
   { name:'宇喜多秀家', no:'1281', cost: 4.0, initialSkill:'王花尖剣', lv0Troops:4650, atkBase:1090, atkGrowth:49, defBase:1240, defGrowth:71, tacticsBase:650, tacticsGrowth:3.0, rankGrades:{yari:'S',yumi:'A',uma:'S',ki:'A'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixawiki武将カード一覧表より一括登録(要スポットチェック)' },
   { name:'黒田長政', no:'1282', cost: 5.0, initialSkill:'一調天成', lv0Troops:5060, atkBase:1260, atkGrowth:72, defBase:1120, defGrowth:51, tacticsBase:670, tacticsGrowth:3.0, rankGrades:{yari:'A',yumi:'S',uma:'A',ki:'S'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixawiki武将カード一覧表より一括登録(要スポットチェック)' },
@@ -3498,7 +3498,7 @@ const generalGrowthDB = [
   { name:'明智光秀', no:'1204', cost: 5, initialSkill:'滅神五芒星', isHa:true, lv0Troops:4660, atkBase:1250, atkGrowth:65, defBase:1250, defGrowth:65, tacticsBase:760, tacticsGrowth:3.5, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'カード画像(Lv0・No.1204・Cost5)で初期値・成長率・指揮兵士数(4660)を確認済み。覇武将(ランクアップ1回につき指揮兵数+200)として登録。固有スキル「滅神五芒星」は二重卓越持ちの複合スキル(specialSkills参照、自動反映対応)' },
   { name:'武田晴信', no:'1205', cost: 5, initialSkill:'虎王炎神', lv0Troops:4800, atkBase:1200, atkGrowth:66, defBase:1090, defGrowth:39, tacticsBase:650, tacticsGrowth:3.0, rankGrades:{yari:'S',yumi:'A',uma:'S',ki:'A'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'カード画像(Lv0・No.1205・Cost5)で初期値・成長率・指揮兵士数(4800)を確認済み。' },
   { name:'松永久秀', no:'1209', cost: 3.5, initialSkill:'獄香ノ爆宴', lv0Troops:4190, atkBase:1100, atkGrowth:40, defBase:1180, defGrowth:59, tacticsBase:630, tacticsGrowth:3.0, rankGrades:{yari:'A',yumi:'S',uma:'A',ki:'S'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'カード画像(Lv0・No.1209・Cost3.5)で初期値・成長率・指揮兵士数(4190)を確認済み。' },
-  { name:'荒木村重（2）', no:'1213', cost: 3.5, initialSkill:'外道煉獄', lv0Troops:4180, atkBase:1180, atkGrowth:62, defBase:1060, defGrowth:34, tacticsBase:630, tacticsGrowth:3.0, rankGrades:{yari:'S',yumi:'A',uma:'A',ki:'S'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'カード画像(Lv0・No.1213・Cost3.5)で初期値・成長率・指揮兵士数(4180)を確認済み。' },
+  { name:'荒木村重', no:'1213', cost: 3.5, initialSkill:'外道煉獄', lv0Troops:4180, atkBase:1180, atkGrowth:62, defBase:1060, defGrowth:34, tacticsBase:630, tacticsGrowth:3.0, rankGrades:{yari:'S',yumi:'A',uma:'A',ki:'S'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'カード画像(Lv0・No.1213・Cost3.5)で初期値・成長率・指揮兵士数(4180)を確認済み。' },
   { name:'宇喜多秀家（2）', no:'1217', cost: 5, initialSkill:'烈界 渡海龍', lv0Troops:4810, atkBase:1080, atkGrowth:40, defBase:1190, defGrowth:62, tacticsBase:690, tacticsGrowth:3.5, rankGrades:{yari:'SS',yumi:'A',uma:'A',ki:'A'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'カード画像(Lv0・No.1217・Cost5)で初期値・成長率・指揮兵士数(4810)を確認済み。' },
   { name:'長野業正', no:'1248', cost: 5.0, initialSkill:'斑将閃牙', lv0Troops:4930, atkBase:1200, atkGrowth:65, defBase:1090, defGrowth:49, tacticsBase:670, tacticsGrowth:3.0, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'カード画像(Lv0・No.1248・Cost5)で初期値・成長率・指揮兵士数(4930)を確認済み。固有スキル「斑将閃牙」は数値効果を持たず二重卓越のみ付与するスキル(specialSkills参照、自動反映対応)' },
   { name:'緋村抜刀斎', no:'2601', cost: 4, rankGrades:{yari:'SS',yumi:'B',uma:'A',ki:'A'}, initialSkill:'龍槌閃・惨', jobClassTroopsPenalty: 600, lv0Troops:4830, atkBase:2030, atkGrowth:156, defBase:1800, defGrowth:130, tacticsBase:510, tacticsGrowth:2.5, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'カード画像(Lv0・No.2601・極・Cost4)で初期値・成長率・指揮兵士数(4830)を確認済み。固有スキル「龍槌閃・惨」は卓越でのみ発動する特殊タイプ(specialSkills参照、自動反映対応)。職業「剣」(左上アイコンが水色背景)持ちのため、限界突破以降の指揮兵士数が通常武将より600少ない(jobClassTroopsPenalty、自動反映対応) カード画像で統率(槍SS/弓B/馬A/器A)を拡大確認(2026-08-11)。武将DBページ(characters-kyoku.html)登録済み。るろうに剣心コラボ。初期スキルはS(龍槌閃・惨・卓越依存発動・スキル個別ページ未作成、docsのTODO参照)。' },
@@ -3783,13 +3783,13 @@ const generalGrowthDB = [
 
   // ---- 2026-08-07 赤丸化にあわせて一括登録 ----
   { name:'今川義元', no:'1203', cost: 5, initialSkill:'赤凰幻舞', lv0Troops:4670, atkBase:1280, atkGrowth:75, defBase:1240, defGrowth:50, tacticsBase:750.0, tacticsGrowth:3.5, rankGrades:{yari:'S', yumi:'S', uma:'A', ki:'S'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'characters.html No.1203 の登録値から転記(2026-08-07に赤丸化した武将を一括登録)。固有スキル「赤凰幻舞」の挙動(specialSkills)は未実装。' },
-  { name:'長尾景虎(1206)', no:'1206', cost: 4.5, initialSkill:'氷神懸龍', lv0Troops:4680, atkBase:1170, atkGrowth:59, defBase:1060, defGrowth:34, tacticsBase:640.0, tacticsGrowth:3.0, rankGrades:{yari:'SS', yumi:'A', uma:'A', ki:'A'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'characters.html No.1206 の登録値から転記(2026-08-07に赤丸化した武将を一括登録)。固有スキル「氷神懸龍」の挙動(specialSkills)は未実装。' },
+  { name:'長尾景虎（2）', no:'1206', cost: 4.5, initialSkill:'氷神懸龍', lv0Troops:4680, atkBase:1170, atkGrowth:59, defBase:1060, defGrowth:34, tacticsBase:640.0, tacticsGrowth:3.0, rankGrades:{yari:'SS', yumi:'A', uma:'A', ki:'A'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'characters.html No.1206 の登録値から転記(2026-08-07に赤丸化した武将を一括登録)。固有スキル「氷神懸龍」の挙動(specialSkills)は未実装。' },
   { name:'松平元康', no:'1207', cost: 4.5, initialSkill:'四界偃武', lv0Troops:4670, atkBase:1150, atkGrowth:58, defBase:1050, defGrowth:33, tacticsBase:640.0, tacticsGrowth:3.5, rankGrades:{yari:'A', yumi:'S', uma:'S', ki:'A'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'characters.html No.1207 の登録値から転記(2026-08-07に赤丸化した武将を一括登録)。固有スキル「四界偃武」の挙動(specialSkills)は未実装。' },
   { name:'大友宗麟', no:'1210', cost: 4.0, initialSkill:'無鹿ノ幻律', lv0Troops:4370, atkBase:1070, atkGrowth:39, defBase:1160, defGrowth:60, tacticsBase:650.0, tacticsGrowth:3.0, rankGrades:{yari:'S', yumi:'A', uma:'S', ki:'A'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'characters.html No.1210 の登録値から転記(2026-08-07に赤丸化した武将を一括登録)。固有スキル「無鹿ノ幻律」の挙動(specialSkills)は未実装。' },
   { name:'森蘭丸', no:'1211', cost: 4, initialSkill:'天奏幻武', lv0Troops:4380, atkBase:1160, atkGrowth:60, defBase:1070, defGrowth:35, tacticsBase:640.0, tacticsGrowth:3.0, rankGrades:{yari:'S', yumi:'S', uma:'A', ki:'A'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'characters.html No.1211 の登録値から転記(2026-08-07に赤丸化した武将を一括登録)。固有スキル「天奏幻武」の挙動(specialSkills)は未実装。' },
   { name:'黒田官兵衛【覇】', no:'1214', cost: 5.0, initialSkill:'鼎不死巴', isHa:true, lv0Troops:4700, atkBase:1250, atkGrowth:70, defBase:1250, defGrowth:70, tacticsBase:820.0, tacticsGrowth:4.0, rankGrades:{yari:'S', yumi:'S', uma:'S', ki:'A'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'characters.html No.1214 の登録値から転記(2026-08-07に赤丸化した武将を一括登録)。固有スキル「鼎不死巴」の挙動(specialSkills)は未実装。' },
   { name:'真田昌幸', no:'1218', cost: 2.0, initialSkill:'六冥緋侠ノ神謀', lv0Troops:3500, atkBase:1170, atkGrowth:57, defBase:1080, defGrowth:35, tacticsBase:650.0, tacticsGrowth:3.0, rankGrades:{yari:'S', yumi:'S', uma:'A', ki:'A'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'characters.html No.1218 の登録値から転記(2026-08-07に赤丸化した武将を一括登録)。固有スキル「六冥緋侠ノ神謀」の挙動(specialSkills)は未実装。' },
-  { name:'島津義久(1219)', no:'1219', cost: 4, initialSkill:'破邪轟砲', lv0Troops:4500, atkBase:1160, atkGrowth:57, defBase:1160, defGrowth:57, tacticsBase:660.0, tacticsGrowth:3.0, rankGrades:{yari:'A', yumi:'A', uma:'A', ki:'SS'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'characters.html No.1219 の登録値から転記(2026-08-07に赤丸化した武将を一括登録)。固有スキル「破邪轟砲」の挙動(specialSkills)は未実装。' },
+  { name:'島津義久（6）', no:'1219', cost: 4, initialSkill:'破邪轟砲', lv0Troops:4500, atkBase:1160, atkGrowth:57, defBase:1160, defGrowth:57, tacticsBase:660.0, tacticsGrowth:3.0, rankGrades:{yari:'A', yumi:'A', uma:'A', ki:'SS'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'characters.html No.1219 の登録値から転記(2026-08-07に赤丸化した武将を一括登録)。固有スキル「破邪轟砲」の挙動(specialSkills)は未実装。' },
   { name:'伊達成実', no:'2336', cost: 4, initialSkill:'青葉ノ仁王', lv0Troops:3900, atkBase:1100, atkGrowth:42, defBase:1050, defGrowth:34, tacticsBase:510.0, tacticsGrowth:2.5, rankGrades:{yari:'S', yumi:'B', uma:'A', ki:'A'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'characters-kyoku.html No.2336 の登録値から転記(2026-08-07に赤丸化した武将を一括登録)。固有スキル「青葉ノ仁王」の挙動(specialSkills)は未実装。' },
   { name:'三好義賢', no:'2368', cost: 4, initialSkill:'悌王ノ指揮', lv0Troops:3960, atkBase:1120, atkGrowth:46, defBase:1040, defGrowth:32, tacticsBase:520.0, tacticsGrowth:2.5, rankGrades:{yari:'A', yumi:'B', uma:'S', ki:'A'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'characters-kyoku.html No.2368 の登録値から転記(2026-08-07に赤丸化した武将を一括登録)。固有スキル「悌王ノ指揮」の挙動(specialSkills)は未実装。' },
   { name:'北条綱成', no:'2374', cost: 4.5, initialSkill:'勝旗勇躍', lv0Troops:4280, atkBase:1100, atkGrowth:43, defBase:1100, defGrowth:43, tacticsBase:510.0, tacticsGrowth:2.5, rankGrades:{yari:'B', yumi:'A', uma:'S', ki:'A'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'characters-kyoku.html No.2374 の登録値から転記(2026-08-07に赤丸化した武将を一括登録)。固有スキル「勝旗勇躍」の挙動(specialSkills)は未実装。' },
