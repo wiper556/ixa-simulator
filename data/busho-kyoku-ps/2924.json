@@ -1,0 +1,106 @@
+{
+ "name": "明智光秀",
+ "no": "2924",
+ "ch": "未確認",
+ "cost": 3.5,
+ "troop": "馬砲防",
+ "sub": "",
+ "effect": "防御 43%上昇",
+ "furigana": "あけちみつひで",
+ "illustrator": "正子公也",
+ "imageFull": "assets/img/characters/no2924_full.png",
+ "imageChar": "assets/img/characters/no2924_char.png",
+ "atkBase": 900,
+ "atkGrowth": 20.0,
+ "defBase": 900,
+ "defGrowth": 20.0,
+ "tacticsBase": 520.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3400,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "B",
+  "uma": "S",
+  "ki": "S"
+ },
+ "initialSkill": "天下静謐",
+ "skillDetail": "B/LV10 確率 18% 防御 43%上昇/対象:馬砲\n①防御が43%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "馬砲　確率 18% / 防御 43%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "砲撃の真髄",
+   "rank": "E",
+   "afterSkill": "釣瓶撃ち",
+   "afterRank": "D",
+   "target": "砲",
+   "rate": "20%",
+   "effectShort": "攻撃 15%上昇",
+   "afterTarget": "砲器",
+   "afterRate": "25%",
+   "afterEffectShort": "防御 25%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "三段撃ち",
+   "rank": "D",
+   "afterSkill": "三段撃 烈火",
+   "afterRank": "C",
+   "target": "弓砲",
+   "rate": "20%",
+   "effectShort": "攻撃 20%上昇",
+   "afterTarget": "槍砲",
+   "afterRate": "15%",
+   "afterEffectShort": "攻撃 (コストx9) %上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "鉄砲術明光",
+   "rank": "B",
+   "afterSkill": "砲撃 羅刹",
+   "afterRank": "B",
+   "target": "弓砲",
+   "rate": "32%",
+   "effectShort": "攻撃 23%上昇",
+   "afterTarget": "砲",
+   "afterRate": "25%",
+   "afterEffectShort": "攻撃 25%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "天戒 五芒星",
+   "rank": "S",
+   "afterSkill": "武神八幡陣",
+   "afterRank": "SS",
+   "target": "馬砲",
+   "rate": "35%",
+   "effectShort": "攻撃 40%上昇",
+   "afterTarget": "全",
+   "afterRate": "60%",
+   "afterEffectShort": "防御NULL%上昇 (部隊の総コストで効果が変化します)"
+  },
+  {
+   "slot": "S2",
+   "skill": "天衣無縫陣",
+   "rank": "SS",
+   "afterSkill": "天衣無縫陣",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "55%",
+   "effectShort": "防御 (20+コスト×10) %上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/2924 と skills/天下静謐)およびixawiki(BushoCard/2924明智光秀)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}
