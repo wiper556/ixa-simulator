@@ -39,3 +39,4 @@
 2026-08-14	-1	hooks:tools/gate_selftest.py	W-13の自己テストケース(W-13c)の注入内容を、錠前の値を動かさない形に直した
 2026-08-14	-7	entry_counts:characters-kyoku.html 121→53,hooks:tools/audit_characters.py,hooks:tools/build_data.py,hooks:tools/extract_data.py,hooks:tools/gen_detail_pages.py,hooks:tools/lock.py,hooks:tools/prerender.py	極を通常極(53体)とプラチナ・シークレット(68体)の2ページに分けた。characters-kyoku.htmlの121→53は分割で、characters-kyoku-ps.htmlに68体が移っている(合計121で不変)。道具6本は分割への追従
 2026-08-14	-1	hooks:tools/audit_selftest.py	極の分割で2614がbusho-kyoku-psへ移ったので、監査の自己テストの注入先パスを追従させた(CIがFileNotFoundErrorで落ちていた)
+2026-08-14	-1	hooks:tools/build_data.py	build_data.py に generalChapters(章データ)の生成を追加。data/busho*/ の ch を assets/js/ixa-data.js へ書き出すだけで、既存の検査ロジック・出力は一切変えていない(build_data.py --dry-run で他5ページは変化なしを確認済み)

@@ -854,7 +854,7 @@
   // 【必須】attack-simulator.html を変更したコミットでは、必ずこの定数も一緒に更新すること。
   // 表示文言の変更・CSSの微調整であっても対象(ユーザーがスクショで版を判別できなくなるため)。
   // 更新忘れが繰り返し発生しているので、編集したらコミット前にここを見に来る。
-  const SIMULATOR_VERSION = 'v2026-08-14.8';
+  const SIMULATOR_VERSION = 'v2026-08-14.9';
   document.addEventListener('DOMContentLoaded', ()=>{
     const badge = document.getElementById('simVersionBadge');
     if(badge) badge.textContent = SIMULATOR_VERSION;
@@ -1274,13 +1274,42 @@
 
   // 4列×4スキル枠を走査し、variableFormulaを持つスキル名が入力されていれば、
   // 対応するスキル発動率・上昇効果欄(fx1〜4)に自動で発動率・上昇%をセットする
+  // その枠に入っているスキルが模倣スキルなら、模倣元のスキルを返す(無ければ null)。
+  // 模倣元の決め方は applyMimicrySkills と同じ: 自模倣は自分の列、部隊長模倣は列0の初期スキル。
+  // 模倣元スキル名は最長一致で選ぶ(「〜ノ采配」のように短い名前が別スキルに含まれるため)。
+  function findMimicSourceSkill(col, fk){
+    const text = (sheetData[col] && sheetData[col][fk]) || '';
+    if(!text) return null;
+    for(const skName of Object.keys(specialSkills)){
+      if(!text.includes(skName)) continue;
+      const mimicSk = specialSkills[skName];
+      if(!mimicSk.mimicsSquadLeaderInitialSkill && !mimicSk.mimicsOwnInitialSkill) continue;
+      const sourceText = mimicSk.mimicsOwnInitialSkill
+        ? ((sheetData[col] && sheetData[col]['skillInit']) || '')
+        : ((sheetData[0] && sheetData[0]['skillInit']) || '');
+      if(!sourceText) return null;
+      let best = null;
+      Object.keys(specialSkills).forEach(srcName=>{
+        if(sourceText.includes(srcName) && (!best || srcName.length > best.length)) best = srcName;
+      });
+      return best ? specialSkills[best] : null;
+    }
+    return null;
+  }
+
   // 指定列(col)・指定スキル枠(fk)のスキルが「無尽」を持つかどうか判定する(hasMujin または mujinValue)。
+  // 模倣スキルの枠は、模倣元が無尽を持つならその枠も無尽として扱う(ユーザー指摘 2026-08-14)。
+  // 例: 部隊長が義戦ノ旗手のとき、神屋楯比売命が無尽持ちの豊恩銘魂を模倣したコピーも
+  //     「無尽を持つスキルの防御効果を2倍」の対象になる。
   function slotHasMujin(col, fk){
     const text = (sheetData[col] && sheetData[col][fk]) || '';
     if(!text) return false;
-    return Object.keys(specialSkills).some(skName =>
+    const direct = Object.keys(specialSkills).some(skName =>
       text.includes(skName) && (specialSkills[skName].hasMujin || specialSkills[skName].mujinValue)
     );
+    if(direct) return true;
+    const src = findMimicSourceSkill(col, fk);
+    return !!(src && (src.hasMujin || src.mujinValue));
   }
 
   // 16スキル(4武将×4スキル枠)それぞれの無尽有無を常時計算し、window.mujinMapに保持する。
@@ -4843,7 +4872,50 @@
      武将データベース(generals)と武将成長データベース(generalGrowthDB)の両方から
      候補を集め、同名武将が複数存在する場合に備えてカードNo.を必ず併記する。
      1文字以上入力した時点で、名前が部分一致する候補だけを表示する。
+
+     並べ順は 1.レアリティ(傑→天→極→特) 2.章の新しい順 3.カードNo.の大きい順。
+     以前は generalGrowthDB に書いてある順(ほぼ登録した順)でそのまま出していた。
   ============================================ */
+  // レアリティはカードNo.から決まる。1000の位ではなく桁数と頭で見る
+  // (2xxxが埋まったあと7xxxも極に割り振られた、パラレルは元番号+30000、という経緯があるため)。
+  const RARITY_ORDER = { '傑':0, '天':1, '極':2, '特':3, '不明':4 };
+  function generalRarity(no){
+    const n = String(no || '');
+    if(!/^\d{3,6}$/.test(n)) return '不明';
+    if(n.length === 5 && (n.startsWith('20') || n.startsWith('21') || n.startsWith('22'))) return '傑';
+    if(n.length === 4 && n[0] === '3') return '特';
+    if(n.length === 4 && (n[0] === '2' || n[0] === '7')) return '極';
+    return '天';   // 1xxx / 10xxx(コラボ) / 31xxx・40xxx(パラレル天)
+  }
+
+  // 章は generalChapters(正本 data/busho*/ から生成)を引く。分からなければ null。
+  function generalChapterOf(no){
+    const n = String(no || '');
+    if(typeof generalChapters === 'undefined') return null;
+    if(generalChapters[n] !== undefined) return generalChapters[n];
+    // パラレルカードは「元番号+30000」。元カードの章をそのまま使う
+    if(n.length === 5 && (n[0] === '3' || n[0] === '4')){
+      const orig = String(parseInt(n, 10) - 30000);
+      if(generalChapters[orig] !== undefined) return generalChapters[orig];
+    }
+    return null;
+  }
+
+  function compareGeneralSuggestions(a, b){
+    const ra = RARITY_ORDER[generalRarity(a.no)], rb = RARITY_ORDER[generalRarity(b.no)];
+    if(ra !== rb) return ra - rb;
+    const ca = generalChapterOf(a.no), cb = generalChapterOf(b.no);
+    if(ca !== cb){
+      // 章がまだ分かっていない武将は、そのレアリティの中で後ろに回す
+      if(ca === null) return 1;
+      if(cb === null) return -1;
+      return cb - ca;   // 章は新しい順
+    }
+    const na = parseInt(a.no, 10) || 0, nb = parseInt(b.no, 10) || 0;
+    if(na !== nb) return nb - na;   // カードNo.の大きい順
+    return a.name.localeCompare(b.name, 'ja');
+  }
+
   let generalSuggestions = [];
   function buildGeneralSuggestionList(){
     const seen = new Set();
@@ -4857,6 +4929,7 @@
     };
     generalGrowthDB.forEach(g => addOption(g.name, g.no));
     generals.forEach(g => addOption(g.name, g.no));
+    list.sort(compareGeneralSuggestions);
     generalSuggestions = list;
   }
   buildGeneralSuggestionList();
