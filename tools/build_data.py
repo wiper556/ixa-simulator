@@ -288,6 +288,73 @@ def replace_array(text, array, outdir, keyfld):
     return old_head + "\n".join(mid) + "\n" + old_tail, len(entries)
 
 
+# ============ シミュレーターの武将並べ替え用の章データ ============
+# attack-simulator.html の武将候補は「レアリティ → 章の新しい順 → カードNo.の大きい順」で
+# 並べる。章は data/busho*/{No}.json の ch にしかないので、ここから
+# assets/js/ixa-data.js の generalChapters に書き出す。
+#
+# **手で書かないこと。** 章を1件でも更新したら build_data.py を回せば追従する。
+# 回し忘れは check_generated.py(pre-push と CI)が止める。
+CHAPTERS_FILE = "assets/js/ixa-data.js"
+CHAPTERS_BEGIN = ("// BUILD:generalChapters:start ここから下は tools/build_data.py が "
+                  "data/busho*/ から生成しています。直接編集しないこと")
+CHAPTERS_END = "// BUILD:generalChapters:end"
+CHAPTER_DIRS = ("data/busho", "data/busho-kyoku", "data/busho-kyoku-ps", "data/busho-ketsu")
+
+
+def collect_chapters():
+    """カードNo. → 章番号。「未確認」や章の無い武将は入れない。"""
+    out = {}
+    for d in CHAPTER_DIRS:
+        full = os.path.join(ROOT, d)
+        if not os.path.isdir(full):
+            continue
+        for fn in os.listdir(full):
+            if not fn.endswith(".json"):
+                continue
+            with io.open(os.path.join(full, fn), encoding="utf-8") as f:
+                e = json.load(f)
+            m = re.match(r"^(\d+)章$", str(e.get("ch") or ""))
+            if m and e.get("no") is not None:
+                out[str(e["no"])] = int(m.group(1))
+    return out
+
+
+def build_chapters_block(chapters):
+    lines = [CHAPTERS_BEGIN, "const generalChapters = {"]
+    row = "  "
+    for no in sorted(chapters, key=lambda k: (len(k), k)):
+        piece = '"%s":%d, ' % (no, chapters[no])
+        if len(row) + len(piece) > WRAP:
+            lines.append(row.rstrip())
+            row = "  "
+        row += piece
+    if row.strip():
+        lines.append(row.rstrip().rstrip(","))
+    lines.append("};")
+    lines.append(CHAPTERS_END)
+    return "\n".join(lines)
+
+
+def replace_chapters(dry=False):
+    p = os.path.join(ROOT, CHAPTERS_FILE)
+    text = io.open(p, encoding="utf-8", newline="").read()
+    lo = text.find(CHAPTERS_BEGIN)
+    hi = text.find(CHAPTERS_END)
+    if lo < 0 or hi < 0:
+        print("  %-24s [停止] BUILD:generalChapters のマーカーが無い" % CHAPTERS_FILE)
+        return 1
+    chapters = collect_chapters()
+    new = text[:lo] + build_chapters_block(chapters) + text[hi + len(CHAPTERS_END):]
+    same = new == text
+    print("  %-24s %3d件 %s" % (CHAPTERS_FILE, len(chapters),
+                                "変化なし" if same else "書き換え"))
+    if not same and not dry:
+        io.open(p, "w", encoding="utf-8", newline="").write(new)
+        return 1
+    return 0
+
+
 def main(dry=False):
     changed = 0
     for page, array, outdir, keyfld in TARGETS:
@@ -304,6 +371,7 @@ def main(dry=False):
         if not same and not dry:
             io.open(p, "w", encoding="utf-8", newline="").write(new)
             changed += 1
+    changed += replace_chapters(dry)
     print("書き換えたページ %d件%s" % (changed, "(--dry-run)" if dry else ""))
 
 
