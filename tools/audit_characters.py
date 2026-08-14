@@ -502,14 +502,26 @@ def main():
             % (nm, len(where), "/".join(sorted(where)[:4])))
 
     # S-07: sourceCharacters の db 指定ミス(極なのに characters.html を指す等)
-    for page, src in [("skills.html", None)] + [(n, t) for n, t in D["listPages"].items()]:
-        text = src if src is not None else None
-        if text is None:
-            with io.open(os.path.join(ROOT, "skills.html"), encoding="utf-8") as f:
-                text = f.read()
+    def db_want(no):
+        return "kyoku" if no in kyoku_no else ("ketsu" if no in ketsu_no else None)
+
+    # 2026-08-14: ここは skills.html の**本文**を正規表現で読んでいた。
+    # 配列が data/skill/ からの生成物になったので、判定は正本の側で行う。
+    # (本文を読んだままだと、正本を直しても生成するまで鳴らない)
+    for s in D["skills"]:
+        for row in s.get("sourceCharacters") or []:
+            no = str(row.get("no") or "")
+            want, got = db_want(no), row.get("db")
+            if got != want:
+                add("sourceCharactersのdb", "HIGH",
+                    "data/skill/%s.json: %s No.%s の db が %s(正しくは %s)"
+                    % (s.get("name"), row.get("name"), no,
+                       got or "無し", want or "無し(通常DB)"))
+    # 一覧ページ(skills-*.html)は sourceCharacters を独自に複製しているので、本文を見る
+    for page, text in D["listPages"].items():
         for m in re.finditer(r'\{name:"([^"]*)", no:"(\d+)"([^{}]*)\}', text):
             no, rest = m.group(2), m.group(3)
-            want = "kyoku" if no in kyoku_no else ("ketsu" if no in ketsu_no else None)
+            want = db_want(no)
             got = re.search(r'db:"([^"]*)"', rest)
             got = got.group(1) if got else None
             if got != want:
