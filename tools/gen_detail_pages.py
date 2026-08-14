@@ -240,12 +240,23 @@ def main(HOST):
             # 一覧の配列には鍛錬表が無いので、正本の全データを積んでおく。
             if var == 'skills':
                 pg.evaluate('(all)=>{ window.__sklAllSkills = all; }', data)
+                # 「初期スキルとして持つ武将」欄は characters*.html を fetch してから
+                # 描かれる。ここで一度取っておくと以降はキャッシュから即返るので、
+                # 描画のあと1tick待つだけで中身が入る。
+                pg.evaluate('async ()=>{ await sklGetCharacterSources(); }')
 
             for e in data:
                 # 描画関数だけをページから借りて、値は正本(data/)から渡す。
                 # 関数名は const 宣言でwindowに乗らないので、JSソースに直接書く。
+                # 2026-08-15: ここは同期で innerHTML を読んでいたため、非同期で
+                # 描かれる「初期スキルとして持つ武将」欄が**346ページ全部で
+                # display:none のまま**出ていた。解決を待ってから読む。
                 detail = pg.evaluate(
-                    '(g)=>{ %s(g); const el=document.getElementById("%s");'
+                    'async (g)=>{ %s(g);'
+                    ' if(typeof sklGetCharacterSources === "function"){'
+                    '   await sklGetCharacterSources();'
+                    '   await new Promise(function(r){ setTimeout(r, 0); }); }'
+                    ' const el=document.getElementById("%s");'
                     ' return el ? el.innerHTML : null; }' % (fn, cid), e)
                 if not detail:
                     print('  ! 描画できない:', e.get('name')); continue
