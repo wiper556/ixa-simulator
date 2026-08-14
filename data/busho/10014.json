@@ -1,0 +1,98 @@
+{
+ "name": "毛利元就-復刻-【覇】",
+ "no": "10014",
+ "ch": "未確認",
+ "cost": 5,
+ "troop": "全防",
+ "sub": "",
+ "effect": "対象兵科指揮時、部隊総防御力+24%",
+ "furigana": "もうりもとなり",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no10014_full.png",
+ "imageChar": "assets/img/characters/no10014_char.png",
+ "atkBase": 1180,
+ "atkGrowth": 42,
+ "defBase": 1240,
+ "defGrowth": 70,
+ "tacticsBase": 730,
+ "tacticsGrowth": 3.5,
+ "lv0Troops": 4650,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "SS",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "覇謀海霊",
+ "skillDetail": "S/LV10 確率 60% 総防御力24%上昇/対象:全\n模倣不可\n①対象兵科を指揮した戦闘時部隊総防御力が24%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 60% / 部隊総防御力 24%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "布都御魂ノ鬨",
+   "rank": "SS",
+   "afterSkill": "布都御魂ノ鬨",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "35%",
+   "effectShort": "攻撃 40%上昇+防御 40%上昇(部隊内レアリティS以上のスキル個数×20%加算)"
+  },
+  {
+   "slot": "B",
+   "skill": "茅纒之矟ノ煌",
+   "rank": "SS",
+   "afterSkill": "茅纒之矟ノ煌",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "60%",
+   "effectShort": "防御100%上昇 自部隊の武将ダメージ軽減3% (重複発動上限数4)"
+  },
+  {
+   "slot": "C",
+   "skill": "氷瀑ノ封神",
+   "rank": "SSS",
+   "afterSkill": "氷瀑ノ封神",
+   "afterRank": "SSS",
+   "target": "全",
+   "rate": "30%",
+   "effectShort": "防御200%上昇 攻撃部隊の武将が持つ特殊効果付き初期スキルを全て無効化(模倣不可)"
+  },
+  {
+   "slot": "S1",
+   "skill": "天奏聖譚曲",
+   "rank": "SS",
+   "afterSkill": "天奏聖譚曲",
+   "afterRank": "SS",
+   "target": "砲・器",
+   "rate": "70%",
+   "effectShort": "防御 2.5%×防御参加武将数(280人)=700.0%"
+  },
+  {
+   "slot": "S2",
+   "skill": "星宿劫ノ法壁",
+   "rank": "SS",
+   "afterSkill": "星宿劫ノ法壁",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "49%",
+   "effectShort": "防御 120%上昇(第参列目以降配置時3倍)"
+  }
+ ],
+ "notes": [
+  "カード画像(スキルLV1形式)で武将名・統率バッジ・スキル名・初期値・職業「覇」・カードNo.を確認(B-00の6項目)。",
+  "Cost5・指揮4650(★0-0)・成長値+42/+70/+3.5・絵師・LV10効果はixanary.com(cards/10014)。",
+  "統率は槍A/弓SS/馬A/器S。カード画像のバッジとixawiki(BushoCard/10014毛利元就)のカードページが一致。ixawikiの武将カード一覧(天)では列の並びが弓と馬で入れ替わって見えるため、カードページ側を採った(D-01)。",
+  "覇謀海霊はTRが無く、LV1(確率30%/総防御10%)とLV10(確率60%/総防御24%)の2段のみ。ixanary(skills/覇謀海霊)・ixawikiとも同じ。",
+  "覇謀海霊は合成不可スキル(ixanaryの合成素材欄に「合成不可スキルです」)。そのためS1枠は自分自身ではなく天奏聖譚曲になる(S-13の裏取りは適用外)。",
+  "合成テーブルは1次・2次・3次が全枠同じ。移植前後で変化しないためafter*は付けていない(S-09)。",
+  "表記はixawikiの武将カード一覧(天)の「毛利元就(覇RE)」をF-0で変換して 毛利元就-復刻-【覇】 とした。同じくREのNo.10026は一覧では「毛利元就(RE)」で、こちらは別表記になる。",
+  "章は情報源に記載が無いため未確認。"
+ ],
+ "reviewedOk": true
+}

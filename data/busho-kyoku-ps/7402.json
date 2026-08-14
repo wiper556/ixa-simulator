@@ -1,0 +1,123 @@
+{
+ "name": "蜂須賀家政",
+ "no": "7402",
+ "ch": "未確認",
+ "cost": 4.5,
+ "troop": "全防",
+ "sub": "無尽",
+ "effect": "防御参加武将数に比例して防御上昇",
+ "furigana": "はちすかいえまさ",
+ "illustrator": "正子公也",
+ "imageFull": "assets/img/characters/no7402_full.png",
+ "imageChar": "assets/img/characters/no7402_char.png",
+ "atkBase": 1080,
+ "atkGrowth": 54,
+ "defBase": 1240,
+ "defGrowth": 65,
+ "tacticsBase": 520,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 4600,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "豊恩銘魂",
+ "skillDetail": "S/LV10 確率 40% 防御(8×防御参加武将数)%上昇/対象:全　無尽\n①防御が(8×防御参加武将数)%上昇する\n②無尽を持つため部隊消費コストを-0.5する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全 無尽　確率 40% / 防御 8%×防御参加武将数(280人)=2240.0%"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": "全 無尽　確率 40% / 防御 8.3%×防御参加武将数(280人)=2324.0%"
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": "全 無尽　確率 40% / 防御 8.5%×防御参加武将数(280人)=2380.0%"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": "全 無尽　確率 40% / 防御 8.9%×防御参加武将数(280人)=2492.0%"
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": "全 無尽　確率 40% / 防御 9.3%×防御参加武将数(280人)=2604.0%"
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": "全 無尽　確率 40% / 防御 10%×防御参加武将数(280人)=2800.0%"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "仙境解脱",
+   "rank": "SS",
+   "afterSkill": "仙境解脱",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "48%",
+   "effectShort": "防御 910%上昇(コスト-1.5)"
+  },
+  {
+   "slot": "B",
+   "skill": "千里必勝ノ神算",
+   "rank": "SS",
+   "afterSkill": "千里必勝ノ神算",
+   "afterRank": "SS",
+   "target": "全 覇道",
+   "rate": "42%",
+   "effectShort": "攻撃1010%上昇+防御1010%上昇+破壊150%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "火槍猛進",
+   "rank": "S",
+   "afterSkill": "火槍猛進",
+   "afterRank": "S",
+   "target": "槍・弓・器・鉄",
+   "rate": "55%",
+   "effectShort": "防御 740%×2(部隊コスト10以下)=1480%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "豊恩銘魂",
+   "rank": "S",
+   "afterSkill": "豊恩銘魂",
+   "afterRank": "S",
+   "target": "全 無尽",
+   "rate": "40%",
+   "effectShort": "防御 8%×防御参加武将数(280人)=2240.0%"
+  },
+  {
+   "slot": "S2",
+   "skill": "龍驤虎躍",
+   "rank": "SS",
+   "afterSkill": "龍驤虎躍",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "60%",
+   "effectShort": "攻撃 810%上昇+防御810%上昇(コスト-1)"
+  }
+ ],
+ "notes": [
+  "カード画像(スキルLV1形式)で武将名・統率バッジ・スキル名・初期値・職業「将」・カードNo.を確認(B-00の6項目)。",
+  "コスト4.5・指揮4600(★0-0)・成長値+54/+65/+2.5・絵師はixanary.com(cards/7402)。",
+  "統率は槍S/弓A/馬A/器A。カード画像のバッジとixawiki(BushoCard/7402蜂須賀家政)が一致(D-01)。",
+  "指揮兵数はixanaryの★0-0=4600を採用。同表の極限突破6200は+0.5版(B-01)で、カード実物の極限突破は6000。calcTroopsForBreakthrough(4600)と一致する。",
+  "豊恩銘魂の係数(LV10=8/TR1=8.3/TR2=8.5/TR3=8.9/TR4=9.3/TR5=10)と合成テーブルはixanary.com(skills/豊恩銘魂)。TR6は情報源に無い。",
+  "合成テーブルは1次・2次・3次が全枠同じ。移植前後で変化しないためafter*は付けていない(S-09)。",
+  "表記はixawikiの武将カード一覧(極)に合わせて「蜂須賀家政」(（N）無し)。同名のNo.2302も一覧では（N）無しで載っている。",
+  "章は情報源に記載が無いため未確認。7403〜7405が31章だが、章はカード番号から外挿できない。"
+ ],
+ "reviewedOk": true
+}

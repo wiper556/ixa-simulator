@@ -1670,6 +1670,18 @@ const specialSkills = {
           '【2026年7月再修正】パラレル【天】版(No.31297)でTR6が解禁されたためixagno.blog.fc2.comで確認し追加登録。' +
           '【2026年7月三度目修正】ixanary.com生HTMLでTR1〜TR6の確率・係数の欠落分(TR1〜TR4の確率、TR4係数)を確認して補完。卓越のTR別追加確率もtakuetsuChanceTableとして新規対応した(エンジン側にTR別テーブル+0%下限クランプの仕組みを追加)。'
   },
+  '覇謀海霊': {
+    effectAxis: 'def', // 防御側(正本 data/skill/覇謀海霊.json の効果文より)
+    noMimic: true, // 「模倣不可」明記
+    activationType: 'triggered',
+    // 「対象兵科を指揮した戦闘時、部隊総防御力が24%上昇」。個々の武将の防御%上昇ではなく
+    // 部隊の総防御力に掛かる別枠なので totalDefBoostPct で持つ(蛇神幻計・怨龍烈牙と同じ)。
+    totalDefBoostPct: 24,
+    baseRate: 60, // 確率+60%(LV10)。LV1は+30%
+    note: 'S(防御・模倣不可・合成不可)。確率+60%/対象:全。対象兵科を指揮した戦闘時、部隊総防御力が24%上昇(模倣不可)。' +
+          'LV1は確率+30%・総防御10%上昇。TRは無く2段のみ(ixanary.com skills/覇謀海霊 と ixawiki BushoCard/10014毛利元就 で一致)。' +
+          '毛利元就-復刻-【覇】(No.10014)の固有スキル。合成不可スキルのため他武将の合成候補には出ない。'
+  },
   '豊恩銘魂': {
     effectAxis: 'def', // 防御側(正本 data/skill/豊恩銘魂.json の効果文より)
     // 【2026年7月再々検証】ixanary.comの「無尽スキルまとめ」記事で防御スキル枠の無尽スキルと確認、hasMujinフラグを復活。
@@ -4148,7 +4160,8 @@ const generalGrowthDB = [
   { name:'鈴木重朝', no:'3565', cost: 2, initialSkill:'砲神因子', lv0Troops:2390, atkBase:860, atkGrowth:26, defBase:890, defGrowth:31, tacticsBase:480, tacticsGrowth:2.0, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。職業「忍」。Cost2。固有スキル「防速:砲神因子」(C)。' },
   { name:'片倉小十郎', no:'7003', cost: 2.5, initialSkill:'覇業ノ楔', lv0Troops:3250, atkBase:1140, atkGrowth:46, defBase:1050, defGrowth:36, tacticsBase:530, tacticsGrowth:2.5, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。職業「将」。Cost0。固有スキル「特:覇業ノ楔」(A)。' },
   { name:'池田輝政', no:'7008', cost: 3.5, initialSkill:'西国将軍', lv0Troops:3790, atkBase:1140, atkGrowth:46, defBase:1050, defGrowth:36, tacticsBase:560, tacticsGrowth:2.5, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。職業「将」。Cost0。固有スキル「攻破:西国将軍」(A)。' },
-  { name:'蜂須賀家政(2)', no:'7402', cost: 4.5, initialSkill:'豊恩銘魂', lv0Troops:4600, atkBase:1080, atkGrowth:54, defBase:1240, defGrowth:65, tacticsBase:520, tacticsGrowth:2.5, rankGrades:{yari:'S',yumi:'A',uma:'A',ki:'A'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'防御振り', note:'カード画像(スキルLV1形式)とixanary.com(2026-08-10確認)で登録。極レアリティ・職業「将」(覇ではない)・Cost4.5。統率はカード画像のバッジで確認(槍S/弓A/馬A/器A)。初期値と成長値はixanaryの武将データ表。指揮兵数はixanaryの成長表の突破ランク別の値が+0.5版(指揮兵数+200)だったため使わず、★0-0の4600をlv0Troopsとして登録した(カード実物の極限突破6000と本ツールの計算式が一致することを確認済み)。固有スキル「防:豊恩銘魂」(S・無尽)はspecialSkills登録済み・自動反映対応。ixagno.blog.fc2.comでも成長値(攻54/防65/兵法2.5)が一致することを確認し2ソースで確定。正式名称は「蜂須賀家政(2)」(同名の別カードがNo.2302・No.3121にあるため)。2026年4月追加の限定武将。合成候補(synthesisTable)は未調査。' },
+  { name:'毛利元就-復刻-【覇】', no:'10014', cost: 5, initialSkill:'覇謀海霊', isHa:true, lv0Troops:4650, atkBase:1180, atkGrowth:42, defBase:1240, defGrowth:70, tacticsBase:730, tacticsGrowth:3.5, rankGrades:{yari:'A',yumi:'SS',uma:'A',ki:'S'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'防御振り', note:'カード画像(スキルLV1形式)とixanary.com(cards/10014)・ixawiki(BushoCard/10014毛利元就)で登録(2026-08-14)。天レアリティ・職業「覇」・Cost5。統率はカード画像のバッジで確認(槍A/弓SS/馬A/器S)。ixawikiのカードページも同値。武将カード一覧(天)では弓と馬の列が入れ替わって見えるためカードページ側を採った(D-01)。指揮兵数はixanaryの★0-0=4650。固有スキル「防:覇謀海霊」(S・模倣不可・合成不可)はTRが無くLV10のみで、部隊総防御力+24%(確率60%)。specialSkillsにtotalDefBoostPctとして登録済み・自動反映対応。表記はixawikiの武将カード一覧(天)の「毛利元就(覇RE)」をF-0で変換したもの。' },
+  { name:'蜂須賀家政', no:'7402', cost: 4.5, initialSkill:'豊恩銘魂', lv0Troops:4600, atkBase:1080, atkGrowth:54, defBase:1240, defGrowth:65, tacticsBase:520, tacticsGrowth:2.5, rankGrades:{yari:'S',yumi:'A',uma:'A',ki:'A'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'防御振り', note:'カード画像(スキルLV1形式)とixanary.com(2026-08-10確認)で登録。極レアリティ・職業「将」(覇ではない)・Cost4.5。統率はカード画像のバッジで確認(槍S/弓A/馬A/器A)。初期値と成長値はixanaryの武将データ表。指揮兵数はixanaryの成長表の突破ランク別の値が+0.5版(指揮兵数+200)だったため使わず、★0-0の4600をlv0Troopsとして登録した(カード実物の極限突破6000と本ツールの計算式が一致することを確認済み)。固有スキル「防:豊恩銘魂」(S・無尽)はspecialSkills登録済み・自動反映対応。ixagno.blog.fc2.comでも成長値(攻54/防65/兵法2.5)が一致することを確認し2ソースで確定。2026年4月追加の限定武将。【2026-08-14】ixawikiの武将カード一覧(極)では同名のNo.2302ともども(N)無しの「蜂須賀家政」で載っているため、以前付けていた(2)を外した(D-12)。合成候補(synthesisTable)もixanary.com(skills/豊恩銘魂)で確認して data/busho-kyoku-ps/7402.json に登録した。' },
   { name:'蒲生氏郷', no:'7403', cost: 4, initialSkill:'白銀双鶴', lv0Troops:4400, atkBase:1240, atkGrowth:65, defBase:1090, defGrowth:53, tacticsBase:560, tacticsGrowth:3.0, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。極レアリティ・職業「将」・Cost4。固有スキル「攻速:白銀双鶴」(S、specialSkills参照・自動反映対応)。既存の蒲生氏郷(2)(No.1265)とは別カード。' },
   { name:'るろうに剣心', no:'1741', cost: 193, initialSkill:'明治剣客浪漫譚', lv0Troops:19300, atkBase:193, atkGrowth:0, defBase:193, defGrowth:0, tacticsBase:193, tacticsGrowth:0, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。レアリティ「祝」・職業「将」・Cost193(記念/コラボ専用の特殊カード)。攻撃・防御・兵法・指揮兵数が全て193/19300で固定・成長値0(突破ランクによらず変化なし)。固有スキル「特:明治剣客浪漫譚」(S)。るろうに剣心コラボカード(瀬田宗次郎No.2604等と同系統)。' },
   { name:'京都動乱', no:'1753', cost: 193, initialSkill:'京都動乱', lv0Troops:19300, atkBase:193, atkGrowth:0, defBase:193, defGrowth:0, tacticsBase:193, tacticsGrowth:0, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。レアリティ「祝」・職業「将」・Cost193(記念/コラボ専用の特殊カード)。攻撃・防御・兵法・指揮兵数が全て193/19300で固定・成長値0(突破ランクによらず変化なし)。固有スキル「特:京都動乱」(S)。るろうに剣心コラボカード。' },
