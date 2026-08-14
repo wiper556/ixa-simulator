@@ -1,0 +1,103 @@
+{
+ "name": "ねね",
+ "no": "2946",
+ "ch": "未確認",
+ "cost": 3.0,
+ "troop": "弓馬砲器攻",
+ "sub": "",
+ "effect": "攻撃 54%上昇",
+ "furigana": "ねね",
+ "illustrator": "正子公也",
+ "imageFull": "assets/img/characters/no2946_full.png",
+ "imageChar": "assets/img/characters/no2946_char.png",
+ "atkBase": 1070,
+ "atkGrowth": 37.0,
+ "defBase": 1000,
+ "defGrowth": 30.0,
+ "tacticsBase": 510.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3260,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "王佐ノ才",
+ "skillDetail": "B/LV10 確率 40% 攻撃 54%上昇/対象:弓馬砲器\n①攻撃が54%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓馬砲器　確率 40% / 攻撃 54%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "突貫破城",
+   "rank": "D",
+   "afterSkill": "声遣縦横",
+   "afterRank": "D",
+   "target": "砲器",
+   "rate": "16%",
+   "effectShort": "攻撃 40%上昇",
+   "afterTarget": "槍馬砲",
+   "afterRate": "24%",
+   "afterEffectShort": "攻撃 38%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "覇王の寵姫",
+   "rank": "D",
+   "afterSkill": "覇王の寵姫",
+   "afterRank": "D",
+   "target": "弓器",
+   "rate": "28%",
+   "effectShort": "攻撃 41%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "御母の神意",
+   "rank": "B",
+   "afterSkill": "御母の神意",
+   "afterRank": "B",
+   "target": "槍弓砲",
+   "rate": "8%",
+   "effectShort": "攻撃 50%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "覇国無双",
+   "rank": "S",
+   "afterSkill": "天穿神滅",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "35%",
+   "effectShort": "攻撃 40%上昇",
+   "afterTarget": "砲器",
+   "afterRate": "50%",
+   "afterEffectShort": "攻撃((ランク+1)xコストx3) %上昇 部隊ランクとコストで効果が変化"
+  },
+  {
+   "slot": "S2",
+   "skill": "赤鳥ノ舞",
+   "rank": "A",
+   "afterSkill": "波瀾ノ夕立",
+   "afterRank": "B",
+   "target": "槍弓馬器",
+   "rate": "37%",
+   "effectShort": "攻撃 90%上昇",
+   "afterTarget": "槍砲器",
+   "afterRate": "36%",
+   "afterEffectShort": "防御 43%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/2946 と skills/王佐ノ才)およびixawiki(BushoCard/2946ねね)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}
