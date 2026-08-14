@@ -64,6 +64,23 @@ REQUIRED = ("docs/RULES.md", "docs/RULE-VIOLATIONS.md", "docs/RULE-OPERATION.md"
 # 「作業」= サイトに出るもの。これ以外はルール・道具の側(W-13)。
 NOT_WORK = ("docs/", "tools/", ".github/", ".claude/", ".gitignore", "README")
 
+# W-13 で「ルール文書」とみなすもの。
+#
+# 2026-08-14: ここは**フックとCIで別々に書かれていて、範囲が違った**。
+#   フック  docs/RULE… で始まるものだけ
+#   CI      docs/ 全部
+# そのため docs/synthesis-gaps-2026-08-14.md(作業メモ)を作業と同じコミットに
+# 入れたとき、フックは通してCIが止めた。**関所はCIのほう**なので、
+# 通ってしまう側に合わせるのではなく、CIと同じ広さに揃える。
+# 定義を1つにして、二度と食い違わないようにする。
+RULE_DOC_PREFIX = ("docs/", ".claude/agents/", ".github/workflows/")
+RULE_DOC_FILES = (".claude/settings.json", "tools/checks.lock")
+
+
+def rule_docs_in(files):
+    return [f for f in files
+            if f.startswith(RULE_DOC_PREFIX) or f in RULE_DOC_FILES]
+
 
 def run(cmd, cwd=ROOT, env=None):
     e = None
@@ -493,9 +510,7 @@ def check_range(rng):
         bad = []
 
         # W-13: ルール文書の変更と、サイトに出るものの変更を同じコミットに混ぜない
-        rule_docs = [f for f in files
-                     if f.startswith(("docs/", ".claude/agents/", ".github/workflows/"))
-                     or f in (".claude/settings.json", "tools/checks.lock")]
+        rule_docs = rule_docs_in(files)
         work = [f for f in files if not f.startswith(NOT_WORK)]
         if rule_docs and work:
             bad.append("W-13 ルール文書(%s)と作業(%s)が同じコミット"
@@ -823,12 +838,12 @@ def main():
     # `docs/rollback-floor.txt`(巻き戻しの下限)と `.claude/agents/*.md`(エージェント定義)は
     # 「ルール文書」にも「作業」にも入らず、データ更新コミットに同梱できた。
     # 下限を「いまここまで確認した」に書き換える操作が、作業に紛れ込ませられた。
-    rule_docs = [f for f in staged
-                 if f.startswith(("docs/RULE", "docs/rollback-floor",
-                                  ".claude/agents/", ".github/workflows/"))
-                 or f in ("docs/character-registration-manual.md",
-                          ".claude/settings.json", "tools/checks.lock")]
-    # NOT_WORK はモジュール定数(check_range と共有する)
+    #
+    # 2026-08-14: それでも `docs/` の**それ以外**は抜けていた。CI側は docs/ 全部を
+    # ルール文書として見ていたので、フックは通すのにCIが止める、という食い違いが
+    # 実際に起きた(docs/synthesis-gaps-2026-08-14.md)。判定は rule_docs_in() に
+    # 一本化してある。NOT_WORK も含め、定数は check_range と共有する。
+    rule_docs = rule_docs_in(staged)
     work = [f for f in staged if not f.startswith(NOT_WORK)]
     if rule_docs and work:
         ng = True
