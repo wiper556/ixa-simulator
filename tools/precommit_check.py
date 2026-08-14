@@ -73,8 +73,22 @@ NOT_WORK = ("docs/", "tools/", ".github/", ".claude/", ".gitignore", "README")
 # 入れたとき、フックは通してCIが止めた。**関所はCIのほう**なので、
 # 通ってしまう側に合わせるのではなく、CIと同じ広さに揃える。
 # 定義を1つにして、二度と食い違わないようにする。
+#
+# 2026-08-14(ユーザー承認): tools/checks.lock はここから外した。
+#
+# 錠前は**生成物**で、`python tools/lock.py --update` が作業ツリーから機械的に
+# 作る。人が書く手順ではない。しかも中身は「道具のハッシュ」と「武将の件数」で、
+# **道具と母集団が同時に動く変更では、どの順に分けても一時的に食い違う**。
+# 実際、極を2ページに分けたとき次の3通りが全部止まって前に進めなくなった。
+#   道具だけ先  → 新しいページがまだ無くて監査が落ちる
+#   作業だけ先  → 件数が減って「武将の件数が減った」(運用の指摘なので飲めない)
+#   錠前だけ先  → 道具が古いままで「門番の中身が変わった」
+# 錠前を縮めるには今までどおり `--i-know --reason` が要り、理由は
+# tools/lock_reason.txt に1行ずつ残る。記録はそちらが担保しているので、
+# W-13(手順の変更を作業に紛れ込ませない)の対象から外しても穴は開かない。
+# 手で書く手順(docs/ ・ エージェント定義 ・ ワークフロー ・ settings.json)は対象のまま。
 RULE_DOC_PREFIX = ("docs/", ".claude/agents/", ".github/workflows/")
-RULE_DOC_FILES = (".claude/settings.json", "tools/checks.lock")
+RULE_DOC_FILES = (".claude/settings.json",)
 
 
 def rule_docs_in(files):

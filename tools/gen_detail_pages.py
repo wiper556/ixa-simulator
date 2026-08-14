@@ -62,6 +62,7 @@ SRC = [
     # (ソースページ, 配列名, 描画関数, 詳細コンテナid, 出力先, 種別ラベル, 一覧ページ)
     ('characters.html',       'generals',      'gdbRenderDetail', 'gdbDetailBody', 'busho', '武将',   'characters.html'),
     ('characters-kyoku.html', 'kyokuGenerals', 'kkRenderDetail',  'kkDetailBody',  'busho', '極武将', 'characters-kyoku.html'),
+    ('characters-kyoku-ps.html', 'kyokuPsGenerals', 'kpRenderDetail', 'kpDetailBody', 'busho', '極武将', 'characters-kyoku-ps.html'),
     ('characters-ketsu.html', 'ketsuGenerals', 'ktRenderDetail',  'ktDetailBody',  'busho', '傑武将', 'characters-ketsu.html'),
     ('skills.html',           'skills',        'sklRenderDetail', 'sklDetailBody', 'skill', 'スキル', 'skills.html'),
 ]
@@ -328,7 +329,7 @@ def wire():
     # ページ内の詳細パネルは表示されなくなったので、そこに置いた
     # 単独ページへのリンクは誰の目にも触れない。差し込み処理ごと畳んだ。
     # 既に入っているブロックは、ここで取り除く。
-    for f in ('characters.html', 'characters-kyoku.html',
+    for f in ('characters.html', 'characters-kyoku.html', 'characters-kyoku-ps.html',
               'characters-ketsu.html', 'skills.html'):
         s0 = io.open(f, encoding='utf-8', newline='').read()
         s = re.sub(r'    // PERMALINK:start.*?    // PERMALINK:end\n', '', s0, flags=re.S)

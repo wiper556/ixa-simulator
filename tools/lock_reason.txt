@@ -35,3 +35,7 @@
 2026-08-14	-1	hooks:tools/audit_characters.py	一覧から詳細データを外す作り替え。監査は正本data/を読み、ページに載っている値だけを正本と突き合わせる形に変えた(新チェック: ページの配列が正本と違う)
 2026-08-14	-1	hooks:tools/audit_characters.py	S-07(sourceCharactersのdb)の判定を、生成物である skills.html の本文でなく正本 data/skill/ から行うように変えた
 2026-08-14	-2	hooks:tools/gate_selftest.py,hooks:tools/precommit_check.py	W-13の判定がフックとCIで範囲違いだった(フックはdocs/RULEだけ、CIはdocs/全部)。定義を rule_docs_in() に一本化してCIに揃え、抜けを踏む自己テストW-13bを足した
+2026-08-14	-3	hooks:docs/RULE-OPERATION.md,hooks:tools/gate_selftest.py,hooks:tools/precommit_check.py	W-13の対象から tools/checks.lock を外した(ユーザー承認)。錠前は生成物で、道具と母集団が同時に動く変更ではどの順に分けても止まって前に進めなくなるため。記録は lock_reason.txt が担保する
+2026-08-14	-1	hooks:tools/gate_selftest.py	W-13の自己テストケース(W-13c)の注入内容を、錠前の値を動かさない形に直した
+2026-08-14	-7	entry_counts:characters-kyoku.html 121→53,hooks:tools/audit_characters.py,hooks:tools/build_data.py,hooks:tools/extract_data.py,hooks:tools/gen_detail_pages.py,hooks:tools/lock.py,hooks:tools/prerender.py	極を通常極(53体)とプラチナ・シークレット(68体)の2ページに分けた。characters-kyoku.htmlの121→53は分割で、characters-kyoku-ps.htmlに68体が移っている(合計121で不変)。道具6本は分割への追従
+2026-08-14	-1	hooks:tools/audit_selftest.py	極の分割で2614がbusho-kyoku-psへ移ったので、監査の自己テストの注入先パスを追従させた(CIがFileNotFoundErrorで落ちていた)

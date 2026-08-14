@@ -43,6 +43,11 @@ TARGETS = {
         "list_js": "() => { kkRenderList(kkSortByChapterThenNo(kyokuGenerals.slice())); "
                    "return document.getElementById('kkList').innerHTML; }",
     },
+    "characters-kyoku-ps.html": {
+        "container": "kpList",
+        "list_js": "() => { kpRenderList(kpSortByChapterThenNo(kyokuPsGenerals.slice())); "
+                   "return document.getElementById('kpList').innerHTML; }",
+    },
 }
 
 # スキル一覧系は「ページを開くとJSがtbodyを埋める」だけの単純な構造なので、
