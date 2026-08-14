@@ -8,42 +8,51 @@ _sys.path.insert(0, _os.path.join(ROOT, "tools", "register"))
 # -*- coding: utf-8 -*-
 """今回足した武将まわりの配線をまとめて直す。
 
-  S-01 萬宝航跡のページを作る
   S-05 合成候補スキルの sourceCharacters に武将を足す(逆引き)
+  S-08 新しく作ったスキルページの ownHiddenCandidate を、そのスキルが
+       1次候補として載っている枠の2次(武将側の afterSkill)から決める
   S-04 KP_LINKED_SKILLS に足す
-  S-08 新しく作ったスキルページの ownHiddenCandidate を、そのスキルの
-       合成テーブルのS1枠の2次から決める
+  S-06 一覧ページ(skills-*.html)側の sourceCharacters を正本に合わせる
 """
 import collections
+import datetime
 import io
 import json
 import os
 import re
 import sys
-import urllib.parse
 
 sys.stdout.reconfigure(encoding="utf-8")
 
 
 sys.path.insert(0, ROOT)
 sys.path.insert(0, HERE)
-from tools.reslog import fetch_and_log  # noqa: E402
-from regfetch import strip, parse_ixanary_skill  # noqa: E402
-from regbuild import split_label  # noqa: E402
-import skillbuild  # noqa: E402
 
-NOS = sys.argv[1:] or ["7401"]
+NOS = sys.argv[1:]
 SKILLDIR = os.path.join(ROOT, "data", "skill")
-HIGH = ("S", "SS", "SSS", "X", "XX", "XXX")
+TODAY = datetime.date.today().isoformat()
+# 正本の置き場所 → sourceCharacters の db。極は2ページに分かれたが、
+# どちらも #No で busho/{No}.html へ転送されるので db は "kyoku" のまま(S-07)。
+DB_OF_DIR = collections.OrderedDict([
+    ("busho-kyoku", "kyoku"), ("busho-kyoku-ps", "kyoku"),
+    ("busho-ketsu", "ketsu"), ("busho", None)])
+
+
+def find_general(no):
+    """正本のどこに居るかを探して (中身, db) を返す。"""
+    for d, db in DB_OF_DIR.items():
+        fp = os.path.join(ROOT, "data", d, "%s.json" % no)
+        if os.path.exists(fp):
+            return json.load(io.open(fp, encoding="utf-8")), db
+    return None, None
 
 # --- S-05: 逆引き ---
 added = 0
 for no in NOS:
-    for d in ("busho-kyoku", "busho-kyoku-ps", "busho"):
-        p = os.path.join(ROOT, "data", d, "%s.json" % no)
-        if os.path.exists(p):
-            break
-    ent = json.load(io.open(p, encoding="utf-8"))
+    ent, db = find_general(no)
+    if ent is None:
+        print("  ★ No.%s が正本に無い" % no)
+        continue
     for r in ent["synthesisTable"]:
         for key in ("skill", "afterSkill"):
             nm = r.get(key)
@@ -57,10 +66,13 @@ for no in NOS:
             sc = js.setdefault("sourceCharacters", [])
             if any(str(x.get("no")) == no for x in sc):
                 continue
-            sc.append(collections.OrderedDict([
-                ("name", ent["name"]), ("no", no), ("slot", r["slot"]), ("db", "kyoku"),
-                ("note", ["%s(%s)のsynthesisTable %s枠(2026-08-14)"
-                          % (ent["name"], no, r["slot"])])]))
+            row = collections.OrderedDict([
+                ("name", ent["name"]), ("no", no), ("slot", r["slot"])])
+            if db:
+                row["db"] = db
+            row["note"] = ["%s(%s)のsynthesisTable %s枠(%s)"
+                           % (ent["name"], no, r["slot"], TODAY)]
+            sc.append(row)
             io.open(sp, "w", encoding="utf-8", newline="\n").write(
                 json.dumps(js, ensure_ascii=False, indent=1) + "\n")
             added += 1
@@ -68,11 +80,9 @@ print("S-05 逆引きを %d件 追記" % added)
 
 # --- S-08: 武将側の afterSkill から ownHiddenCandidate を決める ---
 for no in NOS:
-    for d in ("busho-kyoku-ps", "busho-kyoku", "busho"):
-        fp = os.path.join(ROOT, "data", d, "%s.json" % no)
-        if os.path.exists(fp):
-            break
-    ent = json.load(io.open(fp, encoding="utf-8"))
+    ent, _ = find_general(no)
+    if ent is None:
+        continue
     for r in ent["synthesisTable"]:
         nm, af = r.get("skill"), r.get("afterSkill")
         if not nm or not af:
@@ -120,3 +130,76 @@ if add:
     io.open(p, "w", encoding="utf-8", newline="").write(
         t[:m.start()] + m.group(1) + body + m.group(3) + t[m.end():])
 print("S-04 KP_LINKED_SKILLS へ %d件 追加: %s" % (len(add), " ".join(add)))
+
+
+# --- S-06: 一覧ページ(skills-*.html)の sourceCharacters を正本に合わせる ---
+# 一覧ページは skills.html と違って生成物ではなく、sourceCharacters を独自に
+# 複製している。ここだけ手で足すのを忘れると監査の「一覧の逆引き同期漏れ」で鳴る。
+# 引数の武将に限らず**全ページを正本と突き合わせる**(取りこぼしを溜めないため)。
+
+def _close_bracket(s, i):
+    """s[i] == '[' のとき、対応する ']' の位置を返す。"""
+    depth = 0
+    while i < len(s):
+        if s[i] == "[":
+            depth += 1
+        elif s[i] == "]":
+            depth -= 1
+            if depth == 0:
+                return i
+        elif s[i] == '"':                       # 文字列の中の括弧は数えない
+            i = s.index('"', i + 1)
+        i += 1
+    raise ValueError("閉じ括弧が見つからない")
+
+
+def sync_list_pages():
+    master = {}
+    for n in os.listdir(SKILLDIR):
+        if n.endswith(".json"):
+            js = json.load(io.open(os.path.join(SKILLDIR, n), encoding="utf-8"))
+            master[n[:-5]] = js.get("sourceCharacters") or []
+    total = 0
+    for page in sorted(os.listdir(ROOT)):
+        if not (page.startswith("skills-") and page.endswith(".html")):
+            continue
+        fp = os.path.join(ROOT, page)
+        text = io.open(fp, encoding="utf-8", newline="").read()
+        hits = []
+        for m in re.finditer(r'\{name:"([^"]+)", skillPage:"', text):
+            nm = m.group(1)
+            if nm not in master:
+                continue
+            k = text.find("sourceCharacters:[", m.end())
+            if k == -1:
+                continue
+            open_at = k + len("sourceCharacters:")
+            close_at = _close_bracket(text, open_at)
+            inner = text[open_at + 1:close_at]
+            listed = set(re.findall(r'no:"(\d+)"', inner))
+            missing = [c for c in master[nm] if str(c.get("no")) not in listed]
+            if missing:
+                hits.append((close_at, inner, nm, missing))
+        # 後ろから差し込む(前を先に触ると位置がずれる)
+        for close_at, inner, nm, missing in reversed(hits):
+            ind = re.search(r"\n(\s*)\{name:", inner)
+            ind = ind.group(1) if ind else "        "
+            rows = []
+            for c in missing:
+                r = '%s{name:"%s", no:"%s", slot:"%s"' % (
+                    ind, c.get("name"), c.get("no"), c.get("slot"))
+                if c.get("db"):
+                    r += ', db:"%s"' % c["db"]
+                rows.append(r + "}")
+                print("  S-06 %-22s %-14s ← No.%s(%s枠)"
+                      % (page, nm, c.get("no"), c.get("slot")))
+                total += 1
+            head = inner.rstrip()
+            joined = (head + ",\n" if head else "\n") + ",\n".join(rows) + "\n" + ind[:-2]
+            text = text[:close_at - len(inner)] + joined + text[close_at:]
+        if hits:
+            io.open(fp, "w", encoding="utf-8", newline="").write(text)
+    print("S-06 一覧ページへ %d件 追記" % total)
+
+
+sync_list_pages()

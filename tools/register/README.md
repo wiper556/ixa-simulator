@@ -13,11 +13,18 @@
 5. python tools/register/skillbuild.py 名前:S   S以上で未作成のスキルページを作る
 6. python tools/register/fill_short.py 7401 ... 合成候補の効果文を埋める
 7. python tools/register/wireup.py 7401 ...     逆引き・LINKED_SKILLS・ownHiddenCandidate
+                                                + 一覧ページの逆引き(S-06)
 8. python tools/build_data.py → prerender.py → gen_detail_pages.py
 9. python tools/audit_characters.py             残った不整合を拾う
 ```
 
 `_work/` は下書き置き場。gitには入れない。
+
+**手順7の S-06 だけは引数の武将に限らず全ページを見る。** 一覧ページ
+(`skills-*.html`)は`skills.html`と違って生成物ではなく`sourceCharacters`を
+独自に複製しているので、取りこぼすと監査の「一覧の逆引き同期漏れ」で鳴る。
+`python tools/register/wireup.py`(引数なし)で同期だけを流せる。
+足すだけで並べ替えや削除はしない。
 
 ## 人がやること(自動化していない)
 
