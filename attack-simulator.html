@@ -834,7 +834,7 @@
   // 【必須】attack-simulator.html を変更したコミットでは、必ずこの定数も一緒に更新すること。
   // 表示文言の変更・CSSの微調整であっても対象(ユーザーがスクショで版を判別できなくなるため)。
   // 更新忘れが繰り返し発生しているので、編集したらコミット前にここを見に来る。
-  const SIMULATOR_VERSION = 'v2026-08-14.1';
+  const SIMULATOR_VERSION = 'v2026-08-14.2';
   document.addEventListener('DOMContentLoaded', ()=>{
     const badge = document.getElementById('simVersionBadge');
     if(badge) badge.textContent = SIMULATOR_VERSION;
@@ -2835,9 +2835,27 @@
     return multiplier;
   }
 
-  // 武将名の文字列から、generalGrowthDBの最も具体的な(名前が長い)一致エントリを探す
+  // 武将名の文字列から、generalGrowthDBのエントリを探す。
+  //
+  // 2026-08-14: 以前は**名前の部分一致だけ**で探していた。候補一覧は同名武将のために
+  // 必ず「名前(No.xxxx)」の形で出して選ばせているのに、選んだあとの引き当てで
+  // そのNo.を捨てていたので、名前が完全に同じ2枚は先に並んでいるほうに解決された。
+  //
+  // 実機で確認: 津軽為信は No.1309(天) と No.2359(極) の2枚がある。
+  // 候補から No.2359 を選んでも、防御1250・兵法670(=No.1309の値)で計算されていた。
+  // 正しくは防御1120・兵法530。黙って別のカードの数値が入る。
+  //
+  // 入力欄にNo.が入っているなら、それが「どのカードか」の明示なので最優先で使う。
+  // そのNo.がDBに無いときは、名前が似た別のカードで代用せず未登録として扱う
+  // (recalcSquadStats側で「何もしない=手入力のまま」になる)。
   function findGeneralEntry(nameField){
     if(!nameField) return undefined;
+    const byNo = String(nameField).match(/No\.(\d{3,6})/);
+    if(byNo){
+      return generalGrowthDB.find(g => String(g.no) === byNo[1]);
+    }
+    // No.が付いていない手入力は、これまでどおり名前の部分一致で探す
+    // (「織田信長【覇】」のような長い表記に合わせるため、一番長い名前を採る)
     const matches = generalGrowthDB.filter(g => nameField.includes(g.name));
     return matches.length
       ? matches.reduce((best, g) => (g.name.length > best.name.length ? g : best))
