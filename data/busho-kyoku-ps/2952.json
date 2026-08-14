@@ -1,0 +1,94 @@
+{
+ "name": "蒲生氏郷",
+ "no": "2952",
+ "ch": "未確認",
+ "cost": 3.5,
+ "troop": "合流",
+ "sub": "",
+ "effect": "銅銭獲得率：2.5%",
+ "furigana": "がもううじさと",
+ "illustrator": "塚本陽子",
+ "imageFull": "assets/img/characters/no2952_full.png",
+ "imageChar": "assets/img/characters/no2952_char.png",
+ "atkBase": 720,
+ "atkGrowth": 19.0,
+ "defBase": 720,
+ "defGrowth": 16.0,
+ "tacticsBase": 510.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3350,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "B",
+  "uma": "B",
+  "ki": "A"
+ },
+ "initialSkill": "武功浄財",
+ "skillDetail": "A/LV10 確率 20% 銅銭獲得率：2.5%/対象:合流\n①銅銭獲得率：2.5%",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "合流　確率 20% / 銅銭獲得率：2.5%"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "武功浄財",
+   "rank": "A",
+   "afterSkill": "武功浄財",
+   "afterRank": "A",
+   "target": "合流",
+   "rate": "20%",
+   "effectShort": "銅銭獲得率：2.5%"
+  },
+  {
+   "slot": "B",
+   "skill": "武功浄財",
+   "rank": "A",
+   "afterSkill": "武功浄財",
+   "afterRank": "A",
+   "target": "合流",
+   "rate": "20%",
+   "effectShort": "銅銭獲得率：2.5%"
+  },
+  {
+   "slot": "C",
+   "skill": "武功浄財",
+   "rank": "A",
+   "afterSkill": "武功浄財",
+   "afterRank": "A",
+   "target": "合流",
+   "rate": "20%",
+   "effectShort": "銅銭獲得率：2.5%"
+  },
+  {
+   "slot": "S1",
+   "skill": "武功浄財",
+   "rank": "A",
+   "afterSkill": "武功浄財",
+   "afterRank": "A",
+   "target": "合流",
+   "rate": "20%",
+   "effectShort": "銅銭獲得率：2.5%"
+  },
+  {
+   "slot": "S2",
+   "skill": "武功浄財",
+   "rank": "A",
+   "afterSkill": "武功浄財",
+   "afterRank": "A",
+   "target": "合流",
+   "rate": "20%",
+   "effectShort": "銅銭獲得率：2.5%"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/2952 と skills/武功浄財)およびixawiki(BushoCard/2952蒲生氏郷)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

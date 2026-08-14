@@ -1,0 +1,113 @@
+{
+ "name": "山田長政",
+ "no": "7401",
+ "ch": "未確認",
+ "cost": 1.0,
+ "troop": "全",
+ "sub": "",
+ "effect": "取引手数料10%軽減・同時出品/入札+1枚(カード所持で効果あり)",
+ "furigana": "やまだながまさ",
+ "illustrator": "正子公也",
+ "imageFull": "assets/img/characters/no7401_full.png",
+ "imageChar": "assets/img/characters/no7401_char.png",
+ "atkBase": 1050,
+ "atkGrowth": 37.0,
+ "defBase": 1050,
+ "defGrowth": 37.0,
+ "tacticsBase": 540.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 2200,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "萬宝航跡",
+ "skillDetail": "S/LV10 取引手数料10%軽減/対象:全\n①取引手数料が10%軽減される\n②取引の同時出品/入札枚数が1枚増える\n③重複不可・カードを所持しているだけで効果がある",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　取引手数料 10%軽減 / 同時出品・入札枚数 +1枚"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": "全　取引手数料 15%軽減 / 同時出品・入札枚数 +2枚"
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": "全　取引手数料 20%軽減 / 同時出品・入札枚数 +3枚"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": "全　取引手数料 30%軽減 / 同時出品・入札枚数 +5枚"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "國才連豪",
+   "rank": "SS",
+   "afterSkill": "國才連豪",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "50%",
+   "effectShort": "防御 310%×國才連豪所持武将数(4人)=1240.0%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "禄寿応穏",
+   "rank": "A",
+   "afterSkill": "禄寿応穏",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "35%",
+   "effectShort": "防御 35%上昇 / 銅銭獲得率：7.5%"
+  },
+  {
+   "slot": "C",
+   "skill": "呂宋の豪商",
+   "rank": "A",
+   "afterSkill": "武人の浄財",
+   "afterRank": "C",
+   "target": "全",
+   "rate": "36%",
+   "effectShort": "防御 46%上昇/銅銭獲得率：4%",
+   "afterTarget": "全",
+   "afterRate": "35%",
+   "afterEffectShort": "銅銭獲得率：5%"
+  },
+  {
+   "slot": "S1",
+   "skill": "朱印航路",
+   "rank": "S",
+   "afterSkill": "朱印航路",
+   "afterRank": "S",
+   "target": "全",
+   "rate": "70%",
+   "effectShort": "防御 580%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "朱印航路",
+   "rank": "S",
+   "afterSkill": "朱印航路",
+   "afterRank": "S",
+   "target": "全",
+   "rate": "70%",
+   "effectShort": "防御 580%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/7401 と skills/萬宝航跡)およびixawiki(BushoCard/7401山田長政)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。",
+  "萬宝航跡は対象兵科・確率の記載が無い(戦闘スキルではなく取引の効果)。trTableの見出しは便宜上「全」とした。カード画像に「重複不可・カード所持で効果あり」と記載。"
+ ]
+}
