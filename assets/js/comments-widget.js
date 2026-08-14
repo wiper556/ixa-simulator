@@ -33,6 +33,12 @@
     const client = cwGetClient();
     const listEl = document.getElementById(containerId+'-cwList');
     if(!listEl) return;
+    // 【2026-08-14追加】投稿側には同じ判定があったが、読み込み側だけ抜けていた。
+    // CDN(cdn.jsdelivr.net)が読めないと client が null になり、この先で例外が飛ぶ。
+    if(!client){
+      listEl.innerHTML = '<p class="cw-error">コメントの読み込みに失敗しました。</p>';
+      return;
+    }
     listEl.innerHTML = '<p class="cw-loading">読み込み中...</p>';
     const {data, error} = await client
       .from('comments')

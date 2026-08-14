@@ -495,7 +495,21 @@
   // ============ ランキング(Supabase) ============
   const SUPABASE_URL = 'https://oykzgzagkyygobbfkmwq.supabase.co';
   const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im95a3pnemFna3l5Z29iYmZrbXdxIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODQ4ODE2NzMsImV4cCI6MjEwMDQ1NzY3M30.lP8rcREG6iy_A9qA3oDrZh1uf5y3OQeBhGieMFgbUEs';
-  const supabaseClient = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+  // 【2026-08-14修正】ここで window.supabase.createClient をそのまま呼んでいたため、
+  // CDN(cdn.jsdelivr.net)が広告ブロッカーや通信の不調で読めないと window.supabase が
+  // 未定義になって例外が飛び、**この<script>の残り全部が止まっていた**。
+  // 止まる中には「単発を引く」「10連を引く」「100連一括を解放する」のボタン登録も
+  // 含まれるので、くじが丸ごと動かなくなる(ユーザー報告: 100連が表示されない)。
+  // ランキングにはサーバーが要るが、くじを引くこと自体には要らない。
+  // 読めなかったときは null のまま進め、ランキングの読み書きだけを諦める。
+  let supabaseClient = null;
+  try{
+    if(window.supabase && typeof window.supabase.createClient === 'function'){
+      supabaseClient = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+    }
+  }catch(e){
+    console.warn('ランキングの接続を用意できませんでした(くじ自体は使えます)', e);
+  }
   const KUJI_SCOPE = '2026-08-07'; // 期間限定くじの識別子。次の期間に切り替わったら変更する(32章開幕くじ開始で更新)
   // rankingsテーブルの絞り込みキー。画面に出る名称(「天12種コンプリート」)とは別物で、
   // ここを変えると過去の記録が一覧から消えてしまう。
@@ -511,6 +525,10 @@
 
   async function loadRankingSection(elId, orderBy, ascending, limit){
     const listEl = document.getElementById(elId);
+    if(!supabaseClient){
+      listEl.innerHTML = '<p class="note">ランキングを読み込めませんでした(くじは引けます)。</p>';
+      return;
+    }
     const {data, error} = await supabaseClient
       .from('rankings')
       .select('value, created_at')
@@ -539,6 +557,9 @@
   }
 
   async function submitRanking(value){
+    if(!supabaseClient){
+      return {message:'ランキングに接続できませんでした。'};
+    }
     const {error} = await supabaseClient.from('rankings').insert({
       simulator_type: 'kuji',
       scope: KUJI_SCOPE,
