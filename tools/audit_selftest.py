@@ -60,58 +60,74 @@ def v_set(i, col, val):
     return old, "|" + "|".join(cells) + "|"
 
 
+# 注入先について(2026-08-14)
+#
+# 監査が読むのは正本 data/busho*/{No}.json ・ data/skill/{名前}.json になった。
+# 一覧ページの配列は「一覧に要るフィールドだけ」の生成物なので、
+# 鍛錬表・合成表・スキル本文はもうページ側に無い。
+# データの中身を試すケースは、ページではなく**正本のJSONに注入する**。
+#
+# JSONは json.dump(indent=1) で書かれているので、キーは3スペース字下げ、
+# 配列の要素の `{` は2スペース。目印はその形に合わせてある。
+# 使う武将/スキルは固定:
+#   data/busho/1321.json        六角定頼(初期スキル 天弦ノ威軍[S])
+#   data/busho-kyoku/2614.json  佐渡島方治(初期スキル 百識ノ計)
+#   data/skill/月詠ノ覇威.json   佐渡島方治をS1枠の所持武将に持つ
+
+BUSHO = "data/busho/1321.json"
+KYOKU = "data/busho-kyoku/2614.json"
+SKILL = "data/skill/月詠ノ覇威.json"
+
 # (チェック種別, 触るファイル, 置換前, 置換後)
 CASES = [
     # E-14(2026-08-12 第2回レッドチーム指摘): 1ルールに1ケースだと、
     # そのルールの**別の分岐**を丸ごと消しても緑のままになる。
     # 実際、監査から「合成候補の走査」を削除(=違反S-01そのものの再現)しても
     # 19/19 OK・exit 0 で通った。分岐ごとに1ケース置く。
-    ("S以上でページ無し", "characters.html",
+    ("S以上でページ無し", BUSHO,
      # 分岐1: 初期スキル(Aランクは規約上ページ不要なので対象外になる。Sで試す)
-     'initialSkill:"天弦ノ威軍"', 'initialSkill:"存在しない架空スキルS"'),
-    ("S以上でページ無し", "characters.html",
+     '"initialSkill": "天弦ノ威軍"', '"initialSkill": "存在しない架空スキルS"'),
+    ("S以上でページ無し", BUSHO,
      # 分岐2: 合成候補。S-01はこちらを数えていなかったのが原因だった。
-     'skill:"天弦ノ威軍"', 'skill:"存在しない架空の合成候補SS"'),
-    ("sourceCharactersのdb", "skills.html",
-     '{name:"佐渡島方治", no:"2614", slot:"S1", db:"kyoku"}',
-     '{name:"佐渡島方治", no:"2614", slot:"S1"}'),
-    # 2026-08-13: 作り替えで配列が生成物になり、コメントが要素の**前**に出るように
-    # なったので、`],\n      // 合成テーブルは…` を目印にしていた3件が全部外れた
-    # (自己テストがその場でskipとして報告し、失敗した)。目印を、コメントに依らない
-    # 「TR6行 → synthesisTable の1行目」に付け替える。百識ノ計は2614だけなので一意。
-    ("trTableの段飛び", "characters-kyoku.html",
-     '{level:"TR1", points:"10", effect:null},\n        {level:"TR2", points:"40", effect:null},\n'
-     '        {level:"TR3", points:"90", effect:null},\n        {level:"TR4", points:"150", effect:null},\n'
-     '        {level:"TR5", points:"200", effect:null},\n        {level:"TR6", points:"パラレル", effect:null}\n'
-     '      ],\n      synthesisTable:[\n        {slot:"A", skill:"百識ノ計"',
-     '{level:"TR5", points:"200", effect:"テスト"}\n      ],\n'
-     '      synthesisTable:[\n        {slot:"A", skill:"百識ノ計"'),
+     '"skill": "天弦ノ威軍",\n   "rank": "S"',
+     '"skill": "存在しない架空の合成候補SS",\n   "rank": "S"'),
+    ("sourceCharactersのdb", SKILL,
+     '"name": "佐渡島方治",\n   "no": "2614",\n   "slot": "S1",\n   "db": "kyoku",',
+     '"name": "佐渡島方治",\n   "no": "2614",\n   "slot": "S1",'),
+    # 段飛びは「段の名前が連続しているか」だけを見ている。
+    # TR2 を表に無い段名にすると LV10/TR1/TR3〜TR6 になり、間が空く。
+    ("trTableの段飛び", KYOKU,
+     '"level": "TR2"', '"level": "TR9"'),
     ("シミュのcost未設定", "assets/js/ixa-data.js",
      "no:'2614', cost: 3,", "no:'2614',"),
-    ("effectShortの接頭辞", "characters-kyoku.html",
-     'effectShort:"攻撃390%上昇+防御390%上昇+部隊内卓越追加確率+25%',
-     'effectShort:"100% / 効果 攻撃390%上昇+防御390%上昇+部隊内卓越追加確率+25%'),
-    ("ドット付きランク", "characters-kyoku.html",
-     "rankGrades:{yari:\"B\", yumi:\"S\", uma:\"B\", ki:\"S\"}",
-     "rankGrades:{yari:\".B\", yumi:\"S\", uma:\"B\", ki:\"S\"}"),
-    ("slotの独自語", "skills.html",
-     '{name:"佐渡島方治", no:"2614", slot:"S1", db:"kyoku"}',
-     '{name:"佐渡島方治", no:"2614", slot:"候補", db:"kyoku"}'),
+    ("effectShortの接頭辞", KYOKU,
+     '"effectShort": "攻撃390%上昇+防御390%上昇+部隊内卓越追加確率+25%',
+     '"effectShort": "100% / 効果 攻撃390%上昇+防御390%上昇+部隊内卓越追加確率+25%'),
+    ("ドット付きランク", KYOKU,
+     '"yari": "B",', '"yari": ".B",'),
+    ("slotの独自語", SKILL,
+     '"name": "佐渡島方治",\n   "no": "2614",\n   "slot": "S1",',
+     '"name": "佐渡島方治",\n   "no": "2614",\n   "slot": "候補",'),
     # V-07(2026-08-13): 確率の「+」を1件書き戻して、見張りが鳴るか。
-    ("確率に+が付いている", "characters-kyoku.html",
-     '{slot:"A", skill:"百識ノ計", rank:"A", afterSkill:"月詠ノ覇威", afterRank:"SS", '
-     'target:"弓・器・焙", rate:"100%"',
-     '{slot:"A", skill:"百識ノ計", rank:"A", afterSkill:"月詠ノ覇威", afterRank:"SS", '
-     'target:"弓・器・焙", rate:"+100%"'),
-    ("武将名の表記ゆれ", "characters-kyoku.html",
-     '{name:"佐渡島方治", no:"2614"', '{name:"佐渡島方治(2)", no:"2614"'),
-    ("データ内のHTMLタグ", "characters-kyoku.html",
-     'effect:"部隊内武将の全スキルの卓越追加確率+25%',
-     'effect:"<span style=\\"color:red\\">部隊内</span>武将の全スキルの卓越追加確率+25%'),
-    ("模倣不可の位置", "characters-kyoku.html",
+    ("確率に+が付いている", KYOKU,
+     '"rate": "100%",', '"rate": "+100%",'),
+    ("武将名の表記ゆれ", KYOKU,
+     '"name": "佐渡島方治",\n "no": "2614",', '"name": "佐渡島方治(2)",\n "no": "2614",'),
+    ("データ内のHTMLタグ", KYOKU,
+     '"effect": "部隊内武将の全スキルの卓越追加確率+25%',
+     '"effect": "<span style=\\"color:red\\">部隊内</span>武将の全スキルの卓越追加確率+25%'),
+    ("模倣不可の位置", KYOKU,
      # 消すと「模倣不可が無い」扱いで対象外になるので、①より後ろへ移す
-     'skillDetail:"A/LV10 確率 100% 攻撃390%上昇/対象:弓・器・焙\\n模倣不可\\n①攻撃390%上昇する',
-     'skillDetail:"A/LV10 確率 100% 攻撃390%上昇/対象:弓・器・焙\\n①攻撃390%上昇する\\n模倣不可'),
+     '対象:弓・器・焙\\n模倣不可\\n①攻撃390%上昇する',
+     '対象:弓・器・焙\\n①攻撃390%上昇する\\n模倣不可'),
+    # 2026-08-14: 正本は data/ に移り、ページの配列はそこからの生成物になった。
+    # 監査は正本を読むので、**ページ側だけ**を書き換えられると
+    # 「監査は青丸・公開ページは赤丸」という食い違いが起きる。
+    # N-1(第4回レッドチーム)そのものの手口を注入して、突き合わせが働くか見る。
+    ("ページの配列が正本と違う", "characters.html",
+     "  // BUILD:generals:end",
+     "  generals.forEach(function(g){ if (g.no === '1315') { g.approved = true; } });\n"
+     "  // BUILD:generals:end"),
     ("サイト上の出典言及", "privacy.html",
      "</main>", "<p>出典元: テスト</p>\n  </main>"),
     ("横スクロール対策の欠落", "assets/css/site.css",
@@ -137,11 +153,11 @@ CASES = [
     ("違反ログに未対応が残っている", VIOL) + v_set(-1, 7, "まだ"),
     ("2回目の違反で作業停止中", VIOL) + v_set(0, 7, "まだ"),
 
-    ("未確認の根拠なし", "characters-kyoku.html",
-     '{level:"TR5", points:"200", effect:null},\n        {level:"TR6", points:"パラレル", effect:null}\n'
-     '      ],\n      synthesisTable:[\n        {slot:\"A\", skill:\"百識ノ計\"',
-     '{level:"TR5", points:"200", effect:"テスト値"},\n        {level:"TR6", points:"パラレル", effect:null}\n'
-     '      ],\n      synthesisTable:[\n        {slot:\"A\", skill:\"百識ノ計\"'),
+    # TR5 に値を入れると、その上の TR1〜TR4 が「未確認」表示になる。
+    # 調べた記録が2件以上ないとHIGHになるはず。
+    ("未確認の根拠なし", KYOKU,
+     '"level": "TR5",\n   "points": "200",\n   "effect": null',
+     '"level": "TR5",\n   "points": "200",\n   "effect": "テスト値"'),
 ]
 
 
@@ -214,11 +230,9 @@ EVASIONS = [
     # I-01の対策そのもの。4体のレッドチームが全員ここを突いた(F-7/G-1/H-1/I-2)。
     # 未確認の段を作ったうえで、調査ログに「手書きの」記録を2件足す。
     # 証拠(HTTPの取得結果)が無い記録は数えないので、HIGHは消えないはず。
-    ("未確認の根拠なし", "characters-kyoku.html",
-     '{level:"TR5", points:"200", effect:null},\n        {level:"TR6", points:"パラレル", effect:null}\n'
-     '      ],\n      synthesisTable:[\n        {slot:\"A\", skill:\"百識ノ計\"',
-     '{level:"TR5", points:"200", effect:"テスト値"},\n        {level:"TR6", points:"パラレル", effect:null}\n'
-     '      ],\n      synthesisTable:[\n        {slot:\"A\", skill:\"百識ノ計\"',
+    ("未確認の根拠なし", KYOKU,
+     '"level": "TR5",\n   "points": "200",\n   "effect": null',
+     '"level": "TR5",\n   "points": "200",\n   "effect": "テスト値"',
      "調査ログにでっち上げた取得記録2件を足して黙らせる(第7回 CC-1)",
      # アンカーはJSONの開き括弧だけにする。中のキー名を目印にすると、
      # 調査ログに項目が増えた日に外れる(I-14と同じ形。実際CIで外れた)。
@@ -259,6 +273,11 @@ EVASIONS = [
     ("錠前から守り先が抜けている", "tools/checks.lock",
      '"tools/audit_characters.py":', '"tools/audit_characters_X.py":',
      "錠前から守り先を1行消して無検査にする"),
+    # 2026-08-14: 生成ブロックの中を手で書き換える形。
+    # 監査が読むのは正本なので、ここを見ていないと公開ページだけ赤丸にできる。
+    ("ページの配列が正本と違う", "characters.html",
+     'no:"1315"', 'no:"1315", approved:true',
+     "生成ブロックの中を手で書き換えて赤丸を1体足す"),
     # AA-5: 個人設定(gitignore済み=差分に出ない)は誰も見ていなかった。
     # 後勝ちなので、ここに hooks を書けば共有側の門番を丸ごと無効化できた。
     # 元から無いこともあるファイルなので、old=None(作る)で試す。

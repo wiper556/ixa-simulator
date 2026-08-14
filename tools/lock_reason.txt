@@ -31,3 +31,5 @@
 2026-08-13	-1	hooks:tools/extract_data.py	extract_data.py に逆流防止の門を付けた。正本がdata/に移ったあとに走らせるとページ(生成物)から正本を作り直すことになり、要素直下のnotesを拾い直せず出典の記録が消える。実地で255ファイル555行を消してコミット前に気づいた。引っ越しは1回限りなので走らせないようにする
 2026-08-13	-4	hooks:docs/RULE-OPERATION.md,hooks:docs/RULES.md,hooks:tools/audit_characters.py,hooks:tools/audit_selftest.py	V-07(合成表の確率に+を付けない)をユーザー決定に基づき追加。監査に見張りを1つ足し、自己テストの注入ケースも入れた。RULES.mdに行を追加して索引の件数を91に揃えた
 2026-08-13	-1	hooks:.github/workflows/rules.yml	CIの比較元が取れないとき最初のコミットに落ちていたので、masterとの分岐点にした。新しいブランチのpush1回目は必ず全履歴を検査し、過去153件が引っかかって絶対に緑にならなかった。2回目以降のpushでは通るので気づきにくかった
+2026-08-14	-5	hooks:tools/audit_characters.py,hooks:tools/audit_selftest.py,hooks:tools/build_data.py,hooks:tools/gen_detail_pages.py,hooks:tools/verify_extract.py	一覧から詳細データを外す作り替え。監査は正本data/を読み、ページの配列とは突き合わせる形に変えた(新チェック: ページの配列が正本と違う)。build_data/gen_detail_pages/verify_extract/audit_selftest も同じ作り替えの一部
+2026-08-14	-1	hooks:tools/audit_characters.py	一覧から詳細データを外す作り替え。監査は正本data/を読み、ページに載っている値だけを正本と突き合わせる形に変えた(新チェック: ページの配列が正本と違う)
