@@ -277,6 +277,23 @@
     border:1px solid var(--line); pointer-events:none; user-select:text;
   }
 
+  /* 100連の小さい札。【2026-08-15修正】**素の指定が丸ごと無く、480px以下のときしか
+     幅が付いていなかった**ため、PC幅では width:0 になって100枚とも見えていなかった
+     (ユーザー報告「金くじ100連でカードの表示がされない」)。DOMには100個できていて
+     集計欄も出るので気づきにくかった。
+     中の面(.gacha-card-front)は通常札の「めくる」演出用に rotateY(180deg) が掛かって
+     いるので、こちらは回さずそのまま表にする。 */
+  .bulk-card{
+    position:relative; width:54px; height:78px; flex:0 0 auto;
+  }
+  .bulk-card .gacha-card-front{
+    transform:none; border-radius:6px; padding:3px;
+  }
+  .bulk-card .tier-label{font-size:15px;}
+  .bulk-card .tier-charname{font-size:8px;margin-top:4px;line-height:1.2;}
+  /* 天・傑が出た札は少し光らせる(1枚ずつ出てくる演出のときに目に留まるように) */
+  .bulk-card.bulk-rare .gacha-card-front{box-shadow:0 0 10px rgba(255,215,0,.8);}
+
   @media (max-width:480px){
     .gacha-cards{gap:8px;}
     .gacha-card{width:88px;height:126px;}
