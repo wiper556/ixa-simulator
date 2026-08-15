@@ -107,5 +107,11 @@
   "2026-08-15検証(前回作業分): trTableが「効果文　確率X%」の逆順+読点混入だったため「対象　確率X% / 効果」の順に直した(data/skill/木遁封魔.jsonを手本)。skillDetailもnullだったため補完。C枠(木遁封魔→遁世影武者)のafter系がnullだったため、ixanary.com(skills/木遁封魔および/遁世影武者)で確認して埋めた。",
   "2026-08-15黄丸化検証(今回): data/skill/入来神舞.jsonのsourceCharactersで雪窓院(2803)がslot:Aのみだったが、実際はA・Bの両方で入来神舞の自己参照のためslot:A・Bに修正。data/skill/飛蝶野分.jsonでは雪窓院(2803)がslot:Aとして直接列挙されていたが、A枠はskill=入来神舞→afterSkill=飛蝶野分という別の関係(このファイル自身の既存ルールに従えばgrantedViaSkills経由で扱うべき関係)であり、雪窓院が飛蝶野分を直接持つのはS1枠のみだったため、slotをAからS1に訂正した。"
  ],
- "reviewedOk": true
+ "reviewedOk": true,
+ "categoryLinks": [
+  {
+   "href": "skills-leadermimic.html",
+   "label": "部隊長模倣スキル一覧を見る"
+  }
+ ]
 }
