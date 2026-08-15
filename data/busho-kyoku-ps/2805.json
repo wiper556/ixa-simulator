@@ -103,5 +103,15 @@
   "章は情報源に記載が無いため未確認。ixanary.com/ixawiki.comのカードページに記載が無く未確認のまま。",
   "2026-08-15(黄丸化検証): rankGrades・攻防兵法・コスト・指揮兵数をixanary.com(cards/2805)とixawiki.com(BushoCard/2805奈多姫)の生HTMLで再照合し完全一致を確認。skillDetail/trTableが「防御(2.4x防御参加武将数)%上昇する」で切れており「卓越:追加確率30%で防御効果が1.5倍になる」が欠落していたため生HTMLで補完(data/skill/九国一ノ美才.jsonも同様に修正、卓越一覧へのcategoryLinksも追加)。synthesisTable全5行をixanary(skills/九国一ノ美才)とixawiki(BushoCard/2805)の合成候補テーブル2ソースで突き合わせ完全一致を確認(A=九国一ノ美才自己参照ではなく九国一ノ美才[S]→入来神舞[S]、B=宿木[B]自己参照、C/S1=入来神舞[S]→飛蝶野分[B]、S2=天奏聖譚曲自己参照)。A-3-11逆引きで、入来神舞に奈多姫が誤ってslot「A」で登録されていた(正しくはC・S1、A枠は九国一ノ美才側の管轄でありA-3-12によりここには入来神舞がafterSkillとして現れる別の関係)のを「C・S1」に訂正、飛蝶野分に奈多姫がslot「C」で直接列挙されていた(skill≠afterSkillのためA-3-12違反、grantedViaSkillsは既存)のを削除。宿木・天奏聖譚曲は既に正しく登録済みだった。reviewedOk:trueに更新。"
  ],
- "reviewedOk": true
+ "reviewedOk": true,
+ "categoryLinks": [
+  {
+   "href": "skills-count-def.html",
+   "label": "人数依存(防)スキル一覧を見る"
+  },
+  {
+   "href": "skills-takuetsu.html",
+   "label": "卓越スキル一覧を見る"
+  }
+ ]
 }

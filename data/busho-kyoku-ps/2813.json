@@ -101,5 +101,11 @@
   "章は情報源に記載が無いため未確認。ixanary.com/ixawiki.com/ixagno.blog.fc2.com(検索)のいずれにも章の記載が無く、2026-08-15の黄丸化検証でも見つからなかった。",
   "2026-08-15(黄丸化検証): rankGrades(4隅バッジ)・攻防兵法・指揮兵数・スキル名/LV1・LV10効果文をixanary.com(cards/2813)とixawiki.com(BushoCard/2813上杉謙信)の生HTMLで再照合し完全一致を確認。synthesisTable全5行(A/B/C/S1/S2)もixanary(skills/麗将車懸)とixawiki(BushoCard/2813)の合成候補テーブル2ソースで突き合わせ一致を確認した。skills.html側の逆引き(A-3-11)で、救天慈愛[A]/麗将車懸[C]がslot「A」「C」のみでB/S1が抜けていたため「A・B」「C・S1」に修正、開闢ノ逆鉾には上杉謙信が直接列挙されていた(A/B枠はskill≠afterSkillのためA-3-12違反)のを削除しgrantedViaSkillsで救天慈愛を参照する形に修正。救天慈愛のeffectSummary/target/trTableが「対象:全」で途切れており攻撃倍率・飛翔7が欠落していたため生HTMLで補完し、飛翔・人数依存(攻撃)一覧へのcategoryLinksも追加(data/skill/救天慈愛.json)。reviewedOk:trueに更新。"
  ],
- "reviewedOk": true
+ "reviewedOk": true,
+ "categoryLinks": [
+  {
+   "href": "skills-hishou-atk.html",
+   "label": "飛翔スキル一覧(攻撃)を見る"
+  }
+ ]
 }

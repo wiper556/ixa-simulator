@@ -126,5 +126,11 @@
   "影王絶技.jsonのcategoryLinksはskills-taitai.htmlを指しているが、同ページ本体(独自複製配列)にこのスキルの行が無い。skills-taitai.htmlは担当範囲外の共有一覧ページのため今回は追記せず申し送りとする。",
   "章は情報源(ixanary/ixawiki)に記載が無いため未確認。"
  ],
- "reviewedOk": true
+ "reviewedOk": true,
+ "categoryLinks": [
+  {
+   "href": "skills-taitai.html",
+   "label": "撤退スキル一覧を見る"
+  }
+ ]
 }

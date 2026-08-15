@@ -103,5 +103,15 @@
   "章は情報源に記載が無いため未確認。ixanary.com/ixawiki.comのカードページに記載が無く未確認のまま。",
   "2026-08-15(黄丸化検証): rankGrades・攻防兵法・コスト・指揮兵数をixanary.com(cards/2807)とixawiki.com(BushoCard/2807霧隠才蔵)の生HTMLで再照合し完全一致を確認。skillDetail/trTableが「攻撃110%上昇 防御110%上昇」で切れており「所属部隊の武将が飛翔Xを持つとき、それらは代わりに飛翔[X+4]を持つ(模倣不可・部隊内重複不可)」が欠落していたため生HTMLで補完(data/skill/煙霞迷霧.jsonは既に完全だった)。synthesisTable全5行をixanary(skills/煙霞迷霧)の合成テーブル(1次/2次)で完全一致を確認(A=戦陣 破軍[A]→天穿神滅[SS]、B=夜叉源氏轟[A]自己参照、C=木遁封魔[S]→遁世影武者[B]、S1=煙霞迷霧自己参照、S2=遁世影武者[B]→風林火山[S])。C/S2行のafter系フィールドがnullだったため遁世影武者の実際の性能(確率50%/部隊長/初期スキルを模倣)で補完。A-3-11逆引きで、天穿神滅・風林火山に霧隠才蔵が直接列挙されていた(いずれもskill≠afterSkillのためA-3-12違反、grantedViaSkillsは天穿神滅は既存・風林火山は今回追加)のを削除。遁世影武者[B]は既存ページ(風林火山)の移植元のため新規ページを作成(A-3-9例外)。木遁封魔・煙霞迷霧・戦陣 破軍は既に正しく登録済みだった。reviewedOk:trueに更新。"
  ],
- "reviewedOk": true
+ "reviewedOk": true,
+ "categoryLinks": [
+  {
+   "href": "skills-hishou-atk.html",
+   "label": "飛翔スキル一覧(攻撃)を見る"
+  },
+  {
+   "href": "skills-hishou-def.html",
+   "label": "飛翔スキル一覧(防御)を見る"
+  }
+ ]
 }

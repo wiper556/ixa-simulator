@@ -126,5 +126,11 @@
   "2026-08-15: 思金神ノ深謀.jsonのsourceCharactersに駒姫がslot:\"C\"のみで登録されており、synthesisTableではS2枠でも思金神ノ深謀(自己参照)を持つため漏れていた。slot:\"C・S2\"に修正(A-3-11逆引き確認で発見)。",
   "章は情報源(ixanary/ixawiki)に記載が無いため未確認。"
  ],
- "reviewedOk": true
+ "reviewedOk": true,
+ "categoryLinks": [
+  {
+   "href": "skills-takuetsu.html",
+   "label": "卓越スキル一覧を見る"
+  }
+ ]
 }

@@ -46,6 +46,24 @@ def find_general(no):
             return json.load(io.open(fp, encoding="utf-8")), db
     return None, None
 
+
+# 章を引くための表。sourceCharacters の並べ替えに使う。
+CH_OF_NO = {}
+for _d in DB_OF_DIR:
+    _p = os.path.join(ROOT, "data", _d)
+    if os.path.isdir(_p):
+        for _fn in os.listdir(_p):
+            if _fn.endswith(".json"):
+                CH_OF_NO[_fn[:-5]] = json.load(
+                    io.open(os.path.join(_p, _fn), encoding="utf-8")).get("ch")
+
+
+def src_key(c):
+    """入手可能な武将の並び: 章の昇順 → カードNo.の昇順。未確認は最後。"""
+    no = str(c.get("no") or "")
+    m = re.match(r"^(\d+)章$", CH_OF_NO.get(no) or "")
+    return (int(m.group(1)) if m else 9999, int(no) if no.isdigit() else 0)
+
 # --- S-05: 逆引き ---
 added = 0
 via = 0
@@ -76,6 +94,8 @@ for no in NOS:
                     row["note"] = ["%s(%s)のsynthesisTable %s枠(%s)"
                                    % (ent["name"], no, r["slot"], TODAY)]
                     sc.append(row)
+                    # 追記した順のままだと章もカード番号もばらばらになる
+                    js["sourceCharacters"] = sorted(sc, key=src_key)
                     io.open(sp, "w", encoding="utf-8", newline="\n").write(
                         json.dumps(js, ensure_ascii=False, indent=1) + "\n")
                     added += 1

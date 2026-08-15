@@ -128,5 +128,15 @@
   "2026-08-15黄丸化検証で発見・修正: skills.html/data/skill/神羅聖域.jsonのsourceCharactersに伊賀崎道順(2839)のS1枠が漏れていた(C枠のみ登録されていた)ため追加。",
   "2026-08-15追記(git logで発覚したA-3-12違反の是正): 神羅聖域のC枠は滅塞忍法(元スキル)のafterSkillでありskillとは一致しないため、C枠への直接列挙(元々あった)を削除しS1枠(skill一致)のみ残した。滅塞忍法側には既にsourceCharactersにC枠で正しく登録済み。",
   "章は情報源に記載が無いため未確認(ixanary/ixawikiとも記載なし)。"
+ ],
+ "categoryLinks": [
+  {
+   "href": "skills-leadermimic.html",
+   "label": "部隊長模倣スキル一覧を見る"
+  },
+  {
+   "href": "skills-cost.html",
+   "label": "コスト減少スキル一覧を見る"
+  }
  ]
 }
