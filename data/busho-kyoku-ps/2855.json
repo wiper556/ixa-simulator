@@ -64,6 +64,9 @@
    "rank": "D",
    "afterSkill": "蒼刃ノ輔曳",
    "afterRank": "D",
+   "target": "弓器",
+   "rate": "38%",
+   "effectShort": "防御 43%上昇",
    "afterTarget": "弓器",
    "afterRate": "35%",
    "afterEffectShort": "防御27%上昇(攻撃部隊に兵器兵科がいれば効果2倍)"
@@ -76,7 +79,8 @@
    "afterRank": "SS",
    "target": "全 撤退 覇道",
    "rate": "100%",
-   "effectShort": "攻撃1130%上昇+速度200%上昇"
+   "effectShort": "攻撃 1130%上昇+速度 200%上昇",
+   "afterEffectShort": "攻撃 1130%上昇+速度 200%上昇"
   },
   {
    "slot": "C",
@@ -96,7 +100,9 @@
    "skill": "虎巫",
    "rank": "S",
    "afterSkill": "虎巫",
-   "afterRank": "S"
+   "afterRank": "S",
+   "effectShort": "攻撃 1000%上昇(敵の攻撃側武将数依存スキルに+1名)",
+   "afterEffectShort": "攻撃 1000%上昇(敵の攻撃側武将数依存スキルに+1名)"
   },
   {
    "slot": "S2",

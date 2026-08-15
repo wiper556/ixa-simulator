@@ -1,0 +1,105 @@
+{
+ "name": "浅井亮政",
+ "no": "2761",
+ "ch": "未確認",
+ "cost": 3.0,
+ "troop": "弓器焙防",
+ "sub": "",
+ "effect": "対象兵科を指揮した防御時のみ、敵軍の総攻撃力を7%低下",
+ "furigana": "あざいすけまさ",
+ "illustrator": "BISAI",
+ "imageFull": "assets/img/characters/no2761_full.png",
+ "imageChar": "assets/img/characters/no2761_char.png",
+ "atkBase": 1000,
+ "atkGrowth": 29.0,
+ "defBase": 1040,
+ "defGrowth": 30.0,
+ "tacticsBase": 510.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3250,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "S",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "江龍殲撃",
+ "skillDetail": "A/LV10 確率 40% 対象兵科を指揮した防御時のみ 敵軍の総攻撃力を7%低下/対象:弓器焙\n①対象兵科を指揮した防御時のみ 敵軍の総攻撃力を7%低下",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓器焙　確率 40% / 対象兵科を指揮した防御時のみ、敵軍の総攻撃力を7%低下"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "屈指の勇将",
+   "rank": "D",
+   "afterSkill": "屈指の勇将",
+   "afterRank": "D",
+   "target": "全",
+   "rate": "37%",
+   "effectShort": "攻撃 22%上昇",
+   "afterEffectShort": "攻撃 22%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "戦陣 破軍",
+   "rank": "A",
+   "afterSkill": "天穿神滅",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "44%",
+   "effectShort": "攻撃 66%上昇+防御 66%上昇",
+   "afterTarget": "砲器",
+   "afterRate": "50%",
+   "afterEffectShort": "攻撃((ランク+1)xコストx3) %上昇 部隊ランクとコストで効果が変化"
+  },
+  {
+   "slot": "C",
+   "skill": "災禍ノ老仙",
+   "rank": "A",
+   "afterSkill": "爆雷平蜘蛛",
+   "afterRank": "B",
+   "target": "全",
+   "rate": "50%",
+   "effectShort": "敵軍の兵士被害数+25%",
+   "afterTarget": "全",
+   "afterRate": "30%",
+   "afterEffectShort": "攻撃戦闘勝利時のみ、敵軍1部隊の武将に追加ダメージ+45"
+  },
+  {
+   "slot": "S1",
+   "skill": "今川仮名目録",
+   "rank": "A",
+   "afterSkill": "今川仮名目録",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "35%",
+   "effectShort": "攻撃部隊武将の特殊効果付き追加スキル発動率を低下",
+   "afterEffectShort": "攻撃部隊武将の特殊効果付き追加スキル発動率を低下"
+  },
+  {
+   "slot": "S2",
+   "skill": "万年君",
+   "rank": "A",
+   "afterSkill": "質実剛健",
+   "afterRank": "B",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "攻撃 30%上昇",
+   "afterTarget": "弓馬砲",
+   "afterRate": "27%",
+   "afterEffectShort": "攻撃防御 ((1+武将ランク)x武将コストx1.9) %上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/2761 と skills/江龍殲撃)およびixawiki(BushoCard/2761浅井亮政)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

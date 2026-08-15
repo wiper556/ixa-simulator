@@ -1,0 +1,109 @@
+{
+ "name": "柳生宗矩",
+ "no": "2793",
+ "ch": "未確認",
+ "cost": 3.0,
+ "troop": "全攻",
+ "sub": "",
+ "effect": "攻撃 55%上昇 防御 55%上昇",
+ "furigana": "やぎゅうむねのり",
+ "illustrator": "影井由宇",
+ "imageFull": "assets/img/characters/no2793_full.png",
+ "imageChar": "assets/img/characters/no2793_char.png",
+ "atkBase": 1170,
+ "atkGrowth": 70.0,
+ "defBase": 1170,
+ "defGrowth": 70.0,
+ "tacticsBase": 600.0,
+ "tacticsGrowth": 3.0,
+ "lv0Troops": 3300,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "活人剣",
+ "skillDetail": "A/LV10 確率 100% 攻撃 55%上昇 防御 55%上昇/対象:全\n①攻撃が55%上昇 防御 55%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 攻撃 55%上昇 防御 55%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "活人剣",
+   "rank": "A",
+   "afterSkill": "鬼滅刺",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "攻撃 55%上昇 防御 55%上昇",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 70%上昇 防御 70%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "剣聖新陰",
+   "rank": "A",
+   "afterSkill": "古今無双ノ将",
+   "afterRank": "A",
+   "target": "槍器鉄",
+   "rate": "100%",
+   "effectShort": "防御 77%上昇",
+   "afterTarget": "全",
+   "afterRate": "37%",
+   "afterEffectShort": "防御 (敵部隊移動速度÷1.5)%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "戦陣 一閃",
+   "rank": "A",
+   "afterSkill": "神光征軍",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "50%",
+   "effectShort": "攻撃 50%上昇",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 90%上昇+速度200%上昇(TRなし)"
+  },
+  {
+   "slot": "S1",
+   "skill": "鬼滅刺",
+   "rank": "A",
+   "afterSkill": "布都御魂ノ鬨",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "攻撃 70%上昇 防御 70%上昇",
+   "afterTarget": "全",
+   "afterRate": "35%",
+   "afterEffectShort": "攻撃 40%上昇+防御 40%上昇(部隊内レアリティS以上のスキル個数×20%加算)"
+  },
+  {
+   "slot": "S2",
+   "skill": "鬼滅刺",
+   "rank": "A",
+   "afterSkill": "布都御魂ノ鬨",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "攻撃 70%上昇 防御 70%上昇",
+   "afterTarget": "全",
+   "afterRate": "35%",
+   "afterEffectShort": "攻撃 40%上昇+防御 40%上昇(部隊内レアリティS以上のスキル個数×20%加算)"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/2793 と skills/活人剣)およびixawiki(BushoCard/2793柳生宗矩)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

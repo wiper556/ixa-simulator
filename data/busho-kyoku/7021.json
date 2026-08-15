@@ -69,17 +69,26 @@
   {
    "slot": "B",
    "skill": "鉄国",
-   "rank": "A"
+   "rank": "A",
+   "target": "弓・砲・器",
+   "rate": "40%",
+   "effectShort": "攻撃 440%上昇+防御 440%上昇+破壊 110%上昇"
   },
   {
    "slot": "C",
    "skill": "破窮ノ勇将",
-   "rank": "A"
+   "rank": "A",
+   "target": "弓・砲・器",
+   "rate": "60%",
+   "effectShort": "防御 100%上昇(拠点待機90分ごとに1.5倍・上限5回)"
   },
   {
    "slot": "S1",
    "skill": "虎落",
-   "rank": "A"
+   "rank": "A",
+   "target": "槍・砲・器",
+   "rate": "48%",
+   "effectShort": "防御 400%上昇(部隊コスト10以下で2倍)"
   },
   {
    "slot": "S2",
@@ -87,7 +96,7 @@
    "rank": "A",
    "target": "全",
    "rate": "65%",
-   "effectShort": "攻撃465%上昇+防御465%上昇(模倣不可)"
+   "effectShort": "攻撃 465%上昇+防御 465%上昇(模倣不可)"
   }
  ],
  "notes": [

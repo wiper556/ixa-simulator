@@ -1,0 +1,124 @@
+{
+ "name": "春姫",
+ "no": "2842",
+ "ch": "未確認",
+ "cost": 3.5,
+ "troop": "弓砲器防",
+ "sub": "",
+ "effect": "防御 440%上昇",
+ "furigana": "はるひめ",
+ "illustrator": "ちゃきん",
+ "imageFull": "assets/img/characters/no2842_full.png",
+ "imageChar": "assets/img/characters/no2842_char.png",
+ "atkBase": 1020,
+ "atkGrowth": 40.0,
+ "defBase": 1220,
+ "defGrowth": 63.0,
+ "tacticsBase": 550.0,
+ "tacticsGrowth": 3.0,
+ "lv0Troops": 3770,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "花信風",
+ "skillDetail": "S/LV10 確率 100% 防御 440%上昇/対象:弓砲器\n①防御が440%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓砲器　確率 100% / 防御 440%上昇"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": "弓砲器　確率 100% / 防御 510%上昇"
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": "弓砲器　確率 100% / 防御 680%上昇"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": "弓砲器　確率 100% / 防御 890%上昇"
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": "弓砲器　確率 100% / 防御 1330%上昇"
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": "弓砲器　確率 100% / 防御 1770%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "国津破邪ノ楯",
+   "rank": "SS",
+   "afterSkill": "国津破邪ノ楯",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "60%",
+   "effectShort": "防御 60.04%上昇(部隊総コストで変動)",
+   "afterEffectShort": "防御 60.04%上昇(部隊総コストで変動)"
+  },
+  {
+   "slot": "B",
+   "skill": "旌旗翳天ノ覇陣",
+   "rank": "SS",
+   "afterSkill": "旌旗翳天ノ覇陣",
+   "afterRank": "SS",
+   "target": "全 兵站",
+   "rate": "54%",
+   "effectShort": "防御 90.11%上昇(部隊の総コストで効果が変化)",
+   "afterEffectShort": "防御 90.11%上昇(部隊の総コストで効果が変化)"
+  },
+  {
+   "slot": "C",
+   "skill": "國才連豪",
+   "rank": "SS",
+   "afterSkill": "國才連豪",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "50%",
+   "effectShort": "防御 310%×國才連豪所持武将数(4人)=1240.0%上昇",
+   "afterEffectShort": "防御 310%×國才連豪所持武将数(4人)=1240.0%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "花信風",
+   "rank": "S",
+   "afterSkill": "花信風",
+   "afterRank": "S",
+   "target": "弓砲器",
+   "rate": "100%",
+   "effectShort": "防御 440%上昇",
+   "afterEffectShort": "防御 440%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "万里嵐壁",
+   "rank": "SS",
+   "afterSkill": "万里嵐壁",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "66%",
+   "effectShort": "防御 200%上昇+敵軍部隊数×40%を防御効果に加算(模倣不可)",
+   "afterEffectShort": "防御 200%上昇+敵軍部隊数×40%を防御効果に加算(模倣不可)"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/2842 と skills/花信風)およびixawiki(BushoCard/2842春姫)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

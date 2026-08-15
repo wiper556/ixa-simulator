@@ -44,7 +44,7 @@
    "effectShort": "攻撃450%上昇+速度100%上昇(模倣不可)",
    "afterTarget": "全",
    "afterRate": "65%",
-   "afterEffectShort": "攻撃465%上昇+防御465%上昇(模倣不可)"
+   "afterEffectShort": "攻撃 465%上昇+防御 465%上昇(模倣不可)"
   },
   {
    "slot": "B",
@@ -70,14 +70,18 @@
    "effectShort": "速度: 170%上昇(破壊: 170%上昇)",
    "afterTarget": "全 覇道",
    "afterRate": "100%",
-   "afterEffectShort": "攻撃320%上昇+速度70%上昇+覇道を持つため所属部隊の武将のスキルを無効化・発動率低下から保護"
+   "afterEffectShort": "攻撃 320%上昇+速度 70%上昇+覇道を持つため所属部隊の武将のスキルを無効化・発動率低下から保護"
   },
   {
    "slot": "S1",
    "skill": "弧将墨守",
    "rank": "A",
    "afterSkill": "弧将墨守",
-   "afterRank": "A"
+   "afterRank": "A",
+   "target": "槍・馬・器・騎",
+   "rate": "40%",
+   "effectShort": "攻撃 600%上昇(速度 70%上昇は確率100%)",
+   "afterEffectShort": "攻撃 600%上昇(速度 70%上昇は確率100%)"
   },
   {
    "slot": "S2",
@@ -87,7 +91,10 @@
    "afterRank": "A",
    "target": "全",
    "rate": "65%",
-   "effectShort": "攻撃465%上昇+防御465%上昇(模倣不可)"
+   "effectShort": "攻撃 465%上昇+防御 465%上昇(模倣不可)",
+   "afterEffectShort": "攻撃 465%上昇+防御 465%上昇(模倣不可)",
+   "afterTarget": "全",
+   "afterRate": "65%"
   }
  ],
  "notes": [

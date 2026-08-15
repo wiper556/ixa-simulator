@@ -1,0 +1,107 @@
+{
+ "name": "狩野永徳",
+ "no": "2821",
+ "ch": "未確認",
+ "cost": 1.5,
+ "troop": "全",
+ "sub": "",
+ "effect": "攻撃戦闘時、防御側拠点所有者のランダムな1部隊の総防御力を25%低下",
+ "furigana": "かのうえいとく",
+ "illustrator": "鏑木康隆",
+ "imageFull": "assets/img/characters/no2821_full.png",
+ "imageChar": "assets/img/characters/no2821_char.png",
+ "atkBase": 1170,
+ "atkGrowth": 57.0,
+ "defBase": 1100,
+ "defGrowth": 45.0,
+ "tacticsBase": 560.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 2350,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "乱界図",
+ "skillDetail": "S/LV10 確率 30% 攻撃戦闘時防御側拠点所有者のランダムな1部隊の総防御力を25%低下/対象:全\n①攻撃戦闘時防御側拠点所有者のランダムな1部隊の総防御力を25%低下する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 30% / 攻撃戦闘時、防御側拠点所有者のランダムな1部隊の総防御力を25%低下"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "乱界図",
+   "rank": "S",
+   "afterSkill": "十死一生",
+   "afterRank": "S",
+   "target": "全",
+   "rate": "30%",
+   "effectShort": "攻撃戦闘時、防御側拠点所有者のランダムな1部隊の総防御力を25%低下",
+   "afterTarget": "槍・弓・馬",
+   "afterRate": "42%",
+   "afterEffectShort": "攻撃 160%上昇(攻撃時のみ自部隊の兵士被害5%減少・模倣不可)"
+  },
+  {
+   "slot": "B",
+   "skill": "悪屋形",
+   "rank": "S",
+   "afterSkill": "氷塊三連撃",
+   "afterRank": "SSS",
+   "target": "全",
+   "rate": "55%",
+   "effectShort": "攻撃 170%上昇(自部隊同時攻撃で消費する名声値-35・重複不可)",
+   "afterTarget": "全",
+   "afterRate": "45%",
+   "afterEffectShort": "攻撃 170%上昇(自部隊同時攻撃時、部隊総コストからこの武将分を最大2まで除外・模倣不可)"
+  },
+  {
+   "slot": "C",
+   "skill": "王佐ノ才",
+   "rank": "B",
+   "afterSkill": "覇国無双",
+   "afterRank": "S",
+   "target": "弓馬砲器",
+   "rate": "40%",
+   "effectShort": "攻撃 54%上昇",
+   "afterTarget": "全",
+   "afterRate": "35%",
+   "afterEffectShort": "攻撃 40%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "十死一生",
+   "rank": "S",
+   "afterSkill": "開闢ノ逆鉾",
+   "afterRank": "SS",
+   "target": "槍・弓・馬",
+   "rate": "42%",
+   "effectShort": "攻撃 160%上昇(攻撃時のみ自部隊の兵士被害5%減少・模倣不可)",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 254%上昇+卓越:攻撃戦闘時追加確率30%で自部隊の兵士被害15%減少(部隊内重複上限2・模倣不可)"
+  },
+  {
+   "slot": "S2",
+   "skill": "天香山命",
+   "rank": "SS",
+   "afterSkill": "天香山命",
+   "afterRank": "SS",
+   "target": "全 覇道",
+   "rate": "100%",
+   "effectShort": "攻撃 120%上昇+速度 90%上昇",
+   "afterEffectShort": "攻撃 120%上昇+速度 90%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/2821 と skills/乱界図)およびixawiki(BushoCard/2821狩野永徳)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

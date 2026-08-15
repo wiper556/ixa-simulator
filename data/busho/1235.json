@@ -41,7 +41,8 @@
    "afterRank": "SS",
    "rate": "100%",
    "target": "全 覇道",
-   "effectShort": "攻撃120%上昇+速度90%上昇"
+   "effectShort": "攻撃 120%上昇+速度 90%上昇",
+   "afterEffectShort": "攻撃 120%上昇+速度 90%上昇"
   },
   {
    "slot": "B",
@@ -51,7 +52,8 @@
    "afterRank": "SS",
    "rate": "70%",
    "target": "自身",
-   "effectShort": "自身が持つ初期スキルを模倣する(戦闘スキルのみ)"
+   "effectShort": "自身が持つ初期スキルを模倣する(戦闘スキルのみ)",
+   "afterEffectShort": "自身が持つ初期スキルを模倣する(戦闘スキルのみ)"
   },
   {
    "slot": "C",
@@ -61,7 +63,8 @@
    "afterRank": "SS",
    "rate": "70%",
    "target": "自身",
-   "effectShort": "自身が持つ初期スキルを模倣する(戦闘スキルのみ)"
+   "effectShort": "自身が持つ初期スキルを模倣する(戦闘スキルのみ)",
+   "afterEffectShort": "自身が持つ初期スキルを模倣する(戦闘スキルのみ)"
   },
   {
    "slot": "S1",
@@ -71,7 +74,8 @@
    "afterRank": "SSS",
    "rate": "70%",
    "target": "自身",
-   "effectShort": "自身が持つ初期スキルを通常攻撃/防御効果1.25倍にして模倣する"
+   "effectShort": "自身が持つ初期スキルを通常攻撃/防御効果1.25倍にして模倣する",
+   "afterEffectShort": "自身が持つ初期スキルを通常攻撃/防御効果1.25倍にして模倣する"
   },
   {
    "slot": "S2",
@@ -81,7 +85,8 @@
    "afterRank": "S",
    "rate": "100%",
    "target": "全",
-   "effectShort": "攻撃98%上昇(討伐ゲージ300まで回復)"
+   "effectShort": "攻撃 170%上昇(最大兵数指揮時の攻撃戦闘敗北で討伐ゲージ300まで回復・模倣不可)",
+   "afterEffectShort": "攻撃 170%上昇(最大兵数指揮時の攻撃戦闘敗北で討伐ゲージ300まで回復・模倣不可)"
   }
  ],
  "notes": [

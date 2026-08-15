@@ -1,0 +1,105 @@
+{
+ "name": "神代勝利",
+ "no": "2756",
+ "ch": "未確認",
+ "cost": 3.5,
+ "troop": "全攻",
+ "sub": "",
+ "effect": "攻撃 0%上昇",
+ "furigana": "くましろかつとし",
+ "illustrator": "塚本陽子",
+ "imageFull": "assets/img/characters/no2756_full.png",
+ "imageChar": "assets/img/characters/no2756_char.png",
+ "atkBase": 1040,
+ "atkGrowth": 28.0,
+ "defBase": 990,
+ "defGrowth": 25.0,
+ "tacticsBase": 500.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3200,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "夢買い",
+ "skillDetail": "A/LV10 確率 30% 攻撃 0%上昇/対象:全\n①攻撃が0%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 30% / 攻撃 0%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "修羅の援兵",
+   "rank": "D",
+   "afterSkill": "修羅の援兵",
+   "afterRank": "D",
+   "target": "槍弓馬",
+   "rate": "25%",
+   "effectShort": "攻撃 25%上昇",
+   "afterEffectShort": "攻撃 25%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "武断の破魔矢",
+   "rank": "B",
+   "afterSkill": "質実剛健",
+   "afterRank": "B",
+   "target": "弓砲",
+   "rate": "100%",
+   "effectShort": "攻撃 16%上昇",
+   "afterTarget": "弓馬砲",
+   "afterRate": "27%",
+   "afterEffectShort": "攻撃防御 ((1+武将ランク)x武将コストx1.9) %上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "戦陣 破軍",
+   "rank": "A",
+   "afterSkill": "天穿神滅",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "44%",
+   "effectShort": "攻撃 66%上昇+防御 66%上昇",
+   "afterTarget": "砲器",
+   "afterRate": "50%",
+   "afterEffectShort": "攻撃((ランク+1)xコストx3) %上昇 部隊ランクとコストで効果が変化"
+  },
+  {
+   "slot": "S1",
+   "skill": "風狂幻術",
+   "rank": "B",
+   "afterSkill": "風狂幻術",
+   "afterRank": "B",
+   "target": "部隊長",
+   "rate": "53%",
+   "effectShort": "部隊長の初期スキルを模倣(戦闘スキルのみ・TRなし)",
+   "afterEffectShort": "部隊長の初期スキルを模倣(戦闘スキルのみ・TRなし)"
+  },
+  {
+   "slot": "S2",
+   "skill": "遁世影武者",
+   "rank": "B",
+   "afterSkill": "風林火山",
+   "afterRank": "S",
+   "target": "部隊長",
+   "rate": "50%",
+   "effectShort": "所属部隊の部隊長が持つ初期スキルを模倣する(戦闘スキルのみ)",
+   "afterTarget": "槍・弓・馬",
+   "afterRate": "45%",
+   "afterEffectShort": "攻撃 30%上昇+破壊15%上昇(TRなし)"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/2756 と skills/夢買い)およびixawiki(BushoCard/2756神代勝利)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

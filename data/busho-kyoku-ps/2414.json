@@ -71,7 +71,7 @@
    "afterRank": "SS",
    "target": null,
    "rate": null,
-   "effectShort": null,
+   "effectShort": "攻撃42%上昇+防御42%上昇",
    "afterTarget": "全",
    "afterRate": "42%",
    "afterEffectShort": "攻撃 25.39%上昇(部隊総コストで変動、TRなし)"
@@ -84,10 +84,10 @@
    "afterRank": "SS",
    "target": "全",
    "rate": "44%",
-   "effectShort": "攻撃66%上昇(防御66%上昇)",
+   "effectShort": "攻撃 66%上昇+防御 66%上昇",
    "afterTarget": "砲器",
    "afterRate": "50%",
-   "afterEffectShort": "攻撃((ランク+1)xコストx3) %上昇(部隊ランクとコストで効果が変化)"
+   "afterEffectShort": "攻撃 ((ランク+1)xコストx3) %上昇(部隊ランクとコストで効果が変化)"
   },
   {
    "slot": "C",
@@ -123,7 +123,8 @@
    "afterRank": "SS",
    "target": "馬・砲・器",
    "rate": "40%",
-   "effectShort": "攻撃(18+コスト×8)%上昇+破壊(8+コスト×3)%上昇"
+   "effectShort": "攻撃 (18+コスト×8)%上昇+破壊 (8+コスト×3)%上昇(武将のコストで効果が変化)",
+   "afterEffectShort": "攻撃 (18+コスト×8)%上昇+破壊 (8+コスト×3)%上昇(武将のコストで効果が変化)"
   }
  ],
  "notes": [

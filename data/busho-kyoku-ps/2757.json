@@ -1,0 +1,105 @@
+{
+ "name": "唐沢玄蕃",
+ "no": "2757",
+ "ch": "未確認",
+ "cost": 0.0,
+ "troop": "槍砲器攻",
+ "sub": "",
+ "effect": "攻撃 45%上昇",
+ "furigana": "からさわげんば",
+ "illustrator": "BISAI",
+ "imageFull": "assets/img/characters/no2757_full.png",
+ "imageChar": "assets/img/characters/no2757_char.png",
+ "atkBase": 1000,
+ "atkGrowth": 28.0,
+ "defBase": 1000,
+ "defGrowth": 28.0,
+ "tacticsBase": 520.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 1500,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "飛び六方",
+ "skillDetail": "A/LV10 確率 50% 攻撃 45%上昇/対象:槍砲器\n①攻撃が45%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍砲器　確率 50% / 攻撃 45%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "暁光",
+   "rank": "D",
+   "afterSkill": "屈指の勇将",
+   "afterRank": "D",
+   "target": "全",
+   "rate": "24%",
+   "effectShort": "攻撃 38%上昇",
+   "afterTarget": "全",
+   "afterRate": "37%",
+   "afterEffectShort": "攻撃 22%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "衝角",
+   "rank": "C",
+   "afterSkill": "武装商船",
+   "afterRank": "A",
+   "target": "砲器",
+   "rate": "36%",
+   "effectShort": "攻撃 36%上昇",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "部隊内全武将が持つ全スキルに「器」対象を追加する(兵科対象スキル限定・模倣不可)"
+  },
+  {
+   "slot": "C",
+   "skill": "猿臂ノ術",
+   "rank": "B",
+   "afterSkill": "猿臂ノ術",
+   "afterRank": "B",
+   "target": "槍弓器",
+   "rate": "100%",
+   "effectShort": "攻撃 25%上昇",
+   "afterEffectShort": "攻撃 25%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "飛び六方",
+   "rank": "A",
+   "afterSkill": "飛び六方",
+   "afterRank": "A",
+   "target": "槍砲器",
+   "rate": "50%",
+   "effectShort": "攻撃 45%上昇",
+   "afterEffectShort": "攻撃 45%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "武装商船",
+   "rank": "A",
+   "afterSkill": "鉄砲商人",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "部隊内全武将が持つ全スキルに「器」対象を追加する(兵科対象スキル限定・模倣不可)",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "部隊内全武将が持つ全スキルに「砲」対象を追加する(兵科対象スキル限定・模倣不可)"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/2757 と skills/飛び六方)およびixawiki(BushoCard/2757唐沢玄蕃)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

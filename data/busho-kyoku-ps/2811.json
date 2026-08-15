@@ -1,0 +1,107 @@
+{
+ "name": "角隈石宗",
+ "no": "2811",
+ "ch": "未確認",
+ "cost": 4.0,
+ "troop": null,
+ "sub": "",
+ "effect": null,
+ "furigana": "つのくませきそう",
+ "illustrator": "池田宗隆",
+ "imageFull": "assets/img/characters/no2811_full.png",
+ "imageChar": "assets/img/characters/no2811_char.png",
+ "atkBase": 1100,
+ "atkGrowth": 52.0,
+ "defBase": 1100,
+ "defGrowth": 52.0,
+ "tacticsBase": 520.0,
+ "tacticsGrowth": 3.0,
+ "lv0Troops": 4210,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "呪法死界",
+ "skillDetail": null,
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "部隊長 所属部隊の部隊長が持つ模倣可能な初期スキルを、通常攻撃／防御効果を1.1倍して模倣する　確率 60%"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "呪法死界",
+   "rank": "S",
+   "afterSkill": "猛火ノ追撃",
+   "afterRank": "SSS",
+   "target": "部隊長",
+   "rate": "60%",
+   "effectShort": "部隊長の初期スキルを1.1倍で模倣",
+   "afterTarget": "全",
+   "afterRate": "70%",
+   "afterEffectShort": "攻撃 45%上昇(部隊総コストで変動、TRなし)"
+  },
+  {
+   "slot": "B",
+   "skill": "呪法死界",
+   "rank": "S",
+   "afterSkill": "猛火ノ追撃",
+   "afterRank": "SSS",
+   "target": "部隊長",
+   "rate": "60%",
+   "effectShort": "部隊長の初期スキルを1.1倍で模倣",
+   "afterTarget": "全",
+   "afterRate": "70%",
+   "afterEffectShort": "攻撃 45%上昇(部隊総コストで変動、TRなし)"
+  },
+  {
+   "slot": "C",
+   "skill": "八重言代主神",
+   "rank": "SS",
+   "afterSkill": "無窮天斥陣",
+   "afterRank": "SS",
+   "target": "自身",
+   "rate": "70%",
+   "effectShort": "初期スキル(戦闘スキルのみ)を模倣(1倍)",
+   "afterTarget": "槍弓馬",
+   "afterRate": "40%",
+   "afterEffectShort": "防御63%上昇 (攻撃部隊に兵器兵科がいれば効果1.5倍)"
+  },
+  {
+   "slot": "S1",
+   "skill": "猛火ノ追撃",
+   "rank": "SSS",
+   "afterSkill": "猛火ノ追撃",
+   "afterRank": "SSS",
+   "target": "全",
+   "rate": "70%",
+   "effectShort": "攻撃 45%上昇(部隊総コストで変動、TRなし)",
+   "afterEffectShort": "攻撃 45%上昇(部隊総コストで変動、TRなし)"
+  },
+  {
+   "slot": "S2",
+   "skill": "紅蓮ノ刹",
+   "rank": "S",
+   "afterSkill": "猛火ノ追撃",
+   "afterRank": "SSS",
+   "target": "槍砲器",
+   "rate": "100%",
+   "effectShort": "攻撃82%上昇 卓越 追加確率40%で攻撃効果が2.5倍",
+   "afterTarget": "全",
+   "afterRate": "70%",
+   "afterEffectShort": "攻撃 45%上昇(部隊総コストで変動、TRなし)"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/2811 と skills/呪法死界)およびixawiki(BushoCard/2811角隈石宗)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

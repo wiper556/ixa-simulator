@@ -66,7 +66,8 @@
    "afterRank": "SS",
    "target": "全",
    "rate": "48%",
-   "effectShort": "防御 910%上昇(コスト-1.5)"
+   "effectShort": "防御 910%上昇(部隊消費コスト-1.5・模倣不可)",
+   "afterEffectShort": "防御 910%上昇(部隊消費コスト-1.5・模倣不可)"
   },
   {
    "slot": "B",
@@ -76,7 +77,8 @@
    "afterRank": "SS",
    "target": "全 覇道",
    "rate": "42%",
-   "effectShort": "攻撃1010%上昇+防御1010%上昇+破壊150%上昇"
+   "effectShort": "攻撃1010%上昇+防御1010%上昇+破壊150%上昇",
+   "afterEffectShort": "攻撃1010%上昇+防御1010%上昇+破壊150%上昇"
   },
   {
    "slot": "C",
@@ -86,7 +88,8 @@
    "afterRank": "S",
    "target": "槍・弓・器・鉄",
    "rate": "55%",
-   "effectShort": "防御 740%×2(部隊コスト10以下)=1480%上昇"
+   "effectShort": "防御 740%×2(部隊コスト10以下)=1480%上昇",
+   "afterEffectShort": "防御 740%×2(部隊コスト10以下)=1480%上昇"
   },
   {
    "slot": "S1",
@@ -96,7 +99,8 @@
    "afterRank": "S",
    "target": "全 無尽",
    "rate": "40%",
-   "effectShort": "防御 8%×防御参加武将数(280人)=2240.0%"
+   "effectShort": "防御 8%×防御参加武将数(280人)=2240.0%",
+   "afterEffectShort": "防御 8%×防御参加武将数(280人)=2240.0%"
   },
   {
    "slot": "S2",
@@ -106,7 +110,8 @@
    "afterRank": "SS",
    "target": "全",
    "rate": "60%",
-   "effectShort": "攻撃 810%上昇+防御810%上昇(コスト-1)"
+   "effectShort": "攻撃 810%上昇+防御810%上昇(コスト-1・特殊効果は模倣不可)",
+   "afterEffectShort": "攻撃 810%上昇+防御810%上昇(コスト-1・特殊効果は模倣不可)"
   }
  ],
  "notes": [

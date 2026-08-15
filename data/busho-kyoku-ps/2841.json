@@ -1,0 +1,126 @@
+{
+ "name": "多羅尾光俊",
+ "no": "2841",
+ "ch": "未確認",
+ "cost": 4.0,
+ "troop": "部隊長",
+ "sub": "",
+ "effect": "部隊長の初期スキルを模倣する(この武将が飛翔Xを持つとき飛翔[X+4]となる)",
+ "furigana": "たらおみつとし",
+ "illustrator": "塚本陽子",
+ "imageFull": "assets/img/characters/no2841_full.png",
+ "imageChar": "assets/img/characters/no2841_char.png",
+ "atkBase": 1140,
+ "atkGrowth": 58.0,
+ "defBase": 1140,
+ "defGrowth": 58.0,
+ "tacticsBase": 560.0,
+ "tacticsGrowth": 3.0,
+ "lv0Troops": 4390,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "影国ノ加護",
+ "skillDetail": "S/LV10 確率 55% 部隊長の初期スキルを模倣/対象:部隊長\n模倣不可\n①所属部隊の部隊長が持つ模倣可能な初期スキルを模倣する\n②この武将が飛翔Xを持つとき飛翔[X+4]となる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "部隊長　確率 55% / 部隊長の初期スキルを模倣(この武将の飛翔X→X+4)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": "部隊長　確率 55% / 部隊長の初期スキルを模倣(この武将の飛翔X→X+5)"
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": "部隊長　確率 55% / 部隊長の初期スキルを模倣(この武将の飛翔X→X+6)"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": "部隊長　確率 55% / 部隊長の初期スキルを模倣(この武将の飛翔X→X+8)"
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": "部隊長　確率 55%(TR4以降は情報源に無い)"
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": "部隊長　確率 55%(TR4以降は情報源に無い)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "煙霞迷霧",
+   "rank": "S",
+   "afterSkill": "煙霞迷霧",
+   "afterRank": "S",
+   "target": "全",
+   "rate": "70%",
+   "effectShort": "飛翔8 攻撃110%上昇 防御110%上昇 所属部隊の武将が 飛翔X を持つとき、それらは代わりに 飛翔[X+4] を持つ(模倣不可・部隊内重複不可)",
+   "afterEffectShort": "飛翔8 攻撃110%上昇 防御110%上昇 所属部隊の武将が 飛翔X を持つとき、それらは代わりに 飛翔[X+4] を持つ(模倣不可・部隊内重複不可)"
+  },
+  {
+   "slot": "B",
+   "skill": "飛幻忍術",
+   "rank": "S",
+   "afterSkill": "煙霞迷霧",
+   "afterRank": "S",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "飛翔12 攻撃394%上昇 速度150%上昇 自部隊同時攻撃時、部隊総コストからこの武将分を除外(模倣不可・特殊効果は自部隊内では重複不可)",
+   "afterTarget": "全",
+   "afterRate": "70%",
+   "afterEffectShort": "飛翔8 攻撃110%上昇 防御110%上昇 所属部隊の武将が 飛翔X を持つとき、それらは代わりに 飛翔[X+4] を持つ(模倣不可・部隊内重複不可)"
+  },
+  {
+   "slot": "C",
+   "skill": "影国ノ加護",
+   "rank": "S",
+   "afterSkill": "影国ノ加護",
+   "afterRank": "S",
+   "target": "部隊長",
+   "rate": "55%",
+   "effectShort": "部隊長の初期スキルを模倣(この武将の飛翔X→X+4)",
+   "afterEffectShort": "部隊長の初期スキルを模倣(この武将の飛翔X→X+4)"
+  },
+  {
+   "slot": "S1",
+   "skill": "影国ノ加護",
+   "rank": "S",
+   "afterSkill": "影国ノ加護",
+   "afterRank": "S",
+   "target": "部隊長",
+   "rate": "55%",
+   "effectShort": "部隊長の初期スキルを模倣(この武将の飛翔X→X+4)",
+   "afterEffectShort": "部隊長の初期スキルを模倣(この武将の飛翔X→X+4)"
+  },
+  {
+   "slot": "S2",
+   "skill": "摩利支天ノ法",
+   "rank": "SSS",
+   "afterSkill": "摩利支天ノ法",
+   "afterRank": "SSS",
+   "target": "部隊長",
+   "rate": "70%",
+   "effectShort": "所属部隊の部隊長が持つ模倣可能な初期スキルを通常攻撃/防御効果1.25倍にして模倣する",
+   "afterEffectShort": "所属部隊の部隊長が持つ模倣可能な初期スキルを通常攻撃/防御効果1.25倍にして模倣する"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/2841 と skills/影国ノ加護)およびixawiki(BushoCard/2841多羅尾光俊)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

@@ -56,8 +56,8 @@
    "rate": "50%",
    "effectShort": "所属部隊の部隊長が持つ初期スキルを模倣する(戦闘スキルのみ)",
    "afterTarget": "槍・弓・馬",
-   "afterRate": "25%",
-   "afterEffectShort": "攻撃 15%上昇+破壊5%上昇(TRなし)"
+   "afterRate": "45%",
+   "afterEffectShort": "攻撃 30%上昇+破壊15%上昇(TRなし)"
   },
   {
    "slot": "C",
@@ -70,7 +70,7 @@
    "effectShort": "攻撃 77%上昇(卓越:追加確率30%で2倍)",
    "afterTarget": "全",
    "afterRate": "100%",
-   "afterEffectShort": "攻撃 125%上昇(卓越追加確率15%・4倍、TR5で攻撃160%)"
+   "afterEffectShort": "攻撃 125%上昇(卓越追加確率15%・4倍)"
   },
   {
    "slot": "S1",
@@ -93,7 +93,8 @@
    "afterRank": "A",
    "target": "全 卓越",
    "rate": "100%",
-   "effectShort": "攻撃340%上昇+防御340%上昇+部隊内卓越追加確率+20%(模倣不可・特殊効果は自部隊内では重複不可)"
+   "effectShort": "攻撃 340%上昇+防御 340%上昇+部隊内卓越追加確率+20%(模倣不可・特殊効果は自部隊内では重複不可)",
+   "afterEffectShort": "攻撃 340%上昇+防御 340%上昇+部隊内卓越追加確率+20%(模倣不可・特殊効果は自部隊内では重複不可)"
   }
  ],
  "notes": [

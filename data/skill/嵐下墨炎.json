@@ -1,0 +1,40 @@
+{
+ "name": "嵐下墨炎",
+ "rank": "S",
+ "baseRate": 50.0,
+ "target": "全",
+ "effectSummary": "S/LV10 確率 50% 部隊内武将の全スキルの卓越追加確率が70%上昇/対象:全\n模倣不可\n①部隊内武将の全スキルの卓越追加確率が70%上昇する(特殊効果は自部隊内では重複不可)",
+ "categoryLinks": [
+  {
+   "href": "skills-takuetsu.html",
+   "label": "卓越スキル一覧を見る"
+  }
+ ],
+ "sourceCharacters": [
+  {
+   "name": "俵屋宗達",
+   "no": "2825",
+   "slot": "A",
+   "db": "kyoku",
+   "note": [
+    "俵屋宗達(2825)のsynthesisTable A枠(2026-08-15)"
+   ]
+  }
+ ],
+ "notes": [
+  "ixanary.com(skills/嵐下墨炎)から登録(2026-08-14)。S以上のスキルはページを作る決まり(S-01)にもとづく新規作成。",
+  "対象・確率・効果文はixanaryの表記をうちの書式に直したもの。categoryLinksとsourceCharactersは各武将の登録時に追記する。",
+  "ownHiddenCandidateは、このスキルが1次候補として載っている枠(2825 俵屋宗達 A枠)の2次候補から(S-08)。"
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 50% / 部隊内武将の全スキルの卓越追加確率が70%上昇(模倣不可・特殊効果は自部隊内では重複不可)"
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "月詠ノ覇威",
+  "rank": "SS"
+ }
+}

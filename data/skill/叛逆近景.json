@@ -1,0 +1,37 @@
+{
+ "name": "叛逆近景",
+ "rank": "S",
+ "baseRate": 100,
+ "target": "全",
+ "noMimic": true,
+ "effectSummary": "S/LV10 確率 100% 攻撃395%上昇/対象:全\n①攻撃395%上昇する\n②卓越:追加確率1%で自部隊の兵士被害が20%減少する(部隊内重複上限2・模倣不可)",
+ "categoryLinks": [
+  {
+   "href": "skills-takuetsu.html",
+   "label": "卓越スキル一覧を見る"
+  },
+  {
+   "href": "skills-higai.html",
+   "label": "兵士被害減少スキル一覧を見る"
+  }
+ ],
+ "sourceCharacters": [
+  {
+   "name": "渡辺了",
+   "no": "2857",
+   "slot": "C",
+   "db": "kyoku"
+  }
+ ],
+ "notes": [
+  "2026-08-15: 渡辺了(2857)のsynthesisTable C枠に「卓越」を含む効果文を登録したためS-01によりページ新規作成。",
+  "渡辺了(2857)のC枠はafterSkill(移植後)が出典記事に無いため未設定。ownHiddenCandidateもそのため未設定。"
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 攻撃 395%上昇(卓越追加確率1%で兵士被害20%減少)"
+  }
+ ]
+}

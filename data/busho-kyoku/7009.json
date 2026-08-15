@@ -64,6 +64,9 @@
    "rank": "B",
    "afterSkill": "戦陣 轟砲",
    "afterRank": "A",
+   "target": "弓馬器",
+   "rate": "32%",
+   "effectShort": "防御 76%上昇+自部隊の武将ダメージ軽減3%(重複発動上限数4)",
    "afterTarget": "砲・器",
    "afterRate": "45%",
    "afterEffectShort": "攻撃66%上昇(防御66%上昇)"
@@ -73,7 +76,11 @@
    "skill": "不死鳥",
    "rank": "B",
    "afterSkill": "不死鳥",
-   "afterRank": "B"
+   "afterRank": "B",
+   "target": "槍砲器",
+   "rate": "37%",
+   "effectShort": "防御 34%上昇(自部隊の武将ダメージ軽減6%・重複発動上限数4)",
+   "afterEffectShort": "防御 34%上昇(自部隊の武将ダメージ軽減6%・重複発動上限数4)"
   },
   {
    "slot": "C",
@@ -93,7 +100,11 @@
    "skill": "無心武響",
    "rank": "A",
    "afterSkill": "無心武響",
-   "afterRank": "A"
+   "afterRank": "A",
+   "target": "槍・弓・器・鉄",
+   "rate": "42%",
+   "effectShort": "防御 360%上昇(武将ダメージ軽減3%)",
+   "afterEffectShort": "防御 360%上昇(武将ダメージ軽減3%)"
   },
   {
    "slot": "S2",
@@ -103,7 +114,10 @@
    "afterRank": "A",
    "target": "全",
    "rate": "65%",
-   "effectShort": "攻撃465%上昇+防御465%上昇(模倣不可)"
+   "effectShort": "攻撃 465%上昇+防御 465%上昇(模倣不可)",
+   "afterEffectShort": "攻撃 465%上昇+防御 465%上昇(模倣不可)",
+   "afterTarget": "全",
+   "afterRate": "65%"
   }
  ],
  "notes": [

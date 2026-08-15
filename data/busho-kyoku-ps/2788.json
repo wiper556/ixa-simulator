@@ -1,0 +1,107 @@
+{
+ "name": "出雲阿国",
+ "no": "2788",
+ "ch": "未確認",
+ "cost": 2.5,
+ "troop": "全防",
+ "sub": "",
+ "effect": "防御 70%上昇",
+ "furigana": "いずものおくに",
+ "illustrator": "isuZu",
+ "imageFull": "assets/img/characters/no2788_full.png",
+ "imageChar": "assets/img/characters/no2788_char.png",
+ "atkBase": 1000,
+ "atkGrowth": 33.0,
+ "defBase": 1050,
+ "defGrowth": 36.0,
+ "tacticsBase": 510.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3060,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "傾奇結界ノ舞",
+ "skillDetail": "A/LV10 確率 100% 防御 70%上昇/対象:全\n①防御が70%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 防御 70%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "戦陣 破軍",
+   "rank": "A",
+   "afterSkill": "天穿神滅",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "44%",
+   "effectShort": "攻撃 66%上昇+防御 66%上昇",
+   "afterTarget": "砲器",
+   "afterRate": "50%",
+   "afterEffectShort": "攻撃((ランク+1)xコストx3) %上昇 部隊ランクとコストで効果が変化"
+  },
+  {
+   "slot": "B",
+   "skill": "曼珠沙華",
+   "rank": "D",
+   "afterSkill": "虎嘯",
+   "afterRank": "B",
+   "target": "全",
+   "rate": "40%",
+   "effectShort": "攻撃 59%上昇 防御 59%上昇",
+   "afterTarget": "槍弓馬器",
+   "afterRate": "27%",
+   "afterEffectShort": "攻撃防御 ((1+武将ランク)×武将コスト×2.2) %上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "傾国ノ魅姫",
+   "rank": "A",
+   "afterSkill": "戦陣 轟砲",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "60%",
+   "effectShort": "防御 54%上昇",
+   "afterTarget": "砲器",
+   "afterRate": "45%",
+   "afterEffectShort": "攻撃 66%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "忌火",
+   "rank": "B",
+   "afterSkill": "忌火",
+   "afterRank": "B",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "攻撃 44%上昇 / 防御 44%上昇",
+   "afterEffectShort": "攻撃 44%上昇 / 防御 44%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "籠城の妙技",
+   "rank": "A",
+   "afterSkill": "三千世界神将",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "防御 50%上昇",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "防御 120%上昇(本丸防御陣形時コスト消費-1)"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/2788 と skills/傾奇結界ノ舞)およびixawiki(BushoCard/2788出雲阿国)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

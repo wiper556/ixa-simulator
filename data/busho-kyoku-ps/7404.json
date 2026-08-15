@@ -63,14 +63,18 @@
    "skill": "狂奏",
    "rank": "B",
    "afterSkill": "狂奏",
-   "afterRank": "B"
+   "afterRank": "B",
+   "effectShort": "防御 30%上昇",
+   "afterEffectShort": "防御 30%上昇"
   },
   {
    "slot": "B",
    "skill": "茶人の教え",
    "rank": "F",
    "afterSkill": "茶人の教え",
-   "afterRank": "F"
+   "afterRank": "F",
+   "effectShort": "デッキ上武将回復率15%上昇",
+   "afterEffectShort": "デッキ上武将回復率15%上昇"
   },
   {
    "slot": "C",
@@ -80,12 +84,16 @@
    "afterRank": "SS",
    "target": "全",
    "rate": "48%",
-   "effectShort": "防御910%上昇+コスト-1.5"
+   "effectShort": "防御 910%上昇(部隊消費コスト-1.5・模倣不可)",
+   "afterEffectShort": "防御 910%上昇(部隊消費コスト-1.5・模倣不可)"
   },
   {
    "slot": "S1",
    "skill": "琳聖風雅",
-   "rank": ""
+   "rank": "S",
+   "target": "全",
+   "rate": "32%",
+   "effectShort": "防御 850%上昇(防御戦闘勝利時のみ敵1部隊の武将に追加ダメージ+15)"
   },
   {
    "slot": "S2",
@@ -95,7 +103,8 @@
    "afterRank": "SS",
    "target": "全",
    "rate": "100%",
-   "effectShort": "攻撃344%上昇+防御344%上昇+自軍全武将全スキルの卓越確率に15%加算(模倣不可・自軍内重複上限2)"
+   "effectShort": "攻撃 344%上昇+防御 344%上昇+自軍全武将全スキルの卓越確率に15%加算(模倣不可・自軍内重複上限2)",
+   "afterEffectShort": "攻撃 344%上昇+防御 344%上昇+自軍全武将全スキルの卓越確率に15%加算(模倣不可・自軍内重複上限2)"
   }
  ],
  "notes": [

@@ -73,7 +73,8 @@
    "afterRank": "A",
    "target": "弓・馬・器・焙 不屈",
    "rate": "38%",
-   "effectShort": "攻撃410%上昇+合流自部隊数-2の不屈(特殊効果は模倣不可)"
+   "effectShort": "攻撃410%上昇+合流自部隊数-2の不屈(特殊効果は模倣不可)",
+   "afterEffectShort": "攻撃410%上昇+合流自部隊数-2の不屈(特殊効果は模倣不可)"
   },
   {
    "slot": "S1",
@@ -83,7 +84,8 @@
    "afterRank": "A",
    "target": "弓・馬・器・焙 不屈",
    "rate": "38%",
-   "effectShort": "攻撃410%上昇+合流自部隊数-2の不屈(特殊効果は模倣不可)"
+   "effectShort": "攻撃410%上昇+合流自部隊数-2の不屈(特殊効果は模倣不可)",
+   "afterEffectShort": "攻撃410%上昇+合流自部隊数-2の不屈(特殊効果は模倣不可)"
   },
   {
    "slot": "S2",
@@ -93,7 +95,10 @@
    "afterRank": "A",
    "target": "全",
    "rate": "65%",
-   "effectShort": "攻撃465%上昇+防御465%上昇(模倣不可)"
+   "effectShort": "攻撃 465%上昇+防御 465%上昇(模倣不可)",
+   "afterEffectShort": "攻撃 465%上昇+防御 465%上昇(模倣不可)",
+   "afterTarget": "全",
+   "afterRate": "65%"
   }
  ],
  "notes": [

@@ -1,0 +1,103 @@
+{
+ "name": "さこの方",
+ "no": "2830",
+ "ch": "未確認",
+ "cost": 3.0,
+ "troop": "全",
+ "sub": "",
+ "effect": "部隊内武将スキル発動率+10%+所属部隊を含む3部隊で自部隊同時攻撃を行うことができる(模倣不可・特殊効果は自部隊内では重複不可)",
+ "furigana": "さこのかた",
+ "illustrator": "影井由宇",
+ "imageFull": "assets/img/characters/no2830_full.png",
+ "imageChar": "assets/img/characters/no2830_char.png",
+ "atkBase": 1120,
+ "atkGrowth": 52.0,
+ "defBase": 1060,
+ "defGrowth": 45.0,
+ "tacticsBase": 550.0,
+ "tacticsGrowth": 3.0,
+ "lv0Troops": 3550,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "終曲ノ結姫",
+ "skillDetail": "S/LV10 確率 100% 部隊内武将スキル発動率+10%/対象:全\n模倣不可\n①部隊内武将スキル発動率が10%上昇する\n②所属部隊を含む3部隊で自部隊同時攻撃を行うことができる(特殊効果は自部隊内では重複不可)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 部隊内武将スキル発動率+10%+所属部隊を含む3部隊で自部隊同時攻撃を行うことができる(模倣不可・特殊効果は自部隊内では重複不可)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "乱世ノ歸人",
+   "rank": "A",
+   "afterSkill": "入来神舞",
+   "afterRank": "S",
+   "target": "部隊長",
+   "rate": "50%",
+   "effectShort": "所属部隊の部隊長が持つ模倣可能な初期スキルを模倣する(卓越・追加確率30%で通常攻撃/防御効果を1.2倍して模倣する)",
+   "afterTarget": "部隊長",
+   "afterRate": "55%",
+   "afterEffectShort": "部隊長の模倣可能な初期スキルを1.1倍に強化して模倣(TRなし)"
+  },
+  {
+   "slot": "B",
+   "skill": "月詠ノ覇威",
+   "rank": "SS",
+   "afterSkill": "月詠ノ覇威",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "攻撃 344%上昇+防御 344%上昇+自軍全武将全スキルの卓越確率に15%加算(模倣不可・自軍内重複上限2)",
+   "afterEffectShort": "攻撃 344%上昇+防御 344%上昇+自軍全武将全スキルの卓越確率に15%加算(模倣不可・自軍内重複上限2)"
+  },
+  {
+   "slot": "C",
+   "skill": "外道煉獄",
+   "rank": "S",
+   "afterSkill": "建御雷神ノ槌",
+   "afterRank": "SS",
+   "target": "槍・弓・馬・器・鉄",
+   "rate": "100%",
+   "effectShort": "攻撃134%上昇+防御134%上昇(発動率+15%)",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 135%上昇+防御 135%上昇+自部隊内で卓越発動したスキル数×30%を攻防効果に加算(模倣不可)"
+  },
+  {
+   "slot": "S1",
+   "skill": "破軍騎行",
+   "rank": "SS",
+   "afterSkill": "破軍騎行",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "攻撃 750%上昇+不屈2(攻撃戦闘敗北時指揮兵が不屈値×1000まで回復)",
+   "afterEffectShort": "攻撃 750%上昇+不屈2(攻撃戦闘敗北時指揮兵が不屈値×1000まで回復)"
+  },
+  {
+   "slot": "S2",
+   "skill": "月詠ノ覇威",
+   "rank": "SS",
+   "afterSkill": "月詠ノ覇威",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "攻撃 344%上昇+防御 344%上昇+自軍全武将全スキルの卓越確率に15%加算(模倣不可・自軍内重複上限2)",
+   "afterEffectShort": "攻撃 344%上昇+防御 344%上昇+自軍全武将全スキルの卓越確率に15%加算(模倣不可・自軍内重複上限2)"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/2830 と skills/終曲ノ結姫)およびixawiki(BushoCard/2830さこの方)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

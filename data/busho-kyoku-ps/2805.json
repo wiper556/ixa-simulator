@@ -1,0 +1,105 @@
+{
+ "name": "奈多姫",
+ "no": "2805",
+ "ch": "未確認",
+ "cost": 2.5,
+ "troop": "弓器焙防",
+ "sub": "",
+ "effect": "防御 2.4%×防御参加武将数(280人)=672.0%",
+ "furigana": "なたひめ",
+ "illustrator": "影井由宇",
+ "imageFull": "assets/img/characters/no2805_full.png",
+ "imageChar": "assets/img/characters/no2805_char.png",
+ "atkBase": 1000,
+ "atkGrowth": 36.0,
+ "defBase": 1190,
+ "defGrowth": 50.0,
+ "tacticsBase": 510.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3110,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "九国一ノ美才",
+ "skillDetail": "S/LV10 確率 70% 防御 2.4%×防御参加武将数(280人)=672.0%/対象:弓器焙\n①防御が(2.4x防御参加武将数)%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓器焙　確率 70% / 防御 2.4%×防御参加武将数(280人)=672.0%"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "九国一ノ美才",
+   "rank": "S",
+   "afterSkill": "入来神舞",
+   "afterRank": "S",
+   "target": "弓器焙",
+   "rate": "70%",
+   "effectShort": "防御 2.4%×防御参加武将数(280人)=672.0%",
+   "afterTarget": "部隊長",
+   "afterRate": "55%",
+   "afterEffectShort": "部隊長の模倣可能な初期スキルを1.1倍に強化して模倣(TRなし)"
+  },
+  {
+   "slot": "B",
+   "skill": "宿木",
+   "rank": "B",
+   "afterSkill": "宿木",
+   "afterRank": "B",
+   "target": "部隊長",
+   "rate": "55%",
+   "effectShort": "部隊長の初期スキルを模倣(戦闘スキルのみ)",
+   "afterEffectShort": "部隊長の初期スキルを模倣(戦闘スキルのみ)"
+  },
+  {
+   "slot": "C",
+   "skill": "入来神舞",
+   "rank": "S",
+   "afterSkill": "飛蝶野分",
+   "afterRank": "B",
+   "target": "部隊長",
+   "rate": "55%",
+   "effectShort": "部隊長の模倣可能な初期スキルを1.1倍に強化して模倣(TRなし)",
+   "afterTarget": "部隊長",
+   "afterRate": "60%",
+   "afterEffectShort": "部隊長の初期スキルを模倣(戦闘スキルのみ)(TRなし)"
+  },
+  {
+   "slot": "S1",
+   "skill": "入来神舞",
+   "rank": "S",
+   "afterSkill": "飛蝶野分",
+   "afterRank": "B",
+   "target": "部隊長",
+   "rate": "55%",
+   "effectShort": "部隊長の模倣可能な初期スキルを1.1倍に強化して模倣(TRなし)",
+   "afterTarget": "部隊長",
+   "afterRate": "60%",
+   "afterEffectShort": "部隊長の初期スキルを模倣(戦闘スキルのみ)(TRなし)"
+  },
+  {
+   "slot": "S2",
+   "skill": "天奏聖譚曲",
+   "rank": "SS",
+   "afterSkill": "天奏聖譚曲",
+   "afterRank": "SS",
+   "target": "砲・器",
+   "rate": "70%",
+   "effectShort": "防御 2.5%×防御参加武将数(280人)=700.0%",
+   "afterEffectShort": "防御 2.5%×防御参加武将数(280人)=700.0%"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/2805 と skills/九国一ノ美才)およびixawiki(BushoCard/2805奈多姫)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

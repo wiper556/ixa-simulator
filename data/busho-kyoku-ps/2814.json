@@ -1,0 +1,110 @@
+{
+ "name": "佐々木ユキ",
+ "no": "2814",
+ "ch": "未確認",
+ "cost": 4.0,
+ "troop": null,
+ "sub": "",
+ "effect": null,
+ "furigana": "ささきゆき",
+ "illustrator": "綾乙",
+ "imageFull": "assets/img/characters/no2814_full.png",
+ "imageChar": "assets/img/characters/no2814_char.png",
+ "atkBase": 1110,
+ "atkGrowth": 53.0,
+ "defBase": 1110,
+ "defGrowth": 53.0,
+ "tacticsBase": 510.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 4200,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "黒飛燕剣",
+ "skillDetail": "S/LV10 確率 50% 部隊長の初期スキルを模倣/対象:部隊長　飛翔4\n①所属部隊の部隊長が持つ模倣可能な初期スキルを模倣する\n②卓越:追加確率50%で通常攻撃/防御効果を1.2倍して模倣する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "部隊長　確率 50% / 飛翔4 所属部隊の部隊長が持つ模倣可能な初期スキルを模倣する 卓越 追加確率50%で通常攻撃/防御効果を1.2倍して模倣する"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "黒飛燕剣",
+   "rank": "S",
+   "afterSkill": "傾国ノ艶姫",
+   "afterRank": "S",
+   "target": "部隊長",
+   "rate": "50%",
+   "effectShort": "飛翔4 所属部隊の部隊長が持つ模倣可能な初期スキルを模倣する 卓越 追加確率50%で通常攻撃/防御効果を1.2倍して模倣する",
+   "afterTarget": "部隊長",
+   "afterRate": "60%",
+   "afterEffectShort": "所属部隊の部隊長が持つ模倣可能な初期スキルを模倣する 卓越 追加確率30%で通常攻撃/防御効果を1.2倍して模倣する"
+  },
+  {
+   "slot": "B",
+   "skill": "黒飛燕剣",
+   "rank": "S",
+   "afterSkill": "傾国ノ艶姫",
+   "afterRank": "S",
+   "target": "部隊長",
+   "rate": "50%",
+   "effectShort": "飛翔4 所属部隊の部隊長が持つ模倣可能な初期スキルを模倣する 卓越 追加確率50%で通常攻撃/防御効果を1.2倍して模倣する",
+   "afterTarget": "部隊長",
+   "afterRate": "60%",
+   "afterEffectShort": "所属部隊の部隊長が持つ模倣可能な初期スキルを模倣する 卓越 追加確率30%で通常攻撃/防御効果を1.2倍して模倣する"
+  },
+  {
+   "slot": "C",
+   "skill": "乱世ノ歸人",
+   "rank": "A",
+   "afterSkill": "入来神舞",
+   "afterRank": "S",
+   "target": "部隊長",
+   "rate": "50%",
+   "effectShort": "部隊長の初期スキルを模倣(卓越:追加確率30%で1.2倍)",
+   "afterTarget": "部隊長",
+   "afterRate": "55%",
+   "afterEffectShort": "部隊長の模倣可能な初期スキルを1.1倍に強化して模倣(TRなし)"
+  },
+  {
+   "slot": "S1",
+   "skill": "傾国ノ艶姫",
+   "rank": "S",
+   "afterSkill": "摩利支天ノ法",
+   "afterRank": "SSS",
+   "target": "部隊長",
+   "rate": "60%",
+   "effectShort": "所属部隊の部隊長が持つ模倣可能な初期スキルを模倣する 卓越 追加確率30%で通常攻撃/防御効果を1.2倍して模倣する",
+   "afterTarget": "部隊長",
+   "afterRate": "70%",
+   "afterEffectShort": "模倣倍率1.25倍"
+  },
+  {
+   "slot": "S2",
+   "skill": "傾国ノ艶姫",
+   "rank": "S",
+   "afterSkill": "摩利支天ノ法",
+   "afterRank": "SSS",
+   "target": "部隊長",
+   "rate": "60%",
+   "effectShort": "所属部隊の部隊長が持つ模倣可能な初期スキルを模倣する 卓越 追加確率30%で通常攻撃/防御効果を1.2倍して模倣する",
+   "afterTarget": "部隊長",
+   "afterRate": "70%",
+   "afterEffectShort": "模倣倍率1.25倍"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/2814 と skills/黒飛燕剣)およびixawiki(BushoCard/2814佐々木ユキ)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。",
+  "検証(2026-08-15): 初期スキルtrTableが「部隊長 飛翔4　確率 50%」で効果文が欠落していたため、既存の合成先ページdata/skill/黒飛燕剣.jsonのtrTableに合わせて補完。skillDetailもnullだったため同様に補完。synthesisTable C枠のeffectShort/afterEffectShortの「効果 」接頭辞も除去。"
+ ]
+}

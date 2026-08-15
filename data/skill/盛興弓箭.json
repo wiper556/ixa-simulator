@@ -1,0 +1,45 @@
+{
+ "name": "盛興弓箭",
+ "rank": "S",
+ "baseRate": 45.0,
+ "target": "部隊長 不屈2",
+ "effectSummary": "S/LV10 確率 45% 部隊長の初期スキルを1.2倍で模倣/対象:部隊長　不屈2\n①所属部隊の部隊長が持つ模倣可能な初期スキルを通常攻撃/防御効果を1.2倍して模倣する\n②不屈2を持つ",
+ "categoryLinks": [
+  {
+   "href": "skills-leadermimic.html",
+   "label": "部隊長模倣スキル一覧を見る"
+  },
+  {
+   "href": "skills-fukutsu.html",
+   "label": "不屈スキル一覧を見る"
+  }
+ ],
+ "sourceCharacters": [
+  {
+   "name": "小笠原長棟",
+   "no": "2837",
+   "slot": "C",
+   "db": "kyoku",
+   "note": [
+    "小笠原長棟(2837)のsynthesisTable C枠(2026-08-15)"
+   ]
+  }
+ ],
+ "notes": [
+  "ixanary.com(skills/盛興弓箭)から登録(2026-08-14)。S以上のスキルはページを作る決まり(S-01)にもとづく新規作成。",
+  "対象・確率・効果文はixanaryの表記をうちの書式に直したもの。categoryLinksとsourceCharactersは各武将の登録時に追記する。",
+  "ownHiddenCandidateは、このスキルが1次候補として載っている枠(2837 小笠原長棟 C枠)の2次候補から(S-08)。",
+  "2026-08-15: targetフィールドに効果文が丸ごと流し込まれていたのを、生HTML(ixanary.com/skills/盛興弓箭)で裏取りして書き直した(明神ノ鈴音.jsonを手本)。不屈2タグをcategoryLinksに追加。"
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "部隊長 不屈2　確率 45% / 部隊長の初期スキルを1.2倍で模倣"
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "摩利支天ノ法",
+  "rank": "SSS"
+ }
+}

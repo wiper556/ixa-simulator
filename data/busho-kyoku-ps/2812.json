@@ -1,0 +1,103 @@
+{
+ "name": "北政所",
+ "no": "2812",
+ "ch": "未確認",
+ "cost": 3.5,
+ "troop": "全防",
+ "sub": "",
+ "effect": "防御 155%上昇",
+ "furigana": "きたのまんどころ",
+ "illustrator": "紺藤ココン",
+ "imageFull": "assets/img/characters/no2812_full.png",
+ "imageChar": "assets/img/characters/no2812_char.png",
+ "atkBase": 1110,
+ "atkGrowth": 50.0,
+ "defBase": 1130,
+ "defGrowth": 52.0,
+ "tacticsBase": 520.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3720,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "日輪ノ英妃",
+ "skillDetail": "S/LV10 確率 100% 防御 155%上昇/対象:全\n①防御が155%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 防御 155%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "水霊ノ加護",
+   "rank": "A",
+   "afterSkill": "波乱ノ虎",
+   "afterRank": "S",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "防御 (1.5x防御参加武将数)%上昇",
+   "afterTarget": "全",
+   "afterRate": "45%",
+   "afterEffectShort": "防御部隊ランクボーナスx15%上昇(部隊ランクボーナスで効果が変化)"
+  },
+  {
+   "slot": "B",
+   "skill": "覇龍滅破陣",
+   "rank": "SS",
+   "afterSkill": "掃天封壁陣",
+   "afterRank": "SS",
+   "target": "砲器",
+   "rate": "99.9%",
+   "effectShort": "防御 (2×防御参加武将数)%上昇",
+   "afterTarget": "全",
+   "afterRate": "6%",
+   "afterEffectShort": "攻撃部隊の武将が持つ特殊効果付き初期スキルを全て無効化する"
+  },
+  {
+   "slot": "C",
+   "skill": "天奏聖譚曲",
+   "rank": "SS",
+   "afterSkill": "天奏聖譚曲",
+   "afterRank": "SS",
+   "target": "砲・器",
+   "rate": "70%",
+   "effectShort": "防御 2.5%×防御参加武将数(280人)=700.0%",
+   "afterEffectShort": "防御 2.5%×防御参加武将数(280人)=700.0%"
+  },
+  {
+   "slot": "S1",
+   "skill": "海神ノ浮船",
+   "rank": "SS",
+   "afterSkill": "海神ノ浮船",
+   "afterRank": "SS",
+   "target": "全 飛翔4",
+   "rate": "48%",
+   "effectShort": "防御 3.5%×防御参加武将数(280人)=980.0%",
+   "afterEffectShort": "防御 3.5%×防御参加武将数(280人)=980.0%"
+  },
+  {
+   "slot": "S2",
+   "skill": "天奏聖譚曲",
+   "rank": "SS",
+   "afterSkill": "天奏聖譚曲",
+   "afterRank": "SS",
+   "target": "砲・器",
+   "rate": "70%",
+   "effectShort": "防御 2.5%×防御参加武将数(280人)=700.0%",
+   "afterEffectShort": "防御 2.5%×防御参加武将数(280人)=700.0%"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/2812 と skills/日輪ノ英妃)およびixawiki(BushoCard/2812北政所)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "name": "九国一ノ美才",
+ "rank": "S",
+ "baseRate": 70.0,
+ "target": "弓器焙",
+ "effectSummary": "S/LV10 確率 70% 防御 2.4%×防御参加武将数(280人)=672.0%/対象:弓器焙\n①防御が(2.4x防御参加武将数)%上昇する",
+ "categoryLinks": [
+  {
+   "href": "skills-count-def.html",
+   "label": "人数依存(防)スキル一覧を見る"
+  }
+ ],
+ "sourceCharacters": [
+  {
+   "name": "奈多姫",
+   "no": "2805",
+   "slot": "A",
+   "db": "kyoku",
+   "note": [
+    "奈多姫(2805)のsynthesisTable A枠(2026-08-15)"
+   ]
+  }
+ ],
+ "notes": [
+  "ixanary.com(skills/九国一ノ美才)から登録(2026-08-14)。S以上のスキルはページを作る決まり(S-01)にもとづく新規作成。",
+  "対象・確率・効果文はixanaryの表記をうちの書式に直したもの。categoryLinksとsourceCharactersは各武将の登録時に追記する。",
+  "ownHiddenCandidateは、このスキルが1次候補として載っている枠(2805 奈多姫 A枠)の2次候補から(S-08)。"
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓器焙　確率 70% / 防御 2.4%×防御参加武将数(280人)=672.0%"
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "入来神舞",
+  "rank": "S"
+ }
+}

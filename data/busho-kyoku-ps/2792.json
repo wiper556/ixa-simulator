@@ -1,0 +1,105 @@
+{
+ "name": "アルメイダ",
+ "no": "2792",
+ "ch": "未確認",
+ "cost": 0.0,
+ "troop": null,
+ "sub": "",
+ "effect": null,
+ "furigana": "あるめいだ",
+ "illustrator": "平坂康也",
+ "imageFull": "assets/img/characters/no2792_full.png",
+ "imageChar": "assets/img/characters/no2792_char.png",
+ "atkBase": 450,
+ "atkGrowth": 1.0,
+ "defBase": 450,
+ "defGrowth": 1.0,
+ "tacticsBase": 600.0,
+ "tacticsGrowth": 3.0,
+ "lv0Troops": 1,
+ "rankGrades": {
+  "yari": "C",
+  "yumi": "C",
+  "uma": "C",
+  "ki": "C"
+ },
+ "initialSkill": "憐みの聖家",
+ "skillDetail": "A/LV10 カード所持効果/対象:全\n模倣不可\n①このカードを部隊にセットしたとき部隊内の他武将のHPが10回復する\n②本丸防御陣形では陣形内の全武将が対象となる\n③回復量は(武将ランク+1)x10",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 -% / このカードを部隊にセットしたとき、部隊内の他武将のHPが10回復する / 本丸防御陣形では陣形内の全武将が対象となる(模倣不可・回復量は(武将ランク+1)x10)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "針薬方",
+   "rank": "E",
+   "afterSkill": "惜別ノ叛逆",
+   "afterRank": "D",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "攻撃 14%上昇",
+   "afterTarget": "全",
+   "afterRate": "27%",
+   "afterEffectShort": "攻撃 52%上昇 防御 52%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "宿木",
+   "rank": "B",
+   "afterSkill": "宿木",
+   "afterRank": "B",
+   "target": "部隊長",
+   "rate": "55%",
+   "effectShort": "部隊長の初期スキルを模倣(戦闘スキルのみ)",
+   "afterEffectShort": "部隊長の初期スキルを模倣(戦闘スキルのみ)"
+  },
+  {
+   "slot": "C",
+   "skill": "風狂幻術",
+   "rank": "B",
+   "afterSkill": "風狂幻術",
+   "afterRank": "B",
+   "target": "部隊長",
+   "rate": "53%",
+   "effectShort": "部隊長の初期スキルを模倣(戦闘スキルのみ、TRなし)",
+   "afterEffectShort": "部隊長の初期スキルを模倣(戦闘スキルのみ、TRなし)"
+  },
+  {
+   "slot": "S1",
+   "skill": "武装商船",
+   "rank": "A",
+   "afterSkill": "鉄砲商人",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "部隊内全武将が持つ全スキルに「器」対象を追加する(兵科対象スキル限定・模倣不可)",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "部隊内全武将が持つ全スキルに「砲」対象を追加する(兵科対象スキル限定・模倣不可)"
+  },
+  {
+   "slot": "S2",
+   "skill": "大願ノ道頓堀",
+   "rank": "A",
+   "afterSkill": "呂宋の豪商",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "70%",
+   "effectShort": "防御 70%上昇",
+   "afterTarget": "全",
+   "afterRate": "36%",
+   "afterEffectShort": "防御 46%上昇/銅銭獲得率 4%"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/2792 と skills/憐みの聖家)およびixawiki(BushoCard/2792アルメイダ)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

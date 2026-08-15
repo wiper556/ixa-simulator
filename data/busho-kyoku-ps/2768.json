@@ -1,0 +1,103 @@
+{
+ "name": "今川氏輝",
+ "no": "2768",
+ "ch": "未確認",
+ "cost": 3.0,
+ "troop": "全",
+ "sub": "",
+ "effect": "攻撃 45%上昇",
+ "furigana": "いまがわうじてる",
+ "illustrator": "オンダカツキ",
+ "imageFull": "assets/img/characters/no2768_full.png",
+ "imageChar": "assets/img/characters/no2768_char.png",
+ "atkBase": 940,
+ "atkGrowth": 30.0,
+ "defBase": 940,
+ "defGrowth": 30.0,
+ "tacticsBase": 510.0,
+ "tacticsGrowth": 3.0,
+ "lv0Troops": 3240,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "神童ノ円舞曲",
+ "skillDetail": "A/LV10 確率 100% 攻撃 45%上昇/対象:全\n①攻撃が45%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 攻撃 45%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "謀殺",
+   "rank": "D",
+   "afterSkill": "鉄壁の備え",
+   "afterRank": "D",
+   "target": "全",
+   "rate": "15%",
+   "effectShort": "攻撃戦闘勝利時のみ、敵軍1部隊の武将に追加ダメージ+35",
+   "afterTarget": "全",
+   "afterRate": "40%",
+   "afterEffectShort": "防御 15%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "風狂幻術",
+   "rank": "B",
+   "afterSkill": "風狂幻術",
+   "afterRank": "B",
+   "target": "部隊長",
+   "rate": "53%",
+   "effectShort": "部隊長の初期スキルを模倣(戦闘スキルのみ、TRなし)",
+   "afterEffectShort": "部隊長の初期スキルを模倣(戦闘スキルのみ、TRなし)"
+  },
+  {
+   "slot": "C",
+   "skill": "遁世影武者",
+   "rank": "B",
+   "afterSkill": "風林火山",
+   "afterRank": "S",
+   "target": "部隊長",
+   "rate": "50%",
+   "effectShort": "所属部隊の部隊長が持つ初期スキルを模倣する(戦闘スキルのみ)",
+   "afterTarget": "槍・弓・馬",
+   "afterRate": "45%",
+   "afterEffectShort": "攻撃 30%上昇+破壊15%上昇(TRなし)"
+  },
+  {
+   "slot": "S1",
+   "skill": "宿木",
+   "rank": "B",
+   "afterSkill": "宿木",
+   "afterRank": "B",
+   "target": "部隊長",
+   "rate": "55%",
+   "effectShort": "部隊長の初期スキルを模倣(戦闘スキルのみ)",
+   "afterEffectShort": "部隊長の初期スキルを模倣(戦闘スキルのみ)"
+  },
+  {
+   "slot": "S2",
+   "skill": "今川仮名目録",
+   "rank": "A",
+   "afterSkill": "今川仮名目録",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "35%",
+   "effectShort": "攻撃部隊武将の特殊効果付き追加スキル発動率を低下",
+   "afterEffectShort": "攻撃部隊武将の特殊効果付き追加スキル発動率を低下"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/2768 と skills/神童ノ円舞曲)およびixawiki(BushoCard/2768今川氏輝)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

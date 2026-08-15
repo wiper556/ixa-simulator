@@ -84,7 +84,7 @@
    "afterRank": "S",
    "target": null,
    "rate": null,
-   "effectShort": null,
+   "effectShort": "防御240%上昇(所領防御陣形の第肆列目に配置時、防御効果が1.5倍になり飛翔5を得る・模倣不可)",
    "afterTarget": "全",
    "afterRate": "46%",
    "afterEffectShort": "防御 290%上昇(所領防御陣形第4列配置時1.5倍+飛翔7取得・模倣不可、TRなし)"
@@ -97,7 +97,10 @@
    "afterRank": "A",
    "target": "全",
    "rate": "65%",
-   "effectShort": "攻撃465%上昇+防御465%上昇(模倣不可)"
+   "effectShort": "攻撃 465%上昇+防御 465%上昇(模倣不可)",
+   "afterEffectShort": "攻撃 465%上昇+防御 465%上昇(模倣不可)",
+   "afterTarget": "全",
+   "afterRate": "65%"
   },
   {
    "slot": "S1",
@@ -107,7 +110,8 @@
    "afterRank": "A",
    "target": "全",
    "rate": "50%",
-   "effectShort": "防御420%上昇(防御時に敵軍の攻撃スキル発動率-3%・重複不可)"
+   "effectShort": "防御420%上昇(防御時に敵軍の攻撃スキル発動率-3%・重複不可)",
+   "afterEffectShort": "防御420%上昇(防御時に敵軍の攻撃スキル発動率-3%・重複不可)"
   },
   {
    "slot": "S2",
@@ -117,10 +121,10 @@
    "afterRank": "SSS",
    "target": "全 覇道",
    "rate": "100%",
-   "effectShort": "攻撃320%上昇+速度70%上昇+覇道を持つため所属部隊の武将のスキルを無効化・発動率低下から保護",
+   "effectShort": "攻撃 320%上昇+速度 70%上昇+覇道を持つため所属部隊の武将のスキルを無効化・発動率低下から保護",
    "afterTarget": "全",
    "afterRate": "45%",
-   "afterEffectShort": "攻撃100%上昇((5.0×防御参加武将数)%を攻撃効果に加算・模倣不可)"
+   "afterEffectShort": "攻撃 100%上昇((5.0×防御参加武将数)%を攻撃効果に加算・模倣不可)"
   }
  ],
  "notes": [

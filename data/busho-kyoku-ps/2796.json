@@ -1,0 +1,103 @@
+{
+ "name": "綾御前",
+ "no": "2796",
+ "ch": "未確認",
+ "cost": 2.0,
+ "troop": null,
+ "sub": "",
+ "effect": null,
+ "furigana": "あやごぜん",
+ "illustrator": "塚本陽子",
+ "imageFull": "assets/img/characters/no2796_full.png",
+ "imageChar": "assets/img/characters/no2796_char.png",
+ "atkBase": 990,
+ "atkGrowth": 34.0,
+ "defBase": 990,
+ "defGrowth": 34.0,
+ "tacticsBase": 490.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 2700,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "義神ノ抱擁",
+ "skillDetail": "A/LV10 確率 40% 敵軍総攻撃力÷敵軍武将人数x100%を防御力に加算する/対象:全\n模倣不可\n①敵軍総攻撃力÷敵軍武将人数x100%を防御力に加算する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 40% / 敵軍総攻撃力÷敵軍武将人数x100%を防御力に加算する(模倣不可)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "絢鳥",
+   "rank": "B",
+   "afterSkill": "絢鳥",
+   "afterRank": "B",
+   "target": "槍弓",
+   "rate": "35%",
+   "effectShort": "攻撃 42%上昇",
+   "afterEffectShort": "攻撃 42%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "戦陣 無双",
+   "rank": "A",
+   "afterSkill": "無双英傑",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "50%",
+   "effectShort": "攻撃 67%上昇",
+   "afterTarget": "全",
+   "afterRate": "50%",
+   "afterEffectShort": "攻撃99.9%上昇 防御99.9%上昇 部隊消費コストを0.5低下 (特殊効果は模倣不可)"
+  },
+  {
+   "slot": "C",
+   "skill": "風狂幻術",
+   "rank": "B",
+   "afterSkill": "風狂幻術",
+   "afterRank": "B",
+   "target": "部隊長",
+   "rate": "53%",
+   "effectShort": "部隊長の初期スキルを模倣(戦闘スキルのみ、TRなし)",
+   "afterEffectShort": "部隊長の初期スキルを模倣(戦闘スキルのみ、TRなし)"
+  },
+  {
+   "slot": "S1",
+   "skill": "宿木",
+   "rank": "B",
+   "afterSkill": "宿木",
+   "afterRank": "B",
+   "target": "部隊長",
+   "rate": "55%",
+   "effectShort": "部隊長の初期スキルを模倣(戦闘スキルのみ)",
+   "afterEffectShort": "部隊長の初期スキルを模倣(戦闘スキルのみ)"
+  },
+  {
+   "slot": "S2",
+   "skill": "鬼滅刺",
+   "rank": "A",
+   "afterSkill": "布都御魂ノ鬨",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "攻撃 70%上昇 防御 70%上昇",
+   "afterTarget": "全",
+   "afterRate": "35%",
+   "afterEffectShort": "攻撃 40%上昇+防御 40%上昇(部隊内レアリティS以上のスキル個数×20%加算)"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/2796 と skills/義神ノ抱擁)およびixawiki(BushoCard/2796綾御前)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

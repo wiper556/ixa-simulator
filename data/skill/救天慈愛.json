@@ -1,0 +1,35 @@
+{
+ "name": "救天慈愛",
+ "rank": "S",
+ "baseRate": 70.0,
+ "target": "全",
+ "effectSummary": "S/LV10 確率 70% 攻撃 /対象:全",
+ "categoryLinks": [],
+ "sourceCharacters": [
+  {
+   "name": "上杉謙信",
+   "no": "2813",
+   "slot": "A",
+   "db": "kyoku",
+   "note": [
+    "上杉謙信(2813)のsynthesisTable A枠(2026-08-15)"
+   ]
+  }
+ ],
+ "notes": [
+  "ixanary.com(skills/救天慈愛)から登録(2026-08-14)。S以上のスキルはページを作る決まり(S-01)にもとづく新規作成。",
+  "対象・確率・効果文はixanaryの表記をうちの書式に直したもの。categoryLinksとsourceCharactersは各武将の登録時に追記する。",
+  "ownHiddenCandidateは、このスキルが1次候補として載っている枠(2813 上杉謙信 A枠)の2次候補から(S-08)。"
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 70% / 攻撃 (3.5x防御参加武将数)%上昇"
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "開闢ノ逆鉾",
+  "rank": "SS"
+ }
+}

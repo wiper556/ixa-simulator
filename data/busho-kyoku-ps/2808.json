@@ -1,0 +1,101 @@
+{
+ "name": "南光坊天海",
+ "no": "2808",
+ "ch": "未確認",
+ "cost": 4.5,
+ "troop": "全防",
+ "sub": "",
+ "effect": "全防御 90%上昇(防御側武将数カウントの対象にならない・模倣不可)",
+ "furigana": "なんこうぼうてんかい",
+ "illustrator": "西野幸治",
+ "imageFull": "assets/img/characters/no2808_full.png",
+ "imageChar": "assets/img/characters/no2808_char.png",
+ "atkBase": 1070,
+ "atkGrowth": 48.0,
+ "defBase": 1100,
+ "defGrowth": 58.0,
+ "tacticsBase": 540.0,
+ "tacticsGrowth": 3.0,
+ "lv0Troops": 4460,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "四神相応ノ天計",
+ "skillDetail": "S/LV10 確率 100% 防御90%上昇/対象:全\n模倣不可\n①防御90%上昇する\n②防御戦闘時この武将は防御側武将数を数えてスキルの発動条件や効果を決定する攻撃側武将スキルのカウント対象にならない",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 防御 90%上昇(防御側武将数カウントの対象にならない・模倣不可)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "山王一実神道",
+   "rank": "B",
+   "afterSkill": "妙計暗躍",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "25%",
+   "effectShort": "防御 0%上昇",
+   "afterTarget": "全",
+   "afterRate": "15%",
+   "afterEffectShort": "攻撃戦闘勝利時のみ、敵軍全武将に追加ダメージ+35(重複不可)"
+  },
+  {
+   "slot": "B",
+   "skill": "茅纒之矟ノ煌",
+   "rank": "SS",
+   "afterSkill": "茅纒之矟ノ煌",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "60%",
+   "effectShort": "防御100%上昇 自部隊の武将ダメージ軽減3% (重複発動上限数4)",
+   "afterEffectShort": "防御100%上昇 自部隊の武将ダメージ軽減3% (重複発動上限数4)"
+  },
+  {
+   "slot": "C",
+   "skill": "幽冥主宰大神",
+   "rank": "SS",
+   "afterSkill": "幽冥主宰大神",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "30%",
+   "effectShort": "防御90%上昇 攻撃部隊の武将が持つ特殊効果付き初期スキルを全て無効化(模倣不可)",
+   "afterEffectShort": "防御90%上昇 攻撃部隊の武将が持つ特殊効果付き初期スキルを全て無効化(模倣不可)"
+  },
+  {
+   "slot": "S1",
+   "skill": "禍津日神ノ謀",
+   "rank": "SS",
+   "afterSkill": "禍津日神ノ謀",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "70%",
+   "effectShort": "防御 145%上昇(武将ダメージ軽減3%・重複上限4)",
+   "afterEffectShort": "防御 145%上昇(武将ダメージ軽減3%・重複上限4)"
+  },
+  {
+   "slot": "S2",
+   "skill": "天奏聖譚曲",
+   "rank": "SS",
+   "afterSkill": "天奏聖譚曲",
+   "afterRank": "SS",
+   "target": "砲・器",
+   "rate": "70%",
+   "effectShort": "防御 2.5%×防御参加武将数(280人)=700.0%",
+   "afterEffectShort": "防御 2.5%×防御参加武将数(280人)=700.0%"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/2808 と skills/四神相応ノ天計)およびixawiki(BushoCard/2808南光坊天海)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

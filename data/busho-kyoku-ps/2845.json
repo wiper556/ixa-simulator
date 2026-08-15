@@ -1,0 +1,126 @@
+{
+ "name": "藤林長門守",
+ "no": "2845",
+ "ch": "未確認",
+ "cost": 4.5,
+ "troop": "全 撤退攻",
+ "sub": "",
+ "effect": "攻撃 440%上昇",
+ "furigana": "ふじばやしながとのかみ",
+ "illustrator": "小森ニコ",
+ "imageFull": "assets/img/characters/no2845_full.png",
+ "imageChar": "assets/img/characters/no2845_char.png",
+ "atkBase": 1200,
+ "atkGrowth": 61.0,
+ "defBase": 1120,
+ "defGrowth": 46.0,
+ "tacticsBase": 550.0,
+ "tacticsGrowth": 3.0,
+ "lv0Troops": 4580,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "影王絶技",
+ "skillDetail": "S/LV10 確率 100% 攻撃 440%上昇/対象:全 撤退\n①攻撃が440%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全 撤退　確率 100% / 攻撃 440%上昇"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": "全 撤退　確率 100% / 攻撃 490%上昇"
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": "全 撤退　確率 100% / 攻撃 630%上昇"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": "全 撤退　確率 100% / 攻撃 920%上昇"
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": "全 撤退　確率 100% / 攻撃 1280%上昇"
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": "全 撤退　確率 100% / 攻撃 1510%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "神羅聖域",
+   "rank": "SS",
+   "afterSkill": "神羅聖域",
+   "afterRank": "SS",
+   "target": "全 覇道",
+   "rate": "40%",
+   "effectShort": "攻撃 900%上昇+防御 900%上昇+破壊 150%上昇+覇道を持つため所属部隊の武将のスキルを無効化・発動率低下から保護",
+   "afterEffectShort": "攻撃 900%上昇+防御 900%上昇+破壊 150%上昇+覇道を持つため所属部隊の武将のスキルを無効化・発動率低下から保護"
+  },
+  {
+   "slot": "B",
+   "skill": "絶無灰尽",
+   "rank": "SS",
+   "afterSkill": "絶無灰尽",
+   "afterRank": "SS",
+   "target": "全 無尽 不屈1",
+   "rate": "100%",
+   "effectShort": "攻撃 1010%上昇+無尽(部隊消費コスト-0.5)",
+   "afterEffectShort": "攻撃 1010%上昇+無尽(部隊消費コスト-0.5)"
+  },
+  {
+   "slot": "C",
+   "skill": "影王絶技",
+   "rank": "S",
+   "afterSkill": "影王絶技",
+   "afterRank": "S",
+   "target": "全 撤退",
+   "rate": "100%",
+   "effectShort": "攻撃 440%上昇",
+   "afterEffectShort": "攻撃 440%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "影王絶技",
+   "rank": "S",
+   "afterSkill": "影王絶技",
+   "afterRank": "S",
+   "target": "全 撤退",
+   "rate": "100%",
+   "effectShort": "攻撃 440%上昇",
+   "afterEffectShort": "攻撃 440%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "破邪後輝",
+   "rank": "SS",
+   "afterSkill": "飛龍衝天",
+   "afterRank": "SS",
+   "target": "全 覇道",
+   "rate": "100%",
+   "effectShort": "攻撃 770%上昇+速度 150%上昇+破壊 150%上昇+覇道を持つため所属部隊の武将のスキルを無効化・発動率低下から保護",
+   "afterTarget": "全 飛翔15",
+   "afterRate": "45%",
+   "afterEffectShort": "攻撃 200%上昇+(7.5×防御参加武将数)%を攻撃効果に加算(模倣不可)"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/2845 と skills/影王絶技)およびixawiki(BushoCard/2845藤林長門守)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

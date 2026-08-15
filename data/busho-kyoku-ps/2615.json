@@ -119,7 +119,7 @@
    "effectShort": "防御 290%上昇(所領防御陣形第4列配置時1.5倍+飛翔7取得・模倣不可、TRなし)",
    "afterTarget": "全 飛翔4",
    "afterRate": "48%",
-   "afterEffectShort": "防御(3.5×防御参加武将数)%上昇(敵軍飛翔持ち4人未満の時通常武将ダメージを受けない)"
+   "afterEffectShort": "防御 (3.5×防御参加武将数)%上昇(敵軍飛翔持ち4人未満の時通常武将ダメージを受けない)"
   },
   {
    "slot": "S2",
@@ -129,7 +129,10 @@
    "afterRank": "A",
    "target": "全",
    "rate": "65%",
-   "effectShort": "攻撃465%上昇+防御465%上昇(模倣不可)"
+   "effectShort": "攻撃 465%上昇+防御 465%上昇(模倣不可)",
+   "afterEffectShort": "攻撃 465%上昇+防御 465%上昇(模倣不可)",
+   "afterTarget": "全",
+   "afterRate": "65%"
   }
  ],
  "notes": [

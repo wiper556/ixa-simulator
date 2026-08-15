@@ -1,0 +1,105 @@
+{
+ "name": "安楽庵策伝",
+ "no": "2790",
+ "ch": "未確認",
+ "cost": 0.0,
+ "troop": null,
+ "sub": "",
+ "effect": null,
+ "furigana": "あんらくあんさくでん",
+ "illustrator": "西野幸治",
+ "imageFull": "assets/img/characters/no2790_full.png",
+ "imageChar": "assets/img/characters/no2790_char.png",
+ "atkBase": 990,
+ "atkGrowth": 35.0,
+ "defBase": 990,
+ "defGrowth": 35.0,
+ "tacticsBase": 530.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 1590,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "醒睡笑",
+ "skillDetail": null,
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 -% / このカードを所持していると、本丸防御陣形編成コストの最大値が0.5×(武将ランク+1)上昇する(重複不可)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "鬼滅刺",
+   "rank": "A",
+   "afterSkill": "布都御魂ノ鬨",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "攻撃70%上昇+防御70%上昇(このスキルを所持する武将の全スキルの卓越確率に25%を加算する(模倣不可))",
+   "afterTarget": "全",
+   "afterRate": "35%",
+   "afterEffectShort": "攻撃40%上昇+防御40%上昇+所属部隊内のレアリティS以上のスキル個数×20%を攻防効果に加算"
+  },
+  {
+   "slot": "B",
+   "skill": "遁世影武者",
+   "rank": "B",
+   "afterSkill": "風林火山",
+   "afterRank": "S",
+   "target": "部隊長",
+   "rate": "50%",
+   "effectShort": "所属部隊の部隊長が持つ初期スキルを模倣する(戦闘スキルのみ)",
+   "afterTarget": "槍・弓・馬",
+   "afterRate": "45%",
+   "afterEffectShort": "攻撃 30%上昇+破壊15%上昇(TRなし)"
+  },
+  {
+   "slot": "C",
+   "skill": "宿木",
+   "rank": "B",
+   "afterSkill": "宿木",
+   "afterRank": "B",
+   "target": "部隊長",
+   "rate": "55%",
+   "effectShort": "部隊長の初期スキルを模倣(戦闘スキルのみ)",
+   "afterEffectShort": "部隊長の初期スキルを模倣(戦闘スキルのみ)"
+  },
+  {
+   "slot": "S1",
+   "skill": "風狂幻術",
+   "rank": "B",
+   "afterSkill": "風狂幻術",
+   "afterRank": "B",
+   "target": "部隊長",
+   "rate": "53%",
+   "effectShort": "部隊長の初期スキルを模倣(戦闘スキルのみ、TRなし)",
+   "afterEffectShort": "部隊長の初期スキルを模倣(戦闘スキルのみ、TRなし)"
+  },
+  {
+   "slot": "S2",
+   "skill": "天正筆才",
+   "rank": "A",
+   "afterSkill": null,
+   "afterRank": null,
+   "target": null,
+   "rate": null,
+   "effectShort": "織田信長の所持スキル発動率を2倍にする(同部隊セット時のみ有効・模倣不可)"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/2790)およびixawiki(BushoCard/2790安楽庵策伝)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "初期スキル「醒睡笑」(A)はixanaryのカードページ本文で確認(機械取得時に取りこぼし)。",
+  " 効果:「このカードを所持していると、本丸防御陣形編成コストの最大値が0.5×(武将ランク+1)上昇する(重複不可)」。",
+  "合成候補5枠はixawiki(BushoCard/2790)の1次候補テーブルで確認、各スキルの詳細(target/rate/effect)は",
+  " 同じ5枠を持つ弥助(No.2430)の既存登録データ(ixawiki 1次/2次候補で確認済み)を流用した(検証担当2026-08-15)。",
+  "章は情報源に記載が無いため未確認。"
+ ]
+}

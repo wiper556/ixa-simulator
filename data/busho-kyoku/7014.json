@@ -41,7 +41,8 @@
    "afterRank": "A",
    "target": "全 卓越",
    "rate": "100%",
-   "effectShort": "攻撃340%上昇+防御340%上昇+部隊内卓越追加確率+20%(模倣不可・特殊効果は自部隊内では重複不可)"
+   "effectShort": "攻撃 340%上昇+防御 340%上昇+部隊内卓越追加確率+20%(模倣不可・特殊効果は自部隊内では重複不可)",
+   "afterEffectShort": "攻撃 340%上昇+防御 340%上昇+部隊内卓越追加確率+20%(模倣不可・特殊効果は自部隊内では重複不可)"
   },
   {
    "slot": "B",
@@ -49,6 +50,9 @@
    "rank": "A",
    "afterSkill": "十字飛車",
    "afterRank": "A",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "攻撃 70%上昇+部隊内武将の全スキル(極限スキルを含む)の卓越追加確率30%上昇(模倣不可・自部隊内では重複不可)",
    "afterTarget": "槍砲器",
    "afterRate": "42%",
    "afterEffectShort": "攻撃77%上昇(防御77%上昇・破壊50%上昇)"
@@ -64,14 +68,18 @@
    "effectShort": "攻撃440%上昇+防御440%上昇(卓越確率+50%・模倣不可)",
    "afterTarget": "全 卓越",
    "afterRate": "100%",
-   "afterEffectShort": "攻撃340%上昇+防御340%上昇+部隊内卓越追加確率+20%(模倣不可・特殊効果は自部隊内では重複不可)"
+   "afterEffectShort": "攻撃 340%上昇+防御 340%上昇+部隊内卓越追加確率+20%(模倣不可・特殊効果は自部隊内では重複不可)"
   },
   {
    "slot": "S1",
    "skill": "三国将風",
    "rank": "A",
    "afterSkill": "三国将風",
-   "afterRank": "A"
+   "afterRank": "A",
+   "target": "弓・砲・器",
+   "rate": "42%",
+   "effectShort": "攻撃 675%上昇(武将のコストで効果が変化)",
+   "afterEffectShort": "攻撃 675%上昇(武将のコストで効果が変化)"
   },
   {
    "slot": "S2",
@@ -81,7 +89,10 @@
    "afterRank": "A",
    "target": "全",
    "rate": "65%",
-   "effectShort": "攻撃465%上昇+防御465%上昇(模倣不可)"
+   "effectShort": "攻撃 465%上昇+防御 465%上昇(模倣不可)",
+   "afterEffectShort": "攻撃 465%上昇+防御 465%上昇(模倣不可)",
+   "afterTarget": "全",
+   "afterRate": "65%"
   }
  ],
  "notes": [

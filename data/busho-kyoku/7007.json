@@ -66,7 +66,8 @@
    "afterRank": "B",
    "target": "全",
    "rate": "20%",
-   "effectShort": "銅銭獲得率2.5%(対人撃破兵数に応じて自軍全員が銅銭獲得・重複発動上限数4)"
+   "effectShort": "銅銭獲得率2.5%(対人撃破兵数に応じて自軍全員が銅銭獲得・重複発動上限数4)",
+   "afterEffectShort": "銅銭獲得率2.5%(対人撃破兵数に応じて自軍全員が銅銭獲得・重複発動上限数4)"
   },
   {
    "slot": "B",
@@ -83,14 +84,22 @@
    "skill": "破窮ノ勇将",
    "rank": "A",
    "afterSkill": "破窮ノ勇将",
-   "afterRank": "A"
+   "afterRank": "A",
+   "target": "弓・砲・器",
+   "rate": "60%",
+   "effectShort": "防御 100%上昇(拠点待機90分ごとに1.5倍・上限5回)",
+   "afterEffectShort": "防御 100%上昇(拠点待機90分ごとに1.5倍・上限5回)"
   },
   {
    "slot": "S1",
    "skill": "破窮ノ勇将",
    "rank": "A",
    "afterSkill": "破窮ノ勇将",
-   "afterRank": "A"
+   "afterRank": "A",
+   "target": "弓・砲・器",
+   "rate": "60%",
+   "effectShort": "防御 100%上昇(拠点待機90分ごとに1.5倍・上限5回)",
+   "afterEffectShort": "防御 100%上昇(拠点待機90分ごとに1.5倍・上限5回)"
   },
   {
    "slot": "S2",
@@ -100,7 +109,10 @@
    "afterRank": "A",
    "target": "全",
    "rate": "65%",
-   "effectShort": "攻撃465%上昇+防御465%上昇(模倣不可)"
+   "effectShort": "攻撃 465%上昇+防御 465%上昇(模倣不可)",
+   "afterEffectShort": "攻撃 465%上昇+防御 465%上昇(模倣不可)",
+   "afterTarget": "全",
+   "afterRate": "65%"
   }
  ],
  "notes": [

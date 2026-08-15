@@ -1,0 +1,103 @@
+{
+ "name": "太田道灌",
+ "no": "2764",
+ "ch": "未確認",
+ "cost": 3.5,
+ "troop": "弓焙攻",
+ "sub": "",
+ "effect": "攻撃 70%上昇",
+ "furigana": "おおたどうかん",
+ "illustrator": "BISAI",
+ "imageFull": "assets/img/characters/no2764_full.png",
+ "imageChar": "assets/img/characters/no2764_char.png",
+ "atkBase": 1040,
+ "atkGrowth": 38.0,
+ "defBase": 990,
+ "defGrowth": 30.0,
+ "tacticsBase": 500.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3480,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "S",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "王佐ノ采配",
+ "skillDetail": "A/LV10 確率 5% 攻撃 70%上昇/対象:弓焙\n①攻撃が70%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓焙　確率 5% / 攻撃 70%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "槍隊急襲",
+   "rank": "F",
+   "afterSkill": "槍隊守備",
+   "afterRank": "F",
+   "target": "槍",
+   "rate": "16%",
+   "effectShort": "攻撃 7.5%上昇",
+   "afterTarget": "槍",
+   "afterRate": "16%",
+   "afterEffectShort": "防御 (コストx5) %上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "戦鬼侵軍",
+   "rank": "B",
+   "afterSkill": "戦鬼侵軍",
+   "afterRank": "B",
+   "target": "槍砲器",
+   "rate": "15%",
+   "effectShort": "攻撃 54%上昇",
+   "afterEffectShort": "攻撃 54%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "銃槍 轟攻陣",
+   "rank": "A",
+   "afterSkill": "銃槍 轟攻陣",
+   "afterRank": "A",
+   "target": "槍鉄",
+   "rate": "24%",
+   "effectShort": "攻撃 76%上昇 破壊 30%上昇",
+   "afterEffectShort": "攻撃 76%上昇 破壊 30%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "王佐ノ采配",
+   "rank": "A",
+   "afterSkill": "王佐ノ采配",
+   "afterRank": "A",
+   "target": "弓焙",
+   "rate": "5%",
+   "effectShort": "攻撃 70%上昇",
+   "afterEffectShort": "攻撃 70%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "赤鳥ノ舞",
+   "rank": "A",
+   "afterSkill": "波瀾ノ夕立",
+   "afterRank": "B",
+   "target": "槍弓馬器",
+   "rate": "37%",
+   "effectShort": "攻撃 90%上昇",
+   "afterTarget": "槍砲器",
+   "afterRate": "36%",
+   "afterEffectShort": "防御 43%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/2764 と skills/王佐ノ采配)およびixawiki(BushoCard/2764太田道灌)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

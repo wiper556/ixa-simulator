@@ -1,0 +1,105 @@
+{
+ "name": "霧隠才蔵",
+ "no": "2807",
+ "ch": "未確認",
+ "cost": 4.5,
+ "troop": "全 飛翔8攻",
+ "sub": "",
+ "effect": "攻撃 110%上昇 防御 110%上昇",
+ "furigana": "きりがくれさいぞう",
+ "illustrator": "鏑木康隆",
+ "imageFull": "assets/img/characters/no2807_full.png",
+ "imageChar": "assets/img/characters/no2807_char.png",
+ "atkBase": 1150,
+ "atkGrowth": 52.0,
+ "defBase": 1100,
+ "defGrowth": 46.0,
+ "tacticsBase": 520.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 4450,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "煙霞迷霧",
+ "skillDetail": "S/LV10 確率 70% 攻撃 110%上昇 防御 110%上昇/対象:全 飛翔8\n①攻撃が110%上昇 防御 110%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全 飛翔8　確率 70% / 攻撃 110%上昇 防御 110%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "戦陣 破軍",
+   "rank": "A",
+   "afterSkill": "天穿神滅",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "44%",
+   "effectShort": "攻撃 66%上昇+防御 66%上昇",
+   "afterTarget": "砲器",
+   "afterRate": "50%",
+   "afterEffectShort": "攻撃((ランク+1)xコストx3) %上昇 部隊ランクとコストで効果が変化"
+  },
+  {
+   "slot": "B",
+   "skill": "夜叉源氏轟",
+   "rank": "A",
+   "afterSkill": "夜叉源氏轟",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "40%",
+   "effectShort": "攻撃 90%上昇",
+   "afterEffectShort": "攻撃 90%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "木遁封魔",
+   "rank": "S",
+   "afterSkill": "遁世影武者",
+   "afterRank": "B",
+   "target": "部隊長",
+   "rate": "58%",
+   "effectShort": "部隊長の初期スキルを1.1倍に強化して模倣(TRなし)",
+   "afterTarget": null,
+   "afterRate": null,
+   "afterEffectShort": null
+  },
+  {
+   "slot": "S1",
+   "skill": "煙霞迷霧",
+   "rank": "S",
+   "afterSkill": "煙霞迷霧",
+   "afterRank": "S",
+   "target": "全",
+   "rate": "70%",
+   "effectShort": "飛翔8 攻撃110%上昇 防御110%上昇 所属部隊の武将が 飛翔X を持つとき、それらは代わりに 飛翔[X+4] を持つ(模倣不可・部隊内重複不可)",
+   "afterEffectShort": "飛翔8 攻撃110%上昇 防御110%上昇 所属部隊の武将が 飛翔X を持つとき、それらは代わりに 飛翔[X+4] を持つ(模倣不可・部隊内重複不可)"
+  },
+  {
+   "slot": "S2",
+   "skill": "遁世影武者",
+   "rank": "B",
+   "afterSkill": "風林火山",
+   "afterRank": "S",
+   "target": null,
+   "rate": null,
+   "effectShort": null,
+   "afterTarget": "槍・弓・馬",
+   "afterRate": "45%",
+   "afterEffectShort": "攻撃 30%上昇+破壊15%上昇(TRなし)"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/2807 と skills/煙霞迷霧)およびixawiki(BushoCard/2807霧隠才蔵)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

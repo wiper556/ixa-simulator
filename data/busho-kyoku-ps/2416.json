@@ -71,7 +71,7 @@
    "afterRank": "E",
    "target": null,
    "rate": null,
-   "effectShort": null,
+   "effectShort": "攻撃(コスト×6.5)%上昇(武将のコストで効果が変化)",
    "afterTarget": "砲",
    "afterRate": "20%",
    "afterEffectShort": "防御(コストx6.5) %上昇(武将のコストで効果が変化します)"
@@ -84,7 +84,7 @@
    "afterRank": "D",
    "target": null,
    "rate": null,
-   "effectShort": null,
+   "effectShort": "攻撃40%上昇+防御40%上昇",
    "afterTarget": "全",
    "afterRate": "24%",
    "afterEffectShort": "攻撃38%上昇(防御38%上昇)"
@@ -110,7 +110,8 @@
    "afterRank": "A",
    "target": "槍・器・鉄",
    "rate": "62%",
-   "effectShort": "攻撃・防御(部隊ランクボーナス×10)%上昇(★24=60%・★28=90%)"
+   "effectShort": "攻撃・防御(部隊ランクボーナス×10)%上昇(★24=60%・★28=90%)",
+   "afterEffectShort": "攻撃・防御(部隊ランクボーナス×10)%上昇(★24=60%・★28=90%)"
   },
   {
    "slot": "S2",

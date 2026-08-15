@@ -1,0 +1,103 @@
+{
+ "name": "島津歳久",
+ "no": "2833",
+ "ch": "未確認",
+ "cost": 4.5,
+ "troop": "全攻",
+ "sub": "",
+ "effect": "攻撃 400%上昇",
+ "furigana": "しまづとしひさ",
+ "illustrator": "池田宗隆",
+ "imageFull": "assets/img/characters/no2833_full.png",
+ "imageChar": "assets/img/characters/no2833_char.png",
+ "atkBase": 1230,
+ "atkGrowth": 60.0,
+ "defBase": 1060,
+ "defGrowth": 45.0,
+ "tacticsBase": 530.0,
+ "tacticsGrowth": 3.0,
+ "lv0Troops": 4580,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "晴嵐義計",
+ "skillDetail": "S/LV10 確率 100% 攻撃 400%上昇/対象:全\n①攻撃が400%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 攻撃 400%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "四天轟雷",
+   "rank": "SS",
+   "afterSkill": "四天轟雷",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "攻撃 360%上昇+防御 360%上昇+部隊内全武将の兵科対象の全スキルに砲・器対象を追加",
+   "afterEffectShort": "攻撃 360%上昇+防御 360%上昇+部隊内全武将の兵科対象の全スキルに砲・器対象を追加"
+  },
+  {
+   "slot": "B",
+   "skill": "十束ノ神域",
+   "rank": "SS",
+   "afterSkill": "天聖宝冠",
+   "afterRank": "SSS",
+   "target": "全 覇道",
+   "rate": "100%",
+   "effectShort": "攻撃 320%上昇+速度 70%上昇+覇道を持つため所属部隊の武将のスキルを無効化・発動率低下から保護",
+   "afterTarget": "全",
+   "afterRate": "45%",
+   "afterEffectShort": "攻撃 100%上昇((5.0×防御参加武将数)%を攻撃効果に加算・模倣不可)"
+  },
+  {
+   "slot": "C",
+   "skill": "騎虎神道",
+   "rank": "S",
+   "afterSkill": "騎虎神道",
+   "afterRank": "S",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "攻撃 170%上昇(敗北時討伐ゲージ300まで回復)",
+   "afterEffectShort": "攻撃 170%上昇(敗北時討伐ゲージ300まで回復)",
+   "afterRate": "100%",
+   "afterTarget": "全"
+  },
+  {
+   "slot": "S1",
+   "skill": "晴嵐義計",
+   "rank": "S",
+   "afterSkill": "晴嵐義計",
+   "afterRank": "S",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "攻撃 400%上昇",
+   "afterEffectShort": "攻撃 400%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "開闢ノ逆鉾",
+   "rank": "SS",
+   "afterSkill": "開闢ノ逆鉾",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "攻撃 254%上昇+卓越:攻撃戦闘時追加確率30%で自部隊の兵士被害15%減少(部隊内重複上限2・模倣不可)",
+   "afterEffectShort": "攻撃 254%上昇+卓越:攻撃戦闘時追加確率30%で自部隊の兵士被害15%減少(部隊内重複上限2・模倣不可)"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/2833 と skills/晴嵐義計)およびixawiki(BushoCard/2833島津歳久)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

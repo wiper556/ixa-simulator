@@ -71,7 +71,8 @@
    "afterRank": "A",
    "target": "槍鉄",
    "rate": "24%",
-   "effectShort": "攻撃76%上昇+破壊30%上昇"
+   "effectShort": "攻撃76%上昇+破壊30%上昇",
+   "afterEffectShort": "攻撃76%上昇+破壊30%上昇"
   },
   {
    "slot": "B",
@@ -94,7 +95,7 @@
    "afterRank": "SS",
    "target": null,
    "rate": null,
-   "effectShort": null,
+   "effectShort": "攻撃99.9%上昇+防御99.9%上昇+破壊150%上昇",
    "afterTarget": "槍・弓・馬",
    "afterRate": "70%",
    "afterEffectShort": "全攻 30%上昇(部隊の総コストで効果が変化)"
@@ -107,7 +108,7 @@
    "afterRank": "SS",
    "target": null,
    "rate": null,
-   "effectShort": null,
+   "effectShort": "攻撃130%上昇+防御130%上昇+破壊50%上昇",
    "afterTarget": "全",
    "afterRate": "45%",
    "afterEffectShort": "攻撃110%上昇(6部隊以下の攻撃で効果2倍)"
@@ -120,7 +121,8 @@
    "afterRank": "SS",
    "target": "全",
    "rate": "69%",
-   "effectShort": "攻撃140%上昇(自部隊同時攻撃時コスト最大0.5除外・模倣不可)"
+   "effectShort": "攻撃 140%上昇(自部隊同時攻撃時コスト最大0.5除外・模倣不可)",
+   "afterEffectShort": "攻撃 140%上昇(自部隊同時攻撃時コスト最大0.5除外・模倣不可)"
   }
  ],
  "notes": [

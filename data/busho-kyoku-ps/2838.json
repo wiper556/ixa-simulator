@@ -1,0 +1,128 @@
+{
+ "name": "新庄局",
+ "no": "2838",
+ "ch": "未確認",
+ "cost": 2.0,
+ "troop": "全",
+ "sub": "",
+ "effect": "このカードを所持していると対人攻撃戦闘時・防御戦闘時の武将獲得経験値が2倍(重複不可)",
+ "furigana": "しんじょうのつぼね",
+ "illustrator": "紺藤ココン",
+ "imageFull": "assets/img/characters/no2838_full.png",
+ "imageChar": "assets/img/characters/no2838_char.png",
+ "atkBase": 1120,
+ "atkGrowth": 49.0,
+ "defBase": 1120,
+ "defGrowth": 56.0,
+ "tacticsBase": 550.0,
+ "tacticsGrowth": 3.0,
+ "lv0Troops": 3020,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "慈光望姫",
+ "skillDetail": "S/LV10 このカードを所持していると対人攻撃戦闘時・防御戦闘時の武将獲得経験値が2倍/対象:全\n①このカードを所持していると対人攻撃戦闘時・防御戦闘時の武将獲得経験値が2倍になる(重複不可)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 -% / このカードを所持していると対人攻撃戦闘時・防御戦闘時の武将獲得経験値が2倍(重複不可)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": "全　確率 -% / このカードを所持していると対人攻撃戦闘時・防御戦闘時の武将獲得経験値が2.1倍(重複不可)"
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": "全　確率 -% / このカードを所持していると対人攻撃戦闘時・防御戦闘時の武将獲得経験値が2.3倍(重複不可)"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": "全　確率 -% / このカードを所持していると対人攻撃戦闘時・防御戦闘時の武将獲得経験値が2.5倍(重複不可)"
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": "全　確率 -% / このカードを所持していると対人攻撃戦闘時・防御戦闘時の武将獲得経験値が3倍(重複不可)"
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": "全　確率 -% / このカードを所持していると対人攻撃戦闘時・防御戦闘時の武将獲得経験値が5倍(重複不可)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "天香山命",
+   "rank": "SS",
+   "afterSkill": "天香山命",
+   "afterRank": "SS",
+   "target": "全 覇道",
+   "rate": "100%",
+   "effectShort": "攻撃 120%上昇+速度 90%上昇",
+   "afterEffectShort": "攻撃 120%上昇+速度 90%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "乱世ノ歸人",
+   "rank": "A",
+   "afterSkill": "入来神舞",
+   "afterRank": "S",
+   "target": "部隊長",
+   "rate": "50%",
+   "effectShort": "所属部隊の部隊長が持つ模倣可能な初期スキルを模倣する(卓越・追加確率30%で通常攻撃/防御効果を1.2倍して模倣する)",
+   "afterTarget": "部隊長",
+   "afterRate": "55%",
+   "afterEffectShort": "部隊長の模倣可能な初期スキルを1.1倍に強化して模倣(TRなし)"
+  },
+  {
+   "slot": "C",
+   "skill": "高津姫神",
+   "rank": "SS",
+   "afterSkill": "高津姫神",
+   "afterRank": "SS",
+   "target": "自身",
+   "rate": "70%",
+   "effectShort": "自身が持つ初期スキルを模倣する(戦闘スキルのみ)",
+   "afterEffectShort": "自身が持つ初期スキルを模倣する(戦闘スキルのみ)"
+  },
+  {
+   "slot": "S1",
+   "skill": "高津姫神",
+   "rank": "SS",
+   "afterSkill": "高津姫神",
+   "afterRank": "SS",
+   "target": "自身",
+   "rate": "70%",
+   "effectShort": "自身が持つ初期スキルを模倣する(戦闘スキルのみ)",
+   "afterEffectShort": "自身が持つ初期スキルを模倣する(戦闘スキルのみ)"
+  },
+  {
+   "slot": "S2",
+   "skill": "十束ノ神域",
+   "rank": "SS",
+   "afterSkill": "天聖宝冠",
+   "afterRank": "SSS",
+   "target": "全 覇道",
+   "rate": "100%",
+   "effectShort": "攻撃 320%上昇+速度 70%上昇+覇道を持つため所属部隊の武将のスキルを無効化・発動率低下から保護",
+   "afterTarget": "全",
+   "afterRate": "45%",
+   "afterEffectShort": "攻撃 100%上昇((5.0×防御参加武将数)%を攻撃効果に加算・模倣不可)"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/2838 と skills/慈光望姫)およびixawiki(BushoCard/2838新庄局)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

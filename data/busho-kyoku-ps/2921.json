@@ -3,9 +3,9 @@
  "no": "2921",
  "ch": "未確認",
  "cost": 1.0,
- "troop": null,
+ "troop": "全防",
  "sub": "",
- "effect": null,
+ "effect": "対合流攻撃防御時のみ敵軍の兵士被害数+25%(重複発動不可)",
  "furigana": "まつながひさひで",
  "illustrator": "正子公也",
  "imageFull": "assets/img/characters/no2921_full.png",
@@ -24,12 +24,12 @@
   "ki": "A"
  },
  "initialSkill": "災禍ノ老仙",
- "skillDetail": null,
+ "skillDetail": "A/LV10 確率 50% 対合流攻撃防御時のみ敵軍の兵士被害数+25%/対象:全\n①対合流攻撃防御時のみ敵軍の兵士被害数が25%上昇する(重複発動不可)",
  "trTable": [
   {
    "level": "LV10",
    "points": "-",
-   "effect": "全 敵軍の兵士被害数+25%　確率 50%"
+   "effect": "全　確率 50% / 対合流攻撃防御時のみ敵軍の兵士被害数+25%(重複発動不可)"
   }
  ],
  "synthesisTable": [
@@ -80,7 +80,8 @@
    "afterRank": "B",
    "target": "全",
    "rate": "30%",
-   "effectShort": "攻撃戦闘勝利時のみ、敵軍1部隊の武将に追加ダメージ+45"
+   "effectShort": "攻撃戦闘勝利時のみ、敵軍1部隊の武将に追加ダメージ+45",
+   "afterEffectShort": "攻撃戦闘勝利時のみ、敵軍1部隊の武将に追加ダメージ+45"
   },
   {
    "slot": "S2",
@@ -90,7 +91,8 @@
    "afterRank": "A",
    "target": "全",
    "rate": "60%",
-   "effectShort": "防御 5%上昇"
+   "effectShort": "防御 5%上昇",
+   "afterEffectShort": "防御 5%上昇"
   }
  ],
  "notes": [

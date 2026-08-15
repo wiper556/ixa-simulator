@@ -81,7 +81,8 @@
    "afterRank": "SSS",
    "rate": "45%",
    "target": "自身",
-   "effectShort": "模倣した初期スキルの効果を1.35〜1.5倍に強化"
+   "effectShort": "自身の初期スキルを1.35倍にして模倣",
+   "afterEffectShort": "自身の初期スキルを1.35倍にして模倣"
   },
   {
    "slot": "B",
@@ -91,7 +92,8 @@
    "afterRank": "SSS",
    "rate": "43%",
    "target": "全 飛翔13",
-   "effectShort": "防御 9.4%×防御参加武将数(280人)=2632.0%"
+   "effectShort": "防御 9.4%×防御参加武将数(280人)=2632.0%",
+   "afterEffectShort": "防御 9.4%×防御参加武将数(280人)=2632.0%"
   },
   {
    "slot": "C",
@@ -101,7 +103,8 @@
    "afterRank": "SSS",
    "rate": "60%",
    "target": "全",
-   "effectShort": "防御50%上昇+破壊を係数×人数で上昇"
+   "effectShort": "防御 50%上昇+破壊150%上昇(10×防御参加武将数(280人)=2800%を防御効果に加算)",
+   "afterEffectShort": "防御 50%上昇+破壊150%上昇(10×防御参加武将数(280人)=2800%を防御効果に加算)"
   },
   {
    "slot": "S1",
@@ -111,7 +114,8 @@
    "afterRank": "SS",
    "rate": "50%",
    "target": "全 無尽",
-   "effectShort": "防御を係数×人数で上昇"
+   "effectShort": "防御 10%×防御参加武将数(280人)=2800.0%",
+   "afterEffectShort": "防御 10%×防御参加武将数(280人)=2800.0%"
   },
   {
    "slot": "S2",
@@ -121,7 +125,8 @@
    "afterRank": "SS",
    "rate": "50%",
    "target": "全",
-   "effectShort": "防御が係数×同スキル所持武将数で上昇"
+   "effectShort": "防御 310%×國才連豪所持武将数(4人)=1240.0%上昇",
+   "afterEffectShort": "防御 310%×國才連豪所持武将数(4人)=1240.0%上昇"
   }
  ]
 }

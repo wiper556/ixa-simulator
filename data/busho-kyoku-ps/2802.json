@@ -1,0 +1,104 @@
+{
+ "name": "愛洲移香斎",
+ "no": "2802",
+ "ch": "未確認",
+ "cost": 4.5,
+ "troop": "全攻",
+ "sub": "",
+ "effect": "攻撃戦闘時、防御側の各部隊内でもっとも兵法が高い武将の兵法値を 0 にする(重複不可・模倣不可)",
+ "furigana": "あいすひさただ",
+ "illustrator": "黒葉.K",
+ "imageFull": "assets/img/characters/no2802_full.png",
+ "imageChar": "assets/img/characters/no2802_char.png",
+ "atkBase": 1540,
+ "atkGrowth": 80.0,
+ "defBase": 1250,
+ "defGrowth": 58.0,
+ "tacticsBase": 540.0,
+ "tacticsGrowth": 3.0,
+ "lv0Troops": 4890,
+ "rankGrades": {
+  "yari": "SS",
+  "yumi": "A",
+  "uma": "B",
+  "ki": "A"
+ },
+ "initialSkill": "前知兵法",
+ "skillDetail": "S/LV10 確率 15% 攻撃戦闘時防御側の各部隊内でもっとも兵法が高い武将の兵法値を0にする(重複不可)/対象:-\n模倣不可\n①攻撃戦闘時防御側の各部隊内でもっとも兵法が高い武将の兵法値を0にする(重複不可)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "-　確率 15% / 攻撃戦闘時、防御側の各部隊内でもっとも兵法が高い武将の兵法値を 0 にする(重複不可・模倣不可)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "鬼滅刺",
+   "rank": "A",
+   "afterSkill": "布都御魂ノ鬨",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "攻撃 70%上昇 防御 70%上昇",
+   "afterTarget": "全",
+   "afterRate": "35%",
+   "afterEffectShort": "攻撃 40%上昇+防御 40%上昇(部隊内レアリティS以上のスキル個数×20%加算)"
+  },
+  {
+   "slot": "B",
+   "skill": "鬼滅刺",
+   "rank": "A",
+   "afterSkill": "布都御魂ノ鬨",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "攻撃 70%上昇 防御 70%上昇",
+   "afterTarget": "全",
+   "afterRate": "35%",
+   "afterEffectShort": "攻撃 40%上昇+防御 40%上昇(部隊内レアリティS以上のスキル個数×20%加算)"
+  },
+  {
+   "slot": "C",
+   "skill": "前知兵法",
+   "rank": "S",
+   "afterSkill": "前知兵法",
+   "afterRank": "S",
+   "target": "-",
+   "rate": "15%",
+   "effectShort": "攻撃戦闘時、防御側の各部隊内でもっとも兵法が高い武将の兵法値を 0 にする(重複不可・模倣不可)",
+   "afterEffectShort": "攻撃戦闘時、防御側の各部隊内でもっとも兵法が高い武将の兵法値を 0 にする(重複不可・模倣不可)"
+  },
+  {
+   "slot": "S1",
+   "skill": "前知兵法",
+   "rank": "S",
+   "afterSkill": "前知兵法",
+   "afterRank": "S",
+   "target": "-",
+   "rate": "15%",
+   "effectShort": "攻撃戦闘時、防御側の各部隊内でもっとも兵法が高い武将の兵法値を 0 にする(重複不可・模倣不可)",
+   "afterEffectShort": "攻撃戦闘時、防御側の各部隊内でもっとも兵法が高い武将の兵法値を 0 にする(重複不可・模倣不可)"
+  },
+  {
+   "slot": "S2",
+   "skill": "建御雷神ノ槌",
+   "rank": "SS",
+   "afterSkill": "建御雷神ノ槌",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "攻撃 135%上昇+防御 135%上昇(卓越確率+30%)",
+   "afterEffectShort": "攻撃 135%上昇+防御 135%上昇(卓越確率+30%)"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/2802 と skills/前知兵法)およびixawiki(BushoCard/2802愛洲移香斎)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。",
+  "2026-08-15検証: skillDetailの読点を除去し模倣不可を独立行に分離。前知兵法はdata/skill/前知兵法.jsonで対象欄が「-」(兵科を問わない)と確定済みだったため、trTable/skillDetail/synthesisTable(C・S1)のtargetを「全」/nullから「-」に統一した。"
+ ]
+}

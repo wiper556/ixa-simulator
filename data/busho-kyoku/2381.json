@@ -57,7 +57,7 @@
    "effectShort": "防御(敵部隊移動速度÷0.7)%上昇(最大の敵部隊移動速度を参照)",
    "afterTarget": "全",
    "afterRate": "65%",
-   "afterEffectShort": "攻撃465%上昇+防御465%上昇(模倣不可)"
+   "afterEffectShort": "攻撃 465%上昇+防御 465%上昇(模倣不可)"
   },
   {
    "slot": "C",
@@ -70,7 +70,7 @@
    "effectShort": "防御(敵部隊移動速度÷0.7)%上昇(最大の敵部隊移動速度を参照)",
    "afterTarget": "全",
    "afterRate": "65%",
-   "afterEffectShort": "攻撃465%上昇+防御465%上昇(模倣不可)"
+   "afterEffectShort": "攻撃 465%上昇+防御 465%上昇(模倣不可)"
   },
   {
    "slot": "S1",
@@ -80,7 +80,10 @@
    "afterRank": "A",
    "target": "全",
    "rate": "65%",
-   "effectShort": "攻撃465%上昇+防御465%上昇(模倣不可)"
+   "effectShort": "攻撃 465%上昇+防御 465%上昇(模倣不可)",
+   "afterEffectShort": "攻撃 465%上昇+防御 465%上昇(模倣不可)",
+   "afterTarget": "全",
+   "afterRate": "65%"
   },
   {
    "slot": "S2",
@@ -90,7 +93,10 @@
    "afterRank": "A",
    "target": "全",
    "rate": "65%",
-   "effectShort": "攻撃465%上昇+防御465%上昇(模倣不可)"
+   "effectShort": "攻撃 465%上昇+防御 465%上昇(模倣不可)",
+   "afterEffectShort": "攻撃 465%上昇+防御 465%上昇(模倣不可)",
+   "afterTarget": "全",
+   "afterRate": "65%"
   }
  ],
  "notes": [

@@ -71,7 +71,7 @@
    "afterRank": "B",
    "target": null,
    "rate": null,
-   "effectShort": null,
+   "effectShort": "攻撃(コスト×10)%上昇(武将のコストで効果が変化)",
    "afterTarget": "全",
    "afterRate": "20%",
    "afterEffectShort": "攻撃(コスト×10) %上昇(武将コストによって効果が変化)"
@@ -84,7 +84,8 @@
    "afterRank": "B",
    "target": null,
    "rate": null,
-   "effectShort": null
+   "effectShort": "攻撃25%上昇+破壊20%上昇+速度35%上昇",
+   "afterEffectShort": "攻撃25%上昇+破壊20%上昇+速度35%上昇"
   },
   {
    "slot": "C",
@@ -94,7 +95,7 @@
    "afterRank": "B",
    "target": "槍・馬・器",
    "rate": "30%",
-   "effectShort": "攻撃35%上昇+速度25%上昇",
+   "effectShort": "攻撃 35%上昇(確率30%)+速度 25%上昇",
    "afterTarget": "部隊長",
    "afterRate": "50%",
    "afterEffectShort": "所属部隊の部隊長が持つ初期スキルを模倣する(戦闘スキルのみ)"
@@ -107,7 +108,8 @@
    "afterRank": "B",
    "target": "槍・馬・砲",
    "rate": "17%",
-   "effectShort": "攻撃・防御((1+ランク)×コスト×2.1)%上昇"
+   "effectShort": "攻撃・防御((1+ランク)×コスト×2.1)%上昇",
+   "afterEffectShort": "攻撃・防御((1+ランク)×コスト×2.1)%上昇"
   },
   {
    "slot": "S2",

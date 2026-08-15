@@ -1,0 +1,126 @@
+{
+ "name": "鳥居元忠",
+ "no": "2847",
+ "ch": "未確認",
+ "cost": 3.0,
+ "troop": "全",
+ "sub": "",
+ "effect": "攻撃 450%上昇",
+ "furigana": "とりいもとただ",
+ "illustrator": "塚本陽子",
+ "imageFull": "assets/img/characters/no2847_full.png",
+ "imageChar": "assets/img/characters/no2847_char.png",
+ "atkBase": 1210,
+ "atkGrowth": 62.0,
+ "defBase": 1100,
+ "defGrowth": 55.0,
+ "tacticsBase": 550.0,
+ "tacticsGrowth": 3.0,
+ "lv0Troops": 3570,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "精忠鋼壁",
+ "skillDetail": "S/LV10 確率 50% 攻撃 450%上昇/対象:全\n①攻撃が450%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 50% / 攻撃 450%上昇"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": "全　確率 50% / 攻撃 490%上昇"
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": "全　確率 55% / 攻撃 610%上昇"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": "全　確率 60% / 攻撃 790%上昇"
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": "全　確率 70% / 攻撃 1050%上昇"
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": "全　確率 80% / 攻撃 1420%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "破軍十六神将",
+   "rank": "SSS",
+   "afterSkill": "天岩戸ノ神域",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "攻撃 120%上昇",
+   "afterTarget": "全",
+   "afterRate": "70%",
+   "afterEffectShort": "攻撃 2.8%×防御参加武将数(280人)=784.0%"
+  },
+  {
+   "slot": "B",
+   "skill": "月詠ノ覇威",
+   "rank": "SS",
+   "afterSkill": "月詠ノ覇威",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "攻撃 344%上昇+防御 344%上昇+自軍全武将全スキルの卓越確率に15%加算(模倣不可・自軍内重複上限2)",
+   "afterEffectShort": "攻撃 344%上昇+防御 344%上昇+自軍全武将全スキルの卓越確率に15%加算(模倣不可・自軍内重複上限2)"
+  },
+  {
+   "slot": "C",
+   "skill": "万物神勇",
+   "rank": "SSS",
+   "afterSkill": "万物神勇",
+   "afterRank": "SSS",
+   "target": "全 撤退",
+   "rate": "43%",
+   "effectShort": "攻撃 (9.2×防御参加武将数)%上昇+撤退(陣での防御戦闘に参加しない)",
+   "afterEffectShort": "攻撃 (9.2×防御参加武将数)%上昇+撤退(陣での防御戦闘に参加しない)"
+  },
+  {
+   "slot": "S1",
+   "skill": "精忠鋼壁",
+   "rank": "S",
+   "afterSkill": "精忠鋼壁",
+   "afterRank": "S",
+   "target": "全",
+   "rate": "50%",
+   "effectShort": "攻撃 450%上昇",
+   "afterEffectShort": "攻撃 450%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "神羅聖域",
+   "rank": "SS",
+   "afterSkill": "神羅聖域",
+   "afterRank": "SS",
+   "target": "全 覇道",
+   "rate": "40%",
+   "effectShort": "攻撃 900%上昇+防御 900%上昇+破壊 150%上昇+覇道を持つため所属部隊の武将のスキルを無効化・発動率低下から保護",
+   "afterEffectShort": "攻撃 900%上昇+防御 900%上昇+破壊 150%上昇+覇道を持つため所属部隊の武将のスキルを無効化・発動率低下から保護"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/2847 と skills/精忠鋼壁)およびixawiki(BushoCard/2847鳥居元忠)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

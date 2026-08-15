@@ -1,0 +1,105 @@
+{
+ "name": "瀬名姫",
+ "no": "2815",
+ "ch": "未確認",
+ "cost": 1.0,
+ "troop": null,
+ "sub": "",
+ "effect": null,
+ "furigana": "せなひめ",
+ "illustrator": "紺藤ココン",
+ "imageFull": "assets/img/characters/no2815_full.png",
+ "imageChar": "assets/img/characters/no2815_char.png",
+ "atkBase": 1120,
+ "atkGrowth": 50.0,
+ "defBase": 1150,
+ "defGrowth": 54.0,
+ "tacticsBase": 560.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 1910,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "無辜ノ哀炎",
+ "skillDetail": null,
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 -% / 飛翔4 このカードを所持していると、本丸防御陣形編成コストの最大値が{0.5×(武将ランク+1)}上昇します。(重複不可)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "禍津日神ノ謀",
+   "rank": "SS",
+   "afterSkill": "禍津日神ノ謀",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "70%",
+   "effectShort": "防御 145%上昇(武将ダメージ軽減3%・重複上限4)",
+   "afterEffectShort": "防御 145%上昇(武将ダメージ軽減3%・重複上限4)"
+  },
+  {
+   "slot": "B",
+   "skill": "氷瀑ノ封神",
+   "rank": "SSS",
+   "afterSkill": "氷瀑ノ封神",
+   "afterRank": "SSS",
+   "target": "全",
+   "rate": "30%",
+   "effectShort": "防御200%上昇 攻撃部隊の武将が持つ特殊効果付き初期スキルを全て無効化(模倣不可)",
+   "afterEffectShort": "防御200%上昇 攻撃部隊の武将が持つ特殊効果付き初期スキルを全て無効化(模倣不可)"
+  },
+  {
+   "slot": "C",
+   "skill": "黄泉醜女ノ屍兵",
+   "rank": "SS",
+   "afterSkill": "天地黎明",
+   "afterRank": "SSS",
+   "target": "全",
+   "rate": "54%",
+   "effectShort": "防御 200%上昇(70以下の被ダメージ上限45)",
+   "afterTarget": "全",
+   "afterRate": "70%",
+   "afterEffectShort": "防御 270%上昇(HP99以下で3倍)"
+  },
+  {
+   "slot": "S1",
+   "skill": "黄泉醜女ノ屍兵",
+   "rank": "SS",
+   "afterSkill": "天地黎明",
+   "afterRank": "SSS",
+   "target": "全",
+   "rate": "54%",
+   "effectShort": "防御 200%上昇(70以下の被ダメージ上限45)",
+   "afterTarget": "全",
+   "afterRate": "70%",
+   "afterEffectShort": "防御 270%上昇(HP99以下で3倍)"
+  },
+  {
+   "slot": "S2",
+   "skill": "鼎国ノ楔姫",
+   "rank": "S",
+   "afterSkill": "黄泉醜女ノ屍兵",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "40%",
+   "effectShort": "防御 170%上昇",
+   "afterTarget": "全",
+   "afterRate": "54%",
+   "afterEffectShort": "防御 200%上昇(70以下の被ダメージ上限45)"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/2815 と skills/無辜ノ哀炎)およびixawiki(BushoCard/2815瀬名姫)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

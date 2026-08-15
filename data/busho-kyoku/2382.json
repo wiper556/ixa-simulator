@@ -69,7 +69,7 @@
    "effectShort": "攻撃250%上昇(自軍1部隊での攻撃時3倍)",
    "afterTarget": "全",
    "afterRate": "65%",
-   "afterEffectShort": "攻撃465%上昇+防御465%上昇(模倣不可)"
+   "afterEffectShort": "攻撃 465%上昇+防御 465%上昇(模倣不可)"
   },
   {
    "slot": "B",
@@ -82,7 +82,7 @@
    "effectShort": "攻撃250%上昇(自軍1部隊での攻撃時3倍)",
    "afterTarget": "全",
    "afterRate": "65%",
-   "afterEffectShort": "攻撃465%上昇+防御465%上昇(模倣不可)"
+   "afterEffectShort": "攻撃 465%上昇+防御 465%上昇(模倣不可)"
   },
   {
    "slot": "C",
@@ -105,7 +105,10 @@
    "afterRank": "A",
    "target": "全",
    "rate": "65%",
-   "effectShort": "攻撃465%上昇+防御465%上昇(模倣不可)"
+   "effectShort": "攻撃 465%上昇+防御 465%上昇(模倣不可)",
+   "afterEffectShort": "攻撃 465%上昇+防御 465%上昇(模倣不可)",
+   "afterTarget": "全",
+   "afterRate": "65%"
   },
   {
    "slot": "S2",
@@ -115,7 +118,10 @@
    "afterRank": "A",
    "target": "全",
    "rate": "65%",
-   "effectShort": "攻撃465%上昇+防御465%上昇(模倣不可)"
+   "effectShort": "攻撃 465%上昇+防御 465%上昇(模倣不可)",
+   "afterEffectShort": "攻撃 465%上昇+防御 465%上昇(模倣不可)",
+   "afterTarget": "全",
+   "afterRate": "65%"
   }
  ],
  "notes": [

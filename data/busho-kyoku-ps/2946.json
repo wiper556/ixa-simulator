@@ -54,7 +54,8 @@
    "afterRank": "D",
    "target": "弓器",
    "rate": "28%",
-   "effectShort": "攻撃 41%上昇"
+   "effectShort": "攻撃 41%上昇",
+   "afterEffectShort": "攻撃 41%上昇"
   },
   {
    "slot": "C",
@@ -64,7 +65,8 @@
    "afterRank": "B",
    "target": "槍弓砲",
    "rate": "8%",
-   "effectShort": "攻撃 50%上昇"
+   "effectShort": "攻撃 50%上昇",
+   "afterEffectShort": "攻撃 50%上昇"
   },
   {
    "slot": "S1",
@@ -77,7 +79,7 @@
    "effectShort": "攻撃 40%上昇",
    "afterTarget": "砲器",
    "afterRate": "50%",
-   "afterEffectShort": "攻撃((ランク+1)xコストx3) %上昇 部隊ランクとコストで効果が変化"
+   "afterEffectShort": "攻撃 ((ランク+1)xコストx3) %上昇(部隊ランクとコストで効果が変化)"
   },
   {
    "slot": "S2",

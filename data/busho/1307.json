@@ -71,7 +71,8 @@
    "afterRank": "SS",
    "rate": "100%",
    "target": "全 飛翔15",
-   "effectShort": "攻撃 740%上昇+速度200%上昇(TR5で攻撃1660%・速度300%)"
+   "effectShort": "攻撃 740%上昇+速度 200%上昇",
+   "afterEffectShort": "攻撃 740%上昇+速度 200%上昇"
   },
   {
    "slot": "B",
@@ -81,7 +82,8 @@
    "afterRank": "SS",
    "rate": "55%",
    "target": "部隊長",
-   "effectShort": "所属部隊の部隊長が持つ初期スキルを通常攻撃/防御効果1.15倍にして模倣する+速度200%上昇(確率100%)"
+   "effectShort": "所属部隊の部隊長が持つ初期スキルを通常攻撃/防御効果1.15倍にして模倣する(戦闘スキルのみ)+速度200%上昇(確率100%)",
+   "afterEffectShort": "所属部隊の部隊長が持つ初期スキルを通常攻撃/防御効果1.15倍にして模倣する(戦闘スキルのみ)+速度200%上昇(確率100%)"
   },
   {
    "slot": "C",
@@ -91,7 +93,8 @@
    "afterRank": "SS",
    "rate": "100%",
    "target": "全 撤退 覇道",
-   "effectShort": "攻撃1130%上昇+速度200%上昇"
+   "effectShort": "攻撃 1130%上昇+速度 200%上昇",
+   "afterEffectShort": "攻撃 1130%上昇+速度 200%上昇"
   },
   {
    "slot": "S1",
@@ -101,7 +104,8 @@
    "afterRank": "S",
    "rate": "100%",
    "target": "槍・馬・器・騎",
-   "effectShort": "速度200%上昇(攻撃は速度÷32×100%、参考値1%)"
+   "effectShort": "速度 200%上昇(攻撃は速度÷32×100%)",
+   "afterEffectShort": "速度 200%上昇(攻撃は速度÷32×100%)"
   },
   {
    "slot": "S2",
@@ -111,7 +115,8 @@
    "afterRank": "SS",
    "rate": "100%",
    "target": "全",
-   "effectShort": "攻撃 540%上昇+速度250%上昇"
+   "effectShort": "攻撃 540%上昇+速度250%上昇",
+   "afterEffectShort": "攻撃 540%上昇+速度250%上昇"
   }
  ],
  "speedAtkLookupTable": {

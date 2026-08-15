@@ -1,0 +1,107 @@
+{
+ "name": "円信院殿",
+ "no": "2771",
+ "ch": "未確認",
+ "cost": 2.0,
+ "troop": "全",
+ "sub": "",
+ "effect": "攻撃 70%上昇",
+ "furigana": "えんしんいんでん",
+ "illustrator": "綾乙",
+ "imageFull": "assets/img/characters/no2771_full.png",
+ "imageChar": "assets/img/characters/no2771_char.png",
+ "atkBase": 970,
+ "atkGrowth": 30.0,
+ "defBase": 970,
+ "defGrowth": 30.0,
+ "tacticsBase": 500.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 2550,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "隼人演武",
+ "skillDetail": "A/LV10 確率 50% 攻撃 70%上昇/対象:全\n①攻撃が70%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 50% / 攻撃 70%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "戦陣 破軍",
+   "rank": "A",
+   "afterSkill": "天穿神滅",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "44%",
+   "effectShort": "攻撃 66%上昇+防御 66%上昇",
+   "afterTarget": "砲器",
+   "afterRate": "50%",
+   "afterEffectShort": "攻撃((ランク+1)xコストx3) %上昇 部隊ランクとコストで効果が変化"
+  },
+  {
+   "slot": "B",
+   "skill": "金鵄八咫烏",
+   "rank": "A",
+   "afterSkill": "鉄砲商人",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "部隊内全武将の全スキルに「砲」対象を追加する(兵科対象スキル限定・模倣不可)",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "部隊内全武将が持つ全スキルに「砲」対象を追加する(兵科対象スキル限定・模倣不可)"
+  },
+  {
+   "slot": "C",
+   "skill": "鉄砲商人",
+   "rank": "A",
+   "afterSkill": "遁世影武者",
+   "afterRank": "B",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "部隊内全武将が持つ全スキルに「砲」対象を追加する(兵科対象スキル限定・模倣不可)",
+   "afterTarget": "部隊長",
+   "afterRate": "50%",
+   "afterEffectShort": "所属部隊の部隊長が持つ初期スキルを模倣する(戦闘スキルのみ)"
+  },
+  {
+   "slot": "S1",
+   "skill": "隼人演武",
+   "rank": "A",
+   "afterSkill": "隼人演武",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "50%",
+   "effectShort": "攻撃 70%上昇",
+   "afterEffectShort": "攻撃 70%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "戦陣 無双",
+   "rank": "A",
+   "afterSkill": "無双英傑",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "50%",
+   "effectShort": "攻撃 67%上昇",
+   "afterTarget": "全",
+   "afterRate": "50%",
+   "afterEffectShort": "攻撃99.9%上昇 防御99.9%上昇 部隊消費コストを0.5低下 (特殊効果は模倣不可)"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/2771 と skills/隼人演武)およびixawiki(BushoCard/2771円信院殿)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

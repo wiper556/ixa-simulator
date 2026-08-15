@@ -1,0 +1,101 @@
+{
+ "name": "今川氏輝",
+ "no": "2749",
+ "ch": "未確認",
+ "cost": 2.0,
+ "troop": "部隊長",
+ "sub": "",
+ "effect": "所属部隊の部隊長が持つ初期スキルを模倣する(戦闘スキルのみ)",
+ "furigana": "いまがわうじてる",
+ "illustrator": "BISAI",
+ "imageFull": "assets/img/characters/no2749_full.png",
+ "imageChar": "assets/img/characters/no2749_char.png",
+ "atkBase": 970,
+ "atkGrowth": 26.0,
+ "defBase": 970,
+ "defGrowth": 26.0,
+ "tacticsBase": 510.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2300,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "宿木",
+ "skillDetail": "B/LV10 確率 55% 所属部隊の部隊長が持つ初期スキルを模倣する(戦闘スキルのみ)/対象:部隊長\n①所属部隊の部隊長が持つ初期スキルを模倣する(戦闘スキルのみ)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "部隊長　確率 55% / 所属部隊の部隊長が持つ初期スキルを模倣する(戦闘スキルのみ)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "弓妖陣",
+   "rank": "B",
+   "afterSkill": "背水之陣",
+   "afterRank": "B",
+   "target": "槍弓砲",
+   "rate": "25%",
+   "effectShort": "防御 39%上昇",
+   "afterTarget": "槍弓馬",
+   "afterRate": "20%",
+   "afterEffectShort": "防御 37%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "遁世影武者",
+   "rank": "B",
+   "afterSkill": "風林火山",
+   "afterRank": "S",
+   "target": "部隊長",
+   "rate": "50%",
+   "effectShort": "所属部隊の部隊長が持つ初期スキルを模倣する(戦闘スキルのみ)",
+   "afterTarget": "槍・弓・馬",
+   "afterRate": "45%",
+   "afterEffectShort": "攻撃 30%上昇+破壊15%上昇(TRなし)"
+  },
+  {
+   "slot": "C",
+   "skill": "風狂幻術",
+   "rank": "B",
+   "afterSkill": "風狂幻術",
+   "afterRank": "B",
+   "target": "部隊長",
+   "rate": "53%",
+   "effectShort": "部隊長の初期スキルを模倣(戦闘スキルのみ、TRなし)"
+  },
+  {
+   "slot": "S1",
+   "skill": "宿木",
+   "rank": "B",
+   "afterSkill": "宿木",
+   "afterRank": "B",
+   "target": "部隊長",
+   "rate": "55%",
+   "effectShort": "部隊長の初期スキルを模倣(戦闘スキルのみ)"
+  },
+  {
+   "slot": "S2",
+   "skill": "今川仮名目録",
+   "rank": "A",
+   "afterSkill": "今川仮名目録",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "35%",
+   "effectShort": "攻撃部隊武将の特殊効果付き追加スキル発動率を低下"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/2749 と skills/宿木)およびixawiki(BushoCard/2749今川氏輝)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。",
+  "2026-08-15検証: 統率はbadges_O.pngと一致(A/A/A/A)。C・S1のeffectShortから誤った「効果 」接頭辞を除去。"
+ ]
+}

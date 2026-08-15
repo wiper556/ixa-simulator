@@ -1,0 +1,103 @@
+{
+ "name": "本因坊算砂",
+ "no": "2816",
+ "ch": "未確認",
+ "cost": 4.5,
+ "troop": "全防",
+ "sub": "",
+ "effect": "防御 160%上昇",
+ "furigana": "ほんいんぼうさんさ",
+ "illustrator": "小森ニコ",
+ "imageFull": "assets/img/characters/no2816_full.png",
+ "imageChar": "assets/img/characters/no2816_char.png",
+ "atkBase": 800,
+ "atkGrowth": 32.0,
+ "defBase": 800,
+ "defGrowth": 32.0,
+ "tacticsBase": 700.0,
+ "tacticsGrowth": 4.0,
+ "lv0Troops": 4500,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "一世名人",
+ "skillDetail": "S/LV10 確率 100% 防御 160%上昇/対象:全\n①防御が160%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 防御 160%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "星宿劫ノ法壁",
+   "rank": "SS",
+   "afterSkill": "星宿劫ノ法壁",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "49%",
+   "effectShort": "防御 120%上昇(第参列目以降配置時3倍)",
+   "afterEffectShort": "防御 120%上昇(第参列目以降配置時3倍)"
+  },
+  {
+   "slot": "B",
+   "skill": "一期一会",
+   "rank": "C",
+   "afterSkill": "神速",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "デッキ上武将回復率 20%上昇",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "速度 55%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "天の福音",
+   "rank": "C",
+   "afterSkill": "義兵進軍",
+   "afterRank": "C",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "デッキ上武将回復率 20%上昇",
+   "afterTarget": "槍弓馬砲",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 7%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "茶人の教え",
+   "rank": "F",
+   "afterSkill": "茶人の教え",
+   "afterRank": "F",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "デッキ上武将回復率 15%上昇",
+   "afterEffectShort": "デッキ上武将回復率 15%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "茶人の教え",
+   "rank": "F",
+   "afterSkill": "茶人の教え",
+   "afterRank": "F",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "デッキ上武将回復率 15%上昇",
+   "afterEffectShort": "デッキ上武将回復率 15%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/2816 と skills/一世名人)およびixawiki(BushoCard/2816本因坊算砂)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}
