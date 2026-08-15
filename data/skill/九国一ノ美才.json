@@ -3,8 +3,13 @@
  "rank": "S",
  "baseRate": 70.0,
  "target": "弓器焙",
- "effectSummary": "S/LV10 確率 70% 防御 (2.4x防御参加武将数)%上昇/対象:弓器焙\n①防御が(2.4x防御参加武将数)%上昇する",
- "categoryLinks": [],
+ "effectSummary": "S/LV10 確率 70% 防御 2.4%×防御参加武将数(280人)=672.0%/対象:弓器焙\n①防御が(2.4x防御参加武将数)%上昇する",
+ "categoryLinks": [
+  {
+   "href": "skills-count-def.html",
+   "label": "人数依存(防)スキル一覧を見る"
+  }
+ ],
  "sourceCharacters": [
   {
    "name": "奈多姫",
@@ -25,7 +30,7 @@
   {
    "level": "LV10",
    "points": "-",
-   "effect": "弓器焙　確率 70% / 防御 (2.4x防御参加武将数)%上昇"
+   "effect": "弓器焙　確率 70% / 防御 2.4%×防御参加武将数(280人)=672.0%"
   }
  ],
  "ownHiddenCandidate": {

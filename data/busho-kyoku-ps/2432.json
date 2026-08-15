@@ -87,7 +87,7 @@
    "effectShort": "防御1%上昇(部隊ランクボーナス×10%を加算)",
    "afterTarget": "全",
    "afterRate": "60%",
-   "afterEffectShort": "防御100%上昇(自部隊の武将ダメージ軽減3%・重複発動上限数4)"
+   "afterEffectShort": "防御 100%上昇+自部隊の武将ダメージ軽減3%(重複発動上限数4)"
   },
   {
    "slot": "C",
@@ -122,7 +122,7 @@
    "target": null,
    "rate": null,
    "effectShort": "攻撃・防御 35+(武将ランク×5)%上昇",
-   "afterEffectShort": "攻撃 35%上昇"
+   "afterEffectShort": "攻撃・防御 35+(武将ランク×5)%上昇"
   }
  ],
  "notes": [

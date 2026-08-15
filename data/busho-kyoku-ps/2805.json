@@ -5,7 +5,7 @@
  "cost": 2.5,
  "troop": "弓器焙防",
  "sub": "",
- "effect": "防御 (2.4x防御参加武将数)%上昇",
+ "effect": "防御 2.4%×防御参加武将数(280人)=672.0%",
  "furigana": "なたひめ",
  "illustrator": "影井由宇",
  "imageFull": "assets/img/characters/no2805_full.png",
@@ -24,12 +24,12 @@
   "ki": "S"
  },
  "initialSkill": "九国一ノ美才",
- "skillDetail": "S/LV10 確率 70% 防御 (2.4x防御参加武将数)%上昇/対象:弓器焙\n①防御が(2.4x防御参加武将数)%上昇する",
+ "skillDetail": "S/LV10 確率 70% 防御 2.4%×防御参加武将数(280人)=672.0%/対象:弓器焙\n①防御が(2.4x防御参加武将数)%上昇する",
  "trTable": [
   {
    "level": "LV10",
    "points": "-",
-   "effect": "弓器焙　確率 70% / 防御 (2.4x防御参加武将数)%上昇"
+   "effect": "弓器焙　確率 70% / 防御 2.4%×防御参加武将数(280人)=672.0%"
   }
  ],
  "synthesisTable": [
@@ -41,7 +41,7 @@
    "afterRank": "S",
    "target": "弓器焙",
    "rate": "70%",
-   "effectShort": "防御 (2.4x防御参加武将数)%上昇",
+   "effectShort": "防御 2.4%×防御参加武将数(280人)=672.0%",
    "afterTarget": "部隊長",
    "afterRate": "55%",
    "afterEffectShort": "部隊長の模倣可能な初期スキルを1.1倍に強化して模倣(TRなし)"
@@ -54,7 +54,8 @@
    "afterRank": "B",
    "target": "部隊長",
    "rate": "55%",
-   "effectShort": "部隊長の初期スキルを模倣(戦闘スキルのみ)"
+   "effectShort": "部隊長の初期スキルを模倣(戦闘スキルのみ)",
+   "afterEffectShort": "部隊長の初期スキルを模倣(戦闘スキルのみ)"
   },
   {
    "slot": "C",
@@ -90,7 +91,8 @@
    "afterRank": "SS",
    "target": "砲・器",
    "rate": "70%",
-   "effectShort": "防御 2.5%×防御参加武将数(280人)=700.0%"
+   "effectShort": "防御 2.5%×防御参加武将数(280人)=700.0%",
+   "afterEffectShort": "防御 2.5%×防御参加武将数(280人)=700.0%"
   }
  ],
  "notes": [

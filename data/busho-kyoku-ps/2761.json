@@ -24,7 +24,7 @@
   "ki": "A"
  },
  "initialSkill": "江龍殲撃",
- "skillDetail": "A/LV10 確率 40% 対象兵科を指揮した防御時のみ、敵軍の総攻撃力を7%低下/対象:弓器焙\n①対象兵科を指揮した防御時のみ、敵軍の総攻撃力を7%低下",
+ "skillDetail": "A/LV10 確率 40% 対象兵科を指揮した防御時のみ 敵軍の総攻撃力を7%低下/対象:弓器焙\n①対象兵科を指揮した防御時のみ 敵軍の総攻撃力を7%低下",
  "trTable": [
   {
    "level": "LV10",
@@ -41,7 +41,8 @@
    "afterRank": "D",
    "target": "全",
    "rate": "37%",
-   "effectShort": "攻撃 22%上昇"
+   "effectShort": "攻撃 22%上昇",
+   "afterEffectShort": "攻撃 22%上昇"
   },
   {
    "slot": "B",
@@ -77,7 +78,8 @@
    "afterRank": "A",
    "target": "全",
    "rate": "35%",
-   "effectShort": "攻撃部隊武将の特殊効果付き追加スキル発動率を低下"
+   "effectShort": "攻撃部隊武将の特殊効果付き追加スキル発動率を低下",
+   "afterEffectShort": "攻撃部隊武将の特殊効果付き追加スキル発動率を低下"
   },
   {
    "slot": "S2",

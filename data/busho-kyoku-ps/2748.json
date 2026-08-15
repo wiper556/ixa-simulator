@@ -5,7 +5,7 @@
  "cost": 0.0,
  "troop": "全攻",
  "sub": "",
- "effect": "攻撃 35%上昇",
+ "effect": "攻撃・防御 35+(武将ランク×5)%上昇",
  "furigana": "とだせいげん",
  "illustrator": "三好載克",
  "imageFull": "assets/img/characters/no2748_full.png",
@@ -24,12 +24,12 @@
   "ki": "C"
  },
  "initialSkill": "眠り猫",
- "skillDetail": "A/LV10 確率 100% 攻撃 35%上昇/対象:全\n①攻撃が35%上昇する",
+ "skillDetail": "A/LV10 確率 100% 攻撃・防御 35+(武将ランク×5)%上昇/対象:全\n①攻撃・防御が35+(武将ランク×5)%上昇する",
  "trTable": [
   {
    "level": "LV10",
    "points": "-",
-   "effect": "全　確率 100% / 攻撃 35%上昇"
+   "effect": "全　確率 100% / 攻撃・防御 35+(武将ランク×5)%上昇"
   }
  ],
  "synthesisTable": [
@@ -41,7 +41,7 @@
    "afterRank": "D",
    "target": "全",
    "rate": "37%",
-   "effectShort": "攻撃 22%上昇"
+   "effectShort": "攻撃 22%上昇(防御 22%上昇)"
   },
   {
    "slot": "B",
@@ -51,7 +51,7 @@
    "afterRank": "SS",
    "target": "全",
    "rate": "25%",
-   "effectShort": "攻撃 42%上昇",
+   "effectShort": "攻撃 42%上昇+防御 42%上昇",
    "afterTarget": "全",
    "afterRate": "42%",
    "afterEffectShort": "攻撃 25.39%上昇(部隊総コストで変動、TRなし)"
@@ -64,7 +64,7 @@
    "afterRank": "A",
    "target": "全",
    "rate": "35%",
-   "effectShort": "攻撃 40%上昇"
+   "effectShort": "攻撃 40%上昇+防御 40%上昇"
   },
   {
    "slot": "S1",
@@ -74,7 +74,7 @@
    "afterRank": "A",
    "target": "全",
    "rate": "100%",
-   "effectShort": "攻撃 35%上昇"
+   "effectShort": "攻撃・防御 35+(武将ランク×5)%上昇"
   },
   {
    "slot": "S2",
@@ -82,9 +82,9 @@
    "rank": "A",
    "afterSkill": "太閤の威光",
    "afterRank": "S",
-   "target": null,
+   "target": "全",
    "rate": "100%",
-   "effectShort": "対象 将 部隊内の職業「将」武将のスキル発動率+8%",
+   "effectShort": "部隊内の職業「将」武将のスキル発動率+8%",
    "afterTarget": "全",
    "afterRate": "25%",
    "afterEffectShort": "攻撃 25%上昇"
@@ -95,6 +95,7 @@
   "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
   "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
   "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
-  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。",
+  "2026-08-15検証: 統率はbadges_O.pngと一致(SSS/C/C/C)。初期スキル眠り猫はixanary生HTMLで攻撃・防御が同時に35+(武将ランク×5)%上昇する3行構成だったが攻撃行のみ登録されていたため、既存precedent(No.2432)の表現に合わせて全体を修正。屈指の勇将(A枠)・戦陣阿吽(B枠)・傾奇御免状(C枠)も同様に防御上昇分が抜けていたため追加(A枠はNo.2402のafterEffectShort表記に合わせた)。仁将(S2枠)はtargetがnullになっていたため「全」に修正(No.2915の表記に合わせた)。"
  ]
 }
