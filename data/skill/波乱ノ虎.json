@@ -16,11 +16,18 @@
    ]
   }
  ],
+ "grantedViaSkills": [
+  {
+   "skill": "水霊ノ加護",
+   "rank": "A"
+  }
+ ],
  "notes": [
   "ixanary.com(skills/波乱ノ虎)から登録(2026-08-14)。S以上のスキルはページを作る決まり(S-01)にもとづく新規作成。",
   "対象・確率・効果文はixanaryの表記をうちの書式に直したもの。categoryLinksとsourceCharactersは各武将の登録時に追記する。",
   "基本値は防御0%上昇で部隊ランクボーナス×15%が実際の上昇値になる方式(ixanary記載の★28での参考値=135%から裏取り)。",
-  "ownHiddenCandidateは、このスキルが1次候補として載っている枠(自己参照のC枠)の2次候補から(S-08)。"
+  "ownHiddenCandidateは、このスキルが1次候補として載っている枠(自己参照のC枠)の2次候補から(S-08)。",
+  "2026-08-15(黄丸化検証): 北政所(2812)はA枠で水霊ノ加護[A]→波乱ノ虎[S]と変化する(skill≠afterSkill)ため、A-3-12に従いここへ直接列挙せずgrantedViaSkillsで水霊ノ加護[A]を参照する形に修正(水霊ノ加護は既存ページを持つ波乱ノ虎の移植元のため新規ページ作成、A-3-9例外)。北政所自身はdata/skill/水霊ノ加護.jsonのsourceCharactersに記載。"
  ],
  "trTable": [
   {

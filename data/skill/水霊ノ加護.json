@@ -1,0 +1,40 @@
+{
+ "name": "水霊ノ加護",
+ "rank": "A",
+ "baseRate": 100.0,
+ "target": "全",
+ "effectSummary": "A/LV10 確率 100% 防御 1.5%×防御参加武将数(280人)=420.0%/対象:全\n①防御が1.5%×防御参加武将数(280人)=420.0%上昇する",
+ "categoryLinks": [
+  {
+   "href": "skills-count-def.html",
+   "label": "人数依存(防)スキル一覧を見る"
+  }
+ ],
+ "sourceCharacters": [
+  {
+   "name": "北政所",
+   "no": "2812",
+   "slot": "A",
+   "db": "kyoku",
+   "note": [
+    "北政所(2812)のsynthesisTable A枠(2026-08-15)"
+   ]
+  }
+ ],
+ "notes": [
+  "2026-08-15(黄丸化検証): 波乱ノ虎[S]（既存ページ）のA枠1次候補がこのスキルであることをixanary.com(skills/水霊ノ加護)の合成テーブルで確認したため、A-3-9の例外規定(既存S以上ページの移植元はランクに関わらずページ作成対象)にもとづき新規作成。北政所(2812)は本来ここへ直接掲載すべき(A-3-12、skill=水霊ノ加護でafterSkill=波乱ノ虎のため)ところ波乱ノ虎.json側に直接列挙されていたのを、こちらへ移しgrantedViaSkillsで参照する形に修正。",
+  "対象・確率・効果文はixanary.com(skills/水霊ノ加護)の生HTML(LV10行)から。防御参加武将数は母数280人で計算(A-4-12)。",
+  "ownHiddenCandidateは、このスキルが1次候補として載っている枠(A枠、自己参照)の2次候補(波乱ノ虎 S)から(S-08)。"
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 防御 1.5%×防御参加武将数(280人)=420.0%"
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "波乱ノ虎",
+  "rank": "S"
+ }
+}

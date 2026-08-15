@@ -5,9 +5,8 @@
  "target": "槍弓馬",
  "effectSummary": "SS/LV10 確率：+40% / 対象 槍弓馬 防御：63%上昇 (攻撃部隊に兵器兵科がいれば効果1.5倍)",
  "notes": [
-  "2026-08-12作成。合成候補に出てくるS以上はページを作る規約(A-3)の未処理分。",
-  "ixanary.com/skills/無窮天斥陣 から取得。categoryLinksは9項目の判定が要るため付けていない。",
-  "2026-08-13: A-3-12の逆方向リンク。武将のsynthesisTableでは1次がこのスキルに変化するのに、こちら側から元スキルを指していなかった。1次→2次の組100件を元スキルのownHiddenCandidateと突き合わせ、矛盾0件を確かめたうえで機械的に張った。"
+  "2026-08-15(黄丸化検証): 角隈石宗(2811)のsourceCharacters列挙を削除。synthesisTableのC枠は八重言代主神[SS]→無窮天斥陣[SS](skill≠afterSkill)であり、A-3-12によりここへ直接列挙すべきでない(grantedViaSkillsで八重言代主神を参照済み)。角隈石宗自身はdata/skill/八重言代主神.jsonのsourceCharactersに記載。他武将(島津豊久・一条房家・織田有楽斎)分も同型の重複が疑われるが、今回のスコープ外のため未確認のまま残す。",
+  "2026-08-15(No.2817黄丸化検証): 山科言継(2817)も同型の誤り(synthesisTable C枠のskillは八重言代主神でafterSkillが本スキル)だったためsourceCharactersから削除。八重言代主神側には既にC枠で記載済み。"
  ],
  "trTable": [
   {
@@ -51,21 +50,63 @@
    ]
   },
   {
-   "name": "山科言継",
-   "no": "2817",
-   "slot": "C",
-   "db": "kyoku",
-   "note": [
-    "山科言継(2817)のsynthesisTable C枠(2026-08-15)"
-   ]
-  },
-  {
    "name": "角隈石宗",
    "no": "2811",
    "slot": "C",
    "db": "kyoku",
    "note": [
     "角隈石宗(2811)のsynthesisTable C枠(2026-08-15)"
+   ]
+  },
+  {
+   "name": "今川義元",
+   "no": "1203",
+   "slot": "A",
+   "note": [
+    "今川義元(1203)のsynthesisTable A枠(2026-08-15)"
+   ]
+  },
+  {
+   "name": "大友宗麟",
+   "no": "1210",
+   "slot": "C",
+   "note": [
+    "大友宗麟(1210)のsynthesisTable C枠(2026-08-15)"
+   ]
+  },
+  {
+   "name": "蘆名盛氏（2）",
+   "no": "1241",
+   "slot": "B",
+   "note": [
+    "蘆名盛氏（2）(1241)のsynthesisTable B枠(2026-08-15)"
+   ]
+  },
+  {
+   "name": "森本儀太夫",
+   "no": "2453",
+   "slot": "S2",
+   "db": "kyoku",
+   "note": [
+    "森本儀太夫(2453)のsynthesisTable S2枠(2026-08-15)"
+   ]
+  },
+  {
+   "name": "ヴァリニャーノ",
+   "no": "2458",
+   "slot": "B",
+   "db": "kyoku",
+   "note": [
+    "ヴァリニャーノ(2458)のsynthesisTable B枠(2026-08-15)"
+   ]
+  },
+  {
+   "name": "山科言継",
+   "no": "2817",
+   "slot": "C",
+   "db": "kyoku",
+   "note": [
+    "山科言継(2817)のsynthesisTable C枠(2026-08-15)"
    ]
   }
  ]

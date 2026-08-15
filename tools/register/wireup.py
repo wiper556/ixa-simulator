@@ -53,7 +53,7 @@ for no in NOS:
     if ent is None:
         print("  ★ No.%s が正本に無い" % no)
         continue
-    for r in ent["synthesisTable"]:
+    for r in ent.get("synthesisTable") or []:   # 傑には合成表が無い
         for key in ("skill", "afterSkill"):
             nm = r.get(key)
             if not nm:
@@ -83,7 +83,7 @@ for no in NOS:
     ent, _ = find_general(no)
     if ent is None:
         continue
-    for r in ent["synthesisTable"]:
+    for r in ent.get("synthesisTable") or []:   # 傑には合成表が無い
         nm, af = r.get("skill"), r.get("afterSkill")
         if not nm or not af:
             continue
@@ -119,7 +119,7 @@ for no in NOS:
             if e.get("initialSkill") and os.path.exists(
                     os.path.join(SKILLDIR, e["initialSkill"] + ".json")):
                 want.append(e["initialSkill"])
-            for r in e["synthesisTable"]:
+            for r in e.get("synthesisTable") or []:
                 for k in ("skill", "afterSkill"):
                     if r.get(k) and os.path.exists(os.path.join(SKILLDIR, r[k] + ".json")):
                         want.append(r[k])

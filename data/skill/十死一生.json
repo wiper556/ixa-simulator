@@ -15,11 +15,17 @@
   {
    "name": "狩野永徳",
    "no": "2821",
-   "slot": "A",
+   "slot": "S1",
    "db": "kyoku",
    "note": [
-    "狩野永徳(2821)のsynthesisTable A枠(2026-08-15)"
+    "狩野永徳(2821)のsynthesisTable S1枠。A枠はskillが乱界図でafterSkillが本スキルのため対象外(乱界図側のsourceCharactersに記載済み、本スキル側はgrantedViaSkillsで参照)。skillが本スキル自体になっているのはS1枠のみ。ixanary.com/skills/乱界図の1次候補S1列で確認(2026-08-15、誤ってA枠と記載されていたのを訂正)。"
    ]
+  }
+ ],
+ "grantedViaSkills": [
+  {
+   "skill": "乱界図",
+   "rank": "S"
   }
  ],
  "ownHiddenCandidate": {
