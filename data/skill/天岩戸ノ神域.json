@@ -30,33 +30,6 @@
    "name": "加藤清正（4）",
    "no": "1221",
    "slot": "S2"
-  },
-  {
-   "name": "鳥居元忠",
-   "no": "2847",
-   "slot": "A",
-   "db": "kyoku",
-   "note": [
-    "鳥居元忠(2847)のsynthesisTable A枠(2026-08-15)"
-   ]
-  },
-  {
-   "name": "天草四郎時貞",
-   "no": "2791",
-   "slot": "C",
-   "db": "kyoku",
-   "note": [
-    "天草四郎時貞(2791)のsynthesisTable C枠(2026-08-15)"
-   ]
-  },
-  {
-   "name": "沢下条張",
-   "no": "2613",
-   "slot": "S1",
-   "db": "kyoku",
-   "note": [
-    "沢下条張(2613)のsynthesisTable S1枠(2026-08-15)"
-   ]
   }
  ],
  "ownHiddenCandidate": {
@@ -69,6 +42,12 @@
    "points": "-",
    "coefficient": "2.8",
    "effect": "全　確率 70% / 攻撃 2.8%×防御参加武将数(280人)=784.0%"
+  }
+ ],
+ "grantedViaSkills": [
+  {
+   "skill": "破軍十六神将",
+   "rank": "SSS"
   }
  ]
 }

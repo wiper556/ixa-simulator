@@ -113,7 +113,7 @@
   <div class="sim-version-badge" id="simVersionBadge">v-</div>
 
 <script>
-  const CS_VERSION = 'v2026-08-15.1';
+  const CS_VERSION = 'v2026-08-15.2';
   document.addEventListener('DOMContentLoaded', ()=>{
     const badge = document.getElementById('simVersionBadge');
     if(badge) badge.textContent = CS_VERSION;
@@ -270,6 +270,13 @@
       lv10Effect:"所属部隊の部隊長が持つ模倣可能な初期スキルを通常攻撃/防御効果を1.15倍して模倣する",
       sourceCharacters:[
         {name:"伊賀崎道順", no:"2839", slot:"C", db:"kyoku"}
+      ]},
+    {name:"飛幻忍術", skillPage:"skills.html#飛幻忍術", baseRate:"100%", target:"全",
+      costReduction:"自部隊同時攻撃時に自分のコストを除外(飛翔12)",
+      lv10Effect:"攻撃394%上昇+速度150%上昇(模倣不可)",
+      sourceCharacters:[
+        {name:"巻町操", no:"2606", slot:"C", db:"kyoku"},
+        {name:"多羅尾光俊", no:"2841", slot:"B", db:"kyoku"}
       ]}
   ];
 

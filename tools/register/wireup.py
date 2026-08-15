@@ -48,35 +48,53 @@ def find_general(no):
 
 # --- S-05: 逆引き ---
 added = 0
+via = 0
 for no in NOS:
     ent, db = find_general(no)
     if ent is None:
         print("  ★ No.%s が正本に無い" % no)
         continue
     for r in ent.get("synthesisTable") or []:   # 傑には合成表が無い
-        for key in ("skill", "afterSkill"):
-            nm = r.get(key)
-            if not nm:
-                continue
+        # 2026-08-15: ここは skill と afterSkill の**両方**に武将を足していた。
+        # A-3-12 は「skill != afterSkill のとき、武将を afterSkill 側に直接
+        # 列挙してはいけない。afterSkill 側には grantedViaSkills で元スキルを
+        # 1回だけ書く」と定めており、**このスクリプトが規則に反していた。**
+        # 監査の逆引き検査も skill 側しか見ていない(A-3-12と一致)。
+        # 黄丸化の検証で担当が直した分を、こちらが何度も上書きしてしまっていた。
+        nm = r.get("skill")
+        if nm:
             sp = os.path.join(SKILLDIR, nm + ".json")
-            if not os.path.exists(sp):
-                continue
-            js = json.load(io.open(sp, encoding="utf-8"),
-                           object_pairs_hook=collections.OrderedDict)
-            sc = js.setdefault("sourceCharacters", [])
-            if any(str(x.get("no")) == no for x in sc):
-                continue
-            row = collections.OrderedDict([
-                ("name", ent["name"]), ("no", no), ("slot", r["slot"])])
-            if db:
-                row["db"] = db
-            row["note"] = ["%s(%s)のsynthesisTable %s枠(%s)"
-                           % (ent["name"], no, r["slot"], TODAY)]
-            sc.append(row)
-            io.open(sp, "w", encoding="utf-8", newline="\n").write(
-                json.dumps(js, ensure_ascii=False, indent=1) + "\n")
-            added += 1
-print("S-05 逆引きを %d件 追記" % added)
+            if os.path.exists(sp):
+                js = json.load(io.open(sp, encoding="utf-8"),
+                               object_pairs_hook=collections.OrderedDict)
+                sc = js.setdefault("sourceCharacters", [])
+                if not any(str(x.get("no")) == no for x in sc):
+                    row = collections.OrderedDict([
+                        ("name", ent["name"]), ("no", no), ("slot", r["slot"])])
+                    if db:
+                        row["db"] = db
+                    row["note"] = ["%s(%s)のsynthesisTable %s枠(%s)"
+                                   % (ent["name"], no, r["slot"], TODAY)]
+                    sc.append(row)
+                    io.open(sp, "w", encoding="utf-8", newline="\n").write(
+                        json.dumps(js, ensure_ascii=False, indent=1) + "\n")
+                    added += 1
+
+        # 別スキル経由で得られる枠は、移植後スキル側に grantedViaSkills を1回だけ
+        af = r.get("afterSkill")
+        if af and nm and af != nm and os.path.exists(os.path.join(SKILLDIR, nm + ".json")):
+            ap = os.path.join(SKILLDIR, af + ".json")
+            if os.path.exists(ap):
+                js = json.load(io.open(ap, encoding="utf-8"),
+                               object_pairs_hook=collections.OrderedDict)
+                gv = js.setdefault("grantedViaSkills", [])
+                if not any(x.get("skill") == nm for x in gv):
+                    gv.append(collections.OrderedDict([
+                        ("skill", nm), ("rank", r.get("rank"))]))
+                    io.open(ap, "w", encoding="utf-8", newline="\n").write(
+                        json.dumps(js, ensure_ascii=False, indent=1) + "\n")
+                    via += 1
+print("S-05 逆引きを %d件 / grantedViaSkills を %d件 追記" % (added, via))
 
 # --- S-08: 武将側の afterSkill から ownHiddenCandidate を決める ---
 for no in NOS:

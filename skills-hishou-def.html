@@ -113,7 +113,7 @@
   <div class="sim-version-badge" id="simVersionBadge">v-</div>
 
 <script>
-  const HS_DEF_VERSION = 'v2026-08-01.1';
+  const HS_DEF_VERSION = 'v2026-08-15.1';
   document.addEventListener('DOMContentLoaded', ()=>{
     const badge = document.getElementById('simVersionBadge');
     if(badge) badge.textContent = HS_DEF_VERSION;
@@ -273,6 +273,17 @@
       lv10Effect:"防御 基礎値400%×部隊内の同スキル所持武将数(4人)=1600%上昇(TR6は飛翔17・基礎値650%)",
       sourceCharacters:[
         {name:"朝倉宗滴", no:"1319", slot:"C・S1"}
+      ]}
+  ,
+    {name:"煙霞迷霧", skillPage:"skills.html#煙霞迷霧", baseRate:"70%", target:"全",
+      hishouValue:"8",
+      lv10Effect:"攻撃110%上昇+防御110%上昇+部隊内武将の飛翔Xを+4(模倣不可・部隊内重複不可)",
+      sourceCharacters:[
+        {name:"四乃森蒼紫", no:"2605", slot:"C", db:"kyoku"},
+        {name:"多羅尾光俊", no:"2841", slot:"A", db:"kyoku"},
+        {name:"霧隠才蔵", no:"2807", slot:"S1", db:"kyoku"},
+        {name:"緋村抜刀斎", no:"2601", slot:"A", db:"kyoku"},
+        {name:"巻町操", no:"2606", slot:"C", db:"kyoku"}
       ]}
   ];
 

@@ -28,15 +28,6 @@
    "db": "kyoku"
   },
   {
-   "name": "高山右近",
-   "no": "2836",
-   "slot": "A",
-   "db": "kyoku",
-   "note": [
-    "高山右近(2836)のsynthesisTable A枠(2026-08-15)"
-   ]
-  },
-  {
    "name": "諏訪姫",
    "no": "2820",
    "slot": "S2",
@@ -52,60 +43,6 @@
    "db": "kyoku",
    "note": [
     "国友善兵衛(2819)のsynthesisTable S2枠(2026-08-15)"
-   ]
-  },
-  {
-   "name": "柿崎景家",
-   "no": "2380",
-   "slot": "A",
-   "db": "kyoku",
-   "note": [
-    "柿崎景家(2380)のsynthesisTable A枠(2026-08-15)"
-   ]
-  },
-  {
-   "name": "斎藤龍興",
-   "no": "2399",
-   "slot": "A",
-   "db": "kyoku",
-   "note": [
-    "斎藤龍興(2399)のsynthesisTable A枠(2026-08-15)"
-   ]
-  },
-  {
-   "name": "平塚為広",
-   "no": "7002",
-   "slot": "A",
-   "db": "kyoku",
-   "note": [
-    "平塚為広(7002)のsynthesisTable A枠(2026-08-15)"
-   ]
-  },
-  {
-   "name": "太原雪斎",
-   "no": "7004",
-   "slot": "A",
-   "db": "kyoku",
-   "note": [
-    "太原雪斎(7004)のsynthesisTable A枠(2026-08-15)"
-   ]
-  },
-  {
-   "name": "森長可",
-   "no": "7015",
-   "slot": "C",
-   "db": "kyoku",
-   "note": [
-    "森長可(7015)のsynthesisTable C枠(2026-08-15)"
-   ]
-  },
-  {
-   "name": "斎藤朝信",
-   "no": "7020",
-   "slot": "A",
-   "db": "kyoku",
-   "note": [
-    "斎藤朝信(7020)のsynthesisTable A枠(2026-08-15)"
    ]
   }
  ],
@@ -124,5 +61,11 @@
   "A-3-9例外(2026-08-04追加): 移植後合成候補(afterSkill)が既存ページ持ちの遠呂智ノ閃光[SS]のため、Aランクだが単独ページ作成対象。",
   "ixanary.com個別ページの合成テーブルでS1枠限定・全世代(1次/2次/3次)とも遠呂智ノ閃光[SS]に変化することを確認。",
   "このスキルを持つカードを合成素材にすると遠呂智ノ閃光[SS]に変化する(ixanary.com個別ページ 2次 S1 で確認)"
+ ],
+ "grantedViaSkills": [
+  {
+   "skill": "オプクワ",
+   "rank": "A"
+  }
  ]
 }

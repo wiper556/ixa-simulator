@@ -97,33 +97,6 @@
    "note": [
     "山中鹿介(2809)のsynthesisTable A枠(2026-08-15)"
    ]
-  },
-  {
-   "name": "出雲阿国",
-   "no": "2788",
-   "slot": "S2",
-   "db": "kyoku",
-   "note": [
-    "出雲阿国(2788)のsynthesisTable S2枠(2026-08-15)"
-   ]
-  },
-  {
-   "name": "柳生十兵衛",
-   "no": "2432",
-   "slot": "C",
-   "db": "kyoku",
-   "note": [
-    "柳生十兵衛(2432)のsynthesisTable C枠(2026-08-15)"
-   ]
-  },
-  {
-   "name": "新城",
-   "no": "2554",
-   "slot": "S2",
-   "db": "kyoku",
-   "note": [
-    "新城(2554)のsynthesisTable S2枠(2026-08-15)"
-   ]
   }
  ],
  "ownHiddenCandidate": {
@@ -166,5 +139,11 @@
   "豊臣秀次(No.1272)S2・九戸政実(No.1225)B・45do.info生HTML照合済み(単一ソースのみ、TR1〜TR5未確認)",
   "ixagno.blog.fc2.com(blog-entry-9858)生HTML照合済み(2026-08-02): TR1〜TR5の実在を確認し追記",
   "2026-08-15 No.2835黄丸化検証時に修正: effectSummaryに残っていた「(TR1〜TR5は未確認)」の注記が既にtrTableにTR1〜TR5の値が入っているのと矛盾していたため削除(ixanaryスキルページで220/340/480/630/780%上昇・コスト消費-1/-1/-2/-2.5/-3を再確認)。sourceCharactersの大友義鑑(2835)にB・S1枠が漏れていたため追加。"
+ ],
+ "grantedViaSkills": [
+  {
+   "skill": "豊州ノ蠍",
+   "rank": "S"
+  }
  ]
 }
