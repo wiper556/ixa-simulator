@@ -191,6 +191,7 @@ def page(*, title, desc, canon, styles, body, crumb, img):
   </div>
 </div>
 <script src="../assets/js/site-sidebar.js"></script>
+<script src="../assets/js/cardhover.js"></script>
 </body>
 </html>
 ''' % {

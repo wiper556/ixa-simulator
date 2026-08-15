@@ -78,6 +78,16 @@
     border:1px solid var(--line); pointer-events:none; user-select:text;
   }
 
+  /* 武将名にカーソルを置いたときの顔出し(TYPE2を7割の大きさで)。
+     武将データベースの一覧と同じ見た目。動きは assets/js/cardhover.js */
+  .cardhover-pop{
+    position:fixed; z-index:10000; pointer-events:none; display:none;
+    padding:4px; background:#fff; border:1px solid var(--line);
+    border-radius:6px; box-shadow:0 6px 20px rgba(0,0,0,0.22);
+  }
+  .cardhover-pop img{ display:block; width:157px; height:auto; border-radius:3px; }
+  @media (hover:none){ .cardhover-pop{ display:none !important; } }
+
 </style>
 </head>
 <body>
@@ -102,7 +112,7 @@
   <main class="site-main">
     <p class="article-meta"><a href="../index.html">ホーム</a> ／ <a href="../skills-hub.html">スキル一覧</a> ／ <a href="../skills.html">全スキル</a> ／ 獄香ノ爆宴</p>
     <h1 class="page-title">獄香ノ爆宴 <span style="font-size:.6em;color:var(--muted);">[S]</span></h1>
-<h1 class="skl-detail-title">獄香ノ爆宴<span class="skl-detail-rank">S</span></h1><p class="skl-detail-meta">確率+50% ／ 対象:砲・器</p><div class="skl-detail-block"><h2>効果概要</h2><div class="skl-effect-text">S/LV10 確率 50% 防御 60%上昇/対象:砲・器<br>①防御 60%上昇する<br>②自軍内で同兵種を指揮している武将数×3.8%を防御効果に加算する</div></div><div class="skl-detail-block"><h2>鍛錬レベル別性能</h2><div class="skl-table-scroll"><table class="skl-stat-table"><thead><tr><th>レベル</th><th class="skl-col-narrow">必要ポイント</th><th>効果</th></tr></thead><tbody><tr><td>LV10</td><td class="skl-col-narrow">-</td><td style="text-align:left;">砲・器　確率 50% / 防御 60%上昇(同兵種武将数×3.8%加算)</td></tr></tbody></table></div></div><div class="skl-detail-block"><h2 class="skl-heading-with-toggle">入手可能な武将(合成素材)<label class="skl-toggle"><input type="checkbox" id="sklHideS2">S2(同一カード2枚合成)を非表示</label></h2><div class="skl-table-scroll"><table class="skl-stat-table"><thead><tr><th class="skl-col-wrap">武将</th><th class="skl-col-narrow">候補</th></tr></thead><tbody><tr><td class="skl-col-wrap"><a href="../busho/1209.html">松永久秀 No.1209</a></td><td class="skl-col-narrow">A・B</td></tr></tbody></table></div></div><div class="skl-detail-block" id="sklInitialSkillBlock" style=""><h2>初期スキルとして持つ武将</h2><div id="sklInitialSkillList"><div class="skl-table-scroll"><table class="skl-stat-table"><thead><tr><th class="skl-col-wrap">武将</th></tr></thead><tbody><tr><td class="skl-col-wrap"><a href="../busho/1209.html">松永久秀 No.1209</a></td></tr></tbody></table></div></div></div><div class="skl-detail-block"><h2>このスキルを習得済みのカードを合成素材にした場合の隠し候補</h2><div class="skl-effect-text"><a href="../skill/%E6%B5%B7%E7%A5%9E%E3%83%8E%E6%B5%AE%E8%88%B9.html">海神ノ浮船 SS</a><br>全 <span style="color:#f8b500;font-weight:700;">飛翔4</span>　確率 48% / 防御 3.5%×防御参加武将数(280人)=980.0%</div></div>
+<h1 class="skl-detail-title">獄香ノ爆宴<span class="skl-detail-rank">S</span></h1><p class="skl-detail-meta">確率+50% ／ 対象:砲・器</p><div class="skl-detail-block"><h2>効果概要</h2><div class="skl-effect-text">S/LV10 確率 50% 防御 60%上昇/対象:砲・器<br>①防御 60%上昇する<br>②自軍内で同兵種を指揮している武将数×3.8%を防御効果に加算する</div></div><div class="skl-detail-block"><h2>鍛錬レベル別性能</h2><div class="skl-table-scroll"><table class="skl-stat-table"><thead><tr><th>レベル</th><th class="skl-col-narrow">必要ポイント</th><th>効果</th></tr></thead><tbody><tr><td>LV10</td><td class="skl-col-narrow">-</td><td style="text-align:left;">砲・器　確率 50% / 防御 60%上昇(同兵種武将数×3.8%加算)</td></tr></tbody></table></div></div><div class="skl-detail-block"><h2 class="skl-heading-with-toggle">入手可能な武将(合成素材)<label class="skl-toggle"><input type="checkbox" id="sklHideS2">S2(同一カード2枚合成)を非表示</label></h2><div class="skl-table-scroll"><table class="skl-stat-table"><thead><tr><th class="skl-col-wrap">武将</th><th class="skl-col-narrow">候補</th></tr></thead><tbody><tr><td class="skl-col-wrap"><a href="../busho/1209.html" data-thumb-no="1209">松永久秀 No.1209</a></td><td class="skl-col-narrow">A・B</td></tr></tbody></table></div></div><div class="skl-detail-block" id="sklInitialSkillBlock" style=""><h2>初期スキルとして持つ武将</h2><div id="sklInitialSkillList"><div class="skl-table-scroll"><table class="skl-stat-table"><thead><tr><th class="skl-col-wrap">武将</th></tr></thead><tbody><tr><td class="skl-col-wrap"><a href="../busho/1209.html" data-thumb-no="1209">松永久秀 No.1209</a></td></tr></tbody></table></div></div></div><div class="skl-detail-block"><h2>このスキルを習得済みのカードを合成素材にした場合の隠し候補</h2><div class="skl-effect-text"><a href="../skill/%E6%B5%B7%E7%A5%9E%E3%83%8E%E6%B5%AE%E8%88%B9.html">海神ノ浮船 SS</a><br>全 <span style="color:#f8b500;font-weight:700;">飛翔4</span>　確率 48% / 防御 3.5%×防御参加武将数(280人)=980.0%</div></div>
 <p style="margin-top:28px;"><a href="../skills.html#%E7%8D%84%E9%A6%99%E3%83%8E%E7%88%86%E5%AE%B4">スキル一覧に戻る</a></p>
   </main>
 
@@ -115,5 +125,6 @@
   </div>
 </div>
 <script src="../assets/js/site-sidebar.js"></script>
+<script src="../assets/js/cardhover.js"></script>
 </body>
 </html>
