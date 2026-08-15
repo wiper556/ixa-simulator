@@ -79,7 +79,7 @@
    "afterRank": "SSS",
    "target": "部隊長",
    "rate": "70%",
-   "effectShort": "模倣倍率1.25倍",
+   "effectShort": "所属部隊の部隊長が持つ模倣可能な初期スキルを通常攻撃/防御効果1.25倍にして模倣する",
    "afterEffectShort": "所属部隊の部隊長が持つ模倣可能な初期スキルを通常攻撃/防御効果1.25倍にして模倣する"
   },
   {
@@ -93,7 +93,7 @@
    "effectShort": "攻撃 790%上昇",
    "afterTarget": "自身",
    "afterRate": "70%",
-   "afterEffectShort": "初期スキルを模倣(1.25倍)"
+   "afterEffectShort": "自身が持つ初期スキルを通常攻撃/防御効果1.25倍にして模倣する"
   },
   {
    "slot": "S1",
@@ -103,7 +103,7 @@
    "afterRank": "SSS",
    "target": "自身",
    "rate": "70%",
-   "effectShort": "初期スキルを模倣(1.25倍)",
+   "effectShort": "自身が持つ初期スキルを通常攻撃/防御効果1.25倍にして模倣する",
    "afterEffectShort": "自身が持つ初期スキルを通常攻撃/防御効果1.25倍にして模倣する"
   },
   {
@@ -114,8 +114,8 @@
    "afterRank": "SSS",
    "target": "全",
    "rate": "45%",
-   "effectShort": "攻撃 170%上昇(自部隊同時攻撃時コスト最大2除外)",
-   "afterEffectShort": "攻撃 170%上昇(自部隊同時攻撃時コスト最大2除外)"
+   "effectShort": "攻撃 170%上昇(自部隊同時攻撃時、部隊総コストからこの武将分を最大2まで除外・模倣不可)",
+   "afterEffectShort": "攻撃 170%上昇(自部隊同時攻撃時、部隊総コストからこの武将分を最大2まで除外・模倣不可)"
   }
  ],
  "notes": [

@@ -29,7 +29,7 @@
   {
    "level": "LV10",
    "points": "-",
-   "effect": "全　確率 -% / このカードを所持していると、「穴太衆」と「大筒兵」の兵士防御力が+1される(重複不可・効果範囲は所持者部隊の兵士のみ) 合成テーブル"
+   "effect": "全　確率 -% / このカードを所持していると、「穴太衆」と「大筒兵」の兵士防御力が+1される(重複不可・効果範囲は所持者部隊の兵士のみ)"
   }
  ],
  "synthesisTable": [
@@ -41,7 +41,7 @@
    "afterRank": "A",
    "target": "弓焙",
    "rate": "24%",
-   "effectShort": "攻撃 76%上昇 破棄：30%上昇"
+   "effectShort": "攻撃 76%上昇+破棄 30%上昇"
   },
   {
    "slot": "B",
@@ -49,12 +49,12 @@
    "rank": "A",
    "afterSkill": "遁世影武者",
    "afterRank": "B",
-   "target": null,
-   "rate": null,
-   "effectShort": null,
-   "afterTarget": null,
-   "afterRate": null,
-   "afterEffectShort": null
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "部隊内全武将が持つ全スキルに「砲」対象を追加する(兵科対象スキル限定・模倣不可)",
+   "afterTarget": "部隊長",
+   "afterRate": "50%",
+   "afterEffectShort": "所属部隊の部隊長が持つ初期スキルを模倣する(戦闘スキルのみ)"
   },
   {
    "slot": "C",
@@ -62,12 +62,12 @@
    "rank": "A",
    "afterSkill": "鉄砲商人",
    "afterRank": "A",
-   "target": null,
-   "rate": null,
-   "effectShort": null,
-   "afterTarget": null,
-   "afterRate": null,
-   "afterEffectShort": null
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "部隊内全武将が持つ全スキルに「器」対象を追加する(兵科対象スキル限定・模倣不可)",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "部隊内全武将が持つ全スキルに「砲」対象を追加する(兵科対象スキル限定・模倣不可)"
   },
   {
    "slot": "S1",
@@ -98,6 +98,8 @@
   "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
   "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
   "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
-  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+  "B枠(鉄砲商人)・C枠(武装商船)のtarget/rate/effectShortが未記入だったため、同じ2スキルを持つ",
+  " 既存登録(No.2747など)のデータで補完した(検証担当2026-08-15)。",
+  "章は情報源に記載が無いため未確認。"
  ]
 }

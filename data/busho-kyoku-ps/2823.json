@@ -3,9 +3,9 @@
  "no": "2823",
  "ch": "未確認",
  "cost": 3.0,
- "troop": null,
+ "troop": "全",
  "sub": "",
- "effect": null,
+ "effect": "部隊内武将スキル発動率+40%(部隊内重複不可)",
  "furigana": "おだうらくさい",
  "illustrator": "影井由宇",
  "imageFull": "assets/img/characters/no2823_full.png",
@@ -24,7 +24,7 @@
   "ki": "SS"
  },
  "initialSkill": "有楽流",
- "skillDetail": null,
+ "skillDetail": "S/LV10 確率 100% 部隊内武将スキル発動率+40%/対象:全\n①部隊内武将スキル発動率が40%上昇する(部隊内重複不可)",
  "trTable": [
   {
    "level": "LV10",
@@ -52,7 +52,7 @@
    "afterRank": "SS",
    "target": "自身",
    "rate": "70%",
-   "effectShort": "初期スキル(戦闘スキルのみ)を模倣(1倍)",
+   "effectShort": "自身が持つ初期スキルを模倣する(戦闘スキルのみ)",
    "afterTarget": "槍弓馬",
    "afterRate": "40%",
    "afterEffectShort": "防御 63%上昇(攻撃部隊に兵器兵科がいれば効果1.5倍)"
@@ -65,7 +65,7 @@
    "afterRank": "SSS",
    "target": "部隊長",
    "rate": "70%",
-   "effectShort": "模倣倍率1.25倍",
+   "effectShort": "所属部隊の部隊長が持つ模倣可能な初期スキルを通常攻撃/防御効果1.25倍にして模倣する",
    "afterEffectShort": "所属部隊の部隊長が持つ模倣可能な初期スキルを通常攻撃/防御効果1.25倍にして模倣する"
   },
   {
@@ -87,8 +87,8 @@
    "afterRank": "SS",
    "target": "全",
    "rate": "100%",
-   "effectShort": "攻撃344%上昇+防御344%上昇(卓越確率+15%)",
-   "afterEffectShort": "攻撃344%上昇+防御344%上昇(卓越確率+15%)"
+   "effectShort": "攻撃 344%上昇+防御 344%上昇+自軍全武将全スキルの卓越確率に15%加算(模倣不可・自軍内重複上限2)",
+   "afterEffectShort": "攻撃 344%上昇+防御 344%上昇+自軍全武将全スキルの卓越確率に15%加算(模倣不可・自軍内重複上限2)"
   }
  ],
  "notes": [

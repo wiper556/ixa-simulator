@@ -23,66 +23,85 @@
   "uma": "A",
   "ki": "A"
  },
- "initialSkill": null,
+ "initialSkill": "諸芸百般",
  "skillDetail": null,
- "trTable": [],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 -% / 所属部隊を含む3部隊で自部隊同時攻撃を行うことができる(重複不可)"
+  }
+ ],
  "synthesisTable": [
   {
    "slot": "A",
-   "skill": null,
-   "rank": null,
-   "afterSkill": null,
-   "afterRank": null,
-   "target": null,
-   "rate": null,
-   "effectShort": null
+   "skill": "鬼滅刺",
+   "rank": "A",
+   "afterSkill": "布都御魂ノ鬨",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "攻撃70%上昇+防御70%上昇(このスキルを所持する武将の全スキルの卓越確率に25%を加算する(模倣不可))",
+   "afterTarget": "全",
+   "afterRate": "35%",
+   "afterEffectShort": "攻撃40%上昇+防御40%上昇+所属部隊内のレアリティS以上のスキル個数×20%を攻防効果に加算"
   },
   {
    "slot": "B",
-   "skill": null,
-   "rank": null,
-   "afterSkill": null,
-   "afterRank": null,
-   "target": null,
-   "rate": null,
-   "effectShort": null
+   "skill": "宿木",
+   "rank": "B",
+   "afterSkill": "宿木",
+   "afterRank": "B",
+   "target": "部隊長",
+   "rate": "55%",
+   "effectShort": "部隊長の初期スキルを模倣(戦闘スキルのみ)",
+   "afterEffectShort": "部隊長の初期スキルを模倣(戦闘スキルのみ)"
   },
   {
    "slot": "C",
-   "skill": null,
-   "rank": null,
-   "afterSkill": null,
-   "afterRank": null,
-   "target": null,
-   "rate": null,
-   "effectShort": null
+   "skill": "風狂幻術",
+   "rank": "B",
+   "afterSkill": "風狂幻術",
+   "afterRank": "B",
+   "target": "部隊長",
+   "rate": "53%",
+   "effectShort": "部隊長の初期スキルを模倣(戦闘スキルのみ、TRなし)"
   },
   {
    "slot": "S1",
-   "skill": null,
-   "rank": null,
-   "afterSkill": null,
-   "afterRank": null,
-   "target": null,
-   "rate": null,
-   "effectShort": null
+   "skill": "遁世影武者",
+   "rank": "B",
+   "afterSkill": "風林火山",
+   "afterRank": "S",
+   "target": "部隊長",
+   "rate": "50%",
+   "effectShort": "所属部隊の部隊長が持つ初期スキルを模倣する(戦闘スキルのみ)",
+   "afterTarget": "槍・弓・馬",
+   "afterRate": "25%",
+   "afterEffectShort": "攻撃 15%上昇+破壊5%上昇(TRなし)"
   },
   {
    "slot": "S2",
-   "skill": null,
-   "rank": null,
-   "afterSkill": null,
-   "afterRank": null,
-   "target": null,
-   "rate": null,
-   "effectShort": null
+   "skill": "妙計暗躍",
+   "rank": "A",
+   "afterSkill": "天賦の神算",
+   "afterRank": "B",
+   "target": "全",
+   "rate": "15%",
+   "effectShort": "攻撃戦闘勝利時のみ敵軍全武将に追加ダメージ+35(重複不可)",
+   "afterTarget": "全",
+   "afterRate": "50%",
+   "afterEffectShort": "攻撃 12%上昇"
   }
  ],
  "notes": [
-  "ixanary.com(cards/2787 と skills/None)およびixawiki(BushoCard/2787近衛信尹)で登録(2026-08-14)。",
+  "ixanary.com(cards/2787)およびixawiki(BushoCard/2787近衛信尹)で登録(2026-08-14)。",
   "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
   "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
-  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
-  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+  "初期スキル「諸芸百般」(A)はixanaryのカードページ本文で確認(機械取得時に取りこぼし、skill=Noneのまま登録されていた)。",
+  " 効果:「所属部隊を含む3部隊で自部隊同時攻撃を行うことができる(重複不可)」。",
+  "合成候補5枠はixawiki(BushoCard/2787)の1次候補テーブルで確認。A/B/C/S1は同じ5枠を持つ弥助(No.2430)の",
+  " 既存登録データを流用、S2の妙計暗躍はNo.2746の既存登録データを流用した(検証担当2026-08-15)。",
+  "章は情報源に記載が無いため未確認。"
  ]
 }

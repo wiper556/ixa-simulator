@@ -3,9 +3,9 @@
  "no": "2837",
  "ch": "未確認",
  "cost": 4.0,
- "troop": null,
+ "troop": "部隊長特",
  "sub": "",
- "effect": null,
+ "effect": "所属部隊の部隊長が持つ模倣可能な初期スキルを通常攻撃/防御効果を1.2倍して模倣する(不屈2)",
  "furigana": "おがさわらながむね",
  "illustrator": "塚本陽子",
  "imageFull": "assets/img/characters/no2837_full.png",
@@ -24,7 +24,7 @@
   "ki": "S"
  },
  "initialSkill": "盛興弓箭",
- "skillDetail": null,
+ "skillDetail": "S/LV10 確率 45% 部隊長の初期スキルを模倣/対象:部隊長 不屈2\n①所属部隊の部隊長が持つ模倣可能な初期スキルを通常攻撃/防御効果を1.2倍して模倣する",
  "trTable": [
   {
    "level": "LV10",
@@ -70,7 +70,7 @@
    "effectShort": "所属部隊の部隊長が持つ模倣可能な初期スキルを通常攻撃/防御効果を1.2倍して模倣する",
    "afterTarget": "部隊長",
    "afterRate": "70%",
-   "afterEffectShort": "模倣倍率1.25倍"
+   "afterEffectShort": "所属部隊の部隊長が持つ模倣可能な初期スキルを通常攻撃/防御効果1.25倍にして模倣する"
   },
   {
    "slot": "S1",
@@ -80,7 +80,7 @@
    "afterRank": "SSS",
    "target": "部隊長",
    "rate": "70%",
-   "effectShort": "模倣倍率1.25倍",
+   "effectShort": "所属部隊の部隊長が持つ模倣可能な初期スキルを通常攻撃/防御効果1.25倍にして模倣する",
    "afterEffectShort": "所属部隊の部隊長が持つ模倣可能な初期スキルを通常攻撃/防御効果1.25倍にして模倣する"
   },
   {
@@ -94,7 +94,7 @@
    "effectShort": "模倣倍率 1.2倍(TR以降のデータなし、LV10が最大値)",
    "afterTarget": "部隊長",
    "afterRate": "70%",
-   "afterEffectShort": "模倣倍率1.25倍"
+   "afterEffectShort": "所属部隊の部隊長が持つ模倣可能な初期スキルを通常攻撃/防御効果1.25倍にして模倣する"
   }
  ],
  "notes": [

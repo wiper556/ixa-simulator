@@ -24,12 +24,12 @@
   "ki": "C"
  },
  "initialSkill": "憐みの聖家",
- "skillDetail": null,
+ "skillDetail": "A/LV10 カード所持効果/対象:全\n模倣不可\n①このカードを部隊にセットしたとき部隊内の他武将のHPが10回復する\n②本丸防御陣形では陣形内の全武将が対象となる\n③回復量は(武将ランク+1)x10",
  "trTable": [
   {
    "level": "LV10",
    "points": "-",
-   "effect": "全　確率 -% / このカードを部隊にセットしたとき、部隊内の他武将のHPが10回復する / 本丸防御陣形では陣形内の全武将が対象となる(模倣不可・回復量は(武将ランク+1)x10) 合成テーブル"
+   "effect": "全　確率 -% / このカードを部隊にセットしたとき、部隊内の他武将のHPが10回復する / 本丸防御陣形では陣形内の全武将が対象となる(模倣不可・回復量は(武将ランク+1)x10)"
   }
  ],
  "synthesisTable": [
@@ -54,7 +54,7 @@
    "afterRank": "B",
    "target": "部隊長",
    "rate": "55%",
-   "effectShort": "効果 部隊長の初期スキルを模倣(戦闘スキルのみ)"
+   "effectShort": "部隊長の初期スキルを模倣(戦闘スキルのみ)"
   },
   {
    "slot": "C",
@@ -64,7 +64,7 @@
    "afterRank": "B",
    "target": "部隊長",
    "rate": "53%",
-   "effectShort": "効果 部隊長の初期スキルを模倣(戦闘スキルのみ、TRなし)"
+   "effectShort": "部隊長の初期スキルを模倣(戦闘スキルのみ、TRなし)"
   },
   {
    "slot": "S1",
@@ -72,12 +72,12 @@
    "rank": "A",
    "afterSkill": "鉄砲商人",
    "afterRank": "A",
-   "target": null,
-   "rate": null,
-   "effectShort": null,
-   "afterTarget": null,
-   "afterRate": null,
-   "afterEffectShort": null
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "部隊内全武将が持つ全スキルに「器」対象を追加する(兵科対象スキル限定・模倣不可)",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "部隊内全武将が持つ全スキルに「砲」対象を追加する(兵科対象スキル限定・模倣不可)"
   },
   {
    "slot": "S2",
@@ -90,7 +90,7 @@
    "effectShort": "防御 70%上昇",
    "afterTarget": "全",
    "afterRate": "36%",
-   "afterEffectShort": "防御 46%上昇/銅銭獲得率：4%"
+   "afterEffectShort": "防御 46%上昇/銅銭獲得率 4%"
   }
  ],
  "notes": [
