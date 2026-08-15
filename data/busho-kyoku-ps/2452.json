@@ -24,7 +24,7 @@
   "ki": "A"
  },
  "initialSkill": "牛鬼ノ攻城",
- "skillDetail": "S/LV10 確率 60% 攻撃124%上昇/対象:全\n模倣不可\n①攻撃124%上昇する\n②自部隊同時攻撃時他の自分の部隊にもこのスキルの攻撃効果を加算する(部隊内重複不可)",
+ "skillDetail": "S/LV10 確率 60% 攻撃 124%上昇/対象:全\n模倣不可\n①攻撃 124%上昇する\n②自部隊同時攻撃時他の自分の部隊にもこのスキルの攻撃効果を加算する(部隊内重複不可)",
  "trTable": [
   {
    "level": "LV10",
@@ -71,8 +71,8 @@
    "afterRank": "A",
    "target": "槍鉄",
    "rate": "24%",
-   "effectShort": "攻撃76%上昇+破壊30%上昇",
-   "afterEffectShort": "攻撃76%上昇+破壊30%上昇"
+   "effectShort": "攻撃 76%上昇+破壊 30%上昇",
+   "afterEffectShort": "攻撃 76%上昇+破壊 30%上昇"
   },
   {
    "slot": "B",
@@ -82,7 +82,7 @@
    "afterRank": "SS",
    "target": "全",
    "rate": "50%",
-   "effectShort": "攻撃99.9%上昇+防御99.9%上昇(部隊消費コストを0.5低下・特殊効果は模倣不可)",
+   "effectShort": "攻撃 99.9%上昇+防御 99.9%上昇(部隊消費コストを0.5低下・特殊効果は模倣不可)",
    "afterTarget": "全",
    "afterRate": "24%",
    "afterEffectShort": "攻撃部隊ランクボーナスx15%上昇(部隊ランクボーナスで効果が変化)"
@@ -95,7 +95,7 @@
    "afterRank": "SS",
    "target": null,
    "rate": null,
-   "effectShort": "攻撃99.9%上昇+防御99.9%上昇+破壊150%上昇",
+   "effectShort": "攻撃 99.9%上昇+防御 99.9%上昇+破壊 150%上昇",
    "afterTarget": "槍・弓・馬",
    "afterRate": "70%",
    "afterEffectShort": "全攻 30%上昇(部隊の総コストで効果が変化)"
@@ -108,10 +108,10 @@
    "afterRank": "SS",
    "target": null,
    "rate": null,
-   "effectShort": "攻撃130%上昇+防御130%上昇+破壊50%上昇",
+   "effectShort": "攻撃 130%上昇+防御 130%上昇+破壊 50%上昇",
    "afterTarget": "全",
    "afterRate": "45%",
-   "afterEffectShort": "攻撃110%上昇(6部隊以下の攻撃で効果2倍)"
+   "afterEffectShort": "攻撃 110%上昇(6部隊以下の攻撃で効果2倍)"
   },
   {
    "slot": "S2",

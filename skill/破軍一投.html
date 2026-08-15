@@ -78,6 +78,16 @@
     border:1px solid var(--line); pointer-events:none; user-select:text;
   }
 
+  /* 武将名にカーソルを置いたときの顔出し(TYPE2を7割の大きさで)。
+     武将データベースの一覧と同じ見た目。動きは assets/js/cardhover.js */
+  .cardhover-pop{
+    position:fixed; z-index:10000; pointer-events:none; display:none;
+    padding:4px; background:#fff; border:1px solid var(--line);
+    border-radius:6px; box-shadow:0 6px 20px rgba(0,0,0,0.22);
+  }
+  .cardhover-pop img{ display:block; width:157px; height:auto; border-radius:3px; }
+  @media (hover:none){ .cardhover-pop{ display:none !important; } }
+
 </style>
 </head>
 <body>
@@ -102,7 +112,7 @@
   <main class="site-main">
     <p class="article-meta"><a href="../index.html">ホーム</a> ／ <a href="../skills-hub.html">スキル一覧</a> ／ <a href="../skills.html">全スキル</a> ／ 破軍一投</p>
     <h1 class="page-title">破軍一投 <span style="font-size:.6em;color:var(--muted);">[A]</span></h1>
-<h1 class="skl-detail-title">破軍一投<span class="skl-detail-rank">A</span></h1><p class="skl-detail-meta">確率+100% ／ 対象:砲・器</p><div class="skl-detail-block"><h2>効果概要</h2><div class="skl-effect-text">A/LV10 確率 100% 防御220%上昇/対象:砲・器<br>模倣不可<br>①防御220%上昇する<br>②所領防御陣形の第肆列目以降の部隊にもこのスキルの効果がかかる(自身の所属部隊には重複しない)</div></div><div class="skl-detail-block"><h2>鍛錬レベル別性能</h2><div class="skl-table-scroll"><table class="skl-stat-table"><thead><tr><th>レベル</th><th class="skl-col-narrow">必要ポイント</th><th>効果</th></tr></thead><tbody><tr><td>LV10</td><td class="skl-col-narrow">-</td><td style="text-align:left;">砲・器　確率 100% / 防御 220%上昇(所領防御陣形第4列以降の部隊にも適用)</td></tr></tbody></table></div></div><div class="skl-detail-block"><h2 class="skl-heading-with-toggle">入手可能な武将(合成素材)<label class="skl-toggle"><input type="checkbox" id="sklHideS2">S2(同一カード2枚合成)を非表示</label></h2><div class="skl-table-scroll"><table class="skl-stat-table"><thead><tr><th class="skl-col-wrap">武将</th><th class="skl-col-narrow">候補</th></tr></thead><tbody><tr><td class="skl-col-wrap"><a href="../busho/2395.html">小山田信茂 No.2395</a></td><td class="skl-col-narrow">A・B・C</td></tr></tbody></table></div></div><div class="skl-detail-block" id="sklInitialSkillBlock" style=""><h2>初期スキルとして持つ武将</h2><div id="sklInitialSkillList"><div class="skl-table-scroll"><table class="skl-stat-table"><thead><tr><th class="skl-col-wrap">武将</th></tr></thead><tbody><tr><td class="skl-col-wrap"><a href="../busho/2395.html">小山田信茂 No.2395</a></td></tr></tbody></table></div></div></div><div class="skl-detail-block"><h2>このスキルを習得済みのカードを合成素材にした場合の隠し候補</h2><div class="skl-effect-text"><a href="../skill/%E9%BE%8D%E9%A9%A4%E8%99%8E%E8%BA%8D.html">龍驤虎躍 SS</a><br>全　確率 60% / 攻撃 810%上昇+防御810%上昇(コスト-1・特殊効果は模倣不可)</div></div>
+<h1 class="skl-detail-title">破軍一投<span class="skl-detail-rank">A</span></h1><p class="skl-detail-meta">確率+100% ／ 対象:砲・器</p><div class="skl-detail-block"><h2>効果概要</h2><div class="skl-effect-text">A/LV10 確率 100% 防御 220%上昇/対象:砲・器<br>模倣不可<br>①防御 220%上昇する<br>②所領防御陣形の第肆列目以降の部隊にもこのスキルの効果がかかる(自身の所属部隊には重複しない)</div></div><div class="skl-detail-block"><h2>鍛錬レベル別性能</h2><div class="skl-table-scroll"><table class="skl-stat-table"><thead><tr><th>レベル</th><th class="skl-col-narrow">必要ポイント</th><th>効果</th></tr></thead><tbody><tr><td>LV10</td><td class="skl-col-narrow">-</td><td style="text-align:left;">砲・器　確率 100% / 防御 220%上昇(所領防御陣形第4列以降の部隊にも適用)</td></tr></tbody></table></div></div><div class="skl-detail-block"><h2 class="skl-heading-with-toggle">入手可能な武将(合成素材)<label class="skl-toggle"><input type="checkbox" id="sklHideS2">S2(同一カード2枚合成)を非表示</label></h2><div class="skl-table-scroll"><table class="skl-stat-table"><thead><tr><th class="skl-col-wrap">武将</th><th class="skl-col-narrow">候補</th></tr></thead><tbody><tr><td class="skl-col-wrap"><a href="../busho/2395.html" data-thumb-no="2395">小山田信茂 No.2395</a></td><td class="skl-col-narrow">A・B・C</td></tr></tbody></table></div></div><div class="skl-detail-block" id="sklInitialSkillBlock" style=""><h2>初期スキルとして持つ武将</h2><div id="sklInitialSkillList"><div class="skl-table-scroll"><table class="skl-stat-table"><thead><tr><th class="skl-col-wrap">武将</th></tr></thead><tbody><tr><td class="skl-col-wrap"><a href="../busho/2395.html" data-thumb-no="2395">小山田信茂 No.2395</a></td></tr></tbody></table></div></div></div><div class="skl-detail-block"><h2>このスキルを習得済みのカードを合成素材にした場合の隠し候補</h2><div class="skl-effect-text"><a href="../skill/%E9%BE%8D%E9%A9%A4%E8%99%8E%E8%BA%8D.html">龍驤虎躍 SS</a><br>全　確率 60% / 攻撃 810%上昇+防御 810%上昇(コスト-1・特殊効果は模倣不可)</div></div>
 <p style="margin-top:28px;"><a href="../skills.html#%E7%A0%B4%E8%BB%8D%E4%B8%80%E6%8A%95">スキル一覧に戻る</a></p>
   </main>
 
@@ -115,5 +125,6 @@
   </div>
 </div>
 <script src="../assets/js/site-sidebar.js"></script>
+<script src="../assets/js/cardhover.js"></script>
 </body>
 </html>

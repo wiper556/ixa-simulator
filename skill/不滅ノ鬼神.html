@@ -78,6 +78,16 @@
     border:1px solid var(--line); pointer-events:none; user-select:text;
   }
 
+  /* 武将名にカーソルを置いたときの顔出し(TYPE2を7割の大きさで)。
+     武将データベースの一覧と同じ見た目。動きは assets/js/cardhover.js */
+  .cardhover-pop{
+    position:fixed; z-index:10000; pointer-events:none; display:none;
+    padding:4px; background:#fff; border:1px solid var(--line);
+    border-radius:6px; box-shadow:0 6px 20px rgba(0,0,0,0.22);
+  }
+  .cardhover-pop img{ display:block; width:157px; height:auto; border-radius:3px; }
+  @media (hover:none){ .cardhover-pop{ display:none !important; } }
+
 </style>
 </head>
 <body>
@@ -102,7 +112,7 @@
   <main class="site-main">
     <p class="article-meta"><a href="../index.html">ホーム</a> ／ <a href="../skills-hub.html">スキル一覧</a> ／ <a href="../skills.html">全スキル</a> ／ 不滅ノ鬼神</p>
     <h1 class="page-title">不滅ノ鬼神 <span style="font-size:.6em;color:var(--muted);">[S]</span></h1>
-<h1 class="skl-detail-title">不滅ノ鬼神<span class="skl-detail-rank">S</span></h1><p class="skl-detail-meta">確率+100% ／ 対象:全</p><div class="skl-detail-block"><h2>効果概要</h2><div class="skl-effect-text">S/LV10 対象:全<br>①確率70%で攻撃100%上昇する<br>②確率100%で速度70%上昇する</div></div><div class="skl-detail-block"><h2>鍛錬レベル別性能</h2><div class="skl-table-scroll"><table class="skl-stat-table"><thead><tr><th>レベル</th><th class="skl-col-narrow">必要ポイント</th><th>効果</th></tr></thead><tbody><tr><td>LV10</td><td class="skl-col-narrow">-</td><td style="text-align:left;">全　確率 70%/100% / 攻撃 100%上昇(確率70%)+速度 70%上昇(確率100%)(TRなし)</td></tr></tbody></table></div></div><div class="skl-detail-block"><h2 class="skl-heading-with-toggle">入手可能な武将(合成素材)<label class="skl-toggle"><input type="checkbox" id="sklHideS2">S2(同一カード2枚合成)を非表示</label></h2><div class="skl-table-scroll"><table class="skl-stat-table"><thead><tr><th class="skl-col-wrap">武将</th><th class="skl-col-narrow">候補</th></tr></thead><tbody><tr><td class="skl-col-wrap"><a href="../busho/2366.html">井伊直孝 No.2366</a></td><td class="skl-col-narrow">S1・S2</td></tr><tr><td class="skl-col-wrap"><a href="../busho/2574.html">茶々 No.2574</a></td><td class="skl-col-narrow">A</td></tr></tbody></table></div></div><div class="skl-detail-block" id="sklInitialSkillBlock" style="display:none;"><h2>初期スキルとして持つ武将</h2><div id="sklInitialSkillList"></div></div><div class="skl-detail-block"><h2>このスキルを習得済みのカードを合成素材にした場合の隠し候補</h2><div class="skl-effect-text"><a href="../skill/%E6%9C%A7%E9%9B%B2%E3%83%8E%E9%96%83%E6%92%83.html">朧雲ノ閃撃 SSS</a><br>全　確率 100% / 攻撃170%上昇+速度240%上昇</div></div>
+<h1 class="skl-detail-title">不滅ノ鬼神<span class="skl-detail-rank">S</span></h1><p class="skl-detail-meta">確率+100% ／ 対象:全</p><div class="skl-detail-block"><h2>効果概要</h2><div class="skl-effect-text">S/LV10 対象:全<br>①確率70%で攻撃 100%上昇する<br>②確率100%で速度 70%上昇する</div></div><div class="skl-detail-block"><h2>鍛錬レベル別性能</h2><div class="skl-table-scroll"><table class="skl-stat-table"><thead><tr><th>レベル</th><th class="skl-col-narrow">必要ポイント</th><th>効果</th></tr></thead><tbody><tr><td>LV10</td><td class="skl-col-narrow">-</td><td style="text-align:left;">全　確率 70%/100% / 攻撃 100%上昇(確率70%)+速度 70%上昇(確率100%)(TRなし)</td></tr></tbody></table></div></div><div class="skl-detail-block"><h2 class="skl-heading-with-toggle">入手可能な武将(合成素材)<label class="skl-toggle"><input type="checkbox" id="sklHideS2">S2(同一カード2枚合成)を非表示</label></h2><div class="skl-table-scroll"><table class="skl-stat-table"><thead><tr><th class="skl-col-wrap">武将</th><th class="skl-col-narrow">候補</th></tr></thead><tbody><tr><td class="skl-col-wrap"><a href="../busho/2366.html" data-thumb-no="2366">井伊直孝 No.2366</a></td><td class="skl-col-narrow">S1・S2</td></tr><tr><td class="skl-col-wrap"><a href="../busho/2574.html" data-thumb-no="2574">茶々 No.2574</a></td><td class="skl-col-narrow">A</td></tr></tbody></table></div></div><div class="skl-detail-block" id="sklInitialSkillBlock" style="display:none;"><h2>初期スキルとして持つ武将</h2><div id="sklInitialSkillList"></div></div><div class="skl-detail-block"><h2>このスキルを習得済みのカードを合成素材にした場合の隠し候補</h2><div class="skl-effect-text"><a href="../skill/%E6%9C%A7%E9%9B%B2%E3%83%8E%E9%96%83%E6%92%83.html">朧雲ノ閃撃 SSS</a><br>全　確率 100% / 攻撃 170%上昇+速度 240%上昇</div></div>
 <p style="margin-top:28px;"><a href="../skills.html#%E4%B8%8D%E6%BB%85%E3%83%8E%E9%AC%BC%E7%A5%9E">スキル一覧に戻る</a></p>
   </main>
 
@@ -115,5 +125,6 @@
   </div>
 </div>
 <script src="../assets/js/site-sidebar.js"></script>
+<script src="../assets/js/cardhover.js"></script>
 </body>
 </html>

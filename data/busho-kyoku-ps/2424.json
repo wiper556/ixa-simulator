@@ -5,7 +5,7 @@
  "cost": 4,
  "troop": "全防",
  "sub": "",
- "effect": "拠点防衛敗北時、拠点から距離2以内の敵陣を全破壊(戦功無し・重複不可)",
+ "effect": "拠点防衛敗北時、拠点から距離2以内の敵陣を全破壊 (戦功無し・重複不可)",
  "furigana": "うきたひでいえ",
  "illustrator": "正子公也",
  "imageFull": "assets/img/characters/no2424_full.png",
@@ -29,7 +29,7 @@
   {
    "level": "LV10",
    "points": "-",
-   "effect": "全　確率 100% / 拠点防衛敗北時、拠点から距離2以内の敵陣を全破壊(陣破壊戦功無し・重複不可)"
+   "effect": "全　確率 100% / 拠点防衛敗北時、拠点から距離2以内の敵陣を全破壊 (陣破壊戦功無し・重複不可)"
   },
   {
    "level": "TR1",
@@ -71,7 +71,7 @@
    "afterRank": "SS",
    "target": null,
    "rate": null,
-   "effectShort": "攻撃87%上昇+防御87%上昇",
+   "effectShort": "攻撃 87%上昇+防御 87%上昇",
    "afterTarget": "全",
    "afterRate": "35%",
    "afterEffectShort": "攻撃 40%上昇+防御 40%上昇+所属部隊内のレアリティS以上のスキル個数×20%を攻防効果に加算"
@@ -104,7 +104,7 @@
    "afterRank": null,
    "target": null,
    "rate": null,
-   "effectShort": "防御77%上昇(卓越:追加確率20%で防御効果が1.5倍)"
+   "effectShort": "防御 77%上昇(卓越:追加確率20%で防御効果が1.5倍)"
   },
   {
    "slot": "S2",
@@ -114,7 +114,7 @@
    "afterRank": null,
    "target": null,
    "rate": null,
-   "effectShort": "防御1%上昇(部隊ランクボーナス×10%を加算)"
+   "effectShort": "防御 1%上昇(部隊ランクボーナス×10%を加算)"
   }
  ],
  "notes": [

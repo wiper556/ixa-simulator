@@ -24,7 +24,7 @@
   "ki": "S"
  },
  "initialSkill": "夜叉源氏車",
- "skillDetail": "A/LV10 確率 50% 防御50%上昇/対象:全\n①防御50%上昇する\n②全防御自部隊被害兵士ポイントの2%+獲得防御ポイントの5%の銅銭を獲得する\n③自拠点防御時は銅銭獲得量が4倍になる",
+ "skillDetail": "A/LV10 確率 50% 防御 50%上昇/対象:全\n①防御 50%上昇する\n②全防御自部隊被害兵士ポイントの2%+獲得防御ポイントの5%の銅銭を獲得する\n③自拠点防御時は銅銭獲得量が4倍になる",
  "trTable": [
   {
    "level": "LV10",
@@ -71,7 +71,7 @@
    "afterRank": "SS",
    "target": null,
    "rate": null,
-   "effectShort": "攻撃42%上昇+防御42%上昇",
+   "effectShort": "攻撃 42%上昇+防御 42%上昇",
    "afterTarget": "全",
    "afterRate": "42%",
    "afterEffectShort": "攻撃 25.39%上昇(部隊総コストで変動、TRなし)"
@@ -97,10 +97,10 @@
    "afterRank": "SS",
    "target": "全",
    "rate": "50%",
-   "effectShort": "攻撃50%上昇+速度50%上昇",
+   "effectShort": "攻撃 50%上昇+速度 50%上昇",
    "afterTarget": "全",
    "afterRate": "100%",
-   "afterEffectShort": "攻撃 90%上昇+速度200%上昇(TRなし)"
+   "afterEffectShort": "攻撃 90%上昇+速度 200%上昇(TRなし)"
   },
   {
    "slot": "S1",

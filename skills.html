@@ -63,6 +63,16 @@
     background:rgba(255,255,255,0.85); padding:2px 7px; border-radius:4px;
     border:1px solid var(--line); pointer-events:none; user-select:text;
   }
+
+  /* 武将名にカーソルを置いたときの顔出し(TYPE2を7割の大きさで)。
+     武将データベースの一覧と同じ見た目。動きは assets/js/cardhover.js */
+  .cardhover-pop{
+    position:fixed; z-index:10000; pointer-events:none; display:none;
+    padding:4px; background:#fff; border:1px solid var(--line);
+    border-radius:6px; box-shadow:0 6px 20px rgba(0,0,0,0.22);
+  }
+  .cardhover-pop img{ display:block; width:157px; height:auto; border-radius:3px; }
+  @media (hover:none){ .cardhover-pop{ display:none !important; } }
 </style>
 <link rel="icon" href="favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="192x192" href="assets/img/icon-192.png">
@@ -3133,7 +3143,7 @@
         + holders.map(function(row){
             const dbPage = row.db === 'kyoku' ? 'characters-kyoku.html'
                      : row.db === 'ketsu' ? 'characters-ketsu.html' : 'characters.html';
-            return '<tr><td class="skl-col-wrap"><a href="'+dbPage+'#'+encodeURIComponent(row.no)+'">'+sklEscapeHtml(row.name)+' No.'+sklEscapeHtml(row.no)+'</a></td></tr>';
+            return '<tr><td class="skl-col-wrap"><a href="'+dbPage+'#'+encodeURIComponent(row.no)+'" data-thumb-no="'+sklEscapeHtml(row.no)+'">'+sklEscapeHtml(row.name)+' No.'+sklEscapeHtml(row.no)+'</a></td></tr>';
           }).join('')
         + '</tbody></table></div>';
     }).catch(function(){
@@ -3208,7 +3218,10 @@
               + filteredSources.map(function(row){
                   const dbPage = row.db === 'kyoku' ? 'characters-kyoku.html'
                      : row.db === 'ketsu' ? 'characters-ketsu.html' : 'characters.html';
-                  return '<tr><td class="skl-col-wrap"><a href="'+dbPage+'#'+encodeURIComponent(row.no)+'">'+sklEscapeHtml(row.name)+' No.'+sklEscapeHtml(row.no)+'</a></td><td class="skl-col-narrow">'+sklEscapeHtml(row.slot)+'</td></tr>';
+                  // data-thumb-no: カーソルを置いたときに切り抜き画像を出す
+                  // (assets/js/cardhover.js)。番号だけ持たせて、URLは
+                  // ページの深さに合わせてJS側で組み立てる
+                  return '<tr><td class="skl-col-wrap"><a href="'+dbPage+'#'+encodeURIComponent(row.no)+'" data-thumb-no="'+sklEscapeHtml(row.no)+'">'+sklEscapeHtml(row.name)+' No.'+sklEscapeHtml(row.no)+'</a></td><td class="skl-col-narrow">'+sklEscapeHtml(row.slot)+'</td></tr>';
                 }).join('')
               + '</tbody></table></div>';
           })()
@@ -3291,6 +3304,7 @@
 </div>
 
 <script src="assets/js/site-sidebar.js"></script>
+<script src="assets/js/cardhover.js"></script>
 <script>
   // 古い #No / #スキル名 形式で来た人を、個別URLへ送る(2026-08-14)。
   // 一覧からは個別ページへ直接飛ぶようになり、このページに詳細パネルは無い。

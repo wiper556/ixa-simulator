@@ -24,7 +24,7 @@
   "ki": "A"
  },
  "initialSkill": "天正ノ楠木",
- "skillDetail": "A/LV10 確率 62% 攻撃・防御(部隊ランクボーナス×10)%上昇/対象:槍・器・鉄\n①攻撃(部隊ランクボーナス×10)%上昇する\n②防御(部隊ランクボーナス×10)%上昇する\n③部隊ランクボーナスで効果が変化する(★24で60%・★28で90%)",
+ "skillDetail": "A/LV10 確率 62% 攻撃・防御 (部隊ランクボーナス×10)%上昇/対象:槍・器・鉄\n①攻撃 (部隊ランクボーナス×10)%上昇する\n②防御 (部隊ランクボーナス×10)%上昇する\n③部隊ランクボーナスで効果が変化する(★24で60%・★28で90%)",
  "trTable": [
   {
    "level": "LV10",
@@ -71,10 +71,10 @@
    "afterRank": "E",
    "target": null,
    "rate": null,
-   "effectShort": "攻撃(コスト×6.5)%上昇(武将のコストで効果が変化)",
+   "effectShort": "攻撃 (コスト×6.5)%上昇(武将のコストで効果が変化)",
    "afterTarget": "砲",
    "afterRate": "20%",
-   "afterEffectShort": "防御(コストx6.5) %上昇(武将のコストで効果が変化します)"
+   "afterEffectShort": "防御 (コストx6.5) %上昇(武将のコストで効果が変化します)"
   },
   {
    "slot": "B",
@@ -84,10 +84,10 @@
    "afterRank": "D",
    "target": null,
    "rate": null,
-   "effectShort": "攻撃40%上昇+防御40%上昇",
+   "effectShort": "攻撃 40%上昇+防御 40%上昇",
    "afterTarget": "全",
    "afterRate": "24%",
-   "afterEffectShort": "攻撃38%上昇(防御38%上昇)"
+   "afterEffectShort": "攻撃 38%上昇(防御 38%上昇)"
   },
   {
    "slot": "C",
@@ -97,10 +97,10 @@
    "afterRank": "A",
    "target": "槍・鉄",
    "rate": "34%",
-   "effectShort": "攻撃・防御(部隊ランクボーナス×9)%上昇",
+   "effectShort": "攻撃・防御 (部隊ランクボーナス×9)%上昇",
    "afterTarget": "槍鉄",
    "afterRate": "24%",
-   "afterEffectShort": "攻撃76%上昇+破壊30%上昇"
+   "afterEffectShort": "攻撃 76%上昇+破壊 30%上昇"
   },
   {
    "slot": "S1",
@@ -110,8 +110,8 @@
    "afterRank": "A",
    "target": "槍・器・鉄",
    "rate": "62%",
-   "effectShort": "攻撃・防御(部隊ランクボーナス×10)%上昇(★24=60%・★28=90%)",
-   "afterEffectShort": "攻撃・防御(部隊ランクボーナス×10)%上昇(★24=60%・★28=90%)"
+   "effectShort": "攻撃・防御 (部隊ランクボーナス×10)%上昇(★24=60%・★28=90%)",
+   "afterEffectShort": "攻撃・防御 (部隊ランクボーナス×10)%上昇(★24=60%・★28=90%)"
   },
   {
    "slot": "S2",
@@ -121,7 +121,7 @@
    "afterRank": "SS",
    "target": "砲・器",
    "rate": "45%",
-   "effectShort": "攻撃66%上昇(防御66%上昇)",
+   "effectShort": "攻撃 66%上昇(防御 66%上昇)",
    "afterTarget": "全",
    "afterRate": "24%",
    "afterEffectShort": "攻撃部隊ランクボーナスx15%上昇(部隊ランクボーナスで効果が変化)"

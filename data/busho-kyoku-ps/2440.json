@@ -24,7 +24,7 @@
   "ki": "A"
  },
  "initialSkill": "紅蓮炎槍騎兵",
- "skillDetail": "A/LV10 確率 100% 攻撃94%上昇/対象:全\n①攻撃94%上昇する\n②防御94%上昇する\n③部隊内全武将が持つ初期スキルに「槍弓馬」対象を追加する(兵科対象スキル限定)",
+ "skillDetail": "A/LV10 確率 100% 攻撃 94%上昇/対象:全\n①攻撃 94%上昇する\n②防御 94%上昇する\n③部隊内全武将が持つ初期スキルに「槍弓馬」対象を追加する(兵科対象スキル限定)",
  "trTable": [
   {
    "level": "LV10",
@@ -71,10 +71,10 @@
    "afterRank": "A",
    "target": null,
    "rate": null,
-   "effectShort": "攻撃94%上昇+防御94%上昇(部隊内全武将の初期スキルに「槍弓馬」対象を追加・兵科対象スキル限定)",
+   "effectShort": "攻撃 94%上昇+防御 94%上昇(部隊内全武将の初期スキルに「槍弓馬」対象を追加・兵科対象スキル限定)",
    "afterTarget": "全",
    "afterRate": "100%",
-   "afterEffectShort": "攻撃70%上昇+防御70%上昇(このスキルを所持する武将の全スキルの卓越確率に25%を加算する(模倣不可))"
+   "afterEffectShort": "攻撃 70%上昇+防御 70%上昇(このスキルを所持する武将の全スキルの卓越確率に25%を加算する(模倣不可))"
   },
   {
    "slot": "B",
@@ -84,7 +84,7 @@
    "afterRank": "A",
    "target": null,
    "rate": null,
-   "effectShort": "攻撃72%上昇+防御72%上昇+破壊20%上昇",
+   "effectShort": "攻撃 72%上昇+防御 72%上昇+破壊 20%上昇",
    "afterTarget": "全",
    "afterRate": "44%",
    "afterEffectShort": "攻撃 66%上昇+防御 66%上昇"
@@ -97,10 +97,10 @@
    "afterRank": "SS",
    "target": "全",
    "rate": "50%",
-   "effectShort": "攻撃67%上昇+防御67%上昇",
+   "effectShort": "攻撃 67%上昇+防御 67%上昇",
    "afterTarget": "全",
    "afterRate": "50%",
-   "afterEffectShort": "攻撃99.9%上昇+防御99.9%上昇(部隊消費コストを0.5低下・特殊効果は模倣不可)"
+   "afterEffectShort": "攻撃 99.9%上昇+防御 99.9%上昇(部隊消費コストを0.5低下・特殊効果は模倣不可)"
   },
   {
    "slot": "S1",
@@ -110,7 +110,7 @@
    "afterRank": "SS",
    "target": "全",
    "rate": "100%",
-   "effectShort": "攻撃70%上昇+防御70%上昇(このスキルを所持する武将の全スキルの卓越確率に25%を加算する(模倣不可))",
+   "effectShort": "攻撃 70%上昇+防御 70%上昇(このスキルを所持する武将の全スキルの卓越確率に25%を加算する(模倣不可))",
    "afterTarget": "全",
    "afterRate": "35%",
    "afterEffectShort": "攻撃 40%上昇+防御 40%上昇+所属部隊内のレアリティS以上のスキル個数×20%を攻防効果に加算"
@@ -123,7 +123,7 @@
    "afterRank": "SS",
    "target": null,
    "rate": null,
-   "effectShort": "攻撃87%上昇+防御87%上昇",
+   "effectShort": "攻撃 87%上昇+防御 87%上昇",
    "afterTarget": "全",
    "afterRate": "35%",
    "afterEffectShort": "攻撃 40%上昇+防御 40%上昇+所属部隊内のレアリティS以上のスキル個数×20%を攻防効果に加算"

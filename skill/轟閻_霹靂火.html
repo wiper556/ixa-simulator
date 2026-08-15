@@ -78,6 +78,16 @@
     border:1px solid var(--line); pointer-events:none; user-select:text;
   }
 
+  /* 武将名にカーソルを置いたときの顔出し(TYPE2を7割の大きさで)。
+     武将データベースの一覧と同じ見た目。動きは assets/js/cardhover.js */
+  .cardhover-pop{
+    position:fixed; z-index:10000; pointer-events:none; display:none;
+    padding:4px; background:#fff; border:1px solid var(--line);
+    border-radius:6px; box-shadow:0 6px 20px rgba(0,0,0,0.22);
+  }
+  .cardhover-pop img{ display:block; width:157px; height:auto; border-radius:3px; }
+  @media (hover:none){ .cardhover-pop{ display:none !important; } }
+
 </style>
 </head>
 <body>
@@ -102,7 +112,7 @@
   <main class="site-main">
     <p class="article-meta"><a href="../index.html">ホーム</a> ／ <a href="../skills-hub.html">スキル一覧</a> ／ <a href="../skills.html">全スキル</a> ／ 轟閻 霹靂火</p>
     <h1 class="page-title">轟閻 霹靂火 <span style="font-size:.6em;color:var(--muted);">[S]</span></h1>
-<h1 class="skl-detail-title">轟閻 霹靂火<span class="skl-detail-rank">S</span></h1><p class="skl-detail-meta">確率+40% ／ 対象:砲</p><div class="skl-detail-block"><h2>効果概要</h2><div class="skl-effect-text">S/LV10 確率：+40% / 対象 砲 防御：36%上昇</div></div><div class="skl-detail-block"><h2>鍛錬レベル別性能</h2><div class="skl-table-scroll"><table class="skl-stat-table"><thead><tr><th>レベル</th><th class="skl-col-narrow">必要ポイント</th><th>効果</th></tr></thead><tbody><tr><td>LV10</td><td class="skl-col-narrow">-</td><td style="text-align:left;">砲　確率 40% / 防御36%上昇</td></tr></tbody></table></div></div><div class="skl-detail-block"><h2 class="skl-heading-with-toggle">入手可能な武将(合成素材)<label class="skl-toggle"><input type="checkbox" id="sklHideS2">S2(同一カード2枚合成)を非表示</label></h2><div class="skl-table-scroll"><table class="skl-stat-table"><thead><tr><th class="skl-col-wrap">武将</th><th class="skl-col-narrow">候補</th></tr></thead><tbody><tr><td class="skl-col-wrap"><a href="../busho/2437.html">佐竹義重 No.2437</a></td><td class="skl-col-narrow">C</td></tr></tbody></table></div></div><div class="skl-detail-block" id="sklInitialSkillBlock" style="display:none;"><h2>初期スキルとして持つ武将</h2><div id="sklInitialSkillList"></div></div><div class="skl-detail-block"><h2>このスキルを習得済みのカードを合成素材にした場合の隠し候補</h2><div class="skl-effect-text"><a href="../skill/%E6%AD%A6%E7%A5%9E%E5%85%AB%E5%B9%A1%E9%99%A3.html">武神八幡陣 SS</a><br>全　確率 60% / 防御NULL%上昇 (部隊の総コストで効果が変化します)</div></div>
+<h1 class="skl-detail-title">轟閻 霹靂火<span class="skl-detail-rank">S</span></h1><p class="skl-detail-meta">確率+40% ／ 対象:砲</p><div class="skl-detail-block"><h2>効果概要</h2><div class="skl-effect-text">S/LV10 確率：+40% / 対象 砲 防御：36%上昇</div></div><div class="skl-detail-block"><h2>鍛錬レベル別性能</h2><div class="skl-table-scroll"><table class="skl-stat-table"><thead><tr><th>レベル</th><th class="skl-col-narrow">必要ポイント</th><th>効果</th></tr></thead><tbody><tr><td>LV10</td><td class="skl-col-narrow">-</td><td style="text-align:left;">砲　確率 40% / 防御 36%上昇</td></tr></tbody></table></div></div><div class="skl-detail-block"><h2 class="skl-heading-with-toggle">入手可能な武将(合成素材)<label class="skl-toggle"><input type="checkbox" id="sklHideS2">S2(同一カード2枚合成)を非表示</label></h2><div class="skl-table-scroll"><table class="skl-stat-table"><thead><tr><th class="skl-col-wrap">武将</th><th class="skl-col-narrow">候補</th></tr></thead><tbody><tr><td class="skl-col-wrap"><a href="../busho/2437.html" data-thumb-no="2437">佐竹義重 No.2437</a></td><td class="skl-col-narrow">C</td></tr></tbody></table></div></div><div class="skl-detail-block" id="sklInitialSkillBlock" style="display:none;"><h2>初期スキルとして持つ武将</h2><div id="sklInitialSkillList"></div></div><div class="skl-detail-block"><h2>このスキルを習得済みのカードを合成素材にした場合の隠し候補</h2><div class="skl-effect-text"><a href="../skill/%E6%AD%A6%E7%A5%9E%E5%85%AB%E5%B9%A1%E9%99%A3.html">武神八幡陣 SS</a><br>全　確率 60% / 防御NULL%上昇 (部隊の総コストで効果が変化します)</div></div>
 <p style="margin-top:28px;"><a href="../skills.html#%E8%BD%9F%E9%96%BB%20%E9%9C%B9%E9%9D%82%E7%81%AB">スキル一覧に戻る</a></p>
   </main>
 
@@ -115,5 +125,6 @@
   </div>
 </div>
 <script src="../assets/js/site-sidebar.js"></script>
+<script src="../assets/js/cardhover.js"></script>
 </body>
 </html>

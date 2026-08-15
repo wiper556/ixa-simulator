@@ -5,7 +5,7 @@
  "cost": 3,
  "troop": "全防破",
  "sub": "",
- "effect": "防御400%上昇+破壊150%上昇(レベル20固定・成長なし)",
+ "effect": "防御 400%上昇+破壊 150%上昇(レベル20固定・成長なし)",
  "furigana": "なんこうふらくのてんしゅ",
  "illustrator": "戦国IXA",
  "imageFull": "assets/img/characters/no2589_full.png",
@@ -24,7 +24,7 @@
   "ki": "B"
  },
  "initialSkill": "城壁の護り",
- "skillDetail": "S/LV10 確率 100% 防御400%上昇/対象:全\n①防御400%上昇する\n②破壊150%上昇する",
+ "skillDetail": "S/LV10 確率 100% 防御 400%上昇/対象:全\n①防御 400%上昇する\n②破壊 150%上昇する",
  "trTable": [
   {
    "level": "LV10",
@@ -71,7 +71,7 @@
    "afterRank": "SS",
    "target": null,
    "rate": null,
-   "effectShort": "攻撃99.9%上昇+防御99.9%上昇+破壊150%上昇",
+   "effectShort": "攻撃 99.9%上昇+防御 99.9%上昇+破壊 150%上昇",
    "afterTarget": "槍・弓・馬",
    "afterRate": "70%",
    "afterEffectShort": "全攻 30%上昇(部隊の総コストで効果が変化)"
