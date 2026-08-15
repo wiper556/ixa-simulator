@@ -57,7 +57,7 @@
    "effectShort": "攻撃 66%上昇+防御 66%上昇",
    "afterTarget": "砲器",
    "afterRate": "50%",
-   "afterEffectShort": "攻撃((ランク+1)xコストx3) %上昇 部隊ランクとコストで効果が変化"
+   "afterEffectShort": "攻撃 ((ランク+1)xコストx3) %上昇 部隊ランクとコストで効果が変化"
   },
   {
    "slot": "C",
@@ -70,7 +70,7 @@
    "effectShort": "防御 35%上昇",
    "afterTarget": "弓器",
    "afterRate": "35%",
-   "afterEffectShort": "攻撃(1.7x防御参加武将数)%上昇"
+   "afterEffectShort": "攻撃 (1.7x防御参加武将数)%上昇"
   },
   {
    "slot": "S1",
@@ -94,7 +94,7 @@
    "effectShort": "防御 1%上昇(部隊ランクボーナス×10%を加算)",
    "afterTarget": "全",
    "afterRate": "60%",
-   "afterEffectShort": "防御100%上昇 自部隊の武将ダメージ軽減3% (重複発動上限数4)"
+   "afterEffectShort": "防御 100%上昇 自部隊の武将ダメージ軽減3% (重複発動上限数4)"
   }
  ],
  "notes": [

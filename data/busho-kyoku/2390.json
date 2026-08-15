@@ -24,7 +24,7 @@
   "ki": "A"
  },
  "initialSkill": "武神ノ采配",
- "skillDetail": "A/LV10 確率 56% 防御95%上昇/対象:馬・砲・器\n①防御95%上昇する\n②拠点待機90分ごとに防御効果が1.5倍になる(上限5回)",
+ "skillDetail": "A/LV10 確率 56% 防御 95%上昇/対象:馬・砲・器\n①防御 95%上昇する\n②拠点待機90分ごとに防御効果が1.5倍になる(上限5回)",
  "trTable": [
   {
    "level": "LV10",
@@ -69,7 +69,7 @@
    "effectShort": "防御 15%上昇(部隊総コストで変動)",
    "afterTarget": "全",
    "afterRate": "42%",
-   "afterEffectShort": "防御(部隊総コスト依存)%上昇(総C25=351.03%)"
+   "afterEffectShort": "防御 (部隊総コスト依存)%上昇(総C25=351.03%)"
   },
   {
    "slot": "B",
@@ -79,7 +79,7 @@
    "afterRank": "SS",
    "target": "全",
    "rate": "42%",
-   "effectShort": "防御(部隊総コスト依存)%上昇(総C25=351.03%)",
+   "effectShort": "防御 (部隊総コスト依存)%上昇(総C25=351.03%)",
    "afterTarget": "全",
    "afterRate": "50%",
    "afterEffectShort": "防御 30.02%上昇(部隊総コストで変動)"
@@ -92,8 +92,8 @@
    "afterRank": "A",
    "target": "馬・砲・器",
    "rate": "56%",
-   "effectShort": "防御95%上昇(拠点待機90分毎に1.5倍・上限5回)",
-   "afterEffectShort": "防御95%上昇(拠点待機90分毎に1.5倍・上限5回)"
+   "effectShort": "防御 95%上昇(拠点待機90分毎に1.5倍・上限5回)",
+   "afterEffectShort": "防御 95%上昇(拠点待機90分毎に1.5倍・上限5回)"
   },
   {
    "slot": "S1",
@@ -103,8 +103,8 @@
    "afterRank": "A",
    "target": "馬・砲・器",
    "rate": "56%",
-   "effectShort": "防御95%上昇(拠点待機90分毎に1.5倍・上限5回)",
-   "afterEffectShort": "防御95%上昇(拠点待機90分毎に1.5倍・上限5回)"
+   "effectShort": "防御 95%上昇(拠点待機90分毎に1.5倍・上限5回)",
+   "afterEffectShort": "防御 95%上昇(拠点待機90分毎に1.5倍・上限5回)"
   },
   {
    "slot": "S2",

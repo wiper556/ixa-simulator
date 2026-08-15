@@ -5,7 +5,7 @@
  "cost": 3,
  "troop": "槍砲器攻速破",
  "sub": "",
- "effect": "攻撃400%上昇+破壊120%上昇+速度120%上昇",
+ "effect": "攻撃 400%上昇+破壊 120%上昇+速度 120%上昇",
  "furigana": "さわげじょうちょう",
  "illustrator": "NW/S,RKKD",
  "imageFull": "assets/img/characters/no2613_full.png",
@@ -24,7 +24,7 @@
   "ki": "S"
  },
  "initialSkill": "我流大蛇",
- "skillDetail": "A/LV10 確率 100% 攻撃400%上昇/対象:槍・砲・器\n①攻撃400%上昇する\n②破壊120%上昇する\n③速度120%上昇する",
+ "skillDetail": "A/LV10 確率 100% 攻撃 400%上昇/対象:槍・砲・器\n①攻撃 400%上昇する\n②破壊 120%上昇する\n③速度 120%上昇する",
  "trTable": [
   {
    "level": "LV10",
@@ -71,10 +71,10 @@
    "afterRank": "A",
    "target": "槍・砲・器",
    "rate": "100%",
-   "effectShort": "攻撃400%上昇+破壊120%上昇+速度120%上昇",
+   "effectShort": "攻撃 400%上昇+破壊 120%上昇+速度 120%上昇",
    "afterTarget": "全",
    "afterRate": "35%",
-   "afterEffectShort": "攻撃77%上昇+防御77%上昇+速度40%上昇(速度のみ確率100%)"
+   "afterEffectShort": "攻撃 77%上昇+防御 77%上昇+速度 40%上昇(速度のみ確率100%)"
   },
   {
    "slot": "B",
@@ -84,10 +84,10 @@
    "afterRank": "A",
    "target": "槍・砲・器",
    "rate": "100%",
-   "effectShort": "攻撃400%上昇+破壊120%上昇+速度120%上昇",
+   "effectShort": "攻撃 400%上昇+破壊 120%上昇+速度 120%上昇",
    "afterTarget": "全",
    "afterRate": "35%",
-   "afterEffectShort": "攻撃77%上昇+防御77%上昇+速度40%上昇(速度のみ確率100%)"
+   "afterEffectShort": "攻撃 77%上昇+防御 77%上昇+速度 40%上昇(速度のみ確率100%)"
   },
   {
    "slot": "C",
@@ -97,10 +97,10 @@
    "afterRank": "A",
    "target": "槍・砲・器",
    "rate": "100%",
-   "effectShort": "攻撃400%上昇+破壊120%上昇+速度120%上昇",
+   "effectShort": "攻撃 400%上昇+破壊 120%上昇+速度 120%上昇",
    "afterTarget": "全",
    "afterRate": "35%",
-   "afterEffectShort": "攻撃77%上昇+防御77%上昇+速度40%上昇(速度のみ確率100%)"
+   "afterEffectShort": "攻撃 77%上昇+防御 77%上昇+速度 40%上昇(速度のみ確率100%)"
   },
   {
    "slot": "S1",
@@ -110,7 +110,7 @@
    "afterRank": "SS",
    "target": "全",
    "rate": "35%",
-   "effectShort": "攻撃77%上昇+防御77%上昇+速度40%上昇(速度のみ確率100%)",
+   "effectShort": "攻撃 77%上昇+防御 77%上昇+速度 40%上昇(速度のみ確率100%)",
    "afterTarget": "全",
    "afterRate": "70%",
    "afterEffectShort": "攻撃 2.8%×防御参加武将数(280人)=784.0%上昇"

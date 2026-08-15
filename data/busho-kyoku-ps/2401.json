@@ -24,7 +24,7 @@
   "ki": "A"
  },
  "initialSkill": "剣聖 建御雷",
- "skillDetail": "B/LV10 確率 15% 攻撃18%上昇/対象:槍・弓・器\n模倣不可\n①攻撃18%上昇する\n②部隊長なら発動率と効果が4倍になる",
+ "skillDetail": "B/LV10 確率 15% 攻撃 18%上昇/対象:槍・弓・器\n模倣不可\n①攻撃 18%上昇する\n②部隊長なら発動率と効果が4倍になる",
  "trTable": [
   {
    "level": "LV10",
@@ -71,7 +71,7 @@
    "afterRank": "E",
    "target": null,
    "rate": null,
-   "effectShort": "攻撃20%上昇",
+   "effectShort": "攻撃 20%上昇",
    "afterTarget": "全",
    "afterRate": "100%",
    "afterEffectShort": "速度 20%上昇"
@@ -84,10 +84,10 @@
    "afterRank": "D",
    "target": null,
    "rate": null,
-   "effectShort": "攻撃36%上昇(2部隊以下の攻撃で効果1.5倍)",
+   "effectShort": "攻撃 36%上昇(2部隊以下の攻撃で効果1.5倍)",
    "afterTarget": "槍弓器",
    "afterRate": "32%",
-   "afterEffectShort": "攻撃34%上昇(破壊17%上昇)"
+   "afterEffectShort": "攻撃 34%上昇(破壊 17%上昇)"
   },
   {
    "slot": "C",
@@ -97,8 +97,8 @@
    "afterRank": "B",
    "target": "槍・弓・器",
    "rate": "7%",
-   "effectShort": "攻撃54%上昇(相手軍の武将数20以上で必ず発動)",
-   "afterEffectShort": "攻撃54%上昇(相手軍の武将数20以上で必ず発動)"
+   "effectShort": "攻撃 54%上昇(相手軍の武将数20以上で必ず発動)",
+   "afterEffectShort": "攻撃 54%上昇(相手軍の武将数20以上で必ず発動)"
   },
   {
    "slot": "S1",
@@ -108,8 +108,8 @@
    "afterRank": "B",
    "target": "槍・弓・器",
    "rate": "15%",
-   "effectShort": "攻撃18%上昇(部隊長なら発動率と効果4倍・模倣不可)",
-   "afterEffectShort": "攻撃18%上昇(部隊長なら発動率と効果4倍・模倣不可)"
+   "effectShort": "攻撃 18%上昇(部隊長なら発動率と効果4倍・模倣不可)",
+   "afterEffectShort": "攻撃 18%上昇(部隊長なら発動率と効果4倍・模倣不可)"
   },
   {
    "slot": "S2",
@@ -119,7 +119,7 @@
    "afterRank": "B",
    "target": "槍・砲・器",
    "rate": "15%",
-   "effectShort": "攻撃54%上昇(合流攻撃時は必ず発動)"
+   "effectShort": "攻撃 54%上昇(合流攻撃時は必ず発動)"
   }
  ],
  "notes": [

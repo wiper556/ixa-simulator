@@ -24,7 +24,7 @@
   "ki": "S"
  },
  "initialSkill": "清良記",
- "skillDetail": "A/LV10 確率 64% 攻撃92%上昇/対象:全\n①攻撃92%上昇する\n②部隊内全武将の兵科対象の初期スキルに「砲」対象を追加する",
+ "skillDetail": "A/LV10 確率 64% 攻撃 92%上昇/対象:全\n①攻撃 92%上昇する\n②部隊内全武将の兵科対象の初期スキルに「砲」対象を追加する",
  "trTable": [
   {
    "level": "LV10",
@@ -71,10 +71,10 @@
    "afterRank": "A",
    "target": null,
    "rate": null,
-   "effectShort": "攻撃92%上昇(部隊内全武将の兵科対象の初期スキルに「砲」対象を追加)",
+   "effectShort": "攻撃 92%上昇(部隊内全武将の兵科対象の初期スキルに「砲」対象を追加)",
    "afterTarget": "全",
    "afterRate": "50%",
-   "afterEffectShort": "攻撃70%上昇(部隊内全武将の兵科対象の初期スキルに「砲」対象を追加)"
+   "afterEffectShort": "攻撃 70%上昇(部隊内全武将の兵科対象の初期スキルに「砲」対象を追加)"
   },
   {
    "slot": "B",
@@ -84,7 +84,7 @@
    "afterRank": "SS",
    "target": "全",
    "rate": "100%",
-   "effectShort": "攻撃70%上昇+防御70%上昇(このスキルを所持する武将の全スキルの卓越確率に25%を加算する(模倣不可))",
+   "effectShort": "攻撃 70%上昇+防御 70%上昇(このスキルを所持する武将の全スキルの卓越確率に25%を加算する(模倣不可))",
    "afterTarget": "全",
    "afterRate": "35%",
    "afterEffectShort": "攻撃 40%上昇+防御 40%上昇+所属部隊内のレアリティS以上のスキル個数×20%を攻防効果に加算"
@@ -110,7 +110,7 @@
    "afterRank": "A",
    "target": "全",
    "rate": "50%",
-   "effectShort": "攻撃70%上昇(部隊内全武将の兵科対象の初期スキルに「砲」対象を追加)"
+   "effectShort": "攻撃 70%上昇(部隊内全武将の兵科対象の初期スキルに「砲」対象を追加)"
   },
   {
    "slot": "S2",
@@ -120,10 +120,10 @@
    "afterRank": "SS",
    "target": null,
    "rate": null,
-   "effectShort": "攻撃78%上昇+速度70%上昇(4部隊以下の攻撃で攻撃効果1.5倍)",
+   "effectShort": "攻撃 78%上昇+速度 70%上昇(4部隊以下の攻撃で攻撃効果1.5倍)",
    "afterTarget": "全",
    "afterRate": "100%",
-   "afterEffectShort": "攻撃 90%上昇+速度200%上昇(TRなし)"
+   "afterEffectShort": "攻撃 90%上昇+速度 200%上昇(TRなし)"
   }
  ],
  "notes": [

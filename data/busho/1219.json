@@ -24,12 +24,12 @@
   "ki": "SS"
  },
  "initialSkill": "破邪轟砲",
- "skillDetail": "S/LV10 確率 50% 攻撃200%上昇/対象:全\n①攻撃200%上昇する\n②防御200%上昇する\n③部隊内全武将の兵科対象の初期スキルに「砲」対象を追加する(TR1〜TR5は未確認)",
+ "skillDetail": "S/LV10 確率 50% 攻撃 200%上昇/対象:全\n①攻撃 200%上昇する\n②防御 200%上昇する\n③部隊内全武将の兵科対象の初期スキルに「砲」対象を追加する(TR1〜TR5は未確認)",
  "trTable": [
   {
    "level": "LV10",
    "points": "-",
-   "effect": "全　確率 50% / 攻撃200%上昇+防御200%上昇"
+   "effect": "全　確率 50% / 攻撃 200%上昇+防御 200%上昇"
   }
  ],
  "synthesisTable": [
@@ -41,7 +41,7 @@
    "afterRank": "SSS",
    "rate": "50%",
    "target": "全",
-   "effectShort": "攻撃200%上昇+防御200%上昇",
+   "effectShort": "攻撃 200%上昇+防御 200%上昇",
    "afterTarget": "自身",
    "afterRate": "70%",
    "afterEffectShort": "自身が持つ初期スキルを通常攻撃/防御効果1.25倍にして模倣する"
@@ -54,7 +54,7 @@
    "afterRank": "SSS",
    "rate": "50%",
    "target": "全",
-   "effectShort": "攻撃200%上昇+防御200%上昇",
+   "effectShort": "攻撃 200%上昇+防御 200%上昇",
    "afterTarget": "自身",
    "afterRate": "70%",
    "afterEffectShort": "自身が持つ初期スキルを通常攻撃/防御効果1.25倍にして模倣する"

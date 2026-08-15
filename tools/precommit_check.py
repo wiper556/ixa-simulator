@@ -542,7 +542,8 @@ def check_range(rng):
         # 生成物だけの手編集
         gen = [f for f in files if f.startswith(("busho/", "skill/"))]
         if gen and not [f for f in files
-                        if f in DATA_FILES or f.startswith("tools/") or f == "sitemap.xml"]:
+                        if f in DATA_FILES or f.startswith(("tools/", "data/"))
+                        or f == "sitemap.xml"]:
             bad.append("生成物だけが変わっている(%d件)。手で編集していないか" % len(gen))
 
         # ベースラインが増えたのに理由が増えていない
@@ -912,8 +913,13 @@ def main():
     # 生成物だけが変わっていて、データも生成器も触っていないなら、手で書いたということ。
     gen_only = [f for f in staged if f.startswith(("busho/", "skill/"))]
     if gen_only:
+        # 2026-08-15: `data/` が抜けていた。2026-08-14に正本が data/busho*/{No}.json と
+        # data/skill/{名前}.json へ移り、鍛錬表や効果文は **skills.html の配列には載らず
+        # data/ にしか無い**。そのため「data/ を直して再生成する」という正しい手順が
+        # 「生成物だけが変わっている」と誤判定されて止まっていた(国堅大神の修正で発覚)。
         cause = [f for f in staged
-                 if f in DATA_FILES or f.startswith("tools/") or f == "sitemap.xml"]
+                 if f in DATA_FILES or f.startswith(("tools/", "data/"))
+                 or f == "sitemap.xml"]
         if not cause:
             ng = True
             print()

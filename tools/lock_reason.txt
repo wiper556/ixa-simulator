@@ -41,3 +41,4 @@
 2026-08-14	-1	hooks:tools/audit_selftest.py	極の分割で2614がbusho-kyoku-psへ移ったので、監査の自己テストの注入先パスを追従させた(CIがFileNotFoundErrorで落ちていた)
 2026-08-14	-1	hooks:tools/build_data.py	build_data.py に generalChapters(章データ)の生成を追加。data/busho*/ の ch を assets/js/ixa-data.js へ書き出すだけで、既存の検査ロジック・出力は一切変えていない(build_data.py --dry-run で他5ページは変化なしを確認済み)
 2026-08-15	-1	hooks:tools/gen_detail_pages.py	gen_detail_pages.py: スキル詳細を同期でinnerHTMLに写していたため、非同期で描かれる「初期スキルとして持つ武将」欄が346ページ全部でdisplay:noneのまま出ていた。描画関数を await してから読むようにした(検査を弱める変更ではない)
+2026-08-15	-1	hooks:tools/precommit_check.py	precommit_check.py: 生成物だけが変わっているかの判定に data/ が入っていなかった。2026-08-14に正本が data/ へ移り、鍛錬表や効果文は skills.html の配列に載らず data/ にしか無いため、「data/を直して再生成する」という正しい手順が誤って止められていた(国堅大神の修正で発覚)。検査を弱めるのではなく、正しい変更理由を数えられるようにするもの
