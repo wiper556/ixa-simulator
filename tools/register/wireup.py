@@ -47,22 +47,27 @@ def find_general(no):
     return None, None
 
 
-# 章を引くための表。sourceCharacters の並べ替えに使う。
-CH_OF_NO = {}
-for _d in DB_OF_DIR:
-    _p = os.path.join(ROOT, "data", _d)
-    if os.path.isdir(_p):
-        for _fn in os.listdir(_p):
-            if _fn.endswith(".json"):
-                CH_OF_NO[_fn[:-5]] = json.load(
-                    io.open(os.path.join(_p, _fn), encoding="utf-8")).get("ch")
+# レアリティの判定は attack-simulator.html の generalRarity と同じ規則。
+RARITY_ORDER = {"傑": 0, "天": 1, "極": 2, "特": 3, "不明": 4}
+
+
+def rarity_of(no):
+    n = str(no or "")
+    if not re.match(r"^\d{3,6}$", n):
+        return "不明"
+    if len(n) == 5 and n[:2] in ("20", "21", "22"):
+        return "傑"
+    if len(n) == 4 and n[0] == "3":
+        return "特"
+    if len(n) == 4 and n[0] in ("2", "7"):
+        return "極"
+    return "天"    # 1xxx / 10xxx(コラボ) / 31xxx・40xxx(パラレル天)
 
 
 def src_key(c):
-    """入手可能な武将の並び: 章の昇順 → カードNo.の昇順。未確認は最後。"""
+    """入手可能な武将の並び: レアリティの高い順 → カードNo.の昇順。"""
     no = str(c.get("no") or "")
-    m = re.match(r"^(\d+)章$", CH_OF_NO.get(no) or "")
-    return (int(m.group(1)) if m else 9999, int(no) if no.isdigit() else 0)
+    return (RARITY_ORDER.get(rarity_of(no), 4), int(no) if no.isdigit() else 0)
 
 # --- S-05: 逆引き ---
 added = 0

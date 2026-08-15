@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7334304987274613"
      crossorigin="anonymous"></script>
-<title>無尽スキル一覧｜戦国IXA シミュレーター置き場</title>
+<title>無尽(防御)一覧｜戦国IXA シミュレーター置き場</title>
 <meta name="description" content="戦国IXA(Sengoku IXA)の無尽スキル一覧。部隊消費コスト減少量と主効果を比較できる非公式ファンメイドツール。">
 <link rel="stylesheet" href="assets/css/site.css">
 <style>
@@ -81,12 +81,30 @@
   </header>
 
   <main class="site-main">
-    <h1 class="page-title">無尽スキル一覧</h1>
-    <p class="page-lead">無尽スキルは攻撃に効くものと防御に効くもので使い方が違うため、一覧を2つに分けました。両方に効くスキルはどちらにも載っています。</p>
-    <div class="tool-grid">
-      <a class="tool-card" href="skills-mujin-atk.html"><h2>無尽(攻撃)スキル一覧</h2><p>攻撃力が上がるものだけ</p></a>
-      <a class="tool-card" href="skills-mujin-def.html"><h2>無尽(防御)スキル一覧</h2><p>防御力が上がるものだけ</p></a>
+    <h1 class="page-title">無尽(防御)一覧</h1>
+    <p class="mj-note">「無尽」を持つスキルは、部隊消費コストを減少させる効果を持つ(無尽1につき-0.5、無尽2は-1.0)。</p>
+
+    <div class="mj-search">
+      <input type="text" id="mjSearchBox" placeholder="スキル名または武将名で検索(例: 焼尽神無、豊臣秀長 など)">
     </div>
+
+    <div class="s2-hide-filter">
+      <label class="s2-hide-toggle"><input type="checkbox" id="mjHideS2Toggle">S2で入手できる武将名を非表示</label>
+    </div>
+
+    <div class="mj-table-scroll">
+      <table class="mj-table">
+        <thead>
+          <tr><th>スキル名</th><th>発動率</th><th>対象兵科</th><th>コスト減少</th><th>主効果(LV10時)</th><th>入手可能な武将</th></tr>
+        </thead>
+        <tbody id="mjList">
+<!-- PRERENDER:list:mjList:start ここから下は tools/prerender.py が自動生成しています。直接編集しないこと -->
+<tr><td><a href="skills.html#岳王ノ加護">岳王ノ加護</a></td><td>50%</td><td>全</td><td><span style="color:#00acc1;font-weight:700;">無尽</span>(-0.5)</td><td class="mj-col-effect">防御 10%×防御参加武将数(280人)=2800.0%(人数依存(防)スキル一覧も参照)</td><td style="white-space:normal;"><a href="characters.html#1299">石田三成（7）【覇】(S1)</a><br><a href="characters.html#1316">尼子経久（3）(S1)</a></td></tr><tr><td><a href="skills.html#終焉焦土">終焉焦土</a></td><td>46%</td><td>全</td><td><span style="color:#00acc1;font-weight:700;">無尽</span>(-0.5)</td><td class="mj-col-effect">攻撃 9.6%×防御参加武将数(280人)=2688.0%(人数依存(攻)スキル一覧も参照)</td><td style="white-space:normal;"><a href="characters.html#10075">毛利輝元-復刻-【覇】(S1)</a><br><a href="characters.html#1298">豊臣秀長【覇】(S1)</a><br><a href="characters.html#1320">伊達稙宗(B)</a></td></tr><tr><td><a href="skills.html#豊恩銘魂">豊恩銘魂</a></td><td>40%</td><td>全</td><td><span style="color:#00acc1;font-weight:700;">無尽</span>(-0.5)</td><td class="mj-col-effect"><span style="color:#00acc1;font-weight:700;">無尽</span> 防御 8%×防御参加武将数(280人)=2240.0%</td><td style="white-space:normal;"><a href="characters-kyoku.html#7402">蜂須賀家政(S1)</a></td></tr><tr><td><a href="skills.html#焼尽神無">焼尽神無</a></td><td>44%</td><td>全</td><td><span style="color:#00acc1;font-weight:700;">無尽</span>(-0.5)</td><td class="mj-col-effect">攻撃 6.9%×防御参加武将数(280人)=1932.0%(人数依存(攻)スキル一覧も参照)</td><td style="white-space:normal;"><a href="characters.html#10075">毛利輝元-復刻-【覇】(C)</a><br><a href="characters.html#1303">本多忠勝（2）(B)</a><br><a href="characters.html#1298">豊臣秀長【覇】(B)</a><br><a href="characters.html#1294">島津義弘（4）(S1)</a><br><a href="characters.html#1286">織田信長（9）【覇】(C)</a><br><a href="characters.html#1320">伊達稙宗(A)</a></td></tr><tr><td><a href="skills.html#熾炎破天">熾炎破天</a></td><td>50%</td><td>全</td><td><span style="color:#00acc1;font-weight:700;">無尽2</span>(-1.0)</td><td class="mj-col-effect">防御780%×2(部隊コスト8以下)=1560%上昇</td><td style="white-space:normal;"><a href="characters.html#1311">斎藤道三（2）【覇】(B)</a><br><a href="characters.html#1319">朝倉宗滴(A)</a></td></tr><tr><td><a href="skills.html#火槍猛進">火槍猛進</a></td><td>55%</td><td>槍・弓・器・鉄</td><td><span style="color:#00acc1;font-weight:700;">無尽</span>(-0.5)</td><td class="mj-col-effect">防御740%上昇(部隊コスト10以下で効果2倍)</td><td style="white-space:normal;"><a href="characters-kyoku.html#7402">蜂須賀家政(C)</a><br><a href="characters.html#1305">福島正則（4）(S1)</a><br><a href="characters.html#1319">朝倉宗滴(S2)</a></td></tr><tr><td><a href="skills.html#王佐ノ指揮">王佐ノ指揮</a></td><td>100%</td><td>全</td><td><span style="color:#00acc1;font-weight:700;">無尽</span>(-0.5)</td><td class="mj-col-effect">攻撃520%上昇+防御520%上昇(部隊内全武将の兵科対象の全スキルに「砲」対象を追加)</td><td style="white-space:normal;" class="src-allnotrans"><a href="characters.html#1278">羽柴秀長(移植不可)</a></td></tr><tr><td><a href="characters.html#1304">不撓六文銭</a></td><td>100%</td><td>全</td><td><span style="color:#00acc1;font-weight:700;">無尽</span>(-0.5)</td><td class="mj-col-effect">防御500%上昇(<span style="color:#00acc1;font-weight:700;">無尽</span>持ち追加・極限スキルの防御・破壊効果2倍)</td><td style="white-space:normal;" class="src-allnotrans"><a href="characters.html#1304">真田昌幸（5）(移植不可)</a></td></tr><tr><td><a href="characters.html#1299">義戦ノ旗手</a></td><td>100%</td><td>全</td><td><span style="color:#00acc1;font-weight:700;">無尽</span>(-0.5)</td><td class="mj-col-effect">全防360%上昇(自身のみ)</td><td style="white-space:normal;" class="src-allnotrans"><a href="characters.html#1299">石田三成（7）【覇】(移植不可)</a></td></tr>
+<!-- PRERENDER:list:mjList:end -->
+</tbody>
+      </table>
+    </div>
+    <div id="pageComments"></div>
   </main>
 
   <footer class="site-footer">
@@ -109,23 +127,11 @@
      skills.htmlに詳細ページがあるスキルのうち、hasMujin:trueのものを比較用にまとめる。
      無尽1につき部隊消費コスト-0.5(無尽2は-1.0)。
   ============================================ */
-  const mujinSkills = [
-    {name:"豊恩銘魂", skillPage:"skills.html#豊恩銘魂", baseRate:"40%", target:"全",
+  const mujinDefSkills = [{name:"豊恩銘魂", skillPage:"skills.html#豊恩銘魂", baseRate:"40%", target:"全",
       costReduction:"無尽(-0.5)",
       lv10Effect:"無尽 防御 8%×防御参加武将数(280人)=2240.0%",
       sourceCharacters:[
         {name:"蜂須賀家政", no:"7402", slot:"S1", db:"kyoku"}
-      ]},
-    {name:"牙突・弐式", skillPage:"skills.html#牙突・弐式", baseRate:"40%", target:"全",
-      costReduction:"無尽(-0.5)",
-      lv10Effect:"無尽 攻擊1020%上昇",
-      sourceCharacters:[
-        {name:"斎藤一【覇】", no:"10066", slot:"S2"}
-      ]},
-    {name:"壬生ノ狼牙", skillPage:"skills.html#壬生ノ狼牙", baseRate:"100%", target:"全",
-      lv10Effect:"攻擊500%上昇 追加スキルの攻撃効果が2.5倍(模倣不可)",
-      sourceCharacters:[
-        {name:"斎藤一【覇】", no:"10066", slot:"移植不可"} // characters.html#10066 の初期スキル。synthesisTableのどの枠にも出ない
       ]},
     {name:"岳王ノ加護", skillPage:"skills.html#岳王ノ加護", baseRate:"50%", target:"全",
       costReduction:"無尽(-0.5)",
@@ -153,27 +159,6 @@
         {name:"織田信長（9）【覇】", no:"1286", slot:"C"},
         {name:"伊達稙宗", no:"1320", slot:"A"}
       ]},
-    {name:"絶無灰尽", skillPage:"skills.html#絶無灰尽", baseRate:"100%", target:"全",
-      costReduction:"無尽(-0.5)",
-      lv10Effect:"攻撃1010%上昇(不屈1)",
-      sourceCharacters:[
-        {name:"毛利輝元-復刻-【覇】", no:"10075", slot:"B"},
-        {name:"本多忠勝（2）", no:"1303", slot:"A"},
-        {name:"島津義弘（4）", no:"1294", slot:"A"},
-        {name:"豊臣秀吉【覇】", no:"1274", slot:"C"},
-        // 羽柴秀長(1278)のsynthesisTable S1枠(A-3-11逆引き確認、2026-08-02)
-        {name:"羽柴秀長", no:"1278", slot:"S1"},
-        {name:"細川晴元（2）", no:"1317", slot:"A"},
-        {name:"藤林長門守", no:"2845", slot:"B", db:"kyoku"}
-      ]},
-    {name:"覆天征軍", skillPage:"skills.html#覆天征軍", baseRate:"100%", target:"全",
-      costReduction:"無尽2(-1.0)",
-      lv10Effect:"攻撃900%上昇(TR1〜TR5は未確認)",
-      sourceCharacters:[
-        {name:"本多忠勝（2）", no:"1303", slot:"S1"},
-        {name:"豊臣秀長【覇】", no:"1298", slot:"A"},
-        {name:"細川晴元（2）", no:"1317", slot:"B"}
-      ]},
     {name:"火槍猛進", skillPage:"skills.html#火槍猛進", baseRate:"55%", target:"槍・弓・器・鉄",
       costReduction:"無尽(-0.5)",
       lv10Effect:"防御740%上昇(部隊コスト10以下で効果2倍)",
@@ -181,12 +166,6 @@
         {name:"蜂須賀家政", no:"7402", slot:"C", db:"kyoku"},
         {name:"福島正則（4）", no:"1305", slot:"S1"}, // characters.html#1305 synthesisTable S1に自己参照で掲載を確認
         {name:"朝倉宗滴", no:"1319", slot:"S2"}
-      ]},
-    {name:"智絶千算", skillPage:"skills.html#智絶千算", baseRate:"100%", target:"全",
-      costReduction:"無尽(-0.5)",
-      lv10Effect:"攻撃680%上昇(対象兵科指揮時、極限スキルの攻撃効果3.5倍)",
-      sourceCharacters:[
-        {name:"竹中半兵衛【覇】", no:"1275", slot:"移植不可"}
       ]},
     {name:"不撓六文銭", skillPage:"characters.html#1304", baseRate:"100%", target:"全",
       costReduction:"無尽(-0.5)",
@@ -200,33 +179,19 @@
       sourceCharacters:[
         {name:"石田三成（7）【覇】", no:"1299", slot:"移植不可"}
       ]},
-    {name:"幻王ノ采配", skillPage:"skills.html#幻王ノ采配", baseRate:"100%", target:"全",
-      costReduction:"無尽(-0.5)",
-      lv10Effect:"攻撃360%上昇(覇道・部隊内の無尽持ちスキルの攻撃効果2倍)",
-      sourceCharacters:[
-        {name:"豊臣秀吉【覇】", no:"1274", slot:"移植不可"}
-      ]},
-    {name:"天導仁翼", skillPage:"characters.html#1298", baseRate:"40%", target:"砲・器",
-      costReduction:"無尽2(-1.0)",
-      lv10Effect:"総攻撃 4.0%×無尽武将数(4人)×2=32.0%",
-      sourceCharacters:[
-        {name:"豊臣秀長【覇】", no:"1298", slot:"移植不可"}
-      ]},
     {name:"王佐ノ指揮", skillPage:"skills.html#王佐ノ指揮", baseRate:"100%", target:"全",
       costReduction:"無尽(-0.5)",
       lv10Effect:"攻撃520%上昇+防御520%上昇(部隊内全武将の兵科対象の全スキルに「砲」対象を追加)",
       sourceCharacters:[
         {name:"羽柴秀長", no:"1278", slot:"移植不可"}
-      ]}
-  ,
+      ]},
     {name:"熾炎破天", skillPage:"skills.html#熾炎破天", baseRate:"50%", target:"全",
       costReduction:"無尽2(-1.0)",
       lv10Effect:"防御780%×2(部隊コスト8以下)=1560%上昇",
       sourceCharacters:[
         {name:"斎藤道三（2）【覇】", no:"1311", slot:"B"},
         {name:"朝倉宗滴", no:"1319", slot:"A"}
-      ]}
-  ];
+      ]}];
 
   function mjEscapeHtml(s){
     return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -273,7 +238,7 @@
   function mjRender(){
     const el = document.getElementById('mjList');
     const q = document.getElementById('mjSearchBox').value.trim().toLowerCase();
-    const list = mujinSkills.filter(function(s){ return mjMatchesSearch(s, q); });
+    const list = mujinDefSkills.filter(function(s){ return mjMatchesSearch(s, q); });
     list.sort(function(a, b){ return mjMaxEffect(b) - mjMaxEffect(a); });
     if(list.length === 0){
       el.innerHTML = '<tr><td colspan="6" style="text-align:center;color:var(--muted);">該当するスキルが見つかりません</td></tr>';

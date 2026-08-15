@@ -6,8 +6,12 @@
  "effectSummary": "SS/LV10 確率 60% 攻防810%上昇/対象:全\n①攻撃 810%上昇する\n②防御 810%上昇する\n③部隊消費コストを1低下する(模倣不可)",
  "categoryLinks": [
   {
-   "href": "skills-cost.html",
-   "label": "コスト減少スキル一覧を見る"
+   "href": "skills-cost-atk.html",
+   "label": "コスト減少(攻撃)スキル一覧を見る"
+  },
+  {
+   "href": "skills-cost-def.html",
+   "label": "コスト減少(防御)スキル一覧を見る"
   }
  ],
  "sourceCharacters": [
@@ -57,23 +61,6 @@
    "slot": "A"
   },
   {
-   "name": "大道寺政繁",
-   "no": "2386",
-   "slot": "S1",
-   "db": "kyoku"
-  },
-  {
-   "name": "小山田信茂",
-   "no": "2395",
-   "slot": "S1",
-   "db": "kyoku"
-  },
-  {
-   "name": "長宗我部元親-復刻-",
-   "no": "10069",
-   "slot": "S2"
-  },
-  {
    "name": "真田昌幸（5）",
    "no": "1304",
    "slot": "S2"
@@ -89,15 +76,26 @@
    "slot": "S2"
   },
   {
-   "name": "伊藤一刀斎",
-   "no": "2856",
-   "slot": "S2",
-   "db": "kyoku"
-  },
-  {
    "name": "今川義元（3）【覇】",
    "no": "1312",
    "slot": "S2"
+  },
+  {
+   "name": "長宗我部元親-復刻-",
+   "no": "10069",
+   "slot": "S2"
+  },
+  {
+   "name": "大道寺政繁",
+   "no": "2386",
+   "slot": "S1",
+   "db": "kyoku"
+  },
+  {
+   "name": "小山田信茂",
+   "no": "2395",
+   "slot": "S1",
+   "db": "kyoku"
   },
   {
    "name": "明神弥彦",
@@ -113,6 +111,12 @@
    "note": [
     "伊賀崎道順(2839)のsynthesisTable A枠(2026-08-15)"
    ]
+  },
+  {
+   "name": "伊藤一刀斎",
+   "no": "2856",
+   "slot": "S2",
+   "db": "kyoku"
   },
   {
    "name": "蜂須賀家政",

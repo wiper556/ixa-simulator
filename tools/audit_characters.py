@@ -414,13 +414,15 @@ def main():
             add("LINKED_SKILLS", "MID", "%s 未登録だがページ有り: %s" % (label, n))
 
     # categoryLinks 9項目
-    KW = [("無尽", "skills-mujin.html"), ("撤退", "skills-taitai.html"), ("覇道", "skills-hadou.html"),
+    # 2026-08-16: 無尽は攻撃用と防御用の2ページに割れた(skills-mujin-atk/def)。
+    # 飛翔と同じく**ページ名の一部**で見る。どちらか片方に載っていればよい。
+    KW = [("無尽", "skills-mujin"), ("撤退", "skills-taitai.html"), ("覇道", "skills-hadou.html"),
           ("不屈", "skills-fukutsu.html"), ("兵站", "skills-heitan.html"), ("卓越", "skills-takuetsu.html")]
     for s in D["skills"]:
         text = (s.get("effectSummary") or "") + " " + (s.get("target") or "")
         cl = [c.get("href") for c in (s.get("categoryLinks") or [])]
         for kw, page in KW:
-            if kw in text and page not in cl:
+            if kw in text and not any(page in (c or "") for c in cl):
                 add("categoryLinks漏れ", "MID", "「%s」: 『%s』があるが %s へのリンク無し" % (s["name"], kw, page))
         # 「飛翔を持たない〜」は他者の飛翔の話なので対象外
         if re.search(r"飛翔(?!を持たない)", text) and "飛翔" in (s.get("target") or "") \

@@ -57,7 +57,8 @@ SIMPLE = {
     # skills.html の詳細(sklRenderDetail)は他ページを実行時fetchして
     # 「このスキルを持つ武将」を組み立てる作りのため事前描画に向かない。一覧のみ対象。
     "skills.html": ["sklList"],
-    "skills-cost.html": ["csList"],
+    "skills-cost-atk.html": ["csList"],
+    "skills-cost-def.html": ["csList"],
     "skills-count-atk.html": ["scList"],
     "skills-count-def.html": ["scList"],
     "skills-fukutsu.html": ["fkList"],
@@ -68,7 +69,8 @@ SIMPLE = {
     "skills-hishou-def.html": ["hsList"],
     "skills-leadermimic.html": ["lmList", "lmNoList"],
     "skills-mimic.html": ["mmList"],
-    "skills-mujin.html": ["mjList"],
+    "skills-mujin-atk.html": ["mjList"],
+    "skills-mujin-def.html": ["mjList"],
     "skills-taitai.html": ["ttList"],
     "skills-takuetsu.html": ["tkList", "tkRateList"],
 }
