@@ -1,9 +1,9 @@
 {
  "name": "風林火山",
  "rank": "S",
- "baseRate": 25,
+ "baseRate": 45,
  "target": "槍・弓・馬",
- "effectSummary": "S/LV10 確率 25% 攻撃15%上昇/対象:槍・弓・馬\n①攻撃15%上昇する\n②破壊5%上昇する",
+ "effectSummary": "S/LV10 確率 45% 攻撃30%上昇/対象:槍・弓・馬\n①攻撃30%上昇する\n②破壊15%上昇する",
  "sourceCharacters": [
   {
    "name": "三好義賢",
@@ -101,10 +101,11 @@
   {
    "level": "LV10",
    "points": "-",
-   "effect": "槍・弓・馬　確率 25% / 攻撃 15%上昇+破壊5%上昇(TRなし)"
+   "effect": "槍・弓・馬　確率 45% / 攻撃 30%上昇+破壊15%上昇(TRなし)"
   }
  ],
  "notes": [
-  "ixanary.com(/skills/風林火山/、原本No.1003)確認。No.2368(三好義賢)の合成候補データ(ixagno.blog.fc2.com blog-entry-9695確認)より、Bスロット「遁世影武者」の移植後合成候補として判明したためページ新規作成"
+  "ixanary.com(/skills/風林火山/、原本No.1003)確認。No.2368(三好義賢)の合成候補データ(ixagno.blog.fc2.com blog-entry-9695確認)より、Bスロット「遁世影武者」の移植後合成候補として判明したためページ新規作成",
+  "2026-08-15訂正: baseRate/効果文が25%になっていたが、これはixanaryのLV1値だった。LV10は確率45%/攻撃30%上昇/破壊15%上昇が正しい値(ixanary.com/skills/風林火山で確認、TRの記載は無くLV1とLV10の2段のみ)。"
  ]
 }
