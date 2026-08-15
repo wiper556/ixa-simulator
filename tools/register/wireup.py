@@ -103,33 +103,48 @@ for no in NOS:
             json.dumps(js, ensure_ascii=False, indent=1) + "\n")
         print("  S-08 %-12s → %s %s" % (nm, af, rk))
 
-# --- S-04: KP_LINKED_SKILLS ---
-p = os.path.join(ROOT, "characters-kyoku-ps.html")
-t = io.open(p, encoding="utf-8", newline="").read()
-m = re.search(r"(const KP_LINKED_SKILLS = \[)(.*?)(\];)", t, re.S)
-body = m.group(2).rstrip()
-want = []
+# --- S-04: 各一覧ページの LINKED_SKILLS ---
+# 2026-08-15: ここは characters-kyoku-ps.html(KP_)しか見ていなかった。
+# 極(通常)や天の武将にスキルページを新設しても KK_/無印の配列に入らず、
+# 監査の「LINKED_SKILLS 未登録だがページ有り」が消えないままだった。
+# 武将がどのDBに居るかで書き込む配列を選ぶ。
+LINKED_OF_DIR = {
+    "busho-kyoku-ps": ("characters-kyoku-ps.html", "KP_LINKED_SKILLS"),
+    "busho-kyoku": ("characters-kyoku.html", "KK_LINKED_SKILLS"),
+    "busho": ("characters.html", "LINKED_SKILLS"),
+}
+want = collections.defaultdict(list)
 for no in NOS:
-    for d in ("busho-kyoku-ps", "busho-kyoku"):
+    for d, (page, var) in LINKED_OF_DIR.items():
         fp = os.path.join(ROOT, "data", d, "%s.json" % no)
-        if os.path.exists(fp):
-            e = json.load(io.open(fp, encoding="utf-8"))
-            # ページがあるスキルだけを入れる。A以下でページを作らないものを入れると
-            # 監査が「LINKED_SKILLSにあるのにskills.htmlに無い」と鳴る(S-02)
-            if e.get("initialSkill") and os.path.exists(
-                    os.path.join(SKILLDIR, e["initialSkill"] + ".json")):
-                want.append(e["initialSkill"])
-            for r in e.get("synthesisTable") or []:
-                for k in ("skill", "afterSkill"):
-                    if r.get(k) and os.path.exists(os.path.join(SKILLDIR, r[k] + ".json")):
-                        want.append(r[k])
-            break
-add = [n for n in dict.fromkeys(want) if n and ("'%s'" % n) not in body]
-if add:
-    body += "".join(", '%s'" % n for n in add)
-    io.open(p, "w", encoding="utf-8", newline="").write(
-        t[:m.start()] + m.group(1) + body + m.group(3) + t[m.end():])
-print("S-04 KP_LINKED_SKILLS へ %d件 追加: %s" % (len(add), " ".join(add)))
+        if not os.path.exists(fp):
+            continue
+        e = json.load(io.open(fp, encoding="utf-8"))
+        # ページがあるスキルだけを入れる。A以下でページを作らないものを入れると
+        # 監査が「LINKED_SKILLSにあるのにskills.htmlに無い」と鳴る(S-02)
+        if e.get("initialSkill") and os.path.exists(
+                os.path.join(SKILLDIR, e["initialSkill"] + ".json")):
+            want[(page, var)].append(e["initialSkill"])
+        for r in e.get("synthesisTable") or []:
+            for k in ("skill", "afterSkill"):
+                if r.get(k) and os.path.exists(os.path.join(SKILLDIR, r[k] + ".json")):
+                    want[(page, var)].append(r[k])
+        break
+
+for (page, var), names in sorted(want.items()):
+    p = os.path.join(ROOT, page)
+    t = io.open(p, encoding="utf-8", newline="").read()
+    m = re.search(r"(const %s = \[)(.*?)(\];)" % var, t, re.S)
+    if not m:
+        print("S-04 %-24s の %s が見つからない" % (page, var))
+        continue
+    body = m.group(2).rstrip()
+    add = [n for n in dict.fromkeys(names) if n and ("'%s'" % n) not in body]
+    if add:
+        body += "".join(", '%s'" % n for n in add)
+        io.open(p, "w", encoding="utf-8", newline="").write(
+            t[:m.start()] + m.group(1) + body + m.group(3) + t[m.end():])
+    print("S-04 %-20s へ %d件 追加: %s" % (var, len(add), " ".join(add)))
 
 
 # --- S-06: 一覧ページ(skills-*.html)の sourceCharacters を正本に合わせる ---

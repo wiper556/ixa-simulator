@@ -44,10 +44,10 @@
   {
    "name": "雪窓院",
    "no": "2803",
-   "slot": "A",
+   "slot": "S1",
    "db": "kyoku",
    "note": [
-    "雪窓院(2803)のsynthesisTable A枠(2026-08-15)"
+    "雪窓院(2803)のsynthesisTable S1枠(skill=飛蝶野分を直接持つ枠)。A・B枠はskill=入来神舞→afterSkill=飛蝶野分という別の関係で、入来神舞は独自ページを持つためgrantedViaSkillsで参照すべき(このファイル冒頭の留守政景等と同じ扱い)であり、直接列挙のslotをA単独からS1に訂正(2026-08-15黄丸化検証)"
    ]
   },
   {

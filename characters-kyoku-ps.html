@@ -527,11 +527,11 @@
 
     {name:"織田有楽斎", no:"2823", ch:"未確認", cost:3, troop:"全", sub:"", effect:"部隊内武将スキル発動率+40%(部隊内重複不可)",
       furigana:"おだうらくさい", imageFull:"assets/img/characters/no2823_full.png",
-      imageChar:"assets/img/characters/no2823_char.png", initialSkill:"有楽流", kyokuType:"シークレット極"},
+      imageChar:"assets/img/characters/no2823_char.png", initialSkill:"有楽流", reviewedOk:true, kyokuType:"シークレット極"},
 
     {name:"永田徳本", no:"2824", ch:"未確認", cost:0, troop:"全", sub:"", effect:"このカードを所持していると診療所での治療時間が50%減少する(重複不可)",
       furigana:"ながたとくほん", imageFull:"assets/img/characters/no2824_full.png",
-      imageChar:"assets/img/characters/no2824_char.png", initialSkill:"草莽ノ聖者", kyokuType:"シークレット極"},
+      imageChar:"assets/img/characters/no2824_char.png", initialSkill:"草莽ノ聖者", reviewedOk:true, kyokuType:"シークレット極"},
 
     {name:"俵屋宗達", no:"2825", ch:"未確認", cost:3, troop:"全", sub:"",
       effect:"部隊内武将の全スキルの卓越追加確率が70%上昇(模倣不可・特殊効果は自部隊内では重複不可)", furigana:"たわらやそうたつ",
@@ -593,7 +593,7 @@
       imageFull:"assets/img/characters/no2838_full.png", imageChar:"assets/img/characters/no2838_char.png",
       initialSkill:"慈光望姫", kyokuType:"シークレット極"},
 
-    {name:"伊賀崎道順", no:"2839", ch:"未確認", cost:5, troop:"部隊長特", sub:"",
+    {name:"伊賀崎道順", no:"2839", reviewedOk:true, ch:"未確認", cost:5, troop:"部隊長特", sub:"",
       effect:"所属部隊の部隊長が持つ模倣可能な初期スキルを通常攻撃/防御効果を1.15倍して模倣する", furigana:"いがのさきどうじゅん",
       imageFull:"assets/img/characters/no2839_full.png", imageChar:"assets/img/characters/no2839_char.png",
       initialSkill:"滅塞忍法", kyokuType:"シークレット極"},
@@ -707,9 +707,10 @@
       imageFull:"assets/img/characters/no2802_full.png", imageChar:"assets/img/characters/no2802_char.png",
       initialSkill:"前知兵法", reviewedOk:true, kyokuType:"シークレット極"},
 
-    {name:"雪窓院", no:"2803", ch:"未確認", cost:3.5, troop:null, sub:"", effect:null, furigana:"せっそういん",
+    {name:"雪窓院", no:"2803", ch:"未確認", cost:3.5, troop:null, sub:"",
+      effect:"所属部隊の部隊長が持つ模倣可能な初期スキルを1.1倍に強化して模倣する(TRなし)", furigana:"せっそういん",
       imageFull:"assets/img/characters/no2803_full.png", imageChar:"assets/img/characters/no2803_char.png",
-      initialSkill:"入来神舞", kyokuType:"シークレット極"},
+      initialSkill:"入来神舞", reviewedOk:true, kyokuType:"シークレット極"},
 
     {name:"奈多姫", no:"2805", ch:"未確認", cost:2.5, troop:"弓器焙防", sub:"", effect:"防御 2.4%×防御参加武将数(280人)=672.0%",
       furigana:"なたひめ", imageFull:"assets/img/characters/no2805_full.png",
@@ -721,7 +722,7 @@
 
     {name:"霧隠才蔵", no:"2807", ch:"未確認", cost:4.5, troop:"全 飛翔8攻", sub:"", effect:"攻撃 110%上昇 防御 110%上昇",
       furigana:"きりがくれさいぞう", imageFull:"assets/img/characters/no2807_full.png",
-      imageChar:"assets/img/characters/no2807_char.png", initialSkill:"煙霞迷霧", kyokuType:"シークレット極"},
+      imageChar:"assets/img/characters/no2807_char.png", initialSkill:"煙霞迷霧", reviewedOk:true, kyokuType:"シークレット極"},
 
     {name:"南光坊天海", no:"2808", ch:"未確認", cost:4.5, troop:"全防", sub:"", effect:"全防御 90%上昇(防御側武将数カウントの対象にならない・模倣不可)",
       furigana:"なんこうぼうてんかい", imageFull:"assets/img/characters/no2808_full.png",
@@ -749,21 +750,21 @@
       imageFull:"assets/img/characters/no2813_full.png", imageChar:"assets/img/characters/no2813_char.png",
       initialSkill:"麗将車懸", reviewedOk:true, kyokuType:"シークレット極"},
 
-    {name:"佐々木ユキ", no:"2814", ch:"未確認", cost:4, troop:null, sub:"", effect:null, furigana:"ささきゆき",
+    {name:"佐々木ユキ", no:"2814", ch:"未確認", cost:4, troop:"特", sub:"", effect:"部隊長の初期スキルを模倣 飛翔4", furigana:"ささきゆき",
       imageFull:"assets/img/characters/no2814_full.png", imageChar:"assets/img/characters/no2814_char.png",
       initialSkill:"黒飛燕剣", kyokuType:"シークレット極"},
 
-    {name:"瀬名姫", no:"2815", ch:"未確認", cost:1, troop:null, sub:"", effect:null, furigana:"せなひめ",
-      imageFull:"assets/img/characters/no2815_full.png", imageChar:"assets/img/characters/no2815_char.png",
-      initialSkill:"無辜ノ哀炎", kyokuType:"シークレット極"},
+    {name:"瀬名姫", no:"2815", ch:"未確認", cost:1, troop:"特", sub:"", effect:"飛翔4 所持で本丸防御陣形編成コスト上限+0.5×(武将ランク+1)(重複不可)",
+      furigana:"せなひめ", imageFull:"assets/img/characters/no2815_full.png",
+      imageChar:"assets/img/characters/no2815_char.png", initialSkill:"無辜ノ哀炎", reviewedOk:true, kyokuType:"シークレット極"},
 
     {name:"本因坊算砂", no:"2816", ch:"未確認", cost:4.5, troop:"全防", sub:"", effect:"防御 160%上昇", furigana:"ほんいんぼうさんさ",
       imageFull:"assets/img/characters/no2816_full.png", imageChar:"assets/img/characters/no2816_char.png",
-      initialSkill:"一世名人", kyokuType:"シークレット極"},
+      initialSkill:"一世名人", reviewedOk:true, kyokuType:"シークレット極"},
 
     {name:"山科言継", no:"2817", ch:"未確認", cost:0.5, troop:"特", sub:"", effect:"所持で銀銭の生産上限+100(重複不可)",
       furigana:"やましなときつぐ", imageFull:"assets/img/characters/no2817_full.png",
-      imageChar:"assets/img/characters/no2817_char.png", initialSkill:"風韻書房", kyokuType:"シークレット極"},
+      imageChar:"assets/img/characters/no2817_char.png", initialSkill:"風韻書房", reviewedOk:true, kyokuType:"シークレット極"},
 
     {name:"藤原惺窩", no:"2818", ch:"未確認", cost:5, troop:"全防", sub:"", effect:"防御 170%上昇", furigana:"ふじわらせいか",
       imageFull:"assets/img/characters/no2818_full.png", imageChar:"assets/img/characters/no2818_char.png",
@@ -798,11 +799,11 @@
 
     {name:"今川氏輝", no:"2749", ch:"未確認", cost:2, troop:"部隊長", sub:"", effect:"所属部隊の部隊長が持つ初期スキルを模倣する(戦闘スキルのみ)",
       furigana:"いまがわうじてる", imageFull:"assets/img/characters/no2749_full.png",
-      imageChar:"assets/img/characters/no2749_char.png", initialSkill:"宿木", kyokuType:"シークレット極"},
+      imageChar:"assets/img/characters/no2749_char.png", initialSkill:"宿木", reviewedOk:true, kyokuType:"シークレット極"},
 
-    {name:"里見義堯", no:"2751", ch:"未確認", cost:3, troop:"全攻", sub:"", effect:"攻撃 30%上昇", furigana:"さとみよしたか",
-      imageFull:"assets/img/characters/no2751_full.png", imageChar:"assets/img/characters/no2751_char.png",
-      initialSkill:"万年君", kyokuType:"シークレット極"},
+    {name:"里見義堯", no:"2751", ch:"未確認", cost:3, troop:"全攻", sub:"", effect:"攻撃 30%上昇/自軍武将のスキル発動率+3%(発動率上昇は重複効果無し)",
+      furigana:"さとみよしたか", imageFull:"assets/img/characters/no2751_full.png",
+      imageChar:"assets/img/characters/no2751_char.png", initialSkill:"万年君", reviewedOk:true, kyokuType:"シークレット極"},
 
     {name:"古田織部", no:"2753", ch:"未確認", cost:3.5, troop:"全", sub:"", effect:"防御 42%上昇", furigana:"ふるたおりべ",
       imageFull:"assets/img/characters/no2753_full.png", imageChar:"assets/img/characters/no2753_char.png",
@@ -877,13 +878,15 @@
       furigana:"やすいどうとん", imageFull:"assets/img/characters/no2775_full.png",
       imageChar:"assets/img/characters/no2775_char.png", initialSkill:"大願ノ道頓堀", reviewedOk:true, kyokuType:"シークレット極"},
 
-    {name:"細川忠利", no:"2776", ch:"未確認", cost:3, troop:"全防", sub:"", effect:"防御 72%上昇", furigana:"ほそかわただとし",
+    {name:"細川忠利", no:"2776", ch:"未確認", cost:3, troop:"全防", sub:"",
+      effect:"防御 70%上昇(所属部隊は拠点の加勢上限を超えて加勢できる・重複上限4部隊まで)", furigana:"ほそかわただとし",
       imageFull:"assets/img/characters/no2776_full.png", imageChar:"assets/img/characters/no2776_char.png",
-      initialSkill:"名門ノ戒律", kyokuType:"シークレット極"},
+      initialSkill:"名門ノ戒律", reviewedOk:true, kyokuType:"シークレット極"},
 
-    {name:"芝辻清右衛門", no:"2777", ch:"未確認", cost:1, troop:"特", sub:"", effect:"「鉄砲足軽」の兵士防御力+1(重複不可・効果範囲は所持者部隊の兵士のみ)",
-      furigana:"しばつじせいえもん", imageFull:"assets/img/characters/no2777_full.png",
-      imageChar:"assets/img/characters/no2777_char.png", initialSkill:"芝辻砲", kyokuType:"シークレット極"},
+    {name:"芝辻清右衛門", no:"2777", ch:"未確認", cost:1, troop:"特", sub:"",
+      effect:"「鉄砲足軽」の兵士攻撃力+1・兵士防御力+1(重複不可・効果範囲は所持者部隊の兵士のみ)", furigana:"しばつじせいえもん",
+      imageFull:"assets/img/characters/no2777_full.png", imageChar:"assets/img/characters/no2777_char.png",
+      initialSkill:"芝辻砲", reviewedOk:true, kyokuType:"シークレット極"},
 
     {name:"尚寧王", no:"2778", ch:"未確認", cost:3, troop:"全防", sub:"", effect:"防御 50%上昇", furigana:"しょうねいおう",
       imageFull:"assets/img/characters/no2778_full.png", imageChar:"assets/img/characters/no2778_char.png",
@@ -891,11 +894,11 @@
 
     {name:"山上宗二", no:"2779", ch:"未確認", cost:3, troop:"全", sub:"", effect:"資源獲得率15%", furigana:"やまのうえそうじ",
       imageFull:"assets/img/characters/no2779_full.png", imageChar:"assets/img/characters/no2779_char.png",
-      initialSkill:"覚悟十躰", kyokuType:"シークレット極"},
+      initialSkill:"覚悟十躰", reviewedOk:true, kyokuType:"シークレット極"},
 
     {name:"小堀遠州", no:"2780", ch:"未確認", cost:2, troop:"特", sub:"", effect:"資源保有可能量150000増加", furigana:"こぼりえんしゅう",
       imageFull:"assets/img/characters/no2780_full.png", imageChar:"assets/img/characters/no2780_char.png",
-      initialSkill:"遠州流", kyokuType:"シークレット極"},
+      initialSkill:"遠州流", reviewedOk:true, kyokuType:"シークレット極"},
 
     {name:"上杉顕定", no:"2781", ch:"未確認", cost:3, troop:"全防", sub:"", effect:"防御 50%上昇", furigana:"うえすぎあきさだ",
       imageFull:"assets/img/characters/no2781_full.png", imageChar:"assets/img/characters/no2781_char.png",
@@ -922,7 +925,7 @@
   }
 
   // スキルデータベース(skills.html)にページがあるスキル名の一覧。ここに載っているスキルはリンク化する。
-  const KP_LINKED_SKILLS = ['入来神舞', '天磐船', '豊国ノ寵将', '天衣無縫神戒', '国津破邪ノ楯', '不滅ノ鬼神', '朧雲ノ閃撃', '瞬刻無影', '国一丸', '氷塊三連撃', '龍驤虎躍', '十束ノ神域', '仙剣破斬', '神光征軍', '天聖宝冠', '海神ノ浮船', '遠呂智ノ閃光', '朧雲ノ蓮撃', '悪屋形', '朝曇ノ明麗', '風林火山', '転歌', '乱世ノ歸人', '宿木', '戦陣 破軍', '戦陣 龍馬', '獅子王', '西国ノ覇将', '風狂幻術', '戦陣 吟詠', '飛蝶野分', '聖廉母堂', '破軍一投', '戦陣 無縫', '凜武艶姫', '日輪ノ守護者', '勝旗勇躍', '戦陣 神楽', '万里嵐壁', '三千世界神将', '仙境解脱', '八幡神ノ威光', '八重言代主神', '刹那無影', '千里必勝ノ神算', '四天轟雷', '国堅大神', '國才連豪', '天之尾羽張', '天地黎明', '天奏聖譚曲', '天津日ノ太刀', '天津甕星ノ雷', '天焉相克', '天翔雷神', '天頂ノ電光', '天香山命', '布刀玉ノ策', '布都御魂ノ鬨', '建御雷神ノ槌', '建御雷神ノ閃光', '摩利支天ノ法', '旌旗翳天ノ覇陣', '星神闘覇', '月詠ノ覇威', '永世ノ天隻', '潔花咲然', '火之迦具土神', '照闇騎行', '破軍星 皇', '破軍騎行', '破邪後輝', '神屋楯比売命', '神羅聖域', '禍津日神ノ謀', '義陣絶刀', '至天ノ御剣', '舞蝶朧月', '虎賁統帥', '覇王征軍', '開闢ノ逆鉾', '飛龍衝天', '高津姫神', '魔弾奏者', '黄泉醜女ノ屍兵', '天甲破山', '天岩戸ノ神域', '波濤ノ剛撃', '一刀ノ伝承', '三十五ノ兵法', '傾国ノ艶姫', '八楯剛陣', '冥国ノ双鎌', '剛毅謀慮', '十死一生', '回天剣舞', '城壁の護り', '天廟斬算', '天穿神滅', '天綾の誓約', '天華爛漫', '天衝破軍槍', '巌流燕返し', '幻渦龍刀', '幽冥主宰大神', '式神ノ冥王', '悪一文字', '慈愛ノ癒術', '払捨刀夢想', '文治興隆', '旋龍突渦', '日輪豊国', '月下闇龍', '朧雲ノ突撃', '根津諏訪流鷹術', '武神八幡陣', '比類なき大将', '氷塊ノ夾撃', '氷瀑ノ封印', '氷瀑ノ封神', '無双英傑', '無空ノ極剣', '無窮天斥陣', '煙霞迷霧', '牙突', '牛鬼ノ攻城', '白銀双鶴', '破城 羅刹', '破軍星', '神谷活心流', '神農医方', '紅蓮ノ刃', '紅蓮ノ刹', '縮地', '聖光ノ遊星', '聖女ノ恩寵', '茅纒之矟ノ煌', '荒破閃神', '葵ノ慈母', '虎巫', '覇王絶世', '見様見真似', '貫殺飛苦無', '轟閻 霹靂火', '銀翼神騎兵', '錘焔ノ空帯', '錘焔ノ藍帯', '風魔ノ夜討', '飛幻忍術', '飛竜星照', '騎神炎山', '騒速ノ神撃', '魔界ノ美姫', '黒衣ノ軍師', '黒飛燕剣', '龍槌閃・惨', '護国王器', '壬生ノ狼牙', '筋骨隆々', '豊恩銘魂', '火槍猛進', '萬宝航跡', '朱印航路', '騎神', '天神旋武', '煉獄ノ英主', '覇道天聖', '天焉神軍', '天戒 五芒星', '天衣無縫陣', '太閤の威光', '天下の采配', '覇国無双', '天征相克', '隠形千里', '影国ノ加護', '明神ノ鈴音', '天啓ノ神撃', '美人剛腕', '傾世ノ華', '思金神ノ深謀', '天凛不抜', '針葉浄美', '舞姫武神', '飛媛舞刀', '火城華憐', '権謀術数射陣', '王花尖剣', '精忠鋼壁', '破軍十六神将', '万物神勇', '八界経略', '閃裂討鬼', '幻像鏡花', '影王絶技', '絶無灰尽', '天地超克', '赤焔ノ絆', '戦華雄渾', '花信風', '虚実ノ理合', '滅塞忍法', '盛興弓箭', '呪法死界', '猛火ノ追撃', '九字ノ呪法', '清廉士道', '天宇受売命', '豊州ノ蠍', '救国ノ軍師', '晴嵐義計', '騎虎神道', '盟王ノ威才', '外道煉獄', '虚松籟', '聖夜ノ慈姫', '嵐下墨炎', '乱界図', '幕天席地', '一世名人', '星宿劫ノ法壁', '鼎国ノ楔姫', '麗将車懸', '救天慈愛', '日輪ノ英妃', '波乱ノ虎', '覇龍滅破陣', '掃天封壁陣', '哀姫星霜', '御家再興ノ秘策', '四神相応ノ天計', '木遁封魔', '宍戸八重垣流', '九国一ノ美才', '前知兵法', '天ノ逆矛', '南界軍王', '弥陀ノ裁剣', '海王ノ碇戟', '四神天道', '四海王道', '慈光望姫', '有楽流', '氷神ノ巫女', '終曲ノ結姫', '草莽ノ聖者', '琳聖風雅', '船手衆ノ極意', '叛逆近景', '華狐', '炎城士魂', 'オプクワ', '王佐ノ才', '国友筒', '水霊ノ加護', '鬼滅刺', '風韻書房'];
+  const KP_LINKED_SKILLS = ['入来神舞', '天磐船', '豊国ノ寵将', '天衣無縫神戒', '国津破邪ノ楯', '不滅ノ鬼神', '朧雲ノ閃撃', '瞬刻無影', '国一丸', '氷塊三連撃', '龍驤虎躍', '十束ノ神域', '仙剣破斬', '神光征軍', '天聖宝冠', '海神ノ浮船', '遠呂智ノ閃光', '朧雲ノ蓮撃', '悪屋形', '朝曇ノ明麗', '風林火山', '転歌', '乱世ノ歸人', '宿木', '戦陣 破軍', '戦陣 龍馬', '獅子王', '西国ノ覇将', '風狂幻術', '戦陣 吟詠', '飛蝶野分', '聖廉母堂', '破軍一投', '戦陣 無縫', '凜武艶姫', '日輪ノ守護者', '勝旗勇躍', '戦陣 神楽', '万里嵐壁', '三千世界神将', '仙境解脱', '八幡神ノ威光', '八重言代主神', '刹那無影', '千里必勝ノ神算', '四天轟雷', '国堅大神', '國才連豪', '天之尾羽張', '天地黎明', '天奏聖譚曲', '天津日ノ太刀', '天津甕星ノ雷', '天焉相克', '天翔雷神', '天頂ノ電光', '天香山命', '布刀玉ノ策', '布都御魂ノ鬨', '建御雷神ノ槌', '建御雷神ノ閃光', '摩利支天ノ法', '旌旗翳天ノ覇陣', '星神闘覇', '月詠ノ覇威', '永世ノ天隻', '潔花咲然', '火之迦具土神', '照闇騎行', '破軍星 皇', '破軍騎行', '破邪後輝', '神屋楯比売命', '神羅聖域', '禍津日神ノ謀', '義陣絶刀', '至天ノ御剣', '舞蝶朧月', '虎賁統帥', '覇王征軍', '開闢ノ逆鉾', '飛龍衝天', '高津姫神', '魔弾奏者', '黄泉醜女ノ屍兵', '天甲破山', '天岩戸ノ神域', '波濤ノ剛撃', '一刀ノ伝承', '三十五ノ兵法', '傾国ノ艶姫', '八楯剛陣', '冥国ノ双鎌', '剛毅謀慮', '十死一生', '回天剣舞', '城壁の護り', '天廟斬算', '天穿神滅', '天綾の誓約', '天華爛漫', '天衝破軍槍', '巌流燕返し', '幻渦龍刀', '幽冥主宰大神', '式神ノ冥王', '悪一文字', '慈愛ノ癒術', '払捨刀夢想', '文治興隆', '旋龍突渦', '日輪豊国', '月下闇龍', '朧雲ノ突撃', '根津諏訪流鷹術', '武神八幡陣', '比類なき大将', '氷塊ノ夾撃', '氷瀑ノ封印', '氷瀑ノ封神', '無双英傑', '無空ノ極剣', '無窮天斥陣', '煙霞迷霧', '牙突', '牛鬼ノ攻城', '白銀双鶴', '破城 羅刹', '破軍星', '神谷活心流', '神農医方', '紅蓮ノ刃', '紅蓮ノ刹', '縮地', '聖光ノ遊星', '聖女ノ恩寵', '茅纒之矟ノ煌', '荒破閃神', '葵ノ慈母', '虎巫', '覇王絶世', '見様見真似', '貫殺飛苦無', '轟閻 霹靂火', '銀翼神騎兵', '錘焔ノ空帯', '錘焔ノ藍帯', '風魔ノ夜討', '飛幻忍術', '飛竜星照', '騎神炎山', '騒速ノ神撃', '魔界ノ美姫', '黒衣ノ軍師', '黒飛燕剣', '龍槌閃・惨', '護国王器', '壬生ノ狼牙', '筋骨隆々', '豊恩銘魂', '火槍猛進', '萬宝航跡', '朱印航路', '騎神', '天神旋武', '煉獄ノ英主', '覇道天聖', '天焉神軍', '天戒 五芒星', '天衣無縫陣', '太閤の威光', '天下の采配', '覇国無双', '天征相克', '隠形千里', '影国ノ加護', '明神ノ鈴音', '天啓ノ神撃', '美人剛腕', '傾世ノ華', '思金神ノ深謀', '天凛不抜', '針葉浄美', '舞姫武神', '飛媛舞刀', '火城華憐', '権謀術数射陣', '王花尖剣', '精忠鋼壁', '破軍十六神将', '万物神勇', '八界経略', '閃裂討鬼', '幻像鏡花', '影王絶技', '絶無灰尽', '天地超克', '赤焔ノ絆', '戦華雄渾', '花信風', '虚実ノ理合', '滅塞忍法', '盛興弓箭', '呪法死界', '猛火ノ追撃', '九字ノ呪法', '清廉士道', '天宇受売命', '豊州ノ蠍', '救国ノ軍師', '晴嵐義計', '騎虎神道', '盟王ノ威才', '外道煉獄', '虚松籟', '聖夜ノ慈姫', '嵐下墨炎', '乱界図', '幕天席地', '一世名人', '星宿劫ノ法壁', '鼎国ノ楔姫', '麗将車懸', '救天慈愛', '日輪ノ英妃', '波乱ノ虎', '覇龍滅破陣', '掃天封壁陣', '哀姫星霜', '御家再興ノ秘策', '四神相応ノ天計', '木遁封魔', '宍戸八重垣流', '九国一ノ美才', '前知兵法', '天ノ逆矛', '南界軍王', '弥陀ノ裁剣', '海王ノ碇戟', '四神天道', '四海王道', '慈光望姫', '有楽流', '氷神ノ巫女', '終曲ノ結姫', '草莽ノ聖者', '琳聖風雅', '船手衆ノ極意', '叛逆近景', '華狐', '炎城士魂', 'オプクワ', '王佐ノ才', '国友筒', '水霊ノ加護', '鬼滅刺', '風韻書房', '遁世影武者', '喰代ノ梟忍', '無辜ノ哀炎'];
 
   function kpSkillLink(skillName, rank){
     // 2026-08-15: スキル名が未確認(null)の枠で String(null) がそのまま出て、

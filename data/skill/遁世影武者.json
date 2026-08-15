@@ -1,0 +1,236 @@
+{
+ "name": "遁世影武者",
+ "rank": "B",
+ "baseRate": 50.0,
+ "target": "部隊長",
+ "effectSummary": "B/LV10 確率 50% 部隊長の初期スキルを模倣/対象:部隊長\n①所属部隊の部隊長が持つ初期スキルを模倣する(戦闘スキルのみ)",
+ "categoryLinks": [
+  {
+   "href": "skills-leadermimic.html",
+   "label": "部隊長模倣スキル一覧を見る"
+  }
+ ],
+ "sourceCharacters": [
+  {
+   "name": "霧隠才蔵",
+   "no": "2807",
+   "slot": "S2",
+   "db": "kyoku",
+   "note": [
+    "霧隠才蔵(2807)のsynthesisTable S2枠(2026-08-15)"
+   ]
+  },
+  {
+   "name": "今川氏輝",
+   "no": "2749",
+   "slot": "B",
+   "db": "kyoku",
+   "note": [
+    "今川氏輝(2749)のsynthesisTable B枠(2026-08-15、風林火山.json側の直接列挙から移設)"
+   ]
+  },
+  {
+   "name": "三好義賢",
+   "no": "2368",
+   "slot": "B",
+   "db": "kyoku",
+   "note": [
+    "三好義賢(2368)のsynthesisTable B枠(2026-08-15)"
+   ]
+  },
+  {
+   "name": "舞兵庫",
+   "no": "2409",
+   "slot": "C",
+   "db": "kyoku",
+   "note": [
+    "舞兵庫(2409)のsynthesisTable C枠(2026-08-15)"
+   ]
+  },
+  {
+   "name": "弥助",
+   "no": "2430",
+   "slot": "B",
+   "db": "kyoku",
+   "note": [
+    "弥助(2430)のsynthesisTable B枠(2026-08-15)"
+   ]
+  },
+  {
+   "name": "土居清良",
+   "no": "2435",
+   "slot": "C",
+   "db": "kyoku",
+   "note": [
+    "土居清良(2435)のsynthesisTable C枠(2026-08-15)"
+   ]
+  },
+  {
+   "name": "武田勝頼",
+   "no": "2448",
+   "slot": "S1",
+   "db": "kyoku",
+   "note": [
+    "武田勝頼(2448)のsynthesisTable S1枠(2026-08-15)"
+   ]
+  },
+  {
+   "name": "松平清康",
+   "no": "2745",
+   "slot": "C",
+   "db": "kyoku",
+   "note": [
+    "松平清康(2745)のsynthesisTable C枠(2026-08-15)"
+   ]
+  },
+  {
+   "name": "小西行長",
+   "no": "2747",
+   "slot": "S1",
+   "db": "kyoku",
+   "note": [
+    "小西行長(2747)のsynthesisTable S1枠(2026-08-15)"
+   ]
+  },
+  {
+   "name": "神代勝利",
+   "no": "2756",
+   "slot": "S2",
+   "db": "kyoku",
+   "note": [
+    "神代勝利(2756)のsynthesisTable S2枠(2026-08-15)"
+   ]
+  },
+  {
+   "name": "ザビエル",
+   "no": "2766",
+   "slot": "S1",
+   "db": "kyoku",
+   "note": [
+    "ザビエル(2766)のsynthesisTable S1枠(2026-08-15)"
+   ]
+  },
+  {
+   "name": "今川氏輝",
+   "no": "2768",
+   "slot": "C",
+   "db": "kyoku",
+   "note": [
+    "今川氏輝(2768)のsynthesisTable C枠(2026-08-15)"
+   ]
+  },
+  {
+   "name": "円信院殿",
+   "no": "2771",
+   "slot": "C",
+   "db": "kyoku",
+   "note": [
+    "円信院殿(2771)のsynthesisTable C枠(2026-08-15)"
+   ]
+  },
+  {
+   "name": "百地三太夫",
+   "no": "2773",
+   "slot": "S1",
+   "db": "kyoku",
+   "note": [
+    "百地三太夫(2773)のsynthesisTable S1枠(2026-08-15)"
+   ]
+  },
+  {
+   "name": "芝辻清右衛門",
+   "no": "2777",
+   "slot": "B",
+   "db": "kyoku",
+   "note": [
+    "芝辻清右衛門(2777)のsynthesisTable B枠(2026-08-15)"
+   ]
+  },
+  {
+   "name": "三浦按針",
+   "no": "2785",
+   "slot": "B",
+   "db": "kyoku",
+   "note": [
+    "三浦按針(2785)のsynthesisTable B枠(2026-08-15)"
+   ]
+  },
+  {
+   "name": "近衛信尹",
+   "no": "2787",
+   "slot": "S1",
+   "db": "kyoku",
+   "note": [
+    "近衛信尹(2787)のsynthesisTable S1枠(2026-08-15)"
+   ]
+  },
+  {
+   "name": "加藤段蔵",
+   "no": "2789",
+   "slot": "B",
+   "db": "kyoku",
+   "note": [
+    "加藤段蔵(2789)のsynthesisTable B枠(2026-08-15)"
+   ]
+  },
+  {
+   "name": "安楽庵策伝",
+   "no": "2790",
+   "slot": "B",
+   "db": "kyoku",
+   "note": [
+    "安楽庵策伝(2790)のsynthesisTable B枠(2026-08-15)"
+   ]
+  },
+  {
+   "name": "雪窓院",
+   "no": "2803",
+   "slot": "C",
+   "db": "kyoku",
+   "note": [
+    "雪窓院(2803)のsynthesisTable C枠(2026-08-15)"
+   ]
+  },
+  {
+   "name": "六角定頼",
+   "no": "7018",
+   "slot": "A",
+   "db": "kyoku",
+   "note": [
+    "六角定頼(7018)のsynthesisTable A枠(2026-08-15)"
+   ]
+  },
+  {
+   "name": "宍戸梅軒",
+   "no": "2806",
+   "slot": "A",
+   "db": "kyoku",
+   "note": [
+    "宍戸梅軒(2806)のsynthesisTable A枠(2026-08-15)"
+   ]
+  }
+ ],
+ "notes": [
+  "2026-08-15(黄丸化検証): 風林火山[S](既存ページ)のA枠1次候補がこのスキルであることをixanary.com(skills/遁世影武者)の合成テーブルで確認したため、A-3-9の例外規定(既存S以上ページの移植元はランクに関わらずページ作成対象)にもとづき新規作成。霧隠才蔵(2807)は本来ここへ直接掲載すべき(A-3-12、skill=遁世影武者でafterSkill=風林火山のため)ところ風林火山.json側に直接列挙されていたのを、こちらへ移した。他武将(三好義賢2368・加藤段蔵2789・百地三太夫2773・今川氏輝2768/2749・ザビエル2766・神代勝利2756・近衛信尹2787・安楽庵策伝2790・弥助2430)にも同型の直接列挙が残っている可能性があるが、担当範囲外のため未確認・未修正のまま(申し送り)。",
+  "対象・確率・効果文はixanary.com(skills/遁世影武者)の生HTML(LV10行)から。",
+  "2026-08-15(No.2749黄丸化検証): 今川氏輝(2749)を風林火山.json側の直接列挙からこちらへ移設した(A-3-12)。",
+  "2026-08-15(No.2806黄丸化検証): 宍戸梅軒(2806)A枠は喰代ノ梟忍[A]→遁世影武者[B](skill≠afterSkill)であり、A-3-12によりここへ直接列挙すべきでない。喰代ノ梟忍を新規ページ作成(A-3-9例外、遁世影武者自体が既にページを持つため)しgrantedViaSkillsで参照する形に修正。宍戸梅軒自身はdata/skill/喰代ノ梟忍.jsonのsourceCharactersに記載。"
+ ],
+ "grantedViaSkills": [
+  {
+   "skill": "喰代ノ梟忍",
+   "rank": "A"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "部隊長　確率 50% / 部隊長の初期スキルを模倣(戦闘スキルのみ)"
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "風林火山",
+  "rank": "S"
+ }
+}
