@@ -72,6 +72,9 @@ def parse_level(text):
         body = t.split("対象", 1)[1]
         body = body.strip()[len(target):].strip() if body.strip().startswith(target) else body
     body = re.sub(r"^確率[：:]\s*\+?[\d.]+%\s*/?\s*", "", body).strip()
+    # 効果が複数行にわたるスキルは行を「 / 」でつないでいるので、対象を取り除いた
+    # 残りが「/ 攻撃：22%上昇 / 防御：22%上昇」のように区切りで始まることがある
+    body = body.lstrip("/ ").strip()
     # うちの書式は「防御 580%上昇」。ixanaryの「防御：580%上昇」から全角コロンを外す
     body = re.sub(r"(攻撃|防御|速度|破壊|総攻撃|総防御)[：:]\s*", r"\1 ", body)
     # 末尾に重複して付いてくる「確率：+26%」を落とす(確率は見出し側に出す)
