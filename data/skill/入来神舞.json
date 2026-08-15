@@ -48,15 +48,6 @@
    "db": "kyoku"
   },
   {
-   "name": "新庄局",
-   "no": "2838",
-   "slot": "B",
-   "db": "kyoku",
-   "note": [
-    "新庄局(2838)のsynthesisTable B枠(2026-08-15)"
-   ]
-  },
-  {
    "name": "小笠原長棟",
    "no": "2837",
    "slot": "A",
@@ -66,39 +57,21 @@
    ]
   },
   {
-   "name": "さこの方",
-   "no": "2830",
-   "slot": "A",
-   "db": "kyoku",
-   "note": [
-    "さこの方(2830)のsynthesisTable A枠(2026-08-15)"
-   ]
-  },
-  {
-   "name": "佐々木ユキ",
-   "no": "2814",
-   "slot": "C",
-   "db": "kyoku",
-   "note": [
-    "佐々木ユキ(2814)のsynthesisTable C枠(2026-08-15)"
-   ]
-  },
-  {
    "name": "奈多姫",
    "no": "2805",
-   "slot": "A",
+   "slot": "C・S1",
    "db": "kyoku",
    "note": [
-    "奈多姫(2805)のsynthesisTable A枠(2026-08-15)"
+    "奈多姫(2805)のsynthesisTable C枠・S1枠(2026-08-15黄丸化検証で訂正、この2枠のみskill=入来神舞。A枠はskill=九国一ノ美才→afterSkill=入来神舞のためA-3-12により九国一ノ美才側に記載すべきで、誤ってAと記載されていたのをC・S1に修正)"
    ]
   },
   {
    "name": "雪窓院",
    "no": "2803",
-   "slot": "A",
+   "slot": "A・B",
    "db": "kyoku",
    "note": [
-    "雪窓院(2803)のsynthesisTable A枠(2026-08-15)"
+    "雪窓院(2803)のsynthesisTable A枠・B枠の両方(ともにskill=入来神舞→afterSkill=飛蝶野分。ixanary.com/skills/入来神舞とixawiki BushoCard/2803雪窓院の合成候補テーブルで確認、2026-08-15黄丸化検証でA単独からA・Bに訂正)"
    ]
   }
  ],
@@ -110,6 +83,10 @@
   {
    "skill": "転歌",
    "rank": "A"
+  },
+  {
+   "skill": "九国一ノ美才",
+   "rank": "S"
   }
  ],
  "ownHiddenCandidate": {

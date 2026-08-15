@@ -5,7 +5,7 @@
  "cost": 2.0,
  "troop": null,
  "sub": "",
- "effect": null,
+ "effect": "敵軍総攻撃力÷敵軍武将人数×100%を防御力に加算する(模倣不可)",
  "furigana": "あやごぜん",
  "illustrator": "塚本陽子",
  "imageFull": "assets/img/characters/no2796_full.png",
@@ -41,8 +41,10 @@
    "afterRank": "B",
    "target": "槍弓",
    "rate": "35%",
-   "effectShort": "攻撃 42%上昇",
-   "afterEffectShort": "攻撃 42%上昇"
+   "effectShort": "攻撃 42%上昇+破壊 15%上昇",
+   "afterTarget": "槍弓",
+   "afterRate": "35%",
+   "afterEffectShort": "攻撃 42%上昇+破壊 15%上昇"
   },
   {
    "slot": "B",
@@ -52,10 +54,10 @@
    "afterRank": "SS",
    "target": "全",
    "rate": "50%",
-   "effectShort": "攻撃 67%上昇",
+   "effectShort": "攻撃 67%上昇+防御 67%上昇",
    "afterTarget": "全",
    "afterRate": "50%",
-   "afterEffectShort": "攻撃 99.9%上昇 防御 99.9%上昇 部隊消費コストを0.5低下 (特殊効果は模倣不可)"
+   "afterEffectShort": "攻撃 99.9%上昇+防御 99.9%上昇(部隊消費コストを0.5低下・特殊効果は模倣不可)"
   },
   {
    "slot": "C",
@@ -87,7 +89,7 @@
    "afterRank": "SS",
    "target": "全",
    "rate": "100%",
-   "effectShort": "攻撃 70%上昇 防御 70%上昇",
+   "effectShort": "攻撃 70%上昇+防御 70%上昇(このスキルを所持する武将の全スキルの卓越確率に25%を加算する(模倣不可))",
    "afterTarget": "全",
    "afterRate": "35%",
    "afterEffectShort": "攻撃 40%上昇+防御 40%上昇(部隊内レアリティS以上のスキル個数×20%加算)"
@@ -95,9 +97,13 @@
  ],
  "notes": [
   "ixanary.com(cards/2796 と skills/義神ノ抱擁)およびixawiki(BushoCard/2796綾御前)で登録(2026-08-14)。",
-  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
-  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
-  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
-  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
- ]
+  "統率はカード画像のバッジで確認し、ixanaryのカードページ埋め込みデータ(yari/yumi/kiba/heiki全てA)と一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値2700(=capacity)を採用。カード画像は天限突破状態(★最大)のスクリーンショットのため0/4900と表示されるが、攻撃/防御/兵法の初期値(990/990/490.0)はixanaryの★0-0値と一致しており矛盾ではない(2793と同型のケース)。",
+  "自身の初期スキル「義神ノ抱擁」のskillDetail/trTable(確率40%・敵軍総攻撃力÷敵軍武将人数×100%を防御力に加算)はixanary.com/skills/義神ノ抱擁のLV10表記と完全一致することを確認済み(修正不要)。effect(top)がnullだったため補完。troopはこのスキルが%系の攻防破速上昇を持たないためnullのまま維持(既存の2850パターンに倣う)。",
+  "合成候補(A/B/C/S1/S2の5枠)はixanary.com/skills/義神ノ抱擁とixawiki(BushoCard/2796綾御前のスキル追加合成表)の2ソースで全枠一致を確認。",
+  "章は情報源に記載が無いため未確認。",
+  "2026-08-15黄丸化検証: A候補「絢鳥」のeffectShortに破壊15%上昇の記載漏れ(afterTarget/afterRateも未記載だったため自己参照として補完)、B候補「戦陣 無双」のeffectShortに防御67%上昇の記載漏れ、S2候補「鬼滅刺」のeffectShortに卓越確率+25%加算(模倣不可)の記載漏れがあり、いずれもixanary.com該当スキル個別ページで確認し補完。afterEffectShort内のスペース区切りは他行と揃えて「+」区切り・注記は()内にまとめる形に統一。",
+  "data/skill/{無双英傑,布都御魂ノ鬨}.jsonのsourceCharactersに綾御前(2796)がB/S2の各slotで正しく登録済みであることを確認した(修正不要)。"
+ ],
+ "reviewedOk": true
 }

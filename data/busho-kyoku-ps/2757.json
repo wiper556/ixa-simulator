@@ -3,9 +3,9 @@
  "no": "2757",
  "ch": "未確認",
  "cost": 0.0,
- "troop": "槍砲器攻",
+ "troop": "槍砲器攻防",
  "sub": "",
- "effect": "攻撃 45%上昇",
+ "effect": "攻撃 45%上昇+防御 45%上昇(部隊コスト10以下で効果2倍)",
  "furigana": "からさわげんば",
  "illustrator": "BISAI",
  "imageFull": "assets/img/characters/no2757_full.png",
@@ -24,12 +24,12 @@
   "ki": "S"
  },
  "initialSkill": "飛び六方",
- "skillDetail": "A/LV10 確率 50% 攻撃 45%上昇/対象:槍砲器\n①攻撃が45%上昇する",
+ "skillDetail": "A/LV10 確率 50% 攻撃 45%上昇/対象:槍砲器\n①攻撃 45%上昇する\n②防御 45%上昇する\n③部隊コスト10以下で効果2倍となる",
  "trTable": [
   {
    "level": "LV10",
    "points": "-",
-   "effect": "槍砲器　確率 50% / 攻撃 45%上昇"
+   "effect": "槍砲器　確率 50% / 攻撃 45%上昇+防御 45%上昇(部隊コスト10以下で効果2倍)"
   }
  ],
  "synthesisTable": [
@@ -41,10 +41,10 @@
    "afterRank": "D",
    "target": "全",
    "rate": "24%",
-   "effectShort": "攻撃 38%上昇",
+   "effectShort": "攻撃 38%上昇+防御 38%上昇",
    "afterTarget": "全",
    "afterRate": "37%",
-   "afterEffectShort": "攻撃 22%上昇"
+   "afterEffectShort": "攻撃 22%上昇+防御 22%上昇"
   },
   {
    "slot": "B",
@@ -54,7 +54,7 @@
    "afterRank": "A",
    "target": "砲器",
    "rate": "36%",
-   "effectShort": "攻撃 36%上昇",
+   "effectShort": "攻撃 36%上昇+破壊 50%上昇",
    "afterTarget": "全",
    "afterRate": "100%",
    "afterEffectShort": "部隊内全武将が持つ全スキルに「器」対象を追加する(兵科対象スキル限定・模倣不可)"
@@ -67,8 +67,8 @@
    "afterRank": "B",
    "target": "槍弓器",
    "rate": "100%",
-   "effectShort": "攻撃 25%上昇",
-   "afterEffectShort": "攻撃 25%上昇"
+   "effectShort": "攻撃 25%上昇+速度 40%上昇(部隊内で最も速い兵士速度で移動)",
+   "afterEffectShort": "攻撃 25%上昇+速度 40%上昇(部隊内で最も速い兵士速度で移動)"
   },
   {
    "slot": "S1",
@@ -78,8 +78,8 @@
    "afterRank": "A",
    "target": "槍砲器",
    "rate": "50%",
-   "effectShort": "攻撃 45%上昇",
-   "afterEffectShort": "攻撃 45%上昇"
+   "effectShort": "攻撃 45%上昇+防御 45%上昇(部隊コスト10以下で効果2倍)",
+   "afterEffectShort": "攻撃 45%上昇+防御 45%上昇(部隊コスト10以下で効果2倍)"
   },
   {
    "slot": "S2",
@@ -100,6 +100,11 @@
   "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
   "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
   "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
-  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
- ]
+  "章は情報源に記載が無いため未確認。",
+  "2026-08-15黄丸化検証: カード画像はスキルLV1形式(飛び六方LV1)。4隅バッジ(槍/弓/馬=A、器=S)を個別ズームで再確認し一致。ステータス(攻1000/防1000/兵法520/成長+28/+28/+2.5/コスト0/指揮1500)はixanary生HTML(cards/2757)と一致。",
+  "初期スキル「飛び六方」の実際の効果(ixanary生HTML LV10)は「攻撃45%上昇+防御45%上昇+部隊コスト10以下で効果2倍」で、防御成分と条件文が抜け落ちていたため追記(troop/effect/skillDetail/trTableを修正)。",
+  "synthesisTableの5枠(A/B/C/S1/S2)をixanary.com(skills/飛び六方、1次候補・2次候補S1)とixawiki.com(BushoCard/2757唐沢玄蕃、合成テーブル)の2ソースで突き合わせ、スロット構成自体は完全一致を確認した。ただしeffectShortの中身がA(暁光→屈指の勇将、防御成分抜け)/B(衝角、破壊50%上昇抜け)/C(猿臂ノ術、速度40%上昇+移動速度効果抜け)/S1(飛び六方、防御+条件抜け)の4枠で不完全だったため、各スキルのixanary個別ページ(skills/暁光, skills/衝角, skills/猿臂ノ術, skills/武装商船, skills/屈指の勇将, skills/鉄砲商人)を直接確認し全て修正した。B/S2のafterSkill(武装商船/鉄砲商人)は元々完全一致していた。",
+  "候補スキル(暁光/衝角/猿臂ノ術/飛び六方/武装商船/屈指の勇将/鉄砲商人)は全てAランク以下でD-A3-9のskills.html独自ページ作成対象外、かつどのafterSkillもS以上ではないため例外規定にも該当しない。data/skill/配下に該当ファイルが無いことを確認済み(逆引き対象なし)。"
+ ],
+ "reviewedOk": true
 }

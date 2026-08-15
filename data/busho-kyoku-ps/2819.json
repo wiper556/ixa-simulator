@@ -3,9 +3,9 @@
  "no": "2819",
  "ch": "未確認",
  "cost": 1.0,
- "troop": null,
+ "troop": "特",
  "sub": "",
- "effect": null,
+ "effect": "所持で「騎馬鉄砲」の兵士攻撃力+1・防御力+1(重複不可)",
  "furigana": "くにともぜんべえ",
  "illustrator": "鏑木康隆",
  "imageFull": "assets/img/characters/no2819_full.png",
@@ -24,7 +24,7 @@
   "ki": "S"
  },
  "initialSkill": "国友筒",
- "skillDetail": null,
+ "skillDetail": "S/LV10 確率 -% 所持で「騎馬鉄砲」の兵士攻撃力+1 兵士防御力+1/対象:全\n①このカードを所持していると「騎馬鉄砲」の兵士攻撃力が+1 兵士防御力が+1される(重複不可・効果範囲は所持者部隊の兵士のみ)",
  "trTable": [
   {
    "level": "LV10",
@@ -96,10 +96,14 @@
   }
  ],
  "notes": [
-  "ixanary.com(cards/2819 と skills/国友筒)およびixawiki(BushoCard/2819国友善兵衛)で登録(2026-08-14)。",
-  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
-  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
-  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
-  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
- ]
+  "ixanary.com(cards/2819 と skills/国友筒)およびixawiki(BushoCard/2819国友善兵衛)で登録(2026-08-14)。カードはスキルLV1表記のためB-00に従い画像から読めるのは名前/No./統率/スキル名/攻防兵法初期値/覇の有無のみとし、他はixanary/ixawikiで裏取りした。",
+  "統率はカード画像のバッジをズームして確認(槍C/馬C/弓C/器S)。ixanaryの埋め込みJSON・ixawikiのカードページと3点とも一致(2026-08-15)。",
+  "コスト1・指揮兵数1200(ixanary★0-0)・攻防兵法初期値550/550/470.0・成長値+15/+15/+2.0はixanary/ixawiki双方で一致確認。",
+  "troop/effect/skillDetailが未記入(null)のまま残っていたため今回埋めた。国友筒はixanaryのskillStrで「特.国友筒.S」(特技扱い、攻撃/防御スキルではない)。効果は確率・対象の概念を持たないカード所持効果(「騎馬鉄砲」の兵士攻撃力/防御力+1)のため、troopは同種の「特」表記に合わせ「特」とした。skillDetailはixanaryカードページのLV10生テキストと一致、模倣不可等の欠落は無かった。TR段階なし(LV10のみ)。",
+  "合成候補はixanary(skills/国友筒の生HTML)とixawiki(BushoCard/2819国友善兵衛内の合成テーブル)の2ソースで1次・2次とも完全一致を確認(2026-08-15)。A=戦陣 破軍→天穿神滅、B/C=火之迦具土神(自己参照)、S1=紅蓮ノ刹→猛火ノ追撃、S2=戦陣 神楽→遠呂智ノ閃光。slot自体は変更なし。",
+  "data/skill/火之迦具土神.jsonでslot Bのみ記載だったのをB・Cに訂正(自身の行がB・C両方とも火之迦具土神のため)。data/skill/猛火ノ追撃.json・遠呂智ノ閃光.jsonでS1枠/S2枠に直接列挙されていたが、各行のskillは紅蓮ノ刹/戦陣 神楽でありafterSkillが列挙先だったため、A-3-12に従い削除(既存のgrantedViaSkills経由で辿れる)。data/skill/天穿神滅.jsonのA枠直接列挙も同様に削除済み(No.2820の検証時にまとめて対応)。",
+  "初期スキル国友筒(S)は自身のsynthesisTableに自己参照が無いため、A-3-9に従いdata/skill/国友筒.jsonを新規作成しslot:移植不可で記載。characters-kyoku-ps.htmlのKP_LINKED_SKILLS配列(手動管理ファイル)への追加は担当範囲外のため未実施、申し送り。",
+  "章は情報源(ixanary/ixawiki)に記載が無いため未確認。ixagno.blog.fc2.comで「国友善兵衛」を検索(13件)したが、章番号を明記した記事は見つからなかった。"
+ ],
+ "reviewedOk": true
 }

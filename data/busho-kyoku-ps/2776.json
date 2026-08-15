@@ -5,7 +5,7 @@
  "cost": 3.0,
  "troop": "全防",
  "sub": "",
- "effect": "防御 72%上昇",
+ "effect": "防御 70%上昇(所属部隊は拠点の加勢上限を超えて加勢できる・重複上限4部隊まで)",
  "furigana": "ほそかわただとし",
  "illustrator": "MASANORI KAMATA",
  "imageFull": "assets/img/characters/no2776_full.png",
@@ -24,12 +24,12 @@
   "ki": "A"
  },
  "initialSkill": "名門ノ戒律",
- "skillDetail": "A/LV10 確率 42% 防御 72%上昇/対象:全\n①防御が72%上昇する",
+ "skillDetail": "A/LV10 確率 42% 防御 70%上昇/対象:全\n①防御が70%上昇する\n②所属部隊は拠点の加勢上限を超えて加勢できる(重複上限4部隊まで)",
  "trTable": [
   {
    "level": "LV10",
    "points": "-",
-   "effect": "全　確率 42% / 防御 72%上昇"
+   "effect": "全　確率 42% / 防御 70%上昇(所属部隊は拠点の加勢上限を超えて加勢できる・重複上限4部隊まで)"
   }
  ],
  "synthesisTable": [
@@ -41,10 +41,10 @@
    "afterRank": "F",
    "target": "槍",
    "rate": "16%",
-   "effectShort": "防御 (コストx5) %上昇",
+   "effectShort": "防御 (コストx5) %上昇(武将のコストで効果が変化)",
    "afterTarget": "槍",
    "afterRate": "16%",
-   "afterEffectShort": "槍攻 7.5%上昇"
+   "afterEffectShort": "槍攻 7.5%上昇(武将のコストで効果が変化)"
   },
   {
    "slot": "B",
@@ -54,8 +54,8 @@
    "afterRank": "D",
    "target": "全",
    "rate": "37%",
-   "effectShort": "攻撃 22%上昇",
-   "afterEffectShort": "攻撃 22%上昇"
+   "effectShort": "攻撃 22%上昇+防御 22%上昇",
+   "afterEffectShort": "攻撃 22%上昇+防御 22%上昇"
   },
   {
    "slot": "C",
@@ -78,8 +78,8 @@
    "afterRank": "B",
    "target": "全",
    "rate": "30%",
-   "effectShort": "防御 7.5%上昇",
-   "afterEffectShort": "防御 7.5%上昇"
+   "effectShort": "防御 7.5%上昇(部隊ランクボーナスで効果が変化)",
+   "afterEffectShort": "防御 7.5%上昇(部隊ランクボーナスで効果が変化)"
   },
   {
    "slot": "S2",
@@ -89,7 +89,7 @@
    "afterRank": "SS",
    "target": "全",
    "rate": "50%",
-   "effectShort": "攻撃 67%上昇",
+   "effectShort": "攻撃 67%上昇+防御 67%上昇",
    "afterTarget": "全",
    "afterRate": "50%",
    "afterEffectShort": "攻撃 99.9%上昇 防御 99.9%上昇 部隊消費コストを0.5低下 (特殊効果は模倣不可)"
@@ -100,6 +100,15 @@
   "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
   "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
   "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
-  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
- ]
+  "2026-08-15黄丸化検証: カード画像のスキル欄が「名門ノ戒律LV1」表記(育成前カード)であることに気付いた。B-00によりLV1画像から効果量は読めないため、LV10の効果値をixanary.com(cards/2776生HTML)とixawiki.com(BushoCard/2776細川忠利)の2ソースで確認したところ、防御上昇率がixanary=72%・ixawiki=70%で食い違った。ixagno.blog.fc2.com(blog-entry-6699、本カード専用記事)に埋め込まれた実機スクリーンショット画像(blog-imgs-163.fc2.com/.../20250629194339ea9.jpg)を14倍ズームで直接読み取ったところ「防御:70%上昇」と明記されており、ixawiki+実機スクショの2ソースで70%が正、ixanaryの72%表記が誤りと判断して修正した(既存registered値の72%はixanaryを鵜呑みにした誤りだった)。",
+  "skillDetail/trTable/effectに「所属部隊は拠点の加勢上限を超えて加勢できる(重複上限4部隊まで)」の第2効果が抜けていたのを発見し追記(ixanary/ixawiki/ixagno実機スクショの3ソース完全一致)。",
+  "synthesisTable B(屈指の勇将)は「攻撃22%上昇」のみで「防御22%上昇」が、S2(戦陣 無双)は「攻撃67%上昇」のみで「防御67%上昇」がそれぞれ抜けていたのを発見し追記(No.2769保科正之検証時に確認済みの同一スキルの値を再利用)。A(槍隊守備→槍隊急襲)とS1(洞察)には「武将のコストで効果が変化」「部隊ランクボーナスで効果が変化」という計算式の注記が抜けていたのを発見し追記(ixanary.com/skills/槍隊守備・洞察・槍隊急襲の各LV10生HTMLで確認)。",
+  "synthesisTable全5スロットをixanary(cards/2776のskillsリンク+skills/名門ノ戒律の合成テーブル)とixawiki(BushoCard/2776細川忠利の合成候補テーブル)の2ソースで突き合わせ、スロット・afterSkill・rank全て一致を確認(2026-08-15)。ixagno blog-entry-6699の合成テーブル(第一〜第三・S1・S2)とも一致(3ソース目)。",
+  "天穿神滅/戦陣 破軍/無双英傑のsourceCharactersに細川忠利(2776)が正しいslot(C/C/S2)で登録済みであることをgrepで確認済み。",
+  "候補スキルのうち槍隊守備(F)/屈指の勇将(D)/洞察(B)/槍隊急襲(F)は独自ページ無し(通常は対象外のランク、afterSkillも全て既存ページ無しスキルのためA-3-9の例外規定の対象外)。",
+  "TR段階: ixanary/ixawiki両方でLV1/LV10のみでTR記載なしを確認(TRなしスキル)。",
+  "章はixanary(cards/2776, skills/名門ノ戒律)・ixawiki(BushoCard/2776細川忠利)に記載無し。ixagno.blog.fc2.com(blog-entry-6699、本カード専用記事)を確認し「2019年10月追加の限定極武将」という時期は判明したが「◯章」形式の章番号記載は見つからず未確認のまま。",
+  "rankGrades(槍S/馬A/弓A/器A)はカード画像4隅バッジを個別ズームで再照合しixawikiの統率力表と一致することを確認(2026-08-15再検証)。槍のSバッジは百地三太夫(No.2773)の器バッジと同一の金色S+茶色リング意匠で、通常のA/Bバッジ(赤/橙の縁取りのみ)とは明確に異なる独立したデザインであることを確認した(装飾ではなく正当なSランク表記)。"
+ ],
+ "reviewedOk": true
 }

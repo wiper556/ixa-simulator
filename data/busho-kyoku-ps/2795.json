@@ -41,7 +41,7 @@
    "afterRank": "SS",
    "target": "全",
    "rate": "25%",
-   "effectShort": "攻撃 42%上昇",
+   "effectShort": "攻撃 42%上昇+防御 42%上昇",
    "afterTarget": "全",
    "afterRate": "42%",
    "afterEffectShort": "攻撃 25.39%上昇(部隊総コストで変動、TRなし)"
@@ -66,8 +66,8 @@
    "afterSkill": "神光征軍",
    "afterRank": "SS",
    "target": "全",
-   "rate": "50%",
-   "effectShort": "攻撃 50%上昇",
+   "rate": "50%/100%",
+   "effectShort": "攻撃 50%上昇(確率50%)+速度 50%上昇(確率100%)",
    "afterTarget": "全",
    "afterRate": "100%",
    "afterEffectShort": "攻撃 90%上昇+速度 200%上昇(TRなし)"
@@ -93,15 +93,19 @@
    "afterRank": "A",
    "target": "全",
    "rate": "100%",
-   "effectShort": "攻撃 35%上昇",
-   "afterEffectShort": "攻撃 35%上昇"
+   "effectShort": "攻撃 35%上昇+防御 35%上昇",
+   "afterEffectShort": "攻撃 35%上昇+防御 35%上昇"
   }
  ],
  "notes": [
   "ixanary.com(cards/2795 と skills/示現流)およびixawiki(BushoCard/2795東郷重位)で登録(2026-08-14)。",
-  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
-  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
-  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
-  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
- ]
+  "統率はカード画像のバッジで確認し、ixawikiのカードページ(槍S・弓A・馬A・器A)と一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。カード画像も0/3300で一致(このカードは限界突破していない状態のスクリーンショット)。",
+  "自身の初期スキル「示現流」のskillDetail/trTable(確率45%・攻撃70%上昇・追加ダメージ20)はixanary.com/skills/示現流のLV10表記と完全一致することを確認済み(修正不要)。",
+  "合成候補(A/B/C/S1/S2の5枠)はixanary.com/skills/示現流とixawiki(BushoCard/2795東郷重位のスキル追加合成表)の2ソースで全枠一致を確認。",
+  "章は情報源に記載が無いため未確認。",
+  "2026-08-15黄丸化検証: A候補「戦陣 阿吽」のeffectShortに防御42%上昇の記載漏れ、C候補「戦陣 一閃」のeffectShortに速度50%上昇(確率100%)の記載漏れ、S2候補(自己参照)「眠り猫」のeffectShort/afterEffectShortに防御35%上昇の記載漏れがあり、いずれもixanary.com該当スキル個別ページで確認し補完。afterSkill「覇王征軍」の afterEffectShort「攻撃25.39%上昇」はixanaryの合成テーブルには数式{(0.25+コスト^6/(4×16^6))×100}%のみでサンプル数値の記載が無く、既存値(cost=8で逆算すると一致)を裏取りできる一次情報が見つからなかったため変更せず維持(ixagno.blog.fc2.comでも該当記事は確認できず)。",
+  "data/skill/{覇王征軍,天穿神滅,神光征軍,布都御魂ノ鬨}.jsonのsourceCharactersに東郷重位(2795)がA/B/C/S1の各slotで正しく登録済みであることを確認した(修正不要)。"
+ ],
+ "reviewedOk": true
 }

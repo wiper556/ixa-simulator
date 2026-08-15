@@ -21,31 +21,23 @@
    "slot": "B"
   },
   {
-   "name": "小笠原長棟",
-   "no": "2837",
-   "slot": "B",
-   "db": "kyoku",
-   "note": [
-    "小笠原長棟(2837)のsynthesisTable B枠(2026-08-15)"
-   ]
-  },
-  {
-   "name": "国友善兵衛",
-   "no": "2819",
+   "name": "角隈石宗",
+   "no": "2811",
    "slot": "S1",
    "db": "kyoku",
    "note": [
-    "国友善兵衛(2819)のsynthesisTable S1枠(2026-08-15)"
+    "角隈石宗(2811)のsynthesisTable S1枠(2026-08-15、自己参照)"
    ]
+  }
+ ],
+ "grantedViaSkills": [
+  {
+   "skill": "呪法死界",
+   "rank": "S"
   },
   {
-   "name": "角隈石宗",
-   "no": "2811",
-   "slot": "A",
-   "db": "kyoku",
-   "note": [
-    "角隈石宗(2811)のsynthesisTable A枠(2026-08-15)"
-   ]
+   "skill": "紅蓮ノ刹",
+   "rank": "S"
   }
  ],
  "ownHiddenCandidate": {
@@ -60,6 +52,8 @@
   }
  ],
  "notes": [
-  "45do.info生HTML確認(https://45do.info/ordinary/0073/): skiladd_wrapのランク表記(SSS)とspec_wrap内バッジ表記(SS)が不一致だったためskiladd_wrap(候補一覧表)側を採用。ixanary.com(スキルページog:title)もSSSで一致(2026-08-02、伊達輝宗1260検証時に重複登録[旧rank:SS版]を発見しここへ統合)。三郎信長(No.1249)分の重複登録はtarget:\"槍・弓・馬\"と誤記されていたが、ixanary.com生HTML(2026-08-02再確認)で対象は「全」と確定したためこちらに統合"
+  "45do.info生HTML確認(https://45do.info/ordinary/0073/): skiladd_wrapのランク表記(SSS)とspec_wrap内バッジ表記(SS)が不一致だったためskiladd_wrap(候補一覧表)側を採用。ixanary.com(スキルページog:title)もSSSで一致(2026-08-02、伊達輝宗1260検証時に重複登録[旧rank:SS版]を発見しここへ統合)。三郎信長(No.1249)分の重複登録はtarget:\"槍・弓・馬\"と誤記されていたが、ixanary.com生HTML(2026-08-02再確認)で対象は「全」と確定したためこちらに統合",
+  "2026-08-15(黄丸化検証): 角隈石宗(2811)のslotが「A」になっていたが、synthesisTableのA/B枠は呪法死界[S]→猛火ノ追撃[SSS](skill≠afterSkill)でありA-3-12によりここへ直接列挙すべきでない。S1枠は猛火ノ追撃の自己参照のため、こちらを正しいslotとして修正した(A表記は削除)。grantedViaSkillsに呪法死界[S]・紅蓮ノ刹[S]を追加(いずれも角隈石宗のA/B・S2枠から確認、他武将のsourceCharacters個別チェックは今回のスコープ外のため未実施)。",
+  "2026-08-15(No.2819黄丸化検証): 国友善兵衛(2819)がS1枠に直接列挙されていたが、synthesisTable S1行のskillは紅蓮ノ刹でありafterSkillが本スキルのため同種の誤り。grantedViaSkillsの紅蓮ノ刹経由で辿れるためsourceCharactersから削除(紅蓮ノ刹側には既にS1枠で記載済み)。"
  ]
 }

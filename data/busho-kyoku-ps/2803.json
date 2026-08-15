@@ -5,7 +5,7 @@
  "cost": 3.5,
  "troop": null,
  "sub": "",
- "effect": null,
+ "effect": "所属部隊の部隊長が持つ模倣可能な初期スキルを1.1倍に強化して模倣する(TRなし)",
  "furigana": "せっそういん",
  "illustrator": "紺藤ココン",
  "imageFull": "assets/img/characters/no2803_full.png",
@@ -99,10 +99,13 @@
  ],
  "notes": [
   "ixanary.com(cards/2803 と skills/入来神舞)およびixawiki(BushoCard/2803雪窓院)で登録(2026-08-14)。",
-  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
-  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
-  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
-  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。",
-  "2026-08-15検証: trTableが「効果文　確率X%」の逆順+読点混入だったため「対象　確率X% / 効果」の順に直した(data/skill/木遁封魔.jsonを手本)。skillDetailもnullだったため補完。C枠(木遁封魔→遁世影武者)のafter系がnullだったため、ixanary.com(skills/木遁封魔および/遁世影武者)で確認して埋めた(遁世影武者B: 対象部隊長 確率50% 部隊長の初期スキルを模倣(戦闘スキルのみ))。"
- ]
+  "統率はカード画像のバッジで確認し、ixanaryのカードページ埋め込みデータ(yari:A/yumi:S/uma:A/ki:A)と一致することを見た(4隅バッジを個別ズームで再確認、D-01)。",
+  "指揮兵数はixanaryの★0-0の値3700を採用(cost 3.5・capacity 3700もixanaryと一致)。",
+  "自身の初期スキル「入来神舞」のskillDetail/trTable(確率55%・部隊長の模倣可能な初期スキルを1.1倍に強化して模倣・TRなし)はixanary.com/skills/入来神舞のLV10表記と完全一致することを確認済み(修正不要)。effect(top)がnullだったため補完。",
+  "合成候補(A/B/C/S1/S2の5枠)はixanary.com/skills/入来神舞とixawiki(BushoCard/2803雪窓院のスキル追加合成表)の2ソースで全枠一致を確認(A・Bは入来神舞の自己参照→飛蝶野分、Cは木遁封魔→遁世影武者、S1は飛蝶野分→風狂幻術、S2は宿木の自己参照)。numeric値(rate/target/effectShort/afterEffectShort)もそれぞれの候補スキル個別ページ(入来神舞・飛蝶野分・木遁封魔・遁世影武者)の生HTMLで裏取りし、既存データと一致することを確認した(修正不要)。",
+  "章は情報源に記載が無いため未確認。",
+  "2026-08-15検証(前回作業分): trTableが「効果文　確率X%」の逆順+読点混入だったため「対象　確率X% / 効果」の順に直した(data/skill/木遁封魔.jsonを手本)。skillDetailもnullだったため補完。C枠(木遁封魔→遁世影武者)のafter系がnullだったため、ixanary.com(skills/木遁封魔および/遁世影武者)で確認して埋めた。",
+  "2026-08-15黄丸化検証(今回): data/skill/入来神舞.jsonのsourceCharactersで雪窓院(2803)がslot:Aのみだったが、実際はA・Bの両方で入来神舞の自己参照のためslot:A・Bに修正。data/skill/飛蝶野分.jsonでは雪窓院(2803)がslot:Aとして直接列挙されていたが、A枠はskill=入来神舞→afterSkill=飛蝶野分という別の関係(このファイル自身の既存ルールに従えばgrantedViaSkills経由で扱うべき関係)であり、雪窓院が飛蝶野分を直接持つのはS1枠のみだったため、slotをAからS1に訂正した。"
+ ],
+ "reviewedOk": true
 }

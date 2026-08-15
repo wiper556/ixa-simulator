@@ -24,12 +24,12 @@
   "ki": "S"
  },
  "initialSkill": "宍戸八重垣流",
- "skillDetail": "S/LV10 確率 52% 攻撃 95%上昇/対象:槍砲器\n①攻撃が95%上昇する",
+ "skillDetail": "S/LV10 確率 52% 攻撃 95%上昇/対象:槍砲器\n①攻撃が95%上昇する\n②強襲専用部隊に配置時この武将の部隊コスト消費を-3する(模倣不可・コスト減算はこの武将のコスト分まで)",
  "trTable": [
   {
    "level": "LV10",
    "points": "-",
-   "effect": "槍砲器　確率 52% / 攻撃 95%上昇"
+   "effect": "槍砲器　確率 52% / 攻撃 95%上昇(強襲専用部隊配置時コスト消費-3・模倣不可)"
   }
  ],
  "synthesisTable": [
@@ -41,10 +41,10 @@
    "afterRank": "B",
    "target": "全",
    "rate": "45%",
-   "effectShort": "攻撃 70%上昇",
-   "afterTarget": null,
-   "afterRate": null,
-   "afterEffectShort": null
+   "effectShort": "攻撃 70%上昇(自部隊同時攻撃時この武将分をコストから除外・模倣不可・重複不可)",
+   "afterTarget": "部隊長",
+   "afterRate": "50%",
+   "afterEffectShort": "部隊長の初期スキルを模倣(戦闘スキルのみ)"
   },
   {
    "slot": "B",
@@ -85,12 +85,12 @@
    "rank": "A",
    "afterSkill": "鉄砲商人",
    "afterRank": "A",
-   "target": null,
-   "rate": null,
-   "effectShort": null,
-   "afterTarget": null,
-   "afterRate": null,
-   "afterEffectShort": null
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "部隊内全武将の全スキルに「器」対象を追加(兵科対象スキル限定・模倣不可)",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "部隊内全武将の全スキルに「砲」対象を追加(兵科対象スキル限定・模倣不可)"
   }
  ],
  "notes": [
@@ -98,6 +98,8 @@
   "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
   "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
   "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
-  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
- ]
+  "章は情報源に記載が無いため未確認。ixanary.com/ixawiki.comのカードページに記載が無く未確認のまま。",
+  "2026-08-15(黄丸化検証): rankGrades・攻防兵法・コスト・指揮兵数をixanary.com(cards/2806)とixawiki.com(BushoCard/2806宍戸梅軒)の生HTMLで再照合し完全一致を確認。skillDetail/trTableが「攻撃95%上昇」で切れており「強襲専用部隊に配置時この武将の部隊コスト消費を-3する(模倣不可・コスト減算はこの武将のコスト分まで)」が欠落していたため生HTMLで補完(data/skill/宍戸八重垣流.jsonも同様に修正、コスト減少一覧へのcategoryLinksも追加)。synthesisTable全5行をixanary(skills/宍戸八重垣流)とixawiki(BushoCard/2806)の合成候補テーブル2ソースで突き合わせ完全一致を確認(A=喰代ノ梟忍[A]→遁世影武者[B]、B/C/S1は自己参照、S2=武装商船[A]→鉄砲商人[A])。A行のafter系フィールドがnullだったため遁世影武者の実際の性能で補完。喰代ノ梟忍[A]は既存ページ(遁世影武者、2026-08-15にNo.2807検証で新規作成済み)の移植元のため新規ページを作成(A-3-9例外)。遁世影武者側の直接列挙(A-3-12違反)を削除しgrantedViaSkillsに変更(ただしこのファイルは他エージェントとの並行編集で頻繁に書き換わっており、削除が再度巻き戻る事象を複数回確認、最終的に手動で再修正して確定)。reviewedOk:trueに更新。"
+ ],
+ "reviewedOk": true
 }

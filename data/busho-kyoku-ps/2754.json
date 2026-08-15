@@ -5,7 +5,7 @@
  "cost": 3.5,
  "troop": "槍弓馬器攻",
  "sub": "",
- "effect": "攻撃 90%上昇",
+ "effect": "攻撃 90%上昇+防御 90%上昇(姫武将にのみ効果)",
  "furigana": "はやかわどの",
  "illustrator": "木下月乃",
  "imageFull": "assets/img/characters/no2754_full.png",
@@ -24,12 +24,12 @@
   "ki": "A"
  },
  "initialSkill": "赤鳥ノ舞",
- "skillDetail": "A/LV10 確率 37% 攻撃 90%上昇/対象:槍弓馬器\n①攻撃が90%上昇する",
+ "skillDetail": "A/LV10 確率 37% 攻撃 90%上昇+防御 90%上昇/対象:槍弓馬器\n①攻撃・防御が90%上昇する(姫武将にのみ効果)",
  "trTable": [
   {
    "level": "LV10",
    "points": "-",
-   "effect": "槍弓馬器　確率 37% / 攻撃 90%上昇"
+   "effect": "槍弓馬器　確率 37% / 攻撃 90%上昇+防御 90%上昇(姫武将にのみ効果)"
   }
  ],
  "synthesisTable": [
@@ -41,10 +41,10 @@
    "afterRank": "F",
    "target": "槍",
    "rate": "16%",
-   "effectShort": "槍攻：7.5%上昇",
+   "effectShort": "槍攻：7.5%上昇(武将のコストで効果が変化)",
    "afterTarget": "槍",
    "afterRate": "16%",
-   "afterEffectShort": "防御 (コストx5) %上昇"
+   "afterEffectShort": "防御 (コストx5) %上昇(武将のコストで効果が変化)"
   },
   {
    "slot": "B",
@@ -54,10 +54,10 @@
    "afterRank": "D",
    "target": "槍弓馬",
    "rate": "8%",
-   "effectShort": "攻撃 47%上昇",
+   "effectShort": "攻撃 47%上昇(10時〜16時は確率8倍)",
    "afterTarget": "槍弓馬",
    "afterRate": "15%",
-   "afterEffectShort": "攻撃 (コストx12) %上昇"
+   "afterEffectShort": "攻撃 (コストx12) %上昇(武将のコストで効果が変化)"
   },
   {
    "slot": "C",
@@ -67,10 +67,10 @@
    "afterRank": "A",
    "target": "全",
    "rate": "100%",
-   "effectShort": "攻撃 7%上昇",
+   "effectShort": "攻撃 7%上昇(自軍全部隊に効果・スキル発動後はHPが必ず0になる・模倣不可)",
    "afterTarget": "槍馬",
    "afterRate": "30%",
-   "afterEffectShort": "攻撃 7%上昇"
+   "afterEffectShort": "攻撃 7%上昇+防御 7%上昇(戦闘に参加した自軍全部隊に効果)"
   },
   {
    "slot": "S1",
@@ -80,8 +80,8 @@
    "afterRank": "B",
    "target": "槍砲器",
    "rate": "36%",
-   "effectShort": "防御 43%上昇",
-   "afterEffectShort": "防御 43%上昇"
+   "effectShort": "防御 43%上昇+破壊 25%上昇",
+   "afterEffectShort": "防御 43%上昇+破壊 25%上昇"
   },
   {
    "slot": "S2",
@@ -91,10 +91,10 @@
    "afterRank": "S",
    "target": "弓馬砲器",
    "rate": "40%",
-   "effectShort": "攻撃 54%上昇",
+   "effectShort": "攻撃 54%上昇(攻撃時敵軍のスキル発動率を-3%・模倣不可・特殊効果は重複不可)",
    "afterTarget": "全",
    "afterRate": "35%",
-   "afterEffectShort": "攻撃 40%上昇"
+   "afterEffectShort": "攻撃 40%上昇+防御 40%上昇(武将ランクで効果が変化・ランクごとに+4%)"
   }
  ],
  "notes": [
@@ -102,6 +102,8 @@
   "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
   "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
   "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
-  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
- ]
+  "章は情報源に記載が無いため未確認。",
+  "2026-08-15黄丸化検証(A-1〜A-5): rankGradesはカード画像4隅バッジの個別ズームでS/A/A/A(yari/yumi/uma/ki)を再確認し、ixanary.com(cards/2754)生HTMLのcard propsとも一致(cost/指揮/成長値も一致)。初期スキル赤鳥ノ舞のeffect/skillDetail/trTableが「攻撃90%上昇」のみで、ixanary生HTML(LV10行)にある「防御90%上昇」および「(姫武将にのみ効果)」という重要な適用条件が丸ごと欠落していたため追加。synthesisTableは初期スキル(赤鳥ノ舞)のixanary生HTML合成テーブル(1次/2次)で全5枠を確認し、ixawiki.com(BushoCard/2754早川殿)を2ソース目として突き合わせたところ、スキル名・ランクとも全5枠で完全一致。effectShortの不備を8件修正: A枠skill(槍隊急襲)・afterSkill(槍隊守備)のコスト変動注記抜け、B枠skill(青葉ノ奏)の時間帯確率8倍注記抜け・afterSkill(赤鬼刺)のコスト変動注記抜け、C枠skill(王妃の矜持)のHP0化・模倣不可注記抜け、C枠afterSkill(将軍親政)の防御7%上昇+部隊全体注記抜け、S1枠(波瀾ノ夕立、skill/afterSkillとも)の破壊25%上昇抜け、S2枠skill(王佐ノ才)の発動率低下効果抜け、S2枠afterSkill(覇国無双)の防御40%上昇+ランク変動注記抜け。S2のafterSkill覇国無双(S)はskill(王佐ノ才)とafterSkillが異なるため本来A-3-12によりgrantedViaSkills経由にすべきところ、data/skill/覇国無双.jsonのnotesには既に削除済みと書かれていながら実際にはsourceCharactersに早川殿(2754)が残ったままだったため、この検証で実際に削除し王佐ノ才.json側に登録済みであることを確認した。"
+ ],
+ "reviewedOk": true
 }

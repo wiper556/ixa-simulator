@@ -5,7 +5,7 @@
  "cost": 3.5,
  "troop": "弓焙攻",
  "sub": "",
- "effect": "攻撃 70%上昇",
+ "effect": "攻撃 70%上昇(敵軍強襲部隊との会敵時に発動すると戦闘を回避できる・模倣不可)",
  "furigana": "おおたどうかん",
  "illustrator": "BISAI",
  "imageFull": "assets/img/characters/no2764_full.png",
@@ -24,12 +24,12 @@
   "ki": "A"
  },
  "initialSkill": "王佐ノ采配",
- "skillDetail": "A/LV10 確率 5% 攻撃 70%上昇/対象:弓焙\n①攻撃が70%上昇する",
+ "skillDetail": "A/LV10 確率 5% 攻撃 70%上昇/対象:弓焙\n模倣不可\n①攻撃 70%上昇する\n②敵軍強襲部隊との会敵時に発動すると戦闘を回避できる",
  "trTable": [
   {
    "level": "LV10",
    "points": "-",
-   "effect": "弓焙　確率 5% / 攻撃 70%上昇"
+   "effect": "弓焙　確率 5% / 攻撃 70%上昇(敵軍強襲部隊との会敵時に発動すると戦闘を回避できる・模倣不可)"
   }
  ],
  "synthesisTable": [
@@ -41,10 +41,10 @@
    "afterRank": "F",
    "target": "槍",
    "rate": "16%",
-   "effectShort": "攻撃 7.5%上昇",
+   "effectShort": "攻撃 7.5%上昇(武将のコストで効果が変化)",
    "afterTarget": "槍",
    "afterRate": "16%",
-   "afterEffectShort": "防御 (コストx5) %上昇"
+   "afterEffectShort": "防御 (コストx5) %上昇(武将のコストで効果が変化)"
   },
   {
    "slot": "B",
@@ -54,8 +54,8 @@
    "afterRank": "B",
    "target": "槍砲器",
    "rate": "15%",
-   "effectShort": "攻撃 54%上昇",
-   "afterEffectShort": "攻撃 54%上昇"
+   "effectShort": "攻撃 54%上昇(合流攻撃時は必ずスキル発動)",
+   "afterEffectShort": "攻撃 54%上昇(合流攻撃時は必ずスキル発動)"
   },
   {
    "slot": "C",
@@ -65,8 +65,8 @@
    "afterRank": "A",
    "target": "槍鉄",
    "rate": "24%",
-   "effectShort": "攻撃 76%上昇 破壊 30%上昇",
-   "afterEffectShort": "攻撃 76%上昇 破壊 30%上昇"
+   "effectShort": "攻撃 76%上昇+破壊 30%上昇",
+   "afterEffectShort": "攻撃 76%上昇+破壊 30%上昇"
   },
   {
    "slot": "S1",
@@ -76,21 +76,19 @@
    "afterRank": "A",
    "target": "弓焙",
    "rate": "5%",
-   "effectShort": "攻撃 70%上昇",
-   "afterEffectShort": "攻撃 70%上昇"
+   "effectShort": "攻撃 70%上昇(敵軍強襲部隊との会敵時に発動すると戦闘を回避できる・模倣不可)",
+   "afterEffectShort": "攻撃 70%上昇(敵軍強襲部隊との会敵時に発動すると戦闘を回避できる・模倣不可)"
   },
   {
    "slot": "S2",
-   "skill": "赤鳥ノ舞",
-   "rank": "A",
-   "afterSkill": "波瀾ノ夕立",
+   "skill": "烈侵滅国",
+   "rank": "B",
+   "afterSkill": "烈侵滅国",
    "afterRank": "B",
-   "target": "槍弓馬器",
-   "rate": "37%",
-   "effectShort": "攻撃 90%上昇",
-   "afterTarget": "槍砲器",
-   "afterRate": "36%",
-   "afterEffectShort": "防御 43%上昇"
+   "target": "槍弓器",
+   "rate": "25%",
+   "effectShort": "攻撃防御 ((1+武将ランク)xコストx2) %上昇 武将ランクとコストで効果が変化",
+   "afterEffectShort": "攻撃防御 ((1+武将ランク)xコストx2) %上昇 武将ランクとコストで効果が変化"
   }
  ],
  "notes": [
@@ -98,6 +96,12 @@
   "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
   "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
   "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
-  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
- ]
+  "章は情報源に記載が無いため未確認。",
+  "2026-08-15黄丸化検証: カード画像はスキルLV1形式(王佐ノ采配LV1)。4隅バッジ(槍/馬/器=A、弓=S)を個別ズームで再確認し一致。ステータス(攻1040/防990/兵法500/成長+38/+30/+2.5/コスト3.5/指揮3480)はixanary生HTML(cards/2764)と一致。",
+  "初期スキル「王佐ノ采配」の実際の効果(ixanary生HTML LV10)は「攻撃70%上昇+敵軍強襲部隊との会敵時に発動すると戦闘を回避できる(模倣不可)」で、後半の戦闘回避効果と模倣不可の独立行が丸ごと抜けていたため追記(effect/skillDetail/trTable/S1枠を修正)。",
+  "S2枠で情報源間の食い違いを発見・解決した: ixanary.com(skills/王佐ノ采配、1次候補)はS2=赤鳥ノ舞[A]→波瀾ノ夕立[B]としていたが、ixawiki.com(BushoCard/2764太田道灌)はS2=烈侵滅国[B](自己参照)としており一致しなかった。標準2ソースが食い違ったためA-1-6に従いixagno.blog.fc2.com(blog-entry-6028、太田道灌(3)の合成テーブル画像・テキスト)で3件目を確認したところ「S2：烈侵滅国[B]→烈侵滅国[B]」と明記されており、ixawiki+ixagnoの多数決でixanaryの表記を誤りと判断し、S2を烈侵滅国[B](自己参照)に修正した(effectShort等はixanary.com/skills/烈侵滅国のLV10値を採用)。他のA/B/C/S1の4枠はixanaryとixawikiで完全一致していた。",
+  "effectShortはA(槍隊急襲/槍隊守備、コスト依存注記抜け)/B(戦鬼侵軍、合流攻撃時必発動の注記抜け)で不完全だったため、各スキルのixanary個別ページ(skills/槍隊急襲, skills/槍隊守備, skills/戦鬼侵軍)を直接確認し修正した。C(銃槍 轟攻陣)は既存記述のまま一致(区切り文字のみ「+」に統一)。",
+  "候補スキル(槍隊急襲/槍隊守備/戦鬼侵軍/銃槍 轟攻陣/王佐ノ采配/烈侵滅国)は全てAランク以下でA-3-9の独自ページ作成対象外、data/skill/配下に該当ファイルが無いことを確認済み(逆引き対象なし)。"
+ ],
+ "reviewedOk": true
 }

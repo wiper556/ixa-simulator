@@ -143,34 +143,20 @@
   {
    "name": "永田徳本",
    "no": "2824",
-   "slot": "A",
+   "slot": "A・B",
    "db": "kyoku",
    "note": [
-    "永田徳本(2824)のsynthesisTable A枠(2026-08-15)"
-   ]
-  },
-  {
-   "name": "狩野永徳",
-   "no": "2821",
-   "slot": "S1",
-   "db": "kyoku",
-   "note": [
-    "狩野永徳(2821)のsynthesisTable S1枠(2026-08-15)"
-   ]
-  },
-  {
-   "name": "上杉謙信",
-   "no": "2813",
-   "slot": "A",
-   "db": "kyoku",
-   "note": [
-    "上杉謙信(2813)のsynthesisTable A枠(2026-08-15)"
+    "永田徳本(2824)のsynthesisTable A・B枠(2026-08-15、A/B両方が開闢ノ逆鉾で自己参照)"
    ]
   }
  ],
  "grantedViaSkills": [
   {
    "skill": "十死一生",
+   "rank": "S"
+  },
+  {
+   "skill": "救天慈愛",
    "rank": "S"
   }
  ],
@@ -179,7 +165,9 @@
   "rank": "SS"
  },
  "notes": [
-  "2026-08-13: A-3-12の逆方向リンク。武将のsynthesisTableでは1次がこのスキルに変化するのに、こちら側から元スキルを指していなかった。1次→2次の組100件を元スキルのownHiddenCandidateと突き合わせ、矛盾0件を確かめたうえで機械的に張った。"
+  "2026-08-13: A-3-12の逆方向リンク。武将のsynthesisTableでは1次がこのスキルに変化するのに、こちら側から元スキルを指していなかった。1次→2次の組100件を元スキルのownHiddenCandidateと突き合わせ、矛盾0件を確かめたうえで機械的に張った。",
+  "2026-08-15(黄丸化検証): 上杉謙信(2813)はA/B枠で救天慈愛[S]→開闢ノ逆鉾[SS]と変化する(skill≠afterSkill)ため、A-3-12に従いここへ直接列挙せずgrantedViaSkillsで救天慈愛[S]を参照する形に修正。上杉謙信自身はdata/skill/救天慈愛.jsonのsourceCharactersに記載。",
+  "2026-08-15(No.2821黄丸化検証): 狩野永徳(2821)もS1枠に直接列挙されていたが、synthesisTable S1行のskillは十死一生でありafterSkillが本スキルのため同種の誤り。sourceCharactersから外し、十死一生側(既にS1枠で記載済み)から辿れるようにした。"
  ],
  "trTable": [
   {

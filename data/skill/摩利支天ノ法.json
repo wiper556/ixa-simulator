@@ -81,15 +81,6 @@
    ]
   },
   {
-   "name": "出雲阿国",
-   "no": "2850",
-   "slot": "A",
-   "db": "kyoku",
-   "note": [
-    "出雲阿国(2850)のsynthesisTable A枠(2026-08-15)"
-   ]
-  },
-  {
    "name": "多羅尾光俊",
    "no": "2841",
    "slot": "S2",
@@ -101,10 +92,10 @@
   {
    "name": "小笠原長棟",
    "no": "2837",
-   "slot": "C",
+   "slot": "S1",
    "db": "kyoku",
    "note": [
-    "小笠原長棟(2837)のsynthesisTable C枠(2026-08-15)"
+    "小笠原長棟(2837)のsynthesisTable S1枠(2026-08-15黄丸化検証で追加、当初漏れていた)。C枠は盛興弓箭→摩利支天ノ法のafterSkillでskillとは一致しないため、A-3-12によりgrantedViaSkills経由(盛興弓箭.jsonのsourceCharacters C枠)に統一し、ここへの直接列挙は削除した(2026-08-15)。"
    ]
   },
   {
@@ -119,19 +110,10 @@
   {
    "name": "長谷川等伯",
    "no": "2827",
-   "slot": "A",
+   "slot": "A・B",
    "db": "kyoku",
    "note": [
-    "長谷川等伯(2827)のsynthesisTable A枠(2026-08-15)"
-   ]
-  },
-  {
-   "name": "佐々木ユキ",
-   "no": "2814",
-   "slot": "S1",
-   "db": "kyoku",
-   "note": [
-    "佐々木ユキ(2814)のsynthesisTable S1枠(2026-08-15)"
+    "長谷川等伯(2827)のsynthesisTable A・B枠(2026-08-15、A/B両方が摩利支天ノ法で自己参照)"
    ]
   }
  ],
@@ -142,6 +124,10 @@
   },
   {
    "skill": "傾国ノ艶姫",
+   "rank": "S"
+  },
+  {
+   "skill": "盛興弓箭",
    "rank": "S"
   }
  ],

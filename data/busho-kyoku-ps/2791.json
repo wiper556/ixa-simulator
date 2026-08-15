@@ -5,7 +5,7 @@
  "cost": 4.0,
  "troop": "全攻",
  "sub": "",
- "effect": "攻撃 90%上昇",
+ "effect": "所属部隊内のレアリティS以上のスキル発動率を15%加算(模倣不可・特殊効果は部隊内重複不可)",
  "furigana": "あまくさしろうときさだ",
  "illustrator": "塚本陽子",
  "imageFull": "assets/img/characters/no2791_full.png",
@@ -24,12 +24,12 @@
   "ki": "A"
  },
  "initialSkill": "奇跡",
- "skillDetail": "A/LV10 確率 100% 攻撃 90%上昇/対象:全\n①攻撃が90%上昇する",
+ "skillDetail": "A/LV10 確率 100% 攻撃 90%上昇/対象:全\n模倣不可・特殊効果は部隊内重複不可\n①攻撃 90%上昇する\n②防御 90%上昇する\n③所属部隊内のレアリティS以上のスキル発動率を15%加算する",
  "trTable": [
   {
    "level": "LV10",
    "points": "-",
-   "effect": "全　確率 100% / 攻撃 90%上昇"
+   "effect": "全　確率 100% / 攻撃 90%上昇+防御 90%上昇(所属部隊内のレアリティS以上のスキル発動率を15%加算・模倣不可・特殊効果は部隊内重複不可)"
   }
  ],
  "synthesisTable": [
@@ -41,7 +41,7 @@
    "afterRank": "SS",
    "target": "全",
    "rate": "100%",
-   "effectShort": "攻撃 70%上昇 防御 70%上昇",
+   "effectShort": "攻撃 70%上昇+防御 70%上昇(このスキルを所持する武将の全スキルの卓越確率に25%を加算する(模倣不可))",
    "afterTarget": "全",
    "afterRate": "35%",
    "afterEffectShort": "攻撃 40%上昇+防御 40%上昇(部隊内レアリティS以上のスキル個数×20%加算)"
@@ -66,8 +66,8 @@
    "afterSkill": "天岩戸ノ神域",
    "afterRank": "SS",
    "target": "全",
-   "rate": "35%",
-   "effectShort": "攻撃 77%上昇",
+   "rate": "35%/100%",
+   "effectShort": "攻撃 77%上昇(確率35%)+防御 77%上昇(確率35%)+速度 40%上昇(確率100%)",
    "afterTarget": "全",
    "afterRate": "70%",
    "afterEffectShort": "攻撃 2.8%×防御参加武将数(280人)=784.0%"
@@ -80,7 +80,7 @@
    "afterRank": "SS",
    "target": "全",
    "rate": "100%",
-   "effectShort": "攻撃 (武将コストxNull)%上昇+速度 50%上昇(コストで変動・5コストの場合攻撃 80%上昇)",
+   "effectShort": "攻撃 (コスト×16)%上昇+速度 50%上昇(武将のコストで効果が変化・5コストの場合攻撃 80%上昇)",
    "afterTarget": "全",
    "afterRate": "100%",
    "afterEffectShort": "攻撃 90%上昇+速度 200%上昇(TRなし)"
@@ -96,7 +96,7 @@
    "effectShort": "領地内名声回復率 10%上昇(重複不可)",
    "afterTarget": "上級器",
    "afterRate": "35%",
-   "afterEffectShort": "攻撃 10%上昇"
+   "afterEffectShort": "攻撃 10%上昇+破壊 25%上昇"
   }
  ],
  "notes": [
@@ -104,6 +104,11 @@
   "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
   "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
   "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
-  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
- ]
+  "章は情報源に記載が無いため未確認。",
+  "2026-08-15黄丸化検証: skillDetail/trTableが防御90%上昇と所属部隊内のレアリティS以上のスキル発動率15%加算の記載を欠いていたため、ixanary.com/skills/奇跡とixawikiのコメント欄(いずれも同一文言)で裏取りして補完。",
+  "S1候補「騎聖」の攻撃係数がixanary/ixawikiともに(コスト×Null)と空欄表示だったため、両サイト共通の「5コストで攻撃80%上昇」という注記から係数16を逆算して補完(ixagno.blog.fc2.comでも該当記事は見つからず)。",
+  "A候補「鬼滅刺」のeffectShortに卓越確率+25%加算(模倣不可)の記載漏れ、C候補「戦陣 勝鬨」のeffectShortに防御77%上昇・速度40%上昇(確率100%)の記載漏れ、S2候補afterSkill「鬼謀 国砕」のafterEffectShortに破壊25%上昇の記載漏れがあり、いずれもixanary.com該当スキル個別ページの生HTMLで確認し補完(2026-08-15)。",
+  "synthesisTable全5行のslot割当はixanary.com/skills/奇跡の合成テーブルとixawiki(BushoCard/2791天草四郎時貞のスキル追加合成表・コメント欄)の2ソースで一致確認済み。sourceCharacters逆引き(skills.htmlの布都御魂ノ鬨/天穿神滅/天岩戸ノ神域/神光征軍)もno:2791が既に正しいslotで登録済みであることを確認した。"
+ ],
+ "reviewedOk": true
 }

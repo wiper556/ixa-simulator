@@ -24,7 +24,7 @@
   "ki": "A"
  },
  "initialSkill": "醒睡笑",
- "skillDetail": null,
+ "skillDetail": "A/LV10 カード所持効果/対象:全\n重複不可\n①このカードを所持していると本丸防御陣形編成コストの最大値が0.5×(武将ランク+1)上昇する",
  "trTable": [
   {
    "level": "LV10",
@@ -85,11 +85,14 @@
    "slot": "S2",
    "skill": "天正筆才",
    "rank": "A",
-   "afterSkill": null,
-   "afterRank": null,
-   "target": null,
-   "rate": null,
-   "effectShort": "織田信長の所持スキル発動率を2倍にする(同部隊セット時のみ有効・模倣不可)"
+   "afterSkill": "遁世影武者",
+   "afterRank": "B",
+   "target": "織田信長",
+   "rate": "100%",
+   "effectShort": "織田信長の所持スキル発動率を2倍にする(同部隊セット時のみ有効・模倣不可)",
+   "afterTarget": "部隊長",
+   "afterRate": "50%",
+   "afterEffectShort": "所属部隊の部隊長が持つ初期スキルを模倣する(戦闘スキルのみ)"
   }
  ],
  "notes": [
@@ -100,6 +103,14 @@
   " 効果:「このカードを所持していると、本丸防御陣形編成コストの最大値が0.5×(武将ランク+1)上昇する(重複不可)」。",
   "合成候補5枠はixawiki(BushoCard/2790)の1次候補テーブルで確認、各スキルの詳細(target/rate/effect)は",
   " 同じ5枠を持つ弥助(No.2430)の既存登録データ(ixawiki 1次/2次候補で確認済み)を流用した(検証担当2026-08-15)。",
-  "章は情報源に記載が無いため未確認。"
- ]
+  "章は情報源に記載が無いため未確認。",
+  "[黄丸化検証2026-08-15] skillDetailがnullだったため、ixanary/ixawiki(醒睡笑の効果文、両ソース一致)から作成。",
+  "[黄丸化検証2026-08-15] S2枠(天正筆才)のtarget/rateがnullだった点を修正。ixanary.com/skills/天正筆才/の武将スキル効果(LV10 確率100%/対象:織田信長)で確認。",
+  "[黄丸化検証2026-08-15] S2枠のafterSkillが未設定(null)だった点を修正。ixanary.com/skills/醒睡笑/(この武将の初期スキル自身のページ、A-3-0の一次情報源)の合成テーブルで2次S2=遁世影武者[B]と直接確認。ixagno.blog.fc2.com(blog-entry-7531)でも「S2候補：天正筆才[A]→【遁世影武者】」と一致(ブログ側は?付きの推測表記だがixanaryの直接記載と矛盾なし)。afterTarget/afterRate/afterEffectShortは遁世影武者自身のixanaryスキルページ(LV10 確率50%/対象:部隊長)から補完、B枠の値と一致することも確認。",
+  "[黄丸化検証2026-08-15] A/B/C/S1枠のskill・afterSkillとtarget/rate/effectShort/afterTarget/afterRate/afterEffectShortは、ixanaryの醒睡笑スキルページの1次/2次/3次テーブルと、鬼滅刺/遁世影武者/宿木/風狂幻術/布都御魂ノ鬨/風林火山各スキル自身のixanaryページのLV10性能値を突き合わせて全項目一致を確認(2430の既存データからの流用ではなく独立に裏取り済み)。",
+  "[黄丸化検証2026-08-15] A-3-11: data/skill/布都御魂ノ鬨.json・data/skill/風林火山.json・data/skill/宿木.json・data/skill/風狂幻術.jsonの4件すべてでsourceCharactersに安楽庵策伝(no:2790, 各slot A/B/C/S1と一致)が既に記載されていることを個別にgrepで確認済み(追記不要)。",
+  "[黄丸化検証2026-08-15] 鬼滅刺・遁世影武者はixanary上で「合成専用スキル」またはB以下ランクのためskills.html独自ページの新規作成対象外(既存の類似武将2789/2430/2768等も同様の運用で統一済み、鬼滅刺は布都御魂ノ鬨側のgrantedViaSkills対象にもなっていない=既存の全武将で未実施のため今回も踏襲)。",
+  "[黄丸化検証2026-08-15] 無尽/撤退/覇道/不屈/飛翔/兵站/人数依存キーワード(A-2)は該当なし。カード画像に赤字「覇」表記も無い。"
+ ],
+ "reviewedOk": true
 }

@@ -125,11 +125,22 @@ def parse_ixanary_skill(lines):
     for i, ln in enumerate(lines):
         m = LEVEL_LINE.match(ln)
         if m:
-            nxt = lines[i + 1] if i + 1 < len(lines) else ""
-            if NOT_CONT.match(nxt.strip()):
-                nxt = ""
+            # 2026-08-15: ここは次の**1行だけ**を連結していた。ixanary の効果は
+            #   LV10 | 確率：+48% / 対象 全
+            #   防御：910%上昇
+            #   部隊消費コストを1.5低下
+            #   （特殊効果は模倣不可）
+            # のように3行以上になることがあり、**2行目以降が丸ごと落ちていた**。
+            # 「防御の成分が無い」「模倣不可が無い」「条件が無い」という欠落が
+            # 大量に出ていた原因がこれ。次の段か見出しに当たるまで全部拾う。
+            cont = []
+            j = i + 1
+            while j < len(lines) and not NOT_CONT.match(lines[j].strip()):
+                if lines[j].strip():
+                    cont.append(lines[j].strip())
+                j += 1
             d["levels"].append({"level": m.group(1),
-                                "text": (m.group(2) + " " + nxt).strip()})
+                                "text": " / ".join([m.group(2)] + cont).strip()})
         if ln.startswith("1次 | ") or ln.startswith("2次 | "):
             key = "first" if ln.startswith("1次") else "second"
             d["synthesis"][key] = [x.strip() for x in ln.split("|")[1:]]

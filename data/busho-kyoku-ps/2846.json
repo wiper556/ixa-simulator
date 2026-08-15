@@ -5,7 +5,7 @@
  "cost": 4.5,
  "troop": null,
  "sub": "",
- "effect": null,
+ "effect": "部隊内武将の全スキルの卓越追加確率が80%上昇",
  "furigana": "こまひめ",
  "illustrator": "鏑木康隆",
  "imageFull": "assets/img/characters/no2846_full.png",
@@ -24,7 +24,7 @@
   "ki": "S"
  },
  "initialSkill": "弥陀ノ裁剣",
- "skillDetail": null,
+ "skillDetail": "S/LV10 確率 45% 部隊内武将の全スキルの卓越追加確率80%上昇/対象:全\n模倣不可・部隊内重複不可\n①部隊内武将の全スキルの卓越追加確率が80%上昇する",
  "trTable": [
   {
    "level": "LV10",
@@ -118,9 +118,13 @@
  ],
  "notes": [
   "ixanary.com(cards/2846 と skills/弥陀ノ裁剣)およびixawiki(BushoCard/2846駒姫)で登録(2026-08-14)。",
-  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。LV1形式のカードのためB-00の6項目以外はネットで裏取りした。",
   "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
-  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
-  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
- ]
+  "2026-08-15: skillDetailが空欄だったためixanaryのスキル効果表(LV10/TR1-5、ixawikiでもLV10/TR5を確認し一致)から補完。trTable自体は元々正しかった。TR6は情報源に無い。",
+  "合成候補はixanaryのスキルページ(skills/弥陀ノ裁剣)の1次(移植前)・2次(移植後)。1次の値(A=月詠ノ覇威/B=八界経略/C=思金神ノ深謀/S1=幻像鏡花/S2=思金神ノ深謀)はixawikiの合成候補テーブルとも一致(5枠とも一致、2ソース確認)。ixawiki側の「2次候補」以降は未編集のプレースホルダで実データが無く、afterSkillはixanaryの1次/2次/3次表(3次で全列安定)のみを根拠にした。",
+  "弥陀ノ裁剣自体はixanaryのカードページで「合成不可スキルです」と明記されており、synthesisTableのどの枠にも自己参照されない。data/skill/弥陀ノ裁剣.jsonのsourceCharactersが空だったため駒姫をslot:\"移植不可\"で追記(A-3-11)。",
+  "2026-08-15: 思金神ノ深謀.jsonのsourceCharactersに駒姫がslot:\"C\"のみで登録されており、synthesisTableではS2枠でも思金神ノ深謀(自己参照)を持つため漏れていた。slot:\"C・S2\"に修正(A-3-11逆引き確認で発見)。",
+  "章は情報源(ixanary/ixawiki)に記載が無いため未確認。"
+ ],
+ "reviewedOk": true
 }
