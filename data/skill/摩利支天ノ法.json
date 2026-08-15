@@ -92,19 +92,10 @@
   {
    "name": "小笠原長棟",
    "no": "2837",
-   "slot": "C",
-   "db": "kyoku",
-   "note": [
-    "小笠原長棟(2837)のsynthesisTable C枠(2026-08-15)"
-   ]
-  },
-  {
-   "name": "小笠原長棟",
-   "no": "2837",
    "slot": "S1",
    "db": "kyoku",
    "note": [
-    "小笠原長棟(2837)のsynthesisTable S1枠(2026-08-15黄丸化検証で追加、当初漏れていた)"
+    "小笠原長棟(2837)のsynthesisTable S1枠(2026-08-15黄丸化検証で追加、当初漏れていた)。C枠は盛興弓箭→摩利支天ノ法のafterSkillでskillとは一致しないため、A-3-12によりgrantedViaSkills経由(盛興弓箭.jsonのsourceCharacters C枠)に統一し、ここへの直接列挙は削除した(2026-08-15)。"
    ]
   },
   {

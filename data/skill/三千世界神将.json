@@ -47,28 +47,10 @@
   {
    "name": "大友義鑑",
    "no": "2835",
-   "slot": "A",
-   "db": "kyoku",
-   "note": [
-    "大友義鑑(2835)のsynthesisTable A枠(2026-08-15)"
-   ]
-  },
-  {
-   "name": "大友義鑑",
-   "no": "2835",
-   "slot": "B",
-   "db": "kyoku",
-   "note": [
-    "大友義鑑(2835)のsynthesisTable B枠(2026-08-15黄丸化検証で追加)"
-   ]
-  },
-  {
-   "name": "大友義鑑",
-   "no": "2835",
    "slot": "S1",
    "db": "kyoku",
    "note": [
-    "大友義鑑(2835)のsynthesisTable S1枠(2026-08-15黄丸化検証で追加、当初漏れていた)"
+    "大友義鑑(2835)のsynthesisTable S1枠(2026-08-15黄丸化検証で追加、当初漏れていた)。A・B枠は豊州ノ蠍→三千世界神将のafterSkillでskillとは一致しないため、A-3-12によりgrantedViaSkills経由(豊州ノ蠍.jsonのsourceCharacters A・B枠)に統一し、ここへの直接列挙(元々あったA枠、検証中に誤って追加したB枠)は削除した(2026-08-15)。"
    ]
   },
   {
