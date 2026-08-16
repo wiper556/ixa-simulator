@@ -1863,7 +1863,7 @@ const specialSkills = {
     note: 'SSS(攻撃・模倣不可・無尽)。確率+100%/対象:全。攻撃:LV10=680%上昇、TR1=750%、TR2=910%、TR3=1130%、TR4=1400%、TR5=1730%(自動反映対応)。' +
           '「無尽(部隊消費コスト-0.5、hasMujin:trueで自動判定対応)」。' +
           '「対象兵科指揮時、極限スキルの攻撃効果が3.5倍(全段階共通・模倣不可)」: 自分自身の極限スキル枠(fx4)の攻撃%上昇を3.5倍(自動反映対応、天舞皆朱と同じmultiplyAdditionalSkillsBy機構で実装)。' +
-          '【2026年7月修正】hasMujinフラグが未設定だったため、無尽持ち武将としての判定(computeMujinMap・幻王ノ采配等の無尽マスタリー系スキルとの連動)が機能していなかった不具合を修正。竹中半兵衛【覇】(No.1275)の固有スキル。' +
+          '【2026年7月修正】hasMujinフラグが未設定だったため、無尽持ち武将としての判定(computeMujinMap・幻王ノ采配等の無尽マスタリー系スキルとの連動)が機能していなかった不具合を修正。竹中半兵衛（2）【覇】(No.1275)の固有スキル。' +
           '【2026年7月再修正】「極限スキルの攻撃効果が3.5倍」が参考データのみ(未計算)になっていたため、multiplyAdditionalSkillsBy機構で自動反映するよう対応。'
   },
   '王佐ノ指揮': {
@@ -2588,7 +2588,7 @@ const specialSkills = {
     // 付け忘れていたため、義戦ノ旗手③の「無尽を持たない初期スキルは無効化」に巻き込まれて0になっていた(2026-08-14)。
     hasMujin: true,
     // ③「このスキルを持つ武将カードは追加・極限スキルの防御・破壊効果が2倍となる」。
-    // 正本の書き方は覇道ノ泰斗・天計千年鳳凰と同じ「このスキルを持つ武将カードは」で、
+    // 正本の書き方は覇道ノ泰斗・天計 千年鳳凰と同じ「このスキルを持つ武将カードは」で、
     // 部隊長限定ではなくカード自身の効果。倍率は正本のTR別表のとおり。
     multiplyAdditionalSkillsByTable: { base:2, TR1:2.1, TR2:2.2, TR3:2.3, TR4:2.4, TR5:2.5, TR6:2.6 },
     multiplyTargetFields: ['fx2','fx3','fx4'], // 追加1・追加2・極限
@@ -2597,7 +2597,7 @@ const specialSkills = {
     note: 'S(防御・無尽)。確率+100%/対象:全 無尽。防御:LV10=500%上昇、TR1=540%、TR2=600%、TR3=670%、TR4=750%、TR5=840%、TR6=1000%(自動反映対応)。' +
           '「追加・極限スキルの防御・破壊効果が倍加(LV10=2倍〜TR5=2.5倍、TR6=2.6倍)」を自動反映対応で実装(2026-08-14)。' +
           '正本(data/skill/不撓六文銭.json)の③が「このスキルを持つ武将カードは追加・極限スキルの防御・破壊効果が2倍となる」と、' +
-          '覇道ノ泰斗・天計千年鳳凰と同じ「カード自身に働く」書き方であることを根拠にした(以前は条件未確認として参考データのみにしていた)。' +
+          '覇道ノ泰斗・天計 千年鳳凰と同じ「カード自身に働く」書き方であることを根拠にした(以前は条件未確認として参考データのみにしていた)。' +
           '真田昌幸(5)(No.1304)の固有スキル。パラレル【天】版(No.31304)でTR6が解禁。' +
           '【2026年7月修正】当初TR6のみ登録していたが、LV10〜TR5もixanary.comで確認して追加登録した。'
   },
@@ -3006,13 +3006,13 @@ const specialSkills = {
     multiplyAdditionalSkillsBy: 2.5, // LV10=2.5倍(鍛錬TR別数値は情報源に記載なし)
     // 【2026-08-14修正】極限枠(fx4)を外した。ixanary(skills/冥界ノ覇神)は
     // 「追加スキルの攻撃・防御・破壊効果が2.5倍」で極限に触れていない。
-    // 天計千年鳳凰・赤凰幻舞と同じ勘違いをしていた。
+    // 天計 千年鳳凰・赤凰幻舞と同じ勘違いをしていた。
     multiplyTargetFields: ['fx2','fx3'], // 追加1・追加2のみ(初期fx1と極限fx4は対象外)
     multiplyStatFields: ['val','destruct'], // 攻撃%上昇(または防御%上昇)・破壊%上昇の両方が対象
     note: 'SSS(模倣不可)。確率+100%/対象:追加スキル。このスキルを持つ武将カードは、追加スキル(追加1・追加2)の攻撃・防御・破壊効果がLV10=2.5倍になる(自動反映対応、multiplyAdditionalSkillsBy経由、覇道ノ泰斗と同じ仕組み)。' +
           '鍛錬TR別数値は情報源に記載なし(LV10のみ登録)。織田信長(No.1166)の固有スキル。ixanary.comで確認(2026年7月)。'
   },
-  '天計千年鳳凰': {
+  '天計 千年鳳凰': {
     multiplyAxis: 'def', // 追加スキルの防御・破壊効果が2.5倍
     noMimic: true, // 「模倣不可」明記
     baseRate: 100, // 確率+100%/対象:追加スキル
@@ -3029,7 +3029,7 @@ const specialSkills = {
     multiplyTargetFields: ['fx2','fx3'], // 追加1・追加2のみ(初期fx1と極限fx4は対象外)
     multiplyStatFields: ['val','destruct'], // 防御%上昇・破壊%上昇が対象(値の型はval欄で代表)
     note: 'SSS(防御・模倣不可)。確率+100%/対象:追加スキル。このスキルを持つ武将カードは、追加スキル(追加1・追加2)の防御・破壊効果がLV1=1.2倍→LV10=2.5倍になる(自動反映対応、multiplyAdditionalSkillsBy経由、覇道ノ泰斗と同じ仕組み)。' +
-          '鍛錬TR別数値は情報源に記載なし(LV10のみ登録)。竹中半兵衛(No.1215)の固有スキル。ixanary.comで確認(2026年7月)。'
+          '鍛錬TR別数値は情報源に記載なし(LV10のみ登録)。竹中半兵衛（1）【覇】(No.1215)の固有スキル。ixanary.comで確認(2026年7月)。'
   },
   '天壌八咫烏': {
     effectAxis: 'atk', // 攻撃側(正本 data/skill/天壌八咫烏.json の効果文より)
@@ -4003,7 +4003,7 @@ const generalGrowthDB = [
   { name:'豊臣秀次', no:'1272', cost: 4, initialSkill:'夢妖剣', lv0Troops:4600, atkBase:1070, atkGrowth:44, defBase:1230, defGrowth:67, tacticsBase:670, tacticsGrowth:3.0, rankGrades:{yari:'S',yumi:'A',uma:'S',ki:'A'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixawiki武将カード一覧表より一括登録(要スポットチェック)' },
   { name:'北条氏直', no:'1273', cost: 4.5, initialSkill:'仁侯ノ決断', lv0Troops:4790, atkBase:1220, atkGrowth:65, defBase:1220, defGrowth:65, tacticsBase:690, tacticsGrowth:3.5, rankGrades:{yari:'S',yumi:'A',uma:'S',ki:'A'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixawiki武将カード一覧表より一括登録(要スポットチェック)' },
   { name:'豊臣秀吉【覇】', no:'1274', cost: 6.0, initialSkill:'幻王ノ采配', isHa:true, lv0Troops:5420, atkBase:1290, atkGrowth:81, defBase:1220, defGrowth:67, tacticsBase:850, tacticsGrowth:4.0, rankGrades:{yari:'A',yumi:'SS',uma:'A',ki:'SS'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixawiki武将カード一覧表より一括登録。固有スキル「幻王ノ采配」は部隊長時限定で、部隊内の全極限スキルに無尽付与+無尽持ちスキルの攻撃効果2倍(ixagno.blog.fc2.com記事で詳細確認済み)。ixanary.com(2026年7月確認)で攻撃1290/防御1220/兵法850・指揮兵数5420(Lv0)が一致することを確認、名称表記を generals配列(No.1274)の「豊臣秀吉【覇】」に統一(旧表記「豊臣秀吉(覇)」は照合失敗の原因だったため修正)。' },
-  { name:'竹中半兵衛【覇】', no:'1275', cost: 6.0, initialSkill:'智絶千算', isHa:true, lv0Troops:5400, atkBase:1270, atkGrowth:76, defBase:1210, defGrowth:66, tacticsBase:890, tacticsGrowth:4.5, rankGrades:{yari:'A',yumi:'S',uma:'A',ki:'X'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で攻撃1270/防御1210/兵法890・指揮兵数5400(Lv0)が一致することを確認、名称表記を generals配列(No.1275)の「竹中半兵衛【覇】」に統一(旧表記「竹中半兵衛(覇)」は照合失敗の原因だったため修正)。' },
+  { name:'竹中半兵衛（2）【覇】', no:'1275', cost: 6.0, initialSkill:'智絶千算', isHa:true, lv0Troops:5400, atkBase:1270, atkGrowth:76, defBase:1210, defGrowth:66, tacticsBase:890, tacticsGrowth:4.5, rankGrades:{yari:'A',yumi:'S',uma:'A',ki:'X'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で攻撃1270/防御1210/兵法890・指揮兵数5400(Lv0)が一致することを確認、名称表記を generals配列(No.1275)の「竹中半兵衛（2）【覇】」に統一(旧表記「竹中半兵衛(覇)」は照合失敗の原因だったため修正)。' },
   { name:'結城秀康', no:'1276', cost: 5.5, initialSkill:'覇槍ノ武威', lv0Troops:5250, atkBase:1250, atkGrowth:71, defBase:1100, defGrowth:50, tacticsBase:660, tacticsGrowth:3.0, rankGrades:{yari:'S',yumi:'A',uma:'S',ki:'A'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'カード画像(Lv0・No.1276)で初期値・成長率・指揮兵士数(5250)を確認済み。2025年2月追加の新天、Cost5.5。固有スキル「覇槍ノ武威」は討伐ゲージ連動の特殊スキル(specialSkills参照、計算エンジンは未実装)' },
   { name:'石田三成', no:'1277', cost: 4.5, initialSkill:'義陣絶刀', lv0Troops:4830, atkBase:1240, atkGrowth:67, defBase:1240, defGrowth:67, tacticsBase:690, tacticsGrowth:3.5, rankGrades:{yari:'A',yumi:'S',uma:'S',ki:'A'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixawiki武将カード一覧表より一括登録(要スポットチェック)' },
   { name:'羽柴秀長', no:'1278', cost: 4.5, initialSkill:'王佐ノ指揮', lv0Troops:4840, atkBase:1230, atkGrowth:66, defBase:1230, defGrowth:66, tacticsBase:670, tacticsGrowth:3.0, rankGrades:{yari:'A',yumi:'S',uma:'A',ki:'S'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixawiki武将カード一覧表より一括登録(要スポットチェック)' },
@@ -4356,7 +4356,7 @@ const generalGrowthDB = [
   { name:'俵屋宗達', no:'2825', cost: 3, initialSkill:'嵐下墨炎', lv0Troops:3350, atkBase:850, atkGrowth:20, defBase:850, defGrowth:20, tacticsBase:620, tacticsGrowth:3, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。職業「文」。Cost3。固有スキル「特:嵐下墨炎」(S、specialSkills登録済み)。' },
   { name:'斎藤道三【覇】', no:'1202', cost: 5.5, initialSkill:'蛇神咆哮', isHa:true, lv0Troops:5100, atkBase:1260, atkGrowth:69, defBase:1230, defGrowth:45, tacticsBase:740, tacticsGrowth:3.5, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。レアリティ「天」・職業「覇」。Cost5.5。固有スキル「攻:蛇神咆哮」(SSS、specialSkills登録済み)。既存の斎藤道三(3)(No.1297)とは別カードのためNo.を併記。' },
   { name:'織田信長(1166)', no:'1166', isHa:true, cost: 5, initialSkill:'冥界ノ覇神', lv0Troops:4620, atkBase:1240, atkGrowth:72, defBase:1240, defGrowth:57, tacticsBase:730, tacticsGrowth:3.5, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。レアリティ「天」・職業「覇」。Cost5。固有スキル「攻防:冥界ノ覇神」(SSS、specialSkills登録済み)。既存の織田信長(No.1997・No.1250・No.1286等)とは別カードのためNo.を併記。' },
-  { name:'竹中半兵衛', no:'1215', isHa:true, cost: 5, initialSkill:'天計千年鳳凰', lv0Troops:4690, atkBase:1240, atkGrowth:52, defBase:1270, defGrowth:72, tacticsBase:800, tacticsGrowth:4.0, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。レアリティ「天」・職業「覇」。Cost5。固有スキル「防:天計千年鳳凰」(SSS、specialSkills登録済み)。既存の竹中半兵衛(智絶千算・No.1275等)とは別カードのためNo.を併記。' },
+  { name:'竹中半兵衛（1）【覇】', no:'1215', isHa:true, cost: 5, initialSkill:'天計 千年鳳凰', lv0Troops:4690, atkBase:1240, atkGrowth:52, defBase:1270, defGrowth:72, tacticsBase:800, tacticsGrowth:4.0, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。レアリティ「天」・職業「覇」。Cost5。固有スキル「防:天計 千年鳳凰」(SSS、specialSkills登録済み)。既存の竹中半兵衛（2）【覇】(智絶千算・No.1275等)とは別カードのためNo.を併記。' },
   { name:'高山マリア', no:'2394', cost: 3, initialSkill:'聖廉母堂', lv0Troops:3450, atkBase:1120, atkGrowth:45, defBase:1120, defGrowth:45, tacticsBase:540.0, tacticsGrowth:2.5, rankGrades:{yari:'B',yumi:'S',uma:'A',ki:'A'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'characters-kyoku.html No.2394(高山マリア)の登録確認済み数値をそのまま反映(2026年8月)。characters-kyoku.htmlの新規登録フロー確立作業(ユーザーと共同)で赤丸化した武将をattack-simulator.htmlへ反映する初回ケース。固有スキル「聖廉母堂」(A、specialSkills登録済み)。' },
   { name:'小山田信茂', no:'2395', cost: 3, initialSkill:'破軍一投', lv0Troops:3440, atkBase:1030, atkGrowth:33, defBase:1140, defGrowth:47, tacticsBase:510.0, tacticsGrowth:2.5, rankGrades:{yari:'A',yumi:'A',uma:'B',ki:'S'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'characters-kyoku.html No.2395(小山田信茂)の登録確認済み数値をそのまま反映(2026年8月)。固有スキル「破軍一投」(A、specialSkills登録済み)。' },
   { name:'高橋紹運', no:'2396', cost: 4.5, initialSkill:'乱世ノ華', lv0Troops:4280, atkBase:1010, atkGrowth:30, defBase:1130, defGrowth:46, tacticsBase:510.0, tacticsGrowth:2.5, rankGrades:{yari:'S',yumi:'A',uma:'B',ki:'A'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'characters-kyoku.html No.2396(高橋紹運)の登録確認済み数値をそのまま反映(2026年8月)。固有スキル「乱世ノ華」(A、specialSkills登録済み)。' },
