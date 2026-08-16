@@ -854,7 +854,7 @@
   // 【必須】attack-simulator.html を変更したコミットでは、必ずこの定数も一緒に更新すること。
   // 表示文言の変更・CSSの微調整であっても対象(ユーザーがスクショで版を判別できなくなるため)。
   // 更新忘れが繰り返し発生しているので、編集したらコミット前にここを見に来る。
-  const SIMULATOR_VERSION = 'v2026-08-16.1';
+  const SIMULATOR_VERSION = 'v2026-08-16.2';
   document.addEventListener('DOMContentLoaded', ()=>{
     const badge = document.getElementById('simVersionBadge');
     if(badge) badge.textContent = SIMULATOR_VERSION;
@@ -4949,19 +4949,50 @@
     return a.name.localeCompare(b.name, 'ja');
   }
 
+  /* ============ 攻撃/防御での絞り込み ============
+     攻撃シミュレーターに防御スキルの武将を、防御シミュレーターに攻撃スキルの
+     武将を出さない。攻防どちらも持つ武将は両方に出す。
+
+     軸は2段で決める。
+       1. generalSkillAxis(正本 data/busho の各JSONの troop から生成)
+       2. そこに無ければ specialSkills の effectAxis / multiplyAxis
+     どちらでも決まらない武将は絞り込まずに出す。特殊・未分類は今のところ
+     手を付けない方針(2026-08-16 うぐさん)。武将DBに無い古いカードが
+     まだ多く、ここで隠すと「探しても出てこない」ほうが困るため。
+  ============================================ */
+  function generalAxisOf(no, initialSkill){
+    const fromDb = (typeof generalSkillAxis !== 'undefined') ? generalSkillAxis[String(no || '')] : null;
+    if(fromDb) return fromDb;
+    const sk = (typeof specialSkills !== 'undefined' && initialSkill) ? specialSkills[initialSkill] : null;
+    if(!sk) return null;
+    const found = new Set();
+    if(sk.effectAxis === 'atk' || sk.effectAxis === 'def') found.add(sk.effectAxis);
+    if(sk.multiplyAxis === 'atk' || sk.multiplyAxis === 'def') found.add(sk.multiplyAxis);
+    if(found.size === 2) return 'both';
+    if(found.size === 1) return [...found][0];
+    return null;
+  }
+
+  // いまのモードで出してよい武将か。軸が分からないものは出す。
+  function generalFitsMode(s){
+    if(!s.axis || s.axis === 'both') return true;
+    return s.axis === (simMode === 'defense' ? 'def' : 'atk');
+  }
+
   let generalSuggestions = [];
   function buildGeneralSuggestionList(){
     const seen = new Set();
     const list = [];
-    const addOption = (name, no) => {
+    const addOption = (name, no, initialSkill) => {
       const noLabel = (no && no !== '未確認') ? `No.${no}` : 'No.未確認';
       const key = name + '|' + noLabel;
       if(seen.has(key)) return;
       seen.add(key);
-      list.push({ name, no: (no || ''), noLabel, display: `${name}(${noLabel})` });
+      list.push({ name, no: (no || ''), noLabel, display: `${name}(${noLabel})`,
+                  axis: generalAxisOf(no, initialSkill) });
     };
-    generalGrowthDB.forEach(g => addOption(g.name, g.no));
-    generals.forEach(g => addOption(g.name, g.no));
+    generalGrowthDB.forEach(g => addOption(g.name, g.no, g.initialSkill));
+    generals.forEach(g => addOption(g.name, g.no, g.initialSkill));
     list.sort(compareGeneralSuggestions);
     generalSuggestions = list;
   }
@@ -4971,7 +5002,8 @@
   const generalCodeTimers = {};
   function findExactGeneralByCode(q){
     if(!/^[0-9]{4,5}$/.test(q)) return undefined;
-    return generalSuggestions.find(s => s.no === q);
+    // 候補に出さない武将をコード直打ちで登録できてしまうと絞り込みの意味が無い
+    return generalSuggestions.find(s => s.no === q && generalFitsMode(s));
   }
 
   function attachGeneralAutocomplete(col){
@@ -5003,7 +5035,9 @@
       if(q.length < 1){ hide(); return; }
       const isNumeric = /^[0-9]+$/.test(q);
       if(isNumeric && q.length < 3){ hide(); return; } // カードNo.(数字)は3文字以上から表示
-      const matches = generalSuggestions.filter(s => s.name.includes(q) || s.no.includes(q)).slice(0, 20);
+      const matches = generalSuggestions
+        .filter(s => (s.name.includes(q) || s.no.includes(q)) && generalFitsMode(s))
+        .slice(0, 20);
       if(matches.length === 0){ hide(); return; }
       box.innerHTML = matches.map(s =>
         `<div class="general-suggest-item" data-value="${s.display}">${s.name}<span class="no">${s.noLabel}</span></div>`
