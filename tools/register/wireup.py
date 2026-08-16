@@ -37,6 +37,8 @@ TODAY = datetime.date.today().isoformat()
 DB_OF_DIR = collections.OrderedDict([
     ("busho-kyoku", "kyoku"), ("busho-kyoku-ps", "kyoku"),
     ("busho-parallel", None), ("busho-toku-s", "toku"),
+    ("busho-parallel", None), ("busho-toku-s", "toku"),
+    ("busho-toku", "tokuall"),
     ("busho-ketsu", "ketsu"), ("busho", None)])
 
 
@@ -157,6 +159,7 @@ LINKED_OF_DIR = {
     "busho-kyoku-ps": ("characters-kyoku-ps.html", "KP_LINKED_SKILLS"),
     "busho-parallel": ("characters-parallel.html", "TP_LINKED_SKILLS"),
     "busho-toku-s": ("characters-toku-s.html", "TS_LINKED_SKILLS"),
+    "busho-toku": ("characters-toku.html", "TK_LINKED_SKILLS"),
     "busho-kyoku": ("characters-kyoku.html", "KK_LINKED_SKILLS"),
     "busho": ("characters.html", "LINKED_SKILLS"),
 }

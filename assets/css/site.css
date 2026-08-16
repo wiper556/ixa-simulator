@@ -165,23 +165,41 @@ body{
 .tool-card.rank-kyoku-ps p{color:#d2c9e2;}
 .tool-card.rank-kyoku-ps:hover{box-shadow:0 6px 16px rgba(75,43,110,0.40);}
 
-/* 天パラレル。天(白)の系統だが元カードの別版なので、金の縁で区別する */
+/* 天パラレルは虹色(うぐさん指定)。天の隣に置くので、天の白と並んだときに
+   一目で別物と分かるようにする。文字は白地に近い上に載るので濃い色にし、
+   薄い白を敷いて読めるようにしている(虹の上に直接文字を置くと沈む)。 */
 .tool-card.rank-parallel{
-  background:linear-gradient(135deg, #1d2b3a, #101820);
-  border:1px solid #c9a227;
+  background:linear-gradient(120deg,
+    #ff9aa2 0%, #ffd6a5 18%, #fdffb6 36%,
+    #caffbf 54%, #9bf6ff 72%, #a0c4ff 86%, #bdb2ff 100%);
+  border:1px solid #cfc7b4;
 }
-.tool-card.rank-parallel h3{color:#f0d98c;}
-.tool-card.rank-parallel p{color:#bfc8d4;}
-.tool-card.rank-parallel:hover{box-shadow:0 6px 16px rgba(201,162,39,0.35);}
+.tool-card.rank-parallel h3{color:#2b2f38;text-shadow:0 1px 0 rgba(255,255,255,0.65);}
+.tool-card.rank-parallel p{
+  color:#2b2f38;
+  background:rgba(255,255,255,0.55);
+  border-radius:4px;
+  padding:3px 6px;
+  display:inline-block;
+}
+.tool-card.rank-parallel:hover{box-shadow:0 6px 16px rgba(160,196,255,0.55);}
 
-/* 特シークレット。極の黒とも極PSの紫とも別に、深緑で分ける */
+/* 特は緑ベース。通常の特が明るい緑、シークレットが深緑で同系にそろえる */
 .tool-card.rank-toku{
-  background:linear-gradient(135deg, #1f3b30, #12241d);
-  border:1px solid #4e7a63;
+  background:linear-gradient(135deg, #2f6b4f, #1d4635);
+  border:1px solid #6aa387;
 }
-.tool-card.rank-toku h3{color:#cfe8d8;}
-.tool-card.rank-toku p{color:#aec4b7;}
-.tool-card.rank-toku:hover{box-shadow:0 6px 16px rgba(31,59,48,0.40);}
+.tool-card.rank-toku h3{color:#e2f5e9;}
+.tool-card.rank-toku p{color:#bfd9c9;}
+.tool-card.rank-toku:hover{box-shadow:0 6px 16px rgba(47,107,79,0.40);}
+
+.tool-card.rank-toku-s{
+  background:linear-gradient(135deg, #16362a, #0c1f18);
+  border:1px solid #3f6b57;
+}
+.tool-card.rank-toku-s h3{color:#cfe8d8;}
+.tool-card.rank-toku-s p{color:#a6bfb2;}
+.tool-card.rank-toku-s:hover{box-shadow:0 6px 16px rgba(22,54,42,0.45);}
 
 .page-title{font-family:'Noto Serif JP', serif;font-weight:900;font-size:26px;margin:0 0 8px;}
 .page-lead{color:var(--muted);font-size:13.5px;line-height:1.7;margin:0 0 8px;}

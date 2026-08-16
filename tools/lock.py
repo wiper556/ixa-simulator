@@ -92,6 +92,7 @@ ARRAYS = {"characters.html": "generals", "characters-kyoku.html": "kyokuGenerals
           "characters-kyoku-ps.html": "kyokuPsGenerals",
           "characters-parallel.html": "parallelGenerals",
           "characters-toku-s.html": "tokuSecretGenerals",
+          "characters-toku.html": "tokuGenerals",
           "characters-ketsu.html": "ketsuGenerals"}
 
 

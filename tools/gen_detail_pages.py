@@ -65,6 +65,7 @@ SRC = [
     ('characters-kyoku-ps.html', 'kyokuPsGenerals', 'kpRenderDetail', 'kpDetailBody', 'busho', '極武将', 'characters-kyoku-ps.html'),
     ('characters-parallel.html', 'parallelGenerals', 'tpRenderDetail', 'tpDetailBody', 'busho', '天パラレル武将', 'characters-parallel.html'),
     ('characters-toku-s.html', 'tokuSecretGenerals', 'tsRenderDetail', 'tsDetailBody', 'busho', '特シークレット武将', 'characters-toku-s.html'),
+    ('characters-toku.html', 'tokuGenerals', 'tkRenderDetail', 'tkDetailBody', 'busho', '特武将', 'characters-toku.html'),
     ('characters-ketsu.html', 'ketsuGenerals', 'ktRenderDetail',  'ktDetailBody',  'busho', '傑武将', 'characters-ketsu.html'),
     ('skills.html',           'skills',        'sklRenderDetail', 'sklDetailBody', 'skill', 'スキル', 'skills.html'),
 ]
@@ -345,6 +346,8 @@ def wire():
     # 既に入っているブロックは、ここで取り除く。
     for f in ('characters.html', 'characters-kyoku.html', 'characters-kyoku-ps.html',
               'characters-parallel.html', 'characters-toku-s.html',
+'characters-parallel.html', 'characters-toku-s.html',
+              'characters-toku.html',
               'characters-ketsu.html', 'skills.html'):
         s0 = io.open(f, encoding='utf-8', newline='').read()
         s = re.sub(r'    // PERMALINK:start.*?    // PERMALINK:end\n', '', s0, flags=re.S)

@@ -54,3 +54,4 @@
 2026-08-16	-5	hooks:tools/audit_characters.py,hooks:tools/extract_data.py,hooks:tools/gen_detail_pages.py,hooks:tools/lock.py,hooks:tools/prerender.py	武将データベースに天パラレル(characters-parallel.html / data/busho-parallel)と特シークレット(characters-toku-s.html / data/busho-toku-s)の2ページを新設し、9箇所の配線を足した。検査を緩める変更ではなく対象を増やす変更
 2026-08-16	-2	hooks:tools/audit_characters.py,hooks:tools/build_data.py	新DB2つ(天パラレル/特シークレット)の配線漏れを塞いだ。build_data.LIST_FIELDS に新配列を追加(無いと一覧ページに鍛錬表まで全部書き出される)、audit に extraAll と db=toku の判定を追加。検査を緩める変更ではない
 2026-08-16	-1	hooks:tools/audit_characters.py	「同じレアリティに同名」の検査からパラレル(3xxxx/4xxxx)を除外。パラレルは元カードと同じ武将の別バージョンで同名が正しく、番号を振ると元カードと見分けがつかなくなる。検査側の穴
+2026-08-16	-6	hooks:tools/audit_characters.py,hooks:tools/build_data.py,hooks:tools/extract_data.py,hooks:tools/gen_detail_pages.py,hooks:tools/lock.py,hooks:tools/prerender.py	特武将データベース(characters-toku.html / data/busho-toku)を新設し9箇所に配線。武将はまだ入れない器のみ。検査を緩める変更ではない
