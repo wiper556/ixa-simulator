@@ -21,7 +21,10 @@ import re
 import sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-DIRS = ("data/busho", "data/busho-kyoku", "data/busho-kyoku-ps", "data/busho-ketsu")
+# 2026-08-16: 新しく足したDBを入れ忘れていて、特シークレット13枚の chGuess が
+# 空のままだった(コメントは78〜516件と大量にあるのに)。DBを足したらここも増やす。
+DIRS = ("data/busho", "data/busho-kyoku", "data/busho-kyoku-ps", "data/busho-ketsu",
+        "data/busho-parallel", "data/busho-toku-s", "data/busho-toku")
 FIELD = "chGuess"
 # (章, 開始日, 終了日)。うぐさん提供(2026-08-16)。
 #

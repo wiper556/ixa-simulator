@@ -275,7 +275,7 @@
       return;
     }
     el.innerHTML = '<div class="tk-table-scroll"><table class="tk-list-table">'
-      + '<thead><tr><th data-sort="no">No.</th><th data-sort="name">武将名</th><th data-sort="ch">入手章</th><th data-sort="cost">コスト</th><th data-sort="troop">攻防</th><th data-sort="sub">兵科</th><th>特殊</th><th>スキル効果</th></tr></thead>'
+      + '<thead><tr><th data-sort="no">No.</th><th data-sort="name">武将名</th><th data-sort="ch">入手章</th><th data-sort="cost">コスト</th><th data-sort="troop">攻防</th><th data-sort="troop">兵科</th><th data-sort="sub">特殊</th><th>スキル効果</th></tr></thead>'
       + '<tbody>' + list.map(tkRenderListRow).join('') + '</tbody>'
       + '</table></div>';
   }

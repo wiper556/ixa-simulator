@@ -1,7 +1,7 @@
 {
  "name": "曲直瀬道三",
  "no": "3720",
- "ch": "未確認",
+ "ch": "9章",
  "cost": 0,
  "troop": "将特",
  "sub": "",
@@ -135,10 +135,12 @@
   "指揮兵数はカード画像(限界突破の状態で0/1)・ixanary(★0-0=1)・ixawiki(★0〜限界突破まで全て1)の3つが一致。ixanaryの成長表の限界突破以降の欄(601/1601/2401)はランクアップ+100を機械的に足しただけの値で、このカードでは実際には増えない。",
   "「模倣不可」はカード画像とixanaryにあり、ixawikiの本文にだけ無い。カード画像を正とした(B-00)。",
   "ixagno.blog.fc2.comを「医聖」「曲直瀬道三」で検索したが本カード専用の記事は見つからなかった(No.2502/2578の極の曲直瀬道三の記事のみ)。ixanary+ixawikiの2ソースとカード画像で確定した。",
-  "章はixanary/ixawikiのいずれにも記載が無く未確認。wikiの最古コメントは2014-12-21で、tools/chapter_guess.pyの章表(16章=2018-08-10〜)より前のため機械的な当たりも付かない。"
+  "章はixanary/ixawikiのいずれにも記載が無く未確認。wikiの最古コメントは2014-12-21で、tools/chapter_guess.pyの章表(16章=2018-08-10〜)より前のため機械的な当たりも付かない。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
  ],
  "reviewedOk": true,
  "wikiOldestComment": "2014-12-21",
  "wikiCommentCount": 447,
- "chGuess": null
+ "chGuess": "9章",
+ "chSource": "wikiOldestComment"
 }
