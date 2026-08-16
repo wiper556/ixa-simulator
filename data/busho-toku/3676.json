@@ -1,0 +1,34 @@
+{
+ "name": "天野隆重",
+ "no": "3676",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "槍砲器防",
+ "sub": "",
+ "effect": "防御320%上昇(最大指揮兵数と同数指揮時1.5倍)",
+ "furigana": "あまのたかしげ",
+ "illustrator": "ヤマザキミコ",
+ "imageFull": "assets/img/characters/no3676_full.png",
+ "imageChar": "assets/img/characters/no3676_char.png",
+ "atkBase": 860,
+ "atkGrowth": null,
+ "defBase": 950,
+ "defGrowth": null,
+ "tacticsBase": 450.0,
+ "tacticsGrowth": null,
+ "lv0Troops": 2700,
+ "rankGrades": {"yari": "A", "yumi": "C", "uma": "B", "ki": "B"},
+ "initialSkill": "天文ノ錯乱",
+ "skillDetail": "C/LV10 確率 44% 防御 320%上昇/対象:槍・砲・器\n①防御320%上昇する\n②この武将の最大指揮兵数と同数の兵士を指揮時防御効果を1.5倍にする",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・砲・器　確率 44% / 防御 320%上昇(最大指揮兵数と同数指揮時1.5倍)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当C)。カード画像(スキルLV10形式)から作成。武将名・ふりがな・統率・攻防兵法初期値・指揮兵数・カードNo.・スキル名/効果・illustratorはカード画像から読み取り。ch(章)・growth系は画像に記載が無いため null。"
+ ]
+}

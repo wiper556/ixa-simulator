@@ -1,0 +1,42 @@
+{
+ "name": "蘆名盛興",
+ "no": "4231",
+ "ch": null,
+ "cost": 2,
+ "troop": "槍防",
+ "sub": "",
+ "effect": "防御 15%上昇",
+ "furigana": "あしなもりおき",
+ "illustrator": "Natto-7",
+ "imageFull": "assets/img/characters/no4231_full.png",
+ "imageChar": "assets/img/characters/no4231_char.png",
+ "atkBase": 580,
+ "atkGrowth": 16,
+ "defBase": 620,
+ "defGrowth": 18,
+ "tacticsBase": 410.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 1800,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "D",
+  "uma": "D",
+  "ki": "C"
+ },
+ "initialSkill": "槍隊備え",
+ "skillDetail": "F/LV10 確率 10% 防御 15%上昇/対象:槍\n①防御 15%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍　確率 10% / 防御 15%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当E)。カード画像(スキルLV10形式)から。武将名「蘆名盛興」/ 職業「防」/ 極・覇表記なし / コスト2 / 統率 槍B・弓D・馬D・器C(4隅を個別にズームして確認) / 初期値 攻撃580・防御620・兵法410.0 / 指揮兵数 0/1800 / カードNo.4231 / 初期スキル「槍隊備え LV10」[F] 確率+10%・対象 槍・槍防:15%上昇 / Illust Natto-7。",
+  "成長値(攻撃+16・防御+18・兵法+2)とrankGrades(槍B/馬D/弓D/器C)はixanary.com/cards/4231・ixawiki.com(BushoCard/4231蘆名盛興)の2ソースとカード画像で一致。",
+  "ixawiki.comのカードページに合成候補テーブル(1次A/B/C/S1/S2、2次S1、3次S1)の記載があったが、本バッチは新規カードJSON作成のみが指示範囲のためsynthesisTableは未作成。初期スキルはFランクでdata/skill/ページの新規作成対象外。",
+  "章(ch)は両ソースとも記載が無く判断材料が無いためnullのまま。"
+ ]
+}

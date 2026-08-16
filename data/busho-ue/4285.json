@@ -1,0 +1,41 @@
+{
+ "name": "島津忠長",
+ "no": "4285",
+ "ch": null,
+ "cost": 2,
+ "troop": "馬攻",
+ "sub": "",
+ "effect": "馬攻10%上昇",
+ "furigana": "しまづただなが",
+ "illustrator": "Luke",
+ "imageFull": "assets/img/characters/no4285_full.png",
+ "imageChar": "assets/img/characters/no4285_char.png",
+ "atkBase": 640,
+ "atkGrowth": 19,
+ "defBase": 580,
+ "defGrowth": 17,
+ "tacticsBase": 440.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 1920,
+ "rankGrades": {
+  "yari": "C",
+  "yumi": "C",
+  "uma": "B",
+  "ki": "C"
+ },
+ "initialSkill": "騎馬隊襲撃",
+ "skillDetail": "F/LV10 確率 20% 馬攻 10%上昇/対象:馬\n①馬攻 10%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "馬　確率 20% / 馬攻 10%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当J)。カード画像(スキルLV10形式)から。武将名「島津忠長」/ 上 / コスト2 / 統率 槍C・弓C・馬B・器C(4隅アイコンを個別にズームして確認) / 初期値 攻撃640・防御580・兵法440.0 / 指揮兵数0/1920 / カードNo.4285一致 / 初期スキル「騎馬隊襲撃 LV10」[F] 確率+20%・対象 馬・馬攻10%上昇 / Illust Luke。",
+  "成長値(攻+19/防+17/兵法+2)・furigana・スキル文言はixanary.com/cards/4285の生HTMLと完全一致。同スキルは既存No.4257桑名吉成・No.4283木下頼継・No.4288浅利信種でも同一値で登録済み。",
+  "章は情報源に記載が無く未確認のためnull。初期スキルはFランクのためdata/skill/ページの新規作成対象外。"
+ ]
+}

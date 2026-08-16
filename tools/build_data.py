@@ -348,6 +348,64 @@ def build_chapters_block(chapters):
     return "\n".join(lines)
 
 
+# くじシミュレーターの「絵で出せる武将」の一覧(2026-08-16)。
+#
+# **手で並べない。** もとは gacha-simulator.html に手書きの配列があり、
+# 「画像を追加したらこの配列にNo.を足すこと」という注記が付いていた。
+# 足し忘れると、画像はあるのに色だけの札で出る。見た目が壊れるわけではないので
+# 気付けない。置き場所(assets/img/characters/no{No}_char.png)を見て作る。
+ART_FILE = "gacha-simulator.html"
+ART_BEGIN = ("  // BUILD:cardArtNos:start ここから下は tools/build_data.py が "
+             "assets/img/characters/ から生成しています。直接編集しないこと")
+ART_END = "  // BUILD:cardArtNos:end"
+
+
+def collect_card_art():
+    d = os.path.join(ROOT, "assets", "img", "characters")
+    out = []
+    for fn in os.listdir(d) if os.path.isdir(d) else []:
+        m = re.match(r"^no(\d+)_char\.png$", fn)
+        if m:
+            out.append(int(m.group(1)))
+    return sorted(out)
+
+
+def build_card_art_block(nos):
+    lines = [ART_BEGIN, "  const CARD_ART_NOS = new Set(["]
+    row = "    "
+    for n in nos:
+        piece = "%d, " % n
+        if len(row) + len(piece) > WRAP:
+            lines.append(row.rstrip())
+            row = "    "
+        row += piece
+    if row.strip():
+        lines.append(row.rstrip().rstrip(","))
+    lines.append("  ]);")
+    lines.append(ART_END)
+    return "\n".join(lines)
+
+
+def replace_card_art(dry=False):
+    p = os.path.join(ROOT, ART_FILE)
+    if not os.path.exists(p):
+        return 0
+    text = io.open(p, encoding="utf-8", newline="").read()
+    lo, hi = text.find(ART_BEGIN), text.find(ART_END)
+    if lo < 0 or hi < 0:
+        print("  %-24s [停止] BUILD:cardArtNos のマーカーが無い" % ART_FILE)
+        return 1
+    nos = collect_card_art()
+    new = text[:lo] + build_card_art_block(nos) + text[hi + len(ART_END):]
+    same = new == text
+    print("  %-24s %3d件 %s (くじの絵)"
+          % (ART_FILE, len(nos), "変化なし" if same else "書き換え"))
+    if not same and not dry:
+        io.open(p, "w", encoding="utf-8", newline="").write(new)
+        return 1
+    return 0
+
+
 def replace_chapters(dry=False):
     p = os.path.join(ROOT, CHAPTERS_FILE)
     text = io.open(p, encoding="utf-8", newline="").read()
@@ -446,6 +504,7 @@ def main(dry=False):
             changed += 1
     changed += replace_chapters(dry)
     changed += replace_axis(dry)
+    changed += replace_card_art(dry)
     print("書き換えたページ %d件%s" % (changed, "(--dry-run)" if dry else ""))
 
 

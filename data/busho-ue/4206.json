@@ -1,0 +1,41 @@
+{
+ "name": "南殿",
+ "no": "4206",
+ "ch": null,
+ "cost": 1.5,
+ "troop": "器防",
+ "sub": "",
+ "effect": "器防20%上昇",
+ "furigana": "みなみどの",
+ "illustrator": "ちゃきん",
+ "imageFull": "assets/img/characters/no4206_full.png",
+ "imageChar": "assets/img/characters/no4206_char.png",
+ "atkBase": 530,
+ "atkGrowth": 15,
+ "defBase": 590,
+ "defGrowth": 17,
+ "tacticsBase": 420.0,
+ "tacticsGrowth": 1.5,
+ "lv0Troops": 1500,
+ "rankGrades": {
+  "yari": "D",
+  "yumi": "C",
+  "uma": "C",
+  "ki": "B"
+ },
+ "initialSkill": "兵器布陣",
+ "skillDetail": "E/LV10 確率 15% 防御 20%上昇/対象:器\n①防御 20%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "器　確率 15% / 防御 20%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当I)。カード画像(スキルLV10形式)から。武将名「南殿」/ 職業「姫」/ コスト1.5 / 統率 槍D・弓C・馬C・器B(4隅アイコンをズームして確認) / 初期値 攻撃530・防御590・兵法420.0 / 指揮兵数0/1500 / カードNo.4206一致 / 初期スキル「兵器布陣 LV10」[E] 確率+15%・対象 器・防御20%上昇 / Illust ちゃきん。",
+  "成長値(攻+15/防+17/兵法+1.5)はixanary.com/cards/4206の生HTML内カードpropsで確認(カード画像には成長値の記載なし)。スキル本文もixanary生HTMLのskill-box-bodyで「確率：+15% / 対象 器\\n防御：20%上昇」と完全一致。",
+  "章は情報源に記載なく未確認のためnull。"
+ ]
+}

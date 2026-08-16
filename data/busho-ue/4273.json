@@ -1,0 +1,41 @@
+{
+ "name": "屋代正国",
+ "no": "4273",
+ "ch": null,
+ "cost": 2,
+ "troop": "弓防",
+ "sub": "",
+ "effect": "弓防13%上昇(武将のコストで効果が変化)",
+ "furigana": "やしろまさくに",
+ "illustrator": "まっつん！",
+ "imageFull": "assets/img/characters/no4273_full.png",
+ "imageChar": "assets/img/characters/no4273_char.png",
+ "atkBase": 570,
+ "atkGrowth": 15,
+ "defBase": 640,
+ "defGrowth": 18,
+ "tacticsBase": 440.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 1880,
+ "rankGrades": {
+  "yari": "C",
+  "yumi": "B",
+  "uma": "C",
+  "ki": "C"
+ },
+ "initialSkill": "弓隊守護",
+ "skillDetail": "E/LV10 確率 25% 弓防 13%上昇/対象:弓\n①弓防 13%上昇する(武将のコストで効果が変化する)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓　確率 25% / 弓防 13%上昇(武将のコストで効果が変化)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当J)。カード画像(スキルLV10形式)から。武将名「屋代正国」/ 上 / コスト2 / 統率 槍C・弓B・馬C・器C(4隅アイコンを個別にズームして確認) / 初期値 攻撃570・防御640・兵法440.0 / 指揮兵数0/1880 / カードNo.4273一致 / 初期スキル「弓隊守護 LV10」[E] 確率+25%・対象 弓・弓防13%上昇(武将のコストで効果が変化します) / Illust まっつん！。",
+  "イラストレーター名はカード画像の低解像度では末尾が数字「1」にも見えたが、ixanary.com/cards/4273の生HTMLで「まっつん！」(全角感嘆符)と確認し訂正して採用。成長値(攻+15/防+18/兵法+2)・furigana・スキル文言は同ソースでカード画像と一致。",
+  "章は情報源に記載が無く未確認のためnull。初期スキルはEランクのためdata/skill/ページの新規作成対象外。"
+ ]
+}

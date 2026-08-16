@@ -1,0 +1,42 @@
+{
+ "name": "熊谷信直",
+ "no": "4292",
+ "ch": null,
+ "cost": 2,
+ "troop": "弓攻",
+ "sub": "",
+ "effect": "攻撃 12%上昇",
+ "furigana": "くまがいのぶなお",
+ "illustrator": "Luke",
+ "imageFull": "assets/img/characters/no4292_full.png",
+ "imageChar": "assets/img/characters/no4292_char.png",
+ "atkBase": 650,
+ "atkGrowth": 19,
+ "defBase": 560,
+ "defGrowth": 17,
+ "tacticsBase": 450.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 1940,
+ "rankGrades": {
+  "yari": "C",
+  "yumi": "B",
+  "uma": "C",
+  "ki": "C"
+ },
+ "initialSkill": "弓隊奇襲",
+ "skillDetail": "E/LV10 確率 30% 攻撃 12%上昇/対象:弓\n①攻撃 12%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓　確率 30% / 攻撃 12%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当E)。カード画像(スキルLV10形式)から。武将名「熊谷信直」/ 職業「攻」/ 極・覇表記なし / コスト2 / 統率 槍C・弓B・馬C・器C(4隅を個別にズームして確認) / 初期値 攻撃650・防御560・兵法450.0 / 指揮兵数 0/1940 / カードNo.4292 / 初期スキル「弓隊奇襲 LV10」[E] 確率+30%・対象 弓・弓攻:12%上昇 / Illust Luke。",
+  "成長値(攻撃+19・防御+17・兵法+2)とrankGrades(槍C/馬C/弓B/器C)はixanary.com/cards/4292・ixawiki.com(BushoCard/4292熊谷信直)の2ソースとカード画像で一致。",
+  "ixawiki.comのカードページに合成候補テーブルの記載があったが、本バッチは新規カードJSON作成のみが指示範囲のためsynthesisTableは未作成。初期スキルはEランクでdata/skill/ページの新規作成対象外。",
+  "章(ch)は両ソースとも記載が無く判断材料が無いためnullのまま。"
+ ]
+}

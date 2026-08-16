@@ -1,0 +1,41 @@
+{
+ "name": "菅沼定盈",
+ "no": "3678",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "弓砲器防",
+ "sub": "",
+ "effect": "防御 380%上昇(敵軍1部隊で防御効果1.5倍)",
+ "furigana": "すがぬまさだみつ",
+ "illustrator": "nabe",
+ "imageFull": "assets/img/characters/no3678_full.png",
+ "imageChar": "assets/img/characters/no3678_char.png",
+ "atkBase": 860,
+ "atkGrowth": 27,
+ "defBase": 960,
+ "defGrowth": 36,
+ "tacticsBase": 450.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 2700,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "A",
+  "uma": "B",
+  "ki": "C"
+ },
+ "initialSkill": "子福者",
+ "skillDetail": "C/LV10 確率 60% 防御 380%上昇/対象:弓・砲・器\n①防御 380%上昇する\n②敵軍1部隊で防御効果1.5倍",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓・砲・器　確率 60% / 防御 380%上昇(敵軍1部隊で防御効果1.5倍)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当A)。カード画像(スキルLV10形式)から。武将名「菅沼定盈」/ふりがな「すがぬまさだみつ」/特/コスト2.5/統率 槍B・弓A・馬B・器C(4隅個別ズームで確認)/攻撃860・防御960・兵法450.0/指揮兵数0/2700/カードNo.3678/スキル「子福者LV10」[C] 確率:+60%・対象 弓/砲/器・防御:380%上昇・(敵軍1部隊で防御効果1.5倍)/Illust:nabe。",
+  "成長値(攻撃+27/防御+36/兵法+2)・イラストレーター(nabe)・スキルLV10効果(確率60%/防御380%上昇)はixanary.com/cards/3678の生HTML埋め込みJSON・スキルテーブルとカード画像が一致。",
+  "章はixanary.com/cards/3678に記載なし、ixawiki側は今回のバッチ(35xx〜36xx台)で軒並み未作成だったため個別確認を省略しnullのままとした(要申し送り)。"
+ ]
+}

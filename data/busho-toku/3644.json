@@ -1,0 +1,41 @@
+{
+ "name": "井上元兼",
+ "no": "3644",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "弓砲器攻",
+ "sub": "",
+ "effect": "攻撃385%上昇(合流攻撃時は必ずスキル発動)",
+ "furigana": "いのうえもとかね",
+ "illustrator": "COGA",
+ "imageFull": "assets/img/characters/no3644_full.png",
+ "imageChar": "assets/img/characters/no3644_char.png",
+ "atkBase": 950,
+ "atkGrowth": 34,
+ "defBase": 850,
+ "defGrowth": 26,
+ "tacticsBase": 450.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 2700,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "A",
+  "uma": "C",
+  "ki": "B"
+ },
+ "initialSkill": "井上党",
+ "skillDetail": "C/LV10 確率 23% 攻撃 385%上昇/対象:弓・砲・器\n①攻撃 385%上昇する\n②合流攻撃時は必ずスキル発動する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓・砲・器　確率 23% / 攻撃 385%上昇(合流攻撃時は必ずスキル発動)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当B)。カード画像(スキルLV10形式)から。武将名「井上元兼」/ふりがな「いのうえもとかね」/特/コスト2.5/統率 槍B・弓A・馬C・器B(4隅を個別にズームして確認)/攻撃950・防御850・兵法450.0/指揮兵数0/2700/カードNo.3644(ファイル名と一致)/スキル「井上党LV10」[C] 確率:+23%・対象 弓/砲/器・攻撃:385%上昇・合流攻撃時は必ずスキル発動/Illust COGA(カード画像は小さく「OOGA」に見えたが、ixanary.com/cards/3644のテキストとカード画像下部のIllust欄を再度ズームして「COGA」と確認)。",
+  "成長値(攻撃+34/防御+26/兵法+2)はixanary.com/cards/3644のテキストで確認(カード画像に成長値の記載は無い)。",
+  "章はixanary.com/cards/3644に記載が無く、未確認のため null。"
+ ]
+}

@@ -1,0 +1,34 @@
+{
+ "name": "石川高信",
+ "no": "3680",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "槍砲器攻",
+ "sub": "",
+ "effect": "攻撃500%上昇(合流攻撃時は発動率3倍)",
+ "furigana": "いしかわたかのぶ",
+ "illustrator": "白藤与一",
+ "imageFull": "assets/img/characters/no3680_full.png",
+ "imageChar": "assets/img/characters/no3680_char.png",
+ "atkBase": 960,
+ "atkGrowth": null,
+ "defBase": 860,
+ "defGrowth": null,
+ "tacticsBase": 460.0,
+ "tacticsGrowth": null,
+ "lv0Troops": 3420,
+ "rankGrades": {"yari": "A", "yumi": "B", "uma": "B", "ki": "C"},
+ "initialSkill": "三日月ノ守人",
+ "skillDetail": "C/LV10 確率 20% 攻撃 500%上昇/対象:槍・砲・器\n①攻撃500%上昇する\n②合流攻撃時は発動率が3倍になる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・砲・器　確率 20% / 攻撃 500%上昇(合流攻撃時は発動率3倍)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当C)。カード画像(スキルLV10形式)から作成。武将名・ふりがな・統率・攻防兵法初期値・指揮兵数・カードNo.・スキル名/効果・illustratorはカード画像から読み取り。ch(章)・growth系は画像に記載が無いため null。"
+ ]
+}

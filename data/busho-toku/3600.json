@@ -1,0 +1,41 @@
+{
+ "name": "宇都宮国綱",
+ "no": "3600",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "馬砲器攻防",
+ "sub": "",
+ "effect": "攻撃 220%上昇+防御 220%上昇(部隊コスト14以下で効果1.5倍)",
+ "furigana": "うつのみやくにつな",
+ "illustrator": "セツ",
+ "imageFull": "assets/img/characters/no3600_full.png",
+ "imageChar": "assets/img/characters/no3600_char.png",
+ "atkBase": 890,
+ "atkGrowth": 30,
+ "defBase": 890,
+ "defGrowth": 30,
+ "tacticsBase": 470.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 2680,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "A",
+  "uma": "C",
+  "ki": "B"
+ },
+ "initialSkill": "志興壮剣",
+ "skillDetail": "C/LV10 確率 35% 攻撃 220%上昇+防御 220%上昇/対象:馬・砲・器\n①攻撃 220%上昇する\n②防御 220%上昇する\n③部隊コスト14以下で効果が1.5倍になる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "馬・砲・器　確率 35% / 攻撃 220%上昇+防御 220%上昇(部隊コスト14以下で効果1.5倍)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当D)。カード画像(スキルLV10形式)から。武将名「宇都宮国綱」/ふりがな「うつのみやくにつな」/特/コスト2.5/統率 槍B・弓A・馬C・器B(4隅バッジ)/攻撃890・防御890・兵法470.0/指揮兵数0/2680/カードNo.3600/スキル「志興壮剣LV10」[C] 確率+35%・対象 馬/砲/器・攻撃220%上昇 防御220%上昇・部隊コスト14以下で効果1.5倍/Illust セツ。",
+  "成長値(攻撃+30/防御+30/兵法+2)・イラストレーター・ステータス初期値・指揮兵数はixanary.com/cards/3600の生HTML埋め込みJSONとカード画像が完全一致。",
+  "章はixanary.com/cards/3600に記載が無く未確認のためnullのまま。"
+ ]
+}

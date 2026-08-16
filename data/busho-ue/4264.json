@@ -1,0 +1,41 @@
+{
+ "name": "尾藤知宣",
+ "no": "4264",
+ "ch": null,
+ "cost": 2,
+ "troop": "砲防",
+ "sub": "",
+ "effect": "砲防12%上昇",
+ "furigana": "びとうとものぶ",
+ "illustrator": "三好載克",
+ "imageFull": "assets/img/characters/no4264_full.png",
+ "imageChar": "assets/img/characters/no4264_char.png",
+ "atkBase": 580,
+ "atkGrowth": 16,
+ "defBase": 620,
+ "defGrowth": 18,
+ "tacticsBase": 440.0,
+ "tacticsGrowth": 1.5,
+ "lv0Troops": 1870,
+ "rankGrades": {
+  "yari": "D",
+  "yumi": "C",
+  "uma": "D",
+  "ki": "B"
+ },
+ "initialSkill": "鉄砲隊堅陣",
+ "skillDetail": "F/LV10 確率 25% 砲防 12%上昇/対象:砲\n①砲防 12%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "砲　確率 25% / 砲防 12%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当G)。カード画像(スキルLV10形式)から。武将名「尾藤知宣」/ 職業「上」/ 極・覇表記なし / コスト2 / 統率(4隅バッジ) 槍D・馬D・弓C・器B / 初期値 攻撃580・防御620・兵法440.0 / 指揮兵数 0/1870 / カードNo.4264 / 初期スキル「鉄砲隊堅陣 LV10」[F] 確率+25%・対象 砲・砲防(防御)12%上昇 / Illust:三好載克。",
+  "成長値(攻撃+16・防御+18・兵法+1.5)とrankGrades(槍D/馬D/弓C/器B)はixanary.com/cards/4264・ixawiki.com(BushoCard/4264尾藤知宣)の2ソースとカード画像で一致。スキル効果もLV10=確率25%/砲防12%上昇で両ソースとカード画像が一致し、コスト依存の注記は本スキルには無い。",
+  "章(ch)はixanary/ixawikiともに記載が無く判断材料が無いためnullのまま。本バッチはカードJSON新規作成のみが指示範囲のためsynthesisTableは未作成。初期スキルはFランクのためdata/skill/ページの新規作成対象外。"
+ ]
+}

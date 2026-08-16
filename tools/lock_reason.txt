@@ -63,3 +63,4 @@
 2026-08-16	-1	hooks:tools/gen_detail_pages.py	鍛錬表の必要ポイント欄が「パラレル」の武将に、パラレルカードのページへのリンクを付けた。うちにページがある12体だけに付けるため、登録済みパラレルの番号を gen_detail_pages が window.__PARALLEL_NOS で渡す。検査を緩める変更ではない
 2026-08-16	-2	hooks:tools/audit_characters.py,hooks:tools/audit_selftest.py	登録済みスキル183件をシミュレーターへ反映する仕組みを足した(tools/build_special_skills.py)。あわせて監査に P-05(シミュレーターの武将名・初期スキル名が正本と違う)を追加し、自己テストに注入ケースを2つ置いた。検査を緩める変更ではなく対象を増やす変更
 2026-08-16	-1	hooks:tools/audit_selftest.py	自己テストの注入位置を直す(2614の initialSkill は rankGrades の後ろにあるのでアンカーが当たっていなかった)
+2026-08-16	-2	hooks:tools/audit_characters.py,hooks:tools/build_data.py	上レアリティ(4桁の4始まり)を監査の_rarityに追加し、くじシミュレーターの絵つき武将一覧(CARD_ART_NOS)を手書きから assets/img/characters/ の生成に変えた。特77体・上78体の新規登録に伴う配線。検査を緩める変更ではない

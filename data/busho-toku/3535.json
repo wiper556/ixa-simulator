@@ -1,0 +1,41 @@
+{
+ "name": "松平家忠",
+ "no": "3535",
+ "ch": null,
+ "cost": 3,
+ "troop": "全攻破",
+ "sub": "",
+ "effect": "破壊した耐久値に応じて資源獲得(獲得率15%)",
+ "furigana": "まつだいらいえただ",
+ "illustrator": "しいたけ",
+ "imageFull": "assets/img/characters/no3535_full.png",
+ "imageChar": "assets/img/characters/no3535_char.png",
+ "atkBase": 890,
+ "atkGrowth": 32,
+ "defBase": 880,
+ "defGrowth": 28,
+ "tacticsBase": 470.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 3020,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "C",
+  "uma": "B",
+  "ki": "B"
+ },
+ "initialSkill": "鉄魂不撓",
+ "skillDetail": "C/LV10 確率 100% 攻撃 90%上昇/対象:全\n①攻撃 90%上昇する\n②破壊 30%上昇する\n③資源獲得率15%(破壊した耐久値に応じて資源獲得)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 攻撃 90%上昇+破壊 30%上昇(資源獲得率15%・破壊した耐久値に応じて資源獲得)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当A)。カード画像(スキルLV10形式)から。武将名「松平家忠」/ふりがな「まつだいらいえただ」/特/コスト3/統率 槍A・弓C・馬B・器B(4隅個別ズームで確認)/攻撃890・防御880・兵法470.0/指揮兵数0/3020/カードNo.3535/スキル「鉄魂不撓LV10」[C] 確率:+100%・対象 全・攻撃:90%上昇 破壊:30%上昇・資源獲得率:15%・破壊した耐久値に応じて資源獲得/Illust:しいたけ。",
+  "成長値(攻撃+32/防御+28/兵法+2)・イラストレーター(しいたけ)・スキルLV10効果(確率100%/攻撃90%上昇/破壊30%上昇)はixanary.com/cards/3535の生HTML埋め込みJSON・スキルテーブルとカード画像が一致。",
+  "章はixanary.com/cards/3535に記載なし、ixawiki.com/index.php?松平家忠は未作成ページ(編集フォームが返る)のため確認できず、chはnullのまま。"
+ ]
+}

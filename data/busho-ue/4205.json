@@ -1,0 +1,43 @@
+{
+ "name": "青柳",
+ "no": "4205",
+ "ch": null,
+ "cost": 1.5,
+ "troop": "全速",
+ "sub": "",
+ "effect": "全速 20%上昇",
+ "furigana": "あおやなぎ",
+ "illustrator": "双羽純",
+ "imageFull": "assets/img/characters/no4205_full.png",
+ "imageChar": "assets/img/characters/no4205_char.png",
+ "atkBase": 590,
+ "atkGrowth": 17,
+ "defBase": 520,
+ "defGrowth": 15,
+ "tacticsBase": 390.0,
+ "tacticsGrowth": 1.5,
+ "lv0Troops": 1550,
+ "rankGrades": {
+  "yari": "C",
+  "yumi": "B",
+  "uma": "C",
+  "ki": "D"
+ },
+ "initialSkill": "迅速行軍",
+ "skillDetail": "E/LV10 確率 100% 全速 20%上昇/対象:全\n①全速 20%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 全速 20%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当H)。カード画像(スキルLV10形式)から。武将名「青柳」/上/コスト1.5/統率 槍C・弓B・馬C・器D(4隅を個別にズームして確認)/攻撃590・防御520・兵法390.0/指揮兵数0/1550/カードNo.4205/スキル「迅速行軍LV10」[E] 確率:+100%・対象 全・全速:20%上昇/Illust:双羽純(カード画像の潰れた文字をズームして読み取り)。",
+  "成長値(攻撃+17/防御+15/兵法+1.5)・イラストレーター名(双羽純)はixanary.com/cards/4205の生HTMLで確認しカード画像と一致。統率(槍C/弓B/馬C/器D)・コスト1.5・指揮1550・初期値(590/520/390)もixanaryの武将データ表と一致。",
+  "ixawiki.com/index.php?青柳 は未作成ページ(編集フォームが返るのみ)のため確認不可。章はixanary/ixawikiいずれにも記載がなく null のまま。",
+  "特・上カードは合成テーブル・TR段階が存在しない前提(data/busho-toku/3418.jsonの前例に合わせ、trTableはLV10のみ)。ixanaryのカードページにもTR/鍛錬・合成候補の記載なし。",
+  "初期スキル「迅速行軍」はEランクのためSランク以上のskillページ作成規約には該当せず、data/skill/迅速行軍.json は作成していない。"
+ ]
+}

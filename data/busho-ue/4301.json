@@ -1,0 +1,42 @@
+{
+ "name": "羽田正親",
+ "no": "4301",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "槍攻",
+ "sub": "",
+ "effect": "槍攻 15%上昇",
+ "furigana": "はねだまさちか",
+ "illustrator": "まっつん！",
+ "imageFull": "assets/img/characters/no4301_full.png",
+ "imageChar": "assets/img/characters/no4301_char.png",
+ "atkBase": 670,
+ "atkGrowth": 20,
+ "defBase": 550,
+ "defGrowth": 15,
+ "tacticsBase": 450.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 2290,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "C",
+  "uma": "C",
+  "ki": "C"
+ },
+ "initialSkill": "槍隊進撃",
+ "skillDetail": "F/LV10 確率 10% 槍攻 15%上昇/対象:槍\n①槍攻 15%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍　確率 10% / 槍攻 15%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当H)。カード画像(スキルLV10形式)から。武将名「羽田正親」/上/コスト2.5/統率 槍B・弓C・馬C・器C(4隅を個別にズームして確認)/攻撃670・防御550・兵法450.0/指揮兵数0/2290/カードNo.4301/スキル「槍隊進撃LV10」[F] 確率:+10%・対象 槍・槍攻:15%上昇/Illust:まっつん！(カード画像下部をズームして確認)。",
+  "成長値(攻撃+20/防御+15/兵法+2)はixanary.com/cards/4301の武将データ表で確認しカード画像の初期値(670/550/450.0)・指揮2290・コスト2.5・イラストレーター名とも一致。No.4277山中長俊と同じ「槍隊進撃」スキル・同じイラストレーターだが数値・武将は別。",
+  "ixawikiは未確認(標準2ソースのうちixanaryで裏取りできたため未照合)。章はixanaryに記載がなく null のまま。",
+  "上カードは合成テーブル・TR段階が存在しない前提(data/busho-toku/3418.jsonの前例に合わせ、trTableはLV10のみ)。ixanaryのカードページにもTR/鍛錬・合成候補の記載なし。初期スキル「槍隊進撃」はFランクのためSランク以上のskillページ作成規約には該当せず、data/skill/槍隊進撃.json は作成していない(No.4277で既に判断済み)。"
+ ]
+}

@@ -1,0 +1,42 @@
+{
+ "name": "津川義冬",
+ "no": "4307",
+ "ch": null,
+ "cost": 2,
+ "troop": "弓防",
+ "sub": "",
+ "effect": "弓防 13%上昇(武将のコストで効果が変化)",
+ "furigana": "つがわよしふゆ",
+ "illustrator": "レディ",
+ "imageFull": "assets/img/characters/no4307_full.png",
+ "imageChar": "assets/img/characters/no4307_char.png",
+ "atkBase": 550,
+ "atkGrowth": 15,
+ "defBase": 650,
+ "defGrowth": 18,
+ "tacticsBase": 460.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 1960,
+ "rankGrades": {
+  "yari": "C",
+  "yumi": "B",
+  "uma": "C",
+  "ki": "C"
+ },
+ "initialSkill": "弓隊守護",
+ "skillDetail": "E/LV10 確率 25% 弓防 13%上昇/対象:弓\n①弓防 13%上昇する(武将のコストで効果が変化する)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓　確率 25% / 弓防 13%上昇(武将のコストで効果が変化)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当H)。カード画像(スキルLV10形式)から。武将名「津川義冬」/上/コスト2/統率 槍C・弓B・馬C・器C(4隅を個別にズームして確認)/攻撃550・防御650・兵法460.0/指揮兵数0/1960/カードNo.4307/スキル「弓隊守護LV10」[E] 確率:+25%・対象 弓・弓防:13%上昇(武将のコストで効果が変化します)/Illust:レディ(カード画像下部をズームして確認、「セレディ」ではなく「レディ」)。",
+  "成長値(攻撃+15/防御+18/兵法+2)・スキル効果数値(弓防13%上昇)はixanary.com/cards/4307の武将データ表・スキル効果表の両方でカード画像と完全一致。",
+  "ixawikiは未確認(標準2ソースのうちixanaryで裏取りできたため未照合)。章はixanaryに記載がなく null のまま。",
+  "上カードは合成テーブル・TR段階が存在しない前提(data/busho-toku/3418.jsonの前例に合わせ、trTableはLV10のみ)。ixanaryのカードページにもTR/鍛錬・合成候補の記載なし。初期スキル「弓隊守護」はEランクのためSランク以上のskillページ作成規約には該当せず、data/skill/弓隊守護.json は作成していない。"
+ ]
+}

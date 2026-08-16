@@ -1,0 +1,41 @@
+{
+ "name": "容光院",
+ "no": "4224",
+ "ch": null,
+ "cost": 1.5,
+ "troop": "弓防",
+ "sub": "",
+ "effect": "弓防13%上昇(武将のコストで効果が変化)",
+ "furigana": "ようこういん",
+ "illustrator": "isuZu",
+ "imageFull": "assets/img/characters/no4224_full.png",
+ "imageChar": "assets/img/characters/no4224_char.png",
+ "atkBase": 550,
+ "atkGrowth": 15,
+ "defBase": 580,
+ "defGrowth": 17,
+ "tacticsBase": 420.0,
+ "tacticsGrowth": 1.5,
+ "lv0Troops": 1540,
+ "rankGrades": {
+  "yari": "D",
+  "yumi": "B",
+  "uma": "C",
+  "ki": "C"
+ },
+ "initialSkill": "弓隊守護",
+ "skillDetail": "E/LV10 確率 25% 弓防 13%上昇/対象:弓\n①弓防 13%上昇する(武将のコストで効果が変化する)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓　確率 25% / 弓防 13%上昇(武将のコストで効果が変化)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当J)。カード画像(スキルLV10形式)から。武将名「容光院」/ 上 / コスト1.5 / 統率 槍D・弓B・馬C・器C(4隅アイコンを個別にズームして確認、順序は左上=槍・右上=馬・左下=弓・右下=器) / 初期値 攻撃550・防御580・兵法420.0 / 指揮兵数0/1540 / カードNo.4224一致 / 初期スキル「弓隊守護 LV10」[E] 確率+25%・対象 弓・弓防13%上昇(武将のコストで効果が変化します) / Illust isuZu。",
+  "成長値(攻+15/防+17/兵法+1.5)・furigana・スキル文言はixanary.com/cards/4224の生HTMLと完全一致。",
+  "章は情報源に記載が無く未確認のためnull。上カードは合成テーブル・TR段階が存在しない前提(先例のbusho-ue登録に合わせtrTableはLV10のみ)。初期スキルはEランクのためdata/skill/ページの新規作成対象外。"
+ ]
+}

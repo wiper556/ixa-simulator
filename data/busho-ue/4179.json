@@ -1,0 +1,42 @@
+{
+ "name": "近江の方",
+ "no": "4179",
+ "ch": null,
+ "cost": 1.5,
+ "troop": "弓防",
+ "sub": "",
+ "effect": "弓防9.75%上昇(武将のコストで効果が変化)",
+ "furigana": "おうみのかた",
+ "illustrator": "xoxocia",
+ "imageFull": "assets/img/characters/no4179_full.png",
+ "imageChar": "assets/img/characters/no4179_char.png",
+ "atkBase": 450,
+ "atkGrowth": 14,
+ "defBase": 480,
+ "defGrowth": 16,
+ "tacticsBase": 370.0,
+ "tacticsGrowth": 1.5,
+ "lv0Troops": 1240,
+ "rankGrades": {
+  "yari": "D",
+  "yumi": "B",
+  "uma": "E",
+  "ki": "D"
+ },
+ "initialSkill": "弓隊守護",
+ "skillDetail": "E/LV10 確率 25% 弓防 9.75%上昇/対象:弓\n①弓防 9.75%上昇する(武将のコストで効果が変化)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓　確率 25% / 弓防 9.75%上昇(武将のコストで効果が変化)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当G)。カード画像(スキルLV10形式)から。武将名「近江の方」/ 職業「上」/ 極・覇表記なし / コスト1.5 / 統率(4隅バッジ) 槍D・馬E・弓B・器D / 初期値 攻撃450・防御480・兵法370.0 / 指揮兵数 0/1240 / カードNo.4179 / 初期スキル「弓隊守護 LV10」[E] 確率+25%・対象 弓・弓防9.75%上昇(武将のコストで効果が変化します) / Illust:xoxocia。",
+  "成長値(攻撃+14・防御+16・兵法+1.5)とrankGrades(槍D/馬E/弓B/器D)はixanary.com/cards/4179・ixawiki.com(BushoCard/4179近江の方)の2ソースとカード画像で一致。",
+  "スキル効果%は「武将のコストで効果が変化します」という注記付きで、ixanary.com/skills/防：弓隊守護の一般ページではLV10=確率25%/弓防13%と表示されるが、これはコスト2基準等の別値と見られる。本カード(コスト1.5)固有の値である画像上のLV10=確率25%/弓防9.75%をそのまま採用した。ixawiki側の要約欄はLV1相当(確率15%/弓防5.25%)を表示しており矛盾ではない。",
+  "章(ch)はixanary/ixawikiともに記載が無く判断材料が無いためnullのまま。ixawikiの合成候補テーブル(1次A/B/C/S1/S2、2次候補S1、3次候補S1)の記載を確認したが、本バッチはカードJSON新規作成のみが指示範囲のためsynthesisTableは未作成。初期スキルはEランクのためdata/skill/ページの新規作成対象外。"
+ ]
+}

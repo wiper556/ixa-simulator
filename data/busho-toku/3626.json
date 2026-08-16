@@ -1,0 +1,41 @@
+{
+ "name": "毛受勝照",
+ "no": "3626",
+ "ch": null,
+ "cost": 3,
+ "troop": "全防",
+ "sub": "",
+ "effect": "防御 190%上昇(武将HP60以下で効果2倍)",
+ "furigana": "めんじゅかつてる",
+ "illustrator": "こぶとりらゐど",
+ "imageFull": "assets/img/characters/no3626_full.png",
+ "imageChar": "assets/img/characters/no3626_char.png",
+ "atkBase": 840,
+ "atkGrowth": 25,
+ "defBase": 940,
+ "defGrowth": 34,
+ "tacticsBase": 440.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 3080,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "C",
+  "uma": "B",
+  "ki": "B"
+ },
+ "initialSkill": "血染金幣",
+ "skillDetail": "C/LV10 確率 55% 防御 190%上昇/対象:全\n①防御 190%上昇する\n②武将HPが60以下のとき防御効果が2倍になる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 55% / 防御 190%上昇(武将HP60以下で効果2倍)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当D)。カード画像(スキルLV10形式)から。武将名「毛受勝照」/ふりがな「めんじゅかつてる」/特/コスト3/統率 槍A・弓C・馬B・器B(4隅バッジ)/攻撃840・防御940・兵法440.0/指揮兵数0/3080/カードNo.3626/スキル「血染金幣LV10」[C] 確率+55%・対象 全・防御190%上昇・武将HPが60以下のとき防御効果を2倍/Illust こぶとりらゐど。",
+  "成長値(攻撃+25/防御+34/兵法+2)・イラストレーター・ステータス初期値・指揮兵数はixanary.com/cards/3626の生HTML埋め込みJSONとカード画像が完全一致。",
+  "章はixanary.com/cards/3626に記載が無く未確認のためnullのまま。"
+ ]
+}

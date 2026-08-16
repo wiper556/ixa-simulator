@@ -1,0 +1,42 @@
+{
+ "name": "金子元宅",
+ "no": "4262",
+ "ch": null,
+ "cost": 2,
+ "troop": "槍攻",
+ "sub": "",
+ "effect": "攻撃 15%上昇",
+ "furigana": "かねこもといえ",
+ "illustrator": "匡吉",
+ "imageFull": "assets/img/characters/no4262_full.png",
+ "imageChar": "assets/img/characters/no4262_char.png",
+ "atkBase": 620,
+ "atkGrowth": 18,
+ "defBase": 570,
+ "defGrowth": 16,
+ "tacticsBase": 430.0,
+ "tacticsGrowth": 1.5,
+ "lv0Troops": 1860,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "C",
+  "uma": "D",
+  "ki": "C"
+ },
+ "initialSkill": "槍隊進撃",
+ "skillDetail": "F/LV10 確率 10% 攻撃 15%上昇/対象:槍\n①攻撃 15%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍　確率 10% / 攻撃 15%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当E)。カード画像(スキルLV10形式)から。武将名「金子元宅」/ 職業「攻」/ 極・覇表記なし / コスト2 / 統率 槍B・弓C・馬D・器C(4隅を個別にズームして確認) / 初期値 攻撃620・防御570・兵法430.0 / 指揮兵数 0/1860 / カードNo.4262 / 初期スキル「槍隊進撃 LV10」[F] 確率+10%・対象 槍・槍攻:15%上昇 / Illust 匡吉(低解像度では国吉とも読めたため拡大再確認)。",
+  "成長値(攻撃+18・防御+16・兵法+1.5)とrankGrades(槍B/馬D/弓C/器C)はixanary.com/cards/4262・ixawiki.com(BushoCard/4262金子元宅)の2ソースとカード画像で一致。",
+  "ixawiki.comのカードページに合成候補テーブルの記載があったが、本バッチは新規カードJSON作成のみが指示範囲のためsynthesisTableは未作成。初期スキルはFランクでdata/skill/ページの新規作成対象外。",
+  "章(ch)は両ソースとも記載が無く判断材料が無いためnullのまま。"
+ ]
+}

@@ -1,0 +1,41 @@
+{
+ "name": "葛西晴信",
+ "no": "4266",
+ "ch": null,
+ "cost": 2,
+ "troop": "弓防",
+ "sub": "",
+ "effect": "弓防13%上昇(武将のコストで効果が変化)",
+ "furigana": "かさいはるのぶ",
+ "illustrator": "士基軽太",
+ "imageFull": "assets/img/characters/no4266_full.png",
+ "imageChar": "assets/img/characters/no4266_char.png",
+ "atkBase": 550,
+ "atkGrowth": 17,
+ "defBase": 620,
+ "defGrowth": 18,
+ "tacticsBase": 440.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 1850,
+ "rankGrades": {
+  "yari": "D",
+  "yumi": "B",
+  "uma": "D",
+  "ki": "C"
+ },
+ "initialSkill": "弓隊守護",
+ "skillDetail": "E/LV10 確率 25% 弓防 13%上昇/対象:弓\n①弓防 13%上昇する(武将のコストで効果が変化)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓　確率 25% / 弓防 13%上昇(武将のコストで効果が変化)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当I)。カード画像(スキルLV10形式)から。武将名「葛西晴信」/ 職業「将」/ コスト2 / 統率 槍D・弓B・馬D・器C(4隅アイコンをズームして確認) / 初期値 攻撃550・防御620・兵法440.0 / 指揮兵数0/1850 / カードNo.4266一致 / 初期スキル「弓隊守護 LV10」[E] 確率+25%・対象 弓・弓防13%上昇(武将のコストで効果が変化) / Illust 士基軽太。",
+  "成長値(攻+17/防+18/兵法+2)はixanary.com/cards/4266の生HTML内カードpropsで確認。スキル本文もixanary生HTMLのskill-box-bodyで「確率：+25%　/　対象　弓\\n弓防：13%上昇\\n（武将のコストで効果が変化します）」と完全一致。",
+  "章は情報源に記載なく未確認のためnull。"
+ ]
+}

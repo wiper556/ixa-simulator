@@ -1,0 +1,43 @@
+{
+ "name": "宇久純定",
+ "no": "4280",
+ "ch": null,
+ "cost": 2,
+ "troop": "弓防",
+ "sub": "",
+ "effect": "防御 13%上昇(武将のコストで変動)",
+ "furigana": "うくすみさだ",
+ "illustrator": "ぴよ",
+ "imageFull": "assets/img/characters/no4280_full.png",
+ "imageChar": "assets/img/characters/no4280_char.png",
+ "atkBase": 580,
+ "atkGrowth": 18,
+ "defBase": 630,
+ "defGrowth": 19,
+ "tacticsBase": 450.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 1910,
+ "rankGrades": {
+  "yari": "C",
+  "yumi": "B",
+  "uma": "C",
+  "ki": "C"
+ },
+ "initialSkill": "弓隊守護",
+ "skillDetail": "E/LV10 確率 25% 防御 13%上昇/対象:弓\n①防御 13%上昇する(武将のコストで効果が変化する)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓　確率 25% / 防御 13%上昇(武将のコストで変動)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当E)。カード画像(スキルLV10形式)から。武将名「宇久純定」/ 職業「防」/ 極・覇表記なし / コスト2 / 統率 槍C・弓B・馬C・器C(4隅を個別にズームして確認) / 初期値 攻撃580・防御630・兵法450.0 / 指揮兵数 0/1910 / カードNo.4280 / 初期スキル「弓隊守護 LV10」[E] 確率+25%・対象 弓・弓防:13%上昇(武将のコストで効果が変化します) / Illust ぴよ。",
+  "成長値(攻撃+18・防御+19・兵法+2)とrankGrades(槍C/馬C/弓B/器C)はixanary.com/cards/4280・ixawiki.com(BushoCard/4280宇久純定)の2ソースとカード画像で一致。",
+  "スキルランクはカード画像・ixanaryとも[E]だが、ixawiki.comのみ[F]と表記していた。2対1でカード画像+ixanaryのEを採用した。",
+  "ixawiki.comのカードページに合成候補テーブルの記載があったが、本バッチは新規カードJSON作成のみが指示範囲のためsynthesisTableは未作成。初期スキルはEランクでdata/skill/ページの新規作成対象外。",
+  "章(ch)は両ソースとも記載が無く判断材料が無いためnullのまま。"
+ ]
+}

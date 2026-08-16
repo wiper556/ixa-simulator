@@ -1,0 +1,43 @@
+{
+ "name": "三好康長",
+ "no": "4313",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "槍攻",
+ "sub": "",
+ "effect": "槍攻 15%上昇",
+ "furigana": "みよしやすなが",
+ "illustrator": "ナガノヤスシ",
+ "imageFull": "assets/img/characters/no4313_full.png",
+ "imageChar": "assets/img/characters/no4313_char.png",
+ "atkBase": 680,
+ "atkGrowth": 20,
+ "defBase": 560,
+ "defGrowth": 15,
+ "tacticsBase": 450.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 2300,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "C",
+  "uma": "C",
+  "ki": "C"
+ },
+ "initialSkill": "槍隊進撃",
+ "skillDetail": "F/LV10 確率 10% 槍攻 15%上昇/対象:槍\n①槍攻 15%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍　確率 10% / 槍攻 15%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当H)。カード画像(スキルLV10形式)から。武将名「三好康長」/上/コスト2.5/統率 槍B・弓C・馬C・器C(4隅を個別にズームして確認)/攻撃680・防御560・兵法450.0/指揮兵数0/2300/カードNo.4313/スキル「槍隊進撃LV10」[F] 確率:+10%・対象 槍・槍攻:15%上昇/Illust:ナガノヤスシ(カード画像下部で確認)。",
+  "成長値(攻撃+20/防御+15/兵法+2)はixanary.com/cards/4313の武将データ表で確認しカード画像の初期値(680/560/450.0)・指揮2300・コスト2.5・イラストレーター名とも一致。No.4277山中長俊・No.4301羽田正親と同じ「槍隊進撃」スキルだが数値・イラストレーターは別。",
+  "ixanaryの同名武将欄にNo.5142「三好康長(防：騎馬隊堅陣 F)」という別カードが存在する旨の記載があるが、今回登録するNo.4313とは別カードのため無関係。",
+  "ixawikiは未確認(標準2ソースのうちixanaryで裏取りできたため未照合)。章はixanaryに記載がなく null のまま。",
+  "上カードは合成テーブル・TR段階が存在しない前提(data/busho-toku/3418.jsonの前例に合わせ、trTableはLV10のみ)。ixanaryのカードページにもTR/鍛錬・合成候補の記載なし。初期スキル「槍隊進撃」はFランクのためSランク以上のskillページ作成規約には該当せず、data/skill/槍隊進撃.json は作成していない(No.4277で既に判断済み)。"
+ ]
+}

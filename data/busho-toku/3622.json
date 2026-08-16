@@ -1,0 +1,41 @@
+{
+ "name": "毛屋武久",
+ "no": "3622",
+ "ch": null,
+ "cost": 3,
+ "troop": "弓砲器防",
+ "sub": "",
+ "effect": "防御 180%上昇(自領以外の加勢で効果2倍)",
+ "furigana": "けやたけひさ",
+ "illustrator": "つよ丸",
+ "imageFull": "assets/img/characters/no3622_full.png",
+ "imageChar": "assets/img/characters/no3622_char.png",
+ "atkBase": 870,
+ "atkGrowth": 28,
+ "defBase": 930,
+ "defGrowth": 33,
+ "tacticsBase": 450.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 3080,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "C",
+  "uma": "A",
+  "ki": "B"
+ },
+ "initialSkill": "遍歴武人",
+ "skillDetail": "C/LV10 確率 45% 防御 180%上昇/対象:弓・砲・器\n①防御 180%上昇する\n②自領以外の加勢で効果が2倍になる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓・砲・器　確率 45% / 防御 180%上昇(自領以外の加勢で効果2倍)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当D)。カード画像(スキルLV10形式)から。武将名「毛屋武久」/ふりがな「けやたけひさ」/特/コスト3/統率 槍B・弓C・馬A・器B(4隅バッジ)/攻撃870・防御930・兵法450.0/指揮兵数0/3080/カードNo.3622/スキル「遍歴武人LV10」[C] 確率+45%・対象 弓/砲/器・防御180%上昇・自領以外の加勢で効果2倍/Illust つよ丸。",
+  "成長値(攻撃+28/防御+33/兵法+2)・イラストレーター・ステータス初期値・指揮兵数はixanary.com/cards/3622の生HTML埋め込みJSONとカード画像が完全一致。",
+  "章はixanary.com/cards/3622に記載が無く未確認のためnullのまま。"
+ ]
+}

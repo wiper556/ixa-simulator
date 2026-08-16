@@ -1,0 +1,41 @@
+{
+ "name": "末津姫",
+ "no": "3616",
+ "ch": null,
+ "cost": 3,
+ "troop": "弓砲器攻防破",
+ "sub": "",
+ "effect": "攻撃330%上昇+防御330%上昇+破壊60%上昇",
+ "furigana": "まつひめ",
+ "illustrator": "mado＊pen",
+ "imageFull": "assets/img/characters/no3616_full.png",
+ "imageChar": "assets/img/characters/no3616_char.png",
+ "atkBase": 890,
+ "atkGrowth": 30,
+ "defBase": 890,
+ "defGrowth": 30,
+ "tacticsBase": 450.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 3080,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "A",
+  "uma": "C",
+  "ki": "B"
+ },
+ "initialSkill": "白鷹ノ導き",
+ "skillDetail": "C/LV10 確率 38% 攻撃 330%上昇+防御 330%上昇+破壊 60%上昇/対象:弓・砲・器\n①攻撃 330%上昇する\n②防御 330%上昇する\n③破壊 60%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓・砲・器　確率 38% / 攻撃 330%上昇+防御 330%上昇+破壊 60%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当B)。カード画像(スキルLV10形式)から。武将名「末津姫」/ふりがな「まつひめ」/特/コスト3/統率 槍B・弓A・馬C・器B(4隅を個別にズームして確認)/攻撃890・防御890・兵法450.0/指揮兵数0/3080/カードNo.3616(ファイル名と一致)/スキル「白鷹ノ導きLV10」[C] 確率:+38%・対象 弓/砲/器・攻撃:330%上昇・防御:330%上昇・破壊:60%上昇/Illust mado＊pen。",
+  "成長値(攻撃+30/防御+30/兵法+2)はixanary.com/cards/3616のテキストで確認(カード画像に成長値の記載は無い)。",
+  "章はixanary.com/cards/3616に記載が無く、未確認のため null。"
+ ]
+}

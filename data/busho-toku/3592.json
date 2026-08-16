@@ -1,0 +1,41 @@
+{
+ "name": "佐伯惟教",
+ "no": "3592",
+ "ch": null,
+ "cost": 3,
+ "troop": "槍砲器攻防",
+ "sub": "",
+ "effect": "攻撃 310%上昇+防御 310%上昇",
+ "furigana": "さえきこれのり",
+ "illustrator": "ツヤイルカ",
+ "imageFull": "assets/img/characters/no3592_full.png",
+ "imageChar": "assets/img/characters/no3592_char.png",
+ "atkBase": 900,
+ "atkGrowth": 30,
+ "defBase": 900,
+ "defGrowth": 30,
+ "tacticsBase": 470.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 3080,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "C",
+  "uma": "B",
+  "ki": "B"
+ },
+ "initialSkill": "義士ノ覚悟",
+ "skillDetail": "C/LV10 確率 65% 攻撃 310%上昇+防御 310%上昇/対象:槍・砲・器\n①攻撃 310%上昇する\n②防御 310%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・砲・器　確率 65% / 攻撃 310%上昇+防御 310%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当D)。カード画像(スキルLV10形式)から。武将名「佐伯惟教」/ふりがな「さえきこれのり」/特/コスト3/統率 槍A・弓C・馬B・器B(4隅バッジ)/攻撃900・防御900・兵法470.0/指揮兵数0/3080/カードNo.3592/スキル「義士ノ覚悟LV10」[C] 確率+65%・対象 槍/砲/器・攻撃310%上昇 防御310%上昇/Illust ツヤイルカ。",
+  "成長値(攻撃+30/防御+30/兵法+2)・イラストレーター・ステータス初期値・指揮兵数はixanary.com/cards/3592の生HTML埋め込みJSONとカード画像が完全一致。",
+  "章はixanary.com/cards/3592に記載が無く未確認のためnullのまま。"
+ ]
+}

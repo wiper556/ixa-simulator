@@ -1,0 +1,41 @@
+{
+ "name": "武田義統",
+ "no": "4296",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "槍防",
+ "sub": "",
+ "effect": "槍防12%上昇",
+ "furigana": "たけだよしずみ",
+ "illustrator": "KASEN",
+ "imageFull": "assets/img/characters/no4296_full.png",
+ "imageChar": "assets/img/characters/no4296_char.png",
+ "atkBase": 560,
+ "atkGrowth": 17,
+ "defBase": 650,
+ "defGrowth": 19,
+ "tacticsBase": 450.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 2280,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "C",
+  "uma": "C",
+  "ki": "C"
+ },
+ "initialSkill": "槍隊堅陣",
+ "skillDetail": "F/LV10 確率 30% 槍防 12%上昇/対象:槍\n①槍防 12%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍　確率 30% / 槍防 12%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当I)。カード画像(スキルLV10形式)から。武将名「武田義統」/ 職業「将」/ コスト2.5 / 統率 槍B・弓C・馬C・器C(4隅アイコンをズームして確認) / 初期値 攻撃560・防御650・兵法450.0 / 指揮兵数0/2280 / カードNo.4296一致 / 初期スキル「槍隊堅陣 LV10」[F] 確率+30%・対象 槍・槍防12%上昇 / Illust KASEN。",
+  "成長値(攻+17/防+19/兵法+2)はixanary.com/cards/4296の生HTML内カードpropsで確認。スキル本文もixanary生HTMLのskill-box-bodyで「確率：+30%　/　対象　槍\\n槍防：12%上昇」と完全一致。ixanaryの説明文(description)は空欄だった。",
+  "章は情報源に記載なく未確認のためnull。"
+ ]
+}

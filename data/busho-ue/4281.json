@@ -1,0 +1,42 @@
+{
+ "name": "林秀貞",
+ "no": "4281",
+ "ch": null,
+ "cost": 2,
+ "troop": "槍攻",
+ "sub": "",
+ "effect": "槍攻12%上昇",
+ "furigana": "はやしひでさだ",
+ "illustrator": "あおひと",
+ "imageFull": "assets/img/characters/no4281_full.png",
+ "imageChar": "assets/img/characters/no4281_char.png",
+ "atkBase": 630,
+ "atkGrowth": 19,
+ "defBase": 580,
+ "defGrowth": 18,
+ "tacticsBase": 450.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 1920,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "C",
+  "uma": "C",
+  "ki": "C"
+ },
+ "initialSkill": "槍隊奇襲",
+ "skillDetail": "E/LV10 確率 30% 槍攻 12%上昇/対象:槍\n①槍攻 12%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍　確率 30% / 槍攻 12%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当F)。カード画像(スキルLV10形式)から。ixanary.com/cards/4281の生HTMLで確率+30%・上昇幅12%・基礎値・成長値(攻撃+19・防御+18・兵法+2)・統率(槍B・弓C・馬C・器C)がカード画像と完全一致。イラストレーターは画像では読み取りにくかったがixanaryで「あおひと」と確定。",
+  "効果の表記はixanary生HTMLでは「攻撃：12%上昇」と汎用表記だが、カード画像は「槍攻:12%上昇」表記。数値(30%/12%)は完全一致しており表記ゆれのみのため、他の槍攻系カードとの統一のため「槍攻」表記で登録した。",
+  "初期スキル名はixanaryのスキルリンク先が/skills/槍隊奇襲のため「槍隊奇襲」で登録。Eランクのためdata/skill/ページは作成していない。",
+  "章は情報源に記載なく未確認のためnull。"
+ ]
+}

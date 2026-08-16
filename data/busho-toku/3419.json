@@ -1,0 +1,41 @@
+{
+ "name": "増田長盛",
+ "no": "3419",
+ "ch": null,
+ "cost": 3,
+ "troop": "弓器攻",
+ "sub": "",
+ "effect": "攻撃66%上昇(合流攻撃時は必ずスキル発動)",
+ "furigana": "ましたながもり",
+ "illustrator": "Natto-7",
+ "imageFull": "assets/img/characters/no3419_full.png",
+ "imageChar": "assets/img/characters/no3419_char.png",
+ "atkBase": 880,
+ "atkGrowth": 28,
+ "defBase": 840,
+ "defGrowth": 25,
+ "tacticsBase": 460.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 2920,
+ "rankGrades": {
+  "yari": "C",
+  "yumi": "A",
+  "uma": "B",
+  "ki": "B"
+ },
+ "initialSkill": "三白眼",
+ "skillDetail": "D/LV10 確率 12% 攻撃 66%上昇/対象:弓・器\n①攻撃 66%上昇する\n②合流攻撃時は必ずスキル発動する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓・器　確率 12% / 攻撃 66%上昇(合流攻撃時は必ずスキル発動)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当B)。カード画像(スキルLV10形式)から。武将名「増田長盛」/ふりがな「ましたながもり」/特/コスト3/統率 槍C・弓A・馬B・器B(4隅を個別にズームして確認、槍=左上/馬=右上/弓=左下/器=右下の配置)/攻撃880・防御840・兵法460.0/指揮兵数0/2920/カードNo.3419(ファイル名と一致)/スキル「三白眼LV10」[D] 確率:+12%・対象 弓/器・攻撃:66%上昇・合流攻撃時は必ずスキル発動/Illust Natto-7。",
+  "成長値(攻撃+28/防御+25/兵法+2)とふりがなは ixanary.com/cards/3419 のテキストで確認(カード画像に成長値の記載は無い)。",
+  "章はixanary.com/cards/3419に記載が無く、未確認のため null。ixawiki.comは今回未参照(ixanaryで必要項目が揃ったため)。"
+ ]
+}

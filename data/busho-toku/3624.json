@@ -1,0 +1,41 @@
+{
+ "name": "黒田一成",
+ "no": "3624",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "弓砲器攻",
+ "sub": "",
+ "effect": "攻撃360%上昇(合流攻撃時は発動率3倍)",
+ "furigana": "くろだかずしげ",
+ "illustrator": "白藤 与一",
+ "imageFull": "assets/img/characters/no3624_full.png",
+ "imageChar": "assets/img/characters/no3624_char.png",
+ "atkBase": 940,
+ "atkGrowth": 34,
+ "defBase": 860,
+ "defGrowth": 26,
+ "tacticsBase": 460.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 2680,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "A",
+  "uma": "C",
+  "ki": "B"
+ },
+ "initialSkill": "牛膂強弓",
+ "skillDetail": "C/LV10 確率 18% 攻撃 360%上昇/対象:弓・砲・器\n①攻撃 360%上昇する\n②合流攻撃時は発動率が3倍になる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓・砲・器　確率 18% / 攻撃 360%上昇(合流攻撃時は発動率3倍)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当B)。カード画像(スキルLV10形式)から。武将名「黒田一成」/ふりがな「くろだかずしげ」/特/コスト2.5/統率 槍B・弓A・馬C・器B(4隅を個別にズームして確認)/攻撃940・防御860・兵法460.0/指揮兵数0/2680/カードNo.3624(ファイル名と一致)/スキル名はカード画像だと「牛脊強弓」に見えたが、ixanary.com/cards/3624で「牛膂強弓」と確認して訂正/[C] 確率:+18%・対象 弓/砲/器・攻撃:360%上昇・合流攻撃時は発動率3倍/Illust 白藤 与一。",
+  "成長値(攻撃+34/防御+26/兵法+2)はixanary.com/cards/3624のテキストで確認(カード画像に成長値の記載は無い)。",
+  "章はixanary.com/cards/3624に記載が無く、未確認のため null。"
+ ]
+}

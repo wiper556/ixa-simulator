@@ -1,0 +1,41 @@
+{
+ "name": "多賀谷政広",
+ "no": "4317",
+ "ch": null,
+ "cost": 2,
+ "troop": "弓攻",
+ "sub": "",
+ "effect": "弓攻12%上昇",
+ "furigana": "たがやまさひろ",
+ "illustrator": "Luke",
+ "imageFull": "assets/img/characters/no4317_full.png",
+ "imageChar": "assets/img/characters/no4317_char.png",
+ "atkBase": 670,
+ "atkGrowth": 20,
+ "defBase": 540,
+ "defGrowth": 15,
+ "tacticsBase": 480.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 1970,
+ "rankGrades": {
+  "yari": "C",
+  "yumi": "B",
+  "uma": "C",
+  "ki": "C"
+ },
+ "initialSkill": "弓隊奇襲",
+ "skillDetail": "E/LV10 確率 30% 弓攻 12%上昇/対象:弓\n①弓攻 12%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓　確率 30% / 弓攻 12%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当F)。カード画像(スキルLV10形式)から。ixanary.com/cards/4317の生HTMLでスキル文言(確率+30%・弓攻12%上昇)・基礎値・成長値(攻撃+20・防御+15・兵法+2)・統率(槍C・弓B・馬C・器C)・イラストレーター「Luke」がカード画像と完全一致。",
+  "初期スキル名はixanaryのスキルリンク先が/skills/弓隊奇襲のため「弓隊奇襲」で登録。Eランクのためdata/skill/ページは作成していない。",
+  "章は情報源に記載なく未確認のためnull。ixanaryのdescription(紹介文)は空欄だった。"
+ ]
+}

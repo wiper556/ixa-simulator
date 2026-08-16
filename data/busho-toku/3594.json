@@ -1,0 +1,41 @@
+{
+ "name": "国司元相",
+ "no": "3594",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "槍砲器攻",
+ "sub": "卓越",
+ "effect": "攻撃120%上昇(卓越:追加確率30%で攻撃効果が3倍)",
+ "furigana": "くにしもとすけ",
+ "illustrator": "しいたけ",
+ "imageFull": "assets/img/characters/no3594_full.png",
+ "imageChar": "assets/img/characters/no3594_char.png",
+ "atkBase": 930,
+ "atkGrowth": 33,
+ "defBase": 850,
+ "defGrowth": 26,
+ "tacticsBase": 450.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 2680,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "B",
+  "uma": "C",
+  "ki": "B"
+ },
+ "initialSkill": "鈴槍空鳴",
+ "skillDetail": "C/LV10 確率 100% 攻撃 120%上昇/対象:槍・砲・器　卓越\n①攻撃 120%上昇する\n②卓越:追加確率30%で攻撃効果が3倍になる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・砲・器 卓越　確率 100% / 攻撃 120%上昇(卓越追加確率30%で攻撃効果3倍)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当B)。カード画像(スキルLV10形式)から。武将名「国司元相」/ふりがな「くにしもとすけ」/特/コスト2.5/統率 槍A・弓B・馬C・器B(4隅を個別にズームして確認)/攻撃930・防御850・兵法450.0/指揮兵数0/2680/カードNo.3594(ファイル名と一致)/スキル「鈴槍空鳴LV10」[C] 確率:+100%・対象 槍/砲/器・攻撃:120%上昇・卓越:追加確率30%で攻撃効果が3倍/Illust しいたけ。",
+  "成長値(攻撃+33/防御+26/兵法+2)はixanary.com/cards/3594のテキストで確認(カード画像に成長値の記載は無い)。",
+  "章はixanary.com/cards/3594に記載が無く、未確認のため null。"
+ ]
+}

@@ -1,0 +1,41 @@
+{
+ "name": "頴娃久虎",
+ "no": "4291",
+ "ch": null,
+ "cost": 2,
+ "troop": "槍攻",
+ "sub": "",
+ "effect": "槍攻15%上昇",
+ "furigana": "えいひさとら",
+ "illustrator": "レディ",
+ "imageFull": "assets/img/characters/no4291_full.png",
+ "imageChar": "assets/img/characters/no4291_char.png",
+ "atkBase": 640,
+ "atkGrowth": 19,
+ "defBase": 560,
+ "defGrowth": 17,
+ "tacticsBase": 440.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 1930,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "C",
+  "uma": "C",
+  "ki": "C"
+ },
+ "initialSkill": "槍隊進撃",
+ "skillDetail": "F/LV10 確率 10% 槍攻 15%上昇/対象:槍\n①槍攻 15%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍　確率 10% / 槍攻 15%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当J)。カード画像(スキルLV10形式)から。武将名「頴娃久虎」/ 上 / コスト2 / 統率 槍B・弓C・馬C・器C(4隅アイコンを個別にズームして確認) / 初期値 攻撃640・防御560・兵法440.0 / 指揮兵数0/1930 / カードNo.4291一致 / 初期スキル「槍隊進撃 LV10」[F] 確率+10%・対象 槍・槍攻15%上昇 / Illust レディ。",
+  "武将名の漢字はカード画像の低解像度では判読が難しかったが、ixanary.com/cards/4291の生HTMLで「頴娃久虎」furigana「えいひさとら」と確認(島津家臣・肝付氏庶流の実在人物と一致)。成長値(攻+19/防+17/兵法+2)・スキル文言も同ソースでカード画像と一致。",
+  "章は情報源に記載が無く未確認のためnull。初期スキルはFランクのためdata/skill/ページの新規作成対象外。"
+ ]
+}

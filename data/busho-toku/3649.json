@@ -1,0 +1,34 @@
+{
+ "name": "茶阿局",
+ "no": "3649",
+ "ch": null,
+ "cost": 2,
+ "troop": "弓砲器攻防",
+ "sub": "",
+ "effect": "攻撃350%上昇+防御350%上昇(部隊内姫武将スキル発動率+5%・部隊内重複不可)",
+ "furigana": "ちゃあのつぼね",
+ "illustrator": "祀花よう子",
+ "imageFull": "assets/img/characters/no3649_full.png",
+ "imageChar": "assets/img/characters/no3649_char.png",
+ "atkBase": 920,
+ "atkGrowth": null,
+ "defBase": 920,
+ "defGrowth": null,
+ "tacticsBase": 450.0,
+ "tacticsGrowth": null,
+ "lv0Troops": 2410,
+ "rankGrades": {"yari": "B", "yumi": "A", "uma": "C", "ki": "B"},
+ "initialSkill": "奉愛",
+ "skillDetail": "C/LV10 確率 100% 攻撃 350%上昇+防御 350%上昇/対象:弓・砲・器\n①攻撃350%上昇する\n②防御350%上昇する\n③部隊内姫武将のスキル発動率に5%を加算する(特殊効果は部隊内重複不可)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓・砲・器　確率 100% / 攻撃 350%上昇+防御 350%上昇(部隊内姫武将スキル発動率+5%・部隊内重複不可)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当C)。カード画像(スキルLV10形式)から作成。武将名・ふりがな・統率・攻防兵法初期値・指揮兵数・カードNo.・スキル名/効果・illustratorはカード画像から読み取り。ch(章)・growth系は画像に記載が無いため null。"
+ ]
+}

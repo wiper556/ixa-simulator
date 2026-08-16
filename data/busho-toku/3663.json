@@ -1,0 +1,41 @@
+{
+ "name": "尼子勝久",
+ "no": "3663",
+ "ch": null,
+ "cost": 3,
+ "troop": "弓砲器防",
+ "sub": "",
+ "effect": "防御20%上昇(武将ランクで防御効果が変化)",
+ "furigana": "あまごかつひさ",
+ "illustrator": "tatsuya",
+ "imageFull": "assets/img/characters/no3663_full.png",
+ "imageChar": "assets/img/characters/no3663_char.png",
+ "atkBase": 840,
+ "atkGrowth": 25,
+ "defBase": 950,
+ "defGrowth": 35,
+ "tacticsBase": 450.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 3100,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "A",
+  "uma": "C",
+  "ki": "B"
+ },
+ "initialSkill": "末期ノ名君",
+ "skillDetail": "C/LV10 確率 42% 防御 20%上昇/対象:弓・砲・器\n①防御 20%上昇する(武将ランクで効果が変化)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓・砲・器　確率 42% / 防御 20%上昇(武将ランクで防御効果が変化)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当B)。カード画像(スキルLV10形式)から。武将名「尼子勝久」/ふりがな「あまごかつひさ」/特/コスト3/統率 槍B・弓A・馬C・器B(4隅を個別にズームして確認)/攻撃840・防御950・兵法450.0/指揮兵数0/3100/カードNo.3663(ファイル名と一致)/スキル名はカード画像だと「来期ノ名君」に見えたが、ixanary.com/cards/3663とカード画像の再ズームで「末期ノ名君」と確認して訂正/[C] 確率:+42%・対象 弓/砲/器・防御:20%上昇・武将ランクで防御効果が変化/Illust tatsuya。",
+  "成長値(攻撃+25/防御+35/兵法+2)はixanary.com/cards/3663のテキストで確認(カード画像に成長値の記載は無い)。同名カード(No.4133防:伏僧嘗胆)が別にあるが今回の担当外。",
+  "章はixanary.com/cards/3663に記載が無く、未確認のため null。"
+ ]
+}

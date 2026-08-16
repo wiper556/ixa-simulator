@@ -1,0 +1,41 @@
+{
+ "name": "三好政康",
+ "no": "3593",
+ "ch": null,
+ "cost": 3,
+ "troop": "槍砲器攻",
+ "sub": "",
+ "effect": "攻撃 25%上昇(武将ランクで攻撃効果が変化)",
+ "furigana": "みよしまさやす",
+ "illustrator": "トミダトモミ",
+ "imageFull": "assets/img/characters/no3593_full.png",
+ "imageChar": "assets/img/characters/no3593_char.png",
+ "atkBase": 910,
+ "atkGrowth": 32,
+ "defBase": 870,
+ "defGrowth": 26,
+ "tacticsBase": 480.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 3080,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "C",
+  "uma": "B",
+  "ki": "B"
+ },
+ "initialSkill": "乱風混剣",
+ "skillDetail": "C/LV10 確率 45% 攻撃 25%上昇/対象:槍・砲・器\n①攻撃 25%上昇する(武将ランクで攻撃効果が変化)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・砲・器　確率 45% / 攻撃 25%上昇(武将ランクで攻撃効果が変化)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当A)。カード画像(スキルLV10形式)から。武将名「三好政康」/ふりがな「みよしまさやす」/特/コスト3/統率 槍A・弓C・馬B・器B(4隅個別ズームで確認)/攻撃910・防御870・兵法480.0/指揮兵数0/3080/カードNo.3593/スキル「乱風混剣LV10」[C] 確率:+45%・対象 槍/砲/器・攻撃:25%上昇・武将ランクで攻撃効果が変化。",
+  "成長値(攻撃+32/防御+26/兵法+2)・イラストレーター(トミダトモミ、カード上は潰れて読みにくかった)・スキルLV10効果(確率45%/攻撃25%上昇)はixanary.com/cards/3593の生HTML埋め込みJSON・スキルテーブルとカード画像が一致。",
+  "章はixanary.com/cards/3593に記載なし、ixawiki.com/index.php?三好政康は未作成ページ(編集フォームが返る)のため確認できず、chはnullのまま。"
+ ]
+}

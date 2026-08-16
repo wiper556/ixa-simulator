@@ -1,0 +1,41 @@
+{
+ "name": "山名豊国",
+ "no": "3659",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "槍砲器攻",
+ "sub": "",
+ "effect": "攻撃385%上昇(合流攻撃時は発動率3倍)",
+ "furigana": "やまなとよくに",
+ "illustrator": "トミダトモミ",
+ "imageFull": "assets/img/characters/no3659_full.png",
+ "imageChar": "assets/img/characters/no3659_char.png",
+ "atkBase": 940,
+ "atkGrowth": 34,
+ "defBase": 860,
+ "defGrowth": 27,
+ "tacticsBase": 450.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 2700,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "B",
+  "uma": "C",
+  "ki": "B"
+ },
+ "initialSkill": "由緒ノ羽織",
+ "skillDetail": "C/LV10 確率 19% 攻撃 385%上昇/対象:槍・砲・器\n①攻撃 385%上昇する\n②合流攻撃時は発動率が3倍になる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・砲・器　確率 19% / 攻撃 385%上昇(合流攻撃時は発動率3倍)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当B)。カード画像(スキルLV10形式)から。武将名「山名豊国」/ふりがな「やまなとよくに」/特/コスト2.5/統率 槍A・弓B・馬C・器B(4隅を個別にズームして確認)/攻撃940・防御860・兵法450.0/指揮兵数0/2700/カードNo.3659(ファイル名と一致)/スキル「由緒ノ羽織LV10」[C] 確率:+19%・対象 槍/砲/器・攻撃:385%上昇・合流攻撃時は発動率3倍/Illust トミダトモミ。",
+  "成長値(攻撃+34/防御+27/兵法+2)はixanary.com/cards/3659のテキストで確認(カード画像に成長値の記載は無い)。同名カード(No.5062防:兵器布陣)が別にあるが今回の担当外。",
+  "章はixanary.com/cards/3659に記載が無く、未確認のため null。"
+ ]
+}

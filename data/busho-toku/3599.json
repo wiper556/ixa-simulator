@@ -1,0 +1,34 @@
+{
+ "name": "伊達実元",
+ "no": "3599",
+ "ch": null,
+ "cost": 2,
+ "troop": "槍砲器防",
+ "sub": "",
+ "effect": "防御225%上昇(所領防御陣形第3列目以降配置時1.5倍・模倣不可)",
+ "furigana": "だてさねもと",
+ "illustrator": "ハヤケン・サレナ",
+ "imageFull": "assets/img/characters/no3599_full.png",
+ "imageChar": "assets/img/characters/no3599_char.png",
+ "atkBase": 860,
+ "atkGrowth": null,
+ "defBase": 900,
+ "defGrowth": null,
+ "tacticsBase": 460.0,
+ "tacticsGrowth": null,
+ "lv0Troops": 2410,
+ "rankGrades": {"yari": "A", "yumi": "C", "uma": "B", "ki": "B"},
+ "initialSkill": "洞ノ乱",
+ "skillDetail": "C/LV10 確率 45% 防御 225%上昇/対象:槍・砲・器\n①防御225%上昇する\n②所領防御陣形の第参列目以降に配置時防御効果が1.5倍になる(模倣不可)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・砲・器　確率 45% / 防御 225%上昇(所領防御陣形第3列目以降配置時1.5倍・模倣不可)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当C)。カード画像(スキルLV10形式)から作成。武将名・ふりがな・統率・攻防兵法初期値・指揮兵数・カードNo.・スキル名/効果・illustratorはカード画像から読み取り。ch(章)・growth系は画像に記載が無いため null。"
+ ]
+}

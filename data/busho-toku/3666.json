@@ -1,0 +1,41 @@
+{
+ "name": "村上国清",
+ "no": "3666",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "馬砲器攻速",
+ "sub": "",
+ "effect": "攻撃350%上昇+速度70%上昇",
+ "furigana": "むらかみくにきよ",
+ "illustrator": "ヤマザキミコ",
+ "imageFull": "assets/img/characters/no3666_full.png",
+ "imageChar": "assets/img/characters/no3666_char.png",
+ "atkBase": 940,
+ "atkGrowth": 34,
+ "defBase": 860,
+ "defGrowth": 27,
+ "tacticsBase": 450.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 2700,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "C",
+  "uma": "A",
+  "ki": "B"
+ },
+ "initialSkill": "越後侍中",
+ "skillDetail": "C/LV10 対象:馬・砲・器\n①確率38%で攻撃350%上昇する\n②確率100%で速度70%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "馬・砲・器　確率 38% / 攻撃 350%上昇+確率 100% / 速度 70%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当A)。カード画像(スキルLV10形式)から。武将名「村上国清」/ふりがな「むらかみくにきよ」/特/コスト2.5/統率 槍B・弓C・馬A・器B(4隅個別ズームで確認)/攻撃940・防御860・兵法450.0/指揮兵数0/2700/カードNo.3666/スキル「越後侍中LV10」[C] 対象 馬/砲/器・攻撃:350%上昇(確率+38%)・速度:70%上昇(確率+100%)。攻撃と速度で発動確率が異なる複合スキルのため、同バッチの3617.json(担当C)の形式に倣いskillDetailとtrTableに両方の確率を併記した。",
+  "成長値(攻撃+34/防御+27/兵法+2)・イラストレーター(ヤマザキミコ)・スキルLV10効果(確率38%/攻撃350%上昇、確率100%/速度70%上昇)はixanary.com/cards/3666の生HTML埋め込みJSON・スキルテーブルとカード画像が一致。",
+  "章はixanary.com/cards/3666に記載なし、ixawiki側は今回のバッチ(35xx〜36xx台)で軒並み未作成だったため個別確認を省略しnullのままとした(要申し送り)。"
+ ]
+}

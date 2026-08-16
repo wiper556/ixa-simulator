@@ -1,0 +1,41 @@
+{
+ "name": "庄林一心",
+ "no": "3523",
+ "ch": null,
+ "cost": 3,
+ "troop": "槍弓馬器攻",
+ "sub": "",
+ "effect": "攻撃 82%上昇+速度 30%上昇(速度は確率100%、3部隊以下の攻撃で攻撃効果1.5倍)",
+ "furigana": "しょうばやしかずただ",
+ "illustrator": "しいたけ",
+ "imageFull": "assets/img/characters/no3523_full.png",
+ "imageChar": "assets/img/characters/no3523_char.png",
+ "atkBase": 890,
+ "atkGrowth": 30,
+ "defBase": 860,
+ "defGrowth": 26,
+ "tacticsBase": 460.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 3010,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "B",
+  "uma": "B",
+  "ki": "B"
+ },
+ "initialSkill": "虎将ノ朱翼",
+ "skillDetail": "C/LV10 確率 35% 攻撃 82%上昇/対象:槍・弓・馬・器\n①攻撃 82%上昇する\n②速度 30%上昇する(確率100%)\n③3部隊以下の攻撃で攻撃効果が1.5倍になる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・弓・馬・器　確率 35% / 攻撃 82%上昇(速度 30%上昇は確率100%、3部隊以下の攻撃で攻撃効果1.5倍)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当D)。カード画像(スキルLV10形式)から。武将名「庄林一心」/ふりがな「しょうばやしかずただ」/特/コスト3/統率 槍B・弓B・馬B・器B(4隅バッジ)/攻撃890・防御860・兵法460.0/指揮兵数0/3010/カードNo.3523/スキル「虎将ノ朱翼LV10」[C] 対象 槍/弓/馬/器・攻撃82%上昇 確率+35%・速度30%上昇 確率+100%・(3部隊以下の攻撃で攻撃効果1.5倍)/Illust しいたけ。",
+  "成長値(攻撃+30/防御+26/兵法+2)・イラストレーター・ステータス初期値・指揮兵数はixanary.com/cards/3523の生HTML埋め込みJSONとカード画像が完全一致。",
+  "章はixanary.com/cards/3523に記載が無く未確認のためnullのまま。"
+ ]
+}

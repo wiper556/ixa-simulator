@@ -1,0 +1,42 @@
+{
+ "name": "益田正親",
+ "no": "3635",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "弓器鉄攻",
+ "sub": "",
+ "effect": "攻撃 20%上昇(武将ランクで攻撃効果が変化)",
+ "furigana": "ますだまさちか",
+ "illustrator": "てもし",
+ "imageFull": "assets/img/characters/no3635_full.png",
+ "imageChar": "assets/img/characters/no3635_char.png",
+ "atkBase": 940,
+ "atkGrowth": 34,
+ "defBase": 850,
+ "defGrowth": 26,
+ "tacticsBase": 440.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 2690,
+ "rankGrades": {
+  "yari": "C",
+  "yumi": "B",
+  "uma": "B",
+  "ki": "A"
+ },
+ "initialSkill": "万石武辺",
+ "skillDetail": "C/LV10 確率 50% 攻撃 20%上昇/対象:弓・器・鉄\n①攻撃 20%上昇する(武将ランクで攻撃効果が変化)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓・器・鉄　確率 50% / 攻撃 20%上昇(武将ランクで攻撃効果が変化)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当A)。カード画像(スキルLV10形式)から。武将名「益田正親」/ふりがな「ますだまさちか」/特/コスト2.5/統率 槍C・弓B・馬B・器A(4隅個別ズームで確認)/攻撃940・防御850・兵法440.0/指揮兵数0/2690/カードNo.3635/スキル「万石武辺LV10」[C] 確率:+50%・対象 弓/器/鉄・攻撃:20%上昇・武将ランクで攻撃効果が変化/Illust:てもし。",
+  "対象の「鉄」はixanary.com/cards/3635でもtitle=\"弓器鉄\"と表示され、サイト内の既存登録(例:busho-kyoku-ps/2416.json等)でも「槍・弓・馬・器・鉄」を独立した対象カテゴリとして扱っているため、それに倣い対象・troop欄に含めた。",
+  "成長値(攻撃+34/防御+26/兵法+2)・イラストレーター(てもし)・スキルLV10効果(確率50%/攻撃20%上昇)はixanary.com/cards/3635の生HTML埋め込みJSON・スキルテーブルとカード画像が一致。",
+  "章はixanary.com/cards/3635に記載なし、ixawiki側は今回のバッチ(35xx台)で軒並み未作成だったため個別確認を省略しnullのままとした(要申し送り)。"
+ ]
+}

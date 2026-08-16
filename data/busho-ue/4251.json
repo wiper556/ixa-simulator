@@ -1,0 +1,41 @@
+{
+ "name": "上井覚兼",
+ "no": "4251",
+ "ch": null,
+ "cost": 1.5,
+ "troop": "槍防",
+ "sub": "",
+ "effect": "槍防12%上昇",
+ "furigana": "うわいさとかね",
+ "illustrator": "森田悠新",
+ "imageFull": "assets/img/characters/no4251_full.png",
+ "imageChar": "assets/img/characters/no4251_char.png",
+ "atkBase": 580,
+ "atkGrowth": 17,
+ "defBase": 620,
+ "defGrowth": 19,
+ "tacticsBase": 430.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 1560,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "B",
+  "uma": "D",
+  "ki": "C"
+ },
+ "initialSkill": "槍隊堅陣",
+ "skillDetail": "F/LV10 確率 30% 槍防 12%上昇/対象:槍\n①槍防 12%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍　確率 30% / 槍防 12%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当I)。カード画像(スキルLV10形式)から。武将名「上井覚兼」/ 職業「将」/ コスト1.5 / 統率 槍B・弓B・馬D・器C(4隅アイコンをズームして確認) / 初期値 攻撃580・防御620・兵法430.0 / 指揮兵数0/1560 / カードNo.4251一致 / 初期スキル「槍隊堅陣 LV10」[F] 確率+30%・対象 槍・槍防12%上昇 / Illust 森田悠新。",
+  "成長値(攻+17/防+19/兵法+2)はixanary.com/cards/4251の生HTML内カードpropsで確認。スキル本文もixanary生HTMLのskill-box-bodyで「確率：+30%　/　対象　槍\\n槍防：12%上昇」と完全一致。",
+  "章は情報源に記載なく未確認のためnull。"
+ ]
+}

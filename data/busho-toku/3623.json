@@ -1,0 +1,41 @@
+{
+ "name": "五龍局",
+ "no": "3623",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "弓砲器速破",
+ "sub": "",
+ "effect": "速度 175%上昇+破壊 90%上昇",
+ "furigana": "ごりゅうのつぼね",
+ "illustrator": "コナタエル",
+ "imageFull": "assets/img/characters/no3623_full.png",
+ "imageChar": "assets/img/characters/no3623_char.png",
+ "atkBase": 890,
+ "atkGrowth": 30,
+ "defBase": 890,
+ "defGrowth": 30,
+ "tacticsBase": 480.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 2680,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "B",
+  "uma": "B",
+  "ki": "B"
+ },
+ "initialSkill": "謀神ノ珠玉",
+ "skillDetail": "C/LV10 確率 100% 速度 175%上昇/対象:弓・砲・器\n①速度 175%上昇する\n②破壊 90%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓・砲・器　確率 100% / 速度 175%上昇+破壊 90%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当A)。カード画像(スキルLV10形式)から。武将名「五龍局」/ふりがな「ごりゅうのつぼね」/特/コスト2.5/統率 槍B・弓B・馬B・器B(4隅個別ズームで確認)/攻撃890・防御890・兵法480.0/指揮兵数0/2680/カードNo.3623/スキル「謀神ノ珠玉LV10」[C] 確率:+100%・対象 弓/砲/器・速度:175%上昇・破壊:90%上昇。",
+  "成長値(攻撃+30/防御+30/兵法+2)・イラストレーター(コナタエル、カード上は最初コナエルと読んでしまったが再ズームで「コナタエル」と確認)・スキルLV10効果(確率100%/速度175%上昇/破壊90%上昇)はixanary.com/cards/3623の生HTML埋め込みJSON・スキルテーブルとカード画像が一致。",
+  "章はixanary.com/cards/3623に記載なし、ixawiki側は今回のバッチ(35xx台)で軒並み未作成だったため個別確認を省略しnullのままとした(要申し送り)。"
+ ]
+}

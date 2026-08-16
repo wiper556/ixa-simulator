@@ -1,0 +1,42 @@
+{
+ "name": "伝妙院",
+ "no": "4276",
+ "ch": null,
+ "cost": 2,
+ "troop": "弓防",
+ "sub": "",
+ "effect": "弓防10%上昇",
+ "furigana": "でんみょういん",
+ "illustrator": "祀花よう子",
+ "imageFull": "assets/img/characters/no4276_full.png",
+ "imageChar": "assets/img/characters/no4276_char.png",
+ "atkBase": 580,
+ "atkGrowth": 17,
+ "defBase": 630,
+ "defGrowth": 19,
+ "tacticsBase": 450.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 1900,
+ "rankGrades": {
+  "yari": "C",
+  "yumi": "B",
+  "uma": "C",
+  "ki": "C"
+ },
+ "initialSkill": "弓隊堅守",
+ "skillDetail": "F/LV10 確率 20% 弓防 10%上昇/対象:弓\n①弓防 10%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓　確率 20% / 弓防 10%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当G)。カード画像(スキルLV10形式)から。武将名「伝妙院」/ 職業「上」/ 極・覇表記なし / コスト2 / 統率(4隅バッジ) 槍C・馬C・弓B・器C / 初期値 攻撃580・防御630・兵法450.0 / 指揮兵数 0/1900 / カードNo.4276 / 初期スキル「弓隊堅守 LV10」[F] 確率+20%・対象 弓・弓防(防御)10%上昇 / Illust:祀花よう子。",
+  "成長値(攻撃+17・防御+19・兵法+2)とrankGrades(槍C/馬C/弓B/器C)はixanary.com/cards/4276・ixawiki.com(BushoCard/4276伝妙院)の2ソースとカード画像で一致。スキル効果もLV10=確率20%/防御10%上昇で両ソースとカード画像が一致。",
+  "兵法初期値のみ食い違いあり。カード画像とixanaryは450.0で一致するが、ixawikiの基本ステータス表(生HTML確認済み)は430と記載している。2ソース(カード画像+ixanary)が一致する450.0を採用した。",
+  "章(ch)はixanary/ixawikiともに記載が無く判断材料が無いためnullのまま。本バッチはカードJSON新規作成のみが指示範囲のためsynthesisTableは未作成。初期スキルはFランクのためdata/skill/ページの新規作成対象外。"
+ ]
+}

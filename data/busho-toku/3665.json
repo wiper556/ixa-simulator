@@ -1,0 +1,41 @@
+{
+ "name": "安見宗房",
+ "no": "3665",
+ "ch": null,
+ "cost": 2,
+ "troop": "槍砲器攻破",
+ "sub": "",
+ "effect": "攻撃 93%上昇+破壊 50%上昇(合流攻撃時、攻撃効果4倍)",
+ "furigana": "やすみむねふさ",
+ "illustrator": "鹿角",
+ "imageFull": "assets/img/characters/no3665_full.png",
+ "imageChar": "assets/img/characters/no3665_char.png",
+ "atkBase": 940,
+ "atkGrowth": 34,
+ "defBase": 860,
+ "defGrowth": 27,
+ "tacticsBase": 440.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 2420,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "B",
+  "uma": "C",
+  "ki": "B"
+ },
+ "initialSkill": "河州ノ鋭才",
+ "skillDetail": "C/LV10 確率 43% 攻撃 93%上昇+破壊 50%上昇/対象:槍・砲・器\n①攻撃 93%上昇する\n②破壊 50%上昇する\n③合流攻撃時は攻撃効果が4倍になる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・砲・器　確率 43% / 攻撃 93%上昇+破壊 50%上昇(合流攻撃時、攻撃効果4倍)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当D)。カード画像(スキルLV10形式)から。武将名「安見宗房」/ふりがな「やすみむねふさ」/特/コスト2/統率 槍A・弓B・馬C・器B(4隅バッジ)/攻撃940・防御860・兵法440.0/指揮兵数0/2420/カードNo.3665/スキル「河州ノ鋭才LV10」[C] 確率+43%・対象 槍/砲/器・攻撃93%上昇 破壊50%上昇・合流攻撃時は攻撃効果4倍/Illust 鹿角。",
+  "成長値(攻撃+34/防御+27/兵法+2)・イラストレーター・ステータス初期値・指揮兵数はixanary.com/cards/3665の生HTML埋め込みJSONとカード画像が完全一致。",
+  "章はixanary.com/cards/3665に記載が無く未確認のためnullのまま。"
+ ]
+}

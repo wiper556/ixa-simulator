@@ -1,0 +1,41 @@
+{
+ "name": "有吉立行",
+ "no": "4284",
+ "ch": null,
+ "cost": 1.5,
+ "troop": "槍防",
+ "sub": "",
+ "effect": "槍防12%上昇",
+ "furigana": "ありよしたつゆき",
+ "illustrator": "レディ",
+ "imageFull": "assets/img/characters/no4284_full.png",
+ "imageChar": "assets/img/characters/no4284_char.png",
+ "atkBase": 570,
+ "atkGrowth": 17,
+ "defBase": 610,
+ "defGrowth": 18,
+ "tacticsBase": 430.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 1580,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "C",
+  "uma": "C",
+  "ki": "C"
+ },
+ "initialSkill": "槍隊堅陣",
+ "skillDetail": "F/LV10 確率 30% 槍防 12%上昇/対象:槍\n①槍防 12%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍　確率 30% / 槍防 12%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当I)。カード画像(スキルLV10形式)から。武将名「有吉立行」/ 職業「将」/ コスト1.5 / 統率 槍B・弓C・馬C・器C(4隅アイコンをズームして確認) / 初期値 攻撃570・防御610・兵法430.0 / 指揮兵数0/1580 / カードNo.4284一致 / 初期スキル「槍隊堅陣 LV10」[F] 確率+30%・対象 槍・槍防12%上昇 / Illust レディ。",
+  "成長値(攻+17/防+18/兵法+2)はixanary.com/cards/4284の生HTML内カードpropsで確認。スキル本文もixanary生HTMLのskill-box-bodyで「確率：+30%　/　対象　槍\\n槍防：12%上昇」と完全一致。",
+  "章は情報源に記載なく未確認のためnull。"
+ ]
+}

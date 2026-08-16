@@ -1,0 +1,41 @@
+{
+ "name": "都築秀綱",
+ "no": "4258",
+ "ch": null,
+ "cost": 2,
+ "troop": "槍防",
+ "sub": "",
+ "effect": "槍防20%上昇",
+ "furigana": "つづきひでつな",
+ "illustrator": "HMK84",
+ "imageFull": "assets/img/characters/no4258_full.png",
+ "imageChar": "assets/img/characters/no4258_char.png",
+ "atkBase": 600,
+ "atkGrowth": 16,
+ "defBase": 610,
+ "defGrowth": 18,
+ "tacticsBase": 440.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 1860,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "C",
+  "uma": "D",
+  "ki": "C"
+ },
+ "initialSkill": "槍隊布陣",
+ "skillDetail": "E/LV10 確率 15% 槍防 20%上昇/対象:槍\n①槍防 20%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍　確率 15% / 槍防 20%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当G)。カード画像(スキルLV10形式)から。武将名「都築秀綱」/ 職業「上」/ 極・覇表記なし / コスト2 / 統率(4隅バッジ) 槍B・馬D・弓C・器C / 初期値 攻撃600・防御610・兵法440.0 / 指揮兵数 0/1860 / カードNo.4258 / 初期スキル「槍隊布陣 LV10」[E] 確率+15%・対象 槍・槍防(防御)20%上昇 / Illust:HMK84。",
+  "成長値(攻撃+16・防御+18・兵法+2)とrankGrades(槍B/馬D/弓C/器C)はixanary.com/cards/4258・ixawiki.com(BushoCard/4258都築秀綱)の2ソースとカード画像で一致。スキル効果もLV10=確率15%/防御20%上昇で両ソースとカード画像が一致し、コスト依存の注記は本スキルには無い。",
+  "章(ch)はixanary/ixawikiともに記載が無く判断材料が無いためnullのまま。本バッチはカードJSON新規作成のみが指示範囲のためsynthesisTableは未作成。初期スキルはEランクのためdata/skill/ページの新規作成対象外。"
+ ]
+}

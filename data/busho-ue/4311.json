@@ -1,0 +1,42 @@
+{
+ "name": "阿蘇惟種",
+ "no": "4311",
+ "ch": null,
+ "cost": 2,
+ "troop": "馬防",
+ "sub": "",
+ "effect": "馬防12%上昇",
+ "furigana": "あそこれたね",
+ "illustrator": "かにぱん",
+ "imageFull": "assets/img/characters/no4311_full.png",
+ "imageChar": "assets/img/characters/no4311_char.png",
+ "atkBase": 550,
+ "atkGrowth": 15,
+ "defBase": 680,
+ "defGrowth": 20,
+ "tacticsBase": 470.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 1970,
+ "rankGrades": {
+  "yari": "C",
+  "yumi": "C",
+  "uma": "B",
+  "ki": "C"
+ },
+ "initialSkill": "騎馬隊堅陣",
+ "skillDetail": "F/LV10 確率 30% 馬防 12%上昇/対象:馬\n①馬防 12%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "馬　確率 30% / 馬防 12%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当F)。カード画像(スキルLV10形式)から。ixanary.com/cards/4311の生HTMLでスキル文言(確率+30%・馬防12%上昇)・基礎値・成長値(攻撃+15・防御+20・兵法+2)・イラストレーター「かにぱん」がカード画像と完全一致。",
+  "【要確認】統率(rankGrades)がカード画像とixanaryで食い違う。カード画像の4隅バッジ拡大確認では 槍C・弓C・馬B・器C。ixanary.com/cards/4311の生HTMLでは yari:C, yumi:B, kiba:C, heiki:C(弓と馬が入れ替わっている)。ixawiki.com(BushoCard/4311阿蘇惟種)は記事自体が未作成(編集画面が返る)で裏取りできず。本登録ではカード画像の一次情報を優先し 槍C/弓C/馬B/器C で登録したが、監査時にixanaryの記載も再確認してほしい。",
+  "初期スキル名はixanaryのスキルリンク先が/skills/騎馬隊堅陣のため「騎馬隊堅陣」で登録。防御系スキル(skillStrは防.騎馬隊堅陣.F)。Fランクのためdata/skill/ページは作成していない。",
+  "章は情報源に記載なく未確認のためnull。ixanaryのdescription(紹介文)は空欄だった。"
+ ]
+}

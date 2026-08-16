@@ -1,0 +1,34 @@
+{
+ "name": "小梁川宗朝",
+ "no": "3591",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "槍砲器攻",
+ "sub": "",
+ "effect": "攻撃340%上昇(合流攻撃時は発動率2倍)",
+ "furigana": "こやながわむねとも",
+ "illustrator": "木下月乃",
+ "imageFull": "assets/img/characters/no3591_full.png",
+ "imageChar": "assets/img/characters/no3591_char.png",
+ "atkBase": 1020,
+ "atkGrowth": null,
+ "defBase": 860,
+ "defGrowth": null,
+ "tacticsBase": 460.0,
+ "tacticsGrowth": null,
+ "lv0Troops": 3200,
+ "rankGrades": {"yari": "A", "yumi": "C", "uma": "B", "ki": "B"},
+ "initialSkill": "一身忠剣",
+ "skillDetail": "C/LV10 確率 20% 攻撃 340%上昇/対象:槍・砲・器\n①攻撃340%上昇する\n②合流攻撃時は発動率が2倍になる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・砲・器　確率 20% / 攻撃 340%上昇(合流攻撃時は発動率2倍)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当C)。カード画像(スキルLV10形式)から作成。武将名・ふりがな・統率・攻防兵法初期値・指揮兵数・カードNo.・スキル名/効果・illustratorはカード画像から読み取り。ch(章)・growth系は画像に記載が無いため null。"
+ ]
+}

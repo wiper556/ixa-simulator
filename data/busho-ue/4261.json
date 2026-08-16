@@ -1,0 +1,41 @@
+{
+ "name": "太田宗正",
+ "no": "4261",
+ "ch": null,
+ "cost": 2,
+ "troop": "砲攻",
+ "sub": "",
+ "effect": "砲攻15%上昇",
+ "furigana": "おおたむねまさ",
+ "illustrator": "森田悠新",
+ "imageFull": "assets/img/characters/no4261_full.png",
+ "imageChar": "assets/img/characters/no4261_char.png",
+ "atkBase": 620,
+ "atkGrowth": 18,
+ "defBase": 570,
+ "defGrowth": 16,
+ "tacticsBase": 430.0,
+ "tacticsGrowth": 1.5,
+ "lv0Troops": 1850,
+ "rankGrades": {
+  "yari": "C",
+  "yumi": "D",
+  "uma": "D",
+  "ki": "B"
+ },
+ "initialSkill": "鉄砲隊進撃",
+ "skillDetail": "F/LV10 確率 8% 攻撃 15%上昇/対象:砲\n①攻撃 15%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "砲　確率 8% / 攻撃 15%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当J)。カード画像(スキルLV10形式)から。武将名「太田宗正」/ 上 / コスト2 / 統率 槍C・弓D・馬D・器B(4隅アイコンを個別にズームして確認) / 初期値 攻撃620・防御570・兵法430.0 / 指揮兵数0/1850 / カードNo.4261一致 / 初期スキル「鉄砲隊進撃 LV10」[F] 確率+8%・対象 砲・攻撃15%上昇 / Illust 森田悠新。",
+  "成長値(攻+18/防+16/兵法+1.5)・furigana・スキル文言はixanary.com/cards/4261の生HTMLと完全一致。",
+  "章は情報源に記載が無く未確認のためnull。初期スキルはFランクのためdata/skill/ページの新規作成対象外。"
+ ]
+}

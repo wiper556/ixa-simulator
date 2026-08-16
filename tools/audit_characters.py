@@ -420,6 +420,10 @@ def main():
             return "傑"
         if len(n) == 4 and n[0] == "3":
             return "特"
+        # 2026-08-16: 上は4桁の4始まり(No.4109〜4321 を実物のカードで確認)。
+        # ここに無いと上武将が「天」に混ざり、同名判定が別レアリティ同士で鳴る。
+        if len(n) == 4 and n[0] == "4":
+            return "上"
         if len(n) == 4 and n[0] in "27":
             return "極"
         return "天"

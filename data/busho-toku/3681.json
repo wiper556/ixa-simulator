@@ -1,0 +1,41 @@
+{
+ "name": "小畠虎盛",
+ "no": "3681",
+ "ch": null,
+ "cost": 3,
+ "troop": "弓砲器攻",
+ "sub": "",
+ "effect": "攻撃 480%上昇(同時攻撃時消費名声値-10・重複不可)",
+ "furigana": "おばたとらもり",
+ "illustrator": "ツヤイルカ",
+ "imageFull": "assets/img/characters/no3681_full.png",
+ "imageChar": "assets/img/characters/no3681_char.png",
+ "atkBase": 960,
+ "atkGrowth": 36,
+ "defBase": 850,
+ "defGrowth": 26,
+ "tacticsBase": 440.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 3100,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "C",
+  "uma": "B",
+  "ki": "A"
+ },
+ "initialSkill": "鬼虎",
+ "skillDetail": "C/LV10 確率 45% 攻撃 480%上昇/対象:弓・砲・器\n①攻撃 480%上昇する\n②所属部隊を含む自部隊同時攻撃で消費する名声値が10減少する(重複不可)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓・砲・器　確率 45% / 攻撃 480%上昇(同時攻撃時消費名声値-10・重複不可)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当D)。カード画像(スキルLV10形式)から。武将名「小畠虎盛」/ふりがな「おばたとらもり」/特/コスト3/統率 槍B・弓C・馬B・器A(4隅バッジ)/攻撃960・防御850・兵法440.0/指揮兵数0/3100/カードNo.3681/スキル「鬼虎LV10」[C] 確率+45%・対象 弓/砲/器・攻撃480%上昇・所属部隊を含む自部隊同時攻撃で消費する名声値を-10(重複不可)/Illust ツヤイルカ。カード原文は画像を4倍拡大して確認済み(「防塁部隊」ではなく「所属部隊」)。",
+  "成長値(攻撃+36/防御+26/兵法+2)・イラストレーター・ステータス初期値・指揮兵数はixanary.com/cards/3681の生HTML埋め込みJSONとカード画像が完全一致。",
+  "章はixanary.com/cards/3681に記載が無く未確認のためnullのまま。「名声値」の仕様詳細はカード上に説明が無く未確認。"
+ ]
+}

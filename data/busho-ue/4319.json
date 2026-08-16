@@ -1,0 +1,42 @@
+{
+ "name": "安富徳円",
+ "no": "4319",
+ "ch": null,
+ "cost": 2,
+ "troop": "弓防",
+ "sub": "",
+ "effect": "弓防 13%上昇(武将のコストで効果が変化)",
+ "furigana": "やすとみとくえん",
+ "illustrator": "KASEN",
+ "imageFull": "assets/img/characters/no4319_full.png",
+ "imageChar": "assets/img/characters/no4319_char.png",
+ "atkBase": 560,
+ "atkGrowth": 15,
+ "defBase": 680,
+ "defGrowth": 15,
+ "tacticsBase": 470.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 1970,
+ "rankGrades": {
+  "yari": "C",
+  "yumi": "B",
+  "uma": "C",
+  "ki": "C"
+ },
+ "initialSkill": "弓隊守護",
+ "skillDetail": "E/LV10 確率 25% 弓防 13%上昇/対象:弓\n①弓防 13%上昇する(武将のコストで効果が変化する)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓　確率 25% / 弓防 13%上昇(武将のコストで効果が変化)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当H)。カード画像(スキルLV10形式)から。武将名「安富徳円」/上/コスト2/統率 槍C・弓B・馬C・器C(4隅を個別にズームして確認)/攻撃560・防御680・兵法470.0/指揮兵数0/1970/カードNo.4319/スキル「弓隊守護LV10」[E] 確率:+25%・対象 弓・弓防:13%上昇(武将のコストで効果が変化します)/Illust:KASEN(カード画像下部で確認)。",
+  "成長値(攻撃+15/防御+15/兵法+2)・スキル効果数値はixanary.com/cards/4319の武将データ表・スキル効果表の両方でカード画像と完全一致。No.4307津川義冬と同じ「弓隊守護」スキルだが数値・イラストレーターは別。",
+  "ixawikiは未確認(標準2ソースのうちixanaryで裏取りできたため未照合)。章はixanaryに記載がなく null のまま。",
+  "上カードは合成テーブル・TR段階が存在しない前提(data/busho-toku/3418.jsonの前例に合わせ、trTableはLV10のみ)。ixanaryのカードページにもTR/鍛錬・合成候補の記載なし。初期スキル「弓隊守護」はEランクのためSランク以上のskillページ作成規約には該当せず、data/skill/弓隊守護.json は作成していない(No.4307で既に判断済み)。"
+ ]
+}

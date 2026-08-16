@@ -1,0 +1,41 @@
+{
+ "name": "阿喜姫",
+ "no": "3598",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "弓砲器速破",
+ "sub": "",
+ "effect": "速度160%上昇+破壊80%上昇",
+ "furigana": "あきひめ",
+ "illustrator": "かにぱん",
+ "imageFull": "assets/img/characters/no3598_full.png",
+ "imageChar": "assets/img/characters/no3598_char.png",
+ "atkBase": 860,
+ "atkGrowth": 27,
+ "defBase": 910,
+ "defGrowth": 32,
+ "tacticsBase": 450.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 2670,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "B",
+  "uma": "B",
+  "ki": "B"
+ },
+ "initialSkill": "猫興赤姫",
+ "skillDetail": "C/LV10 確率 100% 速度 160%上昇+破壊 80%上昇/対象:弓・砲・器\n①速度 160%上昇する\n②破壊 80%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓・砲・器　確率 100% / 速度 160%上昇+破壊 80%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当B)。カード画像(スキルLV10形式)から。武将名「阿喜姫」/ふりがな「あきひめ」/特/コスト2.5/統率 槍B・弓B・馬B・器B(4隅を個別にズームして確認)/攻撃860・防御910・兵法450.0/指揮兵数0/2670/カードNo.3598(ファイル名と一致)/スキル「猫興赤姫LV10」[C] 確率:+100%・対象 弓/砲/器・速度:160%上昇・破壊:80%上昇/Illust かにぱん(カード画像は小さく「がにばん」に見えたが、ixanary.com/cards/3598で「かにぱん」と確認して訂正)。",
+  "成長値(攻撃+27/防御+32/兵法+2)はixanary.com/cards/3598のテキストで確認(カード画像に成長値の記載は無い)。",
+  "章はixanary.com/cards/3598に記載が無く、未確認のため null。"
+ ]
+}

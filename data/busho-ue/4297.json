@@ -1,0 +1,41 @@
+{
+ "name": "後藤賢豊",
+ "no": "4297",
+ "ch": null,
+ "cost": 2,
+ "troop": "槍攻",
+ "sub": "",
+ "effect": "槍攻15%上昇",
+ "furigana": "ごとうかたとよ",
+ "illustrator": "こぶとりらゐど",
+ "imageFull": "assets/img/characters/no4297_full.png",
+ "imageChar": "assets/img/characters/no4297_char.png",
+ "atkBase": 660,
+ "atkGrowth": 19,
+ "defBase": 550,
+ "defGrowth": 16,
+ "tacticsBase": 450.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 1940,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "C",
+  "uma": "C",
+  "ki": "C"
+ },
+ "initialSkill": "槍隊進撃",
+ "skillDetail": "F/LV10 確率 10% 槍攻 15%上昇/対象:槍\n①槍攻 15%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍　確率 10% / 槍攻 15%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当J)。カード画像(スキルLV10形式)から。武将名「後藤賢豊」/ 上 / コスト2 / 統率 槍B・弓C・馬C・器C(4隅アイコンを個別にズームして確認) / 初期値 攻撃660・防御550・兵法450.0 / 指揮兵数0/1940 / カードNo.4297一致 / 初期スキル「槍隊進撃 LV10」[F] 確率+10%・対象 槍・槍攻15%上昇 / Illust こぶとりらゐど。",
+  "イラストレーター名はカード画像の低解像度では「こぶとらみど」とも読めたが、ixanary.com/cards/4297の生HTMLで「こぶとりらゐど」と確認し訂正して採用。成長値(攻+19/防+16/兵法+2)・furigana・スキル文言は同ソースでカード画像と一致。",
+  "章は情報源に記載が無く未確認のためnull。初期スキルはFランクのためdata/skill/ページの新規作成対象外。"
+ ]
+}

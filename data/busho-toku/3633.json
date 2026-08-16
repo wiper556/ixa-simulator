@@ -1,0 +1,34 @@
+{
+ "name": "清原マリア",
+ "no": "3633",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "弓砲器攻防",
+ "sub": "卓越",
+ "effect": "攻撃345%上昇+防御345%上昇(全スキルの卓越確率+15%・模倣不可)",
+ "furigana": "きよはらまりあ",
+ "illustrator": "mado*pen",
+ "imageFull": "assets/img/characters/no3633_full.png",
+ "imageChar": "assets/img/characters/no3633_char.png",
+ "atkBase": 910,
+ "atkGrowth": null,
+ "defBase": 910,
+ "defGrowth": null,
+ "tacticsBase": 460.0,
+ "tacticsGrowth": null,
+ "lv0Troops": 2680,
+ "rankGrades": {"yari": "B", "yumi": "A", "uma": "C", "ki": "B"},
+ "initialSkill": "聖風",
+ "skillDetail": "C/LV10 確率 100% 攻撃 345%上昇+防御 345%上昇/対象:弓・砲・器　卓越\n①攻撃345%上昇する\n②防御345%上昇する\n③このスキルを所持する武将の全スキルの卓越確率に15%を加算する(模倣不可)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓・砲・器 卓越　確率 100% / 攻撃 345%上昇+防御 345%上昇(全スキルの卓越確率+15%・模倣不可)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当C)。カード画像(スキルLV10形式)から作成。武将名・ふりがな・統率・攻防兵法初期値・指揮兵数・カードNo.・スキル名/効果・illustratorはカード画像から読み取り。ch(章)・growth系は画像に記載が無いため null。卓越確率加算効果があるためsub=卓越とした。"
+ ]
+}

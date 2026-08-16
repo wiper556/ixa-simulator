@@ -1,0 +1,34 @@
+{
+ "name": "佐竹義久",
+ "no": "3621",
+ "ch": null,
+ "cost": 3,
+ "troop": "全攻破",
+ "sub": "",
+ "effect": "攻撃345%上昇+破壊70%上昇",
+ "furigana": "さたけよしひさ",
+ "illustrator": "木下月乃",
+ "imageFull": "assets/img/characters/no3621_full.png",
+ "imageChar": "assets/img/characters/no3621_char.png",
+ "atkBase": 940,
+ "atkGrowth": null,
+ "defBase": 860,
+ "defGrowth": null,
+ "tacticsBase": 460.0,
+ "tacticsGrowth": null,
+ "lv0Troops": 3080,
+ "rankGrades": {"yari": "A", "yumi": "C", "uma": "B", "ki": "B"},
+ "initialSkill": "鬼ノ右腕",
+ "skillDetail": "C/LV10 確率 48% 攻撃 345%上昇+破壊 70%上昇/対象:全\n①攻撃345%上昇する\n②破壊70%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 48% / 攻撃 345%上昇+破壊 70%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当C)。カード画像(スキルLV10形式)から作成。武将名・ふりがな・統率・攻防兵法初期値・指揮兵数・カードNo.・スキル名/効果・illustratorはカード画像から読み取り。ch(章)・growth系は画像に記載が無いため null。"
+ ]
+}

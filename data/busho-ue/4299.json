@@ -1,0 +1,42 @@
+{
+ "name": "江上家種",
+ "no": "4299",
+ "ch": null,
+ "cost": 2,
+ "troop": "槍攻",
+ "sub": "",
+ "effect": "槍攻13%上昇(武将のコストで効果が変化)",
+ "furigana": "えがみいえたね",
+ "illustrator": "Luke",
+ "imageFull": "assets/img/characters/no4299_full.png",
+ "imageChar": "assets/img/characters/no4299_char.png",
+ "atkBase": 660,
+ "atkGrowth": 19,
+ "defBase": 550,
+ "defGrowth": 17,
+ "tacticsBase": 450.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 1940,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "C",
+  "uma": "C",
+  "ki": "C"
+ },
+ "initialSkill": "槍隊挟撃",
+ "skillDetail": "E/LV10 確率 25% 槍攻 13%上昇/対象:槍\n①槍攻 13%上昇する(武将のコストで効果が変化)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍　確率 25% / 槍攻 13%上昇(武将のコストで効果が変化)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当F)。カード画像(スキルLV10形式)から。ixanary.com/cards/4299の生HTMLで基礎値・成長値(攻撃+19・防御+17・兵法+2)・統率(槍B・弓C・馬C・器C)・イラストレーター「Luke」はカード画像と完全一致。",
+  "【要確認】No.4237と同様のパターン。カード画像のLV10表記は確率25%・槍攻13%上昇。ixanary.com/cards/4299の生HTMLではLV10が確率+25%・槍攻9.75%上昇(LV1は確率+15%・槍攻5.25%上昇)。確率(25%)は一致するが上昇幅だけ画像の方が大きい。「(武将のコストで効果が変化します)」注記あり。カード画像の一次情報を優先し13%で登録。",
+  "初期スキル名はixanaryのスキルリンク先が/skills/槍隊挟撃のため「槍隊挟撃」で登録。Eランクのためdata/skill/ページは作成していない。",
+  "章は情報源に記載なく未確認のためnull。ixanaryのdescription(紹介文)は空欄だった。"
+ ]
+}

@@ -1,0 +1,41 @@
+{
+ "name": "亀井茲矩",
+ "no": "3630",
+ "ch": null,
+ "cost": 3,
+ "troop": "弓馬器焙防",
+ "sub": "",
+ "effect": "防御 20%上昇(武将ランクにより効果変化)",
+ "furigana": "かめいこれのり",
+ "illustrator": "三好載克",
+ "imageFull": "assets/img/characters/no3630_full.png",
+ "imageChar": "assets/img/characters/no3630_char.png",
+ "atkBase": 870,
+ "atkGrowth": 28,
+ "defBase": 920,
+ "defGrowth": 32,
+ "tacticsBase": 480.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 3090,
+ "rankGrades": {
+  "yari": "C",
+  "yumi": "B",
+  "uma": "B",
+  "ki": "A"
+ },
+ "initialSkill": "羅針凝視",
+ "skillDetail": "C/LV10 確率 40% 防御 20%上昇/対象:弓・馬・器・焙\n①防御 20%上昇する\n②武将ランクにより防御効果が変化する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓・馬・器・焙　確率 40% / 防御 20%上昇(武将ランクにより効果変化)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当D)。カード画像(スキルLV10形式)から。武将名「亀井茲矩」/ふりがな「かめいこれのり」/特/コスト3/統率 槍C・弓B・馬B・器A(4隅バッジ)/攻撃870・防御920・兵法480.0/指揮兵数0/3090/カードNo.3630/スキル「羅針凝視LV10」[C] 確率+40%・対象 弓/馬/器/焙・防御20%上昇・武将ランクで防御効果が変化/Illust 三好載克。",
+  "成長値(攻撃+28/防御+32/兵法+2)・イラストレーター・ステータス初期値・指揮兵数はixanary.com/cards/3630の生HTML埋め込みJSONとカード画像が完全一致。",
+  "章はixanary.com/cards/3630に記載が無く未確認のためnullのまま。「武将ランクで防御効果が変化」の具体的な変化量はカード上に記載が無く未確認。"
+ ]
+}

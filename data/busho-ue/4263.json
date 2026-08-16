@@ -1,0 +1,41 @@
+{
+ "name": "池田勝正",
+ "no": "4263",
+ "ch": null,
+ "cost": 2,
+ "troop": "槍攻",
+ "sub": "",
+ "effect": "槍攻15%上昇",
+ "furigana": "いけだかつまさ",
+ "illustrator": "かにぱん",
+ "imageFull": "assets/img/characters/no4263_full.png",
+ "imageChar": "assets/img/characters/no4263_char.png",
+ "atkBase": 630,
+ "atkGrowth": 18,
+ "defBase": 570,
+ "defGrowth": 16,
+ "tacticsBase": 440.0,
+ "tacticsGrowth": 1.5,
+ "lv0Troops": 1860,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "C",
+  "uma": "D",
+  "ki": "C"
+ },
+ "initialSkill": "槍隊進撃",
+ "skillDetail": "F/LV10 確率 10% 槍攻 15%上昇/対象:槍\n①槍攻 15%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍　確率 10% / 槍攻 15%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当F)。カード画像(スキルLV10形式)から。ixanary.com/cards/4263の生HTMLでスキル文言(確率+10%・槍攻15%上昇)・基礎値・成長値(攻撃+18・防御+16・兵法+1.5)・統率(槍B・弓C・馬D・器C)がカード画像と完全一致。イラストレーターは画像では読み取りにくかったがixanaryで「かにぱん」と確定。",
+  "初期スキル名はixanaryのスキルリンク先が/skills/槍隊進撃のため「槍隊進撃」で登録。Fランクのためdata/skill/ページは作成していない。",
+  "章は情報源に記載なく未確認のためnull。"
+ ]
+}

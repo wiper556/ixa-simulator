@@ -1,0 +1,41 @@
+{
+ "name": "神保氏張",
+ "no": "3619",
+ "ch": null,
+ "cost": 3,
+ "troop": "弓砲器攻防",
+ "sub": "",
+ "effect": "攻撃 345%上昇+防御 345%上昇",
+ "furigana": "じんぼうじはる",
+ "illustrator": "たわわ実",
+ "imageFull": "assets/img/characters/no3619_full.png",
+ "imageChar": "assets/img/characters/no3619_char.png",
+ "atkBase": 900,
+ "atkGrowth": 31,
+ "defBase": 900,
+ "defGrowth": 31,
+ "tacticsBase": 450.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 3080,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "A",
+  "uma": "C",
+  "ki": "B"
+ },
+ "initialSkill": "一揆討伐",
+ "skillDetail": "C/LV10 確率 60% 攻撃 345%上昇/対象:弓・砲・器\n①攻撃 345%上昇する\n②防御 345%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓・砲・器　確率 60% / 攻撃 345%上昇+防御 345%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当A)。カード画像(スキルLV10形式)から。武将名「神保氏張」/ふりがな「じんぼうじはる」/特/コスト3/統率 槍B・弓A・馬C・器B(4隅個別ズームで確認)/攻撃900・防御900・兵法450.0/指揮兵数0/3080/カードNo.3619/スキル「一揆討伐LV10」[C] 確率:+60%・対象 弓/砲/器・攻撃:345%上昇 防御:345%上昇。",
+  "成長値(攻撃+31/防御+31/兵法+2)・イラストレーター(たわわ実)・スキルLV10効果(確率60%/攻撃345%上昇/防御345%上昇)はixanary.com/cards/3619の生HTML埋め込みJSON・スキルテーブルとカード画像が一致。",
+  "章はixanary.com/cards/3619に記載なし、ixawiki側は今回のバッチ(35xx台)で軒並み未作成だったため個別確認を省略しnullのままとした(要申し送り)。"
+ ]
+}

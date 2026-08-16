@@ -1,0 +1,34 @@
+{
+ "name": "後藤信康",
+ "no": "3613",
+ "ch": null,
+ "cost": 3,
+ "troop": "馬砲器防",
+ "sub": "",
+ "effect": "防御235%上昇(所有者が影城主のとき防御効果1.5倍)",
+ "furigana": "ごとうのぶやす",
+ "illustrator": "nabe",
+ "imageFull": "assets/img/characters/no3613_full.png",
+ "imageChar": "assets/img/characters/no3613_char.png",
+ "atkBase": 850,
+ "atkGrowth": null,
+ "defBase": 920,
+ "defGrowth": null,
+ "tacticsBase": 480.0,
+ "tacticsGrowth": null,
+ "lv0Troops": 3080,
+ "rankGrades": {"yari": "B", "yumi": "C", "uma": "A", "ki": "B"},
+ "initialSkill": "黄影射陣",
+ "skillDetail": "C/LV10 確率 40% 防御 235%上昇/対象:馬・砲・器\n①防御235%上昇する\n②このスキルを所持する武将の所有者が影城主のとき防御効果が1.5倍になる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "馬・砲・器　確率 40% / 防御 235%上昇(所有者が影城主のとき防御効果1.5倍)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当C)。カード画像(スキルLV10形式)から作成。武将名・ふりがな・統率・攻防兵法初期値・指揮兵数・カードNo.・スキル名/効果・illustratorはカード画像から読み取り。ch(章)・growth系は画像に記載が無いため null。"
+ ]
+}

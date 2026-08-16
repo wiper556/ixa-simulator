@@ -1,0 +1,41 @@
+{
+ "name": "三雲定持",
+ "no": "4303",
+ "ch": null,
+ "cost": 2,
+ "troop": "槍防",
+ "sub": "",
+ "effect": "槍防12%上昇",
+ "furigana": "みくもさだもち",
+ "illustrator": "匡吉",
+ "imageFull": "assets/img/characters/no4303_full.png",
+ "imageChar": "assets/img/characters/no4303_char.png",
+ "atkBase": 550,
+ "atkGrowth": 15,
+ "defBase": 660,
+ "defGrowth": 19,
+ "tacticsBase": 450.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 1940,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "C",
+  "uma": "C",
+  "ki": "C"
+ },
+ "initialSkill": "槍隊堅陣",
+ "skillDetail": "F/LV10 確率 30% 槍防 12%上昇/対象:槍\n①槍防 12%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍　確率 30% / 槍防 12%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当J)。カード画像(スキルLV10形式)から。武将名「三雲定持」/ 上 / コスト2 / 統率 槍B・弓C・馬C・器C(4隅アイコンを個別にズームして確認) / 初期値 攻撃550・防御660・兵法450.0 / 指揮兵数0/1940 / カードNo.4303一致 / 初期スキル「槍隊堅陣 LV10」[F] 確率+30%・対象 槍・槍防12%上昇 / Illust 匡吉。",
+  "成長値(攻+15/防+19/兵法+2)・furigana・スキル文言・イラストレーター名はixanary.com/cards/4303の生HTMLと完全一致(このカードには紹介文/フレーバーテキストの記載自体が無い)。",
+  "章は情報源に記載が無く未確認のためnull。初期スキルはFランクのためdata/skill/ページの新規作成対象外。"
+ ]
+}

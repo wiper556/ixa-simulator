@@ -1,0 +1,42 @@
+{
+ "name": "温井総貞",
+ "no": "3648",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "馬砲器防",
+ "sub": "",
+ "effect": "防御180%上昇(自拠点防御時は防御効果2倍)",
+ "furigana": "ぬくいふささだ",
+ "illustrator": "木志田コテツ",
+ "imageFull": "assets/img/characters/no3648_full.png",
+ "imageChar": "assets/img/characters/no3648_char.png",
+ "atkBase": 850,
+ "atkGrowth": 26,
+ "defBase": 930,
+ "defGrowth": 33,
+ "tacticsBase": 430.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 2690,
+ "rankGrades": {
+  "yari": "C",
+  "yumi": "B",
+  "uma": "A",
+  "ki": "B"
+ },
+ "initialSkill": "七頭ノ乱",
+ "skillDetail": "C/LV10 確率 45% 防御 180%上昇/対象:馬・砲・器\n①防御 180%上昇する\n②自拠点防御時は防御効果が2倍になる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "馬・砲・器　確率 45% / 防御 180%上昇(自拠点防御時は防御効果2倍)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当B)。カード画像(スキルLV10形式)から。武将名「温井総貞」/ふりがな「ぬくいふささだ」/特/コスト2.5/統率 槍C・弓B・馬A・器B(4隅を個別にズームして確認)/攻撃850・防御930・兵法430.0/指揮兵数0/2690/カードNo.3648(ファイル名と一致)/スキル「七頭ノ乱LV10」[C] 確率:+45%・対象 馬/砲/器・防御:180%上昇・自拠点防御時は防御効果2倍/Illust 木志田コテツ。",
+  "成長値(攻撃+26/防御+33/兵法+2)はixanary.com/cards/3648のテキストで確認(カード画像に成長値の記載は無い)。",
+  "【要申し送り】ixanary.com/cards/3648のイラストレーター欄は「祀花よう子」となっており、カード画像自体に印字された「Illust:木志田コテツ」と食い違う。カード画像を一次情報として優先し「木志田コテツ」を採用した。",
+  "章はixanary.com/cards/3648に記載が無く、未確認のため null。"
+ ]
+}

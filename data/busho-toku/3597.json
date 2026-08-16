@@ -1,0 +1,42 @@
+{
+ "name": "原田宗時",
+ "no": "3597",
+ "ch": null,
+ "cost": 3,
+ "troop": "馬砲器攻",
+ "sub": "",
+ "effect": "攻撃 330%上昇(合流攻撃時は必ずスキル発動)",
+ "furigana": "はらだむねとき",
+ "illustrator": "isuZu",
+ "imageFull": "assets/img/characters/no3597_full.png",
+ "imageChar": "assets/img/characters/no3597_char.png",
+ "atkBase": 900,
+ "atkGrowth": 31,
+ "defBase": 860,
+ "defGrowth": 26,
+ "tacticsBase": 490.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 3080,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "C",
+  "uma": "A",
+  "ki": "B"
+ },
+ "initialSkill": "伊達者",
+ "skillDetail": "C/LV10 確率 25% 攻撃 330%上昇/対象:馬・砲・器\n①攻撃 330%上昇する\n②合流攻撃時は必ずスキル発動する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "馬・砲・器　確率 25% / 攻撃 330%上昇(合流攻撃時は必ずスキル発動)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当A)。カード画像(スキルLV10形式)から。武将名「原田宗時」/ふりがな「はらだむねとき」/特/コスト3/統率 槍B・弓C・馬A・器B(4隅個別ズームで確認)/攻撃900・防御860・兵法490.0/指揮兵数0/3080/カードNo.3597/スキル「伊達者LV10」[C] 確率:+25%・対象 馬/砲/器・攻撃:330%上昇・合流攻撃時は必ずスキル発動。",
+  "成長値(攻撃+31/防御+26/兵法+2)・イラストレーター(isuZu)・スキルLV10効果(確率25%/攻撃330%上昇)はixanary.com/cards/3597の生HTML埋め込みJSON・スキルテーブルとカード画像が一致。",
+  "「合流攻撃時は必ずスキル発動」は無尽/撤退/飛翔/覇道/不屈/兵站/卓越のいずれにも該当しないためsubは空欄のまま、条件はskillDetailの②行に記載した。",
+  "章はixanary.com/cards/3597に記載なし、ixawiki.com/index.php?原田宗時は未作成ページ(編集フォームが返る)のため確認できず、chはnullのまま。3418・3535・3593でも同様にixawikiに未作成だったため、この番台(35xx台後半以降)はixawiki側に情報が無い可能性が高いと判断し、以降のカードは章についてixawiki照会を都度は行わず、ixanaryに記載が無ければnullとした(未確認事項として最終報告にまとめる)。"
+ ]
+}

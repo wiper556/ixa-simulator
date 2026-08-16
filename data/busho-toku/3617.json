@@ -1,0 +1,34 @@
+{
+ "name": "細川高国",
+ "no": "3617",
+ "ch": null,
+ "cost": 3,
+ "troop": "槍砲器防速",
+ "sub": "",
+ "effect": "防御320%上昇+速度70%上昇(加勢出陣時は速度効果3倍)",
+ "furigana": "ほそかわたかくに",
+ "illustrator": "COGA",
+ "imageFull": "assets/img/characters/no3617_full.png",
+ "imageChar": "assets/img/characters/no3617_char.png",
+ "atkBase": 860,
+ "atkGrowth": null,
+ "defBase": 920,
+ "defGrowth": null,
+ "tacticsBase": 470.0,
+ "tacticsGrowth": null,
+ "lv0Troops": 3080,
+ "rankGrades": {"yari": "A", "yumi": "B", "uma": "C", "ki": "B"},
+ "initialSkill": "大物崩れ",
+ "skillDetail": "C/LV10 対象:槍・砲・器\n①確率45%で防御320%上昇する\n②確率100%で速度70%上昇する\n③加勢出陣時は速度効果が3倍になる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・砲・器　確率 45% / 防御 320%上昇+確率 100% / 速度 70%上昇(加勢出陣時は速度効果3倍)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当C)。カード画像(スキルLV10形式)から作成。武将名・ふりがな・統率・攻防兵法初期値・指揮兵数・カードNo.・スキル名/効果・illustratorはカード画像から読み取り。ch(章)・growth系は画像に記載が無いため null。防御(確率45%)と速度(確率100%)で発動確率が異なる複合スキルのためtrTableに両方併記した。"
+ ]
+}

@@ -1,0 +1,41 @@
+{
+ "name": "桑名吉成",
+ "no": "4257",
+ "ch": null,
+ "cost": 2,
+ "troop": "馬攻",
+ "sub": "",
+ "effect": "馬攻10%上昇",
+ "furigana": "くわなよしなり",
+ "illustrator": "匈歌ハトリ",
+ "imageFull": "assets/img/characters/no4257_full.png",
+ "imageChar": "assets/img/characters/no4257_char.png",
+ "atkBase": 650,
+ "atkGrowth": 18,
+ "defBase": 540,
+ "defGrowth": 15,
+ "tacticsBase": 440.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 1850,
+ "rankGrades": {
+  "yari": "D",
+  "yumi": "C",
+  "uma": "B",
+  "ki": "B"
+ },
+ "initialSkill": "騎馬隊襲撃",
+ "skillDetail": "F/LV10 確率 20% 馬攻 10%上昇/対象:馬\n①馬攻 10%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "馬　確率 20% / 馬攻 10%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当F)。カード画像(スキルLV10形式)から。ixanary.com/cards/4257・ixawiki未確認だがixanary生HTMLでスキル文言(確率+20%・馬攻10%上昇)・基礎値・成長値(攻撃+18・防御+15・兵法+2)・統率(槍D・弓C・馬B・器B)がカード画像と完全一致。イラストレーターは画像では読み取りにくかったがixanaryで「匈歌ハトリ」と確定。",
+  "初期スキル名はixanaryのスキルリンク先が/skills/騎馬隊襲撃のため「騎馬隊襲撃」で登録。Fランクのためdata/skill/ページは作成していない。",
+  "章は情報源に記載なく未確認のためnull。"
+ ]
+}

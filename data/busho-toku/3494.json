@@ -1,0 +1,34 @@
+{
+ "name": "上杉定正",
+ "no": "3494",
+ "ch": null,
+ "cost": 3,
+ "troop": "全攻",
+ "sub": "",
+ "effect": "攻撃85%上昇+資源獲得率10%上昇(破壊した耐久値に応じて資源獲得)",
+ "furigana": "うえすぎさだまさ",
+ "illustrator": "OOGA",
+ "imageFull": "assets/img/characters/no3494_full.png",
+ "imageChar": "assets/img/characters/no3494_char.png",
+ "atkBase": 880,
+ "atkGrowth": null,
+ "defBase": 820,
+ "defGrowth": null,
+ "tacticsBase": 450.0,
+ "tacticsGrowth": null,
+ "lv0Troops": 2960,
+ "rankGrades": {"yari": "B", "yumi": "A", "uma": "B", "ki": "C"},
+ "initialSkill": "悪因ノ深域",
+ "skillDetail": "C/LV10 確率 54% 攻撃 85%上昇/対象:全\n①攻撃85%上昇する\n②資源獲得率10%上昇する\n③破壊した耐久値に応じて資源獲得する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 54% / 攻撃 85%上昇+資源獲得率10%上昇(破壊した耐久値に応じて資源獲得)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当C)。カード画像(スキルLV10形式)から作成。武将名・ふりがな・統率・攻防兵法初期値・指揮兵数・カードNo.・スキル名/効果・illustratorはカード画像から読み取り。ch(章)・growth系は画像に記載が無いため null。"
+ ]
+}
