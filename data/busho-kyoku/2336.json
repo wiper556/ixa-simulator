@@ -1,7 +1,7 @@
 {
  "name": "伊達成実（3）",
  "no": "2336",
- "ch": "未確認",
+ "ch": "24章",
  "cost": 4,
  "troop": "槍弓砲攻",
  "sub": "",
@@ -115,10 +115,12 @@
   "sourceCharacters逆引き確認(A-3-11): A/Bの青葉ノ仁王[A]→乱世ノ歸人[A]はA-3-9例外規定(afterSkillが既存Sページを持つ元スキル、上記のnoteでは『A/B以下のためページ化なし』としていたが2026-08-16時点で乱世ノ歸人自身が既にページを持つに至ったため実質的に適用対象に変わっていた)に該当するにも関わらず未登録だったため、青葉ノ仁王.jsonを新規作成しslot A・Bで登録、乱世ノ歸人.jsonのgrantedViaSkillsにも追加した。C(宿木)・S1(乱世ノ歸人)・S2(飛蝶野分)は既に正しく登録済みで一致。",
   "trTable: ixanary生HTMLにTR1〜6や鍛錬の記載が無く、LV10のみの単段スキルであることを確認。",
   "categoryLinks(A-2): 兵士被害減少・卓越の2項目が該当しskills-higai.html/skills-takuetsu.htmlへのリンクが既に設定済みで正しい。",
-  "章は情報源(ixanary.com/ixawiki.com)に記載が無く未確認のまま(既存も「未確認」表記で変更なし)。"
+  "章は情報源(ixanary.com/ixawiki.com)に記載が無く未確認のまま(既存も「未確認」表記で変更なし)。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
  ],
  "reviewedOk": true,
  "wikiOldestComment": "2023-01-10",
  "wikiCommentCount": 15,
- "chGuess": "24章"
+ "chGuess": "24章",
+ "chSource": "wikiOldestComment"
 }

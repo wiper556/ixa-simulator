@@ -1,7 +1,7 @@
 {
  "name": "難攻不落の天守",
  "no": "2589",
- "ch": "未確認",
+ "ch": "26章",
  "cost": 3,
  "troop": "全防破",
  "sub": "",
@@ -128,10 +128,12 @@
   "合成テーブル(A=天綾の誓約→天焉相克、B=天磐船自己参照、C=四天轟雷自己参照、S1=月詠ノ覇威自己参照、S2枠なし)はixawiki(BushoCard/2589難攻不落の天守)の1次/2次/3次候補表で確認。天綾の誓約.jsonのownHiddenCandidateも天焉相克(SS)で一致。",
   "スロットAのtarget/rateが未記入だったのを天綾の誓約自身のLV10値(対象全、確率60%)で補完した。",
   "天綾の誓約・天磐船・四天轟雷・月詠ノ覇威・城壁の護り(自身の初期スキル、移植不可)は既存ページにsourceCharacters(2589)が正しいスロットで登録済みを確認(drift無し)。",
-  "章は情報源(ixanary/ixawiki)に記載が無いため未確認。"
+  "章は情報源(ixanary/ixawiki)に記載が無いため未確認。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
  ],
  "reviewedOk": true,
  "wikiOldestComment": "2023-11-08",
  "wikiCommentCount": 25,
- "chGuess": "26章"
+ "chGuess": "26章",
+ "chSource": "wikiOldestComment"
 }

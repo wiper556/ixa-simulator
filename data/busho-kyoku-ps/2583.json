@@ -1,7 +1,7 @@
 {
  "name": "西郷局",
  "no": "2583",
- "ch": "未確認",
+ "ch": "25章",
  "cost": 4,
  "troop": "槍弓器鉄防",
  "sub": "",
@@ -136,10 +136,12 @@
   "スロットS2(大樹ノ誓い)のtarget/rateが未記入だったのを大樹ノ誓い自身のLV10値(対象槍・弓・器・焙、確率50%)で補完した。",
   "大樹ノ誓い(A、S2候補)は移植後合成候補が既存ページを持つ戦陣 凪のためA-3-9の例外で新規ページ作成。戦陣 凪.jsonのgrantedViaSkillsに追加。",
   "戦陣 無縫・天衣無縫神戒・国津破邪ノ楯・葵ノ慈母(自身の初期スキル、移植不可)は既存ページにsourceCharacters(2583)が正しいスロットで登録済みを確認。",
-  "章は情報源(ixanary/ixawiki)に記載が無いため未確認。"
+  "章は情報源(ixanary/ixawiki)に記載が無いため未確認。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
  ],
  "reviewedOk": true,
  "wikiOldestComment": "2023-07-08",
  "wikiCommentCount": 12,
- "chGuess": "25章"
+ "chGuess": "25章",
+ "chSource": "wikiOldestComment"
 }

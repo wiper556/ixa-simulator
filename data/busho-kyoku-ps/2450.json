@@ -1,7 +1,7 @@
 {
  "name": "佐々木小次郎（3）",
  "no": "2450",
- "ch": "未確認",
+ "ch": "23章",
  "cost": 4.5,
  "troop": "防",
  "sub": "",
@@ -136,10 +136,12 @@
   "B枠(活人剣)のtarget/rateが未確定(null)だったため、data/skill/活人剣.jsonの確定値(target:全,rate:100%)を転記。",
   "A枠(鬼滅刺)・B枠(活人剣)・C枠(火之迦具土神)・S1枠(遠呂智ノ閃光)・S2枠(建御雷神ノ槌)は全てdata/skill/鬼滅刺.json・活人剣.json・火之迦具土神.json・遠呂智ノ閃光.json・建御雷神ノ槌.jsonのsourceCharactersに佐々木小次郎(2450)が正しいslotで登録済みであることを確認した(A-3-11)。",
   "synthesisTableのA/B/C/S1/S2は、ixanary.com(cards/2450の初期スキル巌流燕返しの合成テーブルおよび各候補スキル個別ページ)に加え、ixawiki.com(index.php?BushoCard/2450佐々木小次郎)の合成候補テーブル(1次候補/2次候補S1)を生HTMLで確認し、全5行がixanary/ixawiki2ソースで一致することを確認した。",
-  "章はixanary.com/ixawiki.comいずれのカードページにも記載が無く未確認。"
+  "章はixanary.com/ixawiki.comいずれのカードページにも記載が無く未確認。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
  ],
  "reviewedOk": true,
  "wikiOldestComment": "2022-03-07",
  "wikiCommentCount": 34,
- "chGuess": "23章"
+ "chGuess": "23章",
+ "chSource": "wikiOldestComment"
 }

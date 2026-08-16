@@ -1,7 +1,7 @@
 {
  "name": "志々雄真実【覇】",
  "no": "10053",
- "ch": "未確認",
+ "ch": "28章",
  "cost": 5.5,
  "troop": "全攻",
  "sub": "",
@@ -137,10 +137,12 @@
   "コスト5.5・成長値+170/+130/+4.5・絵師はixanary.com(cards/10053)とixawiki.comが一致。初期値2550/1900/880はカード実物を含め3ソース一致。",
   "スキルLV10〜TR5はixanary.com(skills/炎統極刃)とixagno.blog.fc2.com(blog-entry-10044)が全段一致、ixawiki.comもLV10とTR5が一致。TR6は情報源に無いためnull。",
   "9項目チェック: 9項目すべて該当なし(倍加効果のみでキーワードを持たない)。",
-  "合成テーブルはixanary.com(skills/炎統極刃)とixagno.blog.fc2.com(blog-entry-10044)の2ソースでA〜S2の1次/2次が完全一致。ixawikiの合成候補表は空テンプレート。"
+  "合成テーブルはixanary.com(skills/炎統極刃)とixagno.blog.fc2.com(blog-entry-10044)の2ソースでA〜S2の1次/2次が完全一致。ixawikiの合成候補表は空テンプレート。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
  ],
  "reviewedOk": true,
  "wikiOldestComment": "2024-11-13",
  "wikiCommentCount": 14,
- "chGuess": "28章"
+ "chGuess": "28章",
+ "chSource": "wikiOldestComment"
 }

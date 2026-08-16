@@ -1,7 +1,7 @@
 {
  "name": "井伊直政（3）",
  "no": "2440",
- "ch": "未確認",
+ "ch": "21章",
  "cost": 4,
  "troop": "全攻防",
  "sub": "",
@@ -140,10 +140,12 @@
   "A枠(紅蓮炎槍騎兵、自身の初期スキル)・B枠(戦場妙技)はtarget/rateが未確定(null)だったため、ixanary生HTML(skills/紅蓮炎槍騎兵・戦場妙技)で埋めた(A:全,100%/B:全,32%)。A枠の紅蓮炎槍騎兵→鬼滅刺、B枠の戦場妙技→戦陣破軍はいずれもskill≠afterSkillでafterSkillが既にページを持つため、A-3-9の例外ルールによりdata/skill/紅蓮炎槍騎兵.json・戦場妙技.jsonを新規作成し(いずれも2440のみ)、鬼滅刺.json・戦陣 破軍.jsonのgrantedViaSkillsに追記した。",
   "S2枠(戦陣凱旋)のtarget/rateが未確定(null)だったため、ixanary生HTML(skills/戦陣 凱旋)でtarget:全,rate:10%を追加。C枠(戦陣無双)・S1枠(鬼滅刺、自己参照)は既にdata/skill/戦陣 無双.json・鬼滅刺.jsonのsourceCharactersに井伊直政（3）(2440)が正しいslotで登録済みであることを確認した(A-3-11、鬼滅刺.json側のnote文言に「A枠」という誤記があったため「S1枠」に訂正)。",
   "synthesisTableのA/B/C/S1/S2は、ixanary.com(cards/2440の初期スキル紅蓮炎槍騎兵の合成テーブルおよび各候補スキル個別ページ)に加え、ixawiki.com(index.php?BushoCard/2440井伊直政)の合成候補テーブル(1次候補/2次候補S1)を生HTMLで確認し、全5行がixanary/ixawiki2ソースで一致することを確認した。",
-  "章はixanary.com/ixawiki.comいずれのカードページにも記載が無く未確認。"
+  "章はixanary.com/ixawiki.comいずれのカードページにも記載が無く未確認。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
  ],
  "reviewedOk": true,
  "wikiOldestComment": "2021-07-08",
  "wikiCommentCount": 17,
- "chGuess": "21章"
+ "chGuess": "21章",
+ "chSource": "wikiOldestComment"
 }

@@ -1,7 +1,7 @@
 {
  "name": "天草四郎時貞",
  "no": "2791",
- "ch": "未確認",
+ "ch": "20章",
  "cost": 4.0,
  "troop": "全攻",
  "sub": "",
@@ -108,10 +108,12 @@
   "2026-08-15黄丸化検証: skillDetail/trTableが防御90%上昇と所属部隊内のレアリティS以上のスキル発動率15%加算の記載を欠いていたため、ixanary.com/skills/奇跡とixawikiのコメント欄(いずれも同一文言)で裏取りして補完。",
   "S1候補「騎聖」の攻撃係数がixanary/ixawikiともに(コスト×Null)と空欄表示だったため、両サイト共通の「5コストで攻撃80%上昇」という注記から係数16を逆算して補完(ixagno.blog.fc2.comでも該当記事は見つからず)。",
   "A候補「鬼滅刺」のeffectShortに卓越確率+25%加算(模倣不可)の記載漏れ、C候補「戦陣 勝鬨」のeffectShortに防御77%上昇・速度40%上昇(確率100%)の記載漏れ、S2候補afterSkill「鬼謀 国砕」のafterEffectShortに破壊25%上昇の記載漏れがあり、いずれもixanary.com該当スキル個別ページの生HTMLで確認し補完(2026-08-15)。",
-  "synthesisTable全5行のslot割当はixanary.com/skills/奇跡の合成テーブルとixawiki(BushoCard/2791天草四郎時貞のスキル追加合成表・コメント欄)の2ソースで一致確認済み。sourceCharacters逆引き(skills.htmlの布都御魂ノ鬨/天穿神滅/天岩戸ノ神域/神光征軍)もno:2791が既に正しいslotで登録済みであることを確認した。"
+  "synthesisTable全5行のslot割当はixanary.com/skills/奇跡の合成テーブルとixawiki(BushoCard/2791天草四郎時貞のスキル追加合成表・コメント欄)の2ソースで一致確認済み。sourceCharacters逆引き(skills.htmlの布都御魂ノ鬨/天穿神滅/天岩戸ノ神域/神光征軍)もno:2791が既に正しいslotで登録済みであることを確認した。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
  ],
  "reviewedOk": true,
  "wikiOldestComment": "2021-01-15",
  "wikiCommentCount": 58,
- "chGuess": "20章"
+ "chGuess": "20章",
+ "chSource": "wikiOldestComment"
 }

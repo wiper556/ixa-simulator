@@ -1,7 +1,7 @@
 {
  "name": "武田勝頼（3）",
  "no": "2448",
- "ch": "未確認",
+ "ch": "22章",
  "cost": 4.5,
  "troop": "全攻防",
  "sub": "",
@@ -145,10 +145,12 @@
   "A/B/C枠(比類なき大将、自身の初期スキル)のtarget/rateが未確定(null)だったため、ixanary生HTML(skills/比類なき大将)でtarget:全,rate:70%を3枠とも追加。",
   "S1枠(騎神炎山→遁世影武者)・S2枠(建御雷神ノ槌、自己参照)は既にdata/skill/騎神炎山.json・建御雷神ノ槌.jsonのsourceCharactersに武田勝頼(2448)が正しいslotで登録済みであることを確認した(A-3-11)。",
   "synthesisTableのA/B/C/S1/S2は、ixanary.com(cards/2448の初期スキル比類なき大将の合成テーブルおよび各候補スキル個別ページ)に加え、ixawiki.com(index.php?BushoCard/2448武田勝頼)の合成候補テーブル(1次候補/2次候補S1)を生HTMLで確認し、全5行がixanary/ixawiki2ソースで一致することを確認した。",
-  "章はixanary.com/ixawiki.comいずれのカードページにも記載が無く未確認。"
+  "章はixanary.com/ixawiki.comいずれのカードページにも記載が無く未確認。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
  ],
  "reviewedOk": true,
  "wikiOldestComment": "2022-01-11",
  "wikiCommentCount": 31,
- "chGuess": "22章"
+ "chGuess": "22章",
+ "chSource": "wikiOldestComment"
 }

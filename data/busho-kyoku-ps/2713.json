@@ -1,7 +1,7 @@
 {
  "name": "北条幻庵（1）",
  "no": "2713",
- "ch": "未確認",
+ "ch": "5章",
  "cost": 3.0,
  "troop": "全攻速",
  "sub": "",
@@ -100,10 +100,12 @@
   "コスト3.0・指揮兵数2980・初期値670/670/480・成長値+17/+17/+2.0・ふりがな・絵師(GODTAIL)は ixanary.com(cards/2713) と ixawiki.com(BushoCard/2713北条幻庵) の2ソースで完全一致。lv0Troopsはixanaryの★0-0(2980)。",
   "スキル効果はLV1カードのため外部ソースを採用。ixanary(cards/2713)のLV10は確率+100%/対象 全/攻撃6%上昇・速度48%上昇。ixawikiのカードページはLV1表記(全攻+2.0%/全速+18.0%)で、LV1側の一致を確認したうえでLV10を採用。攻撃と速度が同時変動するためtrTableに両方併記(multistat規則)。TR段はどちらのソースにも無い。",
   "合成候補はixanary.com(skills/智謀巧軍)の1次/2次と ixawiki(BushoCard/2713)の合成候補テーブルの2ソースで全5枠完全一致(A=車懸り[B]→車懸り 白狐[B]、B=疾風怒濤[B]自己参照、C=捨て奸[B]自己参照、S1=神速[A]自己参照、S2=騎突 金剛[C]→剛勇無双[B])。各枠のtarget/rate/effectShortは候補スキル自身のixanaryページのLV10行から転記。候補は全てS未満、初期スキル智謀巧軍もAランクのため新規スキルページ作成は不要(A-3-9)。",
-  "章はixanary.com/ixawiki.comのカードページに記載が無く未確認。"
+  "章はixanary.com/ixawiki.comのカードページに記載が無く未確認。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
  ],
  "reviewedOk": true,
  "wikiOldestComment": "2013-03-04",
  "wikiCommentCount": 80,
- "chGuess": "5章"
+ "chGuess": "5章",
+ "chSource": "wikiOldestComment"
 }

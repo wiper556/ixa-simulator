@@ -1,7 +1,7 @@
 {
  "name": "斎藤利三（3）",
  "no": "2376",
- "ch": "未確認",
+ "ch": "28章",
  "cost": 4.5,
  "troop": "槍馬器騎攻",
  "sub": "",
@@ -132,10 +132,12 @@
   "sourceCharacters逆引き確認(A-3-11): 転歌.jsonのsourceCharactersに斎藤利三(2376)がslot Cで既に登録済み一致。雨下義炎・志半ノ矛楯はA以下かつafterSkillがS+ページを持たないためページ無しが正しい(該当なし)。",
   "trTable: ixanary生HTML(skills/雨下義炎)でLV10/TR1(×33%)/TR2(×40%)の行のみ値が存在しTR3〜5は行はあるが空欄(値未記載)であることを確認、既存のnull(未確認)表記が正しい。",
   "categoryLinks(A-2): 無尽/撤退/覇道/不屈/飛翔/兵站/人数依存(防御参加武将数系)/卓越/コスト減少の9項目いずれにも該当せず(この効果は「部隊内スキル個数依存」で防御参加武将数依存とは別種)、categoryLinksフィールド自体が無いのが正しい状態。",
-  "章は情報源(ixanary.com/ixawiki.com)に記載が無く未確認のまま(既存も「未確認」表記で変更なし)。"
+  "章は情報源(ixanary.com/ixawiki.com)に記載が無く未確認のまま(既存も「未確認」表記で変更なし)。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
  ],
  "reviewedOk": true,
  "wikiOldestComment": "2024-09-03",
  "wikiCommentCount": 3,
- "chGuess": "28章"
+ "chGuess": "28章",
+ "chSource": "wikiOldestComment"
 }

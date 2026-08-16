@@ -1,7 +1,7 @@
 {
  "name": "愛洲移香斎（2）",
  "no": "2802",
- "ch": "未確認",
+ "ch": "22章",
  "cost": 4.5,
  "troop": "全攻",
  "sub": "",
@@ -102,10 +102,12 @@
   "合成候補(A/B/C/S1/S2の5枠)はixanary.com/skills/前知兵法とixawiki(BushoCard/2802愛洲移香斎のスキル追加合成表)の2ソースで全枠一致を確認(A・Bはともに鬼滅刺→布都御魂ノ鬨、C・S1は前知兵法の自己参照、S2は建御雷神ノ槌の自己参照)。",
   "章は情報源に記載が無いため未確認。",
   "2026-08-15検証(前回作業分): skillDetailの読点を除去し模倣不可を独立行に分離。前知兵法はdata/skill/前知兵法.jsonで対象欄が「-」(兵科を問わない)と確定済みだったため、trTable/skillDetail/synthesisTable(C・S1)のtargetを「全」/nullから「-」に統一した。",
-  "2026-08-15黄丸化検証(今回): A/B候補「鬼滅刺」のeffectShortに卓越確率+25%加算(模倣不可)の記載漏れがありixanary.com/skills/鬼滅刺で確認し補完。S2候補「建御雷神ノ槌」のeffectShort/afterEffectShortが「卓越確率+30%」と誤記されていたが、ixanary.com/skills/建御雷神ノ槌の実際のLV10効果は「自部隊内で卓越発動したスキル数×30%を攻防効果に加算」という別の効果だったため訂正。この誤りはdata/skill/建御雷神ノ槌.json本体のeffectSummary/trTableにも同様にあったため合わせて修正(他の武将7体もこのスキルをsourceCharactersに持つが、それらの武将側JSONの同種の誤記は今回の担当範囲外のため未着手、申し送り)。data/skill/布都御魂ノ鬨.jsonのsourceCharactersで愛洲移香斎(2802)がslot:Aのみだったが、実際はA・Bの両方で鬼滅刺→布都御魂ノ鬨になるためslot:A・Bに修正。"
+  "2026-08-15黄丸化検証(今回): A/B候補「鬼滅刺」のeffectShortに卓越確率+25%加算(模倣不可)の記載漏れがありixanary.com/skills/鬼滅刺で確認し補完。S2候補「建御雷神ノ槌」のeffectShort/afterEffectShortが「卓越確率+30%」と誤記されていたが、ixanary.com/skills/建御雷神ノ槌の実際のLV10効果は「自部隊内で卓越発動したスキル数×30%を攻防効果に加算」という別の効果だったため訂正。この誤りはdata/skill/建御雷神ノ槌.json本体のeffectSummary/trTableにも同様にあったため合わせて修正(他の武将7体もこのスキルをsourceCharactersに持つが、それらの武将側JSONの同種の誤記は今回の担当範囲外のため未着手、申し送り)。data/skill/布都御魂ノ鬨.jsonのsourceCharactersで愛洲移香斎(2802)がslot:Aのみだったが、実際はA・Bの両方で鬼滅刺→布都御魂ノ鬨になるためslot:A・Bに修正。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
  ],
  "reviewedOk": true,
  "wikiOldestComment": "2021-12-01",
  "wikiCommentCount": 34,
- "chGuess": "22章"
+ "chGuess": "22章",
+ "chSource": "wikiOldestComment"
 }

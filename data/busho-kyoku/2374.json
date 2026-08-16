@@ -1,7 +1,7 @@
 {
  "name": "北条綱成（3）",
  "no": "2374",
- "ch": "未確認",
+ "ch": "28章",
  "cost": 4.5,
  "troop": "槍馬器騎攻防",
  "sub": "",
@@ -134,10 +134,12 @@
   "synthesisTable全行(A/B=勝旗勇躍[A]→戦陣吟詠[A]、C=霊妙秘剣[A]→戦陣剣舞[A]、S1/S2=戦陣吟詠[A]自己参照)をixanary.com(skills/勝旗勇躍)の合成テーブル(1次/2次/3次)生HTMLとixawiki.com(BushoCard/2374北条綱成)のスキル追加合成テーブルの2ソースで突き合わせ完全一致を確認。",
   "TRTable(TR1〜TR5)もixanary.com(skills/勝旗勇躍)生HTMLの各段(TR1:450%/55%、TR2:470%/60%、TR3:500%/65%、TR4:540%/70%、TR5:600%/80%)と完全一致確認。TR6の行自体が無いことも確認。",
   "sourceCharacters逆引き確認(A-3-11): 勝旗勇躍.json(slot A・B)・霊妙秘剣.json(slot C)とも既に北条綱成(2374)が登録済みで一致。戦陣吟詠.jsonにも勝旗勇躍・霊妙秘剣双方のgrantedViaSkillsが登録済み。",
-  "章は情報源(ixanary.com/ixawiki.com)に記載が無く未確認のまま(既存も「未確認」表記で変更なし)。"
+  "章は情報源(ixanary.com/ixawiki.com)に記載が無く未確認のまま(既存も「未確認」表記で変更なし)。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
  ],
  "reviewedOk": true,
  "wikiOldestComment": "2024-08-29",
  "wikiCommentCount": 6,
- "chGuess": "28章"
+ "chGuess": "28章",
+ "chSource": "wikiOldestComment"
 }

@@ -1,7 +1,7 @@
 {
  "name": "島津豊久（3）",
  "no": "2593",
- "ch": "未確認",
+ "ch": "27章",
  "cost": 4,
  "troop": "槍馬器攻",
  "sub": "",
@@ -139,10 +139,12 @@
   "スロットA・Bのtarget/rateが未記入だったのを命だけ置いてけLV10値(対象槍・馬・器、確率55%)で補完した。",
   "命だけ置いてけ(初期スキル、A)・戦陣 召雷(A、C・S1候補)はいずれも移植後合成候補が既存ページ持ち(戦陣 召雷/天頂ノ電光)のためA-3-9の例外で新規ページ作成。天頂ノ電光.jsonのgrantedViaSkillsに戦陣 召雷を追加。",
   "戦陣 破軍・天穿神滅は既存ページに2593(S2)が正しく登録済みを確認。",
-  "章は情報源(ixanary/ixawiki/ixagno)に記載が無いため未確認。"
+  "章は情報源(ixanary/ixawiki/ixagno)に記載が無いため未確認。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
  ],
  "reviewedOk": true,
  "wikiOldestComment": "2024-02-17",
  "wikiCommentCount": 8,
- "chGuess": "27章"
+ "chGuess": "27章",
+ "chSource": "wikiOldestComment"
 }

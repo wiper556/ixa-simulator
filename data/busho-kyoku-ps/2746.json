@@ -1,7 +1,7 @@
 {
  "name": "足利義稙",
  "no": "2746",
- "ch": "未確認",
+ "ch": "13章",
  "cost": 3.0,
  "troop": "全",
  "sub": "",
@@ -100,10 +100,12 @@
   "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
   "章は情報源に記載が無いため未確認(ixagno.blog.fc2.com blog-entry-4758で「2017年2月追加 期間限定 極武将」という発売時期の記述は見つかったが、サイトのch欄が指す章番号ではないため未確認のまま)。",
   "2026-08-15検証: 統率はbadges_O.pngと一致(B/S/S/B)。初期スキル流れ公方はixanary生HTMLで攻撃20%・速度32%上昇に加え「攻撃参加した自軍全部隊の帰還速度が3倍(帰還効果は模倣・重複不可)」の2行目があったが抜けていたため追加(effect/skillDetail/trTable/S1枠すべてに反映)。大動員(B枠)は速度24%上昇と最速兵速移動の行、湖水渡り(C枠)は距離条件・変化式の行が抜けていたため追加。いずれもこの2体が初出のためixanary生HTML(LV10行)を直接確認して修正。",
-  "2026-08-15黄丸化検証(A-1〜A-5): rankGradesはカード画像4隅バッジの個別ズームでB/S/S/B(yari/yumi/uma/ki)を再確認し、ixanary.com(cards/2746)生HTMLのcard propsとも一致。synthesisTableは初期スキル(流れ公方)のixanary生HTML合成テーブルで1次/2次の全5枠を確認した。ixawiki.com(BushoCard/2746足利義稙)で2ソース目を確認したところ、湖水渡り(C枠skill)のランクが[A]、天戒 五芒星(C枠afterSkill)のランクが[A]と表示され、ixanaryの[B]/[S]と食い違いを検出した。3ソース目としてixagno.blog.fc2.com(blog-entry-4758、この武将専用の合成テーブル記事)を確認したところ、記事内に実際のゲーム画面スクリーンショット2枚(2017年当時の投稿者による実機画像)が掲載されており、どちらも湖水渡りのランクを明確に[B]と表示していた(記事本文でも「wiki記載の合成テーブルとは違ってた」と2017年当時から言及あり)。天戒五芒星についても、ixanary.com自身の当該スキル個別ページのタイトル(独立した確認箇所)が[S]表記だった。以上からixawikiのこの2箇所は誤りと判断し、ixanaryの値(湖水渡りB・天戒五芒星S)を採用した(=既存データの変更なし、ixawiki側の表記が信頼できないことを確認しただけ)。天賦の神算(S2のafterSkill)のafterEffectShortがixanary生HTML(LV10行)の「攻撃12%上昇/破壊5%上昇」のうち破壊分が欠けていたため「攻撃 12%上昇+破壊 5%上昇」に修正。天戒 五芒星(C枠afterSkill、S以上)は既存skills.htmlページのsourceCharactersに2746が既に登録済みであることを確認した(A-3-11)。"
+  "2026-08-15黄丸化検証(A-1〜A-5): rankGradesはカード画像4隅バッジの個別ズームでB/S/S/B(yari/yumi/uma/ki)を再確認し、ixanary.com(cards/2746)生HTMLのcard propsとも一致。synthesisTableは初期スキル(流れ公方)のixanary生HTML合成テーブルで1次/2次の全5枠を確認した。ixawiki.com(BushoCard/2746足利義稙)で2ソース目を確認したところ、湖水渡り(C枠skill)のランクが[A]、天戒 五芒星(C枠afterSkill)のランクが[A]と表示され、ixanaryの[B]/[S]と食い違いを検出した。3ソース目としてixagno.blog.fc2.com(blog-entry-4758、この武将専用の合成テーブル記事)を確認したところ、記事内に実際のゲーム画面スクリーンショット2枚(2017年当時の投稿者による実機画像)が掲載されており、どちらも湖水渡りのランクを明確に[B]と表示していた(記事本文でも「wiki記載の合成テーブルとは違ってた」と2017年当時から言及あり)。天戒五芒星についても、ixanary.com自身の当該スキル個別ページのタイトル(独立した確認箇所)が[S]表記だった。以上からixawikiのこの2箇所は誤りと判断し、ixanaryの値(湖水渡りB・天戒五芒星S)を採用した(=既存データの変更なし、ixawiki側の表記が信頼できないことを確認しただけ)。天賦の神算(S2のafterSkill)のafterEffectShortがixanary生HTML(LV10行)の「攻撃12%上昇/破壊5%上昇」のうち破壊分が欠けていたため「攻撃 12%上昇+破壊 5%上昇」に修正。天戒 五芒星(C枠afterSkill、S以上)は既存skills.htmlページのsourceCharactersに2746が既に登録済みであることを確認した(A-3-11)。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
  ],
  "reviewedOk": true,
  "wikiOldestComment": "2017-02-01",
  "wikiCommentCount": 46,
- "chGuess": "13章"
+ "chGuess": "13章",
+ "chSource": "wikiOldestComment"
 }

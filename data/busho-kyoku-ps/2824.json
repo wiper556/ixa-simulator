@@ -1,7 +1,7 @@
 {
  "name": "永田徳本",
  "no": "2824",
- "ch": "未確認",
+ "ch": "26章",
  "cost": 0.0,
  "troop": "全",
  "sub": "",
@@ -98,10 +98,12 @@
   "A枠とB枠が開闢ノ逆鉾(自己参照)、S1枠とS2枠が四天轟雷(自己参照)という重複だったため、skills.html/data/skillの開闢ノ逆鉾・四天轟雷のsourceCharactersのslotをそれぞれ\"A・B\"\"S1・S2\"に修正(1つの枠しか登録されていなかった)。月詠ノ覇威(C枠)は単独枠のため修正不要。",
   "「草莽ノ聖者」はixanaryのスキル個別ページで「合成不可スキルです」と明記されており他武将への移植不可。skills.htmlのsourceCharactersが空のままだったため追記し、data/skill/草莽ノ聖者.jsonのeffectSummaryも(重複不可)が抜けていたため追記した。",
   "sourceCharacters逆引き確認(2026-08-15): skills.htmlの開闢ノ逆鉾(A・B)/月詠ノ覇威(C)/四天轟雷(S1・S2)/草莽ノ聖者(移植不可)いずれもNo.2824が正しいslotで登録されるよう修正・確認済み。",
-  "章は標準2ソース(ixanary/ixawiki)に記載が無く未確認。追加でixagno.blog.fc2.com(検索語=2824)を確認し、該当記事(blog-entry-9348「永田徳本【極】のスキル性能と合成テーブル」)を見たが2023年10月追加という時期のみで章番号の記載は無かったため未確認のまま(2026-08-15)。"
+  "章は標準2ソース(ixanary/ixawiki)に記載が無く未確認。追加でixagno.blog.fc2.com(検索語=2824)を確認し、該当記事(blog-entry-9348「永田徳本【極】のスキル性能と合成テーブル」)を見たが2023年10月追加という時期のみで章番号の記載は無かったため未確認のまま(2026-08-15)。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
  ],
  "reviewedOk": true,
  "wikiOldestComment": "2023-10-05",
  "wikiCommentCount": 17,
- "chGuess": "26章"
+ "chGuess": "26章",
+ "chSource": "wikiOldestComment"
 }

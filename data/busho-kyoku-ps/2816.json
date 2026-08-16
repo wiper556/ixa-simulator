@@ -1,7 +1,7 @@
 {
  "name": "本因坊算砂",
  "no": "2816",
- "ch": "未確認",
+ "ch": "25章",
  "cost": 4.5,
  "troop": "全防",
  "sub": "",
@@ -99,10 +99,12 @@
   "コスト4.5・指揮兵数4500(ixanary★0-0)・攻防兵法初期値800/800/700.0・成長値+32/+32/+4.0はixanary/ixawiki双方で一致確認。",
   "skillDetailに模倣不可の独立行と②(本丸防御陣形の第弐列目以降の部隊にも効果拡張、自身の所属部隊には重複しない)が抜けていたため追加(2026-08-15、ixanaryカードページのLV10生テキストで確認)。trTableとdata/skill/一世名人.jsonの同項目も同様に修正(後者はsourceCharactersも空だったため本武将を追記)。TR段階なし(LV10のみ)。",
   "合成候補はixanary(skills/一世名人の生HTML)とixawiki(BushoCard/2816本因坊算砂内の合成テーブル)の2ソースで1次・2次とも完全一致を確認(2026-08-15)。A=星宿劫ノ法壁(自己参照)、B=一期一会→神速、C=天の福音→義兵進軍、S1/S2=茶人の教え(自己参照)。B/C/S1/S2の候補スキルはいずれもC〜F rankでかつafterSkillもS未満のためページ作成対象外(既存ルール通り)。slot自体は変更なし。",
-  "章は情報源(ixanary/ixawiki)に記載が無いため未確認。ixagno.blog.fc2.comで「本因坊算砂」を検索(11件)したが、章番号を明記した記事は見つからなかった。"
+  "章は情報源(ixanary/ixawiki)に記載が無いため未確認。ixagno.blog.fc2.comで「本因坊算砂」を検索(11件)したが、章番号を明記した記事は見つからなかった。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
  ],
  "reviewedOk": true,
  "wikiOldestComment": "2023-02-13",
  "wikiCommentCount": 43,
- "chGuess": "25章"
+ "chGuess": "25章",
+ "chSource": "wikiOldestComment"
 }

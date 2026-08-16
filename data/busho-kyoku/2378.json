@@ -1,7 +1,7 @@
 {
  "name": "遠藤基信",
  "no": "2378",
- "ch": "未確認",
+ "ch": "28章",
  "cost": 4,
  "troop": "弓器焙攻",
  "sub": "",
@@ -137,10 +137,12 @@
   "synthesisTableはixanary.com(skills/龍門ノ賢者)の合成テーブル(1次/2次/3次)生HTMLと、ixawiki.com(BushoCard/2378遠藤基信)のスキル追加合成テーブルの2ソースで突き合わせ完全一致を確認: A/B=龍門ノ賢者[A]→志半ノ矛楯[A]、C=国一丸[S]→仙剣破斬[SSS]、S1/S2=志半ノ矛楯[A]自己参照。",
   "sourceCharacters逆引き確認(A-3-11): 国一丸.jsonのsourceCharactersに遠藤基信(2378)がslot Cで既に登録済み一致。仙剣破斬.jsonのgrantedViaSkillsにも国一丸[S]が既に登録済み。龍門ノ賢者・志半ノ矛楯はA以下かつafterSkillがS+ページを持たないためページ無しが正しい(該当なし)。",
   "trTable: ixanary生HTML(skills/龍門ノ賢者)でLV10/TR1(195%)/TR2(210%)のみ存在しTR3以降は無いことを確認。",
-  "章は情報源(ixanary.com/ixawiki.com)に記載が無く未確認のまま(既存も「未確認」表記で変更なし)。"
+  "章は情報源(ixanary.com/ixawiki.com)に記載が無く未確認のまま(既存も「未確認」表記で変更なし)。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
  ],
  "reviewedOk": true,
  "wikiOldestComment": "2024-10-02",
  "wikiCommentCount": 5,
- "chGuess": "28章"
+ "chGuess": "28章",
+ "chSource": "wikiOldestComment"
 }

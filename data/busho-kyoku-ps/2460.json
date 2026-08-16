@@ -1,7 +1,7 @@
 {
  "name": "宇喜多秀家（3）",
  "no": "2460",
- "ch": "未確認",
+ "ch": "24章",
  "cost": 4.5,
  "troop": "全攻防",
  "sub": "飛翔7",
@@ -145,10 +145,12 @@
   "【2026-08-16 null解消】スロットS1(豊国ノ寵将、自己参照候補)のafterSkillが未確定だった。ixanaryスキルページ(skills/豊国ノ寵将)自身の合成テーブルでS1=豊国ノ寵将(自己参照)であることを確認し、豊国ノ寵将.jsonのownHiddenCandidateとも一致(既に登録済み)。rateも未記入だったのを自身のLV10値(70%)で補完。",
   "合成テーブル全体(A=天津日ノ太刀自己参照、B=十束ノ神域→天聖宝冠、C・S2=建御雷神ノ閃光→八幡神ノ威光、S1=豊国ノ寵将自己参照)はixanaryスキルページ自身の合成テーブルと完全一致。",
   "天津日ノ太刀・十束ノ神域・建御雷神ノ閃光・豊国ノ寵将は既存ページにsourceCharacters(2460)が正しいスロットで登録済みを確認。",
-  "章は情報源(ixanary/ixawiki)に記載が無いため未確認。"
+  "章は情報源(ixanary/ixawiki)に記載が無いため未確認。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
  ],
  "reviewedOk": true,
  "wikiOldestComment": "2022-12-22",
  "wikiCommentCount": 21,
- "chGuess": "24章"
+ "chGuess": "24章",
+ "chSource": "wikiOldestComment"
 }

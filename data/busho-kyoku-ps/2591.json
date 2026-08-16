@@ -1,7 +1,7 @@
 {
  "name": "佐々木巌流",
  "no": "2591",
- "ch": "未確認",
+ "ch": "26章",
  "cost": 5,
  "troop": "全攻防",
  "sub": "",
@@ -143,10 +143,12 @@
   "【2026-08-16 null解消】2次候補(afterSkill)が全null(ixawikiテンプレ未記入)だったため、ixanaryスキルページ(skills/幻渦龍刀)自身の合成テーブルとixagno.blog.fc2.com(blog-entry-9439)の2ソースで確定した。A=活人剣→鬼滅刺、B=遠呂智ノ閃光(自己参照)、C=火之迦具土神(自己参照)、S1=幻渦龍刀(自己参照)、S2=月詠ノ覇威(自己参照)。2ソース完全一致。",
   "A枠(skill=活人剣≠afterSkill=鬼滅刺)はgrantedViaSkills経由。鬼滅刺.jsonのgrantedViaSkillsに活人剣[A]を追加(従来空配列だった)。2591自身は活人剣.json側にA枠で直接列挙済みを確認。",
   "活人剣・遠呂智ノ閃光・火之迦具土神・月詠ノ覇威・幻渦龍刀(自身の初期スキル)は全てskills.htmlに既存ページ・sourceCharacters(2591)登録済みでスロットも一致。",
-  "章は情報源(ixanary/ixawiki/ixagno)に記載が無いため未確認。"
+  "章は情報源(ixanary/ixawiki/ixagno)に記載が無いため未確認。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
  ],
  "reviewedOk": true,
  "wikiOldestComment": "2023-12-10",
  "wikiCommentCount": 19,
- "chGuess": "26章"
+ "chGuess": "26章",
+ "chSource": "wikiOldestComment"
 }

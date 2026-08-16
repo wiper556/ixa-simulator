@@ -1,7 +1,7 @@
 {
  "name": "大久保忠世",
  "no": "2478",
- "ch": "未確認",
+ "ch": "27章",
  "cost": 4.5,
  "troop": "全攻",
  "sub": "",
@@ -130,10 +130,12 @@
   "初期スキル 敢闘ノ気吹[S] はページが無かったため data/skill/敢闘ノ気吹.json を新規作成した(C・S1枠に1次候補として載るため移植可能)。",
   "武将名: 極レアの「大久保忠世」はwiki全カード名簿でも本カード1枚のみのため無印。",
   "TR(鍛錬)情報は ixanary.com・ixawiki.com のいずれにも記載が無いためTR1以降のeffectはnull。",
-  "章はixanary.com/ixawiki.comのカードページに記載が無いため未確認(wiki最古コメント2024-05-08から27章の当たり)。"
+  "章はixanary.com/ixawiki.comのカードページに記載が無いため未確認(wiki最古コメント2024-05-08から27章の当たり)。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
  ],
  "reviewedOk": true,
  "wikiOldestComment": "2024-05-08",
  "wikiCommentCount": 24,
- "chGuess": "27章"
+ "chGuess": "27章",
+ "chSource": "wikiOldestComment"
 }

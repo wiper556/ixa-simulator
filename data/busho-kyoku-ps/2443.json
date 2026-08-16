@@ -1,7 +1,7 @@
 {
  "name": "片倉景綱",
  "no": "2443",
- "ch": "未確認",
+ "ch": "22章",
  "cost": 3,
  "troop": "全防",
  "sub": "",
@@ -141,10 +141,12 @@
   "B枠(戦陣凱旋)のtarget/rateが未確定(null)だったため、ixanary生HTML(skills/戦陣 凱旋)でtarget:全,rate:10%を追加。",
   "A枠(戦陣破軍)・B枠(戦陣凱旋)・C枠(鬼滅刺)・S1枠(三千世界神将、自己参照)・S2枠(籠城の妙技)は全てdata/skill/戦陣 破軍.json・戦陣 凱旋.json・鬼滅刺.json・三千世界神将.json・籠城の妙技.jsonのsourceCharactersに片倉景綱(2443)が正しいslotで登録済みであることを確認した(A-3-11)。",
   "synthesisTableのA/B/C/S1/S2は、ixanary.com(cards/2443の初期スキル月下闇龍の合成テーブルおよび各候補スキル個別ページ)に加え、ixawiki.com(index.php?BushoCard/2443片倉景綱)の合成候補テーブル(1次候補/2次候補S1)を生HTMLで確認し、全5行がixanary/ixawiki2ソースで一致することを確認した。",
-  "章はixanary.com/ixawiki.comいずれのカードページにも記載が無く未確認。"
+  "章はixanary.com/ixawiki.comいずれのカードページにも記載が無く未確認。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
  ],
  "reviewedOk": true,
  "wikiOldestComment": "2021-10-05",
  "wikiCommentCount": 24,
- "chGuess": "22章"
+ "chGuess": "22章",
+ "chSource": "wikiOldestComment"
 }

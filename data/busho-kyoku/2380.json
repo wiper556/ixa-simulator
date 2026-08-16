@@ -1,7 +1,7 @@
 {
  "name": "柿崎景家（3）",
  "no": "2380",
- "ch": "未確認",
+ "ch": "28章",
  "cost": 4,
  "troop": "槍馬砲攻",
  "sub": "",
@@ -130,10 +130,12 @@
   "sourceCharacters逆引き確認(A-3-11): オプクワ.json(A枠)・氷塊三連撃.json(S1枠)とも既にNo.2380がslot付きで登録済みで一致。B/Cの闘火将帥[A]→氷塊三連撃[SSS]はA-3-9例外規定(afterSkillが既存Sページを持つ元スキル)に該当するため、闘火将帥.jsonを新規作成しsourceCharactersにslot B・Cで登録、氷塊三連撃.jsonのgrantedViaSkillsにも闘火将帥[A]を追加した。志半ノ矛楯はA以下自己参照でファイルが無いのが正しい状態(該当なし)。",
   "trTable: ixanary生HTML(skills/闘火将帥)でLV10/TR1(588%)/TR2(708%)/TR3(708%、TR2と同値)のみ存在しTR4以降の行自体が無いことを確認。",
   "categoryLinks(A-2): 無尽/撤退/覇道/不屈/飛翔/兵站/人数依存/卓越/コスト減少の9項目いずれにも該当せず(効果は攻撃上昇+勝利時名声回復)、categoryLinksフィールド自体が無いのが正しい状態。",
-  "章は情報源(ixanary.com/ixawiki.com)に記載が無く未確認のまま(既存も「未確認」表記で変更なし)。"
+  "章は情報源(ixanary.com/ixawiki.com)に記載が無く未確認のまま(既存も「未確認」表記で変更なし)。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
  ],
  "reviewedOk": true,
  "wikiOldestComment": "2024-11-20",
  "wikiCommentCount": 1,
- "chGuess": "28章"
+ "chGuess": "28章",
+ "chSource": "wikiOldestComment"
 }

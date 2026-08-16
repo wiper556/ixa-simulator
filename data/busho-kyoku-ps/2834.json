@@ -2,7 +2,7 @@
  "name": "甲斐親宣",
  "no": "2834",
  "reviewedOk": true,
- "ch": "未確認",
+ "ch": "28章",
  "cost": 3.0,
  "troop": "全攻",
  "sub": "",
@@ -122,9 +122,11 @@
   "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。ixawiki(BushoCard/2834甲斐親宣)の合成候補テーブルとも1次/2次(S1列)を突き合わせ、A/B/C/S1/S2全枠で一致を確認済み(2026-08-15黄丸化検証)。",
   "2026-08-15黄丸化検証で発見・修正: ixanaryスキルページ(skills/救国ノ軍師)のLV10効果に「同じ自拠点に所属または出陣する他の自部隊にも効果あり(模倣不可・重複不可)」という②効果があったが、skillDetail/trTableに反映されていなかったため追記した。data/skill/救国ノ軍師.jsonも同様に修正。",
   "2026-08-15黄丸化検証で発見・修正: 初期スキル「救国ノ軍師」はixanaryの合成テーブルでA/B/C/S1/S2いずれの枠にも自身が出現せず「合成不可スキルです」と明記されていたため、skills.html/data/skill/救国ノ軍師.jsonのsourceCharactersが空だったのを{slot:\"移植不可\"}で追加した。",
-  "章は情報源に記載が無いため未確認(ixanary/ixawikiとも記載なし)。"
+  "章は情報源に記載が無いため未確認(ixanary/ixawikiとも記載なし)。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
  ],
  "wikiOldestComment": "2024-08-24",
  "wikiCommentCount": 19,
- "chGuess": "28章"
+ "chGuess": "28章",
+ "chSource": "wikiOldestComment"
 }

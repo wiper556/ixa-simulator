@@ -1,7 +1,7 @@
 {
  "name": "比古清十郎【覇】",
  "no": "10054",
- "ch": "未確認",
+ "ch": "28章",
  "cost": 6,
  "troop": "全攻",
  "sub": "覇道",
@@ -148,9 +148,11 @@
   "覇道判定は保護効果+カード上の赤字「覇道」表記の両方を満たす(カード画像のスキル行に赤字で「覇道」)。",
   "9項目チェック: 覇道と卓越が該当(skills-hadou.html / skills-takuetsu.html)。一覧ページ(生成物)側の配列への追記は担当範囲外のため未実施。",
   "合成テーブルはixanary.com(skills/閃龍ノ御剣)とixagno.blog.fc2.com(blog-entry-10043)の2ソースでA〜S2の1次/2次が完全一致。ixawikiの合成候補表は空テンプレート。",
-  "TR4の部隊内武将卓越追加確率がixanary.com(+40%)とixagno.blog.fc2.com(+60%)で割れたまま決着していないため、reviewedOkは立てず青丸のままにした。ユーザー確認が要る。"
+  "TR4の部隊内武将卓越追加確率がixanary.com(+40%)とixagno.blog.fc2.com(+60%)で割れたまま決着していないため、reviewedOkは立てず青丸のままにした。ユーザー確認が要る。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
  ],
  "wikiOldestComment": "2024-11-13",
  "wikiCommentCount": 44,
- "chGuess": "28章"
+ "chGuess": "28章",
+ "chSource": "wikiOldestComment"
 }

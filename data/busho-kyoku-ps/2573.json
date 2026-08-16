@@ -1,7 +1,7 @@
 {
  "name": "木下藤吉郎",
  "no": "2573",
- "ch": "未確認",
+ "ch": "24章",
  "cost": 4,
  "troop": "全攻防",
  "sub": "",
@@ -132,10 +132,12 @@
   "日輪豊国のLV10(確率100%/全攻防170%/部隊内発動率+5%/卓越追加確率+20%)はixanaryスキルページ・ixawiki(BushoCard/2573木下藤吉郎)で確認。部隊内卓越確率上昇スキルとしてシミュのspecialSkillsにも登録済み(takuetsuRateBonus:20)。TR段階なし。",
   "【2026-08-16再検証】合成テーブル(A=布都御魂ノ鬨/B・S2=天奏聖譚曲/C=海神ノ浮船/S1=天磐船、全て自己参照SS)はixanaryスキルページ(skills/日輪豊国)自身の合成テーブルと完全一致を確認。drift無し。",
   "布都御魂ノ鬨・天奏聖譚曲・海神ノ浮船・天磐船・日輪豊国(自身の初期スキル)は既存ページにsourceCharacters(2573)が正しいスロットで登録済みを確認。",
-  "章は情報源(ixanary/ixawiki)に記載が無いため未確認。"
+  "章は情報源(ixanary/ixawiki)に記載が無いため未確認。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
  ],
  "reviewedOk": true,
  "wikiOldestComment": "2022-12-15",
  "wikiCommentCount": 18,
- "chGuess": "24章"
+ "chGuess": "24章",
+ "chSource": "wikiOldestComment"
 }

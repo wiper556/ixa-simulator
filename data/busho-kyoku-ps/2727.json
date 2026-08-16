@@ -1,7 +1,7 @@
 {
  "name": "円融院",
  "no": "2727",
- "ch": "未確認",
+ "ch": "9章",
  "cost": 3.0,
  "troop": "部隊長",
  "sub": "",
@@ -103,10 +103,12 @@
   "スキル効果はLV1カードのため外部ソースを採用。効果量はLV1とLV10で変わらず確率のみ+10%→+25%に上がる点をixanary/ixawikiの2ソースで確認した。TR段はどちらのソースにも無い。",
   "合成候補はixanary.com(skills/妖艶遊戯)の1次/2次と ixawiki(BushoCard/2727)の合成候補テーブルの2ソースで全5枠完全一致(A=才知徳行[D]自己参照、B=胡蝶夢幻陣[B]→捨て奸[B]、C=冥界の花嫁[A]→魔王三段撃[S]、S1=花魁心操術[A]→雲散霧消[B]、S2=堅国の絆[A]自己参照)。各枠のtarget/rate/effectShortは候補スキル自身のixanaryページのLV10行から転記。",
   "C枠の移植後 魔王三段撃[S] はSランクのため data/skill/魔王三段撃.json を新規作成。元スキルの冥界の花嫁[A]もA-3-9の例外(S以上のafterSkillの元スキル)に当たるため data/skill/冥界の花嫁.json を作成し、武将はそちらのsourceCharactersに、魔王三段撃側にはgrantedViaSkillsを置いた(A-3-12)。初期スキル妖艶遊戯はAランクで自分のsynthesisTableにも載らないためページ作成対象外。",
-  "章はixanary.com/ixawiki.comのカードページに記載が無く未確認。"
+  "章はixanary.com/ixawiki.comのカードページに記載が無く未確認。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
  ],
  "reviewedOk": true,
  "wikiOldestComment": "2015-01-19",
  "wikiCommentCount": 262,
- "chGuess": "9章"
+ "chGuess": "9章",
+ "chSource": "wikiOldestComment"
 }

@@ -1,7 +1,7 @@
 {
  "name": "出雲阿国（4）",
  "no": "2850",
- "ch": "未確認",
+ "ch": "30章",
  "cost": 1.0,
  "troop": null,
  "sub": "",
@@ -129,10 +129,12 @@
   "2026-08-15: skillDetailが空欄だったためixanaryのスキル効果表(LV10/TR1-5)から補完。TR6は情報源に無い(ixanaryのカード・スキルページともTR5が最終段)。",
   "2026-08-15: synthesisTableのS1(自己参照)でtarget/rateが空欄だったため、data/skill/傾世ノ華.jsonの既存決定(対象欄が無い常時トリガー型のためtarget=\"-\")に合わせて埋めた。trTableの先頭表記も「全」から「-」に統一(スキル本体との整合)。",
   "合成候補はixanaryのスキルページ(skills/傾世ノ華)の1次(移植前)・2次(移植後)。1次の値(A=傾国ノ艶姫/B=舞蝶朧月/C=思金神ノ深謀/S1=傾世ノ華/S2=月詠ノ覇威)はixawikiの合成候補テーブルとも一致(2ソース確認済み)。ただしixawiki側の「2次候補」表はB列・S1列で内容が不安定(S1が「？」のまま未解決、B列が世代を経ても安定しない)で参照元として使えず、afterSkill(B=月詠ノ覇威、S1=傾世ノ華自己参照)はixanaryの1次/2次/3次表(3次で全列安定・自己矛盾なし)のみを根拠にした。ixagno.blog.fc2.comも検索したが本武将を扱う記事は無かった(2026-08-15)。",
-  "章は情報源(ixanary/ixawiki)に記載が無いため未確認。"
+  "章は情報源(ixanary/ixawiki)に記載が無いため未確認。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
  ],
  "reviewedOk": true,
  "wikiOldestComment": "2025-12-02",
  "wikiCommentCount": 7,
- "chGuess": "30章"
+ "chGuess": "30章",
+ "chSource": "wikiOldestComment"
 }

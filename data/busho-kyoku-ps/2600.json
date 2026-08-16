@@ -1,7 +1,7 @@
 {
  "name": "伊達藤次郎",
  "no": "2600",
- "ch": "未確認",
+ "ch": "28章",
  "cost": 4,
  "troop": "全攻破",
  "sub": "不屈2 撤退",
@@ -146,10 +146,12 @@
   "戦陣 疾駆(A)は移植後合成候補が既存ページを持つ十束ノ神域(SS)のため、A-3-9の例外ルールで新規ページ作成(data/skill/戦陣 疾駆.json)。十束ノ神域.jsonのgrantedViaSkillsにも追加した。志半ノ矛楯(A)は自己参照のみで他ページへ繋がらないため対象外(ページ未作成のままで正しい)。",
   "神光征軍・十束ノ神域・天聖宝冠は既存ページにsourceCharacters(2600)が正しいスロットで登録済みを確認。旋龍突渦(自身の初期スキル、移植不可)はページが無かったためA-3-9に従いdata/skill/旋龍突渦.jsonを新規作成した。categoryLinksは9項目チェックで不屈・撤退が該当し武将側と同じ2リンクを設定。",
   "戦陣 疾駆の新規ページはcharacters-kyoku-ps.htmlのLINKED_SKILLS配列への追加が必要だが、そちらはhtml直接編集のため本作業の権限範囲外で未実施(別途対応要)。",
-  "章は情報源(ixanary/ixawiki未参照)に記載が無いため未確認。ixawikiは本武将で未参照(ixanaryの2ソース相当としてカード画像+ixanaryカード/スキルページで足りると判断)。"
+  "章は情報源(ixanary/ixawiki未参照)に記載が無いため未確認。ixawikiは本武将で未参照(ixanaryの2ソース相当としてカード画像+ixanaryカード/スキルページで足りると判断)。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
  ],
  "reviewedOk": true,
  "wikiOldestComment": "2024-09-05",
  "wikiCommentCount": 16,
- "chGuess": "28章"
+ "chGuess": "28章",
+ "chSource": "wikiOldestComment"
 }

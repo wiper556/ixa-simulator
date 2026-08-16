@@ -1,7 +1,7 @@
 {
  "name": "瀬田宗次郎",
  "no": "2604",
- "ch": "未確認",
+ "ch": "28章",
  "cost": 4,
  "troop": "追加スキル攻速",
  "sub": "",
@@ -131,10 +131,12 @@
   "No.2574(茶々・天華爛漫)と同効果の追加スキル倍化(こちらは鍛錬でTR5=2.5倍まで)。",
   "初期スキルがSランクのためスキル個別ページの新規作成が必要(docsのTODOに記録済み)。",
   "合成テーブルはixanaryスキルページ(1次/2次/3次)",
-  "2026-08-16黄丸化検証(A-1〜A-5): rankGradesはカード画像4隅バッジを個別ズームで再確認(左上槍SS/右上馬A/左下弓B/右下器A)、ixawiki.com(BushoCard/2604瀬田宗次郎)の基本ステータス表と完全一致(2ソース目)。基礎値2040/1780/500・成長155/129/2.5・コスト4・lv0Troops4820はixanary.com(cards/2604)生HTMLのcard propsとixawikiの基本ステータス表の両方で一致確認。初期スキル縮地はixanary.com(skills/縮地)の生HTMLでLV10(2倍)/TR1(2.1倍)/TR2(2.2倍)/TR3(2.3倍)/TR4(2.4倍)/TR5(2.5倍)を個別に確認、ixawikiのLV10/TR5表示とも一致、trTable修正不要。synthesisTableのA/B/C/S1/S2はixanary.com(skills/縮地)の合成テーブル(1次候補/2次候補S1)とixawiki.com(BushoCard/2604瀬田宗次郎)の合成候補テーブルの2ソースで完全一致を確認(A:星神闘覇[SS・自己参照]、B:瞬刻無影[S]→朧雲ノ閃撃[SSS]、C:八幡神ノ威光[SSS・自己参照]、S1:刹那無影[SS・自己参照]、S2:十束ノ神域[SS]→天聖宝冠[SSS])。星神闘覇のランクSS/SSS食い違いは既存notes記載の通りSSで確定済み(ユーザー確認済み事項を踏襲、本検証では変更なし)。sourceCharacters逆引き確認(A-3-11): data/skill/縮地.json(slot移植不可)・星神闘覇.json(A)・瞬刻無影.json(B)・八幡神ノ威光.json(C)・刹那無影.json(S1)・十束ノ神域.json(S2)の6ファイルすべてに既にNo.2604が登録済みを確認(要修正なし)。B枠は瞬刻無影≠afterSkill朧雲ノ閃撃のためgrantedViaSkills経由が正しく、朧雲ノ閃撃.jsonのgrantedViaSkillsに瞬刻無影が既にあり2604の直接列挙が無いことを確認(A-3-12準拠、修正不要)。S2枠も同様に十束ノ神域≠afterSkill天聖宝冠のため天聖宝冠.jsonはgrantedViaSkills経由のみで2604の直接列挙が無いことを確認(修正不要)。categoryLinks(A-2/A-3-9の9項目判定)は星神闘覇→飛翔(攻)、瞬刻無影/八幡神ノ威光/刹那無影→部隊長模倣、十束ノ神域→覇道の4件が既に正しく設定済みを確認(該当以外の無尽/撤退/不屈/兵站/人数依存/コスト減少は該当なし)。characters-kyoku-ps.htmlのKP_LINKED_SKILLSに縮地・星神闘覇・瞬刻無影・朧雲ノ閃撃・八幡神ノ威光・刹那無影・十束ノ神域・天聖宝冠の8件全てが既に登録済みを確認。skillDetailは模倣不可が①の前に独立行、読点なしを確認(A-4-14)。無尽/撤退/覇道/不屈/飛翔/兵站/人数依存キーワードは初期スキル縮地自体には該当なし(A-2、対象:追加スキルのみ)。章はixanary.com/ixawiki.comのカードページに記載が無く未確認のまま。追加でixagno.blog.fc2.com(「瀬田宗次郎」で検索、9件ヒット)の専用記事(blog-entry-10036.html「瀬田宗次郎【極】の能力と考察」)も確認したが、章番号への言及はなく(るろうに剣心コラボカードのため通常の章番号を持たない可能性が高い)、未確認のまま残す。以上、A-1〜A-4に未解決点なしのためreviewedOk:trueとする。"
+  "2026-08-16黄丸化検証(A-1〜A-5): rankGradesはカード画像4隅バッジを個別ズームで再確認(左上槍SS/右上馬A/左下弓B/右下器A)、ixawiki.com(BushoCard/2604瀬田宗次郎)の基本ステータス表と完全一致(2ソース目)。基礎値2040/1780/500・成長155/129/2.5・コスト4・lv0Troops4820はixanary.com(cards/2604)生HTMLのcard propsとixawikiの基本ステータス表の両方で一致確認。初期スキル縮地はixanary.com(skills/縮地)の生HTMLでLV10(2倍)/TR1(2.1倍)/TR2(2.2倍)/TR3(2.3倍)/TR4(2.4倍)/TR5(2.5倍)を個別に確認、ixawikiのLV10/TR5表示とも一致、trTable修正不要。synthesisTableのA/B/C/S1/S2はixanary.com(skills/縮地)の合成テーブル(1次候補/2次候補S1)とixawiki.com(BushoCard/2604瀬田宗次郎)の合成候補テーブルの2ソースで完全一致を確認(A:星神闘覇[SS・自己参照]、B:瞬刻無影[S]→朧雲ノ閃撃[SSS]、C:八幡神ノ威光[SSS・自己参照]、S1:刹那無影[SS・自己参照]、S2:十束ノ神域[SS]→天聖宝冠[SSS])。星神闘覇のランクSS/SSS食い違いは既存notes記載の通りSSで確定済み(ユーザー確認済み事項を踏襲、本検証では変更なし)。sourceCharacters逆引き確認(A-3-11): data/skill/縮地.json(slot移植不可)・星神闘覇.json(A)・瞬刻無影.json(B)・八幡神ノ威光.json(C)・刹那無影.json(S1)・十束ノ神域.json(S2)の6ファイルすべてに既にNo.2604が登録済みを確認(要修正なし)。B枠は瞬刻無影≠afterSkill朧雲ノ閃撃のためgrantedViaSkills経由が正しく、朧雲ノ閃撃.jsonのgrantedViaSkillsに瞬刻無影が既にあり2604の直接列挙が無いことを確認(A-3-12準拠、修正不要)。S2枠も同様に十束ノ神域≠afterSkill天聖宝冠のため天聖宝冠.jsonはgrantedViaSkills経由のみで2604の直接列挙が無いことを確認(修正不要)。categoryLinks(A-2/A-3-9の9項目判定)は星神闘覇→飛翔(攻)、瞬刻無影/八幡神ノ威光/刹那無影→部隊長模倣、十束ノ神域→覇道の4件が既に正しく設定済みを確認(該当以外の無尽/撤退/不屈/兵站/人数依存/コスト減少は該当なし)。characters-kyoku-ps.htmlのKP_LINKED_SKILLSに縮地・星神闘覇・瞬刻無影・朧雲ノ閃撃・八幡神ノ威光・刹那無影・十束ノ神域・天聖宝冠の8件全てが既に登録済みを確認。skillDetailは模倣不可が①の前に独立行、読点なしを確認(A-4-14)。無尽/撤退/覇道/不屈/飛翔/兵站/人数依存キーワードは初期スキル縮地自体には該当なし(A-2、対象:追加スキルのみ)。章はixanary.com/ixawiki.comのカードページに記載が無く未確認のまま。追加でixagno.blog.fc2.com(「瀬田宗次郎」で検索、9件ヒット)の専用記事(blog-entry-10036.html「瀬田宗次郎【極】の能力と考察」)も確認したが、章番号への言及はなく(るろうに剣心コラボカードのため通常の章番号を持たない可能性が高い)、未確認のまま残す。以上、A-1〜A-4に未解決点なしのためreviewedOk:trueとする。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
  ],
  "reviewedOk": true,
  "wikiOldestComment": "2024-11-14",
  "wikiCommentCount": 4,
- "chGuess": "28章"
+ "chGuess": "28章",
+ "chSource": "wikiOldestComment"
 }

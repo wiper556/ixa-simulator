@@ -1,7 +1,7 @@
 {
  "name": "佐竹義重",
  "no": "2437",
- "ch": "未確認",
+ "ch": "21章",
  "cost": 4,
  "troop": "攻",
  "sub": "",
@@ -141,10 +141,12 @@
   "C枠(轟閻霹靂火→武神八幡陣)のafterEffectShortが「防御NULL%上昇」という表示バグ値のまま残っていたため、data/skill/武神八幡陣.jsonの既確定値「防御 41.56%上昇(部隊総コストで変動、TRなし)」に修正した。target/rateも未確定(null)だったためixanary生HTML(skills/轟閻 霹靂火)でtarget:砲,rate:40%を追加。data/skill/轟閻 霹靂火.jsonのsourceCharactersに2437(C枠)が既に登録済みであることを確認した(A-3-11)。",
   "S2枠(鼓腹撃壌→天焉相克)はA-3-9の例外ルールによりdata/skill/鼓腹撃壌.jsonを新規作成し(No.2437・2439を含む)、天焉相克.jsonのgrantedViaSkillsに追記した。A枠(戦陣破軍)・B枠(戦陣無双)・S1枠(鬼滅刺)は既にdata/skill/戦陣 破軍.json・戦陣 無双.json・鬼滅刺.jsonのsourceCharactersに佐竹義重(2437)が正しいslotで登録済みであることを確認した(A-3-11)。",
   "synthesisTableのA/B/C/S1/S2は、ixanary.com(cards/2437の初期スキル黒旋月光の合成テーブルおよび各候補スキル個別ページ)に加え、ixawiki.com(index.php?BushoCard/2437佐竹義重)の合成候補テーブル(1次候補/2次候補S1)を生HTMLで確認し、全5行がixanary/ixawiki2ソースで一致することを確認した。",
-  "章はixanary.com/ixawiki.comいずれのカードページにも記載が無く未確認。"
+  "章はixanary.com/ixawiki.comいずれのカードページにも記載が無く未確認。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
  ],
  "reviewedOk": true,
  "wikiOldestComment": "2021-04-09",
  "wikiCommentCount": 24,
- "chGuess": "21章"
+ "chGuess": "21章",
+ "chSource": "wikiOldestComment"
 }

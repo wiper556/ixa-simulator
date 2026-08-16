@@ -1,7 +1,7 @@
 {
  "name": "今川氏輝（2）",
  "no": "2768",
- "ch": "未確認",
+ "ch": "17章",
  "cost": 3.0,
  "troop": "全",
  "sub": "",
@@ -107,10 +107,12 @@
   "風林火山/風狂幻術/宿木のsourceCharactersに今川氏輝(2768)が正しいslot(C/B/S1)で登録済みであることをgrepで確認済み。",
   "TR段階: ixanary/ixawiki両方でLV1/LV10のみでTR記載なしを確認(TRなしスキル)。",
   "章はixanary(cards/2768, skills/神童ノ円舞曲)・ixawiki(BushoCard/2768今川氏輝)に記載無し。追加でixagno.blog.fc2.comを「今川氏輝」で検索(15件ヒット)したが、限定武将一覧(blog-entry-1294)がNo.2749の別今川氏輝カードに言及するのみで、本カード(No.2768)の章に関する記述は見つからず未確認のまま。",
-  "rankGrades(槍/馬/弓/器=全てA)はカード画像4隅バッジを個別ズームで再照合しixawikiの統率力表と一致することを確認(2026-08-15再検証)。"
+  "rankGrades(槍/馬/弓/器=全てA)はカード画像4隅バッジを個別ズームで再照合しixawikiの統率力表と一致することを確認(2026-08-15再検証)。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
  ],
  "reviewedOk": true,
  "wikiOldestComment": "2019-03-06",
  "wikiCommentCount": 24,
- "chGuess": "17章"
+ "chGuess": "17章",
+ "chSource": "wikiOldestComment"
 }

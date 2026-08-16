@@ -1,7 +1,7 @@
 {
  "name": "雪窓院",
  "no": "2803",
- "ch": "未確認",
+ "ch": "22章",
  "cost": 3.5,
  "troop": null,
  "sub": "",
@@ -105,7 +105,8 @@
   "合成候補(A/B/C/S1/S2の5枠)はixanary.com/skills/入来神舞とixawiki(BushoCard/2803雪窓院のスキル追加合成表)の2ソースで全枠一致を確認(A・Bは入来神舞の自己参照→飛蝶野分、Cは木遁封魔→遁世影武者、S1は飛蝶野分→風狂幻術、S2は宿木の自己参照)。numeric値(rate/target/effectShort/afterEffectShort)もそれぞれの候補スキル個別ページ(入来神舞・飛蝶野分・木遁封魔・遁世影武者)の生HTMLで裏取りし、既存データと一致することを確認した(修正不要)。",
   "章は情報源に記載が無いため未確認。",
   "2026-08-15検証(前回作業分): trTableが「効果文　確率X%」の逆順+読点混入だったため「対象　確率X% / 効果」の順に直した(data/skill/木遁封魔.jsonを手本)。skillDetailもnullだったため補完。C枠(木遁封魔→遁世影武者)のafter系がnullだったため、ixanary.com(skills/木遁封魔および/遁世影武者)で確認して埋めた。",
-  "2026-08-15黄丸化検証(今回): data/skill/入来神舞.jsonのsourceCharactersで雪窓院(2803)がslot:Aのみだったが、実際はA・Bの両方で入来神舞の自己参照のためslot:A・Bに修正。data/skill/飛蝶野分.jsonでは雪窓院(2803)がslot:Aとして直接列挙されていたが、A枠はskill=入来神舞→afterSkill=飛蝶野分という別の関係(このファイル自身の既存ルールに従えばgrantedViaSkills経由で扱うべき関係)であり、雪窓院が飛蝶野分を直接持つのはS1枠のみだったため、slotをAからS1に訂正した。"
+  "2026-08-15黄丸化検証(今回): data/skill/入来神舞.jsonのsourceCharactersで雪窓院(2803)がslot:Aのみだったが、実際はA・Bの両方で入来神舞の自己参照のためslot:A・Bに修正。data/skill/飛蝶野分.jsonでは雪窓院(2803)がslot:Aとして直接列挙されていたが、A枠はskill=入来神舞→afterSkill=飛蝶野分という別の関係(このファイル自身の既存ルールに従えばgrantedViaSkills経由で扱うべき関係)であり、雪窓院が飛蝶野分を直接持つのはS1枠のみだったため、slotをAからS1に訂正した。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
  ],
  "reviewedOk": true,
  "categoryLinks": [
@@ -116,5 +117,6 @@
  ],
  "wikiOldestComment": "2022-01-11",
  "wikiCommentCount": 22,
- "chGuess": "22章"
+ "chGuess": "22章",
+ "chSource": "wikiOldestComment"
 }

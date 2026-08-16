@@ -1,7 +1,7 @@
 {
  "name": "林羅山",
  "no": "2721",
- "ch": "未確認",
+ "ch": "7章",
  "cost": 2.5,
  "troop": "全防",
  "sub": "",
@@ -103,10 +103,12 @@
   "スキル効果はLV1カードのため外部ソースを採用。ixanary/ixawikiともLV1=9%減少・LV10=20%減少(重複不可)で完全一致。TR段はどちらのソースにも無い。",
   "合成候補はixanary.com(skills/天道格知)の1次/2次と ixawiki(BushoCard/2721)の合成候補テーブルの2ソースで全5枠完全一致(A=謀計奇策[A]→八咫烏[B]、B=神将[A]自己参照、C=背水之陣[B]自己参照、S1=三河魂[S]→天衣無縫陣[SS]、S2=覇王 葵巴[S]→破軍星[SS])。各枠のtarget/rate/effectShortは候補スキル自身のixanaryページのLV10行から転記。",
   "S以上の候補のうち三河魂[S]・覇王 葵巴[S]は data/skill/ に無かったため新規作成し、移植後の天衣無縫陣[SS]・破軍星[SS](既存ページ)にはA-3-12に従いgrantedViaSkillsで元スキルを追加した。初期スキル天道格知はAランクかつixanaryに「合成不可スキルです」と明記されているためページ作成対象外。",
-  "章はixanary.com/ixawiki.comのカードページに記載が無く未確認。"
+  "章はixanary.com/ixawiki.comのカードページに記載が無く未確認。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
  ],
  "reviewedOk": true,
  "wikiOldestComment": "2014-02-08",
  "wikiCommentCount": 178,
- "chGuess": "7章"
+ "chGuess": "7章",
+ "chSource": "wikiOldestComment"
 }

@@ -184,22 +184,23 @@ body{
 }
 .tool-card.rank-parallel:hover{box-shadow:0 6px 16px rgba(160,196,255,0.55);}
 
-/* 特は緑ベース。通常の特が明るい緑、シークレットが深緑で同系にそろえる */
+/* 特武将は赤(うぐさん指定) */
 .tool-card.rank-toku{
-  background:linear-gradient(135deg, #2f6b4f, #1d4635);
-  border:1px solid #6aa387;
+  background:linear-gradient(135deg, #8e2b24, #5d1a16);
+  border:1px solid #c96a5f;
 }
-.tool-card.rank-toku h3{color:#e2f5e9;}
-.tool-card.rank-toku p{color:#bfd9c9;}
-.tool-card.rank-toku:hover{box-shadow:0 6px 16px rgba(47,107,79,0.40);}
+.tool-card.rank-toku h3{color:#ffe0da;}
+.tool-card.rank-toku p{color:#eebdb5;}
+.tool-card.rank-toku:hover{box-shadow:0 6px 16px rgba(142,43,36,0.40);}
 
+/* 特シークレットは黄緑に近い緑(うぐさん指定) */
 .tool-card.rank-toku-s{
-  background:linear-gradient(135deg, #16362a, #0c1f18);
-  border:1px solid #3f6b57;
+  background:linear-gradient(135deg, #5f8f2a, #40631c);
+  border:1px solid #9ec95f;
 }
-.tool-card.rank-toku-s h3{color:#cfe8d8;}
-.tool-card.rank-toku-s p{color:#a6bfb2;}
-.tool-card.rank-toku-s:hover{box-shadow:0 6px 16px rgba(22,54,42,0.45);}
+.tool-card.rank-toku-s h3{color:#f0ffd9;}
+.tool-card.rank-toku-s p{color:#d7e9b4;}
+.tool-card.rank-toku-s:hover{box-shadow:0 6px 16px rgba(95,143,42,0.40);}
 
 .page-title{font-family:'Noto Serif JP', serif;font-weight:900;font-size:26px;margin:0 0 8px;}
 .page-lead{color:var(--muted);font-size:13.5px;line-height:1.7;margin:0 0 8px;}

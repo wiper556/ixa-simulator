@@ -1,7 +1,7 @@
 {
  "name": "北条氏綱（1）",
  "no": "2739",
- "ch": "未確認",
+ "ch": "12章",
  "cost": 1.5,
  "troop": "全防",
  "sub": "",
@@ -100,10 +100,12 @@
   "合成候補はixanary.com(skills/禄寿応穏)の1次/2次と ixawiki(BushoCard/2739)の合成候補テーブルの2ソースで全5枠完全一致(A=総構え[B]→獅子の陣[S]、B=洞察[B]自己参照、C=士気鼓舞[B]自己参照、S1=禄寿応穏[A]自己参照、S2=天衣無縫陣[SS]自己参照)。各枠のtarget/rate/effectShortは候補スキル自身のixanaryページのLV10行から転記。",
   "S1枠に初期スキル禄寿応穏が自己参照で載っていることを確認(A-3-13の裏取り手段)。",
   "A-3-11逆引き: 総構え(A)・天衣無縫陣(S2)の各 data/skill/*.json に北条氏綱を追記した。移植後の獅子の陣[S]は既にgrantedViaSkillsで総構えを指しているため追記不要(A-3-12)。禄寿応穏はAランクのため data/skill/ にページを作らない。",
-  "章はixanary.com/ixawiki.comのカードページに記載が無く未確認。"
+  "章はixanary.com/ixawiki.comのカードページに記載が無く未確認。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
  ],
  "reviewedOk": true,
  "wikiOldestComment": "2016-06-06",
  "wikiCommentCount": 220,
- "chGuess": "12章"
+ "chGuess": "12章",
+ "chSource": "wikiOldestComment"
 }

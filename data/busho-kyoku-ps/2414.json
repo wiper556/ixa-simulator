@@ -1,7 +1,7 @@
 {
  "name": "蒲生郷成",
  "no": "2414",
- "ch": "未確認",
+ "ch": "17章",
  "cost": 4,
  "troop": "攻",
  "sub": "",
@@ -148,10 +148,12 @@
   "C枠(戦陣無双→無双英傑)はA-3-9の例外ルール(afterSkillの無双英傑が既にページを持つ)によりdata/skill/戦陣 無双.jsonを新規作成し(No.2414・2437・2440を含む)、無双英傑.jsonのgrantedViaSkillsに追記した。ixanary生HTML(skills/戦陣 無双、確率50%/攻撃67%/防御67%/対象全)で数値一致確認。",
   "S1枠(戦陣轟砲→覇王絶世)はNo.2412高山右近の検証時に新規作成したdata/skill/戦陣 轟砲.jsonのsourceCharactersに既に登録済みであることを確認した(A-3-11)。S2枠(破軍星、自己参照)もdata/skill/破軍星.jsonのsourceCharactersに既に登録済みであることを確認、target表記のドット区切りを統一した。",
   "synthesisTableのA/B/C/S1/S2は、ixanary.com(cards/2414の初期スキル摺きれ久留子の合成テーブルおよび各候補スキル個別ページ)に加え、ixawiki.com(index.php?BushoCard/2414蒲生郷成)の合成候補テーブル(1次候補/2次候補S1)を生HTMLで確認し、全5行(A:戦陣阿吽→覇王征軍、B:戦陣破軍→天穿神滅、C:戦陣無双→無双英傑、S1:戦陣轟砲→覇王絶世、S2:破軍星自己参照)がixanary/ixawiki2ソースで一致することを確認した。",
-  "章はixanary.com/ixawiki.comいずれのカードページにも記載が無く未確認。"
+  "章はixanary.com/ixawiki.comいずれのカードページにも記載が無く未確認。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
  ],
  "reviewedOk": true,
  "wikiOldestComment": "2019-04-26",
  "wikiCommentCount": 110,
- "chGuess": "17章"
+ "chGuess": "17章",
+ "chSource": "wikiOldestComment"
 }

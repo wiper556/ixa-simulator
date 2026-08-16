@@ -1,7 +1,7 @@
 {
  "name": "緋村剣心【覇】",
  "no": "10052",
- "ch": "未確認",
+ "ch": "28章",
  "cost": 5,
  "troop": "全攻",
  "sub": "",
@@ -146,10 +146,12 @@
   "コスト5・成長値+170/+150/+3.5・絵師はixanary.com(cards/10052)とixawiki.comが一致。初期値2500/2100/800はカード実物を含め3ソース一致。",
   "スキルLV10〜TR5はixanary.com(skills/飛天ノ閃剣)とixagno.blog.fc2.com(blog-entry-10045)が全段一致、ixawiki.comもLV10とTR5が一致。TR6は情報源に無いためnull。",
   "9項目チェック: 卓越と飛翔(攻撃)が該当。skills-takuetsu.html / skills-hishou-atk.html をcategoryLinksに入れたが、各一覧ページ(生成物)側の配列への追記は担当範囲外のため未実施。",
-  "合成テーブルはixanary.com(skills/飛天ノ閃剣)とixagno.blog.fc2.com(blog-entry-10045)の2ソースでA〜S2の1次/2次が一致。ただしB枠の移植後「星神闘覇」のランクだけixanaryがSSS、ixagnoがSSで割れており、このサイトの既存登録(data/skill/星神闘覇.json)と同じSSを採った。ixawikiの合成候補表は空テンプレート。"
+  "合成テーブルはixanary.com(skills/飛天ノ閃剣)とixagno.blog.fc2.com(blog-entry-10045)の2ソースでA〜S2の1次/2次が一致。ただしB枠の移植後「星神闘覇」のランクだけixanaryがSSS、ixagnoがSSで割れており、このサイトの既存登録(data/skill/星神闘覇.json)と同じSSを採った。ixawikiの合成候補表は空テンプレート。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
  ],
  "reviewedOk": true,
  "wikiOldestComment": "2024-11-13",
  "wikiCommentCount": 53,
- "chGuess": "28章"
+ "chGuess": "28章",
+ "chSource": "wikiOldestComment"
 }

@@ -1,7 +1,7 @@
 {
  "name": "細川ガラシャ（2）",
  "no": "2599",
- "ch": "未確認",
+ "ch": "27章",
  "cost": 5,
  "troop": "部隊長特",
  "sub": "",
@@ -149,10 +149,12 @@
   "ただしS1/S2の2次(afterSkill)がixanary(月詠ノ覇威SS)とixawiki+ixagno(黒飛燕剣S)で食い違っており、2ソース一致のixawiki+ixagno側(黒飛燕剣S)を正として採用。以前のnotesは「据え置く」と書きつつ実データが月詠ノ覇威に戻ってしまっていた(監査ツール等による誤修正の疑い)ため、今回黒飛燕剣に修正し直した。afterTarget/afterRate/afterEffectShortも黒飛燕剣自身のLV10値に合わせて修正。帰蝶(No.2592)にも同型の食い違いがあるとの記載がありそちらは別途確認要。",
   "A(乱世ノ歸人→入来神舞)・B(黒飛燕剣→傾国ノ艶姫)・S1・S2(舞蝶朧月→黒飛燕剣、修正後)はいずれもskill≠afterSkillのためgrantedViaSkills経由。黒飛燕剣.jsonのgrantedViaSkillsに舞蝶朧月[S]を追加(既存の乱世ノ歸人→入来神舞、潔花咲然→舞蝶朧月は登録済みを確認)。",
   "乱世ノ歸人・黒飛燕剣・潔花咲然・舞蝶朧月・入来神舞は全てskills.htmlに既存ページ・sourceCharacters(2599)登録済みでスロットも一致。重複0件。傾国ノ艶姫・月詠ノ覇威には2599を直接列挙しない(grantedViaSkills経由のため)ことを確認。",
-  "章は情報源(ixanary/ixawiki/ixagno)に記載が無いため未確認。"
+  "章は情報源(ixanary/ixawiki/ixagno)に記載が無いため未確認。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
  ],
  "reviewedOk": true,
  "wikiOldestComment": "2024-06-10",
  "wikiCommentCount": 9,
- "chGuess": "27章"
+ "chGuess": "27章",
+ "chSource": "wikiOldestComment"
 }

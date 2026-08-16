@@ -1,7 +1,7 @@
 {
  "name": "斎藤一",
  "no": "2602",
- "ch": "未確認",
+ "ch": "28章",
  "cost": 4.5,
  "troop": "追加スキル防",
  "sub": "",
@@ -126,10 +126,12 @@
   "牙突のLV1(1.1倍)/LV10(2.5倍)/TR1〜TR5(2.6〜3倍)はixanaryスキルページ(skills/牙突)生HTMLで確認。TR6は情報源に無い。",
   "合成テーブル(1次=2次=3次、A=国津破邪ノ楯/B=旌旗翳天ノ覇陣/C=万里嵐壁/S1=永世ノ天隻/S2=三千世界神将、全てSSで自己参照)はixanaryスキルページとixawiki(BushoCard/2602斎藤一)の2ソースで一致を確認。",
   "牙突・国津破邪ノ楯・旌旗翳天ノ覇陣・万里嵐壁・永世ノ天隻・三千世界神将は全てskills.htmlに既存ページ・sourceCharacters(2602)登録済みでスロットも一致。重複0件。",
-  "章は情報源(ixanary/ixawiki)に記載が無いため未確認。"
+  "章は情報源(ixanary/ixawiki)に記載が無いため未確認。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
  ],
  "reviewedOk": true,
  "wikiOldestComment": "2024-11-13",
  "wikiCommentCount": 4,
- "chGuess": "28章"
+ "chGuess": "28章",
+ "chSource": "wikiOldestComment"
 }

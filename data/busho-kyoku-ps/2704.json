@@ -1,7 +1,7 @@
 {
  "name": "淀（1）",
  "no": "2704",
- "ch": "未確認",
+ "ch": "3章",
  "cost": 2.0,
  "troop": "槍馬砲防",
  "sub": "",
@@ -100,10 +100,12 @@
   "合成候補はixanary.com(skills/神勅賢母)の1次/2次と ixawiki(BushoCard/2704)の合成候補テーブルの2ソースで全5枠完全一致(A=鉄壁の備え[D]→城崩し[D]、B=車懸り 白狐[B]自己参照、C=八咫烏[B]自己参照、S1=背水之陣[B]自己参照、S2=神速[A]自己参照)。各枠のtarget/rate/effectShortは候補スキル自身のixanaryページのLV10行から転記。候補は全てS未満のため候補側の新規スキルページ作成は不要。",
   "初期スキル神勅賢母はSランクのためA-3-9により data/skill/神勅賢母.json を新規作成した。自分のsynthesisTableのどの枠にも載らないためslotは「移植不可」。",
   "部隊スキル(攻：覇道の礎 / 防：戦姫艶舞)はixawikiに記載があるが、サイトのデータ構造に部隊スキルの欄が無いため登録していない。",
-  "章はixanary.com/ixawiki.comのカードページに記載が無く未確認。"
+  "章はixanary.com/ixawiki.comのカードページに記載が無く未確認。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
  ],
  "reviewedOk": true,
  "wikiOldestComment": "2011-11-05",
  "wikiCommentCount": 193,
- "chGuess": "3章"
+ "chGuess": "3章",
+ "chSource": "wikiOldestComment"
 }

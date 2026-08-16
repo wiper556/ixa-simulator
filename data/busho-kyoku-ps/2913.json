@@ -1,7 +1,7 @@
 {
  "name": "相馬義胤",
  "no": "2913",
- "ch": "未確認",
+ "ch": "9章",
  "cost": 3.5,
  "troop": "全攻",
  "sub": "",
@@ -102,10 +102,12 @@
   "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
   "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15、再確認したところ既に全て埋まっており解消済み)。",
   "2026-08-16黄丸化検証(A-1〜A-5): rankGradesはカード画像4隅バッジを個別ズームで再確認(左上槍A/右上馬S/左下弓B/右下器B)、基礎値760/450/465・成長18/16/2.0・コスト3.5・lv0Troops3400はixanary.com(cards/2913)とixawiki.com(BushoCard/2913相馬義胤)の2ソースで一致確認。初期スキル双鞭驃騎兵はixanary.com生HTMLでLV10確認、trTable(LV10のみ、TRデータなし)は既存登録と一致。synthesisTableのA/B/C/S1/S2はixanary.comとixawiki.comの合成テーブルの2ソースで完全一致を確認(A:弓隊襲撃[F]→弓隊堅守[F]、B:義兵進軍[C]→大ふへん者[D]、C:神風襲来[B]→疾風怒濤[B]、S1:神速[A・自己参照]、S2:天焉神軍[SS・自己参照])。既存データに誤りは見つからず修正なし。",
-  "sourceCharacters逆引き確認(A-3-11): data/skill/天焉神軍.json(S2)に既にNo.2913登録済みを確認(要修正なし)。双鞭驃騎兵(A、自身の初期スキル)はS以上でなくA-3-9の例外条件(afterSkillがS以上の既存ページを持つ)にも該当しないためページ未作成のまま(既存規約通り、対象外)。categoryLinksは9項目いずれにも該当なし(該当スキルのcategoryLinksは全て空または未設定で妥当)。KP_LINKED_SKILLSに天焉神軍が登録済みを確認。skillDetailは「模倣不可」の記載自体が無く独立行違反の対象外。無尽/撤退/覇道/不屈/飛翔/兵站/人数依存/コスト減少/卓越キーワードは該当なし(A-2)。章はixanary.com/ixawiki.comのカードページに記載が無く未確認のまま。以上、A-1〜A-4に未解決点なしのためreviewedOk:trueとする。"
+  "sourceCharacters逆引き確認(A-3-11): data/skill/天焉神軍.json(S2)に既にNo.2913登録済みを確認(要修正なし)。双鞭驃騎兵(A、自身の初期スキル)はS以上でなくA-3-9の例外条件(afterSkillがS以上の既存ページを持つ)にも該当しないためページ未作成のまま(既存規約通り、対象外)。categoryLinksは9項目いずれにも該当なし(該当スキルのcategoryLinksは全て空または未設定で妥当)。KP_LINKED_SKILLSに天焉神軍が登録済みを確認。skillDetailは「模倣不可」の記載自体が無く独立行違反の対象外。無尽/撤退/覇道/不屈/飛翔/兵站/人数依存/コスト減少/卓越キーワードは該当なし(A-2)。章はixanary.com/ixawiki.comのカードページに記載が無く未確認のまま。以上、A-1〜A-4に未解決点なしのためreviewedOk:trueとする。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
  ],
  "reviewedOk": true,
  "wikiOldestComment": "2015-02-05",
  "wikiCommentCount": 242,
- "chGuess": "9章"
+ "chGuess": "9章",
+ "chSource": "wikiOldestComment"
 }

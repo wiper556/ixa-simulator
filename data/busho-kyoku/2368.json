@@ -1,7 +1,7 @@
 {
  "name": "三好義賢（2）",
  "no": "2368",
- "ch": "未確認",
+ "ch": "27章",
  "cost": 4,
  "troop": "攻",
  "sub": "",
@@ -107,10 +107,12 @@
   "**副産物の発見・修正**: data/skill/風林火山.jsonのsourceCharactersに三好義賢(2368)が「slot: B(遁世影武者経由)」の形で直接列挙されていたが、これはA-3-12違反(遁世影武者が既にページを持つため風林火山側への直接列挙は誤り、grantedViaSkills経由が正しい)。この誤りは同ファイルの過去のnoteで「担当範囲外のため未修正」と名指しで申し送りされていたもので、今回の担当範囲内だったため削除して修正した(三好義賢は遁世影武者.json側に既にslot Bで正しく登録済みのため情報欠落なし)。",
   "trTable: ixanary生HTMLにTR1〜6や鍛錬の記載が無く、LV10のみの単段スキルであることを確認。",
   "categoryLinks(A-2): 無尽/撤退/覇道/不屈/飛翔/兵站/人数依存/卓越/コスト減少の9項目いずれにも該当せず、categoryLinksフィールド自体が無いのが正しい状態。",
-  "章は情報源(ixanary.com/ixawiki.com)に記載が無く未確認のまま(既存も「未確認」表記で変更なし)。"
+  "章は情報源(ixanary.com/ixawiki.com)に記載が無く未確認のまま(既存も「未確認」表記で変更なし)。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
  ],
  "reviewedOk": true,
  "wikiOldestComment": "2024-05-08",
  "wikiCommentCount": 3,
- "chGuess": "27章"
+ "chGuess": "27章",
+ "chSource": "wikiOldestComment"
 }

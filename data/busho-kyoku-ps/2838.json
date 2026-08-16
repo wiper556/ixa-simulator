@@ -2,7 +2,7 @@
  "name": "新庄局",
  "no": "2838",
  "reviewedOk": true,
- "ch": "未確認",
+ "ch": "28章",
  "cost": 2.0,
  "troop": "全",
  "sub": "",
@@ -126,9 +126,11 @@
   "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。ixawiki(BushoCard/2838新庄局)の合成候補テーブルとも突き合わせ、A/B/C/S1/S2全枠(1次・2次とも)で完全一致を確認済み(2026-08-15黄丸化検証)。この武将の初期スキル自体の効果文・trTable(TR1〜TR5)はixanaryと完全一致していて修正不要だった。",
   "2026-08-15黄丸化検証で発見・修正: skills.html/data/skill/高津姫神.jsonのsourceCharactersに新庄局(2838)のS1枠が漏れていた(C枠のみ登録されていた)ため追加。",
   "2026-08-15黄丸化検証で発見・修正: 初期スキル「慈光望姫」はixanaryの合成テーブルでA/B/C/S1/S2いずれの枠にも自身が出現しないため移植不可だが、skills.html/data/skill/慈光望姫.jsonのsourceCharactersが空だったため{slot:\"移植不可\"}で追加。同ファイルのtargetがnullだったのも他の無確率スキルの慣例(\"-\")に合わせて修正した。",
-  "章は情報源に記載が無いため未確認(ixanary/ixawikiとも記載なし)。"
+  "章は情報源に記載が無いため未確認(ixanary/ixawikiとも記載なし)。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
  ],
  "wikiOldestComment": "2024-12-21",
  "wikiCommentCount": 7,
- "chGuess": "28章"
+ "chGuess": "28章",
+ "chSource": "wikiOldestComment"
 }

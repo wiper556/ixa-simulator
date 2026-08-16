@@ -1,7 +1,7 @@
 {
  "name": "宮本武蔵（3）",
  "no": "2444",
- "ch": "未確認",
+ "ch": "22章",
  "cost": 4.5,
  "troop": "防",
  "sub": "",
@@ -139,10 +139,12 @@
   "C枠(活人剣)・S2枠(剣聖新陰)はtarget/rateが未確定(null)だったため、ixanary生HTML(skills/活人剣・剣聖新陰)で埋めた(C:全,100%/S2:槍・器・鉄,100%)。",
   "A・B枠(鬼滅刺)・C枠(活人剣)は既にdata/skill/鬼滅刺.json・活人剣.jsonのsourceCharactersに宮本武蔵(2444)が正しいslotで登録済みであることを確認した(A-3-11)。剣聖新陰・古今無双ノ将はA未満S以外の一般スキルでafterSkillが既存ページを持たないためページ作成対象外(A-3-9)。",
   "synthesisTableのA/B/C/S1/S2は、ixanary.com(cards/2444の初期スキル三十五ノ兵法の合成テーブルおよび各候補スキル個別ページ)に加え、ixawiki.com(index.php?BushoCard/2444宮本武蔵)の合成候補テーブル(1次候補/2次候補S1)を生HTMLで確認し、全5行がixanary/ixawiki2ソースで一致することを確認した。",
-  "章はixanary.com/ixawiki.comいずれのカードページにも記載が無く未確認。"
+  "章はixanary.com/ixawiki.comいずれのカードページにも記載が無く未確認。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
  ],
  "reviewedOk": true,
  "wikiOldestComment": "2021-11-04",
  "wikiCommentCount": 166,
- "chGuess": "22章"
+ "chGuess": "22章",
+ "chSource": "wikiOldestComment"
 }

@@ -2,7 +2,7 @@
  "name": "高山右近（2）",
  "no": "2836",
  "reviewedOk": true,
- "ch": "未確認",
+ "ch": "28章",
  "cost": 4.5,
  "troop": "全攻",
  "sub": "",
@@ -130,9 +130,11 @@
   "2026-08-15黄丸化検証で発見: A枠候補「オプクワ」(A)はskills.html/data/skill配下にページが無かったが、移植後合成候補(afterSkill)の「戦陣 神楽」が既存ページ持ちのためA-3-9の例外規定によりページを新規作成した(LINKED_SKILLSにも追加)。",
   "2026-08-15黄丸化検証で発見・修正: skills.html/data/skill/天宇受売命.jsonのsourceCharactersに高山右近(2836)のS1枠が漏れていた(C枠のみ登録されていた)ため追加。",
   "2026-08-15追記(git logで発覚したA-3-12違反の是正): 天宇受売命のC枠は清廉士道(元スキル)のafterSkillでありskillとは一致しないため、C枠への直接列挙(元々あった)を削除しS1枠(skill一致)のみ残した。清廉士道側には既にsourceCharactersにC枠で正しく登録済み。",
-  "章は情報源に記載が無いため未確認(ixanary/ixawikiとも記載なし)。"
+  "章は情報源に記載が無いため未確認(ixanary/ixawikiとも記載なし)。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
  ],
  "wikiOldestComment": "2024-10-02",
  "wikiCommentCount": 11,
- "chGuess": "28章"
+ "chGuess": "28章",
+ "chSource": "wikiOldestComment"
 }
