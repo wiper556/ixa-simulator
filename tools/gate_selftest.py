@@ -105,6 +105,45 @@ def _baseline(repo):
     sh(["git", "add", "tools/audit_baseline.json"], repo)
 
 
+def _d14_marks(repo):
+    """No.1310 を赤丸にする。正本とページの両方を同じ内容にそろえる。
+
+    片方だけ直すと「ページの配列が正本と違う」で止まってしまい、
+    赤丸の検査が働いたのか別の検査で止まったのか見分けが付かない。
+    """
+    edit(repo, "data/busho/1310.json", ' "reviewedOk": true,',
+         ' "approved": true,\n "reviewedOk": true,')
+    edit(repo, "characters.html", 'no:"1310", furigana:"おだのぶひで"',
+         'no:"1310", approved:true, furigana:"おだのぶひで"')
+    sh(["git", "add", "data/busho/1310.json", "characters.html"], repo)
+
+
+def _d14(repo):
+    """許可の記録を残さずに赤丸にする(止まるべき)。"""
+    _d14_marks(repo)
+
+
+def _d14ok(repo):
+    """許可の記録つきで赤丸にする(止まってはいけない)。
+
+    記録は --approve に書かせる。ここで手書きすると、
+    「手編集を止める検査」のほうに引っかかって別の理由で赤くなる。
+    """
+    _d14_marks(repo)
+    sh([sys.executable, "tools/precommit_check.py", "--approve", "1310",
+        "--reason", "自己テスト用。ユーザーが赤丸にしてよいと明言した想定"], repo)
+    sh(["git", "add", "tools/approvals.txt"], repo)
+
+
+def _d14edit(repo):
+    """許可の記録を手で書く(止まるべき)。過去行の書き換えも同じ扱い。"""
+    _d14_marks(repo)
+    p = os.path.join(repo, "tools", "approvals.txt")
+    with io.open(p, "a", encoding="utf-8", newline="\n") as f:
+        f.write("1310 なんとなく\n")          # タブ区切りでも日付でもない
+    sh(["git", "add", "tools/approvals.txt"], repo)
+
+
 def _dirty_tools(repo):
     """検査に使う道具を、ステージせずに書き換える。"""
     edit(repo, "tools/audit_characters.py", "# -*- coding: utf-8 -*-",
@@ -191,6 +230,11 @@ CASES = [
     ("P-02", "生成物だけを手で書き換える", _genonly, True, "生成物だけが変わっている"),
     ("A-01", "ベースラインを手で増やして理由を残さない", _baseline, True,
      "ベースラインの手編集"),
+    ("D-14", "記録を残さずに赤丸にする", _d14, True,
+     "新しく approved:true になった武将"),
+    ("D-14b", "許可の記録つきで赤丸にする(止まってはいけない)", _d14ok, False, ""),
+    ("D-14c", "許可の記録を手で書く", _d14edit, True,
+     "赤丸の許可記録の手編集"),
     ("A-07", "検査の道具をステージせずに書き換える", _dirty_tools, True,
      "ステージしていない変更がある"),
     ("Z-01", "tools/ に未追跡の .py を置く(import乗っ取り)", _stray_py, True,
