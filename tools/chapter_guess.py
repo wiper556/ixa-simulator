@@ -69,8 +69,12 @@ def guess(d):
     日付は「本当に古いカード」なのか「古いログが消えて残った最古が
     たまたまその日」なのか区別できない。章を出さない。
     """
+    # **3章より前は一律「1-2章」**(うぐさん 2026-08-16)。
+    # 震災でwikiの古いログが消えており、この帯の日付が本当の実装時期なのか
+    # 「消し残った最古のコメント」なのか区別できない。1章と2章の境目も不明。
+    # 区別できないものをまとめて1つの札にする。
     if d < EARLY_CUT:
-        return None, None
+        return 1, 2
     for i, (ch, lo, hi) in enumerate(CHAPTERS):
         if lo <= d <= hi:
             end = datetime.date(*map(int, hi.split("-")))
