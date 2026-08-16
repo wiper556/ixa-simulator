@@ -17,6 +17,7 @@ import datetime
 import io
 import json
 import os
+import re
 import sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -100,7 +101,9 @@ def main(write=False):
         d = j.get("wikiOldestComment")
         ch = j.get("ch")
         g, nxt = guess(d) if d else (None, None)
-        known = int(ch.replace("章", "")) if ch and ch != "未確認" else None
+        # 「1-2章」のように決めきれないものは答え合わせに使わない
+        m = re.match(r"^(\d+)章$", str(ch or ""))
+        known = int(m.group(1)) if m else None
 
         if known is not None and g is not None:
             if g == known or nxt == known:
@@ -118,7 +121,7 @@ def main(write=False):
 
         if write:
             v = None if g is None else ("%d章" % g if not nxt
-                                        else "%d章か%d章" % (g, nxt))
+                                        else "%d-%d章" % (g, nxt))
             if j.get(FIELD) != v:
                 j[FIELD] = v
                 io.open(path, "w", encoding="utf-8", newline="\n").write(
@@ -137,7 +140,7 @@ def main(write=False):
 
     print("\n章が未確認のもの")
     for (g, nxt), n in sorted(fill.items(), key=lambda x: (x[0][0], x[0][1] or 0)):
-        print("  %-10s %d体" % ("%d章" % g if not nxt else "%d章か%d章" % (g, nxt), n))
+        print("  %-10s %d体" % ("%d章" % g if not nxt else "%d-%d章" % (g, nxt), n))
     print("  日付が無くて判定できない: %d体" % unknown)
     if write:
         print("\n%s に %d体を書いた" % (FIELD, wrote))
@@ -161,7 +164,7 @@ def annotate_roster():
     for no, v in j.items():
         g, nxt = guess(v.get("first")) if v.get("first") else (None, None)
         v["chGuess"] = (None if g is None
-                        else ("%d章" % g if not nxt else "%d章か%d章" % (g, nxt)))
+                        else ("%d章" % g if not nxt else "%d-%d章" % (g, nxt)))
         n["付いた" if g else "付かない"] += 1
         n["未登録で付いた" if (g and not v.get("registered")) else "-"] += 1
     io.open(ROSTER, "w", encoding="utf-8", newline="\n").write(

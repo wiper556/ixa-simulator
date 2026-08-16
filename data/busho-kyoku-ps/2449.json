@@ -1,7 +1,7 @@
 {
  "name": "吉川元春（3）",
  "no": "2449",
- "ch": "未確認",
+ "ch": "22章",
  "cost": 4,
  "troop": "全攻防",
  "sub": "",
@@ -142,10 +142,11 @@
   "C枠(騒速ノ神撃、自己参照)のtarget/rateが未確定(null)だったため、data/skill/騒速ノ神撃.jsonの確定値(target:槍・弓・器・焙,rate:57%)を転記し、ドット区切り表記もあわせて統一した。",
   "A・B枠(波濤ノ剛撃)・C枠(騒速ノ神撃)・S1・S2枠(布都御魂ノ鬨)は全てdata/skill/波濤ノ剛撃.json・騒速ノ神撃.json・布都御魂ノ鬨.jsonのsourceCharactersに吉川元春(2449)が正しいslotで登録済みであることを確認した(A-3-11)。",
   "synthesisTableのA/B/C/S1/S2は、ixanary.com(cards/2449の初期スキル波濤ノ剛撃の合成テーブルおよび各候補スキル個別ページ)に加え、ixawiki.com(index.php?BushoCard/2449吉川元春)の合成候補テーブル(1次候補/2次候補S1)を生HTMLで確認し、全5行がixanary/ixawiki2ソースで一致することを確認した。",
-  "章はixanary.com/ixawiki.comいずれのカードページにも記載が無く未確認。"
+  "章はixanary.com/ixawiki.comいずれのカードページにも記載が無く未確認。",
+  "2026-08-16: 章を 22章 に確定。2022年2月12日追加(うぐさん)。22章は2021/8/13〜2022/2/13なので、章の終わり2日前の追加にあたる"
  ],
  "reviewedOk": true,
  "wikiOldestComment": "2022-02-10",
  "wikiCommentCount": 15,
- "chGuess": "22章か23章"
+ "chGuess": "22-23章"
 }
