@@ -165,6 +165,24 @@ body{
 .tool-card.rank-kyoku-ps p{color:#d2c9e2;}
 .tool-card.rank-kyoku-ps:hover{box-shadow:0 6px 16px rgba(75,43,110,0.40);}
 
+/* 天パラレル。天(白)の系統だが元カードの別版なので、金の縁で区別する */
+.tool-card.rank-parallel{
+  background:linear-gradient(135deg, #1d2b3a, #101820);
+  border:1px solid #c9a227;
+}
+.tool-card.rank-parallel h3{color:#f0d98c;}
+.tool-card.rank-parallel p{color:#bfc8d4;}
+.tool-card.rank-parallel:hover{box-shadow:0 6px 16px rgba(201,162,39,0.35);}
+
+/* 特シークレット。極の黒とも極PSの紫とも別に、深緑で分ける */
+.tool-card.rank-toku{
+  background:linear-gradient(135deg, #1f3b30, #12241d);
+  border:1px solid #4e7a63;
+}
+.tool-card.rank-toku h3{color:#cfe8d8;}
+.tool-card.rank-toku p{color:#aec4b7;}
+.tool-card.rank-toku:hover{box-shadow:0 6px 16px rgba(31,59,48,0.40);}
+
 .page-title{font-family:'Noto Serif JP', serif;font-weight:900;font-size:26px;margin:0 0 8px;}
 .page-lead{color:var(--muted);font-size:13.5px;line-height:1.7;margin:0 0 8px;}
 
