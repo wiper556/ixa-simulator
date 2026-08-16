@@ -508,6 +508,16 @@
   .gen-art-pop.show{display:block;}
   /* 元の絵は224x315。邪魔なので2/3にする(うぐさん指示 2026-08-16) */
   .gen-art-pop img{display:block; width:149px; height:210px;}
+  /* 武将名にカーソルを置いたら4人ぶん横に並べる(うぐさん指示 2026-08-16)。
+     絵が無い武将はその枠ごと出さない。いま指している列だけ枠を光らせる。 */
+  .gen-art-pop{display:none;}
+  .gen-art-pop.show{display:flex; gap:4px;}
+  .gen-art-pop figure{margin:0; padding:2px; border:2px solid transparent; border-radius:3px;}
+  .gen-art-pop figure.is-here{border-color:var(--vermillion-bright,#c0392b);}
+  .gen-art-pop figcaption{
+    font-size:10px; text-align:center; color:#6b6558; margin-top:2px;
+    max-width:149px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;
+  }
   @media (max-width:640px){ .gen-art-pop{display:none !important;} }
 
   .sim-version-badge{
@@ -866,7 +876,7 @@
   // 【必須】attack-simulator.html を変更したコミットでは、必ずこの定数も一緒に更新すること。
   // 表示文言の変更・CSSの微調整であっても対象(ユーザーがスクショで版を判別できなくなるため)。
   // 更新忘れが繰り返し発生しているので、編集したらコミット前にここを見に来る。
-  const SIMULATOR_VERSION = 'v2026-08-16.12';
+  const SIMULATOR_VERSION = 'v2026-08-16.13';
   document.addEventListener('DOMContentLoaded', ()=>{
     const badge = document.getElementById('simVersionBadge');
     if(badge) badge.textContent = SIMULATOR_VERSION;
@@ -5033,7 +5043,6 @@
     if(genArtPop) return genArtPop;
     genArtPop = document.createElement('div');
     genArtPop.className = 'gen-art-pop';
-    genArtPop.innerHTML = '<img alt="">';
     document.body.appendChild(genArtPop);
     return genArtPop;
   }
@@ -5042,43 +5051,76 @@
     if(genArtPop) genArtPop.classList.remove('show');
   }
 
-  // カーソルの右下に出す。画面からはみ出すときは左/上へ回す。
+  // **カーソルの右斜め上**に出す(うぐさん指示 2026-08-16)。
+  // 4人ぶん並べると横に広いので、はみ出すぶんは左へ寄せて画面内に収める。
   function placeGenArt(ev){
     if(ev){ genArtPos = {x: ev.clientX, y: ev.clientY}; }
     if(!genArtPop || !genArtPop.classList.contains('show')) return;
-    const W = 157, H = 218, pad = 14;
+    const r = genArtPop.getBoundingClientRect();
+    const pad = 14;
     let x = genArtPos.x + pad;
-    let y = genArtPos.y + pad;
-    if(x + W > window.innerWidth) x = genArtPos.x - W - pad;
-    if(y + H > window.innerHeight) y = Math.max(4, window.innerHeight - H - 4);
+    let y = genArtPos.y - r.height - pad;      // 上に出す
+    if(x + r.width > window.innerWidth - 4) x = window.innerWidth - r.width - 4;
+    if(y < 4) y = Math.min(genArtPos.y + pad, window.innerHeight - r.height - 4);
     genArtPop.style.left = Math.max(4, x) + 'px';
-    genArtPop.style.top = y + 'px';
+    genArtPop.style.top = Math.max(4, y) + 'px';
+  }
+
+  // 4列ぶんの (番号, 表示名) を集める。番号が出せない列は飛ばす。
+  function squadArtList(){
+    const out = [];
+    for(let c = 0; c < 4; c++){
+      const el = $(cellId('general', c));
+      const entry = el ? findGeneralEntry(el.value) : null;
+      if(!entry) continue;
+      const no = String(entry.no);
+      if(genArtMissing.has(no)) continue;
+      out.push({col: c, no: no, name: entry.name || ''});
+    }
+    return out;
   }
 
   function showGenArtFor(input, ev){
-    const entry = findGeneralEntry(input.value);
-    const no = entry ? String(entry.no) : '';
-    if(!no || genArtMissing.has(no)){ hideGenArt(); return; }
-    const pop = ensureGenArtPop();
-    const img = pop.querySelector('img');
     if(ev) genArtPos = {x: ev.clientX, y: ev.clientY};
-    if(genArtNo === no){
-      if(img.complete && img.naturalWidth){ pop.classList.add('show'); placeGenArt(); }
-      return;
+    const list = squadArtList();
+    if(!list.length){ hideGenArt(); return; }
+    const here = Number(String(input.id).split('_').pop());
+    const pop = ensureGenArtPop();
+    const sig = list.map(g => g.no).join(',');
+
+    if(genArtNo !== sig){
+      genArtNo = sig;
+      pop.classList.remove('show');
+      pop.innerHTML = '';
+      list.forEach(g => {
+        const fig = document.createElement('figure');
+        fig.dataset.col = String(g.col);
+        const img = document.createElement('img');
+        img.alt = g.name;
+        // 絵が無い武将はその枠ごと消す。番号を覚えて二度は取りにいかない
+        img.onerror = () => { genArtMissing.add(g.no); fig.remove(); reflowGenArt(pop); };
+        img.onload = () => reflowGenArt(pop);
+        img.src = 'assets/img/characters/no' + g.no + '_char.png';
+        const cap = document.createElement('figcaption');
+        cap.textContent = (g.col === 0 ? '部隊長 ' : '小隊' + g.col + ' ') + g.name;
+        fig.appendChild(img);
+        fig.appendChild(cap);
+        pop.appendChild(fig);
+      });
     }
-    // 別の武将に変わるあいだ、前の絵を出したままにしない
-    genArtNo = no;
-    pop.classList.remove('show');
-    img.onload = () => {
-      if(genArtNo !== no) return;   // 読み込み中にカーソルが移っていたら捨てる
-      pop.classList.add('show');
-      placeGenArt();
-    };
-    img.onerror = () => {
-      genArtMissing.add(no);
-      if(genArtNo === no) hideGenArt();
-    };
-    img.src = 'assets/img/characters/no' + no + '_char.png';
+    pop.querySelectorAll('figure').forEach(f => {
+      f.classList.toggle('is-here', Number(f.dataset.col) === here);
+    });
+    reflowGenArt(pop);
+  }
+
+  // 1枚でも絵が出せたら表示する。全部だめなら出さない。
+  function reflowGenArt(pop){
+    const ok = Array.from(pop.querySelectorAll('img'))
+      .some(i => i.complete && i.naturalWidth);
+    if(!pop.querySelector('figure') || !ok){ pop.classList.remove('show'); return; }
+    pop.classList.add('show');
+    placeGenArt();
   }
 
   function attachGeneralArtHover(input){
