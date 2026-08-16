@@ -5084,6 +5084,15 @@ const specialSkills = {
     note: '[A] 槍・弓・馬・砲　確率 60% / 攻撃 300%上昇(自部隊同時攻撃時消費名声値-20・重複不可)。効果文から自動生成(tools/build_special_skills.py)。' +
           '正本 data/skill/空陣鳴響.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
   },
+  '筋骨隆々': {
+    effectAxis: 'both',
+    activationType: 'triggered',
+    statTarget: 'atk',
+    trTable: { base:790 },
+    baseRate: 29,
+    note: '[S] 全 不屈1 兵站　確率 29% / 攻撃 790%上昇+防御 790%上昇。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/筋骨隆々.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
   '籠城の妙技': {
     effectAxis: 'def',
     activationType: 'triggered',
