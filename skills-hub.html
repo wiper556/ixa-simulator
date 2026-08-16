@@ -9,7 +9,13 @@
 <meta name="description" content="戦国IXA(Sengoku IXA)のスキル関連ページ一覧。スキルデータベース・人数依存(攻)スキル一覧・無尽スキル一覧などへのリンク集。">
 <link rel="stylesheet" href="assets/css/site.css">
 <style>
-  .skill-hub-list{display:flex;flex-direction:column;gap:10px;max-width:420px;}
+  .skill-hub-list{display:flex;flex-direction:column;gap:10px;max-width:860px;}
+  .skill-hub-list > .tool-card{max-width:420px;}
+  /* 攻撃と防御が対になっているものは横に並べる(2026-08-16、ユーザー依頼)。
+     縦に積むと対が上下に離れて見比べにくい。 */
+  .skill-hub-pair{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
+  .skill-hub-pair .tool-card{margin:0;}
+  @media (max-width:700px){ .skill-hub-pair{grid-template-columns:1fr;} }
   .skill-hub-list .tool-card{padding:14px 16px;}
   .skill-hub-list .tool-card h3{font-size:15px;}
   .skill-hub-list .tool-card p{font-size:12.5px;}
@@ -61,25 +67,42 @@
         <p>個別スキルの発動率・対象・鍛錬レベル別性能・合成候補などの詳細を確認できます。</p>
       </a>
 
-      <a class="tool-card" href="skills-count-atk.html">
+      <div class="skill-hub-pair">
+        <a class="tool-card" href="skills-count-atk.html">
         <h3>人数依存(攻)スキル一覧</h3>
         <p>防御参加武将数に応じて効果が変化する攻撃スキルを、LV10・鍛錬最大時で比較できます。</p>
       </a>
-
-      <a class="tool-card" href="skills-count-def.html">
+        <a class="tool-card" href="skills-count-def.html">
         <h3>人数依存(防)スキル一覧</h3>
         <p>防御参加武将数に応じて効果が変化する防御スキルを、LV10・鍛錬最大時で比較できます。</p>
       </a>
+      </div>
 
-      <a class="tool-card" href="skills-mujin.html">
-        <h3>無尽スキル一覧</h3>
-        <p>部隊消費コストを減少させる「無尽」を持つスキルを一覧で確認できます。</p>
-      </a>
 
-      <a class="tool-card" href="skills-cost.html">
-        <h3>コスト減少スキル一覧</h3>
-        <p>部隊消費コストを減少・除外するスキルを一覧で確認できます(無尽スキルも含みます)。</p>
+
+      <div class="skill-hub-pair">
+        <a class="tool-card" href="skills-mujin-atk.html">
+        <h3>無尽(攻)スキル一覧</h3>
+        <p>部隊消費コストを減少させる「無尽」を持つ攻撃スキルを一覧で確認できます。</p>
       </a>
+        <a class="tool-card" href="skills-mujin-def.html">
+        <h3>無尽(防)スキル一覧</h3>
+        <p>部隊消費コストを減少させる「無尽」を持つ防御スキルを一覧で確認できます。</p>
+      </a>
+      </div>
+
+
+      <div class="skill-hub-pair">
+        <a class="tool-card" href="skills-cost-atk.html">
+        <h3>コスト減少(攻)スキル一覧</h3>
+        <p>部隊消費コストを減少・除外する攻撃スキルを一覧で確認できます(無尽スキルも含みます)。</p>
+      </a>
+        <a class="tool-card" href="skills-cost-def.html">
+        <h3>コスト減少(防)スキル一覧</h3>
+        <p>部隊消費コストを減少・除外する防御スキルを一覧で確認できます(無尽スキルも含みます)。</p>
+      </a>
+      </div>
+
 
       <a class="tool-card" href="skills-taitai.html">
         <h3>撤退スキル一覧</h3>
@@ -96,15 +119,18 @@
         <p>所属部隊の部隊長が持つ初期スキルを模倣し、効果を強化するスキルを一覧で確認できます。</p>
       </a>
 
-      <a class="tool-card" href="skills-hishou-atk.html">
+      <div class="skill-hub-pair">
+        <a class="tool-card" href="skills-hishou-atk.html">
         <h3>飛翔スキル一覧(攻撃)</h3>
         <p>「飛翔」の数値を持ち、攻撃効果を持つスキルを一覧で確認できます。</p>
       </a>
-
-      <a class="tool-card" href="skills-hishou-def.html">
+        <a class="tool-card" href="skills-hishou-def.html">
         <h3>飛翔スキル一覧(防御)</h3>
         <p>「飛翔」の数値を持ち、防御効果を持つスキルを一覧で確認できます。</p>
       </a>
+      </div>
+
+
 
       <a class="tool-card" href="skills-hadou.html">
         <h3>覇道スキル一覧</h3>

@@ -38,6 +38,10 @@
     background:rgba(255,255,255,0.85); padding:2px 7px; border-radius:4px;
     border:1px solid var(--line); pointer-events:none; user-select:text;
   }
+
+  /* 全員が移植不可の枠だけ薄い赤で塗る(2026-08-16、ユーザー依頼)。
+     1体でも移植できる武将が居れば塗らない。 */
+  .src-allnotrans{ background:#fdeaea; }
 </style>
 <link rel="icon" href="favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="192x192" href="assets/img/icon-192.png">
@@ -95,7 +99,7 @@
         </thead>
         <tbody id="htList">
 <!-- PRERENDER:list:htList:start ここから下は tools/prerender.py が自動生成しています。直接編集しないこと -->
-<tr><td><a href="skills.html#筋骨隆々">筋骨隆々</a></td><td>9%</td><td>全</td><td class="ht-col-effect">攻撃270%上昇+防御270%上昇(合成専用スキルのためLV1の値。鍛錬の段は存在しない)</td><td style="white-space:normal;"><a href="characters.html#10067">相楽左之助【覇】(B)</a></td></tr><tr><td><a href="characters.html#1289">蓋方軍慮</a></td><td>100%</td><td>槍・砲・器</td><td class="ht-col-effect">防御510%上昇(極限スキル防御効果3.5倍)</td><td style="white-space:normal;"><a href="characters.html#1289">長宗我部元親（7）(移植不可)</a></td></tr><tr><td><a href="skills.html#月煌侵蝕">月煌侵蝕</a></td><td>45%</td><td>全</td><td class="ht-col-effect">防御 7.6%×防御参加武将数(280人)=2128.0%(人数依存(防)スキル一覧も参照)</td><td style="white-space:normal;"><a href="characters.html#1302">佐竹義宣（3）(C・S2)</a><br><a href="characters.html#1289">長宗我部元親（7）(B・S2)</a><br><a href="characters.html#1287">豊臣秀吉（5）【覇】(A)</a><br><a href="characters.html#1270">藤堂高虎（2）(S1)</a><br><a href="characters.html#1262">最上義光【覇】(S1)</a><br><a href="characters.html#1279">荒木村重（2）(S1)</a><br><a href="characters.html#1280">小早川隆景(C)</a><br><a href="characters.html#1311">斎藤道三（2）【覇】(A)</a><br><a href="characters.html#1316">尼子経久（3）(S2)</a></td></tr><tr><td><a href="characters.html#1265">天限ノ麒麟</a></td><td>45%</td><td>槍・馬・器・焙</td><td class="ht-col-effect">防御150%上昇+破壊150%上昇(防御参加武将数×6.5%加算・模倣不可)</td><td style="white-space:normal;"><a href="characters.html#1265">蒲生氏郷（2）(A・B・C)</a></td></tr><tr><td><a href="characters-kyoku.html#2385">夜叉美濃</a></td><td>50%</td><td>槍・弓・器・鉄</td><td class="ht-col-effect">防御410%上昇+破壊120%上昇</td><td style="white-space:normal;"><a href="characters-kyoku.html#2385">原虎胤(A・B)</a></td></tr><tr><td><a href="characters-kyoku.html#2392">鉄花ノ陣</a></td><td>100%</td><td>追加スキル</td><td class="ht-col-effect">自領以外の加勢戦闘時のみ追加スキルの防御効果2倍(模倣不可)</td><td style="white-space:normal;"><a href="characters-kyoku.html#2392">稲葉一鉄(移植不可)</a></td></tr><tr><td><a href="skills.html#乱界遊泳">乱界遊泳</a></td><td>100%</td><td>槍・馬・砲・器</td><td class="ht-col-effect">防御400%上昇(極限スキル防御効果3.5倍・模倣不可)</td><td style="white-space:normal;"><a href="characters.html#1270">藤堂高虎（2）(移植不可)</a></td></tr><tr><td><a href="skills.html#冥界ノ千里眼">冥界ノ千里眼</a></td><td>100%</td><td>追加スキル</td><td class="ht-col-effect">追加スキルの防御・破壊効果2倍(模倣不可)</td><td style="white-space:normal;"><a href="characters.html#1230">大谷吉継（2）(移植不可)</a></td></tr><tr><td><a href="skills.html#不屈ノ天弓">不屈ノ天弓</a></td><td>100%</td><td>追加スキル</td><td class="ht-col-effect">自領以外の加勢戦闘時のみ追加スキルの防御効果2.5倍(模倣不可)</td><td style="white-space:normal;"><a href="characters.html#1254">六角承禎（2）(移植不可)</a></td></tr><tr><td><a href="skills.html#天封界斬">天封界斬</a></td><td>30%</td><td>槍・弓・砲・器</td><td class="ht-col-effect">防御 3.6%×防御参加武将数(280人)=1008.0%(90人以下で1.5倍、TR別データは未確認)</td><td style="white-space:normal;"><a href="characters.html#1234">徳川秀忠(A・B)</a></td></tr><tr><td><a href="skills.html#西天ノ仁星">西天ノ仁星</a></td><td>100%</td><td>追加スキル</td><td class="ht-col-effect">自領以外の加勢戦闘時のみ追加スキルの防御効果2.5倍(模倣不可)</td><td style="white-space:normal;"><a href="characters.html#1280">小早川隆景(移植不可)</a></td></tr>
+<tr><td><a href="skills.html#月煌侵蝕">月煌侵蝕</a></td><td>45%</td><td>全</td><td class="ht-col-effect">防御 7.6%×防御参加武将数(280人)=2128.0%(人数依存(防)スキル一覧も参照)</td><td style="white-space:normal;"><a href="characters.html#1302">佐竹義宣（3）(C・S2)</a><br><a href="characters.html#1289">長宗我部元親（7）(B・S2)</a><br><a href="characters.html#1287">豊臣秀吉（5）【覇】(A)</a><br><a href="characters.html#1270">藤堂高虎（2）(S1)</a><br><a href="characters.html#1262">最上義光【覇】(S1)</a><br><a href="characters.html#1279">荒木村重（2）(S1)</a><br><a href="characters.html#1280">小早川隆景(C)</a><br><a href="characters.html#1311">斎藤道三（2）【覇】(A)</a><br><a href="characters.html#1316">尼子経久（3）(S2)</a></td></tr><tr><td><a href="skills.html#天封界斬">天封界斬</a></td><td>30%</td><td>槍・弓・砲・器</td><td class="ht-col-effect">防御 3.6%×防御参加武将数(280人)=1008.0%(90人以下で1.5倍、TR別データは未確認)</td><td style="white-space:normal;"><a href="characters.html#1234">徳川秀忠(A・B)</a></td></tr><tr><td><a href="characters.html#1289">蓋方軍慮</a></td><td>100%</td><td>槍・砲・器</td><td class="ht-col-effect">防御510%上昇(極限スキル防御効果3.5倍)</td><td style="white-space:normal;" class="src-allnotrans"><a href="characters.html#1289">長宗我部元親（7）(移植不可)</a></td></tr><tr><td><a href="characters-kyoku.html#2385">夜叉美濃</a></td><td>50%</td><td>槍・弓・器・鉄</td><td class="ht-col-effect">防御410%上昇+破壊120%上昇</td><td style="white-space:normal;"><a href="characters-kyoku.html#2385">原虎胤(A・B)</a></td></tr><tr><td><a href="skills.html#乱界遊泳">乱界遊泳</a></td><td>100%</td><td>槍・馬・砲・器</td><td class="ht-col-effect">防御400%上昇(極限スキル防御効果3.5倍・模倣不可)</td><td style="white-space:normal;" class="src-allnotrans"><a href="characters.html#1270">藤堂高虎（2）(移植不可)</a></td></tr><tr><td><a href="skills.html#筋骨隆々">筋骨隆々</a></td><td>9%</td><td>全</td><td class="ht-col-effect">攻撃270%上昇+防御270%上昇(合成専用スキルのためLV1の値。鍛錬の段は存在しない)</td><td style="white-space:normal;"><a href="characters.html#10067">相楽左之助【覇】(B)</a></td></tr><tr><td><a href="characters.html#1265">天限ノ麒麟</a></td><td>45%</td><td>槍・馬・器・焙</td><td class="ht-col-effect">防御150%上昇+破壊150%上昇(防御参加武将数×6.5%加算・模倣不可)</td><td style="white-space:normal;"><a href="characters.html#1265">蒲生氏郷（2）(A・B・C)</a></td></tr><tr><td><a href="characters-kyoku.html#2392">鉄花ノ陣</a></td><td>100%</td><td>追加スキル</td><td class="ht-col-effect">自領以外の加勢戦闘時のみ追加スキルの防御効果2倍(模倣不可)</td><td style="white-space:normal;" class="src-allnotrans"><a href="characters-kyoku.html#2392">稲葉一鉄(移植不可)</a></td></tr><tr><td><a href="skills.html#冥界ノ千里眼">冥界ノ千里眼</a></td><td>100%</td><td>追加スキル</td><td class="ht-col-effect">追加スキルの防御・破壊効果2倍(模倣不可)</td><td style="white-space:normal;" class="src-allnotrans"><a href="characters.html#1230">大谷吉継（2）(移植不可)</a></td></tr><tr><td><a href="skills.html#不屈ノ天弓">不屈ノ天弓</a></td><td>100%</td><td>追加スキル</td><td class="ht-col-effect">自領以外の加勢戦闘時のみ追加スキルの防御効果2.5倍(模倣不可)</td><td style="white-space:normal;" class="src-allnotrans"><a href="characters.html#1254">六角承禎（2）(移植不可)</a></td></tr><tr><td><a href="skills.html#西天ノ仁星">西天ノ仁星</a></td><td>100%</td><td>追加スキル</td><td class="ht-col-effect">自領以外の加勢戦闘時のみ追加スキルの防御効果2.5倍(模倣不可)</td><td style="white-space:normal;" class="src-allnotrans"><a href="characters.html#1280">小早川隆景(移植不可)</a></td></tr>
 <!-- PRERENDER:list:htList:end -->
 </tbody>
       </table>
@@ -219,16 +223,34 @@
     return String(slot||'').split('・').some(function(t){ return t.trim().indexOf('S2') === 0; });
   }
 
+  // LV10の効果文に出てくる%のうち一番大きい値。一覧の並び替えに使う
+  // (2026-08-16、ユーザー依頼)。%が無いスキルは0として最後に回る。
+  function htMaxEffect(s){
+    const t = String(s.lv10Effect || '');
+    const re = /([0-9.]+)\s*%/g;
+    let max = 0, m;
+    while((m = re.exec(t)) !== null){
+      const v = parseFloat(m[1]);
+      if(!isNaN(v) && v > max) max = v;
+    }
+    return max;
+  }
+
   function htRender(){
     const el = document.getElementById('htList');
     const q = document.getElementById('htSearchBox').value.trim().toLowerCase();
     const list = heitanSkills.filter(function(s){ return htMatchesSearch(s, q); });
+    list.sort(function(a, b){ return htMaxEffect(b) - htMaxEffect(a); });
     if(list.length === 0){
       el.innerHTML = '<tr><td colspan="5" style="text-align:center;color:var(--muted);">該当するスキルが見つかりません</td></tr>';
       return;
     }
     el.innerHTML = list.map(function(s){
       const visibleSources = htHideS2 ? (s.sourceCharacters || []).filter(function(c){ return !htIsS2Slot(c.slot); }) : (s.sourceCharacters || []);
+      const allNoTrans = visibleSources.length > 0
+        && visibleSources.every(function(c){
+             return String(c.slot || '').indexOf('移植不可') >= 0;
+           });
       const sources = visibleSources.map(function(c){
         const dbPage = c.db === 'kyoku' ? 'characters-kyoku.html'
                      : c.db === 'ketsu' ? 'characters-ketsu.html' : 'characters.html';
@@ -236,7 +258,7 @@
       }).join('<br>') || '-';
       return '<tr><td><a href="'+s.skillPage+'">'+htEscapeHtml(s.name)+'</a></td><td>'+htEscapeHtml(s.baseRate||'-')+'</td><td>'+htColorizeMujin(s.target||'-')+'</td>'
         + '<td class="ht-col-effect">'+htColorizeMujin(s.lv10Effect||'-')+'</td>'
-        + '<td style="white-space:normal;">'+sources+'</td></tr>';
+        + '<td style="white-space:normal;"'+(allNoTrans ? ' class="src-allnotrans"' : '')+'>'+sources+'</td></tr>';
     }).join('');
   }
 

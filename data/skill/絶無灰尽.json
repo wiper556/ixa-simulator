@@ -6,16 +6,16 @@
  "effectSummary": "SS/LV10 確率 100% 攻撃 1010%上昇/対象:全　無尽　不屈1\n①攻撃 1010%上昇する\n②無尽を持つため部隊消費コストを-0.5する",
  "categoryLinks": [
   {
-   "href": "skills-mujin.html",
-   "label": "無尽スキル一覧を見る"
+   "href": "skills-mujin-atk.html",
+   "label": "無尽(攻撃)スキル一覧を見る"
   },
   {
    "href": "skills-fukutsu.html",
    "label": "不屈スキル一覧を見る"
   },
   {
-   "href": "skills-cost.html",
-   "label": "コスト減少スキル一覧を見る"
+   "href": "skills-cost-atk.html",
+   "label": "コスト減少(攻撃)スキル一覧を見る"
   }
  ],
  "sourceCharacters": [
@@ -43,14 +43,14 @@
    "slot": "A"
   },
   {
-   "name": "毛利輝元-復刻-【覇】",
-   "no": "10075",
-   "slot": "B"
-  },
-  {
    "name": "細川晴元（2）",
    "no": "1317",
    "slot": "A"
+  },
+  {
+   "name": "毛利輝元-復刻-【覇】",
+   "no": "10075",
+   "slot": "B"
   },
   {
    "name": "藤林長門守",

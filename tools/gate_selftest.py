@@ -96,7 +96,11 @@ def _baseline(repo):
     s = io.open(p, encoding="utf-8").read().rstrip()
     assert s.endswith("]"), "ベースラインの形が想定と違う"
     s = s[:-1].rstrip().rstrip(",")
-    s += ',\n {"cat": "テスト", "sev": "HIGH", "msg": "手で足した"}\n]'
+    # 2026-08-16: ベースラインが空(`[]`)のときに `[,{…}]` という壊れたJSONを
+    # 作っていて、門番が JSONDecodeError で落ち「止まったが理由が違う」になった。
+    # 監査が0件ならベースラインは空になるので、空も正しい状態として扱う。
+    sep = "" if s.rstrip().endswith("[") else ","
+    s += '%s\n {"cat": "テスト", "sev": "HIGH", "msg": "手で足した"}\n]' % sep
     io.open(p, "w", encoding="utf-8", newline="\n").write(s)
     sh(["git", "add", "tools/audit_baseline.json"], repo)
 

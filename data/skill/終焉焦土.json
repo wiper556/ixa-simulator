@@ -11,12 +11,20 @@
    "label": "人数依存(攻)スキル一覧を見る"
   },
   {
-   "href": "skills-mujin.html",
-   "label": "無尽スキル一覧を見る"
+   "href": "skills-mujin-atk.html",
+   "label": "無尽(攻撃)スキル一覧を見る"
   },
   {
-   "href": "skills-cost.html",
-   "label": "コスト減少スキル一覧を見る"
+   "href": "skills-mujin-def.html",
+   "label": "無尽(防御)スキル一覧を見る"
+  },
+  {
+   "href": "skills-cost-atk.html",
+   "label": "コスト減少(攻撃)スキル一覧を見る"
+  },
+  {
+   "href": "skills-cost-def.html",
+   "label": "コスト減少(防御)スキル一覧を見る"
   }
  ],
  "sourceCharacters": [
@@ -26,14 +34,14 @@
    "slot": "S1"
   },
   {
-   "name": "毛利輝元-復刻-【覇】",
-   "no": "10075",
-   "slot": "S1"
-  },
-  {
    "name": "伊達稙宗",
    "no": "1320",
    "slot": "B"
+  },
+  {
+   "name": "毛利輝元-復刻-【覇】",
+   "no": "10075",
+   "slot": "S1"
   }
  ],
  "ownHiddenCandidate": {

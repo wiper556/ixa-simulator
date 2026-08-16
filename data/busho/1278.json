@@ -27,12 +27,20 @@
  "skillDetail": "S/LV10 確率 100% 攻撃 520%上昇 防御 520%上昇/対象:全　無尽\n①攻撃 520%上昇 防御 520%上昇する\n②無尽を持つため部隊消費コストを-0.5する\n③部隊内全武将の兵科対象の全スキルに「砲」対象を追加する",
  "categoryLinks": [
   {
-   "href": "skills-mujin.html",
-   "label": "無尽スキル一覧を見る"
+   "href": "skills-mujin-atk.html",
+   "label": "無尽(攻撃)スキル一覧を見る"
   },
   {
-   "href": "skills-cost.html",
-   "label": "コスト減少スキル一覧を見る"
+   "href": "skills-mujin-def.html",
+   "label": "無尽(防御)スキル一覧を見る"
+  },
+  {
+   "href": "skills-cost-atk.html",
+   "label": "コスト減少(攻撃)スキル一覧を見る"
+  },
+  {
+   "href": "skills-cost-def.html",
+   "label": "コスト減少(防御)スキル一覧を見る"
   }
  ],
  "trTable": [

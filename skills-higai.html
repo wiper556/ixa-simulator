@@ -39,6 +39,10 @@
     background:rgba(255,255,255,0.85); padding:2px 7px; border-radius:4px;
     border:1px solid var(--line); pointer-events:none; user-select:text;
   }
+
+  /* 全員が移植不可の枠だけ薄い赤で塗る(2026-08-16、ユーザー依頼)。
+     1体でも移植できる武将が居れば塗らない。 */
+  .src-allnotrans{ background:#fdeaea; }
 </style>
 <link rel="icon" href="favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="192x192" href="assets/img/icon-192.png">
@@ -192,16 +196,34 @@
     return String(slot||'').split('・').some(function(t){ return t.trim().indexOf('S2') === 0; });
   }
 
+  // LV10の効果文に出てくる%のうち一番大きい値。一覧の並び替えに使う
+  // (2026-08-16、ユーザー依頼)。%が無いスキルは0として最後に回る。
+  function hgMaxEffect(s){
+    const t = String(s.lv10Effect || '');
+    const re = /([0-9.]+)\s*%/g;
+    let max = 0, m;
+    while((m = re.exec(t)) !== null){
+      const v = parseFloat(m[1]);
+      if(!isNaN(v) && v > max) max = v;
+    }
+    return max;
+  }
+
   function hgRender(){
     const el = document.getElementById('hgList');
     const q = document.getElementById('hgSearchBox').value.trim().toLowerCase();
     const list = higaiSkills.filter(function(s){ return hgMatchesSearch(s, q); });
+    list.sort(function(a, b){ return hgMaxEffect(b) - hgMaxEffect(a); });
     if(list.length === 0){
       el.innerHTML = '<tr><td colspan="6" style="text-align:center;color:var(--muted);">該当するスキルが見つかりません</td></tr>';
       return;
     }
     el.innerHTML = list.map(function(s){
       const visibleSources = hgHideS2 ? (s.sourceCharacters || []).filter(function(c){ return !hgIsS2Slot(c.slot); }) : (s.sourceCharacters || []);
+      const allNoTrans = visibleSources.length > 0
+        && visibleSources.every(function(c){
+             return String(c.slot || '').indexOf('移植不可') >= 0;
+           });
       const sources = visibleSources.map(function(c){
         const dbPage = c.db === 'kyoku' ? 'characters-kyoku.html'
                      : c.db === 'ketsu' ? 'characters-ketsu.html' : 'characters.html';
@@ -210,7 +232,7 @@
       return '<tr><td><a href="'+s.skillPage+'">'+hgEscapeHtml(s.name)+'</a></td><td>'+hgEscapeHtml(s.baseRate||'-')+'</td><td>'+hgColorizeMujin(s.target||'-')+'</td>'
         + '<td class="hg-col-reduce">'+hgColorizeMujin(s.reduceEffect||'-')+'</td>'
         + '<td class="hg-col-effect">'+hgColorizeMujin(s.lv10Effect||'-')+'</td>'
-        + '<td style="white-space:normal;">'+sources+'</td></tr>';
+        + '<td style="white-space:normal;"'+(allNoTrans ? ' class="src-allnotrans"' : '')+'>'+sources+'</td></tr>';
     }).join('');
   }
 
