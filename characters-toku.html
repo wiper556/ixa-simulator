@@ -11,73 +11,73 @@
 <style>
   body{background:#ffffff;}
 
-  .kp-search{margin-bottom:14px;}
-  .kp-search input{
+  .tk-search{margin-bottom:14px;}
+  .tk-search input{
     width:100%;font-family:'Zen Kaku Gothic New',sans-serif;font-size:15px;padding:11px 14px;
     background:#fff;border:1px solid var(--line);color:var(--paper);border-radius:5px;
   }
-  .kp-search input:focus{outline:none;border-color:var(--gold);}
+  .tk-search input:focus{outline:none;border-color:var(--gold);}
 
-  .kp-list-table{width:100%;border-collapse:collapse;font-size:12.5px;}
-  .kp-list-table th,.kp-list-table td{border:1px solid var(--line);padding:8px 10px;text-align:center;vertical-align:middle;white-space:nowrap;}
-  .kp-list-table th{background:var(--bg-panel-2);color:var(--muted);font-weight:700;}
-  .kp-list-table tr:hover td{background:var(--bg-panel-2);}
-  .kp-list-table td.kp-col-name{text-align:left;}
-  .kp-list-table td.kp-col-name a{font-family:'Noto Serif JP',serif;font-weight:700;color:var(--paper);text-decoration:none;}
-  .kp-list-table td.kp-col-name a:hover{color:var(--vermillion-bright);}
-  .kp-list-table td.kp-col-effect{text-align:left;white-space:normal;min-width:260px;color:var(--muted);line-height:1.6;}
+  .tk-list-table{width:100%;border-collapse:collapse;font-size:12.5px;}
+  .tk-list-table th,.tk-list-table td{border:1px solid var(--line);padding:8px 10px;text-align:center;vertical-align:middle;white-space:nowrap;}
+  .tk-list-table th{background:var(--bg-panel-2);color:var(--muted);font-weight:700;}
+  .tk-list-table tr:hover td{background:var(--bg-panel-2);}
+  .tk-list-table td.tk-col-name{text-align:left;}
+  .tk-list-table td.tk-col-name a{font-family:'Noto Serif JP',serif;font-weight:700;color:var(--paper);text-decoration:none;}
+  .tk-list-table td.tk-col-name a:hover{color:var(--vermillion-bright);}
+  .tk-list-table td.tk-col-effect{text-align:left;white-space:normal;min-width:260px;color:var(--muted);line-height:1.6;}
 
-  .kp-atkdef-badge{display:inline-block;font-size:11px;font-weight:700;border-radius:4px;padding:2px 8px;white-space:nowrap;}
-  .kp-atkdef-badge.atk{background:rgba(184,64,47,0.12);color:var(--vermillion-bright);}
-  .kp-atkdef-badge.def{background:rgba(46,125,50,0.12);color:#2e7d32;}
-  .kp-atkdef-badge.both{background:rgba(169,124,10,0.15);color:var(--gold-bright);}
-  .kp-atkdef-badge.other{background:rgba(107,114,128,0.12);color:var(--muted);}
+  .tk-atkdef-badge{display:inline-block;font-size:11px;font-weight:700;border-radius:4px;padding:2px 8px;white-space:nowrap;}
+  .tk-atkdef-badge.atk{background:rgba(184,64,47,0.12);color:var(--vermillion-bright);}
+  .tk-atkdef-badge.def{background:rgba(46,125,50,0.12);color:#2e7d32;}
+  .tk-atkdef-badge.both{background:rgba(169,124,10,0.15);color:var(--gold-bright);}
+  .tk-atkdef-badge.other{background:rgba(107,114,128,0.12);color:var(--muted);}
 
-  .kp-branch-badge{
+  .tk-branch-badge{
     display:inline-flex;align-items:center;justify-content:center;width:18px;height:18px;
     font-size:10.5px;font-weight:700;border-radius:3px;background:var(--bg-panel-2);
     border:1px solid var(--line);color:var(--paper);margin:1px;
   }
-  .kp-branch-fallback{font-size:11px;color:var(--muted);white-space:normal;}
+  .tk-branch-fallback{font-size:11px;color:var(--muted);white-space:normal;}
 
-  .kp-subtag{font-size:10px;background:rgba(0,172,193,0.12);color:#00838f;border-radius:10px;padding:1px 7px;font-weight:700;display:inline-block;margin:1px;white-space:nowrap;}
+  .tk-subtag{font-size:10px;background:rgba(0,172,193,0.12);color:#00838f;border-radius:10px;padding:1px 7px;font-weight:700;display:inline-block;margin:1px;white-space:nowrap;}
 
-  .kp-no-result{color:var(--muted);font-size:12px;padding:14px;text-align:center;}
+  .tk-no-result{color:var(--muted);font-size:12px;padding:14px;text-align:center;}
 
-  .kp-detail-head{display:flex;gap:20px;flex-wrap:wrap;margin-bottom:20px;}
-  .kp-detail-img{max-width:100%;width:460px;border-radius:8px;border:1px solid var(--line);}
-  .kp-detail-img-placeholder{
+  .tk-detail-head{display:flex;gap:20px;flex-wrap:wrap;margin-bottom:20px;}
+  .tk-detail-img{max-width:100%;width:460px;border-radius:8px;border:1px solid var(--line);}
+  .tk-detail-img-placeholder{
     width:460px;max-width:100%;height:220px;border-radius:8px;border:1px dashed var(--line);
     display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:13px;
   }
-  .kp-detail-title{font-family:'Noto Serif JP',serif;font-weight:900;font-size:22px;color:var(--paper);}
-  .kp-detail-furigana{font-size:12px;color:var(--muted);margin-left:8px;font-weight:400;}
-  .kp-detail-meta{font-size:13px;color:var(--muted);margin:6px 0 14px;}
+  .tk-detail-title{font-family:'Noto Serif JP',serif;font-weight:900;font-size:22px;color:var(--paper);}
+  .tk-detail-furigana{font-size:12px;color:var(--muted);margin-left:8px;font-weight:400;}
+  .tk-detail-meta{font-size:13px;color:var(--muted);margin:6px 0 14px;}
 
-  .kp-detail-block{margin-bottom:20px;}
-  .kp-detail-block h2{font-family:'Noto Serif JP',serif;font-size:15px;margin:0 0 8px;color:var(--vermillion-bright);border-bottom:1px dashed var(--line);padding-bottom:6px;}
-  .kp-table-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;}
-  .kp-stat-table{width:100%;border-collapse:collapse;font-size:13px;}
-  .kp-stat-table th,.kp-stat-table td{border:1px solid var(--line);padding:8px 10px;text-align:center;white-space:nowrap;}
-  .kp-stat-table th{background:var(--bg-panel-2);color:var(--muted);font-weight:700;}
-  .kp-stat-table td[style*="text-align:left"]{white-space:normal;min-width:220px;}
-  .kp-col-narrow{width:64px;}
-  .kp-synth-cell{display:flex;align-items:center;gap:10px;text-align:left;}
-  .kp-synth-cell .kp-synth-name{flex-shrink:0;}
-  .kp-synth-desc{
+  .tk-detail-block{margin-bottom:20px;}
+  .tk-detail-block h2{font-family:'Noto Serif JP',serif;font-size:15px;margin:0 0 8px;color:var(--vermillion-bright);border-bottom:1px dashed var(--line);padding-bottom:6px;}
+  .tk-table-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;}
+  .tk-stat-table{width:100%;border-collapse:collapse;font-size:13px;}
+  .tk-stat-table th,.tk-stat-table td{border:1px solid var(--line);padding:8px 10px;text-align:center;white-space:nowrap;}
+  .tk-stat-table th{background:var(--bg-panel-2);color:var(--muted);font-weight:700;}
+  .tk-stat-table td[style*="text-align:left"]{white-space:normal;min-width:220px;}
+  .tk-col-narrow{width:64px;}
+  .tk-synth-cell{display:flex;align-items:center;gap:10px;text-align:left;}
+  .tk-synth-cell .tk-synth-name{flex-shrink:0;}
+  .tk-synth-desc{
     width:150px;height:32px;flex-shrink:0;
     font-size:11px;color:var(--muted);line-height:1.4;white-space:normal;text-align:left;
     overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;
   }
 
   @media (max-width:600px){
-    .kp-stat-table{font-size:12px;}
-    .kp-stat-table th,.kp-stat-table td{padding:6px 8px;}
+    .tk-stat-table{font-size:12px;}
+    .tk-stat-table th,.tk-stat-table td{padding:6px 8px;}
   }
-  .kp-skill-name{font-family:'Noto Serif JP',serif;font-weight:700;font-size:15px;color:var(--gold-bright);margin-bottom:6px;}
-  .kp-skill-detail{font-size:13.5px;line-height:1.8;}
-  .kp-illust-credit{font-size:12px;color:var(--muted);text-align:right;}
-  .kp-no-detail{color:var(--muted);font-size:13px;padding:20px;text-align:center;border:1px dashed var(--line);border-radius:8px;}
+  .tk-skill-name{font-family:'Noto Serif JP',serif;font-weight:700;font-size:15px;color:var(--gold-bright);margin-bottom:6px;}
+  .tk-skill-detail{font-size:13.5px;line-height:1.8;}
+  .tk-illust-credit{font-size:12px;color:var(--muted);text-align:right;}
+  .tk-no-detail{color:var(--muted);font-size:13px;padding:20px;text-align:center;border:1px dashed var(--line);border-radius:8px;}
 
   .sim-version-badge{
     position:fixed; bottom:6px; right:8px; z-index:9999;
@@ -136,12 +136,12 @@
     <h1 class="page-title">特武将データベース</h1>
 
     <div id="listView">
-      <div class="kp-search">
+      <div class="tk-search">
         <input type="text" id="tkSearchBox" placeholder="武将名またはカードNo.を入力(例: 伊達成実、2336 など)">
       </div>
       <div id="tkList">
 <!-- PRERENDER:list:start ここから下は tools/prerender.py が自動生成しています。直接編集しないこと -->
-<div class="kp-no-result">該当する武将が見つかりません</div>
+<div class="tk-no-result">該当する武将が見つかりません</div>
 <!-- PRERENDER:list:end -->
 </div>
     </div>
@@ -241,41 +241,41 @@
   }
 
   function tkTroopBranchesHtml(troop){
-    if(!troop || troop === '-') return '<span class="kp-branch-fallback">-</span>';
+    if(!troop || troop === '-') return '<span class="tk-branch-fallback">-</span>';
     const chars = troop.split('').filter(function(c){ return KK_TROOP_BRANCH_CHARS.includes(c); });
-    if(chars.length === 0) return '<span class="kp-branch-fallback">'+tkEscapeHtml(troop)+'</span>';
-    return chars.map(function(c){ return '<span class="kp-branch-badge">'+c+'</span>'; }).join('');
+    if(chars.length === 0) return '<span class="tk-branch-fallback">'+tkEscapeHtml(troop)+'</span>';
+    return chars.map(function(c){ return '<span class="tk-branch-badge">'+c+'</span>'; }).join('');
   }
 
   function tkRenderListRow(g){
     const atkDef = tkAtkDefBadge(g.troop);
     const subTagList = (g.sub || '').split(/\s+/).filter(Boolean);
     const subTags = subTagList.length
-      ? subTagList.map(function(t){ return '<span class="kp-subtag">'+tkColorizeMujin(t)+'</span>'; }).join('')
-      : '<span class="kp-branch-fallback">-</span>';
+      ? subTagList.map(function(t){ return '<span class="tk-subtag">'+tkColorizeMujin(t)+'</span>'; }).join('')
+      : '<span class="tk-branch-fallback">-</span>';
     const detailMark = tkDetailMark(g);
     var thumb = g.imageChar ? ' data-thumb="'+tkEscapeHtml(g.imageChar)+'"' : '';
     var href = 'busho/'+tkEscapeHtml(g.no)+'.html';
     return '<tr'+thumb+' onclick="location.href=\''+href+'\';" style="cursor:pointer;">'
       + '<td>'+tkEscapeHtml(g.no)+'</td>'
-      + '<td class="kp-col-name"><a href="'+href+'">'+tkEscapeHtml(g.name)+'</a>'+detailMark+'</td>'
+      + '<td class="tk-col-name"><a href="'+href+'">'+tkEscapeHtml(g.name)+'</a>'+detailMark+'</td>'
       + '<td>'+tkEscapeHtml(g.ch || '-')+'</td>'
       + '<td>'+(g.cost ?? '?')+'</td>'
-      + '<td><span class="kp-atkdef-badge '+atkDef.cls+'">'+atkDef.label+'</span></td>'
+      + '<td><span class="tk-atkdef-badge '+atkDef.cls+'">'+atkDef.label+'</span></td>'
       + '<td>'+tkTroopBranchesHtml(g.troop)+'</td>'
       + '<td>'+subTags+'</td>'
-      + '<td class="kp-col-effect">'+tkColorizeMujin(g.effect || '-')+'</td>'
+      + '<td class="tk-col-effect">'+tkColorizeMujin(g.effect || '-')+'</td>'
       + '</tr>';
   }
 
   function tkRenderList(list){
     const el = document.getElementById('tkList');
     if(list.length === 0){
-      el.innerHTML = '<div class="kp-no-result">該当する武将が見つかりません</div>';
+      el.innerHTML = '<div class="tk-no-result">該当する武将が見つかりません</div>';
       return;
     }
-    el.innerHTML = '<div class="kp-table-scroll"><table class="kp-list-table">'
-      + '<thead><tr><th>No.</th><th>武将名</th><th>入手章</th><th>コスト</th><th>攻防</th><th>兵科</th><th>特殊</th><th>スキル効果</th></tr></thead>'
+    el.innerHTML = '<div class="tk-table-scroll"><table class="tk-list-table">'
+      + '<thead><tr><th data-sort="no">No.</th><th data-sort="name">武将名</th><th data-sort="ch">入手章</th><th data-sort="cost">コスト</th><th data-sort="troop">攻防</th><th data-sort="sub">兵科</th><th>特殊</th><th>スキル効果</th></tr></thead>'
       + '<tbody>' + list.map(tkRenderListRow).join('') + '</tbody>'
       + '</table></div>';
   }
@@ -297,9 +297,73 @@
     });
   }
 
+
+  /* ============ 列見出しでの並べ替え(2026-08-16 うぐさん指示) ============
+     見出しを押すと 降順 → 昇順 → 既定 と回る。3回押せば元の並び
+     (章の新しい順 → カードNo.)に戻る。
+     並べ替えの鍵は「表に出ている値」に合わせる。攻防・兵科・特殊は
+     セルの見た目そのものではなく元データの文字列で比べる。
+  ============================================================ */
+  var __SORT_STATE = { key: null, dir: 0 };   // dir: -1=降順 1=昇順 0=既定
+
+  function __sortValue(g, key){
+    if (key === 'no')   return parseInt(g.no, 10) || 0;
+    if (key === 'cost') return (g.cost === null || g.cost === undefined)
+                                ? -1 : parseFloat(g.cost);
+    if (key === 'ch')   return -tkChapterSortKey(g.ch);      // 章は新しいほど大きく
+    return (g[key] === null || g[key] === undefined) ? '' : String(g[key]);
+  }
+
+  function __applySort(list){
+    if (!__SORT_STATE.key || __SORT_STATE.dir === 0) return tkSortByChapterThenNo(list);
+    var k = __SORT_STATE.key, d = __SORT_STATE.dir;
+    return list.slice().sort(function(a, b){
+      var va = __sortValue(a, k), vb = __sortValue(b, k);
+      if (typeof va === 'number' && typeof vb === 'number'){
+        if (va !== vb) return (va - vb) * d;
+      } else {
+        var c = String(va).localeCompare(String(vb), 'ja');
+        if (c !== 0) return c * d;
+      }
+      return (parseInt(a.no, 10) || 0) - (parseInt(b.no, 10) || 0);
+    });
+  }
+
+  function __markHeaders(){
+    var ths = document.querySelectorAll('.tk-list-table thead th');
+    for (var i = 0; i < ths.length; i++){
+      var key = ths[i].getAttribute('data-sort');
+      if (!key) continue;
+      var base = ths[i].getAttribute('data-label') || ths[i].textContent;
+      ths[i].setAttribute('data-label', base);
+      ths[i].textContent = base +
+        (__SORT_STATE.key === key && __SORT_STATE.dir === -1 ? ' ▼'
+         : __SORT_STATE.key === key && __SORT_STATE.dir === 1 ? ' ▲' : '');
+    }
+  }
+
+  function __bindSort(){
+    // **表は描画のたびに作り直されるので、th に直接付けない。**
+    // document に1つだけ置いて、押された要素から th を辿る。
+    document.addEventListener('click', function(ev){
+      var th = ev.target.closest ? ev.target.closest('th[data-sort]') : null;
+      if (!th || !th.closest('.tk-list-table')) return;
+      var key = th.getAttribute('data-sort');
+      if (__SORT_STATE.key !== key){ __SORT_STATE.key = key; __SORT_STATE.dir = -1; }
+      else if (__SORT_STATE.dir === -1){ __SORT_STATE.dir = 1; }
+      else { __SORT_STATE.key = null; __SORT_STATE.dir = 0; }
+      tkDoSearch();
+      __markHeaders();
+    });
+    __markHeaders();
+  }
+  if (document.readyState === 'loading')
+    document.addEventListener('DOMContentLoaded', __bindSort);
+  else __bindSort();
+
   function tkDoSearch(){
     const q = document.getElementById('tkSearchBox').value.trim().toLowerCase();
-    const list = tkSortByChapterThenNo(q === '' ? tokuGenerals : tokuGenerals.filter(function(g){
+    const list = __applySort(q === '' ? tokuGenerals : tokuGenerals.filter(function(g){
       return g.name.toLowerCase().includes(q)
         || g.no.includes(q)
         || (g.furigana || '').toLowerCase().includes(q)
@@ -336,27 +400,27 @@
   function tkRenderDetail(g){
     const body = document.getElementById('tkDetailBody');
     if(!tkHasDetail(g)){
-      body.innerHTML = '<h1 class="kp-detail-title">'+tkEscapeHtml(g.name)+'<span class="kp-detail-furigana">No.'+tkEscapeHtml(g.no)+'</span></h1>'
-        + '<p class="kp-detail-meta">コスト'+(g.cost ?? '?')+' ／ '+tkEscapeHtml(g.troop || '-')+(g.sub ? ' ／ '+tkEscapeHtml(g.sub) : '')+'</p>'
-        + '<div class="kp-no-detail">この武将の画像・ステータス・統率の詳細データはまだ登録されていません。<br>スキル概要: '+tkColorizeMujin(g.effect || '-')+'</div>';
+      body.innerHTML = '<h1 class="tk-detail-title">'+tkEscapeHtml(g.name)+'<span class="tk-detail-furigana">No.'+tkEscapeHtml(g.no)+'</span></h1>'
+        + '<p class="tk-detail-meta">コスト'+(g.cost ?? '?')+' ／ '+tkEscapeHtml(g.troop || '-')+(g.sub ? ' ／ '+tkEscapeHtml(g.sub) : '')+'</p>'
+        + '<div class="tk-no-detail">この武将の画像・ステータス・統率の詳細データはまだ登録されていません。<br>スキル概要: '+tkColorizeMujin(g.effect || '-')+'</div>';
       return;
     }
     const imgHtml = g.imageFull
-      ? '<img class="kp-detail-img" src="'+g.imageFull+'" alt="'+tkEscapeHtml(g.name)+'">'
-      : '<div class="kp-detail-img-placeholder">画像未登録</div>';
+      ? '<img class="tk-detail-img" src="'+g.imageFull+'" alt="'+tkEscapeHtml(g.name)+'">'
+      : '<div class="tk-detail-img-placeholder">画像未登録</div>';
     const rankRow = g.rankGrades ? Object.keys(g.rankGrades).map(function(k){
         return '<td>'+(KK_RANK_LABELS[k]||k)+': '+tkEscapeHtml(g.rankGrades[k])+'</td>';
       }).join('') : '';
 
     body.innerHTML =
-      '<div class="kp-detail-head">'
+      '<div class="tk-detail-head">'
         + imgHtml
         + '<div>'
-          + '<h1 class="kp-detail-title">'+tkEscapeHtml(g.name)+(g.furigana ? '<span class="kp-detail-furigana">'+tkEscapeHtml(g.furigana)+'</span>' : '')+'</h1>'
-          + '<p class="kp-detail-meta">No.'+tkEscapeHtml(g.no)+' ／ コスト'+(g.cost ?? '?')+' ／ 指揮兵数'+(g.lv0Troops ?? '?')+'</p>'
-          + '<div class="kp-detail-block">'
+          + '<h1 class="tk-detail-title">'+tkEscapeHtml(g.name)+(g.furigana ? '<span class="tk-detail-furigana">'+tkEscapeHtml(g.furigana)+'</span>' : '')+'</h1>'
+          + '<p class="tk-detail-meta">No.'+tkEscapeHtml(g.no)+' ／ コスト'+(g.cost ?? '?')+' ／ 指揮兵数'+(g.lv0Troops ?? '?')+'</p>'
+          + '<div class="tk-detail-block">'
             + '<h2>ステータス</h2>'
-            + '<div class="kp-table-scroll"><table class="kp-stat-table"><thead><tr><th>攻撃</th><th>防御</th><th>兵法</th></tr></thead>'
+            + '<div class="tk-table-scroll"><table class="tk-stat-table"><thead><tr><th>攻撃</th><th>防御</th><th>兵法</th></tr></thead>'
             + '<tbody><tr>'
               + '<td>'+g.atkBase+(g.atkGrowth?' (+'+g.atkGrowth+')':'')+'</td>'
               + '<td>'+g.defBase+(g.defGrowth?' (+'+g.defGrowth+')':'')+'</td>'
@@ -364,28 +428,28 @@
             + '</tr></tbody></table></div>'
           + '</div>'
           + (g.rankGrades ? (
-            '<div class="kp-detail-block"><h2>統率</h2><div class="kp-table-scroll"><table class="kp-stat-table"><tbody><tr>'+rankRow+'</tr></tbody></table></div></div>'
+            '<div class="tk-detail-block"><h2>統率</h2><div class="tk-table-scroll"><table class="tk-stat-table"><tbody><tr>'+rankRow+'</tr></tbody></table></div></div>'
           ) : '')
         + '</div>'
       + '</div>'
-      + '<div class="kp-detail-block">'
+      + '<div class="tk-detail-block">'
         + '<h2>スキル</h2>'
-        + '<div class="kp-skill-name">'+tkEscapeHtml(g.initialSkill || '-')+'</div>'
-        + '<div class="kp-skill-detail">'+tkColorizeMujin(g.skillDetail || g.effect || '')+'</div>'
-        + (g.mujinNote ? '<div class="kp-skill-detail" style="margin-top:6px;color:var(--muted);">'+tkColorizeMujin(g.mujinNote)+'</div>' : '')
+        + '<div class="tk-skill-name">'+tkEscapeHtml(g.initialSkill || '-')+'</div>'
+        + '<div class="tk-skill-detail">'+tkColorizeMujin(g.skillDetail || g.effect || '')+'</div>'
+        + (g.mujinNote ? '<div class="tk-skill-detail" style="margin-top:6px;color:var(--muted);">'+tkColorizeMujin(g.mujinNote)+'</div>' : '')
         + (g.categoryLinks && g.categoryLinks.length ? g.categoryLinks.map(function(c){
-            return '<div class="kp-skill-detail" style="margin-top:8px;"><a href="'+c.href+'">→ '+tkEscapeHtml(c.label)+'</a></div>';
+            return '<div class="tk-skill-detail" style="margin-top:8px;"><a href="'+c.href+'">→ '+tkEscapeHtml(c.label)+'</a></div>';
           }).join('') : '')
       + '</div>'
       + (g.trTable ? (
-        '<div class="kp-detail-block"><h2>鍛錬レベル別性能</h2>'
-        + '<div class="kp-table-scroll"><table class="kp-stat-table"><thead><tr><th>レベル</th><th class="kp-col-narrow">必要ポイント</th><th>効果</th></tr></thead><tbody>'
-        + tkVisibleTrRows(g.trTable).map(function(row){ return '<tr><td>'+tkEscapeHtml(row.level)+'</td><td class="kp-col-narrow">'+tkEscapeHtml(row.points||'-')+'</td><td style="text-align:left;">'+(row.effect ? tkColorizeMujin(row.effect) : '<span style="color:var(--muted);">未確認</span>')+'</td></tr>'; }).join('')
+        '<div class="tk-detail-block"><h2>鍛錬レベル別性能</h2>'
+        + '<div class="tk-table-scroll"><table class="tk-stat-table"><thead><tr><th>レベル</th><th class="tk-col-narrow">必要ポイント</th><th>効果</th></tr></thead><tbody>'
+        + tkVisibleTrRows(g.trTable).map(function(row){ return '<tr><td>'+tkEscapeHtml(row.level)+'</td><td class="tk-col-narrow">'+tkEscapeHtml(row.points||'-')+'</td><td style="text-align:left;">'+(row.effect ? tkColorizeMujin(row.effect) : '<span style="color:var(--muted);">未確認</span>')+'</td></tr>'; }).join('')
         + '</tbody></table></div></div>'
       ) : '')
       + (g.synthesisTable ? (
-        '<div class="kp-detail-block"><h2>合成素材にした場合の候補スキル</h2>'
-        + '<div class="kp-table-scroll"><table class="kp-stat-table"><thead><tr><th>候補</th><th>初期スキル</th><th>移植後合成候補</th></tr></thead><tbody>'
+        '<div class="tk-detail-block"><h2>合成素材にした場合の候補スキル</h2>'
+        + '<div class="tk-table-scroll"><table class="tk-stat-table"><thead><tr><th>候補</th><th>初期スキル</th><th>移植後合成候補</th></tr></thead><tbody>'
         + g.synthesisTable.map(function(row){
             // 移植前(skill)と移植後(afterSkill)は別スキルのことがあり、性能も異なる。
             // target/rate/effectShort は移植前の性能、after* は移植後の性能を表す。
@@ -393,7 +457,7 @@
             const buildDesc = function(t, r, e){
               const tl = t ? '対象:'+tkColorizeMujin(t)+' ' : '';
               const rl = r ? '確率'+tkEscapeHtml(r)+' ' : '';
-              return (t || r || e) ? '<div class="kp-synth-desc">'+tl+rl+tkColorizeMujin(e||'')+'</div>' : '';
+              return (t || r || e) ? '<div class="tk-synth-desc">'+tl+rl+tkColorizeMujin(e||'')+'</div>' : '';
             };
             const desc = buildDesc(row.target, row.rate, row.effectShort);
             const hasAfterOwn = (row.afterTarget || row.afterRate || row.afterEffectShort);
@@ -401,19 +465,19 @@
             const afterDesc = hasAfterOwn
               ? buildDesc(row.afterTarget || row.target, row.afterRate || row.rate, row.afterEffectShort || row.effectShort)
               : (row.afterSkill === row.skill ? desc : '');
-            const skillLabel = '<div class="kp-synth-cell"><span class="kp-synth-name">'+tkSkillLink(row.skill, row.rank)+'</span>'+desc+'</div>';
-            const afterLabel = row.afterSkill ? ('<div class="kp-synth-cell"><span class="kp-synth-name">'+tkSkillLink(row.afterSkill, row.afterRank)+'</span>'+afterDesc+'</div>') : '-';
+            const skillLabel = '<div class="tk-synth-cell"><span class="tk-synth-name">'+tkSkillLink(row.skill, row.rank)+'</span>'+desc+'</div>';
+            const afterLabel = row.afterSkill ? ('<div class="tk-synth-cell"><span class="tk-synth-name">'+tkSkillLink(row.afterSkill, row.afterRank)+'</span>'+afterDesc+'</div>') : '-';
             return '<tr><td>'+tkEscapeHtml(row.slot)+'</td><td>'+skillLabel+'</td>'
               + '<td>'+afterLabel+'</td></tr>';
           }).join('')
         + '</tbody></table></div>'
-        + (g.synthesisNote ? '<p class="kp-detail-meta" style="margin-top:6px;">'+tkEscapeHtml(g.synthesisNote)+'</p>' : '')
+        + (g.synthesisNote ? '<p class="tk-detail-meta" style="margin-top:6px;">'+tkEscapeHtml(g.synthesisNote)+'</p>' : '')
         + '</div>'
       ) : '')
       // 関連記事。articles を持つ武将だけに出る汎用フィールドで、
       // 見た目は記事一覧(blog.html)と同じ .article-card 系(site.css)をそのまま使う。
       + (g.articles && g.articles.length ? (
-        '<div class="kp-detail-block"><h2>この武将を扱った記事</h2>'
+        '<div class="tk-detail-block"><h2>この武将を扱った記事</h2>'
         + '<ul class="article-list">'
         + g.articles.map(function(a){
             return '<li class="article-card"><a class="article-card-link" href="'+tkEscapeHtml(a.href)+'">'
@@ -427,7 +491,7 @@
           }).join('')
         + '</ul></div>'
       ) : '')
-      + (g.illustrator ? '<p class="kp-illust-credit">Illust. '+tkEscapeHtml(g.illustrator)+'</p>' : '');
+      + (g.illustrator ? '<p class="tk-illust-credit">Illust. '+tkEscapeHtml(g.illustrator)+'</p>' : '');
   }
 
   // ============ 表示切り替え(URLハッシュに応じて一覧/詳細を出し分け) ============

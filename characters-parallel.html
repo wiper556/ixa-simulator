@@ -11,73 +11,73 @@
 <style>
   body{background:#ffffff;}
 
-  .kp-search{margin-bottom:14px;}
-  .kp-search input{
+  .tp-search{margin-bottom:14px;}
+  .tp-search input{
     width:100%;font-family:'Zen Kaku Gothic New',sans-serif;font-size:15px;padding:11px 14px;
     background:#fff;border:1px solid var(--line);color:var(--paper);border-radius:5px;
   }
-  .kp-search input:focus{outline:none;border-color:var(--gold);}
+  .tp-search input:focus{outline:none;border-color:var(--gold);}
 
-  .kp-list-table{width:100%;border-collapse:collapse;font-size:12.5px;}
-  .kp-list-table th,.kp-list-table td{border:1px solid var(--line);padding:8px 10px;text-align:center;vertical-align:middle;white-space:nowrap;}
-  .kp-list-table th{background:var(--bg-panel-2);color:var(--muted);font-weight:700;}
-  .kp-list-table tr:hover td{background:var(--bg-panel-2);}
-  .kp-list-table td.kp-col-name{text-align:left;}
-  .kp-list-table td.kp-col-name a{font-family:'Noto Serif JP',serif;font-weight:700;color:var(--paper);text-decoration:none;}
-  .kp-list-table td.kp-col-name a:hover{color:var(--vermillion-bright);}
-  .kp-list-table td.kp-col-effect{text-align:left;white-space:normal;min-width:260px;color:var(--muted);line-height:1.6;}
+  .tp-list-table{width:100%;border-collapse:collapse;font-size:12.5px;}
+  .tp-list-table th,.tp-list-table td{border:1px solid var(--line);padding:8px 10px;text-align:center;vertical-align:middle;white-space:nowrap;}
+  .tp-list-table th{background:var(--bg-panel-2);color:var(--muted);font-weight:700;}
+  .tp-list-table tr:hover td{background:var(--bg-panel-2);}
+  .tp-list-table td.tp-col-name{text-align:left;}
+  .tp-list-table td.tp-col-name a{font-family:'Noto Serif JP',serif;font-weight:700;color:var(--paper);text-decoration:none;}
+  .tp-list-table td.tp-col-name a:hover{color:var(--vermillion-bright);}
+  .tp-list-table td.tp-col-effect{text-align:left;white-space:normal;min-width:260px;color:var(--muted);line-height:1.6;}
 
-  .kp-atkdef-badge{display:inline-block;font-size:11px;font-weight:700;border-radius:4px;padding:2px 8px;white-space:nowrap;}
-  .kp-atkdef-badge.atk{background:rgba(184,64,47,0.12);color:var(--vermillion-bright);}
-  .kp-atkdef-badge.def{background:rgba(46,125,50,0.12);color:#2e7d32;}
-  .kp-atkdef-badge.both{background:rgba(169,124,10,0.15);color:var(--gold-bright);}
-  .kp-atkdef-badge.other{background:rgba(107,114,128,0.12);color:var(--muted);}
+  .tp-atkdef-badge{display:inline-block;font-size:11px;font-weight:700;border-radius:4px;padding:2px 8px;white-space:nowrap;}
+  .tp-atkdef-badge.atk{background:rgba(184,64,47,0.12);color:var(--vermillion-bright);}
+  .tp-atkdef-badge.def{background:rgba(46,125,50,0.12);color:#2e7d32;}
+  .tp-atkdef-badge.both{background:rgba(169,124,10,0.15);color:var(--gold-bright);}
+  .tp-atkdef-badge.other{background:rgba(107,114,128,0.12);color:var(--muted);}
 
-  .kp-branch-badge{
+  .tp-branch-badge{
     display:inline-flex;align-items:center;justify-content:center;width:18px;height:18px;
     font-size:10.5px;font-weight:700;border-radius:3px;background:var(--bg-panel-2);
     border:1px solid var(--line);color:var(--paper);margin:1px;
   }
-  .kp-branch-fallback{font-size:11px;color:var(--muted);white-space:normal;}
+  .tp-branch-fallback{font-size:11px;color:var(--muted);white-space:normal;}
 
-  .kp-subtag{font-size:10px;background:rgba(0,172,193,0.12);color:#00838f;border-radius:10px;padding:1px 7px;font-weight:700;display:inline-block;margin:1px;white-space:nowrap;}
+  .tp-subtag{font-size:10px;background:rgba(0,172,193,0.12);color:#00838f;border-radius:10px;padding:1px 7px;font-weight:700;display:inline-block;margin:1px;white-space:nowrap;}
 
-  .kp-no-result{color:var(--muted);font-size:12px;padding:14px;text-align:center;}
+  .tp-no-result{color:var(--muted);font-size:12px;padding:14px;text-align:center;}
 
-  .kp-detail-head{display:flex;gap:20px;flex-wrap:wrap;margin-bottom:20px;}
-  .kp-detail-img{max-width:100%;width:460px;border-radius:8px;border:1px solid var(--line);}
-  .kp-detail-img-placeholder{
+  .tp-detail-head{display:flex;gap:20px;flex-wrap:wrap;margin-bottom:20px;}
+  .tp-detail-img{max-width:100%;width:460px;border-radius:8px;border:1px solid var(--line);}
+  .tp-detail-img-placeholder{
     width:460px;max-width:100%;height:220px;border-radius:8px;border:1px dashed var(--line);
     display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:13px;
   }
-  .kp-detail-title{font-family:'Noto Serif JP',serif;font-weight:900;font-size:22px;color:var(--paper);}
-  .kp-detail-furigana{font-size:12px;color:var(--muted);margin-left:8px;font-weight:400;}
-  .kp-detail-meta{font-size:13px;color:var(--muted);margin:6px 0 14px;}
+  .tp-detail-title{font-family:'Noto Serif JP',serif;font-weight:900;font-size:22px;color:var(--paper);}
+  .tp-detail-furigana{font-size:12px;color:var(--muted);margin-left:8px;font-weight:400;}
+  .tp-detail-meta{font-size:13px;color:var(--muted);margin:6px 0 14px;}
 
-  .kp-detail-block{margin-bottom:20px;}
-  .kp-detail-block h2{font-family:'Noto Serif JP',serif;font-size:15px;margin:0 0 8px;color:var(--vermillion-bright);border-bottom:1px dashed var(--line);padding-bottom:6px;}
-  .kp-table-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;}
-  .kp-stat-table{width:100%;border-collapse:collapse;font-size:13px;}
-  .kp-stat-table th,.kp-stat-table td{border:1px solid var(--line);padding:8px 10px;text-align:center;white-space:nowrap;}
-  .kp-stat-table th{background:var(--bg-panel-2);color:var(--muted);font-weight:700;}
-  .kp-stat-table td[style*="text-align:left"]{white-space:normal;min-width:220px;}
-  .kp-col-narrow{width:64px;}
-  .kp-synth-cell{display:flex;align-items:center;gap:10px;text-align:left;}
-  .kp-synth-cell .kp-synth-name{flex-shrink:0;}
-  .kp-synth-desc{
+  .tp-detail-block{margin-bottom:20px;}
+  .tp-detail-block h2{font-family:'Noto Serif JP',serif;font-size:15px;margin:0 0 8px;color:var(--vermillion-bright);border-bottom:1px dashed var(--line);padding-bottom:6px;}
+  .tp-table-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;}
+  .tp-stat-table{width:100%;border-collapse:collapse;font-size:13px;}
+  .tp-stat-table th,.tp-stat-table td{border:1px solid var(--line);padding:8px 10px;text-align:center;white-space:nowrap;}
+  .tp-stat-table th{background:var(--bg-panel-2);color:var(--muted);font-weight:700;}
+  .tp-stat-table td[style*="text-align:left"]{white-space:normal;min-width:220px;}
+  .tp-col-narrow{width:64px;}
+  .tp-synth-cell{display:flex;align-items:center;gap:10px;text-align:left;}
+  .tp-synth-cell .tp-synth-name{flex-shrink:0;}
+  .tp-synth-desc{
     width:150px;height:32px;flex-shrink:0;
     font-size:11px;color:var(--muted);line-height:1.4;white-space:normal;text-align:left;
     overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;
   }
 
   @media (max-width:600px){
-    .kp-stat-table{font-size:12px;}
-    .kp-stat-table th,.kp-stat-table td{padding:6px 8px;}
+    .tp-stat-table{font-size:12px;}
+    .tp-stat-table th,.tp-stat-table td{padding:6px 8px;}
   }
-  .kp-skill-name{font-family:'Noto Serif JP',serif;font-weight:700;font-size:15px;color:var(--gold-bright);margin-bottom:6px;}
-  .kp-skill-detail{font-size:13.5px;line-height:1.8;}
-  .kp-illust-credit{font-size:12px;color:var(--muted);text-align:right;}
-  .kp-no-detail{color:var(--muted);font-size:13px;padding:20px;text-align:center;border:1px dashed var(--line);border-radius:8px;}
+  .tp-skill-name{font-family:'Noto Serif JP',serif;font-weight:700;font-size:15px;color:var(--gold-bright);margin-bottom:6px;}
+  .tp-skill-detail{font-size:13.5px;line-height:1.8;}
+  .tp-illust-credit{font-size:12px;color:var(--muted);text-align:right;}
+  .tp-no-detail{color:var(--muted);font-size:13px;padding:20px;text-align:center;border:1px dashed var(--line);border-radius:8px;}
 
   .sim-version-badge{
     position:fixed; bottom:6px; right:8px; z-index:9999;
@@ -136,12 +136,12 @@
     <h1 class="page-title">天パラレルデータベース</h1>
 
     <div id="listView">
-      <div class="kp-search">
+      <div class="tp-search">
         <input type="text" id="tpSearchBox" placeholder="武将名またはカードNo.を入力(例: 伊達成実、2336 など)">
       </div>
       <div id="tpList">
 <!-- PRERENDER:list:start ここから下は tools/prerender.py が自動生成しています。直接編集しないこと -->
-<div class="kp-table-scroll"><table class="kp-list-table"><thead><tr><th>No.</th><th>武将名</th><th>入手章</th><th>コスト</th><th>攻防</th><th>兵科</th><th>特殊</th><th>スキル効果</th></tr></thead><tbody><tr data-thumb="assets/img/characters/no31310_char.png" onclick="location.href='busho/31310.html';" style="cursor:pointer;"><td>31310</td><td class="kp-col-name"><a href="busho/31310.html">織田信秀【覇】</a> <span style="color:#f5c518;">●</span></td><td>32章</td><td>7</td><td><span class="kp-atkdef-badge atk">攻撃</span></td><td><span class="kp-branch-badge">全</span></td><td><span class="kp-branch-fallback">-</span></td><td class="kp-col-effect"><span style="color:#d15050;font-weight:700;">覇道</span>/追加・極限スキルの攻撃・破壊効果2.5倍</td></tr><tr data-thumb="assets/img/characters/no31311_char.png" onclick="location.href='busho/31311.html';" style="cursor:pointer;"><td>31311</td><td class="kp-col-name"><a href="busho/31311.html">斎藤道三（6）【覇】</a> <span style="color:#f5c518;">●</span></td><td>32章</td><td>6</td><td><span class="kp-atkdef-badge def">防御</span></td><td><span class="kp-branch-badge">全</span></td><td><span class="kp-branch-fallback">-</span></td><td class="kp-col-effect">部隊長時、対象兵科指揮で部隊総防御力55%上昇</td></tr><tr data-thumb="assets/img/characters/no31312_char.png" onclick="location.href='busho/31312.html';" style="cursor:pointer;"><td>31312</td><td class="kp-col-name"><a href="busho/31312.html">今川義元（3）【覇】</a> <span style="color:#f5c518;">●</span></td><td>32章</td><td>6.5</td><td><span class="kp-atkdef-badge atk">攻撃</span></td><td><span class="kp-branch-badge">弓</span></td><td><span class="kp-branch-fallback">-</span></td><td class="kp-col-effect">部隊長かつ自合流時、所属部隊の弓兵科の兵士攻撃力が上昇</td></tr><tr data-thumb="assets/img/characters/no31313_char.png" onclick="location.href='busho/31313.html';" style="cursor:pointer;"><td>31313</td><td class="kp-col-name"><a href="busho/31313.html">松平清康（2）</a> <span style="color:#f5c518;">●</span></td><td>32章</td><td>5.5</td><td><span class="kp-atkdef-badge atk">攻撃</span></td><td><span class="kp-branch-badge">弓</span><span class="kp-branch-badge">器</span><span class="kp-branch-badge">焙</span><span class="kp-branch-badge">騎</span></td><td><span class="kp-branch-fallback">-</span></td><td class="kp-col-effect"><span style="color:#7CB342;font-weight:700;">卓越</span>追加確率-60%だが発動すれば攻撃効果3倍</td></tr><tr data-thumb="assets/img/characters/no31314_char.png" onclick="location.href='busho/31314.html';" style="cursor:pointer;"><td>31314</td><td class="kp-col-name"><a href="busho/31314.html">大内義隆（3）</a> <span style="color:#f5c518;">●</span></td><td>32章</td><td>5</td><td><span class="kp-atkdef-badge def">防御</span></td><td><span class="kp-branch-badge">砲</span><span class="kp-branch-badge">器</span></td><td><span class="kp-branch-fallback">-</span></td><td class="kp-col-effect">防御参加武将数150以下の自領以外の加勢戦闘時、防御効果3倍</td></tr><tr data-thumb="assets/img/characters/no31315_char.png" onclick="location.href='busho/31315.html';" style="cursor:pointer;"><td>31315</td><td class="kp-col-name"><a href="busho/31315.html">北条氏綱（2）</a> <span style="color:#f5c518;">●</span></td><td>32章</td><td>5</td><td><span class="kp-atkdef-badge def">防御</span></td><td><span class="kp-branch-badge">全</span></td><td><span class="kp-branch-fallback">-</span></td><td class="kp-col-effect">陣形内で<span style="color:#7CB342;font-weight:700;">卓越</span>発動した模倣スキル数×150%の全防御上昇</td></tr><tr data-thumb="assets/img/characters/no31316_char.png" onclick="location.href='busho/31316.html';" style="cursor:pointer;"><td>31316</td><td class="kp-col-name"><a href="busho/31316.html">尼子経久（3）</a> <span style="color:#f5c518;">●</span></td><td>32章</td><td>5.5</td><td><span class="kp-atkdef-badge def">防御</span></td><td><span class="kp-branch-fallback">防</span></td><td><span class="kp-branch-fallback">-</span></td><td class="kp-col-effect">自領以外の加勢戦闘時、追加スキルの防御効果2.2倍・極限スキルの防御効果3.2倍</td></tr><tr data-thumb="assets/img/characters/no31317_char.png" onclick="location.href='busho/31317.html';" style="cursor:pointer;"><td>31317</td><td class="kp-col-name"><a href="busho/31317.html">細川晴元（2）</a> <span style="color:#f5c518;">●</span></td><td>32章</td><td>5.5</td><td><span class="kp-atkdef-badge atk">攻撃</span></td><td><span class="kp-branch-badge">弓</span><span class="kp-branch-badge">砲</span><span class="kp-branch-badge">器</span></td><td><span class="kp-branch-fallback">-</span></td><td class="kp-col-effect">対象兵科指揮時、極限スキルの攻撃効果5倍</td></tr><tr data-thumb="assets/img/characters/no31318_char.png" onclick="location.href='busho/31318.html';" style="cursor:pointer;"><td>31318</td><td class="kp-col-name"><a href="busho/31318.html">武田晴信（4）</a> <span style="color:#f5c518;">●</span></td><td>32章</td><td>4</td><td><span class="kp-atkdef-badge atk">攻撃</span></td><td><span class="kp-branch-fallback">攻</span></td><td><span class="kp-branch-fallback">-</span></td><td class="kp-col-effect"><span style="color:#1565c0;font-weight:700;">撤退</span>/追加スキルの攻撃・速度効果3.1倍・自部隊同時攻撃時は最速の部隊移動時間で合流出陣</td></tr><tr data-thumb="assets/img/characters/no31319_char.png" onclick="location.href='busho/31319.html';" style="cursor:pointer;"><td>31319</td><td class="kp-col-name"><a href="busho/31319.html">朝倉宗滴</a> <span style="color:#f5c518;">●</span></td><td>32章</td><td>5</td><td><span class="kp-atkdef-badge def">防御</span></td><td><span class="kp-branch-badge">槍</span><span class="kp-branch-badge">砲</span><span class="kp-branch-badge">器</span></td><td><span class="kp-branch-fallback">-</span></td><td class="kp-col-effect">部隊内の同スキル所持武将数で防御効果が倍増</td></tr><tr data-thumb="assets/img/characters/no31320_char.png" onclick="location.href='busho/31320.html';" style="cursor:pointer;"><td>31320</td><td class="kp-col-name"><a href="busho/31320.html">伊達稙宗</a> <span style="color:#f5c518;">●</span></td><td>32章</td><td>3</td><td><span class="kp-atkdef-badge atk">攻撃</span></td><td><span class="kp-branch-badge">全</span></td><td><span class="kp-branch-fallback">-</span></td><td class="kp-col-effect">攻撃時、敵軍の被害兵数10%増加</td></tr><tr data-thumb="assets/img/characters/no31321_char.png" onclick="location.href='busho/31321.html';" style="cursor:pointer;"><td>31321</td><td class="kp-col-name"><a href="busho/31321.html">六角定頼</a> <span style="color:#f5c518;">●</span></td><td>32章</td><td>5.5</td><td><span class="kp-atkdef-badge atk">攻撃</span></td><td><span class="kp-branch-badge">弓</span><span class="kp-branch-badge">馬</span><span class="kp-branch-badge">焙</span><span class="kp-branch-badge">騎</span></td><td><span class="kp-branch-fallback">-</span></td><td class="kp-col-effect">自軍城主数10以上で攻撃効果3倍</td></tr></tbody></table></div>
+<div class="tp-table-scroll"><table class="tp-list-table"><thead><tr><th data-sort="no">No.</th><th data-sort="name">武将名</th><th data-sort="ch">入手章</th><th data-sort="cost">コスト</th><th data-sort="troop">攻防</th><th data-sort="sub">兵科</th><th>スキル効果</th></tr></thead><tbody><tr data-thumb="assets/img/characters/no31310_char.png" onclick="location.href='busho/31310.html';" style="cursor:pointer;"><td>31310</td><td class="tp-col-name"><a href="busho/31310.html">織田信秀【覇】</a> <span style="color:#f5c518;">●</span></td><td>32章</td><td>7</td><td><span class="tp-atkdef-badge atk">攻撃</span></td><td><span class="tp-branch-badge">全</span></td><td><span class="tp-branch-fallback">-</span></td><td class="tp-col-effect"><span style="color:#d15050;font-weight:700;">覇道</span>/追加・極限スキルの攻撃・破壊効果2.5倍</td></tr><tr data-thumb="assets/img/characters/no31311_char.png" onclick="location.href='busho/31311.html';" style="cursor:pointer;"><td>31311</td><td class="tp-col-name"><a href="busho/31311.html">斎藤道三（6）【覇】</a> <span style="color:#f5c518;">●</span></td><td>32章</td><td>6</td><td><span class="tp-atkdef-badge def">防御</span></td><td><span class="tp-branch-badge">全</span></td><td><span class="tp-branch-fallback">-</span></td><td class="tp-col-effect">部隊長時、対象兵科指揮で部隊総防御力55%上昇</td></tr><tr data-thumb="assets/img/characters/no31312_char.png" onclick="location.href='busho/31312.html';" style="cursor:pointer;"><td>31312</td><td class="tp-col-name"><a href="busho/31312.html">今川義元（3）【覇】</a> <span style="color:#f5c518;">●</span></td><td>32章</td><td>6.5</td><td><span class="tp-atkdef-badge atk">攻撃</span></td><td><span class="tp-branch-badge">弓</span></td><td><span class="tp-branch-fallback">-</span></td><td class="tp-col-effect">部隊長かつ自合流時、所属部隊の弓兵科の兵士攻撃力が上昇</td></tr><tr data-thumb="assets/img/characters/no31313_char.png" onclick="location.href='busho/31313.html';" style="cursor:pointer;"><td>31313</td><td class="tp-col-name"><a href="busho/31313.html">松平清康（2）</a> <span style="color:#f5c518;">●</span></td><td>32章</td><td>5.5</td><td><span class="tp-atkdef-badge atk">攻撃</span></td><td><span class="tp-branch-badge">弓</span><span class="tp-branch-badge">器</span><span class="tp-branch-badge">焙</span><span class="tp-branch-badge">騎</span></td><td><span class="tp-branch-fallback">-</span></td><td class="tp-col-effect"><span style="color:#7CB342;font-weight:700;">卓越</span>追加確率-60%だが発動すれば攻撃効果3倍</td></tr><tr data-thumb="assets/img/characters/no31314_char.png" onclick="location.href='busho/31314.html';" style="cursor:pointer;"><td>31314</td><td class="tp-col-name"><a href="busho/31314.html">大内義隆（3）</a> <span style="color:#f5c518;">●</span></td><td>32章</td><td>5</td><td><span class="tp-atkdef-badge def">防御</span></td><td><span class="tp-branch-badge">砲</span><span class="tp-branch-badge">器</span></td><td><span class="tp-branch-fallback">-</span></td><td class="tp-col-effect">防御参加武将数150以下の自領以外の加勢戦闘時、防御効果3倍</td></tr><tr data-thumb="assets/img/characters/no31315_char.png" onclick="location.href='busho/31315.html';" style="cursor:pointer;"><td>31315</td><td class="tp-col-name"><a href="busho/31315.html">北条氏綱（2）</a> <span style="color:#f5c518;">●</span></td><td>32章</td><td>5</td><td><span class="tp-atkdef-badge def">防御</span></td><td><span class="tp-branch-badge">全</span></td><td><span class="tp-branch-fallback">-</span></td><td class="tp-col-effect">陣形内で<span style="color:#7CB342;font-weight:700;">卓越</span>発動した模倣スキル数×150%の全防御上昇</td></tr><tr data-thumb="assets/img/characters/no31316_char.png" onclick="location.href='busho/31316.html';" style="cursor:pointer;"><td>31316</td><td class="tp-col-name"><a href="busho/31316.html">尼子経久（3）</a> <span style="color:#f5c518;">●</span></td><td>32章</td><td>5.5</td><td><span class="tp-atkdef-badge def">防御</span></td><td><span class="tp-branch-fallback">防</span></td><td><span class="tp-branch-fallback">-</span></td><td class="tp-col-effect">自領以外の加勢戦闘時、追加スキルの防御効果2.2倍・極限スキルの防御効果3.2倍</td></tr><tr data-thumb="assets/img/characters/no31317_char.png" onclick="location.href='busho/31317.html';" style="cursor:pointer;"><td>31317</td><td class="tp-col-name"><a href="busho/31317.html">細川晴元（2）</a> <span style="color:#f5c518;">●</span></td><td>32章</td><td>5.5</td><td><span class="tp-atkdef-badge atk">攻撃</span></td><td><span class="tp-branch-badge">弓</span><span class="tp-branch-badge">砲</span><span class="tp-branch-badge">器</span></td><td><span class="tp-branch-fallback">-</span></td><td class="tp-col-effect">対象兵科指揮時、極限スキルの攻撃効果5倍</td></tr><tr data-thumb="assets/img/characters/no31318_char.png" onclick="location.href='busho/31318.html';" style="cursor:pointer;"><td>31318</td><td class="tp-col-name"><a href="busho/31318.html">武田晴信（4）</a> <span style="color:#f5c518;">●</span></td><td>32章</td><td>4</td><td><span class="tp-atkdef-badge atk">攻撃</span></td><td><span class="tp-branch-fallback">攻</span></td><td><span class="tp-branch-fallback">-</span></td><td class="tp-col-effect"><span style="color:#1565c0;font-weight:700;">撤退</span>/追加スキルの攻撃・速度効果3.1倍・自部隊同時攻撃時は最速の部隊移動時間で合流出陣</td></tr><tr data-thumb="assets/img/characters/no31319_char.png" onclick="location.href='busho/31319.html';" style="cursor:pointer;"><td>31319</td><td class="tp-col-name"><a href="busho/31319.html">朝倉宗滴</a> <span style="color:#f5c518;">●</span></td><td>32章</td><td>5</td><td><span class="tp-atkdef-badge def">防御</span></td><td><span class="tp-branch-badge">槍</span><span class="tp-branch-badge">砲</span><span class="tp-branch-badge">器</span></td><td><span class="tp-branch-fallback">-</span></td><td class="tp-col-effect">部隊内の同スキル所持武将数で防御効果が倍増</td></tr><tr data-thumb="assets/img/characters/no31320_char.png" onclick="location.href='busho/31320.html';" style="cursor:pointer;"><td>31320</td><td class="tp-col-name"><a href="busho/31320.html">伊達稙宗</a> <span style="color:#f5c518;">●</span></td><td>32章</td><td>3</td><td><span class="tp-atkdef-badge atk">攻撃</span></td><td><span class="tp-branch-badge">全</span></td><td><span class="tp-branch-fallback">-</span></td><td class="tp-col-effect">攻撃時、敵軍の被害兵数10%増加</td></tr><tr data-thumb="assets/img/characters/no31321_char.png" onclick="location.href='busho/31321.html';" style="cursor:pointer;"><td>31321</td><td class="tp-col-name"><a href="busho/31321.html">六角定頼</a> <span style="color:#f5c518;">●</span></td><td>32章</td><td>5.5</td><td><span class="tp-atkdef-badge atk">攻撃</span></td><td><span class="tp-branch-badge">弓</span><span class="tp-branch-badge">馬</span><span class="tp-branch-badge">焙</span><span class="tp-branch-badge">騎</span></td><td><span class="tp-branch-fallback">-</span></td><td class="tp-col-effect">自軍城主数10以上で攻撃効果3倍</td></tr></tbody></table></div>
 <!-- PRERENDER:list:end -->
 </div>
     </div>
@@ -288,41 +288,41 @@
   }
 
   function tpTroopBranchesHtml(troop){
-    if(!troop || troop === '-') return '<span class="kp-branch-fallback">-</span>';
+    if(!troop || troop === '-') return '<span class="tp-branch-fallback">-</span>';
     const chars = troop.split('').filter(function(c){ return KK_TROOP_BRANCH_CHARS.includes(c); });
-    if(chars.length === 0) return '<span class="kp-branch-fallback">'+tpEscapeHtml(troop)+'</span>';
-    return chars.map(function(c){ return '<span class="kp-branch-badge">'+c+'</span>'; }).join('');
+    if(chars.length === 0) return '<span class="tp-branch-fallback">'+tpEscapeHtml(troop)+'</span>';
+    return chars.map(function(c){ return '<span class="tp-branch-badge">'+c+'</span>'; }).join('');
   }
 
   function tpRenderListRow(g){
     const atkDef = tpAtkDefBadge(g.troop);
     const subTagList = (g.sub || '').split(/\s+/).filter(Boolean);
     const subTags = subTagList.length
-      ? subTagList.map(function(t){ return '<span class="kp-subtag">'+tpColorizeMujin(t)+'</span>'; }).join('')
-      : '<span class="kp-branch-fallback">-</span>';
+      ? subTagList.map(function(t){ return '<span class="tp-subtag">'+tpColorizeMujin(t)+'</span>'; }).join('')
+      : '<span class="tp-branch-fallback">-</span>';
     const detailMark = tpDetailMark(g);
     var thumb = g.imageChar ? ' data-thumb="'+tpEscapeHtml(g.imageChar)+'"' : '';
     var href = 'busho/'+tpEscapeHtml(g.no)+'.html';
     return '<tr'+thumb+' onclick="location.href=\''+href+'\';" style="cursor:pointer;">'
       + '<td>'+tpEscapeHtml(g.no)+'</td>'
-      + '<td class="kp-col-name"><a href="'+href+'">'+tpEscapeHtml(g.name)+'</a>'+detailMark+'</td>'
+      + '<td class="tp-col-name"><a href="'+href+'">'+tpEscapeHtml(g.name)+'</a>'+detailMark+'</td>'
       + '<td>'+tpEscapeHtml(g.ch || '-')+'</td>'
       + '<td>'+(g.cost ?? '?')+'</td>'
-      + '<td><span class="kp-atkdef-badge '+atkDef.cls+'">'+atkDef.label+'</span></td>'
+      + '<td><span class="tp-atkdef-badge '+atkDef.cls+'">'+atkDef.label+'</span></td>'
       + '<td>'+tpTroopBranchesHtml(g.troop)+'</td>'
       + '<td>'+subTags+'</td>'
-      + '<td class="kp-col-effect">'+tpColorizeMujin(g.effect || '-')+'</td>'
+      + '<td class="tp-col-effect">'+tpColorizeMujin(g.effect || '-')+'</td>'
       + '</tr>';
   }
 
   function tpRenderList(list){
     const el = document.getElementById('tpList');
     if(list.length === 0){
-      el.innerHTML = '<div class="kp-no-result">該当する武将が見つかりません</div>';
+      el.innerHTML = '<div class="tp-no-result">該当する武将が見つかりません</div>';
       return;
     }
-    el.innerHTML = '<div class="kp-table-scroll"><table class="kp-list-table">'
-      + '<thead><tr><th>No.</th><th>武将名</th><th>入手章</th><th>コスト</th><th>攻防</th><th>兵科</th><th>特殊</th><th>スキル効果</th></tr></thead>'
+    el.innerHTML = '<div class="tp-table-scroll"><table class="tp-list-table">'
+      + '<thead><tr><th data-sort=\"no\">No.</th><th data-sort=\"name\">武将名</th><th data-sort=\"ch\">入手章</th><th data-sort=\"cost\">コスト</th><th data-sort=\"troop\">攻防</th><th data-sort=\"sub\">兵科</th><th>スキル効果</th></tr></thead>'
       + '<tbody>' + list.map(tpRenderListRow).join('') + '</tbody>'
       + '</table></div>';
   }
@@ -344,9 +344,73 @@
     });
   }
 
+
+  /* ============ 列見出しでの並べ替え(2026-08-16 うぐさん指示) ============
+     見出しを押すと 降順 → 昇順 → 既定 と回る。3回押せば元の並び
+     (章の新しい順 → カードNo.)に戻る。
+     並べ替えの鍵は「表に出ている値」に合わせる。攻防・兵科・特殊は
+     セルの見た目そのものではなく元データの文字列で比べる。
+  ============================================================ */
+  var __SORT_STATE = { key: null, dir: 0 };   // dir: -1=降順 1=昇順 0=既定
+
+  function __sortValue(g, key){
+    if (key === 'no')   return parseInt(g.no, 10) || 0;
+    if (key === 'cost') return (g.cost === null || g.cost === undefined)
+                                ? -1 : parseFloat(g.cost);
+    if (key === 'ch')   return -tpChapterSortKey(g.ch);      // 章は新しいほど大きく
+    return (g[key] === null || g[key] === undefined) ? '' : String(g[key]);
+  }
+
+  function __applySort(list){
+    if (!__SORT_STATE.key || __SORT_STATE.dir === 0) return tpSortByChapterThenNo(list);
+    var k = __SORT_STATE.key, d = __SORT_STATE.dir;
+    return list.slice().sort(function(a, b){
+      var va = __sortValue(a, k), vb = __sortValue(b, k);
+      if (typeof va === 'number' && typeof vb === 'number'){
+        if (va !== vb) return (va - vb) * d;
+      } else {
+        var c = String(va).localeCompare(String(vb), 'ja');
+        if (c !== 0) return c * d;
+      }
+      return (parseInt(a.no, 10) || 0) - (parseInt(b.no, 10) || 0);
+    });
+  }
+
+  function __markHeaders(){
+    var ths = document.querySelectorAll('.tp-list-table thead th');
+    for (var i = 0; i < ths.length; i++){
+      var key = ths[i].getAttribute('data-sort');
+      if (!key) continue;
+      var base = ths[i].getAttribute('data-label') || ths[i].textContent;
+      ths[i].setAttribute('data-label', base);
+      ths[i].textContent = base +
+        (__SORT_STATE.key === key && __SORT_STATE.dir === -1 ? ' ▼'
+         : __SORT_STATE.key === key && __SORT_STATE.dir === 1 ? ' ▲' : '');
+    }
+  }
+
+  function __bindSort(){
+    // **表は描画のたびに作り直されるので、th に直接付けない。**
+    // document に1つだけ置いて、押された要素から th を辿る。
+    document.addEventListener('click', function(ev){
+      var th = ev.target.closest ? ev.target.closest('th[data-sort]') : null;
+      if (!th || !th.closest('.tp-list-table')) return;
+      var key = th.getAttribute('data-sort');
+      if (__SORT_STATE.key !== key){ __SORT_STATE.key = key; __SORT_STATE.dir = -1; }
+      else if (__SORT_STATE.dir === -1){ __SORT_STATE.dir = 1; }
+      else { __SORT_STATE.key = null; __SORT_STATE.dir = 0; }
+      tpDoSearch();
+      __markHeaders();
+    });
+    __markHeaders();
+  }
+  if (document.readyState === 'loading')
+    document.addEventListener('DOMContentLoaded', __bindSort);
+  else __bindSort();
+
   function tpDoSearch(){
     const q = document.getElementById('tpSearchBox').value.trim().toLowerCase();
-    const list = tpSortByChapterThenNo(q === '' ? parallelGenerals : parallelGenerals.filter(function(g){
+    const list = __applySort(q === '' ? parallelGenerals : parallelGenerals.filter(function(g){
       return g.name.toLowerCase().includes(q)
         || g.no.includes(q)
         || (g.furigana || '').toLowerCase().includes(q)
@@ -383,27 +447,27 @@
   function tpRenderDetail(g){
     const body = document.getElementById('tpDetailBody');
     if(!tpHasDetail(g)){
-      body.innerHTML = '<h1 class="kp-detail-title">'+tpEscapeHtml(g.name)+'<span class="kp-detail-furigana">No.'+tpEscapeHtml(g.no)+'</span></h1>'
-        + '<p class="kp-detail-meta">コスト'+(g.cost ?? '?')+' ／ '+tpEscapeHtml(g.troop || '-')+(g.sub ? ' ／ '+tpEscapeHtml(g.sub) : '')+'</p>'
-        + '<div class="kp-no-detail">この武将の画像・ステータス・統率の詳細データはまだ登録されていません。<br>スキル概要: '+tpColorizeMujin(g.effect || '-')+'</div>';
+      body.innerHTML = '<h1 class="tp-detail-title">'+tpEscapeHtml(g.name)+'<span class="tp-detail-furigana">No.'+tpEscapeHtml(g.no)+'</span></h1>'
+        + '<p class="tp-detail-meta">コスト'+(g.cost ?? '?')+' ／ '+tpEscapeHtml(g.troop || '-')+(g.sub ? ' ／ '+tpEscapeHtml(g.sub) : '')+'</p>'
+        + '<div class="tp-no-detail">この武将の画像・ステータス・統率の詳細データはまだ登録されていません。<br>スキル概要: '+tpColorizeMujin(g.effect || '-')+'</div>';
       return;
     }
     const imgHtml = g.imageFull
-      ? '<img class="kp-detail-img" src="'+g.imageFull+'" alt="'+tpEscapeHtml(g.name)+'">'
-      : '<div class="kp-detail-img-placeholder">画像未登録</div>';
+      ? '<img class="tp-detail-img" src="'+g.imageFull+'" alt="'+tpEscapeHtml(g.name)+'">'
+      : '<div class="tp-detail-img-placeholder">画像未登録</div>';
     const rankRow = g.rankGrades ? Object.keys(g.rankGrades).map(function(k){
         return '<td>'+(KK_RANK_LABELS[k]||k)+': '+tpEscapeHtml(g.rankGrades[k])+'</td>';
       }).join('') : '';
 
     body.innerHTML =
-      '<div class="kp-detail-head">'
+      '<div class="tp-detail-head">'
         + imgHtml
         + '<div>'
-          + '<h1 class="kp-detail-title">'+tpEscapeHtml(g.name)+(g.furigana ? '<span class="kp-detail-furigana">'+tpEscapeHtml(g.furigana)+'</span>' : '')+'</h1>'
-          + '<p class="kp-detail-meta">No.'+tpEscapeHtml(g.no)+' ／ コスト'+(g.cost ?? '?')+' ／ 指揮兵数'+(g.lv0Troops ?? '?')+'</p>'
-          + '<div class="kp-detail-block">'
+          + '<h1 class="tp-detail-title">'+tpEscapeHtml(g.name)+(g.furigana ? '<span class="tp-detail-furigana">'+tpEscapeHtml(g.furigana)+'</span>' : '')+'</h1>'
+          + '<p class="tp-detail-meta">No.'+tpEscapeHtml(g.no)+' ／ コスト'+(g.cost ?? '?')+' ／ 指揮兵数'+(g.lv0Troops ?? '?')+'</p>'
+          + '<div class="tp-detail-block">'
             + '<h2>ステータス</h2>'
-            + '<div class="kp-table-scroll"><table class="kp-stat-table"><thead><tr><th>攻撃</th><th>防御</th><th>兵法</th></tr></thead>'
+            + '<div class="tp-table-scroll"><table class="tp-stat-table"><thead><tr><th>攻撃</th><th>防御</th><th>兵法</th></tr></thead>'
             + '<tbody><tr>'
               + '<td>'+g.atkBase+(g.atkGrowth?' (+'+g.atkGrowth+')':'')+'</td>'
               + '<td>'+g.defBase+(g.defGrowth?' (+'+g.defGrowth+')':'')+'</td>'
@@ -411,28 +475,28 @@
             + '</tr></tbody></table></div>'
           + '</div>'
           + (g.rankGrades ? (
-            '<div class="kp-detail-block"><h2>統率</h2><div class="kp-table-scroll"><table class="kp-stat-table"><tbody><tr>'+rankRow+'</tr></tbody></table></div></div>'
+            '<div class="tp-detail-block"><h2>統率</h2><div class="tp-table-scroll"><table class="tp-stat-table"><tbody><tr>'+rankRow+'</tr></tbody></table></div></div>'
           ) : '')
         + '</div>'
       + '</div>'
-      + '<div class="kp-detail-block">'
+      + '<div class="tp-detail-block">'
         + '<h2>スキル</h2>'
-        + '<div class="kp-skill-name">'+tpEscapeHtml(g.initialSkill || '-')+'</div>'
-        + '<div class="kp-skill-detail">'+tpColorizeMujin(g.skillDetail || g.effect || '')+'</div>'
-        + (g.mujinNote ? '<div class="kp-skill-detail" style="margin-top:6px;color:var(--muted);">'+tpColorizeMujin(g.mujinNote)+'</div>' : '')
+        + '<div class="tp-skill-name">'+tpEscapeHtml(g.initialSkill || '-')+'</div>'
+        + '<div class="tp-skill-detail">'+tpColorizeMujin(g.skillDetail || g.effect || '')+'</div>'
+        + (g.mujinNote ? '<div class="tp-skill-detail" style="margin-top:6px;color:var(--muted);">'+tpColorizeMujin(g.mujinNote)+'</div>' : '')
         + (g.categoryLinks && g.categoryLinks.length ? g.categoryLinks.map(function(c){
-            return '<div class="kp-skill-detail" style="margin-top:8px;"><a href="'+c.href+'">→ '+tpEscapeHtml(c.label)+'</a></div>';
+            return '<div class="tp-skill-detail" style="margin-top:8px;"><a href="'+c.href+'">→ '+tpEscapeHtml(c.label)+'</a></div>';
           }).join('') : '')
       + '</div>'
       + (g.trTable ? (
-        '<div class="kp-detail-block"><h2>鍛錬レベル別性能</h2>'
-        + '<div class="kp-table-scroll"><table class="kp-stat-table"><thead><tr><th>レベル</th><th class="kp-col-narrow">必要ポイント</th><th>効果</th></tr></thead><tbody>'
-        + tpVisibleTrRows(g.trTable).map(function(row){ return '<tr><td>'+tpEscapeHtml(row.level)+'</td><td class="kp-col-narrow">'+tpEscapeHtml(row.points||'-')+'</td><td style="text-align:left;">'+(row.effect ? tpColorizeMujin(row.effect) : '<span style="color:var(--muted);">未確認</span>')+'</td></tr>'; }).join('')
+        '<div class="tp-detail-block"><h2>鍛錬レベル別性能</h2>'
+        + '<div class="tp-table-scroll"><table class="tp-stat-table"><thead><tr><th>レベル</th><th class="tp-col-narrow">必要ポイント</th><th>効果</th></tr></thead><tbody>'
+        + tpVisibleTrRows(g.trTable).map(function(row){ return '<tr><td>'+tpEscapeHtml(row.level)+'</td><td class="tp-col-narrow">'+tpEscapeHtml(row.points||'-')+'</td><td style="text-align:left;">'+(row.effect ? tpColorizeMujin(row.effect) : '<span style="color:var(--muted);">未確認</span>')+'</td></tr>'; }).join('')
         + '</tbody></table></div></div>'
       ) : '')
       + (g.synthesisTable ? (
-        '<div class="kp-detail-block"><h2>合成素材にした場合の候補スキル</h2>'
-        + '<div class="kp-table-scroll"><table class="kp-stat-table"><thead><tr><th>候補</th><th>初期スキル</th><th>移植後合成候補</th></tr></thead><tbody>'
+        '<div class="tp-detail-block"><h2>合成素材にした場合の候補スキル</h2>'
+        + '<div class="tp-table-scroll"><table class="tp-stat-table"><thead><tr><th>候補</th><th>初期スキル</th><th>移植後合成候補</th></tr></thead><tbody>'
         + g.synthesisTable.map(function(row){
             // 移植前(skill)と移植後(afterSkill)は別スキルのことがあり、性能も異なる。
             // target/rate/effectShort は移植前の性能、after* は移植後の性能を表す。
@@ -440,7 +504,7 @@
             const buildDesc = function(t, r, e){
               const tl = t ? '対象:'+tpColorizeMujin(t)+' ' : '';
               const rl = r ? '確率'+tpEscapeHtml(r)+' ' : '';
-              return (t || r || e) ? '<div class="kp-synth-desc">'+tl+rl+tpColorizeMujin(e||'')+'</div>' : '';
+              return (t || r || e) ? '<div class="tp-synth-desc">'+tl+rl+tpColorizeMujin(e||'')+'</div>' : '';
             };
             const desc = buildDesc(row.target, row.rate, row.effectShort);
             const hasAfterOwn = (row.afterTarget || row.afterRate || row.afterEffectShort);
@@ -448,19 +512,19 @@
             const afterDesc = hasAfterOwn
               ? buildDesc(row.afterTarget || row.target, row.afterRate || row.rate, row.afterEffectShort || row.effectShort)
               : (row.afterSkill === row.skill ? desc : '');
-            const skillLabel = '<div class="kp-synth-cell"><span class="kp-synth-name">'+tpSkillLink(row.skill, row.rank)+'</span>'+desc+'</div>';
-            const afterLabel = row.afterSkill ? ('<div class="kp-synth-cell"><span class="kp-synth-name">'+tpSkillLink(row.afterSkill, row.afterRank)+'</span>'+afterDesc+'</div>') : '-';
+            const skillLabel = '<div class="tp-synth-cell"><span class="tp-synth-name">'+tpSkillLink(row.skill, row.rank)+'</span>'+desc+'</div>';
+            const afterLabel = row.afterSkill ? ('<div class="tp-synth-cell"><span class="tp-synth-name">'+tpSkillLink(row.afterSkill, row.afterRank)+'</span>'+afterDesc+'</div>') : '-';
             return '<tr><td>'+tpEscapeHtml(row.slot)+'</td><td>'+skillLabel+'</td>'
               + '<td>'+afterLabel+'</td></tr>';
           }).join('')
         + '</tbody></table></div>'
-        + (g.synthesisNote ? '<p class="kp-detail-meta" style="margin-top:6px;">'+tpEscapeHtml(g.synthesisNote)+'</p>' : '')
+        + (g.synthesisNote ? '<p class="tp-detail-meta" style="margin-top:6px;">'+tpEscapeHtml(g.synthesisNote)+'</p>' : '')
         + '</div>'
       ) : '')
       // 関連記事。articles を持つ武将だけに出る汎用フィールドで、
       // 見た目は記事一覧(blog.html)と同じ .article-card 系(site.css)をそのまま使う。
       + (g.articles && g.articles.length ? (
-        '<div class="kp-detail-block"><h2>この武将を扱った記事</h2>'
+        '<div class="tp-detail-block"><h2>この武将を扱った記事</h2>'
         + '<ul class="article-list">'
         + g.articles.map(function(a){
             return '<li class="article-card"><a class="article-card-link" href="'+tpEscapeHtml(a.href)+'">'
@@ -474,7 +538,7 @@
           }).join('')
         + '</ul></div>'
       ) : '')
-      + (g.illustrator ? '<p class="kp-illust-credit">Illust. '+tpEscapeHtml(g.illustrator)+'</p>' : '');
+      + (g.illustrator ? '<p class="tp-illust-credit">Illust. '+tpEscapeHtml(g.illustrator)+'</p>' : '');
   }
 
   // ============ 表示切り替え(URLハッシュに応じて一覧/詳細を出し分け) ============
