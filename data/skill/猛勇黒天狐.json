@@ -1,0 +1,25 @@
+{
+ "name": "猛勇黒天狐",
+ "rank": "S",
+ "baseRate": 25,
+ "target": "全",
+ "effectSummary": "S/LV10 確率 25% 防御 45%上昇/対象:全\n①防御 45%上昇する",
+ "categoryLinks": [],
+ "sourceCharacters": [
+  {
+   "name": "最上義光（2）",
+   "no": "1029",
+   "slot": "移植不可"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 25% / 防御 45%上昇"
+  }
+ ],
+ "notes": [
+  "A-3-9「武将自身の初期スキル(S以上)は無条件にページを作る」により2026-08-16に一括作成。内容は data/busho/1029.json の skillDetail / trTable からの転記で、新しい事実は持ち込んでいない。"
+ ]
+}

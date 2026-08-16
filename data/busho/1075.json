@@ -1,0 +1,49 @@
+{
+ "name": "加藤清正（2）",
+ "no": "1075",
+ "ch": "12章",
+ "cost": 4,
+ "troop": "槍馬攻",
+ "sub": "",
+ "effect": "槍馬部隊の攻撃力上昇",
+ "furigana": "かとうきよまさ",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1075_full.png",
+ "imageChar": "assets/img/characters/no1075_char.png",
+ "atkBase": 900,
+ "atkGrowth": 30,
+ "defBase": 700,
+ "defGrowth": 20,
+ "tacticsBase": 510.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 3950,
+ "rankGrades": {
+  "yari": "SS",
+  "yumi": "B",
+  "uma": "S",
+  "ki": "A"
+ },
+ "initialSkill": "天虎招雷",
+ "skillDetail": "S/LV10 確率 8% 攻撃 80%上昇/対象:槍・馬\n①攻撃 80%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・馬　確率 8% / 攻撃 80%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録。カード画像(スキルLV10形式、no1075_full.png)から統率バッジ4隅・攻撃/防御/兵法/コスト/指揮兵数/武将名/初期スキル名とスキル効果を読み取った。",
+  "武将名の（N）はixawiki.com(Busho/武将カード一覧)の天レアリティ表内No.1075の表記をF-0規則(docs/character-registration-manual.md)で変換した。",
+  "成長値(atkGrowth/defGrowth/tacticsGrowth)とふりがな・illustratorはixanary.com(cards/1075)の埋め込みJSONで確認した(統率A〜Eの値はカード画像を優先し使っていない)。",
+  "章(ch)は情報源に記載が無く未確認のため null。",
+  "初期スキル「天虎招雷」はS以上だがdata/skill/に未作成(要新規ページ作成)。",
+  "ixanary.com(cards/1075)には追加スキル「戦場の鬼」の記載もあるが、カードLV0画面には表示されない追加枠のためinitialSkillには含めていない。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2016-05-19",
+ "wikiCommentCount": 105,
+ "chGuess": "12章",
+ "chSource": "wikiOldestComment"
+}

@@ -1,0 +1,50 @@
+{
+ "name": "真田幸村",
+ "no": "1147",
+ "ch": "18章",
+ "cost": 4,
+ "troop": "槍弓焙攻速",
+ "sub": "",
+ "effect": "攻撃・速度上昇(4部隊以下の攻撃で効果2倍)",
+ "furigana": "さなだゆきむら",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1147_full.png",
+ "imageChar": "assets/img/characters/no1147_char.png",
+ "atkBase": 1220,
+ "atkGrowth": 59,
+ "defBase": 1080,
+ "defGrowth": 38,
+ "tacticsBase": 660.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 4230,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "S",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "躑躅ノ花ノ如",
+ "skillDetail": "S/LV10 確率 24%/100% 攻撃 82%上昇(確率24%)+速度 45%上昇(確率100%)/対象:槍・弓・焙\n①攻撃 82%上昇する(確率24%)\n②速度 45%上昇する(確率100%)\n③4部隊以下の攻撃時は攻撃効果が2倍になる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・弓・焙　確率 24%/100% / 攻撃 82%上昇(確率24%)+速度 45%上昇(確率100%)(4部隊以下の攻撃で攻撃効果2倍)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録。カード画像(スキルLV10形式)から。統率バッジ4隅を拡大確認: 槍S/弓S/馬A/器A(左上=槍/右上=馬/左下=弓/右下=器の並びで確認)。",
+  "対象兵科はカード画像で「槍/弓/馬」に見えたが、ixanary.com(cards/1147)生HTML(title=槍弓焙)とixawiki.com(BushoCard/1147真田幸村)の両方で「槍/弓/焙」と確認し訂正した。",
+  "確率は攻撃効果と速度効果で異なる(攻撃24%/速度100%)ためskillDetail・trTableとも両方併記した。",
+  "ステータス初期値1220/1080/660.0・成長値+59/+38/+2.5・cost4・lv0Troops4230はixanary.com(cards/1147)生HTMLの成長表と一致確認。",
+  "武将名はixawiki.com(Busho/武将カード一覧(天))で「真田幸村」(無印)表記を確認。スキルパネル左上の職業バッジは赤地に「将」でixanaryのjobType=将と一致(覇ではない)。",
+  "初期スキル「躑躅ノ花ノ如」はSランクだがdata/skill/に個別ページが無い(要作成)。",
+  "章は情報源に記載が無く未確認。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2019-08-09",
+ "wikiCommentCount": 64,
+ "chGuess": "18章",
+ "chSource": "wikiOldestComment"
+}

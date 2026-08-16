@@ -1,0 +1,49 @@
+{
+ "name": "福島正則（3）",
+ "no": "1195",
+ "ch": "22章",
+ "cost": 4,
+ "troop": "槍弓焙攻",
+ "sub": "",
+ "effect": "槍弓焙指揮時、確率と攻撃効果の組み合わせを選択(最大攻撃240%上昇)",
+ "furigana": "ふくしままさのり",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1195_full.png",
+ "imageChar": "assets/img/characters/no1195_char.png",
+ "atkBase": 1190,
+ "atkGrowth": 57,
+ "defBase": 1050,
+ "defGrowth": 30,
+ "tacticsBase": 640,
+ "tacticsGrowth": 3,
+ "lv0Troops": 4270,
+ "rankGrades": {
+  "yari": "SS",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "日本号 神哭",
+ "skillDetail": "S/LV10 確率 70% 攻撃 124%上昇/対象:槍・弓・焙\n①確率 70%で攻撃 124%上昇する\n②確率 30%で攻撃 170%上昇する\n③確率 5%で攻撃 240%上昇する\n④発動確率と効果の組み合わせを選択できる(移動時は選択不可)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・弓・焙　確率 70%/30%/5% / 攻撃 124%/170%/240%上昇(組み合わせ選択制・移動時は選択不可)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録。カード画像(スキルLV10形式・no1195_full.png)から作成。カード画像は選択中の組み合わせ(確率70%/攻撃124%)のみ表示のため、他2つの組み合わせ(30%/170%、5%/240%)はixanary.com(cards/1195)生HTMLのスキルボックス全文で補った。",
+  "rankGrades(槍SS/弓A/馬A/器A)はカード画像バッジ4隅・ixanary.com card JSON・ixawiki.com「武将カード一覧(天)」表の3ソースで一致。",
+  "名前の（3）はixawiki.com「武将カード一覧(天)」表の表記(福島正則(3))に従った。",
+  "初期スキル日本号 神哭はSランクのためdata/skill/日本号 神哭.jsonが必要だが未作成(このバッチでは作成禁止のため報告のみ)。",
+  "章は情報源に記載が無く未確認。",
+  "「発動確率と効果の組み合わせを選択できる」型スキルはサイト内に既存の書式事例が無かったため、独自にskillDetail形式を組んだ(要レビュー)。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2021-08-13",
+ "wikiCommentCount": 29,
+ "chGuess": "22章",
+ "chSource": "wikiOldestComment"
+}

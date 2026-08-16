@@ -1,0 +1,46 @@
+{
+ "name": "伊達政宗【覇】",
+ "no": "1068",
+ "ch": "12章",
+ "cost": 4,
+ "troop": "馬砲器攻防速",
+ "sub": "",
+ "effect": "対象兵科の攻撃・防御・速度上昇",
+ "furigana": "だてまさむね",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1068_full.png",
+ "imageChar": "assets/img/characters/no1068_char.png",
+ "atkBase": 950,
+ "atkGrowth": 35,
+ "defBase": 950,
+ "defGrowth": 35,
+ "tacticsBase": 600,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3700,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "C",
+  "uma": "S",
+  "ki": "S"
+ },
+ "initialSkill": "覇竜十架砲",
+ "skillDetail": "S/LV10 対象:馬・砲・器\n①確率 18%で攻撃 60%上昇する\n②確率 18%で防御 60%上昇する\n③確率 100%で速度 24%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "馬・砲・器　攻撃 確率 18% / 60%上昇+防御 確率 18% / 60%上昇+速度 確率 100% / 24%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録。カード画像(スキルLV10形式)から。統率バッジは左上槍S/右上馬S/左下弓C/右下器S。ixanary.com(cards/1068)生HTMLとixawiki.com武将カード一覧(天)の生HTML両方でrankGrades・基礎値・成長値・指揮兵数が一致することを確認済み。",
+  "カード名前欄のアイコンが「覇」(職業:覇者)で、ixawiki一覧の表記も「伊達政宗(覇)」だったため（覇）を付けた。スキル効果文に護る効果や赤字の「覇道」表記は無いため、sub欄は覇道classificationの対象外(空欄)とした。攻撃・防御・速度でそれぞれ確率が異なる(18%/18%/100%)ため、通常の単一確率ヘッダーでなく効果ごとに確率を明記する形にした。",
+  "2026-08-16: 覇者カードの表記を（覇）から【覇】に直した(サイトの既存表記に合わせた)。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2016-05-19",
+ "wikiCommentCount": 203,
+ "chGuess": "12章",
+ "chSource": "wikiOldestComment"
+}

@@ -1,0 +1,50 @@
+{
+ "name": "足利義昭【覇】",
+ "no": "1178",
+ "ch": "21章",
+ "cost": 5,
+ "troop": "全攻",
+ "sub": "",
+ "effect": "全指揮時、攻撃140%上昇+防御側の兵科補正が0.8倍に軽減(模倣不可)",
+ "furigana": "あしかがよしあき",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1178_full.png",
+ "imageChar": "assets/img/characters/no1178_char.png",
+ "atkBase": 1240,
+ "atkGrowth": 58,
+ "defBase": 1200,
+ "defGrowth": 40,
+ "tacticsBase": 720.0,
+ "tacticsGrowth": 3.5,
+ "lv0Troops": 4630,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "S",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "天宮八卦陣",
+ "skillDetail": "SSS/LV10 確率 70% 攻撃 140%上昇/対象:全\n模倣不可\n①攻撃 140%上昇する\n②攻撃戦闘時防御側の兵科補正が0.8倍に小さくなる(特殊効果は累積するが有利不利は逆転しない)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 70% / 攻撃 140%上昇(兵科補正0.8倍・模倣不可)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録。カード画像(スキルLV10形式)から名前/コスト/攻防兵法/指揮兵数/統率4隅バッジ/スキル名と効果文を読み取った。",
+  "統率バッジはカード画像を8倍拡大して4隅個別に確認: 槍S/馬A/弓S/器A。",
+  "成長値(攻58/防40/兵法3.5)・furigana・illustratorはixawiki.com(BushoCard/1178足利義昭)の生HTMLで確認。TR段階は無く LV1/LV10 の2段のみ(ixanary.com skills/天宮八卦陣で確認)。",
+  "名前の【覇】はixawiki.com(Busho/武将カード一覧)の天セクション表記「足利義昭(覇)」に対応。他に足利義昭の天カードが無い(番号無し)ため既存の【覇】単独表記(黒田官兵衛【覇】等)に合わせた。カード名前アイコンも赤い「覇」字だった。",
+  "覇道(sub)判定: 「スキルを無効化・発動率低下から保護」等の保護効果文が無く赤字「覇道」表記も確認できなかったため、sub=覇道とはしなかった。",
+  "初期スキル天宮八卦陣はSSSランクだがdata/skill/天宮八卦陣.jsonが未作成(要対応、本担当ではページ新規作成はしない)。",
+  "章(ch)は情報源で確認できず未確認のためnull。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2021-02-05",
+ "wikiCommentCount": 87,
+ "chGuess": "21章",
+ "chSource": "wikiOldestComment"
+}

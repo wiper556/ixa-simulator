@@ -1,0 +1,48 @@
+{
+ "name": "真田信之",
+ "no": "1194",
+ "ch": "22章",
+ "cost": 5,
+ "troop": "全防",
+ "sub": "",
+ "effect": "全指揮時防御90%上昇、部隊内の異なるスキル数×12%を加算",
+ "furigana": "さなだのぶゆき",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1194_full.png",
+ "imageChar": "assets/img/characters/no1194_char.png",
+ "atkBase": 1020,
+ "atkGrowth": 35,
+ "defBase": 1180,
+ "defGrowth": 62,
+ "tacticsBase": 630,
+ "tacticsGrowth": 3,
+ "lv0Troops": 4740,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "S",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "迦楼羅ノ焔界",
+ "skillDetail": "S/LV10 確率 54% 防御 90%上昇/対象:全\n①防御 90%上昇する\n②自部隊内で発動したそれぞれ名前の異なるスキルの数×12%を防御効果に加算する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 54% / 防御 90%上昇(部隊内の異なるスキル数×12%を加算)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録。カード画像(スキルLV10形式・no1194_full.png)から作成。ステータス・スキル文はixanary.com(cards/1194)生HTMLの成長表・スキルボックスと一致確認。",
+  "rankGrades(槍A/弓S/馬A/器S)はカード画像バッジ4隅・ixanary.com card JSON・ixawiki.com「武将カード一覧(天)」表の3ソースで一致。",
+  "名前表記はixawiki.com「武将カード一覧(天)」表で無印(真田信之)を確認、（N）は付けなかった。",
+  "初期スキル迦楼羅ノ焔界はSランクのためdata/skill/迦楼羅ノ焔界.jsonが必要だが未作成(このバッチでは作成禁止のため報告のみ)。",
+  "章は情報源に記載が無く未確認。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2021-08-13",
+ "wikiCommentCount": 58,
+ "chGuess": "22章",
+ "chSource": "wikiOldestComment"
+}

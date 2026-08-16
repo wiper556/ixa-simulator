@@ -1,0 +1,48 @@
+{
+ "name": "加藤清正（3）",
+ "no": "1144",
+ "ch": "18章",
+ "cost": 4.5,
+ "troop": "槍器鉄攻",
+ "sub": "卓越",
+ "effect": "攻撃上昇(卓越で追加確率発動時は効果2倍)",
+ "furigana": "かとうきよまさ",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1144_full.png",
+ "imageChar": "assets/img/characters/no1144_char.png",
+ "atkBase": 1370,
+ "atkGrowth": 64,
+ "defBase": 980,
+ "defGrowth": 18,
+ "tacticsBase": 640.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 4610,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "帝釈天 白虎",
+ "skillDetail": "S/LV10 確率 40% 攻撃 80%上昇/対象:槍・器・鉄\n①攻撃 80%上昇する\n②卓越時に攻撃効果を強化する(追加確率35%・2倍)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・器・鉄　確率 40% / 攻撃 80%上昇(卓越:追加確率35%で2倍)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録。カード画像(スキルLV10形式)から。統率バッジ4隅を拡大確認: 槍S/弓A/馬A/器S(左上=槍/右上=馬/左下=弓/右下=器の並びで確認)。",
+  "ステータス初期値1370/980/640.0・成長値+64/+18/+2.5・cost4.5・lv0Troops4610はixanary.com(cards/1144)生HTMLの成長表と一致確認。",
+  "武将名の（3）はixawiki.com(Busho/武将カード一覧(天))の表記「加藤清正(3)」に従った。",
+  "初期スキル「帝釈天 白虎」(間にスペース)はSランクだがdata/skill/に個別ページが無い(要作成)。",
+  "章は情報源に記載が無く未確認。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2019-08-09",
+ "wikiCommentCount": 100,
+ "chGuess": "18章",
+ "chSource": "wikiOldestComment"
+}

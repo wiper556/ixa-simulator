@@ -1,0 +1,48 @@
+{
+ "name": "尚寧王",
+ "no": "1201",
+ "ch": "22章",
+ "cost": 4.5,
+ "troop": "槍弓器鉄防",
+ "sub": "",
+ "effect": "槍弓器鉄指揮時防御110%上昇、極限スキルの防御効果が3倍(模倣不可)",
+ "furigana": "しょうねいおう",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1201_full.png",
+ "imageChar": "assets/img/characters/no1201_char.png",
+ "atkBase": 990,
+ "atkGrowth": 30,
+ "defBase": 1140,
+ "defGrowth": 58,
+ "tacticsBase": 660,
+ "tacticsGrowth": 3,
+ "lv0Troops": 4640,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "天凱ノ鳳凰",
+ "skillDetail": "S/LV10 確率 100% 防御 110%上昇/対象:槍・弓・器・鉄\n模倣不可\n①防御 110%上昇する\n②対象兵科指揮時極限スキルの防御効果が3倍となる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・弓・器・鉄　確率 100% / 防御 110%上昇(極限スキル防御効果3倍・模倣不可)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録。カード画像(スキルLV10形式・no1201_full.png)から作成。ステータス・スキル文はixanary.com(cards/1201)生HTMLの成長表・スキルボックスと一致確認。",
+  "rankGrades(槍S/弓A/馬A/器S)はカード画像バッジ4隅・ixanary.com card JSON・ixawiki.com「武将カード一覧(天)」表の3ソースで一致。",
+  "名前表記はixawiki.com「武将カード一覧(天)」表で無印(尚寧王)を確認、（N）は付けなかった。",
+  "初期スキル天凱ノ鳳凰はSランクのためdata/skill/天凱ノ鳳凰.jsonが必要だが未作成(このバッチでは作成禁止のため報告のみ)。",
+  "章は情報源に記載が無く未確認。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2021-08-13",
+ "wikiCommentCount": 23,
+ "chGuess": "22章",
+ "chSource": "wikiOldestComment"
+}

@@ -1,0 +1,49 @@
+{
+ "name": "小早川秀秋",
+ "no": "1077",
+ "ch": "12章",
+ "cost": 2.5,
+ "troop": "弓砲防",
+ "sub": "",
+ "effect": "弓砲部隊の防御力上昇+防御勝利時敵軍に追加ダメージ",
+ "furigana": "こばやかわひであき",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1077_full.png",
+ "imageChar": "assets/img/characters/no1077_char.png",
+ "atkBase": 840,
+ "atkGrowth": 21,
+ "defBase": 840,
+ "defGrowth": 21,
+ "tacticsBase": 590.0,
+ "tacticsGrowth": 3,
+ "lv0Troops": 3260,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "S",
+  "uma": "B",
+  "ki": "S"
+ },
+ "initialSkill": "虚朧陽炎",
+ "skillDetail": "S/LV10 確率 20% 防御 50%上昇/対象:弓・砲\n①防御 50%上昇する\n②防御戦闘勝利時のみ敵軍1部隊の武将に追加ダメージ+15を与える",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓・砲　確率 20% / 防御 50%上昇(防御勝利時敵1部隊に追加ダメージ+15)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録。カード画像(スキルLV10形式、no1077_full.png)から統率バッジ4隅・攻撃/防御/兵法/コスト/指揮兵数/武将名/初期スキル名とスキル効果を読み取った。",
+  "武将名の（N）はixawiki.com(Busho/武将カード一覧)の天レアリティ表内No.1077の表記をF-0規則(docs/character-registration-manual.md)で変換した。",
+  "成長値(atkGrowth/defGrowth/tacticsGrowth)とふりがな・illustratorはixanary.com(cards/1077)の埋め込みJSONで確認した(統率A〜Eの値はカード画像を優先し使っていない)。",
+  "章(ch)は情報源に記載が無く未確認のため null。",
+  "ixawiki一覧表でこのNo.に同名数の表記が無かったため無印のまま登録。",
+  "初期スキル「虚朧陽炎」はS以上だがdata/skill/に未作成(要新規ページ作成)。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2016-05-19",
+ "wikiCommentCount": 174,
+ "chGuess": "12章",
+ "chSource": "wikiOldestComment"
+}

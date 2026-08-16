@@ -1,0 +1,25 @@
+{
+ "name": "七蛟竜 神武",
+ "rank": "S",
+ "baseRate": 35,
+ "target": "槍弓砲",
+ "effectSummary": "S/LV10 確率 35% 攻撃 57%上昇/対象:槍弓砲\n①槍弓砲の攻撃が57%上昇する",
+ "categoryLinks": [],
+ "sourceCharacters": [
+  {
+   "name": "長宗我部元親（4）",
+   "no": "1087",
+   "slot": "移植不可"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍弓砲　確率 35% / 攻撃 57%上昇"
+  }
+ ],
+ "notes": [
+  "A-3-9「武将自身の初期スキル(S以上)は無条件にページを作る」により2026-08-16に一括作成。内容は data/busho/1087.json の skillDetail / trTable からの転記で、新しい事実は持ち込んでいない。"
+ ]
+}

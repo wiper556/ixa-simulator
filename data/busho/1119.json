@@ -1,0 +1,46 @@
+{
+ "name": "徳川家康（2）【覇】",
+ "no": "1119",
+ "ch": null,
+ "cost": 4.5,
+ "troop": "弓焙攻",
+ "sub": "",
+ "effect": "弓焙の攻撃上昇(4部隊以下なら効果2倍)",
+ "furigana": "とくがわいえやす",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1119_full.png",
+ "imageChar": "assets/img/characters/no1119_char.png",
+ "atkBase": 1170,
+ "atkGrowth": 29,
+ "defBase": 1100,
+ "defGrowth": 27,
+ "tacticsBase": 720.0,
+ "tacticsGrowth": 3,
+ "lv0Troops": 4320,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "S",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "東照大権現",
+ "skillDetail": "S/LV10 確率 35% 攻撃 70%上昇/対象:弓焙\n①攻撃 70%上昇する\n②4部隊以下の攻撃で効果2倍となる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓焙　確率 35% / 攻撃 70%上昇(4部隊以下の攻撃で効果2倍)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録。カード画像(スキルLV10形式、no1119_full.png)から武将名/統率4隅バッジ(槍A・馬A・弓S・器A)/攻防兵法初期値(1170/1100/720.0)/lv0Troops(4320)/スキル名・効果文を読み取った。名前欄アイコンは「将」ではなく「覇」だった。",
+  "ixanary.com(cards/1119)生HTMLの埋め込みJSONでfurigana・illustrator・cost・lv0Troops・rankGrades(yari A/yumi S/kiba A/heiki A)・成長値(攻+29/防+27/兵法+3)を裏取りし、カード画像の読み取りと完全一致することを確認した。対象欄「弓焙」はixanary.com(skills/東照大権現)生HTMLのtitle属性で確認した。",
+  "名前の（N）はixawiki.com(Busho/武将カード一覧)天セクションの該当行を生バイトで確認したところ「徳川家康(覇2)」だったため、既存の同種【覇】表記カードの形式に合わせ「（2）【覇】」に変換した。スキル効果に保護文言・カード上の赤字「覇道」表記が無いためsubに覇道は付与していない。",
+  "初期スキル東照大権現はSランクだがdata/skill/東照大権現.jsonが存在しない(要新規作成)。",
+  "ch(章)は情報源で確認できず未確認のためnullとした。"
+ ],
+ "wikiOldestComment": "2018-08-09",
+ "wikiCommentCount": 89,
+ "chGuess": "15-16章"
+}

@@ -1,0 +1,24 @@
+{
+ "name": "螺旋生死掘",
+ "rank": "S",
+ "target": "弓砲攻速",
+ "effectSummary": "S/LV10 対象:弓・砲\n①確率 30%で攻撃 45%上昇する\n②確率 100%で速度 25%低下する",
+ "categoryLinks": [],
+ "sourceCharacters": [
+  {
+   "name": "北条氏政",
+   "no": "1058",
+   "slot": "移植不可"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓・砲　攻撃 確率 30% / 45%上昇+速度 確率 100% / 25%低下"
+  }
+ ],
+ "notes": [
+  "A-3-9「武将自身の初期スキル(S以上)は無条件にページを作る」により2026-08-16に一括作成。内容は data/busho/1058.json の skillDetail / trTable からの転記で、新しい事実は持ち込んでいない。"
+ ]
+}

@@ -1,0 +1,48 @@
+{
+ "name": "武田信玄（2）",
+ "no": "1020",
+ "ch": "4章",
+ "cost": 3.5,
+ "troop": "全攻速",
+ "sub": "",
+ "effect": "全部隊の攻撃・速度上昇",
+ "furigana": "たけだしんげん",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1020_full.png",
+ "imageChar": "assets/img/characters/no1020_char.png",
+ "atkBase": 760,
+ "atkGrowth": 19,
+ "defBase": 760,
+ "defGrowth": 19,
+ "tacticsBase": 470.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3560,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "S",
+  "ki": "C"
+ },
+ "initialSkill": "風林火山 颯",
+ "skillDetail": "S/LV10 確率 100% 全攻 12%上昇/対象:全\n①全攻 12%上昇する\n②全速 25%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 全攻 12%上昇+全速 25%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録。カード画像(スキルLV10形式)から武将名・統率バッジ4隅・スキル名・初期値・スキル効果本文を確認。",
+  "ステータス初期値760/760/470.0・成長値+19/+19/+2.5・cost3.5・lv0Troops3560・統率(槍A/弓A/馬S/器C)はixanary.com(cards/1020)生HTMLの埋め込みカードpropsと一致確認(カード画像バッジと同一)。",
+  "初期スキル「風林火山 颯」は既存のdata/skill/風林火山 颯.jsonにSランクページが存在済み(2026-08-16作成、担当T2)。effectSummary/trTableと一致することを確認して転記。",
+  "名前の（N）はixawiki.com(Busho/武将カード一覧)の武田信玄リストでNo.1020が「武田信玄(2)」表記のため（2）とした。",
+  "章(ch)は情報源に記載が無く未確認のためnull。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2012-04-17",
+ "wikiCommentCount": 396,
+ "chGuess": "4章",
+ "chSource": "wikiOldestComment"
+}

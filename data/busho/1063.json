@@ -1,0 +1,46 @@
+{
+ "name": "武田信玄【覇】",
+ "no": "1063",
+ "ch": "11章",
+ "cost": 4,
+ "troop": "全攻速",
+ "sub": "",
+ "effect": "全兵科の攻撃・速度上昇",
+ "furigana": "たけだしんげん",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1063_full.png",
+ "imageChar": "assets/img/characters/no1063_char.png",
+ "atkBase": 880,
+ "atkGrowth": 20,
+ "defBase": 760,
+ "defGrowth": 20,
+ "tacticsBase": 690,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3800,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "B",
+  "uma": "SS",
+  "ki": "B"
+ },
+ "initialSkill": "戦神雷霆",
+ "skillDetail": "S/LV10 確率 100% 攻撃 24%上昇/対象:全\n①攻撃 24%上昇する\n②速度 38%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 攻撃 24%上昇+速度 38%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録。カード画像(スキルLV10形式)から。統率バッジは左上槍A/右上馬SS/左下弓B/右下器B。ixanary.com(cards/1063)生HTMLとixawiki.com武将カード一覧(天)の生HTML両方でrankGrades・基礎値・成長値・指揮兵数が一致することを確認済み。",
+  "カード名前欄のアイコンが「覇」(職業:覇者)で、ixawiki一覧の表記も「武田信玄(覇)」だったため（覇）を付けた。スキル効果文に「所属部隊のスキルを無効化・発動率低下から保護」等の護る効果は無く赤字の「覇道」表記も無いため、sub欄は覇道classificationの対象外(空欄)とした。",
+  "2026-08-16: 覇者カードの表記を（覇）から【覇】に直した(サイトの既存表記に合わせた)。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2015-11-14",
+ "wikiCommentCount": 159,
+ "chGuess": "11章",
+ "chSource": "wikiOldestComment"
+}

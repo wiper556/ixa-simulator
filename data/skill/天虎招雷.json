@@ -1,0 +1,25 @@
+{
+ "name": "天虎招雷",
+ "rank": "S",
+ "baseRate": 8,
+ "target": "槍・馬",
+ "effectSummary": "S/LV10 確率 8% 攻撃 80%上昇/対象:槍・馬\n①攻撃 80%上昇する",
+ "categoryLinks": [],
+ "sourceCharacters": [
+  {
+   "name": "加藤清正（2）",
+   "no": "1075",
+   "slot": "移植不可"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・馬　確率 8% / 攻撃 80%上昇"
+  }
+ ],
+ "notes": [
+  "A-3-9「武将自身の初期スキル(S以上)は無条件にページを作る」により2026-08-16に一括作成。内容は data/busho/1075.json の skillDetail / trTable からの転記で、新しい事実は持ち込んでいない。"
+ ]
+}

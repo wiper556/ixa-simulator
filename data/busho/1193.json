@@ -1,0 +1,49 @@
+{
+ "name": "本多忠勝",
+ "no": "1193",
+ "ch": "22章",
+ "cost": 5,
+ "troop": "槍馬器騎攻破",
+ "sub": "",
+ "effect": "槍馬器騎指揮時攻撃157%上昇+破壊70%上昇(武将のランクで攻撃効果が変化)",
+ "furigana": "ほんだただかつ",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1193_full.png",
+ "imageChar": "assets/img/characters/no1193_char.png",
+ "atkBase": 1160,
+ "atkGrowth": 59,
+ "defBase": 1040,
+ "defGrowth": 32,
+ "tacticsBase": 640,
+ "tacticsGrowth": 3,
+ "lv0Troops": 4760,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "飛神 蜻蛉切",
+ "skillDetail": "S/LV10 確率 47% 攻撃 157%上昇/対象:槍・馬・器・騎\n①攻撃 157%上昇する(武将のランクで変化)\n②破壊 70%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・馬・器・騎　確率 47% / 攻撃 157%上昇(武将ランクで変動)+破壊 70%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録。カード画像(スキルLV10形式・no1193_full.png)から作成。",
+  "スキルLV10の攻撃効果値はカード画像では「10%上昇」と表示されていたが、確率47%・破壊70%はixanary.com(cards/1193)生HTMLのLV10欄と一致するのに攻撃だけ「157%上昇」と食い違っていた。LV1欄の攻撃値がちょうど「10%上昇」だったため、画像側がLV1→LV10のカウントアップ途中で止まった表示バグと判断し、ixanary.comのLV10値157%を採用した(要再確認)。",
+  "rankGrades(槍S/弓A/馬A/器S)はカード画像バッジ4隅・ixanary.com card JSON・ixawiki.com「武将カード一覧(天)」表の3ソースで一致。",
+  "名前表記はixawiki.com「武将カード一覧(天)」表で無印(本多忠勝)を確認、（N）は付けなかった。",
+  "初期スキル飛神 蜻蛉切はSランクのためdata/skill/飛神 蜻蛉切.jsonが必要だが未作成(このバッチでは作成禁止のため報告のみ)。",
+  "章は情報源に記載が無く未確認。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2021-08-13",
+ "wikiCommentCount": 36,
+ "chGuess": "22章",
+ "chSource": "wikiOldestComment"
+}

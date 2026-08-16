@@ -1,0 +1,48 @@
+{
+ "name": "武田勝頼",
+ "no": "1091",
+ "ch": "13章",
+ "cost": 4,
+ "troop": "槍馬砲器攻破",
+ "sub": "",
+ "effect": "対象兵科の攻撃・破壊上昇",
+ "furigana": "たけだかつより",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1091_full.png",
+ "imageChar": "assets/img/characters/no1091_char.png",
+ "atkBase": 1300,
+ "atkGrowth": 25,
+ "defBase": 1200,
+ "defGrowth": 21,
+ "tacticsBase": 550.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3960,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "C",
+  "uma": "S",
+  "ki": "S"
+ },
+ "initialSkill": "馬帝蹂躙",
+ "skillDetail": "S/LV10 確率 39% 攻撃 52%上昇+破壊 39%上昇/対象:槍馬砲器\n①槍馬砲器の攻撃が52%上昇する\n②槍馬砲器の破壊が39%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍馬砲器　確率 39% / 攻撃 52%上昇+破壊 39%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録。カード画像(スキルLV10形式)から。統率バッジ4隅を目視確認: 槍A/馬S/弓C/器S。ixanary.com(cards/1091)埋め込みJSON(yari A/yumi C/kiba S/heiki S)と一致。",
+  "ixawiki.com(Busho/武将カード一覧(天))の表記は無印(同名の重複無し)のため名前に（N）を付けなかった。",
+  "初期スキル「馬帝蹂躙」はSランクだがdata/skill/に個別ページが無い(要作成、報告参照)。攻撃と破壊が同時に変動するためtrTable/skillDetailに両方併記した。",
+  "ステータス初期値1300/1200/550.0・成長値+25/+21/+2.5はixanary.com(cards/1091)生HTML埋め込みJSONから取得。",
+  "章は情報源に記載が無く未確認。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2016-11-15",
+ "wikiCommentCount": 123,
+ "chGuess": "13章",
+ "chSource": "wikiOldestComment"
+}

@@ -1,0 +1,50 @@
+{
+ "name": "前田利家（2）",
+ "no": "1185",
+ "ch": "21章",
+ "cost": 4,
+ "troop": "槍馬器鉄攻",
+ "sub": "",
+ "effect": "槍/馬/器/鉄指揮時、攻撃が防御参加武将数×3.2%上昇",
+ "furigana": "まえだとしいえ",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1185_full.png",
+ "imageChar": "assets/img/characters/no1185_char.png",
+ "atkBase": 1190,
+ "atkGrowth": 58,
+ "defBase": 1050,
+ "defGrowth": 34,
+ "tacticsBase": 610.0,
+ "tacticsGrowth": 3.0,
+ "lv0Troops": 4260,
+ "rankGrades": {
+  "yari": "SS",
+  "yumi": "B",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "天勇雷槍光陣",
+ "skillDetail": "S/LV10 確率 62% 攻撃 (3.2×防御参加武将数)%上昇/対象:槍馬器鉄\n①攻撃が防御参加武将数×3.2%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍馬器鉄　確率 62% / 攻撃 防御参加武将数×3.2%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録。カード画像(スキルLV10形式)から名前/コスト/攻防兵法/指揮兵数/統率4隅バッジ/スキル名と効果文を読み取った。",
+  "統率バッジはカード画像を8倍拡大して4隅個別に確認: 槍SS/馬A/弓B/器A。",
+  "成長値(攻58/防34/兵法3.0)・furigana・illustratorはixawiki.com(BushoCard/1185前田利家)の生HTMLで確認、初期値(攻1190/防1050/兵法610)もカード画像と一致。TR段階は無く LV1/LV10 の2段のみ(ixanary.com skills/天勇雷槍光陣で確認、LV10数値はカード画像と一致)。",
+  "対象欄「槍/馬/器/鉄」はixanary・ixawiki生HTMLの両方で確認、通常の槍弓馬砲器とは異なる特殊表記だが原文どおりとした。",
+  "名前の（2）はixawiki.com(Busho/武将カード一覧)の天セクション表記「前田利家(2)」に従った。",
+  "初期スキル天勇雷槍光陣はSランクだがdata/skill/天勇雷槍光陣.jsonが未作成(要対応、本担当ではページ新規作成はしない)。",
+  "章(ch)は情報源で確認できず未確認のためnull。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2021-02-06",
+ "wikiCommentCount": 38,
+ "chGuess": "21章",
+ "chSource": "wikiOldestComment"
+}

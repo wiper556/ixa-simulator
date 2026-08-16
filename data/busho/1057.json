@@ -1,0 +1,45 @@
+{
+ "name": "伊達政宗（3）",
+ "no": "1057",
+ "ch": "10章",
+ "cost": 4,
+ "troop": "馬砲攻速",
+ "sub": "",
+ "effect": "対象兵科の攻撃・速度上昇",
+ "furigana": "だてまさむね",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1057_full.png",
+ "imageChar": "assets/img/characters/no1057_char.png",
+ "atkBase": 930,
+ "atkGrowth": 21,
+ "defBase": 670,
+ "defGrowth": 18,
+ "tacticsBase": 480,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3900,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "C",
+  "uma": "S",
+  "ki": "S"
+ },
+ "initialSkill": "独眼竜 天翔",
+ "skillDetail": "S/LV10 確率 100% 攻撃 18%上昇/対象:馬・砲\n①攻撃 18%上昇する\n②速度 42%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "馬・砲　確率 100% / 攻撃 18%上昇+速度 42%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録。カード画像(スキルLV10形式)から。統率バッジは左上槍B/右上馬S/左下弓C/右下器S。ixanary.com(cards/1057)生HTMLとixawiki.com武将カード一覧(天)の生HTML両方でrankGrades・基礎値・成長値・指揮兵数が一致することを確認済み。",
+  "名前の（3）はixawiki.com「Busho/武将カード一覧(天)」の表記(伊達政宗(3))に従った。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2015-05-19",
+ "wikiCommentCount": 195,
+ "chGuess": "10章",
+ "chSource": "wikiOldestComment"
+}

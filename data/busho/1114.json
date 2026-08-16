@@ -1,0 +1,48 @@
+{
+ "name": "松永久秀",
+ "no": "1114",
+ "ch": "15章",
+ "cost": 2.5,
+ "troop": "全攻防破",
+ "sub": "",
+ "effect": "全兵科の攻撃防御破壊が上昇",
+ "furigana": "まつながひさひで",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1114_full.png",
+ "imageChar": "assets/img/characters/no1114_char.png",
+ "atkBase": 1210,
+ "atkGrowth": 33,
+ "defBase": 1210,
+ "defGrowth": 33,
+ "tacticsBase": 670.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3450,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "天冥火羅蜘蛛",
+ "skillDetail": "S/LV10 確率 44% 攻撃 70%上昇 防御 70%上昇 破壊 70%上昇/対象:全\n①攻撃 70%上昇する\n②防御 70%上昇する\n③破壊 70%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 44% / 攻撃 70%上昇+防御 70%上昇+破壊 70%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録。カード画像(スキルLV10形式、no1114_full.png)から武将名/統率4隅バッジ(槍S・馬A・弓A・器S)/攻防兵法初期値(1210/1210/670.0)/lv0Troops(3450)/スキル名・効果文を読み取った。",
+  "ixanary.com(cards/1114)生HTMLの埋め込みJSONでfurigana・illustrator・cost・lv0Troops・rankGrades(yari S/yumi A/kiba A/heiki S)・成長値(攻+33/防+33/兵法+2.5)を裏取りし、カード画像の読み取りと完全一致することを確認した。",
+  "名前の（N）はixawiki.com(Busho/武将カード一覧)天セクションの該当行を生バイトで確認、末尾に括弧書きが無いため無印とした。",
+  "初期スキル天冥火羅蜘蛛はSランクだがdata/skill/天冥火羅蜘蛛.jsonが存在しない(要新規作成)。攻撃/防御/破壊が同時上昇するためtrTableに全ステータスを併記した。",
+  "ch(章)は情報源で確認できず未確認のためnullとした。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2018-01-15",
+ "wikiCommentCount": 66,
+ "chGuess": "15章",
+ "chSource": "wikiOldestComment"
+}

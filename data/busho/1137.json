@@ -1,0 +1,49 @@
+{
+ "name": "伊達晴宗",
+ "no": "1137",
+ "ch": "17章",
+ "cost": 4.5,
+ "troop": "全攻",
+ "sub": "",
+ "effect": "自軍内の同兵種指揮武将数依存で攻撃上昇",
+ "furigana": "だてはるむね",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1137_full.png",
+ "imageChar": "assets/img/characters/no1137_char.png",
+ "atkBase": 1190,
+ "atkGrowth": 54,
+ "defBase": 1000,
+ "defGrowth": 35,
+ "tacticsBase": 660.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 4560,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "S",
+  "ki": "S"
+ },
+ "initialSkill": "睥睨ノ竜団",
+ "skillDetail": "S/LV10 確率 37% 攻撃 70%上昇/対象:全\n①攻撃 70%上昇する\n②自軍内で同兵種を指揮している武将数×2.5%を攻撃効果に加算する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 37% / 攻撃 70%上昇(自軍内で同兵種を指揮している武将数×2.5%を加算)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録。カード画像(スキルLV10形式)から。統率バッジ4隅を拡大確認: 槍A/弓A/馬S/器S(左上=槍/右上=馬/左下=弓/右下=器の並びで確認)。",
+  "初期スキル名はカード画像の小さい文字が「曄晄ノ竜団」に見えたが、ixanary.com(cards/1137のリンクhref/skills/睥睨ノ竜団)とixawiki.com(BushoCard/1137伊達晴宗)の2ソースで「睥睨ノ竜団」と確認し訂正した。",
+  "ステータス初期値1190/1000/660.0・成長値+54/+35/+2.5・cost4.5・lv0Troops4560はixanary.com(cards/1137)生HTMLの成長表と一致確認。",
+  "武将名はixawiki.com(Busho/武将カード一覧(天))で「伊達晴宗」(無印)表記を確認。",
+  "初期スキル「睥睨ノ竜団」はSランクだがdata/skill/に個別ページが無い(要作成)。",
+  "章は情報源(ixanary/ixawiki該当ページ)に記載が無く未確認。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2019-02-09",
+ "wikiCommentCount": 94,
+ "chGuess": "17章",
+ "chSource": "wikiOldestComment"
+}

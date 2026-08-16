@@ -1,0 +1,49 @@
+{
+ "name": "蒲生氏郷",
+ "no": "1110",
+ "ch": "15章",
+ "cost": 2,
+ "troop": "弓馬器攻防速",
+ "sub": "",
+ "effect": "対象兵科の攻撃・防御・速度上昇",
+ "furigana": "がもううじさと",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1110_full.png",
+ "imageChar": "assets/img/characters/no1110_char.png",
+ "atkBase": 1080,
+ "atkGrowth": 35,
+ "defBase": 970,
+ "defGrowth": 30,
+ "tacticsBase": 600.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3280,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "S",
+  "ki": "S"
+ },
+ "initialSkill": "銀翼神騎兵",
+ "skillDetail": "S/LV10 確率 100% 攻撃 64%上昇+防御 64%上昇+速度 50%上昇/対象:弓・馬・器\n①攻撃 64%上昇する\n②防御 64%上昇する\n③速度 50%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓・馬・器　確率 100% / 攻撃 64%上昇+防御 64%上昇+速度 50%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録。カード画像(スキルLV10形式)から作成。カード画像のNo.1110・蒲生氏郷の表記を確認。",
+  "ステータス初期値1080/970/600.0・成長値+35/+30/+2.5・cost2・lv0Troops3280はixanary.com(cards/1110)の成長表と一致確認。",
+  "rankGradesはカード画像バッジ4隅を拡大して確認(槍A/馬S/弓A/器S)。",
+  "銀翼神騎兵は既存のdata/skill/銀翼神騎兵.jsonにS以上のページが既にあり、内容(対象弓馬器・攻撃64%/防御64%/速度50%・確率各100%)が一致することを確認した。",
+  "カードの「部隊スキル 攻破.主への祈り」という別枠の記載はJSONスキーマに対応フィールドが無いため未登録。",
+  "章(ch)は情報源で確認できず未確認のためnull。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2018-01-15",
+ "wikiCommentCount": 126,
+ "chGuess": "15章",
+ "chSource": "wikiOldestComment"
+}

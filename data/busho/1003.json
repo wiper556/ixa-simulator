@@ -1,0 +1,48 @@
+{
+ "name": "武田信玄",
+ "no": "1003",
+ "ch": "1-2章",
+ "cost": 4.0,
+ "troop": "槍弓馬攻",
+ "sub": "",
+ "effect": "槍・弓・馬部隊の攻撃・破壊力上昇",
+ "furigana": "たけだしんげん",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1003_full.png",
+ "imageChar": "assets/img/characters/no1003_char.png",
+ "atkBase": 740,
+ "atkGrowth": 19,
+ "defBase": 740,
+ "defGrowth": 19,
+ "tacticsBase": 465.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3770,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "S",
+  "ki": "C"
+ },
+ "initialSkill": "風林火山",
+ "skillDetail": "S/LV10 確率 45% 攻撃 30%上昇/対象:槍・弓・馬\n①攻撃 30%上昇する\n②破壊 15%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・弓・馬　確率 45% / 攻撃 30%上昇+破壊 15%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録。カード画像(スキルLV10形式)から武将名・統率バッジ・スキル名・初期値を確認。",
+  "ステータス初期値740/740/465.0・成長値+19/+19/+2.5・cost4.0・lv0Troops3770はixanary.com(cards/1003)の成長表と一致確認。",
+  "統率は槍A/馬S/弓A/器C。カード画像バッジ4隅で確認。",
+  "初期スキル「風林火山」はSランクでdata/skill/風林火山.jsonが既存(原本No.1003と明記済み)。skillDetail/trTableの数値は既存ページと整合させた。",
+  "章は情報源に記載が無く未確認。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2011-03-20",
+ "wikiCommentCount": 215,
+ "chGuess": "1-2章",
+ "chSource": "wikiOldestComment"
+}

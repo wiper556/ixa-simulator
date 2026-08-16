@@ -1,0 +1,26 @@
+{
+ "name": "天幻神童",
+ "rank": "S",
+ "baseRate": 100,
+ "target": "槍・器・鉄",
+ "noMimic": true,
+ "effectSummary": "S/LV10 確率 100% 攻撃 50%上昇/対象:槍・器・鉄\n模倣不可\n①攻撃 50%上昇する\n②部隊長時部隊内の武将の攻撃力が3倍となる",
+ "categoryLinks": [],
+ "sourceCharacters": [
+  {
+   "name": "今川義元【覇】",
+   "no": "1131",
+   "slot": "移植不可"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・器・鉄　確率 100% / 攻撃 50%上昇+部隊長時部隊内の武将の攻撃力3倍(模倣不可)"
+  }
+ ],
+ "notes": [
+  "A-3-9「武将自身の初期スキル(S以上)は無条件にページを作る」により2026-08-16に一括作成。内容は data/busho/1131.json の skillDetail / trTable からの転記で、新しい事実は持ち込んでいない。"
+ ]
+}

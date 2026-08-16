@@ -1,0 +1,25 @@
+{
+ "name": "独眼竜咆哮",
+ "rank": "S",
+ "baseRate": 30,
+ "target": "馬砲器",
+ "effectSummary": "S/LV10 確率 30% 攻撃 35%上昇/破壊 20%上昇/対象:馬砲器\n①攻撃が35%上昇する\n②破壊が20%上昇する",
+ "categoryLinks": [],
+ "sourceCharacters": [
+  {
+   "name": "伊達政宗",
+   "no": "1013",
+   "slot": "移植不可"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "馬砲器　確率 30% / 攻撃 35%上昇+破壊 20%上昇"
+  }
+ ],
+ "notes": [
+  "A-3-9「武将自身の初期スキル(S以上)は無条件にページを作る」により2026-08-16に一括作成。内容は data/busho/1013.json の skillDetail / trTable からの転記で、新しい事実は持ち込んでいない。"
+ ]
+}

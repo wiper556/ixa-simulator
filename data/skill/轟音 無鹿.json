@@ -1,0 +1,25 @@
+{
+ "name": "轟音 無鹿",
+ "rank": "S",
+ "baseRate": 30,
+ "target": "器",
+ "effectSummary": "S/LV10 確率 30% 攻撃 30%上昇/対象:器\n①攻撃 30%上昇する\n②破壊 25%上昇する",
+ "categoryLinks": [],
+ "sourceCharacters": [
+  {
+   "name": "大友宗麟",
+   "no": "1011",
+   "slot": "移植不可"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "器　確率 30% / 攻撃 30%上昇+破壊 25%上昇"
+  }
+ ],
+ "notes": [
+  "A-3-9「武将自身の初期スキル(S以上)は無条件にページを作る」により2026-08-16に一括作成。内容は data/busho/1011.json の skillDetail / trTable からの転記で、新しい事実は持ち込んでいない。"
+ ]
+}

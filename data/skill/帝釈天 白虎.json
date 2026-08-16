@@ -1,0 +1,30 @@
+{
+ "name": "帝釈天 白虎",
+ "rank": "S",
+ "baseRate": 40,
+ "target": "槍・器・鉄",
+ "effectSummary": "S/LV10 確率 40% 攻撃 80%上昇/対象:槍・器・鉄\n①攻撃 80%上昇する\n②卓越時に攻撃効果を強化する(追加確率35%・2倍)",
+ "categoryLinks": [
+  {
+   "href": "skills-takuetsu.html",
+   "label": "卓越スキル一覧を見る"
+  }
+ ],
+ "sourceCharacters": [
+  {
+   "name": "加藤清正（3）",
+   "no": "1144",
+   "slot": "移植不可"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・器・鉄　確率 40% / 攻撃 80%上昇(卓越:追加確率35%で2倍)"
+  }
+ ],
+ "notes": [
+  "A-3-9「武将自身の初期スキル(S以上)は無条件にページを作る」により2026-08-16に一括作成。内容は data/busho/1144.json の skillDetail / trTable からの転記で、新しい事実は持ち込んでいない。"
+ ]
+}

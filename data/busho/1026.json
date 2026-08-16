@@ -1,0 +1,48 @@
+{
+ "name": "島津義久（2）",
+ "no": "1026",
+ "ch": "4章",
+ "cost": 4,
+ "troop": "砲攻",
+ "sub": "",
+ "effect": "砲撃部隊の攻撃・破壊力上昇",
+ "furigana": "しまづよしひさ",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1026_full.png",
+ "imageChar": "assets/img/characters/no1026_char.png",
+ "atkBase": 720,
+ "atkGrowth": 19,
+ "defBase": 695,
+ "defGrowth": 18,
+ "tacticsBase": 480.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3780,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "B",
+  "uma": "B",
+  "ki": "S"
+ },
+ "initialSkill": "繰抜十字紋",
+ "skillDetail": "S/LV10 確率 40% 攻撃 30%上昇/対象:砲\n①攻撃 30%上昇する\n②破壊 15%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "砲　確率 40% / 攻撃 30%上昇+破壊 15%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録。カード画像(スキルLV10形式)から武将名・統率バッジ4隅・初期値・スキル効果本文を確認。スキル名の正確な字はixanary.com(cards/1026)のtitleタグ「繰抜十字紋」で確認(カード画像だけでは崩し字判読が難しかったため)。",
+  "ステータス初期値720/695/480.0・成長値+19/+18/+2.5・cost4・lv0Troops3780・統率(槍A/弓B/馬B/器S)はixanary.com(cards/1026)生HTMLの埋め込みカードpropsと一致確認(カード画像バッジと同一)。",
+  "初期スキル「繰抜十字紋」はSランクだがdata/skill/に個別ページが無い(要作成候補)。",
+  "名前の（N）はixawiki.com(Busho/武将カード一覧)の島津義久リストでNo.1026が「島津義久(2)」表記のため（2）とした。",
+  "章(ch)は情報源に記載が無く未確認のためnull。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2012-04-17",
+ "wikiCommentCount": 444,
+ "chGuess": "4章",
+ "chSource": "wikiOldestComment"
+}

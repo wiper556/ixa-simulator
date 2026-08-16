@@ -1,0 +1,25 @@
+{
+ "name": "天襲懸撃",
+ "rank": "S",
+ "baseRate": 27,
+ "target": "砲・器",
+ "effectSummary": "S/LV10 確率 27% 攻撃 53%上昇 破壊 36%上昇/対象:砲・器\n①攻撃 53%上昇 破壊 36%上昇する",
+ "categoryLinks": [],
+ "sourceCharacters": [
+  {
+   "name": "島津義弘（2）",
+   "no": "1078",
+   "slot": "移植不可"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "砲・器　確率 27% / 攻撃 53%上昇+破壊 36%上昇"
+  }
+ ],
+ "notes": [
+  "A-3-9「武将自身の初期スキル(S以上)は無条件にページを作る」により2026-08-16に一括作成。内容は data/busho/1078.json の skillDetail / trTable からの転記で、新しい事実は持ち込んでいない。"
+ ]
+}

@@ -1,0 +1,25 @@
+{
+ "name": "釣り野伏 真",
+ "rank": "S",
+ "baseRate": 35,
+ "target": "砲",
+ "effectSummary": "S/LV10 確率 35% 防御 35%上昇/対象:砲\n①防御 35%上昇する",
+ "categoryLinks": [],
+ "sourceCharacters": [
+  {
+   "name": "島津義久",
+   "no": "1009",
+   "slot": "移植不可"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "砲　確率 35% / 防御 35%上昇"
+  }
+ ],
+ "notes": [
+  "A-3-9「武将自身の初期スキル(S以上)は無条件にページを作る」により2026-08-16に一括作成。内容は data/busho/1009.json の skillDetail / trTable からの転記で、新しい事実は持ち込んでいない。"
+ ]
+}

@@ -1,0 +1,50 @@
+{
+ "name": "上杉憲政",
+ "no": "1156",
+ "ch": "19章",
+ "cost": 4.5,
+ "troop": "弓馬器焙攻",
+ "sub": "",
+ "effect": "対象兵科指揮時防御参加武将数に応じ攻撃上昇",
+ "furigana": "うえすぎのりまさ",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1156_full.png",
+ "imageChar": "assets/img/characters/no1156_char.png",
+ "atkBase": 1100,
+ "atkGrowth": 55,
+ "defBase": 1060,
+ "defGrowth": 32,
+ "tacticsBase": 640.0,
+ "tacticsGrowth": 3,
+ "lv0Troops": 4610,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "S",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "破戒天香",
+ "skillDetail": "S/LV10 確率 25% 攻撃 (3×防御参加武将数)%上昇/対象:弓・馬・器・焙\n模倣不可\n①攻撃が(3×防御参加武将数)%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓・馬・器・焙　確率 25% / 攻撃 3%×防御参加武将数(280人)=840.0%(模倣不可)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録。カード画像(スキルLV10形式)から名前/コスト/攻防兵法/指揮兵数/統率4隅バッジ/スキル名と効果文を読み取った。",
+  "統率バッジはカード画像を6倍拡大して4隅個別に確認: 槍A/馬A/弓S/器A。",
+  "成長値(攻+55/防+32/兵法+3)はixanary.com(cards/1156)の生HTML成長表で確認、初期値(1100/1060/640)はカード画像と一致。",
+  "名前の（N）表記はixawiki.com武将カード一覧(天)の生HTML(BushoCard/1156上杉憲政)に無し(無印)。",
+  "初期スキル破戒天香はSランクだがdata/skill/破戒天香.jsonが未作成(要対応、本担当ではページ新規作成はしない)。",
+  "章(ch)は情報源で確認できず未確認のためnull。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。",
+  "2026-08-16: trTableの「(X×防御参加武将数)%上昇」を、サイトの既存の書き方(防御参加武将数=280人での計算値を併記)に揃えた。skillDetailは式のまま残してある。"
+ ],
+ "wikiOldestComment": "2020-02-16",
+ "wikiCommentCount": 35,
+ "chGuess": "19章",
+ "chSource": "wikiOldestComment"
+}

@@ -1,0 +1,25 @@
+{
+ "name": "太虚国崩し",
+ "rank": "S",
+ "baseRate": 25,
+ "target": "砲器",
+ "effectSummary": "S/LV10 確率 25% 攻撃 35%上昇/対象:砲器\n①攻撃 35%上昇する\n②破壊 30%上昇する",
+ "categoryLinks": [],
+ "sourceCharacters": [
+  {
+   "name": "大友宗麟（2）",
+   "no": "1028",
+   "slot": "移植不可"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "砲器　確率 25% / 攻撃 35%上昇+破壊 30%上昇"
+  }
+ ],
+ "notes": [
+  "A-3-9「武将自身の初期スキル(S以上)は無条件にページを作る」により2026-08-16に一括作成。内容は data/busho/1028.json の skillDetail / trTable からの転記で、新しい事実は持ち込んでいない。"
+ ]
+}

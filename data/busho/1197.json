@@ -1,0 +1,48 @@
+{
+ "name": "藤堂高虎",
+ "no": "1197",
+ "ch": "22章",
+ "cost": 4.5,
+ "troop": "弓馬器防",
+ "sub": "",
+ "effect": "弓馬器指揮の防御戦闘で被ダメージ20以下を最大9に軽減、防御120%上昇",
+ "furigana": "とうどうたかとら",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1197_full.png",
+ "imageChar": "assets/img/characters/no1197_char.png",
+ "atkBase": 1010,
+ "atkGrowth": 32,
+ "defBase": 1160,
+ "defGrowth": 60,
+ "tacticsBase": 650,
+ "tacticsGrowth": 3,
+ "lv0Troops": 4650,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "S",
+  "uma": "S",
+  "ki": "A"
+ },
+ "initialSkill": "獅子王ノ界門",
+ "skillDetail": "S/LV10 確率 40% 防御 120%上昇/対象:弓・馬・器\n①防御 120%上昇する\n②対象兵科を指揮した防御戦闘時自部隊内の武将が受ける20以下のダメージは最大9になる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓・馬・器　確率 40% / 防御 120%上昇(被ダメージ20以下を最大9に軽減)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録。カード画像(スキルLV10形式・no1197_full.png)から作成。ステータス・スキル文はixanary.com(cards/1197)生HTMLの成長表・スキルボックスと一致確認。",
+  "rankGrades(槍A/弓S/馬S/器A)はカード画像バッジ4隅・ixanary.com card JSON・ixawiki.com「武将カード一覧(天)」表の3ソースで一致。",
+  "名前表記はixawiki.com「武将カード一覧(天)」表で無印(藤堂高虎)を確認、（N）は付けなかった。",
+  "初期スキル獅子王ノ界門はSランクのためdata/skill/獅子王ノ界門.jsonが必要だが未作成(このバッチでは作成禁止のため報告のみ)。",
+  "章は情報源に記載が無く未確認。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2021-08-13",
+ "wikiCommentCount": 23,
+ "chGuess": "22章",
+ "chSource": "wikiOldestComment"
+}

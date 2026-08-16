@@ -1,0 +1,44 @@
+{
+ "name": "武田信玄（3）",
+ "no": "1172",
+ "ch": "20章",
+ "cost": 5,
+ "troop": "全攻",
+ "sub": "",
+ "effect": "同兵種指揮敵軍武将数×4%を攻撃効果に加算",
+ "furigana": "たけだしんげん",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1172_full.png",
+ "imageChar": "assets/img/characters/no1172_char.png",
+ "atkBase": 1250,
+ "atkGrowth": 60,
+ "defBase": 1130,
+ "defGrowth": 39,
+ "tacticsBase": 660.0,
+ "tacticsGrowth": 3.0,
+ "lv0Troops": 4740,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "S",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "風林火山 討魔",
+ "skillDetail": "S/LV10 確率 57% 攻撃 75%上昇/対象:全\n①攻撃 75%上昇する\n②この武将と同じ兵種を指揮する敵軍武将数×4%を攻撃効果に加算する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 57% / 攻撃 75%上昇(同兵種指揮敵軍武将数×4%加算)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録。カード画像(スキルLV10形式)からrankGrades(槍A/馬A/弓S/器A)を4隅バッジで確認。ステータス初期値・成長値・cost・lv0Troopsはixawiki.com(Busho/武将カード一覧(天))の一覧表と一致。名前の(3)は同一覧表の「武田信玄(3)」表記に従った。章(ch)は情報源に記載なく未確認。Sランクスキルだがdata/skill/風林火山 討魔.jsonは未作成(要新規作成、報告済み)。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2020-08-14",
+ "wikiCommentCount": 38,
+ "chGuess": "20章",
+ "chSource": "wikiOldestComment"
+}

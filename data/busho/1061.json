@@ -1,0 +1,41 @@
+{
+ "name": "龍造寺隆信",
+ "no": "1061",
+ "ch": null,
+ "cost": 4,
+ "troop": "槍弓攻破",
+ "sub": "",
+ "effect": "対象兵科の攻撃・破壊上昇",
+ "furigana": "りゅうぞうじたかのぶ",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1061_full.png",
+ "imageChar": "assets/img/characters/no1061_char.png",
+ "atkBase": 740,
+ "atkGrowth": 19,
+ "defBase": 700,
+ "defGrowth": 19,
+ "tacticsBase": 480,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3950,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "S",
+  "uma": "A",
+  "ki": "E"
+ },
+ "initialSkill": "猩猩ノ熊王",
+ "skillDetail": "S/LV10 確率 26% 攻撃 55%上昇/対象:槍・弓\n①攻撃 55%上昇する\n②破壊 20%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・弓　確率 26% / 攻撃 55%上昇+破壊 20%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録。カード画像(スキルLV10形式)から。統率バッジは左上槍S/右上馬A/左下弓S/右下器E。ixanary.com(cards/1061)生HTMLとixawiki.com武将カード一覧(天)の生HTML両方でrankGrades・基礎値・成長値・指揮兵数が一致することを確認済み。名前の（N）表記はixawiki一覧に無し(無印)。"
+ ],
+ "wikiOldestComment": "2015-05-18",
+ "wikiCommentCount": 214
+}

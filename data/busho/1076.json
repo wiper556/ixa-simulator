@@ -1,0 +1,49 @@
+{
+ "name": "立花宗茂",
+ "no": "1076",
+ "ch": "12章",
+ "cost": 3,
+ "troop": "槍弓攻防速",
+ "sub": "",
+ "effect": "槍弓部隊の攻撃・防御・速度が上昇(確率は項目ごとに異なる)",
+ "furigana": "たちばなむねしげ",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1076_full.png",
+ "imageChar": "assets/img/characters/no1076_char.png",
+ "atkBase": 900,
+ "atkGrowth": 32,
+ "defBase": 900,
+ "defGrowth": 32,
+ "tacticsBase": 470.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 3700,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "S",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "天神旋武",
+ "skillDetail": "S/LV10 確率 26%/100% 攻撃 60%上昇(確率26%)+防御 60%上昇(確率26%)+速度 35%上昇(確率100%)/対象:槍・弓\n①攻撃 60%上昇する(確率26%)\n②防御 60%上昇する(確率26%)\n③速度 35%上昇する(確率100%)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・弓　確率 26%/100% / 攻撃 60%上昇(確率26%)+防御 60%上昇(確率26%)+速度 35%上昇(確率100%)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録。カード画像(スキルLV10形式、no1076_full.png)から統率バッジ4隅・攻撃/防御/兵法/コスト/指揮兵数/武将名/初期スキル名とスキル効果を読み取った。",
+  "武将名の（N）はixawiki.com(Busho/武将カード一覧)の天レアリティ表内No.1076の表記をF-0規則(docs/character-registration-manual.md)で変換した。",
+  "成長値(atkGrowth/defGrowth/tacticsGrowth)とふりがな・illustratorはixanary.com(cards/1076)の埋め込みJSONで確認した(統率A〜Eの値はカード画像を優先し使っていない)。",
+  "章(ch)は情報源に記載が無く未確認のため null。",
+  "ixawiki一覧表でこのNo.に同名数の表記が無かったため無印のまま登録。",
+  "初期スキル「天神旋武」は既存ページdata/skill/天神旋武.jsonがあるが、そちらは攻撃60%上昇/確率26%のみの記載で、カード画像にある防御60%上昇(確率26%)・速度35%上昇(確率100%)が抜けていた。カード画像(一次情報)を優先しbusho側は3効果とも記載した。data/skill/側の修正は本担当の範囲外のため未修正(要修正候補として報告)。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2016-05-19",
+ "wikiCommentCount": 199,
+ "chGuess": "12章",
+ "chSource": "wikiOldestComment"
+}

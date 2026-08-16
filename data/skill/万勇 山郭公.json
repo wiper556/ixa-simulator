@@ -1,0 +1,25 @@
+{
+ "name": "万勇 山郭公",
+ "rank": "S",
+ "baseRate": 39,
+ "target": "馬砲器",
+ "effectSummary": "S/LV10 確率 39% 防御 67%上昇/対象:馬砲器\n①防御 67%上昇する\n②6部隊以上の防御で効果1.5倍となる",
+ "categoryLinks": [],
+ "sourceCharacters": [
+  {
+   "name": "柴田勝家（3）",
+   "no": "1122",
+   "slot": "移植不可"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "馬砲器　確率 39% / 防御 67%上昇(6部隊以上の防御で効果1.5倍)"
+  }
+ ],
+ "notes": [
+  "A-3-9「武将自身の初期スキル(S以上)は無条件にページを作る」により2026-08-16に一括作成。内容は data/busho/1122.json の skillDetail / trTable からの転記で、新しい事実は持ち込んでいない。"
+ ]
+}

@@ -1,0 +1,50 @@
+{
+ "name": "武田勝頼（3）",
+ "no": "1184",
+ "ch": "21章",
+ "cost": 5,
+ "troop": "馬器騎攻速",
+ "sub": "",
+ "effect": "馬/器/騎指揮時、攻撃1%上昇+速度90%上昇(部隊移動速度で効果変化)",
+ "furigana": "たけだかつより",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1184_full.png",
+ "imageChar": "assets/img/characters/no1184_char.png",
+ "atkBase": 1170,
+ "atkGrowth": 55,
+ "defBase": 1100,
+ "defGrowth": 34,
+ "tacticsBase": 640.0,
+ "tacticsGrowth": 3.0,
+ "lv0Troops": 4750,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "S",
+  "ki": "A"
+ },
+ "initialSkill": "騎帝炎征",
+ "skillDetail": "S/LV10 確率 100% 攻撃 1%上昇+速度 90%上昇/対象:馬器騎\n①攻撃 1%上昇する\n②速度 90%上昇する(部隊移動速度で効果変化)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "馬器騎　確率 100% / 攻撃 1%上昇+速度 90%上昇(部隊移動速度で効果変化)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録。カード画像(スキルLV10形式)から名前/コスト/攻防兵法/指揮兵数/統率4隅バッジ/スキル名と効果文を読み取った。",
+  "統率バッジはカード画像を8倍拡大して4隅個別に確認: 槍A/馬S/弓A/器A。",
+  "対象欄はカード画像では「馬/器/駒」に見えたが、ixanary.com(skills/騎帝炎征)の生HTMLが「馬器騎」としており、生テキストに従い「騎」を採用した。",
+  "成長値(攻55/防34/兵法3.0)・furigana・illustratorはixawiki.com(BushoCard/1184武田勝頼)の生HTMLで確認、初期値(攻1170/防1100/兵法640)もカード画像と一致。TR段階は無く LV1/LV10 の2段のみ(ixanary.comで確認、LV10数値はカード画像と一致)。",
+  "名前の（3）はixawiki.com(Busho/武将カード一覧)の天セクション表記「武田勝頼(3)」に従った。",
+  "初期スキル騎帝炎征はSランクだがdata/skill/騎帝炎征.jsonが未作成(要対応、本担当ではページ新規作成はしない)。",
+  "章(ch)は情報源で確認できず未確認のためnull。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2021-02-05",
+ "wikiCommentCount": 63,
+ "chGuess": "21章",
+ "chSource": "wikiOldestComment"
+}

@@ -1,0 +1,49 @@
+{
+ "name": "北畠具教",
+ "no": "1159",
+ "ch": "19章",
+ "cost": 4,
+ "troop": "弓馬器駒攻",
+ "sub": "",
+ "effect": "対象兵科指揮時攻撃参加武将数に応じ攻撃上昇",
+ "furigana": "きたばたけとものり",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1159_full.png",
+ "imageChar": "assets/img/characters/no1159_char.png",
+ "atkBase": 1140,
+ "atkGrowth": 62,
+ "defBase": 1000,
+ "defGrowth": 22,
+ "tacticsBase": 660.0,
+ "tacticsGrowth": 3,
+ "lv0Troops": 4230,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "天剣ノ神楽",
+ "skillDetail": "S/LV10 確率 35% 攻撃 (3×攻撃参加武将数)%上昇/対象:弓・馬・器・駒\n①攻撃が(3×攻撃参加武将数)%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓・馬・器・駒　確率 35% / 攻撃 (3×攻撃参加武将数)%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録。カード画像(スキルLV10形式)から名前/コスト/攻防兵法/指揮兵数/統率4隅バッジ/スキル名と効果文を読み取った。",
+  "統率バッジはカード画像を6倍拡大して4隅個別に確認: 槍A/馬A/弓A/器S。",
+  "atkBase(攻撃初期値)はカード画像で「1140」と明確に読めたが、ixanary.com(cards/1159)の生HTML成長表は初期値「1040」となっており100の食い違いがあった。BRIEFの指示(カード画像=LV10実物の数値をそのまま使ってよい)に従いカード画像の1140を採用した。防御1000・兵法660は両ソース一致。成長値(攻+62/防+22/兵法+3)はixanaryの値をそのまま使用。",
+  "名前の（N）表記はixawiki.com武将カード一覧(天)の生HTML(BushoCard/1159北畠具教)に無し(無印)。",
+  "初期スキル天剣ノ神楽はSランクだがdata/skill/天剣ノ神楽.jsonが未作成(要対応、本担当ではページ新規作成はしない)。",
+  "章(ch)は情報源で確認できず未確認のためnull。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2020-02-16",
+ "wikiCommentCount": 38,
+ "chGuess": "19章",
+ "chSource": "wikiOldestComment"
+}

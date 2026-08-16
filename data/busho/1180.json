@@ -1,0 +1,50 @@
+{
+ "name": "安東愛季（2）",
+ "no": "1180",
+ "ch": "21章",
+ "cost": 3,
+ "troop": "槍弓器鉄攻",
+ "sub": "卓越",
+ "effect": "槍/弓/器/鉄指揮時、攻撃90%上昇(卓越で最大2.5倍)",
+ "furigana": "あんどうちかすえ",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1180_full.png",
+ "imageChar": "assets/img/characters/no1180_char.png",
+ "atkBase": 1150,
+ "atkGrowth": 54,
+ "defBase": 1000,
+ "defGrowth": 35,
+ "tacticsBase": 640.0,
+ "tacticsGrowth": 3.0,
+ "lv0Troops": 3950,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "天剣七星",
+ "skillDetail": "S/LV10 確率 100% 攻撃 90%上昇/対象:槍弓器鉄\n①攻撃 90%上昇する\n②卓越時に攻撃効果を強化する(追加確率30%・2.5倍)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍弓器鉄　確率 100% / 攻撃 90%上昇(卓越:追加確率30%で2.5倍)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録。カード画像(スキルLV10形式)から名前/コスト/攻防兵法/指揮兵数/統率4隅バッジ/スキル名と効果文を読み取った。",
+  "統率バッジはカード画像を8倍拡大して4隅個別に確認: 槍S/馬A/弓A/器A。",
+  "対象欄「槍/弓/器/鉄」はカード画像とixanary.com(skills/天剣七星)・ixawiki.com(BushoCard/1180安東愛季)の生HTML両方で確認、通常の槍弓馬砲器とは異なる特殊表記だが原文どおりとした。",
+  "成長値(攻54/防35/兵法3.0)・furigana・illustratorはixawiki.com(BushoCard/1180安東愛季)の生HTMLで確認。TR段階は無く LV1/LV10 の2段のみ(ixanary.com skills/天剣七星で確認、LV10攻撃90%上昇はカード画像とも一致)。",
+  "名前の（2）はixawiki.com(Busho/武将カード一覧)の天セクション表記「安東愛季(2)」に従った。",
+  "初期スキル天剣七星はSランクだがdata/skill/天剣七星.jsonが未作成(要対応、本担当ではページ新規作成はしない)。",
+  "章(ch)は情報源で確認できず未確認のためnull。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2021-02-06",
+ "wikiCommentCount": 62,
+ "chGuess": "21章",
+ "chSource": "wikiOldestComment"
+}

@@ -1,0 +1,50 @@
+{
+ "name": "宇喜多直家（2）",
+ "no": "1187",
+ "ch": "21章",
+ "cost": 0,
+ "troop": "全防",
+ "sub": "",
+ "effect": "全指揮時、防御80%上昇(本丸防御陣形配置時のみ最大指揮兵数が陣形内最大武将と同数に・模倣不可)",
+ "furigana": "うきたなおいえ",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1187_full.png",
+ "imageChar": "assets/img/characters/no1187_char.png",
+ "atkBase": 1100,
+ "atkGrowth": 42,
+ "defBase": 1100,
+ "defGrowth": 42,
+ "tacticsBase": 640.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 2400,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "S",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "魑魅魍魎ノ界",
+ "skillDetail": "S/LV10 確率 100% 防御 80%上昇/対象:全\n模倣不可\n①防御 80%上昇する\n②本丸防御陣形に配置時のみこの武将の最大指揮兵数が陣形内で最も最大指揮兵数の大きい武将と同数になる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 防御 80%上昇(本丸防御陣形配置時のみ指揮兵数が陣形内最大武将と同数・模倣不可)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録。カード画像(スキルLV10形式)から名前/コスト/攻防兵法/指揮兵数/統率4隅バッジ/スキル名と効果文を読み取った。",
+  "コストは画像上「Cost 0」の特殊表記(赤青の盾型フォント)、ixawiki.com(BushoCard/1187宇喜多直家)の生HTMLでも「Cost 0.0」と確認、0で登録した。",
+  "統率バッジはカード画像を8倍拡大して4隅個別に確認: 槍A/馬A/弓S/器A。",
+  "成長値(攻42/防42/兵法2.5)・furigana・illustratorはixawiki.com(BushoCard/1187宇喜多直家)の生HTMLで確認、初期値(攻1100/防1100/兵法640)・指揮兵数2400もカード画像と一致。TR段階は無く LV1/LV10 の2段のみ(ixanary.com skills/魑魅魍魎ノ界で確認、LV10数値はカード画像と一致)。",
+  "名前の（2）はixawiki.com(Busho/武将カード一覧)の天セクション表記「宇喜多直家(2)」に従った。",
+  "初期スキル魑魅魍魎ノ界はSランクだがdata/skill/魑魅魍魎ノ界.jsonが未作成(要対応、本担当ではページ新規作成はしない)。",
+  "章(ch)は情報源で確認できず未確認のためnull。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2021-02-05",
+ "wikiCommentCount": 101,
+ "chGuess": "21章",
+ "chSource": "wikiOldestComment"
+}

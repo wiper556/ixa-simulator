@@ -1,0 +1,48 @@
+{
+ "name": "長尾景虎",
+ "no": "1099",
+ "ch": "14章",
+ "cost": 3,
+ "troop": "槍馬攻",
+ "sub": "",
+ "effect": "対象兵科の攻撃力上昇(敵部隊に槍か弓がいれば効果2.5倍)",
+ "furigana": "ながおかげとら",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1099_full.png",
+ "imageChar": "assets/img/characters/no1099_char.png",
+ "atkBase": 1030,
+ "atkGrowth": 26,
+ "defBase": 930,
+ "defGrowth": 23,
+ "tacticsBase": 620.0,
+ "tacticsGrowth": 3,
+ "lv0Troops": 3820,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "S",
+  "ki": "B"
+ },
+ "initialSkill": "瞑天龍騎兵",
+ "skillDetail": "S/LV10 確率 53% 攻撃 32%上昇/対象:槍・馬\n①攻撃 32%上昇する(敵部隊に槍兵科か弓兵科がいれば効果2.5倍)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・馬　確率 53% / 攻撃 32%上昇(敵部隊に槍兵科か弓兵科がいれば効果2.5倍)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録。カード画像(スキルLV10形式)から作成。カード画像のNo.1099・長尾景虎の表記を確認。",
+  "ステータス初期値1030/930/620.0・成長値+26/+23/+3・cost3・lv0Troops3820はixanary.com(cards/1099)の成長表と一致確認。",
+  "rankGradesはカード画像バッジ4隅を拡大して確認(槍S/馬S/弓A/器B)。",
+  "瞑天龍騎兵はdata/skill/にページが無い(S以上のため要新規作成、本セッションでは作成せず報告のみ)。",
+  "章(ch)は情報源で確認できず未確認のためnull。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2017-05-20",
+ "wikiCommentCount": 106,
+ "chGuess": "14章",
+ "chSource": "wikiOldestComment"
+}

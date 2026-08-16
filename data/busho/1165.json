@@ -1,0 +1,44 @@
+{
+ "name": "龍造寺隆信（2）",
+ "no": "1165",
+ "ch": "19章",
+ "cost": 3,
+ "troop": "槍弓器焙防",
+ "sub": "",
+ "effect": "6部隊以上の防御で効果1.5倍",
+ "furigana": "りゅうぞうじたかのぶ",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1165_full.png",
+ "imageChar": "assets/img/characters/no1165_char.png",
+ "atkBase": 1040,
+ "atkGrowth": 36,
+ "defBase": 1120,
+ "defGrowth": 62,
+ "tacticsBase": 650.0,
+ "tacticsGrowth": 3.0,
+ "lv0Troops": 3880,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "熊王ノ狂想曲",
+ "skillDetail": "S/LV10 確率 44% 防御 90%上昇/対象:槍・弓・器・焙\n①防御 90%上昇する(6部隊以上の防御で効果1.5倍)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・弓・器・焙　確率 44% / 防御 90%上昇(6部隊以上で1.5倍)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録。カード画像(スキルLV10形式)からrankGrades(槍S/馬A/弓A/器A)を4隅バッジで確認、ixawiki.com(BushoCard/1165龍造寺隆信)の統率力表記(槍S/馬A/弓A/器A)とも一致。ステータス初期値・成長値・cost・lv0Troopsは同ページおよびixanary.com(cards/1165)生HTMLの成長表と一致。名前の(2)は同ページ関連武将欄の「龍造寺隆信(天1)」表記およびixawiki一覧表の「龍造寺隆信(2)」表記に従った。skillDetailはixanary/ixawiki2ソースともLV1/LV10のみでTR行は確認できず。章(ch)は情報源に記載なく未確認。Sランクスキルだがdata/skill/熊王ノ狂想曲.jsonは未作成(要新規作成、報告済み)。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2020-02-15",
+ "wikiCommentCount": 51,
+ "chGuess": "19章",
+ "chSource": "wikiOldestComment"
+}

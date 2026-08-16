@@ -1,0 +1,25 @@
+{
+ "name": "無双獅子",
+ "rank": "S",
+ "baseRate": 45,
+ "target": "槍弓馬",
+ "effectSummary": "S/LV10 確率 45% 攻撃 30%上昇/対象:槍弓馬\n①攻撃 30%上昇する\n②破壊 35%上昇する",
+ "categoryLinks": [],
+ "sourceCharacters": [
+  {
+   "name": "北条氏康（2）",
+   "no": "1023",
+   "slot": "移植不可"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍弓馬　確率 45% / 攻撃 30%上昇+破壊 35%上昇"
+  }
+ ],
+ "notes": [
+  "A-3-9「武将自身の初期スキル(S以上)は無条件にページを作る」により2026-08-16に一括作成。内容は data/busho/1023.json の skillDetail / trTable からの転記で、新しい事実は持ち込んでいない。"
+ ]
+}

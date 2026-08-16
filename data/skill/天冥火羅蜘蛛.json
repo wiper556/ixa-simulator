@@ -1,0 +1,25 @@
+{
+ "name": "天冥火羅蜘蛛",
+ "rank": "S",
+ "baseRate": 44,
+ "target": "全",
+ "effectSummary": "S/LV10 確率 44% 攻撃 70%上昇 防御 70%上昇 破壊 70%上昇/対象:全\n①攻撃 70%上昇する\n②防御 70%上昇する\n③破壊 70%上昇する",
+ "categoryLinks": [],
+ "sourceCharacters": [
+  {
+   "name": "松永久秀",
+   "no": "1114",
+   "slot": "移植不可"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 44% / 攻撃 70%上昇+防御 70%上昇+破壊 70%上昇"
+  }
+ ],
+ "notes": [
+  "A-3-9「武将自身の初期スキル(S以上)は無条件にページを作る」により2026-08-16に一括作成。内容は data/busho/1114.json の skillDetail / trTable からの転記で、新しい事実は持ち込んでいない。"
+ ]
+}

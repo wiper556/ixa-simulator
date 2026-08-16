@@ -1,0 +1,25 @@
+{
+ "name": "仙術 伊呂波",
+ "rank": "S",
+ "baseRate": 40,
+ "target": "器",
+ "effectSummary": "S/LV10 確率 40% 攻撃 70%上昇/対象:器\n①攻撃 70%上昇する\n②敵部隊に兵器兵科がいれば効果が1.5倍になる",
+ "categoryLinks": [],
+ "sourceCharacters": [
+  {
+   "name": "島津忠良",
+   "no": "1141",
+   "slot": "移植不可"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "器　確率 40% / 攻撃 70%上昇(敵部隊に兵器兵科がいれば効果1.5倍)"
+  }
+ ],
+ "notes": [
+  "A-3-9「武将自身の初期スキル(S以上)は無条件にページを作る」により2026-08-16に一括作成。内容は data/busho/1141.json の skillDetail / trTable からの転記で、新しい事実は持ち込んでいない。"
+ ]
+}

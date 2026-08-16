@@ -1,0 +1,48 @@
+{
+ "name": "本願寺顕如",
+ "no": "1111",
+ "ch": "15章",
+ "cost": 4,
+ "troop": "槍馬砲器防",
+ "sub": "",
+ "effect": "槍馬砲器の防御上昇(部隊長なら発動率と効果4倍)",
+ "furigana": "ほんがんじけんにょ",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1111_full.png",
+ "imageChar": "assets/img/characters/no1111_char.png",
+ "atkBase": 1040,
+ "atkGrowth": 26,
+ "defBase": 1140,
+ "defGrowth": 28,
+ "tacticsBase": 590.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 4190,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "B",
+  "uma": "B",
+  "ki": "SS"
+ },
+ "initialSkill": "護法ノ万鐘",
+ "skillDetail": "S/LV10 確率 13% 防御 22%上昇/対象:槍馬砲器\n模倣不可\n①防御 22%上昇する\n②部隊長なら発動率と効果が4倍となる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍馬砲器　確率 13% / 防御 22%上昇(部隊長なら発動率と効果4倍)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録。カード画像(スキルLV10形式、no1111_full.png)から武将名/統率4隅バッジ(槍S・馬B・弓B・器SS)/攻防兵法初期値(1040/1140/590.0)/lv0Troops(4190)/スキル名・効果文を読み取った。",
+  "ixanary.com(cards/1111)生HTMLの埋め込みJSON(FrontImageコンポーネントのprops)でfurigana・illustrator・cost・lv0Troops・rankGrades(yari S/yumi B/kiba B/heiki SS)・成長値(攻+26/防+28/兵法+2)を裏取りし、カード画像の読み取りと完全一致することを確認した。",
+  "名前の（N）はixawiki.com(Busho/武将カード一覧)天セクションの該当行を生バイトで確認、末尾に括弧書きが無いため無印とした。",
+  "初期スキル護法ノ万鐘はSランクだがdata/skill/護法ノ万鐘.jsonが存在しない(要新規作成)。",
+  "ch(章)は情報源で確認できず未確認のためnullとした。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2018-01-15",
+ "wikiCommentCount": 71,
+ "chGuess": "15章",
+ "chSource": "wikiOldestComment"
+}

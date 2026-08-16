@@ -1,0 +1,26 @@
+{
+ "name": "堕天ノ神謀",
+ "rank": "S",
+ "baseRate": 20,
+ "target": "槍・弓・馬",
+ "noMimic": true,
+ "effectSummary": "S/LV10 確率 20% 攻撃 40%上昇/対象:槍・弓・馬\n模倣不可\n①攻撃 40%上昇する\n②部隊長なら発動率と効果が4倍になる",
+ "categoryLinks": [],
+ "sourceCharacters": [
+  {
+   "name": "黒田如水【覇】",
+   "no": "1143",
+   "slot": "移植不可"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・弓・馬　確率 20% / 攻撃 40%上昇(部隊長なら発動率と効果が4倍・模倣不可)"
+  }
+ ],
+ "notes": [
+  "A-3-9「武将自身の初期スキル(S以上)は無条件にページを作る」により2026-08-16に一括作成。内容は data/busho/1143.json の skillDetail / trTable からの転記で、新しい事実は持ち込んでいない。"
+ ]
+}

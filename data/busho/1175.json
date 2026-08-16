@@ -1,0 +1,44 @@
+{
+ "name": "浅井長政（3）",
+ "no": "1175",
+ "ch": "20章",
+ "cost": 5,
+ "troop": "全防",
+ "sub": "",
+ "effect": "自領以外加勢戦闘時のみ追加スキルの防御効果2.5倍",
+ "furigana": "あさいながまさ",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1175_full.png",
+ "imageChar": "assets/img/characters/no1175_char.png",
+ "atkBase": 1050,
+ "atkGrowth": 37,
+ "defBase": 1140,
+ "defGrowth": 64,
+ "tacticsBase": 630.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 4730,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "S",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "夜叉殺界",
+ "skillDetail": "S/LV10 確率 100% 対象:追加スキル\n模倣不可\n①このスキルを持つ武将カードは自領以外の加勢戦闘時のみ追加スキルの防御効果が2.5倍となる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "追加スキル　確率 100% / 自領以外加勢戦闘時のみ追加スキルの防御効果 2.5倍"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録。カード画像(スキルLV10形式)からrankGrades(槍A/馬A/弓S/器A)を4隅バッジで確認。ステータス初期値・成長値・cost・lv0Troopsはixawiki.com(Busho/武将カード一覧(天))の一覧表と一致。名前の(3)は同一覧表の「浅井長政(3)」表記に従った。章(ch)は情報源に記載なく未確認。Sランクスキルだがdata/skill/夜叉殺界.jsonは未作成(要新規作成、報告済み)。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2020-08-15",
+ "wikiCommentCount": 63,
+ "chGuess": "20章",
+ "chSource": "wikiOldestComment"
+}

@@ -1,0 +1,44 @@
+{
+ "name": "柴田勝家",
+ "no": "1062",
+ "ch": "10章",
+ "cost": 4,
+ "troop": "槍馬攻",
+ "sub": "",
+ "effect": "対象兵科の攻撃上昇",
+ "furigana": "しばたかついえ",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1062_full.png",
+ "imageChar": "assets/img/characters/no1062_char.png",
+ "atkBase": 760,
+ "atkGrowth": 19,
+ "defBase": 700,
+ "defGrowth": 18,
+ "tacticsBase": 520,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3900,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "B",
+  "uma": "S",
+  "ki": "B"
+ },
+ "initialSkill": "天鬼怒髪",
+ "skillDetail": "S/LV10 確率 30% 攻撃 55%上昇/対象:槍・馬\n①攻撃 55%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・馬　確率 30% / 攻撃 55%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録。カード画像(スキルLV10形式)から。統率バッジは左上槍S/右上馬S/左下弓B/右下器B。ixanary.com(cards/1062)生HTMLとixawiki.com武将カード一覧(天)の生HTML両方でrankGrades・基礎値・成長値・指揮兵数が一致することを確認済み。名前の（N）表記はixawiki一覧に無し(無印)。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2015-05-19",
+ "wikiCommentCount": 183,
+ "chGuess": "10章",
+ "chSource": "wikiOldestComment"
+}

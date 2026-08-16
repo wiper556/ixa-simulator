@@ -1,0 +1,25 @@
+{
+ "name": "天閃輪廻",
+ "rank": "S",
+ "baseRate": 44,
+ "target": "馬・砲・器",
+ "effectSummary": "S/LV10 確率 44% 防御 90%上昇/対象:馬・砲・器\n①防御 90%上昇する\n②自軍6部隊以上で防御時効果が1.5倍となる",
+ "categoryLinks": [],
+ "sourceCharacters": [
+  {
+   "name": "鍋島直茂",
+   "no": "1153",
+   "slot": "移植不可"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "馬・砲・器　確率 44% / 防御 90%上昇(自軍6部隊以上で1.5倍)"
+  }
+ ],
+ "notes": [
+  "A-3-9「武将自身の初期スキル(S以上)は無条件にページを作る」により2026-08-16に一括作成。内容は data/busho/1153.json の skillDetail / trTable からの転記で、新しい事実は持ち込んでいない。"
+ ]
+}

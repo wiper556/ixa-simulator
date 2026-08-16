@@ -1,0 +1,50 @@
+{
+ "name": "毛利輝元（4）",
+ "no": "1124",
+ "ch": "16章",
+ "cost": 4,
+ "troop": "弓砲器攻",
+ "sub": "",
+ "effect": "弓・砲・器部隊の攻撃力上昇(攻撃参加武将数に比例)",
+ "furigana": "もうりてるもと",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1124_full.png",
+ "imageChar": "assets/img/characters/no1124_char.png",
+ "atkBase": 1160,
+ "atkGrowth": 30,
+ "defBase": 1100,
+ "defGrowth": 27,
+ "tacticsBase": 670.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 4200,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "S",
+  "uma": "S",
+  "ki": "A"
+ },
+ "initialSkill": "海神ノ竜宴",
+ "skillDetail": "S/LV10 確率 25% 攻撃 (2.2×攻撃参加武将数)%上昇/対象:弓・砲・器\n①攻撃 (2.2×攻撃参加武将数)%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓・砲・器　確率 25% / 攻撃 (2.2×攻撃参加武将数)%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録。カード画像(スキルLV10形式)から武将名・統率バッジ・スキル名・初期値を確認。",
+  "ステータス初期値1160/1100/670.0・成長値+30/+27/+2.5・cost4・lv0Troops4200はixanary.com(cards/1124)とixawiki.com(BushoCard/1124毛利輝元)の2ソースで成長表と一致確認。",
+  "統率は槍A/弓S/馬S/器A。カード画像バッジ4隅とixawiki.com(Busho/武将カード一覧(天))の統率力表記(槍A/弓.S/馬.S/器A)が一致。",
+  "武将名の（4）はixawiki.com(Busho/武将カード一覧(天))の表記「毛利輝元(4)」に従った。",
+  "攻撃効果が「(2.2×攻撃参加武将数)%上昇」という式のままで、防御参加武将数(280人)のようなサイト内の統一基準人数が「攻撃参加武将数」には存在しないため、trTableで最終%まで計算せず式のまま登録した。基準人数を確定できる情報源が見つかり次第再計算が必要。",
+  "初期スキル「海神ノ竜宴」はSランクだがdata/skill/に個別ページが無い(要作成候補)。",
+  "章は情報源に記載が無く未確認。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2018-08-10",
+ "wikiCommentCount": 86,
+ "chGuess": "16章",
+ "chSource": "wikiOldestComment"
+}
