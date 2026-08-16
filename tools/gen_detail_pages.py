@@ -229,6 +229,13 @@ def main(HOST):
                 e['no'] if outdir == 'busho' else e['name'])
     print('リンク先候補: 武将%d / スキル%d' % (len(known_nos), len(known_skills)))
 
+    # 鍛錬表の「パラレル」をリンクにするための一覧(2026-08-16)。
+    # **うちにページがあるパラレルだけ。** TR6の必要ポイントが「パラレル」の
+    # 武将は184体いるが、登録済みのパラレルは12体しかない。全部リンクにすると
+    # 172件が404になるので、ここで実在するものだけを渡す。
+    parallel_nos = sorted(e['no'] for e in full.get('parallelGenerals', []))
+    print('パラレルのページがある武将: %d件' % len(parallel_nos))
+
     with sync_playwright() as pw:
         br = pw.chromium.launch()
         for src, var, fn, cid, outdir, kind, listpage in SRC:
@@ -241,6 +248,10 @@ def main(HOST):
             pg.goto(HOST + src, wait_until='networkidle')
             pg.wait_for_timeout(700)
             data = full[var]
+
+            # 鍛錬表の「パラレル」をリンクにするかの判断材料。
+            # ページ側の XXPointsCell がこれを見る(無ければリンクしない)。
+            pg.evaluate('(nos)=>{ window.__PARALLEL_NOS = nos; }', parallel_nos)
 
             # スキルの詳細は他スキルのLV10効果を併記する(隠し候補・合成先)。
             # 一覧の配列には鍛錬表が無いので、正本の全データを積んでおく。

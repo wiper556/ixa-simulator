@@ -4119,7 +4119,12 @@
     ['characters.html',          'generals',           'generals'],
     ['characters-kyoku.html',    'kyokuGenerals',      'kyokuGenerals'],
     ['characters-kyoku-ps.html', 'kyokuPsGenerals',    'kyokuGenerals'],
-    ['characters-parallel.html', 'parallelGenerals',   'generals'],
+    // 天パラレルは入れない(2026-08-16 うぐさん指示)。パラレルは元カード
+    // (番号-30000)と同じ武将の別バージョンで、初期スキルも名前も同じ。
+    // 並べると「伊達稙宗 No.1320 / 伊達稙宗 No.31320」と2行続いて読みにくい。
+    // **12枚とも元カードが登録済みで初期スキルも一致している**ので、
+    // 外しても保有武将が居なくなるスキルは無い(確認済み)。
+    // ['characters-parallel.html', 'parallelGenerals',   'generals'],
     ['characters-toku-s.html',   'tokuSecretGenerals', 'generals'],
     ['characters-toku.html',     'tokuGenerals',       'generals'],
     ['characters-ue.html',       'ueGenerals',         'generals'],
