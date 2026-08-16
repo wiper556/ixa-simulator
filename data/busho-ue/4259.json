@@ -1,7 +1,7 @@
 {
  "name": "五藤為重",
  "no": "4259",
- "ch": null,
+ "ch": "21章",
  "cost": 1.5,
  "troop": "弓防",
  "sub": "",
@@ -38,6 +38,11 @@
   "【要申し送り:数値矛盾】カード画像の初期値は攻撃580・防御620・兵法420.0・指揮兵数0/1580だが、ixanary.com/cards/4259の武将データ表では初期値が攻撃600・防御610・兵法440・指揮1580(成長値+15/+18/+2)となっており、攻撃・防御・兵法の初期値がカード画像とixanaryで食い違う(指揮兵数とコストのみ一致)。BRIEFの方針に従いLV10形式のカード画像実物の数値(580/620/420.0)を採用し、atkGrowth/defGrowth/tacticsGrowthはixanary側の数値の信頼性が揺らぐため確定情報とせずnullのままとした。ixawiki.com/index.php?五藤為重は未作成ページで裏取り不可。",
   "上カードは合成テーブル・TR段階が存在しない前提(data/busho-toku/3418.jsonの前例に合わせ、trTableはLV10のみ)。ixanaryのカードページにもTR/鍛錬・合成候補の記載なし。",
   "初期スキル「弓隊堅守」はFランクのためSランク以上のskillページ作成規約には該当せず、data/skill/弓隊堅守.json は作成していない。",
-  "章はixanary/ixawikiいずれにも記載がなく null のまま。"
- ]
+  "章はixanary/ixawikiいずれにも記載がなく null のまま。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2021-05-13",
+ "wikiCommentCount": 1,
+ "chGuess": "21章",
+ "chSource": "wikiOldestComment"
 }

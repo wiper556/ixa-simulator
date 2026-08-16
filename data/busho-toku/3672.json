@@ -17,7 +17,12 @@
  "tacticsBase": 440.0,
  "tacticsGrowth": null,
  "lv0Troops": 2700,
- "rankGrades": {"yari": "B", "yumi": "A", "uma": "C", "ki": "B"},
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "A",
+  "uma": "C",
+  "ki": "B"
+ },
  "initialSkill": "武家伝奏",
  "skillDetail": "C/LV10 確率 55% 攻撃 490%上昇+防御 490%上昇/対象:弓・砲・器\n①攻撃490%上昇する\n②防御490%上昇する\n③職業「姫」の武将に対してのみ効果がある",
  "trTable": [
@@ -30,5 +35,7 @@
  "reviewedOk": false,
  "notes": [
   "2026-08-16登録(担当C)。カード画像(スキルLV10形式)から作成。武将名・ふりがな・統率・攻防兵法初期値・指揮兵数・カードNo.・スキル名/効果・illustratorはカード画像から読み取り。ch(章)・growth系は画像に記載が無いため null。効果は職業「姫」の武将限定である点を明記した。"
- ]
+ ],
+ "wikiOldestComment": null,
+ "wikiCommentCount": null
 }

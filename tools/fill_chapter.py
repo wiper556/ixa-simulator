@@ -21,6 +21,7 @@ import glob
 import io
 import json
 import os
+import re
 import sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -52,7 +53,12 @@ def main(write=False):
             if not g:
                 n["手がかりが無い"] += 1
                 continue
-            if "か" in g:
+            # 2026-08-16: ここは「か」(9章か10章)を探していたが、chapter_guess は
+            # いまハイフン表記(「9-10章」)を出す。**あいまいな候補が素通りして
+            # ch に書き込まれていた**(章の担当が155体の作業中に発見)。
+            # 過去の459体でも No.20001 織田信長 に「22-23章」が入っていた。
+            # 「1-2章」だけは震災でログが消えた帯を指す正当な値なので別扱い。
+            if "か" in g or (re.match(r"^\d+-\d+章$", g) and g != "1-2章"):
                 n["2つに割れていて決められない"] += 1
                 continue
             n["入れられる"] += 1

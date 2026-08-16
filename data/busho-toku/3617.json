@@ -1,7 +1,7 @@
 {
  "name": "細川高国",
  "no": "3617",
- "ch": null,
+ "ch": "28章",
  "cost": 3,
  "troop": "槍砲器防速",
  "sub": "",
@@ -17,7 +17,12 @@
  "tacticsBase": 470.0,
  "tacticsGrowth": null,
  "lv0Troops": 3080,
- "rankGrades": {"yari": "A", "yumi": "B", "uma": "C", "ki": "B"},
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "B",
+  "uma": "C",
+  "ki": "B"
+ },
  "initialSkill": "大物崩れ",
  "skillDetail": "C/LV10 対象:槍・砲・器\n①確率45%で防御320%上昇する\n②確率100%で速度70%上昇する\n③加勢出陣時は速度効果が3倍になる",
  "trTable": [
@@ -29,6 +34,11 @@
  ],
  "reviewedOk": false,
  "notes": [
-  "2026-08-16登録(担当C)。カード画像(スキルLV10形式)から作成。武将名・ふりがな・統率・攻防兵法初期値・指揮兵数・カードNo.・スキル名/効果・illustratorはカード画像から読み取り。ch(章)・growth系は画像に記載が無いため null。防御(確率45%)と速度(確率100%)で発動確率が異なる複合スキルのためtrTableに両方併記した。"
- ]
+  "2026-08-16登録(担当C)。カード画像(スキルLV10形式)から作成。武将名・ふりがな・統率・攻防兵法初期値・指揮兵数・カードNo.・スキル名/効果・illustratorはカード画像から読み取り。ch(章)・growth系は画像に記載が無いため null。防御(確率45%)と速度(確率100%)で発動確率が異なる複合スキルのためtrTableに両方併記した。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2025-01-15",
+ "wikiCommentCount": 1,
+ "chGuess": "28章",
+ "chSource": "wikiOldestComment"
 }

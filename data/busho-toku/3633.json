@@ -17,7 +17,12 @@
  "tacticsBase": 460.0,
  "tacticsGrowth": null,
  "lv0Troops": 2680,
- "rankGrades": {"yari": "B", "yumi": "A", "uma": "C", "ki": "B"},
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "A",
+  "uma": "C",
+  "ki": "B"
+ },
  "initialSkill": "聖風",
  "skillDetail": "C/LV10 確率 100% 攻撃 345%上昇+防御 345%上昇/対象:弓・砲・器　卓越\n①攻撃345%上昇する\n②防御345%上昇する\n③このスキルを所持する武将の全スキルの卓越確率に15%を加算する(模倣不可)",
  "trTable": [
@@ -30,5 +35,7 @@
  "reviewedOk": false,
  "notes": [
   "2026-08-16登録(担当C)。カード画像(スキルLV10形式)から作成。武将名・ふりがな・統率・攻防兵法初期値・指揮兵数・カードNo.・スキル名/効果・illustratorはカード画像から読み取り。ch(章)・growth系は画像に記載が無いため null。卓越確率加算効果があるためsub=卓越とした。"
- ]
+ ],
+ "wikiOldestComment": null,
+ "wikiCommentCount": 0
 }

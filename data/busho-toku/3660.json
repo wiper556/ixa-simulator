@@ -17,7 +17,12 @@
  "tacticsBase": 450.0,
  "tacticsGrowth": null,
  "lv0Troops": 3100,
- "rankGrades": {"yari": "C", "yumi": "A", "uma": "B", "ki": "B"},
+ "rankGrades": {
+  "yari": "C",
+  "yumi": "A",
+  "uma": "B",
+  "ki": "B"
+ },
  "initialSkill": "猪断",
  "skillDetail": "C/LV10 確率 48% 攻撃 350%上昇/対象:弓・砲・器\n①攻撃350%上昇する\n②自部隊同時攻撃時部隊総コストからこの武将分のコストを最大0.5まで除外する(模倣不可)",
  "trTable": [
@@ -30,5 +35,7 @@
  "reviewedOk": false,
  "notes": [
   "2026-08-16登録(担当C)。カード画像(スキルLV10形式)から作成。武将名・ふりがな・統率・攻防兵法初期値・指揮兵数・カードNo.・スキル名/効果はカード画像から読み取り。illustratorは画像の文字が小さく「ホマ蔵」と読み取ったが確信度はやや低い。ch(章)・growth系は画像に記載が無いため null。"
- ]
+ ],
+ "wikiOldestComment": null,
+ "wikiCommentCount": 0
 }

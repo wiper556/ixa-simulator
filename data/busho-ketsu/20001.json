@@ -24,9 +24,9 @@
  "wikiOldestComment": "2022-02-04",
  "wikiCommentCount": 58,
  "chGuess": "22-23章",
- "ch": "22-23章",
- "chSource": "wikiOldestComment",
+ "ch": null,
  "notes": [
-  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。",
+  "2026-08-16: chが「22-23章」というあいまいな値のまま入っていたので null に戻した。fill_chapter.py のあいまい判定が「か」しか見ておらず、chapter_guess のハイフン表記(22-23章)が素通りしていたため(同日に道具側も直した)。"
  ]
 }
