@@ -1,0 +1,112 @@
+{
+ "name": "三浦按針（1）",
+ "no": "2719",
+ "ch": "未確認",
+ "cost": 2.5,
+ "troop": "特",
+ "sub": "",
+ "effect": "アイテム発掘率 3倍/金山発掘距離 50%上昇(重複不可)",
+ "furigana": "みうらあんじん",
+ "illustrator": "BISAI",
+ "imageFull": "assets/img/characters/no2719_full.png",
+ "imageChar": "assets/img/characters/no2719_char.png",
+ "atkBase": 640,
+ "atkGrowth": 19.0,
+ "defBase": 640,
+ "defGrowth": 17.0,
+ "tacticsBase": 470.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 2640,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "B"
+ },
+ "initialSkill": "西洋算術",
+ "skillDetail": "A/LV10 確率 100% アイテム発掘率 3倍/金山発掘距離 50%上昇/対象:金山\n①アイテム発掘率が3倍になる\n②金山発掘距離が50%上昇する(重複不可)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "金山　確率 100% / アイテム発掘率 3倍+金山発掘距離 50%上昇(重複不可)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "神速",
+   "rank": "A",
+   "afterSkill": "神速",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "速度 55%上昇",
+   "afterEffectShort": "速度 55%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "背水之陣",
+   "rank": "B",
+   "afterSkill": "背水之陣",
+   "afterRank": "B",
+   "target": "槍弓馬",
+   "rate": "20%",
+   "effectShort": "防御 37%上昇",
+   "afterEffectShort": "防御 37%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "覇道 不如帰",
+   "rank": "S",
+   "afterSkill": "騎神",
+   "afterRank": "SS",
+   "target": "槍馬砲",
+   "rate": "30%",
+   "effectShort": "攻撃 30%上昇+破壊 30%上昇",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 (コストx4.5) %+速度 50%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "天の福音",
+   "rank": "C",
+   "afterSkill": "義兵進軍",
+   "afterRank": "C",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "デッキ上武将回復率 20%上昇",
+   "afterTarget": "槍弓馬砲",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 7%上昇+速度 10%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "一期一会",
+   "rank": "C",
+   "afterSkill": "神速",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "デッキ上武将回復率 20%上昇",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "速度 55%上昇"
+  }
+ ],
+ "notes": [
+  "2026-08-16 新規登録(担当K6)。カード画像はスキル表記がLV1の育成前カードのため、画像から採ったのは武将名/統率(4隅バッジ)/スキル名/攻撃・防御・兵法の初期値/覇でないこと/カードNo.の6項目のみ(B-00)。",
+  "武将名の（1）: ixawiki武将カード一覧(極)で「三浦按針」は No.2719(無印) と No.2785(2) の2枚。初回コメント日も 2719=2013-12-05 < 2785=2020-07-10 で一致するため2719が（1）。既登録のNo.2785「三浦按針（2）」は変更不要。",
+  "統率は画像の4隅バッジで槍B/馬A/弓A/器Bを個別に拡大して確認。ixawiki(BushoCard/2719三浦按針)の「統率力 槍B 馬A 弓A 器B」と一致。",
+  "コスト2.5・指揮兵数2640・初期値640/640/470・成長値+19/+17/+2.5・ふりがな・絵師(BISAI)は ixanary.com(cards/2719) と ixawiki.com(BushoCard/2719三浦按針) の2ソースで完全一致。lv0Troopsはixanaryの★0-0(2640)。",
+  "スキル効果はLV1カードのため外部ソースを採用。ixanary/ixawikiともLV10=アイテム発掘率3倍・金山発掘距離50%上昇(対象 金山・重複不可)で完全一致。TR段はどちらのソースにも無い。戦闘スキルではないためtroopは「特」(軸なし)とした。",
+  "合成候補はixanary.com(skills/西洋算術)の1次/2次と ixawiki(BushoCard/2719)の合成候補テーブルの2ソースで全5枠完全一致(A=神速[A]自己参照、B=背水之陣[B]自己参照、C=覇道 不如帰[S]→騎神[SS]、S1=天の福音[C]→義兵進軍[C]、S2=一期一会[C]→神速[A])。各枠のtarget/rate/effectShortは候補スキル自身のixanaryページのLV10行から転記。",
+  "C枠の覇道 不如帰[S]はSランクのため data/skill/覇道 不如帰.json を新規作成し、移植後の騎神[SS]側にはA-3-12に従いgrantedViaSkillsで元スキルを追加した。初期スキル西洋算術はAランクかつixanaryに「合成不可スキルです」と明記されているためページ作成対象外。",
+  "章はixanary.com/ixawiki.comのカードページに記載が無く未確認。"
+ ],
+ "reviewedOk": true,
+ "wikiOldestComment": "2013-12-05",
+ "wikiCommentCount": 218,
+ "chGuess": "7章"
+}

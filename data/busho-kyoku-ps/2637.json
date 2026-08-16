@@ -1,0 +1,143 @@
+{
+ "name": "ラーメンマン",
+ "no": "2637",
+ "ch": "未確認",
+ "cost": 4.5,
+ "troop": "弓砲器防",
+ "sub": "",
+ "effect": "防御 1000%上昇+破壊 150%上昇(確率29%)",
+ "furigana": "らーめんまん",
+ "illustrator": "ゆでたまご／集英社・キン肉マン製作委員会",
+ "imageFull": "assets/img/characters/no2637_full.png",
+ "imageChar": "assets/img/characters/no2637_char.png",
+ "atkBase": 1100,
+ "atkGrowth": 55,
+ "defBase": 1220,
+ "defGrowth": 65,
+ "tacticsBase": 540,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 4580,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "S",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "百戦百勝脚",
+ "skillDetail": "S/LV10 確率 29% 防御 1000%上昇 破壊 150%上昇/対象:弓砲器\n①防御 1000%上昇する\n②破壊 150%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓・砲・器　確率 29% / 防御 1000%上昇+破壊 150%上昇"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": null
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": null
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": null
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": null
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": null
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": null
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "筋骨隆々",
+   "rank": "S",
+   "afterSkill": "筋骨隆々",
+   "afterRank": "S",
+   "target": "全 不屈1 兵站",
+   "rate": "9%",
+   "effectShort": "攻撃 270%上昇+防御 270%上昇",
+   "afterTarget": "全 不屈1 兵站",
+   "afterRate": "9%",
+   "afterEffectShort": "攻撃 270%上昇+防御 270%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "百戦百勝脚",
+   "rank": "S",
+   "afterSkill": "刹那無影",
+   "afterRank": "SS",
+   "target": "弓・砲・器",
+   "rate": "29%",
+   "effectShort": "防御 1000%上昇+破壊 150%上昇",
+   "afterTarget": "部隊長",
+   "afterRate": "55%",
+   "afterEffectShort": "所属部隊の部隊長が持つ初期スキルを通常攻撃/防御効果1.15倍にして模倣する(戦闘スキルのみ)+速度 200%上昇(確率100%)"
+  },
+  {
+   "slot": "C",
+   "skill": "瞬刻無影",
+   "rank": "S",
+   "afterSkill": "朧雲ノ閃撃",
+   "afterRank": "SSS",
+   "target": "部隊長",
+   "rate": "45%",
+   "effectShort": "部隊長の初期スキルを1.1倍に強化して模倣(確率45%)+速度 100%上昇(確率100%)(TRなし)",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 170%上昇+速度 240%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "刹那無影",
+   "rank": "SS",
+   "afterSkill": "刹那無影",
+   "afterRank": "SS",
+   "target": "部隊長",
+   "rate": "55%",
+   "effectShort": "所属部隊の部隊長が持つ初期スキルを通常攻撃/防御効果1.15倍にして模倣する(戦闘スキルのみ)+速度 200%上昇(確率100%)",
+   "afterTarget": "部隊長",
+   "afterRate": "55%",
+   "afterEffectShort": "所属部隊の部隊長が持つ初期スキルを通常攻撃/防御効果1.15倍にして模倣する(戦闘スキルのみ)+速度 200%上昇(確率100%)"
+  },
+  {
+   "slot": "S2",
+   "skill": "神屋楯比売命",
+   "rank": "SS",
+   "afterSkill": "神屋楯比売命",
+   "afterRank": "SS",
+   "target": "自身",
+   "rate": "70%",
+   "effectShort": "自身が持つ初期スキルを模倣する(戦闘スキルのみ)",
+   "afterTarget": "自身",
+   "afterRate": "70%",
+   "afterEffectShort": "自身が持つ初期スキルを模倣する(戦闘スキルのみ)"
+  }
+ ],
+ "notes": [
+  "キン肉マンコラボの極(プラチナ極)。カード画像はスキル欄が「LV1」表記のためB-00のLV1形式で、画像から採ったのは武将名・統率(4隅バッジ拡大)・スキル名・攻撃/防御/兵法の初期値・覇の有無・カードNo.の6項目のみ。効果量・成長値・指揮兵数・合成候補は外部ソースで確認した。",
+  "統率は槍A/馬A/弓S/器A(カード画像バッジ拡大)。ixawiki.com(BushoCard/2637ラーメンマン)と一致。",
+  "コスト4.5・指揮4580(★0-0)・成長値+55/+65/+2.5はixanary.com(cards/2637)。カード表示(LV.0・★なし)の0/4580、ixawiki.comの4580とも一致。",
+  "ixawiki.comはこのスキルに「部隊内武将スキル発動率＋10%」の行を付けているが、ixanary.com・ixagno.blog.fc2.com(限定武将一覧)・カード画像(LV1)のいずれにもその効果は無い。同コラボのテリーマン(Tツイスター)の効果文の混入と判断して採用しなかった。",
+  "合成テーブルはixanary.com(skills/百戦百勝脚)の1次/2次のみ。ixawiki側は空テンプレートで裏取りできていない(単一ソース)。",
+  "A-3-8の2ソース要件を満たせないため青丸のまま。合成テーブル(スロット)の裏が取れる情報源がixanary.comの1つしか無く(ixawikiの合成候補表は空テンプレート、ixagno.blog.fc2.comにキン肉マンコラボ極の個別記事が無い)、「単一ソースのまま黄色丸にしない」規約に従ってreviewedOkを立てていない。"
+ ],
+ "wikiOldestComment": "2025-12-25",
+ "wikiCommentCount": 1,
+ "chGuess": "30章"
+}

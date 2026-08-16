@@ -1,0 +1,146 @@
+{
+ "name": "志々雄真実【覇】",
+ "no": "10053",
+ "ch": "未確認",
+ "cost": 5.5,
+ "troop": "全攻",
+ "sub": "",
+ "effect": "このスキルを持つ武将カードは追加・極限スキルの攻撃・破壊効果が2倍(模倣不可)",
+ "furigana": "ししおまこと",
+ "illustrator": "NW/S,RKKD 直良有祐",
+ "imageFull": "assets/img/characters/no10053_full.png",
+ "imageChar": "assets/img/characters/no10053_char.png",
+ "atkBase": 2550,
+ "atkGrowth": 170,
+ "defBase": 1900,
+ "defGrowth": 130,
+ "tacticsBase": 880,
+ "tacticsGrowth": 4.5,
+ "lv0Troops": 5180,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "X"
+ },
+ "initialSkill": "炎統極刃",
+ "skillDetail": "SSS/LV10 確率 100% 攻撃 770%上昇/対象:全\n模倣不可\n①攻撃 770%上昇する\n②このスキルを持つ武将カードは追加・極限スキルの攻撃・破壊効果が2倍となる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 攻撃 770%上昇(このスキルを持つ武将カードは追加・極限スキルの攻撃・破壊効果が2倍・模倣不可)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": "全　確率 100% / 攻撃 1030%上昇(追加・極限スキルの攻撃・破壊効果が2倍)"
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": "全　確率 100% / 攻撃 1410%上昇(追加・極限スキルの攻撃・破壊効果が2倍)"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": "全　確率 100% / 攻撃 1929%上昇+破壊 100%上昇(追加・極限スキルの攻撃・破壊効果が2倍)"
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": "全　確率 100% / 攻撃 2830%上昇+破壊 200%上昇(追加・極限スキルの攻撃・破壊効果が2倍)"
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": "全　確率 100% / 攻撃 4400%上昇+破壊 350%上昇(追加・極限スキルの攻撃・破壊効果が2倍)"
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": null
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "破邪後輝",
+   "rank": "SS",
+   "afterSkill": "飛龍衝天",
+   "afterRank": "SS",
+   "target": "全 覇道",
+   "rate": "100%",
+   "effectShort": "攻撃 770%上昇+速度 150%上昇+破壊 150%上昇+覇道を持つため所属部隊の武将のスキルを無効化・発動率低下から保護",
+   "afterTarget": "全 飛翔15",
+   "afterRate": "45%",
+   "afterEffectShort": "攻撃 200%上昇+(7.5×防御参加武将数)%を攻撃効果に加算(模倣不可)"
+  },
+  {
+   "slot": "B",
+   "skill": "叛逆近景",
+   "rank": "S",
+   "afterSkill": "開闢ノ逆鉾",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "攻撃 395%上昇+卓越:攻撃戦闘時追加確率1%で自部隊の兵士被害20%減少(部隊内重複上限2・模倣不可)",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 254%上昇+卓越:攻撃戦闘時追加確率30%で自部隊の兵士被害15%減少(部隊内重複上限2・模倣不可)"
+  },
+  {
+   "slot": "C",
+   "skill": "神羅聖域",
+   "rank": "SS",
+   "afterSkill": "神羅聖域",
+   "afterRank": "SS",
+   "target": "全 覇道",
+   "rate": "40%",
+   "effectShort": "攻撃 900%上昇+防御 900%上昇+破壊 150%上昇+覇道を持つため所属部隊の武将のスキルを無効化・発動率低下から保護",
+   "afterTarget": "全 覇道",
+   "afterRate": "40%",
+   "afterEffectShort": "攻撃 900%上昇+防御 900%上昇+破壊 150%上昇+覇道を持つため所属部隊の武将のスキルを無効化・発動率低下から保護"
+  },
+  {
+   "slot": "S1",
+   "skill": "万物神勇",
+   "rank": "SSS",
+   "afterSkill": "万物神勇",
+   "afterRank": "SSS",
+   "target": "全 撤退",
+   "rate": "43%",
+   "effectShort": "攻撃 (9.2×防御参加武将数)%上昇+撤退(陣での防御戦闘に参加しない)",
+   "afterTarget": "全 撤退",
+   "afterRate": "43%",
+   "afterEffectShort": "攻撃 (9.2×防御参加武将数)%上昇+撤退(陣での防御戦闘に参加しない)"
+  },
+  {
+   "slot": "S2",
+   "skill": "十束ノ神域",
+   "rank": "SS",
+   "afterSkill": "天聖宝冠",
+   "afterRank": "SSS",
+   "target": "全 覇道",
+   "rate": "100%",
+   "effectShort": "攻撃 320%上昇+速度 70%上昇+覇道を持つため所属部隊の武将のスキルを無効化・発動率低下から保護",
+   "afterTarget": "全",
+   "afterRate": "45%",
+   "afterEffectShort": "攻撃 100%上昇((5.0×防御参加武将数)%を攻撃効果に加算・模倣不可)"
+  }
+ ],
+ "notes": [
+  "るろうに剣心コラボの天(覇)。2024年11月の「るろ剣コラボ包み【天】」で販売、2025年11月に第二弾で再販(ixagno.blog.fc2.com・ixawikiの紹介文)。カード画像はスキル欄が「LV1」表記のためB-00のLV1形式で、画像から採ったのは武将名・統率(4隅バッジ拡大)・スキル名・攻撃/防御/兵法の初期値・覇の有無・カードNo.の6項目のみ。",
+  "同名の極(No.2603 志々雄真実)が別に存在するがレアリティが違うため（N）は振らない。カード上に覇表記があるので名前は「志々雄真実【覇】」。",
+  "統率は槍S/馬A/弓A/器X(虹色)(カード画像バッジ拡大)。ixawiki.com(BushoCard/10053志々雄真実)と一致。",
+  "カード表示の指揮兵数0/7980は「天限突破」状態の値。5180+6×200+800+800=7980でixanary.com(★0-0=5180)・ixawiki.com(5180)と整合する。",
+  "コスト5.5・成長値+170/+130/+4.5・絵師はixanary.com(cards/10053)とixawiki.comが一致。初期値2550/1900/880はカード実物を含め3ソース一致。",
+  "スキルLV10〜TR5はixanary.com(skills/炎統極刃)とixagno.blog.fc2.com(blog-entry-10044)が全段一致、ixawiki.comもLV10とTR5が一致。TR6は情報源に無いためnull。",
+  "9項目チェック: 9項目すべて該当なし(倍加効果のみでキーワードを持たない)。",
+  "合成テーブルはixanary.com(skills/炎統極刃)とixagno.blog.fc2.com(blog-entry-10044)の2ソースでA〜S2の1次/2次が完全一致。ixawikiの合成候補表は空テンプレート。"
+ ],
+ "reviewedOk": true,
+ "wikiOldestComment": "2024-11-13",
+ "wikiCommentCount": 14,
+ "chGuess": "28章"
+}

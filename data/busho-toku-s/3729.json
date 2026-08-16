@@ -1,0 +1,146 @@
+{
+ "name": "呂宋助左衛門",
+ "no": "3729",
+ "ch": "未確認",
+ "cost": 3.0,
+ "troop": "全防",
+ "sub": "",
+ "effect": "全防 46%上昇/銅銭獲得率 4%(対人撃破兵数に応じて銅銭獲得)",
+ "furigana": "るそんすけざえもん",
+ "illustrator": "碧風羽",
+ "imageFull": "assets/img/characters/no3729_full.png",
+ "imageChar": "assets/img/characters/no3729_char.png",
+ "atkBase": 860,
+ "atkGrowth": 22.0,
+ "defBase": 880,
+ "defGrowth": 23.0,
+ "tacticsBase": 460.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2800,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "呂宋の豪商",
+ "skillDetail": "A/LV10 確率 36% 全防 46%上昇/銅銭獲得率 4%/対象:全\n①全防が46%上昇する\n②対人撃破兵数に応じて銅銭を獲得する(銅銭獲得率 4%)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 36% / 全防 46%上昇+銅銭獲得率 4%(対人撃破兵数に応じて銅銭獲得)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": null
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": null
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": null
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": null
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": null
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": null
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "槍隊襲撃",
+   "rank": "F",
+   "afterSkill": "槍隊堅守",
+   "afterRank": "F",
+   "target": "槍",
+   "rate": "20%",
+   "effectShort": "攻撃 10%上昇",
+   "afterTarget": "槍",
+   "afterRate": "20%",
+   "afterEffectShort": "槍防 10%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "玄武の落延",
+   "rank": "B",
+   "afterSkill": "将軍親政",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "防御 40%上昇(兵士被害増加・武将追加ダメージのスキル効果を全て無効化)",
+   "afterTarget": "槍馬",
+   "afterRate": "30%",
+   "afterEffectShort": "攻撃 7%上昇+防御 7%上昇(戦闘に参加した自軍全部隊に効果)"
+  },
+  {
+   "slot": "C",
+   "skill": "彷徨う福音",
+   "rank": "B",
+   "afterSkill": "彷徨う福音",
+   "afterRank": "B",
+   "target": "全",
+   "rate": "20%",
+   "effectShort": "銅銭獲得率 2.5%(対人撃破兵数に応じて自軍全員が銅銭獲得・重複発動上限数4)",
+   "afterEffectShort": "銅銭獲得率 2.5%(対人撃破兵数に応じて自軍全員が銅銭獲得・重複発動上限数4)"
+  },
+  {
+   "slot": "S1",
+   "skill": "武人の浄財",
+   "rank": "C",
+   "afterSkill": "攻城の妙技",
+   "afterRank": "S",
+   "target": "全",
+   "rate": "35%",
+   "effectShort": "銅銭獲得率 5%(参加した対人攻撃/防御で倒した兵数x銅銭獲得率=獲得銅銭)",
+   "afterTarget": "全",
+   "afterRate": "10%",
+   "afterEffectShort": "戦闘勝利時のみ防御側の兵士被害数+40%"
+  },
+  {
+   "slot": "S2",
+   "skill": "数奇者",
+   "rank": "C",
+   "afterSkill": "神勅賢母",
+   "afterRank": "S",
+   "target": "全",
+   "rate": null,
+   "effectShort": "取引手数料 30%軽減(重複不可)",
+   "afterTarget": "槍馬砲",
+   "afterRate": "25%",
+   "afterEffectShort": "防御 39%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3729 と skills/呂宋の豪商)、ixawiki.com(BushoCard/3729呂宋助左衛門)の2ソースで登録(2026-08-16)。",
+  "カード画像はスキル欄が「呂宋の豪商LV1」表記の育成前カード(B-00)。画像から読んだのは武将名/統率(4隅バッジ)/スキル名/攻撃・防御・兵法の初期値/覇の有無/カードNo.の6項目のみで、効果量・成長値・指揮兵数・合成候補はすべて外部ソースで確認した。",
+  "lv0Troopsはixanaryの「指揮」欄(★0-0)の値(B-01。突破ランク別の値は+0.5版なので使わない)。",
+  "合成候補はixanaryのスキルページ(skills/呂宋の豪商)の1次(移植前)・2次(移植後)。ixawikiの合成候補テーブルとも全5枠一致。",
+  "TR段階: ixanary/ixawikiともLV1とLV10しか無く、鍛錬(TR)の段が存在しない。trTableのTR行はB-0のテンプレートどおり残してeffectをnullにしてある(表示側は値が1つも無いTR行を出さない)。",
+  "覇の表記はカード画像に無し。特レアリティ(3xxx)に同名カードは他に無いため(data/wiki_card_dates.json)、武将名に（N）は付けない。",
+  "ixagno.blog.fc2.com(blog-entry-5252「呂宋助左衛門【特】(No.3729)の考察」)を3ソース目として確認。成長値(攻撃22/防御23/兵法2.0)・合成テーブル全5枠がixanary/ixawikiと完全一致。同記事は「模倣・重複発動可能」と明記しており、効果文に模倣不可/重複不可の注記が無いことと整合する。",
+  "上昇対象の表記は、カード画像とixawikiがどちらも「全防」、ixanaryだけが「防御」。カード画像を正として「全防」とした(B-00)。",
+  "ixawikiの指揮兵数表は極限突破を4000としているが、これはcalcTroopsForBreakthrough(2800,'極限突破')=4200とも、ixanaryの4400(B-01の+0.5版)とも合わない。他の5体では計算式とカード実物が一致しているためixawiki側の書き誤りと判断し、lv0Troops=2800(ixanary★0-0、ixawiki★0とも一致)のみを登録した。",
+  "章はixanary/ixawiki/ixagnoのいずれにも章番号の記載が無く未確認。ixagnoは「2017年10月〜2018年1月までの期間限定排出」と書いており、tools/chapter_guess.pyの章表(16章=2018-08-10〜)より前のため機械的な当たりも付かない。"
+ ],
+ "reviewedOk": true,
+ "wikiOldestComment": "2017-10-03",
+ "wikiCommentCount": 78,
+ "chGuess": null
+}

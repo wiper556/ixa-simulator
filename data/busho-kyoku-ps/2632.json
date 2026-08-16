@@ -1,0 +1,142 @@
+{
+ "name": "バッファローマン",
+ "no": "2632",
+ "ch": "未確認",
+ "cost": 4.5,
+ "troop": "馬砲器攻",
+ "sub": "",
+ "effect": "攻撃 1000%上昇+破壊 150%上昇(確率29%)",
+ "furigana": "ばっふぁろーまん",
+ "illustrator": "ゆでたまご／集英社・キン肉マン製作委員会",
+ "imageFull": "assets/img/characters/no2632_full.png",
+ "imageChar": "assets/img/characters/no2632_char.png",
+ "atkBase": 1230,
+ "atkGrowth": 65,
+ "defBase": 1080,
+ "defGrowth": 50,
+ "tacticsBase": 520,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 4580,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "S",
+  "ki": "A"
+ },
+ "initialSkill": "Ｈ・ミキサー",
+ "skillDetail": "S/LV10 確率 29% 攻撃 1000%上昇 破壊 150%上昇/対象:馬砲器\n①攻撃 1000%上昇する\n②破壊 150%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "馬・砲・器　確率 29% / 攻撃 1000%上昇+破壊 150%上昇"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": null
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": null
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": null
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": null
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": null
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": null
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "筋骨隆々",
+   "rank": "S",
+   "afterSkill": "筋骨隆々",
+   "afterRank": "S",
+   "target": "全 不屈1 兵站",
+   "rate": "9%",
+   "effectShort": "攻撃 270%上昇+防御 270%上昇",
+   "afterTarget": "全 不屈1 兵站",
+   "afterRate": "9%",
+   "afterEffectShort": "攻撃 270%上昇+防御 270%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "Ｈ・ミキサー",
+   "rank": "S",
+   "afterSkill": "叛逆近景",
+   "afterRank": "S",
+   "target": "馬・砲・器",
+   "rate": "29%",
+   "effectShort": "攻撃 1000%上昇+破壊 150%上昇",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 395%上昇+卓越:攻撃戦闘時追加確率1%で自部隊の兵士被害20%減少(部隊内重複上限2・模倣不可)"
+  },
+  {
+   "slot": "C",
+   "skill": "破軍騎行",
+   "rank": "SS",
+   "afterSkill": "破軍騎行",
+   "afterRank": "SS",
+   "target": "全 不屈2",
+   "rate": "100%",
+   "effectShort": "攻撃 750%上昇+不屈2(攻撃戦闘敗北時指揮兵が不屈値×1000まで回復)",
+   "afterTarget": "全 不屈2",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 750%上昇+不屈2(攻撃戦闘敗北時指揮兵が不屈値×1000まで回復)"
+  },
+  {
+   "slot": "S1",
+   "skill": "叛逆近景",
+   "rank": "S",
+   "afterSkill": "開闢ノ逆鉾",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "攻撃 395%上昇+卓越:攻撃戦闘時追加確率1%で自部隊の兵士被害20%減少(部隊内重複上限2・模倣不可)",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 254%上昇+卓越:攻撃戦闘時追加確率30%で自部隊の兵士被害15%減少(部隊内重複上限2・模倣不可)"
+  },
+  {
+   "slot": "S2",
+   "skill": "神屋楯比売命",
+   "rank": "SS",
+   "afterSkill": "神屋楯比売命",
+   "afterRank": "SS",
+   "target": "自身",
+   "rate": "70%",
+   "effectShort": "自身が持つ初期スキルを模倣する(戦闘スキルのみ)",
+   "afterTarget": "自身",
+   "afterRate": "70%",
+   "afterEffectShort": "自身が持つ初期スキルを模倣する(戦闘スキルのみ)"
+  }
+ ],
+ "notes": [
+  "キン肉マンコラボの極(プラチナ極)。カード画像はスキル欄が「LV1」表記のためB-00のLV1形式で、画像から採ったのは武将名・統率(4隅バッジ拡大)・スキル名・攻撃/防御/兵法の初期値・覇の有無・カードNo.の6項目のみ。効果量・成長値・指揮兵数・合成候補は外部ソースで確認した。",
+  "統率は槍A/馬S/弓A/器A(カード画像バッジ拡大)。ixawiki.com(BushoCard/2632バッファローマン)と一致。",
+  "コスト4.5・指揮4580(★0-0)・成長値+65/+50/+2.5はixanary.com(cards/2632)。カード表示(LV.0・★なし)の0/4580、ixawiki.comの4580とも一致。",
+  "スキル効果(LV10・確率29%/馬砲器/攻撃1000%/破壊150%)はixanary.comとixawiki.comが一致。",
+  "スキル名の「Ｈ」はixanaryが全角Ｈ、ixawikiが半角H。ixanaryとassets/js/ixa-data.jsの既存登録に合わせて全角にした。",
+  "合成テーブルはixanary.com(skills/Ｈ・ミキサー)の1次/2次のみ。ixawiki側は空テンプレートで裏取りできていない(単一ソース)。",
+  "A-3-8の2ソース要件を満たせないため青丸のまま。合成テーブル(スロット)の裏が取れる情報源がixanary.comの1つしか無く(ixawikiの合成候補表は空テンプレート、ixagno.blog.fc2.comにキン肉マンコラボ極の個別記事が無い)、「単一ソースのまま黄色丸にしない」規約に従ってreviewedOkを立てていない。"
+ ],
+ "wikiCommentCount": 0
+}

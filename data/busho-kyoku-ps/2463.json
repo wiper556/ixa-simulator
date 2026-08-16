@@ -1,0 +1,145 @@
+{
+ "name": "初鹿野信昌",
+ "no": "2463",
+ "ch": "未確認",
+ "cost": 3,
+ "troop": "馬砲器攻速",
+ "sub": "飛翔9",
+ "effect": "自部隊同時攻撃時、参加自部隊中最速の部隊移動時間を用いて合流出陣できる(模倣不可)",
+ "furigana": "はじかののぶまさ",
+ "illustrator": "正子公也",
+ "imageFull": "assets/img/characters/no2463_full.png",
+ "imageChar": "assets/img/characters/no2463_char.png",
+ "atkBase": 1150,
+ "atkGrowth": 57,
+ "defBase": 1120,
+ "defGrowth": 52,
+ "tacticsBase": 560,
+ "tacticsGrowth": 3,
+ "lv0Troops": 3500,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "S",
+  "ki": "A"
+ },
+ "initialSkill": "香車伝右衛門",
+ "skillDetail": "S/LV10 確率 100% 攻撃 210%上昇/対象:馬・砲・器　飛翔9\n模倣不可\n①攻撃 210%上昇する\n②速度 120%上昇する\n③飛翔9を持つ\n④自部隊同時攻撃時 参加自部隊中最速の部隊移動時間を用いて合流出陣できる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "馬・砲・器 飛翔9　確率 100% / 攻撃 210%上昇+速度 120%上昇(自部隊同時攻撃時、参加自部隊中最速の部隊移動時間を用いて合流出陣できる・模倣不可)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": null
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": null
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": null
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": null
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": null
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": null
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "鬼滅刺",
+   "rank": "A",
+   "afterSkill": "布都御魂ノ鬨",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "攻撃 70%上昇+防御 70%上昇(卓越確率+25%加算・模倣不可)",
+   "afterTarget": "全",
+   "afterRate": "35%",
+   "afterEffectShort": "攻撃 40%上昇+防御 40%上昇(所属部隊内のレアリティS以上のスキル個数×20%を攻防効果に加算)"
+  },
+  {
+   "slot": "B",
+   "skill": "香車伝右衛門",
+   "rank": "S",
+   "afterSkill": "黒飛燕剣",
+   "afterRank": "S",
+   "target": "馬・砲・器 飛翔9",
+   "rate": "100%",
+   "effectShort": "攻撃 210%上昇+速度 120%上昇(自部隊同時攻撃時、参加自部隊中最速の部隊移動時間を用いて合流出陣できる・模倣不可)",
+   "afterTarget": "部隊長",
+   "afterRate": "50%",
+   "afterEffectShort": "飛翔4 所属部隊の部隊長が持つ模倣可能な初期スキルを模倣する(卓越 追加確率50%で通常攻撃/防御効果を1.2倍して模倣する)"
+  },
+  {
+   "slot": "C",
+   "skill": "香車伝右衛門",
+   "rank": "S",
+   "afterSkill": "黒飛燕剣",
+   "afterRank": "S",
+   "target": "馬・砲・器 飛翔9",
+   "rate": "100%",
+   "effectShort": "攻撃 210%上昇+速度 120%上昇(自部隊同時攻撃時、参加自部隊中最速の部隊移動時間を用いて合流出陣できる・模倣不可)",
+   "afterTarget": "部隊長",
+   "afterRate": "50%",
+   "afterEffectShort": "飛翔4 所属部隊の部隊長が持つ模倣可能な初期スキルを模倣する(卓越 追加確率50%で通常攻撃/防御効果を1.2倍して模倣する)"
+  },
+  {
+   "slot": "S1",
+   "skill": "黒飛燕剣",
+   "rank": "S",
+   "afterSkill": "傾国ノ艶姫",
+   "afterRank": "S",
+   "target": "部隊長 飛翔4",
+   "rate": "50%",
+   "effectShort": "飛翔4 所属部隊の部隊長が持つ模倣可能な初期スキルを模倣する(卓越 追加確率50%で通常攻撃/防御効果を1.2倍して模倣する)",
+   "afterTarget": "部隊長",
+   "afterRate": "60%",
+   "afterEffectShort": "所属部隊の部隊長が持つ模倣可能な初期スキルを模倣する(卓越 追加確率30%で通常攻撃/防御効果を1.2倍して模倣する)"
+  },
+  {
+   "slot": "S2",
+   "skill": "漆黒ノ銃騎兵",
+   "rank": "A",
+   "afterSkill": "六字の采配",
+   "afterRank": "B",
+   "target": "馬・器・騎",
+   "rate": "55%/100%",
+   "effectShort": "攻撃 155%上昇(確率55%)+速度 65%上昇(確率100%)+攻撃参加した自軍全部隊の帰還速度が3倍(帰還効果は模倣・重複不可)",
+   "afterTarget": "砲",
+   "afterRate": "30%",
+   "afterEffectShort": "攻撃 25%上昇+攻撃時のみ自部隊の兵士被害 10%減少"
+  }
+ ],
+ "notes": [
+  "カード画像(no2463_full.png)はスキル欄「香車伝右衛門LV1」表記のためLV1形式(B-00)。画像から読んだのは 武将名/統率4隅バッジ(槍A・馬S・弓A・器A、6倍拡大で個別確認)/スキル名/初期値1150・1120・560.0/覇表記なし/カードNo.2463 の6項目のみ。",
+  "コスト3・指揮3500(★0-0)・成長値+57/+52/+3.0・ふりがな はじかののぶまさ・絵師 正子公也・LV10効果は ixanary.com/cards/2463 と ixawiki.com(BushoCard/2463初鹿野信昌)の2ソースで一致を確認(ixawiki側もCost3.0・指揮兵数3500・統率 槍A/馬S/弓A/器A・初期値1150/1120/560・成長値57/52/3.0)。",
+  "スキル名はカード画像では「香車 伝右衛門」と字間が空いて見えるが、ixanary.com(skills/香車伝右衛門)・ixawiki.com(攻：香車伝右衛門)とも空白なしの「香車伝右衛門」で一致するためこちらを採用した。",
+  "LV1の値(攻撃62%上昇・速度41%上昇)はLV10として登録していない。LV10は攻撃210%上昇・速度120%上昇(2ソース一致)。",
+  "合成テーブルは ixanary.com/skills/香車伝右衛門 の1次/2次と ixawiki.com(BushoCard/2463の合成候補テーブル 1次候補/2次候補S1)の2ソースで全5枠一致を確認。A=鬼滅刺[A]→布都御魂ノ鬨[SS]、B・C=香車伝右衛門[S]→黒飛燕剣[S]、S1=黒飛燕剣[S]→傾国ノ艶姫[S]、S2=漆黒ノ銃騎兵[A]→六字の采配[B]。",
+  "TR(鍛錬)情報は ixanary.com・ixawiki.com のいずれにも記載が無いためTR1以降のeffectはnull。",
+  "章はixanary.com/ixawiki.comのカードページに記載が無いため未確認(wiki最古コメント2023-02-13から25章の当たり)。"
+ ],
+ "reviewedOk": true,
+ "wikiOldestComment": "2023-02-13",
+ "wikiCommentCount": 13,
+ "chGuess": "25章"
+}

@@ -78,6 +78,14 @@
    "slot": "S2"
   },
   {
+   "name": "北条氏綱（2）",
+   "no": "31315",
+   "slot": "S2",
+   "note": [
+    "北条氏綱（2）(31315)のsynthesisTable S2枠(2026-08-16)"
+   ]
+  },
+  {
    "name": "独眼竜政宗",
    "no": "2582",
    "slot": "S1・S2",
@@ -227,6 +235,21 @@
    "no": "7404",
    "slot": "S2",
    "db": "kyoku"
+  },
+  {
+   "name": "ロビンマスク",
+   "no": "2633",
+   "slot": "S2",
+   "db": "kyoku"
+  },
+  {
+   "name": "堀秀政（2）",
+   "no": "2475",
+   "slot": "S1",
+   "db": "kyoku",
+   "note": [
+    "堀秀政（2）(2475)のsynthesisTable S1枠(2026-08-16、自己参照。A・B枠はskill=絶技兵術→afterSkill=本スキルのためA-3-12によりgrantedViaSkills側で参照済み)"
+   ]
   }
  ],
  "grantedViaSkills": [
@@ -256,6 +279,10 @@
   },
   {
    "skill": "飛竜星照",
+   "rank": "S"
+  },
+  {
+   "skill": "絶技兵術",
    "rank": "S"
   }
  ],

@@ -84,6 +84,8 @@ LIST_FIELDS = {
     "generals": BUSHO_LIST_FIELDS,
     "kyokuGenerals": BUSHO_LIST_FIELDS,
     "kyokuPsGenerals": BUSHO_LIST_FIELDS,
+    "parallelGenerals": BUSHO_LIST_FIELDS,
+    "tokuSecretGenerals": BUSHO_LIST_FIELDS,
     "ketsuGenerals": BUSHO_LIST_FIELDS + [
         "atkBase", "defBase", "tacticsBase", "lv0Troops"],
     "skills": ["name", "rank", "sourceCharacters"],

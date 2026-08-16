@@ -36,6 +36,7 @@ TODAY = datetime.date.today().isoformat()
 # どちらも #No で busho/{No}.html へ転送されるので db は "kyoku" のまま(S-07)。
 DB_OF_DIR = collections.OrderedDict([
     ("busho-kyoku", "kyoku"), ("busho-kyoku-ps", "kyoku"),
+    ("busho-parallel", None), ("busho-toku-s", "toku"),
     ("busho-ketsu", "ketsu"), ("busho", None)])
 
 

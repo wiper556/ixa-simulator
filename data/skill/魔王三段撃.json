@@ -1,0 +1,33 @@
+{
+ "name": "魔王三段撃",
+ "rank": "S",
+ "baseRate": 35.0,
+ "target": "砲",
+ "effectSummary": "S/LV10 確率 35% 攻撃 30%上昇/破壊 20%上昇/対象:砲\n①攻撃が30%上昇する\n②破壊が20%上昇する",
+ "categoryLinks": [],
+ "sourceCharacters": [],
+ "grantedViaSkills": [
+  {
+   "skill": "冥界の花嫁",
+   "rank": "A"
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "神算鬼謀 滅",
+  "rank": "A"
+ },
+ "notes": [
+  "2026-08-16 新規作成(担当K6)。No.2727円融院のC枠の移植後候補で、Sランクのためページ作成義務あり(A-3-9)。",
+  "対象・確率・効果はixanary.com(skills/魔王三段撃)のLV10行「確率：+35% / 対象 砲 / 攻撃：30%上昇 / 破壊：20%上昇」から。攻撃と破壊が同時変動するためtrTableに両方併記(multistat規則)。",
+  "円融院は元スキル側(冥界の花嫁)のsourceCharactersに載せ、こちらはgrantedViaSkillsで元スキルを指す(A-3-12)。そのためsourceCharactersは空。",
+  "ownHiddenCandidateはixanary(skills/魔王三段撃)の合成テーブルS1枠2次(攻破：神算鬼謀 滅 A)から。まだどの武将のsynthesisTableにも「skill:魔王三段撃」の行が無いためafterSkillからは導出できない。",
+  "categoryLinks9項目(無尽/撤退/飛翔/覇道/不屈/兵站/卓越/人数依存/コスト減少)を確認し該当なし。"
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "砲　確率 35% / 攻撃 30%上昇+破壊 20%上昇"
+  }
+ ]
+}

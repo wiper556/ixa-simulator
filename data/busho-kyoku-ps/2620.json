@@ -1,0 +1,150 @@
+{
+ "name": "淀（2）",
+ "no": "2620",
+ "ch": "29章",
+ "cost": 3,
+ "troop": "全防",
+ "sub": "",
+ "effect": "所領防御陣形の第壱列目か第弐列目に配置時、防御効果が3倍(模倣不可)",
+ "furigana": "よど",
+ "illustrator": "雨夜風",
+ "imageFull": "assets/img/characters/no2620_full.png",
+ "imageChar": "assets/img/characters/no2620_char.png",
+ "atkBase": 1050,
+ "atkGrowth": 44,
+ "defBase": 1180,
+ "defGrowth": 58,
+ "tacticsBase": 520,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3540,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "御台ノ加護",
+ "skillDetail": "S/LV10 確率 60% 防御 170%上昇/対象:全\n模倣不可\n①防御 170%上昇する\n②所領防御陣形の第壱列目か第弐列目に配置時防御効果が3倍になる",
+ "categoryLinks": [],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 60% / 防御 170%上昇(所領防御陣形の第壱列目か第弐列目に配置時、防御効果3倍・模倣不可)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": null
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": null
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": null
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": null
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": null
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": null
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "龍驤虎躍",
+   "rank": "SS",
+   "afterSkill": "龍驤虎躍",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "60%",
+   "effectShort": "攻撃 810%上昇+防御 810%上昇(部隊消費コスト-1・特殊効果は模倣不可)",
+   "afterTarget": "全",
+   "afterRate": "60%",
+   "afterEffectShort": "攻撃 810%上昇+防御 810%上昇(部隊消費コスト-1・特殊効果は模倣不可)"
+  },
+  {
+   "slot": "B",
+   "skill": "御台ノ加護",
+   "rank": "S",
+   "afterSkill": "御台ノ加護",
+   "afterRank": "S",
+   "target": "全",
+   "rate": "60%",
+   "effectShort": "防御 170%上昇(所領防御陣形の第壱列目か第弐列目に配置時、防御効果3倍・模倣不可)",
+   "afterTarget": "全",
+   "afterRate": "60%",
+   "afterEffectShort": "防御 170%上昇(所領防御陣形の第壱列目か第弐列目に配置時、防御効果3倍・模倣不可)"
+  },
+  {
+   "slot": "C",
+   "skill": "御台ノ加護",
+   "rank": "S",
+   "afterSkill": "御台ノ加護",
+   "afterRank": "S",
+   "target": "全",
+   "rate": "60%",
+   "effectShort": "防御 170%上昇(所領防御陣形の第壱列目か第弐列目に配置時、防御効果3倍・模倣不可)",
+   "afterTarget": "全",
+   "afterRate": "60%",
+   "afterEffectShort": "防御 170%上昇(所領防御陣形の第壱列目か第弐列目に配置時、防御効果3倍・模倣不可)"
+  },
+  {
+   "slot": "S1",
+   "skill": "御台ノ加護",
+   "rank": "S",
+   "afterSkill": "御台ノ加護",
+   "afterRank": "S",
+   "target": "全",
+   "rate": "60%",
+   "effectShort": "防御 170%上昇(所領防御陣形の第壱列目か第弐列目に配置時、防御効果3倍・模倣不可)",
+   "afterTarget": "全",
+   "afterRate": "60%",
+   "afterEffectShort": "防御 170%上昇(所領防御陣形の第壱列目か第弐列目に配置時、防御効果3倍・模倣不可)"
+  },
+  {
+   "slot": "S2",
+   "skill": "万里嵐壁",
+   "rank": "SS",
+   "afterSkill": "万里嵐壁",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "66%",
+   "effectShort": "防御 200%上昇(敵軍部隊数×40%を防御効果に加算・模倣不可)",
+   "afterTarget": "全",
+   "afterRate": "66%",
+   "afterEffectShort": "防御 200%上昇(敵軍部隊数×40%を防御効果に加算・模倣不可)"
+  }
+ ],
+ "notes": [
+  "2026-08-16 新規登録(担当K3)。カード画像はスキル欄が「御台ノ加護LV1」表記のためB-00のLV1形式。画像から採ってよいのは6項目だけで、効果量・成長値・合成候補は外部ソースで裏を取った。",
+  "【カード画像から読んだもの】武将名「淀」/ 職業「姫」/ 極・覇表記なし / コスト3 / 統率 槍S・馬A・弓A・器A(4隅を個別にズームして確認。左上の槍だけが金色のS) / 初期値 攻撃1050・防御1180・兵法520.0 / 指揮兵数 0/3540(★0) / カードNo.2620 / スキル名「御台ノ加護」[S] / Illust 雨夜風。",
+  "【情報源の食い違い・決着済み】統率について ixawiki 武将カード一覧(極)の2620行だけが「A|A|A|.S」(槍A・弓A・馬A・器S)になっており、カード画像の 槍S・器A と食い違う。ixawikiの個別カードページ(BushoCard/2620淀)は「槍|S 馬|A / 弓|A 器|A」、ixanary.com/cards/2620 の生HTML内JSONも yari:S / yumi:A / kiba:A / heiki:A で、どちらもカード画像と一致する。tools/register/README「ixawikiの武将カード一覧のほうは弓と馬の列が入れ替わって見えることがある」の既知問題(C節にも記載)と同型と判断し、カード画像+個別カードページ+ixanaryの3ソースを採用した。",
+  "【外部ソースで調べたもの】成長値 攻撃+44・防御+58・兵法+2.5、LV10性能 確率+60%・対象 全・防御170%上昇・所領防御陣形の第壱列目か第弐列目に配置時に防御効果3倍(模倣不可)。ixanary.com/cards/2620 と ixawiki BushoCard/2620淀 が一致。ixagno.blog.fc2.com blog-entry-10270「淀(3)【極】」も「成長：攻撃【44】防御【58】兵法【2.5】」「『所領防御陣形』の1列目か2列目に配備した時、防御効果が【510%】まで上昇」(=170%×3)で一致(3ソース目)。",
+  "【スキル名の表記】ixawiki 武将カード一覧(極)の行は「防：御台の加護」(ひらがなの「の」)だが、カード画像・ixanary(ページ名/URLとも御台ノ加護)・ixawiki個別カードページ(防：御台ノ加護)・ixagnoの4つがカタカナの「ノ」で一致するため「御台ノ加護」を採用した。",
+  "章: 29章。ixanary.com/cards/2620 に「『戦乙女のひな祭り』クエスト報酬 2025-03-04〜2025-04-03」とあり、ixagno.blog.fc2.com blog-entry-10272 が同イベントを【29章】と明記。tools/chapter_guess.py の章期間表(29章=2025-02-07〜2025-08-07)とも整合する。",
+  "【武将名の（2）】極の淀は 2704(2011-11-05) / 2557(2022-04-08) / 2620(2025-03-05) の3枚だが、2557 は ixawiki 武将カード一覧(極)の表記が「淀(RE)」= 復刻のため通常カードの数に入れない。残る2枚を最古コメント日順に並べて 2704=（1）、2620=（2）。2704 はまだ未登録なので既存カードの改名は発生しない。なお ixagno は復刻込みで数えて「淀(3)【極】」と呼んでいる(blog-entry-10270)が、うちのルールでは復刻を数に入れないため（2）とした。",
+  "合成候補は ixanary.com/skills/御台ノ加護 の1次/2次(A=龍驤虎躍[SS]自己参照、B・C・S1=御台ノ加護[S]自己参照、S2=万里嵐壁[SS]自己参照)と ixawiki BushoCard/2620淀 の合成候補テーブルが一致(2ソース)。ixagno blog-entry-10270 の表も同じ(3ソース目)。",
+  "TR段階: ixanary のカードページ・スキルページともTR行が無い(生HTMLに TR1〜TR6 の文字列が0件)。",
+  "categoryLinks 9項目判定(A-3-9): 無尽×/撤退×/飛翔×/覇道×/不屈×/兵站×/卓越×/人数依存×/コスト減少×(自分のコストを下げるのではなく配置列で防御効果が倍化する型)。該当なしのため空配列。",
+  "sourceCharacters逆引き(A-3-11): A枠=data/skill/龍驤虎躍.json、B・C・S1枠=data/skill/御台ノ加護.json(今回新規作成)、S2枠=data/skill/万里嵐壁.json のいずれにも2620を追記済み。"
+ ],
+ "reviewedOk": true,
+ "wikiOldestComment": "2025-03-05",
+ "wikiCommentCount": 3,
+ "chGuess": "29章"
+}

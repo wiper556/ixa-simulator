@@ -1,0 +1,144 @@
+{
+ "name": "スタイナー",
+ "no": "2625",
+ "ch": "29章",
+ "cost": 4.5,
+ "troop": "槍砲器防",
+ "sub": "",
+ "effect": "防御戦闘時に敵軍の卓越追加確率を-2%する(模倣不可・自軍内重複上限4)",
+ "furigana": "すたいなー",
+ "illustrator": "FinalFantasyIX 25th ANNIVERSARY",
+ "imageFull": "assets/img/characters/no2625_full.png",
+ "imageChar": "assets/img/characters/no2625_char.png",
+ "atkBase": 1050,
+ "atkGrowth": 44,
+ "defBase": 1210,
+ "defGrowth": 62,
+ "tacticsBase": 500,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 4590,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "マジックブレイク",
+ "skillDetail": "S/LV10 確率 39% 防御 480%上昇/対象:槍・砲・器\n模倣不可\n①防御 480%上昇する\n②防御戦闘時敵軍の卓越追加確率を-2%する(自軍内重複上限4)",
+ "categoryLinks": [
+  {
+   "href": "skills-takuetsu.html",
+   "label": "卓越スキル一覧を見る"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・砲・器　確率 39% / 防御 480%上昇(防御戦闘時敵軍の卓越追加確率-2%・模倣不可・自軍内重複上限4)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": "槍・砲・器　確率 39% / 防御 560%上昇(防御戦闘時敵軍の卓越追加確率-2%・模倣不可・自軍内重複上限4)"
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": "槍・砲・器　確率 39% / 防御 690%上昇(防御戦闘時敵軍の卓越追加確率-2%・模倣不可・自軍内重複上限4)"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": "槍・砲・器　確率 39% / 防御 1020%上昇(防御戦闘時敵軍の卓越追加確率-2%・模倣不可・自軍内重複上限4)"
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": null
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": null
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": null
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "法威燦煌",
+   "rank": "S",
+   "afterSkill": "龍驤虎躍",
+   "afterRank": "SS",
+   "target": "槍・馬・砲・器",
+   "rate": "55%",
+   "effectShort": "防御 440%上昇(敵軍卓越追加確率-9%・重複上限2)",
+   "afterTarget": "全",
+   "afterRate": "60%",
+   "afterEffectShort": "攻撃 810%上昇+防御 810%上昇(部隊消費コスト-1・特殊効果は模倣不可)"
+  },
+  {
+   "slot": "B",
+   "skill": "虚実兵妙",
+   "rank": "SS",
+   "afterSkill": "虚実兵妙",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "防御 740%上昇+防御戦闘時敵軍の卓越確率-8%する(自軍内重複上限2)",
+   "afterEffectShort": "防御 740%上昇+防御戦闘時敵軍の卓越確率-8%する(自軍内重複上限2)"
+  },
+  {
+   "slot": "C",
+   "skill": "マジックブレイク",
+   "rank": "S",
+   "afterSkill": "マジックブレイク",
+   "afterRank": "S",
+   "target": "槍・砲・器",
+   "rate": "39%",
+   "effectShort": "防御 480%上昇(防御戦闘時敵軍の卓越追加確率-2%・模倣不可・自軍内重複上限4)",
+   "afterEffectShort": "防御 480%上昇(防御戦闘時敵軍の卓越追加確率-2%・模倣不可・自軍内重複上限4)"
+  },
+  {
+   "slot": "S1",
+   "skill": "マジックブレイク",
+   "rank": "S",
+   "afterSkill": "マジックブレイク",
+   "afterRank": "S",
+   "target": "槍・砲・器",
+   "rate": "39%",
+   "effectShort": "防御 480%上昇(防御戦闘時敵軍の卓越追加確率-2%・模倣不可・自軍内重複上限4)",
+   "afterEffectShort": "防御 480%上昇(防御戦闘時敵軍の卓越追加確率-2%・模倣不可・自軍内重複上限4)"
+  },
+  {
+   "slot": "S2",
+   "skill": "虚実兵妙",
+   "rank": "SS",
+   "afterSkill": "虚実兵妙",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "防御 740%上昇+防御戦闘時敵軍の卓越確率-8%する(自軍内重複上限2)",
+   "afterEffectShort": "防御 740%上昇+防御戦闘時敵軍の卓越確率-8%する(自軍内重複上限2)"
+  }
+ ],
+ "notes": [
+  "出典: カード画像(LV1形式・B-00で読んでよい6項目のみ採用: 武将名/統率4隅バッジ/スキル名/攻防兵法の初期値/覇でないこと/カードNo.) + ixanary.com(cards/{no}・skills/{skill}の生HTML) + ixawiki.com(BushoCard/{no}{name}・武将カード一覧(極))。効果量・成長値・指揮兵数・合成候補はすべて外部ソースから取り、カード画像のLV1値は登録していない。",
+  "ch(章)はFF9 25周年記念コラボ「玖幻戦」の実装時期から。ixagno.blog.fc2.com(2025-07-03の記事、カテゴリ【29章】でこのコラボカードの追加を扱っている)と、当サイトの既存データで29章の窓が2025-02-07〜2025-08-06(30章の初出が2025-08-07)であることの2点による。ゲーム内での直接確認ではない。",
+  "コラボカード(FinalFantasyIX 25th ANNIVERSARY)。取引/譲与不可。覇の表記はカード画像に無く【覇】は付かない。同名の特武将(No.363x)が別に居るがレアリティが違うため（N）は振らない。",
+  "統率はカード画像の4隅バッジ(槍S/馬A/弓A/器A)を拡大確認、ixawiki武将カード一覧(極)の .S|A|A|A と一致。",
+  "指揮兵数はixanaryの★0-0=4590。カード画像は★4・LV0で0/4990、ixanaryの★4-20=4990と一致。",
+  "鍛錬はTR3まで。ixanary.com/skills/マジックブレイク にTR4・TR5の行が無く、ixawikiのカードページも「TR3」を最終段として載せているため、TR4・TR5は存在しないものとして空にしている(調べ漏れではない)。",
+  "合成テーブルはixanary.com/skills/マジックブレイク の1次/2次。1次はixawikiのカードページとも一致。A枠の2次(龍驤虎躍)は当サイトの法威燦煌.jsonのownHiddenCandidateとも一致する。",
+  "マジックブレイク自体はC・S1枠に自己参照で載るため移植可能。"
+ ],
+ "reviewedOk": true,
+ "wikiOldestComment": "2025-07-28",
+ "wikiCommentCount": 3,
+ "chGuess": "29章"
+}

@@ -1,0 +1,140 @@
+{
+ "name": "向井正綱",
+ "no": "2472",
+ "ch": "未確認",
+ "cost": 4,
+ "troop": "槍馬器騎攻",
+ "sub": "飛翔6",
+ "effect": "攻撃 210%上昇(卓越:攻撃戦闘時追加確率5%で攻撃効果3倍+飛翔16取得・飛翔獲得部分のみ模倣不可)",
+ "furigana": "むかいまさつな",
+ "illustrator": "正子公也",
+ "imageFull": "assets/img/characters/no2472_full.png",
+ "imageChar": "assets/img/characters/no2472_char.png",
+ "atkBase": 1180,
+ "atkGrowth": 64,
+ "defBase": 1060,
+ "defGrowth": 46,
+ "tacticsBase": 540,
+ "tacticsGrowth": 3,
+ "lv0Troops": 4280,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "S",
+  "ki": "A"
+ },
+ "initialSkill": "国一丸",
+ "skillDetail": "S/LV10 確率 100% 攻撃 210%上昇/対象:槍・馬・器・騎　飛翔6　卓越\n①攻撃 210%上昇する\n②飛翔6を持つ\n③卓越 攻撃戦闘時に追加確率5%で攻撃効果が3倍になり飛翔16を得る(飛翔獲得部分のみ模倣不可)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・馬・器・騎 飛翔6 卓越　確率 100% / 攻撃 210%上昇(卓越:攻撃戦闘時追加確率5%で3倍+飛翔16取得・飛翔獲得部分のみ模倣不可)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": null
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": null
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": null
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": null
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": null
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": null
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "国一丸",
+   "rank": "S",
+   "afterSkill": "仙剣破斬",
+   "afterRank": "SSS",
+   "target": "槍・馬・器・騎 飛翔6 卓越",
+   "rate": "100%",
+   "effectShort": "攻撃 210%上昇(卓越:攻撃戦闘時追加確率5%で3倍+飛翔16取得・飛翔獲得部分のみ模倣不可)",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 115%上昇+防御 115%上昇(卓越 追加確率35%・4倍)"
+  },
+  {
+   "slot": "B",
+   "skill": "国一丸",
+   "rank": "S",
+   "afterSkill": "仙剣破斬",
+   "afterRank": "SSS",
+   "target": "槍・馬・器・騎 飛翔6 卓越",
+   "rate": "100%",
+   "effectShort": "攻撃 210%上昇(卓越:攻撃戦闘時追加確率5%で3倍+飛翔16取得・飛翔獲得部分のみ模倣不可)",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 115%上昇+防御 115%上昇(卓越 追加確率35%・4倍)"
+  },
+  {
+   "slot": "C",
+   "skill": "戦陣 吟詠",
+   "rank": "A",
+   "afterSkill": "戦陣 吟詠",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "攻撃 340%上昇+防御 340%上昇(部隊内卓越追加確率+20%)",
+   "afterEffectShort": "攻撃 340%上昇+防御 340%上昇(部隊内卓越追加確率+20%)"
+  },
+  {
+   "slot": "S1",
+   "skill": "仙剣破斬",
+   "rank": "SSS",
+   "afterSkill": "仙剣破斬",
+   "afterRank": "SSS",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "攻撃 115%上昇+防御 115%上昇(卓越 追加確率35%・4倍)",
+   "afterEffectShort": "攻撃 115%上昇+防御 115%上昇(卓越 追加確率35%・4倍)"
+  },
+  {
+   "slot": "S2",
+   "skill": "遠呂智ノ閃光",
+   "rank": "SS",
+   "afterSkill": "遠呂智ノ閃光",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "攻撃 125%上昇(卓越 追加確率15%・4倍)",
+   "afterEffectShort": "攻撃 125%上昇(卓越 追加確率15%・4倍)"
+  }
+ ],
+ "notes": [
+  "カード画像(no2472_full.png)はスキル欄「国一丸LV1」表記のためLV1形式(B-00)。画像から読んだのは 武将名/統率4隅バッジ(槍A・馬S・弓A・器A、6倍拡大で個別確認)/スキル名/初期値1180・1060・540.0/覇表記なし/カードNo.2472 の6項目のみ。",
+  "コスト4・指揮4280(★0-0)・成長値+64/+46/+3.0・ふりがな むかいまさつな・絵師 正子公也・LV10効果は ixanary.com/cards/2472 と ixawiki.com(BushoCard/2472向井正綱)の2ソースで一致(初期値1180/1060/540も両サイト+カード画像の3者一致)。",
+  "LV1の値(攻撃60%上昇・卓越追加確率1%)はLV10として登録していない。LV10は攻撃210%上昇・卓越追加確率5%(2ソース一致)。飛翔6・飛翔16はLV1/LV10とも同値。",
+  "【既存データの誤りを訂正】data/skill/国一丸.json の effectSummary / trTable(LV10) が卓越追加確率を「1%」としていたが、これはLV1の値。ixanary.com/cards/2472・ixanary.com/skills/国一丸・ixawiki.com(BushoCard/2472)のいずれもLV10は「追加確率5%」であり、A-1-4のLV1/LV10取り違えに該当するため5%に訂正した(skills-hishou-atk.html・skills-takuetsu.htmlの一覧側も同時に訂正)。",
+  "合成テーブルは ixanary.com/skills/国一丸 の1次/2次と ixawiki.com(BushoCard/2472の合成候補テーブル 1次候補/2次候補S1)の2ソースで全5枠一致を確認。A・B=国一丸[S]→仙剣破斬[SSS]、C=戦陣 吟詠[A](自己参照)、S1=仙剣破斬[SSS](自己参照)、S2=遠呂智ノ閃光[SS](自己参照)。A・B枠(初期スキル)の移植後がS1枠の1次スキル(仙剣破斬)と一致しており、A-3-13の裏取りとも整合する。",
+  "武将名: 極レアの「向井正綱」はwiki全カード名簿でも本カード1枚のみのため無印。",
+  "TR(鍛錬)情報は ixanary.com・ixawiki.com のいずれにも記載が無いためTR1以降のeffectはnull。",
+  "章はixanary.com/ixawiki.comのカードページに記載が無いため未確認(wiki最古コメント2023-11-02から26章の当たり)。"
+ ],
+ "reviewedOk": true,
+ "wikiOldestComment": "2023-11-02",
+ "wikiCommentCount": 21,
+ "chGuess": "26章"
+}

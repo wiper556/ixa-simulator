@@ -1,0 +1,48 @@
+{
+ "name": "豊国安寧",
+ "rank": "S",
+ "baseRate": 50,
+ "target": "全",
+ "noMimic": true,
+ "effectSummary": "S/LV10 確率 50% 防御 500%上昇/対象:全\n模倣不可\n①防御 500%上昇する\n②所領防御陣形に配置時この武将の編成コスト消費を-2する",
+ "categoryLinks": [
+  {
+   "href": "skills-cost.html",
+   "label": "コスト減少スキル一覧を見る"
+  },
+  {
+   "href": "skills-cost-def.html",
+   "label": "コスト減少(防御)スキル一覧を見る"
+  }
+ ],
+ "sourceCharacters": [
+  {
+   "name": "ねね（2）",
+   "no": "2618",
+   "slot": "B・C・S1",
+   "db": "kyoku",
+   "note": [
+    "ねね(2618)のsynthesisTable B枠・C枠・S1枠(2026-08-16、ixanary.com/skills/豊国安寧 とixawiki BushoCard/2618ねね の合成候補テーブルで確認)"
+   ]
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "豊国安寧",
+  "rank": "S"
+ },
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 50% / 防御 500%上昇(所領防御陣形配置時、この武将の編成コスト消費-2・模倣不可)"
+  }
+ ],
+ "notes": [
+  "2026-08-16 No.2618(ねね（2）)の新規登録にあわせて作成(担当K3)。Sランクの初期スキルはA-3-9によりページ作成が必須。",
+  "対象・確率・効果文は ixanary.com/skills/豊国安寧 のLV10行から。ixawiki BushoCard/2618ねね(確率+50%/全/防御500%上昇/所領防御陣形に配置時、この武将の編成コスト消費を-2する（模倣不可）)と一致(2ソース)。",
+  "「模倣不可」はカード原文が修飾語なしで置いているため、①の前の独立行にした([[feedback_skilldetail_prose_format]])。",
+  "ownHiddenCandidate は ixanary.com/skills/豊国安寧 自身の合成テーブルで、このスキルが1次候補として載っているB・C・S1枠の2次候補(豊国安寧[S]=自己参照)から導出(S-08 / A-3-0)。ixawikiの同ページ・ixagno blog-entry-10268 とも一致。",
+  "TR段階なし(ixanary・ixawikiともTR行が無い)。",
+  "categoryLinks 9項目判定: コスト減少のみ該当。所領防御陣形限定で自分自身の編成コストを下げる型で、既登録の華焰(No.2615、-1.5)と同型のため skills-cost.html と skills-cost-def.html の両方にエントリを追加した(双方向)。"
+ ]
+}

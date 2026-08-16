@@ -1,0 +1,134 @@
+{
+ "name": "伊達稙宗",
+ "no": "31320",
+ "furigana": "だてたねむね",
+ "ch": "32章",
+ "cost": 3,
+ "troop": "全攻",
+ "sub": "",
+ "effect": "攻撃時、敵軍の被害兵数10%増加",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no31320_full.png",
+ "imageChar": "assets/img/characters/no31320_char.png",
+ "atkBase": 1250,
+ "atkGrowth": 72,
+ "defBase": 1060,
+ "defGrowth": 45,
+ "tacticsBase": 660,
+ "tacticsGrowth": 3,
+ "lv0Troops": 4280,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "S",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "黒翼竜",
+ "skillDetail": "S/TR6 確率 60% 敵軍の被害兵数10%増加/対象:全\n模倣不可\n①攻撃時敵軍の被害兵数が10%増加する(部隊内重複上限1・自軍全体の合計で上限100%まで)\n②スキルレベルTR6の「黒翼竜」を含む場合のみ部隊内重複上限2まで重複できる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 50% / 攻撃時に敵軍の被害兵数 7%増加(部隊内重複上限1・自軍合計で上限100%)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": "全　確率 50% / 攻撃時に敵軍の被害兵数 7.5%増加(部隊内重複上限1・自軍合計で上限100%)"
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": "全　確率 50% / 攻撃時に敵軍の被害兵数 8%増加(部隊内重複上限1・自軍合計で上限100%)"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": "全　確率 50% / 攻撃時に敵軍の被害兵数 8.5%増加(部隊内重複上限1・自軍合計で上限100%)"
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": "全　確率 50% / 攻撃時に敵軍の被害兵数 9%増加(部隊内重複上限1・自軍合計で上限100%)"
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": "全　確率 50% / 攻撃時に敵軍の被害兵数 10%増加(部隊内重複上限1・自軍合計で上限100%)"
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": "全　確率 60% / 攻撃時に敵軍の被害兵数 10%増加(部隊内重複上限2・自軍合計で上限100%)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "焼尽神無",
+   "rank": "SS",
+   "afterSkill": "焼尽神無",
+   "afterRank": "SS",
+   "target": "全 無尽",
+   "rate": "44%",
+   "effectShort": "攻撃 6.9%×防御参加武将数(280人)=1932.0%",
+   "afterEffectShort": "攻撃 6.9%×防御参加武将数(280人)=1932.0%"
+  },
+  {
+   "slot": "B",
+   "skill": "終焉焦土",
+   "rank": "SSS",
+   "afterSkill": "終焉焦土",
+   "afterRank": "SSS",
+   "target": "全 無尽",
+   "rate": "46%",
+   "effectShort": "攻撃 9.6%×防御参加武将数(280人)=2688.0%",
+   "afterEffectShort": "攻撃 9.6%×防御参加武将数(280人)=2688.0%"
+  },
+  {
+   "slot": "C",
+   "skill": "八幡神ノ威光",
+   "rank": "SSS",
+   "afterSkill": "八幡神ノ威光",
+   "afterRank": "SSS",
+   "target": "部隊長",
+   "rate": "70%",
+   "effectShort": "所属部隊の部隊長が持つ模倣可能な初期スキルを通常攻撃/防御効果1.25倍にして模倣する",
+   "afterEffectShort": "所属部隊の部隊長が持つ模倣可能な初期スキルを通常攻撃/防御効果1.25倍にして模倣する"
+  },
+  {
+   "slot": "S1",
+   "skill": "黒翼竜",
+   "rank": "S",
+   "afterSkill": "黒翼竜",
+   "afterRank": "S",
+   "target": "全",
+   "rate": "50%",
+   "effectShort": "攻撃時に敵軍の被害兵数 7%増加(部隊内重複上限1・自軍合計で上限100%)",
+   "afterEffectShort": "攻撃時に敵軍の被害兵数 7%増加(部隊内重複上限1・自軍合計で上限100%)"
+  },
+  {
+   "slot": "S2",
+   "skill": "破軍騎行",
+   "rank": "SS",
+   "afterSkill": "破軍騎行",
+   "afterRank": "SS",
+   "target": "全 不屈2",
+   "rate": "100%",
+   "effectShort": "攻撃 750%上昇+不屈2(攻撃戦闘敗北時指揮兵が不屈値×1000まで回復)",
+   "afterEffectShort": "攻撃 750%上昇+不屈2(攻撃戦闘敗北時指揮兵が不屈値×1000まで回復)"
+  }
+ ],
+ "notes": [
+  "天パラレル(No.30000+元No.)。元カードNo.1320 と同じ武将の別バージョンで、カードは最初からスキルがTR6の状態で配られる(鍛錬表のTR6行の必要ポイントが「パラレル」なのはこのため)。",
+  "画像はスクリーンショット 2026-08-12 115551〜115617.png(元スクリーンショット/スクリーンショット_31320.png)から crop_card.py で切り抜いた。**このバッチはハートが暗く落ちており既定のTOL=20ではハート下端の12x3/9pxしか拾えず、切り抜きが12pxほど下にずれて指揮兵数の行が切れる。TOL=50にすると18x21/81pxの正しいハートを拾う**(No.1316等と同じ対処)。",
+  "カード画像から直接読んだのは 武将名/4隅バッジ(統率)/スキル名/攻撃・防御・兵法の初期値/コスト/指揮兵数/カードNo. で、いずれも元カードNo.1320 の登録値と一致した(槍S/弓S/馬A/器A)。ixanary.com/cards/31320/ の card JSON とも cost/capacity/attack/defence/intelligence が一致(ixanary は yumi/kiba が入れ替わっているためバッジはカード画像を正とした)。",
+  "成長値はパラレルのカード画像にも ixanary.com/cards/31320/ にも出ない(ixanary は未入力で 0/0/0、ページにも「成長値が設定されていないので、成長しない」と出る)。既に入力済みの旧パラレル 31286/31290/31301/31303 が4枚とも元カードと同一の成長値であることを ixanary の card JSON で確認し、さらに ixagno.blog.fc2.com の元カード個別記事(blog-entry-11152)の成長値表とも一致したため、元カードの値(攻72/防45/兵法3)を引き継いだ。",
+  "trTable・synthesisTable はスキルに紐づく値なので元カードと共通。ixanary.com/skills/黒翼竜/ の生HTMLで鍛錬表(LV1〜TR6)と合成テーブル(1次/2次/3次)を、ixagno.blog.fc2.com blog-entry-11152 の鍛錬表・初期テーブル/左記スキル移植後の表を、それぞれ突き合わせて既存の元カード登録と一致することを確認した。",
+  "ch は元カードと同じ32章。ixagno.blog.fc2.com「パラレル天【一覧】」(blog-entry-11077)がパラレルを元カードと同じ章の節に並べている(31298〜31309=31章 / 31286〜31297=30章。元カード1298〜1309・1286〜1297の当サイト登録章と一致)ため、同じ規則で32章とした。ixawiki には 31316〜31321 も 1316〜1321 もページが無い(編集フォームが返る)。",
+  "sourceCharacters逆引き(A-3-11)はパラレル分を追記していない。skills.html の描画は db が kyoku/ketsu/既定の3種しか解釈せず(3447行付近)、tools/register/wireup.py の DB_OF_DIR にも busho-parallel が入っていないため、今の配線では天パラレルを sourceCharacters に載せる決まりが無い。候補スキル全行について元カードNo.1320 が各 data/skill/*.json の sourceCharacters に載っていることは確認済みで、逆引き自体は成立している。パラレルも載せるかどうかは配線の変更を伴うので管理側の判断を仰ぐ。"
+ ],
+ "reviewedOk": true,
+ "wikiOldestComment": null,
+ "wikiCommentCount": null
+}

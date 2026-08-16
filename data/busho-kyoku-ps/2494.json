@@ -1,0 +1,148 @@
+{
+ "name": "藤堂高虎（4）",
+ "no": "2494",
+ "ch": "30章",
+ "cost": 4.5,
+ "troop": "合流",
+ "sub": "飛翔6",
+ "effect": "銅銭獲得率6%(3部隊以上の対人合流攻撃で倒した兵数に応じて攻撃参加者全員が銅銭獲得)",
+ "furigana": "とうどうたかとら",
+ "illustrator": "正子公也",
+ "imageFull": "assets/img/characters/no2494_full.png",
+ "imageChar": "assets/img/characters/no2494_char.png",
+ "atkBase": 1230,
+ "atkGrowth": 65,
+ "defBase": 1090,
+ "defGrowth": 53,
+ "tacticsBase": 540,
+ "tacticsGrowth": 3,
+ "lv0Troops": 4590,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "柳営ノ先剣",
+ "skillDetail": "S/LV10 確率 35% 銅銭獲得率 6%/対象:3合流以上　飛翔6\n①飛翔6を持つ\n②対人合流攻撃で倒した兵数に応じて攻撃参加者全員が銅銭を獲得する(銅銭獲得率 6%)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "3合流以上　確率 35% / 飛翔6 銅銭獲得率 6%(対人合流攻撃で倒した兵数に応じて攻撃参加者全員が銅銭獲得)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": "3合流以上　確率 35% / 飛翔6 銅銭獲得率 6.2%"
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": "3合流以上　確率 35% / 飛翔6 銅銭獲得率 6.5%"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": "3合流以上　確率 35% / 飛翔6 銅銭獲得率 7%"
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": "3合流以上　確率 35% / 飛翔6 銅銭獲得率 7.8%"
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": "3合流以上　確率 35% / 飛翔6 銅銭獲得率 9%"
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": null
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "八重言代主神",
+   "rank": "SS",
+   "afterSkill": "無窮天斥陣",
+   "afterRank": "SS",
+   "target": "自身",
+   "rate": "70%",
+   "effectShort": "自身が持つ初期スキルを模倣する(戦闘スキルのみ)",
+   "afterTarget": "槍弓馬",
+   "afterRate": "40%",
+   "afterEffectShort": "防御 63%上昇(攻撃部隊に兵器兵科がいれば効果1.5倍)"
+  },
+  {
+   "slot": "B",
+   "skill": "騎虎神道",
+   "rank": "S",
+   "afterSkill": "騎虎神道",
+   "afterRank": "S",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "攻撃 170%上昇(敗北時討伐ゲージ300まで回復)",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 170%上昇(敗北時討伐ゲージ300まで回復)"
+  },
+  {
+   "slot": "C",
+   "skill": "天下普請",
+   "rank": "A",
+   "afterSkill": "覇道 不如帰",
+   "afterRank": "S",
+   "target": "3合流以上",
+   "rate": "30%",
+   "effectShort": "銅銭獲得率 5%(対人合流攻撃で倒した兵数に応じて攻撃参加者全員が銅銭獲得)",
+   "afterTarget": "槍馬砲",
+   "afterRate": "30%",
+   "afterEffectShort": "攻撃 30%上昇+破壊 30%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "柳営ノ先剣",
+   "rank": "S",
+   "afterSkill": "柳営ノ先剣",
+   "afterRank": "S",
+   "target": "3合流以上 飛翔6",
+   "rate": "35%",
+   "effectShort": "銅銭獲得率 6%(対人合流攻撃で倒した兵数に応じて攻撃参加者全員が銅銭獲得)",
+   "afterEffectShort": "銅銭獲得率 6%(対人合流攻撃で倒した兵数に応じて攻撃参加者全員が銅銭獲得)"
+  },
+  {
+   "slot": "S2",
+   "skill": "天下普請",
+   "rank": "A",
+   "afterSkill": "覇道 不如帰",
+   "afterRank": "S",
+   "target": "3合流以上",
+   "rate": "30%",
+   "effectShort": "銅銭獲得率 5%(対人合流攻撃で倒した兵数に応じて攻撃参加者全員が銅銭獲得)",
+   "afterTarget": "槍馬砲",
+   "afterRate": "30%",
+   "afterEffectShort": "攻撃 30%上昇+破壊 30%上昇"
+  }
+ ],
+ "notes": [
+  "カード画像はスキル欄「柳営ノ先剣LV1」表記のためLV1形式(B-00)。画像から読んだのは武将名・統率バッジ(4隅拡大)・スキル名・初期値1230/1090/540・カードNo.・覇なしの6項目のみ。",
+  "統率は槍S/弓A/馬A/器A。カード画像バッジ拡大とixawiki(BushoCard/2494藤堂高虎)の統率力欄で一致。",
+  "コスト4.5・指揮4590(★0-0)・成長+65/+53/+3.0・絵師正子公也はixanary.com(cards/2494)とixagno.blog.fc2.com(blog-entry-10572)で一致(ixawikiは成長値欄が空)。カード画像は極限突破済みで指揮兵数0/5990(ixanaryの極限突破欄6190は+0.5版・B-01)。",
+  "【情報源の食い違い】発動確率: ixanary(カードページ・スキルページとも)とixagnoは35%、ixawiki(BushoCard/2494)だけ100%。ixanaryはLV1が11%でLV10が35%と段階的に上がっており、ixagnoの比較表も「藤堂高虎(4)【極】 発動率35%」と明記しているため35%を採用した。",
+  "柳営ノ先剣のLV10・TR1〜TR5(銅銭獲得率6/6.2/6.5/7/7.8/9%)はixanary(skills/柳営ノ先剣)とixagnoの鍛錬表で完全一致。ixawikiはLv10とTR5の獲得率のみで、その2点も一致。TR6は記載なし。",
+  "カード画像のLV1値(確率11%/銅銭獲得率2%)は登録していない。",
+  "合成テーブル(A=八重言代主神SS→無窮天斥陣SS/B=騎虎神道S自己参照/C・S2=天下普請A→覇道 不如帰S/S1=柳営ノ先剣S自己参照)はixanary(skills/柳営ノ先剣)の1次・2次とixagnoの「初期テーブル/左記スキル移植後」表で一致。ixawikiは1次のみ記載で、そちらとも一致。",
+  "ixanaryの3次だけはA=八重言代主神・C/S2=騎神SSと2次から揺れているが、うちのデータ構造で使うのは1次(skill)と2次(afterSkill)だけ(A-3-0)なので影響しない。",
+  "柳営ノ先剣自身はS1枠で移植可能(ixanaryの合成素材1次S1候補に自身が載っている)。移植後も自己参照でA-3-13(初期スキルの移植後はS1のスキルと一致)と合う。ixagnoのS1の移植後欄は空欄だった。",
+  "天下普請(A)はランクAだがA-3-9の例外(既存ページを持つ『覇道 不如帰』の移植元スキル)に該当するためページを新規作成した。",
+  "名前の（4）: 極レアリティの同名は No.2147(2015-08-03)・No.2521(2020-02-04)・No.2565(2022-08-24)・本カード(2025年9月追加)の4枚で、出現が早い順に本カードが(4)。ixagnoの記事タイトルも「藤堂高虎(4)【極】」で一致。",
+  "章は30章。ixagno(blog-entry-10572)が「2025年9月追加の極武将」かつ本文に「■30章の時点で戦力として見た場合」と明記。wikiにコメントが1件も無いためchGuessは出ていない。"
+ ],
+ "reviewedOk": true,
+ "wikiOldestComment": null,
+ "wikiCommentCount": 0,
+ "chGuess": null
+}

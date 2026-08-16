@@ -1,0 +1,141 @@
+{
+ "name": "ザビエル",
+ "no": "3703",
+ "ch": "未確認",
+ "cost": 2.5,
+ "troop": "全",
+ "sub": "",
+ "effect": "デッキ上武将回復率20%上昇",
+ "furigana": "ざびえる",
+ "illustrator": "戸橋ことみ",
+ "imageFull": "assets/img/characters/no3703_full.png",
+ "imageChar": "assets/img/characters/no3703_char.png",
+ "atkBase": 660,
+ "atkGrowth": 16,
+ "defBase": 660,
+ "defGrowth": 16,
+ "tacticsBase": 500,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 2260,
+ "rankGrades": {
+  "yari": "D",
+  "yumi": "B",
+  "uma": "B",
+  "ki": "A"
+ },
+ "initialSkill": "天の福音",
+ "skillDetail": "C/LV10 確率 100% デッキ上武将回復率20%上昇/対象:全\n①デッキ上武将回復率が20%上昇する\n②所持しているだけでデッキ上にある全武将のHPが回復する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / デッキ上武将回復率20%上昇(所持しているだけでデッキ上の全武将のHPが回復)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": null
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": null
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": null
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": null
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": null
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": null
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "矢雨備え",
+   "rank": "D",
+   "afterSkill": "三段撃 神速",
+   "afterRank": "C",
+   "target": "弓・器",
+   "rate": "30%",
+   "effectShort": "防御 25%上昇",
+   "afterTarget": "砲",
+   "afterRate": "50%",
+   "afterEffectShort": "攻撃 12%上昇+破壊 15%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "天賦の神算",
+   "rank": "B",
+   "afterSkill": "天賦の神算",
+   "afterRank": "B",
+   "target": "全",
+   "rate": "50%",
+   "effectShort": "攻撃 12%上昇+破壊 5%上昇",
+   "afterEffectShort": "攻撃 12%上昇+破壊 5%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "疾風怒濤",
+   "rank": "B",
+   "afterSkill": "疾風怒濤",
+   "afterRank": "B",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "攻撃 5%上昇+速度 32%上昇",
+   "afterEffectShort": "攻撃 5%上昇+速度 32%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "義兵進軍",
+   "rank": "C",
+   "afterSkill": "大ふへん者",
+   "afterRank": "D",
+   "target": "槍・弓・馬・砲",
+   "rate": "100%",
+   "effectShort": "攻撃 7%上昇+速度 10%上昇",
+   "afterTarget": "将",
+   "afterRate": "5%",
+   "afterEffectShort": "攻撃 40%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "神速",
+   "rank": "A",
+   "afterSkill": "神速",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "速度 55%上昇",
+   "afterEffectShort": "速度 55%上昇"
+  }
+ ],
+ "notes": [
+  "2026-08-16 新規登録。カード画像はLV1形式のためB-00に従い、画像から採ったのは 武将名/統率(4隅バッジ)/スキル名/攻撃・防御・兵法の初期値/覇でないこと/カードNo. の6項目のみ。",
+  "他の項目は ixanary.com(cards/3703、skills/天の福音)と ixawiki.com(BushoCard/3703ザビエル、武将カード一覧(特))の2ソースで確認し、全項目が一致した。",
+  "指揮兵数はixanaryの★0-0=2260(B-01)。カード画像は突破なしの★5・Lv.0で「0/2760」を表示しており、ixanaryの★5-20列2760と一致する(指揮兵数はレベルでは増えず★でのみ+100ずつ増えるため)。",
+  "スキル効果はLV10の値(デッキ上武将回復率20%上昇)。カード上のLV1表記(6%上昇)は採らない。",
+  "skillDetailの②「所持しているだけでデッキ上にある全武将のHPが回復する」はixawikiのLv10欄の※注記のみが出典で、ixanary側には記載が無い(1ソース)。",
+  "絵師はカード画像の文字が小さく「戸橘」にも見えたが、ixanary・ixawikiとも「戸橋ことみ」で一致するためこちらを採った。",
+  "鍛錬(TR)はixanary・ixawikiのどちらにも段が存在せず、LV1/LV10の2段のみ。",
+  "合成候補はixanary(skills/天の福音)の1次/2次と ixawiki(BushoCard/3703)の1次候補/2次候補で5枠すべて2ソース一致。S1は1次=義兵進軍→2次=大ふへん者→3次=義兵進軍と振動するが、A-3-0に従い移植後は2次の大ふへん者とした。",
+  "章はixanary・ixawikiに記載が無く、追加でixagno.blog.fc2.comも検索した(「ザビエル」33件・「天の福音」13件)。ヒットする記事は「カード所持で名声最大値+10」の別のザビエル(極/シクプラ)についてのもので、この特カードの実装章は書かれていない。未確認のまま。wikiの最古コメントは2011-12-05。",
+  "名前: 特レアリティにザビエルは3703の1枚だけなので（N）は付けない。"
+ ],
+ "reviewedOk": true,
+ "wikiOldestComment": "2011-12-05",
+ "wikiCommentCount": 140
+}

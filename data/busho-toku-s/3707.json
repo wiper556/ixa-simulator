@@ -1,0 +1,141 @@
+{
+ "name": "天草四郎時貞",
+ "no": "3707",
+ "ch": "未確認",
+ "cost": 2.5,
+ "troop": "名声",
+ "sub": "",
+ "effect": "領地内名声回復率10%上昇(重複不可)",
+ "furigana": "あまくさしろうときさだ",
+ "illustrator": "黒葉.K",
+ "imageFull": "assets/img/characters/no3707_full.png",
+ "imageChar": "assets/img/characters/no3707_char.png",
+ "atkBase": 380,
+ "atkGrowth": 14,
+ "defBase": 450,
+ "defGrowth": 14,
+ "tacticsBase": 510,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 2290,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "B",
+  "uma": "C",
+  "ki": "A"
+ },
+ "initialSkill": "神童覚醒",
+ "skillDetail": "C/LV10 確率 100% 領地内名声回復率10%上昇/対象:名声\n①領地内の名声回復率が10%上昇する(重複不可)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "名声　確率 100% / 領地内名声回復率10%上昇(重複不可)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": null
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": null
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": null
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": null
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": null
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": null
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "砲陣の極み",
+   "rank": "B",
+   "afterSkill": "八咫烏",
+   "afterRank": "B",
+   "target": "砲",
+   "rate": "30%",
+   "effectShort": "防御 30%上昇",
+   "afterTarget": "砲・器",
+   "afterRate": "35%",
+   "afterEffectShort": "防御 30%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "砲撃 羅刹",
+   "rank": "B",
+   "afterSkill": "釣り野伏 鬼",
+   "afterRank": "B",
+   "target": "砲",
+   "rate": "25%",
+   "effectShort": "攻撃 25%上昇+破壊 5%上昇",
+   "afterTarget": "砲",
+   "afterRate": "20%",
+   "afterEffectShort": "攻撃 30%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "疾風怒濤",
+   "rank": "B",
+   "afterSkill": "疾風怒濤",
+   "afterRank": "B",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "攻撃 5%上昇+速度 32%上昇",
+   "afterEffectShort": "攻撃 5%上昇+速度 32%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "鬼謀 国砕",
+   "rank": "B",
+   "afterSkill": "鬼謀 国砕",
+   "afterRank": "B",
+   "target": "上級器",
+   "rate": "35%",
+   "effectShort": "攻撃 10%上昇+破壊 25%上昇",
+   "afterEffectShort": "攻撃 10%上昇+破壊 25%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "八咫烏",
+   "rank": "B",
+   "afterSkill": "八咫烏",
+   "afterRank": "B",
+   "target": "砲・器",
+   "rate": "35%",
+   "effectShort": "防御 30%上昇",
+   "afterEffectShort": "防御 30%上昇"
+  }
+ ],
+ "notes": [
+  "2026-08-16 新規登録。カード画像はLV1形式のためB-00に従い、画像から採ったのは 武将名/統率(4隅バッジ)/スキル名/攻撃・防御・兵法の初期値/覇でないこと/カードNo. の6項目のみ。",
+  "他の項目は ixanary.com(cards/3707、skills/神童覚醒)と ixawiki.com(BushoCard/3707天草四郎時貞)の2ソースで確認した。",
+  "【統率の食い違い】ixawikiの「武将カード一覧(特)」だけが槍を「.S」としているが、カード画像の4隅バッジ(6倍に拡大して個別確認)は槍=A、ixawikiのカードページ本体も槍=Aで一致するため、A-1-2に従いカード画像を正としてAで登録した。弓B/馬C/器Aは3ソースとも一致。",
+  "指揮兵数はixanaryの★0-0=2290(B-01)。カード画像は突破なしの★5・Lv.0で「0/2790」を表示しており、ixanaryの★5-20列2790と一致する。",
+  "スキル効果はLV10の値(領地内名声回復率10%上昇)。カード上のLV1表記(1%上昇)は採らない。",
+  "対象は兵科ではなく「名声」なので、troopもそのまま「名声」にした(兵科チップは出ず特殊バッジになる)。",
+  "鍛錬(TR)はixanary・ixawikiのどちらにも段が存在せず、LV1/LV10の2段のみ。",
+  "合成候補はixanary(skills/神童覚醒)の1次/2次と ixawiki(BushoCard/3707)の1次候補/2次候補で5枠すべて2ソース一致。",
+  "章はixanary・ixawikiに記載が無く、追加でixagno.blog.fc2.comも検索した(「天草四郎時貞」12件・「神童覚醒」3件)。ヒットする記事は「部隊内レアS以上のスキル発動率+15%(奇跡)」を持つ極の天草四郎時貞についてのもので、この特カードの実装章は書かれていない。未確認のまま。wikiの最古コメントは2012-09-05。",
+  "名前: 特レアリティに天草四郎時貞は3707の1枚だけなので（N）は付けない。"
+ ],
+ "reviewedOk": true,
+ "wikiOldestComment": "2012-09-05",
+ "wikiCommentCount": 186
+}

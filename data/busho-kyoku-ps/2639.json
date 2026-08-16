@@ -1,0 +1,142 @@
+{
+ "name": "松風",
+ "no": "2639",
+ "ch": "未確認",
+ "cost": 3.5,
+ "troop": "全攻速",
+ "sub": "",
+ "effect": "単独出陣時は速度効果10倍",
+ "furigana": "まつかぜ",
+ "illustrator": "株式会社レバーン＋しいたけ",
+ "imageFull": "assets/img/characters/no2639_full.png",
+ "imageChar": "assets/img/characters/no2639_char.png",
+ "atkBase": 1150,
+ "atkGrowth": 45,
+ "defBase": 1040,
+ "defGrowth": 37,
+ "tacticsBase": 530,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3780,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "B",
+  "uma": "X",
+  "ki": "B"
+ },
+ "initialSkill": "烈風駿影",
+ "skillDetail": "S/LV10 確率 100% 攻撃 100%上昇 速度 40%上昇/対象:全\n①攻撃 100%上昇する\n②速度 40%上昇する(単独出陣時は速度効果10倍)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 攻撃 100%上昇+速度 40%上昇(単独出陣時は速度効果10倍)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": null
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": null
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": null
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": null
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": null
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": null
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "十束ノ神域",
+   "rank": "SS",
+   "afterSkill": "天聖宝冠",
+   "afterRank": "SSS",
+   "target": "全 覇道",
+   "rate": "100%",
+   "effectShort": "攻撃 320%上昇+速度 70%上昇+覇道を持つため所属部隊の武将のスキルを無効化・発動率低下から保護",
+   "afterTarget": "全",
+   "afterRate": "45%",
+   "afterEffectShort": "攻撃 100%上昇((5.0×防御参加武将数)%を攻撃効果に加算・模倣不可)"
+  },
+  {
+   "slot": "B",
+   "skill": "星神闘覇",
+   "rank": "SS",
+   "afterSkill": "星神闘覇",
+   "afterRank": "SS",
+   "target": "全 飛翔15",
+   "rate": "100%",
+   "effectShort": "攻撃 740%上昇+速度 200%上昇",
+   "afterTarget": "全 飛翔15",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 740%上昇+速度 200%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "瞬刻無影",
+   "rank": "S",
+   "afterSkill": "朧雲ノ閃撃",
+   "afterRank": "SSS",
+   "target": "部隊長",
+   "rate": "45%",
+   "effectShort": "部隊長の初期スキルを1.1倍に強化して模倣(確率45%)+速度 100%上昇(確率100%)(TRなし)",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 170%上昇+速度 240%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "刹那無影",
+   "rank": "SS",
+   "afterSkill": "刹那無影",
+   "afterRank": "SS",
+   "target": "部隊長",
+   "rate": "55%",
+   "effectShort": "所属部隊の部隊長が持つ初期スキルを通常攻撃/防御効果1.15倍にして模倣する(戦闘スキルのみ)+速度 200%上昇(確率100%)",
+   "afterTarget": "部隊長",
+   "afterRate": "55%",
+   "afterEffectShort": "所属部隊の部隊長が持つ初期スキルを通常攻撃/防御効果1.15倍にして模倣する(戦闘スキルのみ)+速度 200%上昇(確率100%)"
+  },
+  {
+   "slot": "S2",
+   "skill": "戦陣 疾駆",
+   "rank": "A",
+   "afterSkill": null,
+   "afterRank": null,
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "速度: 170%上昇(破壊: 170%上昇)",
+   "afterTarget": null,
+   "afterRate": null,
+   "afterEffectShort": null
+  }
+ ],
+ "notes": [
+  "限定配布の極(プラチナ極)。「松風覚醒!!慶次と駆ける午年祭」の配布カード(ixagno.blog.fc2.comの限定武将一覧でコラボ枠ではなく限定配布枠に置かれている)。カード画像はLV1形式なのでB-00の6項目のみ画像から採った。",
+  "統率は槍B/馬X(虹色)/弓B/器B(カード画像バッジ拡大)。ixawiki.comに2639のページが無く(index.phpが編集フォームを返す=ページ未作成)、ixanary.comも統率を載せないため、統率だけはカード画像1点のみが根拠。",
+  "カード表示の指揮兵数0/4280は★★★★★(ランクアップ5回)状態の値。4280-5×100=3780でixanary.com(★0-0=3780)と一致。",
+  "コスト3.5・成長値+45/+37/+2.5・絵師「株式会社レバーン＋しいたけ」はixanary.com(cards/2639)。初期値1150/1040/530はカード実物とixanaryが一致。",
+  "スキル効果(LV10)はixanary.comのみ。ixawikiにページが無いため2ソース目が取れていない。ixagno.blog.fc2.comの限定武将一覧には「全攻速/単独出陣時は速度10倍」とだけあり数値は載っていない。",
+  "合成テーブルはixanary.com(skills/烈風駿影)の1次/2次のみ(単一ソース)。S2枠(戦陣 疾駆[A])は2次候補が空欄なのでafterSkillをnullにした。",
+  "A-3-8の2ソース要件を満たせないため青丸のまま。ixawiki.comにこのカードのページ自体が無く(index.phpが編集フォームを返す)、統率もスキル効果も合成テーブルもixanary.comとカード画像だけが根拠になっている。"
+ ],
+ "wikiCommentCount": 0
+}

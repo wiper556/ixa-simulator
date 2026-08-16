@@ -208,6 +208,9 @@ def load():
     # 検査の中身は極かどうかで決まり、どちらのページに載っているかは関係ないので、
     # 以降はまとめた kyokuAll を使う。ページごとに見るのは改変の突き合わせだけ。
     d["kyokuAll"] = d["kyokuGenerals"] + d["kyokuPsGenerals"]
+    # 2026-08-16: 天パラレルと特シークレットを足したとき、ここに入れ忘れると
+    # 逆引き検査(chars)と重複検査(all_g)の対象から静かに外れる(担当P1の指摘)。
+    d["extraAll"] = d["parallelGenerals"] + d["tokuSecretGenerals"]
     # LINKED_SKILLS はページが手で持っている配列(生成物ではない)ので、そのまま読む
     d["LINKED_SKILLS"] = extract_array(p("characters.html"), "LINKED_SKILLS")
     d["KK_LINKED_SKILLS"] = extract_array(p("characters-kyoku.html"), "KK_LINKED_SKILLS")
@@ -316,7 +319,9 @@ def parse_generations(html):
 def main():
     D = load()
     skills = {s["name"]: s for s in D["skills"]}
-    chars = [(g, "天覇") for g in D["generals"]] + [(g, "極") for g in D["kyokuAll"]]
+    chars = ([(g, "天覇") for g in D["generals"]]
+             + [(g, "極") for g in D["kyokuAll"]]
+             + [(g, "天パラレル/特") for g in D["extraAll"]])
     targets = [(g, s) for g, s in chars if status(g) != "無印"]
     R = []
     # M-1(2026-08-13 第4回レッドチーム): ここは1行のラムダで、
@@ -415,10 +420,16 @@ def main():
             return "極"
         return "天"
 
+    # **パラレルは元カード(番号-30000)と同じ武将の別バージョン**なので、
+    # 同名なのが正しい。番号を振ると元カードと見分けがつかなくなる。
+    # 2026-08-16: パラレル12枚を登録したらこの検査が全部鳴った(検査側の穴)。
     same = collections.defaultdict(list)
     for g, src in targets:
+        no = str(g.get("no") or "")
+        if len(no) == 5 and no[0] in "34":
+            continue
         if g.get("name") and g.get("no") is not None:
-            same[(_rarity(g["no"]), g["name"])].append(str(g["no"]))
+            same[(_rarity(g["no"]), g["name"])].append(no)
     for (rar, nm), nos in sorted(same.items()):
         if len(nos) > 1:
             add("同じレアリティに同名", "MID",
@@ -569,7 +580,8 @@ def main():
     # いずれも同日に手作業で見つかった不備で、監査に無かったから見逃していた。
     # ============================================================
     RANKS_HI = ("S", "SS", "SSS", "X", "XX", "XXX")
-    all_g = D["generals"] + D["kyokuAll"] + D["ketsuGenerals"]
+    all_g = (D["generals"] + D["kyokuAll"] + D["extraAll"]
+             + D["ketsuGenerals"])
     kyoku_no = {g["no"] for g in D["kyokuAll"]}
     ketsu_no = {g["no"] for g in D["ketsuGenerals"]}
 
@@ -592,8 +604,16 @@ def main():
             % (nm, len(where), "/".join(sorted(where)[:4])))
 
     # S-07: sourceCharacters の db 指定ミス(極なのに characters.html を指す等)
+    # 2026-08-16: 特シークレットを足したので "toku" を足す。天パラレルは
+    # db を付けない(元カードと同じ武将で #No 転送のため)。
+    toku_no = {g["no"] for g in D["tokuSecretGenerals"]}
+
     def db_want(no):
-        return "kyoku" if no in kyoku_no else ("ketsu" if no in ketsu_no else None)
+        if no in kyoku_no:
+            return "kyoku"
+        if no in toku_no:
+            return "toku"
+        return "ketsu" if no in ketsu_no else None
 
     # 2026-08-14: ここは skills.html の**本文**を正規表現で読んでいた。
     # 配列が data/skill/ からの生成物になったので、判定は正本の側で行う。

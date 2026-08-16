@@ -14,13 +14,23 @@
    "note": [
     "松平清康(2745)のsynthesisTable S2枠(2026-08-15)"
    ]
+  },
+  {
+   "name": "果心居士",
+   "no": "2735",
+   "slot": "S2",
+   "db": "kyoku",
+   "note": [
+    "果心居士(2735)のsynthesisTable S2枠(2026-08-16、担当K6)"
+   ]
   }
  ],
  "notes": [
   "ixanary.com(skills/四海王道)から登録(2026-08-14)。S以上のスキルはページを作る決まり(S-01)にもとづく新規作成。",
   "対象・確率・効果文はixanaryの表記をうちの書式に直したもの。categoryLinksとsourceCharactersは各武将の登録時に追記する。",
   "ownHiddenCandidateは、このスキルが1次候補として載っている枠(2745 松平清康 S2枠)の2次候補から(S-08)。",
-  "2026-08-15訂正: 初回登録時はixanary.com(cards/2745の初期スキルページ経由)の表示に従いownHiddenCandidateを覇王征軍としていたが、ixawiki.com(BushoCard/2745松平清康)とixagno.blog.fc2.com(blog-entry-4733)の2ソースで2次候補が武神八幡陣であることを確認し訂正した。詳細はdata/skill/覇王征軍.jsonのnotes参照。"
+  "2026-08-15訂正: 初回登録時はixanary.com(cards/2745の初期スキルページ経由)の表示に従いownHiddenCandidateを覇王征軍としていたが、ixawiki.com(BushoCard/2745松平清康)とixagno.blog.fc2.com(blog-entry-4733)の2ソースで2次候補が武神八幡陣であることを確認し訂正した。詳細はdata/skill/覇王征軍.jsonのnotes参照。",
+  "2026-08-16: S2枠の移植後を 武神八幡陣 → 覇王征軍 に訂正。A-3-0の参照先を取り違えていた(四海王道**自身**のページのS2枠2次を見ていたが、正しくは武将の初期スキル「酔狂破陣」のページのS2枠2次)。ixanaryの酔狂破陣・風狂幻術の両ページとも2次S2=覇王征軍[SS]。担当K6の指摘。"
  ],
  "trTable": [
   {
@@ -30,7 +40,7 @@
   }
  ],
  "ownHiddenCandidate": {
-  "skill": "武神八幡陣",
+  "skill": "覇王征軍",
   "rank": "SS"
  }
 }

@@ -1,0 +1,36 @@
+{
+ "name": "怨龍烈牙",
+ "rank": "S",
+ "baseRate": 60,
+ "target": "槍・弓・砲・器",
+ "noMimic": true,
+ "effectSummary": "S/LV10 確率 60% 部隊総防御力 15%上昇/対象:槍・弓・砲・器\n模倣不可\n①対象兵科を指揮した戦闘時 部隊総防御力が15%上昇する",
+ "categoryLinks": null,
+ "sourceCharacters": [
+  {
+   "name": "長連龍",
+   "no": "2471",
+   "slot": "移植不可",
+   "db": "kyoku",
+   "note": [
+    "長連龍(2471)の初期スキル。自身の合成テーブルA〜S2のどの枠にも本スキルが出ないため移植不可(ixanary.com/skills/怨龍烈牙・ixawiki BushoCard/2471の1次候補で確認)。"
+   ]
+  }
+ ],
+ "ownHiddenCandidate": null,
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・弓・砲・器　確率 60% / 対象兵科を指揮した戦闘時、部隊総防御力が15%上昇(模倣不可)"
+  }
+ ],
+ "notes": [
+  "2026-08-16作成。No.2471(長連龍)の初期スキル。S以上のため無条件でページ作成(A-3-9)。",
+  "出典: ixanary.com/skills/怨龍烈牙(LV1/LV10・合成テーブル1次〜3次) + ixawiki.com(BushoCard/2471長連龍)。効果値・1次候補は2ソース一致。",
+  "「部隊総防御力」の「総」は効果範囲を表す語なので短縮表記でも落としていない(A-4-16)。",
+  "ownHiddenCandidateは、本スキルが自身の合成テーブルのどの枠にも1次候補として現れない(移植不可)ためnull。",
+  "categoryLinks 9項目チェック実施: 無尽/撤退/飛翔/覇道/不屈/兵站/卓越/人数依存/コスト減少のいずれにも該当しないためnull(部隊総防御力の割合上昇であり、防御参加武将数に依存する効果ではない)。",
+  "TR(鍛錬)情報はixanary.com・ixawiki.comのいずれにも記載が無く、両サイトともLV1/LV10の2段のみのためtrTableはLV10の1行。"
+ ]
+}

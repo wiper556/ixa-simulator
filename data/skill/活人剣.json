@@ -56,9 +56,32 @@
    "note": [
     "柳生宗矩(2793)自身の初期スキルだが、ixanary.com(skills/活人剣)の合成テーブルで1次候補Aが活人剣自身(自己参照)であることを確認できたためA枠として列挙([[feedback_transferable_slot_labeling_rule]]に基づき「移植不可」は使わない)"
    ]
+  },
+  {
+   "name": "小田氏治（2）",
+   "no": "2469",
+   "slot": "S1",
+   "db": "kyoku",
+   "note": [
+    "小田氏治（2）(2469)のsynthesisTable S1枠(2026-08-16。A枠はskill=志在本貫→afterSkill=本スキルのためA-3-12によりgrantedViaSkills側で参照、skillが本スキル自体なのはS1枠)"
+   ]
+  },
+  {
+   "name": "堀秀政（2）",
+   "no": "2475",
+   "slot": "C",
+   "db": "kyoku",
+   "note": [
+    "堀秀政（2）(2475)のsynthesisTable C枠(2026-08-16。1次C=活人剣[A]→2次C=鬼滅刺[A]を2ソース確認)"
+   ]
   }
  ],
- "grantedViaSkills": [],
+ "grantedViaSkills": [
+  {
+   "skill": "志在本貫",
+   "rank": "S"
+  }
+ ],
  "ownHiddenCandidate": {
   "skill": "鬼滅刺",
   "rank": "A"

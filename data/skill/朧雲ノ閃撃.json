@@ -15,6 +15,24 @@
    "no": "2574",
    "slot": "S1",
    "db": "kyoku"
+  },
+  {
+   "name": "尼子経久（2）",
+   "no": "2467",
+   "slot": "S1",
+   "db": "kyoku",
+   "note": [
+    "尼子経久（2）(2467)のsynthesisTable S1枠(2026-08-16、自己参照。ixanary/ixawikiの2ソースで確認)"
+   ]
+  },
+  {
+   "name": "梅津憲忠",
+   "no": "2476",
+   "slot": "S1",
+   "db": "kyoku",
+   "note": [
+    "梅津憲忠(2476)のsynthesisTable S1枠(2026-08-16、自己参照。B・C枠はskill=黄鬼ノ辣腕→afterSkill=本スキルのためA-3-12によりgrantedViaSkills側で参照)"
+   ]
   }
  ],
  "grantedViaSkills": [
@@ -28,6 +46,10 @@
   },
   {
    "skill": "瞬刻無影",
+   "rank": "S"
+  },
+  {
+   "skill": "黄鬼ノ辣腕",
    "rank": "S"
   }
  ],

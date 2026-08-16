@@ -1,0 +1,108 @@
+{
+ "name": "南光坊天海（1）",
+ "no": "2710",
+ "ch": "未確認",
+ "cost": 3.0,
+ "troop": "全攻",
+ "sub": "",
+ "effect": "攻撃戦闘勝利時のみ敵軍全武将に追加ダメージ+35(重複不可)",
+ "furigana": "なんこうぼうてんかい",
+ "illustrator": "岩元辰郎",
+ "imageFull": "assets/img/characters/no2710_full.png",
+ "imageChar": "assets/img/characters/no2710_char.png",
+ "atkBase": 650,
+ "atkGrowth": 17.0,
+ "defBase": 630,
+ "defGrowth": 17.0,
+ "tacticsBase": 505.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 2850,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "D",
+  "ki": "C"
+ },
+ "initialSkill": "妙計暗躍",
+ "skillDetail": "A/LV10 確率 15% 攻撃戦闘勝利時のみ敵軍全武将に追加ダメージ+35/対象:全\n①攻撃戦闘勝利時のみ敵軍全武将に追加ダメージ+35(重複不可)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 15% / 攻撃戦闘勝利時のみ敵軍全武将に追加ダメージ+35(重複不可)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "鬼謀 国砕",
+   "rank": "B",
+   "afterSkill": "鬼謀 国砕",
+   "afterRank": "B",
+   "target": "上級器",
+   "rate": "35%",
+   "effectShort": "攻撃 10%上昇+破壊 25%上昇",
+   "afterEffectShort": "攻撃 10%上昇+破壊 25%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "謀計奇策",
+   "rank": "A",
+   "afterSkill": "八咫烏",
+   "afterRank": "B",
+   "target": "砲器",
+   "rate": "35%",
+   "effectShort": "防御 35%上昇",
+   "afterTarget": "砲器",
+   "afterRate": "35%",
+   "afterEffectShort": "防御 30%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "背水之陣",
+   "rank": "B",
+   "afterSkill": "背水之陣",
+   "afterRank": "B",
+   "target": "槍弓馬",
+   "rate": "20%",
+   "effectShort": "防御 37%上昇",
+   "afterEffectShort": "防御 37%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "天賦の神算",
+   "rank": "B",
+   "afterSkill": "天賦の神算",
+   "afterRank": "B",
+   "target": "全",
+   "rate": "50%",
+   "effectShort": "攻撃 12%上昇+破壊 5%上昇",
+   "afterEffectShort": "攻撃 12%上昇+破壊 5%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "神算鬼謀",
+   "rank": "A",
+   "afterSkill": "神算鬼謀",
+   "afterRank": "A",
+   "target": "槍器",
+   "rate": "45%",
+   "effectShort": "攻撃 10%上昇",
+   "afterEffectShort": "攻撃 10%上昇"
+  }
+ ],
+ "notes": [
+  "2026-08-16 新規登録(担当K6)。カード画像はスキル表記がLV1の育成前カードのため、画像から採ったのは武将名/統率(4隅バッジ)/スキル名/攻撃・防御・兵法の初期値/覇でないこと/カードNo.の6項目のみ(B-00)。",
+  "武将名の（1）: ixawiki武将カード一覧(極)で「南光坊天海」は No.2710(無印)／No.2920(2)／No.2808(3) の3枚。初回コメント日も 2710=2012-10-05 < 2920=2015-09-09 < 2808=2022-06-01 の順で一致するため2710が（1）。No.10063は別レアリティ(天)のため数に入れない。既登録のNo.2808「南光坊天海（3）」は変更不要。",
+  "統率は画像の4隅バッジで槍S/馬D/弓A/器Cを個別に拡大して確認。ixawiki(BushoCard/2710南光坊天海)の「統率力 槍S 馬D 弓A 器C」と一致。",
+  "コスト3.0・指揮兵数2850・初期値650/630/505・成長値+17/+17/+2.5・ふりがなは ixanary.com(cards/2710) と ixawiki.com(BushoCard/2710南光坊天海) の2ソースで完全一致。lv0Troopsはixanaryの★0-0(2850)。",
+  "絵師はixanary.comとカード画像下部の表記がともに「岩元辰郎」、ixawikiのみ「岩本辰郎」。2ソース(ixanary+カード画像)が一致する岩元辰郎を採用した。",
+  "スキル効果はLV1カードのため外部ソースを採用。ixanary/ixawikiともLV1=+10・LV10=+35（重複不可）で完全一致。TR段はどちらのソースにも無い。",
+  "合成候補はixanary.com(skills/妙計暗躍)の1次/2次と ixawiki(BushoCard/2710)の合成候補テーブルの2ソースで全5枠完全一致(A=鬼謀 国砕[B]自己参照、B=謀計奇策[A]→八咫烏[B]、C=背水之陣[B]自己参照、S1=天賦の神算[B]自己参照、S2=神算鬼謀[A]自己参照)。各枠のtarget/rate/effectShortは候補スキル自身のixanaryページのLV10行から転記。候補は全てS未満のため新規スキルページ作成は不要(A-3-9)。初期スキル妙計暗躍もAランクのためページ作成対象外。",
+  "章はixanary.com/ixawiki.comのカードページに記載が無く未確認。"
+ ],
+ "reviewedOk": true,
+ "wikiOldestComment": "2012-10-05",
+ "wikiCommentCount": 186,
+ "chGuess": "4章"
+}

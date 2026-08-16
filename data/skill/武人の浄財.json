@@ -1,0 +1,36 @@
+{
+ "name": "武人の浄財",
+ "rank": "C",
+ "baseRate": 35.0,
+ "target": "全",
+ "effectSummary": "C/LV10 確率 35% 銅銭獲得率 5%/対象:全\n①参加した対人攻撃/防御で倒した兵数x銅銭獲得率(5%)ぶんの銅銭を獲得する",
+ "categoryLinks": [],
+ "sourceCharacters": [
+  {
+   "name": "呂宋助左衛門",
+   "no": "3729",
+   "slot": "S1",
+   "db": "toku",
+   "note": [
+    "呂宋助左衛門(3729)のsynthesisTable S1枠(2026-08-16、担当T2)"
+   ]
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "攻城の妙技",
+  "rank": "S"
+ },
+ "notes": [
+  "2026-08-16 新規作成(担当T2)。Cランクだが、移植後合成候補(afterSkill)が既にページを持つ攻城の妙技[S]である元スキルなのでA-3-9の例外規定によりページ作成対象。No.3729呂宋助左衛門のS1枠。",
+  "対象・確率・効果はixanary.com(skills/武人の浄財)のLV10行「確率：+35% / 対象 全 / 銅銭獲得率：5% 参加した対人攻撃/防御で倒した兵数x銅銭獲得率＝獲得銅銭」から。LV1(21%/2%)とLV10の2段だけでTR段は無い。",
+  "ownHiddenCandidateは呂宋助左衛門(3729)のsynthesisTable S1枠のafterSkill(攻城の妙技[S])から導出。ixanary(skills/武人の浄財)の合成テーブルS1列も1次/2次とも攻：攻城の妙技 Sで裏が取れている。ixagno.blog.fc2.com(blog-entry-5252)の合成テーブルでもS1:武人の浄財[C]→攻城の妙技[S]を確認。",
+  "categoryLinks9項目を1つずつ判定し該当なし(銅銭獲得はコスト減少でも兵站でもない)。"
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 35% / 銅銭獲得率 5%(参加した対人攻撃/防御で倒した兵数x銅銭獲得率=獲得銅銭)"
+  }
+ ]
+}

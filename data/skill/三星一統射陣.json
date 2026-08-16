@@ -1,0 +1,38 @@
+{
+ "name": "三星一統射陣",
+ "rank": "SSS",
+ "baseRate": 40,
+ "target": "弓・器・焙",
+ "effectSummary": "SSS/LV10 確率 40% 防御 154%上昇/対象:弓器焙\n①防御 154%上昇する\n②対象兵科を指揮した防御戦闘時自部隊内の武将が受ける30以下のダメージは最大7になる",
+ "categoryLinks": [],
+ "sourceCharacters": [
+  {
+   "name": "テリーマン",
+   "no": "2636",
+   "slot": "S1",
+   "db": "kyoku"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓・器・焙　確率 40% / 防御 154%上昇(対象兵科を指揮した防御戦闘時、自部隊内の武将が受ける30以下のダメージは最大7になる)"
+  }
+ ],
+ "notes": [
+  "A-3-9によりS以上の合成候補としてページを新設(2026-08-16)。ixanary.com のスキル個別ページ(skills/{name}/)の生HTMLから登録(カードページ側には合成テーブルが無いため)。",
+  "本来の持ち主は毛利輝元(No.1191)だがこのサイトには未登録のためsourceCharactersに含めていない。",
+  "ownHiddenCandidateは1次A・B=三星一統射陣/2次A・B=天奏聖譚曲[SS]から導出。"
+ ],
+ "ownHiddenCandidate": {
+  "skill": "天奏聖譚曲",
+  "rank": "SS"
+ },
+ "grantedViaSkills": [
+  {
+   "skill": "Tツイスター",
+   "rank": "S"
+  }
+ ]
+}

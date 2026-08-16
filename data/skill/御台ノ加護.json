@@ -1,0 +1,40 @@
+{
+ "name": "御台ノ加護",
+ "rank": "S",
+ "baseRate": 60,
+ "target": "全",
+ "noMimic": true,
+ "effectSummary": "S/LV10 確率 60% 防御 170%上昇/対象:全\n模倣不可\n①防御 170%上昇する\n②所領防御陣形の第壱列目か第弐列目に配置時防御効果が3倍になる",
+ "categoryLinks": [],
+ "sourceCharacters": [
+  {
+   "name": "淀（2）",
+   "no": "2620",
+   "slot": "B・C・S1",
+   "db": "kyoku",
+   "note": [
+    "淀(2620)のsynthesisTable B枠・C枠・S1枠(2026-08-16、ixanary.com/skills/御台ノ加護 とixawiki BushoCard/2620淀 の合成候補テーブルで確認)"
+   ]
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "御台ノ加護",
+  "rank": "S"
+ },
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 60% / 防御 170%上昇(所領防御陣形の第壱列目か第弐列目に配置時、防御効果3倍・模倣不可)"
+  }
+ ],
+ "notes": [
+  "2026-08-16 No.2620(淀（2）)の新規登録にあわせて作成(担当K3)。Sランクの初期スキルはA-3-9によりページ作成が必須。",
+  "対象・確率・効果文は ixanary.com/skills/御台ノ加護 のLV10行から。ixawiki BushoCard/2620淀(確率+60%/全/防御170%上昇/所領防御陣形の第壱列目か第弐列目に配置時、防御効果が3倍(模倣不可))と一致(2ソース)。ixagno blog-entry-10270 は倍化後の値を「防御効果が【510%】まで上昇」と書いており170%×3と整合する。",
+  "スキル名は ixawiki 武将カード一覧(極)だけ「御台の加護」(ひらがな)だが、カード画像・ixanary・ixawiki個別カードページ・ixagno の4つがカタカナの「ノ」で一致するため「御台ノ加護」を採用した。",
+  "「模倣不可」はカード原文が修飾語なしで置いているため、①の前の独立行にした([[feedback_skilldetail_prose_format]])。",
+  "ownHiddenCandidate は ixanary.com/skills/御台ノ加護 自身の合成テーブルで、このスキルが1次候補として載っているB・C・S1枠の2次候補(御台ノ加護[S]=自己参照)から導出(S-08 / A-3-0)。",
+  "TR段階なし(ixanary・ixawikiともTR行が無い)。",
+  "categoryLinks 9項目判定: 該当なし(自分のコストを下げるのではなく配置列で防御効果が倍化する型なのでコスト減少にも当たらない)。"
+ ]
+}

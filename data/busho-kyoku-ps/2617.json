@@ -1,0 +1,159 @@
+{
+ "name": "帰蝶（4）",
+ "no": "2617",
+ "ch": "28章",
+ "cost": 3,
+ "troop": "全防",
+ "sub": "",
+ "effect": "所領防御陣形配置時、この武将の編成コスト消費-2(模倣不可)",
+ "furigana": "きちょう",
+ "illustrator": "らくちー",
+ "imageFull": "assets/img/characters/no2617_full.png",
+ "imageChar": "assets/img/characters/no2617_char.png",
+ "atkBase": 1080,
+ "atkGrowth": 46,
+ "defBase": 1200,
+ "defGrowth": 61,
+ "tacticsBase": 550,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3540,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "聖夜ノ守り",
+ "skillDetail": "S/LV10 確率 55% 防御 485%上昇/対象:全\n模倣不可\n①防御 485%上昇する\n②所領防御陣形に配置時この武将の編成コスト消費を-2する",
+ "categoryLinks": [
+  {
+   "href": "skills-cost.html",
+   "label": "コスト減少スキル一覧を見る"
+  },
+  {
+   "href": "skills-cost-def.html",
+   "label": "コスト減少(防御)スキル一覧を見る"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 55% / 防御 485%上昇(所領防御陣形配置時、この武将の編成コスト消費-2・模倣不可)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": null
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": null
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": null
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": null
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": null
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": null
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "聖夜ノ守り",
+   "rank": "S",
+   "afterSkill": "龍驤虎躍",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "55%",
+   "effectShort": "防御 485%上昇(所領防御陣形配置時、この武将の編成コスト消費-2・模倣不可)",
+   "afterTarget": "全",
+   "afterRate": "60%",
+   "afterEffectShort": "攻撃 810%上昇+防御 810%上昇(部隊消費コスト-1・特殊効果は模倣不可)"
+  },
+  {
+   "slot": "B",
+   "skill": "聖夜ノ守り",
+   "rank": "S",
+   "afterSkill": "龍驤虎躍",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "55%",
+   "effectShort": "防御 485%上昇(所領防御陣形配置時、この武将の編成コスト消費-2・模倣不可)",
+   "afterTarget": "全",
+   "afterRate": "60%",
+   "afterEffectShort": "攻撃 810%上昇+防御 810%上昇(部隊消費コスト-1・特殊効果は模倣不可)"
+  },
+  {
+   "slot": "C",
+   "skill": "聖夜ノ守り",
+   "rank": "S",
+   "afterSkill": "龍驤虎躍",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "55%",
+   "effectShort": "防御 485%上昇(所領防御陣形配置時、この武将の編成コスト消費-2・模倣不可)",
+   "afterTarget": "全",
+   "afterRate": "60%",
+   "afterEffectShort": "攻撃 810%上昇+防御 810%上昇(部隊消費コスト-1・特殊効果は模倣不可)"
+  },
+  {
+   "slot": "S1",
+   "skill": "龍驤虎躍",
+   "rank": "SS",
+   "afterSkill": "龍驤虎躍",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "60%",
+   "effectShort": "攻撃 810%上昇+防御 810%上昇(部隊消費コスト-1・特殊効果は模倣不可)",
+   "afterTarget": "全",
+   "afterRate": "60%",
+   "afterEffectShort": "攻撃 810%上昇+防御 810%上昇(部隊消費コスト-1・特殊効果は模倣不可)"
+  },
+  {
+   "slot": "S2",
+   "skill": "万里嵐壁",
+   "rank": "SS",
+   "afterSkill": "万里嵐壁",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "66%",
+   "effectShort": "防御 200%上昇(敵軍部隊数×40%を防御効果に加算・模倣不可)",
+   "afterTarget": "全",
+   "afterRate": "66%",
+   "afterEffectShort": "防御 200%上昇(敵軍部隊数×40%を防御効果に加算・模倣不可)"
+  }
+ ],
+ "notes": [
+  "2026-08-16 新規登録(担当K3)。カード画像はスキル欄が「聖夜ノ守りLV1」表記のためB-00のLV1形式。画像から採ってよいのは6項目だけで、効果量・成長値・合成候補は外部ソースで裏を取った。",
+  "【カード画像から読んだもの】武将名「帰蝶」/ 職業「姫」/ 極・覇表記なし / コスト3 / 統率 槍A・馬A・弓A・器S(4隅を個別にズームして確認。器のSは金色のS文字で、背景のステンドグラスの赤が重なって見えるだけで宝石は乗っていない) / 初期値 攻撃1080・防御1200・兵法550.0 / カードNo.2617 / スキル名「聖夜ノ守り」[S] / Illust らくちー。",
+  "【カード画像の指揮兵数は採用していない】カード上部に「極限突破」の表示があり、指揮兵数は0/4940。ixanaryの成長表の極限突破欄は5140だが、B-01どおりこれは+0.5版の値で、実際の極限突破は5140-200=4940でカードと一致する。lv0Troopsには★0-0の3540を入れた。",
+  "【外部ソースで調べたもの】成長値 攻撃+46・防御+61・兵法+2.5(ixanary.com/cards/2617 と ixagno.blog.fc2.com blog-entry-10094「成長：攻撃【46】防御【61】兵法【2.5】」の2ソース一致)。LV10性能 確率+55%・対象 全・防御485%上昇・所領防御陣形配置時にこの武将の編成コスト消費-2(模倣不可)は ixanary.com/skills/聖夜ノ守り と ixagno.blog.fc2.com blog-entry-8014/9699 の性能比較表「聖夜ノ守り|55％|全防:485％ 所領防御陣形配備時 武将のコスト【-2】」の2ソース一致。",
+  "コスト3.0・指揮3540・統率A/A/A/S・初期値1080/1200/550は ixawiki 武将カード一覧(極)の2617行とも一致(ixawiki側の2ソース目)。",
+  "【ixawikiに個別カードページが無い】BushoCard/2617帰蝶 は未作成(PukiWikiが編集フォームを返す)。data/wiki_card_dates.json に2617の行が無いのもこのため。よって wikiOldestComment / wikiCommentCount は空にしてある。統率・コスト・指揮・初期値については ixawiki 武将カード一覧(極)の行が2ソース目として使える。",
+  "章: ixagno.blog.fc2.com blog-entry-10094 が【28章】と明記し、「2024年12月追加の極武将」「2024年12月開催の『戦国の聖夜 帰蝶とクリスマス』限定配布」と書いている。tools/chapter_guess.py の章期間表(28章=2024-08-09〜2025-02-06)とも整合するため28章とした。",
+  "【武将名の（4）】極の帰蝶は 2752(2017-09-04) / 2987(2018-10-15) / 2555(2022-04-08) / 2592(2023-12-15) / 2617 の5枚だが、2555 は ixawiki 武将カード一覧(極)の表記が「帰蝶(RE)」= 復刻のため通常カードの数に入れない。残る4枚を最古コメント日順に並べると 2752→2987→2592→2617 で、2617 が（4）になる。既登録の 2592=帰蝶（3）と矛盾しないので既存カードの改名は不要。ixagno も記事内で「帰蝶(4)【極】」と呼んでおり(blog-entry-10095、性能比較表の「極:帰蝶(4)」)一致する(記事タイトル側は復刻込みの(5)表記でぶれている)。",
+  "合成候補は ixanary.com/skills/聖夜ノ守り の1次/2次(A・B・C=聖夜ノ守り[S]→龍驤虎躍[SS]、S1=龍驤虎躍[SS]自己参照、S2=万里嵐壁[SS]自己参照)と、ixagno.blog.fc2.com blog-entry-10094 の合成テーブル(第一〜第三=聖夜ノ守り→龍驤虎躍、S1=龍驤虎躍→龍驤虎躍、S2=万里嵐壁→万里嵐壁)が完全一致。A-3-13(初期スキルの移植後候補はS1のスキルと一致する)とも整合する。",
+  "TR段階: ixanary のカードページ・スキルページともTR行が無く、ixagnoも「※鍛錬不可」と明記。よってtrTableはLV10のみ値が入る。",
+  "categoryLinks 9項目判定(A-3-9): 無尽×/撤退×/飛翔×/覇道×/不屈×/兵站×/卓越×/人数依存×/コスト減少○。所領防御陣形限定で自分自身の編成コストを下げる型で、既登録の華焰(No.2615、-1.5)と同型のためskills-cost.html・skills-cost-def.htmlに合わせて登録した。"
+ ],
+ "reviewedOk": true,
+ "wikiOldestComment": null,
+ "wikiCommentCount": 0,
+ "chGuess": null
+}

@@ -1,0 +1,56 @@
+{
+ "name": "攻城の妙技",
+ "rank": "S",
+ "baseRate": 10.0,
+ "target": "全",
+ "effectSummary": "S/LV10 確率 10% 戦闘勝利時のみ防御側の兵士被害数+40%/対象:全\n①戦闘に勝利したときのみ防御側の兵士被害数を40%増加させる",
+ "categoryLinks": [],
+ "sourceCharacters": [
+  {
+   "name": "名古屋山三郎",
+   "no": "3716",
+   "slot": "S1",
+   "db": "toku",
+   "note": [
+    "名古屋山三郎(3716)のsynthesisTable S1枠(2026-08-16)"
+   ]
+  },
+  {
+   "name": "本願寺蓮如",
+   "no": "2702",
+   "slot": "S1",
+   "db": "kyoku",
+   "note": [
+    "本願寺蓮如(2702)のsynthesisTable S1枠(2026-08-16、担当K6)"
+   ]
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "攻城の妙技",
+  "rank": "S"
+ },
+ "grantedViaSkills": [
+  {
+   "skill": "真言念破",
+   "rank": "A"
+  },
+  {
+   "skill": "武人の浄財",
+   "rank": "C"
+  }
+ ],
+ "notes": [
+  "ixanary.com(skills/攻城の妙技)から登録(2026-08-16)。S以上のスキルはページを作る決まり(A-3-9)にもとづく新規作成。名古屋山三郎(No.3716)のS1枠の候補として必要になった。",
+  "対象・確率・効果文はixanaryの表記をうちの書式に直したもの。ixanaryはLV1(+10%)とLV10(+40%)の2段だけで、TR段は存在しない。確率はLV1・LV10とも10%で変わらない。",
+  "ownHiddenCandidateはixanary(skills/攻城の妙技)の合成テーブルが1次/2次/3次ともS1列=攻：攻城の妙技[S]の自己参照であることから(S-08)。名古屋山三郎側のsynthesisTable S1のafterSkillとも一致する。",
+  "grantedViaSkillsの真言念破[A]は、名古屋山三郎のS2枠が 真言念破[A]→攻城の妙技[S] と変化するため(A-3-12)。真言念破自身のixanaryスキルページも1次/2次/3次ともS1列=攻：攻城の妙技[S]で裏が取れている。",
+  "categoryLinksはA-3-9の9項目(無尽/撤退/飛翔/覇道/不屈/兵站/卓越/人数依存/コスト)を1つずつ判定し、いずれにも該当しないため空のまま。"
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 10% / 戦闘勝利時のみ防御側の兵士被害数+40%"
+  }
+ ]
+}

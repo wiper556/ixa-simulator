@@ -1,0 +1,134 @@
+{
+ "name": "細川晴元（2）",
+ "no": "31317",
+ "furigana": "ほそかわはるもと",
+ "ch": "32章",
+ "cost": 5.5,
+ "troop": "弓砲器攻",
+ "sub": "",
+ "effect": "対象兵科指揮時、極限スキルの攻撃効果5倍",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no31317_full.png",
+ "imageChar": "assets/img/characters/no31317_char.png",
+ "atkBase": 1280,
+ "atkGrowth": 74,
+ "defBase": 1090,
+ "defGrowth": 49,
+ "tacticsBase": 670,
+ "tacticsGrowth": 3,
+ "lv0Troops": 5350,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "S",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "凶狂威令",
+ "skillDetail": "S/TR6 確率 100% 攻撃 1180%上昇/対象:弓・砲・器\n模倣不可\n①攻撃 1180%上昇する\n②対象兵科指揮時極限スキルの攻撃効果が5倍となる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓・砲・器　確率 100% / 攻撃 510%上昇(極限スキルの攻撃効果3.5倍)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": "弓・砲・器　確率 100% / 攻撃 550%上昇(極限スキルの攻撃効果3.6倍)"
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": "弓・砲・器　確率 100% / 攻撃 630%上昇(極限スキルの攻撃効果3.8倍)"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": "弓・砲・器　確率 100% / 攻撃 730%上昇(極限スキルの攻撃効果4倍)"
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": "弓・砲・器　確率 100% / 攻撃 850%上昇(極限スキルの攻撃効果4.2倍)"
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": "弓・砲・器　確率 100% / 攻撃 990%上昇(極限スキルの攻撃効果4.5倍)"
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": "弓・砲・器　確率 100% / 攻撃 1180%上昇(極限スキルの攻撃効果5倍)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "絶無灰尽",
+   "rank": "SS",
+   "afterSkill": "絶無灰尽",
+   "afterRank": "SS",
+   "target": "全 無尽 不屈1",
+   "rate": "100%",
+   "effectShort": "攻撃 1010%上昇+無尽(部隊消費コスト-0.5)",
+   "afterEffectShort": "攻撃 1010%上昇+無尽(部隊消費コスト-0.5)"
+  },
+  {
+   "slot": "B",
+   "skill": "覆天征軍",
+   "rank": "SS",
+   "afterSkill": "覆天征軍",
+   "afterRank": "SS",
+   "target": "全 無尽2",
+   "rate": "100%",
+   "effectShort": "攻撃 900%上昇+無尽2(部隊消費コスト-1.0)",
+   "afterEffectShort": "攻撃 900%上昇+無尽2(部隊消費コスト-1.0)"
+  },
+  {
+   "slot": "C",
+   "skill": "覇天金剛",
+   "rank": "SS",
+   "afterSkill": "覇天金剛",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "攻撃 1350%上昇+防御 1350%上昇+速度 100%上昇",
+   "afterEffectShort": "攻撃 1350%上昇+防御 1350%上昇+速度 100%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "絶界滅刃",
+   "rank": "SS",
+   "afterSkill": "絶界滅刃",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "40%",
+   "effectShort": "攻撃 基礎値340%×部隊内の同スキル所持武将数(4人)=1360%上昇",
+   "afterEffectShort": "攻撃 基礎値340%×部隊内の同スキル所持武将数(4人)=1360%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "開闢ノ逆鉾",
+   "rank": "SS",
+   "afterSkill": "開闢ノ逆鉾",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "攻撃 254%上昇+卓越:攻撃戦闘時追加確率30%で自部隊の兵士被害15%減少(部隊内重複上限2・模倣不可)",
+   "afterEffectShort": "攻撃 254%上昇+卓越:攻撃戦闘時追加確率30%で自部隊の兵士被害15%減少(部隊内重複上限2・模倣不可)"
+  }
+ ],
+ "notes": [
+  "天パラレル(No.30000+元No.)。元カードNo.1317 と同じ武将の別バージョンで、カードは最初からスキルがTR6の状態で配られる(鍛錬表のTR6行の必要ポイントが「パラレル」なのはこのため)。",
+  "画像はスクリーンショット 2026-08-12 115551〜115617.png(元スクリーンショット/スクリーンショット_31317.png)から crop_card.py で切り抜いた。**このバッチはハートが暗く落ちており既定のTOL=20ではハート下端の12x3/9pxしか拾えず、切り抜きが12pxほど下にずれて指揮兵数の行が切れる。TOL=50にすると18x21/81pxの正しいハートを拾う**(No.1316等と同じ対処)。",
+  "カード画像から直接読んだのは 武将名/4隅バッジ(統率)/スキル名/攻撃・防御・兵法の初期値/コスト/指揮兵数/カードNo. で、いずれも元カードNo.1317 の登録値と一致した(槍A/弓S/馬A/器S)。ixanary.com/cards/31317/ の card JSON とも cost/capacity/attack/defence/intelligence が一致(ixanary は yumi/kiba が入れ替わっているためバッジはカード画像を正とした)。",
+  "成長値はパラレルのカード画像にも ixanary.com/cards/31317/ にも出ない(ixanary は未入力で 0/0/0、ページにも「成長値が設定されていないので、成長しない」と出る)。既に入力済みの旧パラレル 31286/31290/31301/31303 が4枚とも元カードと同一の成長値であることを ixanary の card JSON で確認し、さらに ixagno.blog.fc2.com の元カード個別記事(blog-entry-11149)の成長値表とも一致したため、元カードの値(攻74/防49/兵法3)を引き継いだ。",
+  "trTable・synthesisTable はスキルに紐づく値なので元カードと共通。ixanary.com/skills/凶狂威令/ の生HTMLで鍛錬表(LV1〜TR6)と合成テーブル(1次/2次/3次)を、ixagno.blog.fc2.com blog-entry-11149 の鍛錬表・初期テーブル/左記スキル移植後の表を、それぞれ突き合わせて既存の元カード登録と一致することを確認した。",
+  "ch は元カードと同じ32章。ixagno.blog.fc2.com「パラレル天【一覧】」(blog-entry-11077)がパラレルを元カードと同じ章の節に並べている(31298〜31309=31章 / 31286〜31297=30章。元カード1298〜1309・1286〜1297の当サイト登録章と一致)ため、同じ規則で32章とした。ixawiki には 31316〜31321 も 1316〜1321 もページが無い(編集フォームが返る)。",
+  "sourceCharacters逆引き(A-3-11)はパラレル分を追記していない。skills.html の描画は db が kyoku/ketsu/既定の3種しか解釈せず(3447行付近)、tools/register/wireup.py の DB_OF_DIR にも busho-parallel が入っていないため、今の配線では天パラレルを sourceCharacters に載せる決まりが無い。候補スキル全行について元カードNo.1317 が各 data/skill/*.json の sourceCharacters に載っていることは確認済みで、逆引き自体は成立している。パラレルも載せるかどうかは配線の変更を伴うので管理側の判断を仰ぐ。"
+ ],
+ "reviewedOk": true,
+ "wikiOldestComment": null,
+ "wikiCommentCount": null
+}

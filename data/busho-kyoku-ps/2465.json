@@ -1,0 +1,137 @@
+{
+ "name": "フロイス",
+ "no": "2465",
+ "ch": "未確認",
+ "cost": 4,
+ "troop": "全攻防",
+ "sub": "飛翔15",
+ "effect": "攻撃 190%上昇+防御 190%上昇(飛翔15)",
+ "furigana": "ふろいす",
+ "illustrator": "正子公也",
+ "imageFull": "assets/img/characters/no2465_full.png",
+ "imageChar": "assets/img/characters/no2465_char.png",
+ "atkBase": 1130,
+ "atkGrowth": 54,
+ "defBase": 1130,
+ "defGrowth": 54,
+ "tacticsBase": 540,
+ "tacticsGrowth": 3.5,
+ "lv0Troops": 4250,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "S",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "星読ノ聖賢",
+ "skillDetail": "S/LV10 確率 70% 攻撃 190%上昇/対象:全　飛翔15\n①攻撃 190%上昇する\n②防御 190%上昇する\n③飛翔15を持つ",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全 飛翔15　確率 70% / 攻撃 190%上昇+防御 190%上昇"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": null
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": null
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": null
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": null
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": null
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": null
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "戦陣 破軍",
+   "rank": "A",
+   "afterSkill": "天穿神滅",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "44%",
+   "effectShort": "攻撃 66%上昇+防御 66%上昇",
+   "afterTarget": "砲・器",
+   "afterRate": "50%",
+   "afterEffectShort": "攻撃 ((部隊ランク+1)×コスト×3)%上昇(部隊ランクとコストで効果が変化)"
+  },
+  {
+   "slot": "B",
+   "skill": "豊国ノ寵将",
+   "rank": "S",
+   "afterSkill": "豊国ノ寵将",
+   "afterRank": "S",
+   "target": "全 飛翔7",
+   "rate": "70%",
+   "effectShort": "攻撃 190%上昇+防御 190%上昇(所属部隊の飛翔値+2・模倣不可・部隊内重複不可)",
+   "afterEffectShort": "攻撃 190%上昇+防御 190%上昇(所属部隊の飛翔値+2・模倣不可・部隊内重複不可)"
+  },
+  {
+   "slot": "C",
+   "skill": "煙霞迷霧",
+   "rank": "S",
+   "afterSkill": "煙霞迷霧",
+   "afterRank": "S",
+   "target": "全 飛翔8",
+   "rate": "70%",
+   "effectShort": "攻撃 110%上昇+防御 110%上昇(所属部隊の武将が飛翔Xを持つとき代わりに飛翔[X+4]を持つ・模倣不可・部隊内重複不可)",
+   "afterEffectShort": "攻撃 110%上昇+防御 110%上昇(所属部隊の武将が飛翔Xを持つとき代わりに飛翔[X+4]を持つ・模倣不可・部隊内重複不可)"
+  },
+  {
+   "slot": "S1",
+   "skill": "高津姫神",
+   "rank": "SS",
+   "afterSkill": "高津姫神",
+   "afterRank": "SS",
+   "target": "自身",
+   "rate": "70%",
+   "effectShort": "自身が持つ初期スキルを模倣する(戦闘スキルのみ・1倍)",
+   "afterEffectShort": "自身が持つ初期スキルを模倣する(戦闘スキルのみ・1倍)"
+  },
+  {
+   "slot": "S2",
+   "skill": "布都御魂ノ鬨",
+   "rank": "SS",
+   "afterSkill": "布都御魂ノ鬨",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "35%",
+   "effectShort": "攻撃 40%上昇+防御 40%上昇(所属部隊内のレアリティS以上のスキル個数×20%を攻防効果に加算)",
+   "afterEffectShort": "攻撃 40%上昇+防御 40%上昇(所属部隊内のレアリティS以上のスキル個数×20%を攻防効果に加算)"
+  }
+ ],
+ "notes": [
+  "カード画像(no2465_full.png)はスキル欄「星読ノ聖賢LV1」表記のためLV1形式(B-00)。画像から読んだのは 武将名/統率4隅バッジ(槍A・馬A・弓S・器A、6倍拡大で個別確認)/スキル名/初期値1130・1130・540.0/覇表記なし/カードNo.2465 の6項目のみ。",
+  "コスト4・指揮4250(★0-0)・成長値+54/+54/+3.5・ふりがな ふろいす・絵師 正子公也・LV10効果は ixanary.com/cards/2465 と ixawiki.com(BushoCard/2465フロイス)の2ソースで一致を確認(ixawiki側もCost4.0・指揮兵数4250・統率 槍A/馬A/弓S/器A・初期値1130/1130/540・成長値54/54/3.5)。",
+  "LV1の値(確率43%・攻防95%上昇)はLV10として登録していない。LV10は確率70%・攻防190%上昇(2ソース一致)。飛翔15はLV1/LV10とも同値。",
+  "合成テーブルは ixanary.com/skills/星読ノ聖賢 の1次/2次と ixawiki.com(BushoCard/2465の合成候補テーブル)の2ソースで全5枠一致を確認。A=戦陣 破軍[A]→天穿神滅[SS]、B=豊国ノ寵将[S](自己参照)、C=煙霞迷霧[S](自己参照)、S1=高津姫神[SS](自己参照)、S2=布都御魂ノ鬨[SS](自己参照)。",
+  "初期スキル 星読ノ聖賢[S] は自身の合成テーブルA〜S2のどの枠にも出ないため移植不可。data/skill/星読ノ聖賢.json は「S以上は無条件でページ作成」(A-3-9)により新規作成した。",
+  "TR(鍛錬)情報は ixanary.com・ixawiki.com のいずれにも記載が無いためTR1以降のeffectはnull。",
+  "章はixanary.com/ixawiki.comのカードページに記載が無いため未確認(wiki最古コメント2023-04-03から25章の当たり)。"
+ ],
+ "reviewedOk": true,
+ "wikiOldestComment": "2023-04-03",
+ "wikiCommentCount": 15,
+ "chGuess": "25章"
+}

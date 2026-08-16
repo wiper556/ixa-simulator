@@ -1,0 +1,137 @@
+{
+ "name": "ガーネット",
+ "no": "2623",
+ "ch": "29章",
+ "cost": 0,
+ "troop": "将特",
+ "sub": "",
+ "effect": "部隊にセットするとセット時に負傷していた武将のHPを50回復(模倣不可)",
+ "furigana": "がーねっと",
+ "illustrator": "FinalFantasyIX 25th ANNIVERSARY",
+ "imageFull": "assets/img/characters/no2623_full.png",
+ "imageChar": "assets/img/characters/no2623_char.png",
+ "atkBase": 560,
+ "atkGrowth": 1,
+ "defBase": 560,
+ "defGrowth": 1,
+ "tacticsBase": 660,
+ "tacticsGrowth": 3.5,
+ "lv0Troops": 1,
+ "rankGrades": {
+  "yari": "F",
+  "yumi": "F",
+  "uma": "F",
+  "ki": "F"
+ },
+ "initialSkill": "ケアルガ",
+ "skillDetail": "S/LV10 確率 100% 負傷していた武将のHPを50回復/対象:将\n模倣不可\n①このカードを部隊にセットするとセット時に負傷していた武将のHPを50回復する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "将　確率 100% / このカードを部隊にセットするとセット時に負傷していた武将のHPを50回復(模倣不可)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": "将　確率 100% / このカードを部隊にセットするとセット時に負傷していた武将のHPを60回復(模倣不可)"
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": "将　確率 100% / このカードを部隊にセットするとセット時に負傷していた武将のHPを80回復(模倣不可)"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": "将　確率 100% / このカードを部隊にセットするとセット時に負傷していた武将のHPを100回復(模倣不可)"
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": "将　確率 100% / このカードを部隊にセットするとセット時に負傷していた武将のHPを150回復(模倣不可)"
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": "将　確率 100% / このカードを部隊にセットするとセット時に負傷していた武将のHPを200回復(模倣不可)"
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": null
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "万里嵐壁",
+   "rank": "SS",
+   "afterSkill": "万里嵐壁",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "66%",
+   "effectShort": "防御 200%上昇+敵軍部隊数×40%を防御効果に加算(模倣不可)",
+   "afterEffectShort": "防御 200%上昇+敵軍部隊数×40%を防御効果に加算(模倣不可)"
+  },
+  {
+   "slot": "B",
+   "skill": "神羅聖域",
+   "rank": "SS",
+   "afterSkill": "神羅聖域",
+   "afterRank": "SS",
+   "target": "全 覇道",
+   "rate": "40%",
+   "effectShort": "攻撃 900%上昇+防御 900%上昇+破壊 150%上昇+覇道を持つため所属部隊の武将のスキルを無効化・発動率低下から保護",
+   "afterEffectShort": "攻撃 900%上昇+防御 900%上昇+破壊 150%上昇+覇道を持つため所属部隊の武将のスキルを無効化・発動率低下から保護"
+  },
+  {
+   "slot": "C",
+   "skill": "國才連豪",
+   "rank": "SS",
+   "afterSkill": "國才連豪",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "50%",
+   "effectShort": "防御 310%×國才連豪所持武将数(4人)=1240.0%上昇",
+   "afterEffectShort": "防御 310%×國才連豪所持武将数(4人)=1240.0%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "國才連豪",
+   "rank": "SS",
+   "afterSkill": "國才連豪",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "50%",
+   "effectShort": "防御 310%×國才連豪所持武将数(4人)=1240.0%上昇",
+   "afterEffectShort": "防御 310%×國才連豪所持武将数(4人)=1240.0%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "リジェネ",
+   "rank": "S",
+   "afterSkill": "絶無灰尽",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "デッキ上武将回復率 5%上昇(所持しているだけでデッキ上にある全武将のHPが回復)",
+   "afterTarget": "全 無尽 不屈1",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 1010%上昇+無尽(部隊消費コスト-0.5)"
+  }
+ ],
+ "notes": [
+  "出典: カード画像(LV1形式・B-00で読んでよい6項目のみ採用: 武将名/統率4隅バッジ/スキル名/攻防兵法の初期値/覇でないこと/カードNo.) + ixanary.com(cards/{no}・skills/{skill}の生HTML) + ixawiki.com(BushoCard/{no}{name}・武将カード一覧(極))。効果量・成長値・指揮兵数・合成候補はすべて外部ソースから取り、カード画像のLV1値は登録していない。",
+  "ch(章)はFF9 25周年記念コラボ「玖幻戦」の実装時期から。ixagno.blog.fc2.com(2025-07-03の記事、カテゴリ【29章】でこのコラボカードの追加を扱っている)と、当サイトの既存データで29章の窓が2025-02-07〜2025-08-06(30章の初出が2025-08-07)であることの2点による。ゲーム内での直接確認ではない。",
+  "コラボカード(FinalFantasyIX 25th ANNIVERSARY)。取引/譲与不可。覇の表記はカード画像に無く【覇】は付かない。同名の特武将(No.363x)が別に居るがレアリティが違うため（N）は振らない。",
+  "統率はカード画像の4隅バッジ(槍F/馬F/弓F/器F)を拡大確認、ixawiki武将カード一覧(極)の F|F|F|F と一致。",
+  "コスト0・指揮兵数1のサポートカード。指揮兵数はixanaryの★0-0=1、カード画像の表示(0/1)とも一致。",
+  "合成テーブルはixanary.com/skills/ケアルガ の1次/2次。1次はixawikiのカードページとも一致。S2枠は移植前リジェネ[S]→移植後絶無灰尽[SS]で、当サイトのリジェネ側から逆引きできるようにしている(A-3-12)。",
+  "ケアルガ自体はixanaryの合成素材欄が「合成不可スキルです」のため移植不可。"
+ ],
+ "reviewedOk": true,
+ "wikiOldestComment": "2025-08-03",
+ "wikiCommentCount": 1,
+ "chGuess": "29章か30章"
+}

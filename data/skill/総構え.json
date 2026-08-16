@@ -1,0 +1,45 @@
+{
+ "name": "総構え",
+ "rank": "B",
+ "baseRate": 35.0,
+ "target": "全",
+ "effectSummary": "B/LV10 確率 35% 防御 30%上昇/対象:全\n①防御が30%上昇する",
+ "categoryLinks": [],
+ "sourceCharacters": [
+  {
+   "name": "曲直瀬道三",
+   "no": "3720",
+   "slot": "B",
+   "db": "toku",
+   "note": [
+    "曲直瀬道三(3720)のsynthesisTable B枠(2026-08-16、担当T2)"
+   ]
+  },
+  {
+   "name": "北条氏綱（1）",
+   "no": "2739",
+   "slot": "A",
+   "db": "kyoku",
+   "note": [
+    "北条氏綱(2739)のsynthesisTable A枠(2026-08-16、担当K6)"
+   ]
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "獅子の陣",
+  "rank": "S"
+ },
+ "notes": [
+  "2026-08-16 新規作成(担当T2)。Bランクだが、移植後合成候補(afterSkill)が既にページを持つ獅子の陣[S]である元スキルなのでA-3-9の例外規定によりページ作成対象。No.3720曲直瀬道三のB枠。",
+  "対象・確率・効果はixanary.com(skills/総構え)のLV10行「確率：+35% / 対象 全 / 防御：30%上昇」から。LV1(20%/12%上昇)とLV10の2段だけでTR段は無い。",
+  "ownHiddenCandidateは曲直瀬道三(3720)のsynthesisTable B枠のafterSkill(獅子の陣[S])から導出。ixanary(skills/総構え)の合成テーブルS1列1次が防：獅子の陣 Sであることとも一致する(A-3-13)。",
+  "categoryLinks9項目を1つずつ判定し該当なし。"
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 35% / 防御 30%上昇"
+  }
+ ]
+}

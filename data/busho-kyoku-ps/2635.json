@@ -1,0 +1,150 @@
+{
+ "name": "ブロッケンJr.",
+ "no": "2635",
+ "ch": "未確認",
+ "cost": 4,
+ "troop": "全",
+ "sub": "",
+ "effect": "攻撃戦闘時、この武将が持つ卓越スキルは二度卓越できる(模倣不可)",
+ "furigana": "ぶろっけんじゅにあ",
+ "illustrator": "ゆでたまご／集英社・キン肉マン製作委員会",
+ "imageFull": "assets/img/characters/no2635_full.png",
+ "imageChar": "assets/img/characters/no2635_char.png",
+ "atkBase": 1230,
+ "atkGrowth": 65,
+ "defBase": 1080,
+ "defGrowth": 48,
+ "tacticsBase": 530,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 4400,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "S",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "ベルリンの赤い雨",
+ "skillDetail": "S/LV10 確率 100% 対象:全\n模倣不可\n①攻撃戦闘時この武将が持つ卓越スキルは二度卓越できる(2回目の卓越確率は+10%される)",
+ "categoryLinks": [
+  {
+   "href": "skills-takuetsu.html",
+   "label": "卓越スキル一覧を見る"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 攻撃戦闘時にこの武将の卓越スキルが二度卓越できる(2回目の卓越確率+10%・模倣不可)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": null
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": null
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": null
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": null
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": null
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": null
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "筋骨隆々",
+   "rank": "S",
+   "afterSkill": "筋骨隆々",
+   "afterRank": "S",
+   "target": "全 不屈1 兵站",
+   "rate": "9%",
+   "effectShort": "攻撃 270%上昇+防御 270%上昇",
+   "afterTarget": "全 不屈1 兵站",
+   "afterRate": "9%",
+   "afterEffectShort": "攻撃 270%上昇+防御 270%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "仙剣破斬",
+   "rank": "SSS",
+   "afterSkill": "仙剣破斬",
+   "afterRank": "SSS",
+   "target": "全 卓越",
+   "rate": "100%",
+   "effectShort": "攻撃 115%上昇+防御 115%上昇(卓越:追加確率35%で4倍)",
+   "afterTarget": "全 卓越",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 115%上昇+防御 115%上昇(卓越:追加確率35%で4倍)"
+  },
+  {
+   "slot": "C",
+   "skill": "幻渦龍刀",
+   "rank": "S",
+   "afterSkill": "幻渦龍刀",
+   "afterRank": "S",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "攻撃 250%上昇+防御 250%上昇(卓越:追加確率-50%で3倍・模倣不可)",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 250%上昇+防御 250%上昇(卓越:追加確率-50%で3倍・模倣不可)"
+  },
+  {
+   "slot": "S1",
+   "skill": "戦華雄渾",
+   "rank": "SS",
+   "afterSkill": "戦華雄渾",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "攻防 各140%上昇(卓越追加確率25%・4倍)",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻防 各140%上昇(卓越追加確率25%・4倍)"
+  },
+  {
+   "slot": "S2",
+   "skill": "開闢ノ逆鉾",
+   "rank": "SS",
+   "afterSkill": "開闢ノ逆鉾",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "攻撃 254%上昇+卓越:攻撃戦闘時追加確率30%で自部隊の兵士被害15%減少(部隊内重複上限2・模倣不可)",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 254%上昇+卓越:攻撃戦闘時追加確率30%で自部隊の兵士被害15%減少(部隊内重複上限2・模倣不可)"
+  }
+ ],
+ "notes": [
+  "キン肉マンコラボの極(プラチナ極)。カード画像はスキル欄が「LV1」表記のためB-00のLV1形式で、画像から採ったのは武将名・統率(4隅バッジ拡大)・スキル名・攻撃/防御/兵法の初期値・覇の有無・カードNo.の6項目のみ。効果量・成長値・指揮兵数・合成候補は外部ソースで確認した。",
+  "武将名の表記が情報源で割れている。カード実物の縦書き名は「ブロッケンJr.」で、ixawiki.com(BushoCard/2635ブロッケンJr.)とixagno.blog.fc2.com(限定武将一覧)も「ブロッケンJr.」。「ブロッケンジュニア」はixanary.comとassets/js/ixa-data.jsの表記。カード実物を最上位の根拠とする原則に従い「ブロッケンJr.」で登録した。",
+  "統率は槍A/馬A/弓S/器A(カード画像バッジ拡大)。ixawiki.comと一致。",
+  "指揮兵数はカード表示が「限界突破」状態で0/5000。5000-6×100=4400で、ixanary.com(★0-0=4400)・ixawiki.com(4400)と一致する。",
+  "コスト4・成長値+65/+48/+2.5はixanary.com(cards/2635)。初期値1230/1080/530はカード実物・ixanary・ixawikiで一致。",
+  "9項目チェック: 卓越が該当(skills-takuetsu.html)。他8項目は該当なし。",
+  "合成テーブルはixanary.com(skills/ベルリンの赤い雨)の1次/2次のみ。ixawiki側は空テンプレートで裏取りできていない(単一ソース)。",
+  "A-3-8の2ソース要件を満たせないため青丸のまま。合成テーブル(スロット)の裏が取れる情報源がixanary.comの1つしか無く(ixawikiの合成候補表は空テンプレート、ixagno.blog.fc2.comにキン肉マンコラボ極の個別記事が無い)、「単一ソースのまま黄色丸にしない」規約に従ってreviewedOkを立てていない。",
+  "加えて武将名の表記がソース間で割れている(カード実物/ixawiki/ixagno=「ブロッケンJr.」、ixanary/assets/js/ixa-data.js=「ブロッケンジュニア」)。どちらを正とするかユーザー確認が要る。"
+ ],
+ "wikiCommentCount": 0
+}

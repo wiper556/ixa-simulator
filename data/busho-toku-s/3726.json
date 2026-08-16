@@ -1,0 +1,149 @@
+{
+ "name": "陽泰院",
+ "no": "3726",
+ "ch": "未確認",
+ "cost": 3.0,
+ "troop": "全防",
+ "sub": "",
+ "effect": "攻撃部隊が2部隊の場合のみ相手総攻撃力の25%を総防御力に加算(模倣不可・重複不可)",
+ "furigana": "ようたいいん",
+ "illustrator": "BANAMONS*",
+ "imageFull": "assets/img/characters/no3726_full.png",
+ "imageChar": "assets/img/characters/no3726_char.png",
+ "atkBase": 750,
+ "atkGrowth": 18.0,
+ "defBase": 820,
+ "defGrowth": 20.0,
+ "tacticsBase": 520.0,
+ "tacticsGrowth": 3.0,
+ "lv0Troops": 2650,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "B",
+  "uma": "S",
+  "ki": "A"
+ },
+ "initialSkill": "嫐討ち返し",
+ "skillDetail": "C/LV10 確率 100% 相手総攻撃力の25%を総防御力に加算/対象:全\n模倣不可・重複不可\n①攻撃部隊が2部隊の場合のみ発動する\n②相手の総攻撃力の25%を自軍の総防御力に加算する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 攻撃部隊が2部隊の場合のみ相手総攻撃力の25%を総防御力に加算(模倣不可・重複不可)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": null
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": null
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": null
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": null
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": null
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": null
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "騎馬隊堅陣",
+   "rank": "F",
+   "afterSkill": "騎馬隊奇襲",
+   "afterRank": "E",
+   "target": "馬",
+   "rate": "30%",
+   "effectShort": "馬防 12%上昇",
+   "afterTarget": "馬",
+   "afterRate": "30%",
+   "afterEffectShort": "馬攻 12%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "鉄壁の備え",
+   "rank": "D",
+   "afterSkill": "城崩し",
+   "afterRank": "D",
+   "target": "全",
+   "rate": "40%",
+   "effectShort": "防御 15%上昇",
+   "afterTarget": "器",
+   "afterRate": "35%",
+   "afterEffectShort": "破壊 20%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "防陣 吽形",
+   "rank": "B",
+   "afterSkill": "弓妖陣",
+   "afterRank": "B",
+   "target": "弓砲",
+   "rate": "30%",
+   "effectShort": "防御 36%上昇(No.2140龍造寺隆信と特殊合成可能)",
+   "afterTarget": "槍弓砲",
+   "afterRate": "25%",
+   "afterEffectShort": "防御 39%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "戦陣 阿吽",
+   "rank": "A",
+   "afterSkill": "覇王征軍",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "25%",
+   "effectShort": "攻撃 42%上昇+防御 42%上昇",
+   "afterTarget": "全",
+   "afterRate": "42%",
+   "afterEffectShort": "攻撃 25.39%上昇(部隊総コストで変動)"
+  },
+  {
+   "slot": "S2",
+   "skill": "神勅賢母",
+   "rank": "S",
+   "afterSkill": "背水之陣",
+   "afterRank": "B",
+   "target": "槍馬砲",
+   "rate": "25%",
+   "effectShort": "防御 39%上昇",
+   "afterTarget": "槍弓馬",
+   "afterRate": "20%",
+   "afterEffectShort": "防御 37%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3726 と skills/嫐討ち返し)、ixawiki.com(BushoCard/3726陽泰院)の2ソースで登録(2026-08-16)。",
+  "カード画像はスキル欄が「嫐討ち返しLV1」表記の育成前カード(B-00)。画像から読んだのは武将名/統率(4隅バッジ)/スキル名/攻撃・防御・兵法の初期値/覇の有無/カードNo.の6項目のみで、効果量・成長値・指揮兵数・合成候補はすべて外部ソースで確認した。",
+  "lv0Troopsはixanaryの「指揮」欄(★0-0)の値(B-01。突破ランク別の値は+0.5版なので使わない)。",
+  "合成候補はixanaryのスキルページ(skills/嫐討ち返し)の1次(移植前)・2次(移植後)。ixawikiの合成候補テーブルとも全5枠一致。",
+  "TR段階: ixanary/ixawikiともLV1とLV10しか無く、鍛錬(TR)の段が存在しない。trTableのTR行はB-0のテンプレートどおり残してeffectをnullにしてある(表示側は値が1つも無いTR行を出さない)。",
+  "覇の表記はカード画像に無し。特レアリティ(3xxx)に同名カードは他に無いため(data/wiki_card_dates.json)、武将名に（N）は付けない。",
+  "ixagno.blog.fc2.com(blog-entry-4167「陽泰院【特】の能力と考察」)を3ソース目として確認。合成テーブル全5枠はixanary/ixawikiと完全一致。ただし成長値だけは「攻撃20/防御21/兵法2.0」と書かれておりixanary/ixawiki(18/20/3.0)と食い違う。同記事の本文自身が「何気に兵法成長値が【3】ある」と書いていて記事内で矛盾しているため、2ソースが一致するixanary/ixawikiの18/20/3.0を採った。",
+  "カード画像は極限突破の状態で指揮兵数0/4050。calcTroopsForBreakthrough(2650,'極限突破')=2650+600+800=4050と一致し、lv0Troops=2650(ixanary★0-0)をカード側から裏取りできた。ixanaryの極限突破欄は4250でB-01のとおり+0.5版(+200)。",
+  "rankGradesは4隅バッジを個別にズームして読み、左上槍A/右上馬S/左下弓B/右下器A。ixawikiの統率力表(槍A・馬S・弓B・器A)と一致。",
+  "ixanary/ixawikiには部隊スキル「防：戦姫艶舞」の対応記載があるが、サイト側に部隊スキルを持つフィールドが無いため登録していない(申し送り)。",
+  "章はixanary/ixawiki/ixagnoのいずれにも章番号の記載が無く未確認。ixagnoは「2016年4月追加」と書いており、tools/chapter_guess.pyの章表(16章=2018-08-10〜)より前のため機械的な当たりも付かない。"
+ ],
+ "reviewedOk": true,
+ "wikiOldestComment": "2016-04-06",
+ "wikiCommentCount": 153,
+ "chGuess": null
+}

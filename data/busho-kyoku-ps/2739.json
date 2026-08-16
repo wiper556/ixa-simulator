@@ -1,0 +1,109 @@
+{
+ "name": "北条氏綱（1）",
+ "no": "2739",
+ "ch": "未確認",
+ "cost": 1.5,
+ "troop": "全防",
+ "sub": "",
+ "effect": "防御 35%上昇/銅銭獲得率 7.5%(防御で倒した兵数に応じて防御参加者全員が銅銭獲得・重複不可・模倣不可)",
+ "furigana": "ほうじょううじつな",
+ "illustrator": "東柚己",
+ "imageFull": "assets/img/characters/no2739_full.png",
+ "imageChar": "assets/img/characters/no2739_char.png",
+ "atkBase": 700,
+ "atkGrowth": 17.0,
+ "defBase": 750,
+ "defGrowth": 19.0,
+ "tacticsBase": 480.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 1900,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "禄寿応穏",
+ "skillDetail": "A/LV10 確率 35% 防御 35%上昇/銅銭獲得率 7.5%/対象:全\n模倣不可\n①防御 35%上昇/銅銭獲得率 7.5%(防御で倒した兵数に応じて防御参加者全員が銅銭獲得・重複不可)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 35% / 防御 35%上昇/銅銭獲得率 7.5%(防御で倒した兵数に応じて防御参加者全員が銅銭獲得・重複不可・模倣不可)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "総構え",
+   "rank": "B",
+   "afterSkill": "獅子の陣",
+   "afterRank": "S",
+   "target": "全",
+   "rate": "35%",
+   "effectShort": "防御 30%上昇",
+   "afterTarget": "槍弓馬",
+   "afterRate": "45%",
+   "afterEffectShort": "防御 35%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "洞察",
+   "rank": "B",
+   "afterSkill": "洞察",
+   "afterRank": "B",
+   "target": "全",
+   "rate": "30%",
+   "effectShort": "防御 7.5%上昇(部隊ランクボーナスで効果が変化)",
+   "afterEffectShort": "防御 7.5%上昇(部隊ランクボーナスで効果が変化)"
+  },
+  {
+   "slot": "C",
+   "skill": "士気鼓舞",
+   "rank": "B",
+   "afterSkill": "士気鼓舞",
+   "afterRank": "B",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "防御 20%上昇(職業「将」の武将に対してのみ効果)",
+   "afterEffectShort": "防御 20%上昇(職業「将」の武将に対してのみ効果)"
+  },
+  {
+   "slot": "S1",
+   "skill": "禄寿応穏",
+   "rank": "A",
+   "afterSkill": "禄寿応穏",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "35%",
+   "effectShort": "防御 35%上昇/銅銭獲得率 7.5%(防御で倒した兵数に応じて防御参加者全員が銅銭獲得・重複不可・模倣不可)",
+   "afterEffectShort": "防御 35%上昇/銅銭獲得率 7.5%(防御で倒した兵数に応じて防御参加者全員が銅銭獲得・重複不可・模倣不可)"
+  },
+  {
+   "slot": "S2",
+   "skill": "天衣無縫陣",
+   "rank": "SS",
+   "afterSkill": "天衣無縫陣",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "55%",
+   "effectShort": "防御 (20+コスト×10) %上昇",
+   "afterEffectShort": "防御 (20+コスト×10) %上昇"
+  }
+ ],
+ "notes": [
+  "2026-08-16 新規登録(担当K6)。カード画像はスキル表記がLV1の育成前カードのため、画像から採ったのは武将名/統率(4隅バッジ)/スキル名/攻撃・防御・兵法の初期値/覇でないこと/カードNo.の6項目のみ(B-00)。",
+  "武将名の（1）: ixawiki武将カード一覧(極)で「北条氏綱」は No.2739(無印) と No.2194「北条氏綱(2)」の2枚(No.2505は北条氏綱(RE)=復刻のため数に入れない)。初回コメント日も 2739=2016-06-06 < 2194=2017-04-25 で一致するため2739が（1）。No.1158/1315は別レアリティ(天)で、既登録の No.1315「北条氏綱（2）」(天)とは別系列なので変更不要。",
+  "統率は画像の4隅バッジで槍A/馬A/弓A/器Aを個別に拡大して確認。ixawiki(BushoCard/2739北条氏綱)の「統率力 槍A 馬A 弓A 器A」と一致。",
+  "コスト1.5・指揮兵数1900・初期値700/750/480・成長値+17/+19/+2.0・ふりがな・絵師(東柚己)は ixanary.com(cards/2739) と ixawiki.com(BushoCard/2739北条氏綱) の2ソースで完全一致。lv0Troopsはixanaryの★0-0(1900)。カード画像の指揮兵数0/4100は天限突破時の値なので採用していない(B-01)。",
+  "スキル効果はLV1カードのため外部ソースを採用。ixanary(cards/2739)のLV10は確率+35%/防御35%上昇/銅銭獲得率7.5%。ixawikiのカードページはLV1表記(確率+8.5%/全防+12%/銅銭獲得率1%)で、LV1側の一致と「防御で倒した兵数に応じて防御参加者全員が銅銭獲得（重複・模倣不可）」の第2文が両ソースにあることを確認した。TR段はどちらのソースにも無い。",
+  "合成候補はixanary.com(skills/禄寿応穏)の1次/2次と ixawiki(BushoCard/2739)の合成候補テーブルの2ソースで全5枠完全一致(A=総構え[B]→獅子の陣[S]、B=洞察[B]自己参照、C=士気鼓舞[B]自己参照、S1=禄寿応穏[A]自己参照、S2=天衣無縫陣[SS]自己参照)。各枠のtarget/rate/effectShortは候補スキル自身のixanaryページのLV10行から転記。",
+  "S1枠に初期スキル禄寿応穏が自己参照で載っていることを確認(A-3-13の裏取り手段)。",
+  "A-3-11逆引き: 総構え(A)・天衣無縫陣(S2)の各 data/skill/*.json に北条氏綱を追記した。移植後の獅子の陣[S]は既にgrantedViaSkillsで総構えを指しているため追記不要(A-3-12)。禄寿応穏はAランクのため data/skill/ にページを作らない。",
+  "章はixanary.com/ixawiki.comのカードページに記載が無く未確認。"
+ ],
+ "reviewedOk": true,
+ "wikiOldestComment": "2016-06-06",
+ "wikiCommentCount": 220,
+ "chGuess": "12章"
+}

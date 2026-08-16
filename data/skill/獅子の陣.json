@@ -1,0 +1,42 @@
+{
+ "name": "獅子の陣",
+ "rank": "S",
+ "baseRate": 45.0,
+ "target": "槍弓馬",
+ "effectSummary": "S/LV10 確率 45% 防御 35%上昇/対象:槍弓馬\n①防御が35%上昇する",
+ "categoryLinks": [],
+ "sourceCharacters": [
+  {
+   "name": "本願寺蓮如",
+   "no": "2702",
+   "slot": "B",
+   "db": "kyoku",
+   "note": [
+    "本願寺蓮如(2702)のsynthesisTable B枠(2026-08-16)"
+   ]
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "騎神",
+  "rank": "SS"
+ },
+ "notes": [
+  "2026-08-16 新規作成(担当K6)。No.2702本願寺蓮如のB枠候補で、Sランクのためページ作成義務あり(A-3-9)。",
+  "対象・確率・効果はixanary.com(skills/獅子の陣)のLV10行「確率：+45% / 対象 槍弓馬 / 防御：35%上昇」から。",
+  "ownHiddenCandidateはixanary合成テーブルのS1枠2次(攻速：騎神 SS)から導出。",
+  "categoryLinks9項目(無尽/撤退/飛翔/覇道/不屈/兵站/卓越/人数依存/コスト減少)を確認し該当なし。"
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍弓馬　確率 45% / 防御 35%上昇"
+  }
+ ],
+ "grantedViaSkills": [
+  {
+   "skill": "総構え",
+   "rank": "B"
+  }
+ ]
+}

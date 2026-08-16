@@ -42,6 +42,15 @@
    "db": "kyoku"
   },
   {
+   "name": "クイナ",
+   "no": "2627",
+   "slot": "S2",
+   "db": "kyoku",
+   "note": [
+    "クイナ(2627)のsynthesisTable S2枠(2026-08-16・担当K1、極FF9コラボの新規登録)"
+   ]
+  },
+  {
    "name": "佐々木ユキ",
    "no": "2814",
    "slot": "A・B",
@@ -85,11 +94,29 @@
    "note": [
     "鶴姫(2852)のsynthesisTable C枠(2026-08-14)"
    ]
+  },
+  {
+   "name": "初鹿野信昌",
+   "no": "2463",
+   "slot": "S1",
+   "db": "kyoku",
+   "note": [
+    "初鹿野信昌(2463)のsynthesisTable S1枠(2026-08-16。B・C枠はskill=香車伝右衛門→afterSkill=本スキルのためA-3-12によりgrantedViaSkills側で参照、skillが本スキル自体なのはS1枠)"
+   ]
+  },
+  {
+   "name": "比古清十郎【覇】",
+   "no": "10054",
+   "slot": "A"
   }
  ],
  "grantedViaSkills": [
   {
    "skill": "舞蝶朧月",
+   "rank": "S"
+  },
+  {
+   "skill": "香車伝右衛門",
    "rank": "S"
   }
  ],

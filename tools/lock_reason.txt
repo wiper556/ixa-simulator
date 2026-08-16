@@ -52,3 +52,5 @@
 2026-08-16	-1	hooks:tools/audit_characters.py	監査に「同じスキルなのに武将により発動確率が違う」検査を追加(検査を増やす変更)。No.2402の再調査から横断で4件の食い違いが見つかり、うち1件はLV1の確率にLV10の効果を組み合わせていた
 2026-08-16	-1	hooks:tools/audit_characters.py	監査に「同じレアリティに完全同名の武将がいる」検査を追加(検査を増やす変更)。武将名の（N）はレアリティごとの通し番号だとゲーム内確認で判明したため、同一レアリティ内の同名は番号漏れとして鳴らす
 2026-08-16	-5	hooks:tools/audit_characters.py,hooks:tools/extract_data.py,hooks:tools/gen_detail_pages.py,hooks:tools/lock.py,hooks:tools/prerender.py	武将データベースに天パラレル(characters-parallel.html / data/busho-parallel)と特シークレット(characters-toku-s.html / data/busho-toku-s)の2ページを新設し、9箇所の配線を足した。検査を緩める変更ではなく対象を増やす変更
+2026-08-16	-2	hooks:tools/audit_characters.py,hooks:tools/build_data.py	新DB2つ(天パラレル/特シークレット)の配線漏れを塞いだ。build_data.LIST_FIELDS に新配列を追加(無いと一覧ページに鍛錬表まで全部書き出される)、audit に extraAll と db=toku の判定を追加。検査を緩める変更ではない
+2026-08-16	-1	hooks:tools/audit_characters.py	「同じレアリティに同名」の検査からパラレル(3xxxx/4xxxx)を除外。パラレルは元カードと同じ武将の別バージョンで同名が正しく、番号を振ると元カードと見分けがつかなくなる。検査側の穴

@@ -1,0 +1,137 @@
+{
+ "name": "松田康郷",
+ "no": "2493",
+ "ch": "30章",
+ "cost": 3,
+ "troop": "全防",
+ "sub": "",
+ "effect": "所領防御陣形の第弐列目以降の部隊にもこのスキルの効果がかかる(自身の所属部隊には重複しない・模倣不可)",
+ "furigana": "まつだやすさと",
+ "illustrator": "正子公也",
+ "imageFull": "assets/img/characters/no2493_full.png",
+ "imageChar": "assets/img/characters/no2493_char.png",
+ "atkBase": 1080,
+ "atkGrowth": 46,
+ "defBase": 1220,
+ "defGrowth": 63,
+ "tacticsBase": 530,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3570,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "S",
+  "ki": "A"
+ },
+ "initialSkill": "赤鬼怒涛",
+ "skillDetail": "S/LV10 確率 100% 防御 400%上昇/対象:全\n模倣不可\n①防御 400%上昇する\n②所領防御陣形の第弐列目以降の部隊にもこのスキルの効果がかかる(自身の所属部隊には重複しない)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 防御 400%上昇(所領防御陣形の第弐列目以降の部隊にも効果・自身の所属部隊には重複しない・模倣不可)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": "全　確率 100% / 防御 420%上昇(所領防御陣形の第弐列目以降の部隊にも効果)"
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": "全　確率 100% / 防御 450%上昇(所領防御陣形の第弐列目以降の部隊にも効果)"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": "全　確率 100% / 防御 490%上昇(所領防御陣形の第弐列目以降の部隊にも効果)"
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": "全　確率 100% / 防御 540%上昇(所領防御陣形の第弐列目以降の部隊にも効果)"
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": "全　確率 100% / 防御 600%上昇(所領防御陣形の第弐列目以降の部隊にも効果)"
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": null
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "國才連豪",
+   "rank": "SS",
+   "afterSkill": "國才連豪",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "50%",
+   "effectShort": "防御 310%×國才連豪所持武将数(4人)=1240.0%上昇",
+   "afterEffectShort": "防御 310%×國才連豪所持武将数(4人)=1240.0%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "虚実兵妙",
+   "rank": "SS",
+   "afterSkill": "虚実兵妙",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "防御 740%上昇(防御戦闘時に敵軍の卓越確率-8%・自軍内重複上限2)",
+   "afterEffectShort": "防御 740%上昇(防御戦闘時に敵軍の卓越確率-8%・自軍内重複上限2)"
+  },
+  {
+   "slot": "C",
+   "skill": "月煌侵蝕",
+   "rank": "SSS",
+   "afterSkill": "月煌侵蝕",
+   "afterRank": "SSS",
+   "target": "全 兵站",
+   "rate": "45%",
+   "effectShort": "防御 7.6%×防御参加武将数(280人)=2128.0%",
+   "afterEffectShort": "防御 7.6%×防御参加武将数(280人)=2128.0%"
+  },
+  {
+   "slot": "S1",
+   "skill": "従魔絶神",
+   "rank": "SSS",
+   "afterSkill": "従魔絶神",
+   "afterRank": "SSS",
+   "target": "全 飛翔13",
+   "rate": "43%",
+   "effectShort": "防御 9.4%×防御参加武将数(280人)=2632.0%",
+   "afterEffectShort": "防御 9.4%×防御参加武将数(280人)=2632.0%"
+  },
+  {
+   "slot": "S2",
+   "skill": "虚実兵妙",
+   "rank": "SS",
+   "afterSkill": "虚実兵妙",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "防御 740%上昇(防御戦闘時に敵軍の卓越確率-8%・自軍内重複上限2)",
+   "afterEffectShort": "防御 740%上昇(防御戦闘時に敵軍の卓越確率-8%・自軍内重複上限2)"
+  }
+ ],
+ "notes": [
+  "カード画像はスキル欄「赤鬼怒涛LV1」表記のためLV1形式(B-00)。画像から読んだのは武将名・統率バッジ(4隅拡大)・スキル名・初期値1080/1220/530・カードNo.・覇なしの6項目のみ。",
+  "統率は槍A/弓A/馬S/器A。カード画像バッジ拡大とixawiki(BushoCard/2493松田康郷)の統率力欄で一致。",
+  "コスト3・指揮3570(★0-0)・絵師正子公也はixanary.com(cards/2493)とixawikiの2ソースで一致。カード画像は限界突破済みで指揮兵数0/4170(ixanaryの限界突破欄4170と一致)。",
+  "【情報源の食い違い】成長値: ixanaryは+46/+63/+2.5、ixagno.blog.fc2.com(blog-entry-10553)は攻撃57・防御57・兵法2.5。ixawikiは成長値欄が空。ixanaryは自身の成長表(★0-20の攻撃4760=1080+46×80、防御6260=1220+63×80)と整合するのに対し、57/57では計算が合わないためixanaryを採用した。ixagno側の誤記の可能性が高いが、2ソースでの裏取りはできていない。",
+  "赤鬼怒涛のLV10・TR1〜TR5(400/420/450/490/540/600%)はixanary(skills/赤鬼怒涛)とixagnoの鍛錬表で完全一致。ixawikiはLv10とTR5のみで、その2点も一致。TR6は記載なし。",
+  "カード画像のLV1値(防御120%上昇)は登録していない。",
+  "合成テーブル(A=國才連豪SS/B=虚実兵妙SS/C=月煌侵蝕SSS/S1=従魔絶神SSS/S2=虚実兵妙SS、1次=2次=3次で全て自己参照)はixanary(skills/赤鬼怒涛)・ixawiki(1次のみ)・ixagnoの3ソースで一致。",
+  "赤鬼怒涛自身はixanaryの合成素材欄が「合成不可スキルです」のため移植不可。",
+  "章は30章。ixagno(blog-entry-10553)が「2025年8月追加の極武将」かつ本文に「■30章の時点で戦力として見た場合」と明記。wikiにコメントが1件も無いためchGuessは出ていない。"
+ ],
+ "reviewedOk": true,
+ "wikiOldestComment": null,
+ "wikiCommentCount": 0,
+ "chGuess": null
+}

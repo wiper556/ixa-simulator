@@ -1,0 +1,33 @@
+{
+ "name": "百戦百勝脚",
+ "rank": "S",
+ "baseRate": 29,
+ "target": "弓・砲・器",
+ "effectSummary": "S/LV10 確率 29% 防御 1000%上昇 破壊 150%上昇/対象:弓砲器\n①防御 1000%上昇する\n②破壊 150%上昇する",
+ "categoryLinks": [],
+ "sourceCharacters": [
+  {
+   "name": "ラーメンマン",
+   "no": "2637",
+   "slot": "B",
+   "db": "kyoku"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓・砲・器　確率 29% / 防御 1000%上昇+破壊 150%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com のスキル個別ページ(skills/{name}/)の生HTMLから登録(カードページ側には合成テーブルが無いため)。",
+  "ixawiki.com(BushoCard/2637ラーメンマン)はこのスキルに「部隊内武将スキル発動率＋10%」の行を付けているが、ixanary.com・ixagno.blog.fc2.com(限定武将一覧)・カード画像(LV1)のいずれにもその効果は無く、同コラボのテリーマン(Tツイスター)の効果文の混入と判断して採用しなかった。",
+  "ownHiddenCandidateは1次B=百戦百勝脚/2次B=刹那無影[SS]から導出。",
+  "TR(鍛錬)の段は情報源に存在しない。"
+ ],
+ "ownHiddenCandidate": {
+  "skill": "刹那無影",
+  "rank": "SS"
+ }
+}

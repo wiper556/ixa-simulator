@@ -1,0 +1,141 @@
+{
+ "name": "赤べこ",
+ "no": "2616",
+ "ch": "28章",
+ "cost": 2,
+ "troop": "全防",
+ "sub": "兵站",
+ "effect": "敵軍部隊数×10%を防御効果に加算(模倣不可)",
+ "furigana": "あかべこ",
+ "illustrator": "NW/S,RKKD",
+ "imageFull": "assets/img/characters/no2616_full.png",
+ "imageChar": "assets/img/characters/no2616_char.png",
+ "atkBase": 1300,
+ "atkGrowth": 0,
+ "defBase": 1300,
+ "defGrowth": 0,
+ "tacticsBase": 130,
+ "tacticsGrowth": 0,
+ "lv0Troops": 13000,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "B",
+  "uma": "B",
+  "ki": "B"
+ },
+ "initialSkill": "牛鍋酒処",
+ "skillDetail": "A/LV10 確率 45% 防御 300%上昇/対象:全　兵站\n模倣不可\n①防御 300%上昇する\n②敵軍部隊数×10%を防御効果に加算する",
+ "categoryLinks": [
+  {
+   "href": "skills-heitan.html",
+   "label": "兵站スキル一覧を見る"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全 兵站　確率 45% / 防御 300%上昇(敵軍部隊数×10%を防御効果に加算・模倣不可)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": null
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": null
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": null
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": null
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": null
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": null
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": null,
+   "rank": null,
+   "afterSkill": null,
+   "afterRank": null,
+   "target": null,
+   "rate": null,
+   "effectShort": null
+  },
+  {
+   "slot": "B",
+   "skill": null,
+   "rank": null,
+   "afterSkill": null,
+   "afterRank": null,
+   "target": null,
+   "rate": null,
+   "effectShort": null
+  },
+  {
+   "slot": "C",
+   "skill": null,
+   "rank": null,
+   "afterSkill": null,
+   "afterRank": null,
+   "target": null,
+   "rate": null,
+   "effectShort": null
+  },
+  {
+   "slot": "S1",
+   "skill": null,
+   "rank": null,
+   "afterSkill": null,
+   "afterRank": null,
+   "target": null,
+   "rate": null,
+   "effectShort": null
+  },
+  {
+   "slot": "S2",
+   "skill": null,
+   "rank": null,
+   "afterSkill": null,
+   "afterRank": null,
+   "target": null,
+   "rate": null,
+   "effectShort": null
+  }
+ ],
+ "notes": [
+  "2026-08-16 新規登録(担当K3)。カード画像はスキル欄が「牛鍋酒処LV10」表記のためB-00のLV10形式で、カード上の全情報を採用できる。",
+  "【カード画像から読んだもの】武将名「赤べこ」/ 職業「将」/ 極・覇表記なし / コスト2 / 統率 槍B・馬B・弓B・器B(4隅を個別にズームして確認、宝石の重なりなし) / 初期値 攻撃1300・防御1300・兵法130.0 / 指揮兵数 0/13000 / カードNo.2616 / スキル「牛鍋酒処 LV10」[A] 確率+45%・対象 全 兵站・防御300%上昇・敵軍部隊数×10%を防御効果に加算(模倣不可) / Illust ©NW／S,RKKD。",
+  "【外部ソースで調べたもの】成長値 攻撃+0・防御+0・兵法+0(ixanary.com/cards/2616「成長値が設定されていないので、成長しない」、ixawiki武将カード一覧(極)の成長値欄も0/0/0、ixagno.blog.fc2.com blog-entry-10055「成長：攻撃【0】防御【0】兵法【0】」の3ソース一致)。",
+  "統率は ixanary.com/cards/2616 の生HTML内JSON(yari:B / yumi:B / kiba:B / heiki:B)およびixawiki武将カード一覧(極)の行(B|B|B|B)とカード画像の3つが一致。",
+  "コスト2・指揮兵数13000はカード画像・ixanary(★0-0)・ixawiki一覧の3ソース一致。B-01の+0.5版の罠は成長表自体が存在しないため無関係。",
+  "章: ixagno.blog.fc2.com blog-entry-10055/10060 に「2024年11月開催の『るろうに剣心－明治剣客浪漫譚－京都動乱』とのコラボ限定カード」「ログインボーナス(イベント10日目)で配布」とあり、tools/chapter_guess.py の章期間表(28章=2024-08-09〜2025-02-06、うぐさん提供)に照らして28章と判断した。カードページ自体に章の記載があるわけではない(導出であって一次記載ではない)。",
+  "【合成候補なし】ixanary.com/skills/牛鍋酒処 は「スキル追加合成不可カード」「合成不可スキルです」と明記、ixawiki BushoCard/2616赤べこ も「ランク0 / レベル20固定」「ランクアップ、レベルアップ、スキル追加は行うことができない」と明記しており、合成候補テーブルは空のテンプレートのまま。よってsynthesisTableは全てnullのままにしてある。",
+  "【情報源の食い違い・未解決】ixagno.blog.fc2.com blog-entry-10055 だけは合成テーブル(第一:鬼十河[A]→朝曇ノ明麗[S] / 第二:宝珠盛山[A]→朝曇ノ明麗[S] / 第三:鬼愁揺穂[A]→宝珠盛山[A] / S1:月寂ノ想愛[A]→戦陣 凪[A])を載せている。ただし同じ記事の本文が「合成でランクアップやレベルアップ、スキル追加不可」と書いており記事内で矛盾している。標準2ソース(ixanary + ixawiki)がそろって合成不可としているため、こちらを採ってsynthesisTableは空のままにした。うぐさんの判断が要る点として残す。",
+  "兵站キーワードを持つため categoryLinks に skills-heitan.html を張り、skills-heitan.html 側にも牛鍋酒処のエントリを追加した(A-2-7、双方向)。初期スキルはAランクかつどの合成テーブルにも登場しないため、A-3-9の例外規定にも当たらず data/skill/牛鍋酒処.json は作成していない。",
+  "TR段階: ixanary のカードページ・スキルページともにTR行が存在しない(生HTMLに TR1〜TR6 の文字列が0件)。そもそもスキル追加・鍛錬が行えないカード。",
+  "categoryLinks 9項目判定(A-3-9): 無尽×/撤退×/飛翔×/覇道×/不屈×/兵站○/卓越×/人数依存×(「敵軍部隊数」依存であって防御参加武将数依存ではない。同型の万里嵐壁もcategoryLinks無しで登録済み)/コスト減少×。兵站のみ該当。",
+  "【青丸のまま残す理由】調べられる項目は全て埋まって外部ソースとも一致しているが、(1)上記のixagnoとの食い違いが未解決であること、(2)synthesisTableが空のままだとD-15(合成表なしで検証済み)にHIGHで引っかかり、合成不可カードを例外扱いする規定が現行ルールに無いこと、の2点からreviewedOkは付けずに青丸で置いた。うぐさんが「合成不可カードは空のままで黄丸にしてよい」と決めれば、そのまま黄丸にできる状態にはなっている。"
+ ],
+ "reviewedOk": null,
+ "wikiOldestComment": "2025-04-17",
+ "wikiCommentCount": 2,
+ "chGuess": "29章"
+}

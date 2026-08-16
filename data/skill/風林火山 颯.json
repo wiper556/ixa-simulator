@@ -1,0 +1,36 @@
+{
+ "name": "風林火山 颯",
+ "rank": "S",
+ "baseRate": 100.0,
+ "target": "全",
+ "effectSummary": "S/LV10 確率 100% 攻撃 12%上昇/速度 25%上昇/対象:全\n①攻撃が12%上昇する\n②速度が25%上昇する",
+ "categoryLinks": [],
+ "sourceCharacters": [
+  {
+   "name": "武田信廉",
+   "no": "3719",
+   "slot": "S2",
+   "db": "toku",
+   "note": [
+    "武田信廉(3719)のsynthesisTable S2枠(2026-08-16、担当T2)"
+   ]
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "騎神",
+  "rank": "SS"
+ },
+ "notes": [
+  "2026-08-16 新規作成(担当T2)。No.3719武田信廉のS2枠候補でSランクのためページ作成義務あり(A-3-9)。",
+  "対象・確率・効果はixanary.com(skills/風林火山 颯)のLV10行「確率：+100% / 対象 全 / 攻撃：12%上昇 速度：25%上昇」から。LV1(攻撃3%/速度10%)とLV10の2段だけでTR段は無い。",
+  "ownHiddenCandidateは武田信廉(3719)のsynthesisTable S2枠のafterSkill(騎神[SS])から導出(feedback_skill_hidden_candidate_rule)。ixanary(skills/風林火山 颯)の合成テーブルS1列も1次/2次とも攻速：騎神 SSで裏が取れている。",
+  "categoryLinks9項目(無尽/撤退/飛翔/覇道/不屈/兵站/卓越/人数依存/コスト減少)を1つずつ判定し、いずれにも該当しないため空のまま。"
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 攻撃 12%上昇+速度 25%上昇"
+  }
+ ]
+}

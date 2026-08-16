@@ -1,0 +1,60 @@
+{
+ "name": "神勅賢母",
+ "rank": "S",
+ "baseRate": 25.0,
+ "target": "槍馬砲",
+ "effectSummary": "S/LV10 確率 25% 防御 39%上昇/対象:槍馬砲\n①防御が39%上昇する",
+ "categoryLinks": [],
+ "sourceCharacters": [
+  {
+   "name": "淀（1）",
+   "no": "2704",
+   "slot": "移植不可",
+   "db": "kyoku",
+   "note": [
+    "淀(2704)の初期スキル。淀自身のsynthesisTableのA/B/C/S1/S2のどの枠にも載らないため移植不可(2026-08-16、担当K6)。"
+   ]
+  },
+  {
+   "name": "織田有楽斎",
+   "no": "3717",
+   "slot": "S1",
+   "db": "toku",
+   "note": [
+    "織田有楽斎(3717)のsynthesisTable S1枠(2026-08-16、担当T2)"
+   ]
+  },
+  {
+   "name": "陽泰院",
+   "no": "3726",
+   "slot": "S2",
+   "db": "toku",
+   "note": [
+    "陽泰院(3726)のsynthesisTable S2枠(2026-08-16、担当T2)"
+   ]
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "背水之陣",
+  "rank": "B"
+ },
+ "notes": [
+  "2026-08-16 新規作成(担当K6)。No.2704淀の初期スキルでSランクのため、自己参照が無くても無条件にページを作る決まり(A-3-9)にもとづく新規作成。",
+  "対象・確率・効果はixanary.com(skills/神勅賢母)のLV10行「確率：+25% / 対象 槍馬砲 / 防御：39%上昇」から。ixawiki(BushoCard/2704淀)のLV1表記(確率+7%/槍馬砲防+21%)ともLV1側で一致を確認済み。TR段は存在しない。",
+  "2026-08-16(担当T2): 織田有楽斎(3717、S1枠)と陽泰院(3726、S2枠)の登録でこのスキルが武将のsynthesisTableに載ったため、未設定だったownHiddenCandidateを背水之陣[B]に設定した。両武将とも移植後(2次)が背水之陣[B]で、ixanary.com/ixawiki.com/ixagno.blog.fc2.comの3ソース一致。ixanary.com(skills/神勅賢母)の合成テーブルのS1列も1次/2次/3次とも防：背水之陣[B]でA-3-13と整合する。",
+  "categoryLinks9項目(無尽/撤退/飛翔/覇道/不屈/兵站/卓越/人数依存/コスト減少)を確認し該当なし。"
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍馬砲　確率 25% / 防御 39%上昇"
+  }
+ ],
+ "grantedViaSkills": [
+  {
+   "skill": "数奇者",
+   "rank": "C"
+  }
+ ]
+}

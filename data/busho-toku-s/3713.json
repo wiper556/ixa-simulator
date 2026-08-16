@@ -1,0 +1,145 @@
+{
+ "name": "茶屋四朗次郎",
+ "no": "3713",
+ "ch": "未確認",
+ "cost": 2.0,
+ "troop": "全防",
+ "sub": "",
+ "effect": "防御時に敵軍の攻撃スキル発動率を-20%(重複不可)",
+ "furigana": "ちゃやしろうじろう",
+ "illustrator": "竹安佐和記",
+ "imageFull": "assets/img/characters/no3713_full.png",
+ "imageChar": "assets/img/characters/no3713_char.png",
+ "atkBase": 480,
+ "atkGrowth": 17,
+ "defBase": 480,
+ "defGrowth": 17,
+ "tacticsBase": 480,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 1920,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "C",
+  "uma": "C",
+  "ki": "A"
+ },
+ "initialSkill": "御用商人",
+ "skillDetail": "C/LV10 確率 40% 防御時に敵軍の攻撃スキル発動率-20%/対象:全\n①防御時に敵軍の攻撃スキル発動率を20%低下させる(重複不可)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 40% / 防御時に敵軍の攻撃スキル発動率を-20%(重複不可)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": null
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": null
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": null
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": null
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": null
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": null
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "砲撃 羅刹",
+   "rank": "B",
+   "afterSkill": "釣り野伏 鬼",
+   "afterRank": "B",
+   "target": "砲",
+   "rate": "25%",
+   "effectShort": "攻撃 25%上昇+破壊 5%上昇",
+   "afterTarget": "砲",
+   "afterRate": "20%",
+   "afterEffectShort": "攻撃 30%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "砲陣の極み",
+   "rank": "B",
+   "afterSkill": "八咫烏",
+   "afterRank": "B",
+   "target": "砲",
+   "rate": "30%",
+   "effectShort": "防御 30%上昇",
+   "afterTarget": "砲・器",
+   "afterRate": "35%",
+   "afterEffectShort": "防御 30%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "車懸り",
+   "rank": "B",
+   "afterSkill": "車懸り 白狐",
+   "afterRank": "B",
+   "target": "全",
+   "rate": "15%",
+   "effectShort": "攻撃 30%上昇",
+   "afterTarget": "槍・弓・馬",
+   "afterRate": "20%",
+   "afterEffectShort": "攻撃 30%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "封技閃影",
+   "rank": "A",
+   "afterSkill": "八咫烏",
+   "afterRank": "B",
+   "target": "全",
+   "rate": "40%",
+   "effectShort": "攻撃時に敵軍のスキル発動率を-10%(重複不可)",
+   "afterTarget": "砲・器",
+   "afterRate": "35%",
+   "afterEffectShort": "防御 30%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "天衣無縫陣",
+   "rank": "SS",
+   "afterSkill": "天衣無縫陣",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "55%",
+   "effectShort": "防御 (20+コスト×10)%上昇",
+   "afterEffectShort": "防御 (20+コスト×10)%上昇"
+  }
+ ],
+ "notes": [
+  "2026-08-16 新規登録。カード画像はLV1形式のためB-00に従い、画像から採ったのは 武将名/統率(4隅バッジ)/スキル名/攻撃・防御・兵法の初期値/覇でないこと/カードNo. の6項目のみ。",
+  "他の項目は ixanary.com(cards/3713、skills/御用商人)と ixawiki.com(BushoCard/3713茶屋四朗次郎、武将カード一覧(特))の2ソースで確認し、全項目が一致した。",
+  "指揮兵数はixanaryの★0-0=1920(B-01)。カード画像は突破なし・★0・Lv.0で「0/1920」を表示しており★0-0列と一致する。",
+  "スキル効果はLV10の値(確率40%・発動率-20%)。カード上のLV1表記(確率20%・-10%)は採らない。",
+  "鍛錬(TR)はixanary・ixawikiのどちらにも段が存在せず、LV1/LV10の2段のみ。",
+  "合成候補はixanary(skills/御用商人)の1次/2次と ixawiki(BushoCard/3713)の1次候補/2次候補で5枠すべて2ソース一致。",
+  "S2の天衣無縫陣[SS]はskills.htmlに既存ページがあるため、data/skill/天衣無縫陣.json の sourceCharacters に本武将(3713・S2枠)を追記した(A-3-11)。",
+  "3ソース目: ixagno.blog.fc2.com(blog-entry-9990「スキル発動率増減系スキルの性能比較と素材一覧」)が「封技閃影 40% 攻撃時に防御側のスキル発動率-10% / 特：茶屋四朗次郎(S1)」と書いており、S1枠=封技閃影とその性能が裏付けられた。同(blog-entry-1294)の特武将一覧も茶屋四朗次郎を「防御」に分類しており、troopを「全防」とした(ixanary/ixawikiはスキル系統を「特：」としているが、防御戦闘でしか効果が出ないため表示は防御寄りにした)。",
+  "章はixanary・ixawikiに記載が無く、ixagno.blog.fc2.com(「茶屋四朗次郎」11件・「御用商人」4件を確認)にも実装章の記載は無かったため未確認のまま。wikiの最古コメントは2013-10-06。",
+  "名前: 特レアリティに茶屋四朗次郎は3713の1枚だけなので（N）は付けない。"
+ ],
+ "reviewedOk": true,
+ "wikiOldestComment": "2013-10-06",
+ "wikiCommentCount": 260
+}

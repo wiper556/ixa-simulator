@@ -1,0 +1,145 @@
+{
+ "name": "果心居士",
+ "no": "3705",
+ "ch": "未確認",
+ "cost": 2.5,
+ "troop": "全防",
+ "sub": "",
+ "effect": "防御戦闘勝利時のみ、敵軍の兵士被害数+20%",
+ "furigana": "かしんこじ",
+ "illustrator": "斎藤晋",
+ "imageFull": "assets/img/characters/no3705_full.png",
+ "imageChar": "assets/img/characters/no3705_char.png",
+ "atkBase": 640,
+ "atkGrowth": 15,
+ "defBase": 690,
+ "defGrowth": 16,
+ "tacticsBase": 460,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 2280,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "A",
+  "uma": "B",
+  "ki": "B"
+ },
+ "initialSkill": "外法鳶陰",
+ "skillDetail": "C/LV10 確率 5% 防御戦闘勝利時のみ敵軍の兵士被害数+20%/対象:全\n①防御戦闘に勝利したときのみ敵軍の兵士被害数を20%増加させる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 5% / 防御戦闘勝利時のみ敵軍の兵士被害数+20%"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": null
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": null
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": null
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": null
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": null
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": null
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "槍隊剛撃",
+   "rank": "D",
+   "afterSkill": "足軽軍法",
+   "afterRank": "D",
+   "target": "槍",
+   "rate": "35%",
+   "effectShort": "攻撃 20%上昇",
+   "afterTarget": "槍・器",
+   "afterRate": "15%",
+   "afterEffectShort": "攻撃 (武将コスト×9)%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "車懸り",
+   "rank": "B",
+   "afterSkill": "車懸り 白狐",
+   "afterRank": "B",
+   "target": "全",
+   "rate": "15%",
+   "effectShort": "攻撃 30%上昇",
+   "afterTarget": "槍・弓・馬",
+   "afterRate": "20%",
+   "afterEffectShort": "攻撃 30%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "砲撃 羅刹",
+   "rank": "B",
+   "afterSkill": "釣り野伏 鬼",
+   "afterRank": "B",
+   "target": "砲",
+   "rate": "25%",
+   "effectShort": "攻撃 25%上昇+破壊 5%上昇",
+   "afterTarget": "砲",
+   "afterRate": "20%",
+   "afterEffectShort": "攻撃 30%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "車懸り 白狐",
+   "rank": "B",
+   "afterSkill": "車懸り 白狐",
+   "afterRank": "B",
+   "target": "槍・弓・馬",
+   "rate": "20%",
+   "effectShort": "攻撃 30%上昇",
+   "afterEffectShort": "攻撃 30%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "神速",
+   "rank": "A",
+   "afterSkill": "神速",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "速度 55%上昇",
+   "afterEffectShort": "速度 55%上昇"
+  }
+ ],
+ "notes": [
+  "2026-08-16 新規登録。カード画像はLV1形式のためB-00に従い、画像から採ったのは 武将名/統率(4隅バッジ)/スキル名/攻撃・防御・兵法の初期値/覇でないこと/カードNo. の6項目のみ。",
+  "他の項目は ixanary.com(cards/3705、skills/外法鳶陰)と ixawiki.com(BushoCard/3705果心居士、武将カード一覧(特))の2ソースで確認し、全項目が一致した。",
+  "スキル名「外法鳶陰」は装飾フォントで読みにくいため、ixanaryのskillsリンクとixawikiの表記で正式名称を確認した(A-1-3)。",
+  "指揮兵数はixanaryの★0-0=2280(B-01)。カード画像の「天限突破 0/4480」はixanaryの天限突破列4680より200少なく、B-01の+0.5版の罠と整合する。",
+  "スキル効果はLV10の値(敵軍の兵士被害数+20%)。カード上のLV1表記(+5%)は採らない。確率はLV1・LV10とも5%で変わらない。",
+  "troopは「全防」。防御戦闘でしか効果が出ないスキルで、ixanary・ixawikiとも系統を「防：」としているため。",
+  "鍛錬(TR)はixanary・ixawikiのどちらにも段が存在せず、LV1/LV10の2段のみ。",
+  "合成候補はixanary(skills/外法鳶陰)の1次/2次と ixawiki(BushoCard/3705)の1次候補/2次候補で5枠すべて2ソース一致。",
+  "A枠の移植後「足軽軍法」は武将コスト依存(ixanary表記は「攻撃：（コストx9）%上昇」)なので、計算せず式のまま残した。",
+  "3ソース目: ixagno.blog.fc2.com(blog-entry-8884「兵士被害増減系スキルの性能比較と素材一覧」)が「外法鳶陰 5% 防御戦闘勝利時のみ 敵軍の兵士被害数+20% / 特：果心居士 ※本人のみ」と書いており、確率5%・+20%・および外法鳶陰が移植不可(この武将のsynthesisTableに載らない)ことまで一致した。",
+  "章はixanary・ixawikiに記載が無く、ixagno.blog.fc2.com(「果心居士」63件・「外法鳶陰」12件)にも実装章の記載は無かったため未確認のまま。wikiの最古コメントは2012-02-02。",
+  "名前: 特レアリティに果心居士は3705の1枚だけなので（N）は付けない。"
+ ],
+ "reviewedOk": true,
+ "wikiOldestComment": "2012-02-02",
+ "wikiCommentCount": 169
+}

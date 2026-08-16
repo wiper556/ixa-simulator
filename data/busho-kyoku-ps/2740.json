@@ -1,0 +1,118 @@
+{
+ "name": "武野紹鴎",
+ "no": "2740",
+ "ch": "未確認",
+ "cost": 0.5,
+ "troop": "特",
+ "sub": "",
+ "effect": "コストボーナス+2(このカードを所持しているとデッキコスト上限が増加・重複不可)",
+ "furigana": "たけのじょうおう",
+ "illustrator": "小森ニコ",
+ "imageFull": "assets/img/characters/no2740_full.png",
+ "imageChar": "assets/img/characters/no2740_char.png",
+ "atkBase": 1,
+ "atkGrowth": 1.0,
+ "defBase": 1,
+ "defGrowth": 1.0,
+ "tacticsBase": 560.0,
+ "tacticsGrowth": 3.0,
+ "lv0Troops": 1,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "茶聖ノ白鷺",
+ "skillDetail": "A/LV10 コストボーナス+2/対象:全\n①このカードを所持しているとデッキコスト上限が増加する(コストボーナス+2・重複不可)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 -% / コストボーナス+2(このカードを所持しているとデッキコスト上限が増加・重複不可)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "虚空一閃",
+   "rank": "C",
+   "afterSkill": "大ふへん者",
+   "afterRank": "D",
+   "target": "将",
+   "rate": "36%",
+   "effectShort": "攻撃 28%上昇",
+   "afterTarget": "将",
+   "afterRate": "5%",
+   "afterEffectShort": "攻撃 40%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "災禍ノ老仙",
+   "rank": "A",
+   "afterSkill": "爆雷平蜘蛛",
+   "afterRank": "B",
+   "target": "全",
+   "rate": "50%",
+   "effectShort": "敵軍の兵士被害数+25%(対合流攻撃防御時のみ発動・重複発動不可)",
+   "afterTarget": "全",
+   "afterRate": "30%",
+   "afterEffectShort": "攻撃戦闘勝利時のみ、敵軍1部隊の武将に追加ダメージ+45"
+  },
+  {
+   "slot": "C",
+   "skill": "鉄砲商人",
+   "rank": "A",
+   "afterSkill": "遁世影武者",
+   "afterRank": "B",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "部隊内全武将が持つ全スキルに「砲」対象を追加する(兵科対象スキル限定・模倣不可)",
+   "afterTarget": "部隊長",
+   "afterRate": "50%",
+   "afterEffectShort": "所属部隊の部隊長が持つ初期スキルを模倣する(戦闘スキルのみ)"
+  },
+  {
+   "slot": "S1",
+   "skill": "侘茶",
+   "rank": "A",
+   "afterSkill": "天下の采配",
+   "afterRank": "S",
+   "target": "全",
+   "rate": "50%",
+   "effectShort": "防御時に敵軍のレアリティ【天】【極】武将のスキル発動率を-15%(模倣不可・重複不可)",
+   "afterTarget": "槍馬砲",
+   "afterRate": "45%",
+   "afterEffectShort": "防御 35%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "一期一会",
+   "rank": "C",
+   "afterSkill": "神速",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "デッキ上武将回復率 20%上昇",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "速度 55%上昇"
+  }
+ ],
+ "notes": [
+  "2026-08-16 新規登録(担当K6)。カード画像はスキル表記がLV1の育成前カードのため、画像から採ったのは武将名/統率(4隅バッジ)/スキル名/攻撃・防御・兵法の初期値/覇でないこと/カードNo.の6項目のみ(B-00)。",
+  "武将名: ixawiki武将カード一覧(極)に「武野紹鴎」は No.2740 の1枚しか無いため無印。",
+  "統率は画像の4隅バッジで槍A/馬A/弓A/器Aを個別に拡大して確認。ixawiki(BushoCard/2740武野紹鴎)の「統率力 槍A 馬A 弓A 器A」と一致。",
+  "攻撃1・防御1・指揮兵数1は誤植ではなく実際の値。カード画像の表示(攻撃1/防御1/兵法560.0)、ixanary.com(cards/2740)の初期値、ixawiki.com(BushoCard/2740武野紹鴎)の3つすべてで一致する。デッキコスト上限を上げるためだけの所持用カードでステータスは持たない。",
+  "コスト0.5・指揮兵数1・初期値1/1/560.0・成長値+1/+1/+3.0・ふりがな・絵師(小森ニコ)は ixanary.com と ixawiki.com の2ソースで完全一致。lv0Troopsはixanaryの★0-0(1)。カード画像の指揮兵数0/501は突破後の値なので採用していない(B-01)。",
+  "スキル効果はLV1カードのため外部ソースを採用。LV1=コストボーナス+0.5、LV10=コストボーナス+2で2ソース一致(LV1の+0.5をLV10として登録しないこと)。確率の記載はどちらのソースにも無いためtrTableの確率は「-%」とした。TR段も存在しない。",
+  "categoryLinksの扱い: この効果はデッキコスト上限を増やすもので、9項目チェックの「コストを減少/除外する効果」(skills-cost.html)とは向きが逆。また茶聖ノ白鷺はAランクかつixanaryに「合成不可スキルです」と明記されているため data/skill/ にページを作っていない。一覧ページに載せるかどうかは判断が要るのでユーザー確認事項として申し送る。",
+  "合成候補はixanary.com(skills/茶聖ノ白鷺)の1次/2次と ixawiki(BushoCard/2740)の合成候補テーブルの2ソースで全5枠完全一致(A=虚空一閃[C]→大ふへん者[D]、B=災禍ノ老仙[A]→爆雷平蜘蛛[B]、C=鉄砲商人[A]→遁世影武者[B]、S1=侘茶[A]→天下の采配[S]、S2=一期一会[C]→神速[A])。各枠のtarget/rate/effectShortは候補スキル自身のixanaryページのLV10行から転記。",
+  "A-3-11逆引き: 鉄砲商人(C)に武野紹鴎を追記。S1枠の侘茶[A]は移植後がSランクの天下の采配なのでA-3-9の例外でページを新規作成し(data/skill/侘茶.json)、武将をそちらのsourceCharactersに、天下の采配側にはgrantedViaSkillsで侘茶を追加した(A-3-12)。遁世影武者側は既にgrantedViaSkillsで鉄砲商人を指しているため追記不要。",
+  "章はixanary.com/ixawiki.comのカードページに記載が無く未確認。"
+ ],
+ "reviewedOk": true,
+ "wikiOldestComment": "2016-07-05",
+ "wikiCommentCount": 66,
+ "chGuess": "12章"
+}

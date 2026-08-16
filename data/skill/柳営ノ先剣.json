@@ -1,0 +1,70 @@
+{
+ "name": "柳営ノ先剣",
+ "rank": "S",
+ "baseRate": 35,
+ "target": "3合流以上 飛翔6",
+ "effectSummary": "S/LV10 確率 35% 銅銭獲得率 6%/対象:3合流以上　飛翔6\n①飛翔6を持つ\n②対人合流攻撃で倒した兵数に応じて攻撃参加者全員が銅銭を獲得する(銅銭獲得率 6%)",
+ "categoryLinks": [
+  {
+   "href": "skills-hishou-atk.html",
+   "label": "飛翔スキル一覧(攻撃)を見る"
+  }
+ ],
+ "sourceCharacters": [
+  {
+   "name": "藤堂高虎（4）",
+   "no": "2494",
+   "slot": "S1",
+   "db": "kyoku"
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "柳営ノ先剣",
+  "rank": "S"
+ },
+ "hishouValue": 6,
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "3合流以上　確率 35% / 飛翔6 銅銭獲得率 6%(対人合流攻撃で倒した兵数に応じて攻撃参加者全員が銅銭獲得)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": "3合流以上　確率 35% / 飛翔6 銅銭獲得率 6.2%"
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": "3合流以上　確率 35% / 飛翔6 銅銭獲得率 6.5%"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": "3合流以上　確率 35% / 飛翔6 銅銭獲得率 7%"
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": "3合流以上　確率 35% / 飛翔6 銅銭獲得率 7.8%"
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": "3合流以上　確率 35% / 飛翔6 銅銭獲得率 9%"
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": null
+  }
+ ],
+ "notes": [
+  "2026-08-16 No.2494藤堂高虎（4）の新規登録に伴い作成(A-3-9: S以上の初期スキルは無条件でページを作る)。",
+  "LV10・TR1〜TR5はixanary(skills/柳営ノ先剣)とixagno.blog.fc2.com(blog-entry-10572)で完全一致。",
+  "発動確率はixanary・ixagnoの35%を採用(ixawikiのBushoCard/2494だけ100%と食い違っていた)。",
+  "S1枠で移植可能(ixanaryの合成素材1次S1候補に自身が載っている)。移植後も自己参照。",
+  "categoryLinks 9項目チェック実施: 飛翔(攻撃系で飛翔6を持つ)のみ該当。無尽/撤退/覇道/不屈/兵站/卓越/人数依存/コスト減少は非該当。"
+ ]
+}

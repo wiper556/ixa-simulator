@@ -1,0 +1,36 @@
+{
+ "name": "覇王 葵巴",
+ "rank": "S",
+ "baseRate": 50.0,
+ "target": "全",
+ "effectSummary": "S/LV10 確率 50% 防御 35%上昇/対象:全\n①防御が35%上昇する",
+ "categoryLinks": [],
+ "sourceCharacters": [
+  {
+   "name": "林羅山",
+   "no": "2721",
+   "slot": "S2",
+   "db": "kyoku",
+   "note": [
+    "林羅山(2721)のsynthesisTable S2枠(2026-08-16、担当K6)"
+   ]
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "破軍星",
+  "rank": "SS"
+ },
+ "notes": [
+  "2026-08-16 新規作成(担当K6)。No.2721林羅山のS2枠候補で、Sランクのためページ作成義務あり(A-3-9)。",
+  "対象・確率・効果はixanary.com(skills/覇王 葵巴)のLV10行「確率：+50% / 対象 全 / 防御：35%上昇」から。",
+  "ownHiddenCandidateは林羅山(2721)のsynthesisTable S2枠のafterSkill(破軍星[SS])から導出。ixanary(skills/覇王 葵巴)の合成テーブルS1枠2次(攻破：破軍星 SS)とも一致。",
+  "categoryLinks9項目を1つずつ判定し該当なし。スキル名に「覇王」が入るが覇道スキルではなく、効果文は防御上昇のみでカード(No.2721)にも赤字「覇道」の表記が無い。"
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 50% / 防御 35%上昇"
+  }
+ ]
+}

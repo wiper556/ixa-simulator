@@ -1,0 +1,36 @@
+{
+ "name": "煉獄天焦",
+ "rank": "S",
+ "baseRate": 25.0,
+ "target": "槍砲",
+ "effectSummary": "S/LV10 確率 25% 攻撃 25%上昇/対象:槍砲\n①攻撃が25%上昇する(合流攻撃時は効果2倍)",
+ "categoryLinks": [],
+ "sourceCharacters": [
+  {
+   "name": "小野お通",
+   "no": "3724",
+   "slot": "S2",
+   "db": "toku",
+   "note": [
+    "小野お通(3724)のsynthesisTable S2枠(2026-08-16、担当T2)"
+   ]
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "覇王征軍",
+  "rank": "SS"
+ },
+ "notes": [
+  "2026-08-16 新規作成(担当T2)。No.3724小野お通のS2枠候補でSランクのためページ作成義務あり(A-3-9)。",
+  "対象・確率・効果はixanary.com(skills/煉獄天焦)のLV10行「確率：+25% / 対象 槍砲 / 攻撃：25%上昇（合流攻撃時は効果2倍）」から。LV1(10%/10%上昇)とLV10の2段だけでTR段は無い。",
+  "ownHiddenCandidateは小野お通(3724)のsynthesisTable S2枠のafterSkill(覇王征軍[SS])から導出。ixanary(skills/煉獄天焦)の合成テーブルS1列も1次/2次とも攻：覇王征軍 SSで裏が取れている。ixagno.blog.fc2.com(blog-entry-3816)の合成テーブルでもS2:煉獄天焦[S]→覇王征軍[SS]を確認。",
+  "categoryLinks9項目を1つずつ判定し該当なし(「合流攻撃時は効果2倍」は人数依存(防御参加武将数)ではなく合流かどうかの条件なので、skills-count-atk.htmlの対象外と判断した)。"
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍砲　確率 25% / 攻撃 25%上昇(合流攻撃時は効果2倍)"
+  }
+ ]
+}

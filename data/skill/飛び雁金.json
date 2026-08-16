@@ -1,0 +1,51 @@
+{
+ "name": "飛び雁金",
+ "rank": "S",
+ "baseRate": 70,
+ "target": "全",
+ "effectSummary": "S/LV10 確率 70% 防御 90%上昇/対象:全\n①防御 90%上昇する\n②卓越 追加確率60%で防御効果が4倍になる",
+ "categoryLinks": [
+  {
+   "href": "skills-takuetsu.html",
+   "label": "卓越スキル一覧を見る"
+  }
+ ],
+ "sourceCharacters": [
+  {
+   "name": "下間頼廉（2）",
+   "no": "2466",
+   "slot": "B・C",
+   "db": "kyoku",
+   "note": [
+    "下間頼廉（2）(2466)のsynthesisTable B枠・C枠(2026-08-16。ixanary.com/skills/黒衣ノ元帥とixawiki BushoCard/2466の合成候補テーブルで、B・Cの両欄がともに飛び雁金[S]→風狂魔術[A]であることを2ソース確認)"
+   ]
+  },
+  {
+   "name": "長連龍",
+   "no": "2471",
+   "slot": "B",
+   "db": "kyoku",
+   "note": [
+    "長連龍(2471)のsynthesisTable B枠(2026-08-16。1次B=飛び雁金[S]→2次B=風狂魔術[A])"
+   ]
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "風狂魔術",
+  "rank": "A"
+ },
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 70% / 防御 90%上昇(卓越 追加確率60%で防御効果が4倍)"
+  }
+ ],
+ "notes": [
+  "2026-08-16作成。No.2466(下間頼廉（2）)のsynthesisTable B・C枠に出るS以上の候補スキルのためページ作成(A-3-9)。",
+  "出典: ixanary.com/skills/飛び雁金(LV1/LV10・合成テーブル1次〜3次) + ixawiki.com(BushoCard/2466下間頼廉の合成候補テーブル)。",
+  "ownHiddenCandidateは自身の合成テーブルA・B枠(1次=飛び雁金/2次=風狂魔術[A])から導出。移植後の風狂魔術[A]はAランクでskills.html独自ページを持たないため、A-3-12の判断手順によりgrantedViaSkills化はせず本ページ側で移植後候補として保持する。",
+  "categoryLinks 9項目チェック実施: 卓越(追加確率60%で防御効果4倍)を発動するため skills-takuetsu.html が該当。飛翔値は持たず、無尽/撤退/覇道/不屈/兵站/人数依存/コスト減少はいずれも該当なし。",
+  "TR(鍛錬)情報はixanary.comに記載が無く、LV1/LV10の2段のみのためtrTableはLV10の1行。"
+ ]
+}

@@ -1,0 +1,137 @@
+{
+ "name": "三村家親",
+ "no": "2487",
+ "ch": "未確認",
+ "cost": 5,
+ "troop": "砲器防",
+ "sub": "飛翔24",
+ "effect": "対象兵科を指揮した戦闘時に部隊総防御力が15%上昇する(模倣不可)",
+ "furigana": "みむらいえちか",
+ "illustrator": "正子公也",
+ "imageFull": "assets/img/characters/no2487_full.png",
+ "imageChar": "assets/img/characters/no2487_char.png",
+ "atkBase": 1060,
+ "atkGrowth": 45,
+ "defBase": 1230,
+ "defGrowth": 63,
+ "tacticsBase": 520,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 4780,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "謀神ノ加護",
+ "skillDetail": "S/LV10 確率 58% 部隊総防御力 15%上昇/対象:砲・器　飛翔24\n模倣不可\n①飛翔24を持つ\n②対象兵科を指揮した戦闘時に部隊総防御力が15%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "砲・器　確率 58% / 飛翔24 対象兵科を指揮した戦闘時に部隊総防御力 15%上昇(模倣不可)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": "砲・器　確率 58% / 飛翔24 対象兵科を指揮した戦闘時に部隊総防御力 16%上昇(模倣不可)"
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": "砲・器　確率 58% / 飛翔24 対象兵科を指揮した戦闘時に部隊総防御力 17%上昇(模倣不可)"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": "砲・器　確率 58% / 飛翔24 対象兵科を指揮した戦闘時に部隊総防御力 18%上昇(模倣不可)"
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": "砲・器　確率 58% / 飛翔24 対象兵科を指揮した戦闘時に部隊総防御力 19%上昇(模倣不可)"
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": "砲・器　確率 58% / 飛翔24 対象兵科を指揮した戦闘時に部隊総防御力 20%上昇(模倣不可)"
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": null
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "龍驤虎躍",
+   "rank": "SS",
+   "afterSkill": "龍驤虎躍",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "60%",
+   "effectShort": "攻撃 810%上昇+防御 810%上昇(部隊消費コスト-1・特殊効果は模倣不可)",
+   "afterEffectShort": "攻撃 810%上昇+防御 810%上昇(部隊消費コスト-1・特殊効果は模倣不可)"
+  },
+  {
+   "slot": "B",
+   "skill": "万里嵐壁",
+   "rank": "SS",
+   "afterSkill": "万里嵐壁",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "66%",
+   "effectShort": "防御 200%上昇(敵軍部隊数×40%を防御効果に加算・模倣不可)",
+   "afterEffectShort": "防御 200%上昇(敵軍部隊数×40%を防御効果に加算・模倣不可)"
+  },
+  {
+   "slot": "C",
+   "skill": "月煌侵蝕",
+   "rank": "SSS",
+   "afterSkill": "月煌侵蝕",
+   "afterRank": "SSS",
+   "target": "全 兵站",
+   "rate": "45%",
+   "effectShort": "防御 7.6%×防御参加武将数(280人)=2128.0%",
+   "afterEffectShort": "防御 7.6%×防御参加武将数(280人)=2128.0%"
+  },
+  {
+   "slot": "S1",
+   "skill": "國才連豪",
+   "rank": "SS",
+   "afterSkill": "國才連豪",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "50%",
+   "effectShort": "防御 310%×國才連豪所持武将数(4人)=1240.0%上昇",
+   "afterEffectShort": "防御 310%×國才連豪所持武将数(4人)=1240.0%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "永世ノ天隻",
+   "rank": "SS",
+   "afterSkill": "永世ノ天隻",
+   "afterRank": "SS",
+   "target": "全 飛翔9",
+   "rate": "48%",
+   "effectShort": "防御 6.5%×防御参加武将数(280人)=1820.0%(敵軍飛翔持ち9人未満の時通常武将ダメージを受けない)",
+   "afterEffectShort": "防御 6.5%×防御参加武将数(280人)=1820.0%(敵軍飛翔持ち9人未満の時通常武将ダメージを受けない)"
+  }
+ ],
+ "notes": [
+  "カード画像はスキル欄「謀神ノ加護LV1」表記のためLV1形式(B-00)。画像から読んだのは武将名・統率バッジ(4隅拡大)・スキル名・初期値1060/1230/520・カードNo.・覇なしの6項目のみ。",
+  "統率は槍A/弓A/馬A/器S。カード画像バッジ拡大とixawiki(BushoCard/2487三村家親)の統率力欄で一致。",
+  "コスト5・指揮4780(★0-0)・成長+45/+63/+2.5・絵師正子公也はixanary.com(cards/2487)とixawikiの2ソースで一致。カード画像は天限突破済みで指揮兵数0/6980(ixanaryの天限突破欄7180は+0.5版・B-01)。",
+  "謀神ノ加護のLV10・TR1〜TR5(部隊総防御力15/16/17/18/19/20%上昇)はixanary(skills/謀神ノ加護)から取得。ixawikiはLv10とTR5のみ掲載で、その2点は一致。TR6は両ソースとも記載なし。",
+  "カード画像のLV1値(確率19%/部隊総防御力5%上昇)は登録していない。",
+  "合成テーブル(A=龍驤虎躍/B=万里嵐壁/C=月煌侵蝕SSS/S1=國才連豪/S2=永世ノ天隻、1次=2次=3次で全て自己参照)はixanary(skills/謀神ノ加護)とixawiki(BushoCard/2487)の2ソースで一致。",
+  "謀神ノ加護自身はixanaryの合成素材欄が「合成不可スキルです」のため移植不可。",
+  "ixagno.blog.fc2.comは限定武将一覧表(blog-entry-1294)に「三村家親 砲器+飛翔24 部隊総防御力+15%」とあるのみで個別記事は見つからなかった。",
+  "章は情報源に記載が無いため未確認。wiki最古コメント2025-02-19からchGuessは29章。"
+ ],
+ "reviewedOk": true,
+ "wikiOldestComment": "2025-02-19",
+ "wikiCommentCount": 8,
+ "chGuess": "29章"
+}

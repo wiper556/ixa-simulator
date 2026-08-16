@@ -1,0 +1,36 @@
+{
+ "name": "驍将奇略",
+ "rank": "S",
+ "baseRate": 35.0,
+ "target": "馬器",
+ "effectSummary": "S/LV10 確率 35% 攻撃 25%上昇/破壊 20%上昇/対象:馬器\n①攻撃が25%上昇する\n②破壊が20%上昇する",
+ "categoryLinks": [],
+ "sourceCharacters": [
+  {
+   "name": "本願寺蓮如",
+   "no": "2702",
+   "slot": "A",
+   "db": "kyoku",
+   "note": [
+    "本願寺蓮如(2702)のsynthesisTable A枠(2026-08-16)"
+   ]
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "騎神",
+  "rank": "SS"
+ },
+ "notes": [
+  "2026-08-16 新規作成(担当K6)。No.2702本願寺蓮如のA枠候補で、Sランクのためページ作成義務あり(A-3-9)。",
+  "対象・確率・効果はixanary.com(skills/驍将奇略)のLV10行「確率：+35% / 対象 馬器 / 攻撃：25%上昇 / 破壊：20%上昇」から。攻撃と破壊が同時変動するためtrTableに両方併記(multistat規則)。",
+  "ownHiddenCandidateはixanary合成テーブルのS1枠2次(攻速：騎神 SS)から導出。",
+  "categoryLinks9項目(無尽/撤退/飛翔/覇道/不屈/兵站/卓越/人数依存/コスト減少)を確認し該当なし。"
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "馬器　確率 35% / 攻撃 25%上昇+破壊 20%上昇"
+  }
+ ]
+}

@@ -1,0 +1,157 @@
+{
+ "name": "ねね（2）",
+ "no": "2618",
+ "ch": "29章",
+ "cost": 3,
+ "troop": "全防",
+ "sub": "",
+ "effect": "所領防御陣形配置時、この武将の編成コスト消費-2(模倣不可)",
+ "furigana": "ねね",
+ "illustrator": "碧風羽",
+ "imageFull": "assets/img/characters/no2618_full.png",
+ "imageChar": "assets/img/characters/no2618_char.png",
+ "atkBase": 1050,
+ "atkGrowth": 44,
+ "defBase": 1180,
+ "defGrowth": 58,
+ "tacticsBase": 520,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3540,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "豊国安寧",
+ "skillDetail": "S/LV10 確率 50% 防御 500%上昇/対象:全\n模倣不可\n①防御 500%上昇する\n②所領防御陣形に配置時この武将の編成コスト消費を-2する",
+ "categoryLinks": [
+  {
+   "href": "skills-cost.html",
+   "label": "コスト減少スキル一覧を見る"
+  },
+  {
+   "href": "skills-cost-def.html",
+   "label": "コスト減少(防御)スキル一覧を見る"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 50% / 防御 500%上昇(所領防御陣形配置時、この武将の編成コスト消費-2・模倣不可)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": null
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": null
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": null
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": null
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": null
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": null
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "龍驤虎躍",
+   "rank": "SS",
+   "afterSkill": "龍驤虎躍",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "60%",
+   "effectShort": "攻撃 810%上昇+防御 810%上昇(部隊消費コスト-1・特殊効果は模倣不可)",
+   "afterTarget": "全",
+   "afterRate": "60%",
+   "afterEffectShort": "攻撃 810%上昇+防御 810%上昇(部隊消費コスト-1・特殊効果は模倣不可)"
+  },
+  {
+   "slot": "B",
+   "skill": "豊国安寧",
+   "rank": "S",
+   "afterSkill": "豊国安寧",
+   "afterRank": "S",
+   "target": "全",
+   "rate": "50%",
+   "effectShort": "防御 500%上昇(所領防御陣形配置時、この武将の編成コスト消費-2・模倣不可)",
+   "afterTarget": "全",
+   "afterRate": "50%",
+   "afterEffectShort": "防御 500%上昇(所領防御陣形配置時、この武将の編成コスト消費-2・模倣不可)"
+  },
+  {
+   "slot": "C",
+   "skill": "豊国安寧",
+   "rank": "S",
+   "afterSkill": "豊国安寧",
+   "afterRank": "S",
+   "target": "全",
+   "rate": "50%",
+   "effectShort": "防御 500%上昇(所領防御陣形配置時、この武将の編成コスト消費-2・模倣不可)",
+   "afterTarget": "全",
+   "afterRate": "50%",
+   "afterEffectShort": "防御 500%上昇(所領防御陣形配置時、この武将の編成コスト消費-2・模倣不可)"
+  },
+  {
+   "slot": "S1",
+   "skill": "豊国安寧",
+   "rank": "S",
+   "afterSkill": "豊国安寧",
+   "afterRank": "S",
+   "target": "全",
+   "rate": "50%",
+   "effectShort": "防御 500%上昇(所領防御陣形配置時、この武将の編成コスト消費-2・模倣不可)",
+   "afterTarget": "全",
+   "afterRate": "50%",
+   "afterEffectShort": "防御 500%上昇(所領防御陣形配置時、この武将の編成コスト消費-2・模倣不可)"
+  },
+  {
+   "slot": "S2",
+   "skill": "万里嵐壁",
+   "rank": "SS",
+   "afterSkill": "万里嵐壁",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "66%",
+   "effectShort": "防御 200%上昇(敵軍部隊数×40%を防御効果に加算・模倣不可)",
+   "afterTarget": "全",
+   "afterRate": "66%",
+   "afterEffectShort": "防御 200%上昇(敵軍部隊数×40%を防御効果に加算・模倣不可)"
+  }
+ ],
+ "notes": [
+  "2026-08-16 新規登録(担当K3)。カード画像はスキル欄が「豊国安寧LV1」表記のためB-00のLV1形式。画像から採ってよいのは6項目だけで、効果量・成長値・合成候補は外部ソースで裏を取った。",
+  "【カード画像から読んだもの】武将名「ねね」/ 職業「姫」/ 極・覇表記なし / コスト3 / 統率 槍A・馬A・弓A・器S(4隅を個別にズームして確認) / 初期値 攻撃1050・防御1180・兵法520.0 / 指揮兵数 0/3540(★0、限界突破表示なし) / カードNo.2618 / スキル名「豊国安寧」[S] / Illust 碧風羽。",
+  "【外部ソースで調べたもの】成長値 攻撃+44・防御+58・兵法+2.5、LV10性能 確率+50%・対象 全・防御500%上昇・所領防御陣形配置時にこの武将の編成コスト消費-2(模倣不可)。ixanary.com/cards/2618 と ixawiki BushoCard/2618ねね(コスト3・指揮兵数3540・統率 槍A/馬A/弓A/器S・初期値1050/1180/520・成長値44/58/2.5・LV10 確率+50%/全/防御500%上昇)が完全一致。ixagno.blog.fc2.com blog-entry-10268 も「成長：攻撃【44】防御【58】兵法【2.5】」で一致(3ソース目)。",
+  "章: 29章。ixanary.com/cards/2618 に「『戦乙女のひな祭り』クエスト報酬 2025-03-04〜2025-04-03」とあり、ixagno.blog.fc2.com blog-entry-10272 が同イベントを【29章】と明記。tools/chapter_guess.py の章期間表(29章=2025-02-07〜2025-08-07)とも整合する。",
+  "【武将名の（2）】極のねねは 2946(2017-12-04) / 2556(2022-04-10) / 2618(2025-03-05) の3枚だが、2556 は ixawiki 武将カード一覧(極)の表記が「ねね(RE)」= 復刻のため通常カードの数に入れない。残る2枚を最古コメント日順に並べて 2946=（1）、2618=（2）。既登録の 2946=ねね（1）と矛盾しないので既存カードの改名は不要。なお ixagno は復刻込みで数えて「ねね(3)【極】」と呼んでいる(blog-entry-10268)が、うちのルールでは復刻を数に入れないため（2）とした。",
+  "合成候補は ixanary.com/skills/豊国安寧 の1次/2次(A=龍驤虎躍[SS]自己参照、B・C・S1=豊国安寧[S]自己参照、S2=万里嵐壁[SS]自己参照)と ixawiki BushoCard/2618ねね の合成候補テーブルが一致(2ソース)。ixagno blog-entry-10268 の表も同じ。",
+  "TR段階: ixanary のカードページ・スキルページともTR行が無い(生HTMLに TR1〜TR6 の文字列が0件)。ixawikiの成長の歩みの表も雛形のまま空欄。",
+  "categoryLinks 9項目判定(A-3-9): 無尽×/撤退×/飛翔×/覇道×/不屈×/兵站×/卓越×/人数依存×/コスト減少○。所領防御陣形限定で自分自身の編成コストを下げる型で、既登録の華焰(No.2615、-1.5)と同型のためskills-cost.html・skills-cost-def.htmlに合わせて登録した。",
+  "sourceCharacters逆引き(A-3-11): A枠=data/skill/龍驤虎躍.json、B・C・S1枠=data/skill/豊国安寧.json(今回新規作成)、S2枠=data/skill/万里嵐壁.json のいずれにも2618を追記済み。"
+ ],
+ "reviewedOk": true,
+ "wikiOldestComment": "2025-03-05",
+ "wikiCommentCount": 4,
+ "chGuess": "29章"
+}

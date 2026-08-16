@@ -89,14 +89,17 @@
    "slot": "S2",
    "skill": "四海王道",
    "rank": "S",
-   "afterSkill": "武神八幡陣",
+   "afterSkill": "覇王征軍",
    "afterRank": "SS",
    "target": "全",
    "rate": "20%",
    "effectShort": "防御 50%上昇",
    "afterTarget": "全",
-   "afterRate": "60%",
-   "afterEffectShort": "防御 41.56%上昇(部隊総コストで変動、TRなし)"
+   "afterRate": "42%",
+   "afterEffectShort": "攻撃 25.39%上昇(部隊総コストで変動、TRなし)",
+   "note": [
+    "2026-08-16: S2枠の移植後を 武神八幡陣 → 覇王征軍 に訂正。A-3-0の参照先を取り違えていた(四海王道**自身**のページのS2枠2次を見ていたが、正しくは武将の初期スキル「酔狂破陣」のページのS2枠2次)。ixanaryの酔狂破陣・風狂幻術の両ページとも2次S2=覇王征軍[SS]。担当K6の指摘。"
+   ]
   }
  ],
  "notes": [
@@ -111,5 +114,6 @@
  ],
  "reviewedOk": true,
  "wikiOldestComment": "2017-01-13",
- "wikiCommentCount": 107
+ "wikiCommentCount": 107,
+ "chGuess": "13章"
 }

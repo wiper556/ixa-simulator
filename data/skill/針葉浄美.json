@@ -3,9 +3,19 @@
  "rank": "S",
  "baseRate": 100.0,
  "target": "全",
- "effectSummary": "S/LV10 確率 100% 防御 480%上昇/対象:全",
+ "effectSummary": "S/LV10 確率 100% 防御 480%上昇/対象:全\n①防御 480%上昇する\n②部隊内姫武将スキル発動率+10%(特殊効果は部隊内重複不可)",
  "categoryLinks": [],
  "sourceCharacters": [
+  {
+   "name": "京極竜子（3）",
+   "no": "2621",
+   "slot": "B・C・S1",
+   "db": "kyoku",
+   "note": [
+    "京極竜子(2621)のsynthesisTable B枠・C枠・S1枠(2026-08-16・担当K3。ixanary.com/skills/針葉浄美 とixawiki BushoCard/2621京極竜子 の合成候補テーブルで確認)",
+    "No.2621はこのスキルを初期スキルとして持つカード(このスキルの原本)"
+   ]
+  },
   {
    "name": "赤井輝子",
    "no": "2849",
@@ -19,13 +29,15 @@
  "notes": [
   "ixanary.com(skills/針葉浄美)から登録(2026-08-14)。S以上のスキルはページを作る決まり(S-01)にもとづく新規作成。",
   "対象・確率・効果文はixanaryの表記をうちの書式に直したもの。categoryLinksとsourceCharactersは各武将の登録時に追記する。",
-  "ownHiddenCandidateは、このスキルが1次候補として載っている枠(2849 赤井輝子 B枠)の2次候補から(S-08)。"
+  "ownHiddenCandidateは、このスキルが1次候補として載っている枠(2849 赤井輝子 B枠)の2次候補から(S-08)。",
+  "2026-08-16(担当K3): このスキルの原本カードNo.2621(京極竜子（3）)を登録したのでsourceCharactersに追加した(B・C・S1枠)。あわせて、effectSummaryとtrTableから「部隊内姫武将スキル発動率+10%(特殊効果は部隊内重複不可)」という主効果が落ちていたので補った(A-4-16。カード原文・ixanary.com/skills/針葉浄美・ixawiki BushoCard/2621京極竜子 の3つとも記載あり)。",
+  "【申し送り】ixagno.blog.fc2.com blog-entry-10271 だけは No.2621 のB・C・S1候補を「清賢ノ遊姫[A]→入来神舞[S]」としており、標準2ソース(ixanary/ixawiki)の自己参照と食い違う。詳しい経緯は data/busho-kyoku-ps/2621.json のnotesに書いた。"
  ],
  "trTable": [
   {
    "level": "LV10",
    "points": "-",
-   "effect": "全　確率 100% / 防御 480%上昇"
+   "effect": "全　確率 100% / 防御 480%上昇(部隊内姫武将スキル発動率+10%・特殊効果は部隊内重複不可)"
   }
  ],
  "ownHiddenCandidate": {

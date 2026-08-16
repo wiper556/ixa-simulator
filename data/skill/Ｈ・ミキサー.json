@@ -1,0 +1,33 @@
+{
+ "name": "Ｈ・ミキサー",
+ "rank": "S",
+ "baseRate": 29,
+ "target": "馬・砲・器",
+ "effectSummary": "S/LV10 確率 29% 攻撃 1000%上昇 破壊 150%上昇/対象:馬砲器\n①攻撃 1000%上昇する\n②破壊 150%上昇する",
+ "categoryLinks": [],
+ "sourceCharacters": [
+  {
+   "name": "バッファローマン",
+   "no": "2632",
+   "slot": "B",
+   "db": "kyoku"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "馬・砲・器　確率 29% / 攻撃 1000%上昇+破壊 150%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com のスキル個別ページ(skills/{name}/)の生HTMLから登録(カードページ側には合成テーブルが無いため)。",
+  "スキル名の「Ｈ」の全角/半角が情報源で割れている(ixanary=全角Ｈ、ixawiki=半角H)。ixanaryの表記(全角Ｈ)と、既存のassets/js/ixa-data.jsの登録に合わせて全角で登録した。",
+  "ownHiddenCandidateは1次B=Ｈ・ミキサー/2次B=叛逆近景[S]から導出。",
+  "TR(鍛錬)の段は情報源に存在しない。"
+ ],
+ "ownHiddenCandidate": {
+  "skill": "叛逆近景",
+  "rank": "S"
+ }
+}

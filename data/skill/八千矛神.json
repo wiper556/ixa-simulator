@@ -1,0 +1,37 @@
+{
+ "name": "八千矛神",
+ "rank": "SS",
+ "baseRate": 100,
+ "target": "全",
+ "effectSummary": "SS/LV10 確率 100% 攻撃 50%上昇/対象:全\n①攻撃 50%上昇する\n②所属部隊の武将が持つスキルを無効化や発動率低下スキルから保護する",
+ "categoryLinks": null,
+ "sourceCharacters": [
+  {
+   "name": "本多忠勝（5）",
+   "no": "2468",
+   "slot": "A",
+   "db": "kyoku",
+   "note": [
+    "本多忠勝（5）(2468)のsynthesisTable A枠(2026-08-16、自己参照。ixanary.com/skills/立ち葵とixawiki BushoCard/2468の合成候補テーブルで1次A・2次Aとも八千矛神[SS]であることを2ソース確認)"
+   ]
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "八千矛神",
+  "rank": "SS"
+ },
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 攻撃 50%上昇(所属部隊の武将が持つスキルを無効化や発動率低下スキルから保護)"
+  }
+ ],
+ "notes": [
+  "2026-08-16作成。No.2468(本多忠勝（5）)のsynthesisTable A枠に出るSSの候補スキルのためページ作成(A-3-9)。",
+  "出典: ixanary.com/skills/八千矛神(LV1/LV10・合成テーブル1次〜3次) + ixawiki.com(BushoCard/2468本多忠勝の合成候補テーブル)。",
+  "ownHiddenCandidateは自身の合成テーブルS1枠(1次/2次とも八千矛神)から導出した自己参照。",
+  "categoryLinks 9項目チェック実施: 「所属部隊の武将が持つスキルを無効化や発動率低下スキルから保護」という覇道系の保護効果文を持つが、ixanary.com・ixawiki.comのいずれもこのスキルに赤字の「覇道」表記を付けていない([[feedback_hadou_classification_rule]]の判定基準では保護効果文とカード上の覇道表記の両方が必要)。同じ保護効果文を持つ覇道天聖[SS]も既存データで覇道扱いになっていないため、これに揃えて覇道一覧には載せずnullとした。無尽/撤退/飛翔/不屈/兵站/卓越/人数依存/コスト減少も該当なし。",
+  "TR(鍛錬)情報はixanary.comに記載が無く、LV1/LV10の2段のみのためtrTableはLV10の1行。"
+ ]
+}
