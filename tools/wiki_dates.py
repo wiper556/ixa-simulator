@@ -4,8 +4,26 @@
 **何のためか。** 章(ch)が極の79%で未確認のまま埋まらない。章はカードの
 追加時期そのものなので、追加時期の代わりになる値があれば当たりが付く。
 ixawiki のカードページの一番古いコメントは、そのカードが世に出た直後に
-書かれていることが多く、実際 7002〜7009 が30章、7011〜7019 が31章と
-日付順にきれいに並ぶ。
+書かれていることが多い。
+
+**どこまで当たるか(2026-08-16、9人で358体を1件ずつ検証した結果)。**
+章は半年ごとの窓で、章の頭に天が12枚出たあと極が月1〜2枚ずつ足される。
+「その日付を含む半年の窓」で章を当てると、章が分かっている132体のうち
+**127体(96.2%)が当たる**。外れる5体は下記。
+
+  2396 / 2397   実装 2025-07-01(29章)なのにコメントが41日遅れ、
+                30章の窓に落ちる。**最古コメントは編集者の紹介文なのに
+                41日遅れ**という、見た目で判別できない型
+  7010          30章のカードだがコメントが 2026-03-11 で31章の窓
+  1298 / 1300   窓の境界の置き方の問題(31章の頭は実際には2026-02-08前後)
+
+**2025年8月に運用が切れた。** それまでは実装当日に編集者が武将紹介文を
+貼っており、これが最強の痕跡だった。2398 と 7001〜7009 の10体は
+コメントが1件も無い。**この帯にはこの手法は効かない。**
+
+より確実なのは ixanary の月次追加一覧 と のろしのBLOG
+(noroshi-sengokuixa.hatenablog.com/entry/newcard_YYYYMM)の投稿日で、
+こちらは投稿日=実装日。2025年8月以降を埋めるならそちらが要る。
 
 **サイトには出さない。** 書き込むのは data/busho*/{No}.json だけで、
 build_data.py の LIST_FIELDS(白名簿)に足さないのでページには載らない。
@@ -53,6 +71,10 @@ COUNT = "wikiCommentCount"
 # (2026-08-16に358体すべて空振りした)。
 COMMENT = re.compile(
     r'class="comment_date"[^>]*>\s*(20\d\d-\d\d-\d\d)\s*\([日月火水木金土]\)')
+# 書き損じたコメント。`&new{…}` が展開されず `{2025-02-08 (土) 10:37:01}` と
+# 素のまま残っているものがある。span に包まれないので上の式では拾えない。
+# 2026-08-16に担当Bが実測。No.1283 鍋島直茂で最古が6日ずれていた。
+BROKEN = re.compile(r"\{(20\d\d-\d\d-\d\d)\s*\([日月火水木金土]\)\s*\d\d:\d\d:\d\d\}")
 TAG = re.compile(r"[(（]([^)）]*)[)）]\s*$")
 
 
@@ -69,13 +91,28 @@ def fetch(page, use_cache=True):
     raw = urllib.request.urlopen(req, timeout=60).read().decode("euc-jp", "replace")
     if "有効なWikiNameではありません" in raw:
         raise ValueError("ページが無い")
+    # **PukiWiki は存在しないページに編集フォームを 200 で返す。**
+    # これを弾かないと、無いページを中身空のまま正常扱いでキャッシュし、
+    # 「コメント0件」と「そもそもページが無い」が区別できなくなる
+    # (2026-08-16に担当B・Eが実測。7021/7022 や 10069/10070/10075/10076 が該当)。
+    if re.search(r"<title>[^<]* の編集 - ", raw):
+        raise ValueError("ページが無い(編集フォームが返った)")
     io.open(p, "w", encoding="utf-8").write(raw)
     time.sleep(0.3)
     return raw
 
 
+HREF = re.compile(r'href="[^"]*index\.php\?((?:%[0-9A-Fa-f]{2}|[\w./-])+)"')
+
+
 def wiki_names():
-    """カードNo. → wiki 上の素の名前(ページ名を組み立てるのに要る)。"""
+    """カードNo. → wiki 上のページ名の武将名の部分。
+
+    **一覧の表示名から作ってはいけない。** 表示が「豊臣秀長(覇)」でも、
+    実ページ名は `BushoCard/1298豊臣秀長(覇)` と (覇) 込みのことがある
+    (2026-08-16に担当Cが実測。1298/1299/1300 の3体で静かに0件になっていた)。
+    リンク先の href からページ名そのものを取る。
+    """
     out = {}
     for page in LISTS:
         try:
@@ -83,17 +120,14 @@ def wiki_names():
         except Exception as e:
             print("  %s が取れない: %s" % (page, e))
             continue
-        t = re.sub(r"(?i)</t[dh]>", " | ", raw)
-        t = re.sub(r"(?i)</tr>", "\n", t)
-        t = re.sub(r"<[^>]+>", "", t)
-        t = re.sub(r"[ \t　]+", " ", t)
-        for line in t.split("\n"):
-            c = [x.strip() for x in line.strip(" |").split("|")]
-            if len(c) > 2 and re.match(r"^\d+$", c[0]):
-                m = TAG.search(c[2])
-                base = (c[2][:m.start()] if m else c[2]).strip()
-                if base and not base.endswith("?"):
-                    out[c[0]] = base
+        for m in HREF.finditer(raw):
+            try:
+                name = urllib.parse.unquote_to_bytes(m.group(1)).decode("euc-jp")
+            except Exception:
+                continue
+            mm = re.match(r"^BushoCard/(\d+)(.+)$", name)
+            if mm:
+                out[mm.group(1)] = mm.group(2)
     return out
 
 
@@ -119,16 +153,20 @@ def oldest(no, base):
     # 足していたので、カードページに再掲される直近分がまるごと二重に
     # 数えられていた(2026-08-16に担当Gが実測。全38件が過大、少ない側では
     # ちょうど2倍になっていた)。日付は min なので影響していなかった。
+    alive = False
     for page in ("コメント/BushoCard/%s%s" % (no, base),
                  "BushoCard/%s%s" % (no, base)):
         try:
             raw = fetch(page)
         except Exception:
             continue
-        ds = COMMENT.findall(raw)
+        alive = True
+        ds = COMMENT.findall(raw) + BROKEN.findall(raw)
         if ds:
             return min(ds), len(ds)
-    return None, 0
+    # ページが1枚も無いのか、あるがコメント0件なのかを区別する。
+    # 前者は 0 ではなく null にして「調べていない」と混ざらないようにする。
+    return None, (0 if alive else None)
 
 
 def main(redo=False):
