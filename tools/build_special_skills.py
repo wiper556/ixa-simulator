@@ -106,6 +106,35 @@ def target_of(j, rows):
     return (sorted(set(cats)) or None), (sorted(set(sold)) or None)
 
 
+# 「攻撃 2.5%×防御参加武将数(280人)=700.0%」「攻撃 100%+12.5%×防御参加武将数…」
+# 「攻撃 基礎値340%×部隊内の同スキル所持武将数(4人)=1360%上昇」
+# 戦闘ごとに変わる数に比例するタイプ。シミュレーターの variableFormula に載る。
+VAR_RE = re.compile(
+    r"(攻撃|防御)\s*(?:(?P<base>[\d.]+)%\+)?(?:基礎値)?(?P<per>[\d.]+)%\s*[×x]\s*"
+    r"(?P<var>防御参加武将数|部隊内の同スキル所持武将数)")
+VAR_NAME = {"防御参加武将数": "defenderCount",
+            "部隊内の同スキル所持武将数": "sameSkillCount"}
+
+
+def var_formula(rows):
+    """(statTarget, base, perUnitの段別表, 変数名)。当てはまらなければ None。"""
+    m = VAR_RE.search(rows.get("LV10") or "")
+    if not m:
+        return None
+    st = "atk" if m.group(1) == "攻撃" else "def"
+    per = {}
+    for lv in LEVELS:
+        t = rows.get(lv)
+        if not t:
+            continue
+        mm = VAR_RE.search(t)
+        if mm and mm.group(1) == m.group(1):
+            per[KEY[lv]] = float(mm.group("per"))
+    if "base" not in per:
+        return None
+    return st, float(m.group("base") or 0), per, VAR_NAME[m.group("var")]
+
+
 def parse(j):
     """効果文から組める分だけを返す。組めなければ None。"""
     rows = rows_of(j)
@@ -113,6 +142,30 @@ def parse(j):
         return None
     atk = pct_table(rows, "攻撃")
     dfn = pct_table(rows, "防御")
+    vf = var_formula(rows)
+    if not atk and not dfn and vf:
+        st, base, per, var = vf
+        d = collections.OrderedDict()
+        d["effectAxis"] = st
+        d["activationType"] = "triggered"
+        d["statTarget"] = st
+        d["variableFormula"] = {"statTarget": st, "base": base,
+                                "perUnitTable": per, "variable": var}
+        # 段階選択のUI用に、変数が0のときの参考値を置く(既存の書き方に合わせる)
+        d["trTable"] = {k: base for k in per} if base else dict(per)
+        rt = rate_table(rows)
+        if rt:
+            d["baseRate"] = rt.get("base", list(rt.values())[0])
+            if len(set(rt.values())) > 1:
+                d["rateTable"] = rt
+        cats, sold = target_of(j, rows)
+        if cats:
+            d["targetTroopCategories"] = cats
+        if sold:
+            d["targetSoldierNames"] = sold
+        if "模倣不可" in (rows.get("LV10") or ""):
+            d["noMimic"] = True
+        return d
     if not atk and not dfn:
         return None
     d = collections.OrderedDict()
@@ -253,6 +306,11 @@ def entry(nm, d, j):
         if k in ("trTable", "defTrTable", "speedTrTable", "destructTrTable",
                  "rateTable"):
             lines.append("    %s: %s," % (k, js_table(v)))
+        elif k == "variableFormula":
+            lines.append("    variableFormula: { statTarget: '%s', base: %s, "
+                         "perUnitTable: %s, variable: '%s' },"
+                         % (v["statTarget"], num(v["base"]),
+                            js_table(v["perUnitTable"]), v["variable"]))
         elif k in ("targetTroopCategories", "targetSoldierNames"):
             lines.append("    %s: %s," % (k, js_list(v)))
         elif isinstance(v, bool):

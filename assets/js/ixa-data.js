@@ -3905,6 +3905,18 @@ const specialSkills = {
     note: '[S] 全　攻撃 100%上昇(確率70%)+速度 70%上昇(確率100%)(TRなし)。効果文から自動生成(tools/build_special_skills.py)。' +
           '正本 data/skill/不滅ノ鬼神.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
   },
+  '九国一ノ美才': {
+    effectAxis: 'def',
+    activationType: 'triggered',
+    statTarget: 'def',
+    variableFormula: { statTarget: 'def', base: 0, perUnitTable: { base:2.4 }, variable: 'defenderCount' },
+    trTable: { base:2.4 },
+    baseRate: 70,
+    targetTroopCategories: ['兵器兵科(器兵科)','弓兵科'],
+    targetSoldierNames: ['焙烙火矢'],
+    note: '[S] 弓器焙　確率 70% / 防御 2.4%×防御参加武将数(280人)=672.0%(卓越:追加確率30%で1.5倍)。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/九国一ノ美才.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
   '九頭龍ノ采配': {
     effectAxis: 'atk',
     activationType: 'triggered',
@@ -3922,6 +3934,16 @@ const specialSkills = {
     baseRate: 100,
     note: '[SS] 全　確率 100% / 攻撃 50%上昇(所属部隊の武将が持つスキルを無効化や発動率低下スキルから保護)。効果文から自動生成(tools/build_special_skills.py)。' +
           '正本 data/skill/八千矛神.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '八目鳴鏑ノ奏': {
+    effectAxis: 'atk',
+    activationType: 'triggered',
+    statTarget: 'atk',
+    variableFormula: { statTarget: 'atk', base: 0, perUnitTable: { base:2.5 }, variable: 'defenderCount' },
+    trTable: { base:2.5 },
+    baseRate: 37,
+    note: '[SS] 全　確率 37% / 攻撃 2.5%×防御参加武将数(280人)=700.0%。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/八目鳴鏑ノ奏.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
   },
   '冥界の花嫁': {
     effectAxis: 'def',
@@ -3941,6 +3963,16 @@ const specialSkills = {
     targetTroopCategories: ['兵器兵科(器兵科)','兵器兵科(砲兵科)','弓兵科'],
     note: '[A] 弓・砲・器　確率 40% / 防御 15%上昇(部隊総コストで変動)。効果文から自動生成(tools/build_special_skills.py)。' +
           '正本 data/skill/凜武艶姫.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '加具土ノ神域': {
+    effectAxis: 'atk',
+    activationType: 'triggered',
+    statTarget: 'atk',
+    variableFormula: { statTarget: 'atk', base: 0, perUnitTable: { base:3.4 }, variable: 'defenderCount' },
+    trTable: { base:3.4 },
+    baseRate: 25,
+    note: '[SS] 全　確率 25% / 攻撃 3.4%×防御参加武将数(280人)=952.0%。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/加具土ノ神域.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
   },
   '千人狩': {
     effectAxis: 'atk',
@@ -4122,6 +4154,38 @@ const specialSkills = {
     note: '[SSS] 全　確率 70% / 防御 270%上昇(HP99以下で3倍)。効果文から自動生成(tools/build_special_skills.py)。' +
           '正本 data/skill/天地黎明.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
   },
+  '天奏聖譚曲': {
+    effectAxis: 'def',
+    activationType: 'triggered',
+    statTarget: 'def',
+    variableFormula: { statTarget: 'def', base: 0, perUnitTable: { base:2.5 }, variable: 'defenderCount' },
+    trTable: { base:2.5 },
+    baseRate: 70,
+    targetTroopCategories: ['兵器兵科(器兵科)','兵器兵科(砲兵科)'],
+    note: '[SS] 砲・器　確率 70% / 防御 2.5%×防御参加武将数(280人)=700.0%。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/天奏聖譚曲.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '天岩戸ノ神域': {
+    effectAxis: 'atk',
+    activationType: 'triggered',
+    statTarget: 'atk',
+    variableFormula: { statTarget: 'atk', base: 0, perUnitTable: { base:2.8 }, variable: 'defenderCount' },
+    trTable: { base:2.8 },
+    baseRate: 70,
+    note: '[SS] 全　確率 70% / 攻撃 2.8%×防御参加武将数(280人)=784.0%。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/天岩戸ノ神域.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '天廟斬算': {
+    effectAxis: 'atk',
+    activationType: 'triggered',
+    statTarget: 'atk',
+    variableFormula: { statTarget: 'atk', base: 0, perUnitTable: { base:1.7 }, variable: 'defenderCount' },
+    trTable: { base:1.7 },
+    baseRate: 35,
+    targetTroopCategories: ['兵器兵科(器兵科)','弓兵科'],
+    note: '[S] 弓器　確率 35% / 攻撃 1.7%×防御参加武将数(280人)=476.0%上昇。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/天廟斬算.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
   '天弓星宿陣': {
     effectAxis: 'def',
     activationType: 'triggered',
@@ -4169,6 +4233,16 @@ const specialSkills = {
     baseRate: 100,
     note: '[SS] 全　確率 100% / 攻撃 20%上昇。効果文から自動生成(tools/build_special_skills.py)。' +
           '正本 data/skill/天焉神軍.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '天磐船': {
+    effectAxis: 'def',
+    activationType: 'triggered',
+    statTarget: 'def',
+    variableFormula: { statTarget: 'def', base: 0, perUnitTable: { base:3.8 }, variable: 'defenderCount' },
+    trTable: { base:3.8 },
+    baseRate: 56,
+    note: '[SS] 全　確率 56% / 防御 3.8%×防御参加武将数(280人)=1064.0%。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/天磐船.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
   },
   '天神旋武': {
     effectAxis: 'atk',
@@ -4672,6 +4746,16 @@ const specialSkills = {
     note: '[S] 全　確率 70% / 攻撃 70%上昇+防御 70%上昇(自部隊内で卓越発動したスキル数×40%を攻防効果に加算・模倣不可)。効果文から自動生成(tools/build_special_skills.py)。' +
           '正本 data/skill/比類なき大将.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
   },
+  '水霊ノ加護': {
+    effectAxis: 'def',
+    activationType: 'triggered',
+    statTarget: 'def',
+    variableFormula: { statTarget: 'def', base: 0, perUnitTable: { base:1.5 }, variable: 'defenderCount' },
+    trTable: { base:1.5 },
+    baseRate: 100,
+    note: '[A] 全　確率 100% / 防御 1.5%×防御参加武将数(280人)=420.0%。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/水霊ノ加護.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
   '氷塊ノ夾撃': {
     effectAxis: 'atk',
     activationType: 'triggered',
@@ -4902,6 +4986,16 @@ const specialSkills = {
     note: '[S] 弓・砲・器　確率 29% / 防御 1000%上昇+破壊 150%上昇。効果文から自動生成(tools/build_special_skills.py)。' +
           '正本 data/skill/百戦百勝脚.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
   },
+  '皇天覇虎': {
+    effectAxis: 'atk',
+    activationType: 'triggered',
+    statTarget: 'atk',
+    variableFormula: { statTarget: 'atk', base: 100, perUnitTable: { base:12.5, TR1:12.9, TR2:13.3, TR3:13.9, TR4:14.6, TR5:15.5 }, variable: 'defenderCount' },
+    trTable: { base:100, TR1:100, TR2:100, TR3:100, TR4:100, TR5:100 },
+    baseRate: 45,
+    note: '[SSS] 全　確率 45% / 攻撃 100%+12.5%×防御参加武将数(280人)=3600.0%。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/皇天覇虎.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
   '盟王ノ威才': {
     effectAxis: 'def',
     activationType: 'triggered',
@@ -5050,6 +5144,16 @@ const specialSkills = {
     note: '[S] 全　確率 100% / 攻撃 390%上昇+防御 390%上昇+自軍全武将全スキルの卓越確率に10%加算(模倣不可・自軍内重複上限3)。効果文から自動生成(tools/build_special_skills.py)。' +
           '正本 data/skill/絶技兵術.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
   },
+  '絶界滅刃': {
+    effectAxis: 'atk',
+    activationType: 'triggered',
+    statTarget: 'atk',
+    variableFormula: { statTarget: 'atk', base: 0, perUnitTable: { base:340, TR1:360, TR2:390, TR3:430, TR4:460, TR5:500 }, variable: 'sameSkillCount' },
+    trTable: { base:340, TR1:360, TR2:390, TR3:430, TR4:460, TR5:500 },
+    baseRate: 40,
+    note: '[SS] 全　確率 40% / 攻撃 基礎値340%×部隊内の同スキル所持武将数(4人)=1360%上昇。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/絶界滅刃.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
   '総構え': {
     effectAxis: 'def',
     activationType: 'triggered',
@@ -5148,6 +5252,16 @@ const specialSkills = {
     note: '[S] 槍・弓・器・鉄　確率 50% / 防御 110%上昇(自拠点防御時は防御効果3倍)。効果文から自動生成(tools/build_special_skills.py)。' +
           '正本 data/skill/葵ノ慈母.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
   },
+  '虚妄ノ神蛇': {
+    effectAxis: 'def',
+    activationType: 'triggered',
+    statTarget: 'def',
+    variableFormula: { statTarget: 'def', base: 0, perUnitTable: { base:14.8, TR1:15.3, TR2:15.8, TR3:16.4, TR4:17, TR5:17.7 }, variable: 'defenderCount' },
+    trTable: { base:14.8, TR1:15.3, TR2:15.8, TR3:16.4, TR4:17, TR5:17.7 },
+    baseRate: 50,
+    note: '[SSS] 全　確率 50% / 防御 14.8%×防御参加武将数(280人)=4144.0%。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/虚妄ノ神蛇.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
   '虚実兵妙': {
     effectAxis: 'def',
     activationType: 'triggered',
@@ -5213,6 +5327,17 @@ const specialSkills = {
     baseRate: 100,
     note: '[SS] 全　確率 100% / 攻撃 26%上昇(所属部隊の武将が持つスキルを無効化や発動率低下から保護)。効果文から自動生成(tools/build_special_skills.py)。' +
           '正本 data/skill/覇道天聖.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '覇龍滅破陣': {
+    effectAxis: 'def',
+    activationType: 'triggered',
+    statTarget: 'def',
+    variableFormula: { statTarget: 'def', base: 0, perUnitTable: { base:2 }, variable: 'defenderCount' },
+    trTable: { base:2 },
+    baseRate: 99.9,
+    targetTroopCategories: ['兵器兵科(器兵科)','兵器兵科(砲兵科)'],
+    note: '[SS] 砲器　確率 99.9% / 防御 2%×防御参加武将数(280人)=560.0%。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/覇龍滅破陣.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
   },
   '見様見真似': {
     effectAxis: 'def',
