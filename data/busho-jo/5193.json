@@ -1,0 +1,49 @@
+{
+ "name": "三村家親",
+ "no": "5193",
+ "ch": "19章",
+ "cost": 2,
+ "troop": "槍攻",
+ "sub": "",
+ "effect": "槍攻 コスト×5=10%上昇",
+ "furigana": "みむらいえちか",
+ "illustrator": "天領寺セナ",
+ "imageFull": "assets/img/characters/no5193_full.png",
+ "imageChar": "assets/img/characters/no5193_char.png",
+ "atkBase": 480,
+ "atkGrowth": 18,
+ "defBase": 460,
+ "defGrowth": 15,
+ "tacticsBase": 410.0,
+ "tacticsGrowth": 1.5,
+ "lv0Troops": 1770,
+ "rankGrades": {
+  "yari": "C",
+  "yumi": "E",
+  "uma": "D",
+  "ki": "C"
+ },
+ "initialSkill": "槍隊急襲",
+ "skillDetail": "F/LV10 確率 16% 槍攻 10%上昇/対象:槍\n①槍攻 10%上昇する(武将のコストで効果が変化)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍　確率 16% / 槍攻 コスト×5=10%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当G)。カード画像(スキルLV10形式)から。武将名「三村家親」/ コスト2 / 統率 槍C・弓E・馬D・器C(4隅アイコンを個別にズームして確認) / 初期値 攻撃480・防御460・兵法410.0 / 指揮兵数0/1770 / カードNo.5193一致 / 初期スキル「槍隊急襲 LV10」[F] 確率+16%・対象 槍・槍攻10%上昇(武将のコストで効果が変化) / Illust 天領寺セナ。",
+  "成長値(攻+18/防+15/兵法+1.5)・furigana・統率・illustratorはixanary.com/cards/5193の生HTML(cardNo:5193のprops)と完全一致。",
+  "【要確認】スキル効果の数値がカード画像とixanaryで食い違う。カード画像のLV10表記は確率16%・槍攻10%上昇。ixanary.com/cards/5193の生HTMLではLV10が確率+16%・槍攻7.5%上昇(コスト2の他カードNo.4278長坂信政と同じ7.5%)。同じ槍隊急襲スキルでNo.4237竹中重門も同様にカード画像だけ10%表記になる事例が既存データにあり、本登録ではカード画像の一次情報を優先し10%で登録した。監査時に画像を再確認してほしい。",
+  "初期スキルはFランクのためdata/skill/ページの新規作成対象外。synthesisTableは今回未登録(序レアリティのため付けない指示)。",
+  "章は情報源に記載が無く未確認のためnull。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。",
+  "2026-08-16: コストで効果が変わるスキルの書き方を「計算式=結果」に揃えた(担当ごとに注記の有無・文言が割れていたため)。槍隊急襲の係数×5はうぐさんがゲーム内で確認した値。"
+ ],
+ "wikiOldestComment": "2020-03-17",
+ "wikiCommentCount": 5,
+ "chGuess": "19章",
+ "chSource": "wikiOldestComment"
+}

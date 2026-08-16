@@ -1,0 +1,44 @@
+{
+ "name": "伊勢貞興",
+ "no": "5198",
+ "ch": null,
+ "cost": 1.5,
+ "troop": "弓防",
+ "sub": "",
+ "effect": "弓防12%上昇",
+ "furigana": "いせさだおき",
+ "illustrator": "あおひと",
+ "imageFull": "assets/img/characters/no5198_full.png",
+ "imageChar": "assets/img/characters/no5198_char.png",
+ "atkBase": 470,
+ "atkGrowth": 17,
+ "defBase": 480,
+ "defGrowth": 18,
+ "tacticsBase": 410.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 1370,
+ "rankGrades": {
+  "yari": "C",
+  "yumi": "B",
+  "uma": "E",
+  "ki": "D"
+ },
+ "initialSkill": "弓隊堅陣",
+ "skillDetail": "F/LV10 確率 30% 弓防 12%上昇/対象:弓\n①弓防 12%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓　確率 30% / 弓防 12%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当H)。カード画像(スキルLV10形式)から。武将名「伊勢貞興」/ 序 / コスト1.5 / 統率 槍C・弓B・馬E・器D(4隅アイコンを個別にズームして確認) / 初期値 攻撃470・防御480・兵法410.0 / 指揮兵数0/1370 / カードNo.5198一致 / 初期スキル「弓隊堅陣 LV10」[F] 確率+30%・対象 弓・弓防12%上昇 / Illust あおひと。",
+  "成長値(攻+17/防+18/兵法+2)・furigana・スキル数値はixanary.com/cards/5198の生HTML(埋め込みJSON)と完全一致。",
+  "ixawikiの当該武将ページは未作成(編集画面が返る)のため名前の（N）判定材料なし。ixanaryの同名武将欄も「0武将」のため無印とした。",
+  "章はixanary/ixawikiとも記載が無く未確認のためnull。初期スキルはFランクのためdata/skill/ページの新規作成対象外。"
+ ],
+ "wikiOldestComment": null,
+ "wikiCommentCount": 0
+}

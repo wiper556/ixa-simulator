@@ -1,0 +1,43 @@
+{
+ "name": "丹羽氏重",
+ "no": "5242",
+ "ch": null,
+ "cost": 1.5,
+ "troop": "馬攻",
+ "sub": "",
+ "effect": "馬攻12%上昇",
+ "furigana": "にわうじしげ",
+ "illustrator": "レディ",
+ "imageFull": "assets/img/characters/no5242_full.png",
+ "imageChar": "assets/img/characters/no5242_char.png",
+ "atkBase": 520,
+ "atkGrowth": 18,
+ "defBase": 470,
+ "defGrowth": 16,
+ "tacticsBase": 400.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 1300,
+ "rankGrades": {
+  "yari": "D",
+  "yumi": "D",
+  "uma": "C",
+  "ki": "D"
+ },
+ "initialSkill": "騎馬隊奇襲",
+ "skillDetail": "E/LV10 確率 30% 馬攻 12%上昇/対象:馬\n①馬攻 12%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "馬　確率 30% / 馬攻 12%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当L)。カード画像(スキルLV10形式)から。武将名「丹羽氏重」/ 序 / コスト1.5 / 統率 槍D・弓D・馬C・器D(4隅バッジをズームして確認) / 初期値 攻撃520・防御470・兵法400.0 / 指揮兵数0/1300 / カードNo.5242一致 / 初期スキル「騎馬隊奇襲 LV10」[E] 確率+30%・対象 馬・馬攻12%上昇 / Illust レディ。",
+  "成長値(攻+18/防+16/兵法+2)とfurigana・illustratorはixanary.com/cards/5242の埋め込みJSONと一致確認済み。ただしixanaryの埋め込みJSONは yumi:C / kiba:D となっており、カード画像の4隅バッジ実物(弓D・馬C)と食い違っていた。BRIEFの指示どおりカード画像の実物を優先し、rankGradesはカード画像基準(槍D・弓D・馬C・器D)で登録した。",
+  "Eランクのためdata/skill/ページの新規作成対象外。章は情報源に記載が無く未確認のためnull。ixawikiの個別ページ・一覧ページとも未確認(序レアリティの一覧が存在しない)のため名前の（N）判定材料が無く無印とした。synthesisTableは今回のバッチでは付けない指示のため未作成。"
+ ],
+ "wikiOldestComment": null,
+ "wikiCommentCount": 0
+}

@@ -1,0 +1,45 @@
+{
+ "name": "皆川広照",
+ "no": "5206",
+ "ch": null,
+ "cost": 1.5,
+ "troop": "槍攻",
+ "sub": "",
+ "effect": "槍攻10%上昇",
+ "furigana": "みながわひろてる",
+ "illustrator": "あおひと",
+ "imageFull": "assets/img/characters/no5206_full.png",
+ "imageChar": "assets/img/characters/no5206_char.png",
+ "atkBase": 480,
+ "atkGrowth": 18,
+ "defBase": 450,
+ "defGrowth": 17,
+ "tacticsBase": 400.0,
+ "tacticsGrowth": 1.5,
+ "lv0Troops": 1370,
+ "rankGrades": {
+  "yari": "C",
+  "yumi": "C",
+  "uma": "D",
+  "ki": "D"
+ },
+ "initialSkill": "槍隊襲撃",
+ "skillDetail": "F/LV10 確率 20% 槍攻 10%上昇/対象:槍\n①槍攻 10%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍　確率 20% / 槍攻 10%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当H)。カード画像(スキルLV10形式)から。武将名「皆川広照」/ 序 / コスト1.5 / 統率 槍C・弓C・馬D・器D(4隅アイコンを個別にズームして確認) / 初期値 攻撃480・防御450・兵法400.0 / 指揮兵数0/1370 / カードNo.5206一致 / 初期スキル「槍隊襲撃 LV10」[F] 確率+20%・対象 槍・槍攻10%上昇 / Illust あおひと。",
+  "成長値(攻+18/防+17/兵法+1.5)・furigana・スキル数値はixanary.com/cards/5206の生HTML(埋め込みJSON)と完全一致。",
+  "【要申し送り】ixanaryの埋め込みJSONは統率を yari:D/yumi:C/kiba:D/heiki:D としているが、カード画像の4隅バッジを個別ズームで確認すると 槍C・弓C・馬D・器D で yari が食い違う(画像はC、ixanaryはD)。ルールに従いカード画像の実物(槍C)を採用した。",
+  "ixawikiの当該武将ページは未作成(編集画面が返る)のため名前の（N）判定材料なし。ixanaryの同名武将欄も「0武将」のため無印とした。",
+  "章はixanary/ixawikiとも記載が無く未確認のためnull。初期スキルはFランクのためdata/skill/ページの新規作成対象外。"
+ ],
+ "wikiOldestComment": null,
+ "wikiCommentCount": 0
+}

@@ -1,0 +1,48 @@
+{
+ "name": "コックス",
+ "no": "5171",
+ "ch": "15章",
+ "cost": 1.5,
+ "troop": "槍攻",
+ "sub": "",
+ "effect": "槍攻 コスト×5=7.5%上昇",
+ "furigana": "こっくす",
+ "illustrator": "BANAMONS*",
+ "imageFull": "assets/img/characters/no5171_full.png",
+ "imageChar": "assets/img/characters/no5171_char.png",
+ "atkBase": 490,
+ "atkGrowth": 17,
+ "defBase": 440,
+ "defGrowth": 14,
+ "tacticsBase": 420.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 1320,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "D",
+  "uma": "C",
+  "ki": "C"
+ },
+ "initialSkill": "槍隊急襲",
+ "skillDetail": "F/LV10 確率 16% 槍攻 7.5%上昇/対象:槍\n①槍攻 7.5%上昇する(武将のコストで効果が変化します)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍　確率 16% / 槍攻 コスト×5=7.5%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当E)。カード画像(スキルLV10形式)から。武将名「コックス」/ 序 / コスト1.5 / 統率 槍B・弓D・馬C・器C(4隅アイコンを個別にズームして確認) / 初期値 攻撃490・防御440・兵法420.0 / 指揮兵数0/1320 / カードNo.5171一致 / 初期スキル「槍隊急襲 LV10」[F] 確率+16%・対象 槍・槍攻7.5%上昇(武将のコストで効果が変化します) / Illust BANAMONS*。",
+  "成長値(攻+17/防+14/兵法+2)・furigana・統率・イラストレーターはixanary.com/cards/5171の生HTML(埋め込みcard props)と完全一致。",
+  "初期スキルはFランクのためdata/skill/ページは作成対象外。",
+  "章は情報源に記載が無く未確認のためnull。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。",
+  "2026-08-16: コストで効果が変わるスキルの書き方を「計算式=結果」に揃えた(担当ごとに注記の有無・文言が割れていたため)。槍隊急襲の係数×5はうぐさんがゲーム内で確認した値。"
+ ],
+ "wikiOldestComment": "2018-05-02",
+ "wikiCommentCount": 33,
+ "chGuess": "15章",
+ "chSource": "wikiOldestComment"
+}

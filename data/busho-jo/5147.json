@@ -1,0 +1,47 @@
+{
+ "name": "島津久保",
+ "no": "5147",
+ "ch": "11章",
+ "cost": 1.5,
+ "troop": "槍攻",
+ "sub": "",
+ "effect": "槍攻 コスト×6.5=9.75%上昇",
+ "furigana": "しまづひさやす",
+ "illustrator": "トミダトモミ",
+ "imageFull": "assets/img/characters/no5147_full.png",
+ "imageChar": "assets/img/characters/no5147_char.png",
+ "atkBase": 470,
+ "atkGrowth": 17,
+ "defBase": 450,
+ "defGrowth": 16,
+ "tacticsBase": 375.0,
+ "tacticsGrowth": 1.5,
+ "lv0Troops": 1230,
+ "rankGrades": {
+  "yari": "C",
+  "yumi": "D",
+  "uma": "D",
+  "ki": "E"
+ },
+ "initialSkill": "槍隊挟撃",
+ "skillDetail": "E/LV10 確率 25% 槍攻 9.75%上昇/対象:槍\n①槍攻 9.75%上昇する(武将のコストで効果が変化)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍　確率 25% / 槍攻 コスト×6.5=9.75%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当B)。カード画像(スキルLV10形式)から。武将名「島津久保」/ 序 / コスト1.5 / 統率 槍C・弓D・馬D・器E(バッジ拡大確認) / 初期値 攻撃470・防御450・兵法375.0 / 指揮兵数0/1230 / カードNo.5147一致 / 初期スキル「槍隊挟撃 LV10」[E] 確率+25%・対象 槍・槍攻9.75%上昇(コストで変化) / Illust トミダトモミ。",
+  "ixanary.com/cards/5147の生HTML(埋め込みJSON)とixawiki.com(BushoCard/5147島津久保)の生HTMLで、furigana・成長値(攻+17/防+16/兵法+1.5)・統率・スキル数値(LV10確率25%/槍攻9.75%上昇)が完全一致。ixawikiのページタイトルに（N）等の表記は無く無印。",
+  "章はixanary/ixawikiとも記載なくnull。初期スキルはEランクのためdata/skill/ページの新規作成対象外。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。",
+  "2026-08-16: コストで効果が変わるスキルの書き方を「計算式=結果」に揃えた(担当ごとに注記の有無・文言が割れていたため)。"
+ ],
+ "wikiOldestComment": "2016-04-17",
+ "wikiCommentCount": 6,
+ "chGuess": "11章",
+ "chSource": "wikiOldestComment"
+}

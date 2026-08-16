@@ -1,0 +1,44 @@
+{
+ "name": "汐崎重盛",
+ "no": "5186",
+ "ch": null,
+ "cost": 1.5,
+ "troop": "槍攻",
+ "sub": "",
+ "effect": "槍攻10%上昇",
+ "furigana": "しおざきしげもり",
+ "illustrator": "森田悠新",
+ "imageFull": "assets/img/characters/no5186_full.png",
+ "imageChar": "assets/img/characters/no5186_char.png",
+ "atkBase": 480,
+ "atkGrowth": 18,
+ "defBase": 460,
+ "defGrowth": 17,
+ "tacticsBase": 380.0,
+ "tacticsGrowth": 1.5,
+ "lv0Troops": 1360,
+ "rankGrades": {
+  "yari": "C",
+  "yumi": "D",
+  "uma": "D",
+  "ki": "D"
+ },
+ "initialSkill": "槍隊襲撃",
+ "skillDetail": "F/LV10 確率 20% 槍攻 10%上昇/対象:槍\n①槍攻 10%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍　確率 20% / 槍攻 10%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当F)。カード画像(スキルLV10形式)から。武将名「汐崎重盛」/ 序 / コスト1.5 / 統率 槍C・弓D・馬D・器D(バッジ拡大確認) / 初期値 攻撃480・防御460・兵法380.0 / 指揮兵数0/1360 / カードNo.5186一致 / 初期スキル「槍隊襲撃 LV10」[F] 確率+20%・対象 槍・槍攻10%上昇 / Illust 森田悠新。",
+  "ixanary.com/cards/5186の生HTML(成長の歩みテーブル)で成長値(攻+18/防+17/兵法+1.5)を確認。furigana・スキル文言はカード画像パネルと一致。",
+  "章は情報源に記載が無く未確認のためnull。初期スキルはFランクのためdata/skill/ページの新規作成対象外。"
+ ],
+ "wikiOldestComment": "2019-08-03",
+ "wikiCommentCount": 5,
+ "chGuess": "17-18章"
+}

@@ -1,0 +1,43 @@
+{
+ "name": "朝倉景総",
+ "no": "5253",
+ "ch": null,
+ "cost": 2,
+ "troop": "弓攻",
+ "sub": "",
+ "effect": "弓攻15%上昇",
+ "furigana": "あさくらかげふさ",
+ "illustrator": "KASEN",
+ "imageFull": "assets/img/characters/no5253_full.png",
+ "imageChar": "assets/img/characters/no5253_char.png",
+ "atkBase": 520,
+ "atkGrowth": 18,
+ "defBase": 470,
+ "defGrowth": 16,
+ "tacticsBase": 410.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 1820,
+ "rankGrades": {
+  "yari": "D",
+  "yumi": "C",
+  "uma": "D",
+  "ki": "D"
+ },
+ "initialSkill": "弓隊進撃",
+ "skillDetail": "F/LV10 確率 10% 弓攻 15%上昇/対象:弓\n①弓攻 15%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓　確率 10% / 弓攻 15%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当N)。カード画像(スキルLV10形式)から。武将名「朝倉景総」/ 序 / コスト2 / 統率 槍D・弓C・馬D・器D(4隅バッジを個別にズームして確認) / 初期値 攻撃520・防御470・兵法410.0 / 指揮兵数0/1820 / カードNo.5253一致 / 初期スキル「弓隊進撃 LV10」[F] 確率+10%・対象 弓・弓攻15%上昇 / Illust KASEN。",
+  "成長値(攻+18/防+16/兵法+2)・furigana・illustratorはixanary.com/cards/5253の生HTMLと一致確認済み。Fランクのためdata/skill/ページの新規作成対象外。",
+  "ixawiki.comの武将カード一覧(序)にNo.5253朝倉景総が掲載されており（N）等の表記は無く無印。個別ページは未作成(編集画面が返る)。章は一覧・個別ページとも記載が無く未確認のためnull。synthesisTableは今回のバッチでは付けない指示のため未作成。"
+ ],
+ "wikiOldestComment": null,
+ "wikiCommentCount": null
+}

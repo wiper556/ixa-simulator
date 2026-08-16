@@ -1,0 +1,46 @@
+{
+ "name": "五島玄雅",
+ "no": "5153",
+ "ch": "12章",
+ "cost": 2,
+ "troop": "砲防",
+ "sub": "",
+ "effect": "砲防15%上昇",
+ "furigana": "ごとうはるまさ",
+ "illustrator": "戸橋ことみ",
+ "imageFull": "assets/img/characters/no5153_full.png",
+ "imageChar": "assets/img/characters/no5153_char.png",
+ "atkBase": 470,
+ "atkGrowth": 16,
+ "defBase": 510,
+ "defGrowth": 17,
+ "tacticsBase": 175.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 1670,
+ "rankGrades": {
+  "yari": "D",
+  "yumi": "E",
+  "uma": "D",
+  "ki": "C"
+ },
+ "initialSkill": "鉄砲隊備え",
+ "skillDetail": "F/LV10 確率 8% 砲防 15%上昇/対象:砲\n①砲防 15%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "砲　確率 8% / 砲防 15%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当C)。序レアリティ初登録。カード画像(スキルLV10形式)から。武将名「五島玄雅」/序/コスト2/統率 槍D・弓E・馬D・器C(4隅を個別にズームして確認)/初期値 攻撃470・防御510・兵法175.0/指揮兵数0/1670/カードNo.5153一致/初期スキル「鉄砲隊備えLV10」[F] 確率+8%・対象 砲・砲防15%上昇/Illust:戸橋ことみ。",
+  "成長値(攻+16/防+17/兵法+2)はixanary.com/cards/5153の武将データ表、およびixawiki.com武将カード一覧(序)テーブルの両方で一致確認。ixawiki個別ページ(五島玄雅)は未作成(編集フォーム表示のため)。",
+  "名前の(N)表記はixawiki武将カード一覧(序)テーブルで無印を確認。章は両ソースとも記載なくnull。初期スキルはFランクのためdata/skill/ページ作成対象外。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2016-10-19",
+ "wikiCommentCount": 1,
+ "chGuess": "12章",
+ "chSource": "wikiOldestComment"
+}

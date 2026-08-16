@@ -1,0 +1,45 @@
+{
+ "name": "冨田氏実",
+ "no": "5178",
+ "ch": null,
+ "cost": 2,
+ "troop": "槍防",
+ "sub": "",
+ "effect": "槍防 コスト×5=10%上昇",
+ "furigana": "とみたうじざね",
+ "illustrator": "JUNNY",
+ "imageFull": "assets/img/characters/no5178_full.png",
+ "imageChar": "assets/img/characters/no5178_char.png",
+ "atkBase": 440,
+ "atkGrowth": 15,
+ "defBase": 480,
+ "defGrowth": 17,
+ "tacticsBase": 400.0,
+ "tacticsGrowth": 1.5,
+ "lv0Troops": 1740,
+ "rankGrades": {
+  "yari": "C",
+  "yumi": "C",
+  "uma": "E",
+  "ki": "D"
+ },
+ "initialSkill": "槍隊守備",
+ "skillDetail": "F/LV10 確率 16% 槍防 10%上昇/対象:槍\n①槍防 10%上昇する(武将のコストで効果が変化します)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍　確率 16% / 槍防 コスト×5=10%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当E)。カード画像(スキルLV10形式)から。武将名「冨田氏実」/ 序 / コスト2 / 統率 槍C・弓C・馬E・器D(4隅アイコンを個別にズームして確認) / 初期値 攻撃440・防御480・兵法400.0 / 指揮兵数0/1740 / カードNo.5178一致 / 初期スキル「槍隊守備 LV10」[F] 確率+16%・対象 槍・槍防10%上昇(武将のコストで効果が変化します) / Illust JUNNY。",
+  "成長値(攻+15/防+17/兵法+1.5)・furigana・統率・イラストレーターはixanary.com/cards/5178の生HTML(埋め込みcard props)と完全一致。",
+  "初期スキルはFランクのためdata/skill/ページは作成対象外。",
+  "章は情報源に記載が無く未確認のためnull。",
+  "2026-08-16: コストで効果が変わるスキルの書き方を「計算式=結果」に揃えた(担当ごとに注記の有無・文言が割れていたため)。"
+ ],
+ "wikiOldestComment": null,
+ "wikiCommentCount": null
+}

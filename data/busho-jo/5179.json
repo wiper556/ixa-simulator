@@ -1,0 +1,47 @@
+{
+ "name": "織田信広",
+ "no": "5179",
+ "ch": "16章",
+ "cost": 1.5,
+ "troop": "槍攻",
+ "sub": "",
+ "effect": "槍攻10%上昇",
+ "furigana": "おだのぶひろ",
+ "illustrator": "小森ニコ",
+ "imageFull": "assets/img/characters/no5179_full.png",
+ "imageChar": "assets/img/characters/no5179_char.png",
+ "atkBase": 480,
+ "atkGrowth": 18,
+ "defBase": 460,
+ "defGrowth": 16,
+ "tacticsBase": 400.0,
+ "tacticsGrowth": 1.5,
+ "lv0Troops": 1750,
+ "rankGrades": {
+  "yari": "C",
+  "yumi": "D",
+  "uma": "D",
+  "ki": "D"
+ },
+ "initialSkill": "槍隊襲撃",
+ "skillDetail": "F/LV10 確率 20% 槍攻 10%上昇/対象:槍\n①槍攻 10%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍　確率 20% / 槍攻 10%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当E)。カード画像(スキルLV10形式)から。武将名はカード実物表記の「織田信広」(ixanaryは「織田信廣」表記だったが、カード画像の縦書き名は「広」の字体だったためカード優先)。序 / コスト1.5 / 統率 槍C・弓D・馬D・器D(4隅アイコンを個別にズームして確認) / 初期値 攻撃480・防御460・兵法400.0 / 指揮兵数0/1750 / カードNo.5179一致 / 初期スキル「槍隊襲撃 LV10」[F] 確率+20%・対象 槍・槍攻10%上昇 / Illust 小森ニコ。",
+  "成長値(攻+18/防+16/兵法+1.5)・furigana・統率・イラストレーターはixanary.com/cards/5179の生HTML(埋め込みcard props)と一致。",
+  "初期スキルはFランクのためdata/skill/ページは作成対象外。",
+  "章は情報源に記載が無く未確認のためnull。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2019-01-26",
+ "wikiCommentCount": 3,
+ "chGuess": "16章",
+ "chSource": "wikiOldestComment"
+}

@@ -1,0 +1,47 @@
+{
+ "name": "益田元祥",
+ "no": "5141",
+ "ch": "10章",
+ "cost": 1.5,
+ "troop": "馬防",
+ "sub": "",
+ "effect": "馬防 コスト×6.5=9.75%上昇",
+ "furigana": "ますだもとなが",
+ "illustrator": "てもし",
+ "imageFull": "assets/img/characters/no5141_full.png",
+ "imageChar": "assets/img/characters/no5141_char.png",
+ "atkBase": 440,
+ "atkGrowth": 13,
+ "defBase": 470,
+ "defGrowth": 17,
+ "tacticsBase": 340.0,
+ "tacticsGrowth": 1.5,
+ "lv0Troops": 1200,
+ "rankGrades": {
+  "yari": "D",
+  "yumi": "D",
+  "uma": "B",
+  "ki": "E"
+ },
+ "initialSkill": "騎馬隊守護",
+ "skillDetail": "E/LV10 確率 25% 馬防 9.75%上昇/対象:馬\n①馬防 9.75%上昇する(武将のコストで効果が変化)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "馬　確率 25% / 馬防 コスト×6.5=9.75%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当A)。カード画像(スキルLV10形式)から。武将名「益田元祥」/ 序 / コスト1.5 / 統率 槍D・弓D・馬B・器E(4隅アイコンを個別にズームして確認) / 初期値 攻撃440・防御470・兵法340.0 / 指揮兵数0/1200 / カードNo.5141一致 / 初期スキル「騎馬隊守護 LV10」[E] 確率+25%・対象 馬・馬防9.75%上昇(カード画像に「武将のコストで効果が変化します」の注記あり、コスト1.5×6.5=9.75%で card 表示値と一致) / Illust てもし。",
+  "成長値(攻+13/防+17/兵法+1.5)・furigana・illustratorはixanary.com/cards/5141の生HTMLと完全一致。ixanaryの本文テキストは効果式を「防御：（コストx6.5）%上昇」という計算式のまま表記していたが、カード画像は実際のコスト(1.5)を代入した結果「馬防:9.75%上昇」を表示していたためカード画像の確定値を採用した。Eランクのためdata/skill/ページの新規作成対象外。",
+  "ixawiki.comの武将カード一覧(序)には「益田元祥」とだけ記載され（N）等の表記は無く無印とした。章は情報源に記載が無く未確認のためnull。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。",
+  "2026-08-16: コストで効果が変わるスキルの書き方を「計算式=結果」に揃えた(担当ごとに注記の有無・文言が割れていたため)。"
+ ],
+ "wikiOldestComment": "2015-10-11",
+ "wikiCommentCount": 6,
+ "chGuess": "10章",
+ "chSource": "wikiOldestComment"
+}

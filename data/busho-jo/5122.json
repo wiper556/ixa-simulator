@@ -1,0 +1,46 @@
+{
+ "name": "薄田兼相",
+ "no": "5122",
+ "ch": "7章",
+ "cost": 2,
+ "troop": "槍砲攻",
+ "sub": "",
+ "effect": "槍砲攻10%上昇",
+ "furigana": "すすきだかねすけ",
+ "illustrator": "雄",
+ "imageFull": "assets/img/characters/no5122_full.png",
+ "imageChar": "assets/img/characters/no5122_char.png",
+ "atkBase": 480,
+ "atkGrowth": 16,
+ "defBase": 470,
+ "defGrowth": 15,
+ "tacticsBase": 360.0,
+ "tacticsGrowth": 1.5,
+ "lv0Troops": 1420,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "E",
+  "uma": "C",
+  "ki": "C"
+ },
+ "initialSkill": "橙武者",
+ "skillDetail": "F/LV10 確率 12.5% 槍砲攻 10%上昇/対象:槍砲\n①槍砲攻 10%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍砲　確率 12.5% / 槍砲攻 10%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当A)。カード画像(スキルLV10形式)から。武将名「薄田兼相」/ 序 / コスト2 / 統率 槍B・弓E・馬C・器C(4隅アイコンを個別にズームして確認) / 初期値 攻撃480・防御470・兵法360.0 / 初期スキル「橙武者 LV10」[F] 確率+12.5%・対象 槍砲・槍砲攻10%上昇(いずれもカード画像を高倍率ズームして確認) / カードNo.5122一致 / Illust 雄(カード画像のillustrator欄はこの1文字のみで、ixanary.com/cards/5122の本文テキストも同じく「雄」の1文字だった)。",
+  "【要確認】指揮兵数はカード画像で「0/1420」と明瞭に読めたが、ixanary.com/cards/5122とixawiki.comの武将カード一覧(序)はどちらも「1560」を示しており、この項目のみ食い違う。カード画像を最優先する規約に従い1420を採用したが、他の担当・監査での再確認を推奨。また確率もカード画像は「+12.5%」だがixanaryの本文テキストは「+13%」表記だった(画像を優先し12.5%を採用)。攻撃・防御・兵法・コスト・成長値・furiganaは3ソースとも完全一致。",
+  "ixawiki.comの武将カード一覧(序)には「薄田兼相」とだけ記載され（N）等の表記は無く無印とした。既存No.3360も同名武将(別スキル)として登録済みだが本カードは別個体として新規登録。Fランクのためdata/skill/ページの新規作成対象外。章は情報源に記載が無く未確認のためnull。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2014-04-28",
+ "wikiCommentCount": 19,
+ "chGuess": "7章",
+ "chSource": "wikiOldestComment"
+}

@@ -1,0 +1,45 @@
+{
+ "name": "冷泉隆豊",
+ "no": "5159",
+ "ch": null,
+ "cost": 1.5,
+ "troop": "槍攻",
+ "sub": "",
+ "effect": "槍攻 コスト×5=7.5%上昇",
+ "furigana": "れいぜいたかとよ",
+ "illustrator": "東抽己",
+ "imageFull": "assets/img/characters/no5159_full.png",
+ "imageChar": "assets/img/characters/no5159_char.png",
+ "atkBase": 490,
+ "atkGrowth": 17,
+ "defBase": 440,
+ "defGrowth": 14,
+ "tacticsBase": 365.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 1320,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "D",
+  "uma": "C",
+  "ki": "C"
+ },
+ "initialSkill": "槍隊急襲",
+ "skillDetail": "F/LV10 確率 16% 槍攻 7.5%上昇/対象:槍\n①槍攻 7.5%上昇する(武将のコストで効果が変化する)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍　確率 16% / 槍攻 コスト×5=7.5%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当C)。カード画像(スキルLV10形式)から。武将名「冷泉隆豊」/序/コスト1.5/統率 槍B・弓D・馬C・器C(4隅を個別にズームして確認)/初期値 攻撃490・防御440・兵法365.0/指揮兵数0/1320/カードNo.5159一致/初期スキル「槍隊急襲LV10」[F] 確率+16%・対象 槍・槍攻7.5%上昇(武将のコストで効果が変化します)/Illust:東抽己。",
+  "成長値(攻+17/防+14/兵法+2)はixanary.com/cards/5159の武将データ表、およびixawiki.com武将カード一覧(序)テーブルの両方で一致確認。ixawiki個別ページは未確認。",
+  "名前の(N)表記はixawiki武将カード一覧(序)テーブルで無印を確認。章はnull。初期スキルはFランクのためdata/skill/ページ作成対象外。同名スキル「槍隊急襲」は既存busho-ue登録複数(No.4271等)でも同形式(コスト依存注記付き)で登録済み。",
+  "2026-08-16: コストで効果が変わるスキルの書き方を「計算式=結果」に揃えた(担当ごとに注記の有無・文言が割れていたため)。槍隊急襲の係数×5はうぐさんがゲーム内で確認した値。"
+ ],
+ "wikiOldestComment": "2017-05-18",
+ "wikiCommentCount": 4,
+ "chGuess": "13-14章"
+}

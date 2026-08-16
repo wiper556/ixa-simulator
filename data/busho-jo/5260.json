@@ -1,0 +1,44 @@
+{
+ "name": "二本松義継",
+ "no": "5260",
+ "ch": null,
+ "cost": 2,
+ "troop": "槍攻",
+ "sub": "",
+ "effect": "槍攻 コスト×5=10%上昇",
+ "furigana": "にほんまつよしつぐ",
+ "illustrator": "伊藤未生",
+ "imageFull": "assets/img/characters/no5260_full.png",
+ "imageChar": "assets/img/characters/no5260_char.png",
+ "atkBase": 550,
+ "atkGrowth": 19,
+ "defBase": 420,
+ "defGrowth": 14,
+ "tacticsBase": 430.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 1830,
+ "rankGrades": {
+  "yari": "C",
+  "yumi": "D",
+  "uma": "D",
+  "ki": "D"
+ },
+ "initialSkill": "槍隊急襲",
+ "skillDetail": "F/LV10 確率 16% 槍攻 10%上昇/対象:槍\n①槍攻 10%上昇する(武将のコストで効果が変化)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍　確率 16% / 槍攻 コスト×5=10%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当N)。カード画像(スキルLV10形式)から。武将名「二本松義継」/ 序 / コスト2 / 統率 槍C・弓D・馬D・器D(4隅バッジを個別にズームして確認) / 初期値 攻撃550・防御420・兵法430.0 / 指揮兵数0/1830 / カードNo.5260一致 / 初期スキル「槍隊急襲 LV10」[F] 確率+16%・対象 槍・槍攻10%上昇(武将のコストで効果が変化します) / Illust 伊藤未生。",
+  "成長値(攻+19/防+14/兵法+2)・furigana・illustratorはixanary.com/cards/5260の生HTMLと一致確認済み。カード画像のLV10表記(確率16%/槍攻10%上昇)は同コスト2・同スキルの既存No.4237竹中重門(data/busho-ue/4237.json)と同一値で整合。Fランクのためdata/skill/ページの新規作成対象外。",
+  "ixawiki.comの武将カード一覧(序)にNo.5260二本松義継が掲載されており（N）等の表記は無く無印。個別ページは未作成(編集画面が返る)。章は一覧・個別ページとも記載が無く未確認のためnull。synthesisTableは今回のバッチでは付けない指示のため未作成。",
+  "2026-08-16: コストで効果が変わるスキルの書き方を「計算式=結果」に揃えた(担当ごとに注記の有無・文言が割れていたため)。槍隊急襲の係数×5はうぐさんがゲーム内で確認した値。"
+ ],
+ "wikiOldestComment": null,
+ "wikiCommentCount": null
+}

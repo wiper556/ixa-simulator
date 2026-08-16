@@ -1,0 +1,47 @@
+{
+ "name": "天草久種",
+ "no": "5213",
+ "ch": "22章",
+ "cost": 1.5,
+ "troop": "砲防",
+ "sub": "",
+ "effect": "砲防 コスト×6.5=9.75%上昇",
+ "furigana": "あまくさひさたね",
+ "illustrator": "あおひと",
+ "imageFull": "assets/img/characters/no5213_full.png",
+ "imageChar": "assets/img/characters/no5213_char.png",
+ "atkBase": 470,
+ "atkGrowth": 15,
+ "defBase": 490,
+ "defGrowth": 18,
+ "tacticsBase": 410.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 1380,
+ "rankGrades": {
+  "yari": "D",
+  "yumi": "C",
+  "uma": "D",
+  "ki": "C"
+ },
+ "initialSkill": "鉄砲隊守護",
+ "skillDetail": "E/LV10 確率 20% 砲防 9.75%上昇/対象:砲\n①砲防 9.75%上昇する(武将のコストで効果が変化)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "砲　確率 20% / 砲防 コスト×6.5=9.75%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当I)。カード画像(スキルLV10形式)から。武将名「天草久種」/ 序 / コスト1.5 / 統率 槍D・弓C・馬D・器C(4隅アイコンを個別にズームして確認) / 初期値 攻撃470・防御490・兵法410.0 / 指揮兵数0/1380 / カードNo.5213一致 / 初期スキル「鉄砲隊守護 LV10」[E] 確率+20%・対象 砲・砲防9.75%上昇(武将のコストで効果が変化) / Illust あおひと。",
+  "成長値(攻+15/防+18/兵法+2)・furigana・統率・イラストレーターはixanary.com/cards/5213の生HTML(埋め込みJSON)と完全一致。Eランクのためdata/skill/ページの新規作成対象外。",
+  "ixawiki.comの武将カード一覧(Busho/武将カード一覧)にNo.5213天草久種が掲載されており（N）等の表記は無く無印。個別ページは未作成(編集画面が返る)。章は一覧・個別ページとも記載が無く未確認のためnull。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。",
+  "2026-08-16: コストで効果が変わるスキルの書き方を「計算式=結果」に揃えた(担当ごとに注記の有無・文言が割れていたため)。"
+ ],
+ "wikiOldestComment": "2021-11-04",
+ "wikiCommentCount": 3,
+ "chGuess": "22章",
+ "chSource": "wikiOldestComment"
+}

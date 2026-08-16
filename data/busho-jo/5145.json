@@ -1,0 +1,46 @@
+{
+ "name": "おたあ",
+ "no": "5145",
+ "ch": "11章",
+ "cost": 2,
+ "troop": "槍防",
+ "sub": "",
+ "effect": "槍防15%上昇",
+ "furigana": "おたあ",
+ "illustrator": "トミダトモミ",
+ "imageFull": "assets/img/characters/no5145_full.png",
+ "imageChar": "assets/img/characters/no5145_char.png",
+ "atkBase": 400,
+ "atkGrowth": 13,
+ "defBase": 460,
+ "defGrowth": 14,
+ "tacticsBase": 380.0,
+ "tacticsGrowth": 1.5,
+ "lv0Troops": 1750,
+ "rankGrades": {
+  "yari": "D",
+  "yumi": "D",
+  "uma": "E",
+  "ki": "F"
+ },
+ "initialSkill": "槍隊備え",
+ "skillDetail": "F/LV10 確率 10% 槍防 15%上昇/対象:槍\n①槍防 15%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍　確率 10% / 槍防 15%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当B)。カード画像(スキルLV10形式)から。武将名「おたあ」/ 序 / コスト2 / 統率 槍D・弓D・馬E・器F(バッジ拡大確認) / 初期値 攻撃400・防御460・兵法380.0 / 指揮兵数0/1750 / カードNo.5145一致 / 初期スキル「槍隊備え LV10」[F] 確率+10%・対象 槍・槍防15%上昇 / Illust トミダトモミ。",
+  "ixanary.com/cards/5145の生HTML(埋め込みJSON)とixawiki.com(BushoCard/5145おたあ)の生HTMLで、furigana・成長値(攻+13/防+14/兵法+1.5)・統率・スキル数値が完全一致。ixawikiのページタイトルに（N）等の表記は無く無印。",
+  "章はixanary/ixawikiとも記載なくnull。初期スキルはFランクのためdata/skill/ページの新規作成対象外。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2016-02-08",
+ "wikiCommentCount": 18,
+ "chGuess": "11章",
+ "chSource": "wikiOldestComment"
+}

@@ -1,0 +1,43 @@
+{
+ "name": "朝倉景紀",
+ "no": "5257",
+ "ch": null,
+ "cost": 2,
+ "troop": "槍防",
+ "sub": "",
+ "effect": "槍防10%上昇",
+ "furigana": "あさくらかげとし",
+ "illustrator": "琴吹由",
+ "imageFull": "assets/img/characters/no5257_full.png",
+ "imageChar": "assets/img/characters/no5257_char.png",
+ "atkBase": 450,
+ "atkGrowth": 15,
+ "defBase": 520,
+ "defGrowth": 18,
+ "tacticsBase": 410.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 1830,
+ "rankGrades": {
+  "yari": "C",
+  "yumi": "D",
+  "uma": "D",
+  "ki": "D"
+ },
+ "initialSkill": "槍隊堅守",
+ "skillDetail": "F/LV10 確率 20% 槍防 10%上昇/対象:槍\n①槍防 10%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍　確率 20% / 槍防 10%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当N)。カード画像(スキルLV10形式)から。武将名「朝倉景紀」/ 序 / コスト2 / 統率 槍C・弓D・馬D・器D(4隅バッジを個別にズームして確認) / 初期値 攻撃450・防御520・兵法410.0 / 指揮兵数0/1830 / カードNo.5257一致 / 初期スキル「槍隊堅守 LV10」[F] 確率+20%・対象 槍・槍防10%上昇 / Illust 琴吹由。",
+  "成長値(攻+15/防+18/兵法+2)・furigana・illustratorはixanary.com/cards/5257の生HTMLと一致確認済み。Fランクのためdata/skill/ページの新規作成対象外。",
+  "ixawiki.comの武将カード一覧(序)にNo.5257朝倉景紀が掲載されており（N）等の表記は無く無印。同名の朝倉景紀はNo.5081にも別カードとして存在するが、一覧側がどちらにも区別記号を振っていないため両方とも無印で扱う。個別ページは未作成(編集画面が返る)。章は一覧・個別ページとも記載が無く未確認のためnull。synthesisTableは今回のバッチでは付けない指示のため未作成。"
+ ],
+ "wikiOldestComment": null,
+ "wikiCommentCount": null
+}

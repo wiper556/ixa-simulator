@@ -1,0 +1,43 @@
+{
+ "name": "宮川房長",
+ "no": "5263",
+ "ch": null,
+ "cost": 2,
+ "troop": "弓攻",
+ "sub": "",
+ "effect": "弓攻15%上昇",
+ "furigana": "みやがわふさなが",
+ "illustrator": "はすめ",
+ "imageFull": "assets/img/characters/no5263_full.png",
+ "imageChar": "assets/img/characters/no5263_char.png",
+ "atkBase": 550,
+ "atkGrowth": 19,
+ "defBase": 410,
+ "defGrowth": 14,
+ "tacticsBase": 440.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 1830,
+ "rankGrades": {
+  "yari": "D",
+  "yumi": "C",
+  "uma": "D",
+  "ki": "D"
+ },
+ "initialSkill": "弓隊進撃",
+ "skillDetail": "F/LV10 確率 10% 弓攻 15%上昇/対象:弓\n①弓攻 15%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓　確率 10% / 弓攻 15%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当O)。カード画像(スキルLV10形式)から。武将名「宮川房長」/ 序 / コスト2 / 統率 槍D・弓C・馬D・器D(4隅バッジをズームして確認) / 初期値 攻撃550・防御410・兵法440.0 / 指揮兵数0/1830 / カードNo.5263一致 / 初期スキル「弓隊進撃 LV10」[F] 確率+10%・対象 弓・弓攻15%上昇 / Illust はすめ。",
+  "成長値(攻+19/防+14/兵法+2)・furigana・スキル文言はixanary.com/cards/5263の生HTMLと一致。ixawiki.comのBushoCard個別ページは未作成(編集フォームのみ表示)だが、Busho/武将カード一覧(序)ページには掲載あり(N)等の表記無し・無印。章はixawiki一覧でも「?」表記で不明のためnull。",
+  "初期スキルはFランクのためdata/skill/ページの新規作成対象外。synthesisTableは今回のバッチでは付けない指示のため未作成。"
+ ],
+ "wikiOldestComment": null,
+ "wikiCommentCount": null
+}

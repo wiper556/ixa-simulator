@@ -1,0 +1,47 @@
+{
+ "name": "千々石ミゲル",
+ "no": "5203",
+ "ch": "20章",
+ "cost": 2,
+ "troop": "弓攻",
+ "sub": "",
+ "effect": "弓攻15%上昇",
+ "furigana": "ちぢわみげる",
+ "illustrator": "末冨正直",
+ "imageFull": "assets/img/characters/no5203_full.png",
+ "imageChar": "assets/img/characters/no5203_char.png",
+ "atkBase": 490,
+ "atkGrowth": 18,
+ "defBase": 450,
+ "defGrowth": 17,
+ "tacticsBase": 390.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 1780,
+ "rankGrades": {
+  "yari": "C",
+  "yumi": "B",
+  "uma": "C",
+  "ki": "E"
+ },
+ "initialSkill": "弓隊進撃",
+ "skillDetail": "F/LV10 確率 10% 弓攻 15%上昇/対象:弓\n①弓攻 15%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓　確率 10% / 弓攻 15%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当H)。カード画像(スキルLV10形式)から。武将名「千々石ミゲル」/ 序 / コスト2 / 統率 槍C・弓B・馬C・器E(4隅アイコンを個別にズームして確認) / 初期値 攻撃490・防御450・兵法390.0 / 指揮兵数0/1780 / カードNo.5203一致 / 初期スキル「弓隊進撃 LV10」[F] 確率+10%・対象 弓・弓攻15%上昇 / Illust 末冨正直。",
+  "成長値(攻+18/防+17/兵法+2)・furigana・スキル数値はixanary.com/cards/5203の生HTML(埋め込みJSON)と完全一致。",
+  "ixawikiの当該武将ページは未作成(編集画面が返る)のため名前の（N）判定材料なし。ixanaryの同名武将欄も「0武将」のため無印とした。",
+  "章はixanary/ixawikiとも記載が無く未確認のためnull。初期スキルはFランクのためdata/skill/ページの新規作成対象外。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2021-01-15",
+ "wikiCommentCount": 3,
+ "chGuess": "20章",
+ "chSource": "wikiOldestComment"
+}

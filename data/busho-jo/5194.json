@@ -1,0 +1,48 @@
+{
+ "name": "室賀正武",
+ "no": "5194",
+ "ch": "19章",
+ "cost": 1.5,
+ "troop": "弓防",
+ "sub": "",
+ "effect": "弓防12%上昇",
+ "furigana": "むろがまさたけ",
+ "illustrator": "セツ",
+ "imageFull": "assets/img/characters/no5194_full.png",
+ "imageChar": "assets/img/characters/no5194_char.png",
+ "atkBase": 470,
+ "atkGrowth": 17,
+ "defBase": 480,
+ "defGrowth": 18,
+ "tacticsBase": 420.0,
+ "tacticsGrowth": 1.5,
+ "lv0Troops": 1360,
+ "rankGrades": {
+  "yari": "C",
+  "yumi": "B",
+  "uma": "E",
+  "ki": "D"
+ },
+ "initialSkill": "弓隊堅陣",
+ "skillDetail": "F/LV10 確率 30% 弓防 12%上昇/対象:弓\n①弓防 12%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓　確率 30% / 弓防 12%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当G)。カード画像(スキルLV10形式)から。武将名「室賀正武」/ コスト1.5 / 統率 槍C・弓B・馬E・器D(4隅アイコンを個別にズームして確認) / 初期値 攻撃470・防御480・兵法420.0 / 指揮兵数0/1360 / カードNo.5194一致 / 初期スキル「弓隊堅陣 LV10」[F] 確率+30%・対象 弓・弓防12%上昇 / Illust セツ。",
+  "成長値(攻+17/防+18/兵法+1.5)・furigana・統率・illustratorはixanary.com/cards/5194の生HTML(cardNo:5194のprops)と完全一致。",
+  "【要確認】スキル効果の文言表記がカード画像とixanaryで食い違う。カード画像のLV10本文は「弓防：12%上昇」だが、ixanary.com/cards/5194の生HTML(skill-box-body)は「防御：12%上昇」(数値12%は一致・語句のみ相違)。同じ弓隊堅陣スキルのNo.5192木幡高清でも同じ食い違いを確認済み。カード画像を拡大確認し「弓防」と明確に読めたため本登録ではカード側を採用した。監査時に再確認してほしい。",
+  "初期スキルはFランクのためdata/skill/ページの新規作成対象外。synthesisTableは今回未登録(序レアリティのため付けない指示)。",
+  "章は情報源に記載が無く未確認のためnull。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2020-04-08",
+ "wikiCommentCount": 17,
+ "chGuess": "19章",
+ "chSource": "wikiOldestComment"
+}

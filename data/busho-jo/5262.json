@@ -1,0 +1,43 @@
+{
+ "name": "宮田光次",
+ "no": "5262",
+ "ch": null,
+ "cost": 1.5,
+ "troop": "馬防",
+ "sub": "",
+ "effect": "馬防10%上昇",
+ "furigana": "みやたみつつぐ",
+ "illustrator": "虎杖 鷲",
+ "imageFull": "assets/img/characters/no5262_full.png",
+ "imageChar": "assets/img/characters/no5262_char.png",
+ "atkBase": 430,
+ "atkGrowth": 14,
+ "defBase": 550,
+ "defGrowth": 19,
+ "tacticsBase": 420.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 1320,
+ "rankGrades": {
+  "yari": "D",
+  "yumi": "D",
+  "uma": "C",
+  "ki": "D"
+ },
+ "initialSkill": "騎馬隊堅守",
+ "skillDetail": "F/LV10 確率 20% 馬防 10%上昇/対象:馬\n①馬防 10%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "馬　確率 20% / 馬防 10%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当O)。カード画像(スキルLV10形式)から。武将名「宮田光次」/ 序 / コスト1.5 / 統率 槍D・弓D・馬C・器D(4隅バッジをズームして確認) / 初期値 攻撃430・防御550・兵法420.0 / 指揮兵数0/1320 / カードNo.5262一致 / 初期スキル「騎馬隊堅守 LV10」[F] 確率+20%・対象 馬・馬防10%上昇 / Illust 虎杖 鷲。",
+  "成長値(攻+14/防+19/兵法+2)・furigana・スキル文言はixanary.com/cards/5262の生HTMLと一致。ixawiki.comのBushoCard個別ページは未作成(編集フォームのみ表示)だが、Busho/武将カード一覧(序)ページには掲載あり(N)等の表記無し・無印。章はixawiki一覧でも「?」表記で不明のためnull。",
+  "初期スキルはFランクのためdata/skill/ページの新規作成対象外。synthesisTableは今回のバッチでは付けない指示のため未作成。"
+ ],
+ "wikiOldestComment": null,
+ "wikiCommentCount": null
+}
