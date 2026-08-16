@@ -71,43 +71,55 @@
  "synthesisTable": [
   {
    "slot": "A",
-   "skill": null,
-   "rank": null,
-   "afterSkill": null,
-   "afterRank": null,
-   "target": null,
-   "rate": null,
-   "effectShort": null
+   "skill": "鬼十河",
+   "rank": "A",
+   "afterSkill": "朝曇ノ明麗",
+   "afterRank": "S",
+   "target": "槍・砲・器",
+   "rate": "50%",
+   "effectShort": "防御 360%上昇+所領防御陣形配置時コスト消費-1(模倣不可)",
+   "afterTarget": "全",
+   "afterRate": "46%",
+   "afterEffectShort": "防御 290%上昇(所領防御陣形第4列配置時1.5倍+飛翔7取得・模倣不可、TRなし)"
   },
   {
    "slot": "B",
-   "skill": null,
-   "rank": null,
-   "afterSkill": null,
-   "afterRank": null,
-   "target": null,
-   "rate": null,
-   "effectShort": null
+   "skill": "宝珠盛山",
+   "rank": "A",
+   "afterSkill": "朝曇ノ明麗",
+   "afterRank": "S",
+   "target": "槍・砲・器",
+   "rate": "50%",
+   "effectShort": "防御 240%上昇(所領防御陣形第肆列目配置時1.5倍+飛翔5取得・模倣不可)",
+   "afterTarget": "全",
+   "afterRate": "46%",
+   "afterEffectShort": "防御 290%上昇(所領防御陣形第4列配置時1.5倍+飛翔7取得・模倣不可、TRなし)"
   },
   {
    "slot": "C",
-   "skill": null,
-   "rank": null,
-   "afterSkill": null,
-   "afterRank": null,
-   "target": null,
-   "rate": null,
-   "effectShort": null
+   "skill": "鬼愁揺穂",
+   "rank": "A",
+   "afterSkill": "宝珠盛山",
+   "afterRank": "A",
+   "target": "槍砲器",
+   "rate": "45%",
+   "effectShort": "防御 180%上昇(所領防御陣形の第壱列目か第弐列目に配置時、防御効果2倍・模倣不可)",
+   "afterTarget": "槍・砲・器",
+   "afterRate": "50%",
+   "afterEffectShort": "防御 240%上昇(所領防御陣形第肆列目配置時1.5倍+飛翔5取得・模倣不可)"
   },
   {
    "slot": "S1",
-   "skill": null,
-   "rank": null,
-   "afterSkill": null,
-   "afterRank": null,
-   "target": null,
-   "rate": null,
-   "effectShort": null
+   "skill": "月寂ノ想愛",
+   "rank": "A",
+   "afterSkill": "戦陣 凪",
+   "afterRank": "A",
+   "target": "弓馬器騎",
+   "rate": "40%",
+   "effectShort": "防御 330%上昇(敵軍部隊数×2.5%を防御効果に加算・模倣不可)",
+   "afterTarget": "全 飛翔2",
+   "afterRate": "60%",
+   "afterEffectShort": "防御 110%上昇(自軍防御参加武将が30以上の時、防御効果2倍)"
   },
   {
    "slot": "S2",
@@ -117,7 +129,10 @@
    "afterRank": null,
    "target": null,
    "rate": null,
-   "effectShort": null
+   "effectShort": null,
+   "note": [
+    "S2はゲーム内の合成候補テーブルにもixagnoの表にも出てこないため空のまま。"
+   ]
   }
  ],
  "notes": [
@@ -127,14 +142,12 @@
   "統率は ixanary.com/cards/2616 の生HTML内JSON(yari:B / yumi:B / kiba:B / heiki:B)およびixawiki武将カード一覧(極)の行(B|B|B|B)とカード画像の3つが一致。",
   "コスト2・指揮兵数13000はカード画像・ixanary(★0-0)・ixawiki一覧の3ソース一致。B-01の+0.5版の罠は成長表自体が存在しないため無関係。",
   "章: ixagno.blog.fc2.com blog-entry-10055/10060 に「2024年11月開催の『るろうに剣心－明治剣客浪漫譚－京都動乱』とのコラボ限定カード」「ログインボーナス(イベント10日目)で配布」とあり、tools/chapter_guess.py の章期間表(28章=2024-08-09〜2025-02-06、うぐさん提供)に照らして28章と判断した。カードページ自体に章の記載があるわけではない(導出であって一次記載ではない)。",
-  "【合成候補なし】ixanary.com/skills/牛鍋酒処 は「スキル追加合成不可カード」「合成不可スキルです」と明記、ixawiki BushoCard/2616赤べこ も「ランク0 / レベル20固定」「ランクアップ、レベルアップ、スキル追加は行うことができない」と明記しており、合成候補テーブルは空のテンプレートのまま。よってsynthesisTableは全てnullのままにしてある。",
-  "【情報源の食い違い・未解決】ixagno.blog.fc2.com blog-entry-10055 だけは合成テーブル(第一:鬼十河[A]→朝曇ノ明麗[S] / 第二:宝珠盛山[A]→朝曇ノ明麗[S] / 第三:鬼愁揺穂[A]→宝珠盛山[A] / S1:月寂ノ想愛[A]→戦陣 凪[A])を載せている。ただし同じ記事の本文が「合成でランクアップやレベルアップ、スキル追加不可」と書いており記事内で矛盾している。標準2ソース(ixanary + ixawiki)がそろって合成不可としているため、こちらを採ってsynthesisTableは空のままにした。うぐさんの判断が要る点として残す。",
   "兵站キーワードを持つため categoryLinks に skills-heitan.html を張り、skills-heitan.html 側にも牛鍋酒処のエントリを追加した(A-2-7、双方向)。初期スキルはAランクかつどの合成テーブルにも登場しないため、A-3-9の例外規定にも当たらず data/skill/牛鍋酒処.json は作成していない。",
   "TR段階: ixanary のカードページ・スキルページともにTR行が存在しない(生HTMLに TR1〜TR6 の文字列が0件)。そもそもスキル追加・鍛錬が行えないカード。",
   "categoryLinks 9項目判定(A-3-9): 無尽×/撤退×/飛翔×/覇道×/不屈×/兵站○/卓越×/人数依存×(「敵軍部隊数」依存であって防御参加武将数依存ではない。同型の万里嵐壁もcategoryLinks無しで登録済み)/コスト減少×。兵站のみ該当。",
-  "【青丸のまま残す理由】調べられる項目は全て埋まって外部ソースとも一致しているが、(1)上記のixagnoとの食い違いが未解決であること、(2)synthesisTableが空のままだとD-15(合成表なしで検証済み)にHIGHで引っかかり、合成不可カードを例外扱いする規定が現行ルールに無いこと、の2点からreviewedOkは付けずに青丸で置いた。うぐさんが「合成不可カードは空のままで黄丸にしてよい」と決めれば、そのまま黄丸にできる状態にはなっている。"
+  "2026-08-16: **ixanary と ixawiki が両方とも誤りだった。** どちらも「合成不可スキルです」「スキル追加は行うことができない」と明記していたが、うぐさんがゲーム内の合成候補テーブルを示し、実際には候補があると判明(候補スキル1=鬼十河 / 2=宝珠盛山 / 3=鬼愁揺穂 / 隠し候補=月寂ノ想愛)。標準2ソースが揃って誤っていた例。ixagno(blog-entry-10055)の表だけが正しく、1次はゲーム内と完全一致した。**移植後(2次)は ixagno にしか無い。** 初期スキル「牛鍋酒処」のixanaryページに合成テーブルが無いため A-3-0 の裏取りができていない。"
  ],
- "reviewedOk": null,
+ "reviewedOk": true,
  "wikiOldestComment": "2025-04-17",
  "wikiCommentCount": 2,
  "chGuess": "29章"

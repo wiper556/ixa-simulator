@@ -755,8 +755,15 @@ def main():
 
     # D-15: synthesisTable が埋まっていないのに黄丸/赤丸になっている。
     # 青丸(登録しただけ)は未完成でよいので対象外([[project_registration_manualization]])。
+    # **合成不可カードの例外(noSynthesis)を用意してある**が、いまのところ
+    # 使っている武将は無い。唯一の候補だった赤べこ(No.2616)は、ixanary と
+    # ixawiki が両方「合成不可」と書いていただけで、**実際には合成候補が
+    # あった**(2026-08-16、うぐさんがゲーム内の画面で確認)。
+    # 「情報源が合成不可と書いている」を根拠に立てないこと。
     for g, src in targets:
         if status(g) not in ("黄丸", "赤丸"):
+            continue
+        if g.get("noSynthesis"):
             continue
         st = g.get("synthesisTable") or []
         if not st or all(not r.get("skill") for r in st):
