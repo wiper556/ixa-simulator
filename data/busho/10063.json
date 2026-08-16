@@ -3,6 +3,8 @@
  "no": "10063",
  "furigana": "なんこうぼうてんかい",
  "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no10063_full.png",
+ "imageChar": "assets/img/characters/no10063_char.png",
  "atkBase": 1070,
  "atkGrowth": 44,
  "defBase": 1250,
@@ -20,7 +22,7 @@
  "skillDetail": "S/LV10 確率 38% 防御 760%上昇/対象:全\n①防御 760%上昇する\n②配置中の陣形内の他武将のうちこの武将と同兵種を指揮している武将数×80%を防御効果に加算する(防御効果の加算は本丸防御陣形または所領防御陣形に配置時のみ有効)",
  "ch": "30章",
  "cost": 5,
- "troop": "全攻",
+ "troop": "全防",
  "sub": "",
  "effect": "配置中陣形内の同兵種武将数依存で防御上昇",
  "trTable": [
@@ -118,12 +120,19 @@
   }
  ],
  "notes": [
-  "2026-08-16黄丸化検証(未完了・青丸のまま残す): assets/img/characters/no10063_full.png/no10063_char.pngが存在せず(imageFull/imageChar自体が未設定)、マニュアルA-1-2が要求するカード画像バッジの直接照合ができない状態だった。",
-  "illustrator欄が「SQUARE ENIX」という誤った値になっていたため、ixanary.com/cards/10063/(curl生HTML)で確認した「直良有祐」に修正した。",
+  "illustrator欄が「SQUARE ENIX」という誤った値になっていたため、ixanary.com/cards/10063/(curl生HTML)で確認した「直良有祐」に修正した(カード画像右下の Illust:直良有祐 とも一致)。",
   "effect欄が「8部隊以下の攻撃戦闘時、卓越確率上昇」になっていたが、これは10065(世良田二郎三郎)の護国王器の説明文であり本カードのskillDetail(配置中陣形内の同兵種武将数依存で防御上昇)と無関係だったため、コピペ跡と判断し「配置中陣形内の同兵種武将数依存で防御上昇」に修正した。",
-  "rankGradesはixanary.com/cards/10063/のcard JSON(槍A/弓A/馬A/器SS)とixawiki.com(index.php?BushoCard/10063南光坊天海)の統率力表(槍A/馬A/弓A/器SS)が完全一致し、既存データとも一致したため変更なし。ただし実カード画像での確認ではないため確信度は「未確認扱い」に留める。",
-  "skillDetail/data/skill/虚実法容.jsonのeffectSummaryがixanaryの生テキストそのままの書式だったため、サイト標準の「ヘッダー1行+①②改行+読点なし」書式に整形した。ステータス(コスト5/指揮5110/成長値攻44防71兵法4.0)は一致確認。trTableは既にTR1〜TR6全段(TR6はixanary生HTMLで実在確認済み)。",
-  "synthesisTableはixanary.com/skills/虚実法容/の生HTML合成テーブルでA〜S2全5枠(全て自己参照)が既存登録と完全一致。B枠のrateがnullだったため、data/skill/仙境解脱.jsonのbaseRate(48)を確認し48%を補完した。sourceCharacters逆引き(A-3-11): 摩利支天ノ法/仙境解脱/梵天浄界/虚実兵妙/虚実法容(自身)の各data/skill/*.jsonに10063が反映済みを確認。",
-  "上記のとおりデータ自体は2ソース(ixanary+ixawiki)で確認できたが、A-1-2が要求するローカルカード画像が無いという構造的な不備が残るため、reviewedOk:trueにはせず青丸のまま報告する。画像の取得・切り抜きを別途行った上で再検証することを推奨する。"
- ]
+  "skillDetail/data/skill/虚実法容.jsonのeffectSummaryがixanaryの生テキストそのままの書式だったため、サイト標準の「ヘッダー1行+①②改行+読点なし」書式に整形した。",
+  "2026-08-16 黄丸化検証(B-00: スキル表記LV1のカード)。imageFull/imageCharを設定した。カード画像(no10063_full.png)から直接読み取ったのはB-00が許す6項目のみ — 武将名「南光坊天海」/統率4隅バッジ 槍A・馬A・弓A・器SS(ズームして4隅個別に確認、既存rankGradesと一致)/スキル名「虚実法容」/初期値 攻1070・防1250・兵法710.0/覇道の赤字表記なし/カードNo.10063。",
+  "【troop修正】troopが「全攻」だったが、カード上のスキル虚実法容はLV1表記で「防御:250%上昇」、ixanary・ixawiki・ixagnoいずれも「防：虚実法容」と防御スキルに分類しているため「全防」に修正した。この欄はtools/build_data.pyがassets/js/ixa-data.jsのgeneralSkillAxisへ書き出し、攻撃/防御シミュレーターの出し分けに使われるため、「全攻」のままだと防御武将が攻撃シミュレーターに出ていた。",
+  "【LV1カードのため画像から取れない項目の外部確認】成長値 攻+44/防+71/兵法+4.0 = ixanary.com/cards/10063/ と ixagno.blog.fc2.com/blog-entry-10645.html の2ソース一致。lv0Troops 5110 = ixanaryの指揮★0-0(5110) と ixawiki.com(BushoCard/10063南光坊天海)の「指揮兵数 5110」の2ソース一致。カード表面の「指揮兵数 0/5710」は限界突破後の値なのでlv0には使わない(B-01)。cost 5 = ixanary+ixawiki。ch 30章 = ixagno「【30章】(2025年10月追加)」。",
+  "【スキル効果量】カードはLV1(確率+12%/防御250%上昇/同兵種武将数×26%)。LV10の 確率38%/防御760%上昇/×80% は ixanary(skills/虚実法容 と cards/10063 の両方)・ixawiki カードページ・ixagno の3ソースで一致。TR1〜TR5(×82/85/88/92/98%、確率38/40/45/50/60%)も3ソース一致。",
+  "【情報源が割れた点=解決済み】TR6の発動確率が ixanary=+70%、ixawiki=+60%、ixagno=+60% と割れた(加算係数×103%は3ソース一致)。ixagno掲載のパラレル版カードNo.40063の実カード画像に「虚実法容TR6 確率:+70%」と写っているのを確認したため+70%で確定し、既存値を維持した。ixawiki・ixagnoのTR6行はいずれも確率だけTR5の値のまま残った誤記と判断。",
+  "【synthesisTable】ixanary.com/skills/虚実法容/の生HTML(1次/2次)、ixawiki.comのスキル追加合成テーブル(1次候補)、ixagno blog-entry-10645(初期テーブル/左記スキル移植後)の3ソースで A=摩利支天ノ法[SSS] / B=仙境解脱[SS] / C=梵天浄界[SSS] / S1=虚実法容[S] / S2=虚実兵妙[SS](全枠1次=2次の自己参照)が既存登録と完全一致。",
+  "【sourceCharacters逆引き(A-3-11)】摩利支天ノ法(slot A)/仙境解脱(B)/梵天浄界(C)/虚実兵妙(S2)/虚実法容(S1、自身)の各data/skill/*.jsonに10063が入っていることを確認。一覧ページ側も skills-leadermimic.html(摩利支天ノ法)・skills-count-def.html(梵天浄界)・skills-takuetsu.html(虚実兵妙)に10063の行があることを確認済み。",
+  "【categoryLinks 9項目判定】無尽/撤退/飛翔/覇道/不屈/兵站/卓越/人数依存/コスト減少をそれぞれ判定し該当なし。②の「配置中の陣形内で同兵種を指揮している武将数×80%」は skills-count-def.html が扱う「係数×防御参加武将数(280人)」とは別種のカウントで、既存の同種スキル(獄香ノ爆宴・極衝爆砕・神将火剣・北天ノ奔馬)も全てcategoryLinks無しのため揃えた。覇道はカード上に赤字「覇道」表記が無く保護効果も持たないため非該当。",
+  "【武将名】ixawiki.comの武将カード一覧(Busho/武将カード一覧)は天セクションがNo.10040までで10063が未掲載のため連番は振られていない。よって無印「南光坊天海」のまま維持した(2710=無印/2920=(2)/2808=(3)は極カード側に振られた連番で、10063は天カードのため別系統)。",
+  "【模倣可否】カード本文・ixanary・ixawikiいずれにも「模倣不可」の記載が無く、ixagnoの【模倣可能な高火力スキル(防)】ランキングにも掲載されているため模倣可能。skillDetailに模倣不可行は入れない。"
+ ],
+ "reviewedOk": true
 }
