@@ -57,3 +57,4 @@
 2026-08-16	-6	hooks:tools/audit_characters.py,hooks:tools/build_data.py,hooks:tools/extract_data.py,hooks:tools/gen_detail_pages.py,hooks:tools/lock.py,hooks:tools/prerender.py	特武将データベース(characters-toku.html / data/busho-toku)を新設し9箇所に配線。武将はまだ入れない器のみ。検査を緩める変更ではない
 2026-08-16	-1	hooks:tools/audit_characters.py	監査D-15に noSynthesis の例外を追加。赤べこ(2616)のように合成不可のカードは合成表が空なのが正しい姿で埋めようがない(うぐさん判断)
 2026-08-16	-1	hooks:tools/audit_characters.py	監査D-15のnoSynthesis例外のコメントを、赤べこの実例に合わせて訂正。ixanary/ixawikiが「合成不可」と書いていても実際には候補があった例があるので、情報源の記述だけを根拠に立てない旨を明記
+2026-08-16	-6	hooks:tools/audit_characters.py,hooks:tools/build_data.py,hooks:tools/extract_data.py,hooks:tools/gen_detail_pages.py,hooks:tools/lock.py,hooks:tools/prerender.py	上武将(characters-ue.html / data/busho-ue)と序武将(characters-jo.html / data/busho-jo)のデータベースを新設し、11箇所に配線した。あわせて章と攻防の集計が data/busho* を全部見ていなかったのを直した(パラレル30枚に章が付いていなかった)。検査を緩める変更ではなく対象を増やす変更

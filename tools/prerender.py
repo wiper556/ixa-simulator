@@ -63,6 +63,18 @@ TARGETS = {
         "list_js": "() => { tkRenderList(tkSortByChapterThenNo(tokuGenerals.slice())); "
                    "return document.getElementById('tkList').innerHTML; }",
     },
+    # 上(じょう)と序(じょ)はローマ字が jou/jo でほぼ同じになるので、
+    # 接頭辞は上=ue(訓読み)、序=jo にして見分けが付くようにしている。
+    "characters-ue.html": {
+        "container": "ueList",
+        "list_js": "() => { ueRenderList(ueSortByChapterThenNo(ueGenerals.slice())); "
+                   "return document.getElementById('ueList').innerHTML; }",
+    },
+    "characters-jo.html": {
+        "container": "joList",
+        "list_js": "() => { joRenderList(joSortByChapterThenNo(joGenerals.slice())); "
+                   "return document.getElementById('joList').innerHTML; }",
+    },
 }
 
 # スキル一覧系は「ページを開くとJSがtbodyを埋める」だけの単純な構造なので、

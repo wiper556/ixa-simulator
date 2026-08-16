@@ -17,15 +17,16 @@ wiki のコメントが1〜4件しかない。**2025年8月以降は wiki の更
 止まっており、この帯は当てにならない。**
 """
 import collections
+import glob
 import io
 import json
 import os
 import sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-DIRS = ("data/busho", "data/busho-kyoku", "data/busho-kyoku-ps",
-        "data/busho-ketsu", "data/busho-parallel", "data/busho-toku-s",
-        "data/busho-toku")
+# 書き並べない。DBを足したときの書き忘れが繰り返し出ているので data/busho* を全部見る
+DIRS = tuple(sorted(d for d in glob.glob(os.path.join(ROOT, "data", "busho*"))
+                    if os.path.isdir(d)))
 NOTE = ("2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの"
         "日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値では"
         "ない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら"
@@ -35,8 +36,7 @@ NOTE = ("2026-08-16: 章は ixawiki の該当カードページの一番古い�
 def main(write=False):
     sys.stdout.reconfigure(encoding="utf-8")
     n = collections.Counter()
-    for d in DIRS:
-        p = os.path.join(ROOT, d)
+    for p in DIRS:
         if not os.path.isdir(p):
             continue
         for fn in sorted(os.listdir(p)):

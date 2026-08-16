@@ -37,8 +37,12 @@ TODAY = datetime.date.today().isoformat()
 DB_OF_DIR = collections.OrderedDict([
     ("busho-kyoku", "kyoku"), ("busho-kyoku-ps", "kyoku"),
     ("busho-parallel", None), ("busho-toku-s", "toku"),
-    ("busho-parallel", None), ("busho-toku-s", "toku"),
-    ("busho-toku", "tokuall"),
+    # **db は audit_characters.db_want と同じ値でなければ S-07 が鳴る。**
+    # db_want が "toku" を返すのは特シークレットだけなので、特・上・序は
+    # db 無し(characters.html#No → busho/{No}.html へ転送)にしておく。
+    # ここに一度 "tokuall" と書いてしまっていた(誰も登録していないので
+    # 表には出ていなかったが、特武将を1体入れた時点で鳴るところだった)。
+    ("busho-toku", None), ("busho-ue", None), ("busho-jo", None),
     ("busho-ketsu", "ketsu"), ("busho", None)])
 
 
@@ -160,6 +164,8 @@ LINKED_OF_DIR = {
     "busho-parallel": ("characters-parallel.html", "TP_LINKED_SKILLS"),
     "busho-toku-s": ("characters-toku-s.html", "TS_LINKED_SKILLS"),
     "busho-toku": ("characters-toku.html", "TK_LINKED_SKILLS"),
+    "busho-ue": ("characters-ue.html", "UE_LINKED_SKILLS"),
+    "busho-jo": ("characters-jo.html", "JO_LINKED_SKILLS"),
     "busho-kyoku": ("characters-kyoku.html", "KK_LINKED_SKILLS"),
     "busho": ("characters.html", "LINKED_SKILLS"),
 }
@@ -191,7 +197,10 @@ for (page, var), names in sorted(want.items()):
     body = m.group(2).rstrip()
     add = [n for n in dict.fromkeys(names) if n and ("'%s'" % n) not in body]
     if add:
-        body += "".join(", '%s'" % n for n in add)
+        # 空配列(新設ページ)のときに ", 'x'" を足すと [, 'x'] になって
+        # JSが壊れる。最初の1件だけ区切りを付けない。
+        sep = ", " if body.strip() else ""
+        body += sep + ", ".join("'%s'" % n for n in add)
         io.open(p, "w", encoding="utf-8", newline="").write(
             t[:m.start()] + m.group(1) + body + m.group(3) + t[m.end():])
     print("S-04 %-20s へ %d件 追加: %s" % (var, len(add), " ".join(add)))

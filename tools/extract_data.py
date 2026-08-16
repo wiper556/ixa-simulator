@@ -51,6 +51,8 @@ TARGETS = [
     ("characters-parallel.html", "parallelGenerals", "data/busho-parallel", "no"),
     ("characters-toku-s.html", "tokuSecretGenerals", "data/busho-toku-s", "no"),
     ("characters-toku.html", "tokuGenerals", "data/busho-toku", "no"),
+    ("characters-ue.html", "ueGenerals", "data/busho-ue", "no"),
+    ("characters-jo.html", "joGenerals", "data/busho-jo", "no"),
     ("characters-ketsu.html", "ketsuGenerals", "data/busho-ketsu", "no"),
     ("skills.html", "skills", "data/skill", "name"),
 ]

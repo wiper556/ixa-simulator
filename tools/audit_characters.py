@@ -199,6 +199,8 @@ def load():
                         ("characters-parallel.html", "parallelGenerals"),
                         ("characters-toku-s.html", "tokuSecretGenerals"),
                         ("characters-toku.html", "tokuGenerals"),
+                        ("characters-ue.html", "ueGenerals"),
+                        ("characters-jo.html", "joGenerals"),
                         # 傑は少数だが sourceCharacters の db 判定(S-07)に要る
                         ("characters-ketsu.html", "ketsuGenerals"),
                         ("skills.html", "skills")):
@@ -211,9 +213,8 @@ def load():
     d["kyokuAll"] = d["kyokuGenerals"] + d["kyokuPsGenerals"]
     # 2026-08-16: 天パラレルと特シークレットを足したとき、ここに入れ忘れると
     # 逆引き検査(chars)と重複検査(all_g)の対象から静かに外れる(担当P1の指摘)。
-    d["extraAll"] = d["parallelGenerals"] + d["tokuSecretGenerals"]
     d["extraAll"] = (d["parallelGenerals"] + d["tokuSecretGenerals"]
-                     + d["tokuGenerals"])
+                     + d["tokuGenerals"] + d["ueGenerals"] + d["joGenerals"])
     # LINKED_SKILLS はページが手で持っている配列(生成物ではない)ので、そのまま読む
     d["LINKED_SKILLS"] = extract_array(p("characters.html"), "LINKED_SKILLS")
     d["KK_LINKED_SKILLS"] = extract_array(p("characters-kyoku.html"), "KK_LINKED_SKILLS")
@@ -324,7 +325,7 @@ def main():
     skills = {s["name"]: s for s in D["skills"]}
     chars = ([(g, "天覇") for g in D["generals"]]
              + [(g, "極") for g in D["kyokuAll"]]
-             + [(g, "天パラレル/特") for g in D["extraAll"]])
+             + [(g, "天パラレル/特/上/序") for g in D["extraAll"]])
     targets = [(g, s) for g, s in chars if status(g) != "無印"]
     R = []
     # M-1(2026-08-13 第4回レッドチーム): ここは1行のラムダで、

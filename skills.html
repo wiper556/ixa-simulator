@@ -4097,28 +4097,38 @@
     });
   }
 
+  /* 武将データベース各ページ → どの束に入れるか。
+     束の名前がそのままリンク先を決める(generals→characters.html /
+     kyokuGenerals→characters-kyoku.html / ketsuGenerals→characters-ketsu.html)。
+     どれも #No で busho/{No}.html へ転送されるので、極を1つにまとめても、
+     パラレル・特・上・序を generals に入れても行き先は変わらない。
+
+     **番号で受け取らないこと。** ここは results[3] のような添字で受けていて、
+     DBを足すたびに1つずつずれた。天パラレルと特シークレットを足したときに
+     傑が落ち(担当T1の指摘)、その直しの後で特武将を足したときにまた傑が
+     落ちていた(2度同じ壊れ方をした)。表に書いて添字を書かない形にする。 */
+  const SKL_CHAR_SOURCES = [
+    ['characters.html',          'generals',           'generals'],
+    ['characters-kyoku.html',    'kyokuGenerals',      'kyokuGenerals'],
+    ['characters-kyoku-ps.html', 'kyokuPsGenerals',    'kyokuGenerals'],
+    ['characters-parallel.html', 'parallelGenerals',   'generals'],
+    ['characters-toku-s.html',   'tokuSecretGenerals', 'generals'],
+    ['characters-toku.html',     'tokuGenerals',       'generals'],
+    ['characters-ue.html',       'ueGenerals',         'generals'],
+    ['characters-jo.html',       'joGenerals',         'generals'],
+    ['characters-ketsu.html',    'ketsuGenerals',      'ketsuGenerals']
+  ];
+
   function sklGetCharacterSources(){
     if(sklCharSourceCache) return sklCharSourceCache;
-    sklCharSourceCache = Promise.all([
-      sklFetchArrayFromHtml('characters.html', 'generals').catch(function(){ return []; }),
-      sklFetchArrayFromHtml('characters-kyoku.html', 'kyokuGenerals').catch(function(){ return []; }),
-      sklFetchArrayFromHtml('characters-kyoku-ps.html', 'kyokuPsGenerals').catch(function(){ return []; }),
-      sklFetchArrayFromHtml('characters-parallel.html', 'parallelGenerals').catch(function(){ return []; }),
-      sklFetchArrayFromHtml('characters-toku-s.html', 'tokuSecretGenerals').catch(function(){ return []; }),
-      sklFetchArrayFromHtml('characters-toku.html', 'tokuGenerals').catch(function(){ return []; }),
-      sklFetchArrayFromHtml('characters-ketsu.html', 'ketsuGenerals').catch(function(){ return []; })
-    ]).then(function(results){
-      // 極は通常極とプラチナ/シークレット極でページが分かれているが、リンクは
-      // どちらも #No で busho/{No}.html へ転送されるので db は 'kyoku' でまとめる。
-      //
-      // 2026-08-16: 天パラレルと特シークレットの2ページを足したとき、上の
-      // fetch には並べたのに**ここの受け取りを直し忘れて**いた。results[3] が
-      // ketsuGenerals(実際はパラレル)になり、results[4]/[5] は捨てられていた。
-      // 特シークレットの武将がスキル詳細の「初期スキル保有武将」に出ない、
-      // という形で出る(担当T1の指摘)。配列を足したらここも必ず伸ばすこと。
-      return {generals: results[0].concat(results[3]).concat(results[4]),
-              kyokuGenerals: results[1].concat(results[2]),
-              ketsuGenerals: results[5]};
+    sklCharSourceCache = Promise.all(SKL_CHAR_SOURCES.map(function(src){
+      return sklFetchArrayFromHtml(src[0], src[1]).catch(function(){ return []; });
+    })).then(function(results){
+      const out = {generals: [], kyokuGenerals: [], ketsuGenerals: []};
+      SKL_CHAR_SOURCES.forEach(function(src, i){
+        out[src[2]] = out[src[2]].concat(results[i] || []);
+      });
+      return out;
     });
     return sklCharSourceCache;
   }

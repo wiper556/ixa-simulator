@@ -202,6 +202,25 @@ body{
 .tool-card.rank-toku-s p{color:#d7e9b4;}
 .tool-card.rank-toku-s:hover{box-shadow:0 6px 16px rgba(95,143,42,0.40);}
 
+/* 上は黄色(うぐさん指定)。傑の金と並ぶので、金は沈んだ山吹、上は
+   明るい黄にして見分けが付くようにしてある。地が明るいぶん文字は濃く。 */
+.tool-card.rank-ue{
+  background:linear-gradient(135deg, #f7d94c, #e8bf16);
+  border:1px solid #b8930a;
+}
+.tool-card.rank-ue h3{color:#4a3a02;}
+.tool-card.rank-ue p{color:#5c4906;}
+.tool-card.rank-ue:hover{box-shadow:0 6px 16px rgba(232,191,22,0.45);}
+
+/* 序は青(うぐさん指定) */
+.tool-card.rank-jo{
+  background:linear-gradient(135deg, #2f5fa8, #1d3c6e);
+  border:1px solid #7ea8e0;
+}
+.tool-card.rank-jo h3{color:#e2edff;}
+.tool-card.rank-jo p{color:#bfd4f0;}
+.tool-card.rank-jo:hover{box-shadow:0 6px 16px rgba(47,95,168,0.45);}
+
 .page-title{font-family:'Noto Serif JP', serif;font-weight:900;font-size:26px;margin:0 0 8px;}
 .page-lead{color:var(--muted);font-size:13.5px;line-height:1.7;margin:0 0 8px;}
 

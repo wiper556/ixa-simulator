@@ -14,6 +14,7 @@
 """
 import collections
 import datetime
+import glob
 import io
 import json
 import os
@@ -22,9 +23,10 @@ import sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # 2026-08-16: 新しく足したDBを入れ忘れていて、特シークレット13枚の chGuess が
-# 空のままだった(コメントは78〜516件と大量にあるのに)。DBを足したらここも増やす。
-DIRS = ("data/busho", "data/busho-kyoku", "data/busho-kyoku-ps", "data/busho-ketsu",
-        "data/busho-parallel", "data/busho-toku-s", "data/busho-toku")
+# 空のままだった(コメントは78〜516件と大量にあるのに)。同じ書き忘れを
+# 繰り返さないよう、書き並べるのをやめて data/busho* を全部見る。
+DIRS = tuple(sorted(d for d in glob.glob(os.path.join(ROOT, "data", "busho*"))
+                    if os.path.isdir(d)))
 FIELD = "chGuess"
 # (章, 開始日, 終了日)。うぐさん提供(2026-08-16)。
 #
@@ -88,8 +90,7 @@ def guess(d):
 
 def load():
     out = []
-    for d in DIRS:
-        p = os.path.join(ROOT, d)
+    for p in DIRS:
         if not os.path.isdir(p):
             continue
         for fn in sorted(os.listdir(p)):

@@ -45,6 +45,7 @@ URLエンコードする。UTF-8 で叩くと 200 が返るが本文は
 「サイトが落ちている」と誤読した)。
 """
 import collections
+import glob
 import hashlib
 import io
 import json
@@ -57,7 +58,10 @@ import urllib.request
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CACHE = os.path.join(ROOT, "tools", "wiki_cache")
-DIRS = ("data/busho", "data/busho-kyoku", "data/busho-kyoku-ps", "data/busho-ketsu")
+# 書き並べない。DBを足したときの書き忘れが繰り返し出ているので data/busho* を全部見る。
+# (この一覧は天パラレル・特シークレット・特武将のどれも入っていなかった)
+DIRS = tuple(sorted(d for d in glob.glob(os.path.join(ROOT, "data", "busho*"))
+                    if os.path.isdir(d)))
 LISTS = ["Busho/武将カード一覧(天)", "Busho/武将カード一覧(極)",
          "Busho/武将カード一覧(特)"]
 FIELD = "wikiOldestComment"
@@ -174,8 +178,7 @@ def main(redo=False):
     names = wiki_names()
     print("wiki の名簿: %d枚" % len(names))
     got, miss, skip = 0, [], 0
-    for d in DIRS:
-        full = os.path.join(ROOT, d)
+    for full in DIRS:
         if not os.path.isdir(full):
             continue
         for fn in sorted(os.listdir(full)):
@@ -221,8 +224,7 @@ def roster(redo=False):
         old = json.load(io.open(ROSTER, encoding="utf-8"))
 
     have = set()
-    for d in DIRS:
-        full = os.path.join(ROOT, d)
+    for full in DIRS:
         if os.path.isdir(full):
             have |= {f[:-5] for f in os.listdir(full) if f.endswith(".json")}
 
