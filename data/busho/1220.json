@@ -23,8 +23,8 @@
   "uma": "A",
   "ki": "A"
  },
- "initialSkill": "天棲八咫烏",
- "skillDetail": "S/LV10 確率 32% 攻撃 (敵軍総武将コスト×1)%上昇/対象:槍・弓・器・焙\n①対象兵科(槍・弓・器・焙)を指揮した戦闘時攻撃力が敵軍総武将コスト×1%上昇する(TR1〜TR5は未確認)",
+ "initialSkill": "天棲 八咫烏",
+ "skillDetail": "S/LV10 確率 32% 攻撃 (敵軍総武将コスト×1)%上昇/対象:槍・弓・器・焙\n①対象兵科(槍・弓・器・焙)を指揮した戦闘時攻撃力が敵軍総武将コスト×1%上昇する",
  "trTable": [
   {
    "level": "LV10",
@@ -35,7 +35,7 @@
  "synthesisTable": [
   {
    "slot": "A",
-   "skill": "天棲八咫烏",
+   "skill": "天棲 八咫烏",
    "rank": "S",
    "afterSkill": "十束ノ神域",
    "afterRank": "SS",
@@ -48,7 +48,7 @@
   },
   {
    "slot": "B",
-   "skill": "天棲八咫烏",
+   "skill": "天棲 八咫烏",
    "rank": "S",
    "afterSkill": "十束ノ神域",
    "afterRank": "SS",
@@ -96,6 +96,13 @@
   }
  ],
  "notes": [
-  "45do.info(生HTML skiladd_wrap)+ameameixa.com(スキルテーブル)の2ソース照合済み、両者一致"
- ]
+  "2026-08-16黄丸化検証: rankGrades(槍A/弓SS/馬A/器A)をカード画像バッジ4隅で照合、一致。ステータス初期値・成長値・cost3.5・lv0Troops4200はixanary.com(cards/1220)生HTMLの成長表と一致。",
+  "スキル名訂正: 初期スキルは「天棲八咫烏」ではなく「天棲 八咫烏」(間にスペース)が正しい表記。ixanary.com(cards/1220のリンクhref・skills/天棲 八咫烏生HTML)とixawiki.com(BushoCard/1220のアンカーテキスト)の2ソースで確認し、initialSkill・synthesisTableのskill欄・data/skill側のファイル名/nameを訂正した(旧ファイル名 天棲八咫烏.json から改名、2026-08-16)。TR無しは2ソースで確認、「TR1〜TR5は未確認」の誤記も削除。",
+  "【未解決・要フォロー】characters.htmlのLINKED_SKILLS配列(手動管理)に旧名「天棲八咫烏」(スペース無し)が1箇所残存。data/skill側のファイル名変更に伴いリンクが機能しなくなる可能性がある。編集権限外のため未修正(コーディネーターがwireup.py実行時に対応予定と連絡済み)。",
+  "名前表記: ixawiki.com(Busho/武将カード一覧)で「雑賀孫市(4)」表記を確認、既存の「雑賀孫市（4）」と一致(変更なし)。",
+  "synthesisTable(A/B=天棲 八咫烏[S]→十束ノ神域[SS]、C=加具土ノ神域[SS]自己参照、S1=十束ノ神域[SS]→天聖宝冠[SSS]、S2=天岩戸ノ神域[SS]自己参照)をixanary.com(skills/天棲 八咫烏)生HTMLとixawiki.com(BushoCard/1220雑賀孫市)生HTMLの2ソースで完全一致を確認(2026-08-16)。",
+  "sourceCharacters逆引き確認(A-3-11): 天棲 八咫烏(A・B)・加具土ノ神域(C)・十束ノ神域(S1)・天岩戸ノ神域(S2)いずれもdata/skill/配下に1220が記載済み(2026-08-16)。",
+  "章(24章)は情報源に記載が無く未確認のまま(ixanary/ixawikiともchapter情報を確認できず、既存の24章表記を維持)。"
+ ],
+ "reviewedOk": true
 }

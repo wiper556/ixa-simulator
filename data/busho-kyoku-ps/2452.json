@@ -93,8 +93,8 @@
    "rank": "SS",
    "afterSkill": "天焉相克",
    "afterRank": "SS",
-   "target": null,
-   "rate": null,
+   "target": "全",
+   "rate": "60%",
    "effectShort": "攻撃 99.9%上昇+防御 99.9%上昇+破壊 150%上昇",
    "afterTarget": "槍・弓・馬",
    "afterRate": "70%",
@@ -106,8 +106,8 @@
    "rank": "SS",
    "afterSkill": "荒破閃神",
    "afterRank": "SS",
-   "target": null,
-   "rate": null,
+   "target": "全",
+   "rate": "60%",
    "effectShort": "攻撃 130%上昇+防御 130%上昇+破壊 50%上昇",
    "afterTarget": "全",
    "afterRate": "45%",
@@ -131,6 +131,12 @@
   " + ixawiki BushoCard/2452(統率2次確認・合成テーブル1次/2次候補)。",
   "統率はカード画像+ixawikiの2ソース一致。初期スキルがSランクのためスキル個別ページの新規作成が必要",
   "(docsのTODOに記録済み)。スキルはS(鍛錬情報なし)のためTR1以降のeffectはnull。",
-  "合成テーブルはixawiki(1次候補+2次候補)"
- ]
+  "合成テーブルはixawiki(1次候補+2次候補)",
+  "2026-08-16黄丸化検証: rankGrades(S/A/A/A)はno2452_full.pngの4隅バッジを個別ズームして再確認し一致。基礎値・コスト・指揮兵数・成長値・LV10スキル値(確率60%/攻撃124%)はixanary.com(cards/2452)生HTMLで一致確認。初期スキルSランクのページ(data/skill/牛鬼ノ攻城.json)は既に「移植不可」で正しく登録済み(自身のsynthesisTable内に候補として現れないことを確認済み)であることを確認、旧「未作成」の記述を訂正。",
+  "C枠(天綾の誓約)・S1枠(式神ノ冥王)のtarget/rateが未確定(null)だったため、ixanary生HTML(skills/天綾の誓約・式神ノ冥王)で埋めた(いずれもtarget:全,rate:60%)。式神ノ冥王のixanary生HTMLには「確率：+60&」というサイト側の表示バグ(%が文字化け)があったが、攻撃130%/防御130%/破壊50%上昇の値自体は正常でJSONの既存effectShortと一致することを確認した。",
+  "A枠(銃槍轟攻陣、自己参照)・B枠(無双英傑)・C枠(天綾の誓約)・S1枠(式神ノ冥王)・S2枠(破軍星 皇、自己参照)は全てdata/skill/無双英傑.json・天綾の誓約.json・式神ノ冥王.json・破軍星 皇.jsonのsourceCharactersに飯田覚兵衛(2452)が正しいslotで登録済みであることを確認した(A-3-11)。",
+  "synthesisTableのA/B/C/S1/S2は、ixanary.com(cards/2452の初期スキル牛鬼ノ攻城の合成テーブルおよび各候補スキル個別ページ)に加え、ixawiki.com(index.php?BushoCard/2452飯田覚兵衛)の合成候補テーブル(1次候補/2次候補S1)を生HTMLで確認し、全5行がixanary/ixawiki2ソースで一致することを確認した。",
+  "章はixanary.com/ixawiki.comいずれのカードページにも記載が無く未確認。"
+ ],
+ "reviewedOk": true
 }

@@ -224,6 +224,7 @@ def sync_list_pages():
         fp = os.path.join(ROOT, page)
         text = io.open(fp, encoding="utf-8", newline="").read()
         hits = []
+        touched = False
         for m in re.finditer(r'\{name:"([^"]+)", skillPage:"', text):
             nm = m.group(1)
             if nm not in master:
@@ -236,6 +237,40 @@ def sync_list_pages():
             inner = text[open_at + 1:close_at]
             listed = set(re.findall(r'no:"(\d+)"', inner))
             missing = [c for c in master[nm] if str(c.get("no")) not in listed]
+            # 2026-08-16: ここは**足すだけ**で、既にある行の中身は見ていなかった。
+            # 正本の slot や名前を直しても一覧ページには反映されず、
+            # 「魔導禁鎖が一覧では移植不可のまま」「北条早雲が(2)無しのまま」と
+            # いった食い違いが77件たまっていた。既存の行も正本に合わせる。
+            fixed = inner
+            for c in master[nm]:
+                pat = re.compile(r'\{name:"[^"]*", no:"%s", slot:"[^"]*"([^{}]*)\}'
+                                 % re.escape(str(c.get("no"))))
+                mm = pat.search(fixed)
+                if not mm:
+                    continue
+                tail = ', db:"%s"' % c["db"] if c.get("db") else ""
+                new = '{name:"%s", no:"%s", slot:"%s"%s}' % (
+                    c.get("name"), c.get("no"), c.get("slot"), tail)
+                if mm.group(0) != new:
+                    print("  S-06 %-22s %-14s No.%s を正本に合わせる"
+                          % (page, nm, c.get("no")))
+                    fixed = fixed[:mm.start()] + new + fixed[mm.end():]
+                    total += 1
+                # 正本で枠がまとまった(S1とS2が S1・S2 になった等)のに、
+                # ページ側に同じ武将の行が2つ残っていることがある
+                rest = pat.search(fixed, mm.start() + len(new))
+                while rest:
+                    cut = fixed[:rest.start()].rstrip().rstrip(",")
+                    fixed = cut + fixed[rest.end():]
+                    print("  S-06 %-22s %-14s No.%s の重複行を落とす"
+                          % (page, nm, c.get("no")))
+                    total += 1
+                    rest = pat.search(fixed, mm.start() + len(new))
+            if fixed != inner:
+                text = text[:open_at + 1] + fixed + text[close_at:]
+                close_at += len(fixed) - len(inner)
+                inner = fixed
+                touched = True
             if missing:
                 hits.append((close_at, inner, nm, missing))
         # 後ろから差し込む(前を先に触ると位置がずれる)
@@ -255,9 +290,9 @@ def sync_list_pages():
             head = inner.rstrip()
             joined = (head + ",\n" if head else "\n") + ",\n".join(rows) + "\n" + ind[:-2]
             text = text[:close_at - len(inner)] + joined + text[close_at:]
-        if hits:
+        if hits or touched:
             io.open(fp, "w", encoding="utf-8", newline="").write(text)
-    print("S-06 一覧ページへ %d件 追記" % total)
+    print("S-06 一覧ページを %d件 直した(追記+正本合わせ)" % total)
 
 
 sync_list_pages()

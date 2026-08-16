@@ -4,14 +4,7 @@
  "baseRate": 45,
  "target": "槍・弓・馬",
  "effectSummary": "S/LV10 確率 45% 攻撃 30%上昇/対象:槍・弓・馬\n①攻撃 30%上昇する\n②破壊 15%上昇する",
- "sourceCharacters": [
-  {
-   "name": "三好義賢",
-   "no": "2368",
-   "slot": "B(遁世影武者経由)",
-   "db": "kyoku"
-  }
- ],
+ "sourceCharacters": [],
  "grantedViaSkills": [
   {
    "skill": "遁世影武者",
@@ -33,6 +26,7 @@
   "ixanary.com(/skills/風林火山/、原本No.1003)確認。No.2368(三好義賢)の合成候補データ(ixagno.blog.fc2.com blog-entry-9695確認)より、Bスロット「遁世影武者」の移植後合成候補として判明したためページ新規作成",
   "2026-08-15訂正: baseRate/効果文が25%になっていたが、これはixanaryのLV1値だった。LV10は確率45%/攻撃30%上昇/破壊15%上昇が正しい値(ixanary.com/skills/風林火山で確認、TRの記載は無くLV1とLV10の2段のみ)。",
   "2026-08-15(No.2807黄丸化検証): 霧隠才蔵(2807)のsourceCharacters列挙を削除。synthesisTableのS2枠は遁世影武者[B]→風林火山[S](skill≠afterSkill)であり、A-3-12によりここへ直接列挙すべきでない(遁世影武者を新規ページ作成しgrantedViaSkillsで参照)。霧隠才蔵自身はdata/skill/遁世影武者.jsonのsourceCharactersに記載。他武将(三好義賢2368・加藤段蔵2789・百地三太夫2773・今川氏輝2768/2749・ザビエル2766・神代勝利2756・近衛信尹2787・安楽庵策伝2790・弥助2430)にも同型の直接列挙が残っている可能性があるが、担当範囲外のため未確認・未修正のまま(申し送り)。",
-  "2026-08-15(No.2749黄丸化検証): 今川氏輝(2749)のB枠もsynthesisTableではskill=遁世影武者[B]・afterSkill=風林火山[S](skill≠afterSkill)であり、2807と同型の誤りだったため、ここでのsourceCharacters列挙を削除しdata/skill/遁世影武者.jsonのsourceCharactersへ移した(A-3-12)。今川氏輝2768(別カードNo.)のC枠は担当範囲外のため今回は未確認のまま。"
+  "2026-08-15(No.2749黄丸化検証): 今川氏輝(2749)のB枠もsynthesisTableではskill=遁世影武者[B]・afterSkill=風林火山[S](skill≠afterSkill)であり、2807と同型の誤りだったため、ここでのsourceCharacters列挙を削除しdata/skill/遁世影武者.jsonのsourceCharactersへ移した(A-3-12)。今川氏輝2768(別カードNo.)のC枠は担当範囲外のため今回は未確認のまま。",
+  "2026-08-16(No.2368黄丸化検証): 上記notesで名指しされていた三好義賢(2368)の同型の直接列挙(slot: B(遁世影武者経由))を削除。三好義賢は既にdata/skill/遁世影武者.jsonのsourceCharactersにslot Bで正しく記載済みのため情報の欠落は無い。"
  ]
 }

@@ -9,6 +9,10 @@
   {
    "href": "skills-takuetsu.html",
    "label": "卓越スキル一覧を見る"
+  },
+  {
+   "href": "skills-hishou-atk.html",
+   "label": "飛翔スキル(攻撃)一覧を見る"
   }
  ],
  "sourceCharacters": [
@@ -63,6 +67,7 @@
  "notes": [
   "2026-08-12一括作成。S以上の初期スキルは無条件でページを作る規約(A-3-9)の未処理分。",
   "内容は武将エントリの登録値をそのまま転記している。",
-  "categoryLinksは9項目の判定を1件ずつやる必要があるため意図的に付けていない(付け忘れではない)。"
+  "categoryLinksは9項目の判定を1件ずつやる必要があるため意図的に付けていない(付け忘れではない)。",
+  "2026-08-16(No.2582黄丸化検証): 9項目チェックで卓越(既存)に加え飛翔(攻撃、発動時飛翔12を得る)が該当することを確認しskills-hishou-atk.htmlを追加。ownHiddenCandidate(月詠ノ覇威SS)は武将側のsynthesisTable A枠afterSkillと一致することを確認済み(ixanary+ixagno.blog.fc2.com blog-entry-9127の2ソース)。"
  ]
 }

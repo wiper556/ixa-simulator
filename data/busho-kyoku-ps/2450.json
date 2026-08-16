@@ -130,6 +130,12 @@
   " + ixawiki BushoCard/2450(統率2次確認・合成テーブル1次/2次候補+C/S1/S2候補スキルのLV10効果)。",
   "統率はカード画像+ixawikiの2ソース一致。初期スキルがSランクのためスキル個別ページの新規作成が必要",
   "(docsのTODOに記録済み)。スキルはS(鍛錬情報なし)のためTR1以降のeffectはnull。",
-  "合成テーブルはixawiki(1次候補+2次候補+候補スキルのLV10効果)"
- ]
+  "合成テーブルはixawiki(1次候補+2次候補+候補スキルのLV10効果)",
+  "2026-08-16黄丸化検証: rankGrades(SS/A/A/B)はno2450_full.pngの4隅バッジを個別ズームして再確認し一致。カードは天限突破済み表示(0/6500)だがB-01の罠を避けlv0Troopsはixanary★0-0値の4900を使用(既存の判断を再確認)。基礎値・成長値・LV10スキル値(確率15%)もixanary生HTMLで一致確認。初期スキルSランクのページ(data/skill/巌流燕返し.json)は既に「移植不可」で正しく登録済み(自身のsynthesisTable内に候補として現れないことを確認済み)であることを確認、旧「未作成」の記述を訂正。",
+  "B枠(活人剣)のtarget/rateが未確定(null)だったため、data/skill/活人剣.jsonの確定値(target:全,rate:100%)を転記。",
+  "A枠(鬼滅刺)・B枠(活人剣)・C枠(火之迦具土神)・S1枠(遠呂智ノ閃光)・S2枠(建御雷神ノ槌)は全てdata/skill/鬼滅刺.json・活人剣.json・火之迦具土神.json・遠呂智ノ閃光.json・建御雷神ノ槌.jsonのsourceCharactersに佐々木小次郎(2450)が正しいslotで登録済みであることを確認した(A-3-11)。",
+  "synthesisTableのA/B/C/S1/S2は、ixanary.com(cards/2450の初期スキル巌流燕返しの合成テーブルおよび各候補スキル個別ページ)に加え、ixawiki.com(index.php?BushoCard/2450佐々木小次郎)の合成候補テーブル(1次候補/2次候補S1)を生HTMLで確認し、全5行がixanary/ixawiki2ソースで一致することを確認した。",
+  "章はixanary.com/ixawiki.comいずれのカードページにも記載が無く未確認。"
+ ],
+ "reviewedOk": true
 }
