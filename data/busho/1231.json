@@ -104,5 +104,7 @@
   "45do.info(生HTML skiladd_wrap)+ameameixa.com(スキルテーブル)の2ソース照合済み。ameameixa側はS1のランク表記が[S]となっていたが45do.info(spec_box見出しでも[SS]表記)およびskills.htmlのランクがSSのため45do.info側を採用",
   "2026-08-16黄丸化再検証: ixanary.com(cards/1231, skills/天翔雷神)+ixawiki.com(BushoCard/1231立花宗茂)の2ソースでsynthesisTable5枠(A天之尾羽張SS自己参照/B開闢ノ逆鉾SS自己参照/C天翔雷神S→十束ノ神域SS/S1十束ノ神域SS→天聖宝冠SSS/S2天頂ノ電光SSS自己参照)が完全一致。基礎値(1200/1100/630、成長+66/+40/+3、指揮4730)・rankGrades(槍A/弓S/馬A/器S、カード画像バッジ拡大確認)もixanary生HTMLと一致。data/skill/天翔雷神(自己ページ)・天之尾羽張・開闢ノ逆鉾・十束ノ神域・天頂ノ電光の各JSONのsourceCharactersに1231が正しいslotで既に記載済み。skillDetail及び天翔雷神.jsonの「TR1〜TR5未確認」を追加ソースで確認、ixanary+ixawikiの2ソースでTR区分自体が存在しないことを確認し表記を削除。"
  ],
- "reviewedOk": true
+ "reviewedOk": true,
+ "wikiOldestComment": "2023-02-03",
+ "wikiCommentCount": 147
 }

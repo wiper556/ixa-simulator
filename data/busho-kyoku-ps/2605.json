@@ -135,5 +135,7 @@
   "【修正2】synthesisTable C枠(煙霞迷霧)のeffectShort/afterEffectShortで句の区切りに「・」が誤用され「所属部隊の武将が・飛翔X・を持つとき」のようになっていたが、data/skill/煙霞迷霧.json本体のtrTable(ixanary生HTML由来)およびNo.2807・No.2841の既存登録の表記と突き合わせ「所属部隊の武将が 飛翔X を持つとき、それらは代わりに 飛翔[X+4] を持つ」の空白区切りに統一した。",
   "sourceCharacters逆引き確認(A-3-11): data/skill/回天剣舞.json(slot移植不可)・禍津日神ノ謀.json(A)・豊国ノ寵将.json(B)・煙霞迷霧.json(C)・永世ノ天隻.json(S1)・黄泉醜女ノ屍兵.json(S2)の6ファイルすべてに既にNo.2605登録済みを確認(要修正なし)。S2枠は黄泉醜女ノ屍兵≠afterSkill天地黎明のため2605は黄泉醜女ノ屍兵側に直接列挙が正しく、天地黎明.jsonのgrantedViaSkillsに黄泉醜女ノ屍兵が既にあり2605の直接列挙が無いことを確認(A-3-12準拠、修正不要)。categoryLinks(9項目判定)は豊国ノ寵将/煙霞迷霧→飛翔(攻・防)、永世ノ天隻→人数依存(防)+飛翔(防)が既に正しく設定済み、回天剣舞自身は防御側武将数のカウント除外効果でありカウント値自体は変動しないためskills-count-def.html非該当と判断(該当なし)。KP_LINKED_SKILLSに回天剣舞・禍津日神ノ謀・豊国ノ寵将・煙霞迷霧・永世ノ天隻・黄泉醜女ノ屍兵・天地黎明の7件全て登録済みを確認。skillDetailは模倣不可が①の前に独立行、読点なしを確認(A-4-14)。無尽/撤退/覇道/不屈/兵站キーワードは初期スキル回天剣舞自体には該当なし(A-2)。章はixanary.com/ixawiki.comのカードページに記載が無く未確認のまま(るろうに剣心コラボカードのため通常の章番号を持たない可能性が高い)。以上、B枠・C枠を修正のうえA-1〜A-4に未解決点なしのためreviewedOk:trueとする。"
  ],
- "reviewedOk": true
+ "reviewedOk": true,
+ "wikiOldestComment": "2024-11-14",
+ "wikiCommentCount": 3
 }

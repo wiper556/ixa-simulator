@@ -130,5 +130,7 @@
   "2026-08-15黄丸化検証で発見・修正: skills.html/data/skill/三千世界神将.jsonのsourceCharactersに大友義鑑(2835)のB・S1枠が漏れていた(A枠のみ登録されていた)ため追加。同ファイルのeffectSummaryに残っていた「TR1〜TR5は未確認」の注記も、既にtrTableに値が入っているのと矛盾していたため削除した。",
   "2026-08-15追記(git logで発覚したA-3-12違反の是正): 三千世界神将のA・B枠は豊州ノ蠍(元スキル)のafterSkillでありskillとは一致しないため、直接列挙(元々あったA枠、上記で誤って追加したB枠)を削除しS1枠(skill一致)のみ残した。豊州ノ蠍側には既にgrantedViaSkillsで三千世界神将が正しく設定済み。",
   "章は情報源に記載が無いため未確認(ixanary/ixawikiとも記載なし)。"
- ]
+ ],
+ "wikiOldestComment": "2024-09-04",
+ "wikiCommentCount": 58
 }

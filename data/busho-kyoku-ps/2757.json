@@ -106,5 +106,7 @@
   "synthesisTableの5枠(A/B/C/S1/S2)をixanary.com(skills/飛び六方、1次候補・2次候補S1)とixawiki.com(BushoCard/2757唐沢玄蕃、合成テーブル)の2ソースで突き合わせ、スロット構成自体は完全一致を確認した。ただしeffectShortの中身がA(暁光→屈指の勇将、防御成分抜け)/B(衝角、破壊50%上昇抜け)/C(猿臂ノ術、速度40%上昇+移動速度効果抜け)/S1(飛び六方、防御+条件抜け)の4枠で不完全だったため、各スキルのixanary個別ページ(skills/暁光, skills/衝角, skills/猿臂ノ術, skills/武装商船, skills/屈指の勇将, skills/鉄砲商人)を直接確認し全て修正した。B/S2のafterSkill(武装商船/鉄砲商人)は元々完全一致していた。",
   "候補スキル(暁光/衝角/猿臂ノ術/飛び六方/武装商船/屈指の勇将/鉄砲商人)は全てAランク以下でD-A3-9のskills.html独自ページ作成対象外、かつどのafterSkillもS以上ではないため例外規定にも該当しない。data/skill/配下に該当ファイルが無いことを確認済み(逆引き対象なし)。"
  ],
- "reviewedOk": true
+ "reviewedOk": true,
+ "wikiOldestComment": "2018-04-02",
+ "wikiCommentCount": 58
 }

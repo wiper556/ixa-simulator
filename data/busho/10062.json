@@ -132,5 +132,7 @@
   "45do.info(ordinary/0349)生HTML照合+ixagno.blog.fc2.com(blog-entry-10436)の両ソースで一致確認済み。S2のみ移植後スキルが九字ノ呪法→摩利支天ノ法に変化(ixagno「初期テーブル/左記スキル移植後」対応表で確認)。",
   "2026-08-16再検証(黄丸化): カード画像no10062_full.pngの4隅バッジを再ズーム確認し槍A/弓A/馬A/器X(虹色)で既存データと一致。ixanary.com/cards/10062/生HTMLでコスト5.5/指揮5250/成長値攻70防70兵法4.0/LV10・TR5のskillDetail(確率40%→70%、模倣倍率1.24倍→1.5倍)が一致確認、TR6の掲載は無くLV10〜TR5の6段で打ち止めと確認。synthesisTableはixanary.com/skills/封法大十字/の生HTML合成テーブルでA〜S2全5枠が既存の3ソース目としても完全一致。sourceCharacters逆引き(A-3-11): 摩利支天ノ法/八幡神ノ威光/封法大十字(自身・C・S1併記)/九字ノ呪法の各data/skill/*.jsonに10062が反映済みを確認。skillDetailに「模倣不可」の独立行があったが、ixanary生HTML(検索0件)にもdata/skill/封法大十字.jsonのeffectSummaryにも該当記述が無く模倣可能なスキルのため誤記と判断し削除した。"
  ],
- "reviewedOk": true
+ "reviewedOk": true,
+ "wikiOldestComment": "2025-08-03",
+ "wikiCommentCount": 2
 }

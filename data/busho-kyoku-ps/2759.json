@@ -106,5 +106,7 @@
   "synthesisTableの5枠(A/B/C/S1/S2)をixanary.com(skills/月狼貴妃、1次候補・2次候補S1)とixawiki.com(BushoCard/2759吉川夫人、合成テーブル)の2ソースで突き合わせ、スロット構成は完全一致を確認した。effectShortはC(王舎城、拠点耐久注記抜け)/S1(忠勇烈臣、破壊15%上昇と2つの注記が丸ごと抜け)/S2(天下静謐、破壊効果低下条項が丸ごと抜け)の3枠で不完全だったため、各スキルのixanary個別ページ(skills/王舎城, skills/忠勇烈臣, skills/天下静謐)を直接確認し修正した。A枠(名人/背水之陣)は既存記述のままで一致を確認済み。",
   "B枠(戦陣 破軍→天穿神滅)は神代勝利(No.2756)検証時に確認済みの値と同一で、天穿神滅.jsonのsourceCharactersに吉川夫人(2759)が既に逆引き登録済みであることを確認した。S2枠のafterSkill天戒 五芒星(S)もdata/skill/天戒 五芒星.jsonに吉川夫人(2759)が既に逆引き登録済み。名人/背水之陣/王舎城/忠勇烈臣/天下静謐はAランク以下でA-3-9の独自ページ作成対象外、data/skill/配下に該当ファイルが無いことを確認済み(逆引き対象なし)。"
  ],
- "reviewedOk": true
+ "reviewedOk": true,
+ "wikiOldestComment": "2018-06-02",
+ "wikiCommentCount": 98
 }

@@ -101,5 +101,7 @@
   "章は情報源に記載が無いため未確認。ixanary.com/ixawiki.comのカードページに記載が無く、ixagno.blog.fc2.com(「真理姫」で検索、11件)も該当記事を確認できず未確認のまま。",
   "2026-08-15(黄丸化検証): rankGrades・攻防兵法・コスト・指揮兵数をixanary.com(cards/2810)とixawiki.com(BushoCard/2810真理姫)の生HTMLで再照合し完全一致を確認。skillDetail/trTableが「攻撃140%上昇 防御140%上昇」で切れており「部隊内全武将が持つ全スキルに『槍弓馬』対象を追加する(兵科スキル限定)」が欠落していたため生HTMLで補完(data/skill/哀姫星霜.jsonも同様に修正)。synthesisTable全5行をixanary(skills/哀姫星霜)とixawiki(BushoCard/2810)の合成候補テーブル2ソースで突き合わせ完全一致を確認(A/B=鬼滅刺[A]→布都御魂ノ鬨[SS]、C/S1/S2は自己参照)。A-3-11逆引きで、布都御魂ノ鬨に真理姫がslot「A」で直接列挙されていた(A/BはskillとafterSkillが異なるためA-3-12違反)ため削除し自己参照の正しいS2枠に修正、鬼滅刺[A]は既存ページ(布都御魂ノ鬨)の移植元のため新規ページを作成(A-3-9例外、卓越確率+25%加算/模倣不可が抜けていたため生HTMLで補完しeffectShortにも反映)、grantedViaSkillsを追加。神屋楯比売命・天頂ノ電光は既に正しいslot(C・S1、自己参照)で登録済みだった。reviewedOk:trueに更新。"
  ],
- "reviewedOk": true
+ "reviewedOk": true,
+ "wikiOldestComment": "2022-08-15",
+ "wikiCommentCount": 15
 }

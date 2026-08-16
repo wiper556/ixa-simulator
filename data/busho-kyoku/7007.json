@@ -123,5 +123,7 @@
   "2026-08-13: 章を 未確認 → 30章 に確定。ユーザーがゲーム内で確認した「2398〜2399及び7001〜7010が30章」による。",
   "2026-08-16黄丸化検証: ixanary.com生HTML(cards/7007, skills/破窮ノ勇将)でLV1/LV10/TR1/TR2の数値・合成テーブル(1次A=彷徨う福音自己参照,B=戦陣神屋,C/S1=破窮ノ勇将自己参照,S2=志半ノ矛楯自己参照/2次B=神屋楯比売命[SS])を再確認、既存データと一致(以前は「サイト内の既存登録から転記」のみで一次情報源未確認だったため今回直接ixanaryで裏取り)。B枠「戦陣 神屋」のtarget/rate/effectShortは既知の欠落(ixanary個別スキルページのLV10行がNull表記のバグ、ixagno内検索・サイト内他データとも該当なしを再確認)のため空欄のまま維持——申し送り通り。A-3-9/A-3-11としては戦陣神屋(A)のページを新規作成(既存ページ持ちの神屋楯比売命[SS]の元スキルのため)し7007をsourceCharactersに登録、神屋楯比売命.jsonのgrantedViaSkillsに戦陣神屋を追加した(数値欄はnullのまま)。rankGrades(yari:A/yumi:S/uma:B/ki:A)はカード画像4隅バッジで再照合済み"
  ],
- "reviewedOk": true
+ "reviewedOk": true,
+ "wikiOldestComment": null,
+ "wikiCommentCount": 0
 }

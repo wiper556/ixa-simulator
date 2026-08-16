@@ -103,5 +103,7 @@
  "notes": [
   "45do.info生HTML(skiladd_wrap) + ixagno.blog.fc2.com(blog-entry-9520、検索クエリ「No.1257」で発見)生HTML の2ソースで完全一致を確認(2026-08-02再検証)",
   "黄丸化検証(2026-08-16)で2件の誤りを発見し修正。(1)rankGrades: 誤ってuma:SS/ki:Aと登録されていたが、カード画像no1257_full.pngの4隅バッジ拡大確認+ixawiki.com(BushoCard/1257村上武吉)の両方でuma:A/ki:SSが正しいと判明し訂正。(2)skillDetail等: 「自部隊数-2の不足を得る」となっていたが、カード画像を拡大すると緑色ハイライトの「不屈」であり「不足」ではなかった(2次候補の破軍騎行が既に不屈2キーワードを持つこととも整合)。skillDetail/trTable/synthesisTable C枠effectShort/トップeffectを「不屈」に訂正し、skills-fukutsu.htmlへのcategoryLinksを追加(data/skill/海王怒涛.jsonにも同様に適用)。synthesisTableのA/B/C/S1/S2はixanary.com(skills/海王怒涛)+ixawiki.com(BushoCard/1257)の2ソースで完全一致確認。十束ノ神域・天頂ノ電光・破軍騎行・月詠ノ覇威のdata/skill側sourceCharactersに1257が正しいslotで記載済みを確認(逆引き済み)。"
- ]
+ ],
+ "wikiOldestComment": "2024-02-12",
+ "wikiCommentCount": 21
 }

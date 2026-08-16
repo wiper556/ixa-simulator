@@ -106,5 +106,7 @@
   "2026-08-15黄丸化検証: A候補「絢鳥」のeffectShortに破壊15%上昇の記載漏れ(afterTarget/afterRateも未記載だったため自己参照として補完)、B候補「戦陣 無双」のeffectShortに防御67%上昇の記載漏れ、S2候補「鬼滅刺」のeffectShortに卓越確率+25%加算(模倣不可)の記載漏れがあり、いずれもixanary.com該当スキル個別ページで確認し補完。afterEffectShort内のスペース区切りは他行と揃えて「+」区切り・注記は()内にまとめる形に統一。",
   "data/skill/{無双英傑,布都御魂ノ鬨}.jsonのsourceCharactersに綾御前(2796)がB/S2の各slotで正しく登録済みであることを確認した(修正不要)。"
  ],
- "reviewedOk": true
+ "reviewedOk": true,
+ "wikiOldestComment": "2021-06-08",
+ "wikiCommentCount": 125
 }

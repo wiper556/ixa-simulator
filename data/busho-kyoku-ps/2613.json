@@ -146,5 +146,7 @@
   "【申し送り】新規作成した戦陣 勝鬨.json・我流大蛇.jsonはcharacters-kyoku-ps.htmlのKP_LINKED_SKILLS配列(生成物、tools/register/wireup.pyのS-04工程)への反映が未実施。次回のwireup.py実行で反映が必要(天岩戸ノ神域は既に登録済みを確認)。",
   "sourceCharacters逆引き確認(A-3-11): A/B/C枠(我流大蛇)は新規作成した我流大蛇.jsonに2613をslot移植不可で登録済み。S1枠(戦陣 勝鬨)は新規作成した戦陣 勝鬨.jsonに2613をS1枠で登録済み。S2枠(志半ノ矛楯)はrank A・自己参照でS以上の既存ページを持つ理由も無いためページ未作成のまま(既存規約通り、対象外)。S1枠は戦陣 勝鬨≠afterSkill天岩戸ノ神域のため2613は戦陣 勝鬨側に直接列挙が正しく、天岩戸ノ神域.jsonのgrantedViaSkillsに戦陣 勝鬨を追加済み(A-3-12準拠、上記で対応)。categoryLinks(9項目判定)は天岩戸ノ神域→人数依存(攻)が既に正しく設定済み、我流大蛇/戦陣 勝鬨自身は該当なし(該当以外の無尽/撤退/覇道/不屈/飛翔/兵站/卓越/コスト減少は該当なし)。skillDetailは「模倣不可」の記載自体が無く独立行違反の対象外。撤退/覇道/不屈/飛翔/兵站/人数依存キーワードは初期スキル我流大蛇自体には該当なし(A-2)。章はixanary.com/ixawiki.comのカードページに記載が無く未確認のまま(るろうに剣心コラボカードのため通常の章番号を持たない可能性が高い)。以上、戦陣 勝鬨・我流大蛇の2ページを新規作成のうえA-1〜A-4に未解決点なしのためreviewedOk:trueとする(両ページのKP_LINKED_SKILLS反映のみ申し送り事項として残る)。"
  ],
- "reviewedOk": true
+ "reviewedOk": true,
+ "wikiOldestComment": "2024-12-01",
+ "wikiCommentCount": 1
 }

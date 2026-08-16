@@ -123,5 +123,7 @@
   "2026-08-15黄丸化検証で発見・修正: ixanaryスキルページ(skills/救国ノ軍師)のLV10効果に「同じ自拠点に所属または出陣する他の自部隊にも効果あり(模倣不可・重複不可)」という②効果があったが、skillDetail/trTableに反映されていなかったため追記した。data/skill/救国ノ軍師.jsonも同様に修正。",
   "2026-08-15黄丸化検証で発見・修正: 初期スキル「救国ノ軍師」はixanaryの合成テーブルでA/B/C/S1/S2いずれの枠にも自身が出現せず「合成不可スキルです」と明記されていたため、skills.html/data/skill/救国ノ軍師.jsonのsourceCharactersが空だったのを{slot:\"移植不可\"}で追加した。",
   "章は情報源に記載が無いため未確認(ixanary/ixawikiとも記載なし)。"
- ]
+ ],
+ "wikiOldestComment": "2024-08-24",
+ "wikiCommentCount": 19
 }

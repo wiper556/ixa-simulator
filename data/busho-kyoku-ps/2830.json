@@ -102,5 +102,7 @@
   "sourceCharacters逆引き確認(2026-08-15)で不備を発見・修正: 終曲ノ結姫(2830自身の初期スキル)がskills.html/data/skill双方でsourceCharactersが空のままだったため追記(ixanaryで「合成不可スキルです」と明記されているためslot:移植不可)。あわせてeffectSummary/trTableにも②所属部隊を含む3部隊で自部隊同時攻撃を行うことができる、が抜けていたため追記した。月詠ノ覇威はB・S2の2枠に登場するがskills.html側がslot:\"B\"のみだったため\"B・S2\"に修正した。乱世ノ歸人/外道煉獄/破軍騎行は既に正しく登録済みを確認。",
   "章は標準2ソース(ixanary/ixawiki)に記載が無く未確認。追加でixagno.blog.fc2.com(検索語=2830)を確認し、該当記事(blog-entry-9634「さこの方【極】のスキル性能と合成テーブル」)を見たが2024年4月追加という時期のみで章番号の記載は無かったため未確認のまま(2026-08-15)。"
  ],
- "reviewedOk": true
+ "reviewedOk": true,
+ "wikiOldestComment": "2024-04-03",
+ "wikiCommentCount": 19
 }

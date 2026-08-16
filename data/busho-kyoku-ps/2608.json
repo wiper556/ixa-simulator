@@ -134,5 +134,7 @@
   "【修正】data/skill/国堅大神.json(S2候補)にcategoryLinksが無かったが、効果③「部隊消費コストを1低下する」がコスト減少に該当するため、攻撃・防御ともに上昇する効果のためskills-cost-atk.html・skills-cost-def.htmlの両方を追加した(9項目チェック実施、既存の龍驤虎躍.jsonの同種効果での両リンク付与と同じ扱いに揃えた)。",
   "sourceCharacters逆引き確認(A-3-11): data/skill/見様見真似.json(slot移植不可)・宿木.json(A)・龍驤虎躍.json(B)・黒飛燕剣.json(C)・摩利支天ノ法.json(S1)・国堅大神.json(S2)の6ファイルすべてに既にNo.2608登録済みを確認(要修正なし)。C枠は黒飛燕剣≠afterSkill傾国ノ艶姫のため2608は黒飛燕剣側に直接列挙が正しく、傾国ノ艶姫.jsonのgrantedViaSkillsに黒飛燕剣が既にあり2608の直接列挙が無いことを確認(A-3-12準拠)。categoryLinks(9項目判定)は宿木/摩利支天ノ法→部隊長模倣、龍驤虎躍→コスト減少(攻・防)、黒飛燕剣/傾国ノ艶姫→卓越、国堅大神→コスト減少(攻・防、今回追加)が正しく設定済み(該当以外の無尽/撤退/覇道/不屈/飛翔/兵站/人数依存は該当なし)。KP_LINKED_SKILLSに見様見真似・宿木・龍驤虎躍・黒飛燕剣・摩利支天ノ法・国堅大神・傾国ノ艶姫の7件全て登録済みを確認。skillDetailは模倣不可が①の前に独立行、読点なしを確認(A-4-14)。無尽/撤退/覇道/不屈/飛翔/兵站/人数依存キーワードは初期スキル見様見真似自体には該当なし(A-2)。章はixanary.com/ixawiki.comのカードページに記載が無く未確認のまま(るろうに剣心コラボカードのため通常の章番号を持たない可能性が高い)。以上、国堅大神のcategoryLinksを修正のうえA-1〜A-4に未解決点なしのためreviewedOk:trueとする。"
  ],
- "reviewedOk": true
+ "reviewedOk": true,
+ "wikiOldestComment": "2024-11-14",
+ "wikiCommentCount": 8
 }

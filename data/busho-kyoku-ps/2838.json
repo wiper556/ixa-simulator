@@ -127,5 +127,7 @@
   "2026-08-15黄丸化検証で発見・修正: skills.html/data/skill/高津姫神.jsonのsourceCharactersに新庄局(2838)のS1枠が漏れていた(C枠のみ登録されていた)ため追加。",
   "2026-08-15黄丸化検証で発見・修正: 初期スキル「慈光望姫」はixanaryの合成テーブルでA/B/C/S1/S2いずれの枠にも自身が出現しないため移植不可だが、skills.html/data/skill/慈光望姫.jsonのsourceCharactersが空だったため{slot:\"移植不可\"}で追加。同ファイルのtargetがnullだったのも他の無確率スキルの慣例(\"-\")に合わせて修正した。",
   "章は情報源に記載が無いため未確認(ixanary/ixawikiとも記載なし)。"
- ]
+ ],
+ "wikiOldestComment": "2024-12-21",
+ "wikiCommentCount": 7
 }

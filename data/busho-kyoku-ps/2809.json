@@ -100,5 +100,7 @@
   "章は情報源に記載が無いため未確認。ixanary.com/ixawiki.comのカードページに記載が無く、ixagno.blog.fc2.com(「山中鹿介」で検索、20件)もヒット数が多く特定できず未確認のまま。",
   "2026-08-15(黄丸化検証): rankGrades・攻防兵法・コスト・指揮兵数・スキル効果文(LV1/LV10)をixanary.com(cards/2809)とixawiki.com(BushoCard/2809山中鹿介)の生HTMLで再照合し完全一致を確認(既存登録に誤りなし)。synthesisTable全5行をixanary(skills/御家再興ノ秘策)とixawiki(BushoCard/2809)の合成候補テーブル2ソースで突き合わせ完全一致を確認(A/B/C/S1は自己参照、S2=錘焔ノ空帯[S]→錘焔ノ藍帯[SSS])。A-3-11逆引きで、禍津日神ノ謀のslotが「C」のみでS1が抜けていたため「C・S1」に修正。錘焔ノ藍帯には山中鹿介がslot「S2」で直接列挙されていた(skill≠afterSkillのためA-3-12違反、grantedViaSkillsは既存)のを削除した。reviewedOk:trueに更新。"
  ],
- "reviewedOk": true
+ "reviewedOk": true,
+ "wikiOldestComment": "2022-07-04",
+ "wikiCommentCount": 12
 }

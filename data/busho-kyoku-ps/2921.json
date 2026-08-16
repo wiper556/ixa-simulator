@@ -105,5 +105,7 @@
   "categoryLinksは9項目いずれにも該当なし。skillDetailは「模倣不可」の記載自体が無く独立行違反の対象外。無尽/撤退/覇道/不屈/飛翔/兵站/人数依存/コスト減少/卓越キーワードは該当なし(A-2)。章はixanary.com/ixawiki.comのカードページに記載が無く未確認のまま。以上、A-1〜A-4に未解決点なしのためreviewedOk:trueとする。",
   "2026-08-16(名前表記の訂正): 旧登録は無印「松永久秀」だったが、ixawiki.com(Busho/武将カード一覧)の極シリーズの表記が No.2091=松永久秀(無印)／No.2921=松永久秀(2) となっているため、F-0規則(（同名数）は全角括弧)に従い「松永久秀（2）」に訂正した。ixanary.com(cards/2921)は同名武将を全て無印で並べる方式のため（N）の判断には使えず、ixawikiの一覧を根拠にしている。あわせて assets/js/ixa-data.js の generalGrowthDB(No.2921、旧「松永久秀(2921)」)も同名に更新した(data/skill/配下に No.2921 を参照する sourceCharacters は無し)。※characters-kyoku*.html は生成物のため未反映。tools/build_data.py の再実行が必要。"
  ],
- "reviewedOk": true
+ "reviewedOk": true,
+ "wikiOldestComment": "2015-10-11",
+ "wikiCommentCount": 127
 }

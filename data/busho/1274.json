@@ -136,5 +136,7 @@
   "生スクリーンショット照合済み(2026-07-30): 槍A/弓SS/馬A/器SS。ixanary.com側のjsonはyumi/kiba(弓/馬)の値が入れ替わって格納されているため画像基準を採用",
   "45do.info(ordinary/0319)生HTML照合+ixagno.blog.fc2.com(blog-entry-10209)+ameameixa.com(post-12334「29章天武将スキル一覧」表のNo.1274行)の三ソースで一致確認済み。S2のみ移植後スキルが破邪後輝→飛龍衝天に変化(ixagno「初期テーブル/左記スキル移植後」対応表で確認、1251/毛利輝元(覇)のS1候補と同じ移植先)。",
   "黄丸化検証(2026-08-16)で1件の誤りを発見し修正。skillDetail③に「(覇道天聖等の保護スキルでも無効化を防げない)」という補足があったが、ixanary.com(skills/幻王ノ采配)・ixawiki.com(BushoCard/1274豊臣秀吉)のいずれの原文にもこの記述が無く、出典不明の追記と判断し削除(data/skill/幻王ノ采配.jsonのeffectSummaryも同様に修正)。カード画像no1274_full.pngの4隅バッジ(槍A/馬A/弓SS/器SS)を再確認し一致(ixanaryのYUMI/KIBA入れ替わりに関する既存の注記どおりカード画像を正とした)。確率は両ソースともカード上に表記が無く「+100%?」の推定表記だったため、既存のbaseRate:100を維持。TR1〜TR5(400/475/585/730/920)はixanaryの鍛錬表と全行完全一致(TR6無し)。synthesisTableはixanary.com+ixawiki.comの2ソースでA/B/C/S1/S2全枠・afterSkillとも完全一致。神羅聖域・閃裂討鬼・絶無灰尽・従魔絶神・破邪後輝のdata/skill側sourceCharactersに1274が正しいslotで記載済みを確認(逆引き済み)。"
- ]
+ ],
+ "wikiOldestComment": "2025-02-07",
+ "wikiCommentCount": 61
 }

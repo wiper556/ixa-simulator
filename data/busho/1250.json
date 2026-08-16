@@ -129,5 +129,7 @@
   "synthesisTable: 45do.info生HTML(skiladd_wrap)+ixanary.com(倚天滅陣スキルページの合成テーブル)で2ソース一致確認済み(2026-08-02)",
   "2026-08-16黄丸化再検証: ixanary.com(cards/1250, skills/倚天滅陣)+ixagno.blog.fc2.com(blog-entry-9526)で基礎値(1300/1210/820、成長+82/+66/+4、指揮6000)・rankGrades(槍A/弓A/馬S/器X、カード画像バッジ拡大確認)・trTable全段(TR1〜TR5、攻撃800/860/930/1010/1100%、コスト-5→-5.5→-6→-6.5→-7)を再照合、一致。synthesisTable5枠(A龍驤虎躍/B破軍騎行/C虚空ノ導/S1破邪後輝→飛龍衝天/S2十束ノ神域→天聖宝冠)をixanary.com(skills/倚天滅陣)の1次/2次合成テーブルで裏取り、data/skill/配下の各スキルJSON(龍驤虎躍・破軍騎行・虚空ノ導・破邪後輝・十束ノ神域)のsourceCharactersに1250が正しいslotで既に記載済みであることを確認。「特殊効果は模倣・重複不可」はixanary原文でも「特殊効果は」付きの限定表現でありskillDetailの④内配置のままで正しい(独立行化の対象外)。"
  ],
- "reviewedOk": true
+ "reviewedOk": true,
+ "wikiOldestComment": "2024-02-10",
+ "wikiCommentCount": 69
 }

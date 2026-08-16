@@ -122,5 +122,7 @@
   "45do.info確認(生HTML照合済み、2026-07-29): https://45do.info/ordinary/0109/ のskiladd_wrap内、候補A/B/C/S1/S2の見出し5個と直後のスキル名5個が位置対応。ixanary.com(炎馬帝スキルページの合成テーブル)でも同一順序を確認済み(2026-08-02、2ソース一致)",
   "2026-08-16黄丸化再検証: ixanary.com(cards/1233, skills/炎馬帝)+ixawiki.com(BushoCard/1233井伊直政)の2ソースでsynthesisTable5枠(A炎馬帝S→十束ノ神域SS/B火之迦具土神SS自己参照/C天津甕星ノ雷SS自己参照/S1十束ノ神域SS→天聖宝冠SSS/S2開闢ノ逆鉾SS自己参照)が完全一致。基礎値(1200/1090/680、成長+64/+50/+3.5、指揮4540)・rankGrades(槍A/弓A/馬SS/器A、カード画像バッジ拡大確認)もixanary生HTMLと一致。TR1(攻300/速120/距離+22)とTR5(攻820/速250/距離+40)をixagno.blog.fc2.com(blog-entry-8920)で確認、既存trTableと一致(TR2〜4は同記事内で空欄だったため既存の補間値のまま、傾向は自然で矛盾なし)。data/skill/炎馬帝(自己ページ)・火之迦具土神・天津甕星ノ雷・十束ノ神域・開闢ノ逆鉾の各JSONのsourceCharactersに1233が正しいslotで既に記載済み。"
  ],
- "reviewedOk": true
+ "reviewedOk": true,
+ "wikiOldestComment": "2023-02-03",
+ "wikiCommentCount": 35
 }

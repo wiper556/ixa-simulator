@@ -132,5 +132,7 @@
   "synthesisTable: ixanary.com(/skills/雄飛新世/、生HTML)とixawiki.com(index.php?BushoCard/1286織田信長、生HTML、EUC-JP)の2ソースでA/B/C/S1/S2の1次候補を突き合わせ、A=天地超克[SSS]、B=天地超克[SSS](A・Bが同一スキル)、C=焼尽神無[SS]、S1=勇冠三軍[SSS]、S2=万物神勇[SSS](全枠自己参照)で一致を確認。ixawikiの1次候補テーブル本体はCを誤って[SSS]と表示していたが、同じixawikiページ内の脚注(「攻：焼尽神無[SS] -候補」)とixanary側の両方がSSSではなくSSで一致するため、ixawiki本体側の表記ゆれと判断しSSSを採用しない。",
   "data/skill/天地超克.json・焼尽神無.json・勇冠三軍.json・万物神勇.jsonのsourceCharactersに1286が正しい枠で登録済みであることを確認(A-3-11)。"
  ],
- "reviewedOk": true
+ "reviewedOk": true,
+ "wikiOldestComment": "2025-08-09",
+ "wikiCommentCount": 10
 }

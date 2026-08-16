@@ -135,5 +135,7 @@
   "synthesisTable: ixanary.com(/skills/一調天成/、生HTML)とixawiki.com(index.php?BushoCard/1282黒田長政、生HTML、EUC-JP)の2ソースでA/B/C/S1/S2の1次候補・2次候補S1を突き合わせ、A=一調天成[S]→戦華雄渾[SS]、B=同、C=閃裂討鬼[SS](自己参照)、S1=戦華雄渾[SS](自己参照)、S2=十束ノ神域[SS]→天聖宝冠[SSS]で完全一致を確認。旧ノートの「A/Bは自己参照枠」は誤りだったため訂正(A/Bの移植後は戦華雄渾に変化する)。",
   "data/skill/一調天成.json・戦華雄渾.json・閃裂討鬼.json・十束ノ神域.jsonのsourceCharactersに1282が正しい枠で登録済みであることを確認(A-3-11)。天聖宝冠は十束ノ神域経由のgrantedViaSkillsで参照されるため天聖宝冠側への直接列挙は不要(既に正しい状態)。"
  ],
- "reviewedOk": true
+ "reviewedOk": true,
+ "wikiOldestComment": "2025-02-08",
+ "wikiCommentCount": 17
 }

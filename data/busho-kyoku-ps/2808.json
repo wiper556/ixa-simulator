@@ -100,5 +100,7 @@
   "2026-08-15(黄丸化検証): rankGrades・攻防兵法・コスト・指揮兵数・スキル効果文(LV1/LV10)をixanary.com(cards/2808)とixawiki.com(BushoCard/2808南光坊天海)の生HTMLで再照合し完全一致を確認(既存登録に誤りなし)。synthesisTable全5行をixanary(skills/四神相応ノ天計)とixawiki(BushoCard/2808)の合成候補テーブル2ソースで突き合わせ完全一致を確認(A=山王一実神道[B]→妙計暗躍[A]、B/C/S1/S2は自己参照)。A-3-11逆引きで、茅纒之矟ノ煌・幽冥主宰大神・禍津日神ノ謀・天奏聖譚曲はいずれも正しいslotで既に登録済みだった(修正不要)。A行のeffectShortに「(名声値で効果が変化)」の注記が抜けていたため、ixanary.com(skills/山王一実神道)の生HTML(LV10行、防御0%上昇 名声値で効果が変化)で確認し追記。山王一実神道[B]・妙計暗躍[A]は共にA未満/A以下でどちらもS+の既存ページの移植元に該当しないため、A-3-9の新規ページ作成対象外(該当なし)。reviewedOk:trueに更新。",
   "2026-08-16(名前表記の訂正): 旧登録は無印「南光坊天海」で、No.10063(南光坊天海)と完全同名だった。ixawiki.com(Busho/武将カード一覧)の極シリーズの表記が No.2710=南光坊天海(無印)／No.2920=南光坊天海(2)／No.2808=南光坊天海(3) となっているため、F-0規則(（同名数）は全角括弧)に従い「南光坊天海（3）」に訂正した。ixanary.com(cards/2808)は同名武将を全て無印で並べる方式のため（N）の判断には使えず、ixawikiの一覧を根拠にしている。あわせて assets/js/ixa-data.js の generalGrowthDB(No.2808、旧「南光坊天海(2808)」)と、data/skill/ の四神相応ノ天計・茅纒之矟ノ煌・幽冥主宰大神・禍津日神ノ謀・天奏聖譚曲の sourceCharacters も同名に更新した。※characters-kyoku*.html は生成物のため未反映。tools/build_data.py の再実行が必要。"
  ],
- "reviewedOk": true
+ "reviewedOk": true,
+ "wikiOldestComment": "2022-06-01",
+ "wikiCommentCount": 29
 }

@@ -111,5 +111,7 @@
   "data/skill/布都御魂ノ鬨.jsonのsourceCharactersで柳生宗矩(2793)がslot:S1のみになっていたが、実際はS1・S2の両方で鬼滅刺→布都御魂ノ鬨になるためslot:S1・S2に修正(2026-08-15)。",
   "【申し送り】ixanary.com/skills/活人剣の合成テーブルによると「鬼滅刺」(A)自身の移植後合成候補が布都御魂ノ鬨(SS、既存ページあり)であるため、A-3-9の例外規定(移植後候補が既存S+ページを持つ元スキルはランクに関わらずページ作成対象)により鬼滅刺はdata/skill/鬼滅刺.jsonの新規作成対象と思われる。ただしページ作成にはcharacters-kyoku-ps.htmlのLINKED_SKILLS配列への追加が必須であり、これは本作業の許可されたファイル範囲外(data/busho-kyoku-ps/{No}.jsonとdata/skill/{名前}.jsonのみ)のため今回は見送り、報告のみとする。"
  ],
- "reviewedOk": true
+ "reviewedOk": true,
+ "wikiOldestComment": "2021-03-06",
+ "wikiCommentCount": 48
 }

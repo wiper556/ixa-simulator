@@ -131,5 +131,7 @@
   "ixagno.blog.fc2.com生HTML照合済み(2026-07-31、blog-entry-10827)+ameameixa.com(tenskil-31sho「【31章】天武将スキルテーブル一覧」表のNo.1306行)の両ソースでA/B/C/S1/S2の並びが一致確認済み(2026-08-02)。B枠の移植後スキル(布刀玉ノ策→?)はユーザー確認により布刀玉ノ策(SS)と判明。",
   "2026-08-16再検証(黄丸化): ameameixa.comが2026-08-12付で情報源候補から除外されたため、代替としてixanary.com/skills/坂西都督/の生HTML合成テーブルで再確認。A〜S2全5枠(A・S2双方が開闢ノ逆鉾で重複表記の点、Bが布刀玉ノ策である点も含め)がixagnoとの既存記録と完全一致(2ソースをixagno+ixanaryに更新)。カード画像の4隅バッジ再ズーム(槍A/弓S/馬A/器S)・コスト5/指揮5110/成長値攻72防51兵法3.5もixanary生HTML(/cards/1306/)と再度一致確認(ixanaryのcard JSONはyumi:A,kiba:Sで入れ替わっており参考程度に留めた)。sourceCharacters逆引き(A-3-11): 開闢ノ逆鉾(A・S2併記)/布刀玉ノ策/勇冠三軍/坂西都督(自身)の各data/skill/*.jsonに1306が反映済みを確認。"
  ],
- "reviewedOk": true
+ "reviewedOk": true,
+ "wikiOldestComment": null,
+ "wikiCommentCount": 0
 }

@@ -102,5 +102,7 @@
  "notes": [
   "2026-08-16黄丸化検証: ixanary.com(cards/1245, skills/裂波驍槍)+ixawiki.com(BushoCard/1245里見義弘)の2ソースでsynthesisTable5枠(A四天轟雷SS自己参照/B・C十束ノ神域SS→天聖宝冠SSS/S1思金神ノ深謀SS自己参照/S2火之迦具土神SS自己参照)が完全一致。基礎値(1170/1170/660、成長+57/+57/+3、指揮4920)・rankGrades(槍S/弓A/馬S/器A、カード画像バッジ拡大確認)もixanary生HTMLと一致。data/skill/四天轟雷・十束ノ神域・思金神ノ深謀・火之迦具土神の各JSONのsourceCharactersに1245が正しいslotで既に記載済み。skillDetailの「卓越発動したスキル数×65%」は活性化数が確率依存で母数固定不可のため式のまま(A-4-12の未計算式チェック対象外)。"
  ],
- "reviewedOk": true
+ "reviewedOk": true,
+ "wikiOldestComment": "2023-08-11",
+ "wikiCommentCount": 13
 }

@@ -140,5 +140,7 @@
   "ixanary.com生HTML照合(2026-08-02): カード画像のスキル欄にLV10とTR5(鍛錬)の2枠のみ表示されており、TR1〜TR4は実在しない。",
   "45do.info(ordinary/0315)生HTML照合+ameameixa.com(post-12334「29章天武将スキル一覧」表のNo.1278行)の両ソースでA/B/C/S1/S2の並びが一致確認済み。",
   "黄丸化検証(2026-08-16)で2件の誤りを発見し修正。(1)旧notesの「TR1〜TR4は実在しない」は誤りで、ixanary.com(skills/王佐ノ指揮)の鍛錬表でTR1(590%)〜TR5(1400%)まで全段一致確認。(2)TR5のeffectテキストで「部隊内全武将の兵科対象の全スキルに「砲」対象を追加」の一文が脱落していた(TR1〜TR4は正しく記載されていたのにTR5だけ欠落)。ixanaryのTR5行では他TR同様この一文が明記されているため補完し、pointsも「最大鍛錬」から標準の「200」に統一(data/skill/王佐ノ指揮.jsonも同様に修正)。カード画像no1278_full.pngの4隅バッジ(槍S/馬A/弓A/器S)を確認し一致。synthesisTableはixanary.com+ixawiki.com(BushoCard/1278羽柴秀長)の2ソースでA/B/C/S1/S2全枠一致(S2のafterSkill天聖宝冠のランクはixawiki側でSS表記だったが、ixanary+data/skill/天聖宝冠.json既存値+他3武将(1257/1269/1271)での確認がいずれもSSSのためixawiki側を単発の誤記と判断しSSSを維持)。刹那無影・思金神ノ深謀・國才連豪・絶無灰尽・十束ノ神域のdata/skill側sourceCharactersに1278が正しいslotで記載済みを確認(逆引き済み)。"
- ]
+ ],
+ "wikiOldestComment": "2025-02-07",
+ "wikiCommentCount": 25
 }

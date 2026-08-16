@@ -101,5 +101,7 @@
   "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。ixawiki(BushoCard/2833島津歳久)の合成候補テーブルとも1次/2次(S1列)を突き合わせ、A/B/C/S1/S2全枠で一致を確認済み(2026-08-15黄丸化検証)。",
   "2026-08-15黄丸化検証で発見・修正: ixanaryスキルページ(skills/晴嵐義計)のLV10効果に「最大兵数を指揮した攻撃戦闘後部隊内武将の討伐ゲージが敵武将数×2回復」という②効果があったが、skillDetail/trTable/synthesisTable(S1)に反映されていなかったため追記した。data/skill/晴嵐義計.jsonも同様に修正。",
   "章は情報源に記載が無いため未確認(ixanary/ixawikiとも記載なし)。"
- ]
+ ],
+ "wikiOldestComment": "2024-07-03",
+ "wikiCommentCount": 13
 }

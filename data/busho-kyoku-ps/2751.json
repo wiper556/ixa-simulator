@@ -103,5 +103,7 @@
   "章は情報源に記載が無いため未確認。",
   "2026-08-15黄丸化検証(A-1〜A-5): rankGradesはカード画像4隅バッジの個別ズームでS/A/A/A(yari/yumi/uma/ki)を再確認し、ixanary.com(cards/2751)生HTMLのcard propsとも一致(cost/指揮/成長値も一致)。初期スキル万年君のeffect/skillDetail/trTableが「攻撃30%上昇」のみで、ixanary生HTML(LV10行)にある「自軍武将のスキル発動率+3%(発動率上昇は重複効果無し)」が丸ごと欠落していたため追加(同型の万年君欠落は他武将2761の検証記録でも確認済みの既知パターン)。synthesisTableは初期スキル(万年君)のixanary生HTML合成テーブル(1次/2次)で全5枠を確認し、ixawiki.com(BushoCard/2751里見義堯)を2ソース目として突き合わせたところ、スキル名・ランクとも全5枠で完全一致(S2の覇王征軍は2745松平清康で見つかったixanary/ixawiki食い違いパターンに該当しないか特に注意して確認したが、本武将は2ソースとも覇王征軍で一致しており誤りは無かった)。effectShortの不備を4件修正: A枠afterSkill(三矢の教え)の破壊5%上昇抜け、B枠afterSkill(義兵進軍)の速度10%上昇抜け、C枠(屈指の勇将、skill/afterSkillとも)の防御22%上昇抜け、S1枠(質実剛健、skill/afterSkillとも)の「武将ランクとコストで効果が変化」注記抜け(既存precedent No.2756/2761の表記に合わせた)。候補スキルは全てS未満(E/D/D/B/S、afterSkillもD/C/D/B/SS)のため独自ページ作成義務はS2のafterSkill覇王征軍(SS)のみで既に対応済み、海王ノ碇戟(S、S2枠skill)・覇王征軍(SS、S2枠afterSkill)ともsourceCharactersに2751が既に登録済みであることを確認した(A-3-11)。"
  ],
- "reviewedOk": true
+ "reviewedOk": true,
+ "wikiOldestComment": "2017-08-04",
+ "wikiCommentCount": 43
 }

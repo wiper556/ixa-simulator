@@ -110,5 +110,7 @@
   "synthesisTableのA/B/C/S1/S2はixanary.com(skills/天下静謐)とixawiki.com(BushoCard/2924明智光秀)の合成テーブルの2ソースで完全一致を確認(A:砲撃の真髄[E]→釣瓶撃ち[D]、B:三段撃ち[D]→三段撃 烈火[C]、C:鉄砲術明光[B]→砲撃 羅刹[B]、S1:天戒 五芒星[S]→武神八幡陣[SS]、S2:天衣無縫陣[SS・自己参照])。",
   "sourceCharacters逆引き確認(A-3-11): data/skill/天戒 五芒星.json(S1)・天衣無縫陣.json(S2)に既にNo.2924登録済みを確認(要修正なし)。S1枠は天戒 五芒星≠afterSkill武神八幡陣のため2924は天戒 五芒星側に直接列挙が正しく、武神八幡陣.jsonのgrantedViaSkillsに天戒 五芒星が既にあり2924の直接列挙が無いことを確認(A-3-12準拠)。categoryLinksは9項目いずれにも該当なし(該当スキルのcategoryLinksは全て空または未設定で妥当)。KP_LINKED_SKILLSに天戒 五芒星・天衣無縫陣・武神八幡陣が登録済みを確認。skillDetailは「模倣不可」の記載自体が無く独立行違反の対象外。無尽/撤退/覇道/不屈/飛翔/兵站/人数依存/コスト減少/卓越キーワードは該当なし(A-2)。章はixanary.com/ixawiki.comのカードページに記載が無く未確認のまま。以上、効果文の欠落とNULLバグを修正のうえA-1〜A-4に未解決点なしのためreviewedOk:trueとする。"
  ],
- "reviewedOk": true
+ "reviewedOk": true,
+ "wikiOldestComment": "2016-02-06",
+ "wikiCommentCount": 55
 }

@@ -128,5 +128,7 @@
   "skillDetail/data/skill/壬生ノ狼牙.jsonのeffectSummaryが「確率：+100% / 対象 全 無尽 攻擊：500%上昇...」というixanaryの生テキストそのままの書式だったため、サイト標準の「ヘッダー1行+①②改行+読点なし」書式に整形した(模倣不可はixanary生HTMLで独立した注記ではなく③相当の効果に付随する記載のため、①②のどちらにも係らない単独効果として①の前の独立行に配置)。",
   "synthesisTableはixanary.com/skills/壬生ノ狼牙/の生HTML合成テーブルでA〜S2全5枠(A:義陣絶刀[S]→國才連豪[SS]、B:虚実兵妙[SS]自己参照、C:至天ノ御剣[SSS]自己参照、S1:勇冠三軍[SSS]自己参照、S2:牙突・弐式[SS]自己参照)が既存登録と完全一致。S1のrateがnullだったため、data/skill/勇冠三軍.jsonのbaseRate(45)を確認し45%を補完した。sourceCharacters逆引き(A-3-11): 義陣絶刀/虚実兵妙/至天ノ御剣/勇冠三軍/牙突・弐式の各data/skill/*.jsonに10066が反映済みを確認(A枠の移植後=國才連豪はgrantedViaSkills経由で正しく間接リンク済み)。"
  ],
- "reviewedOk": true
+ "reviewedOk": true,
+ "wikiOldestComment": "2025-11-29",
+ "wikiCommentCount": 1
 }

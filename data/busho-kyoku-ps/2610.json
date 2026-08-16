@@ -139,5 +139,7 @@
   "【修正2】data/skill/神農医方.jsonのcategoryLinksが卓越のみだったが、効果に「飛翔4」を自身が持ち攻撃220%上昇+部隊内の武将へ飛翔+7付与という飛翔(攻撃)系の内容を含むため、skills-hishou-atk.htmlを追加した(9項目チェック実施)。",
   "sourceCharacters逆引き確認(A-3-11): data/skill/慈愛ノ癒術.json(slot移植不可)・乱世ノ歸人.json(A)・傾国ノ艶姫.json(B)・神農医方.json(C)・破邪後輝.json(S1)・開闢ノ逆鉾.json(S2)の6ファイルすべてに既にNo.2610登録済みを確認(要修正なし)。A/B/C枠は各skill≠afterSkillのため2610は各skill側に直接列挙が正しく、afterSkill側(入来神舞/摩利支天ノ法/月詠ノ覇威)にはgrantedViaSkillsで元スキルが参照されている(2610の直接列挙なし、A-3-12準拠)ことを確認。categoryLinks(9項目判定)は乱世ノ歸人→部隊長模倣+卓越、傾国ノ艶姫/開闢ノ逆鉾→卓越(+開闢ノ逆鉾は兵士被害減少)、神農医方→卓越+飛翔(攻、今回追加)、破邪後輝→覇道が正しく設定済み(該当以外の無尽/撤退/不屈/兵站/人数依存/コスト減少は該当なし)。KP_LINKED_SKILLSに慈愛ノ癒術・乱世ノ歸人・傾国ノ艶姫・神農医方・破邪後輝・開闢ノ逆鉾の6件全て登録済みを確認。skillDetailは効果文が①のみの単文で模倣不可の記載自体が無い(独立行違反の対象外)。撤退/覇道/不屈/兵站/人数依存キーワードは初期スキル慈愛ノ癒術自体には該当なし(A-2)。章はixanary.com/ixawiki.comのカードページに記載が無く未確認のまま(るろうに剣心コラボカードのため通常の章番号を持たない可能性が高い)。以上、C枠の欠損値と神農医方のcategoryLinksを修正のうえA-1〜A-4に未解決点なしのためreviewedOk:trueとする。"
  ],
- "reviewedOk": true
+ "reviewedOk": true,
+ "wikiOldestComment": "2024-11-13",
+ "wikiCommentCount": 13
 }

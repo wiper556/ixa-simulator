@@ -129,5 +129,7 @@
   "【修正2・新規ページ作成】A枠の候補スキル「千人狩」(A)がskills.html独自ページを持っていなかったため新規作成した。afterSkill(宿木)が既存ページを持つため、A-3-9の例外規定に該当する。data/skill/宿木.jsonのgrantedViaSkillsに千人狩を追加した。C枠の候補スキル「叛逆近景」(既存ページ、旧登録時にafterSkill不明のためownHiddenCandidate未設定だった)にownHiddenCandidate(開闢ノ逆鉾SS)を追加した。",
   "sourceCharacters逆引き確認(A-3-11): data/skill/天衝破軍槍.json(S1)・開闢ノ逆鉾.json(B・S2)・叛逆近景.json(C)の3ファイルに既にNo.2857登録済みを確認。A枠(千人狩)は新規作成ページに2857を登録済み。C枠は叛逆近景≠afterSkill開闢ノ逆鉾のため2857は叛逆近景側に直接列挙が正しく、開闢ノ逆鉾.jsonへの2857直接列挙は無い(A-3-12準拠、既存の通り)。categoryLinks(9項目判定)は開闢ノ逆鉾/叛逆近景→卓越+兵士被害減少が既に正しく設定済み、千人狩/天衝破軍槍/宿木は該当なし(既存の類似スキルの判断パターンと一致)。KP_LINKED_SKILLSに天衝破軍槍・千人狩・開闢ノ逆鉾・叛逆近景・宿木の5件全て登録済みを確認(千人狩は今回の新規作成分含めコーディネーターのwireup.py実行により反映済み)。skillDetailは模倣不可が①の前に独立行、読点なしを確認(A-4-14)。無尽/撤退/覇道/不屈/飛翔/人数依存/コスト減少キーワードは初期スキル天衝破軍槍自体には該当なし(A-2)。章は既に31章と確定済み(ユーザー確認済み)。以上、synthesisTableの大幅な欠損を修正し千人狩ページを新規作成のうえA-1〜A-4に未解決点なしのためreviewedOk:trueとする。"
  ],
- "reviewedOk": true
+ "reviewedOk": true,
+ "wikiOldestComment": null,
+ "wikiCommentCount": 0
 }

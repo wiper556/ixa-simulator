@@ -101,5 +101,7 @@
   "synthesisTable: 45do.info生HTML(skiladd_wrap)+ixanary.com(万界寂香スキルページの合成テーブル)で2ソース一致確認済み(2026-08-02)",
   "2026-08-16黄丸化再検証: ixanary.com(cards/1243, skills/万界寂香)+ixawiki.com(BushoCard/1243朝倉義景)の2ソースでsynthesisTable5枠(A万界寂香S→思金神ノ深謀SS/B禍津日神ノ謀SS自己参照/C天地黎明SSS自己参照/S1思金神ノ深謀SS自己参照/S2神屋楯比売命SS自己参照)が完全一致。基礎値(1060/1180/650、成長+40/+65/+3、指揮3600)・rankGrades(槍S/弓A/馬A/器S、カード画像バッジ拡大確認)もixanary生HTMLと一致。data/skill/万界寂香(自己ページ)・禍津日神ノ謀・天地黎明・思金神ノ深謀・神屋楯比売命の各JSONのsourceCharactersに1243が正しいslotで既に記載済み。C候補の天地黎明は「TR1〜TR5未確認」だったが、ixanary生HTML(skills/天地黎明)にTR区分自体が存在せずLV10のみ、ixawikiのC候補詳細ボックスもLv10行のみと2ソースで確認、trTable1行のみが正しいと確定したためスキル側のnotesを更新した。"
  ],
- "reviewedOk": true
+ "reviewedOk": true,
+ "wikiOldestComment": "2023-08-11",
+ "wikiCommentCount": 17
 }
