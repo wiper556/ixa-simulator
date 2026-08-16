@@ -100,6 +100,13 @@
   }
  ],
  "notes": [
-  "45do.info+ixagno.blog.fc2.com(blog-entry-9637)確認済み: 自己スキル(炎牛武陣)は候補に含まれず。Aの湖裂騎刃は移植後「不滅ノ鬼神」[S]に、B/Cの騎聖は移植後「神光征軍」[SS]に、S1/S2の不滅ノ鬼神は移植後「朧雲ノ閃撃」[SSS]に変化"
- ]
+  "45do.info+ixagno.blog.fc2.com(blog-entry-9637)確認済み: 自己スキル(炎牛武陣)は候補に含まれず。Aの湖裂騎刃は移植後「不滅ノ鬼神」[S]に、B/Cの騎聖は移植後「神光征軍」[SS]に、S1/S2の不滅ノ鬼神は移植後「朧雲ノ閃撃」[SSS]に変化",
+  "2026-08-16黄丸化検証(A-1〜A-5): rankGrades(槍A/馬S/弓B/器A)はカード画像の4隅バッジを個別にズームして再確認し、ixawiki.com(BushoCard/2366井伊直孝)の基本ステータス表とも一致(スワップ無し)。基礎値/成長値/コスト/指揮兵数(★0-0=3960)はixanary.com(cards/2366)生HTMLとixawikiの両方で一致確認。",
+  "synthesisTable全行(A=湖裂騎刃[A]→不滅ノ鬼神[S]、B/C=騎聖[A]→神光征軍[SS]、S1/S2=不滅ノ鬼神[S]→朧雲ノ閃撃[SSS])を、No.2366自身の初期スキル(炎牛武陣)のixanary.comスキル個別ページの合成テーブル(1次/2次/3次)生HTMLと、ixawiki.com(BushoCard/2366井伊直孝)のスキル追加合成テーブルの2ソースで突き合わせ完全一致を確認。",
+  "sourceCharacters逆引き確認(A-3-11): 湖裂騎刃.json(slot A)・騎聖.json(slot B・C)・不滅ノ鬼神.json(slot S1・S2)ともに既に井伊直孝(2366)が正しく登録済みで一致。神光征軍・朧雲ノ閃撃はgrantedViaSkills経由で辿れる構造のため直接列挙不要(該当なし)。",
+  "trTable: ixanary生HTMLにTR1〜6や鍛錬の記載が無く、LV10のみの単段スキルであることを確認。",
+  "categoryLinks(A-2): 無尽/撤退/覇道/不屈/飛翔/兵站/人数依存/卓越/コスト減少の9項目いずれにも該当せず、categoryLinksフィールド自体が無いのが正しい状態。",
+  "章は情報源(ixanary.com/ixawiki.com)に記載が無く未確認のまま(既存も「未確認」表記で変更なし)。"
+ ],
+ "reviewedOk": true
 }
