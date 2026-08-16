@@ -97,6 +97,12 @@
  ],
  "notes": [
   "カード画像照合済み(2026-08-02): 槍X/弓B/馬B/器A",
-  "45do.info(ordinary/0018)生HTML + ameameixa.com(bushocard-1222)生HTML の2ソースで完全一致を確認(2026-08-02)"
- ]
+  "2026-08-16黄丸化検証: rankGrades(槍Xレインボー/弓B/馬B/器A)をカード画像バッジ4隅で再照合、一致(X判定を再確認)。ステータス初期値・成長値・cost4・lv0Troops4480はixanary.com(cards/1222)生HTMLの成長表と一致。skillDetailはixanary/ixawiki2ソースともLV1/LV10のみでTR無しと確認。",
+  "名前表記: ixawiki.com(Busho/武将カード一覧)で「前田慶次」無印表記を確認、既存登録のまま変更なし。",
+  "synthesisTable(A=神光征軍[SS]自己参照、B=天之尾羽張[SS]自己参照、C=天津日ノ太刀[SS]自己参照、S1=開闢ノ逆鉾[SS]自己参照、S2=国堅大神[SS]自己参照)をixanary.com(skills/無苦ノ武神)生HTMLとixawiki.com(BushoCard/1222前田慶次)生HTMLの2ソースで完全一致を確認(2026-08-16)。",
+  "sourceCharacters逆引き確認(A-3-11): 神光征軍(A)・天之尾羽張(B)・天津日ノ太刀(C)・開闢ノ逆鉾(S1)・国堅大神(S2)いずれもdata/skill/配下に1222が記載済み(2026-08-16)。",
+  "categoryLinksチェック(A-3-9、9項目): 初期スキル無苦ノ武神は項目3(飛翔、攻撃系)に該当し、既にskills-hishou-atk.htmlへcategoryLinks・本体一覧とも登録済みを確認。",
+  "章(24章)は情報源に記載が無く未確認のまま(ixanary/ixawikiともchapter情報を確認できず、既存の24章表記を維持)。"
+ ],
+ "reviewedOk": true
 }
