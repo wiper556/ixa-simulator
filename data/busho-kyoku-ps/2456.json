@@ -1,7 +1,7 @@
 {
  "name": "延沢満延",
  "no": "2456",
- "ch": "未確認",
+ "ch": "24章",
  "cost": 4.5,
  "troop": "全防",
  "sub": "",
@@ -67,59 +67,82 @@
    "slot": "A",
    "skill": "八楯剛陣",
    "rank": "S",
-   "afterSkill": null,
-   "afterRank": null,
-   "target": null,
-   "rate": null,
-   "effectShort": "防御 210%上昇(所属する陣・同盟陣を陣破壊スキルから保護・模倣不可)"
+   "afterSkill": "氷瀑ノ封神",
+   "afterRank": "SSS",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "防御 210%上昇(所属する陣・同盟陣を陣破壊スキルから保護・模倣不可)",
+   "afterTarget": "全",
+   "afterRate": "30%",
+   "afterEffectShort": "防御 200%上昇(攻撃部隊の武将が持つ特殊効果付き初期スキルを全て無効化・模倣不可)"
   },
   {
    "slot": "B",
    "skill": "海神ノ浮船",
    "rank": "SS",
-   "afterSkill": null,
-   "afterRank": null,
+   "afterSkill": "海神ノ浮船",
+   "afterRank": "SS",
    "target": "全 飛翔4",
    "rate": "48%",
-   "effectShort": "防御 (3.5×防御参加武将数)%上昇(敵軍飛翔持ち4人未満の時通常武将ダメージを受けない)"
+   "effectShort": "防御 (3.5×防御参加武将数)%上昇(敵軍飛翔持ち4人未満の時通常武将ダメージを受けない)",
+   "afterTarget": "全 飛翔4",
+   "afterRate": "48%",
+   "afterEffectShort": "防御 (3.5×防御参加武将数)%上昇(敵軍飛翔持ち4人未満の時通常武将ダメージを受けない)"
   },
   {
    "slot": "C",
    "skill": "幽冥主宰大神",
    "rank": "SS",
-   "afterSkill": null,
-   "afterRank": null,
-   "target": null,
-   "rate": null,
-   "effectShort": "防御 90%上昇(攻撃部隊の武将が持つ特殊効果付き初期スキルを全て無効化・模倣不可)"
+   "afterSkill": "幽冥主宰大神",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "30%",
+   "effectShort": "防御 90%上昇(攻撃部隊の武将が持つ特殊効果付き初期スキルを全て無効化・模倣不可)",
+   "afterTarget": "全",
+   "afterRate": "30%",
+   "afterEffectShort": "防御 90%上昇(攻撃部隊の武将が持つ特殊効果付き初期スキルを全て無効化・模倣不可)"
   },
   {
    "slot": "S1",
    "skill": "氷瀑ノ封神",
    "rank": "SSS",
-   "afterSkill": null,
-   "afterRank": null,
+   "afterSkill": "氷瀑ノ封神",
+   "afterRank": "SSS",
    "target": "全",
    "rate": "30%",
-   "effectShort": "防御 200%上昇(攻撃部隊の武将が持つ特殊効果付き初期スキルを全て無効化・模倣不可)"
+   "effectShort": "防御 200%上昇(攻撃部隊の武将が持つ特殊効果付き初期スキルを全て無効化・模倣不可)",
+   "afterTarget": "全",
+   "afterRate": "30%",
+   "afterEffectShort": "防御 200%上昇(攻撃部隊の武将が持つ特殊効果付き初期スキルを全て無効化・模倣不可)"
   },
   {
    "slot": "S2",
    "skill": "氷瀑ノ封印",
    "rank": "S",
-   "afterSkill": null,
-   "afterRank": null,
+   "afterSkill": "氷瀑ノ封神",
+   "afterRank": "SSS",
    "target": "全",
    "rate": "25%",
-   "effectShort": "防御 90%上昇(攻撃部隊の特殊効果付き初期スキルを全て無効化・模倣不可)"
+   "effectShort": "防御 90%上昇(攻撃部隊の特殊効果付き初期スキルを全て無効化・模倣不可)",
+   "afterTarget": "全",
+   "afterRate": "30%",
+   "afterEffectShort": "防御 200%上昇(攻撃部隊の武将が持つ特殊効果付き初期スキルを全て無効化・模倣不可)"
   }
  ],
  "notes": [
-  "出典: カード画像(LV1形式: 極・統率 槍S/弓A/馬A/器A拡大確認・初期値1090/1120/520・コスト4.5・LV1スキル値)",
-  " + ixanary.com/cards/2456(指揮4470(★0-0)・成長+48/+62/+2.5・LV10: 確率+100%/全防210%/陣・同盟陣を陣破壊スキルから保護)",
-  " + ixawiki BushoCard/2456(統率2次確認・合成テーブル1次候補+B/S1候補のLV10効果)。",
-  "統率はカード画像+ixawikiの2ソース一致。",
-  "ixawikiの2次候補行は4項目しかなく5列との対応が確定できないため、移植後変化先(afterSkill)は全てnullのまま",
-  "(推測で割り当てない)。初期スキルがSランクのためスキル個別ページの新規作成が必要(docsのTODOに記録済み)。"
- ]
+  "カード画像はスキル欄「八楯剛陣LV1」表記のためLV1形式(B-00)。画像から確認できるのは名前・統率バッジ(4隅拡大)・スキル名・初期値1090/1120/520・カードNo.のみ。",
+  "統率は槍S/弓A/馬A/器A。カード画像バッジ拡大とixanary.com(cards/2456)の両方で一致。",
+  "コスト4.5・指揮4470(★0-0)・成長+48/+62/+2.5・絵師正子公也はixanary.com(cards/2456)。",
+  "八楯剛陣のLV10(確率100%/防御210%上昇/陣・同盟陣を陣破壊スキルから保護・模倣不可)はixanaryスキルページ・ixawiki(BushoCard/2456延沢満延)で確認。TR段階なし。",
+  "【2026-08-16 null解消】旧notesはixawikiの2次候補行がA列だけ空欄で4項目しか確認できず全null(推測で埋めない)としていたが、ixanaryスキルページ(skills/八楯剛陣)自身の合成テーブルでA列も含めた5枠全てを確認。B・C・S1・S2はixawikiとも一致(A列のみixawiki側が空欄、矛盾ではなく単なる記載漏れ)。八楯剛陣.jsonのownHiddenCandidate(氷瀑ノ封神SSS)とも一致するため確定した。A=八楯剛陣自己参照→氷瀑ノ封神、B=海神ノ浮船自己参照、C=幽冥主宰大神自己参照、S1=氷瀑ノ封神自己参照、S2=氷瀑ノ封印→氷瀑ノ封神。",
+  "A枠(skill=八楯剛陣≠afterSkill=氷瀑ノ封神)はgrantedViaSkills経由。氷瀑ノ封神.jsonのgrantedViaSkillsに八楯剛陣[S]を追加(2456自身は八楯剛陣.json側にA枠で直接列挙済み)。",
+  "海神ノ浮船・幽冥主宰大神・氷瀑ノ封神・氷瀑ノ封印・八楯剛陣(自身の初期スキル)は既存ページにsourceCharacters(2456)が正しいスロットで登録済みを確認。",
+  "章は情報源(ixanary/ixawiki)に記載が無いため未確認。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "reviewedOk": true,
+ "wikiOldestComment": "2022-09-05",
+ "wikiCommentCount": 19,
+ "chGuess": "24章",
+ "chSource": "wikiOldestComment"
 }

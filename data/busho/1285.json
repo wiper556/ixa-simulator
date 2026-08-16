@@ -1,5 +1,5 @@
 {
- "name": "島津義久",
+ "name": "島津義久（7）",
  "no": "1285",
  "ch": "29章",
  "cost": 1,
@@ -115,8 +115,14 @@
   }
  ],
  "notes": [
-  "カード画像照合済み(2026-07-30): 槍A/弓A/馬A/器SS(旧データはuma/kiの値が誤って入れ替わっていたため修正)",
-  "ixagno.blog.fc2.com(blog-entry-10198)生HTML照合済み(2026-08-02): TR1〜TR5の実在を確認し追記(45do.info/ordinary/0308のTR5値1490%上昇とも一致)",
-  "45do.info(ordinary/0308)生HTML + ixagno.blog.fc2.com(blog-entry-10198)生HTML の2ソースで完全一致を確認(2026-08-02)"
- ]
+  "2026-08-16: 武将名の（N）を、ixawikiの各カードページの一番古いコメントの日付順で振り直した。（N）はゲームには無く、同レアリティで同名が混ざらないようwiki利用者が出現順に付けた工夫。カードNo.順では10xxx番台(記念カード)で前後が逆転するため日付を使う(うぐさん指示)。",
+  "カード画像照合済み(2026-08-16再確認): 槍A/弓A/馬A/器SS、攻1070/防1230/兵法680.0/指揮2800/コスト1も画像と一致。",
+  "ixanary.com(/skills/炎国覇弾/)生HTML照合(2026-08-16): LV1・LV10・TR1〜TR5の全段階が実在し、TR1=620%/TR2=760%/TR3=950%/TR4=1200%/TR5=1490%が現在のtrTableと完全一致。",
+  "synthesisTable: ixanary.com(/skills/炎国覇弾/、生HTML)とixawiki.com(index.php?BushoCard/1285島津義久、生HTML、EUC-JP)の2ソースでA/B/C/S1/S2の1次候補・2次候補S1を突き合わせ、A=仙剣破斬[SSS]、B=至天ノ御剣[SSS]、C=國才連豪[SS]、S1=戦華雄渾[SS]、S2=万里嵐壁[SS](全枠自己参照)で完全一致を確認。",
+  "data/skill/仙剣破斬.json・至天ノ御剣.json・國才連豪.json・戦華雄渾.json・万里嵐壁.jsonのsourceCharactersに1285が正しい枠で登録済みであることを確認(A-3-11)。"
+ ],
+ "reviewedOk": true,
+ "wikiOldestComment": "2025-02-07",
+ "wikiCommentCount": 12,
+ "chGuess": "29章"
 }

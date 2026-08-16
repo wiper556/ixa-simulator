@@ -1,0 +1,139 @@
+{
+ "name": "的場昌長",
+ "no": "2496",
+ "ch": "30章",
+ "cost": 4,
+ "troop": "特",
+ "sub": "",
+ "effect": "本丸/所領防御陣形で発動し所属部隊の「雑賀衆」兵士防御力が5上昇・同じ陣形内で他部隊の「雑賀衆」兵士防御力が1上昇する(模倣不可・重複不可)",
+ "furigana": "まとばまさなが",
+ "illustrator": "正子公也",
+ "imageFull": "assets/img/characters/no2496_full.png",
+ "imageChar": "assets/img/characters/no2496_char.png",
+ "atkBase": 1100,
+ "atkGrowth": 54,
+ "defBase": 1220,
+ "defGrowth": 64,
+ "tacticsBase": 540,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 4390,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "A",
+  "uma": "B",
+  "ki": "SSS"
+ },
+ "initialSkill": "砲術小雲雀",
+ "skillDetail": "S/LV10 「雑賀衆」兵士防御力 5上昇(同陣形内の他部隊は1上昇)/対象:-\n模倣不可\n①本丸防御陣形または所領防御陣形にて発動する\n②所属部隊の「雑賀衆」の兵士防御力が5上昇する\n③同じ陣形内で他部隊の「雑賀衆」の兵士防御力が1上昇する(重複不可)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "確率 - / 本丸・所領防御陣形で発動 所属部隊の「雑賀衆」兵士防御力 5上昇・同陣形内の他部隊の「雑賀衆」兵士防御力 1上昇(模倣不可・重複不可)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": "確率 - / 所属部隊の「雑賀衆」兵士防御力 5.5上昇・同陣形内の他部隊 1上昇"
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": "確率 - / 所属部隊の「雑賀衆」兵士防御力 6上昇・同陣形内の他部隊 1上昇"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": "確率 - / 所属部隊の「雑賀衆」兵士防御力 6.5上昇・同陣形内の他部隊 1.5上昇"
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": "確率 - / 所属部隊の「雑賀衆」兵士防御力 7上昇・同陣形内の他部隊 2上昇"
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": "確率 - / 所属部隊の「雑賀衆」兵士防御力 8上昇・同陣形内の他部隊 2.5上昇"
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": null
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "四天轟雷",
+   "rank": "SS",
+   "afterSkill": "四天轟雷",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "攻撃 360%上昇+防御 360%上昇+部隊内全武将の兵科対象の全スキルに砲・器対象を追加",
+   "afterEffectShort": "攻撃 360%上昇+防御 360%上昇+部隊内全武将の兵科対象の全スキルに砲・器対象を追加"
+  },
+  {
+   "slot": "B",
+   "skill": "天啓ノ神撃",
+   "rank": "SS",
+   "afterSkill": "天啓ノ神撃",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "45%",
+   "effectShort": "攻撃 180%上昇(HP100以上ならランダムな敵1部隊の全武将に追加ダメージ5・模倣不可)",
+   "afterEffectShort": "攻撃 180%上昇(HP100以上ならランダムな敵1部隊の全武将に追加ダメージ5・模倣不可)"
+  },
+  {
+   "slot": "C",
+   "skill": "天ノ逆矛",
+   "rank": "S",
+   "afterSkill": "戦場妙技",
+   "afterRank": "B",
+   "target": "槍弓馬騎",
+   "rate": "36%",
+   "effectShort": "攻撃 115%上昇(防御側敵軍1部隊の武将HP被害+15%・模倣不可)",
+   "afterTarget": "全",
+   "afterRate": "32%",
+   "afterEffectShort": "攻撃 72%上昇+防御 72%上昇+破壊 20%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "絶無灰尽",
+   "rank": "SS",
+   "afterSkill": "絶無灰尽",
+   "afterRank": "SS",
+   "target": "全 無尽 不屈1",
+   "rate": "100%",
+   "effectShort": "攻撃 1010%上昇(無尽を持つため部隊消費コスト-0.5)",
+   "afterEffectShort": "攻撃 1010%上昇(無尽を持つため部隊消費コスト-0.5)"
+  },
+  {
+   "slot": "S2",
+   "skill": "四天轟雷",
+   "rank": "SS",
+   "afterSkill": "四天轟雷",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "攻撃 360%上昇+防御 360%上昇+部隊内全武将の兵科対象の全スキルに砲・器対象を追加",
+   "afterEffectShort": "攻撃 360%上昇+防御 360%上昇+部隊内全武将の兵科対象の全スキルに砲・器対象を追加"
+  }
+ ],
+ "notes": [
+  "カード画像はスキル欄「砲術小雲雀LV1」表記のためLV1形式(B-00)。画像から読んだのは武将名・統率バッジ(4隅拡大)・スキル名・初期値1100/1220/540・カードNo.・覇なしの6項目のみ。",
+  "統率は槍B/弓A/馬B/器SSS。器は赤地に金の「SSS」バッジで、カード画像バッジ拡大とixawiki(BushoCard/2496的場昌長)の「器 SSS」で一致。",
+  "コスト4・指揮4390(★0-0)・成長+54/+64/+2.5・絵師正子公也はixanary.com(cards/2496)・ixawiki・ixagno.blog.fc2.com(blog-entry-10687)の3ソースで一致。カード画像は極限突破済みで指揮兵数0/5790(ixanaryの極限突破欄5990は+0.5版・B-01)。",
+  "砲術小雲雀のLV10・TR1〜TR5(自部隊5/5.5/6/6.5/7/8、他部隊1/1/1/1.5/2/2.5)はixanary(skills/砲術小雲雀)とixagnoの鍛錬表で完全一致。ixawikiはLv10とTR5のみで、その2点も一致。TR6は記載なし。",
+  "カード画像のLV1値(自部隊1.5・他部隊0.1)は登録していない。",
+  "発動確率も兵科対象も持たない陣形発動型スキル。ixawikiは「防：砲術小雲雀」、ixanaryのカード一覧は「特：砲術小雲雀」と表記が割れているが効果文は同一。うちのtroopは戦闘数値を持たないので「特」にした。",
+  "合成テーブル(A・S2=四天轟雷SS/B=天啓ノ神撃SS/C=天ノ逆矛S→戦場妙技B/S1=絶無灰尽SS)はixanary(skills/砲術小雲雀)の1次・2次とixagnoの「初期テーブル/左記スキル移植後」表で完全一致。ixawikiは合成候補テーブルが未記入のテンプレートのままで情報なし。C枠がS→Bとランクの下がる変化だが2ソースが一致しており、当サイト既存の天ノ逆矛のownHiddenCandidate(戦場妙技B)とも一致する。",
+  "砲術小雲雀自身はixanaryの合成素材欄が「合成不可スキルです」のため移植不可。",
+  "章は30章。ixagno(blog-entry-10687)が「2025年11月追加の限定武将」かつ本文に「■30章の時点で戦力として見た場合」と明記。wikiにコメントが1件も無いためchGuessは出ていない。"
+ ],
+ "reviewedOk": true,
+ "wikiOldestComment": null,
+ "wikiCommentCount": 0,
+ "chGuess": null
+}

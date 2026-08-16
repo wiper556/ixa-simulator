@@ -1,6 +1,7 @@
 {
- "name": "最上義光【覇】",
+ "name": "最上義光（5）【覇】",
  "no": "1262",
+ "reviewedOk": true,
  "ch": "28章",
  "cost": 5.5,
  "troop": "全防",
@@ -123,7 +124,12 @@
   }
  ],
  "notes": [
+  "2026-08-16: 武将名の（N）を、ixawikiの各カードページの一番古いコメントの日付順で振り直した。（N）はゲームには無く、同レアリティで同名が混ざらないようwiki利用者が出現順に付けた工夫。カードNo.順では10xxx番台(記念カード)で前後が逆転するため日付を使う(うぐさん指示)。",
   "カード画像照合済み(2026-07-30): 槍X/弓A/馬S/器A",
-  "45do.info確認(生HTML照合済み): skiladd_wrapの見出し(候補A/B/C/S1/S2)と直後のスキル名が位置対応しており明示的。"
- ]
+  "45do.info確認(生HTML照合済み): skiladd_wrapの見出し(候補A/B/C/S1/S2)と直後のスキル名が位置対応しており明示的。",
+  "黄丸化検証(2026-08-16): カード画像no1262_full.pngの4隅バッジ(槍X虹色/馬S/弓A/器A)を再確認し一致、覇マークとskillDetailの保護効果文の両方を確認し覇道分類が正しいことを確認。TR1〜TR5の値(21/22/23/24/25%)はixanary.com(skills/虎将鉄牙)の鍛錬表と全行一致(TR6無し)。synthesisTableはixanary.com+ixawiki.com(BushoCard/1262最上義光)の2ソースでA/B/C/S1/S2全枠・afterSkillとも完全一致。龍驤虎躍・永世ノ天隻・虚実兵妙・月煌侵蝕・黄泉醜女ノ屍兵のdata/skill側sourceCharactersに1262が正しいslotで記載済みを確認(逆引き済み)。"
+ ],
+ "wikiOldestComment": "2024-08-09",
+ "wikiCommentCount": 15,
+ "chGuess": "28章"
 }

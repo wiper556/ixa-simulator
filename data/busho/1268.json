@@ -1,6 +1,7 @@
 {
- "name": "真田信繁",
+ "name": "真田信繁（2）",
  "no": "1268",
+ "reviewedOk": true,
  "ch": "28章",
  "cost": 5,
  "troop": "弓馬器鉄攻",
@@ -135,6 +136,11 @@
   }
  ],
  "notes": [
-  "synthesisTable: 45do.info生HTML(skiladd_wrap)+ixanary.com(烈火ノ闘将スキルページの合成テーブル)で2ソース一致確認済み(2026-08-02)"
- ]
+  "2026-08-16: 武将名の（N）を、ixawikiの各カードページの一番古いコメントの日付順で振り直した。（N）はゲームには無く、同レアリティで同名が混ざらないようwiki利用者が出現順に付けた工夫。カードNo.順では10xxx番台(記念カード)で前後が逆転するため日付を使う(うぐさん指示)。",
+  "synthesisTable: 45do.info生HTML(skiladd_wrap)+ixanary.com(烈火ノ闘将スキルページの合成テーブル)で2ソース一致確認済み(2026-08-02)",
+  "黄丸化検証(2026-08-16): カード画像no1268_full.pngの4隅バッジ(槍S/馬S/弓A/器A)を確認し一致。TR係数6.8/6.9/7.0/7.1/7.2はixanary.com(skills/烈火ノ闘将)の鍛錬表と全行完全一致(TR6無し)。synthesisTableはixanary.com+ixawiki.com(BushoCard/1268真田信繁)の2ソースでA/B/C/S1/S2全枠・afterSkillとも一致(ixawiki側は2次候補のA/B列が編集未記入で空欄だったが、ixanaryの明示データ+C/S1/S2列の一致で裏取り済み)。烈火ノ闘将(A・B自己参照)・思金神ノ深謀・破邪後輝・遠呂智ノ閃光のdata/skill側sourceCharactersに1268が正しいslotで記載済みを確認(逆引き済み)。"
+ ],
+ "wikiOldestComment": "2024-08-13",
+ "wikiCommentCount": 4,
+ "chGuess": "28章"
 }

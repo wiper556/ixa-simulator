@@ -99,6 +99,11 @@
  ],
  "notes": [
   "45do.info生HTML(ordinary/0340)の合成テーブル確認。初期スキル(破軍一投)の移植後合成候補は必ずS1のスキルになる(ユーザー指摘の確認方法)ため、",
-  "A/B/C=破軍一投[A]→龍驤虎躍[SS](移植後、skills.html側sourceCharactersに追記)/S1=龍驤虎躍[SS](自己参照)/S2=志半ノ矛楯[A](自己参照、高山マリアS2と同一効果で数値も一致確認)"
- ]
+  "A/B/C=破軍一投[A]→龍驤虎躍[SS](移植後、skills.html側sourceCharactersに追記)/S1=龍驤虎躍[SS](自己参照)/S2=志半ノ矛楯[A](自己参照、高山マリアS2と同一効果で数値も一致確認)",
+  "2026-08-16黄丸化検証: ixanary.com生HTML(cards/2395, skills/破軍一投)でLV1/LV10の数値・合成テーブル(1次A/B/C=破軍一投,S1=龍驤虎躍自己参照,S2=志半ノ矛楯自己参照/2次A/B/C=龍驤虎躍[SS])を再確認、既存データと一致。TRは存在しない(LV1/LV10のみ)。sourceCharacters逆引き(破軍一投A・B・C/龍驤虎躍S1)も確認済み。rankGrades(yari:A/yumi:A/uma:B/ki:S)はカード画像4隅バッジで再照合済み"
+ ],
+ "reviewedOk": true,
+ "wikiOldestComment": "2025-06-03",
+ "wikiCommentCount": 7,
+ "chGuess": "29章"
 }

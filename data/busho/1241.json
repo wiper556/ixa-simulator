@@ -1,5 +1,5 @@
 {
- "name": "蘆名盛氏（2）",
+ "name": "蘆名盛氏（3）",
  "no": "1241",
  "ch": "26章",
  "cost": 4.5,
@@ -24,7 +24,7 @@
   "ki": "S"
  },
  "initialSkill": "金城ノ黒鷹",
- "skillDetail": "S/LV10 確率 49% 防御 120%上昇/対象:槍・馬・器・鉄\n①防御 120%上昇する\n②攻撃側敵軍全武将のうちこの武将のコストを上回る武将コスト部分の総和×16%を防御効果に加算する(TR1〜TR5は未確認)",
+ "skillDetail": "S/LV10 確率 49% 防御 120%上昇/対象:槍・馬・器・鉄\n①防御 120%上昇する\n②攻撃側敵軍全武将のうちこの武将のコストを上回る武将コスト部分の総和×16%を防御効果に加算する",
  "trTable": [
   {
    "level": "LV10",
@@ -94,6 +94,12 @@
   }
  ],
  "notes": [
-  "45do.info(生HTML skiladd_wrap)+ameameixa.com(スキルテーブル)の2ソース照合済み。B候補はameameixa側がA候補と同一(高津姫神)の誤記とみられ、45do.info側(八重言代主神、skills.htmlにも登録済み)を採用。S1のランクは45do.info側がSSとしていたが、45do.info内の他ページ(No.1235)・ameameixa・skills.htmlがいずれもSSSのため、45do.info側のSS表記を誤記とみなしSSSに補正"
- ]
+  "2026-08-16: 武将名の（N）を、ixawikiの各カードページの一番古いコメントの日付順で振り直した。（N）はゲームには無く、同レアリティで同名が混ざらないようwiki利用者が出現順に付けた工夫。カードNo.順では10xxx番台(記念カード)で前後が逆転するため日付を使う(うぐさん指示)。",
+  "45do.info(生HTML skiladd_wrap)+ameameixa.com(スキルテーブル)の2ソース照合済み。B候補はameameixa側がA候補と同一(高津姫神)の誤記とみられ、45do.info側(八重言代主神、skills.htmlにも登録済み)を採用。S1のランクは45do.info側がSSとしていたが、45do.info内の他ページ(No.1235)・ameameixa・skills.htmlがいずれもSSSのため、45do.info側のSS表記を誤記とみなしSSSに補正",
+  "2026-08-16黄丸化再検証: ixanary.com(cards/1241, skills/金城ノ黒鷹)+ixawiki.com(BushoCard/1241蘆名盛氏)の2ソースでsynthesisTable5枠(A高津姫神SS自己参照/B八重言代主神SS→無窮天斥陣SS/C神屋楯比売命SS自己参照/S1四至ノ神域SSS自己参照/S2黄泉醜女ノ屍兵SS→天地黎明SSS)が完全一致(S1のSSS再確認含む)。基礎値(1060/1200/660、成長+40/+66/+3、指揮4740)・rankGrades(槍S/弓A/馬A/器S、カード画像バッジ拡大確認、ixawikiのステータス表とも一致)もixanary生HTMLと一致。data/skill/高津姫神・八重言代主神・神屋楯比売命・四至ノ神域の各JSONのsourceCharactersに1241が正しいslotで既に記載済み(無窮天斥陣はgrantedViaSkills経由で正しく空)。自身の初期スキル「金城ノ黒鷹」の「TR1〜TR5未確認」を追加ソースで確認、ixanary(cards/1241・skills/金城ノ黒鷹)+ixawiki(BushoCard/1241)ともLV1/LV10のみでTR区分自体が存在しないことを確認、trTable1行のみが正しいと確定したためskillDetail・スキル側notesを更新した。"
+ ],
+ "reviewedOk": true,
+ "wikiOldestComment": "2023-08-11",
+ "wikiCommentCount": 27,
+ "chGuess": "26章"
 }

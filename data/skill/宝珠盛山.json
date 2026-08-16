@@ -1,0 +1,44 @@
+{
+ "name": "宝珠盛山",
+ "rank": "A",
+ "baseRate": 50,
+ "target": "槍・砲・器",
+ "noMimic": true,
+ "effectSummary": "A/LV10 確率 50% 防御 240%上昇/対象:槍・砲・器\n模倣不可\n①防御 240%上昇する\n②所領防御陣形の第肆列目に配置時、防御効果が1.5倍になり飛翔5を得る",
+ "sourceCharacters": [
+  {
+   "name": "鵜堂刃衛",
+   "no": "2611",
+   "slot": "B",
+   "db": "kyoku",
+   "note": [
+    "鵜堂刃衛(2611)のsynthesisTable B枠(2026-08-16、ixanary.com/skills/心の一方の合成テーブルで確認)"
+   ]
+  },
+  {
+   "name": "赤べこ",
+   "no": "2616",
+   "slot": "B",
+   "db": "kyoku",
+   "note": [
+    "赤べこ(2616)のsynthesisTable B枠(2026-08-16)"
+   ]
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "朝曇ノ明麗",
+  "rank": "S"
+ },
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・砲・器　確率 50% / 防御 240%上昇(所領防御陣形第肆列目配置時1.5倍+飛翔5取得・模倣不可)"
+  }
+ ],
+ "notes": [
+  "2026-08-16 No.2611(鵜堂刃衛)黄丸化検証時に新規作成。A-3-9の例外規定(移植後合成候補=朝曇ノ明麗[S]が既存ページを持つため、Aランクだが単独ページ作成対象、同じ理由で作成済みの鬼十河.jsonと同型)。",
+  "対象・確率・効果文はixanary.com(skills/宝珠盛山)の生HTML(LV10行)から。「模倣不可」は修飾語なしの独立行として記載。",
+  "ownHiddenCandidateはixanary.com(skills/宝珠盛山)自身の合成テーブル(1次A/B/C=宝珠盛山自己参照、2次候補S1=朝曇ノ明麗[S])から導出。"
+ ]
+}

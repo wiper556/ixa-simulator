@@ -1,0 +1,141 @@
+{
+ "name": "奥村永福（2）",
+ "no": "2485",
+ "ch": "28章",
+ "cost": 5,
+ "troop": "全防",
+ "sub": "",
+ "effect": "本丸/所領防御陣形内でこの武将の縦横列の武将と自身の槍兵統率をXXX・兵器統率をXまで上昇させて防御力を計算する(特殊効果は模倣不可・重複不可)",
+ "furigana": "おくむらながとみ",
+ "illustrator": "正子公也",
+ "imageFull": "assets/img/characters/no2485_full.png",
+ "imageChar": "assets/img/characters/no2485_char.png",
+ "atkBase": 1090,
+ "atkGrowth": 48,
+ "defBase": 1210,
+ "defGrowth": 62,
+ "tacticsBase": 540,
+ "tacticsGrowth": 3,
+ "lv0Troops": 4780,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "X"
+ },
+ "initialSkill": "護城結鎖",
+ "skillDetail": "S/LV10 確率 48% 防御 460%上昇/対象:全\n①防御 460%上昇する\n②本丸/所領防御陣形内でこの武将の縦と横列に配置された武将と自身の槍兵統率をXXX・兵器統率をXまで上昇させて防御力を計算する(特殊効果は模倣不可・重複不可)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 48% / 防御 460%上昇(縦横列の武将と自身の槍兵統率XXX・兵器統率Xまで上昇させて防御力計算・特殊効果は模倣不可・重複不可)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": "全　確率 48% / 防御 530%上昇(槍兵統率XXX・兵器統率X)"
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": "全　確率 48% / 防御 700%上昇(槍兵統率XXX・兵器統率X)"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": "全　確率 48% / 防御 910%上昇(槍兵統率XXX・兵器統率XX)"
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": "全　確率 48% / 防御 1350%上昇(槍兵統率XXX・兵器統率XX)"
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": "全　確率 48% / 防御 1790%上昇(槍兵統率XXX・兵器統率XXX)"
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": null
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "国津破邪ノ楯",
+   "rank": "SS",
+   "afterSkill": "国津破邪ノ楯",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "60%",
+   "effectShort": "防御 60.04%上昇(部隊総コストで変動)",
+   "afterEffectShort": "防御 60.04%上昇(部隊総コストで変動)"
+  },
+  {
+   "slot": "B",
+   "skill": "龍驤虎躍",
+   "rank": "SS",
+   "afterSkill": "龍驤虎躍",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "60%",
+   "effectShort": "攻撃 810%上昇+防御 810%上昇(部隊消費コスト-1・特殊効果は模倣不可)",
+   "afterEffectShort": "攻撃 810%上昇+防御 810%上昇(部隊消費コスト-1・特殊効果は模倣不可)"
+  },
+  {
+   "slot": "C",
+   "skill": "旌旗翳天ノ覇陣",
+   "rank": "SS",
+   "afterSkill": "旌旗翳天ノ覇陣",
+   "afterRank": "SS",
+   "target": "全 兵站",
+   "rate": "54%",
+   "effectShort": "防御 90.11%上昇(部隊の総コストで効果が変化)",
+   "afterEffectShort": "防御 90.11%上昇(部隊の総コストで効果が変化)"
+  },
+  {
+   "slot": "S1",
+   "skill": "永世ノ天隻",
+   "rank": "SS",
+   "afterSkill": "永世ノ天隻",
+   "afterRank": "SS",
+   "target": "全 飛翔9",
+   "rate": "48%",
+   "effectShort": "防御 6.5%×防御参加武将数(280人)=1820.0%(敵軍飛翔持ち9人未満の時通常武将ダメージを受けない)",
+   "afterEffectShort": "防御 6.5%×防御参加武将数(280人)=1820.0%(敵軍飛翔持ち9人未満の時通常武将ダメージを受けない)"
+  },
+  {
+   "slot": "S2",
+   "skill": "四天轟雷",
+   "rank": "SS",
+   "afterSkill": "四天轟雷",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "攻撃 360%上昇+防御 360%上昇+部隊内全武将の兵科対象の全スキルに砲・器対象を追加",
+   "afterEffectShort": "攻撃 360%上昇+防御 360%上昇+部隊内全武将の兵科対象の全スキルに砲・器対象を追加"
+  }
+ ],
+ "notes": [
+  "カード画像はスキル欄「護城結鎖LV1」表記のためLV1形式(B-00)。画像から読んだのは武将名・統率バッジ(4隅拡大)・スキル名・初期値1090/1210/540・カードNo.・覇なしの6項目のみ。",
+  "統率は槍B/弓A/馬A/器X。器は虹色(レインボー)のXバッジで、カード画像バッジ拡大とixawiki(BushoCard/2485奥村永福)の「器 X」で一致(A-1のX誤読注意に該当)。",
+  "コスト5・指揮4780(★0-0)・成長+48/+62/+3.0・絵師正子公也はixanary.com(cards/2485)とixawikiの2ソースで一致。カード画像は天限突破済みで指揮兵数0/6980。ixanaryの天限突破欄7180は+0.5版(B-01)で、6980がカード実物と一致する。",
+  "護城結鎖のLV10・TR1〜TR5(460/530/700/910/1350/1790%)はixanary(skills/護城結鎖)から取得。ixawikiはLv10とTR5のみ掲載で、その2点は一致。TR6は両ソースとも記載なし。",
+  "カード画像のLV1値(確率16%/防御150%上昇)は登録していない。",
+  "効果文中の「槍兵統率をXXX」「兵器統率をX」のXは統率ランク(S以上のX/XX/XXX)を指すもので、伏せ字ではない。ixanary・ixawikiとも同じ表記。",
+  "合成テーブル(A=国津破邪ノ楯/B=龍驤虎躍/C=旌旗翳天ノ覇陣/S1=永世ノ天隻/S2=四天轟雷、1次=2次=3次で全て自己参照)はixanary(skills/護城結鎖)とixawiki(BushoCard/2485)の2ソースで一致。",
+  "護城結鎖自身はixanaryの合成素材欄が「合成不可スキルです」のため移植不可。",
+  "名前の（2）: 極レアリティの同名は No.2299(wiki最古コメント2021-06-08)と本カード(2024-12-18)の2枚で、出現が早い順に2299=(1)・2485=(2)。ixagno.blog.fc2.comの限定武将一覧表も「奥村永福(2)」で一致。",
+  "ixagno.blog.fc2.comは限定武将一覧表(blog-entry-1294)に名前と効果概要はあるが、個別記事は見つからなかった。",
+  "章は情報源(ixanary/ixawiki/ixagno)に記載が無いため未確認。wiki最古コメント2024-12-18からchGuessは28章。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "reviewedOk": true,
+ "wikiOldestComment": "2024-12-18",
+ "wikiCommentCount": 24,
+ "chGuess": "28章",
+ "chSource": "wikiOldestComment"
+}

@@ -1,0 +1,109 @@
+{
+ "name": "寿桂尼（1）",
+ "no": "2711",
+ "ch": "5章",
+ "cost": 2.0,
+ "troop": "槍弓砲防",
+ "sub": "",
+ "effect": "防御 39%上昇",
+ "furigana": "じゅけいに",
+ "illustrator": "戸橋ことみ",
+ "imageFull": "assets/img/characters/no2711_full.png",
+ "imageChar": "assets/img/characters/no2711_char.png",
+ "atkBase": 620,
+ "atkGrowth": 16.0,
+ "defBase": 710,
+ "defGrowth": 18.0,
+ "tacticsBase": 450.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2130,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "S",
+  "uma": "D",
+  "ki": "B"
+ },
+ "initialSkill": "弓妖陣",
+ "skillDetail": "B/LV10 確率 25% 防御 39%上昇/対象:槍弓砲\n①防御が39%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍弓砲　確率 25% / 防御 39%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "鉄壁の備え",
+   "rank": "D",
+   "afterSkill": "城崩し",
+   "afterRank": "D",
+   "target": "全",
+   "rate": "40%",
+   "effectShort": "防御 15%上昇",
+   "afterTarget": "器",
+   "afterRate": "35%",
+   "afterEffectShort": "破壊 20%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "車懸り 白狐",
+   "rank": "B",
+   "afterSkill": "車懸り 白狐",
+   "afterRank": "B",
+   "target": "槍弓馬",
+   "rate": "20%",
+   "effectShort": "攻撃 30%上昇",
+   "afterEffectShort": "攻撃 30%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "八咫烏",
+   "rank": "B",
+   "afterSkill": "八咫烏",
+   "afterRank": "B",
+   "target": "砲器",
+   "rate": "35%",
+   "effectShort": "防御 30%上昇",
+   "afterEffectShort": "防御 30%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "背水之陣",
+   "rank": "B",
+   "afterSkill": "背水之陣",
+   "afterRank": "B",
+   "target": "槍弓馬",
+   "rate": "20%",
+   "effectShort": "防御 37%上昇",
+   "afterEffectShort": "防御 37%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "神速",
+   "rank": "A",
+   "afterSkill": "神速",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "速度 55%上昇",
+   "afterEffectShort": "速度 55%上昇"
+  }
+ ],
+ "notes": [
+  "2026-08-16 新規登録(担当K6)。カード画像はスキル表記がLV1の育成前カードのため、画像から採ったのは武将名/統率(4隅バッジ)/スキル名/攻撃・防御・兵法の初期値/覇でないこと/カードNo.の6項目のみ(B-00)。",
+  "武将名の（1）: ixawiki武将カード一覧(極)で「寿桂尼」は No.2711 と No.2320 の2枚。初回コメント日は 2711=2012-12-04 < 2320=2022-05-06 なので2711が（1）。",
+  "統率は画像の4隅バッジで槍A/馬D/弓S/器Bを個別に拡大して確認。ixawiki(BushoCard/2711寿桂尼)の「統率力 槍A 馬D 弓S 器B」と一致。",
+  "コスト2.0・指揮兵数2130・初期値620/710/450・成長値+16/+18/+2.0・ふりがな・絵師は ixanary.com(cards/2711) と ixawiki.com(BushoCard/2711寿桂尼) の2ソースで完全一致。lv0Troopsはixanaryの★0-0(2130)。",
+  "スキル効果はLV1カードのため外部ソースを採用。ixanary(cards/2711)のLV10は確率+25%/対象 槍弓砲/防御39%上昇。ixawikiのカードページはLV1表記(確率+7%/槍弓砲防+21%)で、LV1側の一致を確認したうえでLV10を採用。TR段はどちらのソースにも無い。",
+  "合成候補はixanary.com(skills/弓妖陣)の1次/2次と ixawiki(BushoCard/2711)の合成候補テーブルの2ソースで全5枠完全一致(A=鉄壁の備え[D]→城崩し[D]、B=車懸り 白狐[B]自己参照、C=八咫烏[B]自己参照、S1=背水之陣[B]自己参照、S2=神速[A]自己参照)。No.2704淀(神勅賢母)と同一の合成テーブルであることも確認した。各枠のtarget/rate/effectShortは候補スキル自身のixanaryページのLV10行から転記。候補は全てS未満、初期スキル弓妖陣もBランクのため新規スキルページ作成は不要(A-3-9)。",
+  "章はixanary.com/ixawiki.comのカードページに記載が無く未確認。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "reviewedOk": true,
+ "wikiOldestComment": "2012-12-04",
+ "wikiCommentCount": 85,
+ "chGuess": "5章",
+ "chSource": "wikiOldestComment"
+}

@@ -1,0 +1,158 @@
+{
+ "name": "比古清十郎【覇】",
+ "no": "10054",
+ "ch": "28章",
+ "cost": 6,
+ "troop": "全攻",
+ "sub": "覇道",
+ "effect": "攻撃戦闘時、この武将が持つ卓越スキルは二度卓越できる+部隊内武将卓越追加確率+20%(模倣不可)",
+ "furigana": "ひこせいじゅうろう",
+ "illustrator": "NW/S,RKKD 直良有祐",
+ "imageFull": "assets/img/characters/no10054_full.png",
+ "imageChar": "assets/img/characters/no10054_char.png",
+ "atkBase": 2600,
+ "atkGrowth": 170,
+ "defBase": 2200,
+ "defGrowth": 160,
+ "tacticsBase": 830,
+ "tacticsGrowth": 4.0,
+ "lv0Troops": 5360,
+ "rankGrades": {
+  "yari": "X",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "閃龍ノ御剣",
+ "skillDetail": "SSS/LV10 確率 100% 攻撃 750%上昇/対象:全　覇道\n模倣不可\n①攻撃 750%上昇する\n②攻撃戦闘時この武将が持つ卓越スキルは二度卓越できる\n③部隊内武将の卓越追加確率が20%上昇する(卓越確率の加算効果は自部隊内重複不可)\n④覇道を持つため所属部隊の武将のスキルを無効化・発動率低下から保護する",
+ "categoryLinks": [
+  {
+   "href": "skills-hadou.html",
+   "label": "覇道スキル一覧を見る"
+  },
+  {
+   "href": "skills-takuetsu.html",
+   "label": "卓越スキル一覧を見る"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全 覇道　確率 100% / 攻撃 750%上昇+攻撃戦闘時にこの武将の卓越スキルが二度卓越できる+部隊内武将卓越追加確率+20%(模倣不可・卓越確率の加算効果は自部隊内重複不可)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": "全 覇道　確率 100% / 攻撃 930%上昇+二度卓越+部隊内武将卓越追加確率+20%"
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": "全 覇道　確率 100% / 攻撃 930%上昇+二度卓越+部隊内武将卓越追加確率+30%"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": "全 覇道　確率 100% / 攻撃 1320%上昇+二度卓越+部隊内武将卓越追加確率+30%"
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": "全 覇道　確率 100% / 攻撃 1850%上昇+二度卓越+部隊内武将卓越追加確率+40%"
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": "全 覇道　確率 100% / 攻撃 2390%上昇+二度卓越+部隊内武将卓越追加確率+100%"
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": null
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "黒飛燕剣",
+   "rank": "S",
+   "afterSkill": "傾国ノ艶姫",
+   "afterRank": "S",
+   "target": "部隊長",
+   "rate": "50%",
+   "effectShort": "飛翔4+部隊長の模倣可能な初期スキルを模倣(卓越:追加確率50%で1.2倍にして模倣)",
+   "afterTarget": "部隊長",
+   "afterRate": "60%",
+   "afterEffectShort": "所属部隊の部隊長が持つ模倣可能な初期スキルを模倣する(卓越・追加確率30%で通常攻撃/防御効果を1.2倍して模倣する)"
+  },
+  {
+   "slot": "B",
+   "skill": "至天ノ御剣",
+   "rank": "SSS",
+   "afterSkill": "至天ノ御剣",
+   "afterRank": "SSS",
+   "target": "自身",
+   "rate": "70%",
+   "effectShort": "自身が持つ初期スキルを模倣する(卓越:追加確率30%で通常攻撃/防御効果1.3倍にして模倣)",
+   "afterTarget": "自身",
+   "afterRate": "70%",
+   "afterEffectShort": "自身が持つ初期スキルを模倣する(卓越:追加確率30%で通常攻撃/防御効果1.3倍にして模倣)"
+  },
+  {
+   "slot": "C",
+   "skill": "虚実ノ理合",
+   "rank": "S",
+   "afterSkill": "虚実ノ理合",
+   "afterRank": "S",
+   "target": "部隊長 覇道",
+   "rate": "40%",
+   "effectShort": "部隊長の初期スキルを模倣(卓越時1.2倍)",
+   "afterTarget": "部隊長 覇道",
+   "afterRate": "40%",
+   "afterEffectShort": "部隊長の初期スキルを模倣(卓越時1.2倍)"
+  },
+  {
+   "slot": "S1",
+   "skill": "虚空ノ導",
+   "rank": "SSS",
+   "afterSkill": "虚空ノ導",
+   "afterRank": "SSS",
+   "target": "自身",
+   "rate": "70%",
+   "effectShort": "自身が持つ初期スキルを模倣する(卓越:追加確率30%で通常攻撃/防御効果1.3倍にして模倣)",
+   "afterTarget": "自身",
+   "afterRate": "70%",
+   "afterEffectShort": "自身が持つ初期スキルを模倣する(卓越:追加確率30%で通常攻撃/防御効果1.3倍にして模倣)"
+  },
+  {
+   "slot": "S2",
+   "skill": "開闢ノ逆鉾",
+   "rank": "SS",
+   "afterSkill": "開闢ノ逆鉾",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "攻撃 254%上昇+卓越:攻撃戦闘時追加確率30%で自部隊の兵士被害15%減少(部隊内重複上限2・模倣不可)",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 254%上昇+卓越:攻撃戦闘時追加確率30%で自部隊の兵士被害15%減少(部隊内重複上限2・模倣不可)"
+  }
+ ],
+ "notes": [
+  "るろうに剣心コラボの天(覇)。2024年11月の「るろ剣コラボ包み【天】」で販売、2025年11月に第二弾で再販(ixagno.blog.fc2.com・ixawikiの紹介文)。カード画像はスキル欄が「LV1」表記のためB-00のLV1形式で、画像から採ったのは武将名・統率(4隅バッジ拡大)・スキル名・攻撃/防御/兵法の初期値・覇の有無・カードNo.の6項目のみ。",
+  "統率は槍X(虹色)/馬A/弓A/器S(カード画像バッジ拡大)。ixawiki.com(BushoCard/10054比古清十郎)は馬をCと書いているが、カード画像の馬バッジは14倍に拡大しても赤いAで、Cとは字形が違う。rankGradesはカード画像を最上位の根拠とする原則に従いAにした。",
+  "カード表示の指揮兵数0/8160は「天限突破」状態の値。5360+6×200+800+800=8160でixanary.com(★0-0=5360)・ixawiki.com(5360)と整合する。",
+  "コスト6・成長値+170/+160/+4.0・絵師はixanary.com(cards/10054)とixawiki.comが一致。初期値2600/2200/830はカード実物を含め3ソース一致。",
+  "TR4の「部隊内武将卓越追加確率」だけ情報源が割れている(ixanary.com=+40%、ixagno.blog.fc2.com blog-entry-10043=+60%)。ixawiki.comはLV10とTR5しか載せず、ixagnoの卓越スキル比較表(blog-entry-9390)もLV10とTR5しか無いため決着が付かなかった。標準ソースのixanary側(+40%)を採用し、未解決の食い違いとしてここに残す。他の段(LV10/TR1/TR2/TR3/TR5)は3ソースで一致。",
+  "覇道判定は保護効果+カード上の赤字「覇道」表記の両方を満たす(カード画像のスキル行に赤字で「覇道」)。",
+  "9項目チェック: 覇道と卓越が該当(skills-hadou.html / skills-takuetsu.html)。一覧ページ(生成物)側の配列への追記は担当範囲外のため未実施。",
+  "合成テーブルはixanary.com(skills/閃龍ノ御剣)とixagno.blog.fc2.com(blog-entry-10043)の2ソースでA〜S2の1次/2次が完全一致。ixawikiの合成候補表は空テンプレート。",
+  "TR4の部隊内武将卓越追加確率がixanary.com(+40%)とixagno.blog.fc2.com(+60%)で割れたまま決着していないため、reviewedOkは立てず青丸のままにした。ユーザー確認が要る。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2024-11-13",
+ "wikiCommentCount": 44,
+ "chGuess": "28章",
+ "chSource": "wikiOldestComment"
+}

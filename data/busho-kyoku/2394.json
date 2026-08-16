@@ -126,6 +126,11 @@
  ],
  "notes": [
   "45do.info生HTML(ordinary/0339)のskiladd_wrap確認+ixagno.blog.fc2.com(blog-entry-10392)の合成テーブルで移植後の変化先も確認(2ソース一致):",
-  "A=戦陣吟詠[A]→戦陣吟詠[A](自己参照)/B=十束ノ神域[SS]→天聖宝冠[SSS](skills.html側ownHiddenCandidateとも一致)/C・S1=聖廉母堂[A]→聖廉母堂[A](自己参照)/S2=志半ノ矛楯[A]→志半ノ矛楯[A](自己参照)"
- ]
+  "A=戦陣吟詠[A]→戦陣吟詠[A](自己参照)/B=十束ノ神域[SS]→天聖宝冠[SSS](skills.html側ownHiddenCandidateとも一致)/C・S1=聖廉母堂[A]→聖廉母堂[A](自己参照)/S2=志半ノ矛楯[A]→志半ノ矛楯[A](自己参照)",
+  "2026-08-16黄丸化検証: ixanary.com生HTML(cards/2394, skills/聖廉母堂)でLV1/LV10/TR1/TR2の数値・合成テーブル(1次A=戦陣吟詠,B=十束ノ神域,C/S1=聖廉母堂自己参照,S2=志半ノ矛楯自己参照/2次A=戦陣吟詠自己参照,B=天聖宝冠[SSS])を再確認、既存データと一致。TR3以降は存在しない(ixanary表に行なし)。sourceCharacters逆引き(戦陣吟詠A/十束ノ神域B、天聖宝冠側はgrantedViaSkills経由で2394の直接列挙なしも正しい)を確認済み。categoryLinks(skills-takuetsu.html)も既に正しく双方向登録済み。rankGrades(yari:B/yumi:S/uma:A/ki:A)はカード画像4隅バッジで再照合済み"
+ ],
+ "reviewedOk": true,
+ "wikiOldestComment": "2025-06-03",
+ "wikiCommentCount": 12,
+ "chGuess": "29章"
 }

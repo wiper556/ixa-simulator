@@ -1,7 +1,7 @@
 {
- "name": "武田勝頼",
+ "name": "武田勝頼（3）",
  "no": "2448",
- "ch": "未確認",
+ "ch": "22章",
  "cost": 4.5,
  "troop": "全攻防",
  "sub": "",
@@ -75,8 +75,8 @@
    "rank": "S",
    "afterSkill": "騎神炎山",
    "afterRank": "S",
-   "target": null,
-   "rate": null,
+   "target": "全",
+   "rate": "70%",
    "effectShort": "攻撃 70%上昇+防御 70%上昇(自部隊内で卓越発動したスキル数×40%を攻防効果に加算・模倣不可)",
    "afterTarget": "馬器騎",
    "afterRate": "40%",
@@ -88,8 +88,8 @@
    "rank": "S",
    "afterSkill": "騎神炎山",
    "afterRank": "S",
-   "target": null,
-   "rate": null,
+   "target": "全",
+   "rate": "70%",
    "effectShort": "攻撃 70%上昇+防御 70%上昇(自部隊内で卓越発動したスキル数×40%を攻防効果に加算・模倣不可)",
    "afterTarget": "馬器騎",
    "afterRate": "40%",
@@ -101,8 +101,8 @@
    "rank": "S",
    "afterSkill": "騎神炎山",
    "afterRank": "S",
-   "target": null,
-   "rate": null,
+   "target": "全",
+   "rate": "70%",
    "effectShort": "攻撃 70%上昇+防御 70%上昇(自部隊内で卓越発動したスキル数×40%を攻防効果に加算・模倣不可)",
    "afterTarget": "馬器騎",
    "afterRate": "40%",
@@ -134,11 +134,23 @@
   }
  ],
  "notes": [
+  "2026-08-16: 武将名の（N）を、ixawikiの各カードページの一番古いコメントの日付順で振り直した。（N）はゲームには無く、同レアリティで同名が混ざらないようwiki利用者が出現順に付けた工夫。カードNo.順では10xxx番台(記念カード)で前後が逆転するため日付を使う(うぐさん指示)。",
   "出典: カード画像(LV1形式: 極・統率 槍S/弓A/馬A/器A拡大確認・初期値1100/1100/500・コスト4.5・LV1スキル値)",
   " + ixanary.com/cards/2448(指揮4420(★0-0)・成長+49/+49/+2.5・LV10: 確率+70%/全攻防70%/卓越発動スキル数×40%加算・模倣不可)",
   " + ixawiki BushoCard/2448(統率2次確認・合成テーブル1次/2次候補+S2候補のLV10効果)。",
   "統率はカード画像+ixawikiの2ソース一致。攻撃+防御の同時変動はtrTableに併記(multistat規則)。",
   "初期スキルがSランクのためスキル個別ページの新規作成が必要(docsのTODOに記録済み)。",
-  "合成テーブルはixawiki(1次候補+2次候補+S2候補のLV10効果)"
- ]
+  "合成テーブルはixawiki(1次候補+2次候補+S2候補のLV10効果)",
+  "2026-08-16黄丸化検証: rankGrades(S/A/A/A)はno2448_full.pngの4隅バッジを個別ズームして再確認し一致。基礎値・コスト・指揮兵数・成長値・LV10スキル値(確率70%)はixanary.com(cards/2448)生HTMLで一致確認。初期スキルSランクのページ(data/skill/比類なき大将.json)は2026-08-12に一括作成済みでA・B・C全枠が正しく登録済みであることを確認、旧「未作成」の記述を訂正。",
+  "A/B/C枠(比類なき大将、自身の初期スキル)のtarget/rateが未確定(null)だったため、ixanary生HTML(skills/比類なき大将)でtarget:全,rate:70%を3枠とも追加。",
+  "S1枠(騎神炎山→遁世影武者)・S2枠(建御雷神ノ槌、自己参照)は既にdata/skill/騎神炎山.json・建御雷神ノ槌.jsonのsourceCharactersに武田勝頼(2448)が正しいslotで登録済みであることを確認した(A-3-11)。",
+  "synthesisTableのA/B/C/S1/S2は、ixanary.com(cards/2448の初期スキル比類なき大将の合成テーブルおよび各候補スキル個別ページ)に加え、ixawiki.com(index.php?BushoCard/2448武田勝頼)の合成候補テーブル(1次候補/2次候補S1)を生HTMLで確認し、全5行がixanary/ixawiki2ソースで一致することを確認した。",
+  "章はixanary.com/ixawiki.comいずれのカードページにも記載が無く未確認。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "reviewedOk": true,
+ "wikiOldestComment": "2022-01-11",
+ "wikiCommentCount": 31,
+ "chGuess": "22章",
+ "chSource": "wikiOldestComment"
 }

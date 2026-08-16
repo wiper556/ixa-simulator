@@ -1,0 +1,36 @@
+{
+ "name": "三河魂",
+ "rank": "S",
+ "baseRate": 35.0,
+ "target": "槍弓砲",
+ "effectSummary": "S/LV10 確率 35% 攻撃 25%上昇/破壊 25%上昇/対象:槍弓砲\n①攻撃が25%上昇する\n②破壊が25%上昇する",
+ "categoryLinks": [],
+ "sourceCharacters": [
+  {
+   "name": "林羅山",
+   "no": "2721",
+   "slot": "S1",
+   "db": "kyoku",
+   "note": [
+    "林羅山(2721)のsynthesisTable S1枠(2026-08-16、担当K6)"
+   ]
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "天衣無縫陣",
+  "rank": "SS"
+ },
+ "notes": [
+  "2026-08-16 新規作成(担当K6)。No.2721林羅山のS1枠候補で、Sランクのためページ作成義務あり(A-3-9)。",
+  "対象・確率・効果はixanary.com(skills/三河魂)のLV10行「確率：+35% / 対象 槍弓砲 / 攻撃：25%上昇 / 破壊：25%上昇」から。攻撃と破壊が同時変動するためtrTableに両方併記(multistat規則)。",
+  "ownHiddenCandidateは林羅山(2721)のsynthesisTable S1枠のafterSkill(天衣無縫陣[SS])から導出。ixanary(skills/三河魂)の合成テーブルS1枠2次(防：天衣無縫陣 SS)とも一致。",
+  "categoryLinks9項目(無尽/撤退/飛翔/覇道/不屈/兵站/卓越/人数依存/コスト減少)を確認し該当なし。"
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍弓砲　確率 35% / 攻撃 25%上昇+破壊 25%上昇"
+  }
+ ]
+}

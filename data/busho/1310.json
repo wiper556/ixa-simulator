@@ -128,12 +128,16 @@
   "2026-08-07開幕の32章新天。ixanary.comは2026-08-08時点で未対応(cards/1310 は404)のため",
   "別ソースで確定させた。スキル名・作家名は公式ニュース(スクウェア・エニックス発表)、",
   "コスト/指揮兵数/成長値は ixagno.blog.fc2.com【天】武将一覧、",
-  "基礎値・兵科適性・LV10効果・鍛錬表・合成テーブルは同サイトの個別記事(blog-entry-11144)。"
+  "基礎値・兵科適性・LV10効果・鍛錬表・合成テーブルは同サイトの個別記事(blog-entry-11144)。",
+  "2026-08-16再検証(黄丸化): ixanary.com/cards/1310/が閲覧可能(200)になっており、ixagno単独からixanary併用の2ソース体制に移行できた。カード画像の4隅バッジ再ズーム(槍A/弓A/馬S/器X)で既存データと一致(ixanaryのcard JSONはyumi:S,kiba:Aで入れ替わっており参考程度に留めた)。コスト7/指揮6100/成長値攻96防64兵法4.0が一致確認。synthesisTableはixanary.com/skills/覇界ノ天虎/の生HTML合成テーブルでA〜S2全5枠(全て自己参照)が既存登録と完全一致。sourceCharacters逆引き(A-3-11): 勇冠三軍/万界神謀/絶界滅刃/皇天覇虎/神羅聖域の各data/skill/*.jsonに1310が反映済みを確認。"
  ],
  "categoryLinks": [
   {
    "href": "skills-hadou.html",
    "label": "覇道スキル一覧を見る"
   }
- ]
+ ],
+ "reviewedOk": true,
+ "wikiOldestComment": null,
+ "wikiCommentCount": null
 }

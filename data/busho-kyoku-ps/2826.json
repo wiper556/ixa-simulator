@@ -1,7 +1,7 @@
 {
  "name": "京極マリア",
  "no": "2826",
- "ch": "未確認",
+ "ch": "26章",
  "cost": 4.0,
  "troop": "全防",
  "sub": "",
@@ -105,7 +105,8 @@
   "合成候補(A/B/C/S1/S2)はixanaryの聖夜ノ慈姫スキルページの1次(移植前)・2次(移植後)・3次テーブルと、ixawiki(BushoCard/2826)の統率力・スキル効果欄の2ソースで確認(ixawikiのカードページには合成候補セクションが無かったためixanaryのスキル個別ページを主に使用)。",
   "A枠とB枠がどちらも聖夜ノ慈姫(自己参照)、S1枠とS2枠がどちらも黄泉醜女ノ屍兵という重複だったため、skills.html/data/skillの聖夜ノ慈姫・黄泉醜女ノ屍兵・天地黎明のsourceCharactersのslotを修正した。特に黄泉醜女ノ屍兵と天地黎明は誤って\"A\"\"S1\"とだけ記載されており(実際はS1・S2/S1・S2)、不正確な値が入っていたのを訂正した。",
   "sourceCharacters逆引き確認(2026-08-15): skills.htmlの聖夜ノ慈姫(A・B)/禍津日神ノ謀(C)/黄泉醜女ノ屍兵(S1・S2)/天地黎明(S1・S2、grantedViaSkills経由)いずれもNo.2826が正しいslotで登録されるよう修正・確認済み。",
-  "章は標準2ソース(ixanary/ixawiki)に記載が無く未確認。追加でixagno.blog.fc2.com(検索語=2826)を確認し、該当記事(blog-entry-9414「京極マリア【極】のスキル性能と合成テーブル」)を見たが2023年12月追加という時期のみで章番号の記載は無かったため未確認のまま(2026-08-15)。"
+  "章は標準2ソース(ixanary/ixawiki)に記載が無く未確認。追加でixagno.blog.fc2.com(検索語=2826)を確認し、該当記事(blog-entry-9414「京極マリア【極】のスキル性能と合成テーブル」)を見たが2023年12月追加という時期のみで章番号の記載は無かったため未確認のまま(2026-08-15)。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
  ],
  "reviewedOk": true,
  "categoryLinks": [
@@ -113,5 +114,9 @@
    "href": "skills-takuetsu.html",
    "label": "卓越スキル一覧を見る"
   }
- ]
+ ],
+ "wikiOldestComment": "2023-12-01",
+ "wikiCommentCount": 19,
+ "chGuess": "26章",
+ "chSource": "wikiOldestComment"
 }

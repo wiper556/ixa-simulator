@@ -3,7 +3,7 @@
  "rank": "SSS",
  "baseRate": 100,
  "target": "全",
- "effectSummary": "SSS/LV10 確率 100% 攻撃 170%上昇/対象:全\n①攻撃 170%上昇する\n②速度 240%上昇する(TR1〜TR5は未確認)",
+ "effectSummary": "SSS/LV10 確率 100% 攻撃 170%上昇/対象:全\n①攻撃 170%上昇する\n②速度 240%上昇する",
  "sourceCharacters": [
   {
    "name": "武田信虎（2）",
@@ -11,10 +11,28 @@
    "slot": "B・C"
   },
   {
-   "name": "茶々",
+   "name": "茶々（3）",
    "no": "2574",
    "slot": "S1",
    "db": "kyoku"
+  },
+  {
+   "name": "尼子経久（2）",
+   "no": "2467",
+   "slot": "S1",
+   "db": "kyoku",
+   "note": [
+    "尼子経久（2）(2467)のsynthesisTable S1枠(2026-08-16、自己参照。ixanary/ixawikiの2ソースで確認)"
+   ]
+  },
+  {
+   "name": "梅津憲忠",
+   "no": "2476",
+   "slot": "S1",
+   "db": "kyoku",
+   "note": [
+    "梅津憲忠(2476)のsynthesisTable S1枠(2026-08-16、自己参照。B・C枠はskill=黄鬼ノ辣腕→afterSkill=本スキルのためA-3-12によりgrantedViaSkills側で参照)"
+   ]
   }
  ],
  "grantedViaSkills": [
@@ -29,6 +47,10 @@
   {
    "skill": "瞬刻無影",
    "rank": "S"
+  },
+  {
+   "skill": "黄鬼ノ辣腕",
+   "rank": "S"
   }
  ],
  "ownHiddenCandidate": {
@@ -36,7 +58,8 @@
   "rank": "SSS"
  },
  "notes": [
-  "2026-08-13: A-3-12の逆方向リンク。武将のsynthesisTableでは1次がこのスキルに変化するのに、こちら側から元スキルを指していなかった。1次→2次の組100件を元スキルのownHiddenCandidateと突き合わせ、矛盾0件を確かめたうえで機械的に張った。"
+  "2026-08-13: A-3-12の逆方向リンク。武将のsynthesisTableでは1次がこのスキルに変化するのに、こちら側から元スキルを指していなかった。1次→2次の組100件を元スキルのownHiddenCandidateと突き合わせ、矛盾0件を確かめたうえで機械的に張った。",
+  "2026-08-16(No.1240黄丸化検証): 「TR1〜TR5未確認」を追加ソースで確認。ixanary.com(skills/朧雲ノ閃撃)の生HTMLはLV1/LV10のみでTR区分自体が存在せず、ixawiki.com(BushoCard/1240武田信虎のB・C候補詳細ボックス)もLv10行のみでTR言及なし。2ソースともTR進行が存在しないことを示しており、trTable1行(LV10のみ)で確定。"
  ],
  "trTable": [
   {

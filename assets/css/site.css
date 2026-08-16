@@ -165,6 +165,62 @@ body{
 .tool-card.rank-kyoku-ps p{color:#d2c9e2;}
 .tool-card.rank-kyoku-ps:hover{box-shadow:0 6px 16px rgba(75,43,110,0.40);}
 
+/* 天パラレルは虹色(うぐさん指定)。天の隣に置くので、天の白と並んだときに
+   一目で別物と分かるようにする。文字は白地に近い上に載るので濃い色にし、
+   薄い白を敷いて読めるようにしている(虹の上に直接文字を置くと沈む)。 */
+.tool-card.rank-parallel{
+  background:linear-gradient(120deg,
+    #ff9aa2 0%, #ffd6a5 18%, #fdffb6 36%,
+    #caffbf 54%, #9bf6ff 72%, #a0c4ff 86%, #bdb2ff 100%);
+  border:1px solid #cfc7b4;
+}
+.tool-card.rank-parallel h3{color:#2b2f38;text-shadow:0 1px 0 rgba(255,255,255,0.65);}
+.tool-card.rank-parallel p{
+  color:#2b2f38;
+  background:rgba(255,255,255,0.55);
+  border-radius:4px;
+  padding:3px 6px;
+  display:inline-block;
+}
+.tool-card.rank-parallel:hover{box-shadow:0 6px 16px rgba(160,196,255,0.55);}
+
+/* 特武将は赤(うぐさん指定) */
+.tool-card.rank-toku{
+  background:linear-gradient(135deg, #8e2b24, #5d1a16);
+  border:1px solid #c96a5f;
+}
+.tool-card.rank-toku h3{color:#ffe0da;}
+.tool-card.rank-toku p{color:#eebdb5;}
+.tool-card.rank-toku:hover{box-shadow:0 6px 16px rgba(142,43,36,0.40);}
+
+/* 特シークレットは黄緑に近い緑(うぐさん指定) */
+.tool-card.rank-toku-s{
+  background:linear-gradient(135deg, #5f8f2a, #40631c);
+  border:1px solid #9ec95f;
+}
+.tool-card.rank-toku-s h3{color:#f0ffd9;}
+.tool-card.rank-toku-s p{color:#d7e9b4;}
+.tool-card.rank-toku-s:hover{box-shadow:0 6px 16px rgba(95,143,42,0.40);}
+
+/* 上は黄色(うぐさん指定)。傑の金と並ぶので、金は沈んだ山吹、上は
+   明るい黄にして見分けが付くようにしてある。地が明るいぶん文字は濃く。 */
+.tool-card.rank-ue{
+  background:linear-gradient(135deg, #f7d94c, #e8bf16);
+  border:1px solid #b8930a;
+}
+.tool-card.rank-ue h3{color:#4a3a02;}
+.tool-card.rank-ue p{color:#5c4906;}
+.tool-card.rank-ue:hover{box-shadow:0 6px 16px rgba(232,191,22,0.45);}
+
+/* 序は青(うぐさん指定) */
+.tool-card.rank-jo{
+  background:linear-gradient(135deg, #2f5fa8, #1d3c6e);
+  border:1px solid #7ea8e0;
+}
+.tool-card.rank-jo h3{color:#e2edff;}
+.tool-card.rank-jo p{color:#bfd4f0;}
+.tool-card.rank-jo:hover{box-shadow:0 6px 16px rgba(47,95,168,0.45);}
+
 .page-title{font-family:'Noto Serif JP', serif;font-weight:900;font-size:26px;margin:0 0 8px;}
 .page-lead{color:var(--muted);font-size:13.5px;line-height:1.7;margin:0 0 8px;}
 

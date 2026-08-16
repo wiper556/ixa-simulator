@@ -1,0 +1,36 @@
+{
+ "name": "冥界の花嫁",
+ "rank": "A",
+ "baseRate": 35.0,
+ "target": "全",
+ "effectSummary": "A/LV10 確率 35% 防御 40%上昇/対象:全\n①防御が40%上昇する(攻撃部隊に馬兵科がいる時のみ発動)",
+ "categoryLinks": [],
+ "sourceCharacters": [
+  {
+   "name": "円融院",
+   "no": "2727",
+   "slot": "C",
+   "db": "kyoku",
+   "note": [
+    "円融院(2727)のsynthesisTable C枠(2026-08-16、担当K6)"
+   ]
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "魔王三段撃",
+  "rank": "S"
+ },
+ "notes": [
+  "2026-08-16 新規作成(担当K6)。Aランクだが、Sランクの魔王三段撃(移植後合成候補)の元スキルにあたるためA-3-9の例外規定でページ作成対象。",
+  "対象・確率・効果はixanary.com(skills/冥界の花嫁)のLV10行「確率：+35% / 対象 全 / 防御：40%上昇（攻撃部隊に馬兵科がいる時のみ発動）」から。発動条件の括弧書きは効果の適用条件なので省略しない。",
+  "ownHiddenCandidateは円融院(2727)のsynthesisTable C枠のafterSkill(魔王三段撃[S])から導出。ixanary(skills/魔王三段撃)の合成素材欄にも「1次S1候補: 防：冥界の花嫁 A」とあり逆方向でも裏が取れている。",
+  "categoryLinks9項目(無尽/撤退/飛翔/覇道/不屈/兵站/卓越/人数依存/コスト減少)を確認し該当なし。"
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 35% / 防御 40%上昇(攻撃部隊に馬兵科がいる時のみ発動)"
+  }
+ ]
+}

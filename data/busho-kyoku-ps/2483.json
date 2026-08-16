@@ -1,0 +1,139 @@
+{
+ "name": "浅井長政（2）",
+ "no": "2483",
+ "ch": "28章",
+ "cost": 5,
+ "troop": "全防",
+ "sub": "",
+ "effect": "所領防御陣形に配置時この武将の編成コスト消費を-5する(模倣不可)",
+ "furigana": "あざいながまさ",
+ "illustrator": "正子公也",
+ "imageFull": "assets/img/characters/no2483_full.png",
+ "imageChar": "assets/img/characters/no2483_char.png",
+ "atkBase": 1080,
+ "atkGrowth": 47,
+ "defBase": 1210,
+ "defGrowth": 62,
+ "tacticsBase": 550,
+ "tacticsGrowth": 3,
+ "lv0Troops": 4780,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "S",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "江龍義咆",
+ "skillDetail": "S/LV10 確率 100% 防御 460%上昇/対象:全\n模倣不可\n①防御 460%上昇する\n②所領防御陣形に配置時この武将の編成コスト消費を-5する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 防御 460%上昇(所領防御陣形配置時この武将の編成コスト消費-5・模倣不可)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": null
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": null
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": null
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": null
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": "全　確率 100% / 防御 800%上昇(所領防御陣形配置時この武将の編成コスト消費-5.5)"
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": null
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "国津破邪ノ楯",
+   "rank": "SS",
+   "afterSkill": "国津破邪ノ楯",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "60%",
+   "effectShort": "防御 60.04%上昇(部隊総コストで変動)",
+   "afterEffectShort": "防御 60.04%上昇(部隊総コストで変動)"
+  },
+  {
+   "slot": "B",
+   "skill": "三千世界神将",
+   "rank": "SS",
+   "afterSkill": "三千世界神将",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "防御 120%上昇(本丸防御陣形時コスト消費-1・模倣不可)",
+   "afterEffectShort": "防御 120%上昇(本丸防御陣形時コスト消費-1・模倣不可)"
+  },
+  {
+   "slot": "C",
+   "skill": "龍驤虎躍",
+   "rank": "SS",
+   "afterSkill": "龍驤虎躍",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "60%",
+   "effectShort": "攻撃 810%上昇+防御 810%上昇(部隊消費コスト-1・特殊効果は模倣不可)",
+   "afterEffectShort": "攻撃 810%上昇+防御 810%上昇(部隊消費コスト-1・特殊効果は模倣不可)"
+  },
+  {
+   "slot": "S1",
+   "skill": "万里嵐壁",
+   "rank": "SS",
+   "afterSkill": "万里嵐壁",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "66%",
+   "effectShort": "防御 200%上昇(敵軍部隊数×40%を防御効果に加算・模倣不可)",
+   "afterEffectShort": "防御 200%上昇(敵軍部隊数×40%を防御効果に加算・模倣不可)"
+  },
+  {
+   "slot": "S2",
+   "skill": "天衣無縫神戒",
+   "rank": "SS",
+   "afterSkill": "天衣無縫神戒",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "50%",
+   "effectShort": "防御 30.02%上昇(部隊総コストで変動)",
+   "afterEffectShort": "防御 30.02%上昇(部隊総コストで変動)"
+  }
+ ],
+ "notes": [
+  "カード画像はスキル欄「江龍義咆LV1」表記のためLV1形式(B-00)。画像から読んだのは武将名・統率バッジ(4隅拡大)・スキル名・初期値1080/1210/550・カードNo.・覇なしの6項目のみ。",
+  "統率は槍A/弓S/馬A/器A。カード画像バッジ拡大とixawiki(BushoCard/2483浅井長政)の統率力欄で一致。",
+  "コスト5・指揮4780(★0-0)・成長+47/+62/+3.0・絵師正子公也はixanary.com(cards/2483)とixawikiの2ソースで一致。カード画像の指揮兵数0/5380は限界突破後の値(B-01)。",
+  "江龍義咆のLV10(確率100%/防御460%上昇)とTR5(防御800%上昇・コスト消費-5.5)はixanary(skills/江龍義咆)・ixawiki・ixagno.blog.fc2.com(blog-entry-9959)の3ソースで一致。TR1〜TR4は3ソースとも空欄で未確認、TR6も記載なし。",
+  "カード画像のLV1値(防御150%上昇)は登録していない。",
+  "名前の（2）: 極レアリティの同名は No.2052(wiki最古コメント2012-12-28)と本カード(2024-10-02)の2枚で、出現が早い順に2052=(1)・2483=(2)。ixagno.blog.fc2.comの記事タイトルも「浅井長政(2)【極】」で一致。",
+  "【情報源の食い違い】合成テーブルのS2枠の移植後: ixanary(skills/江龍義咆)は1次/2次/3次とも天衣無縫神戒SSで変化なし、ixawiki(BushoCard/2483)の「2次候補S1」行だけがS2=氷塊ノ障壁SSSになっている。ixagno.blog.fc2.com(blog-entry-9959)の「初期テーブル/左記スキル移植後」表がS2=天衣無縫神戒→天衣無縫神戒としており、さらにixanary側の天衣無縫神戒ページも1次/2次/3次すべて自己参照・氷塊ノ障壁ページの合成素材に江龍義咆が載っていないため、ixanary+ixagnoを採ってS2は自己参照で登録した。同じ食い違いはNo.1254六角承禎のixawikiページ(S2の2次が幽冥主宰大神)にも出ており、ixawikiの『2次候補S1』行はうちのafterSkillとは別物と判断した。",
+  "江龍義咆自身はixanaryの合成素材欄が「合成不可スキルです」のため移植不可。",
+  "章は情報源(ixanary/ixawiki)に記載が無いため未確認。ixagnoは「2024年10月追加の極武将」と書いており、wiki最古コメント2024-10-02からchGuessは28章。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "reviewedOk": true,
+ "wikiOldestComment": "2024-10-02",
+ "wikiCommentCount": 8,
+ "chGuess": "28章",
+ "chSource": "wikiOldestComment"
+}

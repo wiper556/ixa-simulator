@@ -1,0 +1,138 @@
+{
+ "name": "ジタン",
+ "no": "2622",
+ "ch": "29章",
+ "cost": 3.0,
+ "troop": "全攻",
+ "sub": "",
+ "effect": "4部隊以上の対人合流攻撃で倒した兵数の5%の銅銭を攻撃参加者全員が獲得",
+ "furigana": "じたん",
+ "illustrator": "FinalFantasyIX 25th ANNIVERSARY",
+ "imageFull": "assets/img/characters/no2622_full.png",
+ "imageChar": "assets/img/characters/no2622_char.png",
+ "atkBase": 1210,
+ "atkGrowth": 58,
+ "defBase": 1100,
+ "defGrowth": 47,
+ "tacticsBase": 550,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3560,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "ぶんどる",
+ "skillDetail": "S/LV10 確率 42% 攻撃 440%上昇/対象:全\n①攻撃 440%上昇する\n②4部隊以上の対人合流攻撃で倒した兵数の5%の銅銭を攻撃参加者全員が獲得する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 42% / 攻撃 440%上昇(4部隊以上の対人合流攻撃で倒した兵数の5%の銅銭を攻撃参加者全員が獲得)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": "全　確率 42% / 攻撃 500%上昇(4部隊以上の対人合流攻撃で倒した兵数の5%の銅銭を攻撃参加者全員が獲得)"
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": "全　確率 42% / 攻撃 620%上昇(4部隊以上の対人合流攻撃で倒した兵数の5%の銅銭を攻撃参加者全員が獲得)"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": "全　確率 42% / 攻撃 860%上昇(4部隊以上の対人合流攻撃で倒した兵数の6%の銅銭を攻撃参加者全員が獲得)"
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": "全　確率 42% / 攻撃 1230%上昇(4部隊以上の対人合流攻撃で倒した兵数の6%の銅銭を攻撃参加者全員が獲得)"
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": "全　確率 42% / 攻撃 1460%上昇(4部隊以上の対人合流攻撃で倒した兵数の7%の銅銭を攻撃参加者全員が獲得)"
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": null
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "飛龍衝天",
+   "rank": "SS",
+   "afterSkill": "飛龍衝天",
+   "afterRank": "SS",
+   "target": "全 飛翔15",
+   "rate": "45%",
+   "effectShort": "攻撃 200%上昇+(7.5×防御参加武将数)%を攻撃効果に加算(模倣不可)",
+   "afterEffectShort": "攻撃 200%上昇+(7.5×防御参加武将数)%を攻撃効果に加算(模倣不可)"
+  },
+  {
+   "slot": "B",
+   "skill": "万物神勇",
+   "rank": "SSS",
+   "afterSkill": "万物神勇",
+   "afterRank": "SSS",
+   "target": "全 撤退",
+   "rate": "43%",
+   "effectShort": "攻撃 (9.2×防御参加武将数)%上昇+撤退(陣での防御戦闘に参加しない)",
+   "afterEffectShort": "攻撃 (9.2×防御参加武将数)%上昇+撤退(陣での防御戦闘に参加しない)"
+  },
+  {
+   "slot": "C",
+   "skill": "八重言代主神",
+   "rank": "SS",
+   "afterSkill": "無窮天斥陣",
+   "afterRank": "SS",
+   "target": "自身",
+   "rate": "70%",
+   "effectShort": "自身が持つ初期スキルを模倣する(戦闘スキルのみ)",
+   "afterTarget": "槍弓馬",
+   "afterRate": "40%",
+   "afterEffectShort": "防御 63%上昇(攻撃部隊に兵器兵科がいれば効果1.5倍)"
+  },
+  {
+   "slot": "S1",
+   "skill": "盗賊のあかし",
+   "rank": "SS",
+   "afterSkill": "盗賊のあかし",
+   "afterRank": "SS",
+   "target": "自身",
+   "rate": "50%",
+   "effectShort": "自身の持つ初期スキルを通常攻撃/防御効果1.1倍にして模倣+速度 100%上昇(確率100%)",
+   "afterEffectShort": "自身の持つ初期スキルを通常攻撃/防御効果1.1倍にして模倣+速度 100%上昇(確率100%)"
+  },
+  {
+   "slot": "S2",
+   "skill": "盗賊のあかし",
+   "rank": "SS",
+   "afterSkill": "盗賊のあかし",
+   "afterRank": "SS",
+   "target": "自身",
+   "rate": "50%",
+   "effectShort": "自身の持つ初期スキルを通常攻撃/防御効果1.1倍にして模倣+速度 100%上昇(確率100%)",
+   "afterEffectShort": "自身の持つ初期スキルを通常攻撃/防御効果1.1倍にして模倣+速度 100%上昇(確率100%)"
+  }
+ ],
+ "notes": [
+  "出典: カード画像(LV1形式・B-00で読んでよい6項目のみ採用: 武将名/統率4隅バッジ/スキル名/攻防兵法の初期値/覇でないこと/カードNo.) + ixanary.com(cards/{no}・skills/{skill}の生HTML) + ixawiki.com(BushoCard/{no}{name}・武将カード一覧(極))。効果量・成長値・指揮兵数・合成候補はすべて外部ソースから取り、カード画像のLV1値は登録していない。",
+  "ch(章)はFF9 25周年記念コラボ「玖幻戦」の実装時期から。ixagno.blog.fc2.com(2025-07-03の記事、カテゴリ【29章】でこのコラボカードの追加を扱っている)と、当サイトの既存データで29章の窓が2025-02-07〜2025-08-06(30章の初出が2025-08-07)であることの2点による。ゲーム内での直接確認ではない。",
+  "コラボカード(FinalFantasyIX 25th ANNIVERSARY)。取引/譲与不可。覇の表記はカード画像に無く【覇】は付かない。同名の特武将(No.363x)が別に居るがレアリティが違うため（N）は振らない。",
+  "統率はカード画像の4隅バッジ(左上槍S/右上馬A/左下弓A/右下器A)を5倍拡大して個別に読み、ixawiki武将カード一覧(極)の 槍.S|弓A|馬A|器A と一致(一覧は槍/弓/馬/器の順、No.2629で並びを検証済み)。",
+  "指揮兵数はixanaryの★0-0=3560(B-01)。カード画像は天限突破表示で0/5760、ixanaryの天限突破欄5960は+0.5版なので採用していない(5760=5960-200でB-01と整合)。",
+  "【情報源の食い違い】LV10の銅銭獲得率は ixanary=5% / ixawikiのカードページ=1.6%。カード画像(LV1)が確率+14%・攻撃145%上昇・1.6%であり、ixanaryのLV1行と完全一致するため、ixawikiがLV1の値をLv10欄に転記した誤りと判断し5%を採用した。",
+  "合成テーブルはixanary.com/skills/ぶんどる の1次/2次(A-3-0)。1次はixawikiのカードページとも一致。C枠の2次(無窮天斥陣)は、当サイトの八重言代主神.jsonのownHiddenCandidateとも一致する。",
+  "ぶんどる自体はixanaryの合成素材欄が「合成不可スキルです」のため移植不可。"
+ ],
+ "reviewedOk": true,
+ "wikiOldestComment": "2025-07-28",
+ "wikiCommentCount": 2,
+ "chGuess": "29章"
+}

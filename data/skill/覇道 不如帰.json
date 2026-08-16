@@ -1,0 +1,42 @@
+{
+ "name": "覇道 不如帰",
+ "rank": "S",
+ "baseRate": 30.0,
+ "target": "槍馬砲",
+ "effectSummary": "S/LV10 確率 30% 攻撃 30%上昇/破壊 30%上昇/対象:槍馬砲\n①攻撃が30%上昇する\n②破壊が30%上昇する",
+ "categoryLinks": [],
+ "sourceCharacters": [
+  {
+   "name": "三浦按針（1）",
+   "no": "2719",
+   "slot": "C",
+   "db": "kyoku",
+   "note": [
+    "三浦按針(2719)のsynthesisTable C枠(2026-08-16、担当K6)"
+   ]
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "騎神",
+  "rank": "SS"
+ },
+ "notes": [
+  "2026-08-16 新規作成(担当K6)。No.2719三浦按針のC枠候補で、Sランクのためページ作成義務あり(A-3-9)。",
+  "対象・確率・効果はixanary.com(skills/覇道 不如帰)のLV10行「確率：+30% / 対象 槍馬砲 / 攻撃：30%上昇 / 破壊：30%上昇」から。攻撃と破壊が同時変動するためtrTableに両方併記(multistat規則)。",
+  "ownHiddenCandidateは三浦按針(2719)のsynthesisTable C枠のafterSkill(騎神[SS])から導出。ixanary(skills/覇道 不如帰)の合成テーブルS1枠2次(攻速：騎神 SS)とも一致。",
+  "categoryLinks9項目を1つずつ判定し該当なし。スキル名に「覇道」が入るが、効果文は攻撃・破壊上昇のみで覇道の保護効果文が無く、カード(No.2719)にも赤字「覇道」の表記が無いため覇道スキルには分類しない(覇道判定は効果文＋カード表記の両方が必要)。"
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍馬砲　確率 30% / 攻撃 30%上昇+破壊 30%上昇"
+  }
+ ],
+ "grantedViaSkills": [
+  {
+   "skill": "天下普請",
+   "rank": "A"
+  }
+ ]
+}

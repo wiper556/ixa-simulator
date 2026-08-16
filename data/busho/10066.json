@@ -3,6 +3,8 @@
  "no": "10066",
  "furigana": "さいとうはじめ",
  "illustrator": "NW/S,RKKD 直良有祐",
+ "imageFull": "assets/img/characters/no10066_full.png",
+ "imageChar": "assets/img/characters/no10066_char.png",
  "atkBase": 2580,
  "atkGrowth": 0,
  "defBase": 2100,
@@ -17,7 +19,7 @@
   "ki": "S"
  },
  "initialSkill": "壬生ノ狼牙",
- "skillDetail": "SSS/LV10 確率：+100% / 対象 全 無尽 攻擊：500%上昇 このスキルを持つ武将カードは追加スキルの攻撃効果が2.5倍となる(模倣不可)",
+ "skillDetail": "SSS/LV10 確率 100% 攻撃 500%上昇/対象:全　無尽\n模倣不可\n①攻撃 500%上昇する\n②このスキルを持つ武将カードは追加スキルの攻撃効果が2.5倍となる",
  "ch": "30章",
  "cost": 5.5,
  "troop": "全攻",
@@ -98,7 +100,7 @@
    "afterSkill": "勇冠三軍",
    "afterRank": "SSS",
    "target": "全",
-   "rate": null,
+   "rate": "45%",
    "effectShort": "攻撃 50%+10.2%×防御参加武将数(280人)=2906.0%(模倣不可)",
    "afterEffectShort": "攻撃 50%+10.2%×防御参加武将数(280人)=2906.0%(模倣不可)"
   },
@@ -119,5 +121,15 @@
    "href": "skills-mujin-atk.html",
    "label": "無尽(攻撃)スキル一覧を見る"
   }
- ]
+ ],
+ "notes": [
+  "2026-08-16黄丸化検証: imageFull/imageChar未設定だったが画像ファイル自体は既存(no10066_full.png/no10066_char.png)のため参照を追加した。",
+  "カード画像no10066_full.pngの4隅バッジを再ズーム確認し槍X(虹色)/弓A/馬A/器Sで既存データと一致。ixanary.com/cards/10066/生HTMLでコスト5.5/指揮5200/成長値攻0防0兵法0/攻撃2580・防御2100・兵法870.0(いずれも成長なし)が完全一致確認(10067と異なりixanary側の数値に矛盾なし)。",
+  "skillDetail/data/skill/壬生ノ狼牙.jsonのeffectSummaryが「確率：+100% / 対象 全 無尽 攻擊：500%上昇...」というixanaryの生テキストそのままの書式だったため、サイト標準の「ヘッダー1行+①②改行+読点なし」書式に整形した(模倣不可はixanary生HTMLで独立した注記ではなく③相当の効果に付随する記載のため、①②のどちらにも係らない単独効果として①の前の独立行に配置)。",
+  "synthesisTableはixanary.com/skills/壬生ノ狼牙/の生HTML合成テーブルでA〜S2全5枠(A:義陣絶刀[S]→國才連豪[SS]、B:虚実兵妙[SS]自己参照、C:至天ノ御剣[SSS]自己参照、S1:勇冠三軍[SSS]自己参照、S2:牙突・弐式[SS]自己参照)が既存登録と完全一致。S1のrateがnullだったため、data/skill/勇冠三軍.jsonのbaseRate(45)を確認し45%を補完した。sourceCharacters逆引き(A-3-11): 義陣絶刀/虚実兵妙/至天ノ御剣/勇冠三軍/牙突・弐式の各data/skill/*.jsonに10066が反映済みを確認(A枠の移植後=國才連豪はgrantedViaSkills経由で正しく間接リンク済み)。"
+ ],
+ "reviewedOk": true,
+ "wikiOldestComment": "2025-11-29",
+ "wikiCommentCount": 1,
+ "chGuess": "30章"
 }

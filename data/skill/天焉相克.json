@@ -3,15 +3,15 @@
  "rank": "SS",
  "baseRate": 70,
  "target": "槍・弓・馬",
- "effectSummary": "SS/LV10 確率 70% 全攻30%上昇/対象:槍・弓・馬\n①全攻30%上昇する(部隊の総コストで効果が変化・TR1〜TR5は未確認)",
+ "effectSummary": "SS/LV10 確率 70% 全攻30%上昇/対象:槍・弓・馬\n①全攻30%上昇する(部隊の総コストで効果が変化・TRなし)",
  "sourceCharacters": [
   {
-   "name": "今川義元",
+   "name": "今川義元（4）【覇】",
    "no": "1203",
    "slot": "S2"
   },
   {
-   "name": "武田晴信",
+   "name": "武田晴信（2）",
    "no": "1205",
    "slot": "S1"
   },
@@ -39,6 +39,10 @@
   {
    "skill": "虎王炎神",
    "rank": "S"
+  },
+  {
+   "skill": "鼓腹撃壌",
+   "rank": "A"
   }
  ],
  "ownHiddenCandidate": {
@@ -46,8 +50,9 @@
   "rank": "SS"
  },
  "notes": [
-  "武田晴信(No.1205)S1・伊達輝宗(No.1260)B・45do.info生HTML照合済み(単一ソースのみ、TR1〜TR5未確認)",
-  "2026-08-13: A-3-12の逆方向リンク。武将のsynthesisTableでは1次がこのスキルに変化するのに、こちら側から元スキルを指していなかった。1次→2次の組100件を元スキルのownHiddenCandidateと突き合わせ、矛盾0件を確かめたうえで機械的に張った。"
+  "武田晴信(No.1205)S1・伊達輝宗(No.1260)B",
+  "2026-08-13: A-3-12の逆方向リンク。武将のsynthesisTableでは1次がこのスキルに変化するのに、こちら側から元スキルを指していなかった。1次→2次の組100件を元スキルのownHiddenCandidateと突き合わせ、矛盾0件を確かめたうえで機械的に張った。",
+  "2026-08-16(No.1203黄丸化検証): ixanary.com(skills/天焉相克)生HTMLとixawiki.com(Busho/武将スキル、skill_tenensoukokuアンカー)の2ソースともLV1/LV10の2行のみでTR行が存在しないことを確認し、effectSummaryの「TR1〜TR5は未確認」を「TRなし」に訂正した。"
  ],
  "trTable": [
   {

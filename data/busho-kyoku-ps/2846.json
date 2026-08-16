@@ -1,7 +1,7 @@
 {
  "name": "駒姫",
  "no": "2846",
- "ch": "未確認",
+ "ch": "30章",
  "cost": 4.5,
  "troop": null,
  "sub": "",
@@ -124,7 +124,8 @@
   "合成候補はixanaryのスキルページ(skills/弥陀ノ裁剣)の1次(移植前)・2次(移植後)。1次の値(A=月詠ノ覇威/B=八界経略/C=思金神ノ深謀/S1=幻像鏡花/S2=思金神ノ深謀)はixawikiの合成候補テーブルとも一致(5枠とも一致、2ソース確認)。ixawiki側の「2次候補」以降は未編集のプレースホルダで実データが無く、afterSkillはixanaryの1次/2次/3次表(3次で全列安定)のみを根拠にした。",
   "弥陀ノ裁剣自体はixanaryのカードページで「合成不可スキルです」と明記されており、synthesisTableのどの枠にも自己参照されない。data/skill/弥陀ノ裁剣.jsonのsourceCharactersが空だったため駒姫をslot:\"移植不可\"で追記(A-3-11)。",
   "2026-08-15: 思金神ノ深謀.jsonのsourceCharactersに駒姫がslot:\"C\"のみで登録されており、synthesisTableではS2枠でも思金神ノ深謀(自己参照)を持つため漏れていた。slot:\"C・S2\"に修正(A-3-11逆引き確認で発見)。",
-  "章は情報源(ixanary/ixawiki)に記載が無いため未確認。"
+  "章は情報源(ixanary/ixawiki)に記載が無いため未確認。",
+  "2026-08-16: 章を30章に確定。2025年8月追加(うぐさん)。30章は2025/8/8〜2026/2/5"
  ],
  "reviewedOk": true,
  "categoryLinks": [
@@ -132,5 +133,7 @@
    "href": "skills-takuetsu.html",
    "label": "卓越スキル一覧を見る"
   }
- ]
+ ],
+ "wikiOldestComment": null,
+ "wikiCommentCount": 0
 }

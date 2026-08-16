@@ -1,0 +1,48 @@
+{
+ "name": "聖夜ノ守り",
+ "rank": "S",
+ "baseRate": 55,
+ "target": "全",
+ "noMimic": true,
+ "effectSummary": "S/LV10 確率 55% 防御 485%上昇/対象:全\n模倣不可\n①防御 485%上昇する\n②所領防御陣形に配置時この武将の編成コスト消費を-2する",
+ "categoryLinks": [
+  {
+   "href": "skills-cost.html",
+   "label": "コスト減少スキル一覧を見る"
+  },
+  {
+   "href": "skills-cost-def.html",
+   "label": "コスト減少(防御)スキル一覧を見る"
+  }
+ ],
+ "sourceCharacters": [
+  {
+   "name": "帰蝶（4）",
+   "no": "2617",
+   "slot": "A・B・C",
+   "db": "kyoku",
+   "note": [
+    "帰蝶(2617)のsynthesisTable A枠・B枠・C枠(2026-08-16、ixanary.com/skills/聖夜ノ守り の合成テーブル1次で確認)"
+   ]
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "龍驤虎躍",
+  "rank": "SS"
+ },
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 55% / 防御 485%上昇(所領防御陣形配置時、この武将の編成コスト消費-2・模倣不可)"
+  }
+ ],
+ "notes": [
+  "2026-08-16 No.2617(帰蝶（4）)の新規登録にあわせて作成(担当K3)。Sランクの初期スキルはA-3-9によりページ作成が必須。",
+  "対象・確率・効果文は ixanary.com/skills/聖夜ノ守り のLV10行から。ixagno.blog.fc2.com blog-entry-8014/9699 の性能比較表「聖夜ノ守り|55％|全防:485％ 所領防御陣形配備時 武将のコスト【-2】」とも一致(2ソース)。ixawikiには2617の個別カードページが無いためこのスキルの記載も無い。",
+  "「模倣不可」はカード原文が「所領防御陣形に配置時、この武将の編成コスト消費を-2する（模倣不可）」と修飾語なしで置いているため、①の前の独立行にした([[feedback_skilldetail_prose_format]])。",
+  "ownHiddenCandidate は ixanary.com/skills/聖夜ノ守り 自身の合成テーブルで、このスキルが1次候補として載っているA・B・C枠の2次候補(龍驤虎躍[SS])から導出(S-08 / A-3-0)。ixagno blog-entry-10094 の合成テーブルとも一致。",
+  "TR段階なし(ixanaryの生HTMLにTR行が0件、ixagnoも「※鍛錬不可」と明記)。",
+  "categoryLinks 9項目判定: コスト減少のみ該当。所領防御陣形限定で自分自身の編成コストを下げる型で、既登録の華焰(No.2615、-1.5)と同型のため skills-cost.html と skills-cost-def.html の両方にエントリを追加した(双方向)。"
+ ]
+}

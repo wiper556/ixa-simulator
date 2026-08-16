@@ -23,9 +23,10 @@ from playwright.sync_api import sync_playwright
 sys.stdout.reconfigure(encoding="utf-8")
 
 reg = set()
-for d in ("busho", "busho-kyoku", "busho-kyoku-ps", "busho-ketsu"):
-    for p in glob.glob(os.path.join(ROOT, "data", d, "*.json")):
-        reg.add(os.path.basename(p)[:-5])
+# data/busho* を全部見る。DBが増えるたびに書き足すのを忘れると、
+# 登録済みの武将が「まだ登録していない」側に出てしまう
+for p in glob.glob(os.path.join(ROOT, "data", "busho*", "*.json")):
+    reg.add(os.path.basename(p)[:-5])
 
 imgs = set()
 for p in glob.glob(os.path.join(ROOT, "assets", "img", "characters", "no*_full.png")):

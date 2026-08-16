@@ -1,0 +1,49 @@
+{
+ "name": "戦陣 勝鬨",
+ "rank": "A",
+ "baseRate": "35%/100%",
+ "target": "全",
+ "effectSummary": "A/LV10 確率 35%/100% 攻撃・防御・速度上昇/対象:全\n①攻撃 77%上昇する(確率35%)\n②防御 77%上昇する(確率35%)\n③速度 40%上昇する(確率100%)",
+ "sourceCharacters": [
+  {
+   "name": "沢下条張",
+   "no": "2613",
+   "slot": "S1",
+   "db": "kyoku",
+   "note": [
+    "沢下条張(2613)のsynthesisTable S1枠(2026-08-16、ixanary.com/skills/我流大蛇の合成テーブルで確認)"
+   ]
+  },
+  {
+   "name": "天草四郎時貞",
+   "no": "2791",
+   "slot": "C",
+   "db": "kyoku",
+   "note": [
+    "天草四郎時貞(2791)のsynthesisTable C枠(2026-08-16)"
+   ]
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "天岩戸ノ神域",
+  "rank": "SS"
+ },
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 35%/100% / 攻撃 77%上昇(確率35%)+防御 77%上昇(確率35%)+速度 40%上昇(確率100%)"
+  }
+ ],
+ "notes": [
+  "2026-08-16 No.2613(沢下条張)黄丸化検証時に新規作成。afterSkill(天岩戸ノ神域)が既にskills.html独自ページを持つため、A-3-9の例外規定に該当する。",
+  "対象・確率・効果文はixanary.com(skills/戦陣 勝鬨)の生HTML(LV10行)から。攻撃/防御は確率35%、速度のみ確率100%(rateフィールドは「35%/100%」の複合表記)。",
+  "ownHiddenCandidateはixanary.com(skills/戦陣 勝鬨)自身の合成テーブル(1次S1のみ・自己参照ではなくこのスキル自体が候補、2次候補S1=天岩戸ノ神域[SS])から導出。A/B/C/S2列は空欄(このスキルを初期スキルとして持つ武将カードが無いか、ixanaryが未収録)。"
+ ],
+ "grantedViaSkills": [
+  {
+   "skill": "我流大蛇",
+   "rank": "A"
+  }
+ ]
+}

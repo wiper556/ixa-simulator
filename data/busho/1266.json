@@ -1,6 +1,7 @@
 {
  "name": "直江兼続（4）",
  "no": "1266",
+ "reviewedOk": true,
  "ch": "28章",
  "cost": 5,
  "troop": "槍弓器騎防",
@@ -44,31 +45,31 @@
   },
   {
    "level": "TR1",
-   "points": "-",
+   "points": "10",
    "coefficient": "6.3",
    "effect": "槍・弓・器・騎　確率 48% / 防御 6.3%×防御参加武将数(280人)=1764.0%(卓越:追加確率10%で1.2倍)"
   },
   {
    "level": "TR2",
-   "points": "-",
+   "points": "40",
    "coefficient": "6.4",
    "effect": "槍・弓・器・騎　確率 48% / 防御 6.4%×防御参加武将数(280人)=1792.0%(卓越:追加確率10%で1.2倍)"
   },
   {
    "level": "TR3",
-   "points": "-",
+   "points": "90",
    "coefficient": "6.5",
    "effect": "槍・弓・器・騎　確率 48% / 防御 6.5%×防御参加武将数(280人)=1820.0%(卓越:追加確率10%で1.2倍)"
   },
   {
    "level": "TR4",
-   "points": "-",
+   "points": "150",
    "coefficient": "6.6",
    "effect": "槍・弓・器・騎　確率 48% / 防御 6.6%×防御参加武将数(280人)=1848.0%(卓越:追加確率10%で1.2倍)"
   },
   {
    "level": "TR5",
-   "points": "-",
+   "points": "200",
    "coefficient": "6.7",
    "effect": "槍・弓・器・騎　確率 48% / 防御 6.7%×防御参加武将数(280人)=1876.0%(卓越:追加確率10%で1.2倍)"
   }
@@ -135,6 +136,10 @@
   }
  ],
  "notes": [
-  "45do.info確認: 生HTML(skiladd_wrap)のcandidate A/B/C/S1/S2見出しとdivの並び順が1:1対応していることを確認済み"
- ]
+  "45do.info確認: 生HTML(skiladd_wrap)のcandidate A/B/C/S1/S2見出しとdivの並び順が1:1対応していることを確認済み",
+  "黄丸化検証(2026-08-16)で1件の誤りを発見し修正。trTableのTR1〜TR5の`points`が全て「-」になっていたが、標準パターン(10/40/90/150/200)と異なる特別な理由が見当たらず、他の既存登録武将(例: No.1262)と比較して単なる入力漏れと判断し標準値に訂正。カード画像no1266_full.pngの4隅バッジ(槍A/馬A/弓S/器S)を確認し一致。TR係数6.3/6.4/6.5/6.6/6.7はixanary.com(skills/三全将帥)の鍛錬表と全行完全一致(TR6無し)。synthesisTableはixanary.com+ixawiki.com(BushoCard/1266直江兼続)の2ソースでA/B/C/S1/S2全枠・afterSkillとも完全一致。三全将帥(A・B自己参照)・八幡神ノ威光・神羅聖域・永世ノ天隻のdata/skill側sourceCharactersに1266が正しいslotで記載済みを確認(逆引き済み)。"
+ ],
+ "wikiOldestComment": "2024-08-17",
+ "wikiCommentCount": 3,
+ "chGuess": "28章"
 }

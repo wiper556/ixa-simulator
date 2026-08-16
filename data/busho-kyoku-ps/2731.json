@@ -1,0 +1,116 @@
+{
+ "name": "天羽源鉄",
+ "no": "2731",
+ "ch": "10章",
+ "cost": 1.0,
+ "troop": "弓馬砲防",
+ "sub": "",
+ "effect": "防御 45%上昇(発動率=確率×攻撃武将数)",
+ "furigana": "あまはげんてつ",
+ "illustrator": "小森ニコ",
+ "imageFull": "assets/img/characters/no2731_full.png",
+ "imageChar": "assets/img/characters/no2731_char.png",
+ "atkBase": 700,
+ "atkGrowth": 19.0,
+ "defBase": 700,
+ "defGrowth": 19.0,
+ "tacticsBase": 535.0,
+ "tacticsGrowth": 3.0,
+ "lv0Troops": 1750,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "S",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "天ノ羽々矢",
+ "skillDetail": "B/LV10 確率 2.5% 防御 45%上昇/対象:弓馬砲\n①防御が45%上昇する(発動率=確率×攻撃武将数)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓馬砲　確率 2.5% / 防御 45%上昇(発動率=確率×攻撃武将数)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "弾幕防壁陣",
+   "rank": "C",
+   "afterSkill": "鉄壁の備え",
+   "afterRank": "D",
+   "target": "弓砲",
+   "rate": "20%",
+   "effectShort": "防御 30%上昇",
+   "afterTarget": "全",
+   "afterRate": "40%",
+   "afterEffectShort": "防御 15%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "堅陣斉射",
+   "rank": "B",
+   "afterSkill": "砲撃 羅刹",
+   "afterRank": "B",
+   "target": "弓砲",
+   "rate": "25%",
+   "effectShort": "防御 35%上昇",
+   "afterTarget": "砲",
+   "afterRate": "25%",
+   "afterEffectShort": "攻撃 25%上昇+破壊 5%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "武門の誇り",
+   "rank": "B",
+   "afterSkill": "八咫烏",
+   "afterRank": "B",
+   "target": "弓馬砲",
+   "rate": "32%",
+   "effectShort": "防御 33%上昇",
+   "afterTarget": "砲器",
+   "afterRate": "35%",
+   "afterEffectShort": "防御 30%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "天ノ羽々矢",
+   "rank": "B",
+   "afterSkill": "天ノ羽々矢",
+   "afterRank": "B",
+   "target": "弓馬砲",
+   "rate": "2.5%",
+   "effectShort": "防御 45%上昇(発動率=確率×攻撃武将数)",
+   "afterEffectShort": "防御 45%上昇(発動率=確率×攻撃武将数)"
+  },
+  {
+   "slot": "S2",
+   "skill": "燕返し",
+   "rank": "A",
+   "afterSkill": "柳生新陰流",
+   "afterRank": "A",
+   "target": "槍弓砲",
+   "rate": "45%",
+   "effectShort": "防御 40%上昇",
+   "afterTarget": "将",
+   "afterRate": "55%",
+   "afterEffectShort": "防御 40%上昇"
+  }
+ ],
+ "notes": [
+  "2026-08-16 新規登録(担当K6)。カード画像はスキル表記がLV1の育成前カードのため、画像から採ったのは武将名/統率(4隅バッジ)/スキル名/攻撃・防御・兵法の初期値/覇でないこと/カードNo.の6項目のみ(B-00)。",
+  "武将名: ixawiki武将カード一覧(極)に「天羽源鉄」は No.2731 の1枚しか無いため無印。",
+  "統率は画像の4隅バッジで槍B/馬A/弓S/器Aを個別に拡大して確認。ixawiki(BushoCard/2731天羽源鉄)の「統率力 槍B 馬A 弓S 器A」と一致。",
+  "コスト1.0・指揮兵数1750・初期値700/700/535・成長値+19/+19/+3.0・ふりがな・絵師(小森ニコ)は ixanary.com(cards/2731) と ixawiki.com(BushoCard/2731天羽源鉄) の2ソースで完全一致。lv0Troopsはixanaryの★0-0(1750)。カード画像の指揮兵数0/2350は限界突破時の値なので採用していない(B-01)。",
+  "スキル効果はLV1カードのため外部ソースを採用。ixanary(cards/2731)のLV10は確率+2.5%/対象 弓馬砲/防御45%上昇(発動率＝確率x攻撃武将数)。ixawikiのカードページはLV1表記(確率+1.5%/弓馬砲防+11%)で、括弧内の「発動率＝確率×攻撃武将数」まで両ソースで一致することを確認した(A-1-5、括弧内の補足も省略しない)。TR段はどちらのソースにも無い。",
+  "人数依存の扱い: この効果は攻撃武将数に応じて変わるのは「発動率」であって防御上昇量ではなく、また一覧ページの人数依存区分は「防御参加武将数で効果量が変わる」スキルを対象にしているため、skills-count-def.htmlへの登録は行っていない。天ノ羽々矢自体もBランクで data/skill/ にページを作らない対象。",
+  "合成候補はixanary.com(skills/天ノ羽々矢)の1次/2次と ixawiki(BushoCard/2731)の合成候補テーブルの2ソースで全5枠完全一致(A=弾幕防壁陣[C]→鉄壁の備え[D]、B=堅陣斉射[B]→砲撃 羅刹[B]、C=武門の誇り[B]→八咫烏[B]、S1=天ノ羽々矢[B]自己参照、S2=燕返し[A]→柳生新陰流[A])。各枠のtarget/rate/effectShortは候補スキル自身のixanaryページのLV10行から転記。候補は全てS未満のため新規スキルページ作成は不要(A-3-9)。",
+  "章はixanary.com/ixawiki.comのカードページに記載が無く未確認。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "reviewedOk": true,
+ "wikiOldestComment": "2015-07-12",
+ "wikiCommentCount": 47,
+ "chGuess": "10章",
+ "chSource": "wikiOldestComment"
+}

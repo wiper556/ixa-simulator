@@ -1,0 +1,146 @@
+{
+ "name": "石川五右衛門（1）",
+ "no": "3701",
+ "ch": "1-2章",
+ "cost": 2.5,
+ "troop": "全",
+ "sub": "",
+ "effect": "銅銭獲得率5%(参加した対人攻撃/防御で倒した兵数×銅銭獲得率＝獲得銅銭)",
+ "furigana": "いしかわごえもん",
+ "illustrator": "BASKERVILLE",
+ "imageFull": "assets/img/characters/no3701_full.png",
+ "imageChar": "assets/img/characters/no3701_char.png",
+ "atkBase": 700,
+ "atkGrowth": 17,
+ "defBase": 700,
+ "defGrowth": 17,
+ "tacticsBase": 475,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 2222,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "B",
+  "uma": "B",
+  "ki": "A"
+ },
+ "initialSkill": "天下の義賊",
+ "skillDetail": "C/LV10 確率 35% 銅銭獲得率5%/対象:全\n①参加した対人攻撃/防御で倒した兵数×銅銭獲得率が獲得銅銭になる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 35% / 銅銭獲得率5%(参加した対人攻撃/防御で倒した兵数×銅銭獲得率＝獲得銅銭)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": null
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": null
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": null
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": null
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": null
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": null
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "城崩 奈落",
+   "rank": "C",
+   "afterSkill": "鬼謀 国砕",
+   "afterRank": "B",
+   "target": "器",
+   "rate": "25%",
+   "effectShort": "攻撃 5%上昇+破壊 25%上昇",
+   "afterTarget": "上級器",
+   "afterRate": "35%",
+   "afterEffectShort": "攻撃 10%上昇+破壊 25%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "砲陣の極み",
+   "rank": "B",
+   "afterSkill": "八咫烏",
+   "afterRank": "B",
+   "target": "砲",
+   "rate": "30%",
+   "effectShort": "防御 30%上昇",
+   "afterTarget": "砲器",
+   "afterRate": "35%",
+   "afterEffectShort": "防御 30%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "砲撃 羅刹",
+   "rank": "B",
+   "afterSkill": "釣り野伏 鬼",
+   "afterRank": "B",
+   "target": "砲",
+   "rate": "25%",
+   "effectShort": "攻撃 25%上昇+破壊 5%上昇",
+   "afterTarget": "砲",
+   "afterRate": "20%",
+   "afterEffectShort": "攻撃 30%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "疾風怒濤",
+   "rank": "B",
+   "afterSkill": "疾風怒濤",
+   "afterRank": "B",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "攻撃 5%上昇+速度 32%上昇",
+   "afterEffectShort": "攻撃 5%上昇+速度 32%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "独眼竜",
+   "rank": "A",
+   "afterSkill": "独眼竜",
+   "afterRank": "A",
+   "target": "馬砲器",
+   "rate": "30%",
+   "effectShort": "攻撃 25%上昇+破壊 5%上昇",
+   "afterEffectShort": "攻撃 25%上昇+破壊 5%上昇"
+  }
+ ],
+ "notes": [
+  "2026-08-16 新規登録(特シークレットの第1号)。カード画像はLV1形式のためB-00に従い、画像から採ったのは 武将名/統率(4隅バッジ)/スキル名/攻撃・防御・兵法の初期値/覇でないこと/カードNo. の6項目のみ。",
+  "他の項目は ixanary.com(cards/3701、skills/天下の義賊)と ixawiki.com(BushoCard/3701石川五右衛門、武将カード一覧(特))の2ソースで確認し、全項目が一致した。",
+  "2026-08-16 再検証: ixawikiのカードページはLV1(確率+20%・銅銭獲得率2%)しか載せていないので、LV10の値だけは2ソース一致ではなくixanary1件だった。3ソース目として ixagno.blog.fc2.com(blog-entry-926「シクレ特武将 石川五右衛門 育成方針」)を確認し、「スキルLv10で【確率+35% 銅銭獲得率：5%】」「成長値 攻撃17/防御17/兵法2.5」が一致した。これでLV10も2ソースになった。",
+  "2026-08-16 訂正: 下の章の項に「ixagnoの『石川五右衛門』20件は全て別カード(復刻/極)の記事」と書いていたのは誤り。blog-entry-926 は本カード(特・銅銭スキル)そのものの記事だった。ただし実装章・実装時期の記載はこの記事にも無い。",
+  "指揮兵数はixanaryの★0-0=2222(B-01)。カード画像の「極限突破 0/3622」はixanaryの極限突破列3822より200少なく、B-01の「ixanaryの極限突破/天限突破列は+0.5版(+200)」と整合するので、カード側が正しく、lv0Troopsは2222で問題ない。",
+  "スキル効果はLV10の値(確率35%・銅銭獲得率5%)。カード上のLV1表記(確率20%・銅銭獲得率2%)は採らない。",
+  "鍛錬(TR)はixanary・ixawikiのどちらにも段が存在せず、LV1/LV10の2段のみ。TR行はテンプレートどおり残してeffectをnullにしてある(表示側は値ゼロならTR行を出さない)。",
+  "合成候補はixanary(skills/天下の義賊)の1次=移植前/2次=移植後、およびixawiki(BushoCard/3701)の1次候補/2次候補で、5枠すべて2ソース一致。",
+  "章はixanary・ixawikiに記載が無く、追加でixagno.blog.fc2.comも検索した(「石川五右衛門」20件ヒットするが全て別カード(復刻/極)の記事、「天下の義賊」は0件)。実装章の記載は見つからなかったため未確認のまま。wikiの最古コメントは2011-08-02。",
+  "名前の（1）: 特レアリティの同名は 3701(最古コメント2011-08-02)と3564(同2024-01-13)の2枚。出現が早い順に3701が（1）。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "reviewedOk": true,
+ "wikiOldestComment": "2011-08-02",
+ "wikiCommentCount": 516,
+ "chGuess": "1-2章",
+ "chSource": "wikiOldestComment"
+}

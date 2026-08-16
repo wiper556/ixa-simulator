@@ -1,0 +1,50 @@
+{
+ "name": "戦陣 轟砲",
+ "rank": "A",
+ "baseRate": 45,
+ "target": "砲・器",
+ "effectSummary": "A/LV10 確率 45% 攻撃 66%上昇/防御 66%上昇/対象:砲・器",
+ "sourceCharacters": [
+  {
+   "name": "高山右近（1）",
+   "no": "2412",
+   "slot": "S2",
+   "db": "kyoku"
+  },
+  {
+   "name": "蒲生郷成",
+   "no": "2414",
+   "slot": "S1",
+   "db": "kyoku"
+  },
+  {
+   "name": "北条氏規",
+   "no": "2416",
+   "slot": "S2",
+   "db": "kyoku"
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "覇王絶世",
+  "rank": "SS"
+ },
+ "grantedViaSkills": [
+  {
+   "skill": "王道ノ極意",
+   "rank": "B"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "砲・器　確率 45% / 攻撃 66%上昇+防御 66%上昇"
+  }
+ ],
+ "notes": [
+  "2026-08-16作成。A-3-9の例外ルール(移植後合成候補afterSkillが既にskills.htmlページを持つ覇王絶世[SS]である元スキル)によりAランクだがページ作成対象。",
+  "ixanary.com/skills/戦陣 轟砲 の生HTML(LV10行: 確率+45%/対象砲器/攻撃66%上昇/防御66%上昇)で確認。categoryLinksは9項目いずれも該当なし。",
+  "No.2412高山右近(S2枠)・2414蒲生郷成(S1枠)・2416北条氏規(S2枠、いずれも担当範囲内)の黄丸化検証(2026-08-16)で新規作成。data/skill/覇王絶世.jsonのgrantedViaSkillsに本スキルを追記した。",
+  "2026-08-16(No.7009黄丸化検証): A枠(王道ノ極意[B]→戦陣轟砲[A])が未登録だったため、王道ノ極意.jsonを新規作成しgrantedViaSkillsに追加した。"
+ ]
+}

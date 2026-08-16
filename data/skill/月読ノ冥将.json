@@ -1,0 +1,38 @@
+{
+ "name": "月読ノ冥将",
+ "rank": "S",
+ "baseRate": 100,
+ "target": "槍・弓・馬・騎",
+ "effectSummary": "S/LV10 確率 100% 攻撃 114%上昇/対象:槍・弓・馬・騎\n①攻撃 114%上昇する\n②速度 70%上昇する\n③攻撃参加した自軍全部隊の帰還速度が4倍になる(帰還効果は模倣・重複不可)",
+ "categoryLinks": null,
+ "sourceCharacters": [
+  {
+   "name": "梅津憲忠",
+   "no": "2476",
+   "slot": "A",
+   "db": "kyoku",
+   "note": [
+    "梅津憲忠(2476)のsynthesisTable A枠(2026-08-16。ixanary.com/skills/黄鬼ノ辣腕とixawiki BushoCard/2476の1次候補A欄がともに月読ノ冥将[S]であることを2ソース確認)"
+   ]
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "天岩戸ノ神域",
+  "rank": "SS"
+ },
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・弓・馬・騎　確率 100% / 攻撃 114%上昇+速度 70%上昇(攻撃参加した自軍全部隊の帰還速度が4倍・帰還効果は模倣・重複不可)"
+  }
+ ],
+ "notes": [
+  "2026-08-16作成。No.2476(梅津憲忠)のsynthesisTable A枠に出るSの候補スキルのためページ作成(A-3-9)。",
+  "出典: ixanary.com/skills/月読ノ冥将(LV1/LV10・合成テーブル1次〜3次)。1次候補としての枠(A)はixanary.com/skills/黄鬼ノ辣腕 + ixawiki.com(BushoCard/2476梅津憲忠)の2ソースで確認。",
+  "ownHiddenCandidateはNo.2476のA枠のafterSkill(天岩戸ノ神域[SS])から導出。本スキル自身のixanaryスキルページのS1候補も天岩戸ノ神域[SS]でありA-3-13の裏取り条件を満たす。",
+  "スキル名は「月読ノ冥略」(別スキル、既存ページあり)と1文字違いなので取り違えに注意。ixanary.com/skills/月読ノ冥将 と ixawiki の表記はどちらも「冥将」。",
+  "categoryLinks 9項目チェック実施: 無尽/撤退/飛翔/覇道/不屈/兵站/卓越/人数依存/コスト減少のいずれにも該当しないためnull。",
+  "TR(鍛錬)情報はixanary.comに記載が無く、LV1/LV10の2段のみのためtrTableはLV10の1行。"
+ ]
+}

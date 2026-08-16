@@ -1,0 +1,36 @@
+{
+ "name": "裂界神謀",
+ "rank": "S",
+ "baseRate": null,
+ "target": "-",
+ "noMimic": true,
+ "effectSummary": "S/LV10 所属部隊内の「騎馬兵」「精鋭騎馬」「赤備え」の兵士攻撃力が9上昇/対象:-\n模倣不可\n①所属部隊内の「騎馬兵」「精鋭騎馬」「赤備え」の兵士攻撃力が9上昇する(自部隊内で重複不可)",
+ "categoryLinks": null,
+ "sourceCharacters": [
+  {
+   "name": "尼子経久（2）",
+   "no": "2467",
+   "slot": "移植不可",
+   "db": "kyoku",
+   "note": [
+    "尼子経久（2）(2467)の初期スキル。自身の合成テーブルA〜S2のどの枠にも本スキルが出ないため移植不可(ixanary.com/skills/裂界神謀・ixawiki BushoCard/2467の2ソースで確認)。"
+   ]
+  }
+ ],
+ "ownHiddenCandidate": null,
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "確率 - / 所属部隊内の「騎馬兵」「精鋭騎馬」「赤備え」の兵士攻撃力が9上昇(模倣不可・自部隊内で重複不可)"
+  }
+ ],
+ "notes": [
+  "2026-08-16作成。No.2467(尼子経久（2）)の初期スキル。S以上のため無条件でページ作成(A-3-9)。",
+  "出典: ixanary.com/skills/裂界神謀(LV1/LV10・合成テーブル1次〜3次) + ixawiki.com(BushoCard/2467尼子経久)。2ソース一致。",
+  "発動確率・対象兵科を持たない常時効果型のためbaseRateはnull、targetは「-」。",
+  "ownHiddenCandidateは、本スキルが自身の合成テーブルのどの枠にも1次候補として現れない(移植不可)ためnull。推測で自己参照を入れていない。",
+  "categoryLinks 9項目チェック実施: 無尽/撤退/飛翔/覇道/不屈/兵站/卓越/人数依存/コスト減少のいずれにも該当しないためnull。兵士攻撃力を上げる効果に対応する一覧ページは現時点で存在しない。",
+  "TR(鍛錬)情報はixanary.com・ixawiki.comのいずれにも記載が無く、両サイトともLV1/LV10の2段のみのためtrTableはLV10の1行。"
+ ]
+}

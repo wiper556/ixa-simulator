@@ -1,0 +1,141 @@
+{
+ "name": "エーコ",
+ "no": "2626",
+ "ch": "29章",
+ "cost": 3.0,
+ "troop": "全特",
+ "sub": "",
+ "effect": "所持しているだけでデッキ上にある全武将のHP回復率が5%上昇",
+ "furigana": "えーこ",
+ "illustrator": "FinalFantasyIX 25th ANNIVERSARY",
+ "imageFull": "assets/img/characters/no2626_full.png",
+ "imageChar": "assets/img/characters/no2626_char.png",
+ "atkBase": 1100,
+ "atkGrowth": 56,
+ "defBase": 1100,
+ "defGrowth": 56,
+ "tacticsBase": 570,
+ "tacticsGrowth": 3.0,
+ "lv0Troops": 3550,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "リジェネ",
+ "skillDetail": "S/LV10 確率 100% デッキ上武将回復率 5%上昇/対象:全\n①所持しているだけでデッキ上にある全武将のHP回復率が5%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / デッキ上武将回復率 5%上昇(所持しているだけでデッキ上にある全武将のHPが回復)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": null
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": null
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": null
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": null
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": null
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": null
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "十束ノ神域",
+   "rank": "SS",
+   "afterSkill": "天聖宝冠",
+   "afterRank": "SSS",
+   "target": "全 覇道",
+   "rate": "100%",
+   "effectShort": "攻撃 320%上昇+速度 70%上昇+覇道を持つため所属部隊の武将のスキルを無効化・発動率低下から保護",
+   "afterTarget": "全",
+   "afterRate": "45%",
+   "afterEffectShort": "攻撃 100%上昇((5.0×防御参加武将数)%を攻撃効果に加算・模倣不可)"
+  },
+  {
+   "slot": "B",
+   "skill": "破邪後輝",
+   "rank": "SS",
+   "afterSkill": "飛龍衝天",
+   "afterRank": "SS",
+   "target": "全 覇道",
+   "rate": "100%",
+   "effectShort": "攻撃 770%上昇+速度 150%上昇+破壊 150%上昇+覇道を持つため所属部隊の武将のスキルを無効化・発動率低下から保護",
+   "afterTarget": "全 飛翔15",
+   "afterRate": "45%",
+   "afterEffectShort": "攻撃 200%上昇+(7.5×防御参加武将数)%を攻撃効果に加算(模倣不可)"
+  },
+  {
+   "slot": "C",
+   "skill": "閃裂討鬼",
+   "rank": "SS",
+   "afterSkill": "閃裂討鬼",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "45%",
+   "effectShort": "攻撃 50%上昇(部隊の総コストで効果が変化)+部隊内で武将コストがスキルに影響する時攻撃効果部分のみこの武将のコストを+0.5で計算",
+   "afterEffectShort": "攻撃 50%上昇(部隊の総コストで効果が変化)+部隊内で武将コストがスキルに影響する時攻撃効果部分のみこの武将のコストを+0.5で計算"
+  },
+  {
+   "slot": "S1",
+   "skill": "絶無灰尽",
+   "rank": "SS",
+   "afterSkill": "絶無灰尽",
+   "afterRank": "SS",
+   "target": "全 無尽 不屈1",
+   "rate": "100%",
+   "effectShort": "攻撃 1010%上昇+無尽(部隊消費コスト-0.5)",
+   "afterEffectShort": "攻撃 1010%上昇+無尽(部隊消費コスト-0.5)"
+  },
+  {
+   "slot": "S2",
+   "skill": "四天轟雷",
+   "rank": "SS",
+   "afterSkill": "四天轟雷",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "攻撃 360%上昇+防御 360%上昇+部隊内全武将の兵科対象の全スキルに砲・器対象を追加",
+   "afterEffectShort": "攻撃 360%上昇+防御 360%上昇+部隊内全武将の兵科対象の全スキルに砲・器対象を追加"
+  }
+ ],
+ "notes": [
+  "出典: カード画像(LV1形式・B-00で読んでよい6項目のみ採用: 武将名/統率4隅バッジ/スキル名/攻防兵法の初期値/覇でないこと/カードNo.) + ixanary.com(cards/{no}・skills/{skill}の生HTML) + ixawiki.com(BushoCard/{no}{name}・武将カード一覧(極))。効果量・成長値・指揮兵数・合成候補はすべて外部ソースから取り、カード画像のLV1値は登録していない。",
+  "ch(章)はFF9 25周年記念コラボ「玖幻戦」の実装時期から。ixagno.blog.fc2.com(2025-07-03の記事、カテゴリ【29章】でこのコラボカードの追加を扱っている)と、当サイトの既存データで29章の窓が2025-02-07〜2025-08-06(30章の初出が2025-08-07)であることの2点による。ゲーム内での直接確認ではない。",
+  "コラボカード(FinalFantasyIX 25th ANNIVERSARY)。取引/譲与不可。覇の表記はカード画像に無く【覇】は付かない。同名の特武将(No.363x)が別に居るがレアリティが違うため（N）は振らない。",
+  "統率はカード画像の4隅バッジ(槍A/馬A/弓A/器S)を拡大確認、ixawiki武将カード一覧(極)の A|A|A|.S と一致。",
+  "指揮兵数はixanaryの★0-0=3550。カード画像は★4・LV0で0/3950、ixanaryの★4-20=3950と一致。",
+  "リジェネは鍛錬不可。ixanaryのスキルページにTR行が無く、ixawikiのカードページにも[鍛錬可能]の表記が無いため、TR1以降は存在しない(調べ漏れではない)。",
+  "成長値はixawikiのカードページが空欄のためixanary.com/cards/2626のみ(+56/+56/+3)。",
+  "合成テーブルはixanary.com/skills/リジェネ の1次/2次。1次はixawikiのカードページとも一致。A枠の2次(天聖宝冠)・B枠の2次(飛龍衝天)は、当サイトの十束ノ神域.json・破邪後輝.jsonのownHiddenCandidateとも一致する。",
+  "リジェネ自体はエーコのA〜S2のどの枠にも載らないため、エーコからは移植不可(ガーネットNo.2623のS2枠からは移植できる)。"
+ ],
+ "reviewedOk": true,
+ "wikiOldestComment": "2025-08-03",
+ "wikiCommentCount": 1,
+ "chGuess": "29-30章"
+}

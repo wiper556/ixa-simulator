@@ -12,7 +12,7 @@
  ],
  "sourceCharacters": [
   {
-   "name": "松平元康",
+   "name": "松平元康（2）",
    "no": "1207",
    "slot": "C"
   },
@@ -48,6 +48,17 @@
   {
    "skill": "破軍十六神将",
    "rank": "SSS"
+  },
+  {
+   "skill": "戦陣 勝鬨",
+   "rank": "A"
+  },
+  {
+   "skill": "月読ノ冥将",
+   "rank": "S"
   }
+ ],
+ "notes": [
+  "2026-08-16: No.2476(梅津憲忠)のA枠は skill=月読ノ冥将[S] → afterSkill=本スキル。月読ノ冥将は同日 data/skill/月読ノ冥将.json を新設したため、A-3-12に従い武将を直接列挙せずgrantedViaSkillsで月読ノ冥将を参照する形にした(梅津憲忠は月読ノ冥将.json側のsourceCharactersから逆引きできる)。"
  ]
 }

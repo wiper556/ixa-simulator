@@ -1,5 +1,5 @@
 {
- "name": "松永久秀",
+ "name": "松永久秀（3）",
  "no": "1209",
  "ch": "23章",
  "cost": 3.5,
@@ -94,6 +94,15 @@
   }
  ],
  "notes": [
-  "synthesisTable: 45do.info生HTML(skiladd_wrap)+ixanary.com(獄香ノ爆宴スキルページの合成テーブル)で2ソース一致確認済み(2026-08-02)。海神ノ浮船は宇喜多秀家(1217)側とixanary.com上の正式表記「海神ノ浮船」に統一済み"
- ]
+  "2026-08-16黄丸化検証: rankGrades(槍A/弓S/馬A/器S)をカード画像バッジ4隅で照合、一致。ステータス初期値・成長値・cost3.5・lv0Troops4190はixanary.com(cards/1209)生HTMLの成長表と一致。skillDetailはixanary/ixawiki2ソースともLV1/LV10のみでTR無しと確認。",
+  "名前表記: ixawiki.com(Busho/武将カード一覧)で「松永久秀(3)」表記を確認したためF-0規則に従い「松永久秀（3）」とした(2026-08-16、旧登録は無印だった)。data/skill配下の候補スキル(獄香ノ爆宴・天奏聖譚曲・海神ノ浮船)のsourceCharactersも同名に更新した。",
+  "synthesisTable(A/B=獄香ノ爆宴[S]→海神ノ浮船[SS]、C/S2=天奏聖譚曲[SS]自己参照、S1=海神ノ浮船[SS]自己参照)をixanary.com(skills/獄香ノ爆宴)生HTMLとixawiki.com(BushoCard/1209松永久秀)生HTMLの2ソースで完全一致を確認(2026-08-16)。海神ノ浮船の表記はixanary正式名と一致(既存notesの統一作業も踏襲)。",
+  "categoryLinksチェック(A-3-9、9項目): 初期スキル獄香ノ爆宴の「自軍内で同兵種を指揮している武将数」はskills-count-def.htmlの基準(「防御参加武将数(280人)」形式)とは異なる別の計算方式のため非該当と判断(2026-08-16、skills-count-def.html本体の実データ形式を確認した上での判断)。他8項目も非該当。",
+  "sourceCharacters逆引き確認(A-3-11): 獄香ノ爆宴(A・B)・天奏聖譚曲(C・S2)・海神ノ浮船(S1)いずれもdata/skill/配下に1209が記載済み(2026-08-16)。",
+  "章(23章)は情報源に記載が無く未確認のまま(ixanary/ixawikiともchapter情報を確認できず)。"
+ ],
+ "reviewedOk": true,
+ "wikiOldestComment": "2022-02-04",
+ "wikiCommentCount": 26,
+ "chGuess": "22-23章"
 }

@@ -130,12 +130,16 @@
   "2026-08-07開幕の32章新天。ixanary.comは2026-08-08時点で未対応(cards/1315 は404)のため",
   "別ソースで確定させた。スキル名・作家名は公式ニュース(スクウェア・エニックス発表)、",
   "コスト/指揮兵数/成長値は ixagno.blog.fc2.com【天】武将一覧、",
-  "基礎値・兵科適性・LV10効果・鍛錬表・合成テーブルは同サイトの個別記事(blog-entry-11147)。"
+  "基礎値・兵科適性・LV10効果・鍛錬表・合成テーブルは同サイトの個別記事(blog-entry-11147)。",
+  "2026-08-16再検証(黄丸化): ixanary.com/cards/1315/が閲覧可能(200)になっており、ixagno単独からixanary併用の2ソース体制に移行できた。カード画像の4隅バッジ再ズーム(槍S/弓A/馬A/器S)・コスト5/指揮5150/成長値攻46防72兵法3.5がixanaryと完全一致(rankGradesもixanary側yumi/kiba入れ替わりなく一致)。synthesisTableはixanary.com/skills/覇城統陣/の生HTML合成テーブルでA〜S2全5枠(A:八界経略[S]→閃裂討鬼[SS]、他4枠は自己参照)が既存登録と完全一致。sourceCharacters逆引き(A-3-11): 八界経略/布刀玉ノ策/経津主神ノ剣/万界神謀/月詠ノ覇威の各data/skill/*.jsonに1315が反映済み、A枠の移植後(閃裂討鬼)はgrantedViaSkills経由で正しく間接リンク済みを確認。"
  ],
  "categoryLinks": [
   {
    "href": "skills-takuetsu.html",
    "label": "卓越スキル一覧を見る"
   }
- ]
+ ],
+ "reviewedOk": true,
+ "wikiOldestComment": null,
+ "wikiCommentCount": null
 }

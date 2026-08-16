@@ -24,7 +24,7 @@
   "ki": "S"
  },
  "initialSkill": "倫魁不羈",
- "skillDetail": "S/LV10 確率 55% 攻撃 (4×防御参加武将数)%上昇/対象:槍・弓・馬・砲\n①対象兵科(槍・弓・馬・砲)を指揮した戦闘時攻撃力が(4×防御参加武将数)%上昇する(TR1〜TR5は未確認)",
+ "skillDetail": "S/LV10 確率 55% 攻撃 (4×防御参加武将数)%上昇/対象:槍・弓・馬・砲\n①対象兵科(槍・弓・馬・砲)を指揮した戦闘時攻撃力が(4×防御参加武将数)%上昇する",
  "categoryLinks": [
   {
    "href": "skills-count-atk.html",
@@ -100,6 +100,11 @@
   }
  ],
  "notes": [
-  "45do.info(生HTML skiladd_wrap)+ameameixa.com(スキルテーブル、URLは表記揺れのbushoca-d-1236)の2ソース照合済み、両者一致"
- ]
+  "45do.info(生HTML skiladd_wrap)+ameameixa.com(スキルテーブル、URLは表記揺れのbushoca-d-1236)の2ソース照合済み、両者一致",
+  "2026-08-16黄丸化再検証: ixanary.com(cards/1236, skills/倫魁不羈)+ixawiki.com(BushoCard/1236水野勝成)の2ソースでsynthesisTable5枠(A倫魁不羈S→十束ノ神域SS/B天啓ノ神撃SS自己参照/C天津甕星ノ雷SS自己参照/S1十束ノ神域SS→天聖宝冠SSS/S2加具土ノ神域SS自己参照)が完全一致。基礎値(1220/1100/660、成長+63/+49/+3、指揮4540)・rankGrades(槍A/弓S/馬A/器S、カード画像バッジ拡大確認)もixanary生HTMLと一致。data/skill/倫魁不羈(自己ページ)・天啓ノ神撃・天津甕星ノ雷・十束ノ神域・加具土ノ神域の各JSONのsourceCharactersに1236が正しいslotで既に記載済み。skillDetail及び関連スキルJSON2件(倫魁不羈・加具土ノ神域)の「TR1〜TR5未確認」を追加ソースで確認、いずれもixanary+ixawikiの2ソースでTR区分自体が存在しないことを確認し表記を削除。"
+ ],
+ "reviewedOk": true,
+ "wikiOldestComment": "2023-02-03",
+ "wikiCommentCount": 28,
+ "chGuess": "25章"
 }

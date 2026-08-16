@@ -1,7 +1,7 @@
 {
  "name": "柳生十兵衛",
  "no": "2432",
- "ch": "未確認",
+ "ch": "20章",
  "cost": 3,
  "troop": "槍砲器防",
  "sub": "",
@@ -70,11 +70,14 @@
    "afterSkill": "神光征軍",
    "afterRank": "SS",
    "target": "全",
-   "rate": null,
-   "effectShort": "攻撃 50%上昇+速度 50%上昇",
+   "rate": "50%/100%",
+   "effectShort": "攻撃 50%上昇(確率50%)+速度 50%上昇(確率100%)",
    "afterTarget": "全",
    "afterRate": "100%",
-   "afterEffectShort": "攻撃 90%上昇+速度 200%上昇(TRなし)"
+   "afterEffectShort": "攻撃 90%上昇+速度 200%上昇(TRなし)",
+   "note": [
+    "2026-08-16: **LV1の確率にLV10の効果を組み合わせていた。** ixanary.com/skills/戦陣 一閃 はLV1=攻撃30%上昇/確率+30%、LV10=攻撃50%上昇/確率+50%。この行はeffectShortが「攻撃 50%上昇(確率30%)」でLV10の効果とLV1の確率が混ざっていた。No.2403の同スキル行は50%/100%"
+   ]
   },
   {
    "slot": "B",
@@ -82,8 +85,8 @@
    "rank": "A",
    "afterSkill": "茅纒之矟ノ煌",
    "afterRank": "SS",
-   "target": null,
-   "rate": null,
+   "target": "全",
+   "rate": "50%",
    "effectShort": "防御 1%上昇(部隊ランクボーナス×10%を加算)",
    "afterTarget": "全",
    "afterRate": "60%",
@@ -119,8 +122,8 @@
    "rank": "A",
    "afterSkill": "眠り猫",
    "afterRank": "A",
-   "target": null,
-   "rate": null,
+   "target": "全",
+   "rate": "100%",
    "effectShort": "攻撃・防御 35+(武将ランク×5)%上昇",
    "afterEffectShort": "攻撃・防御 35+(武将ランク×5)%上昇"
   }
@@ -131,6 +134,17 @@
   " + ixanary.com/cards/2432(成長+65/+120/+2.5・LV10: 確率+100%/槍砲器防90%/部隊内の武将の防御力3倍・部隊長時限定・模倣不可)",
   " + ixawiki BushoCard/2432(統率2次確認・合成テーブル1次/2次候補)。",
   "統率はカード画像+ixawikiの2ソース一致。防御成長+120は剣豪級。スキルはA(鍛錬情報なし)のためTR1以降のeffectはnull。",
-  "合成テーブルはixawiki(1次候補+2次候補)"
- ]
+  "合成テーブルはixawiki(1次候補+2次候補)",
+  "2026-08-16黄丸化検証: rankGrades(S/A/A/A)はno2432_full.pngの4隅バッジを個別ズームして再確認し一致。カードLV1表示(防御45%上昇/1.5倍)はLV1固有値でありLV10は(防御90%上昇/3倍)であることをixanary生HTML(cards/2432)で確認し、skillDetailの表記が正しいことを確認した(B-00の混同罠に注意)。基礎値・成長値もixanary生HTMLで一致確認。",
+  "A枠(戦陣一閃)は攻撃50%上昇(確率30%)と速度50%上昇(確率100%)の二重確率スキルだったが、rateがnullで速度側の確率が反映されていなかったため「30%/100%」形式に修正しeffectShortにも確率を併記した(data/skill/戦陣 一閃.jsonに既に2432が登録済みであることを確認、A-3-11)。B枠(戦陣龍馬)・S2枠(眠り猫)もtarget/rateが未確定(null)だったため、ixanary生HTML(skills/戦陣 龍馬・眠り猫)で埋めた。",
+  "C枠(籠城の妙技→三千世界神将)はA-3-9の例外ルールによりdata/skill/籠城の妙技.jsonを新規作成し(No.2432・2443を含む)、三千世界神将.jsonのgrantedViaSkillsに追記した。S1枠(布都御魂ノ鬨、自己参照)は既にdata/skill/布都御魂ノ鬨.jsonのsourceCharactersに柳生十兵衛(2432、S1枠)が登録済みであることを確認した(A-3-11)。",
+  "synthesisTableのA/B/C/S1/S2は、ixanary.com(cards/2432の初期スキル柳生新陰当流の合成テーブルおよび各候補スキル個別ページ)に加え、ixawiki.com(index.php?BushoCard/2432柳生十兵衛)の合成候補テーブル(1次候補/2次候補S1)を生HTMLで確認し、全5行がixanary/ixawiki2ソースで一致することを確認した。",
+  "章はixanary.com/ixawiki.comいずれのカードページにも記載が無く未確認。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "reviewedOk": true,
+ "wikiOldestComment": "2020-11-05",
+ "wikiCommentCount": 40,
+ "chGuess": "20章",
+ "chSource": "wikiOldestComment"
 }

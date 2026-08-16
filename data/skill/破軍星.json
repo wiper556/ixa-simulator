@@ -2,7 +2,7 @@
  "name": "破軍星",
  "rank": "SS",
  "baseRate": 40,
- "target": "馬砲器",
+ "target": "馬・砲・器",
  "effectSummary": "SS/LV10 確率：+40% / 対象 馬砲器 攻撃：(18+コストx8) %上昇 破壊：(8+コストx3) %上昇 (武将のコストで効果が変化します)",
  "sourceCharacters": [
   {
@@ -23,8 +23,15 @@
    "effect": "馬砲器　確率 40% / 攻撃 (18+コストx8) %上昇 破壊 (8+コストx3) %上昇 (武将のコストで効果が変化します)"
   }
  ],
+ "grantedViaSkills": [
+  {
+   "skill": "覇王 葵巴",
+   "rank": "S"
+  }
+ ],
  "notes": [
   "2026-08-12作成。合成候補に出てくるS以上はページを作る規約(A-3)の未処理分。",
-  "ixanary.com/skills/破軍星 から取得。categoryLinksは9項目の判定が要るため付けていない。"
+  "ixanary.com/skills/破軍星 から取得。categoryLinksは9項目の判定が要るため付けていない。",
+  "2026-08-16(担当K6): No.2721林羅山のS2枠が 覇王 葵巴[S]→破軍星[SS] と変化するため、A-3-12に従いgrantedViaSkillsに覇王 葵巴を追加した(武将自身は覇王 葵巴側のsourceCharactersに載せている)。"
  ]
 }

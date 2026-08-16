@@ -1,0 +1,154 @@
+{
+ "name": "悪魔将軍",
+ "no": "2631",
+ "ch": "30章",
+ "cost": 4.5,
+ "troop": "全",
+ "sub": "不屈1",
+ "effect": "所属部隊の武将のスキルを無効化・発動率低下から保護+自身を除く所属部隊の初期スキルに不屈1を付与(模倣不可)",
+ "furigana": "あくましょうぐん",
+ "illustrator": "ゆでたまご／集英社・キン肉マン製作委員会",
+ "imageFull": "assets/img/characters/no2631_full.png",
+ "imageChar": "assets/img/characters/no2631_char.png",
+ "atkBase": 1240,
+ "atkGrowth": 66,
+ "defBase": 1050,
+ "defGrowth": 44,
+ "tacticsBase": 550,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 4600,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "地獄の断頭台",
+ "skillDetail": "S/LV10 確率 29% 対象:全　不屈1\n模倣不可\n①所属部隊の武将が持つスキルを無効化スキルや発動率低下スキルから保護する\n②所属部隊のうち自身を除く武将の初期スキルは不屈1を得る(自部隊内重複不可)",
+ "categoryLinks": [
+  {
+   "href": "skills-fukutsu.html",
+   "label": "不屈スキル一覧を見る"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全 不屈1　確率 29% / 所属部隊の武将のスキルを無効化・発動率低下から保護+自身を除く所属部隊の武将の初期スキルに不屈1を付与(模倣不可・自部隊内重複不可)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": null
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": null
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": null
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": null
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": null
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": null
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "筋骨隆々",
+   "rank": "S",
+   "afterSkill": "筋骨隆々",
+   "afterRank": "S",
+   "target": "全 不屈1 兵站",
+   "rate": "9%",
+   "effectShort": "攻撃 270%上昇+防御 270%上昇",
+   "afterTarget": "全 不屈1 兵站",
+   "afterRate": "9%",
+   "afterEffectShort": "攻撃 270%上昇+防御 270%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "外道煉獄",
+   "rank": "S",
+   "afterSkill": "建御雷神ノ槌",
+   "afterRank": "SS",
+   "target": "槍・弓・馬・器・鉄",
+   "rate": "100%",
+   "effectShort": "攻撃 134%上昇+防御 134%上昇(発動率+15%)",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 135%上昇+防御 135%上昇(自部隊内で卓越発動したスキル数×30%を攻防効果に加算・模倣不可)"
+  },
+  {
+   "slot": "C",
+   "skill": "絶無灰尽",
+   "rank": "SS",
+   "afterSkill": "絶無灰尽",
+   "afterRank": "SS",
+   "target": "全 無尽 不屈1",
+   "rate": "100%",
+   "effectShort": "攻撃 1010%上昇+無尽(部隊消費コスト-0.5)",
+   "afterTarget": "全 無尽 不屈1",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 1010%上昇+無尽(部隊消費コスト-0.5)"
+  },
+  {
+   "slot": "S1",
+   "skill": "天地超克",
+   "rank": "SSS",
+   "afterSkill": "天地超克",
+   "afterRank": "SSS",
+   "target": "全 不屈1",
+   "rate": "46%",
+   "effectShort": "攻撃 9.6%×防御参加武将数(280人)=2688.0%",
+   "afterTarget": "全 不屈1",
+   "afterRate": "46%",
+   "afterEffectShort": "攻撃 9.6%×防御参加武将数(280人)=2688.0%"
+  },
+  {
+   "slot": "S2",
+   "skill": "龍驤虎躍",
+   "rank": "SS",
+   "afterSkill": "龍驤虎躍",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "60%",
+   "effectShort": "攻撃 810%上昇+防御 810%上昇(コスト-1・特殊効果は模倣不可)",
+   "afterTarget": "全",
+   "afterRate": "60%",
+   "afterEffectShort": "攻撃 810%上昇+防御 810%上昇(コスト-1・特殊効果は模倣不可)"
+  }
+ ],
+ "notes": [
+  "キン肉マンコラボの極(プラチナ極)。カード画像はスキル欄が「LV1」表記のためB-00のLV1形式で、画像から採ったのは武将名・統率(4隅バッジ拡大)・スキル名・攻撃/防御/兵法の初期値・覇の有無・カードNo.の6項目のみ。効果量・成長値・指揮兵数・合成候補は外部ソースで確認した。",
+  "このカードだけスクリーンショットの切り抜きが未作成だったので、元画像「スクリーンショット 2026-08-10 073943.png」を元スクリーンショット/スクリーンショット_2631.png に複製して tools/crop_card.py 2631 で切り出した(466x315 / 224x315)。",
+  "統率は槍A/馬A/弓A/器S(カード画像バッジ拡大)。ixawiki.com(BushoCard/2631悪魔将軍)と一致。",
+  "カード表示の指揮兵数0/5100は★★★★★(ランクアップ5回)状態の値。通常武将のランクアップは+100/回なので5100-500=4600がLV0値で、ixanary.com・ixawiki.comの4600と一致する。",
+  "コスト4.5・成長値+66/+44/+2.5はixanary.com(cards/2631)。初期値1240/1050/550はカード実物・ixanary・ixawikiで一致。",
+  "スキル効果(LV10・確率29%)はixanary.comとixawiki.comが一致。",
+  "「所属部隊の武将が持つスキルを無効化や発動率低下スキルから保護」という覇道と同じ保護文があるが、カード上に赤字の「覇道」表記が無いため覇道スキルとしては扱わない([[feedback_hadou_classification_rule]])。",
+  "合成テーブルはixanary.com(skills/地獄の断頭台)の1次/2次のみ。ixawiki側は空テンプレートで裏取りできていない(単一ソース)。",
+  "A-3-8の2ソース要件を満たせないため青丸のまま。合成テーブル(スロット)の裏が取れる情報源がixanary.comの1つしか無く(ixawikiの合成候補表は空テンプレート、ixagno.blog.fc2.comにキン肉マンコラボ極の個別記事が無い)、「単一ソースのまま黄色丸にしない」規約に従ってreviewedOkを立てていない。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。",
+  "2026-08-16: 章を 30章 に確定。キン肉マンコラボは2025年9月追加(うぐさん、2026-08-16)。30章は2025/8/8〜2026/2/5"
+ ],
+ "wikiOldestComment": "2025-12-25",
+ "wikiCommentCount": 1,
+ "chGuess": "30章"
+}

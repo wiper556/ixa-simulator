@@ -1,6 +1,7 @@
 {
- "name": "小早川秀秋（4）",
+ "name": "小早川秀秋（3）",
  "no": "1271",
+ "reviewedOk": true,
  "ch": "28章",
  "cost": 4.5,
  "troop": "弓馬器攻",
@@ -131,6 +132,11 @@
   }
  ],
  "notes": [
-  "45do.info(生HTML skiladd_wrap)+ameameixa.com(28章天武将スキル一覧 https://ameameixa.com/28sho-ten-sukil)の2ソースでA〜S2のスキル名一致を確認(ランクは45do.info基準)"
- ]
+  "2026-08-16: 武将名の（N）を、ixawikiの各カードページの一番古いコメントの日付順で振り直した。（N）はゲームには無く、同レアリティで同名が混ざらないようwiki利用者が出現順に付けた工夫。カードNo.順では10xxx番台(記念カード)で前後が逆転するため日付を使う(うぐさん指示)。",
+  "45do.info(生HTML skiladd_wrap)+ameameixa.com(28章天武将スキル一覧 https://ameameixa.com/28sho-ten-sukil)の2ソースでA〜S2のスキル名一致を確認(ランクは45do.info基準)",
+  "黄丸化検証(2026-08-16): カード画像no1271_full.pngの4隅バッジ(槍A/馬A/弓S/器S)を確認し一致。TR1〜TR5(480%飛翔17/540%飛翔18/610%飛翔18/690%飛翔19/780%飛翔20)はixanary.com(skills/刈世公子)の鍛錬表と全行完全一致(TR6無し)。synthesisTableはixanary.com+ixawiki.com(BushoCard/1271小早川秀秋)の2ソースでA/B/C/S1/S2全枠・afterSkillとも完全一致。刈世公子(A・B自己参照)・天宇受売命・照闇騎行・十束ノ神域のdata/skill側sourceCharactersに1271が正しいslotで記載済みを確認(逆引き済み)。"
+ ],
+ "wikiOldestComment": "2024-08-09",
+ "wikiCommentCount": 12,
+ "chGuess": "28章"
 }

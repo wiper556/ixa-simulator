@@ -1,0 +1,34 @@
+{
+ "name": "千人狩",
+ "rank": "A",
+ "baseRate": 54,
+ "target": "槍・器・鉄",
+ "effectSummary": "A/LV10 確率 54% 攻撃 92%上昇/対象:槍・器・鉄\n①攻撃 92%上昇する(敵軍5部隊以下で効果1.5倍)",
+ "sourceCharacters": [
+  {
+   "name": "渡辺了",
+   "no": "2857",
+   "slot": "A",
+   "db": "kyoku",
+   "note": [
+    "渡辺了(2857)のsynthesisTable A枠(2026-08-16、ixanary.com/skills/天衝破軍槍の合成テーブルA列で確認)"
+   ]
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "宿木",
+  "rank": "B"
+ },
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・器・鉄　確率 54% / 攻撃 92%上昇(敵軍5部隊以下で効果1.5倍)"
+  }
+ ],
+ "notes": [
+  "2026-08-16 No.2857(渡辺了)黄丸化検証時に新規作成。afterSkill(宿木)が既にskills.html独自ページを持つため、A-3-9の例外規定に該当する。",
+  "対象・確率・効果文はixanary.com(skills/千人狩)の生HTML(LV10行)から。",
+  "ownHiddenCandidateはixanary.com(skills/天衝破軍槍)の合成テーブル(1次A=千人狩、2次候補S1のA列=宿木)から導出。"
+ ]
+}

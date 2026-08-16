@@ -4,7 +4,7 @@
  "baseRate": 100,
  "target": "弓・馬・器・騎",
  "noMimic": true,
- "effectSummary": "S/LV10 確率 100% 攻撃 450%上昇/対象:弓・馬・器・騎\n①対象兵科(弓・馬・器・騎)を指揮した戦闘時攻撃力が450%上昇する\n②速度が100%上昇する\n③対象兵科指揮時自部隊の帰還時間が2分を超えるとき2分で帰還できる(模倣不可・TR1〜TR5は未確認)",
+ "effectSummary": "S/LV10 確率 100% 攻撃 450%上昇/対象:弓・馬・器・騎\n①対象兵科(弓・馬・器・騎)を指揮した戦闘時攻撃力が450%上昇する\n②速度が100%上昇する\n③対象兵科指揮時自部隊の帰還時間が2分を超えるとき2分で帰還できる(模倣不可)",
  "sourceCharacters": [
   {
    "name": "武田信虎（2）",
@@ -14,7 +14,7 @@
  ],
  "ownHiddenCandidate": {
   "skill": "星神闘覇",
-  "rank": "SSS"
+  "rank": "SS"
  },
  "trTable": [
   {
@@ -24,6 +24,7 @@
   }
  ],
  "notes": [
-  "この武将自身の初期スキル(武田信虎(2) No.1240のsynthesisTable候補A)"
+  "この武将自身の初期スキル(武田信虎(2) No.1240のsynthesisTable候補A)",
+  "2026-08-16(No.1240黄丸化検証): 2点修正。(1)effectSummaryの「TR1〜TR5は未確認」を削除。ixanary.com(cards/1240, skills/猛虎嵐陣)の生HTMLはLV1/LV10のみでTR区分自体が存在せず、ixawiki.com(BushoCard/1240武田信虎)もLv1/Lv10のみでTR言及なし、2ソースで確認しtrTable1行のみが正しいと確定。(2)ownHiddenCandidateのrankが「SSS」だったが星神闘覇の正しいrankはSS(2026-08-13にユーザーがゲーム内確認済み、data/skill/星神闘覇.json notes参照。ixanaryの「攻速：星神闘覇SSS」表示は既知の誤り)。SSに修正。"
  ]
 }

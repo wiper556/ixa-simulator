@@ -5,6 +5,12 @@
  "target": "全",
  "noMimic": true,
  "effectSummary": "SS/LV10 確率 69% 攻撃 140%上昇/対象:全\n模倣不可\n①攻撃 140%上昇する\n②自部隊同時攻撃時部隊総コストからこの武将分のコストを最大0.5まで除外する",
+ "categoryLinks": [
+  {
+   "href": "skills-cost-atk.html",
+   "label": "コスト減少(攻撃)スキル一覧を見る"
+  }
+ ],
  "sourceCharacters": [
   {
    "name": "長尾景虎（2）",
@@ -12,7 +18,7 @@
    "slot": "S2"
   },
   {
-   "name": "真田昌幸",
+   "name": "真田昌幸（3）",
    "no": "1218",
    "slot": "A"
   },
@@ -27,6 +33,9 @@
   "skill": "破軍星 皇",
   "rank": "SS"
  },
+ "notes": [
+  "2026-08-16(No.1206黄丸化検証、A-3-9categoryLinksチェックリスト): 「コストを最大0.5まで除外する」は項目9(コスト減少/除外)に該当するためskills-cost-atk.htmlへのcategoryLinksを追加した。ただしskills-cost-atk.html本体は独自複製配列でありdata/skill編集だけでは反映されないため、本体側へのエントリ追加(長尾景虎（2）1206、slot S2、baseRate69%)は別途対応が必要(申し送り)。"
+ ],
  "trTable": [
   {
    "level": "LV10",

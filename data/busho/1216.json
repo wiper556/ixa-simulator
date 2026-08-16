@@ -1,5 +1,5 @@
 {
- "name": "柴田勝家",
+ "name": "柴田勝家（4）",
  "no": "1216",
  "ch": "24章",
  "cost": 5,
@@ -24,7 +24,7 @@
   "ki": "S"
  },
  "initialSkill": "万鬼闘帝",
- "skillDetail": "S/LV10 確率 100% 攻撃 210%上昇/対象:全　覇道\n①攻撃 210%上昇する(TR1〜TR5は未確認)",
+ "skillDetail": "S/LV10 確率 100% 攻撃 210%上昇/対象:全　覇道\n①攻撃 210%上昇する\n②所属部隊の武将が持つスキルを無効化や発動率低下スキルから保護する",
  "categoryLinks": [
   {
    "href": "skills-hadou.html",
@@ -35,7 +35,7 @@
   {
    "level": "LV10",
    "points": "-",
-   "effect": "全 覇道　確率 100% / 攻撃 210%上昇"
+   "effect": "全 覇道　確率 100% / 攻撃 210%上昇(所属部隊の武将のスキルを無効化・発動率低下から保護)"
   }
  ],
  "synthesisTable": [
@@ -100,6 +100,16 @@
   }
  ],
  "notes": [
-  "45do.info(https://45do.info/ordinary/0024/)生HTML skiladd_wrap+ameameixa.com(スキルテーブル)の2ソース照合済み、両者一致(2026-08-02再照合)"
- ]
+  "2026-08-16黄丸化検証: rankGrades(槍A/弓A/馬S/器S)をカード画像バッジ4隅で照合、一致。ステータス初期値・成長値・cost5・lv0Troops4830はixanary.com(cards/1216)生HTMLの成長表と一致。",
+  "skillDetail修正: 「所属部隊の武将が持つスキルを無効化や発動率低下スキルから保護する」という②の効果文がixanary/ixawiki両ソースにあるのに旧登録では丸ごと欠落し「TR1〜TR5は未確認」という誤った注記だけが残っていた。2ソースでTR無し(LV1/LV10のみ)を確認の上、②を追記し注記を削除(2026-08-16)。data/skill/万鬼闘帝.jsonも同様に修正。覇道分類(sub:覇道、categoryLinks:skills-hadou.html)はこの保護効果文と一致しており妥当。",
+  "名前表記: ixawiki.com(Busho/武将カード一覧)で「柴田勝家(4)」表記を確認したためF-0規則に従い「柴田勝家（4）」とした(2026-08-16、旧登録は無印だった)。data/skill配下の候補スキル(万鬼闘帝・天香山命・天津甕星ノ雷・布都御魂ノ鬨)のsourceCharactersも同名に更新した。",
+  "synthesisTable(A/B=万鬼闘帝[S]→天津甕星ノ雷[SS]、C=天香山命[SS]自己参照、S1=天津甕星ノ雷[SS]自己参照、S2=布都御魂ノ鬨[SS]自己参照)をixanary.com(skills/万鬼闘帝)生HTMLとixawiki.com(BushoCard/1216柴田勝家)生HTMLの2ソースで完全一致を確認(2026-08-16)。",
+  "sourceCharacters逆引き確認(A-3-11): 万鬼闘帝(A・B)・天香山命(C)・天津甕星ノ雷(S1)・布都御魂ノ鬨(S2)いずれもdata/skill/配下に1216が記載済み(2026-08-16)。",
+  "categoryLinksチェック(A-3-9、9項目): 初期スキル万鬼闘帝は項目4(覇道)に該当し、既にskills-hadou.htmlへcategoryLinks・本体一覧とも登録済みを確認。他8項目は非該当。",
+  "章(24章)は情報源に記載が無く未確認のまま(ixanary/ixawikiともchapter情報を確認できず、既存の24章表記を維持)。"
+ ],
+ "reviewedOk": true,
+ "wikiOldestComment": "2022-08-05",
+ "wikiCommentCount": 22,
+ "chGuess": "23-24章"
 }

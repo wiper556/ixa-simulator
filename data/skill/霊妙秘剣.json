@@ -1,0 +1,63 @@
+{
+ "name": "霊妙秘剣",
+ "rank": "A",
+ "baseRate": 100,
+ "target": "槍・馬・砲 飛翔6 卓越",
+ "noMimic": true,
+ "effectSummary": "A/LV10 確率 100% 攻撃 180%上昇/対象:槍・馬・砲 飛翔6 卓越\n模倣不可\n①攻撃 180%上昇する\n②防御 180%上昇する\n③卓越:追加確率-30%で攻防効果が3倍になる(卓越追加確率が0%を超える時のみ卓越抽選される)",
+ "sourceCharacters": [
+  {
+   "name": "北条綱成（3）",
+   "no": "2374",
+   "slot": "C",
+   "db": "kyoku",
+   "note": [
+    "北条綱成(2374)のsynthesisTable C枠(2026-08-16)"
+   ]
+  },
+  {
+   "name": "悠久山安慈",
+   "no": "2612",
+   "slot": "A・B",
+   "db": "kyoku",
+   "note": [
+    "悠久山安慈(2612)のsynthesisTable A枠・B枠(2026-08-16、ixanary.com/skills/二重の極みの合成テーブルで確認)"
+   ]
+  },
+  {
+   "name": "板垣信方（2）",
+   "no": "7011",
+   "slot": "A",
+   "db": "kyoku",
+   "note": [
+    "板垣信方(7011)のsynthesisTable A枠(2026-08-16、ixanary.com/skills/御旗ノ守護者の合成テーブルA列で確認)"
+   ]
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "戦陣 剣舞",
+  "rank": "A"
+ },
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・馬・砲 飛翔6 卓越　確率 100% / 攻撃 180%上昇+防御 180%上昇(卓越:追加確率-30%で3倍・0%超のみ抽選・模倣不可)"
+  }
+ ],
+ "notes": [
+  "2026-08-16 No.2612(悠久山安慈)黄丸化検証時に新規作成。afterSkill(戦陣 剣舞)が既にskills.html独自ページを持つため、A-3-9の例外規定(戦陣 剣舞・鬼十河・宝珠盛山と同型)に該当する。",
+  "対象・確率・効果文はixanary.com(skills/霊妙秘剣)の生HTML(LV10行)から。「模倣不可」は修飾語なしの独立行として記載。",
+  "ownHiddenCandidateはixanary.com(skills/霊妙秘剣)自身の合成テーブル(1次A/B=自己参照、2次候補S1=戦陣 剣舞[A])から導出。"
+ ],
+ "categoryLinks": [
+  {
+   "href": "skills-takuetsu.html",
+   "label": "卓越スキル一覧を見る"
+  },
+  {
+   "href": "skills-hishou-atk.html",
+   "label": "飛翔スキル一覧(攻撃)を見る"
+  }
+ ]
+}

@@ -1,0 +1,149 @@
+{
+ "name": "甲斐姫（4）",
+ "no": "2619",
+ "ch": "29章",
+ "cost": 4.5,
+ "troop": "全防",
+ "sub": "",
+ "effect": "職業「姫」の武将に対してのみ効果あり",
+ "furigana": "かいひめ",
+ "illustrator": "キョー介",
+ "imageFull": "assets/img/characters/no2619_full.png",
+ "imageChar": "assets/img/characters/no2619_char.png",
+ "atkBase": 1050,
+ "atkGrowth": 44,
+ "defBase": 1180,
+ "defGrowth": 58,
+ "tacticsBase": 520,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 4590,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "美人剛腕",
+ "skillDetail": "S/LV10 確率 55% 防御 780%上昇/対象:全\n①防御 780%上昇する(職業「姫」の武将に対してのみ効果あり)",
+ "categoryLinks": [],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 55% / 防御 780%上昇(職業「姫」の武将に対してのみ効果あり)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": null
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": null
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": null
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": null
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": null
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": null
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "龍驤虎躍",
+   "rank": "SS",
+   "afterSkill": "龍驤虎躍",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "60%",
+   "effectShort": "攻撃 810%上昇+防御 810%上昇(部隊消費コスト-1・特殊効果は模倣不可)",
+   "afterTarget": "全",
+   "afterRate": "60%",
+   "afterEffectShort": "攻撃 810%上昇+防御 810%上昇(部隊消費コスト-1・特殊効果は模倣不可)"
+  },
+  {
+   "slot": "B",
+   "skill": "美人剛腕",
+   "rank": "S",
+   "afterSkill": "美人剛腕",
+   "afterRank": "S",
+   "target": "全",
+   "rate": "55%",
+   "effectShort": "防御 780%上昇(職業「姫」の武将に対してのみ効果あり)",
+   "afterTarget": "全",
+   "afterRate": "55%",
+   "afterEffectShort": "防御 780%上昇(職業「姫」の武将に対してのみ効果あり)"
+  },
+  {
+   "slot": "C",
+   "skill": "美人剛腕",
+   "rank": "S",
+   "afterSkill": "美人剛腕",
+   "afterRank": "S",
+   "target": "全",
+   "rate": "55%",
+   "effectShort": "防御 780%上昇(職業「姫」の武将に対してのみ効果あり)",
+   "afterTarget": "全",
+   "afterRate": "55%",
+   "afterEffectShort": "防御 780%上昇(職業「姫」の武将に対してのみ効果あり)"
+  },
+  {
+   "slot": "S1",
+   "skill": "美人剛腕",
+   "rank": "S",
+   "afterSkill": "美人剛腕",
+   "afterRank": "S",
+   "target": "全",
+   "rate": "55%",
+   "effectShort": "防御 780%上昇(職業「姫」の武将に対してのみ効果あり)",
+   "afterTarget": "全",
+   "afterRate": "55%",
+   "afterEffectShort": "防御 780%上昇(職業「姫」の武将に対してのみ効果あり)"
+  },
+  {
+   "slot": "S2",
+   "skill": "万里嵐壁",
+   "rank": "SS",
+   "afterSkill": "万里嵐壁",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "66%",
+   "effectShort": "防御 200%上昇(敵軍部隊数×40%を防御効果に加算・模倣不可)",
+   "afterTarget": "全",
+   "afterRate": "66%",
+   "afterEffectShort": "防御 200%上昇(敵軍部隊数×40%を防御効果に加算・模倣不可)"
+  }
+ ],
+ "notes": [
+  "2026-08-16 新規登録(担当K3)。カード画像はスキル欄が「美人剛腕LV1」表記のためB-00のLV1形式。画像から採ってよいのは6項目だけで、効果量・成長値・合成候補は外部ソースで裏を取った。",
+  "【カード画像から読んだもの】武将名「甲斐姫」/ 職業「姫」/ 極・覇表記なし / コスト4.5 / 統率 槍A・馬A・弓A・器S(4隅を個別にズームして確認) / 初期値 攻撃1050・防御1180・兵法520.0 / 指揮兵数 0/4590(★0) / カードNo.2619 / スキル名「美人剛腕」[S] / Illust キョー介。",
+  "【切り抜きの補足】tools/crop_card.py はハート検出に失敗する(カード絵の赤い衣がハート色と同じ範囲に入り、20x27/138pxの誤検出になる)。ハート枠の実位置(左上 x=25,y=294)を連結成分で特定し、同スクリプトと同じ基点計算(left=minX-6, top=minY-267)で left=19 / top=27 として手で切り抜いた。出力サイズは規定どおり466x315・224x315で、切り抜き後のハート位置が他カードと同じ(6,267)に来ることを確認済み。crop_test/TYPE1・TYPE2にも複製した。",
+  "【外部ソースで調べたもの】成長値 攻撃+44・防御+58・兵法+2.5、LV10性能 確率+55%・対象 全・防御780%上昇(職業「姫」の武将に対してのみ効果あり)。ixanary.com/cards/2619 と ixawiki BushoCard/2619甲斐姫 が完全一致。ixagno.blog.fc2.com blog-entry-10269「甲斐姫(4)【極】」も「成長：攻撃【44】防御【58】兵法【2.5】」で一致(3ソース目)。",
+  "章: 29章。ixanary.com/cards/2619 に「『戦乙女のひな祭り』クエスト報酬 2025-03-04〜2025-04-03」とあり、ixagno.blog.fc2.com blog-entry-10272 が同イベントを【29章】と明記。tools/chapter_guess.py の章期間表(29章=2025-02-07〜2025-08-07)とも整合する。",
+  "【武将名の（4）】極の甲斐姫は 2161(2016-01-14) / 2173(2016-07-05) / 2311(2021-12-01) / 2619(2025-03-05) の4枚で復刻(RE)は無い。最古コメント日順に並べて2619が（4）。ixawiki 武将カード一覧(極)の表記も 甲斐姫 / 甲斐姫(2) / 甲斐姫(3) / (2619は未採番)で矛盾せず、ixagno も記事タイトルで「甲斐姫(4)【極】(No.2619)」と呼んでいる。同名の既登録カードは無いので改名は発生しない。",
+  "合成候補は ixanary.com/skills/美人剛腕 の1次/2次(A=龍驤虎躍[SS]自己参照、B・C・S1=美人剛腕[S]自己参照、S2=万里嵐壁[SS]自己参照)と ixawiki BushoCard/2619甲斐姫 の合成候補テーブルが一致(2ソース)。ixagno blog-entry-10269 の表も同じ(3ソース目)。",
+  "TR段階: ixanary のカードページ・スキルページともTR行が無い(生HTMLに TR1〜TR6 の文字列が0件)。",
+  "categoryLinks 9項目判定(A-3-9): 無尽×/撤退×/飛翔×/覇道×/不屈×/兵站×/卓越×/人数依存×/コスト減少×。該当なしのため空配列。",
+  "sourceCharacters逆引き(A-3-11): A枠=data/skill/龍驤虎躍.json、B・C・S1枠=data/skill/美人剛腕.json(既存)、S2枠=data/skill/万里嵐壁.json のいずれにも2619を追記済み。あわせて美人剛腕.jsonのeffectSummary/trTableに落ちていた「職業「姫」の武将に対してのみ効果あり」を補った(A-4-16)。"
+ ],
+ "reviewedOk": true,
+ "wikiOldestComment": "2025-03-05",
+ "wikiCommentCount": 8,
+ "chGuess": "29章"
+}

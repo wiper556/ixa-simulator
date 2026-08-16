@@ -1,0 +1,113 @@
+{
+ "name": "千利休",
+ "no": "2736",
+ "ch": "11章",
+ "cost": 0.5,
+ "troop": "全防",
+ "sub": "",
+ "effect": "防御時に敵軍のレアリティ【天】【極】武将のスキル発動率を-15%(模倣不可・重複不可)",
+ "furigana": "せんのりきゅう",
+ "illustrator": "GODTAIL",
+ "imageFull": "assets/img/characters/no2736_full.png",
+ "imageChar": "assets/img/characters/no2736_char.png",
+ "atkBase": 700,
+ "atkGrowth": 17.0,
+ "defBase": 750,
+ "defGrowth": 17.0,
+ "tacticsBase": 540.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 1700,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "B",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "侘茶",
+ "skillDetail": "A/LV10 確率 50% 防御時に敵軍のレアリティ【天】【極】武将のスキル発動率を-15%/対象:全\n模倣不可\n①防御時に敵軍のレアリティ【天】【極】武将のスキル発動率を-15%する(重複不可)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 50% / 防御時に敵軍のレアリティ【天】【極】武将のスキル発動率を-15%(模倣不可・重複不可)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "一期一会",
+   "rank": "C",
+   "afterSkill": "神速",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "デッキ上武将回復率 20%上昇",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "速度 55%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "才知徳行",
+   "rank": "D",
+   "afterSkill": "才知徳行",
+   "afterRank": "D",
+   "target": "全",
+   "rate": "35%",
+   "effectShort": "防御 20%上昇",
+   "afterEffectShort": "防御 20%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "洞察",
+   "rank": "B",
+   "afterSkill": "洞察",
+   "afterRank": "B",
+   "target": "全",
+   "rate": "30%",
+   "effectShort": "防御 7.5%上昇(部隊ランクボーナスで効果が変化)",
+   "afterEffectShort": "防御 7.5%上昇(部隊ランクボーナスで効果が変化)"
+  },
+  {
+   "slot": "S1",
+   "skill": "天下の采配",
+   "rank": "S",
+   "afterSkill": "神算鬼謀 滅",
+   "afterRank": "A",
+   "target": "槍馬砲",
+   "rate": "45%",
+   "effectShort": "防御 35%上昇",
+   "afterTarget": "槍弓器",
+   "afterRate": "50%",
+   "afterEffectShort": "攻撃 24%上昇+破壊 46%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "武神八幡陣",
+   "rank": "SS",
+   "afterSkill": "武神八幡陣",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "60%",
+   "effectShort": "防御 41.56%上昇(部隊総コストで変動)",
+   "afterEffectShort": "防御 41.56%上昇(部隊総コストで変動)"
+  }
+ ],
+ "notes": [
+  "2026-08-16 新規登録(担当K6)。カード画像はスキル表記がLV1の育成前カードのため、画像から採ったのは武将名/統率(4隅バッジ)/スキル名/攻撃・防御・兵法の初期値/覇でないこと/カードNo.の6項目のみ(B-00)。",
+  "武将名: ixawiki武将カード一覧(極)に「千利休」は No.2736 の1枚しか無い(No.3702は別レアリティ)ため無印。",
+  "統率は画像の4隅バッジで槍A/馬A/弓B/器Sを個別に拡大して確認。ixawiki(BushoCard/2736千利休)の「統率力 槍A 馬A 弓B 器S」と一致。",
+  "コスト0.5・指揮兵数1700・初期値700/750/540・成長値+17/+17/+2.5・ふりがなは ixanary.com(cards/2736) と ixawiki.com(BushoCard/2736千利休) の2ソースで完全一致。lv0Troopsはixanaryの★0-0(1700)。",
+  "絵師はixanary.comとカード画像下部の表記がともに「GODTAIL」、ixawikiのみ「GODTAL」。2ソース(ixanary+カード画像)が一致するGODTAILを採用した。",
+  "スキル効果はLV1カードのため外部ソースを採用。ixanary/ixawikiともLV1=-10%・LV10=-15%(確率+12%→+50%、模倣不可・重複不可)で一致。TR段はどちらのソースにも無い。",
+  "合成候補はixanary.com(skills/侘茶)の1次/2次と ixawiki(BushoCard/2736)の合成候補テーブルの2ソースで全5枠完全一致(A=一期一会[C]→神速[A]、B=才知徳行[D]自己参照、C=洞察[B]自己参照、S1=天下の采配[S]→神算鬼謀 滅[A]、S2=武神八幡陣[SS]自己参照)。各枠のtarget/rate/effectShortは候補スキル自身のixanaryページのLV10行から転記。",
+  "A-3-11逆引き: 天下の采配(S1)・武神八幡陣(S2)の各 data/skill/*.json に千利休を追記した。天下の采配のownHiddenCandidateは既に神算鬼謀 滅[A]でこちらのafterSkillと一致。初期スキル侘茶はAランクかつ自分のsynthesisTableに載らないためページ作成対象外。",
+  "章はixanary.com/ixawiki.comのカードページに記載が無く未確認。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "reviewedOk": true,
+ "wikiOldestComment": "2016-02-18",
+ "wikiCommentCount": 79,
+ "chGuess": "11章",
+ "chSource": "wikiOldestComment"
+}

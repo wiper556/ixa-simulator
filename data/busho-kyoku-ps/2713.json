@@ -1,0 +1,111 @@
+{
+ "name": "北条幻庵（1）",
+ "no": "2713",
+ "ch": "5章",
+ "cost": 3.0,
+ "troop": "全攻速",
+ "sub": "",
+ "effect": "攻撃 6%上昇+速度 48%上昇",
+ "furigana": "ほうじょうげんあん",
+ "illustrator": "GODTAIL",
+ "imageFull": "assets/img/characters/no2713_full.png",
+ "imageChar": "assets/img/characters/no2713_char.png",
+ "atkBase": 670,
+ "atkGrowth": 17.0,
+ "defBase": 670,
+ "defGrowth": 17.0,
+ "tacticsBase": 480.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2980,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "S",
+  "ki": "D"
+ },
+ "initialSkill": "智謀巧軍",
+ "skillDetail": "A/LV10 確率 100% 攻撃 6%上昇+速度 48%上昇/対象:全\n①攻撃が6%上昇する\n②速度が48%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 攻撃 6%上昇+速度 48%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "車懸り",
+   "rank": "B",
+   "afterSkill": "車懸り 白狐",
+   "afterRank": "B",
+   "target": "全",
+   "rate": "15%",
+   "effectShort": "攻撃 30%上昇",
+   "afterTarget": "槍弓馬",
+   "afterRate": "20%",
+   "afterEffectShort": "攻撃 30%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "疾風怒濤",
+   "rank": "B",
+   "afterSkill": "疾風怒濤",
+   "afterRank": "B",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "攻撃 5%上昇+速度 32%上昇",
+   "afterEffectShort": "攻撃 5%上昇+速度 32%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "捨て奸",
+   "rank": "B",
+   "afterSkill": "捨て奸",
+   "afterRank": "B",
+   "target": "弓砲器",
+   "rate": "15%",
+   "effectShort": "防御 37%上昇",
+   "afterEffectShort": "防御 37%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "神速",
+   "rank": "A",
+   "afterSkill": "神速",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "速度 55%上昇",
+   "afterEffectShort": "速度 55%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "騎突 金剛",
+   "rank": "C",
+   "afterSkill": "剛勇無双",
+   "afterRank": "B",
+   "target": "馬",
+   "rate": "25%",
+   "effectShort": "攻撃 25%上昇+破壊 5%上昇",
+   "afterTarget": "槍馬砲",
+   "afterRate": "30%",
+   "afterEffectShort": "攻撃 25%上昇"
+  }
+ ],
+ "notes": [
+  "2026-08-16 新規登録(担当K6)。カード画像はスキル表記がLV1の育成前カードのため、画像から採ったのは武将名/統率(4隅バッジ)/スキル名/攻撃・防御・兵法の初期値/覇でないこと/カードNo.の6項目のみ(B-00)。",
+  "武将名の（1）: ixawiki武将カード一覧(極)で「北条幻庵」は No.2713(無印)／No.2742(2)／No.7005(3) の3枚。初回コメント日も 2713=2013-03-04 < 2742=2016-09-08 < 7005(コメント無し=最新) の順で、既登録のNo.7005「北条幻庵（3）」と矛盾しない。よって2713が（1）で、7005の名前は変更不要。",
+  "統率は画像の4隅バッジで槍A/馬S/弓A/器Dを個別に拡大して確認。ixawiki(BushoCard/2713北条幻庵)の「統率力 槍A 馬S 弓A 器D」と一致。",
+  "コスト3.0・指揮兵数2980・初期値670/670/480・成長値+17/+17/+2.0・ふりがな・絵師(GODTAIL)は ixanary.com(cards/2713) と ixawiki.com(BushoCard/2713北条幻庵) の2ソースで完全一致。lv0Troopsはixanaryの★0-0(2980)。",
+  "スキル効果はLV1カードのため外部ソースを採用。ixanary(cards/2713)のLV10は確率+100%/対象 全/攻撃6%上昇・速度48%上昇。ixawikiのカードページはLV1表記(全攻+2.0%/全速+18.0%)で、LV1側の一致を確認したうえでLV10を採用。攻撃と速度が同時変動するためtrTableに両方併記(multistat規則)。TR段はどちらのソースにも無い。",
+  "合成候補はixanary.com(skills/智謀巧軍)の1次/2次と ixawiki(BushoCard/2713)の合成候補テーブルの2ソースで全5枠完全一致(A=車懸り[B]→車懸り 白狐[B]、B=疾風怒濤[B]自己参照、C=捨て奸[B]自己参照、S1=神速[A]自己参照、S2=騎突 金剛[C]→剛勇無双[B])。各枠のtarget/rate/effectShortは候補スキル自身のixanaryページのLV10行から転記。候補は全てS未満、初期スキル智謀巧軍もAランクのため新規スキルページ作成は不要(A-3-9)。",
+  "章はixanary.com/ixawiki.comのカードページに記載が無く未確認。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "reviewedOk": true,
+ "wikiOldestComment": "2013-03-04",
+ "wikiCommentCount": 80,
+ "chGuess": "5章",
+ "chSource": "wikiOldestComment"
+}

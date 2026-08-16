@@ -1,0 +1,40 @@
+{
+ "name": "青葉ノ仁王",
+ "rank": "A",
+ "baseRate": 100,
+ "target": "槍・弓・砲 卓越",
+ "effectSummary": "A/LV10 確率 100% 攻撃 110%上昇/対象:槍・弓・砲　卓越\n模倣不可\n①攻撃 110%上昇する\n②卓越:攻撃戦闘時追加確率20%で自部隊の兵士被害が10%減少する(部隊内重複上限2)",
+ "categoryLinks": [
+  {
+   "href": "skills-higai.html",
+   "label": "兵士被害減少スキル一覧を見る"
+  },
+  {
+   "href": "skills-takuetsu.html",
+   "label": "卓越スキル一覧を見る"
+  }
+ ],
+ "sourceCharacters": [
+  {
+   "name": "伊達成実（3）",
+   "no": "2336",
+   "slot": "A・B",
+   "db": "kyoku"
+  }
+ ],
+ "grantedViaSkills": [],
+ "ownHiddenCandidate": {
+  "skill": "乱世ノ歸人",
+  "rank": "A"
+ },
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・弓・砲 卓越　確率 100% / 攻撃 110%上昇(卓越:追加確率20%で兵士被害10%減少)"
+  }
+ ],
+ "notes": [
+  "2026-08-16(No.2336黄丸化検証、A-3-9例外規定): 移植後合成候補の乱世ノ歸人[A]が既にskills.htmlページを持つため(乱世ノ歸人自身もA-3-9例外で作成済み)、ランクAだが元スキル側として新規作成。ixanary.com(skills/青葉ノ仁王)の合成テーブル(1次A・B=青葉ノ仁王、2次A・B=乱世ノ歸人)を生HTMLで確認。乱世ノ歸人.json側にgrantedViaSkills経由の逆引きを追加済み。TR記載なし(LV10のみ)。"
+ ]
+}

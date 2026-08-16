@@ -1,0 +1,134 @@
+{
+ "name": "斎藤道三（6）【覇】",
+ "no": "31311",
+ "furigana": "さいとうどうさん",
+ "ch": "32章",
+ "cost": 6,
+ "troop": "全防",
+ "sub": "",
+ "effect": "部隊長時、対象兵科指揮で部隊総防御力55%上昇",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no31311_full.png",
+ "imageChar": "assets/img/characters/no31311_char.png",
+ "atkBase": 1230,
+ "atkGrowth": 66,
+ "defBase": 1310,
+ "defGrowth": 84,
+ "tacticsBase": 850,
+ "tacticsGrowth": 4,
+ "lv0Troops": 5500,
+ "rankGrades": {
+  "yari": "X",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "蛇神幻計",
+ "skillDetail": "SSS/LV10 確率 40%/対象:全\n模倣不可\n①対象兵科を指揮した戦闘時部隊総防御力が55%上昇する(部隊長時限定)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 40% / 部隊総防御力 55%上昇(部隊長時限定)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": "全　確率 42% / 部隊総防御力 58%上昇(部隊長時限定)"
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": "全　確率 45% / 部隊総防御力 62%上昇(部隊長時限定)"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": "全　確率 50% / 部隊総防御力 67%上昇(部隊長時限定)"
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": "全　確率 55% / 部隊総防御力 73%上昇(部隊長時限定)"
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": "全　確率 60% / 部隊総防御力 80%上昇(部隊長時限定)"
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": "全　確率 70% / 部隊総防御力 84%上昇(部隊長時限定)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "月煌侵蝕",
+   "rank": "SSS",
+   "afterSkill": "月煌侵蝕",
+   "afterRank": "SSS",
+   "target": "全 兵站",
+   "rate": "45%",
+   "effectShort": "防御 7.6%×防御参加武将数(280人)=2128.0%",
+   "afterEffectShort": "防御 7.6%×防御参加武将数(280人)=2128.0%"
+  },
+  {
+   "slot": "B",
+   "skill": "熾炎破天",
+   "rank": "SS",
+   "afterSkill": "熾炎破天",
+   "afterRank": "SS",
+   "target": "全 無尽2",
+   "rate": "50%",
+   "effectShort": "防御 780%×2(部隊コスト8以下)=1560%上昇",
+   "afterEffectShort": "防御 780%×2(部隊コスト8以下)=1560%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "覇天金剛",
+   "rank": "SS",
+   "afterSkill": "覇天金剛",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "攻撃 1350%上昇+防御 1350%上昇+速度 100%上昇",
+   "afterEffectShort": "攻撃 1350%上昇+防御 1350%上昇+速度 100%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "虚妄ノ神蛇",
+   "rank": "SSS",
+   "afterSkill": "虚妄ノ神蛇",
+   "afterRank": "SSS",
+   "target": "全",
+   "rate": "50%",
+   "effectShort": "防御 14.8%×防御参加武将数(280人)=4144.0%上昇",
+   "afterEffectShort": "防御 14.8%×防御参加武将数(280人)=4144.0%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "國才連豪",
+   "rank": "SS",
+   "afterSkill": "國才連豪",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "50%",
+   "effectShort": "防御 310%×國才連豪所持武将数(4人)=1240.0%上昇",
+   "afterEffectShort": "防御 310%×國才連豪所持武将数(4人)=1240.0%上昇"
+  }
+ ],
+ "notes": [
+  "2026-08-16 新規登録(天パラレル)。元カード No.1311 の別バージョンで、カード画像(assets/img/characters/no31311_full.png)から直接読めた武将名／カードNo./スキル名／兵科適性の4隅バッジ／攻撃・防御・兵法の初期値／職(覇か将か)に加え、カード上に出ているコストと指揮兵数も読み取った。その全部が元カードと同じ値だった: コスト6／指揮兵数5500／初期値 攻1230・防1310・兵法850.0／兵科適性 槍X(赤い宝石付き)・馬A・弓A・器S。",
+  "ixanary.com/cards/31311/ でも コスト・指揮・初期値・兵科適性・ふりがな・絵師が元カード(ixanary.com/cards/1311/)と同値。兵科適性はixanary側のyumi/kibaが入れ替わる既知の問題があるため、最終判定はカード画像のバッジを正とした。",
+  "成長値だけはカード(武将LV.0)にも ixanary のパラレル側ページにも載っていない(ixanaryは「成長値が設定されていないので、成長しない。」と表示する)。そこで30章・31章のパラレル24組(31286〜31309 と 1286〜1309)を ixanary で1組ずつ突き合わせ、コスト・指揮兵数・兵科適性4種・初期値3種・成長値3種・絵師の13項目が24組すべて完全一致することを確認したうえで、元カードの成長値(攻+66／防+84／兵法+4)をそのまま採った。**このカード自身の成長値を直接載せた情報源は見つかっていない**(ixawiki はパラレルのページ自体が無く、ixagno.blog.fc2.com の【パラレル天】一覧(blog-entry-11077)は2026-07-04更新で31章までしか載っていない)。",
+  "章は、上記 ixagno の【パラレル天】一覧が 31286〜31297 を30章、31298〜31309 を31章と、元カードの章のまま並べていることに倣い、元カード(32章)に合わせて32章とした。32章分は同一覧に未掲載。",
+  "スキルと合成テーブルは ixanary.com/skills/蛇神幻計/ の生HTMLで確認した。同ページは No.1311 と No.31311 の2枚を同じスキルの所持カードとして載せており、合成テーブル(1次/2次/3次)は1つしかない=元カードと同一。鍛錬表もこのページのLV10〜TR6の値で、元カードの登録内容と一致した。",
+  "カード画像のスキル欄は「蛇神幻計TR6」表記で、効果量はTR6の値(確率70%・部隊総防御力84%上昇)が出ている。skillDetail はサイト共通の書式に合わせてLV10の値で書いてあるので、カード画像と数字が違って見えるのはそのため(TR6の値は鍛錬表のTR6行にある)。",
+  "data/skill/*.json の sourceCharacters にはこのパラレル版を足していない。元カード(No.1311)が同じ武将名・同じ枠で既に載っており二重に並ぶだけになること、tools/audit_characters.py の逆引き検査が parallelGenerals を対象にしていないこと、tools/register/wireup.py の find_general に busho-parallel が入っていないことによる。方針を変えるなら指示がほしい。"
+ ],
+ "reviewedOk": true,
+ "wikiOldestComment": null,
+ "wikiCommentCount": null
+}

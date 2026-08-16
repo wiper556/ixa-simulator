@@ -196,6 +196,11 @@ def load():
     for page, array in (("characters.html", "generals"),
                         ("characters-kyoku.html", "kyokuGenerals"),
                         ("characters-kyoku-ps.html", "kyokuPsGenerals"),
+                        ("characters-parallel.html", "parallelGenerals"),
+                        ("characters-toku-s.html", "tokuSecretGenerals"),
+                        ("characters-toku.html", "tokuGenerals"),
+                        ("characters-ue.html", "ueGenerals"),
+                        ("characters-jo.html", "joGenerals"),
                         # 傑は少数だが sourceCharacters の db 判定(S-07)に要る
                         ("characters-ketsu.html", "ketsuGenerals"),
                         ("skills.html", "skills")):
@@ -206,6 +211,10 @@ def load():
     # 検査の中身は極かどうかで決まり、どちらのページに載っているかは関係ないので、
     # 以降はまとめた kyokuAll を使う。ページごとに見るのは改変の突き合わせだけ。
     d["kyokuAll"] = d["kyokuGenerals"] + d["kyokuPsGenerals"]
+    # 2026-08-16: 天パラレルと特シークレットを足したとき、ここに入れ忘れると
+    # 逆引き検査(chars)と重複検査(all_g)の対象から静かに外れる(担当P1の指摘)。
+    d["extraAll"] = (d["parallelGenerals"] + d["tokuSecretGenerals"]
+                     + d["tokuGenerals"] + d["ueGenerals"] + d["joGenerals"])
     # LINKED_SKILLS はページが手で持っている配列(生成物ではない)ので、そのまま読む
     d["LINKED_SKILLS"] = extract_array(p("characters.html"), "LINKED_SKILLS")
     d["KK_LINKED_SKILLS"] = extract_array(p("characters-kyoku.html"), "KK_LINKED_SKILLS")
@@ -314,7 +323,9 @@ def parse_generations(html):
 def main():
     D = load()
     skills = {s["name"]: s for s in D["skills"]}
-    chars = [(g, "天覇") for g in D["generals"]] + [(g, "極") for g in D["kyokuAll"]]
+    chars = ([(g, "天覇") for g in D["generals"]]
+             + [(g, "極") for g in D["kyokuAll"]]
+             + [(g, "天パラレル/特/上/序") for g in D["extraAll"]])
     targets = [(g, s) for g, s in chars if status(g) != "無印"]
     R = []
     # M-1(2026-08-13 第4回レッドチーム): ここは1行のラムダで、
@@ -374,6 +385,62 @@ def main():
             add("afterSkill不一致", "HIGH", "「%s」が武将により別スキルに化けている: %s" %
                 (sk_, " / ".join("→%s(%s)" % (a, ", ".join(where[(sk_, a)])) for a in sorted(afs))))
 
+    # 同じスキルが武将により別の発動確率になっていないか。
+    # 2026-08-16: ixaixa.com由来の再調査で No.2402 森可成の覇王ノ守人が
+    # 50%→57% と分かり、同じスキルを持つ他の武将を横断で見たら同種の
+    # 食い違いが計4件あった。うち No.2432 は **LV1の確率にLV10の効果を
+    # 組み合わせていた**(戦陣 一閃 30%/100% ← 正しくは 50%/100%)。
+    # 1体ずつ見ていては気づけない類なので、横断で鳴らす。
+    rates, rwhere = collections.defaultdict(set), collections.defaultdict(list)
+    for g, src in targets:
+        for row in g.get("synthesisTable") or []:
+            sk_, rt = row.get("skill"), row.get("rate")
+            if sk_ and rt:
+                rates[sk_].add(rt)
+                rwhere[(sk_, rt)].append("%s No.%s %s枠"
+                                         % (g["name"], g["no"], row.get("slot")))
+    for sk_, rs in sorted(rates.items()):
+        if len(rs) > 1:
+            add("確率が武将により違う", "HIGH",
+                "「%s」の発動確率が武将によって違う: %s" %
+                (sk_, " / ".join("%s(%s)" % (r, ", ".join(rwhere[(sk_, r)]))
+                                 for r in sorted(rs))))
+
+    # 同じレアリティの中に完全同名の武将がいないか。
+    # 2026-08-16: 武将名の（N）は**レアリティごとの通し番号**だと分かった
+    # (うぐさんがゲーム内で確認。天の1166 織田信長（4）【覇】と極の2595
+    # 織田信長（4）は別レアリティなので両立する)。
+    # したがって「天と極に同名」は正常だが、「同じレアリティに完全同名」は
+    # 片方に番号が要る、という判定になる。
+    # ixawiki の一覧はレアリティごと**かつ覇/非覇で別カウンタ**に振っており、
+    # ゲーム内の番号とは別物なので根拠にできない。ここで鳴らして人に聞く。
+    def _rarity(no):
+        n = str(no or "")
+        if len(n) == 5 and n[:2] in ("20", "21", "22"):
+            return "傑"
+        if len(n) == 4 and n[0] == "3":
+            return "特"
+        if len(n) == 4 and n[0] in "27":
+            return "極"
+        return "天"
+
+    # **パラレルは元カード(番号-30000)と同じ武将の別バージョン**なので、
+    # 同名なのが正しい。番号を振ると元カードと見分けがつかなくなる。
+    # 2026-08-16: パラレル12枚を登録したらこの検査が全部鳴った(検査側の穴)。
+    same = collections.defaultdict(list)
+    for g, src in targets:
+        no = str(g.get("no") or "")
+        if len(no) == 5 and no[0] in "34":
+            continue
+        if g.get("name") and g.get("no") is not None:
+            same[(_rarity(g["no"]), g["name"])].append(no)
+    for (rar, nm), nos in sorted(same.items()):
+        if len(nos) > 1:
+            add("同じレアリティに同名", "MID",
+                "%s の「%s」が %d枚ある(No.%s)。どれかに（N）が要る。"
+                "番号はゲーム内でしか分からないのでユーザーに聞くこと"
+                % (rar, nm, len(nos), "、".join(sorted(nos))))
+
     # ownHiddenCandidate は武将側 afterSkill から導出できるはず
     for s in D["skills"]:
         exp = mapping.get(s["name"])
@@ -392,6 +459,29 @@ def main():
             if sk_ in skills and not any(c.get("no") == g["no"] for c in (skills[sk_].get("sourceCharacters") or [])):
                 add("逆引き漏れ", "HIGH", "[%s] %s No.%s %s枠の%s が sourceCharacters に無い" %
                     (status(g), g["name"], g["no"], row.get("slot"), sk_))
+
+    # sourceCharacters の slot が、武将の synthesisTable の実枠と一致しているか。
+    # 2026-08-16: No.1279 荒木村重（2）の魔導禁鎖が synthesisTable の A・B 枠に
+    # 載っているのにスキル側は「移植不可」になっていた(ユーザー指摘)。全件見たら
+    # 26件あり、うち5件は「移植不可なのに実は移植できる」という**使い方を
+    # 間違えさせる**種類の誤りだった。逆引きの有無しか見ていなかったので通っていた。
+    real_slots = collections.defaultdict(lambda: collections.defaultdict(list))
+    for g, _src in targets:
+        for row in g.get("synthesisTable") or []:
+            if row.get("skill") and row.get("slot"):
+                real_slots[str(g["no"])][row["skill"]].append(row["slot"])
+    _ORD = {"A": 0, "B": 1, "C": 2, "S1": 3, "S2": 4}
+    for s in D["skills"]:
+        for c in s.get("sourceCharacters") or []:
+            got = real_slots.get(str(c.get("no")), {}).get(s["name"])
+            if not got:
+                continue          # 合成表に無い = 「移植不可」でよい
+            want = "・".join(sorted(set(got), key=lambda x: _ORD.get(x, 9)))
+            if (c.get("slot") or "") != want:
+                add("slotが実枠と違う", "HIGH",
+                    "「%s」の %s No.%s: slot=%s(合成表では %s枠)"
+                    % (s["name"], c.get("name"), c.get("no"),
+                       c.get("slot") or "無し", want))
 
     # LINKED_SKILLS
     for arr, label, glist in [(D["LINKED_SKILLS"], "LINKED_SKILLS", D["generals"]),
@@ -494,7 +584,8 @@ def main():
     # いずれも同日に手作業で見つかった不備で、監査に無かったから見逃していた。
     # ============================================================
     RANKS_HI = ("S", "SS", "SSS", "X", "XX", "XXX")
-    all_g = D["generals"] + D["kyokuAll"] + D["ketsuGenerals"]
+    all_g = (D["generals"] + D["kyokuAll"] + D["extraAll"]
+             + D["ketsuGenerals"])
     kyoku_no = {g["no"] for g in D["kyokuAll"]}
     ketsu_no = {g["no"] for g in D["ketsuGenerals"]}
 
@@ -517,8 +608,16 @@ def main():
             % (nm, len(where), "/".join(sorted(where)[:4])))
 
     # S-07: sourceCharacters の db 指定ミス(極なのに characters.html を指す等)
+    # 2026-08-16: 特シークレットを足したので "toku" を足す。天パラレルは
+    # db を付けない(元カードと同じ武将で #No 転送のため)。
+    toku_no = {g["no"] for g in D["tokuSecretGenerals"]}
+
     def db_want(no):
-        return "kyoku" if no in kyoku_no else ("ketsu" if no in ketsu_no else None)
+        if no in kyoku_no:
+            return "kyoku"
+        if no in toku_no:
+            return "toku"
+        return "ketsu" if no in ketsu_no else None
 
     # 2026-08-14: ここは skills.html の**本文**を正規表現で読んでいた。
     # 配列が data/skill/ からの生成物になったので、判定は正本の側で行う。
@@ -657,8 +756,15 @@ def main():
 
     # D-15: synthesisTable が埋まっていないのに黄丸/赤丸になっている。
     # 青丸(登録しただけ)は未完成でよいので対象外([[project_registration_manualization]])。
+    # **合成不可カードの例外(noSynthesis)を用意してある**が、いまのところ
+    # 使っている武将は無い。唯一の候補だった赤べこ(No.2616)は、ixanary と
+    # ixawiki が両方「合成不可」と書いていただけで、**実際には合成候補が
+    # あった**(2026-08-16、うぐさんがゲーム内の画面で確認)。
+    # 「情報源が合成不可と書いている」を根拠に立てないこと。
     for g, src in targets:
         if status(g) not in ("黄丸", "赤丸"):
+            continue
+        if g.get("noSynthesis"):
             continue
         st = g.get("synthesisTable") or []
         if not st or all(not r.get("skill") for r in st):

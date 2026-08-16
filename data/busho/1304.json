@@ -1,5 +1,5 @@
 {
- "name": "真田昌幸（5）",
+ "name": "真田昌幸（4）",
  "no": "1304",
  "ch": "31章",
  "cost": 5,
@@ -126,7 +126,14 @@
   }
  ],
  "notes": [
-  "カード画像照合済み(2026-07-30): 槍A/弓S/馬A/器S(旧データはyari/uma・yumi/kiの値が誤って入れ替わっていたため修正)",
-  "synthesisTable: ixanary.com(/skills/不撓六文銭/ 合成テーブル)とixagno.blog.fc2.com(blog-entry-10829)で照合済み、A/B/C/S1/S2とも両ソース一致"
- ]
+  "2026-08-16: 武将名の（N）を、ixawikiの各カードページの一番古いコメントの日付順で振り直した。（N）はゲームには無く、同レアリティで同名が混ざらないようwiki利用者が出現順に付けた工夫。カードNo.順では10xxx番台(記念カード)で前後が逆転するため日付を使う(うぐさん指示)。",
+  "カード画像照合済み(2026-08-16再確認): 槍A/弓S/馬A/器S、攻1090/防1270/兵法690.0/指揮5110/コスト5も画像と一致。",
+  "ixanary.com(/skills/不撓六文銭/)生HTML照合(2026-08-16): LV1・LV10・TR1〜TR6の全段階が実在し、防御540/600/670/750/840/1000%・効果倍率2.1/2.2/2.3/2.4/2.5/2.6倍が現在のtrTableと完全一致。",
+  "synthesisTable: ixawiki.com(index.php?BushoCard/1304真田昌幸)は未記入のテンプレートのまま(A[]/B[]等)で情報が無いため使用不可。代わりにixanary.com(/skills/不撓六文銭/、生HTML)とixagno.blog.fc2.com(blog-entry-10829)の2ソースで再確認し、A=國才連豪[SS]/B=千里必勝ノ神算[SS]/C=布刀玉ノ策[SS]/S1=幻像鏡花[SSS]/S2=龍驤虎躍[SS](全枠自己参照)で完全一致。",
+  "data/skill/國才連豪.json・千里必勝ノ神算.json・布刀玉ノ策.json・幻像鏡花.json・龍驤虎躍.jsonのsourceCharactersに1304が正しい枠で登録済みであることを確認(A-3-11)。"
+ ],
+ "reviewedOk": true,
+ "wikiOldestComment": "2026-03-04",
+ "wikiCommentCount": 2,
+ "chGuess": "31章"
 }

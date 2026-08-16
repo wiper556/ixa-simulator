@@ -101,7 +101,17 @@
  ],
  "notes": [
   "カード画像照合済み(2026-08-02): 槍S/弓S/馬S/器A",
-  "45do.info(ordinary/0033)生HTML + ameameixa.com(bushocard-1214)生HTML の2ソースで完全一致を確認(2026-08-02)",
-  "S2枠のみ「建御雷神ノ閃光の裏は模倣スキル」との記載があり、同一カード2枚合成時は八幡神ノ威光(SSS)に変化する特殊枠"
- ]
+  "2026-08-16黄丸化検証: rankGradesを再照合し一致を再確認。ステータス初期値・成長値・cost5・lv0Troops4700はixanary.com(cards/1214)生HTMLの成長表と一致。skillDetailはixanary/ixawiki2ソースともLV1/LV10のみでTR無しと確認。",
+  "名前表記: ixanary.com(cards/1214)で職業=覇バッジ、ixawiki.com(Busho/武将カード一覧)で「黒田官兵衛(覇)」表記(数字無し)を確認、F-0規則で「黒田官兵衛【覇】」に一致(既存登録のまま変更なし)。",
+  "synthesisTable(A=布都御魂ノ鬨[SS]自己参照、B=建御雷神ノ槌[SS]自己参照、C=遠呂智ノ閃光[SS]自己参照、S1/S2=建御雷神ノ閃光[SS]→八幡神ノ威光[SSS])をixanary.com(skills/鼎不死巴)生HTMLとixawiki.com(BushoCard/1214黒田官兵衛)生HTMLの2ソースで完全一致を確認(2026-08-16)。",
+  "A-3-12再確認: 布都御魂ノ鬨.jsonのnotesに『1214のA枠は鬼滅刺経由の疑いが未確認』という申し送りがあったが、今回ixanary/ixawiki両方でA枠1次〜3次とも布都御魂ノ鬨の自己参照であることを確認し、懸念を解消(直接列挙のままで正しい)。布都御魂ノ鬨.jsonのnotesに追記済み。",
+  "S2枠のみ「建御雷神ノ閃光の裏は模倣スキル」との記載があり、同一カード2枚合成時は八幡神ノ威光(SSS)に変化する特殊枠",
+  "sourceCharacters逆引き確認(A-3-11): 鼎不死巴(移植不可)・布都御魂ノ鬨(A)・建御雷神ノ槌(B)・遠呂智ノ閃光(C)・建御雷神ノ閃光(S1・S2)いずれもdata/skill/配下に1214が記載済み(2026-08-16)。",
+  "categoryLinksチェック(A-3-9、9項目): 初期スキル鼎不死巴は項目7(卓越)に該当し、既にskills-takuetsu.htmlへcategoryLinks・本体一覧とも登録済みを確認。",
+  "章(24章)は情報源に記載が無く未確認のまま(ixanary/ixawikiともchapter情報を確認できず、既存の24章表記を維持)。"
+ ],
+ "reviewedOk": true,
+ "wikiOldestComment": "2022-08-05",
+ "wikiCommentCount": 50,
+ "chGuess": "23-24章"
 }

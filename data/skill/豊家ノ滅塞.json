@@ -1,0 +1,40 @@
+{
+ "name": "豊家ノ滅塞",
+ "rank": "B",
+ "baseRate": 42,
+ "target": "弓・砲・器",
+ "effectSummary": "B/LV10 確率 42% 防御 15%上昇/対象:弓・砲・器\n①防御が部隊の総コストに応じて変化する(LV10基準15%上昇)",
+ "categoryLinks": [],
+ "sourceCharacters": [
+  {
+   "name": "津軽為信（2）",
+   "no": "2359",
+   "slot": "A・B",
+   "db": "kyoku"
+  },
+  {
+   "name": "大道寺政繁（2）",
+   "no": "2386",
+   "slot": "A・B",
+   "db": "kyoku",
+   "note": [
+    "大道寺政繁(2386)のsynthesisTable A枠(2026-08-16)"
+   ]
+  }
+ ],
+ "grantedViaSkills": [],
+ "ownHiddenCandidate": {
+  "skill": "籠城の妙技",
+  "rank": "A"
+ },
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓・砲・器　確率 42% / 防御 15%上昇(部隊の総コストで変動)"
+  }
+ ],
+ "notes": [
+  "2026-08-16(No.2359黄丸化検証、A-3-9例外規定): 移植後合成候補の籠城の妙技[A]が既にskills.htmlページを持つため(籠城の妙技自身もA-3-9例外で作成済み)、ランクBだが元スキル側として新規作成。ixanary.com(skills/豊家ノ滅塞)の合成テーブル(1次A・B=豊家ノ滅塞、2次A・B=籠城の妙技)を生HTMLで確認。籠城の妙技.json側にgrantedViaSkills経由の逆引きを追加済み。TR記載なし(LV10のみ)。"
+ ]
+}

@@ -25,6 +25,12 @@
  },
  "initialSkill": "万機泰平",
  "skillDetail": "A/LV10 確率 40% 攻撃 600%上昇/対象:砲・器\n①攻撃 600%上昇する\n②自部隊同時攻撃時この武将は合流自部隊数-2の不屈を得る(特殊効果は模倣不可)",
+ "categoryLinks": [
+  {
+   "href": "skills-fukutsu.html",
+   "label": "不屈スキル一覧を見る"
+  }
+ ],
  "trTable": [
   {
    "level": "LV10",
@@ -37,48 +43,77 @@
    "slot": "A",
    "skill": "御旗ノ守護者",
    "rank": "A",
+   "afterSkill": "御旗ノ守護者",
+   "afterRank": "A",
    "target": "馬・砲・器 卓越",
    "rate": "100%",
-   "effectShort": "攻撃 230%上昇+防御 230%上昇(卓越追加確率10%で3倍)"
+   "effectShort": "攻撃 230%上昇+防御 230%上昇(卓越追加確率10%で3倍)",
+   "afterTarget": "馬・砲・器 卓越",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 230%上昇+防御 230%上昇(卓越追加確率10%で3倍)"
   },
   {
    "slot": "B",
    "skill": "破克閃剣",
    "rank": "A",
+   "afterSkill": "戦陣 剣舞",
+   "afterRank": "A",
    "target": "槍・弓・器",
    "rate": "48%",
-   "effectShort": "攻撃 350%上昇+不屈1"
+   "effectShort": "攻撃 350%上昇+不屈1",
+   "afterTarget": "全 飛翔6",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 80%上昇+防御 80%上昇(卓越追加確率30%で攻防効果4倍)"
   },
   {
    "slot": "C",
    "skill": "星詠ム仁将",
    "rank": "A",
+   "afterSkill": "星詠ム仁将",
+   "afterRank": "A",
    "target": "弓・馬・器・焙 不屈",
    "rate": "38%",
-   "effectShort": "攻撃 410%上昇+合流自部隊数-2の不屈(特殊効果は模倣不可)"
+   "effectShort": "攻撃 410%上昇+合流自部隊数-2の不屈(特殊効果は模倣不可)",
+   "afterTarget": "弓・馬・器・焙 不屈",
+   "afterRate": "38%",
+   "afterEffectShort": "攻撃 410%上昇+合流自部隊数-2の不屈(特殊効果は模倣不可)"
   },
   {
    "slot": "S1",
    "skill": "万機泰平",
    "rank": "A",
+   "afterSkill": "万機泰平",
+   "afterRank": "A",
    "target": "砲・器",
    "rate": "40%",
-   "effectShort": "攻撃 600%上昇(自部隊同時攻撃時に合流自部隊数-2の不屈)"
+   "effectShort": "攻撃 600%上昇(自部隊同時攻撃時に合流自部隊数-2の不屈)",
+   "afterTarget": "砲・器",
+   "afterRate": "40%",
+   "afterEffectShort": "攻撃 600%上昇(自部隊同時攻撃時に合流自部隊数-2の不屈)"
   },
   {
    "slot": "S2",
    "skill": "志半ノ矛楯",
    "rank": "A",
+   "afterSkill": "志半ノ矛楯",
+   "afterRank": "A",
    "target": "全",
    "rate": "65%",
-   "effectShort": "攻撃 465%上昇+防御 465%上昇(模倣不可)"
+   "effectShort": "攻撃 465%上昇+防御 465%上昇(模倣不可)",
+   "afterTarget": "全",
+   "afterRate": "65%",
+   "afterEffectShort": "攻撃 465%上昇+防御 465%上昇(模倣不可)"
   }
  ],
  "notes": [
-  "ixanary.comにカード・スキルページとも未掲載(2026-08-08時点)のため別ソースで確定。",
-  "合成候補は ameblo.jp/kotodaixa/entry-12971894278 の",
-  "候補スキル1〜3=A/B/C、隠し候補スキル=S1、同一No合成スキル=S2 の対応で登録。",
-  "同記事は移植後(2次)を載せていないため afterSkill は入れていない。",
+  "2026-08-16再検証: 2026-08-08時点ではixanary.comに未掲載だったため、当時はameblo.jp/kotodaixa/entry-12971894278の記事(候補スキル1〜3=A/B/C、隠し候補スキル=S1、同一No合成スキル=S2の対応)でskill側(1次)のみ登録し、afterSkill(2次)は未記載のままにしていた。今回再確認したところixanary.comにカード・スキルページとも掲載されており、合成テーブル(A=御旗ノ守護者自己参照、B=破克閃剣[A]→戦陣 剣舞[A]、C=星詠ム仁将自己参照、S1=万機泰平自己参照、S2=志半ノ矛楯自己参照)を確認しafterSkill以降を追記した。ixawiki.com(BushoCard/7022)は未作成(編集ページに転送)のため2ソース目は無く、ixanary単独ソースでの確定である旨明記。",
+  "A-3-9新規ページ作成: B枠のskill(破克閃剣[A])とafterSkill(戦陣 剣舞[A])が異なり、戦陣 剣舞は既存ページ持ち(さらに先の仙剣破斬[SSS]まで繋がる例外規定対象)だったため、元スキル側の破克閃剣.jsonを新規作成しgrantedViaSkillsを戦陣 剣舞.json側に追加した(2026-08-16)。",
+  "2026-08-16黄丸化検証: rankGrades(槍A/弓A/馬B/器S)をカード画像バッジ4隅で照合、一致。ステータス初期値・成長値・cost4.5・lv0Troops4290はixanary.com(cards/7022)生HTMLの成長表と一致。skillDetailも一致確認、TR無しも確認。illustrator「末冨正直」もカード画像・ixanaryの両方で一致。",
+  "categoryLinksチェック(A-3-9、9項目): 初期スキル万機泰平の「合流自部隊数-2の不屈」は項目5(不屈)に該当するためcategoryLinksを追加した。ただしskills-fukutsu.html本体の埋め込み配列(独自複製、A-3-11)には万機泰平/7022のエントリが無いことを確認した。data/busho-kyoku編集のみでは反映されないため本体側への追記は別途必要(申し送り)。",
+  "sourceCharacters逆引き確認(A-3-11): 破克閃剣(B)をdata/skill/配下に新規作成し7022を記載。御旗ノ守護者・星詠ム仁将・万機泰平・志半ノ矛楯はAランク自己参照でページ対象外(他候補からの参照も無し)。",
   "2026-08-13: ユーザーがゲーム内で確認した回答による。 章を 未確認 → 31章 に確定。"
- ]
+ ],
+ "reviewedOk": true,
+ "wikiOldestComment": null,
+ "wikiCommentCount": null
 }

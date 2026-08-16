@@ -1,0 +1,47 @@
+{
+ "name": "絶技兵術",
+ "rank": "S",
+ "baseRate": 100,
+ "target": "全",
+ "effectSummary": "S/LV10 確率 100% 攻撃 390%上昇 防御 390%上昇/対象:全\n模倣不可\n①攻撃 390%上昇する\n②防御 390%上昇する\n③自軍全武将全スキルの卓越確率に10%を加算する(自軍内重複上限3)",
+ "categoryLinks": [
+  {
+   "href": "skills-takuetsu.html",
+   "label": "卓越スキル一覧を見る"
+  }
+ ],
+ "sourceCharacters": [
+  {
+   "name": "ロビンマスク",
+   "no": "2633",
+   "slot": "C",
+   "db": "kyoku"
+  },
+  {
+   "name": "堀秀政（2）",
+   "no": "2475",
+   "slot": "A・B",
+   "db": "kyoku",
+   "note": [
+    "堀秀政（2）(2475)の初期スキル。自身のsynthesisTable A枠・B枠にも1次候補として載る(ixanary.com/skills/絶技兵術とixawiki BushoCard/2475の合成候補テーブルでA・Bとも絶技兵術[S]→月詠ノ覇威[SS]を2ソース確認)"
+   ]
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 攻撃 390%上昇+防御 390%上昇+自軍全武将全スキルの卓越確率に10%加算(模倣不可・自軍内重複上限3)"
+  }
+ ],
+ "notes": [
+  "A-3-9によりS以上の合成候補としてページを新設(2026-08-16)。ixanary.com のスキル個別ページ(skills/{name}/)の生HTMLから登録(カードページ側には合成テーブルが無いため)。",
+  "9項目チェックの7(卓越)に該当。他武将の卓越確率を上げる型なので月詠ノ覇威と同じ扱いでskills-takuetsu.htmlを付けた。",
+  "本来の持ち主は堀秀政(No.2475)だがこのサイトには未登録のためsourceCharactersに含めていない。",
+  "ownHiddenCandidateは1次A・B=絶技兵術/2次A・B=月詠ノ覇威[SS]から導出。"
+ ],
+ "ownHiddenCandidate": {
+  "skill": "月詠ノ覇威",
+  "rank": "SS"
+ }
+}

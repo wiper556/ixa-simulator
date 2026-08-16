@@ -1,0 +1,111 @@
+{
+ "name": "龍造寺家兼（1）",
+ "no": "2712",
+ "ch": "5章",
+ "cost": 3.5,
+ "troop": "槍弓馬攻",
+ "sub": "",
+ "effect": "攻撃 35%上昇",
+ "furigana": "りゅうぞうじいえかね",
+ "illustrator": "GODTAIL",
+ "imageFull": "assets/img/characters/no2712_full.png",
+ "imageChar": "assets/img/characters/no2712_char.png",
+ "atkBase": 740,
+ "atkGrowth": 18.0,
+ "defBase": 720,
+ "defGrowth": 17.0,
+ "tacticsBase": 450.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 3190,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "S",
+  "uma": "A",
+  "ki": "C"
+ },
+ "initialSkill": "龍祖昇躍",
+ "skillDetail": "A/LV10 確率 30% 攻撃 35%上昇/対象:槍弓馬\n①攻撃が35%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍弓馬　確率 30% / 攻撃 35%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "天賦の神算",
+   "rank": "B",
+   "afterSkill": "天賦の神算",
+   "afterRank": "B",
+   "target": "全",
+   "rate": "50%",
+   "effectShort": "攻撃 12%上昇+破壊 5%上昇",
+   "afterEffectShort": "攻撃 12%上昇+破壊 5%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "騎突 金剛",
+   "rank": "C",
+   "afterSkill": "剛勇無双",
+   "afterRank": "B",
+   "target": "馬",
+   "rate": "25%",
+   "effectShort": "攻撃 25%上昇+破壊 5%上昇",
+   "afterTarget": "槍馬砲",
+   "afterRate": "30%",
+   "afterEffectShort": "攻撃 25%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "弓撃 夜叉",
+   "rank": "C",
+   "afterSkill": "天賦の神算",
+   "afterRank": "B",
+   "target": "弓",
+   "rate": "25%",
+   "effectShort": "攻撃 25%上昇+破壊 5%上昇",
+   "afterTarget": "全",
+   "afterRate": "50%",
+   "afterEffectShort": "攻撃 12%上昇+破壊 5%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "剛勇無双",
+   "rank": "B",
+   "afterSkill": "剛勇無双",
+   "afterRank": "B",
+   "target": "槍馬砲",
+   "rate": "30%",
+   "effectShort": "攻撃 25%上昇",
+   "afterEffectShort": "攻撃 25%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "神速",
+   "rank": "A",
+   "afterSkill": "神速",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "速度 55%上昇",
+   "afterEffectShort": "速度 55%上昇"
+  }
+ ],
+ "notes": [
+  "2026-08-16 新規登録(担当K6)。カード画像はスキル表記がLV1の育成前カードのため、画像から採ったのは武将名/統率(4隅バッジ)/スキル名/攻撃・防御・兵法の初期値/覇でないこと/カードNo.の6項目のみ(B-00)。",
+  "武将名の（1）: ixawiki武将カード一覧(極)で「龍造寺家兼」は No.2712 と No.2319 の2枚。初回コメント日は 2712=2013-01-10 < 2319=2022-04-05 なので2712が（1）。",
+  "統率は画像の4隅バッジで槍A/馬A/弓S/器Cを個別に拡大して確認。ixawiki(BushoCard/2712龍造寺家兼)の「統率力 槍A 馬A 弓S 器C」と一致。",
+  "コスト3.5・指揮兵数3190・初期値740/720/450・成長値+18/+17/+2.0・ふりがな・絵師(GODTAIL)は ixanary.com(cards/2712) と ixawiki.com(BushoCard/2712龍造寺家兼) の2ソースで完全一致。lv0Troopsはixanaryの★0-0(3190)。",
+  "スキル効果はLV1カードのため外部ソースを採用。ixanary(cards/2712)のLV10は確率+30%/対象 槍弓馬/攻撃35%上昇。ixawikiのカードページはLV1表記(確率+12%/槍弓馬攻+20%)で、LV1側の一致を確認したうえでLV10を採用。TR段はどちらのソースにも無い。",
+  "合成候補はixanary.com(skills/龍祖昇躍)の1次/2次と ixawiki(BushoCard/2712)の合成候補テーブルの2ソースで全5枠完全一致(A=天賦の神算[B]自己参照、B=騎突 金剛[C]→剛勇無双[B]、C=弓撃 夜叉[C]→天賦の神算[B]、S1=剛勇無双[B]自己参照、S2=神速[A]自己参照)。各枠のtarget/rate/effectShortは候補スキル自身のixanaryページのLV10行から転記。候補は全てS未満、初期スキル龍祖昇躍もAランクのため新規スキルページ作成は不要(A-3-9)。",
+  "章はixanary.com/ixawiki.comのカードページに記載が無く未確認。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "reviewedOk": true,
+ "wikiOldestComment": "2013-01-10",
+ "wikiCommentCount": 68,
+ "chGuess": "5章",
+ "chSource": "wikiOldestComment"
+}

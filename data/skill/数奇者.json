@@ -1,0 +1,56 @@
+{
+ "name": "数奇者",
+ "rank": "C",
+ "baseRate": null,
+ "target": "全",
+ "effectSummary": "C/LV10 確率 -% 取引手数料 30%軽減/対象:全\n①取引手数料が30%軽減される(重複不可)",
+ "categoryLinks": [],
+ "sourceCharacters": [
+  {
+   "name": "織田有楽斎",
+   "no": "3717",
+   "slot": "移植不可",
+   "db": "toku",
+   "note": [
+    "織田有楽斎(3717)の初期スキル。3717自身のsynthesisTableのA/B/C/S1/S2のどの枠にも数奇者は載らないため移植不可(2026-08-16、担当T2)。"
+   ]
+  },
+  {
+   "name": "呂宋助左衛門",
+   "no": "3729",
+   "slot": "S2",
+   "db": "toku",
+   "note": [
+    "呂宋助左衛門(3729)のsynthesisTable S2枠(2026-08-16、担当T2)"
+   ]
+  },
+  {
+   "name": "今井宗久",
+   "no": "2733",
+   "slot": "S2",
+   "db": "kyoku",
+   "note": [
+    "今井宗久(2733)のsynthesisTable S2枠(2026-08-16、担当K6)"
+   ]
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "神勅賢母",
+  "rank": "S"
+ },
+ "notes": [
+  "2026-08-16 新規作成(担当T2)。Cランクだが、移植後合成候補(afterSkill)が既にページを持つ神勅賢母[S]である元スキルなのでA-3-9の例外規定によりページ作成対象。No.3729呂宋助左衛門のS2枠。",
+  "効果はixanary.com(skills/数奇者)のLV10行「取引手数料：30% 軽減（重複不可）」とixawiki.com(BushoCard/3717織田有楽斎)の[C] 特：数奇者 Lv10「取引手数料：30% 軽減 （重複不可）」の2ソース一致。ixagno.blog.fc2.com(blog-entry-2969)も30%軽減と書いており3ソース目。LV1(6%軽減)とLV10の2段だけでTR段は無い。",
+  "確率・対象兵科の表記が情報源にもカード画像にも無い(所持しているだけで効果があるタイプ)。baseRateをnull・確率を「-%」と書いているのは欠損ではなく、同型のカード所持効果スキル(草莽ノ聖者など)と同じ書き方に揃えたもの。",
+  "織田有楽斎(3717)の初期スキルだが、3717自身のsynthesisTableのA/B/C/S1/S2のどの枠にも数奇者は載らないためslotは「移植不可」(feedback_transferable_slot_labeling_rule)。移植して手に入れるなら呂宋助左衛門(3729)のS2枠から。",
+  "ownHiddenCandidateは呂宋助左衛門(3729)のsynthesisTable S2枠のafterSkill(神勅賢母[S])から導出。ixanary(skills/数奇者)の合成テーブルS1列1次が防：神勅賢母 Sであることとも一致する(A-3-13)。",
+  "categoryLinks9項目を1つずつ判定し該当なし(取引手数料の軽減は部隊コストの減少ではないのでskills-cost.htmlの対象外)。"
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 -% / 取引手数料 30%軽減(重複不可)"
+  }
+ ]
+}

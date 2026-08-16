@@ -1,0 +1,149 @@
+{
+ "name": "小野お通",
+ "no": "3724",
+ "ch": "10章",
+ "cost": 3.0,
+ "troop": "全",
+ "sub": "",
+ "effect": "合流攻撃に参加した全武将のスキル発動率+4%(模倣不可・重複不可)",
+ "furigana": "おののおつう",
+ "illustrator": "ツヤイルカ",
+ "imageFull": "assets/img/characters/no3724_full.png",
+ "imageChar": "assets/img/characters/no3724_char.png",
+ "atkBase": 700,
+ "atkGrowth": 15.0,
+ "defBase": 750,
+ "defGrowth": 15.0,
+ "tacticsBase": 490.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2900,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "万藝ノ才媛",
+ "skillDetail": "A/LV10 確率 100% 合流攻撃参加者のスキル発動率+4%/対象:全\n模倣不可・重複不可\n①合流攻撃に参加した全武将のスキル発動率が4%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 合流攻撃に参加した全武将のスキル発動率+4%(模倣不可・重複不可)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": null
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": null
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": null
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": null
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": null
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": null
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "刹那の猛勇",
+   "rank": "D",
+   "afterSkill": "義兵進軍",
+   "afterRank": "C",
+   "target": "全",
+   "rate": "30%",
+   "effectShort": "攻撃 10%上昇",
+   "afterTarget": "槍弓馬砲",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 7%上昇+速度 10%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "修羅の援兵",
+   "rank": "D",
+   "afterSkill": "修羅の援兵",
+   "afterRank": "D",
+   "target": "槍弓馬",
+   "rate": "25%",
+   "effectShort": "攻撃 25%上昇(合流攻撃時は効果2倍)",
+   "afterEffectShort": "攻撃 25%上昇(合流攻撃時は効果2倍)"
+  },
+  {
+   "slot": "C",
+   "skill": "賽の遊軍",
+   "rank": "B",
+   "afterSkill": "三段撃 烈火",
+   "afterRank": "C",
+   "target": "砲器",
+   "rate": "100%",
+   "effectShort": "攻撃 8.5%上昇+速度 14%上昇(合流加入時は速度効果6倍)",
+   "afterTarget": "槍砲",
+   "afterRate": "15%",
+   "afterEffectShort": "攻撃 (コストx9)%上昇(武将コストで変動)"
+  },
+  {
+   "slot": "S1",
+   "skill": "妖艶遊戯",
+   "rank": "A",
+   "afterSkill": "花魁心操術",
+   "afterRank": "A",
+   "target": "部隊長",
+   "rate": "25%",
+   "effectShort": "相手側1部隊の部隊長を無力化(攻撃・防御・兵法を1にする)",
+   "afterTarget": "姫",
+   "afterRate": "100%",
+   "afterEffectShort": "部隊内姫武将スキル発動率+10%(重複不可)"
+  },
+  {
+   "slot": "S2",
+   "skill": "煉獄天焦",
+   "rank": "S",
+   "afterSkill": "覇王征軍",
+   "afterRank": "SS",
+   "target": "槍砲",
+   "rate": "25%",
+   "effectShort": "攻撃 25%上昇(合流攻撃時は効果2倍)",
+   "afterTarget": "全",
+   "afterRate": "42%",
+   "afterEffectShort": "攻撃 25.39%上昇(部隊総コストで変動、TRなし)"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3724 と skills/万藝ノ才媛)、ixawiki.com(BushoCard/3724小野お通)の2ソースで登録(2026-08-16)。",
+  "カード画像はスキル欄が「万藝ノ才媛LV1」表記の育成前カード(B-00)。画像から読んだのは武将名/統率(4隅バッジ)/スキル名/攻撃・防御・兵法の初期値/覇の有無/カードNo.の6項目のみで、効果量・成長値・指揮兵数・合成候補はすべて外部ソースで確認した。",
+  "lv0Troopsはixanaryの「指揮」欄(★0-0)の値(B-01。突破ランク別の値は+0.5版なので使わない)。",
+  "合成候補はixanaryのスキルページ(skills/万藝ノ才媛)の1次(移植前)・2次(移植後)。ixawikiの合成候補テーブルとも全5枠一致。",
+  "TR段階: ixanary/ixawikiともLV1とLV10しか無く、鍛錬(TR)の段が存在しない。trTableのTR行はB-0のテンプレートどおり残してeffectをnullにしてある(表示側は値が1つも無いTR行を出さない)。",
+  "覇の表記はカード画像に無し。特レアリティ(3xxx)に同名カードは他に無いため(data/wiki_card_dates.json)、武将名に（N）は付けない。",
+  "ixawikiのスキル欄はLV表記の無い1段だけで、値がLV1の+1%のまま止まっている。LV10の+4%はixanary(skills/万藝ノ才媛のLV10行)とixagno.blog.fc2.com(blog-entry-3816「小野お通【特】(No.3724)の考察」の「合流に参加した全武将のスキル発動率が【+4】」)の2ソースで確認した。",
+  "ixagnoの同記事で成長値(攻撃15/防御15/兵法2.0)と合成テーブル全5枠もixanary/ixawikiと完全一致を確認。",
+  "カード画像は極限突破の状態で指揮兵数0/4300。calcTroopsForBreakthrough(2900,'極限突破')=2900+600+800=4300と一致し、lv0Troops=2900(ixanary★0-0)をカード側から裏取りできた。ixanaryの極限突破欄は4500でB-01のとおり+0.5版(+200)。",
+  "章はixanary/ixawiki/ixagnoのいずれにも章番号の記載が無く未確認。ixagnoは「2015年10月追加特武将」と書いており、これは章推定(10章=2015-05-19〜2015-11-13)の窓に入るのでchGuessと整合する。",
+  "2026-08-16 再検証: カード画像で 万藝ノ才媛LV1 の注記が「（模倣不可・重複不可）」であることを確認した(ixawikiのカードページは「（重複発動不可）」としか書いておらず模倣不可が抜けている)。カード画像とixanaryが一致するのでこのままでよい。S2移植後の覇王征軍の効果文は正本 data/skill/覇王征軍.json に合わせて「(部隊総コストで変動、TRなし)」に揃えた。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "reviewedOk": true,
+ "wikiOldestComment": "2015-10-11",
+ "wikiCommentCount": 130,
+ "chGuess": "10章",
+ "chSource": "wikiOldestComment"
+}

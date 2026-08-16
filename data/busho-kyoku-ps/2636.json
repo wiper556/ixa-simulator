@@ -1,0 +1,142 @@
+{
+ "name": "テリーマン",
+ "no": "2636",
+ "ch": "30章",
+ "cost": 3,
+ "troop": "全攻防",
+ "sub": "",
+ "effect": "部隊内武将スキル発動率+10%(特殊効果は部隊内重複不可)",
+ "furigana": "てりーまん",
+ "illustrator": "ゆでたまご／集英社・キン肉マン製作委員会",
+ "imageFull": "assets/img/characters/no2636_full.png",
+ "imageChar": "assets/img/characters/no2636_char.png",
+ "atkBase": 1120,
+ "atkGrowth": 57,
+ "defBase": 1120,
+ "defGrowth": 57,
+ "tacticsBase": 540,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3570,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "S",
+  "ki": "A"
+ },
+ "initialSkill": "Tツイスター",
+ "skillDetail": "S/LV10 確率 100% 攻撃 790%上昇 防御 790%上昇/対象:全\n①攻撃 790%上昇する\n②防御 790%上昇する\n③部隊内武将スキル発動率が10%上昇する(特殊効果は部隊内重複不可)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 攻撃 790%上昇+防御 790%上昇+部隊内武将スキル発動率+10%(特殊効果は部隊内重複不可)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": null
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": null
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": null
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": null
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": null
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": null
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "筋骨隆々",
+   "rank": "S",
+   "afterSkill": "筋骨隆々",
+   "afterRank": "S",
+   "target": "全 不屈1 兵站",
+   "rate": "9%",
+   "effectShort": "攻撃 270%上昇+防御 270%上昇",
+   "afterTarget": "全 不屈1 兵站",
+   "afterRate": "9%",
+   "afterEffectShort": "攻撃 270%上昇+防御 270%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "天望照星",
+   "rank": "S",
+   "afterSkill": "天望照星",
+   "afterRank": "S",
+   "target": "全",
+   "rate": "45%",
+   "effectShort": "防御 30.02%上昇(部隊の総コストで効果が変化・防御効果部分のみ自身のコストを+0.5で計算・特殊効果は模倣不可)",
+   "afterTarget": "全",
+   "afterRate": "45%",
+   "afterEffectShort": "防御 30.02%上昇(部隊の総コストで効果が変化・防御効果部分のみ自身のコストを+0.5で計算・特殊効果は模倣不可)"
+  },
+  {
+   "slot": "C",
+   "skill": "Tツイスター",
+   "rank": "S",
+   "afterSkill": "三星一統射陣",
+   "afterRank": "SSS",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "攻撃 790%上昇+防御 790%上昇+部隊内武将スキル発動率+10%(特殊効果は部隊内重複不可)",
+   "afterTarget": "弓・器・焙",
+   "afterRate": "40%",
+   "afterEffectShort": "防御 154%上昇(対象兵科を指揮した防御戦闘時、自部隊内の武将が受ける30以下のダメージは最大7になる)"
+  },
+  {
+   "slot": "S1",
+   "skill": "三星一統射陣",
+   "rank": "SSS",
+   "afterSkill": "天奏聖譚曲",
+   "afterRank": "SS",
+   "target": "弓・器・焙",
+   "rate": "40%",
+   "effectShort": "防御 154%上昇(対象兵科を指揮した防御戦闘時、自部隊内の武将が受ける30以下のダメージは最大7になる)",
+   "afterTarget": "砲・器",
+   "afterRate": "70%",
+   "afterEffectShort": "防御 2.5%×防御参加武将数(280人)=700.0%"
+  },
+  {
+   "slot": "S2",
+   "skill": "四天轟雷",
+   "rank": "SS",
+   "afterSkill": "四天轟雷",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "攻撃 360%上昇+防御 360%上昇+部隊内全武将の兵科対象の全スキルに砲・器対象を追加",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 360%上昇+防御 360%上昇+部隊内全武将の兵科対象の全スキルに砲・器対象を追加"
+  }
+ ],
+ "notes": [
+  "キン肉マンコラボの極(プラチナ極)。カード画像はスキル欄が「LV1」表記のためB-00のLV1形式で、画像から採ったのは武将名・統率(4隅バッジ拡大)・スキル名・攻撃/防御/兵法の初期値・覇の有無・カードNo.の6項目のみ。効果量・成長値・指揮兵数・合成候補は外部ソースで確認した。",
+  "統率は槍A/馬S/弓A/器A(カード画像バッジ拡大)。ixawiki.com(BushoCard/2636テリーマン)と一致。",
+  "コスト3・指揮3570(★0-0)・成長値+57/+57/+2.5はixanary.com(cards/2636)。カード表示(LV.0・★なし)の0/3570、ixawiki.comの3570とも一致。",
+  "スキル効果(LV10・確率100%/攻防各790%/部隊内武将スキル発動率+10%)はixanary.comとixawiki.comが一致。",
+  "合成テーブルはixanary.com(skills/Tツイスター)の1次/2次のみ。ixawiki側は空テンプレートで裏取りできていない(単一ソース)。",
+  "A-3-8の2ソース要件を満たせないため青丸のまま。合成テーブル(スロット)の裏が取れる情報源がixanary.comの1つしか無く(ixawikiの合成候補表は空テンプレート、ixagno.blog.fc2.comにキン肉マンコラボ極の個別記事が無い)、「単一ソースのまま黄色丸にしない」規約に従ってreviewedOkを立てていない。",
+  "2026-08-16: 章を 30章 に確定。キン肉マンコラボは2025年9月追加(うぐさん、2026-08-16)。30章は2025/8/8〜2026/2/5"
+ ],
+ "wikiCommentCount": 0
+}

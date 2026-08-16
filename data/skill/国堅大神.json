@@ -4,14 +4,24 @@
  "baseRate": 60,
  "target": "全",
  "effectSummary": "SS/LV10 確率 60% 攻撃 170%上昇/対象:全\n①攻撃 170%上昇する\n②防御 170%上昇する\n③部隊消費コストを1低下する(特殊効果は模倣不可)",
+ "categoryLinks": [
+  {
+   "href": "skills-cost-atk.html",
+   "label": "コスト減少(攻撃)スキル一覧を見る"
+  },
+  {
+   "href": "skills-cost-def.html",
+   "label": "コスト減少(防御)スキル一覧を見る"
+  }
+ ],
  "sourceCharacters": [
   {
-   "name": "真田昌幸",
+   "name": "真田昌幸（3）",
    "no": "1218",
    "slot": "S2"
   },
   {
-   "name": "前田慶次",
+   "name": "前田慶次（1）",
    "no": "1222",
    "slot": "S2"
   },
@@ -26,7 +36,7 @@
    "slot": "S2"
   },
   {
-   "name": "お市",
+   "name": "お市（3）",
    "no": "2558",
    "slot": "S2",
    "db": "kyoku"
@@ -44,12 +54,30 @@
    "db": "kyoku"
   },
   {
-   "name": "毛利勝永",
+   "name": "毛利勝永（3）",
    "no": "2828",
    "slot": "B",
    "db": "kyoku",
    "note": [
     "毛利勝永(2828)のsynthesisTable B枠(2026-08-15)"
+   ]
+  },
+  {
+   "name": "雑賀孫市（2）",
+   "no": "2479",
+   "slot": "S2",
+   "db": "kyoku",
+   "note": [
+    "雑賀孫市（2）(2479)のsynthesisTable S2枠(2026-08-16、自己参照。2ソース確認)"
+   ]
+  },
+  {
+   "name": "朝倉宗滴（3）",
+   "no": "2480",
+   "slot": "S2",
+   "db": "kyoku",
+   "note": [
+    "朝倉宗滴（3）(2480)のsynthesisTable S2枠(2026-08-16、自己参照。2ソース確認)"
    ]
   }
  ],

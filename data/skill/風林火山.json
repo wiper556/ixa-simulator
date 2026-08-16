@@ -6,21 +6,28 @@
  "effectSummary": "S/LV10 確率 45% 攻撃 30%上昇/対象:槍・弓・馬\n①攻撃 30%上昇する\n②破壊 15%上昇する",
  "sourceCharacters": [
   {
-   "name": "三好義賢",
-   "no": "2368",
-   "slot": "B(遁世影武者経由)",
-   "db": "kyoku"
+   "name": "武田信廉",
+   "no": "3719",
+   "slot": "S1",
+   "db": "toku",
+   "note": [
+    "武田信廉(3719)のsynthesisTable S1枠(2026-08-16、担当T2)"
+   ]
   }
  ],
  "grantedViaSkills": [
   {
    "skill": "遁世影武者",
    "rank": "B"
+  },
+  {
+   "skill": "風林火山 戦",
+   "rank": "A"
   }
  ],
  "ownHiddenCandidate": {
-  "skill": "風林火山",
-  "rank": "S"
+  "skill": "神算鬼謀 滅",
+  "rank": "A"
  },
  "trTable": [
   {
@@ -33,6 +40,9 @@
   "ixanary.com(/skills/風林火山/、原本No.1003)確認。No.2368(三好義賢)の合成候補データ(ixagno.blog.fc2.com blog-entry-9695確認)より、Bスロット「遁世影武者」の移植後合成候補として判明したためページ新規作成",
   "2026-08-15訂正: baseRate/効果文が25%になっていたが、これはixanaryのLV1値だった。LV10は確率45%/攻撃30%上昇/破壊15%上昇が正しい値(ixanary.com/skills/風林火山で確認、TRの記載は無くLV1とLV10の2段のみ)。",
   "2026-08-15(No.2807黄丸化検証): 霧隠才蔵(2807)のsourceCharacters列挙を削除。synthesisTableのS2枠は遁世影武者[B]→風林火山[S](skill≠afterSkill)であり、A-3-12によりここへ直接列挙すべきでない(遁世影武者を新規ページ作成しgrantedViaSkillsで参照)。霧隠才蔵自身はdata/skill/遁世影武者.jsonのsourceCharactersに記載。他武将(三好義賢2368・加藤段蔵2789・百地三太夫2773・今川氏輝2768/2749・ザビエル2766・神代勝利2756・近衛信尹2787・安楽庵策伝2790・弥助2430)にも同型の直接列挙が残っている可能性があるが、担当範囲外のため未確認・未修正のまま(申し送り)。",
-  "2026-08-15(No.2749黄丸化検証): 今川氏輝(2749)のB枠もsynthesisTableではskill=遁世影武者[B]・afterSkill=風林火山[S](skill≠afterSkill)であり、2807と同型の誤りだったため、ここでのsourceCharacters列挙を削除しdata/skill/遁世影武者.jsonのsourceCharactersへ移した(A-3-12)。今川氏輝2768(別カードNo.)のC枠は担当範囲外のため今回は未確認のまま。"
+  "2026-08-15(No.2749黄丸化検証): 今川氏輝(2749)のB枠もsynthesisTableではskill=遁世影武者[B]・afterSkill=風林火山[S](skill≠afterSkill)であり、2807と同型の誤りだったため、ここでのsourceCharacters列挙を削除しdata/skill/遁世影武者.jsonのsourceCharactersへ移した(A-3-12)。今川氏輝2768(別カードNo.)のC枠は担当範囲外のため今回は未確認のまま。",
+  "2026-08-16(No.2368黄丸化検証): 上記notesで名指しされていた三好義賢(2368)の同型の直接列挙(slot: B(遁世影武者経由))を削除。三好義賢は既にdata/skill/遁世影武者.jsonのsourceCharactersにslot Bで正しく記載済みのため情報の欠落は無い。",
+  "2026-08-16(No.3719武田信廉の新規登録・担当T2): ownHiddenCandidateを自己参照の風林火山[S]から神算鬼謀 滅[A]に訂正した。理由は(1)このスキルを合成表に載せている武将は武田信廉(3719)のS1枠だけで、その移植後(2次)が神算鬼謀 滅[A]であること(ixanary.com/skills/遁世影武者・ixawiki BushoCard/3719・ixagno blog-entry-3002の3ソース一致)、(2)ixanary.com/skills/風林火山 の合成テーブルのS1列が1次/2次/3次とも攻破：神算鬼謀 滅[A]でA-3-13と整合すること。従来の自己参照は根拠となる武将側データが1件も無いまま置かれていた。",
+  "2026-08-16: 武田信廉(3719)は特シークレット(data/busho-toku-s)なのでdbに\"toku\"を入れている。tools/audit_characters.py と skills.html のリンク先判定はまだ特シークレットDBを知らないため「dbが余計」と鳴るが、担当T1(3713/3716)と表記を揃えてある(申し送り)。"
  ]
 }

@@ -1,0 +1,56 @@
+{
+ "name": "破克閃剣",
+ "rank": "A",
+ "baseRate": 48,
+ "target": "槍・弓・器",
+ "effectSummary": "A/LV10 確率 48% 攻撃 350%上昇/対象:槍・弓・器\n①攻撃 350%上昇する\n②不屈1を得る(攻撃戦闘敗北時指揮兵が不屈の数値×1000まで回復)",
+ "categoryLinks": [
+  {
+   "href": "skills-fukutsu.html",
+   "label": "不屈スキル一覧を見る"
+  }
+ ],
+ "sourceCharacters": [
+  {
+   "name": "安宅冬康",
+   "no": "2391",
+   "slot": "B",
+   "db": "kyoku",
+   "note": [
+    "安宅冬康(2391)のsynthesisTable B枠(2026-08-16)"
+   ]
+  },
+  {
+   "name": "仙石秀久（2）",
+   "no": "7009",
+   "slot": "C",
+   "db": "kyoku",
+   "note": [
+    "仙石秀久(7009)のsynthesisTable C枠(2026-08-16)"
+   ]
+  },
+  {
+   "name": "土井利勝",
+   "no": "7022",
+   "slot": "B",
+   "db": "kyoku"
+  }
+ ],
+ "grantedViaSkills": [],
+ "ownHiddenCandidate": {
+  "skill": "戦陣 剣舞",
+  "rank": "A"
+ },
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・弓・器　確率 48% / 攻撃 350%上昇(不屈1・TRなし)"
+  }
+ ],
+ "notes": [
+  "2026-08-16(No.7022黄丸化検証、A-3-9例外規定): 移植後合成候補の戦陣 剣舞[A]が既にskills.htmlページを持つ(さらに先の仙剣破斬[SSS]まで繋がる)ため、ランクAだが元スキル側として新規作成。",
+  "ixanary.com(skills/破克閃剣)生HTML確認: LV1/LV10の2段のみでTRなし。合成テーブルはB枠1次=破克閃剣、2次=戦陣 剣舞(土井利勝7022のsynthesisTable B枠と一致)。",
+  "戦陣 剣舞.jsonのgrantedViaSkillsに本スキルを追加済み。"
+ ]
+}

@@ -1,0 +1,118 @@
+{
+ "name": "今井宗久",
+ "no": "2733",
+ "ch": "10章",
+ "cost": 3.5,
+ "troop": "全",
+ "sub": "",
+ "effect": "部隊内全武将が持つ全スキルに「砲」対象を追加する(兵科対象スキル限定・模倣不可)",
+ "furigana": "いまいそうきゅう",
+ "illustrator": "紺藤ココン",
+ "imageFull": "assets/img/characters/no2733_full.png",
+ "imageChar": "assets/img/characters/no2733_char.png",
+ "atkBase": 800,
+ "atkGrowth": 19.0,
+ "defBase": 800,
+ "defGrowth": 19.0,
+ "tacticsBase": 510.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3250,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "B",
+  "uma": "B",
+  "ki": "S"
+ },
+ "initialSkill": "鉄砲商人",
+ "skillDetail": "A/LV10 確率 100% 部隊内全武将が持つ全スキルに「砲」対象を追加する/対象:全\n模倣不可\n①部隊内全武将が持つ全スキルに「砲」対象を追加する(兵科対象スキル限定)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 部隊内全武将が持つ全スキルに「砲」対象を追加(兵科対象スキル限定・模倣不可)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "鉄砲隊進撃",
+   "rank": "F",
+   "afterSkill": "城破り",
+   "afterRank": "F",
+   "target": "砲",
+   "rate": "8%",
+   "effectShort": "攻撃 15%上昇",
+   "afterTarget": "器",
+   "afterRate": "10%",
+   "afterEffectShort": "破壊 15%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "組撃ち",
+   "rank": "B",
+   "afterSkill": "八咫烏",
+   "afterRank": "B",
+   "target": "弓砲",
+   "rate": "20%",
+   "effectShort": "防御 35%上昇",
+   "afterTarget": "砲器",
+   "afterRate": "35%",
+   "afterEffectShort": "防御 30%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "早合組撃ち",
+   "rank": "A",
+   "afterSkill": "背水之陣",
+   "afterRank": "B",
+   "target": "弓砲",
+   "rate": "30%",
+   "effectShort": "防御 40%上昇",
+   "afterTarget": "槍弓馬",
+   "afterRate": "20%",
+   "afterEffectShort": "防御 37%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "遁世影武者",
+   "rank": "B",
+   "afterSkill": "風林火山",
+   "afterRank": "S",
+   "target": "部隊長",
+   "rate": "50%",
+   "effectShort": "所属部隊の部隊長が持つ初期スキルを模倣する(戦闘スキルのみ)",
+   "afterTarget": "槍・弓・馬",
+   "afterRate": "45%",
+   "afterEffectShort": "攻撃 30%上昇+破壊 15%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "数奇者",
+   "rank": "C",
+   "afterSkill": "神勅賢母",
+   "afterRank": "S",
+   "target": "全",
+   "rate": "-",
+   "effectShort": "取引手数料 30%軽減(重複不可)",
+   "afterTarget": "槍馬砲",
+   "afterRate": "25%",
+   "afterEffectShort": "防御 39%上昇"
+  }
+ ],
+ "notes": [
+  "2026-08-16 新規登録(担当K6)。カード画像はスキル表記がLV1の育成前カードのため、画像から採ったのは武将名/統率(4隅バッジ)/スキル名/攻撃・防御・兵法の初期値/覇でないこと/カードNo.の6項目のみ(B-00)。",
+  "武将名: ixawiki武将カード一覧(極)で「今井宗久」は No.2733 の1枚のみ(No.2579は今井宗久(RE)=復刻のため数に入れない、No.10029は別レアリティ)。よって無印。",
+  "統率は画像の4隅バッジで槍A/馬B/弓B/器Sを個別に拡大して確認。ixawiki(BushoCard/2733今井宗久)の「統率力 槍A 馬B 弓B 器S」と一致。",
+  "コスト3.5・指揮兵数3250・初期値800/800/510・成長値+19/+19/+2.5・ふりがな・絵師(紺藤ココン)は ixanary.com(cards/2733) と ixawiki.com(BushoCard/2733今井宗久) の2ソースで完全一致。lv0Troopsはixanaryの★0-0(3250)。",
+  "スキル効果はLV1カードのため外部ソースを採用。LV1は「初期スキルに」、LV10は「全スキルに」と対象範囲が変わる点まで2ソースで一致を確認した(LV1の文言をLV10として登録しないこと)。effectShortの文言は同じ鉄砲商人を持つ既存登録(No.2747小西行長・No.2785三浦按針)に揃えた。TR段はどちらのソースにも無い。",
+  "合成候補はixanary.com(skills/鉄砲商人)の1次/2次と ixawiki(BushoCard/2733)の合成候補テーブルの2ソースで全5枠完全一致(A=鉄砲隊進撃[F]→城破り[F]、B=組撃ち[B]→八咫烏[B]、C=早合組撃ち[A]→背水之陣[B]、S1=遁世影武者[B]→風林火山[S]、S2=数奇者[C]→神勅賢母[S])。各枠のtarget/rate/effectShortは候補スキル自身のixanaryページのLV10行から転記。",
+  "A-3-11逆引き: 遁世影武者(S1)・数奇者(S2)・鉄砲商人(初期スキル)の各 data/skill/*.json に今井宗久を追記した。移植後の風林火山[S]・神勅賢母[S]はどちらも既にgrantedViaSkillsで元スキル(遁世影武者/数奇者)を指しており追記不要(A-3-12)。鉄砲商人は今井宗久自身のsynthesisTableのどの枠にも載らないためslotは「移植不可」。",
+  "章はixanary.com/ixawiki.comのカードページに記載が無く未確認。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "reviewedOk": true,
+ "wikiOldestComment": "2015-10-31",
+ "wikiCommentCount": 138,
+ "chGuess": "10章",
+ "chSource": "wikiOldestComment"
+}

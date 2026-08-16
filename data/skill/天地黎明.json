@@ -3,7 +3,7 @@
  "rank": "SSS",
  "baseRate": 70,
  "target": "全",
- "effectSummary": "SSS/LV10 確率 70% 防御 270%上昇/対象:全\n①防御 270%上昇する\n②武将HPが99以下の時防御効果が3倍となる(TR1〜TR5は未確認)",
+ "effectSummary": "SSS/LV10 確率 70% 防御 270%上昇/対象:全\n①防御 270%上昇する\n②武将HPが99以下の時防御効果が3倍となる",
  "sourceCharacters": [
   {
    "name": "朝倉義景",
@@ -32,7 +32,8 @@
  },
  "notes": [
   "朝倉義景(No.1243)synthesisTable候補C・45do.info生HTML照合済み(単一ソースのみ、TR1〜TR5未確認)",
-  "2026-08-13: A-3-12の逆方向リンク。武将のsynthesisTableでは1次がこのスキルに変化するのに、こちら側から元スキルを指していなかった。1次→2次の組100件を元スキルのownHiddenCandidateと突き合わせ、矛盾0件を確かめたうえで機械的に張った。"
+  "2026-08-13: A-3-12の逆方向リンク。武将のsynthesisTableでは1次がこのスキルに変化するのに、こちら側から元スキルを指していなかった。1次→2次の組100件を元スキルのownHiddenCandidateと突き合わせ、矛盾0件を確かめたうえで機械的に張った。",
+  "2026-08-16(No.1243黄丸化検証): 「TR1〜TR5未確認」を追加ソースで確認。ixanary.com(skills/天地黎明)の生HTMLはLV1/LV10のみでTR区分自体が存在しない。ixawiki.com(BushoCard/1243朝倉義景のC候補詳細ボックス)もLv10行のみでTR言及なし。2ソースともTR進行が存在しないことを示しており、trTable1行(LV10のみ)で確定。effectSummaryの「TR1〜TR5は未確認」表記を削除。"
  ],
  "trTable": [
   {

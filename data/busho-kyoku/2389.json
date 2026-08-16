@@ -101,6 +101,15 @@
   }
  ],
  "notes": [
-  "45do.info+ixagno.blog.fc2.com(blog-entry-10265)確認済み: Aの十束ノ神域は移植後「天聖宝冠」[SSS]に変化。B/C/S1(戦線邁進)/S2(志半ノ矛楯)は自己参照で両ソース一致"
- ]
+  "2026-08-16黄丸化検証(A-1〜A-5): rankGrades(槍S/馬B/弓A/器A)はカード画像の4隅バッジを個別にズームして再確認し、ixawiki.com(BushoCard/2389宮部継潤)の基本ステータス表とも一致。基礎値/成長値/コスト/指揮兵数(★0-0=3970)はixanary.com(cards/2389)生HTMLとixawikiの両方で一致確認。",
+  "synthesisTableはixanary.com(skills/戦線邁進)の合成テーブル(1次/2次/3次)生HTMLと、ixawiki.com(BushoCard/2389宮部継潤)のスキル追加合成テーブルの2ソースで突き合わせ完全一致を確認: A=十束ノ神域[SS]→天聖宝冠[SSS]、B/C/S1=戦線邁進[A]自己参照、S2=志半ノ矛楯[A]自己参照。A候補のtarget/rate/effectShort(移植前:全/覇道 確率100% 攻撃320%上昇+速度70%上昇+覇道保護、移植後:全 確率45% 攻撃100%上昇+(5.0×防御参加武将数)%を攻撃効果に加算・模倣不可)も両ソース一致。",
+  "sourceCharacters逆引き確認(A-3-11): 十束ノ神域.jsonのsourceCharactersにNo.2389がslot Aで登録済み。天聖宝冠.jsonはgrantedViaSkills(十束ノ神域経由)で辿れる構造のため直接列挙は不要(既存の正しい状態)。戦線邁進・志半ノ矛楯はA以下かつ自己参照のためskills.html新規ページ作成の例外にも該当せず、data/skill配下にファイルが無いのが正しい状態(該当なし)。",
+  "categoryLinks(A-2): 防御参加武将数依存の攻撃スキルのためskills-count-atk.htmlへのリンクが既に設定済みで正しい。他の無尽/撤退/覇道/不屈/飛翔/兵站キーワードは該当なし。",
+  "trTable: ixanary生HTMLにTR1〜6や鍛錬の記載が無く、LV10のみの単段スキルであることを確認。",
+  "章(29章)はixanary.com/ixawiki.comのカードページ双方に章の直接記載が無く一次情報源では裏取りできないが、既存登録値をそのまま維持(矛盾する情報は見つからず)。"
+ ],
+ "reviewedOk": true,
+ "wikiOldestComment": "2025-03-04",
+ "wikiCommentCount": 9,
+ "chGuess": "29章"
 }

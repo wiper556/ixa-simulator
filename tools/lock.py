@@ -90,6 +90,11 @@ PRESENT = ("docs/RULE-VIOLATIONS.md",
            "docs/redteam-log.txt")
 ARRAYS = {"characters.html": "generals", "characters-kyoku.html": "kyokuGenerals",
           "characters-kyoku-ps.html": "kyokuPsGenerals",
+          "characters-parallel.html": "parallelGenerals",
+          "characters-toku-s.html": "tokuSecretGenerals",
+          "characters-toku.html": "tokuGenerals",
+          "characters-ue.html": "ueGenerals",
+          "characters-jo.html": "joGenerals",
           "characters-ketsu.html": "ketsuGenerals"}
 
 

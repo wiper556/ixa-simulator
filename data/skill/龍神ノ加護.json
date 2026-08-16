@@ -1,0 +1,36 @@
+{
+ "name": "龍神ノ加護",
+ "rank": "A",
+ "baseRate": 46,
+ "target": "馬・砲・器",
+ "effectSummary": "A/LV10 確率 46% 防御 135%上昇/対象:馬・砲・器\n模倣不可\n①防御 135%上昇する\n②本丸防御陣形に配置時この武将の編成コスト消費を-0.5する",
+ "categoryLinks": [
+  {
+   "href": "skills-cost-def.html",
+   "label": "コスト減少(防御)スキル一覧を見る"
+  }
+ ],
+ "sourceCharacters": [
+  {
+   "name": "津軽為信（2）",
+   "no": "2359",
+   "slot": "C",
+   "db": "kyoku"
+  }
+ ],
+ "grantedViaSkills": [],
+ "ownHiddenCandidate": {
+  "skill": "朧雲ノ蓮撃",
+  "rank": "S"
+ },
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "馬・砲・器　確率 46% / 防御 135%上昇(本丸防御陣形配置時コスト消費-0.5・模倣不可)"
+  }
+ ],
+ "notes": [
+  "2026-08-16(No.2359黄丸化検証、A-3-9例外規定): 移植後合成候補の朧雲ノ蓮撃[S]が既にskills.htmlページを持つため、ランクAだが元スキル側として新規作成。ixanary.com(skills/龍神ノ加護)の合成テーブル(1次C=龍神ノ加護、2次C=朧雲ノ蓮撃)を生HTMLで確認。朧雲ノ蓮撃.json側にgrantedViaSkills経由の逆引きを追加済み。TR記載なし(LV10のみ)。"
+ ]
+}

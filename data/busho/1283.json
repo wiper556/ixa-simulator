@@ -1,5 +1,5 @@
 {
- "name": "鍋島直茂",
+ "name": "鍋島直茂（3）",
  "no": "1283",
  "ch": "29章",
  "cost": 5,
@@ -115,8 +115,14 @@
   }
  ],
  "notes": [
-  "カード画像照合済み: 槍S/弓S/馬A/器A",
-  "ixagno.blog.fc2.com(blog-entry-10200)生HTML照合済み(2026-08-02): TR1〜TR4の実在を確認し追記",
-  "45do.info(ordinary/0310)生HTML + ixagno.blog.fc2.com(blog-entry-10200)生HTML の2ソースでA/B/C/S1/S2の対応を突き合わせ、完全一致を確認(2026-08-02)"
- ]
+  "2026-08-16: 武将名の（N）を、ixawikiの各カードページの一番古いコメントの日付順で振り直した。（N）はゲームには無く、同レアリティで同名が混ざらないようwiki利用者が出現順に付けた工夫。カードNo.順では10xxx番台(記念カード)で前後が逆転するため日付を使う(うぐさん指示)。",
+  "カード画像照合済み(2026-08-16再確認): 槍S/弓S/馬A/器A、攻1060/防1250/兵法670.0/指揮5060/コスト5も画像と一致。",
+  "ixanary.com(/skills/旋渦訣刀/)生HTML照合(2026-08-16): LV1・LV10・TR1〜TR5の全段階が実在し、TR1=600%(+1.0)/TR2=600%(+1.1)/TR3=600%(+1.2)/TR4=880%(+1.3)/TR5=880%(+1.5)が現在のtrTableと完全一致。",
+  "synthesisTable: ixanary.com(/skills/旋渦訣刀/、生HTML)とixawiki.com(index.php?BushoCard/1283鍋島直茂、生HTML、EUC-JP)の2ソースでA/B/C/S1/S2の1次候補・2次候補S1を突き合わせ、A=国津破邪ノ楯[SS]、B=旌旗翳天ノ覇陣[SS]、C=國才連豪[SS]、S1=従魔絶神[SSS]、S2=万里嵐壁[SS](全枠自己参照)で完全一致を確認。初期スキル(旋渦訣刀)自身はどの枠にも現れないため「移植不可」で正しい。",
+  "data/skill/国津破邪ノ楯.json・旌旗翳天ノ覇陣.json・國才連豪.json・従魔絶神.json・万里嵐壁.json・旋渦訣刀.jsonのsourceCharactersに1283が正しい枠で登録済みであることを確認(A-3-11)。"
+ ],
+ "reviewedOk": true,
+ "wikiOldestComment": "2025-02-08",
+ "wikiCommentCount": 16,
+ "chGuess": "29章"
 }

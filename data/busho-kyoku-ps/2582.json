@@ -1,7 +1,7 @@
 {
  "name": "独眼竜政宗",
  "no": "2582",
- "ch": "未確認",
+ "ch": "25章",
  "cost": 5,
  "troop": "全攻",
  "sub": "飛翔12",
@@ -77,11 +77,14 @@
    "slot": "A",
    "skill": "飛竜星照",
    "rank": "S",
-   "afterSkill": null,
-   "afterRank": null,
-   "target": null,
-   "rate": null,
-   "effectShort": "攻撃 440%上昇+飛翔12(攻撃戦闘時のみ・飛翔獲得部分は模倣不可・二重卓越不可)"
+   "afterSkill": "月詠ノ覇威",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "45%",
+   "effectShort": "攻撃 440%上昇+飛翔12(攻撃戦闘時のみ・飛翔獲得部分は模倣不可・二重卓越不可)",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 344%上昇+防御 344%上昇+自軍全武将全スキルの卓越確率に15%加算(模倣不可・自軍内重複上限2)"
   },
   {
    "slot": "B",
@@ -89,8 +92,8 @@
    "rank": "A",
    "afterSkill": "鬼滅刺",
    "afterRank": "A",
-   "target": null,
-   "rate": null,
+   "target": "全",
+   "rate": "100%",
    "effectShort": "攻撃 55%上昇+防御 55%上昇(自軍全武将全スキルの卓越確率に7%を加算・模倣不可・自軍内重複上限4)",
    "afterTarget": "全",
    "afterRate": "100%",
@@ -133,11 +136,19 @@
   }
  ],
  "notes": [
-  "出典: カード画像(LV1形式: 極・統率 槍A/弓A/馬A/器S拡大確認・初期値1220/1100/540・コスト5・LV1スキル値)",
-  " + ixanary.com/cards/2582(指揮4750(★0-0)・成長+64/+51/+3.0・LV10: 卓越追加確率45%で発動/攻撃440%/飛翔12。絵師 武井宏之)",
-  " + ixawiki BushoCard/2582(統率2次確認・合成テーブル+C/S1候補のLV10効果)。",
-  "統率はカード画像+ixawikiの2ソース一致。ixawikiの2次候補行は4項目で5列と整合しないため、",
-  "既知の対応(活人剣→鬼滅刺、No.2444/2450で確認済み)からB以降に割り当て、Aの移植後はnull(推測で埋めない)。",
-  "初期スキルがSランクのためスキル個別ページの新規作成が必要(docsのTODOに記録済み)。"
- ]
+  "カード画像はスキル欄「飛竜星照LV1」表記のためLV1形式(B-00)。画像から確認できるのは名前・統率バッジ(4隅拡大)・スキル名・初期値1220/1100/540・カードNo.のみ。",
+  "統率は槍A/弓A/馬A/器S。カード画像バッジ拡大とixanary.com(cards/2582)の両方で一致。",
+  "コスト5・指揮4750(★0-0)・成長+64/+51/+3.0・絵師武井宏之はixanary.com(cards/2582)。",
+  "飛竜星照のLV10(卓越追加確率45%で発動/攻撃440%/飛翔12)はixanaryスキルページ・ixawiki(BushoCard/2582独眼竜政宗)で確認。TR段階なし。",
+  "【2026-08-16 null解消】スロットA(飛竜星照、自身の初期スキルの自己参照候補)のafterSkillが未確定だった。ixanaryスキルページ(skills/飛竜星照)とixagno.blog.fc2.com(blog-entry-9127)の2ソースが一致してA→月詠ノ覇威(SS)。飛竜星照.jsonのownHiddenCandidateも月詠ノ覇威(SS)で既に一致していた。B枠(活人剣→鬼滅刺)も同じ2ソースで確認、A・Bのtarget/rateが未記入だったのを合わせて補完(飛竜星照:全/45%、活人剣:全/100%)。",
+  "飛竜星照(初期スキル)は9項目チェックで卓越に加え飛翔(攻撃、発動時飛翔12を得る)も該当することを確認し、skill側categoryLinksにskills-hishou-atk.htmlを追加(武将側は既に登録済みだった)。",
+  "活人剣・黒飛燕剣・月詠ノ覇威・飛竜星照(自身の初期スキル)は既存ページにsourceCharacters(2582)が正しいスロットで登録済みを確認(drift無し)。",
+  "章は情報源(ixanary/ixawiki/ixagno)に記載が無いため未確認。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "reviewedOk": true,
+ "wikiOldestComment": "2023-06-01",
+ "wikiCommentCount": 57,
+ "chGuess": "25章",
+ "chSource": "wikiOldestComment"
 }

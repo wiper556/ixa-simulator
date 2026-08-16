@@ -1,7 +1,7 @@
 {
  "name": "禰津常安",
  "no": "2822",
- "ch": "未確認",
+ "ch": "26章",
  "cost": 4.0,
  "troop": "全攻",
  "sub": "",
@@ -107,7 +107,12 @@
   "skillDetailに模倣不可の独立行と②卓越の効果行が抜けていたため追加(2026-08-15、ixanaryカードページのLV10生テキストで確認)。trTable効果欄にも卓越・模倣不可を追記。",
   "categoryLinksに卓越スキル一覧(skills-takuetsu.html、initialSkillのエントリ実在を確認済み)を追加。飛翔(攻撃)一覧(skills-hishou-atk.html)は本来該当するはずだが、同ページ側にinitialSkillのエントリがまだ無く(E-0基準で先方の掲載漏れ)、自分の担当範囲外のファイルのため今回はcategoryLinksに追加せず申し送りとする。",
   "data/skill/根津諏訪流鷹術.json・遠呂智ノ閃光.json・火之迦具土神.jsonのsourceCharactersで本武将のslotが実際のsynthesisTableと食い違っていたため訂正(A→A・B、A→S1、C→C・S2)。skills-takuetsu.html側にも同型の食い違い(slot:A→正しくはA・B)が残っているが、担当範囲外のファイルのため申し送り。",
-  "章は情報源(ixanary/ixawiki)に記載が無いため未確認。追加でixagno.blog.fc2.com(?q=禰津常安、15件)を確認したが、章番号を明記した記事は無かった。ただし記事の1つ(blog-entry-10298)から2023年8月21日のメンテでNo.2822が追加された記録があり、時期的には29章前後の可能性が高いが直接の章番号確認には至らず未確認のまま残す。"
+  "章は情報源(ixanary/ixawiki)に記載が無いため未確認。追加でixagno.blog.fc2.com(?q=禰津常安、15件)を確認したが、章番号を明記した記事は無かった。ただし記事の1つ(blog-entry-10298)から2023年8月21日のメンテでNo.2822が追加された記録があり、時期的には29章前後の可能性が高いが直接の章番号確認には至らず未確認のまま残す。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
  ],
- "reviewedOk": true
+ "reviewedOk": true,
+ "wikiOldestComment": "2023-09-17",
+ "wikiCommentCount": 11,
+ "chGuess": "26章",
+ "chSource": "wikiOldestComment"
 }

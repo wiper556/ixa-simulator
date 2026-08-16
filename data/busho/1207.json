@@ -1,5 +1,5 @@
 {
- "name": "松平元康",
+ "name": "松平元康（2）",
  "no": "1207",
  "ch": "23章",
  "cost": 4.5,
@@ -94,6 +94,15 @@
   }
  ],
  "notes": [
-  "45do.info(skiladd_wrap) + ameameixa.com(bushocard-1207)生HTML の2ソースで完全一致を確認(2026-08-02)"
- ]
+  "2026-08-16黄丸化検証: rankGrades(槍A/弓S/馬S/器A)をカード画像バッジ4隅で照合、一致。ステータス初期値・成長値・cost4.5・lv0Troops4670はixanary.com(cards/1207)生HTMLの成長表と一致。skillDetailはixanary/ixawiki2ソースともLV1/LV10のみでTR無しと確認。",
+  "名前表記: ixanary.com(cards/1207)で職業=将バッジ(覇ではない)を確認、ixawiki.com(Busho/武将カード一覧)で「松平元康(2)」表記を確認したためF-0規則に従い「松平元康（2）」とした(2026-08-16、旧登録は無印だった)。data/skill配下の候補スキル(四界偃武・天岩戸ノ神域・加具土ノ神域・八目鳴鏑ノ奏)のsourceCharactersも同名に更新した。",
+  "synthesisTable(A/B=四界偃武[S]→加具土ノ神域[SS]、C=天岩戸ノ神域[SS]自己参照、S1=加具土ノ神域[SS]自己参照、S2=八目鳴鏑ノ奏[SS]自己参照)をixanary.com(skills/四界偃武)生HTMLとixawiki.com(BushoCard/1207松平元康)生HTMLの2ソースで完全一致を確認(2026-08-16)。",
+  "categoryLinksチェック(A-3-9、9項目): 初期スキル四界偃武自身は「敵軍総武将コスト」基準で「防御参加武将数」形式の人数依存ではないため該当なし。候補スキル天岩戸ノ神域・加具土ノ神域・八目鳴鏑ノ奏は既にskills-count-atk.htmlへcategoryLinks・本体一覧とも登録済みを確認。",
+  "sourceCharacters逆引き確認(A-3-11): 四界偃武(A・B)・天岩戸ノ神域(C)・加具土ノ神域(S1)・八目鳴鏑ノ奏(S2)いずれもdata/skill/配下に1207が記載済み(2026-08-16)。",
+  "章(23章)は情報源に記載が無く未確認のまま(ixanary/ixawikiともchapter情報を確認できず)。"
+ ],
+ "reviewedOk": true,
+ "wikiOldestComment": "2022-02-04",
+ "wikiCommentCount": 29,
+ "chGuess": "22-23章"
 }

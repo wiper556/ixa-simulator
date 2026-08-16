@@ -1,0 +1,140 @@
+{
+ "name": "フライヤ",
+ "no": "2629",
+ "ch": "29章",
+ "cost": 4.5,
+ "troop": "槍砲器攻",
+ "sub": "",
+ "effect": "この武将が15以上の飛翔をもつとき飛翔を全て失う代わりに攻撃効果が5倍",
+ "furigana": "ふらいや",
+ "illustrator": "FinalFantasyIX 25th ANNIVERSARY",
+ "imageFull": "assets/img/characters/no2629_full.png",
+ "imageChar": "assets/img/characters/no2629_char.png",
+ "atkBase": 1220,
+ "atkGrowth": 63,
+ "defBase": 1070,
+ "defGrowth": 46,
+ "tacticsBase": 520,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 4580,
+ "rankGrades": {
+  "yari": "SS",
+  "yumi": "A",
+  "uma": "B",
+  "ki": "A"
+ },
+ "initialSkill": "ジャンプ",
+ "skillDetail": "S/LV10 確率 100% 攻撃 230%上昇/対象:槍・砲・器\n①攻撃 230%上昇する\n②この武将が15以上の飛翔をもつときこの武将は飛翔を全て失う代わりにこのスキルの攻撃効果が5倍になる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・砲・器　確率 100% / 攻撃 230%上昇(この武将が15以上の飛翔をもつとき飛翔を全て失う代わりに攻撃効果が5倍)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": "槍・砲・器　確率 100% / 攻撃 250%上昇(この武将が15以上の飛翔をもつとき飛翔を全て失う代わりに攻撃効果が5倍)"
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": "槍・砲・器　確率 100% / 攻撃 280%上昇(この武将が15以上の飛翔をもつとき飛翔を全て失う代わりに攻撃効果が5倍)"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": "槍・砲・器　確率 100% / 攻撃 330%上昇(この武将が15以上の飛翔をもつとき飛翔を全て失う代わりに攻撃効果が5倍)"
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": null
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": null
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": null
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "魔弾奏者",
+   "rank": "S",
+   "afterSkill": "星神闘覇",
+   "afterRank": "SS",
+   "target": "槍・弓・砲・器 飛翔10",
+   "rate": "64%",
+   "effectShort": "攻撃 50%上昇(飛翔値合計×9%加算)",
+   "afterTarget": "全 飛翔15",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 740%上昇+速度 200%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "義陣絶刀",
+   "rank": "S",
+   "afterSkill": "國才連豪",
+   "afterRank": "SS",
+   "target": "全 飛翔17",
+   "rate": "55%",
+   "effectShort": "攻撃 840%上昇+防御 840%上昇",
+   "afterTarget": "全",
+   "afterRate": "50%",
+   "afterEffectShort": "防御 310%×國才連豪所持武将数(4人)=1240.0%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "ジャンプ",
+   "rank": "S",
+   "afterSkill": "ジャンプ",
+   "afterRank": "S",
+   "target": "槍・砲・器",
+   "rate": "100%",
+   "effectShort": "攻撃 230%上昇(この武将が15以上の飛翔をもつとき飛翔を全て失う代わりに攻撃効果が5倍)",
+   "afterEffectShort": "攻撃 230%上昇(この武将が15以上の飛翔をもつとき飛翔を全て失う代わりに攻撃効果が5倍)"
+  },
+  {
+   "slot": "S1",
+   "skill": "ジャンプ",
+   "rank": "S",
+   "afterSkill": "ジャンプ",
+   "afterRank": "S",
+   "target": "槍・砲・器",
+   "rate": "100%",
+   "effectShort": "攻撃 230%上昇(この武将が15以上の飛翔をもつとき飛翔を全て失う代わりに攻撃効果が5倍)",
+   "afterEffectShort": "攻撃 230%上昇(この武将が15以上の飛翔をもつとき飛翔を全て失う代わりに攻撃効果が5倍)"
+  },
+  {
+   "slot": "S2",
+   "skill": "星神闘覇",
+   "rank": "SS",
+   "afterSkill": "星神闘覇",
+   "afterRank": "SS",
+   "target": "全 飛翔15",
+   "rate": "100%",
+   "effectShort": "攻撃 740%上昇+速度 200%上昇",
+   "afterEffectShort": "攻撃 740%上昇+速度 200%上昇"
+  }
+ ],
+ "notes": [
+  "出典: カード画像(LV1形式・B-00で読んでよい6項目のみ採用: 武将名/統率4隅バッジ/スキル名/攻防兵法の初期値/覇でないこと/カードNo.) + ixanary.com(cards/{no}・skills/{skill}の生HTML) + ixawiki.com(BushoCard/{no}{name}・武将カード一覧(極))。効果量・成長値・指揮兵数・合成候補はすべて外部ソースから取り、カード画像のLV1値は登録していない。",
+  "ch(章)はFF9 25周年記念コラボ「玖幻戦」の実装時期から。ixagno.blog.fc2.com(2025-07-03の記事、カテゴリ【29章】でこのコラボカードの追加を扱っている)と、当サイトの既存データで29章の窓が2025-02-07〜2025-08-06(30章の初出が2025-08-07)であることの2点による。ゲーム内での直接確認ではない。",
+  "コラボカード(FinalFantasyIX 25th ANNIVERSARY)。取引/譲与不可。覇の表記はカード画像に無く【覇】は付かない。同名の特武将(No.363x)が別に居るがレアリティが違うため（N）は振らない。",
+  "統率はカード画像の4隅バッジ(左上槍SS/右上馬B/左下弓A/右下器A)を拡大確認、ixawiki武将カード一覧(極)の SS|A|B|A と一致(一覧の列順が槍/弓/馬/器であることはこの1件で確定した)。",
+  "指揮兵数はixanaryの★0-0=4580。カード画像は★4・LV0で0/4980、ixanaryの★4-20=4980と一致。",
+  "鍛錬はTR3まで(ixanary.com/skills/ジャンプ にTR4・TR5の行が無く、ixawikiのカードページも最終段がTR3)。",
+  "成長値はixawikiのカードページが空欄のためixanary.com/cards/2629のみ(+63/+46/+2.5)。",
+  "【情報源の食い違い】星神闘覇のレア度は ixanary=SSS / ixawiki(武将追加スキル一覧のNo.1238・No.1240行)=SS。当サイトの既存データもSSなので、2対1でSSを採用した。",
+  "合成テーブルはixanary.com/skills/ジャンプ の1次/2次。1次はixawikiのカードページとも一致。A枠の2次(星神闘覇)・B枠の2次(國才連豪)は、当サイトの魔弾奏者.json・義陣絶刀.jsonのownHiddenCandidateとも一致する。",
+  "ジャンプ自体はC・S1枠に自己参照で載るため移植可能。",
+  "飛翔の一覧ページ(skills-hishou-atk.html)には入れていない。同ページの収録条件は「『飛翔』の数値を持ち攻撃効果を持つスキル」で、ジャンプは飛翔値を持たず(他スキルで得た飛翔15以上を消費するだけなので)飛翔値の欄が埋められないため。"
+ ],
+ "reviewedOk": true
+}

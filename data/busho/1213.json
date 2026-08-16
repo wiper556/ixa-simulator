@@ -1,5 +1,5 @@
 {
- "name": "荒木村重",
+ "name": "荒木村重（1）",
  "no": "1213",
  "ch": "23章",
  "cost": 3.5,
@@ -94,6 +94,17 @@
   }
  ],
  "notes": [
-  "synthesisTable: 45do.info生HTML(skiladd_wrap)+ixanary.com(外道煉獄スキルページの合成テーブル)で2ソース一致確認済み(2026-08-02)"
- ]
+  "2026-08-16: 武将名の（N）を、ixawikiの各カードページの一番古いコメントの日付順で振り直した。（N）はゲームには無く、同レアリティで同名が混ざらないようwiki利用者が出現順に付けた工夫。カードNo.順では10xxx番台(記念カード)で前後が逆転するため日付を使う(うぐさん指示)。",
+  "2026-08-16黄丸化検証: rankGrades(槍S/弓A/馬A/器S)をカード画像バッジ4隅で照合、一致。攻撃・防御・兵法の初期値・成長値・lv0Troops4180はixanary.com(cards/1213)生HTMLの成長表と一致。skillDetailはixanary/ixawiki2ソースともLV1/LV10のみでTR無しと確認。",
+  "コスト(既知の先例、マニュアルD-01系): ixanary.com(cards/1213)はコスト5と表示するが、カード画像は3.5、ixawiki.com(BushoCard/1213荒木村重)も3.5で2ソース一致。カード画像+ixawikiを優先し既存の3.5を維持(変更なし)。",
+  "名前表記: ixawiki.com(Busho/武将カード一覧)で「荒木村重」無印表記を確認、既存登録のまま変更なし。",
+  "synthesisTable(A/B=外道煉獄[S]→建御雷神ノ槌[SS]、C=布都御魂ノ鬨[SS]自己参照、S1=建御雷神ノ槌[SS]自己参照、S2=布都御魂ノ鬨[SS]自己参照)をixanary.com(skills/外道煉獄)生HTMLとixawiki.com(BushoCard/1213荒木村重)生HTMLの2ソースで完全一致を確認(2026-08-16)。",
+  "categoryLinksチェック(A-3-9、9項目): 初期スキル外道煉獄の「部隊内武将のスキル発動率+15%」は9項目のいずれにも該当しない。",
+  "sourceCharacters逆引き確認(A-3-11): 外道煉獄(A・B)・布都御魂ノ鬨(C・S2)・建御雷神ノ槌(S1)いずれもdata/skill/配下に1213が記載済み(2026-08-16)。",
+  "章(23章)は情報源に記載が無く未確認のまま(ixanary/ixawikiともchapter情報を確認できず)。"
+ ],
+ "reviewedOk": true,
+ "wikiOldestComment": "2022-02-05",
+ "wikiCommentCount": 59,
+ "chGuess": "22-23章"
 }

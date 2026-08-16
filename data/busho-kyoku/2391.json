@@ -102,6 +102,11 @@
   }
  ],
  "notes": [
-  "45do.info+ixagno.blog.fc2.com(blog-entry-10312)確認済み: Aの空陣鳴響は移植後「悪屋形」[S]に、Bの破克閃剣は移植後「戦陣 剣舞」に変化。C/S1は自己参照(星詠ム仁将)で両ソース一致"
- ]
+  "45do.info+ixagno.blog.fc2.com(blog-entry-10312)確認済み: Aの空陣鳴響は移植後「悪屋形」[S]に、Bの破克閃剣は移植後「戦陣 剣舞」に変化。C/S1は自己参照(星詠ム仁将)で両ソース一致",
+  "2026-08-16黄丸化検証: ixanary.com生HTML(cards/2391, skills/星詠ム仁将, skills/空陣鳴響)でLV1/LV10の数値・合成テーブル(1次A=空陣鳴響,B=破克閃剣,C/S1=星詠ム仁将自己参照,S2=志半ノ矛楯自己参照/2次A=悪屋形[S],B=戦陣 剣舞)を再確認、既存データと一致。TRは存在しない(LV1/LV10のみ)。ixagno併用で2ソース達成。rankGrades(yari:B/yumi:A/uma:A/ki:S)はカード画像4隅バッジで再照合済み。A-3-12/A-3-9の不備を発見・修正: 空陣鳴響(A)は既存ページ持ちの悪屋形[S]の元スキルのため単独ページ作成対象だったが未作成で、悪屋形.json側に2391が「A(空陣鳴響経由)」と直接列挙(廃止済みフォールバック)されていた。空陣鳴響.jsonを新規作成し2391をそちらへ移設、悪屋形.jsonはgrantedViaSkillsで空陣鳴響を参照する形に修正した"
+ ],
+ "reviewedOk": true,
+ "wikiOldestComment": "2025-04-06",
+ "wikiCommentCount": 3,
+ "chGuess": "29章"
 }

@@ -1,0 +1,40 @@
+{
+ "name": "鬼神ノ戦域",
+ "rank": "A",
+ "baseRate": 55,
+ "target": "槍・馬・騎 飛翔4 卓越",
+ "effectSummary": "A/LV10 確率 55% 攻撃 84%上昇/対象:槍・馬・騎　飛翔4　卓越\n①攻撃 84%上昇する\n②卓越:追加確率40%で攻撃効果が1.5倍になる\n③飛翔4を持つ(敵軍に飛翔を持つ武将が4人未満のとき通常武将ダメージを受けない)",
+ "categoryLinks": [
+  {
+   "href": "skills-hishou-atk.html",
+   "label": "飛翔スキル一覧(攻撃)を見る"
+  },
+  {
+   "href": "skills-takuetsu.html",
+   "label": "卓越スキル一覧を見る"
+  }
+ ],
+ "sourceCharacters": [
+  {
+   "name": "三好義賢（2）",
+   "no": "2368",
+   "slot": "A",
+   "db": "kyoku"
+  }
+ ],
+ "grantedViaSkills": [],
+ "ownHiddenCandidate": {
+  "skill": "戦陣 神楽",
+  "rank": "A"
+ },
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・馬・騎 飛翔4 卓越　確率 55% / 攻撃 84%上昇(卓越:追加確率40%で1.5倍)"
+  }
+ ],
+ "notes": [
+  "2026-08-16(No.2368黄丸化検証、A-3-9例外規定): 移植後合成候補の戦陣 神楽[A]が既にskills.htmlページを持つため、ランクAだが元スキル側として新規作成。ixanary.com(skills/鬼神ノ戦域)の合成テーブル(1次A=鬼神ノ戦域、2次A=戦陣 神楽)を生HTMLで確認。戦陣 神楽.json側にgrantedViaSkills経由の逆引きを追加済み。TR記載なし(LV10のみ)。"
+ ]
+}

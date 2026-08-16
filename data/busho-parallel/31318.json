@@ -1,0 +1,142 @@
+{
+ "name": "武田晴信（4）",
+ "no": "31318",
+ "furigana": "たけだはるのぶ",
+ "ch": "32章",
+ "cost": 4,
+ "troop": "攻",
+ "sub": "",
+ "effect": "撤退/追加スキルの攻撃・速度効果3.1倍・自部隊同時攻撃時は最速の部隊移動時間で合流出陣",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no31318_full.png",
+ "imageChar": "assets/img/characters/no31318_char.png",
+ "atkBase": 1260,
+ "atkGrowth": 72,
+ "defBase": 1050,
+ "defGrowth": 48,
+ "tacticsBase": 680,
+ "tacticsGrowth": 3.5,
+ "lv0Troops": 4750,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "SS",
+  "ki": "A"
+ },
+ "initialSkill": "焔天滅刻",
+ "skillDetail": "S/TR6 追加スキルの攻撃・速度効果3.1倍/対象:-　撤退\n模倣不可\n①このスキルを持つ武将カードは追加スキルの攻撃・速度効果が3.1倍となる\n②自部隊同時攻撃時参加自部隊中最速の部隊移動時間で合流出陣できる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "- 撤退　追加スキルの攻撃・速度効果が2.5倍"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": "- 撤退　追加スキルの攻撃・速度効果が2.6倍"
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": "- 撤退　追加スキルの攻撃・速度効果が2.7倍"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": "- 撤退　追加スキルの攻撃・速度効果が2.8倍"
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": "- 撤退　追加スキルの攻撃・速度効果が2.9倍"
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": "- 撤退　追加スキルの攻撃・速度効果が3倍"
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": "- 撤退　追加スキルの攻撃・速度効果が3.1倍(自部隊同時攻撃時は参加自部隊中最速の部隊移動時間で合流出陣)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "刹那無影",
+   "rank": "SS",
+   "afterSkill": "刹那無影",
+   "afterRank": "SS",
+   "target": "部隊長",
+   "rate": "55%",
+   "effectShort": "所属部隊の部隊長が持つ初期スキルを通常攻撃/防御効果1.15倍にして模倣する(戦闘スキルのみ)+速度 200%上昇(確率100%)",
+   "afterEffectShort": "所属部隊の部隊長が持つ初期スキルを通常攻撃/防御効果1.15倍にして模倣する(戦闘スキルのみ)+速度 200%上昇(確率100%)"
+  },
+  {
+   "slot": "B",
+   "skill": "天甲破山",
+   "rank": "S",
+   "afterSkill": "天焉相克",
+   "afterRank": "SS",
+   "target": "槍・弓・馬",
+   "rate": "50%",
+   "effectShort": "対象兵科を指揮した攻撃時のみ敵軍の総防御力を5%低下(模倣・重複不可)",
+   "afterTarget": "槍・弓・馬",
+   "afterRate": "70%",
+   "afterEffectShort": "全攻 30%上昇(部隊の総コストで効果が変化)"
+  },
+  {
+   "slot": "C",
+   "skill": "天焉破山",
+   "rank": "S",
+   "afterSkill": "天焉破山",
+   "afterRank": "S",
+   "target": "全",
+   "rate": "55%",
+   "effectShort": "攻撃戦闘時に敵軍の総防御力を10%低下(模倣・重複不可)",
+   "afterEffectShort": "攻撃戦闘時に敵軍の総防御力を10%低下(模倣・重複不可)"
+  },
+  {
+   "slot": "S1",
+   "skill": "虎賁統帥",
+   "rank": "SS",
+   "afterSkill": "虎賁統帥",
+   "afterRank": "SS",
+   "target": "全 撤退 覇道",
+   "rate": "100%",
+   "effectShort": "攻撃 1130%上昇+速度 200%上昇",
+   "afterEffectShort": "攻撃 1130%上昇+速度 200%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "星神闘覇",
+   "rank": "SS",
+   "afterSkill": "星神闘覇",
+   "afterRank": "SS",
+   "target": "全 飛翔15",
+   "rate": "100%",
+   "effectShort": "攻撃 740%上昇+速度 200%上昇",
+   "afterEffectShort": "攻撃 740%上昇+速度 200%上昇"
+  }
+ ],
+ "notes": [
+  "天パラレル(No.30000+元No.)。元カードNo.1318 と同じ武将の別バージョンで、カードは最初からスキルがTR6の状態で配られる(鍛錬表のTR6行の必要ポイントが「パラレル」なのはこのため)。",
+  "画像はスクリーンショット 2026-08-12 115551〜115617.png(元スクリーンショット/スクリーンショット_31318.png)から crop_card.py で切り抜いた。**このバッチはハートが暗く落ちており既定のTOL=20ではハート下端の12x3/9pxしか拾えず、切り抜きが12pxほど下にずれて指揮兵数の行が切れる。TOL=50にすると18x21/81pxの正しいハートを拾う**(No.1316等と同じ対処)。",
+  "カード画像から直接読んだのは 武将名/4隅バッジ(統率)/スキル名/攻撃・防御・兵法の初期値/コスト/指揮兵数/カードNo. で、いずれも元カードNo.1318 の登録値と一致した(槍A/弓A/馬SS/器A)。ixanary.com/cards/31318/ の card JSON とも cost/capacity/attack/defence/intelligence が一致(ixanary は yumi/kiba が入れ替わっているためバッジはカード画像を正とした)。",
+  "成長値はパラレルのカード画像にも ixanary.com/cards/31318/ にも出ない(ixanary は未入力で 0/0/0、ページにも「成長値が設定されていないので、成長しない」と出る)。既に入力済みの旧パラレル 31286/31290/31301/31303 が4枚とも元カードと同一の成長値であることを ixanary の card JSON で確認し、さらに ixagno.blog.fc2.com の元カード個別記事(blog-entry-11150)の成長値表とも一致したため、元カードの値(攻72/防48/兵法3.5)を引き継いだ。",
+  "trTable・synthesisTable はスキルに紐づく値なので元カードと共通。ixanary.com/skills/焔天滅刻/ の生HTMLで鍛錬表(LV1〜TR6)と合成テーブル(1次/2次/3次)を、ixagno.blog.fc2.com blog-entry-11150 の鍛錬表・初期テーブル/左記スキル移植後の表を、それぞれ突き合わせて既存の元カード登録と一致することを確認した。",
+  "ch は元カードと同じ32章。ixagno.blog.fc2.com「パラレル天【一覧】」(blog-entry-11077)がパラレルを元カードと同じ章の節に並べている(31298〜31309=31章 / 31286〜31297=30章。元カード1298〜1309・1286〜1297の当サイト登録章と一致)ため、同じ規則で32章とした。ixawiki には 31316〜31321 も 1316〜1321 もページが無い(編集フォームが返る)。",
+  "sourceCharacters逆引き(A-3-11)はパラレル分を追記していない。skills.html の描画は db が kyoku/ketsu/既定の3種しか解釈せず(3447行付近)、tools/register/wireup.py の DB_OF_DIR にも busho-parallel が入っていないため、今の配線では天パラレルを sourceCharacters に載せる決まりが無い。候補スキル全行について元カードNo.1318 が各 data/skill/*.json の sourceCharacters に載っていることは確認済みで、逆引き自体は成立している。パラレルも載せるかどうかは配線の変更を伴うので管理側の判断を仰ぐ。"
+ ],
+ "categoryLinks": [
+  {
+   "href": "skills-taitai.html",
+   "label": "撤退スキル一覧を見る"
+  }
+ ],
+ "reviewedOk": true,
+ "wikiOldestComment": null,
+ "wikiCommentCount": null
+}

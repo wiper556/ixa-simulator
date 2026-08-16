@@ -1,7 +1,7 @@
 {
  "name": "高荷恵",
  "no": "2610",
- "ch": "未確認",
+ "ch": "28章",
  "cost": 0,
  "troop": "剣豪特",
  "sub": "",
@@ -95,8 +95,8 @@
    "rank": "S",
    "afterSkill": "月詠ノ覇威",
    "afterRank": "SS",
-   "target": null,
-   "rate": null,
+   "target": "全",
+   "rate": "100%",
    "effectShort": "飛翔4+攻撃 220%上昇(攻撃時、卓越:追加確率45%で所属部隊の武将は飛翔Xの代わりに飛翔[X+7]を持つ・模倣不可・部隊内重複不可・二重卓越不可)",
    "afterTarget": "全",
    "afterRate": "100%",
@@ -133,6 +133,16 @@
   " + ixanaryスキルページ「慈愛ノ癒術」(LV1〜TR5全値+合成テーブル)。",
   "戦闘用ではなくカード所持効果のサポートカード(指揮兵数1・成長ほぼ無し)。",
   "初期スキルがSランクのためスキル個別ページの新規作成が必要(docsのTODOに記録済み)。",
-  "合成テーブルはixanaryスキルページ(1次/2次/3次)"
- ]
+  "合成テーブルはixanaryスキルページ(1次/2次/3次)",
+  "2026-08-16黄丸化検証(A-1〜A-5): rankGradesはカード画像4隅バッジを個別ズームで再確認(全C)、ixawiki.com(BushoCard/2610高荷恵)の基本ステータス表と完全一致(2ソース目)。基礎値550/550/650・成長1/1/3.5・コスト0・lv0Troops1(サポートカード)はixanary.com(cards/2610)生HTMLとixawikiの両方で一致確認。初期スキル慈愛ノ癒術はixanary.com(skills/慈愛ノ癒術)の生HTMLでLV10(20%短縮)〜TR5(75%短縮)全段を個別確認、trTable修正不要。synthesisTableのA/B/C/S1/S2はixanary.comとixawiki.comの合成テーブルの2ソースで完全一致を確認(A:乱世ノ歸人[A]→入来神舞[S]、B:傾国ノ艶姫[S]→摩利支天ノ法[SSS]、C:神農医方[S]→月詠ノ覇威[SS]、S1:破邪後輝[SS]→飛龍衝天[SS]、S2:開闢ノ逆鉾[SS・自己参照])。",
+  "【修正1】synthesisTable C枠(神農医方)のtarget/rateがnullだったが、data/skill/神農医方.json本体の登録値(target:全・baseRate:100)から転記して補完した。",
+  "【修正2】data/skill/神農医方.jsonのcategoryLinksが卓越のみだったが、効果に「飛翔4」を自身が持ち攻撃220%上昇+部隊内の武将へ飛翔+7付与という飛翔(攻撃)系の内容を含むため、skills-hishou-atk.htmlを追加した(9項目チェック実施)。",
+  "sourceCharacters逆引き確認(A-3-11): data/skill/慈愛ノ癒術.json(slot移植不可)・乱世ノ歸人.json(A)・傾国ノ艶姫.json(B)・神農医方.json(C)・破邪後輝.json(S1)・開闢ノ逆鉾.json(S2)の6ファイルすべてに既にNo.2610登録済みを確認(要修正なし)。A/B/C枠は各skill≠afterSkillのため2610は各skill側に直接列挙が正しく、afterSkill側(入来神舞/摩利支天ノ法/月詠ノ覇威)にはgrantedViaSkillsで元スキルが参照されている(2610の直接列挙なし、A-3-12準拠)ことを確認。categoryLinks(9項目判定)は乱世ノ歸人→部隊長模倣+卓越、傾国ノ艶姫/開闢ノ逆鉾→卓越(+開闢ノ逆鉾は兵士被害減少)、神農医方→卓越+飛翔(攻、今回追加)、破邪後輝→覇道が正しく設定済み(該当以外の無尽/撤退/不屈/兵站/人数依存/コスト減少は該当なし)。KP_LINKED_SKILLSに慈愛ノ癒術・乱世ノ歸人・傾国ノ艶姫・神農医方・破邪後輝・開闢ノ逆鉾の6件全て登録済みを確認。skillDetailは効果文が①のみの単文で模倣不可の記載自体が無い(独立行違反の対象外)。撤退/覇道/不屈/兵站/人数依存キーワードは初期スキル慈愛ノ癒術自体には該当なし(A-2)。章はixanary.com/ixawiki.comのカードページに記載が無く未確認のまま(るろうに剣心コラボカードのため通常の章番号を持たない可能性が高い)。以上、C枠の欠損値と神農医方のcategoryLinksを修正のうえA-1〜A-4に未解決点なしのためreviewedOk:trueとする。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "reviewedOk": true,
+ "wikiOldestComment": "2024-11-13",
+ "wikiCommentCount": 13,
+ "chGuess": "28章",
+ "chSource": "wikiOldestComment"
 }

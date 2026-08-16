@@ -1,0 +1,97 @@
+{
+ "name": "戦陣 無双",
+ "rank": "A",
+ "baseRate": 50,
+ "target": "全",
+ "effectSummary": "A/LV10 確率 50% 攻撃 67%上昇/防御 67%上昇/対象:全",
+ "sourceCharacters": [
+  {
+   "name": "蒲生郷成",
+   "no": "2414",
+   "slot": "C",
+   "db": "kyoku"
+  },
+  {
+   "name": "斎藤朝信（3）",
+   "no": "2437",
+   "slot": "B",
+   "db": "kyoku"
+  },
+  {
+   "name": "井伊直政（3）",
+   "no": "2440",
+   "slot": "C",
+   "db": "kyoku"
+  },
+  {
+   "name": "保科正之",
+   "no": "2769",
+   "slot": "S2",
+   "db": "kyoku",
+   "note": [
+    "保科正之(2769)のsynthesisTable S2枠(2026-08-16)"
+   ]
+  },
+  {
+   "name": "円信院殿",
+   "no": "2771",
+   "slot": "S2",
+   "db": "kyoku",
+   "note": [
+    "円信院殿(2771)のsynthesisTable S2枠(2026-08-16)"
+   ]
+  },
+  {
+   "name": "細川忠利",
+   "no": "2776",
+   "slot": "S2",
+   "db": "kyoku",
+   "note": [
+    "細川忠利(2776)のsynthesisTable S2枠(2026-08-16)"
+   ]
+  },
+  {
+   "name": "山上宗二",
+   "no": "2779",
+   "slot": "S2",
+   "db": "kyoku",
+   "note": [
+    "山上宗二(2779)のsynthesisTable S2枠(2026-08-16)"
+   ]
+  },
+  {
+   "name": "小堀遠州",
+   "no": "2780",
+   "slot": "S2",
+   "db": "kyoku",
+   "note": [
+    "小堀遠州(2780)のsynthesisTable S2枠(2026-08-16)"
+   ]
+  },
+  {
+   "name": "綾御前（2）",
+   "no": "2796",
+   "slot": "B",
+   "db": "kyoku",
+   "note": [
+    "綾御前(2796)のsynthesisTable B枠(2026-08-16)"
+   ]
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "無双英傑",
+  "rank": "SS"
+ },
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 50% / 攻撃 67%上昇+防御 67%上昇"
+  }
+ ],
+ "notes": [
+  "2026-08-16作成。A-3-9の例外ルール(移植後合成候補afterSkillが既にskills.htmlページを持つ無双英傑[SS]である元スキル)によりAランクだがページ作成対象。",
+  "既存のsourceCharacters記載(蒲生郷成2414・斎藤朝信（3）2437・井伊直政（3）2440の各synthesisTable、いずれも担当範囲内)から数値(確率50%/攻撃67%/防御67%/対象全)を転記。categoryLinksは9項目いずれも該当なし。",
+  "data/skill/無双英傑.jsonのgrantedViaSkillsに本スキルを追記した。No.2796・2780・2779・2776・2771・2769も戦陣無双を持つが担当範囲外のため未確認・未修正のまま申し送る。"
+ ]
+}

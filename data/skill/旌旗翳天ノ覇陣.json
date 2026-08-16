@@ -3,7 +3,7 @@
  "rank": "SS",
  "baseRate": 54,
  "target": "全 兵站",
- "effectSummary": "SS/LV10 確率 54% 防御 90.11%上昇/対象:全　兵站\n①防御 90.11%上昇する(部隊の総コストで効果が変化・TR1〜TR5は未確認)",
+ "effectSummary": "SS/LV10 確率 54% 防御 90.11%上昇/対象:全　兵站\n①防御 90.11%上昇する(部隊の総コストで効果が変化)",
  "categoryLinks": [
   {
    "href": "skills-heitan.html",
@@ -12,12 +12,12 @@
  ],
  "sourceCharacters": [
   {
-   "name": "真田幸村【覇】",
+   "name": "真田幸村（2）【覇】",
    "no": "1227",
    "slot": "S1"
   },
   {
-   "name": "本願寺顕如（2）",
+   "name": "本願寺顕如（3）",
    "no": "1246",
    "slot": "C"
   },
@@ -27,9 +27,18 @@
    "slot": "C"
   },
   {
-   "name": "鍋島直茂",
+   "name": "鍋島直茂（3）",
    "no": "1283",
    "slot": "B"
+  },
+  {
+   "name": "奥村永福（2）",
+   "no": "2485",
+   "slot": "C",
+   "db": "kyoku",
+   "note": [
+    "奥村永福（2）(2485)のsynthesisTable C枠(2026-08-16)"
+   ]
   },
   {
    "name": "斎藤一",
@@ -59,6 +68,7 @@
   }
  ],
  "notes": [
-  "本願寺顕如(2)(No.1246)synthesisTable候補C・45do.info生HTML照合済み(単一ソースのみ、TR1〜TR5未確認)"
+  "本願寺顕如(2)(No.1246)synthesisTable候補C・45do.info生HTML照合済み(単一ソースのみ、TR1〜TR5未確認)",
+  "2026-08-16(No.1246黄丸化検証): 「TR1〜TR5未確認」を追加ソースで確認。ixanary.com(skills/旌旗翳天ノ覇陣)の生HTMLにTR1〜TR6の記載自体が無くLV10のみ(Null%表示は部隊総コスト依存のため固定値が無いことによる)。ixagno.blog.fc2.com(blog-entry-9570「総コスト依存スキル(防)性能比較」)でも鍛錬段階ではなく部隊総コスト(C26.0〜C33.0)ごとの数値一覧のみでTR言及なし。2ソースともTR進行が存在しないことを示しており、trTable1行(LV10のみ)で確定。effectSummaryの「TR1〜TR5は未確認」表記を削除。"
  ]
 }

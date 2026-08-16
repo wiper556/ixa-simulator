@@ -1,6 +1,7 @@
 {
  "name": "島津家久",
  "no": "1261",
+ "reviewedOk": true,
  "ch": "27章",
  "cost": 4,
  "troop": "槍馬砲器防",
@@ -94,6 +95,10 @@
   }
  ],
  "notes": [
-  "45do.info(ordinary/0202)生HTML + ixagno.blog.fc2.com(blog-entry-9516、検索クエリ「No.1261」で発見)生HTML の2ソースで完全一致を確認(2026-08-02再検証)"
- ]
+  "45do.info(ordinary/0202)生HTML + ixagno.blog.fc2.com(blog-entry-9516、検索クエリ「No.1261」で発見)生HTML の2ソースで完全一致を確認(2026-08-02再検証)",
+  "黄丸化検証(2026-08-16): カード画像no1261_full.pngの4隅バッジ(槍S/馬A/弓A/器S)を確認し一致。synthesisTable A/B枠(神将火剣の自己参照→万里嵐壁)はixanary.com(skills/神将火剣)+ixawiki.com(BushoCard/1261島津家久)の2ソースで確認、直前に移植不可から訂正された内容が両ソースと一致することを再確認した。C/S1/S2も含め全枠・afterSkillとも完全一致。八幡神ノ威光・万里嵐壁・天磐船のdata/skill側sourceCharactersに1261が正しいslotで記載済みを確認(逆引き済み)。TR段はLV10のみ(TRなし)。"
+ ],
+ "wikiOldestComment": "2024-02-11",
+ "wikiCommentCount": 40,
+ "chGuess": "27章"
 }

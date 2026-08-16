@@ -126,6 +126,14 @@
   }
  ],
  "notes": [
-  "ユーザーのゲーム内確認により訂正済み(2026-07-29)。"
- ]
+  "ユーザーのゲーム内確認により訂正済み(2026-07-29)。",
+  "カード画像照合済み(2026-08-16再確認): 槍A/弓A/馬XX(虹色ダブル星バッジ)/器A、攻1250/防1250/兵法680.0/指揮5110/コスト5も画像と一致。ixanary.com(/cards/1290/)の構造化データもyari=A/yumiフィールド=XX/kiba=A/heiki=A(yumi/kibaフィールドの実体が入れ替わる既知の問題を踏まえるとuma=XXで画像と一致)。",
+  "ixanary.com(/skills/虎王烈迅/)生HTML照合(2026-08-16): LV1・LV10・TR1〜TR6の全段階が実在し、攻防+11/+12/+13/+14/+16/+18・速度+1/+1/+1/+1/+2/+3・TR3以降の帰還速度3/4/5/8倍が現在のtrTableと完全一致。",
+  "synthesisTable: ixanary.com(/skills/虎王烈迅/、生HTML)とixawiki.com(index.php?BushoCard/1290武田信玄、生HTML、EUC-JP)の2ソースでA/B/C/S1/S2の1次候補を突き合わせ、A=刹那無影[SS]、B=神羅聖域[SS]、C=千里必勝ノ神算[SS]、S1=天地超克[SSS]、S2=神羅聖域[SS](B・S2が同一スキル、全枠自己参照)で完全一致を確認。",
+  "data/skill/刹那無影.json・神羅聖域.json・千里必勝ノ神算.json・天地超克.jsonのsourceCharactersに1290が正しい枠(B・S2はまとめて記載)で登録済みであることを確認(A-3-11)。"
+ ],
+ "reviewedOk": true,
+ "wikiOldestComment": "2025-08-10",
+ "wikiCommentCount": 11,
+ "chGuess": "30章"
 }

@@ -1,0 +1,49 @@
+{
+ "name": "騎迅強襲",
+ "rank": "B",
+ "baseRate": 30,
+ "target": "槍・馬・器",
+ "effectSummary": "B/LV10 確率 30%/100% 攻撃 35%上昇(確率30%)+速度 25%上昇(確率100%)/対象:槍・馬・器",
+ "sourceCharacters": [
+  {
+   "name": "舞兵庫",
+   "no": "2409",
+   "slot": "C",
+   "db": "kyoku"
+  },
+  {
+   "name": "松平清康（1）",
+   "no": "2745",
+   "slot": "C",
+   "db": "kyoku",
+   "note": [
+    "松平清康(2745)のsynthesisTable C枠(2026-08-16)"
+   ]
+  },
+  {
+   "name": "六角定頼（2）",
+   "no": "7018",
+   "slot": "A",
+   "db": "kyoku",
+   "note": [
+    "六角定頼(7018)のsynthesisTable A枠(2026-08-16)"
+   ]
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "遁世影武者",
+  "rank": "B"
+ },
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・馬・器　確率 30%/100% / 攻撃 35%上昇(確率30%)+速度 25%上昇(確率100%)"
+  }
+ ],
+ "notes": [
+  "2026-08-16作成。A-3-9の例外ルール(移植後合成候補afterSkillが既にskills.htmlページを持つ遁世影武者[B]である元スキル)によりB(S未満)だがページ作成対象。",
+  "ixanary.com/skills/騎迅強襲 の生HTML(LV10行: 攻撃35%上昇 確率+30%、速度25%上昇 確率+100%)で確認。攻撃と速度で発動確率が異なる二重確率スキルのため、data/skill/四神天道.jsonの表記規約に倣った。categoryLinksは9項目いずれも該当なし。",
+  "No.2409舞兵庫(C枠、担当範囲内)の黄丸化検証(2026-08-16)で、synthesisTableのrateが攻撃側の確率(30%)のみで速度側の確率(100%)が欠落していたため、この新規ページ作成と合わせて武将側データも修正した。data/skill/遁世影武者.jsonのgrantedViaSkillsに本スキルを追記した。"
+ ]
+}

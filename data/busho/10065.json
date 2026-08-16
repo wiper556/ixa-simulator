@@ -2,7 +2,9 @@
  "name": "世良田二郎三郎",
  "no": "10065",
  "furigana": "せらだじろうさぶろう",
- "illustrator": "SQUARE ENIX",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no10065_full.png",
+ "imageChar": "assets/img/characters/no10065_char.png",
  "atkBase": 1270,
  "atkGrowth": 72,
  "defBase": 1050,
@@ -17,7 +19,7 @@
   "ki": "S"
  },
  "initialSkill": "護国王器",
- "skillDetail": "S/LV10 確率：+100% / 対象 全 攻撃：620%上昇 / 8部隊以下の攻撃戦闘時このスキルを所持する武将の全スキルの 卓越 追加確率が350%上昇部隊内武将の全スキルの卓越追加確率が30%上昇(模倣不可・特殊効果は自部隊内では重複不可)",
+ "skillDetail": "S/LV10 確率 100% 攻撃 620%上昇/対象:全\n模倣不可\n①攻撃 620%上昇する\n②8部隊以下の攻撃戦闘時このスキルを持つ武将の全スキルの卓越追加確率が350%上昇する\n③部隊内武将の全スキルの卓越追加確率が30%上昇する(特殊効果は自部隊内では重複不可)",
  "ch": "30章",
  "cost": 5,
  "troop": "全攻",
@@ -124,5 +126,24 @@
    "href": "skills-takuetsu.html",
    "label": "卓越スキル一覧を見る"
   }
- ]
+ ],
+ "notes": [
+  "illustrator欄が「SQUARE ENIX」という誤った値になっていたため、ixanary.com/cards/10065/(curl生HTML)で確認した「直良有祐」に修正した(カード画像右下の Illust:直良有祐 とも一致)。",
+  "skillDetail/data/skill/護国王器.jsonのeffectSummaryがixanaryの生テキストそのままの書式だったため、サイト標準の「ヘッダー1行+①②③改行+読点なし」書式に整形した。",
+  "2026-08-16 黄丸化検証(B-00: スキル表記LV1のカード)。imageFull/imageCharを設定した。カード画像(no10065_full.png)から直接読み取ったのはB-00が許す6項目のみ — 武将名「世良田二郎三郎」/統率4隅バッジ 槍A・馬A・弓S・器S(ズームして4隅個別に確認)/スキル名「護国王器」/初期値 攻1270・防1050・兵法660.0/覇道の赤字表記なし/カードNo.10065。",
+  "【rankGrades】ixanaryのcard JSON(yari:A,yumi:A,kiba:S,heiki:S)と既存データ(槍A/弓S/馬A/器S)が食い違っていたが、今回カード画像の4隅バッジを拡大して直接読み取った結果 槍A/馬A/弓S/器S で既存データと一致し、ixawiki.com(BushoCard/10065世良田二郎三郎)の統率力表とも一致した。ixanary側のyumi/kiba入れ替わり(既知問題)と確定し既存値を維持。A-1-2どおりカード画像を最上位の根拠とした。",
+  "【troop】カード上のスキル護国王器は「攻撃:200%上昇」(LV1)の攻撃スキルで、ixanary・ixawiki・ixagnoとも「攻：護国王器」。troop「全攻」は正しいため変更なし(この欄がgeneralSkillAxis経由で攻撃/防御シミュレーターの出し分けに使われる)。",
+  "【LV1カードのため画像から取れない項目の外部確認】成長値 攻+72/防+40/兵法+3.0 = ixanary.com/cards/10065/ と ixagno.blog.fc2.com/blog-entry-10643.html の2ソース一致。lv0Troops 5100 = ixanaryの指揮★0-0(5100) と ixawiki.comの「指揮兵数 5100」の2ソース一致。カード表面の「指揮兵数 0/5700」は限界突破後の値なのでlv0には使わない(B-01)。cost 5 = ixanary+ixawiki(ixawikiは5.0表記)。ch 30章 = ixagno「【30章】(2025年10月追加)」。",
+  "【スキル効果量】カードはLV1(確率+100%/攻撃200%上昇/卓越追加確率+110%・部隊内+10%)。LV10の 確率100%/攻撃620%上昇/卓越+350%・部隊内+30% は ixanary(skills/護国王器 と cards/10065 の両方)・ixawiki カードページ・ixagno の3ソースで一致。TR1〜TR5(攻撃710/870/1100/1380/1730%)も3ソース一致。",
+  "【情報源が割れた点=解決済み】TR6の攻撃効果が ixanary=1900%、ixagno=1900% に対し ixawiki のみ1730%(TR5と同値)だった。ixagno掲載のパラレル版カードNo.40065の実カード画像に「護国王器TR6 確率:+100% 攻撃:1900%上昇 卓越追加確率500%上昇/部隊内50%上昇」と写っているのを確認したため1900%で確定し既存値を維持。ixawikiのTR6行は攻撃値だけTR5のまま残った誤記と判断。",
+  "【synthesisTable】ixawikiの合成候補テーブルは未記入テンプレートのままだったため、ixanary.com/skills/護国王器/の生HTML(1次/2次)と ixagno blog-entry-10643(初期テーブル/左記スキル移植後)の2ソースで確認した。A=千里必勝ノ神算[SS] / B=千里必勝ノ神算[SS] / C=幻像鏡花[SSS] / S1=幻像鏡花[SSS] / S2=伏雷蒼樹[SSS]→移植後は幻像鏡花[SSS]、で既存登録と完全一致。A・BとC・S1が同じスキルになるのは出典側の表そのままであり誤登録ではない(2ソースとも同じ)。",
+  "【sourceCharacters逆引き(A-3-11)】千里必勝ノ神算(slot A・B)/幻像鏡花(C・S1)/伏雷蒼樹(S2)/護国王器(自身、移植不可)の各data/skill/*.jsonに10065が入っていることを確認。一覧ページ側も skills-hadou.html(千里必勝ノ神算・伏雷蒼樹)・skills-takuetsu.html(護国王器・伏雷蒼樹・幻像鏡花)・skills-leadermimic.html(幻像鏡花)に10065の行があることを確認済み。",
+  "【categoryLinks 9項目判定】卓越のみ該当(skills-takuetsu.html、登録済み)。「8部隊以下の攻撃戦闘時」は発動条件であって人数依存(係数×人数)ではないため skills-count-atk.html は非該当。覇道はカード上に赤字「覇道」表記が無く保護効果も持たないため非該当(合成候補の千里必勝ノ神算・伏雷蒼樹が覇道なのはそれらのスキル側の属性)。無尽/撤退/飛翔/不屈/兵站/コスト減少もいずれも非該当。",
+  "【武将名】同名の別カードはNo.40065(パラレル版)のみで、ixawiki.comの武将カード一覧にも連番表記は無いため無印「世良田二郎三郎」のまま。",
+  "【模倣可否】カード本文・3ソースとも「模倣不可」と明記されており、skillDetailは①の前に独立行で「模倣不可」を置く既存の書式のままで正しい。"
+ ],
+ "reviewedOk": true,
+ "wikiOldestComment": "2025-10-04",
+ "wikiCommentCount": 13,
+ "chGuess": "30章"
 }

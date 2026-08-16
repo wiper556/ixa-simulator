@@ -1,0 +1,157 @@
+{
+ "name": "緋村剣心【覇】",
+ "no": "10052",
+ "ch": "28章",
+ "cost": 5,
+ "troop": "全攻",
+ "sub": "",
+ "effect": "部隊内武将の攻撃力を2.5倍にし攻撃力減少スキルから保護+卓越:追加確率40%で飛翔10(部隊長時限定)",
+ "furigana": "ひむらけんしん",
+ "illustrator": "NW/S,RKKD 直良有祐",
+ "imageFull": "assets/img/characters/no10052_full.png",
+ "imageChar": "assets/img/characters/no10052_char.png",
+ "atkBase": 2500,
+ "atkGrowth": 170,
+ "defBase": 2100,
+ "defGrowth": 150,
+ "tacticsBase": 800,
+ "tacticsGrowth": 3.5,
+ "lv0Troops": 4940,
+ "rankGrades": {
+  "yari": "SS",
+  "yumi": "S",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "飛天ノ閃剣",
+ "skillDetail": "SSS/LV10 確率 100% 攻撃 700%上昇/対象:全\n模倣不可\n①攻撃 700%上昇する\n②部隊内武将攻撃力を2.5倍にしそれらを武将攻撃力減少スキルから保護する\n③卓越:追加確率40%で飛翔10を得る(攻撃戦闘時発動・二重卓越不可・全特殊効果は部隊長時限定)",
+ "categoryLinks": [
+  {
+   "href": "skills-takuetsu.html",
+   "label": "卓越スキル一覧を見る"
+  },
+  {
+   "href": "skills-hishou-atk.html",
+   "label": "飛翔スキル(攻撃)一覧を見る"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 攻撃 700%上昇+部隊内武将攻撃力2.5倍+それらを武将攻撃力減少スキルから保護+卓越:追加確率40%で飛翔10(攻撃戦闘時発動・模倣不可・二重卓越不可・全特殊効果は部隊長時限定)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": "全　確率 100% / 攻撃 850%上昇+部隊内武将攻撃力2.5倍+卓越:追加確率40%で飛翔11"
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": "全　確率 100% / 攻撃 850%上昇+部隊内武将攻撃力2.6倍+卓越:追加確率50%で飛翔13"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": "全　確率 100% / 攻撃 1090%上昇+部隊内武将攻撃力2.7倍+卓越:追加確率60%で飛翔15"
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": "全　確率 100% / 攻撃 1450%上昇+部隊内武将攻撃力2.8倍+卓越:追加確率80%で飛翔17"
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": "全　確率 100% / 攻撃 1450%上昇+部隊内武将攻撃力3倍+卓越:追加確率120%で飛翔20"
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": null
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "天翔雷神",
+   "rank": "S",
+   "afterSkill": "十束ノ神域",
+   "afterRank": "SS",
+   "target": "弓・馬・焙 飛翔10",
+   "rate": "50%",
+   "effectShort": "攻撃 45%上昇+飛翔値合計×8%加算",
+   "afterTarget": "全 覇道",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 320%上昇+速度 70%上昇+覇道を持つため所属部隊の武将のスキルを無効化・発動率低下から保護"
+  },
+  {
+   "slot": "B",
+   "skill": "魔弾奏者",
+   "rank": "S",
+   "afterSkill": "星神闘覇",
+   "afterRank": "SS",
+   "target": "槍・弓・砲・器 飛翔10",
+   "rate": "64%",
+   "effectShort": "攻撃 50%上昇(飛翔値合計×9%加算)",
+   "afterTarget": "全 飛翔15",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 740%上昇+速度 200%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "飛龍衝天",
+   "rank": "SS",
+   "afterSkill": "飛龍衝天",
+   "afterRank": "SS",
+   "target": "全 飛翔15",
+   "rate": "45%",
+   "effectShort": "攻撃 200%上昇+(7.5×防御参加武将数)%を攻撃効果に加算(模倣不可)",
+   "afterTarget": "全 飛翔15",
+   "afterRate": "45%",
+   "afterEffectShort": "攻撃 200%上昇+(7.5×防御参加武将数)%を攻撃効果に加算(模倣不可)"
+  },
+  {
+   "slot": "S1",
+   "skill": "万物神勇",
+   "rank": "SSS",
+   "afterSkill": "万物神勇",
+   "afterRank": "SSS",
+   "target": "全 撤退",
+   "rate": "43%",
+   "effectShort": "攻撃 (9.2×防御参加武将数)%上昇+撤退(陣での防御戦闘に参加しない)",
+   "afterTarget": "全 撤退",
+   "afterRate": "43%",
+   "afterEffectShort": "攻撃 (9.2×防御参加武将数)%上昇+撤退(陣での防御戦闘に参加しない)"
+  },
+  {
+   "slot": "S2",
+   "skill": "十束ノ神域",
+   "rank": "SS",
+   "afterSkill": "天聖宝冠",
+   "afterRank": "SSS",
+   "target": "全 覇道",
+   "rate": "100%",
+   "effectShort": "攻撃 320%上昇+速度 70%上昇+覇道を持つため所属部隊の武将のスキルを無効化・発動率低下から保護",
+   "afterTarget": "全",
+   "afterRate": "45%",
+   "afterEffectShort": "攻撃 100%上昇((5.0×防御参加武将数)%を攻撃効果に加算・模倣不可)"
+  }
+ ],
+ "notes": [
+  "るろうに剣心コラボの天(覇)。2024年11月の「るろ剣コラボ包み【天】」で販売、2025年11月に第二弾で再販(ixagno.blog.fc2.com・ixawikiの紹介文)。カード画像はスキル欄が「LV1」表記のためB-00のLV1形式で、画像から採ったのは武将名・統率(4隅バッジ拡大)・スキル名・攻撃/防御/兵法の初期値・覇の有無・カードNo.の6項目のみ。",
+  "統率は槍SS/馬A/弓S/器S(カード画像バッジ拡大)。ixawiki.com(BushoCard/10052緋村剣心)と一致。",
+  "カード表示の指揮兵数0/7740は「天限突破」状態の値。覇はランクアップ+200/回なので4940+6×200+800+800=7740となり、ixanary.com(★0-0=4940)・ixawiki.com(4940)と整合する。",
+  "コスト5・成長値+170/+150/+3.5・絵師はixanary.com(cards/10052)とixawiki.comが一致。初期値2500/2100/800はカード実物を含め3ソース一致。",
+  "スキルLV10〜TR5はixanary.com(skills/飛天ノ閃剣)とixagno.blog.fc2.com(blog-entry-10045)が全段一致、ixawiki.comもLV10とTR5が一致。TR6は情報源に無いためnull。",
+  "9項目チェック: 卓越と飛翔(攻撃)が該当。skills-takuetsu.html / skills-hishou-atk.html をcategoryLinksに入れたが、各一覧ページ(生成物)側の配列への追記は担当範囲外のため未実施。",
+  "合成テーブルはixanary.com(skills/飛天ノ閃剣)とixagno.blog.fc2.com(blog-entry-10045)の2ソースでA〜S2の1次/2次が一致。ただしB枠の移植後「星神闘覇」のランクだけixanaryがSSS、ixagnoがSSで割れており、このサイトの既存登録(data/skill/星神闘覇.json)と同じSSを採った。ixawikiの合成候補表は空テンプレート。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "reviewedOk": true,
+ "wikiOldestComment": "2024-11-13",
+ "wikiCommentCount": 53,
+ "chGuess": "28章",
+ "chSource": "wikiOldestComment"
+}

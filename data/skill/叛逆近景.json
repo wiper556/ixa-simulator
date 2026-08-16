@@ -21,17 +21,39 @@
    "no": "2857",
    "slot": "C",
    "db": "kyoku"
+  },
+  {
+   "name": "バッファローマン",
+   "no": "2632",
+   "slot": "S1",
+   "db": "kyoku"
+  },
+  {
+   "name": "志々雄真実【覇】",
+   "no": "10053",
+   "slot": "B"
   }
  ],
+ "ownHiddenCandidate": {
+  "skill": "開闢ノ逆鉾",
+  "rank": "SS"
+ },
  "notes": [
   "2026-08-15: 渡辺了(2857)のsynthesisTable C枠に「卓越」を含む効果文を登録したためS-01によりページ新規作成。",
-  "渡辺了(2857)のC枠はafterSkill(移植後)が出典記事に無いため未設定。ownHiddenCandidateもそのため未設定。"
+  "渡辺了(2857)のC枠はafterSkill(移植後)が出典記事に無いため未設定。ownHiddenCandidateもそのため未設定。",
+  "【2026-08-16追記】ixanary.comが2857のカード・スキルページを新たに掲載したため生HTML(skills/天衝破軍槍の合成テーブル)で確認したところ、C枠の移植後(2次候補)は開闢ノ逆鉾[SS]と判明。ownHiddenCandidateを設定した。"
  ],
  "trTable": [
   {
    "level": "LV10",
    "points": "-",
    "effect": "全　確率 100% / 攻撃 395%上昇(卓越追加確率1%で兵士被害20%減少)"
+  }
+ ],
+ "grantedViaSkills": [
+  {
+   "skill": "Ｈ・ミキサー",
+   "rank": "S"
   }
  ]
 }

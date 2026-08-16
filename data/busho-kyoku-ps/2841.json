@@ -2,7 +2,7 @@
  "name": "多羅尾光俊",
  "no": "2841",
  "reviewedOk": true,
- "ch": "未確認",
+ "ch": "29章",
  "cost": 4.0,
  "troop": "部隊長",
  "sub": "",
@@ -124,12 +124,17 @@
   "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。ixawikiのカード個別ページ(BushoCard/2841多羅尾光俊)は合成テーブルが未記入(テンプレ空欄)だったため、ixagno.blog.fc2.com(blog-entry-10263、多羅尾光俊【極】(No.2841)の能力と考察)を2ソース目として突き合わせ、A/B/C/S1/S2全枠(1次・2次とも)で完全一致を確認済み(2026-08-15黄丸化検証)。",
   "2026-08-15黄丸化検証で発見・修正: trTable/data/skill/影国ノ加護.jsonに「TR4以降は情報源に無い」と書かれていたが、ixanaryスキルページに実際はTR4(飛翔X→X+10)・TR5(飛翔X→X+12)のデータが存在したため追記し誤った注記を削除した。skills.html/同ファイルのsourceCharactersにS1枠も漏れていたため追加。",
   "2026-08-15黄丸化検証で発見・修正: 候補スキル「煙霞迷霧」「飛幻忍術」はcategoryLinksが「9項目の判定が要るため未処理」のまま放置されていたため、9項目チェックを実施しcategoryLinks・skills-hishou-atk.html・skills-hishou-def.html(煙霞迷霧のみ攻防均等のため両方)・skills-cost.html(飛幻忍術のみコスト除外効果)に追加した(各ページのバージョン表示も更新)。",
-  "章は情報源に記載が無いため未確認(ixanary/ixawikiとも記載なし)。"
+  "章は情報源に記載が無いため未確認(ixanary/ixawikiとも記載なし)。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
  ],
  "categoryLinks": [
   {
    "href": "skills-leadermimic.html",
    "label": "部隊長模倣スキル一覧を見る"
   }
- ]
+ ],
+ "wikiOldestComment": "2025-03-04",
+ "wikiCommentCount": 17,
+ "chGuess": "29章",
+ "chSource": "wikiOldestComment"
 }

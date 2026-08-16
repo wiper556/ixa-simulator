@@ -1,6 +1,7 @@
 {
  "name": "佐竹義宣（2）",
  "no": "1267",
+ "reviewedOk": true,
  "ch": "28章",
  "cost": 4,
  "troop": "槍弓砲器防",
@@ -121,6 +122,10 @@
   }
  ],
  "notes": [
-  "45do.info(生HTML skiladd_wrap)+ameameixa.com(28章天武将スキル一覧 https://ameameixa.com/28sho-ten-sukil)の2ソースでA〜S2のスキル名一致を確認(ランクは45do.info基準)"
- ]
+  "45do.info(生HTML skiladd_wrap)+ameameixa.com(28章天武将スキル一覧 https://ameameixa.com/28sho-ten-sukil)の2ソースでA〜S2のスキル名一致を確認(ランクは45do.info基準)",
+  "黄丸化検証(2026-08-16): カード画像no1267_full.pngの4隅バッジ(槍S/馬A/弓S/器A)を確認し一致。スキル名「義響鉄心」はixanary.com(cards/1267)のskills/リンクで誤読無し確認。TR1〜TR5(220/250/290/330/380%)はixanary.com(skills/義響鉄心)の鍛錬表と全行完全一致(TR6無し)。synthesisTableはixanary.com+ixawiki.com(BushoCard/1267佐竹義宣)の2ソースでA/B/C/S1/S2全枠・afterSkillとも完全一致。義響鉄心(A・B自己参照)・万里嵐壁・神羅聖域・黄泉醜女ノ屍兵のdata/skill側sourceCharactersに1267が正しいslotで記載済みを確認(逆引き済み)。"
+ ],
+ "wikiOldestComment": "2024-08-11",
+ "wikiCommentCount": 11,
+ "chGuess": "28章"
 }

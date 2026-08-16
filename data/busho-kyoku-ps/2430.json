@@ -1,7 +1,7 @@
 {
  "name": "弥助",
  "no": "2430",
- "ch": "未確認",
+ "ch": "20章",
  "cost": 0.5,
  "troop": "特",
  "sub": "",
@@ -114,11 +114,14 @@
    "slot": "S2",
    "skill": "天正筆才",
    "rank": "A",
-   "afterSkill": null,
-   "afterRank": null,
-   "target": null,
-   "rate": null,
-   "effectShort": "織田信長の所持スキル発動率を2倍にする(同部隊セット時のみ有効・模倣不可)"
+   "afterSkill": "遁世影武者",
+   "afterRank": "B",
+   "target": "織田信長",
+   "rate": "100%",
+   "effectShort": "織田信長の所持スキル発動率を2倍にする(同部隊セット時のみ有効・模倣不可)",
+   "afterTarget": "部隊長",
+   "afterRate": "50%",
+   "afterEffectShort": "部隊長の初期スキルを模倣する(戦闘スキルのみ)"
   }
  ],
  "notes": [
@@ -129,6 +132,16 @@
   " + ixawiki BushoCard/2430(統率 槍A/弓B/馬B/器Aの2次確認・合成テーブル)。",
   "攻撃シミュレーターの「弥助所持」チェックボックス(織田信長の指揮兵士数+240〜960)の元になっているカード。",
   "統率はカード画像+ixawikiの2ソース一致。スキルはA(鍛錬情報なし)のためTR1以降のeffectはnull。",
-  "合成テーブルはixawiki(1次候補+2次候補)。S2の2次候補は記載なし"
- ]
+  "合成テーブルはixawiki(1次候補+2次候補)。S2の2次候補は記載なし",
+  "2026-08-16黄丸化検証: rankGrades(A/B/B/A)はno2430_full.pngの4隅バッジを個別ズームして再確認し一致。カードLV1表示の「×10%が加算」はLV1固有値でありLV10は「×40%」であることをixanary生HTML(cards/2430)で確認し、skillDetailの40%表記が正しいことを確認した(B-00の混同罠に注意)。基礎値・成長値もixanary生HTMLで一致確認。",
+  "S2枠(天正筆才)のafterSkillが未確認(null)だった問題を解消。天正筆才自身の一般ページ(ixanary/skills/天正筆才)は別カード向けの汎用テーブルを示しておりミスリードだったため、必ず弥助自身の初期スキル漆黒ノ牛鬼のixanary生HTML(cards/2430、合成テーブル2次行)を確認し、S2列のafterSkillが遁世影武者[B]であることを確認した(A-3-0の「初期スキルのページを見る」原則を実務で再確認)。ixawiki.com(BushoCard/2430弥助)はS2列の2次候補が空欄で確証を追加できなかったが、ixagno.blog.fc2.com(blog-entry-7359、弥助専用記事)がS2候補の移植後を「【遁世影武者】？」(執筆者自身未確証の注記付きだが記載一致)としており、ixanary+ixagnoの2ソースで遁世影武者を採用した。target:織田信長,rate:100%はixanary生HTML(skills/天正筆才)で確認。",
+  "A-3-9の例外ルールによりdata/skill/天正筆才.jsonを新規作成し、遁世影武者.jsonのgrantedViaSkillsに追記した。A枠(鬼滅刺)・B枠(遁世影武者)・C枠(風狂幻術)・S1枠(宿木)はいずれも既にdata/skill/鬼滅刺.json・遁世影武者.json・風狂幻術.json・宿木.jsonのsourceCharactersに弥助(2430)が正しいslotで登録済みであることを確認した(A-3-11)。",
+  "章はixanary.com/ixawiki.comいずれのカードページにも記載が無く未確認。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "reviewedOk": true,
+ "wikiOldestComment": "2020-09-01",
+ "wikiCommentCount": 73,
+ "chGuess": "20章",
+ "chSource": "wikiOldestComment"
 }

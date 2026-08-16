@@ -1,0 +1,143 @@
+{
+ "name": "ウォーズマン",
+ "no": "2634",
+ "ch": "30章",
+ "cost": 3,
+ "troop": "砲器防",
+ "sub": "",
+ "effect": "所領防御陣形の第肆列目に配置時、防御効果が6倍(模倣不可)",
+ "furigana": "うぉーずまん",
+ "illustrator": "ゆでたまご／集英社・キン肉マン製作委員会",
+ "imageFull": "assets/img/characters/no2634_full.png",
+ "imageChar": "assets/img/characters/no2634_char.png",
+ "atkBase": 1070,
+ "atkGrowth": 46,
+ "defBase": 1220,
+ "defGrowth": 64,
+ "tacticsBase": 550,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3560,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "Ｓ・ドライバー",
+ "skillDetail": "S/LV10 確率 10% 防御 200%上昇/対象:砲器\n模倣不可\n①防御 200%上昇する\n②所領防御陣形の第肆列目に配置時防御効果が6倍になる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "砲・器　確率 10% / 防御 200%上昇(所領防御陣形の第肆列目に配置時は防御効果6倍・模倣不可)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": null
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": null
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": null
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": null
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": null
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": null
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "筋骨隆々",
+   "rank": "S",
+   "afterSkill": "筋骨隆々",
+   "afterRank": "S",
+   "target": "全 不屈1 兵站",
+   "rate": "9%",
+   "effectShort": "攻撃 270%上昇+防御 270%上昇",
+   "afterTarget": "全 不屈1 兵站",
+   "afterRate": "9%",
+   "afterEffectShort": "攻撃 270%上昇+防御 270%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "義響鉄心",
+   "rank": "S",
+   "afterSkill": "神羅聖域",
+   "afterRank": "SS",
+   "target": "槍・弓・砲・器",
+   "rate": "50%",
+   "effectShort": "防御 200%上昇(第伍列配置時3倍)",
+   "afterTarget": "全 覇道",
+   "afterRate": "40%",
+   "afterEffectShort": "攻撃 900%上昇+防御 900%上昇+破壊 150%上昇+覇道を持つため所属部隊の武将のスキルを無効化・発動率低下から保護"
+  },
+  {
+   "slot": "C",
+   "skill": "パロ・スペシャル",
+   "rank": "S",
+   "afterSkill": "パロ・スペシャル",
+   "afterRank": "S",
+   "target": "全 兵站",
+   "rate": "25%",
+   "effectShort": "防御 215%上昇(部隊長なら発動率と効果が4倍・模倣不可)",
+   "afterTarget": "全 兵站",
+   "afterRate": "25%",
+   "afterEffectShort": "防御 215%上昇(部隊長なら発動率と効果が4倍・模倣不可)"
+  },
+  {
+   "slot": "S1",
+   "skill": "Ｓ・ドライバー",
+   "rank": "S",
+   "afterSkill": "Ｓ・ドライバー",
+   "afterRank": "S",
+   "target": "砲・器",
+   "rate": "10%",
+   "effectShort": "防御 200%上昇(所領防御陣形の第肆列目に配置時は防御効果6倍・模倣不可)",
+   "afterTarget": "砲・器",
+   "afterRate": "10%",
+   "afterEffectShort": "防御 200%上昇(所領防御陣形の第肆列目に配置時は防御効果6倍・模倣不可)"
+  },
+  {
+   "slot": "S2",
+   "skill": "國才連豪",
+   "rank": "SS",
+   "afterSkill": "國才連豪",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "50%",
+   "effectShort": "防御 310%×國才連豪所持武将数(4人)=1240.0%上昇",
+   "afterTarget": "全",
+   "afterRate": "50%",
+   "afterEffectShort": "防御 310%×國才連豪所持武将数(4人)=1240.0%上昇"
+  }
+ ],
+ "notes": [
+  "キン肉マンコラボの極(プラチナ極)。カード画像はスキル欄が「LV1」表記のためB-00のLV1形式で、画像から採ったのは武将名・統率(4隅バッジ拡大)・スキル名・攻撃/防御/兵法の初期値・覇の有無・カードNo.の6項目のみ。効果量・成長値・指揮兵数・合成候補は外部ソースで確認した。",
+  "統率は槍A/馬A/弓A/器S(カード画像バッジ拡大)。ixawiki.com(BushoCard/2634ウォーズマン)と一致。",
+  "コスト3・指揮3560(★0-0)・成長値+46/+64/+2.5はixanary.com(cards/2634)。カード表示(LV.0・★なし)の0/3560、ixawiki.comの3560とも一致。",
+  "スキル効果(LV10・確率10%/砲器/防御200%/第肆列で6倍)はixanary.comとixawiki.comが一致。",
+  "スキル名の「Ｓ」はixanaryが全角、ixawikiが半角。ixanary表記(全角)に揃えた。",
+  "合成テーブルはixanary.com(skills/Ｓ・ドライバー)の1次/2次のみ。ixawiki側は空テンプレートで裏取りできていない(単一ソース)。",
+  "A-3-8の2ソース要件を満たせないため青丸のまま。合成テーブル(スロット)の裏が取れる情報源がixanary.comの1つしか無く(ixawikiの合成候補表は空テンプレート、ixagno.blog.fc2.comにキン肉マンコラボ極の個別記事が無い)、「単一ソースのまま黄色丸にしない」規約に従ってreviewedOkを立てていない。",
+  "2026-08-16: 章を 30章 に確定。キン肉マンコラボは2025年9月追加(うぐさん、2026-08-16)。30章は2025/8/8〜2026/2/5"
+ ],
+ "wikiCommentCount": 0
+}

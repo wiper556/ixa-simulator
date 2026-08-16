@@ -1,0 +1,140 @@
+{
+ "name": "坂崎直盛",
+ "no": "2482",
+ "ch": "28章",
+ "cost": 3.5,
+ "troop": "砲器攻",
+ "sub": "不屈3",
+ "effect": "所属部隊のうち自身を除く姫武将の初期スキルに不屈3を付与(模倣不可・自部隊内重複不可)",
+ "furigana": "さかざきなおもり",
+ "illustrator": "正子公也",
+ "imageFull": "assets/img/characters/no2482_full.png",
+ "imageChar": "assets/img/characters/no2482_char.png",
+ "atkBase": 1250,
+ "atkGrowth": 67,
+ "defBase": 1070,
+ "defGrowth": 48,
+ "tacticsBase": 520,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3750,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "武火狂勢",
+ "skillDetail": "S/LV10 確率 60% 攻撃 460%上昇/対象:砲・器　不屈3\n模倣不可\n①攻撃 460%上昇する\n②所属部隊のうち自身を除く姫武将の初期スキルは不屈3を得る(特殊効果は自部隊内では重複不可)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "砲・器　確率 60% / 攻撃 460%上昇(自身を除く部隊内姫武将の初期スキルに不屈3付与・模倣不可・自部隊内重複不可)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": "砲・器　確率 60% / 攻撃 500%上昇(姫武将の初期スキルに不屈3付与)"
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": "砲・器　確率 60% / 攻撃 550%上昇(姫武将の初期スキルに不屈3付与)"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": "砲・器　確率 60% / 攻撃 620%上昇(姫武将の初期スキルに不屈3付与)"
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": "砲・器　確率 60% / 攻撃 705%上昇(姫武将の初期スキルに不屈3付与)"
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": "砲・器　確率 60% / 攻撃 810%上昇(姫武将の初期スキルに不屈3付与)"
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": null
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "破軍騎行",
+   "rank": "SS",
+   "afterSkill": "破軍騎行",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "攻撃 750%上昇+不屈2(攻撃戦闘敗北時指揮兵が不屈値×1000まで回復)",
+   "afterEffectShort": "攻撃 750%上昇+不屈2(攻撃戦闘敗北時指揮兵が不屈値×1000まで回復)"
+  },
+  {
+   "slot": "B",
+   "skill": "遠呂智ノ閃光",
+   "rank": "SS",
+   "afterSkill": "遠呂智ノ閃光",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "攻撃 125%上昇(卓越追加確率15%・4倍)",
+   "afterEffectShort": "攻撃 125%上昇(卓越追加確率15%・4倍)"
+  },
+  {
+   "slot": "C",
+   "skill": "煙霞迷霧",
+   "rank": "S",
+   "afterSkill": "煙霞迷霧",
+   "afterRank": "S",
+   "target": "全",
+   "rate": "70%",
+   "effectShort": "飛翔8 攻撃 110%上昇 防御 110%上昇 所属部隊の武将が 飛翔X を持つとき、それらは代わりに 飛翔[X+4] を持つ(模倣不可・部隊内重複不可)",
+   "afterEffectShort": "飛翔8 攻撃 110%上昇 防御 110%上昇 所属部隊の武将が 飛翔X を持つとき、それらは代わりに 飛翔[X+4] を持つ(模倣不可・部隊内重複不可)"
+  },
+  {
+   "slot": "S1",
+   "skill": "四天轟雷",
+   "rank": "SS",
+   "afterSkill": "四天轟雷",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "攻撃 360%上昇+防御 360%上昇+部隊内全武将の兵科対象の全スキルに砲・器対象を追加",
+   "afterEffectShort": "攻撃 360%上昇+防御 360%上昇+部隊内全武将の兵科対象の全スキルに砲・器対象を追加"
+  },
+  {
+   "slot": "S2",
+   "skill": "十束ノ神域",
+   "rank": "SS",
+   "afterSkill": "天聖宝冠",
+   "afterRank": "SSS",
+   "target": "全 覇道",
+   "rate": "100%",
+   "effectShort": "攻撃 320%上昇+速度 70%上昇+覇道を持つため所属部隊の武将のスキルを無効化・発動率低下から保護",
+   "afterTarget": "全",
+   "afterRate": "45%",
+   "afterEffectShort": "攻撃 100%上昇((5.0×防御参加武将数)%を攻撃効果に加算・模倣不可)"
+  }
+ ],
+ "notes": [
+  "カード画像はスキル欄「武火狂勢LV1」表記のためLV1形式(B-00)。画像から読んだのは武将名・統率バッジ(4隅拡大)・スキル名・初期値1250/1070/520・カードNo.・覇なしの6項目のみ。",
+  "統率は槍A/弓A/馬A/器S。カード画像バッジ拡大とixawiki(BushoCard/2482坂崎直盛)の統率力欄で一致。",
+  "コスト3.5・指揮3750(★0-0)・成長+67/+48/+2.5・絵師正子公也はixanary.com(cards/2482)とixawikiの2ソースで一致。カード画像の指揮兵数0/4350は限界突破後の値でありlv0Troopsではない(B-01)。",
+  "武火狂勢のLV10(確率60%/攻撃460%上昇)・TR1〜TR5(500/550/620/705/810%)はixanaryスキルページ(skills/武火狂勢)生HTMLで取得。ixawikiはLv10とTR5のみ掲載で、その2点は一致。TR6は両ソースとも記載なし。",
+  "カード画像のLV1値(確率+20%/攻撃150%上昇)は登録していない。",
+  "合成テーブル(1次: A=破軍騎行SS/B=遠呂智ノ閃光SS/C=煙霞迷霧S/S1=四天轟雷SS/S2=十束ノ神域SS、2次はS2のみ天聖宝冠SSSに変化)はixanaryスキルページとixawiki(BushoCard/2482)の2ソースで完全一致。",
+  "武火狂勢自身はixanaryの合成素材欄が「合成不可スキルです」のため移植不可。",
+  "章は情報源(ixanary/ixawiki)に記載が無いため未確認。wiki最古コメント2024-09-03からchGuessは28章。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "reviewedOk": true,
+ "wikiOldestComment": "2024-09-03",
+ "wikiCommentCount": 12,
+ "chGuess": "28章",
+ "chSource": "wikiOldestComment"
+}

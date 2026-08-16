@@ -1,0 +1,141 @@
+{
+ "name": "雑賀孫市（2）",
+ "no": "2479",
+ "ch": "27章",
+ "cost": 3,
+ "troop": "全攻",
+ "sub": "",
+ "effect": "攻撃 370%上昇(攻撃戦闘時、攻撃側の兵器兵科に対する防御側の兵器兵科の兵科補正が0.6倍小さくなる・模倣不可)",
+ "furigana": "さいかまごいち",
+ "illustrator": "正子公也",
+ "imageFull": "assets/img/characters/no2479_full.png",
+ "imageChar": "assets/img/characters/no2479_char.png",
+ "atkBase": 1200,
+ "atkGrowth": 58,
+ "defBase": 1070,
+ "defGrowth": 46,
+ "tacticsBase": 560,
+ "tacticsGrowth": 3,
+ "lv0Troops": 3550,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "金烏砲声",
+ "skillDetail": "S/LV10 確率 65% 攻撃 370%上昇/対象:全\n模倣不可\n①攻撃 370%上昇する\n②攻撃戦闘時 攻撃側の兵器兵科に対する防御側の兵器兵科の兵科補正が0.6倍小さくなる(特殊効果は累積するが有利不利は逆転しない)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 65% / 攻撃 370%上昇(攻撃戦闘時、攻撃側の兵器兵科に対する防御側の兵器兵科の兵科補正が0.6倍小さくなる・特殊効果は累積するが有利不利は逆転しない・模倣不可)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": null
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": null
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": null
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": null
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": null
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": null
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "四天轟雷",
+   "rank": "SS",
+   "afterSkill": "四天轟雷",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "攻撃 360%上昇+防御 360%上昇(砲・器対象追加)",
+   "afterEffectShort": "攻撃 360%上昇+防御 360%上昇(砲・器対象追加)"
+  },
+  {
+   "slot": "B",
+   "skill": "十束ノ神域",
+   "rank": "SS",
+   "afterSkill": "天聖宝冠",
+   "afterRank": "SSS",
+   "target": "全 覇道",
+   "rate": "100%",
+   "effectShort": "攻撃 320%上昇+速度 70%上昇+覇道を持つため所属部隊の武将のスキルを無効化・発動率低下から保護",
+   "afterTarget": "全",
+   "afterRate": "45%",
+   "afterEffectShort": "攻撃 100%上昇((5.0×防御参加武将数)%を攻撃効果に加算・模倣不可)"
+  },
+  {
+   "slot": "C",
+   "skill": "龍驤虎躍",
+   "rank": "SS",
+   "afterSkill": "龍驤虎躍",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "60%",
+   "effectShort": "攻撃 810%上昇+防御 810%上昇(コスト-1・特殊効果は模倣不可)",
+   "afterEffectShort": "攻撃 810%上昇+防御 810%上昇(コスト-1・特殊効果は模倣不可)"
+  },
+  {
+   "slot": "S1",
+   "skill": "金烏砲声",
+   "rank": "S",
+   "afterSkill": "金烏砲声",
+   "afterRank": "S",
+   "target": "全",
+   "rate": "65%",
+   "effectShort": "攻撃 370%上昇(攻撃戦闘時、攻撃側の兵器兵科に対する防御側の兵器兵科の兵科補正が0.6倍小さくなる・模倣不可)",
+   "afterEffectShort": "攻撃 370%上昇(攻撃戦闘時、攻撃側の兵器兵科に対する防御側の兵器兵科の兵科補正が0.6倍小さくなる・模倣不可)"
+  },
+  {
+   "slot": "S2",
+   "skill": "国堅大神",
+   "rank": "SS",
+   "afterSkill": "国堅大神",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "60%",
+   "effectShort": "攻撃 170%上昇+防御 170%上昇(部隊消費コスト-1・模倣不可)",
+   "afterEffectShort": "攻撃 170%上昇+防御 170%上昇(部隊消費コスト-1・模倣不可)"
+  }
+ ],
+ "notes": [
+  "カード画像(no2479_full.png)はスキル欄「金烏砲声LV1」表記のためLV1形式(B-00)。画像から読んだのは 武将名/統率4隅バッジ(槍A・馬A・弓A・器S、6倍拡大で個別確認)/スキル名/初期値1200・1070・560.0/覇表記なし/カードNo.2479 の6項目のみ。",
+  "カード画像は★5までランクアップ済みのため指揮兵数欄が4050と表示されているが、これは★5時の値(3550+100×5)。lv0Troops(★0-0)はixanary.comの指揮欄3550(ixawikiの指揮兵数3550とも一致)を採用した。",
+  "コスト3・指揮3550(★0-0)・初期値1200/1070/560・成長値+58/+46/+3.0・ふりがな さいかまごいち・絵師 正子公也・LV10効果は ixanary.com/cards/2479 と ixawiki.com(BushoCard/2479雑賀孫市)の2ソースで一致(カード画像の初期値表示とも一致)。",
+  "LV1の値(確率20%・攻撃120%上昇・兵科補正0.9倍)はLV10として登録していない。LV10は確率65%・攻撃370%上昇・兵科補正0.6倍(2ソース一致)。",
+  "合成テーブルは ixanary.com/skills/金烏砲声 の1次/2次と ixawiki.com(BushoCard/2479の合成候補テーブル)の2ソースで確認。1次は全枠2ソース一致(A=四天轟雷[SS]・B=十束ノ神域[SS]・C=龍驤虎躍[SS]・S1=金烏砲声[S]・S2=国堅大神[SS])。S1の2次はixawiki側が空欄だがixanaryは自己参照(金烏砲声)であり、初期スキルがS1に載るケースなのでA-3-13(初期スキルの移植後はS1のスキルと一致)とも整合する。",
+  "初期スキル 金烏砲声[S] はページが無かったため data/skill/金烏砲声.json を新規作成した(S1枠に1次候補として載るため移植可能)。",
+  "武将名の（2）: 極レアの同名カードは No.2008(wiki最古コメント2011-06-01)と本カード No.2479(同2024-06-04)の2枚。No.1038/1048/1186/1220/1959は天レアで別系列(天側は当サイトに No.1220「雑賀孫市（4）」として登録済み)。rarityはixanary.comで2008=極・1959=天・2479=極を確認した。出現が早い順に2008=（1）・2479=（2）となる。",
+  "TR(鍛錬)情報は ixanary.com・ixawiki.com のいずれにも記載が無いためTR1以降のeffectはnull。",
+  "章はixanary.com/ixawiki.comのカードページに記載が無いため未確認(wiki最古コメント2024-06-04から27章の当たり)。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "reviewedOk": true,
+ "wikiOldestComment": "2024-06-04",
+ "wikiCommentCount": 111,
+ "chGuess": "27章",
+ "chSource": "wikiOldestComment"
+}

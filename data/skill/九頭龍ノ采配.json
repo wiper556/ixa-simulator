@@ -1,0 +1,37 @@
+{
+ "name": "九頭龍ノ采配",
+ "rank": "S",
+ "baseRate": 43,
+ "target": "全",
+ "effectSummary": "S/LV10 確率 43% 攻撃 400%上昇/対象:全\n①攻撃 400%上昇する\n②所属部隊を含む自部隊同時攻撃で消費する名声値を-45する(重複不可)",
+ "categoryLinks": null,
+ "sourceCharacters": [
+  {
+   "name": "朝倉宗滴（3）",
+   "no": "2480",
+   "slot": "C",
+   "db": "kyoku",
+   "note": [
+    "朝倉宗滴（3）(2480)の初期スキル。自身のsynthesisTable C枠にも1次候補として載るため実際の枠番を記載(A-3-9/移植可能)。"
+   ]
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "氷塊三連撃",
+  "rank": "SSS"
+ },
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 43% / 攻撃 400%上昇(所属部隊を含む自部隊同時攻撃で消費する名声値を-45・重複不可)"
+  }
+ ],
+ "notes": [
+  "2026-08-16作成。No.2480(朝倉宗滴（3）)の初期スキル。S以上のため無条件でページ作成(A-3-9)。",
+  "出典: ixanary.com/skills/九頭龍ノ采配(LV1/LV10・合成テーブル1次〜3次) + ixawiki.com(BushoCard/2480朝倉宗滴の「攻：九頭龍ノ采配[S] 合成候補テーブル」)。効果値・1次候補は2ソース一致。",
+  "ownHiddenCandidateは合成テーブルC枠の1次=九頭龍ノ采配/2次=氷塊三連撃[SSS]から導出(ixawikiの2次C欄は空欄)。S1枠の1次も氷塊三連撃[SSS]でありA-3-13の裏取り条件を満たす。同じ名声値減少系の 悪屋形[S] も既存データでownHiddenCandidate=氷塊三連撃[SSS]であり整合する。",
+  "categoryLinks 9項目チェック実施: 無尽/撤退/飛翔/覇道/不屈/兵站/卓越/人数依存/コスト減少のいずれにも該当しないためnull。「消費する名声値を-45」はデッキコストの減少ではないためskills-cost.html系の対象外(同種の効果を持つ既存の悪屋形.jsonもcategoryLinksなしで登録されている)。",
+  "TR(鍛錬)情報はixanary.com・ixawiki.comのいずれにも記載が無く、両サイトともLV1/LV10の2段のみのためtrTableはLV10の1行。"
+ ]
+}

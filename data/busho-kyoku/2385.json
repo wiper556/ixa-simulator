@@ -106,6 +106,16 @@
   }
  ],
  "notes": [
-  "45do.info+ixagno.blog.fc2.com(blog-entry-10157)確認済み: A/Bの夜叉美濃は移植後「志半ノ矛楯」に、Cの戦陣疾駆は移植後、保護スキル「十束ノ神域」[SS]に変化"
- ]
+  "45do.info+ixagno.blog.fc2.com(blog-entry-10157)確認済み: A/Bの夜叉美濃は移植後「志半ノ矛楯」に、Cの戦陣疾駆は移植後、保護スキル「十束ノ神域」[SS]に変化",
+  "2026-08-16黄丸化検証(A-1〜A-5): rankGrades(槍A/馬B/弓A/器S)はカード画像の4隅バッジを個別にズームして再確認し、ixawiki.com(BushoCard/2385原虎胤)の基本ステータス表とも一致。基礎値/成長値/コスト/指揮兵数(★0-0=3970)はixanary.com(cards/2385)生HTMLとixawikiの両方で一致確認。",
+  "synthesisTableはixanary.com(skills/夜叉美濃、skills/戦陣 疾駆)の合成テーブル生HTMLと、ixawiki.com(BushoCard/2385原虎胤)のスキル追加合成テーブルの2ソースで突き合わせ完全一致を確認: A/B=夜叉美濃[A]→志半ノ矛楯[A]、C=戦陣疾駆[A]→十束ノ神域[SS]、S1/S2=志半ノ矛楯[A]自己参照。",
+  "sourceCharacters逆引き確認(A-3-11): 戦陣 疾駆.jsonにNo.2385がC枠で未登録だったため追加(十束ノ神域.jsonのgrantedViaSkillsには既に戦陣疾駆[A]が登録済みで正しい)。夜叉美濃・志半ノ矛楯はafterSkillが非S+または自己参照のためページ不要(該当なし)。",
+  "categoryLinks(A-2): 兵站スキルのためskills-heitan.htmlへのリンクが既に設定済みで正しい。他の無尽/撤退/覇道/不屈/飛翔/人数依存キーワードは該当なし。",
+  "trTable: ixanary生HTMLにTR1〜6や鍛錬の記載が無く、LV10のみの単段スキルであることを確認。",
+  "章(28章)はixanary.com/ixawiki.comのカードページ双方に章の直接記載が無く一次情報源では裏取りできないが、既存登録値をそのまま維持(矛盾する情報は見つからず)。"
+ ],
+ "reviewedOk": true,
+ "wikiOldestComment": "2025-01-15",
+ "wikiCommentCount": 2,
+ "chGuess": "28章"
 }

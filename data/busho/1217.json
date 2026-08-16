@@ -1,5 +1,5 @@
 {
- "name": "宇喜多秀家（2）",
+ "name": "宇喜多秀家（3）",
  "no": "1217",
  "ch": "24章",
  "cost": 5,
@@ -96,6 +96,15 @@
   }
  ],
  "notes": [
-  "synthesisTable: 45do.info生HTML(skiladd_wrap)+ixanary.com(天衣無縫神戒スキルページの合成テーブル)で2ソース一致確認済み(2026-08-02)。45do.info上ではこの武将のみ「海神ノ浮舟」表記だが、ixanary.comの正式表記「海神ノ浮船」(松永久秀1209のS1と同一スキル)に統一"
- ]
+  "2026-08-16黄丸化検証: rankGrades(槍SS/弓A/馬A/器A)をカード画像バッジ4隅で照合、一致。ステータス初期値・成長値・cost5・lv0Troops4810はixanary.com(cards/1217)生HTMLの成長表と一致。skillDetailはixanary/ixawiki2ソースともLV1/LV10のみでTR無しと確認、模倣不可は既に①の前の独立行で正しい書式。",
+  "名前表記の訂正: 旧登録「宇喜多秀家（2）」は誤りで、正しくは「宇喜多秀家（3）」(ixawiki.com Busho/武将カード一覧で「宇喜多秀家(3)」と確認)。No.2424が既に「宇喜多秀家（2）」で別途(busho-kyoku)登録済みであり、旧登録のままだと重複していた。data/skill配下の候補スキル(烈界 渡海龍・天衣無縫神戒・禍津日神ノ謀・国津破邪ノ楯・海神ノ浮船・星宿劫ノ法壁)のsourceCharactersも同名に更新した(2026-08-16)。",
+  "synthesisTable(A=天衣無縫神戒[SS]自己参照、B=禍津日神ノ謀[SS]自己参照、C=国津破邪ノ楯[SS]自己参照、S1=海神ノ浮船[SS]自己参照、S2=星宿劫ノ法壁[SS]自己参照)をixanary.com(skills/烈界 渡海龍)生HTMLとixawiki.com(BushoCard/1217宇喜多秀家)生HTMLの2ソースで完全一致を確認(2026-08-16)。",
+  "sourceCharacters逆引き確認(A-3-11): 烈界 渡海龍(移植不可)・天衣無縫神戒(A)・禍津日神ノ謀(B)・国津破邪ノ楯(C)・海神ノ浮船(S1)・星宿劫ノ法壁(S2)いずれもdata/skill/配下に1217が記載済み(2026-08-16)。",
+  "categoryLinksチェック(A-3-9、9項目): 初期スキル烈界 渡海龍は項目3(飛翔、防御系)に該当し、既にskills-hishou-def.htmlへcategoryLinks・本体一覧とも登録済みを確認。",
+  "章(24章)は情報源に記載が無く未確認のまま(ixanary/ixawikiともchapter情報を確認できず、既存の24章表記を維持)。"
+ ],
+ "reviewedOk": true,
+ "wikiOldestComment": "2022-08-05",
+ "wikiCommentCount": 41,
+ "chGuess": "23-24章"
 }

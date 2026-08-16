@@ -47,6 +47,7 @@ data/ の "notes"(要素全体) と 行の "note" は**書き戻さない**。
     python tools/build_data.py --dry-run  # 差分の有無だけ見る
 """
 import collections
+import glob
 import io
 import json
 import os
@@ -84,6 +85,11 @@ LIST_FIELDS = {
     "generals": BUSHO_LIST_FIELDS,
     "kyokuGenerals": BUSHO_LIST_FIELDS,
     "kyokuPsGenerals": BUSHO_LIST_FIELDS,
+    "parallelGenerals": BUSHO_LIST_FIELDS,
+    "tokuSecretGenerals": BUSHO_LIST_FIELDS,
+    "tokuGenerals": BUSHO_LIST_FIELDS,
+    "ueGenerals": BUSHO_LIST_FIELDS,
+    "joGenerals": BUSHO_LIST_FIELDS,
     "ketsuGenerals": BUSHO_LIST_FIELDS + [
         "atkBase", "defBase", "tacticsBase", "lv0Troops"],
     "skills": ["name", "rank", "sourceCharacters"],
@@ -299,14 +305,20 @@ CHAPTERS_FILE = "assets/js/ixa-data.js"
 CHAPTERS_BEGIN = ("// BUILD:generalChapters:start ここから下は tools/build_data.py が "
                   "data/busho*/ から生成しています。直接編集しないこと")
 CHAPTERS_END = "// BUILD:generalChapters:end"
-CHAPTER_DIRS = ("data/busho", "data/busho-kyoku", "data/busho-kyoku-ps", "data/busho-ketsu")
+# **data/busho* を全部見る(書き並べない)。**
+# ここは手で並べた一覧だった。天パラレル・特シークレット・特武将を
+# 足したときに書き足すのを忘れ、パラレル30枚だけシミュレーターの
+# 武将候補で章が付かず、並びの一番後ろに落ちていた(2026-08-16に発覚)。
+# DBが増えるのはこの先も続くので、探し方のほうを直す。
+def chapter_dirs():
+    return sorted(d for d in glob.glob(os.path.join(ROOT, "data", "busho*"))
+                  if os.path.isdir(d))
 
 
 def collect_chapters():
     """カードNo. → 章番号。「未確認」や章の無い武将は入れない。"""
     out = {}
-    for d in CHAPTER_DIRS:
-        full = os.path.join(ROOT, d)
+    for full in chapter_dirs():
         if not os.path.isdir(full):
             continue
         for fn in os.listdir(full):
@@ -355,6 +367,67 @@ def replace_chapters(dry=False):
     return 0
 
 
+# 攻撃シミュレーターに防御スキルの武将を、防御シミュレーターに攻撃スキルの武将を
+# 出さないための仕分け。軸は武将DBの troop(「全攻」「槍砲器防」「全攻防」「全攻破」など)
+# から取る。「全」「特」「部隊長」「合流」のように軸を持たない書き方もあるので、
+# その場合は入れない(入れなければシミュレーター側は両モードに出す)。
+AXIS_BEGIN = ("// BUILD:generalSkillAxis:start ここから下は tools/build_data.py が "
+              "data/busho*/ の troop から生成しています。直接編集しないこと")
+AXIS_END = "// BUILD:generalSkillAxis:end"
+
+
+def collect_axis():
+    """カードNo. → 'atk' / 'def' / 'both'。決まらない武将は入れない。"""
+    out = {}
+    for full in chapter_dirs():
+        for fn in os.listdir(full):
+            if not fn.endswith(".json"):
+                continue
+            with io.open(os.path.join(full, fn), encoding="utf-8") as f:
+                e = json.load(f)
+            t = str(e.get("troop") or "")
+            a, b = "攻" in t, "防" in t
+            v = "both" if a and b else ("atk" if a else ("def" if b else None))
+            if v and e.get("no") is not None:
+                out[str(e["no"])] = v
+    return out
+
+
+def build_axis_block(axis):
+    lines = [AXIS_BEGIN, "const generalSkillAxis = {"]
+    row = "  "
+    for no in sorted(axis, key=lambda k: (len(k), k)):
+        piece = '"%s":"%s", ' % (no, axis[no])
+        if len(row) + len(piece) > WRAP:
+            lines.append(row.rstrip())
+            row = "  "
+        row += piece
+    if row.strip():
+        lines.append(row.rstrip().rstrip(","))
+    lines.append("};")
+    lines.append(AXIS_END)
+    return "\n".join(lines)
+
+
+def replace_axis(dry=False):
+    p = os.path.join(ROOT, CHAPTERS_FILE)
+    text = io.open(p, encoding="utf-8", newline="").read()
+    lo = text.find(AXIS_BEGIN)
+    hi = text.find(AXIS_END)
+    if lo < 0 or hi < 0:
+        print("  %-24s [停止] BUILD:generalSkillAxis のマーカーが無い" % CHAPTERS_FILE)
+        return 1
+    axis = collect_axis()
+    new = text[:lo] + build_axis_block(axis) + text[hi + len(AXIS_END):]
+    same = new == text
+    print("  %-24s %3d件 %s (攻防の仕分け)"
+          % (CHAPTERS_FILE, len(axis), "変化なし" if same else "書き換え"))
+    if not same and not dry:
+        io.open(p, "w", encoding="utf-8", newline="").write(new)
+        return 1
+    return 0
+
+
 def main(dry=False):
     changed = 0
     for page, array, outdir, keyfld in TARGETS:
@@ -372,6 +445,7 @@ def main(dry=False):
             io.open(p, "w", encoding="utf-8", newline="").write(new)
             changed += 1
     changed += replace_chapters(dry)
+    changed += replace_axis(dry)
     print("書き換えたページ %d件%s" % (changed, "(--dry-run)" if dry else ""))
 
 

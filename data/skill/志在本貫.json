@@ -1,0 +1,42 @@
+{
+ "name": "志在本貫",
+ "rank": "S",
+ "baseRate": 55,
+ "target": "全 不屈1",
+ "effectSummary": "S/LV10 確率 55% 攻撃 380%上昇/対象:全　不屈1\n①攻撃 380%上昇する\n②不屈1を持つ(攻撃戦闘敗北時 指揮兵が不屈の数値×1000まで回復する)",
+ "categoryLinks": [
+  {
+   "href": "skills-fukutsu.html",
+   "label": "不屈スキル一覧を見る"
+  }
+ ],
+ "sourceCharacters": [
+  {
+   "name": "小田氏治（2）",
+   "no": "2469",
+   "slot": "A",
+   "db": "kyoku",
+   "note": [
+    "小田氏治（2）(2469)の初期スキル。自身のsynthesisTable A枠にも1次候補として載るため実際の枠番を記載(A-3-9/移植可能)。"
+   ]
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "活人剣",
+  "rank": "A"
+ },
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全 不屈1　確率 55% / 攻撃 380%上昇(攻撃戦闘敗北時、指揮兵が不屈の数値×1000まで回復)"
+  }
+ ],
+ "notes": [
+  "2026-08-16作成。No.2469(小田氏治（2）)の初期スキル。S以上のため無条件でページ作成(A-3-9)。",
+  "出典: ixanary.com/skills/志在本貫(LV1/LV10・合成テーブル1次〜3次) + ixawiki.com(BushoCard/2469小田氏治)。効果値・1次候補は2ソース一致。",
+  "ownHiddenCandidateは合成テーブルA枠の1次=志在本貫/2次=活人剣[A]から導出。S1枠の1次も活人剣[A]でありA-3-13の裏取りとも整合する(ixawikiの2次行はテンプレート未記入のため、当サイト既存データのownHiddenCandidateとの照合で裏取りした)。",
+  "categoryLinks 9項目チェック実施: 不屈1を持つため skills-fukutsu.html が該当。無尽/撤退/飛翔/覇道/兵站/卓越/人数依存/コスト減少はいずれも該当なし。",
+  "TR(鍛錬)情報はixanary.com・ixawiki.comのいずれにも記載が無く、両サイトともLV1/LV10の2段のみのためtrTableはLV10の1行。"
+ ]
+}

@@ -18,13 +18,13 @@
    "db": "kyoku"
   },
   {
-   "name": "帰蝶",
+   "name": "帰蝶（3）",
    "no": "2592",
-   "slot": "C・S2",
+   "slot": "S1・S2",
    "db": "kyoku"
   },
   {
-   "name": "細川ガラシャ",
+   "name": "細川ガラシャ（2）",
    "no": "2599",
    "slot": "B",
    "db": "kyoku"
@@ -42,6 +42,15 @@
    "db": "kyoku"
   },
   {
+   "name": "クイナ",
+   "no": "2627",
+   "slot": "S2",
+   "db": "kyoku",
+   "note": [
+    "クイナ(2627)のsynthesisTable S2枠(2026-08-16・担当K1、極FF9コラボの新規登録)"
+   ]
+  },
+  {
    "name": "佐々木ユキ",
    "no": "2814",
    "slot": "A・B",
@@ -51,7 +60,7 @@
    ]
   },
   {
-   "name": "諏訪姫",
+   "name": "諏訪姫（2）",
    "no": "2820",
    "slot": "C",
    "db": "kyoku",
@@ -60,7 +69,7 @@
    ]
   },
   {
-   "name": "千姫",
+   "name": "千姫（2）",
    "no": "2840",
    "slot": "A",
    "db": "kyoku",
@@ -78,13 +87,37 @@
    ]
   },
   {
-   "name": "鶴姫",
+   "name": "鶴姫（2）",
    "no": "2852",
    "slot": "C",
    "db": "kyoku",
    "note": [
     "鶴姫(2852)のsynthesisTable C枠(2026-08-14)"
    ]
+  },
+  {
+   "name": "初鹿野信昌",
+   "no": "2463",
+   "slot": "S1",
+   "db": "kyoku",
+   "note": [
+    "初鹿野信昌(2463)のsynthesisTable S1枠(2026-08-16。B・C枠はskill=香車伝右衛門→afterSkill=本スキルのためA-3-12によりgrantedViaSkills側で参照、skillが本スキル自体なのはS1枠)"
+   ]
+  },
+  {
+   "name": "比古清十郎【覇】",
+   "no": "10054",
+   "slot": "A"
+  }
+ ],
+ "grantedViaSkills": [
+  {
+   "skill": "舞蝶朧月",
+   "rank": "S"
+  },
+  {
+   "skill": "香車伝右衛門",
+   "rank": "S"
   }
  ],
  "ownHiddenCandidate": {
@@ -100,6 +133,8 @@
  ],
  "notes": [
   "2026-08-12作成。合成候補に出てくるS以上はページを作る規約(A-3)の未処理分。",
-  "ixanary.com/skills/黒飛燕剣 から取得。categoryLinksは9項目の判定が要るため付けていない。"
+  "ixanary.com/skills/黒飛燕剣 から取得。categoryLinksは9項目の判定が要るため付けていない。",
+  "2026-08-16(No.2599黄丸化検証): 細川ガラシャ(2599)のS1・S2枠はsynthesisTable上のskillが舞蝶朧月でafterSkillが本スキルのため、grantedViaSkillsに舞蝶朧月[S]を追加。潔花咲然の合成テーブルでS1/S2の2次候補がixanaryでは月詠ノ覇威(SS)、ixawiki・ixagno.blog.fc2.com(blog-entry-9735)では黒飛燕剣(S)と食い違っており、2ソース一致のixawiki+ixagno側(黒飛燕剣)を採用した。2599自身はB枠(skill=黒飛燕剣そのもの)で直接列挙済み。",
+  "2026-08-16(No.2592黄丸化検証): 帰蝶(2592)の枠をC・S2→S1・S2に訂正。ixawiki+ixagnoの2ソースでS1候補・S2候補ともに黒飛燕剣であることを確認した(2026-08-13の誤った訂正でC枠にずれていた)。"
  ]
 }

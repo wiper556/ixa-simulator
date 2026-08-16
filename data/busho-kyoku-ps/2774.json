@@ -1,7 +1,7 @@
 {
  "name": "築山殿",
  "no": "2774",
- "ch": "未確認",
+ "ch": "18章",
  "cost": 3.0,
  "troop": "全防",
  "sub": "",
@@ -106,7 +106,12 @@
   "候補スキルのうち戦陣 阿吽(A)/万端の用人(B)/闘戦経(B)は独自ページ無し(通常は対象外のランク、いずれもafterSkillが自己参照または既存ページ無しスキルのためA-3-9の例外規定の対象外)。",
   "TR段階: ixanary/ixawiki両方でLV1/LV10のみでTR記載なしを確認(TRなしスキル)。",
   "章はixanary(cards/2774, skills/叛鍾ノ聲)・ixawiki(BushoCard/2774築山殿)に記載無し。ixagno.blog.fc2.comを「築山殿」で検索(19件ヒット)したが本カード専用の記事が見当たらず、章の記載は見つからず未確認のまま。",
-  "rankGrades(槍/馬/弓/器=全てA)はカード画像4隅バッジを個別ズームで再照合しixawikiの統率力表と一致することを確認(2026-08-15再検証)。"
+  "rankGrades(槍/馬/弓/器=全てA)はカード画像4隅バッジを個別ズームで再照合しixawikiの統率力表と一致することを確認(2026-08-15再検証)。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
  ],
- "reviewedOk": true
+ "reviewedOk": true,
+ "wikiOldestComment": "2019-08-09",
+ "wikiCommentCount": 88,
+ "chGuess": "18章",
+ "chSource": "wikiOldestComment"
 }

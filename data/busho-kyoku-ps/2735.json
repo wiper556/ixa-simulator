@@ -1,0 +1,118 @@
+{
+ "name": "果心居士",
+ "no": "2735",
+ "ch": "11章",
+ "cost": 3.5,
+ "troop": "部隊長特",
+ "sub": "",
+ "effect": "所属部隊の部隊長が持つ初期スキルを模倣する(戦闘スキルのみ)",
+ "furigana": "かしんこじ",
+ "illustrator": "加藤さやか",
+ "imageFull": "assets/img/characters/no2735_full.png",
+ "imageChar": "assets/img/characters/no2735_char.png",
+ "atkBase": 900,
+ "atkGrowth": 20.0,
+ "defBase": 900,
+ "defGrowth": 20.0,
+ "tacticsBase": 540.0,
+ "tacticsGrowth": 3.0,
+ "lv0Troops": 3000,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "風狂幻術",
+ "skillDetail": "B/LV10 確率 53% 所属部隊の部隊長が持つ初期スキルを模倣する/対象:部隊長\n①所属部隊の部隊長が持つ初期スキルを模倣する(戦闘スキルのみ)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "部隊長　確率 53% / 所属部隊の部隊長が持つ初期スキルを模倣(戦闘スキルのみ)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "鉄壁の備え",
+   "rank": "D",
+   "afterSkill": "城崩し",
+   "afterRank": "D",
+   "target": "全",
+   "rate": "40%",
+   "effectShort": "防御 15%上昇",
+   "afterTarget": "器",
+   "afterRate": "35%",
+   "afterEffectShort": "破壊 20%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "災禍ノ老仙",
+   "rank": "A",
+   "afterSkill": "爆雷平蜘蛛",
+   "afterRank": "B",
+   "target": "全",
+   "rate": "50%",
+   "effectShort": "敵軍の兵士被害数+25%(対合流攻撃防御時のみ発動・重複発動不可)",
+   "afterTarget": "全",
+   "afterRate": "30%",
+   "afterEffectShort": "攻撃戦闘勝利時のみ、敵軍1部隊の武将に追加ダメージ+45"
+  },
+  {
+   "slot": "C",
+   "skill": "遁世影武者",
+   "rank": "B",
+   "afterSkill": "風林火山",
+   "afterRank": "S",
+   "target": "部隊長",
+   "rate": "50%",
+   "effectShort": "所属部隊の部隊長が持つ初期スキルを模倣する(戦闘スキルのみ)",
+   "afterTarget": "槍・弓・馬",
+   "afterRate": "45%",
+   "afterEffectShort": "攻撃 30%上昇+破壊 15%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "風狂幻術",
+   "rank": "B",
+   "afterSkill": "風狂幻術",
+   "afterRank": "B",
+   "target": "部隊長",
+   "rate": "53%",
+   "effectShort": "所属部隊の部隊長が持つ初期スキルを模倣する(戦闘スキルのみ)",
+   "afterEffectShort": "所属部隊の部隊長が持つ初期スキルを模倣する(戦闘スキルのみ)"
+  },
+  {
+   "slot": "S2",
+   "skill": "四海王道",
+   "rank": "S",
+   "afterSkill": "覇王征軍",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "20%",
+   "effectShort": "防御 50%上昇",
+   "afterTarget": "全",
+   "afterRate": "42%",
+   "afterEffectShort": "攻撃 25.39%上昇(部隊総コストで変動)"
+  }
+ ],
+ "notes": [
+  "2026-08-16 新規登録(担当K6)。カード画像はスキル表記がLV1の育成前カードのため、画像から採ったのは武将名/統率(4隅バッジ)/スキル名/攻撃・防御・兵法の初期値/覇でないこと/カードNo.の6項目のみ(B-00)。",
+  "武将名: ixawiki武将カード一覧(極)で「果心居士」は No.2735 の1枚のみ(No.2517は果心居士(RE)、No.2580は果心居士(特RE)でどちらも復刻のため数に入れない。No.3705/10030は別レアリティ)。よって無印。",
+  "統率は画像の4隅バッジで槍A/馬A/弓A/器Aを個別に拡大して確認。ixawiki(BushoCard/2735果心居士)の「統率力 槍A 馬A 弓A 器A」と一致。",
+  "コスト3.5・指揮兵数3000・初期値900/900/540・成長値+20/+20/+3.0・ふりがな・絵師(加藤さやか)は ixanary.com(cards/2735) と ixawiki.com(BushoCard/2735果心居士) の2ソースで完全一致。lv0Troopsはixanaryの★0-0(3000)。カード画像の指揮兵数0/5200は天限突破時の値なので採用していない(B-01)。",
+  "スキル効果はLV1カードのため外部ソースを採用。効果文はLV1/LV10で同じで確率のみ+18%→+53%に上がることを2ソースで確認した。TR段はどちらのソースにも無い。",
+  "合成候補はixanary.com(skills/風狂幻術)の1次/2次と ixawiki(BushoCard/2735)の合成候補テーブルの2ソースで全5枠完全一致(A=鉄壁の備え[D]→城崩し[D]、B=災禍ノ老仙[A]→爆雷平蜘蛛[B]、C=遁世影武者[B]→風林火山[S]、S1=風狂幻術[B]自己参照、S2=四海王道[S]→覇王征軍[SS])。各枠のtarget/rate/effectShortは候補スキル自身のixanaryページのLV10行から転記。",
+  "S1枠に初期スキル風狂幻術が自己参照で載っていることを確認(A-3-13の裏取り手段)。",
+  "A-3-11逆引き: 風狂幻術(S1)・遁世影武者(C)・四海王道(S2)の各 data/skill/*.json に果心居士を追記した。移植後の風林火山[S]は既にgrantedViaSkillsで遁世影武者を指しており追記不要。覇王征軍[SS]には四海王道[S]をgrantedViaSkillsに追加した(A-3-12)。",
+  "【要確認・申し送り】四海王道[S]の移植後について、風狂幻術のixanaryページ・ixawikiのNo.2735合成候補テーブル・松平清康の初期スキル酔狂破陣のixanaryページの3つとも S2枠 1次=四海王道[S] → 2次=覇王征軍[SS] で一致する。一方、既登録のNo.2745松平清康のsynthesisTable S2は afterSkill=武神八幡陣[SS] になっており、data/skill/四海王道.json の ownHiddenCandidate も武神八幡陣[SS]。武神八幡陣は四海王道「自身の」ページのS2枠2次であり、A-3-0の「参照すべきは武将の初期スキルのページ」に照らすと既存側が誤りの可能性が高い。担当範囲外のため本作業では変更せず報告に留める。",
+  "章はixanary.com/ixawiki.comのカードページに記載が無く未確認。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "reviewedOk": true,
+ "wikiOldestComment": "2016-01-22",
+ "wikiCommentCount": 96,
+ "chGuess": "11章",
+ "chSource": "wikiOldestComment"
+}

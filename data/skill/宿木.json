@@ -12,13 +12,13 @@
  ],
  "sourceCharacters": [
   {
-   "name": "伊達成実",
+   "name": "伊達成実（3）",
    "no": "2336",
    "slot": "C",
    "db": "kyoku"
   },
   {
-   "name": "宇佐美定満",
+   "name": "宇佐美定満（2）",
    "no": "2398",
    "slot": "C",
    "db": "kyoku"
@@ -30,13 +30,13 @@
    "db": "kyoku"
   },
   {
-   "name": "お市",
+   "name": "お市（3）",
    "no": "2558",
    "slot": "A・B",
    "db": "kyoku"
   },
   {
-   "name": "京極竜子",
+   "name": "京極竜子（2）",
    "no": "2559",
    "slot": "A・B",
    "db": "kyoku"
@@ -48,7 +48,7 @@
    "db": "kyoku"
   },
   {
-   "name": "今川氏輝",
+   "name": "今川氏輝（1）",
    "no": "2749",
    "slot": "S1",
    "db": "kyoku",
@@ -57,7 +57,7 @@
    ]
   },
   {
-   "name": "今川氏輝",
+   "name": "今川氏輝（2）",
    "no": "2768",
    "slot": "S1",
    "db": "kyoku",
@@ -93,7 +93,7 @@
    ]
   },
   {
-   "name": "綾御前",
+   "name": "綾御前（2）",
    "no": "2796",
    "slot": "S1",
    "db": "kyoku",
@@ -124,6 +124,12 @@
   "skill": "宿木",
   "rank": "B"
  },
+ "grantedViaSkills": [
+  {
+   "skill": "千人狩",
+   "rank": "A"
+  }
+ ],
  "trTable": [
   {
    "level": "LV10",

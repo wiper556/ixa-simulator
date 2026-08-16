@@ -1,0 +1,154 @@
+{
+ "name": "赤べこ",
+ "no": "2616",
+ "ch": "28章",
+ "cost": 2,
+ "troop": "全防",
+ "sub": "兵站",
+ "effect": "敵軍部隊数×10%を防御効果に加算(模倣不可)",
+ "furigana": "あかべこ",
+ "illustrator": "NW/S,RKKD",
+ "imageFull": "assets/img/characters/no2616_full.png",
+ "imageChar": "assets/img/characters/no2616_char.png",
+ "atkBase": 1300,
+ "atkGrowth": 0,
+ "defBase": 1300,
+ "defGrowth": 0,
+ "tacticsBase": 130,
+ "tacticsGrowth": 0,
+ "lv0Troops": 13000,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "B",
+  "uma": "B",
+  "ki": "B"
+ },
+ "initialSkill": "牛鍋酒処",
+ "skillDetail": "A/LV10 確率 45% 防御 300%上昇/対象:全　兵站\n模倣不可\n①防御 300%上昇する\n②敵軍部隊数×10%を防御効果に加算する",
+ "categoryLinks": [
+  {
+   "href": "skills-heitan.html",
+   "label": "兵站スキル一覧を見る"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全 兵站　確率 45% / 防御 300%上昇(敵軍部隊数×10%を防御効果に加算・模倣不可)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": null
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": null
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": null
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": null
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": null
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": null
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "鬼十河",
+   "rank": "A",
+   "afterSkill": "朝曇ノ明麗",
+   "afterRank": "S",
+   "target": "槍・砲・器",
+   "rate": "50%",
+   "effectShort": "防御 360%上昇+所領防御陣形配置時コスト消費-1(模倣不可)",
+   "afterTarget": "全",
+   "afterRate": "46%",
+   "afterEffectShort": "防御 290%上昇(所領防御陣形第4列配置時1.5倍+飛翔7取得・模倣不可、TRなし)"
+  },
+  {
+   "slot": "B",
+   "skill": "宝珠盛山",
+   "rank": "A",
+   "afterSkill": "朝曇ノ明麗",
+   "afterRank": "S",
+   "target": "槍・砲・器",
+   "rate": "50%",
+   "effectShort": "防御 240%上昇(所領防御陣形第肆列目配置時1.5倍+飛翔5取得・模倣不可)",
+   "afterTarget": "全",
+   "afterRate": "46%",
+   "afterEffectShort": "防御 290%上昇(所領防御陣形第4列配置時1.5倍+飛翔7取得・模倣不可、TRなし)"
+  },
+  {
+   "slot": "C",
+   "skill": "鬼愁揺穂",
+   "rank": "A",
+   "afterSkill": "宝珠盛山",
+   "afterRank": "A",
+   "target": "槍砲器",
+   "rate": "45%",
+   "effectShort": "防御 180%上昇(所領防御陣形の第壱列目か第弐列目に配置時、防御効果2倍・模倣不可)",
+   "afterTarget": "槍・砲・器",
+   "afterRate": "50%",
+   "afterEffectShort": "防御 240%上昇(所領防御陣形第肆列目配置時1.5倍+飛翔5取得・模倣不可)"
+  },
+  {
+   "slot": "S1",
+   "skill": "月寂ノ想愛",
+   "rank": "A",
+   "afterSkill": "戦陣 凪",
+   "afterRank": "A",
+   "target": "弓馬器騎",
+   "rate": "40%",
+   "effectShort": "防御 330%上昇(敵軍部隊数×2.5%を防御効果に加算・模倣不可)",
+   "afterTarget": "全 飛翔2",
+   "afterRate": "60%",
+   "afterEffectShort": "防御 110%上昇(自軍防御参加武将が30以上の時、防御効果2倍)"
+  },
+  {
+   "slot": "S2",
+   "skill": null,
+   "rank": null,
+   "afterSkill": null,
+   "afterRank": null,
+   "target": null,
+   "rate": null,
+   "effectShort": null,
+   "note": [
+    "S2はゲーム内の合成候補テーブルにもixagnoの表にも出てこないため空のまま。"
+   ]
+  }
+ ],
+ "notes": [
+  "2026-08-16 新規登録(担当K3)。カード画像はスキル欄が「牛鍋酒処LV10」表記のためB-00のLV10形式で、カード上の全情報を採用できる。",
+  "【カード画像から読んだもの】武将名「赤べこ」/ 職業「将」/ 極・覇表記なし / コスト2 / 統率 槍B・馬B・弓B・器B(4隅を個別にズームして確認、宝石の重なりなし) / 初期値 攻撃1300・防御1300・兵法130.0 / 指揮兵数 0/13000 / カードNo.2616 / スキル「牛鍋酒処 LV10」[A] 確率+45%・対象 全 兵站・防御300%上昇・敵軍部隊数×10%を防御効果に加算(模倣不可) / Illust ©NW／S,RKKD。",
+  "【外部ソースで調べたもの】成長値 攻撃+0・防御+0・兵法+0(ixanary.com/cards/2616「成長値が設定されていないので、成長しない」、ixawiki武将カード一覧(極)の成長値欄も0/0/0、ixagno.blog.fc2.com blog-entry-10055「成長：攻撃【0】防御【0】兵法【0】」の3ソース一致)。",
+  "統率は ixanary.com/cards/2616 の生HTML内JSON(yari:B / yumi:B / kiba:B / heiki:B)およびixawiki武将カード一覧(極)の行(B|B|B|B)とカード画像の3つが一致。",
+  "コスト2・指揮兵数13000はカード画像・ixanary(★0-0)・ixawiki一覧の3ソース一致。B-01の+0.5版の罠は成長表自体が存在しないため無関係。",
+  "章: ixagno.blog.fc2.com blog-entry-10055/10060 に「2024年11月開催の『るろうに剣心－明治剣客浪漫譚－京都動乱』とのコラボ限定カード」「ログインボーナス(イベント10日目)で配布」とあり、tools/chapter_guess.py の章期間表(28章=2024-08-09〜2025-02-06、うぐさん提供)に照らして28章と判断した。カードページ自体に章の記載があるわけではない(導出であって一次記載ではない)。",
+  "兵站キーワードを持つため categoryLinks に skills-heitan.html を張り、skills-heitan.html 側にも牛鍋酒処のエントリを追加した(A-2-7、双方向)。初期スキルはAランクかつどの合成テーブルにも登場しないため、A-3-9の例外規定にも当たらず data/skill/牛鍋酒処.json は作成していない。",
+  "TR段階: ixanary のカードページ・スキルページともにTR行が存在しない(生HTMLに TR1〜TR6 の文字列が0件)。そもそもスキル追加・鍛錬が行えないカード。",
+  "categoryLinks 9項目判定(A-3-9): 無尽×/撤退×/飛翔×/覇道×/不屈×/兵站○/卓越×/人数依存×(「敵軍部隊数」依存であって防御参加武将数依存ではない。同型の万里嵐壁もcategoryLinks無しで登録済み)/コスト減少×。兵站のみ該当。",
+  "2026-08-16: **ixanary と ixawiki が両方とも誤りだった。** どちらも「合成不可スキルです」「スキル追加は行うことができない」と明記していたが、うぐさんがゲーム内の合成候補テーブルを示し、実際には候補があると判明(候補スキル1=鬼十河 / 2=宝珠盛山 / 3=鬼愁揺穂 / 隠し候補=月寂ノ想愛)。標準2ソースが揃って誤っていた例。ixagno(blog-entry-10055)の表だけが正しく、1次はゲーム内と完全一致した。**移植後(2次)は ixagno にしか無い。** 初期スキル「牛鍋酒処」のixanaryページに合成テーブルが無いため A-3-0 の裏取りができていない。"
+ ],
+ "reviewedOk": true,
+ "wikiOldestComment": "2025-04-17",
+ "wikiCommentCount": 2,
+ "chGuess": "29章"
+}

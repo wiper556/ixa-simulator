@@ -1,0 +1,140 @@
+{
+ "name": "六角定頼",
+ "no": "31321",
+ "furigana": "ろっかくさだより",
+ "ch": "32章",
+ "cost": 5.5,
+ "troop": "弓馬焙騎攻",
+ "sub": "",
+ "effect": "自軍城主数10以上で攻撃効果3倍",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no31321_full.png",
+ "imageChar": "assets/img/characters/no31321_char.png",
+ "atkBase": 1260,
+ "atkGrowth": 73,
+ "defBase": 1080,
+ "defGrowth": 48,
+ "tacticsBase": 690,
+ "tacticsGrowth": 3.5,
+ "lv0Troops": 5340,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "S",
+  "uma": "S",
+  "ki": "A"
+ },
+ "initialSkill": "天弦ノ威軍",
+ "skillDetail": "S/TR6 確率 55% 攻撃 1450%上昇/対象:弓・馬・焙・騎　不屈2\n①攻撃 1450%上昇する\n②自軍城主数が10以上で攻撃効果が3倍になる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓・馬・焙・騎 不屈1　確率 45% / 攻撃 1000%上昇(自軍城主数10以上で3倍)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": "弓・馬・焙・騎 不屈1　確率 45% / 攻撃 1060%上昇(自軍城主数10以上で3倍)"
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": "弓・馬・焙・騎 不屈1　確率 45% / 攻撃 1120%上昇(自軍城主数10以上で3倍)"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": "弓・馬・焙・騎 不屈1　確率 45% / 攻撃 1200%上昇(自軍城主数10以上で3倍)"
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": "弓・馬・焙・騎 不屈1　確率 45% / 攻撃 1300%上昇(自軍城主数10以上で3倍)"
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": "弓・馬・焙・騎 不屈1　確率 45% / 攻撃 1400%上昇(自軍城主数10以上で3倍)"
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": "弓・馬・焙・騎 不屈2　確率 55% / 攻撃 1450%上昇(自軍城主数10以上で3倍)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "天地超克",
+   "rank": "SSS",
+   "afterSkill": "天地超克",
+   "afterRank": "SSS",
+   "target": "全 不屈1",
+   "rate": "46%",
+   "effectShort": "攻撃 9.6%×防御参加武将数(280人)=2688.0%",
+   "afterEffectShort": "攻撃 9.6%×防御参加武将数(280人)=2688.0%"
+  },
+  {
+   "slot": "B",
+   "skill": "勇冠三軍",
+   "rank": "SSS",
+   "afterSkill": "勇冠三軍",
+   "afterRank": "SSS",
+   "target": "全",
+   "rate": "45%",
+   "effectShort": "攻撃 50%+10.2%×防御参加武将数(280人)=2906.0%(模倣不可)",
+   "afterEffectShort": "攻撃 50%+10.2%×防御参加武将数(280人)=2906.0%(模倣不可)"
+  },
+  {
+   "slot": "C",
+   "skill": "摩利支天ノ法",
+   "rank": "SSS",
+   "afterSkill": "摩利支天ノ法",
+   "afterRank": "SSS",
+   "target": "部隊長",
+   "rate": "70%",
+   "effectShort": "所属部隊の部隊長が持つ模倣可能な初期スキルを通常攻撃/防御効果1.25倍にして模倣する",
+   "afterEffectShort": "所属部隊の部隊長が持つ模倣可能な初期スキルを通常攻撃/防御効果1.25倍にして模倣する"
+  },
+  {
+   "slot": "S1",
+   "skill": "天弦ノ威軍",
+   "rank": "S",
+   "afterSkill": "天弦ノ威軍",
+   "afterRank": "S",
+   "target": "弓・馬・焙・騎 不屈1",
+   "rate": "45%",
+   "effectShort": "攻撃 1000%上昇(自軍城主数10以上で3倍)",
+   "afterEffectShort": "攻撃 1000%上昇(自軍城主数10以上で3倍)"
+  },
+  {
+   "slot": "S2",
+   "skill": "万物神勇",
+   "rank": "SSS",
+   "afterSkill": "万物神勇",
+   "afterRank": "SSS",
+   "target": "全 撤退",
+   "rate": "43%",
+   "effectShort": "攻撃 (9.2×防御参加武将数)%上昇+撤退(陣での防御戦闘に参加しない)",
+   "afterEffectShort": "攻撃 (9.2×防御参加武将数)%上昇+撤退(陣での防御戦闘に参加しない)"
+  }
+ ],
+ "notes": [
+  "天パラレル(No.30000+元No.)。元カードNo.1321 と同じ武将の別バージョンで、カードは最初からスキルがTR6の状態で配られる(鍛錬表のTR6行の必要ポイントが「パラレル」なのはこのため)。",
+  "画像はスクリーンショット 2026-08-12 115551〜115617.png(元スクリーンショット/スクリーンショット_31321.png)から crop_card.py で切り抜いた。**このバッチはハートが暗く落ちており既定のTOL=20ではハート下端の12x3/9pxしか拾えず、切り抜きが12pxほど下にずれて指揮兵数の行が切れる。TOL=50にすると18x21/81pxの正しいハートを拾う**(No.1316等と同じ対処)。",
+  "カード画像から直接読んだのは 武将名/4隅バッジ(統率)/スキル名/攻撃・防御・兵法の初期値/コスト/指揮兵数/カードNo. で、いずれも元カードNo.1321 の登録値と一致した(槍A/弓S/馬S/器A)。ixanary.com/cards/31321/ の card JSON とも cost/capacity/attack/defence/intelligence が一致(ixanary は yumi/kiba が入れ替わっているためバッジはカード画像を正とした)。",
+  "成長値はパラレルのカード画像にも ixanary.com/cards/31321/ にも出ない(ixanary は未入力で 0/0/0、ページにも「成長値が設定されていないので、成長しない」と出る)。既に入力済みの旧パラレル 31286/31290/31301/31303 が4枚とも元カードと同一の成長値であることを ixanary の card JSON で確認し、さらに ixagno.blog.fc2.com の元カード個別記事(blog-entry-11140)の成長値表とも一致したため、元カードの値(攻73/防48/兵法3.5)を引き継いだ。",
+  "trTable・synthesisTable はスキルに紐づく値なので元カードと共通。ixanary.com/skills/天弦ノ威軍/ の生HTMLで鍛錬表(LV1〜TR6)と合成テーブル(1次/2次/3次)を、ixagno.blog.fc2.com blog-entry-11140 の鍛錬表・初期テーブル/左記スキル移植後の表を、それぞれ突き合わせて既存の元カード登録と一致することを確認した。",
+  "ch は元カードと同じ32章。ixagno.blog.fc2.com「パラレル天【一覧】」(blog-entry-11077)がパラレルを元カードと同じ章の節に並べている(31298〜31309=31章 / 31286〜31297=30章。元カード1298〜1309・1286〜1297の当サイト登録章と一致)ため、同じ規則で32章とした。ixawiki には 31316〜31321 も 1316〜1321 もページが無い(編集フォームが返る)。",
+  "sourceCharacters逆引き(A-3-11)はパラレル分を追記していない。skills.html の描画は db が kyoku/ketsu/既定の3種しか解釈せず(3447行付近)、tools/register/wireup.py の DB_OF_DIR にも busho-parallel が入っていないため、今の配線では天パラレルを sourceCharacters に載せる決まりが無い。候補スキル全行について元カードNo.1321 が各 data/skill/*.json の sourceCharacters に載っていることは確認済みで、逆引き自体は成立している。パラレルも載せるかどうかは配線の変更を伴うので管理側の判断を仰ぐ。"
+ ],
+ "categoryLinks": [
+  {
+   "href": "skills-fukutsu.html",
+   "label": "不屈スキル一覧を見る"
+  }
+ ],
+ "reviewedOk": true,
+ "wikiOldestComment": null,
+ "wikiCommentCount": null
+}

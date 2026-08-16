@@ -1,0 +1,115 @@
+{
+ "name": "戦陣 剣舞",
+ "rank": "A",
+ "baseRate": 100,
+ "target": "全 飛翔6",
+ "effectSummary": "A/LV10 確率 100% 攻撃・防御上昇/対象:全　飛翔6\n①攻撃 80%上昇する\n②防御 80%上昇する\n③卓越:追加確率30%で攻防効果が4倍になる",
+ "categoryLinks": [
+  {
+   "href": "skills-takuetsu.html",
+   "label": "卓越スキル一覧を見る"
+  },
+  {
+   "href": "skills-hishou-atk.html",
+   "label": "飛翔スキル一覧(攻撃)を見る"
+  }
+ ],
+ "sourceCharacters": [
+  {
+   "name": "安宅冬康",
+   "no": "2391",
+   "slot": "B",
+   "db": "kyoku"
+  },
+  {
+   "name": "悠久山安慈",
+   "no": "2612",
+   "slot": "C",
+   "db": "kyoku",
+   "note": [
+    "悠久山安慈(2612)のsynthesisTable C枠(2026-08-16、ixanary.com/skills/二重の極みの合成テーブルで確認)"
+   ]
+  },
+  {
+   "name": "平塚為広（2）",
+   "no": "7002",
+   "slot": "B",
+   "db": "kyoku"
+  },
+  {
+   "name": "仙石秀久（2）",
+   "no": "7009",
+   "slot": "C",
+   "db": "kyoku",
+   "note": [
+    "仙石秀久(7009)のsynthesisTable C枠(2026-08-16、ixanary.com/skills/無心武響の合成テーブルC列で確認)"
+   ]
+  },
+  {
+   "name": "板垣信方（2）",
+   "no": "7011",
+   "slot": "C",
+   "db": "kyoku",
+   "note": [
+    "板垣信方(7011)のsynthesisTable C枠(2026-08-16、ixanary.com/skills/御旗ノ守護者の合成テーブルC列で確認)"
+   ]
+  },
+  {
+   "name": "下間頼廉（2）",
+   "no": "2466",
+   "slot": "S1",
+   "db": "kyoku",
+   "note": [
+    "下間頼廉（2）(2466)のsynthesisTable S1枠(2026-08-16。A枠はskill=黒衣ノ元帥→afterSkill=本スキルのためA-3-12によりgrantedViaSkills側で参照、skillが本スキル自体なのはS1枠)"
+   ]
+  },
+  {
+   "name": "尼子経久（2）",
+   "no": "2467",
+   "slot": "S2",
+   "db": "kyoku",
+   "note": [
+    "尼子経久（2）(2467)のsynthesisTable S2枠(2026-08-16。1次S2=戦陣 剣舞[A]→2次S2=仙剣破斬[SSS]をixanary/ixawikiの2ソースで確認)"
+   ]
+  },
+  {
+   "name": "小田氏治（2）",
+   "no": "2469",
+   "slot": "S2",
+   "db": "kyoku",
+   "note": [
+    "小田氏治（2）(2469)のsynthesisTable S2枠(2026-08-16。1次S2=戦陣 剣舞[A]→2次S2=仙剣破斬[SSS])"
+   ]
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "仙剣破斬",
+  "rank": "SSS"
+ },
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全 飛翔6　確率 100% / 攻撃 80%上昇+防御 80%上昇(卓越追加確率30%で攻防効果4倍)"
+  }
+ ],
+ "notes": [
+  "A-3-9例外(2026-08-16追加): 移植後合成候補(afterSkill)が既存ページ持ちの仙剣破斬[SSS]のため、Aランクだが単独ページ作成対象。",
+  "ixanary.com個別スキルページ(skills/戦陣 剣舞)で確率+100%/対象全 飛翔6/攻撃80%上昇/防御80%上昇/卓越追加確率30%で攻防効果4倍を確認(2026-08-16)。No.2391(安宅冬康)・No.7002(平塚為広)ともB枠候補としてixanary個別スキルページ(skills/星詠ム仁将, skills/訣歌天響)で確認。",
+  "このスキルを合成素材にすると仙剣破斬[SSS]に変化する(No.2391・No.7002ともB枠、ixanary.com個別スキルページの合成テーブルで確認)。"
+ ],
+ "grantedViaSkills": [
+  {
+   "skill": "霊妙秘剣",
+   "rank": "A"
+  },
+  {
+   "skill": "破克閃剣",
+   "rank": "A"
+  },
+  {
+   "skill": "黒衣ノ元帥",
+   "rank": "S"
+  }
+ ]
+}

@@ -1,0 +1,41 @@
+{
+ "name": "天正筆才",
+ "rank": "A",
+ "baseRate": 100,
+ "target": "織田信長",
+ "noMimic": true,
+ "effectSummary": "A/LV10 確率 100% 織田信長の所持スキル発動率を2倍にする/対象:織田信長\n模倣不可\n①同部隊セット時のみ有効\n②織田信長の所持スキル発動率を2倍にする",
+ "sourceCharacters": [
+  {
+   "name": "弥助",
+   "no": "2430",
+   "slot": "S2",
+   "db": "kyoku"
+  },
+  {
+   "name": "安楽庵策伝",
+   "no": "2790",
+   "slot": "S2",
+   "db": "kyoku",
+   "note": [
+    "安楽庵策伝(2790)のsynthesisTable S2枠(2026-08-16)"
+   ]
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "遁世影武者",
+  "rank": "B"
+ },
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "織田信長　確率 100% / 織田信長の所持スキル発動率を2倍にする(同部隊セット時のみ有効・模倣不可)"
+  }
+ ],
+ "notes": [
+  "2026-08-16作成。A-3-9の例外ルール(移植後合成候補afterSkillが既にskills.htmlページを持つ遁世影武者[B]である元スキル)によりAランクだがページ作成対象。",
+  "ixanary.com/skills/天正筆才(確率+100%/対象織田信長/効果は模倣不可)、およびNo.2430弥助の初期スキル漆黒ノ牛鬼のixanary合成テーブル(1次S2列=天正筆才[A]、2次S2列=遁世影武者[B])で確認。categoryLinksは9項目いずれも該当なし。",
+  "No.2430弥助(S2枠、担当範囲内)の黄丸化検証(2026-08-16)で新規作成。data/skill/遁世影武者.jsonのgrantedViaSkillsに本スキルを追記した。"
+ ]
+}

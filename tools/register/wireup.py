@@ -13,6 +13,7 @@ _sys.path.insert(0, _os.path.join(ROOT, "tools", "register"))
        1次候補として載っている枠の2次(武将側の afterSkill)から決める
   S-04 KP_LINKED_SKILLS に足す
   S-06 一覧ページ(skills-*.html)側の sourceCharacters を正本に合わせる
+  S-07 一覧ページに、categoryLinks はあるのに行そのものが無いスキルを足す
 """
 import collections
 import datetime
@@ -35,6 +36,13 @@ TODAY = datetime.date.today().isoformat()
 # どちらも #No で busho/{No}.html へ転送されるので db は "kyoku" のまま(S-07)。
 DB_OF_DIR = collections.OrderedDict([
     ("busho-kyoku", "kyoku"), ("busho-kyoku-ps", "kyoku"),
+    ("busho-parallel", None), ("busho-toku-s", "toku"),
+    # **db は audit_characters.db_want と同じ値でなければ S-07 が鳴る。**
+    # db_want が "toku" を返すのは特シークレットだけなので、特・上・序は
+    # db 無し(characters.html#No → busho/{No}.html へ転送)にしておく。
+    # ここに一度 "tokuall" と書いてしまっていた(誰も登録していないので
+    # 表には出ていなかったが、特武将を1体入れた時点で鳴るところだった)。
+    ("busho-toku", None), ("busho-ue", None), ("busho-jo", None),
     ("busho-ketsu", "ketsu"), ("busho", None)])
 
 
@@ -153,6 +161,11 @@ for no in NOS:
 # 武将がどのDBに居るかで書き込む配列を選ぶ。
 LINKED_OF_DIR = {
     "busho-kyoku-ps": ("characters-kyoku-ps.html", "KP_LINKED_SKILLS"),
+    "busho-parallel": ("characters-parallel.html", "TP_LINKED_SKILLS"),
+    "busho-toku-s": ("characters-toku-s.html", "TS_LINKED_SKILLS"),
+    "busho-toku": ("characters-toku.html", "TK_LINKED_SKILLS"),
+    "busho-ue": ("characters-ue.html", "UE_LINKED_SKILLS"),
+    "busho-jo": ("characters-jo.html", "JO_LINKED_SKILLS"),
     "busho-kyoku": ("characters-kyoku.html", "KK_LINKED_SKILLS"),
     "busho": ("characters.html", "LINKED_SKILLS"),
 }
@@ -184,7 +197,10 @@ for (page, var), names in sorted(want.items()):
     body = m.group(2).rstrip()
     add = [n for n in dict.fromkeys(names) if n and ("'%s'" % n) not in body]
     if add:
-        body += "".join(", '%s'" % n for n in add)
+        # 空配列(新設ページ)のときに ", 'x'" を足すと [, 'x'] になって
+        # JSが壊れる。最初の1件だけ区切りを付けない。
+        sep = ", " if body.strip() else ""
+        body += sep + ", ".join("'%s'" % n for n in add)
         io.open(p, "w", encoding="utf-8", newline="").write(
             t[:m.start()] + m.group(1) + body + m.group(3) + t[m.end():])
     print("S-04 %-20s へ %d件 追加: %s" % (var, len(add), " ".join(add)))
@@ -224,6 +240,7 @@ def sync_list_pages():
         fp = os.path.join(ROOT, page)
         text = io.open(fp, encoding="utf-8", newline="").read()
         hits = []
+        touched = False
         for m in re.finditer(r'\{name:"([^"]+)", skillPage:"', text):
             nm = m.group(1)
             if nm not in master:
@@ -236,6 +253,40 @@ def sync_list_pages():
             inner = text[open_at + 1:close_at]
             listed = set(re.findall(r'no:"(\d+)"', inner))
             missing = [c for c in master[nm] if str(c.get("no")) not in listed]
+            # 2026-08-16: ここは**足すだけ**で、既にある行の中身は見ていなかった。
+            # 正本の slot や名前を直しても一覧ページには反映されず、
+            # 「魔導禁鎖が一覧では移植不可のまま」「北条早雲が(2)無しのまま」と
+            # いった食い違いが77件たまっていた。既存の行も正本に合わせる。
+            fixed = inner
+            for c in master[nm]:
+                pat = re.compile(r'\{name:"[^"]*", no:"%s", slot:"[^"]*"([^{}]*)\}'
+                                 % re.escape(str(c.get("no"))))
+                mm = pat.search(fixed)
+                if not mm:
+                    continue
+                tail = ', db:"%s"' % c["db"] if c.get("db") else ""
+                new = '{name:"%s", no:"%s", slot:"%s"%s}' % (
+                    c.get("name"), c.get("no"), c.get("slot"), tail)
+                if mm.group(0) != new:
+                    print("  S-06 %-22s %-14s No.%s を正本に合わせる"
+                          % (page, nm, c.get("no")))
+                    fixed = fixed[:mm.start()] + new + fixed[mm.end():]
+                    total += 1
+                # 正本で枠がまとまった(S1とS2が S1・S2 になった等)のに、
+                # ページ側に同じ武将の行が2つ残っていることがある
+                rest = pat.search(fixed, mm.start() + len(new))
+                while rest:
+                    cut = fixed[:rest.start()].rstrip().rstrip(",")
+                    fixed = cut + fixed[rest.end():]
+                    print("  S-06 %-22s %-14s No.%s の重複行を落とす"
+                          % (page, nm, c.get("no")))
+                    total += 1
+                    rest = pat.search(fixed, mm.start() + len(new))
+            if fixed != inner:
+                text = text[:open_at + 1] + fixed + text[close_at:]
+                close_at += len(fixed) - len(inner)
+                inner = fixed
+                touched = True
             if missing:
                 hits.append((close_at, inner, nm, missing))
         # 後ろから差し込む(前を先に触ると位置がずれる)
@@ -255,9 +306,14 @@ def sync_list_pages():
             head = inner.rstrip()
             joined = (head + ",\n" if head else "\n") + ",\n".join(rows) + "\n" + ind[:-2]
             text = text[:close_at - len(inner)] + joined + text[close_at:]
-        if hits:
+        if hits or touched:
             io.open(fp, "w", encoding="utf-8", newline="").write(text)
-    print("S-06 一覧ページへ %d件 追記" % total)
+    print("S-06 一覧ページを %d件 直した(追記+正本合わせ)" % total)
 
 
 sync_list_pages()
+
+# S-07 は S-06 のあと。S-06 が既存行を正本に合わせてから、残った
+# 「行そのものが無い」ぶんを足す(逆にすると足した行をもう一度直すことになる)。
+import listrows                                              # noqa: E402
+listrows.main(write=True)

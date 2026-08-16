@@ -46,3 +46,16 @@
 2026-08-15	-1	hooks:tools/audit_selftest.py	audit_selftest.py: 効果文の数値の前に半角スペースを入れて統一した(ユーザー判断)ため、注入の目印2件が data と一致せず skip になっていた。目印を「攻撃 390%上昇」に合わせただけで、検査そのものは変えていない
 2026-08-16	-2	hooks:tools/audit_characters.py,hooks:tools/prerender.py	無尽スキル一覧を攻撃用/防御用の2ページに割った(ユーザー依頼)ことへの追従。prerender.py は事前描画の対象を skills-mujin.html/skills-cost.html から -atk/-def に差し替え。audit_characters.py は categoryLinks の判定を、飛翔と同じく**ページ名の一部**で見る形にした(どちらか片方に載っていればよい)。検査を弱めるものではなく、分割に合わせて対象を追随させるもの
 2026-08-16	-1	hooks:tools/gate_selftest.py	gate_selftest.py: ベースラインが空(監査0件なら空になる)のとき、A-01の筋書きが [,{…}] という壊れたJSONを作り、門番がJSONDecodeErrorで落ちて「止まったが理由が違う」と判定されCIが赤になっていた。空も正しい状態として扱うようにした。検査を弱めるものではない
+2026-08-16	-1	hooks:tools/audit_characters.py	audit_characters.py に検査を1つ足した(緩めるのではなく増やす)。sourceCharacters の slot が武将の synthesisTable の実枠と一致しているかを見る。No.1279 荒木村重（2）の魔導禁鎖が A・B 枠に載っているのにスキル側は「移植不可」だった(ユーザー指摘)。全件で26件あり、うち5件は移植不可なのに実は移植できるという、使い方を間違えさせる誤りだった。逆引きの有無しか見ていなかったので今まで通っていた
+2026-08-16	-1	hooks:tools/audit_selftest.py	audit_selftest.py: 新しく足した検査「slotが実枠と違う」の筋書きを追加。検査を1つ増やしたぶん未カバーが上限を超えていたので、上限を緩めるのではなく筋書きのほうを書いた
+2026-08-16	-1	hooks:tools/build_data.py	攻撃/防御シミュレーターの武将候補を絞り込むため、data/busho の troop から generalSkillAxis を書き出す処理を build_data.py に足した(検査を緩める変更ではなく生成物を1つ増やしただけ)
+2026-08-16	-1	hooks:tools/audit_characters.py	監査に「同じスキルなのに武将により発動確率が違う」検査を追加(検査を増やす変更)。No.2402の再調査から横断で4件の食い違いが見つかり、うち1件はLV1の確率にLV10の効果を組み合わせていた
+2026-08-16	-1	hooks:tools/audit_characters.py	監査に「同じレアリティに完全同名の武将がいる」検査を追加(検査を増やす変更)。武将名の（N）はレアリティごとの通し番号だとゲーム内確認で判明したため、同一レアリティ内の同名は番号漏れとして鳴らす
+2026-08-16	-5	hooks:tools/audit_characters.py,hooks:tools/extract_data.py,hooks:tools/gen_detail_pages.py,hooks:tools/lock.py,hooks:tools/prerender.py	武将データベースに天パラレル(characters-parallel.html / data/busho-parallel)と特シークレット(characters-toku-s.html / data/busho-toku-s)の2ページを新設し、9箇所の配線を足した。検査を緩める変更ではなく対象を増やす変更
+2026-08-16	-2	hooks:tools/audit_characters.py,hooks:tools/build_data.py	新DB2つ(天パラレル/特シークレット)の配線漏れを塞いだ。build_data.LIST_FIELDS に新配列を追加(無いと一覧ページに鍛錬表まで全部書き出される)、audit に extraAll と db=toku の判定を追加。検査を緩める変更ではない
+2026-08-16	-1	hooks:tools/audit_characters.py	「同じレアリティに同名」の検査からパラレル(3xxxx/4xxxx)を除外。パラレルは元カードと同じ武将の別バージョンで同名が正しく、番号を振ると元カードと見分けがつかなくなる。検査側の穴
+2026-08-16	-6	hooks:tools/audit_characters.py,hooks:tools/build_data.py,hooks:tools/extract_data.py,hooks:tools/gen_detail_pages.py,hooks:tools/lock.py,hooks:tools/prerender.py	特武将データベース(characters-toku.html / data/busho-toku)を新設し9箇所に配線。武将はまだ入れない器のみ。検査を緩める変更ではない
+2026-08-16	-1	hooks:tools/audit_characters.py	監査D-15に noSynthesis の例外を追加。赤べこ(2616)のように合成不可のカードは合成表が空なのが正しい姿で埋めようがない(うぐさん判断)
+2026-08-16	-1	hooks:tools/audit_characters.py	監査D-15のnoSynthesis例外のコメントを、赤べこの実例に合わせて訂正。ixanary/ixawikiが「合成不可」と書いていても実際には候補があった例があるので、情報源の記述だけを根拠に立てない旨を明記
+2026-08-16	-6	hooks:tools/audit_characters.py,hooks:tools/build_data.py,hooks:tools/extract_data.py,hooks:tools/gen_detail_pages.py,hooks:tools/lock.py,hooks:tools/prerender.py	上武将(characters-ue.html / data/busho-ue)と序武将(characters-jo.html / data/busho-jo)のデータベースを新設し、11箇所に配線した。あわせて章と攻防の集計が data/busho* を全部見ていなかったのを直した(パラレル30枚に章が付いていなかった)。検査を緩める変更ではなく対象を増やす変更
+2026-08-16	-1	hooks:tools/audit_selftest.py	今日足した検査2つ(確率が武将により違う / 同じレアリティに同名)に自己テストの注入ケースを置き、（N）の振り直しで注入位置を見失っていた slotが実枠と違う のアンカーを武将名からカードNo.に変えた。検査を緩める変更ではない

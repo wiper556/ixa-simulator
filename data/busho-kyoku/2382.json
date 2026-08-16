@@ -125,6 +125,16 @@
   }
  ],
  "notes": [
-  "45do.info+ixagno.blog.fc2.com(blog-entry-10093)確認済み: A/Bの月暈は移植後「志半ノ矛楯」に、Cの入来神舞は移植後「飛蝶野分」に変化(自己参照ではない)"
- ]
+  "45do.info+ixagno.blog.fc2.com(blog-entry-10093)確認済み: A/Bの月暈は移植後「志半ノ矛楯」に、Cの入来神舞は移植後「飛蝶野分」に変化(自己参照ではない)",
+  "2026-08-16黄丸化検証(A-1〜A-5): rankGrades(槍S/馬B/弓A/器A)はカード画像の4隅バッジを個別にズームして再確認し、ixawiki.com(BushoCard/2382留守政景)の基本ステータス表とも一致。基礎値/成長値/コスト/指揮兵数(★0-0=3740)はixanary.com(cards/2382)生HTMLとixawikiの両方で一致確認。",
+  "synthesisTableはixanary.com(skills/月暈)の合成テーブル(1次/2次/3次)生HTMLと、ixawiki.com(BushoCard/2382留守政景)のスキル追加合成テーブルの2ソースで突き合わせ完全一致を確認: A/B=月暈[A]→志半ノ矛楯[A]、C=入来神舞[S]→飛蝶野分[B]、S1/S2=志半ノ矛楯[A]自己参照。3次候補はixanary(風狂幻術)とixawiki(宿木)で食い違うが1次/2次(skill/afterSkill)には影響しないため無視。",
+  "sourceCharacters逆引き確認(A-3-11): 入来神舞.jsonのsourceCharactersに留守政景(2382)がslot Cで登録済み一致。飛蝶野分.jsonはgrantedViaSkills(入来神舞経由)で辿れる構造のため直接列挙は不要(既存の正しい状態、notesにも2382が明記されている)。月暈・志半ノ矛楯はA以下かつafterSkillがS+ページを持たないためページ無しが正しい(該当なし)。",
+  "trTable: ixanary生HTML(skills/月暈)でLV10/TR1(300%)/TR2(390%)のみ存在しTR3以降は無いことを確認。",
+  "categoryLinks(A-2): 無尽/撤退/覇道/不屈/飛翔/兵站/人数依存/卓越/コスト減少の9項目いずれにも該当せず(効果は「自軍1部隊での攻撃時に攻撃効果3倍」という単騎攻撃系)、categoryLinksフィールド自体が無いのが正しい状態。",
+  "章(28章)はixanary.com/ixawiki.comのカードページ双方に章の直接記載が無く一次情報源では裏取りできないが、既存登録値をそのまま維持(矛盾する情報は見つからず)。"
+ ],
+ "reviewedOk": true,
+ "wikiOldestComment": "2024-12-21",
+ "wikiCommentCount": 2,
+ "chGuess": "28章"
 }

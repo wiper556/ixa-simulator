@@ -1,0 +1,119 @@
+{
+ "name": "鈴木重幸",
+ "no": "2724",
+ "ch": "8章",
+ "cost": 2.5,
+ "troop": "全防",
+ "sub": "",
+ "effect": "攻撃部隊の武将攻撃力を70%低下",
+ "furigana": "すずきしげゆき",
+ "illustrator": "小森ニコ",
+ "imageFull": "assets/img/characters/no2724_full.png",
+ "imageChar": "assets/img/characters/no2724_char.png",
+ "atkBase": 670,
+ "atkGrowth": 16.0,
+ "defBase": 540,
+ "defGrowth": 19.0,
+ "tacticsBase": 520.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2650,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "B",
+  "uma": "B",
+  "ki": "S"
+ },
+ "initialSkill": "落石の計",
+ "skillDetail": "B/LV10 確率 100% 攻撃部隊の武将攻撃力を70%低下/対象:全\n①攻撃部隊の武将攻撃力を70%低下させる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 攻撃部隊の武将攻撃力を70%低下"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "弓陣の極み",
+   "rank": "B",
+   "afterSkill": "戦陣 千鳥",
+   "afterRank": "B",
+   "target": "弓",
+   "rate": "30%",
+   "effectShort": "防御 30%上昇",
+   "afterTarget": "弓馬",
+   "afterRate": "45%",
+   "afterEffectShort": "防御 30%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "砲陣の極み",
+   "rank": "B",
+   "afterSkill": "八咫烏",
+   "afterRank": "B",
+   "target": "砲",
+   "rate": "30%",
+   "effectShort": "防御 30%上昇",
+   "afterTarget": "砲器",
+   "afterRate": "35%",
+   "afterEffectShort": "防御 30%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "落石の計",
+   "rank": "B",
+   "afterSkill": "今孔明八陣",
+   "afterRank": "B",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "攻撃部隊の武将攻撃力を70%低下",
+   "afterTarget": "全",
+   "afterRate": "40%",
+   "afterEffectShort": "防御 20%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "今孔明八陣",
+   "rank": "B",
+   "afterSkill": "義兵進軍",
+   "afterRank": "C",
+   "target": "全",
+   "rate": "40%",
+   "effectShort": "防御 20%上昇",
+   "afterTarget": "槍弓馬砲",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 7%上昇+速度 10%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "八龍堅陣",
+   "rank": "B",
+   "afterSkill": "疾風怒濤",
+   "afterRank": "B",
+   "target": "全",
+   "rate": "35%",
+   "effectShort": "防御 25%上昇",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 5%上昇+速度 32%上昇"
+  }
+ ],
+ "notes": [
+  "2026-08-16 新規登録(担当K6)。カード画像はスキル表記がLV1の育成前カードのため、画像から採ったのは武将名/統率(4隅バッジ)/スキル名/攻撃・防御・兵法の初期値/覇でないこと/カードNo.の6項目のみ(B-00)。",
+  "武将名: ixawiki武将カード一覧(極)に「鈴木重幸」は No.2724 の1枚しか無いため無印。",
+  "統率は画像の4隅バッジで槍B/馬B/弓B/器Sを個別に拡大して確認。ixawiki(BushoCard/2724鈴木重幸)の「統率力 槍B 馬B 弓B 器S」と一致。",
+  "コスト2.5・指揮兵数2650・初期値670/540/520・成長値+16/+19/+2.0・ふりがな・絵師(小森ニコ)は ixanary.com(cards/2724) と ixawiki.com(BushoCard/2724鈴木重幸) の2ソースで完全一致。lv0Troopsはixanaryの★0-0(2650)。カード画像の指揮兵数0/4050は極限突破時の値なので採用していない(B-01)。",
+  "スキル効果はLV1カードのため外部ソースを採用。ixanary/ixawikiともLV1=25%低下・LV10=70%低下で完全一致。TR段はどちらのソースにも無い。",
+  "合成候補はixanary.com(skills/落石の計)の1次/2次と ixawiki(BushoCard/2724)の合成候補テーブルの2ソースで突き合わせ(A=弓陣の極み[B]→戦陣 千鳥[B]、B=砲陣の極み[B]→八咫烏[B]、C=落石の計[B]→今孔明八陣[B]、S1=今孔明八陣[B]→義兵進軍[C]、S2=八龍堅陣[B]→疾風怒濤[B])。S2枠の2次だけはixawiki側が「S2のS1 []」という未記入のプレースホルダのままだったため、ixanary側の「攻速：疾風怒濤 B」を採用した(それ以外の4枠は2ソース完全一致)。",
+  "C枠に初期スキル落石の計が載っており、その移植後がS1枠のスキル(今孔明八陣)と一致することを確認した(A-3-13の裏取り手段)。",
+  "各枠のtarget/rate/effectShortは候補スキル自身のixanaryページのLV10行から転記。候補は全てB/Cランクで、初期スキル落石の計もBランクのため新規スキルページ作成は不要(A-3-9)。",
+  "章はixanary.com/ixawiki.comのカードページに記載が無く未確認。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "reviewedOk": true,
+ "wikiOldestComment": "2014-10-02",
+ "wikiCommentCount": 226,
+ "chGuess": "8章",
+ "chSource": "wikiOldestComment"
+}

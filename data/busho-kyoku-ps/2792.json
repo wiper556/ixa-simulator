@@ -1,7 +1,7 @@
 {
  "name": "アルメイダ",
  "no": "2792",
- "ch": "未確認",
+ "ch": "21章",
  "cost": 0.0,
  "troop": null,
  "sub": "",
@@ -101,7 +101,12 @@
   "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
   "合成候補(A/B/C/S1/S2の5枠)はixawiki(BushoCard/2792アルメイダのスキル追加合成表)で全枠のskill/afterSkillを確認し、ixanary.comの登録時情報と一致することを見た(2ソース一致)。",
   "章は情報源に記載が無いため未確認。",
-  "2026-08-15黄丸化検証: effect(top)がnullだったため補完。A候補「針薬方」のeffectShortに防御14%上昇の記載漏れ、S2候補「大願ノ道頓堀」のeffectShortに銅銭獲得ボーナス(全防御自部隊被害兵士ポイントの4%+獲得防御ポイントの10%)の記載漏れがあり、ixanary.com該当スキル個別ページの生HTMLで確認し補完。afterEffectShort内の「攻撃52%上昇 防御52%上昇」のようなスペース区切りは他行と揃えて「+」区切りに統一。"
+  "2026-08-15黄丸化検証: effect(top)がnullだったため補完。A候補「針薬方」のeffectShortに防御14%上昇の記載漏れ、S2候補「大願ノ道頓堀」のeffectShortに銅銭獲得ボーナス(全防御自部隊被害兵士ポイントの4%+獲得防御ポイントの10%)の記載漏れがあり、ixanary.com該当スキル個別ページの生HTMLで確認し補完。afterEffectShort内の「攻撃52%上昇 防御52%上昇」のようなスペース区切りは他行と揃えて「+」区切りに統一。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
  ],
- "reviewedOk": true
+ "reviewedOk": true,
+ "wikiOldestComment": "2021-02-17",
+ "wikiCommentCount": 57,
+ "chGuess": "21章",
+ "chSource": "wikiOldestComment"
 }

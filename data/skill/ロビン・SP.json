@@ -1,0 +1,33 @@
+{
+ "name": "ロビン・SP",
+ "rank": "S",
+ "baseRate": 100,
+ "target": "全",
+ "effectSummary": "S/LV10 確率 100% 対象:全\n模倣不可\n①防御戦闘時この武将が持つ卓越スキルは二度卓越できる(2回目の卓越確率は+10%される)",
+ "categoryLinks": [
+  {
+   "href": "skills-takuetsu.html",
+   "label": "卓越スキル一覧を見る"
+  }
+ ],
+ "sourceCharacters": [
+  {
+   "name": "ロビンマスク",
+   "no": "2633",
+   "slot": "移植不可",
+   "db": "kyoku"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 防御戦闘時にこの武将の卓越スキルが二度卓越できる(2回目の卓越確率+10%・模倣不可)"
+  }
+ ],
+ "notes": [
+  "ixanary.com のスキル個別ページ(skills/{name}/)の生HTMLから登録(カードページ側には合成テーブルが無いため)。",
+  "ixanaryの合成素材欄が「合成不可スキルです」のため移植不可。",
+  "TR(鍛錬)の段は情報源に存在しない。"
+ ]
+}

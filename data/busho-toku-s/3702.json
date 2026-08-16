@@ -1,0 +1,140 @@
+{
+ "name": "千利休",
+ "no": "3702",
+ "ch": "1-2章",
+ "cost": 1.0,
+ "troop": "全",
+ "sub": "",
+ "effect": "デッキ上武将回復率20%上昇",
+ "furigana": "せんのりきゅう",
+ "illustrator": "西村キヌ",
+ "imageFull": "assets/img/characters/no3702_full.png",
+ "imageChar": "assets/img/characters/no3702_char.png",
+ "atkBase": 460,
+ "atkGrowth": 14,
+ "defBase": 460,
+ "defGrowth": 14,
+ "tacticsBase": 475,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 1100,
+ "rankGrades": {
+  "yari": "D",
+  "yumi": "C",
+  "uma": "D",
+  "ki": "B"
+ },
+ "initialSkill": "一期一会",
+ "skillDetail": "C/LV10 確率 100% デッキ上武将回復率20%上昇/対象:全\n①デッキ上武将回復率が20%上昇する\n②所持しているだけでデッキ上にある全武将のHPが回復する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / デッキ上武将回復率20%上昇(所持しているだけでデッキ上の全武将のHPが回復)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": null
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": null
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": null
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": null
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": null
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": null
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "車懸り 白狐",
+   "rank": "B",
+   "afterSkill": "車懸り 白狐",
+   "afterRank": "B",
+   "target": "槍弓馬",
+   "rate": "20%",
+   "effectShort": "攻撃 30%上昇",
+   "afterEffectShort": "攻撃 30%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "疾風怒濤",
+   "rank": "B",
+   "afterSkill": "疾風怒濤",
+   "afterRank": "B",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "攻撃 5%上昇+速度 32%上昇",
+   "afterEffectShort": "攻撃 5%上昇+速度 32%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "剛勇無双",
+   "rank": "B",
+   "afterSkill": "剛勇無双",
+   "afterRank": "B",
+   "target": "槍馬砲",
+   "rate": "30%",
+   "effectShort": "攻撃 25%上昇",
+   "afterEffectShort": "攻撃 25%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "神速",
+   "rank": "A",
+   "afterSkill": "神速",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "速度 55%上昇",
+   "afterEffectShort": "速度 55%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "神算鬼謀",
+   "rank": "A",
+   "afterSkill": "神算鬼謀",
+   "afterRank": "A",
+   "target": "槍器",
+   "rate": "45%",
+   "effectShort": "攻撃 10%上昇",
+   "afterEffectShort": "攻撃 10%上昇"
+  }
+ ],
+ "notes": [
+  "2026-08-16 新規登録。カード画像はLV1形式のためB-00に従い、画像から採ったのは 武将名/統率(4隅バッジ)/スキル名/攻撃・防御・兵法の初期値/覇でないこと/カードNo. の6項目のみ。",
+  "他の項目は ixanary.com(cards/3702、skills/一期一会)と ixawiki.com(BushoCard/3702千利休、武将カード一覧(特))の2ソースで確認し、全項目が一致した。",
+  "指揮兵数はixanaryの★0-0=1100(B-01)。カード画像の「限界突破 0/1700」はixanaryの限界突破列1700と一致する(限界突破列には+0.5版が無いので一致するのが正しい)。",
+  "スキル効果はLV10の値(デッキ上武将回復率20%上昇)。カード上のLV1表記(5%上昇)は採らない。",
+  "skillDetailの②「所持しているだけでデッキ上にある全武将のHPが回復する」はixawikiのLv10欄の※注記のみが出典で、ixanary側には記載が無い(1ソース)。",
+  "【No.3703ザビエル『天の福音』と効果文が完全に同じ件・2026-08-16に再検証して「正しい」と確定】別スキルだが LV10 の効果は本当に同一。(1)ixawiki・ixanary とも 一期一会/天の福音 の LV10 をどちらも「デッキ上武将回復率：20%上昇」と書いている。(2)LV1 は 一期一会=5%上昇 / 天の福音=6%上昇 と**違う値**で、これも両ソースが一致しており、カード画像(3702=5%、3703=6%)とも合う。丸ごとコピーなら LV1 も同じ値になるはずなので、コピペ跡ではない。(3)3ソース目 ixagno.blog.fc2.com(blog-entry-4079「特殊スキルの性能比較」)の HP回復系スキル表が 一期一会=20%上昇 / 天の福音=20%上昇 / 茶人の教え=15%上昇 / リジェネ=5%上昇 と並べており、20%が同値であることを別の書き手が独立に書いている。(4)ixawiki の No.3720曲直瀬道三のページは 一期一会(C枠)と 天の福音(S1枠)の両方の効果ボックスを**同じページ内に並べて**載せていて、そこでも両方 20%上昇。(5)ixagno(blog-entry-10761)は両者を「どちらが付いても良い」HP回復系スキルとして扱っている。効果文は変更しない。",
+  "鍛錬(TR)はixanary・ixawikiのどちらにも段が存在せず、LV1/LV10の2段のみ。",
+  "合成候補はixanary(skills/一期一会)の1次/2次と ixawiki(BushoCard/3702)の1次候補/2次候補で5枠すべて2ソース一致。1次・2次・3次がすべて同じ内容なので全枠が自己参照になる。",
+  "章はixanary・ixawikiに記載が無く、追加でixagno.blog.fc2.comも検索した(「千利休」30件・「一期一会」33件ヒットするが、千利休の記事は極の千利休(侘茶)についてのもので、この特カードの実装章は書かれていない)。未確認のまま。wikiの最古コメントは2011-09-01。",
+  "名前: 特レアリティに千利休は3702の1枚だけなので（N）は付けない。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "reviewedOk": true,
+ "wikiOldestComment": "2011-09-01",
+ "wikiCommentCount": 143,
+ "chGuess": "1-2章",
+ "chSource": "wikiOldestComment"
+}

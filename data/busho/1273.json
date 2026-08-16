@@ -1,6 +1,7 @@
 {
  "name": "北条氏直",
  "no": "1273",
+ "reviewedOk": true,
  "ch": "28章",
  "cost": 4.5,
  "troop": "全攻防",
@@ -125,6 +126,10 @@
   }
  ],
  "notes": [
-  "synthesisTable: 45do.info生HTML(skiladd_wrap)+ixanary.com(仁侯ノ決断スキルページの合成テーブル)で2ソース一致確認済み(2026-08-02)。45do.info上のページタイトルは「北条氏政」表記だが、これは45do.info側の誤記(同スキル仁侯ノ決断はixanary.com No.1273=北条氏直で確認、既存の北条氏政(5)はNo.1253で別スキル)。C行の閃裂討鬼は45do.info側で数値が伏字(●)だったが、skills.html側で豊臣秀吉【覇】(1274)B分の確定値(確率45%/攻撃50%上昇)に統合済みのためその値を採用"
- ]
+  "synthesisTable: 45do.info生HTML(skiladd_wrap)+ixanary.com(仁侯ノ決断スキルページの合成テーブル)で2ソース一致確認済み(2026-08-02)。45do.info上のページタイトルは「北条氏政」表記だが、これは45do.info側の誤記(同スキル仁侯ノ決断はixanary.com No.1273=北条氏直で確認、既存の北条氏政(5)はNo.1253で別スキル)。C行の閃裂討鬼は45do.info側で数値が伏字(●)だったが、skills.html側で豊臣秀吉【覇】(1274)B分の確定値(確率45%/攻撃50%上昇)に統合済みのためその値を採用",
+  "黄丸化検証(2026-08-16): カード画像no1273_full.pngの4隅バッジ(槍S/馬A/弓A/器S)を確認し一致。TR1〜TR5(攻防490〜790%・卓越17〜25%)はixanary.com(skills/仁侯ノ決断)の鍛錬表と全行完全一致(TR6無し)。synthesisTableはixanary.com+ixawiki.com(BushoCard/1273北条氏直)の2ソースでA/B/C/S1/S2全枠・afterSkillとも完全一致。仁侯ノ決断(A・B自己参照)・閃裂討鬼・至天ノ御剣・遠呂智ノ閃光のdata/skill側sourceCharactersに1273が正しいslotで記載済みを確認(逆引き済み)。"
+ ],
+ "wikiOldestComment": "2024-08-09",
+ "wikiCommentCount": 26,
+ "chGuess": "28章"
 }

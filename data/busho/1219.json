@@ -5,7 +5,7 @@
  "cost": 4,
  "troop": "全攻防",
  "sub": "",
- "effect": "部隊内全武将の初期スキルに「砲」対象を追加",
+ "effect": "部隊内全武将の全スキルに「砲」対象を追加",
  "furigana": "しまづよしひさ",
  "illustrator": "直良有祐",
  "imageFull": "assets/img/characters/no1219_full.png",
@@ -24,7 +24,7 @@
   "ki": "SS"
  },
  "initialSkill": "破邪轟砲",
- "skillDetail": "S/LV10 確率 50% 攻撃 200%上昇/対象:全\n①攻撃 200%上昇する\n②防御 200%上昇する\n③部隊内全武将の兵科対象の初期スキルに「砲」対象を追加する(TR1〜TR5は未確認)",
+ "skillDetail": "S/LV10 確率 50% 攻撃 200%上昇/対象:全\n①攻撃 200%上昇する\n②防御 200%上昇する\n③部隊内全武将の兵科対象の全スキルに「砲」対象を追加する",
  "trTable": [
   {
    "level": "LV10",
@@ -73,9 +73,9 @@
   {
    "slot": "S1",
    "skill": "四至ノ神域",
-   "rank": "SS",
+   "rank": "SSS",
    "afterSkill": "四至ノ神域",
-   "afterRank": "SS",
+   "afterRank": "SSS",
    "rate": "70%",
    "target": "自身",
    "effectShort": "自身が持つ初期スキルを通常攻撃/防御効果1.25倍にして模倣する",
@@ -94,6 +94,17 @@
   }
  ],
  "notes": [
-  "45do.info(生HTML skiladd_wrap)+ameameixa.com(スキルテーブル)の2ソース照合済み、両者一致(ameameixa側の表記「天頂ノ雷光」は45do.info/skills.html準拠の「天頂ノ電光」の表記揺れとみなす)"
- ]
+  "2026-08-16黄丸化検証: rankGrades(槍A/弓A/馬A/器SS)をカード画像バッジ4隅で照合、一致。ステータス初期値・成長値・cost4・lv0Troops4500はixanary.com(cards/1219)生HTMLの成長表と一致。",
+  "skillDetail修正: ③の対象範囲がixanary生HTMLでLV1「初期スキル」→LV10「全スキル」と変化することを確認、当ページはLV10相当のため「全スキル」に訂正(旧登録は「初期スキル」で誤り、TRなし2ソース確認済み)。data/skill/破邪轟砲.jsonも同様に修正。effect要約欄も合わせて訂正。",
+  "synthesisTableのランク誤り訂正: S1枠の四至ノ神域はrank/afterRankとも「SS」と誤登録されていたが、ixanary.com(skills/破邪轟砲)生HTMLとixawiki.com(BushoCard/1219島津義久)生HTMLの2ソースで正しくは「SSS」と確認し訂正(data/skill/四至ノ神域.json側は元々SSSで正しかった)。",
+  "名前表記: ixawiki.com(Busho/武将カード一覧)で「島津義久(6)」表記を確認、既存の「島津義久（6）」と一致(docs/character-registration-manual.md F-2(a)で未解決扱いだったが、実際には既に正しく変換済みだった)。",
+  "synthesisTable全体(A/B=破邪轟砲[S]→四至ノ神域[SSS]、C=神屋楯比売命[SS]自己参照、S1=四至ノ神域[SSS]自己参照、S2=天頂ノ電光[SSS]自己参照)をixanary.com(skills/破邪轟砲)生HTMLとixawiki.com(BushoCard/1219島津義久)生HTMLの2ソースで完全一致を確認(2026-08-16)。",
+  "sourceCharacters逆引き確認(A-3-11): 破邪轟砲(A・B)・神屋楯比売命(C)・四至ノ神域(S1)・天頂ノ電光(S2)いずれもdata/skill/配下に1219が記載済み(2026-08-16)。四至ノ神域.jsonのgrantedViaSkillsに破邪轟砲[S]が既に正しく設定されていることも確認。",
+  "categoryLinksチェック(A-3-9、9項目): 初期スキル破邪轟砲の「部隊内全武将のスキルに砲対象追加」は9項目のいずれにも該当しない。",
+  "章(24章)は情報源に記載が無く未確認のまま(ixanary/ixawikiともchapter情報を確認できず、既存の24章表記を維持)。"
+ ],
+ "reviewedOk": true,
+ "wikiOldestComment": "2022-08-05",
+ "wikiCommentCount": 21,
+ "chGuess": "23-24章"
 }

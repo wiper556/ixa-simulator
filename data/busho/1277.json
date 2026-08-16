@@ -1,11 +1,12 @@
 {
- "name": "石田三成",
+ "name": "石田三成（6）",
  "no": "1277",
+ "reviewedOk": true,
  "ch": "29章",
  "cost": 4.5,
  "troop": "全攻防",
  "sub": "飛翔17",
- "effect": "-",
+ "effect": "全攻防上昇／飛翔17",
  "furigana": "いしだみつなり",
  "illustrator": "直良有祐",
  "imageFull": "assets/img/characters/no1277_full.png",
@@ -24,7 +25,7 @@
   "ki": "A"
  },
  "initialSkill": "義陣絶刀",
- "skillDetail": "S/LV10 確率 55% 攻撃 840%上昇 防御 840%上昇/対象:全　飛翔17",
+ "skillDetail": "S/LV10 確率 55% 攻撃 840%上昇/対象:全　飛翔17\n①攻撃 840%上昇する\n②防御 840%上昇する",
  "categoryLinks": [
   {
    "href": "skills-hishou-atk.html",
@@ -63,7 +64,7 @@
   },
   {
    "level": "TR5",
-   "points": "最大鍛錬",
+   "points": "200",
    "effect": "全 飛翔17　確率 55% / 攻撃 1750%上昇 防御 1750%上昇"
   }
  ],
@@ -129,8 +130,13 @@
   }
  ],
  "notes": [
+  "2026-08-16: 武将名の（N）を、ixawikiの各カードページの一番古いコメントの日付順で振り直した。（N）はゲームには無く、同レアリティで同名が混ざらないようwiki利用者が出現順に付けた工夫。カードNo.順では10xxx番台(記念カード)で前後が逆転するため日付を使う(うぐさん指示)。",
   "カード画像照合済み: 槍A/弓S/馬S/器A",
   "ixanary.com生HTML照合(2026-08-02): カード画像のスキル欄にLV10とTR5(鍛錬)の2枠のみ表示されており、TR1〜TR4は実在しない。",
-  "45do.info(ordinary/0316)生HTML照合+ameameixa.com(post-12334「29章天武将スキル一覧」表のNo.1277行)の両ソースでA/B/C/S1/S2の並びが一致確認済み。A/Bは自身の初期スキル(義陣絶刀)がそのまま候補になる自己参照枠。"
- ]
+  "45do.info(ordinary/0316)生HTML照合+ameameixa.com(post-12334「29章天武将スキル一覧」表のNo.1277行)の両ソースでA/B/C/S1/S2の並びが一致確認済み。A/Bは自身の初期スキル(義陣絶刀)がそのまま候補になる自己参照枠。",
+  "黄丸化検証(2026-08-16)で3件の不備を発見し修正。(1)旧notesの「TR1〜TR4は実在しない」は誤りで、ixanary.com(skills/義陣絶刀)の鍛錬表でTR1(920%)〜TR5(1750%)まで全段一致確認、trTable自体は元々正しい値だったがTR5のpointsが「最大鍛錬」の独自表記だったため標準の「200」に統一(data/skill/義陣絶刀.json側は既に200で正しかった)。(2)skillDetailが「確率55% 攻撃840%上昇 防御840%上昇」の1行のみでスコープ語や①②形式が無かったため、data/skill/義陣絶刀.jsonの正しい書式(①攻撃840%上昇する②防御840%上昇する)に合わせて訂正。(3)トップレベルeffectフィールドが「-」のプレースホルダのままだったため「全攻防上昇／飛翔17」に補完。カード画像no1277_full.pngの4隅バッジ(槍A/馬S/弓S/器A)を確認し一致。synthesisTableのA・B自己参照(直前に訂正済み)含む全枠をixanary.com+ixawiki.com(BushoCard/1277石田三成)の2ソースで再確認し完全一致。義陣絶刀(A・B)・國才連豪(C・S1)・四天轟雷(S2)のdata/skill側sourceCharactersに1277が正しいslotで記載済みを確認(逆引き済み)。"
+ ],
+ "wikiOldestComment": "2025-02-08",
+ "wikiCommentCount": 21,
+ "chGuess": "29章"
 }

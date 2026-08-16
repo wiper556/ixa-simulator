@@ -1,0 +1,151 @@
+{
+ "name": "ロビンマスク",
+ "no": "2633",
+ "ch": "30章",
+ "cost": 4,
+ "troop": "全",
+ "sub": "",
+ "effect": "防御戦闘時、この武将が持つ卓越スキルは二度卓越できる(模倣不可)",
+ "furigana": "ろびんますく",
+ "illustrator": "ゆでたまご／集英社・キン肉マン製作委員会",
+ "imageFull": "assets/img/characters/no2633_full.png",
+ "imageChar": "assets/img/characters/no2633_char.png",
+ "atkBase": 1090,
+ "atkGrowth": 53,
+ "defBase": 1220,
+ "defGrowth": 64,
+ "tacticsBase": 540,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 4400,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "ロビン・SP",
+ "skillDetail": "S/LV10 確率 100% 対象:全\n模倣不可\n①防御戦闘時この武将が持つ卓越スキルは二度卓越できる(2回目の卓越確率は+10%される)",
+ "categoryLinks": [
+  {
+   "href": "skills-takuetsu.html",
+   "label": "卓越スキル一覧を見る"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 防御戦闘時にこの武将の卓越スキルが二度卓越できる(2回目の卓越確率+10%・模倣不可)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": null
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": null
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": null
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": null
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": null
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": null
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "筋骨隆々",
+   "rank": "S",
+   "afterSkill": "筋骨隆々",
+   "afterRank": "S",
+   "target": "全 不屈1 兵站",
+   "rate": "9%",
+   "effectShort": "攻撃 270%上昇+防御 270%上昇",
+   "afterTarget": "全 不屈1 兵站",
+   "afterRate": "9%",
+   "afterEffectShort": "攻撃 270%上昇+防御 270%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "叛虐之貴公子",
+   "rank": "S",
+   "afterSkill": "十束ノ神域",
+   "afterRank": "SS",
+   "target": "-",
+   "rate": null,
+   "effectShort": "所属部隊内の「足軽」「弓足軽」「騎馬兵」の兵士攻撃力と兵士防御力が12上昇(模倣不可・自部隊内重複不可)",
+   "afterTarget": "全 覇道",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 320%上昇+速度 70%上昇+覇道を持つため所属部隊の武将のスキルを無効化・発動率低下から保護"
+  },
+  {
+   "slot": "C",
+   "skill": "絶技兵術",
+   "rank": "S",
+   "afterSkill": "月詠ノ覇威",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "攻撃 390%上昇+防御 390%上昇+自軍全武将全スキルの卓越確率に10%加算(模倣不可・自軍内重複上限3)",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 344%上昇+防御 344%上昇+自軍全武将全スキルの卓越確率に15%加算(模倣不可・自軍内重複上限2)"
+  },
+  {
+   "slot": "S1",
+   "skill": "戦華雄渾",
+   "rank": "SS",
+   "afterSkill": "戦華雄渾",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "攻防 各140%上昇(卓越追加確率25%・4倍)",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻防 各140%上昇(卓越追加確率25%・4倍)"
+  },
+  {
+   "slot": "S2",
+   "skill": "月詠ノ覇威",
+   "rank": "SS",
+   "afterSkill": "月詠ノ覇威",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "攻撃 344%上昇+防御 344%上昇+自軍全武将全スキルの卓越確率に15%加算(模倣不可・自軍内重複上限2)",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 344%上昇+防御 344%上昇+自軍全武将全スキルの卓越確率に15%加算(模倣不可・自軍内重複上限2)"
+  }
+ ],
+ "notes": [
+  "キン肉マンコラボの極(プラチナ極)。カード画像はスキル欄が「LV1」表記のためB-00のLV1形式で、画像から採ったのは武将名・統率(4隅バッジ拡大)・スキル名・攻撃/防御/兵法の初期値・覇の有無・カードNo.の6項目のみ。効果量・成長値・指揮兵数・合成候補は外部ソースで確認した。",
+  "統率は槍S/馬A/弓A/器A(カード画像バッジ拡大)。ixawiki.com(BushoCard/2633ロビンマスク)と一致。",
+  "指揮兵数はカード表示が「限界突破」状態で0/5000。通常武将の限界突破はLV0値+6×100なので5000-600=4400。ixawiki.comの4400と一致する。ixanary.comだけ★0-0を5800(限界突破6400)としており明らかに食い違うため採らなかった。",
+  "コスト4・成長値+53/+64/+2.5はixanary.com(cards/2633)。初期値1090/1220/540はカード実物・ixanary・ixawikiで一致。",
+  "スキル効果(LV10・確率100%/2回目の卓越確率+10%)はixanary.comとixawiki.comが一致。",
+  "9項目チェック: 卓越が該当(skills-takuetsu.html)。他8項目は該当なし。",
+  "合成テーブルはixanary.com(skills/ロビン・SP)の1次/2次のみ。ixawiki側は空テンプレートで裏取りできていない(単一ソース)。",
+  "A-3-8の2ソース要件を満たせないため青丸のまま。合成テーブル(スロット)の裏が取れる情報源がixanary.comの1つしか無く(ixawikiの合成候補表は空テンプレート、ixagno.blog.fc2.comにキン肉マンコラボ極の個別記事が無い)、「単一ソースのまま黄色丸にしない」規約に従ってreviewedOkを立てていない。",
+  "加えて指揮兵数はixanary.comが5800、カード実物とixawiki.comが4400と大きく割れている。カード実物(限界突破0/5000)とixawikiの2つを根拠に4400を採ったが、ixanary側が誤りだという確証までは取れていないのでユーザー確認が要る。",
+  "2026-08-16: 章を 30章 に確定。キン肉マンコラボは2025年9月追加(うぐさん、2026-08-16)。30章は2025/8/8〜2026/2/5"
+ ],
+ "wikiCommentCount": 0
+}

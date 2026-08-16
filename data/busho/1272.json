@@ -1,6 +1,7 @@
 {
  "name": "豊臣秀次",
  "no": "1272",
+ "reviewedOk": true,
  "ch": "28章",
  "cost": 4,
  "troop": "弓馬器鉄防",
@@ -119,6 +120,10 @@
   }
  ],
  "notes": [
-  "synthesisTable: 45do.info生HTML(skiladd_wrap)+ixanary.com(夢妖剣スキルページの合成テーブル)で2ソース一致確認済み(2026-08-02)"
- ]
+  "synthesisTable: 45do.info生HTML(skiladd_wrap)+ixanary.com(夢妖剣スキルページの合成テーブル)で2ソース一致確認済み(2026-08-02)",
+  "黄丸化検証(2026-08-16): カード画像no1272_full.pngの4隅バッジ(槍S/馬S/弓A/器A)を確認し一致。TR1〜TR5(220/250/290/330/380)はixanary.com(skills/夢妖剣)の鍛錬表と全行完全一致(TR6無し)。synthesisTableはixanary.com+ixawiki.com(BushoCard/1272豊臣秀次)の2ソースでA/B/C/S1/S2全枠・afterSkillとも完全一致。夢妖剣(A・B自己参照)・永世ノ天隻・神羅聖域・三千世界神将のdata/skill側sourceCharactersに1272が正しいslotで記載済みを確認(逆引き済み)。"
+ ],
+ "wikiOldestComment": "2024-08-09",
+ "wikiCommentCount": 20,
+ "chGuess": "28章"
 }

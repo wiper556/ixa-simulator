@@ -3,7 +3,7 @@
  "no": "10074",
  "ch": "31章",
  "cost": 4,
- "troop": "全攻",
+ "troop": "全攻防",
  "sub": "",
  "effect": "攻防上昇／飛翔値として所属部隊内の飛翔値合計+10を得る",
  "furigana": "うえすぎけんしん",
@@ -29,6 +29,10 @@
   {
    "href": "skills-hishou-atk.html",
    "label": "飛翔スキル一覧(攻撃)を見る"
+  },
+  {
+   "href": "skills-hishou-def.html",
+   "label": "飛翔スキル一覧(防御)を見る"
   }
  ],
  "trTable": [
@@ -129,6 +133,11 @@
   "ixagno.blog.fc2.com生HTML照合済み(2026-07-29、blog-entry-11098の合成テーブルで初期テーブル/移植後の対応を確認)。",
   "A/B/Cは初期テーブル=移植後で同一。S1/S2は移植後(afterSkill)の性能をrate/target/effectShortに反映(神機采配の効果詳細は45do.info/ordinary/0337「白井入道浄三」記事、skills.html記載の既存データで確認)。",
   "2026-07-31再検証: 45do.info(最新記事は2025年12月付#0386までで31章カード自体の記事が無い、サイト内検索「上杉謙信」も0件)・ixanary.com(サイト全面リニューアル後、/cards/10074/は404で31章カード未収録)はいずれも本カード用の合成テーブル記事なし。ixagno.blog.fc2.com生HTML(blog-entry-11098)を再取得し下記5枠のslot/skill/rank/afterSkill・統率4バッジ(槍A/弓S/馬A/器X)・ステータス成長値(攻81/防81/兵法4.0)・trTable全行を再照合し完全一致を確認済み(45do.info/ixanary.comとの二重ソース確認は現状不可、要ユーザー確認)。",
-  "2026-08-02追加調査: ameameixa.com(bushocard-10074が404)も記事なしを確認。第二ソース発見できず単一ソース(ixagno)のまま、黄丸化は見送り。"
- ]
+  "2026-08-02追加調査: ameameixa.com(bushocard-10074が404)も記事なしを確認。第二ソース発見できず単一ソース(ixagno)のまま、黄丸化は見送り。",
+  "2026-08-16再検証(黄丸化): ixanary.com/cards/10074/が404から200へ変化しており(サイト側に31章復刻カードが追加された)、ixagno単独からixanary併用の2ソース体制に移行できた。curl生HTMLでコスト4/指揮4450/成長値攻81防81兵法4.0/LV10・TR5のskillDetail(攻970%防970%飛翔+10)が一致確認。rankGradesはixanaryのcard JSON(yumi:A,kiba:S)とカード画像バッジ(弓S/馬A)が食い違ったため、マニュアル通りカード画像バッジを最上位根拠として採用(既存データ通り槍A/弓S/馬A/器X、4隅を個別にズームして再確認)。synthesisTableはixanary.com/skills/神気煌龍/の生HTML合成テーブル(1次/2次)でA〜S2全5枠のskill/afterSkillが既存登録と完全一致(2ソース目確定)。sourceCharacters逆引き(A-3-11): 轟渦ノ神将/八幡神ノ威光/幻像鏡花/神機采配/王花尖剣の各data/skill/*.jsonに10074が既に反映済みを確認、S1(神機采配→従魔絶神)・S2(王花尖剣→國才連豪)はgrantedViaSkills経由で正しく間接リンクされていることも確認。troop欄が「全攻」になっていたが、skillDetailが攻撃970%+防御970%の両方上昇のため他の類似武将(1228直江兼続、1310織田信秀等の慣例)に倣い「全攻防」に修正。神気煌龍のcategoryLinksがskills-hishou-atk.htmlのみだったが、攻防両方上昇+飛翔付与という構成は偃武覇陣(No.1263)等の先例でhishou-atk/hishou-def両方に掲載されているため、skills-hishou-def.htmlも追加(data/skill/神気煌龍.json・data/busho/10074.json双方)。"
+ ],
+ "reviewedOk": true,
+ "wikiOldestComment": "2026-07-28",
+ "wikiCommentCount": 1,
+ "chGuess": "31-32章"
 }

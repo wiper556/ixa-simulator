@@ -1,0 +1,46 @@
+{
+ "name": "鼓腹撃壌",
+ "rank": "A",
+ "baseRate": 33,
+ "target": "槍・弓・馬",
+ "effectSummary": "A/LV10 確率 33% 攻撃 89%上昇/対象:槍・弓・馬",
+ "sourceCharacters": [
+  {
+   "name": "佐竹義重",
+   "no": "2437",
+   "slot": "S2",
+   "db": "kyoku"
+  },
+  {
+   "name": "斎藤朝信（3）",
+   "no": "2439",
+   "slot": "S1",
+   "db": "kyoku"
+  },
+  {
+   "name": "三浦按針（2）",
+   "no": "2785",
+   "slot": "S2",
+   "db": "kyoku",
+   "note": [
+    "三浦按針(2785)のsynthesisTable S2枠(2026-08-16)"
+   ]
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "天焉相克",
+  "rank": "SS"
+ },
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・弓・馬　確率 33% / 攻撃 89%上昇"
+  }
+ ],
+ "notes": [
+  "2026-08-16作成。A-3-9の例外ルール(移植後合成候補afterSkillが既にskills.htmlページを持つ天焉相克[SS]である元スキル)によりAランクだがページ作成対象。",
+  "ixanary.com/skills/鼓腹撃壌 の生HTML(LV10行: 確率+33%/対象槍弓馬/攻撃89%上昇)で確認。categoryLinksは9項目いずれも該当なし。",
+  "No.2437佐竹義重(S2枠)・2439斎藤朝信（3）(S1枠、いずれも担当範囲内)の黄丸化検証(2026-08-16)で新規作成。data/skill/天焉相克.jsonのgrantedViaSkillsに本スキルを追記した。"
+ ]
+}

@@ -1,0 +1,146 @@
+{
+ "name": "名古屋山三郎",
+ "no": "3716",
+ "ch": "7章",
+ "cost": 2.5,
+ "troop": "全攻防",
+ "sub": "",
+ "effect": "参加した対人攻撃/防御で部隊内の兵士被害数50%減少(重複不可)",
+ "furigana": "なごやさんさぶろう",
+ "illustrator": "岩元辰郎",
+ "imageFull": "assets/img/characters/no3716_full.png",
+ "imageChar": "assets/img/characters/no3716_char.png",
+ "atkBase": 580,
+ "atkGrowth": 17,
+ "defBase": 580,
+ "defGrowth": 17,
+ "tacticsBase": 520,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 2420,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "天槍の舞",
+ "skillDetail": "A/LV10 確率 20% 参加した対人攻撃/防御で部隊内の兵士被害数50%減少/対象:全\n①参加した対人攻撃/防御で部隊内の兵士被害数を50%減少させる(重複不可)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 20% / 参加した対人攻撃/防御で部隊内の兵士被害数50%減少(重複不可)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": null
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": null
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": null
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": null
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": null
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": null
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "背水之陣",
+   "rank": "B",
+   "afterSkill": "背水之陣",
+   "afterRank": "B",
+   "target": "槍弓馬",
+   "rate": "20%",
+   "effectShort": "防御 37%上昇",
+   "afterEffectShort": "防御 37%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "傾奇御免",
+   "rank": "B",
+   "afterSkill": "義兵進軍",
+   "afterRank": "C",
+   "target": "将",
+   "rate": "35%",
+   "effectShort": "攻撃 40%上昇",
+   "afterTarget": "槍弓馬砲",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 7%上昇+速度 10%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "八咫烏",
+   "rank": "B",
+   "afterSkill": "八咫烏",
+   "afterRank": "B",
+   "target": "砲器",
+   "rate": "35%",
+   "effectShort": "防御 30%上昇",
+   "afterEffectShort": "防御 30%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "攻城の妙技",
+   "rank": "S",
+   "afterSkill": "攻城の妙技",
+   "afterRank": "S",
+   "target": "全",
+   "rate": "10%",
+   "effectShort": "戦闘勝利時のみ防御側の兵士被害数+40%",
+   "afterEffectShort": "戦闘勝利時のみ防御側の兵士被害数+40%"
+  },
+  {
+   "slot": "S2",
+   "skill": "真言念破",
+   "rank": "A",
+   "afterSkill": "攻城の妙技",
+   "afterRank": "S",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "所属部隊全武将のダメージ 20%減少",
+   "afterTarget": "全",
+   "afterRate": "10%",
+   "afterEffectShort": "戦闘勝利時のみ防御側の兵士被害数+40%"
+  }
+ ],
+ "notes": [
+  "2026-08-16 新規登録。カード画像はLV1形式のためB-00に従い、画像から採ったのは 武将名/統率(4隅バッジ)/スキル名/攻撃・防御・兵法の初期値/覇でないこと/カードNo. の6項目のみ。",
+  "他の項目は ixanary.com(cards/3716、skills/天槍の舞)と ixawiki.com(BushoCard/3716名古屋山三郎、武将カード一覧(特))の2ソースで確認し、全項目が一致した。",
+  "指揮兵数はixanaryの★0-0=2420(B-01)。カード画像の「天限突破 0/4620」はixanaryの天限突破列4820より200少なく、B-01の+0.5版の罠と整合する。",
+  "スキル効果はLV10の値(確率20%・被害数50%減少)。カード上のLV1表記(確率10%・16%減少)は採らない。",
+  "鍛錬(TR)はixanary・ixawikiのどちらにも段が存在せず、LV1/LV10の2段のみ。",
+  "合成候補はixanary(skills/天槍の舞)の1次/2次と ixawiki(BushoCard/3716)の1次候補/2次候補で5枠すべて2ソース一致。",
+  "S1/S2に出る攻城の妙技[S]はS以上のためA-3-9に従い data/skill/攻城の妙技.json を新規作成した。初期スキル「天槍の舞」はAランクなのでページは作らない(A以下は自動作成しない)。",
+  "3ソース目: ixagno.blog.fc2.com(blog-entry-8884「兵士被害増減系スキルの性能比較と素材一覧」)が「戦闘勝利時のみ防御側の兵士被害数+40%」の素材として「特：名古屋山三郎(S1)」を挙げており、S1枠=攻城の妙技が裏付けられた。同(blog-entry-10384)も「名古屋山三郎 攻防対応の部隊内の兵士被害減少 更にS2追加で部隊内武将のダメージ減少」と書いており、S2枠=真言念破(所属部隊全武将のダメージ減少)と一致する。",
+  "troopは「全攻防」。対人攻撃・防御のどちらでも効果が出るため(佐野昌綱=攻撃時のみで「槍弓馬攻」、松永久秀(2)=防御時のみで「全防」とする既存の付け方に合わせた)。",
+  "章はixanary・ixawikiに記載が無く未確認。wikiの最古コメントは2014-04-29。",
+  "2026-08-16 再検証・注記の訂正: 「ixagnoにも実装章の記載は無かった」と書いていたが、本カード専用の記事 blog-entry-2659「名古屋山三郎【特】(No.3716)の考察」があり、**「2014年4月追加の特武将」**と実装時期が明記されていた(章番号そのものではない)。この時期は章推定(7章=2013-11-12〜2014-05-16)の窓に入るのでchGuessと整合する。同記事は成長値(17/17/2.5)・発動率20%・被害数50%減少・「重複不可だが模倣可能」・合成テーブル全5枠も一致。",
+  "名前: 特レアリティに名古屋山三郎は3716の1枚だけなので（N）は付けない。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "reviewedOk": true,
+ "wikiOldestComment": "2014-04-29",
+ "wikiCommentCount": 221,
+ "chGuess": "7章",
+ "chSource": "wikiOldestComment"
+}

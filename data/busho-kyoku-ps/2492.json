@@ -1,0 +1,137 @@
+{
+ "name": "天草四郎",
+ "no": "2492",
+ "ch": "29章",
+ "cost": 1,
+ "troop": "特",
+ "sub": "",
+ "effect": "所有者の陣(同盟陣を除く)に配置している間は所有者の所領防御陣形が所領の代わりにその陣を防御する(そのとき所領防御陣形の各列の総防御力は0.5倍・模倣不可)",
+ "furigana": "あまくさしろう",
+ "illustrator": "正子公也",
+ "imageFull": "assets/img/characters/no2492_full.png",
+ "imageChar": "assets/img/characters/no2492_char.png",
+ "atkBase": 1050,
+ "atkGrowth": 44,
+ "defBase": 1200,
+ "defGrowth": 61,
+ "tacticsBase": 600,
+ "tacticsGrowth": 3.5,
+ "lv0Troops": 2000,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "神明旗手",
+ "skillDetail": "S/LV10 所有者の陣を所領防御陣形で防御する/対象:-\n模倣不可\n①この武将が所有者の陣(同盟陣を含まない)に所属しているとき所有者の所領防御陣形は所領の代わりにその陣を防御する\n②そのとき所領防御陣形の各列の総防御力は0.5倍される",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "確率 - / 所有者の陣(同盟陣を除く)を所領防御陣形で防御する(各列の総防御力 0.5倍・模倣不可)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": "確率 - / 所有者の陣(同盟陣を除く)を所領防御陣形で防御する(各列の総防御力 0.55倍)"
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": "確率 - / 所有者の陣(同盟陣を除く)を所領防御陣形で防御する(各列の総防御力 0.6倍)"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": "確率 - / 所有者の陣(同盟陣を除く)を所領防御陣形で防御する(各列の総防御力 0.7倍)"
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": "確率 - / 所有者の陣(同盟陣を除く)を所領防御陣形で防御する(各列の総防御力 0.8倍)"
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": "確率 - / 所有者の陣(同盟陣を除く)を所領防御陣形で防御する(総防御力の倍率低下なし)"
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": null
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "虚実兵妙",
+   "rank": "SS",
+   "afterSkill": "虚実兵妙",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "防御 740%上昇(防御戦闘時に敵軍の卓越確率-8%・自軍内重複上限2)",
+   "afterEffectShort": "防御 740%上昇(防御戦闘時に敵軍の卓越確率-8%・自軍内重複上限2)"
+  },
+  {
+   "slot": "B",
+   "skill": "國才連豪",
+   "rank": "SS",
+   "afterSkill": "國才連豪",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "50%",
+   "effectShort": "防御 310%×國才連豪所持武将数(4人)=1240.0%上昇",
+   "afterEffectShort": "防御 310%×國才連豪所持武将数(4人)=1240.0%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "月煌侵蝕",
+   "rank": "SSS",
+   "afterSkill": "月煌侵蝕",
+   "afterRank": "SSS",
+   "target": "全 兵站",
+   "rate": "45%",
+   "effectShort": "防御 7.6%×防御参加武将数(280人)=2128.0%",
+   "afterEffectShort": "防御 7.6%×防御参加武将数(280人)=2128.0%"
+  },
+  {
+   "slot": "S1",
+   "skill": "従魔絶神",
+   "rank": "SSS",
+   "afterSkill": "従魔絶神",
+   "afterRank": "SSS",
+   "target": "全 飛翔13",
+   "rate": "43%",
+   "effectShort": "防御 9.4%×防御参加武将数(280人)=2632.0%",
+   "afterEffectShort": "防御 9.4%×防御参加武将数(280人)=2632.0%"
+  },
+  {
+   "slot": "S2",
+   "skill": "國才連豪",
+   "rank": "SS",
+   "afterSkill": "國才連豪",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "50%",
+   "effectShort": "防御 310%×國才連豪所持武将数(4人)=1240.0%上昇",
+   "afterEffectShort": "防御 310%×國才連豪所持武将数(4人)=1240.0%上昇"
+  }
+ ],
+ "notes": [
+  "カード画像はスキル欄「神明旗手LV1」表記のためLV1形式(B-00)。画像から読んだのは武将名・統率バッジ(4隅拡大)・スキル名・初期値1050/1200/600・カードNo.・覇なしの6項目のみ。",
+  "統率は槍A/弓A/馬A/器S。カード画像バッジ拡大とixawiki(BushoCard/2492天草四郎)の統率力欄で一致。",
+  "コスト1・指揮2000(★0-0)・成長+44/+61/+3.5・絵師正子公也はixanary.com(cards/2492)とixawikiの2ソースで一致。カード画像は限界突破済みで指揮兵数0/2600(ixanaryの限界突破欄2600と一致)。",
+  "神明旗手のLV10・TR1〜TR5(総防御力の倍率0.5/0.55/0.6/0.7/0.8/TR5は倍率低下なし)はixanary(skills/神明旗手)とixagno.blog.fc2.com(blog-entry-10433)の鍛錬表で完全一致。ixawikiはLv10とTR5のみで、その2点も一致。TR6は記載なし。",
+  "カード画像のLV1値(総防御力0.1倍)は登録していない。",
+  "発動確率も兵科対象も持たない配置型スキル。ixawikiは「防：神明旗手」、ixanaryのカード一覧は「特：神明旗手」と表記が割れているが効果文は同一。うちのtroopは戦闘数値を持たないので「特」にした。",
+  "合成テーブル(A=虚実兵妙SS/B=國才連豪SS/C=月煌侵蝕SSS/S1=従魔絶神SSS/S2=國才連豪SS、1次=2次=3次で全て自己参照)はixanary(skills/神明旗手)・ixawiki(BushoCard/2492)・ixagnoの3ソースで完全一致。",
+  "神明旗手自身はixanaryの合成素材欄が「合成不可スキルです」のため移植不可。ixagnoも初期スキルを移植可能スキルに挙げていない。",
+  "章は29章。ixagno(blog-entry-10433)が「2025年7月追加の極武将」かつ本文に「■29章の時点で戦力として見た場合」と明記。wiki最古コメントは2025-08-11で実装から1か月以上遅れており、chGuess(30章)は当てにならない。"
+ ],
+ "reviewedOk": true,
+ "wikiOldestComment": "2025-08-11",
+ "wikiCommentCount": 2,
+ "chGuess": "30章"
+}

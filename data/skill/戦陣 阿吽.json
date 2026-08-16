@@ -1,0 +1,94 @@
+{
+ "name": "戦陣 阿吽",
+ "rank": "A",
+ "baseRate": 25,
+ "target": "全",
+ "effectSummary": "A/LV10 確率 25% 攻撃 42%上昇/防御 42%上昇/対象:全\n①攻撃 42%上昇する\n②防御 42%上昇する",
+ "sourceCharacters": [
+  {
+   "name": "森可成（1）",
+   "no": "2402",
+   "slot": "B",
+   "db": "kyoku"
+  },
+  {
+   "name": "服部半蔵（2）",
+   "no": "2403",
+   "slot": "A",
+   "db": "kyoku"
+  },
+  {
+   "name": "蒲生郷成",
+   "no": "2414",
+   "slot": "A",
+   "db": "kyoku"
+  },
+  {
+   "name": "谷津主水",
+   "no": "2419",
+   "slot": "A",
+   "db": "kyoku"
+  },
+  {
+   "name": "富田勢源（1）",
+   "no": "2748",
+   "slot": "B",
+   "db": "kyoku",
+   "note": [
+    "富田勢源(2748)のsynthesisTable B枠(2026-08-16)"
+   ]
+  },
+  {
+   "name": "築山殿",
+   "no": "2774",
+   "slot": "A",
+   "db": "kyoku",
+   "note": [
+    "築山殿(2774)のsynthesisTable A枠(2026-08-16)"
+   ]
+  },
+  {
+   "name": "尚寧王",
+   "no": "2778",
+   "slot": "A",
+   "db": "kyoku",
+   "note": [
+    "尚寧王(2778)のsynthesisTable A枠(2026-08-16)"
+   ]
+  },
+  {
+   "name": "東郷重位",
+   "no": "2795",
+   "slot": "A",
+   "db": "kyoku",
+   "note": [
+    "東郷重位(2795)のsynthesisTable A枠(2026-08-16)"
+   ]
+  },
+  {
+   "name": "陽泰院",
+   "no": "3726",
+   "slot": "S1",
+   "db": "toku",
+   "note": [
+    "陽泰院(3726)のsynthesisTable S1枠(2026-08-16、担当T2)"
+   ]
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "覇王征軍",
+  "rank": "SS"
+ },
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 25% / 攻撃 42%上昇+防御 42%上昇"
+  }
+ ],
+ "notes": [
+  "2026-08-16作成。A-3-9の例外ルール(移植後合成候補afterSkillが既にskills.htmlページを持つ覇王征軍[SS]である元スキル)によりAランクだがページ作成対象。",
+  "ixanary.com/skills/戦陣 阿吽 の生HTML(LV10行: 確率+25%/対象全/攻撃42%上昇/防御42%上昇)で確認。categoryLinksは9項目(無尽/撤退/飛翔/覇道/不屈/兵站/卓越/人数依存/コスト)いずれも該当なし。",
+  "No.2402森可成・2403服部半蔵・2414蒲生郷成・2419谷津主水(いずれも担当範囲内)の黄丸化検証(2026-08-16)で、それぞれのsynthesisTableに直接列挙されていた戦陣阿吽→覇王征軍の行をA-3-12のgrantedViaSkills方式に統一する一環として新規作成。覇王征軍.json側にgrantedViaSkillsとして本スキルを追記した。"
+ ]
+}

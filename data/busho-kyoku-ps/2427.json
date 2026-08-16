@@ -1,7 +1,7 @@
 {
- "name": "細川幽斎",
+ "name": "細川幽斎（2）",
  "no": "2427",
- "ch": "未確認",
+ "ch": "19章",
  "cost": 4,
  "troop": "追加スキル防",
  "sub": "",
@@ -69,8 +69,8 @@
    "rank": "B",
    "afterSkill": "将軍親政",
    "afterRank": "A",
-   "target": null,
-   "rate": null,
+   "target": "全",
+   "rate": "100%",
    "effectShort": "防御 40%上昇(兵士被害増加・武将追加ダメージのスキル効果を全て無効化)",
    "afterTarget": "槍馬",
    "afterRate": "30%",
@@ -82,8 +82,8 @@
    "rank": "B",
    "afterSkill": "不死鳥",
    "afterRank": "B",
-   "target": null,
-   "rate": null,
+   "target": "槍・砲・器",
+   "rate": "37%",
    "effectShort": "防御 34%上昇(自部隊の武将ダメージ軽減6%・重複発動上限数4)",
    "afterEffectShort": "防御 34%上昇(自部隊の武将ダメージ軽減6%・重複発動上限数4)"
   },
@@ -93,8 +93,8 @@
    "rank": "B",
    "afterSkill": "王舎城",
    "afterRank": "B",
-   "target": null,
-   "rate": null,
+   "target": "槍・弓・器",
+   "rate": "30%",
    "effectShort": "防御 20%上昇(所属拠点の残耐久で効果変化)",
    "afterEffectShort": "防御 20%上昇(所属拠点の残耐久で効果変化)"
   },
@@ -104,8 +104,8 @@
    "rank": "A",
    "afterSkill": "風狂魔術",
    "afterRank": "A",
-   "target": null,
-   "rate": null,
+   "target": "全",
+   "rate": "45%",
    "effectShort": "防御 (敵部隊移動速度÷1)%上昇(最も部隊移動速度の大きい敵部隊の数値を参照)",
    "afterEffectShort": "防御 (敵部隊移動速度÷1)%上昇(最も部隊移動速度の大きい敵部隊の数値を参照)"
   },
@@ -115,8 +115,8 @@
    "rank": "A",
    "afterSkill": "布都御魂ノ鬨",
    "afterRank": "SS",
-   "target": null,
-   "rate": null,
+   "target": "全",
+   "rate": "10%",
    "effectShort": "攻撃 87%上昇+防御 87%上昇",
    "afterTarget": "全",
    "afterRate": "35%",
@@ -124,10 +124,25 @@
   }
  ],
  "notes": [
+  "2026-08-16: 武将名の（N）を、ixawikiの各カードページの一番古いコメントの日付順で振り直した。（N）はゲームには無く、同レアリティで同名が混ざらないようwiki利用者が出現順に付けた工夫。カードNo.順では10xxx番台(記念カード)で前後が逆転するため日付を使う(うぐさん指示)。",
   "出典: カード画像(LV1形式: 極・統率 槍A/弓S/馬A/器A拡大確認・初期値990/1070/540・コスト4・LV1スキル値)",
   " + ixanary.com/cards/2427(指揮3800(★0-0)・成長+34/+52/+2.5・LV10: 本領防御時のみ追加スキルの防御効果2.5倍・模倣不可)",
   " + ixawiki BushoCard/2427(統率 槍A/弓S/馬A/器Aの2次確認・合成テーブル1次/2次候補)。",
   "統率はカード画像+ixawikiの2ソース一致。章は未確認。スキルはA(鍛錬情報なし)のためTR1以降のeffectはnull。",
-  "合成テーブルはixawiki(1次候補+2次候補)。ixaixaに記事無し"
- ]
+  "合成テーブルはixawiki(1次候補+2次候補)とixanary(skills/開城ノ勅命の1次/2次候補)の2ソース。",
+  "2026-08-16ソース取り直し: 本カードは未承認ソースを根拠にした値が無い(既存notesにも「記事無し」と書かれていた)ことを確認し、その言及だけを削除した。",
+  " 念のためixanary.com(skills/開城ノ勅命)とixawiki.com(BushoCard/2427細川幽斎)を生HTMLで取り直し、",
+  " A:玄武の落延[B]→将軍親政[A]、B:不死鳥[B]、C:王舎城[B]、S1:風狂魔術[A]、S2:戦陣 凱旋[A]→布都御魂ノ鬨[SS]の全5行と、",
+  " LV10「確率+100%/対象 追加スキル/本領防御時のみ追加スキルの防御効果2.5倍(模倣不可)」が現JSONと一致することを再確認した(値の変更なし)。",
+  "2026-08-16黄丸化検証: rankGrades(A/S/A/A)はno2427_full.pngの4隅バッジを個別ズームして再確認し一致。カードLV1表示の初期スキル倍率「1.5倍」はLV1固有値でありLV10は「2.5倍」であることをixanary生HTML(cards/2427)で確認し、skillDetailの2.5倍表記が正しいことを確認した(B-00の混同罠に注意)。基礎値・コスト・指揮兵数・成長値もixanary生HTMLで一致確認。",
+  "A〜S2の全5枠でtarget/rateが未確定(null)だったため、ixanary生HTML(cards/2427の初期スキル開城ノ勅命の合成テーブルおよび各候補スキル個別ページ)で全て埋めた。A:玄武の落延(全,100%)、B:不死鳥(槍・砲・器,37%)、C:王舎城(槍・弓・器,30%)、S1:風狂魔術(全,45%)、S2:戦陣凱旋(全,10%)。同じページのixanary合成テーブル(1次/2次/3次)で5スロットの1次(skill)・2次(afterSkill)がいずれもJSON記載内容と完全一致することも確認し、既存のixawiki確認と合わせて2ソース(ixanary+ixawiki)を満たした。",
+  "S2枠(戦陣凱旋→布都御魂ノ鬨)はA-3-9の例外ルールによりdata/skill/戦陣 凱旋.json(新規作成、No.2424・2427・2439・2440・2443を含む)に登録済み。",
+  "章はixanary.com/ixawiki.comいずれのカードページにも記載が無く未確認。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "reviewedOk": true,
+ "wikiOldestComment": "2020-06-11",
+ "wikiCommentCount": 100,
+ "chGuess": "19章",
+ "chSource": "wikiOldestComment"
 }

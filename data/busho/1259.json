@@ -1,6 +1,7 @@
 {
  "name": "長宗我部元親（6）",
  "no": "1259",
+ "reviewedOk": true,
  "ch": "27章",
  "cost": 4.5,
  "troop": "槍馬砲器防",
@@ -94,12 +95,16 @@
   }
  ],
  "notes": [
-  "synthesisTable: 45do.info生HTML(skiladd_wrap)+ixanary.com(島穿鬼槍スキルページの合成テーブル)で2ソース一致確認済み(2026-08-02)"
+  "synthesisTable: 45do.info生HTML(skiladd_wrap)+ixanary.com(島穿鬼槍スキルページの合成テーブル)で2ソース一致確認済み(2026-08-02)",
+  "黄丸化検証(2026-08-16): カード画像no1259_full.pngの4隅バッジ(槍S/馬A/弓A/器S)を確認し一致。synthesisTableはixanary.com(skills/島穿鬼槍)+ixawiki.com(BushoCard/1259長宗我部元親)の2ソースでA/B/C/S1/S2全枠・afterSkillとも完全一致確認。天宇受売命・万里嵐壁・月詠ノ覇威のdata/skill側sourceCharactersに1259が正しいslotで記載済みを確認(逆引き済み)。TR段はLV10のみ(TRなし)。"
  ],
  "categoryLinks": [
   {
    "href": "skills-takuetsu.html",
    "label": "卓越スキル一覧を見る"
   }
- ]
+ ],
+ "wikiOldestComment": "2024-02-12",
+ "wikiCommentCount": 28,
+ "chGuess": "27章"
 }

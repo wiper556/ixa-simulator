@@ -1,0 +1,49 @@
+{
+ "name": "夢買い",
+ "rank": "A",
+ "baseRate": 30,
+ "target": "全",
+ "effectSummary": "A/LV10 確率 30% 攻撃 0%上昇(名声値で効果が変化)/対象:全",
+ "sourceCharacters": [
+  {
+   "name": "高山右近（1）",
+   "no": "2412",
+   "slot": "B",
+   "db": "kyoku"
+  },
+  {
+   "name": "保科正之",
+   "no": "2769",
+   "slot": "C",
+   "db": "kyoku",
+   "note": [
+    "保科正之(2769)のsynthesisTable C枠(2026-08-16)"
+   ]
+  },
+  {
+   "name": "山上宗二",
+   "no": "2779",
+   "slot": "B",
+   "db": "kyoku",
+   "note": [
+    "山上宗二(2779)のsynthesisTable B枠(2026-08-16)"
+   ]
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "風狂幻術",
+  "rank": "B"
+ },
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 30% / 攻撃 0%上昇(名声値で効果が変化)"
+  }
+ ],
+ "notes": [
+  "2026-08-16作成。A-3-9の例外ルール(移植後合成候補afterSkillが既にskills.htmlページを持つ風狂幻術[B]である元スキル)によりAランクだがページ作成対象。",
+  "ixanary.com/skills/夢買い の生HTML(LV10行: 確率+30%/対象全/攻撃0%上昇・名声値で効果が変化)で確認。categoryLinksは9項目いずれも該当なし。",
+  "No.2412高山右近(B枠、担当範囲内)の黄丸化検証(2026-08-16)で新規作成。data/skill/風狂幻術.jsonのgrantedViaSkillsに本スキルを追記した。No.2779山上宗二・2769保科正之・2756神代勝利も夢買いを持つが担当範囲外のため未確認・未修正のまま申し送る。"
+ ]
+}

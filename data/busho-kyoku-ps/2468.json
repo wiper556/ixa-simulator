@@ -1,0 +1,143 @@
+{
+ "name": "本多忠勝（5）",
+ "no": "2468",
+ "ch": "25章",
+ "cost": 4.5,
+ "troop": "特",
+ "sub": "",
+ "effect": "合戦中1回まで「葵紋の陣」を作成可(【傑】を含む部隊でしか攻撃できず陣破壊スキルに破壊されない・模倣不可)",
+ "furigana": "ほんだただかつ",
+ "illustrator": "正子公也",
+ "imageFull": "assets/img/characters/no2468_full.png",
+ "imageChar": "assets/img/characters/no2468_char.png",
+ "atkBase": 1120,
+ "atkGrowth": 62,
+ "defBase": 1000,
+ "defGrowth": 49,
+ "tacticsBase": 550,
+ "tacticsGrowth": 3,
+ "lv0Troops": 4550,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "立ち葵",
+ "skillDetail": "S/LV10 合戦中1回まで「葵紋の陣」を作成可/対象:-\n模倣不可\n①合戦中1回まで「葵紋の陣」を作成できる\n②「葵紋の陣」は【傑】を含む部隊でしか攻撃できず陣破壊スキルに破壊されない\n③この武将が作成した「葵紋の陣」のみ距離4以内の同盟員の陣も「葵紋の陣」となる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "確率 - / 合戦中1回まで「葵紋の陣」を作成可(【傑】を含む部隊でしか攻撃できず陣破壊スキルに破壊されない・距離4以内の同盟員の陣も「葵紋の陣」となる・模倣不可)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": null
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": null
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": null
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": null
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": null
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": null
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "八千矛神",
+   "rank": "SS",
+   "afterSkill": "八千矛神",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "攻撃 50%上昇(所属部隊の武将が持つスキルを無効化や発動率低下スキルから保護)",
+   "afterEffectShort": "攻撃 50%上昇(所属部隊の武将が持つスキルを無効化や発動率低下スキルから保護)"
+  },
+  {
+   "slot": "B",
+   "skill": "天香山命",
+   "rank": "SS",
+   "afterSkill": "天香山命",
+   "afterRank": "SS",
+   "target": "全 覇道",
+   "rate": "100%",
+   "effectShort": "攻撃 120%上昇+速度 90%上昇",
+   "afterEffectShort": "攻撃 120%上昇+速度 90%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "十束ノ神域",
+   "rank": "SS",
+   "afterSkill": "天聖宝冠",
+   "afterRank": "SSS",
+   "target": "全 覇道",
+   "rate": "100%",
+   "effectShort": "攻撃 320%上昇+速度 70%上昇+覇道を持つため所属部隊の武将のスキルを無効化・発動率低下から保護",
+   "afterTarget": "全",
+   "afterRate": "45%",
+   "afterEffectShort": "攻撃 100%上昇((5.0×防御参加武将数)%を攻撃効果に加算・模倣不可)"
+  },
+  {
+   "slot": "S1",
+   "skill": "天津甕星ノ雷",
+   "rank": "SS",
+   "afterSkill": "天津甕星ノ雷",
+   "afterRank": "SS",
+   "target": "全 覇道",
+   "rate": "100%",
+   "effectShort": "攻撃 170%上昇+速度 70%上昇",
+   "afterEffectShort": "攻撃 170%上昇+速度 70%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "覇道天聖",
+   "rank": "SS",
+   "afterSkill": "覇王征軍",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "攻撃 26%上昇(所属部隊の武将が持つスキルを無効化や発動率低下から保護)",
+   "afterTarget": "全",
+   "afterRate": "42%",
+   "afterEffectShort": "攻撃 25.39%上昇(部隊総コストで変動)"
+  }
+ ],
+ "notes": [
+  "カード画像(no2468_full.png)はスキル欄「立ち葵LV10」表記のためLV10形式(B-00)。ixawiki側にも「※入手時点でスキルLv10」の注記があり、カード上の全情報を目視照合できる。",
+  "統率 槍S/馬A/弓A/器A(カード画像バッジを6倍拡大して個別確認)。ixanary.com/cards/2468・ixawiki.com(BushoCard/2468本多忠勝)とも一致。",
+  "コスト4.5・指揮4550(★0-0)・初期値1120/1000/550・成長値+62/+49/+3.0・ふりがな ほんだただかつ・絵師 正子公也は ixanary.com と ixawiki.com の2ソースで一致。カード画像の初期値表示(1120/1000/550.0)とも一致する。",
+  "カード画像は「限界突破」状態のため指揮兵数欄が5150と表示されているが、これは突破後の値。lv0Troops(★0-0)は4550。",
+  "合成テーブルは ixanary.com/skills/立ち葵 の1次/2次と ixawiki.com(BushoCard/2468の合成候補テーブル)の2ソースで全5枠一致を確認。A=八千矛神[SS](自己参照)、B=天香山命[SS](自己参照)、C=十束ノ神域[SS]→天聖宝冠[SSS]、S1=天津甕星ノ雷[SS](自己参照)、S2=覇道天聖[SS]→覇王征軍[SS]。",
+  "初期スキル 立ち葵[S] は自身の合成テーブルA〜S2のどの枠にも出ないため移植不可。data/skill/立ち葵.json は「S以上は無条件でページ作成」(A-3-9)により新規作成した。A枠の 八千矛神[SS] もページが無かったため新規作成した。",
+  "武将名の（5）: 極レアの同名カードは No.2001(2011-06-26)・No.2127(2015-01-15)・No.2958(2016-04-06)・No.2760(2018-07-02)・本カード No.2468(2023-07-03)の5枚(日付はwiki最古コメント、rarityはixanary.comで5枚とも極であることを確認。No.1193/1303は天レアのため対象外)。出現が早い順に本カードは5番目。",
+  "TR(鍛錬)情報は ixanary.com・ixawiki.com のいずれにも記載が無いためTR1以降のeffectはnull(入手時点でLV10固定のカード)。",
+  "章はixanary.com/ixawiki.comのカードページに記載が無いため未確認(wiki最古コメント2023-07-03から25章の当たり)。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "reviewedOk": true,
+ "wikiOldestComment": "2023-07-03",
+ "wikiCommentCount": 38,
+ "chGuess": "25章",
+ "chSource": "wikiOldestComment"
+}

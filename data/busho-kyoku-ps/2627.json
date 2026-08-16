@@ -1,0 +1,148 @@
+{
+ "name": "クイナ",
+ "no": "2627",
+ "ch": "29章",
+ "cost": 5.0,
+ "troop": "部隊長特",
+ "sub": "",
+ "effect": "所属部隊の部隊長が持つ模倣可能な初期スキルを模倣(卓越:追加確率60%で1.15倍)",
+ "furigana": "くいな",
+ "illustrator": "FinalFantasyIX 25th ANNIVERSARY",
+ "imageFull": "assets/img/characters/no2627_full.png",
+ "imageChar": "assets/img/characters/no2627_char.png",
+ "atkBase": 1110,
+ "atkGrowth": 56,
+ "defBase": 1110,
+ "defGrowth": 56,
+ "tacticsBase": 550,
+ "tacticsGrowth": 3.0,
+ "lv0Troops": 4780,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "たべる",
+ "skillDetail": "S/LV10 確率 40% 所属部隊の部隊長が持つ模倣可能な初期スキルを模倣/対象:部隊長　卓越\n①所属部隊の部隊長が持つ模倣可能な初期スキルを模倣する\n②卓越 追加確率60%で通常攻撃/防御効果を1.15倍して模倣する",
+ "categoryLinks": [
+  {
+   "href": "skills-takuetsu.html",
+   "label": "卓越スキル一覧を見る"
+  },
+  {
+   "href": "skills-leadermimic.html",
+   "label": "部隊長模倣スキル一覧を見る"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "部隊長　確率 40% / 所属部隊の部隊長が持つ模倣可能な初期スキルを模倣(卓越:追加確率60%で通常攻撃/防御効果を1.15倍して模倣)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": "部隊長　確率 40% / 所属部隊の部隊長が持つ模倣可能な初期スキルを模倣(卓越:追加確率70%で通常攻撃/防御効果を1.15倍して模倣)"
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": "部隊長　確率 40% / 所属部隊の部隊長が持つ模倣可能な初期スキルを模倣(卓越:追加確率80%で通常攻撃/防御効果を1.17倍して模倣)"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": "部隊長　確率 40% / 所属部隊の部隊長が持つ模倣可能な初期スキルを模倣(卓越:追加確率100%で通常攻撃/防御効果を1.2倍して模倣)"
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": null
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": null
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": null
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "傾国ノ艶姫",
+   "rank": "S",
+   "afterSkill": "摩利支天ノ法",
+   "afterRank": "SSS",
+   "target": "部隊長",
+   "rate": "60%",
+   "effectShort": "所属部隊の部隊長が持つ模倣可能な初期スキルを模倣する(卓越・追加確率30%で通常攻撃/防御効果を1.2倍して模倣する)",
+   "afterTarget": "部隊長",
+   "afterRate": "70%",
+   "afterEffectShort": "所属部隊の部隊長が持つ模倣可能な初期スキルを通常攻撃/防御効果1.25倍にして模倣する"
+  },
+  {
+   "slot": "B",
+   "skill": "虚実ノ理合",
+   "rank": "S",
+   "afterSkill": "虚実ノ理合",
+   "afterRank": "S",
+   "target": "部隊長 覇道",
+   "rate": "40%",
+   "effectShort": "部隊長の持つ模倣可能な初期スキルを模倣(卓越:追加確率10%で1.2倍)+覇道を持つため所属部隊の武将のスキルを無効化・発動率低下から保護",
+   "afterEffectShort": "部隊長の持つ模倣可能な初期スキルを模倣(卓越:追加確率10%で1.2倍)+覇道を持つため所属部隊の武将のスキルを無効化・発動率低下から保護"
+  },
+  {
+   "slot": "C",
+   "skill": "たべる",
+   "rank": "S",
+   "afterSkill": "たべる",
+   "afterRank": "S",
+   "target": "部隊長",
+   "rate": "40%",
+   "effectShort": "所属部隊の部隊長が持つ模倣可能な初期スキルを模倣する(卓越:追加確率60%で通常攻撃/防御効果を1.15倍して模倣)",
+   "afterEffectShort": "所属部隊の部隊長が持つ模倣可能な初期スキルを模倣する(卓越:追加確率60%で通常攻撃/防御効果を1.15倍して模倣)"
+  },
+  {
+   "slot": "S1",
+   "skill": "たべる",
+   "rank": "S",
+   "afterSkill": "たべる",
+   "afterRank": "S",
+   "target": "部隊長",
+   "rate": "40%",
+   "effectShort": "所属部隊の部隊長が持つ模倣可能な初期スキルを模倣する(卓越:追加確率60%で通常攻撃/防御効果を1.15倍して模倣)",
+   "afterEffectShort": "所属部隊の部隊長が持つ模倣可能な初期スキルを模倣する(卓越:追加確率60%で通常攻撃/防御効果を1.15倍して模倣)"
+  },
+  {
+   "slot": "S2",
+   "skill": "黒飛燕剣",
+   "rank": "S",
+   "afterSkill": "傾国ノ艶姫",
+   "afterRank": "S",
+   "target": "部隊長 飛翔4",
+   "rate": "50%",
+   "effectShort": "所属部隊の部隊長が持つ模倣可能な初期スキルを模倣する(卓越:追加確率50%で通常攻撃/防御効果を1.2倍して模倣)",
+   "afterTarget": "部隊長",
+   "afterRate": "60%",
+   "afterEffectShort": "所属部隊の部隊長が持つ模倣可能な初期スキルを模倣する(卓越・追加確率30%で通常攻撃/防御効果を1.2倍して模倣する)"
+  }
+ ],
+ "notes": [
+  "出典: カード画像(LV1形式・B-00で読んでよい6項目のみ採用: 武将名/統率4隅バッジ/スキル名/攻防兵法の初期値/覇でないこと/カードNo.) + ixanary.com(cards/{no}・skills/{skill}の生HTML) + ixawiki.com(BushoCard/{no}{name}・武将カード一覧(極))。効果量・成長値・指揮兵数・合成候補はすべて外部ソースから取り、カード画像のLV1値は登録していない。",
+  "ch(章)はFF9 25周年記念コラボ「玖幻戦」の実装時期から。ixagno.blog.fc2.com(2025-07-03の記事、カテゴリ【29章】でこのコラボカードの追加を扱っている)と、当サイトの既存データで29章の窓が2025-02-07〜2025-08-06(30章の初出が2025-08-07)であることの2点による。ゲーム内での直接確認ではない。",
+  "コラボカード(FinalFantasyIX 25th ANNIVERSARY)。取引/譲与不可。覇の表記はカード画像に無く【覇】は付かない。同名の特武将(No.363x)が別に居るがレアリティが違うため（N）は振らない。",
+  "統率はカード画像の4隅バッジ(槍S/馬A/弓A/器A)を拡大確認、ixawiki武将カード一覧(極)の .S|A|A|A と一致。",
+  "指揮兵数はixanaryの★0-0=4780。カード画像は限界突破表示で0/5380、ixanaryの限界突破欄5380と一致。",
+  "鍛錬はTR3まで(ixanary.com/skills/たべる にTR4・TR5の行が無く、ixawikiのカードページも最終段がTR3)。",
+  "成長値はixawikiのカードページが空欄のためixanary.com/cards/2627のみ(+56/+56/+3)。",
+  "合成テーブルはixanary.com/skills/たべる の1次/2次。1次はixawikiのカードページとも一致。A枠の2次(摩利支天ノ法)・S2枠の2次(傾国ノ艶姫)は、当サイトの傾国ノ艶姫.json・黒飛燕剣.jsonのownHiddenCandidateとも一致する。",
+  "たべる自体はC・S1枠に自己参照で載るため移植可能。"
+ ],
+ "reviewedOk": true
+}
