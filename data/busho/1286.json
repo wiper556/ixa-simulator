@@ -126,8 +126,10 @@
   }
  ],
  "notes": [
-  "カード画像照合済み(2026-07-30): 槍A/弓A/馬A/器X",
-  "TR6はixanary.com生HTML照合済み(パラレル【天】版No.31286でTR6解禁、部隊総攻撃力50%上昇・確率37%は全段階共通)。",
-  "45do.info(ordinary/0361)生HTML照合+ixagno.blog.fc2.com(blog-entry-11057、パラレル版記事内の「通常版」合成テーブル比較)の両ソースで一致確認済み。A・Bが同一スキル(天地超克)の点も両ソース一致。"
- ]
+  "カード画像照合済み(2026-08-16再確認): 槍A/弓A/馬A/器X(虹色バッジ)、攻1320/防1200/兵法860.0/指揮5470/コスト6も画像と一致。",
+  "ixanary.com(/skills/雄飛新世/)生HTML照合(2026-08-16): LV1・LV10・TR1〜TR6の全段階が現在ixanary側にも公開されており、TR1=31%/TR2=33%/TR3=35%/TR4=37%/TR5=40%/TR6=50%(確率37%は全段階共通)が現在のtrTableと完全一致。カード上の赤字「覇道」表記と保護効果文(②)の両方を確認し覇道分類は正しい。",
+  "synthesisTable: ixanary.com(/skills/雄飛新世/、生HTML)とixawiki.com(index.php?BushoCard/1286織田信長、生HTML、EUC-JP)の2ソースでA/B/C/S1/S2の1次候補を突き合わせ、A=天地超克[SSS]、B=天地超克[SSS](A・Bが同一スキル)、C=焼尽神無[SS]、S1=勇冠三軍[SSS]、S2=万物神勇[SSS](全枠自己参照)で一致を確認。ixawikiの1次候補テーブル本体はCを誤って[SSS]と表示していたが、同じixawikiページ内の脚注(「攻：焼尽神無[SS] -候補」)とixanary側の両方がSSSではなくSSで一致するため、ixawiki本体側の表記ゆれと判断しSSSを採用しない。",
+  "data/skill/天地超克.json・焼尽神無.json・勇冠三軍.json・万物神勇.jsonのsourceCharactersに1286が正しい枠で登録済みであることを確認(A-3-11)。"
+ ],
+ "reviewedOk": true
 }

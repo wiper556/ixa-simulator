@@ -1,0 +1,78 @@
+{
+ "name": "活人剣",
+ "rank": "A",
+ "baseRate": 100,
+ "target": "全",
+ "noMimic": true,
+ "effectSummary": "A/LV10 確率 100% 攻撃 55%上昇/対象:全\n模倣不可\n①攻撃 55%上昇する\n②防御 55%上昇する\n③自軍全武将全スキルの卓越確率に7%を加算する(自軍内重複上限4)",
+ "categoryLinks": [
+  {
+   "href": "skills-takuetsu.html",
+   "label": "卓越スキル一覧を見る"
+  }
+ ],
+ "sourceCharacters": [
+  {
+   "name": "神谷薫",
+   "no": "2607",
+   "slot": "A",
+   "db": "kyoku"
+  },
+  {
+   "name": "宮本武蔵",
+   "no": "2444",
+   "slot": "C",
+   "db": "kyoku"
+  },
+  {
+   "name": "佐々木小次郎",
+   "no": "2450",
+   "slot": "B",
+   "db": "kyoku"
+  },
+  {
+   "name": "独眼竜政宗",
+   "no": "2582",
+   "slot": "B",
+   "db": "kyoku"
+  },
+  {
+   "name": "宮本二天",
+   "no": "2590",
+   "slot": "A",
+   "db": "kyoku"
+  },
+  {
+   "name": "佐々木巌流",
+   "no": "2591",
+   "slot": "A",
+   "db": "kyoku"
+  },
+  {
+   "name": "柳生宗矩",
+   "no": "2793",
+   "slot": "A",
+   "db": "kyoku",
+   "note": [
+    "柳生宗矩(2793)自身の初期スキルだが、ixanary.com(skills/活人剣)の合成テーブルで1次候補Aが活人剣自身(自己参照)であることを確認できたためA枠として列挙([[feedback_transferable_slot_labeling_rule]]に基づき「移植不可」は使わない)"
+   ]
+  }
+ ],
+ "grantedViaSkills": [],
+ "ownHiddenCandidate": {
+  "skill": "鬼滅刺",
+  "rank": "A"
+ },
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 攻撃 55%上昇+防御 55%上昇(卓越確率+7%加算・模倣不可・自軍内重複上限4)"
+  }
+ ],
+ "notes": [
+  "2026-08-16 No.2607(神谷薫)黄丸化検証時に新規作成。afterSkill(鬼滅刺)が既にskills.html独自ページを持つため、A-3-9の例外規定(既存S以上ページの移植元はランクに関わらずページ作成対象、鬼滅刺はA-3-12の例外でA以下でもページ作成された既存ケース)にもとづき作成。",
+  "対象・確率・効果文はixanary.com(skills/活人剣)の生HTML(LV10行)から。「模倣不可」は修飾語なしの独立行として記載。",
+  "sourceCharactersのうち2444・2450・2582・2590・2591は既存のdata/busho-kyoku-ps/{No}.jsonのsynthesisTable(skill:活人剣の行)をそのまま転記(2026-08-16時点で個別の一次情報源再確認はしていない、既存登録との照合による)。当初2444を鬼滅刺.jsonのsourceCharacters表記(A・B、別のskill=鬼滅刺の行)と取り違えて誤記したが、2444自身のsynthesisTable C行(skill=活人剣)を直接確認しCに訂正した。柳生宗矩(2793)はixanary.com(skills/活人剣)の武将カード欄と、2793自身のsynthesisTable A行(skill=活人剣、自己参照)の両方で確認しA枠とした。"
+ ]
+}

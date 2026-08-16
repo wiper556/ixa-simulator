@@ -1,1 +1,52 @@
-[]
+[
+ {
+  "cat": "afterSkill不一致",
+  "sev": "HIGH",
+  "msg": "「舞蝶朧月」が武将により別スキルに化けている: →月詠ノ覇威(千姫 No.2840 S1枠, 赤井輝子 No.2849 C枠, 出雲阿国 No.2850 B枠) / →黒飛燕剣(帰蝶 No.2592 A枠, 帰蝶 No.2592 B枠, 細川ガラシャ No.2599 S1枠, 細川ガラシャ No.2599 S2枠)"
+ },
+ {
+  "cat": "ページの配列が正本と違う",
+  "sev": "HIGH",
+  "msg": "skills.html の skills は実行後 452件、正本(data/skill)は 453件 / 配列は data/ からの生成物。手で書き換えず `python tools/build_data.py` で作り直す"
+ },
+ {
+  "cat": "LINKED_SKILLS",
+  "sev": "MID",
+  "msg": "KP_LINKED_SKILLS 未登録だがページ有り: 大樹ノ誓い"
+ },
+ {
+  "cat": "skillDetailに読点",
+  "sev": "MID",
+  "msg": "[武将] 大友宗麟（5）: 「、」が1個"
+ },
+ {
+  "cat": "skillDetailに読点",
+  "sev": "MID",
+  "msg": "[スキル] 無鹿ノ幻律: 「、」が1個"
+ },
+ {
+  "cat": "skillDetailに読点",
+  "sev": "MID",
+  "msg": "[スキル] 宝珠盛山: 「、」が1個"
+ },
+ {
+  "cat": "skillDetailに読点",
+  "sev": "MID",
+  "msg": "[スキル] 戦陣 凪: 「、」が1個"
+ },
+ {
+  "cat": "skillDetailに読点",
+  "sev": "MID",
+  "msg": "[スキル] 江河正攻: 「、」が1個"
+ },
+ {
+  "cat": "skillDetailに読点",
+  "sev": "MID",
+  "msg": "[スキル] 江虎謀牙: 「、」が1個"
+ },
+ {
+  "cat": "skillDetailに読点",
+  "sev": "MID",
+  "msg": "[スキル] 湖裂騎刃: 「、」が1個"
+ }
+]

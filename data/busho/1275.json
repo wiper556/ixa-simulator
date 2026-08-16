@@ -1,6 +1,7 @@
 {
  "name": "竹中半兵衛【覇】",
  "no": "1275",
+ "reviewedOk": true,
  "ch": "29章",
  "cost": 6,
  "troop": "全攻",
@@ -63,7 +64,7 @@
   },
   {
    "level": "TR5",
-   "points": "最大鍛錬",
+   "points": "200",
    "effect": "全　確率 100% / 攻撃 1730%上昇(無尽 部隊消費コスト-0.5・極限スキル効果3.5倍)"
   }
  ],
@@ -127,6 +128,7 @@
  "notes": [
   "カード画像照合済み: 槍A/弓S/馬A/器X(ixanary側jsonはyumi/kiba値が実画像と入れ替わっているため画像基準を採用)",
   "ixanary.com生HTML照合(2026-08-02): カード画像のスキル欄にLV10とTR5(鍛錬)の2枠のみ表示されており、TR1〜TR4は実在しない(存在すれば同様に表示されるはずだが無い)。",
-  "45do.info(ordinary/0318)生HTML照合+ameameixa.com(post-12334「29章天武将スキル一覧」表のNo.1275行)の両ソースでA/B/C/S1/S2の並びが一致確認済み。afterSkill(移植後変化)はixagno未掲載のため45do.info記載の等級のまま。"
+  "45do.info(ordinary/0318)生HTML照合+ameameixa.com(post-12334「29章天武将スキル一覧」表のNo.1275行)の両ソースでA/B/C/S1/S2の並びが一致確認済み。afterSkill(移植後変化)はixagno未掲載のため45do.info記載の等級のまま。",
+  "黄丸化検証(2026-08-16)で1件の誤りを発見し修正。旧notesに「TR1〜TR4は実在しない」とあったが、これは誤りで、ixanary.com(skills/智絶千算)の鍛錬表でTR1(750%)〜TR5(1730%)まで全段の値を確認(ixawiki.comもTR5=1730%で一致)。trTableのTR1〜TR4は元々正しい値が入っていたため据え置き、TR5のpointsが「最大鍛錬」という独自表記になっていたのを標準の「200」に統一(data/skill/智絶千算.jsonも同様)。カード画像no1275_full.pngの4隅バッジ(槍A/馬A/弓S/器X虹色)を確認し一致。覇バッジはあるがskillDetailに覇道の保護効果文が無いため覇道分類はしない(hadou_classification_rule通り)。synthesisTableはixanary.com+ixawiki.com(BushoCard/1275竹中半兵衛)の2ソースでA/B/C/S1/S2全枠(C・S1とも天地超克で重複)・afterSkillとも完全一致。摩利支天ノ法・万物神勇・天地超克・四天轟雷のdata/skill側sourceCharactersに1275が正しいslotで記載済みを確認(逆引き済み)。"
  ]
 }

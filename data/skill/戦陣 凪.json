@@ -1,0 +1,70 @@
+{
+ "name": "戦陣 凪",
+ "rank": "A",
+ "baseRate": 60,
+ "target": "全 飛翔2",
+ "effectSummary": "A/LV10 確率 60% 防御 110%上昇/対象:全　飛翔2\n①防御 110%上昇する\n②飛翔2を持つ\n③自軍防御参加武将が30以上の時、防御効果が2倍になる",
+ "categoryLinks": [
+  {
+   "href": "skills-hishou-def.html",
+   "label": "飛翔スキル一覧(防御)を見る"
+  },
+  {
+   "href": "skills-count-def.html",
+   "label": "人数依存(防)スキル一覧を見る"
+  }
+ ],
+ "sourceCharacters": [
+  {
+   "name": "津軽為信",
+   "no": "2359",
+   "slot": "S1",
+   "db": "kyoku",
+   "note": [
+    "津軽為信(2359)characters-kyoku.html synthesisTable S1枠。以前は本ページが無く海神ノ浮船.json側に「S1(戦陣 凪経由)」として直接記載されていたが、A-3-9の例外ルール(2026-08-04)に従い戦陣 凪自身のページを作成しここへ移設した(2026-08-16、No.2594黄丸化検証時)。"
+   ]
+  },
+  {
+   "name": "甲斐宗運",
+   "no": "2459",
+   "slot": "A",
+   "db": "kyoku",
+   "note": [
+    "甲斐宗運(2459)のsynthesisTable A枠(2026-08-16)"
+   ]
+  },
+  {
+   "name": "那須与一",
+   "no": "2594",
+   "slot": "C・S1",
+   "db": "kyoku"
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "海神ノ浮船",
+  "rank": "SS"
+ },
+ "grantedViaSkills": [
+  {
+   "skill": "負けてらんない",
+   "rank": "A"
+  },
+  {
+   "skill": "大樹ノ誓い",
+   "rank": "A"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全 飛翔2　確率 60% / 防御 110%上昇(自軍防御参加武将が30以上の時、防御効果2倍)"
+  }
+ ],
+ "notes": [
+  "2026-08-16作成(No.2594黄丸化検証)。移植後合成候補(海神ノ浮船[SS])が既存ページを持つためA-3-9の例外ルールでAランクだがページ作成対象。",
+  "ixanary.com/skills/戦陣 凪 の生HTMLでLV1(確率31%/防御69%上昇)・LV10(確率60%/防御110%上昇)を確認。TR段階なし。",
+  "合成テーブルは負けてらんないの初期スキルページ(ixanaryは別武将の表を誤表示している疑いがあり不採用、下記参照)ではなくixawiki(BushoCard/2594那須与一)とixagno.blog.fc2.com(blog-entry-9540)の2ソース一致(負けてらんない→戦陣 凪→海神ノ浮船)を根拠にした。",
+  "2026-08-16(No.2583黄丸化検証): grantedViaSkillsに大樹ノ誓い[A]を追加。西郷局(2583)のS2枠はsynthesisTable上のskillが大樹ノ誓いでafterSkillが本スキルのため、2583自身は大樹ノ誓い.json側に直接列挙。"
+ ]
+}

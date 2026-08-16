@@ -46,3 +46,5 @@
 2026-08-15	-1	hooks:tools/audit_selftest.py	audit_selftest.py: 効果文の数値の前に半角スペースを入れて統一した(ユーザー判断)ため、注入の目印2件が data と一致せず skip になっていた。目印を「攻撃 390%上昇」に合わせただけで、検査そのものは変えていない
 2026-08-16	-2	hooks:tools/audit_characters.py,hooks:tools/prerender.py	無尽スキル一覧を攻撃用/防御用の2ページに割った(ユーザー依頼)ことへの追従。prerender.py は事前描画の対象を skills-mujin.html/skills-cost.html から -atk/-def に差し替え。audit_characters.py は categoryLinks の判定を、飛翔と同じく**ページ名の一部**で見る形にした(どちらか片方に載っていればよい)。検査を弱めるものではなく、分割に合わせて対象を追随させるもの
 2026-08-16	-1	hooks:tools/gate_selftest.py	gate_selftest.py: ベースラインが空(監査0件なら空になる)のとき、A-01の筋書きが [,{…}] という壊れたJSONを作り、門番がJSONDecodeErrorで落ちて「止まったが理由が違う」と判定されCIが赤になっていた。空も正しい状態として扱うようにした。検査を弱めるものではない
+2026-08-16	-1	hooks:tools/audit_characters.py	audit_characters.py に検査を1つ足した(緩めるのではなく増やす)。sourceCharacters の slot が武将の synthesisTable の実枠と一致しているかを見る。No.1279 荒木村重（2）の魔導禁鎖が A・B 枠に載っているのにスキル側は「移植不可」だった(ユーザー指摘)。全件で26件あり、うち5件は移植不可なのに実は移植できるという、使い方を間違えさせる誤りだった。逆引きの有無しか見ていなかったので今まで通っていた
+2026-08-16	-1	hooks:tools/audit_selftest.py	audit_selftest.py: 新しく足した検査「slotが実枠と違う」の筋書きを追加。検査を1つ増やしたぶん未カバーが上限を超えていたので、上限を緩めるのではなく筋書きのほうを書いた

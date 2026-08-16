@@ -133,6 +133,10 @@
   }
  ],
  "notes": [
-  "ixagno.blog.fc2.com生HTML照合済み(2026-07-29、45do.infoに本カードの記事が無いため代替ソースで確認。第一/第二/第三=A/B/C対応)。"
- ]
+  "カード画像照合済み(2026-08-16): 槍A/弓A/馬A/器SS、攻1100/防1270/兵法660.0/指揮5290/コスト5.5も画像と一致。",
+  "ixanary.com(/skills/泰厳射手/)生HTML照合(2026-08-16): LV1・LV10・TR1〜TR6の全段階が実在し、係数11.8/12.2/12.7/13.3/14/14.7・確率60/60/60/60/60/100%が現在のtrTableと完全一致。",
+  "synthesisTable: ixawiki.com(index.php?BushoCard/1302佐竹義宣)は未記入のテンプレートのまま(A[]/B[]等)で情報が無いため使用不可。代わりにixanary.com(/skills/泰厳射手/、生HTML)とixagno.blog.fc2.com(blog-entry-10831「佐竹義宣(3)【天】(No.1302)の能力と考察」)の2ソースで確認し、A=八幡神ノ威光[SSS]/B=虚実兵妙[SS]/C=月煌侵蝕[SSS]/S1=泰厳射手[S](自己参照)/S2=月煌侵蝕[SSS](C・S2が同一スキル)で完全一致。",
+  "data/skill/八幡神ノ威光.json・虚実兵妙.json・月煌侵蝕.json・泰厳射手.jsonのsourceCharactersに1302が正しい枠(C・S2はまとめて記載)で登録済みであることを確認(A-3-11)。"
+ ],
+ "reviewedOk": true
 }

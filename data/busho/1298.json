@@ -126,5 +126,12 @@
    "afterEffectShort": "攻撃 (9.2×防御参加武将数)%上昇+撤退(陣での防御戦闘に参加しない)"
   }
  ],
- "currentlyInKuji": true
+ "currentlyInKuji": true,
+ "notes": [
+  "カード画像照合済み(2026-08-16): 槍A/弓SS/馬A/器SS、攻1310/防1220/兵法860.0/指揮5230/コスト5.5も画像と一致。カード上「名前」欄の赤い覇アイコンで【覇】カードであることを確認(前面バッジは通常の「天」)。skillDetailに覇道の保護効果・赤字「覇道」表記は無いためcategoryLinksにskills-hadou.htmlは付けない(【覇】カード=覇道スキルではない)。",
+  "ixanary.com(/skills/天導仁翼/)生HTML照合(2026-08-16): LV1・LV10・TR1〜TR6の全段階が実在し、係数4.1/4.3/4.5/4.7/5/6.3が現在のtrTableと完全一致(TR6の式はfeedback_count_dependent_skill_formatの確定例そのもの)。",
+  "synthesisTable: ixanary.com(/skills/天導仁翼/、生HTML)ではA=覆天征軍[SS]/B=焼尽神無[SS]/C=勇冠三軍[SSS]/S1=終焉焦土[SSS]/S2=万物神勇[SSS](全枠自己参照)で現在のデータと完全一致。ixawiki.com(index.php?BushoCard/1298豊臣秀長(覇))は別内容(A・B=天地超克/C=焼尽神無/S1=勇冠三軍/S2=万物神勇)を表示しており2ソースが食い違ったため、第3ソースixagno.blog.fc2.com(blog-entry-10835「豊臣秀長【覇】(No.1298)の能力と考察」)を確認したところ第一=覆天征軍[SS]/第二=焼尽神無[SS]/第三=勇冠三軍[SSS]/S1=終焉焦土[SSS]/S2=万物神勇[SSS]でixanaryと完全一致(2対1)。ixawiki側の表記を誤りと判断し現状データを維持。",
+  "data/skill/覆天征軍.json・焼尽神無.json・勇冠三軍.json・終焉焦土.json・万物神勇.jsonのsourceCharactersに1298が正しい枠で登録済みであることを確認(A-3-11)。"
+ ],
+ "reviewedOk": true
 }

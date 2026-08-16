@@ -69,8 +69,8 @@
    "rank": "A",
    "afterSkill": "鬼滅刺",
    "afterRank": "A",
-   "target": null,
-   "rate": null,
+   "target": "全",
+   "rate": "100%",
    "effectShort": "攻撃 94%上昇+防御 94%上昇(部隊内全武将の初期スキルに「槍弓馬」対象を追加・兵科対象スキル限定)",
    "afterTarget": "全",
    "afterRate": "100%",
@@ -82,8 +82,8 @@
    "rank": "B",
    "afterSkill": "戦陣 破軍",
    "afterRank": "A",
-   "target": null,
-   "rate": null,
+   "target": "全",
+   "rate": "32%",
    "effectShort": "攻撃 72%上昇+防御 72%上昇+破壊 20%上昇",
    "afterTarget": "全",
    "afterRate": "44%",
@@ -121,8 +121,8 @@
    "rank": "A",
    "afterSkill": "布都御魂ノ鬨",
    "afterRank": "SS",
-   "target": null,
-   "rate": null,
+   "target": "全",
+   "rate": "10%",
    "effectShort": "攻撃 87%上昇+防御 87%上昇",
    "afterTarget": "全",
    "afterRate": "35%",
@@ -135,6 +135,12 @@
   " + ixawiki BushoCard/2440(統率2次確認・合成テーブル1次/2次候補)。",
   "統率はカード画像+ixawikiの2ソース一致。No.2435(土居清良・砲対象追加)と同系の対象兵科追加スキル(こちらは槍弓馬)。",
   "攻撃+防御の同時変動はtrTableに併記(multistat規則)。スキルはA(鍛錬情報なし)のためTR1以降のeffectはnull。",
-  "合成テーブルはixawiki(1次候補+2次候補)"
- ]
+  "合成テーブルはixawiki(1次候補+2次候補)",
+  "2026-08-16黄丸化検証: rankGrades(A/A/S/A)はno2440_full.pngの4隅バッジを個別ズームして再確認し一致。基礎値・コスト・指揮兵数・成長値・LV10スキル値(確率100%/攻防94%)はixanary.com(cards/2440)生HTMLで一致確認。",
+  "A枠(紅蓮炎槍騎兵、自身の初期スキル)・B枠(戦場妙技)はtarget/rateが未確定(null)だったため、ixanary生HTML(skills/紅蓮炎槍騎兵・戦場妙技)で埋めた(A:全,100%/B:全,32%)。A枠の紅蓮炎槍騎兵→鬼滅刺、B枠の戦場妙技→戦陣破軍はいずれもskill≠afterSkillでafterSkillが既にページを持つため、A-3-9の例外ルールによりdata/skill/紅蓮炎槍騎兵.json・戦場妙技.jsonを新規作成し(いずれも2440のみ)、鬼滅刺.json・戦陣 破軍.jsonのgrantedViaSkillsに追記した。",
+  "S2枠(戦陣凱旋)のtarget/rateが未確定(null)だったため、ixanary生HTML(skills/戦陣 凱旋)でtarget:全,rate:10%を追加。C枠(戦陣無双)・S1枠(鬼滅刺、自己参照)は既にdata/skill/戦陣 無双.json・鬼滅刺.jsonのsourceCharactersに井伊直政（3）(2440)が正しいslotで登録済みであることを確認した(A-3-11、鬼滅刺.json側のnote文言に「A枠」という誤記があったため「S1枠」に訂正)。",
+  "synthesisTableのA/B/C/S1/S2は、ixanary.com(cards/2440の初期スキル紅蓮炎槍騎兵の合成テーブルおよび各候補スキル個別ページ)に加え、ixawiki.com(index.php?BushoCard/2440井伊直政)の合成候補テーブル(1次候補/2次候補S1)を生HTMLで確認し、全5行がixanary/ixawiki2ソースで一致することを確認した。",
+  "章はixanary.com/ixawiki.comいずれのカードページにも記載が無く未確認。"
+ ],
+ "reviewedOk": true
 }

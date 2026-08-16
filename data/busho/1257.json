@@ -1,11 +1,12 @@
 {
  "name": "村上武吉（2）",
  "no": "1257",
+ "reviewedOk": true,
  "ch": "27章",
  "cost": 4,
  "troop": "弓馬砲器攻",
  "sub": "",
- "effect": "自部隊同時攻撃時に合流し不足数を得る",
+ "effect": "自部隊同時攻撃時に合流し不屈を得る",
  "furigana": "むらかみたけよし",
  "illustrator": "直良有祐",
  "imageFull": "assets/img/characters/no1257_full.png",
@@ -20,16 +21,22 @@
  "rankGrades": {
   "yari": "A",
   "yumi": "A",
-  "uma": "SS",
-  "ki": "A"
+  "uma": "A",
+  "ki": "SS"
  },
  "initialSkill": "海王怒涛",
- "skillDetail": "S/LV10 確率 55% 攻撃 440%上昇/対象:弓・馬・砲・器\n①攻撃 440%上昇する\n②自部隊同時攻撃時この武将は合流し自部隊数-2の不足を得る(特殊効果は模倣不可)",
+ "skillDetail": "S/LV10 確率 55% 攻撃 440%上昇/対象:弓・馬・砲・器\n①攻撃 440%上昇する\n②自部隊同時攻撃時この武将は合流し自部隊数-2の不屈を得る(特殊効果は模倣不可)",
+ "categoryLinks": [
+  {
+   "href": "skills-fukutsu.html",
+   "label": "不屈スキル一覧を見る"
+  }
+ ],
  "trTable": [
   {
    "level": "LV10",
    "points": "-",
-   "effect": "弓・馬・砲・器　確率 55% / 攻撃 440%上昇(自部隊同時攻撃時、合流し不足(部隊数-2)を得る)"
+   "effect": "弓・馬・砲・器　確率 55% / 攻撃 440%上昇(自部隊同時攻撃時、合流し不屈(部隊数-2)を得る)"
   }
  ],
  "synthesisTable": [
@@ -65,7 +72,7 @@
    "afterRank": "SS",
    "rate": "55%",
    "target": "弓・馬・砲・器",
-   "effectShort": "攻撃 440%上昇(自部隊同時攻撃時合流し不足を得る)",
+   "effectShort": "攻撃 440%上昇(自部隊同時攻撃時合流し不屈を得る)",
    "afterTarget": "全 不屈2",
    "afterRate": "100%",
    "afterEffectShort": "攻撃 750%上昇+不屈2(攻撃戦闘敗北時指揮兵が不屈値×1000まで回復)"
@@ -94,6 +101,7 @@
   }
  ],
  "notes": [
-  "45do.info生HTML(skiladd_wrap) + ixagno.blog.fc2.com(blog-entry-9520、検索クエリ「No.1257」で発見)生HTML の2ソースで完全一致を確認(2026-08-02再検証)"
+  "45do.info生HTML(skiladd_wrap) + ixagno.blog.fc2.com(blog-entry-9520、検索クエリ「No.1257」で発見)生HTML の2ソースで完全一致を確認(2026-08-02再検証)",
+  "黄丸化検証(2026-08-16)で2件の誤りを発見し修正。(1)rankGrades: 誤ってuma:SS/ki:Aと登録されていたが、カード画像no1257_full.pngの4隅バッジ拡大確認+ixawiki.com(BushoCard/1257村上武吉)の両方でuma:A/ki:SSが正しいと判明し訂正。(2)skillDetail等: 「自部隊数-2の不足を得る」となっていたが、カード画像を拡大すると緑色ハイライトの「不屈」であり「不足」ではなかった(2次候補の破軍騎行が既に不屈2キーワードを持つこととも整合)。skillDetail/trTable/synthesisTable C枠effectShort/トップeffectを「不屈」に訂正し、skills-fukutsu.htmlへのcategoryLinksを追加(data/skill/海王怒涛.jsonにも同様に適用)。synthesisTableのA/B/C/S1/S2はixanary.com(skills/海王怒涛)+ixawiki.com(BushoCard/1257)の2ソースで完全一致確認。十束ノ神域・天頂ノ電光・破軍騎行・月詠ノ覇威のdata/skill側sourceCharactersに1257が正しいslotで記載済みを確認(逆引き済み)。"
  ]
 }

@@ -22,11 +22,20 @@
   "skill": "朧雲ノ閃撃",
   "rank": "SSS"
  },
+ "grantedViaSkills": [
+  {
+   "skill": "湖裂騎刃",
+   "rank": "A"
+  }
+ ],
  "trTable": [
   {
    "level": "LV10",
    "points": "-",
    "effect": "全　確率 70%/100% / 攻撃 100%上昇(確率70%)+速度 70%上昇(確率100%)(TRなし)"
   }
+ ],
+ "notes": [
+  "2026-08-16(No.7012黄丸化検証): B枠(湖裂騎刃[A]→不滅ノ鬼神[S])が未登録だったため、湖裂騎刃.jsonを新規作成しgrantedViaSkillsに追加した。"
  ]
 }

@@ -1,0 +1,52 @@
+{
+ "name": "戦陣 召雷",
+ "rank": "A",
+ "baseRate": 55,
+ "target": "全 飛翔4",
+ "effectSummary": "A/LV10 確率 55% 攻撃 95%上昇/対象:全　飛翔4\n①攻撃 95%上昇する(6部隊以下の攻撃で効果2倍)\n②飛翔4を持つ(敵軍に飛翔を持つ武将が4人未満のとき通常武将ダメージを受けない)",
+ "categoryLinks": [
+  {
+   "href": "skills-hishou-atk.html",
+   "label": "飛翔スキル(攻撃)一覧を見る"
+  }
+ ],
+ "sourceCharacters": [
+  {
+   "name": "佐野昌綱",
+   "no": "2457",
+   "slot": "A",
+   "db": "kyoku",
+   "note": [
+    "佐野昌綱(2457)のsynthesisTable A枠(2026-08-16)"
+   ]
+  },
+  {
+   "name": "島津豊久",
+   "no": "2593",
+   "slot": "C・S1",
+   "db": "kyoku"
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "天頂ノ電光",
+  "rank": "SSS"
+ },
+ "grantedViaSkills": [
+  {
+   "skill": "命だけ置いてけ",
+   "rank": "A"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全 飛翔4　確率 55% / 攻撃 95%上昇(6部隊以下の攻撃で効果2倍・敵軍飛翔持ち4人未満の時通常武将ダメージを受けない)"
+  }
+ ],
+ "notes": [
+  "2026-08-16作成(No.2593黄丸化検証)。移植後合成候補(天頂ノ電光[SSS])が既存ページを持つためA-3-9の例外ルールでAランクだがページ作成対象。",
+  "ixanary.com/skills/戦陣 召雷 の生HTMLでLV1(確率28%/攻撃40%上昇)・LV10(確率55%/攻撃95%上昇)を確認。TR段階なし。",
+  "合成テーブルはixawiki(BushoCard/2593島津豊久)とixagno.blog.fc2.com(blog-entry-9541)の2ソース一致(命だけ置いてけ→戦陣 召雷→天頂ノ電光)を根拠にした。"
+ ]
+}

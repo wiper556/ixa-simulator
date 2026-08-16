@@ -123,6 +123,12 @@
   }
  ],
  "notes": [
-  "45do.info+ixagno.blog.fc2.com(blog-entry-10266)確認済み: A(豊国ノ寵将)/B・C・S1(雷閃鉾)/S2(志半ノ矛楯)とも全て自己参照で両ソース一致"
- ]
+  "2026-08-16黄丸化検証(A-1〜A-5): rankGrades(槍S/馬A/弓B/器A)はカード画像の4隅バッジを個別にズームして再確認し、ixawiki.com(BushoCard/2388成松信勝)の基本ステータス表とも一致。基礎値/成長値/コスト/指揮兵数(★0-0=4280)はixanary.com(cards/2388)生HTMLとixawikiの両方で一致確認。",
+  "synthesisTableはixanary.com(skills/雷閃鉾)の合成テーブル(1次/2次/3次)生HTMLと、ixawiki.com(BushoCard/2388成松信勝)のスキル追加合成テーブルの2ソースで突き合わせ完全一致を確認: A=豊国ノ寵将[S]自己参照、B/C/S1=雷閃鉾[A]自己参照、S2=志半ノ矛楯[A]自己参照。",
+  "sourceCharacters逆引き確認(A-3-11): 豊国ノ寵将.jsonのsourceCharactersにNo.2388がslot Aで登録済み。雷閃鉾・志半ノ矛楯はA以下自己参照でskills.html新規ページ作成の例外にも該当せず、data/skill配下にファイルが無いのが正しい状態(該当なし)。",
+  "categoryLinks(A-2): 飛翔付与スキルのためskills-hishou-def.htmlへのリンクが既に設定済みで正しい(自身は防御系飛翔付与のため-def側のみ、-atk側は該当なし)。",
+  "trTable: ixanary生HTML(skills/雷閃鉾)でLV10(飛翔12)/TR1(飛翔13)/TR2(飛翔14)の行のみ存在しTR3以降の行自体が無いことを確認(TR2が最終段)。既存のTR3〜5=null行は表示規則上「それより上のTR行」として非表示になるため実害無し、削除も不要。",
+  "章(29章)はixanary.com/ixawiki.comのカードページ双方に章の直接記載が無く一次情報源では裏取りできないが、既存登録値をそのまま維持(矛盾する情報は見つからず)。"
+ ],
+ "reviewedOk": true
 }

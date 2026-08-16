@@ -101,8 +101,8 @@
    "rank": "SS",
    "afterSkill": "騒速ノ神撃",
    "afterRank": "SS",
-   "target": null,
-   "rate": null,
+   "target": "槍・弓・器・焙",
+   "rate": "57%",
    "effectShort": "攻撃 100%上昇+防御 100%上昇(部隊内の「騒速ノ神撃」スキル数×25%を攻防効果に加算)",
    "afterEffectShort": "攻撃 100%上昇+防御 100%上昇(部隊内の「騒速ノ神撃」スキル数×25%を攻防効果に加算)"
   },
@@ -136,6 +136,12 @@
   "統率はカード画像+ixawikiの2ソース一致。部隊内卓越確率上昇スキルとしてシミュのspecialSkillsにも登録済み",
   "(takuetsuRateBonus:20)。攻撃+防御の同時変動はtrTableに併記(multistat規則)。",
   "初期スキルがSランクのためスキル個別ページの新規作成が必要(docsのTODOに記録済み)。",
-  "合成テーブルはixawiki(1次候補+2次候補)"
- ]
+  "合成テーブルはixawiki(1次候補+2次候補)",
+  "2026-08-16黄丸化検証: rankGrades(S/A/A/A)はno2449_full.pngの4隅バッジを個別ズームして再確認し一致。基礎値・コスト・指揮兵数・成長値・LV10スキル値(確率50%/攻防114%/卓越確率+20%)はixanary.com(cards/2449)生HTMLで一致確認。初期スキルSランクのページ(data/skill/波濤ノ剛撃.json)は既にA・B枠が正しく登録済みであることを確認、旧「未作成」の記述を訂正。",
+  "C枠(騒速ノ神撃、自己参照)のtarget/rateが未確定(null)だったため、data/skill/騒速ノ神撃.jsonの確定値(target:槍・弓・器・焙,rate:57%)を転記し、ドット区切り表記もあわせて統一した。",
+  "A・B枠(波濤ノ剛撃)・C枠(騒速ノ神撃)・S1・S2枠(布都御魂ノ鬨)は全てdata/skill/波濤ノ剛撃.json・騒速ノ神撃.json・布都御魂ノ鬨.jsonのsourceCharactersに吉川元春(2449)が正しいslotで登録済みであることを確認した(A-3-11)。",
+  "synthesisTableのA/B/C/S1/S2は、ixanary.com(cards/2449の初期スキル波濤ノ剛撃の合成テーブルおよび各候補スキル個別ページ)に加え、ixawiki.com(index.php?BushoCard/2449吉川元春)の合成候補テーブル(1次候補/2次候補S1)を生HTMLで確認し、全5行がixanary/ixawiki2ソースで一致することを確認した。",
+  "章はixanary.com/ixawiki.comいずれのカードページにも記載が無く未確認。"
+ ],
+ "reviewedOk": true
 }

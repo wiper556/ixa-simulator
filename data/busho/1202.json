@@ -24,12 +24,12 @@
   "ki": "SS"
  },
  "initialSkill": "蛇神咆哮",
- "skillDetail": "SSS/LV10 確率 100% 攻撃 240%上昇/対象:全\n①攻撃 240%上昇する\n②対象兵科指揮時極限スキルの攻撃効果が3.5倍となる(模倣不可・TR1〜TR5は未確認)",
+ "skillDetail": "SSS/LV10 確率 100% 攻撃 240%上昇/対象:全\n模倣不可\n①攻撃 240%上昇する\n②対象兵科指揮時極限スキルの攻撃効果が3.5倍となる",
  "trTable": [
   {
    "level": "LV10",
    "points": "-",
-   "effect": "全　確率 100% / 攻撃 240%上昇(極限スキル攻撃効果3.5倍)"
+   "effect": "全　確率 100% / 攻撃 240%上昇(極限スキル攻撃効果3.5倍・TRなし)"
   }
  ],
  "synthesisTable": [
@@ -91,6 +91,12 @@
  ],
  "notes": [
   "カード画像照合済み(2026-07-30): 槍S/弓A/馬A/器SS",
-  "45do.info(ordinary/0073)生HTML + ameameixa.com(bushocard-1202)生HTML の2ソースで完全一致を確認(2026-08-02)"
- ]
+  "2026-08-16黄丸化検証: rankGrades(槍S/馬A/弓A/器SS)をカード画像バッジ4隅で再照合、一致。ステータス初期値・成長値・cost5.5・lv0Troops5100はixanary.com(cards/1202)生HTMLの成長表と一致。",
+  "synthesisTable(A/B=猛火ノ追撃SSS、C/S1=天津甕星ノ雷SS、S2=覇王征軍SS、いずれも自己参照で1次〜3次とも変化なし)をixanary.com(skills/蛇神咆哮)生HTMLとixawiki.com(BushoCard/1202斎藤道三)生HTMLの2ソースで完全一致を確認(2026-08-16、45do.info/ameameixa.comの旧ソースから差し替え)。",
+  "蛇神咆哮はixanary/ixawikiともLV1/LV10の2段のみでTR行が存在しないことを確認したため、skillDetailの「TR1〜TR5は未確認」注記を削除しtrTableに「TRなし」と明記した(2026-08-16)。",
+  "skillDetailの「模倣不可」がTR注記と同じ括弧内に埋め込まれ②の一部になっていたのを、data/skill/蛇神咆哮.jsonの正しい書式(①の前に独立行)に合わせて修正(2026-08-16)。",
+  "sourceCharacters逆引き確認(A-3-11): 猛火ノ追撃(slot A・B)・天津甕星ノ雷(slot C・S1)・覇王征軍(slot S2)いずれもdata/skill/配下のsourceCharactersに1202が既に記載済みであることをgrep相当の目視で確認、追記不要だった(2026-08-16)。",
+  "章(23章)は情報源に記載が無く未確認のまま(ixanary/ixawiki/ixagno検索いずれもchapter情報を確認できず)。"
+ ],
+ "reviewedOk": true
 }

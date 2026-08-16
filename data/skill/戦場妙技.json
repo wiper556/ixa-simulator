@@ -1,0 +1,46 @@
+{
+ "name": "戦場妙技",
+ "rank": "B",
+ "baseRate": 32,
+ "target": "全",
+ "effectSummary": "B/LV10 確率 32% 攻撃 72%上昇/防御 72%上昇/破壊 20%上昇/対象:全",
+ "sourceCharacters": [
+  {
+   "name": "井伊直政（3）",
+   "no": "2440",
+   "slot": "B",
+   "db": "kyoku"
+  },
+  {
+   "name": "織田信雄",
+   "no": "2799",
+   "slot": "S1",
+   "db": "kyoku",
+   "note": [
+    "織田信雄(2799)のsynthesisTable S1枠(2026-08-16)"
+   ]
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "戦陣 破軍",
+  "rank": "A"
+ },
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 32% / 攻撃 72%上昇+防御 72%上昇+破壊 20%上昇"
+  }
+ ],
+ "notes": [
+  "2026-08-16作成。A-3-9の例外ルール(移植後合成候補afterSkillが既にskills.htmlページを持つ戦陣 破軍[A]である元スキル)によりBランクだがページ作成対象。",
+  "ixanary.com/skills/戦場妙技 の生HTML(LV10行: 確率32%/対象全/攻撃72%上昇/防御72%上昇/破壊20%上昇)で確認。categoryLinksは9項目いずれも該当なし。",
+  "No.2440井伊直政（3）(B枠、担当範囲内)の黄丸化検証(2026-08-16)で新規作成。data/skill/戦陣 破軍.jsonのgrantedViaSkillsに本スキルを追記した。"
+ ],
+ "grantedViaSkills": [
+  {
+   "skill": "天ノ逆矛",
+   "rank": "S"
+  }
+ ]
+}

@@ -5,6 +5,12 @@
  "target": "全",
  "noMimic": true,
  "effectSummary": "SSS/LV10 確率 45% 攻撃 170%上昇/対象:全\n模倣不可\n①攻撃 170%上昇する\n②自部隊同時攻撃時部隊総コストからこの武将のコストを最大2まで除外する",
+ "categoryLinks": [
+  {
+   "href": "skills-cost-atk.html",
+   "label": "コスト減少(攻撃)スキル一覧を見る"
+  }
+ ],
  "sourceCharacters": [
   {
    "name": "相良義陽（3）",
@@ -60,6 +66,10 @@
   {
    "skill": "義陣響野",
    "rank": "S"
+  },
+  {
+   "skill": "闘火将帥",
+   "rank": "A"
   }
  ],
  "ownHiddenCandidate": {
@@ -67,7 +77,8 @@
   "rank": "SSS"
  },
  "notes": [
-  "2026-08-13: A-3-12の逆方向リンク。武将のsynthesisTableでは1次がこのスキルに変化するのに、こちら側から元スキルを指していなかった。1次→2次の組100件を元スキルのownHiddenCandidateと突き合わせ、矛盾0件を確かめたうえで機械的に張った。"
+  "2026-08-13: A-3-12の逆方向リンク。武将のsynthesisTableでは1次がこのスキルに変化するのに、こちら側から元スキルを指していなかった。1次→2次の組100件を元スキルのownHiddenCandidateと突き合わせ、矛盾0件を確かめたうえで機械的に張った。",
+  "2026-08-16(No.2380黄丸化検証): 柿崎景家(2380)のB/C枠(闘火将帥[A]→氷塊三連撃[SSS])はA-3-9例外規定により闘火将帥側に新規ページを作成しgrantedViaSkillsに追加。柿崎景家自身のS1枠(氷塊三連撃を直接所持・自己参照)は既存通りsourceCharactersに直接列挙のまま(slot:S1)で正しい。"
  ],
  "trTable": [
   {

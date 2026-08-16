@@ -2,7 +2,7 @@
  "name": "南光坊天海",
  "no": "10063",
  "furigana": "なんこうぼうてんかい",
- "illustrator": "SQUARE ENIX",
+ "illustrator": "直良有祐",
  "atkBase": 1070,
  "atkGrowth": 44,
  "defBase": 1250,
@@ -17,12 +17,12 @@
   "ki": "SS"
  },
  "initialSkill": "虚実法容",
- "skillDetail": "S/LV10 確率：+38% / 対象 全 防御：760%上昇 / 配置中の陣形内の他武将のうちこの武将と同兵種を指揮している武将数×80%を防御効果に加算(防御効果の加算は本丸防御陣形または所領防御陣形に配置時のみ有効)",
+ "skillDetail": "S/LV10 確率 38% 防御 760%上昇/対象:全\n①防御 760%上昇する\n②配置中の陣形内の他武将のうちこの武将と同兵種を指揮している武将数×80%を防御効果に加算する(防御効果の加算は本丸防御陣形または所領防御陣形に配置時のみ有効)",
  "ch": "30章",
  "cost": 5,
  "troop": "全攻",
  "sub": "",
- "effect": "8部隊以下の攻撃戦闘時、卓越確率上昇",
+ "effect": "配置中陣形内の同兵種武将数依存で防御上昇",
  "trTable": [
   {
    "level": "LV10",
@@ -79,7 +79,7 @@
    "afterSkill": "仙境解脱",
    "afterRank": "SS",
    "target": "全",
-   "rate": null,
+   "rate": "48%",
    "effectShort": "防御 910%上昇(部隊消費コスト-1.5・模倣不可)",
    "afterEffectShort": "防御 910%上昇(部隊消費コスト-1.5・模倣不可)"
   },
@@ -116,5 +116,14 @@
    "effectShort": "防御 740%上昇+防御戦闘時敵軍の卓越確率-8%する(自軍内重複上限2)",
    "afterEffectShort": "防御 740%上昇+防御戦闘時敵軍の卓越確率-8%する(自軍内重複上限2)"
   }
+ ],
+ "notes": [
+  "2026-08-16黄丸化検証(未完了・青丸のまま残す): assets/img/characters/no10063_full.png/no10063_char.pngが存在せず(imageFull/imageChar自体が未設定)、マニュアルA-1-2が要求するカード画像バッジの直接照合ができない状態だった。",
+  "illustrator欄が「SQUARE ENIX」という誤った値になっていたため、ixanary.com/cards/10063/(curl生HTML)で確認した「直良有祐」に修正した。",
+  "effect欄が「8部隊以下の攻撃戦闘時、卓越確率上昇」になっていたが、これは10065(世良田二郎三郎)の護国王器の説明文であり本カードのskillDetail(配置中陣形内の同兵種武将数依存で防御上昇)と無関係だったため、コピペ跡と判断し「配置中陣形内の同兵種武将数依存で防御上昇」に修正した。",
+  "rankGradesはixanary.com/cards/10063/のcard JSON(槍A/弓A/馬A/器SS)とixawiki.com(index.php?BushoCard/10063南光坊天海)の統率力表(槍A/馬A/弓A/器SS)が完全一致し、既存データとも一致したため変更なし。ただし実カード画像での確認ではないため確信度は「未確認扱い」に留める。",
+  "skillDetail/data/skill/虚実法容.jsonのeffectSummaryがixanaryの生テキストそのままの書式だったため、サイト標準の「ヘッダー1行+①②改行+読点なし」書式に整形した。ステータス(コスト5/指揮5110/成長値攻44防71兵法4.0)は一致確認。trTableは既にTR1〜TR6全段(TR6はixanary生HTMLで実在確認済み)。",
+  "synthesisTableはixanary.com/skills/虚実法容/の生HTML合成テーブルでA〜S2全5枠(全て自己参照)が既存登録と完全一致。B枠のrateがnullだったため、data/skill/仙境解脱.jsonのbaseRate(48)を確認し48%を補完した。sourceCharacters逆引き(A-3-11): 摩利支天ノ法/仙境解脱/梵天浄界/虚実兵妙/虚実法容(自身)の各data/skill/*.jsonに10063が反映済みを確認。",
+  "上記のとおりデータ自体は2ソース(ixanary+ixawiki)で確認できたが、A-1-2が要求するローカルカード画像が無いという構造的な不備が残るため、reviewedOk:trueにはせず青丸のまま報告する。画像の取得・切り抜きを別途行った上で再検証することを推奨する。"
  ]
 }

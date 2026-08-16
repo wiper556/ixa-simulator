@@ -129,6 +129,8 @@
   " + ixaixa.com/archives/8467(合成テーブルA/B/C/S1/S2・各候補の効果・限定極の排出期間)。",
   "スキルはB(鍛錬不可)のためTR1以降のeffectはnullのまま(表示側で自動非表示)。",
   "合成テーブルは登録時ixaixa.com単一ソースだったが、2026-08-12にixanaryのスキル個別ページ",
-  " (1次/2次候補)と全行一致することを確認し2ソースになった(tools/audit_characters.py --online)。"
- ]
+  " (1次/2次候補)と全行一致することを確認し2ソースになった(tools/audit_characters.py --online)。",
+  "2026-08-16黄丸化検証: rankGrades(S/A/A/A)はno2401_full.pngの4隅バッジを個別ズームして再確認し一致。基礎値・コスト・指揮兵数・成長値・ふりがな・絵師はixanary.com/cards/2401の生HTML(curl)で一致確認。初期スキル剣聖建御雷のLV10値(確率15%/攻撃18%/4倍)はixanary生HTMLのLV10行で確認、LV1カード表示(確率+6%/攻撃8%/2倍)とは別物であることを確認済み(B-00)。synthesisTableのA/B/C/S1/S2は、既存のixanary+ixaixa.com確認に加え、ixawiki.com(index.php?BushoCard/2401塚原卜伝)の合成候補テーブル(1次候補/2次候補S1)を新たに生HTMLで確認し、A:剣術攻乃型[E]→迅速行軍[E]、B:戦巧者[D]→大貉[D]、C:予覚の残香[B](自己参照)、S1:剣聖建御雷[B](自己参照)、S2:戦鬼侵軍[B]の全5行がixanary/ixawiki2ソースで一致することを確認した。候補スキルは全てE/D/Bランク(S未満)のためskills.html新規ページ作成・sourceCharacters逆引きは該当なし(A-3-9)。章はixanary.com/ixawiki.comいずれのカードページにも記載が無く未確認。"
+ ],
+ "reviewedOk": true
 }

@@ -73,61 +73,77 @@
    "slot": "A",
    "skill": "活人剣",
    "rank": "A",
-   "afterSkill": null,
-   "afterRank": null,
-   "target": null,
-   "rate": null,
-   "effectShort": "攻撃 55%上昇+防御 55%上昇(自軍全武将全スキルの卓越確率に7%を加算・模倣不可・自軍内重複上限4)"
+   "afterSkill": "鬼滅刺",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "攻撃 55%上昇+防御 55%上昇(自軍全武将全スキルの卓越確率に7%を加算・模倣不可・自軍内重複上限4)",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 70%上昇+防御 70%上昇(所持武将の全スキルの卓越確率+25%加算・模倣不可)"
   },
   {
    "slot": "B",
    "skill": "摩利支天ノ法",
    "rank": "SSS",
-   "afterSkill": null,
-   "afterRank": null,
+   "afterSkill": "摩利支天ノ法",
+   "afterRank": "SSS",
    "target": "部隊長",
    "rate": "70%",
-   "effectShort": "所属部隊の部隊長が持つ模倣可能な初期スキルを通常攻撃/防御効果1.25倍にして模倣する"
+   "effectShort": "所属部隊の部隊長が持つ模倣可能な初期スキルを通常攻撃/防御効果1.25倍にして模倣する",
+   "afterTarget": "部隊長",
+   "afterRate": "70%",
+   "afterEffectShort": "所属部隊の部隊長が持つ模倣可能な初期スキルを通常攻撃/防御効果1.25倍にして模倣する"
   },
   {
    "slot": "C",
    "skill": "開闢ノ逆鉾",
    "rank": "SS",
-   "afterSkill": null,
-   "afterRank": null,
+   "afterSkill": "開闢ノ逆鉾",
+   "afterRank": "SS",
    "target": "全",
    "rate": "100%",
-   "effectShort": "攻撃 254%上昇+卓越:攻撃戦闘時追加確率30%で自部隊の兵士被害15%減少(部隊内重複上限2・模倣不可)"
+   "effectShort": "攻撃 254%上昇+卓越:攻撃戦闘時追加確率30%で自部隊の兵士被害15%減少(部隊内重複上限2・模倣不可)",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 254%上昇+卓越:攻撃戦闘時追加確率30%で自部隊の兵士被害15%減少(部隊内重複上限2・模倣不可)"
   },
   {
    "slot": "S1",
    "skill": "仙剣破斬",
    "rank": "SSS",
-   "afterSkill": null,
-   "afterRank": null,
+   "afterSkill": "仙剣破斬",
+   "afterRank": "SSS",
    "target": "全 卓越",
    "rate": "100%",
-   "effectShort": "攻撃 115%上昇+防御 115%上昇(卓越:追加確率35%で4倍)"
+   "effectShort": "攻撃 115%上昇+防御 115%上昇(卓越:追加確率35%で4倍)",
+   "afterTarget": "全 卓越",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 115%上昇+防御 115%上昇(卓越:追加確率35%で4倍)"
   },
   {
    "slot": "S2",
    "skill": "月詠ノ覇威",
    "rank": "SS",
-   "afterSkill": null,
-   "afterRank": null,
+   "afterSkill": "月詠ノ覇威",
+   "afterRank": "SS",
    "target": "全",
    "rate": "100%",
-   "effectShort": "攻撃 344%上昇+防御 344%上昇+自軍全武将全スキルの卓越確率に15%加算(模倣不可・自軍内重複上限2)"
+   "effectShort": "攻撃 344%上昇+防御 344%上昇+自軍全武将全スキルの卓越確率に15%加算(模倣不可・自軍内重複上限2)",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 344%上昇+防御 344%上昇+自軍全武将全スキルの卓越確率に15%加算(模倣不可・自軍内重複上限2)"
   }
  ],
  "notes": [
-  "出典: カード画像(LV1形式: 極・職業「剣」・統率 槍S/弓A/馬A/器S拡大確認・初期値2000/2000/530・コスト5・LV1スキル値。",
-  "  限界突破表示のため指揮5600(★0-0)とカード表示が一致するのはixanaryで確認)",
-  " + ixanary.com/cards/2590(指揮5600(★0-0)・成長+155/+155/+3.0・LV10: 確率+100%/全攻防470%/",
-  "   剣豪の卓越確率+30%・重複上限6・模倣不可。絵師 影井由宇)",
-  " + ixawiki BushoCard/2590(統率2次確認・合成1次候補のみ判明)。",
-  "統率はカード画像+ixawikiの2ソース一致。成長+155は剣豪級。2次候補はixawikiテンプレ未記入のため",
-  "afterSkillは全null(他カードの既存登録から推測しない=skill-hidden-candidateルール)。",
-  "初期スキルがSランクのためスキル個別ページの新規作成が必要(docsのTODOに記録済み)。"
- ]
+  "カード画像はスキル欄「無空ノ極剣LV1」表記のためLV1形式(B-00)。画像から確認できるのは名前・統率バッジ(4隅拡大)・スキル名・初期値2000/2000/530・カードNo.のみ。",
+  "統率は槍S/弓A/馬A/器S。カード画像バッジ拡大とixanary.com(cards/2590)の両方で一致。",
+  "コスト5・指揮5600(★0-0)・成長+155/+155/+3.0・絵師影井由宇はixanary.com(cards/2590)。",
+  "無空ノ極剣のLV10(確率100%/攻防470%/剣豪の卓越確率+30%・重複上限6)はixanaryスキルページ・ixawiki(BushoCard/2590宮本二天)で確認。TR段階なし。合成不可スキル(ixanary「合成素材」欄で確認)のためsourceCharactersのslotは「移植不可」。",
+  "【2026-08-16 null解消】2次候補(afterSkill)が全null(ixawikiテンプレ未記入)だったため、ixanaryスキルページ(skills/無空ノ極剣)自身の合成テーブルとixagno.blog.fc2.com(blog-entry-9438)の2ソースで確定した。A=活人剣→鬼滅刺、B=摩利支天ノ法(自己参照)、C=開闢ノ逆鉾(自己参照)、S1=仙剣破斬(自己参照)、S2=月詠ノ覇威(自己参照)。2ソース完全一致。",
+  "A枠(skill=活人剣≠afterSkill=鬼滅刺)はgrantedViaSkills経由(鬼滅刺.jsonに活人剣[A]が既存登録済み)。2591(佐々木巌流)と同じ活人剣→鬼滅刺の関係。",
+  "活人剣・摩利支天ノ法・開闢ノ逆鉾・仙剣破斬・月詠ノ覇威・無空ノ極剣(自身の初期スキル)は全てskills.htmlに既存ページ・sourceCharacters(2590)登録済みでスロットも一致。",
+  "章は情報源(ixanary/ixawiki/ixagno)に記載が無いため未確認。"
+ ],
+ "reviewedOk": true
 }

@@ -69,8 +69,8 @@
    "rank": "A",
    "afterSkill": "覇王征軍",
    "afterRank": "SS",
-   "target": null,
-   "rate": null,
+   "target": "全",
+   "rate": "25%",
    "effectShort": "攻撃 42%上昇+防御 42%上昇",
    "afterTarget": "全",
    "afterRate": "42%",
@@ -136,6 +136,13 @@
   " + ixaixa.com/archives/8497(合成テーブル・各候補の効果)。",
   "スキルはA(鍛錬情報なし)のためTR1以降のeffectはnull。",
   "合成テーブルは登録時ixaixa.com単一ソースだったが、2026-08-12にixanaryのスキル個別ページ",
-  " (1次/2次候補)と全行一致することを確認し2ソースになった(tools/audit_characters.py --online)。"
- ]
+  " (1次/2次候補)と全行一致することを確認し2ソースになった(tools/audit_characters.py --online)。",
+  "2026-08-16黄丸化検証: rankGrades(S/A/A/A)はno2414_full.pngの4隅バッジを個別ズームして再確認し一致。カードは★5突破済み表示(0/4260)だがB-01の罠を避けlv0Troopsはixanary★0-0値の3760を使用。カードLV1表示の「討伐ゲージ÷200」はLV1固有値でありLV10は「÷100」であることをixanary生HTML(cards/2414)で確認し、skillDetailの÷100表記が正しいことを確認した(B-00の混同罠に注意)。",
+  "A枠(戦陣阿吽)のtarget/rateが未確定(null)だったため、ixanary生HTML(skills/戦陣 阿吽)でtarget:全,rate:25%を追加(No.2402森可成の検証時に確認済みの値を転記)。",
+  "C枠(戦陣無双→無双英傑)はA-3-9の例外ルール(afterSkillの無双英傑が既にページを持つ)によりdata/skill/戦陣 無双.jsonを新規作成し(No.2414・2437・2440を含む)、無双英傑.jsonのgrantedViaSkillsに追記した。ixanary生HTML(skills/戦陣 無双、確率50%/攻撃67%/防御67%/対象全)で数値一致確認。",
+  "S1枠(戦陣轟砲→覇王絶世)はNo.2412高山右近の検証時に新規作成したdata/skill/戦陣 轟砲.jsonのsourceCharactersに既に登録済みであることを確認した(A-3-11)。S2枠(破軍星、自己参照)もdata/skill/破軍星.jsonのsourceCharactersに既に登録済みであることを確認、target表記のドット区切りを統一した。",
+  "synthesisTableのA/B/C/S1/S2は、ixanary.com(cards/2414の初期スキル摺きれ久留子の合成テーブルおよび各候補スキル個別ページ)に加え、ixawiki.com(index.php?BushoCard/2414蒲生郷成)の合成候補テーブル(1次候補/2次候補S1)を生HTMLで確認し、全5行(A:戦陣阿吽→覇王征軍、B:戦陣破軍→天穿神滅、C:戦陣無双→無双英傑、S1:戦陣轟砲→覇王絶世、S2:破軍星自己参照)がixanary/ixawiki2ソースで一致することを確認した。",
+  "章はixanary.com/ixawiki.comいずれのカードページにも記載が無く未確認。"
+ ],
+ "reviewedOk": true
 }

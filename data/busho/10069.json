@@ -2,7 +2,7 @@
  "name": "長宗我部元親-復刻-",
  "no": "10069",
  "furigana": "ちょうそかべもとちか",
- "illustrator": "SQUARE ENIX",
+ "illustrator": "直良有祐",
  "atkBase": 1060,
  "atkGrowth": 43,
  "defBase": 1260,
@@ -10,9 +10,14 @@
  "tacticsBase": 660,
  "tacticsGrowth": 3,
  "lv0Troops": 5110,
- "rankGrades": null,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "S"
+ },
  "initialSkill": "砕島天鬼槍",
- "skillDetail": "S/LV10 確率：+100% / 対象 槍馬砲器 防御：250%上昇 卓越 ：追加確率-50%で防御効果が3倍(卓越追加確率が0%を超える時のみ卓越抽選される)",
+ "skillDetail": "S/LV10 確率 100% 防御 250%上昇/対象:槍馬砲器\n①防御 250%上昇する\n②卓越追加確率-50%で防御効果が3倍となる(卓越追加確率が0%を超える時のみ卓越抽選される)",
  "ch": "30章",
  "cost": 5,
  "troop": "槍馬砲器防",
@@ -112,5 +117,14 @@
    "href": "skills-takuetsu.html",
    "label": "卓越スキル一覧を見る"
   }
+ ],
+ "notes": [
+  "2026-08-16黄丸化検証(未完了・青丸のまま残す): assets/img/characters/no10069_full.png/no10069_char.pngが存在せず(imageFull/imageChar自体が未設定)、マニュアルA-1-2が要求するカード画像バッジの直接照合ができない状態だった。",
+  "illustrator欄が「SQUARE ENIX」という誤った値になっていたため、ixanary.com/cards/10070/(curl生HTML)で確認した「直良有祐」に修正した。",
+  "rankGradesがnullだったため、代替の実カード画像としてixagno.blog.fc2.com/blog-entry-10783.html(「長宗我部元親(復刻)【天】(No.10069)の能力と考察」)に貼られたカードスクリーンショット(blog-imgs-203.fc2.com/.../20260113231417445.jpg)を4隅ズームして読み取り、槍S/弓A/馬A/器Sを確認した。この値はixanary.comのcard JSON(yari:S,yumi:A,kiba:A,heiki:S)とも一致した(ixanary側のyumi/kiba入れ替わり既知問題は今回yumi=kiba=Aで同値のため実害なし)。ただしサイト公式のローカル画像ファイルでの照合ではないため、正式なスクリーンショット取得・切り抜き(TYPE1/TYPE2)が別途必要。",
+  "skillDetail/data/skill/砕島天鬼槍.jsonのeffectSummaryが「確率：+100% / 対象 槍馬砲器 防御：250%上昇...」というixanaryの生テキストそのままの書式だったため、サイト標準の「ヘッダー1行+①②改行+読点なし」書式に整形した(模倣不可の記載はixanary生HTMLに0件で該当なしを確認)。",
+  "synthesisTableはixanary.com/skills/砕島天鬼槍/の生HTML合成テーブルと、ixagno.blog.fc2.com/blog-entry-10783.htmlの合成テーブル(初期テーブル/移植後)の2ソースで、A〜S2全5枠(B・C双方が八幡神ノ威光[SSS]になる点も含め)が完全一致することを確認した。sourceCharacters逆引き(A-3-11): 千里必勝ノ神算/八幡神ノ威光(B・C併記)/龍驤虎躍/砕島天鬼槍(自身)の各data/skill/*.jsonに10069が反映済みを確認。",
+  "名前「長宗我部元親-復刻-」は【天】等のジョブ表記が付いていないが、docs/character-registration-manual.md F-0の変換例に「長宗我部元親(復刻) → 長宗我部元親-復刻-」と明記されているためこのまま維持した(ixagnoの記事タイトルは「長宗我部元親(復刻)【天】」と【天】付きだったが、F-0は2026-08-07に147体を統一した際の確定ルールのため今回は変更しなかった)。",
+  "上記のとおりrankGrades等のデータ自体は2ソースで確認できたが、A-1-2が要求するローカルカード画像が無いという構造的な不備が残るため、reviewedOk:trueにはせず青丸のまま報告する。画像の取得・切り抜き(ハートマーク基準、TYPE1=466x315/TYPE2=224x315)を別途行った上で再検証することを推奨する。"
  ]
 }

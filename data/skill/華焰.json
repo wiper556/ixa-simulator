@@ -1,0 +1,36 @@
+{
+ "name": "華焰",
+ "rank": "A",
+ "baseRate": 58,
+ "target": "砲・器",
+ "noMimic": true,
+ "effectSummary": "A/LV10 確率 58% 防御 375%上昇/対象:砲・器\n模倣不可\n①防御 375%上昇する\n②所領防御陣形に配置時この武将の編成コスト消費を-1.5する",
+ "sourceCharacters": [
+  {
+   "name": "駒形由美",
+   "no": "2615",
+   "slot": "A・B・C",
+   "db": "kyoku",
+   "note": [
+    "駒形由美(2615)のsynthesisTable A枠・B枠・C枠(2026-08-16、ixanary.com/skills/華焰自身の合成テーブルで確認)"
+   ]
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "朝曇ノ明麗",
+  "rank": "S"
+ },
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "砲・器　確率 58% / 防御 375%上昇(所領防御陣形配置時、この武将の編成コスト消費-1.5・模倣不可)"
+  }
+ ],
+ "notes": [
+  "2026-08-16 No.2615(駒形由美)黄丸化検証時に新規作成。afterSkill(朝曇ノ明麗)が既にskills.html独自ページを持つため、A-3-9の例外規定(鬼十河・宝珠盛山と同型)に該当する(既存notesには「A以下のため作成しない」とあったが、この例外を見落としていたため訂正)。",
+  "対象・確率・効果文はixanary.com(skills/華焰)の生HTML(LV10行)から。No.2615自身のskillDetail/trTableと完全一致。「模倣不可」は修飾語なしの独立行として記載。",
+  "ownHiddenCandidateはixanary.com(skills/華焰)自身の合成テーブル(1次A/B/C=自己参照、2次候補S1=朝曇ノ明麗[S])から導出。",
+  "スキル名は「華焔」ではなく「華焰」(No.2615側notesと同じ理由、ixanary/ixawiki2ソースで焰確認済み)。"
+ ]
+}

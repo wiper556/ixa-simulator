@@ -4,7 +4,7 @@
  "baseRate": 62,
  "target": "槍・馬・器",
  "noMimic": true,
- "effectSummary": "S/LV10 確率 62% 防御 190%上昇/対象:槍・馬・器\n①防御 190%上昇する\n②本丸防御陣形に配置時この武将の編成コスト消費を-1.5する(模倣不可・TR1〜TR5は未確認)",
+ "effectSummary": "S/LV10 確率 62% 防御 190%上昇/対象:槍・馬・器\n①防御 190%上昇する\n②本丸防御陣形に配置時この武将の編成コスト消費を-1.5する(模倣不可)",
  "sourceCharacters": [
   {
    "name": "島津義弘（3）",
@@ -24,6 +24,7 @@
   }
  ],
  "notes": [
-  "この武将自身の初期スキル(島津義弘(3) No.1232のsynthesisTable候補A)"
+  "この武将自身の初期スキル(島津義弘(3) No.1232のsynthesisTable候補A)",
+  "2026-08-16(No.1232黄丸化検証): 「TR1〜TR5未確認」を追加ソースで確認。ixanary.com(cards/1232, skills/鬼神ノ軍法)の生HTMLはLV1/LV10のみでTR区分自体が存在せず、ixawiki.com(BushoCard/1232島津義弘)もLv1/Lv10のみでTR言及なし。2ソースともTR進行が存在しないことを示しており、trTable1行(LV10のみ)で確定。"
  ]
 }

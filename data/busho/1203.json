@@ -1,5 +1,5 @@
 {
- "name": "今川義元",
+ "name": "今川義元（2）【覇】",
  "no": "1203",
  "ch": "23章",
  "cost": 5,
@@ -24,7 +24,7 @@
   "ki": "S"
  },
  "initialSkill": "赤凰幻舞",
- "skillDetail": "SSS/LV10 確率 100% 対象:追加スキル\n①このスキルを持つ武将カードは追加スキル(追加1/追加2/極限)の攻撃・破壊効果が2.5倍となる(模倣不可)",
+ "skillDetail": "SSS/LV10 確率 100% 対象:追加スキル\n模倣不可\n①このスキルを持つ武将カードは追加スキルの攻撃・破壊効果が2.5倍となる",
  "trTable": [
   {
    "level": "LV10",
@@ -94,6 +94,14 @@
   }
  ],
  "notes": [
-  "45do.info(skiladd_wrap) + ameameixa.com(bushocard-1203)生HTML の2ソースで完全一致を確認(2026-08-02、この武将自身の初期スキルは候補に含まれない)"
- ]
+  "2026-08-16黄丸化検証: rankGrades(槍S/弓S/馬A/器S)をカード画像バッジ4隅で照合、一致。ステータス初期値・成長値・cost5・lv0Troops4670はixanary.com(cards/1203)生HTMLの成長表と一致。",
+  "名前表記: ixanary.com(cards/1203)で職業=覇バッジを確認、ixawiki.com(Busho/武将カード一覧)で「今川義元(覇2)」表記を確認したためF-0規則(docs/character-registration-manual.md)に従い「今川義元（2）【覇】」とした(2026-08-16、旧登録は「今川義元」のみで【覇】表記が漏れていた)。data/skill配下の各候補スキル(赤凰幻舞・八重言代主神・神屋楯比売命・高津姫神・摩利支天ノ法・天焉相克)のsourceCharactersも同名に更新した。",
+  "skillDetailの「(追加1/追加2/極限)」という補足がixanary/ixawikiどちらの原文にも存在しない加筆だったため削除し、「模倣不可」を①の前の独立行に修正(2026-08-16)。data/skill/赤凰幻舞.jsonも同様に修正。",
+  "synthesisTable(A=八重言代主神[SS]→無窮天斥陣[SS]、B=神屋楯比売命[SS]自己参照、C=高津姫神[SS]自己参照、S1=摩利支天ノ法[SSS]自己参照、S2=天焉相克[SS]→八重言代主神[SS])をixanary.com(skills/赤凰幻舞)生HTMLとixawiki.com(BushoCard/1203今川義元)生HTMLの2ソースで完全一致を確認(2026-08-16)。",
+  "A-3-12確認: A/S2枠はskillとafterSkillが異なるため直接列挙せず、無窮天斥陣.json/八重言代主神.jsonのgrantedViaSkillsに元スキル(八重言代主神/天焉相克)を記載する方式が既に正しく使われていることを確認。",
+  "sourceCharacters逆引き確認(A-3-11): 赤凰幻舞(移植不可)・八重言代主神(A)・神屋楯比売命(B)・高津姫神(C)・摩利支天ノ法(S1)・天焉相克(S2)いずれもdata/skill/配下に1203が記載済み(2026-08-16)。",
+  "天焉相克.jsonの「TR1〜TR5は未確認」注記をixanary(skills/天焉相克)・ixawiki(Busho/武将スキル)の2ソースでLV1/LV10のみでTR無しと確認し「TRなし」に訂正した(2026-08-16、A-1-6の追加確認)。",
+  "章(23章)は情報源に記載が無く未確認のまま(ixanary/ixawikiともchapter情報を確認できず)。"
+ ],
+ "reviewedOk": true
 }

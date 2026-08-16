@@ -69,8 +69,8 @@
    "rank": "A",
    "afterSkill": "籠城の妙技",
    "afterRank": "A",
-   "target": null,
-   "rate": null,
+   "target": "全",
+   "rate": "44%",
    "effectShort": "防御 90%上昇(防御戦闘勝利時、敵軍全武将に追加ダメージ+12・特殊効果は重複不可)",
    "afterTarget": "全",
    "afterRate": "100%",
@@ -80,41 +80,51 @@
    "slot": "B",
    "skill": "江河正攻",
    "rank": "A",
-   "afterSkill": null,
-   "afterRank": null,
-   "target": null,
-   "rate": null,
-   "effectShort": "防御 90%上昇(防御戦闘勝利時、敵軍全武将に追加ダメージ+12・特殊効果は重複不可)"
+   "afterSkill": "籠城の妙技",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "44%",
+   "effectShort": "防御 90%上昇(防御戦闘勝利時、敵軍全武将に追加ダメージ+12・特殊効果は重複不可)",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "防御 50%上昇(卓越・追加確率15%で防御効果が3倍)"
   },
   {
    "slot": "C",
    "skill": "江河正攻",
    "rank": "A",
-   "afterSkill": null,
-   "afterRank": null,
-   "target": null,
-   "rate": null,
-   "effectShort": "防御 90%上昇(防御戦闘勝利時、敵軍全武将に追加ダメージ+12・特殊効果は重複不可)"
+   "afterSkill": "籠城の妙技",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "44%",
+   "effectShort": "防御 90%上昇(防御戦闘勝利時、敵軍全武将に追加ダメージ+12・特殊効果は重複不可)",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "防御 50%上昇(卓越・追加確率15%で防御効果が3倍)"
   },
   {
    "slot": "S1",
    "skill": "籠城の妙技",
    "rank": "A",
-   "afterSkill": null,
-   "afterRank": null,
+   "afterSkill": "三千世界神将",
+   "afterRank": "SS",
    "target": "全",
    "rate": "100%",
-   "effectShort": "防御 50%上昇(卓越・追加確率15%で防御効果が3倍)"
+   "effectShort": "防御 50%上昇(卓越・追加確率15%で防御効果が3倍)",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "防御 120%上昇(本丸防御陣形配置時この武将の編成コスト消費-1・模倣不可)"
   },
   {
    "slot": "S2",
    "skill": "洞察",
    "rank": "B",
-   "afterSkill": null,
-   "afterRank": null,
+   "afterSkill": "洞察",
+   "afterRank": "B",
    "target": "全",
    "rate": "30%",
-   "effectShort": "防御 7.5%上昇(部隊ランクボーナスで変動)"
+   "effectShort": "防御 7.5%上昇(部隊ランクボーナスで変動)",
+   "afterEffectShort": "防御 7.5%上昇(部隊ランクボーナスで変動)"
   }
  ],
  "notes": [
@@ -123,6 +133,11 @@
   " + ixawiki BushoCard/2441(統率2次確認・合成テーブル1次候補+Aの2次候補)。",
   "統率はカード画像+ixawikiの2ソース一致。B/C/S1/S2の移植後変化先はixawikiがテンプレ未記入のためnull。",
   "スキルはA(鍛錬情報なし)のためTR1以降のeffectはnull。",
-  "合成テーブルはixawiki(1次候補+Aの2次候補のみ判明)"
- ]
+  "合成テーブルはixawiki(1次候補+Aの2次候補のみ判明)",
+  "2026-08-16黄丸化検証: rankGrades(A/S/A/A)はno2441_full.pngの4隅バッジを個別ズームして再確認し一致。基礎値・コスト・指揮兵数(★0-0=3860採用、カード★5表示の4360は不採用)・成長値・LV10スキル値(確率44%/防御90%/追加ダメージ+12)はixanary.com(cards/2441)生HTMLで一致確認。",
+  "【B/C/S1/S2のafterSkillが未確認だった問題を解消】ixawiki.com(BushoCard/2441由布雪下)の2次候補S1列はA以外(B/C/S1/S2)が全て未編集のプレースホルダ「BのS1 []」等の空欄だったため、標準2ソースで確定できず追加調査した。ixanary.com(cards/2441の初期スキル江河正攻の合成テーブル、2次行)でB:籠城の妙技[A]、C:籠城の妙技[A]、S1:三千世界神将[SS]、S2:洞察[B](自己参照)を確認し、さらにixagno.blog.fc2.com(blog-entry-7961、由布雪下専用記事)の合成テーブルでも同じ5行(江河正攻→籠城の妙技が3列、籠城の妙技→三千世界神将、洞察→洞察)が完全一致することを確認し、ixanary+ixagnoの2ソースで確定させた。target/rateも埋めた(A/B/C:全,44%/S1:全,100%/S2:全,30%)。",
+  "A/B/C枠(江河正攻→籠城の妙技)はA-3-9の例外ルールによりdata/skill/江河正攻.jsonを新規作成し(由布雪下自身の初期スキル、A・B・C全枠)、data/skill/籠城の妙技.jsonのgrantedViaSkillsに追記した。S1枠(籠城の妙技、自己参照)はdata/skill/籠城の妙技.jsonのsourceCharactersに由布雪下(2441、S1枠)を追加した(A-3-11)。",
+  "章はixanary.com/ixawiki.comいずれのカードページにも記載が無く未確認。"
+ ],
+ "reviewedOk": true
 }

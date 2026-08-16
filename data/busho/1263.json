@@ -1,6 +1,7 @@
 {
  "name": "徳川家康（5）【覇】",
  "no": "1263",
+ "reviewedOk": true,
  "ch": "28章",
  "cost": 6,
  "troop": "全攻防",
@@ -118,9 +119,9 @@
   {
    "slot": "S1",
    "skill": "万物神勇",
-   "rank": "SS",
+   "rank": "SSS",
    "afterSkill": "万物神勇",
-   "afterRank": "SS",
+   "afterRank": "SSS",
    "rate": "43%",
    "target": "全 撤退",
    "effectShort": "攻撃 (9.2×防御参加武将数)%上昇+撤退(陣での防御戦闘に参加しない)",
@@ -139,6 +140,7 @@
   }
  ],
  "notes": [
-  "45do.info(生HTML skiladd_wrap)+ameameixa.com(28章天武将スキル一覧 https://ameameixa.com/28sho-ten-sukil、章一覧内では武将名「徳川家康」の行として掲載)の2ソースでA〜S2のスキル名一致を確認(ランクは45do.info基準)"
+  "45do.info(生HTML skiladd_wrap)+ameameixa.com(28章天武将スキル一覧 https://ameameixa.com/28sho-ten-sukil、章一覧内では武将名「徳川家康」の行として掲載)の2ソースでA〜S2のスキル名一致を確認(ランクは45do.info基準)",
+  "黄丸化検証(2026-08-16)で1件の誤りを発見し修正。カード画像no1263_full.pngの4隅バッジ(槍A/馬A/弓X虹色/器S)・覇マーク・保護効果文を確認し一致。TR1〜TR5の値もixanary.com(skills/偃武覇陣)の鍛錬表と全行完全一致(TR6無し)。synthesisTableのS1「万物神勇」がrank:SSと誤登録されていたが、ixanary.com+ixawiki.com(BushoCard/1263徳川家康)の両方でSSSと確認、data/skill/万物神勇.json本体のrankもSSSだったためSS→SSSに訂正(rank/afterRankとも)。他のA/B/C/S2はixanary.com+ixawiki.comの2ソースで完全一致。破軍騎行・破邪後輝・飛龍衝天・万物神勇・開闢ノ逆鉾のdata/skill側sourceCharactersに1263が正しいslotで記載済みを確認(逆引き済み)。"
  ]
 }

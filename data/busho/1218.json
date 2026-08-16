@@ -1,5 +1,5 @@
 {
- "name": "真田昌幸",
+ "name": "真田昌幸（3）",
  "no": "1218",
  "ch": "24章",
  "cost": 2,
@@ -91,6 +91,12 @@
  ],
  "notes": [
   "カード画像照合済み(2026-08-02): 槍S/弓S/馬A/器A",
-  "45do.info(ordinary/0022)生HTML + ameameixa.com(bushocard-1218)生HTML の2ソースで完全一致を確認(2026-08-02)"
- ]
+  "2026-08-16黄丸化検証: rankGradesを再照合し一致を再確認。ステータス初期値・成長値・cost2・lv0Troops3500はixanary.com(cards/1218)生HTMLの成長表と一致。skillDetailはixanary/ixawiki2ソースともLV1/LV10のみでTR無しと確認。",
+  "名前表記: ixawiki.com(Busho/武将カード一覧)で「真田昌幸(3)」表記を確認したためF-0規則に従い「真田昌幸（3）」とした(2026-08-16、旧登録は無印だった。docs/character-registration-manual.md F-2(a)で未解決扱いだったが今回解消)。data/skill配下の候補スキル(六冥緋侠ノ神謀・破軍星 皇・天啓ノ神撃・火之迦具土神・遠呂智ノ閃光・国堅大神)のsourceCharactersも同名に更新した。",
+  "synthesisTable(A=破軍星 皇[SS]自己参照、B=天啓ノ神撃[SS]自己参照、C=火之迦具土神[SS]自己参照、S1=遠呂智ノ閃光[SS]自己参照、S2=国堅大神[SS]自己参照)をixanary.com(skills/六冥緋侠ノ神謀)生HTMLとixawiki.com(BushoCard/1218真田昌幸)生HTMLの2ソースで完全一致を確認(2026-08-16)。",
+  "sourceCharacters逆引き確認(A-3-11): 六冥緋侠ノ神謀(移植不可)・破軍星 皇(A)・天啓ノ神撃(B)・火之迦具土神(C)・遠呂智ノ閃光(S1)・国堅大神(S2)いずれもdata/skill/配下に1218が記載済み(2026-08-16)。",
+  "categoryLinksチェック(A-3-9、9項目): 初期スキル六冥緋侠ノ神謀の「敵軍本丸防御陣形のコスト差分」は9項目のいずれにも該当しない。",
+  "章(24章)は情報源に記載が無く未確認のまま(ixanary/ixawikiともchapter情報を確認できず、既存の24章表記を維持)。"
+ ],
+ "reviewedOk": true
 }

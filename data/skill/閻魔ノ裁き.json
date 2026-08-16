@@ -4,7 +4,7 @@
  "baseRate": 100,
  "target": "全",
  "noMimic": true,
- "effectSummary": "S/LV10 確率 100% 攻撃 184%上昇/対象:全\n①攻撃 184%上昇する\n②防御 184%上昇する\n③部隊内武将の全スキルの卓越追加確率が25%上昇する(特殊効果は自部隊内では重複不可・TR1〜TR5は未確認)",
+ "effectSummary": "S/LV10 確率 100% 攻撃 184%上昇/対象:全\n①攻撃 184%上昇する\n②防御 184%上昇する\n③部隊内武将の全スキルの卓越追加確率が25%上昇する(特殊効果は自部隊内では重複不可)",
  "categoryLinks": [
   {
    "href": "skills-takuetsu.html",
@@ -30,6 +30,7 @@
   }
  ],
  "notes": [
-  "この武将自身の初期スキル(直江兼続(3) No.1228のsynthesisTable候補A・B)"
+  "この武将自身の初期スキル(直江兼続(3) No.1228のsynthesisTable候補A・B)",
+  "2026-08-16(No.1228黄丸化検証): 「TR1〜TR5未確認」を追加ソースで確認。ixanary.com(cards/1228, skills/閻魔ノ裁き)の生HTMLはLV1/LV10のみでTR区分自体が存在せず、ixawiki.com(BushoCard/1228直江兼続)もLv1/Lv10のみでTR言及なし。2ソースともTR進行が存在しないことを示しており、trTable1行(LV10のみ)で確定。"
  ]
 }

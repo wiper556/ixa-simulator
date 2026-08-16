@@ -24,7 +24,7 @@
   "ki": "A"
  },
  "initialSkill": "天奏幻武",
- "skillDetail": "S/LV10 確率 100% 攻撃 (3×防御参加武将数)%上昇/対象:槍・弓・焙\n①対象兵科(槍・弓・焙)を指揮した戦闘時攻撃力が(3×防御参加武将数)%上昇する\n②卓越時追加確率30%で攻撃効果が1.5倍になる(TR1〜TR5は未確認)",
+ "skillDetail": "S/LV10 確率 100% 攻撃 (3×防御参加武将数)%上昇/対象:槍・弓・焙\n①対象兵科(槍・弓・焙)を指揮した戦闘時攻撃力が(3×防御参加武将数)%上昇する\n②卓越時追加確率30%で攻撃効果が1.5倍になる",
  "categoryLinks": [
   {
    "href": "skills-count-atk.html",
@@ -104,6 +104,13 @@
   }
  ],
  "notes": [
-  "45do.info(生HTML skiladd_wrap)+ameameixa.com(スキルテーブル)の2ソース照合済み、両者一致"
- ]
+  "2026-08-16黄丸化検証: rankGrades(槍S/弓S/馬A/器A)をカード画像バッジ4隅で照合、一致。ステータス初期値・成長値・cost4・lv0Troops4380はixanary.com(cards/1211)生HTMLの成長表と一致。",
+  "skillDetailの「TR1〜TR5は未確認」をixanary.com(skills/天奏幻武)・ixawiki.com(Busho/武将スキル)の2ソースでLV1/LV10のみと確認しTRなしに訂正(2026-08-16)。data/skill/天奏幻武.jsonも同様に修正。",
+  "名前表記: ixawiki.com(Busho/武将カード一覧)で「森蘭丸」無印表記を確認、既存登録のまま変更なし。",
+  "synthesisTable(A/B=天奏幻武[S]→加具土ノ神域[SS]、C=天岩戸ノ神域[SS]自己参照、S1=加具土ノ神域[SS]自己参照、S2=八目鳴鏑ノ奏[SS]自己参照)をixanary.com(skills/天奏幻武)生HTMLとixawiki.com(BushoCard/1211森蘭丸)生HTMLの2ソースで完全一致を確認(2026-08-16)。",
+  "categoryLinksチェック(A-3-9、9項目): 初期スキル天奏幻武は項目7(卓越)・項目8(人数依存攻撃)に該当し、既にskills-count-atk.html・skills-takuetsu.htmlへcategoryLinks・本体一覧とも登録済みを確認。",
+  "sourceCharacters逆引き確認(A-3-11): 天奏幻武(A・B)・天岩戸ノ神域(C)・加具土ノ神域(S1)・八目鳴鏑ノ奏(S2)いずれもdata/skill/配下に1211が記載済み(2026-08-16)。",
+  "章(23章)は情報源に記載が無く未確認のまま(ixanary/ixawikiともchapter情報を確認できず)。"
+ ],
+ "reviewedOk": true
 }

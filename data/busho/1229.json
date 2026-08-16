@@ -108,6 +108,8 @@
   }
  ],
  "notes": [
-  "synthesisTable: 45do.info生HTML(skiladd_wrap)+ixanary.com(豊国天万スキルページの合成テーブル)で2ソース一致確認済み(2026-08-02)"
- ]
+  "synthesisTable: 45do.info生HTML(skiladd_wrap)+ixanary.com(豊国天万スキルページの合成テーブル)で2ソース一致確認済み(2026-08-02)",
+  "2026-08-16黄丸化再検証: ixanary.com(cards/1229, skills/豊国天万)+ixawiki.com(BushoCard/1229石田三成)の2ソースでsynthesisTable5枠(A・B豊国天万S→遠呂智ノ閃光SS/C・S2建御雷神ノ閃光SS→八幡神ノ威光SSS/S1遠呂智ノ閃光SS自己参照)が完全一致。基礎値(1220/1080/650、成長+70/+42/+3、指揮4540)・rankGrades(槍S/弓A/馬S/器A、カード画像バッジ拡大確認)もixanary生HTMLと一致。data/skill/豊国天万(自己ページ)・建御雷神ノ閃光・遠呂智ノ閃光の各JSONのsourceCharactersに1229が正しいslotで既に記載済み(八幡神ノ威光はgrantedViaSkills経由で正しく直接列挙なし)。"
+ ],
+ "reviewedOk": true
 }

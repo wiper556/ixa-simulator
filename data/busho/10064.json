@@ -25,6 +25,12 @@
  },
  "initialSkill": "凛乎穿進",
  "skillDetail": "S/LV10 確率 100% 防御 690%上昇/対象:全\n模倣不可\n①防御 690%上昇する\n②対象兵科指揮時極限スキルの防御効果を2倍にする\n③飛翔値をもつ場合自身の飛翔値を3倍にする(飛翔が無い場合は適用しない)",
+ "categoryLinks": [
+  {
+   "href": "skills-hishou-def.html",
+   "label": "飛翔スキル一覧(防御)を見る"
+  }
+ ],
  "trTable": [
   {
    "level": "LV10",
@@ -55,6 +61,11 @@
    "level": "TR5",
    "points": "200",
    "effect": "全　確率 100% / 防御 1790%上昇(飛翔3.5倍)"
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": "全　確率 100% / 防御 1960%上昇(飛翔3.6倍)"
   }
  ],
  "synthesisTable": [
@@ -119,6 +130,8 @@
   }
  ],
  "notes": [
-  "45do.info確認(生HTML照合済み): skiladd_wrapの見出し(候補A/B/C/S1/S2)と直後のスキル名が位置対応しており明示的。"
- ]
+  "45do.info確認(生HTML照合済み): skiladd_wrapの見出し(候補A/B/C/S1/S2)と直後のスキル名が位置対応しており明示的。",
+  "2026-08-16再検証(黄丸化): カード画像no10064_full.pngの4隅バッジを再ズーム確認し槍S/弓A/馬S/器Aで既存データと一致(ixanary.comのcard JSONはyumi:S,kiba:Aで入れ替わっており参考程度に留めた)。ixanary.com/cards/10064/生HTMLでコスト4.5/指揮4900/成長値攻43防72兵法3.5/LV10のskillDetailが一致確認。ixanary側にTR6の掲載(防御1960%上昇・飛翔3.6倍)があったがtrTableにTR6行が無かったため追加した(busho本体・data/skill/凛乎穿進.json両方)。synthesisTableはixanary.com/skills/凛乎穿進/の生HTML合成テーブルで45do.infoとの照合結果(A〜S2全5枠)と完全一致し2ソース目を確保。sourceCharacters逆引き(A-3-11): 高津姫神/義陣絶刀/破国八陣/轟渦ノ神将/王花尖剣の各data/skill/*.jsonに10064が反映済み、B・S2の移植後(國才連豪)はgrantedViaSkills経由で正しく間接リンク済みを確認。data/skill/凛乎穿進.jsonのcategoryLinksが「9項目要判定のため未着手」のまま空だったため判定し、③の飛翔値3倍効果に該当する飛翔(防御)カテゴリをbusho本体・スキル両方に追加、ownHiddenCandidateも未設定だったため自己参照(移植不可)として補完した。"
+ ],
+ "reviewedOk": true
 }

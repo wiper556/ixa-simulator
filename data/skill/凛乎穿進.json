@@ -5,6 +5,12 @@
  "target": "全",
  "noMimic": true,
  "effectSummary": "S/LV10 確率 100% 防御 690%上昇/対象:全\n模倣不可\n①防御 690%上昇する\n②対象兵科指揮時極限スキルの防御効果を2倍にする\n③飛翔値をもつ場合自身の飛翔値を3倍にする(飛翔が無い場合は適用しない)",
+ "categoryLinks": [
+  {
+   "href": "skills-hishou-def.html",
+   "label": "飛翔スキル一覧(防御)を見る"
+  }
+ ],
  "sourceCharacters": [
   {
    "name": "長尾景虎",
@@ -12,6 +18,10 @@
    "slot": "移植不可"
   }
  ],
+ "ownHiddenCandidate": {
+  "skill": "凛乎穿進",
+  "rank": "S"
+ },
  "trTable": [
   {
    "level": "LV10",
@@ -42,6 +52,11 @@
    "level": "TR5",
    "points": "200",
    "effect": "全　確率 100% / 防御 1790%上昇(飛翔3.5倍)"
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": "全　確率 100% / 防御 1960%上昇(飛翔3.6倍)"
   }
  ],
  "notes": [

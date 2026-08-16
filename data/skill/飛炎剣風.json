@@ -1,0 +1,37 @@
+{
+ "name": "飛炎剣風",
+ "rank": "A",
+ "baseRate": 70,
+ "target": "槍・砲・器",
+ "effectSummary": "A/LV10 確率 70% 防御 80%上昇/対象:槍・砲・器\n①防御 80%上昇する\n②破壊 80%上昇する\n③防御参加武将数×5.6%を防御効果に加算する",
+ "categoryLinks": [
+  {
+   "href": "skills-count-def.html",
+   "label": "人数依存(防)スキル一覧を見る"
+  }
+ ],
+ "sourceCharacters": [
+  {
+   "name": "丸目長恵",
+   "no": "2387",
+   "slot": "A・B",
+   "db": "kyoku"
+  }
+ ],
+ "grantedViaSkills": [],
+ "ownHiddenCandidate": {
+  "skill": "天磐船",
+  "rank": "SS"
+ },
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "coefficient": "5.6",
+   "effect": "槍・砲・器　確率 70% / 防御 80%上昇+破壊 80%上昇+防御参加武将数依存 5.6%×防御参加武将数(280人)=1568%"
+  }
+ ],
+ "notes": [
+  "2026-08-16(No.2387黄丸化検証、A-3-9例外規定): 移植後合成候補の天磐船[SS]が既にskills.htmlページを持つため、ランクAだが元スキル側として新規作成。ixanary.com(skills/飛炎剣風)の合成テーブル(1次A・B=飛炎剣風、2次A・B=天磐船)で確認。天磐船.json側にgrantedViaSkills経由の逆引きを追加済み。"
+ ]
+}

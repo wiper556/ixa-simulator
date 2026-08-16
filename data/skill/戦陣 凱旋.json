@@ -1,0 +1,64 @@
+{
+ "name": "戦陣 凱旋",
+ "rank": "A",
+ "baseRate": 10,
+ "target": "全",
+ "effectSummary": "A/LV10 確率 10% 攻撃 87%上昇/防御 87%上昇/対象:全",
+ "sourceCharacters": [
+  {
+   "name": "宇喜多秀家（2）",
+   "no": "2424",
+   "slot": "A",
+   "db": "kyoku"
+  },
+  {
+   "name": "谷忠澄",
+   "no": "2427",
+   "slot": "S2",
+   "db": "kyoku"
+  },
+  {
+   "name": "斎藤朝信（3）",
+   "no": "2439",
+   "slot": "A",
+   "db": "kyoku"
+  },
+  {
+   "name": "井伊直政（3）",
+   "no": "2440",
+   "slot": "S2",
+   "db": "kyoku"
+  },
+  {
+   "name": "片倉景綱",
+   "no": "2443",
+   "slot": "B",
+   "db": "kyoku"
+  },
+  {
+   "name": "上杉顕定",
+   "no": "2781",
+   "slot": "A",
+   "db": "kyoku",
+   "note": [
+    "上杉顕定(2781)のsynthesisTable A枠(2026-08-16)"
+   ]
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "布都御魂ノ鬨",
+  "rank": "SS"
+ },
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 10% / 攻撃 87%上昇+防御 87%上昇"
+  }
+ ],
+ "notes": [
+  "2026-08-16作成。A-3-9の例外ルール(移植後合成候補afterSkillが既にskills.htmlページを持つ布都御魂ノ鬨[SS]である元スキル)によりAランクだがページ作成対象。",
+  "ixanary.com/skills/戦陣 凱旋 の生HTML(LV10行: 確率+10%/対象全/攻撃87%上昇/防御87%上昇)で確認。categoryLinksは9項目いずれも該当なし。",
+  "No.2424宇喜多秀家（2）・2427谷忠澄・2439斎藤朝信（3）・2440井伊直政（3）・2443片倉景綱(いずれも担当範囲内)の黄丸化検証(2026-08-16)で新規作成。data/skill/布都御魂ノ鬨.jsonのgrantedViaSkillsに本スキルを追記した。No.2781上杉顕定も戦陣凱旋を持つが担当範囲外のため未確認・未修正のまま申し送る。"
+ ]
+}

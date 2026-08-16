@@ -69,8 +69,8 @@
    "rank": "B",
    "afterSkill": "八咫烏",
    "afterRank": "B",
-   "target": null,
-   "rate": null,
+   "target": "全",
+   "rate": "100%",
    "effectShort": "攻撃 4%上昇+速度 45%上昇",
    "afterTarget": "砲器",
    "afterRate": "35%",
@@ -82,8 +82,8 @@
    "rank": "A",
    "afterSkill": "風狂幻術",
    "afterRank": "B",
-   "target": null,
-   "rate": null,
+   "target": "全",
+   "rate": "30%",
    "effectShort": "攻撃 0%上昇(名声値で効果が変化)",
    "afterTarget": "部隊長",
    "afterRate": "53%",
@@ -108,7 +108,7 @@
    "afterRank": "A",
    "target": "全",
    "rate": "40%",
-   "effectShort": "防御時に攻撃側の攻撃スキル発動率を-20%",
+   "effectShort": "防御時に攻撃側の攻撃スキル発動率を-20%(重複不可)",
    "afterTarget": "全",
    "afterRate": "40%",
    "afterEffectShort": "攻撃時に敵軍のスキル発動率を-10%(重複不可)"
@@ -135,6 +135,14 @@
   " + ixaixa.com/archives/8491(合成テーブル・各候補の効果)。",
   "スキルはA(鍛錬情報なし)のためTR1以降のeffectはnull。",
   "合成テーブルは登録時ixaixa.com単一ソースだったが、2026-08-12にixanaryのスキル個別ページ",
-  " (1次/2次候補)と全行一致することを確認し2ソースになった(tools/audit_characters.py --online)。"
- ]
+  " (1次/2次候補)と全行一致することを確認し2ソースになった(tools/audit_characters.py --online)。",
+  "2026-08-16黄丸化検証: rankGrades(A/A/A/S)はno2412_full.pngの4隅バッジを個別ズームして再確認し一致。カードは★5(天?)突破済み表示(0/4240)だがB-01の罠を避けlv0Troopsはixanary★0-0値の3740を使用(既存の判断を再確認)。",
+  "A枠(聖戦の進軍→八咫烏)・B枠(夢買い→風狂幻術)はtarget/rateが未確定(null)だったため、ixanary生HTML(skills/聖戦の進軍・夢買い)でA枠target:全,rate:100%、B枠target:全,rate:30%を追加。afterTarget/afterRate/afterEffectShortは既存値と一致確認。",
+  "S1枠(御用商人)のeffectShortに「(重複不可)」の句がixanary生HTML(skills/御用商人「防御時に敵軍の攻撃スキル発動率を-20%（重複不可）」)にあったが欠落していたため追加した。afterSkill(封技閃影)側は既存の「(重複不可)」ありで一致確認済み。",
+  "【未解決の食い違い】S1枠の afterSkill「封技閃影[A]」は、ixanary.com(cards/2412の初期スキル静寂ノ福者の合成テーブル、2次行でS1列=封技閃影[A]と明記)では確認できたが、ixawiki.com(BushoCard/2412高山右近)の合成候補テーブルは2次候補S1のS1列セルが空欄、ixagno.blog.fc2.com(blog-entry-6286、高山右近専用記事)も御用商人の2次結果画像を掲載しておらず確証が得られなかった。3ソース中1つのみが具体的な値を示し、他2つは「不明(空欄)」であり明確な反証ではないため、ixanaryの値を保持し脚注として残す。より確実な情報が見つかれば訂正が必要。",
+  "A-3-9の例外ルールにより、data/skill/戦陣 轟砲.json・夢買い.jsonを新規作成し(No.2412を含む)、data/skill/覇王絶世.json・風狂幻術.jsonのgrantedViaSkillsに追記した。data/skill/覇王絶世.jsonのsourceCharactersは空だったため2412を直接追加せず戦陣轟砲.json側に記載する形にした(A-3-12)。",
+  "synthesisTableのA/B/C/S1/S2は、ixanary.com(cards/2412の初期スキル静寂ノ福者の合成テーブル)とixawiki.com(index.php?BushoCard/2412高山右近)の合成候補テーブル(1次候補)で、A:聖戦の進軍[B]、B:夢買い[A]、C:彷徨う福音[B]、S1:御用商人[C]、S2:戦陣轟砲[A]の5スロットの1次(skill)側は完全一致を確認した。2次(afterSkill)側もS1以外の4行は一致確認済み。",
+  "章はixanary.com/ixawiki.comいずれのカードページにも記載が無く未確認。"
+ ],
+ "reviewedOk": true
 }

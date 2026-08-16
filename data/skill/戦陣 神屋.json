@@ -1,0 +1,38 @@
+{
+ "name": "戦陣 神屋",
+ "rank": "A",
+ "baseRate": null,
+ "target": null,
+ "effectSummary": null,
+ "sourceCharacters": [
+  {
+   "name": "志賀親次",
+   "no": "7007",
+   "slot": "B",
+   "db": "kyoku"
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "神屋楯比売命",
+  "rank": "SS"
+ },
+ "trTable": [
+  {
+   "level": "LV1",
+   "points": "-",
+   "effect": "全　確率 20% / 攻撃 100%上昇+防御 100%上昇"
+  },
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": null
+  }
+ ],
+ "notes": [
+  "A-3-9例外(2026-08-16追加): 移植後合成候補(afterSkill)が既存ページ持ちの神屋楯比売命[SS]のため、Aランクだが単独ページ作成対象。",
+  "【既知の欠落】ixanary.com個別スキルページ(skills/戦陣 神屋)のLV10行は「確率:+Null%/攻撃:Null%上昇/防御:Null%上昇」とサイト側の表示バグでNull表記のまま返ってくる(2026-08-16確認)。LV1のみ確率+20%/対象全/攻撃100%上昇/防御100%上昇が読める。",
+  "ixagno.blog.fc2.com内検索(?q=戦陣神屋)は該当記事なし(2026-08-16)。「1武将」欄も本スキルのページには表示されず所有武将を特定できなかった。site内の他データにも本スキル名の既存登録は無い。",
+  "No.7007(志賀親次)のB枠検証時にkanshi-yaku担当から「値が取れないことが確認済み、埋まらなくて構わない」と申し送りを受けたため、target/baseRate/effectSummaryはnullのまま残す。",
+  "このスキルを合成素材にすると神屋楯比売命[SS]に変化する(No.7007 B枠、ixanary.com個別スキルページの合成テーブルで確認)。"
+ ]
+}

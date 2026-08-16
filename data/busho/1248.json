@@ -97,6 +97,8 @@
  ],
  "notes": [
   "カード画像照合済み(2026-08-02): 槍A/弓S/馬A/器S(rankGradesが未登録だったため追加)",
-  "45do.info(ordinary/0148)生HTML + ameameixa.com(bushocard-1248)生HTML の2ソースを突き合わせ。BのみameameixaがA(火之迦具土神)の重複記載になっており45do.infoのskiladd_wrap(構造化データ、遠呂智ノ閃光)と食い違ったため、より信頼性の高い45do.info側を採用(2026-08-02)"
- ]
+  "45do.info(ordinary/0148)生HTML + ameameixa.com(bushocard-1248)生HTML の2ソースを突き合わせ。BのみameameixaがA(火之迦具土神)の重複記載になっており45do.infoのskiladd_wrap(構造化データ、遠呂智ノ閃光)と食い違ったため、より信頼性の高い45do.info側を採用(2026-08-02)",
+  "2026-08-16黄丸化再検証: ixanary.com(cards/1248, skills/斑将閃牙)+ixawiki.com(BushoCard/1248長野業正)の2ソースでsynthesisTable5枠(A火之迦具土神SS/B遠呂智ノ閃光SS/C仙剣破斬SSS/S1至天ノ御剣SSS/S2天津日ノ太刀SS、いずれも自己参照)が完全一致、旧45do.info/ameameixa.com時代の判断(B=遠呂智ノ閃光)を再確認できた。基礎値(1200/1090/670、成長+65/+49/+3、指揮4930)・rankGrades(槍A/弓S/馬A/器S、カード画像バッジ拡大確認)もixanary生HTMLと一致。data/skill/火之迦具土神・遠呂智ノ閃光・仙剣破斬・至天ノ御剣・天津日ノ太刀の各JSONのsourceCharactersに1248が正しいslotで既に記載済み。斑将閃牙はTRなし(ixanary生HTMLでLV10欄のみ)。"
+ ],
+ "reviewedOk": true
 }

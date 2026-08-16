@@ -1,6 +1,7 @@
 {
  "name": "伊達輝宗",
  "no": "1260",
+ "reviewedOk": true,
  "ch": "27章",
  "cost": 5,
  "troop": "槍弓砲器攻防",
@@ -92,6 +93,7 @@
   }
  ],
  "notes": [
-  "synthesisTable: 45do.info生HTML(skiladd_wrap)照合済み+ixanary.com(各候補スキルページの合成テーブル)で2ソース一致確認済み(2026-08-02)。S1の閃裂討鬼は45do.info側で数値が伏字(●)だったが、skills.html側で豊臣秀吉【覇】(1274)B分の確定値(確率45%/攻撃50%上昇)と統合済みのためその値を採用。Cの猛火ノ追撃はixanary.com上でSSSと確認、skills.html側の重複登録(rank:SS版)をSSSへ統合"
+  "synthesisTable: 45do.info生HTML(skiladd_wrap)照合済み+ixanary.com(各候補スキルページの合成テーブル)で2ソース一致確認済み(2026-08-02)。S1の閃裂討鬼は45do.info側で数値が伏字(●)だったが、skills.html側で豊臣秀吉【覇】(1274)B分の確定値(確率45%/攻撃50%上昇)と統合済みのためその値を採用。Cの猛火ノ追撃はixanary.com上でSSSと確認、skills.html側の重複登録(rank:SS版)をSSSへ統合",
+  "黄丸化検証(2026-08-16): カード画像no1260_full.pngの4隅バッジ(槍A/馬A/弓S/器S)を確認し一致。synthesisTableはixanary.com(skills/龍父絶砲)+ixawiki.com(BushoCard/1260伊達輝宗)の2ソースでA/B/C/S1/S2全枠・afterSkillとも完全一致確認(猛火ノ追撃SSS・閃裂討鬼SS等ランクも一致)。四天轟雷・天焉相克・猛火ノ追撃・閃裂討鬼・覇王征軍のdata/skill側sourceCharactersに1260が正しいslotで記載済みを確認(逆引き済み)。龍父絶砲自身は自己参照候補が無いため「移植不可」で正しい。TR段はLV10のみ(TRなし)。"
  ]
 }

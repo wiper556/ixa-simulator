@@ -393,6 +393,29 @@ def main():
                 add("逆引き漏れ", "HIGH", "[%s] %s No.%s %s枠の%s が sourceCharacters に無い" %
                     (status(g), g["name"], g["no"], row.get("slot"), sk_))
 
+    # sourceCharacters の slot が、武将の synthesisTable の実枠と一致しているか。
+    # 2026-08-16: No.1279 荒木村重（2）の魔導禁鎖が synthesisTable の A・B 枠に
+    # 載っているのにスキル側は「移植不可」になっていた(ユーザー指摘)。全件見たら
+    # 26件あり、うち5件は「移植不可なのに実は移植できる」という**使い方を
+    # 間違えさせる**種類の誤りだった。逆引きの有無しか見ていなかったので通っていた。
+    real_slots = collections.defaultdict(lambda: collections.defaultdict(list))
+    for g, _src in targets:
+        for row in g.get("synthesisTable") or []:
+            if row.get("skill") and row.get("slot"):
+                real_slots[str(g["no"])][row["skill"]].append(row["slot"])
+    _ORD = {"A": 0, "B": 1, "C": 2, "S1": 3, "S2": 4}
+    for s in D["skills"]:
+        for c in s.get("sourceCharacters") or []:
+            got = real_slots.get(str(c.get("no")), {}).get(s["name"])
+            if not got:
+                continue          # 合成表に無い = 「移植不可」でよい
+            want = "・".join(sorted(set(got), key=lambda x: _ORD.get(x, 9)))
+            if (c.get("slot") or "") != want:
+                add("slotが実枠と違う", "HIGH",
+                    "「%s」の %s No.%s: slot=%s(合成表では %s枠)"
+                    % (s["name"], c.get("name"), c.get("no"),
+                       c.get("slot") or "無し", want))
+
     # LINKED_SKILLS
     for arr, label, glist in [(D["LINKED_SKILLS"], "LINKED_SKILLS", D["generals"]),
                               (D["KK_LINKED_SKILLS"], "KK_LINKED_SKILLS", D["kyokuGenerals"]),

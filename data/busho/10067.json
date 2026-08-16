@@ -3,7 +3,9 @@
  "no": "10067",
  "furigana": "さがらさのすけ",
  "illustrator": "NW/S,RKKD 直良有祐",
- "atkBase": 2500,
+ "imageFull": "assets/img/characters/no10067_full.png",
+ "imageChar": "assets/img/characters/no10067_char.png",
+ "atkBase": 2150,
  "atkGrowth": 0,
  "defBase": 2450,
  "defGrowth": 0,
@@ -17,7 +19,7 @@
   "ki": "X"
  },
  "initialSkill": "極衝爆砕",
- "skillDetail": "SSS/LV10 確率：+37% / 対象 槍砲器 防御：150%上昇 自軍内で同兵種を指揮している武将数×13%を防御効果に加算",
+ "skillDetail": "SSS/LV10 確率 37% 防御 150%上昇/対象:槍砲器\n①防御 150%上昇する\n②自軍内で同兵種を指揮している武将数×13%を防御効果に加算する",
  "ch": "30章",
  "cost": 5,
  "troop": "槍砲器防",
@@ -111,5 +113,15 @@
    "effectShort": "防御 6.5%×防御参加武将数(280人)=1820.0%(敵軍飛翔持ち9人未満の時通常武将ダメージを受けない)",
    "afterEffectShort": "防御 6.5%×防御参加武将数(280人)=1820.0%(敵軍飛翔持ち9人未満の時通常武将ダメージを受けない)"
   }
- ]
+ ],
+ "notes": [
+  "2026-08-16黄丸化検証: imageFull/imageChar未設定だったが画像ファイル自体は既存(no10067_full.png/no10067_char.png)のため参照を追加した。",
+  "カード画像no10067_full.pngの4隅バッジを再ズーム確認し槍S/弓A/馬A/器X(虹色)で既存データと一致。ixawiki.com(index.php?BushoCard/10067相楽左之助)の統率力表とも一致確認。",
+  "atkBaseが2500になっていたが誤りと判明。カード画像(天限突破状態Lv.0)は攻撃2150/防御2450/兵法800.0と表示されており、ixawiki.comの初期値表(攻撃力2150/防御力2450/兵法800)とも一致した。ixanary.com/cards/10067/のcard JSONはattack:2500だが、同ページ内の成長表(#開発セクション)も攻撃力2500・成長+0のままで、カード画像・ixawiki両方と食い違うためixanary側の登録ミスと判断し2150に修正した。",
+  "成長値(atkGrowth/defGrowth/tacticsGrowth)は0のまま維持した。ixanary.com/cards/10067/は明示的に「成長値が設定されていないので、成長しない」と記載。一方ixagno.blog.fc2.com/blog-entry-10691.html(相楽左之助【覇】(No.10067)の能力と考察)のメタ説明文には「成長：攻撃【155】防御【165】兵法【3.0】」という数値があり矛盾したが、同記事に埋め込まれたLv.0状態の実カード画像(blog-imgs-98.fc2.com/.../2025110600311501f.jpg)は攻撃2150/防御2450/次Lv.39と表示されており、天限突破状態のno10067_full.pngと同じ2150/2450だった。突破ランクは通常Lv0基礎値を押し上げる(例: 10074は限界/極限/天限で52310/54740/57170と変化)ため、突破段階が違う2枚の画像で同一の値になっている点は成長・突破ボーナスともに実質0であることを示す一次情報として重み付けし、ixagno側のメタ文言(155/165/3.0)は採用しなかった(要ユーザー確認、テンプレ流用等による誤記の可能性)。",
+  "skillDetail/data/skill/極衝爆砕.jsonのeffectSummaryがixanaryの生テキストそのままの書式だったため、サイト標準の「ヘッダー1行+①②改行+読点なし」書式に整形した(模倣不可の記載はixanary生HTML・ixawiki生HTMLともに0件で該当なしを確認)。",
+  "synthesisTableはixanary.com/skills/極衝爆砕/の生HTML合成テーブルでA〜S2全5枠が既存登録と完全一致。sourceCharacters逆引き(A-3-11): 筋骨隆々/梵天浄界/永世ノ天隻/極衝爆砕(自身)の各data/skill/*.jsonに10067が反映済みを確認(A枠の二重の極みはAランクのため自己参照ページ未作成の既定通り、ページ無しで問題なし)。",
+  "data/skill/極衝爆砕.jsonのcategoryLinksが9項目未判定のまま保留されていたため判定し、「自軍内で同兵種を指揮している武将数」カウントはskills-count-def.html(防御参加武将数280人ベース)とは別種と判断(同型の既存スキル獄香ノ爆宴・虚実法容もcategoryLinks無し)し、該当なしとして追加しなかった。"
+ ],
+ "reviewedOk": true
 }

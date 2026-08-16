@@ -100,6 +100,12 @@
   }
  ],
  "notes": [
-  "45do.info(生HTML skiladd_wrap)+ameameixa.com(スキルテーブル)の2ソース照合済み。ameameixa側はA/B候補の甲塞ノ龍砲を[SS]と記載していたが、この武将自身の初期スキルランクはカード表記・skills.htmlともにSのため45do.info側(S)を採用"
- ]
+  "2026-08-16黄丸化検証: rankGrades(槍A/弓S/馬A/器S)をカード画像バッジ4隅で照合、一致。ステータス初期値・成長値・cost3・lv0Troops4000はixanary.com(cards/1212)生HTMLの成長表と一致。skillDetailはixanary/ixawiki2ソースともLV1/LV10のみでTR無しと確認。",
+  "名前表記: ixawiki.com(Busho/武将カード一覧)で「九鬼嘉隆」無印表記を確認、既存登録のまま変更なし。",
+  "synthesisTable(A/B=甲塞ノ龍砲[S]→海神ノ浮船[SS]、C=禍津日神ノ謀[SS]自己参照、S1=海神ノ浮船[SS]自己参照、S2=三千世界神将[SS]自己参照)をixanary.com(skills/甲塞ノ龍砲)生HTMLとixawiki.com(BushoCard/1212九鬼嘉隆)生HTMLの2ソースで完全一致を確認(2026-08-16)。甲塞ノ龍砲のランクは両ソースともSで一致(旧ameameixa由来のSS誤記は既に修正済み)。",
+  "禍津日神ノ謀の重複登録(2026-08-01の既知事故、マニュアルA-6記載)を`grep -c 'name:\"禍津日神ノ謀\"' skills.html`で再確認、1件のみで重複は解消済み。1212がsourceCharactersに正しく含まれていることも確認。",
+  "sourceCharacters逆引き確認(A-3-11): 甲塞ノ龍砲(A・B)・禍津日神ノ謀(C)・海神ノ浮船(S1)・三千世界神将(S2)いずれもdata/skill/配下に1212が記載済み(2026-08-16)。",
+  "章(23章)は情報源に記載が無く未確認のまま(ixanary/ixawikiともchapter情報を確認できず)。"
+ ],
+ "reviewedOk": true
 }

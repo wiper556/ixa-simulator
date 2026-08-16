@@ -1,6 +1,7 @@
 {
  "name": "武田勝頼（5）",
  "no": "1252",
+ "reviewedOk": true,
  "ch": "27章",
  "cost": 5,
  "troop": "弓馬砲器攻",
@@ -96,6 +97,7 @@
   }
  ],
  "notes": [
-  "synthesisTable: 45do.info生HTML(skiladd_wrap)+ixanary.com(陥城騎王スキルページの合成テーブル)で2ソース一致確認済み(2026-08-02)"
+  "synthesisTable: 45do.info生HTML(skiladd_wrap)+ixanary.com(陥城騎王スキルページの合成テーブル)で2ソース一致確認済み(2026-08-02)",
+  "黄丸化検証(2026-08-16): カード画像no1252_full.pngの4隅バッジ(槍A/馬S/弓A/器S)を個別ズームで再確認し一致。ixanary.comのYUMI/KIBA列は入れ替わっていた(参考程度に留めた)。synthesisTableはixanary.com(skills/陥城騎王の合成テーブル)+ixawiki.com(BushoCard/1252武田勝頼)の2ソースでA/B/C/S1/S2全枠一致確認。破邪後輝・四至ノ神域・月詠ノ覇威のdata/skill側sourceCharactersに1252が正しいslotで記載済みを確認(逆引き済み)。飛龍衝天はgrantedViaSkills経由のため直接記載不要(A-3-12)。TR段はLV10のみ(TRなし)、ixanary skillsページで確認済み。"
  ]
 }

@@ -1,0 +1,79 @@
+{
+ "name": "籠城の妙技",
+ "rank": "A",
+ "baseRate": 100,
+ "target": "全",
+ "effectSummary": "A/LV10 確率 100% 防御 50%上昇/対象:全\n①防御 50%上昇する\n②卓越:追加確率15%で防御効果が3倍になる",
+ "categoryLinks": [
+  {
+   "href": "skills-takuetsu.html",
+   "label": "卓越スキル一覧を見る"
+  }
+ ],
+ "sourceCharacters": [
+  {
+   "name": "柳生十兵衛",
+   "no": "2432",
+   "slot": "C",
+   "db": "kyoku"
+  },
+  {
+   "name": "由布雪下",
+   "no": "2441",
+   "slot": "S1",
+   "db": "kyoku"
+  },
+  {
+   "name": "片倉景綱",
+   "no": "2443",
+   "slot": "S2",
+   "db": "kyoku"
+  },
+  {
+   "name": "新城",
+   "no": "2554",
+   "slot": "S2",
+   "db": "kyoku",
+   "note": [
+    "新城(2554)のsynthesisTable S2枠(2026-08-16)"
+   ]
+  },
+  {
+   "name": "出雲阿国",
+   "no": "2788",
+   "slot": "S2",
+   "db": "kyoku",
+   "note": [
+    "出雲阿国(2788)のsynthesisTable S2枠(2026-08-16)"
+   ]
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "三千世界神将",
+  "rank": "SS"
+ },
+ "grantedViaSkills": [
+  {
+   "skill": "江虎謀牙",
+   "rank": "A"
+  },
+  {
+   "skill": "江河正攻",
+   "rank": "A"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 防御 50%上昇(卓越:追加確率15%で防御効果が3倍)"
+  }
+ ],
+ "notes": [
+  "2026-08-16作成。A-3-9の例外ルール(移植後合成候補afterSkillが既にskills.htmlページを持つ三千世界神将[SS]である元スキル)によりAランクだがページ作成対象。",
+  "ixanary.com/skills/籠城の妙技 の生HTML(LV10行: 確率+100%/対象全/防御50%上昇/卓越追加確率15%で3倍)で確認。categoryLinksは9項目確認し卓越(項目7)が該当。",
+  "No.2432柳生十兵衛(C枠)・2443片倉景綱(S2枠、いずれも担当範囲内)の黄丸化検証(2026-08-16)で新規作成。data/skill/三千世界神将.jsonのgrantedViaSkillsに本スキルを追記した。",
+  "2026-08-16(No.2441黄丸化検証): S1枠(籠城の妙技、自己参照)のafterSkillが未確認(null)だったが、由布雪下自身の初期スキル江河正攻のixanary生HTML(合成テーブル2次行)でS1列=三千世界神将[SS]であることを確認し解消。A/B/C枠(江河正攻[A]→籠城の妙技[A])はA-3-9の例外ルールによりdata/skill/江河正攻.jsonを新規作成し、こちらのgrantedViaSkillsに追記した。",
+  "2026-08-16(No.7013黄丸化検証): C枠(江虎謀牙[A]→籠城の妙技[A])が未登録だったため、江虎謀牙.jsonを新規作成しgrantedViaSkillsに追加した。"
+ ]
+}

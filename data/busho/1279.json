@@ -127,8 +127,12 @@
   }
  ],
  "notes": [
-  "カード画像照合済み: 槍S/弓S/馬A/器A",
-  "ixanary.com生HTML照合(2026-08-02): カード画像のスキル欄にLV10とTR5(鍛錬)の2枠のみ表示されており、TR1〜TR4は実在しない。",
-  "45do.info(ordinary/0314)生HTML照合+ameameixa.com(post-12334「29章天武将スキル一覧」表のNo.1279行)の両ソースでA/B/C/S1/S2の並びが一致確認済み。A/Bは自身の初期スキル(魔導禁鎖)がそのまま候補になる自己参照枠。"
- ]
+  "カード画像照合済み(2026-08-16再確認): 槍S/弓S/馬A/器A、攻1050/防1240/兵法660.0/指揮4630/コスト4も画像と一致。",
+  "ixanary.com生HTML照合(2026-08-16): /cards/1279/でattack1050・defence1240・intelligence660・growth41/71/3が一致。yumi/kibaはixanary側がA/Sで画像と入れ替わっているため画像を優先(既知の問題)。",
+  "ixanary.com(/skills/魔導禁鎖/)生HTML照合(2026-08-16): LV1〜TR5の全段階が実在し、TR1=8.7%/TR2=9.2%/TR3=9.9%/TR4=11%/TR5=13%が現在のtrTableと一致。旧ノートの「TR1〜TR4は実在しない」は誤りだったため削除。",
+  "synthesisTable: ixanary.com(/skills/魔導禁鎖/、生HTML)とixawiki.com(index.php?BushoCard/1279荒木村重、生HTML、EUC-JP)の2ソースでA/B/C/S1/S2の1次候補・2次候補S1を突き合わせ、A=魔導禁鎖[S]→月煌侵蝕[SSS]、B=同、C=八幡神ノ威光(自己参照)、S1=月煌侵蝕(自己参照)、S2=永世ノ天隻(自己参照)で完全一致を確認。八幡神ノ威光のランクはixanary=SSS/ixawiki=SSと食い違ったが、サイト側で既に14件の武将がSSSで登録済み(data/skill/八幡神ノ威光.json)かつixanaryとも一致するためSSSを採用(ixawiki側の表記ゆれと判断)。",
+  "data/skill/魔導禁鎖.json・月煌侵蝕.json・永世ノ天隻.json・八幡神ノ威光.jsonのsourceCharactersに1279が正しい枠で登録済みであることを確認(A-3-11)。",
+  "既知の未解決事項(このJSON外、修正権限外): skills-count-def.html(独自複製配列)の魔導禁鎖行が旧表記「移植不可」のまま残っており、data/skill/魔導禁鎖.jsonのA・B表記と食い違っている。担当範囲外のため報告のみ。"
+ ],
+ "reviewedOk": true
 }

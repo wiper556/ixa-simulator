@@ -1,6 +1,7 @@
 {
  "name": "相良義陽（3）",
  "no": "1258",
+ "reviewedOk": true,
  "ch": "27章",
  "cost": 3.5,
  "troop": "槍馬砲器攻",
@@ -94,6 +95,7 @@
   }
  ],
  "notes": [
-  "45do.info(生HTML skiladd_wrap)+ameameixa.com(27章天武将スキル一覧 https://ameameixa.com/27sho-ten-sukil)の2ソースでA〜S2のスキル名一致を確認(ランクは45do.info基準)"
+  "45do.info(生HTML skiladd_wrap)+ameameixa.com(27章天武将スキル一覧 https://ameameixa.com/27sho-ten-sukil)の2ソースでA〜S2のスキル名一致を確認(ランクは45do.info基準)",
+  "黄丸化検証(2026-08-16): カード画像no1258_full.pngの4隅バッジ(槍S/馬S/弓A/器A)を確認し一致。スキル名「義陣響野」はixanary.com(cards/1258)の生HTMLからskills/リンクを抽出し装飾フォントの誤読(義陣蟄野等)がないことを確認。synthesisTableはixanary.com(skills/義陣響野)+ixawiki.com(BushoCard/1258相良義陽)の2ソースでA/B/C/S1/S2全枠・afterSkillとも完全一致確認。龍驤虎躍・氷塊三連撃・国堅大神のdata/skill側sourceCharactersに1258が正しいslotで記載済みを確認(逆引き済み)。TR段はLV10のみ(TRなし)。"
  ]
 }

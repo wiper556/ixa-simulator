@@ -2,7 +2,7 @@
  "name": "世良田二郎三郎",
  "no": "10065",
  "furigana": "せらだじろうさぶろう",
- "illustrator": "SQUARE ENIX",
+ "illustrator": "直良有祐",
  "atkBase": 1270,
  "atkGrowth": 72,
  "defBase": 1050,
@@ -17,7 +17,7 @@
   "ki": "S"
  },
  "initialSkill": "護国王器",
- "skillDetail": "S/LV10 確率：+100% / 対象 全 攻撃：620%上昇 / 8部隊以下の攻撃戦闘時このスキルを所持する武将の全スキルの 卓越 追加確率が350%上昇部隊内武将の全スキルの卓越追加確率が30%上昇(模倣不可・特殊効果は自部隊内では重複不可)",
+ "skillDetail": "S/LV10 確率 100% 攻撃 620%上昇/対象:全\n模倣不可\n①攻撃 620%上昇する\n②8部隊以下の攻撃戦闘時このスキルを持つ武将の全スキルの卓越追加確率が350%上昇する\n③部隊内武将の全スキルの卓越追加確率が30%上昇する(特殊効果は自部隊内では重複不可)",
  "ch": "30章",
  "cost": 5,
  "troop": "全攻",
@@ -124,5 +124,13 @@
    "href": "skills-takuetsu.html",
    "label": "卓越スキル一覧を見る"
   }
+ ],
+ "notes": [
+  "2026-08-16黄丸化検証(未完了・青丸のまま残す): assets/img/characters/no10065_full.png/no10065_char.pngが存在せず(imageFull/imageChar自体が未設定)、マニュアルA-1-2が要求するカード画像バッジの直接照合ができない状態だった。",
+  "illustrator欄が「SQUARE ENIX」という誤った値になっていたため、ixanary.com/cards/10065/(curl生HTML)で確認した「直良有祐」に修正した。",
+  "rankGradesはixanaryのcard JSON(yari:A,yumi:A,kiba:S,heiki:S)と既存データ(槍A/弓S/馬A/器S)が食い違ったが、ixawiki.com(index.php?BushoCard/10065世良田二郎三郎)の統率力表が槍A/馬A/弓S/器Sと明記しており既存データと一致したため、ixanaryのyumi/kiba入れ替わり既知問題と判断し既存値を維持した。ただし実カード画像での確認ではないため確信度は「未確認扱い」に留める。",
+  "skillDetail/data/skill/護国王器.jsonのeffectSummaryがixanaryの生テキストそのままの書式だったため、サイト標準の「ヘッダー1行+①②③改行+読点なし」書式に整形した。ステータス(コスト5/指揮5100/成長値攻72防40兵法3.0)・trTable(LV10〜TR6、TR6は護国王器 TR6の実在をixanary生HTMLで確認済み)は既存値と一致確認。",
+  "synthesisTableはixanary.com/skills/護国王器/の生HTML合成テーブルで、A・B双方が千里必勝ノ神算[SS]、C・S1双方が幻像鏡花[SSS]という一見重複に見える構成も含めA〜S2全5枠が既存登録と完全一致した(重複は出典側の表そのものであり誤登録ではない)。sourceCharacters逆引き(A-3-11): 千里必勝ノ神算(A・B併記)/幻像鏡花(C・S1併記)/伏雷蒼樹/護国王器(自身)の各data/skill/*.jsonに10065が反映済みを確認。",
+  "上記のとおりデータ自体はixanary生HTML1ソースで確認できたが、A-1-2が要求するローカルカード画像が無いという構造的な不備が残るため、reviewedOk:trueにはせず青丸のまま報告する。画像の取得・切り抜きを別途行った上で再検証することを推奨する。"
  ]
 }

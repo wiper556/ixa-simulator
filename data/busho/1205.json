@@ -1,5 +1,5 @@
 {
- "name": "武田晴信",
+ "name": "武田晴信（2）",
  "no": "1205",
  "ch": "23章",
  "cost": 5,
@@ -96,6 +96,13 @@
   }
  ],
  "notes": [
-  "synthesisTable: 45do.info生HTML(skiladd_wrap)+ixanary.com(虎王炎神スキルページの合成テーブル)で2ソース一致確認済み(2026-08-02)。S2の布都御魂ノ鬨は既存skills.html登録値(ixanary確認済み40%/40%)に合わせた"
- ]
+  "2026-08-16黄丸化検証: rankGrades(槍S/弓A/馬S/器A)をカード画像バッジ4隅で照合、一致。ステータス初期値・成長値・cost5・lv0Troops4800はixanary.com(cards/1205)生HTMLの成長表と一致。skillDetail(確率45%/攻撃(5×自軍攻撃武将数)%上昇)はixanary/ixawiki2ソースともLV1/LV10のみでTR無しと確認。",
+  "名前表記: ixanary.com(cards/1205)で職業=将バッジ(覇ではない)を確認、ixawiki.com(Busho/武将カード一覧)で「武田晴信(2)」表記を確認したためF-0規則に従い「武田晴信（2）」とした(2026-08-16、旧登録は無印だった。同名No.1318は既に「武田晴信（4）」で登録済み、整合的)。data/skill配下の候補スキル(虎王炎神・覇王征軍・天焉相克・布都御魂ノ鬨)のsourceCharactersも同名に更新した。",
+  "synthesisTable(A/B=虎王炎神[S]→天焉相克[SS]、C=覇王征軍[SS]自己参照、S1=天焉相克[SS]→八重言代主神[SS]、S2=布都御魂ノ鬨[SS]自己参照)をixanary.com(skills/虎王炎神)生HTMLとixawiki.com(BushoCard/1205武田晴信)生HTMLの2ソースで完全一致を確認(2026-08-16)。",
+  "categoryLinksチェック(A-3-9、9項目): 虎王炎神の効果「自軍攻撃武将数」は項目8(人数依存・攻撃変動)に該当するためskills-count-atk.htmlへのcategoryLinksをdata/skill/虎王炎神.jsonに追加した。他8項目は該当なし。ただしskills-count-atk.html本体側は独自複製配列でありdata/skill編集だけでは反映されないため、本体への追記は別途必要(申し送り、虎王炎神.jsonのnotesにも記載)。",
+  "sourceCharacters逆引き確認(A-3-11): 虎王炎神(A・B)・覇王征軍(C)・天焉相克(S1)・布都御魂ノ鬨(S2)いずれもdata/skill/配下に1205が記載済み(2026-08-16)。",
+  "布都御魂ノ鬨.jsonのnotesに『黒田官兵衛【覇】1214・羽柴秀吉1208等でA-3-12違反(鬼滅刺経由の疑い)が未確認』という申し送りが既にあり、1208・1214は今回の担当範囲内のためそれぞれの検証時に個別確認する。",
+  "章(23章)は情報源に記載が無く未確認のまま(ixanary/ixawikiともchapter情報を確認できず)。"
+ ],
+ "reviewedOk": true
 }

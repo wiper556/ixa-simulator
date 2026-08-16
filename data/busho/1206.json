@@ -101,6 +101,12 @@
  ],
  "notes": [
   "カード画像照合済み(2026-08-02): 槍SS/弓A/馬A/器A",
-  "45do.info(ordinary/0069)生HTML + ameameixa.com(bushocard-1206)生HTML の2ソースで完全一致を確認(2026-08-02)"
- ]
+  "2026-08-16黄丸化検証: rankGradesを再照合し一致を再確認。ステータス初期値・成長値・cost4.5・lv0Troops4680はixanary.com(cards/1206)生HTMLの成長表と一致。skillDetailはixanary/ixawiki2ソースともLV1/LV10のみでTR無しと確認。",
+  "名前表記: ixawiki.com(Busho/武将カード一覧)で「長尾景虎(2)」表記を確認、既存の「長尾景虎（2）」と一致(docs/character-registration-manual.md F-2(a)で未解決扱いだったが、実際には既に正しく変換済みだった)。",
+  "synthesisTable(A/B=氷神懸龍[S]→天津日ノ太刀[SS]、C=火之迦具土神[SS]自己参照、S1=天津日ノ太刀[SS]自己参照、S2=破軍星 皇[SS]自己参照)をixanary.com(skills/氷神懸龍)生HTMLとixawiki.com(BushoCard/1206長尾景虎)生HTMLの2ソースで完全一致を確認(2026-08-16)。",
+  "categoryLinksチェック(A-3-9、9項目): 飛翔4(初期スキル)は既にskills-hishou-atk.htmlへリンク済みで確認。候補スキル破軍星 皇の「コストを最大0.5まで除外する」は項目9(コスト減少)に該当することが判明し、data/skill/破軍星 皇.jsonにskills-cost-atk.htmlへのcategoryLinksを追加した(本体一覧ページへの追記は別途必要、申し送り)。",
+  "sourceCharacters逆引き確認(A-3-11): 氷神懸龍(A・B)・火之迦具土神(C)・天津日ノ太刀(S1)・破軍星 皇(S2)いずれもdata/skill/配下に1206が記載済み(2026-08-16)。",
+  "章(23章)は情報源に記載が無く未確認のまま(ixanary/ixawikiともchapter情報を確認できず)。"
+ ],
+ "reviewedOk": true
 }

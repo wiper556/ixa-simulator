@@ -1,6 +1,7 @@
 {
  "name": "藤堂高虎（2）",
  "no": "1270",
+ "reviewedOk": true,
  "ch": "28章",
  "cost": 5.5,
  "troop": "槍馬砲器防",
@@ -122,6 +123,7 @@
  ],
  "notes": [
   "ixagno.blog.fc2.com(blog-entry-9827)生HTML照合済み(2026-08-02): TR1〜TR5の実在を確認し追記",
-  "45do.info生HTML(skiladd_wrap) + ixagno.blog.fc2.com(blog-entry-9827、検索クエリ「No.1270」で発見)生HTML の2ソースで完全一致を確認(2026-08-02再検証)"
+  "45do.info生HTML(skiladd_wrap) + ixagno.blog.fc2.com(blog-entry-9827、検索クエリ「No.1270」で発見)生HTML の2ソースで完全一致を確認(2026-08-02再検証)",
+  "黄丸化検証(2026-08-16): カード画像no1270_full.pngの4隅バッジ(槍S/馬A/弓A/器S)を確認し一致。TR1〜TR5(440/500/570/650/740)はixanary.com(skills/乱界遊泳)の鍛錬表と全行完全一致(TR6無し)。synthesisTableはixanary.com+ixawiki.com(BushoCard/1270藤堂高虎)の2ソースでA/B/C/S1/S2全枠一致(全自己参照)。乱界遊泳自身は自己参照候補が無いため「移植不可」で正しい。龍驤虎躍・万里嵐壁・虚空ノ導・月煌侵蝕・三千世界神将のdata/skill側sourceCharactersに1270が正しいslotで記載済みを確認(逆引き済み)。"
  ]
 }

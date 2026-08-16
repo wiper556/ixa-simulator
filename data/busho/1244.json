@@ -77,9 +77,9 @@
   {
    "slot": "S1",
    "skill": "天宇受売命",
-   "rank": "SS",
+   "rank": "SSS",
    "afterSkill": "天宇受売命",
-   "afterRank": "SS",
+   "afterRank": "SSS",
    "rate": "70%",
    "target": "自身",
    "effectShort": "自身が持つ初期スキルを通常攻撃/防御効果1.25倍にして模倣する",
@@ -99,6 +99,8 @@
  ],
  "notes": [
   "カード画像照合済み(2026-08-02): 槍SS/弓A/馬A/器A(旧データの\".SS\"表記の誤記を修正)",
-  "45do.info(ordinary/0152)生HTML + ameameixa.com(bushocard-1244)生HTML の2ソースを突き合わせ。BのみameameixaがA(義心江龍)の重複記載になっており45do.infoのskiladd_wrap(構造化データ、天頂ノ電光)と食い違ったため、より信頼性の高い45do.info側を採用(2026-08-02)"
- ]
+  "45do.info(ordinary/0152)生HTML + ameameixa.com(bushocard-1244)生HTML の2ソースを突き合わせ。BのみameameixaがA(義心江龍)の重複記載になっており45do.infoのskiladd_wrap(構造化データ、天頂ノ電光)と食い違ったため、より信頼性の高い45do.info側を採用(2026-08-02)",
+  "2026-08-16黄丸化検証で誤り発見・修正: S1枠「天宇受売命」のrank/afterRankが\"SS\"になっていたが、ixanary.com(skills/義心江龍)+ixawiki.com(BushoCard/1244浅井長政)の2ソースとも[SSS]でありSSSが正しい(data/skill/天宇受売命.json側は既にrank:SSSで一致していた)。SSSに修正。他4枠(A義心江龍S→天宇受売命SSS/B天頂ノ電光SSS自己参照/C開闢ノ逆鉾SS自己参照/S2神光征軍SS自己参照)は2ソースで一致確認。基礎値(1210/1100/660、成長+64/+42/+3、指揮4750)・rankGrades(槍SS/弓A/馬A/器A、カード画像バッジ拡大確認)もixanary生HTMLと一致。data/skill/義心江龍(自己ページ)・天頂ノ電光・開闢ノ逆鉾・神光征軍の各JSONのsourceCharactersに1244が正しいslotで既に記載済み。"
+ ],
+ "reviewedOk": true
 }

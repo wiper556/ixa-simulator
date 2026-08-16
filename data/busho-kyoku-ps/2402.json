@@ -82,8 +82,8 @@
    "rank": "A",
    "afterSkill": "覇王征軍",
    "afterRank": "SS",
-   "target": null,
-   "rate": null,
+   "target": "全",
+   "rate": "25%",
    "effectShort": "攻撃 42%上昇+防御 42%上昇",
    "afterTarget": "全",
    "afterRate": "42%",
@@ -120,8 +120,8 @@
    "afterRank": "SS",
    "target": "全",
    "rate": "60%",
-   "effectShort": "防御NULL%上昇 (部隊の総コストで効果が変化します)",
-   "afterEffectShort": "防御NULL%上昇 (部隊の総コストで効果が変化します)"
+   "effectShort": "防御 41.56%上昇(部隊総コストで変動、TRなし)",
+   "afterEffectShort": "防御 41.56%上昇(部隊総コストで変動、TRなし)"
   }
  ],
  "notes": [
@@ -132,6 +132,15 @@
   "ixaixaは「確率57%」と記載しているがカードLV1(+30%)→ixanary LV10(+50%)の系列と矛盾するため、",
   "確率はixanary(50%)を採用。スキルはB(鍛錬不可)のためTR1以降のeffectはnull。",
   "合成テーブルは登録時ixaixa.com単一ソースだったが、2026-08-12にixanaryのスキル個別ページ",
-  " (1次/2次候補)と全行一致することを確認し2ソースになった(tools/audit_characters.py --online)。"
- ]
+  " (1次/2次候補)と全行一致することを確認し2ソースになった(tools/audit_characters.py --online)。",
+  "2026-08-16黄丸化検証: rankGrades(A/S/A/A)はno2402_full.pngの4隅バッジを個別ズームして再確認し一致(yari A/yumi S/uma A/ki A)。",
+  "S2枠(武神八幡陣)のeffectShort/afterEffectShortが「防御NULL%上昇」という表示バグ値のまま残っていたため、data/skill/武神八幡陣.jsonの既確定値「防御 41.56%上昇(部隊総コストで変動、TRなし)」に修正した。",
+  "B枠(戦陣 阿吽[A]→覇王征軍[SS])はtarget/rateが未確定(null)だったため、ixanary.com/skills/戦陣 阿吽の生HTML(LV10行: 確率+25%/対象全/攻撃42%上昇/防御42%上昇)で確認しtarget:全, rate:25%を追加。",
+  "A-3-9の例外ルール(afterSkillが既にページを持つ覇王征軍[SS]である元スキル)に該当するため、data/skill/戦陣 阿吽.jsonを新規作成しNo.2402(B枠)・2403(A枠)・2414(A枠)・2419(A枠、いずれも担当範囲内)をsourceCharactersに記載、data/skill/覇王征軍.jsonのgrantedViaSkillsに戦陣阿吽[A]を追記した。",
+  "synthesisTableのA/B/C/S1/S2は、ixanary.com(cards/2402合成テーブルおよびtools/audit_characters.py --online照合)に加え、ixawiki.com(index.php?BushoCard/2402森可成)の合成候補テーブル(1次候補/2次候補S1)を新たに生HTMLで確認し、A:暁光[D]→屈指の勇将[D]、B:戦陣阿吽[A]→覇王征軍[SS]、C:戦陣破軍[A]→天穿神滅[SS]、S1:覇王ノ守人[B](自己参照)、S2:武神八幡陣[SS](自己参照)の全5行がixanary/ixawiki2ソースで一致することを確認した。",
+  "A枠(暁光/屈指の勇将)はixanary.com/skills/暁光・屈指の勇将の生HTML(LV10行)で確率24%/37%、攻撃38%/22%、防御38%/22%を確認しJSON値と完全一致。",
+  "C枠(戦陣破軍/天穿神滅)は既存data/skill/戦陣 破軍.json・天穿神滅.jsonの確定値(確率44%/攻撃66%防御66%、確率50%/砲器)と一致確認、sourceCharactersにNo.2402(戦陣 破軍.json側、C枠)が既に記載済みであることも確認した。武神八幡陣.jsonのsourceCharactersにもNo.2402(S2枠)が既に記載済みであることを確認した(A-3-11)。",
+  "章はixanary.com/ixawiki.comいずれのカードページにも記載が無く未確認。"
+ ],
+ "reviewedOk": true
 }

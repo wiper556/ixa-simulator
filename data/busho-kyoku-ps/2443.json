@@ -82,8 +82,8 @@
    "rank": "A",
    "afterSkill": "布都御魂ノ鬨",
    "afterRank": "SS",
-   "target": null,
-   "rate": null,
+   "target": "全",
+   "rate": "10%",
    "effectShort": "攻撃 87%上昇+防御 87%上昇",
    "afterTarget": "全",
    "afterRate": "35%",
@@ -134,8 +134,14 @@
   " + ixanary.com/cards/2443(成長+34/+47/+2.5・LV10: 確率+100%/全防99%/陣・同盟陣の耐久が必ず1残る)",
   " + ixawiki BushoCard/2443(統率2次確認・合成テーブル1次/2次候補)。",
   "統率はカード画像+ixawikiの2ソース一致。初期スキルがSランクのためスキル個別ページの新規作成が必要",
-  "(skills.html系+LINKED_SKILLS、feedback_skill_page_update_rule)——未作成、docsのTODOに記録済み。",
+  "(skills.html系+LINKED_SKILLS、feedback_skill_page_update_rule)——2026-08-12に一括作成済み(data/skill/月下闇龍.json)であることを2026-08-16黄丸化検証で確認、旧「未作成」の記述を訂正。",
   "スキルはS(鍛錬情報なし)のためTR1以降のeffectはnull。",
-  "合成テーブルはixawiki(1次候補+2次候補)"
- ]
+  "合成テーブルはixawiki(1次候補+2次候補)",
+  "2026-08-16黄丸化検証: rankGrades(S/A/A/A)はno2443_full.pngの4隅バッジを個別ズームして再確認し一致。基礎値・コスト・指揮兵数(★0-0=3340採用、カード極限突破表示の4740は不採用)・成長値・LV10スキル値(確率100%/防御99%)はixanary.com(cards/2443)生HTMLで一致確認。",
+  "B枠(戦陣凱旋)のtarget/rateが未確定(null)だったため、ixanary生HTML(skills/戦陣 凱旋)でtarget:全,rate:10%を追加。",
+  "A枠(戦陣破軍)・B枠(戦陣凱旋)・C枠(鬼滅刺)・S1枠(三千世界神将、自己参照)・S2枠(籠城の妙技)は全てdata/skill/戦陣 破軍.json・戦陣 凱旋.json・鬼滅刺.json・三千世界神将.json・籠城の妙技.jsonのsourceCharactersに片倉景綱(2443)が正しいslotで登録済みであることを確認した(A-3-11)。",
+  "synthesisTableのA/B/C/S1/S2は、ixanary.com(cards/2443の初期スキル月下闇龍の合成テーブルおよび各候補スキル個別ページ)に加え、ixawiki.com(index.php?BushoCard/2443片倉景綱)の合成候補テーブル(1次候補/2次候補S1)を生HTMLで確認し、全5行がixanary/ixawiki2ソースで一致することを確認した。",
+  "章はixanary.com/ixawiki.comいずれのカードページにも記載が無く未確認。"
+ ],
+ "reviewedOk": true
 }

@@ -69,8 +69,8 @@
    "rank": "A",
    "afterSkill": "覇王征軍",
    "afterRank": "SS",
-   "target": null,
-   "rate": null,
+   "target": "全",
+   "rate": "25%",
    "effectShort": "攻撃 42%上昇+防御 42%上昇",
    "afterTarget": "全",
    "afterRate": "42%",
@@ -134,6 +134,13 @@
   "いずれも[SS]でありSS表記を採用(表記ゆれと判断、要2次確認)。",
   "スキルはA(鍛錬情報なし)のためTR1以降のeffectはnull。",
   "合成テーブルは登録時ixaixa.com単一ソースだったが、2026-08-12にixanaryのスキル個別ページ",
-  " (1次/2次候補)と全行一致することを確認し2ソースになった(tools/audit_characters.py --online)。"
- ]
+  " (1次/2次候補)と全行一致することを確認し2ソースになった(tools/audit_characters.py --online)。",
+  "2026-08-16黄丸化検証: rankGrades(A/A/A/S)はno2419_full.pngの4隅バッジを個別ズームして再確認し一致。基礎値・コスト・指揮兵数・成長値はixanary.com(cards/2419)生HTMLで一致確認。",
+  "A枠(戦陣阿吽)のtarget/rateが未確定(null)だったため、ixanary生HTML(skills/戦陣 阿吽)でtarget:全,rate:25%を追加(No.2402森可成の検証時に確認済みの値を転記)。",
+  "B枠のafterSkill表記ゆれ(ixaixa単独記事のみ[S]、他は[SS])は既存notesの通りixawiki.com(BushoCard/2419谷津主水)の合成候補テーブルでも天穿神滅[SS]と確認でき、SS表記が正しいことを再確認した。",
+  "C枠(高津姫神)・S1枠(神屋楯比売命)・S2枠(天焉相克→八重言代主神)はいずれも既にdata/skill/高津姫神.json・神屋楯比売命.json・天焉相克.jsonのsourceCharactersに谷津主水(2419)が正しいslotで登録済みであることを確認した(A-3-11)。",
+  "synthesisTableのA/B/C/S1/S2は、ixanary.com(cards/2419の初期スキル猿面冠者の合成テーブルおよび各候補スキル個別ページ)に加え、ixawiki.com(index.php?BushoCard/2419谷津主水)の合成候補テーブル(1次候補/2次候補S1)を生HTMLで確認し、全5行がixanary/ixawiki2ソースで一致することを確認した。",
+  "章はixanary.com/ixawiki.comいずれのカードページにも記載が無く未確認。"
+ ],
+ "reviewedOk": true
 }

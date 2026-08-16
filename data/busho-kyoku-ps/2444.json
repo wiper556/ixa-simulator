@@ -95,8 +95,8 @@
    "rank": "A",
    "afterSkill": "鬼滅刺",
    "afterRank": "A",
-   "target": null,
-   "rate": null,
+   "target": "全",
+   "rate": "100%",
    "effectShort": "攻撃 55%上昇+防御 55%上昇(自軍全武将全スキルの卓越確率に7%を加算・模倣不可・自軍内重複上限4)",
    "afterTarget": "全",
    "afterRate": "100%",
@@ -119,8 +119,8 @@
    "rank": "A",
    "afterSkill": "古今無双ノ将",
    "afterRank": "A",
-   "target": null,
-   "rate": null,
+   "target": "槍・器・鉄",
+   "rate": "100%",
    "effectShort": "防御 77%上昇(卓越:追加確率20%で防御効果が1.5倍)",
    "afterTarget": "全",
    "afterRate": "37%",
@@ -133,6 +133,12 @@
   " + ixawiki BushoCard/2444(統率2次確認・合成テーブル1次/2次候補)。",
   "統率はカード画像+ixawikiの2ソース一致。初期スキルがSランクのためスキル個別ページの新規作成が必要",
   "(docsのTODOに記録済み)。スキルはS(鍛錬情報なし)のためTR1以降のeffectはnull。",
-  "合成テーブルはixawiki(1次候補+2次候補)"
- ]
+  "合成テーブルはixawiki(1次候補+2次候補)",
+  "2026-08-16黄丸化検証: rankGrades(SS/A/B/A)はno2444_full.pngの4隅バッジを個別ズームして再確認し一致(SSは虹色Xバッジではなく金色の実SS表記であることを確認)。基礎値・コスト・指揮兵数・成長値・LV10スキル値(確率5%)はixanary.com(cards/2444)生HTMLで一致確認。初期スキルSランクのページ(data/skill/三十五ノ兵法.json)は2026-08-12に一括作成済みでS1自己参照も正しく登録済みであることを確認、旧「未作成」の記述を訂正。",
+  "C枠(活人剣)・S2枠(剣聖新陰)はtarget/rateが未確定(null)だったため、ixanary生HTML(skills/活人剣・剣聖新陰)で埋めた(C:全,100%/S2:槍・器・鉄,100%)。",
+  "A・B枠(鬼滅刺)・C枠(活人剣)は既にdata/skill/鬼滅刺.json・活人剣.jsonのsourceCharactersに宮本武蔵(2444)が正しいslotで登録済みであることを確認した(A-3-11)。剣聖新陰・古今無双ノ将はA未満S以外の一般スキルでafterSkillが既存ページを持たないためページ作成対象外(A-3-9)。",
+  "synthesisTableのA/B/C/S1/S2は、ixanary.com(cards/2444の初期スキル三十五ノ兵法の合成テーブルおよび各候補スキル個別ページ)に加え、ixawiki.com(index.php?BushoCard/2444宮本武蔵)の合成候補テーブル(1次候補/2次候補S1)を生HTMLで確認し、全5行がixanary/ixawiki2ソースで一致することを確認した。",
+  "章はixanary.com/ixawiki.comいずれのカードページにも記載が無く未確認。"
+ ],
+ "reviewedOk": true
 }

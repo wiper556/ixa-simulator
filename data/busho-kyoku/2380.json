@@ -123,6 +123,13 @@
   }
  ],
  "notes": [
-  "45do.info+ixagno.blog.fc2.com(blog-entry-10008)確認済み: Aのオプクワは移植後「戦陣 神楽」に、B/Cの闘火将帥は移植後「氷塊三連撃」[SSS]に変化(自己参照ではない)"
- ]
+  "45do.info+ixagno.blog.fc2.com(blog-entry-10008)確認済み: Aのオプクワは移植後「戦陣 神楽」に、B/Cの闘火将帥は移植後「氷塊三連撃」[SSS]に変化(自己参照ではない)",
+  "2026-08-16黄丸化検証(A-1〜A-5): rankGrades(槍A/馬S/弓B/器A)はカード画像の4隅バッジを個別にズームして再確認し、ixawiki.com(BushoCard/2380柿崎景家)の基本ステータス表とも一致。基礎値/成長値/コスト/指揮兵数(★0-0=3970)はixanary.com(cards/2380)生HTMLとixawikiの両方で一致確認。",
+  "synthesisTableはixanary.com(skills/闘火将帥)の合成テーブル(1次/2次/3次)生HTMLと、ixawiki.com(BushoCard/2380柿崎景家)のスキル追加合成テーブルの2ソースで突き合わせ完全一致を確認: A=オプクワ[A]→戦陣神楽[A]、B/C=闘火将帥[A]→氷塊三連撃[SSS]、S1=氷塊三連撃[SSS]自己参照、S2=志半ノ矛楯[A]自己参照。",
+  "sourceCharacters逆引き確認(A-3-11): オプクワ.json(A枠)・氷塊三連撃.json(S1枠)とも既にNo.2380がslot付きで登録済みで一致。B/Cの闘火将帥[A]→氷塊三連撃[SSS]はA-3-9例外規定(afterSkillが既存Sページを持つ元スキル)に該当するため、闘火将帥.jsonを新規作成しsourceCharactersにslot B・Cで登録、氷塊三連撃.jsonのgrantedViaSkillsにも闘火将帥[A]を追加した。志半ノ矛楯はA以下自己参照でファイルが無いのが正しい状態(該当なし)。",
+  "trTable: ixanary生HTML(skills/闘火将帥)でLV10/TR1(588%)/TR2(708%)/TR3(708%、TR2と同値)のみ存在しTR4以降の行自体が無いことを確認。",
+  "categoryLinks(A-2): 無尽/撤退/覇道/不屈/飛翔/兵站/人数依存/卓越/コスト減少の9項目いずれにも該当せず(効果は攻撃上昇+勝利時名声回復)、categoryLinksフィールド自体が無いのが正しい状態。",
+  "章は情報源(ixanary.com/ixawiki.com)に記載が無く未確認のまま(既存も「未確認」表記で変更なし)。"
+ ],
+ "reviewedOk": true
 }
