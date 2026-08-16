@@ -13,6 +13,7 @@ _sys.path.insert(0, _os.path.join(ROOT, "tools", "register"))
        1次候補として載っている枠の2次(武将側の afterSkill)から決める
   S-04 KP_LINKED_SKILLS に足す
   S-06 一覧ページ(skills-*.html)側の sourceCharacters を正本に合わせる
+  S-07 一覧ページに、categoryLinks はあるのに行そのものが無いスキルを足す
 """
 import collections
 import datetime
@@ -296,3 +297,8 @@ def sync_list_pages():
 
 
 sync_list_pages()
+
+# S-07 は S-06 のあと。S-06 が既存行を正本に合わせてから、残った
+# 「行そのものが無い」ぶんを足す(逆にすると足した行をもう一度直すことになる)。
+import listrows                                              # noqa: E402
+listrows.main(write=True)

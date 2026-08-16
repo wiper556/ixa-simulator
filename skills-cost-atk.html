@@ -235,7 +235,52 @@
       sourceCharacters:[
         {name:"巻町操", no:"2606", slot:"C", db:"kyoku"},
         {name:"多羅尾光俊", no:"2841", slot:"B", db:"kyoku"}
-      ]}];
+      ]},
+    {name:"喰代ノ梟忍", skillPage:"skills.html#喰代ノ梟忍", baseRate:"45.0", target:"全",
+      costReduction:"自部隊同時攻撃時この武将分をコストから除外",
+      lv10Effect:"攻撃 70%上昇(自部隊同時攻撃時この武将分をコストから除外・模倣不可・重複不可)",
+      sourceCharacters:[
+        {name:"宍戸梅軒", no:"2806", slot:"A", db:"kyoku"}
+      ]},
+    {name:"国堅大神", skillPage:"skills.html#国堅大神", baseRate:"60", target:"全",
+      costReduction:"-1",
+      lv10Effect:"攻撃 170%上昇+防御 170%上昇(部隊消費コスト-1・模倣不可)",
+      sourceCharacters:[
+        {name:"真田昌幸（3）", no:"1218", slot:"S2"},
+        {name:"前田慶次", no:"1222", slot:"S2"},
+        {name:"武田信虎（2）", no:"1240", slot:"S2"},
+        {name:"相良義陽（3）", no:"1258", slot:"S2"},
+        {name:"お市", no:"2558", slot:"S2", db:"kyoku"},
+        {name:"志々雄真実", no:"2603", slot:"S2", db:"kyoku"},
+        {name:"明神弥彦", no:"2608", slot:"S2", db:"kyoku"},
+        {name:"毛利勝永", no:"2828", slot:"B", db:"kyoku"}
+      ]},
+    {name:"宍戸八重垣流", skillPage:"skills.html#宍戸八重垣流", baseRate:"52.0", target:"槍砲器",
+      costReduction:"-3",
+      lv10Effect:"攻撃 95%上昇(強襲専用部隊配置時コスト消費-3・模倣不可)",
+      sourceCharacters:[
+        {name:"宍戸梅軒", no:"2806", slot:"S1", db:"kyoku"}
+      ]},
+    {name:"氷塊三連撃", skillPage:"skills.html#氷塊三連撃", baseRate:"45", target:"全",
+      costReduction:"コスト最大2除外",
+      lv10Effect:"攻撃 170%上昇(コスト最大2除外・模倣不可・TRなし)",
+      sourceCharacters:[
+        {name:"相良義陽（3）", no:"1258", slot:"S1"},
+        {name:"柿崎景家", no:"2380", slot:"S1", db:"kyoku"},
+        {name:"大宝寺義氏", no:"2455", slot:"S1", db:"kyoku"},
+        {name:"巻町操", no:"2606", slot:"S2", db:"kyoku"},
+        {name:"甲斐親宣", no:"2834", slot:"S2", db:"kyoku"},
+        {name:"高山右近", no:"2836", slot:"S2", db:"kyoku"}
+      ]},
+    {name:"破軍星 皇", skillPage:"skills.html#破軍星 皇", baseRate:"69", target:"全",
+      costReduction:"コスト最大0.5除外",
+      lv10Effect:"攻撃 140%上昇(コスト最大0.5除外、TRなし)",
+      sourceCharacters:[
+        {name:"長尾景虎（2）", no:"1206", slot:"S2"},
+        {name:"真田昌幸（3）", no:"1218", slot:"A"},
+        {name:"飯田覚兵衛", no:"2452", slot:"S2", db:"kyoku"}
+      ]}
+  ];
 
   function csEscapeHtml(s){
     return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));

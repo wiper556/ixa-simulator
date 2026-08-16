@@ -224,7 +224,27 @@
       lv10Effect:"所属部隊の部隊長が持つ模倣可能な初期スキルを通常攻撃/防御効果を1.15倍して模倣する",
       sourceCharacters:[
         {name:"伊賀崎道順", no:"2839", slot:"C", db:"kyoku"}
-      ]}];
+      ]},
+    {name:"国堅大神", skillPage:"skills.html#国堅大神", baseRate:"60", target:"全",
+      costReduction:"-1",
+      lv10Effect:"攻撃 170%上昇+防御 170%上昇(部隊消費コスト-1・模倣不可)",
+      sourceCharacters:[
+        {name:"真田昌幸（3）", no:"1218", slot:"S2"},
+        {name:"前田慶次", no:"1222", slot:"S2"},
+        {name:"武田信虎（2）", no:"1240", slot:"S2"},
+        {name:"相良義陽（3）", no:"1258", slot:"S2"},
+        {name:"お市", no:"2558", slot:"S2", db:"kyoku"},
+        {name:"志々雄真実", no:"2603", slot:"S2", db:"kyoku"},
+        {name:"明神弥彦", no:"2608", slot:"S2", db:"kyoku"},
+        {name:"毛利勝永", no:"2828", slot:"B", db:"kyoku"}
+      ]},
+    {name:"龍神ノ加護", skillPage:"skills.html#龍神ノ加護", baseRate:"46", target:"馬・砲・器",
+      costReduction:"-0.5",
+      lv10Effect:"防御 135%上昇(本丸防御陣形配置時コスト消費-0.5・模倣不可)",
+      sourceCharacters:[
+        {name:"津軽為信", no:"2359", slot:"C", db:"kyoku"}
+      ]}
+  ];
 
   function csEscapeHtml(s){
     return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
