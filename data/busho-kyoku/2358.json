@@ -104,6 +104,13 @@
   }
  ],
  "notes": [
-  "45do.info+ixagno.blog.fc2.com(blog-entry-9417)確認済み: A/Bの転歌は移植後「入来神舞」[S]に、S1/S2の入来神舞は移植後「飛蝶野分」に変化(自己参照ではない)"
- ]
+  "45do.info+ixagno.blog.fc2.com(blog-entry-9417)確認済み: A/Bの転歌は移植後「入来神舞」[S]に、S1/S2の入来神舞は移植後「飛蝶野分」に変化(自己参照ではない)",
+  "2026-08-16黄丸化検証(A-1〜A-5): rankGrades(全A)はカード画像の4隅バッジを個別にズームして再確認し、ixawiki.com(BushoCard/2358今川氏真)の基本ステータス表とも一致。基礎値/成長値/コスト/指揮兵数(★0-0=4300)はixanary.com(cards/2358)生HTMLとixawikiの両方で一致確認。",
+  "synthesisTable全行(A/B=転歌[A]→入来神舞[S]、C=風狂幻術[B]自己参照、S1/S2=入来神舞[S]→飛蝶野分[B])を、No.2358自身の初期スキル(転歌)のixanary.comスキル個別ページの合成テーブル(1次/2次/3次)生HTMLと、ixawiki.com(BushoCard/2358今川氏真)のスキル追加合成テーブルの2ソースで突き合わせ完全一致を確認。",
+  "sourceCharacters逆引き確認(A-3-11): 転歌.json(slot A・B)・風狂幻術.json(slot C)・入来神舞.json(slot S1・S2)いずれも既に今川氏真(2358)が正しく登録済みで一致。",
+  "trTable: ixanary生HTMLにTR1〜6や鍛錬の記載が無く、LV10のみの単段スキルであることを確認。",
+  "categoryLinks(A-2): 部隊長模倣スキルのためskills-leadermimic.htmlへのリンクが既に設定済みで正しい。",
+  "章は情報源(ixanary.com/ixawiki.com)に記載が無く未確認のまま(既存も「未確認」表記で変更なし)。"
+ ],
+ "reviewedOk": true
 }
