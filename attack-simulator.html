@@ -506,7 +506,8 @@
     padding:3px; box-shadow:0 4px 14px rgba(0,0,0,0.28);
   }
   .gen-art-pop.show{display:block;}
-  .gen-art-pop img{display:block; width:224px; height:315px;}
+  /* 元の絵は224x315。邪魔なので2/3にする(うぐさん指示 2026-08-16) */
+  .gen-art-pop img{display:block; width:149px; height:210px;}
   @media (max-width:640px){ .gen-art-pop{display:none !important;} }
 
   .sim-version-badge{
@@ -865,7 +866,7 @@
   // 【必須】attack-simulator.html を変更したコミットでは、必ずこの定数も一緒に更新すること。
   // 表示文言の変更・CSSの微調整であっても対象(ユーザーがスクショで版を判別できなくなるため)。
   // 更新忘れが繰り返し発生しているので、編集したらコミット前にここを見に来る。
-  const SIMULATOR_VERSION = 'v2026-08-16.11';
+  const SIMULATOR_VERSION = 'v2026-08-16.12';
   document.addEventListener('DOMContentLoaded', ()=>{
     const badge = document.getElementById('simVersionBadge');
     if(badge) badge.textContent = SIMULATOR_VERSION;
@@ -5023,6 +5024,10 @@
   // 失敗した番号は覚えておいて二度は取りにいかない。
   let genArtPop = null;
   const genArtMissing = new Set();
+  // **いま <img> に入っている番号は4欄で1つ。** ここを欄ごとに覚えていたせいで、
+  // 別の欄にカーソルを移したとき前の欄の絵がそのまま出ていた(2026-08-16 うぐさん報告)。
+  let genArtNo = null;
+  let genArtPos = {x: 0, y: 0};
 
   function ensureGenArtPop(){
     if(genArtPop) return genArtPop;
@@ -5039,38 +5044,50 @@
 
   // カーソルの右下に出す。画面からはみ出すときは左/上へ回す。
   function placeGenArt(ev){
+    if(ev){ genArtPos = {x: ev.clientX, y: ev.clientY}; }
     if(!genArtPop || !genArtPop.classList.contains('show')) return;
-    const W = 232, H = 323, pad = 14;
-    let x = ev.clientX + pad;
-    let y = ev.clientY + pad;
-    if(x + W > window.innerWidth) x = ev.clientX - W - pad;
+    const W = 157, H = 218, pad = 14;
+    let x = genArtPos.x + pad;
+    let y = genArtPos.y + pad;
+    if(x + W > window.innerWidth) x = genArtPos.x - W - pad;
     if(y + H > window.innerHeight) y = Math.max(4, window.innerHeight - H - 4);
     genArtPop.style.left = Math.max(4, x) + 'px';
     genArtPop.style.top = y + 'px';
   }
 
+  function showGenArtFor(input, ev){
+    const entry = findGeneralEntry(input.value);
+    const no = entry ? String(entry.no) : '';
+    if(!no || genArtMissing.has(no)){ hideGenArt(); return; }
+    const pop = ensureGenArtPop();
+    const img = pop.querySelector('img');
+    if(ev) genArtPos = {x: ev.clientX, y: ev.clientY};
+    if(genArtNo === no){
+      if(img.complete && img.naturalWidth){ pop.classList.add('show'); placeGenArt(); }
+      return;
+    }
+    // 別の武将に変わるあいだ、前の絵を出したままにしない
+    genArtNo = no;
+    pop.classList.remove('show');
+    img.onload = () => {
+      if(genArtNo !== no) return;   // 読み込み中にカーソルが移っていたら捨てる
+      pop.classList.add('show');
+      placeGenArt();
+    };
+    img.onerror = () => {
+      genArtMissing.add(no);
+      if(genArtNo === no) hideGenArt();
+    };
+    img.src = 'assets/img/characters/no' + no + '_char.png';
+  }
+
   function attachGeneralArtHover(input){
     if(!input) return;
-    let shownNo = null;
-    input.addEventListener('mouseenter', ev => {
-      const entry = findGeneralEntry(input.value);
-      const no = entry ? String(entry.no) : '';
-      if(!no || genArtMissing.has(no)){ hideGenArt(); return; }
-      const pop = ensureGenArtPop();
-      const img = pop.querySelector('img');
-      if(shownNo !== no){
-        shownNo = no;
-        img.onerror = () => { genArtMissing.add(no); hideGenArt(); };
-        img.onload = () => { pop.classList.add('show'); placeGenArt(ev); };
-        img.src = 'assets/img/characters/no' + no + '_char.png';
-      }
-      if(img.complete && img.naturalWidth){ pop.classList.add('show'); }
-      placeGenArt(ev);
-    });
+    input.addEventListener('mouseenter', ev => showGenArtFor(input, ev));
     input.addEventListener('mousemove', placeGenArt);
     input.addEventListener('mouseleave', hideGenArt);
     // 入力中や選び直しの最中に古い絵が残らないようにする
-    input.addEventListener('input', () => { shownNo = null; hideGenArt(); });
+    input.addEventListener('input', hideGenArt);
     input.addEventListener('blur', hideGenArt);
   }
 
