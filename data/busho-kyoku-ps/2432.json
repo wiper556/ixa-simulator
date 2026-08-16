@@ -70,11 +70,14 @@
    "afterSkill": "神光征軍",
    "afterRank": "SS",
    "target": "全",
-   "rate": "30%/100%",
-   "effectShort": "攻撃 50%上昇(確率30%)+速度 50%上昇(確率100%)",
+   "rate": "50%/100%",
+   "effectShort": "攻撃 50%上昇(確率50%)+速度 50%上昇(確率100%)",
    "afterTarget": "全",
    "afterRate": "100%",
-   "afterEffectShort": "攻撃 90%上昇+速度 200%上昇(TRなし)"
+   "afterEffectShort": "攻撃 90%上昇+速度 200%上昇(TRなし)",
+   "note": [
+    "2026-08-16: **LV1の確率にLV10の効果を組み合わせていた。** ixanary.com/skills/戦陣 一閃 はLV1=攻撃30%上昇/確率+30%、LV10=攻撃50%上昇/確率+50%。この行はeffectShortが「攻撃 50%上昇(確率30%)」でLV10の効果とLV1の確率が混ざっていた。No.2403の同スキル行は50%/100%"
+   ]
   },
   {
    "slot": "B",

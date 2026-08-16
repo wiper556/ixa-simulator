@@ -49,3 +49,4 @@
 2026-08-16	-1	hooks:tools/audit_characters.py	audit_characters.py に検査を1つ足した(緩めるのではなく増やす)。sourceCharacters の slot が武将の synthesisTable の実枠と一致しているかを見る。No.1279 荒木村重（2）の魔導禁鎖が A・B 枠に載っているのにスキル側は「移植不可」だった(ユーザー指摘)。全件で26件あり、うち5件は移植不可なのに実は移植できるという、使い方を間違えさせる誤りだった。逆引きの有無しか見ていなかったので今まで通っていた
 2026-08-16	-1	hooks:tools/audit_selftest.py	audit_selftest.py: 新しく足した検査「slotが実枠と違う」の筋書きを追加。検査を1つ増やしたぶん未カバーが上限を超えていたので、上限を緩めるのではなく筋書きのほうを書いた
 2026-08-16	-1	hooks:tools/build_data.py	攻撃/防御シミュレーターの武将候補を絞り込むため、data/busho の troop から generalSkillAxis を書き出す処理を build_data.py に足した(検査を緩める変更ではなく生成物を1つ増やしただけ)
+2026-08-16	-1	hooks:tools/audit_characters.py	監査に「同じスキルなのに武将により発動確率が違う」検査を追加(検査を増やす変更)。No.2402の再調査から横断で4件の食い違いが見つかり、うち1件はLV1の確率にLV10の効果を組み合わせていた

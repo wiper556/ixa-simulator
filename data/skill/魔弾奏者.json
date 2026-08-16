@@ -37,11 +37,12 @@
  ],
  "ownHiddenCandidate": {
   "skill": "星神闘覇",
-  "rank": "SSS"
+  "rank": "SS"
  },
  "notes": [
   "No.1256(宇喜多直家(3))の初期スキル(S、自身のsynthesisTable A・B枠で自己参照)。45do.info生HTML(ordinary/0207)+ixanary.com(skills/魔弾奏者)で2ソース確認、TRなし(LV10のみ)",
-  "2026-08-13: A-3-12の逆方向リンク。武将のsynthesisTableでは1次がこのスキルに変化するのに、こちら側から元スキルを指していなかった。1次→2次の組100件を元スキルのownHiddenCandidateと突き合わせ、矛盾0件を確かめたうえで機械的に張った。"
+  "2026-08-13: A-3-12の逆方向リンク。武将のsynthesisTableでは1次がこのスキルに変化するのに、こちら側から元スキルを指していなかった。1次→2次の組100件を元スキルのownHiddenCandidateと突き合わせ、矛盾0件を確かめたうえで機械的に張った。",
+  "2026-08-16(No.7403黄丸化の過程で修正): ownHiddenCandidateのrankがSSSのまま残っていた。2026-08-13に星神闘覇のランクはユーザーのゲーム内確認でSSに決着し、サイト内のSSS13箇所をSSに揃えた際の取りこぼし。魔弾奏者を持つ武将(No.1256・No.2606・No.7403)のsynthesisTableはいずれもafterRank=SSなのでSSに直した。"
  ],
  "trTable": [
   {

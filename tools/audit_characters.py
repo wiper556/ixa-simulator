@@ -374,6 +374,27 @@ def main():
             add("afterSkill不一致", "HIGH", "「%s」が武将により別スキルに化けている: %s" %
                 (sk_, " / ".join("→%s(%s)" % (a, ", ".join(where[(sk_, a)])) for a in sorted(afs))))
 
+    # 同じスキルが武将により別の発動確率になっていないか。
+    # 2026-08-16: ixaixa.com由来の再調査で No.2402 森可成の覇王ノ守人が
+    # 50%→57% と分かり、同じスキルを持つ他の武将を横断で見たら同種の
+    # 食い違いが計4件あった。うち No.2432 は **LV1の確率にLV10の効果を
+    # 組み合わせていた**(戦陣 一閃 30%/100% ← 正しくは 50%/100%)。
+    # 1体ずつ見ていては気づけない類なので、横断で鳴らす。
+    rates, rwhere = collections.defaultdict(set), collections.defaultdict(list)
+    for g, src in targets:
+        for row in g.get("synthesisTable") or []:
+            sk_, rt = row.get("skill"), row.get("rate")
+            if sk_ and rt:
+                rates[sk_].add(rt)
+                rwhere[(sk_, rt)].append("%s No.%s %s枠"
+                                         % (g["name"], g["no"], row.get("slot")))
+    for sk_, rs in sorted(rates.items()):
+        if len(rs) > 1:
+            add("確率が武将により違う", "HIGH",
+                "「%s」の発動確率が武将によって違う: %s" %
+                (sk_, " / ".join("%s(%s)" % (r, ", ".join(rwhere[(sk_, r)]))
+                                 for r in sorted(rs))))
+
     # ownHiddenCandidate は武将側 afterSkill から導出できるはず
     for s in D["skills"]:
         exp = mapping.get(s["name"])
