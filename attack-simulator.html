@@ -498,6 +498,17 @@
   .general-suggest-item:hover, .general-suggest-item.active{background:#efe8d6;color:var(--gold-bright);}
   .general-suggest-item .no{color:var(--muted);font-size:11px;margin-left:6px;}
 
+  /* 武将名にマウスを乗せたときに出るカード画像。
+     画像が無い武将のほうが多いので、読み込めたときだけ出す(下のJS参照)。 */
+  .gen-art-pop{
+    position:fixed; z-index:60; pointer-events:none; display:none;
+    background:#ffffff; border:1px solid var(--gold); border-radius:4px;
+    padding:3px; box-shadow:0 4px 14px rgba(0,0,0,0.28);
+  }
+  .gen-art-pop.show{display:block;}
+  .gen-art-pop img{display:block; width:224px; height:315px;}
+  @media (max-width:640px){ .gen-art-pop{display:none !important;} }
+
   .sim-version-badge{
     position:fixed; bottom:6px; right:8px; z-index:9999;
     font-family:'JetBrains Mono',monospace; font-size:10px; color:#9a9382;
@@ -854,7 +865,7 @@
   // 【必須】attack-simulator.html を変更したコミットでは、必ずこの定数も一緒に更新すること。
   // 表示文言の変更・CSSの微調整であっても対象(ユーザーがスクショで版を判別できなくなるため)。
   // 更新忘れが繰り返し発生しているので、編集したらコミット前にここを見に来る。
-  const SIMULATOR_VERSION = 'v2026-08-16.10';
+  const SIMULATOR_VERSION = 'v2026-08-16.11';
   document.addEventListener('DOMContentLoaded', ()=>{
     const badge = document.getElementById('simVersionBadge');
     if(badge) badge.textContent = SIMULATOR_VERSION;
@@ -5006,11 +5017,69 @@
     return generalSuggestions.find(s => s.no === q && generalFitsMode(s));
   }
 
+  // ---- 武将名にマウスを乗せるとカード画像を出す ----
+  // 画像は assets/img/characters/no{No}_char.png(224x315)。**全員ぶんは無い**ので、
+  // 有無の一覧を持たずに読み込んでみて、成功したときだけ出す。
+  // 失敗した番号は覚えておいて二度は取りにいかない。
+  let genArtPop = null;
+  const genArtMissing = new Set();
+
+  function ensureGenArtPop(){
+    if(genArtPop) return genArtPop;
+    genArtPop = document.createElement('div');
+    genArtPop.className = 'gen-art-pop';
+    genArtPop.innerHTML = '<img alt="">';
+    document.body.appendChild(genArtPop);
+    return genArtPop;
+  }
+
+  function hideGenArt(){
+    if(genArtPop) genArtPop.classList.remove('show');
+  }
+
+  // カーソルの右下に出す。画面からはみ出すときは左/上へ回す。
+  function placeGenArt(ev){
+    if(!genArtPop || !genArtPop.classList.contains('show')) return;
+    const W = 232, H = 323, pad = 14;
+    let x = ev.clientX + pad;
+    let y = ev.clientY + pad;
+    if(x + W > window.innerWidth) x = ev.clientX - W - pad;
+    if(y + H > window.innerHeight) y = Math.max(4, window.innerHeight - H - 4);
+    genArtPop.style.left = Math.max(4, x) + 'px';
+    genArtPop.style.top = y + 'px';
+  }
+
+  function attachGeneralArtHover(input){
+    if(!input) return;
+    let shownNo = null;
+    input.addEventListener('mouseenter', ev => {
+      const entry = findGeneralEntry(input.value);
+      const no = entry ? String(entry.no) : '';
+      if(!no || genArtMissing.has(no)){ hideGenArt(); return; }
+      const pop = ensureGenArtPop();
+      const img = pop.querySelector('img');
+      if(shownNo !== no){
+        shownNo = no;
+        img.onerror = () => { genArtMissing.add(no); hideGenArt(); };
+        img.onload = () => { pop.classList.add('show'); placeGenArt(ev); };
+        img.src = 'assets/img/characters/no' + no + '_char.png';
+      }
+      if(img.complete && img.naturalWidth){ pop.classList.add('show'); }
+      placeGenArt(ev);
+    });
+    input.addEventListener('mousemove', placeGenArt);
+    input.addEventListener('mouseleave', hideGenArt);
+    // 入力中や選び直しの最中に古い絵が残らないようにする
+    input.addEventListener('input', () => { shownNo = null; hideGenArt(); });
+    input.addEventListener('blur', hideGenArt);
+  }
+
   function attachGeneralAutocomplete(col){
     const id = cellId('general', col);
     const input = $(id);
     const box = $('suggest_' + id);
     if(!input || !box) return;
+    attachGeneralArtHover(input);
 
     function hide(){ box.classList.remove('show'); box.innerHTML = ''; }
 
