@@ -265,6 +265,14 @@
   // (以前はsourceCharacters全件がS2の場合にスキル行ごと非表示にしていたが、ユーザー指摘によりスキルは表示したまま武将名のみ隠す仕様に統一)
   let mjHideS2 = false;
 
+  // パラレルは元カード(番号-30000)と同じ武将の別バージョンで、名前も同じ。
+  // 素材の一覧に両方出すと同じ名前が2行続いて読みにくいので、元カードだけ出す
+  // (2026-08-16 うぐさん指摘)。**正本には残してある**(素材に使えるのは事実)。
+  function mjIsParallelNo(no){
+    const s = String(no == null ? '' : no);
+    return s.length === 5 && (s.charAt(0) === '3' || s.charAt(0) === '4');
+  }
+
   function mjIsS2Slot(slot){
     return String(slot||'').split('・').some(function(t){ return t.trim().indexOf('S2') === 0; });
   }
@@ -292,7 +300,8 @@
       return;
     }
     el.innerHTML = list.map(function(s){
-      const visibleSources = mjHideS2 ? (s.sourceCharacters || []).filter(function(c){ return !mjIsS2Slot(c.slot); }) : (s.sourceCharacters || []);
+      const visibleSourcesNoPara = ((s.sourceCharacters || [])).filter(function(c){ return !mjIsParallelNo(c.no); });
+      const visibleSources = mjHideS2 ? visibleSourcesNoPara.filter(function(c){ return !mjIsS2Slot(c.slot); }) : visibleSourcesNoPara;
       const allNoTrans = visibleSources.length > 0
         && visibleSources.every(function(c){
              return String(c.slot || '').indexOf('移植不可') >= 0;

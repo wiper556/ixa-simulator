@@ -4069,6 +4069,14 @@
   // S2(同一カードを2枚合成する専用枠)を非表示にするグローバルトグル。ページ全体で1つの設定を共有する。
   let sklHideS2 = false;
 
+  // パラレルは元カード(番号-30000)と同じ武将の別バージョンで、名前も同じ。
+  // 素材の一覧に両方出すと同じ名前が2行続いて読みにくいので、元カードだけ出す
+  // (2026-08-16 うぐさん指摘)。**正本には残してある**(素材に使えるのは事実)。
+  function sklIsParallelNo(no){
+    const s = String(no == null ? '' : no);
+    return s.length === 5 && (s.charAt(0) === '3' || s.charAt(0) === '4');
+  }
+
   function sklIsS2Slot(slot){
     return String(slot||'').split('・').some(function(t){ return t.trim().indexOf('S2') === 0; });
   }
@@ -4232,7 +4240,8 @@
         '<div class="skl-detail-block"><h2 class="skl-heading-with-toggle">入手可能な武将(合成素材)'
         + '<label class="skl-toggle"><input type="checkbox" id="sklHideS2">S2(同一カード2枚合成)を非表示</label></h2>'
         + (function(){
-            const filteredSources = sklHideS2 ? s.sourceCharacters.filter(function(c){ return !sklIsS2Slot(c.slot); }) : s.sourceCharacters;
+            const filteredSourcesNoPara = (s.sourceCharacters).filter(function(c){ return !sklIsParallelNo(c.no); });
+            const filteredSources = sklHideS2 ? filteredSourcesNoPara.filter(function(c){ return !sklIsS2Slot(c.slot); }) : filteredSourcesNoPara;
             if(filteredSources.length === 0){
               return '<div class="skl-effect-text" style="color:var(--muted);">S2以外の入手経路はありません</div>';
             }
