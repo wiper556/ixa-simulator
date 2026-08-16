@@ -395,6 +395,35 @@ def main():
                 (sk_, " / ".join("%s(%s)" % (r, ", ".join(rwhere[(sk_, r)]))
                                  for r in sorted(rs))))
 
+    # 同じレアリティの中に完全同名の武将がいないか。
+    # 2026-08-16: 武将名の（N）は**レアリティごとの通し番号**だと分かった
+    # (うぐさんがゲーム内で確認。天の1166 織田信長（4）【覇】と極の2595
+    # 織田信長（4）は別レアリティなので両立する)。
+    # したがって「天と極に同名」は正常だが、「同じレアリティに完全同名」は
+    # 片方に番号が要る、という判定になる。
+    # ixawiki の一覧はレアリティごと**かつ覇/非覇で別カウンタ**に振っており、
+    # ゲーム内の番号とは別物なので根拠にできない。ここで鳴らして人に聞く。
+    def _rarity(no):
+        n = str(no or "")
+        if len(n) == 5 and n[:2] in ("20", "21", "22"):
+            return "傑"
+        if len(n) == 4 and n[0] == "3":
+            return "特"
+        if len(n) == 4 and n[0] in "27":
+            return "極"
+        return "天"
+
+    same = collections.defaultdict(list)
+    for g, src in targets:
+        if g.get("name") and g.get("no") is not None:
+            same[(_rarity(g["no"]), g["name"])].append(str(g["no"]))
+    for (rar, nm), nos in sorted(same.items()):
+        if len(nos) > 1:
+            add("同じレアリティに同名", "MID",
+                "%s の「%s」が %d枚ある(No.%s)。どれかに（N）が要る。"
+                "番号はゲーム内でしか分からないのでユーザーに聞くこと"
+                % (rar, nm, len(nos), "、".join(sorted(nos))))
+
     # ownHiddenCandidate は武将側 afterSkill から導出できるはず
     for s in D["skills"]:
         exp = mapping.get(s["name"])
