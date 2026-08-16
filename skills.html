@@ -3402,6 +3402,8 @@
       sklFetchArrayFromHtml('characters.html', 'generals').catch(function(){ return []; }),
       sklFetchArrayFromHtml('characters-kyoku.html', 'kyokuGenerals').catch(function(){ return []; }),
       sklFetchArrayFromHtml('characters-kyoku-ps.html', 'kyokuPsGenerals').catch(function(){ return []; }),
+      sklFetchArrayFromHtml('characters-parallel.html', 'parallelGenerals').catch(function(){ return []; }),
+      sklFetchArrayFromHtml('characters-toku-s.html', 'tokuSecretGenerals').catch(function(){ return []; }),
       sklFetchArrayFromHtml('characters-ketsu.html', 'ketsuGenerals').catch(function(){ return []; })
     ]).then(function(results){
       // 極は通常極とプラチナ/シークレット極でページが分かれているが、リンクは

@@ -196,6 +196,8 @@ def load():
     for page, array in (("characters.html", "generals"),
                         ("characters-kyoku.html", "kyokuGenerals"),
                         ("characters-kyoku-ps.html", "kyokuPsGenerals"),
+                        ("characters-parallel.html", "parallelGenerals"),
+                        ("characters-toku-s.html", "tokuSecretGenerals"),
                         # 傑は少数だが sourceCharacters の db 判定(S-07)に要る
                         ("characters-ketsu.html", "ketsuGenerals"),
                         ("skills.html", "skills")):

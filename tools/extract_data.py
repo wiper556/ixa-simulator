@@ -48,6 +48,8 @@ TARGETS = [
     # 分け方はカードNo.の100の位(build_data.kyoku_type)。番号で決まるので
     # 置き場所も固定でよく、道具側は今までどおり1ページ=1フォルダで扱える。
     ("characters-kyoku-ps.html", "kyokuPsGenerals", "data/busho-kyoku-ps", "no"),
+    ("characters-parallel.html", "parallelGenerals", "data/busho-parallel", "no"),
+    ("characters-toku-s.html", "tokuSecretGenerals", "data/busho-toku-s", "no"),
     ("characters-ketsu.html", "ketsuGenerals", "data/busho-ketsu", "no"),
     ("skills.html", "skills", "data/skill", "name"),
 ]

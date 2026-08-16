@@ -48,6 +48,16 @@ TARGETS = {
         "list_js": "() => { kpRenderList(kpSortByChapterThenNo(kyokuPsGenerals.slice())); "
                    "return document.getElementById('kpList').innerHTML; }",
     },
+    "characters-parallel.html": {
+        "container": "tpList",
+        "list_js": "() => { tpRenderList(tpSortByChapterThenNo(parallelGenerals.slice())); "
+                   "return document.getElementById('tpList').innerHTML; }",
+    },
+    "characters-toku-s.html": {
+        "container": "tsList",
+        "list_js": "() => { tsRenderList(tsSortByChapterThenNo(tokuSecretGenerals.slice())); "
+                   "return document.getElementById('tsList').innerHTML; }",
+    },
 }
 
 # スキル一覧系は「ページを開くとJSがtbodyを埋める」だけの単純な構造なので、

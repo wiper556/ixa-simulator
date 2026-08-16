@@ -154,6 +154,8 @@ for no in NOS:
 # 武将がどのDBに居るかで書き込む配列を選ぶ。
 LINKED_OF_DIR = {
     "busho-kyoku-ps": ("characters-kyoku-ps.html", "KP_LINKED_SKILLS"),
+    "busho-parallel": ("characters-parallel.html", "TP_LINKED_SKILLS"),
+    "busho-toku-s": ("characters-toku-s.html", "TS_LINKED_SKILLS"),
     "busho-kyoku": ("characters-kyoku.html", "KK_LINKED_SKILLS"),
     "busho": ("characters.html", "LINKED_SKILLS"),
 }
