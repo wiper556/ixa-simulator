@@ -25,73 +25,73 @@
 
   body{background:#ffffff;}
 
-  .kp-search{margin-bottom:14px;}
-  .kp-search input{
+  .ts-search{margin-bottom:14px;}
+  .ts-search input{
     width:100%;font-family:'Zen Kaku Gothic New',sans-serif;font-size:15px;padding:11px 14px;
     background:#fff;border:1px solid var(--line);color:var(--paper);border-radius:5px;
   }
-  .kp-search input:focus{outline:none;border-color:var(--gold);}
+  .ts-search input:focus{outline:none;border-color:var(--gold);}
 
-  .kp-list-table{width:100%;border-collapse:collapse;font-size:12.5px;}
-  .kp-list-table th,.kp-list-table td{border:1px solid var(--line);padding:8px 10px;text-align:center;vertical-align:middle;white-space:nowrap;}
-  .kp-list-table th{background:var(--bg-panel-2);color:var(--muted);font-weight:700;}
-  .kp-list-table tr:hover td{background:var(--bg-panel-2);}
-  .kp-list-table td.kp-col-name{text-align:left;}
-  .kp-list-table td.kp-col-name a{font-family:'Noto Serif JP',serif;font-weight:700;color:var(--paper);text-decoration:none;}
-  .kp-list-table td.kp-col-name a:hover{color:var(--vermillion-bright);}
-  .kp-list-table td.kp-col-effect{text-align:left;white-space:normal;min-width:260px;color:var(--muted);line-height:1.6;}
+  .ts-list-table{width:100%;border-collapse:collapse;font-size:12.5px;}
+  .ts-list-table th,.ts-list-table td{border:1px solid var(--line);padding:8px 10px;text-align:center;vertical-align:middle;white-space:nowrap;}
+  .ts-list-table th{background:var(--bg-panel-2);color:var(--muted);font-weight:700;}
+  .ts-list-table tr:hover td{background:var(--bg-panel-2);}
+  .ts-list-table td.ts-col-name{text-align:left;}
+  .ts-list-table td.ts-col-name a{font-family:'Noto Serif JP',serif;font-weight:700;color:var(--paper);text-decoration:none;}
+  .ts-list-table td.ts-col-name a:hover{color:var(--vermillion-bright);}
+  .ts-list-table td.ts-col-effect{text-align:left;white-space:normal;min-width:260px;color:var(--muted);line-height:1.6;}
 
-  .kp-atkdef-badge{display:inline-block;font-size:11px;font-weight:700;border-radius:4px;padding:2px 8px;white-space:nowrap;}
-  .kp-atkdef-badge.atk{background:rgba(184,64,47,0.12);color:var(--vermillion-bright);}
-  .kp-atkdef-badge.def{background:rgba(46,125,50,0.12);color:#2e7d32;}
-  .kp-atkdef-badge.both{background:rgba(169,124,10,0.15);color:var(--gold-bright);}
-  .kp-atkdef-badge.other{background:rgba(107,114,128,0.12);color:var(--muted);}
+  .ts-atkdef-badge{display:inline-block;font-size:11px;font-weight:700;border-radius:4px;padding:2px 8px;white-space:nowrap;}
+  .ts-atkdef-badge.atk{background:rgba(184,64,47,0.12);color:var(--vermillion-bright);}
+  .ts-atkdef-badge.def{background:rgba(46,125,50,0.12);color:#2e7d32;}
+  .ts-atkdef-badge.both{background:rgba(169,124,10,0.15);color:var(--gold-bright);}
+  .ts-atkdef-badge.other{background:rgba(107,114,128,0.12);color:var(--muted);}
 
-  .kp-branch-badge{
+  .ts-branch-badge{
     display:inline-flex;align-items:center;justify-content:center;width:18px;height:18px;
     font-size:10.5px;font-weight:700;border-radius:3px;background:var(--bg-panel-2);
     border:1px solid var(--line);color:var(--paper);margin:1px;
   }
-  .kp-branch-fallback{font-size:11px;color:var(--muted);white-space:normal;}
+  .ts-branch-fallback{font-size:11px;color:var(--muted);white-space:normal;}
 
-  .kp-subtag{font-size:10px;background:rgba(0,172,193,0.12);color:#00838f;border-radius:10px;padding:1px 7px;font-weight:700;display:inline-block;margin:1px;white-space:nowrap;}
+  .ts-subtag{font-size:10px;background:rgba(0,172,193,0.12);color:#00838f;border-radius:10px;padding:1px 7px;font-weight:700;display:inline-block;margin:1px;white-space:nowrap;}
 
-  .kp-no-result{color:var(--muted);font-size:12px;padding:14px;text-align:center;}
+  .ts-no-result{color:var(--muted);font-size:12px;padding:14px;text-align:center;}
 
-  .kp-detail-head{display:flex;gap:20px;flex-wrap:wrap;margin-bottom:20px;}
-  .kp-detail-img{max-width:100%;width:460px;border-radius:8px;border:1px solid var(--line);}
-  .kp-detail-img-placeholder{
+  .ts-detail-head{display:flex;gap:20px;flex-wrap:wrap;margin-bottom:20px;}
+  .ts-detail-img{max-width:100%;width:460px;border-radius:8px;border:1px solid var(--line);}
+  .ts-detail-img-placeholder{
     width:460px;max-width:100%;height:220px;border-radius:8px;border:1px dashed var(--line);
     display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:13px;
   }
-  .kp-detail-title{font-family:'Noto Serif JP',serif;font-weight:900;font-size:22px;color:var(--paper);}
-  .kp-detail-furigana{font-size:12px;color:var(--muted);margin-left:8px;font-weight:400;}
-  .kp-detail-meta{font-size:13px;color:var(--muted);margin:6px 0 14px;}
+  .ts-detail-title{font-family:'Noto Serif JP',serif;font-weight:900;font-size:22px;color:var(--paper);}
+  .ts-detail-furigana{font-size:12px;color:var(--muted);margin-left:8px;font-weight:400;}
+  .ts-detail-meta{font-size:13px;color:var(--muted);margin:6px 0 14px;}
 
-  .kp-detail-block{margin-bottom:20px;}
-  .kp-detail-block h2{font-family:'Noto Serif JP',serif;font-size:15px;margin:0 0 8px;color:var(--vermillion-bright);border-bottom:1px dashed var(--line);padding-bottom:6px;}
-  .kp-table-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;}
-  .kp-stat-table{width:100%;border-collapse:collapse;font-size:13px;}
-  .kp-stat-table th,.kp-stat-table td{border:1px solid var(--line);padding:8px 10px;text-align:center;white-space:nowrap;}
-  .kp-stat-table th{background:var(--bg-panel-2);color:var(--muted);font-weight:700;}
-  .kp-stat-table td[style*="text-align:left"]{white-space:normal;min-width:220px;}
-  .kp-col-narrow{width:64px;}
-  .kp-synth-cell{display:flex;align-items:center;gap:10px;text-align:left;}
-  .kp-synth-cell .kp-synth-name{flex-shrink:0;}
-  .kp-synth-desc{
+  .ts-detail-block{margin-bottom:20px;}
+  .ts-detail-block h2{font-family:'Noto Serif JP',serif;font-size:15px;margin:0 0 8px;color:var(--vermillion-bright);border-bottom:1px dashed var(--line);padding-bottom:6px;}
+  .ts-table-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;}
+  .ts-stat-table{width:100%;border-collapse:collapse;font-size:13px;}
+  .ts-stat-table th,.ts-stat-table td{border:1px solid var(--line);padding:8px 10px;text-align:center;white-space:nowrap;}
+  .ts-stat-table th{background:var(--bg-panel-2);color:var(--muted);font-weight:700;}
+  .ts-stat-table td[style*="text-align:left"]{white-space:normal;min-width:220px;}
+  .ts-col-narrow{width:64px;}
+  .ts-synth-cell{display:flex;align-items:center;gap:10px;text-align:left;}
+  .ts-synth-cell .ts-synth-name{flex-shrink:0;}
+  .ts-synth-desc{
     width:150px;height:32px;flex-shrink:0;
     font-size:11px;color:var(--muted);line-height:1.4;white-space:normal;text-align:left;
     overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;
   }
 
   @media (max-width:600px){
-    .kp-stat-table{font-size:12px;}
-    .kp-stat-table th,.kp-stat-table td{padding:6px 8px;}
+    .ts-stat-table{font-size:12px;}
+    .ts-stat-table th,.ts-stat-table td{padding:6px 8px;}
   }
-  .kp-skill-name{font-family:'Noto Serif JP',serif;font-weight:700;font-size:15px;color:var(--gold-bright);margin-bottom:6px;}
-  .kp-skill-detail{font-size:13.5px;line-height:1.8;}
-  .kp-illust-credit{font-size:12px;color:var(--muted);text-align:right;}
-  .kp-no-detail{color:var(--muted);font-size:13px;padding:20px;text-align:center;border:1px dashed var(--line);border-radius:8px;}
+  .ts-skill-name{font-family:'Noto Serif JP',serif;font-weight:700;font-size:15px;color:var(--gold-bright);margin-bottom:6px;}
+  .ts-skill-detail{font-size:13.5px;line-height:1.8;}
+  .ts-illust-credit{font-size:12px;color:var(--muted);text-align:right;}
+  .ts-no-detail{color:var(--muted);font-size:13px;padding:20px;text-align:center;border:1px dashed var(--line);border-radius:8px;}
 
   .sim-version-badge{
     position:fixed; bottom:6px; right:8px; z-index:9999;
@@ -133,7 +133,7 @@
   <main class="site-main">
     <p class="article-meta"><a href="../index.html">ホーム</a> ／ <a href="../characters-hub.html">武将データベース</a> ／ <a href="../characters-toku-s.html">特シークレット武将一覧</a> ／ 陽泰院</p>
     <h1 class="page-title">陽泰院 <span style="font-size:.6em;color:var(--muted);">No.3726</span></h1>
-<div class="kp-detail-head"><img class="kp-detail-img" src="../assets/img/characters/no3726_full.png" alt="陽泰院"><div><h1 class="kp-detail-title">陽泰院<span class="kp-detail-furigana">ようたいいん</span></h1><p class="kp-detail-meta">No.3726 ／ コスト3 ／ 指揮兵数2650</p><div class="kp-detail-block"><h2>ステータス</h2><div class="kp-table-scroll"><table class="kp-stat-table"><thead><tr><th>攻撃</th><th>防御</th><th>兵法</th></tr></thead><tbody><tr><td>750 (+18)</td><td>820 (+20)</td><td>520 (+3)</td></tr></tbody></table></div></div><div class="kp-detail-block"><h2>統率</h2><div class="kp-table-scroll"><table class="kp-stat-table"><tbody><tr><td>槍: A</td><td>弓: B</td><td>馬: S</td><td>器: A</td></tr></tbody></table></div></div></div></div><div class="kp-detail-block"><h2>スキル</h2><div class="kp-skill-name">嫐討ち返し</div><div class="kp-skill-detail">C/LV10 確率 100% 相手総攻撃力の25%を総防御力に加算/対象:全<br>模倣不可・重複不可<br>①攻撃部隊が2部隊の場合のみ発動する<br>②相手の総攻撃力の25%を自軍の総防御力に加算する</div></div><div class="kp-detail-block"><h2>鍛錬レベル別性能</h2><div class="kp-table-scroll"><table class="kp-stat-table"><thead><tr><th>レベル</th><th class="kp-col-narrow">必要ポイント</th><th>効果</th></tr></thead><tbody><tr><td>LV10</td><td class="kp-col-narrow">-</td><td style="text-align:left;">全　確率 100% / 攻撃部隊が2部隊の場合のみ相手総攻撃力の25%を総防御力に加算(模倣不可・重複不可)</td></tr></tbody></table></div></div><div class="kp-detail-block"><h2>合成素材にした場合の候補スキル</h2><div class="kp-table-scroll"><table class="kp-stat-table"><thead><tr><th>候補</th><th>初期スキル</th><th>移植後合成候補</th></tr></thead><tbody><tr><td>A</td><td><div class="kp-synth-cell"><span class="kp-synth-name">騎馬隊堅陣 F</span><div class="kp-synth-desc">対象:馬 確率30% 馬防 12%上昇</div></div></td><td><div class="kp-synth-cell"><span class="kp-synth-name">騎馬隊奇襲 E</span><div class="kp-synth-desc">対象:馬 確率30% 馬攻 12%上昇</div></div></td></tr><tr><td>B</td><td><div class="kp-synth-cell"><span class="kp-synth-name">鉄壁の備え D</span><div class="kp-synth-desc">対象:全 確率40% 防御 15%上昇</div></div></td><td><div class="kp-synth-cell"><span class="kp-synth-name">城崩し D</span><div class="kp-synth-desc">対象:器 確率35% 破壊 20%上昇</div></div></td></tr><tr><td>C</td><td><div class="kp-synth-cell"><span class="kp-synth-name">防陣 吽形 B</span><div class="kp-synth-desc">対象:弓砲 確率30% 防御 36%上昇(No.2140龍造寺隆信と特殊合成可能)</div></div></td><td><div class="kp-synth-cell"><span class="kp-synth-name">弓妖陣 B</span><div class="kp-synth-desc">対象:槍弓砲 確率25% 防御 39%上昇</div></div></td></tr><tr><td>S1</td><td><div class="kp-synth-cell"><span class="kp-synth-name"><a href="../skill/%E6%88%A6%E9%99%A3_%E9%98%BF%E5%90%BD.html">戦陣 阿吽 A</a></span><div class="kp-synth-desc">対象:全 確率25% 攻撃 42%上昇+防御 42%上昇</div></div></td><td><div class="kp-synth-cell"><span class="kp-synth-name"><a href="../skill/%E8%A6%87%E7%8E%8B%E5%BE%81%E8%BB%8D.html">覇王征軍 SS</a></span><div class="kp-synth-desc">対象:全 確率42% 攻撃 25.39%上昇(部隊総コストで変動)</div></div></td></tr><tr><td>S2</td><td><div class="kp-synth-cell"><span class="kp-synth-name"><a href="../skill/%E7%A5%9E%E5%8B%85%E8%B3%A2%E6%AF%8D.html">神勅賢母 S</a></span><div class="kp-synth-desc">対象:槍馬砲 確率25% 防御 39%上昇</div></div></td><td><div class="kp-synth-cell"><span class="kp-synth-name">背水之陣 B</span><div class="kp-synth-desc">対象:槍弓馬 確率20% 防御 37%上昇</div></div></td></tr></tbody></table></div></div><p class="kp-illust-credit">Illust. BANAMONS*</p>
+<div class="ts-detail-head"><img class="ts-detail-img" src="../assets/img/characters/no3726_full.png" alt="陽泰院"><div><h1 class="ts-detail-title">陽泰院<span class="ts-detail-furigana">ようたいいん</span></h1><p class="ts-detail-meta">No.3726 ／ コスト3 ／ 指揮兵数2650</p><div class="ts-detail-block"><h2>ステータス</h2><div class="ts-table-scroll"><table class="ts-stat-table"><thead><tr><th>攻撃</th><th>防御</th><th>兵法</th></tr></thead><tbody><tr><td>750 (+18)</td><td>820 (+20)</td><td>520 (+3)</td></tr></tbody></table></div></div><div class="ts-detail-block"><h2>統率</h2><div class="ts-table-scroll"><table class="ts-stat-table"><tbody><tr><td>槍: A</td><td>弓: B</td><td>馬: S</td><td>器: A</td></tr></tbody></table></div></div></div></div><div class="ts-detail-block"><h2>スキル</h2><div class="ts-skill-name">嫐討ち返し</div><div class="ts-skill-detail">C/LV10 確率 100% 相手総攻撃力の25%を総防御力に加算/対象:全<br>模倣不可・重複不可<br>①攻撃部隊が2部隊の場合のみ発動する<br>②相手の総攻撃力の25%を自軍の総防御力に加算する</div></div><div class="ts-detail-block"><h2>鍛錬レベル別性能</h2><div class="ts-table-scroll"><table class="ts-stat-table"><thead><tr><th>レベル</th><th class="ts-col-narrow">必要ポイント</th><th>効果</th></tr></thead><tbody><tr><td>LV10</td><td class="ts-col-narrow">-</td><td style="text-align:left;">全　確率 100% / 攻撃部隊が2部隊の場合のみ相手総攻撃力の25%を総防御力に加算(模倣不可・重複不可)</td></tr></tbody></table></div></div><div class="ts-detail-block"><h2>合成素材にした場合の候補スキル</h2><div class="ts-table-scroll"><table class="ts-stat-table"><thead><tr><th>候補</th><th>初期スキル</th><th>移植後合成候補</th></tr></thead><tbody><tr><td>A</td><td><div class="ts-synth-cell"><span class="ts-synth-name">騎馬隊堅陣 F</span><div class="ts-synth-desc">対象:馬 確率30% 馬防 12%上昇</div></div></td><td><div class="ts-synth-cell"><span class="ts-synth-name">騎馬隊奇襲 E</span><div class="ts-synth-desc">対象:馬 確率30% 馬攻 12%上昇</div></div></td></tr><tr><td>B</td><td><div class="ts-synth-cell"><span class="ts-synth-name">鉄壁の備え D</span><div class="ts-synth-desc">対象:全 確率40% 防御 15%上昇</div></div></td><td><div class="ts-synth-cell"><span class="ts-synth-name">城崩し D</span><div class="ts-synth-desc">対象:器 確率35% 破壊 20%上昇</div></div></td></tr><tr><td>C</td><td><div class="ts-synth-cell"><span class="ts-synth-name">防陣 吽形 B</span><div class="ts-synth-desc">対象:弓砲 確率30% 防御 36%上昇(No.2140龍造寺隆信と特殊合成可能)</div></div></td><td><div class="ts-synth-cell"><span class="ts-synth-name">弓妖陣 B</span><div class="ts-synth-desc">対象:槍弓砲 確率25% 防御 39%上昇</div></div></td></tr><tr><td>S1</td><td><div class="ts-synth-cell"><span class="ts-synth-name"><a href="../skill/%E6%88%A6%E9%99%A3_%E9%98%BF%E5%90%BD.html">戦陣 阿吽 A</a></span><div class="ts-synth-desc">対象:全 確率25% 攻撃 42%上昇+防御 42%上昇</div></div></td><td><div class="ts-synth-cell"><span class="ts-synth-name"><a href="../skill/%E8%A6%87%E7%8E%8B%E5%BE%81%E8%BB%8D.html">覇王征軍 SS</a></span><div class="ts-synth-desc">対象:全 確率42% 攻撃 25.39%上昇(部隊総コストで変動)</div></div></td></tr><tr><td>S2</td><td><div class="ts-synth-cell"><span class="ts-synth-name"><a href="../skill/%E7%A5%9E%E5%8B%85%E8%B3%A2%E6%AF%8D.html">神勅賢母 S</a></span><div class="ts-synth-desc">対象:槍馬砲 確率25% 防御 39%上昇</div></div></td><td><div class="ts-synth-cell"><span class="ts-synth-name">背水之陣 B</span><div class="ts-synth-desc">対象:槍弓馬 確率20% 防御 37%上昇</div></div></td></tr></tbody></table></div></div><p class="ts-illust-credit">Illust. BANAMONS*</p>
 <p style="margin-top:28px;"><a href="../characters-toku-s.html#3726">特シークレット武将一覧に戻る</a></p>
   </main>
 
