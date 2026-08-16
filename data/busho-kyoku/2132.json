@@ -1,0 +1,41 @@
+{
+ "name": "定恵院（2）",
+ "no": "2132",
+ "ch": null,
+ "cost": 1.5,
+ "troop": "槍弓砲防",
+ "sub": "",
+ "effect": "槍・弓・砲部隊の防御力上昇(自領以外の加勢で効果2倍)",
+ "furigana": "じょうけいいん",
+ "illustrator": "碧風羽",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 600,
+ "atkGrowth": 15,
+ "defBase": 650,
+ "defGrowth": 17,
+ "tacticsBase": 450,
+ "tacticsGrowth": 1.5,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "B",
+  "uma": "C",
+  "ki": "B"
+ },
+ "initialSkill": "甲駿の絆",
+ "skillDetail": "B/LV10 確率 30% 防御 30%上昇/対象:槍・弓・砲\n①防御 30%上昇する\n②自領以外への加勢時は効果が2倍になる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・弓・砲　確率 30% / 防御 30%上昇(自領以外の加勢時効果2倍)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-17登録。カード画像が無いためixanary.com(cards/2132)とixawiki.com(BushoCard/2132定恵院)の生HTMLの一致だけで登録した。",
+  "基礎値/成長値/コスト/指揮兵数/rankGrades(槍A・弓B・馬C・器B)/イラストレーター/スキルLV1数値は両ソースで完全一致。LV10数値はixanary.comのみに記載(ixawikiはLV1のみ掲載)。",
+  "名前は割り当て表記「定恵院(2)」を全角括弧に変換して登録。",
+  "章(ch)は両ソースに記載が無く未確認のためnull。"
+ ]
+}

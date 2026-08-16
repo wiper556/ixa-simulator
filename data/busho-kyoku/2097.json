@@ -1,0 +1,40 @@
+{
+ "name": "愛姫",
+ "no": "2097",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "槍馬攻",
+ "sub": "",
+ "effect": "攻撃 35%上昇",
+ "furigana": "めごひめ",
+ "illustrator": "岩元辰郎",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 620,
+ "atkGrowth": 19.0,
+ "defBase": 570,
+ "defGrowth": 16.0,
+ "tacticsBase": 440.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2480,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "C",
+  "uma": "S",
+  "ki": "B"
+ },
+ "initialSkill": "応竜恋慕",
+ "skillDetail": "A/LV10 確率 20% 攻撃 35%上昇/対象:槍馬\n①攻撃が35%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍馬　確率 20% / 攻撃 35%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-17登録。カード画像が無いためixanary.com(cards/2097 と skills/応竜恋慕)とixawiki.com(BushoCard/2097愛姫)の生HTMLを直接確認し両方が一致した項目だけで登録した(reviewedOkはfalseのまま)。",
+  "合成候補(synthesisTable)は今回付けていない。章(ch)は両ソースとも記載が無いため未確認。"
+ ]
+}

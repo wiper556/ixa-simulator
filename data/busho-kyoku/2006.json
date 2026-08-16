@@ -1,0 +1,43 @@
+{
+ "name": "竹中半兵衛",
+ "no": "2006",
+ "ch": null,
+ "cost": 1,
+ "troop": "全攻破",
+ "sub": "",
+ "effect": "全兵科の攻撃と破壊が上昇",
+ "furigana": "たけなかはんべえ",
+ "illustrator": "宮条カルナ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 500,
+ "atkGrowth": 4,
+ "defBase": 500,
+ "defGrowth": 4,
+ "tacticsBase": 490,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 1320,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "天賦の神算",
+ "skillDetail": "B/LV10 確率 50% 攻撃 12%上昇 破壊 5%上昇/対象:全\n①攻撃 12%上昇する\n②破壊 5%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 50% / 攻撃 12%上昇+破壊 5%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "カード画像が無いため imageFull/imageChar は null。ixanary.comの埋め込みJSON(cards/2006)とixawiki.com(BushoCard/2006)の基本ステータス表・スキル表を突き合わせて登録した。",
+  "name/furiganaはixawikiが「竹中 半兵衛」「たけなか はんべえ」と姓名間に空白を入れていたが、ixanaryおよびサイト内の表記慣習(空白無し)に揃えた。",
+  "コメント欄が見つからずwikiOldestComment/wikiCommentCountは取得できなかった。"
+ ],
+ "wikiOldestComment": null,
+ "wikiCommentCount": null
+}

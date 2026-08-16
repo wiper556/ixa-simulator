@@ -1,0 +1,41 @@
+{
+ "name": "龍造寺隆信",
+ "no": "2140",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "槍馬攻",
+ "sub": "",
+ "effect": "槍・馬部隊の攻撃力上昇",
+ "furigana": "りゅうぞうじたかのぶ",
+ "illustrator": "小森ニコ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 920,
+ "atkGrowth": 19,
+ "defBase": 670,
+ "defGrowth": 16,
+ "tacticsBase": 455,
+ "tacticsGrowth": 2,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "B",
+  "uma": "A",
+  "ki": "C"
+ },
+ "initialSkill": "攻陣 阿形",
+ "skillDetail": "B/LV10 確率 30% 攻撃 36%上昇/対象:槍・馬\n①攻撃 36%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・馬　確率 30% / 攻撃 36%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-17登録。カード画像が無いためixanary.com(cards/2140)とixawiki.com(BushoCard/2140龍造寺隆信)の生HTMLの一致だけで登録した。",
+  "基礎値/成長値/コスト/指揮兵数/rankGrades(槍S・弓B・馬A・器C)/イラストレーター/スキルLV1数値は両ソースで完全一致。LV10数値はixanary.comのみに記載(ixawikiはLV1のみ掲載)。",
+  "ixanary.comのLV10欄に「No.2139鍋島直茂と特殊合成可能」という注記があったが、合成テーブルの詳細は今回の登録対象外(synthesisTableは付けない指示)のためskillDetailには含めていない。",
+  "章(ch)は両ソースに記載が無く未確認のためnull。"
+ ]
+}

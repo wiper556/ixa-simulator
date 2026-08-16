@@ -1,0 +1,42 @@
+{
+ "name": "村上義清-復刻-",
+ "no": "1985",
+ "ch": null,
+ "cost": 4.5,
+ "troop": "槍弓馬防",
+ "sub": "",
+ "effect": "兵器兵科がいれば効果1.5倍",
+ "furigana": "むらかみよしきよ",
+ "illustrator": "直良有祐",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1150,
+ "atkGrowth": 52,
+ "defBase": null,
+ "defGrowth": 74,
+ "tacticsBase": 620,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 4600,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "S",
+  "uma": "S",
+  "ki": "A"
+ },
+ "initialSkill": "神槍斜線陣",
+ "skillDetail": "S/LV10 確率 60% 防御 88%上昇/対象:槍弓馬\n①防御 88%上昇する\n②攻撃部隊に兵器兵科がいれば効果が1.5倍となる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍弓馬　確率 60% / 防御 88%上昇(攻撃部隊に兵器兵科がいれば効果1.5倍)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-17登録。カード画像が無いためixanary.com(cards/1985)とixawiki.com(BushoCard/1985村上義清)の生HTML2ソースのみで作成した。imageFull/imageCharはnull。",
+  "cost/lv0Troops/rankGrades/atkBase・atkGrowth/tacticsBase・tacticsGrowth/defGrowthは両ソース一致。defBaseのみixanary=1150・ixawiki=1300で食い違ったためnullにした(今回の割当20体のうち17体で発生している系統的な食い違い)。",
+  "神槍斜線陣はixawiki側もLv1/Lv10を分けて記載しておりLv1(確率20%防御40%上昇)・Lv10(確率60%防御88%上昇)とも攻撃部隊に兵器兵科がいれば効果1.5倍という特殊効果を含め両ソース完全一致した。",
+  "reviewedOkはfalseのまま。カード画像による4隅バッジ・スキルパネル照合が未実施のため黄丸化はできない。"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "name": "織田信長",
+ "no": "2011",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "砲攻破",
+ "sub": "",
+ "effect": "攻撃 12%上昇+破壊 15%上昇",
+ "furigana": "おだのぶなが",
+ "illustrator": null,
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 700,
+ "atkGrowth": 17,
+ "defBase": 700,
+ "defGrowth": 16,
+ "tacticsBase": 450,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3050,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "B",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "三段撃 神速",
+ "skillDetail": "C/LV10 確率 50% 攻撃 12%上昇+破壊 15%上昇/対象:砲\n①攻撃 12%上昇する\n②破壊 15%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "砲　確率 50% / 攻撃 12%上昇+破壊 15%上昇"
+  }
+ ],
+ "notes": [
+  "2026-08-17登録(担当D)。カード画像が無いためixanary.com(cards/2011)生HTMLとixawiki.com(index.php?BushoCard/2011織田信長、およびBusho/武将カード一覧(極)・Busho/武将スキルの生HTML)の2ソースで数値が一致することを確認して登録した。",
+  "illustratorはixanaryが「七海慎吾 [戦國ストレイズ]」ixawikiが「七海慎吾」で文言が食い違ったためnullにした(人物名自体は一致だが所属表記の有無が食い違う)。"
+ ],
+ "reviewedOk": false
+}

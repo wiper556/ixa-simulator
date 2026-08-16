@@ -1,0 +1,41 @@
+{
+ "name": "内藤昌豊",
+ "no": "2063",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "槍弓馬防",
+ "sub": "",
+ "effect": "槍・弓・馬兵の防御力上昇",
+ "furigana": "ないとうまさとよ",
+ "illustrator": "小林元",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 650,
+ "atkGrowth": 16,
+ "defBase": 680,
+ "defGrowth": 17,
+ "tacticsBase": 435,
+ "tacticsGrowth": 2,
+ "lv0Troops": 2520,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "A",
+  "uma": "S",
+  "ki": "D"
+ },
+ "initialSkill": "丸馬出し",
+ "skillDetail": "B/LV10 確率 38% 防御 30%上昇/対象:槍・弓・馬\n①防御 30%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・弓・馬　確率 38% / 防御 30%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-17登録(担当F)。カード画像が無いためixanary.com(cards/2063)とixawiki.com(index.php?BushoCard/2063内藤昌豊)の生HTML突き合わせのみで登録した。",
+  "コスト2.5・指揮兵数2520・統率(槍B/弓A/馬S/器D)・攻撃力650(+16)・防御力680(+17)・兵法435(+2)は両ソースで完全一致。LV10(確率38%/防御30%上昇)はixawikiに記載が無くixanary単独の値。",
+  "章(ch)は両ソースとも記載が無く未確認のためnull。イラストレーター小林元は両ソース一致。"
+ ]
+}

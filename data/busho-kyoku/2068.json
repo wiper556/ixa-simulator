@@ -1,0 +1,41 @@
+{
+ "name": "大谷吉継",
+ "no": "2068",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "槍弓防",
+ "sub": "",
+ "effect": "槍・弓兵の防御力上昇",
+ "furigana": "おおたによしつぐ",
+ "illustrator": "BISAI",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 650,
+ "atkGrowth": 15,
+ "defBase": 650,
+ "defGrowth": 17,
+ "tacticsBase": 490,
+ "tacticsGrowth": 2,
+ "lv0Troops": 2490,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "S",
+  "uma": "C",
+  "ki": "A"
+ },
+ "initialSkill": "死兵六道契",
+ "skillDetail": "B/LV10 確率 25% 防御 39%上昇/対象:槍・弓\n①防御 39%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・弓　確率 25% / 防御 39%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-17登録(担当F)。カード画像が無いためixanary.com(cards/2068)とixawiki.com(index.php?BushoCard/2068大谷吉継)の生HTML突き合わせのみで登録した。",
+  "コスト2.5・指揮兵数2490・統率(槍B/弓S/馬C/器A)・攻撃力650(+15)・防御力650(+17)・兵法490(+2)は両ソースで完全一致。LV10(確率25%/防御39%上昇)はixawikiに記載が無くixanary単独の値。",
+  "章(ch)は両ソースとも記載が無く未確認のためnull。イラストレーターBISAIは両ソース一致。"
+ ]
+}

@@ -1,0 +1,42 @@
+{
+ "name": "三好長慶-復刻-",
+ "no": "1970",
+ "ch": null,
+ "cost": 4.5,
+ "troop": "全攻",
+ "sub": "",
+ "effect": "追加スキルの攻撃効果を2倍にする",
+ "furigana": "みよしちょうけい",
+ "illustrator": "直良有祐",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1120,
+ "atkGrowth": 26,
+ "defBase": null,
+ "defGrowth": 24,
+ "tacticsBase": 620,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 4480,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "神哭傀儡",
+ "skillDetail": "S/LV10 確率 100% 対象:追加スキル\n模倣不可\n①このスキルを持つ武将カードは追加スキルの攻撃効果が2倍となる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "追加スキル　確率 100% / 攻撃効果 2倍(模倣不可)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-17登録。カード画像が無いためixanary.com(cards/1970)とixawiki.com(BushoCard/1970三好長慶)の生HTML2ソースのみで作成した。imageFull/imageCharはnull。",
+  "cost/lv0Troops/rankGrades/atkBase・atkGrowth/tacticsBase・tacticsGrowth/defGrowthは両ソース一致。defBaseのみixanary=1120・ixawiki=1050で食い違ったためnullにした(今回の割当20体のうち17体で同様に発生している系統的な食い違い)。",
+  "神哭傀儡はLV1(確率100%攻撃効果1.5倍・模倣不可)の内容が両ソースで一致したため、ixanary.comのLV10データ(攻撃効果2倍)をskillDetail/trTableに採用した。",
+  "reviewedOkはfalseのまま。カード画像による4隅バッジ・スキルパネル照合が未実施のため黄丸化はできない。"
+ ]
+}

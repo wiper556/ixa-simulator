@@ -1,0 +1,39 @@
+{
+ "name": "石田三成",
+ "no": "2012",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "弓防",
+ "sub": "",
+ "effect": "防御 30%上昇",
+ "furigana": "いしだみつなり",
+ "illustrator": "斎藤晋",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 650,
+ "atkGrowth": 16,
+ "defBase": 750,
+ "defGrowth": 17,
+ "tacticsBase": 420,
+ "tacticsGrowth": 2,
+ "lv0Troops": 2650,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "C",
+  "ki": "B"
+ },
+ "initialSkill": "弓陣の極み",
+ "skillDetail": "B/LV10 確率 30% 防御 30%上昇/対象:弓\n①防御 30%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓　確率 30% / 防御 30%上昇"
+  }
+ ],
+ "notes": [
+  "2026-08-17登録(担当D)。カード画像が無いためixanary.com(cards/2012)生HTMLとixawiki.com(index.php?BushoCard/2012石田三成、およびBusho/武将カード一覧(極)・Busho/武将スキルの生HTML)の2ソースで数値が一致することを確認して登録した。"
+ ],
+ "reviewedOk": false
+}

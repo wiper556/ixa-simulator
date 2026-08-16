@@ -1,0 +1,42 @@
+{
+ "name": "大内義隆-復刻-",
+ "no": "1990",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "全防",
+ "sub": "",
+ "effect": "同兵種を指揮する武将数に応じて全兵科の防御が上昇",
+ "furigana": "おおうちよしたか",
+ "illustrator": "直良有祐",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1050,
+ "atkGrowth": 32,
+ "defBase": null,
+ "defGrowth": 59,
+ "tacticsBase": 610,
+ "tacticsGrowth": 3,
+ "lv0Troops": 4050,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "SS"
+ },
+ "initialSkill": "狂獄大楽",
+ "skillDetail": "S/LV10 確率 44% 防御 45%上昇/対象:全\n①防御 45%上昇する\n②自軍内で同兵種を指揮している武将数×3.5%を防御効果に加算する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 44% / 防御 45%上昇(自軍内で同兵種を指揮している武将数×3.5%を加算)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "カード画像が無いため imageFull/imageChar は null。ixanary.comの埋め込みJSON(cards/1990)とixawiki.com(BushoCard/1990)の基本ステータス表・スキル表を突き合わせて登録した。",
+  "defBase(防御初期値)がixanaryでは1050(攻撃と同値)・ixawikiでは1200で食い違ったためnullにした。"
+ ],
+ "wikiOldestComment": "2020-03-02",
+ "wikiCommentCount": 33
+}

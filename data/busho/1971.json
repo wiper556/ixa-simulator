@@ -1,0 +1,42 @@
+{
+ "name": "今川義元-復刻-",
+ "no": "1971",
+ "ch": null,
+ "cost": 4,
+ "troop": "弓砲器攻破",
+ "sub": "",
+ "effect": "合流攻撃時に攻撃効果1.5倍",
+ "furigana": "いまがわよしもと",
+ "illustrator": "直良有祐",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1170,
+ "atkGrowth": 30,
+ "defBase": null,
+ "defGrowth": 26,
+ "tacticsBase": 640,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 4200,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "SS",
+  "uma": "B",
+  "ki": "A"
+ },
+ "initialSkill": "覇導弓焔鳥",
+ "skillDetail": "S/LV10 確率 45% 攻撃 66%上昇+破壊 30%上昇/対象:弓砲器\n①攻撃 66%上昇する\n②破壊 30%上昇する\n③合流攻撃時攻撃効果が1.5倍となる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓砲器　確率 45% / 攻撃 66%上昇+破壊 30%上昇(合流攻撃時攻撃効果1.5倍)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-17登録。カード画像が無いためixanary.com(cards/1971)とixawiki.com(BushoCard/1971今川義元)の生HTML2ソースのみで作成した。imageFull/imageCharはnull。",
+  "cost/lv0Troops/rankGrades/atkBase・atkGrowth/tacticsBase・tacticsGrowth/defGrowthは両ソース一致。defBaseのみixanary=1170・ixawiki=1000で食い違ったためnullにした(今回の割当20体のうち17体で同様に発生している系統的な食い違い)。",
+  "覇導弓焔鳥はLV1(確率18%攻撃35%上昇破壊10%上昇・合流攻撃時攻撃効果1.5倍)の内容が両ソースで一致したため、ixanary.comのLV10データ(確率45%攻撃66%上昇破壊30%上昇)をskillDetail/trTableに採用した。",
+  "reviewedOkはfalseのまま。カード画像による4隅バッジ・スキルパネル照合が未実施のため黄丸化はできない。"
+ ]
+}

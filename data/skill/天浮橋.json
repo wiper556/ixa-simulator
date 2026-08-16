@@ -1,0 +1,25 @@
+{
+ "name": "天浮橋",
+ "rank": "S",
+ "baseRate": 50,
+ "target": "全",
+ "effectSummary": "S/LV10 確率 50% 防御 125%上昇/対象:全\n①防御 125%上昇する\n②他城主の拠点に加勢中にも部隊の兵士編成を行える",
+ "categoryLinks": [],
+ "sourceCharacters": [
+  {
+   "name": "初",
+   "no": "1995",
+   "slot": "移植不可"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 50% / 防御 125%上昇(加勢中も部隊の兵士編成が可能)"
+  }
+ ],
+ "notes": [
+  "A-3-9「武将自身の初期スキル(S以上)は無条件にページを作る」により2026-08-16に一括作成。内容は data/busho/1995.json の skillDetail / trTable からの転記で、新しい事実は持ち込んでいない。"
+ ]
+}

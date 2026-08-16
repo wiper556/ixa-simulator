@@ -1,0 +1,40 @@
+{
+ "name": "黒田官兵衛（2）",
+ "no": "2100",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "上級砲防",
+ "sub": "",
+ "effect": "防御 35%上昇",
+ "furigana": "くろだかんべえ",
+ "illustrator": "岩元辰郎",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 600,
+ "atkGrowth": 16.0,
+ "defBase": 640,
+ "defGrowth": 16.0,
+ "tacticsBase": 680.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3380,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "C",
+  "uma": "S",
+  "ki": "A"
+ },
+ "initialSkill": "慧眼機略",
+ "skillDetail": "A/LV10 確率 20% 防御 35%上昇/対象:上級砲\n①防御が35%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "上級砲　確率 20% / 防御 35%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-17登録。カード画像が無いためixanary.com(cards/2100 と skills/慧眼機略)とixawiki.com(BushoCard/2100黒田官兵衛)の生HTMLを直接確認し両方が一致した項目だけで登録した(reviewedOkはfalseのまま)。",
+  "合成候補(synthesisTable)は今回付けていない。章(ch)は両ソースとも記載が無いため未確認。"
+ ]
+}

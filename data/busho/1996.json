@@ -1,0 +1,43 @@
+{
+ "name": "江",
+ "no": "1996",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "全攻防",
+ "sub": "",
+ "effect": "全兵科の攻撃防御が上昇、部隊内の卓越発動率も上昇",
+ "furigana": "ごう",
+ "illustrator": "直良有祐",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1070,
+ "atkGrowth": 57,
+ "defBase": 1070,
+ "defGrowth": 57,
+ "tacticsBase": 630,
+ "tacticsGrowth": 3,
+ "lv0Troops": 4050,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "天羽衣",
+ "skillDetail": "S/LV10 確率 100% 攻撃 99%上昇 防御 99%上昇/対象:全\n①攻撃 99%上昇する\n②防御 99%上昇する\n③部隊内武将の全スキル(極限スキルを含む)の卓越追加確率が30%上昇する(模倣不可・自部隊内では重複不可)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 攻撃 99%上昇+防御 99%上昇+部隊内武将の卓越追加確率+30%(模倣不可・自部隊内では重複不可)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "カード画像が無いため imageFull/imageChar は null。ixanary.comの埋め込みJSON(cards/1996)とixawiki.com(BushoCard/1996)の基本ステータス表・スキル表を突き合わせて登録した。",
+  "ixawikiの武将カード一覧表記は「江」のみで括弧書きが無いため無印とした。",
+  "卓越追加確率を他武将に付与する効果だが、このスキル自身の発動確率ロールに卓越が組み込まれているわけではないため sub は空欄とした(既存の卓越タグ付き武将の条件と不一致)。"
+ ],
+ "wikiOldestComment": "2020-12-15",
+ "wikiCommentCount": 33
+}

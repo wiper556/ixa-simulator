@@ -1,0 +1,44 @@
+{
+ "name": "茶々（3）",
+ "no": "2121",
+ "ch": null,
+ "cost": 3,
+ "troop": "弓砲攻",
+ "sub": "",
+ "effect": "弓・砲部隊の攻撃力上昇",
+ "furigana": "ちゃちゃ",
+ "illustrator": "美樹本晴彦",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 710,
+ "atkGrowth": 19,
+ "defBase": null,
+ "defGrowth": 18,
+ "tacticsBase": 490,
+ "tacticsGrowth": 2,
+ "lv0Troops": 2920,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "A",
+  "uma": "B",
+  "ki": "S"
+ },
+ "initialSkill": "傾天の嘆き",
+ "skillDetail": "B/LV10 確率 30% 攻撃 35%上昇/対象:弓・砲\n①攻撃 35%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓・砲　確率 30% / 攻撃 35%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-17登録。カード画像が無いためixanary.comとixawiki.comの生HTML突き合わせのみで登録した。",
+  "武将名は割り当て(assign_I.txt)の表記「茶々(3)」をサイト表記に合わせ「茶々（3）」とした。",
+  "基礎値/成長値/コスト/指揮兵数(2920)/rankGrades(槍B・弓A・馬B・器S)/イラストレーター(美樹本晴彦)はixanary.com(cards/2121)とixawiki.com(BushoCard/2121茶々)で完全一致。",
+  "【食い違いによりnull】defBase(防御初期値)がixanary.com=710、ixawiki.com=660で一致しなかったためnullにした。attack=710と同値になっている点も含めixanary側の入力ミスの可能性があるが判断材料がなく両ソースとも採用しなかった。defGrowth(成長値18)は両ソース一致。",
+  "skillDetail/trTableはixanary.com/skills/傾天の嘆きのLV10表記(確率+30%/対象弓砲/攻撃35%上昇)を採用。LV1値(確率+17%/攻撃21%上昇)がixawikiの基本ステータス表と一致。",
+  "章(ch)は両ソースに記載なく未確認。"
+ ]
+}

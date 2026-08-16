@@ -1,0 +1,38 @@
+{
+ "name": "立花誾千代",
+ "no": "2055",
+ "ch": null,
+ "cost": 3,
+ "troop": "槍馬攻",
+ "sub": "",
+ "effect": "槍・馬兵の攻撃力上昇",
+ "furigana": "たちばなぎんちよ",
+ "illustrator": "藤原カムイ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 710,
+ "atkGrowth": 17,
+ "defBase": 680,
+ "defGrowth": 16,
+ "tacticsBase": 410,
+ "tacticsGrowth": 2,
+ "lv0Troops": 2840,
+ "rankGrades": null,
+ "initialSkill": "旋風華憐",
+ "skillDetail": "A/LV10 確率 30% 攻撃 35%上昇/対象:槍・馬\n①攻撃 35%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・馬　確率 30% / 攻撃 35%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-17登録(担当F)。カード画像が無いためixanary.com(cards/2055)の生HTMLのみで登録した。ixawiki.com側は該当ページ(BushoCard/2055立花誾千代)が未作成で「の編集」ページに転送され、この武将のカード情報は掲載されていなかった。",
+  "assign_F.txtの3列目(元表記)は文字化けしていたため名前を直接読めなかったが、ixanary.com(cards/2055)のtitle「No.2055 立花誾千代 旋風華憐」と、ixawiki.comの編集ページのURL/page_name(BushoCard/2055立花誾千代)の両方から名前を「立花誾千代」と確定した。",
+  "rankGradesはixawikiで裏取りできずixanary単独のためnullにした(参考値:ixanary記載は槍S/弓B/馬A/器B)。cost・lv0Troops・攻撃防御兵法の初期値/成長値・スキル情報もixanary単独ソースであり、二重確認できていない旨をここに明記する。",
+  "初期スキル「旋風華憐」LV1(確率+15%/対象槍馬/攻撃15%上昇)・LV10(確率+30%/対象槍馬/攻撃35%上昇)はいずれもixanary単独の値。",
+  "章(ch)は情報源に記載が無く未確認のためnull。"
+ ]
+}

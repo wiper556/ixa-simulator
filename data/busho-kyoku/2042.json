@@ -1,0 +1,39 @@
+{
+ "name": "山県昌景",
+ "no": "2042",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "槍馬攻破",
+ "sub": "",
+ "effect": "対象兵科の攻撃・破壊上昇",
+ "furigana": "やまがたまさかげ",
+ "illustrator": "萩谷薫",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 740,
+ "atkGrowth": 17,
+ "defBase": 740,
+ "defGrowth": 17,
+ "tacticsBase": 400,
+ "tacticsGrowth": 2,
+ "lv0Troops": 2670,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "E",
+  "uma": "S",
+  "ki": "D"
+ },
+ "initialSkill": "赤備 烈火",
+ "skillDetail": "B/LV10 確率 25% 攻撃 25%上昇+破壊 5%上昇/対象:槍・馬\n①攻撃 25%上昇する\n②破壊 5%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・馬　確率 25% / 攻撃 25%上昇+破壊 5%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-17登録。カード画像が無いためixanary.com(cards/2042)とixawiki.com(BushoCard/2042山県昌景)の生HTMLを突き合わせて一致した項目のみ登録した。基礎値/成長値/コスト/指揮兵数/統率ランク/スキル確率/効果値は両ソースで完全一致を確認済み。"
+ ]
+}

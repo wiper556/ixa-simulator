@@ -1,0 +1,42 @@
+{
+ "name": "武田信繁",
+ "no": "2064",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "全攻",
+ "sub": "",
+ "effect": "全部隊の攻撃力上昇",
+ "furigana": "たけだのぶしげ",
+ "illustrator": "小林元",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 720,
+ "atkGrowth": 18,
+ "defBase": 690,
+ "defGrowth": 18,
+ "tacticsBase": 450,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3060,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "B",
+  "uma": "S",
+  "ki": "C"
+ },
+ "initialSkill": "古典厩",
+ "skillDetail": "B/LV10 確率 35% 攻撃 20%上昇/対象:全\n①攻撃 20%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 35% / 攻撃 20%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-17登録(担当F)。カード画像が無いためixanary.com(cards/2064)とixawiki.com(index.php?BushoCard/2064武田信繁)の生HTML突き合わせのみで登録した。",
+  "コスト3.5・指揮兵数3060・統率(槍A/弓B/馬S/器C)・攻撃力720(+18)・防御力690(+18)・兵法450(+2.5)は両ソースで完全一致。LV10(確率35%/攻撃20%上昇)はixawikiに記載が無くixanary単独の値。",
+  "同名の武田信繁(No.2377等)が既存データに存在するが、本カードはixanary/ixawikiとも別ページ・別ステータスのNo.2064として扱われているため区別のための連番は付与しなかった(assign_F.txtの表記も無印「武田信繁」)。",
+  "章(ch)は両ソースとも記載が無く未確認のためnull。イラストレーター小林元は両ソース一致。"
+ ]
+}

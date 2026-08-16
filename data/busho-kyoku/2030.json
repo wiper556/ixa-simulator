@@ -1,0 +1,39 @@
+{
+ "name": "豊臣秀頼",
+ "no": "2030",
+ "ch": null,
+ "cost": 2,
+ "troop": "弓砲器防",
+ "sub": "",
+ "effect": "対象兵科の防御上昇",
+ "furigana": "とよとみひでより",
+ "illustrator": "巻",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 650,
+ "atkGrowth": 15,
+ "defBase": 690,
+ "defGrowth": 17,
+ "tacticsBase": 400,
+ "tacticsGrowth": 2,
+ "lv0Troops": 2200,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "B",
+  "uma": "D",
+  "ki": "S"
+ },
+ "initialSkill": "君臣豊楽",
+ "skillDetail": "B/LV10 確率 15% 防御 40%上昇/対象:弓・砲・器\n①防御 40%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓・砲・器　確率 15% / 防御 40%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-17登録。カード画像が無いためixanary.com(cards/2030)とixawiki.com(BushoCard/2030豊臣秀頼)の生HTMLを突き合わせて一致した項目のみ登録した。基礎値/成長値/コスト/指揮兵数/統率ランク/スキル確率/効果値は両ソースで完全一致を確認済み。"
+ ]
+}

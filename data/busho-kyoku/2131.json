@@ -1,0 +1,41 @@
+{
+ "name": "蒲生氏郷（2）",
+ "no": "2131",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "全攻破",
+ "sub": "",
+ "effect": "全軍の攻撃・破壊力上昇",
+ "furigana": "がもううじさと",
+ "illustrator": "塚本陽子",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 760,
+ "atkGrowth": 18,
+ "defBase": 720,
+ "defGrowth": 16,
+ "tacticsBase": 470,
+ "tacticsGrowth": 2.5,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "白銀竜騎兵",
+ "skillDetail": "B/LV10 確率 25% 攻撃 35%上昇/対象:全\n①攻撃 35%上昇する\n②破壊 25%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 25% / 攻撃 35%上昇+破壊 25%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-17登録。カード画像が無いためixanary.com(cards/2131)とixawiki.com(BushoCard/2131蒲生氏郷)の生HTMLの一致だけで登録した。",
+  "基礎値/成長値/コスト/指揮兵数/rankGrades(槍A・弓A・馬A・器A)/イラストレーター/スキルLV1数値は両ソースで完全一致。LV10数値はixanary.comのみに記載(ixawikiはLV1のみ掲載)。",
+  "名前は割り当て表記「蒲生氏郷(2)」を全角括弧に変換して登録。",
+  "章(ch)は両ソースに記載が無く未確認のためnull。"
+ ]
+}

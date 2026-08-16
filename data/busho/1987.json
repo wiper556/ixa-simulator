@@ -1,0 +1,37 @@
+{
+ "name": "井伊直虎-復刻-",
+ "no": "1987",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "全防",
+ "sub": "",
+ "effect": "部隊ランクボーナスに応じて防御上昇",
+ "furigana": "いいなおとら",
+ "illustrator": null,
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1050,
+ "atkGrowth": 34,
+ "defBase": null,
+ "defGrowth": 57,
+ "tacticsBase": 640,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3500,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "S",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "波乱ノ虎",
+ "skillDetail": null,
+ "trTable": null,
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-17登録。カード画像が無いためixanary.com(cards/1987)とixawiki.com(BushoCard/1987井伊直虎)の生HTML2ソースのみで作成した。imageFull/imageCharはnull。",
+  "cost/lv0Troops/rankGrades/atkBase・atkGrowth/tacticsBase・tacticsGrowth/defGrowthは両ソース一致。defBaseのみixanary=1050・ixawiki=1090で食い違ったためnullにした(今回の割当20体のうち17体で発生している系統的な食い違い)。",
+  "illustratorがixanary=直良有祐・ixawiki=上国料勇で食い違ったためnullにした(この20体の中で唯一のイラストレーター相違)。",
+  "波乱ノ虎はixawiki側もLv1/Lv10を分けて記載しているが、部隊ランクボーナスの倍率がixawiki Lv1=×4%・Lv10=×15%であるのに対しixanaryはLv1・LV10とも一貫して×15%(かつLV10には「部隊ランク★28 防御:135%上昇」という追加記載がixanaryのみにあり)で食い違ったためskillDetail/trTableをnullにした。troopは両ソースが「防御が部隊ランクに応じて上昇する」こと自体は一致していたため「全防」と記載した。",
+  "reviewedOkはfalseのまま。カード画像による4隅バッジ・スキルパネル照合が未実施のため黄丸化はできない。"
+ ]
+}

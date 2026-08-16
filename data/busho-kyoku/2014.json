@@ -1,0 +1,40 @@
+{
+ "name": "前田慶次",
+ "no": "2014",
+ "ch": null,
+ "cost": 3,
+ "troop": "将攻",
+ "sub": "",
+ "effect": "攻撃 40%上昇",
+ "furigana": "まえだけいじ",
+ "illustrator": "塚本陽子",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 950,
+ "atkGrowth": 19,
+ "defBase": 680,
+ "defGrowth": 16,
+ "tacticsBase": 380,
+ "tacticsGrowth": 1.5,
+ "lv0Troops": 2940,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "B",
+  "uma": "S",
+  "ki": "D"
+ },
+ "initialSkill": "傾奇御免",
+ "skillDetail": "B/LV10 確率 35% 攻撃 40%上昇/対象:将\n①攻撃 40%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "将　確率 35% / 攻撃 40%上昇"
+  }
+ ],
+ "notes": [
+  "2026-08-17登録(担当D)。カード画像が無いためixanary.com(cards/2014)生HTMLとixawiki.com(index.php?BushoCard/2014前田慶次、およびBusho/武将カード一覧(極)・Busho/武将スキルの生HTML)の2ソースで数値が一致することを確認して登録した。",
+  "furiganaはixanaryが「まえだけいじ」ixawikiが「まえだ けいじ」(姓名の間に半角スペース)で、読み自体は同一のためixawikiのルビタグが姓名境界に空白を挟むレンダリング差とみなしサイト内の無スペース表記の慣例(既存データに空白入りfuriganaが存在しない)に合わせてixanary側の表記を採用した(内容の対立ではなく空白の有無のみの差のため)。"
+ ],
+ "reviewedOk": false
+}

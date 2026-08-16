@@ -1,0 +1,42 @@
+{
+ "name": "竹中半兵衛（2）",
+ "no": "2065",
+ "ch": null,
+ "cost": 3,
+ "troop": "全防",
+ "sub": "",
+ "effect": "全部隊の防御力上昇",
+ "furigana": "たけなかはんべえ",
+ "illustrator": "isuZu",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 650,
+ "atkGrowth": 16,
+ "defBase": 650,
+ "defGrowth": 17,
+ "tacticsBase": 500,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 2900,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "C"
+ },
+ "initialSkill": "今孔明八陣",
+ "skillDetail": "B/LV10 確率 40% 防御 20%上昇/対象:全\n①防御 20%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 40% / 防御 20%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-17登録(担当F)。カード画像が無いためixanary.com(cards/2065)とixawiki.com(index.php?BushoCard/2065竹中半兵衛)の生HTML突き合わせのみで登録した。",
+  "名前の（2）はassign_F.txtに記載のixawiki武将カード一覧表記「竹中半兵衛(2)」に従い全角化した。既存の竹中半兵衛（2）【覇】(No.1215)とは【覇】表記の有無で区別されるため名称の重複はない。",
+  "コスト3・指揮兵数2900・統率(槍A/弓A/馬A/器C)・攻撃力650(+16)・防御力650(+17)・兵法500(+2.5)は両ソースで完全一致。LV10(確率40%/防御20%上昇)はixawikiに記載が無くixanary単独の値。",
+  "章(ch)は両ソースとも記載が無く未確認のためnull。イラストレーターisuZuは両ソース一致。"
+ ]
+}

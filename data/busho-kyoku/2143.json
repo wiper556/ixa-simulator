@@ -1,0 +1,41 @@
+{
+ "name": "真田幸村（4）",
+ "no": "2143",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "馬砲攻",
+ "sub": "",
+ "effect": "馬・砲部隊の攻撃力上昇(19時～翌01時は確率3倍)",
+ "furigana": "さなだゆきむら",
+ "illustrator": "塚本陽子",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 830,
+ "atkGrowth": 18,
+ "defBase": 710,
+ "defGrowth": 16,
+ "tacticsBase": 540,
+ "tacticsGrowth": 2.5,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "B",
+  "uma": "S",
+  "ki": "A"
+ },
+ "initialSkill": "冥戦焔騎",
+ "skillDetail": "B/LV10 確率 12% 攻撃 39%上昇/対象:馬・砲\n①攻撃 39%上昇する\n②19時から翌01時までの間は確率が3倍になる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "馬・砲　確率 12% / 攻撃 39%上昇(19時～翌01時は確率3倍)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-17登録。カード画像が無いためixanary.com(cards/2143)とixawiki.com(BushoCard/2143真田幸村)の生HTMLの一致だけで登録した。",
+  "基礎値/成長値/コスト/指揮兵数/rankGrades(槍B・弓B・馬S・器A)/イラストレーター/スキルLV1数値は両ソースで完全一致。LV10数値はixanary.comのみに記載(ixawikiはLV1のみ掲載)。",
+  "名前は割り当て表記「真田幸村(4)」を全角括弧に変換して登録。",
+  "章(ch)は両ソースに記載が無く未確認のためnull。"
+ ]
+}

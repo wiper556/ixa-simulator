@@ -1,0 +1,42 @@
+{
+ "name": "本多忠勝",
+ "no": "2001",
+ "ch": null,
+ "cost": 3,
+ "troop": "槍馬砲攻",
+ "sub": "",
+ "effect": "対象兵科の攻撃が上昇",
+ "furigana": "ほんだただかつ",
+ "illustrator": "キム・ビョンジン",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 745,
+ "atkGrowth": 18,
+ "defBase": 725,
+ "defGrowth": 17,
+ "tacticsBase": 385,
+ "tacticsGrowth": 2,
+ "lv0Troops": 2790,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "B",
+  "uma": "S",
+  "ki": "C"
+ },
+ "initialSkill": "剛勇無双",
+ "skillDetail": "B/LV10 確率 30% 攻撃 25%上昇/対象:槍・馬・砲\n①攻撃 25%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・馬・砲　確率 30% / 攻撃 25%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "カード画像が無いため imageFull/imageChar は null。ixanary.comの埋め込みJSON(cards/2001)とixawiki.com(BushoCard/2001)の基本ステータス表・スキル表を突き合わせて登録した。",
+  "illustratorはixanaryが「キム・ビョンジン [ヴァルハラ]」・ixawikiが「キム・ビョンジン」で括弧書きの有無のみ差異があったため、既存データの表記(グループ名括弧書きなし)に揃えた。"
+ ],
+ "wikiOldestComment": "2014-03-25",
+ "wikiCommentCount": 24
+}

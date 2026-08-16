@@ -1,0 +1,42 @@
+{
+ "name": "長宗我部盛親-復刻-",
+ "no": "1992",
+ "ch": null,
+ "cost": 3,
+ "troop": "槍馬器鉄防",
+ "sub": "",
+ "effect": "対象兵科の防御が上昇、最大指揮兵数と同数指揮時は1.5倍",
+ "furigana": "ちょうそかべもりちか",
+ "illustrator": "直良有祐",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1020,
+ "atkGrowth": 35,
+ "defBase": null,
+ "defGrowth": 47,
+ "tacticsBase": 640,
+ "tacticsGrowth": 3,
+ "lv0Troops": 3890,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "B",
+  "uma": "S",
+  "ki": "A"
+ },
+ "initialSkill": "天つ輝ノ片喰",
+ "skillDetail": "S/LV10 確率 45% 防御 116%上昇/対象:槍・馬・器・鉄\n①防御 116%上昇する\n②この武将の最大指揮兵数と同数の兵士を指揮時防御効果を1.5倍にする",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・馬・器・鉄　確率 45% / 防御 116%上昇(最大指揮兵数と同数指揮時1.5倍)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "カード画像が無いため imageFull/imageChar は null。ixanary.comの埋め込みJSON(cards/1992)とixawiki.com(BushoCard/1992)の基本ステータス表・スキル表を突き合わせて登録した。",
+  "defBase(防御初期値)がixanaryでは1020(攻撃と同値)・ixawikiでは1100で食い違ったためnullにした。"
+ ],
+ "wikiOldestComment": "2020-07-05",
+ "wikiCommentCount": 36
+}

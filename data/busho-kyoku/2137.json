@@ -1,0 +1,40 @@
+{
+ "name": "南部晴政",
+ "no": "2137",
+ "ch": null,
+ "cost": 3,
+ "troop": "全攻速",
+ "sub": "",
+ "effect": "全軍の攻撃・速度上昇(19時～翌01時まで限定)",
+ "furigana": "なんぶはるまさ",
+ "illustrator": "タケダサナ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 750,
+ "atkGrowth": 19,
+ "defBase": 710,
+ "defGrowth": 17,
+ "tacticsBase": 450,
+ "tacticsGrowth": 2,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "S",
+  "ki": "B"
+ },
+ "initialSkill": "盈月行軍",
+ "skillDetail": "B/LV10 確率 100% 攻撃 10%上昇/対象:全\n①攻撃 10%上昇する\n②速度 40%上昇する\n③19時から翌01時までの間のみ発動する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 攻撃 10%上昇+速度 40%上昇(19時～翌01時のみ発動)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-17登録。カード画像が無いためixanary.com(cards/2137)とixawiki.com(BushoCard/2137南部晴政)の生HTMLの一致だけで登録した。",
+  "基礎値/成長値/コスト/指揮兵数/rankGrades(槍A・弓A・馬S・器B)/イラストレーター/スキルLV1数値は両ソースで完全一致。LV10数値はixanary.comのみに記載(ixawikiはLV1のみ掲載)。",
+  "章(ch)は両ソースに記載が無く未確認のためnull。"
+ ]
+}

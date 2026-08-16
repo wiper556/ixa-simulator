@@ -1,0 +1,48 @@
+{
+ "name": "下間頼廉",
+ "no": "2120",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "砲攻",
+ "sub": "",
+ "effect": "攻撃上昇+攻撃時自部隊の兵士被害減少",
+ "furigana": "しもつまらいれん",
+ "illustrator": "BISAI",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 780,
+ "atkGrowth": 19,
+ "defBase": 690,
+ "defGrowth": 16,
+ "tacticsBase": 470,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3290,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "B",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "六字の采配",
+ "skillDetail": "B/LV10 確率 30% 攻撃 25%上昇/対象:砲\n①攻撃 25%上昇する\n②攻撃時のみ自部隊の兵士被害が10%減少する",
+ "categoryLinks": [
+  {
+   "href": "skills-higai.html",
+   "label": "兵士被害減少スキル一覧を見る"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "砲　確率 30% / 攻撃 25%上昇(攻撃時のみ自部隊の兵士被害10%減少)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-17登録。カード画像が無いためixanary.comとixawiki.comの生HTML突き合わせのみで登録した。",
+  "基礎値/成長値/コスト/指揮兵数(3290)/rankGrades(槍B・弓B・馬A・器S)/イラストレーター(BISAI)はixanary.com(cards/2120)とixawiki.com(BushoCard/2120下間頼廉)の両方で完全一致。",
+  "skillDetail/trTableはixanary.com/skills/六字の采配のLV10表記(確率+30%/対象砲/攻撃25%上昇/攻撃時のみ自部隊の兵士被害10%減少)を採用。ixawiki側はLV1(確率+17%/攻撃14%上昇/被害4.5%減少)とLV10の両方を明記しておりLV10側も数値完全一致を確認できた。",
+  "章(ch)は両ソースに記載なく未確認。"
+ ]
+}

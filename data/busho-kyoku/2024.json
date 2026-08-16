@@ -1,0 +1,39 @@
+{
+ "name": "前田利家",
+ "no": "2024",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "槍防",
+ "sub": "",
+ "effect": "防御 30%上昇",
+ "furigana": "まえだとしいえ",
+ "illustrator": "藤田香",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 700,
+ "atkGrowth": 17,
+ "defBase": 740,
+ "defGrowth": 17,
+ "tacticsBase": 400,
+ "tacticsGrowth": 1.5,
+ "lv0Troops": 2680,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "B",
+  "uma": "D",
+  "ki": "D"
+ },
+ "initialSkill": "槍陣の極み",
+ "skillDetail": "B/LV10 確率 30% 防御 30%上昇/対象:槍\n①防御 30%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍　確率 30% / 防御 30%上昇"
+  }
+ ],
+ "notes": [
+  "2026-08-17登録(担当D)。カード画像が無いためixanary.com(cards/2024)生HTMLとixawiki.com(index.php?BushoCard/2024前田利家、およびBusho/武将カード一覧(極)・Busho/武将スキルの生HTML)の2ソースで数値が一致することを確認して登録した。"
+ ],
+ "reviewedOk": false
+}

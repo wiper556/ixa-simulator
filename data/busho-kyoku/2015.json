@@ -1,0 +1,39 @@
+{
+ "name": "直江兼続",
+ "no": "2015",
+ "ch": null,
+ "cost": 3,
+ "troop": "全攻速",
+ "sub": "",
+ "effect": "攻撃 5.5%上昇+速度 35%上昇",
+ "furigana": "なおえかねつぐ",
+ "illustrator": "小城崇志",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 800,
+ "atkGrowth": 19,
+ "defBase": 700,
+ "defGrowth": 18,
+ "tacticsBase": 470,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 2840,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "直江状",
+ "skillDetail": "B/LV10 確率 100% 攻撃 5.5%上昇+速度 35%上昇/対象:全\n①攻撃 5.5%上昇する\n②速度 35%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 攻撃 5.5%上昇+速度 35%上昇"
+  }
+ ],
+ "notes": [
+  "2026-08-17登録(担当D)。カード画像が無いためixanary.com(cards/2015)生HTMLとixawiki.com(index.php?BushoCard/2015直江兼続、およびBusho/武将カード一覧(極)・Busho/武将スキルの生HTML)の2ソースで数値が一致することを確認して登録した。"
+ ],
+ "reviewedOk": false
+}

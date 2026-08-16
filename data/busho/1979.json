@@ -1,0 +1,36 @@
+{
+ "name": "足利義輝-復刻-【覇】",
+ "no": "1979",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "全攻防",
+ "sub": "",
+ "effect": "部隊消費コスト低下+攻撃防御上昇",
+ "furigana": "あしかがよしてる",
+ "illustrator": "直良有祐",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1700,
+ "atkGrowth": 120,
+ "defBase": null,
+ "defGrowth": 150,
+ "tacticsBase": 700,
+ "tacticsGrowth": 3,
+ "lv0Troops": 3650,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "S",
+  "uma": "B",
+  "ki": "A"
+ },
+ "initialSkill": "天下千剣",
+ "skillDetail": null,
+ "trTable": null,
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-17登録。カード画像が無いためixanary.com(cards/1979)とixawiki.com(BushoCard/1979足利義輝)の生HTML2ソースのみで作成した。imageFull/imageCharはnull。",
+  "cost/lv0Troops/rankGrades/atkBase・atkGrowth/defGrowth/tacticsBase・tacticsGrowthは両ソース一致。defBaseのみixanary=1700・ixawiki=1850で食い違ったためnullにした(今回の割当20体のうち17体で発生している系統的な食い違い)。",
+  "天下千剣はixawiki側もLv1/Lv10を分けて記載しておりLv1(確率30%攻撃防御40%上昇・部隊消費コスト0.5低下)は両ソース完全一致、Lv10も確率60%攻撃防御88%上昇は一致したが、部隊消費コストの低下量がixanary=2・ixawiki=1で食い違ったためskillDetail/trTableをnullにした。troopは両ソースが「攻撃・防御が上昇する」こと自体は一致していたため「全攻防」と記載した。",
+  "reviewedOkはfalseのまま。カード画像による4隅バッジ・スキルパネル照合が未実施のため黄丸化はできない。"
+ ]
+}

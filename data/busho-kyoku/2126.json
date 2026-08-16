@@ -1,0 +1,42 @@
+{
+ "name": "お犬の方",
+ "no": "2126",
+ "ch": null,
+ "cost": 2,
+ "troop": "全攻速",
+ "sub": "",
+ "effect": "攻撃・速度上昇(19時〜翌01時限定)",
+ "furigana": "おいぬのかた",
+ "illustrator": "みつなり都",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 800,
+ "atkGrowth": 18,
+ "defBase": 650,
+ "defGrowth": 15,
+ "tacticsBase": 460,
+ "tacticsGrowth": 2,
+ "lv0Troops": 2170,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "C",
+  "uma": "C",
+  "ki": "A"
+ },
+ "initialSkill": "人狼",
+ "skillDetail": "B/LV10 確率 100% 攻撃 15%上昇+速度 15%上昇/対象:全\n19時から翌01時まで限定\n①攻撃 15%上昇する\n②速度 15%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 攻撃 15%上昇+速度 15%上昇(19時〜翌01時まで限定)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-17登録。カード画像が無いためixanary.comとixawiki.comの生HTML突き合わせのみで登録した。",
+  "基礎値/成長値/コスト/指揮兵数(2170)/rankGrades(槍S・弓C・馬C・器A)/イラストレーター(みつなり都)はixanary.com(cards/2126)とixawiki.com(BushoCard/2126お犬の方)の両方で完全一致。",
+  "skillDetail/trTableはixanary.com/skills/人狼のLV10表記(確率+100%/対象全/攻撃15%上昇/速度15%上昇/19時〜翌01時まで限定)を採用。LV1値(確率+100%/攻撃6%上昇/速度10%上昇/同時間帯限定)がixawikiの基本ステータス表と一致。",
+  "章(ch)は両ソースに記載なく未確認。"
+ ]
+}

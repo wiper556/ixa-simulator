@@ -1,0 +1,41 @@
+{
+ "name": "明智光秀-復刻-",
+ "no": "1962",
+ "ch": null,
+ "cost": 4,
+ "troop": "弓馬砲器攻破",
+ "sub": "",
+ "effect": "弓・馬・砲・器部隊の攻撃・破壊力上昇",
+ "furigana": "あけちみつひで",
+ "illustrator": "直良有祐",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1110,
+ "atkGrowth": 27,
+ "defBase": null,
+ "defGrowth": 24,
+ "tacticsBase": 640.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 4140,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "B",
+  "uma": "S",
+  "ki": "S"
+ },
+ "initialSkill": "神威 五芒星",
+ "skillDetail": "S/LV10 確率 42% 攻撃 70%上昇/対象:弓・馬・砲・器\n①攻撃 70%上昇する\n②破壊 45%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓・馬・砲・器　確率 42% / 攻撃 70%上昇+破壊 45%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-17登録。カード画像が無いためixanary.com(cards/1962)とixawiki.com(BushoCard/1962明智光秀)の2ソースで突き合わせた。",
+  "防御初期値(defBase)がixanaryは1110(攻撃と同値)、ixawikiは1000で食い違ったためnullにした。防御成長値(+24)・攻撃1110(+27)・兵法640.0(+2.5)・指揮兵数4140・コスト4・統率(槍A/弓B/馬S/器S)・初期スキル「神威 五芒星」(S)の確率/対象/効果は両ソース一致。",
+  "章(ch)は情報源に記載が無いため未確認でnull。"
+ ]
+}

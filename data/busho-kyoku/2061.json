@@ -1,0 +1,41 @@
+{
+ "name": "馬場信房",
+ "no": "2061",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "槍馬攻破",
+ "sub": "",
+ "effect": "槍・馬兵の攻撃・破壊力上昇",
+ "furigana": "ばばのぶふさ",
+ "illustrator": "小林元",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 700,
+ "atkGrowth": 17,
+ "defBase": 670,
+ "defGrowth": 16,
+ "tacticsBase": 420,
+ "tacticsGrowth": 2,
+ "lv0Troops": 2600,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "C",
+  "uma": "S",
+  "ki": "E"
+ },
+ "initialSkill": "棒道麟撃",
+ "skillDetail": "B/LV10 確率 30% 攻撃 25%上昇/対象:槍・馬\n①攻撃 25%上昇する\n②破壊 5%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・馬　確率 30% / 攻撃 25%上昇+破壊 5%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-17登録(担当F)。カード画像が無いためixanary.com(cards/2061)とixawiki.com(index.php?BushoCard/2061馬場信房)の生HTML突き合わせのみで登録した。",
+  "コスト2.5・指揮兵数2600・統率(槍A/弓C/馬S/器E)・攻撃力700(+17)・防御力670(+16)・兵法420(+2)は両ソースで完全一致。LV10(確率30%/攻撃25%上昇/破壊5%上昇)はixawikiに記載が無くixanary単独の値。",
+  "章(ch)は両ソースとも記載が無く未確認のためnull。イラストレーター小林元は両ソース一致。"
+ ]
+}

@@ -1,0 +1,42 @@
+{
+ "name": "足利義昭",
+ "no": "2125",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "弓攻",
+ "sub": "",
+ "effect": "弓部隊の攻撃力上昇",
+ "furigana": "あしかがよしあき",
+ "illustrator": "塚本陽子",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 830,
+ "atkGrowth": 19,
+ "defBase": 670,
+ "defGrowth": 17,
+ "tacticsBase": 450,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3270,
+ "rankGrades": {
+  "yari": "C",
+  "yumi": "S",
+  "uma": "B",
+  "ki": "A"
+ },
+ "initialSkill": "反逆の奏",
+ "skillDetail": "B/LV10 確率 25% 攻撃 50%上昇/対象:弓\n①攻撃 50%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓　確率 25% / 攻撃 50%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-17登録。カード画像が無いためixanary.comとixawiki.comの生HTML突き合わせのみで登録した。",
+  "基礎値/成長値/コスト/指揮兵数(3270)/rankGrades(槍C・弓S・馬B・器A)/イラストレーター(塚本陽子)はixanary.com(cards/2125)とixawiki.com(BushoCard/2125足利義昭)の両方で完全一致。",
+  "skillDetail/trTableはixanary.com/skills/反逆の奏のLV10表記(確率+25%/対象弓/攻撃50%上昇)を採用。LV1値(確率+10%/攻撃22%上昇)がixawikiの基本ステータス表と一致。",
+  "章(ch)は両ソースに記載なく未確認。"
+ ]
+}

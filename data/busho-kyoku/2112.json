@@ -1,0 +1,42 @@
+{
+ "name": "井伊直政",
+ "no": "2112",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "馬攻",
+ "sub": "",
+ "effect": "馬部隊の攻撃力上昇",
+ "furigana": "いいなおまさ",
+ "illustrator": "小森ニコ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 820,
+ "atkGrowth": 18,
+ "defBase": 440,
+ "defGrowth": 15,
+ "tacticsBase": 440,
+ "tacticsGrowth": 2,
+ "lv0Troops": 3280,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "B",
+  "uma": "S",
+  "ki": "C"
+ },
+ "initialSkill": "赤備 鬼神",
+ "skillDetail": "A/LV10 確率 32% 攻撃 35%上昇/対象:馬\n①攻撃 35%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "馬　確率 32% / 攻撃 35%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-17登録。カード画像が無いためixanary.comとixawiki.comの生HTML突き合わせのみで登録した。",
+  "基礎値/成長値/コスト/指揮兵数(3280)/rankGrades(槍A・弓B・馬S・器C)/イラストレーター(小森ニコ)はixanary.com(cards/2112)とixawiki.com(BushoCard/2112井伊直政)の両方で完全一致。",
+  "skillDetail/trTableはixanary.com/skills/赤備 鬼神のLV10表記(確率+32%/対象馬/攻撃35%上昇)を採用。LV1値(確率+13%/攻撃17%上昇)がixawikiの基本ステータス表と一致。",
+  "章(ch)は両ソースに記載なく未確認。"
+ ]
+}

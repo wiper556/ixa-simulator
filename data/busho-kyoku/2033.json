@@ -1,0 +1,39 @@
+{
+ "name": "浅野幸長",
+ "no": "2033",
+ "ch": null,
+ "cost": 3,
+ "troop": "槍馬攻破",
+ "sub": "",
+ "effect": "対象兵科の攻撃・破壊上昇",
+ "furigana": "あさのよしなが",
+ "illustrator": "士基軽太",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 710,
+ "atkGrowth": 18,
+ "defBase": 690,
+ "defGrowth": 17,
+ "tacticsBase": 400,
+ "tacticsGrowth": 2,
+ "lv0Troops": 2950,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "B",
+  "uma": "A",
+  "ki": "B"
+ },
+ "initialSkill": "鷹視狼歩",
+ "skillDetail": "B/LV10 確率 26% 攻撃 30%上昇+破壊 10%上昇/対象:槍・馬\n①攻撃 30%上昇する\n②破壊 10%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・馬　確率 26% / 攻撃 30%上昇+破壊 10%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-17登録。カード画像が無いためixanary.com(cards/2033)とixawiki.com(BushoCard/2033浅野幸長)の生HTMLを突き合わせて一致した項目のみ登録した。基礎値/成長値/コスト/指揮兵数/統率ランク/スキル確率/効果値は両ソースで完全一致を確認済み。"
+ ]
+}

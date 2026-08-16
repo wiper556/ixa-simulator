@@ -1,0 +1,41 @@
+{
+ "name": "伊達政宗-復刻-（2）",
+ "no": "1955",
+ "ch": null,
+ "cost": 4,
+ "troop": "槍砲器防",
+ "sub": "",
+ "effect": "槍・砲・器部隊の防御力上昇(合流防御時必ず発動)",
+ "furigana": "だてまさむね",
+ "illustrator": "直良有祐",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 980,
+ "atkGrowth": 24,
+ "defBase": null,
+ "defGrowth": 26,
+ "tacticsBase": 620.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 4000,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "B",
+  "ki": "S"
+ },
+ "initialSkill": "独眼竜神雷",
+ "skillDetail": "S/LV10 確率 35% 防御 66%上昇/対象:槍・砲・器\n①防御 66%上昇する\n②合流攻撃防御時は必ずスキルが発動する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・砲・器　確率 35% / 防御 66%上昇(合流攻撃防御時は必ず発動)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-17登録。カード画像が無いためixanary.com(cards/1955)とixawiki.com(BushoCard/1955伊達政宗)の2ソースで突き合わせた。",
+  "防御初期値(defBase)がixanaryは980(攻撃と同値)、ixawikiは1100で食い違ったためnullにした。防御成長値(+26)・攻撃980(+24)・兵法620.0(+2.5)・指揮兵数4000・コスト4・統率(槍S/弓A/馬B/器S)・初期スキル「独眼竜神雷」(S)の確率/対象/効果は両ソース一致。",
+  "章(ch)は情報源に記載が無いため未確認でnull。"
+ ]
+}

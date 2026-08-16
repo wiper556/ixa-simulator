@@ -1,0 +1,42 @@
+{
+ "name": "斎藤道三（2）",
+ "no": "2075",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "槍馬器攻破",
+ "sub": "",
+ "effect": "攻撃・破壊上昇",
+ "furigana": "さいとうどうさん",
+ "illustrator": "萩谷薫",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 700,
+ "atkGrowth": 18,
+ "defBase": 700,
+ "defGrowth": 16,
+ "tacticsBase": 480,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3050,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "C",
+  "uma": "A",
+  "ki": "B"
+ },
+ "initialSkill": "双頭蛇 国盗",
+ "skillDetail": "B/LV10 確率 27% 攻撃 25%上昇+破壊 10%上昇/対象:槍・馬・器\n①攻撃 25%上昇する\n②破壊 10%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・馬・器　確率 27% / 攻撃 25%上昇+破壊 10%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-17登録。名前の（2）は割り当て元(assign_G.txt)のixawiki一覧表記「斎藤道三(2)」をそのまま全角化した。個別カードページ側にはこの(2)表記は出ていない。",
+  "カード画像が無いため ixanary.com(cards/2075)と ixawiki.com(BushoCard/2075斎藤道三)の生HTML2ソースで確認した。",
+  "コスト/指揮兵数/攻撃防御兵法の初期値成長値/兵科ランク(槍S弓C馬A器B)/スキル名対象確率効果(LV10確率27%攻撃25%上昇+破壊10%上昇対象槍馬器)/イラストレーターが両ソース完全一致。",
+  "章(ch)は両ソースとも記載が無くnullのまま。カード画像自体が無いためimageFull/imageCharはnull、reviewedOkはfalseのまま(rankGrades等はテキスト情報の2ソース一致で登録)。"
+ ]
+}

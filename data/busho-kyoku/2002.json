@@ -1,0 +1,41 @@
+{
+ "name": "黒田官兵衛",
+ "no": "2002",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "上級器攻破",
+ "sub": "",
+ "effect": "上級器の攻撃と破壊が上昇",
+ "furigana": "くろだかんべえ",
+ "illustrator": "マツオヒロミ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 550,
+ "atkGrowth": 16,
+ "defBase": 585,
+ "defGrowth": 16,
+ "tacticsBase": 480,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 2450,
+ "rankGrades": {
+  "yari": "C",
+  "yumi": "S",
+  "uma": "D",
+  "ki": "A"
+ },
+ "initialSkill": "鬼謀 国砕",
+ "skillDetail": "B/LV10 確率 35% 攻撃 10%上昇 破壊 25%上昇/対象:上級器\n①攻撃 10%上昇する\n②破壊 25%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "上級器　確率 35% / 攻撃 10%上昇+破壊 25%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "カード画像が無いため imageFull/imageChar は null。ixanary.comの埋め込みJSON(cards/2002)とixawiki.com(BushoCard/2002)の基本ステータス表・スキル表を突き合わせて登録した。"
+ ],
+ "wikiOldestComment": "2014-01-03",
+ "wikiCommentCount": 16
+}

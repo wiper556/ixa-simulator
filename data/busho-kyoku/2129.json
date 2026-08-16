@@ -1,0 +1,40 @@
+{
+ "name": "真田信之",
+ "no": "2129",
+ "ch": null,
+ "cost": 2,
+ "troop": "槍馬防",
+ "sub": "",
+ "effect": "槍・馬部隊の防御力上昇",
+ "furigana": "さなだのぶゆき",
+ "illustrator": "BISAI",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 690,
+ "atkGrowth": 17,
+ "defBase": 690,
+ "defGrowth": 17,
+ "tacticsBase": 450,
+ "tacticsGrowth": 2,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "C",
+  "uma": "B",
+  "ki": "B"
+ },
+ "initialSkill": "信濃の獅子",
+ "skillDetail": "B/LV10 確率 20% 防御 50%上昇/対象:槍・馬\n①防御 50%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・馬　確率 20% / 防御 50%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-17登録。カード画像が無いためixanary.com(cards/2129)とixawiki.com(BushoCard/2129真田信之)の生HTMLの一致だけで登録した。",
+  "基礎値/成長値/コスト/指揮兵数/rankGrades(槍S・弓C・馬B・器B)/イラストレーター/スキルLV1数値は両ソースで完全一致。LV10数値はixanary.comのみに記載(ixawikiはLV1のみ掲載)。",
+  "章(ch)は両ソースに記載が無く未確認のためnull。"
+ ]
+}

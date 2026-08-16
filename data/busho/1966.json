@@ -1,0 +1,42 @@
+{
+ "name": "石田三成-復刻-（3）",
+ "no": "1966",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "弓砲器攻",
+ "sub": "",
+ "effect": "弓・砲・器部隊の攻撃力上昇(防御参加武将数依存)",
+ "furigana": "いしだみつなり",
+ "illustrator": "直良有祐",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1140,
+ "atkGrowth": 28,
+ "defBase": null,
+ "defGrowth": 27,
+ "tacticsBase": 540.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3920,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "S",
+  "uma": "B",
+  "ki": "S"
+ },
+ "initialSkill": "天廟斬誓",
+ "skillDetail": "S/LV10 確率 40% 攻撃 (1.8×防御参加武将数)%上昇/対象:弓・砲・器\n①弓・砲・器の攻撃が(1.8×防御参加武将数)%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓・砲・器　確率 40% / 攻撃 1.8%×防御参加武将数(280人)=504.0%"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-17登録。カード画像が無いためixanary.com(cards/1966)とixawiki.com(BushoCard/1966石田三成)の2ソースで突き合わせた。",
+  "防御初期値(defBase)がixanaryは1140(攻撃と同値)、ixawikiは1050で食い違ったためnullにした。防御成長値(+27)・攻撃1140(+28)・兵法540.0(+2.5)・指揮兵数3920・コスト3.5・統率(槍A/弓S/馬B/器S)・初期スキル「天廟斬誓」(S)の確率/対象/効果は両ソース一致。",
+  "この攻撃スキルの上昇量は「防御参加武将数」に依存する計算式だが、これは両ソースの表記をそのまま踏襲したもの(誤記の可能性はあるが訂正していない)。",
+  "章(ch)は情報源に記載が無いため未確認でnull。"
+ ]
+}

@@ -1,0 +1,41 @@
+{
+ "name": "真田昌幸",
+ "no": "2004",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "弓馬防",
+ "sub": "",
+ "effect": "対象兵科の防御が上昇",
+ "furigana": "さなだまさゆき",
+ "illustrator": "岩元辰郎",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 640,
+ "atkGrowth": 15,
+ "defBase": 740,
+ "defGrowth": 16,
+ "tacticsBase": 475,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 2550,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "B",
+  "ki": "D"
+ },
+ "initialSkill": "戦陣 千鳥",
+ "skillDetail": "B/LV10 確率 45% 防御 30%上昇/対象:弓・馬\n①防御 30%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓・馬　確率 45% / 防御 30%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "カード画像が無いため imageFull/imageChar は null。ixanary.comの埋め込みJSON(cards/2004)とixawiki.com(BushoCard/2004)の基本ステータス表・スキル表を突き合わせて登録した。"
+ ],
+ "wikiOldestComment": "2014-03-12",
+ "wikiCommentCount": 23
+}

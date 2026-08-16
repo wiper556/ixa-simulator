@@ -1,0 +1,43 @@
+{
+ "name": "初",
+ "no": "1995",
+ "ch": null,
+ "cost": 4,
+ "troop": "全防",
+ "sub": "",
+ "effect": "全兵科の防御上昇、加勢中も兵士編成が可能",
+ "furigana": "はつ",
+ "illustrator": "直良有祐",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1040,
+ "atkGrowth": 34,
+ "defBase": null,
+ "defGrowth": 52,
+ "tacticsBase": 640,
+ "tacticsGrowth": 3,
+ "lv0Troops": 4260,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "S",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "天浮橋",
+ "skillDetail": "S/LV10 確率 50% 防御 125%上昇/対象:全\n①防御 125%上昇する\n②他城主の拠点に加勢中にも部隊の兵士編成を行える",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 50% / 防御 125%上昇(加勢中も部隊の兵士編成が可能)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "カード画像が無いため imageFull/imageChar は null。ixanary.comの埋め込みJSON(cards/1995)とixawiki.com(BushoCard/1995)の基本ステータス表・スキル表を突き合わせて登録した。",
+  "defBase(防御初期値)がixanaryでは1040(攻撃と同値)・ixawikiでは1090で食い違ったためnullにした。",
+  "ixawikiの武将カード一覧表記は「初」のみで括弧書きが無いため無印とした。"
+ ],
+ "wikiOldestComment": "2020-12-15",
+ "wikiCommentCount": 32
+}

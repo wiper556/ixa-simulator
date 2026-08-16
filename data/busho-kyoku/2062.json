@@ -1,0 +1,41 @@
+{
+ "name": "高坂昌信",
+ "no": "2062",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "槍弓馬攻速",
+ "sub": "",
+ "effect": "槍・弓・馬部隊の攻撃・速度上昇",
+ "furigana": "こうさかまさのぶ",
+ "illustrator": "小林元",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 670,
+ "atkGrowth": 17,
+ "defBase": 660,
+ "defGrowth": 16,
+ "tacticsBase": 420,
+ "tacticsGrowth": 2,
+ "lv0Troops": 2580,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "C"
+ },
+ "initialSkill": "甲州流軍学",
+ "skillDetail": "B/LV10 確率 100% 攻撃 6.5%上昇/対象:槍・弓・馬\n①攻撃 6.5%上昇する\n②速度 33%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・弓・馬　確率 100% / 攻撃 6.5%上昇+速度 33%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-17登録(担当F)。カード画像が無いためixanary.com(cards/2062)とixawiki.com(index.php?BushoCard/2062高坂昌信)の生HTML突き合わせのみで登録した。",
+  "コスト2.5・指揮兵数2580・統率(槍A/弓A/馬A/器C)・攻撃力670(+17)・防御力660(+16)・兵法420(+2)は両ソースで完全一致。LV10(確率100%/攻撃6.5%上昇/速度33%上昇)はixawikiに記載が無くixanary単独の値。",
+  "章(ch)は両ソースとも記載が無く未確認のためnull。イラストレーター小林元は両ソース一致。"
+ ]
+}

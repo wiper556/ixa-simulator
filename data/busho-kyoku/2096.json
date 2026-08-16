@@ -1,0 +1,40 @@
+{
+ "name": "出雲阿国（2）",
+ "no": "2096",
+ "ch": null,
+ "cost": 3.0,
+ "troop": "全攻",
+ "sub": "",
+ "effect": "戦闘勝利時のみ防衛側の兵士被害数+10%",
+ "furigana": "いずものおくに",
+ "illustrator": "戸橋ことみ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 640,
+ "atkGrowth": 18.0,
+ "defBase": 620,
+ "defGrowth": 17.0,
+ "tacticsBase": 420.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2880,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "傾奇踊り",
+ "skillDetail": "A/LV10 確率 30% 戦闘勝利時のみ防衛側の兵士被害数+10%/対象:全\n①戦闘勝利時のみ防衛側の兵士被害数+10%",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 30% / 戦闘勝利時のみ防衛側の兵士被害数+10%"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-17登録。カード画像が無いためixanary.com(cards/2096 と skills/傾奇踊り)とixawiki.com(BushoCard/2096出雲阿国)の生HTMLを直接確認し両方が一致した項目だけで登録した(reviewedOkはfalseのまま)。",
+  "合成候補(synthesisTable)は今回付けていない。章(ch)は両ソースとも記載が無いため未確認。"
+ ]
+}

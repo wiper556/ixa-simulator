@@ -1,0 +1,39 @@
+{
+ "name": "毛利輝元",
+ "no": "2035",
+ "ch": null,
+ "cost": 3,
+ "troop": "全攻速",
+ "sub": "",
+ "effect": "対象兵科の攻撃・速度上昇",
+ "furigana": "もうりてるもと",
+ "illustrator": "萩谷薫",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 730,
+ "atkGrowth": 18,
+ "defBase": 680,
+ "defGrowth": 16,
+ "tacticsBase": 450,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 2850,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "神行法 千里",
+ "skillDetail": "B/LV10 確率 100% 攻撃 6.5%上昇+速度 33%上昇/対象:全\n①攻撃 6.5%上昇する\n②速度 33%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 攻撃 6.5%上昇+速度 33%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-17登録。カード画像が無いためixanary.com(cards/2035)とixawiki.com(BushoCard/2035毛利輝元)の生HTMLを突き合わせて一致した項目のみ登録した。基礎値/成長値/コスト/指揮兵数/統率ランク/スキル確率/効果値は両ソースで完全一致を確認済み。"
+ ]
+}

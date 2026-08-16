@@ -1,0 +1,42 @@
+{
+ "name": "井伊直虎（2）",
+ "no": "1969",
+ "ch": null,
+ "cost": 4.5,
+ "troop": "槍器鉄攻",
+ "sub": "",
+ "effect": "部隊の総コストで効果が変化",
+ "furigana": "いいなおとら",
+ "illustrator": "直良有祐",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1100,
+ "atkGrowth": 28,
+ "defBase": null,
+ "defGrowth": 27,
+ "tacticsBase": 610,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 4600,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "井伊の赤鬼",
+ "skillDetail": "S/LV10 確率 45% 攻撃 25%上昇/対象:槍器鉄\n①攻撃 25%上昇する\n②部隊の総コストに応じて効果が変化する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍器鉄　確率 45% / 攻撃 25%上昇(部隊の総コストに応じて効果が変化する)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-17登録。カード画像が無いためixanary.com(cards/1969)とixawiki.com(BushoCard/1969井伊直虎)の生HTML2ソースのみで作成した。imageFull/imageCharはnull。",
+  "cost/lv0Troops/rankGrades/atkBase・atkGrowth/tacticsBase・tacticsGrowth/defGrowthは両ソース一致。defBaseのみixanary=1100・ixawiki=1070で食い違ったためnullにした(この食い違いは今回の割当20体のうち17体で同様に発生している系統的なもの。ixanaryのdefence値がattack値と完全一致する構造になっており、defBase自体が信頼できない可能性がある)。",
+  "井伊の赤鬼はLV1(確率18%攻撃10%上昇・部隊の総コストで効果が変化)の内容が両ソースで一致したため、ixanary.comのLV10データ(確率45%攻撃25%上昇)をskillDetail/trTableに採用した。",
+  "reviewedOkはfalseのまま。カード画像による4隅バッジ・スキルパネル照合が未実施のため黄丸化はできない。"
+ ]
+}

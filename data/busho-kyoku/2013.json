@@ -1,0 +1,39 @@
+{
+ "name": "島左近",
+ "no": "2013",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "槍攻破",
+ "sub": "",
+ "effect": "攻撃 25%上昇+破壊 5%上昇",
+ "furigana": "しまさこん",
+ "illustrator": "三好載克",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 750,
+ "atkGrowth": 18,
+ "defBase": 680,
+ "defGrowth": 15,
+ "tacticsBase": 370,
+ "tacticsGrowth": 2,
+ "lv0Troops": 2550,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "E",
+  "uma": "A",
+  "ki": "B"
+ },
+ "initialSkill": "槍撃 修羅",
+ "skillDetail": "C/LV10 確率 25% 攻撃 25%上昇+破壊 5%上昇/対象:槍\n①攻撃 25%上昇する\n②破壊 5%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍　確率 25% / 攻撃 25%上昇+破壊 5%上昇"
+  }
+ ],
+ "notes": [
+  "2026-08-17登録(担当D)。カード画像が無いためixanary.com(cards/2013)生HTMLとixawiki.com(index.php?BushoCard/2013島左近、およびBusho/武将カード一覧(極)・Busho/武将スキルの生HTML)の2ソースで数値が一致することを確認して登録した。"
+ ],
+ "reviewedOk": false
+}

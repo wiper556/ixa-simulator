@@ -1,0 +1,25 @@
+{
+ "name": "井伊の赤鬼",
+ "rank": "S",
+ "baseRate": 45,
+ "target": "槍器鉄",
+ "effectSummary": "S/LV10 確率 45% 攻撃 25%上昇/対象:槍器鉄\n①攻撃 25%上昇する\n②部隊の総コストに応じて効果が変化する",
+ "categoryLinks": [],
+ "sourceCharacters": [
+  {
+   "name": "井伊直虎（2）",
+   "no": "1969",
+   "slot": "移植不可"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍器鉄　確率 45% / 攻撃 25%上昇(部隊の総コストに応じて効果が変化する)"
+  }
+ ],
+ "notes": [
+  "A-3-9「武将自身の初期スキル(S以上)は無条件にページを作る」により2026-08-16に一括作成。内容は data/busho/1969.json の skillDetail / trTable からの転記で、新しい事実は持ち込んでいない。"
+ ]
+}

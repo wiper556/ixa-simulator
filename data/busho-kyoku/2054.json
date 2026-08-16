@@ -1,0 +1,42 @@
+{
+ "name": "定恵院",
+ "no": "2054",
+ "ch": null,
+ "cost": 2,
+ "troop": "槍防",
+ "sub": "",
+ "effect": "槍兵の防御力上昇",
+ "furigana": "じょうけいいん",
+ "illustrator": "株式会社レバーン＋キョー介",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 600,
+ "atkGrowth": 15,
+ "defBase": null,
+ "defGrowth": 16,
+ "tacticsBase": 400,
+ "tacticsGrowth": 1.5,
+ "lv0Troops": 2270,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "C",
+  "uma": "B",
+  "ki": "D"
+ },
+ "initialSkill": "甲駿の誓い",
+ "skillDetail": "A/LV10 確率 40% 防御 35%上昇/対象:槍\n①防御 35%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍　確率 40% / 防御 35%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-17登録(担当F)。カード画像が無いためixanary.com(cards/2054)とixawiki.com(index.php?BushoCard/2054定恵院)の生HTML突き合わせのみで登録した。",
+  "コスト2・指揮兵数2270・統率(槍S/弓C/馬B/器D)・攻撃力600(+15)・兵法400(+1.5)は両ソースで一致。防御力の初期値のみixanaryが600・ixawikiが650で食い違ったためdefBaseはnullにした(defGrowthの+16は両ソース一致)。",
+  "初期スキル「甲駿の誓い」LV1(確率+25%/対象槍/防御20%上昇)は両ソースで完全一致。LV10(確率40%/防御35%上昇)はixawikiに記載が無くixanary単独の値。",
+  "章(ch)は両ソースとも記載が無く未確認のためnull。イラストレーター株式会社レバーン＋キョー介は両ソース一致。"
+ ]
+}

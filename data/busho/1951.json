@@ -1,0 +1,42 @@
+{
+ "name": "お市-復刻-",
+ "no": "1951",
+ "ch": null,
+ "cost": 0.5,
+ "troop": "全防",
+ "sub": "",
+ "effect": "全軍の防御力上昇(合流攻撃防御時2倍)",
+ "furigana": "おいち",
+ "illustrator": "直良有祐",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 830,
+ "atkGrowth": 21,
+ "defBase": null,
+ "defGrowth": 24,
+ "tacticsBase": 480.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 1820,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "S",
+  "uma": "B",
+  "ki": "A"
+ },
+ "initialSkill": "絶間ノ天姫",
+ "skillDetail": "S/LV10 確率 100% 防御 30%上昇/対象:全\n①防御 30%上昇する\n②合流攻撃防御時は効果2倍となる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 防御 30%上昇(合流攻撃防御時は効果2倍)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-17登録。カード画像が無いためixanary.com(cards/1951)とixawiki.com(BushoCard/1951お市)の2ソースで突き合わせた。",
+  "防御初期値(defBase)がixanaryは830(攻撃と同値)、ixawikiは940で食い違ったためnullにした。防御成長値(+24)・攻撃830(+21)・兵法480.0(+2.5)・指揮兵数1820・コスト0.5・統率(槍A/弓S/馬B/器A)・初期スキル「絶間ノ天姫」(S)の確率/対象/効果は両ソース一致。",
+  "ixanary.comにはLV1に表示されない追加の部隊スキル「防.戦姫艶舞」の記載があるが、カードLV0画面には出ない枠のためinitialSkillには含めていない。",
+  "章(ch)は情報源に記載が無いため未確認でnull。"
+ ]
+}

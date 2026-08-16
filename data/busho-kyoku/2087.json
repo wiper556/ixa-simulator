@@ -1,0 +1,42 @@
+{
+ "name": "最上義光",
+ "no": "2087",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "馬砲攻",
+ "sub": "",
+ "effect": "攻撃上昇",
+ "furigana": "もがみよしあき",
+ "illustrator": "士基軽太",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 780,
+ "atkGrowth": 18,
+ "defBase": 760,
+ "defGrowth": 16,
+ "tacticsBase": 470,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3120,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "B",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "玄狐跳澗",
+ "skillDetail": "B/LV10 確率 30% 攻撃 30%上昇/対象:馬・砲\n①攻撃 30%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "馬・砲　確率 30% / 攻撃 30%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-17登録。カード画像が無いため ixanary.com(cards/2087)と ixawiki.com(BushoCard/2087最上義光)の生HTML2ソースで確認した。",
+  "コスト/指揮兵数/攻撃防御兵法の初期値成長値/兵科ランク(槍B弓B馬A器S)/スキル名対象確率効果(LV10確率30%攻撃30%上昇対象馬砲)/イラストレーターが両ソース完全一致。",
+  "furiganaはixanaryが「もがみよしあき」、ixawikiのルビが「もがみ よしあき」(姓名間に半角スペース)だった。読み自体は同一で他の登録済み武将のfuriganaにスペースを入れる例が無いため単なる表記ゆれとみなしスペース無しで登録した(実質的な不一致ではないと判断)。",
+  "章(ch)は両ソースとも記載が無くnullのまま。カード画像自体が無いためimageFull/imageCharはnull、reviewedOkはfalseのまま(rankGrades等はテキスト情報の2ソース一致で登録)。"
+ ]
+}

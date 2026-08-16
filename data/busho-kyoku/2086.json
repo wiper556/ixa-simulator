@@ -1,0 +1,41 @@
+{
+ "name": "瑞渓院",
+ "no": "2086",
+ "ch": null,
+ "cost": 2,
+ "troop": "槍砲防",
+ "sub": "",
+ "effect": "防御上昇",
+ "furigana": "ずいけいいん",
+ "illustrator": "碧風羽",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 640,
+ "atkGrowth": 15,
+ "defBase": 800,
+ "defGrowth": 18,
+ "tacticsBase": 470,
+ "tacticsGrowth": 2,
+ "lv0Troops": 2090,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "C",
+  "uma": "C",
+  "ki": "A"
+ },
+ "initialSkill": "三つ鱗巴陣",
+ "skillDetail": "B/LV10 確率 35% 防御 25%上昇/対象:槍・砲\n①防御 25%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・砲　確率 35% / 防御 25%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-17登録。カード画像が無いため ixanary.com(cards/2086)と ixawiki.com(BushoCard/2086瑞渓院)の生HTML2ソースで確認した。",
+  "コスト/指揮兵数/攻撃防御兵法の初期値成長値/兵科ランク(槍S弓C馬C器A)/スキル名対象確率効果(LV10確率35%防御25%上昇対象槍砲)/イラストレーターが両ソース完全一致。",
+  "章(ch)は両ソースとも記載が無くnullのまま。カード画像自体が無いためimageFull/imageCharはnull、reviewedOkはfalseのまま(rankGrades等はテキスト情報の2ソース一致で登録)。"
+ ]
+}

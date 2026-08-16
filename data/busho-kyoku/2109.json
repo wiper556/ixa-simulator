@@ -1,0 +1,42 @@
+{
+ "name": "徳川秀忠",
+ "no": "2109",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "弓砲攻",
+ "sub": "",
+ "effect": "弓・砲部隊の攻撃力上昇",
+ "furigana": "とくがわひでただ",
+ "illustrator": "オンダカツキ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 640,
+ "atkGrowth": 18,
+ "defBase": 630,
+ "defGrowth": 17,
+ "tacticsBase": 460,
+ "tacticsGrowth": 2,
+ "lv0Troops": 3240,
+ "rankGrades": {
+  "yari": "C",
+  "yumi": "A",
+  "uma": "C",
+  "ki": "B"
+ },
+ "initialSkill": "君子中庸",
+ "skillDetail": "A/LV10 確率 32% 攻撃 25%上昇/対象:弓・砲\n①攻撃 25%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓・砲　確率 32% / 攻撃 25%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-17登録。カード画像が無いためixanary.comとixawiki.comの生HTML突き合わせのみで登録した。",
+  "基礎値/成長値/コスト/指揮兵数(3240)/rankGrades(槍C・弓A・馬C・器B)/イラストレーター(オンダカツキ)はixanary.com(cards/2109)とixawiki.com(BushoCard/2109徳川秀忠)の両方で完全一致。",
+  "skillDetail/trTableはixanary.com/skills/君子中庸のLV10表記(確率+32%/対象弓砲/攻撃25%上昇)を採用。LV1値(確率+10%/攻撃10%上昇)がixawikiの基本ステータス表と一致することでスキル対象・種別の整合を確認済み(ixawikiはLV1相当のみ掲載)。",
+  "章(ch)は両ソースに記載なく未確認。"
+ ]
+}

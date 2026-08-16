@@ -1,0 +1,42 @@
+{
+ "name": "小早川秀秋-復刻-",
+ "no": "1993",
+ "ch": null,
+ "cost": 3,
+ "troop": "弓砲器防",
+ "sub": "",
+ "effect": "対象兵科の防御上昇と武将ダメージ軽減",
+ "furigana": "こばやかわひであき",
+ "illustrator": "直良有祐",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 970,
+ "atkGrowth": 27,
+ "defBase": null,
+ "defGrowth": 54,
+ "tacticsBase": 630,
+ "tacticsGrowth": 3,
+ "lv0Troops": 3900,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "SS",
+  "uma": "B",
+  "ki": "S"
+ },
+ "initialSkill": "虚朧陽焔",
+ "skillDetail": "S/LV10 確率 65% 防御 100%上昇/対象:弓・砲・器\n①防御 100%上昇する\n②自部隊の武将ダメージ軽減4%(重複発動上限数5)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓・砲・器　確率 65% / 防御 100%上昇(自部隊の武将ダメージ軽減4%・重複発動上限数5)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "カード画像が無いため imageFull/imageChar は null。ixanary.comの埋め込みJSON(cards/1993)とixawiki.com(BushoCard/1993)の基本ステータス表・スキル表を突き合わせて登録した。",
+  "defBase(防御初期値)がixanaryでは970(攻撃と同値)・ixawikiでは1180で食い違ったためnullにした。"
+ ],
+ "wikiOldestComment": "2020-07-04",
+ "wikiCommentCount": 24
+}

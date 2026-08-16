@@ -1,0 +1,39 @@
+{
+ "name": "服部半蔵",
+ "no": "2039",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "全特",
+ "sub": "",
+ "effect": "攻撃時に敵軍のスキル発動率を低下",
+ "furigana": "はっとりはんぞう",
+ "illustrator": "wolfnia",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 900,
+ "atkGrowth": 18,
+ "defBase": 900,
+ "defGrowth": 16,
+ "tacticsBase": 470,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 2480,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "B",
+  "ki": "A"
+ },
+ "initialSkill": "封技閃影",
+ "skillDetail": "A/LV10 確率 40% 攻撃時に敵軍のスキル発動率を10%低下(重複不可)/対象:全\n①攻撃時に敵軍のスキル発動率を10%低下させる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 40% / 攻撃時に敵軍のスキル発動率を10%低下(重複不可)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-17登録。カード画像が無いためixanary.com(cards/2039)とixawiki.com(BushoCard/2039服部半蔵)の生HTMLを突き合わせて一致した項目のみ登録した。基礎値/成長値/コスト/指揮兵数/統率ランク/スキル確率/効果値は両ソースで完全一致を確認済み。"
+ ]
+}

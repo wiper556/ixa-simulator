@@ -1,0 +1,42 @@
+{
+ "name": "黄梅院",
+ "no": "2123",
+ "ch": null,
+ "cost": 1.5,
+ "troop": "全防",
+ "sub": "",
+ "effect": "全軍の防御力上昇",
+ "furigana": "おうばいいん",
+ "illustrator": "紺藤ココン",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 600,
+ "atkGrowth": 15,
+ "defBase": 640,
+ "defGrowth": 19,
+ "tacticsBase": 460,
+ "tacticsGrowth": 2,
+ "lv0Troops": 2100,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "D",
+  "ki": "A"
+ },
+ "initialSkill": "盟約の寵姫",
+ "skillDetail": "B/LV10 確率 30% 防御 35%上昇/対象:全\n①防御 35%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 30% / 防御 35%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-17登録。カード画像が無いためixanary.comとixawiki.comの生HTML突き合わせのみで登録した。",
+  "基礎値/成長値/コスト/指揮兵数(2100)/rankGrades(槍A・弓A・馬D・器A)/イラストレーター(紺藤ココン)はixanary.com(cards/2123)とixawiki.com(BushoCard/2123黄梅院)の両方で完全一致。",
+  "skillDetail/trTableはixanary.com/skills/盟約の寵姫のLV10表記(確率+30%/対象全/防御35%上昇)を採用。LV1値(確率+17%/防御24%上昇)がixawikiの基本ステータス表と一致。",
+  "章(ch)は両ソースに記載なく未確認。"
+ ]
+}

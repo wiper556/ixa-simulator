@@ -1,0 +1,39 @@
+{
+ "name": "柳生宗矩",
+ "no": "2040",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "将攻",
+ "sub": "",
+ "effect": "「将」の攻撃上昇",
+ "furigana": "やぎゅうむねのり",
+ "illustrator": "添田一平",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 960,
+ "atkGrowth": 46,
+ "defBase": 930,
+ "defGrowth": 46,
+ "tacticsBase": 390,
+ "tacticsGrowth": 2,
+ "lv0Troops": 2060,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "B",
+  "uma": "F",
+  "ki": "B"
+ },
+ "initialSkill": "新陰流逆風",
+ "skillDetail": "B/LV10 確率 36% 攻撃 38%上昇/対象:将\n①攻撃 38%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "将　確率 36% / 攻撃 38%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-17登録。カード画像が無いためixanary.com(cards/2040)とixawiki.com(BushoCard/2040柳生宗矩)の生HTMLを突き合わせて一致した項目のみ登録した。基礎値/成長値/コスト/指揮兵数/統率ランク/スキル確率/効果値は両ソースで完全一致を確認済み。"
+ ]
+}

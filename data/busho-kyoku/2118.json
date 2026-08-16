@@ -1,0 +1,42 @@
+{
+ "name": "明石全登",
+ "no": "2118",
+ "ch": null,
+ "cost": 1.5,
+ "troop": "全攻速",
+ "sub": "",
+ "effect": "攻撃・速度上昇",
+ "furigana": "あかしたけのり",
+ "illustrator": "小城崇志",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 670,
+ "atkGrowth": 17,
+ "defBase": 615,
+ "defGrowth": 16,
+ "tacticsBase": 430,
+ "tacticsGrowth": 2,
+ "lv0Troops": 2030,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "B",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "聖戦の進軍",
+ "skillDetail": "B/LV10 確率 100% 攻撃 4%上昇+速度 45%上昇/対象:全\n①攻撃 4%上昇する\n②速度 45%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 攻撃 4%上昇+速度 45%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-17登録。カード画像が無いためixanary.comとixawiki.comの生HTML突き合わせのみで登録した。",
+  "基礎値/成長値/コスト/指揮兵数(2030)/rankGrades(槍A・弓B・馬A・器A)/イラストレーター(小城崇志)はixanary.com(cards/2118)とixawiki.com(BushoCard/2118明石全登)の両方で完全一致。",
+  "skillDetail/trTableはixanary.com/skills/聖戦の進軍のLV10表記(確率+100%/対象全/攻撃4%上昇/速度45%上昇)を採用。LV1値(確率+100%/攻撃2%上昇/速度10%上昇)がixawikiの基本ステータス表と一致。",
+  "章(ch)は両ソースに記載なく未確認。"
+ ]
+}

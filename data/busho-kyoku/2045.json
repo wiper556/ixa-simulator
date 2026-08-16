@@ -1,0 +1,39 @@
+{
+ "name": "武田信玄",
+ "no": "2045",
+ "ch": null,
+ "cost": 3,
+ "troop": "槍弓馬攻",
+ "sub": "",
+ "effect": "対象兵科の攻撃上昇",
+ "furigana": "たけだしんげん",
+ "illustrator": "小林元",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 710,
+ "atkGrowth": 19,
+ "defBase": 710,
+ "defGrowth": 18,
+ "tacticsBase": 445,
+ "tacticsGrowth": 2,
+ "lv0Troops": 2820,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "B",
+  "uma": "S",
+  "ki": "C"
+ },
+ "initialSkill": "風林火山 戦",
+ "skillDetail": "A/LV10 確率 35% 攻撃 30%上昇/対象:槍・弓・馬\n①攻撃 30%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・弓・馬　確率 35% / 攻撃 30%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-17登録。カード画像が無いためixanary.com(cards/2045)とixawiki.com(BushoCard/2045武田信玄)の生HTMLを突き合わせて一致した項目のみ登録した。基礎値/成長値/コスト/指揮兵数/統率ランク/スキル確率/効果値は両ソースで完全一致を確認済み。"
+ ]
+}

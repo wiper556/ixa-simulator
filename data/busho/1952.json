@@ -1,0 +1,42 @@
+{
+ "name": "黒田如水-復刻-（2）",
+ "no": "1952",
+ "ch": null,
+ "cost": 4,
+ "troop": "全攻破",
+ "sub": "",
+ "effect": "全軍の攻撃・破壊力上昇",
+ "furigana": "くろだじょすい",
+ "illustrator": "直良有祐",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 950,
+ "atkGrowth": 24,
+ "defBase": null,
+ "defGrowth": 22,
+ "tacticsBase": 550.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3760,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "天元の神略",
+ "skillDetail": "S/LV10 確率 27% 攻撃 59%上昇/対象:全\n①攻撃 59%上昇する\n②破壊 33%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 27% / 攻撃 59%上昇+破壊 33%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-17登録。カード画像が無いためixanary.com(cards/1952)とixawiki.com(BushoCard/1952黒田如水)の2ソースで突き合わせた。",
+  "防御初期値(defBase)がixanaryは950(攻撃と同値)、ixawikiは910で食い違ったためnullにした。防御成長値(+22)・攻撃950(+24)・兵法550.0(+2.5)・指揮兵数3760・コスト4・統率(槍A/弓A/馬A/器S)・初期スキル「天元の神略」(S)の確率/対象/効果は両ソース一致。",
+  "ixanary.comにはLV1に表示されない追加の部隊スキル「攻破.主への祈り」の記載があるが、カードLV0画面には出ない枠のためinitialSkillには含めていない。",
+  "章(ch)は情報源に記載が無いため未確認でnull。"
+ ]
+}
