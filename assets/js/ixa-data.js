@@ -3031,8 +3031,8 @@ const specialSkills = {
     note: 'SSS(防御・模倣不可)。確率+100%/対象:追加スキル。このスキルを持つ武将カードは、追加スキル(追加1・追加2)の防御・破壊効果がLV1=1.2倍→LV10=2.5倍になる(自動反映対応、multiplyAdditionalSkillsBy経由、覇道ノ泰斗と同じ仕組み)。' +
           '鍛錬TR別数値は情報源に記載なし(LV10のみ登録)。竹中半兵衛（1）【覇】(No.1215)の固有スキル。ixanary.comで確認(2026年7月)。'
   },
-  '天壌八咫烏': {
-    effectAxis: 'atk', // 攻撃側(正本 data/skill/天壌八咫烏.json の効果文より)
+  '天棲 八咫烏': {
+    effectAxis: 'atk', // 攻撃側(正本 data/skill/天棲 八咫烏.json の効果文より)
     targetTroopCategories: ['槍兵科','弓兵科','兵器兵科(器兵科)'],
     targetSoldierNames: ['焙烙火矢'],
     variableFormula: { statTarget: 'atk', base: 0, variable: 'enemyCost', perUnit: 1 },
@@ -3086,15 +3086,8 @@ const specialSkills = {
     note: 'S(防御)。確率+60%(LV10)/対象:全。防御:LV10=120%上昇(自動反映対応)。九戸政実(No.1225)の固有スキル。武将データベースの登録内容から反映(2026年8月)。鍛錬TR別の数値は未登録のためLV10のみ。' +
           'スキル説明の全文: ①防御120%上昇する ②自拠点防御時は防御効果が3倍になる'
   },
-  '破天ノ電撃': {
-    effectAxis: 'both', // 攻防両方(正本 data/skill/破天ノ電撃.json の効果文より)
-    trTable: { base: 180 },
-    baseRate: 32,
-    note: 'SSS(攻撃)。確率+32%(LV10)/対象:全。攻撃:LV10=180%上昇(自動反映対応)。伊達政宗（3）【覇】(No.1226)の固有スキル。武将データベースの登録内容から反映(2026年8月)' +
-          '。鍛錬TR別の数値は未登録のためLV10のみ。スキル説明の全文: ①攻撃180%上昇する ②防御180%上昇する ③自部隊内で卓越発動したスキル数×80%を攻防効果に加算する'
-  },
-  '紅蓮ノ護神': {
-    effectAxis: 'def', // 防御側(正本 data/skill/紅蓮ノ護神.json の効果文より)
+  '紅蓮ノ闘神': {
+    effectAxis: 'def', // 防御側(正本 data/skill/紅蓮ノ闘神.json の効果文より)
     trTable: { base: 255 },
     baseRate: 60,
     note: 'SSS(防御)。確率+60%(LV10)/対象:全。防御:LV10=255%上昇(自動反映対応)。真田幸村【覇】(No.1227)の固有スキル。武将データベースの登録内容から反映(2026年8月)。鍛錬TR別の数値は未登録のためLV10のみ。' +
@@ -3158,8 +3151,8 @@ const specialSkills = {
     note: 'S(攻撃)。確率+100%(LV10)/対象:槍・馬・砲。攻撃:LV10=210%上昇(自動反映対応)。井伊直政(No.1233)の固有スキル。武将データベースの登録内容から反映(2026年8月)。鍛錬TR別の数値は未登録のためLV10のみ。' +
           'スキル説明の全文: ①攻撃210%上昇する ②速度100%上昇する ③対象兵科指揮時参加自部隊は攻撃力減少を受けずかつ距離が20延長される'
   },
-  '倫蝮不蓁': {
-    effectAxis: 'atk', // 攻撃側(正本 data/skill/倫蝮不蓁.json の効果文より)
+  '倫魁不羈': {
+    effectAxis: 'atk', // 攻撃側(正本 data/skill/倫魁不羈.json の効果文より)
     targetTroopCategories: ['槍兵科','弓兵科','騎馬兵科','兵器兵科(砲兵科)'],
     variableFormula: { statTarget: 'atk', base: 0, variable: 'defenderCount', perUnit: 4 },
     baseRate: 55,
@@ -3201,13 +3194,6 @@ const specialSkills = {
     note: 'S(攻撃)。確率+55%(LV10)/対象:槍・砲・器。攻撃:LV10=420%上昇(自動反映対応)。浅井長政（4）(No.1244)の固有スキル。武将データベースの登録内容から反映(2026年8月)' +
           '。鍛錬TR別の数値は未登録のためLV10のみ。スキル説明の全文: ①攻撃420%上昇する ②不屈1を持つ(攻撃戦闘敗北時、指揮兵が不屈の数値×1000まで回復)'
   },
-  '斐波騰槍': {
-    effectAxis: 'both', // 攻防両方(正本 data/skill/斐波騰槍.json の効果文より)
-    trTable: { base: 160 },
-    baseRate: 32,
-    note: 'S(攻撃)。確率+32%(LV10)/対象:全。攻撃:LV10=160%上昇(自動反映対応)。里見義弘（2）(No.1245)の固有スキル。武将データベースの登録内容から反映(2026年8月)。鍛錬TR別の数値は未登録のためLV10のみ。' +
-          'スキル説明の全文: ①攻撃160%上昇する ②防御160%上昇する ③自部隊内で卓越発動したスキル数×65%を攻防効果に加算する'
-  },
   '法威燦煌': {
     effectAxis: 'def', // 防御側(正本 data/skill/法威燦煌.json の効果文より)
     targetTroopCategories: ['槍兵科','騎馬兵科','兵器兵科(砲兵科)','兵器兵科(器兵科)'],
@@ -3234,8 +3220,8 @@ const specialSkills = {
     note: 'S(攻撃)。確率+100%(LV10)/対象:砲。攻撃:LV10=380%上昇(自動反映対応)。三郎信長(No.1249)の固有スキル。武将データベースの登録内容から反映(2026年8月)。鍛錬TR別の数値は未登録のためLV10のみ。' +
           'スキル説明の全文: ①攻撃380%上昇する ②対象兵科(砲)指揮時極限スキルの攻撃効果が3.5倍となる'
   },
-  '荷天滅陣': {
-    effectAxis: 'atk', // 攻撃側(正本 data/skill/荷天滅陣.json の効果文より)
+  '倚天滅陣': {
+    effectAxis: 'atk', // 攻撃側(正本 data/skill/倚天滅陣.json の効果文より)
     fukutsu: 1, // 不屈1(2026-08-11一括付与: noteに記載があるのにフィールドが無く不屈バッジ・被害減判定に反映されていなかった)
     trTable: { base: 760 },
     baseRate: 100,
@@ -3260,8 +3246,8 @@ const specialSkills = {
     note: 'S(攻撃)。確率+45%(LV10)/対象:弓・馬・砲・器。攻撃:LV10=200%上昇(自動反映対応)。武田勝頼（5）(No.1252)の固有スキル。武将データベースの登録内容から反映(2026年8月)' +
           '。鍛錬TR別の数値は未登録のためLV10のみ。スキル説明の全文: ①攻撃200%上昇する ②自軍攻撃武将数×10%を攻撃効果に加算する'
   },
-  '海王怒濤': {
-    effectAxis: 'atk', // 攻撃側(正本 data/skill/海王怒濤.json の効果文より)
+  '海王怒涛': {
+    effectAxis: 'atk', // 攻撃側(正本 data/skill/海王怒涛.json の効果文より)
     targetTroopCategories: ['弓兵科','騎馬兵科','兵器兵科(砲兵科)','兵器兵科(器兵科)'],
     trTable: { base: 440 },
     baseRate: 55,
@@ -3276,8 +3262,8 @@ const specialSkills = {
     note: 'S(攻撃)。確率+35%(LV10)/対象:槍・馬・砲・器。攻撃:(敵軍総武将コスト×1.4)%上昇(自動反映対応)。相良義陽（3）(No.1258)の固有スキル。武将データベースの登録内容から反映(2026年8月)' +
           '。鍛錬TR別の数値は未登録のためLV10のみ。スキル説明の全文: ①対象兵科(槍・馬・砲・器)を指揮した戦闘時攻撃力が敵軍総武将コスト×1.4%上昇する'
   },
-  '島穿覓槍': {
-    effectAxis: 'def', // 防御側(正本 data/skill/島穿覓槍.json の効果文より)
+  '島穿鬼槍': {
+    effectAxis: 'def', // 防御側(正本 data/skill/島穿鬼槍.json の効果文より)
     noMimic: true, // skillDetailの「模倣不可」記載より
     targetTroopCategories: ['槍兵科','騎馬兵科','兵器兵科(砲兵科)','兵器兵科(器兵科)'],
     trTable: { base: 150 },
@@ -3293,8 +3279,8 @@ const specialSkills = {
     note: 'S(攻撃)。確率+60%(LV10)/対象:槍・弓・砲・器。攻撃:LV10=420%上昇(自動反映対応)。伊達輝宗(No.1260)の固有スキル。武将データベースの登録内容から反映(2026年8月)。' +
           '鍛錬TR別の数値は未登録のためLV10のみ。スキル説明の全文: ①攻撃420%上昇する ②防御420%上昇する ③部隊内で武将コストが武将スキルに影響するときこの武将のコストを+3で計算する(特殊効果は部隊内重複不可)'
   },
-  '北天奔馬': {
-    effectAxis: 'atk', // 攻撃側(正本 data/skill/北天奔馬.json の効果文より)
+  '北天ノ奔馬': {
+    effectAxis: 'atk', // 攻撃側(正本 data/skill/北天ノ奔馬.json の効果文より)
     noMimic: true, // skillDetailの「模倣不可」記載より
     trTable: { base: 150 },
     baseRate: 55,
@@ -3798,6 +3784,1826 @@ const specialSkills = {
           '本丸防御陣形シミュレーターは加勢が前提の場面なので、そちらでは倍率を適用する対象になる。' +
           '稲葉一鉄(No.2392)の固有スキル。'
   },
+  // BUILD:specialSkillsAuto:start ここから下は tools/build_special_skills.py が data/skill/ から生成しています。直接編集しないこと
+  'Tツイスター': {
+    effectAxis: 'both',
+    activationType: 'triggered',
+    statTarget: 'atk',
+    trTable: { base:790 },
+    baseRate: 100,
+    note: '[S] 全　確率 100% / 攻撃 790%上昇+防御 790%上昇+部隊内武将スキル発動率+10%(特殊効果は部隊内重複不可)。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/Tツイスター.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  'ぶんどる': {
+    effectAxis: 'atk',
+    activationType: 'triggered',
+    statTarget: 'atk',
+    trTable: { base:440, TR1:500, TR2:620, TR3:860, TR4:1230, TR5:1460 },
+    baseRate: 42,
+    note: '[S] 全　確率 42% / 攻撃 440%上昇(4部隊以上の対人合流攻撃で倒した兵数の5%の銅銭を攻撃参加者全員が獲得)。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/ぶんどる.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  'オプクワ': {
+    effectAxis: 'atk',
+    activationType: 'triggered',
+    statTarget: 'atk',
+    trTable: { base:140 },
+    baseRate: 55,
+    targetTroopCategories: ['兵器兵科(砲兵科)','弓兵科','槍兵科'],
+    noMimic: true,
+    note: '[A] 槍弓砲　確率 55% / 攻撃 140%上昇(対人攻撃戦闘勝利時名声20回復・模倣不可・部隊内重複不可)。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/オプクワ.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  'グラビデ': {
+    effectAxis: 'atk',
+    activationType: 'triggered',
+    statTarget: 'atk',
+    trTable: { base:420, TR1:480, TR2:570, TR3:830, TR4:1160, TR5:1360 },
+    baseRate: 56,
+    noMimic: true,
+    note: '[S] 全　確率 56% / 攻撃 420%上昇(攻撃戦闘時HP150以上でランダムな敵1部隊の全武将に追加ダメージ15・敵1部隊に対して効果一つまで・模倣不可)。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/グラビデ.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  'パロ・スペシャル': {
+    effectAxis: 'def',
+    activationType: 'triggered',
+    statTarget: 'def',
+    trTable: { base:215 },
+    baseRate: 25,
+    noMimic: true,
+    note: '[S] 全 兵站　確率 25% / 防御 215%上昇(部隊長なら発動率と効果が4倍・模倣不可)。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/パロ・スペシャル.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  'マジックブレイク': {
+    effectAxis: 'def',
+    activationType: 'triggered',
+    statTarget: 'def',
+    trTable: { base:480, TR1:560, TR2:690, TR3:1020 },
+    baseRate: 39,
+    targetTroopCategories: ['兵器兵科(器兵科)','兵器兵科(砲兵科)','槍兵科'],
+    noMimic: true,
+    note: '[S] 槍・砲・器　確率 39% / 防御 480%上昇(防御戦闘時敵軍の卓越追加確率-2%・模倣不可・自軍内重複上限4)。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/マジックブレイク.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '一世名人': {
+    effectAxis: 'def',
+    activationType: 'triggered',
+    statTarget: 'def',
+    trTable: { base:160 },
+    baseRate: 100,
+    noMimic: true,
+    note: '[S] 全　確率 100% / 防御 160%上昇 本丸防御陣形の第弐列目以降の部隊にも効果適用(自身の所属部隊には重複しない・模倣不可)。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/一世名人.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '万界神謀': {
+    effectAxis: 'both',
+    activationType: 'triggered',
+    statTarget: 'atk',
+    trTable: { base:800, TR1:850, TR2:920, TR3:1000, TR4:1090, TR5:1200 },
+    baseRate: 100,
+    note: '[SS] 全 卓越　確率 100% / 攻撃 800%上昇+防御 800%上昇(部隊内スキル発動率+20%・卓越追加確率+70%)。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/万界神謀.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '三千世界神将': {
+    effectAxis: 'def',
+    activationType: 'triggered',
+    statTarget: 'def',
+    trTable: { base:120, TR1:220, TR2:340, TR3:480, TR4:630, TR5:780 },
+    baseRate: 100,
+    note: '[SS] 全　確率 100% / 防御 120%上昇(本丸防御陣形時コスト消費-1)。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/三千世界神将.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '三星一統射陣': {
+    effectAxis: 'def',
+    activationType: 'triggered',
+    statTarget: 'def',
+    trTable: { base:154 },
+    baseRate: 40,
+    targetTroopCategories: ['兵器兵科(器兵科)','弓兵科'],
+    targetSoldierNames: ['焙烙火矢'],
+    note: '[SSS] 弓・器・焙　確率 40% / 防御 154%上昇(対象兵科を指揮した防御戦闘時、自部隊内の武将が受ける30以下のダメージは最大7になる)。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/三星一統射陣.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '三河魂': {
+    effectAxis: 'atk',
+    activationType: 'triggered',
+    statTarget: 'atk',
+    trTable: { base:25 },
+    destructTrTable: { base:25 },
+    baseRate: 35,
+    targetTroopCategories: ['兵器兵科(砲兵科)','弓兵科','槍兵科'],
+    note: '[S] 槍弓砲　確率 35% / 攻撃 25%上昇+破壊 25%上昇。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/三河魂.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '不滅ノ鬼神': {
+    effectAxis: 'atk',
+    activationType: 'triggered',
+    statTarget: 'atk',
+    trTable: { base:100 },
+    speedTrTable: { base:70 },
+    baseRate: 70,
+    note: '[S] 全　攻撃 100%上昇(確率70%)+速度 70%上昇(確率100%)(TRなし)。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/不滅ノ鬼神.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '九頭龍ノ采配': {
+    effectAxis: 'atk',
+    activationType: 'triggered',
+    statTarget: 'atk',
+    trTable: { base:400 },
+    baseRate: 43,
+    note: '[S] 全　確率 43% / 攻撃 400%上昇(所属部隊を含む自部隊同時攻撃で消費する名声値を-45・重複不可)。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/九頭龍ノ采配.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '八千矛神': {
+    effectAxis: 'atk',
+    activationType: 'triggered',
+    statTarget: 'atk',
+    trTable: { base:50 },
+    baseRate: 100,
+    note: '[SS] 全　確率 100% / 攻撃 50%上昇(所属部隊の武将が持つスキルを無効化や発動率低下スキルから保護)。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/八千矛神.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '冥界の花嫁': {
+    effectAxis: 'def',
+    activationType: 'triggered',
+    statTarget: 'def',
+    trTable: { base:40 },
+    baseRate: 35,
+    note: '[A] 全　確率 35% / 防御 40%上昇(攻撃部隊に馬兵科がいる時のみ発動)。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/冥界の花嫁.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '凜武艶姫': {
+    effectAxis: 'def',
+    activationType: 'triggered',
+    statTarget: 'def',
+    trTable: { base:15 },
+    baseRate: 40,
+    targetTroopCategories: ['兵器兵科(器兵科)','兵器兵科(砲兵科)','弓兵科'],
+    note: '[A] 弓・砲・器　確率 40% / 防御 15%上昇(部隊総コストで変動)。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/凜武艶姫.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '千人狩': {
+    effectAxis: 'atk',
+    activationType: 'triggered',
+    statTarget: 'atk',
+    trTable: { base:92 },
+    baseRate: 54,
+    targetTroopCategories: ['兵器兵科(器兵科)','槍兵科'],
+    targetSoldierNames: ['鉄砲足軽'],
+    note: '[A] 槍・器・鉄　確率 54% / 攻撃 92%上昇(敵軍5部隊以下で効果1.5倍)。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/千人狩.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '命だけ置いてけ': {
+    effectAxis: 'atk',
+    activationType: 'triggered',
+    statTarget: 'atk',
+    trTable: { base:360 },
+    baseRate: 55,
+    targetTroopCategories: ['兵器兵科(器兵科)','槍兵科','騎馬兵科'],
+    noMimic: true,
+    note: '[A] 槍・馬・器　確率 55% / 攻撃 360%上昇(対人での攻撃戦闘勝利時、名声を15回復・模倣不可・部隊内重複不可)。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/命だけ置いてけ.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '哀姫星霜': {
+    effectAxis: 'both',
+    activationType: 'triggered',
+    statTarget: 'atk',
+    trTable: { base:140 },
+    baseRate: 100,
+    note: '[S] 全　確率 100% / 攻撃 140%上昇 防御 140%上昇(部隊内全武将の全スキルに「槍弓馬」対象追加・兵科スキル限定)。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/哀姫星霜.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '喰代ノ梟忍': {
+    effectAxis: 'atk',
+    activationType: 'triggered',
+    statTarget: 'atk',
+    trTable: { base:70 },
+    baseRate: 45,
+    noMimic: true,
+    note: '[A] 全　確率 45% / 攻撃 70%上昇(自部隊同時攻撃時この武将分をコストから除外・模倣不可・重複不可)。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/喰代ノ梟忍.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '四海王道': {
+    effectAxis: 'def',
+    activationType: 'triggered',
+    statTarget: 'def',
+    trTable: { base:50 },
+    baseRate: 20,
+    note: '[S] 全　確率 20% / 防御 50%上昇。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/四海王道.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '四神天道': {
+    effectAxis: 'both',
+    activationType: 'triggered',
+    statTarget: 'atk',
+    trTable: { base:54 },
+    speedTrTable: { base:36 },
+    baseRate: 30,
+    note: '[S] 全　確率 30%/100% / 攻撃 54%上昇(確率30%)+防御 54%上昇(確率30%)+速度 36%上昇(確率100%)。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/四神天道.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '四神相応ノ天計': {
+    effectAxis: 'def',
+    activationType: 'triggered',
+    statTarget: 'def',
+    trTable: { base:90 },
+    baseRate: 100,
+    noMimic: true,
+    note: '[S] 全　確率 100% / 防御 90%上昇(防御側武将数カウントの対象にならない・模倣不可)。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/四神相応ノ天計.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '回天剣舞': {
+    effectAxis: 'def',
+    activationType: 'triggered',
+    statTarget: 'def',
+    trTable: { base:450, TR1:550, TR2:730, TR3:1030, TR4:1450, TR5:1980 },
+    baseRate: 100,
+    noMimic: true,
+    note: '[S] 全　確率 100% / 防御 450%上昇(防御側武将数カウントの対象にならない・模倣不可)。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/回天剣舞.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '国堅大神': {
+    effectAxis: 'both',
+    activationType: 'triggered',
+    statTarget: 'atk',
+    trTable: { base:170 },
+    baseRate: 60,
+    noMimic: true,
+    note: '[SS] 全　確率 60% / 攻撃 170%上昇+防御 170%上昇(部隊消費コスト-1・模倣不可)。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/国堅大神.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '城壁の護り': {
+    effectAxis: 'def',
+    activationType: 'triggered',
+    statTarget: 'def',
+    trTable: { base:400 },
+    destructTrTable: { base:150 },
+    baseRate: 100,
+    note: '[S] 全　確率 100% / 防御 400%上昇+破壊 150%上昇。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/城壁の護り.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '夢買い': {
+    effectAxis: 'atk',
+    activationType: 'triggered',
+    statTarget: 'atk',
+    trTable: { base:0 },
+    baseRate: 30,
+    note: '[A] 全　確率 30% / 攻撃 0%上昇(名声値で効果が変化)。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/夢買い.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '大樹ノ誓い': {
+    effectAxis: 'def',
+    activationType: 'triggered',
+    statTarget: 'def',
+    trTable: { base:90 },
+    baseRate: 50,
+    targetTroopCategories: ['兵器兵科(器兵科)','弓兵科','槍兵科'],
+    targetSoldierNames: ['焙烙火矢'],
+    note: '[A] 槍・弓・器・焙　確率 50% / 防御 90%上昇(拠点待機60分ごとに防御効果1.5倍・上限3回)。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/大樹ノ誓い.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '天ノ逆矛': {
+    effectAxis: 'atk',
+    activationType: 'triggered',
+    statTarget: 'atk',
+    trTable: { base:115 },
+    baseRate: 36,
+    targetTroopCategories: ['弓兵科','槍兵科','騎馬兵科'],
+    targetSoldierNames: ['騎馬鉄砲'],
+    noMimic: true,
+    note: '[S] 槍弓馬騎　確率 36% / 攻撃 115%上昇(防御側敵軍1部隊の武将HP被害が15%増加・対象部隊ごとに上限1まで特殊効果を適用・模倣不可)。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/天ノ逆矛.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '天下の采配': {
+    effectAxis: 'def',
+    activationType: 'triggered',
+    statTarget: 'def',
+    trTable: { base:35 },
+    baseRate: 45,
+    targetTroopCategories: ['兵器兵科(砲兵科)','槍兵科','騎馬兵科'],
+    note: '[S] 槍馬砲　確率 45% / 防御 35%上昇。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/天下の采配.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '天之尾羽張': {
+    effectAxis: 'atk',
+    activationType: 'triggered',
+    statTarget: 'atk',
+    trTable: { base:170 },
+    speedTrTable: { base:150 },
+    baseRate: 100,
+    note: '[SS] 全　確率 100% / 攻撃 170%上昇+速度 150%上昇。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/天之尾羽張.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '天凛不抜': {
+    effectAxis: 'def',
+    activationType: 'triggered',
+    statTarget: 'def',
+    trTable: { base:400, TR1:460, TR2:600, TR3:800, TR4:1090, TR5:1480 },
+    baseRate: 100,
+    targetTroopCategories: ['兵器兵科(器兵科)','兵器兵科(砲兵科)','弓兵科','槍兵科'],
+    note: '[S] 槍弓砲器　確率 100% / 防御 400%上昇。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/天凛不抜.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '天啓ノ神撃': {
+    effectAxis: 'atk',
+    activationType: 'triggered',
+    statTarget: 'atk',
+    trTable: { base:180 },
+    baseRate: 45,
+    note: '[SS] 全　確率 45% / 攻撃 180%上昇(追加ダメージ5)。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/天啓ノ神撃.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '天地黎明': {
+    effectAxis: 'def',
+    activationType: 'triggered',
+    statTarget: 'def',
+    trTable: { base:270 },
+    baseRate: 70,
+    note: '[SSS] 全　確率 70% / 防御 270%上昇(HP99以下で3倍)。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/天地黎明.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '天弓星宿陣': {
+    effectAxis: 'def',
+    activationType: 'triggered',
+    statTarget: 'def',
+    trTable: { base:30.69 },
+    baseRate: 60,
+    note: '[SS] 全　確率 60% / 防御 30.69%上昇(部隊総コスト依存)。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/天弓星宿陣.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '天征相克': {
+    effectAxis: 'atk',
+    activationType: 'triggered',
+    statTarget: 'atk',
+    trTable: { base:25 },
+    baseRate: 20,
+    targetTroopCategories: ['弓兵科','槍兵科','騎馬兵科'],
+    note: '[SS] 槍弓馬　確率 20% / 攻撃 25%上昇。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/天征相克.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '天戒 五芒星': {
+    effectAxis: 'atk',
+    activationType: 'triggered',
+    statTarget: 'atk',
+    trTable: { base:40 },
+    baseRate: 35,
+    targetTroopCategories: ['兵器兵科(砲兵科)','騎馬兵科'],
+    note: '[S] 馬砲　確率 35% / 攻撃 40%上昇。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/天戒 五芒星.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '天津甕星ノ雷': {
+    effectAxis: 'atk',
+    activationType: 'triggered',
+    statTarget: 'atk',
+    trTable: { base:170 },
+    speedTrTable: { base:70 },
+    baseRate: 100,
+    note: '[SS] 全 覇道　確率 100% / 攻撃 170%上昇+速度 70%上昇(TRなし)。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/天津甕星ノ雷.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '天焉神軍': {
+    effectAxis: 'atk',
+    activationType: 'triggered',
+    statTarget: 'atk',
+    trTable: { base:20 },
+    baseRate: 100,
+    note: '[SS] 全　確率 100% / 攻撃 20%上昇。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/天焉神軍.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '天神旋武': {
+    effectAxis: 'atk',
+    activationType: 'triggered',
+    statTarget: 'atk',
+    trTable: { base:60 },
+    baseRate: 26,
+    targetTroopCategories: ['弓兵科','槍兵科'],
+    note: '[S] 槍弓　確率 26% / 攻撃 60%上昇。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/天神旋武.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '天綾の誓約': {
+    effectAxis: 'both',
+    activationType: 'triggered',
+    statTarget: 'atk',
+    trTable: { base:99.9 },
+    destructTrTable: { base:150 },
+    baseRate: 60,
+    note: '[SS] 全　確率 60% / 攻撃 99.9%上昇 防御 99.9%上昇 破壊 150%上昇。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/天綾の誓約.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '天衝破軍槍': {
+    effectAxis: 'atk',
+    activationType: 'triggered',
+    statTarget: 'atk',
+    trTable: { base:1000, TR1:1040, TR2:1100, TR3:1220, TR4:1350, TR5:1510 },
+    baseRate: 50,
+    targetTroopCategories: ['槍兵科'],
+    note: '[S] 槍　確率 50% / 攻撃 1000%上昇(失った足軽・長槍足軽の40%が治療対象)。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/天衝破軍槍.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '天頂ノ電光': {
+    effectAxis: 'atk',
+    activationType: 'triggered',
+    statTarget: 'atk',
+    trTable: { base:190 },
+    baseRate: 12,
+    note: '[SSS] 全　確率 12% / 攻撃 190%上昇(部隊長時、確率・効果3倍)。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/天頂ノ電光.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '天香山命': {
+    effectAxis: 'atk',
+    activationType: 'triggered',
+    statTarget: 'atk',
+    trTable: { base:120 },
+    speedTrTable: { base:90 },
+    baseRate: 100,
+    note: '[SS] 全 覇道　確率 100% / 攻撃 120%上昇+速度 90%上昇。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/天香山命.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '太閤の威光': {
+    effectAxis: 'atk',
+    activationType: 'triggered',
+    statTarget: 'atk',
+    trTable: { base:25 },
+    destructTrTable: { base:40 },
+    baseRate: 25,
+    note: '[S] 全　確率 25% / 攻撃 25%上昇+破壊 40%上昇。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/太閤の威光.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '宍戸八重垣流': {
+    effectAxis: 'atk',
+    activationType: 'triggered',
+    statTarget: 'atk',
+    trTable: { base:95 },
+    baseRate: 52,
+    targetTroopCategories: ['兵器兵科(器兵科)','兵器兵科(砲兵科)','槍兵科'],
+    noMimic: true,
+    note: '[S] 槍砲器　確率 52% / 攻撃 95%上昇(強襲専用部隊配置時コスト消費-3・模倣不可)。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/宍戸八重垣流.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '宝珠盛山': {
+    effectAxis: 'def',
+    activationType: 'triggered',
+    statTarget: 'def',
+    trTable: { base:240 },
+    baseRate: 50,
+    targetTroopCategories: ['兵器兵科(器兵科)','兵器兵科(砲兵科)','槍兵科'],
+    noMimic: true,
+    note: '[A] 槍・砲・器　確率 50% / 防御 240%上昇(所領防御陣形第肆列目配置時1.5倍+飛翔5取得・模倣不可)。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/宝珠盛山.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '布都御魂ノ鬨': {
+    effectAxis: 'both',
+    activationType: 'triggered',
+    statTarget: 'atk',
+    trTable: { base:40 },
+    baseRate: 35,
+    note: '[SS] 全　確率 35% / 攻撃 40%上昇+防御 40%上昇(部隊内レアリティS以上のスキル個数×20%加算)。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/布都御魂ノ鬨.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '幕天席地': {
+    effectAxis: 'def',
+    activationType: 'triggered',
+    statTarget: 'def',
+    trTable: { base:170 },
+    baseRate: 100,
+    noMimic: true,
+    note: '[S] 全　確率 100% / 防御 170%上昇 本丸防御陣形配置時編成コスト消費-5(模倣不可)。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/幕天席地.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '幽冥主宰大神': {
+    effectAxis: 'def',
+    activationType: 'triggered',
+    statTarget: 'def',
+    trTable: { base:90 },
+    baseRate: 30,
+    noMimic: true,
+    note: '[SS] 全　確率 30% / 防御 90%上昇 攻撃部隊の武将が持つ特殊効果付き初期スキルを全て無効化(模倣不可)。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/幽冥主宰大神.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '廟算合従陣': {
+    effectAxis: 'def',
+    activationType: 'triggered',
+    statTarget: 'def',
+    trTable: { base:42 },
+    baseRate: 32,
+    targetTroopCategories: ['兵器兵科(砲兵科)','弓兵科','騎馬兵科'],
+    note: '[S] 弓馬砲　確率 32% / 防御 42%上昇。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/廟算合従陣.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '建御雷神ノ槌': {
+    effectAxis: 'both',
+    activationType: 'triggered',
+    statTarget: 'atk',
+    trTable: { base:135 },
+    baseRate: 100,
+    noMimic: true,
+    note: '[SS] 全　確率 100% / 攻撃 135%上昇+防御 135%上昇(自部隊内で卓越発動したスキル数×30%を攻防効果に加算・模倣不可)。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/建御雷神ノ槌.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '式神ノ冥王': {
+    effectAxis: 'both',
+    activationType: 'triggered',
+    statTarget: 'atk',
+    trTable: { base:130 },
+    destructTrTable: { base:50 },
+    baseRate: 60,
+    note: '[SS] 全　確率 60% / 攻撃 130%上昇 防御 130%上昇 破壊 50%上昇。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/式神ノ冥王.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '影王絶技': {
+    effectAxis: 'atk',
+    activationType: 'triggered',
+    statTarget: 'atk',
+    trTable: { base:440, TR1:490, TR2:630, TR3:920, TR4:1280, TR5:1510 },
+    speedTrTable: { base:150, TR1:160, TR2:170, TR3:180, TR4:200, TR5:250 },
+    baseRate: 100,
+    noMimic: true,
+    note: '[S] 全 撤退　確率 100% / 攻撃 440%上昇+速度 150%上昇(自部隊同時攻撃時部隊総コストからこの武将分を除外・模倣不可・部隊内重複不可)。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/影王絶技.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '御台ノ加護': {
+    effectAxis: 'def',
+    activationType: 'triggered',
+    statTarget: 'def',
+    trTable: { base:170 },
+    baseRate: 60,
+    noMimic: true,
+    note: '[S] 全　確率 60% / 防御 170%上昇(所領防御陣形の第壱列目か第弐列目に配置時、防御効果3倍・模倣不可)。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/御台ノ加護.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '志在本貫': {
+    effectAxis: 'atk',
+    activationType: 'triggered',
+    statTarget: 'atk',
+    trTable: { base:380 },
+    baseRate: 55,
+    note: '[S] 全 不屈1　確率 55% / 攻撃 380%上昇(攻撃戦闘敗北時、指揮兵が不屈の数値×1000まで回復)。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/志在本貫.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '悪屋形': {
+    effectAxis: 'atk',
+    activationType: 'triggered',
+    statTarget: 'atk',
+    trTable: { base:170 },
+    baseRate: 55,
+    note: '[S] 全　確率 55% / 攻撃 170%上昇(自部隊同時攻撃で消費する名声値-35・重複不可)。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/悪屋形.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '我こそ絶対悪よ': {
+    effectAxis: 'both',
+    activationType: 'triggered',
+    statTarget: 'atk',
+    trTable: { base:350 },
+    baseRate: 100,
+    targetTroopCategories: ['兵器兵科(器兵科)','兵器兵科(砲兵科)','槍兵科'],
+    noMimic: true,
+    note: '[A] 槍・砲・器　確率 100% / 攻撃 350%上昇+防御 350%上昇(所持武将の全スキルの卓越確率+30%・模倣不可)。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/我こそ絶対悪よ.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '我流大蛇': {
+    effectAxis: 'atk',
+    activationType: 'triggered',
+    statTarget: 'atk',
+    trTable: { base:400 },
+    speedTrTable: { base:120 },
+    destructTrTable: { base:120 },
+    baseRate: 100,
+    targetTroopCategories: ['兵器兵科(器兵科)','兵器兵科(砲兵科)','槍兵科'],
+    note: '[A] 槍・砲・器　確率 100% / 攻撃 400%上昇+破壊 120%上昇+速度 120%上昇。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/我流大蛇.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '戦場妙技': {
+    effectAxis: 'both',
+    activationType: 'triggered',
+    statTarget: 'atk',
+    trTable: { base:72 },
+    destructTrTable: { base:20 },
+    baseRate: 32,
+    note: '[B] 全　確率 32% / 攻撃 72%上昇+防御 72%上昇+破壊 20%上昇。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/戦場妙技.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '戦陣 一閃': {
+    effectAxis: 'atk',
+    activationType: 'triggered',
+    statTarget: 'atk',
+    trTable: { base:50 },
+    speedTrTable: { base:50 },
+    baseRate: 50,
+    note: '[A] 全　確率 50%/100% / 攻撃 50%上昇(確率50%)+速度 50%上昇(確率100%)。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/戦陣 一閃.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '戦陣 凪': {
+    effectAxis: 'def',
+    activationType: 'triggered',
+    statTarget: 'def',
+    trTable: { base:110 },
+    baseRate: 60,
+    note: '[A] 全 飛翔2　確率 60% / 防御 110%上昇(自軍防御参加武将が30以上の時、防御効果2倍)。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/戦陣 凪.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '戦陣 凱旋': {
+    effectAxis: 'both',
+    activationType: 'triggered',
+    statTarget: 'atk',
+    trTable: { base:87 },
+    baseRate: 10,
+    note: '[A] 全　確率 10% / 攻撃 87%上昇+防御 87%上昇。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/戦陣 凱旋.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '戦陣 剣舞': {
+    effectAxis: 'both',
+    activationType: 'triggered',
+    statTarget: 'atk',
+    trTable: { base:80 },
+    baseRate: 100,
+    note: '[A] 全 飛翔6　確率 100% / 攻撃 80%上昇+防御 80%上昇(卓越追加確率30%で攻防効果4倍)。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/戦陣 剣舞.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '戦陣 勝鬨': {
+    effectAxis: 'both',
+    activationType: 'triggered',
+    statTarget: 'atk',
+    trTable: { base:77 },
+    speedTrTable: { base:40 },
+    baseRate: 35,
+    note: '[A] 全　確率 35%/100% / 攻撃 77%上昇(確率35%)+防御 77%上昇(確率35%)+速度 40%上昇(確率100%)。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/戦陣 勝鬨.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '戦陣 召雷': {
+    effectAxis: 'atk',
+    activationType: 'triggered',
+    statTarget: 'atk',
+    trTable: { base:95 },
+    baseRate: 55,
+    note: '[A] 全 飛翔4　確率 55% / 攻撃 95%上昇(6部隊以下の攻撃で効果2倍・敵軍飛翔持ち4人未満の時通常武将ダメージを受けない)。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/戦陣 召雷.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '戦陣 無双': {
+    effectAxis: 'both',
+    activationType: 'triggered',
+    statTarget: 'atk',
+    trTable: { base:67 },
+    baseRate: 50,
+    note: '[A] 全　確率 50% / 攻撃 67%上昇+防御 67%上昇。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/戦陣 無双.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '戦陣 無縫': {
+    effectAxis: 'def',
+    activationType: 'triggered',
+    statTarget: 'def',
+    trTable: { base:80 },
+    baseRate: 42,
+    note: '[A] 全　確率 42% / 防御 80%上昇(部隊総コストで変動)。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/戦陣 無縫.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '戦陣 破軍': {
+    effectAxis: 'both',
+    activationType: 'triggered',
+    statTarget: 'atk',
+    trTable: { base:66 },
+    baseRate: 44,
+    note: '[A] 全　確率 44% / 攻撃 66%上昇+防御 66%上昇。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/戦陣 破軍.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '戦陣 轟砲': {
+    effectAxis: 'both',
+    activationType: 'triggered',
+    statTarget: 'atk',
+    trTable: { base:66 },
+    baseRate: 45,
+    targetTroopCategories: ['兵器兵科(器兵科)','兵器兵科(砲兵科)'],
+    note: '[A] 砲・器　確率 45% / 攻撃 66%上昇+防御 66%上昇。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/戦陣 轟砲.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '戦陣 阿吽': {
+    effectAxis: 'both',
+    activationType: 'triggered',
+    statTarget: 'atk',
+    trTable: { base:42 },
+    baseRate: 25,
+    note: '[A] 全　確率 25% / 攻撃 42%上昇+防御 42%上昇。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/戦陣 阿吽.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '戦陣 龍馬': {
+    effectAxis: 'def',
+    activationType: 'triggered',
+    statTarget: 'def',
+    trTable: { base:1 },
+    baseRate: 50,
+    note: '[A] 全　確率 50% / 防御 1%上昇(部隊ランクボーナス×10%を加算)。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/戦陣 龍馬.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '払捨刀夢想': {
+    effectAxis: 'both',
+    activationType: 'triggered',
+    statTarget: 'atk',
+    trTable: { base:1350 },
+    baseRate: 50,
+    note: '[S] 全　確率 50% / 攻撃 1350%上昇+防御 1350%上昇(職業「剣豪」限定・剣豪の最大指揮兵数+3000)。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/払捨刀夢想.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '救国ノ軍師': {
+    effectAxis: 'both',
+    activationType: 'triggered',
+    statTarget: 'atk',
+    trTable: { base:450, TR1:490, TR2:540, TR3:610, TR4:695, TR5:800 },
+    baseRate: 100,
+    noMimic: true,
+    note: '[S] 全　確率 100% / 攻撃 450%上昇 防御 450%上昇(同じ自拠点の他の自部隊にも効果あり・模倣不可・重複不可)。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/救国ノ軍師.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '日輪ノ守護者': {
+    effectAxis: 'both',
+    activationType: 'triggered',
+    statTarget: 'atk',
+    trTable: { base:340 },
+    destructTrTable: { base:110 },
+    baseRate: 65,
+    targetTroopCategories: ['兵器兵科(器兵科)','兵器兵科(砲兵科)','弓兵科'],
+    note: '[A] 弓・砲・器　確率 65% / 攻撃 340%上昇+防御 340%上昇+破壊 110%上昇。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/日輪ノ守護者.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '日輪ノ英妃': {
+    effectAxis: 'def',
+    activationType: 'triggered',
+    statTarget: 'def',
+    trTable: { base:155 },
+    baseRate: 100,
+    noMimic: true,
+    note: '[S] 全　確率 100% / 防御 155%上昇(兵科相性補正1.3倍・模倣不可・特殊効果重複不可)。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/日輪ノ英妃.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '星宿劫ノ法壁': {
+    effectAxis: 'def',
+    activationType: 'triggered',
+    statTarget: 'def',
+    trTable: { base:120 },
+    baseRate: 49,
+    note: '[SS] 全　確率 49% / 防御 120%上昇(第参列目以降配置時3倍)。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/星宿劫ノ法壁.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '星読ノ聖賢': {
+    effectAxis: 'both',
+    activationType: 'triggered',
+    statTarget: 'atk',
+    trTable: { base:190 },
+    baseRate: 70,
+    note: '[S] 全 飛翔15　確率 70% / 攻撃 190%上昇+防御 190%上昇。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/星読ノ聖賢.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '晴嵐義計': {
+    effectAxis: 'atk',
+    activationType: 'triggered',
+    statTarget: 'atk',
+    trTable: { base:400 },
+    baseRate: 100,
+    noMimic: true,
+    note: '[S] 全　確率 100% / 攻撃 400%上昇(部隊内武将の討伐ゲージが敵武将数×2回復・上限300・模倣不可・部隊内重複不可)。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/晴嵐義計.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '月下闇龍': {
+    effectAxis: 'def',
+    activationType: 'triggered',
+    statTarget: 'def',
+    trTable: { base:99 },
+    baseRate: 100,
+    note: '[S] 全　確率 100% / 防御 99%上昇(発動した防御戦闘では所属する陣・同盟陣の耐久が必ず「1」残る)。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/月下闇龍.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '月読ノ冥将': {
+    effectAxis: 'atk',
+    activationType: 'triggered',
+    statTarget: 'atk',
+    trTable: { base:114 },
+    speedTrTable: { base:70 },
+    baseRate: 100,
+    targetTroopCategories: ['弓兵科','槍兵科','騎馬兵科'],
+    targetSoldierNames: ['騎馬鉄砲'],
+    note: '[S] 槍・弓・馬・騎　確率 100% / 攻撃 114%上昇+速度 70%上昇(攻撃参加した自軍全部隊の帰還速度が4倍・帰還効果は模倣・重複不可)。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/月読ノ冥将.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '朧雲ノ突撃': {
+    effectAxis: 'atk',
+    activationType: 'triggered',
+    statTarget: 'atk',
+    trTable: { base:120 },
+    speedTrTable: { base:70 },
+    baseRate: 100,
+    targetTroopCategories: ['兵器兵科(器兵科)','弓兵科','槍兵科','騎馬兵科'],
+    note: '[S] 槍弓馬器　確率 100% / 攻撃 120%上昇 速度 70%上昇。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/朧雲ノ突撃.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '朧雲ノ蓮撃': {
+    effectAxis: 'both',
+    activationType: 'triggered',
+    statTarget: 'atk',
+    trTable: { base:12 },
+    baseRate: 35,
+    targetTroopCategories: ['兵器兵科(器兵科)','兵器兵科(砲兵科)','弓兵科'],
+    note: '[S] 弓・砲・器　確率 35% / 攻撃 12%上昇+防御 12%上昇(所属部隊内レアリティS以上スキル数×12%、TRなし)。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/朧雲ノ蓮撃.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '朧雲ノ閃撃': {
+    effectAxis: 'atk',
+    activationType: 'triggered',
+    statTarget: 'atk',
+    trTable: { base:170 },
+    speedTrTable: { base:240 },
+    baseRate: 100,
+    note: '[SSS] 全　確率 100% / 攻撃 170%上昇+速度 240%上昇。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/朧雲ノ閃撃.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '朱印航路': {
+    effectAxis: 'def',
+    activationType: 'triggered',
+    statTarget: 'def',
+    trTable: { base:580, TR1:650, TR2:750, TR3:880, TR4:1030, TR5:1210 },
+    baseRate: 70,
+    note: '[S] 全　確率 70% / 防御 580%上昇。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/朱印航路.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '権謀術数射陣': {
+    effectAxis: 'def',
+    activationType: 'triggered',
+    statTarget: 'def',
+    trTable: { base:520 },
+    baseRate: 40,
+    targetTroopCategories: ['兵器兵科(器兵科)','弓兵科'],
+    targetSoldierNames: ['焙烙火矢'],
+    note: '[SSS] 弓器焙　確率 40% / 防御 520%上昇 飛翔9。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/権謀術数射陣.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '武火狂勢': {
+    effectAxis: 'atk',
+    activationType: 'triggered',
+    statTarget: 'atk',
+    trTable: { base:460, TR1:500, TR2:550, TR3:620, TR4:705, TR5:810 },
+    baseRate: 60,
+    targetTroopCategories: ['兵器兵科(器兵科)','兵器兵科(砲兵科)'],
+    noMimic: true,
+    note: '[S] 砲・器　確率 60% / 攻撃 460%上昇(自身を除く部隊内姫武将の初期スキルに不屈3付与・模倣不可・自部隊内重複不可)。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/武火狂勢.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '武神八幡陣': {
+    effectAxis: 'def',
+    activationType: 'triggered',
+    statTarget: 'def',
+    trTable: { base:41.56 },
+    baseRate: 60,
+    note: '[SS] 全　確率 60% / 防御 41.56%上昇(部隊総コストで変動、TRなし)。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/武神八幡陣.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '歴然ノ妙策': {
+    effectAxis: 'atk',
+    activationType: 'triggered',
+    statTarget: 'atk',
+    trTable: { base:25.04, TR1:150.04, TR2:150.04, TR3:210.04, TR4:350.04, TR5:350.04 },
+    baseRate: 42,
+    note: '[SSS] 全　確率 42% / 攻撃 25.04%上昇(部隊総コスト依存、計算エンジン未対応、コスト計算+0.5)。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/歴然ノ妙策.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '比類なき大将': {
+    effectAxis: 'both',
+    activationType: 'triggered',
+    statTarget: 'atk',
+    trTable: { base:70 },
+    baseRate: 70,
+    noMimic: true,
+    note: '[S] 全　確率 70% / 攻撃 70%上昇+防御 70%上昇(自部隊内で卓越発動したスキル数×40%を攻防効果に加算・模倣不可)。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/比類なき大将.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '氷塊ノ夾撃': {
+    effectAxis: 'atk',
+    activationType: 'triggered',
+    statTarget: 'atk',
+    trTable: { base:118 },
+    baseRate: 52,
+    noMimic: true,
+    note: '[S] 全　確率 52% / 攻撃 118%上昇 自部隊同時攻撃時、部隊総コストからこの武将分のコストを最大1.5で除外(模倣不可)。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/氷塊ノ夾撃.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '氷塊三連撃': {
+    effectAxis: 'atk',
+    activationType: 'triggered',
+    statTarget: 'atk',
+    trTable: { base:170 },
+    baseRate: 45,
+    noMimic: true,
+    note: '[SSS] 全　確率 45% / 攻撃 170%上昇(コスト最大2除外・模倣不可・TRなし)。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/氷塊三連撃.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '氷瀑ノ封印': {
+    effectAxis: 'def',
+    activationType: 'triggered',
+    statTarget: 'def',
+    trTable: { base:90 },
+    baseRate: 25,
+    noMimic: true,
+    note: '[S] 全　確率 25% / 防御 90%上昇 攻撃部隊の武将が持つ特殊効果付き初期スキルを全て無効化(模倣不可)。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/氷瀑ノ封印.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '氷瀑ノ封神': {
+    effectAxis: 'def',
+    activationType: 'triggered',
+    statTarget: 'def',
+    trTable: { base:200 },
+    baseRate: 30,
+    noMimic: true,
+    note: '[SSS] 全　確率 30% / 防御 200%上昇 攻撃部隊の武将が持つ特殊効果付き初期スキルを全て無効化(模倣不可)。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/氷瀑ノ封神.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '江河正攻': {
+    effectAxis: 'def',
+    activationType: 'triggered',
+    statTarget: 'def',
+    trTable: { base:90 },
+    baseRate: 44,
+    note: '[A] 全　確率 44% / 防御 90%上昇(防御戦闘勝利時、敵軍全武将に追加ダメージ+12・特殊効果は重複不可)。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/江河正攻.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '活人剣': {
+    effectAxis: 'both',
+    activationType: 'triggered',
+    statTarget: 'atk',
+    trTable: { base:55 },
+    baseRate: 100,
+    noMimic: true,
+    note: '[A] 全　確率 100% / 攻撃 55%上昇+防御 55%上昇(卓越確率+7%加算・模倣不可・自軍内重複上限4)。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/活人剣.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '海王ノ碇戟': {
+    effectAxis: 'atk',
+    activationType: 'triggered',
+    statTarget: 'atk',
+    trTable: { base:67 },
+    baseRate: 17,
+    note: '[S] 全　確率 17% / 攻撃 67%上昇。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/海王ノ碇戟.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '清廉士道': {
+    effectAxis: 'atk',
+    activationType: 'triggered',
+    statTarget: 'atk',
+    trTable: { base:790, TR1:840, TR2:910, TR3:1030, TR4:1320, TR5:1490 },
+    baseRate: 100,
+    note: '[S] 全　確率 100% / 攻撃 790%上昇(名声45消費で発動・強襲部隊戦は消費なし)。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/清廉士道.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '清賢ノ遊姫': {
+    effectAxis: 'both',
+    activationType: 'triggered',
+    statTarget: 'atk',
+    trTable: { base:140 },
+    baseRate: 100,
+    note: '[A] 全　確率 100% / 攻撃 140%上昇+防御 140%上昇(姫武将の発動率+10%・卓越追加確率+25%)。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/清賢ノ遊姫.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '湖裂騎刃': {
+    effectAxis: 'atk',
+    activationType: 'triggered',
+    statTarget: 'atk',
+    trTable: { base:150 },
+    speedTrTable: { base:40 },
+    baseRate: 100,
+    targetTroopCategories: ['兵器兵科(器兵科)','弓兵科','騎馬兵科'],
+    targetSoldierNames: ['騎馬鉄砲'],
+    noMimic: true,
+    note: '[A] 弓・馬・器・騎　確率 100% / 攻撃 150%上昇+速度 40%上昇+帰還時間短縮(3分・模倣不可)。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/湖裂騎刃.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '烈風駿影': {
+    effectAxis: 'atk',
+    activationType: 'triggered',
+    statTarget: 'atk',
+    trTable: { base:100 },
+    speedTrTable: { base:40 },
+    baseRate: 100,
+    note: '[S] 全　確率 100% / 攻撃 100%上昇+速度 40%上昇(単独出陣時は速度効果10倍)。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/烈風駿影.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '無双英傑': {
+    effectAxis: 'both',
+    activationType: 'triggered',
+    statTarget: 'atk',
+    trTable: { base:99.9 },
+    baseRate: 50,
+    noMimic: true,
+    note: '[SS] 全　確率 50% / 攻撃 99.9%上昇 防御 99.9%上昇 部隊消費コストを0.5低下 (特殊効果は模倣不可)。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/無双英傑.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '無空ノ極剣': {
+    effectAxis: 'both',
+    activationType: 'triggered',
+    statTarget: 'atk',
+    trTable: { base:470 },
+    baseRate: 100,
+    noMimic: true,
+    note: '[S] 全　確率 100% / 攻撃 470%上昇+防御 470%上昇(自軍内の剣豪全武将スキルの卓越確率+30%・重複上限6・模倣不可)。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/無空ノ極剣.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '無窮天斥陣': {
+    effectAxis: 'def',
+    activationType: 'triggered',
+    statTarget: 'def',
+    trTable: { base:63 },
+    baseRate: 40,
+    targetTroopCategories: ['弓兵科','槍兵科','騎馬兵科'],
+    note: '[SS] 槍弓馬　確率 40% / 防御 63%上昇 (攻撃部隊に兵器兵科がいれば効果1.5倍)。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/無窮天斥陣.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '煉獄ノ英主': {
+    effectAxis: 'atk',
+    activationType: 'triggered',
+    statTarget: 'atk',
+    trTable: { base:35 },
+    baseRate: 100,
+    targetTroopCategories: ['兵器兵科(砲兵科)','弓兵科','槍兵科'],
+    note: '[S] 槍弓砲　確率 100% / 攻撃 35%上昇。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/煉獄ノ英主.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '煉獄天焦': {
+    effectAxis: 'atk',
+    activationType: 'triggered',
+    statTarget: 'atk',
+    trTable: { base:25 },
+    baseRate: 25,
+    targetTroopCategories: ['兵器兵科(砲兵科)','槍兵科'],
+    note: '[S] 槍砲　確率 25% / 攻撃 25%上昇(合流攻撃時は効果2倍)。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/煉獄天焦.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '牛鬼ノ攻城': {
+    effectAxis: 'atk',
+    activationType: 'triggered',
+    statTarget: 'atk',
+    trTable: { base:124 },
+    baseRate: 60,
+    noMimic: true,
+    note: '[S] 全　確率 60% / 攻撃 124%上昇(自部隊同時攻撃時、他の自分の部隊にも攻撃効果を加算・模倣不可・部隊内重複不可)。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/牛鬼ノ攻城.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '猛火ノ追撃': {
+    effectAxis: 'atk',
+    activationType: 'triggered',
+    statTarget: 'atk',
+    trTable: { base:45 },
+    baseRate: 70,
+    note: '[SSS] 全　確率 70% / 攻撃 45%上昇(部隊総コストで変動、TRなし)。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/猛火ノ追撃.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '獅子の陣': {
+    effectAxis: 'def',
+    activationType: 'triggered',
+    statTarget: 'def',
+    trTable: { base:35 },
+    baseRate: 45,
+    targetTroopCategories: ['弓兵科','槍兵科','騎馬兵科'],
+    note: '[S] 槍弓馬　確率 45% / 防御 35%上昇。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/獅子の陣.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '獅子王': {
+    effectAxis: 'atk',
+    activationType: 'triggered',
+    statTarget: 'atk',
+    trTable: { base:69 },
+    baseRate: 49,
+    noMimic: true,
+    note: '[A] 全　確率 49% / 攻撃 69%上昇(自合流時に他の自部隊にも加算・模倣不可・部隊内重複不可)。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/獅子王.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '王佐ノ才': {
+    effectAxis: 'atk',
+    activationType: 'triggered',
+    statTarget: 'atk',
+    trTable: { base:54 },
+    baseRate: 40,
+    targetTroopCategories: ['兵器兵科(器兵科)','兵器兵科(砲兵科)','弓兵科','騎馬兵科'],
+    noMimic: true,
+    note: '[B] 弓馬砲器　確率 40% / 攻撃 54%上昇 攻撃時敵軍のスキル発動率-3%(模倣不可・特殊効果は重複不可)。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/王佐ノ才.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '王道ノ極意': {
+    effectAxis: 'def',
+    activationType: 'triggered',
+    statTarget: 'def',
+    trTable: { base:76 },
+    baseRate: 32,
+    targetTroopCategories: ['兵器兵科(器兵科)','弓兵科','騎馬兵科'],
+    note: '[B] 弓・馬・器　確率 32% / 防御 76%上昇(自部隊の武将ダメージ軽減3%・重複発動上限数4)。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/王道ノ極意.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '百戦百勝脚': {
+    effectAxis: 'def',
+    activationType: 'triggered',
+    statTarget: 'def',
+    trTable: { base:1000 },
+    destructTrTable: { base:150 },
+    baseRate: 29,
+    targetTroopCategories: ['兵器兵科(器兵科)','兵器兵科(砲兵科)','弓兵科'],
+    note: '[S] 弓・砲・器　確率 29% / 防御 1000%上昇+破壊 150%上昇。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/百戦百勝脚.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '盟王ノ威才': {
+    effectAxis: 'def',
+    activationType: 'triggered',
+    statTarget: 'def',
+    trTable: { base:350 },
+    baseRate: 100,
+    targetTroopCategories: ['兵器兵科(器兵科)','兵器兵科(砲兵科)','槍兵科'],
+    noMimic: true,
+    note: '[S] 槍砲器　確率 100% / 防御 350%上昇+所属部隊はランダムな部隊を対象とする防御力低下スキルの対象とならない(特殊効果は模倣不可・部隊内重複不可)。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/盟王ノ威才.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '破克閃剣': {
+    effectAxis: 'atk',
+    activationType: 'triggered',
+    statTarget: 'atk',
+    trTable: { base:350 },
+    baseRate: 48,
+    targetTroopCategories: ['兵器兵科(器兵科)','弓兵科','槍兵科'],
+    note: '[A] 槍・弓・器　確率 48% / 攻撃 350%上昇(不屈1・TRなし)。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/破克閃剣.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '破城 羅刹': {
+    effectAxis: 'atk',
+    activationType: 'triggered',
+    statTarget: 'atk',
+    trTable: { base:124 },
+    destructTrTable: { base:55 },
+    baseRate: 100,
+    note: '[S] 全　確率 100% / 攻撃 124%上昇+破壊 55%上昇(資源獲得率12%・破壊した耐久値に応じて資源獲得)。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/破城 羅刹.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '破軍十六神将': {
+    effectAxis: 'atk',
+    activationType: 'triggered',
+    statTarget: 'atk',
+    trTable: { base:120 },
+    baseRate: 100,
+    note: '[SSS] 全　確率 100% / 攻撃 120%上昇。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/破軍十六神将.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '破軍星 皇': {
+    effectAxis: 'atk',
+    activationType: 'triggered',
+    statTarget: 'atk',
+    trTable: { base:140 },
+    baseRate: 69,
+    note: '[SS] 全　確率 69% / 攻撃 140%上昇(コスト最大0.5除外、TRなし)。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/破軍星 皇.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '神光征軍': {
+    effectAxis: 'atk',
+    activationType: 'triggered',
+    statTarget: 'atk',
+    trTable: { base:90 },
+    speedTrTable: { base:200 },
+    baseRate: 100,
+    note: '[SS] 全　確率 100% / 攻撃 90%上昇+速度 200%上昇(TRなし)。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/神光征軍.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '神勅賢母': {
+    effectAxis: 'def',
+    activationType: 'triggered',
+    statTarget: 'def',
+    trTable: { base:39 },
+    baseRate: 25,
+    targetTroopCategories: ['兵器兵科(砲兵科)','槍兵科','騎馬兵科'],
+    note: '[S] 槍馬砲　確率 25% / 防御 39%上昇。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/神勅賢母.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '禍津日神ノ謀': {
+    effectAxis: 'def',
+    activationType: 'triggered',
+    statTarget: 'def',
+    trTable: { base:145 },
+    baseRate: 70,
+    note: '[SS] 全　確率 70% / 防御 145%上昇(武将ダメージ軽減3%・重複上限4)。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/禍津日神ノ謀.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '空陣鳴響': {
+    effectAxis: 'atk',
+    activationType: 'triggered',
+    statTarget: 'atk',
+    trTable: { base:300 },
+    baseRate: 60,
+    targetTroopCategories: ['兵器兵科(砲兵科)','弓兵科','槍兵科','騎馬兵科'],
+    note: '[A] 槍・弓・馬・砲　確率 60% / 攻撃 300%上昇(自部隊同時攻撃時消費名声値-20・重複不可)。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/空陣鳴響.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '籠城の妙技': {
+    effectAxis: 'def',
+    activationType: 'triggered',
+    statTarget: 'def',
+    trTable: { base:50 },
+    baseRate: 100,
+    note: '[A] 全　確率 100% / 防御 50%上昇(卓越:追加確率15%で防御効果が3倍)。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/籠城の妙技.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '精忠鋼壁': {
+    effectAxis: 'atk',
+    activationType: 'triggered',
+    statTarget: 'atk',
+    trTable: { base:450, TR1:490, TR2:610, TR3:790, TR4:1050, TR5:1420 },
+    baseRate: 50,
+    rateTable: { base:50, TR1:50, TR2:55, TR3:60, TR4:70, TR5:80 },
+    noMimic: true,
+    note: '[S] 全　確率 50% / 攻撃 450%上昇(自身or部隊内武将が通常部隊枠から外れる時HP最大50%回復・模倣不可・部隊内重複不可)。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/精忠鋼壁.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '紅蓮ノ刃': {
+    effectAxis: 'atk',
+    activationType: 'triggered',
+    statTarget: 'atk',
+    trTable: { base:385, TR1:490, TR2:680, TR3:940, TR4:940, TR5:940 },
+    baseRate: 40,
+    targetTroopCategories: ['兵器兵科(器兵科)','兵器兵科(砲兵科)','槍兵科'],
+    noMimic: true,
+    note: '[S] 槍・砲・器　確率 40% / 攻撃 385%上昇(強襲時または強襲部隊との戦闘時に効果3倍・模倣不可)。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/紅蓮ノ刃.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '紅蓮ノ刹': {
+    effectAxis: 'atk',
+    activationType: 'triggered',
+    statTarget: 'atk',
+    trTable: { base:82 },
+    baseRate: 100,
+    targetTroopCategories: ['兵器兵科(器兵科)','兵器兵科(砲兵科)','槍兵科'],
+    note: '[S] 槍砲器　確率 100% / 攻撃 82%上昇 卓越 追加確率40%で攻撃効果が2.5倍。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/紅蓮ノ刹.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '紅蓮炎槍騎兵': {
+    effectAxis: 'both',
+    activationType: 'triggered',
+    statTarget: 'atk',
+    trTable: { base:94 },
+    baseRate: 100,
+    note: '[A] 全　確率 100% / 攻撃 94%上昇+防御 94%上昇(部隊内全武将の初期スキルに「槍弓馬」対象を追加・兵科対象スキル限定)。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/紅蓮炎槍騎兵.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '絶技兵術': {
+    effectAxis: 'both',
+    activationType: 'triggered',
+    statTarget: 'atk',
+    trTable: { base:390 },
+    baseRate: 100,
+    noMimic: true,
+    note: '[S] 全　確率 100% / 攻撃 390%上昇+防御 390%上昇+自軍全武将全スキルの卓越確率に10%加算(模倣不可・自軍内重複上限3)。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/絶技兵術.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '総構え': {
+    effectAxis: 'def',
+    activationType: 'triggered',
+    statTarget: 'def',
+    trTable: { base:30 },
+    baseRate: 35,
+    note: '[B] 全　確率 35% / 防御 30%上昇。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/総構え.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '美人剛腕': {
+    effectAxis: 'def',
+    activationType: 'triggered',
+    statTarget: 'def',
+    trTable: { base:780 },
+    baseRate: 55,
+    note: '[S] 全　確率 55% / 防御 780%上昇(職業「姫」の武将に対してのみ効果あり)。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/美人剛腕.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '聖夜ノ守り': {
+    effectAxis: 'def',
+    activationType: 'triggered',
+    statTarget: 'def',
+    trTable: { base:485 },
+    baseRate: 55,
+    noMimic: true,
+    note: '[S] 全　確率 55% / 防御 485%上昇(所領防御陣形配置時、この武将の編成コスト消費-2・模倣不可)。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/聖夜ノ守り.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '聖夜ノ慈姫': {
+    effectAxis: 'def',
+    activationType: 'triggered',
+    statTarget: 'def',
+    trTable: { base:405 },
+    baseRate: 100,
+    noMimic: true,
+    note: '[S] 全　確率 100% / 防御 405%上昇+防御戦闘時敵軍の卓越追加確率を-5%する+卓越:追加確率15%でさらに敵軍の卓越追加確率を-3%する(特殊効果は重複不可かつ模倣不可)。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/聖夜ノ慈姫.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '自在ノ用兵': {
+    effectAxis: 'both',
+    activationType: 'triggered',
+    statTarget: 'atk',
+    trTable: { base:90 },
+    baseRate: 100,
+    targetTroopCategories: ['兵器兵科(器兵科)','弓兵科','槍兵科'],
+    targetSoldierNames: ['鉄砲足軽'],
+    note: '[A] 槍弓器鉄　確率 100% / 攻撃 90%上昇+防御 90%上昇(「将」武将発動率+10%・TRなし)。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/自在ノ用兵.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '舞姫武神': {
+    effectAxis: 'both',
+    activationType: 'triggered',
+    statTarget: 'atk',
+    trTable: { base:910 },
+    baseRate: 100,
+    note: '[SS] 全　確率 100% / 攻撃 910%上昇 防御 910%上昇。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/舞姫武神.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '茅纒之矟ノ煌': {
+    effectAxis: 'def',
+    activationType: 'triggered',
+    statTarget: 'def',
+    trTable: { base:100 },
+    baseRate: 60,
+    note: '[SS] 全　確率 60% / 防御 100%上昇 自部隊の武将ダメージ軽減3% (重複発動上限数4)。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/茅纒之矟ノ煌.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '荒破閃神': {
+    effectAxis: 'atk',
+    activationType: 'triggered',
+    statTarget: 'atk',
+    trTable: { base:110 },
+    baseRate: 45,
+    note: '[SS] 全　確率 45% / 攻撃 110%上昇 (6部隊以下の攻撃で効果2倍)。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/荒破閃神.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '莫逆の友': {
+    effectAxis: 'atk',
+    activationType: 'triggered',
+    statTarget: 'atk',
+    trTable: { base:78 },
+    speedTrTable: { base:70 },
+    baseRate: 50,
+    targetTroopCategories: ['兵器兵科(砲兵科)','弓兵科','騎馬兵科'],
+    note: '[A] 弓・馬・砲　確率 50%/100% / 攻撃 78%上昇(確率50%)+速度 70%上昇(確率100%)(4部隊以下の攻撃で攻撃効果1.5倍)。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/莫逆の友.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '葵ノ慈母': {
+    effectAxis: 'def',
+    activationType: 'triggered',
+    statTarget: 'def',
+    trTable: { base:110 },
+    baseRate: 50,
+    targetTroopCategories: ['兵器兵科(器兵科)','弓兵科','槍兵科'],
+    targetSoldierNames: ['鉄砲足軽'],
+    note: '[S] 槍・弓・器・鉄　確率 50% / 防御 110%上昇(自拠点防御時は防御効果3倍)。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/葵ノ慈母.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '虚実兵妙': {
+    effectAxis: 'def',
+    activationType: 'triggered',
+    statTarget: 'def',
+    trTable: { base:740, TR1:780, TR2:840, TR3:910, TR4:990, TR5:1080 },
+    baseRate: 100,
+    note: '[SS] 全　確率 100% / 防御 740%上昇(敵軍卓越確率-8%)。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/虚実兵妙.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '覇国無双': {
+    effectAxis: 'atk',
+    activationType: 'triggered',
+    statTarget: 'atk',
+    trTable: { base:40 },
+    baseRate: 35,
+    note: '[S] 全　確率 35% / 攻撃 40%上昇。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/覇国無双.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '覇天金剛': {
+    effectAxis: 'both',
+    activationType: 'triggered',
+    statTarget: 'atk',
+    trTable: { base:1350, TR1:1500, TR2:1730, TR3:2000 },
+    speedTrTable: { base:100, TR1:110, TR2:130, TR3:150 },
+    baseRate: 100,
+    note: '[SS] 全　確率 100% / 攻撃 1350%上昇+防御 1350%上昇+速度 100%上昇。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/覇天金剛.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '覇王 葵巴': {
+    effectAxis: 'def',
+    activationType: 'triggered',
+    statTarget: 'def',
+    trTable: { base:35 },
+    baseRate: 50,
+    note: '[S] 全　確率 50% / 防御 35%上昇。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/覇王 葵巴.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '覇王征軍': {
+    effectAxis: 'atk',
+    activationType: 'triggered',
+    statTarget: 'atk',
+    trTable: { base:25.39 },
+    baseRate: 42,
+    note: '[SS] 全　確率 42% / 攻撃 25.39%上昇(部隊総コストで変動、TRなし)。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/覇王征軍.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '覇道 不如帰': {
+    effectAxis: 'atk',
+    activationType: 'triggered',
+    statTarget: 'atk',
+    trTable: { base:30 },
+    destructTrTable: { base:30 },
+    baseRate: 30,
+    targetTroopCategories: ['兵器兵科(砲兵科)','槍兵科','騎馬兵科'],
+    note: '[S] 槍馬砲　確率 30% / 攻撃 30%上昇+破壊 30%上昇。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/覇道 不如帰.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '覇道天聖': {
+    effectAxis: 'atk',
+    activationType: 'triggered',
+    statTarget: 'atk',
+    trTable: { base:26 },
+    baseRate: 100,
+    note: '[SS] 全　確率 100% / 攻撃 26%上昇(所属部隊の武将が持つスキルを無効化や発動率低下から保護)。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/覇道天聖.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '見様見真似': {
+    effectAxis: 'def',
+    activationType: 'triggered',
+    statTarget: 'def',
+    trTable: { base:440, TR1:500, TR2:610, TR3:780, TR4:1040, TR5:1400 },
+    baseRate: 48,
+    targetTroopCategories: ['兵器兵科(器兵科)','兵器兵科(砲兵科)','槍兵科'],
+    noMimic: true,
+    note: '[S] 槍・砲・器　確率 48% / 防御 440%上昇(所領防御陣形の第肆列目以降に配置時、防御効果1.5倍・模倣不可)。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/見様見真似.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '豊国安寧': {
+    effectAxis: 'def',
+    activationType: 'triggered',
+    statTarget: 'def',
+    trTable: { base:500 },
+    baseRate: 50,
+    noMimic: true,
+    note: '[S] 全　確率 50% / 防御 500%上昇(所領防御陣形配置時、この武将の編成コスト消費-2・模倣不可)。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/豊国安寧.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '豊家ノ滅塞': {
+    effectAxis: 'def',
+    activationType: 'triggered',
+    statTarget: 'def',
+    trTable: { base:15 },
+    baseRate: 42,
+    targetTroopCategories: ['兵器兵科(器兵科)','兵器兵科(砲兵科)','弓兵科'],
+    note: '[B] 弓・砲・器　確率 42% / 防御 15%上昇(部隊の総コストで変動)。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/豊家ノ滅塞.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '負けてらんない': {
+    effectAxis: 'def',
+    activationType: 'triggered',
+    statTarget: 'def',
+    trTable: { base:240 },
+    baseRate: 45,
+    targetTroopCategories: ['兵器兵科(器兵科)','兵器兵科(砲兵科)','弓兵科'],
+    note: '[A] 弓・砲・器　確率 45% / 防御 240%上昇(本丸防御陣形の第参列目以降に配置時、防御効果1.5倍)。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/負けてらんない.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '貫殺飛苦無': {
+    effectAxis: 'atk',
+    activationType: 'triggered',
+    statTarget: 'atk',
+    trTable: { base:420, TR1:470, TR2:580, TR3:860, TR4:1190, TR5:1190 },
+    speedTrTable: { base:135, TR1:145, TR2:145, TR3:165, TR4:200, TR5:200 },
+    baseRate: 100,
+    note: '[S] 全　確率 100% / 攻撃 420%上昇+速度 135%上昇(最速合流出陣・帰還速度 3倍・特殊効果は模倣・重複不可)。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/貫殺飛苦無.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '赤鬼怒涛': {
+    effectAxis: 'def',
+    activationType: 'triggered',
+    statTarget: 'def',
+    trTable: { base:400, TR1:420, TR2:450, TR3:490, TR4:540, TR5:600 },
+    baseRate: 100,
+    noMimic: true,
+    note: '[S] 全　確率 100% / 防御 400%上昇(所領防御陣形の第弐列目以降の部隊にも効果・自身の所属部隊には重複しない・模倣不可)。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/赤鬼怒涛.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '轟閻 霹靂火': {
+    effectAxis: 'def',
+    activationType: 'triggered',
+    statTarget: 'def',
+    trTable: { base:36 },
+    baseRate: 40,
+    targetTroopCategories: ['兵器兵科(砲兵科)'],
+    note: '[S] 砲　確率 40% / 防御 36%上昇。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/轟閻 霹靂火.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '針葉浄美': {
+    effectAxis: 'def',
+    activationType: 'triggered',
+    statTarget: 'def',
+    trTable: { base:480 },
+    baseRate: 100,
+    note: '[S] 全　確率 100% / 防御 480%上昇(部隊内姫武将スキル発動率+10%・特殊効果は部隊内重複不可)。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/針葉浄美.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '銀翼神騎兵': {
+    effectAxis: 'both',
+    activationType: 'triggered',
+    statTarget: 'atk',
+    trTable: { base:64 },
+    speedTrTable: { base:50 },
+    baseRate: 100,
+    targetTroopCategories: ['兵器兵科(器兵科)','弓兵科','騎馬兵科'],
+    note: '[S] 弓馬器　確率 100% / 攻撃 64%上昇 防御 64%上昇 速度 50%上昇。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/銀翼神騎兵.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '錘焔ノ空帯': {
+    effectAxis: 'def',
+    activationType: 'triggered',
+    statTarget: 'def',
+    trTable: { base:114 },
+    baseRate: 100,
+    noMimic: true,
+    note: '[S] 全　確率 100% / 防御 114%上昇 本丸防御陣形に配置時、この武将の編成コスト消費を-1する(模倣不可)。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/錘焔ノ空帯.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '錘焔ノ藍帯': {
+    effectAxis: 'def',
+    activationType: 'triggered',
+    statTarget: 'def',
+    trTable: { base:200 },
+    baseRate: 100,
+    noMimic: true,
+    note: '[SSS] 全　確率 100% / 防御 200%上昇 本丸防御陣形に配属時、この武将の編成コストを-1.5する(模倣不可)。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/錘焔ノ藍帯.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '閃裂討鬼': {
+    effectAxis: 'atk',
+    activationType: 'triggered',
+    statTarget: 'atk',
+    trTable: { base:50 },
+    baseRate: 45,
+    note: '[SS] 全　確率 45% / 攻撃 50%上昇(TR以降のデータなし、LV10が最大値)。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/閃裂討鬼.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '隠形千里': {
+    effectAxis: 'def',
+    activationType: 'triggered',
+    statTarget: 'def',
+    trTable: { base:600, TR1:680, TR2:800, TR3:970, TR4:1190, TR5:1460, TR6:1790 },
+    note: '[S] 全　防御 600%上昇(距離20以上から攻撃されない・所属部隊は出陣不可)。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/隠形千里.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '風林火山': {
+    effectAxis: 'atk',
+    activationType: 'triggered',
+    statTarget: 'atk',
+    trTable: { base:30 },
+    destructTrTable: { base:15 },
+    baseRate: 45,
+    targetTroopCategories: ['弓兵科','槍兵科','騎馬兵科'],
+    note: '[S] 槍・弓・馬　確率 45% / 攻撃 30%上昇+破壊 15%上昇(TRなし)。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/風林火山.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '風林火山 戦': {
+    effectAxis: 'atk',
+    activationType: 'triggered',
+    statTarget: 'atk',
+    trTable: { base:30 },
+    baseRate: 35,
+    targetTroopCategories: ['弓兵科','槍兵科','騎馬兵科'],
+    note: '[A] 槍弓馬　確率 35% / 攻撃 30%上昇。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/風林火山 戦.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '風林火山 颯': {
+    effectAxis: 'atk',
+    activationType: 'triggered',
+    statTarget: 'atk',
+    trTable: { base:12 },
+    speedTrTable: { base:25 },
+    baseRate: 100,
+    note: '[S] 全　確率 100% / 攻撃 12%上昇+速度 25%上昇。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/風林火山 颯.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '飛び雁金': {
+    effectAxis: 'def',
+    activationType: 'triggered',
+    statTarget: 'def',
+    trTable: { base:90 },
+    baseRate: 70,
+    note: '[S] 全　確率 70% / 防御 90%上昇(卓越 追加確率60%で防御効果が4倍)。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/飛び雁金.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '飛媛舞刀': {
+    effectAxis: 'def',
+    activationType: 'triggered',
+    statTarget: 'def',
+    trTable: { base:730, TR1:800, TR2:900, TR3:1050, TR4:1250, TR5:1500 },
+    baseRate: 55,
+    targetTroopCategories: ['兵器兵科(器兵科)','兵器兵科(砲兵科)','槍兵科'],
+    note: '[S] 槍砲器　確率 55% / 防御 730%上昇。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/飛媛舞刀.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '香車伝右衛門': {
+    effectAxis: 'atk',
+    activationType: 'triggered',
+    statTarget: 'atk',
+    trTable: { base:210 },
+    speedTrTable: { base:120 },
+    baseRate: 100,
+    targetTroopCategories: ['兵器兵科(器兵科)','兵器兵科(砲兵科)','騎馬兵科'],
+    noMimic: true,
+    note: '[S] 馬・砲・器 飛翔9　確率 100% / 攻撃 210%上昇+速度 120%上昇(自部隊同時攻撃時、参加自部隊中最速の部隊移動時間を用いて合流出陣できる・模倣不可)。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/香車伝右衛門.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '騎神炎山': {
+    effectAxis: 'both',
+    activationType: 'triggered',
+    statTarget: 'atk',
+    trTable: { base:75 },
+    speedTrTable: { base:50 },
+    baseRate: 40,
+    targetTroopCategories: ['兵器兵科(器兵科)','騎馬兵科'],
+    targetSoldierNames: ['騎馬鉄砲'],
+    note: '[S] 馬器騎　確率 40% / 攻撃 75%上昇 防御 75%上昇 速度 50%上昇。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/騎神炎山.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '騎聖': {
+    effectAxis: 'atk',
+    activationType: 'triggered',
+    statTarget: 'atk',
+    trTable: { base:80 },
+    speedTrTable: { base:50 },
+    baseRate: 100,
+    note: '[A] 全　確率 100% / 攻撃 80%上昇+速度 50%上昇(武将コストで変動)。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/騎聖.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '騎虎神道': {
+    effectAxis: 'atk',
+    activationType: 'triggered',
+    statTarget: 'atk',
+    trTable: { base:170 },
+    baseRate: 100,
+    note: '[S] 全　確率 100% / 攻撃 170%上昇(敗北時討伐ゲージ300まで回復)。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/騎虎神道.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '騎迅強襲': {
+    effectAxis: 'atk',
+    activationType: 'triggered',
+    statTarget: 'atk',
+    trTable: { base:35 },
+    speedTrTable: { base:25 },
+    baseRate: 30,
+    targetTroopCategories: ['兵器兵科(器兵科)','槍兵科','騎馬兵科'],
+    note: '[B] 槍・馬・器　確率 30%/100% / 攻撃 35%上昇(確率30%)+速度 25%上昇(確率100%)。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/騎迅強襲.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '騒速ノ神撃': {
+    effectAxis: 'both',
+    activationType: 'triggered',
+    statTarget: 'atk',
+    trTable: { base:100 },
+    baseRate: 57,
+    targetTroopCategories: ['兵器兵科(器兵科)','弓兵科','槍兵科'],
+    targetSoldierNames: ['焙烙火矢'],
+    note: '[SS] 槍弓器焙　確率 57% / 攻撃 100%上昇 防御 100%上昇 部隊内の「騒速ノ神撃」スキルx25%を攻防効果に加算。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/騒速ノ神撃.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '驍将奇略': {
+    effectAxis: 'atk',
+    activationType: 'triggered',
+    statTarget: 'atk',
+    trTable: { base:25 },
+    destructTrTable: { base:20 },
+    baseRate: 35,
+    targetTroopCategories: ['兵器兵科(器兵科)','騎馬兵科'],
+    note: '[S] 馬器　確率 35% / 攻撃 25%上昇+破壊 20%上昇。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/驍将奇略.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '鬼十河': {
+    effectAxis: 'def',
+    activationType: 'triggered',
+    statTarget: 'def',
+    trTable: { base:360 },
+    baseRate: 50,
+    targetTroopCategories: ['兵器兵科(器兵科)','兵器兵科(砲兵科)','槍兵科'],
+    noMimic: true,
+    note: '[A] 槍・砲・器　確率 50% / 防御 360%上昇+所領防御陣形配置時コスト消費-1(模倣不可)。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/鬼十河.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '鬼滅刺': {
+    effectAxis: 'both',
+    activationType: 'triggered',
+    statTarget: 'atk',
+    trTable: { base:70 },
+    baseRate: 100,
+    noMimic: true,
+    note: '[A] 全　確率 100% / 攻撃 70%上昇 防御 70%上昇(卓越確率+25%加算・模倣不可)。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/鬼滅刺.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '鬼神ノ戦域': {
+    effectAxis: 'atk',
+    activationType: 'triggered',
+    statTarget: 'atk',
+    trTable: { base:84 },
+    baseRate: 55,
+    targetTroopCategories: ['槍兵科','騎馬兵科'],
+    targetSoldierNames: ['騎馬鉄砲'],
+    note: '[A] 槍・馬・騎 飛翔4 卓越　確率 55% / 攻撃 84%上昇(卓越:追加確率40%で1.5倍)。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/鬼神ノ戦域.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '魁星ノ神弓': {
+    effectAxis: 'atk',
+    activationType: 'triggered',
+    statTarget: 'atk',
+    trTable: { base:1650, TR1:1800, TR2:1960, TR3:2140, TR4:2320, TR5:2500 },
+    speedTrTable: { base:150, TR1:160, TR2:170, TR3:180, TR4:190, TR5:200 },
+    baseRate: 60,
+    targetTroopCategories: ['弓兵科'],
+    note: '[SSS] 弓 不屈2　確率 60% / 攻撃 1650%上昇+速度 150%上昇(コスト除外 最大4)。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/魁星ノ神弓.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '魔王三段撃': {
+    effectAxis: 'atk',
+    activationType: 'triggered',
+    statTarget: 'atk',
+    trTable: { base:30 },
+    destructTrTable: { base:20 },
+    baseRate: 35,
+    targetTroopCategories: ['兵器兵科(砲兵科)'],
+    note: '[S] 砲　確率 35% / 攻撃 30%上昇+破壊 20%上昇。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/魔王三段撃.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '魔界ノ美姫': {
+    effectAxis: 'both',
+    activationType: 'triggered',
+    statTarget: 'atk',
+    trTable: { base:162 },
+    baseRate: 100,
+    noMimic: true,
+    note: '[S] 全　確率 100% / 攻撃 162%上昇+防御 162%上昇(部隊内の姫武将4以上で【部隊スキル】の発動率+40%・模倣不可・重複不可)。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/魔界ノ美姫.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '黄鬼ノ辣腕': {
+    effectAxis: 'atk',
+    activationType: 'triggered',
+    statTarget: 'atk',
+    trTable: { base:410 },
+    speedTrTable: { base:120 },
+    baseRate: 100,
+    note: '[S] 全　確率 100% / 攻撃 410%上昇+速度 120%上昇(自部隊同時攻撃時は参加自部隊中最速の移動時間で合流出陣・攻撃参加した自軍全部隊の帰還速度 3倍・特殊効果は模倣・重複不可)。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/黄鬼ノ辣腕.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '黒衣ノ軍師': {
+    effectAxis: 'def',
+    activationType: 'triggered',
+    statTarget: 'def',
+    trTable: { base:190 },
+    baseRate: 100,
+    note: '[S] 全　確率 100% / 防御 190%上昇(自軍武将のスキル発動率+3%・特殊効果は自軍内重複上限2)。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/黒衣ノ軍師.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '鼎国ノ楔姫': {
+    effectAxis: 'def',
+    activationType: 'triggered',
+    statTarget: 'def',
+    trTable: { base:170 },
+    baseRate: 40,
+    note: '[S] 全　確率 40% / 防御 170%上昇。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/鼎国ノ楔姫.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '鼓腹撃壌': {
+    effectAxis: 'atk',
+    activationType: 'triggered',
+    statTarget: 'atk',
+    trTable: { base:89 },
+    baseRate: 33,
+    targetTroopCategories: ['弓兵科','槍兵科','騎馬兵科'],
+    note: '[A] 槍・弓・馬　確率 33% / 攻撃 89%上昇。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/鼓腹撃壌.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  '龍神ノ加護': {
+    effectAxis: 'def',
+    activationType: 'triggered',
+    statTarget: 'def',
+    trTable: { base:135 },
+    baseRate: 46,
+    targetTroopCategories: ['兵器兵科(器兵科)','兵器兵科(砲兵科)','騎馬兵科'],
+    noMimic: true,
+    note: '[A] 馬・砲・器　確率 46% / 防御 135%上昇(本丸防御陣形配置時コスト消費-0.5・模倣不可)。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/龍神ノ加護.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  'Ｈ・ミキサー': {
+    effectAxis: 'atk',
+    activationType: 'triggered',
+    statTarget: 'atk',
+    trTable: { base:1000 },
+    destructTrTable: { base:150 },
+    baseRate: 29,
+    targetTroopCategories: ['兵器兵科(器兵科)','兵器兵科(砲兵科)','騎馬兵科'],
+    note: '[S] 馬・砲・器　確率 29% / 攻撃 1000%上昇+破壊 150%上昇。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/Ｈ・ミキサー.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  'Ｓ・ドライバー': {
+    effectAxis: 'def',
+    activationType: 'triggered',
+    statTarget: 'def',
+    trTable: { base:200 },
+    baseRate: 10,
+    targetTroopCategories: ['兵器兵科(器兵科)','兵器兵科(砲兵科)'],
+    noMimic: true,
+    note: '[S] 砲・器　確率 10% / 防御 200%上昇(所領防御陣形の第肆列目に配置時は防御効果6倍・模倣不可)。効果文から自動生成(tools/build_special_skills.py)。' +
+          '正本 data/skill/Ｓ・ドライバー.json。効果文に無い仕組み(卓越・覇道・兵站など)は入っていない。'
+  },
+  // BUILD:specialSkillsAuto:end
 };
 
 // カードNo. → 章。武将候補の並べ替え(レアリティ→章の新しい順→No.の大きい順)に使う。
@@ -4021,14 +5827,14 @@ const generalGrowthDB = [
      ※スクリーンショットからの読み取りのため、数値の写し間違いの可能性があります。特に1230番(大谷吉継(2))は
      兵法初期値の桁が判読しづらく「620」と推定していますが要確認です。
   ============================================ */
-  { name:'雑賀孫市（4）', no:'1220', cost: 3.5, initialSkill:'天壌八咫烏', lv0Troops:4200, atkBase:1180, atkGrowth:67, defBase:1070, defGrowth:36, tacticsBase:650, tacticsGrowth:3.0, rankGrades:{yari:'A',yumi:'SS',uma:'A',ki:'A'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixawiki武将カード一覧表より一括登録(要スポットチェック)' },
+  { name:'雑賀孫市（4）', no:'1220', cost: 3.5, initialSkill:'天棲 八咫烏', lv0Troops:4200, atkBase:1180, atkGrowth:67, defBase:1070, defGrowth:36, tacticsBase:650, tacticsGrowth:3.0, rankGrades:{yari:'A',yumi:'SS',uma:'A',ki:'A'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixawiki武将カード一覧表より一括登録(要スポットチェック)' },
   { name:'加藤清正（4）', no:'1221', cost: 3.5, initialSkill:'炎帝伐鬼', lv0Troops:4220, atkBase:1250, atkGrowth:75, defBase:1000, defGrowth:25, tacticsBase:640, tacticsGrowth:3.0, rankGrades:{yari:'SS',yumi:'A',uma:'A',ki:'A'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixawiki武将カード一覧表より一括登録(要スポットチェック)' },
   { name:'前田慶次（1）', no:'1222', cost: 4.0, initialSkill:'無苦ノ武神', lv0Troops:4480, atkBase:1240, atkGrowth:72, defBase:1030, defGrowth:40, tacticsBase:640, tacticsGrowth:3.0, rankGrades:{yari:'X',yumi:'B',uma:'B',ki:'A'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixawiki武将カード一覧表より一括登録(要スポットチェック)' },
   { name:'蜂須賀小六', no:'1223', cost: 4, initialSkill:'無双六界ノ博奕', lv0Troops:4490, atkBase:1080, atkGrowth:46, defBase:1210, defGrowth:64, tacticsBase:680, tacticsGrowth:3.5, rankGrades:{yari:'S',yumi:'S',uma:'A',ki:'A'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixawiki武将カード一覧表より一括登録(要スポットチェック)' },
   { name:'堀秀政', no:'1224', cost: 5, initialSkill:'凶星ノ斬光', lv0Troops:4820, atkBase:1220, atkGrowth:66, defBase:1090, defGrowth:46, tacticsBase:650, tacticsGrowth:3.0, rankGrades:{yari:'A',yumi:'S',uma:'A',ki:'S'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixawiki武将カード一覧表より一括登録。【2026-08-16訂正】武将名が別人の「塙秀吉」になっていたのを「堀秀政」に訂正(ixawiki BushoCard/1224堀秀政・Busho/武将カード一覧・ixanary cards/1224の3ソースで一致、同名数の付番も無し)。あわせて統率ランクが槍S/弓A/馬S/器Aと逆に入っていたのを槍A/弓S/馬A/器Sに訂正(ixawiki個別ページ・正本data/busho/1224.jsonと一致)。コスト5.0・指揮兵4820・攻1220/+66・防1090/+46・兵法650/+3.0・初期スキル凶星ノ斬光は2ソースとも一致しており訂正不要だった。' },
   { name:'九戸政実', no:'1225', cost: 3.5, initialSkill:'北天幻将', lv0Troops:4200, atkBase:1050, atkGrowth:42, defBase:1240, defGrowth:64, tacticsBase:640, tacticsGrowth:3.0, rankGrades:{yari:'S',yumi:'A',uma:'S',ki:'A'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixawiki武将カード一覧表より一括登録(要スポットチェック)' },
-  { name:'伊達政宗（6）【覇】', no:'1226', cost: 5.5, initialSkill:'破天ノ電撃', isHa:true, lv0Troops:5100, atkBase:1250, atkGrowth:72, defBase:1250, defGrowth:72, tacticsBase:750, tacticsGrowth:3.5, rankGrades:{yari:'S',yumi:'A',uma:'S',ki:'A'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixawiki武将カード一覧表より一括登録(要スポットチェック)。名称の(裏3)を(覇3)に修正(ユーザー指示)' },
-  { name:'真田幸村（2）【覇】', no:'1227', cost: 5, initialSkill:'紅蓮ノ護神', isHa:true, lv0Troops:4750, atkBase:1250, atkGrowth:56, defBase:1280, defGrowth:72, tacticsBase:740, tacticsGrowth:3.5, rankGrades:{yari:'S',yumi:'A',uma:'S',ki:'A'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixawiki武将カード一覧表より一括登録(要スポットチェック)。名称の(裏)を(覇)に修正(ユーザー指示)' },
+  { name:'伊達政宗（6）【覇】', no:'1226', cost: 5.5, initialSkill:'破天ノ竜撃', isHa:true, lv0Troops:5100, atkBase:1250, atkGrowth:72, defBase:1250, defGrowth:72, tacticsBase:750, tacticsGrowth:3.5, rankGrades:{yari:'S',yumi:'A',uma:'S',ki:'A'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixawiki武将カード一覧表より一括登録(要スポットチェック)。名称の(裏3)を(覇3)に修正(ユーザー指示)' },
+  { name:'真田幸村（2）【覇】', no:'1227', cost: 5, initialSkill:'紅蓮ノ闘神', isHa:true, lv0Troops:4750, atkBase:1250, atkGrowth:56, defBase:1280, defGrowth:72, tacticsBase:740, tacticsGrowth:3.5, rankGrades:{yari:'S',yumi:'A',uma:'S',ki:'A'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixawiki武将カード一覧表より一括登録(要スポットチェック)。名称の(裏)を(覇)に修正(ユーザー指示)' },
   { name:'直江兼続（3）', no:'1228', cost: 4, initialSkill:'閻魔ノ裁き', lv0Troops:4550, atkBase:1200, atkGrowth:66, defBase:1080, defGrowth:48, tacticsBase:650, tacticsGrowth:3.0, rankGrades:{yari:'S',yumi:'A',uma:'S',ki:'A'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixawiki武将カード一覧表より一括登録(要スポットチェック)' },
   { name:'石田三成（5）', no:'1229', cost: 4, initialSkill:'豊国天万', lv0Troops:4540, atkBase:1220, atkGrowth:70, defBase:1080, defGrowth:42, tacticsBase:650, tacticsGrowth:3.0, rankGrades:{yari:'S',yumi:'A',uma:'S',ki:'A'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixawiki武将カード一覧表より一括登録(要スポットチェック)' },
   { name:'羽柴秀吉（2）', no:'1208', cost: 4, initialSkill:'日輪ノ狒王', lv0Troops:4400, atkBase:1120, atkGrowth:42, defBase:1190, defGrowth:62, tacticsBase:640, tacticsGrowth:3.0, rankGrades:{yari:'A',yumi:'S',uma:'A',ki:'S'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'characters.html登録時にカード画像で確認済みの値をそのまま反映(No.1208)' },
@@ -4040,7 +5846,7 @@ const generalGrowthDB = [
   { name:'井伊直政', no:'1233', cost: 4, initialSkill:'炎馬帝', lv0Troops:4540, atkBase:1200, atkGrowth:64, defBase:1090, defGrowth:50, tacticsBase:680, tacticsGrowth:3.5, rankGrades:{yari:'A',yumi:'A',uma:'SS',ki:'A'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixawiki武将カード一覧表より一括登録(要スポットチェック)' },
   { name:'徳川秀忠', no:'1234', cost: 3.5, initialSkill:'天封界斬', lv0Troops:4250, atkBase:1060, atkGrowth:40, defBase:1200, defGrowth:66, tacticsBase:660, tacticsGrowth:3.0, rankGrades:{yari:'A',yumi:'A',uma:'A',ki:'A'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixawiki武将カード一覧表より一括登録(要スポットチェック)' },
   { name:'細川忠興', no:'1235', cost: 5, initialSkill:'魔狂ノ業歌', lv0Troops:4860, atkBase:1190, atkGrowth:62, defBase:1100, defGrowth:42, tacticsBase:640, tacticsGrowth:3.0, rankGrades:{yari:'A',yumi:'S',uma:'A',ki:'A'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixawiki武将カード一覧表より一括登録(要スポットチェック)' },
-  { name:'水野勝成', no:'1236', cost: 4, initialSkill:'倫蝮不蓁', lv0Troops:4540, atkBase:1220, atkGrowth:63, defBase:1100, defGrowth:49, tacticsBase:660, tacticsGrowth:3.0, rankGrades:{yari:'A',yumi:'S',uma:'A',ki:'A'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixawiki武将カード一覧表より一括登録(要スポットチェック)' },
+  { name:'水野勝成', no:'1236', cost: 4, initialSkill:'倫魁不羈', lv0Troops:4540, atkBase:1220, atkGrowth:63, defBase:1100, defGrowth:49, tacticsBase:660, tacticsGrowth:3.0, rankGrades:{yari:'A',yumi:'S',uma:'A',ki:'A'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixawiki武将カード一覧表より一括登録(要スポットチェック)' },
   { name:'山内一豊', no:'1237', cost: 3, initialSkill:'国盗ノ懸槍', lv0Troops:4090, atkBase:1210, atkGrowth:65, defBase:1060, defGrowth:46, tacticsBase:650, tacticsGrowth:3.0, rankGrades:{yari:'SS',yumi:'A',uma:'A',ki:'A'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixawiki武将カード一覧表より一括登録(要スポットチェック)' },
   { name:'上杉謙信（6）【覇】', no:'1238', cost: 4.0, initialSkill:'神気乱龍', isHa:true, lv0Troops:4450, atkBase:1280, atkGrowth:75, defBase:1220, defGrowth:66, tacticsBase:760, tacticsGrowth:3.5, rankGrades:{yari:'A',yumi:'A',uma:'S',ki:'SS'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'カード画像(Lv0・No.1238・Cost4)で初期値・成長率・指揮兵士数を確認済み。名称の(裏2)を(覇2)に修正(ユーザー指示)。固有スキル「神気乱龍」は飛翔値再定義+攻撃%上昇の複合スキル(specialSkills参照、自動反映対応)' },
   { name:'北条氏康（6）【覇】', no:'1239', cost: 0.5, initialSkill:'獅子ノ炯眼', isHa:true, lv0Troops:2000, atkBase:1260, atkGrowth:71, defBase:1260, defGrowth:71, tacticsBase:760, tacticsGrowth:3.5, rankGrades:{yari:'A',yumi:'S',uma:'S',ki:'A'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'カード画像(Lv0・No.1239・Cost0.5)で初期値・成長率・指揮兵士数(2000)を確認済み。名称の(裏3)を(覇3)に修正(ユーザー指示)。固有スキル名を「獅子ノ烱眼」から正しい表記「獅子ノ炯眼」に修正(specialSkills参照)' },
@@ -4049,25 +5855,25 @@ const generalGrowthDB = [
   { name:'佐竹義重（4）', no:'1242', cost: 4, initialSkill:'天魔七斬', lv0Troops:4560, atkBase:1080, atkGrowth:48, defBase:1230, defGrowth:63, tacticsBase:660, tacticsGrowth:3.0, rankGrades:{yari:'S',yumi:'S',uma:'A',ki:'A'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixawiki武将カード一覧表より一括登録(要スポットチェック)' },
   { name:'朝倉義景', no:'1243', cost: 2, initialSkill:'万界寂香', lv0Troops:3600, atkBase:1060, atkGrowth:40, defBase:1180, defGrowth:65, tacticsBase:650, tacticsGrowth:3.0, rankGrades:{yari:'S',yumi:'A',uma:'A',ki:'S'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixawiki武将カード一覧表より一括登録(要スポットチェック)' },
   { name:'浅井長政（4）', no:'1244', cost: 4.5, initialSkill:'義心江龍', lv0Troops:4750, atkBase:1210, atkGrowth:64, defBase:1100, defGrowth:42, tacticsBase:660, tacticsGrowth:3.0, rankGrades:{yari:'SS',yumi:'A',uma:'A',ki:'A'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixawiki武将カード一覧表より一括登録(要スポットチェック)' },
-  { name:'里見義弘（2）', no:'1245', cost: 5, initialSkill:'斐波騰槍', lv0Troops:4920, atkBase:1170, atkGrowth:57, defBase:1170, defGrowth:57, tacticsBase:660, tacticsGrowth:3.0, rankGrades:{yari:'A',yumi:'S',uma:'A',ki:'A'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixawiki武将カード一覧表より一括登録(要スポットチェック)' },
+  { name:'里見義弘（2）', no:'1245', cost: 5, initialSkill:'裂波驍槍', lv0Troops:4920, atkBase:1170, atkGrowth:57, defBase:1170, defGrowth:57, tacticsBase:660, tacticsGrowth:3.0, rankGrades:{yari:'A',yumi:'S',uma:'A',ki:'A'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixawiki武将カード一覧表より一括登録(要スポットチェック)' },
   { name:'本願寺顕如（3）', no:'1246', cost: 4.5, initialSkill:'法威燦煌', lv0Troops:4750, atkBase:1080, atkGrowth:46, defBase:1230, defGrowth:65, tacticsBase:680, tacticsGrowth:3.5, rankGrades:{yari:'S',yumi:'A',uma:'S',ki:'A'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'characters.html検証(2026-07-30)でカード画像照合済み。兵法初期値660→680に修正、スキル名誤字「法威燿煌」→「法威燦煌」に修正、rankGradesを画像基準(槍S/弓A/馬S/器A)に修正' },
   { name:'立花道雪', no:'1247', cost: 3.5, initialSkill:'鎮西ノ雷神', lv0Troops:4260, atkBase:1250, atkGrowth:75, defBase:1010, defGrowth:25, tacticsBase:650, tacticsGrowth:3.0, rankGrades:{yari:'S',yumi:'A',uma:'A',ki:'A'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixawiki武将カード一覧表より一括登録(要スポットチェック)' },
   { name:'三郎信長', no:'1249', cost: 5.5, initialSkill:'破界ノ轟砲', lv0Troops:5150, atkBase:1230, atkGrowth:72, defBase:1030, defGrowth:40, tacticsBase:690, tacticsGrowth:3.5, rankGrades:{yari:'A',yumi:'A',uma:'A',ki:'SS'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixawiki武将カード一覧表より一括登録(要スポットチェック、2026-07-30 characters.html検証時にスキル名誤記(蟲→轟)とrankGrades誤り(uma/ki入替)を修正)' },
-  { name:'織田信長（7）【覇】', no:'1250', cost: 7, initialSkill:'荷天滅陣', isHa:true, lv0Troops:6000, atkBase:1300, atkGrowth:82, defBase:1210, defGrowth:66, tacticsBase:820, tacticsGrowth:4.0, rankGrades:{yari:'A',yumi:'S',uma:'X',ki:'A'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixawiki武将カード一覧表より一括登録(要スポットチェック)。名称の(裏8)を(覇8)に修正(ユーザー指示)。既存の「織田信長【覇(9)】」(No.1286・初期スキル雄飛新世)とは別カードのため名称重複なし(2026年8月、No.1286側を【覇(8)】から【覇(9)】に変更しNo.1250を【覇(8)】に統一)' },
+  { name:'織田信長（7）【覇】', no:'1250', cost: 7, initialSkill:'倚天滅陣', isHa:true, lv0Troops:6000, atkBase:1300, atkGrowth:82, defBase:1210, defGrowth:66, tacticsBase:820, tacticsGrowth:4.0, rankGrades:{yari:'A',yumi:'S',uma:'X',ki:'A'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixawiki武将カード一覧表より一括登録(要スポットチェック)。名称の(裏8)を(覇8)に修正(ユーザー指示)。既存の「織田信長【覇(9)】」(No.1286・初期スキル雄飛新世)とは別カードのため名称重複なし(2026年8月、No.1286側を【覇(8)】から【覇(9)】に変更しNo.1250を【覇(8)】に統一)' },
   { name:'毛利輝元（6）【覇】', no:'1251', cost: 3.0, initialSkill:'西覇冠軍', isHa:true, lv0Troops:3700, atkBase:1280, atkGrowth:76, defBase:1200, defGrowth:65, tacticsBase:770, tacticsGrowth:3.5, rankGrades:{yari:'A',yumi:'X',uma:'A',ki:'S'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixawiki武将カード一覧表より一括登録(要スポットチェック)。名称の(裏)を(覇)に修正(ユーザー指示)' },
   { name:'武田勝頼（4）', no:'1252', cost: 5, initialSkill:'陥城騎王', lv0Troops:4960, atkBase:1230, atkGrowth:64, defBase:1080, defGrowth:41, tacticsBase:650, tacticsGrowth:3.0, rankGrades:{yari:'A',yumi:'A',uma:'S',ki:'S'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixawiki武将カード一覧表より一括登録(要スポットチェック)' },
   { name:'北条氏政（4）', no:'1253', cost: 4.5, initialSkill:'八界経略', lv0Troops:4760, atkBase:1210, atkGrowth:64, defBase:1210, defGrowth:64, tacticsBase:690, tacticsGrowth:3.5, rankGrades:{yari:'S',yumi:'S',uma:'A',ki:'A'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixawiki武将カード一覧表より一括登録(要スポットチェック)' },
   { name:'六角承禎（2）', no:'1254', cost: 4.5, initialSkill:'不屈ノ天弓', lv0Troops:4770, atkBase:1070, atkGrowth:45, defBase:1230, defGrowth:67, tacticsBase:670, tacticsGrowth:3.0, rankGrades:{yari:'A',yumi:'SS',uma:'A',ki:'A'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixawiki武将カード一覧表より一括登録(要スポットチェック)' },
   { name:'豊臣秀吉（6）', no:'1255', cost: 5, initialSkill:'日輪ノ選剣', lv0Troops:4960, atkBase:1070, atkGrowth:44, defBase:1220, defGrowth:65, tacticsBase:700, tacticsGrowth:3.5, rankGrades:{yari:'A',yumi:'A',uma:'A',ki:'S'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixawiki武将カード一覧表より一括登録(要スポットチェック)' },
   { name:'宇喜多直家（3）', no:'1256', cost: 4, initialSkill:'魔弾奏者', lv0Troops:4570, atkBase:1210, atkGrowth:67, defBase:1100, defGrowth:33, tacticsBase:670, tacticsGrowth:3.0, rankGrades:{yari:'A',yumi:'A',uma:'SS',ki:'A'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'カード画像(Lv0・No.1256)で初期値・成長率・指揮兵士数を確認済み。固有スキル名を「魔理姦者」から正しい表記「魔弾奏者」に修正(specialSkills参照)' },
-  { name:'村上武吉（2）', no:'1257', cost: 4.0, initialSkill:'海王怒濤', lv0Troops:4560, atkBase:1240, atkGrowth:64, defBase:1080, defGrowth:50, tacticsBase:640, tacticsGrowth:3.0, rankGrades:{yari:'A',yumi:'A',uma:'SS',ki:'A'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixawiki武将カード一覧表より一括登録(要スポットチェック)' },
+  { name:'村上武吉（2）', no:'1257', cost: 4.0, initialSkill:'海王怒涛', lv0Troops:4560, atkBase:1240, atkGrowth:64, defBase:1080, defGrowth:50, tacticsBase:640, tacticsGrowth:3.0, rankGrades:{yari:'A',yumi:'A',uma:'SS',ki:'A'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixawiki武将カード一覧表より一括登録(要スポットチェック)' },
   { name:'相良義陽（3）', no:'1258', cost: 3.5, initialSkill:'義陣響野', lv0Troops:4300, atkBase:1250, atkGrowth:72, defBase:1020, defGrowth:25, tacticsBase:660, tacticsGrowth:3.0, rankGrades:{yari:'S',yumi:'A',uma:'S',ki:'A'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixawiki武将カード一覧表より一括登録(要スポットチェック、2026-07-30 characters.html検証時にスキル名誤記(蟄→響)とrankGrades誤り(yari/uma→ki集約)を修正)' },
-  { name:'長宗我部元親（6）', no:'1259', cost: 4.5, initialSkill:'島穿覓槍', lv0Troops:4770, atkBase:1060, atkGrowth:44, defBase:1240, defGrowth:67, tacticsBase:660, tacticsGrowth:3.0, rankGrades:{yari:'S',yumi:'A',uma:'A',ki:'S'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixawiki武将カード一覧表より一括登録(要スポットチェック)' },
+  { name:'長宗我部元親（6）', no:'1259', cost: 4.5, initialSkill:'島穿鬼槍', lv0Troops:4770, atkBase:1060, atkGrowth:44, defBase:1240, defGrowth:67, tacticsBase:660, tacticsGrowth:3.0, rankGrades:{yari:'S',yumi:'A',uma:'A',ki:'S'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixawiki武将カード一覧表より一括登録(要スポットチェック)' },
   { name:'伊達輝宗', no:'1260', cost: 5, initialSkill:'龍父絶砲', lv0Troops:4950, atkBase:1200, atkGrowth:62, defBase:1200, defGrowth:62, tacticsBase:660, tacticsGrowth:3.0, rankGrades:{yari:'A',yumi:'S',uma:'A',ki:'S'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixawiki武将カード一覧表より一括登録(要スポットチェック)' },
   { name:'島津家久', no:'1261', cost: 4.0, initialSkill:'神将火剣', lv0Troops:4560, atkBase:1060, atkGrowth:40, defBase:1190, defGrowth:66, tacticsBase:650, tacticsGrowth:3.0, rankGrades:{yari:'S',yumi:'A',uma:'A',ki:'S'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixawiki武将カード一覧表より一括登録(要スポットチェック)' },
   { name:'最上義光（5）【覇】', no:'1262', cost: 5.5, initialSkill:'虎将鉄牙', isHa:true, lv0Troops:5170, atkBase:1200, atkGrowth:64, defBase:1310, defGrowth:82, tacticsBase:780, tacticsGrowth:3.5, rankGrades:{yari:'X',yumi:'A',uma:'S',ki:'A'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixawiki武将カード一覧表より一括登録(要スポットチェック)。名称の(裏)を(覇)に修正(ユーザー指示)' },
   { name:'徳川家康（9）【覇】', no:'1263', cost: 6, initialSkill:'偃武覇陣', isHa:true, lv0Troops:5400, atkBase:1270, atkGrowth:80, defBase:1270, defGrowth:80, tacticsBase:895, tacticsGrowth:4.5, rankGrades:{yari:'A',yumi:'X',uma:'A',ki:'S'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'カード画像(Lv1・No.1263・Cost6、28章の新天)で成長率・指揮兵士数を確認済み(既存登録値と一致)。名称の(裏5)を(覇5)に修正(ユーザー指示)。固有スキル「偃武覇陣」は全攻防%上昇+回復速度上昇+HP回復の複合スキル(specialSkills参照、自動反映対応)。2026-07-30 characters.html検証時にrankGrades誤り(弓がX→A誤登録)を修正' },
-  { name:'相馬義胤（2）', no:'1264', cost: 4.5, initialSkill:'北天奔馬', lv0Troops:4800, atkBase:1250, atkGrowth:71, defBase:1030, defGrowth:34, tacticsBase:650, tacticsGrowth:3.0, rankGrades:{yari:'A',yumi:'A',uma:'S',ki:'A'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixawiki武将カード一覧表より一括登録(要スポットチェック)' },
+  { name:'相馬義胤（2）', no:'1264', cost: 4.5, initialSkill:'北天ノ奔馬', lv0Troops:4800, atkBase:1250, atkGrowth:71, defBase:1030, defGrowth:34, tacticsBase:650, tacticsGrowth:3.0, rankGrades:{yari:'A',yumi:'A',uma:'S',ki:'A'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixawiki武将カード一覧表より一括登録(要スポットチェック)' },
   { name:'蒲生氏郷（2）', no:'1265', cost: 4.5, initialSkill:'天限ノ麒麟', lv0Troops:4800, atkBase:1060, atkGrowth:44, defBase:1230, defGrowth:68, tacticsBase:650, tacticsGrowth:3.0, rankGrades:{yari:'A',yumi:'S',uma:'A',ki:'S'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixawiki武将カード一覧表より一括登録(要スポットチェック)' },
   { name:'直江兼続（4）', no:'1266', cost: 5.0, initialSkill:'三全将帥', lv0Troops:4980, atkBase:1050, atkGrowth:36, defBase:1250, defGrowth:70, tacticsBase:680, tacticsGrowth:3.5, rankGrades:{yari:'A',yumi:'S',uma:'A',ki:'S'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixawiki武将カード一覧表より一括登録(要スポットチェック)' },
   { name:'佐竹義宣（2）', no:'1267', cost: 4, initialSkill:'義響鉄心', lv0Troops:4590, atkBase:1080, atkGrowth:45, defBase:1230, defGrowth:70, tacticsBase:650, tacticsGrowth:3.0, rankGrades:{yari:'S',yumi:'S',uma:'A',ki:'A'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixawiki武将カード一覧表より一括登録(要スポットチェック、2026-07-30 characters.html検証時にスキル名誤記(睿→響)を修正)' },
@@ -4089,7 +5895,7 @@ const generalGrowthDB = [
   { name:'鍋島直茂（3）', no:'1283', cost: 5.0, initialSkill:'旋渦訣刀', lv0Troops:5060, atkBase:1060, atkGrowth:45, defBase:1250, defGrowth:72, tacticsBase:670, tacticsGrowth:3.0, rankGrades:{yari:'S',yumi:'A',uma:'S',ki:'A'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixawiki武将カード一覧表より一括登録(要スポットチェック)' },
   { name:'加藤清正（5）', no:'1284', cost: 5.0, initialSkill:'虎伐閃衝', lv0Troops:5040, atkBase:1260, atkGrowth:72, defBase:1060, defGrowth:48, tacticsBase:650, tacticsGrowth:3.0, rankGrades:{yari:'SS',yumi:'A',uma:'A',ki:'A'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixawiki武将カード一覧表より一括登録。固有スキル名の誤字「虎伐悶衝」を、正しい表記「虎伐閃衝」に修正(2026年7月、ixanary.comで確認)。' },
   { name:'島津義久（7）', no:'1285', cost: 1.0, initialSkill:'炎国覇弾', lv0Troops:2800, atkBase:1070, atkGrowth:48, defBase:1230, defGrowth:69, tacticsBase:680, tacticsGrowth:3.5, rankGrades:{yari:'A',yumi:'A',uma:'SS',ki:'A'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixawiki武将カード一覧表より一括登録(要スポットチェック)' },
-  { name:'織田信長（8）【覇】', no:'1286', cost: 6.0, initialSkill:'雄飛新世', isHa:true, lv0Troops:5470, atkBase:1320, atkGrowth:83, defBase:1200, defGrowth:64, tacticsBase:860, tacticsGrowth:4.0, rankGrades:{yari:'A',yumi:'A',uma:'XX',ki:'A'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で攻撃1320/防御1200/兵法860・指揮兵数5470(Lv0、天限突破時8470)・成長値(攻+83/防+64/兵法+4.0)が一致することを確認(数値は正しかったため据え置き)。固有スキル「雄飛新世」は対砲器兵科指揮時、覇道で全攻30%上昇(TR6鍛錬で50%)。No.1250(織田信長【覇(8)】・初期スキル荷天滅陣)と名称が重複していたため、2026年8月にこちら(No.1286)を「織田信長【覇(9)】」に変更して区別' },
+  { name:'織田信長（8）【覇】', no:'1286', cost: 6.0, initialSkill:'雄飛新世', isHa:true, lv0Troops:5470, atkBase:1320, atkGrowth:83, defBase:1200, defGrowth:64, tacticsBase:860, tacticsGrowth:4.0, rankGrades:{yari:'A',yumi:'A',uma:'XX',ki:'A'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で攻撃1320/防御1200/兵法860・指揮兵数5470(Lv0、天限突破時8470)・成長値(攻+83/防+64/兵法+4.0)が一致することを確認(数値は正しかったため据え置き)。固有スキル「雄飛新世」は対砲器兵科指揮時、覇道で全攻30%上昇(TR6鍛錬で50%)。No.1250(織田信長【覇(8)】・初期スキル倚天滅陣)と名称が重複していたため、2026年8月にこちら(No.1286)を「織田信長【覇(9)】」に変更して区別' },
   { name:'豊臣秀吉（8）【覇】', no:'1287', cost: 5.0, initialSkill:'暘谷ノ人傑', isHa:true, lv0Troops:5000, atkBase:1210, atkGrowth:66, defBase:1330, defGrowth:83, tacticsBase:870, tacticsGrowth:4.0, rankGrades:{yari:'A',yumi:'S',uma:'X',ki:'A'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で攻撃1210/防御1330・指揮兵数5000(Lv0)が一致することを確認。固有スキル名の表記を誤字「よう谷ノ人傑」から正しい「暘谷ノ人傑」に修正。名称表記を generals配列(No.1287)の「豊臣秀吉【覇(5)】」に統一(旧表記「豊臣秀吉(覇5)」は照合失敗の原因だったため修正)。' },
   { name:'徳川家康（11）【覇】', no:'1288', cost: 5.5, initialSkill:'伏雷蒼樹', isHa:true, lv0Troops:5220, atkBase:1280, atkGrowth:81, defBase:1280, defGrowth:81, tacticsBase:850, tacticsGrowth:4.0, rankGrades:{yari:'A',yumi:'X',uma:'A',ki:'S'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'カード画像(Lv0・No.1288・Cost5.5)で初期値・成長率・指揮兵士数を確認済み(既存登録値と一致)。固有スキル「伏雷蒼樹」は卓越でのみ発動し卓越確率100%超過分を攻防効果に変換する特殊タイプ(specialSkills参照、自動反映対応)。名称表記を generals配列(No.1288)の「徳川家康【覇(6)】」に統一(旧表記「徳川家康(覇6)」は照合失敗の原因だったため修正)。' },
   { name:'長宗我部元親（7）', no:'1289', cost: 6.0, initialSkill:'蓋方軍慮', lv0Troops:5500, atkBase:1090, atkGrowth:50, defBase:1260, defGrowth:72, tacticsBase:670, tacticsGrowth:3.0, rankGrades:{yari:'S',yumi:'S',uma:'A',ki:'A'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixawiki武将カード一覧表より一括登録。固有スキル名の誤字「蓋方軍虚」を、正しい表記「蓋方軍慮」に修正(2026年7月、ixanary.comで確認)。' },
@@ -4264,23 +6070,23 @@ const generalGrowthDB = [
   { name:'佐野昌綱', no:'2457', cost: 4.5, rankGrades:{yari:'S',yumi:'A',uma:'A',ki:'A'}, initialSkill:'十死一生', lv0Troops:4470, atkBase:1140, atkGrowth:58, defBase:1080, defGrowth:50, tacticsBase:550, tacticsGrowth:3.0, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。職業「将」。Cost4.5。固有スキル「十死一生」。 カード画像+ixawikiの2ソースで統率(槍S/弓A/馬A/器A)一致確認(2026-08-11)。武将DBページ(characters-kyoku.html)登録済み。' },
   { name:'ヴァリニャーノ', no:'2458', cost: 4.5, rankGrades:{yari:'A',yumi:'A',uma:'A',ki:'S'}, initialSkill:'聖光ノ遊星', lv0Troops:4480, atkBase:1100, atkGrowth:51, defBase:1150, defGrowth:58, tacticsBase:540, tacticsGrowth:3.0, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。職業「将」。Cost4.5。固有スキル「防:聖光ノ遊星」(S)。 カード画像+ixawikiの2ソースで統率(槍A/弓A/馬A/器S)一致確認(2026-08-11)。武将DBページ(characters-kyoku.html)登録済み。初期スキルはS(聖光ノ遊星・スキル個別ページ未作成、docsのTODO参照)。' },
   { name:'下間頼廉（2）', no:'2466', cost: 4.5, initialSkill:'黒衣ノ元帥', lv0Troops:4550, atkBase:1110, atkGrowth:49, defBase:1200, defGrowth:62, tacticsBase:550, tacticsGrowth:3.0, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。職業「将」。Cost4.5。固有スキル「黒衣ノ元帥」(S)。同じく下間頼廉(No.2120)とは別カードのためNo.を併記。' },
-  { name:'本多忠勝（4）', no:'2468', cost: 4.5, initialSkill:'立ち葵', lv0Troops:4550, atkBase:1120, atkGrowth:62, defBase:1000, defGrowth:49, tacticsBase:550, tacticsGrowth:3.0, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。職業「将」。Cost4.5。固有スキル「特:立ち葵」(S)。' },
+  { name:'本多忠勝（5）', no:'2468', cost: 4.5, initialSkill:'立ち葵', lv0Troops:4550, atkBase:1120, atkGrowth:62, defBase:1000, defGrowth:49, tacticsBase:550, tacticsGrowth:3.0, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。職業「将」。Cost4.5。固有スキル「特:立ち葵」(S)。' },
   { name:'長連龍', no:'2471', cost: 4, initialSkill:'怨龍烈牙', lv0Troops:4280, atkBase:1060, atkGrowth:46, defBase:1180, defGrowth:64, tacticsBase:550, tacticsGrowth:3.0, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。職業「将」。Cost4。固有スキル「防:怨龍烈牙」(S)。' },
   { name:'大久保忠世', no:'2478', cost: 4.5, initialSkill:'敢闘ノ気吹', lv0Troops:4570, atkBase:1210, atkGrowth:58, defBase:1070, defGrowth:46, tacticsBase:540, tacticsGrowth:3.0, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。職業「将」。Cost4.5。固有スキル「敢闘ノ気吹」(S)。' },
-  { name:'雑賀孫市', no:'2479', cost: 3, initialSkill:'金烏砲声', lv0Troops:3550, atkBase:1200, atkGrowth:58, defBase:1070, defGrowth:46, tacticsBase:560, tacticsGrowth:3.0, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。職業「将」。Cost3。固有スキル「金烏砲声」(S)。既存の雑賀孫市(4)(No.1220)とは別カードのためNo.を併記。' },
-  { name:'浅井長政', no:'2483', cost: 5, initialSkill:'江龍義咆', lv0Troops:4780, atkBase:1080, atkGrowth:47, defBase:1210, defGrowth:62, tacticsBase:550, tacticsGrowth:3.0, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。職業「将」。Cost5。固有スキル「防:江龍義咆」(S)。既存の浅井長政(4)(No.1244)とは別カードのためNo.を併記。' },
+  { name:'雑賀孫市（2）', no:'2479', cost: 3, initialSkill:'金烏砲声', lv0Troops:3550, atkBase:1200, atkGrowth:58, defBase:1070, defGrowth:46, tacticsBase:560, tacticsGrowth:3.0, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。職業「将」。Cost3。固有スキル「金烏砲声」(S)。既存の雑賀孫市(4)(No.1220)とは別カードのためNo.を併記。' },
+  { name:'浅井長政（2）', no:'2483', cost: 5, initialSkill:'江龍義咆', lv0Troops:4780, atkBase:1080, atkGrowth:47, defBase:1210, defGrowth:62, tacticsBase:550, tacticsGrowth:3.0, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。職業「将」。Cost5。固有スキル「防:江龍義咆」(S)。既存の浅井長政(4)(No.1244)とは別カードのためNo.を併記。' },
   { name:'貴田孫兵衛', no:'2484', cost: 3, initialSkill:'誓助ノ豪剣', lv0Troops:3550, atkBase:1210, atkGrowth:58, defBase:1070, defGrowth:46, tacticsBase:540, tacticsGrowth:2.5, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。職業「将」。Cost3。固有スキル「誓助ノ豪剣」(S)。' },
-  { name:'奥村永福', no:'2485', cost: 5, initialSkill:'護城結鎖', lv0Troops:4780, atkBase:1090, atkGrowth:48, defBase:1210, defGrowth:62, tacticsBase:540, tacticsGrowth:3.0, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。職業「将」。Cost5。固有スキル「護城結鎖」(S)。' },
+  { name:'奥村永福（2）', no:'2485', cost: 5, initialSkill:'護城結鎖', lv0Troops:4780, atkBase:1090, atkGrowth:48, defBase:1210, defGrowth:62, tacticsBase:540, tacticsGrowth:3.0, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。職業「将」。Cost5。固有スキル「護城結鎖」(S)。' },
   { name:'三村家親', no:'2487', cost: 5, initialSkill:'謀神ノ加護', lv0Troops:4780, atkBase:1060, atkGrowth:45, defBase:1230, defGrowth:63, tacticsBase:520, tacticsGrowth:2.5, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。職業「将」。Cost5。固有スキル「謀神ノ加護」(S)。' },
   { name:'北信景', no:'2488', cost: 3, initialSkill:'武光照陣', lv0Troops:3560, atkBase:1200, atkGrowth:58, defBase:1090, defGrowth:46, tacticsBase:520, tacticsGrowth:2.5, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。職業「将」。Cost3。固有スキル「攻速:武光照陣」(S)。' },
   { name:'加藤泰興', no:'2489', cost: 3, initialSkill:'槍禅一如', lv0Troops:3560, atkBase:1040, atkGrowth:43, defBase:1210, defGrowth:62, tacticsBase:510, tacticsGrowth:2.5, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。職業「将」。Cost3。固有スキル「防:槍禅一如」(S)。' },
   { name:'白井入道浄三', no:'2490', cost: 4.5, initialSkill:'神機采配', lv0Troops:4590, atkBase:1010, atkGrowth:40, defBase:1210, defGrowth:62, tacticsBase:560, tacticsGrowth:3.0, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。職業「将」。Cost4.5。固有スキル「防:神機采配」(S)。' },
   { name:'坪井将監', no:'2491', cost: 5.5, initialSkill:'天膂ノ闘士', lv0Troops:5040, atkBase:1040, atkGrowth:44, defBase:1300, defGrowth:71, tacticsBase:510, tacticsGrowth:2.5, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。職業「将」。Cost5.5。固有スキル「防:天膂ノ闘士」(S)。' },
   { name:'天草四郎', no:'2492', cost: 1, initialSkill:'神明旗手', lv0Troops:2000, atkBase:1050, atkGrowth:44, defBase:1200, defGrowth:61, tacticsBase:600, tacticsGrowth:3.5, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。職業「将」。Cost1。固有スキル「神明旗手」(S)。' },
-  { name:'藤堂高虎', no:'2494', cost: 4.5, initialSkill:'柳営ノ先剣', lv0Troops:4590, atkBase:1230, atkGrowth:65, defBase:1090, defGrowth:53, tacticsBase:540, tacticsGrowth:3.0, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。職業「将」。Cost4.5。固有スキル「特:柳営ノ先剣」(S)。' },
-  { name:'鍋島直茂', no:'2495', cost: 3, initialSkill:'天位智勇', lv0Troops:3560, atkBase:1220, atkGrowth:64, defBase:1090, defGrowth:53, tacticsBase:560, tacticsGrowth:3.0, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。職業「将」。Cost3。固有スキル「天位智勇」(S)。既存の鍋島直茂(No.1283)とは別カードのためNo.を併記。' },
+  { name:'藤堂高虎（4）', no:'2494', cost: 4.5, initialSkill:'柳営ノ先剣', lv0Troops:4590, atkBase:1230, atkGrowth:65, defBase:1090, defGrowth:53, tacticsBase:540, tacticsGrowth:3.0, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。職業「将」。Cost4.5。固有スキル「特:柳営ノ先剣」(S)。' },
+  { name:'鍋島直茂（2）', no:'2495', cost: 3, initialSkill:'天位智勇', lv0Troops:3560, atkBase:1220, atkGrowth:64, defBase:1090, defGrowth:53, tacticsBase:560, tacticsGrowth:3.0, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。職業「将」。Cost3。固有スキル「天位智勇」(S)。既存の鍋島直茂(No.1283)とは別カードのためNo.を併記。' },
   { name:'的場昌長', no:'2496', cost: 4, initialSkill:'砲術小雲雀', lv0Troops:4390, atkBase:1100, atkGrowth:54, defBase:1220, defGrowth:64, tacticsBase:540, tacticsGrowth:2.5, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。職業「将」。Cost4。固有スキル「砲術小雲雀」(S)。' },
-  { name:'長野業正', no:'2497', cost: 5, initialSkill:'虎狩', lv0Troops:4780, atkBase:1110, atkGrowth:56, defBase:1230, defGrowth:64, tacticsBase:540, tacticsGrowth:2.5, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。職業「将」。Cost5。固有スキル「防:虎狩」(S)。既存の長野業正(No.1248)とは別カードのためNo.を併記。' },
+  { name:'長野業正（3）', no:'2497', cost: 5, initialSkill:'虎狩', lv0Troops:4780, atkBase:1110, atkGrowth:56, defBase:1230, defGrowth:64, tacticsBase:540, tacticsGrowth:2.5, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。職業「将」。Cost5。固有スキル「防:虎狩」(S)。既存の長野業正(No.1248)とは別カードのためNo.を併記。' },
   { name:'真柄十郎左衛門', no:'2499', cost: 5, initialSkill:'太郎太刀・掃滅', lv0Troops:4780, atkBase:1130, atkGrowth:58, defBase:1130, defGrowth:58, tacticsBase:530, tacticsGrowth:2.5, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。職業「将」。Cost5。固有スキル「太郎太刀・掃滅」。' },
   { name:'津田宗及-復刻-', no:'2501', cost: 0.5, initialSkill:'商器偉才', lv0Troops:1600, atkBase:990, atkGrowth:30, defBase:1050, defGrowth:32, tacticsBase:500, tacticsGrowth:2.5, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。職業「文」。Cost0.5。固有スキル「特:商器偉才」(A)。' },
   { name:'ヴィレラ-復刻-', no:'2506', cost: 2.5, initialSkill:'黄昏る福音', lv0Troops:3050, atkBase:890, atkGrowth:28, defBase:890, defGrowth:28, tacticsBase:560, tacticsGrowth:2.5, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。職業「文」。Cost2.5。固有スキル「特:黄昏る福音」(A)。同じくヴィレラ(No.2177)とは別カードのためNo.を併記。' },
@@ -4329,7 +6135,7 @@ const generalGrowthDB = [
   { name:'円融院', no:'2727', cost: 3, initialSkill:'妖艶遊戯', lv0Troops:3000, atkBase:750, atkGrowth:18, defBase:750, defGrowth:18, tacticsBase:470, tacticsGrowth:2.0, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。職業「姫」。Cost3。固有スキル「特:妖艶遊戯」(A)。' },
   { name:'果心居士', no:'2735', cost: 3.5, initialSkill:'風狂幻術', lv0Troops:3000, atkBase:900, atkGrowth:20, defBase:900, defGrowth:20, tacticsBase:540, tacticsGrowth:3.0, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。職業「文」。Cost3.5。固有スキル「風狂幻術」(B)。既存の果心居士(No.10030)とは別カードのためNo.を併記。' },
   { name:'皎月院', no:'2738', cost: 0.5, initialSkill:'朔望', lv0Troops:1670, atkBase:470, atkGrowth:20, defBase:690, defGrowth:21, tacticsBase:460, tacticsGrowth:2.0, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。職業「姫」。Cost0.5。固有スキル「防:朔望」(A)。' },
-  { name:'北条氏綱', no:'2739', cost: 1.5, initialSkill:'禄寿応穏', lv0Troops:1900, atkBase:700, atkGrowth:17, defBase:750, defGrowth:19, tacticsBase:480, tacticsGrowth:2.0, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。職業「将」。Cost1.5。固有スキル「禄寿応穏」(A)。' },
+  { name:'北条氏綱（1）', no:'2739', cost: 1.5, initialSkill:'禄寿応穏', lv0Troops:1900, atkBase:700, atkGrowth:17, defBase:750, defGrowth:19, tacticsBase:480, tacticsGrowth:2.0, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。職業「将」。Cost1.5。固有スキル「禄寿応穏」(A)。' },
   { name:'武野紹鴎', no:'2740', cost: 0.5, initialSkill:'茶聖ノ白鷺', lv0Troops:1, atkBase:1, atkGrowth:1, defBase:1, defGrowth:1, tacticsBase:560, tacticsGrowth:3.0, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。職業「将」。Cost0.5。攻撃・防御・指揮兵数がいずれも1という戦闘不参加型の特殊カード(要再確認)。固有スキル「茶聖ノ白鷺」(特殊スキル)。' },
   { name:'内藤如安', no:'2741', cost: 3, initialSkill:'聖洗の祝砲', lv0Troops:3150, atkBase:850, atkGrowth:19, defBase:830, defGrowth:18, tacticsBase:445, tacticsGrowth:2.0, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。職業「将」。Cost3。固有スキル「聖洗の祝砲」(A)。' },
   { name:'松平清康（1）', no:'2745', cost: 1.5, initialSkill:'酔狂破陣', lv0Troops:1900, atkBase:950, atkGrowth:27, defBase:950, defGrowth:27, tacticsBase:510, tacticsGrowth:2.5, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。職業「将」。Cost1.5。固有スキル「酔狂破陣」(特殊スキル)。' },
@@ -4514,15 +6320,15 @@ const generalGrowthDB = [
   { name:'小幡信貞', no:'2486', cost: 3, lv0Troops:3540, atkBase:1100, atkGrowth:50, defBase:1100, defGrowth:50, tacticsBase:550, tacticsGrowth:3, rankGrades:{yari:'A',yumi:'A',uma:'A',ki:'A'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'2026-08-10追加のカード画像(スキルLV1形式)とixanary.comで登録。コスト・指揮兵数・初期値・成長値はixanaryの武将データ表。指揮兵数はB-01のとおり★0-0の値をlv0Troopsに入れている(突破ランク別の値は+0.5版のため使わない)。統率は切り抜き画像のバッジを一括で読み取ったもの(槍A/弓A/馬A/器A)。**個別のズーム確認は未実施のため要検証。**覇かどうか・合成候補・スキルのTR別数値は未確認。' },
   { name:'坂崎直盛', no:'2482', cost: 3.5, initialSkill:'武火狂勢', lv0Troops:3750, atkBase:1250, atkGrowth:67, defBase:1070, defGrowth:48, tacticsBase:520, tacticsGrowth:2.5, rankGrades:{yari:'A',yumi:'A',uma:'A',ki:'S'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'2026-08-10追加のカード画像(スキルLV1形式)とixanary.comで登録。コスト・指揮兵数・初期値・成長値はixanaryの武将データ表。指揮兵数はB-01のとおり★0-0の値をlv0Troopsに入れている(突破ランク別の値は+0.5版のため使わない)。統率は切り抜き画像のバッジを一括で読み取ったもの(槍A/弓A/馬A/器S)。**個別のズーム確認は未実施のため要検証。**覇かどうか・合成候補・スキルのTR別数値は未確認。ixanary記載のLV10性能: 確率：+60% / 対象 砲器 / 不屈3 / 攻撃：460%上昇。' },
   { name:'北畠具教', no:'2481', cost: 4, initialSkill:'勢王秘剣', lv0Troops:4800, atkBase:2000, atkGrowth:150, defBase:1800, defGrowth:130, tacticsBase:510, tacticsGrowth:2.5, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'2026-08-10追加のカード画像(スキルLV1形式)とixanary.comで登録。コスト・指揮兵数・初期値・成長値はixanaryの武将データ表。指揮兵数はB-01のとおり★0-0の値をlv0Troopsに入れている(突破ランク別の値は+0.5版のため使わない)。**統率は未取得**(切り抜きに失敗して画像が無いため)。覇かどうか・合成候補・スキルのTR別数値は未確認。ixanary記載のLV10性能: 確率：+50% / 対象 槍砲器 / 攻撃：（12×飛翔を持たない防御参加武将数）%上昇（模倣不可） / S 勢王秘剣 TR5 鍛錬。' },
-  { name:'朝倉宗滴', no:'2480', cost: 3.5, initialSkill:'九頭龍ノ采配', lv0Troops:3750, atkBase:1210, atkGrowth:59, defBase:1080, defGrowth:50, tacticsBase:570, tacticsGrowth:3, rankGrades:{yari:'S',yumi:'A',uma:'A',ki:'A'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'2026-08-10追加のカード画像(スキルLV1形式)とixanary.comで登録。コスト・指揮兵数・初期値・成長値はixanaryの武将データ表。指揮兵数はB-01のとおり★0-0の値をlv0Troopsに入れている(突破ランク別の値は+0.5版のため使わない)。統率は切り抜き画像のバッジを一括で読み取ったもの(槍S/弓A/馬A/器A)。**個別のズーム確認は未実施のため要検証。**覇かどうか・合成候補・スキルのTR別数値は未確認。ixanary記載のLV10性能: 確率：+43% / 対象 全 / 攻撃：400%上昇 / 所属部隊を含む自部隊同時攻撃で消費する名声値を-45（重複不可）。' },
-  { name:'加藤段蔵', no:'2477', cost: 4, initialSkill:'飛幻忍術', lv0Troops:4300, atkBase:1220, atkGrowth:58, defBase:1060, defGrowth:46, tacticsBase:550, tacticsGrowth:3, rankGrades:{yari:'A',yumi:'A',uma:'A',ki:'S'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'2026-08-10追加のカード画像(スキルLV1形式)とixanary.comで登録。コスト・指揮兵数・初期値・成長値はixanaryの武将データ表。指揮兵数はB-01のとおり★0-0の値をlv0Troopsに入れている(突破ランク別の値は+0.5版のため使わない)。統率は切り抜き画像のバッジを一括で読み取ったもの(槍A/弓A/馬A/器S)。**個別のズーム確認は未実施のため要検証。**覇かどうか・合成候補・スキルのTR別数値は未確認。ixanary記載のLV10性能: 対象 全 / 飛翔12 / 攻撃：394%上昇 確率：+100%。' },
+  { name:'朝倉宗滴（3）', no:'2480', cost: 3.5, initialSkill:'九頭龍ノ采配', lv0Troops:3750, atkBase:1210, atkGrowth:59, defBase:1080, defGrowth:50, tacticsBase:570, tacticsGrowth:3, rankGrades:{yari:'S',yumi:'A',uma:'A',ki:'A'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'2026-08-10追加のカード画像(スキルLV1形式)とixanary.comで登録。コスト・指揮兵数・初期値・成長値はixanaryの武将データ表。指揮兵数はB-01のとおり★0-0の値をlv0Troopsに入れている(突破ランク別の値は+0.5版のため使わない)。統率は切り抜き画像のバッジを一括で読み取ったもの(槍S/弓A/馬A/器A)。**個別のズーム確認は未実施のため要検証。**覇かどうか・合成候補・スキルのTR別数値は未確認。ixanary記載のLV10性能: 確率：+43% / 対象 全 / 攻撃：400%上昇 / 所属部隊を含む自部隊同時攻撃で消費する名声値を-45（重複不可）。' },
+  { name:'加藤段蔵（2）', no:'2477', cost: 4, initialSkill:'飛幻忍術', lv0Troops:4300, atkBase:1220, atkGrowth:58, defBase:1060, defGrowth:46, tacticsBase:550, tacticsGrowth:3, rankGrades:{yari:'A',yumi:'A',uma:'A',ki:'S'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'2026-08-10追加のカード画像(スキルLV1形式)とixanary.comで登録。コスト・指揮兵数・初期値・成長値はixanaryの武将データ表。指揮兵数はB-01のとおり★0-0の値をlv0Troopsに入れている(突破ランク別の値は+0.5版のため使わない)。統率は切り抜き画像のバッジを一括で読み取ったもの(槍A/弓A/馬A/器S)。**個別のズーム確認は未実施のため要検証。**覇かどうか・合成候補・スキルのTR別数値は未確認。ixanary記載のLV10性能: 対象 全 / 飛翔12 / 攻撃：394%上昇 確率：+100%。' },
   { name:'梅津憲忠', no:'2476', cost: 3.5, initialSkill:'黄鬼ノ辣腕', lv0Troops:3740, atkBase:1230, atkGrowth:66, defBase:1090, defGrowth:51, tacticsBase:540, tacticsGrowth:3, rankGrades:{yari:'A',yumi:'A',uma:'S',ki:'S'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'2026-08-10追加のカード画像(スキルLV1形式)とixanary.comで登録。コスト・指揮兵数・初期値・成長値はixanaryの武将データ表。指揮兵数はB-01のとおり★0-0の値をlv0Troopsに入れている(突破ランク別の値は+0.5版のため使わない)。統率は切り抜き画像のバッジを一括で読み取ったもの(槍A/弓A/馬S/器S)。**個別のズーム確認は未実施のため要検証。**覇かどうか・合成候補・スキルのTR別数値は未確認。ixanary記載のLV10性能: 確率：+100% / 対象 全 / 攻撃：410%上昇 速度：120%上昇 / 自部隊同時攻撃時、参加自部隊中最速の部隊移動時間で合流出陣できる。' },
-  { name:'堀秀政', no:'2475', cost: 4, initialSkill:'絶技兵術', lv0Troops:4300, atkBase:1130, atkGrowth:64, defBase:1130, defGrowth:64, tacticsBase:540, tacticsGrowth:3, rankGrades:{yari:'A',yumi:'A',uma:'S',ki:'A'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'2026-08-10追加のカード画像(スキルLV1形式)とixanary.comで登録。コスト・指揮兵数・初期値・成長値はixanaryの武将データ表。指揮兵数はB-01のとおり★0-0の値をlv0Troopsに入れている(突破ランク別の値は+0.5版のため使わない)。統率は切り抜き画像のバッジを一括で読み取ったもの(槍A/弓A/馬S/器A)。**個別のズーム確認は未実施のため要検証。**覇かどうか・合成候補・スキルのTR別数値は未確認。ixanary記載のLV10性能: 確率：+100% / 対象 全 / 攻撃：390%上昇 防御：390%上昇 / 自軍全武将全スキルの卓越確率に10%を加算する（模倣不可・自軍内重複上限3）。' },
+  { name:'堀秀政（2）', no:'2475', cost: 4, initialSkill:'絶技兵術', lv0Troops:4300, atkBase:1130, atkGrowth:64, defBase:1130, defGrowth:64, tacticsBase:540, tacticsGrowth:3, rankGrades:{yari:'A',yumi:'A',uma:'S',ki:'A'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'2026-08-10追加のカード画像(スキルLV1形式)とixanary.comで登録。コスト・指揮兵数・初期値・成長値はixanaryの武将データ表。指揮兵数はB-01のとおり★0-0の値をlv0Troopsに入れている(突破ランク別の値は+0.5版のため使わない)。統率は切り抜き画像のバッジを一括で読み取ったもの(槍A/弓A/馬S/器A)。**個別のズーム確認は未実施のため要検証。**覇かどうか・合成候補・スキルのTR別数値は未確認。ixanary記載のLV10性能: 確率：+100% / 対象 全 / 攻撃：390%上昇 防御：390%上昇 / 自軍全武将全スキルの卓越確率に10%を加算する（模倣不可・自軍内重複上限3）。' },
   { name:'支倉常長', no:'2474', cost: 4.5, initialSkill:'龍栄大使', lv0Troops:4560, atkBase:1110, atkGrowth:53, defBase:1110, defGrowth:53, tacticsBase:530, tacticsGrowth:3, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'2026-08-10追加のカード画像(スキルLV1形式)とixanary.comで登録。コスト・指揮兵数・初期値・成長値はixanaryの武将データ表。指揮兵数はB-01のとおり★0-0の値をlv0Troopsに入れている(突破ランク別の値は+0.5版のため使わない)。**統率は未取得**(切り抜きに失敗して画像が無いため)。覇かどうか・合成候補・スキルのTR別数値は未確認。ixanary記載のLV10性能: 確率：+100% / 対象 槍鉄 / 攻撃：350%上昇 / 防御：350%上昇 / 所属部隊内の「足軽」「長槍足軽」「武士」「鉄砲足軽」の兵士移動速度「5」上昇と兵士破壊力が「5」上昇（特殊効果は模倣不可・自部隊内で重複不可）。' },
-  { name:'陶晴賢', no:'2473', cost: 5, initialSkill:'叛虐之貴公子', lv0Troops:4770, atkBase:1160, atkGrowth:57, defBase:1160, defGrowth:57, tacticsBase:540, tacticsGrowth:3, rankGrades:{yari:'A',yumi:'S',uma:'A',ki:'A'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'2026-08-10追加のカード画像(スキルLV1形式)とixanary.comで登録。コスト・指揮兵数・初期値・成長値はixanaryの武将データ表。指揮兵数はB-01のとおり★0-0の値をlv0Troopsに入れている(突破ランク別の値は+0.5版のため使わない)。統率は切り抜き画像のバッジを一括で読み取ったもの(槍A/弓S/馬A/器A)。**個別のズーム確認は未実施のため要検証。**覇かどうか・合成候補・スキルのTR別数値は未確認。ixanary記載のLV10性能: 所属部隊内の「足軽」「弓足軽」「騎馬兵」の兵士攻撃力と兵士防御力が「12」上昇（模倣不可・自部隊内で重複不可） / 正子公也 / 大内家臣で、主君義隆の寵愛を受けたワン！。' },
+  { name:'陶晴賢（3）', no:'2473', cost: 5, initialSkill:'叛虐之貴公子', lv0Troops:4770, atkBase:1160, atkGrowth:57, defBase:1160, defGrowth:57, tacticsBase:540, tacticsGrowth:3, rankGrades:{yari:'A',yumi:'S',uma:'A',ki:'A'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'2026-08-10追加のカード画像(スキルLV1形式)とixanary.comで登録。コスト・指揮兵数・初期値・成長値はixanaryの武将データ表。指揮兵数はB-01のとおり★0-0の値をlv0Troopsに入れている(突破ランク別の値は+0.5版のため使わない)。統率は切り抜き画像のバッジを一括で読み取ったもの(槍A/弓S/馬A/器A)。**個別のズーム確認は未実施のため要検証。**覇かどうか・合成候補・スキルのTR別数値は未確認。ixanary記載のLV10性能: 所属部隊内の「足軽」「弓足軽」「騎馬兵」の兵士攻撃力と兵士防御力が「12」上昇（模倣不可・自部隊内で重複不可） / 正子公也 / 大内家臣で、主君義隆の寵愛を受けたワン！。' },
   { name:'向井正綱', no:'2472', cost: 4, initialSkill:'国一丸', lv0Troops:4280, atkBase:1180, atkGrowth:64, defBase:1060, defGrowth:46, tacticsBase:540, tacticsGrowth:3, rankGrades:{yari:'A',yumi:'A',uma:'S',ki:'S'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'2026-08-10追加のカード画像(スキルLV1形式)とixanary.comで登録。コスト・指揮兵数・初期値・成長値はixanaryの武将データ表。指揮兵数はB-01のとおり★0-0の値をlv0Troopsに入れている(突破ランク別の値は+0.5版のため使わない)。統率は切り抜き画像のバッジを一括で読み取ったもの(槍A/弓A/馬S/器S)。**個別のズーム確認は未実施のため要検証。**覇かどうか・合成候補・スキルのTR別数値は未確認。ixanary記載のLV10性能: 確率：+100% / 対象 槍馬器騎 / 攻撃：210%上昇 飛翔6 / 攻撃戦闘時、卓越：追加確率5%で攻撃効果が3倍、かつ飛翔16を得る（飛翔獲得部分のみ模倣不可）。' },
-  { name:'小田氏治', no:'2469', cost: 4.5, initialSkill:'志在本貫', lv0Troops:4560, atkBase:1130, atkGrowth:62, defBase:1000, defGrowth:49, tacticsBase:550, tacticsGrowth:3, rankGrades:{yari:'A',yumi:'A',uma:'A',ki:'S'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'2026-08-10追加のカード画像(スキルLV1形式)とixanary.comで登録。コスト・指揮兵数・初期値・成長値はixanaryの武将データ表。指揮兵数はB-01のとおり★0-0の値をlv0Troopsに入れている(突破ランク別の値は+0.5版のため使わない)。統率は切り抜き画像のバッジを一括で読み取ったもの(槍A/弓A/馬A/器S)。**個別のズーム確認は未実施のため要検証。**覇かどうか・合成候補・スキルのTR別数値は未確認。ixanary記載のLV10性能: 確率：+55% / 対象 全 / 攻撃：380%上昇 / 不屈1（攻撃戦闘敗北時、指揮兵が不屈の数値×1000まで回復）。' },
-  { name:'尼子経久', no:'2467', cost: 4.5, initialSkill:'裂界神謀', lv0Troops:4550, atkBase:1090, atkGrowth:49, defBase:1000, defGrowth:33, tacticsBase:550, tacticsGrowth:3, rankGrades:{yari:'A',yumi:'A',uma:'S',ki:'A'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'2026-08-10追加のカード画像(スキルLV1形式)とixanary.comで登録。コスト・指揮兵数・初期値・成長値はixanaryの武将データ表。指揮兵数はB-01のとおり★0-0の値をlv0Troopsに入れている(突破ランク別の値は+0.5版のため使わない)。統率は切り抜き画像のバッジを一括で読み取ったもの(槍A/弓A/馬S/器A)。**個別のズーム確認は未実施のため要検証。**覇かどうか・合成候補・スキルのTR別数値は未確認。ixanary記載のLV10性能: 所属部隊内の「騎馬兵」「精鋭騎馬」「赤備え」の兵士攻撃力が「9」上昇（模倣不可・自部隊内で重複不可） / 正子公也 / 出雲の守護代から「十一ヶ国太守」と呼ばれる程にのし上がった武将だワン！。' },
+  { name:'小田氏治（2）', no:'2469', cost: 4.5, initialSkill:'志在本貫', lv0Troops:4560, atkBase:1130, atkGrowth:62, defBase:1000, defGrowth:49, tacticsBase:550, tacticsGrowth:3, rankGrades:{yari:'A',yumi:'A',uma:'A',ki:'S'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'2026-08-10追加のカード画像(スキルLV1形式)とixanary.comで登録。コスト・指揮兵数・初期値・成長値はixanaryの武将データ表。指揮兵数はB-01のとおり★0-0の値をlv0Troopsに入れている(突破ランク別の値は+0.5版のため使わない)。統率は切り抜き画像のバッジを一括で読み取ったもの(槍A/弓A/馬A/器S)。**個別のズーム確認は未実施のため要検証。**覇かどうか・合成候補・スキルのTR別数値は未確認。ixanary記載のLV10性能: 確率：+55% / 対象 全 / 攻撃：380%上昇 / 不屈1（攻撃戦闘敗北時、指揮兵が不屈の数値×1000まで回復）。' },
+  { name:'尼子経久（2）', no:'2467', cost: 4.5, initialSkill:'裂界神謀', lv0Troops:4550, atkBase:1090, atkGrowth:49, defBase:1000, defGrowth:33, tacticsBase:550, tacticsGrowth:3, rankGrades:{yari:'A',yumi:'A',uma:'S',ki:'A'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'2026-08-10追加のカード画像(スキルLV1形式)とixanary.comで登録。コスト・指揮兵数・初期値・成長値はixanaryの武将データ表。指揮兵数はB-01のとおり★0-0の値をlv0Troopsに入れている(突破ランク別の値は+0.5版のため使わない)。統率は切り抜き画像のバッジを一括で読み取ったもの(槍A/弓A/馬S/器A)。**個別のズーム確認は未実施のため要検証。**覇かどうか・合成候補・スキルのTR別数値は未確認。ixanary記載のLV10性能: 所属部隊内の「騎馬兵」「精鋭騎馬」「赤備え」の兵士攻撃力が「9」上昇（模倣不可・自部隊内で重複不可） / 正子公也 / 出雲の守護代から「十一ヶ国太守」と呼ばれる程にのし上がった武将だワン！。' },
   { name:'フロイス', no:'2465', cost: 4, initialSkill:'星読ノ聖賢', lv0Troops:4250, atkBase:1130, atkGrowth:54, defBase:1130, defGrowth:54, tacticsBase:540, tacticsGrowth:3.5, rankGrades:{yari:'A',yumi:'S',uma:'A',ki:'A'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'2026-08-10追加のカード画像(スキルLV1形式)とixanary.comで登録。コスト・指揮兵数・初期値・成長値はixanaryの武将データ表。指揮兵数はB-01のとおり★0-0の値をlv0Troopsに入れている(突破ランク別の値は+0.5版のため使わない)。統率は切り抜き画像のバッジを一括で読み取ったもの(槍A/弓S/馬A/器A)。**個別のズーム確認は未実施のため要検証。**覇かどうか・合成候補・スキルのTR別数値は未確認。ixanary記載のLV10性能: 確率：+70% / 対象 全 飛翔15 / 攻撃：190%上昇 防御：190%上昇 / 正子公也。' },
   { name:'九鬼嘉隆', no:'2464', cost: 4.5, initialSkill:'鬼宿将艦', lv0Troops:4550, atkBase:1130, atkGrowth:56, defBase:1130, defGrowth:56, tacticsBase:550, tacticsGrowth:3, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'2026-08-10追加のカード画像(スキルLV1形式)とixanary.comで登録。コスト・指揮兵数・初期値・成長値はixanaryの武将データ表。指揮兵数はB-01のとおり★0-0の値をlv0Troopsに入れている(突破ランク別の値は+0.5版のため使わない)。**統率は未取得**(切り抜きに失敗して画像が無いため)。覇かどうか・合成候補・スキルのTR別数値は未確認。ixanary記載のLV10性能: 所属部隊内の「海賊衆」の兵士攻撃力と兵士防御力が「10」上昇（模倣不可・自部隊内で重複不可） / 正子公也 / 「海賊大名」の異名をとった、志摩の戦国大名だワン！。' },
   { name:'初鹿野信昌', no:'2463', cost: 3, initialSkill:'香車伝右衛門', lv0Troops:3500, atkBase:1150, atkGrowth:57, defBase:1120, defGrowth:52, tacticsBase:560, tacticsGrowth:3, rankGrades:{yari:'A',yumi:'A',uma:'S',ki:'A'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'2026-08-10追加のカード画像(スキルLV1形式)とixanary.comで登録。コスト・指揮兵数・初期値・成長値はixanaryの武将データ表。指揮兵数はB-01のとおり★0-0の値をlv0Troopsに入れている(突破ランク別の値は+0.5版のため使わない)。統率は切り抜き画像のバッジを一括で読み取ったもの(槍A/弓A/馬S/器A)。**個別のズーム確認は未実施のため要検証。**覇かどうか・合成候補・スキルのTR別数値は未確認。ixanary記載のLV10性能: 確率：+100% / 対象 馬砲器 / 攻撃：210%上昇 速度：120%上昇 / 飛翔9 / 自部隊同時攻撃時、参加自部隊中最速の部隊移動時間を用いて合流出陣できる（模倣不可）。' },
@@ -4561,11 +6367,11 @@ const generalGrowthDB = [
   { name:'悠久山安慈', no:'2612', cost: 4.5, initialSkill:'二重の極み', lv0Troops:4270, atkBase:1110, atkGrowth:44, defBase:1110, defGrowth:44, tacticsBase:520, tacticsGrowth:2.5, rankGrades:{yari:'A',yumi:'A',uma:'A',ki:'A'}, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'カード画像(LV1形式)+ixanary.com/cards/2612+ixawiki BushoCard/2612で確認。コスト4.5・指揮4270(★0-0)・初期値1110/1110/520・成長+44/+44/+2.5。統率はカード画像とixawikiの2ソース一致(槍A/弓A/馬A/器A)。覇表記なし。LV10性能: 確率+100% / 対象 全 / 攻撃340%上昇 防御340%上昇 / 卓越:追加確率100%で攻防効果が2倍(模倣不可)。るろうに剣心コラボ。TR別の数値はixanary・ixawikiのどちらにも記載なし。' },
   { name:'佐渡島方治', no:'2614', cost: 3, rankGrades:{yari:'B',yumi:'S',uma:'B',ki:'S'}, initialSkill:'百識ノ計', lv0Troops:3380, atkBase:1060, atkGrowth:37, defBase:1060, defGrowth:37, tacticsBase:580, tacticsGrowth:2.5, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'極。職業「将」。Cost3。カード画像(スキルLV1形式)+ixanary.com/cards/2614+ixawiki BushoCard/2614佐渡島方治の3点で確認(2026-08-12)。指揮兵数はマニュアルB-01のとおり★0-0の値(3380)をlv0Troopsに入れている。統率(槍B/弓S/馬B/器S)はカード画像とixawikiの2ソース一致。覇表記なし。LV10性能: 確率+100%/対象 弓器焙/攻撃390%上昇・防御390%上昇/部隊内武将の全スキルの卓越追加確率が25%上昇(模倣不可・特殊効果は自部隊内では重複不可)。TR別数値はixanary・ixawikiのどちらにも記載が無い(A・鍛錬情報なし)。るろうに剣心コラボカード。' },
   { name:'駒形由美', no:'2615', cost: 3, rankGrades:{yari:'A',yumi:'A',uma:'B',ki:'S'}, initialSkill:'華焰', lv0Troops:3390, atkBase:1010, atkGrowth:32, defBase:1120, defGrowth:45, tacticsBase:520, tacticsGrowth:2.5, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'極。Cost3。カード画像(スキルLV1形式)+ixanary.com/cards/2615+ixawiki BushoCard/2615駒形由美の3点で確認(2026-08-12)。統率(槍A/弓A/馬B/器S)はカード画像とixawikiの2ソース一致。覇表記なし。カード上の指揮兵士数3990は限界突破済みの表示なので、B-01どおり★0-0の3390をlv0Troopsに採用。LV10性能: 確率+58%/対象 砲器/防御375%上昇/所領防御陣形に配置時、この武将の編成コスト消費を-1.5する(模倣不可)。TR別数値はixanary・ixawikiのどちらにも記載が無い(A・鍛錬情報なし)。るろうに剣心コラボカード。' },
-  { name:'帰蝶', no:'2617', cost: 3, initialSkill:'聖夜ノ守り', lv0Troops:3540, atkBase:1080, atkGrowth:46, defBase:1200, defGrowth:61, tacticsBase:550, tacticsGrowth:2.5, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'2026-08-10追加のカード画像(スキルLV1形式)とixanary.comで一括登録。コスト・指揮兵数・初期値・成長値はixanaryの武将データ表。指揮兵数はマニュアルB-01のとおり★0-0の値をlv0Troopsに入れている。**統率(rankGrades)は未取得**・覇かどうか/合成候補/スキルのTR別数値も未確認のため要検証。ixanary記載のLV10性能: 確率:+55% / 対象 全 / 防御：485%上昇 / 所領防御陣形に配置時、この武将の編成コスト消費を-2する（模倣不可）。' },
-  { name:'ねね', no:'2618', cost: 3, initialSkill:'豊国安寧', lv0Troops:3540, atkBase:1050, atkGrowth:44, defBase:1180, defGrowth:58, tacticsBase:520, tacticsGrowth:2.5, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'2026-08-10追加のカード画像(スキルLV1形式)とixanary.comで一括登録。コスト・指揮兵数・初期値・成長値はixanaryの武将データ表。指揮兵数はマニュアルB-01のとおり★0-0の値をlv0Troopsに入れている。**統率(rankGrades)は未取得**・覇かどうか/合成候補/スキルのTR別数値も未確認のため要検証。ixanary記載のLV10性能: 確率：+50% / 対象 全 / 防御：500%上昇 / 所領防御陣形に配置時、この武将の編成コスト消費を-2する（模倣不可）。' },
-  { name:'甲斐姫', no:'2619', cost: 4.5, initialSkill:'美人剛腕', lv0Troops:4590, atkBase:1050, atkGrowth:44, defBase:1180, defGrowth:58, tacticsBase:520, tacticsGrowth:2.5, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'2026-08-10追加のカード画像(スキルLV1形式)とixanary.comで一括登録。コスト・指揮兵数・初期値・成長値はixanaryの武将データ表。指揮兵数はマニュアルB-01のとおり★0-0の値をlv0Troopsに入れている。**統率(rankGrades)は未取得**・覇かどうか/合成候補/スキルのTR別数値も未確認のため要検証。ixanary記載のLV10性能: 確率：+55% / 対象 全 / 防御：780%上昇 / （職業「姫」の武将に対してのみ効果あり）。' },
-  { name:'淀', no:'2620', cost: 3, initialSkill:'御台ノ加護', lv0Troops:3540, atkBase:1050, atkGrowth:44, defBase:1180, defGrowth:58, tacticsBase:520, tacticsGrowth:2.5, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'2026-08-10追加のカード画像(スキルLV1形式)とixanary.comで一括登録。コスト・指揮兵数・初期値・成長値はixanaryの武将データ表。指揮兵数はマニュアルB-01のとおり★0-0の値をlv0Troopsに入れている。**統率(rankGrades)は未取得**・覇かどうか/合成候補/スキルのTR別数値も未確認のため要検証。ixanary記載のLV10性能: 確率：+60% / 対象 全 / 防御：170%上昇 / 所領防御陣形の第壱列目か第弐列目に配置時、防御効果が3倍（模倣不可）。' },
-  { name:'京極竜子', no:'2621', cost: 0.5, initialSkill:'針葉浄美', lv0Troops:1850, atkBase:1050, atkGrowth:44, defBase:1180, defGrowth:58, tacticsBase:520, tacticsGrowth:2.5, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'2026-08-10追加のカード画像(スキルLV1形式)とixanary.comで一括登録。コスト・指揮兵数・初期値・成長値はixanaryの武将データ表。指揮兵数はマニュアルB-01のとおり★0-0の値をlv0Troopsに入れている。**統率(rankGrades)は未取得**・覇かどうか/合成候補/スキルのTR別数値も未確認のため要検証。ixanary記載のLV10性能: 確率：+100% / 対象 全 / 防御：480%上昇 / 部隊内姫武将スキル発動率+10%（特殊効果は部隊内重複不可）。' },
+  { name:'帰蝶（4）', no:'2617', cost: 3, initialSkill:'聖夜ノ守り', lv0Troops:3540, atkBase:1080, atkGrowth:46, defBase:1200, defGrowth:61, tacticsBase:550, tacticsGrowth:2.5, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'2026-08-10追加のカード画像(スキルLV1形式)とixanary.comで一括登録。コスト・指揮兵数・初期値・成長値はixanaryの武将データ表。指揮兵数はマニュアルB-01のとおり★0-0の値をlv0Troopsに入れている。**統率(rankGrades)は未取得**・覇かどうか/合成候補/スキルのTR別数値も未確認のため要検証。ixanary記載のLV10性能: 確率:+55% / 対象 全 / 防御：485%上昇 / 所領防御陣形に配置時、この武将の編成コスト消費を-2する（模倣不可）。' },
+  { name:'ねね（2）', no:'2618', cost: 3, initialSkill:'豊国安寧', lv0Troops:3540, atkBase:1050, atkGrowth:44, defBase:1180, defGrowth:58, tacticsBase:520, tacticsGrowth:2.5, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'2026-08-10追加のカード画像(スキルLV1形式)とixanary.comで一括登録。コスト・指揮兵数・初期値・成長値はixanaryの武将データ表。指揮兵数はマニュアルB-01のとおり★0-0の値をlv0Troopsに入れている。**統率(rankGrades)は未取得**・覇かどうか/合成候補/スキルのTR別数値も未確認のため要検証。ixanary記載のLV10性能: 確率：+50% / 対象 全 / 防御：500%上昇 / 所領防御陣形に配置時、この武将の編成コスト消費を-2する（模倣不可）。' },
+  { name:'甲斐姫（4）', no:'2619', cost: 4.5, initialSkill:'美人剛腕', lv0Troops:4590, atkBase:1050, atkGrowth:44, defBase:1180, defGrowth:58, tacticsBase:520, tacticsGrowth:2.5, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'2026-08-10追加のカード画像(スキルLV1形式)とixanary.comで一括登録。コスト・指揮兵数・初期値・成長値はixanaryの武将データ表。指揮兵数はマニュアルB-01のとおり★0-0の値をlv0Troopsに入れている。**統率(rankGrades)は未取得**・覇かどうか/合成候補/スキルのTR別数値も未確認のため要検証。ixanary記載のLV10性能: 確率：+55% / 対象 全 / 防御：780%上昇 / （職業「姫」の武将に対してのみ効果あり）。' },
+  { name:'淀（2）', no:'2620', cost: 3, initialSkill:'御台ノ加護', lv0Troops:3540, atkBase:1050, atkGrowth:44, defBase:1180, defGrowth:58, tacticsBase:520, tacticsGrowth:2.5, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'2026-08-10追加のカード画像(スキルLV1形式)とixanary.comで一括登録。コスト・指揮兵数・初期値・成長値はixanaryの武将データ表。指揮兵数はマニュアルB-01のとおり★0-0の値をlv0Troopsに入れている。**統率(rankGrades)は未取得**・覇かどうか/合成候補/スキルのTR別数値も未確認のため要検証。ixanary記載のLV10性能: 確率：+60% / 対象 全 / 防御：170%上昇 / 所領防御陣形の第壱列目か第弐列目に配置時、防御効果が3倍（模倣不可）。' },
+  { name:'京極竜子（3）', no:'2621', cost: 0.5, initialSkill:'針葉浄美', lv0Troops:1850, atkBase:1050, atkGrowth:44, defBase:1180, defGrowth:58, tacticsBase:520, tacticsGrowth:2.5, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'2026-08-10追加のカード画像(スキルLV1形式)とixanary.comで一括登録。コスト・指揮兵数・初期値・成長値はixanaryの武将データ表。指揮兵数はマニュアルB-01のとおり★0-0の値をlv0Troopsに入れている。**統率(rankGrades)は未取得**・覇かどうか/合成候補/スキルのTR別数値も未確認のため要検証。ixanary記載のLV10性能: 確率：+100% / 対象 全 / 防御：480%上昇 / 部隊内姫武将スキル発動率+10%（特殊効果は部隊内重複不可）。' },
   { name:'ガーネット', no:'2623', cost: 0, initialSkill:'ケアルガ', lv0Troops:1, atkBase:560, atkGrowth:1, defBase:560, defGrowth:1, tacticsBase:660, tacticsGrowth:3.5, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'2026-08-10追加のカード画像(スキルLV1形式)とixanary.comで一括登録。コスト・指揮兵数・初期値・成長値はixanaryの武将データ表。指揮兵数はマニュアルB-01のとおり★0-0の値をlv0Troopsに入れている。**統率(rankGrades)は未取得**・覇かどうか/合成候補/スキルのTR別数値も未確認のため要検証。ixanary記載のLV10性能: 確率：+100% / 対象 将 / このカードを部隊にセットすると、セット時に負傷していた武将のHPを50回復する（模倣不可） / S ケアルガ TR5 鍛錬。' },
   { name:'スタイナー', no:'2625', cost: 4.5, initialSkill:'マジックブレイク', lv0Troops:4590, atkBase:1050, atkGrowth:44, defBase:1210, defGrowth:62, tacticsBase:500, tacticsGrowth:2.5, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'2026-08-10追加のカード画像(スキルLV1形式)とixanary.comで一括登録。コスト・指揮兵数・初期値・成長値はixanaryの武将データ表。指揮兵数はマニュアルB-01のとおり★0-0の値をlv0Troopsに入れている。**統率(rankGrades)は未取得**・覇かどうか/合成候補/スキルのTR別数値も未確認のため要検証。ixanary記載のLV10性能: 確率：+39% / 対象 槍砲器 / 防御：480%上昇 / 防御戦闘時、敵軍の卓越追加確率を-2%する（模倣不可・自軍内重複上限4）。' },
   { name:'エーコ', no:'2626', cost: 3, initialSkill:'リジェネ', lv0Troops:3550, atkBase:1100, atkGrowth:56, defBase:1100, defGrowth:56, tacticsBase:570, tacticsGrowth:3, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'2026-08-10追加のカード画像(スキルLV1形式)とixanary.comで一括登録。コスト・指揮兵数・初期値・成長値はixanaryの武将データ表。指揮兵数はマニュアルB-01のとおり★0-0の値をlv0Troopsに入れている。**統率(rankGrades)は未取得**・覇かどうか/合成候補/スキルのTR別数値も未確認のため要検証。ixanary記載のLV10性能: 確率：+100% / 対象 全 / デッキ上武将回復率：5%上昇 / FinalFantasyIX 25th ANNIVERSARY。' },
@@ -4576,12 +6382,12 @@ const generalGrowthDB = [
   { name:'松風', no:'2639', cost: 3.5, initialSkill:'烈風駿影', lv0Troops:3780, atkBase:1150, atkGrowth:45, defBase:1040, defGrowth:37, tacticsBase:530, tacticsGrowth:2.5, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'2026-08-10追加のカード画像(スキルLV1形式)とixanary.comで一括登録。コスト・指揮兵数・初期値・成長値はixanaryの武将データ表。指揮兵数はマニュアルB-01のとおり★0-0の値をlv0Troopsに入れている。**統率(rankGrades)は未取得**・覇かどうか/合成候補/スキルのTR別数値も未確認のため要検証。ixanary記載のLV10性能: 対象 全 / 攻撃：100%上昇 確率：+100% / 速度：40%上昇 確率：+100%（単独出陣時は速度効果10倍）。' },
   { name:'北条早雲', no:'2701', cost: 3.5, initialSkill:'進撃縮地', lv0Troops:3300, atkBase:745, atkGrowth:17, defBase:735, defGrowth:16, tacticsBase:450, tacticsGrowth:2, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'2026-08-10追加のカード画像(スキルLV1形式)とixanary.comで一括登録。コスト・指揮兵数・初期値・成長値はixanaryの武将データ表。指揮兵数はマニュアルB-01のとおり★0-0の値をlv0Troopsに入れている。**統率(rankGrades)は未取得**・覇かどうか/合成候補/スキルのTR別数値も未確認のため要検証。ixanary記載のLV10性能: 確率：+100% / 対象 全 / 攻撃：5%上昇 / 速度：55%上昇。' },
   { name:'武田信虎', no:'2703', cost: 3.5, initialSkill:'猛虎咆哮', lv0Troops:3260, atkBase:750, atkGrowth:18, defBase:700, defGrowth:16, tacticsBase:430, tacticsGrowth:2, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'2026-08-10追加のカード画像(スキルLV1形式)とixanary.comで一括登録。コスト・指揮兵数・初期値・成長値はixanaryの武将データ表。指揮兵数はマニュアルB-01のとおり★0-0の値をlv0Troopsに入れている。**統率(rankGrades)は未取得**・覇かどうか/合成候補/スキルのTR別数値も未確認のため要検証。ixanary記載のLV10性能: 確率：+45% / 対象 槍馬砲器 / 攻撃：10%上昇 / 破壊：40%上昇。' },
-  { name:'淀', no:'2704', cost: 2, initialSkill:'神勅賢母', lv0Troops:2180, atkBase:650, atkGrowth:16, defBase:740, defGrowth:18, tacticsBase:445, tacticsGrowth:2, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'2026-08-10追加のカード画像(スキルLV1形式)とixanary.comで一括登録。コスト・指揮兵数・初期値・成長値はixanaryの武将データ表。指揮兵数はマニュアルB-01のとおり★0-0の値をlv0Troopsに入れている。**統率(rankGrades)は未取得**・覇かどうか/合成候補/スキルのTR別数値も未確認のため要検証。ixanary記載のLV10性能: 確率：+25% / 対象 槍馬砲 / 防御：39%上昇 / 碧風羽。' },
-  { name:'南光坊天海', no:'2710', cost: 3, initialSkill:'妙計暗躍', lv0Troops:2850, atkBase:650, atkGrowth:17, defBase:630, defGrowth:17, tacticsBase:505, tacticsGrowth:2.5, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'2026-08-10追加のカード画像(スキルLV1形式)とixanary.comで一括登録。コスト・指揮兵数・初期値・成長値はixanaryの武将データ表。指揮兵数はマニュアルB-01のとおり★0-0の値をlv0Troopsに入れている。**統率(rankGrades)は未取得**・覇かどうか/合成候補/スキルのTR別数値も未確認のため要検証。ixanary記載のLV10性能: 確率：+15% / 対象 全 / 攻撃戦闘勝利時のみ、敵軍全武将に追加ダメージ+35（重複不可） / 岩元辰郎。' },
-  { name:'寿桂尼', no:'2711', cost: 2, initialSkill:'弓妖陣', lv0Troops:2130, atkBase:620, atkGrowth:16, defBase:710, defGrowth:18, tacticsBase:450, tacticsGrowth:2, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'2026-08-10追加のカード画像(スキルLV1形式)とixanary.comで一括登録。コスト・指揮兵数・初期値・成長値はixanaryの武将データ表。指揮兵数はマニュアルB-01のとおり★0-0の値をlv0Troopsに入れている。**統率(rankGrades)は未取得**・覇かどうか/合成候補/スキルのTR別数値も未確認のため要検証。ixanary記載のLV10性能: 確率：+25% / 対象 槍弓砲 / 防御：39%上昇 / 戸橋ことみ。' },
-  { name:'龍造寺家兼', no:'2712', cost: 3.5, initialSkill:'龍祖昇躍', lv0Troops:3190, atkBase:740, atkGrowth:18, defBase:720, defGrowth:17, tacticsBase:450, tacticsGrowth:2, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'2026-08-10追加のカード画像(スキルLV1形式)とixanary.comで一括登録。コスト・指揮兵数・初期値・成長値はixanaryの武将データ表。指揮兵数はマニュアルB-01のとおり★0-0の値をlv0Troopsに入れている。**統率(rankGrades)は未取得**・覇かどうか/合成候補/スキルのTR別数値も未確認のため要検証。ixanary記載のLV10性能: 確率：+30% / 対象 槍弓馬 / 攻撃：35%上昇 / GODTAIL。' },
-  { name:'北条幻庵', no:'2713', cost: 3, initialSkill:'智謀巧軍', lv0Troops:2980, atkBase:670, atkGrowth:17, defBase:670, defGrowth:17, tacticsBase:480, tacticsGrowth:2, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'2026-08-10追加のカード画像(スキルLV1形式)とixanary.comで一括登録。コスト・指揮兵数・初期値・成長値はixanaryの武将データ表。指揮兵数はマニュアルB-01のとおり★0-0の値をlv0Troopsに入れている。**統率(rankGrades)は未取得**・覇かどうか/合成候補/スキルのTR別数値も未確認のため要検証。ixanary記載のLV10性能: 確率：+100% / 対象 全 / 攻撃：6%上昇 / 速度：48%上昇。' },
-  { name:'三浦按針', no:'2719', cost: 2.5, initialSkill:'西洋算術', lv0Troops:2640, atkBase:640, atkGrowth:19, defBase:640, defGrowth:17, tacticsBase:470, tacticsGrowth:2.5, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'2026-08-10追加のカード画像(スキルLV1形式)とixanary.comで一括登録。コスト・指揮兵数・初期値・成長値はixanaryの武将データ表。指揮兵数はマニュアルB-01のとおり★0-0の値をlv0Troopsに入れている。**統率(rankGrades)は未取得**・覇かどうか/合成候補/スキルのTR別数値も未確認のため要検証。ixanary記載のLV10性能: 確率：+100% / 対象 金山（重複不可） / アイテム発掘率：3倍 / 金山発掘距離：50%上昇。' },
+  { name:'淀（1）', no:'2704', cost: 2, initialSkill:'神勅賢母', lv0Troops:2180, atkBase:650, atkGrowth:16, defBase:740, defGrowth:18, tacticsBase:445, tacticsGrowth:2, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'2026-08-10追加のカード画像(スキルLV1形式)とixanary.comで一括登録。コスト・指揮兵数・初期値・成長値はixanaryの武将データ表。指揮兵数はマニュアルB-01のとおり★0-0の値をlv0Troopsに入れている。**統率(rankGrades)は未取得**・覇かどうか/合成候補/スキルのTR別数値も未確認のため要検証。ixanary記載のLV10性能: 確率：+25% / 対象 槍馬砲 / 防御：39%上昇 / 碧風羽。' },
+  { name:'南光坊天海（1）', no:'2710', cost: 3, initialSkill:'妙計暗躍', lv0Troops:2850, atkBase:650, atkGrowth:17, defBase:630, defGrowth:17, tacticsBase:505, tacticsGrowth:2.5, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'2026-08-10追加のカード画像(スキルLV1形式)とixanary.comで一括登録。コスト・指揮兵数・初期値・成長値はixanaryの武将データ表。指揮兵数はマニュアルB-01のとおり★0-0の値をlv0Troopsに入れている。**統率(rankGrades)は未取得**・覇かどうか/合成候補/スキルのTR別数値も未確認のため要検証。ixanary記載のLV10性能: 確率：+15% / 対象 全 / 攻撃戦闘勝利時のみ、敵軍全武将に追加ダメージ+35（重複不可） / 岩元辰郎。' },
+  { name:'寿桂尼（1）', no:'2711', cost: 2, initialSkill:'弓妖陣', lv0Troops:2130, atkBase:620, atkGrowth:16, defBase:710, defGrowth:18, tacticsBase:450, tacticsGrowth:2, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'2026-08-10追加のカード画像(スキルLV1形式)とixanary.comで一括登録。コスト・指揮兵数・初期値・成長値はixanaryの武将データ表。指揮兵数はマニュアルB-01のとおり★0-0の値をlv0Troopsに入れている。**統率(rankGrades)は未取得**・覇かどうか/合成候補/スキルのTR別数値も未確認のため要検証。ixanary記載のLV10性能: 確率：+25% / 対象 槍弓砲 / 防御：39%上昇 / 戸橋ことみ。' },
+  { name:'龍造寺家兼（1）', no:'2712', cost: 3.5, initialSkill:'龍祖昇躍', lv0Troops:3190, atkBase:740, atkGrowth:18, defBase:720, defGrowth:17, tacticsBase:450, tacticsGrowth:2, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'2026-08-10追加のカード画像(スキルLV1形式)とixanary.comで一括登録。コスト・指揮兵数・初期値・成長値はixanaryの武将データ表。指揮兵数はマニュアルB-01のとおり★0-0の値をlv0Troopsに入れている。**統率(rankGrades)は未取得**・覇かどうか/合成候補/スキルのTR別数値も未確認のため要検証。ixanary記載のLV10性能: 確率：+30% / 対象 槍弓馬 / 攻撃：35%上昇 / GODTAIL。' },
+  { name:'北条幻庵（1）', no:'2713', cost: 3, initialSkill:'智謀巧軍', lv0Troops:2980, atkBase:670, atkGrowth:17, defBase:670, defGrowth:17, tacticsBase:480, tacticsGrowth:2, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'2026-08-10追加のカード画像(スキルLV1形式)とixanary.comで一括登録。コスト・指揮兵数・初期値・成長値はixanaryの武将データ表。指揮兵数はマニュアルB-01のとおり★0-0の値をlv0Troopsに入れている。**統率(rankGrades)は未取得**・覇かどうか/合成候補/スキルのTR別数値も未確認のため要検証。ixanary記載のLV10性能: 確率：+100% / 対象 全 / 攻撃：6%上昇 / 速度：48%上昇。' },
+  { name:'三浦按針（1）', no:'2719', cost: 2.5, initialSkill:'西洋算術', lv0Troops:2640, atkBase:640, atkGrowth:19, defBase:640, defGrowth:17, tacticsBase:470, tacticsGrowth:2.5, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'2026-08-10追加のカード画像(スキルLV1形式)とixanary.comで一括登録。コスト・指揮兵数・初期値・成長値はixanaryの武将データ表。指揮兵数はマニュアルB-01のとおり★0-0の値をlv0Troopsに入れている。**統率(rankGrades)は未取得**・覇かどうか/合成候補/スキルのTR別数値も未確認のため要検証。ixanary記載のLV10性能: 確率：+100% / 対象 金山（重複不可） / アイテム発掘率：3倍 / 金山発掘距離：50%上昇。' },
   { name:'天羽源鉄', no:'2731', cost: 1, initialSkill:'天ノ羽々矢', lv0Troops:1750, atkBase:700, atkGrowth:19, defBase:700, defGrowth:19, tacticsBase:535, tacticsGrowth:3, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'2026-08-10追加のカード画像(スキルLV1形式)とixanary.comで一括登録。コスト・指揮兵数・初期値・成長値はixanaryの武将データ表。指揮兵数はマニュアルB-01のとおり★0-0の値をlv0Troopsに入れている。**統率(rankGrades)は未取得**・覇かどうか/合成候補/スキルのTR別数値も未確認のため要検証。ixanary記載のLV10性能: 確率：+2.5% / 対象 弓馬砲 / 防御：45%上昇 / （発動率＝確率x攻撃武将数）。' },
   { name:'今井宗久', no:'2733', cost: 3.5, initialSkill:'鉄砲商人', lv0Troops:3250, atkBase:800, atkGrowth:19, defBase:800, defGrowth:19, tacticsBase:510, tacticsGrowth:2.5, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'2026-08-10追加のカード画像(スキルLV1形式)とixanary.comで一括登録。コスト・指揮兵数・初期値・成長値はixanaryの武将データ表。指揮兵数はマニュアルB-01のとおり★0-0の値をlv0Troopsに入れている。**統率(rankGrades)は未取得**・覇かどうか/合成候補/スキルのTR別数値も未確認のため要検証。ixanary記載のLV10性能: 確率：+100% / 対象 全 / 部隊内全武将が持つ全スキルに「砲」対象を追加する（兵科対象スキル限定・模倣不可） / 紺藤ココン。' },
   { name:'千利休', no:'2736', cost: 0.5, initialSkill:'侘茶', lv0Troops:1700, atkBase:700, atkGrowth:17, defBase:750, defGrowth:17, tacticsBase:540, tacticsGrowth:2.5, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'2026-08-10追加のカード画像(スキルLV1形式)とixanary.comで一括登録。コスト・指揮兵数・初期値・成長値はixanaryの武将データ表。指揮兵数はマニュアルB-01のとおり★0-0の値をlv0Troopsに入れている。**統率(rankGrades)は未取得**・覇かどうか/合成候補/スキルのTR別数値も未確認のため要検証。ixanary記載のLV10性能: 確率：+50% / 対象 全 / 防御時に敵軍のレアリティ【天】【極】 / 武将のスキル発動率を-15%。' },
@@ -4637,7 +6443,7 @@ const generalGrowthDB = [
   { name:'望月千代女', no:'2855', cost: 4.5, initialSkill:'虎巫', lv0Troops:4600, atkBase:1220, atkGrowth:64, defBase:1100, defGrowth:54, tacticsBase:550, tacticsGrowth:2.5, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'2026-08-10追加のカード画像(スキルLV1形式)とixanary.comで一括登録。コスト・指揮兵数・初期値・成長値はixanaryの武将データ表。指揮兵数はマニュアルB-01のとおり★0-0の値をlv0Troopsに入れている。**統率(rankGrades)は未取得**・覇かどうか/合成候補/スキルのTR別数値も未確認のため要検証。ixanary記載のLV10性能: 確率：+50% / 対象 全 / 攻撃：1000%上昇 / 攻撃戦闘時、攻撃側武将数を数えて効果が変動する敵軍防御側の武将スキルは、この武将の分を+1名追加して効果を計算する（模倣不可・特殊効果は部隊内重複不可）。' },
   { name:'伊藤一刀斎（2）', no:'2856', cost: 5, initialSkill:'払捨刀夢想', lv0Troops:5600, atkBase:2070, atkGrowth:157, defBase:2070, defGrowth:157, tacticsBase:520, tacticsGrowth:2.5, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'2026-08-10追加のカード画像(スキルLV1形式)とixanary.comで一括登録。コスト・指揮兵数・初期値・成長値はixanaryの武将データ表。指揮兵数はマニュアルB-01のとおり★0-0の値をlv0Troopsに入れている。**統率(rankGrades)は未取得**・覇かどうか/合成候補/スキルのTR別数値も未確認のため要検証。ixanary記載のLV10性能: 塚本陽子 / 武将データ / 武将スキル 投稿一覧 | 戦国IXAnary。' },
   { name:'薬師寺天膳', no:'2990', cost: 3, initialSkill:'不老不死', lv0Troops:3260, atkBase:1050, atkGrowth:32, defBase:1050, defGrowth:32, tacticsBase:470, tacticsGrowth:2, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'2026-08-10追加のカード画像(スキルLV1形式)とixanary.comで一括登録。コスト・指揮兵数・初期値・成長値はixanaryの武将データ表。指揮兵数はマニュアルB-01のとおり★0-0の値をlv0Troopsに入れている。**統率(rankGrades)は未取得**・覇かどうか/合成候補/スキルのTR別数値も未確認のため要検証。ixanary記載のLV10性能: 確率：+35% / 対象 槍砲器 / 攻撃：68%上昇 防御：68%上昇 / 速度：50%上昇（速度は確率100%）。' },
-  { name:'石川五右衛門', no:'3701', cost: 2.5, initialSkill:'天下の義賊', lv0Troops:2222, atkBase:700, atkGrowth:17, defBase:700, defGrowth:17, tacticsBase:475, tacticsGrowth:2.5, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'2026-08-10追加のカード画像(スキルLV1形式)とixanary.comで一括登録。コスト・指揮兵数・初期値・成長値はixanaryの武将データ表。指揮兵数はマニュアルB-01のとおり★0-0の値をlv0Troopsに入れている。**統率(rankGrades)は未取得**・覇かどうか/合成候補/スキルのTR別数値も未確認のため要検証。ixanary記載のLV10性能: 確率：+35% / 対象 全 / 銅銭獲得率：5% / 参加した対人攻撃/防御で倒した兵数x銅銭獲得率＝獲得銅銭。' },
+  { name:'石川五右衛門（1）', no:'3701', cost: 2.5, initialSkill:'天下の義賊', lv0Troops:2222, atkBase:700, atkGrowth:17, defBase:700, defGrowth:17, tacticsBase:475, tacticsGrowth:2.5, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'2026-08-10追加のカード画像(スキルLV1形式)とixanary.comで一括登録。コスト・指揮兵数・初期値・成長値はixanaryの武将データ表。指揮兵数はマニュアルB-01のとおり★0-0の値をlv0Troopsに入れている。**統率(rankGrades)は未取得**・覇かどうか/合成候補/スキルのTR別数値も未確認のため要検証。ixanary記載のLV10性能: 確率：+35% / 対象 全 / 銅銭獲得率：5% / 参加した対人攻撃/防御で倒した兵数x銅銭獲得率＝獲得銅銭。' },
   { name:'千利休', no:'3702', cost: 1, initialSkill:'一期一会', lv0Troops:1100, atkBase:460, atkGrowth:14, defBase:460, defGrowth:14, tacticsBase:475, tacticsGrowth:2.5, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'2026-08-10追加のカード画像(スキルLV1形式)とixanary.comで一括登録。コスト・指揮兵数・初期値・成長値はixanaryの武将データ表。指揮兵数はマニュアルB-01のとおり★0-0の値をlv0Troopsに入れている。**統率(rankGrades)は未取得**・覇かどうか/合成候補/スキルのTR別数値も未確認のため要検証。ixanary記載のLV10性能: 確率：+100% / 対象 全 / デッキ上武将回復率：20%上昇 / 西村キヌ。' },
   { name:'ザビエル', no:'3703', cost: 2.5, initialSkill:'天の福音', lv0Troops:2260, atkBase:660, atkGrowth:16, defBase:660, defGrowth:16, tacticsBase:500, tacticsGrowth:2.5, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'2026-08-10追加のカード画像(スキルLV1形式)とixanary.comで一括登録。コスト・指揮兵数・初期値・成長値はixanaryの武将データ表。指揮兵数はマニュアルB-01のとおり★0-0の値をlv0Troopsに入れている。**統率(rankGrades)は未取得**・覇かどうか/合成候補/スキルのTR別数値も未確認のため要検証。ixanary記載のLV10性能: 確率：+100% / 対象 全 / デッキ上武将回復率：20%上昇 / 戸橋ことみ。' },
   { name:'果心居士', no:'3705', cost: 2.5, initialSkill:'外法鳶陰', lv0Troops:2280, atkBase:640, atkGrowth:15, defBase:690, defGrowth:16, tacticsBase:460, tacticsGrowth:2.5, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'2026-08-10追加のカード画像(スキルLV1形式)とixanary.comで一括登録。コスト・指揮兵数・初期値・成長値はixanaryの武将データ表。指揮兵数はマニュアルB-01のとおり★0-0の値をlv0Troopsに入れている。**統率(rankGrades)は未取得**・覇かどうか/合成候補/スキルのTR別数値も未確認のため要検証。ixanary記載のLV10性能: 確率：+5% / 対象 全 / 防御戦闘勝利時のみ、敵軍の兵士被害数+20% / 斎藤晋。' },

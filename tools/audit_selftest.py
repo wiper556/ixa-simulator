@@ -103,6 +103,13 @@ CASES = [
      '"level": "TR2"', '"level": "TR9"'),
     ("シミュのcost未設定", "assets/js/ixa-data.js",
      "no:'2614', cost: 3,", "no:'2614',"),
+    # 2026-08-16: シミュレーターの名前が正本とずれる。(N)の振り直しで26件、
+    # 綴り間違いで9件出た。specialSkills も同じ綴りだと計算は通ってしまう。
+    ("シミュの名前が正本と違う", "assets/js/ixa-data.js",
+     "{ name:'佐渡島方治', no:'2614'", "{ name:'佐渡島方治（9）', no:'2614'"),
+    ("シミュの名前が正本と違う", "assets/js/ixa-data.js",
+     "ki:'S'}, initialSkill:'百識ノ計'",
+     "ki:'S'}, initialSkill:'百識ノ討'"),
     # 2026-08-15: 効果文の数値の前に半角スペースを入れて統一したので、
     # 注入の目印も「攻撃 390%上昇」に合わせた(合わないと注入できず skip になる)
     ("effectShortの接頭辞", KYOKU,

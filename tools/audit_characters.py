@@ -661,6 +661,29 @@ def main():
         if not re.search(r"\bcost:\s*[\d.]+", m.group(3)):
             add("シミュのcost未設定", "MID", "%s No.%s に cost が無い" % (m.group(1), no))
 
+    # P-05: シミュレーターの武将名・初期スキル名が正本と違う(2026-08-16)
+    #
+    # (N)を114件振り直したとき**シミュレーター側を直し忘れて26件ずれた**。
+    # 対のデータは両側を見る、という原則どおりに動けていない。
+    # さらに初期スキル名に1〜2文字の綴り間違いが9件あった
+    # (荷天滅陣←倚天滅陣 / 倫蝮不蓁←倫魁不羈 / 島穿覓槍←島穿鬼槍 など)。
+    # **specialSkills も同じ綴りで書いてあるので計算は通ってしまう。**
+    # 画面に出る名前とスキルページへの繋がりだけが壊れ、目では気付けない。
+    by_no = {str(g.get("no")): g for g in all_g}
+    for m in re.finditer(r"^  \{ name:'([^']+)', no:'(\d+)'(.*)$", body, re.M):
+        nm, no, rest = m.group(1), m.group(2), m.group(3)
+        g = by_no.get(no)
+        if not g:
+            continue
+        if g.get("name") and nm != g["name"]:
+            add("シミュの名前が正本と違う", "HIGH",
+                "No.%s の武将名: シミュ「%s」/ 正本「%s」" % (no, nm, g["name"]))
+        s = re.search(r"initialSkill:'([^']*)'", rest)
+        if s and g.get("initialSkill") and s.group(1) != g["initialSkill"]:
+            add("シミュの名前が正本と違う", "HIGH",
+                "No.%s %s の初期スキル: シミュ「%s」/ 正本「%s」"
+                % (no, nm, s.group(1), g["initialSkill"]))
+
     # F-07: effectShort の接頭辞の剥がし損ね
     for g in all_g:
         for row in g.get("synthesisTable") or []:
