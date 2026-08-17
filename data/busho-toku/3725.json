@@ -1,0 +1,47 @@
+{
+ "name": "山手殿",
+ "no": "3725",
+ "ch": null,
+ "cost": 3,
+ "troop": "弓砲器攻",
+ "sub": "",
+ "effect": "攻撃 50%上昇(戦闘敗北時は自軍兵士被害数+25%)",
+ "furigana": "やまのてどの",
+ "illustrator": "碧風羽",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 820,
+ "atkGrowth": 20,
+ "defBase": 750,
+ "defGrowth": 18,
+ "tacticsBase": 490.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 2900,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "B",
+  "ki": "A"
+ },
+ "initialSkill": "気丈な覚悟",
+ "skillDetail": "D/LV10 確率 100% 攻撃 50%上昇/対象:弓・砲・器\n①攻撃が50%上昇する\n②戦闘敗北時は自軍兵士被害数が+25%になる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓・砲・器　確率 100% / 攻撃 50%上昇(戦闘敗北時は自軍兵士被害数+25%)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-17登録(担当D)。カード画像なし(灰色表示の一覧撮影のみ)のためixanary.com(cards/3725)とixawiki.com(BushoCard/3725山手殿)の生HTML2ソースを突き合わせて登録した。",
+  "統率(槍A・弓A・馬B・器A)・コスト3・指揮兵数2900・攻撃820・防御750・兵法490・成長(+20/+18/+2.5)・ふりがな・イラストレーター(碧風羽)は2ソースで完全一致した。",
+  "初期スキル「気丈な覚悟」[D]はixanary.com(skills/気丈な覚悟)でLV10=確率+100%/対象弓砲器/攻撃50%上昇/戦闘敗北時は自軍兵士被害数+25%を確認。鍛錬(TR)の記載は無し。ixawikiの基本ステータス表は確率+100%・弓砲器攻+14%となっており、これはixanaryのLV1値(攻撃14%上昇)と一致する。LV10欄が明示されているixanaryの値(攻撃50%上昇)を採用した。",
+  "武将名の（N）はixawiki.com(Busho/武将カード一覧)の特シリーズ一覧ページで確認し無印表記だった(極シリーズのNo.2516山手殿とは別レアリティのため無印同士で重複しない扱いと判断)。",
+  "章(ch)は情報源に記載が無く未確認。ixawiki最古コメント日は2016-01-14・コメント119件でchGuessの参考値。"
+ ],
+ "wikiOldestComment": "2016-01-14",
+ "wikiCommentCount": 119,
+ "chGuess": "11章",
+ "chSource": "wikiOldestComment"
+}
