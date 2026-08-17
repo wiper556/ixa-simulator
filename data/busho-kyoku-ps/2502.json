@@ -1,0 +1,38 @@
+{
+ "name": "曲直瀬道三-復刻-（1）",
+ "no": "2502",
+ "ch": null,
+ "cost": 0,
+ "troop": "特",
+ "sub": "",
+ "effect": "対人防御戦闘での全自部隊被害兵士の3+(武将ランク×1)%を救済(重複不可・カード所持で効果あり・武将ランクで効果が変動)",
+ "furigana": "まなせどうさん",
+ "illustrator": "小森ニコ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": null,
+ "atkGrowth": null,
+ "defBase": null,
+ "defGrowth": null,
+ "tacticsBase": null,
+ "tacticsGrowth": null,
+ "lv0Troops": 1,
+ "rankGrades": null,
+ "initialSkill": "医神",
+ "skillDetail": "A/LV10 対人防御戦闘での全自部隊被害兵士の3+(武将ランク×1)%を救済/対象:-\n①対人防御戦闘での全自部隊被害兵士の3+(武将ランク×1)%を救済する(重複不可・カード所持で効果あり・武将ランクで効果が変動)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "確率 - / 対人防御戦闘での全自部隊被害兵士の3+(武将ランク×1)%を救済する(重複不可・カード所持で効果あり・武将ランクで効果が変動)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "カード画像が無いため ixanary.com/cards/2502 と ixawiki.com(BushoCard/2502曲直瀬道三)の生HTML2ソースで確認した。",
+  "コスト0・指揮1(★0-0)・ふりがな・絵師(小森ニコ)・LV10スキル値(対人防御戦闘での全自部隊被害兵士の3+(武将ランク×1)%を救済・重複不可・カード所持で効果あり・武将ランクで効果が変動)は両ソース完全一致。",
+  "【要申し送り】兵科ランクがixanary.com(cards/2502)は槍A/弓A/馬A/器A、ixawiki.com(BushoCard/2502)は槍F/弓F/馬F/器F(HP:5と表記)と大きく食い違っていた。攻撃・防御・兵法の初期値/成長値もixanaryは990/1050/500・成長+30/+32/+2.5、ixawikiは200/200/520・成長+1/+1/+3.0と食い違っており、いずれが正しいか判断できない。カード画像による裏取りができないためrankGrades・atkBase/atkGrowth/defBase/defGrowth/tacticsBase/tacticsGrowthは全てnullとした。",
+  "初期スキル「医神」[A]の合成候補・章はixanary/ixawikiいずれのカードページにも記載が無く未確認。",
+  "2026-08-18: 名前をシミュレーター側の既存登録に合わせた。ixawiki のカードページには復刻と明記されているのに一覧の表記だけ無印で、そこから作ったこの正本が無印になっていた。"
+ ]
+}

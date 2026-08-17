@@ -1,0 +1,26 @@
+{
+ "name": "騎虎勇道",
+ "rank": "S",
+ "target": "攻",
+ "noMimic": true,
+ "effectSummary": "S/LV10 対象:追加スキル\n模倣不可\n①この武将の追加スキルの攻撃効果は(討伐ゲージ÷100)倍される(討伐ゲージは最大300で計算する)",
+ "categoryLinks": [],
+ "sourceCharacters": [
+  {
+   "name": "藤堂高虎（3）",
+   "no": "2565",
+   "slot": "移植不可",
+   "db": "kyoku"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "追加スキル　討伐ゲージ÷100倍(最大300で3倍)"
+  }
+ ],
+ "notes": [
+  "A-3-9「武将自身の初期スキル(S以上)は無条件にページを作る」により2026-08-16に一括作成。内容は data/busho-kyoku-ps/2565.json の skillDetail / trTable からの転記で、新しい事実は持ち込んでいない。"
+ ]
+}

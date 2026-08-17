@@ -1,0 +1,41 @@
+{
+ "name": "尚巴志",
+ "no": "2922",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "槍弓馬攻",
+ "sub": "",
+ "effect": "攻撃 52%上昇",
+ "furigana": "しょうはし",
+ "illustrator": "正子公也",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 900,
+ "atkGrowth": 19,
+ "defBase": 720,
+ "defGrowth": 18,
+ "tacticsBase": 490,
+ "tacticsGrowth": 2,
+ "lv0Troops": 3330,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "B"
+ },
+ "initialSkill": "三山統一",
+ "skillDetail": "B/LV10 確率 16% 攻撃 52%上昇/対象:槍弓馬\n①攻撃が52%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍弓馬　確率 16% / 攻撃 52%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "カード画像が無いため ixanary.com/cards/2922 と ixawiki.com(BushoCard/2922尚巴志)の生HTML2ソースで確認した。",
+  "基礎値900/720/490・成長19/18/2・コスト3.5・指揮兵数3330(★0-0)・統率(槍A/弓A/馬A/器B)はixanary.comとixawiki.comの2ソースで完全一致。",
+  "初期スキル三山統一(B)のLV10「確率+16%/対象 槍弓馬/攻撃52%上昇」はixanary.comとixawiki.comの2ソースで完全一致。"
+ ]
+}

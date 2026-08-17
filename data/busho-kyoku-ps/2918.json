@@ -1,0 +1,42 @@
+{
+ "name": "斎藤道三（3）",
+ "no": "2918",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "槍砲攻",
+ "sub": "",
+ "effect": "攻撃 42%上昇(発動率=確率×防御武将数)",
+ "furigana": "さいとうどうさん",
+ "illustrator": "正子公也",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 790,
+ "atkGrowth": 18,
+ "defBase": 560,
+ "defGrowth": 16,
+ "tacticsBase": 470,
+ "tacticsGrowth": 2,
+ "lv0Troops": 3410,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "B",
+  "uma": "B",
+  "ki": "A"
+ },
+ "initialSkill": "美濃の蝮",
+ "skillDetail": "B/LV10 確率 2% 攻撃 42%上昇/対象:槍砲\n①攻撃が42%上昇する(発動率=確率×防御武将数)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍砲　確率 2% / 攻撃 42%上昇(発動率=確率×防御武将数)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "カード画像が無いため ixanary.com/cards/2918 と ixawiki.com(BushoCard/2918斎藤道三)の生HTML2ソースで確認した。",
+  "基礎値790/560/470・成長18/16/2・コスト3.5・指揮兵数3410(★0-0)・統率(槍S/弓B/馬B/器A)はixanary.comとixawiki.comの2ソースで完全一致。",
+  "初期スキル美濃の蝮(B)のLV10「確率+2%/対象 槍砲/攻撃42%上昇(発動率=確率×防御武将数)」はixanary.comとixawiki.comの2ソースで完全一致。",
+  "【名前の表記ゆれ】ixawiki.comのカード名ルビ表示は「斉藤道三」(斉)だが、同じixawiki.comのページURL・一覧ページのリンク先・topicpathはいずれも「斎藤道三」(斎)であり、ixanary.comの名前フィールドも「斎藤道三」(斎)。3箇所中2箇所と別ソースが一致する「斎」を採用し、ixawikiのルビ表示側の誤記と判断した。ふりがな(さいとうどうさん)は両ソース完全一致。"
+ ]
+}

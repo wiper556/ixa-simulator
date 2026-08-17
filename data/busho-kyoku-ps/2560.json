@@ -1,0 +1,42 @@
+{
+ "name": "安土城",
+ "no": "2560",
+ "ch": null,
+ "cost": 1,
+ "troop": "全防破",
+ "sub": "",
+ "effect": "全軍の防御120%上昇+破壊150%上昇",
+ "furigana": "あづちじょう",
+ "illustrator": null,
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1100,
+ "atkGrowth": 50,
+ "defBase": 1150,
+ "defGrowth": 60,
+ "tacticsBase": 500,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 1900,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "純金の冠",
+ "skillDetail": "A/LV10 確率 100% 防御 120%上昇/対象:全\n①防御 120%上昇する\n②破壊 150%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 防御 120%上昇+破壊 150%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "カード画像が無いため ixanary.com/cards/2560 と ixawiki.com(BushoCard/2560安土城)の生HTML2ソースで確認した。",
+  "コスト1・指揮1900・初期値1100/1150/500・成長値+50/+60/+2.5・兵科ランク(槍A・弓A・馬A・器S)・スキル名対象確率効果(LV10 確率100%/対象全/防御120%上昇/破壊150%上昇)が両ソース完全一致。",
+  "「城姫クエスト極」コラボレーション報酬カード(2022年8月)。イラストレーターはixanary.comが空欄、ixawiki.comが著作権表記(©K © G ©A)のみで個人名の記載が無いためillustratorはnullにした。部隊スキル「防.戦姫艶舞」は当サイトのデータ項目に対応フィールドが無いため未登録。",
+  "章はixanary.com・ixawiki.comのカードページに記載が無いためnull。"
+ ]
+}

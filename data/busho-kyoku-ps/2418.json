@@ -1,0 +1,39 @@
+{
+ "name": "太田三楽",
+ "no": "2418",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "全攻速",
+ "sub": "",
+ "effect": "攻撃 40%上昇+速度 50%上昇",
+ "furigana": "おおたさんらく",
+ "illustrator": "正子公也",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1040,
+ "atkGrowth": 35,
+ "defBase": 990,
+ "defGrowth": 27,
+ "tacticsBase": 530,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3540,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "S",
+  "ki": "A"
+ },
+ "initialSkill": "援兵 三楽犬",
+ "skillDetail": "A/LV10 確率 100% 攻撃 40%上昇 速度 50%上昇/対象:全\n①攻撃 40%上昇する\n②速度 50%上昇する\n③攻撃参加した自軍全部隊の帰還速度が3倍になる(帰還効果は模倣・重複不可)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 攻撃 40%上昇+速度 50%上昇(攻撃参加した自軍全部隊の帰還速度3倍・帰還効果は模倣・重複不可)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "カード画像が無いため imageFull/imageChar は null。ixanary.comの埋め込みJSON(cards/2418)とixawiki.com(BushoCard/2418太田三楽)の基本ステータス表・スキル表を突き合わせて登録した。"
+ ]
+}

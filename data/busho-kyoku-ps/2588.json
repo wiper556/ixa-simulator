@@ -1,0 +1,41 @@
+{
+ "name": "立花誾千代",
+ "no": "2588",
+ "ch": null,
+ "cost": 4.5,
+ "troop": "全攻",
+ "sub": "飛翔15",
+ "effect": "通常確率では発動せず卓越:追加確率30%で発動(攻撃 420%上昇+飛翔15)",
+ "furigana": "たちばなぎんちよ",
+ "illustrator": "三好載克",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1170,
+ "atkGrowth": 57,
+ "defBase": 1110,
+ "defGrowth": 49,
+ "tacticsBase": 530,
+ "tacticsGrowth": 3,
+ "lv0Troops": 4560,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "夏炎雷祭",
+ "skillDetail": "S/LV10 卓越:追加確率30%で発動 攻撃 420%上昇/対象:全\n①通常確率では発動せず卓越:追加確率30%で発動する\n②発動時攻撃 420%上昇する\n③発動時飛翔15を得る(攻撃戦闘時のみ発動飛翔獲得部分は模倣不可・二重卓越不可)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　卓越:追加確率 30%で発動 / 攻撃 420%上昇+飛翔15(攻撃戦闘時のみ・飛翔獲得部分は模倣不可・二重卓越不可)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録。カード画像が無いためixanary.com(cards/2588)とixawiki.com(BushoCard/2588立花誾千代)の生HTMLを突き合わせて一致した項目のみ登録した。基礎値/成長値/コスト/指揮兵数/統率ランク/初期スキルLV10の確率・効果値は両ソースで一致を確認済み。カード画像が無いためrankGradesは両ソース一致のみ採用しreviewedOkはfalseのまま。",
+  "武将名の末尾は誾(U+8AA9)を含みEUC-JPのJIS X0212範囲では通常のPython変換で取得できなかったため、ixawiki一覧ページ(Busho/武将カード一覧)のリンクhrefから正しいエンコード(%FB%EB)を取り直して個別ページを取得した。",
+  "2026-08-18: 名前をシミュレーター側の既存登録に合わせた。ixawiki のカードページには復刻と明記されているのに一覧の表記だけ無印で、そこから作ったこの正本が無印になっていた。"
+ ]
+}

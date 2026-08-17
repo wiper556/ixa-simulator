@@ -1,0 +1,43 @@
+{
+ "name": "亀井茲矩",
+ "no": "2941",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "槍弓器防",
+ "sub": "",
+ "effect": "防御 20%上昇(所属拠点の残耐久で効果変化)",
+ "furigana": "かめいこれのり",
+ "illustrator": "正子公也",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 920,
+ "atkGrowth": 24,
+ "defBase": 980,
+ "defGrowth": 27,
+ "tacticsBase": 520.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3480,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "B",
+  "ki": "A"
+ },
+ "initialSkill": "王舎城",
+ "skillDetail": "B/LV10 確率 30% 防御 20%上昇/対象:槍弓器\n①防御が20%上昇する(所属拠点の残耐久で効果変化)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍弓器　確率 30% / 防御 20%上昇(所属拠点の残耐久で効果変化)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当J)。カード画像が無いため ixanary.com(cards/2941, skills/王舎城)と ixawiki.com(index.php?BushoCard/2941亀井茲矩, Busho/武将スキル)の生HTML2ソースを突き合わせて登録した。",
+  "統率(槍S/弓A/馬B/器A)・コスト3.5・指揮兵数3480・攻撃920/24・防御980/27・兵法520.0/2.5・ふりがな・イラストレーターはixanary.comとixawiki.comの2ソースで一致することを確認した(不一致箇所は個別に注記)。",
+  "初期スキル「王舎城」[B]はixanary.com(skills/王舎城)のLV10行とixawiki.com(Busho/武将スキル)のマスター一覧LV10行の2ソースで確認した(不一致箇所は個別に注記)。",
+  "LV10の防御上昇値はixanary.comが基準値20%のみを表示するのに対し、ixawiki.comは計算式(初期値20%+√耐久/15、小数第3位以下切り捨て)まで表示している。基準値20%自体は両ソース一致のためそのまま採用し、変動注記を付けた。",
+  "カード画像が無いためimageFull/imageCharはnull、synthesisTableは付けず、reviewedOkはfalseのまま。章(ch)は両ソースとも記載が無くnullとした。"
+ ]
+}

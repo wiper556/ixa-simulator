@@ -1,0 +1,43 @@
+{
+ "name": "熊本城",
+ "no": "2563",
+ "ch": null,
+ "cost": 4,
+ "troop": "砲器防破",
+ "sub": "",
+ "effect": "砲器の防御130%上昇+破壊100%上昇",
+ "furigana": "くまもとじょう",
+ "illustrator": null,
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1100,
+ "atkGrowth": 50,
+ "defBase": 1150,
+ "defGrowth": 60,
+ "tacticsBase": 500,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 4200,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "秘伝武者返し",
+ "skillDetail": "A/LV10 確率 - 防御 130%上昇/対象:砲・器\n①防御 130%上昇する\n②破壊 100%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "砲・器　確率 - / 防御 130%上昇+破壊 100%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "カード画像が無いため ixanary.com/cards/2563 と ixawiki.com(BushoCard/2563熊本城)の生HTML2ソースで確認した。",
+  "コスト4・指揮4200・初期値1100/1150/500・成長値+50/+60/+2.5・兵科ランク(槍A・弓A・馬A・器S)・スキル名対象(LV10 対象砲・器/防御130%上昇/破壊100%上昇)は両ソース完全一致。",
+  "【食い違い】LV10の確率のみixanary.comが+100%、ixawiki.comが+50%で食い違う(効果の大きさ130%/100%自体は両ソース一致)。両ソースとも構造化された正式テーブルでの記載であり判断できないため確率は\"-\"にした。同じ城姫コラボの他3枚(中津城・会津若松城・熊本城・大坂城)も全て同じ食い違いパターン。安土城(No.2560)のみ両ソースが+100%で一致していた。",
+  "「城姫クエスト極」コラボレーション報酬カード(2022年8月)。イラストレーターはixanary.comが空欄、ixawiki.comが著作権表記(©K © G ©A)のみで個人名の記載が無いためillustratorはnullにした。部隊スキル「防.戦姫艶舞」は当サイトのデータ項目に対応フィールドが無いため未登録。",
+  "章はixanary.com・ixawiki.comのカードページに記載が無いためnull。"
+ ]
+}

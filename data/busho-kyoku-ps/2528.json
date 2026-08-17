@@ -1,0 +1,43 @@
+{
+ "name": "生駒類",
+ "no": "2528",
+ "ch": null,
+ "cost": 3,
+ "troop": "全防",
+ "sub": "",
+ "effect": "防御 74%上昇+所属部隊内のレアリティS以上のスキル発動率+15%(模倣不可・部隊内重複不可)",
+ "furigana": "いこまるい",
+ "illustrator": "原哲夫・北原星望／コアミックス",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 960,
+ "atkGrowth": 30,
+ "defBase": 1040,
+ "defGrowth": 38,
+ "tacticsBase": 530,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3300,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "豪商ノ血筋",
+ "skillDetail": "LV10 確率 100% 防御 74%上昇/対象:全\n①防御 74%上昇する\n②所属部隊内のレアリティS以上のスキル発動率が15%加算される(模倣不可・部隊内重複不可)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 防御 74%上昇(所属部隊内のレアリティS以上のスキル発動率+15%・模倣不可・部隊内重複不可)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18新規登録(担当D・カード画像なし)。ixanary.com/cards/2528とixawiki.com(index.php?BushoCard/2528生駒類)の生HTML2ソースで確認。",
+  "コスト3・指揮兵数3300・攻撃初期値960(両ソース一致)・成長+30/+38/+2.5・ふりがな・統率(槍A弓A馬A器A)・絵師(原哲夫・北原星望／コアミックス)は2ソース完全一致。LV10スキル効果(確率100%/防御74%上昇/S以上スキル発動率+15%/模倣不可・重複不可)も2ソース完全一致。",
+  "【ixanary防御バグ判定】ixanaryの防御初期値は960(攻撃と同値)だがixawikiは1040(攻撃と異なる値)。攻撃と防御が同値になるixanary既知の不具合パターンに一致し、ixawikiが独立して異なる値を示しているため、defBaseはixawikiの1040を採用した。",
+  "【未確認】初期スキル「豪商ノ血筋」のランク(S/A/B等)がixanaryのカードページ・スキル個別ページ・ixawikiのいずれにも表示されておらず判定できなかった。skillDetailの先頭に通常付けるランク文字は付与せず「LV10」のみとした。",
+  "章(ch)は両ソースとも記載が無くnullのまま。カード画像自体が無いためimageFull/imageCharはnull、reviewedOkはfalseのまま。"
+ ]
+}

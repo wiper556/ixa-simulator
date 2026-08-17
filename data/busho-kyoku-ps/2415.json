@@ -1,0 +1,40 @@
+{
+ "name": "秋山信友",
+ "no": "2415",
+ "ch": null,
+ "cost": 4,
+ "troop": "槍馬騎攻速",
+ "sub": "",
+ "effect": "攻撃 74%上昇+速度 45%上昇",
+ "furigana": "あきやまのぶとも",
+ "illustrator": "正子公也",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": null,
+ "atkGrowth": null,
+ "defBase": null,
+ "defGrowth": null,
+ "tacticsBase": 500,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3750,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "S",
+  "ki": "A"
+ },
+ "initialSkill": "三魁悲将",
+ "skillDetail": "A/LV10 確率 100% 攻撃 74%上昇 速度 45%上昇/対象:槍・馬・騎\n①攻撃 74%上昇する\n②速度 45%上昇する\n③部隊内で最も速い兵士速度を部隊移動速度の基礎値とする",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・馬・騎　確率 100% / 攻撃 74%上昇+速度 45%上昇(部隊内で最も速い兵士速度を部隊移動速度の基礎値とする)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "カード画像が無いため imageFull/imageChar は null。ixanary.comの埋め込みJSON(cards/2415)とixawiki.com(BushoCard/2415秋山信友)の基本ステータス表・スキル表を突き合わせて登録した。",
+  "攻撃力・防御力の基礎値と成長値はixanary(攻撃1050/防御1020/成長48/26)とixawiki(攻撃1040/防御1000/成長44/30)で食い違ったためatkBase/defBase/atkGrowth/defGrowthをnullにした。兵法(初期値500・成長2.5)・cost・指揮兵数・rankGrades・スキル数値は両ソース一致。"
+ ]
+}

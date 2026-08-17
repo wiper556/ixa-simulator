@@ -1,0 +1,43 @@
+{
+ "name": "島津義弘",
+ "no": "2544",
+ "ch": null,
+ "cost": 3,
+ "troop": "槍馬砲器攻破",
+ "sub": "",
+ "effect": "攻撃 72%上昇+破壊 35%上昇",
+ "furigana": "しまづよしひろ",
+ "illustrator": "株式会社レバーン＋しいたけ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1020,
+ "atkGrowth": 33,
+ "defBase": 1010,
+ "defGrowth": 31,
+ "tacticsBase": 510,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3260,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "覇・天鬼雷砲",
+ "skillDetail": "B/LV10 確率 42% 攻撃 72%上昇/対象:槍・馬・砲・器\n①攻撃 72%上昇する\n②破壊 35%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・馬・砲・器　確率 42% / 攻撃 72%上昇+破壊 35%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18新規登録(担当D・カード画像なし)。ixanary.com/cards/2544とixawiki.com(index.php?BushoCard/2544島津義弘)の生HTML2ソースで確認。「戦国IXA千万の覇者コラボログインキャンペーン」累計34日目の報酬カード。",
+  "コスト3・指揮兵数3260・攻撃1020/防御1010(両ソース独立に一致・防御バグ無し)・成長+33/+31/+2.5・ふりがな・統率(槍B弓A馬A器S)・絵師(株式会社レバーン＋しいたけ)は2ソース完全一致。",
+  "【片方のみ確認・数値食い違いあり】ixawikiのこのカードのページにはLv1相当の1行(確率15%/攻撃48%上昇/破壊17%上昇)のみが記載。確率15%と破壊17%はixanaryのLV1表示(確率15%/破壊17%)と一致するが、攻撃の値はixawiki48%に対しixanary45%と食い違う。いずれにせよLV10の値(確率42%/攻撃72%上昇/破壊35%上昇)はixawiki側に対応する行が無くixanaryのみでの確認となるため、LV1段階の攻撃値の食い違いも含めて要確認として記録しておく。",
+  "初期スキル名が「覇・天鬼雷砲」だが、効果文に他武将のスキルを無効化・発動率低下から保護する記述が無く覇道スキルとしては扱っていない。",
+  "章(ch)は両ソースとも記載が無くnullのまま。カード画像自体が無いためimageFull/imageCharはnull、reviewedOkはfalseのまま。"
+ ]
+}

@@ -1,0 +1,41 @@
+{
+ "name": "山中鹿介（2）",
+ "no": "2923",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "槍馬砲攻",
+ "sub": "",
+ "effect": "攻撃 1.5%×防御参加武将数(280人)=420%上昇",
+ "furigana": "やまなかしかのすけ",
+ "illustrator": "正子公也",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 910,
+ "atkGrowth": 21,
+ "defBase": 830,
+ "defGrowth": 20,
+ "tacticsBase": 500,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3400,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "B",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "七難八苦の誓",
+ "skillDetail": "B/LV10 確率 25% 攻撃 1.5%×防御参加武将数(280人)=420%上昇/対象:槍馬砲\n①攻撃が1.5%×防御参加武将数(280人)=420%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍馬砲　確率 25% / 攻撃 1.5%×防御参加武将数(280人)=420%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "カード画像が無いため ixanary.com/cards/2923 と ixawiki.com(BushoCard/2923山中鹿介)の生HTML2ソースで確認した。",
+  "基礎値910/830/500・成長21/20/2.5・コスト3.5・指揮兵数3400(★0-0)・統率(槍S/弓B/馬A/器A)はixanary.comとixawiki.comの2ソースで完全一致。",
+  "初期スキル七難八苦の誓(B)のLV10「確率+25%/対象 槍馬砲/攻撃(1.5×防御参加武将数)%上昇」はixanary.comとixawiki.comの2ソースで完全一致。防御参加武将数の母数280人(F-04)で計算し攻撃420%上昇とした。"
+ ]
+}

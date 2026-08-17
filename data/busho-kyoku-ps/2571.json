@@ -1,0 +1,39 @@
+{
+ "name": "佐々木小次郎",
+ "no": "2571",
+ "ch": null,
+ "cost": 4.5,
+ "troop": "全防",
+ "sub": "",
+ "effect": "防御 140%上昇(自軍防御参加武将数60以上で防御効果3倍・確率45%)",
+ "furigana": "ささきこじろう",
+ "illustrator": "萩谷薫",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1800,
+ "atkGrowth": 130,
+ "defBase": 2000,
+ "defGrowth": 150,
+ "tacticsBase": 510,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 4950,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "岩流 龍切",
+ "skillDetail": "S/LV10 確率 45% 防御 140%上昇/対象:全\n①防御が140%上昇する\n②自軍防御参加武将数が60以上の時に防御効果が3倍になる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 45% / 防御 140%上昇(自軍防御参加武将数60以上で防御効果3倍)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録。カード画像が無いためixanary.com(cards/2571)とixawiki.com(BushoCard/2571佐々木小次郎)の生HTMLを突き合わせて一致した項目のみ登録した。基礎値/成長値/コスト/指揮兵数/統率ランク/初期スキルLV10の確率・効果値は両ソースで一致を確認済み。カード画像が無いためrankGradesは両ソース一致のみ採用しreviewedOkはfalseのまま。"
+ ]
+}

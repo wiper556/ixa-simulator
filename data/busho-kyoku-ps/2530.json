@@ -1,0 +1,42 @@
+{
+ "name": "伊達政宗",
+ "no": "2530",
+ "ch": null,
+ "cost": 4,
+ "troop": "全防",
+ "sub": "",
+ "effect": "防御 (自部隊兵法合計÷100)%上昇",
+ "furigana": "だてまさむね",
+ "illustrator": "原哲夫・北原星望／コアミックス",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1010,
+ "atkGrowth": 38,
+ "defBase": 1060,
+ "defGrowth": 32,
+ "tacticsBase": 530,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3820,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "天眼の籌策",
+ "skillDetail": "A/LV10 確率 38% 防御 (自部隊兵法合計÷100)%上昇/対象:全\n①防御が(自部隊兵法合計÷100)%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 38% / 防御 (自部隊兵法合計÷100)%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18新規登録(担当D・カード画像なし)。ixanary.com/cards/2530とixawiki.com(index.php?BushoCard/2530伊達政宗)の生HTML2ソースで確認。",
+  "コスト4・指揮兵数3820・攻撃初期値1010(両ソース一致)・成長+38/+32/+2.5・ふりがな・統率(槍S弓A馬A器A)・絵師(原哲夫・北原星望／コアミックス)は2ソース完全一致。LV10スキル効果(確率38%/防御(自部隊兵法合計÷100)%上昇)も2ソース完全一致。",
+  "【ixanary防御バグ判定】ixanaryの防御初期値は1010(攻撃と同値)だがixawikiは1060(攻撃と異なる値)。ixanary既知の不具合パターンに一致し、ixawikiが独立して異なる値を示しているため、defBaseはixawikiの1060を採用した。",
+  "章(ch)は両ソースとも記載が無くnullのまま。カード画像自体が無いためimageFull/imageCharはnull、reviewedOkはfalseのまま。"
+ ]
+}

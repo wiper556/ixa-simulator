@@ -1,0 +1,42 @@
+{
+ "name": "大友義鎮",
+ "no": "2431",
+ "ch": null,
+ "cost": 3,
+ "troop": "全攻",
+ "sub": "",
+ "effect": "自部隊同時攻撃で消費する名声値-20(重複不可)",
+ "furigana": "おおともよししげ",
+ "illustrator": "正子公也",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1070,
+ "atkGrowth": 50,
+ "defBase": 1000,
+ "defGrowth": 42,
+ "tacticsBase": 510,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3200,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "S",
+  "ki": "A"
+ },
+ "initialSkill": "炎天轟砲",
+ "skillDetail": "A/LV10 確率 100% 攻撃 70%上昇/対象:全\n①攻撃 70%上昇する\n②所属部隊を含む自部隊同時攻撃で消費する名声値が20減少する(重複不可)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 攻撃 70%上昇(所属部隊を含む自部隊同時攻撃で消費する名声値-20・重複不可)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "カード画像が無いため ixanary.com/cards/2431 と ixawiki.com(BushoCard/2431大友義鎮)の生HTML2ソースで確認した。",
+  "コスト3・指揮3200(★0-0)・初期値1070/1000/510・成長+50/+42/+2.5・兵科ランク(槍A・馬S・弓A・器A)・ふりがな・絵師(正子公也)・LV1確率+100%/攻撃22%上昇は両ソース一致。",
+  "【要申し送り】LV10の攻撃上昇率がixanary.com(cards/2431)は70%、ixawiki.com(BushoCard/2431)は77%と食い違っていた(確率100%・自部隊同時攻撃で消費する名声値-20の部分は両ソース一致)。カード画像による裏取りができないため、いずれが正しいか確定できない。本登録ではixanaryの70%を暫定採用したが未確定であることを明記する。",
+  "初期スキル「炎天轟砲」[A]の合成候補・章はixanary/ixawikiいずれのカードページにも記載が無く未確認。"
+ ]
+}

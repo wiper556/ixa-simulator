@@ -1,0 +1,41 @@
+{
+ "name": "九戸政実",
+ "no": "2914",
+ "ch": null,
+ "cost": 0.5,
+ "troop": "全防",
+ "sub": "",
+ "effect": "防御 67%上昇(部隊の総コストが低いほど高効果)",
+ "furigana": "くのへまさざね",
+ "illustrator": "正子公也",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 580,
+ "atkGrowth": 15,
+ "defBase": 680,
+ "defGrowth": 15,
+ "tacticsBase": 430,
+ "tacticsGrowth": 2,
+ "lv0Troops": 1450,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "B",
+  "uma": "B",
+  "ki": "A"
+ },
+ "initialSkill": "妙見の矜持",
+ "skillDetail": "A/LV10 確率 30% 防御 67%上昇/対象:全\n①防御が67%上昇する(部隊の総コストが低いほど高効果)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 30% / 防御 67%上昇(部隊の総コストが低いほど高効果)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "カード画像が無いため ixanary.com/cards/2914 と ixawiki.com(BushoCard/2914九戸政実)の生HTML2ソースで確認した。",
+  "基礎値580/680/430・成長15/15/2・コスト0.5・指揮兵数1450(★0-0)・統率(槍S/弓B/馬B/器A)はixanary.comとixawiki.comの2ソースで完全一致。",
+  "初期スキル妙見の矜持(A)のLV10「確率+30%/対象 全/防御67%上昇(部隊の総コストが低いほど高効果)」はixanary.comとixawiki.comの2ソースで完全一致。"
+ ]
+}

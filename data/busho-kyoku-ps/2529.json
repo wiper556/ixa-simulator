@@ -1,0 +1,43 @@
+{
+ "name": "前田慶次",
+ "no": "2529",
+ "ch": null,
+ "cost": 4.5,
+ "troop": "防",
+ "sub": "",
+ "effect": "自領以外の加勢戦闘時のみ追加スキルの防御効果を2.5倍にする(模倣不可)",
+ "furigana": "まえだけいじ",
+ "illustrator": "原哲夫・麻生未央／コアミックス",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1000,
+ "atkGrowth": 40,
+ "defBase": 1080,
+ "defGrowth": 45,
+ "tacticsBase": 540,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 4120,
+ "rankGrades": {
+  "yari": "SS",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "一槍馳走",
+ "skillDetail": "A/LV10 確率 100% 対象:追加スキル\n模倣不可\n①このスキルを持つ武将カードは自領以外の加勢戦闘時のみ追加スキルの防御効果が2.5倍となる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "追加スキル　確率 100% / 防御効果 2.5倍(自領以外の加勢戦闘時のみ・模倣不可)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18新規登録(担当D・カード画像なし)。ixanary.com/cards/2529とixawiki.com(index.php?BushoCard/2529前田慶次)の生HTML2ソースで確認。",
+  "コスト4.5・指揮兵数4120・攻撃初期値1000(両ソース一致)・成長+40/+45/+2.5・ふりがな・統率(槍SS弓A馬A器A)・絵師(原哲夫・麻生未央／コアミックス)は2ソース完全一致。LV10スキル効果(確率100%/自領以外の加勢戦闘時のみ追加スキルの防御効果2.5倍/模倣不可)も2ソース完全一致。",
+  "【ixanary防御バグ判定】ixanaryの防御初期値は1000(攻撃と同値)だがixawikiは1080(攻撃と異なる値)。ixanary既知の不具合パターンに一致し、ixawikiが独立して異なる値を示しているため、defBaseはixawikiの1080を採用した。",
+  "troop欄は同種の「追加スキル」対象スキルを持つ既存登録(data/busho/1254.json、スキル不屈ノ天弓)の表記(防御効果系の追加スキルは troop=\"防\")に倣った。",
+  "章(ch)は両ソースとも記載が無くnullのまま。カード画像自体が無いためimageFull/imageCharはnull、reviewedOkはfalseのまま。"
+ ]
+}

@@ -1,0 +1,41 @@
+{
+ "name": "於大の方（2）",
+ "no": "2786",
+ "ch": null,
+ "cost": 0.5,
+ "troop": "全攻防",
+ "sub": "",
+ "effect": "攻撃 66%上昇+防御 66%上昇(部隊コスト10以下で効果1.5倍)",
+ "furigana": "おだいのかた",
+ "illustrator": "ツヤイルカ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 990,
+ "atkGrowth": 38,
+ "defBase": 990,
+ "defGrowth": 38,
+ "tacticsBase": 550.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 1800,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "薬師天授",
+ "skillDetail": "A/LV10 確率 50% 攻撃 66%上昇+防御 66%上昇/対象:全\n①攻撃 66%上昇する\n②防御 66%上昇する\n③部隊コスト10以下で効果が1.5倍になる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 50% / 攻撃 66%上昇+防御 66%上昇(部隊コスト10以下で効果1.5倍)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当H)。カード画像が無いためixanary.com(cards/2786)とixawiki.com(BushoCard/2786於大の方)の2ソースを生HTMLで突き合わせた。",
+  "コスト0.5・指揮兵数1800・統率(槍A/弓A/馬A/器A)・攻撃990(+38)/防御990(+38)/兵法550.0(+2.5)は両ソース完全一致(攻防が同値だが両ソース独立に同値のためそのまま採用)。初期スキル「薬師天授」(A)の確率/対象/効果(LV1・LV10とも)も両ソース一致。TRの記載はどちらにも無い。",
+  "章は情報源に記載が無いため未確認。"
+ ]
+}

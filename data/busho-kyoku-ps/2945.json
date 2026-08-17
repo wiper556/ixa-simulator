@@ -1,0 +1,42 @@
+{
+ "name": "徳川秀忠（2）",
+ "no": "2945",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "弓砲器攻",
+ "sub": "",
+ "effect": "攻撃 (1.8×攻撃参加武将数)%上昇",
+ "furigana": "とくがわひでただ",
+ "illustrator": "正子公也",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1000,
+ "atkGrowth": 29,
+ "defBase": 940,
+ "defGrowth": 27,
+ "tacticsBase": 480.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 3470,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "S",
+  "uma": "B",
+  "ki": "A"
+ },
+ "initialSkill": "元和偃武",
+ "skillDetail": "B/LV10 確率 35% 攻撃 (1.8×攻撃参加武将数)%上昇/対象:弓砲器\n①攻撃が(1.8×攻撃参加武将数)%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓砲器　確率 35% / 攻撃 (1.8×攻撃参加武将数)%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当J)。カード画像が無いため ixanary.com(cards/2945, skills/元和偃武)と ixawiki.com(index.php?BushoCard/2945徳川秀忠, Busho/武将スキル)の生HTML2ソースを突き合わせて登録した。",
+  "統率(槍A/弓S/馬B/器A)・コスト3.5・指揮兵数3470・攻撃1000/29・防御940/27・兵法480.0/2.0・ふりがな・イラストレーターはixanary.comとixawiki.comの2ソースで一致することを確認した(不一致箇所は個別に注記)。",
+  "初期スキル「元和偃武」[B]はixanary.com(skills/元和偃武)のLV10行とixawiki.com(Busho/武将スキル)のマスター一覧LV10行の2ソースで確認した(不一致箇所は個別に注記)。",
+  "カード画像が無いためimageFull/imageCharはnull、synthesisTableは付けず、reviewedOkはfalseのまま。章(ch)は両ソースとも記載が無くnullとした。"
+ ]
+}

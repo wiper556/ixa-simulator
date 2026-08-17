@@ -1,0 +1,42 @@
+{
+ "name": "真田幸村（3）",
+ "no": "2905",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "槍馬砲防",
+ "sub": "",
+ "effect": "防御 35%上昇",
+ "furigana": "さなだゆきむら",
+ "illustrator": "正子公也",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 620,
+ "atkGrowth": 17,
+ "defBase": 690,
+ "defGrowth": 19,
+ "tacticsBase": 600.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 2690,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "C",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "戦陣 真田丸",
+ "skillDetail": "A/LV10 確率 30% 防御 35%上昇/対象:槍・馬・砲\n①防御 35%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・馬・砲　確率 30% / 防御 35%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当H)。カード画像が無いためixanary.com(cards/2905)とixawiki.com(BushoCard/2905真田幸村)の2ソースを生HTMLで突き合わせた。",
+  "コスト2.5・指揮兵数2690・統率(槍A/弓C/馬A/器A)・攻撃620(+17)/防御690(+19)/兵法600.0(+2.5)は両ソース完全一致。初期スキル「戦陣 真田丸」(A)はixawikiのカード表に1段のみの表示(確率16%・防御10%上昇)でこれはixanaryのLV1値と一致した。skillDetail/trTableに採用したLV10値(確率30%・防御35%上昇)はixanary.comのスキル効果表のLV10行から採用した。TRの記載はどちらにも無い。",
+  "同名の No.2904 真田幸村（2）とは別カード(スキル・統率・ステータスとも異なる)。ixawikiは2904と2905で別ページ(BushoCard/2904真田幸村・BushoCard/2905真田幸村)を持っており、ページ内の見出し「No.2904」「No.2905」で該当カードであることを確認した。",
+  "章は情報源に記載が無いため未確認。"
+ ]
+}

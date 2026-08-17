@@ -1,0 +1,39 @@
+{
+ "name": "浅井亮政",
+ "no": "2709",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "槍馬攻速",
+ "sub": "",
+ "effect": "攻撃 8%上昇+速度 20%上昇(確率100%)",
+ "furigana": "あざいすけまさ",
+ "illustrator": "Toronn",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 750,
+ "atkGrowth": 18,
+ "defBase": 710,
+ "defGrowth": 18,
+ "tacticsBase": 450,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3150,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "B",
+  "uma": "S",
+  "ki": "C"
+ },
+ "initialSkill": "近江の軍神",
+ "skillDetail": "B/LV10 確率 100% 攻撃 8%上昇+速度 20%上昇/対象:槍・馬",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・馬　確率 100% / 攻撃 8%上昇+速度 20%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録。カード画像が無いためixanary.com(cards/2709)とixawiki.com(BushoCard/2709浅井亮政)の生HTMLを突き合わせて一致した項目のみ登録した。基礎値/成長値/コスト/指揮兵数/統率ランク/初期スキルLV10の確率・効果値は両ソースで一致を確認済み。カード画像が無いためrankGradesは両ソース一致のみ採用しreviewedOkはfalseのまま。"
+ ]
+}

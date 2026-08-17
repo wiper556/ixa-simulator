@@ -1,0 +1,40 @@
+{
+ "name": "振姫",
+ "no": "2351",
+ "ch": null,
+ "cost": 1,
+ "troop": "槍弓器鉄防",
+ "sub": "",
+ "effect": "防御 110%上昇",
+ "furigana": "ふりひめ",
+ "illustrator": "Janemere",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1060,
+ "atkGrowth": null,
+ "defBase": 1100,
+ "defGrowth": null,
+ "tacticsBase": 520,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 1760,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "B",
+  "ki": "S"
+ },
+ "initialSkill": "嵐渦令姫",
+ "skillDetail": "A/LV10 確率 45% 防御 110%上昇/対象:槍・弓・器・鉄\n①防御 110%上昇する\n②自拠点防御時は防御効果が3倍になる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・弓・器・鉄　確率 45% / 防御 110%上昇(自拠点防御時は防御効果3倍)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "カード画像が無いため imageFull/imageChar は null。ixanary.comの埋め込みJSON(cards/2351)とixawiki.com(BushoCard/2351振姫)の基本ステータス表・スキル表を突き合わせて登録した。",
+  "攻撃成長値・防御成長値はixanary(攻撃34/防御39)とixawiki(攻撃45/防御33)で値が食い違ったためatkGrowth/defGrowthをnullにした。基礎値(攻撃1060/防御1100/兵法520)と兵法成長値(2.5)は両ソース一致。"
+ ]
+}

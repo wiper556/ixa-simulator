@@ -1,0 +1,41 @@
+{
+ "name": "お市",
+ "no": "2535",
+ "ch": null,
+ "cost": 1.5,
+ "troop": "槍弓馬器防",
+ "sub": "",
+ "effect": "防御 80%上昇(卓越:追加確率30%で防御効果が1.5倍)",
+ "furigana": "おいち",
+ "illustrator": "小林元",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1000,
+ "atkGrowth": 30,
+ "defBase": 1070,
+ "defGrowth": 37,
+ "tacticsBase": 520,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 2280,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "死出ノ田長",
+ "skillDetail": "B/LV10 確率 54% 防御 80%上昇/対象:槍・弓・馬・器\n①防御 80%上昇する\n②卓越 追加確率30%で防御効果が1.5倍になる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・弓・馬・器　確率 54% / 防御 80%上昇(卓越:追加確率30%で防御効果1.5倍)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18新規登録(担当D・カード画像なし)。ixanary.com/cards/2535とixawiki.com(index.php?BushoCard/2535お市)の生HTML2ソースで確認。",
+  "コスト1.5・指揮兵数2280・攻撃1000/防御1070(両ソース独立に一致・防御バグ無し)・成長+30/+37/+2.5・ふりがな・統率(槍A弓A馬A器A)・絵師(小林元)は2ソース完全一致。LV10スキル効果(確率54%/防御80%上昇/卓越追加確率30%で1.5倍)も2ソース完全一致。",
+  "章(ch)は両ソースとも記載が無くnullのまま。カード画像自体が無いためimageFull/imageCharはnull、reviewedOkはfalseのまま。"
+ ]
+}

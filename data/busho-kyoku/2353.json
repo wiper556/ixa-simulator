@@ -1,0 +1,40 @@
+{
+ "name": "本庄繁長",
+ "no": "2353",
+ "ch": null,
+ "cost": null,
+ "troop": "槍弓砲攻",
+ "sub": "",
+ "effect": "攻撃 110%上昇",
+ "furigana": "ほんじょうしげなが",
+ "illustrator": "ジョージ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1120,
+ "atkGrowth": 44,
+ "defBase": 1050,
+ "defGrowth": 33,
+ "tacticsBase": 530,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": null,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "S",
+  "uma": "B",
+  "ki": "A"
+ },
+ "initialSkill": "撃龍応剣",
+ "skillDetail": "A/LV10 確率 40% 攻撃 110%上昇/対象:槍・弓・砲\n①攻撃 110%上昇する\n②4部隊以下の攻撃で効果が3倍になる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・弓・砲　確率 40% / 攻撃 110%上昇(4部隊以下の攻撃で効果3倍)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "カード画像が無いため imageFull/imageChar は null。ixanary.comの埋め込みJSON(cards/2353)とixawiki.com(BushoCard/2353本庄繁長)の基本ステータス表・スキル表を突き合わせて登録した。",
+  "costとlv0Troopsはixanary(cost4/指揮兵数3930)とixawiki(cost3.5/指揮兵数3720)で食い違ったため両方nullにした。攻撃防御兵法の基礎値・成長値とrankGrades・スキル数値は両ソース一致。"
+ ]
+}

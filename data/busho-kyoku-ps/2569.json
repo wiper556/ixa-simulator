@@ -1,0 +1,42 @@
+{
+ "name": "宇喜多モニカ",
+ "no": "2569",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "攻",
+ "sub": "飛翔6",
+ "effect": "追加スキルの速度効果2.5倍(飛翔6・模倣不可)",
+ "furigana": "うきたもにか",
+ "illustrator": "葉山えいし",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1160,
+ "atkGrowth": 55,
+ "defBase": 1100,
+ "defGrowth": 48,
+ "tacticsBase": 510,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 4150,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "SS",
+  "ki": "A"
+ },
+ "initialSkill": "紫電閃駆",
+ "skillDetail": "S/LV10 確率 100% 対象:追加スキル　飛翔6\n模倣不可\n①飛翔6を持つ\n②このスキルを持つ武将カードは追加スキルの速度効果が2.5倍になる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "追加スキル 飛翔6　確率 100% / 速度効果 2.5倍"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "カード画像が無いため ixanary.com/cards/2569 と ixawiki.com(BushoCard/2569宇喜多モニカ)の生HTML2ソースで確認した。",
+  "コスト3.5・指揮4150・初期値1160/1100/510・成長値+55/+48/+2.5・兵科ランク(槍A・弓A・馬SS・器A)・絵師葉山えいし・スキル名対象確率効果(LV10 確率100%/対象追加スキル/飛翔6/追加スキルの速度効果2.5倍・模倣不可)が両ソース完全一致。",
+  "章はixanary.com・ixawiki.comのカードページに記載が無いためnull。",
+  "2026-08-18: 名前をシミュレーター側の既存登録に合わせた。ixawiki のカードページには復刻と明記されているのに一覧の表記だけ無印で、そこから作ったこの正本が無印になっていた。"
+ ]
+}

@@ -1,0 +1,41 @@
+{
+ "name": "北条氏康",
+ "no": "2550",
+ "ch": null,
+ "cost": 2,
+ "troop": "槍馬器防",
+ "sub": "",
+ "effect": "槍馬器の防御33%上昇(卓越:追加確率30%で防御効果3倍)",
+ "furigana": "ほうじょううじやす",
+ "illustrator": "株式会社レバーン＋しいたけ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 940,
+ "atkGrowth": 24,
+ "defBase": 990,
+ "defGrowth": 30,
+ "tacticsBase": 480,
+ "tacticsGrowth": 2,
+ "lv0Troops": 2570,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "B",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "覇・獅子爪撃",
+ "skillDetail": "B/LV10 確率 50% 防御 33%上昇/対象:槍・馬・器\n①防御 33%上昇する\n②卓越:追加確率30%で防御効果が3倍になる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・馬・器　確率 50% / 防御 33%上昇(卓越:追加確率30%で防御効果3倍)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "カード画像が無いため ixanary.com/cards/2550 と ixawiki.com(BushoCard/2550北条氏康)の生HTML2ソースで確認した。",
+  "コスト2・指揮2570・初期値940/990/480・成長値+24/+30/+2.0・兵科ランク(槍A・弓B・馬A・器S)・絵師株式会社レバーン＋しいたけ・スキル名対象確率効果(LV10 確率50%/防御33%上昇/卓越:追加確率30%で防御効果3倍)が両ソース完全一致。",
+  "章はixanary.com・ixawiki.comのカードページに記載が無いためnull。"
+ ]
+}

@@ -1,0 +1,42 @@
+{
+ "name": "渡辺了",
+ "no": "2434",
+ "ch": null,
+ "cost": 4,
+ "troop": "槍器鉄攻",
+ "sub": "",
+ "effect": "敵軍5部隊以下で効果1.5倍",
+ "furigana": "わたなべさとる",
+ "illustrator": "正子公也",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1150,
+ "atkGrowth": 51,
+ "defBase": 970,
+ "defGrowth": 40,
+ "tacticsBase": 520,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3840,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "千人狩",
+ "skillDetail": "A/LV10 確率 54% 攻撃 92%上昇/対象:槍器鉄\n①攻撃 92%上昇する\n②敵軍5部隊以下のとき効果が1.5倍になる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・器・鉄　確率 54% / 攻撃 92%上昇(敵軍5部隊以下で効果1.5倍)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "カード画像が無いため ixanary.com/cards/2434 と ixawiki.com(BushoCard/2434渡辺了)の生HTML2ソースで確認した。",
+  "コスト4・指揮3840(★0-0)・初期値1150/970/520・成長+51/+40/+2.5・兵科ランク(槍S・馬A・弓A・器A)・ふりがな・絵師(正子公也)・LV10スキル値(確率54%・対象槍器鉄・攻撃92%上昇・敵軍5部隊以下で効果1.5倍)が両ソース完全一致。",
+  "同名「渡辺了」は既存No.2857(初期スキル天衝破軍槍・章31章の別カード)としてもサイトに登録済みだが、ixawikiの武将カード一覧の表記はどちらも（N）等の連番が無い無印「渡辺了」のため、そのまま無印で登録した(区別はNo.のみ)。",
+  "初期スキル「千人狩」[A]の合成候補・章はixanary/ixawikiいずれのカードページにも記載が無く未確認。"
+ ]
+}

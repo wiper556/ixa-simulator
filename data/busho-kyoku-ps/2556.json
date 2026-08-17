@@ -1,0 +1,42 @@
+{
+ "name": "ねね-復刻-",
+ "no": "2556",
+ "ch": null,
+ "cost": 4,
+ "troop": "全攻防",
+ "sub": "",
+ "effect": "全軍の攻撃159%上昇+防御159%上昇(姫武将に対してのみ効果あり)",
+ "furigana": "ねね",
+ "illustrator": "正子公也",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1080,
+ "atkGrowth": 50,
+ "defBase": 1080,
+ "defGrowth": 50,
+ "tacticsBase": 510,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 4180,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "王佐ノ智慧",
+ "skillDetail": "S/LV10 確率 50% 攻撃 159%上昇/対象:全\n①攻撃 159%上昇する\n②防御 159%上昇する\n③職業「姫」の武将に対してのみ効果がある",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 50% / 攻撃 159%上昇+防御 159%上昇(職業「姫」の武将に対してのみ効果あり)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "カード画像が無いため ixanary.com/cards/2556 と ixawiki.com(BushoCard/2556ねね)の生HTML2ソースで確認した。",
+  "コスト4・指揮4180・初期値1080/1080/510・成長値+50/+50/+2.5・兵科ランク(槍A・弓A・馬A・器S)・絵師正子公也・スキル名対象確率効果(LV10 確率50%/攻撃159%上昇/防御159%上昇/職業「姫」の武将に対してのみ効果あり)が両ソース完全一致。",
+  "章はixanary.com・ixawiki.comのカードページに記載が無いためnull。",
+  "2026-08-18: 名前をシミュレーター側の既存登録に合わせた。ixawiki のカードページには復刻と明記されているのに一覧の表記だけ無印で、そこから作ったこの正本が無印になっていた。"
+ ]
+}

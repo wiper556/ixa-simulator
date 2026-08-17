@@ -1,0 +1,41 @@
+{
+ "name": "柴田勝家（2）",
+ "no": "2902",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "馬攻",
+ "sub": "",
+ "effect": "攻撃 40%上昇",
+ "furigana": "しばたかついえ",
+ "illustrator": "正子公也",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 680,
+ "atkGrowth": 19,
+ "defBase": 620,
+ "defGrowth": 16,
+ "tacticsBase": 480.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 3320,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "B",
+  "uma": "S",
+  "ki": "C"
+ },
+ "initialSkill": "瓶割り柴田",
+ "skillDetail": "A/LV10 確率 35% 攻撃 40%上昇/対象:馬\n①攻撃 40%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "馬　確率 35% / 攻撃 40%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当H)。カード画像が無いためixanary.com(cards/2902)とixawiki.com(BushoCard/2902柴田勝家)の2ソースを生HTMLで突き合わせた。",
+  "コスト3.5・指揮兵数3320・統率(槍A/弓B/馬S/器C)・攻撃680(+19)/防御620(+16)/兵法480.0(+2.0)は両ソース完全一致。初期スキル「瓶割り柴田」(A)はixawikiのカード表に1段のみの表示(確率14%・攻撃14%上昇)でこれはixanaryのLV1値と一致した。skillDetail/trTableに採用したLV10値(確率35%・攻撃40%上昇)はixanary.comのスキル効果表のLV10行から採用した。TRの記載はどちらにも無い。",
+  "章は情報源に記載が無いため未確認。"
+ ]
+}

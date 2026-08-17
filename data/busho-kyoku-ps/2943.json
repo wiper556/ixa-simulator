@@ -1,0 +1,42 @@
+{
+ "name": "山科勝成",
+ "no": "2943",
+ "ch": null,
+ "cost": 3.0,
+ "troop": "砲器攻",
+ "sub": "",
+ "effect": "攻撃 30%上昇(自軍内で同兵種を指揮している武将数×2%を攻撃効果に加算)",
+ "furigana": "やましなかつなり",
+ "illustrator": "正子公也",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1000,
+ "atkGrowth": 30,
+ "defBase": 940,
+ "defGrowth": 24,
+ "tacticsBase": 520.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3250,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "B",
+  "ki": "SS"
+ },
+ "initialSkill": "羅馬の砲術",
+ "skillDetail": "B/LV10 確率 25% 攻撃 30%上昇/対象:砲器\n①攻撃 30%上昇する\n②自軍内で同兵種を指揮している武将数×2%を攻撃効果に加算する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "砲器　確率 25% / 攻撃 30%上昇(自軍内で同兵種を指揮している武将数×2%を攻撃効果に加算)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当J)。カード画像が無いため ixanary.com(cards/2943, skills/羅馬の砲術)と ixawiki.com(index.php?BushoCard/2943山科勝成, Busho/武将スキル)の生HTML2ソースを突き合わせて登録した。",
+  "統率(槍A/弓A/馬B/器SS)・コスト3.0・指揮兵数3250・攻撃1000/30・防御940/24・兵法520.0/2.5・ふりがな・イラストレーターはixanary.comとixawiki.comの2ソースで一致することを確認した(不一致箇所は個別に注記)。",
+  "初期スキル「羅馬の砲術」[B]はixanary.com(skills/羅馬の砲術)のLV10行とixawiki.com(Busho/武将スキル)のマスター一覧LV10行の2ソースで確認した(不一致箇所は個別に注記)。",
+  "カード画像が無いためimageFull/imageCharはnull、synthesisTableは付けず、reviewedOkはfalseのまま。章(ch)は両ソースとも記載が無くnullとした。"
+ ]
+}

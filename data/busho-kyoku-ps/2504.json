@@ -1,0 +1,42 @@
+{
+ "name": "皎月院",
+ "no": "2504",
+ "ch": null,
+ "cost": 1,
+ "troop": "全防",
+ "sub": "",
+ "effect": "自軍6部隊以下の防御時効果1.5倍",
+ "furigana": "こうげついん",
+ "illustrator": "BISAI",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 990,
+ "atkGrowth": 30,
+ "defBase": 1050,
+ "defGrowth": 32,
+ "tacticsBase": 500,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 1740,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "白月ノ歌",
+ "skillDetail": "A/LV10 確率 44% 防御 56%上昇/対象:全\n①防御 56%上昇する\n②自軍6部隊以下での防御時に効果が1.5倍になる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 44% / 防御 56%上昇(自軍6部隊以下の防御時効果1.5倍)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "カード画像が無いため ixanary.com/cards/2504 と ixawiki.com(BushoCard/2504皎月院)の生HTML2ソースで確認した。",
+  "コスト1・指揮1740(★0-0)・初期値990/1050/500・成長+30/+32/+2.5・兵科ランク(槍A・馬A・弓A・器A)・ふりがな・絵師(BISAI)・LV10スキル値(確率44%・対象全・防御56%上昇・自軍6部隊以下の防御時効果1.5倍)が両ソース完全一致。",
+  "同名「皎月院」は既存No.2738(通常カード)としてもサイトに登録済みだが、ixawikiの武将カード一覧の表記に（N）等の連番は無いため無印のまま登録した。",
+  "初期スキル「白月ノ歌」[A]の合成候補・章はixanary/ixawikiいずれのカードページにも記載が無く未確認。"
+ ]
+}

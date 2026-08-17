@@ -1,0 +1,39 @@
+{
+ "name": "斎藤利三（2）",
+ "no": "2406",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "弓馬器防",
+ "sub": "",
+ "effect": "防御 45%上昇",
+ "furigana": "さいとうとしみつ",
+ "illustrator": "正子公也",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1000,
+ "atkGrowth": 28,
+ "defBase": 1050,
+ "defGrowth": 30,
+ "tacticsBase": 480,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3500,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "月下ノ進撃",
+ "skillDetail": "A/LV10 確率 45% 防御 45%上昇/対象:弓・馬・器\n①防御 45%上昇する\n②敵軍4部隊以下で効果が2倍になる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓・馬・器　確率 45% / 防御 45%上昇(敵軍4部隊以下で効果2倍)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "カード画像が無いため imageFull/imageChar は null。ixanary.comの埋め込みJSON(cards/2406)とixawiki.com(BushoCard/2406斎藤利三)の基本ステータス表・スキル表を突き合わせて登録した。"
+ ]
+}

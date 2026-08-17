@@ -1,0 +1,71 @@
+{
+ "name": "百地丹波",
+ "no": "2729",
+ "ch": null,
+ "cost": 3.0,
+ "troop": "全攻速",
+ "sub": "",
+ "effect": "攻撃 14%上昇+速度 46%上昇(出陣キャンセル不可)",
+ "furigana": "ももちたんば",
+ "illustrator": "BISAI",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 850,
+ "atkGrowth": 19,
+ "defBase": 740,
+ "defGrowth": 16,
+ "tacticsBase": 470,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2970,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "驀直前進",
+ "skillDetail": "B/LV10 確率 100% 攻撃 14%上昇+速度 46%上昇/対象:全\n①攻撃が14%上昇する\n②速度が46%上昇する(出陣キャンセル不可)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 攻撃 14%上昇+速度 46%上昇(出陣キャンセル不可)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": null
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": null
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": null
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": null
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": null
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": null
+  }
+ ],
+ "notes": [
+  "2026-08-18新規登録(担当G・カード画像なし)。ixanary.com/cards/2729とixawiki.com(index.php?BushoCard/2729百地丹波)の生HTML2ソースで統率(槍A弓A馬A器A)・コスト3・指揮兵数2970・初期値850/740/470・成長値+19/+16/+2.0・絵師BISAI・ふりがな・スキルLV1値(確率+100%/攻撃5.5%上昇/速度17%上昇)が完全一致することを確認した(不一致項目なし)。",
+  "攻撃・速度が同時変動するスキルのためtrTableに両ステータスを併記した(multistat規則)。",
+  "初期スキル「驀直前進」[B]のLV10値(確率100%/攻撃14%上昇/速度46%上昇/対象全・出陣キャンセル不可)はixanary.com/cards/2729のLV10スキルボックスで確認。synthesisTableはカード画像が無いため作成していない。章は両ソースに記載が無く未確認。"
+ ],
+ "reviewedOk": false
+}

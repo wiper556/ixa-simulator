@@ -1,0 +1,26 @@
+{
+ "name": "重めな正室",
+ "rank": "S",
+ "baseRate": 50,
+ "target": "全",
+ "effectSummary": "S/LV10 確率 50% 防御 100%上昇/対象:全\n①防御が100%上昇する\n②本丸防御陣形の第参列目以降に配置時は防御効果が3倍になる",
+ "categoryLinks": [],
+ "sourceCharacters": [
+  {
+   "name": "瀬名姫",
+   "no": "2577",
+   "slot": "移植不可",
+   "db": "kyoku"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 50% / 防御 100%上昇(本丸防御陣形の第参列目以降配置時は防御効果3倍)"
+  }
+ ],
+ "notes": [
+  "A-3-9「武将自身の初期スキル(S以上)は無条件にページを作る」により2026-08-16に一括作成。内容は data/busho-kyoku-ps/2577.json の skillDetail / trTable からの転記で、新しい事実は持ち込んでいない。"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "name": "酒井忠次（3）",
+ "no": "2354",
+ "ch": null,
+ "cost": 4,
+ "troop": "槍弓馬砲攻",
+ "sub": "",
+ "effect": "攻撃 300%上昇",
+ "furigana": "さかいただつぐ",
+ "illustrator": "タカハシタクヤ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1130,
+ "atkGrowth": 44,
+ "defBase": 1050,
+ "defGrowth": 33,
+ "tacticsBase": 520,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3930,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": null,
+  "uma": null,
+  "ki": "A"
+ },
+ "initialSkill": "空陣鳴響",
+ "skillDetail": "A/LV10 確率 60% 攻撃 300%上昇/対象:槍・弓・馬・砲\n①攻撃 300%上昇する\n②所属部隊を含む自部隊同時攻撃で消費する名声値を-20する(重複不可)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・弓・馬・砲　確率 60% / 攻撃 300%上昇(所属部隊を含む自部隊同時攻撃で消費する名声値-20・重複不可)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "カード画像が無いため imageFull/imageChar は null。ixanary.comの埋め込みJSON(cards/2354)とixawiki.com(BushoCard/2354酒井忠次)の基本ステータス表・スキル表を突き合わせて登録した。",
+  "rankGradesのyumi(弓)とuma(馬)はixanary(弓B/馬A)とixawiki(弓A/馬B)で入れ替わっており食い違ったため両方nullにした(yari S・ki Aは両ソース一致)。基礎値・成長値・スキル数値は両ソース一致。"
+ ]
+}

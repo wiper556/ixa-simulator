@@ -1,0 +1,43 @@
+{
+ "name": "直江兼続",
+ "no": "2532",
+ "ch": null,
+ "cost": 4,
+ "troop": "弓馬砲攻速",
+ "sub": "",
+ "effect": "攻撃 78%上昇+速度 70%上昇(4部隊以下の攻撃で攻撃効果1.5倍)",
+ "furigana": "なおえかねつぐ",
+ "illustrator": "隆慶一郎・原哲夫・麻生未央／コアミックス",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1050,
+ "atkGrowth": 38,
+ "defBase": 990,
+ "defGrowth": 32,
+ "tacticsBase": 530,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3820,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "S",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "莫逆の友",
+ "skillDetail": "A/LV10 確率 50%/100% 攻撃 78%上昇+速度 70%上昇/対象:弓・馬・砲\n①確率 50% 攻撃 78%上昇する\n②確率 100% 速度 70%上昇する\n③4部隊以下の攻撃で攻撃効果が1.5倍になる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓・馬・砲　確率 50%/100% / 攻撃 78%上昇+速度 70%上昇(4部隊以下の攻撃で攻撃効果1.5倍)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18新規登録(担当D・カード画像なし)。ixanary.com/cards/2532とixawiki.com(index.php?BushoCard/2532直江兼続)の生HTML2ソースで確認。",
+  "コスト4・指揮兵数3820・攻撃初期値1050(両ソース一致)・成長+38/+32/+2.5・ふりがな・統率(槍A弓S馬A器A)・絵師(隆慶一郎・原哲夫・麻生未央／コアミックス)は2ソース完全一致。LV10スキル効果(攻撃確率50%で78%上昇・速度確率100%で70%上昇・4部隊以下の攻撃で攻撃効果1.5倍)も2ソース完全一致。",
+  "攻撃と速度で確率が異なる形式は既存スキル data/skill/勝軍神撃.json (確率45%/100%表記)の書式に倣った。",
+  "【ixanary防御バグ判定】ixanaryの防御初期値は1050(攻撃と同値)だがixawikiは990(攻撃と異なる値)。ixanary既知の不具合パターンに一致し、ixawikiが独立して異なる値を示しているため、defBaseはixawikiの990を採用した。",
+  "章(ch)は両ソースとも記載が無くnullのまま。カード画像自体が無いためimageFull/imageCharはnull、reviewedOkはfalseのまま。"
+ ]
+}

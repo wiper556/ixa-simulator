@@ -1,0 +1,41 @@
+{
+ "name": "花房職秀",
+ "no": "2908",
+ "ch": null,
+ "cost": 2,
+ "troop": "全防",
+ "sub": "",
+ "effect": "防御 40%上昇(攻撃部隊に槍兵科がいる時のみ発動)",
+ "furigana": "はなぶさもとひで",
+ "illustrator": "正子公也",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 540,
+ "atkGrowth": 16,
+ "defBase": 660,
+ "defGrowth": 20,
+ "tacticsBase": 420,
+ "tacticsGrowth": 2,
+ "lv0Troops": 2330,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "B",
+  "uma": "B",
+  "ki": "A"
+ },
+ "initialSkill": "傾奇の花道",
+ "skillDetail": "A/LV10 確率 35% 防御 40%上昇/対象:全\n①防御が40%上昇する(攻撃部隊に槍兵科がいる時のみ発動)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 35% / 防御 40%上昇(攻撃部隊に槍兵科がいる時のみ発動)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "カード画像が無いため ixanary.com/cards/2908 と ixawiki.com(BushoCard/2908花房職秀)の生HTML2ソースで確認した。",
+  "基礎値540/660/420・成長16/20/2・コスト2・指揮兵数2330(★0-0)・統率(槍S/弓B/馬B/器A)はixanary.comとixawiki.comの2ソースで完全一致。",
+  "初期スキル傾奇の花道(A)のLV10「確率+35%/対象 全/防御40%上昇(攻撃部隊に槍兵科がいる時のみ発動)」はixanary.comとixawiki.comの2ソースで完全一致(お市の冥界の花嫁と同型の兵科限定発動スキル)。"
+ ]
+}

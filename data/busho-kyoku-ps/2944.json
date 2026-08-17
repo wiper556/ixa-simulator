@@ -1,0 +1,42 @@
+{
+ "name": "島津家久（2）",
+ "no": "2944",
+ "ch": null,
+ "cost": 1.5,
+ "troop": "馬器攻破",
+ "sub": "",
+ "effect": "攻撃 57%上昇+破壊 35%上昇(部隊コスト12以下で100%発動)",
+ "furigana": "しまづいえひさ",
+ "illustrator": "正子公也",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1050,
+ "atkGrowth": 28,
+ "defBase": 950,
+ "defGrowth": 26,
+ "tacticsBase": 510.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 2400,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "妙法軍鬼",
+ "skillDetail": "B/LV10 確率 8% 攻撃 57%上昇+破壊 35%上昇/対象:馬器\n①攻撃 57%上昇する\n②破壊 35%上昇する\n③部隊コスト12以下で100%発動する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "馬器　確率 8% / 攻撃 57%上昇+破壊 35%上昇(部隊コスト12以下で100%発動)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当J)。カード画像が無いため ixanary.com(cards/2944, skills/妙法軍鬼)と ixawiki.com(index.php?BushoCard/2944島津家久, Busho/武将スキル)の生HTML2ソースを突き合わせて登録した。",
+  "統率(槍A/弓A/馬A/器S)・コスト1.5・指揮兵数2400・攻撃1050/28・防御950/26・兵法510.0/2.5・ふりがな・イラストレーターはixanary.comとixawiki.comの2ソースで一致することを確認した(不一致箇所は個別に注記)。",
+  "初期スキル「妙法軍鬼」[B]はixanary.com(skills/妙法軍鬼)のLV10行とixawiki.com(Busho/武将スキル)のマスター一覧LV10行の2ソースで確認した(不一致箇所は個別に注記)。",
+  "カード画像が無いためimageFull/imageCharはnull、synthesisTableは付けず、reviewedOkはfalseのまま。章(ch)は両ソースとも記載が無くnullとした。"
+ ]
+}

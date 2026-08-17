@@ -1,0 +1,42 @@
+{
+ "name": "佐竹義宣",
+ "no": "2548",
+ "ch": null,
+ "cost": 3,
+ "troop": "弓砲器防速",
+ "sub": "",
+ "effect": "弓砲器の防御75%上昇+速度35%上昇(加勢出陣時は速度効果2倍)",
+ "furigana": "さたけよしのぶ",
+ "illustrator": "キョー介",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 990,
+ "atkGrowth": 30,
+ "defBase": 1050,
+ "defGrowth": 35,
+ "tacticsBase": 500,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3280,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "覇・月扇乱舞",
+ "skillDetail": "B/LV10 対象:弓・砲・器\n①確率38%で防御 75%上昇する\n②確率100%で速度 35%上昇する\n③加勢出陣時は速度効果が2倍になる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓・砲・器　確率 38% / 防御 75%上昇+確率 100% / 速度 35%上昇(加勢出陣時速度効果2倍)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "カード画像が無いため ixanary.com/cards/2548 と ixawiki.com(BushoCard/2548佐竹義宣)の生HTML2ソースで確認した。",
+  "コスト3・指揮3280・初期値990/1050/500・成長値+30/+35/+2.5・兵科ランク(槍A・弓A・馬A・器A)・絵師キョー介・スキル名対象確率効果(LV10 確率38%で防御75%上昇/確率100%で速度35%上昇/加勢出陣時速度効果2倍)が両ソース完全一致。",
+  "この skill は防御と速度で発動確率が異なるため、既存の類似書式(槍・砲・器 確率40%で防御49%上昇/確率100%で速度30%上昇のような他カードの表記パターン)に合わせ、ヘッダーに確率を書かず①②で個別に確率を明記した。",
+  "章はixanary.com・ixawiki.comのカードページに記載が無いためnull。"
+ ]
+}

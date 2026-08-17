@@ -1,0 +1,41 @@
+{
+ "name": "長宗我部盛親（2）",
+ "no": "2932",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "槍弓馬攻",
+ "sub": "",
+ "effect": "攻撃 1.6%×攻撃参加武将数(280人)=448%上昇",
+ "furigana": "ちょうそかべもりちか",
+ "illustrator": "正子公也",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 900,
+ "atkGrowth": 25,
+ "defBase": 890,
+ "defGrowth": 22,
+ "tacticsBase": 520,
+ "tacticsGrowth": 2,
+ "lv0Troops": 3450,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "S",
+  "uma": "A",
+  "ki": "C"
+ },
+ "initialSkill": "不屈の蛟竜",
+ "skillDetail": "B/LV10 確率 32% 攻撃 1.6%×攻撃参加武将数(280人)=448%上昇/対象:槍弓馬\n①攻撃が1.6%×攻撃参加武将数(280人)=448%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍弓馬　確率 32% / 攻撃 1.6%×攻撃参加武将数(280人)=448%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "カード画像が無いため ixanary.com/cards/2932 と ixawiki.com(BushoCard/2932長宗我部盛親)の生HTML2ソースで確認した。",
+  "基礎値900/890/520・成長25/22/2・コスト3.5・指揮兵数3450(★0-0)・統率(槍S/弓S/馬A/器C)はixanary.comとixawiki.comの2ソースで完全一致。",
+  "初期スキル不屈の蛟竜(B)のLV10「確率+32%/対象 槍弓馬/攻撃(1.6×攻撃参加武将数)%上昇」はixanary.comとixawiki.comの2ソースで完全一致。攻撃参加武将数の母数280人(F-04)で計算し攻撃448%上昇とした。"
+ ]
+}

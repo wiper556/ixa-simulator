@@ -1,0 +1,40 @@
+{
+ "name": "上泉信綱",
+ "no": "2421",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "槍器鉄防",
+ "sub": "",
+ "effect": "防御 77%上昇",
+ "furigana": "かみいずみのぶつな",
+ "illustrator": "正子公也",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1070,
+ "atkGrowth": 44,
+ "defBase": 1200,
+ "defGrowth": 110,
+ "tacticsBase": null,
+ "tacticsGrowth": 2,
+ "lv0Troops": 4150,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "剣聖新陰",
+ "skillDetail": "A/LV10 確率 100% 防御 77%上昇/対象:槍・器・鉄\n①防御 77%上昇する\n②卓越:追加確率20%で防御効果が1.5倍になる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・器・鉄　確率 100% / 防御 77%上昇(卓越:追加確率20%で防御効果が1.5倍)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "カード画像が無いため imageFull/imageChar は null。ixanary.comの埋め込みJSON(cards/2421)とixawiki.com(BushoCard/2421上泉信綱)の基本ステータス表・スキル表を突き合わせて登録した。",
+  "兵法の初期値はixanary(480)とixawiki(490)で食い違ったためtacticsBaseをnullにした。攻撃防御の基礎値成長値・兵法成長値・cost・指揮兵数・rankGrades・スキル数値は両ソース一致。"
+ ]
+}

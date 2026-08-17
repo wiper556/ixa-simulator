@@ -1,0 +1,39 @@
+{
+ "name": "鬼庭綱元",
+ "no": "2413",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "槍馬騎攻速",
+ "sub": "",
+ "effect": "攻撃 48%上昇+速度 35%上昇",
+ "furigana": "おににわつなもと",
+ "illustrator": "正子公也",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1040,
+ "atkGrowth": 47,
+ "defBase": 1000,
+ "defGrowth": 35,
+ "tacticsBase": 490,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3100,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "S",
+  "ki": "A"
+ },
+ "initialSkill": "一騎当千ノ兵",
+ "skillDetail": "A/LV10 確率 100% 攻撃 48%上昇 速度 35%上昇/対象:槍・馬・騎\n①攻撃 48%上昇する\n②速度 35%上昇する\n③2部隊以下の攻撃で攻撃効果が1.5倍になる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・馬・騎　確率 100% / 攻撃 48%上昇+速度 35%上昇(2部隊以下の攻撃で攻撃効果1.5倍)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "カード画像が無いため imageFull/imageChar は null。ixanary.comの埋め込みJSON(cards/2413)とixawiki.com(BushoCard/2413鬼庭綱元)の基本ステータス表・スキル表を突き合わせて登録した。"
+ ]
+}

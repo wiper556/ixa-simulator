@@ -1,0 +1,41 @@
+{
+ "name": "水谷正村",
+ "no": "2442",
+ "ch": null,
+ "cost": 4.5,
+ "troop": "全防",
+ "sub": "",
+ "effect": "待機15分ごとに防御効果1.5倍(上限4回)",
+ "furigana": "みずのやまさむら",
+ "illustrator": "正子公也",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1000,
+ "atkGrowth": 40,
+ "defBase": 1170,
+ "defGrowth": 49,
+ "tacticsBase": 540,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 4420,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "S",
+  "ki": "A"
+ },
+ "initialSkill": "不敗ノ蟠龍",
+ "skillDetail": "S/LV10 確率 40% 防御 70%上昇/対象:全\n①防御 70%上昇する\n②待機15分ごとに防御効果が1.5倍になる(上限4回)\n③防御効果は最大354.375%まで上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 40% / 防御 70%上昇(待機15分ごとに防御効果1.5倍・上限4回・防御最大354.375%上昇)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "カード画像が無いため ixanary.com/cards/2442 と ixawiki.com(BushoCard/2442水谷正村)の生HTML2ソースで確認した。",
+  "コスト4.5・指揮4420(★0-0)・初期値1000/1170/540・成長+40/+49/+2.5・兵科ランク(槍A・馬S・弓A・器A)・ふりがな・絵師(正子公也)・LV10スキル値(確率40%・対象全・防御70%上昇・待機15分ごとに防御効果1.5倍・上限4回・防御最大354.375%上昇(ixawikiは354.3%表記だが同値))が両ソース一致。",
+  "初期スキル「不敗ノ蟠龍」[S]の合成候補・章はixanary/ixawikiいずれのカードページにも記載が無く未確認。"
+ ]
+}

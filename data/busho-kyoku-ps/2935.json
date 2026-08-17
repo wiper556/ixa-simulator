@@ -1,0 +1,42 @@
+{
+ "name": "竹中半兵衛（3）",
+ "no": "2935",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "馬砲器防",
+ "sub": "",
+ "effect": "防御 44%上昇(敵軍4部隊以下で効果2倍)",
+ "furigana": "たけなかはんべえ",
+ "illustrator": "正子公也",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 900,
+ "atkGrowth": 24,
+ "defBase": 950,
+ "defGrowth": 27,
+ "tacticsBase": 560.0,
+ "tacticsGrowth": 3.0,
+ "lv0Troops": 3470,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "B",
+  "uma": "S",
+  "ki": "S"
+ },
+ "initialSkill": "諫言機略",
+ "skillDetail": "B/LV10 確率 30% 防御 44%上昇/対象:馬砲器\n①防御 44%上昇する\n②敵軍4部隊以下で効果2倍になる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "馬砲器　確率 30% / 防御 44%上昇(敵軍4部隊以下で効果2倍)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当J)。カード画像が無いため ixanary.com(cards/2935, skills/諫言機略)と ixawiki.com(index.php?BushoCard/2935竹中半兵衛, Busho/武将スキル)の生HTML2ソースを突き合わせて登録した。",
+  "統率(槍B/弓B/馬S/器S)・コスト3.5・指揮兵数3470・攻撃900/24・防御950/27・兵法560.0/3.0・ふりがな・イラストレーターはixanary.comとixawiki.comの2ソースで一致することを確認した(不一致箇所は個別に注記)。",
+  "初期スキル「諫言機略」[B]はixanary.com(skills/諫言機略)のLV10行とixawiki.com(Busho/武将スキル)のマスター一覧LV10行の2ソースで確認した(不一致箇所は個別に注記)。",
+  "カード画像が無いためimageFull/imageCharはnull、synthesisTableは付けず、reviewedOkはfalseのまま。章(ch)は両ソースとも記載が無くnullとした。"
+ ]
+}

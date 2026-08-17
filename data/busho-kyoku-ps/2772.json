@@ -1,0 +1,41 @@
+{
+ "name": "津田監物",
+ "no": "2772",
+ "ch": null,
+ "cost": 2.0,
+ "troop": "全防",
+ "sub": "",
+ "effect": "防御 70%上昇(部隊内全武将の兵科対象の全スキルに「器」対象を追加)",
+ "furigana": "つだけんもつ",
+ "illustrator": "池田宗隆",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 970,
+ "atkGrowth": 26,
+ "defBase": 1020,
+ "defGrowth": 29,
+ "tacticsBase": 500.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 2500,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "根来鉄砲衆",
+ "skillDetail": "A/LV10 確率 50% 防御 70%上昇/対象:全\n①防御 70%上昇する\n②部隊内全武将の兵科対象の全スキルに「器」対象を追加する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 50% / 防御 70%上昇(部隊内全武将の兵科対象の全スキルに「器」対象を追加)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当H)。カード画像が無いためixanary.com(cards/2772)とixawiki.com(BushoCard/2772津田監物)の2ソースを生HTMLで突き合わせた。",
+  "コスト2.0・指揮兵数2500・統率(槍A/弓A/馬A/器S)・攻撃970(+26)/防御1020(+29)/兵法500.0(+2.5)・初期スキル「根来鉄砲衆」(A)の確率/対象/効果(LV1・LV10とも)は両ソース完全一致。TRの記載はどちらにも無い。",
+  "章は情報源に記載が無いため未確認。"
+ ]
+}

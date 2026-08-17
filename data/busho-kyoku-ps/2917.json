@@ -1,0 +1,42 @@
+{
+ "name": "前田慶次（2）",
+ "no": "2917",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "槍馬攻",
+ "sub": "",
+ "effect": "攻撃 36%上昇",
+ "furigana": "まえだけいじ",
+ "illustrator": "正子公也",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1100,
+ "atkGrowth": 50,
+ "defBase": 1100,
+ "defGrowth": 50,
+ "tacticsBase": 450,
+ "tacticsGrowth": 2,
+ "lv0Troops": 2500,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "B",
+  "uma": "A",
+  "ki": "D"
+ },
+ "initialSkill": "穀蔵院飄戸斎",
+ "skillDetail": "B/LV10 確率 20% 攻撃 36%上昇/対象:槍馬\n①攻撃が36%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍馬　確率 20% / 攻撃 36%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "カード画像が無いため ixanary.com/cards/2917 と ixawiki.com(BushoCard/2917前田慶次)の生HTML2ソースで確認した。",
+  "基礎値1100/1100/450・成長50/50/2・コスト3.5・指揮兵数2500(★0-0)・統率(槍S/弓B/馬A/器D)はixanary.comとixawiki.comの2ソースで完全一致。攻撃と防御の初期値・成長値が同値だが両ソース独立に一致しているため既知バグではなく仕様として採用した。",
+  "初期スキル穀蔵院飄戸斎(B)のLV10「確率+20%/対象 槍馬/攻撃36%上昇」はixanary.comとixawiki.comの2ソースで完全一致。",
+  "ixawikiのページ名は一覧の表記「前田慶次(2)」ではなく末尾の(2)を除いた「BushoCard/2917前田慶次」であることを一覧ページのリンク先から確認して取得した。"
+ ]
+}

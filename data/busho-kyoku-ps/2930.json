@@ -1,0 +1,41 @@
+{
+ "name": "石田三成（2）",
+ "no": "2930",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "弓馬砲防",
+ "sub": "",
+ "effect": "防御 35%上昇(武将ランクで効果が変化)",
+ "furigana": "いしだみつなり",
+ "illustrator": "正子公也",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 800,
+ "atkGrowth": 20,
+ "defBase": 850,
+ "defGrowth": 22,
+ "tacticsBase": 540,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 2800,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "A",
+  "uma": "S",
+  "ki": "A"
+ },
+ "initialSkill": "兵站戦術",
+ "skillDetail": "B/LV10 確率 27% 防御 35%上昇/対象:弓馬砲\n①防御が35%上昇する(武将ランクで効果が変化・1ランク毎に効果+5%)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓馬砲　確率 27% / 防御 35%上昇(武将ランクで効果が変化・1ランク毎に効果+5%)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "カード画像が無いため ixanary.com/cards/2930 と ixawiki.com(BushoCard/2930石田三成)の生HTML2ソースで確認した。",
+  "基礎値800/850/540・成長20/22/2.5・コスト2.5・指揮兵数2800(★0-0)・統率(槍B/弓A/馬S/器A)はixanary.comとixawiki.comの2ソースで完全一致。",
+  "初期スキル兵站戦術(B)のLV10について、ixawiki.com(Busho/武将スキル)は式「弓馬砲防：15+(ランク×5)%上昇」を記載、ixanary.com(cards/2930)はこのカード自身のランクで計算済みの具体値「防御：35%上昇」を表示しており、15+4×5=35でランク値4(A相当)としたときに数値が一致するため矛盾ではなく同じ値の異なる表現と判断し、ixanaryの具体値35%を採用した。確率+27%は両ソース一致。"
+ ]
+}

@@ -1,0 +1,39 @@
+{
+ "name": "蜂須賀至鎮",
+ "no": "2352",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "槍馬器鉄防",
+ "sub": "",
+ "effect": "防御 165%上昇",
+ "furigana": "はちすかよししげ",
+ "illustrator": "三好載克",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1050,
+ "atkGrowth": 32,
+ "defBase": 1110,
+ "defGrowth": 44,
+ "tacticsBase": 540,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3720,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "B",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "七功ノ指揮",
+ "skillDetail": "A/LV10 確率 49% 防御 165%上昇/対象:槍・馬・器・鉄\n①防御 165%上昇する\n②自拠点防御時は防御効果が2倍になる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・馬・器・鉄　確率 49% / 防御 165%上昇(自拠点防御時は防御効果2倍)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "カード画像が無いため imageFull/imageChar は null。ixanary.comの埋め込みJSON(cards/2352)とixawiki.com(BushoCard/2352蜂須賀至鎮)の基本ステータス表・スキル表を突き合わせて登録した。"
+ ]
+}

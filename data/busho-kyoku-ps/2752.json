@@ -1,0 +1,41 @@
+{
+ "name": "帰蝶",
+ "no": "2752",
+ "ch": null,
+ "cost": 2.0,
+ "troop": "全防速",
+ "sub": "",
+ "effect": "全軍の防御・速度上昇(加勢出陣時は速度効果10倍)",
+ "furigana": "きちょう",
+ "illustrator": "神威なつき",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 940,
+ "atkGrowth": 25,
+ "defBase": 960,
+ "defGrowth": 27,
+ "tacticsBase": 500.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 2400,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "蝶蛇の舞",
+ "skillDetail": "A/LV10 確率 100% 防御 30%上昇+速度 45%上昇/対象:全\n①防御 30%上昇する\n②速度 45%上昇する\n③加勢出陣時は速度効果10倍となる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 防御 30%上昇+速度 45%上昇(加勢出陣時は速度効果10倍)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当H)。カード画像が無いためixanary.com(cards/2752)とixawiki.com(BushoCard/2752帰蝶)の2ソースを生HTMLで突き合わせた。",
+  "コスト2.0・指揮兵数2400・統率(槍A/弓A/馬A/器S)・攻撃940(+25)/防御960(+27)/兵法500.0(+2.5)・初期スキル「蝶蛇の舞」(A)の確率/対象/効果(LV1・LV10とも)は両ソース完全一致。TR(鍛錬)の記載はどちらにも無い。",
+  "章は情報源に記載が無いため未確認。"
+ ]
+}

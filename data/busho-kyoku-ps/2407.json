@@ -1,0 +1,39 @@
+{
+ "name": "阿波鳴門之介",
+ "no": "2407",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "槍鉄攻",
+ "sub": "",
+ "effect": "攻撃 64%上昇",
+ "furigana": "あわなるとのすけ",
+ "illustrator": "正子公也",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1050,
+ "atkGrowth": 30,
+ "defBase": 1000,
+ "defGrowth": 28,
+ "tacticsBase": 500,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3510,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "先陣御免",
+ "skillDetail": "A/LV10 確率 100% 攻撃 64%上昇/対象:槍・鉄\n①攻撃 64%上昇する\n②このスキルを持つ武将は無効化や発動率低下スキルから保護される",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・鉄　確率 100% / 攻撃 64%上昇(このスキルを持つ武将は無効化や発動率低下スキルから保護される)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "カード画像が無いため imageFull/imageChar は null。ixanary.comの埋め込みJSON(cards/2407)とixawiki.com(BushoCard/2407阿波鳴門之介)の基本ステータス表・スキル表を突き合わせて登録した。"
+ ]
+}

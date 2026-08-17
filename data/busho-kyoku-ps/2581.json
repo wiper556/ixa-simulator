@@ -1,0 +1,39 @@
+{
+ "name": "あやめ",
+ "no": "2581",
+ "ch": null,
+ "cost": 1,
+ "troop": "全特",
+ "sub": "",
+ "effect": "所属部隊の武将を無効化や発動率低下スキルから保護(確率100%)",
+ "furigana": "あやめ",
+ "illustrator": "ミヤジマハル",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1140,
+ "atkGrowth": 53,
+ "defBase": 1140,
+ "defGrowth": 53,
+ "tacticsBase": 560,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 1910,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "S",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "あやめの応援",
+ "skillDetail": "S/LV10 確率 100% 所属部隊の武将が持つスキルを無効化や発動率低下スキルから保護/対象:全\n①所属部隊の武将が持つスキルを無効化や発動率低下させるスキルから保護する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 所属部隊の武将が持つスキルを無効化や発動率低下スキルから保護"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録。カード画像が無いためixanary.com(cards/2581)とixawiki.com(BushoCard/2581あやめ)の生HTMLを突き合わせて一致した項目のみ登録した。基礎値/成長値/コスト/指揮兵数/統率ランク/初期スキルLV10の確率・効果値は両ソースで一致を確認済み。カード画像が無いためrankGradesは両ソース一致のみ採用しreviewedOkはfalseのまま。"
+ ]
+}

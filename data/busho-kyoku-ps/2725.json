@@ -1,0 +1,71 @@
+{
+ "name": "桃源院",
+ "no": "2725",
+ "ch": null,
+ "cost": 1.0,
+ "troop": "全防",
+ "sub": "",
+ "effect": "防御 5%上昇(自本領に滞在する全部隊に効果)",
+ "furigana": "とうげんいん",
+ "illustrator": "ツヤイルカ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 630,
+ "atkGrowth": 16,
+ "defBase": 690,
+ "defGrowth": 18,
+ "tacticsBase": 640,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 1720,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "A",
+  "uma": "B",
+  "ki": "A"
+ },
+ "initialSkill": "堅国の絆",
+ "skillDetail": "A/LV10 確率 60% 防御 5%上昇/対象:全\n①防御が5%上昇する(自本領に滞在する全部隊に効果)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 60% / 防御 5%上昇(自本領に滞在する全部隊に効果)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": null
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": null
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": null
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": null
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": null
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": null
+  }
+ ],
+ "notes": [
+  "2026-08-18新規登録(担当G・カード画像なし)。ixanary.com/cards/2725とixawiki.com(index.php?BushoCard/2725桃源院)の生HTML2ソースで統率(槍B弓A馬B器A)・コスト1・指揮兵数1720・初期値630/690/640・成長値+16/+18/+2.0・絵師ツヤイルカ・ふりがな・スキルLV1値(確率+38%/防御2.5%上昇)が完全一致することを確認した(不一致項目なし)。",
+  "初期スキル「堅国の絆」[A]のLV10値(確率60%/防御5%上昇/対象全・自本領に滞在する全部隊に効果)はixanary.com/cards/2725のLV10スキルボックスで確認。",
+  "ixanaryには追加スキル(unitSkills)として「防.戦姫艶舞」の記載があるが、本サイトのJSONスキーマに対応するフィールドが無いため登録していない。synthesisTableはカード画像が無いため作成していない。章は両ソースに記載が無く未確認。"
+ ],
+ "reviewedOk": false
+}

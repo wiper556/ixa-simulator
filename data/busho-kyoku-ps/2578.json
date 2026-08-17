@@ -1,0 +1,39 @@
+{
+ "name": "曲直瀬道三",
+ "no": "2578",
+ "ch": null,
+ "cost": 4,
+ "troop": "全攻",
+ "sub": "",
+ "effect": "攻撃 180%上昇(飛翔12以上所持時は飛翔を失い攻撃効果4倍・確率100%)",
+ "furigana": "まなせどうさん",
+ "illustrator": "小森ニコ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1150,
+ "atkGrowth": 57,
+ "defBase": 1100,
+ "defGrowth": 51,
+ "tacticsBase": 540,
+ "tacticsGrowth": 3,
+ "lv0Troops": 4250,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "医皇",
+ "skillDetail": "S/LV10 確率 100% 攻撃 180%上昇/対象:全\n①攻撃が180%上昇する\n②この武将が12以上の飛翔を持つとき飛翔を全て失う代わりにこの攻撃効果が4倍になる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 攻撃 180%上昇(飛翔12以上所持時は飛翔を全て失う代わりに攻撃効果4倍)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録。カード画像が無いためixanary.com(cards/2578)とixawiki.com(BushoCard/2578曲直瀬道三)の生HTMLを突き合わせて一致した項目のみ登録した。基礎値/成長値/コスト/指揮兵数/統率ランク/初期スキルLV10の確率・効果値は両ソースで一致を確認済み。カード画像が無いためrankGradesは両ソース一致のみ採用しreviewedOkはfalseのまま。"
+ ]
+}

@@ -1,0 +1,44 @@
+{
+ "name": "長宗我部元親",
+ "no": "2547",
+ "ch": null,
+ "cost": 2,
+ "troop": "槍弓器防",
+ "sub": "",
+ "effect": "槍弓器の防御62%上昇(本丸防御陣形3列目以降で効果1.5倍)",
+ "furigana": "ちょうそかべもとちか",
+ "illustrator": "キョー介",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 970,
+ "atkGrowth": 26,
+ "defBase": 1000,
+ "defGrowth": null,
+ "tacticsBase": 490,
+ "tacticsGrowth": 2,
+ "lv0Troops": 2550,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "B",
+  "ki": "S"
+ },
+ "initialSkill": "覇・海王神渦",
+ "skillDetail": "B/LV10 確率 40% 防御 62%上昇/対象:槍・弓・器\n①防御 62%上昇する\n②本丸防御陣形の第参列目以降に配置時は防御効果が1.5倍になる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・弓・器　確率 40% / 防御 62%上昇(本丸防御陣形の第参列目以降に配置時は防御効果1.5倍)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "カード画像が無いため ixanary.com/cards/2547 と ixawiki.com(BushoCard/2547長宗我部元親)の生HTML2ソースで確認した。",
+  "コスト2・指揮2550・初期値970/1000/490・兵科ランク(槍A・弓A・馬B・器S)・絵師キョー介が両ソース完全一致。",
+  "成長値: 攻撃+26は両ソース一致。防御成長値はixanary.comが+24、ixawiki.com(基本ステータス表・成長の歩み表とも)が+34で食い違ったためnullにした。兵法成長値+2.0は一致。",
+  "スキル「覇・海王神渦」はixawiki.comの基本ステータス表ではLV1相当の値(確率+22%/防御35%上昇)のみが記載されており、LV10の値(確率+40%/防御62%上昇)はixanary.comのLV1/LV10両表記でのみ確認できた(ixawiki側にLV10表記の公式テーブルなし)。ixawikiのコメント欄に利用者投稿でLV10値(確率+40%/防御62%上昇)と一致する記述があり参考程度に確認したが、正式テーブルではないため主な根拠とはしていない。LV1の値(22%/35%)はixanaryとixawikiの公式テーブルが完全一致することを確認済み。",
+  "本丸防御陣形の第参列目以降配置時の1.5倍効果はLV1/LV10共通の固定効果としてixanary.comに明記。",
+  "章はixanary.com・ixawiki.comのカードページに記載が無いためnull。"
+ ]
+}

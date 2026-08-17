@@ -1,0 +1,41 @@
+{
+ "name": "島津義弘（2）",
+ "no": "2903",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "砲攻",
+ "sub": "",
+ "effect": "攻撃 25%上昇",
+ "furigana": "しまづよしひろ",
+ "illustrator": "正子公也",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 700,
+ "atkGrowth": 19,
+ "defBase": 580,
+ "defGrowth": 15,
+ "tacticsBase": 620.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 3480,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "C",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "鬼石曼子",
+ "skillDetail": "A/LV10 確率 40% 攻撃 25%上昇/対象:砲\n①攻撃 25%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "砲　確率 40% / 攻撃 25%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当H)。カード画像が無いためixanary.com(cards/2903)とixawiki.com(BushoCard/2903島津義弘)の2ソースを生HTMLで突き合わせた。",
+  "コスト3.5・指揮兵数3480・統率(槍B/弓C/馬A/器S)・攻撃700(+19)/防御580(+15)/兵法620.0(+2.0)は両ソース完全一致。初期スキル「鬼石曼子」(A)はixawikiのカード表に1段のみの表示(確率13%・攻撃7%上昇)でこれはixanaryのLV1値と一致した。skillDetail/trTableに採用したLV10値(確率40%・攻撃25%上昇)はixanary.comのスキル効果表のLV10行から採用した。TRの記載はどちらにも無い。",
+  "章は情報源に記載が無いため未確認。"
+ ]
+}

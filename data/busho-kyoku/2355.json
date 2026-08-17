@@ -1,0 +1,40 @@
+{
+ "name": "伊達稙宗",
+ "no": "2355",
+ "ch": null,
+ "cost": null,
+ "troop": "全攻防",
+ "sub": "",
+ "effect": "攻撃 70%上昇+防御 70%上昇",
+ "furigana": "だてたねむね",
+ "illustrator": "池田宗隆",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1090,
+ "atkGrowth": 42,
+ "defBase": 1090,
+ "defGrowth": 42,
+ "tacticsBase": 560,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3720,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "龍閥ノ明主",
+ "skillDetail": "A/LV10 確率 35% 攻撃 70%上昇 防御 70%上昇/対象:全\n①攻撃 70%上昇する\n②防御 70%上昇する\n③部隊内の「龍閥ノ明主」スキル数×80%を攻防効果に加算する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 35% / 攻撃 70%上昇+防御 70%上昇(部隊内の「龍閥ノ明主」スキル数×80%を攻防効果に加算)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "カード画像が無いため imageFull/imageChar は null。ixanary.comの埋め込みJSON(cards/2355)とixawiki.com(BushoCard/2355伊達稙宗)の基本ステータス表・スキル表を突き合わせて登録した。",
+  "costはixanary(3)とixawiki(3.5)で食い違ったためnullにした。指揮兵数3720・基礎値・成長値・rankGrades・スキル数値は両ソース一致。"
+ ]
+}

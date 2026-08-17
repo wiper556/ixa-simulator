@@ -1,0 +1,44 @@
+{
+ "name": "村上武吉（2）",
+ "no": "2934",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "槍弓器攻",
+ "sub": "",
+ "effect": "攻撃 (1.2×防御参加武将数)%上昇",
+ "furigana": "むらかみたけよし",
+ "illustrator": "正子公也",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 940,
+ "atkGrowth": 32,
+ "defBase": 940,
+ "defGrowth": 30,
+ "tacticsBase": 490.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3360,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "B",
+  "ki": "S"
+ },
+ "initialSkill": "村上舟戦要法",
+ "skillDetail": "A/LV10 確率 44% 攻撃 (1.2×防御参加武将数)%上昇/対象:槍弓器\n①攻撃が(1.2×防御参加武将数)%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍弓器　確率 44% / 攻撃 1.2%×防御参加武将数(280人)=336.0%"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当J)。カード画像が無いため ixanary.com(cards/2934, skills/村上舟戦要法)と ixawiki.com(index.php?BushoCard/2934村上武吉, Busho/武将スキル)の生HTML2ソースを突き合わせて登録した。",
+  "統率(槍A/弓A/馬B/器S)・コスト3.5・指揮兵数3360・攻撃940/32・防御940/30・兵法490.0/2.5・ふりがな・イラストレーターはixanary.comとixawiki.comの2ソースで一致することを確認した(不一致箇所は個別に注記)。",
+  "初期スキル「村上舟戦要法」[A]はixanary.com(skills/村上舟戦要法)のLV10行とixawiki.com(Busho/武将スキル)のマスター一覧LV10行の2ソースで確認した(不一致箇所は個別に注記)。",
+  "攻撃初期値960・防御初期値960が完全に同値だが、ixanary.comとixawiki.comの2ソースが独立に一致しているため実際の値と判断した(攻撃防御同値バグの誤登録ではない)。",
+  "カード画像が無いためimageFull/imageCharはnull、synthesisTableは付けず、reviewedOkはfalseのまま。章(ch)は両ソースとも記載が無くnullとした。",
+  "2026-08-16: trTableの「(X×防御参加武将数)%上昇」を、サイトの既存の書き方(防御参加武将数=280人での計算値を併記)に揃えた。skillDetailは式のまま残してある。"
+ ]
+}

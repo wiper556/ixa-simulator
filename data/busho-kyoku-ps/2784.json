@@ -1,0 +1,41 @@
+{
+ "name": "三浦道寸",
+ "no": "2784",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "全防",
+ "sub": "",
+ "effect": "防御 50%上昇(攻撃側敵軍「覇」武将数×4%を防御効果に加算)",
+ "furigana": "みうらどうすん",
+ "illustrator": "西野幸治",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 980,
+ "atkGrowth": 40,
+ "defBase": 1020,
+ "defGrowth": 44,
+ "tacticsBase": 500.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3560,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "鬼魅千傑",
+ "skillDetail": "A/LV10 確率 100% 防御 50%上昇/対象:全\n①防御 50%上昇する\n②攻撃側敵軍「覇」武将数×4%を防御効果に加算する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 防御 50%上昇(攻撃側敵軍「覇」武将数×4%を防御効果に加算)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当H)。カード画像が無いためixanary.com(cards/2784)とixawiki.com(BushoCard/2784三浦道寸)の2ソースを生HTMLで突き合わせた。",
+  "コスト3.5・指揮兵数3560・統率(槍A/弓A/馬A/器S)・攻撃980(+40)/防御1020(+44)/兵法500.0(+2.5)・初期スキル「鬼魅千傑」(A)の確率/対象/効果(LV1・LV10とも)は両ソース完全一致。TRの記載はどちらにも無い。",
+  "章は情報源に記載が無いため未確認。"
+ ]
+}

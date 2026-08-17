@@ -1,0 +1,41 @@
+{
+ "name": "佐竹義宣",
+ "no": "2417",
+ "ch": null,
+ "cost": 4,
+ "troop": "馬器騎攻防",
+ "sub": "",
+ "effect": "攻撃・防御 ((1+ランク)×コスト×1.9)%上昇",
+ "furigana": "さたけよしのぶ",
+ "illustrator": "正子公也",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1050,
+ "atkGrowth": 42,
+ "defBase": 1050,
+ "defGrowth": 42,
+ "tacticsBase": 500,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3780,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "S",
+  "ki": "A"
+ },
+ "initialSkill": "征天ノ六大将",
+ "skillDetail": "A/LV10 確率 50% 攻撃・防御 ((1+ランク)×コスト×1.9)%上昇/対象:馬・器・騎\n①攻撃・防御が(1+ランク)×コスト×1.9%上昇する\n②所属部隊内の全スキルレアリティで効果が変動する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "馬・器・騎　確率 50% / 攻撃・防御 ((1+ランク)×コスト×1.9)%上昇(所属部隊内の全スキルレアリティで効果変動)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "カード画像が無いため imageFull/imageChar は null。ixanary.comの埋め込みJSON(cards/2417)とixawiki.com(BushoCard/2417佐竹義宣)の基本ステータス表・スキル表を突き合わせて登録した。",
+  "ixawikiの個別カードページのルビ表記は「佐竹義宜」だったが、ixawikiの武将カード一覧ページ・ixanaryはともに「佐竹義宣」だったためこちらを採用した(個別ページのルビの誤字と判断)。",
+  "初期スキル「征天ノ六大将」のLV10効果値はixanaryが計算式表記((1+武将ランク)×コスト×1.9)%上昇、ixawikiが8%上昇(LV1の値と同一)だった。ixawikiのLV10行はLV1行と数値が完全に一致しており確率のみ5%→50%に上昇する不自然な内容だったため、計算式ベースのixanaryの表記を採用した。ixawiki側のみ更新漏れの可能性がある。"
+ ]
+}

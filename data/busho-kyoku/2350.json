@@ -1,0 +1,39 @@
+{
+ "name": "真田信綱",
+ "no": "2350",
+ "ch": null,
+ "cost": 4,
+ "troop": "槍砲器攻防",
+ "sub": "",
+ "effect": "攻撃 310%上昇+防御 310%上昇",
+ "furigana": "さなだのぶつな",
+ "illustrator": "西野幸治",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1080,
+ "atkGrowth": 39,
+ "defBase": 1080,
+ "defGrowth": 39,
+ "tacticsBase": 530,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3930,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "B",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "青江ノ大太刀",
+ "skillDetail": "A/LV10 確率 50% 攻撃 310%上昇 防御 310%上昇/対象:槍・砲・器\n①攻撃 310%上昇する\n②防御 310%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・砲・器　確率 50% / 攻撃 310%上昇+防御 310%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "カード画像が無いため imageFull/imageChar は null。ixanary.comの埋め込みJSON(cards/2350)とixawiki.com(BushoCard/2350真田信綱)の基本ステータス表・スキル表を突き合わせて登録した。"
+ ]
+}

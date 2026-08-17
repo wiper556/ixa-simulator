@@ -1,0 +1,43 @@
+{
+ "name": "吉乃",
+ "no": "2512",
+ "ch": null,
+ "cost": 0,
+ "troop": "弓器焙攻防",
+ "sub": "",
+ "effect": "攻撃 62%上昇+防御 62%上昇(部隊内姫武将スキル発動率+10%・特殊効果は部隊内重複不可)",
+ "furigana": "きつの",
+ "illustrator": "BISAI",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 980,
+ "atkGrowth": 32,
+ "defBase": 980,
+ "defGrowth": 32,
+ "tacticsBase": 500,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 1550,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "S",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "最愛ノ妾",
+ "skillDetail": "A/LV10 確率 100% 攻撃 62%上昇 防御 62%上昇/対象:弓・器・焙\n①攻撃 62%上昇する\n②防御 62%上昇する\n③部隊内姫武将のスキル発動率が10%上昇する(特殊効果は部隊内重複不可)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓・器・焙　確率 100% / 攻撃 62%上昇+防御 62%上昇(部隊内姫武将スキル発動率+10%・特殊効果は部隊内重複不可)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18新規登録(担当C・カード画像なし)。ixanary.com/cards/2512とixawiki.com(index.php?BushoCard/2512吉乃)の生HTML2ソースで全項目が一致することを確認した(画像照合は無し)。",
+  "武将名: ixawiki一覧は無印の「吉乃」表記。既存の無印「吉乃」(No.2167)と同名重複になるが、ixawiki一覧が区別していないためassign_C.txtの指示通り無印で登録した。要再検討(申し送り事項)。",
+  "ixawikiページに「※「武将イラスト人気ランキング2019」姫部門・7位受賞により復刻」の記載があり実質復刻カード。",
+  "コスト0・指揮兵数1550(★0-0)・成長値+32/+32/+2.5・ふりがな・絵師(BISAI)は2ソースで完全一致。統率(槍A/弓S/馬A/器A)も2ソース一致。",
+  "章はixanary/ixawikiいずれのカードページにも記載が無く未確認。"
+ ]
+}

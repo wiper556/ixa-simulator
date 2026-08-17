@@ -1,0 +1,41 @@
+{
+ "name": "お福",
+ "no": "2422",
+ "ch": null,
+ "cost": 4,
+ "troop": "全防",
+ "sub": "",
+ "effect": "武将HP70以下のとき防御効果1.5倍",
+ "furigana": "おふく",
+ "illustrator": "正子公也",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 960,
+ "atkGrowth": 38,
+ "defBase": 1070,
+ "defGrowth": 45,
+ "tacticsBase": 530,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3840,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "S",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "豊臣卒啄",
+ "skillDetail": "A/LV10 確率 54% 防御 90%上昇/対象:全\n①防御 90%上昇する\n②武将HPが70以下のとき、防御効果を1.5倍にする",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 54% / 防御 90%上昇(武将HPが70以下のとき防御効果1.5倍)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "カード画像が無いため ixanary.com/cards/2422 と ixawiki.com(BushoCard/2422お福)の生HTML2ソースで確認した。",
+  "コスト4・指揮3840(★0-0)・初期値960/1070/530・成長+38/+45/+2.5・兵科ランク(槍A・馬A・弓S・器A)・ふりがな・絵師(正子公也)・LV10スキル値(確率54%・対象全・防御90%上昇・武将HP70以下で防御効果1.5倍)が両ソース完全一致。",
+  "初期スキル「豊臣卒啄」[A]の合成候補・章はixanary/ixawikiいずれのカードページにも記載が無く未確認。"
+ ]
+}

@@ -1,0 +1,41 @@
+{
+ "name": "大谷吉継（2）",
+ "no": "2926",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "槍砲器攻防",
+ "sub": "",
+ "effect": "攻撃 43%上昇+防御 43%上昇",
+ "furigana": "おおたによしつぐ",
+ "illustrator": "正子公也",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 950,
+ "atkGrowth": 21,
+ "defBase": 950,
+ "defGrowth": 21,
+ "tacticsBase": 510,
+ "tacticsGrowth": 2,
+ "lv0Troops": 3360,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "S",
+  "uma": "B",
+  "ki": "A"
+ },
+ "initialSkill": "冥兵曼荼羅",
+ "skillDetail": "B/LV10 確率 27% 攻撃 43%上昇+防御 43%上昇/対象:槍砲器\n①攻撃が43%上昇する\n②防御が43%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍砲器　確率 27% / 攻撃 43%上昇+防御 43%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "カード画像が無いため ixanary.com/cards/2926 と ixawiki.com(BushoCard/2926大谷吉継)の生HTML2ソースで確認した。",
+  "基礎値950/950/510・成長21/21/2・コスト3.5・指揮兵数3360(★0-0)・統率(槍A/弓S/馬B/器A)はixanary.comとixawiki.comの2ソースで完全一致。攻撃と防御の初期値・成長値が同値だが両ソース独立に一致しているため既知バグではなく仕様として採用した。",
+  "初期スキル冥兵曼荼羅(B)のLV10「確率+27%/対象 槍砲器/攻撃43%上昇+防御43%上昇」はixanary.comとixawiki.comの2ソースで完全一致。攻撃と防御が同時変動するためtrTableに両方を併記した。"
+ ]
+}

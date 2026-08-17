@@ -1,0 +1,41 @@
+{
+ "name": "水原親憲",
+ "no": "2925",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "馬砲器攻破",
+ "sub": "",
+ "effect": "攻撃 44%上昇+破壊 32%上昇",
+ "furigana": "すいばらちかのり",
+ "illustrator": "正子公也",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 950,
+ "atkGrowth": 21,
+ "defBase": 950,
+ "defGrowth": 21,
+ "tacticsBase": 500,
+ "tacticsGrowth": 2,
+ "lv0Troops": 3200,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "B",
+  "uma": "S",
+  "ki": "S"
+ },
+ "initialSkill": "戦陣 風雷火",
+ "skillDetail": "B/LV10 確率 20% 攻撃 44%上昇+破壊 32%上昇/対象:馬砲器\n①攻撃が44%上昇する\n②破壊が32%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "馬砲器　確率 20% / 攻撃 44%上昇+破壊 32%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "カード画像が無いため ixanary.com/cards/2925 と ixawiki.com(BushoCard/2925水原親憲)の生HTML2ソースで確認した。",
+  "基礎値950/950/500・成長21/21/2・コスト3.5・指揮兵数3200(★0-0)・統率(槍B/弓B/馬S/器S)はixanary.comとixawiki.comの2ソースで完全一致。攻撃と防御の初期値・成長値が同値だが両ソース独立に一致しているため既知バグではなく仕様として採用した。",
+  "初期スキル戦陣 風雷火(B)のLV10「確率+20%/対象 馬砲器/攻撃44%上昇+破壊32%上昇」はixanary.comとixawiki.comの2ソースで完全一致。攻撃と破壊が同時変動するためtrTableに両方を併記した。"
+ ]
+}

@@ -1,0 +1,39 @@
+{
+ "name": "毛利隆元",
+ "no": "2357",
+ "ch": null,
+ "cost": 4,
+ "troop": "槍砲器防破",
+ "sub": "",
+ "effect": "防御 70%上昇+破壊 100%上昇",
+ "furigana": "もうりたかもと",
+ "illustrator": "Natto-7",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1040,
+ "atkGrowth": 32,
+ "defBase": 1110,
+ "defGrowth": 46,
+ "tacticsBase": 530,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3950,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "不撓ノ仁将",
+ "skillDetail": "A/LV10 確率 35% 防御 70%上昇 破壊 100%上昇/対象:槍・砲・器\n①防御 70%上昇する\n②破壊 100%上昇する\n③(1.3×防御参加武将数)%を防御効果に加算する(模倣不可)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・砲・器　確率 35% / 防御 70%上昇+破壊 100%上昇((1.3×防御参加武将数)%を防御効果に加算・模倣不可)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "カード画像が無いため imageFull/imageChar は null。ixanary.comの埋め込みJSON(cards/2357)とixawiki.com(BushoCard/2357毛利隆元)の基本ステータス表・スキル表を突き合わせて登録した。"
+ ]
+}

@@ -1,0 +1,38 @@
+{
+ "name": "龍造寺隆信",
+ "no": "2549",
+ "ch": null,
+ "cost": null,
+ "troop": "弓馬器防",
+ "sub": "",
+ "effect": "弓馬器の防御82%上昇(自拠点防御時は発動確率100%)",
+ "furigana": "りゅうぞうじたかのぶ",
+ "illustrator": "株式会社レバーン＋しいたけ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": null,
+ "atkGrowth": null,
+ "defBase": null,
+ "defGrowth": null,
+ "tacticsBase": 500,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": null,
+ "rankGrades": null,
+ "initialSkill": "覇・熊王無双",
+ "skillDetail": "B/LV10 確率 21% 防御 82%上昇/対象:弓・馬・器\n①防御 82%上昇する\n②自拠点防御時は発動確率が100%になる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓・馬・器　確率 21% / 防御 82%上昇(自拠点防御時は発動確率100%)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "カード画像が無いため ixanary.com/cards/2549 と ixawiki.com(BushoCard/2549龍造寺隆信)の生HTML2ソースで確認した。",
+  "【重大な食い違い】ixanary.com/cards/2549のコスト・指揮兵数・初期値・成長値(コスト3・指揮3280・攻撃990/防御1050/兵法500・成長+30/+35/+2.5)は、隣の2548佐竹義宣の値と完全に一致しており、ixanary側のデータ登録ミス(前カードの値の使い回し)の疑いが強い。ixawiki.com(BushoCard/2549龍造寺隆信)はコスト2.0・指揮2560・初期値970/1010/500・成長+26/+32/+2.5で、2548とは異なる固有の値を示している。両ソースが食い違うため、cost/lv0Troops/atkBase/atkGrowth/defBase/defGrowthは全てnullにした。兵法初期値500・兵法成長値2.5はたまたま両ソースで一致したため採用した。",
+  "統率も同様に食い違う。ixanary: 槍A・弓A・馬A・器A(これも2548と同一値)。ixawiki: 槍B・弓A・馬A・器S。rankGradesは全体をnullにした。",
+  "スキル「覇・熊王無双」自体の値(名前・LV1確率+12%/防御46%上昇/自拠点防御時100%発動)はixanaryとixawikiで完全一致しており、スキル固有ページの情報は汚染されていないと判断した。LV10値(確率+21%/防御82%上昇)はixanary.comのLV1/LV10表記から採用し、条件文言(自拠点防御時100%発動)はixawiki.comの基本ステータス表(LV1相当)とixanaryのLV1/LV10両方で共通のため採用した。絵師「株式会社レバーン＋しいたけ」も両ソース一致。",
+  "章はixanary.com・ixawiki.comのカードページに記載が無いためnull。"
+ ]
+}

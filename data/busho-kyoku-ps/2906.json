@@ -1,0 +1,41 @@
+{
+ "name": "お市",
+ "no": "2906",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "全防",
+ "sub": "",
+ "effect": "防御 40%上昇(攻撃部隊に馬兵科がいる時のみ発動)",
+ "furigana": "おいち",
+ "illustrator": "正子公也",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 520,
+ "atkGrowth": 16,
+ "defBase": 600,
+ "defGrowth": 18,
+ "tacticsBase": 540,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 2650,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "B",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "冥界の花嫁",
+ "skillDetail": "A/LV10 確率 35% 防御 40%上昇/対象:全\n①防御が40%上昇する(攻撃部隊に馬兵科がいる時のみ発動)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 35% / 防御 40%上昇(攻撃部隊に馬兵科がいる時のみ発動)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "カード画像が無いため ixanary.com/cards/2906 と ixawiki.com(BushoCard/2906お市)の生HTML2ソースで確認した。",
+  "基礎値520/600/540・成長16/18/2.5・コスト2.5・指揮兵数2650(★0-0)・統率(槍B/弓B/馬A/器A)はixanary.comとixawiki.comの2ソースで完全一致。",
+  "初期スキル冥界の花嫁(A)はdata/skill/冥界の花嫁.json(既存)のeffectSummary「A/LV10 確率 35% 防御 40%上昇/対象:全 ①防御が40%上昇する(攻撃部隊に馬兵科がいる時のみ発動)」と完全一致することを確認し同じ書式で登録した。"
+ ]
+}
