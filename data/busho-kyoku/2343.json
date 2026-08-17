@@ -1,0 +1,41 @@
+{
+ "name": "唐梅院",
+ "no": "2343",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "槍弓器焙防速",
+ "sub": "",
+ "effect": "防御 120%上昇+速度 40%上昇(加勢出陣時は速度効果3倍)",
+ "furigana": "とうばいいん",
+ "illustrator": "ツヤイルカ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1060,
+ "atkGrowth": 34,
+ "defBase": 1100,
+ "defGrowth": 41,
+ "tacticsBase": 520,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3700,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "雪花ノ壮姫",
+ "skillDetail": "A/LV10 確率 50%/100% 防御 120%上昇+速度 40%上昇/対象:槍・弓・器・焙\n①確率 50% 防御 120%上昇する\n②確率 100% 速度 40%上昇する(加勢出陣時は速度効果3倍)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・弓・器・焙　確率 50%/100% / 防御 120%上昇+速度 40%上昇(加勢出陣時は速度効果3倍)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当J・第2波・カード画像なし)。ixanary.com(cards/2343)生HTMLとixawiki.com(index.php?BushoCard/2343唐梅院、およびBusho/武将カード一覧(極))の2ソースでコスト/指揮兵数/統率ランク/攻撃防御兵法の初期値成長値/スキル効果(LV1・LV10)が完全一致することを確認して登録した。",
+  "防御と速度で発動確率が別々(50%/100%)の2段構成スキルのため、既存の類似書式(busho/1121等)に合わせてskillDetailヘッダーに両確率を併記した。",
+  "ixanaryのカードデータには部隊スキル「防:戦姫艶舞」の記載があるが、本サイトのschemaに部隊スキル欄が無いため未収録(既存カードの登録方針に合わせた)。"
+ ]
+}

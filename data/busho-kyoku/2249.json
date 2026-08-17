@@ -1,0 +1,39 @@
+{
+ "name": "春日局（2）",
+ "no": "2249",
+ "ch": null,
+ "cost": 2,
+ "troop": "槍器鉄攻防",
+ "sub": "",
+ "effect": "槍・器・鉄兵の攻撃・防御力上昇(姫限定)",
+ "furigana": "かすがのつぼね",
+ "illustrator": "影井由宇",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 990,
+ "atkGrowth": 29,
+ "defBase": 990,
+ "defGrowth": 29,
+ "tacticsBase": 480,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 2490,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "B",
+  "uma": "B",
+  "ki": "A"
+ },
+ "initialSkill": "足鼎賢女",
+ "skillDetail": "B/LV10 確率 38% 攻撃 74%上昇+防御 74%上昇/対象:槍・器・鉄\n職業「姫」の武将が対象\n①攻撃 74%上昇する\n②防御 74%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・器・鉄　確率 38% / 攻撃 74%上昇+防御 74%上昇(姫限定)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-17登録(担当F)。カード画像が無いためixanary.com(cards/2249)とixawiki.com(index.php?BushoCard/2249春日局)の生HTML突き合わせのみで登録した。"
+ ]
+}

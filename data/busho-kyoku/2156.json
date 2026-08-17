@@ -1,0 +1,39 @@
+{
+ "name": "慶誾尼",
+ "no": "2156",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "全防",
+ "sub": "",
+ "effect": "「将」職の武将の防御力上昇",
+ "furigana": "けいぎんに",
+ "illustrator": "碧風羽",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 700,
+ "atkGrowth": 18,
+ "defBase": 730,
+ "defGrowth": 19,
+ "tacticsBase": 450.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 2700,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "B"
+ },
+ "initialSkill": "士気鼓舞",
+ "skillDetail": "B/LV10 確率 100% 防御 20%上昇/対象:全\n①防御 20%上昇する(職業「将」の武将に対してのみ効果)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 防御 20%上昇(職業「将」の武将に対してのみ効果)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "カード画像が無いためimageFull/imageChar は null。名前の「誾」の字はEUC-JP(JIS X 0208)の範囲外でixawikiの該当ページ名を正しくURLエンコードできず、BushoCard/2156慶誾尼のページ自体が存在しなかった(編集画面へのリダイレクトを確認)。そのためixanary.com(cards/2156)単独ソースでの登録である。攻撃・防御初期値が別値(700/730)のため既知の防御バグには該当しない。"
+ ]
+}

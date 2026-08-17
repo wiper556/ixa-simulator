@@ -1,0 +1,40 @@
+{
+ "name": "結城秀康（3）",
+ "no": "2349",
+ "ch": null,
+ "cost": 4,
+ "troop": "槍馬鉄騎攻",
+ "sub": "飛翔6",
+ "effect": "攻撃 120%上昇(飛翔6・所属部隊の飛翔値合計×5%を加算)",
+ "furigana": "ゆうきひでやす",
+ "illustrator": "添田一平",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1110,
+ "atkGrowth": 45,
+ "defBase": 1040,
+ "defGrowth": 33,
+ "tacticsBase": 530,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3930,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "B",
+  "uma": "S",
+  "ki": "A"
+ },
+ "initialSkill": "天性武人",
+ "skillDetail": "A/LV10 確率 50% 攻撃 120%上昇/対象:槍・馬・鉄・騎　飛翔6\n①攻撃 120%上昇する\n②飛翔6を持つ\n③所属部隊の武将が戦闘時にもつ飛翔値の合計×5%を攻撃効果に加算する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・馬・鉄・騎 飛翔6　確率 50% / 攻撃 120%上昇(所属部隊の飛翔値合計×5%を加算)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当J・第2波・カード画像なし)。ixanary.com(cards/2349)生HTMLとixawiki.com(index.php?BushoCard/2349結城秀康、およびBusho/武将カード一覧(極))の2ソースでコスト/指揮兵数/統率ランク/攻撃防御兵法の初期値成長値/スキル効果(LV1・LV10)が完全一致することを確認して登録した。",
+  "名前の（3）はixawiki武将カード一覧(極)の表記「結城秀康(3)」に従った。"
+ ]
+}

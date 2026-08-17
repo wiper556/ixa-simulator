@@ -1,0 +1,29 @@
+{
+ "name": "清水政勝",
+ "no": "2228",
+ "ch": null,
+ "cost": 3,
+ "troop": "馬騎攻破",
+ "sub": "",
+ "effect": "攻撃 (18+コスト×12)%上昇+破壊 43%上昇",
+ "furigana": "しみずまさかつ",
+ "illustrator": "三好載克",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1000, "atkGrowth": 27,
+ "defBase": 960, "defGrowth": 24,
+ "tacticsBase": 470, "tacticsGrowth": 2,
+ "lv0Troops": 3200,
+ "rankGrades": {"yari": "A", "yumi": "B", "uma": "S", "ki": "A"},
+ "initialSkill": "旋風剛撃",
+ "skillDetail": "B/LV10 確率 25% 攻撃 (18+コスト×12)%上昇+破壊 43%上昇/対象:馬・騎\n①攻撃 (18+コスト×12)%上昇する\n②破壊 43%上昇する\n③武将のコストで攻撃効果が変化する",
+ "trTable": [
+  {"level": "LV10", "points": "-", "effect": "馬・騎　確率 25% / 攻撃 (18+コスト×12)%上昇+破壊 43%上昇(武将のコストで攻撃効果が変化)"}
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録。カード画像が無いためixanary.com(cards/2228)とixawiki.com(BushoCard/2228清水政勝)の一致のみで入れた。",
+  "基礎値・成長値・コスト・指揮兵数・統率(槍A弓B馬S器A)は両ソース一致。",
+  "初期スキル「旋風剛撃」[B]はLV10確率25%・対象馬・騎(ixanaryのtitle表記は「馬騎」でixawiki側も「馬/騎」表記・両ソース一致)。攻撃は(18+コスト×12)%上昇の式で表示されるためそのまま記載(このカードのコスト3なら54%相当)。"
+ ]
+}

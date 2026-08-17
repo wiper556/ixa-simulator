@@ -1,0 +1,39 @@
+{
+ "name": "松前慶広",
+ "no": "2330",
+ "ch": null,
+ "cost": 4,
+ "troop": "槍弓砲攻",
+ "sub": "",
+ "effect": "攻撃 140%上昇(対人攻撃勝利時名声20回復)",
+ "furigana": "まつまえよしひろ",
+ "illustrator": "JaneMere",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1090,
+ "atkGrowth": 40,
+ "defBase": 1060,
+ "defGrowth": 34,
+ "tacticsBase": 510,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3890,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "オプクワ",
+ "skillDetail": "A/LV10 確率 55% 攻撃 140%上昇/対象:槍・弓・砲\n模倣不可・特殊効果は部隊内重複不可\n①攻撃 140%上昇する\n②対人での攻撃戦闘に勝利時名声を20回復する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・弓・砲　確率 55% / 攻撃 140%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当J・第2波・カード画像なし)。ixanary.com(cards/2330)生HTMLとixawiki.com(index.php?BushoCard/2330松前慶広、およびBusho/武将カード一覧(極))の2ソースでコスト/指揮兵数/統率ランク/攻撃防御兵法の初期値成長値/スキル効果(LV1・LV10)が完全一致することを確認して登録した。"
+ ]
+}

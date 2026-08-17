@@ -1,0 +1,39 @@
+{
+ "name": "細川忠興",
+ "no": "2158",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "槍弓攻",
+ "sub": "",
+ "effect": "槍・弓部隊の攻撃力上昇(武将ランクで変動)",
+ "furigana": "ほそかわただおき",
+ "illustrator": "小森ニコ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 750,
+ "atkGrowth": 22,
+ "defBase": 700,
+ "defGrowth": 18,
+ "tacticsBase": 470.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 3320,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "S",
+  "uma": "B",
+  "ki": "B"
+ },
+ "initialSkill": "魔王ノ片鱗",
+ "skillDetail": "B/LV10 確率 26% 攻撃 46%上昇/対象:槍・弓\n①攻撃 46%上昇する(武将ランクで変動)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・弓　確率 26% / 攻撃 46%上昇(武将ランクで変動)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "カード画像が無いためimageFull/imageChar は null。ixanary.com(cards/2158)とixawiki.com(BushoCard/2158細川忠興)を突き合わせて登録した。基本ステータス・ランクは一致。確率(両ソースとも+9%/LV1)は一致したが攻撃上昇率はixanaryのLV1=26%に対しixawiki記載値=14%と差があり、これはスキル自体に武将ランクで効果が変動する仕様があるため異なる基準ランクの値を示していると判断し、skillDetailはixanaryのLV10値(46%)を採用した。"
+ ]
+}

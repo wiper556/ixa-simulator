@@ -1,0 +1,43 @@
+{
+ "name": "斎藤利三",
+ "no": "2214",
+ "ch": null,
+ "cost": 3,
+ "troop": "弓馬器攻速",
+ "sub": "",
+ "effect": "攻撃 56%上昇+速度 30%上昇",
+ "furigana": "さいとうとしみつ",
+ "illustrator": "安里",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 980,
+ "atkGrowth": 27,
+ "defBase": 960,
+ "defGrowth": 26,
+ "tacticsBase": 500,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 3190,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "S",
+  "ki": "A"
+ },
+ "initialSkill": "吉凶禍福",
+ "skillDetail": "B/LV10 対象:弓・馬・器\n①確率40%で攻撃 56%上昇する\n②確率100%で速度 30%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓・馬・器　確率 40% / 攻撃 56%上昇+確率 100% / 速度 30%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当D)。カード画像が無いためixanary.com(cards/2214)とixawiki.com(index.php?BushoCard/2214斎藤利三)の生HTML突き合わせのみで登録した。",
+  "コスト3・指揮兵数3190・攻撃力980(+27)・防御力960(+26)・兵法500(+2.0)・イラストレーター安里・スキルLV1/LV10の数値は両ソースで完全一致。",
+  "攻撃と速度で発動確率が異なる複合スキル(busho-kyoku/2119.json形式に準拠)。ixanaryのLV10確率表記には「+100l%」という明らかな誤植(l混入)があったため100%として扱った(LV1側は+100%と正しく表記・ixawikiも+100%で一致)。",
+  "rankGrades(槍A/弓A/馬S/器A)はixawikiのみ出典(ixanaryにテキスト情報無し)。",
+  "章(ch)は両ソースに記載が無く未確認のためnull。"
+ ]
+}

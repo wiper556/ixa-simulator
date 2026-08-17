@@ -1,0 +1,40 @@
+{
+ "name": "母里太兵衛（2）",
+ "no": "2307",
+ "ch": null,
+ "cost": 4,
+ "troop": "槍弓馬器攻",
+ "sub": "",
+ "effect": "攻撃 (2.1×防御参加武将数)%上昇",
+ "furigana": "もりたへえ",
+ "illustrator": "ジョージ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1000,
+ "atkGrowth": 34,
+ "defBase": 940,
+ "defGrowth": 32,
+ "tacticsBase": 490,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3840,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "S",
+  "uma": "B",
+  "ki": "A"
+ },
+ "initialSkill": "呑取り日本号",
+ "skillDetail": "A/LV10 確率 100% 攻撃 (2.1×防御参加武将数)%上昇/対象:槍・弓・馬・器\n①攻撃を係数(LV10=2.1)×防御参加武将数で上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・弓・馬・器　確率 100% / 攻撃 2.1%×防御参加武将数(280人)=588.0%"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当H)。カード画像が無いためixanary.com(cards/2307)生HTMLとixawiki.com(index.php?BushoCard/2307母里太兵衛)の基本ステータス表・スキル表を突き合わせて完全一致を確認して登録した。名前の（2）はixawikiの武将カード一覧の表記に従った。",
+  "2026-08-16: trTableの「(X×防御参加武将数)%上昇」を、サイトの既存の書き方(防御参加武将数=280人での計算値を併記)に揃えた。skillDetailは式のまま残してある。"
+ ]
+}

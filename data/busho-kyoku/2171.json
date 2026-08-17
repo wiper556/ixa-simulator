@@ -1,0 +1,40 @@
+{
+ "name": "玉鶴姫",
+ "no": "2171",
+ "ch": null,
+ "cost": 2,
+ "troop": "弓馬砲防",
+ "sub": "",
+ "effect": "防御 36%上昇(自領以外の加勢限定)",
+ "furigana": "たまつるひめ",
+ "illustrator": "cuboon",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 500,
+ "atkGrowth": 15,
+ "defBase": 800,
+ "defGrowth": 20,
+ "tacticsBase": 450,
+ "tacticsGrowth": 2,
+ "lv0Troops": 2350,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "悲恋の懐剣",
+ "skillDetail": "B/LV10 確率 100% 防御 36%上昇/対象:弓・馬・砲\n①自領以外への加勢戦闘時のみ防御が36%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓・馬・砲　確率 100% / 防御 36%上昇(自領以外の加勢限定)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当B)。カード画像が無いため imageFull/imageChar は null。ixanary.com(cards/2171)の埋め込みJSONとixawiki.com(index.php?BushoCard/2171玉鶴姫)の生HTMLで、コスト/指揮兵数/攻撃防御兵法の初期値成長値/兵科ランク(槍B弓A馬A器S)/イラストレーター(cuboon)/スキルLV1数値(確率+100%/防御9%上昇/自領以外の加勢限定)が完全一致することを確認して登録した。LV10の数値(確率100%/防御36%上昇)はixanaryのカードページに明記。",
+  "章(ch)は両ソースとも記載が無いため未確認。synthesisTableは今回付けていない。"
+ ]
+}

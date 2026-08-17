@@ -1,0 +1,41 @@
+{
+ "name": "浅野長政",
+ "no": "2190",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "弓馬砲攻防",
+ "sub": "",
+ "effect": "対象兵科の攻撃と防御が上昇(武将ランクとコストで変動)",
+ "furigana": "あさのながまさ",
+ "illustrator": "BISAI",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 940,
+ "atkGrowth": 24,
+ "defBase": 940,
+ "defGrowth": 24,
+ "tacticsBase": 480.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3300,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "A",
+  "uma": "S",
+  "ki": "A"
+ },
+ "initialSkill": "質実剛健",
+ "skillDetail": "B/LV10 確率 27% 攻撃防御 (1+武将ランク)×武将コスト×1.9%上昇/対象:弓・馬・砲\n①攻撃 (1+武将ランク)×武将コスト×1.9%上昇する(武将ランクとコストで変化)\n②防御 (1+武将ランク)×武将コスト×1.9%上昇する(武将ランクとコストで変化)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓・馬・砲　確率 27% / 攻撃防御 (1+武将ランク)×武将コスト×1.9%上昇(武将ランクとコストで変化)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-17登録。カード画像が無いためixanary.com(cards/2190)生HTMLとixawiki.com(index.php?BushoCard/2190浅野長政)の2ソースで基本ステータス(コスト・指揮兵数・統率槍弓馬器・攻撃/防御/兵法の初期値と成長値・illustrator)が完全一致することを確認して登録した。",
+  "スキル「質実剛健」(B)は武将ランクと武将コストで変動する数式スキル(ixanary.comではLV1係数×1・LV10係数×1.9)で固定%が出ないため、式のまま登録した。この式・係数1.9はサイト内の既存データ(data/busho-kyoku-ps/2751.json等のsynthesisTableに同一スキル・確率27%で記載)とも一致し裏取りできた。",
+  "ixawiki.comのスキル欄は基準値(ランク0)での参考値(弓馬砲攻3.5%上昇/弓馬砲防3.5%上昇、確率+10%=LV1相当)のみでLV10欄は無いため、LV1部分の式(係数×1)同士は整合を確認できたがLV10係数(1.9)はixanary.com単独ソース。"
+ ]
+}

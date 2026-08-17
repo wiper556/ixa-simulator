@@ -1,0 +1,39 @@
+{
+ "name": "木村重成（2）",
+ "no": "2254",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "槍弓焙攻速",
+ "sub": "",
+ "effect": "槍・弓・焙兵の攻撃・速度上昇",
+ "furigana": "きむらしげなり",
+ "illustrator": "ツヤイルカ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1000,
+ "atkGrowth": 30,
+ "defBase": 970,
+ "defGrowth": 28,
+ "tacticsBase": 480,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3490,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "S",
+  "uma": "B",
+  "ki": "B"
+ },
+ "initialSkill": "古ノ美将",
+ "skillDetail": "B/LV10 確率 47%/100% 攻撃 64%上昇+速度 40%上昇/対象:槍・弓・焙\n①確率 47% 攻撃 64%上昇する\n②確率 100% 速度 40%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・弓・焙　確率 47%/100% / 攻撃 64%上昇+速度 40%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-17登録(担当F)。カード画像が無いためixanary.com(cards/2254)とixawiki.com(index.php?BushoCard/2254木村重成)の生HTML突き合わせのみで登録した。"
+ ]
+}

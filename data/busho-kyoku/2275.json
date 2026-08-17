@@ -1,0 +1,41 @@
+{
+ "name": "甘粕景持",
+ "no": "2275",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "弓砲器防",
+ "sub": "卓越",
+ "effect": "防御 64%上昇(卓越:1.5倍)",
+ "furigana": "あまかすかげもち",
+ "illustrator": "鏑木康隆",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 950,
+ "atkGrowth": 21,
+ "defBase": 1000,
+ "defGrowth": null,
+ "tacticsBase": 470,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3520,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "S",
+  "uma": "B",
+  "ki": "A"
+ },
+ "initialSkill": "不識ノ殿軍",
+ "skillDetail": "B/LV10 確率 70% 防御 64%上昇/対象:弓・砲・器　卓越\n①防御 64%上昇する\n②卓越:追加確率30%で防御効果が1.5倍になる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓・砲・器 卓越　確率 70% / 防御 64%上昇(卓越追加確率30%で防御効果1.5倍)"
+  }
+ ],
+ "notes": [
+  "2026-08-18登録(担当G)。カード画像が無いためixanary.com(cards/2275)生HTMLとixawiki.com(index.php?BushoCard/2275甘粕景持)生HTMLの2ソースを突き合わせて登録した。",
+  "防御成長値がixanaryは33・ixawikiは34で食い違ったためdefGrowthはnullにした。攻撃初期値950・防御初期値1000・攻撃成長値21・兵法490/2.5・cost3.5・lv0Troops3520・rankGrades(槍A/弓S/馬B/器A)・illustrator鏑木康隆は両ソースで完全一致。",
+  "スキル「不識ノ殿軍」LV10(確率70%・防御64%上昇・卓越:追加確率30%で防御効果1.5倍)は両ソース一致。"
+ ],
+ "reviewedOk": false
+}

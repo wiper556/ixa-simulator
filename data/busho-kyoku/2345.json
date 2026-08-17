@@ -1,0 +1,40 @@
+{
+ "name": "龍勝院",
+ "no": "2345",
+ "ch": null,
+ "cost": 3,
+ "troop": "馬砲器攻防",
+ "sub": "",
+ "effect": "攻撃 155%上昇+防御 155%上昇(部隊内武将の卓越追加確率+15%)",
+ "furigana": "りゅうしょういん",
+ "illustrator": "hakus",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1050,
+ "atkGrowth": 36,
+ "defBase": 1050,
+ "defGrowth": 36,
+ "tacticsBase": 510,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3360,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "A",
+  "uma": "S",
+  "ki": "A"
+ },
+ "initialSkill": "虎王母",
+ "skillDetail": "A/LV10 確率 100% 攻撃 155%上昇+防御 155%上昇/対象:馬・砲・器\n模倣不可・特殊効果は自部隊内では重複不可\n①攻撃 155%上昇する\n②防御 155%上昇する\n③部隊内武将の全スキルの卓越追加確率が15%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "馬・砲・器　確率 100% / 攻撃 155%上昇+防御 155%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当J・第2波・カード画像なし)。ixanary.com(cards/2345)生HTMLとixawiki.com(index.php?BushoCard/2345龍勝院、およびBusho/武将カード一覧(極))の2ソースでコスト/指揮兵数/統率ランク/攻撃防御兵法の初期値成長値/スキル効果(LV1・LV10)が完全一致することを確認して登録した。",
+  "攻撃初期値・防御初期値・成長値がいずれも1050/36と同値だが、ixanaryとixawikiが独立に同じ値を出しており攻防同値バグの疑いは無い。"
+ ]
+}

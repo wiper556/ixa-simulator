@@ -1,0 +1,40 @@
+{
+ "name": "深水長智",
+ "no": "2192",
+ "ch": null,
+ "cost": 3,
+ "troop": "槍弓馬攻",
+ "sub": "",
+ "effect": "攻撃 38%上昇(武将ランクで変動)",
+ "furigana": "ふかみながとも",
+ "illustrator": "戸橋ことみ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 950,
+ "atkGrowth": 26,
+ "defBase": 890,
+ "defGrowth": 22,
+ "tacticsBase": 490.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3130,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "B"
+ },
+ "initialSkill": "神歌の才",
+ "skillDetail": "B/LV10 確率 37% 攻撃 38%上昇/対象:槍・弓・馬\n①攻撃 38%上昇する(武将ランクで変化)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・弓・馬　確率 37% / 攻撃 38%上昇(武将ランクで変動)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-17登録。カード画像が無いためixanary.com(cards/2192)生HTMLとixawiki.com(index.php?BushoCard/2192深水長智)の2ソースで基本ステータス(コスト・指揮兵数・統率槍弓馬器・攻撃/防御/兵法の初期値と成長値・illustrator)が完全一致することを確認して登録した。",
+  "スキル数値(LV10確率37%/攻撃38%上昇/対象槍弓馬)はixanary.comのLV10欄から採用。ixawiki.comはLV1相当(確率10%/攻撃7%上昇)のみ掲載でLV10欄が無く、LV1部分同士は一致した(矛盾ではなく情報量の差)。"
+ ]
+}

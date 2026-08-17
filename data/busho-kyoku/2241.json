@@ -1,0 +1,29 @@
+{
+ "name": "れんみつ",
+ "no": "2241",
+ "ch": null,
+ "cost": 3,
+ "troop": "弓器焙防",
+ "sub": "",
+ "effect": "防御 (コスト×15)%上昇",
+ "furigana": "れんみつ",
+ "illustrator": "JUNNY",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 970, "atkGrowth": 25,
+ "defBase": 1000, "defGrowth": 29,
+ "tacticsBase": 480, "tacticsGrowth": 2.5,
+ "lv0Troops": 3180,
+ "rankGrades": {"yari": "B", "yumi": "S", "uma": "B", "ki": "A"},
+ "initialSkill": "煉獄ノ盟約",
+ "skillDetail": "B/LV10 確率 42% 防御 (コスト×15)%上昇/対象:弓・器・焙\n①防御 (コスト×15)%上昇する\n②武将のコストで効果が変化する",
+ "trTable": [
+  {"level": "LV10", "points": "-", "effect": "弓・器・焙　確率 42% / 防御 (コスト×15)%上昇(武将のコストで効果が変化)"}
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録。カード画像が無いためixanary.com(cards/2241)とixawiki.com(BushoCard/2241れんみつ)の一致のみで入れた。",
+  "基礎値・成長値・コスト・指揮兵数・統率(槍B弓S馬B器A)は両ソース一致。",
+  "初期スキル「煉獄ノ盟約」[B]はLV10確率42%・対象弓・器・焙。防御は(コスト×15)%上昇の式で両ソースとも表示され(このカードのコスト3なら45%相当)、両ソース一致。"
+ ]
+}

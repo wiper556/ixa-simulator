@@ -1,0 +1,40 @@
+{
+ "name": "支倉常長",
+ "no": "2335",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "全防",
+ "sub": "",
+ "effect": "防御 45%上昇(卓越:追加確率30%で防御効果4倍)",
+ "furigana": "はせくらつねなが",
+ "illustrator": "BISAI",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1050,
+ "atkGrowth": 35,
+ "defBase": 1090,
+ "defGrowth": 40,
+ "tacticsBase": 520,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3690,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "聖ヨハネの導き",
+ "skillDetail": "A/LV10 確率 50% 防御 45%上昇/対象:全　卓越\n①防御 45%上昇する\n②卓越:追加確率30%で防御効果が4倍になる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 50% / 防御 45%上昇(卓越:追加確率30%で4倍)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当J・第2波・カード画像なし)。ixanary.com(cards/2335)生HTMLとixawiki.com(index.php?BushoCard/2335支倉常長、およびBusho/武将カード一覧(極))の2ソースでコスト/指揮兵数/統率ランク/攻撃防御兵法の初期値成長値/スキル効果(LV1・LV10)が完全一致することを確認して登録した。",
+  "ixanaryのカードデータには部隊スキル「攻破:主への祈り」の記載があるが、本サイトのschemaに部隊スキル欄が無いため未収録(既存カードの登録方針に合わせた)。"
+ ]
+}

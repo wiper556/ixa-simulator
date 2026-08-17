@@ -1,0 +1,43 @@
+{
+ "name": "長尾政景",
+ "no": "2222",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "槍馬器攻",
+ "sub": "",
+ "effect": "攻撃 40%上昇(武将ランクで効果が変化)",
+ "furigana": "ながおまさかげ",
+ "illustrator": "Natto-7",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1000,
+ "atkGrowth": 27,
+ "defBase": 960,
+ "defGrowth": 26,
+ "tacticsBase": 490,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3450,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "B",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "双刃九龍",
+ "skillDetail": "B/LV10 確率 42% 攻撃 40%上昇/対象:槍・馬・器\n①攻撃 40%上昇する(武将ランクで効果が変化)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・馬・器　確率 42% / 攻撃 40%上昇(武将ランクで効果が変化)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当D)。カード画像が無いためixanary.com(cards/2222)とixawiki.com(index.php?BushoCard/2222長尾政景)の生HTML突き合わせのみで登録した。",
+  "コスト3.5・指揮兵数3450・攻撃力1000(+27)・防御力960(+26)・兵法490(+2.5)・イラストレーターNatto-7・スキルLV1/LV10の数値(2%→40%・確率+15%→+42%)は両ソースで完全一致。",
+  "「武将ランクで効果が変化」とだけ注記されており、2220/2224のような具体的な計算式(コスト等)は両ソースとも提示していないため、数値をそのまま記載し式化はしていない。",
+  "rankGrades(槍S/弓B/馬A/器A)はixawikiのみ出典(ixanaryにテキスト情報無し)。",
+  "章(ch)は両ソースに記載が無く未確認のためnull。"
+ ]
+}

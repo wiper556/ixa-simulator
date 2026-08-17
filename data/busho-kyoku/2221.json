@@ -1,0 +1,43 @@
+{
+ "name": "煕子",
+ "no": "2221",
+ "ch": null,
+ "cost": 3,
+ "troop": "弓馬器防",
+ "sub": "",
+ "effect": "防御 57%上昇",
+ "furigana": "ひろこ",
+ "illustrator": "小森ニコ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 980,
+ "atkGrowth": 27,
+ "defBase": 980,
+ "defGrowth": 27,
+ "tacticsBase": 500,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 3180,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "S",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "白夜ノ才姫",
+ "skillDetail": "B/LV10 確率 35% 防御 57%上昇/対象:弓・馬・器\n①防御 57%上昇する\n②他城主の拠点に加勢中にも部隊の兵士編成を行える",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓・馬・器　確率 35% / 防御 57%上昇(他城主の拠点への加勢中も部隊の兵士編成が可能)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当D)。カード画像が無いためixanary.com(cards/2221)とixawiki.com(index.php?BushoCard/2221煕子)の生HTML突き合わせのみで登録した。",
+  "コスト3・指揮兵数3180・攻撃力980(+27)・防御力980(+27、両ソース独立に同値のため攻防同値カードと判断し疑わない)・兵法500(+2.0)・イラストレーター小森ニコ・スキルLV1/LV10の数値は両ソースで完全一致。",
+  "本スキルは兵站(部隊編成関連の特殊効果)に分類されうるが、categoryLinks付与は担当範囲外のため見送り、申し送り事項とする。",
+  "rankGrades(槍B/弓S/馬A/器A)はixawikiのみ出典(ixanaryにテキスト情報無し)。",
+  "章(ch)は両ソースに記載が無く未確認のためnull。"
+ ]
+}

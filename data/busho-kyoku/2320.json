@@ -1,0 +1,43 @@
+{
+ "name": "寿桂尼（2）",
+ "no": "2320",
+ "ch": null,
+ "cost": 4,
+ "troop": "部隊長特",
+ "sub": "",
+ "effect": "部隊長の初期スキルを模倣(卓越で1.2倍)",
+ "furigana": "じゅけいに",
+ "illustrator": "綾乙",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1100,
+ "atkGrowth": 36,
+ "defBase": 1100,
+ "defGrowth": 36,
+ "tacticsBase": 520,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3880,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "乱世ノ歸人",
+ "skillDetail": "A/LV10 確率 50% 対象:部隊長\n①部隊長の持つ模倣可能な初期スキルを模倣する\n②卓越:追加確率30%で通常攻撃/防御効果を1.2倍にして模倣する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "部隊長　確率 50% / 効果 部隊長の初期スキルを模倣(卓越:追加確率30%で1.2倍)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(カード画像なし・第2波)。ixanary.com(cards/2320)生HTMLの埋め込みJSON(ふりがな・イラストレーター・cost・指揮兵数・統率力・攻防兵法初期値/成長値・スキル名/確率/効果)とixawiki.com(BushoCard/2320寿桂尼)の基本ステータス表・スキル追加表を突き合わせ、両ソース完全一致(食い違いなし)を確認して登録した。imageFull/imageChar/rankGradesの根拠はカード画像でなく2ソース一致による。",
+  "初期スキル「乱世ノ歸人」は既にdata/skill/乱世ノ歸人.json(sourceCharacters伊達成実（3）等)が存在したため、そのeffectSummary/効果表記をそのまま踏襲した(内容は本カードのixanary/ixawiki突き合わせ結果と完全一致)。",
+  "章(ch)は情報源(ixanary.com/ixawiki.com)に記載が無く未確認のためnullとした。"
+ ],
+ "wikiOldestComment": "2022-05-07",
+ "wikiCommentCount": 122
+}

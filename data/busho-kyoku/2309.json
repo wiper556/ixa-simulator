@@ -1,0 +1,43 @@
+{
+ "name": "内藤昌豊（2）",
+ "no": "2309",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "槍器鉄攻防",
+ "sub": "",
+ "effect": "対象兵科の攻撃・防御が上昇+部隊内の同名スキル数に応じて効果増加",
+ "furigana": "ないとうまさとよ",
+ "illustrator": "鏑木康隆",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1020,
+ "atkGrowth": 36,
+ "defBase": 1020,
+ "defGrowth": 36,
+ "tacticsBase": 490,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3590,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "B",
+  "ki": "A"
+ },
+ "initialSkill": "闘将ノ采配",
+ "skillDetail": "A/LV10 確率 45% 攻撃 75%上昇/対象:槍・器・鉄\n①攻撃 75%上昇する\n②防御 75%上昇する\n③部隊内の「闘将ノ采配」スキル数×15%を攻防効果に加算する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・器・鉄　確率 45% / 攻撃 75%上昇+防御 75%上昇(部隊内の「闘将ノ采配」スキル数×15%を攻防効果に加算)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(カード画像なし・第2波)。ixanary.com(cards/2309)生HTMLの埋め込みJSON(ふりがな・イラストレーター・cost・指揮兵数・統率力・攻防兵法初期値/成長値・スキル名/確率/効果)とixawiki.com(BushoCard/2309内藤昌豊)の基本ステータス表・スキル追加表を突き合わせ、両ソース完全一致(食い違いなし)を確認して登録した。imageFull/imageChar/rankGradesの根拠はカード画像でなく2ソース一致による。",
+  "ixanaryのカード名表記は「内藤正豊」だったが、ixawiki(Busho/武将カード一覧・BushoCard/2309内藤昌豊)は「内藤昌豊」で一致せず、ふりがな(ないとうまさとよ)・スキル・ステータス等の他項目は完全一致することから人名表記のみixanary側の誤記と判断しixawiki側(assign_I.txtの表記とも一致)を採用した。",
+  "章(ch)は情報源(ixanary.com/ixawiki.com)に記載が無く未確認のためnullとした。"
+ ],
+ "wikiOldestComment": "2021-11-04",
+ "wikiCommentCount": 15
+}

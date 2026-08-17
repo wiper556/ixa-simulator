@@ -1,0 +1,41 @@
+{
+ "name": "朝比奈泰朝",
+ "no": "2162",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "槍弓馬防",
+ "sub": "",
+ "effect": "槍・弓・馬部隊の防御力上昇(武将ランクで変動)",
+ "furigana": "あさひなやすとも",
+ "illustrator": "BISAI",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 850,
+ "atkGrowth": 20,
+ "defBase": 950,
+ "defGrowth": 21,
+ "tacticsBase": 470.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 3340,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "S",
+  "uma": "A",
+  "ki": "B"
+ },
+ "initialSkill": "暁",
+ "skillDetail": "B/LV10 確率 40% 防御 28%上昇/対象:槍・弓・馬\n①防御 28%上昇する(武将ランクで変動・自領以外の加勢で効果2倍)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・弓・馬　確率 40% / 防御 28%上昇(武将ランクで変動・自領以外の加勢で効果2倍)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "カード画像が無いためimageFull/imageChar は null。ixanary.com(cards/2162)とixawiki.com(BushoCard/2162朝比奈泰朝)を突き合わせて登録した。基本ステータス・ランクは一致。",
+  "対象兵科がLV1(弓馬)からLV10(槍弓馬)で「槍」が追加される仕様だったためtroop/trTableはLV10基準の槍弓馬とした。",
+  "ixanaryのLV10スキルパネル生HTMLで確率の文字列に「確率鳰の払：+40%」という余分な文字(鳰の払)が混入していたため、数値40%のみを採用しラベル文字列は正規化して登録した。"
+ ]
+}

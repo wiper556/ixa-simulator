@@ -1,0 +1,41 @@
+{
+ "name": "佐久間盛政",
+ "no": "2277",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "槍砲器防速",
+ "sub": "",
+ "effect": "防御 70%上昇+速度 50%上昇",
+ "furigana": "さくまもりまさ",
+ "illustrator": "オンダカツキ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 970,
+ "atkGrowth": 30,
+ "defBase": 990,
+ "defGrowth": 33,
+ "tacticsBase": 470,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 3530,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "B",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "鬼門ノ憤将",
+ "skillDetail": "B/LV10 対象:槍・砲・器\n①確率52%で防御 70%上昇する\n②確率100%で速度 50%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・砲・器　確率 52% / 防御 70%上昇+確率 100% / 速度 50%上昇"
+  }
+ ],
+ "notes": [
+  "2026-08-18登録(担当G)。カード画像が無いためixanary.com(cards/2277)生HTMLとixawiki.com(index.php?BushoCard/2277佐久間盛政)生HTMLの2ソースを突き合わせて登録した。",
+  "ステータス初期値970/990/470・成長値30/33/2.0・cost3.5・lv0Troops3530・rankGrades(槍A/弓B/馬A/器S)・illustratorオンダカツキは両ソースで完全一致。",
+  "スキル「鬼門ノ憤将」は防御(確率52%で70%上昇)と速度(確率100%で50%上昇)で発動確率が異なる二重確率スキル。ixawikiにLV1/LV10両方の記載があり、ixanaryのLV10欄と完全一致した。"
+ ],
+ "reviewedOk": false
+}

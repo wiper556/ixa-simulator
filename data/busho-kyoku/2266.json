@@ -1,0 +1,39 @@
+{
+ "name": "斎藤朝信（2）",
+ "no": "2266",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "槍馬器攻",
+ "sub": "",
+ "effect": "槍・馬・器兵の攻撃力上昇(武将のコストで効果が変化)",
+ "furigana": "さいとうとものぶ",
+ "illustrator": "タカハシタクヤ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1050,
+ "atkGrowth": 38,
+ "defBase": 1000,
+ "defGrowth": 26,
+ "tacticsBase": 480,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3520,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "B",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "鍾馗ノ化身",
+ "skillDetail": "B/LV10 確率 30% 攻撃 56%上昇/対象:槍・馬・器\n①攻撃 56%上昇する(武将のコストで効果が変化する)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・馬・器　確率 30% / 攻撃 56%上昇(武将のコストで効果が変化)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-17登録(担当F)。カード画像が無いためixanary.com(cards/2266)とixawiki.com(index.php?BushoCard/2266斎藤朝信)の生HTML突き合わせのみで登録した。"
+ ]
+}

@@ -1,0 +1,39 @@
+{
+ "name": "妙林尼",
+ "no": "2291",
+ "ch": null,
+ "cost": 3,
+ "troop": "弓馬器防",
+ "sub": "",
+ "effect": "防御 54%上昇(武将のコストで効果が変化)",
+ "furigana": "みょうりんに",
+ "illustrator": "ミヤジマハル",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 960,
+ "atkGrowth": 25,
+ "defBase": 980,
+ "defGrowth": 32,
+ "tacticsBase": 510,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3290,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "S",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "民兵動員",
+ "skillDetail": "B/LV10 確率 27% 防御 54%上昇/対象:弓・馬・器\n①防御 54%上昇する(武将のコストで効果が変化する)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓・馬・器　確率 27% / 防御 54%上昇(武将のコストで効果が変化)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当H)。カード画像が無いためixanary.com(cards/2291)生HTMLとixawiki.com(index.php?BushoCard/2291妙林尼)の基本ステータス表・スキル表を突き合わせて完全一致を確認して登録した。防御上昇率は武将コスト依存の式(コスト×18%)で、両ソースとも計算済みの54%を明記しており一致。"
+ ]
+}

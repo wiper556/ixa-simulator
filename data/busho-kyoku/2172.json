@@ -1,0 +1,41 @@
+{
+ "name": "武田勝頼（2）",
+ "no": "2172",
+ "ch": null,
+ "cost": 3,
+ "troop": "槍馬器攻速",
+ "sub": "",
+ "effect": "攻撃 35%上昇+速度 25%上昇",
+ "furigana": "たけだかつより",
+ "illustrator": "isuZu",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 850,
+ "atkGrowth": 19,
+ "defBase": 740,
+ "defGrowth": 16,
+ "tacticsBase": 470,
+ "tacticsGrowth": 2,
+ "lv0Troops": 3140,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "C",
+  "uma": "S",
+  "ki": "A"
+ },
+ "initialSkill": "騎迅強襲",
+ "skillDetail": "B/LV10 確率 30%/100% 攻撃 35%上昇+速度 25%上昇/対象:槍・馬・器\n①確率 30% 攻撃 35%上昇する\n②確率 100% 速度 25%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・馬・器　確率 30%/100% / 攻撃 35%上昇+速度 25%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当B)。カード画像が無いため imageFull/imageChar は null。ixanary.com(cards/2172)の埋め込みJSONとixawiki.com(index.php?BushoCard/2172武田勝頼)の生HTMLで、コスト/指揮兵数/攻撃防御兵法の初期値成長値/兵科ランク(槍A弓C馬S器A)/イラストレーター(isuZu)/スキルLV1数値(攻撃確率+8%/8%上昇・速度確率+100%/7%上昇)が完全一致することを確認して登録した。LV10の数値(攻撃確率30%/35%上昇・速度確率100%/25%上昇)はixanaryのカードページに明記。attack/speedで確率が別々のため①②に分けて記載した。",
+  "assign_B.txtの表記「武田勝頼(2)」に従い、同名武将と区別するため（2）を付けた。両ソースの武将名表記自体は「武田勝頼」のみ(No.で一意)。",
+  "章(ch)は両ソースとも記載が無いため未確認。synthesisTableは今回付けていない。"
+ ]
+}

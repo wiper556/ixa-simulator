@@ -1,0 +1,42 @@
+{
+ "name": "百武賢兼",
+ "no": "2323",
+ "ch": null,
+ "cost": 3,
+ "troop": "槍弓馬器攻防",
+ "sub": "",
+ "effect": "対象兵科の攻撃・防御が上昇+部隊内の同名スキル数に応じて効果増加",
+ "furigana": "ひゃくたけともかね",
+ "illustrator": "JUNNY",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1050,
+ "atkGrowth": 36,
+ "defBase": 1050,
+ "defGrowth": 36,
+ "tacticsBase": 500,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3320,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "武神百鬼",
+ "skillDetail": "A/LV10 確率 34% 攻撃 55%上昇/対象:槍・弓・馬・器\n①攻撃 55%上昇する\n②防御 55%上昇する\n③部隊内の「武神百鬼」スキル数×35%を攻防効果に加算する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・弓・馬・器　確率 34% / 攻撃 55%上昇+防御 55%上昇(部隊内の「武神百鬼」スキル数×35%を攻防効果に加算)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(カード画像なし・第2波)。ixanary.com(cards/2323)生HTMLの埋め込みJSON(ふりがな・イラストレーター・cost・指揮兵数・統率力・攻防兵法初期値/成長値・スキル名/確率/効果)とixawiki.com(BushoCard/2323百武賢兼)の基本ステータス表・スキル追加表を突き合わせ、両ソース完全一致(食い違いなし)を確認して登録した。imageFull/imageChar/rankGradesの根拠はカード画像でなく2ソース一致による。",
+  "章(ch)は情報源(ixanary.com/ixawiki.com)に記載が無く未確認のためnullとした。"
+ ],
+ "wikiOldestComment": "2022-06-01",
+ "wikiCommentCount": 10
+}

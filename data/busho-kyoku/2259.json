@@ -1,0 +1,39 @@
+{
+ "name": "和田惟政",
+ "no": "2259",
+ "ch": null,
+ "cost": 3,
+ "troop": "槍弓器攻防破",
+ "sub": "",
+ "effect": "槍・弓・器兵の攻撃・防御・破壊力上昇",
+ "furigana": "わだこれまさ",
+ "illustrator": "BISAI",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 980,
+ "atkGrowth": 28,
+ "defBase": 980,
+ "defGrowth": 28,
+ "tacticsBase": 480,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3240,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "B",
+  "ki": "A"
+ },
+ "initialSkill": "クルザード",
+ "skillDetail": "B/LV10 確率 42% 攻撃 70%上昇+防御 70%上昇+破壊 35%上昇/対象:槍・弓・器\n①攻撃 70%上昇する\n②防御 70%上昇する\n③破壊 35%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・弓・器　確率 42% / 攻撃 70%上昇+防御 70%上昇+破壊 35%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-17登録(担当F)。カード画像が無いためixanary.com(cards/2259)とixawiki.com(index.php?BushoCard/2259和田惟政)の生HTML突き合わせのみで登録した。"
+ ]
+}

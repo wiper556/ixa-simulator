@@ -1,0 +1,41 @@
+{
+ "name": "仙石秀久",
+ "no": "2196",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "槍馬器攻",
+ "sub": "",
+ "effect": "攻撃 15%上昇(部隊の総コストで変動)",
+ "furigana": "せんごくひでひさ",
+ "illustrator": "添田一平",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 950,
+ "atkGrowth": 26,
+ "defBase": 830,
+ "defGrowth": 23,
+ "tacticsBase": 465.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 3300,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "B",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "鈴鳴り武者",
+ "skillDetail": "B/LV10 確率 27% 攻撃 15%上昇/対象:槍・馬・器\n①攻撃 15%上昇する(部隊の総コストで変化・下限値、部隊総コストが高いほど上昇)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・馬・器　確率 27% / 攻撃 15%上昇(部隊の総コストで変動、下限値)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-17登録。カード画像が無いためixanary.com(cards/2196)生HTMLとixawiki.com(index.php?BushoCard/2196仙石秀久)の2ソースで基本ステータス(コスト・指揮兵数・統率槍弓馬器・攻撃/防御/兵法の初期値と成長値・illustrator)が完全一致することを確認して登録した。",
+  "【要確認・食い違いあり】スキル「鈴鳴り武者」(B)LV10の攻撃上昇値についてixanary.comとixawiki.comが食い違った。ixawiki.comはLV1/LV10両方の欄があり、LV10欄の式を明記(「Lv10=(部隊コスト^6)/(16^6)x25+15%」)、この式の下限値(部隊コスト0のとき)が15%上昇。ixanary.comのLV10欄は式を示さず flat値で「18.02%上昇」とだけ表示しており、どの部隊コストを基準にした数値か不明。確率(27%)と対象(槍馬器)は両ソース一致。",
+  "上記の食い違いのため、式が明示され内部整合性(部隊コスト20.0で110.36%等、複数のサンプル値と式が一致)を確認できたixawiki.comの下限値15%を採用し、ixanaryの18.02%は採用しなかった。どちらが実際のゲーム内デフォルト表示値かは未確認。"
+ ]
+}

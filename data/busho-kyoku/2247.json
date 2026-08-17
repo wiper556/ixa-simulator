@@ -1,0 +1,29 @@
+{
+ "name": "濃姫（2）",
+ "no": "2247",
+ "ch": null,
+ "cost": 1,
+ "troop": "弓馬器防速",
+ "sub": "",
+ "effect": "防御 39%上昇+速度 35%上昇",
+ "furigana": "のうひめ",
+ "illustrator": "影井由宇",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 940, "atkGrowth": 24,
+ "defBase": 970, "defGrowth": 30,
+ "tacticsBase": 480, "tacticsGrowth": 2.5,
+ "lv0Troops": 1450,
+ "rankGrades": {"yari": "B", "yumi": "A", "uma": "A", "ki": "S"},
+ "initialSkill": "鵺ノ接吻",
+ "skillDetail": "B/LV10 確率 37%/100% 防御 39%上昇+速度 35%上昇/対象:弓・馬・器\n①確率 37% 防御 39%上昇する\n②確率 100% 速度 35%上昇する\n③防御効果は武将ランクで変化する",
+ "trTable": [
+  {"level": "LV10", "points": "-", "effect": "弓・馬・器　確率 37%/100% / 防御 39%上昇+速度 35%上昇(防御効果は武将ランクで変化)"}
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録。カード画像が無いためixanary.com(cards/2247)とixawiki.com(BushoCard/2247濃姫)の一致のみで入れた。",
+  "基礎値・成長値・コスト・指揮兵数・統率(槍B弓A馬A器S)は両ソース一致。",
+  "初期スキル「鵺ノ接吻」[B]はLV10防御39%上昇(確率37%)・速度35%上昇(確率100%)・対象弓・馬・器。ixawikiの注記により防御の式は34+(武将ランク×5)%上昇と判明(両ソース一致)。"
+ ]
+}

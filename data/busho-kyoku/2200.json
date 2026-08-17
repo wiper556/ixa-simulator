@@ -1,0 +1,40 @@
+{
+ "name": "長宗我部国親",
+ "no": "2200",
+ "ch": null,
+ "cost": 3,
+ "troop": "槍馬砲攻破速",
+ "sub": "",
+ "effect": "攻撃 25%上昇+破壊 20%上昇+速度 35%上昇",
+ "furigana": "ちょうそかべくにちか",
+ "illustrator": "添田一平",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 970,
+ "atkGrowth": 28,
+ "defBase": 900,
+ "defGrowth": 23,
+ "tacticsBase": 480.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3150,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "B",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "喰野虎",
+ "skillDetail": "B/LV10 確率 100% 攻撃 25%上昇+破壊 20%上昇+速度 35%上昇/対象:槍・馬・砲\n①攻撃 25%上昇する\n②破壊 20%上昇する\n③速度 35%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・馬・砲　確率 100% / 攻撃 25%上昇+破壊 20%上昇+速度 35%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-17登録。カード画像が無いためixanary.com(cards/2200)生HTMLとixawiki.com(index.php?BushoCard/2200長宗我部国親)の2ソースで基本ステータス(コスト・指揮兵数・統率槍弓馬器・攻撃/防御/兵法の初期値と成長値・illustrator)が完全一致することを確認して登録した。",
+  "スキル数値(LV10確率100%/攻撃25%上昇/破壊20%上昇/速度35%上昇/対象槍馬砲)はixanary.comのLV10欄から採用。ixawiki.comはLV1相当(確率100%/攻撃5%上昇/破壊5%上昇/速度12%上昇)のみ掲載でLV10欄が無く、LV1部分同士は一致した(矛盾ではなく情報量の差)。"
+ ]
+}

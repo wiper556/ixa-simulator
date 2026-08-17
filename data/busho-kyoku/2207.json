@@ -1,0 +1,41 @@
+{
+ "name": "磯野員昌",
+ "no": "2207",
+ "ch": null,
+ "cost": 3,
+ "troop": "槍馬器防",
+ "sub": "",
+ "effect": "防御 2.7%上昇(部隊ランクボーナスで変動)",
+ "furigana": "いそのかずまさ",
+ "illustrator": "山根雪",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 960,
+ "atkGrowth": 24,
+ "defBase": 980,
+ "defGrowth": 26,
+ "tacticsBase": 450.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 3190,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "B",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "閃光破陣",
+ "skillDetail": "B/LV10 確率 35% 防御 2.7%上昇/対象:槍・馬・器\n①防御 2.7%上昇する(部隊ランクボーナスで変化)\n②部隊ランクスキルの発動率が9%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・馬・器　確率 35% / 防御 2.7%上昇(部隊ランクボーナスで変化)+部隊ランクスキル発動率 9%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-17登録。カード画像が無いためixanary.com(cards/2207)生HTMLとixawiki.com(index.php?BushoCard/2207磯野員昌)の2ソースで基本ステータス(コスト・指揮兵数・統率槍弓馬器・攻撃/防御/兵法の初期値と成長値・illustrator)が完全一致することを確認して登録した。",
+  "スキル「閃光破陣」(B)は部隊ランクボーナスで変動する数式スキル(LV1では0.4%上昇でLV10では2.7%上昇+部隊ランクスキル発動率9%上昇)。data/busho/1093.jsonの井伊直虎「女地頭」(同種の部隊ランク依存+発動率上昇スキル)の書式に倣って登録した。",
+  "スキル数値(LV10確率35%/防御2.7%上昇/対象槍馬器)はixanary.comのLV10欄から採用。ixawiki.comはLV1相当(確率15%/防御0.4%上昇)のみ掲載でLV10欄が無く、LV1部分同士は一致した(矛盾ではなく情報量の差)。"
+ ]
+}

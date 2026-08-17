@@ -1,0 +1,41 @@
+{
+ "name": "武田勝頼-復刻-",
+ "no": "1964",
+ "ch": null,
+ "cost": 4,
+ "troop": "槍馬砲器攻破",
+ "sub": "",
+ "effect": "槍・馬・砲・器部隊の攻撃・破壊力上昇",
+ "furigana": "たけだかつより",
+ "illustrator": "直良有祐",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1300,
+ "atkGrowth": 27,
+ "defBase": 1200,
+ "defGrowth": 21,
+ "tacticsBase": 550.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 4200,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "B",
+  "uma": "S",
+  "ki": "S"
+ },
+ "initialSkill": "馬神蹂躙",
+ "skillDetail": "S/LV10 確率 39% 攻撃 52%上昇 破壊 39%上昇/対象:槍・馬・砲・器\n①攻撃 52%上昇する\n②破壊 39%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・馬・砲・器　確率 39% / 攻撃 52%上昇+破壊 39%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "カード画像が無いためimageFull/imageChar は null。ixanary.com(cards/1964)とixawiki.com(BushoCard/1964武田勝頼)を突き合わせて登録した。",
+  "防御初期値のみixanaryが1300(攻撃と同値)・ixawikiが1200で食い違った。成長値(攻撃+27/防御+21)や他ステータスは完全一致していたため、ixanaryの既知の不具合(防御初期値が攻撃と同値になる)と判断しixawikiの1200を採用した。",
+  "スキル(馬神蹂躙)の効果数値がixanaryのLV1(確率16.5%/攻撃19.5%/破壊11%)・LV10(確率39%/攻撃52%/破壊39%)いずれともixawiki記載値(確率28%/攻撃30%/破壊35%)が一致しなかった。ixawiki側のページ最終更新が2018年で止まっていたためixanaryの現行LV10値を採用したが完全な裏取りはできていない(要再確認)。"
+ ]
+}

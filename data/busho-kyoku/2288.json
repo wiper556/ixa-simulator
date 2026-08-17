@@ -1,0 +1,41 @@
+{
+ "name": "山本勘助（3）",
+ "no": "2288",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "馬砲器攻",
+ "sub": "",
+ "effect": "攻撃 15%上昇(部隊の総コストで変動)",
+ "furigana": "やまもとかんすけ",
+ "illustrator": "萩谷薫",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1050,
+ "atkGrowth": 36,
+ "defBase": 990,
+ "defGrowth": 30,
+ "tacticsBase": 520,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3560,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "A",
+  "uma": "S",
+  "ki": "A"
+ },
+ "initialSkill": "導鬼刹界",
+ "skillDetail": "B/LV10 確率 44% 攻撃 15%上昇/対象:馬・砲・器\n①攻撃 15%上昇する(部隊の総コストで上昇幅が変化)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "馬・砲・器　確率 44% / 攻撃 15%上昇(部隊の総コストで変化)"
+  }
+ ],
+ "notes": [
+  "2026-08-18登録(担当G)。カード画像が無いためixanary.com(cards/2288)生HTMLとixawiki.com(index.php?BushoCard/2288山本勘助)生HTMLの2ソースを突き合わせて登録した。名前の(3)表記はassign_G.txtのixawiki一覧表記に従った。",
+  "ステータス初期値1050/990/520・成長値36/30/2.5・cost3.5・lv0Troops3560・rankGrades(槍B/弓A/馬S/器A)・illustrator萩谷薫は両ソースで完全一致。",
+  "スキル「導鬼刹界」LV10(確率44%・攻撃15%上昇・部隊の総コストで上昇幅が変化)はixawikiにLV1/LV10両方の記載があり、ixanaryのLV10欄と完全一致した(数式((部隊コスト/16)の6乗×25+15%)の基準値表示も一致)。"
+ ],
+ "reviewedOk": false
+}

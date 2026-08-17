@@ -1,0 +1,40 @@
+{
+ "name": "上杉憲政（2）",
+ "no": "2337",
+ "ch": null,
+ "cost": 3,
+ "troop": "馬砲器防",
+ "sub": "",
+ "effect": "防御 135%上昇(本丸防御陣形配置時編成コスト消費-0.5)",
+ "furigana": "うえすぎのりまさ",
+ "illustrator": "BISAI",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1050,
+ "atkGrowth": 34,
+ "defBase": 1110,
+ "defGrowth": 38,
+ "tacticsBase": 510,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3350,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "B",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "龍神ノ加護",
+ "skillDetail": "A/LV10 確率 46% 防御 135%上昇/対象:馬・砲・器\n模倣不可\n①防御 135%上昇する\n②本丸防御陣形に配置時この武将の編成コスト消費を-0.5する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "馬・砲・器　確率 46% / 防御 135%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当J・第2波・カード画像なし)。ixanary.com(cards/2337)生HTMLとixawiki.com(index.php?BushoCard/2337上杉憲政、およびBusho/武将カード一覧(極))の2ソースでコスト/指揮兵数/統率ランク/攻撃防御兵法の初期値成長値/スキル効果(LV1・LV10)が完全一致することを確認して登録した。",
+  "名前の（2）はixawiki武将カード一覧(極)の表記「上杉憲政(2)」に従った。"
+ ]
+}

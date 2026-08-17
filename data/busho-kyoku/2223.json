@@ -1,0 +1,43 @@
+{
+ "name": "吉弘鑑理",
+ "no": "2223",
+ "ch": null,
+ "cost": 3,
+ "troop": "全攻防破",
+ "sub": "",
+ "effect": "攻撃 50%上昇+防御 50%上昇+破壊 30%上昇",
+ "furigana": "よしひろあきただ",
+ "illustrator": "BISAI",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 970,
+ "atkGrowth": 26,
+ "defBase": 990,
+ "defGrowth": 27,
+ "tacticsBase": 500,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3190,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "獅子猟犬ノ陣",
+ "skillDetail": "B/LV10 確率 38% 攻撃 50%上昇+防御 50%上昇+破壊 30%上昇/対象:全\n①攻撃 50%上昇する\n②防御 50%上昇する\n③破壊 30%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 38% / 攻撃 50%上昇+防御 50%上昇+破壊 30%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当D)。カード画像が無いためixanary.com(cards/2223)とixawiki.com(index.php?BushoCard/2223吉弘鑑理)の生HTML突き合わせのみで登録した。",
+  "コスト3・指揮兵数3190・攻撃力970(+26)・防御力990(+27)・兵法500(+2.5)・イラストレーターBISAI・スキルLV1/LV10の数値は両ソースで完全一致。",
+  "攻撃・防御・破壊が同時に変動するスキルのためtrTableに全ステータスを併記した。",
+  "rankGrades(槍A/弓A/馬A/器A)はixawikiのみ出典(ixanaryにテキスト情報無し)。",
+  "章(ch)は両ソースに記載が無く未確認のためnull。"
+ ]
+}

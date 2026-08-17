@@ -1,0 +1,30 @@
+{
+ "name": "真田幸隆（3）",
+ "no": "2230",
+ "ch": null,
+ "cost": 3,
+ "troop": "全攻速",
+ "sub": "",
+ "effect": "攻撃 57%上昇+速度 35%上昇",
+ "furigana": "さなだゆきたか",
+ "illustrator": "鏑木康隆",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 990, "atkGrowth": 27,
+ "defBase": 960, "defGrowth": 26,
+ "tacticsBase": 500, "tacticsGrowth": 2.5,
+ "lv0Troops": 3210,
+ "rankGrades": {"yari": "A", "yumi": "S", "uma": "A", "ki": "A"},
+ "initialSkill": "千才万略",
+ "skillDetail": "B/LV10 確率 42%/100% 攻撃 57%上昇+速度 35%上昇/対象:全\n①確率 42% 攻撃 57%上昇する\n②確率 100% 速度 35%上昇する",
+ "trTable": [
+  {"level": "LV10", "points": "-", "effect": "全　確率 42%/100% / 攻撃 57%上昇+速度 35%上昇"}
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録。カード画像が無いためixanary.com(cards/2230)とixawiki.com(BushoCard/2230真田幸隆)の一致のみで入れた。",
+  "基礎値・成長値・コスト・指揮兵数・統率(槍A弓S馬A器A)は両ソース一致。",
+  "初期スキル「千才万略」[B]はLV10攻撃57%上昇(確率42%)・速度35%上昇(確率100%)・対象全。",
+  "ixanary.comにこのカード専用の「部隊スキル」欄があり「攻破.戦場の鬼」の記載があったが、サイトのテンプレートに対応項目が無いため未登録(申し送り)。"
+ ]
+}

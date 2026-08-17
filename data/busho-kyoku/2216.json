@@ -1,0 +1,40 @@
+{
+ "name": "百地三太夫",
+ "no": "2216",
+ "ch": null,
+ "cost": 3,
+ "troop": "槍砲器防速",
+ "sub": "",
+ "effect": "防御 49%上昇+速度 30%上昇",
+ "furigana": "ももちさんだゆう",
+ "illustrator": "BISAI",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 960,
+ "atkGrowth": 24,
+ "defBase": 990,
+ "defGrowth": 28,
+ "tacticsBase": 470,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 3190,
+ "rankGrades": null,
+ "initialSkill": "忍祖千里眼",
+ "skillDetail": "B/LV10 対象:槍・砲・器\n①確率40%で防御 49%上昇する\n②確率100%で速度 30%上昇する(加勢出陣時は速度効果3倍)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・砲・器　確率 40% / 防御 49%上昇+確率 100% / 速度 30%上昇(加勢出陣時速度効果3倍)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当D)。カード画像が無いためixanary.com(cards/2216)とixawiki.com(index.php?BushoCard/2216百地三太夫)の生HTML突き合わせのみで登録した。",
+  "コスト3・指揮兵数3190・攻撃力960(+24)・防御力990(+28)・兵法470(+2.0)・イラストレーターBISAI・スキルLV1/LV10の数値は両ソースで完全一致。",
+  "防御と速度で発動確率が異なる複合スキル(busho-kyoku/2119.json形式に準拠)。",
+  "既存の初期スキル所持武将(busho-kyoku-ps/2773.json 百地三太夫（2）)のsynthesisTable記載と本カードのLV10値(防御49%上昇+速度30%上昇)が一致することを確認済み。",
+  "rankGrades(槍S/弓A/馬B/器A)はixawikiのみ出典(ixanaryにテキスト情報無し)。",
+  "章(ch)は両ソースに記載が無く未確認のためnull。",
+  "2026-08-18: 統率を null にした。登録時は ixawiki 単独で入れていたが、ixanary も統率を持っており値が食い違った(yumi:A対B/uma:B対A)。カード画像という決め手が無いのでどちらも採らない。"
+ ]
+}

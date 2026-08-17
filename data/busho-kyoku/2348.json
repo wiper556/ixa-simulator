@@ -1,0 +1,39 @@
+{
+ "name": "松寿院",
+ "no": "2348",
+ "ch": null,
+ "cost": 2,
+ "troop": "全攻防",
+ "sub": "",
+ "effect": "攻撃 140%上昇+防御 140%上昇(部隊内姫武将のスキル発動率+10%・卓越追加確率+25%)",
+ "furigana": "しょうじゅいん",
+ "illustrator": "綾乙",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1110,
+ "atkGrowth": 44,
+ "defBase": 1050,
+ "defGrowth": 32,
+ "tacticsBase": 520,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 2580,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "B",
+  "ki": "S"
+ },
+ "initialSkill": "清賢ノ遊姫",
+ "skillDetail": "A/LV10 確率 100% 攻撃 140%上昇+防御 140%上昇/対象:全\n模倣不可・特殊効果は自部隊内では重複不可\n①攻撃 140%上昇する\n②防御 140%上昇する\n③部隊内姫武将のスキル発動率が10%上昇する\n④部隊内姫武将のスキルの卓越追加確率が25%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 攻撃 140%上昇+防御 140%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当J・第2波・カード画像なし)。ixanary.com(cards/2348)生HTMLとixawiki.com(index.php?BushoCard/2348松寿院、およびBusho/武将カード一覧(極))の2ソースでコスト/指揮兵数/統率ランク/攻撃防御兵法の初期値成長値/スキル効果(LV1・LV10)が完全一致することを確認して登録した。"
+ ]
+}

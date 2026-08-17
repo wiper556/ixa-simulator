@@ -1,0 +1,42 @@
+{
+ "name": "前野忠康",
+ "no": "2328",
+ "ch": null,
+ "cost": 4,
+ "troop": "槍馬砲攻",
+ "sub": "",
+ "effect": "対象兵科の攻撃が上昇+3部隊以下の攻撃で効果2倍",
+ "furigana": "まえのただやす",
+ "illustrator": "鏑木康隆",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1100,
+ "atkGrowth": 40,
+ "defBase": 1050,
+ "defGrowth": 32,
+ "tacticsBase": 510,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3880,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "B",
+  "uma": "S",
+  "ki": "A"
+ },
+ "initialSkill": "報義ノ武舞",
+ "skillDetail": "A/LV10 確率 45% 攻撃 90%上昇/対象:槍・馬・砲\n①攻撃 90%上昇する(3部隊以下の攻撃で効果2倍)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・馬・砲　確率 45% / 攻撃 90%上昇(3部隊以下の攻撃で効果2倍)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(カード画像なし・第2波)。ixanary.com(cards/2328)生HTMLの埋め込みJSON(ふりがな・イラストレーター・cost・指揮兵数・統率力・攻防兵法初期値/成長値・スキル名/確率/効果)とixawiki.com(BushoCard/2328前野忠康)の基本ステータス表・スキル追加表を突き合わせ、両ソース完全一致(食い違いなし)を確認して登録した。imageFull/imageChar/rankGradesの根拠はカード画像でなく2ソース一致による。",
+  "章(ch)は情報源(ixanary.com/ixawiki.com)に記載が無く未確認のためnullとした。"
+ ],
+ "wikiOldestComment": "2022-09-05",
+ "wikiCommentCount": 18
+}

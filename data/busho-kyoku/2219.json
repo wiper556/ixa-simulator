@@ -1,0 +1,42 @@
+{
+ "name": "楠木正虎",
+ "no": "2219",
+ "ch": null,
+ "cost": 2,
+ "troop": "全防",
+ "sub": "",
+ "effect": "防御 80.4%上昇",
+ "furigana": "くすのきまさとら",
+ "illustrator": "Natto-7",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 950,
+ "atkGrowth": 25,
+ "defBase": 980,
+ "defGrowth": 28,
+ "tacticsBase": 520,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 2480,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "闘戦経",
+ "skillDetail": "B/LV10 確率 10% 防御 80.4%上昇/対象:全\n①防御 80.4%上昇する\n②自拠点防御時は確率100%で発動する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 10% / 防御 80.4%上昇(自拠点防御時は確率100%で発動)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当D)。カード画像が無いためixanary.com(cards/2219)とixawiki.com(index.php?BushoCard/2219楠木正虎)の生HTML突き合わせのみで登録した。",
+  "コスト2・指揮兵数2480・攻撃力950(+25)・防御力980(+28)・兵法520(+2.5)・イラストレーターNatto-7・スキルLV1/LV10の数値は両ソースで完全一致。",
+  "rankGrades(槍A/弓A/馬A/器A)はixawikiのみ出典(ixanaryにテキスト情報無し)。",
+  "章(ch)は両ソースに記載が無く未確認のためnull。"
+ ]
+}

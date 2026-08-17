@@ -1,0 +1,39 @@
+{
+ "name": "太原雪斎（2）",
+ "no": "2267",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "弓馬器防",
+ "sub": "",
+ "effect": "弓・馬・器兵の防御力上昇",
+ "furigana": "たいげんせっさい",
+ "illustrator": "JUNNY",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 990,
+ "atkGrowth": 25,
+ "defBase": 1040,
+ "defGrowth": 32,
+ "tacticsBase": 480,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3500,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "S",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "王道ノ極意",
+ "skillDetail": "B/LV10 確率 32% 防御 76%上昇/対象:弓・馬・器\n①防御 76%上昇する\n②自部隊の武将ダメージを3%軽減する(重複発動上限4)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓・馬・器　確率 32% / 防御 76%上昇(武将ダメージ軽減3%/重複上限4)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-17登録(担当F)。カード画像が無いためixanary.com(cards/2267)とixawiki.com(index.php?BushoCard/2267太原雪斎)の生HTML突き合わせのみで登録した。"
+ ]
+}

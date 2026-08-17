@@ -1,0 +1,39 @@
+{
+ "name": "亀姫",
+ "no": "2339",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "弓砲器防",
+ "sub": "",
+ "effect": "防御 90%上昇(敵部隊移動速度÷1%を加算)",
+ "furigana": "かめひめ",
+ "illustrator": "ちゃきん",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1060,
+ "atkGrowth": 32,
+ "defBase": 1100,
+ "defGrowth": 42,
+ "tacticsBase": 520,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3690,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "B",
+  "ki": "S"
+ },
+ "initialSkill": "玄武炎姫",
+ "skillDetail": "A/LV10 確率 50% 防御 90%上昇/対象:弓・砲・器\n①防御 90%上昇する\n②敵部隊移動速度÷1%を防御効果に加算する(最も大きい速度を参照)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓・砲・器　確率 50% / 防御 90%上昇(敵部隊移動速度÷1%を加算・最も大きい速度を参照)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当J・第2波・カード画像なし)。ixanary.com(cards/2339)生HTMLとixawiki.com(index.php?BushoCard/2339亀姫、およびBusho/武将カード一覧(極))の2ソースでコスト/指揮兵数/統率ランク/攻撃防御兵法の初期値成長値/スキル効果(LV1・LV10)が完全一致することを確認して登録した。"
+ ]
+}

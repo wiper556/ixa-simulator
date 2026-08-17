@@ -1,0 +1,39 @@
+{
+ "name": "本多重次",
+ "no": "2293",
+ "ch": null,
+ "cost": 3,
+ "troop": "槍馬砲攻",
+ "sub": "",
+ "effect": "攻撃 91%上昇(相手軍の武将数が12以上だと必ずスキル発動)",
+ "furigana": "ほんだしげつぐ",
+ "illustrator": "BISAI",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": null,
+ "atkGrowth": 32,
+ "defBase": 980,
+ "defGrowth": 27,
+ "tacticsBase": 510,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3230,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "B",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "覇王ノ鬼神",
+ "skillDetail": "B/LV10 確率 15% 攻撃 91%上昇/対象:槍・馬・砲\n①攻撃 91%上昇する(相手軍の武将数が12以上だと必ずスキル発動)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・馬・砲　確率 15% / 攻撃 91%上昇(相手軍の武将数が12以上だと必ずスキル発動)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当H)。カード画像が無いためixanary.com(cards/2293)生HTMLとixawiki.com(index.php?BushoCard/2293本多重次)を突き合わせた。atkBaseはixanaryが960・ixawikiが1000で食い違ったためnullにした(defBase/成長値/兵法/コスト/指揮兵数/統率ランク/スキル数値は完全一致)。"
+ ]
+}

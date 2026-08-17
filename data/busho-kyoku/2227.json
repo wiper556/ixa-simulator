@@ -1,0 +1,44 @@
+{
+ "name": "田原親賢",
+ "no": "2227",
+ "ch": null,
+ "cost": 2,
+ "troop": "弓焙防",
+ "sub": "",
+ "effect": "防御 48%上昇",
+ "furigana": "たわらちかかた",
+ "illustrator": "影井由宇",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 960,
+ "atkGrowth": 26,
+ "defBase": 980,
+ "defGrowth": 28,
+ "tacticsBase": 500,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 2490,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "S",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "不天ノ采配",
+ "skillDetail": "B/LV10 確率 36% 防御 48%上昇/対象:弓・焙\n①防御 48%上昇する\n②合流攻撃防御時は効果が1.5倍になる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓・焙　確率 36% / 防御 48%上昇(合流攻撃防御時効果1.5倍)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当D)。カード画像が無いためixanary.com(cards/2227)とixawiki.com(index.php?BushoCard/2227田原親賢)の生HTML突き合わせのみで登録した。",
+  "コスト2・指揮兵数2490・攻撃力960(+26)・防御力980(+28)・兵法500(+2.5)・イラストレーター影井由宇・スキルLV1/LV10の数値は両ソースで完全一致。",
+  "対象兵科の「焙」は焙烙(焙烙火矢)を指す既存の表記(data/skill/三星一統射陣.jsonなど)に合わせた。",
+  "ixawikiの兵種別指揮力・実指揮数推移の表がテンプレート未展開で空欄になっていたが、統率力(rankGrades)欄自体は正常に表示されておりそちらを採用した。",
+  "rankGrades(槍B/弓S/馬A/器A)はixawikiのみ出典(ixanaryにテキスト情報無し)。",
+  "章(ch)は両ソースに記載が無く未確認のためnull。"
+ ]
+}

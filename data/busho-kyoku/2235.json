@@ -1,0 +1,30 @@
+{
+ "name": "虎御前",
+ "no": "2235",
+ "ch": null,
+ "cost": 3,
+ "troop": "全防",
+ "sub": "",
+ "effect": "防御 20%上昇(敵部隊移動速度÷2を加算)",
+ "furigana": "とらごぜん",
+ "illustrator": "木下月乃",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 980, "atkGrowth": 26,
+ "defBase": 1000, "defGrowth": 28,
+ "tacticsBase": 470, "tacticsGrowth": 2,
+ "lv0Troops": 3190,
+ "rankGrades": {"yari": "S", "yumi": "A", "uma": "B", "ki": "A"},
+ "initialSkill": "夢我龍撃",
+ "skillDetail": "B/LV10 確率 35% 防御 20%上昇/対象:全\n①防御 20%上昇する\n②最も大きい敵部隊移動速度÷2の値(%)を防御効果に加算する",
+ "trTable": [
+  {"level": "LV10", "points": "-", "effect": "全　確率 35% / 防御 20%上昇(最も大きい敵部隊移動速度÷2を加算)"}
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録。カード画像が無いためixanary.com(cards/2235)とixawiki.com(BushoCard/2235虎御前)の一致のみで入れた。",
+  "基礎値・成長値・コスト・指揮兵数・統率(槍S弓A馬B器A)は両ソース一致。",
+  "初期スキル「夢我龍撃」[B]はLV10確率35%・対象全・防御20%上昇。最も大きい敵部隊移動速度の半分を防御効果に加算する追加効果あり(両ソース一致)。",
+  "ixanary.comにこのカード専用の「部隊スキル」欄があり「防.戦姫艶舞」の記載があったが、サイトのテンプレートに対応項目が無いため未登録(申し送り)。"
+ ]
+}

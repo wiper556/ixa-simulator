@@ -1,0 +1,39 @@
+{
+ "name": "甲斐姫",
+ "no": "2161",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "槍砲攻",
+ "sub": "",
+ "effect": "槍・砲部隊の攻撃力上昇",
+ "furigana": "かいひめ",
+ "illustrator": "ミヤジマハル",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 900,
+ "atkGrowth": 21,
+ "defBase": 750,
+ "defGrowth": 19,
+ "tacticsBase": 500.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 3330,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "B",
+  "ki": "A"
+ },
+ "initialSkill": "浪切",
+ "skillDetail": "B/LV10 確率 30% 攻撃 37%上昇/対象:槍・砲\n①攻撃 37%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・砲　確率 30% / 攻撃 37%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "カード画像が無いためimageFull/imageChar は null。ixanary.com(cards/2161)とixawiki.com(BushoCard/2161甲斐姫)を突き合わせて登録した。基本ステータス・ランク・スキル数値とも両ソースで一致。"
+ ]
+}

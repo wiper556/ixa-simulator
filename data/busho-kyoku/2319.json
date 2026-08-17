@@ -1,0 +1,42 @@
+{
+ "name": "龍造寺家兼（2）",
+ "no": "2319",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "弓馬器騎攻防",
+ "sub": "",
+ "effect": "対象兵科の攻撃・防御が上昇+自部隊内の発動スキル数に応じて効果増加",
+ "furigana": "りゅうぞうじいえかね",
+ "illustrator": "鹿角",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1020,
+ "atkGrowth": 35,
+ "defBase": 1020,
+ "defGrowth": 35,
+ "tacticsBase": 500,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 3660,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "A",
+  "uma": "S",
+  "ki": "A"
+ },
+ "initialSkill": "黄龍ノ逢魔時",
+ "skillDetail": "A/LV10 確率 45% 攻撃 30%上昇/対象:弓・馬・器・騎\n①攻撃 30%上昇する\n②防御 30%上昇する\n③自部隊内で発動したそれぞれ名前の異なるスキルの数×8%を攻撃効果に加算する\n④自部隊内で発動したそれぞれ名前の異なるスキルの数×8%を防御効果に加算する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓・馬・器・騎　確率 45% / 攻撃 30%上昇+防御 30%上昇(自部隊内で発動した名前の異なるスキル数×8%を攻防効果に加算)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(カード画像なし・第2波)。ixanary.com(cards/2319)生HTMLの埋め込みJSON(ふりがな・イラストレーター・cost・指揮兵数・統率力・攻防兵法初期値/成長値・スキル名/確率/効果)とixawiki.com(BushoCard/2319龍造寺家兼)の基本ステータス表・スキル追加表を突き合わせ、両ソース完全一致(食い違いなし)を確認して登録した。imageFull/imageChar/rankGradesの根拠はカード画像でなく2ソース一致による。",
+  "章(ch)は情報源(ixanary.com/ixawiki.com)に記載が無く未確認のためnullとした。"
+ ],
+ "wikiOldestComment": "2022-04-05",
+ "wikiCommentCount": 18
+}

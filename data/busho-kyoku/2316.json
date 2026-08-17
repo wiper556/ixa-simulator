@@ -1,0 +1,43 @@
+{
+ "name": "島左近（4）",
+ "no": "2316",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "槍馬騎攻",
+ "sub": "",
+ "effect": "対象兵科の攻撃が上昇+卓越で効果1.5倍+飛翔4を持つ",
+ "furigana": "しまさこん",
+ "illustrator": "鏑木康隆",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1050,
+ "atkGrowth": 37,
+ "defBase": 1000,
+ "defGrowth": 32,
+ "tacticsBase": 510,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3650,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "S",
+  "ki": "B"
+ },
+ "initialSkill": "鬼神ノ戦域",
+ "skillDetail": "A/LV10 確率 55% 攻撃 84%上昇/対象:槍・馬・騎　飛翔4　卓越\n①攻撃 84%上昇する\n②卓越:追加確率40%で攻撃効果が1.5倍になる\n③飛翔4を持つ(敵軍に飛翔を持つ武将が4人未満のとき通常武将ダメージを受けない)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・馬・騎 飛翔4 卓越　確率 55% / 攻撃 84%上昇(卓越:追加確率40%で1.5倍)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(カード画像なし・第2波)。ixanary.com(cards/2316)生HTMLの埋め込みJSON(ふりがな・イラストレーター・cost・指揮兵数・統率力・攻防兵法初期値/成長値・スキル名/確率/効果)とixawiki.com(BushoCard/2316島左近)の基本ステータス表・スキル追加表を突き合わせ、両ソース完全一致(食い違いなし)を確認して登録した。imageFull/imageChar/rankGradesの根拠はカード画像でなく2ソース一致による。",
+  "初期スキル「鬼神ノ戦域」は既にdata/skill/鬼神ノ戦域.json(sourceCharacters三好義賢（2）)が存在したため、そのeffectSummary/効果表記をそのまま踏襲した(内容は本カードのixanary/ixawiki突き合わせ結果と完全一致)。",
+  "章(ch)は情報源(ixanary.com/ixawiki.com)に記載が無く未確認のためnullとした。"
+ ],
+ "wikiOldestComment": "2022-03-07",
+ "wikiCommentCount": 12
+}

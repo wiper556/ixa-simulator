@@ -1,0 +1,29 @@
+{
+ "name": "松平清康（2）",
+ "no": "2229",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "槍鉄攻",
+ "sub": "",
+ "effect": "攻撃 72%上昇(相手軍武将数20以上で必ず発動)",
+ "furigana": "まつだいらきよやす",
+ "illustrator": "BISAI",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1020, "atkGrowth": 28,
+ "defBase": 970, "defGrowth": 26,
+ "tacticsBase": 470, "tacticsGrowth": 2,
+ "lv0Troops": 3450,
+ "rankGrades": {"yari": "S", "yumi": "A", "uma": "A", "ki": "A"},
+ "initialSkill": "もののふノ絆",
+ "skillDetail": "B/LV10 確率 8% 攻撃 72%上昇/対象:槍・鉄\n①攻撃 72%上昇する\n②相手軍の武将数が20以上の場合確率に関わらず必ず発動する",
+ "trTable": [
+  {"level": "LV10", "points": "-", "effect": "槍・鉄　確率 8% / 攻撃 72%上昇(相手軍武将数20以上で必ず発動)"}
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録。カード画像が無いためixanary.com(cards/2229)とixawiki.com(BushoCard/2229松平清康)の一致のみで入れた。",
+  "基礎値・成長値・コスト・指揮兵数・統率(槍S弓A馬A器A)は両ソース一致。",
+  "初期スキル「もののふノ絆」[B]はLV10確率8%・対象槍・鉄・攻撃72%上昇。相手軍武将数20以上で確率に関わらず必ず発動する追加効果あり(両ソース一致)。"
+ ]
+}

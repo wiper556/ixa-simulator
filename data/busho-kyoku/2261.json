@@ -1,0 +1,39 @@
+{
+ "name": "陽泰院",
+ "no": "2261",
+ "ch": null,
+ "cost": 3,
+ "troop": "弓器焙防",
+ "sub": "",
+ "effect": "弓・器・焙兵の防御力上昇(部隊内武将ランク合計で効果が変化)",
+ "furigana": "ようたいいん",
+ "illustrator": "綾乙",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 970,
+ "atkGrowth": 24,
+ "defBase": 980,
+ "defGrowth": 32,
+ "tacticsBase": 490,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3230,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "国母ノ妙算",
+ "skillDetail": "B/LV10 確率 40% 防御 20%上昇/対象:弓・器・焙\n①防御 20%上昇する(部隊内の武将ランク合計で効果が変化する)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓・器・焙　確率 40% / 防御 20%上昇(部隊内武将ランク合計で変化)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-17登録(担当F)。カード画像が無いためixanary.com(cards/2261)とixawiki.com(index.php?BushoCard/2261陽泰院)の生HTML突き合わせのみで登録した。"
+ ]
+}

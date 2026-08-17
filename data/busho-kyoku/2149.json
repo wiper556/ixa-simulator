@@ -1,0 +1,39 @@
+{
+ "name": "平手政秀",
+ "no": "2149",
+ "ch": null,
+ "cost": 0.5,
+ "troop": "全防",
+ "sub": "",
+ "effect": "全軍の防御力上昇(部隊ランクボーナスで変化)",
+ "furigana": "ひらてまさひで",
+ "illustrator": "安里",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 650,
+ "atkGrowth": 15,
+ "defBase": 750,
+ "defGrowth": 15,
+ "tacticsBase": 470.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 1400,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "B",
+  "uma": "B",
+  "ki": "A"
+ },
+ "initialSkill": "洞察",
+ "skillDetail": "B/LV10 確率 30% 防御 7.5%上昇/対象:全\n①防御 7.5%上昇する(部隊ランクボーナスで効果が変化)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 30% / 防御 7.5%上昇(部隊ランクボーナスで効果が変化)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "カード画像が無いためimageFull/imageChar は null。ixanary.com(cards/2149)とixawiki.com(BushoCard/2149平手政秀)を突き合わせて登録した。基本ステータス・ランク・スキル数値とも両ソースで一致。"
+ ]
+}

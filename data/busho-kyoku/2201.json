@@ -1,0 +1,41 @@
+{
+ "name": "浅井亮政（2）",
+ "no": "2201",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "槍弓馬防",
+ "sub": "",
+ "effect": "防御 28%上昇",
+ "furigana": "あざいすけまさ",
+ "illustrator": "ホマ蔵",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 940,
+ "atkGrowth": 24,
+ "defBase": 980,
+ "defGrowth": 26,
+ "tacticsBase": 450.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 3400,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "S",
+  "uma": "A",
+  "ki": "B"
+ },
+ "initialSkill": "鳰の払暁",
+ "skillDetail": "B/LV10 確率 40% 防御 28%上昇/対象:槍・弓・馬\n①防御 28%上昇する\n②自領以外への加勢では効果が2倍になる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・弓・馬　確率 40% / 防御 28%上昇(自領以外の加勢で2倍)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-17登録。カード画像が無いためixanary.com(cards/2201)生HTMLとixawiki.com(index.php?BushoCard/2201浅井亮政)の2ソースで基本ステータス(コスト・指揮兵数・統率槍弓馬器・攻撃/防御/兵法の初期値と成長値・illustrator)が完全一致することを確認して登録した。",
+  "同名武将が複数存在するため、ixawiki.comの武将カード一覧の表記に合わせて名前を「浅井亮政（2）」とした(assign_C.txtの指定通り)。",
+  "スキル数値(LV10確率40%/防御28%上昇/対象槍弓馬、自領以外の加勢で効果2倍の注記)はixanary.comのLV10欄から採用。ixawiki.comはLV1相当(確率12%/防御8%上昇)のみ掲載でLV10欄が無く、LV1部分同士は一致した(矛盾ではなく情報量の差)。"
+ ]
+}

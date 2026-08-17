@@ -1,0 +1,40 @@
+{
+ "name": "北条氏規",
+ "no": "2342",
+ "ch": null,
+ "cost": 4,
+ "troop": "弓馬器騎攻防",
+ "sub": "",
+ "effect": "攻撃 90%上昇+防御 90%上昇(自部隊内の卓越発動スキル数×35%を加算)",
+ "furigana": "ほうじょううじのり",
+ "illustrator": "鹿角",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1080,
+ "atkGrowth": 39,
+ "defBase": 1080,
+ "defGrowth": 39,
+ "tacticsBase": 520,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3920,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "S",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "護国黄陣",
+ "skillDetail": "A/LV10 確率 44% 攻撃 90%上昇+防御 90%上昇/対象:弓・馬・器・騎\n①攻撃 90%上昇する\n②防御 90%上昇する\n③自部隊内で卓越発動したスキル数×35%を攻防効果に加算する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓・馬・器・騎　確率 44% / 攻撃 90%上昇+防御 90%上昇(自部隊内で卓越発動したスキル数×35%を加算)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当J・第2波・カード画像なし)。ixanary.com(cards/2342)生HTMLとixawiki.com(index.php?BushoCard/2342北条氏規、およびBusho/武将カード一覧(極))の2ソースでコスト/指揮兵数/統率ランク/攻撃防御兵法の初期値成長値/スキル効果(LV1・LV10)が完全一致することを確認して登録した。",
+  "攻撃初期値・防御初期値・成長値がいずれも1080/39と同値だが、ixanaryとixawikiが独立に同じ値を出しており攻防同値バグの疑いは無い。"
+ ]
+}

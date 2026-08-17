@@ -1,0 +1,41 @@
+{
+ "name": "本多正純",
+ "no": "2270",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "槍弓馬攻",
+ "sub": "",
+ "effect": "攻撃 74%上昇(合流攻撃時発動率2倍)",
+ "furigana": "ほんだまさずみ",
+ "illustrator": "小森ニコ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1020,
+ "atkGrowth": 36,
+ "defBase": 950,
+ "defGrowth": 25,
+ "tacticsBase": 480,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3520,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "S",
+  "uma": "A",
+  "ki": "B"
+ },
+ "initialSkill": "権勢謳歌",
+ "skillDetail": "B/LV10 確率 27% 攻撃 74%上昇/対象:槍・弓・馬\n①攻撃 74%上昇する\n②合流攻撃時は発動率が2倍になる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・弓・馬　確率 27% / 攻撃 74%上昇(合流攻撃時発動率2倍)"
+  }
+ ],
+ "notes": [
+  "2026-08-18登録(担当G)。カード画像が無いためixanary.com(cards/2270)生HTMLとixawiki.com(index.php?BushoCard/2270本多正純)生HTMLの2ソースを突き合わせて登録した。",
+  "ステータス初期値1020/950/480・成長値36/25/2.5・cost3.5・lv0Troops3520・rankGrades(槍A/弓S/馬A/器B)・illustrator小森ニコは両ソースで完全一致。",
+  "スキル「権勢謳歌」LV10(確率27%・攻撃74%上昇・合流攻撃時発動率2倍)はixanaryのLV10欄と一致。ixawikiのBushoCardページはLV1欄(確率9%・攻撃38%上昇)のみの記載でLV10行が無いためLV1側の数値のみ突き合わせて一致確認した。"
+ ],
+ "reviewedOk": false
+}

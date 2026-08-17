@@ -1,0 +1,39 @@
+{
+ "name": "奥村永福",
+ "no": "2299",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "槍器鉄攻防",
+ "sub": "",
+ "effect": "攻撃 64%上昇+防御 64%上昇(卓越:追加確率10%で攻防効果2倍)",
+ "furigana": "おくむらながとみ",
+ "illustrator": "影井由宇",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 970,
+ "atkGrowth": 28,
+ "defBase": 1050,
+ "defGrowth": 32,
+ "tacticsBase": 470,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3060,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "B",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "絆ノ戦域",
+ "skillDetail": "B/LV10 確率 100% 攻撃 64%上昇/対象:槍・器・鉄　卓越\n①攻撃 64%上昇する\n②防御 64%上昇する\n③卓越:追加確率10%で攻防効果が2倍になる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・器・鉄　確率 100% / 攻撃 64%上昇+防御 64%上昇(卓越:追加確率10%で攻防効果2倍)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当H)。カード画像が無いためixanary.com(cards/2299)生HTMLとixawiki.com(index.php?BushoCard/2299奥村永福)の基本ステータス表・スキル表を突き合わせて完全一致を確認して登録した。"
+ ]
+}

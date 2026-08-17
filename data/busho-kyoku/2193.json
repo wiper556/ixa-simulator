@@ -1,0 +1,43 @@
+{
+ "name": "朝倉宗滴（2）",
+ "no": "2193",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "槍馬器防",
+ "sub": "",
+ "effect": "防御 196.0%上昇(模倣不可)",
+ "furigana": "あさくらそうてき",
+ "illustrator": "BISAI",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 920,
+ "atkGrowth": 22,
+ "defBase": 960,
+ "defGrowth": 26,
+ "tacticsBase": 500.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3360,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "B",
+  "uma": "S",
+  "ki": "A"
+ },
+ "initialSkill": "常勝の采配",
+ "skillDetail": "B/LV10 確率 38% 防御 196.0%上昇/対象:槍・馬・器\n模倣不可\n①防御 0.7%×防御参加武将数(280人)=196.0%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・馬・器　確率 38% / 防御 0.7%×防御参加武将数(280人)=196.0%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-17登録。カード画像が無いためixanary.com(cards/2193)生HTMLとixawiki.com(index.php?BushoCard/2193朝倉宗滴)の2ソースで基本ステータス(コスト・指揮兵数・統率槍弓馬器・攻撃/防御/兵法の初期値と成長値・illustrator)が完全一致することを確認して登録した。",
+  "同名武将が複数存在するため、ixawiki.comの武将カード一覧の表記に合わせて名前を「朝倉宗滴（2）」とした(assign_C.txtの指定通り)。",
+  "スキル「常勝の采配」(B)は防御参加武将数に比例する数式スキル(ixanary.comではLV10係数0.7)。人数依存スキルの書式ルールに従い本丸防御全体を母数とみなし280人で計算した(0.7%×280人=196.0%)。",
+  "「模倣不可」の注記はixanary.comのLV1/LV10双方に記載があり、修飾語が無いためskillDetailで①の前に独立行として記載した。",
+  "スキル数値(確率)はixanary.comのLV10欄(38%)を採用。ixawiki.comはLV1相当(確率11%)のみ掲載でLV10欄が無く、LV1部分同士は一致した(矛盾ではなく情報量の差)。"
+ ]
+}

@@ -1,0 +1,39 @@
+{
+ "name": "陶晴賢（2）",
+ "no": "2294",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "弓馬砲攻",
+ "sub": "",
+ "effect": "攻撃 80%上昇(自部隊同時攻撃時コスト最大0.5除外・模倣不可)",
+ "furigana": "すえはるかた",
+ "illustrator": "Natto-7",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1040,
+ "atkGrowth": 35,
+ "defBase": 1000,
+ "defGrowth": 29,
+ "tacticsBase": 510,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3560,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "A",
+  "uma": "S",
+  "ki": "A"
+ },
+ "initialSkill": "八虐無道",
+ "skillDetail": "B/LV10 確率 47% 攻撃 80%上昇/対象:弓・馬・砲\n①攻撃 80%上昇する\n②自部隊同時攻撃時部隊総コストからこの武将分のコストを最大0.5まで除外する(模倣不可)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓・馬・砲　確率 47% / 攻撃 80%上昇(自部隊同時攻撃時コスト最大0.5除外・模倣不可)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当H)。カード画像が無いためixanary.com(cards/2294)生HTMLとixawiki.com(index.php?BushoCard/2294陶晴賢)の基本ステータス表・スキル表を突き合わせて完全一致を確認して登録した。名前の（2）はixawikiの武将カード一覧の表記に従った。"
+ ]
+}

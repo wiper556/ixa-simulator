@@ -1,0 +1,40 @@
+{
+ "name": "上杉憲政",
+ "no": "2175",
+ "ch": null,
+ "cost": 3,
+ "troop": "槍弓馬防",
+ "sub": "",
+ "effect": "防御 ((1+ランク)xコストx1.8) %上昇(武将ランクとコストで効果が変化)",
+ "furigana": "うえすぎのりまさ",
+ "illustrator": "白藤 与一（与一）",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 780,
+ "atkGrowth": 19,
+ "defBase": 850,
+ "defGrowth": 21,
+ "tacticsBase": 460,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3100,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "S",
+  "uma": "A",
+  "ki": "B"
+ },
+ "initialSkill": "虚軍号令",
+ "skillDetail": "B/LV10 確率 32% 防御 ((1+ランク)xコストx1.8) %上昇/対象:槍・弓・馬\n①防御が((1+ランク)xコストx1.8) %上昇する(武将ランクとコストで効果が変化)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・弓・馬　確率 32% / 防御 ((1+ランク)xコストx1.8) %上昇(武将ランクとコストで効果が変化)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当B)。カード画像が無いため imageFull/imageChar は null。ixanary.com(cards/2175)の埋め込みJSONとixawiki.com(index.php?BushoCard/2175上杉憲政)の生HTMLで、コスト/指揮兵数/攻撃防御兵法の初期値成長値/兵科ランク(槍A弓S馬A器B)/イラストレーター(白藤 与一（与一）)/スキルLV1数値(確率+11.5%/(1+ランク)xコストx0.9%上昇)が完全一致することを確認して登録した。LV10の数値(確率32%/(1+ランク)xコストx1.8%上昇)はixanaryのカードページに明記。武将ランクとコストで変動する式ベースの効果のため実数値は入れていない。",
+  "章(ch)は両ソースとも記載が無いため未確認。synthesisTableは今回付けていない。"
+ ]
+}

@@ -1,0 +1,39 @@
+{
+ "name": "立花宗茂（2）",
+ "no": "2150",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "馬砲攻",
+ "sub": "",
+ "effect": "馬・砲部隊の攻撃力上昇",
+ "furigana": "たちばなむねしげ",
+ "illustrator": "小森ニコ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 880,
+ "atkGrowth": 18,
+ "defBase": 780,
+ "defGrowth": 17,
+ "tacticsBase": 470.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 3330,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "B",
+  "uma": "S",
+  "ki": "A"
+ },
+ "initialSkill": "武神 火車懸",
+ "skillDetail": "B/LV10 確率 17% 攻撃 38%上昇/対象:馬・砲\n①攻撃 38%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "馬・砲　確率 17% / 攻撃 38%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "カード画像が無いためimageFull/imageChar は null。ixanary.com(cards/2150)とixawiki.com(BushoCard/2150立花宗茂)を突き合わせて登録した。基本ステータス・ランク・スキル数値とも両ソースで一致。"
+ ]
+}

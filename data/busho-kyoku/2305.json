@@ -1,0 +1,39 @@
+{
+ "name": "小早川隆景（3）",
+ "no": "2305",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "弓馬器騎防",
+ "sub": "",
+ "effect": "防御 25%上昇(武将ランクで効果が変化)",
+ "furigana": "こばやかわたかかげ",
+ "illustrator": "Natto-7",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 970,
+ "atkGrowth": 32,
+ "defBase": 1040,
+ "defGrowth": null,
+ "tacticsBase": 500,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3580,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "S",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "海蝕",
+ "skillDetail": "A/LV10 確率 68% 防御 25%上昇/対象:弓・馬・器・騎\n①防御 25%上昇する(武将ランクで効果が変化する)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓・馬・器・騎　確率 68% / 防御 25%上昇(武将ランクで効果が変化)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当H)。カード画像が無いためixanary.com(cards/2305)生HTMLとixawiki.com(index.php?BushoCard/2305小早川隆景)を突き合わせた。名前の（3）はixawikiの武将カード一覧の表記に従った。defGrowthはixanaryが+25・ixawikiが+35で食い違ったためnullにした(atkBase/defBase/atkGrowth/兵法/コスト/指揮兵数/統率ランクは完全一致)。スキルLV10の防御25%上昇はixanaryの表記と、ixawikiの式注記「Lv10＝防御:(武将ランク×15)+10%上昇」を突き合わせて一致(ixawikiの表本体セルは10%上昇とLv1と同じ値が残っていたが式注記で25%と整合することを確認し、式注記を採用した)。"
+ ]
+}

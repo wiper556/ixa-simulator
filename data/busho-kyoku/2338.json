@@ -1,0 +1,39 @@
+{
+ "name": "北条氏直",
+ "no": "2338",
+ "ch": null,
+ "cost": 4,
+ "troop": "槍弓砲攻防",
+ "sub": "",
+ "effect": "攻撃 38%上昇+防御 38%上昇(卓越:追加確率30%で攻防効果5倍)",
+ "furigana": "ほうじょううじなお",
+ "illustrator": "鏑木康隆",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1120,
+ "atkGrowth": 44,
+ "defBase": 1040,
+ "defGrowth": 33,
+ "tacticsBase": 520,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3910,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "B",
+  "ki": "A"
+ },
+ "initialSkill": "終幕ノ断刀",
+ "skillDetail": "A/LV10 確率 50% 攻撃 38%上昇+防御 38%上昇/対象:槍・弓・砲　卓越\n①攻撃 38%上昇する\n②防御 38%上昇する\n③卓越:追加確率30%で攻防効果が5倍になる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・弓・砲　確率 50% / 攻撃 38%上昇+防御 38%上昇(卓越:追加確率30%で5倍)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当J・第2波・カード画像なし)。ixanary.com(cards/2338)生HTMLとixawiki.com(index.php?BushoCard/2338北条氏直、およびBusho/武将カード一覧(極))の2ソースでコスト/指揮兵数/統率ランク/攻撃防御兵法の初期値成長値/スキル効果(LV1・LV10)が完全一致することを確認して登録した。"
+ ]
+}

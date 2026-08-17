@@ -1,0 +1,39 @@
+{
+ "name": "荒木村重",
+ "no": "2265",
+ "ch": null,
+ "cost": 3,
+ "troop": "槍弓馬器防速",
+ "sub": "",
+ "effect": "槍・弓・馬・器兵の防御・速度上昇",
+ "furigana": "あらきむらしげ",
+ "illustrator": "ツヤイルカ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 960,
+ "atkGrowth": 27,
+ "defBase": 1000,
+ "defGrowth": 34,
+ "tacticsBase": 490,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3240,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "S",
+  "uma": "A",
+  "ki": "B"
+ },
+ "initialSkill": "無間牢",
+ "skillDetail": "B/LV10 確率 25%/100% 防御 77%上昇+速度 45%上昇/対象:槍・弓・馬・器\n①確率 25% 防御 77%上昇する\n②確率 100% 速度 45%上昇する(加勢出陣時は効果が2倍になる)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・弓・馬・器　確率 25%/100% / 防御 77%上昇+速度 45%上昇(加勢出陣時速度2倍)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-17登録(担当F)。カード画像が無いためixanary.com(cards/2265)とixawiki.com(index.php?BushoCard/2265荒木村重)の生HTML突き合わせのみで登録した。"
+ ]
+}

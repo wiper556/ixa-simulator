@@ -1,0 +1,40 @@
+{
+ "name": "真壁氏幹",
+ "no": "2331",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "槍弓砲器攻防",
+ "sub": "",
+ "effect": "攻撃 12%上昇+防御 12%上昇(所属部隊内のレアリティA以上のスキル個数×12%を加算)",
+ "furigana": "まかべうじもと",
+ "illustrator": "三好載克",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1070,
+ "atkGrowth": 38,
+ "defBase": 1070,
+ "defGrowth": 38,
+ "tacticsBase": 500,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3670,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "B",
+  "ki": "A"
+ },
+ "initialSkill": "鬼旋風 破陣",
+ "skillDetail": "A/LV10 確率 45% 攻撃 12%上昇+防御 12%上昇/対象:槍・弓・砲・器\n①攻撃 12%上昇する\n②防御 12%上昇する\n③所属部隊内のレアリティA以上のスキル個数×12%を攻防効果に加算する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・弓・砲・器　確率 45% / 攻撃 12%上昇+防御 12%上昇(所属部隊内のレアリティA以上のスキル個数×12%を加算)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当J・第2波・カード画像なし)。ixanary.com(cards/2331)生HTMLとixawiki.com(index.php?BushoCard/2331真壁氏幹、およびBusho/武将カード一覧(極))の2ソースでコスト/指揮兵数/統率ランク/攻撃防御兵法の初期値成長値/スキル効果(LV1・LV10)が完全一致することを確認して登録した。",
+  "攻撃初期値・防御初期値・成長値がいずれも1070/38と同値だが、ixanaryとixawikiが独立に同じ値を出しており攻防同値バグの疑いは無い。"
+ ]
+}

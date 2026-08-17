@@ -1,0 +1,39 @@
+{
+ "name": "山県昌景（4）",
+ "no": "2298",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "馬砲器防速",
+ "sub": "",
+ "effect": "防御 86%上昇+速度 50%上昇(速度は確率100%)",
+ "furigana": "やまがたまさかげ",
+ "illustrator": "BISAI",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1030,
+ "atkGrowth": 30,
+ "defBase": 1030,
+ "defGrowth": 30,
+ "tacticsBase": 480,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3070,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "B",
+  "uma": "S",
+  "ki": "A"
+ },
+ "initialSkill": "紅騎焔貫",
+ "skillDetail": "B/LV10 確率 52% 防御 86%上昇+速度 50%上昇/対象:馬・砲・器\n①防御 86%上昇する(確率52%)\n②速度 50%上昇する(確率100%)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "馬・砲・器　確率 52% / 防御 86%上昇(速度 50%上昇は確率100%)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当H)。カード画像が無いためixanary.com(cards/2298)生HTMLとixawiki.com(index.php?BushoCard/2298山県昌景)の基本ステータス表・スキル表を突き合わせて完全一致を確認して登録した。名前の（4）はixawikiの武将カード一覧の表記に従った。atk/defが1030で同値だが両ソース独立に一致しているため攻防同値カードとして採用した。"
+ ]
+}

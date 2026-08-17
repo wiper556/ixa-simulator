@@ -1,0 +1,41 @@
+{
+ "name": "愛姫（2）",
+ "no": "2174",
+ "ch": null,
+ "cost": 3,
+ "troop": "馬砲防",
+ "sub": "",
+ "effect": "防御 30%上昇",
+ "furigana": "めごひめ",
+ "illustrator": "煎茶",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 600,
+ "atkGrowth": 18,
+ "defBase": 750,
+ "defGrowth": 21,
+ "tacticsBase": 430,
+ "tacticsGrowth": 2,
+ "lv0Troops": 2860,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "C",
+  "uma": "S",
+  "ki": "A"
+ },
+ "initialSkill": "愛花夕夢",
+ "skillDetail": "B/LV10 確率 45% 防御 30%上昇/対象:馬・砲\n①防御 30%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "馬・砲　確率 45% / 防御 30%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当B)。カード画像が無いため imageFull/imageChar は null。ixanary.com(cards/2174)の埋め込みJSONとixawiki.com(index.php?BushoCard/2174愛姫)の生HTMLで、コスト/指揮兵数/攻撃防御兵法の初期値成長値/兵科ランク(槍B弓C馬S器A)/イラストレーター(煎茶)/スキルLV1数値(確率+16%/防御12%上昇)が完全一致することを確認して登録した。LV10の数値(確率45%/防御30%上昇)はixanaryのカードページに明記。",
+  "assign_B.txtの表記「愛姫(2)」に従い、同名武将と区別するため（2）を付けた。両ソースの武将名表記自体は「愛姫」のみ(No.で一意)。紹介文はixanaryが空欄だった。",
+  "章(ch)は両ソースとも記載が無いため未確認。synthesisTableは今回付けていない。"
+ ]
+}

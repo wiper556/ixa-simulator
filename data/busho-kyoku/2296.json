@@ -1,0 +1,39 @@
+{
+ "name": "池田恒興",
+ "no": "2296",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "部隊長",
+ "sub": "",
+ "effect": "所属部隊の部隊長が持つ初期スキルを模倣する(戦闘スキルのみ)",
+ "furigana": "いけだつねおき",
+ "illustrator": "ツヤイルカ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1020,
+ "atkGrowth": 32,
+ "defBase": 1020,
+ "defGrowth": 32,
+ "tacticsBase": 500,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3550,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "飛蝶野分",
+ "skillDetail": "B/LV10 確率 60% 所属部隊の部隊長が持つ初期スキルを模倣する(戦闘スキルのみ)/対象:部隊長\n①所属部隊の部隊長が持つ初期スキルを模倣する(戦闘スキルのみ)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "部隊長　確率 60% / 所属部隊の部隊長が持つ初期スキルを模倣する(戦闘スキルのみ)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当H)。カード画像が無いためixanary.com(cards/2296)生HTMLとixawiki.com(index.php?BushoCard/2296池田恒興)の基本ステータス表・スキル表を突き合わせて完全一致を確認して登録した。atk/defが1020で同値だが両ソース独立に一致しているため攻防同値カードとして採用した。"
+ ]
+}

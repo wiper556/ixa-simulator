@@ -1,0 +1,43 @@
+{
+ "name": "島津家久（3）",
+ "no": "2210",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "槍砲器攻",
+ "sub": "",
+ "effect": "攻撃 54%上昇",
+ "furigana": "しまづいえひさ",
+ "illustrator": "Natto-7",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1000,
+ "atkGrowth": 28,
+ "defBase": 970,
+ "defGrowth": 25,
+ "tacticsBase": 510,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3430,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "B",
+  "ki": "S"
+ },
+ "initialSkill": "戦鬼侵軍",
+ "skillDetail": "B/LV10 確率 15% 攻撃 54%上昇/対象:槍・砲・器\n①攻撃 54%上昇する\n②合流攻撃時は必ずスキルが発動する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・砲・器　確率 15% / 攻撃 54%上昇(合流攻撃時は必ず発動)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当D)。カード画像が無いためixanary.com(cards/2210)とixawiki.com(index.php?BushoCard/2210島津家久)の生HTML突き合わせのみで登録した。ixawikiのページ名は末尾の(3)が付かない表記だったため、そのURLで内容がNo.2210と一致することを確認した上で採用した。",
+  "コスト3.5・指揮兵数3430・攻撃力1000(+28)・防御力970(+25)・兵法510(+2.5)・イラストレーターNatto-7・スキルLV1/LV10の数値は両ソースで完全一致。",
+  "名前の（3）はassign_D.txtの表記(ixawiki一覧の武将カード一覧表記)に従い、半角(3)を全角（3）に変換して登録した。",
+  "rankGrades(槍A/弓A/馬B/器S)はixawikiのみ出典(ixanaryにテキスト情報無し)。",
+  "章(ch)は両ソースに記載が無く未確認のためnull。"
+ ]
+}

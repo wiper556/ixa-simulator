@@ -1,0 +1,40 @@
+{
+ "name": "波多野秀治",
+ "no": "2197",
+ "ch": null,
+ "cost": 3,
+ "troop": "槍弓馬攻",
+ "sub": "",
+ "effect": "攻撃 70%上昇",
+ "furigana": "はたのひではる",
+ "illustrator": "COGA",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 920,
+ "atkGrowth": 25,
+ "defBase": 850,
+ "defGrowth": 22,
+ "tacticsBase": 475.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 3130,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "S",
+  "ki": "B"
+ },
+ "initialSkill": "宵闇ノ迷鬼",
+ "skillDetail": "B/LV10 確率 2.5% 攻撃 70%上昇/対象:槍・弓・馬\n①攻撃 70%上昇する\n②19時から翌1時は確率が10倍になる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・弓・馬　確率 2.5%(19時-翌1時は10倍) / 攻撃 70%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-17登録。カード画像が無いためixanary.com(cards/2197)生HTMLとixawiki.com(index.php?BushoCard/2197波多野秀治)の2ソースで基本ステータス(コスト・指揮兵数・統率槍弓馬器・攻撃/防御/兵法の初期値と成長値・illustrator)が完全一致することを確認して登録した。",
+  "スキル数値(LV10確率2.5%/攻撃70%上昇/対象槍弓馬、19時-翌1時は確率10倍の注記)はixanary.comのLV10欄から採用。ixawiki.comはLV1相当(確率1%/攻撃25%上昇)のみ掲載でLV10欄が無く、LV1部分同士は一致した(矛盾ではなく情報量の差)。"
+ ]
+}

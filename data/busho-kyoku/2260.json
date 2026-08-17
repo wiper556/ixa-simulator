@@ -1,0 +1,39 @@
+{
+ "name": "長野業正（2）",
+ "no": "2260",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "槍弓馬器攻防",
+ "sub": "",
+ "effect": "槍・弓・馬・器兵の攻撃・防御力上昇(武将ランクとコストで効果が変化)",
+ "furigana": "ながのなりまさ",
+ "illustrator": "isuZu",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1020,
+ "atkGrowth": 29,
+ "defBase": 1020,
+ "defGrowth": 29,
+ "tacticsBase": 480,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3500,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "B",
+  "ki": "A"
+ },
+ "initialSkill": "虎嘯",
+ "skillDetail": "B/LV10 確率 27% 攻撃 ((1+ランク)xコストx2.2)%上昇+防御 ((1+ランク)xコストx2.2)%上昇/対象:槍・弓・馬・器\n①攻撃が((1+ランク)xコストx2.2)%上昇する(武将ランクとコストで効果が変化する)\n②防御が((1+ランク)xコストx2.2)%上昇する(武将ランクとコストで効果が変化する)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・弓・馬・器　確率 27% / 攻撃 ((1+ランク)xコストx2.2)%上昇+防御 ((1+ランク)xコストx2.2)%上昇(武将ランクとコストで効果が変化)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-17登録(担当F)。カード画像が無いためixanary.com(cards/2260)とixawiki.com(index.php?BushoCard/2260長野業正)の生HTML突き合わせのみで登録した。"
+ ]
+}

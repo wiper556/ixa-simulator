@@ -1,0 +1,39 @@
+{
+ "name": "蜂須賀家政",
+ "no": "2302",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "馬砲器攻防速",
+ "sub": "",
+ "effect": "攻撃 94%上昇+防御 94%上昇+速度 40%上昇(速度は確率100%)",
+ "furigana": "はちすかいえまさ",
+ "illustrator": "鹿角",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1040,
+ "atkGrowth": 37,
+ "defBase": 1040,
+ "defGrowth": 37,
+ "tacticsBase": 500,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3570,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "B",
+  "uma": "S",
+  "ki": "A"
+ },
+ "initialSkill": "大かむろ",
+ "skillDetail": "B/LV10 確率 36% 攻撃 94%上昇+防御 94%上昇+速度 40%上昇/対象:馬・砲・器\n①攻撃 94%上昇する(確率36%)\n②防御 94%上昇する(確率36%)\n③速度 40%上昇する(確率100%)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "馬・砲・器　確率 36% / 攻撃 94%上昇+防御 94%上昇(速度 40%上昇は確率100%)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当H)。カード画像が無いためixanary.com(cards/2302)生HTMLとixawiki.com(index.php?BushoCard/2302蜂須賀家政)の基本ステータス表・スキル表を突き合わせて完全一致を確認して登録した。atk/defが1040で同値だが両ソース独立に一致しているため攻防同値カードとして採用した。"
+ ]
+}

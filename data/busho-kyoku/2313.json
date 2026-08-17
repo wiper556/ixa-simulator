@@ -1,0 +1,42 @@
+{
+ "name": "朝倉義景（2）",
+ "no": "2313",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "弓馬器焙攻防",
+ "sub": "",
+ "effect": "対象兵科の攻撃・防御が上昇+自身の全スキルの卓越確率上昇",
+ "furigana": "あさくらよしかげ",
+ "illustrator": "鹿角",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1050,
+ "atkGrowth": 35,
+ "defBase": 1050,
+ "defGrowth": 35,
+ "tacticsBase": 470,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3600,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "S",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "名族ノ山塞",
+ "skillDetail": "A/LV10 確率 100% 攻撃 92%上昇/対象:弓・馬・器・焙\n①攻撃 92%上昇する\n②防御 92%上昇する\n③このスキルを所持する武将の全スキルの卓越確率に20%を加算する(模倣不可)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓・馬・器・焙　確率 100% / 攻撃 92%上昇+防御 92%上昇(自身の全スキルの卓越確率+20%・模倣不可)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(カード画像なし・第2波)。ixanary.com(cards/2313)生HTMLの埋め込みJSON(ふりがな・イラストレーター・cost・指揮兵数・統率力・攻防兵法初期値/成長値・スキル名/確率/効果)とixawiki.com(BushoCard/2313朝倉義景)の基本ステータス表・スキル追加表を突き合わせ、両ソース完全一致(食い違いなし)を確認して登録した。imageFull/imageChar/rankGradesの根拠はカード画像でなく2ソース一致による。",
+  "章(ch)は情報源(ixanary.com/ixawiki.com)に記載が無く未確認のためnullとした。"
+ ],
+ "wikiOldestComment": "2022-01-11",
+ "wikiCommentCount": 13
+}

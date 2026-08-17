@@ -1,0 +1,40 @@
+{
+ "name": "島津忠恒",
+ "no": "2178",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "槍馬器攻破",
+ "sub": "",
+ "effect": "攻撃 45%上昇+破壊 25%上昇(部隊コスト14以下で100%発動)",
+ "furigana": "しまづただつね",
+ "illustrator": "碧風羽",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 810,
+ "atkGrowth": 21,
+ "defBase": 740,
+ "defGrowth": 18,
+ "tacticsBase": 465,
+ "tacticsGrowth": 2,
+ "lv0Troops": 2740,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "B",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "謀君の差配",
+ "skillDetail": "B/LV10 確率 15% 攻撃 45%上昇+破壊 25%上昇/対象:槍・馬・器\n①攻撃 45%上昇する\n②破壊 25%上昇する\n③部隊コスト14以下で100%発動する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・馬・器　確率 15% / 攻撃 45%上昇+破壊 25%上昇(部隊コスト14以下で100%発動)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当B)。カード画像が無いため imageFull/imageChar は null。ixanary.com(cards/2178)の埋め込みJSONとixawiki.com(index.php?BushoCard/2178島津忠恒)の生HTMLで、コスト/指揮兵数/攻撃防御兵法の初期値成長値/兵科ランク(槍S弓B馬A器A)/イラストレーター(碧風羽)/スキルLV1数値(確率+5%/攻撃17%上昇/破壊9.5%上昇/部隊コスト14以下で100%発動)が完全一致することを確認して登録した。LV10の数値(確率15%/攻撃45%上昇/破壊25%上昇)はixanaryのカードページに明記。",
+  "章(ch)は両ソースとも記載が無いため未確認。synthesisTableは今回付けていない。"
+ ]
+}

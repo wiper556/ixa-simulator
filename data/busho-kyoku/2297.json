@@ -1,0 +1,39 @@
+{
+ "name": "おつやの方",
+ "no": "2297",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "槍器鉄防",
+ "sub": "",
+ "effect": "防御 62%上昇(自領以外の加勢で効果1.5倍)",
+ "furigana": "おつやのかた",
+ "illustrator": "綾乙",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 970,
+ "atkGrowth": 27,
+ "defBase": 1030,
+ "defGrowth": 33,
+ "tacticsBase": 490,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3540,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "B",
+  "ki": "A"
+ },
+ "initialSkill": "冥姫ノ霧",
+ "skillDetail": "B/LV10 確率 27% 防御 62%上昇/対象:槍・器・鉄\n①防御 62%上昇する\n②自領以外の加勢で効果1.5倍",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・器・鉄　確率 27% / 防御 62%上昇(自領以外の加勢で効果1.5倍)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当H)。カード画像が無いためixanary.com(cards/2297)生HTMLとixawiki.com(index.php?BushoCard/2297おつやの方)の基本ステータス表・スキル表を突き合わせて完全一致を確認して登録した。"
+ ]
+}
