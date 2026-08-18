@@ -1,0 +1,42 @@
+{
+ "name": "真田幸村-復刻-（5）",
+ "no": "2969",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "馬砲器攻防",
+ "sub": "",
+ "effect": "攻撃 47%上昇+防御 47%上昇",
+ "furigana": "さなだゆきむら",
+ "illustrator": "正子公也",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 900,
+ "atkGrowth": 23,
+ "defBase": 900,
+ "defGrowth": 23,
+ "tacticsBase": 600.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3500,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "S",
+  "ki": "A"
+ },
+ "initialSkill": "紅焔 六冥銭",
+ "skillDetail": "B/LV10 確率 30% 攻撃 47%上昇+防御 47%上昇/対象:馬・砲・器\n①攻撃 47%上昇する\n②防御 47%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "馬・砲・器　確率 30% / 攻撃 47%上昇+防御 47%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "カード画像が無いため ixanary.com(cards/2969, skills/紅焔 六冥銭)と ixawiki.com(index.php?BushoCard/2969真田幸村, Busho/武将スキル)の生HTML2ソースを突き合わせて登録した。",
+  "コスト3.5・指揮兵数3500・統率(槍A/弓A/馬S/器A)・攻撃900/成長23・防御900/成長23・兵法600.0/成長2.5・ふりがな・イラストレーターは両ソース一致(攻撃防御とも900で同値だが両ソース独立に一致するため実値と判断)。初期スキル「紅焔 六冥銭」[B]はixanary・ixawikiともLV10確率30%/攻撃防御とも47%上昇で一致。",
+  "カードページ本文(ixawiki.com)に「『武将イラスト人気ランキング』上位武将カード復刻版」と明記されているため復刻カードと判断し、名前に-復刻-を付けた(assign一覧の表記「真田幸村(5)」自体には復刻マークが無かった)。",
+  "カード画像が無いためimageFull/imageCharはnull、synthesisTableは付けず、reviewedOkはfalseのまま。章(ch)は両ソースとも記載が無くnullとした。"
+ ]
+}

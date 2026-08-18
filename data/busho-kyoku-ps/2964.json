@@ -1,0 +1,41 @@
+{
+ "name": "義姫（2）",
+ "no": "2964",
+ "ch": null,
+ "cost": 1,
+ "troop": "全防",
+ "sub": "",
+ "effect": "防御 20%上昇(合流攻撃防御時は効果2.5倍)",
+ "furigana": "よしひめ",
+ "illustrator": "mado*pen",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 540,
+ "atkGrowth": 16,
+ "defBase": 650,
+ "defGrowth": 18,
+ "tacticsBase": 420.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 1800,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "雌竜の執成",
+ "skillDetail": "B/LV10 確率 40% 防御 20%上昇/対象:全\n①防御 20%上昇する\n②合流攻撃防御時は効果が2.5倍になる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 40% / 防御 20%上昇(合流攻撃防御時は効果2.5倍)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "カード画像が無いため ixanary.com(cards/2964, skills/雌竜の執成)と ixawiki.com(index.php?BushoCard/2964義姫, Busho/武将スキル)の生HTML2ソースを突き合わせて登録した。",
+  "コスト1・指揮兵数1800・統率(槍A/弓A/馬A/器A)・攻撃540/成長16・防御650/成長18・兵法420.0/成長2.5・ふりがな・イラストレーターは両ソース一致。初期スキル「雌竜の執成」[B]はixanary・ixawikiともLV10確率40%/防御20%上昇/合流攻撃防御時は効果2.5倍で一致。",
+  "カード画像が無いためimageFull/imageCharはnull、synthesisTableは付けず、reviewedOkはfalseのまま。章(ch)は両ソースとも記載が無くnullとした。"
+ ]
+}

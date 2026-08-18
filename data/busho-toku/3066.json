@@ -1,0 +1,41 @@
+{
+ "name": "佐久間盛政",
+ "no": "3066",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "槍馬攻破",
+ "sub": "",
+ "effect": "攻撃 20%上昇+破壊 5%上昇",
+ "furigana": "さくまもりまさ",
+ "illustrator": "NAKAGAWA",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 680,
+ "atkGrowth": 17,
+ "defBase": 650,
+ "defGrowth": 16,
+ "tacticsBase": 440.0,
+ "tacticsGrowth": 1.5,
+ "lv0Troops": 2370,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "C",
+  "uma": "B",
+  "ki": "B"
+ },
+ "initialSkill": "乗り崩し",
+ "skillDetail": "D/LV10 確率 20% 攻撃 20%上昇 破壊 5%上昇/対象:槍・馬\n①攻撃 20%上昇する\n②破壊 5%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・馬　確率 20% / 攻撃 20%上昇+破壊 5%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当F)。カード画像なし。ixanary.com/cards/3066の生HTML埋め込みJSONとixawiki.com(BushoCard/3066佐久間盛政)の基本ステータス表・武将スキル一覧ページ(Busho/武将スキル)のスキル効果テーブルを突き合わせ、統率(槍/弓/馬/器)・コスト・指揮兵数・攻撃/防御/兵法の初期値と成長値・イラストレーター・スキル名/効果(LV1・LV10)が一致することを確認した。",
+  "章(ch)はixanary・ixawikiのどちらにも実装章の記載がなく未確認のためnull。",
+  "rankGradesは2ソース一致のため採用(食い違いなし)。"
+ ]
+}

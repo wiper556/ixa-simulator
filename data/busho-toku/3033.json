@@ -1,0 +1,41 @@
+{
+ "name": "前田慶次",
+ "no": "3033",
+ "ch": null,
+ "cost": 2,
+ "troop": "将攻",
+ "sub": "",
+ "effect": "攻撃 40%上昇",
+ "furigana": "まえだけいじ",
+ "illustrator": "ぺーた",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 895,
+ "atkGrowth": 50,
+ "defBase": 880,
+ "defGrowth": 40,
+ "tacticsBase": 390.0,
+ "tacticsGrowth": 1.5,
+ "lv0Troops": 770,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "B",
+  "uma": "A",
+  "ki": "D"
+ },
+ "initialSkill": "大ふへん者",
+ "skillDetail": "D/LV10 確率 5% 攻撃 40%上昇/対象:将\n①攻撃 40%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "将　確率 5% / 攻撃 40%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当D)。カード画像が無いためixanary.com(cards/3033)とixawiki.com(index.php?BushoCard/3033前田慶次, Busho/武将カード一覧)の生HTML2ソースを突き合わせて登録した。",
+  "統率(S/B/A/D)・コスト2・指揮兵数770・攻撃895/50・防御880/40・兵法390.0/1.5・ふりがな・初期スキル「大ふへん者」[D]はixanary.comとixawiki.comの2ソースで一致することを確認した(不一致箇所は個別に注記)。",
+  "カード画像が無いためimageFull/imageCharはnull、synthesisTableは付けない。reviewedOkはfalseのまま。章(ch)は両ソースとも記載が無くnullとした。"
+ ]
+}

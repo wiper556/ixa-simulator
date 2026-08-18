@@ -1,0 +1,41 @@
+{
+ "name": "龍造寺隆信",
+ "no": "3024",
+ "ch": null,
+ "cost": 3,
+ "troop": "槍攻",
+ "sub": "",
+ "effect": "攻撃 20%上昇",
+ "furigana": "りゅうぞうじたかのぶ",
+ "illustrator": "RARE ENGINE",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 675,
+ "atkGrowth": 17,
+ "defBase": 635,
+ "defGrowth": 15,
+ "tacticsBase": 375.0,
+ "tacticsGrowth": 1.5,
+ "lv0Troops": 2670,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "B",
+  "uma": "B",
+  "ki": "B"
+ },
+ "initialSkill": "槍隊剛撃",
+ "skillDetail": "D/LV10 確率 35% 攻撃 20%上昇/対象:槍\n①攻撃 20%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍　確率 35% / 攻撃 20%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当D)。カード画像が無いためixanary.com(cards/3024)とixawiki.com(index.php?BushoCard/3024龍造寺隆信, Busho/武将カード一覧)の生HTML2ソースを突き合わせて登録した。",
+  "統率(A/B/B/B)・コスト3・指揮兵数2670・攻撃675/17・防御635/15・兵法375.0/1.5・ふりがな・初期スキル「槍隊剛撃」[D]はixanary.comとixawiki.comの2ソースで一致することを確認した(不一致箇所は個別に注記)。",
+  "カード画像が無いためimageFull/imageCharはnull、synthesisTableは付けない。reviewedOkはfalseのまま。章(ch)は両ソースとも記載が無くnullとした。"
+ ]
+}

@@ -1,0 +1,42 @@
+{
+ "name": "おまつ",
+ "no": "3046",
+ "ch": null,
+ "cost": 2,
+ "troop": "全防",
+ "sub": "",
+ "effect": "防御 15%上昇",
+ "furigana": "おまつ",
+ "illustrator": "伊藤龍馬",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 635,
+ "atkGrowth": 15,
+ "defBase": 610,
+ "defGrowth": 15,
+ "tacticsBase": 370.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 2190,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "B",
+  "uma": "D",
+  "ki": "E"
+ },
+ "initialSkill": "鉄壁の備え",
+ "skillDetail": "D/LV10 確率 40% 防御 15%上昇/対象:全\n①防御 15%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 40% / 防御 15%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当E)。カード画像が無いためixanary.com(cards/3046)とixawiki.com(index.php?BushoCard/3046おまつ)の生HTML2ソースを突き合わせて登録した。",
+  "コスト2・指揮兵数2190・攻撃635/+15・防御610/+15・兵法370/+2・統率(槍B/弓B/馬D/器E)・ふりがな・イラストレーターの全項目が2ソース一致した。",
+  "初期スキル「鉄壁の備え」[D]はixanary.comのLV10表記(確率+40%/対象全/防御15%上昇)を採用。ixawiki.comのカードページのLV1相当値(確率+25%/防御5%上昇)と整合していた。",
+  "章(ch)は両ソースに記載が無くnullのまま。"
+ ]
+}

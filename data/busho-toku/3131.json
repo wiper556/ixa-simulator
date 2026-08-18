@@ -1,0 +1,42 @@
+{
+ "name": "北条高広",
+ "no": "3131",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "槍攻",
+ "sub": "",
+ "effect": "槍攻 20%上昇",
+ "furigana": "きたじょうたかひろ",
+ "illustrator": "安里",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 640,
+ "atkGrowth": 17,
+ "defBase": 620,
+ "defGrowth": 16,
+ "tacticsBase": 400.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2310,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "C",
+  "uma": "B",
+  "ki": "B"
+ },
+ "initialSkill": "槍隊剛撃",
+ "skillDetail": "D/LV10 確率 35% 攻撃 20%上昇/対象:槍\n①攻撃 20%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍　確率 35% / 攻撃 20%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当I)。カード画像が無いため ixanary.com(cards/3131, skills/槍隊剛撃)と ixawiki.com(index.php?BushoCard/3131北条高広, Busho/武将スキル)の生HTML2ソースを突き合わせて登録した。",
+  "統率(槍A/弓C/馬B/器B)・コスト2.5・指揮兵数2310・攻撃640/17・防御620/16・兵法400.0/2.0・ふりがな・イラストレーターはixanary.comとixawiki.comの2ソースで完全一致した。",
+  "初期スキル「槍隊剛撃」[D]はixanary.com(skills/槍隊剛撃)のLV10行(確率+35%/対象槍/攻撃20%上昇)とixawiki.com(Busho/武将スキル)のマスター一覧LV10行(確率+35%/槍攻20%上昇)で完全一致し、両ソースの武将対応リストにも3131北条高広が掲載されていることを確認した。",
+  "カード画像が無いためimageFull/imageCharはnull、synthesisTableは付けず、reviewedOkはfalseのまま。章(ch)は両ソースとも記載が無くnullとした。"
+ ]
+}

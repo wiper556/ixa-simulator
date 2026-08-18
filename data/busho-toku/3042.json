@@ -1,0 +1,42 @@
+{
+ "name": "江",
+ "no": "3042",
+ "ch": null,
+ "cost": 1.5,
+ "troop": "全攻速",
+ "sub": "",
+ "effect": "攻撃 5%上昇+速度 25%上昇",
+ "furigana": "ごう",
+ "illustrator": "わだぺん。",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 600,
+ "atkGrowth": 17,
+ "defBase": 490,
+ "defGrowth": 13,
+ "tacticsBase": 345.0,
+ "tacticsGrowth": 1,
+ "lv0Troops": 1650,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "D",
+  "uma": "B",
+  "ki": "D"
+ },
+ "initialSkill": "桜花乱舞",
+ "skillDetail": "D/LV10 確率 100% 攻撃 5%上昇+速度 25%上昇/対象:全\n①攻撃 5%上昇する\n②速度 25%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 攻撃 5%上昇+速度 25%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当E)。カード画像が無いためixanary.com(cards/3042)とixawiki.com(index.php?BushoCard/3042江)の生HTML2ソースを突き合わせて登録した。",
+  "コスト1.5・指揮兵数1650・攻撃600/+17・防御490/+13・兵法345/+1・統率(槍A/弓D/馬B/器D)・ふりがな・イラストレーターの全項目が2ソース一致した。",
+  "初期スキル「桜花乱舞」[D]はixanary.com(cards/3042)のLV1/LV10表記(確率+100%/対象全/攻撃5%上昇/速度25%上昇)を採用した。ixawiki.comのカードページにはLV1相当の値(攻撃0.5%上昇/速度12%上昇)が載っており両者は整合していた(LV1→LV10の伸びとして自然)。",
+  "章(ch)は両ソースに記載が無くnullのまま。"
+ ]
+}

@@ -1,0 +1,42 @@
+{
+ "name": "瀬名姫",
+ "no": "3057",
+ "ch": null,
+ "cost": 2,
+ "troop": "槍馬攻破",
+ "sub": "",
+ "effect": "攻撃 20%上昇+破壊 5%上昇",
+ "furigana": "せなひめ",
+ "illustrator": "Luke",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 625,
+ "atkGrowth": 14,
+ "defBase": 650,
+ "defGrowth": 15,
+ "tacticsBase": 420.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 1990,
+ "rankGrades": {
+  "yari": "C",
+  "yumi": "C",
+  "uma": "B",
+  "ki": "D"
+ },
+ "initialSkill": "乗り崩し",
+ "skillDetail": "D/LV10 確率 20% 攻撃 20%上昇+破壊 5%上昇/対象:槍・馬\n①攻撃 20%上昇する\n②破壊 5%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・馬　確率 20% / 攻撃 20%上昇+破壊 5%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当E)。カード画像が無いためixanary.com(cards/3057)とixawiki.com(index.php?BushoCard/3057瀬名姫)の生HTML2ソースを突き合わせて登録した。",
+  "コスト2・指揮兵数1990・攻撃625/+14・防御650/+15・兵法420/+2.5・統率(槍C/弓C/馬B/器D)・ふりがな・イラストレーターの全項目が2ソース一致した。",
+  "初期スキル「乗り崩し」[D]はixanary.comのLV10表記(確率+20%/対象槍・馬/攻撃20%上昇・破壊5%上昇)とixawiki.comのカードページのLV1相当値(確率+10%/攻撃10%上昇・破壊2%上昇)が整合していた。",
+  "章(ch)は両ソースに記載が無くnullのまま。"
+ ]
+}

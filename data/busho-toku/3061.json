@@ -1,0 +1,42 @@
+{
+ "name": "細川忠興",
+ "no": "3061",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "弓攻",
+ "sub": "",
+ "effect": "攻撃 20%上昇",
+ "furigana": "ほそかわただおき",
+ "illustrator": "さんば挿",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 690,
+ "atkGrowth": 16,
+ "defBase": 660,
+ "defGrowth": 16,
+ "tacticsBase": 450.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 2290,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "A",
+  "uma": "B",
+  "ki": "B"
+ },
+ "initialSkill": "弓隊剛撃",
+ "skillDetail": "D/LV10 確率 35% 攻撃 20%上昇/対象:弓\n①攻撃 20%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓　確率 35% / 攻撃 20%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当E)。カード画像が無いためixanary.com(cards/3061)とixawiki.com(index.php?BushoCard/3061細川忠興)の生HTML2ソースを突き合わせて登録した。",
+  "コスト2.5・指揮兵数2290・攻撃690/+16・防御660/+16・兵法450/+2・統率(槍B/弓A/馬B/器B)・ふりがな(ほそかわただおき。ixawikiは「ほそかわ ただおき」と姓名間にスペースがあるのみで読みは同一)・イラストレーターの全項目が2ソース一致した。",
+  "初期スキル「弓隊剛撃」[D]はixanary.comのLV10表記(確率+35%/対象弓/攻撃20%上昇)を採用。ixawiki.comのカードページのLV1相当値(確率+25%/攻撃10%上昇)と整合していた。",
+  "章(ch)は両ソースに記載が無くnullのまま。"
+ ]
+}

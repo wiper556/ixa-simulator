@@ -1,0 +1,43 @@
+{
+ "name": "於大の方",
+ "no": "3127",
+ "ch": null,
+ "cost": 2,
+ "troop": "全攻速",
+ "sub": "",
+ "effect": "全攻 5%上昇+全速 32%上昇",
+ "furigana": "おだいのかた",
+ "illustrator": "小林元",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 630,
+ "atkGrowth": 16,
+ "defBase": 610,
+ "defGrowth": 13,
+ "tacticsBase": 400.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2000,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "C",
+  "uma": "B",
+  "ki": "C"
+ },
+ "initialSkill": "龍神絢爛",
+ "skillDetail": "B/LV10 確率 100% 攻撃 5%上昇+速度 32%上昇/対象:全\n①攻撃 5%上昇する\n②速度 32%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 攻撃 5%上昇+速度 32%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当I)。カード画像が無いため ixanary.com(cards/3127, skills/龍神絢爛)と ixawiki.com(index.php?BushoCard/3127於大の方, Busho/武将スキル)の生HTML2ソースを突き合わせて登録した。",
+  "統率(槍A/弓C/馬B/器C)・コスト2.0・指揮兵数2000・攻撃630/16・兵法400.0/2.0・ふりがな・イラストレーターはixanary.comとixawiki.comの2ソースで完全一致した。",
+  "初期スキル「龍神絢爛」[B]はixanary.com(skills/龍神絢爛)のLV10行(確率+100%/対象全/攻撃5%上昇+速度32%上昇)とixawiki.com(Busho/武将スキル)のマスター一覧LV10行(確率+100%/全攻5%上昇/全速32%上昇)で完全一致し、両ソースの武将対応リストにも3127於大の方が掲載されていることを確認した。",
+  "【既知バグを検出・ixawiki値を採用】ixanary.comのdefBaseは630(=atkBaseと同値)だったが、ixawiki.comは独立に610(atkBaseと異なる値)を示しており、ixanaryの「防御が攻撃と同じ値になる」既知バグに該当すると判断してixawiki側の610を採用した(nullにはしていない)。防御成長値13は両ソースで一致。",
+  "カード画像が無いためimageFull/imageCharはnull、synthesisTableは付けず、reviewedOkはfalseのまま。章(ch)は両ソースとも記載が無くnullとした。"
+ ]
+}

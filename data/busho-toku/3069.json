@@ -1,0 +1,42 @@
+{
+ "name": "藤堂高虎",
+ "no": "3069",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "器破",
+ "sub": "",
+ "effect": "破壊 20%上昇",
+ "furigana": "とうどうたかとら",
+ "illustrator": "タケダサナ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 700,
+ "atkGrowth": 17,
+ "defBase": 670,
+ "defGrowth": 17,
+ "tacticsBase": 375.0,
+ "tacticsGrowth": 1.5,
+ "lv0Troops": 2420,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "B",
+  "uma": "D",
+  "ki": "A"
+ },
+ "initialSkill": "郭破城",
+ "skillDetail": "D/LV10 確率 36% 破壊 20%上昇/対象:器\n①破壊 20%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "器　確率 36% / 破壊 20%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当F)。カード画像なし。ixanary.com/cards/3069の生HTML埋め込みJSONとixawiki.com(BushoCard/3069藤堂高虎)の基本ステータス表・武将スキル一覧ページ(Busho/武将スキル)のスキル効果テーブルを突き合わせ、統率(槍/弓/馬/器)・コスト・指揮兵数・攻撃/防御/兵法の初期値と成長値・イラストレーター・スキル名/効果(LV1・LV10)が一致することを確認した。",
+  "章(ch)はixanary・ixawikiのどちらにも実装章の記載がなく未確認のためnull。",
+  "rankGradesは2ソース一致のため採用(食い違いなし)。",
+  "ixanaryの埋め込みJSONskillStrは「攻破.郭破城.D」だが実際の効果は破壊のみ(攻撃%upは無し)で、ixawikiのスキル一覧側は「攻：郭破城」表記。troopは実際の効果(破壊のみ)に合わせて「器破」とした。"
+ ]
+}

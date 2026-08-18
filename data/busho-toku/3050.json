@@ -1,0 +1,42 @@
+{
+ "name": "愛姫",
+ "no": "3050",
+ "ch": null,
+ "cost": 2,
+ "troop": "槍砲攻破",
+ "sub": "",
+ "effect": "攻撃 20%上昇+破壊 10%上昇",
+ "furigana": "めごひめ",
+ "illustrator": "藤川祐華",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 660,
+ "atkGrowth": 17,
+ "defBase": 580,
+ "defGrowth": 16,
+ "tacticsBase": 345.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 1970,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "E",
+  "uma": "B",
+  "ki": "B"
+ },
+ "initialSkill": "槍陣 弧月",
+ "skillDetail": "B/LV10 確率 35% 攻撃 20%上昇+破壊 10%上昇/対象:槍・砲\n①攻撃 20%上昇する\n②破壊 10%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・砲　確率 35% / 攻撃 20%上昇+破壊 10%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当E)。カード画像が無いためixanary.com(cards/3050)とixawiki.com(index.php?BushoCard/3050愛姫)の生HTML2ソースを突き合わせて登録した。",
+  "コスト2・指揮兵数1970・攻撃660/+17・防御580/+16・兵法345/+2・統率(槍A/弓E/馬B/器B)・ふりがな・イラストレーターの全項目が2ソース一致した。",
+  "初期スキル「槍陣 弧月」[B]はixanary.comのLV10表記(確率+35%/対象槍・砲/攻撃20%上昇・破壊10%上昇)とixawiki.comのカードページのLV1相当値(確率+25%/攻撃10%上昇・破壊2%上昇)が完全一致し確認できた。",
+  "章(ch)は両ソースに記載が無くnullのまま。"
+ ]
+}

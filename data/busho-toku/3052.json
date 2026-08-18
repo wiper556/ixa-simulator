@@ -1,0 +1,42 @@
+{
+ "name": "百地三太夫",
+ "no": "3052",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "弓砲器攻破",
+ "sub": "",
+ "effect": "攻撃 20%上昇+破壊 15%上昇",
+ "furigana": "ももちさんだゆう",
+ "illustrator": "isuZu",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 925,
+ "atkGrowth": 17,
+ "defBase": 925,
+ "defGrowth": 17,
+ "tacticsBase": 480.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 2220,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "A",
+  "uma": "D",
+  "ki": "B"
+ },
+ "initialSkill": "炮烙の計",
+ "skillDetail": "D/LV10 確率 15% 攻撃 20%上昇+破壊 15%上昇/対象:弓・砲・器\n①攻撃 20%上昇する\n②破壊 15%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓・砲・器　確率 15% / 攻撃 20%上昇+破壊 15%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当E)。カード画像が無いためixanary.com(cards/3052)とixawiki.com(index.php?BushoCard/3052百地三太夫)の生HTML2ソースを突き合わせて登録した。",
+  "コスト2.5・指揮兵数2220・攻撃925/+17・防御925/+17・兵法480/+2.5・統率(槍B/弓A/馬D/器B)・ふりがな・イラストレーターの全項目が2ソース一致した。攻撃と防御が同値(925)だがixanaryとixawiki双方が独立に一致しているため誤登録ではなく本当に攻防同値のカードと判断した。",
+  "初期スキル「炮烙の計」[D]はixanary.comのLV10表記(確率+15%/対象弓・砲・器/攻撃20%上昇・破壊15%上昇)とixawiki.comのカードページのLV1相当値(確率+5%/攻撃10%上昇・破壊10%上昇)が整合していた。",
+  "章(ch)は両ソースに記載が無くnullのまま。"
+ ]
+}

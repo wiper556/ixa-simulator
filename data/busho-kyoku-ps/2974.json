@@ -1,0 +1,44 @@
+{
+ "name": "織田三郎信長",
+ "no": "2974",
+ "ch": null,
+ "cost": 4,
+ "troop": "弓馬砲攻",
+ "sub": "",
+ "effect": "攻撃 45%上昇(2部隊以下の攻撃で効果2倍)",
+ "furigana": "おださぶろうのぶなが",
+ "illustrator": "©原哲夫・北原星望／NSP 2010",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1050,
+ "atkGrowth": 32,
+ "defBase": 910,
+ "defGrowth": 27,
+ "tacticsBase": 460.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 3700,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "S",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "いくさの子",
+ "skillDetail": "B/LV10 確率 24% 攻撃 45%上昇/対象:弓・馬・砲\n①攻撃 45%上昇する\n②2部隊以下での攻撃時は効果が2倍になる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓・馬・砲　確率 24% / 攻撃 45%上昇(2部隊以下の攻撃で効果2倍)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "カード画像が無いため ixanary.com(cards/2974, skills/いくさの子)と ixawiki.com(index.php?BushoCard/2974織田三郎信長, Busho/武将スキル)の生HTML2ソースを突き合わせて登録した。「コミックゼノン×戦国コラボ」の限定カードで、武将イラスト人気ランキングの復刻とは無関係。",
+  "コスト4・指揮兵数3700・統率(槍A/弓S/馬A/器A)・攻撃1050/成長32・兵法460.0/成長2.0・ふりがな・イラストレーターは両ソース一致。初期スキル「いくさの子」[B]はixanary・ixawikiともLV10確率24%/攻撃45%上昇/2部隊以下の攻撃で効果2倍で一致。",
+  "【既知バグにより解決】防御初期値がixanary.com=1050(攻撃と同値)、ixawiki.com=910で食い違った。BRIEFに記載の既知バグ(ixanaryのdefBaseがatkBaseと同値になる不具合)に該当し、ixawiki側が独立した異なる値(910)を示しているため、ixanary側の誤りと判断してixawikiの910を採用した。defGrowth27は両ソース一致。",
+  "カード画像が無いためimageFull/imageCharはnull、synthesisTableは付けず、reviewedOkはfalseのまま。章(ch)は両ソースとも記載が無くnullとした。",
+  "【命名の食い違い】assign一覧の表記は無印「織田三郎信長」だったが、同じdata/busho-kyoku-ps内に既に無印「織田三郎信長」(No.2525・コスト等が異なる別カード)が登録済みで衝突するため、後から見つかった本カードに「（2）」を付けて区別した。ixawiki一覧側の(N)の付け方とサイト側の既存登録がずれている可能性があり、要確認。",
+  "2026-08-18: 登録時に既存カードと同名になるのを避けて（N）を空き番号へ振り直していたが、**（N）はゲーム内でしか分からない**ので ixawiki の一覧の表記に戻した。既存カードと同名のままなので、正しい（N）はうぐさんに確認が要る。"
+ ]
+}

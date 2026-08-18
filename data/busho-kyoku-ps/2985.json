@@ -1,0 +1,42 @@
+{
+ "name": "千姫",
+ "no": "2985",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "槍弓馬器攻",
+ "sub": "",
+ "effect": "攻撃 (12×自軍姫数)%上昇(効果上限120%まで)",
+ "furigana": "せんひめ",
+ "illustrator": "東上文",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1000,
+ "atkGrowth": 28,
+ "defBase": 920,
+ "defGrowth": 24,
+ "tacticsBase": 460,
+ "tacticsGrowth": 2,
+ "lv0Troops": 3470,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "B",
+  "ki": "S"
+ },
+ "initialSkill": "千万の戦姫",
+ "skillDetail": "A/LV10 確率 30% 攻撃 (12×自軍姫数)%上昇/対象:槍・弓・馬・器\n①攻撃が(12×自軍姫数)%上昇する(効果上限120%まで)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・弓・馬・器　確率 30% / 攻撃 (12×自軍姫数)%上昇(効果上限120%まで)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録。カード画像が無いためixanaryとixawikiの一致だけで入れた(rankGradesは両ソース完全一致)。synthesisTableは今回のバッチでは付けていない。",
+  "スキル『千万の戦姫』はixanaryがLV1(確率+9%/攻撃(5×自軍姫数)%上昇/効果上限120%まで)とLV10(確率+30%/攻撃(12×自軍姫数)%上昇/効果上限120%まで)を明示。ixawikiの基本ステータス表の値はixanaryのLV1と完全一致していたため、今回のバッチで頻発した『ixawikiの表がLV1のまま』パターンと判断し、ixanaryの明示的なLV10値を採用した(この現象は千代・京極竜子・千姫・亀寿姫の4体で共通して見られ、同じスキルの元データがLV1のまま更新されていないためと考えられる)。",
+  "スキルランクはixanaryの埋め込みデータでは末尾が空欄(未確定)になっているカードがあったが、ixawikiが4体とも一貫してAランクと表示しており対立は無いためAを採用した。",
+  "defBaseはixanaryの生埋め込みJSONだとatkBaseと同値の1000になっていたが(既知の壊れ方の型)、ixawikiは独立に920(atkと異なる値)を示しており、ixanaryの方が壊れていると判断してixawikiの920を採用した。成長値・兵法・コスト・指揮兵数は両ソース一致。"
+ ]
+}

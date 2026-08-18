@@ -1,0 +1,41 @@
+{
+ "name": "甲賀弦之介",
+ "no": "2988",
+ "ch": null,
+ "cost": 4,
+ "troop": "砲器防",
+ "sub": "",
+ "effect": "敵軍総攻撃力÷敵軍武将人数×100%を防御力に加算する(模倣不可)",
+ "furigana": "こうがげんのすけ",
+ "illustrator": "山田風太郎・せがわまさき／講談社",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1000,
+ "atkGrowth": 29,
+ "defBase": 1040,
+ "defGrowth": 32,
+ "tacticsBase": 480,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3740,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "幻惑の瞳術",
+ "skillDetail": "A/LV10 確率 25% 敵軍総攻撃力÷敵軍武将人数×100%を防御力に加算する/対象:砲・器\n模倣不可\n①敵軍総攻撃力÷敵軍武将人数×100%を防御力に加算する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "砲・器　確率 25% / 敵軍総攻撃力÷敵軍武将人数×100%を防御力に加算する(模倣不可)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録。カード画像が無いためixanaryとixawikiの一致だけで入れた(rankGradesは両ソース完全一致)。synthesisTableは今回のバッチでは付けていない。",
+  "defBaseはixanaryの生埋め込みJSONだとatkBaseと同値の1000になっていたが(既知の壊れ方の型)、ixawikiは独立に1040(atkと異なる値)を示しており、ixanaryの方が壊れていると判断してixawikiの1040を採用した。成長値・兵法・コスト・指揮兵数は両ソース一致。",
+  "このカードのixawikiページはLv1とLv10を明示的に別行で掲載する形式で、Lv10側の数値(確率25%/敵軍総攻撃力÷敵軍武将人数×100%を防御力に加算)はixanaryのLV10表示と完全一致しており対立は無い。"
+ ]
+}

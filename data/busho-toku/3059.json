@@ -1,0 +1,42 @@
+{
+ "name": "長束正家",
+ "no": "3059",
+ "ch": null,
+ "cost": 2,
+ "troop": "弓攻",
+ "sub": "",
+ "effect": "攻撃 20%上昇",
+ "furigana": "なつかまさいえ",
+ "illustrator": "タクマ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 680,
+ "atkGrowth": 16,
+ "defBase": 660,
+ "defGrowth": 16,
+ "tacticsBase": 420.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 2100,
+ "rankGrades": {
+  "yari": "C",
+  "yumi": "B",
+  "uma": "B",
+  "ki": "C"
+ },
+ "initialSkill": "弓隊剛撃",
+ "skillDetail": "D/LV10 確率 35% 攻撃 20%上昇/対象:弓\n①攻撃 20%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓　確率 35% / 攻撃 20%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当E)。カード画像が無いためixanary.com(cards/3059)とixawiki.com(index.php?BushoCard/3059長束正家)の生HTML2ソースを突き合わせて登録した。",
+  "コスト2・指揮兵数2100・攻撃680/+16・防御660/+16・兵法420/+2・統率(槍C/弓B/馬B/器C)・ふりがな・イラストレーターの全項目が2ソース一致した。",
+  "初期スキル「弓隊剛撃」[D]はixanary.comのLV10表記(確率+35%/対象弓/攻撃20%上昇)を採用。ixawiki.comのカードページのLV1相当値(確率+25%/攻撃10%上昇)と整合していた。",
+  "章(ch)は両ソースに記載が無くnullのまま。"
+ ]
+}

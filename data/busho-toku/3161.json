@@ -1,0 +1,40 @@
+{
+ "name": "栄姫",
+ "no": "3161",
+ "ch": null,
+ "cost": 2,
+ "troop": "槍弓馬防",
+ "sub": "",
+ "effect": "防御 30%上昇",
+ "furigana": "えいひめ",
+ "illustrator": "双羽純",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 540,
+ "atkGrowth": 16,
+ "defBase": 610,
+ "defGrowth": 18,
+ "tacticsBase": 430.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 2300,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "B",
+  "uma": "B",
+  "ki": "D"
+ },
+ "initialSkill": "藤巴葵陣",
+ "skillDetail": "C/LV10 確率 20% 防御 30%上昇/対象:槍・弓・馬\n①防御 30%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・弓・馬　確率 20% / 防御 30%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当J)。カード画像が無いためixanaryとixawikiの両方を確認した。武将名「栄姫」/ふりがな「えいひめ」/特/コスト2/統率 槍A・弓B・馬B・器D/攻撃540・防御610・兵法430.0/成長値(攻撃+16/防御+18/兵法+2)/指揮兵数2300/カードNo.3161/スキル「藤巴葵陣LV10」[C] 確率:20%・対象 槍・弓・馬・防御:30%上昇/Illust 双羽純。ixanary(カードページ埋め込みJSON)とixawiki(BushoCardページ)の統率・コスト・指揮兵数・攻防兵法初期値と成長値・スキル対象と効果が完全に一致したためそのまま採用した。",
+  "rankGradesはカード画像で確認できないため未reviewed(reviewedOk=false)。章(ch)はカード画像でもixanary/ixawikiでも確認できなかったためnullのまま。"
+ ]
+}

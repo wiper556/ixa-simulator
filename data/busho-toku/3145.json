@@ -1,0 +1,40 @@
+{
+ "name": "平塚為広",
+ "no": "3145",
+ "ch": null,
+ "cost": 2,
+ "troop": "槍攻破",
+ "sub": "",
+ "effect": "攻撃 15%上昇+破壊 15%上昇",
+ "furigana": "ひらつかためひろ",
+ "illustrator": "竹安佐和記",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 635,
+ "atkGrowth": 15,
+ "defBase": 650,
+ "defGrowth": 17,
+ "tacticsBase": 410.0,
+ "tacticsGrowth": 1.5,
+ "lv0Troops": 1940,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "A",
+  "uma": "B",
+  "ki": "C"
+ },
+ "initialSkill": "義将薙刀",
+ "skillDetail": "D/LV10 確率 30% 攻撃 15%上昇+破壊 15%上昇/対象:槍\n①攻撃 15%上昇する\n②破壊 15%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍　確率 30% / 攻撃 15%上昇+破壊 15%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当J)。カード画像が無いためixanaryとixawikiの両方を確認した。武将名「平塚為広」/ふりがな「ひらつかためひろ」/特/コスト2/統率 槍B・弓A・馬B・器C/攻撃635・防御650・兵法410.0/成長値(攻撃+15/防御+17/兵法+1.5)/指揮兵数1940/カードNo.3145/スキル「義将薙刀LV10」[D] 確率:30%・対象 槍・攻撃:15%上昇・破壊:15%上昇/Illust 竹安佐和記。ixanary(カードページ埋め込みJSON)とixawiki(BushoCardページ)の統率・コスト・指揮兵数・攻防兵法初期値と成長値・スキル対象と効果が完全に一致したためそのまま採用した。",
+  "rankGradesはカード画像で確認できないため未reviewed(reviewedOk=false)。章(ch)はカード画像でもixanary/ixawikiでも確認できなかったためnullのまま。"
+ ]
+}

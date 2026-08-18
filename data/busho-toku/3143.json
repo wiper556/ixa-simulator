@@ -1,0 +1,40 @@
+{
+ "name": "伊勢龍姫",
+ "no": "3143",
+ "ch": null,
+ "cost": 1.5,
+ "troop": "槍馬砲攻",
+ "sub": "",
+ "effect": "攻撃 17%上昇",
+ "furigana": "いせりゅうひめ",
+ "illustrator": "ユティフ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 660,
+ "atkGrowth": 17,
+ "defBase": 620,
+ "defGrowth": 15,
+ "tacticsBase": 440.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 1520,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "C",
+  "uma": "B",
+  "ki": "B"
+ },
+ "initialSkill": "綾羅錦繍",
+ "skillDetail": "C/LV10 確率 30% 攻撃 17%上昇/対象:槍・馬・砲\n①攻撃 17%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・馬・砲　確率 30% / 攻撃 17%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当J)。カード画像が無いためixanaryとixawikiの両方を確認した。武将名「伊勢龍姫」/ふりがな「いせりゅうひめ」/特/コスト1.5/統率 槍B・弓C・馬B・器B/攻撃660・防御620・兵法440.0/成長値(攻撃+17/防御+15/兵法+2)/指揮兵数1520/カードNo.3143/スキル「綾羅錦繍LV10」[C] 確率:30%・対象 槍・馬・砲・攻撃:17%上昇/Illust ユティフ。ixanary(カードページ埋め込みJSON)とixawiki(BushoCardページ)の統率・コスト・指揮兵数・攻防兵法初期値と成長値・スキル対象と効果が完全に一致したためそのまま採用した。",
+  "rankGradesはカード画像で確認できないため未reviewed(reviewedOk=false)。章(ch)はカード画像でもixanary/ixawikiでも確認できなかったためnullのまま。"
+ ]
+}

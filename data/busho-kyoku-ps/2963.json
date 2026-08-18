@@ -1,0 +1,41 @@
+{
+ "name": "瑞渓院（3）",
+ "no": "2963",
+ "ch": null,
+ "cost": 2,
+ "troop": "槍砲防",
+ "sub": "",
+ "effect": "防御 (25+ランク×4)%上昇(武将ランクで効果が変化)",
+ "furigana": "ずいけいいん",
+ "illustrator": "碧風羽",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 640,
+ "atkGrowth": 15,
+ "defBase": 800,
+ "defGrowth": 20,
+ "tacticsBase": 470.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2460,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "C",
+  "uma": "C",
+  "ki": "A"
+ },
+ "initialSkill": "戦陣巴龍",
+ "skillDetail": "B/LV10 確率 35% 防御 (25+ランク×4)%上昇/対象:槍・砲\n①防御が(25+ランク×4)%上昇する(武将ランクで効果が変化する)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・砲　確率 35% / 防御 (25+ランク×4)%上昇(武将ランクで効果が変化)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "カード画像が無いため ixanary.com(cards/2963, skills/戦陣巴龍)と ixawiki.com(index.php?BushoCard/2963瑞渓院, Busho/武将スキル)の生HTML2ソースを突き合わせて登録した。",
+  "コスト2・指揮兵数2460・統率(槍S/弓C/馬C/器A)・攻撃640/成長15・防御800/成長20・兵法470.0/成長2.0・ふりがな・イラストレーターは両ソース一致。初期スキル「戦陣巴龍」[B]はixanary・ixawikiともLV10確率35%/防御(25+ランク×4)%上昇で一致(ランク依存のため数値は計算せず式のまま登録)。",
+  "カード画像が無いためimageFull/imageCharはnull、synthesisTableは付けず、reviewedOkはfalseのまま。章(ch)は両ソースとも記載が無くnullとした。"
+ ]
+}

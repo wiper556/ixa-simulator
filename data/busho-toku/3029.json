@@ -1,0 +1,41 @@
+{
+ "name": "宝蔵院胤栄",
+ "no": "3029",
+ "ch": null,
+ "cost": 1.5,
+ "troop": "将防",
+ "sub": "",
+ "effect": "防御 30%上昇",
+ "furigana": "ほうぞういんいんえい",
+ "illustrator": "三好載克",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 895,
+ "atkGrowth": 45,
+ "defBase": 955,
+ "defGrowth": 45,
+ "tacticsBase": 250.0,
+ "tacticsGrowth": 1,
+ "lv0Troops": 710,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "F",
+  "uma": "F",
+  "ki": "F"
+ },
+ "initialSkill": "宝蔵院流",
+ "skillDetail": "D/LV10 確率 35% 防御 30%上昇/対象:将\n①防御 30%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "将　確率 35% / 防御 30%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当D)。カード画像が無いためixanary.com(cards/3029)とixawiki.com(index.php?BushoCard/3029宝蔵院胤栄, Busho/武将カード一覧)の生HTML2ソースを突き合わせて登録した。",
+  "統率(S/F/F/F)・コスト1.5・指揮兵数710・攻撃895/45・防御955/45・兵法250.0/1・ふりがな・初期スキル「宝蔵院流」[D]はixanary.comとixawiki.comの2ソースで一致することを確認した(不一致箇所は個別に注記)。",
+  "カード画像が無いためimageFull/imageCharはnull、synthesisTableは付けない。reviewedOkはfalseのまま。章(ch)は両ソースとも記載が無くnullとした。"
+ ]
+}

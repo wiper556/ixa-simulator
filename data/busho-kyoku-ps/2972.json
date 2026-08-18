@@ -1,0 +1,43 @@
+{
+ "name": "宇喜多モニカ-復刻-",
+ "no": "2972",
+ "ch": null,
+ "cost": 1,
+ "troop": "全攻速",
+ "sub": "",
+ "effect": "攻撃 14%上昇+速度 30%上昇(単独出陣時は速度効果10倍)",
+ "furigana": "うきたもにか",
+ "illustrator": "葉山えいし",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 980,
+ "atkGrowth": 43,
+ "defBase": 860,
+ "defGrowth": 36,
+ "tacticsBase": 490.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 1480,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "S",
+  "ki": "B"
+ },
+ "initialSkill": "紫電閃耀",
+ "skillDetail": "B/LV10 確率 100% 攻撃 14%上昇+速度 30%上昇/対象:全\n①攻撃 14%上昇する\n②速度 30%上昇する\n③単独出陣時は速度効果が10倍になる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 攻撃 14%上昇+速度 30%上昇(単独出陣時は速度効果10倍)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "カード画像が無いため ixanary.com(cards/2972, skills/紫電閃耀)と ixawiki.com(index.php?BushoCard/2972宇喜多モニカ, Busho/武将スキル)の生HTML2ソースを突き合わせて登録した。",
+  "コスト1・指揮兵数1480・統率(槍A/弓A/馬S/器B)・攻撃980/成長43・防御860/成長36・兵法490.0/成長2.5・ふりがな・イラストレーターは両ソース一致。",
+  "【食い違い】初期スキル「紫電閃耀」[B]のLV10攻撃値がixanary.com=16.8%上昇、ixawiki.com(Busho/武将スキルマスター一覧)=14%上昇で食い違う。確率100%・速度30%上昇(単独出陣時10倍)・LV1値(攻撃5%/速度8%)は両ソース一致。判断材料が無いため、ixawikiのマスター一覧側(14%)を採用した。",
+  "カードページ本文(ixawiki.com)に「『武将イラスト人気ランキング』上位武将カード復刻版」と明記されているため復刻カードと判断し、名前に-復刻-を付けた(assign一覧の表記「宇喜多モニカ」自体には復刻マークが無かった)。",
+  "カード画像が無いためimageFull/imageCharはnull、synthesisTableは付けず、reviewedOkはfalseのまま。章(ch)は両ソースとも記載が無くnullとした。"
+ ]
+}

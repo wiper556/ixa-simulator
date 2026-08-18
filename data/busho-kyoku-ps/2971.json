@@ -1,0 +1,42 @@
+{
+ "name": "おまつ-復刻-（3）",
+ "no": "2971",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "槍弓器防",
+ "sub": "",
+ "effect": "防御 36%上昇(自領以外の加勢で効果2倍)",
+ "furigana": "おまつ",
+ "illustrator": "碧風羽",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 850,
+ "atkGrowth": 23,
+ "defBase": 970,
+ "defGrowth": 26,
+ "tacticsBase": 510.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 3400,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "B",
+  "ki": "A"
+ },
+ "initialSkill": "援槍飛檄",
+ "skillDetail": "B/LV10 確率 34% 防御 36%上昇/対象:槍・弓・器\n①防御 36%上昇する\n②自領以外への加勢では効果が2倍になる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・弓・器　確率 34% / 防御 36%上昇(自領以外の加勢で効果2倍)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "カード画像が無いため ixanary.com(cards/2971, skills/援槍飛檄)と ixawiki.com(index.php?BushoCard/2971おまつ, Busho/武将スキル)の生HTML2ソースを突き合わせて登録した。",
+  "コスト3.5・指揮兵数3400・統率(槍S/弓A/馬B/器A)・攻撃850/成長23・防御970/成長26・兵法510.0/成長2.0・ふりがな・イラストレーターは両ソース一致。初期スキル「援槍飛檄」[B]はixanary・ixawikiともLV10確率34%/防御36%上昇/自領以外の加勢で効果2倍で一致。",
+  "カードページ本文(ixawiki.com)に「『武将イラスト人気ランキング』上位武将カード復刻版」と明記されているため復刻カードと判断し、名前に-復刻-を付けた(assign一覧の表記「おまつ(3)」自体には復刻マークが無かった)。",
+  "カード画像が無いためimageFull/imageCharはnull、synthesisTableは付けず、reviewedOkはfalseのまま。章(ch)は両ソースとも記載が無くnullとした。"
+ ]
+}

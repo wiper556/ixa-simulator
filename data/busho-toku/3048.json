@@ -1,0 +1,43 @@
+{
+ "name": "加藤嘉明",
+ "no": "3048",
+ "ch": null,
+ "cost": 2,
+ "troop": "弓砲防",
+ "sub": "",
+ "effect": "防御 30%上昇",
+ "furigana": null,
+ "illustrator": "姉崎ダイナミック",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 620,
+ "atkGrowth": 16,
+ "defBase": 650,
+ "defGrowth": 16,
+ "tacticsBase": 375.0,
+ "tacticsGrowth": 1.5,
+ "lv0Troops": 2010,
+ "rankGrades": {
+  "yari": "C",
+  "yumi": "A",
+  "uma": "B",
+  "ki": "C"
+ },
+ "initialSkill": "弾幕防壁陣",
+ "skillDetail": "C/LV10 確率 20% 防御 30%上昇/対象:弓・砲\n①防御 30%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓・砲　確率 20% / 防御 30%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当E)。カード画像が無いためixanary.com(cards/3048)とixawiki.com(index.php?BushoCard/3048加藤嘉明)の生HTML2ソースを突き合わせて登録した。",
+  "コスト2・指揮兵数2010・攻撃620/+16・防御650/+16・兵法375/+1.5・統率(槍C/弓A/馬B/器C)・イラストレーターは2ソース一致した。",
+  "【要申し送り】ふりがながixanaryで「かとうよしあき」・ixawikiで「かとうよしあきら」(「よしあきも読む場合あり」との注記付き)と食い違ったためfuriganaはnullのまま登録した。",
+  "初期スキル「弾幕防壁陣」[C]はixanary.comのLV10表記(確率+20%/対象弓・砲/防御30%上昇)を採用。ixawiki.comのカードページのLV1相当値(確率+5%/防御15%上昇)と整合していた。",
+  "章(ch)は両ソースに記載が無くnullのまま。"
+ ]
+}

@@ -1,0 +1,39 @@
+{
+ "name": "羽柴秀吉",
+ "no": "3118",
+ "ch": null,
+ "cost": 3,
+ "troop": "槍馬攻",
+ "sub": "",
+ "effect": "攻撃 10%上昇",
+ "furigana": "はしばひでよし",
+ "illustrator": "株式会社レバーン＋キョー介",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 670,
+ "atkGrowth": 16,
+ "defBase": 660,
+ "defGrowth": 16,
+ "tacticsBase": 445.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 2600,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "B",
+  "uma": "B",
+  "ki": "B"
+ },
+ "initialSkill": "槍馬連撃",
+ "skillDetail": "D/LV10 確率 20% 攻撃 10%上昇/対象:槍・馬\n①攻撃 10%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・馬　確率 20% / 攻撃 10%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当H)。カード画像なし。ixanary.com/cards/3118 と ixawiki.com(BushoCard/3118羽柴秀吉)の生HTMLを突き合わせて登録した。統率・コスト・指揮兵数・スキルの確率と効果値・攻撃/兵法の初期値と成長値は両ソース完全一致。ただし防御初期値はixanaryが660のはずの値を攻撃初期値と同じ670で返す既知の不具合(defBase=atkBaseパターン)に該当したため、ixawikiの値(660)を採用した。"
+ ]
+}

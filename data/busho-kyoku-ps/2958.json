@@ -1,0 +1,43 @@
+{
+ "name": "本多忠勝（3）",
+ "no": "2958",
+ "ch": null,
+ "cost": 3,
+ "troop": "槍弓馬攻",
+ "sub": "",
+ "effect": "攻撃 コスト×13=39%上昇",
+ "furigana": "ほんだただかつ",
+ "illustrator": "小森ニコ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 860,
+ "atkGrowth": 19,
+ "defBase": 730,
+ "defGrowth": 17,
+ "tacticsBase": 510.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3320,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "B",
+  "uma": "S",
+  "ki": "C"
+ },
+ "initialSkill": "無双蜻蛉切",
+ "skillDetail": "A/LV10 確率 40% 攻撃 39%上昇/対象:槍・弓・馬\n①攻撃が39%上昇する(武将のコストで効果が変化する)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・弓・馬　確率 40% / 攻撃 コスト×13=39%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "カード画像が無いため ixanary.com(cards/2958, skills/無双蜻蛉切)と ixawiki.com(index.php?BushoCard/2958本多忠勝, Busho/武将スキル)の生HTML2ソースを突き合わせて登録した。",
+  "コスト3・指揮兵数3320・統率(槍A/弓B/馬S/器C)・攻撃860/成長19・防御730/成長17・兵法510.0/成長2.5・ふりがな・イラストレーターは両ソース一致。初期スキル「無双蜻蛉切」[A]はixanary・ixawikiともLV10確率40%/攻撃(コストx13)%上昇で一致。自身のコスト3を代入し39%とした(サイトの既存コスト依存スキル表記に合わせた)。",
+  "カード画像が無いためimageFull/imageCharはnull、synthesisTableは付けず、reviewedOkはfalseのまま。章(ch)は両ソースとも記載が無くnullとした。",
+  "【命名の食い違い】assign一覧の表記は「本多忠勝(3)」だったが、既に「本多忠勝（3）」(No.2760)が別カードとして登録済みで衝突するため、既存の番号(無印:No.1193/2001、（2）:No.1303/2127、（3）:No.2760、（5）:No.2468)と衝突しない次の番号「（4）」に振り直した。ixawiki一覧側の(N)の付け方とサイト側の既存登録がずれている可能性があり、要確認。",
+  "2026-08-18: 登録時に既存カードと同名になるのを避けて（N）を空き番号へ振り直していたが、**（N）はゲーム内でしか分からない**ので ixawiki の一覧の表記に戻した。既存カードと同名のままなので、正しい（N）はうぐさんに確認が要る。"
+ ]
+}

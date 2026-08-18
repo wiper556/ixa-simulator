@@ -1,0 +1,43 @@
+{
+ "name": "上泉信綱",
+ "no": "3001",
+ "ch": null,
+ "cost": 2,
+ "troop": "将攻",
+ "sub": "",
+ "effect": "攻撃 30%上昇",
+ "furigana": "かみいずみのぶつな",
+ "illustrator": "isuZu",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 950,
+ "atkGrowth": 50,
+ "defBase": 950,
+ "defGrowth": 50,
+ "tacticsBase": 400,
+ "tacticsGrowth": 1.5,
+ "lv0Troops": 820,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "C",
+  "uma": "C",
+  "ki": "F"
+ },
+ "initialSkill": "新陰流",
+ "skillDetail": "C/LV10 確率 35% 攻撃 30%上昇/対象:将\n①攻撃 30%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "将　確率 35% / 攻撃 30%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録。カード画像が無いためixanaryとixawikiの一致だけで入れた(rankGradesは両ソース完全一致)。synthesisTableは今回のバッチでは付けていない。",
+  "統率はixawikiが足軽/弓兵/騎馬/兵器という特武将用の表記だったため、足軽→槍、弓兵→弓、騎馬→馬、兵器→器に読み替えてixanaryのyari/yumi/kiba/heikiと突き合わせ、S/C/C/Fで完全一致することを確認した。",
+  "atkBase/defBase(950/950)は両ソースとも独立に同値を示しており(本当に攻防同値のカード)、defBaseがatkBaseと同じになるixanary側の既知の壊れ方とは判断せずそのまま採用した。成長値・兵法・コスト・指揮兵数も両ソース一致。",
+  "スキル『新陰流』はixanaryがLV1(確率+20%/攻撃15%上昇)とLV10(確率+35%/攻撃30%上昇)を明示。ixawikiの基本ステータス表の値(確率+20%/攻撃15%上昇)はixanaryのLV1と一致していたため、今回のバッチで頻発した『ixawikiの表がLV1のまま』パターンと判断し、ixanaryの明示的なLV10値を採用した。スキルランクCはixanaryのみが明示(ixawikiのこの形式のページはランク表記が無い)。",
+  "このカードはixawikiの説明文に『現在、全ての戦国くじから入手不可能』との記載があり、現在入手不可の武将である。"
+ ]
+}

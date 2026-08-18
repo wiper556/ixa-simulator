@@ -1,0 +1,40 @@
+{
+ "name": "伊達輝宗",
+ "no": "3003",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "全攻速",
+ "sub": "",
+ "effect": "攻撃 2.5%上昇+速度 25%上昇",
+ "furigana": "だててるむね",
+ "illustrator": "塚本陽子",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 650,
+ "atkGrowth": 13,
+ "defBase": 660,
+ "defGrowth": 13,
+ "tacticsBase": 360.0,
+ "tacticsGrowth": 1.5,
+ "lv0Troops": 2630,
+ "rankGrades": {
+  "yari": "C",
+  "yumi": "D",
+  "uma": "B",
+  "ki": "B"
+ },
+ "initialSkill": "電光石火",
+ "skillDetail": "C/LV10 確率 100% 攻撃 2.5%上昇+速度 25%上昇/対象:全\n①攻撃 2.5%上昇する\n②速度 25%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 攻撃 2.5%上昇+速度 25%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当C・第4波)。カード画像は無いためixanary.comのカードページ埋め込みJSONとixawiki.comの武将カードページの両方を突き合わせて登録した。統率(槍/弓/馬/器)・コスト・指揮兵数・攻撃/防御/兵法の初期値・成長値・ふりがな・illustrator・スキル名/効果(LV1とLV10)は両ソースで一致した。章はどちらのソースにも記載が無く未確認のためnullとした。",
+  "防御初期値はixanary側の埋め込みJSONでは攻撃と同値(650)になっていたが、ixawiki側は異なる値(660)を示していた。ixanaryには防御が攻撃と同じ値を返す既知の不具合パターンがあるため、ここではixawiki側の値(660)を採用した。"
+ ]
+}

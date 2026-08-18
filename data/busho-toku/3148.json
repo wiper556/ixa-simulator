@@ -1,0 +1,40 @@
+{
+ "name": "鈴木元信",
+ "no": "3148",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "弓砲防",
+ "sub": "",
+ "effect": "防御 20%上昇",
+ "furigana": "すずきもとのぶ",
+ "illustrator": "ユティフ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 580,
+ "atkGrowth": 15,
+ "defBase": 670,
+ "defGrowth": 16,
+ "tacticsBase": 420.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 2350,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "A",
+  "uma": "C",
+  "ki": "C"
+ },
+ "initialSkill": "独眼竜式目",
+ "skillDetail": "C/LV10 確率 30% 防御 20%上昇/対象:弓・砲\n①防御 20%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓・砲　確率 30% / 防御 20%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当J)。カード画像が無いためixanaryとixawikiの両方を確認した。武将名「鈴木元信」/ふりがな「すずきもとのぶ」/特/コスト2.5/統率 槍B・弓A・馬C・器C/攻撃580・防御670・兵法420.0/成長値(攻撃+15/防御+16/兵法+2)/指揮兵数2350/カードNo.3148/スキル「独眼竜式目LV10」[C] 確率:30%・対象 弓・砲・防御:20%上昇/Illust ユティフ。ixanary(カードページ埋め込みJSON)とixawiki(BushoCardページ)の統率・コスト・指揮兵数・攻防兵法初期値と成長値・スキル対象と効果が完全に一致したためそのまま採用した。",
+  "rankGradesはカード画像で確認できないため未reviewed(reviewedOk=false)。章(ch)はカード画像でもixanary/ixawikiでも確認できなかったためnullのまま。"
+ ]
+}

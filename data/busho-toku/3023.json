@@ -1,0 +1,42 @@
+{
+ "name": "立花道雪",
+ "no": "3023",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "槍攻",
+ "sub": "",
+ "effect": "攻撃 20%上昇",
+ "furigana": "たちばなどうせつ",
+ "illustrator": "As'まりあ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 695,
+ "atkGrowth": 17,
+ "defBase": 660,
+ "defGrowth": 16,
+ "tacticsBase": 380.0,
+ "tacticsGrowth": 1,
+ "lv0Troops": 2450,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "C",
+  "ki": "E"
+ },
+ "initialSkill": "槍隊剛撃",
+ "skillDetail": "D/LV10 確率 35% 攻撃 20%上昇/対象:槍\n①攻撃 20%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍　確率 35% / 攻撃 20%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当D)。カード画像が無いためixanary.com(cards/3023)とixawiki.com(index.php?BushoCard/3023立花道雪, Busho/武将カード一覧)の生HTML2ソースを突き合わせて登録した。",
+  "統率(A/A/C/E)・コスト2.5・指揮兵数2450・攻撃695/17・防御660/16・兵法380.0/1・ふりがな・初期スキル「槍隊剛撃」[D]はixanary.comとixawiki.comの2ソースで一致することを確認した(不一致箇所は個別に注記)。",
+  "illustratorはixanaryが「As’まりあ」ixawikiが「As'まりあ」でアポストロフィの字体のみ違い人物名は一致のため字体を統一して採用した。",
+  "カード画像が無いためimageFull/imageCharはnull、synthesisTableは付けない。reviewedOkはfalseのまま。章(ch)は両ソースとも記載が無くnullとした。"
+ ]
+}

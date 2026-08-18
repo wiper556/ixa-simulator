@@ -1,0 +1,43 @@
+{
+ "name": "阿南姫",
+ "no": "3136",
+ "ch": null,
+ "cost": 2,
+ "troop": "全防",
+ "sub": "",
+ "effect": "全防 15%上昇",
+ "furigana": "おなみひめ",
+ "illustrator": "碧風羽",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 620,
+ "atkGrowth": 15,
+ "defBase": 620,
+ "defGrowth": 17,
+ "tacticsBase": 390.0,
+ "tacticsGrowth": 1.5,
+ "lv0Troops": 1980,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "B",
+  "uma": "A",
+  "ki": "D"
+ },
+ "initialSkill": "五逆迎撃陣",
+ "skillDetail": "D/LV10 確率 40% 防御 15%上昇/対象:全\n①防御 15%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 40% / 防御 15%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当I)。カード画像が無いため ixanary.com(cards/3136, skills/五逆迎撃陣)と ixawiki.com(index.php?BushoCard/3136阿南姫, Busho/武将スキル)の生HTML2ソースを突き合わせて登録した。",
+  "統率(槍B/弓B/馬A/器D)・コスト2.0・指揮兵数1980・攻撃620/15・防御620/17・兵法390.0/1.5・ふりがな・イラストレーターはixanary.comとixawiki.comの2ソースで完全一致した。",
+  "初期スキル「五逆迎撃陣」[D]はixanary.com(skills/五逆迎撃陣)のLV10行(確率+40%/対象全/防御15%上昇)とixawiki.com(Busho/武将スキル)のマスター一覧LV10行(確率+40%/全防15%上昇)で完全一致し、両ソースの武将対応リストにも3136阿南姫が掲載されていることを確認した。",
+  "攻撃初期値620・防御初期値620は完全に同値だが、ixanary.comとixawiki.comの2ソースが独立に一致しているため実際の値と判断した(攻撃防御同値バグの誤登録ではない)。",
+  "カード画像が無いためimageFull/imageCharはnull、synthesisTableは付けず、reviewedOkはfalseのまま。章(ch)は両ソースとも記載が無くnullとした。"
+ ]
+}

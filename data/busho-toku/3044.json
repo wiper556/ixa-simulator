@@ -1,0 +1,43 @@
+{
+ "name": "細川ガラシャ",
+ "no": "3044",
+ "ch": null,
+ "cost": 2,
+ "troop": "砲器防",
+ "sub": "",
+ "effect": "防御 40%上昇",
+ "furigana": "ほそかわがらしゃ",
+ "illustrator": "小林智美",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 620,
+ "atkGrowth": 14,
+ "defBase": null,
+ "defGrowth": 16,
+ "tacticsBase": 400.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 1970,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "B",
+  "uma": "E",
+  "ki": "A"
+ },
+ "initialSkill": "祈祷の極み",
+ "skillDetail": "B/LV10 確率 20% 防御 40%上昇/対象:砲・器\n①防御 40%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "砲・器　確率 20% / 防御 40%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当E)。カード画像が無いためixanary.com(cards/3044)とixawiki.com(index.php?BushoCard/3044細川ガラシャ)の生HTML2ソースを突き合わせて登録した。",
+  "コスト2・指揮兵数1970・攻撃620/+14・防御成長+16・兵法400/+2・統率(槍B/弓B/馬E/器A)・ふりがな・イラストレーターは2ソース一致した。",
+  "【要申し送り】defBase(防御初期値)がixanaryで620・ixawikiで660と食い違った。ixanaryのdefBase(620)はatkBase(620)と完全一致しており「防御が攻撃と同じ値になる」既知の破損パターンに該当する。ixawikiは独立に660を示しており両者不一致のため、defBaseはnullのまま登録した。",
+  "初期スキル「祈祷の極み」[B]はixanary.comのLV10表記(確率+20%/対象砲・器/防御40%上昇)を採用。ixawiki.comのカードページのLV1相当値(確率+10%/防御20%上昇)と整合していた(LV1→LV10として自然な伸び)。",
+  "章(ch)は両ソースに記載が無くnullのまま。"
+ ]
+}

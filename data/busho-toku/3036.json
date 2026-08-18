@@ -1,0 +1,42 @@
+{
+ "name": "濃姫",
+ "no": "3036",
+ "ch": null,
+ "cost": 1,
+ "troop": "全攻",
+ "sub": "",
+ "effect": "攻撃 10%上昇",
+ "furigana": "のうひめ",
+ "illustrator": "七海慎吾 [戦國ストレイズ]",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 770,
+ "atkGrowth": 15,
+ "defBase": 650,
+ "defGrowth": 14,
+ "tacticsBase": 370.0,
+ "tacticsGrowth": 1.5,
+ "lv0Troops": 1000,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "D",
+  "uma": "E",
+  "ki": "C"
+ },
+ "initialSkill": "刹那の猛勇",
+ "skillDetail": "D/LV10 確率 30% 攻撃 10%上昇/対象:全\n①攻撃 10%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 30% / 攻撃 10%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当D)。カード画像が無いためixanary.com(cards/3036)とixawiki.com(index.php?BushoCard/3036濃姫, Busho/武将カード一覧)の生HTML2ソースを突き合わせて登録した。",
+  "統率(A/D/E/C)・コスト1・指揮兵数1000・攻撃770/15・防御650/14・兵法370.0/1.5・ふりがな・初期スキル「刹那の猛勇」[D]はixanary.comとixawiki.comの2ソースで一致することを確認した(不一致箇所は個別に注記)。",
+  "illustratorはixanaryが「七海慎吾 [戦國ストレイズ]」ixawikiが「七海慎吾[戦国ストレイズ]」で人物名と所属表記の有無は一致し、旧字体(國)と space の有無のみが違う。所属表記自体が欠落しているわけではないためixanaryの表記を採用した。",
+  "カード画像が無いためimageFull/imageCharはnull、synthesisTableは付けない。reviewedOkはfalseのまま。章(ch)は両ソースとも記載が無くnullとした。"
+ ]
+}

@@ -1,0 +1,43 @@
+{
+ "name": "鶴姫（2）",
+ "no": "3138",
+ "ch": null,
+ "cost": 3,
+ "troop": "槍弓攻",
+ "sub": "",
+ "effect": "槍弓攻 20%上昇",
+ "furigana": "つるひめ",
+ "illustrator": "めいびい",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 600,
+ "atkGrowth": 17,
+ "defBase": 550,
+ "defGrowth": 15,
+ "tacticsBase": 410.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 2500,
+ "rankGrades": {
+  "yari": "C",
+  "yumi": "S",
+  "uma": "B",
+  "ki": "B"
+ },
+ "initialSkill": "大三島憐撃",
+ "skillDetail": "C/LV10 確率 35% 攻撃 20%上昇/対象:槍・弓\n①攻撃 20%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・弓　確率 35% / 攻撃 20%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当I)。割り当て一覧の表記「鶴姫(2)」に従い名前は「鶴姫（2）」とした。カード画像が無いため ixanary.com(cards/3138, skills/大三島憐撃)と ixawiki.com(index.php?BushoCard/3138鶴姫, Busho/武将スキル)の生HTML2ソースを突き合わせて登録した(ixawikiの個別ページ名は無印「鶴姫」表記だが本文に復刻の記載は無く、通常の別カードとして扱った)。",
+  "【名前の重複確認】サイト内には他に「鶴姫」を名乗るカードがNo.3028(busho-toku、特、無印)・No.2232(busho-kyoku、極、無印)・No.2852(busho-kyoku-ps、極、鶴姫（2）)の3件ある。No.2852の「鶴姫（2）」と文字列としては同名になるが、既存ルール(武将名の（N）は同レアリティ内でのみ重複を避ける工夫)によりNo.2852は極レアリティ内での2件目、本カード(No.3138)は特レアリティ内でNo.3028に次ぐ2件目という別の名前空間なので衝突ではないと判断した。ただしNo.3028とNo.3138のどちらが先かはixawikiの一番古いコメント日付を突き合わせておらず、割り当て一覧の指定通り「(2)」を採用した点は申し送りする。",
+  "統率(槍C/弓S/馬B/器B)・コスト3.0・指揮兵数2500・攻撃600/17・防御550/15・兵法410.0/2.5・ふりがな・イラストレーターはixanary.comとixawiki.comの2ソースで完全一致した。",
+  "初期スキル「大三島憐撃」[C]はixanary.com(skills/大三島憐撃)のLV10行(確率+35%/対象槍弓/攻撃20%上昇)とixawiki.com(Busho/武将スキル)のマスター一覧LV10行(確率+35%/槍弓攻20%上昇)で完全一致し、両ソースの武将対応リストにも3138鶴姫が掲載されていることを確認した。",
+  "カード画像が無いためimageFull/imageCharはnull、synthesisTableは付けず、reviewedOkはfalseのまま。章(ch)は両ソースとも記載が無くnullとした。"
+ ]
+}

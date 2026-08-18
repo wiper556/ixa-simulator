@@ -1,0 +1,42 @@
+{
+ "name": "お鍋の方",
+ "no": "3123",
+ "ch": null,
+ "cost": 2,
+ "troop": "槍砲攻",
+ "sub": "",
+ "effect": "槍砲攻 コスト×9=18%上昇",
+ "furigana": "おなべのかた",
+ "illustrator": "双羽純",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 560,
+ "atkGrowth": 16,
+ "defBase": 550,
+ "defGrowth": 16,
+ "tacticsBase": 380.0,
+ "tacticsGrowth": 1.5,
+ "lv0Troops": 2040,
+ "rankGrades": {
+  "yari": "C",
+  "yumi": "D",
+  "uma": "B",
+  "ki": "A"
+ },
+ "initialSkill": "三段撃 烈火",
+ "skillDetail": "C/LV10 確率 15% 攻撃 (コスト×9)%上昇/対象:槍・砲\n①攻撃が(コスト×9)%上昇する(武将のコストで効果が変化する)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・砲　確率 15% / 攻撃 コスト2.0×9%=18.0%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当I)。カード画像が無いため ixanary.com(cards/3123, skills/三段撃 烈火)と ixawiki.com(index.php?BushoCard/3123お鍋の方, Busho/武将スキル)の生HTML2ソースを突き合わせて登録した。",
+  "統率(槍C/弓D/馬B/器A)・コスト2.0・指揮兵数2040・攻撃560/16・防御550/16・兵法380.0/1.5・ふりがな・イラストレーターはixanary.comとixawiki.comの2ソースで完全一致した。",
+  "初期スキル「三段撃 烈火」[C]はixanary.com(skills/三段撃 烈火、確率+15%/対象槍砲/攻撃(コストx9)%上昇・武将のコストで効果が変化)とixawiki.com(Busho/武将スキル、LV10:確率+15%/槍砲攻(コスト×9)%上昇)で一致し、両ソースの武将対応リストにも3123お鍋の方が掲載されていることを確認した。武将自身のコスト2.0を代入し18.0%上昇として記載した。",
+  "カード画像が無いためimageFull/imageCharはnull、synthesisTableは付けず、reviewedOkはfalseのまま。章(ch)は両ソースとも記載が無くnullとした。"
+ ]
+}

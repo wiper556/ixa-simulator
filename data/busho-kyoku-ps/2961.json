@@ -1,0 +1,38 @@
+{
+ "name": "柳生石舟斎（2）",
+ "no": "2961",
+ "ch": null,
+ "cost": 1,
+ "troop": "槍馬攻防",
+ "sub": "",
+ "effect": "攻撃 40%上昇+防御 40%上昇",
+ "furigana": "やぎゅうせきしゅうさい",
+ "illustrator": "能條純一",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 975,
+ "atkGrowth": 63,
+ "defBase": 975,
+ "defGrowth": 63,
+ "tacticsBase": 400.0,
+ "tacticsGrowth": 1.0,
+ "lv0Troops": 1080,
+ "rankGrades": null,
+ "initialSkill": "柳生新陰流朧",
+ "skillDetail": "B/LV10 確率 55% 攻撃 40%上昇+防御 40%上昇/対象:槍・馬\n①攻撃 40%上昇する\n②防御 40%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・馬　確率 55% / 攻撃 40%上昇+防御 40%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "カード画像が無いため ixanary.com(cards/2961, skills/柳生新陰流朧)と ixawiki.com(index.php?BushoCard/2961柳生石舟斎, Busho/武将スキル)の生HTML2ソースを突き合わせて登録した。",
+  "コスト1・指揮兵数1080・攻撃975/成長63・防御975/成長63・兵法400.0/成長1.0・ふりがな・イラストレーターは両ソース一致(攻撃防御とも975で同値だが両ソース独立に一致するため実値と判断)。",
+  "【食い違いによりnull】rankGradesがixanary.com=(槍S/弓A/馬C/器C)、ixawiki.com=(槍S/弓C/馬A/器C)で弓と馬がちょうど入れ替わっていた。BRIEFに記載の既知バグ(ixanaryのyumiとkibaが実物と入れ替わっている場合がある)に該当する食い違いのため、どちらも採らずrankGrades全体をnullにした。",
+  "【食い違い】初期スキル「柳生新陰流朧」[B]のLV10効果値がixanary.com=攻撃45%上昇+防御45%上昇、ixawiki.com(Busho/武将スキルマスター一覧)=攻撃防御とも40%上昇で食い違う。確率55%とLV1値(30%/攻防とも20%上昇)は両ソース完全一致。判断材料が無いため、ixawikiのマスター一覧側(40%)を採用した。",
+  "カード画像が無いためimageFull/imageCharはnull、synthesisTableは付けず、reviewedOkはfalseのまま。章(ch)は両ソースとも記載が無くnullとした。"
+ ]
+}

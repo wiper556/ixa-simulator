@@ -1,0 +1,41 @@
+{
+ "name": "松永久秀",
+ "no": "3027",
+ "ch": null,
+ "cost": 2,
+ "troop": "全攻",
+ "sub": "",
+ "effect": "攻撃戦闘勝利時のみ、敵軍1部隊の武将に追加ダメージ+35",
+ "furigana": "まつながひさひで",
+ "illustrator": "塚本陽子",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 600,
+ "atkGrowth": 13,
+ "defBase": 585,
+ "defGrowth": 13,
+ "tacticsBase": 475.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 2060,
+ "rankGrades": {
+  "yari": "C",
+  "yumi": "B",
+  "uma": "F",
+  "ki": "B"
+ },
+ "initialSkill": "謀殺",
+ "skillDetail": "D/LV10 確率 15% 対象:全\n①攻撃戦闘勝利時のみ敵軍1部隊の武将に追加ダメージ+35する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 15% / 攻撃戦闘勝利時のみ、敵軍1部隊の武将に追加ダメージ+35"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当D)。カード画像が無いためixanary.com(cards/3027)とixawiki.com(index.php?BushoCard/3027松永久秀, Busho/武将カード一覧)の生HTML2ソースを突き合わせて登録した。",
+  "統率(C/B/F/B)・コスト2・指揮兵数2060・攻撃600/13・防御585/13・兵法475.0/2.5・ふりがな・初期スキル「謀殺」[D]はixanary.comとixawiki.comの2ソースで一致することを確認した(不一致箇所は個別に注記)。",
+  "カード画像が無いためimageFull/imageCharはnull、synthesisTableは付けない。reviewedOkはfalseのまま。章(ch)は両ソースとも記載が無くnullとした。"
+ ]
+}

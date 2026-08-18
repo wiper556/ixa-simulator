@@ -1,0 +1,40 @@
+{
+ "name": "猿飛佐助",
+ "no": "3100",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "馬砲攻速",
+ "sub": "",
+ "effect": "攻撃 6%上昇+速度 20%上昇",
+ "furigana": "さるとびさすけ",
+ "illustrator": "冨士原良",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 580,
+ "atkGrowth": 17,
+ "defBase": 500,
+ "defGrowth": 15,
+ "tacticsBase": 455.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 2330,
+ "rankGrades": {
+  "yari": "C",
+  "yumi": "C",
+  "uma": "A",
+  "ki": "B"
+ },
+ "initialSkill": "颯空術",
+ "skillDetail": "D/LV10 確率 100% 攻撃 6%上昇+速度 20%上昇/対象:馬・砲\n①攻撃 6%上昇する\n②速度 20%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "馬・砲　確率 100% / 攻撃 6%上昇+速度 20%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当G)。カード画像なし。ixanary.com/cards/3100の生HTML埋め込みJSONとixawiki.com(BushoCard/3100猿飛佐助)の基本ステータス表を突き合わせ、統率(槍/弓/馬/器)・コスト・指揮兵数・攻撃/防御/兵法の初期値と成長値・イラストレーター・スキル名/効果(LV1・LV10)が全項目で一致することを確認した。",
+  "章(ch)はixanary・ixawikiのどちらにも実装章の記載がなく未確認のためnull。rankGradesは2ソース一致のため採用(食い違いなし)。"
+ ]
+}

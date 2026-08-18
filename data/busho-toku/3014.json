@@ -1,0 +1,40 @@
+{
+ "name": "小早川隆景",
+ "no": "3014",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "槍弓攻破",
+ "sub": "",
+ "effect": "攻撃 20%上昇+破壊 5%上昇",
+ "furigana": "こばやかわたかかげ",
+ "illustrator": "ワカマツカオリ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 610,
+ "atkGrowth": 14,
+ "defBase": 620,
+ "defGrowth": 14,
+ "tacticsBase": 465.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 2260,
+ "rankGrades": {
+  "yari": "C",
+  "yumi": "A",
+  "uma": "C",
+  "ki": "B"
+ },
+ "initialSkill": "三矢の教え",
+ "skillDetail": "D/LV10 確率 20% 攻撃 20%上昇+破壊 5%上昇/対象:槍・弓\n①攻撃 20%上昇する\n②破壊 5%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・弓　確率 20% / 攻撃 20%上昇+破壊 5%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当C・第4波)。カード画像は無いためixanary.comのカードページ埋め込みJSONとixawiki.comの武将カードページの両方を突き合わせて登録した。統率(槍/弓/馬/器)・コスト・指揮兵数・攻撃/防御/兵法の初期値・成長値・ふりがな・illustrator・スキル名/効果(LV1とLV10)は両ソースで一致した。章はどちらのソースにも記載が無く未確認のためnullとした。",
+  "防御初期値はixanary側の埋め込みJSONでは攻撃と同値(610)になっていたが、ixawiki側は異なる値(620)を示していた。ixanaryには防御が攻撃と同じ値を返す既知の不具合パターンがあるため、ここではixawiki側の値(620)を採用した。"
+ ]
+}

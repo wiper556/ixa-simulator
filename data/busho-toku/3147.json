@@ -1,0 +1,40 @@
+{
+ "name": "おつやの方",
+ "no": "3147",
+ "ch": null,
+ "cost": 1.5,
+ "troop": "馬砲防",
+ "sub": "",
+ "effect": "防御 30%上昇",
+ "furigana": "おつやのかた",
+ "illustrator": "ユティフ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 635,
+ "atkGrowth": 17,
+ "defBase": 670,
+ "defGrowth": 17,
+ "tacticsBase": 430.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 1450,
+ "rankGrades": {
+  "yari": "D",
+  "yumi": "D",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "女城主",
+ "skillDetail": "D/LV10 確率 15% 防御 30%上昇/対象:馬・砲\n①防御 30%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "馬・砲　確率 15% / 防御 30%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当J)。カード画像が無いためixanaryとixawikiの両方を確認した。武将名「おつやの方」/ふりがな「おつやのかた」/特/コスト1.5/統率 槍D・弓D・馬A・器A/攻撃635・防御670・兵法430.0/成長値(攻撃+17/防御+17/兵法+2)/指揮兵数1450/カードNo.3147/スキル「女城主LV10」[D] 確率:15%・対象 馬・砲・防御:30%上昇/Illust ユティフ。ixanary(カードページ埋め込みJSON)とixawiki(BushoCardページ)の統率・コスト・指揮兵数・攻防兵法初期値と成長値・スキル対象と効果が完全に一致したためそのまま採用した。",
+  "rankGradesはカード画像で確認できないため未reviewed(reviewedOk=false)。章(ch)はカード画像でもixanary/ixawikiでも確認できなかったためnullのまま。"
+ ]
+}

@@ -1,0 +1,41 @@
+{
+ "name": "仙石権兵衛",
+ "no": "2991",
+ "ch": null,
+ "cost": 3,
+ "troop": "槍弓馬砲攻",
+ "sub": "",
+ "effect": "攻撃 70%上昇(強襲時または強襲部隊との戦闘時に効果1.5倍)",
+ "furigana": "せんごくごんべえ",
+ "illustrator": "宮下英樹／講談社",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1100,
+ "atkGrowth": 49,
+ "defBase": 970,
+ "defGrowth": 28,
+ "tacticsBase": 510,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3270,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "S",
+  "ki": "A"
+ },
+ "initialSkill": "獣が如き猛将",
+ "skillDetail": "A/LV10 確率 42% 攻撃 70%上昇/対象:槍・弓・馬・砲\n①攻撃 70%上昇する(強襲時または強襲部隊との戦闘時に効果1.5倍)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・弓・馬・砲　確率 42% / 攻撃 70%上昇(強襲時または強襲部隊との戦闘時に効果1.5倍)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録。カード画像が無いためixanaryとixawikiの一致だけで入れた(rankGradesは両ソース完全一致)。synthesisTableは今回のバッチでは付けていない。",
+  "defBaseはixanaryの生埋め込みJSONだとatkBaseと同値の1100になっていたが(既知の壊れ方の型)、ixawikiは独立に970(atkと異なる値)を示しており、ixanaryの方が壊れていると判断してixawikiの970を採用した。成長値・兵法・コスト・指揮兵数は両ソース一致。",
+  "このカードのixawikiページはLv1とLv10を明示的に別行で掲載する形式で、Lv10側の数値(確率42%/攻撃70%上昇/強襲時等効果1.5倍)はixanaryのLV10表示と完全一致しており対立は無い。"
+ ]
+}

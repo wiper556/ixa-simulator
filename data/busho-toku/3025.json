@@ -1,0 +1,42 @@
+{
+ "name": "宇喜多直家",
+ "no": "3025",
+ "ch": null,
+ "cost": 3,
+ "troop": "器破",
+ "sub": "",
+ "effect": "破壊 20%上昇",
+ "furigana": "うきたなおいえ",
+ "illustrator": "日暮央",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 525,
+ "atkGrowth": 15,
+ "defBase": 525,
+ "defGrowth": 15,
+ "tacticsBase": 475.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 2640,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "B",
+  "uma": "D",
+  "ki": "A"
+ },
+ "initialSkill": "城崩し",
+ "skillDetail": "D/LV10 確率 35% 破壊 20%上昇/対象:器\n①破壊 20%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "器　確率 35% / 破壊 20%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当D)。カード画像が無いためixanary.com(cards/3025)とixawiki.com(index.php?BushoCard/3025宇喜多直家, Busho/武将カード一覧)の生HTML2ソースを突き合わせて登録した。",
+  "統率(B/B/D/A)・コスト3・指揮兵数2640・攻撃525/15・防御525/15・兵法475.0/2.5・ふりがな・初期スキル「城崩し」[D]はixanary.comとixawiki.comの2ソースで一致することを確認した(不一致箇所は個別に注記)。",
+  "攻撃初期値525・防御初期値525が完全に同値だが、ixanary.comとixawiki.comの2ソースが独立に一致しているため実際の値と判断した(攻撃防御同値バグの誤登録ではない)。",
+  "カード画像が無いためimageFull/imageCharはnull、synthesisTableは付けない。reviewedOkはfalseのまま。章(ch)は両ソースとも記載が無くnullとした。"
+ ]
+}

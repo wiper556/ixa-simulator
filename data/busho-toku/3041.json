@@ -1,0 +1,41 @@
+{
+ "name": "初",
+ "no": "3041",
+ "ch": null,
+ "cost": 1.5,
+ "troop": "弓馬防",
+ "sub": "",
+ "effect": "防御 25%上昇",
+ "furigana": "はつ",
+ "illustrator": "isuZu",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 580,
+ "atkGrowth": 13,
+ "defBase": 650,
+ "defGrowth": 15,
+ "tacticsBase": 375.0,
+ "tacticsGrowth": 1.5,
+ "lv0Troops": 1630,
+ "rankGrades": {
+  "yari": "D",
+  "yumi": "A",
+  "uma": "C",
+  "ki": "D"
+ },
+ "initialSkill": "弓陣 下り藤",
+ "skillDetail": "D/LV10 確率 40% 防御 25%上昇/対象:弓・馬\n①防御 25%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓・馬　確率 40% / 防御 25%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当D)。カード画像が無いためixanary.com(cards/3041)とixawiki.com(index.php?BushoCard/3041初, Busho/武将カード一覧)の生HTML2ソースを突き合わせて登録した。",
+  "統率(D/A/C/D)・コスト1.5・指揮兵数1630・攻撃580/13・防御650/15・兵法375.0/1.5・ふりがな・初期スキル「弓陣 下り藤」[D]はixanary.comとixawiki.comの2ソースで一致することを確認した(不一致箇所は個別に注記)。",
+  "カード画像が無いためimageFull/imageCharはnull、synthesisTableは付けない。reviewedOkはfalseのまま。章(ch)は両ソースとも記載が無くnullとした。"
+ ]
+}

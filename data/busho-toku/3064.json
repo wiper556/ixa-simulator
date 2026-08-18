@@ -1,0 +1,42 @@
+{
+ "name": "甲斐姫",
+ "no": "3064",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "槍砲攻",
+ "sub": "",
+ "effect": "攻撃(コストx9)%上昇",
+ "furigana": "かいひめ",
+ "illustrator": "加藤さやか",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 670,
+ "atkGrowth": 16,
+ "defBase": 620,
+ "defGrowth": 14,
+ "tacticsBase": 410.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 2320,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "B",
+  "uma": "C",
+  "ki": "A"
+ },
+ "initialSkill": "三段撃 烈火",
+ "skillDetail": "C/LV10 確率 15% 攻撃 コストx9=22.5%上昇/対象:槍・砲\n①攻撃 コストx9=22.5%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・砲　確率 15% / 攻撃 コストx9=22.5%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当F)。カード画像なし。ixanary.com/cards/3064の生HTML埋め込みJSONとixawiki.com(BushoCard/3064甲斐姫)の基本ステータス表・武将スキル一覧ページ(Busho/武将スキル)のスキル効果テーブルを突き合わせ、統率(槍/弓/馬/器)・コスト・指揮兵数・攻撃/防御/兵法の初期値と成長値・イラストレーター・スキル名/効果(LV1・LV10)が一致することを確認した。",
+  "章(ch)はixanary・ixawikiのどちらにも実装章の記載がなく未確認のためnull。",
+  "rankGradesは2ソース一致のため採用(食い違いなし)。",
+  "スキル効果はコストで変動する式(ixanary表記「(コストxN)%上昇」)。本カードのコスト2.5を当てはめて計算式=結果の書式で記載した(effectフィールドは式のまま/skillDetail・trTableは評価済み値)。"
+ ]
+}

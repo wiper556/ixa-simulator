@@ -1,0 +1,40 @@
+{
+ "name": "香宗我部親泰",
+ "no": "3156",
+ "ch": null,
+ "cost": 2,
+ "troop": "槍防",
+ "sub": "",
+ "effect": "防御 20%上昇",
+ "furigana": "こうそかべちかやす",
+ "illustrator": "BISAI",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 600,
+ "atkGrowth": 16,
+ "defBase": 690,
+ "defGrowth": 19,
+ "tacticsBase": 400.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 1960,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "C",
+  "uma": "C",
+  "ki": "C"
+ },
+ "initialSkill": "豪放磊落",
+ "skillDetail": "C/LV10 確率 40% 防御 20%上昇/対象:槍\n①防御 20%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍　確率 40% / 防御 20%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当J)。カード画像が無いためixanaryとixawikiの両方を確認した。武将名「香宗我部親泰」/ふりがな「こうそかべちかやす」/特/コスト2/統率 槍A・弓C・馬C・器C/攻撃600・防御690・兵法400.0/成長値(攻撃+16/防御+19/兵法+2)/指揮兵数1960/カードNo.3156/スキル「豪放磊落LV10」[C] 確率:40%・対象 槍・防御:20%上昇/Illust BISAI。ixanary(カードページ埋め込みJSON)とixawiki(BushoCardページ)の統率・コスト・指揮兵数・攻防兵法初期値と成長値・スキル対象と効果が完全に一致したためそのまま採用した。",
+  "rankGradesはカード画像で確認できないため未reviewed(reviewedOk=false)。章(ch)はカード画像でもixanary/ixawikiでも確認できなかったためnullのまま。"
+ ]
+}

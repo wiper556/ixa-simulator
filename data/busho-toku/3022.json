@@ -1,0 +1,41 @@
+{
+ "name": "島津家久",
+ "no": "3022",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "砲攻",
+ "sub": "",
+ "effect": "攻撃 20%上昇",
+ "furigana": "しまづいえひさ",
+ "illustrator": "ワカマツカオリ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 675,
+ "atkGrowth": 17,
+ "defBase": 600,
+ "defGrowth": 15,
+ "tacticsBase": 405.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 2180,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "C",
+  "uma": "B",
+  "ki": "A"
+ },
+ "initialSkill": "鉄砲隊剛撃",
+ "skillDetail": "D/LV10 確率 30% 攻撃 20%上昇/対象:砲\n①攻撃 20%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "砲　確率 30% / 攻撃 20%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当D)。カード画像が無いためixanary.com(cards/3022)とixawiki.com(index.php?BushoCard/3022島津家久, Busho/武将カード一覧)の生HTML2ソースを突き合わせて登録した。",
+  "統率(B/C/B/A)・コスト2.5・指揮兵数2180・攻撃675/17・防御600/15・兵法405.0/2.5・ふりがな・初期スキル「鉄砲隊剛撃」[D]はixanary.comとixawiki.comの2ソースで一致することを確認した(不一致箇所は個別に注記)。",
+  "カード画像が無いためimageFull/imageCharはnull、synthesisTableは付けない。reviewedOkはfalseのまま。章(ch)は両ソースとも記載が無くnullとした。"
+ ]
+}

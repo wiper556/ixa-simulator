@@ -1,0 +1,41 @@
+{
+ "name": "帰蝶",
+ "no": "3073",
+ "ch": null,
+ "cost": 2,
+ "troop": "全攻破",
+ "sub": "",
+ "effect": "攻撃 20%上昇+破壊 10%上昇",
+ "furigana": "きちょう",
+ "illustrator": "ミヤジマハル",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 680,
+ "atkGrowth": 17,
+ "defBase": 660,
+ "defGrowth": 16,
+ "tacticsBase": 380.0,
+ "tacticsGrowth": 1.5,
+ "lv0Troops": 2000,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "C",
+  "uma": "C",
+  "ki": "A"
+ },
+ "initialSkill": "華蝶風月",
+ "skillDetail": "C/LV10 確率 25% 攻撃 20%上昇 破壊 10%上昇/対象:全\n①攻撃 20%上昇する\n②破壊 10%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 25% / 攻撃 20%上昇+破壊 10%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当F)。カード画像なし。ixanary.com/cards/3073の生HTML埋め込みJSONとixawiki.com(BushoCard/3073帰蝶)の基本ステータス表・武将スキル一覧ページ(Busho/武将スキル)のスキル効果テーブルを突き合わせ、統率(槍/弓/馬/器)・コスト・指揮兵数・攻撃/防御/兵法の初期値と成長値・イラストレーター・スキル名/効果(LV1・LV10)が一致することを確認した。",
+  "章(ch)はixanary・ixawikiのどちらにも実装章の記載がなく未確認のためnull。",
+  "rankGradesは2ソース一致のため採用(食い違いなし)。"
+ ]
+}
