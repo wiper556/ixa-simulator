@@ -406,6 +406,71 @@ def replace_card_art(dry=False):
     return 0
 
 
+# くじの「排出確率」表(2026-08-19)。
+#
+# **手で書かない。** 定数(BASE_RATES ほか)だけ新しいくじに直して、ページ下部の
+# 表を旧いくじのまま残していた。実際に引かれる確率と表示が食い違い、
+# うぐさんの指摘で気付いた。S-14「対の片側だけ更新」と同じ形。
+# 注意書きを増やしても同じことが起きるので、表そのものを定数から作る。
+RATE_FILE = "gacha-simulator.html"
+RATE_BEGIN = ("        <!-- BUILD:rateTable:start ここから下は tools/build_data.py が "
+              "BASE_RATES / TENTH_BOOST_RATES / TENTH_GUARANTEE_RATES から"
+              "生成しています。直接編集しないこと -->")
+RATE_END = "        <!-- BUILD:rateTable:end -->"
+RATE_TIERS = ("傑", "天", "極", "特", "上")
+RATE_COLS = (("BASE_RATES", "単発 / 10連1〜9枚目"),
+             ("TENTH_BOOST_RATES", "10連10枚目(ブースト)"),
+             ("TENTH_GUARANTEE_RATES", "10連10枚目(救済)"))
+
+
+def read_rate_consts(text):
+    """ページ内の確率定数を読む。単位は 0.001%。"""
+    out = {}
+    for name, _ in RATE_COLS:
+        m = re.search(r"const %s = \{([^}]*)\};" % name, text)
+        if not m:
+            return None
+        vals = dict(re.findall(r"([傑天極特上])\s*:\s*(\d+)", m.group(1)))
+        if len(vals) != len(RATE_TIERS):
+            return None
+        out[name] = {k: int(v) for k, v in vals.items()}
+    return out
+
+
+def build_rate_block(consts):
+    lines = [RATE_BEGIN]
+    for t in RATE_TIERS:
+        cells = "".join(
+            '<td data-label="%s">%.3f%%</td>' % (label, consts[name][t] / 1000.0)
+            for name, label in RATE_COLS)
+        lines.append('          <tr><td class="tier-name">%s</td>%s</tr>' % (t, cells))
+    lines.append(RATE_END)
+    return "\n".join(lines)
+
+
+def replace_rate_table(dry=False):
+    p = os.path.join(ROOT, RATE_FILE)
+    if not os.path.exists(p):
+        return 0
+    text = io.open(p, encoding="utf-8", newline="").read()
+    lo, hi = text.find(RATE_BEGIN), text.find(RATE_END)
+    if lo < 0 or hi < 0:
+        print("  %-24s [停止] BUILD:rateTable のマーカーが無い" % RATE_FILE)
+        return 1
+    consts = read_rate_consts(text)
+    if consts is None:
+        print("  %-24s [停止] 確率定数を読めない" % RATE_FILE)
+        return 1
+    new = text[:lo] + build_rate_block(consts) + text[hi + len(RATE_END):]
+    same = new == text
+    print("  %-24s %d段 %s (排出確率の表)"
+          % (RATE_FILE, len(RATE_TIERS), "変化なし" if same else "書き換え"))
+    if not same and not dry:
+        io.open(p, "w", encoding="utf-8", newline="").write(new)
+        return 1
+    return 0
+
+
 def replace_chapters(dry=False):
     p = os.path.join(ROOT, CHAPTERS_FILE)
     text = io.open(p, encoding="utf-8", newline="").read()
@@ -505,6 +570,7 @@ def main(dry=False):
     changed += replace_chapters(dry)
     changed += replace_axis(dry)
     changed += replace_card_art(dry)
+    changed += replace_rate_table(dry)
     print("書き換えたページ %d件%s" % (changed, "(--dry-run)" if dry else ""))
 
 
