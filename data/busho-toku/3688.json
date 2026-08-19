@@ -1,0 +1,41 @@
+{
+ "name": "織田信行",
+ "no": "3688",
+ "ch": null,
+ "cost": 3,
+ "troop": "弓馬器騎防速",
+ "sub": "",
+ "effect": "弓・馬・器・騎部隊の防御・速度上昇",
+ "furigana": "おだのぶゆき",
+ "illustrator": "木下月乃",
+ "imageFull": "assets/img/characters/no3688_full.png",
+ "imageChar": "assets/img/characters/no3688_char.png",
+ "atkBase": 840,
+ "atkGrowth": null,
+ "defBase": 960,
+ "defGrowth": null,
+ "tacticsBase": 440.0,
+ "tacticsGrowth": null,
+ "lv0Troops": 3130,
+ "rankGrades": {
+  "yari": "C",
+  "yumi": "A",
+  "uma": "B",
+  "ki": "B"
+ },
+ "initialSkill": "面従腹背",
+ "skillDetail": "C/LV10 確率 44% 防御 530%上昇/対象:弓・馬・器・騎\n①防御 530%上昇する(確率 44%)\n②速度 70%上昇する(確率 100%)\n③加勢出陣時は速度効果3倍になる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓・馬・器・騎　確率 44% / 防御 530%上昇 + 確率 100% / 速度 70%上昇(加勢出陣時は速度効果3倍)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-19登録。うぐさんが撮ったカード画像(スキルLV10表記)から読み取った。手順書B-00によりLV10カードはカード上の全情報を採用してよい。",
+  "ixanary.com(cards/3688)はPage Not Found、ixawiki.com(BushoCard/3688織田信行)は未作成(編集ページが返る)。2026-08-19時点で標準2ソースとも掲載が無い新カードのため、カード画像から取れない項目(成長値・章・合成候補・鍛錬別の数値)はnullのままとした。",
+  "兵科ランクはカード4隅のバッジを拡大して読んだ(槍C/弓A/馬B/器B)。スキルのランク表記も拡大して確認した。"
+ ]
+}

@@ -1,0 +1,42 @@
+{
+ "name": "北信愛（2）",
+ "no": "7024",
+ "ch": null,
+ "cost": 4.5,
+ "troop": "槍砲器防",
+ "sub": "",
+ "effect": "槍・砲・器部隊の防御上昇 影城主なら1.5倍",
+ "furigana": "きたのぶちか",
+ "illustrator": "青空あおい",
+ "imageFull": "assets/img/characters/no7024_full.png",
+ "imageChar": "assets/img/characters/no7024_char.png",
+ "atkBase": 1050,
+ "atkGrowth": null,
+ "defBase": 1150,
+ "defGrowth": null,
+ "tacticsBase": 550.0,
+ "tacticsGrowth": null,
+ "lv0Troops": 4330,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "B",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "明鏡止水",
+ "skillDetail": "A/LV10 確率 36% 防御 560%上昇/対象:槍・砲・器\n①防御 560%上昇する\n②このスキルを所持する武将の所有者が影城主のとき防御効果1.5倍になる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・砲・器　確率 36% / 防御 560%上昇(所有者が影城主のとき1.5倍)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-19登録。うぐさんが撮ったカード画像(スキルLV10表記)から読み取った。手順書B-00によりLV10カードはカード上の全情報を採用してよい。",
+  "ixanary.com(cards/7024)はPage Not Found、ixawiki.com(BushoCard/7024北信愛)は未作成(編集ページが返る)。2026-08-19時点で標準2ソースとも掲載が無い新カードのため、カード画像から取れない項目(成長値・章・合成候補・鍛錬別の数値)はnullのままとした。",
+  "兵科ランクはカード4隅のバッジを拡大して読んだ(槍S/弓B/馬A/器A)。スキルのランク表記も拡大して確認した。",
+  "2026-08-19: 極/特に同名の既存カード(無印)があるため、ユーザー判断で新しい側に（2）を付けた。"
+ ]
+}
