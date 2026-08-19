@@ -1,0 +1,42 @@
+{
+ "name": "長宗我部盛親-復刻-（2）",
+ "no": "1986",
+ "ch": null,
+ "cost": 3,
+ "troop": "全攻",
+ "sub": "",
+ "effect": "4部隊以下の攻撃で効果2倍",
+ "furigana": "ちょうそかべもりちか",
+ "illustrator": "直良有祐",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1240,
+ "atkGrowth": 62,
+ "defBase": null,
+ "defGrowth": 30,
+ "tacticsBase": 600,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3850,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "S",
+  "ki": "SS"
+ },
+ "initialSkill": "八幡軍神",
+ "skillDetail": "S/LV10 確率 54% 攻撃 79%上昇/対象:全\n①攻撃 79%上昇する\n②4部隊以下の攻撃で効果が2倍となる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 54% / 攻撃 79%上昇(4部隊以下の攻撃で効果2倍)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-17登録。カード画像が無いためixanary.com(cards/1986)とixawiki.com(BushoCard/1986長宗我部盛親)の生HTML2ソースのみで作成した。imageFull/imageCharはnull。",
+  "cost/lv0Troops/rankGrades/atkBase・atkGrowth/tacticsBase・tacticsGrowth/defGrowthは両ソース一致。defBaseのみixanary=1240・ixawiki=1120で食い違ったためnullにした(今回の割当20体のうち17体で発生している系統的な食い違い)。",
+  "八幡軍神はixawiki側もLv1/Lv10を分けて記載しておりLv1(確率28%攻撃35%上昇)・Lv10(確率54%攻撃79%上昇)とも4部隊以下の攻撃で効果2倍という特殊効果を含め両ソース完全一致した。",
+  "reviewedOkはfalseのまま。カード画像による4隅バッジ・スキルパネル照合が未実施のため黄丸化はできない。"
+ ]
+}

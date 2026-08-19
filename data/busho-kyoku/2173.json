@@ -1,0 +1,41 @@
+{
+ "name": "甲斐姫（2）",
+ "no": "2173",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "全防",
+ "sub": "",
+ "effect": "防御 20%上昇+防御時のみ自軍の兵士被害数3%減少(重複・模倣不可)",
+ "furigana": "かいひめ",
+ "illustrator": "碧風羽",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 870,
+ "atkGrowth": 20,
+ "defBase": 950,
+ "defGrowth": 22,
+ "tacticsBase": 460,
+ "tacticsGrowth": 2,
+ "lv0Troops": 3390,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "B",
+  "ki": "A"
+ },
+ "initialSkill": "八坂刀売神",
+ "skillDetail": "B/LV10 確率 50% 防御 20%上昇+防御時のみ自軍の兵士被害数3%減少/対象:全\n①防御 20%上昇する\n②防御時のみ自軍の兵士被害数が3%減少する(重複・模倣不可)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 50% / 防御 20%上昇+防御時のみ自軍の兵士被害数3%減少(重複・模倣不可)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当B)。カード画像が無いため imageFull/imageChar は null。ixanary.com(cards/2173)の埋め込みJSONとixawiki.com(index.php?BushoCard/2173甲斐姫)の生HTMLで、コスト/指揮兵数/攻撃防御兵法の初期値成長値/兵科ランク(槍S弓A馬B器A)/イラストレーター(碧風羽)/スキルLV1・LV10両方の数値(LV1:確率+18%/防御7%上昇/被害数2%減少、LV10:確率+50%/防御20%上昇/被害数3%減少)が完全一致することを確認して登録した(このカードはixawikiがLV1とLV10の両方を掲載)。",
+  "assign_B.txtの表記「甲斐姫(2)」に従い、同名武将と区別するため（2）を付けた。両ソースの武将名表記自体は「甲斐姫」のみ(No.で一意)。",
+  "章(ch)は両ソースとも記載が無いため未確認。synthesisTableは今回付けていない。"
+ ]
+}

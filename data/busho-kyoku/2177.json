@@ -1,0 +1,41 @@
+{
+ "name": "ヴィレラ",
+ "no": "2177",
+ "ch": null,
+ "cost": 1.5,
+ "troop": "全",
+ "sub": "",
+ "effect": "銅銭獲得率2.5%(対人撃破兵数に応じて自軍全員が銅銭獲得・重複発動上限数4)",
+ "furigana": "う゛ぃれら",
+ "illustrator": "BISAI",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 720,
+ "atkGrowth": 19,
+ "defBase": 720,
+ "defGrowth": 19,
+ "tacticsBase": 460,
+ "tacticsGrowth": 2,
+ "lv0Troops": 900,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "B",
+  "uma": "B",
+  "ki": "B"
+ },
+ "initialSkill": "彷徨う福音",
+ "skillDetail": "B/LV10 確率 20% 銅銭獲得率2.5%/対象:全\n①対人撃破兵数に応じて自軍全員が銅銭獲得率2.5%で銅銭を獲得する(重複発動上限数4)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 20% / 銅銭獲得率2.5%(対人撃破兵数に応じて自軍全員が銅銭獲得・重複発動上限数4)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当B)。カード画像が無いため imageFull/imageChar は null。ixanary.com(cards/2177)の埋め込みJSONとixawiki.com(index.php?BushoCard/2177ヴィレラ)の生HTMLで、コスト/指揮兵数/攻撃防御兵法の初期値成長値/兵科ランク(槍B弓B馬B器B)/イラストレーター(BISAI)/スキルLV10数値(確率+20%/銅銭獲得率2.5%/重複発動上限数4)が完全一致することを確認して登録した(このカードはixawikiがLV10のみ掲載)。atkBase=defBase=720は両ソース独立に一致しているため書き換えず登録した(攻防同値のカード)。",
+  "銅銭獲得系スキルのためtroopは対象のみ(全)でスキル種別接尾辞は付けない(既存登録岡左内No.2080の表記に合わせた)。furiganaはixanary/ixawiki共通の表記「う゛ぃれら」をそのまま採用した。",
+  "章(ch)は両ソースとも記載が無いため未確認。synthesisTableは今回付けていない。"
+ ]
+}

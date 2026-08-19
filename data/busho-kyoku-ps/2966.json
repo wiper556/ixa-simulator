@@ -1,0 +1,44 @@
+{
+ "name": "風魔小太郎（2）",
+ "no": "2966",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "全攻速",
+ "sub": "",
+ "effect": "攻撃 18%上昇+速度 36%上昇",
+ "furigana": "ふうまこたろう",
+ "illustrator": "BISAI",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 900,
+ "atkGrowth": 23,
+ "defBase": 800,
+ "defGrowth": 20,
+ "tacticsBase": 455.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2760,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "A",
+  "uma": "S",
+  "ki": "A"
+ },
+ "initialSkill": "蚩尤風遁",
+ "skillDetail": "B/LV10 確率 100% 攻撃 18%上昇+速度 36%上昇/対象:全\n①攻撃 18%上昇する\n②速度 36%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 攻撃 18%上昇+速度 36%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "カード画像が無いため ixanary.com(cards/2966, skills/蚩尤風遁)と ixawiki.com(index.php?BushoCard/2966風魔小太郎, Busho/武将スキル)の生HTML2ソースを突き合わせて登録した。",
+  "コスト2.5・指揮兵数2760・統率(槍B/弓A/馬S/器A)・攻撃900/成長23・防御800/成長20・兵法455.0/成長2.0・ふりがな・イラストレーターは両ソース一致。初期スキル「蚩尤風遁」[B]はixanary・ixawikiともLV10確率100%/攻撃18%上昇/速度36%上昇で一致。",
+  "部隊スキル「速：忍び衆」は当サイトのデータ項目に対応フィールドが無いため未登録。",
+  "カード画像が無いためimageFull/imageCharはnull、synthesisTableは付けず、reviewedOkはfalseのまま。章(ch)は両ソースとも記載が無くnullとした。",
+  "【命名の食い違い】assign一覧の表記は「風魔小太郎(2)」だったが、既に「風魔小太郎（2）」(No.2470)が別カードとして登録済みで衝突するため、既存の番号(無印:No.2071、（2）:No.2470、-復刻-（2）:No.2552、（男）:No.3004、（女）:No.3040)と衝突しない次の番号「（3）」に振り直した。ixawiki一覧側の(N)の付け方とサイト側の既存登録がずれている可能性があり、要確認。",
+  "2026-08-18: 登録時に既存カードと同名になるのを避けて（N）を空き番号へ振り直していたが、**（N）はゲーム内でしか分からない**ので ixawiki の一覧の表記に戻した。既存カードと同名のままなので、正しい（N）はうぐさんに確認が要る。"
+ ]
+}

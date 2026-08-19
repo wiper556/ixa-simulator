@@ -1,0 +1,41 @@
+{
+ "name": "甘利虎泰",
+ "no": "2206",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "槍弓砲攻",
+ "sub": "",
+ "effect": "攻撃 5.4%上昇(部隊ランクボーナスで変動)",
+ "furigana": "あまりとらやす",
+ "illustrator": "安里",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 980,
+ "atkGrowth": 27,
+ "defBase": 940,
+ "defGrowth": 25,
+ "tacticsBase": 460.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3420,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "B"
+ },
+ "initialSkill": "猛虎燎原",
+ "skillDetail": "B/LV10 確率 18% 攻撃 5.4%上昇/対象:槍・弓・砲\n①攻撃 5.4%上昇する(部隊ランクボーナスで変化)\n②部隊ランクスキルの発動率が9%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・弓・砲　確率 18% / 攻撃 5.4%上昇(部隊ランクボーナスで変化)+部隊ランクスキル発動率 9%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-17登録。カード画像が無いためixanary.com(cards/2206)生HTMLとixawiki.com(index.php?BushoCard/2206甘利虎泰)の2ソースで基本ステータス(コスト・指揮兵数・統率槍弓馬器・攻撃/防御/兵法の初期値と成長値・illustrator)が完全一致することを確認して登録した。",
+  "スキル「猛虎燎原」(B)は部隊ランクボーナスで変動する数式スキル(LV1では0%上昇でLV10では5.4%上昇+部隊ランクスキル発動率9%上昇)。data/busho/1093.jsonの井伊直虎「女地頭」(同種の部隊ランク依存+発動率上昇スキル)の書式に倣って登録した。",
+  "スキル数値(LV10確率18%/攻撃5.4%上昇/対象槍弓砲)はixanary.comのLV10欄から採用。ixawiki.comはLV1相当(確率8%/攻撃0%上昇)のみ掲載でLV10欄が無く、LV1部分同士は一致した(矛盾ではなく情報量の差)。"
+ ]
+}

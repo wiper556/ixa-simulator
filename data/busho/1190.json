@@ -1,0 +1,48 @@
+{
+ "name": "上杉景勝【覇】",
+ "no": "1190",
+ "ch": "22章",
+ "cost": 5,
+ "troop": "槍弓砲攻",
+ "sub": "",
+ "effect": "槍弓砲指揮時攻撃120%上昇、部隊内の異なるスキル数×20%を加算",
+ "furigana": "うえすぎかげかつ",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1190_full.png",
+ "imageChar": "assets/img/characters/no1190_char.png",
+ "atkBase": 1270,
+ "atkGrowth": 72,
+ "defBase": 1200,
+ "defGrowth": 44,
+ "tacticsBase": 740,
+ "tacticsGrowth": 3.5,
+ "lv0Troops": 4650,
+ "rankGrades": {
+  "yari": "SS",
+  "yumi": "S",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "義神ノ紋章",
+ "skillDetail": "SSS/LV10 確率 45% 攻撃 120%上昇/対象:槍・弓・砲\n①攻撃 120%上昇する\n②自部隊内で発動したそれぞれ名前の異なるスキルの数×20%を攻撃効果に加算する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・弓・砲　確率 45% / 攻撃 120%上昇(部隊内の異なるスキル数×20%を加算)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録。カード画像(スキルLV10形式・no1190_full.png)から作成。ステータス・スキル文はixanary.com(cards/1190)生HTMLの成長表・スキルボックスと一致確認。",
+  "rankGrades(槍SS/弓S/馬A/器A)はカード画像バッジ4隅・ixanary.com card JSON・ixawiki.com「武将カード一覧(天)」表の3ソースで一致。",
+  "名前の【覇】はixawiki.com「武将カード一覧(天)」表の表記(上杉景勝(覇))とixanary.com jobType=覇の両方で確認。",
+  "初期スキル義神ノ紋章はSSSランクのためdata/skill/義神ノ紋章.jsonが必要だが未作成(このバッチでは作成禁止のため報告のみ)。",
+  "章は情報源に記載が無く未確認。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2021-08-13",
+ "wikiCommentCount": 228,
+ "chGuess": "22章",
+ "chSource": "wikiOldestComment"
+}

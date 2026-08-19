@@ -1,0 +1,43 @@
+{
+ "name": "板垣信方",
+ "no": "2211",
+ "ch": null,
+ "cost": 3,
+ "troop": "馬砲器防速",
+ "sub": "",
+ "effect": "防御 52%上昇+速度 40%上昇",
+ "furigana": "いたがきのぶかた",
+ "illustrator": "士基軽太",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 980,
+ "atkGrowth": 26,
+ "defBase": 990,
+ "defGrowth": 27,
+ "tacticsBase": 500,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 3180,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "S",
+  "ki": "B"
+ },
+ "initialSkill": "不退ノ防戦",
+ "skillDetail": "B/LV10 対象:馬・砲・器\n①確率38%で防御 52%上昇する\n②確率100%で速度 40%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "馬・砲・器　確率 38% / 防御 52%上昇+確率 100% / 速度 40%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当D)。カード画像が無いためixanary.com(cards/2211)とixawiki.com(index.php?BushoCard/2211板垣信方)の生HTML突き合わせのみで登録した。",
+  "コスト3・指揮兵数3180・攻撃力980(+26)・防御力990(+27)・兵法500(+2.0)・イラストレーター士基軽太・スキルLV1/LV10の数値は両ソースで完全一致。",
+  "防御と速度で発動確率が異なる複合スキルのため、既存データ(busho-kyoku/2119.jsonなど)の形式に倣いskillDetailとtrTableに両方の確率を併記した。",
+  "rankGrades(槍A/弓A/馬S/器B)はixawikiのみ出典(ixanaryにテキスト情報無し)。",
+  "章(ch)は両ソースに記載が無く未確認のためnull。"
+ ]
+}

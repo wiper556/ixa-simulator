@@ -1,0 +1,43 @@
+{
+ "name": "豪姫",
+ "no": "2937",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "全防",
+ "sub": "",
+ "effect": "防御 8%上昇(戦闘参加した自軍全部隊に効果/スキル発動後はHPが必ず0になる)",
+ "furigana": "ごうひめ",
+ "illustrator": "正子公也",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 810,
+ "atkGrowth": null,
+ "defBase": 990,
+ "defGrowth": null,
+ "tacticsBase": 430.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2920,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "夢幻の牢姫",
+ "skillDetail": "B/LV10 確率 100% 防御 8%上昇/対象:全\n①防御 8%上昇する\n②戦闘に参加した自軍全部隊に効果がある\n③スキル発動後はHPが必ず0になる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 防御 8%上昇(戦闘参加した自軍全部隊に効果/スキル発動後はHPが必ず0になる)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当J)。カード画像が無いため ixanary.com(cards/2937, skills/夢幻の牢姫)と ixawiki.com(index.php?BushoCard/2937豪姫, Busho/武将スキル)の生HTML2ソースを突き合わせて登録した。",
+  "統率(槍S/弓A/馬A/器A)・コスト2.5・指揮兵数2920・攻撃810/成長値不一致・防御990/成長値不一致・兵法430.0/2.0・ふりがな・イラストレーターはixanary.comとixawiki.comの2ソースで一致することを確認した(不一致箇所は個別に注記)。",
+  "初期スキル「夢幻の牢姫」[B]はixanary.com(skills/夢幻の牢姫)のLV10行とixawiki.com(Busho/武将スキル)のマスター一覧LV10行の2ソースで確認した(不一致箇所は個別に注記)。",
+  "【食い違い】成長値がixanary.com=攻撃24/防御20、ixawiki.com=攻撃20/防御24で左右が入れ替わって一致しない。カード画像が無く決め手が無いためatkGrowth/defGrowthは両方nullにした。",
+  "カード画像が無いためimageFull/imageCharはnull、synthesisTableは付けず、reviewedOkはfalseのまま。章(ch)は両ソースとも記載が無くnullとした。"
+ ]
+}

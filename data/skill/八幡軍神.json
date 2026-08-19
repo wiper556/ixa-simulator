@@ -1,0 +1,25 @@
+{
+ "name": "八幡軍神",
+ "rank": "S",
+ "baseRate": 54,
+ "target": "全",
+ "effectSummary": "S/LV10 確率 54% 攻撃 79%上昇/対象:全\n①攻撃 79%上昇する\n②4部隊以下の攻撃で効果が2倍となる",
+ "categoryLinks": [],
+ "sourceCharacters": [
+  {
+   "name": "長宗我部盛親-復刻-（2）",
+   "no": "1986",
+   "slot": "移植不可"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 54% / 攻撃 79%上昇(4部隊以下の攻撃で効果2倍)"
+  }
+ ],
+ "notes": [
+  "A-3-9「武将自身の初期スキル(S以上)は無条件にページを作る」により2026-08-16に一括作成。内容は data/busho/1986.json の skillDetail / trTable からの転記で、新しい事実は持ち込んでいない。"
+ ]
+}

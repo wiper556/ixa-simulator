@@ -1,0 +1,41 @@
+{
+ "name": "村上武吉",
+ "no": "2051",
+ "ch": null,
+ "cost": 3,
+ "troop": "弓砲器攻破",
+ "sub": "",
+ "effect": "弓・砲・器兵の攻撃・破壊力上昇",
+ "furigana": "むらかみたけよし",
+ "illustrator": "オンダカツキ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 700,
+ "atkGrowth": 17,
+ "defBase": 650,
+ "defGrowth": 15,
+ "tacticsBase": 420,
+ "tacticsGrowth": 2,
+ "lv0Troops": 2870,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "A",
+  "uma": "C",
+  "ki": "S"
+ },
+ "initialSkill": "船団爆雷",
+ "skillDetail": "B/LV10 確率 25% 攻撃 30%上昇/対象:弓・砲・器\n①攻撃 30%上昇する\n②破壊 10%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓・砲・器　確率 25% / 攻撃 30%上昇+破壊 10%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-17登録(担当F)。カード画像が無いためixanary.com(cards/2051)とixawiki.com(index.php?BushoCard/2051村上武吉)の生HTML突き合わせのみで登録した。",
+  "コスト3・指揮兵数2870・統率(槍B/弓A/馬C/器S)・攻撃力700(+17)・防御力650(+15)・兵法420(+2)・初期スキル「船団爆雷」LV1(確率+10%/対象弓砲器/攻撃15%上昇/破壊5%上昇)は両ソースで完全一致。LV10(確率25%/攻撃30%上昇/破壊10%上昇)はixawikiに記載が無くixanary単独の値。",
+  "章(ch)は両ソースとも記載が無く未確認のためnull。イラストレーターオンダカツキは両ソース一致。"
+ ]
+}

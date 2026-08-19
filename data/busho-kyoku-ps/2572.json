@@ -1,0 +1,40 @@
+{
+ "name": "柳生石舟斎-復刻-（2）",
+ "no": "2572",
+ "ch": null,
+ "cost": 4,
+ "troop": "全攻防",
+ "sub": "",
+ "effect": "攻撃 160%上昇+防御 160%上昇(全スキルの卓越確率+70%・模倣不可・確率100%)",
+ "furigana": "やぎゅうせきしゅうさい",
+ "illustrator": "能條純一",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1900,
+ "atkGrowth": 140,
+ "defBase": 1900,
+ "defGrowth": 140,
+ "tacticsBase": 520,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 4750,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "柳生新陰流幻",
+ "skillDetail": "S/LV10 確率 100% 攻撃 160%上昇+防御 160%上昇/対象:全\n模倣不可\n①攻撃が160%上昇する\n②防御が160%上昇する\n③このスキルを所持する武将の全スキルの卓越確率に70%を加算する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 攻撃 160%上昇+防御 160%上昇(全スキルの卓越確率+70%・模倣不可)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録。カード画像が無いためixanary.com(cards/2572)とixawiki.com(BushoCard/2572柳生石舟斎)の生HTMLを突き合わせて一致した項目のみ登録した。基礎値/成長値/コスト/指揮兵数/統率ランク/初期スキルLV10の確率・効果値は両ソースで一致を確認済み。カード画像が無いためrankGradesは両ソース一致のみ採用しreviewedOkはfalseのまま。",
+  "2026-08-18: 名前をシミュレーター側の既存登録に合わせた。ixawiki のカードページには復刻と明記されているのに一覧の表記だけ無印で、そこから作ったこの正本が無印になっていた。"
+ ]
+}

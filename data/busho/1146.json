@@ -1,0 +1,50 @@
+{
+ "name": "太田道灌",
+ "no": "1146",
+ "ch": "18章",
+ "cost": 4.5,
+ "troop": "弓馬器騎攻速",
+ "sub": "",
+ "effect": "攻撃・速度上昇/部隊内最速兵士速度を移動速度の基礎値化",
+ "furigana": "おおたどうかん",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1146_full.png",
+ "imageChar": "assets/img/characters/no1146_char.png",
+ "atkBase": 1070,
+ "atkGrowth": 56,
+ "defBase": 1050,
+ "defGrowth": 37,
+ "tacticsBase": 640.0,
+ "tacticsGrowth": 3,
+ "lv0Troops": 4590,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "S",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "穢土滅国",
+ "skillDetail": "S/LV10 確率 100% 攻撃 92%上昇+速度 50%上昇/対象:弓・馬・器・騎\n①攻撃 92%上昇する\n②速度 50%上昇する\n③部隊内で最も速い兵士速度を部隊移動速度の基礎値とする",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓・馬・器・騎　確率 100% / 攻撃 92%上昇+速度 50%上昇(部隊内最速兵士速度を移動速度基礎値化)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録。カード画像(スキルLV10形式)から。統率バッジ4隅を拡大確認: 槍A/弓S/馬A/器S(左上=槍/右上=馬/左下=弓/右下=器の並びで確認)。",
+  "初期スキル名はカード画像の小さい文字が「犠土滅国」に見えたが、ixanary.com(cards/1146のリンクhref/skills/穢土滅国)とixawiki.com(BushoCard/1146太田道灌)の2ソースで「穢土滅国」と確認し訂正した。",
+  "対象兵科の4文字目はカード画像で「駒」に見えたが、ixanary.com生HTML(title=弓馬器騎)とixawiki.com生HTMLの両方で「騎」と確認し訂正した(弓・馬・器・騎)。",
+  "ステータス初期値1070/1050/640.0・成長値+56/+37/+3・cost4.5・lv0Troops4590はixanary.com(cards/1146)生HTMLの成長表と一致確認。",
+  "武将名はixawiki.com(Busho/武将カード一覧(天))で「太田道灌」(無印)表記を確認。",
+  "初期スキル「穢土滅国」はSランクだがdata/skill/に個別ページが無い(要作成)。",
+  "章は情報源に記載が無く未確認。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2019-08-09",
+ "wikiCommentCount": 57,
+ "chGuess": "18章",
+ "chSource": "wikiOldestComment"
+}

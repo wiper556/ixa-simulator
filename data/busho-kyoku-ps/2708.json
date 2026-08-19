@@ -1,0 +1,40 @@
+{
+ "name": "三好元長",
+ "no": "2708",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "槍弓馬攻破",
+ "sub": "",
+ "effect": "攻撃 30%上昇+破壊 5%上昇(確率30%)",
+ "furigana": "みよしもとなが",
+ "illustrator": "月岡ケル",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 725,
+ "atkGrowth": 18,
+ "defBase": 725,
+ "defGrowth": 18,
+ "tacticsBase": 450,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3160,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "B",
+  "ki": "C"
+ },
+ "initialSkill": "滅覇渾身",
+ "skillDetail": "B/LV10 確率 30% 攻撃 30%上昇+破壊 5%上昇/対象:槍・弓・馬",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・弓・馬　確率 30% / 攻撃 30%上昇+破壊 5%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録。カード画像が無いためixanary.com(cards/2708)とixawiki.com(BushoCard/2708三好元長)の生HTMLを突き合わせて一致した項目のみ登録した。基礎値/成長値/コスト/指揮兵数/統率ランク/初期スキルLV10の確率・効果値は両ソースで一致を確認済み。カード画像が無いためrankGradesは両ソース一致のみ採用しreviewedOkはfalseのまま。",
+  "ixawikiの基本ステータス表はLV1相当の確率+15%/攻撃15%上昇+破壊5%上昇の一段のみ表示だったため、LV10値はixanary.com(cards/2708)のLV10欄(確率+30%/攻撃30%上昇+破壊5%上昇)を採用した。両ソースのLV1値は一致確認済み。"
+ ]
+}

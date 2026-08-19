@@ -1,0 +1,39 @@
+{
+ "name": "小野鎮幸",
+ "no": "2255",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "槍馬器防速",
+ "sub": "",
+ "effect": "槍・馬・器兵の防御・速度上昇(武将ランクで防御効果が変化)",
+ "furigana": "おのしげゆき",
+ "illustrator": "tso",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 980,
+ "atkGrowth": 30,
+ "defBase": 980,
+ "defGrowth": 30,
+ "tacticsBase": 470,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3480,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "B",
+  "uma": "A",
+  "ki": "B"
+ },
+ "initialSkill": "絶 無双壁",
+ "skillDetail": "B/LV10 確率 32%/100% 防御 70+(ランクx1.5)%上昇+速度 35%上昇/対象:槍・馬・器\n①確率 32% 防御が70+(ランクx1.5)%上昇する(武将ランクで効果が変化する)\n②確率 100% 速度 35%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・馬・器　確率 32%/100% / 防御 70+(ランクx1.5)%上昇+速度 35%上昇(武将ランクで防御効果が変化)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-17登録(担当F)。カード画像が無いためixanary.com(cards/2255)とixawiki.com(index.php?BushoCard/2255小野鎮幸)の生HTML突き合わせのみで登録した。"
+ ]
+}

@@ -426,6 +426,21 @@
   // 鍛錬表の行を絞る。LV10は常に出し、TR行は値が判明している一番上の段までを
   // 連続して出す(その範囲で値が無い段は「未確認」と表示する)。
   // 段を隠すと「LV10 → TR5」のように飛んで見え、TR1〜4が存在しないと誤解される。
+  // 鍛錬表の「必要ポイント」。TR6が「パラレル」の武将は、パラレルカード
+  // (番号+30000)を合成しないと上がらない。そのページがうちにあるならリンクにする。
+  // **無い番号にはリンクしない**(TR6=パラレルは184体、登録済みのパラレルは12体だけ)。
+  // どれが登録済みかは gen_detail_pages.py が window.__PARALLEL_NOS で渡す。
+  function tpPointsCell(points, no){
+    const t = String(points == null ? '' : points);
+    const esc = tpEscapeHtml(t || '-');
+    if(t.indexOf('パラレル') < 0) return esc;
+    const pno = String(Number(no) + 30000);
+    const list = (typeof window !== 'undefined' && window.__PARALLEL_NOS) || [];
+    if(list.indexOf(pno) < 0) return esc;
+    return esc.replace('パラレル',
+      '<a href="busho/' + pno + '.html">パラレル</a>');
+  }
+
   function tpVisibleTrRows(rows){
     if(!rows || !rows.length) return [];
     const order = ['LV10','TR1','TR2','TR3','TR4','TR5','TR6'];
@@ -491,7 +506,7 @@
       + (g.trTable ? (
         '<div class="tp-detail-block"><h2>鍛錬レベル別性能</h2>'
         + '<div class="tp-table-scroll"><table class="tp-stat-table"><thead><tr><th>レベル</th><th class="tp-col-narrow">必要ポイント</th><th>効果</th></tr></thead><tbody>'
-        + tpVisibleTrRows(g.trTable).map(function(row){ return '<tr><td>'+tpEscapeHtml(row.level)+'</td><td class="tp-col-narrow">'+tpEscapeHtml(row.points||'-')+'</td><td style="text-align:left;">'+(row.effect ? tpColorizeMujin(row.effect) : '<span style="color:var(--muted);">未確認</span>')+'</td></tr>'; }).join('')
+        + tpVisibleTrRows(g.trTable).map(function(row){ return '<tr><td>'+tpEscapeHtml(row.level)+'</td><td class="tp-col-narrow">'+tpPointsCell(row.points, g.no)+'</td><td style="text-align:left;">'+(row.effect ? tpColorizeMujin(row.effect) : '<span style="color:var(--muted);">未確認</span>')+'</td></tr>'; }).join('')
         + '</tbody></table></div></div>'
       ) : '')
       + (g.synthesisTable ? (

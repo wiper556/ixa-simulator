@@ -1,0 +1,42 @@
+{
+ "name": "前田利家",
+ "no": "3032",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "槍防",
+ "sub": "",
+ "effect": "防御 20%上昇",
+ "furigana": "まえだとしいえ",
+ "illustrator": "伊藤龍馬",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 625,
+ "atkGrowth": 17,
+ "defBase": 625,
+ "defGrowth": 17,
+ "tacticsBase": 360.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 2260,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "B",
+  "uma": "C",
+  "ki": "B"
+ },
+ "initialSkill": "槍隊円陣",
+ "skillDetail": "D/LV10 確率 40% 防御 20%上昇/対象:槍\n①防御 20%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍　確率 40% / 防御 20%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当D)。カード画像が無いためixanary.com(cards/3032)とixawiki.com(index.php?BushoCard/3032前田利家, Busho/武将カード一覧)の生HTML2ソースを突き合わせて登録した。",
+  "統率(A/B/C/B)・コスト2.5・指揮兵数2260・攻撃625/17・防御625/17・兵法360.0/2・ふりがな・初期スキル「槍隊円陣」[D]はixanary.comとixawiki.comの2ソースで一致することを確認した(不一致箇所は個別に注記)。",
+  "攻撃初期値625・防御初期値625が完全に同値だが、ixanary.comとixawiki.comの2ソースが独立に一致しているため実際の値と判断した(攻撃防御同値バグの誤登録ではない)。",
+  "カード画像が無いためimageFull/imageCharはnull、synthesisTableは付けない。reviewedOkはfalseのまま。章(ch)は両ソースとも記載が無くnullとした。"
+ ]
+}

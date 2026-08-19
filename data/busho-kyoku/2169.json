@@ -1,0 +1,40 @@
+{
+ "name": "大内義隆",
+ "no": "2169",
+ "ch": null,
+ "cost": 2,
+ "troop": "槍弓馬防",
+ "sub": "",
+ "effect": "防御 30%上昇+防御戦闘勝利時のみ敵軍1部隊の武将に追加ダメージ+20",
+ "furigana": "おおうちよしたか",
+ "illustrator": "小森ニコ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 650,
+ "atkGrowth": 17,
+ "defBase": 750,
+ "defGrowth": 19,
+ "tacticsBase": 490,
+ "tacticsGrowth": 2,
+ "lv0Troops": 2400,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "B"
+ },
+ "initialSkill": "狂奏",
+ "skillDetail": "B/LV10 確率 25% 防御 30%上昇+防御戦闘勝利時のみ敵軍1部隊の武将に追加ダメージ+20/対象:槍・弓・馬\n①防御 30%上昇する\n②防御戦闘勝利時のみ敵軍1部隊の武将に追加ダメージ+20",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・弓・馬　確率 25% / 防御 30%上昇+防御戦闘勝利時のみ敵軍1部隊の武将に追加ダメージ+20"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当B)。カード画像が無いため imageFull/imageChar は null。ixanary.com(cards/2169)の埋め込みJSONとixawiki.com(index.php?BushoCard/2169大内義隆)の生HTMLで、コスト/指揮兵数/攻撃防御兵法の初期値成長値/兵科ランク(槍A弓A馬A器B)/イラストレーター(小森ニコ)/スキルLV1数値(確率+10%/防御7.5%上昇/追加ダメージ+4)が完全一致することを確認して登録した。LV10の数値(確率25%/防御30%上昇/追加ダメージ+20)はixanaryのカードページに明記。",
+  "章(ch)は両ソースとも記載が無いため未確認。synthesisTableは今回付けていない。"
+ ]
+}

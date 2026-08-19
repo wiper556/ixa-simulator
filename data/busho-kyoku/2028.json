@@ -1,0 +1,39 @@
+{
+ "name": "伊達政宗",
+ "no": "2028",
+ "ch": null,
+ "cost": 3,
+ "troop": "全攻破",
+ "sub": "",
+ "effect": "攻撃 15%上昇+破壊 7%上昇",
+ "furigana": "だてまさむね",
+ "illustrator": "枢やな",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 777,
+ "atkGrowth": 19,
+ "defBase": 777,
+ "defGrowth": 16,
+ "tacticsBase": 445,
+ "tacticsGrowth": 2,
+ "lv0Troops": 2850,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "C",
+  "uma": "S",
+  "ki": "B"
+ },
+ "initialSkill": "滅殺陣弦月",
+ "skillDetail": "B/LV10 確率 50% 攻撃 15%上昇+破壊 7%上昇/対象:全\n①攻撃 15%上昇する\n②破壊 7%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 50% / 攻撃 15%上昇+破壊 7%上昇"
+  }
+ ],
+ "notes": [
+  "2026-08-17登録(担当D)。カード画像が無いためixanary.com(cards/2028)生HTMLとixawiki.com(index.php?BushoCard/2028伊達政宗、およびBusho/武将カード一覧(極)・Busho/武将スキルの生HTML)の2ソースで数値が一致することを確認して登録した。"
+ ],
+ "reviewedOk": false
+}

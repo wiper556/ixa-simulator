@@ -1,0 +1,41 @@
+{
+ "name": "羽柴秀吉（2）",
+ "no": "2148",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "槍馬砲攻速",
+ "sub": "",
+ "effect": "槍・馬・砲部隊の攻撃・速度上昇",
+ "furigana": "はしばひでよし",
+ "illustrator": "神威なつき",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 850,
+ "atkGrowth": 18,
+ "defBase": 800,
+ "defGrowth": 17,
+ "tacticsBase": 500,
+ "tacticsGrowth": 2.5,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "C",
+  "uma": "B",
+  "ki": "A"
+ },
+ "initialSkill": "千成瓢箪",
+ "skillDetail": "B/LV10 確率 100% 攻撃 16%上昇/対象:槍・馬・砲\n①攻撃 16%上昇する\n②速度 25%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・馬・砲　確率 100% / 攻撃 16%上昇+速度 25%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-17登録。カード画像が無いためixanary.com(cards/2148)とixawiki.com(BushoCard/2148羽柴秀吉)の生HTMLの一致だけで登録した。",
+  "基礎値/成長値/コスト/指揮兵数/rankGrades(槍A・弓C・馬B・器A)/イラストレーター/スキルLV1数値は両ソースで完全一致。LV10数値はixanary.comのみに記載(ixawikiはLV1のみ掲載)。",
+  "名前は割り当て表記「羽柴秀吉(2)」を全角括弧に変換して登録。",
+  "章(ch)は両ソースに記載が無く未確認のためnull。"
+ ]
+}

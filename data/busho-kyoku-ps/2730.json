@@ -1,0 +1,71 @@
+{
+ "name": "以心崇伝",
+ "no": "2730",
+ "ch": null,
+ "cost": 2.0,
+ "troop": "全防",
+ "sub": "",
+ "effect": "防御 (2.5×攻撃参加武将数)%上昇",
+ "furigana": "いしんすうでん",
+ "illustrator": "タケダサナ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 700,
+ "atkGrowth": 18,
+ "defBase": 700,
+ "defGrowth": 18,
+ "tacticsBase": 550,
+ "tacticsGrowth": 3.0,
+ "lv0Troops": 2350,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "黒衣の宰相",
+ "skillDetail": "A/LV10 確率 100% 防御 (2.5×攻撃参加武将数)%上昇/対象:全\n①防御が(2.5×攻撃参加武将数)%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 防御 (2.5×攻撃参加武将数)%上昇"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": null
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": null
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": null
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": null
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": null
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": null
+  }
+ ],
+ "notes": [
+  "2026-08-18新規登録(担当G・カード画像なし)。ixanary.com/cards/2730とixawiki.com(index.php?BushoCard/2730以心崇伝)の生HTML2ソースで統率(槍A弓A馬A器A)・コスト2・指揮兵数2350・初期値700/700/550・成長値+18/+18/+3.0・絵師タケダサナ・ふりがな・スキルLV1値(確率+100%/防御(1×攻撃参加武将数)%上昇)が完全一致することを確認した(不一致項目なし)。",
+  "攻撃・防御初期値がともに700で同値だが、ixawiki側も独立に700を示しており、ixanaryの防御バグ(攻撃値のコピー)には該当しないと判断した。",
+  "初期スキル「黒衣の宰相」[A]のLV10値(確率100%/防御(2.5×攻撃参加武将数)%上昇/対象全)はixanary.com/cards/2730のLV10スキルボックスで確認。参加武将数は戦闘状況により変動するため式のまま登録した。synthesisTableはカード画像が無いため作成していない。章は両ソースに記載が無く未確認。"
+ ],
+ "reviewedOk": false
+}

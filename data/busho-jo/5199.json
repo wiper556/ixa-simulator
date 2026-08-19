@@ -1,0 +1,44 @@
+{
+ "name": "木戸孝範",
+ "no": "5199",
+ "ch": null,
+ "cost": 1.5,
+ "troop": "槍攻",
+ "sub": "",
+ "effect": "槍攻10%上昇",
+ "furigana": "きどたかのり",
+ "illustrator": "三好載克",
+ "imageFull": "assets/img/characters/no5199_full.png",
+ "imageChar": "assets/img/characters/no5199_char.png",
+ "atkBase": 490,
+ "atkGrowth": 18,
+ "defBase": 460,
+ "defGrowth": 17,
+ "tacticsBase": 400.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 1380,
+ "rankGrades": {
+  "yari": "C",
+  "yumi": "D",
+  "uma": "D",
+  "ki": "D"
+ },
+ "initialSkill": "槍隊襲撃",
+ "skillDetail": "F/LV10 確率 20% 槍攻 10%上昇/対象:槍\n①槍攻 10%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍　確率 20% / 槍攻 10%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当H)。カード画像(スキルLV10形式)から。武将名「木戸孝範」/ 序 / コスト1.5 / 統率 槍C・弓D・馬D・器D(4隅アイコンを個別にズームして確認) / 初期値 攻撃490・防御460・兵法400.0 / 指揮兵数0/1380 / カードNo.5199一致 / 初期スキル「槍隊襲撃 LV10」[F] 確率+20%・対象 槍・槍攻10%上昇 / Illust 三好載克。",
+  "成長値(攻+18/防+17/兵法+2)・furigana・スキル数値はixanary.com/cards/5199の生HTML(埋め込みJSON)と完全一致。",
+  "ixawikiの当該武将ページは未作成(編集画面が返る)のため名前の（N）判定材料なし。ixanaryの同名武将欄も「0武将」のため無印とした。",
+  "章はixanary/ixawikiとも記載が無く未確認のためnull。初期スキルはFランクのためdata/skill/ページの新規作成対象外。"
+ ],
+ "wikiOldestComment": null,
+ "wikiCommentCount": 0
+}

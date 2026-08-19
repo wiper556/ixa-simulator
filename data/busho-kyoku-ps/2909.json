@@ -1,0 +1,41 @@
+{
+ "name": "村上義清",
+ "no": "2909",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "槍器防",
+ "sub": "",
+ "effect": "防御 35%上昇",
+ "furigana": "むらかみよしきよ",
+ "illustrator": "正子公也",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 640,
+ "atkGrowth": 17,
+ "defBase": 730,
+ "defGrowth": 19,
+ "tacticsBase": 490,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3350,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "B",
+  "uma": "B",
+  "ki": "A"
+ },
+ "initialSkill": "千本槍衾",
+ "skillDetail": "B/LV10 確率 42% 防御 35%上昇/対象:槍器\n①防御が35%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍器　確率 42% / 防御 35%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "カード画像が無いため ixanary.com/cards/2909 と ixawiki.com(BushoCard/2909村上義清)の生HTML2ソースで確認した。",
+  "基礎値640/730/490・成長17/19/2.5・コスト3.5・指揮兵数3350(★0-0)・統率(槍S/弓B/馬B/器A)はixanary.comとixawiki.comの2ソースで完全一致。",
+  "初期スキル千本槍衾(B)のLV10「確率+42%/対象 槍器/防御35%上昇」はixanary.comとixawiki.comの2ソースで完全一致。"
+ ]
+}

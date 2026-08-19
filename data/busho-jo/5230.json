@@ -1,0 +1,48 @@
+{
+ "name": "庵原朝昌",
+ "no": "5230",
+ "ch": "25章",
+ "cost": 2,
+ "troop": "槍攻",
+ "sub": "",
+ "effect": "槍攻 コスト×6.5=13%上昇",
+ "furigana": "いはらともまさ",
+ "illustrator": "Luke",
+ "imageFull": "assets/img/characters/no5230_full.png",
+ "imageChar": "assets/img/characters/no5230_char.png",
+ "atkBase": 490,
+ "atkGrowth": 18,
+ "defBase": 460,
+ "defGrowth": 16,
+ "tacticsBase": 410.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 1810,
+ "rankGrades": {
+  "yari": "C",
+  "yumi": "D",
+  "uma": "D",
+  "ki": "D"
+ },
+ "initialSkill": "槍隊挟撃",
+ "skillDetail": "E/LV10 確率 25% 槍攻 13%上昇/対象:槍\n①槍攻 13%上昇する(武将のコストで効果が変化)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍　確率 25% / 槍攻 コスト×6.5=13%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当K)。カード画像(スキルLV10形式)から。武将名「庵原朝昌」/ 序 / コスト2 / 統率 槍C・弓D・馬D・器D(4隅バッジをズームして確認) / 初期値 攻撃490・防御460・兵法410.0 / 指揮兵数0/1810 / カードNo.5230一致 / 初期スキル「槍隊挟撃 LV10」[E] 確率+25%・対象 槍・槍攻13%上昇(武将のコストで効果が変化) / Illust Luke。",
+  "スキル名は画像だけでは「扶撃」とも読めるが、ixanary.com/skills/槍隊挟撃/ が実在し(/skills/槍隊扶撃/ は404)、同カードのixanary.com/cards/5230の生HTMLも「槍隊挟撃」なのでこちらを採用。",
+  "槍攻の上昇率(武将自身のコスト依存)は、ixanaryのカード個別ページ埋め込み値が9.75%(コスト1.5相当)を表示しており自コスト2と不整合だったため採用しなかった。カード画像本体の表示値13%を採用(コスト2×6.5%=13%で、既存登録No.5147島津久保コスト1.5→9.75%=1.5×6.5%と同じ倍率式に一致するため画像値が正しいと判断)。",
+  "成長値(攻+18/防+16/兵法+2)・lv0Troopsはixanary.com/cards/5230の生HTMLと一致。章は情報源に記載が無く未確認のためnull。初期スキルはEランクのためdata/skill/ページの新規作成対象外。synthesisTableは今回のバッチでは付けない指示のため未作成。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。",
+  "2026-08-16: コストで効果が変わるスキルの書き方を「計算式=結果」に揃えた(担当ごとに注記の有無・文言が割れていたため)。"
+ ],
+ "wikiOldestComment": "2023-04-04",
+ "wikiCommentCount": 1,
+ "chGuess": "25章",
+ "chSource": "wikiOldestComment"
+}

@@ -1,0 +1,25 @@
+{
+ "name": "海神ノ竜宴",
+ "rank": "S",
+ "baseRate": 25,
+ "target": "弓・砲・器",
+ "effectSummary": "S/LV10 確率 25% 攻撃 (2.2×攻撃参加武将数)%上昇/対象:弓・砲・器\n①攻撃 (2.2×攻撃参加武将数)%上昇する",
+ "categoryLinks": [],
+ "sourceCharacters": [
+  {
+   "name": "毛利輝元（4）",
+   "no": "1124",
+   "slot": "移植不可"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓・砲・器　確率 25% / 攻撃 (2.2×攻撃参加武将数)%上昇"
+  }
+ ],
+ "notes": [
+  "A-3-9「武将自身の初期スキル(S以上)は無条件にページを作る」により2026-08-16に一括作成。内容は data/busho/1124.json の skillDetail / trTable からの転記で、新しい事実は持ち込んでいない。"
+ ]
+}

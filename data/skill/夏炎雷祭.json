@@ -1,0 +1,32 @@
+{
+ "name": "夏炎雷祭",
+ "rank": "S",
+ "baseRate": 30,
+ "target": "全",
+ "noMimic": true,
+ "effectSummary": "S/LV10 卓越:追加確率30%で発動 攻撃 420%上昇/対象:全\n①通常確率では発動せず卓越:追加確率30%で発動する\n②発動時攻撃 420%上昇する\n③発動時飛翔15を得る(攻撃戦闘時のみ発動飛翔獲得部分は模倣不可・二重卓越不可)",
+ "categoryLinks": [
+  {
+   "href": "skills-takuetsu.html",
+   "label": "卓越スキル一覧を見る"
+  }
+ ],
+ "sourceCharacters": [
+  {
+   "name": "立花誾千代（2）",
+   "no": "2588",
+   "slot": "移植不可",
+   "db": "kyoku"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　卓越:追加確率 30%で発動 / 攻撃 420%上昇+飛翔15(攻撃戦闘時のみ・飛翔獲得部分は模倣不可・二重卓越不可)"
+  }
+ ],
+ "notes": [
+  "A-3-9「武将自身の初期スキル(S以上)は無条件にページを作る」により2026-08-16に一括作成。内容は data/busho-kyoku-ps/2588.json の skillDetail / trTable からの転記で、新しい事実は持ち込んでいない。"
+ ]
+}

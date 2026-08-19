@@ -1,0 +1,44 @@
+{
+ "name": "松永久通",
+ "no": "3658",
+ "ch": null,
+ "cost": 3,
+ "troop": "弓器焙攻",
+ "sub": "",
+ "effect": "攻撃 125%上昇(4部隊以下の攻撃で効果3倍)",
+ "furigana": "まつながひさみち",
+ "illustrator": "nabe",
+ "imageFull": "assets/img/characters/no3658_full.png",
+ "imageChar": "assets/img/characters/no3658_char.png",
+ "atkBase": 950,
+ "atkGrowth": 35,
+ "defBase": 820,
+ "defGrowth": 23,
+ "tacticsBase": 460.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 3100,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "B",
+  "uma": "C",
+  "ki": "A"
+ },
+ "initialSkill": "永禄ノ変",
+ "skillDetail": "C/LV10 確率 45% 攻撃 125%上昇/対象:弓・器・焙\n①攻撃 125%上昇する\n②4部隊以下の攻撃で効果3倍",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓・器・焙　確率 45% / 攻撃 125%上昇(4部隊以下の攻撃で効果3倍)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当A)。カード画像(スキルLV10形式)から。武将名「松永久通」/ふりがな「まつながひさみち」/特/コスト3/統率 槍B・弓B・馬C・器A(4隅個別ズームで確認)/攻撃950・防御820・兵法460.0/指揮兵数0/3100/カードNo.3658/スキル「永禄ノ変LV10」[C] 確率:+45%・対象 弓/器/焙・攻撃:125%上昇・(4部隊以下の攻撃で効果3倍)/Illust:nabe。",
+  "対象の3つ目の文字はカード画像の潰れたピクセルフォントでは「培」とも「焙」とも判別しづらかったが、ixanary.com/cards/3658のtitle属性でも同じ「弓器焙」と表示され一致。公式スキル講座ページ(x.sengokuixa.jp/skill_kouza)でも「焙烙火矢」という兵科が実在し文脈により「弓兵科」「砲」に分類されると説明があり、「焙」は焙烙(火矢)兵科を指す略記と判断して採用した。",
+  "成長値(攻撃+35/防御+23/兵法+2)・イラストレーター(nabe)・スキルLV10効果(確率45%/攻撃125%上昇)はixanary.com/cards/3658の生HTML埋め込みJSON・スキルテーブルとカード画像が一致。",
+  "章はixanary.com/cards/3658に記載なし、ixawiki側は今回のバッチ(35xx台)で軒並み未作成だったため個別確認を省略しnullのままとした(要申し送り)。"
+ ],
+ "wikiOldestComment": null,
+ "wikiCommentCount": 0
+}

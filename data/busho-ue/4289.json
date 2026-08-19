@@ -1,0 +1,45 @@
+{
+ "name": "木下家定",
+ "no": "4289",
+ "ch": null,
+ "cost": 2,
+ "troop": "槍防",
+ "sub": "",
+ "effect": "槍防 12%上昇",
+ "furigana": "きのしたいえさだ",
+ "illustrator": "匡吉",
+ "imageFull": "assets/img/characters/no4289_full.png",
+ "imageChar": "assets/img/characters/no4289_char.png",
+ "atkBase": 540,
+ "atkGrowth": 16,
+ "defBase": 650,
+ "defGrowth": 18,
+ "tacticsBase": 450.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 1930,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "C",
+  "uma": "C",
+  "ki": "C"
+ },
+ "initialSkill": "槍隊堅陣",
+ "skillDetail": "F/LV10 確率 30% 槍防 12%上昇/対象:槍\n①槍防 12%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍　確率 30% / 槍防 12%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当H)。カード画像(スキルLV10形式)から。武将名「木下家定」/上/コスト2/統率 槍B・弓C・馬C・器C(4隅を個別にズームして確認)/攻撃540・防御650・兵法450.0/指揮兵数0/1930/カードNo.4289/スキル「槍隊堅陣LV10」[F] 確率:+30%・対象 槍・槍防:12%上昇/Illust:匡吉(カード画像下部をズームして確認、「国吉」ではなく「匡吉」)。",
+  "成長値(攻撃+16/防御+18/兵法+2)はixanary.com/cards/4289の武将データ表で確認しカード画像の初期値(540/650/450.0)・指揮1930・コスト2・イラストレーター名(匡吉)とも一致。",
+  "ixanaryの同名武将欄にNo.5151「木下家定(防：弓隊布陣 E)」という別カードが存在する旨の記載があるが、今回登録するNo.4289とは別カードのため無関係。",
+  "ixawikiは未確認(標準2ソースのうちixanaryで裏取りできたため未照合)。章はixanaryに記載がなく null のまま。",
+  "上カードは合成テーブル・TR段階が存在しない前提(data/busho-toku/3418.jsonの前例に合わせ、trTableはLV10のみ)。ixanaryのカードページにもTR/鍛錬・合成候補の記載なし。初期スキル「槍隊堅陣」はFランクのためSランク以上のskillページ作成規約には該当せず、data/skill/槍隊堅陣.json は作成していない。"
+ ],
+ "wikiOldestComment": null,
+ "wikiCommentCount": 0
+}

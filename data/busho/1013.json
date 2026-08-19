@@ -1,0 +1,50 @@
+{
+ "name": "伊達政宗",
+ "no": "1013",
+ "ch": "3章",
+ "cost": 4.0,
+ "troop": "馬砲器攻",
+ "sub": "",
+ "effect": "馬・砲・器部隊の攻撃・破壊力上昇",
+ "furigana": "だてまさむね",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1013_full.png",
+ "imageChar": "assets/img/characters/no1013_char.png",
+ "atkBase": 745,
+ "atkGrowth": 20,
+ "defBase": 735,
+ "defGrowth": 19,
+ "tacticsBase": 480.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3820,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "C",
+  "uma": "S",
+  "ki": "S"
+ },
+ "initialSkill": "独眼竜咆哮",
+ "skillDetail": "S/LV10 確率 30% 攻撃 35%上昇/破壊 20%上昇/対象:馬砲器\n①攻撃が35%上昇する\n②破壊が20%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "馬砲器　確率 30% / 攻撃 35%上昇+破壊 20%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録。カード画像(スキルLV10形式)から武将名・統率バッジ・スキル名・初期値を確認。",
+  "ステータス初期値745/735/480.0・成長値+20/+19/+2.5・cost4.0・lv0Troops3820はixanary.com(cards/1013)の成長表と一致確認。",
+  "統率は槍B/馬S/弓C/器S。カード画像バッジ4隅で確認。",
+  "スキル効果値について情報源間で相違あり: カード画像はLV10攻撃35%上昇+破壊20%上昇、ixanary.com(cards/1013)の個別ページ記載は攻撃70%上昇+破壊40%上昇(ちょうど2倍)だったが、ixawiki.com(Busho/武将スキル マスター一覧、独眼竜咆哮の行)ではLV10攻撃35%上昇+破壊20%上昇でカード画像と一致したため、カード画像+ixawikiの2ソース一致を採用した(ixanaryの2倍表記は誤りと判断)。",
+  "初期スキル「独眼竜咆哮」はSランクだがdata/skill/に個別ページが無い(要作成候補)。",
+  "ixanaryには本カード専用の部隊スキル「独眼竜双璧」(攻/防の2種)の記載もあったが、テンプレートに対応項目が無いため登録していない(申し送り)。",
+  "章は情報源に記載が無く未確認。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2011-09-19",
+ "wikiCommentCount": 595,
+ "chGuess": "3章",
+ "chSource": "wikiOldestComment"
+}

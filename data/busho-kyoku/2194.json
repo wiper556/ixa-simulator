@@ -1,0 +1,42 @@
+{
+ "name": "北条氏綱（2）",
+ "no": "2194",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "弓砲器攻",
+ "sub": "",
+ "effect": "攻撃上昇(武将ランクとコストで変動)",
+ "furigana": "ほうじょううじつな",
+ "illustrator": "紺藤ココン",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 940,
+ "atkGrowth": 27,
+ "defBase": 900,
+ "defGrowth": 24,
+ "tacticsBase": 520.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 3370,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "S",
+  "uma": "B",
+  "ki": "A"
+ },
+ "initialSkill": "賢王訓戒",
+ "skillDetail": "B/LV10 確率 34% 攻撃 (1+武将ランク)×コスト×0.5%上昇/対象:弓・砲・器\n①攻撃 (1+武将ランク)×コスト×0.5%上昇する(武将ランクとコストで変化)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓・砲・器　確率 34% / 攻撃 (1+武将ランク)×コスト×0.5%上昇(武将ランクとコストで変化)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-17登録。カード画像が無いためixanary.com(cards/2194)生HTMLとixawiki.com(index.php?BushoCard/2194北条氏綱)の2ソースで基本ステータス(コスト・指揮兵数・統率槍弓馬器・攻撃/防御/兵法の初期値と成長値・illustrator)が完全一致することを確認して登録した。",
+  "同名武将が複数存在するため、ixawiki.comの武将カード一覧の表記に合わせて名前を「北条氏綱（2）」とした(assign_C.txtの指定通り)。",
+  "スキル「賢王訓戒」(B)は武将ランクとコストで変動する数式スキルで、ixanary.comではLV1・LV10とも同じ係数(×0.5)で確率のみ8%→34%と変化するため式のまま登録した。",
+  "ixawiki.comのスキル欄は基準値(ランク0、確率+8%=LV1相当)の参考値(弓砲器攻1.75%上昇=(1+0)×3.5×0.5)のみでLV10欄は無く、係数(×0.5)自体は両ソースで整合を確認できたがLV10の確率34%はixanary.com単独ソース。"
+ ]
+}

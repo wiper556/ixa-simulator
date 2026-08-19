@@ -1,0 +1,49 @@
+{
+ "name": "今川氏親",
+ "no": "1160",
+ "ch": "19章",
+ "cost": 4,
+ "troop": "槍弓器鉄攻",
+ "sub": "卓越",
+ "effect": "対象兵科攻撃上昇(卓越で追加確率30%2.5倍化)",
+ "furigana": "いまがわうじちか",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1160_full.png",
+ "imageChar": "assets/img/characters/no1160_char.png",
+ "atkBase": 1070,
+ "atkGrowth": 48,
+ "defBase": 1050,
+ "defGrowth": 40,
+ "tacticsBase": 660.0,
+ "tacticsGrowth": 3,
+ "lv0Troops": 4250,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "S",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "四神重奏",
+ "skillDetail": "S/LV10 確率 34% 攻撃 84%上昇/対象:槍・弓・器・鉄\n①攻撃 84%上昇する\n②卓越:追加確率30%で攻撃効果が2.5倍となる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・弓・器・鉄　確率 34% / 攻撃 84%上昇(卓越:追加確率30%で2.5倍)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録。カード画像(スキルLV10形式)から名前/コスト/攻防兵法/指揮兵数/統率4隅バッジ/スキル名と効果文を読み取った。",
+  "統率バッジはカード画像を6倍拡大して4隅個別に確認: 槍A/馬A/弓S/器A。",
+  "成長値(攻+48/防+40/兵法+3)はixanary.com(cards/1160)の生HTML成長表で確認、初期値(1070/1050/660)はカード画像と一致。",
+  "名前の（N）表記はixawiki.com武将カード一覧(天)の生HTML(BushoCard/1160今川氏親)に無し(無印)。",
+  "初期スキル四神重奏はSランクだがdata/skill/四神重奏.jsonが未作成(要対応、本担当ではページ新規作成はしない)。",
+  "章(ch)は情報源で確認できず未確認のためnull。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2020-02-15",
+ "wikiCommentCount": 59,
+ "chGuess": "19章",
+ "chSource": "wikiOldestComment"
+}

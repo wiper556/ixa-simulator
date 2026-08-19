@@ -1,0 +1,43 @@
+{
+ "name": "草薙かさね",
+ "no": "3039",
+ "ch": null,
+ "cost": 1.5,
+ "troop": "将攻",
+ "sub": "",
+ "effect": "攻撃 30%上昇",
+ "furigana": "くさなぎかさね",
+ "illustrator": null,
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 820,
+ "atkGrowth": 45,
+ "defBase": 730,
+ "defGrowth": 40,
+ "tacticsBase": 320.0,
+ "tacticsGrowth": 1,
+ "lv0Troops": 1200,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "C",
+  "uma": "E",
+  "ki": "F"
+ },
+ "initialSkill": "草薙流",
+ "skillDetail": "C/LV10 確率 35% 攻撃 30%上昇/対象:将\n①攻撃 30%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "将　確率 35% / 攻撃 30%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当D)。カード画像が無いためixanary.com(cards/3039)とixawiki.com(index.php?BushoCard/3039草薙かさね, Busho/武将カード一覧)の生HTML2ソースを突き合わせて登録した。",
+  "統率(A/C/E/F)・コスト1.5・指揮兵数1200・攻撃820/45・防御730/40・兵法320.0/1・ふりがな・初期スキル「草薙流」[C]はixanary.comとixawiki.comの2ソースで一致することを確認した(不一致箇所は個別に注記)。",
+  "illustratorはixanaryが「七海慎吾 [戦國ストレイズ]」ixawikiが「七海慎吾」で所属表記の有無が食い違ったためnullにした。",
+  "ixanary.com/ixawiki.comのカードページ本文に復刻を示す記載は無く(「イベント配布カードにより全ての戦国くじから入手不可能」の注記のみ)、コメント欄の「復刻してるのになぜ」はユーザー投稿のため採用せず、名前に-復刻-は付けなかった。",
+  "カード画像が無いためimageFull/imageCharはnull、synthesisTableは付けない。reviewedOkはfalseのまま。章(ch)は両ソースとも記載が無くnullとした。"
+ ]
+}

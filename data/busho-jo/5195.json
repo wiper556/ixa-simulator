@@ -1,0 +1,47 @@
+{
+ "name": "五味貞氏",
+ "no": "5195",
+ "ch": "19章",
+ "cost": 2,
+ "troop": "器防",
+ "sub": "",
+ "effect": "器防18%上昇",
+ "furigana": "ごみさだうじ",
+ "illustrator": "KASEN",
+ "imageFull": "assets/img/characters/no5195_full.png",
+ "imageChar": "assets/img/characters/no5195_char.png",
+ "atkBase": 400,
+ "atkGrowth": 14,
+ "defBase": 490,
+ "defGrowth": 19,
+ "tacticsBase": 420.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 1780,
+ "rankGrades": {
+  "yari": "D",
+  "yumi": "C",
+  "uma": "D",
+  "ki": "B"
+ },
+ "initialSkill": "旗鼓堂々",
+ "skillDetail": "E/LV10 確率 100% 防御 18%上昇/対象:器\n①防御 18%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "器　確率 100% / 防御 18%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当G)。カード画像(スキルLV10形式)から。武将名「五味貞氏」/ コスト2 / 統率 槍D・弓C・馬D・器B(4隅アイコンを個別にズームして確認) / 初期値 攻撃400・防御490・兵法420.0 / 指揮兵数0/1780 / カードNo.5195一致 / 初期スキル「旗鼓堂々 LV10」[E] 確率+100%・対象 器・防御18%上昇 / Illust KASEN。",
+  "成長値(攻+14/防+19/兵法+2)・furigana・スキル文言・統率・illustratorはixanary.com/cards/5195の生HTML(cardNo:5195のprops)と完全一致。",
+  "初期スキルはEランクのためdata/skill/ページの新規作成対象外。synthesisTableは今回未登録(序レアリティのため付けない指示)。",
+  "章は情報源に記載が無く未確認のためnull。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2020-04-30",
+ "wikiCommentCount": 46,
+ "chGuess": "19章",
+ "chSource": "wikiOldestComment"
+}

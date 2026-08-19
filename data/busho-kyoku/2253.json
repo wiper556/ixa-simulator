@@ -1,0 +1,39 @@
+{
+ "name": "佐野盛綱",
+ "no": "2253",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "槍器鉄防",
+ "sub": "",
+ "effect": "槍・器・鉄兵の防御力上昇",
+ "furigana": "さのもりつな",
+ "illustrator": "あんべよしろう",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 980,
+ "atkGrowth": 30,
+ "defBase": 980,
+ "defGrowth": 30,
+ "tacticsBase": 470,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3480,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "B",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "天山龍喰ノ采",
+ "skillDetail": "B/LV10 確率 19% 防御 72%上昇/対象:槍・器・鉄\n合流攻撃防御時は必ずスキル発動\n①防御 72%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・器・鉄　確率 19% / 防御 72%上昇(合流攻撃防御時は必ず発動)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-17登録(担当F)。カード画像が無いためixanary.com(cards/2253)とixawiki.com(index.php?BushoCard/2253佐野盛綱)の生HTML突き合わせのみで登録した。"
+ ]
+}

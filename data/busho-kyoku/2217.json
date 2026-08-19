@@ -1,0 +1,43 @@
+{
+ "name": "津田宗及",
+ "no": "2217",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "全攻",
+ "sub": "",
+ "effect": "3部隊以上の対人合流攻撃で倒した兵数の2%の銅銭を攻撃参加者全員が獲得",
+ "furigana": "つだそうぎゅう",
+ "illustrator": "添田一平",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 990,
+ "atkGrowth": 27,
+ "defBase": 990,
+ "defGrowth": 27,
+ "tacticsBase": 530,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3400,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "商器一才",
+ "skillDetail": "B/LV10 確率 30% 攻撃 35%上昇/対象:全\n①攻撃 35%上昇する\n②3部隊以上の対人合流攻撃で倒した兵数の2%の銅銭を攻撃参加者全員が獲得する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 30% / 攻撃 35%上昇(3部隊以上の対人合流攻撃で倒した兵数の2%の銅銭を攻撃参加者全員が獲得)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当D)。カード画像が無いためixanary.com(cards/2217)とixawiki.com(index.php?BushoCard/2217津田宗及)の生HTML突き合わせのみで登録した。",
+  "コスト3.5・指揮兵数3400・攻撃力990(+27)・防御力990(+27、両ソース独立に同値のため攻防同値カードと判断し疑わない)・兵法530(+2.5)・イラストレーター添田一平・スキルLV1/LV10の数値(確率/攻撃%/銅銭獲得%)は両ソースで完全一致。銅銭獲得系の書式はdata/skill/ぶんどる.jsonの表記に揃えた。",
+  "【情報源の食い違い】スキル「商器一才」のランク表記が、ixanaryのカード内部データ(astro-islandのprops内、skillStr:\"特.商器一才.B\")ではB、ixawikiのスキル追加合成欄では[A]と食い違う。ixawikiの同ページには別スキル「商器千才」[A](スキル特殊合成という別枠)も存在しており、そちらのランクと混同された可能性がある。ixanaryのLV1/LV10表示ラベルも一貫してBを示しており、内部データとしてより直接的な根拠があるためBを採用したが、どちらか一方を機械的に正としたわけではなく食い違いとして報告する。",
+  "rankGrades(槍A/弓A/馬A/器A)はixawikiのみ出典(ixanaryにテキスト情報無し)。",
+  "章(ch)は両ソースに記載が無く未確認のためnull。"
+ ]
+}

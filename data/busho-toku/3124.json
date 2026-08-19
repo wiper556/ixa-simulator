@@ -1,0 +1,43 @@
+{
+ "name": "小島弥太郎",
+ "no": "3124",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "槍攻",
+ "sub": "",
+ "effect": "槍攻 30%上昇",
+ "furigana": "こじまやたろう",
+ "illustrator": null,
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 660,
+ "atkGrowth": 17,
+ "defBase": 400,
+ "defGrowth": 14,
+ "tacticsBase": 380.0,
+ "tacticsGrowth": 1.5,
+ "lv0Troops": 2440,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "B",
+  "uma": "C",
+  "ki": "D"
+ },
+ "initialSkill": "鬼小島",
+ "skillDetail": "C/LV10 確率 20% 攻撃 30%上昇/対象:槍\n①攻撃 30%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍　確率 20% / 攻撃 30%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当I)。カード画像が無いため ixanary.com(cards/3124, skills/鬼小島)と ixawiki.com(index.php?BushoCard/3124小島弥太郎, Busho/武将スキル)の生HTML2ソースを突き合わせて登録した。",
+  "統率(槍A/弓B/馬C/器D)・コスト2.5・指揮兵数2440・攻撃660/17・防御400/14・兵法380.0/1.5・ふりがなはixanary.comとixawiki.comの2ソースで完全一致した。",
+  "初期スキル「鬼小島」[C]はixanary.com(skills/鬼小島)のLV10行(確率+20%/対象槍/攻撃30%上昇)とixawiki.com(Busho/武将スキル)のマスター一覧LV10行(確率+20%/槍攻30%上昇)で完全一致し、両ソースの武将対応リストにも3124小島弥太郎が掲載されていることを確認した。",
+  "【2ソース食い違いでnull】イラストレーターはixanary.comが「ケロケロ齋藤」、ixawiki.comが「ケロケロ斉藤」と表記した漢字が異なった(齋/斉)。どちらが正しいか判断できないためillustratorはnullにした。",
+  "カード画像が無いためimageFull/imageCharはnull、synthesisTableは付けず、reviewedOkはfalseのまま。章(ch)は両ソースとも記載が無くnullとした。"
+ ]
+}

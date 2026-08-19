@@ -1,0 +1,41 @@
+{
+ "name": "大野治長",
+ "no": "2286",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "弓砲器防",
+ "sub": "",
+ "effect": "防御 15%上昇(部隊の総コストで変動)",
+ "furigana": "おおのはるなが",
+ "illustrator": "黒葉.K",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 960,
+ "atkGrowth": 27,
+ "defBase": 1020,
+ "defGrowth": 34,
+ "tacticsBase": 510,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3550,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "S",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "豊家ノ滅塞",
+ "skillDetail": "B/LV10 確率 42% 防御 15%上昇/対象:弓・砲・器\n①防御 15%上昇する(部隊の総コストで上昇幅が変化)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓・砲・器　確率 42% / 防御 15%上昇(部隊の総コストで変化)"
+  }
+ ],
+ "notes": [
+  "2026-08-18登録(担当G)。カード画像が無いためixanary.com(cards/2286)生HTMLとixawiki.com(index.php?BushoCard/2286大野治長)生HTMLの2ソースを突き合わせて登録した。",
+  "ステータス初期値960/1020/510・成長値27/34/2.5・cost3.5・lv0Troops3550・rankGrades(槍B/弓S/馬A/器A)・illustrator黒葉.Kは両ソースで完全一致。",
+  "スキル「豊家ノ滅塞」LV10(確率42%・防御15%上昇・部隊の総コストで上昇幅が変化)はixawikiにLV1/LV10両方の記載があり、ixanaryのLV10欄と完全一致した(数式(部隊コスト^6/16^6×20+15)の基準値表示も一致)。"
+ ],
+ "reviewedOk": false
+}

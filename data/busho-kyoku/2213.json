@@ -1,0 +1,43 @@
+{
+ "name": "亘理元宗",
+ "no": "2213",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "馬砲攻",
+ "sub": "",
+ "effect": "攻撃 (コストx11)%上昇",
+ "furigana": "わたりもとむね",
+ "illustrator": "Natto-7",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1000,
+ "atkGrowth": 28,
+ "defBase": 920,
+ "defGrowth": 26,
+ "tacticsBase": 420,
+ "tacticsGrowth": 1.5,
+ "lv0Troops": 3430,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "S",
+  "ki": "A"
+ },
+ "initialSkill": "抗龍",
+ "skillDetail": "B/LV10 確率 70% 攻撃 (コストx11)%上昇/対象:馬・砲\n①攻撃(コストx11)%上昇する(武将コストで変動)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "馬・砲　確率 70% / 攻撃 (コストx11)%上昇(武将コストで変動)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当D)。カード画像が無いためixanary.com(cards/2213)とixawiki.com(index.php?BushoCard/2213亘理元宗)の生HTML突き合わせのみで登録した。",
+  "コスト3.5・指揮兵数3430・攻撃力1000(+28)・防御力920(+26)・兵法420(+1.5)・イラストレーターNatto-7で両ソース一致。",
+  "攻撃効果は武将コスト依存の「(コストx11)%上昇」表記(ixanaryの原文ママ)。このカード自身のコストは3.5なので計算すると38.5%上昇になる(ixawikiのLV1表記「17.5%上昇」もコスト3.5×5=17.5と一致し検算できた)が、既存の同種スキル(busho-toku-s/3705.jsonなど)の表記慣習に合わせ、式のままsourceに残した。",
+  "rankGrades(槍A/弓A/馬S/器A)はixawikiのみ出典(ixanaryにテキスト情報無し)。",
+  "章(ch)は両ソースに記載が無く未確認のためnull。"
+ ]
+}

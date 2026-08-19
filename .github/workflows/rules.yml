@@ -83,6 +83,12 @@ jobs:
           import json, os, subprocess, sys
           sys.path.insert(0, "tools")
           from audit_characters import extract_array
+          # 許可記録(tools/approvals.txt)の読み方は、ローカル門番と**同じ関数**を使う。
+          # 2026-08-19: 8b69e213 が入口を precommit_check.py にだけ足し、ここが
+          # 無条件 exit 1 のまま残っていた。ローカルは通るのに CI だけ止まり、
+          # 抜け道は --no-verify か保護解除しかない状態になっていた(PR #43)。
+          # 書き写すと同じ食い違いをまた作るので、import して1つに保つ。
+          from precommit_check import approvals_of
           A = {"characters.html": "generals", "characters-kyoku.html": "kyokuGenerals",
                "characters-ketsu.html": "ketsuGenerals"}
           def marks(ref):
@@ -112,6 +118,15 @@ jobs:
           now = marks(None)
           gained = sorted(now - before)
           print("赤丸: %d件(比較対象 %d件)" % (len(now), len(before)))
+          # 記録のあるカードだけ通す(D-14の入口)。読むのは**検査対象のツリー**の
+          # 記録なので、記録が同じ push に入っていなければここでも止まる。
+          allowed = approvals_of(".")
+          okd = [x for x in gained if x.rsplit(":", 1)[-1] in allowed]
+          gained = [x for x in gained if x not in okd]
+          for x in okd:
+              no = x.rsplit(":", 1)[-1]
+              print("[許可] 赤丸にした: %s  (%s に明言 / %s)"
+                    % (x, allowed[no][0], allowed[no][1]))
           for x in gained:
               print("  + " + x)
           sys.exit(1 if gained else 0)

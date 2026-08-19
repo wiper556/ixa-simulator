@@ -1,0 +1,42 @@
+{
+ "name": "真田幸村",
+ "no": "2531",
+ "ch": null,
+ "cost": 4,
+ "troop": "全防",
+ "sub": "",
+ "effect": "防御 97%上昇+他城主の拠点に加勢中にも部隊の兵士編成が可能",
+ "furigana": "さなだゆきむら",
+ "illustrator": "原哲夫・北原星望／コアミックス",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 980,
+ "atkGrowth": 36,
+ "defBase": 1070,
+ "defGrowth": 44,
+ "tacticsBase": 530,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3840,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "生命のやり取り",
+ "skillDetail": "A/LV10 確率 47% 防御 97%上昇/対象:全\n①防御 97%上昇する\n②他城主の拠点に加勢中にも部隊の兵士編成を行える",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 47% / 防御 97%上昇(他城主の拠点に加勢中にも部隊の兵士編成を行える)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18新規登録(担当D・カード画像なし)。ixanary.com/cards/2531とixawiki.com(index.php?BushoCard/2531真田幸村)の生HTML2ソースで確認。",
+  "コスト4・指揮兵数3840・攻撃初期値980(両ソース一致)・成長+36/+44/+2.5・ふりがな・統率(槍S弓A馬A器A)・絵師(原哲夫・北原星望／コアミックス)は2ソース完全一致。LV10スキル効果(確率47%/防御97%上昇/他城主の拠点に加勢中にも部隊の兵士編成が可能)も2ソース完全一致。",
+  "【ixanary防御バグ判定】ixanaryの防御初期値は980(攻撃と同値)だがixawikiは1070(攻撃と異なる値)。ixanary既知の不具合パターンに一致し、ixawikiが独立して異なる値を示しているため、defBaseはixawikiの1070を採用した。",
+  "章(ch)は両ソースとも記載が無くnullのまま。カード画像自体が無いためimageFull/imageCharはnull、reviewedOkはfalseのまま。"
+ ]
+}

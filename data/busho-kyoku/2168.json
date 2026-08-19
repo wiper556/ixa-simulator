@@ -1,0 +1,40 @@
+{
+ "name": "宇都宮成綱",
+ "no": "2168",
+ "ch": null,
+ "cost": 3,
+ "troop": "全攻",
+ "sub": "",
+ "effect": "攻撃 25%上昇+攻撃戦闘勝利時のみ敵軍1部隊の武将に追加ダメージ+15",
+ "furigana": "うつのみやしげつな",
+ "illustrator": "BISAI",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 880,
+ "atkGrowth": 19,
+ "defBase": 740,
+ "defGrowth": 17,
+ "tacticsBase": 490,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 2930,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "錯乱",
+ "skillDetail": "B/LV10 確率 50% 攻撃 25%上昇+攻撃戦闘勝利時のみ敵軍1部隊の武将に追加ダメージ+15/対象:全\n①攻撃 25%上昇する\n②攻撃戦闘勝利時のみ敵軍1部隊の武将に追加ダメージ+15",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 50% / 攻撃 25%上昇+攻撃戦闘勝利時のみ敵軍1部隊の武将に追加ダメージ+15"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当B)。カード画像が無いため imageFull/imageChar は null。ixanary.com(cards/2168)の埋め込みJSONとixawiki.com(index.php?BushoCard/2168宇都宮成綱)の生HTMLで、コスト/指揮兵数/攻撃防御兵法の初期値成長値/兵科ランク(槍A弓A馬A器A)/イラストレーター(BISAI)/スキルLV1数値(確率+26%/攻撃10%上昇/追加ダメージ+4)が完全一致することを確認して登録した。LV10の数値(確率50%/攻撃25%上昇/追加ダメージ+15)はixanaryのカードページに明記。",
+  "章(ch)は両ソースとも記載が無いため未確認。synthesisTableは今回付けていない。"
+ ]
+}

@@ -1,0 +1,48 @@
+{
+ "name": "毛利輝元（2）",
+ "no": "1056",
+ "ch": "10章",
+ "cost": 4,
+ "troop": "弓馬攻",
+ "sub": "",
+ "effect": "弓・馬部隊の攻撃力上昇",
+ "furigana": "もうりてるもと",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1056_full.png",
+ "imageChar": "assets/img/characters/no1056_char.png",
+ "atkBase": 740,
+ "atkGrowth": 21,
+ "defBase": 690,
+ "defGrowth": 19,
+ "tacticsBase": 500.0,
+ "tacticsGrowth": 3,
+ "lv0Troops": 3850,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "S",
+  "uma": "S",
+  "ki": "B"
+ },
+ "initialSkill": "海神ノ破糾",
+ "skillDetail": "S/LV10 確率 35% 攻撃 60%上昇/対象:弓馬\n①攻撃 60%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓馬　確率 35% / 攻撃 60%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録。カード画像(スキルLV10形式)から作成。統率バッジ4隅を8倍拡大して再確認: 槍B/弓S/馬S/器B。",
+  "ステータス初期値740/690/500.0・成長値+21/+19/+3・cost4・lv0Troops3850はixanary.com(cards/1056)の埋め込みデータとixawiki.com(Busho/武将カード一覧(天))の該当行が完全一致。",
+  "武将名の（2）はixawiki.com(Busho/武将カード一覧(天))の表記「毛利輝元(2)」に従った。",
+  "初期スキル「海神ノ破糾」はSランクだがdata/skill/海神ノ破糾.jsonが未作成(要フォロー、報告のみ)。",
+  "章は情報源に記載が無く未確認。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2015-05-19",
+ "wikiCommentCount": 189,
+ "chGuess": "10章",
+ "chSource": "wikiOldestComment"
+}

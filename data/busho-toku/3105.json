@@ -1,0 +1,39 @@
+{
+ "name": "脇坂安治",
+ "no": "3105",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "槍砲攻",
+ "sub": "",
+ "effect": "攻撃 10%上昇",
+ "furigana": "わきざかやすはる",
+ "illustrator": "諏訪原寛幸",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 680,
+ "atkGrowth": 17,
+ "defBase": 660,
+ "defGrowth": 16,
+ "tacticsBase": 410.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 2320,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "C",
+  "uma": "B",
+  "ki": "A"
+ },
+ "initialSkill": "七槍の武",
+ "skillDetail": "C/LV10 確率 18% 攻撃 10%上昇/対象:槍・砲\n①攻撃 10%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・砲　確率 18% / 攻撃 10%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当H)。カード画像なし。ixanary.com/cards/3105 と ixawiki.com(BushoCard/3105脇坂安治)の生HTMLを突き合わせて登録した。統率・コスト・指揮兵数・スキルの確率と効果値・攻撃/兵法の初期値と成長値は両ソース完全一致。ただし防御初期値はixanaryが660のはずの値を攻撃初期値と同じ680で返す既知の不具合(defBase=atkBaseパターン)に該当したため、ixawikiの値(660)を採用した。"
+ ]
+}

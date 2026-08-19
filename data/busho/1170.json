@@ -1,0 +1,44 @@
+{
+ "name": "三好長慶（3）",
+ "no": "1170",
+ "ch": "20章",
+ "cost": 4.5,
+ "troop": "弓馬焙攻",
+ "sub": "",
+ "effect": "自部隊同時攻撃時部隊総コストから武将分コストを最大2除外",
+ "furigana": "みよしちょうけい",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1170_full.png",
+ "imageChar": "assets/img/characters/no1170_char.png",
+ "atkBase": 1120,
+ "atkGrowth": 48,
+ "defBase": 1030,
+ "defGrowth": 40,
+ "tacticsBase": 640.0,
+ "tacticsGrowth": 3.0,
+ "lv0Troops": 4630,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "S",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "天涯ノ絶王",
+ "skillDetail": "S/LV10 確率 54% 攻撃 92%上昇/対象:弓・馬・焙\n模倣不可\n①攻撃 92%上昇する\n②自部隊同時攻撃時部隊総コストからこの武将分のコストを最大2まで除外する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓・馬・焙　確率 54% / 攻撃 92%上昇(自部隊同時攻撃時部隊総コストから武将分コストを最大2除外・模倣不可)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録。カード画像(スキルLV10形式)からrankGrades(槍A/馬A/弓S/器A)を4隅バッジで確認。ステータス初期値・成長値・cost・lv0Troopsはixawiki.com(Busho/武将カード一覧(天))の一覧表と一致。名前の(3)は同一覧表の「三好長慶(3)」表記に従った。章(ch)は情報源に記載なく未確認。Sランクスキルだがdata/skill/天涯ノ絶王.jsonは未作成(要新規作成、報告済み)。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2020-08-14",
+ "wikiCommentCount": 59,
+ "chGuess": "20章",
+ "chSource": "wikiOldestComment"
+}

@@ -1,0 +1,39 @@
+{
+ "name": "豊臣秀次",
+ "no": "2289",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "槍弓器防",
+ "sub": "",
+ "effect": "防御 87%上昇(自拠点防御時は確率100%で発動)",
+ "furigana": "とよとみひでつぐ",
+ "illustrator": "Natto-7",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1000,
+ "atkGrowth": 27,
+ "defBase": 1040,
+ "defGrowth": 34,
+ "tacticsBase": 500,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3060,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "S",
+  "uma": "B",
+  "ki": "A"
+ },
+ "initialSkill": "惨王ノ眷族",
+ "skillDetail": "B/LV10 確率 21% 防御 87%上昇/対象:槍・弓・器\n①防御 87%上昇する\n②自拠点防御時は確率100%で発動する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・弓・器　確率 21% / 防御 87%上昇(自拠点防御時は確率100%で発動)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当H)。カード画像が無いためixanary.com(cards/2289)生HTMLとixawiki.com(index.php?BushoCard/2289豊臣秀次)の基本ステータス表・スキル表を突き合わせて完全一致を確認して登録した。"
+ ]
+}

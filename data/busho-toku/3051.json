@@ -1,0 +1,42 @@
+{
+ "name": "津軽為信",
+ "no": "3051",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "全防",
+ "sub": "",
+ "effect": "防御 15%上昇",
+ "furigana": "つがるためのぶ",
+ "illustrator": "山崎太郎",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 620,
+ "atkGrowth": 16,
+ "defBase": 680,
+ "defGrowth": 17,
+ "tacticsBase": 435.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 2280,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "C",
+  "ki": "E"
+ },
+ "initialSkill": "鉄壁の備え",
+ "skillDetail": "D/LV10 確率 40% 防御 15%上昇/対象:全\n①防御 15%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 40% / 防御 15%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当E)。カード画像が無いためixanary.com(cards/3051)とixawiki.com(index.php?BushoCard/3051津軽為信)の生HTML2ソースを突き合わせて登録した。",
+  "コスト2.5・指揮兵数2280・攻撃620/+16・防御680/+17・兵法435/+2.5・統率(槍A/弓A/馬C/器E)・ふりがな・イラストレーターの全項目が2ソース一致した。",
+  "初期スキル「鉄壁の備え」[D]はixanary.comのLV10表記(確率+40%/対象全/防御15%上昇)を採用。ixawiki.comのカードページのLV1相当値(確率+25%/防御5%上昇)と整合していた。",
+  "章(ch)は両ソースに記載が無くnullのまま。"
+ ]
+}

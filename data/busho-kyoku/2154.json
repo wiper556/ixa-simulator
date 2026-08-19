@@ -1,0 +1,39 @@
+{
+ "name": "佐々木小次郎（2）",
+ "no": "2154",
+ "ch": null,
+ "cost": 2,
+ "troop": "将攻",
+ "sub": "",
+ "effect": "「将」の攻撃力上昇",
+ "furigana": "ささきこじろう",
+ "illustrator": "萩谷薫",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 900,
+ "atkGrowth": 52,
+ "defBase": 800,
+ "defGrowth": 40,
+ "tacticsBase": 430.0,
+ "tacticsGrowth": 1.5,
+ "lv0Troops": 2200,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "B",
+  "uma": "A",
+  "ki": "D"
+ },
+ "initialSkill": "岩流 虎切",
+ "skillDetail": "B/LV10 確率 24% 攻撃 48%上昇/対象:将\n①攻撃 48%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "将　確率 24% / 攻撃 48%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "カード画像が無いためimageFull/imageChar は null。ixanary.com(cards/2154)とixawiki.com(BushoCard/2154佐々木小次郎)を突き合わせて登録した。基本ステータス・ランク・スキル数値とも両ソースで一致。"
+ ]
+}

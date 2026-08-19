@@ -1,0 +1,39 @@
+{
+ "name": "武田勝頼",
+ "no": "2032",
+ "ch": null,
+ "cost": 3,
+ "troop": "槍弓馬攻破",
+ "sub": "",
+ "effect": "対象兵科の攻撃・破壊上昇",
+ "furigana": "たけだかつより",
+ "illustrator": "原田みどり",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 730,
+ "atkGrowth": 17,
+ "defBase": 720,
+ "defGrowth": 16,
+ "tacticsBase": 410,
+ "tacticsGrowth": 2,
+ "lv0Troops": 2910,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "B",
+  "uma": "S",
+  "ki": "C"
+ },
+ "initialSkill": "手負い獅子",
+ "skillDetail": "B/LV10 確率 20% 攻撃 30%上昇+破壊 10%上昇/対象:槍・弓・馬\n①攻撃 30%上昇する\n②破壊 10%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・弓・馬　確率 20% / 攻撃 30%上昇+破壊 10%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-17登録。カード画像が無いためixanary.com(cards/2032)とixawiki.com(BushoCard/2032武田勝頼)の生HTMLを突き合わせて一致した項目のみ登録した。基礎値/成長値/コスト/指揮兵数/統率ランク/スキル確率/効果値は両ソースで完全一致を確認済み。"
+ ]
+}

@@ -1,0 +1,41 @@
+{
+ "name": "宇喜多モニカ（2）",
+ "no": "2982",
+ "ch": null,
+ "cost": 1,
+ "troop": "全攻速",
+ "sub": "",
+ "effect": "攻撃 10%上昇+速度 35%上昇(単独出陣時は速度効果10倍)",
+ "furigana": "うきたもにか",
+ "illustrator": "BANAMONS*",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 990,
+ "atkGrowth": 41,
+ "defBase": 880,
+ "defGrowth": 33,
+ "tacticsBase": 500,
+ "tacticsGrowth": 2,
+ "lv0Troops": 1500,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "紫電清霜",
+ "skillDetail": "B/LV10 確率 100% 攻撃 10%上昇+速度 35%上昇/対象:全\n①攻撃 10%上昇する\n②速度 35%上昇する\n③単独出陣時は速度効果が10倍になる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 攻撃 10%上昇+速度 35%上昇(単独出陣時は速度効果10倍)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録。カード画像が無いためixanaryとixawikiの一致だけで入れた(rankGradesは両ソース完全一致)。synthesisTableは今回のバッチでは付けていない。",
+  "atkBase/defBase(990/880)・成長値・兵法・コスト・指揮兵数は両ソース完全一致で対立なし。",
+  "スキル『紫電清霜』はixanaryがLV1(確率+100%/攻撃4%上昇/速度10%上昇)とLV10(確率+100%/攻撃10%上昇/速度35%上昇/単独出陣時速度効果10倍)を明示。ixawikiの基本ステータス表の値はixanaryのLV1と一致していたため、今回のバッチで頻発した『ixawikiの表がLV1のまま』パターンと判断し、ixanaryの明示的なLV10値を採用した。"
+ ]
+}

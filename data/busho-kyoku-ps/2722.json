@@ -1,0 +1,71 @@
+{
+ "name": "伊藤一刀斎",
+ "no": "2722",
+ "ch": null,
+ "cost": 3.0,
+ "troop": "将攻",
+ "sub": "",
+ "effect": "攻撃 45%上昇",
+ "furigana": "いとういっとうさい",
+ "illustrator": "岩元辰郎",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 980,
+ "atkGrowth": 52,
+ "defBase": 960,
+ "defGrowth": 48,
+ "tacticsBase": 400,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2240,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "B",
+  "uma": "B",
+  "ki": "B"
+ },
+ "initialSkill": "一刀流",
+ "skillDetail": "A/LV10 確率 40% 攻撃 45%上昇/対象:将\n①攻撃が45%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "将　確率 40% / 攻撃 45%上昇"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": null
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": null
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": null
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": null
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": null
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": null
+  }
+ ],
+ "notes": [
+  "2026-08-18新規登録(担当G・カード画像なし)。ixanary.com/cards/2722とixawiki.com(index.php?BushoCard/2722伊藤一刀斎)の生HTML2ソースで統率(槍S弓B馬B器B)・コスト3・指揮兵数2240・初期値980/960/400・成長値+52/+48/+2.0・絵師岩元辰郎・ふりがな・スキルLV1値(確率+12%/攻撃10%上昇)が完全一致することを確認した(不一致項目なし)。",
+  "初期スキル「一刀流」[A]の対象は兵科ではなく「将」(職業)で、LV10値(確率40%/攻撃45%上昇)はixanary.com/cards/2722のLV10スキルボックスで確認。",
+  "ixanaryには追加スキル(unitSkills)として「攻.剣の教え」の記載があるが、本サイトのJSONスキーマに対応するフィールドが無いため登録していない。synthesisTableはカード画像が無いため作成していない。章は両ソースに記載が無く未確認。"
+ ],
+ "reviewedOk": false
+}

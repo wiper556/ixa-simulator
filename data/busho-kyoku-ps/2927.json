@@ -1,0 +1,42 @@
+{
+ "name": "立花道雪（2）",
+ "no": "2927",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "槍弓馬攻",
+ "sub": "",
+ "effect": "攻撃 52%上昇(発動率=確率×防御武将数)",
+ "furigana": "たちばなどうせつ",
+ "illustrator": "正子公也",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 900,
+ "atkGrowth": 22,
+ "defBase": 800,
+ "defGrowth": 15,
+ "tacticsBase": 440,
+ "tacticsGrowth": 2,
+ "lv0Troops": 3380,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "B"
+ },
+ "initialSkill": "雷斬仁将",
+ "skillDetail": "B/LV10 確率 3% 攻撃 52%上昇/対象:槍弓馬\n①攻撃が52%上昇する(発動率=確率×防御武将数)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍弓馬　確率 3% / 攻撃 52%上昇(発動率=確率×防御武将数)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "カード画像が無いため ixanary.com/cards/2927 と ixawiki.com(BushoCard/2927立花道雪)の生HTML2ソースで確認した。",
+  "基礎値900/800/440・成長22/15/2・コスト3.5・指揮兵数3380(★0-0)・統率(槍S/弓A/馬A/器B)はixanary.comとixawiki.comの2ソースで完全一致。",
+  "初期スキル雷斬仁将(B)のLV10「確率+3%/対象 槍弓馬/攻撃52%上昇(発動率=確率×防御武将数)」はixanary.comとixawiki.comの2ソースで完全一致。",
+  "紹介文がixanary.comで空欄だったがカードデータ自体には影響しないため未使用のまま。"
+ ]
+}

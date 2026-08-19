@@ -1,0 +1,29 @@
+{
+ "name": "一条兼定",
+ "no": "2233",
+ "ch": null,
+ "cost": 3,
+ "troop": "弓焙攻防",
+ "sub": "",
+ "effect": "攻撃・防御 ((武将ランク+1)×コスト×1.9)%上昇",
+ "furigana": "いちじょうかねさだ",
+ "illustrator": "鏑木康隆",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 990, "atkGrowth": 27,
+ "defBase": 990, "defGrowth": 27,
+ "tacticsBase": 480, "tacticsGrowth": 2,
+ "lv0Troops": 3200,
+ "rankGrades": {"yari": "A", "yumi": "S", "uma": "B", "ki": "A"},
+ "initialSkill": "土佐ノ暴君",
+ "skillDetail": "B/LV10 確率 47% 攻撃・防御 ((武将ランク+1)×コスト×1.9)%上昇/対象:弓・焙\n①攻撃 ((武将ランク+1)×コスト×1.9)%上昇する\n②防御 ((武将ランク+1)×コスト×1.9)%上昇する\n③武将ランクとコストで効果が変化する",
+ "trTable": [
+  {"level": "LV10", "points": "-", "effect": "弓・焙　確率 47% / 攻撃・防御 ((武将ランク+1)×コスト×1.9)%上昇(武将ランクとコストで効果が変化)"}
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録。カード画像が無いためixanary.com(cards/2233)とixawiki.com(BushoCard/2233一条兼定)の一致のみで入れた。",
+  "基礎値・成長値・コスト・指揮兵数・統率(槍A弓S馬B器A)は両ソース一致。",
+  "初期スキル「土佐ノ暴君」[B]はLV10確率47%・対象弓・焙。攻撃・防御は((武将ランク+1)×コスト×1.9)%上昇の式で両ソースとも表示され、具体的な数値は明示されていないためそのまま記載した。"
+ ]
+}

@@ -1,0 +1,42 @@
+{
+ "name": "霧隠才蔵",
+ "no": "2083",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "全速",
+ "sub": "",
+ "effect": "速度上昇",
+ "furigana": "きりがくれさいぞう",
+ "illustrator": null,
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 900,
+ "atkGrowth": 18,
+ "defBase": 900,
+ "defGrowth": 17,
+ "tacticsBase": 460,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 2320,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "B",
+  "ki": "A"
+ },
+ "initialSkill": "雲散霧消",
+ "skillDetail": "B/LV10 確率 100% 速度 45%上昇/対象:全\n①速度 45%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 速度 45%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-17登録。カード画像が無いため ixanary.com(cards/2083)と ixawiki.com(BushoCard/2083霧隠才蔵)の生HTML2ソースで確認した。",
+  "コスト/指揮兵数/攻撃防御兵法の初期値成長値/兵科ランク(槍A弓A馬B器A)/スキル名対象確率効果(LV10確率100%速度45%上昇対象全)は両ソース完全一致。",
+  "illustratorのみ食い違い: ixanary.comは「冨士原良」(異体字の冨)、ixawiki.comは「富士原良」(標準字体の富)と表記が割れていたためnullにした。どちらが正しいか未確認。",
+  "章(ch)は両ソースとも記載が無くnullのまま。カード画像自体が無いためimageFull/imageCharはnull、reviewedOkはfalseのまま(rankGrades等はテキスト情報の2ソース一致で登録)。"
+ ]
+}

@@ -1,0 +1,39 @@
+{
+ "name": "加藤嘉明",
+ "no": "2301",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "槍馬器騎攻防",
+ "sub": "",
+ "effect": "攻撃・防御 ((1+ランク)xコストx2.5) %上昇(武将ランクとコストで効果が変化)",
+ "furigana": "かとうよしあき",
+ "illustrator": "鏑木康隆",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1020,
+ "atkGrowth": 35,
+ "defBase": 1020,
+ "defGrowth": 35,
+ "tacticsBase": 490,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3560,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "B",
+  "uma": "S",
+  "ki": "A"
+ },
+ "initialSkill": "双頭ノ鷲",
+ "skillDetail": "B/LV10 確率 54% 攻撃 ((1+ランク)xコストx2.5) %上昇+防御 ((1+ランク)xコストx2.5) %上昇/対象:槍・馬・器・騎\n①攻撃が((1+ランク)xコストx2.5) %上昇する(武将ランクとコストで効果が変化する)\n②防御が((1+ランク)xコストx2.5) %上昇する(武将ランクとコストで効果が変化する)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・馬・器・騎　確率 54% / 攻撃・防御 ((1+ランク)xコストx2.5) %上昇(武将ランクとコストで効果が変化)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当H)。カード画像が無いためixanary.com(cards/2301)生HTMLとixawiki.com(index.php?BushoCard/2301加藤嘉明)を突き合わせた。atk/defが1020で同値だが両ソース独立に一致しているため攻防同値カードとして採用した。LV1(確率26%/攻防2.45%上昇)は両ソース完全一致。LV10の実数値(8.75%上昇)はixawikiが明記した計算式((1+ランク)xコストx2.5、ランク=0のB相当と推定)による値で、ixanaryは式と極限突破時の例(8.5c=170%)のみ記載し矛盾はしていないため式表記のまま採用した。"
+ ]
+}

@@ -105,7 +105,7 @@
   "synthesisTable: 45do.info生HTML(skiladd_wrap)+ixanary.com(鎮西ノ雷神スキルページの合成テーブル)で2ソース一致確認済み(2026-08-02)",
   "2026-08-16黄丸化再検証: ixanary.com(cards/1247, skills/鎮西ノ雷神)+ixawiki.com(BushoCard/1247立花道雪)の2ソースでsynthesisTable5枠(A/B鎮西ノ雷神S→八幡神ノ威光SSS/C十束ノ神域SS→天聖宝冠SSS/S1八幡神ノ威光SSS自己参照/S2神屋楯比売命SS自己参照)の1次(skill)は完全一致、2次(afterSkill)もC/S1/S2列で一致(ixawiki側はA/B列の2次表示が省略される表組みだったがixanary側でA/Bとも八幡神ノ威光SSSに揃うことを確認、既存データと一致)。基礎値(1250/1010/650、成長+75/+25/+3、指揮4260)・rankGrades(槍S/弓S/馬A/器A、カード画像バッジ拡大確認)もixanary生HTMLと一致。data/skill/鎮西ノ雷神(自己ページ、A・B自己参照)・十束ノ神域・八幡神ノ威光・神屋楯比売命の各JSONのsourceCharactersに1247が正しいslotで既に記載済み。"
  ],
- "reviewedOk": true,
+ "reviewedOk": false,
  "wikiOldestComment": "2023-08-11",
  "wikiCommentCount": 16,
  "chGuess": "26章"

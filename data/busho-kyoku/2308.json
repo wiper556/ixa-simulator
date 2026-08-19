@@ -1,0 +1,39 @@
+{
+ "name": "馬場信房（3）",
+ "no": "2308",
+ "ch": null,
+ "cost": 4,
+ "troop": "弓馬砲攻速",
+ "sub": "",
+ "effect": "攻撃上昇+速度上昇(数値未確定)",
+ "furigana": "ばばのぶふさ",
+ "illustrator": "isuZu",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1050,
+ "atkGrowth": 38,
+ "defBase": 980,
+ "defGrowth": 34,
+ "tacticsBase": 500,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3850,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "A",
+  "uma": "S",
+  "ki": "A"
+ },
+ "initialSkill": "不滅ノ鬼美濃",
+ "skillDetail": "A/LV10 攻撃上昇+速度上昇/対象:弓・馬・砲\n①攻撃が上昇する\n②速度が上昇する(確率100%)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": null
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当H)。カード画像が無いためixanary.com(cards/2308)生HTMLとixawiki.com(index.php?BushoCard/2308馬場信房)を突き合わせた。名前の（3）はixawikiの武将カード一覧の表記に従った。基礎値/成長値/コスト/指揮兵数/統率ランク/イラストレーターは完全一致。LV1のスキル数値(確率13%/攻撃50%上昇/速度23%上昇・確率100%)は両ソース完全一致したが、LV10はixanaryが確率70%/攻撃100%上昇/速度70%上昇、ixawikiが確率40%/攻撃95%上昇/速度50%上昇と、確率・攻撃・速度の3項目すべてで食い違ったため、trTableのeffectをnullにし、skillDetail/top effectでは具体的な数値を確定せず記載した。"
+ ]
+}

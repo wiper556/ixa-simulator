@@ -1,0 +1,41 @@
+{
+ "name": "奥村助右衛門",
+ "no": "2980",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "槍弓馬砲攻",
+ "sub": "",
+ "effect": "攻撃 (25+ランク×5)%上昇(武将ランクで効果が変化)",
+ "furigana": "おくむらすけえもん",
+ "illustrator": "隆慶一郎・原哲夫・麻生未央／NSP 1990",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1100,
+ "atkGrowth": 30,
+ "defBase": 970,
+ "defGrowth": 24,
+ "tacticsBase": 480,
+ "tacticsGrowth": 2,
+ "lv0Troops": 3480,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "S",
+  "ki": "S"
+ },
+ "initialSkill": "名に涯はなし",
+ "skillDetail": "B/LV10 確率 33% 攻撃 (25+ランク×5)%上昇/対象:槍・弓・馬・砲\n①攻撃が(25+ランク×5)%上昇する(武将ランクで効果が変化)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・弓・馬・砲　確率 33% / 攻撃 (25+ランク×5)%上昇(武将ランクで効果が変化)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録。カード画像が無いためixanaryとixawikiの一致だけで入れた(rankGradesは両ソース完全一致)。synthesisTableは今回のバッチでは付けていない。",
+  "defBaseはixanaryの生埋め込みJSONだとatkBaseと同値の1100になっていたが(既知の壊れ方の型)、ixawikiは独立に970(atkと異なる値)を示しており、ixanaryの方が壊れていると判断してixawikiの970を採用した。成長値・兵法・コスト・指揮兵数は両ソース一致。",
+  "スキル『名に涯はなし』はixanaryがLV1(確率+13%/攻撃6%上昇)とLV10(確率+33%/攻撃25+ランク×5%上昇)を明示。ixawikiの基本ステータス表の値はixanaryのLV1と一致していたため、今回のバッチで頻発した『ixawikiの表がLV1のまま』パターンと判断し、ixanaryの明示的なLV10値を採用した。"
+ ]
+}

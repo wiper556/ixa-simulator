@@ -1,0 +1,41 @@
+{
+ "name": "島左近（3）",
+ "no": "2931",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "槍馬防",
+ "sub": "",
+ "effect": "防御 47%上昇",
+ "furigana": "しまさこん",
+ "illustrator": "正子公也",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 880,
+ "atkGrowth": 20,
+ "defBase": 960,
+ "defGrowth": 21,
+ "tacticsBase": 420,
+ "tacticsGrowth": 2,
+ "lv0Troops": 3420,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "B",
+  "uma": "S",
+  "ki": "B"
+ },
+ "initialSkill": "十羅刹女",
+ "skillDetail": "B/LV10 確率 27% 防御 47%上昇/対象:槍馬\n①防御が47%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍馬　確率 27% / 防御 47%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "カード画像が無いため ixanary.com/cards/2931 と ixawiki.com(BushoCard/2931島左近)の生HTML2ソースで確認した。",
+  "基礎値880/960/420・成長20/21/2・コスト3.5・指揮兵数3420(★0-0)・統率(槍S/弓B/馬S/器B)はixanary.comとixawiki.comの2ソースで完全一致。",
+  "初期スキル十羅刹女(B)のLV10「確率+27%/対象 槍馬/防御47%上昇」はixanary.comとixawiki.comの2ソースで完全一致。"
+ ]
+}

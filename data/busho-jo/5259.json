@@ -1,0 +1,44 @@
+{
+ "name": "甲斐親英",
+ "no": "5259",
+ "ch": null,
+ "cost": 1.5,
+ "troop": "槍攻",
+ "sub": "",
+ "effect": "槍攻 コスト×6.5=9.75%上昇",
+ "furigana": "かいちかひで",
+ "illustrator": "匡吉",
+ "imageFull": "assets/img/characters/no5259_full.png",
+ "imageChar": "assets/img/characters/no5259_char.png",
+ "atkBase": 550,
+ "atkGrowth": 19,
+ "defBase": 430,
+ "defGrowth": 14,
+ "tacticsBase": 420.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 1320,
+ "rankGrades": {
+  "yari": "C",
+  "yumi": "D",
+  "uma": "D",
+  "ki": "D"
+ },
+ "initialSkill": "槍隊挟撃",
+ "skillDetail": "E/LV10 確率 25% 槍攻 9.75%上昇/対象:槍\n①槍攻 9.75%上昇する(武将のコストで効果が変化する)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍　確率 25% / 槍攻 コスト×6.5=9.75%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当N)。カード画像(スキルLV10形式)から。武将名「甲斐親英」/ 序 / コスト1.5 / 統率 槍C・弓D・馬D・器D(4隅バッジを個別にズームして確認) / 初期値 攻撃550・防御430・兵法420.0 / 指揮兵数0/1320 / カードNo.5259一致 / 初期スキル「槍隊挟撃 LV10」[E] 確率+25%・対象 槍・槍攻9.75%上昇(武将のコストで効果が変化します) / Illust 匡吉。",
+  "初期スキル名はカード画像の低解像度では「槍隊扶撃」とも読めたが、拡大画像とixanary.com/cards/5259の生HTML(ページタイトルが「槍隊挟撃」)で「槍隊挟撃」と確認したため採用。成長値(攻+19/防+14/兵法+2)・furigana・illustratorもixanaryの生HTMLと一致確認済み。同コスト1.5・同スキルのNo.5251朝倉景隆(既存登録)と数値(確率25%/槍攻9.75%)が一致しており整合。Eランクのためdata/skill/ページの新規作成対象外。",
+  "ixawiki.comの武将カード一覧(序)にNo.5259甲斐親英が掲載されており（N）等の表記は無く無印。個別ページは未作成(編集画面が返る)。章は一覧・個別ページとも記載が無く未確認のためnull。synthesisTableは今回のバッチでは付けない指示のため未作成。",
+  "2026-08-16: コストで効果が変わるスキルの書き方を「計算式=結果」に揃えた(担当ごとに注記の有無・文言が割れていたため)。"
+ ],
+ "wikiOldestComment": null,
+ "wikiCommentCount": null
+}

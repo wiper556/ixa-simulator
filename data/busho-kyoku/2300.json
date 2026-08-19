@@ -1,0 +1,39 @@
+{
+ "name": "吉川広家",
+ "no": "2300",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "槍砲器防",
+ "sub": "",
+ "effect": "防御 82%上昇(所有者が影城主のとき防御効果1.5倍)",
+ "furigana": "きっかわひろいえ",
+ "illustrator": "タカハシタクヤ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 970,
+ "atkGrowth": 32,
+ "defBase": 1040,
+ "defGrowth": 36,
+ "tacticsBase": 510,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3080,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "B",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "非攻",
+ "skillDetail": "B/LV10 確率 37% 防御 82%上昇/対象:槍・砲・器\n①防御 82%上昇する\n②このスキルを所持する武将の所有者が影城主のとき防御効果が1.5倍になる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・砲・器　確率 37% / 防御 82%上昇(所有者が影城主のとき防御効果1.5倍)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当H)。カード画像が無いためixanary.com(cards/2300)生HTMLとixawiki.com(index.php?BushoCard/2300吉川広家)の基本ステータス表・スキル表を突き合わせて完全一致を確認して登録した。"
+ ]
+}

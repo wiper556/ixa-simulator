@@ -1,0 +1,49 @@
+{
+ "name": "北条氏綱",
+ "no": "1158",
+ "ch": "19章",
+ "cost": 4.5,
+ "troop": "槍馬器鉄防",
+ "sub": "",
+ "effect": "対象兵科指揮時防御上昇+自部隊ダメージ軽減",
+ "furigana": "ほうじょううじつな",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1158_full.png",
+ "imageChar": "assets/img/characters/no1158_char.png",
+ "atkBase": 1050,
+ "atkGrowth": 30,
+ "defBase": 1170,
+ "defGrowth": 56,
+ "tacticsBase": 640.0,
+ "tacticsGrowth": 3,
+ "lv0Troops": 4620,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "天刻禄寿",
+ "skillDetail": "S/LV10 確率 27% 防御 112%上昇/対象:槍・馬・器・鉄\n①防御 112%上昇する\n②自部隊の武将ダメージを5%軽減する(重複発動上限5)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・馬・器・鉄　確率 27% / 防御 112%上昇(自部隊ダメージ5%軽減・重複上限5)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録。カード画像(スキルLV10形式)から名前/コスト/攻防兵法/指揮兵数/統率4隅バッジ/スキル名と効果文を読み取った。",
+  "統率バッジはカード画像を6倍拡大して4隅個別に確認: 槍A/馬A/弓A/器S。",
+  "成長値(攻+30/防+56/兵法+3)はixanary.com(cards/1158)の生HTML成長表で確認、初期値(1050/1170/640)はカード画像と一致。",
+  "名前の（N）表記はixawiki.com武将カード一覧(天)の生HTML(BushoCard/1158北条氏綱)に無し(無印)。",
+  "初期スキル天刻禄寿はSランクだがdata/skill/天刻禄寿.jsonが未作成(要対応、本担当ではページ新規作成はしない)。",
+  "章(ch)は情報源で確認できず未確認のためnull。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2020-02-14",
+ "wikiCommentCount": 45,
+ "chGuess": "19章",
+ "chSource": "wikiOldestComment"
+}

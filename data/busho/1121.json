@@ -1,0 +1,48 @@
+{
+ "name": "上杉景勝（4）",
+ "no": "1121",
+ "ch": "16章",
+ "cost": 4.5,
+ "troop": "馬騎攻速",
+ "sub": "",
+ "effect": "馬騎の攻撃速度上昇(4部隊以下なら攻撃効果2倍)",
+ "furigana": "うえすぎかげかつ",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1121_full.png",
+ "imageChar": "assets/img/characters/no1121_char.png",
+ "atkBase": 1050,
+ "atkGrowth": 29,
+ "defBase": 980,
+ "defGrowth": 28,
+ "tacticsBase": 620.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 4580,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "B",
+  "uma": "S",
+  "ki": "A"
+ },
+ "initialSkill": "勝軍神撃",
+ "skillDetail": "S/LV10 確率 45%/100% 攻撃 66%上昇+速度 40%上昇/対象:馬騎\n①確率 45% 攻撃 66%上昇する\n②確率 100% 速度 40%上昇する\n③4部隊以下の攻撃で攻撃効果2倍となる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "馬騎　確率 45%/100% / 攻撃 66%上昇+速度 40%上昇(4部隊以下の攻撃で攻撃効果2倍)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録。カード画像(スキルLV10形式、no1121_full.png)から武将名/統率4隅バッジ(槍A・馬S・弓B・器A)/攻防兵法初期値(1050/980/620.0)/lv0Troops(4580)/スキル名・効果文を読み取った。",
+  "ixanary.com(cards/1121)生HTMLの埋め込みJSONでfurigana・illustrator・cost・lv0Troops・rankGrades(yari A/yumi B/kiba S/heiki A)・成長値(攻+29/防+28/兵法+2.5)を裏取りし、カード画像の読み取りと完全一致することを確認した。このスキルは攻撃と速度で発動確率が別々(45%/100%)に設定されており、ixanary.com(skills/勝軍神撃)生HTMLのog:descriptionでも同じ構造(攻撃・速度それぞれに確率が付く)を確認した。",
+  "名前の（N）はixawiki.com(Busho/武将カード一覧)天セクションの該当行を生バイトで確認したところ「上杉景勝(4)」だったため（4）を付与した。",
+  "初期スキル勝軍神撃はSランクだがdata/skill/勝軍神撃.jsonが存在しない(要新規作成)。",
+  "ch(章)は情報源で確認できず未確認のためnullとした。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2018-08-10",
+ "wikiCommentCount": 84,
+ "chGuess": "16章",
+ "chSource": "wikiOldestComment"
+}

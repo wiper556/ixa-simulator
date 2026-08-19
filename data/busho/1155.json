@@ -1,0 +1,49 @@
+{
+ "name": "尼子経久【覇】",
+ "no": "1155",
+ "ch": "19章",
+ "cost": 3,
+ "troop": "全防",
+ "sub": "",
+ "effect": "部隊長時防御上昇(コスト消費なしだが攻撃出陣不可)",
+ "furigana": "あまごつねひさ",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1155_full.png",
+ "imageChar": "assets/img/characters/no1155_char.png",
+ "atkBase": 1000,
+ "atkGrowth": 30,
+ "defBase": 1150,
+ "defGrowth": 38,
+ "tacticsBase": 620.0,
+ "tacticsGrowth": 3,
+ "lv0Troops": 3590,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "S",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "天性無欲ノ調",
+ "skillDetail": "S/LV10 確率 100% 防御 70%上昇/対象:全\n模倣不可\n①防御 70%上昇する\n②部隊長時のみ所属部隊の武将がデッキコストを消費しなくなる代わりその部隊は攻撃出陣できなくなる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 防御 70%上昇(部隊長時コスト消費なし・攻撃出陣不可・模倣不可)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録。カード画像(スキルLV10形式)から名前/コスト/攻防兵法/指揮兵数/統率4隅バッジ/スキル名と効果文を読み取った。",
+  "統率バッジはカード画像を6倍拡大して4隅個別に確認: 槍A/馬A/弓S/器A。",
+  "成長値(攻+30/防+38/兵法+3)はixanary.com(cards/1155)の生HTML成長表で確認、初期値(1000/1150/620)はカード画像と一致。",
+  "名前欄の【覇】はカード画像の名前欄アイコンが通常カードの赤地「将」ではなく金地「覇」だったため付与した。ixawiki.com武将カード一覧(天)の生HTML(BushoCard/1155尼子経久)でもリンク文字列が「尼子経久(覇)」となっており一致を確認済み。番号(N)は無し(この名前は天で1件のみ)。",
+  "初期スキル天性無欲ノ調はSランクだがdata/skill/天性無欲ノ調.jsonが未作成(要対応、本担当ではページ新規作成はしない)。",
+  "章(ch)は情報源で確認できず未確認のためnull。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2020-02-14",
+ "wikiCommentCount": 145,
+ "chGuess": "19章",
+ "chSource": "wikiOldestComment"
+}

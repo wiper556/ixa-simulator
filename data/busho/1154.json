@@ -1,0 +1,49 @@
+{
+ "name": "蘆名盛氏【覇】",
+ "no": "1154",
+ "ch": "19章",
+ "cost": 5,
+ "troop": "全攻防",
+ "sub": "",
+ "effect": "対象全兵科攻撃・防御上昇",
+ "furigana": "あしなもりうじ",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1154_full.png",
+ "imageChar": "assets/img/characters/no1154_char.png",
+ "atkBase": 1200,
+ "atkGrowth": 57,
+ "defBase": 1200,
+ "defGrowth": 57,
+ "tacticsBase": 670.0,
+ "tacticsGrowth": 3,
+ "lv0Troops": 4600,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "天鷹炯眼",
+ "skillDetail": "S/LV10 確率 24% 攻撃 116%上昇+防御 116%上昇/対象:全\n①攻撃 116%上昇する\n②防御 116%上昇する\n③部隊内で武将コストが武将スキルに影響する際この武将のコストを+3として計算する(部隊内重複不可)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 24% / 攻撃 116%上昇+防御 116%上昇(コスト+3換算・部隊内重複不可)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録。カード画像(スキルLV10形式)から名前/コスト/攻防兵法/指揮兵数/統率4隅バッジ/スキル名と効果文を読み取った。",
+  "統率バッジはカード画像を6倍拡大して4隅個別に確認: 槍S/馬A/弓A/器A。",
+  "成長値(攻+57/防+57/兵法+3)はixanary.com(cards/1154)の生HTML成長表で確認、初期値(1200/1200/670)はカード画像と一致。",
+  "名前欄の【覇】はカード画像の名前欄アイコンが通常カードの赤地「将」ではなく金地「覇」だったため付与した。ixawiki.com武将カード一覧(天)の生HTML(BushoCard/1154蘆名盛氏)でもリンク文字列が「蘆名盛氏(覇)」となっており一致を確認済み。番号(N)は無し(この名前は天で1件のみ)。",
+  "初期スキル天鷹炯眼はSランクだがdata/skill/天鷹炯眼.jsonが未作成(要対応、本担当ではページ新規作成はしない)。",
+  "章(ch)は情報源で確認できず未確認のためnull。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2020-02-14",
+ "wikiCommentCount": 512,
+ "chGuess": "19章",
+ "chSource": "wikiOldestComment"
+}

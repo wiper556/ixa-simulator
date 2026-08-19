@@ -1,0 +1,49 @@
+{
+ "name": "宇喜多秀家",
+ "no": "1042",
+ "ch": "8章",
+ "cost": 3.5,
+ "troop": "弓砲器防",
+ "sub": "",
+ "effect": "弓・砲・器兵の防御力上昇",
+ "furigana": "うきたひでいえ",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1042_full.png",
+ "imageChar": "assets/img/characters/no1042_char.png",
+ "atkBase": 640,
+ "atkGrowth": 18,
+ "defBase": 720,
+ "defGrowth": 19,
+ "tacticsBase": 440.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3600,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "B",
+  "ki": "S"
+ },
+ "initialSkill": "煌天豊国",
+ "skillDetail": "S/LV10 確率 40% 防御 35%上昇/対象:弓・砲・器\n①防御 35%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓・砲・器　確率 40% / 防御 35%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録。カード画像(スキルLV10形式)から武将名・統率バッジ・スキル名・初期値を確認。",
+  "統率は槍A/馬B/弓A/器S。カード画像バッジ4隅とixawiki.com(Busho/武将カード一覧(天))の統率力表記が一致。",
+  "ステータス初期値640/720/440.0・成長値+18/+19/+2.5・cost3.5・lv0Troops3600はixanary.com(cards/1042)の成長表と一致確認。",
+  "武将名はixawiki.com(Busho/武将カード一覧(天))の表記「宇喜多秀家」(無印)に従った(同ページでNo.1042がlv0Troops3600で一致)。",
+  "初期スキル「煌天豊国」はSランクだがdata/skill/に個別ページが無い(要作成候補)。",
+  "章は情報源に記載が無く未確認。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2014-05-17",
+ "wikiCommentCount": 157,
+ "chGuess": "8章",
+ "chSource": "wikiOldestComment"
+}

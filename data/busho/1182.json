@@ -1,0 +1,49 @@
+{
+ "name": "佐竹義重（3）",
+ "no": "1182",
+ "ch": "21章",
+ "cost": 4,
+ "troop": "砲器防破",
+ "sub": "",
+ "effect": "砲/器指揮時、防御90%上昇+破壊50%上昇(防御参加武将数×1.5%を追加加算・模倣不可)",
+ "furigana": "さたけよししげ",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1182_full.png",
+ "imageChar": "assets/img/characters/no1182_char.png",
+ "atkBase": 1100,
+ "atkGrowth": 32,
+ "defBase": 1140,
+ "defGrowth": 52,
+ "tacticsBase": 630.0,
+ "tacticsGrowth": 3.0,
+ "lv0Troops": 4270,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "壊劫竜鬼兵",
+ "skillDetail": "S/LV10 確率 45% 防御 90%上昇+破壊 50%上昇/対象:砲器\n模倣不可\n①防御 90%上昇する\n②破壊 50%上昇する\n③防御参加武将数×1.5%を防御効果に加算する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "砲器　確率 45% / 防御 90%上昇+破壊 50%上昇(防御参加武将数×1.5%を加算・模倣不可)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録。カード画像(スキルLV10形式)から名前/コスト/攻防兵法/指揮兵数/統率4隅バッジ/スキル名と効果文を読み取った。",
+  "統率バッジはカード画像を8倍拡大して4隅個別に確認: 槍A/馬A/弓A/器S。",
+  "成長値(攻32/防52/兵法3.0)・furigana・illustratorはixawiki.com(BushoCard/1182佐竹義重)の生HTMLで確認。TR段階は無く LV1/LV10 の2段のみ(ixanary.com skills/壊劫竜鬼兵で確認、LV10数値はカード画像と一致)。",
+  "名前の（3）はixawiki.com(Busho/武将カード一覧)の天セクション表記「佐竹義重(3)」に従った。",
+  "初期スキル壊劫竜鬼兵はSランクだがdata/skill/壊劫竜鬼兵.jsonが未作成(要対応、本担当ではページ新規作成はしない)。",
+  "章(ch)は情報源で確認できず未確認のためnull。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2021-02-06",
+ "wikiCommentCount": 17,
+ "chGuess": "21章",
+ "chSource": "wikiOldestComment"
+}

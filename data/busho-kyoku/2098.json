@@ -1,0 +1,40 @@
+{
+ "name": "母里太兵衛",
+ "no": "2098",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "将攻",
+ "sub": "",
+ "effect": "攻撃 35%上昇",
+ "furigana": "もりたへえ",
+ "illustrator": "前河悠一",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 890,
+ "atkGrowth": 36.0,
+ "defBase": 880,
+ "defGrowth": 40.0,
+ "tacticsBase": 440.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 1680,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "B",
+  "uma": "B",
+  "ki": "B"
+ },
+ "initialSkill": "槍撃日本号",
+ "skillDetail": "A/LV10 確率 10% 攻撃 35%上昇/対象:将\n①攻撃が35%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "将　確率 10% / 攻撃 35%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-17登録。カード画像が無いためixanary.com(cards/2098 と skills/槍撃日本号)とixawiki.com(BushoCard/2098母里太兵衛)の生HTMLを直接確認し両方が一致した項目だけで登録した(reviewedOkはfalseのまま)。",
+  "合成候補(synthesisTable)は今回付けていない。章(ch)は両ソースとも記載が無いため未確認。"
+ ]
+}

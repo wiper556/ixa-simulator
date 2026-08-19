@@ -1,0 +1,42 @@
+{
+ "name": "松姫",
+ "no": "2212",
+ "ch": null,
+ "cost": 3,
+ "troop": "弓砲器攻防",
+ "sub": "",
+ "effect": "攻撃 57.6%上昇+防御 57.6%上昇",
+ "furigana": "まつひめ",
+ "illustrator": "木下月乃",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 980,
+ "atkGrowth": 27,
+ "defBase": 980,
+ "defGrowth": 27,
+ "tacticsBase": 520,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3160,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "S",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "新館御料人",
+ "skillDetail": "B/LV10 確率 70% 攻撃 57.6%上昇+防御 57.6%上昇/対象:弓・砲・器\n①攻撃 57.6%上昇する\n②防御 57.6%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓・砲・器　確率 70% / 攻撃 57.6%上昇+防御 57.6%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当D)。カード画像が無いためixanary.com(cards/2212)とixawiki.com(index.php?BushoCard/2212松姫)の生HTML突き合わせのみで登録した。",
+  "コスト3・指揮兵数3160・攻撃力980(+27)・防御力980(+27、両ソース独立に同値のため攻防同値カードと判断し疑わない)・兵法520(+2.5)・イラストレーター木下月乃・スキルLV1/LV10の数値は両ソースで完全一致。",
+  "rankGrades(槍B/弓S/馬A/器A)はixawikiのみ出典(ixanaryにテキスト情報無し)。",
+  "章(ch)は両ソースに記載が無く未確認のためnull。"
+ ]
+}

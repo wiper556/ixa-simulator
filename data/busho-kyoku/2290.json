@@ -1,0 +1,39 @@
+{
+ "name": "本願寺教如",
+ "no": "2290",
+ "ch": null,
+ "cost": 3,
+ "troop": "全攻防",
+ "sub": "",
+ "effect": "攻撃 60%上昇+防御 60%上昇(卓越:追加確率50%で攻防効果1.5倍)",
+ "furigana": "ほんがんじきょうにょ",
+ "illustrator": "池田宗隆",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1040,
+ "atkGrowth": 32,
+ "defBase": 1040,
+ "defGrowth": 32,
+ "tacticsBase": 510,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3280,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "極楽護法",
+ "skillDetail": "B/LV10 確率 100% 攻撃 60%上昇/対象:全　卓越\n①攻撃 60%上昇する\n②防御 60%上昇する\n③卓越:追加確率50%で攻防効果が1.5倍になる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 攻撃 60%上昇+防御 60%上昇(卓越:追加確率50%で攻防効果1.5倍)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当H)。カード画像が無いためixanary.com(cards/2290)生HTMLとixawiki.com(index.php?BushoCard/2290本願寺教如)の基本ステータス表・スキル表を突き合わせて完全一致を確認して登録した。atk/defが1040で同値だが両ソース独立に一致しているため攻防同値カードとして採用した(ixanaryのdefBaseバグではない)。"
+ ]
+}

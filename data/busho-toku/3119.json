@@ -1,0 +1,39 @@
+{
+ "name": "直江兼続（2）",
+ "no": "3119",
+ "ch": null,
+ "cost": 3,
+ "troop": "弓砲攻",
+ "sub": "",
+ "effect": "攻撃 10%上昇",
+ "furigana": "なおえかねつぐ",
+ "illustrator": "皆葉英夫",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 650,
+ "atkGrowth": 16,
+ "defBase": 650,
+ "defGrowth": 16,
+ "tacticsBase": 430.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 2670,
+ "rankGrades": {
+  "yari": "C",
+  "yumi": "A",
+  "uma": "B",
+  "ki": "A"
+ },
+ "initialSkill": "弓砲連撃",
+ "skillDetail": "D/LV10 確率 20% 攻撃 10%上昇/対象:弓・砲\n①攻撃 10%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓・砲　確率 20% / 攻撃 10%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当H)。カード画像なし。ixanary.com/cards/3119 と ixawiki.com(BushoCard/3119直江兼続)の生HTMLを突き合わせて登録した。統率・コスト・指揮兵数・スキルの確率と効果値・攻撃/兵法の初期値と成長値は両ソース完全一致。攻撃初期値と防御初期値がともに650で一致しているが、ixawiki側も独立に同値(650)を返しているため攻防同値の実在カードと判断しそのまま採用した。カードページ本文に復刻を示す記述は無く一覧表記通り(2)とした。"
+ ]
+}

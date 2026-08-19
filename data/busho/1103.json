@@ -1,0 +1,49 @@
+{
+ "name": "今川義元（2）",
+ "no": "1103",
+ "ch": "14章",
+ "cost": 4.5,
+ "troop": "弓砲器防",
+ "sub": "",
+ "effect": "対象兵科を指揮した防御時のみ敵軍の総攻撃力が10%低下",
+ "furigana": "いまがわよしもと",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1103_full.png",
+ "imageChar": "assets/img/characters/no1103_char.png",
+ "atkBase": 860,
+ "atkGrowth": 20,
+ "defBase": 960,
+ "defGrowth": 25,
+ "tacticsBase": 580.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 4600,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "S",
+  "uma": "B",
+  "ki": "A"
+ },
+ "initialSkill": "天威雷弓",
+ "skillDetail": "S/LV10 確率 35% 敵軍の総攻撃力10%低下/対象:弓・砲・器\n模倣不可\n①対象兵科を指揮した防御時のみ敵軍の総攻撃力を10%低下させる(重複不可)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓・砲・器　確率 35% / 敵軍の総攻撃力 10%低下(対象兵科を指揮した防御時のみ)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録。カード画像(スキルLV10形式)から作成。カード画像のNo.1103・今川義元の表記を確認。",
+  "名前の（2）はixawiki.com(Busho/武将カード一覧)の天セクションでNo.1103が「今川義元(2)」と表記されているため付けた(職業バッジも将で覇ではないことをカード画像で確認、他の今川義元【覇】表記のカードとは別枠)。",
+  "ステータス初期値860/960/580.0・成長値+20/+25/+2.5・cost4.5・lv0Troops4600はixanary.com(cards/1103)の成長表と一致確認。",
+  "rankGradesはカード画像バッジ4隅を拡大して確認(槍B/馬B/弓S/器A)。",
+  "天威雷弓はdata/skill/にページが無い(S以上のため要新規作成、本セッションでは作成せず報告のみ)。",
+  "章(ch)は情報源で確認できず未確認のためnull。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2017-05-19",
+ "wikiCommentCount": 146,
+ "chGuess": "14章",
+ "chSource": "wikiOldestComment"
+}

@@ -1,0 +1,39 @@
+{
+ "name": "丹羽長秀（3）",
+ "no": "2306",
+ "ch": null,
+ "cost": 4,
+ "troop": "槍馬騎攻",
+ "sub": "",
+ "effect": "攻撃 74%/92%/128%上昇(確率と組み合わせ選択制)",
+ "furigana": "にわながひで",
+ "illustrator": "塚本陽子",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1040,
+ "atkGrowth": 37,
+ "defBase": 990,
+ "defGrowth": 35,
+ "tacticsBase": 500,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3860,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "B",
+  "uma": "S",
+  "ki": "A"
+ },
+ "initialSkill": "鎮魂ノ戦鬼",
+ "skillDetail": "A/LV10 確率 44%/24%/5% 攻撃 74%/92%/128%上昇/対象:槍・馬・騎\n①確率 44%で攻撃 74%上昇する\n②確率 24%で攻撃 92%上昇する\n③確率 5%で攻撃 128%上昇する\n④発動確率と効果の組み合わせを選択できる(移動時は選択不可)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・馬・騎　確率 44%/24%/5% / 攻撃 74%/92%/128%上昇(組み合わせ選択制・移動時は選択不可)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当H)。カード画像が無いためixanary.com(cards/2306)生HTMLとixawiki.com(index.php?BushoCard/2306丹羽長秀)を突き合わせた。名前の（3）はixawikiの武将カード一覧の表記に従った。スキルは確率と攻撃効果の組み合わせを選択できるタイプで、LV10の3候補(確率44%/攻撃74%上昇、確率24%/攻撃92%上昇、確率5%/攻撃128%上昇)は両ソース完全一致。"
+ ]
+}

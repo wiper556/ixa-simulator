@@ -1,0 +1,41 @@
+{
+ "name": "煕子",
+ "no": "2534",
+ "ch": null,
+ "cost": 3,
+ "troop": "全防",
+ "sub": "",
+ "effect": "防御 82%上昇+本丸防御陣形の第伍列目に配置時は防御効果が1.5倍",
+ "furigana": "ひろこ",
+ "illustrator": "綾乙",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 930,
+ "atkGrowth": 22,
+ "defBase": 1040,
+ "defGrowth": 39,
+ "tacticsBase": 570,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3300,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "福月真祐大姉",
+ "skillDetail": "A/LV10 確率 50% 防御 82%上昇/対象:全\n①防御 82%上昇する\n②本丸防御陣形の第伍列目に配置時防御効果が1.5倍になる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 50% / 防御 82%上昇(本丸防御陣形の第伍列目に配置時は防御効果1.5倍)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18新規登録(担当D・カード画像なし)。ixanary.com/cards/2534とixawiki.com(index.php?BushoCard/2534煕子)の生HTML2ソースで確認。",
+  "コスト3・指揮兵数3300・攻撃930/防御1040(両ソース独立に一致・ixanaryも攻防別値のため防御バグ無し)・成長+22/+39/+2.5・ふりがな・統率(槍A弓A馬A器A)・絵師(綾乙)は2ソース完全一致。LV10スキル効果(確率50%/防御82%上昇/本丸防御陣形第伍列目配置時1.5倍)も2ソース完全一致。",
+  "章(ch)は両ソースとも記載が無くnullのまま。カード画像自体が無いためimageFull/imageCharはnull、reviewedOkはfalseのまま。"
+ ]
+}

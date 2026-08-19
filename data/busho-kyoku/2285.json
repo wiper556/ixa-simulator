@@ -1,0 +1,41 @@
+{
+ "name": "平塚為広",
+ "no": "2285",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "槍器鉄防速",
+ "sub": "",
+ "effect": "防御 82%上昇+速度 30%上昇(加勢時速度3倍)",
+ "furigana": "ひらつかためひろ",
+ "illustrator": "平坂康也",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 950,
+ "atkGrowth": 28,
+ "defBase": 990,
+ "defGrowth": 32,
+ "tacticsBase": 510,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3550,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "B",
+  "ki": "S"
+ },
+ "initialSkill": "冥軍雷迅",
+ "skillDetail": "B/LV10 対象:槍・器・鉄\n①確率30%で防御 82%上昇する\n②確率100%で速度 30%上昇する\n③加勢出陣時は速度効果が3倍になる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・器・鉄　確率 30% / 防御 82%上昇+確率 100% / 速度 30%上昇(加勢出陣時速度効果3倍)"
+  }
+ ],
+ "notes": [
+  "2026-08-18登録(担当G)。カード画像が無いためixanary.com(cards/2285)生HTMLとixawiki.com(index.php?BushoCard/2285平塚為広)生HTMLの2ソースを突き合わせて登録した。",
+  "ステータス初期値950/990/510・成長値28/32/2.5・cost3.5・lv0Troops3550・rankGrades(槍A/弓A/馬B/器S)・illustrator平坂康也は両ソースで完全一致。",
+  "スキル「冥軍雷迅」は防御(確率30%)と速度(確率100%)で発動確率が異なる二重確率スキル。加勢出陣時は速度効果がLV1では2倍・LV10では3倍になる仕様。ixawikiにLV1/LV10両方の記載があり、ixanaryのLV10欄と完全一致した。"
+ ],
+ "reviewedOk": false
+}

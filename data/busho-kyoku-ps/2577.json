@@ -1,0 +1,39 @@
+{
+ "name": "瀬名姫",
+ "no": "2577",
+ "ch": null,
+ "cost": 1,
+ "troop": "全防",
+ "sub": "",
+ "effect": "防御 100%上昇(本丸防御陣形の第参列目以降配置時は防御効果3倍・確率50%)",
+ "furigana": "せなひめ",
+ "illustrator": "紺藤ココン",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1120,
+ "atkGrowth": 50,
+ "defBase": 1050,
+ "defGrowth": 54,
+ "tacticsBase": 560,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 1910,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "重めな正室",
+ "skillDetail": "S/LV10 確率 50% 防御 100%上昇/対象:全\n①防御が100%上昇する\n②本丸防御陣形の第参列目以降に配置時は防御効果が3倍になる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 50% / 防御 100%上昇(本丸防御陣形の第参列目以降配置時は防御効果3倍)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録。カード画像が無いためixanary.com(cards/2577)とixawiki.com(BushoCard/2577瀬名姫)の生HTMLを突き合わせて一致した項目のみ登録した。基礎値/成長値/コスト/指揮兵数/統率ランク/初期スキルLV10の確率・効果値は両ソースで一致を確認済み。カード画像が無いためrankGradesは両ソース一致のみ採用しreviewedOkはfalseのまま。"
+ ]
+}

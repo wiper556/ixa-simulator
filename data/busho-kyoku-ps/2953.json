@@ -1,0 +1,45 @@
+{
+ "name": "石川五右衛門-復刻-",
+ "no": "2953",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "全",
+ "sub": "",
+ "effect": "銅銭獲得率5%(参加した対人攻撃/防御で倒した兵数×銅銭獲得率＝獲得銅銭)",
+ "furigana": "いしかわごえもん",
+ "illustrator": "BASKERVILLE",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 770,
+ "atkGrowth": null,
+ "defBase": 690,
+ "defGrowth": 17,
+ "tacticsBase": 520.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3300,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "B",
+  "uma": "B",
+  "ki": "A"
+ },
+ "initialSkill": "天下の義賊",
+ "skillDetail": "C/LV10 確率 35% 銅銭獲得率5%/対象:全\n①参加した対人攻撃/防御で倒した兵数×銅銭獲得率が獲得銅銭になる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 35% / 銅銭獲得率5%(参加した対人攻撃/防御で倒した兵数×銅銭獲得率＝獲得銅銭)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当J)。カード画像が無いため ixanary.com(cards/2953, skills/天下の義賊)と ixawiki.com(index.php?BushoCard/2953石川五右衛門, Busho/武将スキル)の生HTML2ソースを突き合わせて登録した。",
+  "統率(槍S/弓B/馬B/器A)・コスト3.5・指揮兵数3300・攻撃770/成長値不一致・防御690/17・兵法520.0/2.5・ふりがな・イラストレーターはixanary.comとixawiki.comの2ソースで一致することを確認した(不一致箇所は個別に注記)。",
+  "初期スキル「天下の義賊」[C]はixanary.com(skills/天下の義賊)のLV10行とixawiki.com(Busho/武将スキル)のマスター一覧LV10行の2ソースで確認した(不一致箇所は個別に注記)。",
+  "【食い違い】攻撃成長値がixanary.com=13、ixawiki.com=18で不一致。カード画像が無く決め手が無いためatkGrowthはnullにした(防御成長17・兵法成長2.5は両ソース一致)。",
+  "assign一覧の表記が（N）無しの「石川五右衛門」のため、そのまま無印で登録した(特レアリティに既存の石川五右衛門（1）No.3701とは兵科・レアリティが異なる別カードで、極一覧内では表記が重複しない)。",
+  "カード画像が無いためimageFull/imageCharはnull、synthesisTableは付けず、reviewedOkはfalseのまま。章(ch)は両ソースとも記載が無くnullとした。",
+  "2026-08-18: 名前をシミュレーター側の既存登録に合わせた。ixawiki のカードページには復刻と明記されているのに一覧の表記だけ無印で、そこから作ったこの正本が無印になっていた。"
+ ]
+}

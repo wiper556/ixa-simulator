@@ -1,0 +1,42 @@
+{
+ "name": "井伊直虎-復刻-（2）",
+ "no": "1981",
+ "ch": null,
+ "cost": 4.5,
+ "troop": "槍器鉄攻",
+ "sub": "",
+ "effect": "部隊の総コストで効果が変化",
+ "furigana": "いいなおとら",
+ "illustrator": "直良有祐",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1180,
+ "atkGrowth": 30,
+ "defBase": null,
+ "defGrowth": 28,
+ "tacticsBase": 650,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 4600,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "井伊ノ女地頭",
+ "skillDetail": "S/LV10 確率 50% 攻撃 25%上昇/対象:槍器鉄\n①攻撃 25%上昇する\n②部隊の総コストに応じて効果が変化する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍器鉄　確率 50% / 攻撃 25%上昇(部隊の総コストに応じて効果が変化する)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-17登録。カード画像が無いためixanary.com(cards/1981)とixawiki.com(BushoCard/1981井伊直虎)の生HTML2ソースのみで作成した。imageFull/imageCharはnull。",
+  "cost/lv0Troops/rankGrades/atkBase・atkGrowth/tacticsBase・tacticsGrowth/defGrowthは両ソース一致。defBaseのみixanary=1180・ixawiki=1110で食い違ったためnullにした(今回の割当20体のうち17体で発生している系統的な食い違い)。",
+  "井伊ノ女地頭はLV1(確率18%攻撃10%上昇・部隊の総コストで効果が変化)の内容が両ソースで一致したため、ixanary.comのLV10データ(確率50%攻撃25%上昇)をskillDetail/trTableに採用した。",
+  "reviewedOkはfalseのまま。カード画像による4隅バッジ・スキルパネル照合が未実施のため黄丸化はできない。"
+ ]
+}

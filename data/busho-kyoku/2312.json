@@ -1,0 +1,42 @@
+{
+ "name": "伊達輝宗（2）",
+ "no": "2312",
+ "ch": null,
+ "cost": 4,
+ "troop": "弓砲器攻",
+ "sub": "",
+ "effect": "部隊の総コストに応じて攻撃が上昇",
+ "furigana": "だててるむね",
+ "illustrator": "JaneMere",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1070,
+ "atkGrowth": 37,
+ "defBase": 1000,
+ "defGrowth": 32,
+ "tacticsBase": 480,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3860,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "S",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "古龍逆鱗",
+ "skillDetail": "A/LV10 確率 57% 攻撃 25%上昇/対象:弓・砲・器\n①攻撃 25%上昇する(部隊の総コストで効果が変化)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓・砲・器　確率 57% / 攻撃 25%上昇(部隊の総コストで効果が変化)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(カード画像なし・第2波)。ixanary.com(cards/2312)生HTMLの埋め込みJSON(ふりがな・イラストレーター・cost・指揮兵数・統率力・攻防兵法初期値/成長値・スキル名/確率/効果)とixawiki.com(BushoCard/2312伊達輝宗)の基本ステータス表・スキル追加表を突き合わせ、両ソース完全一致(食い違いなし)を確認して登録した。imageFull/imageChar/rankGradesの根拠はカード画像でなく2ソース一致による。",
+  "章(ch)は情報源(ixanary.com/ixawiki.com)に記載が無く未確認のためnullとした。"
+ ],
+ "wikiOldestComment": "2022-01-11",
+ "wikiCommentCount": 15
+}

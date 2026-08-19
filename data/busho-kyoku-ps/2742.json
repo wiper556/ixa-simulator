@@ -1,0 +1,71 @@
+{
+ "name": "北条幻庵（2）",
+ "no": "2742",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "全攻",
+ "sub": "",
+ "effect": "攻撃 56%上昇(部隊コスト14以下で100%発動)",
+ "furigana": "ほうじょうげんあん",
+ "illustrator": "BISAI",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 920,
+ "atkGrowth": 20,
+ "defBase": 830,
+ "defGrowth": 17,
+ "tacticsBase": 490,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 2900,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "幻庵斬り",
+ "skillDetail": "A/LV10 確率 10% 攻撃 56%上昇/対象:全\n①攻撃が56%上昇する(部隊コスト14以下で100%発動)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 10% / 攻撃 56%上昇(部隊コスト14以下で100%発動)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": null
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": null
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": null
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": null
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": null
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": null
+  }
+ ],
+ "notes": [
+  "2026-08-18新規登録(担当G・カード画像なし)。ixanary.com/cards/2742とixawiki.com(index.php?BushoCard/2742北条幻庵)の生HTML2ソースで統率(槍A弓A馬A器A)・コスト2.5・指揮兵数2900・初期値920/830/490・成長値+20/+17/+2.5・絵師BISAI・ふりがな・スキルLV1値(確率+5.5%/攻撃18%上昇)が完全一致することを確認した(不一致項目なし)。",
+  "武将名の（2）はassign一覧の表記(北条幻庵(2))に従った。No.2742のixawikiページ名自体は無印の「BushoCard/2742北条幻庵」だった。",
+  "初期スキル「幻庵斬り」[A]のLV10値(確率10%/攻撃56%上昇/対象全・部隊コスト14以下で100%発動)はixanary.com/cards/2742のLV10スキルボックスで確認。synthesisTableはカード画像が無いため作成していない。章は両ソースに記載が無く未確認。"
+ ],
+ "reviewedOk": false
+}

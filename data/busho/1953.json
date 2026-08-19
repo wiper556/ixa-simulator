@@ -1,0 +1,41 @@
+{
+ "name": "前田利家-復刻-",
+ "no": "1953",
+ "ch": null,
+ "cost": 1.5,
+ "troop": "全攻速",
+ "sub": "",
+ "effect": "全軍の攻撃・速度上昇(単独出陣時速度10倍)",
+ "furigana": "まえだとしいえ",
+ "illustrator": "直良有祐",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 920,
+ "atkGrowth": 62,
+ "defBase": null,
+ "defGrowth": 47,
+ "tacticsBase": 500.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 2300,
+ "rankGrades": {
+  "yari": "SS",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "C"
+ },
+ "initialSkill": "光焔雷戟",
+ "skillDetail": "S/LV10 確率 100% 攻撃 30%上昇/対象:全\n①攻撃 30%上昇する\n②速度 45%上昇する(単独出陣時は速度効果10倍となる)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 攻撃 30%上昇+速度 45%上昇(単独出陣時は速度効果10倍)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-17登録。カード画像が無いためixanary.com(cards/1953)とixawiki.com(BushoCard/1953前田利家)の2ソースで突き合わせた。",
+  "防御初期値(defBase)がixanaryは920(攻撃と同値)、ixawikiは800で食い違ったためnullにした。防御成長値(+47)・攻撃920(+62)・兵法500.0(+2.5)・指揮兵数2300・コスト1.5・統率(槍SS/弓A/馬A/器C)・初期スキル「光焔雷戟」(S)の確率/対象/効果は両ソース一致。",
+  "章(ch)は情報源に記載が無いため未確認でnull。"
+ ]
+}

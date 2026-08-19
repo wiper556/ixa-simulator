@@ -1,0 +1,40 @@
+{
+ "name": "遠藤直経",
+ "no": "2344",
+ "ch": null,
+ "cost": 4,
+ "troop": "槍弓器鉄攻",
+ "sub": "",
+ "effect": "攻撃 100%上昇(飛翔4以上保有時は飛翔を失う代わりに効果3倍)",
+ "furigana": "えんどうなおつね",
+ "illustrator": "池田宗隆",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1100,
+ "atkGrowth": 42,
+ "defBase": 1050,
+ "defGrowth": 34,
+ "tacticsBase": 520,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3920,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "B",
+  "ki": "A"
+ },
+ "initialSkill": "夜叉ノ懐刀",
+ "skillDetail": "A/LV10 確率 50% 攻撃 100%上昇/対象:槍・弓・器・鉄\n①攻撃 100%上昇する\n②この武将が4以上の飛翔を持つときこの武将は飛翔を全て失う代わりにこのスキルの攻撃効果が3倍になる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・弓・器・鉄　確率 50% / 攻撃 100%上昇(4以上の飛翔を持つ場合飛翔を全て失う代わりに効果3倍)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当J・第2波・カード画像なし)。ixanary.com(cards/2344)生HTMLとixawiki.com(index.php?BushoCard/2344遠藤直経、およびBusho/武将カード一覧(極))の2ソースでコスト/指揮兵数/統率ランク/攻撃防御兵法の初期値成長値/スキル効果(LV1・LV10)が完全一致することを確認して登録した。",
+  "このスキル自体は飛翔を付与しないため(既存の飛翔4以上を消費する側)sub欄は空のままとした。"
+ ]
+}

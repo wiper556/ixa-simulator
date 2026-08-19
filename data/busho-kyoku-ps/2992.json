@@ -1,0 +1,41 @@
+{
+ "name": "豊臣関白秀吉",
+ "no": "2992",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "全攻",
+ "sub": "",
+ "effect": "攻撃 (2×防御参加武将数)%上昇(模倣不可)",
+ "furigana": "とよとみかんぱくひでよし",
+ "illustrator": "宮下英樹／講談社",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 980,
+ "atkGrowth": 30,
+ "defBase": 980,
+ "defGrowth": 30,
+ "tacticsBase": 540,
+ "tacticsGrowth": 3,
+ "lv0Troops": 3480,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "無比ノ勝負師",
+ "skillDetail": "A/LV10 確率 30% 攻撃 (2×防御参加武将数)%上昇/対象:全\n模倣不可\n①攻撃が(2×防御参加武将数)%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 30% / 攻撃 (2×防御参加武将数)%上昇(模倣不可)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録。カード画像が無いためixanaryとixawikiの一致だけで入れた(rankGradesは両ソース完全一致)。synthesisTableは今回のバッチでは付けていない。",
+  "atkBase/defBase(980/980)は両ソースとも独立に同値を示しており(本当に攻防同値のカード)、defBaseがatkBaseと同じになるixanary側の既知の壊れ方とは判断せずそのまま採用した。成長値・兵法・コスト・指揮兵数も両ソース一致。",
+  "スキル『無比ノ勝負師』はixanaryがLV1(確率+10%/攻撃(1×防御参加武将数)%上昇)とLV10(確率+30%/攻撃(2×防御参加武将数)%上昇)を明示。ixawikiの基本ステータス表の値はixanaryのLV1と一致していたため、今回のバッチで頻発した『ixawikiの表がLV1のまま』パターンと判断し、ixanaryの明示的なLV10値を採用した。"
+ ]
+}

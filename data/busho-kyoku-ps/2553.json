@@ -1,0 +1,43 @@
+{
+ "name": "百地三太夫-復刻-",
+ "no": "2553",
+ "ch": null,
+ "cost": 4.5,
+ "troop": "攻",
+ "sub": "",
+ "effect": "追加スキルの速度効果2倍(模倣不可)",
+ "furigana": "ももちさんだゆう",
+ "illustrator": "仙田聡",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1050,
+ "atkGrowth": 40,
+ "defBase": 900,
+ "defGrowth": 22,
+ "tacticsBase": 510,
+ "tacticsGrowth": 3,
+ "lv0Troops": 4430,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "火遁閻火",
+ "skillDetail": "S/LV10 確率 100% 対象:追加スキル\n模倣不可\n①このスキルを持つ武将カードは追加スキルの速度効果が2倍になる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "追加スキル　確率 100% / 速度効果 2倍"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "カード画像が無いため ixanary.com/cards/2553 と ixawiki.com(BushoCard/2553百地三太夫)の生HTML2ソースで確認した。",
+  "コスト4.5・指揮4430・初期値1050/900/510・成長値+40/+22/+3.0・兵科ランク(槍A・弓A・馬A・器S)・絵師仙田聡・スキル名対象確率効果(LV10 確率100%/対象追加スキル/追加スキルの速度効果2倍・模倣不可)が両ソース完全一致。",
+  "部隊スキル「速.忍び衆」は当サイトのデータ項目に対応フィールドが無いため未登録。",
+  "章はixanary.com・ixawiki.comのカードページに記載が無いためnull。",
+  "2026-08-18: 名前をシミュレーター側の既存登録に合わせた。ixawiki のカードページには復刻と明記されているのに一覧の表記だけ無印で、そこから作ったこの正本が無印になっていた。"
+ ]
+}

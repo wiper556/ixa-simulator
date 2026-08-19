@@ -1,0 +1,48 @@
+{
+ "name": "山中長俊",
+ "no": "4277",
+ "ch": "24章",
+ "cost": 1.5,
+ "troop": "槍攻",
+ "sub": "",
+ "effect": "槍攻 15%上昇",
+ "furigana": "やまなかながとし",
+ "illustrator": "まっつん！",
+ "imageFull": "assets/img/characters/no4277_full.png",
+ "imageChar": "assets/img/characters/no4277_char.png",
+ "atkBase": 610,
+ "atkGrowth": 18,
+ "defBase": 580,
+ "defGrowth": 17,
+ "tacticsBase": 430.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 1580,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "C",
+  "uma": "C",
+  "ki": "C"
+ },
+ "initialSkill": "槍隊進撃",
+ "skillDetail": "F/LV10 確率 10% 槍攻 15%上昇/対象:槍\n①槍攻 15%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍　確率 10% / 槍攻 15%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当H)。カード画像(スキルLV10形式)から。武将名「山中長俊」/上/コスト1.5/統率 槍B・弓C・馬C・器C(4隅を個別にズームして確認)/攻撃610・防御580・兵法430.0/指揮兵数0/1580/カードNo.4277/スキル「槍隊進撃LV10」[F] 確率:+10%・対象 槍・槍攻:15%上昇/Illust:まっつん！(カード画像下部をズームして確認、末尾は感嘆符)。",
+  "成長値(攻撃+18/防御+17/兵法+2)はixanary.com/cards/4277の武将データ表で確認しカード画像の初期値(610/580/430.0)・指揮1580・コスト1.5・イラストレーター名とも一致。",
+  "【要申し送り】ixanary.com/cards/4277の武将データ表に「部隊スキル 速.忍び衆」という、カード画像には一切表示されていない項目がある(カード画像の下部2枠は完全に空白)。既存JSONスキーマに部隊スキル用のフィールドが無く、意味も裏取りできていないため今回は登録データに反映していない。別途調査が必要な可能性がある。",
+  "ixawikiは未確認(標準2ソースのうちixanaryで裏取りできたため未照合)。章はixanaryに記載がなく null のまま。",
+  "上カードは合成テーブル・TR段階が存在しない前提(data/busho-toku/3418.jsonの前例に合わせ、trTableはLV10のみ)。ixanaryのカードページにもTR/鍛錬・合成候補の記載なし。初期スキル「槍隊進撃」はFランクのためSランク以上のskillページ作成規約には該当せず、data/skill/槍隊進撃.json は作成していない。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2022-11-02",
+ "wikiCommentCount": 2,
+ "chGuess": "24章",
+ "chSource": "wikiOldestComment"
+}

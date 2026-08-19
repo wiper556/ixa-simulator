@@ -1,0 +1,45 @@
+{
+ "name": "雑賀孫市",
+ "no": "2008",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "砲器防",
+ "sub": "",
+ "effect": "対象兵科の防御が上昇",
+ "furigana": "さいかまごいち",
+ "illustrator": "前河悠一",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 700,
+ "atkGrowth": 17,
+ "defBase": null,
+ "defGrowth": 17,
+ "tacticsBase": 430,
+ "tacticsGrowth": 2,
+ "lv0Troops": null,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "B",
+  "uma": null,
+  "ki": "S"
+ },
+ "initialSkill": "八咫烏",
+ "skillDetail": "B/LV10 確率 35% 防御 30%上昇/対象:砲・器\n①防御 30%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "砲・器　確率 35% / 防御 30%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "カード画像が無いため imageFull/imageChar は null。ixanary.comの埋め込みJSON(cards/2008)とixawiki.com(BushoCard/2008)の基本ステータス表・スキル表を突き合わせて登録した。",
+  "指揮兵数(lv0Troops)がixanaryでは2440・ixawikiでは2460で食い違ったためnullにした。",
+  "defBase(防御初期値)がixanaryでは705・ixawikiでは720で食い違ったためnullにした。",
+  "統率(馬)ランクがixanaryではB・ixawikiではCで食い違ったためnullにした(槍B/弓B/器Sは両ソース一致)。",
+  "ixawikiの武将カード一覧には「(覇)雑賀孫市」と「雑賀孫市」の2つのリンクがあったが、割り当て指示(BushoCard/2008雑賀孫市)に従い覇の付かない方のページを使用した。"
+ ],
+ "wikiOldestComment": "2014-04-27",
+ "wikiCommentCount": 21
+}

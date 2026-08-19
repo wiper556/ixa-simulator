@@ -1,0 +1,41 @@
+{
+ "name": "島津貴久",
+ "no": "2067",
+ "ch": null,
+ "cost": 3,
+ "troop": "馬砲攻",
+ "sub": "",
+ "effect": "馬・砲兵の攻撃力上昇",
+ "furigana": "しまづたかひさ",
+ "illustrator": "辺野十",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 720,
+ "atkGrowth": 17,
+ "defBase": 700,
+ "defGrowth": 16,
+ "tacticsBase": 440,
+ "tacticsGrowth": 2,
+ "lv0Troops": 2860,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "C",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "虎砲英主",
+ "skillDetail": "B/LV10 確率 30% 攻撃 20%上昇/対象:馬・砲\n①攻撃 20%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "馬・砲　確率 30% / 攻撃 20%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-17登録(担当F)。カード画像が無いためixanary.com(cards/2067)とixawiki.com(index.php?BushoCard/2067島津貴久)の生HTML突き合わせのみで登録した。",
+  "コスト3・指揮兵数2860・統率(槍B/弓C/馬A/器S)・攻撃力720(+17)・防御力700(+16)・兵法440(+2)は両ソースで完全一致。LV10(確率30%/攻撃20%上昇)はixawikiに記載が無くixanary単独の値。",
+  "章(ch)は両ソースとも記載が無く未確認のためnull。イラストレーター辺野十は両ソース一致。"
+ ]
+}

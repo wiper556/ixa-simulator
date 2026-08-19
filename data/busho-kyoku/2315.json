@@ -1,0 +1,42 @@
+{
+ "name": "三好元長（2）",
+ "no": "2315",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "弓馬砲防速",
+ "sub": "",
+ "effect": "対象兵科の防御・速度が上昇(加勢出陣時は速度効果3倍)",
+ "furigana": "みよしもとなが",
+ "illustrator": "BISAI",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1000,
+ "atkGrowth": 32,
+ "defBase": 1070,
+ "defGrowth": 37,
+ "tacticsBase": 490,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3640,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "S",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "戦慄ノ遁走曲",
+ "skillDetail": "A/LV10 確率 52%/100% 防御 88%上昇(確率52%)+速度 40%上昇(確率100%)/対象:弓・馬・砲\n①防御 88%上昇する(確率52%)\n②速度 40%上昇する(確率100%)\n③加勢出陣時は速度効果が3倍になる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓・馬・砲　確率 52%/100% / 防御 88%上昇(確率52%)+速度 40%上昇(確率100%)(加勢出陣時は速度効果3倍)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(カード画像なし・第2波)。ixanary.com(cards/2315)生HTMLの埋め込みJSON(ふりがな・イラストレーター・cost・指揮兵数・統率力・攻防兵法初期値/成長値・スキル名/確率/効果)とixawiki.com(BushoCard/2315三好元長)の基本ステータス表・スキル追加表を突き合わせ、両ソース完全一致(食い違いなし)を確認して登録した。imageFull/imageChar/rankGradesの根拠はカード画像でなく2ソース一致による。",
+  "章(ch)は情報源(ixanary.com/ixawiki.com)に記載が無く未確認のためnullとした。"
+ ],
+ "wikiOldestComment": "2022-02-10",
+ "wikiCommentCount": 13
+}

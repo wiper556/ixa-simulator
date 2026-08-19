@@ -1,0 +1,42 @@
+{
+ "name": "甲斐姫（3）",
+ "no": "2311",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "槍弓器鉄攻防",
+ "sub": "",
+ "effect": "対象兵科の攻撃・防御が上昇+卓越で効果1.5倍",
+ "furigana": "かいひめ",
+ "illustrator": "萩谷薫",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1030,
+ "atkGrowth": 36,
+ "defBase": 1030,
+ "defGrowth": 36,
+ "tacticsBase": 490,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3600,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "B",
+  "ki": "A"
+ },
+ "initialSkill": "波斬 菖蒲",
+ "skillDetail": "A/LV10 確率 100% 攻撃 87%上昇/対象:槍・弓・器・鉄\n①攻撃 87%上昇する\n②防御 87%上昇する\n③卓越:追加確率50%で攻防効果が1.5倍になる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・弓・器・鉄　確率 100% / 攻撃 87%上昇+防御 87%上昇(卓越:追加確率50%で攻防効果1.5倍)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(カード画像なし・第2波)。ixanary.com(cards/2311)生HTMLの埋め込みJSON(ふりがな・イラストレーター・cost・指揮兵数・統率力・攻防兵法初期値/成長値・スキル名/確率/効果)とixawiki.com(BushoCard/2311甲斐姫)の基本ステータス表・スキル追加表を突き合わせ、両ソース完全一致(食い違いなし)を確認して登録した。imageFull/imageChar/rankGradesの根拠はカード画像でなく2ソース一致による。",
+  "章(ch)は情報源(ixanary.com/ixawiki.com)に記載が無く未確認のためnullとした。"
+ ],
+ "wikiOldestComment": "2021-12-01",
+ "wikiCommentCount": 24
+}

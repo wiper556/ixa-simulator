@@ -1,0 +1,39 @@
+{
+ "name": "小早川隆景",
+ "no": "2023",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "弓攻",
+ "sub": "",
+ "effect": "攻撃 30%上昇",
+ "furigana": "こばやかわたかかげ",
+ "illustrator": "方條ゆとり",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 720,
+ "atkGrowth": 16,
+ "defBase": 720,
+ "defGrowth": 16,
+ "tacticsBase": 455,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 2560,
+ "rankGrades": {
+  "yari": "D",
+  "yumi": "S",
+  "uma": "A",
+  "ki": "E"
+ },
+ "initialSkill": "三矢の神技",
+ "skillDetail": "B/LV10 確率 25% 攻撃 30%上昇/対象:弓\n①攻撃 30%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓　確率 25% / 攻撃 30%上昇"
+  }
+ ],
+ "notes": [
+  "2026-08-17登録(担当D)。カード画像が無いためixanary.com(cards/2023)生HTMLとixawiki.com(index.php?BushoCard/2023小早川隆景、およびBusho/武将カード一覧(極)・Busho/武将スキルの生HTML)の2ソースで数値が一致することを確認して登録した。"
+ ],
+ "reviewedOk": false
+}

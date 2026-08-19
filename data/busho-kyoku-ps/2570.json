@@ -1,0 +1,40 @@
+{
+ "name": "宮本武蔵-復刻-",
+ "no": "2570",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "全攻",
+ "sub": "",
+ "effect": "攻撃 170%上昇+防御部隊の武将防御力 50%低下(確率50%・特殊効果は重複不可)",
+ "furigana": "みやもとむさし",
+ "illustrator": "塚本陽子",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 2000,
+ "atkGrowth": 150,
+ "defBase": 1800,
+ "defGrowth": 130,
+ "tacticsBase": 530,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 4650,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "二天五輪書",
+ "skillDetail": "S/LV10 確率 50% 攻撃 170%上昇+防御部隊の武将防御力 50%低下/対象:全\n①攻撃が170%上昇する\n②防御部隊の武将防御力を50%低下させる(特殊効果は重複不可)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 50% / 攻撃 170%上昇+防御部隊の武将防御力 50%低下(特殊効果は重複不可)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録。カード画像が無いためixanary.com(cards/2570)とixawiki.com(BushoCard/2570宮本武蔵)の生HTMLを突き合わせて一致した項目のみ登録した。基礎値/成長値/コスト/指揮兵数/統率ランク/初期スキルLV10の確率・効果値は両ソースで一致を確認済み。カード画像が無いためrankGradesは両ソース一致のみ採用しreviewedOkはfalseのまま。",
+  "2026-08-18: 名前をシミュレーター側の既存登録に合わせた。ixawiki のカードページには復刻と明記されているのに一覧の表記だけ無印で、そこから作ったこの正本が無印になっていた。"
+ ]
+}

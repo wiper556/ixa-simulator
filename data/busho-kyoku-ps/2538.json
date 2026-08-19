@@ -1,0 +1,43 @@
+{
+ "name": "羽柴秀吉",
+ "no": "2538",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "全攻防",
+ "sub": "",
+ "effect": "攻撃 85%上昇+防御 85%上昇",
+ "furigana": "はしばひでよし",
+ "illustrator": "キョー介",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1020,
+ "atkGrowth": 33,
+ "defBase": 1020,
+ "defGrowth": 33,
+ "tacticsBase": 510,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3540,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "B",
+  "ki": "A"
+ },
+ "initialSkill": "覇・一期一振",
+ "skillDetail": "A/LV10 確率 100% 攻撃 85%上昇/対象:全\n①攻撃 85%上昇する\n②防御 85%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 攻撃 85%上昇+防御 85%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18新規登録(担当D・カード画像なし)。ixanary.com/cards/2538とixawiki.com(index.php?BushoCard/2538羽柴秀吉)の生HTML2ソースで確認。「戦国IXA千万の覇者コラボログインキャンペーン」累計30日目の報酬カード。",
+  "コスト3.5・指揮兵数3540・攻撃防御初期値1020(両ソース独立に同値のため防御バグではなく実値と判断)・成長+33/+33/+2.5・ふりがな・統率(槍S弓A馬B器A)・絵師(キョー介)は2ソース完全一致。",
+  "【片方のみ確認】ixawikiのこのカードのページにはLv1相当の1行(確率100%/攻撃40%上昇/防御40%上昇)のみが記載されておりLv10の行が無かった。Lv1の値はixanaryのLV1表示と完全一致したため同一スキルの記載として信頼できるが、LV10の値(確率100%/攻撃85%上昇/防御85%上昇)はixanaryのみでの確認となる。",
+  "初期スキル名が「覇・一期一振」だが、効果文に他武将のスキルを無効化・発動率低下から保護する記述が無く覇道スキルとしては扱っていない。",
+  "章(ch)は両ソースとも記載が無くnullのまま。カード画像自体が無いためimageFull/imageCharはnull、reviewedOkはfalseのまま。"
+ ]
+}

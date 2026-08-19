@@ -1,0 +1,25 @@
+{
+ "name": "刀八毘沙門天",
+ "rank": "S",
+ "baseRate": 20,
+ "target": "槍・弓・馬",
+ "effectSummary": "S/LV10 確率 20% 攻撃 65%上昇/対象:槍・弓・馬\n①攻撃 65%上昇する\n②合流攻撃時は必ずスキルが発動する",
+ "categoryLinks": [],
+ "sourceCharacters": [
+  {
+   "name": "上杉謙信【覇】",
+   "no": "1064",
+   "slot": "移植不可"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・弓・馬　確率 20% / 攻撃 65%上昇(合流攻撃時必ず発動)"
+  }
+ ],
+ "notes": [
+  "A-3-9「武将自身の初期スキル(S以上)は無条件にページを作る」により2026-08-16に一括作成。内容は data/busho/1064.json の skillDetail / trTable からの転記で、新しい事実は持ち込んでいない。"
+ ]
+}

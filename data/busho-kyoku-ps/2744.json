@@ -1,0 +1,72 @@
+{
+ "name": "今川氏親（2）",
+ "no": "2744",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "全特",
+ "sub": "",
+ "effect": "攻撃部隊の特殊効果付き追加スキル発動率を低下(相手発動率×0.6)",
+ "furigana": "いまがわうじちか",
+ "illustrator": "小森ニコ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 870,
+ "atkGrowth": 24,
+ "defBase": 870,
+ "defGrowth": 24,
+ "tacticsBase": 510,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 2940,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "今川仮名目録",
+ "skillDetail": "A/LV10 確率 35% 攻撃部隊武将の特殊効果付き追加スキル発動率を低下/対象:全\n①攻撃部隊武将の特殊効果付き追加スキルの発動率を低下させる(相手発動率×0.6で計算・重複不可)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 35% / 攻撃部隊武将の特殊効果付き追加スキル発動率を低下(相手発動率×0.6で計算・重複不可)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": null
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": null
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": null
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": null
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": null
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": null
+  }
+ ],
+ "notes": [
+  "2026-08-18新規登録(担当G・カード画像なし)。ixanary.com/cards/2744とixawiki.com(index.php?BushoCard/2744今川氏親)の生HTML2ソースで統率(槍A弓A馬A器A)・コスト2.5・指揮兵数2940・初期値870/870/510・成長値+24/+24/+2.5・絵師小森ニコ・ふりがな・スキルLV1値(確率+15%/対象全)が完全一致することを確認した(不一致項目なし)。",
+  "攻撃・防御初期値/成長値がともに870/+24で同値だが、ixawiki側も独立に同値を示しており、ixanaryの防御バグ(攻撃値のコピー)には該当しないと判断した。",
+  "武将名の（2）はassign一覧の表記(今川氏親(2))に従った。同名の無印カードNo.2715今川氏親とは別カード。No.2744のixawikiページ名自体は無印の「BushoCard/2744今川氏親」だった。",
+  "初期スキル「今川仮名目録」[A]は敵軍の追加スキル発動率を下げる妨害系スキルで、LV10値(確率35%/相手発動率×0.6で計算・重複不可・対象全)はixanary.com/cards/2744のLV10スキルボックスで確認。troopは戦闘系の増減バフではないため「全特」とした。synthesisTableはカード画像が無いため作成していない。章は両ソースに記載が無く未確認。"
+ ],
+ "reviewedOk": false
+}

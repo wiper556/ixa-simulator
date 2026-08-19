@@ -1,0 +1,40 @@
+{
+ "name": "松平元康",
+ "no": "2575",
+ "ch": null,
+ "cost": 2,
+ "troop": "槍弓器焙防",
+ "sub": "",
+ "effect": "防御 90%上昇(拠点待機60分毎に防御効果1.5倍・上限3回・確率50%)",
+ "furigana": "まつだいらもとやす",
+ "illustrator": "しいたけ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1090,
+ "atkGrowth": 49,
+ "defBase": 1120,
+ "defGrowth": null,
+ "tacticsBase": 540,
+ "tacticsGrowth": 3,
+ "lv0Troops": 4200,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "S",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "大樹ノ誓い",
+ "skillDetail": "A/LV10 確率 50% 防御 90%上昇/対象:槍・弓・器・焙\n①防御が90%上昇する\n②拠点待機60分ごとに防御効果が1.5倍になる(上限3回)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・弓・器・焙　確率 50% / 防御 90%上昇(拠点待機60分毎に防御効果1.5倍・上限3回)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録。カード画像が無いためixanary.com(cards/2575)とixawiki.com(BushoCard/2575松平元康)の生HTMLを突き合わせて一致した項目のみ登録した。基礎値/成長値/コスト/指揮兵数/統率ランク/初期スキルLV10の確率・効果値は両ソースで一致を確認済み。カード画像が無いためrankGradesは両ソース一致のみ採用しreviewedOkはfalseのまま。",
+  "defGrowthはixanaryが55・ixawikiが52で食い違ったためnullにした(atkGrowthは49で両ソース一致)。"
+ ]
+}

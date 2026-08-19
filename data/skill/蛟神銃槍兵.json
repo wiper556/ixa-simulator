@@ -1,0 +1,25 @@
+{
+ "name": "蛟神銃槍兵",
+ "rank": "S",
+ "baseRate": 39,
+ "target": "槍砲器",
+ "effectSummary": "S/LV10 確率 39% 攻撃 64%上昇+破壊 42%上昇/対象:槍砲器\n①槍砲器の攻撃が64%上昇する\n②槍砲器の破壊が42%上昇する",
+ "categoryLinks": [],
+ "sourceCharacters": [
+  {
+   "name": "斎藤道三（2）",
+   "no": "1097",
+   "slot": "移植不可"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍砲器　確率 39% / 攻撃 64%上昇+破壊 42%上昇"
+  }
+ ],
+ "notes": [
+  "A-3-9「武将自身の初期スキル(S以上)は無条件にページを作る」により2026-08-16に一括作成。内容は data/busho/1097.json の skillDetail / trTable からの転記で、新しい事実は持ち込んでいない。"
+ ]
+}

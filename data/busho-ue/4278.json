@@ -1,0 +1,46 @@
+{
+ "name": "長坂信政",
+ "no": "4278",
+ "ch": "24章",
+ "cost": 2,
+ "troop": "槍攻",
+ "sub": "",
+ "effect": "槍攻7.5%上昇(武将のコストで効果が変化)",
+ "furigana": "ながさかのぶまさ",
+ "illustrator": "戸橋ことみ",
+ "imageFull": "assets/img/characters/no4278_full.png",
+ "imageChar": "assets/img/characters/no4278_char.png",
+ "atkBase": 630,
+ "atkGrowth": 19,
+ "defBase": 580,
+ "defGrowth": 18,
+ "tacticsBase": 450.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 1900,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "C",
+  "uma": "C",
+  "ki": "C"
+ },
+ "initialSkill": "槍隊急襲",
+ "skillDetail": "F/LV10 確率 16% 槍攻 7.5%上昇/対象:槍\n①槍攻 7.5%上昇する(武将のコストで効果が変化)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍　確率 16% / 槍攻 7.5%上昇(武将のコストで効果が変化)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当I)。カード画像(スキルLV10形式)から。武将名「長坂信政」/ 職業「将」/ コスト2 / 統率 槍B・弓C・馬C・器C(4隅アイコンをズームして確認) / 初期値 攻撃630・防御580・兵法450.0 / 指揮兵数0/1900 / カードNo.4278一致 / 初期スキル「槍隊急襲 LV10」[F] 確率+16%・対象 槍・槍攻7.5%上昇(武将のコストで効果が変化) / Illust 戸橋ことみ(画像では「戸橘」に見えたがixanaryで「戸橋」と確定)。",
+  "成長値(攻+19/防+18/兵法+2)はixanary.com/cards/4278の生HTML内カードpropsで確認。スキル本文もixanary生HTMLのskill-box-bodyで「確率：+16%　/　対象　槍\\n槍攻：7.5%上昇\\n（武将のコストで効果が変化します）」と完全一致。",
+  "章は情報源に記載なく未確認のためnull。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2022-12-01",
+ "wikiCommentCount": 1,
+ "chGuess": "24章",
+ "chSource": "wikiOldestComment"
+}

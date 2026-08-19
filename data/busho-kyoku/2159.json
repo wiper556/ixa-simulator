@@ -1,0 +1,39 @@
+{
+ "name": "三好義賢",
+ "no": "2159",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "全攻速",
+ "sub": "",
+ "effect": "全軍の攻撃・速度上昇+部隊内最速兵士速度で移動",
+ "furigana": "みよしよしかた",
+ "illustrator": "小森ニコ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 750,
+ "atkGrowth": 20,
+ "defBase": 720,
+ "defGrowth": 19,
+ "tacticsBase": 475.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 3340,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "大動員",
+ "skillDetail": "B/LV10 確率 100% 攻撃 8%上昇 速度 24%上昇/対象:全\n①攻撃 8%上昇する\n②速度 24%上昇する\n③部隊内で最も速い兵士速度で移動する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 攻撃 8%上昇+速度 24%上昇(部隊内最速兵士速度で移動)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "カード画像が無いためimageFull/imageChar は null。ixanary.com(cards/2159)とixawiki.com(BushoCard/2159三好義賢)を突き合わせて登録した。基本ステータス・ランク・スキル数値とも両ソースで一致。"
+ ]
+}

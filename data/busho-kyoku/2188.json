@@ -1,0 +1,41 @@
+{
+ "name": "結城秀康（2）",
+ "no": "2188",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "槍弓馬攻破",
+ "sub": "",
+ "effect": "攻撃 49%上昇+破壊 24%上昇",
+ "furigana": "ゆうきひでやす",
+ "illustrator": "小森ニコ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 970,
+ "atkGrowth": 26,
+ "defBase": 900,
+ "defGrowth": 21,
+ "tacticsBase": 490.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3390,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "B"
+ },
+ "initialSkill": "豪槍 御手杵",
+ "skillDetail": "B/LV10 確率 42% 攻撃 49%上昇+破壊 24%上昇/対象:槍・弓・馬\n①攻撃 49%上昇する\n②破壊 24%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・弓・馬　確率 42% / 攻撃 49%上昇+破壊 24%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-17登録。カード画像が無いためixanary.com(cards/2188)生HTMLとixawiki.com(index.php?BushoCard/2188結城秀康)の2ソースで基本ステータス(コスト・指揮兵数・統率槍弓馬器・攻撃/防御/兵法の初期値と成長値・illustrator)が完全一致することを確認して登録した。",
+  "同名武将が複数存在するため、ixawiki.comの武将カード一覧の表記に合わせて名前を「結城秀康（2）」とした(assign_C.txtの指定通り)。",
+  "スキル「豪槍 御手杵」(B)のLV10数値(確率42%/攻撃49%上昇/破壊24%上昇/対象槍弓馬)はixanary.comのLV10欄から採用。ixawiki.comはLV1相当の数値(確率14%)のみ掲載でLV10欄が無いため、LV1部分(確率14%/攻撃22%上昇/破壊15%上昇)同士の一致のみ確認できた(矛盾ではなく情報量の差)。"
+ ]
+}

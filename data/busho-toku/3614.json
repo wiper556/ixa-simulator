@@ -1,0 +1,47 @@
+{
+ "name": "那須資晴",
+ "no": "3614",
+ "ch": "29章",
+ "cost": 2,
+ "troop": "砲器防",
+ "sub": "",
+ "effect": "防御 260%上昇(敵軍1部隊で防御効果1.5倍)",
+ "furigana": "なすすけはる",
+ "illustrator": "匈歌ハトリ",
+ "imageFull": "assets/img/characters/no3614_full.png",
+ "imageChar": "assets/img/characters/no3614_char.png",
+ "atkBase": 860,
+ "atkGrowth": 27,
+ "defBase": 910,
+ "defGrowth": 32,
+ "tacticsBase": 450.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 2410,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "B",
+  "uma": "C",
+  "ki": "A"
+ },
+ "initialSkill": "志速星霜",
+ "skillDetail": "C/LV10 確率 60% 防御 260%上昇/対象:砲・器\n①防御 260%上昇する\n②敵軍1部隊で防御効果が1.5倍になる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "砲・器　確率 60% / 防御 260%上昇(敵軍1部隊で防御効果1.5倍)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当D)。カード画像(スキルLV10形式)から。武将名「那須資晴」/ふりがな「なすすけはる」/特/コスト2/統率 槍B・弓C・馬B・器A(4隅バッジ)/攻撃860・防御910・兵法450.0/指揮兵数0/2410/カードNo.3614/スキル「志速星霜LV10」[C] 確率+60%・対象 砲/器・防御260%上昇・敵軍1部隊で防御効果1.5倍/Illust 匈歌ハトリ。",
+  "成長値(攻撃+27/防御+32/兵法+2)・イラストレーター・ステータス初期値・指揮兵数はixanary.com/cards/3614の生HTML埋め込みJSONとカード画像が完全一致。",
+  "章はixanary.com/cards/3614に記載が無く未確認のためnullのまま。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。",
+  "2026-08-16: 統率の弓と馬が入れ替わっていたので直した。バッジの並びは 左上=槍 / 右上=馬 / 左下=弓 / 右下=器(うぐさんがゲーム内で確認)。照合担当がカード画像を8倍に拡大して1枚ずつ確かめた結果。**ixanary は根拠にしていない**(埋め込みJSONの yumi/kiba がカード実物と食い違うカードが実在し、体系的な法則も無い)。"
+ ],
+ "wikiOldestComment": "2025-02-13",
+ "wikiCommentCount": 1,
+ "chGuess": "29章",
+ "chSource": "wikiOldestComment"
+}

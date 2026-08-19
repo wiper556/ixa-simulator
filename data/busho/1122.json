@@ -1,0 +1,48 @@
+{
+ "name": "柴田勝家（3）",
+ "no": "1122",
+ "ch": "16章",
+ "cost": 4.5,
+ "troop": "馬砲器防",
+ "sub": "",
+ "effect": "馬砲器の防御上昇(6部隊以上なら効果1.5倍)",
+ "furigana": "しばたかついえ",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1122_full.png",
+ "imageChar": "assets/img/characters/no1122_char.png",
+ "atkBase": 1000,
+ "atkGrowth": 26,
+ "defBase": 1150,
+ "defGrowth": 29,
+ "tacticsBase": 610.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 4600,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "B",
+  "uma": "S",
+  "ki": "S"
+ },
+ "initialSkill": "万勇 山郭公",
+ "skillDetail": "S/LV10 確率 39% 防御 67%上昇/対象:馬砲器\n①防御 67%上昇する\n②6部隊以上の防御で効果1.5倍となる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "馬砲器　確率 39% / 防御 67%上昇(6部隊以上の防御で効果1.5倍)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録。カード画像(スキルLV10形式、no1122_full.png)から武将名/統率4隅バッジ(槍A・馬S・弓B・器S)/攻防兵法初期値(1000/1150/610.0)/lv0Troops(4600)/スキル名・効果文を読み取った。",
+  "ixanary.com(cards/1122)生HTMLの埋め込みJSONでfurigana・illustrator・cost・lv0Troops・rankGrades(yari A/yumi B/kiba S/heiki S)・成長値(攻+26/防+29/兵法+2)を裏取りし、カード画像の読み取りと完全一致することを確認した。対象欄「馬砲器」はカード画像では「馬/砲/器」のように見えたが、ixanary.com(skills/万勇 山郭公)生HTMLのog:descriptionで「馬砲器」とスラッシュ無しの表記を確認しそちらを採用した。",
+  "名前の（N）はixawiki.com(Busho/武将カード一覧)天セクションの該当行を生バイトで確認したところ「柴田勝家(3)」だったため（3）を付与した。",
+  "初期スキル万勇 山郭公はSランクだがdata/skill/万勇 山郭公.jsonが存在しない(要新規作成)。",
+  "ch(章)は情報源で確認できず未確認のためnullとした。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2018-08-10",
+ "wikiCommentCount": 87,
+ "chGuess": "16章",
+ "chSource": "wikiOldestComment"
+}

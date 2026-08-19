@@ -1,0 +1,39 @@
+{
+ "name": "池田恒興",
+ "no": "3111",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "馬攻破",
+ "sub": "",
+ "effect": "攻撃 7%上昇+破壊 7%上昇",
+ "furigana": "いけだつねおき",
+ "illustrator": "モトイチ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 650,
+ "atkGrowth": 16,
+ "defBase": 640,
+ "defGrowth": 16,
+ "tacticsBase": 410.0,
+ "tacticsGrowth": 1.5,
+ "lv0Troops": 2400,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "C",
+  "uma": "A",
+  "ki": "B"
+ },
+ "initialSkill": "騎馬隊乱撃",
+ "skillDetail": "D/LV10 確率 20% 攻撃 7%上昇+破壊 7%上昇/対象:馬\n①攻撃 7%上昇する\n②破壊 7%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "馬　確率 20% / 攻撃 7%上昇+破壊 7%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当H)。カード画像なし。ixanary.com/cards/3111 と ixawiki.com(BushoCard/3111池田恒興)の生HTMLを突き合わせて登録した。統率・コスト・指揮兵数・スキルの確率と効果値・攻撃/兵法の初期値と成長値は両ソース完全一致。防御初期値を含め全項目一致。"
+ ]
+}

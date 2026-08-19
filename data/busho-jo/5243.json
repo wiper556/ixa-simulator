@@ -1,0 +1,43 @@
+{
+ "name": "内藤興盛",
+ "no": "5243",
+ "ch": null,
+ "cost": 2,
+ "troop": "弓防",
+ "sub": "",
+ "effect": "弓防15%上昇",
+ "furigana": "ないとうおきもり",
+ "illustrator": "あおひと",
+ "imageFull": "assets/img/characters/no5243_full.png",
+ "imageChar": "assets/img/characters/no5243_char.png",
+ "atkBase": 470,
+ "atkGrowth": 16,
+ "defBase": 510,
+ "defGrowth": 18,
+ "tacticsBase": 410.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 1820,
+ "rankGrades": {
+  "yari": "D",
+  "yumi": "C",
+  "uma": "D",
+  "ki": "D"
+ },
+ "initialSkill": "弓隊備え",
+ "skillDetail": "F/LV10 確率 10% 弓防 15%上昇/対象:弓\n①弓防 15%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓　確率 10% / 弓防 15%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当M)。カード画像(スキルLV10形式)から。武将名「内藤興盛」/ 序 / コスト2 / 統率 槍D・弓C・馬D・器D(4隅アイコンを個別にズームして確認) / 初期値 攻撃470・防御510・兵法410.0 / 指揮兵数0/1820 / カードNo.5243一致 / 初期スキル「弓隊備え LV10」[F] 確率+10%・対象 弓・弓防15%上昇 / Illust あおひと。",
+  "成長値(攻+16/防+18/兵法+2)はixanary.com/cards/5243の生HTMLと一致。Fランクのためdata/skill/ページ新規作成対象外。",
+  "ixawikiの武将カード一覧・武将個別ページとも本カードは未掲載(編集画面が返る=未作成)のため名前の（N）判定材料なし。無印とした。章は情報源に記載が無く未確認のためnull。"
+ ],
+ "wikiOldestComment": null,
+ "wikiCommentCount": 0
+}

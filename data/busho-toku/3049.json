@@ -1,0 +1,42 @@
+{
+ "name": "伊達成実",
+ "no": "3049",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "馬砲攻",
+ "sub": "",
+ "effect": "攻撃 30%上昇",
+ "furigana": "だてしげざね",
+ "illustrator": "マグチモ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 720,
+ "atkGrowth": 17,
+ "defBase": 670,
+ "defGrowth": 16,
+ "tacticsBase": 350.0,
+ "tacticsGrowth": 1.5,
+ "lv0Troops": 2390,
+ "rankGrades": {
+  "yari": "C",
+  "yumi": "C",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "旋風轟撃",
+ "skillDetail": "B/LV10 確率 35% 攻撃 30%上昇/対象:馬・砲\n①攻撃 30%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "馬・砲　確率 35% / 攻撃 30%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当E)。カード画像が無いためixanary.com(cards/3049)とixawiki.com(index.php?BushoCard/3049伊達成実)の生HTML2ソースを突き合わせて登録した。",
+  "コスト2.5・指揮兵数2390・攻撃720/+17・防御670/+16・兵法350/+1.5・統率(槍C/弓C/馬A/器A)・ふりがな・イラストレーターの全項目が2ソース一致した。",
+  "初期スキル「旋風轟撃」[B]はixanary.comのLV10表記(確率+35%/対象馬・砲/攻撃30%上昇)を採用。ixawiki.comのカードページのLV1相当値(確率+20%/攻撃15%上昇)と整合していた。",
+  "章(ch)は両ソースに記載が無くnullのまま。"
+ ]
+}

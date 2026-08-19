@@ -1,0 +1,43 @@
+{
+ "name": "清水宗治",
+ "no": "2947",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "全防破",
+ "sub": "",
+ "effect": "防御 15%上昇+破壊 15%上昇(武将ランクで効果が変化/ランクアップ毎に効果+7%)",
+ "furigana": "しみずむねはる",
+ "illustrator": "正子公也",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1040,
+ "atkGrowth": 28,
+ "defBase": 1050,
+ "defGrowth": 30,
+ "tacticsBase": 540.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3480,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "忠勇烈臣",
+ "skillDetail": "B/LV10 確率 38% 防御 15%上昇+破壊 15%上昇/対象:全\n①防御 15%上昇する\n②破壊 15%上昇する\n③武将ランクで効果が変化する(ランクアップ毎に効果+7%)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 38% / 防御 15%上昇+破壊 15%上昇(武将ランクで効果が変化/ランクアップ毎に効果+7%)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当J)。カード画像が無いため ixanary.com(cards/2947, skills/忠勇烈臣)と ixawiki.com(index.php?BushoCard/2947清水宗治, Busho/武将スキル)の生HTML2ソースを突き合わせて登録した。",
+  "統率(槍A/弓A/馬A/器S)・コスト3.5・指揮兵数3480・攻撃1040/28・防御1050/30・兵法540.0/2.5・ふりがな・イラストレーターはixanary.comとixawiki.comの2ソースで一致することを確認した(不一致箇所は個別に注記)。",
+  "初期スキル「忠勇烈臣」[B]はixanary.com(skills/忠勇烈臣)のLV10行とixawiki.com(Busho/武将スキル)のマスター一覧LV10行の2ソースで確認した(不一致箇所は個別に注記)。",
+  "【食い違い】LV10の防御上昇値がixanary.com=35%、ixawiki.com(武将スキル一覧)=15%で不一致。ixawiki.comのカード個別ページ利用者コメント(2018-01-17)に「LV10 確率+38% 全防:57%上昇 全破壊:57%上昇(限界突破時)」とあり、これは基準値15%にランクアップ7%×6回=42%を加えた15+42=57%と整合する。ixanary.comの35%はこの検算と整合しないため、ixawiki.comの15%を採用した。",
+  "カード画像が無いためimageFull/imageCharはnull、synthesisTableは付けず、reviewedOkはfalseのまま。章(ch)は両ソースとも記載が無くnullとした。"
+ ]
+}

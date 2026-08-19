@@ -1,0 +1,73 @@
+{
+ "name": "六角高頼",
+ "no": "2714",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "槍弓砲攻",
+ "sub": "",
+ "effect": "攻撃 33%上昇",
+ "furigana": "ろっかくたかより",
+ "illustrator": "GODTAIL",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 750,
+ "atkGrowth": 18,
+ "defBase": 750,
+ "defGrowth": null,
+ "tacticsBase": 450,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 3160,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "S",
+  "uma": "A",
+  "ki": "B"
+ },
+ "initialSkill": "不屈の名士",
+ "skillDetail": "B/LV10 確率 30.5% 攻撃 33%上昇/対象:槍・弓・砲\n①攻撃が33%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・弓・砲　確率 30.5% / 攻撃 33%上昇"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": null
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": null
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": null
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": null
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": null
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": null
+  }
+ ],
+ "notes": [
+  "2026-08-18新規登録(担当G・カード画像なし)。ixanary.com/cards/2714とixawiki.com(index.php?BushoCard/2714六角高頼)の生HTML2ソースで統率(槍A弓S馬A器B)・コスト3.5・指揮兵数3160・初期値750/750/450・攻撃成長+18・兵法成長+2.0・絵師GODTAIL・スキルLV1値(確率+12.5%/攻撃19%上昇)が完全一致することを確認した。",
+  "防御成長値のみixanary=+18、ixawiki=+17で食い違ったためnullにした(BRIEFの2ソース不一致ルール)。",
+  "武将名の読みはixanaryが「ろっかくたかより」、ixawikiのルビは「八角高頼(はっかくたかより)」という誤記だったが、同ページのコメント欄(2016-04-12)に「誰だ八角にしたのはｗ直しといたよ」という指摘があり明白なwiki側の入力ミスと判断、ixanaryの読みを採用した。",
+  "初期スキル「不屈の名士」[B]のLV10値(確率30.5%/攻撃33%上昇/対象槍弓砲)はixanary.com/cards/2714のLV10スキルボックスで確認。ixawikiの評価コメント(「不屈の名士LV10　確率：+30.5%　/　対象　槍弓砲 槍弓砲攻：33%上昇　9-12の出品で確認」)とも一致した。",
+  "synthesisTableは本バッチの指示によりカード画像が無いため作成していない。章は両ソースに記載が無く未確認。"
+ ],
+ "reviewedOk": false
+}

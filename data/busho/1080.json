@@ -1,0 +1,42 @@
+{
+ "name": "真田信繁",
+ "no": "1080",
+ "ch": null,
+ "cost": 1.5,
+ "troop": "馬砲器攻破",
+ "sub": "",
+ "effect": "馬・砲・器部隊の攻撃・破壊力上昇",
+ "furigana": "さなだのぶしげ",
+ "illustrator": "上国料勇",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 960,
+ "atkGrowth": 35,
+ "defBase": 920,
+ "defGrowth": 30,
+ "tacticsBase": 510.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2250,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "C",
+  "uma": "S",
+  "ki": "S"
+ },
+ "initialSkill": "天緋ノ攻軍",
+ "skillDetail": "S/LV10 確率 32% 攻撃 48%上昇/対象:馬・砲・器\n①攻撃 48%上昇する\n②破壊 42%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "馬・砲・器　確率 32% / 攻撃 48%上昇+破壊 42%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-17登録。カード画像が無いためixanary.com(cards/1080)生HTMLとixawiki.com(BushoCard/1080真田信繁)生HTMLの2ソースで全項目を突き合わせて登録した。",
+  "コスト1.5・指揮兵数2250・統率(槍A/弓C/馬S/器S)・攻撃960(+35)/防御920(+30)/兵法510.0(+2.0)・初期スキル「天緋ノ攻軍」(S)の確率/対象/効果は両ソースで完全一致し食い違いは無かった。",
+  "skillDetailのLV10数値(確率32%/攻撃48%/破壊42%)はixanaryのLV10欄から採用。ixawikiのカード内表はLV1相当の値(確率13%/攻撃10%/破壊15%)を表示しており矛盾ではなく別レベルの値として扱った。",
+  "章(ch)は情報源に記載が無いため未確認でnull。"
+ ]
+}

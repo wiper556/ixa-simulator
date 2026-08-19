@@ -1,0 +1,40 @@
+{
+ "name": "陶晴賢",
+ "no": "2164",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "槍砲攻防",
+ "sub": "",
+ "effect": "槍・砲部隊の攻撃・防御力上昇",
+ "furigana": "すえはるかた",
+ "illustrator": "小森ニコ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 930,
+ "atkGrowth": 20,
+ "defBase": 930,
+ "defGrowth": 20,
+ "tacticsBase": 480.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 3240,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "B",
+  "uma": "C",
+  "ki": "A"
+ },
+ "initialSkill": "叛将烈破",
+ "skillDetail": "B/LV10 確率 32% 攻撃 36%上昇 防御 36%上昇/対象:槍・砲\n①攻撃 36%上昇する\n②防御 36%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・砲　確率 32% / 攻撃 36%上昇+防御 36%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "カード画像が無いためimageFull/imageChar は null。ixanary.com(cards/2164)とixawiki.com(BushoCard/2164陶晴賢)を突き合わせて登録した。基本ステータス・ランク・スキル数値とも両ソースで一致。",
+  "スキル分類はixanaryが「攻防」・ixawikiが「特」で表記が異なったが、実際の効果(攻撃・防御が同率で上昇)からtroopは攻防とした。"
+ ]
+}

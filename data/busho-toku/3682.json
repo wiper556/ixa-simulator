@@ -1,0 +1,44 @@
+{
+ "name": "渡辺糺",
+ "no": "3682",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "槍馬器騎速破",
+ "sub": "",
+ "effect": "速度 180%上昇+破壊 70%上昇",
+ "furigana": "わたなべただす",
+ "illustrator": "isuZu",
+ "imageFull": "assets/img/characters/no3682_full.png",
+ "imageChar": "assets/img/characters/no3682_char.png",
+ "atkBase": 930,
+ "atkGrowth": 32,
+ "defBase": 930,
+ "defGrowth": 32,
+ "tacticsBase": 460.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 3420,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "C",
+  "uma": "B",
+  "ki": "B"
+ },
+ "initialSkill": "内蔵助流槍術",
+ "skillDetail": "C/LV10 確率 100% 速度 180%上昇/対象:槍・馬・器・騎\n①速度 180%上昇する\n②破壊 70%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・馬・器・騎　確率 100% / 速度 180%上昇+破壊 70%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当A)。カード画像(スキルLV10形式)から。武将名「渡辺糺」/ふりがな「わたなべただす」/特/コスト3.5/統率 槍A・弓C・馬B・器B(4隅個別ズームで確認)/攻撃930・防御930・兵法460.0/指揮兵数0/3420/カードNo.3682/スキル「内蔵助流槍術LV10」[C] 確率:+100%・対象 槍/馬/器/騎・速度:180%上昇・破壊:70%上昇/Illust:isuZu。",
+  "対象の4文字目「騎」はixanary.com/cards/3682のtitle=\"槍馬器騎\"と一致。サイト内の既存登録(busho-kyoku等)でも「槍・馬・器・騎」を独立した対象カテゴリとして扱っているため、それに倣いtroop欄に含めた。",
+  "成長値(攻撃+32/防御+32/兵法+2)・イラストレーター(isuZu)・スキルLV10効果(確率100%/速度180%上昇/破壊70%上昇)はixanary.com/cards/3682の生HTML埋め込みJSON・スキルテーブルとカード画像が一致。",
+  "章はixanary.com/cards/3682に記載なし、ixawiki側は今回のバッチ(35xx〜36xx台)で軒並み未作成だったため個別確認を省略しnullのままとした(要申し送り)。"
+ ],
+ "wikiOldestComment": null,
+ "wikiCommentCount": null
+}

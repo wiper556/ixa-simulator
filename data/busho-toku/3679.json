@@ -1,0 +1,44 @@
+{
+ "name": "加藤光泰",
+ "no": "3679",
+ "ch": null,
+ "cost": 3,
+ "troop": "全攻防",
+ "sub": "",
+ "effect": "攻撃150%上昇+防御150%上昇(部隊内の「不屈ノ忠義」スキル数×100%を攻防効果に加算)",
+ "furigana": "かとうみつやす",
+ "illustrator": "tatsuya",
+ "imageFull": "assets/img/characters/no3679_full.png",
+ "imageChar": "assets/img/characters/no3679_char.png",
+ "atkBase": 930,
+ "atkGrowth": 32,
+ "defBase": 930,
+ "defGrowth": 32,
+ "tacticsBase": 450.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 3100,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "B",
+  "uma": "C",
+  "ki": "B"
+ },
+ "initialSkill": "不屈ノ忠義",
+ "skillDetail": "C/LV10 確率 35% 攻撃 150%上昇+防御 150%上昇/対象:全\n①攻撃 150%上昇する\n②防御 150%上昇する\n③部隊内の「不屈ノ忠義」スキル数×100%を攻防効果に加算する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 35% / 攻撃 150%上昇+防御 150%上昇(部隊内の「不屈ノ忠義」スキル数×100%を攻防効果に加算)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当B)。カード画像(スキルLV10形式)から。武将名「加藤光泰」/ふりがな「かとうみつやす」/特/コスト3/統率 槍A・弓B・馬C・器B(4隅を個別にズームして確認)/攻撃930・防御930・兵法450.0/指揮兵数0/3100/カードNo.3679(ファイル名と一致)/スキル「不屈ノ忠義LV10」[C] 確率:+35%・対象 全・攻撃:150%上昇・防御:150%上昇・部隊内の「不屈ノ忠義」スキル数×100%を攻防効果に加算/Illust tatsuya。",
+  "成長値(攻撃+32/防御+32/兵法+2)はixanary.com/cards/3679のテキストで確認(カード画像に成長値の記載は無い)。",
+  "【要申し送り】subは空欄にした。スキル名・効果文に「不屈」の文字を含むが、効果自体は自スキル名の所持数を数えるだけで実際に不屈状態を付与する記述は無いため、不屈タグ(例:安宅冬康2391)とは性質が異なると判断したが、判断が割れる余地がある。",
+  "章はixanary.com/cards/3679に記載が無く、未確認のため null。"
+ ],
+ "wikiOldestComment": null,
+ "wikiCommentCount": null
+}

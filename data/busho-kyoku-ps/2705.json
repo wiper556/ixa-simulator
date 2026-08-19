@@ -1,0 +1,40 @@
+{
+ "name": "朝倉宗滴",
+ "no": "2705",
+ "ch": null,
+ "cost": 3,
+ "troop": "槍馬攻",
+ "sub": "",
+ "effect": "攻撃 33%上昇(確率19%)",
+ "furigana": "あさくらそうてき",
+ "illustrator": "池田宗隆",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 740,
+ "atkGrowth": 18,
+ "defBase": 715,
+ "defGrowth": 18,
+ "tacticsBase": 440,
+ "tacticsGrowth": 2,
+ "lv0Troops": 2890,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "C",
+  "uma": "A",
+  "ki": "B"
+ },
+ "initialSkill": "滅 九頭龍",
+ "skillDetail": "B/LV10 確率 19% 攻撃 33%上昇/対象:槍・馬",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・馬　確率 19% / 攻撃 33%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録。カード画像が無いためixanary.com(cards/2705)とixawiki.com(BushoCard/2705朝倉宗滴)の生HTMLを突き合わせて一致した項目のみ登録した。基礎値/成長値/コスト/指揮兵数/統率ランク/初期スキルLV10の確率・効果値は両ソースで一致を確認済み。カード画像が無いためrankGradesは両ソース一致のみ採用しreviewedOkはfalseのまま。",
+  "ixawikiの基本ステータス表はLV1相当の確率+4%/攻撃19%上昇の一段のみ表示だったため、LV10値はixanary.com(cards/2705)のLV10欄(確率+19%/攻撃33%上昇)を採用した。両ソースのLV1値(確率4%/攻撃19%)は一致確認済み。"
+ ]
+}

@@ -1,0 +1,42 @@
+{
+ "name": "上杉謙信-復刻-",
+ "no": "1960",
+ "ch": null,
+ "cost": 4,
+ "troop": "全攻",
+ "sub": "",
+ "effect": "全軍の攻撃力上昇",
+ "furigana": "うえすぎけんしん",
+ "illustrator": "直良有祐",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1070,
+ "atkGrowth": 30,
+ "defBase": null,
+ "defGrowth": 21,
+ "tacticsBase": 610.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 4100,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "S",
+  "ki": "B"
+ },
+ "initialSkill": "車懸り 天神",
+ "skillDetail": "S/LV10 確率 68% 攻撃 65%上昇/対象:全\n①攻撃 65%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 68% / 攻撃 65%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-17登録。カード画像が無いためixanary.com(cards/1960)とixawiki.com(BushoCard/1960上杉謙信)の2ソースで突き合わせた。",
+  "防御初期値(defBase)がixanaryは1070(攻撃と同値)、ixawikiは1020で食い違ったためnullにした。防御成長値(+21)・攻撃1070(+30)・兵法610.0(+2.5)・指揮兵数4100・コスト4・統率(槍S/弓A/馬S/器B)・初期スキル「車懸り 天神」(S)の確率/対象/効果は両ソース一致。",
+  "jobTypeは「将」で覇者カードではない(No.10074の「上杉謙信-復刻-【覇】」とは別カード)。",
+  "章(ch)は情報源に記載が無いため未確認でnull。"
+ ]
+}

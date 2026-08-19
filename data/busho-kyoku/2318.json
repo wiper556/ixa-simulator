@@ -1,0 +1,42 @@
+{
+ "name": "大野治房（2）",
+ "no": "2318",
+ "ch": null,
+ "cost": 4,
+ "troop": "槍馬砲攻",
+ "sub": "",
+ "effect": "防御参加武将数に応じて攻撃が上昇+卓越で効果1.5倍",
+ "furigana": "おおのはるふさ",
+ "illustrator": "末冨正直",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1040,
+ "atkGrowth": 38,
+ "defBase": 1000,
+ "defGrowth": 33,
+ "tacticsBase": 510,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3870,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "B",
+  "uma": "S",
+  "ki": "A"
+ },
+ "initialSkill": "彷徨ふ鬼火",
+ "skillDetail": "A/LV10 確率 47% 攻撃上昇/対象:槍・馬・砲\n①(1.8×防御参加武将数)%を攻撃効果に加算する\n②卓越:追加確率30%で攻撃効果が1.5倍になる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・馬・砲　確率 47% / 攻撃 1.8%×防御参加武将数(280人)=504.0%(卓越:追加確率30%で1.5倍)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(カード画像なし・第2波)。ixanary.com(cards/2318)生HTMLの埋め込みJSON(ふりがな・イラストレーター・cost・指揮兵数・統率力・攻防兵法初期値/成長値・スキル名/確率/効果)とixawiki.com(BushoCard/2318大野治房)の基本ステータス表・スキル追加表を突き合わせ、両ソース完全一致(食い違いなし)を確認して登録した。imageFull/imageChar/rankGradesの根拠はカード画像でなく2ソース一致による。",
+  "章(ch)は情報源(ixanary.com/ixawiki.com)に記載が無く未確認のためnullとした。"
+ ],
+ "wikiOldestComment": "2022-04-05",
+ "wikiCommentCount": 3
+}

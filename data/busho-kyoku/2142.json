@@ -1,0 +1,40 @@
+{
+ "name": "丹羽長秀",
+ "no": "2142",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "槍馬砲攻",
+ "sub": "",
+ "effect": "槍・馬・砲部隊の攻撃力上昇",
+ "furigana": "にわながひで",
+ "illustrator": "オンダカツキ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 750,
+ "atkGrowth": 20,
+ "defBase": 550,
+ "defGrowth": 15,
+ "tacticsBase": 490,
+ "tacticsGrowth": 2,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "B",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "鬼五郎左",
+ "skillDetail": "B/LV10 確率 26% 攻撃 38%上昇/対象:槍・馬・砲\n①攻撃 38%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・馬・砲　確率 26% / 攻撃 38%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-17登録。カード画像が無いためixanary.com(cards/2142)とixawiki.com(BushoCard/2142丹羽長秀)の生HTMLの一致だけで登録した。",
+  "基礎値/成長値/コスト/指揮兵数/rankGrades(槍A・弓B・馬A・器A)/イラストレーター/スキルLV1数値は両ソースで完全一致。LV10数値はixanary.comのみに記載(ixawikiはLV1のみ掲載)。",
+  "章(ch)は両ソースに記載が無く未確認のためnull。"
+ ]
+}

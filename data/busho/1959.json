@@ -1,0 +1,41 @@
+{
+ "name": "雑賀孫市-復刻-",
+ "no": "1959",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "砲器攻",
+ "sub": "",
+ "effect": "砲・器部隊の攻撃力上昇(敵軍5部隊以下で1.5倍)",
+ "furigana": "さいかまごいち",
+ "illustrator": "直良有祐",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1150,
+ "atkGrowth": 28,
+ "defBase": null,
+ "defGrowth": 25,
+ "tacticsBase": 600.0,
+ "tacticsGrowth": 3.0,
+ "lv0Troops": 3880,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "B",
+  "uma": "S",
+  "ki": "S"
+ },
+ "initialSkill": "神導 八咫烏",
+ "skillDetail": "S/LV10 確率 48% 攻撃 50%上昇/対象:砲・器\n①攻撃 50%上昇する(敵軍5部隊以下で効果1.5倍となる)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "砲・器　確率 48% / 攻撃 50%上昇(敵軍5部隊以下で1.5倍)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-17登録。カード画像が無いためixanary.com(cards/1959)とixawiki.com(BushoCard/1959雑賀孫市)の2ソースで突き合わせた。",
+  "防御初期値(defBase)がixanaryは1150(攻撃と同値)、ixawikiは960で食い違ったためnullにした。防御成長値(+25)・攻撃1150(+28)・兵法600.0(+3.0)・指揮兵数3880・コスト3.5・統率(槍A/弓B/馬S/器S)・初期スキル「神導 八咫烏」(S)の確率/対象/効果は両ソース一致。",
+  "章(ch)は情報源に記載が無いため未確認でnull。"
+ ]
+}

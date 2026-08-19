@@ -1,0 +1,50 @@
+{
+ "name": "毛利元就（3）",
+ "no": "1177",
+ "ch": "20章",
+ "cost": 4.5,
+ "troop": "弓馬焙騎攻速",
+ "sub": "",
+ "effect": "弓/馬/焙/騎指揮時、攻撃86%上昇+速度50%上昇(4部隊以下で攻撃効果2倍)",
+ "furigana": "もうりもとなり",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1177_full.png",
+ "imageChar": "assets/img/characters/no1177_char.png",
+ "atkBase": 1140,
+ "atkGrowth": 60,
+ "defBase": 1000,
+ "defGrowth": 28,
+ "tacticsBase": 650.0,
+ "tacticsGrowth": 3.0,
+ "lv0Troops": 4620,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "S",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "天謀ノ星約",
+ "skillDetail": "S/LV10 確率 36%/100% 攻撃 86%上昇(確率36%)+速度 50%上昇(確率100%)/対象:弓馬焙騎\n①攻撃 86%上昇する(4部隊以下の攻撃で効果2倍)\n②速度 50%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓馬焙騎　確率 36%/100% / 攻撃 86%上昇(4部隊以下で2倍)+速度 50%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録。カード画像(スキルLV10形式)から名前/コスト/攻防兵法/指揮兵数/統率4隅バッジ/スキル名と効果文を読み取った。",
+  "統率バッジはカード画像を8倍拡大して4隅個別に確認: 槍A/馬A/弓S/器A。",
+  "対象欄「弓/馬/焙/騎」はカード画像とixanary.com(skills/天謀ノ星約)・ixawiki.com(BushoCard/1177毛利元就)の生HTML両方で確認、通常の槍弓馬砲器とは異なる特殊表記だが原文どおりとした。",
+  "成長値(攻60/防28/兵法3.0)・furigana・illustratorはixawiki.com(BushoCard/1177毛利元就)の生HTMLで確認。TR段階は無く LV1/LV10 の2段のみ(ixanary.com skills/天謀ノ星約で確認)。",
+  "名前の（3）はixawiki.com(Busho/武将カード一覧)の天セクション表記「毛利元就(3)」に従った。",
+  "初期スキル天謀ノ星約はSランクだがdata/skill/天謀ノ星約.jsonが未作成(要対応、本担当ではページ新規作成はしない)。",
+  "章(ch)は情報源で確認できず未確認のためnull。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2020-08-14",
+ "wikiCommentCount": 36,
+ "chGuess": "20章",
+ "chSource": "wikiOldestComment"
+}

@@ -1,0 +1,42 @@
+{
+ "name": "佐々成政（2）",
+ "no": "2326",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "馬器騎攻速",
+ "sub": "",
+ "effect": "対象兵科の攻撃・速度が上昇+攻撃参加部隊の帰還速度上昇",
+ "furigana": "さっさなりまさ",
+ "illustrator": "小森ニコ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1090,
+ "atkGrowth": 38,
+ "defBase": 1050,
+ "defGrowth": 32,
+ "tacticsBase": 510,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3680,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "B",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "漆黒ノ銃騎兵",
+ "skillDetail": "A/LV10 確率 55%/100% 攻撃 155%上昇(確率55%)+速度 65%上昇(確率100%)/対象:馬・器・騎\n①攻撃 155%上昇する(確率55%)\n②速度 65%上昇する(確率100%)\n③攻撃参加した自軍全部隊の帰還速度が3倍になる(帰還効果は模倣・重複不可)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "馬・器・騎　確率 55%/100% / 攻撃 155%上昇(確率55%)+速度 65%上昇(確率100%)(攻撃参加時自軍全部隊の帰還速度3倍・模倣重複不可)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(カード画像なし・第2波)。ixanary.com(cards/2326)生HTMLの埋め込みJSON(ふりがな・イラストレーター・cost・指揮兵数・統率力・攻防兵法初期値/成長値・スキル名/確率/効果)とixawiki.com(BushoCard/2326佐々成政)の基本ステータス表・スキル追加表を突き合わせ、両ソース完全一致(食い違いなし)を確認して登録した。imageFull/imageChar/rankGradesの根拠はカード画像でなく2ソース一致による。",
+  "章(ch)は情報源(ixanary.com/ixawiki.com)に記載が無く未確認のためnullとした。"
+ ],
+ "wikiOldestComment": "2022-08-15",
+ "wikiCommentCount": 21
+}

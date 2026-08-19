@@ -1,0 +1,48 @@
+{
+ "name": "島津忠良",
+ "no": "1141",
+ "ch": "17章",
+ "cost": 4,
+ "troop": "器攻",
+ "sub": "",
+ "effect": "攻撃上昇(敵軍に兵器兵科がいれば効果1.5倍)",
+ "furigana": "しまづただよし",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1141_full.png",
+ "imageChar": "assets/img/characters/no1141_char.png",
+ "atkBase": 1100,
+ "atkGrowth": 54,
+ "defBase": 1040,
+ "defGrowth": 29,
+ "tacticsBase": 650.0,
+ "tacticsGrowth": 3,
+ "lv0Troops": 4220,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "仙術 伊呂波",
+ "skillDetail": "S/LV10 確率 40% 攻撃 70%上昇/対象:器\n①攻撃 70%上昇する\n②敵部隊に兵器兵科がいれば効果が1.5倍になる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "器　確率 40% / 攻撃 70%上昇(敵部隊に兵器兵科がいれば効果1.5倍)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録。カード画像(スキルLV10形式)から。統率バッジ4隅を拡大確認: 槍S/弓A/馬A/器S(左上=槍/右上=馬/左下=弓/右下=器の並びで確認)。",
+  "ステータス初期値1100/1040/650.0・成長値+54/+29/+3・cost4・lv0Troops4220はixanary.com(cards/1141)生HTMLの成長表と一致確認。",
+  "武将名はixawiki.com(Busho/武将カード一覧(天))で「島津忠良」(無印)表記を確認。",
+  "初期スキル「仙術 伊呂波」(間にスペース)はSランクだがdata/skill/に個別ページが無い(要作成)。",
+  "章は情報源に記載が無く未確認。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2019-02-09",
+ "wikiCommentCount": 131,
+ "chGuess": "17章",
+ "chSource": "wikiOldestComment"
+}

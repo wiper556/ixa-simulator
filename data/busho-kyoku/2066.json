@@ -1,0 +1,41 @@
+{
+ "name": "片倉小十郎",
+ "no": "2066",
+ "ch": null,
+ "cost": 3,
+ "troop": "槍馬砲攻破",
+ "sub": "",
+ "effect": "槍・馬・砲兵の攻撃・破壊力上昇",
+ "furigana": "かたくらこじゅうろう",
+ "illustrator": "西野幸治",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 730,
+ "atkGrowth": 17,
+ "defBase": 690,
+ "defGrowth": 16,
+ "tacticsBase": 465,
+ "tacticsGrowth": 2,
+ "lv0Troops": 2870,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "C",
+  "uma": "B",
+  "ki": "S"
+ },
+ "initialSkill": "竜眼月影",
+ "skillDetail": "B/LV10 確率 25% 攻撃 25%上昇/対象:槍・馬・砲\n①攻撃 25%上昇する\n②破壊 10%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・馬・砲　確率 25% / 攻撃 25%上昇+破壊 10%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-17登録(担当F)。カード画像が無いためixanary.com(cards/2066)とixawiki.com(index.php?BushoCard/2066片倉小十郎)の生HTML突き合わせのみで登録した。",
+  "コスト3・指揮兵数2870・統率(槍A/弓C/馬B/器S)・攻撃力730(+17)・防御力690(+16)・兵法465(+2)は両ソースで完全一致。LV10(確率25%/攻撃25%上昇/破壊10%上昇)はixawikiに記載が無くixanary単独の値。",
+  "章(ch)は両ソースとも記載が無く未確認のためnull。イラストレーター西野幸治は両ソース一致。"
+ ]
+}

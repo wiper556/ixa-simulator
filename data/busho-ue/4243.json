@@ -1,0 +1,46 @@
+{
+ "name": "河野通直",
+ "no": "4243",
+ "ch": "19章",
+ "cost": 2.5,
+ "troop": "槍攻",
+ "sub": "",
+ "effect": "槍攻20%上昇",
+ "furigana": "こうのみちなお",
+ "illustrator": "JaneMere",
+ "imageFull": "assets/img/characters/no4243_full.png",
+ "imageChar": "assets/img/characters/no4243_char.png",
+ "atkBase": 640,
+ "atkGrowth": 17,
+ "defBase": 560,
+ "defGrowth": 14,
+ "tacticsBase": 430.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 2180,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "B",
+  "uma": "C",
+  "ki": "C"
+ },
+ "initialSkill": "槍隊突撃",
+ "skillDetail": "F/LV10 確率 15% 槍攻 20%上昇/対象:槍\n①槍攻 20%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍　確率 15% / 槍攻 20%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当G)。カード画像(スキルLV10形式)から。武将名「河野通直」/ 職業「上」/ 極・覇表記なし / コスト2.5 / 統率(4隅バッジ) 槍B・馬C・弓B・器C / 初期値 攻撃640・防御560・兵法430.0 / 指揮兵数 0/2180 / カードNo.4243 / 初期スキル「槍隊突撃 LV10」[F] 確率+15%・対象 槍・槍攻(攻撃)20%上昇 / Illust:JaneMere。",
+  "成長値(攻撃+17・防御+14・兵法+2)とrankGrades(槍B/馬C/弓B/器C)はixanary.com/cards/4243・ixawiki.com(BushoCard/4243河野通直)の2ソースとカード画像で一致。スキル効果もLV10=確率15%/攻撃20%上昇で両ソースとカード画像が一致し、コスト依存の注記は本スキルには無い。",
+  "章(ch)はixanary/ixawikiともに記載が無く判断材料が無いためnullのまま。本バッチはカードJSON新規作成のみが指示範囲のためsynthesisTableは未作成。初期スキルはFランクのためdata/skill/ページの新規作成対象外。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2020-07-19",
+ "wikiCommentCount": 1,
+ "chGuess": "19章",
+ "chSource": "wikiOldestComment"
+}

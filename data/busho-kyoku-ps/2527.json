@@ -1,0 +1,42 @@
+{
+ "name": "胡蝶",
+ "no": "2527",
+ "ch": null,
+ "cost": 3,
+ "troop": "全攻防",
+ "sub": "",
+ "effect": "攻撃 84%上昇+防御 84%上昇+部隊内全武将の全スキルに「槍弓馬」対象を追加(兵科対象スキル限定)",
+ "furigana": "こちょう",
+ "illustrator": "原哲夫・北原星望／コアミックス",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1030,
+ "atkGrowth": 30,
+ "defBase": 1030,
+ "defGrowth": 30,
+ "tacticsBase": 520,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3290,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "胡蝶ノ夢",
+ "skillDetail": "A/LV10 確率 100% 攻撃 84%上昇/対象:全\n①攻撃 84%上昇する\n②防御 84%上昇する\n③部隊内全武将が持つ全スキルに「槍弓馬」対象を追加する(兵科対象スキル限定)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 攻撃 84%上昇+防御 84%上昇(部隊内全武将の全スキルに「槍弓馬」対象を追加・兵科対象スキル限定)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18新規登録(担当D・カード画像なし)。ixanary.com/cards/2527とixawiki.com(index.php?BushoCard/2527胡蝶)の生HTML2ソースで確認。",
+  "コスト3・指揮兵数3290・攻撃防御初期値1030(両ソース独立に同値のため防御バグではなく実値と判断)・成長+30/+30/+2.5・ふりがな・統率(槍A弓A馬A器A)・絵師(原哲夫・北原星望／コアミックス)は2ソース完全一致。",
+  "【2ソース食い違い】LV10のスキル効果でixanaryは「攻撃94%上昇/防御84%上昇」と非対称の値を表示したが、ixawikiは「攻撃84%上昇/防御84%上昇」と対称。LV1(両ソースとも攻防48%で一致)からの伸び方が対称であること、防御側の84%は両ソース一致することから、ixanaryの「94%」を入力誤りと判断しixawikiの84%を採用した。",
+  "章(ch)は両ソースとも記載が無くnullのまま。カード画像自体が無いためimageFull/imageCharはnull、reviewedOkはfalseのまま。"
+ ]
+}

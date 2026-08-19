@@ -1,0 +1,49 @@
+{
+ "name": "鍋島直茂",
+ "no": "1153",
+ "ch": "18章",
+ "cost": 4,
+ "troop": "馬砲器防",
+ "sub": "",
+ "effect": "対象兵科指揮時防御上昇(6部隊以上で効果1.5倍)",
+ "furigana": "なべしまなおしげ",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1153_full.png",
+ "imageChar": "assets/img/characters/no1153_char.png",
+ "atkBase": 1070,
+ "atkGrowth": 28,
+ "defBase": 1200,
+ "defGrowth": 55,
+ "tacticsBase": 660.0,
+ "tacticsGrowth": 3,
+ "lv0Troops": 4220,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "S",
+  "uma": "S",
+  "ki": "A"
+ },
+ "initialSkill": "天閃輪廻",
+ "skillDetail": "S/LV10 確率 44% 防御 90%上昇/対象:馬・砲・器\n①防御 90%上昇する\n②自軍6部隊以上で防御時効果が1.5倍となる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "馬・砲・器　確率 44% / 防御 90%上昇(自軍6部隊以上で1.5倍)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録。カード画像(スキルLV10形式)から名前/コスト/攻防兵法/指揮兵数/統率4隅バッジ/スキル名と効果文を読み取った。",
+  "統率バッジはカード画像を6倍拡大して4隅個別に確認: 槍A/馬S/弓S/器A。",
+  "成長値(攻+28/防+55/兵法+3)はixanary.com(cards/1153)の生HTML成長表で確認、初期値(1070/1200/660)はカード画像と一致。",
+  "名前の（N）表記はixawiki.com武将カード一覧(天)の生HTML(BushoCard/1153鍋島直茂)に無し(無印)。",
+  "初期スキル天閃輪廻はSランクだがdata/skill/天閃輪廻.jsonが未作成(要対応、本担当ではページ新規作成はしない)。",
+  "章(ch)は情報源で確認できず未確認のためnull。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2019-08-11",
+ "wikiCommentCount": 66,
+ "chGuess": "18章",
+ "chSource": "wikiOldestComment"
+}

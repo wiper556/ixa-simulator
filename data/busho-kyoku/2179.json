@@ -1,0 +1,40 @@
+{
+ "name": "大道寺政繁",
+ "no": "2179",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "槍馬砲防",
+ "sub": "",
+ "effect": "防御 40%上昇",
+ "furigana": "だいどうじまさしげ",
+ "illustrator": "COGA",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 790,
+ "atkGrowth": 20,
+ "defBase": 880,
+ "defGrowth": 21,
+ "tacticsBase": 470,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3340,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "B",
+  "uma": "S",
+  "ki": "A"
+ },
+ "initialSkill": "暁雲黎明",
+ "skillDetail": "B/LV10 確率 36% 防御 40%上昇/対象:槍・馬・砲\n①防御 40%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・馬・砲　確率 36% / 防御 40%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当B)。カード画像が無いため imageFull/imageChar は null。ixanary.com(cards/2179)の埋め込みJSONとixawiki.com(index.php?BushoCard/2179大道寺政繁)の生HTMLで、コスト/指揮兵数/攻撃防御兵法の初期値成長値/兵科ランク(槍A弓B馬S器A)/イラストレーター(COGA)/スキルLV1数値(確率+12%/防御14%上昇)が完全一致することを確認して登録した。LV10の数値(確率36%/防御40%上昇)はixanaryのカードページに明記。",
+  "章(ch)は両ソースとも記載が無いため未確認。synthesisTableは今回付けていない。"
+ ]
+}

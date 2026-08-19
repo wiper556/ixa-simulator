@@ -1,0 +1,41 @@
+{
+ "name": "高台院",
+ "no": "2107",
+ "ch": null,
+ "cost": 2.0,
+ "troop": "槍砲防",
+ "sub": "",
+ "effect": "防御 35%上昇",
+ "furigana": "こうだいいん",
+ "illustrator": "mado＊pen",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 540,
+ "atkGrowth": 16.0,
+ "defBase": 650,
+ "defGrowth": 18.0,
+ "tacticsBase": 560.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2220,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "B",
+  "uma": "B",
+  "ki": "A"
+ },
+ "initialSkill": "日輪の礎",
+ "skillDetail": "B/LV10 確率 20% 防御 35%上昇/対象:槍砲\n①防御が35%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍砲　確率 20% / 防御 35%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-17登録。カード画像が無いためixanary.com(cards/2107 と skills/日輪の礎)とixawiki.com(BushoCard/2107高台院)の生HTMLを直接確認し両方が一致した項目だけで登録した(reviewedOkはfalseのまま)。",
+  "合成候補(synthesisTable)は今回付けていない。章(ch)は両ソースとも記載が無いため未確認。",
+  "絵師名の表記がixanaryは半角アスタリスク(mado*pen)・ixawikiは全角アスタリスク(mado＊pen)だったが同一人物の表記ゆれと判断し、サイト内の既存表記(mado＊pen)に揃えた(食い違いnull対象にはしていない)。"
+ ]
+}

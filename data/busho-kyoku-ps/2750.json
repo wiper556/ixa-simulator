@@ -1,0 +1,70 @@
+{
+ "name": "足利義晴",
+ "no": "2750",
+ "ch": null,
+ "cost": 1.0,
+ "troop": "全防",
+ "sub": "",
+ "effect": "防御 40%上昇(兵士被害増加・武将追加ダメージのスキル効果を全て無効化)",
+ "furigana": "あしかがよしはる",
+ "illustrator": "BISAI",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 920,
+ "atkGrowth": 23,
+ "defBase": 1000,
+ "defGrowth": 25,
+ "tacticsBase": 530,
+ "tacticsGrowth": 3.0,
+ "lv0Troops": 1700,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "玄武の落延",
+ "skillDetail": "B/LV10 確率 100% 防御 40%上昇/対象:全\n①防御が40%上昇する\n②兵士被害増加・武将追加ダメージのスキル効果を全て無効化する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 防御 40%上昇(兵士被害増加・武将追加ダメージのスキル効果を全て無効化)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": null
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": null
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": null
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": null
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": null
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": null
+  }
+ ],
+ "notes": [
+  "2026-08-18新規登録(担当G・カード画像なし)。ixanary.com/cards/2750とixawiki.com(index.php?BushoCard/2750足利義晴)の生HTML2ソースで統率(槍A弓A馬A器S)・コスト1・指揮兵数1700・初期値920/1000/530・成長値+23/+25/+3.0・絵師BISAI・ふりがな・スキルLV1値(確率+100%/防御15%上昇)が完全一致することを確認した(不一致項目なし)。",
+  "初期スキル「玄武の落延」[B]のLV10値(確率100%/防御40%上昇/対象全)に加え、兵士被害増加・武将追加ダメージ系スキル効果の無効化という別効果を持つ。両方ともixanary.com/cards/2750のLV10スキルボックスで確認。synthesisTableはカード画像が無いため作成していない。章は両ソースに記載が無く未確認。"
+ ],
+ "reviewedOk": false
+}

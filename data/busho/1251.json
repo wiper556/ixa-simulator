@@ -131,7 +131,7 @@
   "2026-08-16黄丸化再検証: ixanary.com(cards/1251, skills/西覇冠軍)の生HTML+ixawiki.com(BushoCard/1251毛利輝元)+ixagno.blog.fc2.com(blog-entry-9527)で基礎値(1280/1200/770、成長+76/+65/+3.5、指揮3700)・rankGrades(槍A/弓X/馬A/器S、カード画像バッジ拡大確認)・trTable全段(TR1〜TR5の攻撃570/610/660/720/800%、コスト除外3→3.5の切替点含む)を再照合、一致。",
   "2026-08-16: synthesisTable5枠(A龍驤虎躍/B破軍騎行/C星神闘覇/S1破邪後輝→飛龍衝天/S2十束ノ神域→天聖宝冠)をixanary.com(skills/西覇冠軍)の1次/2次合成テーブルで裏取りし、data/skill/配下の各スキルJSONのsourceCharacters(逆引き)・ownHiddenCandidate・grantedViaSkillsとも矛盾なし。Cスロット星神闘覇のrankはixanaryが「SSS」表示だがixawiki「SS」+サイト内の既存合意(2026-08-13にユーザーがゲーム内確認しSSで決着済み、data/skill/星神闘覇.json notes参照)と一致するためSSのまま維持(ixanary側の既知の誤り)。"
  ],
- "reviewedOk": true,
+ "reviewedOk": false,
  "wikiOldestComment": "2024-02-11",
  "wikiCommentCount": 28,
  "chGuess": "27章"

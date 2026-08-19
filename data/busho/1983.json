@@ -1,0 +1,42 @@
+{
+ "name": "細川ガラシャ-復刻-",
+ "no": "1983",
+ "ch": null,
+ "cost": 4.5,
+ "troop": "全攻防",
+ "sub": "",
+ "effect": "攻撃防御上昇+部隊消費コスト2低下",
+ "furigana": "ほそかわがらしゃ",
+ "illustrator": "直良有祐",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1180,
+ "atkGrowth": 33,
+ "defBase": null,
+ "defGrowth": 26,
+ "tacticsBase": 660,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 4580,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "悲運ノ宝珠",
+ "skillDetail": "S/LV10 確率 49% 攻撃 82%上昇+防御 82%上昇/対象:全\n①攻撃 82%上昇する\n②防御 82%上昇する\n③部隊消費コストを2低下させる(重複不可)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 49% / 攻撃 82%上昇+防御 82%上昇+部隊消費コスト 2低下(重複不可)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-17登録。カード画像が無いためixanary.com(cards/1983)とixawiki.com(BushoCard/1983細川ガラシャ)の生HTML2ソースのみで作成した。imageFull/imageCharはnull。",
+  "cost/lv0Troops/rankGrades/atkBase・atkGrowth/tacticsBase・tacticsGrowth/defGrowthは両ソース一致。defBaseのみixanary=1180・ixawiki=1130で食い違ったためnullにした(今回の割当20体のうち17体で発生している系統的な食い違い)。",
+  "悲運ノ宝珠はLV1(確率21%攻撃防御44%上昇・部隊消費コスト2低下・特殊効果は模倣重複不可)の内容が両ソースで一致したため、ixanary.comのLV10データ(確率49%攻撃防御82%上昇)をskillDetail/trTableに採用した。",
+  "reviewedOkはfalseのまま。カード画像による4隅バッジ・スキルパネル照合が未実施のため黄丸化はできない。"
+ ]
+}

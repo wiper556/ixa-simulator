@@ -1,0 +1,43 @@
+{
+ "name": "浅井くす",
+ "no": "3128",
+ "ch": null,
+ "cost": 2,
+ "troop": "全攻速",
+ "sub": "",
+ "effect": "全攻 5%上昇+全速 25%上昇",
+ "furigana": "あざいくす",
+ "illustrator": "葉山えいし",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 640,
+ "atkGrowth": 17,
+ "defBase": 620,
+ "defGrowth": 15,
+ "tacticsBase": 350.0,
+ "tacticsGrowth": 1.0,
+ "lv0Troops": 2050,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "B",
+  "uma": "A",
+  "ki": "C"
+ },
+ "initialSkill": "萌黄恋華",
+ "skillDetail": "C/LV10 確率 100% 攻撃 5%上昇+速度 25%上昇/対象:全\n①攻撃 5%上昇する\n②速度 25%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 攻撃 5%上昇+速度 25%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当I)。カード画像が無いため ixanary.com(cards/3128, skills/萌黄恋華)と ixawiki.com(index.php?BushoCard/3128浅井くす, Busho/武将スキル)の生HTML2ソースを突き合わせて登録した。",
+  "統率(槍B/弓B/馬A/器C)・コスト2.0・指揮兵数2050・攻撃640/17・兵法350.0/1.0・ふりがな・イラストレーターはixanary.comとixawiki.comの2ソースで完全一致した。",
+  "初期スキル「萌黄恋華」[C]はixanary.com(skills/萌黄恋華)のLV10行(確率+100%/対象全/攻撃5%上昇+速度25%上昇)とixawiki.com(Busho/武将スキル)のマスター一覧LV10行(確率+100%/全攻5%上昇/全速25%上昇)で完全一致し、両ソースの武将対応リストにも3128浅井くすが掲載されていることを確認した。",
+  "【既知バグを検出・ixawiki値を採用】ixanary.comのdefBaseは640(=atkBaseと同値)だったが、ixawiki.comは独立に620(atkBaseと異なる値)を示しており、ixanaryの「防御が攻撃と同じ値になる」既知バグに該当すると判断してixawiki側の620を採用した(nullにはしていない)。防御成長値15は両ソースで一致。",
+  "カード画像が無いためimageFull/imageCharはnull、synthesisTableは付けず、reviewedOkはfalseのまま。章(ch)は両ソースとも記載が無くnullとした。"
+ ]
+}

@@ -1,0 +1,41 @@
+{
+ "name": "村松殿",
+ "no": "2994",
+ "ch": null,
+ "cost": 2,
+ "troop": "槍弓器防",
+ "sub": "",
+ "effect": "防御 32%上昇(自拠点防御時は防御効果2倍)",
+ "furigana": "むらまつどの",
+ "illustrator": "cuboon",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 950,
+ "atkGrowth": 26,
+ "defBase": 990,
+ "defGrowth": 27,
+ "tacticsBase": 500,
+ "tacticsGrowth": 2,
+ "lv0Troops": 2500,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "慈愛の花",
+ "skillDetail": "B/LV10 確率 40% 防御 32%上昇/対象:槍・弓・器\n①防御 32%上昇する\n②自拠点防御時は防御効果が2倍になる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・弓・器　確率 40% / 防御 32%上昇(自拠点防御時は防御効果2倍)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録。カード画像が無いためixanaryとixawikiの一致だけで入れた(rankGradesは両ソース完全一致)。synthesisTableは今回のバッチでは付けていない。",
+  "atkBase/defBase(950/990)・成長値・兵法・コスト・指揮兵数は両ソース完全一致で対立なし。",
+  "スキル『慈愛の花』はixanaryがLV1(確率+18%/防御12%上昇)とLV10(確率+40%/防御32%上昇)を明示。ixawikiの基本ステータス表の値はixanaryのLV1と一致していたため、今回のバッチで頻発した『ixawikiの表がLV1のまま』パターンと判断し、ixanaryの明示的なLV10値を採用した。"
+ ]
+}

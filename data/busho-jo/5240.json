@@ -1,0 +1,43 @@
+{
+ "name": "武田元繁",
+ "no": "5240",
+ "ch": null,
+ "cost": 2,
+ "troop": "馬防",
+ "sub": "",
+ "effect": "馬防10%上昇",
+ "furigana": "たけだもとしげ",
+ "illustrator": "びよ",
+ "imageFull": "assets/img/characters/no5240_full.png",
+ "imageChar": "assets/img/characters/no5240_char.png",
+ "atkBase": 470,
+ "atkGrowth": 16,
+ "defBase": 510,
+ "defGrowth": 18,
+ "tacticsBase": 410.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 1820,
+ "rankGrades": {
+  "yari": "D",
+  "yumi": "D",
+  "uma": "C",
+  "ki": "D"
+ },
+ "initialSkill": "騎馬隊堅守",
+ "skillDetail": "F/LV10 確率 20% 馬防 10%上昇/対象:馬\n①馬防 10%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "馬　確率 20% / 馬防 10%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当L)。カード画像(スキルLV10形式)から。武将名「武田元繁」/ 序 / コスト2 / 統率 槍D・弓D・馬C・器D(4隅バッジをズームして確認) / 初期値 攻撃470・防御510・兵法410.0 / 指揮兵数0/1820 / カードNo.5240一致 / 初期スキル「騎馬隊堅守 LV10」[F] 確率+20%・対象 馬・馬防10%上昇 / Illust びよ。",
+  "成長値(攻+16/防+18/兵法+2)とfurigana・illustratorはixanary.com/cards/5240の埋め込みJSONと一致確認済み。ただしixanaryの埋め込みJSONは yumi:C / kiba:D となっており、カード画像の4隅バッジ実物(弓D・馬C)と食い違っていた。BRIEFの指示どおりカード画像の実物を優先し、rankGradesはカード画像基準(槍D・弓D・馬C・器D)で登録した。",
+  "Fランクのためdata/skill/ページの新規作成対象外。章は情報源に記載が無く未確認のためnull。No.5240はBRIEFの注記どおりixawikiの武将カード一覧にまだ載っていない可能性があり、個別ページ・一覧ページとも確認できなかった(いずれも編集画面が返る)ため名前の（N）判定材料が無く無印とした。synthesisTableは今回のバッチでは付けない指示のため未作成。"
+ ],
+ "wikiOldestComment": null,
+ "wikiCommentCount": 0
+}

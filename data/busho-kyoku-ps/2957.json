@@ -1,0 +1,41 @@
+{
+ "name": "前田慶次（3）",
+ "no": "2957",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "全攻防",
+ "sub": "",
+ "effect": "攻撃 40%上昇+防御 40%上昇",
+ "furigana": "まえだけいじ",
+ "illustrator": "塚本陽子",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 950,
+ "atkGrowth": 40,
+ "defBase": 950,
+ "defGrowth": 40,
+ "tacticsBase": 380.0,
+ "tacticsGrowth": 1.5,
+ "lv0Troops": 2940,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "B",
+  "uma": "S",
+  "ki": "B"
+ },
+ "initialSkill": "傾奇御免状",
+ "skillDetail": "A/LV10 確率 35% 攻撃 40%上昇+防御 40%上昇/対象:全\n①攻撃 40%上昇する\n②防御 40%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 35% / 攻撃 40%上昇+防御 40%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "カード画像が無いため ixanary.com(cards/2957, skills/傾奇御免状)と ixawiki.com(index.php?BushoCard/2957前田慶次, Busho/武将スキル)の生HTML2ソースを突き合わせて登録した。",
+  "コスト3.5・指揮兵数2940・統率(槍A/弓B/馬S/器B)・攻撃950/成長40・防御950/成長40・兵法380.0/成長1.5・ふりがな・イラストレーターは両ソース一致(攻撃防御とも950で同値だが両ソース独立に一致するため実値と判断)。初期スキル「傾奇御免状」[A]はixanary・ixawikiともLV10確率35%/攻撃防御とも40%上昇で一致。",
+  "カード画像が無いためimageFull/imageCharはnull、synthesisTableは付けず、reviewedOkはfalseのまま。章(ch)は両ソースとも記載が無くnullとした。"
+ ]
+}

@@ -1,0 +1,45 @@
+{
+ "name": "芳賀高武",
+ "no": "4316",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "弓防",
+ "sub": "",
+ "effect": "防御 16.25%上昇(武将のコストで変動)",
+ "furigana": "はがたかたけ",
+ "illustrator": "八崇",
+ "imageFull": "assets/img/characters/no4316_full.png",
+ "imageChar": "assets/img/characters/no4316_char.png",
+ "atkBase": 550,
+ "atkGrowth": 15,
+ "defBase": 660,
+ "defGrowth": 20,
+ "tacticsBase": 490.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 2300,
+ "rankGrades": {
+  "yari": "C",
+  "yumi": "B",
+  "uma": "C",
+  "ki": "C"
+ },
+ "initialSkill": "弓隊守護",
+ "skillDetail": "E/LV10 確率 25% 防御 16.25%上昇/対象:弓\n①防御 16.25%上昇する(武将のコストで効果が変化する)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓　確率 25% / 防御 16.25%上昇(武将のコストで変動)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当E)。カード画像(スキルLV10形式)から。武将名「芳賀高武」/ 職業「防」/ 極・覇表記なし / コスト2.5 / 統率 槍C・弓B・馬C・器C(4隅を個別にズームして確認) / 初期値 攻撃550・防御660・兵法490.0 / 指揮兵数 0/2300 / カードNo.4316 / 初期スキル「弓隊守護 LV10」[E] 確率+25%・対象 弓・弓防:16.25%上昇(武将のコストで効果が変化します) / Illust 八崇。",
+  "成長値(攻撃+15・防御+20・兵法+2)はixanary.com/cards/4316とカード画像で一致。ixawiki.com(BushoCard/4316芳賀高武)は未作成ページ(編集画面が返るのみ)のため参照できず、標準2ソースのうちixanary+カード画像の2点確認に留まる。",
+  "ixanary.comのスキル説明欄はLV10で「弓防：13%上昇」と表示されていたが、これはコスト2.0基準の汎用値。同じ弓隊守護を持つNo.4280(コスト2.0)のカードもLV10で13%であり、本カードはコスト2.5のため13%×(2.5/2.0)=16.25%となる。カード画像実物の表示(16.25%)を実際の値として採用した。",
+  "初期スキルはEランクでdata/skill/ページの新規作成対象外。",
+  "章(ch)はixanaryに記載が無く判断材料が無いためnullのまま。"
+ ],
+ "wikiOldestComment": null,
+ "wikiCommentCount": null
+}

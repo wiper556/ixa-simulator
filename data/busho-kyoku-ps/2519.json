@@ -1,0 +1,43 @@
+{
+ "name": "早川殿",
+ "no": "2519",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "全防",
+ "sub": "",
+ "effect": "防御 69%上昇(卓越:追加確率10%で防御効果が2倍)",
+ "furigana": "はやかわどの",
+ "illustrator": "木下月乃",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 980,
+ "atkGrowth": 30,
+ "defBase": 1040,
+ "defGrowth": 36,
+ "tacticsBase": 520,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3550,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "赤鳥ノ妖舞",
+ "skillDetail": "A/LV10 確率 100% 防御 69%上昇/対象:全\n①防御 69%上昇する\n②卓越:追加確率10%で防御効果が2倍になる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 防御 69%上昇(卓越:追加確率10%で防御効果が2倍)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18新規登録(担当C・カード画像なし)。ixanary.com/cards/2519とixawiki.com(index.php?BushoCard/2519早川殿)の生HTML2ソースで全項目が一致することを確認した(画像照合は無し)。",
+  "武将名: ixawiki一覧は無印の「早川殿」表記。既存の早川殿（1）（2）とは別の表記だが、ixawiki一覧が区別していないためassign_C.txtの指示通り無印で登録した。要再検討(申し送り事項)。",
+  "ixawikiページに「※「武将イラスト人気ランキング2019」姫部門・4位受賞により復刻」の記載があり実質復刻カード。",
+  "コスト3.5・指揮兵数3550(★0-0)・成長値+30/+36/+2.5・ふりがな・絵師(木下月乃)は2ソースで完全一致。統率(槍S/弓A/馬A/器A)も2ソース一致。",
+  "章はixanary/ixawikiいずれのカードページにも記載が無く未確認。"
+ ]
+}

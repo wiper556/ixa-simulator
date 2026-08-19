@@ -1,0 +1,40 @@
+{
+ "name": "片倉重長",
+ "no": "2182",
+ "ch": null,
+ "cost": 3,
+ "troop": "馬砲器攻破",
+ "sub": "",
+ "effect": "攻撃 42%上昇+破壊 20%上昇",
+ "furigana": "かたくらしげなが",
+ "illustrator": "小森ニコ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 940,
+ "atkGrowth": 30,
+ "defBase": 900,
+ "defGrowth": 27,
+ "tacticsBase": 480,
+ "tacticsGrowth": 2,
+ "lv0Troops": 3100,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "B",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "鬼小十郎",
+ "skillDetail": "B/LV10 確率 28% 攻撃 42%上昇+破壊 20%上昇/対象:馬・砲・器\n①攻撃 42%上昇する\n②破壊 20%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "馬・砲・器　確率 28% / 攻撃 42%上昇+破壊 20%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当B)。カード画像が無いため imageFull/imageChar は null。ixanary.com(cards/2182)の埋め込みJSONとixawiki.com(index.php?BushoCard/2182片倉重長)の生HTMLで、コスト/指揮兵数/攻撃防御兵法の初期値成長値/兵科ランク(槍B弓B馬A器S)/イラストレーター(小森ニコ)/スキルLV1数値(確率+11%/攻撃14%上昇/破壊6.5%上昇)が完全一致することを確認して登録した。LV10の数値(確率28%/攻撃42%上昇/破壊20%上昇)はixanaryのカードページに明記。",
+  "章(ch)は両ソースとも記載が無いため未確認。synthesisTableは今回付けていない。"
+ ]
+}

@@ -1,0 +1,41 @@
+{
+ "name": "帰蝶",
+ "no": "2987",
+ "ch": null,
+ "cost": 2,
+ "troop": "弓焙防",
+ "sub": "",
+ "effect": "防御 (自部隊内姫武将数×20%)上昇(自拠点でのみ発動し姫武将にのみ効果あり)",
+ "furigana": "きちょう",
+ "illustrator": "らくちー",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 960,
+ "atkGrowth": 26,
+ "defBase": 1000,
+ "defGrowth": 28,
+ "tacticsBase": 490,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 2480,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "防陣 千万",
+ "skillDetail": "A/LV10 確率 24% 防御 (自部隊内姫武将数×20%)上昇/対象:弓・焙\n①防御が(自部隊内姫武将数×20%)上昇する(自拠点でのみ発動し姫武将にのみ効果あり)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓・焙　確率 24% / 防御 (自部隊内姫武将数×20%)上昇(自拠点でのみ発動し姫武将にのみ効果あり)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録。カード画像が無いためixanaryとixawikiの一致だけで入れた(rankGradesは両ソース完全一致)。synthesisTableは今回のバッチでは付けていない。",
+  "atkBase/defBase(960/1000)・成長値・兵法・コスト・指揮兵数は両ソース完全一致で対立なし。",
+  "スキル『防陣 千万』はixanaryがLV1(確率+7%/防御(自部隊内姫武将数×5%)上昇)とLV10(確率+24%/防御(自部隊内姫武将数×20%)上昇)を明示。ixawikiの基本ステータス表の値はixanaryのLV1と一致していたため、今回のバッチで頻発した『ixawikiの表がLV1のまま』パターンと判断し、ixanaryの明示的なLV10値を採用した。"
+ ]
+}

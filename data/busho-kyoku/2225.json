@@ -1,0 +1,43 @@
+{
+ "name": "玉鶴姫（2）",
+ "no": "2225",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "全防",
+ "sub": "",
+ "effect": "防御 44%上昇",
+ "furigana": "たまつるひめ",
+ "illustrator": "DeeCHA",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 960,
+ "atkGrowth": 26,
+ "defBase": 980,
+ "defGrowth": 27,
+ "tacticsBase": 500,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3000,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "山刀懐剣",
+ "skillDetail": "B/LV10 確率 34% 防御 44%上昇/対象:全\n①防御 44%上昇する\n②自領以外への加勢で効果が1.5倍になる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 34% / 防御 44%上昇(自領以外への加勢で効果1.5倍)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当D)。カード画像が無いためixanary.com(cards/2225)とixawiki.com(index.php?BushoCard/2225玉鶴姫、末尾の(2)無し表記でNo.2225と一致確認)の生HTML突き合わせのみで登録した。",
+  "コスト2.5・指揮兵数3000・攻撃力960(+26)・防御力980(+27)・兵法500(+2.5)・イラストレーターDeeCHA・スキルLV1/LV10の数値は両ソースで完全一致。",
+  "名前の（2）はassign_D.txtの表記(ixawiki一覧の武将カード一覧表記)に従い、半角(2)を全角（2）に変換して登録した。",
+  "rankGrades(槍A/弓A/馬A/器A)はixawikiのみ出典(ixanaryにテキスト情報無し)。",
+  "章(ch)は両ソースに記載が無く未確認のためnull。"
+ ]
+}

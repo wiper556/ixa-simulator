@@ -1,0 +1,44 @@
+{
+ "name": "小少将-復刻-",
+ "no": "2523",
+ "ch": null,
+ "cost": 3,
+ "troop": "全防",
+ "sub": "",
+ "effect": "防御 54%上昇(自拠点防御時は防御効果2倍)",
+ "furigana": "こしょうしょう",
+ "illustrator": "鏑木康隆",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 970,
+ "atkGrowth": 28,
+ "defBase": 1070,
+ "defGrowth": 35,
+ "tacticsBase": 480,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3270,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "傾国ノ魅姫",
+ "skillDetail": "A/LV10 確率 60% 防御 54%上昇/対象:全\n①防御 54%上昇する\n②自拠点防御時は防御効果が2倍になる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 60% / 防御 54%上昇(自拠点防御時は防御効果2倍)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18新規登録(担当C・カード画像なし)。ixanary.com/cards/2523とixawiki.com(index.php?BushoCard/2523小少将)の生HTML2ソースで全項目が一致することを確認した(画像照合は無し)。",
+  "武将名: ixawiki一覧は無印の「小少将」表記。既存の無印「小少将」(No.2204)と同名重複になるが、ixawiki一覧が区別していないためassign_C.txtの指示通り無印で登録した。要再検討(申し送り事項)。",
+  "ixawikiページに「※「武将イラスト人気ランキング2019」姫部門・2位受賞により復刻」の記載があり実質復刻カード。",
+  "コスト3・指揮兵数3270(★0-0)・成長値+28/+35/+2.5・ふりがな・絵師(鏑木康隆)は2ソースで完全一致。統率(槍A/弓A/馬A/器A)も2ソース一致。",
+  "章はixanary/ixawikiいずれのカードページにも記載が無く未確認。",
+  "2026-08-18訂正: assets/js/ixa-data.js(シミュ側)に既にNo.2523の暫定登録(2026-08-10カード画像・「小少将-復刻-」)があるのを監査ツール(tools/audit_characters.py)で発見。rankGrades(槍A/弓A/馬A/器A)・基礎値・成長値が今回の登録と完全一致していたため、名前はそちらに合わせて「小少将-復刻-」に訂正した(元は一覧表記通りの「小少将」で登録していた)。"
+ ]
+}

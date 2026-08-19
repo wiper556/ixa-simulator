@@ -1,0 +1,51 @@
+{
+ "name": "里見義弘",
+ "no": "1183",
+ "ch": "21章",
+ "cost": 2,
+ "troop": "砲器防",
+ "sub": "卓越",
+ "effect": "砲/器指揮時、防御90%上昇(卓越で最大2.5倍)",
+ "furigana": "さとみよしひろ",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1183_full.png",
+ "imageChar": "assets/img/characters/no1183_char.png",
+ "atkBase": 1050,
+ "atkGrowth": 33,
+ "defBase": 1160,
+ "defGrowth": 57,
+ "tacticsBase": 620.0,
+ "tacticsGrowth": 3.0,
+ "lv0Troops": 3300,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "海帝ノ波銛",
+ "skillDetail": "S/LV10 確率 100% 防御 90%上昇/対象:砲器\n①防御 90%上昇する\n②卓越時に防御効果を強化する(追加確率30%・2.5倍)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "砲器　確率 100% / 防御 90%上昇(卓越:追加確率30%で2.5倍)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録。カード画像(スキルLV10形式)から名前/コスト/攻防兵法/指揮兵数/統率4隅バッジ/スキル名と効果文を読み取った。",
+  "統率バッジはカード画像を8倍拡大して4隅個別に確認: 槍A/馬A/弓A/器S。",
+  "初期スキル名はカード画像で「海帝ノ波括」に見えたが、ixanary.com(skills/海帝ノ波銛)・ixawiki.com(BushoCard/1183里見義弘)の生HTML両方が「海帝ノ波銛」としており、フォント判読より生テキストに従い「銛」を採用した。",
+  "要申し送り: ixawiki.com(BushoCard/1183里見義弘)の初期値攻撃力は1150となっていたが、カード画像実測(1050)と一致しない。防御1160・兵法620.0は一致。カード画像の数値(1050)を優先して採用した(要再確認)。",
+  "成長値(攻33/防57/兵法3.0)・furigana・illustratorはixawiki.com(BushoCard/1183里見義弘)の生HTMLで確認。TR段階は無く LV1/LV10 の2段のみ(ixanary.comで確認、LV10防御90%上昇はカード画像と一致)。",
+  "名前は一覧表記に番号が無く無印だったためixawiki.com(Busho/武将カード一覧)の天セクション表記「里見義弘」のまま無印とした。",
+  "初期スキル海帝ノ波銛はSランクだがdata/skill/海帝ノ波銛.jsonが未作成(要対応、本担当ではページ新規作成はしない)。",
+  "章(ch)は情報源で確認できず未確認のためnull。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2021-02-05",
+ "wikiCommentCount": 44,
+ "chGuess": "21章",
+ "chSource": "wikiOldestComment"
+}

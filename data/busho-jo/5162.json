@@ -1,0 +1,46 @@
+{
+ "name": "小出吉親",
+ "no": "5162",
+ "ch": "14章",
+ "cost": 2,
+ "troop": "槍馬攻",
+ "sub": "",
+ "effect": "槍馬攻20%上昇",
+ "furigana": "こいでよしちか",
+ "illustrator": "双羽純",
+ "imageFull": "assets/img/characters/no5162_full.png",
+ "imageChar": "assets/img/characters/no5162_char.png",
+ "atkBase": 470,
+ "atkGrowth": 18,
+ "defBase": 460,
+ "defGrowth": 15,
+ "tacticsBase": 400.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 1650,
+ "rankGrades": {
+  "yari": "C",
+  "yumi": "D",
+  "uma": "B",
+  "ki": "D"
+ },
+ "initialSkill": "勝男武士",
+ "skillDetail": "E/LV10 確率 10% 槍馬攻 20%上昇/対象:槍馬\n①槍馬攻 20%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍馬　確率 10% / 槍馬攻 20%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当D)。序レアリティ新規登録。カード画像(スキルLV10形式)から。武将名「小出吉親」/ 序 / コスト2 / 統率 槍C・弓D・馬B・器D(4隅アイコンをズームして確認) / 初期値 攻撃470・防御460・兵法400.0 / 指揮兵数0/1650 / カードNo.5162一致 / 初期スキル「勝男武士 LV10」[E] 確率+10%・対象 槍馬・槍馬攻20%上昇 / Illust 双羽純。",
+  "成長値(攻+18/防+15/兵法+2)・furigana・illustratorはixanary.com/cards/5162の生HTML(埋め込みJSON)と完全一致。統率もixanary記載(yari C/yumi D/kiba B/heiki D)とカード画像が一致。",
+  "初期スキルはEランクのためdata/skill/ページの新規作成対象外(A以下は自動作成禁止)。章(ch)は情報源に記載なく未確認のためnull。synthesisTableは今回付けない(BRIEF指示)。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2017-07-06",
+ "wikiCommentCount": 20,
+ "chGuess": "14章",
+ "chSource": "wikiOldestComment"
+}

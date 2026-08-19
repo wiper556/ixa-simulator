@@ -1,0 +1,42 @@
+{
+ "name": "飯富虎昌",
+ "no": "2116",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "槍馬攻",
+ "sub": "",
+ "effect": "槍・馬部隊の攻撃力上昇",
+ "furigana": "おぶとらまさ",
+ "illustrator": "タケダサナ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 690,
+ "atkGrowth": 19,
+ "defBase": 680,
+ "defGrowth": 15,
+ "tacticsBase": 470,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3080,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "D",
+  "uma": "S",
+  "ki": "B"
+ },
+ "initialSkill": "赤備猛虎",
+ "skillDetail": "B/LV10 確率 30% 攻撃 35%上昇/対象:槍・馬\n①攻撃 35%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・馬　確率 30% / 攻撃 35%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-17登録。カード画像が無いためixanary.comとixawiki.comの生HTML突き合わせのみで登録した。",
+  "基礎値/成長値/コスト/指揮兵数(3080)/rankGrades(槍A・弓D・馬S・器B)/イラストレーター(タケダサナ)はixanary.com(cards/2116)とixawiki.com(BushoCard/2116飯富虎昌)の両方で完全一致。",
+  "skillDetail/trTableはixanary.com/skills/赤備猛虎のLV10表記(確率+30%/対象槍馬/攻撃35%上昇)を採用。LV1値(確率+17%/攻撃17%上昇)がixawikiの基本ステータス表と一致。",
+  "章(ch)は両ソースに記載なく未確認。"
+ ]
+}

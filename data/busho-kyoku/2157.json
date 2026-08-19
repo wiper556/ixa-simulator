@@ -1,0 +1,39 @@
+{
+ "name": "上杉景勝（2）",
+ "no": "2157",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "弓馬砲攻速",
+ "sub": "",
+ "effect": "弓・馬・砲部隊の攻撃・速度上昇",
+ "furigana": "うえすぎかげかつ",
+ "illustrator": "オンダカツキ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 800,
+ "atkGrowth": 21,
+ "defBase": 740,
+ "defGrowth": 19,
+ "tacticsBase": 500.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3280,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "義龍双乱撃",
+ "skillDetail": "B/LV10 確率 100% 攻撃 15%上昇 速度 27%上昇/対象:弓・馬・砲\n①攻撃 15%上昇する\n②速度 27%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓・馬・砲　確率 100% / 攻撃 15%上昇+速度 27%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "カード画像が無いためimageFull/imageChar は null。ixanary.com(cards/2157)とixawiki.com(BushoCard/2157上杉景勝)を突き合わせて登録した。基本ステータス・ランク・スキル数値とも両ソースで一致。"
+ ]
+}

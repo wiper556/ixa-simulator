@@ -1,0 +1,43 @@
+{
+ "name": "大谷吉継",
+ "no": "3037",
+ "ch": null,
+ "cost": 2,
+ "troop": "弓器防",
+ "sub": "",
+ "effect": "防御 30%上昇",
+ "furigana": "おおたによしつぐ",
+ "illustrator": "オンダカツキ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 620,
+ "atkGrowth": 15,
+ "defBase": 620,
+ "defGrowth": 15,
+ "tacticsBase": 490.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 2010,
+ "rankGrades": {
+  "yari": "D",
+  "yumi": "B",
+  "uma": "E",
+  "ki": "A"
+ },
+ "initialSkill": "土壁の術",
+ "skillDetail": "D/LV10 確率 15% 防御 30%上昇/対象:弓・器\n①防御 30%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓・器　確率 15% / 防御 30%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当D)。カード画像が無いためixanary.com(cards/3037)とixawiki.com(index.php?BushoCard/3037大谷吉継, Busho/武将カード一覧)の生HTML2ソースを突き合わせて登録した。",
+  "統率(D/B/E/A)・コスト2・指揮兵数2010・攻撃620/15・防御620/15・兵法490.0/2・ふりがな・初期スキル「土壁の術」[D]はixanary.comとixawiki.comの2ソースで一致することを確認した(不一致箇所は個別に注記)。",
+  "攻撃初期値620・防御初期値620が完全に同値だが、ixanary.comとixawiki.comの2ソースが独立に一致しているため実際の値と判断した(攻撃防御同値バグの誤登録ではない)。",
+  "ixanary.com/ixawiki.comのカードページ本文に復刻を示す記載は無く(「全ての戦国くじから入手不可能」の一般的な注記のみ)、コメント欄の「復刻しないかな」はユーザー投稿のため採用せず、名前に-復刻-は付けなかった。",
+  "カード画像が無いためimageFull/imageCharはnull、synthesisTableは付けない。reviewedOkはfalseのまま。章(ch)は両ソースとも記載が無くnullとした。"
+ ]
+}

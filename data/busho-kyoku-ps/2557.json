@@ -1,0 +1,41 @@
+{
+ "name": "淀",
+ "no": "2557",
+ "ch": null,
+ "cost": 4,
+ "troop": "全防",
+ "sub": "",
+ "effect": "防御(7×自軍「姫」武将数)%上昇(効果上限1000%)",
+ "furigana": "よど",
+ "illustrator": "碧風羽",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1060,
+ "atkGrowth": 42,
+ "defBase": 1090,
+ "defGrowth": 55,
+ "tacticsBase": 530,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 4180,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "神勅烈母",
+ "skillDetail": "S/LV10 確率 50% 防御 (7×自軍「姫」武将数)%上昇/対象:全\n①防御を7×自軍「姫」武将数で上昇する(効果上限1000%)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 50% / 防御 7%×自軍「姫」武将数=上昇(効果上限1000%)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "カード画像が無いため ixanary.com/cards/2557 と ixawiki.com(BushoCard/2557淀)の生HTML2ソースで確認した。",
+  "コスト4・指揮4180・初期値1060/1090/530・成長値+42/+55/+2.5・兵科ランク(槍A・弓A・馬A・器S)・絵師碧風羽・スキル名対象確率効果(LV10 確率50%/防御(7×自軍「姫」武将数)%上昇/効果上限1000%)が両ソース完全一致。",
+  "章はixanary.com・ixawiki.comのカードページに記載が無いためnull。"
+ ]
+}

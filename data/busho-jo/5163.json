@@ -1,0 +1,47 @@
+{
+ "name": "堀尾茂助",
+ "no": "5163",
+ "ch": "14章",
+ "cost": 2,
+ "troop": "馬防",
+ "sub": "",
+ "effect": "馬防(コストx5)%上昇",
+ "furigana": "ほりおもすけ",
+ "illustrator": "ホマ蔵",
+ "imageFull": "assets/img/characters/no5163_full.png",
+ "imageChar": "assets/img/characters/no5163_char.png",
+ "atkBase": 450,
+ "atkGrowth": 16,
+ "defBase": 480,
+ "defGrowth": 17,
+ "tacticsBase": 410.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 1700,
+ "rankGrades": {
+  "yari": "E",
+  "yumi": "D",
+  "uma": "C",
+  "ki": "C"
+ },
+ "initialSkill": "騎馬隊守備",
+ "skillDetail": "F/LV10 確率 16% 馬防 コストx5=10%上昇/対象:馬\n①馬防 コストx5=10%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "馬　確率 16% / 馬防 コスト×5=10%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当D)。序レアリティ新規登録。カード画像(スキルLV10形式)から。武将名「堀尾茂助」/ 序 / コスト2 / 統率 槍E・弓D・馬C・器C(4隅アイコンをズームして確認) / 初期値 攻撃450・防御480・兵法410.0 / 指揮兵数0/1700 / カードNo.5163一致 / 初期スキル「騎馬隊守備 LV10」[F] 確率+16%・対象 馬・馬防10%上昇(カード画像表示、武将のコストで効果が変化する旨の注記あり) / Illust ホマ蔵。",
+  "成長値(攻+16/防+17/兵法+2)・furigana・illustratorはixanary.com/cards/5163の生HTMLと完全一致。統率も一致。スキル効果はixanaryの説明文に「防御：（コストx5）%上昇」と明記されており、本カードのコスト2をあてはめるとコストx5=10%上昇でカード画像の表示(10%上昇)と一致することを確認した。",
+  "初期スキルはFランクのためdata/skill/ページの新規作成対象外。章(ch)は情報源に記載なく未確認のためnull。synthesisTableは今回付けない(BRIEF指示)。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。",
+  "2026-08-16: コストで効果が変わるスキルの書き方を「計算式=結果」に揃えた(担当ごとに注記の有無・文言が割れていたため)。"
+ ],
+ "wikiOldestComment": "2017-08-04",
+ "wikiCommentCount": 14,
+ "chGuess": "14章",
+ "chSource": "wikiOldestComment"
+}

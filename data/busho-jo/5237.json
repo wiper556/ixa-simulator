@@ -1,0 +1,45 @@
+{
+ "name": "原昌胤",
+ "no": "5237",
+ "ch": null,
+ "cost": 1.5,
+ "troop": "槍攻",
+ "sub": "",
+ "effect": "槍攻 コスト×6.5=9.75%上昇",
+ "furigana": "はらまさたね",
+ "illustrator": "影由",
+ "imageFull": "assets/img/characters/no5237_full.png",
+ "imageChar": "assets/img/characters/no5237_char.png",
+ "atkBase": 490,
+ "atkGrowth": 18,
+ "defBase": 470,
+ "defGrowth": 17,
+ "tacticsBase": 410.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 1290,
+ "rankGrades": {
+  "yari": "C",
+  "yumi": "D",
+  "uma": "D",
+  "ki": "D"
+ },
+ "initialSkill": "槍隊挟撃",
+ "skillDetail": "E/LV10 確率 25% 槍攻 9.75%上昇/対象:槍\n①槍攻 9.75%上昇する(武将のコストで効果が変化)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍　確率 25% / 槍攻 コスト×6.5=9.75%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当L)。カード画像(スキルLV10形式)から。武将名「原昌胤」/ 序 / コスト1.5 / 統率 槍C・弓D・馬D・器D(4隅バッジをズームして確認) / 初期値 攻撃490・防御470・兵法410.0 / 指揮兵数0/1290 / カードNo.5237一致 / 初期スキル「槍隊扶撃 LV10」[E] 確率+25%・対象 槍・槍攻9.75%上昇(武将のコストで効果が変化します) / Illust 影由。",
+  "成長値(攻+18/防+17/兵法+2)とrankGrades・furigana・illustratorはixanary.com/cards/5237の埋め込みJSONと一致確認済み。Eランクのためdata/skill/ページの新規作成対象外。",
+  "章は情報源に記載が無く未確認のためnull。ixawikiの個別ページ・一覧ページとも未確認(序レアリティの一覧が存在しない)のため名前の（N）判定材料が無く無印とした。synthesisTableは今回のバッチでは付けない指示のため未作成。",
+  "2026-08-16: 初期スキル名を「槍隊扶撃」から「槍隊挟撃」に直した。カードの小さい崩し字を読み違えたもので、ixanary のカードページの表記と、同型スキル11件の書き方に合わせた。",
+  "2026-08-16: コストで効果が変わるスキルの書き方を「計算式=結果」に揃えた(担当ごとに注記の有無・文言が割れていたため)。"
+ ],
+ "wikiOldestComment": null,
+ "wikiCommentCount": 0
+}

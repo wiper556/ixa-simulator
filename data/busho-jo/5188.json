@@ -1,0 +1,46 @@
+{
+ "name": "おゑん",
+ "no": "5188",
+ "ch": "18章",
+ "cost": 2,
+ "troop": "弓防",
+ "sub": "",
+ "effect": "弓防15%上昇",
+ "furigana": "おゑん",
+ "illustrator": "ちゃきん",
+ "imageFull": "assets/img/characters/no5188_full.png",
+ "imageChar": "assets/img/characters/no5188_char.png",
+ "atkBase": 450,
+ "atkGrowth": 14,
+ "defBase": 490,
+ "defGrowth": 18,
+ "tacticsBase": 400.0,
+ "tacticsGrowth": 1.5,
+ "lv0Troops": 1700,
+ "rankGrades": {
+  "yari": "D",
+  "yumi": "C",
+  "uma": "D",
+  "ki": "D"
+ },
+ "initialSkill": "弓隊備え",
+ "skillDetail": "F/LV10 確率 10% 弓防 15%上昇/対象:弓\n①弓防 15%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓　確率 10% / 弓防 15%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当F)。カード画像(スキルLV10形式)から。武将名「おゑん」/ 序 / コスト2 / 統率 槍D・弓C・馬D・器D(バッジ拡大確認) / 初期値 攻撃450・防御490・兵法400.0 / 指揮兵数0/1700 / カードNo.5188一致 / 初期スキル「弓隊備え LV10」[F] 確率+10%・対象 弓・弓防15%上昇 / Illust ちゃきん。",
+  "カード名は「おえん」でなく歴史的仮名の「おゑん」(カード右の縦書き名を拡大確認、ゑの字形で判別)。ixanary.com/cards/5188のタイトルも「おゑん」で一致。同ページの成長の歩みテーブルで成長値(攻+14/防+18/兵法+1.5)、illustrator埋め込みデータで「ちゃきん」(ちゃぁきんではない)を確認。",
+  "章は情報源に記載が無く未確認のためnull。初期スキルはFランクのためdata/skill/ページの新規作成対象外。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2019-10-02",
+ "wikiCommentCount": 18,
+ "chGuess": "18章",
+ "chSource": "wikiOldestComment"
+}

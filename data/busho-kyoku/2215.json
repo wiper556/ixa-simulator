@@ -1,0 +1,43 @@
+{
+ "name": "南陽院",
+ "no": "2215",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "全攻防",
+ "sub": "",
+ "effect": "攻撃 44%上昇+防御 44%上昇",
+ "furigana": "なんよういん",
+ "illustrator": "ミヤジマハル",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 990,
+ "atkGrowth": 27,
+ "defBase": 990,
+ "defGrowth": 27,
+ "tacticsBase": 500,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3400,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "忌火",
+ "skillDetail": "B/LV10 確率 100% 攻撃 44%上昇+防御 44%上昇/対象:全\n①攻撃 44%上昇する\n②防御 44%上昇する\n③部隊内姫武将スキル発動率+15%する(特殊効果は部隊内重複不可)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 攻撃 44%上昇+防御 44%上昇(部隊内姫武将スキル発動率+15%・特殊効果は部隊内重複不可)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当D)。カード画像が無いためixanary.com(cards/2215)とixawiki.com(index.php?BushoCard/2215南陽院)の生HTML突き合わせのみで登録した。",
+  "コスト3.5・指揮兵数3400・攻撃力990(+27)・防御力990(+27、両ソース独立に同値のため攻防同値カードと判断し疑わない)・兵法500(+2.5)・イラストレーターミヤジマハルは両ソース一致。",
+  "【情報源の食い違い】LV10の防御上昇率について、ixanary=44%上昇、ixawiki=16%上昇(LV1の値と同じ)。ixawikiのLV1行・LV10行を見比べると防御の項目だけLV1と全く同じ16%のままで、攻撃(16%→44%)・確率(+100%→+100%)・部隊内姫武将スキル発動率(+2%→+15%)は他項目すべて正しく変化しているため、ixawiki側がLV10行の防御セルをLV1のまま更新し忘れた誤記の可能性が高いと判断した。同種の事例(data/skill/ぶんどる.jsonの notes、ixawikiがLV10欄にLV1の値を転記した誤りと判定した前例)に倣い、内部整合性のあるixanaryの44%を採用した。どちらのソースにも軍配を上げるべきでない対等な食い違いとして報告する。",
+  "rankGrades(槍A/弓A/馬A/器A)はixawikiのみ出典(ixanaryにテキスト情報無し)。",
+  "章(ch)は両ソースに記載が無く未確認のためnull。"
+ ]
+}

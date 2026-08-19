@@ -1,0 +1,25 @@
+{
+ "name": "天鬼怒髪",
+ "rank": "S",
+ "baseRate": 30,
+ "target": "槍・馬",
+ "effectSummary": "S/LV10 確率 30% 攻撃 55%上昇/対象:槍・馬\n①攻撃 55%上昇する",
+ "categoryLinks": [],
+ "sourceCharacters": [
+  {
+   "name": "柴田勝家",
+   "no": "1062",
+   "slot": "移植不可"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・馬　確率 30% / 攻撃 55%上昇"
+  }
+ ],
+ "notes": [
+  "A-3-9「武将自身の初期スキル(S以上)は無条件にページを作る」により2026-08-16に一括作成。内容は data/busho/1062.json の skillDetail / trTable からの転記で、新しい事実は持ち込んでいない。"
+ ]
+}

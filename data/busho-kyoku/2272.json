@@ -1,0 +1,41 @@
+{
+ "name": "仁科盛信",
+ "no": "2272",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "弓砲攻",
+ "sub": "",
+ "effect": "攻撃上昇(部隊の総コストで変動)",
+ "furigana": "にしなもりのぶ",
+ "illustrator": "平坂康也",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1060,
+ "atkGrowth": 40,
+ "defBase": 990,
+ "defGrowth": 32,
+ "tacticsBase": null,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3520,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "S",
+  "uma": "B",
+  "ki": "A"
+ },
+ "initialSkill": "花吹雪",
+ "skillDetail": "B/LV10 確率 34% 攻撃 (部隊の総コスト÷16)の6乗×25+15%上昇/対象:弓・砲\n①攻撃 (部隊の総コスト÷16)の6乗×25+15%上昇する(部隊の総コストで変化)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓・砲　確率 34% / 攻撃 (部隊の総コスト÷16)の6乗×25+15%上昇(部隊の総コストで変化)"
+  }
+ ],
+ "notes": [
+  "2026-08-18登録(担当G)。カード画像が無いためixanary.com(cards/2272)生HTMLとixawiki.com(index.php?BushoCard/2272仁科盛信)生HTMLの2ソースを突き合わせて登録した。",
+  "兵法(intelligence)初期値がixanaryは490・ixawikiは460.0で食い違ったためtacticsBaseはnullにした。攻撃・防御の初期値/成長値・cost3.5・lv0Troops3520・rankGrades(槍A/弓S/馬B/器A)・illustrator平坂康也は両ソースで完全一致。",
+  "スキル「花吹雪」はLV10確率34%で両ソース一致。効果の数式(部隊コスト^6/16^6×25+15%)も両ソース一致するが計算結果の表示値がixanaryは「18.04%上昇」・ixawikiは「15%上昇」で食い違った(ixawikiの15%は同系統の部隊総コスト依存スキルNo.2286/2288でも両ソースが一致して示す基準値と同じ)。どちらかを勝たせず数式のみ記載し具体的な%は載せなかった。"
+ ],
+ "reviewedOk": false
+}

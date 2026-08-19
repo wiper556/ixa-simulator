@@ -1,0 +1,41 @@
+{
+ "name": "柳生石舟斎",
+ "no": "2007",
+ "ch": null,
+ "cost": 2,
+ "troop": "将防",
+ "sub": "",
+ "effect": "剣豪(将)の防御が上昇",
+ "furigana": "やぎゅうせきしゅうさい",
+ "illustrator": "能條純一",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 965,
+ "atkGrowth": 50,
+ "defBase": 975,
+ "defGrowth": 50,
+ "tacticsBase": 370,
+ "tacticsGrowth": 1,
+ "lv0Troops": 1080,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "C",
+  "uma": "B",
+  "ki": "C"
+ },
+ "initialSkill": "柳生新陰流",
+ "skillDetail": "A/LV10 確率 55% 防御 40%上昇/対象:将\n①防御 40%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "将　確率 55% / 防御 40%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "カード画像が無いため imageFull/imageChar は null。ixanary.comの埋め込みJSON(cards/2007)とixawiki.com(BushoCard/2007)の基本ステータス表・スキル表を突き合わせて登録した。"
+ ],
+ "wikiOldestComment": "2018-12-06",
+ "wikiCommentCount": 14
+}

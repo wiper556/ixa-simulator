@@ -1,0 +1,42 @@
+{
+ "name": "山県昌景（2）",
+ "no": "2060",
+ "ch": null,
+ "cost": 3,
+ "troop": "槍弓馬攻",
+ "sub": "",
+ "effect": "槍・弓・馬兵の攻撃力上昇",
+ "furigana": "やまがたまさかげ",
+ "illustrator": "小林元",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 740,
+ "atkGrowth": 17,
+ "defBase": 720,
+ "defGrowth": 17,
+ "tacticsBase": 420,
+ "tacticsGrowth": 2,
+ "lv0Troops": 2890,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "B",
+  "uma": "S",
+  "ki": "D"
+ },
+ "initialSkill": "紅蓮赤備",
+ "skillDetail": "B/LV10 確率 30% 攻撃 25%上昇/対象:槍・弓・馬\n①攻撃 25%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・弓・馬　確率 30% / 攻撃 25%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-17登録(担当F)。カード画像が無いためixanary.com(cards/2060)とixawiki.com(index.php?BushoCard/2060山県昌景)の生HTML突き合わせのみで登録した。",
+  "名前の（2）はassign_F.txtに記載のixawiki武将カード一覧表記「山県昌景(2)」に従い全角化した。ixanary/ixawiki個別ページ側は無印「山県昌景」表記だが、一覧表記を優先する既定ルールに従った。",
+  "コスト3・指揮兵数2890・統率(槍A/弓B/馬S/器D)・攻撃力740(+17)・防御力720(+17)・兵法420(+2)は両ソースで完全一致。LV10(確率30%/攻撃25%上昇)はixawikiに記載が無くixanary単独の値。",
+  "章(ch)は両ソースとも記載が無く未確認のためnull。イラストレーター小林元は両ソース一致。"
+ ]
+}

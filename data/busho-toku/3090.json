@@ -1,0 +1,40 @@
+{
+ "name": "毛利勝永（2）",
+ "no": "3090",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "槍弓砲防",
+ "sub": "",
+ "effect": "防御 30%上昇",
+ "furigana": "もうりかつなが",
+ "illustrator": "7rada",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 690,
+ "atkGrowth": 15,
+ "defBase": 720,
+ "defGrowth": 17,
+ "tacticsBase": 400.0,
+ "tacticsGrowth": 1.5,
+ "lv0Troops": 2500,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "B",
+  "uma": "B",
+  "ki": "B"
+ },
+ "initialSkill": "霧雨の念",
+ "skillDetail": "D/LV10 確率 15% 防御 30%上昇/対象:槍・弓・砲\n①防御 30%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・弓・砲　確率 15% / 防御 30%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当G)。カード画像なし。ixanary.com/cards/3090の生HTML埋め込みJSONとixawiki.com(BushoCard/3090毛利勝永)の基本ステータス表を突き合わせ、統率(槍/弓/馬/器)・コスト・指揮兵数・攻撃/防御/兵法の初期値と成長値・イラストレーター・スキル名/効果(LV1・LV10)が全項目で一致することを確認した。",
+  "章(ch)はixanary・ixawikiのどちらにも実装章の記載がなく未確認のためnull。rankGradesは2ソース一致のため採用(食い違いなし)。"
+ ]
+}

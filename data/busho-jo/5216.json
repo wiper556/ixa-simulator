@@ -1,0 +1,44 @@
+{
+ "name": "浦上宗景",
+ "no": "5216",
+ "ch": null,
+ "cost": 1.5,
+ "troop": "弓防",
+ "sub": "",
+ "effect": "弓防15%上昇",
+ "furigana": "うらがみむねかげ",
+ "illustrator": "まっつん！",
+ "imageFull": "assets/img/characters/no5216_full.png",
+ "imageChar": "assets/img/characters/no5216_char.png",
+ "atkBase": 470,
+ "atkGrowth": 15,
+ "defBase": 480,
+ "defGrowth": 18,
+ "tacticsBase": 410.0,
+ "tacticsGrowth": 1.5,
+ "lv0Troops": 1400,
+ "rankGrades": {
+  "yari": "D",
+  "yumi": "C",
+  "uma": "D",
+  "ki": "D"
+ },
+ "initialSkill": "弓隊備え",
+ "skillDetail": "F/LV10 確率 10% 弓防 15%上昇/対象:弓\n①弓防 15%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓　確率 10% / 弓防 15%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当J)。カード画像(スキルLV10形式)から。武将名「浦上宗景」/ 序 / コスト1.5 / 統率 槍D・弓C・馬D・器D(4隅アイコンを個別にズームして確認) / 初期値 攻撃470・防御480・兵法410.0 / 指揮兵数0/1400 / カードNo.5216一致 / 初期スキル「弓隊備え LV10」[F] 確率+10%・対象 弓・弓防15%上昇 / Illust まっつん！。",
+  "成長値(攻+15/防+18/兵法+1.5)・furigana・illustrator・統率はixanary.com/cards/5216の生HTML埋め込みJSONおよびixawiki.comのBushoCard/5216ページと完全一致。ixawiki側のスキル要約欄は確率+5%/弓防10%上昇でLV1相当の値と見られ矛盾するがカードのLV10表示を採用した。",
+  "章は両ソースとも記載が無く未確認のためnull。初期スキルはFランクのためdata/skill/ページの新規作成対象外。synthesisTableは今回の指示により付けていない。"
+ ],
+ "wikiOldestComment": "2022-02-10",
+ "wikiCommentCount": 2,
+ "chGuess": "22-23章"
+}

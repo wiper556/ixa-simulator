@@ -1,0 +1,43 @@
+{
+ "name": "黒田官兵衛（4）",
+ "no": "2950",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "弓馬砲器攻",
+ "sub": "",
+ "effect": "攻撃 (25+ランク×7)%上昇(武将ランクで効果が変化)",
+ "furigana": "くろだかんべえ",
+ "illustrator": "正子公也",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1020,
+ "atkGrowth": 28,
+ "defBase": 970,
+ "defGrowth": 24,
+ "tacticsBase": 530.0,
+ "tacticsGrowth": 3.0,
+ "lv0Troops": 3500,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "気鋭ノ謀臣",
+ "skillDetail": "B/LV10 確率 34% 攻撃 (25+ランク×7)%上昇/対象:弓馬砲器\n①攻撃が(25+ランク×7)%上昇する(武将ランクで効果が変化)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓馬砲器　確率 34% / 攻撃 (25+ランク×7)%上昇(武将ランクで効果が変化)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当J)。カード画像が無いため ixanary.com(cards/2950, skills/気鋭ノ謀臣)と ixawiki.com(index.php?BushoCard/2950黒田官兵衛, Busho/武将スキル)の生HTML2ソースを突き合わせて登録した。",
+  "統率(槍A/弓A/馬A/器S)・コスト3.5・指揮兵数3500・攻撃1020/28・防御970/24・兵法530.0/3.0・ふりがな・イラストレーターはixanary.comとixawiki.comの2ソースで一致することを確認した(不一致箇所は個別に注記)。",
+  "初期スキル「気鋭ノ謀臣」[B]はixanary.com(skills/気鋭ノ謀臣)のLV10行とixawiki.com(Busho/武将スキル)のマスター一覧LV10行の2ソースで確認した(不一致箇所は個別に注記)。",
+  "【食い違い】LV10の攻撃上昇値がixanary.com=120%(固定値)、ixawiki.com(武将スキル一覧)=(25+ランク×7)%(計算式・限界突破時の実測範囲34〜67%と付記)。ixanary.comの120%は式の取りうる範囲を大きく超えており、他の武将(2947清水宗治)でも同様のランク依存スキルでixanary.com側が実測と食い違う例があったため、ixawiki.comの計算式側を採用した。",
+  "カード画像が無いためimageFull/imageCharはnull、synthesisTableは付けず、reviewedOkはfalseのまま。章(ch)は両ソースとも記載が無くnullとした。"
+ ]
+}

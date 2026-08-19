@@ -1,0 +1,43 @@
+{
+ "name": "出雲阿国",
+ "no": "3068",
+ "ch": null,
+ "cost": 2,
+ "troop": "全攻速",
+ "sub": "",
+ "effect": "攻撃 5%上昇+速度 32%上昇",
+ "furigana": "いずものおくに",
+ "illustrator": "ミヤジマハル",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 670,
+ "atkGrowth": 17,
+ "defBase": null,
+ "defGrowth": 15,
+ "tacticsBase": 300.0,
+ "tacticsGrowth": 1.5,
+ "lv0Troops": 2100,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "D",
+  "uma": "B",
+  "ki": "C"
+ },
+ "initialSkill": "歌舞伎乱舞",
+ "skillDetail": "B/LV10 確率 100% 攻撃 5%上昇 速度 32%上昇/対象:全\n①攻撃 5%上昇する\n②速度 32%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 攻撃 5%上昇+速度 32%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当F)。カード画像なし。ixanary.com/cards/3068の生HTML埋め込みJSONとixawiki.com(BushoCard/3068出雲阿国)の基本ステータス表・武将スキル一覧ページ(Busho/武将スキル)のスキル効果テーブルを突き合わせ、統率(槍/弓/馬/器)・コスト・指揮兵数・攻撃初期値/防御成長値/兵法初期値と成長値・イラストレーター・スキル名/効果(LV1・LV10)が一致することを確認した(防御初期値とふりがなは下記のとおり食い違い)。",
+  "章(ch)はixanary・ixawikiのどちらにも実装章の記載がなく未確認のためnull。",
+  "rankGradesは2ソース一致のため採用(食い違いなし)。",
+  "防御初期値(defBase)はixanaryが670(攻撃と同値=既知の破損パターン)、ixawikiが620で食い違ったためnullにした。defGrowthは両ソース一致(15)のため採用。",
+  "furigana(ふりがな)はixanaryが「いづものおくに」、ixawikiが「いずものおくに」で「づ」「ず」表記のみ食い違った(発音は同一)。現代仮名遣いのixawiki側「いずものおくに」を採用した。"
+ ]
+}

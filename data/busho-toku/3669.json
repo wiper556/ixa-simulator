@@ -1,0 +1,45 @@
+{
+ "name": "小笠原長時",
+ "no": "3669",
+ "ch": null,
+ "cost": 3,
+ "troop": "弓砲器攻",
+ "sub": "",
+ "effect": "攻撃 480%上昇(合流攻撃時は確率100%で発動)",
+ "furigana": "おがさわらながとき",
+ "illustrator": "小城崇志",
+ "imageFull": "assets/img/characters/no3669_full.png",
+ "imageChar": "assets/img/characters/no3669_char.png",
+ "atkBase": 950,
+ "atkGrowth": 35,
+ "defBase": 860,
+ "defGrowth": 27,
+ "tacticsBase": 450.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 3100,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "A",
+  "uma": "C",
+  "ki": "B"
+ },
+ "initialSkill": "小笠原流弓術",
+ "skillDetail": "C/LV10 確率 20% 攻撃 480%上昇/対象:弓・砲・器\n①攻撃 480%上昇する\n②合流攻撃時は確率100%で発動する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓・砲・器　確率 20% / 攻撃 480%上昇(合流攻撃時は確率100%で発動)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当D)。カード画像(スキルLV10形式)から。武将名「小笠原長時」/ふりがな「おがさわらながとき」/カード左上バナーは赤字で「特」/コスト3/統率 槍B・弓C・馬A・器B(4隅バッジ)/攻撃950・防御860・兵法450.0/指揮兵数0/3100/カードNo.3669/スキル「小笠原流弓術LV10」[C] 確率+20%・対象 弓/砲/器・攻撃480%上昇・合流攻撃時は必ずスキル発動/Illust 小城崇志。",
+  "成長値(攻撃+35/防御+27/兵法+2)・イラストレーター・ステータス初期値・指揮兵数はixanary.com/cards/3669の生HTML埋め込みJSONとカード画像が完全一致。",
+  "注意: ixanary.com/cards/3669の生HTML埋め込みJSON中のrarityフィールドは「極」となっていたが、同じHTML内のレアリティ表示アイコン画像は`rarity/toku.png`(特のアイコン)であり、カード画像自体も左上バナーが赤字「特」で表示されている。カード画像とレアリティアイコンの2点が一致し「特」の方が正しいと判断、ixanaryのrarityテキストフィールド側の入力ミスとみなしてdata/busho-tokuに登録した。",
+  "章はixanary.com/cards/3669に記載が無く未確認のためnullのまま。",
+  "2026-08-16: 統率の弓と馬が入れ替わっていたので直した。バッジの並びは 左上=槍 / 右上=馬 / 左下=弓 / 右下=器(うぐさんがゲーム内で確認)。照合担当がカード画像を8倍に拡大して1枚ずつ確かめた結果。**ixanary は根拠にしていない**(埋め込みJSONの yumi/kiba がカード実物と食い違うカードが実在し、体系的な法則も無い)。"
+ ],
+ "wikiOldestComment": null,
+ "wikiCommentCount": null
+}

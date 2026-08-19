@@ -1,0 +1,41 @@
+{
+ "name": "立花道雪（3）",
+ "no": "2340",
+ "ch": null,
+ "cost": 4,
+ "troop": "弓馬器焙攻",
+ "sub": "飛翔4",
+ "effect": "攻撃 94%上昇(飛翔4・卓越で2倍+飛翔9獲得)",
+ "furigana": "たちばなどうせつ",
+ "illustrator": "BISAI",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1110,
+ "atkGrowth": 45,
+ "defBase": 1050,
+ "defGrowth": 32,
+ "tacticsBase": 520,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3910,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "S",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "神威采配",
+ "skillDetail": "A/LV10 確率 50% 攻撃 94%上昇/対象:弓・馬・器・焙　飛翔4\n①攻撃 94%上昇する\n②飛翔4を持つ\n③攻撃戦闘時卓越:追加確率40%で攻撃効果が2倍となりかつ飛翔9を得る(飛翔獲得部分のみ模倣不可)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓・馬・器・焙 飛翔4　確率 50% / 攻撃 94%上昇(卓越:追加確率40%で2倍+飛翔9獲得)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当J・第2波・カード画像なし)。ixanary.com(cards/2340)生HTMLとixawiki.com(index.php?BushoCard/2340立花道雪、およびBusho/武将カード一覧(極))の2ソースでコスト/指揮兵数/統率ランク/攻撃防御兵法の初期値成長値/スキル効果(LV1・LV10)が完全一致することを確認して登録した。",
+  "名前の（3）はixawiki武将カード一覧(極)の表記「立花道雪(3)」に従った。",
+  "ixanaryのカードデータには部隊スキル「攻:傾国の双璧」の記載があるが、本サイトのschemaに部隊スキル欄が無いため未収録(既存カードの登録方針に合わせた)。"
+ ]
+}

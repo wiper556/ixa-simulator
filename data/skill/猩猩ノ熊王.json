@@ -1,0 +1,25 @@
+{
+ "name": "猩猩ノ熊王",
+ "rank": "S",
+ "baseRate": 26,
+ "target": "槍・弓",
+ "effectSummary": "S/LV10 確率 26% 攻撃 55%上昇/対象:槍・弓\n①攻撃 55%上昇する\n②破壊 20%上昇する",
+ "categoryLinks": [],
+ "sourceCharacters": [
+  {
+   "name": "龍造寺隆信",
+   "no": "1061",
+   "slot": "移植不可"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・弓　確率 26% / 攻撃 55%上昇+破壊 20%上昇"
+  }
+ ],
+ "notes": [
+  "A-3-9「武将自身の初期スキル(S以上)は無条件にページを作る」により2026-08-16に一括作成。内容は data/busho/1061.json の skillDetail / trTable からの転記で、新しい事実は持ち込んでいない。"
+ ]
+}

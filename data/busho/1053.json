@@ -1,0 +1,48 @@
+{
+ "name": "前田利家",
+ "no": "1053",
+ "ch": "10章",
+ "cost": 1.5,
+ "troop": "槍馬攻速",
+ "sub": "",
+ "effect": "槍・馬部隊の攻撃・速度上昇(単独出陣時は速度10倍)",
+ "furigana": "まえだとしいえ",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1053_full.png",
+ "imageChar": "assets/img/characters/no1053_char.png",
+ "atkBase": 920,
+ "atkGrowth": 60,
+ "defBase": 800,
+ "defGrowth": 45,
+ "tacticsBase": 500.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 2100,
+ "rankGrades": {
+  "yari": "SS",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "D"
+ },
+ "initialSkill": "焔槍雷戟",
+ "skillDetail": "S/LV10 確率 100% 攻撃 20%上昇/対象:槍馬\n①攻撃 20%上昇する\n②速度 45%上昇する\n③単独出陣時は速度効果が10倍となる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍馬　確率 100% / 攻撃 20%上昇+速度 45%上昇(単独出陣時は速度効果10倍)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録。カード画像(スキルLV10形式)から作成。統率バッジ4隅を8倍拡大して再確認: 槍SS/弓A/馬A/器D。",
+  "ステータス初期値920/800/500.0・成長値+60/+45/+2.5・cost1.5・lv0Troops2100はixanary.com(cards/1053)の埋め込みデータとixawiki.com(Busho/武将カード一覧(天))の該当行が完全一致。",
+  "武将名の表記はixawiki.com(Busho/武将カード一覧(天))でNo.1053が無印「前田利家」であることを確認したためそのまま無印とした。",
+  "初期スキル「焔槍雷戟」はSランクだがdata/skill/焔槍雷戟.jsonが未作成(要フォロー、報告のみ)。",
+  "章は情報源に記載が無く未確認。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2015-05-19",
+ "wikiCommentCount": 369,
+ "chGuess": "10章",
+ "chSource": "wikiOldestComment"
+}

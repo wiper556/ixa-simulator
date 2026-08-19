@@ -1,0 +1,39 @@
+{
+ "name": "毛利勝永",
+ "no": "2410",
+ "ch": null,
+ "cost": 4,
+ "troop": "槍馬器防速",
+ "sub": "",
+ "effect": "防御 50%上昇+速度 50%上昇",
+ "furigana": "もうりかつなが",
+ "illustrator": "正子公也",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1000,
+ "atkGrowth": 27,
+ "defBase": 1020,
+ "defGrowth": 32,
+ "tacticsBase": 520,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3730,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "B",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "絶界進軍",
+ "skillDetail": "A/LV10 確率 100% 防御 50%上昇 速度 50%上昇/対象:槍・馬・器\n①防御 50%上昇する\n②速度 50%上昇する\n③加勢出陣時は速度効果が10倍になる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・馬・器　確率 100% / 防御 50%上昇+速度 50%上昇(加勢出陣時は速度効果10倍)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "カード画像が無いため imageFull/imageChar は null。ixanary.comの埋め込みJSON(cards/2410)とixawiki.com(BushoCard/2410毛利勝永)の基本ステータス表・スキル表を突き合わせて登録した。"
+ ]
+}

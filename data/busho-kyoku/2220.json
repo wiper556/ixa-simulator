@@ -1,0 +1,43 @@
+{
+ "name": "成松信勝",
+ "no": "2220",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "槍砲器攻",
+ "sub": "",
+ "effect": "攻撃 ((1+ランク)xコストx1.7)%上昇",
+ "furigana": "なりまつのぶかつ",
+ "illustrator": "Natto-7",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1040,
+ "atkGrowth": 28,
+ "defBase": 990,
+ "defGrowth": 26,
+ "tacticsBase": 490,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 3440,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "B",
+  "ki": "A"
+ },
+ "initialSkill": "火将ノ熊手",
+ "skillDetail": "B/LV10 確率 38% 攻撃 ((1+ランク)xコストx1.7)%上昇/対象:槍・砲・器\n①攻撃((1+ランク)xコストx1.7)%上昇する(武将ランクとコストで効果が変化)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・砲・器　確率 38% / 攻撃 ((1+ランク)xコストx1.7)%上昇(武将ランクとコストで効果が変化)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当D)。カード画像が無いためixanary.com(cards/2220)とixawiki.com(index.php?BushoCard/2220成松信勝)の生HTML突き合わせのみで登録した。",
+  "コスト3.5・指揮兵数3440・攻撃力1040(+28)・防御力990(+26)・兵法490(+2.0)・イラストレーターNatto-7で両ソース一致。",
+  "攻撃効果は武将ランクとコスト依存の「((1+ランク)xコストx1.7)%上昇」表記(ixanaryの原文ママ)。LV1側の式((1+ランク)xコストx0.7)でランク=0・コスト3.5とすると2.45%となり、ixawikiのLV1表記「2.45%上昇」と一致し検算できた。既存の同種スキル(busho-kyoku-ps/2437.jsonなど)の表記慣習に合わせ式のまま記載した。",
+  "rankGrades(槍S/弓A/馬B/器A)はixawikiのみ出典(ixanaryにテキスト情報無し)。",
+  "章(ch)は両ソースに記載が無く未確認のためnull。"
+ ]
+}

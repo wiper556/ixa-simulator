@@ -1,0 +1,39 @@
+{
+ "name": "松平信康（2）",
+ "no": "2250",
+ "ch": null,
+ "cost": 3,
+ "troop": "弓焙攻",
+ "sub": "",
+ "effect": "弓・焙兵の攻撃力上昇(武将のコストで効果が変化)",
+ "furigana": "まつだいらのぶやす",
+ "illustrator": "鹿角",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1040,
+ "atkGrowth": 31,
+ "defBase": 970,
+ "defGrowth": 27,
+ "tacticsBase": 520,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3220,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "S",
+  "uma": "B",
+  "ki": "A"
+ },
+ "initialSkill": "葵鬼狂刃",
+ "skillDetail": "B/LV10 確率 27% 攻撃 45%上昇/対象:弓・焙\n①攻撃 45%上昇する(武将のコストで効果が変化する)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓・焙　確率 27% / 攻撃 45%上昇(武将のコストで効果が変化)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-17登録(担当F)。カード画像が無いためixanary.com(cards/2250)とixawiki.com(index.php?BushoCard/2250松平信康)の生HTML突き合わせのみで登録した。"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "name": "太田道灌",
+ "no": "2707",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "槍弓馬攻破",
+ "sub": "",
+ "effect": "攻撃 30%上昇+破壊 10%上昇(確率20%)",
+ "furigana": "おおたどうかん",
+ "illustrator": "姉崎ダイナミック",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 730,
+ "atkGrowth": 17,
+ "defBase": 730,
+ "defGrowth": 17,
+ "tacticsBase": 460,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3230,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "A",
+  "uma": "S",
+  "ki": "D"
+ },
+ "initialSkill": "五山無双",
+ "skillDetail": "B/LV10 確率 20% 攻撃 30%上昇+破壊 10%上昇/対象:槍・弓・馬",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・弓・馬　確率 20% / 攻撃 30%上昇+破壊 10%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録。カード画像が無いためixanary.com(cards/2707)とixawiki.com(BushoCard/2707太田道灌)の生HTMLを突き合わせて一致した項目のみ登録した。基礎値/成長値/コスト/指揮兵数/統率ランク/初期スキルLV10の確率・効果値は両ソースで一致を確認済み。カード画像が無いためrankGradesは両ソース一致のみ採用しreviewedOkはfalseのまま。",
+  "ixawikiの基本ステータス表はLV1相当の確率+6%/攻撃18%上昇+破壊1%上昇の一段のみ表示だったため、LV10値はixanary.com(cards/2707)のLV10欄(確率20%/攻撃30%上昇+破壊10%上昇)を採用した。両ソースのLV1値は一致確認済み。"
+ ]
+}

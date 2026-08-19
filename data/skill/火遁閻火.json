@@ -1,0 +1,27 @@
+{
+ "name": "火遁閻火",
+ "rank": "S",
+ "baseRate": 100,
+ "target": "攻",
+ "noMimic": true,
+ "effectSummary": "S/LV10 確率 100% 対象:追加スキル\n模倣不可\n①このスキルを持つ武将カードは追加スキルの速度効果が2倍になる",
+ "categoryLinks": [],
+ "sourceCharacters": [
+  {
+   "name": "百地三太夫（3）",
+   "no": "2553",
+   "slot": "移植不可",
+   "db": "kyoku"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "追加スキル　確率 100% / 速度効果 2倍"
+  }
+ ],
+ "notes": [
+  "A-3-9「武将自身の初期スキル(S以上)は無条件にページを作る」により2026-08-16に一括作成。内容は data/busho-kyoku-ps/2553.json の skillDetail / trTable からの転記で、新しい事実は持ち込んでいない。"
+ ]
+}

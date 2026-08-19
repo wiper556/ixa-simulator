@@ -1,0 +1,46 @@
+{
+ "name": "由良成繁",
+ "no": "5160",
+ "ch": "13章",
+ "cost": 1.5,
+ "troop": "弓防",
+ "sub": "",
+ "effect": "弓防10%上昇",
+ "furigana": "ゆらなりしげ",
+ "illustrator": "双羽純",
+ "imageFull": "assets/img/characters/no5160_full.png",
+ "imageChar": "assets/img/characters/no5160_char.png",
+ "atkBase": 430,
+ "atkGrowth": 16,
+ "defBase": 480,
+ "defGrowth": 17,
+ "tacticsBase": 360.0,
+ "tacticsGrowth": 1.5,
+ "lv0Troops": 1300,
+ "rankGrades": {
+  "yari": "D",
+  "yumi": "B",
+  "uma": "D",
+  "ki": "C"
+ },
+ "initialSkill": "弓隊堅守",
+ "skillDetail": "F/LV10 確率 20% 弓防 10%上昇/対象:弓\n①弓防 10%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓　確率 20% / 弓防 10%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当C)。カード画像(スキルLV10形式)から。武将名「由良成繁」/序/コスト1.5/統率 槍D・弓B・馬D・器C(4隅を個別にズームして確認)/初期値 攻撃430・防御480・兵法360.0/指揮兵数0/1300/カードNo.5160一致/初期スキル「弓隊堅守LV10」[F] 確率+20%・対象 弓・弓防10%上昇/Illust:双羽純(カード画像は絵柄と重なり判読困難だったためixanary.com/cards/5160のテキストで裏取り)。",
+  "成長値(攻+16/防+17/兵法+1.5)はixanary.com/cards/5160の武将データ表、およびixawiki.com武将カード一覧(序)テーブルの両方で一致確認。ixawiki個別ページは未確認。",
+  "名前の(N)表記はixawiki武将カード一覧(序)テーブルで無印を確認。章はnull。初期スキルはFランクのためdata/skill/ページ作成対象外。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2017-04-26",
+ "wikiCommentCount": 5,
+ "chGuess": "13章",
+ "chSource": "wikiOldestComment"
+}

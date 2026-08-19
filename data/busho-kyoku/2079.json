@@ -1,0 +1,41 @@
+{
+ "name": "高橋紹運",
+ "no": "2079",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "弓馬砲防",
+ "sub": "",
+ "effect": "防御上昇",
+ "furigana": "たかはしじょううん",
+ "illustrator": "JUNNY",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 700,
+ "atkGrowth": 17,
+ "defBase": 770,
+ "defGrowth": 18,
+ "tacticsBase": 420,
+ "tacticsGrowth": 2,
+ "lv0Troops": 2550,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "武門の誇り",
+ "skillDetail": "B/LV10 確率 32% 防御 33%上昇/対象:弓・馬・砲\n①防御 33%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓・馬・砲　確率 32% / 防御 33%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-17登録。カード画像が無いため ixanary.com(cards/2079)と ixawiki.com(BushoCard/2079高橋紹運)の生HTML2ソースで確認した。",
+  "コスト/指揮兵数/攻撃防御兵法の初期値成長値/兵科ランク(槍B弓A馬A器A)/スキル名対象確率効果(LV10確率32%防御33%上昇対象弓馬砲)/イラストレーターが両ソース完全一致。",
+  "章(ch)は両ソースとも記載が無くnullのまま。カード画像自体が無いためimageFull/imageCharはnull、reviewedOkはfalseのまま(rankGrades等はテキスト情報の2ソース一致で登録)。"
+ ]
+}

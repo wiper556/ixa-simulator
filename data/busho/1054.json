@@ -1,0 +1,48 @@
+{
+ "name": "上杉景勝（2）",
+ "no": "1054",
+ "ch": "10章",
+ "cost": 2.5,
+ "troop": "弓馬砲防",
+ "sub": "",
+ "effect": "弓・馬・砲部隊の防御力上昇",
+ "furigana": "うえすぎかげかつ",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1054_full.png",
+ "imageChar": "assets/img/characters/no1054_char.png",
+ "atkBase": 650,
+ "atkGrowth": 16,
+ "defBase": 900,
+ "defGrowth": 20,
+ "tacticsBase": 480.0,
+ "tacticsGrowth": 3,
+ "lv0Troops": 3280,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "A",
+  "uma": "S",
+  "ki": "A"
+ },
+ "initialSkill": "天懸乱龍",
+ "skillDetail": "S/LV10 確率 15% 防御 55%上昇/対象:弓馬砲\n①防御 55%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓馬砲　確率 15% / 防御 55%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録。カード画像(スキルLV10形式)から作成。統率バッジ4隅を8倍拡大して再確認: 槍B/弓A/馬S/器A。",
+  "ステータス初期値650/900/480.0・成長値+16/+20/+3・cost2.5・lv0Troops3280はixanary.com(cards/1054)の埋め込みデータとixawiki.com(Busho/武将カード一覧(天))の該当行が完全一致。",
+  "武将名の（2）はixawiki.com(Busho/武将カード一覧(天))の表記「上杉景勝(2)」に従った。",
+  "初期スキル「天懸乱龍」はSランクだがdata/skill/天懸乱龍.jsonが未作成(要フォロー、報告のみ)。",
+  "章は情報源に記載が無く未確認。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2015-05-19",
+ "wikiCommentCount": 135,
+ "chGuess": "10章",
+ "chSource": "wikiOldestComment"
+}

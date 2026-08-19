@@ -1,0 +1,43 @@
+{
+ "name": "柳川調信",
+ "no": "5245",
+ "ch": null,
+ "cost": 1.5,
+ "troop": "砲防",
+ "sub": "",
+ "effect": "砲防15%上昇",
+ "furigana": "やながわしげのぶ",
+ "illustrator": "まっつん！",
+ "imageFull": "assets/img/characters/no5245_full.png",
+ "imageChar": "assets/img/characters/no5245_char.png",
+ "atkBase": 460,
+ "atkGrowth": 15,
+ "defBase": 520,
+ "defGrowth": 17,
+ "tacticsBase": 410.0,
+ "tacticsGrowth": 1.5,
+ "lv0Troops": 1300,
+ "rankGrades": {
+  "yari": "D",
+  "yumi": "D",
+  "uma": "D",
+  "ki": "C"
+ },
+ "initialSkill": "鉄砲隊備え",
+ "skillDetail": "F/LV10 確率 8% 砲防 15%上昇/対象:砲\n①砲防 15%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "砲　確率 8% / 砲防 15%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当M)。カード画像(スキルLV10形式)から。武将名「柳川調信」/ 序 / コスト1.5 / 統率 槍D・弓D・馬D・器C(4隅アイコンを個別にズームして確認) / 初期値 攻撃460・防御520・兵法410.0 / 指揮兵数0/1300 / カードNo.5245一致 / 初期スキル「鉄砲隊備え LV10」[F] 確率+8%・対象 砲・砲防15%上昇 / Illust まっつん！。",
+  "成長値(攻+15/防+17/兵法+1.5)はixanary.com/cards/5245の生HTMLと一致。Fランクのためdata/skill/ページ新規作成対象外。",
+  "ixawikiの当該武将ページは未作成(編集画面が返る)のため名前の（N）判定材料なし。無印とした。章は情報源に記載が無く未確認のためnull。"
+ ],
+ "wikiOldestComment": null,
+ "wikiCommentCount": 0
+}

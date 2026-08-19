@@ -1,0 +1,40 @@
+{
+ "name": "於大の方",
+ "no": "2198",
+ "ch": null,
+ "cost": 3,
+ "troop": "槍弓砲攻",
+ "sub": "",
+ "effect": "攻撃 50%上昇",
+ "furigana": "おだいのかた",
+ "illustrator": "小森ニコ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 960,
+ "atkGrowth": 26,
+ "defBase": 860,
+ "defGrowth": 24,
+ "tacticsBase": 500.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3140,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "S",
+  "uma": "A",
+  "ki": "B"
+ },
+ "initialSkill": "御母の神意",
+ "skillDetail": "B/LV10 確率 8% 攻撃 50%上昇/対象:槍・弓・砲\n①攻撃 50%上昇する\n②相手軍の武将数が20以上だと必ず発動する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・弓・砲　確率 8%(相手20武将以上で100%) / 攻撃 50%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-17登録。カード画像が無いためixanary.com(cards/2198)生HTMLとixawiki.com(index.php?BushoCard/2198於大の方)の2ソースで基本ステータス(コスト・指揮兵数・統率槍弓馬器・攻撃/防御/兵法の初期値と成長値・illustrator)が完全一致することを確認して登録した。",
+  "スキル数値(LV10確率8%/攻撃50%上昇/対象槍弓砲、相手軍武将数20以上で必ず発動の注記)はixanary.comのLV10欄から採用。ixawiki.comはLV1相当(確率4%/攻撃22%上昇)のみ掲載でLV10欄が無く、LV1部分同士は一致した(矛盾ではなく情報量の差)。"
+ ]
+}

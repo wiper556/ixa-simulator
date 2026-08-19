@@ -1,0 +1,40 @@
+{
+ "name": "前田慶次（2）",
+ "no": "3093",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "槍弓馬攻",
+ "sub": "",
+ "effect": "攻撃 20%上昇",
+ "furigana": "まえだけいじ",
+ "illustrator": "Cristian Penas",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 700,
+ "atkGrowth": 18,
+ "defBase": 700,
+ "defGrowth": 18,
+ "tacticsBase": 380.0,
+ "tacticsGrowth": 1.5,
+ "lv0Troops": 2350,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "B",
+  "uma": "A",
+  "ki": "D"
+ },
+ "initialSkill": "傾奇戦国一",
+ "skillDetail": "C/LV10 確率 30% 攻撃 20%上昇/対象:槍・弓・馬\n①攻撃 20%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・弓・馬　確率 30% / 攻撃 20%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当G)。カード画像なし。ixanary.com/cards/3093の生HTML埋め込みJSONとixawiki.com(BushoCard/3093前田慶次)の基本ステータス表を突き合わせ、統率(槍/弓/馬/器)・コスト・指揮兵数・攻撃/防御/兵法の初期値と成長値・イラストレーター・スキル名/効果(LV1・LV10)が全項目で一致することを確認した。",
+  "章(ch)はixanary・ixawikiのどちらにも実装章の記載がなく未確認のためnull。rankGradesは2ソース一致のため採用(食い違いなし)。"
+ ]
+}

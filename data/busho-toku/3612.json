@@ -1,0 +1,46 @@
+{
+ "name": "鬼庭良直",
+ "no": "3612",
+ "ch": "29章",
+ "cost": 2.5,
+ "troop": "馬砲器攻破",
+ "sub": "",
+ "effect": "攻撃85%上昇+破壊60%上昇(合流攻撃時、攻撃効果4倍)",
+ "furigana": "おににわよしなお",
+ "illustrator": "JUNNY",
+ "imageFull": "assets/img/characters/no3612_full.png",
+ "imageChar": "assets/img/characters/no3612_char.png",
+ "atkBase": 920,
+ "atkGrowth": 33,
+ "defBase": 850,
+ "defGrowth": 26,
+ "tacticsBase": 470.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 2670,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "C",
+  "uma": "A",
+  "ki": "B"
+ },
+ "initialSkill": "烈忠鋼陣",
+ "skillDetail": "C/LV10 確率 47% 攻撃 85%上昇+破壊 60%上昇/対象:馬・砲・器\n①攻撃 85%上昇する\n②破壊 60%上昇する\n③合流攻撃時は攻撃効果が4倍になる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "馬・砲・器　確率 47% / 攻撃 85%上昇+破壊 60%上昇(合流攻撃時、攻撃効果4倍)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当B)。カード画像(スキルLV10形式)から。武将名「鬼庭良直」/ふりがな「おににわよしなお」(画像は小さく「おにわよしなお」に見えたが、ixanary.com/cards/3612で「おににわよしなお」と確認して訂正)/特/コスト2.5/統率 槍B・弓C・馬A・器B(4隅を個別にズームして確認)/攻撃920・防御850・兵法470.0/指揮兵数0/2670/カードNo.3612(ファイル名と一致)/スキル「烈忠鋼陣LV10」[C] 確率:+47%・対象 馬/砲/器・攻撃:85%上昇・破壊:60%上昇・合流攻撃時攻撃効果4倍/Illust JUNNY。",
+  "成長値(攻撃+33/防御+26/兵法+2)はixanary.com/cards/3612のテキストで確認(カード画像に成長値の記載は無い)。同名カード(No.3242防:血路の殿、No.5001攻:槍隊進撃)が別にあるがどちらも今回の担当外。",
+  "章はixanary.com/cards/3612に記載が無く、未確認のため null。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2025-02-13",
+ "wikiCommentCount": 1,
+ "chGuess": "29章",
+ "chSource": "wikiOldestComment"
+}

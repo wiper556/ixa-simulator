@@ -1,0 +1,30 @@
+{
+ "name": "祥鳳",
+ "no": "2237",
+ "ch": null,
+ "cost": 3,
+ "troop": "槍馬器攻防破",
+ "sub": "",
+ "effect": "攻撃 62%上昇+防御 62%上昇+破壊 30%上昇",
+ "furigana": "しょうほう",
+ "illustrator": "DeeCHA",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 980, "atkGrowth": 28,
+ "defBase": 980, "defGrowth": 28,
+ "tacticsBase": 470, "tacticsGrowth": 2,
+ "lv0Troops": 3200,
+ "rankGrades": {"yari": "S", "yumi": "B", "uma": "A", "ki": "A"},
+ "initialSkill": "鳳来宮姫",
+ "skillDetail": "B/LV10 確率 22% 攻撃 62%上昇+防御 62%上昇+破壊 30%上昇/対象:槍・馬・器\n①攻撃 62%上昇する\n②防御 62%上昇する\n③破壊 30%上昇する",
+ "trTable": [
+  {"level": "LV10", "points": "-", "effect": "槍・馬・器　確率 22% / 攻撃 62%上昇+防御 62%上昇+破壊 30%上昇"}
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録。カード画像が無いためixanary.com(cards/2237)とixawiki.com(BushoCard/2237祥鳳)の一致のみで入れた。",
+  "基礎値・成長値・コスト・指揮兵数・統率(槍S弓B馬A器A)は両ソース一致。",
+  "初期スキル「鳳来宮姫」[B]はLV10確率22%・対象槍・馬・器・攻撃62%上昇+防御62%上昇+破壊30%上昇(両ソース一致)。",
+  "ixanary.comにこのカード専用の「部隊スキル」欄があり「防.戦姫艶舞」の記載があったが、サイトのテンプレートに対応項目が無いため未登録(申し送り)。"
+ ]
+}

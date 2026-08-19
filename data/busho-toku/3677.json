@@ -1,0 +1,44 @@
+{
+ "name": "斎藤利治",
+ "no": "3677",
+ "ch": null,
+ "cost": 3,
+ "troop": "馬砲器攻",
+ "sub": "",
+ "effect": "攻撃 480%上昇+速度 70%上昇(速度は確率100%)",
+ "furigana": "さいとうとしはる",
+ "illustrator": "トミダトモミ",
+ "imageFull": "assets/img/characters/no3677_full.png",
+ "imageChar": "assets/img/characters/no3677_char.png",
+ "atkBase": 950,
+ "atkGrowth": 35,
+ "defBase": 860,
+ "defGrowth": 27,
+ "tacticsBase": 460.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 3100,
+ "rankGrades": {
+  "yari": "C",
+  "yumi": "B",
+  "uma": "A",
+  "ki": "B"
+ },
+ "initialSkill": "螺子采配",
+ "skillDetail": "C/LV10 確率 40% 攻撃 480%上昇/対象:馬・砲・器\n①攻撃 480%上昇する\n②速度 70%上昇する(確率100%)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "馬・砲・器　確率 40% / 攻撃 480%上昇(速度 70%上昇は確率100%)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当D)。カード画像(スキルLV10形式)から。武将名「斎藤利治」/ふりがな「さいとうとしはる」/特/コスト3/統率 槍C・弓A・馬B・器B(4隅バッジ)/攻撃950・防御860・兵法460.0/指揮兵数0/3100/カードNo.3677/スキル「螺子采配LV10」[C] 対象 馬/砲/器・攻撃480%上昇 確率+40%・速度70%上昇 確率+100%/Illust トミダトモミ。",
+  "成長値(攻撃+35/防御+27/兵法+2)・イラストレーター・ステータス初期値・指揮兵数はixanary.com/cards/3677の生HTML埋め込みJSONとカード画像が完全一致。",
+  "章はixanary.com/cards/3677に記載が無く未確認のためnullのまま。",
+  "2026-08-16: 統率の弓と馬が入れ替わっていたので直した。バッジの並びは 左上=槍 / 右上=馬 / 左下=弓 / 右下=器(うぐさんがゲーム内で確認)。照合担当がカード画像を8倍に拡大して1枚ずつ確かめた結果。**ixanary は根拠にしていない**(埋め込みJSONの yumi/kiba がカード実物と食い違うカードが実在し、体系的な法則も無い)。"
+ ],
+ "wikiOldestComment": null,
+ "wikiCommentCount": null
+}

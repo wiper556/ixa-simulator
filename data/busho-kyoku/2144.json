@@ -1,0 +1,41 @@
+{
+ "name": "おまつ（2）",
+ "no": "2144",
+ "ch": null,
+ "cost": 1,
+ "troop": "槍弓防",
+ "sub": "",
+ "effect": "槍・弓部隊の防御力上昇(自領以外の加勢で効果2倍)",
+ "furigana": "おまつ",
+ "illustrator": "碧風羽",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 550,
+ "atkGrowth": 16,
+ "defBase": 670,
+ "defGrowth": 19,
+ "tacticsBase": 510,
+ "tacticsGrowth": 2,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "C",
+  "ki": "B"
+ },
+ "initialSkill": "援槍励檄",
+ "skillDetail": "B/LV10 確率 30% 防御 35%上昇/対象:槍・弓\n①防御 35%上昇する\n②自領以外への加勢時は効果が2倍になる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・弓　確率 30% / 防御 35%上昇(自領以外の加勢時効果2倍)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-17登録。カード画像が無いためixanary.com(cards/2144)とixawiki.com(BushoCard/2144おまつ)の生HTMLの一致だけで登録した。",
+  "基礎値/成長値/コスト/指揮兵数/rankGrades(槍S・弓A・馬C・器B)/イラストレーター/スキルLV1数値は両ソースで完全一致。LV10数値はixanary.comのみに記載(ixawikiはLV1のみ掲載)。",
+  "名前は割り当て表記「おまつ(2)」を全角括弧に変換して登録。",
+  "章(ch)は両ソースに記載が無く未確認のためnull。"
+ ]
+}

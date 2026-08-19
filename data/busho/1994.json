@@ -1,0 +1,43 @@
+{
+ "name": "明智光秀（2）【覇】",
+ "no": "1994",
+ "ch": null,
+ "cost": 3,
+ "troop": "馬砲器防",
+ "sub": "",
+ "effect": "対象兵科の防御が上昇、攻撃側の高コスト武将が多いほど効果増加",
+ "furigana": "あけちみつひで",
+ "illustrator": "直良有祐",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1200,
+ "atkGrowth": 40,
+ "defBase": null,
+ "defGrowth": 64,
+ "tacticsBase": 700,
+ "tacticsGrowth": 3.5,
+ "lv0Troops": 3620,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "S",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "凶天殺界",
+ "skillDetail": "SSS/LV10 確率 40% 防御 70%上昇/対象:馬・砲・器\n①防御 70%上昇する\n②攻撃側敵軍全武将のうちこの武将のコストを上回る武将コスト部分の総和×4%を防御効果に加算する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "馬・砲・器　確率 40% / 防御 70%上昇(攻撃側敵軍のコスト超過分総和×4%を加算)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "カード画像が無いため imageFull/imageChar は null。ixanary.comの埋め込みJSON(cards/1994)とixawiki.com(BushoCard/1994)の基本ステータス表・スキル表を突き合わせて登録した。",
+  "defBase(防御初期値)がixanaryでは1200(攻撃と同値)・ixawikiでは1250で食い違ったためnullにした。",
+  "ixawikiの武将カード一覧表記は「明智光秀(覇2)」で、既存の明智光秀-復刻-【覇】(No.1988)とは別カード。数字はixawiki表記の「2」をそのまま反映した。"
+ ],
+ "wikiOldestComment": "2021-01-15",
+ "wikiCommentCount": 59
+}

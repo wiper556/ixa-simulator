@@ -1,0 +1,49 @@
+{
+ "name": "豊臣秀頼（2）",
+ "no": "1196",
+ "ch": "22章",
+ "cost": 4,
+ "troop": "砲器防",
+ "sub": "",
+ "effect": "砲器指揮時、確率と防御効果の組み合わせを選択(最大防御240%上昇)",
+ "furigana": "とよとみひでより",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1196_full.png",
+ "imageChar": "assets/img/characters/no1196_char.png",
+ "atkBase": 1020,
+ "atkGrowth": 34,
+ "defBase": 1170,
+ "defGrowth": 60,
+ "tacticsBase": 630,
+ "tacticsGrowth": 3,
+ "lv0Troops": 4280,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "SS"
+ },
+ "initialSkill": "夢幻城回廊",
+ "skillDetail": "S/LV10 確率 70% 防御 124%上昇/対象:砲・器\n①確率 70%で防御 124%上昇する\n②確率 30%で防御 170%上昇する\n③確率 5%で防御 240%上昇する\n④発動確率と効果の組み合わせを選択できる(移動時は選択不可)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "砲・器　確率 70%/30%/5% / 防御 124%/170%/240%上昇(組み合わせ選択制・移動時は選択不可)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録。カード画像(スキルLV10形式・no1196_full.png)から作成。",
+  "カード画像は「確率:70% 防御:124%」と表示していたが、ixanary.com(cards/1196)生HTMLのスキルボックス本文は「攻撃:+124%」等と表記しており、対象・数値(70/30/5%、124/170/240%)は一致するのに攻撃/防御の表記だけ食い違っていた。同じ数値列がNo.1195(日本号 神哭、攻撃系)の本文と完全一致していたため、ixanary側が1195の本文を1196に誤って複製したテンプレートバグと判断し、カード画像どおり防御として登録した(要再確認)。",
+  "rankGrades(槍A/弓A/馬A/器SS)はカード画像バッジ4隅・ixanary.com card JSON・ixawiki.com「武将カード一覧(天)」表の3ソースで一致(この項目は数値と食い違っていない)。",
+  "名前の（2）はixawiki.com「武将カード一覧(天)」表の表記(豊臣秀頼(2))に従った。",
+  "初期スキル夢幻城回廊はSランクのためdata/skill/夢幻城回廊.jsonが必要だが未作成(このバッチでは作成禁止のため報告のみ)。",
+  "章は情報源に記載が無く未確認。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2021-08-13",
+ "wikiCommentCount": 48,
+ "chGuess": "22章",
+ "chSource": "wikiOldestComment"
+}

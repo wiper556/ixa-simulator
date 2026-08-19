@@ -35,26 +35,51 @@ TYPE1 = (466, 315)
 
 
 def find_heart(im, xlimit):
+    """ハート(概ね19x19・約94px)の左上を返す。
+
+    2026-08-16: **中央値で絞る方法は特カードで通用しない。** 特の枠は赤で、
+    ハートと同じ色域に入る。枠は縦に長いので候補の中央値がそちらへ引っ張られ、
+    7x31 という縦棒が「ハート」として返っていた(今日の119枚が全滅)。
+    赤い塊を連結成分に分け、**形がハートに一番近い塊**を選ぶ。
+    """
     px = im.convert("RGB").load()
     W, H = im.size
-    pts = []
+    red = set()
     for y in range(int(H * 0.55), H):
         for x in range(0, min(xlimit, W)):
             r, g, b = px[x, y]
             if abs(r - HEART[0]) <= TOL and abs(g - HEART[1]) <= TOL and abs(b - HEART[2]) <= TOL:
-                pts.append((x, y))
-    if not pts:
+                red.add((x, y))
+    if not red:
         return None, "ハートが見つからない"
-    xs = sorted(p[0] for p in pts); ys = sorted(p[1] for p in pts)
-    mx, my = xs[len(xs) // 2], ys[len(ys) // 2]
-    # 中央値から離れた孤立点を除外
-    pts = [(x, y) for x, y in pts if abs(x - mx) <= 15 and abs(y - my) <= 15]
-    if not pts:
-        return None, "孤立点除去後に候補が消えた"
-    minX = min(p[0] for p in pts); minY = min(p[1] for p in pts)
-    w = max(p[0] for p in pts) - minX + 1
-    h = max(p[1] for p in pts) - minY + 1
-    return (minX, minY, w, h, len(pts)), None
+
+    # 連結成分に分ける(8近傍)
+    best = None
+    seen = set()
+    for s in red:
+        if s in seen:
+            continue
+        stack, comp = [s], []
+        seen.add(s)
+        while stack:
+            cx, cy = stack.pop()
+            comp.append((cx, cy))
+            for dx in (-1, 0, 1):
+                for dy in (-1, 0, 1):
+                    n = (cx + dx, cy + dy)
+                    if n in red and n not in seen:
+                        seen.add(n)
+                        stack.append(n)
+        minX = min(p[0] for p in comp); minY = min(p[1] for p in comp)
+        w = max(p[0] for p in comp) - minX + 1
+        h = max(p[1] for p in comp) - minY + 1
+        # ハートらしさ: 19x19・94px からの離れ具合。縦棒(w<<h)は大きく外れる
+        score = abs(w - 19) + abs(h - 19) + abs(len(comp) - 94) / 10.0
+        if best is None or score < best[0]:
+            best = (score, minX, minY, w, h, len(comp))
+    if best is None:
+        return None, "赤い塊が1つも無い"
+    return (best[1], best[2], best[3], best[4], best[5]), None
 
 
 def crop_one(no, verbose=True):

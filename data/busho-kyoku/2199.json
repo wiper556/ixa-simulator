@@ -1,0 +1,40 @@
+{
+ "name": "井伊直孝",
+ "no": "2199",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "槍馬器攻破",
+ "sub": "",
+ "effect": "攻撃 39%上昇+破壊 30%上昇",
+ "furigana": "いいなおたか",
+ "illustrator": "士基軽太",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 970,
+ "atkGrowth": 27,
+ "defBase": 900,
+ "defGrowth": 24,
+ "tacticsBase": 470.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 3380,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "B",
+  "uma": "S",
+  "ki": "A"
+ },
+ "initialSkill": "乗り崩し赤牛",
+ "skillDetail": "B/LV10 確率 49% 攻撃 39%上昇+破壊 30%上昇/対象:槍・馬・器\n①攻撃 39%上昇する\n②破壊 30%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・馬・器　確率 49% / 攻撃 39%上昇+破壊 30%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-17登録。カード画像が無いためixanary.com(cards/2199)生HTMLとixawiki.com(index.php?BushoCard/2199井伊直孝)の2ソースで基本ステータス(コスト・指揮兵数・統率槍弓馬器・攻撃/防御/兵法の初期値と成長値・illustrator)が完全一致することを確認して登録した。",
+  "スキル数値(LV10確率49%/攻撃39%上昇/破壊30%上昇/対象槍馬器)はixanary.comのLV10欄から採用。ixawiki.comはLV1相当(確率22%/攻撃16%上昇/破壊8%上昇)のみ掲載でLV10欄が無く、LV1部分同士は一致した(矛盾ではなく情報量の差)。"
+ ]
+}

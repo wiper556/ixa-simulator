@@ -1,0 +1,44 @@
+{
+ "name": "湯浅五助",
+ "no": "3646",
+ "ch": null,
+ "cost": 3,
+ "troop": "槍砲器防",
+ "sub": "",
+ "effect": "防御 200%上昇(所有者が影城主のとき効果2倍)",
+ "furigana": "ゆあさごすけ",
+ "illustrator": "たわわ実",
+ "imageFull": "assets/img/characters/no3646_full.png",
+ "imageChar": "assets/img/characters/no3646_char.png",
+ "atkBase": 840,
+ "atkGrowth": 25,
+ "defBase": 950,
+ "defGrowth": 34,
+ "tacticsBase": 440.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 3100,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "C",
+  "uma": "B",
+  "ki": "B"
+ },
+ "initialSkill": "至忠ノ護走",
+ "skillDetail": "C/LV10 確率 35% 防御 200%上昇/対象:槍・砲・器\n①防御 200%上昇する\n②このスキルを所持する武将の所有者が影城主のとき防御効果が2倍になる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・砲・器　確率 35% / 防御 200%上昇(所有者が影城主のとき効果2倍)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当D)。カード画像(スキルLV10形式)から。武将名「湯浅五助」/ふりがな「ゆあさごすけ」/特/コスト3/統率 槍A・弓B・馬C・器B(4隅バッジ)/攻撃840・防御950・兵法440.0/指揮兵数0/3100/カードNo.3646/スキル「至忠ノ護走LV10」[C] 確率+35%・対象 槍/砲/器・防御200%上昇・このスキルを所持する武将の所有者が影城主のとき防御効果2倍/Illust たわわ実。",
+  "成長値(攻撃+25/防御+34/兵法+2)・イラストレーター・ステータス初期値・指揮兵数はixanary.com/cards/3646の生HTML埋め込みJSONとカード画像が完全一致。",
+  "章はixanary.com/cards/3646に記載が無く未確認のためnullのまま。「影城主」の定義はカード上に説明が無く未確認。",
+  "2026-08-16: 統率の弓と馬が入れ替わっていたので直した。バッジの並びは 左上=槍 / 右上=馬 / 左下=弓 / 右下=器(うぐさんがゲーム内で確認)。照合担当がカード画像を8倍に拡大して1枚ずつ確かめた結果。**ixanary は根拠にしていない**(埋め込みJSONの yumi/kiba がカード実物と食い違うカードが実在し、体系的な法則も無い)。"
+ ],
+ "wikiOldestComment": null,
+ "wikiCommentCount": 0
+}

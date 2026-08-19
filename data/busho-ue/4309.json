@@ -1,0 +1,43 @@
+{
+ "name": "長続連",
+ "no": "4309",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "弓攻",
+ "sub": "",
+ "effect": "弓攻12%上昇",
+ "furigana": "ちょうつぐつら",
+ "illustrator": "まっつん！",
+ "imageFull": "assets/img/characters/no4309_full.png",
+ "imageChar": "assets/img/characters/no4309_char.png",
+ "atkBase": 670,
+ "atkGrowth": 20,
+ "defBase": 550,
+ "defGrowth": 15,
+ "tacticsBase": 470.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 2300,
+ "rankGrades": {
+  "yari": "C",
+  "yumi": "B",
+  "uma": "C",
+  "ki": "C"
+ },
+ "initialSkill": "弓隊奇襲",
+ "skillDetail": "E/LV10 確率 30% 弓攻 12%上昇/対象:弓\n①弓攻 12%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓　確率 30% / 弓攻 12%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当J)。カード画像(スキルLV10形式)から。武将名「長続連」/ 上 / コスト2.5 / 統率 槍C・弓B・馬C・器C(4隅アイコンを個別にズームして確認) / 初期値 攻撃670・防御550・兵法470.0 / 指揮兵数0/2300 / カードNo.4309一致 / 初期スキル「弓隊奇襲 LV10」[E] 確率+30%・対象 弓・弓攻12%上昇 / Illust まっつん！。",
+  "成長値(攻+20/防+15/兵法+2)・furigana・スキル文言・イラストレーター名(全角感嘆符)はixanary.com/cards/4309の生HTMLと完全一致(このカードには紹介文/フレーバーテキストの記載自体が無い)。",
+  "章は情報源に記載が無く未確認のためnull。初期スキルはEランクのためdata/skill/ページの新規作成対象外。"
+ ],
+ "wikiOldestComment": null,
+ "wikiCommentCount": null
+}

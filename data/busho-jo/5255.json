@@ -1,0 +1,43 @@
+{
+ "name": "滝川雄利",
+ "no": "5255",
+ "ch": null,
+ "cost": 1.5,
+ "troop": "槍攻",
+ "sub": "",
+ "effect": "槍攻15%上昇",
+ "furigana": "たきがわかつとし",
+ "illustrator": "東柚己",
+ "imageFull": "assets/img/characters/no5255_full.png",
+ "imageChar": "assets/img/characters/no5255_char.png",
+ "atkBase": 540,
+ "atkGrowth": 19,
+ "defBase": 440,
+ "defGrowth": 14,
+ "tacticsBase": 410.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 1310,
+ "rankGrades": {
+  "yari": "C",
+  "yumi": "D",
+  "uma": "D",
+  "ki": "D"
+ },
+ "initialSkill": "槍隊進撃",
+ "skillDetail": "F/LV10 確率 10% 槍攻 15%上昇/対象:槍\n①槍攻 15%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍　確率 10% / 槍攻 15%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当N)。カード画像(スキルLV10形式)から。武将名「滝川雄利」/ 序 / コスト1.5 / 統率 槍C・弓D・馬D・器D(4隅バッジを個別にズームして確認) / 初期値 攻撃540・防御440・兵法410.0 / 指揮兵数0/1310 / カードNo.5255一致 / 初期スキル「槍隊進撃 LV10」[F] 確率+10%・対象 槍・槍攻15%上昇 / Illust 東柚己。",
+  "イラストレーター名はカード画像の低解像度では「東抽己」とも読めたが、ixanary.com/cards/5255の生HTMLで「東柚己」を確認したため採用。成長値(攻+19/防+14/兵法+2)・furiganaもixanaryの生HTMLと一致確認済み。Fランクのためdata/skill/ページの新規作成対象外。",
+  "ixawiki.comの武将カード一覧(序)にNo.5255滝川雄利が掲載されており（N）等の表記は無く無印。個別ページは未作成(編集画面が返る)。章は一覧・個別ページとも記載が無く未確認のためnull。synthesisTableは今回のバッチでは付けない指示のため未作成。"
+ ],
+ "wikiOldestComment": null,
+ "wikiCommentCount": null
+}

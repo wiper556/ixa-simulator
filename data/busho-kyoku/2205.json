@@ -1,0 +1,40 @@
+{
+ "name": "九鬼嘉隆",
+ "no": "2205",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "弓砲器攻破",
+ "sub": "",
+ "effect": "攻撃 49%上昇+破壊 25%上昇",
+ "furigana": "くきよしたか",
+ "illustrator": "安里",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 980,
+ "atkGrowth": 28,
+ "defBase": 930,
+ "defGrowth": 24,
+ "tacticsBase": 450.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 2980,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "B",
+  "ki": "S"
+ },
+ "initialSkill": "日本丸咆哮",
+ "skillDetail": "B/LV10 確率 16% 攻撃 49%上昇+破壊 25%上昇/対象:弓・砲・器\n①攻撃 49%上昇する\n②破壊 25%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓・砲・器　確率 16% / 攻撃 49%上昇+破壊 25%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-17登録。カード画像が無いためixanary.com(cards/2205)生HTMLとixawiki.com(index.php?BushoCard/2205九鬼嘉隆)の2ソースで基本ステータス(コスト・指揮兵数・統率槍弓馬器・攻撃/防御/兵法の初期値と成長値・illustrator)が完全一致することを確認して登録した。",
+  "スキル数値(LV10確率16%/攻撃49%上昇/破壊25%上昇/対象弓砲器)はixanary.comのLV10欄から採用。ixawiki.comはLV1相当(確率5%/攻撃21%上昇/破壊7%上昇)のみ掲載でLV10欄が無く、LV1部分同士は一致した(矛盾ではなく情報量の差)。"
+ ]
+}

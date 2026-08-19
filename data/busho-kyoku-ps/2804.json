@@ -1,0 +1,41 @@
+{
+ "name": "真田昌親",
+ "no": "2804",
+ "ch": null,
+ "cost": 4.0,
+ "troop": "全防",
+ "sub": "卓越",
+ "effect": "防御 90%上昇(卓越:追加確率60%で防御効果4倍)",
+ "furigana": "さなだまさちか",
+ "illustrator": "ツヤイルカ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1030,
+ "atkGrowth": 40,
+ "defBase": 1100,
+ "defGrowth": 48,
+ "tacticsBase": 540.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 4160,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "飛び雁金",
+ "skillDetail": "S/LV10 確率 70% 防御 90%上昇/対象:全　卓越\n①防御 90%上昇する\n②卓越:追加確率60%で防御効果が4倍になる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全 卓越　確率 70% / 防御 90%上昇(卓越追加確率60%で防御効果4倍)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当H)。カード画像が無いためixanary.com(cards/2804)とixawiki.com(BushoCard/2804真田昌親)の2ソースを生HTMLで突き合わせた。",
+  "コスト4.0・指揮兵数4160・HP150・統率(槍S/弓A/馬A/器A)・攻撃1030(+40)/防御1100(+48)/兵法540.0(+2.5)・初期スキル「飛び雁金」(S)の確率/対象/効果(LV1・LV10とも)は両ソース完全一致。TRの記載はどちらにも無い。",
+  "章は情報源に記載が無いため未確認。"
+ ]
+}

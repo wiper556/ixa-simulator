@@ -1,0 +1,39 @@
+{
+ "name": "片倉小十郎（2）",
+ "no": "2251",
+ "ch": null,
+ "cost": 2,
+ "troop": "槍器鉄防",
+ "sub": "",
+ "effect": "槍・器・鉄兵の防御力上昇(自軍部隊数10以下限定)",
+ "furigana": "かたくらこじゅうろう",
+ "illustrator": "BISAI",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 950,
+ "atkGrowth": 24,
+ "defBase": 990,
+ "defGrowth": 28,
+ "tacticsBase": 490,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 2500,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "B",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "二虎競食ノ計",
+ "skillDetail": "B/LV10 確率 54% 防御 45%上昇/対象:槍・器・鉄\n自軍部隊数10以下でのみ発動\n①防御 45%上昇する(敵軍部隊数×5%を効果に加算する)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・器・鉄　確率 54% / 防御 45%上昇(自軍部隊数10以下限定/敵軍部隊数×5%加算)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-17登録(担当F)。カード画像が無いためixanary.com(cards/2251)とixawiki.com(index.php?BushoCard/2251片倉小十郎)の生HTML突き合わせのみで登録した。"
+ ]
+}

@@ -1,0 +1,43 @@
+{
+ "name": "河合吉統",
+ "no": "5234",
+ "ch": null,
+ "cost": 2,
+ "troop": "砲防",
+ "sub": "",
+ "effect": "砲防15%上昇",
+ "furigana": "かわいよしむね",
+ "illustrator": "あおひと",
+ "imageFull": "assets/img/characters/no5234_full.png",
+ "imageChar": "assets/img/characters/no5234_char.png",
+ "atkBase": 470,
+ "atkGrowth": 16,
+ "defBase": 490,
+ "defGrowth": 18,
+ "tacticsBase": 410.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 1810,
+ "rankGrades": {
+  "yari": "D",
+  "yumi": "D",
+  "uma": "D",
+  "ki": "C"
+ },
+ "initialSkill": "鉄砲隊備え",
+ "skillDetail": "F/LV10 確率 8% 砲防 15%上昇/対象:砲\n①砲防 15%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "砲　確率 8% / 砲防 15%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当L)。カード画像(スキルLV10形式)から。武将名「河合吉統」/ 序 / コスト2 / 統率 槍D・弓D・馬D・器C(4隅バッジをズームして確認) / 初期値 攻撃470・防御490・兵法410.0 / 指揮兵数0/1810 / カードNo.5234一致 / 初期スキル「鉄砲隊備え LV10」[F] 確率+8%・対象 砲・砲防15%上昇 / Illust あおひと。",
+  "成長値(攻+16/防+18/兵法+2)とrankGrades・furigana・illustratorはixanary.com/cards/5234の埋め込みJSON(hp/attack/defence/intelligence/attackGrowth等)と一致確認済み。ただしixanary本文のスキル説明はLV1表示(確率+4%)でLV10のカード画像の値(確率+8%)とは異なる。BRIEFの指示どおりLV10のカード画像側の数値を採用した。",
+  "章は情報源に記載が無く未確認のためnull。ixawikiには「河合吉統」個別ページも「武将カード一覧(序)」一覧ページもまだ作成されておらず(いずれも編集画面が返る)、名前の（N）判定に使う一覧が存在しないため無印とした。初期スキルはFランクのためdata/skill/ページの新規作成対象外。synthesisTableは今回のバッチでは付けない指示のため未作成。"
+ ],
+ "wikiOldestComment": null,
+ "wikiCommentCount": 0
+}

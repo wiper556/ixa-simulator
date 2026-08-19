@@ -1,0 +1,46 @@
+{
+ "name": "上杉謙信【覇】",
+ "no": "1064",
+ "ch": "11章",
+ "cost": 4,
+ "troop": "槍弓馬攻",
+ "sub": "",
+ "effect": "対象兵科の攻撃上昇(合流攻撃時必ず発動)",
+ "furigana": "うえすぎけんしん",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1064_full.png",
+ "imageChar": "assets/img/characters/no1064_char.png",
+ "atkBase": 850,
+ "atkGrowth": 20,
+ "defBase": 800,
+ "defGrowth": 20,
+ "tacticsBase": 670,
+ "tacticsGrowth": 3,
+ "lv0Troops": 3850,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "S",
+  "uma": "A",
+  "ki": "C"
+ },
+ "initialSkill": "刀八毘沙門天",
+ "skillDetail": "S/LV10 確率 20% 攻撃 65%上昇/対象:槍・弓・馬\n①攻撃 65%上昇する\n②合流攻撃時は必ずスキルが発動する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・弓・馬　確率 20% / 攻撃 65%上昇(合流攻撃時必ず発動)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録。カード画像(スキルLV10形式)から。統率バッジは左上槍S/右上馬A/左下弓S/右下器C。ixanary.com(cards/1064)生HTMLとixawiki.com武将カード一覧(天)の生HTML両方でrankGrades・基礎値・成長値・指揮兵数が一致することを確認済み。",
+  "カード名前欄のアイコンが「覇」(職業:覇者)で、ixawiki一覧の表記も「上杉謙信(覇)」だったため（覇）を付けた。スキル効果文に護る効果や赤字の「覇道」表記は無いため、sub欄は覇道classificationの対象外(空欄)とした。",
+  "2026-08-16: 覇者カードの表記を（覇）から【覇】に直した(サイトの既存表記に合わせた)。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2015-11-15",
+ "wikiCommentCount": 275,
+ "chGuess": "11章",
+ "chSource": "wikiOldestComment"
+}

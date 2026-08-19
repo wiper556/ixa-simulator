@@ -1,0 +1,49 @@
+{
+ "name": "蘆名盛氏",
+ "no": "1133",
+ "ch": "17章",
+ "cost": 4,
+ "troop": "弓器焙攻",
+ "sub": "",
+ "effect": "攻撃力上昇+敵部隊長1人の初期スキル無効化(小隊長時攻撃時のみ)",
+ "furigana": "あしなもりうじ",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1133_full.png",
+ "imageChar": "assets/img/characters/no1133_char.png",
+ "atkBase": 1140,
+ "atkGrowth": 55,
+ "defBase": 1000,
+ "defGrowth": 30,
+ "tacticsBase": 640.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 4180,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "S",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "悠久天戦",
+ "skillDetail": "S/LV10 確率 50% 攻撃 60%上昇/対象:弓・器・焙\n模倣不可\n①攻撃 60%上昇する\n②敵部隊長一人の初期スキルを無効化する(小隊長時攻撃時のみ発動)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓・器・焙　確率 50% / 攻撃 60%上昇+敵部隊長1人の初期スキル無効化(小隊長時攻撃時のみ発動・模倣不可)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録。カード画像(スキルLV10形式)から武将名・統率バッジ・スキル名・初期値を確認。",
+  "ステータス初期値1140/1000/640.0・成長値+55/+30/+2.5・cost4・lv0Troops4180はixanary.com(cards/1133)とixawiki.com(BushoCard/1133蘆名盛氏)の2ソースで成長表と一致確認。",
+  "統率は槍A/弓S/馬A/器S。カード画像バッジ4隅とixawiki.com(Busho/武将カード一覧(天))の統率力表記が一致。",
+  "武将名の（N）はixawiki.com(Busho/武将カード一覧(天))の表記「蘆名盛氏」(無印)に従った。",
+  "初期スキル「悠久天戦」はSランクだがdata/skill/に個別ページが無い(要作成候補)。",
+  "章は情報源に記載が無く未確認。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2019-02-09",
+ "wikiCommentCount": 164,
+ "chGuess": "17章",
+ "chSource": "wikiOldestComment"
+}

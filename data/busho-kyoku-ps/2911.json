@@ -1,0 +1,42 @@
+{
+ "name": "津軽為信",
+ "no": "2911",
+ "ch": null,
+ "cost": 3,
+ "troop": "槍弓砲攻",
+ "sub": "",
+ "effect": "攻撃 18%上昇",
+ "furigana": "つがるためのぶ",
+ "illustrator": "正子公也",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 710,
+ "atkGrowth": 18,
+ "defBase": 710,
+ "defGrowth": null,
+ "tacticsBase": 450,
+ "tacticsGrowth": 3,
+ "lv0Troops": 2840,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "C",
+  "ki": "S"
+ },
+ "initialSkill": "館神",
+ "skillDetail": "B/LV10 確率 50% 攻撃 18%上昇/対象:槍弓砲\n①攻撃が18%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍弓砲　確率 50% / 攻撃 18%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "カード画像が無いため ixanary.com/cards/2911 と ixawiki.com(BushoCard/2911津軽為信)の生HTML2ソースで確認した。",
+  "基礎値710/710/450・攻撃成長18・兵法成長3・コスト3・指揮兵数2840(★0-0)・統率(槍A/弓A/馬C/器S)はixanary.comとixawiki.comの2ソースで完全一致。",
+  "【食い違い・null】防御成長値のみ2ソースが食い違った(ixanary.com=16、ixawiki.com=18)。攻撃成長18と同値になるixawiki側が誤記の可能性もあるが、どちらか一方を採用する決め手(カード画像)が無いためdefGrowthはnullにした。",
+  "初期スキル館神(B)のLV10「確率+50%/対象 槍弓砲/攻撃18%上昇」はixanary.comとixawiki.comの2ソースで完全一致。"
+ ]
+}

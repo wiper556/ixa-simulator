@@ -1,0 +1,47 @@
+{
+ "name": "堀内氏善",
+ "no": "5150",
+ "ch": "12章",
+ "cost": 2,
+ "troop": "砲防",
+ "sub": "",
+ "effect": "砲防 コスト×6.5=13%上昇",
+ "furigana": "ほりうちうじよし",
+ "illustrator": "双羽純",
+ "imageFull": "assets/img/characters/no5150_full.png",
+ "imageChar": "assets/img/characters/no5150_char.png",
+ "atkBase": 470,
+ "atkGrowth": 13,
+ "defBase": 570,
+ "defGrowth": 16,
+ "tacticsBase": 410.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 1530,
+ "rankGrades": {
+  "yari": "D",
+  "yumi": "C",
+  "uma": "E",
+  "ki": "B"
+ },
+ "initialSkill": "鉄砲隊守護",
+ "skillDetail": "E/LV10 確率 20% 砲防 13%上昇/対象:砲\n①砲防 13%上昇する(武将のコストで効果が変化)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "砲　確率 20% / 砲防 コスト×6.5=13%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当B)。カード画像(スキルLV10形式)から。武将名「堀内氏善」/ 序 / コスト2 / 統率 槍D・弓C・馬E・器B(バッジ拡大確認) / 初期値 攻撃470・防御570・兵法410.0 / 指揮兵数0/1530 / カードNo.5150一致 / 初期スキル「鉄砲隊守護 LV10」[E] 確率+20%・対象 砲・砲防13%上昇(コストで変化) / Illust 双羽純。",
+  "ixanary.com/cards/5150の生HTML(埋め込みJSON)とixawiki.com(BushoCard/5150堀内氏善)の生HTMLで、furigana・成長値(攻+13/防+16/兵法+2)・統率・スキル数値(LV10確率20%/砲防13%上昇)が完全一致。ixawikiのページタイトルに（N）等の表記は無く無印。",
+  "章はixanary/ixawikiとも記載なくnull。初期スキルはEランクのためdata/skill/ページの新規作成対象外。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。",
+  "2026-08-16: コストで効果が変わるスキルの書き方を「計算式=結果」に揃えた(担当ごとに注記の有無・文言が割れていたため)。"
+ ],
+ "wikiOldestComment": "2016-07-10",
+ "wikiCommentCount": 7,
+ "chGuess": "12章",
+ "chSource": "wikiOldestComment"
+}

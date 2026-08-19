@@ -1,0 +1,41 @@
+{
+ "name": "山内一豊",
+ "no": "2280",
+ "ch": null,
+ "cost": 3,
+ "troop": "馬器騎防",
+ "sub": "",
+ "effect": "防御 64%上昇(本丸防御列1-2番目で1.5倍)",
+ "furigana": "やまうちかつとよ",
+ "illustrator": "黒葉.K",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 960,
+ "atkGrowth": 24,
+ "defBase": 1020,
+ "defGrowth": 36,
+ "tacticsBase": 480,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3280,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "B",
+  "uma": "S",
+  "ki": "A"
+ },
+ "initialSkill": "士魂奮撃",
+ "skillDetail": "B/LV10 確率 37% 防御 64%上昇/対象:馬・器・騎\n①防御 64%上昇する\n②本丸防御陣形の第壱列目か第弐列目に配置している時は防御効果が1.5倍になる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "馬・器・騎　確率 37% / 防御 64%上昇(本丸防御第1-2列配置時1.5倍)"
+  }
+ ],
+ "notes": [
+  "2026-08-18登録(担当G)。カード画像が無いためixanary.com(cards/2280)生HTMLとixawiki.com(index.php?BushoCard/2280山内一豊)生HTMLの2ソースを突き合わせて登録した。",
+  "ステータス初期値960/1020/480・成長値24/36/2.5・cost3・lv0Troops3280・rankGrades(槍A/弓B/馬S/器A)・illustrator黒葉.Kは両ソースで完全一致。",
+  "スキル「士魂奮撃」LV10(確率37%・防御64%上昇・本丸防御陣形1-2列目配置時1.5倍)はixawikiにLV1/LV10両方の記載があり、ixanaryのLV10欄と完全一致した。"
+ ],
+ "reviewedOk": false
+}

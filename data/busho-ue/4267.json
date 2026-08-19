@@ -1,0 +1,46 @@
+{
+ "name": "千葉胤富",
+ "no": "4267",
+ "ch": "22章",
+ "cost": 2,
+ "troop": "馬攻",
+ "sub": "",
+ "effect": "馬攻12%上昇",
+ "furigana": "ちばたねとむ",
+ "illustrator": "ヤマザキミコ",
+ "imageFull": "assets/img/characters/no4267_full.png",
+ "imageChar": "assets/img/characters/no4267_char.png",
+ "atkBase": 620,
+ "atkGrowth": 18,
+ "defBase": 560,
+ "defGrowth": 16,
+ "tacticsBase": 440.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 1870,
+ "rankGrades": {
+  "yari": "D",
+  "yumi": "C",
+  "uma": "B",
+  "ki": "B"
+ },
+ "initialSkill": "騎馬隊奇襲",
+ "skillDetail": "E/LV10 確率 30% 馬攻 12%上昇/対象:馬\n①馬攻 12%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "馬　確率 30% / 馬攻 12%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当J)。カード画像(スキルLV10形式)から。武将名「千葉胤富」/ 上 / コスト2 / 統率 槍D・弓C・馬B・器B(4隅アイコンを個別にズームして確認) / 初期値 攻撃620・防御560・兵法440.0 / 指揮兵数0/1870 / カードNo.4267一致 / 初期スキル「騎馬隊奇襲 LV10」[E] 確率+30%・対象 馬・馬攻12%上昇 / Illust ヤマザキミコ。",
+  "furiganaはカード画像では「ちばたねとみ」とも読めたが、ixanary.com/cards/4267の生HTMLで「ちばたねとむ」と確認したため訂正して採用。成長値(攻+18/防+16/兵法+2)・スキル文言は同ソースでカード画像と一致。",
+  "章は情報源に記載が無く未確認のためnull。初期スキルはEランクのためdata/skill/ページの新規作成対象外。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2022-01-12",
+ "wikiCommentCount": 1,
+ "chGuess": "22章",
+ "chSource": "wikiOldestComment"
+}

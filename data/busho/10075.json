@@ -127,7 +127,7 @@
   "2026-08-02追加調査: ameameixa.com(bushocard-10075が404)も記事なしを確認。第二ソース発見できず単一ソース(ixagno)のまま、黄丸化は見送り。",
   "2026-08-16再検証(黄丸化): ixanary.com/cards/10075/が404から200へ変化しており、ixagno単独からixanary併用の2ソース体制に移行できた。curl生HTMLでコスト3/指揮3700/成長値攻82防65兵法4.0/LV10・TR5のskillDetail(攻1000%→1500%、コスト除外3→3.5)が一致確認。rankGradesはixanaryのcard JSON(yumi:A,kiba:X)とカード画像バッジが食い違ったため、マニュアル通りカード画像バッジ(4隅を個別にズームして再確認、槍A/弓X/馬A/器SS)を採用(既存データ通りで変更なし)。synthesisTableはixanary.com/skills/天覇冠軍/の生HTML合成テーブル(1次/2次/3次)でA〜S2全5枠(坂西都督[S]/絶無灰尽[SS]/焼尽神無[SS]/終焉焦土[SSS]/神羅聖域[SS]、全枠自己参照)が既存登録と完全一致(2ソース目確定)。sourceCharacters逆引き(A-3-11): 5候補スキル全てのdata/skill/*.jsonに10075が反映済みを確認。categoryLinksの9項目チェック: 「コストを最大3まで除外」はコスト減少カテゴリに該当しうるが、同型の自合流コスト除外を持つ既存スキル(西覇冠軍No.1251・雄武英略・魁星ノ神弓等)がいずれもskills-cost.html非掲載(不屈カテゴリのみ)という既存の一貫した運用があったため、それに倣い今回もskills-cost.htmlには追加しなかった。"
  ],
- "reviewedOk": true,
+ "reviewedOk": false,
  "wikiOldestComment": null,
  "wikiCommentCount": null
 }

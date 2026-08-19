@@ -1,0 +1,71 @@
+{
+ "name": "愛洲移香斎",
+ "no": "2734",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "槍攻",
+ "sub": "",
+ "effect": "攻撃 37%上昇",
+ "furigana": "あいすいこうさい",
+ "illustrator": "GODTAIL",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1000,
+ "atkGrowth": 60,
+ "defBase": 900,
+ "defGrowth": 30,
+ "tacticsBase": 465,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2900,
+ "rankGrades": {
+  "yari": "SS",
+  "yumi": "B",
+  "uma": "B",
+  "ki": "C"
+ },
+ "initialSkill": "陰流",
+ "skillDetail": "B/LV10 確率 27% 攻撃 37%上昇/対象:槍\n①攻撃が37%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍　確率 27% / 攻撃 37%上昇"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": null
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": null
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": null
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": null
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": null
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": null
+  }
+ ],
+ "notes": [
+  "2026-08-18新規登録(担当G・カード画像なし)。ixanary.com/cards/2734とixawiki.com(index.php?BushoCard/2734愛洲移香斎)の生HTML2ソースで統率(槍SS弓B馬B器C)・コスト3.5・指揮兵数2900・初期値1000/900/465・成長値+60/+30/+2.0・絵師GODTAIL・ふりがなが完全一致することを確認した。",
+  "スキルLV1の確率のみixanary=8%、ixawiki=6.0%で食い違った(LV1攻撃上昇値は両ソースとも12%で一致)。この不一致はLV1限定の値で、登録したLV10値(確率27%/攻撃37%上昇)自体はixanaryのみが情報源のため確定的な裏取りができておらず、確率面はixanary側のみに依拠していることを申し送りとして明記する。",
+  "初期スキル「陰流」[B]のLV10値(確率27%/攻撃37%上昇/対象槍)はixanary.com/cards/2734のLV10スキルボックスから採用した。synthesisTableはカード画像が無いため作成していない。章は両ソースに記載が無く未確認。"
+ ],
+ "reviewedOk": false
+}

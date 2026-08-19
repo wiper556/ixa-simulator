@@ -1,0 +1,44 @@
+{
+ "name": "問田隆盛",
+ "no": "5264",
+ "ch": null,
+ "cost": 1.5,
+ "troop": "槍攻",
+ "sub": "",
+ "effect": "槍攻 コスト×6.5=9.75%上昇",
+ "furigana": "といだたかもり",
+ "illustrator": "まっつん！",
+ "imageFull": "assets/img/characters/no5264_full.png",
+ "imageChar": "assets/img/characters/no5264_char.png",
+ "atkBase": 550,
+ "atkGrowth": 19,
+ "defBase": 410,
+ "defGrowth": 14,
+ "tacticsBase": 440.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 1320,
+ "rankGrades": {
+  "yari": "C",
+  "yumi": "D",
+  "uma": "D",
+  "ki": "D"
+ },
+ "initialSkill": "槍隊挟撃",
+ "skillDetail": "E/LV10 確率 25% 槍攻 9.75%上昇/対象:槍\n①槍攻 9.75%上昇する(武将のコストで効果が変化)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍　確率 25% / 槍攻 コスト×6.5=9.75%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当O)。カード画像(スキルLV10形式)から。武将名「問田隆盛」/ 序 / コスト1.5 / 統率 槍C・弓D・馬D・器D(4隅バッジをズームして確認) / 初期値 攻撃550・防御410・兵法440.0 / 指揮兵数0/1320 / カードNo.5264一致 / 初期スキル「槍隊挟撃 LV10」[E] 確率+25%・対象 槍・槍攻9.75%上昇(武将のコストで効果が変化します) / Illust まっつん！。",
+  "成長値(攻+19/防+14/兵法+2)・furigana・スキル文言はixanary.com/cards/5264の生HTMLと一致。ixawiki.comのBushoCard個別ページは未作成(編集フォームのみ表示)だが、Busho/武将カード一覧(序)ページには掲載あり(N)等の表記無し・無印。章はixawiki一覧でも「?」表記で不明のためnull。",
+  "初期スキルはEランクのためdata/skill/ページの新規作成対象外。synthesisTableは今回のバッチでは付けない指示のため未作成。",
+  "2026-08-16: コストで効果が変わるスキルの書き方を「計算式=結果」に揃えた(担当ごとに注記の有無・文言が割れていたため)。"
+ ],
+ "wikiOldestComment": null,
+ "wikiCommentCount": null
+}

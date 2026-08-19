@@ -1,0 +1,39 @@
+{
+ "name": "宗義智",
+ "no": "2268",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "槍器鉄防",
+ "sub": "",
+ "effect": "槍・器・鉄兵の防御力上昇",
+ "furigana": "そうよしとし",
+ "illustrator": "ゆんやま",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1020,
+ "atkGrowth": 27,
+ "defBase": 1040,
+ "defGrowth": 35,
+ "tacticsBase": 470,
+ "tacticsGrowth": 2,
+ "lv0Troops": 3510,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "B",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "善隣太守",
+ "skillDetail": "B/LV10 確率 100% 防御 60%上昇/対象:槍・器・鉄　卓越\n①防御 60%上昇する\n②卓越:追加確率20%で防御効果が1.5倍になる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・器・鉄　確率 100% / 防御 60%上昇(卓越:追加確率20%で1.5倍)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-17登録(担当F)。カード画像が無いためixanary.com(cards/2268)とixawiki.com(index.php?BushoCard/2268宗義智)の生HTML突き合わせのみで登録した。"
+ ]
+}

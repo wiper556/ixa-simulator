@@ -1,0 +1,40 @@
+{
+ "name": "里見義弘",
+ "no": "2180",
+ "ch": null,
+ "cost": 3,
+ "troop": "槍馬器攻破速",
+ "sub": "",
+ "effect": "攻撃 15%上昇+破壊 27%上昇+速度 32%上昇",
+ "furigana": "さとみよしひろ",
+ "illustrator": "匈歌ハトリ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 860,
+ "atkGrowth": 23,
+ "defBase": 730,
+ "defGrowth": 19,
+ "tacticsBase": 460,
+ "tacticsGrowth": 2,
+ "lv0Troops": 3140,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "B",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "思慕超俗",
+ "skillDetail": "B/LV10 確率 100% 攻撃 15%上昇+破壊 27%上昇+速度 32%上昇/対象:槍・馬・器\n①攻撃 15%上昇する\n②破壊 27%上昇する\n③速度 32%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・馬・器　確率 100% / 攻撃 15%上昇+破壊 27%上昇+速度 32%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当B)。カード画像が無いため imageFull/imageChar は null。ixanary.com(cards/2180)の埋め込みJSONとixawiki.com(index.php?BushoCard/2180里見義弘)の生HTMLで、コスト/指揮兵数/攻撃防御兵法の初期値成長値/兵科ランク(槍S弓B馬A器A)/イラストレーター(匈歌ハトリ)/スキルLV1数値(確率+100%/攻撃9.5%上昇/破壊11%上昇/速度8%上昇)が完全一致することを確認して登録した。LV10の数値(確率100%/攻撃15%上昇/破壊27%上昇/速度32%上昇)はixanaryのカードページに明記。",
+  "章(ch)は両ソースとも記載が無いため未確認。synthesisTableは今回付けていない。"
+ ]
+}

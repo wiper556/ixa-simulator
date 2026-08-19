@@ -1,0 +1,75 @@
+{
+ "name": "北条早雲",
+ "no": "2701",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "全攻速",
+ "sub": "",
+ "effect": "攻撃 5%上昇+速度 55%上昇",
+ "furigana": "ほうじょうそううん",
+ "illustrator": "岩元辰郎",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 745,
+ "atkGrowth": 17,
+ "defBase": 735,
+ "defGrowth": 16,
+ "tacticsBase": 450,
+ "tacticsGrowth": 2,
+ "lv0Troops": 3300,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "S",
+  "uma": "B",
+  "ki": "E"
+ },
+ "initialSkill": "進撃縮地",
+ "skillDetail": "S/LV10 確率 100% 攻撃 5%上昇/対象:全\n①攻撃 5%上昇する\n②速度 55%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 攻撃 5%上昇+速度 55%上昇"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": null
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": null
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": null
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": null
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": null
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": null
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-17新規登録(担当C・カード画像なし)。ixanary.com/cards/2701とixawiki.com(index.php?BushoCard/2701北条早雲)の生HTML2ソースで全項目が一致することを確認した(画像照合は無し)。",
+  "武将名: ixawiki武将カード一覧(極)でこのカードは無印の「北条早雲」表記(同名の他カード2910は「北条早雲(2)」)。",
+  "attack=745/defence=735と異なる値で、ixanaryの防御バグ(攻撃値のコピー)には該当しない。2ソース一致。",
+  "コスト3.5・指揮兵数3300(★0-0)・成長値+17/+16/+2.0・ふりがな・絵師(岩元辰郎)は2ソースで完全一致。統率(槍A/弓S/馬B/器E)も2ソース一致。",
+  "初期スキル「進撃縮地」[S]はixanaryのスキル個別ページ(skills/進撃縮地)に「合成不可スキルです」の記載が無いためTR1〜TR6を標準の鍛錬ポイント配分(10/40/90/150/200/パラレル)で登録した。ただしTR1〜TR6の効果量はixanary/ixawikiいずれにも記載が無くeffectはnull。LV10効果(確率+100%/攻撃5%上昇/速度55%上昇)は2ソース完全一致。",
+  "ixawikiでは「現在、全ての戦国くじから入手不可能」と付記あり(登録は不要と判断しnotesにのみ記載)。",
+  "章はixanary/ixawikiいずれのカードページにも記載が無く未確認。"
+ ]
+}

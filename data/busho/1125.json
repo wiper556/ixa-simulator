@@ -1,0 +1,50 @@
+{
+ "name": "伊東義祐",
+ "no": "1125",
+ "ch": "16章",
+ "cost": 3,
+ "troop": "槍鉄攻速",
+ "sub": "",
+ "effect": "槍・鉄部隊の攻撃・速度上昇(4部隊以下は攻撃効果2倍)",
+ "furigana": "いとうよしすけ",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1125_full.png",
+ "imageChar": "assets/img/characters/no1125_char.png",
+ "atkBase": 1180,
+ "atkGrowth": 27,
+ "defBase": 1110,
+ "defGrowth": 25,
+ "tacticsBase": 600.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 3860,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "B",
+  "ki": "S"
+ },
+ "initialSkill": "天攻狂刃",
+ "skillDetail": "S/LV10 確率 36%/100% 攻撃 72%上昇(確率36%)+速度 45%上昇(確率100%)/対象:槍・鉄\n①攻撃 72%上昇する(確率36%)\n②速度 45%上昇する(確率100%)\n③4部隊以下の攻撃で攻撃効果が2倍となる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・鉄　確率 36%/100% / 攻撃 72%上昇(確率36%)+速度 45%上昇(確率100%)(4部隊以下の攻撃で攻撃効果2倍)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録。カード画像(スキルLV10形式)から武将名・統率バッジ・スキル名・初期値を確認。",
+  "ステータス初期値1180/1110/600.0・成長値+27/+25/+2・cost3・lv0Troops3860はixanary.com(cards/1125)とixawiki.com(BushoCard/1125伊東義祐)の2ソースで成長表と一致確認。",
+  "統率は槍S/弓A/馬B/器S。カード画像バッジ4隅とixawiki.com(Busho/武将カード一覧(天))の統率力表記が一致。",
+  "武将名の（N）はixawiki.com(Busho/武将カード一覧(天))の表記「伊東義祐」(無印)に従った。",
+  "攻撃72%(確率36%)と速度45%(確率100%)で確率が異なる複合効果のため、既存の同形式書式(徳川家康No.1084の四神天道)に合わせて確率をスラッシュ区切りで併記した。",
+  "初期スキル「天攻狂刃」はSランクだがdata/skill/に個別ページが無い(要作成候補)。",
+  "章は情報源に記載が無く未確認。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2018-08-10",
+ "wikiCommentCount": 96,
+ "chGuess": "16章",
+ "chSource": "wikiOldestComment"
+}

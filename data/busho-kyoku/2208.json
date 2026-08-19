@@ -1,0 +1,42 @@
+{
+ "name": "猿飛佐助",
+ "no": "2208",
+ "ch": null,
+ "cost": 3,
+ "troop": "槍弓器攻速",
+ "sub": "",
+ "effect": "攻撃 25%上昇+速度 40%上昇",
+ "furigana": "さるとびさすけ",
+ "illustrator": "鏑木康隆",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 980,
+ "atkGrowth": 28,
+ "defBase": 920,
+ "defGrowth": 26,
+ "tacticsBase": 520,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3190,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "B",
+  "ki": "S"
+ },
+ "initialSkill": "猿臂ノ術",
+ "skillDetail": "B/LV10 確率 100% 攻撃 25%上昇+速度 40%上昇/対象:槍・弓・器\n①攻撃 25%上昇する\n②速度 40%上昇する\n③部隊内で最も速い兵士速度で移動する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・弓・器　確率 100% / 攻撃 25%上昇+速度 40%上昇(部隊内で最も速い兵士速度で移動)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当D)。カード画像が無いためixanary.com(cards/2208)とixawiki.com(index.php?BushoCard/2208猿飛佐助)の生HTML突き合わせのみで登録した。",
+  "コスト3・指揮兵数3190・攻撃力980(+28)・防御力920(+26)・兵法520(+2.5)・イラストレーター鏑木康隆・スキルLV1/LV10の数値は両ソースで完全一致。",
+  "rankGrades(槍A/弓A/馬B/器S)はixawikiの統率力表のみが出典。ixanary.comのカードページには兵科ランクのテキスト情報自体が存在しない(バッジは画像のみで代替テキストが無い)ため、この項目はixawikiの単独ソースであることを明記する。以下の全カードで同様。",
+  "章(ch)は両ソースに記載が無く未確認のためnull。"
+ ]
+}

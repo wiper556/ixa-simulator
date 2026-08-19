@@ -1,0 +1,41 @@
+{
+ "name": "直江兼続（4）",
+ "no": "2976",
+ "ch": null,
+ "cost": 3,
+ "troop": "槍弓器攻速",
+ "sub": "",
+ "effect": "攻撃 25%上昇+速度 50%上昇(単独出陣時は速度効果10倍)",
+ "furigana": "なおえかねつぐ",
+ "illustrator": "原哲夫・堀江信彦・義風堂々／NSP 2008",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1100,
+ "atkGrowth": 68,
+ "defBase": 940,
+ "defGrowth": 55,
+ "tacticsBase": 440,
+ "tacticsGrowth": 2,
+ "lv0Troops": 3200,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "義風堂々 酒",
+ "skillDetail": "B/LV10 確率 100% 攻撃 25%上昇+速度 50%上昇/対象:槍・弓・器\n①攻撃 25%上昇する\n②速度 50%上昇する\n③単独出陣時は速度効果が10倍になる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・弓・器　確率 100% / 攻撃 25%上昇+速度 50%上昇(単独出陣時は速度効果10倍)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録。カード画像が無いためixanaryとixawikiの一致だけで入れた(rankGradesは両ソース完全一致)。synthesisTableは今回のバッチでは付けていない。",
+  "defBaseはixanaryの生埋め込みJSONだとatkBaseと同値の1100になっていたが(既知の壊れ方の型)、ixawikiは独立に940(atkと異なる値)を示しており、ixanaryの方が壊れていると判断してixawikiの940を採用した。atkGrowth/defGrowth/tacticsBase/tacticsGrowthは両ソース一致。",
+  "スキル『義風堂々 酒』はixanaryがLV1(確率+100%/攻撃9%上昇/速度18%上昇)とLV10(確率+100%/攻撃25%上昇/速度50%上昇/単独出陣時は速度効果10倍)を明示的に別枠で表示している一方、ixawikiの基本ステータス表は数値がixanaryのLV1の値(9%/18%)と一致していた。今回のバッチでこのパターン(ixawikiの表がLV10でなくLV1の値のまま)が非常に多く見つかったため、ixanaryが明示的にLV10と表示している値を採用した。ランク(B)・対象(槍弓器)・確率(100%)は両ソース一致。"
+ ]
+}

@@ -1,0 +1,25 @@
+{
+ "name": "独眼竜轟雷",
+ "rank": "S",
+ "baseRate": 35,
+ "target": "槍・砲",
+ "effectSummary": "S/LV10 確率 35% 防御 40%上昇/対象:槍・砲\n①防御 40%上昇する",
+ "categoryLinks": [],
+ "sourceCharacters": [
+  {
+   "name": "伊達政宗（2）",
+   "no": "1030",
+   "slot": "移植不可"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・砲　確率 35% / 防御 40%上昇"
+  }
+ ],
+ "notes": [
+  "A-3-9「武将自身の初期スキル(S以上)は無条件にページを作る」により2026-08-16に一括作成。内容は data/busho/1030.json の skillDetail / trTable からの転記で、新しい事実は持ち込んでいない。"
+ ]
+}

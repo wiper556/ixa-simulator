@@ -1,0 +1,42 @@
+{
+ "name": "小少将",
+ "no": "2204",
+ "ch": null,
+ "cost": 3,
+ "troop": "槍弓器防速",
+ "sub": "",
+ "effect": "防御 26%上昇+速度 30%上昇",
+ "furigana": "こしょうしょう",
+ "illustrator": "鏑木康隆",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 950,
+ "atkGrowth": 25,
+ "defBase": 950,
+ "defGrowth": 25,
+ "tacticsBase": 500.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 3150,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "傾国ノ美姫",
+ "skillDetail": "B/LV10 対象:槍・弓・器\n①確率 34%で防御 26%上昇する(武将ランクで変化・ランクごとに+4%)\n②確率 100%で速度 30%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・弓・器　防御 確率 34% / 26%上昇(武将ランクで変動)+速度 確率 100% / 30%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-17登録。カード画像が無いためixanary.com(cards/2204)生HTMLとixawiki.com(index.php?BushoCard/2204小少将)の2ソースで基本ステータス(コスト・指揮兵数・統率槍弓馬器・攻撃/防御/兵法の初期値と成長値・illustrator)が完全一致することを確認して登録した。",
+  "スキル「傾国ノ美姫」(B)は防御(確率34%・武将ランクで26+ランク×4%に変化)と速度(確率100%・固定30%)で確率が異なる2効果のため、通常の単一確率ヘッダー書式ではなく効果ごとに確率を明記する形にした(data/busho/1039.jsonの既存書式に合わせた)。",
+  "スキル数値(LV10)はixanary.comのLV10欄から採用。ixawiki.comはLV1相当(確率14%/防御8+ランク×4%上昇/速度確率100%・12%上昇)のみ掲載でLV10欄が無く、LV1部分同士は一致した(矛盾ではなく情報量の差)。",
+  "小少将自身の「防.戦姫艶舞」という追加の部隊スキル枠がixanary.comに記載されているが、カードLV0画面には出ない枠のためinitialSkillには含めていない(既存busho/1093.jsonの同種ケースに倣った)。"
+ ]
+}

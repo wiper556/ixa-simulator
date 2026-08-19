@@ -1,0 +1,40 @@
+{
+ "name": "長野業正",
+ "no": "2145",
+ "ch": null,
+ "cost": 2,
+ "troop": "槍弓防",
+ "sub": "",
+ "effect": "槍・弓部隊の防御力上昇",
+ "furigana": "ながのなりまさ",
+ "illustrator": "小森ニコ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 650,
+ "atkGrowth": 16,
+ "defBase": 720,
+ "defGrowth": 18,
+ "tacticsBase": 445,
+ "tacticsGrowth": 2,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "B",
+  "ki": "C"
+ },
+ "initialSkill": "上州の黄斑",
+ "skillDetail": "B/LV10 確率 25% 防御 40%上昇/対象:槍・弓\n①防御 40%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・弓　確率 25% / 防御 40%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-17登録。カード画像が無いためixanary.com(cards/2145)とixawiki.com(BushoCard/2145長野業正)の生HTMLの一致だけで登録した。",
+  "基礎値/成長値/コスト/指揮兵数/rankGrades(槍S・弓A・馬B・器C)/イラストレーター/スキルLV1数値は両ソースで完全一致。LV10数値はixanary.comのみに記載(ixawikiはLV1のみ掲載)。",
+  "章(ch)は両ソースに記載が無く未確認のためnull。"
+ ]
+}

@@ -1,0 +1,43 @@
+{
+ "name": "南陽院",
+ "no": "2503",
+ "ch": null,
+ "cost": 4,
+ "troop": "槍弓砲攻",
+ "sub": "",
+ "effect": "相手軍の武将数20以上で必ずスキル発動",
+ "furigana": "なんよういん",
+ "illustrator": "ミヤジマハル",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": null,
+ "atkGrowth": null,
+ "defBase": null,
+ "defGrowth": null,
+ "tacticsBase": null,
+ "tacticsGrowth": null,
+ "lv0Troops": 3700,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "忌炎",
+ "skillDetail": "A/LV10 確率 10% 攻撃 78%上昇/対象:槍弓砲\n①攻撃 78%上昇する\n②相手軍の武将数が20以上のとき必ずスキルが発動する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・弓・砲　確率 10% / 攻撃 78%上昇(相手軍の武将数20以上で必ずスキル発動)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "カード画像が無いため ixanary.com/cards/2503 と ixawiki.com(BushoCard/2503南陽院)の生HTML2ソースで確認した。",
+  "コスト4・指揮3700(★0-0)・兵科ランク(槍A・馬A・弓A・器A)・ふりがな・絵師(ミヤジマハル)は両ソース完全一致。LV1スキル値(確率+1%・対象槍弓砲・攻撃42%上昇)も両ソース一致。",
+  "ixawiki.com(BushoCard/2503)のスキル欄はLv1のみの表記でLv10表記が無かったため、LV10スキル値(確率10%・攻撃78%上昇・相手軍の武将数20以上で必ずスキル発動)はixanary.com(cards/2503)のみで確認した(矛盾ではなく片方の情報欠落)。",
+  "【要申し送り】攻撃・防御・兵法の初期値/成長値がixanary.com(cards/2503)は990/1050/500・成長+30/+32/+2.5、ixawiki.com(BushoCard/2503)は1070/1000/510・成長+34/+26/+2.5と食い違っていた。カード画像による裏取りができないためatkBase/atkGrowth/defBase/defGrowth/tacticsBase/tacticsGrowthは全てnullとした。",
+  "初期スキル「忌炎」[A]の合成候補・章はixanary/ixawikiいずれのカードページにも記載が無く未確認。"
+ ]
+}

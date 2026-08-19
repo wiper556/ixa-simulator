@@ -1,0 +1,25 @@
+{
+ "name": "天籟ノ聖譚曲",
+ "rank": "S",
+ "baseRate": 34,
+ "target": "全",
+ "effectSummary": "S/LV10 確率 34% 防御 110%上昇/対象:全\n①防御 110%上昇する(最大兵数指揮時効果1.5倍)",
+ "categoryLinks": [],
+ "sourceCharacters": [
+  {
+   "name": "大友宗麟（4）",
+   "no": "1164",
+   "slot": "移植不可"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 34% / 防御 110%上昇(最大兵数指揮時1.5倍)"
+  }
+ ],
+ "notes": [
+  "A-3-9「武将自身の初期スキル(S以上)は無条件にページを作る」により2026-08-16に一括作成。内容は data/busho/1164.json の skillDetail / trTable からの転記で、新しい事実は持ち込んでいない。"
+ ]
+}

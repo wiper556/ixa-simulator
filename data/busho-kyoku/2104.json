@@ -1,0 +1,40 @@
+{
+ "name": "島津義久",
+ "no": "2104",
+ "ch": null,
+ "cost": 3.0,
+ "troop": "砲器防",
+ "sub": "",
+ "effect": "防御 32%上昇",
+ "furigana": "しまづよしひさ",
+ "illustrator": "BISAI",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 620,
+ "atkGrowth": 17.0,
+ "defBase": 680,
+ "defGrowth": 19.0,
+ "tacticsBase": 520.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 2980,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "B",
+  "uma": "B",
+  "ki": "A"
+ },
+ "initialSkill": "薩摩軍法",
+ "skillDetail": "A/LV10 確率 25% 防御 32%上昇/対象:砲器\n①防御が32%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "砲器　確率 25% / 防御 32%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-17登録。カード画像が無いためixanary.com(cards/2104 と skills/薩摩軍法)とixawiki.com(BushoCard/2104島津義久)の生HTMLを直接確認し両方が一致した項目だけで登録した(reviewedOkはfalseのまま)。",
+  "合成候補(synthesisTable)は今回付けていない。章(ch)は両ソースとも記載が無いため未確認。"
+ ]
+}

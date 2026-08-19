@@ -1,0 +1,39 @@
+{
+ "name": "鮭延秀綱",
+ "no": "2248",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "弓砲器攻破",
+ "sub": "",
+ "effect": "弓・砲・器兵の攻撃・破壊力上昇",
+ "furigana": "さけのべひでつな",
+ "illustrator": "ツヤイルカ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1000,
+ "atkGrowth": 32,
+ "defBase": 940,
+ "defGrowth": 26,
+ "tacticsBase": 470,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3450,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "S",
+  "uma": "B",
+  "ki": "A"
+ },
+ "initialSkill": "清貧ノ悪源太",
+ "skillDetail": "B/LV10 確率 24% 攻撃 67%上昇+破壊 40%上昇/対象:弓・砲・器\n①攻撃 67%上昇する\n②破壊 40%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓・砲・器　確率 24% / 攻撃 67%上昇+破壊 40%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-17登録(担当F)。カード画像が無いためixanary.com(cards/2248)とixawiki.com(index.php?BushoCard/2248鮭延秀綱)の生HTML突き合わせのみで登録した。"
+ ]
+}

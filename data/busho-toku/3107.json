@@ -1,0 +1,39 @@
+{
+ "name": "糟屋武則",
+ "no": "3107",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "槍馬防",
+ "sub": "",
+ "effect": "防御 12%上昇",
+ "furigana": "かすやたけのり",
+ "illustrator": "諏訪原寛幸",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 650,
+ "atkGrowth": 15,
+ "defBase": 710,
+ "defGrowth": 17,
+ "tacticsBase": 350.0,
+ "tacticsGrowth": 1.5,
+ "lv0Troops": 2420,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "C",
+  "uma": "A",
+  "ki": "C"
+ },
+ "initialSkill": "七槍の匠",
+ "skillDetail": "C/LV10 確率 15% 防御 12%上昇/対象:槍・馬\n①防御 12%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・馬　確率 15% / 防御 12%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当H)。カード画像なし。ixanary.com/cards/3107 と ixawiki.com(BushoCard/3107糟屋武則)の生HTMLを突き合わせて登録した。統率・コスト・指揮兵数・スキルの確率と効果値・攻撃/兵法の初期値と成長値は両ソース完全一致。ただし防御初期値はixanaryが710のはずの値を攻撃初期値と同じ650で返す既知の不具合(defBase=atkBaseパターン)に該当したため、ixawikiの値(710)を採用した。"
+ ]
+}

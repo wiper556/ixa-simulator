@@ -1,0 +1,43 @@
+{
+ "name": "井伊直虎",
+ "no": "1093",
+ "ch": null,
+ "cost": 2,
+ "troop": "全防",
+ "sub": "",
+ "effect": "全軍の防御力上昇(部隊ランクで変化)",
+ "furigana": "いいなおとら",
+ "illustrator": "上国料勇",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 910,
+ "atkGrowth": 21,
+ "defBase": 940,
+ "defGrowth": 24,
+ "tacticsBase": 495.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2900,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "女地頭",
+ "skillDetail": "S/LV10 確率 37% 防御 9.9%上昇/対象:全\n①防御 9.9%上昇する(部隊ランクボーナスで効果が変化)\n②部隊ランクスキルの発動率が11%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 37% / 防御 9.9%上昇(部隊ランクボーナスで変化)+部隊ランクスキル発動率 11%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-17登録。カード画像が無いためixanary.com(cards/1093)とixawiki.com(BushoCard/1093井伊直虎)の2ソースで突き合わせた。",
+  "コスト2・指揮兵数2900・統率(槍S/弓A/馬A/器A)・攻撃910(+21)/防御940(+24)/兵法495.0(+2.0)・初期スキル「女地頭」(S)は両ソースで一致し食い違いは無かった。",
+  "skillDetailのLV10数値(確率37%/防御9.9%上昇+部隊ランクスキル発動率11%上昇)はixanaryのLV10欄から採用。ixawikiの表はLV1相当(確率9%)で別レベルの値のため矛盾ではない。",
+  "ixanary.comにはLV1に表示されない追加の部隊スキル「防.戦姫艶舞」の記載があるが、カードLV0画面には出ない枠のためinitialSkillには含めていない。",
+  "章(ch)は情報源に記載が無いため未確認でnull。"
+ ]
+}

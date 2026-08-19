@@ -1,0 +1,46 @@
+{
+ "name": "山崎長徳",
+ "no": "5238",
+ "ch": "26章",
+ "cost": 2,
+ "troop": "槍防",
+ "sub": "",
+ "effect": "槍防10%上昇",
+ "furigana": "やまざきながのり",
+ "illustrator": "かにぱん",
+ "imageFull": "assets/img/characters/no5238_full.png",
+ "imageChar": "assets/img/characters/no5238_char.png",
+ "atkBase": 470,
+ "atkGrowth": 16,
+ "defBase": 500,
+ "defGrowth": 18,
+ "tacticsBase": 410.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 1810,
+ "rankGrades": {
+  "yari": "C",
+  "yumi": "D",
+  "uma": "D",
+  "ki": "D"
+ },
+ "initialSkill": "槍隊堅守",
+ "skillDetail": "F/LV10 確率 20% 槍防 10%上昇/対象:槍\n①槍防 10%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍　確率 20% / 槍防 10%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当L)。カード画像(スキルLV10形式)から。武将名「山崎長徳」/ 序 / コスト2 / 統率 槍C・弓D・馬D・器D(4隅バッジをズームして確認) / 初期値 攻撃470・防御500・兵法410.0 / 指揮兵数0/1810 / カードNo.5238一致 / 初期スキル「槍隊堅守 LV10」[F] 確率+20%・対象 槍・槍防10%上昇 / Illust かにぱん。",
+  "成長値(攻+16/防+18/兵法+2)とrankGrades・furigana・illustratorはixanary.com/cards/5238の埋め込みJSONと一致確認済み。Fランクのためdata/skill/ページの新規作成対象外。",
+  "章は情報源に記載が無く未確認のためnull。ixawikiの個別ページ・一覧ページとも未確認(序レアリティの一覧が存在しない)のため名前の（N）判定材料が無く無印とした。synthesisTableは今回のバッチでは付けない指示のため未作成。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2024-01-29",
+ "wikiCommentCount": 1,
+ "chGuess": "26章",
+ "chSource": "wikiOldestComment"
+}

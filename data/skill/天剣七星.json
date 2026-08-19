@@ -1,0 +1,30 @@
+{
+ "name": "天剣七星",
+ "rank": "S",
+ "baseRate": 100,
+ "target": "槍弓器鉄",
+ "effectSummary": "S/LV10 確率 100% 攻撃 90%上昇/対象:槍弓器鉄\n①攻撃 90%上昇する\n②卓越時に攻撃効果を強化する(追加確率30%・2.5倍)",
+ "categoryLinks": [
+  {
+   "href": "skills-takuetsu.html",
+   "label": "卓越スキル一覧を見る"
+  }
+ ],
+ "sourceCharacters": [
+  {
+   "name": "安東愛季（2）",
+   "no": "1180",
+   "slot": "移植不可"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍弓器鉄　確率 100% / 攻撃 90%上昇(卓越:追加確率30%で2.5倍)"
+  }
+ ],
+ "notes": [
+  "A-3-9「武将自身の初期スキル(S以上)は無条件にページを作る」により2026-08-16に一括作成。内容は data/busho/1180.json の skillDetail / trTable からの転記で、新しい事実は持ち込んでいない。"
+ ]
+}

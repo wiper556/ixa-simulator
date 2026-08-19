@@ -1,0 +1,43 @@
+{
+ "name": "滝川一益（2）",
+ "no": "2324",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "槍弓器鉄攻防",
+ "sub": "",
+ "effect": "対象兵科の攻撃・防御が上昇+部隊内「将」武将のスキル発動率上昇",
+ "furigana": "たきがわかずます",
+ "illustrator": "鹿角",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1060,
+ "atkGrowth": 38,
+ "defBase": 1060,
+ "defGrowth": 38,
+ "tacticsBase": 510,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3670,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "B",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "自在ノ用兵",
+ "skillDetail": "A/LV10 確率 100% 攻撃 90%上昇/対象:槍弓器鉄\n①攻撃 90%上昇する\n②防御 90%上昇する\n③部隊内「将」武将のスキル発動率+10%を得る(特殊効果は部隊内重複不可)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍弓器鉄　確率 100% / 攻撃 90%上昇+防御 90%上昇(「将」武将発動率+10%・特殊効果は部隊内重複不可)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(カード画像なし・第2波)。ixanary.com(cards/2324)生HTMLの埋め込みJSON(ふりがな・イラストレーター・cost・指揮兵数・統率力・攻防兵法初期値/成長値・スキル名/確率/効果)とixawiki.com(BushoCard/2324滝川一益)の基本ステータス表・スキル追加表を突き合わせ、両ソース完全一致(食い違いなし)を確認して登録した。imageFull/imageChar/rankGradesの根拠はカード画像でなく2ソース一致による。",
+  "初期スキル「自在ノ用兵」は既にdata/skill/自在ノ用兵.json(sourceCharacters斎藤朝信（4）)が存在したため、そのeffectSummary/効果表記をそのまま踏襲した(内容は本カードのixanary/ixawiki突き合わせ結果と完全一致)。",
+  "章(ch)は情報源(ixanary.com/ixawiki.com)に記載が無く未確認のためnullとした。"
+ ],
+ "wikiOldestComment": "2022-07-04",
+ "wikiCommentCount": 25
+}

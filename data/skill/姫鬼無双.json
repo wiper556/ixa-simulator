@@ -1,0 +1,25 @@
+{
+ "name": "姫鬼無双",
+ "rank": "S",
+ "baseRate": 25,
+ "target": "槍",
+ "effectSummary": "S/LV10 確率 25% 攻撃 35%上昇/対象:槍\n①攻撃 35%上昇する\n②破壊 30%上昇する",
+ "categoryLinks": [],
+ "sourceCharacters": [
+  {
+   "name": "長宗我部元親",
+   "no": "1010",
+   "slot": "移植不可"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍　確率 25% / 攻撃 35%上昇+破壊 30%上昇"
+  }
+ ],
+ "notes": [
+  "A-3-9「武将自身の初期スキル(S以上)は無条件にページを作る」により2026-08-16に一括作成。内容は data/busho/1010.json の skillDetail / trTable からの転記で、新しい事実は持ち込んでいない。"
+ ]
+}

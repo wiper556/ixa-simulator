@@ -1,0 +1,36 @@
+{
+ "name": "武田信玄-復刻-【覇】",
+ "no": "1977",
+ "ch": null,
+ "cost": 4,
+ "troop": "全攻速",
+ "sub": "",
+ "effect": "6部隊以下の攻撃で攻撃効果1.5倍",
+ "furigana": "たけだしんげん",
+ "illustrator": "直良有祐",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1080,
+ "atkGrowth": 34,
+ "defBase": null,
+ "defGrowth": 32,
+ "tacticsBase": 700,
+ "tacticsGrowth": 3,
+ "lv0Troops": 3880,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "B",
+  "uma": "SS",
+  "ki": "A"
+ },
+ "initialSkill": "覇神雷霆",
+ "skillDetail": null,
+ "trTable": null,
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-17登録。カード画像が無いためixanary.com(cards/1977)とixawiki.com(BushoCard/1977武田信玄)の生HTML2ソースのみで作成した。imageFull/imageCharはnull。",
+  "cost/lv0Troops/rankGrades/atkBase・atkGrowth/defGrowth/tacticsBase・tacticsGrowthは両ソース一致。defBaseのみixanary=1080・ixawiki=970で食い違ったためnullにした(今回の割当20体のうち17体で発生している系統的な食い違い)。ixawikiには「※取引出品不可」の注記あり。",
+  "覇神雷霆は確率100%/対象全/速度40%上昇の部分は両ソース一致(6部隊以下の攻撃で攻撃効果1.5倍という特殊効果も一致)したが、攻撃上昇量がixanaryのLV1=20%・LV10=60%であるのに対しixawikiは30%で、どちらのLVとも一致しない食い違いがあったためskillDetail/trTableをnullにした。troopは両ソースが「攻撃・速度が上昇する」こと自体は一致していたため「全攻速」と記載した。",
+  "reviewedOkはfalseのまま。カード画像による4隅バッジ・スキルパネル照合が未実施のため黄丸化はできない。"
+ ]
+}

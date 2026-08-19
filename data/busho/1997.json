@@ -1,0 +1,43 @@
+{
+ "name": "織田信長-復刻-（3）【覇】",
+ "no": "1997",
+ "ch": null,
+ "cost": 5,
+ "troop": "馬砲器攻",
+ "sub": "",
+ "effect": "対象兵科指揮時に部隊総攻撃力が上昇",
+ "furigana": "おだのぶなが",
+ "illustrator": "直良有祐",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1200,
+ "atkGrowth": 56,
+ "defBase": null,
+ "defGrowth": 40,
+ "tacticsBase": null,
+ "tacticsGrowth": 3.5,
+ "lv0Troops": 4640,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "S",
+  "ki": "S"
+ },
+ "initialSkill": "覇神絶域",
+ "skillDetail": "SSS/LV10 確率 40% 攻撃 24%上昇/対象:馬・砲・器\n模倣不可\n①対象兵科を指揮した戦闘時部隊総攻撃力が24%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "馬・砲・器　確率 40% / 攻撃 24%上昇(対象兵科を指揮した戦闘時のみ)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "カード画像が無いため imageFull/imageChar は null。ixanary.comの埋め込みJSON(cards/1997)とixawiki.com(BushoCard/1997)の基本ステータス表・スキル表を突き合わせて登録した。",
+  "defBase(防御初期値)がixanaryでは1200(攻撃と同値)・ixawikiでは1080で食い違ったためnullにした。",
+  "tacticsBase(兵法初期値)もixanaryでは710・ixawikiでは700で食い違ったためnullにした(成長値3.5は両ソース一致)。"
+ ],
+ "wikiOldestComment": "2021-04-12",
+ "wikiCommentCount": 87
+}

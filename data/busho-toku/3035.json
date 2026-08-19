@@ -1,0 +1,42 @@
+{
+ "name": "真田幸村",
+ "no": "3035",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "槍馬砲防",
+ "sub": "",
+ "effect": "防御 30%上昇",
+ "furigana": "さなだゆきむら",
+ "illustrator": "April",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 690,
+ "atkGrowth": 18,
+ "defBase": 720,
+ "defGrowth": 18,
+ "tacticsBase": 385.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 2180,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "C",
+  "uma": "A",
+  "ki": "D"
+ },
+ "initialSkill": "真田丸",
+ "skillDetail": "D/LV10 確率 15% 防御 30%上昇/対象:槍・馬・砲\n①防御 30%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・馬・砲　確率 15% / 防御 30%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当D)。カード画像が無いためixanary.com(cards/3035)とixawiki.com(index.php?BushoCard/3035真田幸村, Busho/武将カード一覧)の生HTML2ソースを突き合わせて登録した。",
+  "統率(A/C/A/D)・コスト2.5・指揮兵数2180・攻撃690/18・防御720/18・兵法385.0/2.5・ふりがな・初期スキル「真田丸」[D]はixanary.comとixawiki.comの2ソースで一致することを確認した(不一致箇所は個別に注記)。",
+  "defBaseはixanary.com(690=atkBaseと同値、防御が攻撃と同じ値になる既知の破損パターン)とixawiki.com(720)が食い違った。ixawikiは独立に690と異なる720を示しており攻防同値バグではないため、ixawiki.comの720を採用した。",
+  "カード画像が無いためimageFull/imageCharはnull、synthesisTableは付けない。reviewedOkはfalseのまま。章(ch)は両ソースとも記載が無くnullとした。"
+ ]
+}

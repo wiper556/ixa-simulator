@@ -1,0 +1,39 @@
+{
+ "name": "浅野長晟",
+ "no": "2341",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "槍馬器鉄攻",
+ "sub": "",
+ "effect": "攻撃 170%上昇(強襲専用部隊配置時コスト消費-1.5)",
+ "furigana": "あさのながあきら",
+ "illustrator": "三好載克",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1110,
+ "atkGrowth": 42,
+ "defBase": 1050,
+ "defGrowth": 33,
+ "tacticsBase": 520,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3700,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "B",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "渾身勇略",
+ "skillDetail": "A/LV10 確率 54% 攻撃 170%上昇/対象:槍・馬・器・鉄\n模倣不可・コスト減算はこの武将のコスト分まで\n①攻撃 170%上昇する\n②強襲専用部隊に配置時この武将の部隊コスト消費を-1.5する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・馬・器・鉄　確率 54% / 攻撃 170%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当J・第2波・カード画像なし)。ixanary.com(cards/2341)生HTMLとixawiki.com(index.php?BushoCard/2341浅野長晟、およびBusho/武将カード一覧(極))の2ソースでコスト/指揮兵数/統率ランク/攻撃防御兵法の初期値成長値/スキル効果(LV1・LV10)が完全一致することを確認して登録した。"
+ ]
+}

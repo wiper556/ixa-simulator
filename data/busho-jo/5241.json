@@ -1,0 +1,43 @@
+{
+ "name": "穂井田元清",
+ "no": "5241",
+ "ch": null,
+ "cost": 2,
+ "troop": "槍攻",
+ "sub": "",
+ "effect": "槍攻15%上昇",
+ "furigana": "ほいだもときよ",
+ "illustrator": "東柚己",
+ "imageFull": "assets/img/characters/no5241_full.png",
+ "imageChar": "assets/img/characters/no5241_char.png",
+ "atkBase": 510,
+ "atkGrowth": 18,
+ "defBase": 470,
+ "defGrowth": 16,
+ "tacticsBase": 410.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 1820,
+ "rankGrades": {
+  "yari": "C",
+  "yumi": "D",
+  "uma": "D",
+  "ki": "D"
+ },
+ "initialSkill": "槍隊進撃",
+ "skillDetail": "F/LV10 確率 10% 槍攻 15%上昇/対象:槍\n①槍攻 15%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍　確率 10% / 槍攻 15%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当L)。カード画像(スキルLV10形式)から。武将名「穂井田元清」/ 序 / コスト2 / 統率 槍C・弓D・馬D・器D(4隅バッジをズームして確認) / 初期値 攻撃510・防御470・兵法410.0 / 指揮兵数0/1820 / カードNo.5241一致 / 初期スキル「槍隊進撃 LV10」[F] 確率+10%・対象 槍・槍攻15%上昇 / Illust 東柚己。",
+  "成長値(攻+18/防+16/兵法+2)とrankGrades・furigana・illustratorはixanary.com/cards/5241の埋め込みJSONと一致確認済み(このカードはyumi/kibaの食い違いなし)。Fランクのためdata/skill/ページの新規作成対象外。",
+  "章は情報源に記載が無く未確認のためnull。ixawikiの個別ページ・一覧ページとも未確認(序レアリティの一覧が存在しない)のため名前の（N）判定材料が無く無印とした。synthesisTableは今回のバッチでは付けない指示のため未作成。"
+ ],
+ "wikiOldestComment": null,
+ "wikiCommentCount": 0
+}

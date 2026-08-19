@@ -51,6 +51,28 @@ body{
   padding:18px 16px;border-bottom:1px solid rgba(255,255,255,0.12);flex-shrink:0;
 }
 .sidebar-title{font-family:'Noto Serif JP', serif;font-weight:900;font-size:15px;color:#f0ede4;}
+/* ページ内検索(site-sidebar.jsが差し込む)。ブラウザのCtrl+Fは奪っていない */
+.sidebar-search{padding:10px 10px 0;flex-shrink:0;}
+.sidebar-search-input{
+  width:100%;box-sizing:border-box;padding:8px 10px;border-radius:6px;
+  border:1px solid rgba(255,255,255,0.22);background:rgba(255,255,255,0.06);
+  color:#f0ede4;font-size:13px;
+}
+.sidebar-search-input::placeholder{color:#8f897c;}
+.sidebar-search-input:focus{outline:none;border-color:var(--gold-bright);}
+.sidebar-search-bar{
+  display:none;align-items:center;justify-content:space-between;
+  margin-top:6px;font-size:12px;color:#cfc9ba;
+}
+.sidebar-search.has-q .sidebar-search-bar{display:flex;}
+.sidebar-search-nav button{
+  background:none;border:1px solid rgba(255,255,255,0.22);color:#cfc9ba;
+  border-radius:4px;cursor:pointer;font-size:10px;padding:2px 6px;margin-left:4px;
+}
+.sidebar-search-nav button:hover{color:var(--gold-bright);border-color:var(--gold-bright);}
+mark.sidebar-search-hit{background:#ffe9a8;color:inherit;padding:0;}
+mark.sidebar-search-hit.is-current{background:#ffb020;box-shadow:0 0 0 2px #ffb020;}
+
 .sidebar-nav{display:flex;flex-direction:column;padding:10px;}
 .sidebar-nav a{
   padding:12px 14px;border-radius:6px;color:#cfc9ba;text-decoration:none;

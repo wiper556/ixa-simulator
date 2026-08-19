@@ -1,0 +1,43 @@
+{
+ "name": "徳川家康",
+ "no": "2539",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "弓砲器攻",
+ "sub": "",
+ "effect": "攻撃 87%上昇(合流攻撃時は発動率2倍)",
+ "furigana": "とくがわいえやす",
+ "illustrator": "株式会社レバーン＋しいたけ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1050,
+ "atkGrowth": 36,
+ "defBase": 1000,
+ "defGrowth": 32,
+ "tacticsBase": 510,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3540,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "S",
+  "uma": "B",
+  "ki": "A"
+ },
+ "initialSkill": "覇・四神天道",
+ "skillDetail": "A/LV10 確率 35% 攻撃 87%上昇/対象:弓・砲・器\n①攻撃 87%上昇する\n②合流攻撃時は発動率が2倍になる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓・砲・器　確率 35% / 攻撃 87%上昇(合流攻撃時は発動率2倍)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18新規登録(担当D・カード画像なし)。ixanary.com/cards/2539とixawiki.com(index.php?BushoCard/2539徳川家康)の生HTML2ソースで確認。「戦国IXA千万の覇者コラボログインキャンペーン」累計22日目の報酬カード。",
+  "コスト3.5・指揮兵数3540・攻撃1050/防御1000(両ソース独立に一致・防御バグ無し)・成長+36/+32/+2.5・ふりがな・統率(槍A弓S馬B器A)・絵師(株式会社レバーン＋しいたけ)は2ソース完全一致。",
+  "【片方のみ確認】ixawikiのこのカードのページにはLv1相当の1行(確率8%/攻撃40%上昇/合流攻撃時発動率2倍)のみが記載されておりLv10の行が無かった。Lv1の値はixanaryのLV1表示と完全一致したため同一スキルの記載として信頼できるが、LV10の値(確率35%/攻撃87%上昇)はixanaryのみでの確認となる。",
+  "初期スキル名が「覇・四神天道」だが、効果文に他武将のスキルを無効化・発動率低下から保護する記述が無く覇道スキルとしては扱っていない。",
+  "章(ch)は両ソースとも記載が無くnullのまま。カード画像自体が無いためimageFull/imageCharはnull、reviewedOkはfalseのまま。"
+ ]
+}

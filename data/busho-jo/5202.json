@@ -1,0 +1,44 @@
+{
+ "name": "梅津政景",
+ "no": "5202",
+ "ch": null,
+ "cost": 1.5,
+ "troop": "弓防",
+ "sub": "",
+ "effect": "弓防15%上昇",
+ "furigana": "うめづまさかげ",
+ "illustrator": "森田悠新",
+ "imageFull": "assets/img/characters/no5202_full.png",
+ "imageChar": "assets/img/characters/no5202_char.png",
+ "atkBase": 480,
+ "atkGrowth": 15,
+ "defBase": 490,
+ "defGrowth": 18,
+ "tacticsBase": 400.0,
+ "tacticsGrowth": 1.5,
+ "lv0Troops": 1390,
+ "rankGrades": {
+  "yari": "D",
+  "yumi": "C",
+  "uma": "D",
+  "ki": "D"
+ },
+ "initialSkill": "弓隊備え",
+ "skillDetail": "F/LV10 確率 10% 弓防 15%上昇/対象:弓\n①弓防 15%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓　確率 10% / 弓防 15%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当H)。カード画像(スキルLV10形式)から。武将名「梅津政景」/ 序 / コスト1.5 / 統率 槍D・弓C・馬D・器D(4隅アイコンを個別にズームして確認) / 初期値 攻撃480・防御490・兵法400.0 / 指揮兵数0/1390 / カードNo.5202一致 / 初期スキル「弓隊備え LV10」[F] 確率+10%・対象 弓・弓防15%上昇 / Illust 森田悠新。",
+  "成長値(攻+15/防+18/兵法+1.5)・furigana・スキル数値はixanary.com/cards/5202の生HTML(埋め込みJSON)と完全一致。",
+  "ixawikiの当該武将ページは未作成(編集画面が返る)のため名前の（N）判定材料なし。ixanaryの同名武将欄も「0武将」のため無印とした。",
+  "章はixanary/ixawikiとも記載が無く未確認のためnull。初期スキルはFランクのためdata/skill/ページの新規作成対象外。"
+ ],
+ "wikiOldestComment": null,
+ "wikiCommentCount": 0
+}

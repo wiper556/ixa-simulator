@@ -1,0 +1,39 @@
+{
+ "name": "明石全登",
+ "no": "2408",
+ "ch": null,
+ "cost": 3,
+ "troop": "馬器騎攻",
+ "sub": "",
+ "effect": "攻撃 67%上昇",
+ "furigana": "あかしたけのり",
+ "illustrator": "正子公也",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1040,
+ "atkGrowth": 30,
+ "defBase": 1000,
+ "defGrowth": 27,
+ "tacticsBase": 510,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3250,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "B",
+  "uma": "S",
+  "ki": "A"
+ },
+ "initialSkill": "騎士団ノ帰還",
+ "skillDetail": "A/LV10 確率 49% 攻撃 67%上昇/対象:馬・器・騎\n①攻撃 67%上昇する\n②所属部隊を含む自部隊同時攻撃で消費する名声値を-30する(重複不可)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "馬・器・騎　確率 49% / 攻撃 67%上昇(所属部隊を含む自部隊同時攻撃で消費する名声値-30・重複不可)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "カード画像が無いため imageFull/imageChar は null。ixanary.comの埋め込みJSON(cards/2408)とixawiki.com(BushoCard/2408明石全登)の基本ステータス表・スキル表を突き合わせて登録した。"
+ ]
+}

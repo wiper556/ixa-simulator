@@ -1,0 +1,43 @@
+{
+ "name": "明智光秀",
+ "no": "2526",
+ "ch": null,
+ "cost": 4,
+ "troop": "砲器攻",
+ "sub": "",
+ "effect": "攻撃 92%上昇(強襲時または強襲部隊との戦闘時に効果1.5倍)",
+ "furigana": "あけちみつひで",
+ "illustrator": "©原哲夫・北原星望／コアミックス, CGF-400",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1070,
+ "atkGrowth": 44,
+ "defBase": 990,
+ "defGrowth": 34,
+ "tacticsBase": 580,
+ "tacticsGrowth": 3,
+ "lv0Troops": 3800,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "反逆ノ火筒",
+ "skillDetail": "A/LV10 確率 66% 攻撃 92%上昇/対象:砲・器\n①攻撃 92%上昇する\n②強襲時または強襲部隊との戦闘時に効果が1.5倍になる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "砲・器　確率 66% / 攻撃 92%上昇(強襲時または強襲部隊との戦闘時に効果1.5倍)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18新規登録(担当C・カード画像なし)。ixanary.com/cards/2526とixawiki.com(index.php?BushoCard/2526明智光秀)の生HTML2ソースで全項目が一致することを確認した(画像照合は無し)。",
+  "武将名: ixawiki一覧は無印の「明智光秀」表記。既存の無印「明智光秀」が既に2件(No.1036・No.2037)登録されており3件目の同名重複になるが、ixawiki一覧が区別していないためassign_C.txtの指示通り無印で登録した。「いくさの子 -織田三郎信長伝-」とのコラボカード(No.2525織田三郎信長と対のカード)。要再検討(申し送り事項)。",
+  "コスト4・指揮兵数3800(★0-0)・成長値+44/+34/+3.0・ふりがな・絵師(©原哲夫・北原星望／コアミックス, CGF-400)は2ソースで内容一致(ixawikiは<br>区切り、ixanaryは／区切りで表記のみ異なる)。統率(槍A/弓A/馬A/器S)も2ソース一致。",
+  "attack=1070/defence=990と異なる値。ixanaryはcapacity JSON上attack=defence=1070と表示されるが、これはixanaryの防御バグ(攻撃値をそのままコピーする不具合)と判断し、独立ソースのixawiki(初期値の防御列=990)の値を採用した。",
+  "章はixanary/ixawikiいずれのカードページにも記載が無く未確認。"
+ ]
+}

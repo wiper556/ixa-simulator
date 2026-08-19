@@ -1,0 +1,48 @@
+{
+ "name": "丸毛兼利",
+ "no": "4265",
+ "ch": "22章",
+ "cost": 2,
+ "troop": "弓防",
+ "sub": "",
+ "effect": "弓防 10%上昇",
+ "furigana": "まるもかねとし",
+ "illustrator": "つよ丸",
+ "imageFull": "assets/img/characters/no4265_full.png",
+ "imageChar": "assets/img/characters/no4265_char.png",
+ "atkBase": 570,
+ "atkGrowth": 15,
+ "defBase": 630,
+ "defGrowth": 18,
+ "tacticsBase": 430.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 1860,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "B",
+  "uma": "D",
+  "ki": "C"
+ },
+ "initialSkill": "弓隊堅守",
+ "skillDetail": "F/LV10 確率 20% 弓防 10%上昇/対象:弓\n①弓防 10%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓　確率 20% / 弓防 10%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当H)。カード画像(スキルLV10形式)から。武将名「丸毛兼利」/上/コスト2/統率 槍B・弓B・馬D・器C(4隅を個別にズームして確認)/攻撃570・防御630・兵法430.0/指揮兵数0/1860/カードNo.4265/スキル「弓隊堅守LV10」[F] 確率:+20%・対象 弓・弓防:10%上昇/Illust:つよ丸(カード画像下部をズームして確認)。",
+  "成長値(攻撃+15/防御+18/兵法+2)はixanary.com/cards/4265の武将データ表で確認しカード画像の初期値(570/630/430.0)・指揮1860・コスト2・イラストレーター名(つよ丸)とも一致。",
+  "ixawikiは未確認(標準2ソースのうちixanaryで十分裏取りできたため未照合)。章はixanaryに記載がなく null のまま。",
+  "上カードは合成テーブル・TR段階が存在しない前提(data/busho-toku/3418.jsonの前例に合わせ、trTableはLV10のみ)。ixanaryのカードページにもTR/鍛錬・合成候補の記載なし。",
+  "初期スキル「弓隊堅守」はFランクのためSランク以上のskillページ作成規約には該当せず、data/skill/弓隊堅守.json は作成していない(No.4259五藤為重と同名スキル)。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2021-11-04",
+ "wikiCommentCount": 1,
+ "chGuess": "22章",
+ "chSource": "wikiOldestComment"
+}

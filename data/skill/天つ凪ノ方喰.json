@@ -1,0 +1,25 @@
+{
+ "name": "天つ凪ノ方喰",
+ "rank": "S",
+ "baseRate": 24,
+ "target": "槍・馬",
+ "effectSummary": "S/LV10 確率 24% 防御 65%上昇/対象:槍・馬\n①防御 65%上昇する\n②合流攻撃防御時は必ずスキルが発動する",
+ "categoryLinks": [],
+ "sourceCharacters": [
+  {
+   "name": "長宗我部盛親",
+   "no": "1074",
+   "slot": "移植不可"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・馬　確率 24% / 防御 65%上昇(合流攻撃防御時必ず発動)"
+  }
+ ],
+ "notes": [
+  "A-3-9「武将自身の初期スキル(S以上)は無条件にページを作る」により2026-08-16に一括作成。内容は data/busho/1074.json の skillDetail / trTable からの転記で、新しい事実は持ち込んでいない。"
+ ]
+}

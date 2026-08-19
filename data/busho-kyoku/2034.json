@@ -1,0 +1,39 @@
+{
+ "name": "小西行長",
+ "no": "2034",
+ "ch": null,
+ "cost": 3,
+ "troop": "砲攻破",
+ "sub": "",
+ "effect": "対象兵科の攻撃・破壊上昇",
+ "furigana": "こにしゆきなが",
+ "illustrator": "月岡ケル",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 670,
+ "atkGrowth": 18,
+ "defBase": 650,
+ "defGrowth": 16,
+ "tacticsBase": 410,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 2830,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "B",
+  "uma": "C",
+  "ki": "S"
+ },
+ "initialSkill": "鉄甲水軍",
+ "skillDetail": "B/LV10 確率 26% 攻撃 25%上昇+破壊 7%上昇/対象:砲\n①攻撃 25%上昇する\n②破壊 7%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "砲　確率 26% / 攻撃 25%上昇+破壊 7%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-17登録。カード画像が無いためixanary.com(cards/2034)とixawiki.com(BushoCard/2034小西行長)の生HTMLを突き合わせて一致した項目のみ登録した。基礎値/成長値/コスト/指揮兵数/統率ランク/スキル確率/効果値は両ソースで完全一致を確認済み。"
+ ]
+}

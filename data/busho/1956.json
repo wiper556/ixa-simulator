@@ -1,0 +1,42 @@
+{
+ "name": "織田信長-復刻-【覇】",
+ "no": "1956",
+ "ch": null,
+ "cost": 4,
+ "troop": "砲器攻",
+ "sub": "",
+ "effect": "砲・器部隊の攻撃力上昇",
+ "furigana": "おだのぶなが",
+ "illustrator": "直良有祐",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1070,
+ "atkGrowth": 27,
+ "defBase": null,
+ "defGrowth": 23,
+ "tacticsBase": 740.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3850,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "B",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "天魔覇旬",
+ "skillDetail": "S/LV10 確率 10% 攻撃 40%上昇/対象:砲・器\n①攻撃 40%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "砲・器　確率 10% / 攻撃 40%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-17登録。カード画像が無いためixanary.com(cards/1956)とixawiki.com(BushoCard/1956織田信長)の2ソースで突き合わせた。",
+  "防御初期値(defBase)がixanaryは1070(攻撃と同値)、ixawikiは980で食い違ったためnullにした。防御成長値(+23)・攻撃1070(+27)・兵法740.0(+2.5)・指揮兵数3850・コスト4・統率(槍S/弓B/馬A/器S)・初期スキル「天魔覇旬」(S)の確率/対象/効果は両ソース一致。",
+  "カードのjobTypeは「覇」(覇者カード)だが初期スキル「天魔覇旬」自体に保護効果文が無くカード上の赤字「覇道」表記も画像が無いため確認できないためsubは「覇道」にしなかった。",
+  "章(ch)は情報源に記載が無いため未確認でnull。"
+ ]
+}

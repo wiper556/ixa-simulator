@@ -136,7 +136,7 @@
   "2026-08-13: ユーザーがゲーム内で確認した回答による。 章を 未確認 → 31章 に確定。",
   "2026-08-16黄丸化検証: ixanary.com生HTML(cards/7011, skills/御旗ノ守護者)でLV1/LV10/TR1/TR2の数値・合成テーブル(1次A=霊妙秘剣,B=龍門ノ賢者,C=戦陣剣舞,S1=御旗ノ守護者自己参照,S2=志半ノ矛楯自己参照/2次A=戦陣剣舞[A],B=志半ノ矛楯,C=仙剣破斬[SSS])を再確認、既存データと一致(以前は「サイト内の既存登録から転記」のみで一次情報源未確認だったため今回直接ixanaryで裏取り)。A-3-11の逆引き漏れ(霊妙秘剣.json・戦陣剣舞.jsonともに7011が未登録)を発見・修正。categoryLinks(skills-takuetsu.html)が未登録だったため御旗ノ守護者を新規追加しcategoryLinksも追加した。B枠(龍門ノ賢者→志半ノ矛楯)は志半ノ矛楯がページ非保持のため対象外。rankGrades(yari:B/yumi:A/uma:S/ki:A)はカード画像4隅バッジで再照合済み"
  ],
- "reviewedOk": true,
+ "reviewedOk": false,
  "wikiOldestComment": "2026-04-23",
  "wikiCommentCount": 1,
  "chGuess": "31章"

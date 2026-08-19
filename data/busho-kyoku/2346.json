@@ -1,0 +1,40 @@
+{
+ "name": "加藤貞泰",
+ "no": "2346",
+ "ch": null,
+ "cost": 4,
+ "troop": "槍弓鉄焙攻",
+ "sub": "飛翔5",
+ "effect": "通常確率では発動せず卓越:追加確率30%で発動(攻撃 240%上昇+飛翔5)",
+ "furigana": "かとうさだやす",
+ "illustrator": "小森ニコ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1110,
+ "atkGrowth": 44,
+ "defBase": 1050,
+ "defGrowth": 32,
+ "tacticsBase": 520,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3930,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "B",
+  "ki": "A"
+ },
+ "initialSkill": "不沈ノ揺光",
+ "skillDetail": "A/LV10 卓越:追加確率30%で発動 攻撃 240%上昇/対象:槍・弓・鉄・焙\n①通常確率では発動せず卓越:追加確率30%で発動する\n②発動時攻撃 240%上昇する\n③発動時飛翔5を得る(攻撃戦闘時のみ・飛翔獲得部分は模倣不可・二重卓越不可)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・弓・鉄・焙　卓越:追加確率 30%で発動 / 攻撃 240%上昇+飛翔5(攻撃戦闘時のみ・飛翔獲得部分は模倣不可・二重卓越不可)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当J・第2波・カード画像なし)。ixanary.com(cards/2346)生HTMLとixawiki.com(index.php?BushoCard/2346加藤貞泰、およびBusho/武将カード一覧(極))の2ソースでコスト/指揮兵数/統率ランク/攻撃防御兵法の初期値成長値/スキル効果(LV1・LV10)が完全一致することを確認して登録した。",
+  "通常確率では発動せず卓越のみで発動する形式のため、既存の類似書式(busho-kyoku-ps/2582等)に合わせてskillDetailヘッダーを「卓越:追加確率N%で発動」の形にした。"
+ ]
+}

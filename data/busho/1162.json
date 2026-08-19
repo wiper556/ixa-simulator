@@ -1,0 +1,50 @@
+{
+ "name": "一条兼定",
+ "no": "1162",
+ "ch": "19章",
+ "cost": 4.5,
+ "troop": "全防破",
+ "sub": "",
+ "effect": "追加スキルの防御・破壊効果を2倍にする",
+ "furigana": "いちじょうかねさだ",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1162_full.png",
+ "imageChar": "assets/img/characters/no1162_char.png",
+ "atkBase": 1000,
+ "atkGrowth": 34,
+ "defBase": 1090,
+ "defGrowth": 49,
+ "tacticsBase": 620.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 4600,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "堕天慟哭",
+ "skillDetail": "S/LV10 確率 100% 対象:追加スキル\n模倣不可\n①このスキルを持つ武将カードは追加スキルの防御・破壊効果が2倍となる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "追加スキル　確率 100% / 防御・破壊効果 2倍(模倣不可)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録。カード画像(スキルLV10形式)から名前/コスト/攻防兵法/指揮兵数/統率4隅バッジ/スキル名と効果文を読み取った。",
+  "統率バッジはカード画像を6倍拡大して4隅個別に確認: 槍S/馬A/弓A/器A。",
+  "成長値(攻+34/防+49/兵法+2.5)はixanary.com(cards/1162)の生HTML成長表で確認、初期値(1000/1090/620)はカード画像と一致。",
+  "スキルの対象が「追加スキル」で兵科指定が無いため、既存の同種スキル(data/busho/1066.json・1166.json)の慣例に合わせtroopは「全防破」とした。",
+  "名前の（N）表記はixawiki.com武将カード一覧(天)の生HTML(BushoCard/1162一条兼定)に無し(無印)。",
+  "初期スキル堕天慟哭はSランクだがdata/skill/堕天慟哭.jsonが未作成(要対応、本担当ではページ新規作成はしない)。",
+  "章(ch)は情報源で確認できず未確認のためnull。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2020-02-14",
+ "wikiCommentCount": 62,
+ "chGuess": "19章",
+ "chSource": "wikiOldestComment"
+}

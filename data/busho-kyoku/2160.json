@@ -1,0 +1,39 @@
+{
+ "name": "馬場信房（2）",
+ "no": "2160",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "槍弓馬防",
+ "sub": "",
+ "effect": "槍・弓・馬部隊の防御力上昇(敵に兵器兵科がいれば効果2倍)",
+ "furigana": "ばばのぶふさ",
+ "illustrator": "三好載克",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 800,
+ "atkGrowth": 19,
+ "defBase": 920,
+ "defGrowth": 20,
+ "tacticsBase": 450.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 3380,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "S",
+  "ki": "B"
+ },
+ "initialSkill": "鳳凰の采配",
+ "skillDetail": "B/LV10 確率 36% 防御 28%上昇/対象:槍・弓・馬\n①防御 28%上昇する(攻撃部隊に兵器兵科がいれば効果2倍)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・弓・馬　確率 36% / 防御 28%上昇(攻撃部隊に兵器兵科がいれば効果2倍)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "カード画像が無いためimageFull/imageChar は null。ixanary.com(cards/2160)とixawiki.com(BushoCard/2160馬場信房)を突き合わせて登録した。基本ステータス・ランク・スキル数値とも両ソースで一致。"
+ ]
+}

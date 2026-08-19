@@ -1,0 +1,48 @@
+{
+ "name": "神子田正治",
+ "no": "4274",
+ "ch": "24章",
+ "cost": 2,
+ "troop": "槍攻",
+ "sub": "",
+ "effect": "攻撃 13%上昇(武将のコストで変動)",
+ "furigana": "みこだまさはる",
+ "illustrator": "ぴよ",
+ "imageFull": "assets/img/characters/no4274_full.png",
+ "imageChar": "assets/img/characters/no4274_char.png",
+ "atkBase": 640,
+ "atkGrowth": 19,
+ "defBase": 560,
+ "defGrowth": 15,
+ "tacticsBase": 440.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 1890,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "C",
+  "uma": "C",
+  "ki": "C"
+ },
+ "initialSkill": "槍隊挟撃",
+ "skillDetail": "E/LV10 確率 25% 攻撃 13%上昇/対象:槍\n①攻撃 13%上昇する(武将のコストで効果が変化する)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍　確率 25% / 攻撃 13%上昇(武将のコストで変動)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当E)。カード画像(スキルLV10形式)から。武将名「神子田正治」/ 職業「攻」/ 極・覇表記なし / コスト2 / 統率 槍B・弓C・馬C・器C(4隅を個別にズームして確認) / 初期値 攻撃640・防御560・兵法440.0 / 指揮兵数 0/1890 / カードNo.4274 / 初期スキル「槍隊挟撃 LV10」[E] 確率+25%・対象 槍・槍攻:13%上昇(武将のコストで効果が変化します) / Illust ぴよ。",
+  "初期スキル名はカード画像の低解像度では「槍隊扶撃」とも読めたが、ixanary.com/cards/4274とixawiki.com(BushoCard/4274神子田正治)が揃って「槍隊挟撃」のため訂正して採用。イラストレーター名も低解像度では「びよ」に見えたが両ソースとも「ぴよ」(半濁点)のため訂正。",
+  "成長値(攻撃+19・防御+15・兵法+2)とrankGrades(槍B/馬C/弓C/器C)はixanary.com・ixawiki.comの2ソースとカード画像で一致。ixawiki.comのスキル表記は確率+15%/槍攻+8.75%とカードのLV10表記(確率+25%/槍攻13%上昇)と異なる値だったが、これは掲載レベル差(LV10未満のスナップショット)とみられるためカード画像のLV10表記を採用した。",
+  "ixawiki.comのカードページに合成候補テーブルの記載があったが、本バッチは新規カードJSON作成のみが指示範囲のためsynthesisTableは未作成。初期スキルはEランクでdata/skill/ページの新規作成対象外。",
+  "章(ch)は両ソースとも記載が無く判断材料が無いためnullのまま。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2022-08-16",
+ "wikiCommentCount": 4,
+ "chGuess": "24章",
+ "chSource": "wikiOldestComment"
+}

@@ -1,0 +1,46 @@
+{
+ "name": "花舜夫人-復刻-（2）",
+ "no": "2515",
+ "ch": null,
+ "cost": 2,
+ "troop": "全防",
+ "sub": "",
+ "effect": "防御 50%上昇(敵軍全攻撃部隊の武将攻撃力を70%低下)",
+ "furigana": "かしゅんふじん",
+ "illustrator": "萩谷薫",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 970,
+ "atkGrowth": 30,
+ "defBase": 970,
+ "defGrowth": 30,
+ "tacticsBase": 500,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 2540,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": null,
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "花舜妙覚",
+ "skillDetail": "A/LV10 確率 100% 防御 50%上昇/対象:全\n①防御 50%上昇する\n②敵軍全攻撃部隊の武将攻撃力を70%低下させる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 防御 50%上昇(敵軍全攻撃部隊の武将攻撃力を70%低下)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18新規登録(担当C・カード画像なし)。ixanary.com/cards/2515とixawiki.com(index.php?BushoCard/2515花舜夫人)の生HTML2ソースで全項目が一致することを確認した(画像照合は無し)。",
+  "武将名: ixawiki一覧は無印の「花舜夫人」表記。既存の無印「花舜夫人」(No.2095)と同名重複になるが、ixawiki一覧が区別していないためassign_C.txtの指示通り無印で登録した。要再検討(申し送り事項)。",
+  "ixawikiページに「※「武将イラスト人気ランキング2019」姫部門・6位受賞により復刻」の記載があり実質復刻カード。",
+  "コスト2・指揮兵数2540(★0-0)・成長値+30/+30/+2.5・ふりがな・絵師(萩谷薫)は2ソースで完全一致。",
+  "統率(弓)のみixanaryとixawikiが食い違った: ixanaryはyari/yumi/kiba/heiki=A/A/A/A、ixawikiは槍A/弓S/馬A/器Aで弓の値が不一致(ixanary A・ixawiki S)。ixanaryのyumi/kibaはカード実物と入れ替わっている場合があるとの既知の注意点があり、どちらが正しいか決められないためyumiをnullにした。他の3項目(槍A/馬A/器A)は一致。",
+  "attack=defence=970と両方の初期値が同じだが、2ソース完全一致のためixanaryの防御バグではなく実際の値と判断した。",
+  "章はixanary/ixawikiいずれのカードページにも記載が無く未確認。",
+  "2026-08-18訂正: assets/js/ixa-data.js(シミュ側)に既にNo.2515の暫定登録(2026年7月ixanary.com確認・「花舜夫人-復刻-（2）」)があるのを監査ツール(tools/audit_characters.py)で発見。基礎値・成長値・コスト・指揮兵数が今回の登録と完全一致していたため、名前はそちらに合わせて「花舜夫人-復刻-（2）」に訂正した(元は一覧表記通りの「花舜夫人」で登録していた)。"
+ ]
+}

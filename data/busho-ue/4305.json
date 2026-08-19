@@ -1,0 +1,43 @@
+{
+ "name": "伊勢貞孝",
+ "no": "4305",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "槍防",
+ "sub": "",
+ "effect": "槍防12%上昇",
+ "furigana": "いせさだたか",
+ "illustrator": "かにぱん",
+ "imageFull": "assets/img/characters/no4305_full.png",
+ "imageChar": "assets/img/characters/no4305_char.png",
+ "atkBase": 550,
+ "atkGrowth": 15,
+ "defBase": 670,
+ "defGrowth": 20,
+ "tacticsBase": 460.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 2300,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "C",
+  "uma": "C",
+  "ki": "C"
+ },
+ "initialSkill": "槍隊堅陣",
+ "skillDetail": "F/LV10 確率 30% 槍防 12%上昇/対象:槍\n①槍防 12%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍　確率 30% / 槍防 12%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当F)。カード画像(スキルLV10形式)から。ixanary.com/cards/4305の生HTMLでスキル文言(確率+30%・槍防12%上昇)・基礎値・成長値(攻撃+15・防御+20・兵法+2)・統率(槍B・弓C・馬C・器C)・コスト2.5がカード画像と完全一致。イラストレーターは画像では読み取りにくかったがixanaryで「かにぱん」と確定(No.4263 池田勝正と同一)。",
+  "初期スキル名はixanaryのスキルリンク先が/skills/槍隊堅陣のため「槍隊堅陣」で登録(同スキルはNo.4287 安倍元真と共通)。防御系スキル(skillStrは防.槍隊堅陣.F)。Fランクのためdata/skill/ページは作成していない。",
+  "章は情報源に記載なく未確認のためnull。ixanaryのdescription(紹介文)は空欄だった。"
+ ],
+ "wikiOldestComment": null,
+ "wikiCommentCount": null
+}

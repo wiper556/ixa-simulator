@@ -1,0 +1,50 @@
+{
+ "name": "ねね",
+ "no": "1079",
+ "ch": "12章",
+ "cost": 3.5,
+ "troop": "弓砲攻",
+ "sub": "",
+ "effect": "弓砲部隊の攻撃力上昇(4部隊以下でさらに上昇)",
+ "furigana": "ねね",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1079_full.png",
+ "imageChar": "assets/img/characters/no1079_char.png",
+ "atkBase": 800,
+ "atkGrowth": 19,
+ "defBase": 750,
+ "defGrowth": 18,
+ "tacticsBase": 470.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 3540,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "SS",
+  "uma": "B",
+  "ki": "A"
+ },
+ "initialSkill": "悠久豊国",
+ "skillDetail": "S/LV10 確率 35% 攻撃 40%上昇/対象:弓・砲\n①攻撃 40%上昇する(4部隊以下の攻撃で効果1.5倍)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓・砲　確率 35% / 攻撃 40%上昇(4部隊以下の攻撃で1.5倍)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録。カード画像(スキルLV10形式、no1079_full.png)から統率バッジ4隅・攻撃/防御/兵法/コスト/指揮兵数/武将名/初期スキル名とスキル効果を読み取った。",
+  "武将名の（N）はixawiki.com(Busho/武将カード一覧)の天レアリティ表内No.1079の表記をF-0規則(docs/character-registration-manual.md)で変換した。",
+  "成長値(atkGrowth/defGrowth/tacticsGrowth)とふりがな・illustratorはixanary.com(cards/1079)の埋め込みJSONで確認した(統率A〜Eの値はカード画像を優先し使っていない)。",
+  "章(ch)は情報源に記載が無く未確認のため null。",
+  "ixawiki一覧表でこのNo.に同名数の表記が無かったため無印のまま登録。",
+  "初期スキル「悠久豊国」はS以上だがdata/skill/に未作成(要新規ページ作成)。",
+  "ixanary.com(cards/1079)には追加スキル「覇道の礎」「豊国繚乱」の記載もあるが、カードLV0画面には表示されない追加枠のためinitialSkillには含めていない。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2016-05-19",
+ "wikiCommentCount": 153,
+ "chGuess": "12章",
+ "chSource": "wikiOldestComment"
+}

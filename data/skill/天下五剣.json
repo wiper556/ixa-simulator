@@ -1,0 +1,26 @@
+{
+ "name": "天下五剣",
+ "rank": "S",
+ "baseRate": 50,
+ "target": "全",
+ "noMimic": true,
+ "effectSummary": "S/LV10 確率 50% 攻撃 70%上昇+防御 70%上昇/対象:全\n模倣不可\n①攻撃 70%上昇する\n②防御 70%上昇する\n③部隊消費コストを1低下させる(重複不可)",
+ "categoryLinks": [],
+ "sourceCharacters": [
+  {
+   "name": "足利義輝【覇】",
+   "no": "1106",
+   "slot": "移植不可"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 50% / 攻撃 70%上昇+防御 70%上昇+部隊消費コスト 1低下"
+  }
+ ],
+ "notes": [
+  "A-3-9「武将自身の初期スキル(S以上)は無条件にページを作る」により2026-08-16に一括作成。内容は data/busho/1106.json の skillDetail / trTable からの転記で、新しい事実は持ち込んでいない。"
+ ]
+}

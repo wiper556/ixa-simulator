@@ -1,0 +1,30 @@
+{
+ "name": "含笑院",
+ "no": "2242",
+ "ch": null,
+ "cost": 3,
+ "troop": "槍弓焙攻防",
+ "sub": "",
+ "effect": "攻撃 67%上昇+防御 67%上昇",
+ "furigana": "がんしょういん",
+ "illustrator": "tatsuya",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 990, "atkGrowth": 27,
+ "defBase": 990, "defGrowth": 27,
+ "tacticsBase": 470, "tacticsGrowth": 2.5,
+ "lv0Troops": 3200,
+ "rankGrades": {"yari": "A", "yumi": "S", "uma": "B", "ki": "A"},
+ "initialSkill": "乾為天",
+ "skillDetail": "B/LV10 確率 42% 攻撃 67%上昇+防御 67%上昇/対象:槍・弓・焙\n①攻撃 67%上昇する\n②防御 67%上昇する\n③武将ランクで効果が変化する",
+ "trTable": [
+  {"level": "LV10", "points": "-", "effect": "槍・弓・焙　確率 42% / 攻撃 67%上昇+防御 67%上昇(武将ランクで効果が変化)"}
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録。カード画像が無いためixanary.com(cards/2242)とixawiki.com(BushoCard/2242含笑院)の一致のみで入れた。",
+  "基礎値・成長値・コスト・指揮兵数・統率(槍A弓S馬B器A)は両ソース一致。",
+  "初期スキル「乾為天」[B]はLV10確率42%・対象槍・弓・焙・攻撃67%上昇+防御67%上昇(両ソースのLV10数値一致)。",
+  "【参考】LV1の確率表記のみixanary(+18%)とixawikiの基本ステータス表(+10%)で食い違いがあったが、これはLV1段階の値でLV10段階の値(42%)には影響しないため未修正。ixawiki側のコメント欄には+18%との投稿もあり、ixawiki本文の+10%が誤記の可能性がある。"
+ ]
+}

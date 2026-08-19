@@ -1,0 +1,44 @@
+{
+ "name": "駒姫",
+ "no": "2511",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "全防",
+ "sub": "",
+ "effect": "防御 72%上昇(他城主の拠点に加勢中にも部隊の兵士編成を行える)",
+ "furigana": "こまひめ",
+ "illustrator": "みつなり都",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1000,
+ "atkGrowth": 32,
+ "defBase": 1020,
+ "defGrowth": 34,
+ "tacticsBase": 520,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3530,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "東国一ノ美女",
+ "skillDetail": "A/LV10 確率 44% 防御 72%上昇/対象:全\n①防御 72%上昇する\n②他城主の拠点に加勢中にも部隊の兵士編成を行える",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 44% / 防御 72%上昇(他城主の拠点に加勢中にも部隊の兵士編成を行える)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18新規登録(担当C・カード画像なし)。ixanary.com/cards/2511とixawiki.com(index.php?BushoCard/2511駒姫)の生HTML2ソースで全項目が一致することを確認した(画像照合は無し)。",
+  "武将名: ixawiki一覧は無印の「駒姫」表記。既存の駒姫(No.2846)と同名重複になるが、ixawiki一覧が区別していないためassign_C.txtの指示通り無印で登録した。要再検討(申し送り事項)。",
+  "ixawikiページに「※「武将イラスト人気ランキング2019」姫部門・8位受賞により復刻」の記載があり実質復刻カード。",
+  "コスト3.5・指揮兵数3530(★0-0)・成長値+32/+34/+2.5・ふりがな・絵師(みつなり都)は2ソースで完全一致。統率(槍A/弓A/馬A/器A)も2ソース一致。",
+  "attack=1000/defence=1020と異なる値で、ixanaryの防御バグ(攻撃値のコピー)には該当しない。2ソース一致。",
+  "章はixanary/ixawikiいずれのカードページにも記載が無く未確認。"
+ ]
+}

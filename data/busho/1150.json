@@ -1,0 +1,49 @@
+{
+ "name": "松永久秀（2）",
+ "no": "1150",
+ "ch": "18章",
+ "cost": 4.5,
+ "troop": "砲器攻破",
+ "sub": "",
+ "effect": "対象兵科の攻撃・破壊上昇",
+ "furigana": "まつながひさひで",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1150_full.png",
+ "imageChar": "assets/img/characters/no1150_char.png",
+ "atkBase": 1080,
+ "atkGrowth": 54,
+ "defBase": 1040,
+ "defGrowth": 36,
+ "tacticsBase": 640.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 4600,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "天謀爆裂ノ調",
+ "skillDetail": "S/LV10 確率 47% 攻撃 88%上昇+破壊 100%上昇/対象:砲・器\n①攻撃 88%上昇する\n②破壊 100%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "砲・器　確率 47% / 攻撃 88%上昇+破壊 100%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録。カード画像(スキルLV10形式)から名前/コスト/攻防兵法/指揮兵数/統率4隅バッジ/スキル名と効果文を読み取った。",
+  "統率バッジはカード画像を6倍拡大して4隅個別に確認: 槍S/馬A/弓A/器S。",
+  "成長値(攻+54/防+36/兵法+2.5)はixanary.com(cards/1150)の生HTML成長表で確認、初期値(1080/1040/640)はカード画像と一致。",
+  "名前の（2）はixawiki.com武将カード一覧(天)の生HTML表記「松永久秀(2)」(BushoCard/1150)に従った(同名の天カードがBushoCard/1114に無印、BushoCard/1209に(3)で存在するため2番目)。",
+  "初期スキル天謀爆裂ノ調はSランクだがdata/skill/天謀爆裂ノ調.jsonが未作成(要対応、本担当ではページ新規作成はしない)。",
+  "章(ch)は情報源で確認できず未確認のためnull。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2019-08-08",
+ "wikiCommentCount": 64,
+ "chGuess": "18章",
+ "chSource": "wikiOldestComment"
+}

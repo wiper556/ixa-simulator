@@ -1,0 +1,50 @@
+{
+ "name": "北条早雲【覇】",
+ "no": "1107",
+ "ch": "15章",
+ "cost": 4.5,
+ "troop": "全攻",
+ "sub": "",
+ "effect": "追加スキルの攻撃・破壊効果を2倍にする",
+ "furigana": "ほうじょうそううん",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1107_full.png",
+ "imageChar": "assets/img/characters/no1107_char.png",
+ "atkBase": 1100,
+ "atkGrowth": 29,
+ "defBase": 1020,
+ "defGrowth": 25,
+ "tacticsBase": 700.0,
+ "tacticsGrowth": 3,
+ "lv0Troops": 4280,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "S",
+  "ki": "B"
+ },
+ "initialSkill": "拘纓ノ侵軍",
+ "skillDetail": "S/LV10 確率 100% 対象:追加スキル\n模倣不可\n①このスキルを持つ武将カードは追加スキルの攻撃・破壊効果が2倍となる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "追加スキル　確率 100% / 攻撃・破壊効果 2倍"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録。カード画像(スキルLV10形式)から作成。カード画像のNo.1107・北条早雲の表記を確認。",
+  "名前の【覇】はカード画像の職業バッジが黒地に金文字「覇」であることを確認、かつixawiki.com(Busho/武将カード一覧)天セクションで「北条早雲(覇)」表記を確認したため付けた。スキル効果文に「保護」等の覇道スキル特有の記述は無く、覇道スキル分類(sub)は該当なしと判断した。",
+  "ステータス初期値1100/1020/700.0・成長値+29/+25/+3・cost4.5・lv0Troops4280はixanary.com(cards/1107)の成長表と一致確認。",
+  "rankGradesはカード画像バッジ4隅を拡大して確認(槍S/馬S/弓A/器B)。",
+  "skillDetail/trTableは既存の同種スキル(data/busho/1203.json 今川義元(4)【覇】の赤凰幻舞、data/busho/1215.json 竹中半兵衛(2)【覇】の天計 千年鳳凰)と同じ「追加スキルの攻撃・破壊効果を2倍」型の書式に揃えた。",
+  "拘纓ノ侵軍はdata/skill/にページが無い(S以上のため要新規作成、本セッションでは作成せず報告のみ)。",
+  "章(ch)は情報源で確認できず未確認のためnull。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2018-01-15",
+ "wikiCommentCount": 160,
+ "chGuess": "15章",
+ "chSource": "wikiOldestComment"
+}

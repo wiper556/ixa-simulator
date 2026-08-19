@@ -1,0 +1,39 @@
+{
+ "name": "佐竹義重",
+ "no": "3017",
+ "ch": null,
+ "cost": 3,
+ "troop": "槍攻",
+ "sub": "",
+ "effect": "攻撃 20%上昇",
+ "furigana": "さたけよししげ",
+ "illustrator": "琴吹かづき",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 640,
+ "atkGrowth": 16,
+ "defBase": 610,
+ "defGrowth": 16,
+ "tacticsBase": 390.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 2690,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "C",
+  "uma": "B",
+  "ki": "C"
+ },
+ "initialSkill": "槍隊剛撃",
+ "skillDetail": "D/LV10 確率 35% 攻撃 20%上昇/対象:槍\n①攻撃 20%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍　確率 35% / 攻撃 20%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当C・第4波)。カード画像は無いためixanary.comのカードページ埋め込みJSONとixawiki.comの武将カードページの両方を突き合わせて登録した。統率(槍/弓/馬/器)・コスト・指揮兵数・攻撃/防御/兵法の初期値・成長値・ふりがな・illustrator・スキル名/効果(LV1とLV10)は両ソースで一致した。章はどちらのソースにも記載が無く未確認のためnullとした。"
+ ]
+}

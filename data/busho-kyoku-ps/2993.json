@@ -1,0 +1,41 @@
+{
+ "name": "島津中書家久",
+ "no": "2993",
+ "ch": null,
+ "cost": 4,
+ "troop": "槍馬砲器防",
+ "sub": "",
+ "effect": "防御 14%上昇+(敵部隊移動速度÷1)%を加算(最も大きい速度を参照・模倣不可)",
+ "furigana": "しまづちゅうしょいえひさ",
+ "illustrator": "宮下英樹／講談社",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 970,
+ "atkGrowth": 34,
+ "defBase": 1070,
+ "defGrowth": 40,
+ "tacticsBase": 550,
+ "tacticsGrowth": 3,
+ "lv0Troops": 3700,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "S",
+  "ki": "A"
+ },
+ "initialSkill": "神降り",
+ "skillDetail": "A/LV10 確率 16% 防御 14%上昇/対象:槍・馬・砲・器\n①防御 14%上昇する\n②(敵部隊移動速度÷1)%を防御効果に加算する(最も大きい敵部隊移動速度を参照・模倣不可)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・馬・砲・器　確率 16% / 防御 14%上昇+(敵部隊移動速度÷1)%を加算(最も大きい速度を参照・模倣不可)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録。カード画像が無いためixanaryとixawikiの一致だけで入れた(rankGradesは両ソース完全一致)。synthesisTableは今回のバッチでは付けていない。",
+  "defBaseはixanaryの生埋め込みJSONだとatkBaseと同値の970になっていたが(既知の壊れ方の型)、ixawikiは独立に1070(atkと異なる値)を示しており、ixanaryの方が壊れていると判断してixawikiの1070を採用した。成長値・兵法・コスト・指揮兵数は両ソース一致。",
+  "スキル『神降り』はixanary・ixawikiともにLV1とLV10で全く同じ数値(確率16%/防御14%上昇/敵部隊移動速度÷1%を加算)を示しており、スキルレベルによる変化が無い(レベル非依存の)スキルと判断した。対立は無い。"
+ ]
+}

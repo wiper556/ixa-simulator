@@ -1,0 +1,40 @@
+{
+ "name": "滝川一益",
+ "no": "2141",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "砲器攻速",
+ "sub": "",
+ "effect": "砲・器部隊の攻撃・速度上昇(合流加入時速度効果6倍)",
+ "furigana": "たきがわかずます",
+ "illustrator": "BISAI",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 700,
+ "atkGrowth": 18,
+ "defBase": 670,
+ "defGrowth": 18,
+ "tacticsBase": 450,
+ "tacticsGrowth": 2,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "B",
+  "uma": "B",
+  "ki": "S"
+ },
+ "initialSkill": "賽の遊軍",
+ "skillDetail": "B/LV10 確率 100% 攻撃 8.5%上昇/対象:砲・器\n①攻撃 8.5%上昇する\n②速度 14%上昇する\n③合流加入時は速度上昇効果が6倍になる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "砲・器　確率 100% / 攻撃 8.5%上昇+速度 14%上昇(合流加入時速度効果6倍)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-17登録。カード画像が無いためixanary.com(cards/2141)とixawiki.com(BushoCard/2141滝川一益)の生HTMLの一致だけで登録した。",
+  "基礎値/成長値/コスト/指揮兵数/rankGrades(槍A・弓B・馬B・器S)/イラストレーター/スキルLV1数値は両ソースで完全一致。LV10数値はixanary.comのみに記載(ixawikiはLV1のみ掲載)。",
+  "章(ch)は両ソースに記載が無く未確認のためnull。"
+ ]
+}

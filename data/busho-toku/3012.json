@@ -1,0 +1,39 @@
+{
+ "name": "井伊直政",
+ "no": "3012",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "馬攻",
+ "sub": "",
+ "effect": "攻撃 20%上昇",
+ "furigana": "いいなおまさ",
+ "illustrator": "上條衿",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 685,
+ "atkGrowth": 17,
+ "defBase": 650,
+ "defGrowth": 16,
+ "tacticsBase": 405.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 2270,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "C",
+  "uma": "A",
+  "ki": "D"
+ },
+ "initialSkill": "騎馬隊剛撃",
+ "skillDetail": "D/LV10 確率 35% 攻撃 20%上昇/対象:馬\n①攻撃 20%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "馬　確率 35% / 攻撃 20%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当C・第4波)。カード画像は無いためixanary.comのカードページ埋め込みJSONとixawiki.comの武将カードページの両方を突き合わせて登録した。統率(槍/弓/馬/器)・コスト・指揮兵数・攻撃/防御/兵法の初期値・成長値・ふりがな・illustrator・スキル名/効果(LV1とLV10)は両ソースで一致した。章はどちらのソースにも記載が無く未確認のためnullとした。"
+ ]
+}

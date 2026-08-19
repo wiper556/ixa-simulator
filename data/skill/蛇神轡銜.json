@@ -1,0 +1,25 @@
+{
+ "name": "蛇神轡銜",
+ "rank": "S",
+ "baseRate": 15,
+ "target": "槍・器・鉄",
+ "effectSummary": "S/LV10 確率 15% 攻撃 85%上昇/対象:槍・器・鉄\n①攻撃 85%上昇する\n②合流攻撃時は確率が3倍となる",
+ "categoryLinks": [],
+ "sourceCharacters": [
+  {
+   "name": "斎藤道三（3）",
+   "no": "1136",
+   "slot": "移植不可"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・器・鉄　確率 15% / 攻撃 85%上昇(合流攻撃時は確率3倍)"
+  }
+ ],
+ "notes": [
+  "A-3-9「武将自身の初期スキル(S以上)は無条件にページを作る」により2026-08-16に一括作成。内容は data/busho/1136.json の skillDetail / trTable からの転記で、新しい事実は持ち込んでいない。"
+ ]
+}

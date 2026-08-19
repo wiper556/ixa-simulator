@@ -1,0 +1,42 @@
+{
+ "name": "立花宗茂-復刻-（4）",
+ "no": "2973",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "全攻破速",
+ "sub": "",
+ "effect": "攻撃 17%上昇+破壊 25%上昇+速度 42%上昇",
+ "furigana": "たちばなむねしげ",
+ "illustrator": "春乃壱",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 990,
+ "atkGrowth": 25,
+ "defBase": 940,
+ "defGrowth": 22,
+ "tacticsBase": 470.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3430,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "S",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "神嵐襲来",
+ "skillDetail": "B/LV10 確率 100% 攻撃 17%上昇+破壊 25%上昇+速度 42%上昇/対象:全\n①攻撃 17%上昇する\n②破壊 25%上昇する\n③速度 42%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 攻撃 17%上昇+破壊 25%上昇+速度 42%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "カード画像が無いため ixanary.com(cards/2973, skills/神嵐襲来)と ixawiki.com(index.php?BushoCard/2973立花宗茂, Busho/武将スキル)の生HTML2ソースを突き合わせて登録した。",
+  "コスト3.5・指揮兵数3430・統率(槍B/弓S/馬A/器A)・攻撃990/成長25・防御940/成長22・兵法470.0/成長2.5・ふりがな・イラストレーターは両ソース一致。初期スキル「神嵐襲来」[B]はixanary・ixawikiともLV10確率100%/攻撃17%上昇/破壊25%上昇/速度42%上昇で一致。",
+  "カードページ本文(ixawiki.com)の紹介文に「『武将イラスト人気ランキング』上位武将カード『立花宗茂』復刻版をお送りいたします。ご迷惑をおかけし、大変申し訳ございませんでした。」と明記されているため復刻カードと判断し、名前に-復刻-を付けた(assign一覧の表記「立花宗茂(4)」自体には復刻マークが無かった)。同名の非復刻版「立花宗茂（4）」(No.1307、章カード)が既に別途登録済みのため区別のためにも-復刻-が必要。",
+  "カード画像が無いためimageFull/imageCharはnull、synthesisTableは付けず、reviewedOkはfalseのまま。章(ch)は両ソースとも記載が無くnullとした。"
+ ]
+}

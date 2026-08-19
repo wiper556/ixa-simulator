@@ -1,0 +1,41 @@
+{
+ "name": "細川幽斎",
+ "no": "3072",
+ "ch": null,
+ "cost": 3,
+ "troop": "将攻",
+ "sub": "",
+ "effect": "攻撃 28%上昇",
+ "furigana": "ほそかわゆうさい",
+ "illustrator": "タケダサナ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 930,
+ "atkGrowth": 48,
+ "defBase": 880,
+ "defGrowth": 44,
+ "tacticsBase": 410.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 2050,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "B"
+ },
+ "initialSkill": "虚空一閃",
+ "skillDetail": "C/LV10 確率 36% 攻撃 28%上昇/対象:将\n①攻撃 28%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "将　確率 36% / 攻撃 28%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当F)。カード画像なし。ixanary.com/cards/3072の生HTML埋め込みJSONとixawiki.com(BushoCard/3072細川幽斎)の基本ステータス表・武将スキル一覧ページ(Busho/武将スキル)のスキル効果テーブルを突き合わせ、統率(槍/弓/馬/器)・コスト・指揮兵数・攻撃/防御/兵法の初期値と成長値・イラストレーター・スキル名/効果(LV1・LV10)が一致することを確認した。",
+  "章(ch)はixanary・ixawikiのどちらにも実装章の記載がなく未確認のためnull。",
+  "rankGradesは2ソース一致のため採用(食い違いなし)。"
+ ]
+}

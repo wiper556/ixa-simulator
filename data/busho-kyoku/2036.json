@@ -1,0 +1,39 @@
+{
+ "name": "朝倉義景",
+ "no": "2036",
+ "ch": null,
+ "cost": 3,
+ "troop": "槍弓馬防",
+ "sub": "",
+ "effect": "対象兵科の防御上昇",
+ "furigana": "あさくらよしかげ",
+ "illustrator": "池田正輝",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 700,
+ "atkGrowth": 17,
+ "defBase": 700,
+ "defGrowth": 17,
+ "tacticsBase": 400,
+ "tacticsGrowth": 2,
+ "lv0Troops": 2910,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "S",
+  "uma": "B",
+  "ki": "C"
+ },
+ "initialSkill": "騎射 狭間矢",
+ "skillDetail": "A/LV10 確率 44% 防御 32%上昇/対象:槍・弓・馬\n①防御 32%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・弓・馬　確率 44% / 防御 32%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-17登録。カード画像が無いためixanary.com(cards/2036)とixawiki.com(BushoCard/2036朝倉義景)の生HTMLを突き合わせて一致した項目のみ登録した。基礎値/成長値/コスト/指揮兵数/統率ランク/スキル確率/効果値は両ソースで完全一致を確認済み。"
+ ]
+}

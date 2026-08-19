@@ -1,0 +1,25 @@
+{
+ "name": "鷹舞蜃気楼",
+ "rank": "S",
+ "baseRate": 5,
+ "target": "全",
+ "effectSummary": "S/LV10 確率 5% 攻撃 70%上昇/対象:全\n①攻撃 70%上昇する\n②攻撃時のみ自部隊の兵士被害が5%減少する",
+ "categoryLinks": [],
+ "sourceCharacters": [
+  {
+   "name": "宇喜多秀家（2）",
+   "no": "1073",
+   "slot": "移植不可"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 5% / 攻撃 70%上昇(攻撃時自部隊兵士被害5%減少)"
+  }
+ ],
+ "notes": [
+  "A-3-9「武将自身の初期スキル(S以上)は無条件にページを作る」により2026-08-16に一括作成。内容は data/busho/1073.json の skillDetail / trTable からの転記で、新しい事実は持ち込んでいない。"
+ ]
+}

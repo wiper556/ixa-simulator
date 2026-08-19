@@ -1,0 +1,41 @@
+{
+ "name": "酒井忠次",
+ "no": "2056",
+ "ch": null,
+ "cost": 3,
+ "troop": "槍弓馬砲攻",
+ "sub": "",
+ "effect": "槍・弓・馬・砲兵の攻撃力上昇",
+ "furigana": "さかいただつぐ",
+ "illustrator": "エナミカツミ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 680,
+ "atkGrowth": 17,
+ "defBase": 670,
+ "defGrowth": 17,
+ "tacticsBase": 390,
+ "tacticsGrowth": 1.5,
+ "lv0Troops": 2940,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "B",
+  "ki": "C"
+ },
+ "initialSkill": "進撃 四獣操",
+ "skillDetail": "B/LV10 確率 30% 攻撃 25%上昇/対象:槍・弓・馬・砲\n①攻撃 25%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・弓・馬・砲　確率 30% / 攻撃 25%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-17登録(担当F)。カード画像が無いためixanary.com(cards/2056)とixawiki.com(index.php?BushoCard/2056酒井忠次)の生HTML突き合わせのみで登録した。",
+  "コスト3・指揮兵数2940・統率(槍S/弓A/馬B/器C)・攻撃力680(+17)・防御力670(+17)・兵法390(+1.5)は両ソースで完全一致。LV10(確率30%/攻撃25%上昇)はixawikiに記載が無くixanary単独の値。",
+  "章(ch)は両ソースとも記載が無く未確認のためnull。イラストレーターエナミカツミは両ソース一致。"
+ ]
+}

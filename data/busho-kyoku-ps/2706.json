@@ -1,0 +1,40 @@
+{
+ "name": "長尾為景",
+ "no": "2706",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "槍馬砲器攻破",
+ "sub": "",
+ "effect": "攻撃 12%上昇+破壊 40%上昇(確率40%)",
+ "furigana": "ながおためかげ",
+ "illustrator": "森野ヒロ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 740,
+ "atkGrowth": 18,
+ "defBase": 690,
+ "defGrowth": 17,
+ "tacticsBase": 420,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3200,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "B",
+  "uma": "A",
+  "ki": "D"
+ },
+ "initialSkill": "般若強襲",
+ "skillDetail": "B/LV10 確率 40% 攻撃 12%上昇+破壊 40%上昇/対象:槍・馬・砲・器",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・馬・砲・器　確率 40% / 攻撃 12%上昇+破壊 40%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録。カード画像が無いためixanary.com(cards/2706)とixawiki.com(BushoCard/2706長尾為景)の生HTMLを突き合わせて一致した項目のみ登録した。基礎値/成長値/コスト/指揮兵数/統率ランク/初期スキルLV10の確率・効果値は両ソースで一致を確認済み。カード画像が無いためrankGradesは両ソース一致のみ採用しreviewedOkはfalseのまま。",
+  "ixawikiの基本ステータス表はLV1相当の確率+13%/攻撃2%上昇+破壊20%上昇の一段のみ表示だったため、LV10値はixanary.com(cards/2706)のLV10欄(確率+40%/攻撃12%上昇+破壊40%上昇)を採用した。両ソースのLV1値は一致確認済み。"
+ ]
+}

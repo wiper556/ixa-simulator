@@ -1,0 +1,39 @@
+{
+ "name": "義姫（3）",
+ "no": "2304",
+ "ch": null,
+ "cost": 4,
+ "troop": "弓砲器攻防",
+ "sub": "",
+ "effect": "攻撃・防御(部隊ランクボーナスで変動)",
+ "furigana": "よしひめ",
+ "illustrator": "黒葉.K",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1020,
+ "atkGrowth": 36,
+ "defBase": 1020,
+ "defGrowth": 36,
+ "tacticsBase": 510,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3850,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "S",
+  "uma": "B",
+  "ki": "A"
+ },
+ "initialSkill": "不動の裁き",
+ "skillDetail": "A/LV10 確率 58% 攻撃・防御 (部隊ランクボーナスで変動)/対象:弓・砲・器\n①攻撃が部隊ランクボーナスに応じて上昇する\n②防御が部隊ランクボーナスに応じて上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓・砲・器　確率 58% / 攻撃・防御 (部隊ランクボーナスで変動)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当H)。カード画像が無いためixanary.com(cards/2304)生HTMLとixawiki.com(index.php?BushoCard/2304義姫)を突き合わせた。名前の（3）はixawikiの武将カード一覧の表記に従った。atk/defが1020で同値だが両ソース独立に一致しているため攻防同値カードとして採用した。LV10の攻撃・防御上昇率の具体的な数値はixanaryが1.4%・ixawikiが10.5%(式:部隊ランクボーナス×14%上昇という注記付き)で食い違ったため、具体的な%を確定せず「部隊ランクボーナスで変動」とだけ記載した(確率58%・対象弓砲器・LV1が0%上昇という点は両ソース一致)。"
+ ]
+}

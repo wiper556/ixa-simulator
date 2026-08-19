@@ -1,0 +1,46 @@
+{
+ "name": "米良重方",
+ "no": "5170",
+ "ch": "15章",
+ "cost": 2,
+ "troop": "弓防",
+ "sub": "",
+ "effect": "弓防15%上昇",
+ "furigana": "めらしげかた",
+ "illustrator": "BANAMONS*",
+ "imageFull": "assets/img/characters/no5170_full.png",
+ "imageChar": "assets/img/characters/no5170_char.png",
+ "atkBase": 460,
+ "atkGrowth": 16,
+ "defBase": 470,
+ "defGrowth": 17,
+ "tacticsBase": 400.0,
+ "tacticsGrowth": 1.5,
+ "lv0Troops": 1750,
+ "rankGrades": {
+  "yari": "D",
+  "yumi": "C",
+  "uma": "D",
+  "ki": "D"
+ },
+ "initialSkill": "弓隊備え",
+ "skillDetail": "F/LV10 確率 10% 弓防 15%上昇/対象:弓\n①弓防 15%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓　確率 10% / 弓防 15%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当D)。序レアリティ新規登録。カード画像(スキルLV10形式)から。武将名「米良重方」/ 序 / コスト2 / 統率 槍D・弓C・馬D・器D(4隅アイコンをズームして確認) / 初期値 攻撃460・防御470・兵法400.0 / 指揮兵数0/1750 / カードNo.5170一致 / 初期スキル「弓隊備え LV10」[F] 確率+10%・対象 弓・弓防15%上昇 / Illust BANAMONS*。",
+  "成長値(攻+16/防+17/兵法+1.5)・furigana・illustratorはixanary.com/cards/5170の生HTMLと完全一致。統率も一致。",
+  "初期スキルはFランクのためdata/skill/ページの新規作成対象外。章(ch)は情報源に記載なく未確認のためnull。synthesisTableは今回付けない(BRIEF指示)。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2018-04-09",
+ "wikiCommentCount": 4,
+ "chGuess": "15章",
+ "chSource": "wikiOldestComment"
+}

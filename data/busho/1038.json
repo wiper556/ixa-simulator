@@ -1,0 +1,49 @@
+{
+ "name": "雑賀孫市",
+ "no": "1038",
+ "ch": "7章",
+ "cost": 3.5,
+ "troop": "砲攻",
+ "sub": "",
+ "effect": "砲兵の攻撃力上昇",
+ "furigana": "さいかまごいち",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1038_full.png",
+ "imageChar": "assets/img/characters/no1038_char.png",
+ "atkBase": 880,
+ "atkGrowth": 20,
+ "defBase": 740,
+ "defGrowth": 16,
+ "tacticsBase": 460.0,
+ "tacticsGrowth": 3.0,
+ "lv0Troops": 3620,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "C",
+  "uma": "S",
+  "ki": "S"
+ },
+ "initialSkill": "天導 八咫烏",
+ "skillDetail": "S/LV10 確率 35% 攻撃 40%上昇/対象:砲\n①攻撃 40%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "砲　確率 35% / 攻撃 40%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録。カード画像(スキルLV10形式)から武将名・統率バッジ・スキル名・初期値を確認。",
+  "統率は槍A/馬S/弓C/器S。カード画像バッジ4隅とixawiki.com(Busho/武将カード一覧(天))の統率力表記が一致。",
+  "ステータス初期値880/740/460.0・成長値+20/+16/+3.0・cost3.5・lv0Troops3620はixanary.com(cards/1038)の成長表と一致確認。",
+  "武将名はixawiki.com(Busho/武将カード一覧(天))の表記「雑賀孫市」(無印)に従った(同ページでNo.1038がlv0Troops3620で一致)。",
+  "初期スキル「天導 八咫烏」はSランクだがdata/skill/に個別ページが無い(要作成候補)。",
+  "章は情報源に記載が無く未確認。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2013-11-12",
+ "wikiCommentCount": 310,
+ "chGuess": "7章",
+ "chSource": "wikiOldestComment"
+}

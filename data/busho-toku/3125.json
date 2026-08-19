@@ -1,0 +1,42 @@
+{
+ "name": "土田御前",
+ "no": "3125",
+ "ch": null,
+ "cost": 2,
+ "troop": "砲防",
+ "sub": "",
+ "effect": "砲防 20%上昇",
+ "furigana": "どたごぜん",
+ "illustrator": "別天荒人",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 550,
+ "atkGrowth": 15,
+ "defBase": 580,
+ "defGrowth": 16,
+ "tacticsBase": 400.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 1960,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "C",
+  "uma": "D",
+  "ki": "B"
+ },
+ "initialSkill": "鉄砲隊円陣",
+ "skillDetail": "D/LV10 確率 35% 防御 20%上昇/対象:砲\n①防御 20%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "砲　確率 35% / 防御 20%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当I)。カード画像が無いため ixanary.com(cards/3125, skills/鉄砲隊円陣)と ixawiki.com(index.php?BushoCard/3125土田御前, Busho/武将スキル)の生HTML2ソースを突き合わせて登録した。",
+  "統率(槍A/弓C/馬D/器B)・コスト2.0・指揮兵数1960・攻撃550/15・防御580/16・兵法400.0/2.0・ふりがな・イラストレーターはixanary.comとixawiki.comの2ソースで完全一致した。",
+  "初期スキル「鉄砲隊円陣」[D]はixanary.com(skills/鉄砲隊円陣)のLV10行(確率+35%/対象砲/防御20%上昇)とixawiki.com(Busho/武将スキル)のマスター一覧LV10行(確率+35%/砲防20%上昇)で完全一致し、両ソースの武将対応リストにも3125土田御前が掲載されていることを確認した。",
+  "カード画像が無いためimageFull/imageCharはnull、synthesisTableは付けず、reviewedOkはfalseのまま。章(ch)は両ソースとも記載が無くnullとした。"
+ ]
+}

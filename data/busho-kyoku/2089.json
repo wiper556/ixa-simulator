@@ -1,0 +1,40 @@
+{
+ "name": "島左近（2）",
+ "no": "2089",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "全攻",
+ "sub": "",
+ "effect": "攻撃 35%上昇",
+ "furigana": "しまさこん",
+ "illustrator": "仙田聡",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 900,
+ "atkGrowth": 18.0,
+ "defBase": 740,
+ "defGrowth": 16.0,
+ "tacticsBase": 380.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 3240,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "B",
+  "uma": "A",
+  "ki": "B"
+ },
+ "initialSkill": "鬼子母神",
+ "skillDetail": "A/LV10 確率 15% 攻撃 35%上昇/対象:全\n①攻撃が35%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 15% / 攻撃 35%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-17登録。カード画像が無いためixanary.com(cards/2089 と skills/鬼子母神)とixawiki.com(BushoCard/2089島左近)の生HTMLを直接確認し両方が一致した項目だけで登録した(reviewedOkはfalseのまま)。",
+  "合成候補(synthesisTable)は今回付けていない。章(ch)は両ソースとも記載が無いため未確認。"
+ ]
+}

@@ -1,0 +1,32 @@
+{
+ "name": "柳生新陰流幻",
+ "rank": "S",
+ "baseRate": 100,
+ "target": "全",
+ "noMimic": true,
+ "effectSummary": "S/LV10 確率 100% 攻撃 160%上昇+防御 160%上昇/対象:全\n模倣不可\n①攻撃が160%上昇する\n②防御が160%上昇する\n③このスキルを所持する武将の全スキルの卓越確率に70%を加算する",
+ "categoryLinks": [
+  {
+   "href": "skills-takuetsu.html",
+   "label": "卓越スキル一覧を見る"
+  }
+ ],
+ "sourceCharacters": [
+  {
+   "name": "柳生石舟斎",
+   "no": "2572",
+   "slot": "移植不可",
+   "db": "kyoku"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 攻撃 160%上昇+防御 160%上昇(全スキルの卓越確率+70%・模倣不可)"
+  }
+ ],
+ "notes": [
+  "A-3-9「武将自身の初期スキル(S以上)は無条件にページを作る」により2026-08-16に一括作成。内容は data/busho-kyoku-ps/2572.json の skillDetail / trTable からの転記で、新しい事実は持ち込んでいない。"
+ ]
+}

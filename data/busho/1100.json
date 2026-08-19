@@ -1,0 +1,49 @@
+{
+ "name": "南部晴政",
+ "no": "1100",
+ "ch": "14章",
+ "cost": 2.5,
+ "troop": "弓馬器攻防速",
+ "sub": "",
+ "effect": "対象兵科の攻撃・防御・速度上昇",
+ "furigana": "なんぶはるまさ",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1100_full.png",
+ "imageChar": "assets/img/characters/no1100_char.png",
+ "atkBase": 1170,
+ "atkGrowth": 26,
+ "defBase": 1170,
+ "defGrowth": 26,
+ "tacticsBase": 540.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3400,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "S",
+  "ki": "A"
+ },
+ "initialSkill": "北斗征軍",
+ "skillDetail": "S/LV10 確率 40%/40%/100% 攻撃 50%上昇+防御 50%上昇+速度 60%上昇/対象:弓・馬・器\n①確率 40% 攻撃 50%上昇する\n②確率 40% 防御 50%上昇する\n③確率 100% 速度 60%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓・馬・器　確率 40%/40%/100% / 攻撃 50%上昇+防御 50%上昇+速度 60%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録。カード画像(スキルLV10形式)から作成。カード画像のNo.1100・南部晴政の表記を確認。",
+  "ステータス初期値1170/1170/540.0・成長値+26/+26/+2.5・cost2.5・lv0Troops3400はixanary.com(cards/1100)の成長表と一致確認。",
+  "rankGradesはカード画像バッジ4隅を拡大して確認(槍A/馬S/弓A/器A)。",
+  "北斗征軍は攻撃・防御・速度で確率が別々(40%/40%/100%)。カード表記通りに①②③へ分けて記載した。",
+  "北斗征軍はdata/skill/にページが無い(S以上のため要新規作成、本セッションでは作成せず報告のみ)。",
+  "章(ch)は情報源で確認できず未確認のためnull。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2017-05-19",
+ "wikiCommentCount": 105,
+ "chGuess": "14章",
+ "chSource": "wikiOldestComment"
+}

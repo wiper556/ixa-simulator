@@ -1,0 +1,39 @@
+{
+ "name": "甘利虎泰",
+ "no": "3113",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "槍馬攻破",
+ "sub": "",
+ "effect": "攻撃 10%上昇+破壊 2%上昇",
+ "furigana": "あまりとらやす",
+ "illustrator": "北千里",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 670,
+ "atkGrowth": 16,
+ "defBase": 640,
+ "defGrowth": 14,
+ "tacticsBase": 350.0,
+ "tacticsGrowth": 1.5,
+ "lv0Troops": 2410,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "B",
+  "uma": "A",
+  "ki": "C"
+ },
+ "initialSkill": "乗り崩し",
+ "skillDetail": "D/LV10 確率 10% 攻撃 10%上昇+破壊 2%上昇/対象:槍・馬\n①攻撃 10%上昇する\n②破壊 2%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・馬　確率 10% / 攻撃 10%上昇+破壊 2%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当H)。カード画像なし。ixanary.com/cards/3113 と ixawiki.com(BushoCard/3113甘利虎泰)の生HTMLを突き合わせて登録した。統率・コスト・指揮兵数・スキルの確率と効果値・攻撃/兵法の初期値と成長値は両ソース完全一致。防御初期値を含め全項目一致。"
+ ]
+}

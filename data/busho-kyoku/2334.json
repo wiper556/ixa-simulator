@@ -1,0 +1,39 @@
+{
+ "name": "大内義興",
+ "no": "2334",
+ "ch": null,
+ "cost": 4,
+ "troop": "槍馬砲攻",
+ "sub": "飛翔5",
+ "effect": "攻撃 30%上昇(部隊の総コストで効果が変化・飛翔5)",
+ "furigana": "おおうちよしおき",
+ "illustrator": "末冨正直",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1100,
+ "atkGrowth": 42,
+ "defBase": 1050,
+ "defGrowth": 34,
+ "tacticsBase": 510,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3900,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "B",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "西国ノ覇将",
+ "skillDetail": "A/LV10 確率 42% 攻撃 30%上昇/対象:槍・馬・砲　飛翔5\n①攻撃 30%上昇する(部隊の総コストで効果が変化する)\n②飛翔5を持つ",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・馬・砲 飛翔5　確率 42% / 攻撃 30%上昇(部隊の総コストで効果が変化)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当J・第2波・カード画像なし)。ixanary.com(cards/2334)生HTMLとixawiki.com(index.php?BushoCard/2334大内義興、およびBusho/武将カード一覧(極))の2ソースでコスト/指揮兵数/統率ランク/攻撃防御兵法の初期値成長値/スキル効果(LV1・LV10)が完全一致することを確認して登録した。"
+ ]
+}

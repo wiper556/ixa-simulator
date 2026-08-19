@@ -1,0 +1,42 @@
+{
+ "name": "由布惟信",
+ "no": "2111",
+ "ch": null,
+ "cost": 3,
+ "troop": "槍弓馬防",
+ "sub": "",
+ "effect": "槍・弓・馬部隊の防御力上昇",
+ "furigana": "ゆふこれのぶ",
+ "illustrator": "タケダサナ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 460,
+ "atkGrowth": 15,
+ "defBase": 680,
+ "defGrowth": 18,
+ "tacticsBase": 500,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3010,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "S",
+  "uma": "A",
+  "ki": "C"
+ },
+ "initialSkill": "雪下の雷将",
+ "skillDetail": "A/LV10 確率 40% 防御 30%上昇/対象:槍・弓・馬\n①防御 30%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・弓・馬　確率 40% / 防御 30%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-17登録。カード画像が無いためixanary.comとixawiki.comの生HTML突き合わせのみで登録した。",
+  "基礎値/成長値/コスト/指揮兵数(3010)/rankGrades(槍A・弓S・馬A・器C)/イラストレーター(タケダサナ)はixanary.com(cards/2111)とixawiki.com(BushoCard/2111由布惟信)の両方で完全一致。",
+  "skillDetail/trTableはixanary.com/skills/雪下の雷将のLV10表記(確率+40%/対象槍弓馬/防御30%上昇)を採用。LV1値(確率+15%/防御12%上昇)がixawikiの基本ステータス表と一致。",
+  "章(ch)は両ソースに記載なく未確認。"
+ ]
+}

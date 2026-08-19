@@ -1,0 +1,42 @@
+{
+ "name": "徳川家康-復刻-【覇】",
+ "no": "1958",
+ "ch": null,
+ "cost": 4,
+ "troop": "全攻",
+ "sub": "",
+ "effect": "全軍の攻撃力上昇(部隊ランクボーナスで変化)",
+ "furigana": "とくがわいえやす",
+ "illustrator": "直良有祐",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1090,
+ "atkGrowth": 27,
+ "defBase": null,
+ "defGrowth": 25,
+ "tacticsBase": 700.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3820,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "B",
+  "uma": "S",
+  "ki": "S"
+ },
+ "initialSkill": "覇天の葵紋",
+ "skillDetail": "S/LV10 確率 46% 攻撃 (部隊ランクボーナス×11)%上昇/対象:全\n①攻撃が(部隊ランクボーナス×11)%上昇する(部隊ランクボーナスで効果が変化)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 46% / 攻撃 部隊ランクボーナス×11%上昇(部隊ランクボーナスで変動)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-17登録。カード画像が無いためixanary.com(cards/1958)とixawiki.com(BushoCard/1958徳川家康)の2ソースで突き合わせた。",
+  "防御初期値(defBase)がixanaryは1090(攻撃と同値)、ixawikiは980で食い違ったためnullにした。防御成長値(+25)・攻撃1090(+27)・兵法700.0(+2.5)・指揮兵数3820・コスト4・統率(槍A/弓B/馬S/器S)・初期スキル「覇天の葵紋」(S)の確率/対象/効果は両ソース一致。",
+  "カードのjobTypeは「覇」(覇者カード)だが初期スキル「覇天の葵紋」自体に保護効果文が無くカード上の赤字「覇道」表記も画像が無いため確認できないためsubは「覇道」にしなかった。",
+  "章(ch)は情報源に記載が無いため未確認でnull。"
+ ]
+}

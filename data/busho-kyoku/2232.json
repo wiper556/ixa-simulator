@@ -1,0 +1,30 @@
+{
+ "name": "鶴姫",
+ "no": "2232",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "槍弓器攻",
+ "sub": "",
+ "effect": "攻撃 69%上昇(合流攻撃時は確率2倍)",
+ "furigana": "つるひめ",
+ "illustrator": "影井由宇",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1030, "atkGrowth": 28,
+ "defBase": 980, "defGrowth": 25,
+ "tacticsBase": 500, "tacticsGrowth": 2.5,
+ "lv0Troops": 3440,
+ "rankGrades": {"yari": "S", "yumi": "A", "uma": "B", "ki": "A"},
+ "initialSkill": "三島明神波撃",
+ "skillDetail": "B/LV10 確率 20% 攻撃 69%上昇/対象:槍・弓・器\n①攻撃 69%上昇する\n②合流攻撃時は確率が2倍になる",
+ "trTable": [
+  {"level": "LV10", "points": "-", "effect": "槍・弓・器　確率 20% / 攻撃 69%上昇(合流攻撃時は確率2倍)"}
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録。カード画像が無いためixanary.com(cards/2232)とixawiki.com(BushoCard/2232鶴姫)の一致のみで入れた。",
+  "基礎値・成長値・コスト・指揮兵数・統率(槍S弓A馬B器A)は両ソース一致。",
+  "初期スキル「三島明神波撃」[B]はLV10確率20%・対象槍・弓・器・攻撃69%上昇。合流攻撃時は確率2倍になる追加効果あり(両ソース一致)。",
+  "既存登録のNo.2852鶴姫とは別カード(カードNoが異なる)。"
+ ]
+}

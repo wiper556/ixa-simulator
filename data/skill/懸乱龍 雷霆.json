@@ -1,0 +1,24 @@
+{
+ "name": "懸乱龍 雷霆",
+ "rank": "S",
+ "target": "全攻速",
+ "effectSummary": "S/LV10 対象:全\n①確率 40%で攻撃 40%上昇する\n②確率 100%で速度 25%低下する",
+ "categoryLinks": [],
+ "sourceCharacters": [
+  {
+   "name": "上杉景勝",
+   "no": "1039",
+   "slot": "移植不可"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　攻撃 確率 40% / 40%上昇+速度 確率 100% / 25%低下"
+  }
+ ],
+ "notes": [
+  "A-3-9「武将自身の初期スキル(S以上)は無条件にページを作る」により2026-08-16に一括作成。内容は data/busho/1039.json の skillDetail / trTable からの転記で、新しい事実は持ち込んでいない。"
+ ]
+}

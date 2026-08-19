@@ -1,0 +1,39 @@
+{
+ "name": "小西行長（3）",
+ "no": "2295",
+ "ch": null,
+ "cost": 3,
+ "troop": "槍砲器攻防破",
+ "sub": "",
+ "effect": "攻撃 82%上昇+防御 82%上昇+破壊 45%上昇",
+ "furigana": "こにしゆきなが",
+ "illustrator": "小森ニコ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1020,
+ "atkGrowth": 30,
+ "defBase": 1020,
+ "defGrowth": 30,
+ "tacticsBase": 500,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3260,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "海の司令官",
+ "skillDetail": "B/LV10 確率 29% 攻撃 82%上昇+防御 82%上昇+破壊 45%上昇/対象:槍・砲・器\n①攻撃 82%上昇する\n②防御 82%上昇する\n③破壊 45%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・砲・器　確率 29% / 攻撃 82%上昇+防御 82%上昇+破壊 45%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当H)。カード画像が無いためixanary.com(cards/2295)生HTMLとixawiki.com(index.php?BushoCard/2295小西行長)の基本ステータス表・スキル表を突き合わせて完全一致を確認して登録した。名前の（3）はixawikiの武将カード一覧の表記に従った。atk/defが1020で同値だが両ソース独立に一致しているため攻防同値カードとして採用した。"
+ ]
+}

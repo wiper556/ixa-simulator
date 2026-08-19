@@ -1,0 +1,41 @@
+{
+ "name": "諏訪頼重",
+ "no": "3684",
+ "ch": null,
+ "cost": 3,
+ "troop": "弓砲器防",
+ "sub": "",
+ "effect": "防御65%上昇(拠点待機120分ごとに防御効果2倍・上限3回)",
+ "furigana": "すわよりしげ",
+ "illustrator": "トミタトモ子",
+ "imageFull": "assets/img/characters/no3684_full.png",
+ "imageChar": "assets/img/characters/no3684_char.png",
+ "atkBase": 860,
+ "atkGrowth": null,
+ "defBase": 950,
+ "defGrowth": null,
+ "tacticsBase": 470.0,
+ "tacticsGrowth": null,
+ "lv0Troops": 3100,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "B",
+  "uma": "C",
+  "ki": "A"
+ },
+ "initialSkill": "龍神ノ威光",
+ "skillDetail": "C/LV10 確率 45% 防御 65%上昇/対象:弓・砲・器\n①防御65%上昇する\n②拠点待機120分ごとに防御効果が2倍になる(上限3回)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓・砲・器　確率 45% / 防御 65%上昇(拠点待機120分ごとに防御効果2倍・上限3回)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当C)。カード画像(スキルLV10形式)から作成。武将名・ふりがな・統率・攻防兵法初期値・指揮兵数・カードNo.・スキル名/効果はカード画像から読み取り。illustratorは画像の文字が小さく「トミタトモ子」と読み取ったが確信度はやや低い。ch(章)・growth系は画像に記載が無いため null。"
+ ],
+ "wikiOldestComment": null,
+ "wikiCommentCount": null
+}

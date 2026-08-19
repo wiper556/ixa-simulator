@@ -1,0 +1,42 @@
+{
+ "name": "細川ガラシャ",
+ "no": "1974",
+ "ch": null,
+ "cost": 4.5,
+ "troop": "全攻防",
+ "sub": "",
+ "effect": "攻撃防御上昇+部隊消費コスト2低下",
+ "furigana": "ほそかわがらしゃ",
+ "illustrator": "直良有祐",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1100,
+ "atkGrowth": 27,
+ "defBase": 1100,
+ "defGrowth": 27,
+ "tacticsBase": 630,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 4550,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "悲運ノ珠玉",
+ "skillDetail": "S/LV10 確率 49% 攻撃 82%上昇+防御 82%上昇/対象:全\n①攻撃 82%上昇する\n②防御 82%上昇する\n③部隊消費コストを2低下させる(重複不可)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 49% / 攻撃 82%上昇+防御 82%上昇+部隊消費コスト 2低下(重複不可)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-17登録。カード画像が無いためixanary.com(cards/1974)とixawiki.com(BushoCard/1974細川ガラシャ)の生HTML2ソースのみで作成した。imageFull/imageCharはnull。",
+  "cost/lv0Troops/rankGrades/atkBase・atkGrowth/defBase・defGrowth/tacticsBase・tacticsGrowthは全項目で両ソースが一致した(この20体の中でdefBaseが一致した数少ない例)。",
+  "悲運ノ珠玉はLV1(確率24%攻撃防御20%上昇・部隊消費コスト2低下・特殊効果は模倣重複不可)の内容が両ソースで一致したため、ixanary.comのLV10データ(確率49%攻撃防御82%上昇)をskillDetail/trTableに採用した。",
+  "reviewedOkはfalseのまま。カード画像による4隅バッジ・スキルパネル照合が未実施のため黄丸化はできない。"
+ ]
+}

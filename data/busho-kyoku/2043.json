@@ -1,0 +1,39 @@
+{
+ "name": "本多富正",
+ "no": "2043",
+ "ch": null,
+ "cost": 3,
+ "troop": "上級器攻破",
+ "sub": "",
+ "effect": "対象兵科の攻撃・破壊上昇",
+ "furigana": "ほんだとみまさ",
+ "illustrator": "三橋圭",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 710,
+ "atkGrowth": 18,
+ "defBase": 700,
+ "defGrowth": 18,
+ "tacticsBase": 425,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 2780,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "S",
+  "uma": "A",
+  "ki": "C"
+ },
+ "initialSkill": "赤誠奮迅",
+ "skillDetail": "B/LV10 確率 33% 攻撃 12%上昇+破壊 23.5%上昇/対象:上級器\n①攻撃 12%上昇する\n②破壊 23.5%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "上級器　確率 33% / 攻撃 12%上昇+破壊 23.5%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-17登録。カード画像が無いためixanary.com(cards/2043)とixawiki.com(BushoCard/2043本多富正)の生HTMLを突き合わせて一致した項目のみ登録した。基礎値/成長値/コスト/指揮兵数/統率ランク/スキル確率/効果値は両ソースで完全一致を確認済み。"
+ ]
+}

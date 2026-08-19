@@ -1,0 +1,39 @@
+{
+ "name": "森蘭丸",
+ "no": "2046",
+ "ch": null,
+ "cost": 3,
+ "troop": "弓馬攻破",
+ "sub": "",
+ "effect": "対象兵科の攻撃・破壊上昇",
+ "furigana": "もりらんまる",
+ "illustrator": "オンダカツキ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 780,
+ "atkGrowth": 17,
+ "defBase": 780,
+ "defGrowth": 17,
+ "tacticsBase": 430,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 2780,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "S",
+  "uma": "A",
+  "ki": "B"
+ },
+ "initialSkill": "天真蘭丸",
+ "skillDetail": "B/LV10 確率 26% 攻撃 30%上昇+破壊 10%上昇/対象:弓・馬\n①攻撃 30%上昇する\n②破壊 10%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓・馬　確率 26% / 攻撃 30%上昇+破壊 10%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-17登録。カード画像が無いためixanary.com(cards/2046)とixawiki.com(BushoCard/2046森蘭丸)の生HTMLを突き合わせて一致した項目のみ登録した。基礎値/成長値/コスト/指揮兵数/統率ランク/スキル確率/効果値は両ソースで完全一致を確認済み。"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "name": "斎藤道三",
+ "no": "2029",
+ "ch": null,
+ "cost": 3,
+ "troop": "槍弓馬防",
+ "sub": "",
+ "effect": "対象兵科の防御上昇",
+ "furigana": "さいとうどうさん",
+ "illustrator": null,
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 777,
+ "atkGrowth": 16,
+ "defBase": 777,
+ "defGrowth": 19,
+ "tacticsBase": 445,
+ "tacticsGrowth": 2,
+ "lv0Troops": 2850,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "B",
+  "ki": "C"
+ },
+ "initialSkill": "戦國下剋上",
+ "skillDetail": "B/LV10 確率 20% 防御 40%上昇/対象:槍・弓・馬\n①防御 40%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・弓・馬　確率 20% / 防御 40%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-17登録。カード画像が無いためixanary.com(cards/2029)とixawiki.com(BushoCard/2029斎藤道三)の生HTMLを突き合わせて一致した項目のみ登録した。基礎値/成長値/コスト/指揮兵数/統率ランク/スキル確率/効果値は両ソースで完全一致を確認済み。",
+  "illustratorはixanary.com側が空欄、ixawiki.com側は「七海慎吾」と表記されており2ソースが食い違ったためnullにした。"
+ ]
+}

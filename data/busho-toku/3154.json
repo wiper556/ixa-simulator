@@ -1,0 +1,40 @@
+{
+ "name": "桂姫",
+ "no": "3154",
+ "ch": null,
+ "cost": 2,
+ "troop": "全攻速",
+ "sub": "",
+ "effect": "攻撃 5%上昇+速度 25%上昇",
+ "furigana": "かつらひめ",
+ "illustrator": "葉山えいし",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 600,
+ "atkGrowth": 15,
+ "defBase": 690,
+ "defGrowth": 17,
+ "tacticsBase": 440.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 1940,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "B",
+  "uma": "B",
+  "ki": "B"
+ },
+ "initialSkill": "祭の祈り",
+ "skillDetail": "C/LV10 確率 100% 攻撃 5%上昇+速度 25%上昇/対象:全\n①攻撃 5%上昇する\n②速度 25%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 攻撃 5%上昇+速度 25%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当J)。カード画像が無いためixanaryとixawikiの両方を確認した。武将名「桂姫」/ふりがな「かつらひめ」/特/コスト2/統率 槍B・弓B・馬B・器B/攻撃600・防御690・兵法440.0/成長値(攻撃+15/防御+17/兵法+2.5)/指揮兵数1940/カードNo.3154/スキル「祭の祈りLV10」[C] 確率:100%・対象 全・攻撃:5%上昇・速度:25%上昇/Illust 葉山えいし。ixanary(カードページ埋め込みJSON)とixawiki(BushoCardページ)の統率・コスト・指揮兵数・攻防兵法初期値と成長値・スキル対象と効果が完全に一致したためそのまま採用した。",
+  "rankGradesはカード画像で確認できないため未reviewed(reviewedOk=false)。章(ch)はカード画像でもixanary/ixawikiでも確認できなかったためnullのまま。"
+ ]
+}

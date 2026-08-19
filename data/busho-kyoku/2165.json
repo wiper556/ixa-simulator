@@ -1,0 +1,39 @@
+{
+ "name": "菊姫",
+ "no": "2165",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "槍馬攻",
+ "sub": "",
+ "effect": "槍・馬部隊の攻撃力上昇",
+ "furigana": "きくひめ",
+ "illustrator": "弘司",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 920,
+ "atkGrowth": 21,
+ "defBase": 880,
+ "defGrowth": 19,
+ "tacticsBase": 475.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 3320,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "B",
+  "uma": "S",
+  "ki": "C"
+ },
+ "initialSkill": "花礫",
+ "skillDetail": "B/LV10 確率 26% 攻撃 46%上昇/対象:槍・馬\n①攻撃 46%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・馬　確率 26% / 攻撃 46%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "カード画像が無いためimageFull/imageChar は null。ixanary.com(cards/2165)とixawiki.com(BushoCard/2165菊姫)を突き合わせて登録した。基本ステータス・ランク・スキル数値とも両ソースで一致。"
+ ]
+}

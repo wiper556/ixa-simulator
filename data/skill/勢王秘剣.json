@@ -1,0 +1,32 @@
+{
+ "name": "勢王秘剣",
+ "rank": "S",
+ "baseRate": 50,
+ "target": "槍・砲・器",
+ "noMimic": true,
+ "effectSummary": "S/LV10 確率 50% 攻撃 (12×飛翔を持たない防御参加武将数)%上昇/対象:槍・砲・器\n模倣不可\n①攻撃を12×飛翔を持たない防御参加武将数で上昇する",
+ "categoryLinks": [],
+ "sourceCharacters": [
+  {
+   "name": "北畠具教",
+   "no": "2481",
+   "slot": "移植不可",
+   "db": "kyoku"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・砲・器　確率 50% / 攻撃 12%×飛翔を持たない防御参加武将数=上昇(模倣不可)"
+  },
+  {
+   "level": "TR5",
+   "points": "-",
+   "effect": "槍・砲・器　確率 50% / 攻撃 15%×飛翔を持たない防御参加武将数=上昇(模倣不可)"
+  }
+ ],
+ "notes": [
+  "A-3-9「武将自身の初期スキル(S以上)は無条件にページを作る」により2026-08-16に一括作成。内容は data/busho-kyoku-ps/2481.json の skillDetail / trTable からの転記で、新しい事実は持ち込んでいない。"
+ ]
+}

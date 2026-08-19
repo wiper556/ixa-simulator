@@ -1,0 +1,49 @@
+{
+ "name": "伊達政宗-復刻-【覇】",
+ "no": "1991",
+ "ch": null,
+ "cost": 4.5,
+ "troop": "全攻防速",
+ "sub": "",
+ "effect": "全兵科の攻撃防御速度が上昇",
+ "furigana": "だてまさむね",
+ "illustrator": "直良有祐",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1150,
+ "atkGrowth": 44,
+ "defBase": 1150,
+ "defGrowth": 44,
+ "tacticsBase": 660,
+ "tacticsGrowth": 3,
+ "lv0Troops": 4340,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "B",
+  "uma": "S",
+  "ki": "S"
+ },
+ "initialSkill": "覇龍千架砲",
+ "skillDetail": "S/LV10 確率 32%/32%/100% 攻撃 127%上昇+防御 127%上昇+速度 40%上昇/対象:全\n①攻撃 127%上昇する(確率32%)\n②防御 127%上昇する(確率32%)\n③速度 40%上昇する(確率100%)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 32%/32%/100% / 攻撃 127%上昇+防御 127%上昇+速度 40%上昇"
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": "全　確率 70%/70%/100% / 攻撃 1440%上昇+防御 1100%上昇+速度 200%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "カード画像が無いため imageFull/imageChar は null。ixanary.comの埋め込みJSON(cards/1991)とixawiki.com(BushoCard/1991)の基本ステータス表・スキル表を突き合わせて登録した。",
+  "ixawikiのスキル分類タグは「特」だが実際の効果(攻撃・防御・速度が同時に上昇)から troop の類別は攻防速とした(数値自体は両ソース完全一致)。",
+  "鍛錬(TR)はixanary/ixawikiともTR5(鍛錬可能の最高段)のみが表示されており、TR1〜TR4の数値はどちらのソースにも記載が無いため未掲載(空欄で埋めていない)。",
+  "初期スキル名の表記はixanaryが「覇龍千架砲」(龍)・ixawikiが「覇竜千架砲」(竜)と異体字の違いがあったが数値・効果は完全一致のため、ixanaryのスキル個別ページURL(/skills/覇龍千架砲)に合わせて龍の表記を採用した。"
+ ],
+ "wikiOldestComment": "2020-07-09",
+ "wikiCommentCount": 45
+}

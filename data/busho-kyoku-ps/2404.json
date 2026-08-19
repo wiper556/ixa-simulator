@@ -1,0 +1,39 @@
+{
+ "name": "伊達成実（2）",
+ "no": "2404",
+ "ch": null,
+ "cost": 2,
+ "troop": "槍馬砲攻",
+ "sub": "",
+ "effect": "攻撃 59%上昇",
+ "furigana": "だてしげざね",
+ "illustrator": "正子公也",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1050,
+ "atkGrowth": 47,
+ "defBase": 1000,
+ "defGrowth": 32,
+ "tacticsBase": 510,
+ "tacticsGrowth": 2,
+ "lv0Troops": 2540,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "S",
+  "ki": "A"
+ },
+ "initialSkill": "下弦ノ翼龍",
+ "skillDetail": "A/LV10 確率 27% 攻撃 59%上昇/対象:槍・馬・砲\n①攻撃 59%上昇する\n②強襲時または強襲部隊との戦闘時に効果が1.5倍になる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・馬・砲　確率 27% / 攻撃 59%上昇(強襲時または強襲部隊との戦闘時に効果1.5倍)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "カード画像が無いため imageFull/imageChar は null。ixanary.comの埋め込みJSON(cards/2404)とixawiki.com(BushoCard/2404伊達成実)の基本ステータス表・スキル表を突き合わせて登録した。"
+ ]
+}

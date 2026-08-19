@@ -1,0 +1,48 @@
+{
+ "name": "毛利輝元【覇】",
+ "no": "1191",
+ "ch": "22章",
+ "cost": 5,
+ "troop": "弓器焙防",
+ "sub": "",
+ "effect": "弓器焙指揮の防御戦闘で被ダメージ30以下を最大7に軽減、防御154%上昇",
+ "furigana": "もうりてるもと",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1191_full.png",
+ "imageChar": "assets/img/characters/no1191_char.png",
+ "atkBase": 1180,
+ "atkGrowth": 42,
+ "defBase": 1250,
+ "defGrowth": 66,
+ "tacticsBase": 740,
+ "tacticsGrowth": 3.5,
+ "lv0Troops": 4640,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "SS",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "三星一統射陣",
+ "skillDetail": "SSS/LV10 確率 40% 防御 154%上昇/対象:弓・器・焙\n①防御 154%上昇する\n②対象兵科を指揮した防御戦闘時自部隊内の武将が受ける30以下のダメージは最大7になる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓・器・焙　確率 40% / 防御 154%上昇(被ダメージ30以下を最大7に軽減)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録。カード画像(スキルLV10形式・no1191_full.png)から作成。ステータス・スキル文はixanary.com(cards/1191)生HTMLの成長表・スキルボックスと一致確認。",
+  "rankGrades(槍A/弓SS/馬A/器S)はカード画像バッジ4隅・ixanary.com card JSON・ixawiki.com「武将カード一覧(天)」表の3ソースで一致。",
+  "名前の【覇】はixawiki.com「武将カード一覧(天)」表の表記(毛利輝元(覇))とixanary.com jobType=覇の両方で確認。",
+  "初期スキル三星一統射陣(SSS)はdata/skill/三星一統射陣.jsonが既存のため新規作成不要。",
+  "章は情報源に記載が無く未確認。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2021-08-13",
+ "wikiCommentCount": 38,
+ "chGuess": "22章",
+ "chSource": "wikiOldestComment"
+}

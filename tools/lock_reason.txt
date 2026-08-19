@@ -59,3 +59,13 @@
 2026-08-16	-1	hooks:tools/audit_characters.py	監査D-15のnoSynthesis例外のコメントを、赤べこの実例に合わせて訂正。ixanary/ixawikiが「合成不可」と書いていても実際には候補があった例があるので、情報源の記述だけを根拠に立てない旨を明記
 2026-08-16	-6	hooks:tools/audit_characters.py,hooks:tools/build_data.py,hooks:tools/extract_data.py,hooks:tools/gen_detail_pages.py,hooks:tools/lock.py,hooks:tools/prerender.py	上武将(characters-ue.html / data/busho-ue)と序武将(characters-jo.html / data/busho-jo)のデータベースを新設し、11箇所に配線した。あわせて章と攻防の集計が data/busho* を全部見ていなかったのを直した(パラレル30枚に章が付いていなかった)。検査を緩める変更ではなく対象を増やす変更
 2026-08-16	-1	hooks:tools/audit_selftest.py	今日足した検査2つ(確率が武将により違う / 同じレアリティに同名)に自己テストの注入ケースを置き、（N）の振り直しで注入位置を見失っていた slotが実枠と違う のアンカーを武将名からカードNo.に変えた。検査を緩める変更ではない
+2026-08-16	-2	hooks:tools/gate_selftest.py,hooks:tools/precommit_check.py	赤丸(approved:true)に、記録を残せば通る入口を足した(--approve <No> --reason)。今まで抜け道が1つも無く、ユーザーが明言しても --no-verify を使うしかなかった。記録は tools/approvals.txt に残り同じコミットに入る。手編集と過去行の書き換えは止める。commit側とpush側の両方に入れ、門番の自己テストに3ケース(記録なし=止まる/記録あり=通る/手編集=止まる)を置いた。検査を緩める変更だが、代わりに黙って増やせない形にしている
+2026-08-16	-1	hooks:tools/gen_detail_pages.py	鍛錬表の必要ポイント欄が「パラレル」の武将に、パラレルカードのページへのリンクを付けた。うちにページがある12体だけに付けるため、登録済みパラレルの番号を gen_detail_pages が window.__PARALLEL_NOS で渡す。検査を緩める変更ではない
+2026-08-16	-2	hooks:tools/audit_characters.py,hooks:tools/audit_selftest.py	登録済みスキル183件をシミュレーターへ反映する仕組みを足した(tools/build_special_skills.py)。あわせて監査に P-05(シミュレーターの武将名・初期スキル名が正本と違う)を追加し、自己テストに注入ケースを2つ置いた。検査を緩める変更ではなく対象を増やす変更
+2026-08-16	-1	hooks:tools/audit_selftest.py	自己テストの注入位置を直す(2614の initialSkill は rankGrades の後ろにあるのでアンカーが当たっていなかった)
+2026-08-16	-2	hooks:tools/audit_characters.py,hooks:tools/build_data.py	上レアリティ(4桁の4始まり)を監査の_rarityに追加し、くじシミュレーターの絵つき武将一覧(CARD_ART_NOS)を手書きから assets/img/characters/ の生成に変えた。特77体・上78体の新規登録に伴う配線。検査を緩める変更ではない
+2026-08-16	-1	hooks:tools/audit_characters.py	序(4桁5始まり)をレアリティ判定に足した。No.5082〜5269を実物のカードで確認。ここに無いと序137体が天に混ざり、同名判定が別レアリティ同士で鳴る
+2026-08-19	-1	hooks:.github/workflows/rules.yml	CI側の赤丸ゲートにtools/approvals.txt参照を追加(8b69e213で入口をローカル門番にだけ足していた食い違いの修正、PR #43で発覚)
+2026-08-19	-1	hooks:tools/gate_selftest.py	D-14の筋書きが固定番号1310を使っており、1310が2026-08-16に正式な赤丸になって空振りしていたのを、条件で選ぶ形に変更
+2026-08-19	-2	hooks:tools/gate_selftest.py,hooks:tools/rules.py	S-14が2回目のため rules.py に門番の対がずれていないかのチェックを追加。gate_selftest の筋書きが黄丸0件でも動くよう条件を変更
+2026-08-19	-2	hooks:tools/audit_selftest.py,hooks:tools/rules.py	門番の対がずれていないかのチェックをrules.pyに追加し、audit_selftestに注入ケース2件を追加(S-14が2回目のため)

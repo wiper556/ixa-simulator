@@ -1,0 +1,41 @@
+{
+ "name": "長尾為景（2）",
+ "no": "2203",
+ "ch": null,
+ "cost": 3,
+ "troop": "馬器攻破",
+ "sub": "",
+ "effect": "攻撃 42%上昇+破壊 34%上昇",
+ "furigana": "ながおためかげ",
+ "illustrator": "GODTAIL",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 970,
+ "atkGrowth": 27,
+ "defBase": 920,
+ "defGrowth": 23,
+ "tacticsBase": 460.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 3180,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "B",
+  "uma": "S",
+  "ki": "A"
+ },
+ "initialSkill": "雪原の奸雄",
+ "skillDetail": "B/LV10 確率 35% 攻撃 42%上昇+破壊 34%上昇/対象:馬・器\n①攻撃 42%上昇する\n②破壊 34%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "馬・器　確率 35% / 攻撃 42%上昇+破壊 34%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-17登録。カード画像が無いためixanary.com(cards/2203)生HTMLとixawiki.com(index.php?BushoCard/2203長尾為景)の2ソースで基本ステータス(コスト・指揮兵数・統率槍弓馬器・攻撃/防御/兵法の初期値と成長値・illustrator)が完全一致することを確認して登録した。",
+  "同名武将が複数存在するため、ixawiki.comの武将カード一覧の表記に合わせて名前を「長尾為景（2）」とした(assign_C.txtの指定通り)。",
+  "スキル数値(LV10確率35%/攻撃42%上昇/破壊34%上昇/対象馬器)はixanary.comのLV10欄から採用。ixawiki.comはLV1相当(確率10%/攻撃13%上昇/破壊8%上昇)のみ掲載でLV10欄が無く、LV1部分同士は一致した(矛盾ではなく情報量の差)。"
+ ]
+}

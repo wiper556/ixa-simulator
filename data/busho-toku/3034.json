@@ -1,0 +1,41 @@
+{
+ "name": "直江兼続",
+ "no": "3034",
+ "ch": null,
+ "cost": 2,
+ "troop": "槍弓馬砲攻速",
+ "sub": "",
+ "effect": "攻撃 7%上昇+速度 10%上昇",
+ "furigana": "なおえかねつぐ",
+ "illustrator": "高橋　祐",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 655,
+ "atkGrowth": 15,
+ "defBase": 670,
+ "defGrowth": 16,
+ "tacticsBase": 410.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 1790,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "D",
+  "uma": "A",
+  "ki": "B"
+ },
+ "initialSkill": "義兵進軍",
+ "skillDetail": "C/LV10 確率 100% 攻撃 7%上昇+速度 10%上昇/対象:槍・弓・馬・砲\n①攻撃 7%上昇する\n②速度 10%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・弓・馬・砲　確率 100% / 攻撃 7%上昇+速度 10%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当D)。カード画像が無いためixanary.com(cards/3034)とixawiki.com(index.php?BushoCard/3034直江兼続, Busho/武将カード一覧)の生HTML2ソースを突き合わせて登録した。",
+  "統率(B/D/A/B)・コスト2・指揮兵数1790・攻撃655/15・防御670/16・兵法410.0/2.5・ふりがな・初期スキル「義兵進軍」[C]はixanary.comとixawiki.comの2ソースで一致することを確認した(不一致箇所は個別に注記)。",
+  "カード画像が無いためimageFull/imageCharはnull、synthesisTableは付けない。reviewedOkはfalseのまま。章(ch)は両ソースとも記載が無くnullとした。"
+ ]
+}

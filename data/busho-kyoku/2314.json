@@ -1,0 +1,42 @@
+{
+ "name": "五郎八姫（2）",
+ "no": "2314",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "槍弓器焙攻防破",
+ "sub": "",
+ "effect": "対象兵科の攻撃・防御・破壊が上昇+飛翔4を持つ",
+ "furigana": "いろはひめ",
+ "illustrator": "ちゃきん",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1080,
+ "atkGrowth": 36,
+ "defBase": 1080,
+ "defGrowth": 36,
+ "tacticsBase": 500,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3650,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "S",
+  "uma": "B",
+  "ki": "A"
+ },
+ "initialSkill": "月花十文字龍",
+ "skillDetail": "A/LV10 確率 47% 攻撃 94%上昇/対象:槍・弓・器・焙　飛翔4\n①攻撃 94%上昇する\n②防御 94%上昇する\n③破壊 45%上昇する\n④飛翔4を持つ(敵軍に飛翔を持つ武将が4人未満のとき通常武将ダメージを受けない)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・弓・器・焙　確率 47% / 攻撃 94%上昇+防御 94%上昇+破壊 45%上昇(飛翔4)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(カード画像なし・第2波)。ixanary.com(cards/2314)生HTMLの埋め込みJSON(ふりがな・イラストレーター・cost・指揮兵数・統率力・攻防兵法初期値/成長値・スキル名/確率/効果)とixawiki.com(BushoCard/2314五郎八姫)の基本ステータス表・スキル追加表を突き合わせ、両ソース完全一致(食い違いなし)を確認して登録した。imageFull/imageChar/rankGradesの根拠はカード画像でなく2ソース一致による。",
+  "章(ch)は情報源(ixanary.com/ixawiki.com)に記載が無く未確認のためnullとした。"
+ ],
+ "wikiOldestComment": "2022-02-15",
+ "wikiCommentCount": 25
+}

@@ -1,0 +1,39 @@
+{
+ "name": "本多正信",
+ "no": "2047",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "砲器防",
+ "sub": "",
+ "effect": "対象兵科の防御上昇",
+ "furigana": "ほんだまさのぶ",
+ "illustrator": "Liduke",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 680,
+ "atkGrowth": 15,
+ "defBase": 730,
+ "defGrowth": 17,
+ "tacticsBase": 470,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 2570,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "B",
+  "uma": "C",
+  "ki": "A"
+ },
+ "initialSkill": "謀計奇策",
+ "skillDetail": "A/LV10 確率 35% 防御 35%上昇/対象:砲・器\n①防御 35%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "砲・器　確率 35% / 防御 35%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-17登録。カード画像が無いためixanary.com(cards/2047)とixawiki.com(BushoCard/2047本多正信)の生HTMLを突き合わせて一致した項目のみ登録した。基礎値/成長値/コスト/指揮兵数/統率ランク/スキル確率/効果値は両ソースで完全一致を確認済み。"
+ ]
+}

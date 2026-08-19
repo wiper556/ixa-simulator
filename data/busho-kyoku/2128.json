@@ -1,0 +1,42 @@
+{
+ "name": "榊原康政",
+ "no": "2128",
+ "ch": null,
+ "cost": 3,
+ "troop": "槍攻",
+ "sub": "",
+ "effect": "槍部隊の攻撃力上昇",
+ "furigana": "さかきばらやすまさ",
+ "illustrator": "ツヤイルカ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 790,
+ "atkGrowth": 19,
+ "defBase": 770,
+ "defGrowth": 16,
+ "tacticsBase": 490,
+ "tacticsGrowth": 2,
+ "lv0Troops": 3080,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "B",
+  "uma": "B",
+  "ki": "C"
+ },
+ "initialSkill": "太白源氏車",
+ "skillDetail": "B/LV10 確率 24% 攻撃 46%上昇/対象:槍\n①攻撃 46%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍　確率 24% / 攻撃 46%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-17登録。カード画像が無いためixanary.comとixawiki.comの生HTML突き合わせのみで登録した。",
+  "基礎値/成長値/コスト/指揮兵数(3080)/rankGrades(槍S・弓B・馬B・器C)/イラストレーター(ツヤイルカ)はixanary.com(cards/2128)とixawiki.com(BushoCard/2128榊原康政)の両方で完全一致。",
+  "skillDetail/trTableはixanary.com/skills/太白源氏車のLV10表記(確率+24%/対象槍/攻撃46%上昇)を採用。LV1値(確率+11%/攻撃22%上昇)がixawikiの基本ステータス表と一致。",
+  "章(ch)は両ソースに記載なく未確認。"
+ ]
+}

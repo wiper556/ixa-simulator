@@ -1,0 +1,25 @@
+{
+ "name": "獅子流星軍",
+ "rank": "S",
+ "baseRate": 53,
+ "target": "槍弓器",
+ "effectSummary": "S/LV10 確率 53% 攻撃 (2×攻撃参加武将数)%上昇/対象:槍弓器\n①槍弓器の攻撃が(2×攻撃参加武将数)%上昇する",
+ "categoryLinks": [],
+ "sourceCharacters": [
+  {
+   "name": "北条氏康【覇】",
+   "no": "1095",
+   "slot": "移植不可"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍弓器　確率 53% / 攻撃 (2×攻撃参加武将数)%上昇"
+  }
+ ],
+ "notes": [
+  "A-3-9「武将自身の初期スキル(S以上)は無条件にページを作る」により2026-08-16に一括作成。内容は data/busho/1095.json の skillDetail / trTable からの転記で、新しい事実は持ち込んでいない。"
+ ]
+}

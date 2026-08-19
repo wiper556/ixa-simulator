@@ -1,0 +1,43 @@
+{
+ "name": "細川ガラシャ（2）",
+ "no": "2960",
+ "ch": null,
+ "cost": 2,
+ "troop": "砲器防",
+ "sub": "",
+ "effect": "防御 40%上昇",
+ "furigana": "ほそかわがらしゃ",
+ "illustrator": "美樹本晴彦",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 620,
+ "atkGrowth": 17,
+ "defBase": 690,
+ "defGrowth": 19,
+ "tacticsBase": 440.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2450,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "C",
+  "ki": "A"
+ },
+ "initialSkill": "華玉天恵",
+ "skillDetail": "A/LV10 確率 35% 防御 40%上昇/対象:砲・器\n①防御 40%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "砲・器　確率 35% / 防御 40%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "カード画像が無いため ixanary.com(cards/2960, skills/華玉天恵)と ixawiki.com(index.php?BushoCard/2960細川ガラシャ, Busho/武将スキル)の生HTML2ソースを突き合わせて登録した。",
+  "コスト2・指揮兵数2450・統率(槍A/弓A/馬C/器A)・攻撃620/成長17・防御690/成長19・兵法440.0/成長2.0・ふりがな・イラストレーターは両ソース一致。初期スキル「華玉天恵」[A]はixanary・ixawikiともLV10確率35%/防御40%上昇で一致。",
+  "カード画像が無いためimageFull/imageCharはnull、synthesisTableは付けず、reviewedOkはfalseのまま。章(ch)は両ソースとも記載が無くnullとした。",
+  "【命名の食い違い】assign一覧の表記は「細川ガラシャ(2)」だったが、既に「細川ガラシャ（2）」(No.2599)が別カードとして登録済みで衝突するため、既存の番号(無印:No.1974/2070/3044、-復刻-:No.1983、-復刻-（2）:No.2520、（2）:No.2599)と衝突しない次の番号「（3）」に振り直した。ixawiki一覧側の(N)の付け方とサイト側の既存登録がずれている可能性があり、要確認。",
+  "2026-08-18: 登録時に既存カードと同名になるのを避けて（N）を空き番号へ振り直していたが、**（N）はゲーム内でしか分からない**ので ixawiki の一覧の表記に戻した。既存カードと同名のままなので、正しい（N）はうぐさんに確認が要る。"
+ ]
+}

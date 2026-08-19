@@ -1,0 +1,42 @@
+{
+ "name": "出雲阿国",
+ "no": "2053",
+ "ch": null,
+ "cost": 2,
+ "troop": "全攻速",
+ "sub": "",
+ "effect": "全部隊の攻撃・速度上昇",
+ "furigana": "いずものおくに",
+ "illustrator": "株式会社レバーン＋しいたけ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 640,
+ "atkGrowth": 16,
+ "defBase": null,
+ "defGrowth": 16,
+ "tacticsBase": 440,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 2150,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "B",
+  "uma": "B",
+  "ki": "A"
+ },
+ "initialSkill": "歌舞伎蝶",
+ "skillDetail": "B/LV10 確率 100% 攻撃 5%上昇/対象:全\n①攻撃 5%上昇する\n②速度 32%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 攻撃 5%上昇+速度 32%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-17登録(担当F)。カード画像が無いためixanary.com(cards/2053)とixawiki.com(index.php?BushoCard/2053出雲阿国)の生HTML突き合わせのみで登録した。",
+  "コスト2・指揮兵数2150・統率(槍A/弓B/馬B/器A)・攻撃力640(+16)・兵法440(+2.5)は両ソースで一致。防御力の初期値のみixanaryが640・ixawikiが630で食い違ったためdefBaseはnullにした(defGrowthの+16は両ソース一致)。",
+  "初期スキル「歌舞伎蝶」LV1(確率+100%/対象全/攻撃1%上昇/速度12%上昇)は両ソースで完全一致。LV10(確率100%/攻撃5%上昇/速度32%上昇)はixawikiに記載が無くixanary単独の値。浅井長政(No.2052)の疾風怒濤とLV1・LV10とも同一数値だが、ixanary生HTML上で両者とも独立してこの数値になっており転記ミスではない。",
+  "章(ch)は両ソースとも記載が無く未確認のためnull。イラストレーター株式会社レバーン＋しいたけは両ソース一致。"
+ ]
+}

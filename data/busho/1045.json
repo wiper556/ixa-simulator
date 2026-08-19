@@ -1,0 +1,48 @@
+{
+ "name": "島津義弘",
+ "no": "1045",
+ "ch": "8章",
+ "cost": 2.5,
+ "troop": "槍馬砲防",
+ "sub": "",
+ "effect": "槍・馬・砲部隊の防御力上昇",
+ "furigana": "しまづよしひろ",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1045_full.png",
+ "imageChar": "assets/img/characters/no1045_char.png",
+ "atkBase": 680,
+ "atkGrowth": 18,
+ "defBase": 720,
+ "defGrowth": 19,
+ "tacticsBase": 560.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 2940,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "B",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "双龍天傑",
+ "skillDetail": "S/LV10 確率 35% 防御 45%上昇/対象:槍馬砲\n①防御 45%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍馬砲　確率 35% / 防御 45%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録。カード画像(スキルLV10形式)から作成。統率バッジ4隅を8倍拡大して再確認: 槍A/弓B/馬A/器S。",
+  "ステータス初期値680/720/560.0・成長値+18/+19/+2.5・cost2.5・lv0Troops2940はixanary.com(cards/1045)の埋め込みデータとixawiki.com(Busho/武将カード一覧(天))の該当行が完全一致。",
+  "武将名の表記はixawiki.com(Busho/武将カード一覧(天))でNo.1045が無印「島津義弘」であることを確認したためそのまま無印とした。",
+  "初期スキル「双龍天傑」はSランクだがdata/skill/双龍天傑.jsonが未作成(要フォロー、報告のみ)。",
+  "章は情報源に記載が無く未確認。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2014-05-18",
+ "wikiCommentCount": 250,
+ "chGuess": "8章",
+ "chSource": "wikiOldestComment"
+}

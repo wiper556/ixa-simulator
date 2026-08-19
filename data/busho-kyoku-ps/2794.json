@@ -1,0 +1,41 @@
+{
+ "name": "阿茶局",
+ "no": "2794",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "全攻防",
+ "sub": "",
+ "effect": "攻撃 88%上昇+防御 88%上昇(部隊内「覇」武将スキル発動率+20%)",
+ "furigana": "あちゃのつぼね",
+ "illustrator": "鏑木康隆",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1000,
+ "atkGrowth": 27,
+ "defBase": 1000,
+ "defGrowth": 27,
+ "tacticsBase": 550.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3100,
+ "rankGrades": {
+  "yari": null,
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "才略ノ麗人",
+ "skillDetail": "A/LV10 確率 100% 攻撃 88%上昇+防御 88%上昇/対象:全\n①攻撃 88%上昇する\n②防御 88%上昇する\n③部隊内「覇」武将スキル発動率+20%となる(特殊効果は部隊内重複不可)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 攻撃 88%上昇+防御 88%上昇(部隊内「覇」武将スキル発動率+20%・特殊効果は部隊内重複不可)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当H)。カード画像が無いためixanary.com(cards/2794)とixawiki.com(BushoCard/2794阿茶局)の2ソースを生HTMLで突き合わせた。",
+  "コスト2.5・指揮兵数3100・攻撃1000(+27)/防御1000(+27)/兵法550.0(+2.5)・初期スキル「才略ノ麗人」(A)の確率/対象/効果(LV1・LV10とも)は両ソース完全一致(攻防が同値だが両ソース独立に同値のためそのまま採用)。統率のうち弓A/馬A/器Aは両ソース一致だが、槍のランクがixanaryはA・ixawikiはSで食い違ったためnullにした。",
+  "章は情報源に記載が無いため未確認。"
+ ]
+}

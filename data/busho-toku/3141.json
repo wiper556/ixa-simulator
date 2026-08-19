@@ -1,0 +1,42 @@
+{
+ "name": "水原親憲",
+ "no": "3141",
+ "ch": null,
+ "cost": 3,
+ "troop": "槍馬砲攻",
+ "sub": "",
+ "effect": "槍馬砲攻 20%上昇",
+ "furigana": "すいばらちかのり",
+ "illustrator": "双羽純",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 670,
+ "atkGrowth": 17,
+ "defBase": 645,
+ "defGrowth": 16,
+ "tacticsBase": 430.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2620,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "C",
+  "uma": "B",
+  "ki": "A"
+ },
+ "initialSkill": "風流雷火",
+ "skillDetail": "C/LV10 確率 35% 攻撃 20%上昇/対象:槍・馬・砲\n①攻撃 20%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・馬・砲　確率 35% / 攻撃 20%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当I)。カード画像が無いため ixanary.com(cards/3141, skills/風流雷火)と ixawiki.com(index.php?BushoCard/3141水原親憲, Busho/武将スキル)の生HTML2ソースを突き合わせて登録した。",
+  "統率(槍B/弓C/馬B/器A)・コスト3.0・指揮兵数2620・攻撃670/17・防御645/16・兵法430.0/2.0・ふりがな・イラストレーターはixanary.comとixawiki.comの2ソースで完全一致した。",
+  "初期スキル「風流雷火」[C]はixanary.com(skills/風流雷火)のLV10行(確率+35%/対象槍馬砲/攻撃20%上昇)とixawiki.com(Busho/武将スキル)のマスター一覧LV10行(確率35%/槍馬砲攻20%上昇)で完全一致し、両ソースの武将対応リストにも3141水原親憲が掲載されていることを確認した。",
+  "カード画像が無いためimageFull/imageCharはnull、synthesisTableは付けず、reviewedOkはfalseのまま。章(ch)は両ソースとも記載が無くnullとした。"
+ ]
+}

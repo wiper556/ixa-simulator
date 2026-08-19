@@ -1,0 +1,41 @@
+{
+ "name": "快川紹喜",
+ "no": "2770",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "全防",
+ "sub": "",
+ "effect": "防御 50%上昇(武将HPが50以下のとき効果3倍)",
+ "furigana": "かいせんじょうき",
+ "illustrator": "鏑木康隆",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 960,
+ "atkGrowth": 26,
+ "defBase": 1000,
+ "defGrowth": 28,
+ "tacticsBase": 510.0,
+ "tacticsGrowth": 3.0,
+ "lv0Troops": 3500,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "心頭滅却",
+ "skillDetail": "A/LV10 確率 70% 防御 50%上昇/対象:全\n①防御 50%上昇する\n②武将HPが50以下のとき防御効果が3倍になる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 70% / 防御 50%上昇(武将HPが50以下のとき効果3倍)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当H)。カード画像が無いためixanary.com(cards/2770)とixawiki.com(BushoCard/2770快川紹喜)の2ソースを生HTMLで突き合わせた。",
+  "コスト3.5・指揮兵数3500・統率(槍A/弓A/馬A/器A)・攻撃960(+26)/防御1000(+28)/兵法510.0(+3.0)・初期スキル「心頭滅却」(A)の確率/対象/効果(LV1・LV10とも)は両ソース完全一致。TRの記載はどちらにも無い。",
+  "章は情報源に記載が無いため未確認。"
+ ]
+}

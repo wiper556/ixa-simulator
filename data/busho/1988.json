@@ -1,0 +1,43 @@
+{
+ "name": "明智光秀-復刻-【覇】",
+ "no": "1988",
+ "ch": null,
+ "cost": 4,
+ "troop": "全攻破",
+ "sub": "",
+ "effect": "全兵科の攻撃と破壊が上昇",
+ "furigana": "あけちみつひで",
+ "illustrator": "直良有祐",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1200,
+ "atkGrowth": 54,
+ "defBase": null,
+ "defGrowth": 51,
+ "tacticsBase": 650,
+ "tacticsGrowth": 3.5,
+ "lv0Troops": 3900,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "SS"
+ },
+ "initialSkill": "冥王神戒",
+ "skillDetail": "S/LV10 確率 34% 攻撃 100%上昇 破壊 45%上昇/対象:全\n①攻撃 100%上昇する\n②破壊 45%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 34% / 攻撃 100%上昇+破壊 45%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "カード画像が無いため imageFull/imageChar は null。ixanary.comの埋め込みJSON(cards/1988)とixawiki.com(BushoCard/1988)の基本ステータス表・スキル表を突き合わせて登録した。",
+  "defBase(防御初期値)がixanaryでは1200(攻撃と同値)・ixawikiでは1100で食い違ったためnullにした。",
+  "この番号帯の複数の武将でixanaryのdefence値が同じカードのattack値と完全一致する事例が繰り返し見られ、ixanary側の表示に何らかの不具合がある可能性がある(要目視確認)。"
+ ],
+ "wikiOldestComment": "2020-02-23",
+ "wikiCommentCount": 24
+}

@@ -1,0 +1,43 @@
+{
+ "name": "おまつ",
+ "no": "2122",
+ "ch": null,
+ "cost": 1.5,
+ "troop": "槍弓防",
+ "sub": "",
+ "effect": "槍・弓部隊の防御力上昇",
+ "furigana": "おまつ",
+ "illustrator": "伊藤龍馬",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": null,
+ "atkGrowth": 16,
+ "defBase": 660,
+ "defGrowth": 19,
+ "tacticsBase": 450,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 2090,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "C",
+  "ki": "B"
+ },
+ "initialSkill": "賢女烈婦",
+ "skillDetail": "B/LV10 確率 30% 防御 33%上昇/対象:槍・弓\n①防御 33%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・弓　確率 30% / 防御 33%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-17登録。カード画像が無いためixanary.comとixawiki.comの生HTML突き合わせのみで登録した。",
+  "基礎値/成長値/コスト/指揮兵数(2090)/rankGrades(槍S・弓A・馬C・器B)/イラストレーター(伊藤龍馬)はixanary.com(cards/2122)とixawiki.com(BushoCard/2122おまつ)で完全一致。",
+  "【食い違いによりnull】atkBase(攻撃初期値)がixanary.com=580、ixawiki.com=550で一致しなかったためnullにした。atkGrowth(成長値16)は両ソース一致。",
+  "skillDetail/trTableはixanary.com/skills/賢女烈婦のLV10表記(確率+30%/対象槍弓/防御33%上昇)を採用。LV1値(確率+12%/防御15%上昇)がixawikiの基本ステータス表と一致。",
+  "章(ch)は両ソースに記載なく未確認。"
+ ]
+}

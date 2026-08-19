@@ -1,0 +1,39 @@
+{
+ "name": "福島正則",
+ "no": "2021",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "槍馬攻破",
+ "sub": "",
+ "effect": "攻撃 30%上昇+破壊 10%上昇",
+ "furigana": "ふくしままさのり",
+ "illustrator": "タカヤマトシアキ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 760,
+ "atkGrowth": 19,
+ "defBase": 670,
+ "defGrowth": 16,
+ "tacticsBase": 320,
+ "tacticsGrowth": 1.5,
+ "lv0Troops": 2580,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "D",
+  "uma": "A",
+  "ki": "B"
+ },
+ "initialSkill": "豪勇無比",
+ "skillDetail": "B/LV10 確率 25% 攻撃 30%上昇+破壊 10%上昇/対象:槍・馬\n①攻撃 30%上昇する\n②破壊 10%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・馬　確率 25% / 攻撃 30%上昇+破壊 10%上昇"
+  }
+ ],
+ "notes": [
+  "2026-08-17登録(担当D)。カード画像が無いためixanary.com(cards/2021)生HTMLとixawiki.com(index.php?BushoCard/2021福島正則、およびBusho/武将カード一覧(極)・Busho/武将スキルの生HTML)の2ソースで数値が一致することを確認して登録した。"
+ ],
+ "reviewedOk": false
+}

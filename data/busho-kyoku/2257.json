@@ -1,0 +1,39 @@
+{
+ "name": "愛姫（3）",
+ "no": "2257",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "槍弓馬防",
+ "sub": "",
+ "effect": "槍・弓・馬兵の防御力上昇",
+ "furigana": "めごひめ",
+ "illustrator": "DeeCHA",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 940,
+ "atkGrowth": 24,
+ "defBase": 1000,
+ "defGrowth": 30,
+ "tacticsBase": 500,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3020,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "S",
+  "uma": "A",
+  "ki": "B"
+ },
+ "initialSkill": "美龍泰天",
+ "skillDetail": "B/LV10 確率 35% 防御 58%上昇/対象:槍・弓・馬\n①防御 58%上昇する(自拠点防御時は効果が1.5倍になる)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・弓・馬　確率 35% / 防御 58%上昇(自拠点防御時1.5倍)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-17登録(担当F)。カード画像が無いためixanary.com(cards/2257)とixawiki.com(index.php?BushoCard/2257愛姫)の生HTML突き合わせのみで登録した。"
+ ]
+}

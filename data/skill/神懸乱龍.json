@@ -1,0 +1,25 @@
+{
+ "name": "神懸乱龍",
+ "rank": "S",
+ "baseRate": 24,
+ "target": "弓馬砲器",
+ "effectSummary": "S/LV10 確率 24% 防御 66%上昇/対象:弓馬砲器\n①防御 66%上昇する\n②敵軍6部隊以下で効果が1.5倍となる",
+ "categoryLinks": [],
+ "sourceCharacters": [
+  {
+   "name": "上杉景勝-復刻-（2）",
+   "no": "1972",
+   "slot": "移植不可"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓馬砲器　確率 24% / 防御 66%上昇(敵軍6部隊以下で効果1.5倍)"
+  }
+ ],
+ "notes": [
+  "A-3-9「武将自身の初期スキル(S以上)は無条件にページを作る」により2026-08-16に一括作成。内容は data/busho/1972.json の skillDetail / trTable からの転記で、新しい事実は持ち込んでいない。"
+ ]
+}

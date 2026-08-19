@@ -1,0 +1,40 @@
+{
+ "name": "伊達成実",
+ "no": "2136",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "馬砲攻",
+ "sub": "",
+ "effect": "馬・砲部隊の攻撃力上昇",
+ "furigana": "だてしげざね",
+ "illustrator": "BISAI",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 780,
+ "atkGrowth": 18,
+ "defBase": 680,
+ "defGrowth": 16,
+ "tacticsBase": 460,
+ "tacticsGrowth": 2.5,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "A",
+  "uma": "S",
+  "ki": "A"
+ },
+ "initialSkill": "成香 雀刺",
+ "skillDetail": "B/LV10 確率 10% 攻撃 40%上昇/対象:馬・砲\n①攻撃 40%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "馬・砲　確率 10% / 攻撃 40%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-17登録。カード画像が無いためixanary.com(cards/2136)とixawiki.com(BushoCard/2136伊達成実)の生HTMLの一致だけで登録した。",
+  "基礎値/成長値/コスト/指揮兵数/rankGrades(槍B・弓A・馬S・器A)/イラストレーター/スキルLV1数値は両ソースで完全一致。LV10数値はixanary.comのみに記載(ixawikiはLV1のみ掲載)。",
+  "章(ch)は両ソースに記載が無く未確認のためnull。"
+ ]
+}

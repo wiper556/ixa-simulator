@@ -1,0 +1,43 @@
+{
+ "name": "毛利元就",
+ "no": "2545",
+ "ch": null,
+ "cost": 3,
+ "troop": "槍弓馬攻",
+ "sub": "",
+ "effect": "攻撃 82%上昇(合流攻撃時は必ずスキル発動)",
+ "furigana": "もうりもとなり",
+ "illustrator": "株式会社レバーン＋しいたけ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1000,
+ "atkGrowth": 32,
+ "defBase": 980,
+ "defGrowth": 27,
+ "tacticsBase": 500,
+ "tacticsGrowth": 2,
+ "lv0Troops": 3270,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "B"
+ },
+ "initialSkill": "覇・百万一心",
+ "skillDetail": "B/LV10 確率 21% 攻撃 82%上昇/対象:槍・弓・馬\n①攻撃 82%上昇する\n②合流攻撃時は必ずスキルが発動する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・弓・馬　確率 21% / 攻撃 82%上昇(合流攻撃時は必ずスキル発動)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18新規登録(担当D・カード画像なし)。ixanary.com/cards/2545とixawiki.com(index.php?BushoCard/2545毛利元就)の生HTML2ソースで確認。「戦国IXA千万の覇者コラボログインキャンペーン」累計38日目の報酬カード。",
+  "コスト3・指揮兵数3270・攻撃1000/防御980(両ソース独立に一致・防御バグ無し)・成長+32/+27/+2・ふりがな・統率(槍S弓A馬A器B)・絵師(株式会社レバーン＋しいたけ)は2ソース完全一致。",
+  "【片方のみ確認】ixawikiのこのカードのページにはLv1相当の1行(確率12%/攻撃37%上昇/合流攻撃時は必ず発動)のみが記載されておりLv10の行が無かった。Lv1の値はixanaryのLV1表示と完全一致したため同一スキルの記載として信頼できるが、LV10の値(確率21%/攻撃82%上昇)はixanaryのみでの確認となる。",
+  "初期スキル名が「覇・百万一心」だが、効果文に他武将のスキルを無効化・発動率低下から保護する記述が無く覇道スキルとしては扱っていない。",
+  "章(ch)は両ソースとも記載が無くnullのまま。カード画像自体が無いためimageFull/imageCharはnull、reviewedOkはfalseのまま。"
+ ]
+}

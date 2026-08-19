@@ -1,0 +1,41 @@
+{
+ "name": "山中鹿介",
+ "no": "2078",
+ "ch": null,
+ "cost": 3,
+ "troop": "槍砲攻破",
+ "sub": "",
+ "effect": "攻撃・破壊上昇",
+ "furigana": "やまなかしかのすけ",
+ "illustrator": "岩元辰郎",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 780,
+ "atkGrowth": 18,
+ "defBase": 690,
+ "defGrowth": 17,
+ "tacticsBase": 460,
+ "tacticsGrowth": 2,
+ "lv0Troops": 2840,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "C",
+  "uma": "B",
+  "ki": "A"
+ },
+ "initialSkill": "月光麒麟",
+ "skillDetail": "B/LV10 確率 25% 攻撃 25%上昇+破壊 5%上昇/対象:槍・砲\n①攻撃 25%上昇する\n②破壊 5%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・砲　確率 25% / 攻撃 25%上昇+破壊 5%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-17登録。カード画像が無いため ixanary.com(cards/2078)と ixawiki.com(BushoCard/2078山中鹿介)の生HTML2ソースで確認した。",
+  "コスト/指揮兵数/攻撃防御兵法の初期値成長値/兵科ランク(槍S弓C馬B器A)/スキル名対象確率効果(LV10確率25%攻撃25%上昇+破壊5%上昇対象槍砲)/イラストレーターが両ソース完全一致。",
+  "章(ch)は両ソースとも記載が無くnullのまま。カード画像自体が無いためimageFull/imageCharはnull、reviewedOkはfalseのまま(rankGrades等はテキスト情報の2ソース一致で登録)。"
+ ]
+}

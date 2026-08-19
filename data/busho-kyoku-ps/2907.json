@@ -1,0 +1,42 @@
+{
+ "name": "直江兼続（2）",
+ "no": "2907",
+ "ch": null,
+ "cost": 3,
+ "troop": "馬砲攻",
+ "sub": "",
+ "effect": "攻撃 30%上昇(攻撃戦闘勝利時のみ自部隊の武将ダメージ40%軽減)",
+ "furigana": "なおえかねつぐ",
+ "illustrator": "正子公也",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 800,
+ "atkGrowth": 19,
+ "defBase": 700,
+ "defGrowth": 19,
+ "tacticsBase": 470,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 2980,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "愛染明王",
+ "skillDetail": "A/LV10 確率 20% 攻撃 30%上昇/対象:馬砲\n①攻撃が30%上昇する\n②攻撃戦闘に勝利した時のみ自部隊の武将ダメージが40%軽減する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "馬砲　確率 20% / 攻撃 30%上昇(攻撃戦闘勝利時のみ自部隊の武将ダメージ40%軽減)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "カード画像が無いため ixanary.com/cards/2907 と ixawiki.com(BushoCard/2907直江兼続)の生HTML2ソースで確認した。",
+  "基礎値800/700/470・成長19/19/2.5・コスト3・指揮兵数2980(★0-0)・統率(槍A/弓A/馬A/器A)はixanary.comとixawiki.comの2ソースで完全一致。",
+  "初期スキル愛染明王(A)のLV10「確率+20%/対象 馬砲/攻撃30%上昇+攻撃戦闘勝利時のみ自部隊の武将ダメージ軽減40%」はixanary.comの生HTML(cards/2907)とixawiki.com(Busho/武将スキル内の愛染明王行)の2ソースで確認(語尾表現は異なるが数値・対象は完全一致)。",
+  "ixawikiのページ名は一覧の表記どおり「直江兼続(2)」で組んだURLでは編集画面(空ページ)が返ったため、一覧ページ(Busho/武将カード一覧)のリンク先を確認し、実際のページ名が「BushoCard/2907直江兼続」(末尾の(2)なし)であることを突き止めて再取得した。"
+ ]
+}

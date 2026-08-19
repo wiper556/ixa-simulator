@@ -1,0 +1,43 @@
+{
+ "name": "柿崎景家（2）",
+ "no": "2246",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "馬器騎攻",
+ "sub": "",
+ "effect": "攻撃 (1.6×防御参加武将数)%上昇",
+ "furigana": "かきざきかげいえ",
+ "illustrator": "鹿角",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 980,
+ "atkGrowth": 30,
+ "defBase": 970,
+ "defGrowth": 27,
+ "tacticsBase": 460,
+ "tacticsGrowth": 2,
+ "lv0Troops": 3460,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "B",
+  "uma": "S",
+  "ki": "A"
+ },
+ "initialSkill": "三叉戟炎舞",
+ "skillDetail": "B/LV10 確率 42% 攻撃 (1.6×防御参加武将数)%上昇/対象:馬・器・騎\n①防御参加武将数×1.6%を攻撃効果に加算する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "馬・器・騎　確率 42% / 攻撃 1.6%×防御参加武将数(280人)=448.0%"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録。カード画像が無いためixanary.com(cards/2246)とixawiki.com(BushoCard/2246柿崎景家)の一致のみで入れた。",
+  "基礎値・成長値・コスト・指揮兵数・統率(槍A弓B馬S器A)は両ソース一致。",
+  "初期スキル「三叉戟炎舞」[B]はLV10確率42%・対象馬・器・騎。攻撃は(1.6×防御参加武将数)%上昇の式で両ソースとも表示され、具体的な数値は明示されていないためそのまま記載した。",
+  "既存登録のNo.2380柿崎景家（3）とは別カード(カードNoが異なる)。",
+  "2026-08-16: trTableの「(X×防御参加武将数)%上昇」を、サイトの既存の書き方(防御参加武将数=280人での計算値を併記)に揃えた。skillDetailは式のまま残してある。"
+ ]
+}

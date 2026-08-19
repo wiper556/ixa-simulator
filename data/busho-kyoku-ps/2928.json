@@ -1,0 +1,42 @@
+{
+ "name": "北条綱成",
+ "no": "2928",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "槍馬攻",
+ "sub": "",
+ "effect": "攻撃 42%上昇(戦闘勝利時に自軍兵士被害7%減少・重複不可・模倣不可)",
+ "furigana": "ほうじょうつなしげ",
+ "illustrator": "正子公也",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 950,
+ "atkGrowth": 22,
+ "defBase": 840,
+ "defGrowth": 18,
+ "tacticsBase": 460,
+ "tacticsGrowth": 2,
+ "lv0Troops": 3350,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "B",
+  "uma": "S",
+  "ki": "B"
+ },
+ "initialSkill": "勝軍 直八幡",
+ "skillDetail": "B/LV10 確率 34% 攻撃 42%上昇/対象:槍馬\n①攻撃が42%上昇する\n②戦闘に勝利した時に自軍兵士被害を7%減少する(重複不可・模倣不可)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍馬　確率 34% / 攻撃 42%上昇(戦闘勝利時に自軍兵士被害7%減少・重複不可・模倣不可)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "カード画像が無いため ixanary.com/cards/2928 と ixawiki.com(BushoCard/2928北条綱成)の生HTML2ソースで確認した。",
+  "基礎値950/840/460・成長22/18/2・コスト3.5・指揮兵数3350(★0-0)・統率(槍S/弓B/馬S/器B)はixanary.comとixawiki.comの2ソースで完全一致。",
+  "初期スキル勝軍 直八幡(B)のLV10「確率+34%/対象 槍馬/攻撃42%上昇+戦闘勝利時に自軍兵士被害7%減少(重複・模倣不可)」はixanary.comとixawiki.comの2ソースで完全一致。",
+  "2026-08-18: 名前をシミュレーター側の既存登録に合わせた。ixawiki のカードページには復刻と明記されているのに一覧の表記だけ無印で、そこから作ったこの正本が無印になっていた。"
+ ]
+}

@@ -1,0 +1,39 @@
+{
+ "name": "結城秀康",
+ "no": "2048",
+ "ch": null,
+ "cost": 3,
+ "troop": "槍攻",
+ "sub": "",
+ "effect": "対象兵科の攻撃上昇",
+ "furigana": "ゆうきひでやす",
+ "illustrator": "萩谷薫",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 810,
+ "atkGrowth": 18,
+ "defBase": 720,
+ "defGrowth": 17,
+ "tacticsBase": 460,
+ "tacticsGrowth": 2,
+ "lv0Troops": 2900,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "天槍の神技",
+ "skillDetail": "B/LV10 確率 25% 攻撃 30%上昇/対象:槍\n①攻撃 30%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍　確率 25% / 攻撃 30%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-17登録。カード画像が無いためixanary.com(cards/2048)とixawiki.com(BushoCard/2048結城秀康)の生HTMLを突き合わせて一致した項目のみ登録した。基礎値/成長値/コスト/指揮兵数/統率ランク/スキル確率/効果値は両ソースで完全一致を確認済み。"
+ ]
+}

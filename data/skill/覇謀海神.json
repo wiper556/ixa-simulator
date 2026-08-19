@@ -1,0 +1,26 @@
+{
+ "name": "覇謀海神",
+ "rank": "S",
+ "baseRate": 42,
+ "target": "弓・馬・焙・騎",
+ "noMimic": true,
+ "effectSummary": "S/LV10 確率 42% 防御 20%上昇/対象:弓・馬・焙・騎\n模倣不可\n①対象兵科(弓・馬・焙・騎)を指揮した戦闘時部隊総防御力が20%上昇する",
+ "categoryLinks": [],
+ "sourceCharacters": [
+  {
+   "name": "毛利元就【覇】",
+   "no": "1130",
+   "slot": "移植不可"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓・馬・焙・騎　確率 42% / 防御 20%上昇(模倣不可)"
+  }
+ ],
+ "notes": [
+  "A-3-9「武将自身の初期スキル(S以上)は無条件にページを作る」により2026-08-16に一括作成。内容は data/busho/1130.json の skillDetail / trTable からの転記で、新しい事実は持ち込んでいない。"
+ ]
+}

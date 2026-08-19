@@ -1,0 +1,44 @@
+{
+ "name": "高山友照",
+ "no": "4306",
+ "ch": null,
+ "cost": 2,
+ "troop": "馬攻",
+ "sub": "",
+ "effect": "馬攻10%上昇",
+ "furigana": "たかやまともてる",
+ "illustrator": "ナカニシイクシ",
+ "imageFull": "assets/img/characters/no4306_full.png",
+ "imageChar": "assets/img/characters/no4306_char.png",
+ "atkBase": 660,
+ "atkGrowth": 19,
+ "defBase": 560,
+ "defGrowth": 15,
+ "tacticsBase": 460.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 1940,
+ "rankGrades": {
+  "yari": "C",
+  "yumi": "C",
+  "uma": "B",
+  "ki": "C"
+ },
+ "initialSkill": "騎馬隊襲撃",
+ "skillDetail": "F/LV10 確率 20% 馬攻 10%上昇/対象:馬\n①馬攻 10%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "馬　確率 20% / 馬攻 10%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当G)。カード画像(スキルLV10形式)から。武将名「高山友照」/ 職業「上」/ 極・覇表記なし / コスト2 / 統率(4隅バッジ) 槍C・馬B・弓C・器C / 初期値 攻撃660・防御560・兵法460.0 / 指揮兵数 0/1940 / カードNo.4306 / 初期スキル「騎馬隊襲撃 LV10」[F] 確率+20%・対象 馬・馬攻(攻撃)10%上昇 / Illust:ナカニシイクシ。",
+  "成長値(攻撃+19・防御+15・兵法+2)はixanary.com/cards/4306とカード画像で一致。スキル効果もLV10=確率20%/馬攻10%上昇で一致。イラストレーター名はカード画像の低解像度クロップでは判読しづらかったため、ixanaryの生HTMLテキスト抽出「ナカニシイクシ」を採用した。",
+  "ixawiki.com(BushoCard/4306高山友照)は該当ページが未作成(編集フォームへリダイレクト)で参照できなかった。統率(槍C/馬B/弓C/器C)はカード画像の4隅バッジ単独確認(ixawikiでのクロスチェック不可)。",
+  "章(ch)はixanaryに記載が無く判断材料が無いためnullのまま。本バッチはカードJSON新規作成のみが指示範囲のためsynthesisTableは未作成。初期スキルはFランクのためdata/skill/ページの新規作成対象外。"
+ ],
+ "wikiOldestComment": null,
+ "wikiCommentCount": null
+}

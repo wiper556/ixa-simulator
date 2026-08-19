@@ -22,12 +22,14 @@
  0. 導入済みフックが正本(tools/hooks/)と食い違っている
  1. 監査のHIGHがベースラインより増えた
  2. 新しく approved:true になった武将がいる(RULES.md D-14)
+    → ただし tools/approvals.txt に許可の記録があるカードは通す(--approve で書く)
  3. attack-simulator.html を変えたのに SIMULATOR_VERSION を上げていない(P-03)
  4. ステージ済みの内容と作業ツリーが食い違っている(検査した物とコミットする物が別になる)
 
     python tools/precommit_check.py                 # = --mode commit
     python tools/precommit_check.py --mode push
     python tools/precommit_check.py --accept --reason "なぜ残すのか"
+    python tools/precommit_check.py --approve 1310 --reason "うぐさんが…と明言"
 """
 import datetime
 import io
@@ -188,6 +190,70 @@ def marks(path):
 
 def approved_set(path):
     return marks(path)[0]
+
+
+# ============ 赤丸(approved:true)の許可記録 ============
+#
+# D-14 は「赤丸はユーザーが明言した時だけ。エージェントは自分で付けない」。
+# 門番には**明言があったのか無かったのかを見分ける手段が無い**ので、
+# 増分をすべて止めていた。その結果、ユーザーが「赤丸にして」と言っても
+# 通し方が無く、--no-verify を使う癖が付きかけていた(2026-08-16、No.1310)。
+#
+# そこで --accept と同じ形にする。**通せるが、必ず記録が残る。**
+# 記録はコミットに入り、誰がいつ何を根拠に赤丸にしたかが後から読める。
+# 記録を手で書き足すのは --approve を使うのと同じなので、そこは防げない。
+# 防いでいるのは「黙って赤丸が増えること」だけで、それがこの入口の目的。
+APPROVALS = os.path.join(ROOT, "tools", "approvals.txt")
+APPROVAL_RE = re.compile(r"^(\d{3,6})\t(\d{4}-\d{2}-\d{2})\t(.{10,})$")
+APPROVAL_HEAD = (
+    "# 赤丸(approved:true)にしてよいとユーザーが明言したカードの記録。\n"
+    "# 1行1件、タブ区切りで カードNo. / 明言のあった日 / 理由。\n"
+    "# 手で書かず python tools/precommit_check.py --approve <No> "
+    "--reason \"...\" で足す。\n")
+
+
+def approvals_of(path):
+    """そのツリーの許可記録。{カードNo.: (日付, 理由)}。"""
+    p = os.path.join(path, "tools", "approvals.txt")
+    out = {}
+    if not os.path.exists(p):
+        return out
+    for line in io.open(p, encoding="utf-8", newline=""):
+        m = APPROVAL_RE.match(line.rstrip("\r\n"))
+        if m:
+            out[m.group(1)] = (m.group(2), m.group(3))
+    return out
+
+
+def do_approve(no, reason):
+    """許可記録を1行足す。ファイルを直接書かせないための入口。"""
+    if not re.match(r"^\d{3,6}$", str(no)):
+        print("--approve にはカードNo.(数字)を渡す。受け取った値: %r" % no)
+        return 1
+    reason = (reason or "").strip()
+    # --accept と同じ縛り。「-」1文字で全部通せた過去がある(H-11/G-11 第3回)。
+    if len(reason) < 10:
+        print("理由が短すぎる(10文字以上)。誰が・いつ・何を根拠に赤丸にするのかを書く。")
+        return 1
+    # 記録は1行1件。タブや改行が入ると行の形が壊れ、
+    # 書式照合をすり抜ける行を --approve 自身が書けてしまう(R-4 第5回と同じ穴)。
+    if "\t" in reason or "\n" in reason or "\r" in reason:
+        print("理由にタブ・改行は使えない(記録が1行1件で壊れる)。")
+        return 1
+    have = approvals_of(ROOT)
+    if str(no) in have:
+        print("No.%s はすでに許可済み(%s / %s)。" % (no, have[str(no)][0], have[str(no)][1]))
+        return 0
+    line = "%s\t%s\t%s\n" % (no, datetime.date.today().isoformat(), reason)
+    if not os.path.exists(APPROVALS):
+        io.open(APPROVALS, "w", encoding="utf-8", newline="\n").write(APPROVAL_HEAD)
+    with io.open(APPROVALS, "a", encoding="utf-8", newline="\n") as f:
+        f.write(line)
+    print("tools/approvals.txt に足した:")
+    print("  " + line.rstrip())
+    print()
+    print("**このファイルを同じコミットに入れること。** 入っていないと門番が止める。")
+    return 0
 
 
 def gate_source_clean():
@@ -458,6 +524,16 @@ def check_push():
                       % (base_ref or "なし"))
                 before = now or set()
             gained = sorted((now or set()) - before)
+            # commit側と同じく、許可記録(tools/approvals.txt)にあるカードは通す。
+            # **ここを直し忘れると、コミットは通って push だけ止まる**ので、
+            # 結局 --no-verify を使うことになり入口を作った意味が無くなる。
+            allowed_p = approvals_of(tmp)
+            okd = [x for x in gained if x.rsplit(":", 1)[-1] in allowed_p]
+            gained = [x for x in gained if x not in okd]
+            for x in okd:
+                no = x.rsplit(":", 1)[-1]
+                print("[許可] 赤丸にした: %s  (%s に明言 / %s)"
+                      % (x, allowed_p[no][0], allowed_p[no][1]))
             if gained:
                 ng = True
                 print()
@@ -469,6 +545,9 @@ def check_push():
                     print("  " + x)
                 print()
                 print("赤丸はユーザーが明言したときだけ(RULES.md D-14)。")
+                print("ユーザーが明言したのなら、理由を残してから通す:")
+                print('  python tools/precommit_check.py --approve %s --reason "..."'
+                      % gained[0].rsplit(":", 1)[-1])
 
             print()
             print("push検査(%s): HIGH %d件(新規%d) / MID %d件(新規%d) / 赤丸 %d件"
@@ -585,6 +664,18 @@ def check_range(rng):
 
 
 def main():
+    # 記録を1行足すだけなので、重い検査より先に済ませて抜ける
+    if "--approve" in sys.argv:
+        i = sys.argv.index("--approve")
+        if i + 1 >= len(sys.argv):
+            print("--approve のあとにカードNo.が要る。")
+            return 1
+        if "--reason" not in sys.argv:
+            print("--reason \"...\" が要る。理由なしで赤丸は通せない。")
+            return 1
+        return do_approve(sys.argv[i + 1],
+                          sys.argv[sys.argv.index("--reason") + 1])
+
     mode = "commit"
     if "--mode" in sys.argv:
         mode = sys.argv[sys.argv.index("--mode") + 1]
@@ -673,6 +764,9 @@ def main():
         cur = load(os.path.join(target, "tools", "audit_out", "findings.json"))
         approved_now, reviewed_now = marks(target)
         base = baseline_of(target)      # E-1: 比べる相手も同じツリーから
+        # 許可記録も**ステージ済みツリーから**読む。作業ツリーから読むと、
+        # 記録をコミットに入れないまま赤丸だけ通せてしまう。
+        allowed = approvals_of(target)
     finally:
         shutil.rmtree(tmp, ignore_errors=True)
 
@@ -778,6 +872,31 @@ def main():
                 print('  python tools/precommit_check.py --accept --reason "なぜ残すのか"')
                 print("(理由は tools/audit_baseline_reason.txt に残り、同じコミットに入る)")
 
+    # 赤丸の許可記録も、ベースラインと同じ扱いにする。
+    # 追記しか認めない。過去行を書き換えたり消したりできると、
+    # 「いつ誰の明言で赤丸にしたか」という記録そのものが後から作り替えられる。
+    if "tools/approvals.txt" in staged:
+        a_before = (run(["git", "show", "HEAD:tools/approvals.txt"]).stdout or "")
+        a_after = (run(["git", "show", ":tools/approvals.txt"]).stdout or "")
+        lb = [l for l in a_before.replace("\r", "").split("\n") if l.strip()]
+        la = [l for l in a_after.replace("\r", "").split("\n") if l.strip()]
+        why = None
+        if la[:len(lb)] != lb:
+            why = "過去の行が書き換えられている(追記しかできない)"
+        else:
+            bad = [l for l in la[len(lb):]
+                   if not l.startswith("#") and not APPROVAL_RE.match(l)]
+            if bad:
+                why = ("行の形が --approve の書式(No.<TAB>日付<TAB>理由10文字以上)"
+                       "ではない: 「%s」" % bad[0][:60])
+        if why:
+            ng = True
+            print("=" * 62)
+            print("[停止] 赤丸の許可記録の手編集: %s" % why)
+            print("=" * 62)
+            print("手で書かず、次を使う:")
+            print('  python tools/precommit_check.py --approve <No> --reason "..."')
+
     cur_keys = {key(x) for x in cur}
     base_keys = {key(x) for x in base}
     new_high = [x for x in cur if x["sev"] == "HIGH" and key(x) not in base_keys]
@@ -812,6 +931,15 @@ def main():
         finally:
             shutil.rmtree(head, ignore_errors=True)
         gained = sorted(approved_now - (approved_before or set()))
+        # 許可記録(tools/approvals.txt)に載っているカードは通す。
+        # **通したことを必ず印字する。** 黙って増えないようにするのが
+        # この入口の要点で、出力に出ないなら記録を残す意味がない。
+        okd = [x for x in gained if x.rsplit(":", 1)[-1] in allowed]
+        gained = [x for x in gained if x not in okd]
+        for x in okd:
+            no = x.rsplit(":", 1)[-1]
+            print("[許可] 赤丸にした: %s  (%s に明言 / %s)"
+                  % (x, allowed[no][0], allowed[no][1]))
         if gained:
             ng = True
             print()
@@ -822,6 +950,10 @@ def main():
                 print("  " + x)
             print()
             print("赤丸はユーザーが明言したときだけ(RULES.md D-14)。")
+            print("ユーザーが明言したのなら、理由を残してから通す:")
+            print('  python tools/precommit_check.py --approve %s --reason "..."'
+                  % gained[0].rsplit(":", 1)[-1])
+            print("(記録は tools/approvals.txt に残り、同じコミットに入る)")
         print("[確認] 赤丸の総数: %d件(HEAD %d件)"
               % (len(approved_now), len(approved_before or [])))
 

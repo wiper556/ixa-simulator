@@ -1,0 +1,30 @@
+{
+ "name": "高坂昌信（2）",
+ "no": "2234",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "槍器鉄攻",
+ "sub": "",
+ "effect": "攻撃 ((1+ランク)×コスト×2)%上昇",
+ "furigana": "こうさかまさのぶ",
+ "illustrator": "士基軽太",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1040, "atkGrowth": 28,
+ "defBase": 970, "defGrowth": 24,
+ "tacticsBase": 490, "tacticsGrowth": 2.5,
+ "lv0Troops": 3450,
+ "rankGrades": {"yari": "S", "yumi": "A", "uma": "B", "ki": "A"},
+ "initialSkill": "華美万略",
+ "skillDetail": "B/LV10 確率 34% 攻撃 ((1+ランク)×コスト×2)%上昇/対象:槍・器・鉄\n①攻撃 ((1+ランク)×コスト×2)%上昇する\n②武将ランクとコストで効果が変化する",
+ "trTable": [
+  {"level": "LV10", "points": "-", "effect": "槍・器・鉄　確率 34% / 攻撃 ((1+ランク)×コスト×2)%上昇(武将ランクとコストで効果が変化)"}
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録。カード画像が無いためixanary.com(cards/2234)とixawiki.com(BushoCard/2234高坂昌信)の一致のみで入れた。",
+  "基礎値・成長値・コスト・指揮兵数・統率(槍S弓A馬B器A)は両ソース一致。",
+  "初期スキル「華美万略」[B]はLV10確率34%・対象槍・器・鉄。攻撃は((1+ランク)×コスト×2)%上昇の式で両ソースとも表示され、具体的な数値は明示されていないためそのまま記載した。",
+  "ixanary.comにこのカード専用の「部隊スキル」欄があり「攻.四天王剛撃」の記載があったが、サイトのテンプレートに対応項目が無いため未登録(申し送り)。"
+ ]
+}

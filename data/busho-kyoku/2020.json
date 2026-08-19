@@ -1,0 +1,39 @@
+{
+ "name": "立花宗茂",
+ "no": "2020",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "全攻速",
+ "sub": "",
+ "effect": "攻撃 6%上昇+速度 40%上昇",
+ "furigana": "たちばなむねしげ",
+ "illustrator": "春乃壱",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 725,
+ "atkGrowth": 18,
+ "defBase": 735,
+ "defGrowth": 19,
+ "tacticsBase": 380,
+ "tacticsGrowth": 2,
+ "lv0Troops": 2620,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "C"
+ },
+ "initialSkill": "神風襲来",
+ "skillDetail": "B/LV10 確率 100% 攻撃 6%上昇+速度 40%上昇/対象:全\n①攻撃 6%上昇する\n②速度 40%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 攻撃 6%上昇+速度 40%上昇"
+  }
+ ],
+ "notes": [
+  "2026-08-17登録(担当D)。カード画像が無いためixanary.com(cards/2020)生HTMLとixawiki.com(index.php?BushoCard/2020立花宗茂、およびBusho/武将カード一覧(極)・Busho/武将スキルの生HTML)の2ソースで数値が一致することを確認して登録した。"
+ ],
+ "reviewedOk": false
+}

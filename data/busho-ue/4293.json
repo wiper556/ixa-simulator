@@ -1,0 +1,43 @@
+{
+ "name": "成富茂安",
+ "no": "4293",
+ "ch": null,
+ "cost": 2,
+ "troop": "砲防",
+ "sub": "",
+ "effect": "砲防12%上昇",
+ "furigana": "なりとみしげやす",
+ "illustrator": "トミダトモミ",
+ "imageFull": "assets/img/characters/no4293_full.png",
+ "imageChar": "assets/img/characters/no4293_char.png",
+ "atkBase": 560,
+ "atkGrowth": 17,
+ "defBase": 650,
+ "defGrowth": 19,
+ "tacticsBase": 450.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 1940,
+ "rankGrades": {
+  "yari": "C",
+  "yumi": "C",
+  "uma": "C",
+  "ki": "B"
+ },
+ "initialSkill": "鉄砲隊堅陣",
+ "skillDetail": "F/LV10 確率 25% 砲防 12%上昇/対象:砲\n①砲防 12%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "砲　確率 25% / 砲防 12%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当F)。カード画像(スキルLV10形式)から。ixanary.com/cards/4293の生HTMLでスキル文言(確率+25%・砲防12%上昇)・基礎値・成長値(攻撃+17・防御+19・兵法+2)・統率(槍C・弓C・馬C・器B)がカード画像と完全一致。イラストレーターは画像では読み取りにくかったがixanaryで「トミダトモミ」と確定。",
+  "初期スキル名はixanaryのスキルリンク先が/skills/鉄砲隊堅陣のため「鉄砲隊堅陣」で登録(同スキルはNo.4275 高力清長と共通)。防御系スキル(skillStrは防.鉄砲隊堅陣.F)。Fランクのためdata/skill/ページは作成していない。",
+  "章は情報源に記載なく未確認のためnull。ixanaryのdescription(紹介文)は空欄だった。"
+ ],
+ "wikiOldestComment": null,
+ "wikiCommentCount": 0
+}

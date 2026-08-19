@@ -1,0 +1,39 @@
+{
+ "name": "蒲生氏郷",
+ "no": "2027",
+ "ch": null,
+ "cost": 3,
+ "troop": "槍馬砲攻",
+ "sub": "",
+ "effect": "攻撃 25%上昇",
+ "furigana": "がもううじさと",
+ "illustrator": "須田彩加",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 740,
+ "atkGrowth": 18,
+ "defBase": 710,
+ "defGrowth": 16,
+ "tacticsBase": 460,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 2760,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "B",
+  "uma": "B",
+  "ki": "A"
+ },
+ "initialSkill": "風流嵐舞",
+ "skillDetail": "B/LV10 確率 25% 攻撃 25%上昇/対象:槍・馬・砲\n①攻撃 25%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・馬・砲　確率 25% / 攻撃 25%上昇"
+  }
+ ],
+ "notes": [
+  "2026-08-17登録(担当D)。カード画像が無いためixanary.com(cards/2027)生HTMLとixawiki.com(index.php?BushoCard/2027蒲生氏郷、およびBusho/武将カード一覧(極)・Busho/武将スキルの生HTML)の2ソースで数値が一致することを確認して登録した。"
+ ],
+ "reviewedOk": false
+}

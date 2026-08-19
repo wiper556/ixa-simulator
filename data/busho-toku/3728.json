@@ -1,0 +1,48 @@
+{
+ "name": "小侍従",
+ "no": "3728",
+ "ch": null,
+ "cost": 3,
+ "troop": "全攻",
+ "sub": "",
+ "effect": "攻撃 7%上昇(自軍全部隊対象・発動後はHPが必ず0になる・模倣不可)",
+ "furigana": "こじじゅう",
+ "illustrator": "ミヤジマハル",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 850,
+ "atkGrowth": 21,
+ "defBase": 850,
+ "defGrowth": 21,
+ "tacticsBase": 440.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 2900,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "王妃の矜持",
+ "skillDetail": "A/LV10 確率 100% 攻撃 7%上昇/対象:全\n模倣不可\n①自軍全部隊が対象になる\n②攻撃が7%上昇する\n③スキル発動後はこの武将のHPが必ず0になる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 攻撃 7%上昇(自軍全部隊対象・発動後はHPが必ず0になる・模倣不可)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-17登録(担当D)。カード画像なし(灰色表示の一覧撮影のみ)のためixanary.com(cards/3728)とixawiki.com(BushoCard/3728小侍従)の生HTML2ソースを突き合わせて登録した。",
+  "統率(槍A・弓A・馬A・器A)・コスト3・指揮兵数2900・兵法440・成長(+21/+21/+2)・ふりがな・イラストレーター(ミヤジマハル)は2ソースで完全一致した。",
+  "攻撃・防御はixanaryで攻撃850/防御850と同値だったため、防御が攻撃値をコピーする既知の不具合(1900番台で多発)を疑いixawiki.comで突き合わせたが、ixawiki側も独立して攻撃850/防御850を掲載しており両ソース一致のため実際に同値のカードと判断しそのまま採用した。",
+  "初期スキル「王妃の矜持」[A]はixanary.com(skills/王妃の矜持)でLV10=確率+100%/対象全/攻撃7%上昇/自軍全部隊に効果・スキル発動後はHPが必ず0になる(模倣不可)を確認。鍛錬(TR)の記載は無し。ixawikiの基本ステータス表は確率+100%・全攻+2%上昇となっており、これはixanaryのLV1値(攻撃2%上昇)と一致する。LV10欄が明示されているixanaryの値(攻撃7%上昇)を採用した。",
+  "武将名の（N）はixawiki.com(Busho/武将カード一覧)の特シリーズ一覧ページで確認し無印表記だった。",
+  "章(ch)は情報源に記載が無く未確認。ixawiki最古コメント日は2017-07-06・コメント90件でchGuessの参考値。"
+ ],
+ "wikiOldestComment": "2017-07-06",
+ "wikiCommentCount": 90,
+ "chGuess": "14章",
+ "chSource": "wikiOldestComment"
+}

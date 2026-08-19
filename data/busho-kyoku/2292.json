@@ -1,0 +1,39 @@
+{
+ "name": "竹中半兵衛（4）",
+ "no": "2292",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "槍弓器鉄防",
+ "sub": "",
+ "effect": "防御 62%上昇(敵軍4部隊以下で効果1.5倍)",
+ "furigana": "たけなかはんべえ",
+ "illustrator": "ゆんやま",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 980,
+ "atkGrowth": 27,
+ "defBase": 1050,
+ "defGrowth": 34,
+ "tacticsBase": 510,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3070,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "B",
+  "ki": "A"
+ },
+ "initialSkill": "千年鳳凰",
+ "skillDetail": "B/LV10 確率 32% 防御 62%上昇/対象:槍・弓・器・鉄\n①防御 62%上昇する(敵軍4部隊以下で効果1.5倍)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・弓・器・鉄　確率 32% / 防御 62%上昇(敵軍4部隊以下で効果1.5倍)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当H)。カード画像が無いためixanary.com(cards/2292)生HTMLとixawiki.com(index.php?BushoCard/2292竹中半兵衛)の基本ステータス表・スキル表を突き合わせて完全一致を確認して登録した。名前の（4）はixawikiの武将カード一覧の表記に従った。"
+ ]
+}

@@ -1,0 +1,41 @@
+{
+ "name": "春日虎綱",
+ "no": "2428",
+ "ch": null,
+ "cost": 4,
+ "troop": "全防",
+ "sub": "",
+ "effect": "名声20消費で発動(消費不可なら無効)/戦闘勝利時名声20回復(模倣不可)",
+ "furigana": "かすがとらつな",
+ "illustrator": "正子公也",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1000,
+ "atkGrowth": 37,
+ "defBase": 1050,
+ "defGrowth": 46,
+ "tacticsBase": 520,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3800,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "S",
+  "ki": "A"
+ },
+ "initialSkill": "六死八活",
+ "skillDetail": "A/LV10 確率 100% 防御 94%上昇/対象:全\n模倣不可\n①防御 94%上昇する\n②名声を20消費して発動する(消費できない場合はスキル無効)\n③戦闘勝利時は名声が20回復する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 防御 94%上昇(名声20消費で発動・消費不可ならスキル無効・戦闘勝利時名声20回復・模倣不可)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "カード画像が無いため ixanary.com/cards/2428 と ixawiki.com(BushoCard/2428春日虎綱)の生HTML2ソースで確認した。",
+  "コスト4・指揮3800(★0-0)・初期値1000/1050/520・成長+37/+46/+2.5・兵科ランク(槍A・馬S・弓A・器A)・ふりがな・絵師(正子公也)・LV10スキル値(確率100%・対象全・防御94%上昇・名声20消費で発動/消費不可なら無効・戦闘勝利時名声20回復・模倣不可)が両ソース完全一致。",
+  "初期スキル「六死八活」[A]の合成候補・章はixanary/ixawikiいずれのカードページにも記載が無く未確認。"
+ ]
+}

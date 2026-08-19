@@ -1,0 +1,44 @@
+{
+ "name": "徳川家康（3）【覇】",
+ "no": "1168",
+ "ch": "20章",
+ "cost": 5,
+ "troop": "全攻",
+ "sub": "",
+ "effect": "所属部隊の武将のスキルを無効化・発動率低下から保護",
+ "furigana": "とくがわいえやす",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1168_full.png",
+ "imageChar": "assets/img/characters/no1168_char.png",
+ "atkBase": 1190,
+ "atkGrowth": 55,
+ "defBase": 1100,
+ "defGrowth": 35,
+ "tacticsBase": 730.0,
+ "tacticsGrowth": 3.5,
+ "lv0Troops": 4640,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "S",
+  "uma": "S",
+  "ki": "A"
+ },
+ "initialSkill": "破軍十六神将",
+ "skillDetail": "SSS/LV10 確率 100% 攻撃 120%上昇/対象:全\n①攻撃 120%上昇する\n②所属部隊の武将が持つスキルを無効化や発動率低下スキルから保護する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 攻撃 120%上昇(所属部隊武将のスキルを無効化・発動率低下から保護)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録。カード画像(スキルLV10形式)からrankGrades(槍A/弓S/馬S/器A)を4隅バッジで確認。ステータス初期値・成長値・cost・lv0Troopsはixawiki.com(Busho/武将カード一覧(天))の一覧表と一致。名前の(3)は同一覧表の「徳川家康(覇3)」表記をF-0規則で変換した。②に所属部隊スキル保護効果があるがカード上の対象欄に赤字「覇道」表記が無いため、覇道classification rule(保護効果文+赤字覇道表記の両方必要)によりsubは覇道にせず空欄とした。章(ch)は情報源に記載なく未確認。SSSランクスキルだがdata/skill/破軍十六神将.jsonは未作成(要新規作成、報告済み)。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2020-08-15",
+ "wikiCommentCount": 29,
+ "chGuess": "20章",
+ "chSource": "wikiOldestComment"
+}

@@ -1,0 +1,39 @@
+{
+ "name": "長尾晴景",
+ "no": "2332",
+ "ch": null,
+ "cost": 4,
+ "troop": "槍砲器防",
+ "sub": "",
+ "effect": "防御 155%上昇(所持武将の全スキル卓越確率+30%)",
+ "furigana": "ながおはるかげ",
+ "illustrator": "タカハシタクヤ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1050,
+ "atkGrowth": 34,
+ "defBase": 1100,
+ "defGrowth": 41,
+ "tacticsBase": 510,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3890,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "B",
+  "ki": "S"
+ },
+ "initialSkill": "和戦方略",
+ "skillDetail": "A/LV10 確率 100% 防御 155%上昇/対象:槍・砲・器\n模倣不可\n①防御 155%上昇する\n②このスキルを所持する武将の全スキルの卓越確率に30%を加算する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・砲・器　確率 100% / 防御 155%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当J・第2波・カード画像なし)。ixanary.com(cards/2332)生HTMLとixawiki.com(index.php?BushoCard/2332長尾晴景、およびBusho/武将カード一覧(極))の2ソースでコスト/指揮兵数/統率ランク/攻撃防御兵法の初期値成長値/スキル効果(LV1・LV10)が完全一致することを確認して登録した。"
+ ]
+}

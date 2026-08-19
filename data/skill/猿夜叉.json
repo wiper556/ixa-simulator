@@ -1,0 +1,25 @@
+{
+ "name": "猿夜叉",
+ "rank": "S",
+ "baseRate": 35,
+ "target": "馬・砲",
+ "effectSummary": "S/LV10 確率 35% 攻撃 30%上昇/対象:馬・砲\n①攻撃 30%上昇する\n②破壊 10%上昇する",
+ "categoryLinks": [],
+ "sourceCharacters": [
+  {
+   "name": "浅井長政",
+   "no": "1008",
+   "slot": "移植不可"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "馬・砲　確率 35% / 攻撃 30%上昇+破壊 10%上昇"
+  }
+ ],
+ "notes": [
+  "A-3-9「武将自身の初期スキル(S以上)は無条件にページを作る」により2026-08-16に一括作成。内容は data/busho/1008.json の skillDetail / trTable からの転記で、新しい事実は持ち込んでいない。"
+ ]
+}

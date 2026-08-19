@@ -1,0 +1,25 @@
+{
+ "name": "天鬼雷砲",
+ "rank": "S",
+ "baseRate": 37,
+ "target": "槍砲器",
+ "effectSummary": "S/LV10 確率 37% 防御 24%上昇/対象:槍砲器\n①槍砲器の防御が24%上昇する\n②合流攻撃防御時は効果が3倍になる",
+ "categoryLinks": [],
+ "sourceCharacters": [
+  {
+   "name": "島津義久（4）",
+   "no": "1088",
+   "slot": "移植不可"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍砲器　確率 37% / 防御 24%上昇(合流攻撃防御時は3倍)"
+  }
+ ],
+ "notes": [
+  "A-3-9「武将自身の初期スキル(S以上)は無条件にページを作る」により2026-08-16に一括作成。内容は data/busho/1088.json の skillDetail / trTable からの転記で、新しい事実は持ち込んでいない。"
+ ]
+}

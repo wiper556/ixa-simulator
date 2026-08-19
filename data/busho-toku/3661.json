@@ -1,0 +1,44 @@
+{
+ "name": "蒲池鑑盛",
+ "no": "3661",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "槍砲器防",
+ "sub": "",
+ "effect": "防御 360%上昇(自拠点防御時は確率100%で発動)",
+ "furigana": "かまちあきもり",
+ "illustrator": "しいたけ",
+ "imageFull": "assets/img/characters/no3661_full.png",
+ "imageChar": "assets/img/characters/no3661_char.png",
+ "atkBase": 940,
+ "atkGrowth": 34,
+ "defBase": 950,
+ "defGrowth": 35,
+ "tacticsBase": 430.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 2700,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "C",
+  "uma": "B",
+  "ki": "B"
+ },
+ "initialSkill": "筑後十五城",
+ "skillDetail": "C/LV10 確率 30% 防御 360%上昇/対象:槍・砲・器\n①防御 360%上昇する\n②自拠点防御時は確率100%で発動する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・砲・器　確率 30% / 防御 360%上昇(自拠点防御時は確率100%で発動)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当D)。カード画像(スキルLV10形式)から。武将名「蒲池鑑盛」/ふりがな「かまちあきもり」/特/コスト2.5/統率 槍A・弓B・馬C・器B(4隅バッジ)/攻撃940・防御950・兵法430.0/指揮兵数0/2700/カードNo.3661/スキル「筑後十五城LV10」[C] 確率+30%・対象 槍/砲/器・防御360%上昇・自拠点防御時は100%発動/Illust しいたけ。",
+  "成長値(攻撃+34/防御+35/兵法+2)・イラストレーター・ステータス初期値・指揮兵数はixanary.com/cards/3661の生HTML埋め込みJSONとカード画像が完全一致。",
+  "章はixanary.com/cards/3661に記載が無く未確認のためnullのまま。",
+  "2026-08-16: 統率の弓と馬が入れ替わっていたので直した。バッジの並びは 左上=槍 / 右上=馬 / 左下=弓 / 右下=器(うぐさんがゲーム内で確認)。照合担当がカード画像を8倍に拡大して1枚ずつ確かめた結果。**ixanary は根拠にしていない**(埋め込みJSONの yumi/kiba がカード実物と食い違うカードが実在し、体系的な法則も無い)。"
+ ],
+ "wikiOldestComment": null,
+ "wikiCommentCount": 0
+}

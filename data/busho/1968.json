@@ -1,0 +1,42 @@
+{
+ "name": "立花宗茂-復刻-",
+ "no": "1968",
+ "ch": null,
+ "cost": 3,
+ "troop": "槍弓馬器攻防速",
+ "sub": "",
+ "effect": "槍弓馬器の攻撃防御速度が同時上昇",
+ "furigana": "たちばなむねしげ",
+ "illustrator": "直良有祐",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1100,
+ "atkGrowth": 33,
+ "defBase": 1100,
+ "defGrowth": 33,
+ "tacticsBase": 490,
+ "tacticsGrowth": 2,
+ "lv0Troops": 3850,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "S",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "天神凱武",
+ "skillDetail": "S/LV10 対象:槍弓馬器\n①確率 40%で攻撃 70%上昇する\n②確率 40%で防御 70%上昇する\n③確率 100%で速度 60%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍弓馬器　攻撃 確率 40% / 70%上昇+防御 確率 40% / 70%上昇+速度 確率 100% / 60%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-17登録。カード画像が無いためixanary.com(cards/1968)とixawiki.com(BushoCard/1968立花宗茂)の生HTML2ソースのみで作成した。imageFull/imageCharはnull。",
+  "cost/lv0Troops/rankGrades/atkBase・atkGrowth/defBase・defGrowth/tacticsBase・tacticsGrowthの全項目で両ソースが一致することを確認した。",
+  "天神凱武はLV1(確率22%で攻撃・防御25%上昇、確率100%で速度15%上昇)の数値が両ソースで完全一致したため、ixanary.comのLV10データ(確率40%で攻撃・防御70%上昇、確率100%で速度60%上昇)をskillDetail/trTableに採用した。",
+  "reviewedOkはfalseのまま。カード画像が無くバッジ・スキルパネルの直接照合ができないため黄丸化はできない。"
+ ]
+}

@@ -1,0 +1,41 @@
+{
+ "name": "世瀬蔵人",
+ "no": "3668",
+ "ch": null,
+ "cost": 2,
+ "troop": "槍砲器防",
+ "sub": "",
+ "effect": "防御20%上昇(敵部隊移動速度÷2%を加算・最も大きい速度を参照)",
+ "furigana": "よせくらんど",
+ "illustrator": "OOGA",
+ "imageFull": "assets/img/characters/no3668_full.png",
+ "imageChar": "assets/img/characters/no3668_char.png",
+ "atkBase": 860,
+ "atkGrowth": null,
+ "defBase": 930,
+ "defGrowth": null,
+ "tacticsBase": 460.0,
+ "tacticsGrowth": null,
+ "lv0Troops": 2420,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "B",
+  "uma": "C",
+  "ki": "B"
+ },
+ "initialSkill": "黒歴巾組",
+ "skillDetail": "C/LV10 確率 40% 防御 20%上昇/対象:槍・砲・器\n①防御20%上昇する\n②敵部隊移動速度÷2%を防御効果に加算する(最も大きい速度を参照)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・砲・器　確率 40% / 防御 20%上昇(敵部隊移動速度÷2%を加算・最も大きい速度を参照)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当C)。カード画像(スキルLV10形式)から作成。武将名・ふりがな・統率・攻防兵法初期値・指揮兵数・カードNo.・スキル名/効果・illustratorはカード画像から読み取り。ch(章)・growth系は画像に記載が無いため null。"
+ ],
+ "wikiOldestComment": null,
+ "wikiCommentCount": null
+}

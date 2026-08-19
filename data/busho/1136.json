@@ -1,0 +1,49 @@
+{
+ "name": "斎藤道三（3）",
+ "no": "1136",
+ "ch": "17章",
+ "cost": 4.5,
+ "troop": "槍器鉄攻",
+ "sub": "",
+ "effect": "槍・器・鉄部隊の攻撃力上昇(合流攻撃時は確率3倍)",
+ "furigana": "さいとうどうさん",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1136_full.png",
+ "imageChar": "assets/img/characters/no1136_char.png",
+ "atkBase": 1210,
+ "atkGrowth": 58,
+ "defBase": 1070,
+ "defGrowth": 30,
+ "tacticsBase": 650.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 4550,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "B",
+  "uma": "S",
+  "ki": "S"
+ },
+ "initialSkill": "蛇神轡銜",
+ "skillDetail": "S/LV10 確率 15% 攻撃 85%上昇/対象:槍・器・鉄\n①攻撃 85%上昇する\n②合流攻撃時は確率が3倍となる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・器・鉄　確率 15% / 攻撃 85%上昇(合流攻撃時は確率3倍)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録。カード画像(スキルLV10形式)から武将名・統率バッジ・スキル名・初期値を確認。",
+  "ステータス初期値1210/1070/650.0・成長値+58/+30/+2.5・cost4.5・lv0Troops4550はixanary.com(cards/1136)とixawiki.com(BushoCard/1136斎藤道三)の2ソースで成長表と一致確認。",
+  "統率は槍S/弓B/馬S/器S。カード画像バッジ4隅とixawiki.com(Busho/武将カード一覧(天))の統率力表記が一致。",
+  "武将名の（3）はixawiki.com(Busho/武将カード一覧(天))の表記「斎藤道三(3)」に従った。",
+  "初期スキル「蛇神轡銜」はSランクだがdata/skill/に個別ページが無い(要作成候補)。",
+  "章は情報源に記載が無く未確認。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2019-02-09",
+ "wikiCommentCount": 64,
+ "chGuess": "17章",
+ "chSource": "wikiOldestComment"
+}

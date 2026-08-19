@@ -1,0 +1,45 @@
+{
+ "name": "八十姫",
+ "no": "4268",
+ "ch": null,
+ "cost": 2,
+ "troop": "槍攻",
+ "sub": "",
+ "effect": "攻撃 15%上昇",
+ "furigana": "やそひめ",
+ "illustrator": "かにぱん",
+ "imageFull": "assets/img/characters/no4268_full.png",
+ "imageChar": "assets/img/characters/no4268_char.png",
+ "atkBase": 640,
+ "atkGrowth": 18,
+ "defBase": 540,
+ "defGrowth": 15,
+ "tacticsBase": 440.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 1870,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "C",
+  "uma": "C",
+  "ki": "C"
+ },
+ "initialSkill": "槍隊進撃",
+ "skillDetail": "F/LV10 確率 10% 攻撃 15%上昇/対象:槍\n①攻撃 15%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍　確率 10% / 攻撃 15%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当E)。カード画像(スキルLV10形式)から。武将名「八十姫」/ 職業「攻」/ 極・覇表記なし / コスト2 / 統率 槍B・弓C・馬C・器C(4隅を個別にズームして確認) / 初期値 攻撃640・防御540・兵法440.0 / 指揮兵数 0/1870 / カードNo.4268 / 初期スキル「槍隊進撃 LV10」[F] 確率+10%・対象 槍・槍攻:15%上昇 / Illust かにぱん。",
+  "成長値(攻撃+18・防御+15・兵法+2)とrankGrades(槍B/馬C/弓C/器C)はixanary.com/cards/4268・ixawiki.com(BushoCard/4268八十姫)の2ソースとカード画像で一致。",
+  "ixawiki.comのカードページに合成候補テーブルの記載があったが、本バッチは新規カードJSON作成のみが指示範囲のためsynthesisTableは未作成。初期スキルはFランクでdata/skill/ページの新規作成対象外。",
+  "章(ch)は両ソースとも記載が無く判断材料が無いためnullのまま。"
+ ],
+ "wikiOldestComment": "2022-02-10",
+ "wikiCommentCount": 2,
+ "chGuess": "22-23章"
+}

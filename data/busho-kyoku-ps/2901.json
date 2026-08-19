@@ -1,0 +1,41 @@
+{
+ "name": "黒田長政（2）",
+ "no": "2901",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "槍弓砲防",
+ "sub": "",
+ "effect": "防御 35%上昇",
+ "furigana": "くろだながまさ",
+ "illustrator": "正子公也",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 640,
+ "atkGrowth": 17,
+ "defBase": 660,
+ "defGrowth": 19,
+ "tacticsBase": 540.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3360,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "B",
+  "ki": "A"
+ },
+ "initialSkill": "慧眼の用兵",
+ "skillDetail": "A/LV10 確率 30% 防御 35%上昇/対象:槍・弓・砲\n①防御 35%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・弓・砲　確率 30% / 防御 35%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当H)。カード画像が無いためixanary.com(cards/2901)とixawiki.com(BushoCard/2901黒田長政)の2ソースを生HTMLで突き合わせた。",
+  "コスト3.5・指揮兵数3360・統率(槍S/弓A/馬B/器A)・攻撃640(+17)/防御660(+19)/兵法540.0(+2.5)は両ソース完全一致。初期スキル「慧眼の用兵」(A)はixawikiのカード表に1段のみの表示(確率17%・防御17%上昇)でこれはixanaryのLV1値と一致した。skillDetail/trTableに採用したLV10値(確率30%・防御35%上昇)はixanary.comのスキル効果表のLV10行から採用した。TRの記載はどちらにも無い。",
+  "章は情報源に記載が無いため未確認。"
+ ]
+}

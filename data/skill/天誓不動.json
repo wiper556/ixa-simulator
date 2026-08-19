@@ -1,0 +1,25 @@
+{
+ "name": "天誓不動",
+ "rank": "S",
+ "baseRate": 45,
+ "target": "弓砲器",
+ "effectSummary": "S/LV10 確率 45% 防御 45%上昇/対象:弓砲器\n①防御 45%上昇する\n②合流攻撃防御時は効果2倍となる",
+ "categoryLinks": [],
+ "sourceCharacters": [
+  {
+   "name": "相良義陽",
+   "no": "1116",
+   "slot": "移植不可"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓砲器　確率 45% / 防御 45%上昇(合流攻撃防御時は効果2倍)"
+  }
+ ],
+ "notes": [
+  "A-3-9「武将自身の初期スキル(S以上)は無条件にページを作る」により2026-08-16に一括作成。内容は data/busho/1116.json の skillDetail / trTable からの転記で、新しい事実は持ち込んでいない。"
+ ]
+}

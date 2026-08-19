@@ -1,0 +1,48 @@
+{
+ "name": "長宗我部盛親（2）",
+ "no": "1115",
+ "ch": "15章",
+ "cost": 3,
+ "troop": "槍馬砲器攻",
+ "sub": "",
+ "effect": "槍馬砲器の攻撃上昇(4部隊以下なら効果2倍)",
+ "furigana": "ちょうそかべもりちか",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1115_full.png",
+ "imageChar": "assets/img/characters/no1115_char.png",
+ "atkBase": 1150,
+ "atkGrowth": 28,
+ "defBase": 1100,
+ "defGrowth": 26,
+ "tacticsBase": 600.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 3840,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "B",
+  "uma": "S",
+  "ki": "SS"
+ },
+ "initialSkill": "八幡攻陣",
+ "skillDetail": "S/LV10 確率 35% 攻撃 67%上昇/対象:槍馬砲器\n①攻撃 67%上昇する\n②4部隊以下の攻撃で効果2倍となる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍馬砲器　確率 35% / 攻撃 67%上昇(4部隊以下の攻撃で効果2倍)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録。カード画像(スキルLV10形式、no1115_full.png)から武将名/統率4隅バッジ(槍A・馬S・弓B・器SS)/攻防兵法初期値(1150/1100/600.0)/lv0Troops(3840)/スキル名・効果文を読み取った。",
+  "ixanary.com(cards/1115)生HTMLの埋め込みJSONでfurigana・illustrator・cost・lv0Troops・rankGrades(yari A/yumi B/kiba S/heiki SS)・成長値(攻+28/防+26/兵法+2)を裏取りし、カード画像の読み取りと完全一致することを確認した。",
+  "名前の（N）はixawiki.com(Busho/武将カード一覧)天セクションの該当行を生バイトで確認したところ「長宗我部盛親(2)」と表記されていたため（2）を付与した。",
+  "初期スキル八幡攻陣はSランクだがdata/skill/八幡攻陣.jsonが存在しない(要新規作成)。",
+  "ch(章)は情報源で確認できず未確認のためnullとした。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2018-01-15",
+ "wikiCommentCount": 114,
+ "chGuess": "15章",
+ "chSource": "wikiOldestComment"
+}

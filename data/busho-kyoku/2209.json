@@ -1,0 +1,43 @@
+{
+ "name": "細川幽斎",
+ "no": "2209",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "槍器防",
+ "sub": "",
+ "effect": "防御 40%上昇",
+ "furigana": "ほそかわゆうさい",
+ "illustrator": "BISAI",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 990,
+ "atkGrowth": 44,
+ "defBase": 990,
+ "defGrowth": 44,
+ "tacticsBase": 480,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 3420,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "B",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "静謐ノ歌",
+ "skillDetail": "B/LV10 確率 45% 防御 40%上昇/対象:槍・器\n①防御 40%上昇する\n②自軍部隊数5以下でのみ発動する\n③敵軍部隊数×5%を効果に加算する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・器　確率 45% / 防御 40%上昇(自軍部隊数5以下でのみ発動・敵軍部隊数×5%を加算)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当D)。カード画像が無いためixanary.com(cards/2209)とixawiki.com(index.php?BushoCard/2209細川幽斎)の生HTML突き合わせのみで登録した。",
+  "コスト3.5・指揮兵数3420・攻撃力990(+44)・防御力990(+44、両ソース独立に同値のため攻防同値カードと判断し疑わない)・兵法480(+2.0)・イラストレーターBISAI・スキルLV1/LV10の数値は両ソースで完全一致。",
+  "「敵軍部隊数×5%を効果に加算」は上限の無い相手依存の値のため、既存の母数固定の計算式ルールを適用せず式のまま記載した。",
+  "rankGrades(槍S/弓B/馬A/器A)はixawikiのみ出典(ixanaryにテキスト情報無し)。",
+  "章(ch)は両ソースに記載が無く未確認のためnull。"
+ ]
+}

@@ -1,0 +1,42 @@
+{
+ "name": "淀-復刻-",
+ "no": "1954",
+ "ch": null,
+ "cost": 3,
+ "troop": "全攻速",
+ "sub": "",
+ "effect": "全軍の攻撃・速度上昇+帰還速度4倍",
+ "furigana": "よど",
+ "illustrator": "直良有祐",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 970,
+ "atkGrowth": 26,
+ "defBase": 970,
+ "defGrowth": 26,
+ "tacticsBase": 610.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3800,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "B",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "夢幻神群行",
+ "skillDetail": "S/LV10 確率 100% 攻撃 15%上昇/対象:全\n①攻撃 15%上昇する\n②速度 50%上昇する\n③攻撃参加した自軍全部隊の帰還速度が4倍となる(帰還効果は模倣・重複不可)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 攻撃 15%上昇+速度 50%上昇+帰還速度4倍(模倣・重複不可)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-17登録。カード画像が無いためixanary.com(cards/1954)とixawiki.com(BushoCard/1954淀)の2ソースで突き合わせた。",
+  "攻撃970(+26)・防御970(+26)・兵法610.0(+2.5)・指揮兵数3800・コスト3・統率(槍A/弓B/馬A/器S)・初期スキル「夢幻神群行」(S)の確率/対象/効果は両ソース一致し食い違いは無かった(defBaseも他の復刻カードと異なり両ソース一致)。",
+  "ixanary.comにはLV1に表示されない追加の部隊スキル「攻.覇道の礎」「防.戦姫艶舞」の記載があるが、カードLV0画面には出ない枠のためinitialSkillには含めていない。",
+  "章(ch)は情報源に記載が無いため未確認でnull。"
+ ]
+}

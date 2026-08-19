@@ -1,0 +1,41 @@
+{
+ "name": "上杉謙信",
+ "no": "2005",
+ "ch": null,
+ "cost": 2,
+ "troop": "槍弓馬攻",
+ "sub": "",
+ "effect": "対象兵科の攻撃が上昇",
+ "furigana": "うえすぎけんしん",
+ "illustrator": "サイノワタル",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 745,
+ "atkGrowth": 13,
+ "defBase": 700,
+ "defGrowth": 13,
+ "tacticsBase": 380,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 2170,
+ "rankGrades": {
+  "yari": "C",
+  "yumi": "B",
+  "uma": "S",
+  "ki": "F"
+ },
+ "initialSkill": "車懸り 白狐",
+ "skillDetail": "B/LV10 確率 20% 攻撃 30%上昇/対象:槍・弓・馬\n①攻撃 30%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・弓・馬　確率 20% / 攻撃 30%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "カード画像が無いため imageFull/imageChar は null。ixanary.comの埋め込みJSON(cards/2005)とixawiki.com(BushoCard/2005)の基本ステータス表・スキル表を突き合わせて登録した。"
+ ],
+ "wikiOldestComment": "2013-04-04",
+ "wikiCommentCount": 17
+}

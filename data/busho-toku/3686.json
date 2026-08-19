@@ -1,0 +1,44 @@
+{
+ "name": "芳賀高定",
+ "no": "3686",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "全防",
+ "sub": "",
+ "effect": "防御 260%上昇(武将HPが130以下のとき、防御効果を2倍)",
+ "furigana": "はがたかさだ",
+ "illustrator": "しいたけ",
+ "imageFull": "assets/img/characters/no3686_full.png",
+ "imageChar": "assets/img/characters/no3686_char.png",
+ "atkBase": 860,
+ "atkGrowth": 27,
+ "defBase": 960,
+ "defGrowth": 36,
+ "tacticsBase": 440.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 2700,
+ "rankGrades": {
+  "yari": "C",
+  "yumi": "B",
+  "uma": "B",
+  "ki": "A"
+ },
+ "initialSkill": "不屈ノ忠臣",
+ "skillDetail": "C/LV10 確率 60% 防御 260%上昇/対象:全\n①防御 260%上昇する\n②武将HPが130以下のとき防御効果を2倍する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 60% / 防御 260%上昇(武将HPが130以下のとき、防御効果を2倍)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当A)。カード画像(スキルLV10形式)から。武将名「芳賀高定」/ふりがな「はがたかさだ」/特/コスト2.5/統率 槍C・弓B・馬B・器A(4隅個別ズームで確認)/攻撃860・防御960・兵法440.0/指揮兵数0/2700/カードNo.3686/スキル「不屈ノ忠臣LV10」[C] 確率:+60%・対象 全・防御:260%上昇・武将HPが130以下のとき、防御効果を2倍する/Illust:しいたけ。当初「30以下」と見えたが再ズームで「130以下」と確認しixanary側の記載とも一致した。",
+  "スキル名が「不屈ノ忠臣」だが効果自体はHP閾値による防御効果倍加であり、サイトの既存sub=「不屈」タグ(自部隊が不屈状態を得る効果、例:busho-kyoku/2391.json)とは異なる仕組みのため、subは空欄のままとした。",
+  "成長値(攻撃+27/防御+36/兵法+2)・イラストレーター(しいたけ)・スキルLV10効果(確率60%/防御260%上昇/HP130以下で2倍)はixanary.com/cards/3686の生HTML埋め込みJSON・スキルテーブルとカード画像が一致。",
+  "章はixanary.com/cards/3686に記載なし、ixawiki側は今回のバッチ(35xx〜36xx台)で軒並み未作成だったため個別確認を省略しnullのままとした(要申し送り)。"
+ ],
+ "wikiOldestComment": null,
+ "wikiCommentCount": null
+}

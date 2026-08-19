@@ -93,7 +93,7 @@
   "45do.info(生HTML skiladd_wrap)+ameameixa.com(スキルテーブル)の2ソース照合済み。S1は45do.info/skills.htmlの表記(SSS)に合わせ既存の誤記(SS)を修正",
   "2026-08-16黄丸化再検証: ixanary.com(cards/1235, skills/魔狂ノ業歌)+ixawiki.com(BushoCard/1235細川忠興)の2ソースでsynthesisTable5枠(A天香山命SS自己参照/B高津姫神SS自己参照/C神屋楯比売命SS自己参照/S1四至ノ神域SSS自己参照/S2騎虎神道S自己参照)が完全一致(S1のSSS再確認含む)。基礎値(1190/1100/640、成長+62/+42/+3、指揮4860)・rankGrades(槍A/弓A/馬S/器S、カード画像バッジ拡大確認)もixanary生HTMLと一致。data/skill/天香山命・高津姫神・神屋楯比売命・四至ノ神域・騎虎神道の各JSONのsourceCharactersに1235が正しいslotで既に記載済み。skillDetail及び関連スキルJSON2件(魔狂ノ業歌・騎虎神道)の「TR1〜TR5未確認」を追加ソースで確認、いずれもixanary+ixawikiの2ソースでTR区分自体が存在しないことを確認し表記を削除。"
  ],
- "reviewedOk": true,
+ "reviewedOk": false,
  "wikiOldestComment": "2023-02-03",
  "wikiCommentCount": 63,
  "chGuess": "25章"

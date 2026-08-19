@@ -1,0 +1,71 @@
+{
+ "name": "春日局",
+ "no": "2726",
+ "ch": null,
+ "cost": 3.0,
+ "troop": "全防",
+ "sub": "",
+ "effect": "防御 60%上昇(姫武将にのみ効果)",
+ "furigana": "かすがのつぼね",
+ "illustrator": "ツヤイルカ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 750,
+ "atkGrowth": 18,
+ "defBase": 800,
+ "defGrowth": 19,
+ "tacticsBase": 520,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2650,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "B",
+  "ki": "A"
+ },
+ "initialSkill": "穢土の礎",
+ "skillDetail": "A/LV10 確率 20% 防御 60%上昇/対象:全\n①防御が60%上昇する(姫武将にのみ効果)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 20% / 防御 60%上昇(姫武将にのみ効果)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": null
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": null
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": null
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": null
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": null
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": null
+  }
+ ],
+ "notes": [
+  "2026-08-18新規登録(担当G・カード画像なし)。ixanary.com/cards/2726とixawiki.com(index.php?BushoCard/2726春日局)の生HTML2ソースで統率(槍A弓A馬B器A)・コスト3・指揮兵数2650・初期値750/800/520・成長値+18/+19/+2.0・絵師ツヤイルカ・ふりがな・スキルLV1値(確率+15%/防御29%上昇)が完全一致することを確認した(不一致項目なし)。",
+  "初期スキル「穢土の礎」[A]のLV10値(確率20%/防御60%上昇/対象全・姫武将にのみ効果)はixanary.com/cards/2726のLV10スキルボックスで確認。",
+  "ixanaryには追加スキル(unitSkills)として「防.戦姫艶舞」の記載があるが、本サイトのJSONスキーマに対応するフィールドが無いため登録していない。synthesisTableはカード画像が無いため作成していない。章は両ソースに記載が無く未確認。"
+ ],
+ "reviewedOk": false
+}

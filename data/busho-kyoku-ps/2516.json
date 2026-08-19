@@ -1,0 +1,45 @@
+{
+ "name": "山手殿-復刻-",
+ "no": "2516",
+ "ch": null,
+ "cost": 2,
+ "troop": "弓馬砲器防",
+ "sub": "",
+ "effect": "防御 45%上昇(自部隊の武将ダメージ軽減12%・重複発動上限数3)",
+ "furigana": "やまのてどの",
+ "illustrator": "碧風羽",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 950,
+ "atkGrowth": 29,
+ "defBase": 1020,
+ "defGrowth": 35,
+ "tacticsBase": 500,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 2550,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "気丈な決意",
+ "skillDetail": "A/LV10 確率 100% 防御 45%上昇/対象:弓・馬・砲・器\n①防御 45%上昇する\n②自部隊の武将ダメージを12%軽減する(重複発動上限数3)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓・馬・砲・器　確率 100% / 防御 45%上昇(自部隊の武将ダメージ軽減12%・重複発動上限数3)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18新規登録(担当C・カード画像なし)。ixanary.com/cards/2516とixawiki.com(index.php?BushoCard/2516山手殿)の生HTML2ソースで全項目が一致することを確認した(画像照合は無し)。",
+  "武将名: ixawiki一覧は無印の「山手殿」表記。既存の山手殿(No.3725)と同名重複になるが、ixawiki一覧が区別していないためassign_C.txtの指示通り無印で登録した。要再検討(申し送り事項)。",
+  "ixawikiページに「※「武将イラスト人気ランキング2019」姫部門・5位受賞により復刻」の記載があり実質復刻カード。",
+  "コスト2・指揮兵数2550(★0-0)・成長値+29/+35/+2.5・ふりがな・絵師(碧風羽)は2ソースで完全一致。",
+  "統率(弓)のみixanaryとixawikiが食い違った: ixanaryはyari/yumi/kiba/heiki=A/S/A/A、ixawikiは槍A/弓A/馬A/器Aで弓の値が不一致(ixanary S・ixawiki A)。ixanaryのyumi/kibaはカード実物と入れ替わっている場合があるとの既知の注意点があり、どちらが正しいか決められないためyumiをnullにした。他の3項目(槍A/馬A/器A)は一致。",
+  "章はixanary/ixawikiいずれのカードページにも記載が無く未確認。",
+  "2026-08-18訂正: assets/js/ixa-data.js(シミュ側)に既にNo.2516の暫定登録(2026-08-10カード画像・「山手殿-復刻-」)があるのを監査ツール(tools/audit_characters.py)で発見。rankGrades(槍A/弓A/馬A/器A)・基礎値・成長値が今回の登録と完全一致していたため、名前はそちらに合わせて「山手殿-復刻-」に訂正した(元は一覧表記通りの「山手殿」で登録していた)。またrankGradesの弓(yumi)は本登録では当初ixanary/ixawiki不一致でnullにしていたが、カード画像由来のシミュ側データがA(ixawikiと同値)だったためAに訂正した。"
+ ]
+}

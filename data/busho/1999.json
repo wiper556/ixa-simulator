@@ -1,0 +1,42 @@
+{
+ "name": "織田信長-復刻-【覇】",
+ "no": "1999",
+ "ch": null,
+ "cost": 5,
+ "troop": "砲攻破",
+ "sub": "",
+ "effect": "対象兵科の攻撃と破壊が上昇、効果は武将ランクで変動",
+ "furigana": "おだのぶなが",
+ "illustrator": "直良有祐",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1200,
+ "atkGrowth": 59,
+ "defBase": 1200,
+ "defGrowth": 59,
+ "tacticsBase": 720,
+ "tacticsGrowth": 3.5,
+ "lv0Troops": 4650,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "S",
+  "ki": "S"
+ },
+ "initialSkill": "三段撃 覇神",
+ "skillDetail": "S/LV10 確率 30% 攻撃 15%上昇 破壊 75%上昇/対象:砲\n①攻撃 15%上昇する(武将ランクで変動・(ランク×ランク×3)+15%・極限突破162%・天限突破207%)\n②破壊 75%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "砲　確率 30% / 攻撃 15%上昇(武将ランクで変動・天限突破207%)+破壊 75%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "カード画像が無いため imageFull/imageChar は null。ixanary.comの埋め込みJSON(cards/1999)とixawiki.com(BushoCard/1999)の基本ステータス表・スキル表を突き合わせて登録した。",
+  "武将ランク依存の計算式と極限突破/天限突破時の数値はixawikiにのみ詳細記載があり、ixanaryはLV10の天限突破時数値(207%)のみ表示。両者の重複部分(207%)は完全一致するため矛盾ではなくixawikiの詳細情報を採用した。"
+ ],
+ "wikiOldestComment": "2021-10-26",
+ "wikiCommentCount": 15
+}

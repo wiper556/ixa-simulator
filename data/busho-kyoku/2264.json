@@ -1,0 +1,39 @@
+{
+ "name": "宝蔵院胤栄",
+ "no": "2264",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "槍器鉄攻",
+ "sub": "",
+ "effect": "槍・器・鉄兵の攻撃力上昇",
+ "furigana": "ほうぞういんいんえい",
+ "illustrator": "BISAI",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1080,
+ "atkGrowth": 49,
+ "defBase": 980,
+ "defGrowth": 26,
+ "tacticsBase": 480,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3520,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "B",
+  "ki": "A"
+ },
+ "initialSkill": "月槍 十文字",
+ "skillDetail": "B/LV10 確率 30% 攻撃 67%上昇/対象:槍・器・鉄　卓越\n①攻撃 67%上昇する\n②卓越:追加確率25%で攻撃効果が1.5倍になる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・器・鉄　確率 30% / 攻撃 67%上昇(卓越:追加確率25%で1.5倍)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-17登録(担当F)。カード画像が無いためixanary.com(cards/2264)とixawiki.com(index.php?BushoCard/2264宝蔵院胤栄)の生HTML突き合わせのみで登録した。"
+ ]
+}

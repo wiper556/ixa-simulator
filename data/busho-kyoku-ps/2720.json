@@ -1,0 +1,70 @@
+{
+ "name": "水野勝成",
+ "no": "2720",
+ "ch": null,
+ "cost": 3.0,
+ "troop": "全攻",
+ "sub": "",
+ "effect": "攻撃 45%上昇",
+ "furigana": "みずのかつなり",
+ "illustrator": "正子公也",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 900,
+ "atkGrowth": 42,
+ "defBase": 640,
+ "defGrowth": 40,
+ "tacticsBase": 540,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2420,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "B",
+  "uma": "S",
+  "ki": "S"
+ },
+ "initialSkill": "流浪の勇将",
+ "skillDetail": "A/LV10 確率 10% 攻撃 45%上昇/対象:全\n①攻撃が45%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 10% / 攻撃 45%上昇"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": null
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": null
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": null
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": null
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": null
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": null
+  }
+ ],
+ "notes": [
+  "2026-08-18新規登録(担当G・カード画像なし)。ixanary.com/cards/2720とixawiki.com(index.php?BushoCard/2720水野勝成)の生HTML2ソースで統率(槍A弓B馬S器S)・コスト3・指揮兵数2420・初期値900/640/540・成長値+42/+40/+2.0・絵師正子公也・ふりがな・スキルLV1値(確率+1%/攻撃15%上昇)が完全一致することを確認した(不一致項目なし)。",
+  "初期スキル「流浪の勇将」[A]のLV10値(確率10%/攻撃45%上昇/対象全)はixanary.com/cards/2720のLV10スキルボックスで確認。synthesisTableはカード画像が無いため作成していない。章は両ソースに記載が無く未確認。"
+ ],
+ "reviewedOk": false
+}

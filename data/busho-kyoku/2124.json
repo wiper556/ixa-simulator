@@ -1,0 +1,42 @@
+{
+ "name": "北条綱成",
+ "no": "2124",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "槍弓馬攻",
+ "sub": "",
+ "effect": "槍・弓・馬部隊の攻撃力上昇",
+ "furigana": "ほうじょうつなしげ",
+ "illustrator": "BISAI",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 880,
+ "atkGrowth": 18,
+ "defBase": 600,
+ "defGrowth": 16,
+ "tacticsBase": 400,
+ "tacticsGrowth": 2,
+ "lv0Troops": 3300,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "B",
+  "ki": "C"
+ },
+ "initialSkill": "地黄八幡 真",
+ "skillDetail": "B/LV10 確率 30% 攻撃 32%上昇/対象:槍・弓・馬\n①攻撃 32%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・弓・馬　確率 30% / 攻撃 32%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-17登録。カード画像が無いためixanary.comとixawiki.comの生HTML突き合わせのみで登録した。",
+  "基礎値/成長値/コスト/指揮兵数(3300)/rankGrades(槍S・弓A・馬B・器C)/イラストレーター(BISAI)はixanary.com(cards/2124)とixawiki.com(BushoCard/2124北条綱成)の両方で完全一致。",
+  "skillDetail/trTableはixanary.com/skills/地黄八幡 真のLV10表記(確率+30%/対象槍弓馬/攻撃32%上昇)を採用。LV1値(確率+21%/攻撃19%上昇)がixawikiの基本ステータス表と一致。",
+  "章(ch)は両ソースに記載なく未確認。"
+ ]
+}

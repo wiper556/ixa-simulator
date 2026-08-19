@@ -1,0 +1,43 @@
+{
+ "name": "三好長慶-復刻-【覇】",
+ "no": "1984",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "全防",
+ "sub": "",
+ "effect": "防御参加武将数に応じて防御上昇",
+ "furigana": "みよしちょうけい",
+ "illustrator": "直良有祐",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1140,
+ "atkGrowth": 40,
+ "defBase": null,
+ "defGrowth": 55,
+ "tacticsBase": 690,
+ "tacticsGrowth": 3,
+ "lv0Troops": 3470,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "SS"
+ },
+ "initialSkill": "天獄不抜",
+ "skillDetail": "S/LV10 確率 57% 防御 (2×防御参加武将数)%上昇/対象:全\n模倣不可\n①防御が(2×防御参加武将数)%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 57% / 防御 2%×防御参加武将数(280人)=560.0%(模倣不可)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-17登録。カード画像が無いためixanary.com(cards/1984)とixawiki.com(BushoCard/1984三好長慶)の生HTML2ソースのみで作成した。imageFull/imageCharはnull。",
+  "cost/lv0Troops/rankGrades/atkBase・atkGrowth/tacticsBase・tacticsGrowth/defGrowthは両ソース一致。defBaseのみixanary=1140・ixawiki=1240で食い違ったためnullにした(今回の割当20体のうち17体で発生している系統的な食い違い)。",
+  "天獄不抜はixawiki側もLv1/Lv10を分けて記載しておりLv1(確率16%防御(1.1×防御参加武将数)%上昇・模倣不可)・Lv10(確率57%防御(2×防御参加武将数)%上昇・模倣不可)とも両ソース完全一致した。",
+  "reviewedOkはfalseのまま。カード画像による4隅バッジ・スキルパネル照合が未実施のため黄丸化はできない。",
+  "2026-08-17: trTableの「(X×防御参加武将数)%上昇」を、サイトの既存の書き方(防御参加武将数=280人での計算値を併記)に揃えた。"
+ ]
+}

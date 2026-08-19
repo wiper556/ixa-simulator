@@ -1,0 +1,71 @@
+{
+ "name": "鈴木佐太夫",
+ "no": "2717",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "弓砲防",
+ "sub": "",
+ "effect": "防御 40%上昇",
+ "furigana": "すずきさだゆう",
+ "illustrator": "前河悠一",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 860,
+ "atkGrowth": 17,
+ "defBase": 880,
+ "defGrowth": 18,
+ "tacticsBase": 460,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3100,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "B",
+  "ki": "S"
+ },
+ "initialSkill": "早合組撃ち",
+ "skillDetail": "A/LV10 確率 30% 防御 40%上昇/対象:弓・砲\n①防御が40%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓・砲　確率 30% / 防御 40%上昇"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": null
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": null
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": null
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": null
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": null
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": null
+  }
+ ],
+ "notes": [
+  "2026-08-18新規登録(担当G・カード画像なし)。ixanary.com/cards/2717とixawiki.com(index.php?BushoCard/2717鈴木佐太夫)の生HTML2ソースで統率(槍A弓A馬B器S)・コスト3.5・指揮兵数3100・初期値860/880/460・成長値+17/+18/+2.5・絵師前河悠一・ふりがな・スキルLV1値(確率+15%/防御17%上昇)が完全一致することを確認した(不一致項目なし)。",
+  "初期スキル「早合組撃ち」[A]のLV10値(確率30%/防御40%上昇/対象弓砲)はixanary.com/cards/2717のLV10スキルボックスで確認。",
+  "ixanaryには追加スキル(unitSkills)として「防.雑賀鉄砲隊」の記載があるが、本サイトのJSONスキーマに対応するフィールドが無いため登録していない。synthesisTableはカード画像が無いため作成していない。章は両ソースに記載が無く未確認。"
+ ],
+ "reviewedOk": false
+}

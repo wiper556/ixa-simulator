@@ -1,0 +1,44 @@
+{
+ "name": "進藤貞治",
+ "no": "4294",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "弓防",
+ "sub": "",
+ "effect": "弓防16.25%上昇(武将のコストで効果が変化)",
+ "furigana": "しんどうさだはる",
+ "illustrator": "影由",
+ "imageFull": "assets/img/characters/no4294_full.png",
+ "imageChar": "assets/img/characters/no4294_char.png",
+ "atkBase": 560,
+ "atkGrowth": 17,
+ "defBase": 650,
+ "defGrowth": 19,
+ "tacticsBase": 450.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 2280,
+ "rankGrades": {
+  "yari": "C",
+  "yumi": "B",
+  "uma": "C",
+  "ki": "C"
+ },
+ "initialSkill": "弓隊守護",
+ "skillDetail": "E/LV10 確率 25% 弓防 16.25%上昇/対象:弓\n①弓防 16.25%上昇する(武将のコストで効果が変化)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓　確率 25% / 弓防 16.25%上昇(武将のコストで効果が変化)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当G)。カード画像(スキルLV10形式)から。武将名「進藤貞治」/ 職業「上」/ 極・覇表記なし / コスト2.5 / 統率(4隅バッジ) 槍C・馬C・弓B・器C / 初期値 攻撃560・防御650・兵法450.0 / 指揮兵数 0/2280 / カードNo.4294 / 初期スキル「弓隊守護 LV10」[E] 確率+25%・対象 弓・弓防16.25%上昇(武将のコストで効果が変化します) / Illust:影由。",
+  "成長値(攻撃+17・防御+19・兵法+2)とrankGrades(槍C/馬C/弓B/器C)はixanary.com/cards/4294・ixawiki.com(BushoCard/4294進藤貞治)の2ソースとカード画像で一致。",
+  "スキル効果%はコスト依存(武将のコストで効果が変化)。ixanaryの一般スキルページ相当のLV10値は確率25%/弓防13%(コスト2基準)だが、本カードはコスト2.5固有の値である画像上のLV10=確率25%/弓防16.25%をそのまま採用した(No.4179近江の方コスト1.5=9.75%、No.4266葛西晴信コスト2=13%と合わせ、いずれも「コスト×6.5%」の一次関数で一致することを確認)。",
+  "章(ch)はixanary/ixawikiともに記載が無く判断材料が無いためnullのまま。本バッチはカードJSON新規作成のみが指示範囲のためsynthesisTableは未作成。初期スキルはEランクのためdata/skill/ページの新規作成対象外。"
+ ],
+ "wikiOldestComment": null,
+ "wikiCommentCount": 0
+}

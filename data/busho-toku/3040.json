@@ -1,0 +1,42 @@
+{
+ "name": "風魔小太郎（女）",
+ "no": "3040",
+ "ch": null,
+ "cost": 1.5,
+ "troop": "弓器攻破",
+ "sub": "",
+ "effect": "攻撃 15%上昇+破壊 15%上昇",
+ "furigana": "ふうまこたろう",
+ "illustrator": "壱河柳乃助",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 700,
+ "atkGrowth": 16,
+ "defBase": 660,
+ "defGrowth": 14,
+ "tacticsBase": 385.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 1770,
+ "rankGrades": {
+  "yari": "D",
+  "yumi": "B",
+  "uma": "E",
+  "ki": "B"
+ },
+ "initialSkill": "夢想宴舞",
+ "skillDetail": "D/LV10 確率 20% 攻撃 15%上昇+破壊 15%上昇/対象:弓・器\n①攻撃 15%上昇する\n②破壊 15%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓・器　確率 20% / 攻撃 15%上昇+破壊 15%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当D)。カード画像が無いためixanary.com(cards/3040)とixawiki.com(index.php?BushoCard/3040風魔小太郎(女), Busho/武将カード一覧)の生HTML2ソースを突き合わせて登録した。",
+  "統率(D/B/E/B)・コスト1.5・指揮兵数1770・攻撃700/16・防御660/14・兵法385.0/2・ふりがな・初期スキル「夢想宴舞」[D]はixanary.comとixawiki.comの2ソースで一致することを確認した(不一致箇所は個別に注記)。",
+  "ixawiki.comの武将カード一覧では表示名が「風魔小太郎(女)」だが、実際のページ名/カードページ本文は「BushoCard/3040風魔小太郎」で(女)を含まない。一覧の表示上の注記に従い名前は「風魔小太郎（女）」とした。",
+  "カード画像が無いためimageFull/imageCharはnull、synthesisTableは付けない。reviewedOkはfalseのまま。章(ch)は両ソースとも記載が無くnullとした。"
+ ]
+}

@@ -1,0 +1,41 @@
+{
+ "name": "伊達政宗（2）",
+ "no": "2979",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "槍弓馬器防",
+ "sub": "",
+ "effect": "防御 40%上昇(自部隊の武将ダメージ軽減10%・重複発動上限数4)",
+ "furigana": "だてまさむね",
+ "illustrator": "隆慶一郎・原哲夫・麻生未央／NSP 1990",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 970,
+ "atkGrowth": 25,
+ "defBase": 990,
+ "defGrowth": 26,
+ "tacticsBase": 500,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3500,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "S",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "隻眼の雄将",
+ "skillDetail": "B/LV10 確率 60% 防御 40%上昇/対象:槍・弓・馬・器\n①防御 40%上昇する\n②自部隊の武将ダメージ軽減が10%になる(重複発動上限数4)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・弓・馬・器　確率 60% / 防御 40%上昇(自部隊の武将ダメージ軽減10%・重複発動上限数4)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録。カード画像が無いためixanaryとixawikiの一致だけで入れた(rankGradesは両ソース完全一致)。synthesisTableは今回のバッチでは付けていない。",
+  "defBaseはixanaryの生埋め込みJSONだとatkBaseと同値の970になっていたが(既知の壊れ方の型)、ixawikiは独立に990(atkと異なる値)を示しており、ixanaryの方が壊れていると判断してixawikiの990を採用した。成長値・兵法・コスト・指揮兵数は両ソース一致。",
+  "スキル『隻眼の雄将』はixanaryがLV1(確率+29%/防御18%上昇/自部隊武将ダメージ軽減1%)とLV10(確率+60%/防御40%上昇/自部隊武将ダメージ軽減10%)を明示。ixawikiの基本ステータス表の値はixanaryのLV1と一致していたため、今回のバッチで頻発した『ixawikiの表がLV1のまま』パターンと判断し、ixanaryの明示的なLV10値を採用した。"
+ ]
+}

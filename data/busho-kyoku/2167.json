@@ -1,0 +1,39 @@
+{
+ "name": "吉乃",
+ "no": "2167",
+ "ch": null,
+ "cost": 0.5,
+ "troop": "全防",
+ "sub": "",
+ "effect": "全軍の防御力上昇+攻撃部隊の帰還を遅延させる",
+ "furigana": "きつの",
+ "illustrator": "BISAI",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 420,
+ "atkGrowth": 15,
+ "defBase": 730,
+ "defGrowth": 18,
+ "tacticsBase": 440.0,
+ "tacticsGrowth": 1.5,
+ "lv0Troops": 1520,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "慈愛の艶牢",
+ "skillDetail": "B/LV10 確率 46% 防御 23%上昇/対象:全\n①防御 23%上昇する\n②攻撃部隊の帰還を2倍遅延させる(最大10倍遅延まで)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 46% / 防御 23%上昇(攻撃部隊の帰還を2倍遅延・最大10倍まで)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "カード画像が無いためimageFull/imageChar は null。ixanary.com(cards/2167)とixawiki.com(BushoCard/2167吉乃)を突き合わせて登録した。基本ステータス・ランク・スキル数値とも両ソースで一致。"
+ ]
+}

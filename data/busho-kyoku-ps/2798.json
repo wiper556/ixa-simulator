@@ -1,0 +1,41 @@
+{
+ "name": "荒木だし",
+ "no": "2798",
+ "ch": null,
+ "cost": 3.0,
+ "troop": "全防",
+ "sub": "",
+ "effect": "防御 90%上昇(攻撃側敵軍「覇」武将数×8%を防御効果に加算)",
+ "furigana": "あらきだし",
+ "illustrator": "綾乙",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1040,
+ "atkGrowth": 29,
+ "defBase": 1050,
+ "defGrowth": 42,
+ "tacticsBase": 490.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3300,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "S",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "今楊貴妃",
+ "skillDetail": "A/LV10 確率 100% 防御 90%上昇/対象:全\n①防御 90%上昇する\n②攻撃側敵軍「覇」武将数×8%を防御効果に加算する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 防御 90%上昇(攻撃側敵軍「覇」武将数×8%を防御効果に加算)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当H)。カード画像が無いためixanary.com(cards/2798)とixawiki.com(BushoCard/2798荒木だし)の2ソースを生HTMLで突き合わせた。",
+  "コスト3.0・指揮兵数3300・統率(槍A/弓S/馬A/器A)・攻撃1040(+29)/防御1050(+42)/兵法490.0(+2.5)・初期スキル「今楊貴妃」(A)の確率/対象/効果(LV1・LV10とも)は両ソース完全一致。TRの記載はどちらにも無い。",
+  "章は情報源に記載が無いため未確認。"
+ ]
+}

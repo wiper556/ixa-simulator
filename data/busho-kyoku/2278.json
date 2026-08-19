@@ -1,0 +1,41 @@
+{
+ "name": "池田輝政",
+ "no": "2278",
+ "ch": null,
+ "cost": 3,
+ "troop": "槍器鉄攻防",
+ "sub": "",
+ "effect": "攻撃・防御 6.9%上昇(武将ランク・コストで変動)",
+ "furigana": "いけだてるまさ",
+ "illustrator": "西野幸治",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 980,
+ "atkGrowth": 34,
+ "defBase": 980,
+ "defGrowth": 34,
+ "tacticsBase": 470,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 3280,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "B",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "万蝶乱流",
+ "skillDetail": "B/LV10 確率 45% 攻撃・防御 6.9%上昇/対象:槍・器・鉄\n①攻撃 6.9%上昇する((1+武将ランク)×武将コスト×2.3%・武将ランクとコストで変化)\n②防御 6.9%上昇する((1+武将ランク)×武将コスト×2.3%・武将ランクとコストで変化)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・器・鉄　確率 45% / 攻撃・防御 6.9%上昇((1+武将ランク)×武将コスト×2.3%で変化)"
+  }
+ ],
+ "notes": [
+  "2026-08-18登録(担当G)。カード画像が無いためixanary.com(cards/2278)生HTMLとixawiki.com(index.php?BushoCard/2278池田輝政)生HTMLの2ソースを突き合わせて登録した。",
+  "ステータス初期値980/980/470・成長値34/34/2.0・cost3・lv0Troops3280・rankGrades(槍S/弓B/馬A/器A)・illustrator西野幸治は両ソースで完全一致。攻撃・防御ともに初期値980で同値だが両ソースが独立に同じ値を示しているため実際に攻防同値のカードと判断しそのまま登録した。",
+  "スキル「万蝶乱流」の確率がixanaryはLV10で45%・ixawikiはLV10でも20%(LV1と同値)で食い違った。他の全カードで確率はLV1からLV10にかけて上昇する傾向が一貫しており、ixawiki側がLV1の値をLV10欄にコピーしたまま更新し忘れた可能性が高いと考えixanaryの45%を採用したが未確定の食い違いとして報告する。効果の数式((1+武将ランク)×武将コスト×2.3%)は両ソース一致し、ixawikiが具体的な結果値6.9%(cost3・ランク0基準)を明記していたためこちらを採用した。"
+ ],
+ "reviewedOk": false
+}

@@ -1,0 +1,41 @@
+{
+ "name": "本多忠勝（3）",
+ "no": "2760",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "全防",
+ "sub": "",
+ "effect": "防御 (敵部隊移動速度÷1.5)%上昇(最も部隊移動速度の大きい敵部隊の数値を参照)",
+ "furigana": "ほんだただかつ",
+ "illustrator": "塚本陽子",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 980,
+ "atkGrowth": 29,
+ "defBase": 1100,
+ "defGrowth": 30,
+ "tacticsBase": 500.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3480,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "古今無双ノ将",
+ "skillDetail": "A/LV10 確率 37% 防御 (敵部隊移動速度÷1.5)%上昇/対象:全\n①防御が(敵部隊移動速度÷1.5)%上昇する\n②最も部隊移動速度の大きい敵部隊の数値を参照する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 37% / 防御 (敵部隊移動速度÷1.5)%上昇(最も部隊移動速度の大きい敵部隊の数値を参照)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当H)。カード画像が無いためixanary.com(cards/2760)とixawiki.com(BushoCard/2760本多忠勝)の2ソースを生HTMLで突き合わせた。ixawikiの武将カード一覧では表記が「本多忠勝(3)」だが個別ページのURLに(3)は含まれない。",
+  "コスト3.5・指揮兵数3480・統率(槍S/弓A/馬A/器A)・攻撃980(+29)/防御1100(+30)/兵法500.0(+2.5)・初期スキル「古今無双ノ将」(A)の確率/対象/効果(LV1・LV10とも)は両ソース完全一致。TRの記載はどちらにも無い。",
+  "章は情報源に記載が無いため未確認。"
+ ]
+}

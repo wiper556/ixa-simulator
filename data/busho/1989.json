@@ -1,0 +1,42 @@
+{
+ "name": "北条氏康-復刻-【覇】",
+ "no": "1989",
+ "ch": null,
+ "cost": 5,
+ "troop": "槍弓砲器攻",
+ "sub": "",
+ "effect": "攻撃参加武将数に応じて対象兵科の攻撃が上昇",
+ "furigana": "ほうじょううじやす",
+ "illustrator": "直良有祐",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1230,
+ "atkGrowth": 57,
+ "defBase": null,
+ "defGrowth": 27,
+ "tacticsBase": 600,
+ "tacticsGrowth": 3,
+ "lv0Troops": 4610,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "S",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "獅神遊星軍",
+ "skillDetail": "S/LV10 確率 57% 攻撃 (2.7×攻撃参加武将数)%上昇/対象:槍・弓・砲・器\n①攻撃が(2.7×攻撃参加武将数)%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・弓・砲・器　確率 57% / 攻撃 (2.7×攻撃参加武将数)%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "カード画像が無いため imageFull/imageChar は null。ixanary.comの埋め込みJSON(cards/1989)とixawiki.com(BushoCard/1989)の基本ステータス表・スキル表を突き合わせて登録した。",
+  "defBase(防御初期値)がixanaryでは1230(攻撃と同値)・ixawikiでは990で食い違ったためnullにした。"
+ ],
+ "wikiOldestComment": "2020-02-10",
+ "wikiCommentCount": 32
+}

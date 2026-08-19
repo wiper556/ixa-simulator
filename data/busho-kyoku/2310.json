@@ -1,0 +1,42 @@
+{
+ "name": "九戸政実（2）",
+ "no": "2310",
+ "ch": null,
+ "cost": 4,
+ "troop": "弓砲器攻",
+ "sub": "",
+ "effect": "防御参加武将数に応じて攻撃が上昇",
+ "furigana": "くのへまさざね",
+ "illustrator": "青空あおい",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1040,
+ "atkGrowth": 38,
+ "defBase": 990,
+ "defGrowth": 30,
+ "tacticsBase": 490,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3850,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "S",
+  "uma": "B",
+  "ki": "A"
+ },
+ "initialSkill": "斗星ノ矜持",
+ "skillDetail": "A/LV10 確率 45% 攻撃上昇/対象:弓・砲・器\n①(2.2×防御参加武将数)%を攻撃効果に加算する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓・砲・器　確率 45% / 攻撃 2.2%×防御参加武将数(280人)=616.0%"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(カード画像なし・第2波)。ixanary.com(cards/2310)生HTMLの埋め込みJSON(ふりがな・イラストレーター・cost・指揮兵数・統率力・攻防兵法初期値/成長値・スキル名/確率/効果)とixawiki.com(BushoCard/2310九戸政実)の基本ステータス表・スキル追加表を突き合わせ、両ソース完全一致(食い違いなし)を確認して登録した。imageFull/imageChar/rankGradesの根拠はカード画像でなく2ソース一致による。",
+  "章(ch)は情報源(ixanary.com/ixawiki.com)に記載が無く未確認のためnullとした。"
+ ],
+ "wikiOldestComment": "2021-12-01",
+ "wikiCommentCount": 3
+}

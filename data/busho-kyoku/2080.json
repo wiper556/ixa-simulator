@@ -1,0 +1,41 @@
+{
+ "name": "岡左内",
+ "no": "2080",
+ "ch": null,
+ "cost": 3,
+ "troop": "全",
+ "sub": "",
+ "effect": "銅銭獲得率5%(参加した対人攻撃/防御で倒した兵数×銅銭獲得率＝獲得銅銭)",
+ "furigana": "おかさない",
+ "illustrator": "正子公也",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 730,
+ "atkGrowth": 18,
+ "defBase": 700,
+ "defGrowth": 17,
+ "tacticsBase": 450,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 2780,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "武人の浄財",
+ "skillDetail": "C/LV10 確率 35% 銅銭獲得率5%/対象:全\n①参加した対人攻撃/防御で倒した兵数×銅銭獲得率が獲得銅銭になる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 35% / 銅銭獲得率5%(参加した対人攻撃/防御で倒した兵数×銅銭獲得率＝獲得銅銭)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-17登録。カード画像が無いため ixanary.com(cards/2080)と ixawiki.com(BushoCard/2080岡左内)の生HTML2ソースで確認した。",
+  "コスト/指揮兵数/攻撃防御兵法の初期値成長値/兵科ランク(槍A弓A馬A器A)/スキル名対象確率効果(LV10確率35%銅銭獲得率5%対象全)/イラストレーターが両ソース完全一致。銅銭獲得系スキルのためtroopは対象のみ(全)でスキル種別接尾辞は付けない(既存登録3701石川五右衛門の同種スキルの表記に合わせた)。",
+  "章(ch)は両ソースとも記載が無くnullのまま。カード画像自体が無いためimageFull/imageCharはnull、reviewedOkはfalseのまま(rankGrades等はテキスト情報の2ソース一致で登録)。"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "name": "瀬名姫",
+ "no": "2094",
+ "ch": null,
+ "cost": 2.0,
+ "troop": "弓砲防",
+ "sub": "",
+ "effect": "防御 25%上昇",
+ "furigana": "せなひめ",
+ "illustrator": "戸橋ことみ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 600,
+ "atkGrowth": 17.0,
+ "defBase": 720,
+ "defGrowth": 18.0,
+ "tacticsBase": 420.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 2200,
+ "rankGrades": {
+  "yari": "C",
+  "yumi": "A",
+  "uma": "C",
+  "ki": "A"
+ },
+ "initialSkill": "啼鳥 赤鳥",
+ "skillDetail": "A/LV10 確率 30% 防御 25%上昇/対象:弓砲\n①防御が25%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓砲　確率 30% / 防御 25%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-17登録。カード画像が無いためixanary.com(cards/2094 と skills/啼鳥 赤鳥)とixawiki.com(BushoCard/2094瀬名姫)の生HTMLを直接確認し両方が一致した項目だけで登録した(reviewedOkはfalseのまま)。",
+  "合成候補(synthesisTable)は今回付けていない。章(ch)は両ソースとも記載が無いため未確認。"
+ ]
+}

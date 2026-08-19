@@ -1,0 +1,40 @@
+{
+ "name": "小田氏治",
+ "no": "2184",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "槍砲器防",
+ "sub": "",
+ "effect": "防御 34%上昇+自部隊の武将ダメージ軽減6%(重複発動上限数4)",
+ "furigana": "おだうじはる",
+ "illustrator": "BISAI",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 890,
+ "atkGrowth": 24,
+ "defBase": 920,
+ "defGrowth": 26,
+ "tacticsBase": 475,
+ "tacticsGrowth": 2,
+ "lv0Troops": 3320,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "B",
+  "uma": "B",
+  "ki": "A"
+ },
+ "initialSkill": "不死鳥",
+ "skillDetail": "B/LV10 確率 37% 防御 34%上昇+自部隊の武将ダメージ軽減6%/対象:槍・砲・器\n①防御 34%上昇する\n②自部隊の武将のダメージを6%軽減する(重複発動上限数4)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・砲・器　確率 37% / 防御 34%上昇+自部隊の武将ダメージ軽減6%(重複発動上限数4)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当B)。カード画像が無いため imageFull/imageChar は null。ixanary.com(cards/2184)の埋め込みJSONとixawiki.com(index.php?BushoCard/2184小田氏治)の生HTMLで、コスト/指揮兵数/攻撃防御兵法の初期値成長値/兵科ランク(槍S弓B馬B器A)/イラストレーター(BISAI)/スキルLV1数値(確率+12.5%/防御10%上昇/ダメージ軽減2.2%/重複発動上限数4)が完全一致することを確認して登録した。LV10の数値(確率37%/防御34%上昇/ダメージ軽減6%)はixanaryのカードページに明記。",
+  "章(ch)は両ソースとも記載が無いため未確認。synthesisTableは今回付けていない。"
+ ]
+}

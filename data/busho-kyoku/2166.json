@@ -1,0 +1,39 @@
+{
+ "name": "前田利家（2）",
+ "no": "2166",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "槍攻",
+ "sub": "",
+ "effect": "槍部隊の攻撃力上昇(敵武将数20以上で確定発動)",
+ "furigana": "まえだとしいえ",
+ "illustrator": "塚本陽子",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1000,
+ "atkGrowth": 21,
+ "defBase": 900,
+ "defGrowth": 21,
+ "tacticsBase": 490.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 3400,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "B",
+  "ki": "C"
+ },
+ "initialSkill": "轟槍振鉾",
+ "skillDetail": "B/LV10 確率 5% 攻撃 65%上昇/対象:槍\n①攻撃 65%上昇する(相手軍の武将数が20以上だと必ずスキル発動)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍　確率 5% / 攻撃 65%上昇(相手軍の武将数が20以上だと必ずスキル発動)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "カード画像が無いためimageFull/imageChar は null。ixanary.com(cards/2166)とixawiki.com(BushoCard/2166前田利家)を突き合わせて登録した。基本ステータス・ランク・スキル数値とも両ソースで一致。"
+ ]
+}

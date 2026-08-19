@@ -1,0 +1,48 @@
+{
+ "name": "毛利元就（2）",
+ "no": "1022",
+ "ch": "4章",
+ "cost": 3.5,
+ "troop": "弓砲防",
+ "sub": "",
+ "effect": "弓砲部隊の防御力上昇",
+ "furigana": "もうりもとなり",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1022_full.png",
+ "imageChar": "assets/img/characters/no1022_char.png",
+ "atkBase": 740,
+ "atkGrowth": 18,
+ "defBase": 740,
+ "defGrowth": 19,
+ "tacticsBase": 510.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3590,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "A",
+  "uma": "C",
+  "ki": "S"
+ },
+ "initialSkill": "謀将掌握",
+ "skillDetail": "S/LV10 確率 35% 弓砲防 40%上昇/対象:弓砲\n①弓砲防 40%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓砲　確率 35% / 防御 40%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録。カード画像(スキルLV10形式)から武将名・統率バッジ4隅・スキル名・初期値・スキル効果本文を確認。",
+  "ステータス初期値740/740/510.0・成長値+18/+19/+2.5・cost3.5・lv0Troops3590・統率(槍B/弓A/馬C/器S)はixanary.com(cards/1022)生HTMLの埋め込みカードpropsと一致確認(カード画像バッジと同一)。",
+  "初期スキル「謀将掌握」はSランクだがdata/skill/に個別ページが無い(要作成候補)。",
+  "名前の（N）はixawiki.com(Busho/武将カード一覧)の毛利元就リストでNo.1022が「毛利元就(2)」表記のため（2）とした。",
+  "章(ch)は情報源に記載が無く未確認のためnull。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2012-04-17",
+ "wikiCommentCount": 249,
+ "chGuess": "4章",
+ "chSource": "wikiOldestComment"
+}

@@ -1,0 +1,43 @@
+{
+ "name": "岡左内（2）",
+ "no": "2951",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "全",
+ "sub": "",
+ "effect": "銅銭獲得率5%(参加した対人攻撃/防御で倒した兵数×銅銭獲得率＝獲得銅銭)",
+ "furigana": "おかさない",
+ "illustrator": "正子公也",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 730,
+ "atkGrowth": 19,
+ "defBase": 700,
+ "defGrowth": 17,
+ "tacticsBase": 540.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3250,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "武人の浄財",
+ "skillDetail": "C/LV10 確率 35% 銅銭獲得率5%/対象:全\n①参加した対人攻撃/防御で倒した兵数×銅銭獲得率が獲得銅銭になる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 35% / 銅銭獲得率5%(参加した対人攻撃/防御で倒した兵数×銅銭獲得率＝獲得銅銭)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当J)。カード画像が無いため ixanary.com(cards/2951, skills/武人の浄財)と ixawiki.com(index.php?BushoCard/2951岡左内, Busho/武将スキル)の生HTML2ソースを突き合わせて登録した。",
+  "統率(槍A/弓A/馬A/器A)・コスト3.5・指揮兵数3250・攻撃730/19・防御700/17・兵法540.0/2.5・ふりがな・イラストレーターはixanary.comとixawiki.comの2ソースで一致することを確認した(不一致箇所は個別に注記)。",
+  "初期スキル「武人の浄財」[C]はixanary.com(skills/武人の浄財)のLV10行とixawiki.com(Busho/武将スキル)のマスター一覧LV10行の2ソースで確認した(不一致箇所は個別に注記)。",
+  "武将名の表記はixawiki.comのカード個別ページのruby表示が「岡 左 内」と字間が空いているが、ページタイトル・URL・ixanary.comは「岡左内」でありassign一覧の表記とも一致するため字間の空白は採用せず「岡左内」とした。同名の無印(No.2080岡左内)が既に登録済みのためF-0規則で（2）を付けた。",
+  "カード画像が無いためimageFull/imageCharはnull、synthesisTableは付けず、reviewedOkはfalseのまま。章(ch)は両ソースとも記載が無くnullとした。"
+ ]
+}

@@ -1,0 +1,45 @@
+{
+ "name": "神保総誠",
+ "no": "4312",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "弓防",
+ "sub": "",
+ "effect": "弓防16.25%上昇(武将のコストで効果が変化)",
+ "furigana": "じんぼうふさのぶ",
+ "illustrator": "てぉ",
+ "imageFull": "assets/img/characters/no4312_full.png",
+ "imageChar": "assets/img/characters/no4312_char.png",
+ "atkBase": 550,
+ "atkGrowth": 15,
+ "defBase": 670,
+ "defGrowth": 20,
+ "tacticsBase": 480.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 2300,
+ "rankGrades": {
+  "yari": "C",
+  "yumi": "B",
+  "uma": "C",
+  "ki": "C"
+ },
+ "initialSkill": "弓隊守護",
+ "skillDetail": "E/LV10 確率 25% 弓防 16.25%上昇/対象:弓\n①弓防 16.25%上昇する(武将のコストで効果が変化)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓　確率 25% / 弓防 16.25%上昇(武将のコストで効果が変化)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当G)。カード画像(スキルLV10形式)から。武将名「神保総誠」/ 職業「上」/ 極・覇表記なし / コスト2.5 / 統率(4隅バッジ) 槍C・馬C・弓B・器C / 初期値 攻撃550・防御670・兵法480.0 / 指揮兵数 0/2300 / カードNo.4312 / 初期スキル「弓隊守護 LV10」[E] 確率+25%・対象 弓・弓防16.25%上昇(武将のコストで効果が変化します) / Illust:てぉ。",
+  "成長値(攻撃+15・防御+20・兵法+2)はixanary.com/cards/4312とカード画像で一致。スキル効果もLV10=確率25%/弓防16.25%上昇(コスト2.5固有値、No.4179/4266/4294と同じ「コスト×6.5%」の関係)で一致。",
+  "イラストレーター名は画像クロップでは「てお」か「てぉ」か判別しづらく、ixanaryの生HTMLテキスト抽出「てぉ」(小書きぉ)を採用した。",
+  "ixawiki.com(BushoCard/4312神保総誠)は該当ページが未作成(編集フォームへリダイレクト)で参照できなかった。統率はカード画像の4隅バッジ単独確認(ixawikiでのクロスチェック不可)。",
+  "章(ch)はixanaryに記載が無く判断材料が無いためnullのまま。本バッチはカードJSON新規作成のみが指示範囲のためsynthesisTableは未作成。初期スキルはEランクのためdata/skill/ページの新規作成対象外。"
+ ],
+ "wikiOldestComment": null,
+ "wikiCommentCount": null
+}

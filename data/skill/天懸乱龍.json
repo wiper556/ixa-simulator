@@ -1,0 +1,25 @@
+{
+ "name": "天懸乱龍",
+ "rank": "S",
+ "baseRate": 15,
+ "target": "弓馬砲",
+ "effectSummary": "S/LV10 確率 15% 防御 55%上昇/対象:弓馬砲\n①防御 55%上昇する",
+ "categoryLinks": [],
+ "sourceCharacters": [
+  {
+   "name": "上杉景勝（2）",
+   "no": "1054",
+   "slot": "移植不可"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓馬砲　確率 15% / 防御 55%上昇"
+  }
+ ],
+ "notes": [
+  "A-3-9「武将自身の初期スキル(S以上)は無条件にページを作る」により2026-08-16に一括作成。内容は data/busho/1054.json の skillDetail / trTable からの転記で、新しい事実は持ち込んでいない。"
+ ]
+}

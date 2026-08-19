@@ -1,0 +1,43 @@
+{
+ "name": "三好宗三",
+ "no": "3671",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "槍砲器防",
+ "sub": "",
+ "effect": "防御340%上昇(このスキルを所持する武将の所有者が影城主のとき防御効果1.5倍)",
+ "furigana": "みよしそうさん",
+ "illustrator": "祀花よう子",
+ "imageFull": "assets/img/characters/no3671_full.png",
+ "imageChar": "assets/img/characters/no3671_char.png",
+ "atkBase": 850,
+ "atkGrowth": 27,
+ "defBase": 940,
+ "defGrowth": 34,
+ "tacticsBase": 460.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 3420,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "C",
+  "uma": "B",
+  "ki": "B"
+ },
+ "initialSkill": "宗三左文字",
+ "skillDetail": "C/LV10 確率 36% 防御 340%上昇/対象:槍・砲・器\n①防御 340%上昇する\n②このスキルを所持する武将の所有者が影城主のとき防御効果が1.5倍になる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・砲・器　確率 36% / 防御 340%上昇(このスキルを所持する武将の所有者が影城主のとき防御効果1.5倍)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当B)。カード画像(スキルLV10形式)から。武将名「三好宗三」/ふりがな「みよしそうさん」/特/コスト3.5/統率 槍A・弓C・馬B・器B(4隅を個別にズームして確認)/攻撃850・防御940・兵法460.0/指揮兵数0/3420/カードNo.3671(ファイル名と一致)/スキル「宗三左文字LV10」[C] 確率:+36%・対象 槍/砲/器・防御:340%上昇・このスキルを所持する武将の所有者が影城主のとき防御効果1.5倍/Illust 祀花よう子。",
+  "成長値(攻撃+27/防御+34/兵法+2)はixanary.com/cards/3671のテキストで確認(カード画像に成長値の記載は無い)。同名カード(No.4213攻:騎馬隊奇襲)が別にあるが今回の担当外。",
+  "章はixanary.com/cards/3671に記載が無く、未確認のため null。"
+ ],
+ "wikiOldestComment": null,
+ "wikiCommentCount": null
+}

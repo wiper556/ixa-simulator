@@ -1,0 +1,42 @@
+{
+ "name": "前田玄以",
+ "no": "2327",
+ "ch": null,
+ "cost": 3,
+ "troop": "槍弓器鉄防",
+ "sub": "",
+ "effect": "対象兵科の防御が上昇+自拠点防御時は効果3倍",
+ "furigana": "まえだげんい",
+ "illustrator": "添田一平",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1060,
+ "atkGrowth": 34,
+ "defBase": 1100,
+ "defGrowth": 37,
+ "tacticsBase": 510,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3340,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "忌籠ノ計",
+ "skillDetail": "A/LV10 確率 38% 防御 62%上昇/対象:槍・弓・器・鉄\n①防御 62%上昇する\n②自拠点防御時は防御効果が3倍になる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・弓・器・鉄　確率 38% / 防御 62%上昇(自拠点防御時は防御効果3倍)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(カード画像なし・第2波)。ixanary.com(cards/2327)生HTMLの埋め込みJSON(ふりがな・イラストレーター・cost・指揮兵数・統率力・攻防兵法初期値/成長値・スキル名/確率/効果)とixawiki.com(BushoCard/2327前田玄以)の基本ステータス表・スキル追加表を突き合わせ、両ソース完全一致(食い違いなし)を確認して登録した。imageFull/imageChar/rankGradesの根拠はカード画像でなく2ソース一致による。",
+  "章(ch)は情報源(ixanary.com/ixawiki.com)に記載が無く未確認のためnullとした。"
+ ],
+ "wikiOldestComment": "2022-08-15",
+ "wikiCommentCount": 10
+}

@@ -1,0 +1,41 @@
+{
+ "name": "山県昌景（3）",
+ "no": "2929",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "槍弓馬攻",
+ "sub": "",
+ "effect": "攻撃 ((ランク+1)×コスト×2)%上昇(武将ランクとコストで効果が変化)",
+ "furigana": "やまがたまさかげ",
+ "illustrator": "正子公也",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 950,
+ "atkGrowth": 23,
+ "defBase": 950,
+ "defGrowth": 21,
+ "tacticsBase": 485,
+ "tacticsGrowth": 2,
+ "lv0Troops": 3320,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "S",
+  "ki": "B"
+ },
+ "initialSkill": "赤備 鍾馗",
+ "skillDetail": "B/LV10 確率 27% 攻撃 ((ランク+1)×コスト×2)%上昇/対象:槍弓馬\n①攻撃が((ランク+1)×コスト×2)%上昇する(武将ランクとコストで効果が変化)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍弓馬　確率 27% / 攻撃 ((ランク+1)×コスト×2)%上昇(武将ランクとコストで効果が変化)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "カード画像が無いため ixanary.com/cards/2929 と ixawiki.com(BushoCard/2929山県昌景)の生HTML2ソースで確認した。",
+  "基礎値950/950/485・成長23/21/2・コスト3.5・指揮兵数3320(★0-0)・統率(槍A/弓A/馬S/器B)はixanary.comとixawiki.comの2ソースで完全一致。攻撃と防御の初期値が同値だが両ソース独立に一致しているため既知バグではなく仕様として採用した。",
+  "初期スキル赤備 鍾馗(B)のLV10「確率+27%/対象 槍弓馬/攻撃((ランク+1)×コスト×2)%上昇(武将ランクとコストで効果が変化)」はixanary.comとixawiki.comの2ソースで完全一致。この式は自部隊内の対象武将のランク・コストに依存し固定値に計算できないため式のまま記載した。"
+ ]
+}

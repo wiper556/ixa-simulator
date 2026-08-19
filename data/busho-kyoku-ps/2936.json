@@ -1,0 +1,42 @@
+{
+ "name": "上杉謙信（2）",
+ "no": "2936",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "全防破",
+ "sub": "",
+ "effect": "防御 33%上昇+破壊 28%上昇(敵部隊に兵器兵科がいれば効果2倍)",
+ "furigana": "うえすぎけんしん",
+ "illustrator": "正子公也",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 930,
+ "atkGrowth": 26,
+ "defBase": 960,
+ "defGrowth": 28,
+ "tacticsBase": 520.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3460,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "B",
+  "ki": "A"
+ },
+ "initialSkill": "軍神の奏",
+ "skillDetail": "B/LV10 確率 37% 防御 33%上昇+破壊 28%上昇/対象:全\n①防御 33%上昇する\n②破壊 28%上昇する\n③敵部隊に兵器兵科がいれば効果2倍になる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 37% / 防御 33%上昇+破壊 28%上昇(敵部隊に兵器兵科がいれば効果2倍)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当J)。カード画像が無いため ixanary.com(cards/2936, skills/軍神の奏)と ixawiki.com(index.php?BushoCard/2936上杉謙信, Busho/武将スキル)の生HTML2ソースを突き合わせて登録した。",
+  "統率(槍S/弓A/馬B/器A)・コスト3.5・指揮兵数3460・攻撃930/26・防御960/28・兵法520.0/2.5・ふりがな・イラストレーターはixanary.comとixawiki.comの2ソースで一致することを確認した(不一致箇所は個別に注記)。",
+  "初期スキル「軍神の奏」[B]はixanary.com(skills/軍神の奏)のLV10行とixawiki.com(Busho/武将スキル)のマスター一覧LV10行の2ソースで確認した(不一致箇所は個別に注記)。",
+  "カード画像が無いためimageFull/imageCharはnull、synthesisTableは付けず、reviewedOkはfalseのまま。章(ch)は両ソースとも記載が無くnullとした。"
+ ]
+}

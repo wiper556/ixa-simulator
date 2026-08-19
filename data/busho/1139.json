@@ -1,0 +1,49 @@
+{
+ "name": "北条早雲",
+ "no": "1139",
+ "ch": "17章",
+ "cost": 4,
+ "troop": "槍弓馬器防破",
+ "sub": "",
+ "effect": "防御参加武将数依存で防御・破壊上昇(模倣不可)",
+ "furigana": "ほうじょうそううん",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1139_full.png",
+ "imageChar": "assets/img/characters/no1139_char.png",
+ "atkBase": 1020,
+ "atkGrowth": 35,
+ "defBase": 1140,
+ "defGrowth": 57,
+ "tacticsBase": 640.0,
+ "tacticsGrowth": 3,
+ "lv0Troops": 4200,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "S",
+  "uma": "S",
+  "ki": "B"
+ },
+ "initialSkill": "天纓燎火",
+ "skillDetail": "S/LV10 確率 44% 防御 60%上昇+破壊 35%上昇/対象:槍・弓・馬・器\n模倣不可\n①防御 60%上昇する\n②破壊 35%上昇する\n③防御参加武将数×1%を防御効果に加算する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・弓・馬・器　確率 44% / 防御 60%上昇+破壊 35%上昇(防御参加武将数×1%を加算・模倣不可)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録。カード画像(スキルLV10形式)から。統率バッジ4隅を拡大確認: 槍S/弓S/馬S/器B(左上=槍/右上=馬/左下=弓/右下=器の並びで確認)。",
+  "初期スキル名はカード画像の小さい文字が「天癒燎火」に見えたが、ixanary.com(cards/1139のリンクhref/skills/天纓燎火)とixawiki.com(BushoCard/1139北条早雲)の2ソースで「天纓燎火」と確認し訂正した。",
+  "ステータス初期値1020/1140/640.0・成長値+35/+57/+3・cost4・lv0Troops4200はixanary.com(cards/1139)生HTMLの成長表と一致確認。",
+  "武将名はixawiki.com(Busho/武将カード一覧(天))で「北条早雲」(無印)表記を確認。",
+  "初期スキル「天纓燎火」はSランクだがdata/skill/に個別ページが無い(要作成)。",
+  "章は情報源に記載が無く未確認。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2019-02-09",
+ "wikiCommentCount": 64,
+ "chGuess": "17章",
+ "chSource": "wikiOldestComment"
+}

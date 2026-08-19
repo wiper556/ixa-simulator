@@ -1,0 +1,41 @@
+{
+ "name": "妙喜尼",
+ "no": "2762",
+ "ch": null,
+ "cost": 2.0,
+ "troop": "全",
+ "sub": "",
+ "effect": "所属部隊を含む3部隊で自部隊同時攻撃を行うことができる(重複不可)",
+ "furigana": "みょうきに",
+ "illustrator": "影井由宇",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 990,
+ "atkGrowth": 27,
+ "defBase": 990,
+ "defGrowth": 27,
+ "tacticsBase": 500.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 2500,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "勇胆ノ士",
+ "skillDetail": "A/LV10 所属部隊を含む3部隊で自部隊同時攻撃を行うことができる/対象:全\n①所属部隊を含む3部隊で自部隊同時攻撃を行うことができる(重複不可)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 -% / 所属部隊を含む3部隊で自部隊同時攻撃を行うことができる(重複不可)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当H)。カード画像が無いためixanary.com(cards/2762)とixawiki.com(BushoCard/2762妙喜尼)の2ソースを生HTMLで突き合わせた。",
+  "コスト2.0・指揮兵数2500・統率(槍A/弓A/馬A/器A)・攻撃990(+27)/防御990(+27)/兵法500.0(+2.5)は両ソース完全一致(攻防が同値だが両ソース独立に同値のためそのまま採用)。初期スキル「勇胆ノ士」(A)はレベルによる数値変化が無い固定効果のスキルで、確率・対象の記載が無いことも両ソース一致。",
+  "章は情報源に記載が無いため未確認。"
+ ]
+}

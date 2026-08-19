@@ -1,0 +1,71 @@
+{
+ "name": "今川氏親",
+ "no": "2715",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "弓馬砲攻",
+ "sub": "",
+ "effect": "攻撃 30%上昇",
+ "furigana": "いまがわうじちか",
+ "illustrator": "岩元辰郎",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 740,
+ "atkGrowth": 18,
+ "defBase": 720,
+ "defGrowth": 17,
+ "tacticsBase": 470,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 3230,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "A",
+  "uma": "S",
+  "ki": "C"
+ },
+ "initialSkill": "青海の騎将",
+ "skillDetail": "B/LV10 確率 30% 攻撃 30%上昇/対象:弓・馬・砲\n①攻撃が30%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓・馬・砲　確率 30% / 攻撃 30%上昇"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": null
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": null
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": null
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": null
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": null
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": null
+  }
+ ],
+ "notes": [
+  "2026-08-18新規登録(担当G・カード画像なし)。ixanary.com/cards/2715とixawiki.com(index.php?BushoCard/2715今川氏親)の生HTML2ソースで統率(槍B弓A馬S器C)・コスト3.5・指揮兵数3230・初期値740/720/470・成長値+18/+17/+2.0・絵師岩元辰郎・ふりがな・スキルLV1値(確率+19%/攻撃16%上昇)が完全一致することを確認した(不一致項目なし)。",
+  "初期スキル「青海の騎将」[B]のLV10値(確率30%/攻撃30%上昇/対象弓馬砲)はixanary.com/cards/2715のLV10スキルボックスで確認。",
+  "同名の無印カードで、末尾(2)付きのNo.2744今川氏親（2）とは別カード。synthesisTableはカード画像が無いため作成していない。章は両ソースに記載が無く未確認。"
+ ],
+ "reviewedOk": false
+}

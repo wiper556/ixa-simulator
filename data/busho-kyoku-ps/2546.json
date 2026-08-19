@@ -1,0 +1,43 @@
+{
+ "name": "大友宗麟",
+ "no": "2546",
+ "ch": null,
+ "cost": 3,
+ "troop": "全防",
+ "sub": "",
+ "effect": "防御 75%上昇",
+ "furigana": "おおともそうりん",
+ "illustrator": "株式会社レバーン＋しいたけ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 990,
+ "atkGrowth": 30,
+ "defBase": 1060,
+ "defGrowth": 36,
+ "tacticsBase": 500,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3260,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "覇・太虚国崩",
+ "skillDetail": "B/LV10 確率 55% 防御 75%上昇/対象:全\n①防御 75%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 55% / 防御 75%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18新規登録(担当D・カード画像なし)。ixanary.com/cards/2546とixawiki.com(index.php?BushoCard/2546大友宗麟)の生HTML2ソースで確認。「戦国IXA千万の覇者コラボログインキャンペーン」累計32日目の報酬カード。",
+  "コスト3・指揮兵数3260・攻撃990/防御1060(両ソース独立に一致・防御バグ無し)・成長+30/+36/+2.5・ふりがな・統率(槍A弓A馬A器A)・絵師(株式会社レバーン＋しいたけ)は2ソース完全一致。",
+  "【片方のみ確認】ixawikiのこのカードのページにはLv1相当の1行(確率19%/防御48%上昇)のみが記載されておりLv10の行が無かった。Lv1の値はixanaryのLV1表示と完全一致したため同一スキルの記載として信頼できるが、LV10の値(確率55%/防御75%上昇)はixanaryのみでの確認となる。",
+  "初期スキル名が「覇・太虚国崩」だが、効果文に他武将のスキルを無効化・発動率低下から保護する記述が無く覇道スキルとしては扱っていない。",
+  "章(ch)は両ソースとも記載が無くnullのまま。カード画像自体が無いためimageFull/imageCharはnull、reviewedOkはfalseのまま。"
+ ]
+}

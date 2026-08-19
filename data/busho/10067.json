@@ -76,9 +76,10 @@
    "afterSkill": "筋骨隆々",
    "afterRank": "S",
    "target": "全 不屈1 兵站",
-   "rate": "9%",
-   "effectShort": "攻撃 270%上昇+防御 270%上昇",
-   "afterEffectShort": "攻撃 270%上昇+防御 270%上昇"
+   "rate": "29%",
+   "effectShort": "攻撃 790%上昇+防御 790%上昇",
+   "afterEffectShort": "攻撃 790%上昇+防御 790%上昇",
+   "afterRate": "29%"
   },
   {
    "slot": "C",
@@ -121,9 +122,10 @@
   "成長値(atkGrowth/defGrowth/tacticsGrowth)は0のまま維持した。ixanary.com/cards/10067/は明示的に「成長値が設定されていないので、成長しない」と記載。一方ixagno.blog.fc2.com/blog-entry-10691.html(相楽左之助【覇】(No.10067)の能力と考察)のメタ説明文には「成長：攻撃【155】防御【165】兵法【3.0】」という数値があり矛盾したが、同記事に埋め込まれたLv.0状態の実カード画像(blog-imgs-98.fc2.com/.../2025110600311501f.jpg)は攻撃2150/防御2450/次Lv.39と表示されており、天限突破状態のno10067_full.pngと同じ2150/2450だった。突破ランクは通常Lv0基礎値を押し上げる(例: 10074は限界/極限/天限で52310/54740/57170と変化)ため、突破段階が違う2枚の画像で同一の値になっている点は成長・突破ボーナスともに実質0であることを示す一次情報として重み付けし、ixagno側のメタ文言(155/165/3.0)は採用しなかった(要ユーザー確認、テンプレ流用等による誤記の可能性)。",
   "skillDetail/data/skill/極衝爆砕.jsonのeffectSummaryがixanaryの生テキストそのままの書式だったため、サイト標準の「ヘッダー1行+①②改行+読点なし」書式に整形した(模倣不可の記載はixanary生HTML・ixawiki生HTMLともに0件で該当なしを確認)。",
   "synthesisTableはixanary.com/skills/極衝爆砕/の生HTML合成テーブルでA〜S2全5枠が既存登録と完全一致。sourceCharacters逆引き(A-3-11): 筋骨隆々/梵天浄界/永世ノ天隻/極衝爆砕(自身)の各data/skill/*.jsonに10067が反映済みを確認(A枠の二重の極みはAランクのため自己参照ページ未作成の既定通り、ページ無しで問題なし)。",
-  "data/skill/極衝爆砕.jsonのcategoryLinksが9項目未判定のまま保留されていたため判定し、「自軍内で同兵種を指揮している武将数」カウントはskills-count-def.html(防御参加武将数280人ベース)とは別種と判断(同型の既存スキル獄香ノ爆宴・虚実法容もcategoryLinks無し)し、該当なしとして追加しなかった。"
+  "data/skill/極衝爆砕.jsonのcategoryLinksが9項目未判定のまま保留されていたため判定し、「自軍内で同兵種を指揮している武将数」カウントはskills-count-def.html(防御参加武将数280人ベース)とは別種と判断(同型の既存スキル獄香ノ爆宴・虚実法容もcategoryLinks無し)し、該当なしとして追加しなかった。",
+  "2026-08-16: 筋骨隆々の合成表がLV1の値(9%/270%)で入っていたのでLV10(29%/790%)に直した。根拠は data/skill/筋骨隆々.json の注記。"
  ],
- "reviewedOk": true,
+ "reviewedOk": false,
  "wikiOldestComment": "2025-11-12",
  "wikiCommentCount": 5,
  "chGuess": "30章"

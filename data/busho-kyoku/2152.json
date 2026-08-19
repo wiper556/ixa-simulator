@@ -1,0 +1,39 @@
+{
+ "name": "毛利勝永",
+ "no": "2152",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "弓馬攻",
+ "sub": "",
+ "effect": "弓・馬部隊の攻撃力上昇",
+ "furigana": "もうりかつなが",
+ "illustrator": "BISAI",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 900,
+ "atkGrowth": 18,
+ "defBase": 770,
+ "defGrowth": 17,
+ "tacticsBase": 490.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 3280,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "S",
+  "uma": "A",
+  "ki": "B"
+ },
+ "initialSkill": "鳳凰馬藺",
+ "skillDetail": "B/LV10 確率 24% 攻撃 47%上昇/対象:弓・馬\n①攻撃 47%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓・馬　確率 24% / 攻撃 47%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "カード画像が無いためimageFull/imageChar は null。ixanary.com(cards/2152)とixawiki.com(BushoCard/2152毛利勝永)を突き合わせて登録した。基本ステータス・ランク・スキル数値とも両ソースで一致。"
+ ]
+}

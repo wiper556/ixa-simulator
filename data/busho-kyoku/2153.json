@@ -1,0 +1,39 @@
+{
+ "name": "宮本武蔵（2）",
+ "no": "2153",
+ "ch": null,
+ "cost": 3,
+ "troop": "全攻",
+ "sub": "",
+ "effect": "防御部隊の武将防御力低下(重複発動不可)",
+ "furigana": "みやもとむさし",
+ "illustrator": "塚本陽子",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1000,
+ "atkGrowth": 53,
+ "defBase": 800,
+ "defGrowth": 40,
+ "tacticsBase": 410.0,
+ "tacticsGrowth": 1.5,
+ "lv0Troops": 2100,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "B",
+  "ki": "D"
+ },
+ "initialSkill": "五輪書",
+ "skillDetail": "B/LV10 確率 30% 防御部隊の武将防御力 70%低下/対象:全\n①防御部隊の武将防御力を70%低下させる(重複発動不可)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 30% / 防御部隊の武将防御力 70%低下(重複発動不可)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "カード画像が無いためimageFull/imageChar は null。ixanary.com(cards/2153)とixawiki.com(BushoCard/2153宮本武蔵)を突き合わせて登録した。ixawikiはLV1/LV10両方の表を持ち基本ステータス・ランク・スキル数値(LV1確率10%/20%低下、LV10確率30%/70%低下)とも完全一致。"
+ ]
+}

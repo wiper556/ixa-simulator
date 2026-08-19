@@ -1,0 +1,48 @@
+{
+ "name": "向井正綱",
+ "no": "5165",
+ "ch": "14章",
+ "cost": 2,
+ "troop": "槍攻",
+ "sub": "",
+ "effect": "槍攻 コスト×5=10%上昇",
+ "furigana": "むかいまさつな",
+ "illustrator": "ハンブ",
+ "imageFull": "assets/img/characters/no5165_full.png",
+ "imageChar": "assets/img/characters/no5165_char.png",
+ "atkBase": 470,
+ "atkGrowth": 17,
+ "defBase": 460,
+ "defGrowth": 15,
+ "tacticsBase": 410.0,
+ "tacticsGrowth": 1.5,
+ "lv0Troops": 1730,
+ "rankGrades": {
+  "yari": "C",
+  "yumi": "E",
+  "uma": "D",
+  "ki": "C"
+ },
+ "initialSkill": "槍隊急襲",
+ "skillDetail": "F/LV10 確率 16% 槍攻 10%上昇/対象:槍\n①槍攻 10%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍　確率 16% / 槍攻 コスト×5=10%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当D)。序レアリティ新規登録。カード画像(スキルLV10形式)から。武将名「向井正綱」/ 序 / コスト2 / 統率 槍C・弓E・馬D・器C(4隅アイコンをズームして確認) / 初期値 攻撃470・防御460・兵法410.0 / 指揮兵数0/1730 / カードNo.5165一致 / 初期スキル「槍隊急襲 LV10」[F] 確率+16%・対象 槍・槍攻10%上昇(カード画像表示、武将のコストで効果が変化する旨の注記あり) / Illust ハンブ。",
+  "成長値(攻+17/防+15/兵法+1.5)・furigana・illustratorはixanary.com/cards/5165の生HTMLと完全一致。統率も一致。",
+  "【要確認】スキル効果の数値がカード画像とixanary.comの説明文で食い違う。カード画像(コスト2)のLV10表示は「槍攻:10%上昇」だが、ixanary.comの同カードページの説明文はLV10で「槍攻：7.5%上昇」と表示されている(LV1は「槍攻：4.5%上昇」)。BRIEFの指示に従いカード画像を一次情報として10%上昇を採用したが、コスト依存の係数式は特定できずskillDetail/trTableには数値のみ記載した。",
+  "初期スキルはFランクのためdata/skill/ページの新規作成対象外。章(ch)は情報源に記載なく未確認のためnull。synthesisTableは今回付けない(BRIEF指示)。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。",
+  "2026-08-16: コストで効果が変わるスキルの書き方を「計算式=結果」に揃えた(担当ごとに注記の有無・文言が割れていたため)。槍隊急襲の係数×5はうぐさんがゲーム内で確認した値。"
+ ],
+ "wikiOldestComment": "2017-10-04",
+ "wikiCommentCount": 2,
+ "chGuess": "14章",
+ "chSource": "wikiOldestComment"
+}

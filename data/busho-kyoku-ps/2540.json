@@ -1,0 +1,43 @@
+{
+ "name": "武田信玄",
+ "no": "2540",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "全攻",
+ "sub": "",
+ "effect": "攻撃 75%上昇",
+ "furigana": "たけだしんげん",
+ "illustrator": "株式会社レバーン＋しいたけ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1060,
+ "atkGrowth": 37,
+ "defBase": 990,
+ "defGrowth": 30,
+ "tacticsBase": 500,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3520,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "B",
+  "uma": "S",
+  "ki": "A"
+ },
+ "initialSkill": "覇・天甲破山",
+ "skillDetail": "B/LV10 確率 55% 攻撃 75%上昇/対象:全\n①攻撃 75%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 55% / 攻撃 75%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18新規登録(担当D・カード画像なし)。ixanary.com/cards/2540とixawiki.com(index.php?BushoCard/2540武田信玄)の生HTML2ソースで確認。「戦国IXA千万の覇者コラボログインキャンペーン」累計14日目の報酬カード。",
+  "コスト3.5・指揮兵数3520・攻撃1060/防御990(両ソース独立に一致・防御バグ無し)・成長+37/+30/+2.5・ふりがな・統率(槍A弓B馬S器A)・絵師(株式会社レバーン＋しいたけ)は2ソース完全一致。",
+  "【片方のみ確認】ixawikiのこのカードのページにはLv1相当の1行(確率19%/攻撃48%上昇)のみが記載されておりLv10の行が無かった。Lv1の値はixanaryのLV1表示と完全一致したため同一スキルの記載として信頼できるが、LV10の値(確率55%/攻撃75%上昇)はixanaryのみでの確認となる。",
+  "初期スキル名が「覇・天甲破山」だが、効果文に他武将のスキルを無効化・発動率低下から保護する記述が無く覇道スキルとしては扱っていない。",
+  "章(ch)は両ソースとも記載が無くnullのまま。カード画像自体が無いためimageFull/imageCharはnull、reviewedOkはfalseのまま。"
+ ]
+}

@@ -1,0 +1,41 @@
+{
+ "name": "北条氏政-復刻-（2）",
+ "no": "1965",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "槍弓砲器防",
+ "sub": "",
+ "effect": "槍・弓・砲・器部隊の防御力上昇(模倣不可)",
+ "furigana": "ほうじょううじまさ",
+ "illustrator": "直良有祐",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1120,
+ "atkGrowth": 23,
+ "defBase": null,
+ "defGrowth": 27,
+ "tacticsBase": 580.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 3920,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "S",
+  "uma": "B",
+  "ki": "S"
+ },
+ "initialSkill": "天楼獄覇",
+ "skillDetail": "S/LV10 確率 70% 防御 (1.8×防御参加武将数)%上昇/対象:槍・弓・砲・器\n模倣不可\n①槍・弓・砲・器の防御が(1.8×防御参加武将数)%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・弓・砲・器　確率 70% / 防御 1.8%×防御参加武将数(280人)=504.0%(模倣不可)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-17登録。カード画像が無いためixanary.com(cards/1965)とixawiki.com(BushoCard/1965北条氏政)の2ソースで突き合わせた。",
+  "防御初期値(defBase)がixanaryは1120(攻撃と同値)、ixawikiは1200で食い違ったためnullにした。防御成長値(+27)・攻撃1120(+23)・兵法580.0(+2.0)・指揮兵数3920・コスト3.5・統率(槍A/弓S/馬B/器S)・初期スキル「天楼獄覇」(S)の確率/対象/効果(模倣不可を含む)は両ソース一致。",
+  "章(ch)は情報源に記載が無いため未確認でnull。"
+ ]
+}

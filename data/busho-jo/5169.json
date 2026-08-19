@@ -1,0 +1,48 @@
+{
+ "name": "原田直政",
+ "no": "5169",
+ "ch": "15章",
+ "cost": 1.5,
+ "troop": "馬防",
+ "sub": "",
+ "effect": "馬防(コストx5)%上昇",
+ "furigana": "はらだなおまさ",
+ "illustrator": "山根雪",
+ "imageFull": "assets/img/characters/no5169_full.png",
+ "imageChar": "assets/img/characters/no5169_char.png",
+ "atkBase": 460,
+ "atkGrowth": 16,
+ "defBase": 470,
+ "defGrowth": 17,
+ "tacticsBase": 400.0,
+ "tacticsGrowth": 1.5,
+ "lv0Troops": 1350,
+ "rankGrades": {
+  "yari": "D",
+  "yumi": "D",
+  "uma": "C",
+  "ki": "D"
+ },
+ "initialSkill": "騎馬隊守備",
+ "skillDetail": "F/LV10 確率 16% 馬防 コストx5=7.5%上昇/対象:馬\n①馬防 コストx5=7.5%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "馬　確率 16% / 馬防 コスト×5=7.5%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当D)。序レアリティ新規登録。カード画像(スキルLV10形式)から。武将名「原田直政」/ 序 / コスト1.5 / 初期値 攻撃460・防御470・兵法400.0 / 指揮兵数0/1350 / カードNo.5169一致 / 初期スキル「騎馬隊守備 LV10」[F] 確率+16%・対象 馬・馬防7.5%上昇(カード画像表示、武将のコストで効果が変化する旨の注記あり) / Illust 山根雪。",
+  "【要確認・統率不一致】統率をカード画像の4隅アイコンをズームして確認したところ 槍D・弓D・馬C・器D だった。ixanary.com/cards/5169の埋め込みデータは yumi:C, kiba:D(弓と馬の値が逆)となっており、カード画像と食い違う。BRIEFの指示(ixanaryの統率は当てにせずカード画像を採用)に従い、カード画像の値(槍D・弓D・馬C・器D)を採用した。",
+  "成長値(攻+16/防+17/兵法+1.5)・furigana・illustratorはixanary.com/cards/5169の生HTMLと一致。スキル効果はixanaryの説明文に「防御：（コストx5）%上昇」と明記されており、本カードのコスト1.5をあてはめるとコストx5=7.5%上昇でカード画像の表示(7.5%上昇)と一致することを確認した。",
+  "初期スキルはFランクのためdata/skill/ページの新規作成対象外。章(ch)は情報源に記載なく未確認のためnull。synthesisTableは今回付けない(BRIEF指示)。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。",
+  "2026-08-16: コストで効果が変わるスキルの書き方を「計算式=結果」に揃えた(担当ごとに注記の有無・文言が割れていたため)。"
+ ],
+ "wikiOldestComment": "2018-03-06",
+ "wikiCommentCount": 3,
+ "chGuess": "15章",
+ "chSource": "wikiOldestComment"
+}

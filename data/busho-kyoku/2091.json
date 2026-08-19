@@ -1,0 +1,40 @@
+{
+ "name": "松永久秀",
+ "no": "2091",
+ "ch": null,
+ "cost": 3.0,
+ "troop": "全攻",
+ "sub": "",
+ "effect": "攻撃戦闘勝利時のみ敵軍1部隊の武将に追加ダメージ+45",
+ "furigana": "まつながひさひで",
+ "illustrator": "BISAI",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 600,
+ "atkGrowth": 18.0,
+ "defBase": 600,
+ "defGrowth": 18.0,
+ "tacticsBase": 480.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 2760,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "B",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "爆雷平蜘蛛",
+ "skillDetail": "B/LV10 確率 30% 攻撃戦闘勝利時のみ敵軍1部隊の武将に追加ダメージ+45/対象:全\n①攻撃戦闘勝利時のみ敵軍1部隊の武将に追加ダメージ+45",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 30% / 攻撃戦闘勝利時のみ敵軍1部隊の武将に追加ダメージ+45"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-17登録。カード画像が無いためixanary.com(cards/2091 と skills/爆雷平蜘蛛)とixawiki.com(BushoCard/2091松永久秀)の生HTMLを直接確認し両方が一致した項目だけで登録した(reviewedOkはfalseのまま)。",
+  "合成候補(synthesisTable)は今回付けていない。章(ch)は両ソースとも記載が無いため未確認。"
+ ]
+}

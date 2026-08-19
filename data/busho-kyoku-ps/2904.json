@@ -1,0 +1,42 @@
+{
+ "name": "真田幸村（2）",
+ "no": "2904",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "馬砲攻",
+ "sub": "",
+ "effect": "攻撃 30%上昇",
+ "furigana": "さなだゆきむら",
+ "illustrator": "正子公也",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 680,
+ "atkGrowth": 19,
+ "defBase": 620,
+ "defGrowth": 17,
+ "tacticsBase": 600.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3500,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "B",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "焔 六冥銭",
+ "skillDetail": "A/LV10 確率 30% 攻撃 30%上昇/対象:馬・砲\n①攻撃 30%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "馬・砲　確率 30% / 攻撃 30%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-18登録(担当H)。カード画像が無いためixanary.com(cards/2904)とixawiki.com(BushoCard/2904真田幸村)の2ソースを生HTMLで突き合わせた。",
+  "コスト3.5・指揮兵数3500・統率(槍B/弓B/馬A/器A)・攻撃680(+19)/防御620(+17)/兵法600.0(+2.5)は両ソース完全一致。初期スキル「焔 六冥銭」(A)はixawikiのカード表に1段のみの表示(確率12%・攻撃3%上昇)でこれはixanaryのLV1値と一致した。skillDetail/trTableに採用したLV10値(確率30%・攻撃30%上昇)はixanary.comのスキル効果表のLV10行から採用した。TRの記載はどちらにも無い。",
+  "同名の No.2905 真田幸村（3）とは別カード(スキル・統率・ステータスとも異なる)。",
+  "章は情報源に記載が無いため未確認。"
+ ]
+}

@@ -1,0 +1,41 @@
+{
+ "name": "如春尼",
+ "no": "2283",
+ "ch": null,
+ "cost": 2,
+ "troop": "全攻防",
+ "sub": "卓越",
+ "effect": "攻撃 45%上昇+防御 45%上昇(卓越:2倍)",
+ "furigana": "にょしゅんに",
+ "illustrator": "ミヤジマハル",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 990,
+ "atkGrowth": 33,
+ "defBase": 990,
+ "defGrowth": 33,
+ "tacticsBase": 490,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 2560,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "愛山美姫",
+ "skillDetail": "B/LV10 確率 100% 攻撃 45%上昇+防御 45%上昇/対象:全　卓越\n①攻撃 45%上昇する\n②防御 45%上昇する\n③卓越:追加確率35%で攻防効果が2倍になる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全 卓越　確率 100% / 攻撃 45%上昇+防御 45%上昇(卓越追加確率35%で攻防効果2倍)"
+  }
+ ],
+ "notes": [
+  "2026-08-18登録(担当G)。カード画像が無いためixanary.com(cards/2283)生HTMLとixawiki.com(index.php?BushoCard/2283如春尼)生HTMLの2ソースを突き合わせて登録した。",
+  "ステータス初期値990/990/490・成長値33/33/2.5・cost2・lv0Troops2560・rankGrades(槍A/弓A/馬A/器A)・illustratorミヤジマハルは両ソースで完全一致。攻撃・防御ともに初期値990/成長値33で同値かつランクも全てAで同値だが両ソースが独立に同じ値を示しているため実際に攻防同値のカードと判断しそのまま登録した。",
+  "スキル「愛山美姫」LV10(確率100%・攻撃45%上昇・防御45%上昇・卓越:追加確率35%で攻防効果2倍)はixawikiにLV1/LV10両方の記載があり、ixanaryのLV10欄と完全一致した。"
+ ],
+ "reviewedOk": false
+}

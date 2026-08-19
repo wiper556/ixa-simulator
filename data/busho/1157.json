@@ -1,0 +1,49 @@
+{
+ "name": "武田信虎",
+ "no": "1157",
+ "ch": "19章",
+ "cost": 5,
+ "troop": "槍弓馬攻",
+ "sub": "",
+ "effect": "対象兵科攻撃上昇+敵軍1部隊のHP被害増加",
+ "furigana": "たけだのぶとら",
+ "illustrator": "直良有祐",
+ "imageFull": "assets/img/characters/no1157_full.png",
+ "imageChar": "assets/img/characters/no1157_char.png",
+ "atkBase": 1240,
+ "atkGrowth": 58,
+ "defBase": 1100,
+ "defGrowth": 40,
+ "tacticsBase": 630.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 4720,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "S",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "苛政猛虎",
+ "skillDetail": "S/LV10 確率 25% 攻撃 130%上昇/対象:槍・弓・馬\n模倣不可\n①攻撃 130%上昇する\n②防御側敵軍1部隊の武将HP被害が20%増加する(対象部隊ごとに上限1)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・弓・馬　確率 25% / 攻撃 130%上昇(敵軍1部隊HP被害20%増加・模倣不可)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録。カード画像(スキルLV10形式)から名前/コスト/攻防兵法/指揮兵数/統率4隅バッジ/スキル名と効果文を読み取った。",
+  "統率バッジはカード画像を6倍拡大して4隅個別に確認: 槍A/馬A/弓S/器A。",
+  "成長値(攻+58/防+40/兵法+2.5)はixanary.com(cards/1157)の生HTML成長表で確認、初期値(1240/1100/630)はカード画像と一致。",
+  "名前の（N）表記はixawiki.com武将カード一覧(天)の生HTML(BushoCard/1157武田信虎)に無し(無印)。",
+  "初期スキル苛政猛虎はSランクだがdata/skill/苛政猛虎.jsonが未作成(要対応、本担当ではページ新規作成はしない)。",
+  "章(ch)は情報源で確認できず未確認のためnull。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2020-02-15",
+ "wikiCommentCount": 63,
+ "chGuess": "19章",
+ "chSource": "wikiOldestComment"
+}

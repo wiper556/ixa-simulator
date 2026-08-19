@@ -1,0 +1,40 @@
+{
+ "name": "成田長親",
+ "no": "2273",
+ "ch": null,
+ "cost": 3,
+ "troop": "弓器焙防",
+ "sub": "",
+ "effect": "防御 66%上昇(指揮兵数満タン時1.5倍)",
+ "furigana": "なりたながちか",
+ "illustrator": "ツヤイルカ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 960,
+ "atkGrowth": 27,
+ "defBase": 990,
+ "defGrowth": 35,
+ "tacticsBase": 490,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3260,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "S",
+  "uma": "B",
+  "ki": "A"
+ },
+ "initialSkill": "水鼈",
+ "skillDetail": "B/LV10 確率 40% 防御 66%上昇/対象:弓・器・焙\n①防御 66%上昇する\n②最大指揮兵数と同数の兵士を指揮している時は防御効果が1.5倍になる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓・器・焙　確率 40% / 防御 66%上昇(最大指揮兵数と同数指揮時1.5倍)"
+  }
+ ],
+ "notes": [
+  "2026-08-18登録(担当G)。カード画像が無いためixanary.com(cards/2273)生HTMLとixawiki.com(index.php?BushoCard/2273成田長親)生HTMLの2ソースを突き合わせて登録した。",
+  "ステータス初期値960/990/490・成長値27/35/2.5・cost3・lv0Troops3260・rankGrades(槍A/弓S/馬B/器A)・illustratorツヤイルカ・スキル「水鼈」LV10(確率40%・防御66%上昇・最大指揮兵数と同数指揮時1.5倍)は両ソースで完全一致。"
+ ],
+ "reviewedOk": false
+}

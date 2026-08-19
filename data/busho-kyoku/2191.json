@@ -1,0 +1,41 @@
+{
+ "name": "浅野幸長",
+ "no": "2191",
+ "ch": null,
+ "cost": 3,
+ "troop": "弓砲攻",
+ "sub": "",
+ "effect": "攻撃 16%上昇",
+ "furigana": "あさのよしなが",
+ "illustrator": "三好載克",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 900,
+ "atkGrowth": 23,
+ "defBase": 850,
+ "defGrowth": 19,
+ "tacticsBase": 450.0,
+ "tacticsGrowth": 2,
+ "lv0Troops": 3120,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "S",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "武断の破魔矢",
+ "skillDetail": "B/LV10 確率 100% 攻撃 16%上昇/対象:弓・砲\n①攻撃 16%上昇する\n②このスキルを持つ武将は無効化や発動率低下スキルから保護される",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓・砲　確率 100% / 攻撃 16%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-17登録。カード画像が無いためixanary.com(cards/2191)生HTMLとixawiki.com(index.php?BushoCard/2191浅野幸長)の2ソースで基本ステータス(コスト・指揮兵数・統率槍弓馬器・攻撃/防御/兵法の初期値と成長値・illustrator)が完全一致することを確認して登録した。",
+  "スキル「武断の破魔矢」(B)には「無効化や発動率低下スキルから保護される」という保護効果文があるが、カード画像が無くカード上の赤字「覇道」表記を確認できないためsubは「覇道」にせず空欄のままにした(hadou_classification_ruleにより両条件が揃わないと覇道判定しない)。",
+  "スキル数値(LV10確率100%/攻撃16%上昇/対象弓砲)はixanary.comのLV10欄から採用。ixawiki.comはLV1相当(確率100%/攻撃8%上昇)のみ掲載でLV10欄が無く、LV1部分同士は一致した(矛盾ではなく情報量の差)。"
+ ]
+}

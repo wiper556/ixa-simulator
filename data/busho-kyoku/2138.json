@@ -1,0 +1,40 @@
+{
+ "name": "五郎八姫",
+ "no": "2138",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "全防",
+ "sub": "",
+ "effect": "全軍の防御力上昇(19時～翌01時まで効果2倍)",
+ "furigana": "いろはひめ",
+ "illustrator": "ツヤイルカ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 500,
+ "atkGrowth": 15,
+ "defBase": 730,
+ "defGrowth": 17,
+ "tacticsBase": 450,
+ "tacticsGrowth": 2,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "S",
+  "uma": "C",
+  "ki": "A"
+ },
+ "initialSkill": "天麟朧月",
+ "skillDetail": "B/LV10 確率 20% 防御 25%上昇/対象:全\n①防御 25%上昇する\n②19時から翌01時までの間は効果が2倍になる",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 20% / 防御 25%上昇(19時～翌01時は効果2倍)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-17登録。カード画像が無いためixanary.com(cards/2138)とixawiki.com(BushoCard/2138五郎八姫)の生HTMLの一致だけで登録した。",
+  "基礎値/成長値/コスト/指揮兵数/rankGrades(槍A・弓S・馬C・器A)/イラストレーター/スキルLV1数値は両ソースで完全一致。LV10数値はixanary.comのみに記載(ixawikiはLV1のみ掲載)。",
+  "章(ch)は両ソースに記載が無く未確認のためnull。"
+ ]
+}

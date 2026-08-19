@@ -1,0 +1,48 @@
+{
+ "name": "京極マリア",
+ "no": "4109",
+ "ch": "4章",
+ "cost": 1.5,
+ "troop": "全速",
+ "sub": "",
+ "effect": "速度 20%上昇",
+ "furigana": "きょうごくまりあ",
+ "illustrator": "芳原舞人",
+ "imageFull": "assets/img/characters/no4109_full.png",
+ "imageChar": "assets/img/characters/no4109_char.png",
+ "atkBase": 480,
+ "atkGrowth": 14,
+ "defBase": 400,
+ "defGrowth": 13,
+ "tacticsBase": 380.0,
+ "tacticsGrowth": 1.5,
+ "lv0Troops": 1240,
+ "rankGrades": {
+  "yari": "C",
+  "yumi": "D",
+  "uma": "B",
+  "ki": "D"
+ },
+ "initialSkill": "迅速行軍",
+ "skillDetail": "E/LV10 確率 100% 速度 20%上昇/対象:全\n①速度 20%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 速度 20%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-16登録(担当E)。カード画像(スキルLV10形式)から。武将名「京極マリア」/ 職業「速」/ 極・覇表記なし / コスト1.5 / 統率 槍(足軽)C・弓D・馬B・器D(4隅を個別にズームして確認) / 初期値 攻撃480・防御400・兵法380.0 / 指揮兵数 0/1240 / カードNo.4109 / 初期スキル「迅速行軍 LV10」[E] 確率+100%・対象 全・全速:20%上昇 / Illust 芳原舞人。",
+  "成長値(攻撃+14・防御+13・兵法+1.5)とrankGrades(足軽C/騎馬B/弓兵D/兵器D)はixanary.com/cards/4109・ixawiki.com(BushoCard/4109京極マリア)の2ソースとカード画像で一致。",
+  "カード上の「全速:20%上昇」は他の登録済み武将の表記慣習に合わせ「速度」に正規化した(意味は同じ全軍速度上昇)。",
+  "ixawiki.comのカードページに合成候補テーブル(1次A/B/C/S1/S2、2次S1、3次S1)の記載があったが、本バッチは新規カードJSON作成のみが指示範囲のためsynthesisTableは未作成。初期スキルはEランクでdata/skill/ページの新規作成対象外。",
+  "章(ch)は両ソースとも記載が無く判断材料が無いためnullのまま。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2012-10-05",
+ "wikiCommentCount": 144,
+ "chGuess": "4章",
+ "chSource": "wikiOldestComment"
+}
