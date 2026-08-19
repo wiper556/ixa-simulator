@@ -72,3 +72,4 @@
 2026-08-19	-1	hooks:tools/build_data.py	くじの排出確率の表を定数から生成する処理をbuild_data.pyに追加(表示と実際の確率が食い違っていた件の再発防止)
 2026-08-19	-1	hooks:tools/gate_selftest.py	S-14(排出確率の表を手で書き換える)の筋書きをgate_selftestに追加。門番の実態がpush側なのでpush経路も回せるようにした
 2026-08-19	-1	hooks:tools/gen_detail_pages.py	サイドバーのリンク文言を金くじシミュレーターに揃えるため gen_detail_pages.py のテンプレートを変更
+2026-08-19	-1	hooks:tools/gate_selftest.py	gate_selftestのpush経路のコミットにuser.name/emailを-cで渡す(CIに設定が無くskipになっていた)

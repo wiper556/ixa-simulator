@@ -410,9 +410,14 @@ def main():
         # Z-1: フック本体(sh)側の事前確認も含めて再現するため、フック経由で叩く。
         if route == "push":
             # push の門番は「これから外に出る中身」を見るので、先に1つ積む。
-            c = sh(["git", "commit", "-q", "--no-verify", "-m", "自己テスト"], repo)
+            # CI には git の名前・メールが無いので、環境に依存しないよう -c で渡す
+            # (2026-08-19: 手元では自分の設定が効いて通り、CIだけ skip になった)。
+            c = sh(["git", "-c", "user.name=gate_selftest",
+                    "-c", "user.email=gate_selftest@example.invalid",
+                    "commit", "-q", "--no-verify", "-m", "自己テスト"], repo)
             if c.returncode != 0:
-                print("  skip %-8s %-34s コミットできない" % (rid, desc))
+                print("  skip %-8s %-34s コミットできない: %s"
+                      % (rid, desc, ((c.stderr or c.stdout or "").strip()[-120:])))
                 ng += 1
                 continue
             hook = os.path.join(repo, ".git", "hooks", "pre-push")
