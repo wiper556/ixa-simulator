@@ -102,7 +102,7 @@
   "45do.info(生HTML skiladd_wrap)+ameameixa.com(スキルテーブル)の2ソース照合済み、両者一致",
   "2026-08-16黄丸化再検証: ixanary.com(cards/1227, skills/紅蓮ノ闘神)+ixawiki.com(BushoCard/1227真田幸村)の2ソースでsynthesisTable5枠(A建御雷神ノ閃光SS→八幡神ノ威光SSS/B四天轟雷SS自己参照/C八幡神ノ威光SSS自己参照/S1旌旗翳天ノ覇陣SS自己参照/S2国津破邪ノ楯SS自己参照)が完全一致。基礎値(1250/1280/740、成長+56/+72/+3.5、指揮4750)・rankGrades(槍S/弓A/馬S/器S、カード画像バッジ拡大確認)もixanary生HTMLと一致。data/skill/紅蓮ノ闘神(自己ページ、移植不可)・建御雷神ノ閃光・四天轟雷・八幡神ノ威光・旌旗翳天ノ覇陣・国津破邪ノ楯の各JSONのsourceCharactersに1227が正しいslotで既に記載済み。skillDetail及び紅蓮ノ闘神.jsonの「TR1〜TR5未確認」を追加ソースで確認、ixanary+ixawikiの2ソースでTR区分自体が存在しないことを確認し表記を削除。"
  ],
- "reviewedOk": true,
+ "reviewedOk": false,
  "wikiOldestComment": "2023-02-03",
  "wikiCommentCount": 47,
  "chGuess": "25章"

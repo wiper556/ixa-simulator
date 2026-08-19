@@ -127,7 +127,7 @@
   "2026-08-02追加調査: ameameixa.com(bushocard-10076が404)も記事なしを確認。第二ソース発見できず単一ソース(ixagno)のまま、黄丸化は見送り。",
   "2026-08-16再検証(黄丸化): ixanary.com/cards/10076/が404から200へ変化しており、ixagno単独からixanary併用の2ソース体制に移行できた。curl生HTMLでコスト6/指揮5450/成長値攻65防82兵法4.0/LV10・TR5のskillDetail(部隊総防御力25%→30%)が一致確認。rankGradesはixanaryのcard JSON(yumi:SS,kiba:A)とカード画像バッジが食い違ったため、マニュアル通りカード画像バッジ(4隅を個別にズームして再確認、槍X/弓A/馬SS/器A)を採用(既存データ通りで変更なし)。synthesisTableはixanary.com/skills/虎皇鋼牙/の生HTML合成テーブル(1次/2次/3次)でA〜S2全5枠(歴然ノ妙策[SSS]/仙境解脱[SS]/従魔絶神[SSS]/梵天浄界[SSS]/聖剣深鏡[S]、全枠自己参照)が既存登録と完全一致し、従来「要検証」としていたB枠(仙境解脱)の移植後継続も確定した。sourceCharacters逆引き(A-3-11): 5候補スキル全てのdata/skill/*.jsonに10076が反映済みを確認。skillDetailの「(模倣不可)」が①行末に修飾語なしで付いていたが、data/skill/虎皇鋼牙.jsonのeffectSummary(独立行形式)と食い違っていたためA-4-14に従い①の前の独立行に修正した。"
  ],
- "reviewedOk": true,
+ "reviewedOk": false,
  "wikiOldestComment": null,
  "wikiCommentCount": null
 }

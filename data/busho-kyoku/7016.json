@@ -109,7 +109,7 @@
   "2026-08-13: ユーザーがゲーム内で確認した回答による。 章を 未確認 → 31章 に確定。",
   "2026-08-16黄丸化検証: ixanary.com生HTML(cards/7016, skills/仁婦ノ加護)でLV1/LV10の数値・合成テーブル(1次A=戦陣吟詠自己参照,B=転歌,C=清賢ノ遊姫,S1=仁婦ノ加護自己参照,S2=志半ノ矛楯自己参照/2次B=入来神舞[S],C=入来神舞[S])を再確認、既存データと一致(以前は「サイト内の既存登録から転記」のみで一次情報源未確認だったため今回直接ixanaryで裏取り)。A-3-9/A-3-11の不備を発見・修正: 清賢ノ遊姫(A)は既存ページ持ちの入来神舞[S]の元スキルのため単独ページ作成対象だったが未作成で、入来神舞.json側にも逆引きリンクが無かった。清賢ノ遊姫.jsonを新規作成し7016をsourceCharactersに登録、入来神舞.jsonのgrantedViaSkillsに追加。categoryLinks(skills-takuetsu.html)が未登録だったため仁婦ノ加護を新規追加しcategoryLinksも追加した。転歌は既に正しく登録済みを確認。rankGrades(yari:A/yumi:A/uma:B/ki:S)はカード画像4隅バッジで再照合済み"
  ],
- "reviewedOk": true,
+ "reviewedOk": false,
  "wikiOldestComment": null,
  "wikiCommentCount": 0
 }

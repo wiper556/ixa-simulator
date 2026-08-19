@@ -127,7 +127,7 @@
   "sourceCharacters逆引き確認(A-3-11): 覇立槍(A)・勝旗勇躍(C)いずれもdata/skill/配下に7019が記載済み(2026-08-16)。訣歌天響・笹ノ墓標・志半ノ矛楯はAランク自己参照でページ対象外(他候補からの参照も無し)。戦陣 疾駆(A枠afterSkill)は既存ページのgrantedViaSkillsに覇立槍が設定済みで正しい経路。",
   "categoryLinksチェック(A-3-9、9項目): 初期スキル笹ノ墓標は項目3(飛翔、攻撃系)・項目7(卓越)に該当するがcategoryLinksフィールド自体が無かったため、skills-hishou-atk.html・skills-takuetsu.htmlへのcategoryLinksを追加した(2026-08-16)。他7項目は非該当。ただし両ページ本体の埋め込み配列(独自複製、A-3-11)には笹ノ墓標/7019のエントリが無いことを確認した。data/busho-kyoku編集のみでは反映されないため本体側への追記は別途必要(申し送り)。"
  ],
- "reviewedOk": true,
+ "reviewedOk": false,
  "wikiOldestComment": null,
  "wikiCommentCount": 0
 }
