@@ -1,0 +1,42 @@
+{
+ "name": "菊姫（2）",
+ "no": "3687",
+ "ch": null,
+ "cost": 2,
+ "troop": "砲器攻防",
+ "sub": "",
+ "effect": "砲・器部隊の攻撃・防御上昇 部隊内の姫武将の発動率上昇",
+ "furigana": "きくひめ",
+ "illustrator": "小森ニコ",
+ "imageFull": "assets/img/characters/no3687_full.png",
+ "imageChar": "assets/img/characters/no3687_char.png",
+ "atkBase": 960,
+ "atkGrowth": null,
+ "defBase": 850,
+ "defGrowth": null,
+ "tacticsBase": 450.0,
+ "tacticsGrowth": null,
+ "lv0Troops": 2450,
+ "rankGrades": {
+  "yari": "C",
+  "yumi": "B",
+  "uma": "B",
+  "ki": "A"
+ },
+ "initialSkill": "八重垣",
+ "skillDetail": "C/LV10 確率 100% 攻撃 470%上昇+防御 470%上昇/対象:砲・器\n①攻撃 470%上昇する\n②防御 470%上昇する\n③部隊内の姫武将のスキル発動率が5%上昇する(特殊効果は部隊内重複不可)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "砲・器　確率 100% / 攻撃 470%上昇+防御 470%上昇(部隊内姫武将のスキル発動率+5%・特殊効果は部隊内重複不可)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-19登録。うぐさんが撮ったカード画像(スキルLV10表記)から読み取った。手順書B-00によりLV10カードはカード上の全情報を採用してよい。",
+  "ixanary.com(cards/3687)はPage Not Found、ixawiki.com(BushoCard/3687菊姫)は未作成(編集ページが返る)。2026-08-19時点で標準2ソースとも掲載が無い新カードのため、カード画像から取れない項目(成長値・章・合成候補・鍛錬別の数値)はnullのままとした。",
+  "兵科ランクはカード4隅のバッジを拡大して読んだ(槍C/弓B/馬B/器A)。スキルのランク表記も拡大して確認した。",
+  "2026-08-19: 極/特に同名の既存カード(無印)があるため、ユーザー判断で新しい側に（2）を付けた。"
+ ]
+}

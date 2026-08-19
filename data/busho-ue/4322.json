@@ -1,0 +1,41 @@
+{
+ "name": "猪俣邦憲",
+ "no": "4322",
+ "ch": null,
+ "cost": 2,
+ "troop": "槍攻",
+ "sub": "",
+ "effect": "槍部隊の攻撃上昇",
+ "furigana": "いのまたくにのり",
+ "illustrator": "国吉",
+ "imageFull": "assets/img/characters/no4322_full.png",
+ "imageChar": "assets/img/characters/no4322_char.png",
+ "atkBase": 650,
+ "atkGrowth": null,
+ "defBase": 550,
+ "defGrowth": null,
+ "tacticsBase": 480.0,
+ "tacticsGrowth": null,
+ "lv0Troops": 1970,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "C",
+  "uma": "C",
+  "ki": "C"
+ },
+ "initialSkill": "槍隊進撃",
+ "skillDetail": "F/LV10 確率 10% 攻撃 15%上昇/対象:槍\n①槍攻 15%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍　確率 10% / 槍攻 15%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-19登録。うぐさんが撮ったカード画像(スキルLV10表記)から読み取った。手順書B-00によりLV10カードはカード上の全情報を採用してよい。",
+  "ixanary.com(cards/4322)はPage Not Found、ixawiki.com(BushoCard/4322猪俣邦憲)は未作成(編集ページが返る)。2026-08-19時点で標準2ソースとも掲載が無い新カードのため、カード画像から取れない項目(成長値・章・合成候補・鍛錬別の数値)はnullのままとした。",
+  "兵科ランクはカード4隅のバッジを拡大して読んだ(槍B/弓C/馬C/器C)。スキルのランク表記も拡大して確認した。"
+ ]
+}

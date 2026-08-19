@@ -1,0 +1,42 @@
+{
+ "name": "長尾景春（2）",
+ "no": "2858",
+ "ch": null,
+ "cost": 3,
+ "troop": "全攻防",
+ "sub": "",
+ "effect": "全部隊の攻撃・防御上昇 同じ自拠点の他の自部隊にも効果",
+ "furigana": "ながおかげはる",
+ "illustrator": "塚本陽子",
+ "imageFull": "assets/img/characters/no2858_full.png",
+ "imageChar": "assets/img/characters/no2858_char.png",
+ "atkBase": 1150,
+ "atkGrowth": null,
+ "defBase": 1150,
+ "defGrowth": null,
+ "tacticsBase": 550.0,
+ "tacticsGrowth": null,
+ "lv0Troops": 3610,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "黎明不知火",
+ "skillDetail": "S/LV10 確率 100% 攻撃 650%上昇+防御 650%上昇/対象:全\n模倣不可\n①攻撃 650%上昇する\n②防御 650%上昇する\n③同じ自拠点に所属または出陣する他の自部隊にも効果あり(重複不可)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 攻撃 650%上昇+防御 650%上昇(同じ自拠点の他の自部隊にも効果・模倣不可・重複不可)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-19登録。うぐさんが撮ったカード画像(スキルLV10表記)から読み取った。手順書B-00によりLV10カードはカード上の全情報を採用してよい。",
+  "ixanary.com(cards/2858)はPage Not Found、ixawiki.com(BushoCard/2858長尾景春)は未作成(編集ページが返る)。2026-08-19時点で標準2ソースとも掲載が無い新カードのため、カード画像から取れない項目(成長値・章・合成候補・鍛錬別の数値)はnullのままとした。",
+  "兵科ランクはカード4隅のバッジを拡大して読んだ(槍A/弓A/馬A/器S)。スキルのランク表記も拡大して確認した。",
+  "2026-08-19: 極/特に同名の既存カード(無印)があるため、ユーザー判断で新しい側に（2）を付けた。"
+ ]
+}

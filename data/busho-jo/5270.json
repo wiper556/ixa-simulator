@@ -1,0 +1,41 @@
+{
+ "name": "横田尹松",
+ "no": "5270",
+ "ch": null,
+ "cost": 1.5,
+ "troop": "馬防",
+ "sub": "",
+ "effect": "馬部隊の防御上昇",
+ "furigana": "よこたただまつ",
+ "illustrator": "あおひと",
+ "imageFull": "assets/img/characters/no5270_full.png",
+ "imageChar": "assets/img/characters/no5270_char.png",
+ "atkBase": 440,
+ "atkGrowth": null,
+ "defBase": 540,
+ "defGrowth": null,
+ "tacticsBase": 430.0,
+ "tacticsGrowth": null,
+ "lv0Troops": 1320,
+ "rankGrades": {
+  "yari": "D",
+  "yumi": "D",
+  "uma": "C",
+  "ki": "D"
+ },
+ "initialSkill": "騎馬隊堅守",
+ "skillDetail": "F/LV10 確率 20% 防御 10%上昇/対象:馬\n①馬防 10%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "馬　確率 20% / 馬防 10%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-08-19登録。うぐさんが撮ったカード画像(スキルLV10表記)から読み取った。手順書B-00によりLV10カードはカード上の全情報を採用してよい。",
+  "ixanary.com(cards/5270)はPage Not Found、ixawiki.com(BushoCard/5270横田尹松)は未作成(編集ページが返る)。2026-08-19時点で標準2ソースとも掲載が無い新カードのため、カード画像から取れない項目(成長値・章・合成候補・鍛錬別の数値)はnullのままとした。",
+  "兵科ランクはカード4隅のバッジを拡大して読んだ(槍D/弓D/馬C/器D)。スキルのランク表記も拡大して確認した。"
+ ]
+}
