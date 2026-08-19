@@ -80,6 +80,7 @@
   "違反ログを読めない",
   "重複登録",
   "錠前の検査が動かない",
+  "門番の対がずれている",
   "門番名だけで済ませている"
  ],
  "entry_counts": {
@@ -102,12 +103,12 @@
   "docs/redteam-brief.md": "6f15522aba6c0970",
   "docs/rollback-floor.txt": "d768999b655e8351",
   "tools/audit_characters.py": "9025e8d4f73d4f15",
-  "tools/audit_selftest.py": "eb7bd10e61832a83",
+  "tools/audit_selftest.py": "e525a687da573f10",
   "tools/build_data.py": "8a570a159a25f29b",
   "tools/check_generated.py": "7b5f546f3865e9b2",
   "tools/check_js.py": "f526e38ba6043f3d",
   "tools/extract_data.py": "5b7bcae7dfa96d5e",
-  "tools/gate_selftest.py": "2bf4f951f1ce5e7d",
+  "tools/gate_selftest.py": "d0b379ac75ae9341",
   "tools/gen_detail_pages.py": "0566945da11cc928",
   "tools/hooks/_cmdline.py": "33fbd86e8b1f513f",
   "tools/hooks/no_git_internal_write.py": "61f1b6309f85eced",
@@ -126,7 +127,7 @@
   "tools/reslog.py": "5461df3a6d4ae611",
   "tools/reslog_legacy.txt": "c49dba80f6b47af1",
   "tools/rollback_reviewed.py": "afac0680cab6ade1",
-  "tools/rules.py": "0ed6b2d442fd1412",
+  "tools/rules.py": "027bf1f417f9b78a",
   "tools/selftest_uncovered.txt": "6a15b2296aab937d",
   "tools/verify_extract.py": "91c4dae6f22fcd85"
  },
@@ -237,6 +238,7 @@
   "2026-08-12|T-01": "3ef51bcee736fbef",
   "2026-08-12|W-13": "330513a2bb0b168a",
   "2026-08-12|W-14": "e7cdb638e25cefa7",
-  "2026-08-13|I-01": "36969edaf44e57a7"
+  "2026-08-13|I-01": "36969edaf44e57a7",
+  "2026-08-19|S-14": "cfbb15d162a100a6"
  }
 }

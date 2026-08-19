@@ -114,8 +114,11 @@ def _d14_pick(repo):
     (門番は正しく動いていたが、動く証拠のほうが消えていた)。
     番号を覚えさせると同じ古び方をするので、条件で選ぶ。
 
-    条件: まだ赤丸でない / 黄丸である / 許可記録に無い /
-          差し込む目印がページに1箇所だけ
+    条件: まだ赤丸でない / 許可記録に無い / 差し込む目印がページに1箇所だけ
+
+    2026-08-19(同日2度目): 最初は「黄丸である」も条件にしていたが、重い違反の
+    巻き戻しで黄丸が0件になった瞬間に候補が尽きて筋書きが動かなくなった。
+    reviewedOk の行は false でも残るので、値ではなく行の存在だけを見る。
     """
     rec = set()
     p = os.path.join(repo, "tools", "approvals.txt")
@@ -132,7 +135,7 @@ def _d14_pick(repo):
         if not os.path.exists(j):
             continue
         s = io.open(j, encoding="utf-8").read()
-        if '"approved"' in s or ' "reviewedOk": true,' not in s:
+        if '"approved"' in s or ' "reviewedOk":' not in s:
             continue
         return no
     raise RuntimeError("D-14 の筋書きに使えるカードが無い"
@@ -146,8 +149,8 @@ def _d14_marks(repo):
     赤丸の検査が働いたのか別の検査で止まったのか見分けが付かない。
     """
     no = _d14_pick(repo)
-    edit(repo, "data/busho/%s.json" % no, ' "reviewedOk": true,',
-         ' "approved": true,\n "reviewedOk": true,')
+    edit(repo, "data/busho/%s.json" % no, ' "reviewedOk":',
+         ' "approved": true,\n "reviewedOk":')
     edit(repo, "characters.html", 'no:"%s", furigana:"' % no,
          'no:"%s", approved:true, furigana:"' % no)
     sh(["git", "add", "data/busho/%s.json" % no, "characters.html"], repo)

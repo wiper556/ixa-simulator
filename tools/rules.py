@@ -540,6 +540,51 @@ def _p_ci(out, ids, n):
                             "rules.yml %d行目のステップが常にスキップされる" % i))
 
 
+def _p_gatepair(out, ids, n):
+    """対になっている門番が、片側だけ更新されていないか(S-14の2回目対策)。
+
+    2026-08-19、同じ日に2件出た。どちらも「対の片側だけ直して完了にした」。
+
+     ・赤丸の許可記録(tools/approvals.txt)を読む入口を precommit_check.py に
+       だけ足し、rules.yml の同じ判定を無条件 exit 1 のまま残した(8b69e213)。
+       ローカルは通るのに CI だけ止まり、残る道が --no-verify か保護解除しか
+       なくなっていた。
+     ・自己テスト D-14 が固定番号を直書きしており、その番号が正式な赤丸に
+       なった時点で空振りした。門番は動いていたが、動く証拠が消えた。
+
+    S-14 が2回目になったので、記憶ではなく機械で見る(RULE-OPERATION.md
+    「同じルールを2回破ったとき」)。対の全部は機械化できないので、
+    **実際に壊れた2箇所**を見る。増やすときはここに足す。
+    """
+    # 1. CI の赤丸ゲートが、ローカル門番と同じ許可記録を見ているか。
+    #    取り込み(import)と実際の使用の両方を見る。片方だけ残っていても
+    #    「見ているつもりで見ていない」になるため。
+    wf = _read(os.path.join(ROOT, ".github", "workflows", "rules.yml"))
+    if wf and "approved" in wf:
+        for need, why in (
+                ("from precommit_check import approvals_of",
+                 "ローカル門番と同じ関数を取り込んでいない"),
+                ('approvals_of(".")',
+                 "取り込んでいるだけで、判定に使っていない")):
+            if need not in wf:
+                out.append(("門番の対がずれている", "HIGH",
+                            "rules.yml の赤丸ステップが tools/approvals.txt を"
+                            "見ていない(%s)。ローカルの門番は記録があれば通すので、"
+                            "記録つきの赤丸が CI だけで止まる(8b69e213 と同じ状態)"
+                            % why))
+    # 2. 赤丸を止める自己テストが空振りしていないか
+    try:
+        if os.path.join(ROOT, "tools") not in sys.path:
+            sys.path.insert(0, os.path.join(ROOT, "tools"))
+        import gate_selftest as _gs
+        _gs._d14_pick(ROOT)
+    except Exception as e:
+        out.append(("門番の対がずれている", "HIGH",
+                    "gate_selftest の D-14 が筋書きに使えるカードを選べない"
+                    "(%s: %s)。赤丸を止める検査が空振りになっている"
+                    % (type(e).__name__, e)))
+
+
 def _p_violations(out, ids, n):
     """違反ログの中身。"""
     all_rows = violations()
@@ -677,6 +722,7 @@ def problems():
                       ("レッドチームの回", _p_redteam),
                       ("PreToolUseの設定", _p_settings),
                       ("CIのワークフロー", _p_ci),
+                      ("門番の対", _p_gatepair),
                       ("違反ログ", _p_violations)):
         _guard(out, label, fn, ids, n)
     return out

@@ -67,3 +67,5 @@
 2026-08-16	-1	hooks:tools/audit_characters.py	序(4桁5始まり)をレアリティ判定に足した。No.5082〜5269を実物のカードで確認。ここに無いと序137体が天に混ざり、同名判定が別レアリティ同士で鳴る
 2026-08-19	-1	hooks:.github/workflows/rules.yml	CI側の赤丸ゲートにtools/approvals.txt参照を追加(8b69e213で入口をローカル門番にだけ足していた食い違いの修正、PR #43で発覚)
 2026-08-19	-1	hooks:tools/gate_selftest.py	D-14の筋書きが固定番号1310を使っており、1310が2026-08-16に正式な赤丸になって空振りしていたのを、条件で選ぶ形に変更
+2026-08-19	-2	hooks:tools/gate_selftest.py,hooks:tools/rules.py	S-14が2回目のため rules.py に門番の対がずれていないかのチェックを追加。gate_selftest の筋書きが黄丸0件でも動くよう条件を変更
+2026-08-19	-2	hooks:tools/audit_selftest.py,hooks:tools/rules.py	門番の対がずれていないかのチェックをrules.pyに追加し、audit_selftestに注入ケース2件を追加(S-14が2回目のため)
