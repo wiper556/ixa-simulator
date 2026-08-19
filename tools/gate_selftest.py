@@ -183,6 +183,25 @@ def _d14edit(repo):
     sh(["git", "add", "tools/approvals.txt"], repo)
 
 
+def _s14_rate(repo):
+    """くじの排出確率の表を手で書き換える(止まるべき)。
+
+    2026-08-19(S-14の3件目): くじを差し替えたとき、抽選に使う定数だけ直して
+    ページ下部の表を旧いくじのまま残した。表示と実際の抽選が7箇所ずれていた。
+    表は build_data.py が定数から作るので、手で書き換えれば
+    「生成物とデータが食い違っている」で止まる。
+    """
+    s = io.open(os.path.join(repo, "gacha-simulator.html"),
+                encoding="utf-8", newline="").read()
+    m = re.search(r'(<td data-label="単発 / 10連1〜9枚目">)([\d.]+)(%</td>)', s)
+    if not m:
+        raise RuntimeError("排出確率の表が見つからない")
+    old = m.group(0)
+    new = m.group(1) + ("9.999" if m.group(2) != "9.999" else "8.888") + m.group(3)
+    edit(repo, "gacha-simulator.html", old, new)
+    sh(["git", "add", "gacha-simulator.html"], repo)
+
+
 def _dirty_tools(repo):
     """検査に使う道具を、ステージせずに書き換える。"""
     edit(repo, "tools/audit_characters.py", "# -*- coding: utf-8 -*-",
@@ -274,6 +293,8 @@ CASES = [
     ("D-14b", "許可の記録つきで赤丸にする(止まってはいけない)", _d14ok, False, ""),
     ("D-14c", "許可の記録を手で書く", _d14edit, True,
      "赤丸の許可記録の手編集"),
+    ("S-14", "くじの排出確率の表を手で書き換える", _s14_rate, True,
+     "生成物とデータが食い違っている", "push"),
     ("A-07", "検査の道具をステージせずに書き換える", _dirty_tools, True,
      "ステージしていない変更がある"),
     ("Z-01", "tools/ に未追跡の .py を置く(import乗っ取り)", _stray_py, True,
@@ -315,7 +336,12 @@ def main():
     sh([sys.executable, "tools/install_hooks.py"], repo)
 
     ng = 0
-    for rid, desc, setup, should_block, want in CASES:
+    for case in CASES:
+        rid, desc, setup, should_block, want = case[:5]
+        # 6番目があれば門番の経路。既定は commit。
+        # 生成物の照合(check_generated)は重いので push だけで走る作りになっている。
+        # 門番の位置をテストの都合で動かさず、実際に効いている経路を叩く。
+        route = case[5] if len(case) > 5 else "commit"
         if only and rid not in only:
             continue
         sh(["git", "reset", "-q", "--hard", "HEAD"], repo)
@@ -382,11 +408,31 @@ def main():
             ng += 1
             continue
         # Z-1: フック本体(sh)側の事前確認も含めて再現するため、フック経由で叩く。
-        hook = os.path.join(repo, ".git", "hooks", "pre-commit")
-        if os.path.exists(hook):
-            r = sh(["sh", hook], repo)
+        if route == "push":
+            # push の門番は「これから外に出る中身」を見るので、先に1つ積む。
+            # CI には git の名前・メールが無いので、環境に依存しないよう -c で渡す
+            # (2026-08-19: 手元では自分の設定が効いて通り、CIだけ skip になった)。
+            c = sh(["git", "-c", "user.name=gate_selftest",
+                    "-c", "user.email=gate_selftest@example.invalid",
+                    "commit", "-q", "--no-verify", "-m", "自己テスト"], repo)
+            if c.returncode != 0:
+                print("  skip %-8s %-34s コミットできない: %s"
+                      % (rid, desc, ((c.stderr or c.stdout or "").strip()[-120:])))
+                ng += 1
+                continue
+            hook = os.path.join(repo, ".git", "hooks", "pre-push")
+            if os.path.exists(hook):
+                r = sh(["sh", hook], repo)
+            else:
+                r = sh([sys.executable, "tools/precommit_check.py",
+                        "--mode", "push"], repo)
         else:
-            r = sh([sys.executable, "tools/precommit_check.py", "--mode", "commit"], repo)
+            hook = os.path.join(repo, ".git", "hooks", "pre-commit")
+            if os.path.exists(hook):
+                r = sh(["sh", hook], repo)
+            else:
+                r = sh([sys.executable, "tools/precommit_check.py",
+                        "--mode", "commit"], repo)
         blocked = r.returncode != 0
         out = (r.stdout or "") + (r.stderr or "")
         # U-1/Z-5: 終了コードだけでなく「その理由で止まったか」まで見る。

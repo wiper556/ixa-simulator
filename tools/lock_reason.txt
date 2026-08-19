@@ -70,3 +70,6 @@
 2026-08-19	-2	hooks:tools/gate_selftest.py,hooks:tools/rules.py	S-14が2回目のため rules.py に門番の対がずれていないかのチェックを追加。gate_selftest の筋書きが黄丸0件でも動くよう条件を変更
 2026-08-19	-2	hooks:tools/audit_selftest.py,hooks:tools/rules.py	門番の対がずれていないかのチェックをrules.pyに追加し、audit_selftestに注入ケース2件を追加(S-14が2回目のため)
 2026-08-19	-1	hooks:tools/build_data.py	くじの排出確率の表を定数から生成する処理をbuild_data.pyに追加(表示と実際の確率が食い違っていた件の再発防止)
+2026-08-19	-1	hooks:tools/gate_selftest.py	S-14(排出確率の表を手で書き換える)の筋書きをgate_selftestに追加。門番の実態がpush側なのでpush経路も回せるようにした
+2026-08-19	-1	hooks:tools/gen_detail_pages.py	サイドバーのリンク文言を金くじシミュレーターに揃えるため gen_detail_pages.py のテンプレートを変更
+2026-08-19	-1	hooks:tools/gate_selftest.py	gate_selftestのpush経路のコミットにuser.name/emailを-cで渡す(CIに設定が無くskipになっていた)
