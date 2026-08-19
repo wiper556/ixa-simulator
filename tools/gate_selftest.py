@@ -105,17 +105,53 @@ def _baseline(repo):
     sh(["git", "add", "tools/audit_baseline.json"], repo)
 
 
+def _d14_pick(repo):
+    """赤丸の筋書きに使うカードを、その時点の中身から選ぶ。
+
+    2026-08-19: ここは No.1310 を直に書いていた。1310 が 2026-08-16 に
+    記録つきの正式な赤丸になったため、「記録を残さずに新しく赤丸にする」
+    状況をもう作れず、D-14 と D-14b が黙って空振りしていた
+    (門番は正しく動いていたが、動く証拠のほうが消えていた)。
+    番号を覚えさせると同じ古び方をするので、条件で選ぶ。
+
+    条件: まだ赤丸でない / 黄丸である / 許可記録に無い /
+          差し込む目印がページに1箇所だけ
+    """
+    rec = set()
+    p = os.path.join(repo, "tools", "approvals.txt")
+    if os.path.exists(p):
+        for line in io.open(p, encoding="utf-8", newline=""):
+            rec.add(line.split("\t")[0].strip())
+    html = io.open(os.path.join(repo, "characters.html"),
+                   encoding="utf-8", newline="").read()
+    for m in re.finditer(r'no:"(\d{3,6})", furigana:"', html):
+        no = m.group(1)
+        if no in rec or html.count('no:"%s", furigana:"' % no) != 1:
+            continue
+        j = os.path.join(repo, "data", "busho", no + ".json")
+        if not os.path.exists(j):
+            continue
+        s = io.open(j, encoding="utf-8").read()
+        if '"approved"' in s or ' "reviewedOk": true,' not in s:
+            continue
+        return no
+    raise RuntimeError("D-14 の筋書きに使えるカードが無い"
+                       "(赤丸でない黄丸が1件も見つからない)")
+
+
 def _d14_marks(repo):
-    """No.1310 を赤丸にする。正本とページの両方を同じ内容にそろえる。
+    """選んだカードを赤丸にする。正本とページの両方を同じ内容にそろえる。
 
     片方だけ直すと「ページの配列が正本と違う」で止まってしまい、
     赤丸の検査が働いたのか別の検査で止まったのか見分けが付かない。
     """
-    edit(repo, "data/busho/1310.json", ' "reviewedOk": true,',
+    no = _d14_pick(repo)
+    edit(repo, "data/busho/%s.json" % no, ' "reviewedOk": true,',
          ' "approved": true,\n "reviewedOk": true,')
-    edit(repo, "characters.html", 'no:"1310", furigana:"おだのぶひで"',
-         'no:"1310", approved:true, furigana:"おだのぶひで"')
-    sh(["git", "add", "data/busho/1310.json", "characters.html"], repo)
+    edit(repo, "characters.html", 'no:"%s", furigana:"' % no,
+         'no:"%s", approved:true, furigana:"' % no)
+    sh(["git", "add", "data/busho/%s.json" % no, "characters.html"], repo)
+    return no
 
 
 def _d14(repo):
@@ -129,18 +165,18 @@ def _d14ok(repo):
     記録は --approve に書かせる。ここで手書きすると、
     「手編集を止める検査」のほうに引っかかって別の理由で赤くなる。
     """
-    _d14_marks(repo)
-    sh([sys.executable, "tools/precommit_check.py", "--approve", "1310",
+    no = _d14_marks(repo)
+    sh([sys.executable, "tools/precommit_check.py", "--approve", no,
         "--reason", "自己テスト用。ユーザーが赤丸にしてよいと明言した想定"], repo)
     sh(["git", "add", "tools/approvals.txt"], repo)
 
 
 def _d14edit(repo):
     """許可の記録を手で書く(止まるべき)。過去行の書き換えも同じ扱い。"""
-    _d14_marks(repo)
+    no = _d14_marks(repo)
     p = os.path.join(repo, "tools", "approvals.txt")
     with io.open(p, "a", encoding="utf-8", newline="\n") as f:
-        f.write("1310 なんとなく\n")          # タブ区切りでも日付でもない
+        f.write("%s なんとなく\n" % no)       # タブ区切りでも日付でもない
     sh(["git", "add", "tools/approvals.txt"], repo)
 
 

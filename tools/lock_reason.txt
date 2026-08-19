@@ -66,3 +66,4 @@
 2026-08-16	-2	hooks:tools/audit_characters.py,hooks:tools/build_data.py	上レアリティ(4桁の4始まり)を監査の_rarityに追加し、くじシミュレーターの絵つき武将一覧(CARD_ART_NOS)を手書きから assets/img/characters/ の生成に変えた。特77体・上78体の新規登録に伴う配線。検査を緩める変更ではない
 2026-08-16	-1	hooks:tools/audit_characters.py	序(4桁5始まり)をレアリティ判定に足した。No.5082〜5269を実物のカードで確認。ここに無いと序137体が天に混ざり、同名判定が別レアリティ同士で鳴る
 2026-08-19	-1	hooks:.github/workflows/rules.yml	CI側の赤丸ゲートにtools/approvals.txt参照を追加(8b69e213で入口をローカル門番にだけ足していた食い違いの修正、PR #43で発覚)
+2026-08-19	-1	hooks:tools/gate_selftest.py	D-14の筋書きが固定番号1310を使っており、1310が2026-08-16に正式な赤丸になって空振りしていたのを、条件で選ぶ形に変更
