@@ -55,7 +55,7 @@ from playwright.sync_api import sync_playwright
 # 取り出したツリーではなく本体を再生成した結果を見ていたからで、検査になっていなかった。
 # スクリプトの位置からリポジトリの根を求める。
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-BASE = 'https://wiper556.github.io/ixa-simulator/'
+BASE = 'https://wiper556.github.io/'
 os.chdir(ROOT)
 
 SRC = [
