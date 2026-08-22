@@ -1,0 +1,32 @@
+{
+ "name": "朝日姫",
+ "no": "22002",
+ "furigana": "あさひひめ",
+ "illustrator": "影井由宇",
+ "troop": "全防",
+ "sub": "",
+ "hasHado": false,
+ "effect": "防御 500%上昇(自軍内「姫」武将数16/32/64以上で防御30/60/90%上昇が全「姫」に有効・部隊スキル発動率+70%)",
+ "imageFull": "assets/img/characters/no22002_full.png",
+ "imageChar": "assets/img/characters/no22002_char.png",
+ "atkBase": 0,
+ "defBase": 36000,
+ "tacticsBase": 4000,
+ "lv0Troops": 12000,
+ "initialSkill": "日輪ノ余光",
+ "skillDetail": "傑/効果固定 確率 100% 防御 500%上昇/対象:全\n模倣不可・重複不可・戦闘時効果はすべて防御時のみ発動\n①防御 500%上昇する\n②所属部隊内の「姫」武将数が4の時[部隊スキル]の発動率が+70%される\n③自軍内の「姫」武将数が16以上で自軍内全「姫」武将に防御 30%上昇が有効になる\n④自軍内の「姫」武将数が32以上で自軍内全「姫」武将に防御 60%上昇が有効になる\n⑤自軍内の「姫」武将数が64以上で自軍内全「姫」武将に防御 90%上昇が有効になる",
+ "alwaysEffects": [
+  "この武将を配置した拠点に職業「姫」武将を含む部隊が加勢出陣するとき到着時間が1分30秒を超える場合は1分30秒で到着できる",
+  "この武将は職業「姫」としても扱う"
+ ],
+ "wikiOldestComment": "2022-12-01",
+ "wikiCommentCount": 2,
+ "chGuess": "24章",
+ "ch": "24章",
+ "chSource": "wikiOldestComment",
+ "notes": [
+  "2026-08-23 新規登録(青丸)。うぐさんのゲーム内スクリーンショットから tools/crop_card.py でカード画像を切り抜き、カード画像・ixanary 埋め込みJSON・ixawiki カードページの3ソースで全項目を突き合わせた。統率は4値とも XXX、成長値は「-」(傑の共通仕様)。busho-ketsu のスキーマに cost・rankGrades・成長値・trTable・synthesisTable が無いのはこのため。ixanary の合成素材欄は「合成不可スキルです」。",
+  "2026-08-23: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。**ixagno blog-entry-10740「傑【一覧表】」には章の記載が無い。",
+  "2026-08-23: 20001〜20007 が持つ「本領と陣、出城が黄金造りになる」等の4行と「覇道」はこのカードには無い。カード本文の灰色行(常時効果)は alwaysEffects に入れ、赤字行(戦闘時効果)を skillDetail にした。hasHado は false。"
+ ]
+}

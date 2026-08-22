@@ -5825,8 +5825,9 @@ const generalChapters = {
   "7017":31, "7018":31, "7019":31, "7020":31, "7021":31, "7022":31, "7401":31, "7402":31, "7403":31, "7404":31,
   "7405":31, "10014":22, "10052":28, "10053":28, "10054":28, "10062":29, "10063":30, "10064":30, "10065":30,
   "10066":30, "10067":30, "10069":30, "10070":30, "10074":31, "10075":31, "10076":31, "20002":24, "20003":25,
-  "20004":26, "20005":27, "20006":28, "20007":29, "31310":32, "31311":32, "31312":32, "31313":32, "31314":32,
-  "31315":32, "31316":32, "31317":32, "31318":32, "31319":32, "31320":32, "31321":32
+  "20004":26, "20005":27, "20006":28, "20007":29, "21001":23, "21002":24, "21003":26, "22001":23, "22002":24,
+  "22003":26, "31310":32, "31311":32, "31312":32, "31313":32, "31314":32, "31315":32, "31316":32, "31317":32,
+  "31318":32, "31319":32, "31320":32, "31321":32
 };
 // BUILD:generalChapters:end
 
@@ -6037,9 +6038,9 @@ const generalSkillAxis = {
   "7024":"def", "7402":"def", "7403":"atk", "7404":"def", "7405":"atk", "7406":"atk", "10014":"def", "10052":"atk",
   "10053":"atk", "10054":"atk", "10063":"def", "10064":"def", "10065":"atk", "10066":"atk", "10067":"def",
   "10069":"def", "10074":"both", "10075":"atk", "10076":"def", "20001":"atk", "20002":"both", "20003":"both",
-  "20004":"both", "20005":"atk", "20006":"atk", "20007":"both", "31310":"atk", "31311":"def", "31312":"atk",
-  "31313":"atk", "31314":"def", "31315":"def", "31316":"def", "31317":"atk", "31318":"atk", "31319":"def",
-  "31320":"atk", "31321":"atk"
+  "20004":"both", "20005":"atk", "20006":"atk", "20007":"both", "21002":"both", "21003":"both", "22001":"def",
+  "22002":"def", "22003":"def", "31310":"atk", "31311":"def", "31312":"atk", "31313":"atk", "31314":"def",
+  "31315":"def", "31316":"def", "31317":"atk", "31318":"atk", "31319":"def", "31320":"atk", "31321":"atk"
 };
 // BUILD:generalSkillAxis:end
 
@@ -6361,12 +6362,12 @@ const generalGrowthDB = [
   { name:'足利義昭', no:'20005', cost: 0, initialSkill:'天網鎖陣', rarity:'傑', lv0Troops:9000, atkBase:65000, atkGrowth:0, defBase:0, defGrowth:0, tacticsBase:6000, tacticsGrowth:0, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。Cost0。防御力0の攻撃特化型。固有効果「天網鎖陣」(詳細数値は情報源に未掲載)。装飾効果は参考データのみ。' },
   { name:'伊達政宗', no:'20006', cost: 3, initialSkill:'紫電ノ龍将', rarity:'傑', lv0Troops:9500, atkBase:68000, atkGrowth:0, defBase:0, defGrowth:0, tacticsBase:5500, tacticsGrowth:0, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。Cost3。防御力0。固有効果「紫電ノ龍将」(詳細数値は情報源に未掲載)。装飾効果(黄金化・正一位・陣Lv5化)は参考データのみ。' },
   { name:'黒田如水', no:'20007', cost: 4.5, initialSkill:'神智天鏡', rarity:'傑', lv0Troops:14000, atkBase:64000, atkGrowth:0, defBase:64000, defGrowth:0, tacticsBase:6200, tacticsGrowth:0, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。Cost4.5。固有効果「神智天鏡」: 合流攻撃時他部隊鉄砲足軽攻撃+3、防御戦闘時自軍全武将の騎馬鉄砲防御+1、確率+100%/対象全/攻防3600%上昇、スキル発動率+10%・卓越追加確率+15%。装飾効果は参考データのみ。' },
-  { name:'賀茂在昌【傑】', no:'21001', cost: 0, initialSkill:'聖陰陽師', rarity:'傑', lv0Troops:7000, atkBase:0, atkGrowth:0, defBase:30000, defGrowth:0, tacticsBase:4500, tacticsGrowth:0, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。Cost0。攻撃力0の防御特化型。固有効果「聖陰陽師」: 所持で名声最大値+100・名声回復率+5%、防御戦闘時自軍全武将のスキル発動率上昇(IXA占いの結果で変動)。装飾効果は参考データのみ。' },
-  { name:'千利休【傑】', no:'21002', cost: 3, initialSkill:'抛天', rarity:'傑', lv0Troops:7500, atkBase:30000, atkGrowth:0, defBase:30000, defGrowth:0, tacticsBase:4500, tacticsGrowth:0, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。Cost3。固有効果「抛天」: 所属部隊の武将回復速度+100%・デッキ上武将回復速度+50%、自軍「お茶アイコン」保持武将のスキル発動率+5%、確率100%で対象全体に攻撃500%・防御500%上昇(模倣・重複不可)。装飾効果は参考データのみ。' },
-  { name:'以心崇伝【傑】', no:'21003', cost: 5, initialSkill:'悪国師', rarity:'傑', lv0Troops:9550, atkBase:30000, atkGrowth:0, defBase:30000, defGrowth:0, tacticsBase:6000, tacticsGrowth:0, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。Cost5。固有効果「悪国師」: 名声関連上昇、部隊内「将」職業武将のスキル発動率・卓越追加確率上昇、敵軍「将」職業武将のスキル発動率低下、確率+100%/対象全/攻撃615%・防御615%上昇。装飾効果は参考データのみ。' },
-  { name:'生駒吉乃【傑】', no:'22001', cost: 0, initialSkill:'六天波斬車', rarity:'傑', lv0Troops:12000, atkBase:0, atkGrowth:0, defBase:35000, defGrowth:0, tacticsBase:4000, tacticsGrowth:0, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。Cost0。攻撃力0の防御特化型。固有効果「六天波斬車」: 確率+100%/対象全/防御333%上昇、部隊内「姫」武将数依存の段階的追加効果(4体で部隊スキル発動率+70%、8体以上で同所属「姫」武将のスキル発動率+3%、防御戦闘時のみ)。本武将も職業「姫」として扱われる。装飾効果は参考データのみ。' },
-  { name:'朝日姫【傑】', no:'22002', cost: 0, initialSkill:'日輪ノ余光', rarity:'傑', lv0Troops:12000, atkBase:0, atkGrowth:0, defBase:36000, defGrowth:0, tacticsBase:4000, tacticsGrowth:0, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。Cost0。攻撃力0の防御特化型。固有効果「日輪ノ余光」: 配置時「姫」職を含む部隊の援軍到着時間を1分30秒以内に短縮、確率100%で対象全体に防御500%上昇、部隊内「姫」武将4体で部隊スキル発動率+70%、自軍内「姫」武将数依存の段階的防御上昇(16体以上30%・32体以上60%・64体以上90%)。本武将も職業「姫」として扱われる。装飾効果は参考データのみ。' },
-  { name:'お愛の方【傑】', no:'22003', cost: 5, initialSkill:'慈照眼', rarity:'傑', lv0Troops:8500, atkBase:0, atkGrowth:0, defBase:3500, defGrowth:0, tacticsBase:4000, tacticsGrowth:0, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。Cost5。攻撃力0。固有効果「慈照眼」: 配置拠点に「姫」職を含む部隊が加勢出陣する際、到着時間が2分超なら2分に短縮、防御戦闘時「姫」職武将に対してのみ防御力519%上昇。装飾効果は参考データのみ。' },
+  { name:'賀茂在昌', no:'21001', cost: 0, initialSkill:'聖陰陽師', rarity:'傑', lv0Troops:7000, atkBase:0, atkGrowth:0, defBase:30000, defGrowth:0, tacticsBase:4500, tacticsGrowth:0, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。Cost0。攻撃力0の防御特化型。固有効果「聖陰陽師」: 所持で名声最大値+100・名声回復率+5%、防御戦闘時自軍全武将のスキル発動率上昇(IXA占いの結果で変動)。装飾効果は参考データのみ。' },
+  { name:'千利休', no:'21002', cost: 3, initialSkill:'抛天', rarity:'傑', lv0Troops:7500, atkBase:30000, atkGrowth:0, defBase:30000, defGrowth:0, tacticsBase:4500, tacticsGrowth:0, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。Cost3。固有効果「抛天」: 所属部隊の武将回復速度+100%・デッキ上武将回復速度+50%、自軍「お茶アイコン」保持武将のスキル発動率+5%、確率100%で対象全体に攻撃500%・防御500%上昇(模倣・重複不可)。装飾効果は参考データのみ。' },
+  { name:'以心崇伝', no:'21003', cost: 5, initialSkill:'悪国師', rarity:'傑', lv0Troops:9550, atkBase:30000, atkGrowth:0, defBase:30000, defGrowth:0, tacticsBase:6000, tacticsGrowth:0, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。Cost5。固有効果「悪国師」: 名声関連上昇、部隊内「将」職業武将のスキル発動率・卓越追加確率上昇、敵軍「将」職業武将のスキル発動率低下、確率+100%/対象全/攻撃615%・防御615%上昇。装飾効果は参考データのみ。' },
+  { name:'生駒吉乃', no:'22001', cost: 0, initialSkill:'六天波斬車', rarity:'傑', lv0Troops:12000, atkBase:0, atkGrowth:0, defBase:35000, defGrowth:0, tacticsBase:4000, tacticsGrowth:0, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。Cost0。攻撃力0の防御特化型。固有効果「六天波斬車」: 確率+100%/対象全/防御333%上昇、部隊内「姫」武将数依存の段階的追加効果(4体で部隊スキル発動率+70%、8体以上で同所属「姫」武将のスキル発動率+3%、防御戦闘時のみ)。本武将も職業「姫」として扱われる。装飾効果は参考データのみ。' },
+  { name:'朝日姫', no:'22002', cost: 0, initialSkill:'日輪ノ余光', rarity:'傑', lv0Troops:12000, atkBase:0, atkGrowth:0, defBase:36000, defGrowth:0, tacticsBase:4000, tacticsGrowth:0, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。Cost0。攻撃力0の防御特化型。固有効果「日輪ノ余光」: 配置時「姫」職を含む部隊の援軍到着時間を1分30秒以内に短縮、確率100%で対象全体に防御500%上昇、部隊内「姫」武将4体で部隊スキル発動率+70%、自軍内「姫」武将数依存の段階的防御上昇(16体以上30%・32体以上60%・64体以上90%)。本武将も職業「姫」として扱われる。装飾効果は参考データのみ。' },
+  { name:'お愛の方', no:'22003', cost: 5, initialSkill:'慈照眼', rarity:'傑', lv0Troops:8500, atkBase:0, atkGrowth:0, defBase:3500, defGrowth:0, tacticsBase:4000, tacticsGrowth:0, defaultBreakthrough:'天限突破', defaultStatAlloc:'攻撃振り', note:'ixanary.com(2026年7月確認)で登録。Cost5。攻撃力0。固有効果「慈照眼」: 配置拠点に「姫」職を含む部隊が加勢出陣する際、到着時間が2分超なら2分に短縮、防御戦闘時「姫」職武将に対してのみ防御力519%上昇。装飾効果は参考データのみ。' },
 
   /* ============ ユーザー厳選の極武将リスト(2026年7月)を一括登録・チャンク1/3(No.2091〜2509) ============
      ユーザー指定のカード番号144件をixanary.comで個別確認して登録。同名武将が多数存在するため、

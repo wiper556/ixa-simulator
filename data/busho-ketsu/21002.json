@@ -1,0 +1,33 @@
+{
+ "name": "千利休",
+ "no": "21002",
+ "furigana": "せんのりきゅう",
+ "illustrator": "塚本陽子",
+ "troop": "全攻防",
+ "sub": "",
+ "hasHado": false,
+ "effect": "攻撃 500%上昇+防御 500%上昇(「お茶アイコン」所持の自軍全武将のスキル発動率+5%)",
+ "imageFull": "assets/img/characters/no21002_full.png",
+ "imageChar": "assets/img/characters/no21002_char.png",
+ "atkBase": 30000,
+ "defBase": 30000,
+ "tacticsBase": 4500,
+ "lv0Troops": 7500,
+ "initialSkill": "抛天",
+ "skillDetail": "傑/効果固定 確率 100% 攻撃 500%上昇/対象:全\n模倣不可・重複不可\n①攻撃 500%上昇する\n②防御 500%上昇する\n③自軍の「お茶アイコン」を所持する全武将のスキル発動率が+5%される",
+ "alwaysEffects": [
+  "所属部隊の武将回復速度が100%上昇する",
+  "デッキ上武将回復速度が50%上昇する"
+ ],
+ "wikiOldestComment": "2022-10-04",
+ "wikiCommentCount": 8,
+ "chGuess": "24章",
+ "ch": "24章",
+ "chSource": "wikiOldestComment",
+ "notes": [
+  "2026-08-23 新規登録(青丸)。うぐさんのゲーム内スクリーンショットから tools/crop_card.py の基点計算でカード画像を切り抜き、カード画像・ixanary 埋め込みJSON・ixawiki カードページの3ソースで全項目を突き合わせた。統率は4値とも XXX、成長値は「-」(傑の共通仕様)。busho-ketsu のスキーマに cost・rankGrades・成長値・trTable・synthesisTable が無いのはこのため。",
+  "2026-08-23: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。**ixagno blog-entry-10740「傑【一覧表】」には章の記載が無い。なお 21001/22001=23章・21002/22002=24章・21003/22003=26章 と2系列が並走しており整合する。",
+  "2026-08-23: 20001〜20007 が持つ「本領と陣、出城が黄金造りになる」等の4行と「覇道」はこのカードには無い。カード本文の灰色行(常時効果)を alwaysEffects、赤字行(戦闘時効果)をskillDetail に分けた。hasHado は false。",
+  "2026-08-23: 指揮兵数はカード画像と ixanary がともに 7500。ixawiki のカードページだけ 7000 としているが、これは同ページ内の 21001 の値と同じで転記誤りとみられる。カード画像を採った。"
+ ]
+}

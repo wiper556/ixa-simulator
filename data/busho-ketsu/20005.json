@@ -7,8 +7,8 @@
  "sub": "不屈1",
  "hasHado": true,
  "effect": "武士の攻撃+3／攻撃1200%上昇+不屈1(部隊内に不屈1付与・自軍発動率+15%・卓越+10%)(覇道)",
- "imageFull": null,
- "imageChar": null,
+ "imageFull": "assets/img/characters/no20005_full.png",
+ "imageChar": "assets/img/characters/no20005_char.png",
  "atkBase": 65000,
  "defBase": 0,
  "tacticsBase": 6000,
@@ -29,6 +29,7 @@
  "notes": [
   "2026-08-22 新規登録(青丸)。ixanary カードページ+スキルページ・ixawiki カードページ+「Busho/武将カード一覧(傑)」・ixagno blog-entry-10740「傑【一覧表】」を突き合わせた。カード画像がリポジトリに無いため imageFull/imageChar は null(画像なし武将781体と同じ扱い)。統率は傑7体すべて XXX・成長値は「-」で、ixawiki が「最初から天限突破扱いであり、成長は一切しない/合成素材としても使用不可、スキル追加も不可能」と明記。busho-ketsu のスキーマにcost・rankGrades・成長値・trTable・synthesisTable・categoryLinks が無いのはこのため。",
   "2026-08-22: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。**",
-  "2026-08-22: defBase が 0 なのは誤りではない。ixanary 埋め込みJSON・ixawiki カードページ・ixawiki 傑一覧の3ソースがいずれも 0 で、攻撃専用カード。cost も同じ3ソースが 0 で一致しており、HINTS #2 の「ixanary のコスト0バグ」には当たらない(busho-ketsu は cost を保持しない)。"
+  "2026-08-22: defBase が 0 なのは誤りではない。ixanary 埋め込みJSON・ixawiki カードページ・ixawiki 傑一覧の3ソースがいずれも 0 で、攻撃専用カード。cost も同じ3ソースが 0 で一致しており、HINTS #2 の「ixanary のコスト0バグ」には当たらない(busho-ketsu は cost を保持しない)。",
+  "2026-08-23: うぐさんがゲーム内スクリーンショットを提供してくれたのでカード画像を切り抜き、imageFull/imageChar を null から実パスに変えた。あわせて 2026-08-22 の登録内容をカード画像と1行ずつ突き合わせ、alwaysEffects の4行・skillDetail の各効果・初期値・指揮兵数がすべて一致することを確認した。この3枚はゲーム内でグレースケール表示のカードだったため crop_card.py のハート(赤)検出が効かず、切り抜けた 20006 のハート周辺34x34を輝度テンプレートにして正規化相互相関で基点を求めた(相関 0.57〜0.81)。出力は規定どおりTYPE1=466x315 / TYPE2=224x315 で、目視でも枠が正しく収まっていることを確認済み。"
  ]
 }
