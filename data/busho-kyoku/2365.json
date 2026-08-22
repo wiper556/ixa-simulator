@@ -1,0 +1,111 @@
+{
+ "name": "豊臣秀長",
+ "no": "2365",
+ "ch": "27章",
+ "cost": 4.5,
+ "troop": "弓砲器攻防破",
+ "sub": "",
+ "effect": "攻撃 340%上昇+防御 340%上昇+破壊 110%上昇",
+ "furigana": "とよとみひでなが",
+ "illustrator": "小森ニコ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1080,
+ "atkGrowth": 42,
+ "defBase": 1080,
+ "defGrowth": 42,
+ "tacticsBase": 530,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 4260,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "日輪ノ守護者",
+ "skillDetail": "A/LV10 確率 65% 攻撃 340%上昇/対象:弓・砲・器\n①攻撃 340%上昇する\n②防御 340%上昇する\n③破壊 110%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓・砲・器　確率 65% / 攻撃 340%上昇+防御 340%上昇+破壊 110%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "日輪ノ守護者",
+   "rank": "A",
+   "afterSkill": "戦陣 吟詠",
+   "afterRank": "A",
+   "target": "弓・砲・器",
+   "rate": "65%",
+   "effectShort": "攻撃 340%上昇+防御 340%上昇+破壊 110%上昇",
+   "afterTarget": "全 卓越",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 340%上昇+防御 340%上昇+部隊内卓越追加確率+20%(模倣不可・特殊効果は自部隊内では重複不可)"
+  },
+  {
+   "slot": "B",
+   "skill": "日輪ノ守護者",
+   "rank": "A",
+   "afterSkill": "戦陣 吟詠",
+   "afterRank": "A",
+   "target": "弓・砲・器",
+   "rate": "65%",
+   "effectShort": "攻撃 340%上昇+防御 340%上昇+破壊 110%上昇",
+   "afterTarget": "全 卓越",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 340%上昇+防御 340%上昇+部隊内卓越追加確率+20%(模倣不可・特殊効果は自部隊内では重複不可)"
+  },
+  {
+   "slot": "C",
+   "skill": "木遁封魔",
+   "rank": "S",
+   "afterSkill": "遁世影武者",
+   "afterRank": "B",
+   "target": "部隊長",
+   "rate": "58%",
+   "effectShort": "部隊長の初期スキルを1.1倍に強化して模倣(TRなし)",
+   "afterTarget": "部隊長",
+   "afterRate": "50%",
+   "afterEffectShort": "部隊長の初期スキルを模倣(戦闘スキルのみ)"
+  },
+  {
+   "slot": "S1",
+   "skill": "戦陣 吟詠",
+   "rank": "A",
+   "afterSkill": "戦陣 吟詠",
+   "afterRank": "A",
+   "target": "全 卓越",
+   "rate": "100%",
+   "effectShort": "攻撃 340%上昇+防御 340%上昇+部隊内卓越追加確率+20%(模倣不可・特殊効果は自部隊内では重複不可)",
+   "afterEffectShort": "攻撃 340%上昇+防御 340%上昇+部隊内卓越追加確率+20%(模倣不可・特殊効果は自部隊内では重複不可)"
+  },
+  {
+   "slot": "S2",
+   "skill": "戦陣 吟詠",
+   "rank": "A",
+   "afterSkill": "戦陣 吟詠",
+   "afterRank": "A",
+   "target": "全 卓越",
+   "rate": "100%",
+   "effectShort": "攻撃 340%上昇+防御 340%上昇+部隊内卓越追加確率+20%(模倣不可・特殊効果は自部隊内では重複不可)",
+   "afterEffectShort": "攻撃 340%上昇+防御 340%上昇+部隊内卓越追加確率+20%(模倣不可・特殊効果は自部隊内では重複不可)"
+  }
+ ],
+ "notes": [
+  "2026-08-23 新規登録(青丸)。極/極PS の欠番を機械的に洗い出して見つかった15枚のうちの1枚。ixanary カードページ(埋め込みJSON)・ixanary スキルページ・ixawiki カードページ・ixagno 個別記事の4系統を突き合わせた。**カード画像が存在しない**ため imageFull/imageChar は null、rankGrades は ixawiki を最上位の根拠にした(HINTS #17 に従い ixanary の統率ラベルは補正して2ソース目)。D-01(カード画像優先)を満たせないので黄丸化には画像が要る。",
+  "2026-08-23: 鍛錬(TR)は存在しない。ixanary のカード/スキルページとも LV1/LV10 のみ、ixawiki にも鍛錬表なし、ixagno blog-entry-9844 にも不掲載。trTable は LV10 の1行だけ。",
+  "2026-08-23: synthesisTable の各行の効果文は、DB内に既にある同じ組み合わせの行から機械的に写した(転記ミスを防ぐため)。組み合わせ自体は ixanary スキルページ・ixawiki・ixagno の3ソースで確認済み。",
+  "2026-08-23: 章は ixagno blog-entry-9594「2024年3月追加の極武将」で一次確認。",
+  "2026-08-23: スキルの種別は ixanary が「攻防破」、ixawiki が「特」。効果文が攻撃・防御・破壊の3つを持つので ixanary が正(HINTS #4 の追加実例)。",
+  "2026-08-23: C枠 木遁封魔 の発動率は ixawiki が 50% としているが、ixanary スキルページは LV1/LV10 とも 58%、data/skill/木遁封魔.json も 58.0。**58% が正で ixawiki の誤り。**",
+  "2026-08-23: 名前は素の「豊臣秀長」。極グループに同名は無い(1298 は天【覇】、31298 はそのパラレル)。ixagno のタイトルも「豊臣秀長【極】」。"
+ ],
+ "reviewedOk": false,
+ "wikiOldestComment": "2024-03-04",
+ "wikiCommentCount": 8,
+ "chGuess": "27章"
+}

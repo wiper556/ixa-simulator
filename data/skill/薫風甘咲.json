@@ -17,6 +17,15 @@
    "no": "2587",
    "slot": "移植不可",
    "db": "kyoku"
+  },
+  {
+   "name": "東向殿",
+   "no": "2360",
+   "slot": "S1",
+   "db": "kyoku",
+   "note": [
+    "東向殿(2360)のsynthesisTable S1枠(2026-08-23)"
+   ]
   }
  ],
  "trTable": [
@@ -27,6 +36,18 @@
   }
  ],
  "notes": [
-  "A-3-9「武将自身の初期スキル(S以上)は無条件にページを作る」により2026-08-16に一括作成。内容は data/busho-kyoku-ps/2587.json の skillDetail / trTable からの転記で、新しい事実は持ち込んでいない。"
- ]
+  "A-3-9「武将自身の初期スキル(S以上)は無条件にページを作る」により2026-08-16に一括作成。内容は data/busho-kyoku-ps/2587.json の skillDetail / trTable からの転記で、新しい事実は持ち込んでいない。",
+  "2026-08-23: 迎陽聡姫 の移植後としてこのスキルが手に入るため grantedViaSkills に追加した(A-3-12/S-12)。",
+  "2026-08-23: ownHiddenCandidate が未設定だった。No.2360 東向殿の S1枠が薫風甘咲[S]→開闢ノ逆鉾[SS] なので、そこから確定できる(S-08)。"
+ ],
+ "grantedViaSkills": [
+  {
+   "skill": "迎陽聡姫",
+   "rank": "A"
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "開闢ノ逆鉾",
+  "rank": "SS"
+ }
 }
