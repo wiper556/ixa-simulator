@@ -1,0 +1,125 @@
+{
+ "name": "塚原卜伝（2）",
+ "no": "2362",
+ "ch": "27章",
+ "cost": 4.5,
+ "troop": "槍馬砲攻防",
+ "sub": "飛翔6",
+ "effect": "攻撃 180%上昇+防御 180%上昇(卓越:追加確率-30%で3倍・0%超のみ抽選・模倣不可)",
+ "furigana": "つかはらぼくでん",
+ "illustrator": "ジョージ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1900,
+ "atkGrowth": 140,
+ "defBase": 1900,
+ "defGrowth": 140,
+ "tacticsBase": 520,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 4970,
+ "rankGrades": {
+  "yari": "SS",
+  "yumi": "B",
+  "uma": "B",
+  "ki": "A"
+ },
+ "initialSkill": "霊妙秘剣",
+ "skillDetail": "A/LV10 確率 100% 攻撃 180%上昇/対象:槍・馬・砲　飛翔6　卓越\n模倣不可\n①攻撃 180%上昇する\n②防御 180%上昇する\n③卓越:追加確率-30%で攻防効果が3倍になる(卓越追加確率が0%を超える時のみ卓越抽選される)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・馬・砲 飛翔6 卓越　確率 100% / 攻撃 180%上昇+防御 180%上昇(卓越:追加確率-30%で3倍・0%超のみ抽選・模倣不可)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "霊妙秘剣",
+   "rank": "A",
+   "afterSkill": "戦陣 剣舞",
+   "afterRank": "A",
+   "target": "槍・馬・砲 飛翔6 卓越",
+   "rate": "100%",
+   "effectShort": "攻撃 180%上昇+防御 180%上昇(卓越:追加確率-30%で3倍・0%超のみ抽選・模倣不可)",
+   "afterTarget": "全 飛翔6",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 80%上昇+防御 80%上昇(卓越追加確率30%で攻防効果4倍)"
+  },
+  {
+   "slot": "B",
+   "skill": "霊妙秘剣",
+   "rank": "A",
+   "afterSkill": "戦陣 剣舞",
+   "afterRank": "A",
+   "target": "槍・馬・砲 飛翔6 卓越",
+   "rate": "100%",
+   "effectShort": "攻撃 180%上昇+防御 180%上昇(卓越:追加確率-30%で3倍・0%超のみ抽選・模倣不可)",
+   "afterTarget": "全 飛翔6",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 80%上昇+防御 80%上昇(卓越追加確率30%で攻防効果4倍)"
+  },
+  {
+   "slot": "C",
+   "skill": "終幕ノ断刀",
+   "rank": "A",
+   "afterSkill": "戦陣 剣舞",
+   "afterRank": "A",
+   "target": "槍・弓・砲",
+   "rate": "50%",
+   "effectShort": "攻撃 38%上昇+防御 38%上昇(卓越:追加確率30%で攻防効果が5倍)",
+   "afterTarget": "全 飛翔6",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 80%上昇+防御 80%上昇(卓越追加確率30%で攻防効果4倍)"
+  },
+  {
+   "slot": "S1",
+   "skill": "戦陣 剣舞",
+   "rank": "A",
+   "afterSkill": "仙剣破斬",
+   "afterRank": "SSS",
+   "target": "全 飛翔6",
+   "rate": "100%",
+   "effectShort": "攻撃 80%上昇+防御 80%上昇(卓越追加確率30%で攻防効果4倍)",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 115%上昇+防御 115%上昇(卓越 追加確率35%・4倍)"
+  },
+  {
+   "slot": "S2",
+   "skill": "鬼神ノ戦域",
+   "rank": "A",
+   "afterSkill": "戦陣 神楽",
+   "afterRank": "A",
+   "target": "槍・馬・騎 飛翔4 卓越",
+   "rate": "55%",
+   "effectShort": "攻撃 84%上昇(卓越:追加確率40%で1.5倍)",
+   "afterTarget": "全 飛翔4",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 77%上昇(卓越:追加確率30%で2倍)"
+  }
+ ],
+ "notes": [
+  "2026-08-23 新規登録(青丸)。極/極PS の欠番を機械的に洗い出して見つかった15枚のうちの1枚。ixanary カードページ(埋め込みJSON)・ixanary スキルページ・ixawiki カードページ・ixagno 個別記事の4系統を突き合わせた。**カード画像が存在しない**ため imageFull/imageChar は null、rankGrades は ixawiki を最上位の根拠にした(HINTS #17 に従い ixanary の統率ラベルは補正して2ソース目)。D-01(カード画像優先)を満たせないので黄丸化には画像が要る。",
+  "2026-08-23: 鍛錬(TR)は存在しない。ixanary のカード/スキルページとも LV1/LV10 のみ、ixawiki にも鍛錬表なし、ixagno blog-entry-9844 にも不掲載。trTable は LV10 の1行だけ。",
+  "2026-08-23: 章は ixagno blog-entry-9556「【27章】2月の新武将」の「【極】塚原卜伝、稲姫、堀秀政、毛利勝永」で一次確認。職業は剣豪(ixanary jobType「剣」)。",
+  "2026-08-23: 攻撃・防御の初期値1900/成長140は極として異常に高いが、ixanary・ixawiki の初期値表と「成長の歩み」表・ixagno の3ソースが一致しており誤りではない(剣豪カード)。",
+  "2026-08-23: 槍の SS は ixawiki と ixanary の2ソースだが、**カード画像が無いため HINTS #19 の X/XX/XXX の可能性を潰せていない**。画像が手に入ったら読み直すこと。",
+  "2026-08-23: 極グループの塚原卜伝は 2401(2018-04-02)（1）/ 2362(2024-02-19)（2）。既存の 2401 が既に（1）を持っており、ixagno のタイトル「塚原卜伝(2)【極】」で（2）が一次確認できた。",
+  "2026-08-23: 霊妙秘剣は攻防両対応の飛翔スキルだが skills-hishou-def.html にエントリが無い。この一覧は20件で7件は攻撃版と重複掲載されているので掲載漏れの疑いがあるが、C-01(一覧のエントリであること)に従い現状では def を張っていない。"
+ ],
+ "reviewedOk": false,
+ "wikiOldestComment": "2024-02-19",
+ "wikiCommentCount": 25,
+ "chGuess": "27章",
+ "categoryLinks": [
+  {
+   "href": "skills-takuetsu.html",
+   "label": "卓越スキル一覧を見る"
+  },
+  {
+   "href": "skills-hishou-atk.html",
+   "label": "飛翔スキル一覧(攻撃)を見る"
+  }
+ ]
+}

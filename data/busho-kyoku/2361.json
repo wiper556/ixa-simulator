@@ -1,0 +1,113 @@
+{
+ "name": "浅井亮政（4）",
+ "no": "2361",
+ "ch": "26章",
+ "cost": 4,
+ "troop": "槍弓砲防",
+ "sub": "",
+ "effect": "防御 (所持名声×2%・最大400%)上昇(防御戦闘で減少したHP÷2の名声を消費)",
+ "furigana": "あざいすけまさ",
+ "illustrator": "三好載克",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1040,
+ "atkGrowth": 32,
+ "defBase": 1120,
+ "defGrowth": 46,
+ "tacticsBase": 520,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3950,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "江虎謀牙",
+ "skillDetail": "A/LV10 確率 100% 対象:槍・弓・砲\n①防御が所持名声×2%(最大400%)上昇する(防御戦闘で減少したHP÷2の名声を消費し複数発動時は各部隊につき消費量が最も大きい一件のみ消費)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・弓・砲　確率 100% / 防御 (所持名声×2%・最大400%)%上昇(防御戦闘で減少したHP÷2の名声を消費・複数発動時は各部隊につき消費量が最も大きい一件のみ消費)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "江虎謀牙",
+   "rank": "A",
+   "afterSkill": "籠城の妙技",
+   "afterRank": "A",
+   "target": "槍・弓・砲",
+   "rate": "100%",
+   "effectShort": "防御 (所持名声×2%・最大400%)上昇(防御戦闘で減少したHP÷2の名声を消費)",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "防御 50%上昇(卓越:追加確率15%で防御効果が3倍)"
+  },
+  {
+   "slot": "B",
+   "skill": "江虎謀牙",
+   "rank": "A",
+   "afterSkill": "籠城の妙技",
+   "afterRank": "A",
+   "target": "槍・弓・砲",
+   "rate": "100%",
+   "effectShort": "防御 (所持名声×2%・最大400%)上昇(防御戦闘で減少したHP÷2の名声を消費)",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "防御 50%上昇(卓越:追加確率15%で防御効果が3倍)"
+  },
+  {
+   "slot": "C",
+   "skill": "不撓ノ仁将",
+   "rank": "A",
+   "afterSkill": "千兵ノ耀姫",
+   "afterRank": "A",
+   "target": "槍・砲・器",
+   "rate": "35%",
+   "effectShort": "防御 70%上昇+破壊 100%上昇((1.3×防御参加武将数)%を防御効果に加算・模倣不可)",
+   "afterTarget": "弓・馬・器・騎 兵站",
+   "afterRate": "50%",
+   "afterEffectShort": "防御 170%上昇+破壊 80%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "籠城の妙技",
+   "rank": "A",
+   "afterSkill": "三千世界神将",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "防御 50%上昇(卓越:追加確率15%で防御効果が3倍)",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "防御 120%上昇(本丸防御陣形時コスト消費-1・模倣不可)"
+  },
+  {
+   "slot": "S2",
+   "skill": "戦陣 龍馬",
+   "rank": "A",
+   "afterSkill": "茅纒之矟ノ煌",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "50%",
+   "effectShort": "防御 1%上昇(部隊ランクボーナス×10%を加算)",
+   "afterTarget": "全",
+   "afterRate": "60%",
+   "afterEffectShort": "防御 100%上昇 自部隊の武将ダメージ軽減3%(重複発動上限数4)"
+  }
+ ],
+ "notes": [
+  "2026-08-23 新規登録(青丸)。極/極PS の欠番を機械的に洗い出して見つかった15枚のうちの1枚。ixanary カードページ(埋め込みJSON)・ixanary スキルページ・ixawiki カードページ・ixagno 個別記事の4系統を突き合わせた。**カード画像が存在しない**ため imageFull/imageChar は null、rankGrades は ixawiki を最上位の根拠にした(HINTS #17 に従い ixanary の統率ラベルは補正して2ソース目)。D-01(カード画像優先)を満たせないので黄丸化には画像が要る。",
+  "2026-08-23: 鍛錬(TR)は存在しない。ixanary のカード/スキルページとも LV1/LV10 のみ、ixawiki にも鍛錬表なし、ixagno blog-entry-9844 にも不掲載。trTable は LV10 の1行だけ。",
+  "2026-08-23: 章は ixagno blog-entry-9481「2024年月1追加」「■26章の時点で戦力として見た場合」で一次確認できたため chSource は付けていない。",
+  "2026-08-23: 極グループ(極+極PSを1グループとして最古コメント日順)の浅井亮政は 2709(2012-08-02)無印 / 2201(2017-08-04)（2）/ 2761(2018-08-06)（3）/ 2361(2024-01-14)（4）で4枚目。既存3件の改名は不要。ixawiki の一覧は通常極とシクレ極でサブ表ごとに振り直しているため 2201 と 2761 を両方「浅井亮政(2)」と書いており衝突しているが、リポジトリは日付順で一本化済み。",
+  "2026-08-23: C枠 不撓ノ仁将 の「(1.3×防御参加武将数)」は未計算のまま。母数280なら364%だが、係数×N人の計算方針は全DB82体の判断待ちなので symbolic を維持した。"
+ ],
+ "reviewedOk": false,
+ "wikiOldestComment": "2024-01-14",
+ "wikiCommentCount": 5,
+ "chGuess": "26章"
+}

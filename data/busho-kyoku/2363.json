@@ -1,0 +1,112 @@
+{
+ "name": "稲姫",
+ "no": "2363",
+ "ch": "27章",
+ "cost": 3.5,
+ "troop": "弓砲器防",
+ "sub": "",
+ "effect": "防御 15%上昇(部隊の総コストで変動)",
+ "furigana": "いなひめ",
+ "illustrator": "綾乙",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1060,
+ "atkGrowth": 34,
+ "defBase": 1110,
+ "defGrowth": 44,
+ "tacticsBase": 540,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3730,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "S",
+  "uma": "B",
+  "ki": "A"
+ },
+ "initialSkill": "凜武艶姫",
+ "skillDetail": "A/LV10 確率 40% 防御上昇/対象:弓・砲・器\n①部隊総コストに応じて防御効果が変化する(LV10基準15%上昇)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓・砲・器　確率 40% / 防御 15%上昇(部隊総コストで変動)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "凜武艶姫",
+   "rank": "A",
+   "afterSkill": "戦陣 無縫",
+   "afterRank": "A",
+   "target": "弓・砲・器",
+   "rate": "40%",
+   "effectShort": "防御 15%上昇(部隊の総コストで変動)",
+   "afterTarget": "全",
+   "afterRate": "42%",
+   "afterEffectShort": "防御 (部隊総コスト依存)%上昇(総C25=351.03%)"
+  },
+  {
+   "slot": "B",
+   "skill": "凜武艶姫",
+   "rank": "A",
+   "afterSkill": "戦陣 無縫",
+   "afterRank": "A",
+   "target": "弓・砲・器",
+   "rate": "40%",
+   "effectShort": "防御 15%上昇(部隊の総コストで変動)",
+   "afterTarget": "全",
+   "afterRate": "42%",
+   "afterEffectShort": "防御 (部隊総コスト依存)%上昇(総C25=351.03%)"
+  },
+  {
+   "slot": "C",
+   "skill": "凜武艶姫",
+   "rank": "A",
+   "afterSkill": "戦陣 無縫",
+   "afterRank": "A",
+   "target": "弓・砲・器",
+   "rate": "40%",
+   "effectShort": "防御 15%上昇(部隊の総コストで変動)",
+   "afterTarget": "全",
+   "afterRate": "42%",
+   "afterEffectShort": "防御 (部隊総コスト依存)%上昇(総C25=351.03%)"
+  },
+  {
+   "slot": "S1",
+   "skill": "戦陣 無縫",
+   "rank": "A",
+   "afterSkill": "天衣無縫神戒",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "42%",
+   "effectShort": "防御 (部隊総コスト依存)%上昇(総C25=351.03%)",
+   "afterTarget": "全",
+   "afterRate": "50%",
+   "afterEffectShort": "防御 (部隊総コスト依存)%上昇(総C25=393.79%)"
+  },
+  {
+   "slot": "S2",
+   "skill": "天弓星宿陣",
+   "rank": "SS",
+   "afterSkill": "天弓星宿陣",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "60%",
+   "effectShort": "防御 (部隊総コスト依存)%上昇(総C25=328.02%)",
+   "afterEffectShort": "防御 (部隊総コスト依存)%上昇(総C25=328.02%)"
+  }
+ ],
+ "notes": [
+  "2026-08-23 新規登録(青丸)。極/極PS の欠番を機械的に洗い出して見つかった15枚のうちの1枚。ixanary カードページ(埋め込みJSON)・ixanary スキルページ・ixawiki カードページ・ixagno 個別記事の4系統を突き合わせた。**カード画像が存在しない**ため imageFull/imageChar は null、rankGrades は ixawiki を最上位の根拠にした(HINTS #17 に従い ixanary の統率ラベルは補正して2ソース目)。D-01(カード画像優先)を満たせないので黄丸化には画像が要る。",
+  "2026-08-23: 鍛錬(TR)は存在しない。ixanary のカード/スキルページとも LV1/LV10 のみ、ixawiki にも鍛錬表なし、ixagno blog-entry-9844 にも不掲載。trTable は LV10 の1行だけ。",
+  "2026-08-23: 章は ixagno blog-entry-9556「【27章】2月の新武将」で一次確認。",
+  "2026-08-23: **初期スキル 凜武艶姫 の「15%」は総コスト依存スキルの定数項 K で、HINTS #11 と同じ型の未訂正が残っている。** ixagno blog-entry-9570/9567 の実数から式 `15 + 20×(部隊総コスト/16)^6` を逆算でき(C26=383.25 / C27=476.8 / C28=589.45 / C29=724.08 の4点で一致。C30 だけ ixagno 側の誤植)、**総C25 = 306.04%** となる。HINTS #11 の一般式は乗数25だがこのスキルは乗数20。同じ K=15/乗数20 の 豊家ノ滅塞 も同値。ただし直すと data/skill/凜武艶姫.json と 2359 ほか8ファイル以上に波及するため、**新規1件だけ変えると逆に不揃いになる。既存の書き方に合わせ、判断待ちとして記録に留めた。**",
+  "2026-08-23: A/B/C の3枠すべてが自分の初期スキルという珍しい構成。ixanary・ixawiki・ixagno の3ソースが一致している。S1行の 351.03% / 393.79% は ixawiki のカードページに「※総C25＝防御：351.03％」「※総C25＝防御：393.79％」と直接書かれており一次確認できた。",
+  "2026-08-23: 極の稲姫は 2363 の1枚だけ(3223/3352 は特で別グループ)。ixagno のタイトルも「稲姫【極】」で番号なし。"
+ ],
+ "reviewedOk": false,
+ "wikiOldestComment": "2024-02-19",
+ "wikiCommentCount": 8,
+ "chGuess": "27章"
+}

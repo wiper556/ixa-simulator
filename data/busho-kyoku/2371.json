@@ -1,0 +1,115 @@
+{
+ "name": "筒井順慶",
+ "no": "2371",
+ "ch": "27章",
+ "cost": 4,
+ "troop": "弓砲器防",
+ "sub": "",
+ "effect": "防御 210%上昇((敵部隊移動速度÷1)%を加算)",
+ "furigana": "つついじゅんけい",
+ "illustrator": "三好載克",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1020,
+ "atkGrowth": 32,
+ "defBase": 1120,
+ "defGrowth": 46,
+ "tacticsBase": 530,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3960,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "風花讃武",
+ "skillDetail": "A/LV10 確率 40% 防御 210%上昇/対象:弓・砲・器\n①防御 210%上昇する\n②(敵部隊移動速度÷1)%を防御効果に加算する(最も大きい敵部隊移動速度を参照)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓・砲・器　確率 40% / 防御 210%上昇((敵部隊移動速度÷1)%を加算・最も大きい敵部隊移動速度を参照)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "風花讃武",
+   "rank": "A",
+   "afterSkill": "自在ノ用兵",
+   "afterRank": "A",
+   "target": "弓・砲・器",
+   "rate": "40%",
+   "effectShort": "防御 210%上昇((敵部隊移動速度÷1)%を加算・最も大きい敵部隊移動速度を参照)",
+   "afterTarget": "槍・弓・器・鉄",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 90%上昇+防御 90%上昇+部隊内「将」武将スキル発動率+10%(特殊効果は部隊内重複不可)"
+  },
+  {
+   "slot": "B",
+   "skill": "風花讃武",
+   "rank": "A",
+   "afterSkill": "自在ノ用兵",
+   "afterRank": "A",
+   "target": "弓・砲・器",
+   "rate": "40%",
+   "effectShort": "防御 210%上昇((敵部隊移動速度÷1)%を加算・最も大きい敵部隊移動速度を参照)",
+   "afterTarget": "槍・弓・器・鉄",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 90%上昇+防御 90%上昇+部隊内「将」武将スキル発動率+10%(特殊効果は部隊内重複不可)"
+  },
+  {
+   "slot": "C",
+   "skill": "自在ノ用兵",
+   "rank": "A",
+   "afterSkill": "戦陣 神楽",
+   "afterRank": "A",
+   "target": "槍・弓・器・鉄",
+   "rate": "100%",
+   "effectShort": "攻撃 90%上昇+防御 90%上昇+部隊内「将」武将スキル発動率+10%(特殊効果は部隊内重複不可)",
+   "afterTarget": "全 飛翔4",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 77%上昇(卓越:追加確率30%で2倍)"
+  },
+  {
+   "slot": "S1",
+   "skill": "自在ノ用兵",
+   "rank": "A",
+   "afterSkill": "戦陣 神楽",
+   "afterRank": "A",
+   "target": "槍・弓・器・鉄",
+   "rate": "100%",
+   "effectShort": "攻撃 90%上昇+防御 90%上昇+部隊内「将」武将スキル発動率+10%(特殊効果は部隊内重複不可)",
+   "afterTarget": "全 飛翔4",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 77%上昇(卓越:追加確率30%で2倍)"
+  },
+  {
+   "slot": "S2",
+   "skill": "戦陣 無縫",
+   "rank": "A",
+   "afterSkill": "天衣無縫神戒",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "42%",
+   "effectShort": "防御 (部隊総コスト依存)%上昇(総C25=351.03%)",
+   "afterTarget": "全",
+   "afterRate": "50%",
+   "afterEffectShort": "防御 (部隊総コスト依存)%上昇(総C25=393.79%)"
+  }
+ ],
+ "notes": [
+  "2026-08-23 新規登録(青丸)。極/極PS の欠番を機械的に洗い出して見つかった15枚のうちの1枚。ixanary カードページ(埋め込みJSON)・ixanary スキルページ・ixawiki カードページ・ixagno 個別記事の4系統を突き合わせた。**カード画像が存在しない**ため imageFull/imageChar は null、rankGrades は ixawiki を最上位の根拠にした(HINTS #17 に従い ixanary の統率ラベルは補正して2ソース目)。D-01(カード画像優先)を満たせないので黄丸化には画像が要る。",
+  "2026-08-23: 鍛錬(TR)は存在しない。ixanary のカード/スキルページとも LV1/LV10 のみ、ixawiki にも鍛錬表なし、ixagno blog-entry-9844 にも不掲載。trTable は LV10 の1行だけ。",
+  "2026-08-23: synthesisTable の各行の効果文は、DB内に既にある同じ組み合わせの行から機械的に写した(転記ミスを防ぐため)。組み合わせ自体は ixanary スキルページ・ixawiki・ixagno の3ソースで確認済み。",
+  "2026-08-23: 章は ixagno blog-entry-9733 +「2024年6月追加の新武将【27章】」(9726)で一次確認。",
+  "2026-08-23: 模倣不可の記載は無い。ixagno の実数例(速度500→710% / 1000→1210%)が「210+速度÷1」と一致する。",
+  "2026-08-23: **初期スキル 風花讃武 のページを新規作成した。**スキルページを作る条件の2番目(移植後の 自在ノ用兵 のページが既に存在する)に該当する。ランクA でも条件2に当たれば作る(HINTS #8)。",
+  "2026-08-23: A/B枠の afterEffectShort を data/skill/自在ノ用兵.json とNo.7020 斎藤朝信（4）の既存行から取り直した(最初に書いた値が別スキルの効果になっていた)。"
+ ],
+ "reviewedOk": false,
+ "wikiOldestComment": "2024-06-09",
+ "wikiCommentCount": 3,
+ "chGuess": "27章"
+}

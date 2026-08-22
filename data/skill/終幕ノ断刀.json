@@ -1,0 +1,36 @@
+{
+ "name": "終幕ノ断刀",
+ "rank": "A",
+ "baseRate": 50,
+ "target": "槍・弓・砲",
+ "effectSummary": "A/LV10 確率 50% 攻撃 38%上昇/対象:槍・弓・砲\n①攻撃 38%上昇する\n②防御 38%上昇する\n③卓越:追加確率30%で攻防効果が5倍になる",
+ "sourceCharacters": [
+  {
+   "name": "塚原卜伝（2）",
+   "no": "2362",
+   "slot": "C",
+   "db": "kyoku"
+  }
+ ],
+ "grantedViaSkills": [],
+ "ownHiddenCandidate": {
+  "skill": "戦陣 剣舞",
+  "rank": "A"
+ },
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・弓・砲　確率 50% / 攻撃 38%上昇+防御 38%上昇(卓越:追加確率30%で攻防効果が5倍)"
+  }
+ ],
+ "notes": [
+  "2026-08-23 新規作成。No.2362 の登録にあたり、スキルページを作る条件(1.ランクS以上 2.移植後のページが既に存在する 3.ユーザー指示)のうち2 に該当するため。"
+ ],
+ "categoryLinks": [
+  {
+   "href": "skills-takuetsu.html",
+   "label": "卓越スキル一覧を見る"
+  }
+ ]
+}

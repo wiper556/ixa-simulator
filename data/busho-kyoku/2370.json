@@ -1,0 +1,119 @@
+{
+ "name": "斎藤義龍（2）",
+ "no": "2370",
+ "ch": "27章",
+ "cost": 4.5,
+ "troop": "槍弓器攻",
+ "sub": "不屈1",
+ "effect": "攻撃 350%上昇(不屈1・攻撃戦闘敗北時、指揮兵が不屈の数値×1000まで回復)",
+ "furigana": "さいとうよしたつ",
+ "illustrator": "青空あおい",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1120,
+ "atkGrowth": 46,
+ "defBase": 1020,
+ "defGrowth": 32,
+ "tacticsBase": 520,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 4260,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "B",
+  "ki": "A"
+ },
+ "initialSkill": "破克閃剣",
+ "skillDetail": "A/LV10 確率 48% 攻撃 350%上昇/対象:槍・弓・器　不屈1\n①攻撃 350%上昇する\n②不屈1を持つ(攻撃戦闘敗北時指揮兵が不屈の数値×1000まで回復)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・弓・器 不屈1　確率 48% / 攻撃 350%上昇(攻撃戦闘敗北時に指揮兵が不屈の数値×1000まで回復)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "破克閃剣",
+   "rank": "A",
+   "afterSkill": "戦陣 剣舞",
+   "afterRank": "A",
+   "target": "槍・弓・器",
+   "rate": "48%",
+   "effectShort": "攻撃 350%上昇+不屈1",
+   "afterTarget": "全 飛翔6 卓越",
+   "afterRate": "100%",
+   "afterEffectShort": "飛翔6(攻撃 80%上昇+防御 80%上昇卓越追加確率30%で攻防効果が4倍)"
+  },
+  {
+   "slot": "B",
+   "skill": "破克閃剣",
+   "rank": "A",
+   "afterSkill": "戦陣 剣舞",
+   "afterRank": "A",
+   "target": "槍・弓・器",
+   "rate": "48%",
+   "effectShort": "攻撃 350%上昇+不屈1",
+   "afterTarget": "全 飛翔6 卓越",
+   "afterRate": "100%",
+   "afterEffectShort": "飛翔6(攻撃 80%上昇+防御 80%上昇卓越追加確率30%で攻防効果が4倍)"
+  },
+  {
+   "slot": "C",
+   "skill": "志在本貫",
+   "rank": "S",
+   "afterSkill": "活人剣",
+   "afterRank": "A",
+   "target": "全 不屈1",
+   "rate": "55%",
+   "effectShort": "攻撃 380%上昇(攻撃戦闘敗北時、指揮兵が不屈の数値×1000まで回復)",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 55%上昇+防御 55%上昇(卓越確率+7%加算・模倣不可・自軍内重複上限4)"
+  },
+  {
+   "slot": "S1",
+   "skill": "戦陣 剣舞",
+   "rank": "A",
+   "afterSkill": "仙剣破斬",
+   "afterRank": "SSS",
+   "target": "全 飛翔6 卓越",
+   "rate": "100%",
+   "effectShort": "飛翔6(攻撃 80%上昇+防御 80%上昇卓越追加確率30%で攻防効果が4倍)",
+   "afterTarget": "全 卓越",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 115%上昇+防御 115%上昇(卓越:追加確率35%で4倍)"
+  },
+  {
+   "slot": "S2",
+   "skill": "戦陣 吟詠",
+   "rank": "A",
+   "afterSkill": "戦陣 吟詠",
+   "afterRank": "A",
+   "target": "全 卓越",
+   "rate": "100%",
+   "effectShort": "攻撃 340%上昇+防御 340%上昇+部隊内卓越追加確率+20%(模倣不可・特殊効果は自部隊内では重複不可)",
+   "afterEffectShort": "攻撃 340%上昇+防御 340%上昇+部隊内卓越追加確率+20%(模倣不可・特殊効果は自部隊内では重複不可)"
+  }
+ ],
+ "notes": [
+  "2026-08-23 新規登録(青丸)。極/極PS の欠番を機械的に洗い出して見つかった15枚のうちの1枚。ixanary カードページ(埋め込みJSON)・ixanary スキルページ・ixawiki カードページ・ixagno 個別記事の4系統を突き合わせた。**カード画像が存在しない**ため imageFull/imageChar は null、rankGrades は ixawiki を最上位の根拠にした(HINTS #17 に従い ixanary の統率ラベルは補正して2ソース目)。D-01(カード画像優先)を満たせないので黄丸化には画像が要る。",
+  "2026-08-23: 鍛錬(TR)は存在しない。ixanary のカード/スキルページとも LV1/LV10 のみ、ixawiki にも鍛錬表なし、ixagno blog-entry-9844 にも不掲載。trTable は LV10 の1行だけ。",
+  "2026-08-23: synthesisTable の各行の効果文は、DB内に既にある同じ組み合わせの行から機械的に写した(転記ミスを防ぐため)。組み合わせ自体は ixanary スキルページ・ixawiki・ixagno の3ソースで確認済み。",
+  "2026-08-23: 章は ixagno blog-entry-9734「2024年6月追加の極武将」で一次確認。",
+  "2026-08-23: 名前の（2）は ixagno のタイトル「斎藤義龍(2)【極】」と ixawiki の関連武将欄「斎藤義龍(極1)」で一次確認。先行は 2146(2015-07-07)。",
+  "2026-08-23: categoryLinks は skills-fukutsu.html の1本。破克閃剣が同一覧の**エントリとして実在する**ことを確認済み(C-01を満たす)。data/skill/破克閃剣.json の categoryLinks とも一致。",
+  "2026-08-23: A・B枠の2次/3次を ixawiki は空欄にしているが、ixanary と ixagno 9734(「第一：破克閃剣→戦陣 剣舞」「第二：破克閃剣→戦陣 剣舞」)が一致し、data/skill/破克閃剣.json の ownHiddenCandidate(戦陣 剣舞)とも整合するのでixanary/ixagno を採った。"
+ ],
+ "reviewedOk": false,
+ "wikiOldestComment": "2024-06-09",
+ "wikiCommentCount": 3,
+ "chGuess": "27章",
+ "categoryLinks": [
+  {
+   "href": "skills-fukutsu.html",
+   "label": "不屈スキル一覧を見る"
+  }
+ ]
+}

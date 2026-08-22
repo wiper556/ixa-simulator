@@ -1,0 +1,112 @@
+{
+ "name": "東向殿",
+ "no": "2360",
+ "ch": "26章",
+ "cost": 4,
+ "troop": "全攻防",
+ "sub": "",
+ "effect": "攻撃 390%上昇+防御 390%上昇(職業「姫」の武将に対してのみ効果あり)",
+ "furigana": "ひがしむきどの",
+ "illustrator": "BISAI",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1100,
+ "atkGrowth": 40,
+ "defBase": 1100,
+ "defGrowth": 40,
+ "tacticsBase": 540,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3950,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "B",
+  "ki": "S"
+ },
+ "initialSkill": "迎陽聡姫",
+ "skillDetail": "A/LV10 確率 50% 攻撃 390%上昇/対象:全\n①攻撃 390%上昇する\n②防御 390%上昇する\n③職業「姫」の武将に対してのみ効果がある",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 50% / 攻撃 390%上昇+防御 390%上昇(職業「姫」の武将に対してのみ効果あり)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "迎陽聡姫",
+   "rank": "A",
+   "afterSkill": "薫風甘咲",
+   "afterRank": "S",
+   "target": "全",
+   "rate": "50%",
+   "effectShort": "攻撃 390%上昇+防御 390%上昇(職業「姫」の武将に対してのみ効果あり)",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 190%上昇+防御 190%上昇(全スキルの卓越確率+77%・模倣不可)"
+  },
+  {
+   "slot": "B",
+   "skill": "迎陽聡姫",
+   "rank": "A",
+   "afterSkill": "薫風甘咲",
+   "afterRank": "S",
+   "target": "全",
+   "rate": "50%",
+   "effectShort": "攻撃 390%上昇+防御 390%上昇(職業「姫」の武将に対してのみ効果あり)",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 190%上昇+防御 190%上昇(全スキルの卓越確率+77%・模倣不可)"
+  },
+  {
+   "slot": "C",
+   "skill": "黒鐘天鳴",
+   "rank": "A",
+   "afterSkill": "戦陣 吟詠",
+   "afterRank": "A",
+   "target": "槍・馬・器・鉄",
+   "rate": "40%",
+   "effectShort": "防御 200%上昇(敵軍部隊数×5%を防御効果に加算・模倣不可)",
+   "afterTarget": "全 卓越",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 340%上昇+防御 340%上昇+部隊内卓越追加確率+20%(模倣不可・特殊効果は自部隊内では重複不可)"
+  },
+  {
+   "slot": "S1",
+   "skill": "薫風甘咲",
+   "rank": "S",
+   "afterSkill": "開闢ノ逆鉾",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "攻撃 190%上昇+防御 190%上昇(全スキルの卓越確率+77%・模倣不可)",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 254%上昇(卓越追加確率30%で兵士被害15%減少)"
+  },
+  {
+   "slot": "S2",
+   "skill": "戦陣 無縫",
+   "rank": "A",
+   "afterSkill": "天衣無縫神戒",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "42%",
+   "effectShort": "防御 (部隊総コスト依存)%上昇(総C25=351.03%)",
+   "afterTarget": "全",
+   "afterRate": "50%",
+   "afterEffectShort": "防御 (部隊総コスト依存)%上昇(総C25=393.79%)"
+  }
+ ],
+ "notes": [
+  "2026-08-23 新規登録(青丸)。極/極PS の欠番を機械的に洗い出して見つかった15枚のうちの1枚。ixanary カードページ(埋め込みJSON)・ixanary スキルページ・ixawiki カードページ・ixagno 個別記事の4系統を突き合わせた。**カード画像が存在しない**(リポジトリにもスクショ倉庫にも無い)ためimageFull/imageChar は null、rankGrades は ixawiki を最上位の根拠にした(HINTS #17 に従い ixanary の統率ラベルは補正して2ソース目に使用)。D-01(カード画像優先)を満たせないので黄丸化には画像が要る。",
+  "2026-08-23: 鍛錬(TR)は存在しない。ixanary のカードページ・スキルページとも LV1/LV10 のみ、ixawiki にも鍛錬表なし、ixagno blog-entry-9844「鍛錬が解放されたスキル一覧」にも不掲載。直近の極登録と同じく trTable は LV10 の1行だけにしてある。",
+  "2026-08-23: 章は ixagno blog-entry-9482「2024年月1追加の極武将」「■26章の時点で戦力として見た場合」で一次確認できたため chSource は付けていない。",
+  "2026-08-23: スキルの種別は ixanary が「攻防」、ixawiki が「特」。HINTS #4 のとおり ixawiki の種別欄は当てにならず、同型スキル(職業「姫」限定の攻防上昇)の No.2556 ねね-復刻- が troop:\"全攻防\" なのでそれに合わせた。リポジトリの「特」は攻防の数値を持たない純粋特殊用。"
+ ],
+ "reviewedOk": false,
+ "wikiOldestComment": "2024-01-14",
+ "wikiCommentCount": 11,
+ "chGuess": "26章"
+}

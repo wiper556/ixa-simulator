@@ -1,0 +1,113 @@
+{
+ "name": "十河一存",
+ "no": "2364",
+ "ch": "27章",
+ "cost": 3,
+ "troop": "槍砲器防",
+ "sub": "",
+ "effect": "所領防御陣形配置時、この武将の編成コスト消費-1(模倣不可)",
+ "furigana": "そごうかずまさ",
+ "illustrator": "鹿角",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1040,
+ "atkGrowth": 32,
+ "defBase": 1120,
+ "defGrowth": 46,
+ "tacticsBase": 520,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3400,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "B",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "鬼十河",
+ "skillDetail": "A/LV10 確率 50% 防御 360%上昇/対象:槍・砲・器\n模倣不可\n①防御 360%上昇する\n②所領防御陣形に配置時この武将の編成コスト消費を-1する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・砲・器　確率 50% / 防御 360%上昇+所領防御陣形配置時コスト消費-1(模倣不可)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "鬼十河",
+   "rank": "A",
+   "afterSkill": "朝曇ノ明麗",
+   "afterRank": "S",
+   "target": "槍・砲・器",
+   "rate": "50%",
+   "effectShort": "防御 360%上昇+所領防御陣形配置時コスト消費-1(模倣不可)",
+   "afterTarget": "全",
+   "afterRate": "46%",
+   "afterEffectShort": "防御 290%上昇(所領防御陣形第4列配置時1.5倍+飛翔7取得・模倣不可、TRなし)"
+  },
+  {
+   "slot": "B",
+   "skill": "鬼十河",
+   "rank": "A",
+   "afterSkill": "朝曇ノ明麗",
+   "afterRank": "S",
+   "target": "槍・砲・器",
+   "rate": "50%",
+   "effectShort": "防御 360%上昇+所領防御陣形配置時コスト消費-1(模倣不可)",
+   "afterTarget": "全",
+   "afterRate": "46%",
+   "afterEffectShort": "防御 290%上昇(所領防御陣形第4列配置時1.5倍+飛翔7取得・模倣不可、TRなし)"
+  },
+  {
+   "slot": "C",
+   "skill": "鬼十河",
+   "rank": "A",
+   "afterSkill": "朝曇ノ明麗",
+   "afterRank": "S",
+   "target": "槍・砲・器",
+   "rate": "50%",
+   "effectShort": "防御 360%上昇+所領防御陣形配置時コスト消費-1(模倣不可)",
+   "afterTarget": "全",
+   "afterRate": "46%",
+   "afterEffectShort": "防御 290%上昇(所領防御陣形第4列配置時1.5倍+飛翔7取得・模倣不可、TRなし)"
+  },
+  {
+   "slot": "S1",
+   "skill": "朝曇ノ明麗",
+   "rank": "S",
+   "afterSkill": "海神ノ浮船",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "46%",
+   "effectShort": "防御 290%上昇(所領防御陣形第4列配置時1.5倍+飛翔7取得・模倣不可、TRなし)",
+   "afterTarget": "全 飛翔4",
+   "afterRate": "48%",
+   "afterEffectShort": "防御 (3.5×防御参加武将数)%上昇(敵軍飛翔持ち4人未満の時通常武将ダメージを受けない)"
+  },
+  {
+   "slot": "S2",
+   "skill": "戦陣 神屋",
+   "rank": "A",
+   "afterSkill": "神屋楯比売命",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "50%",
+   "effectShort": "攻撃 210%上昇+防御 210%上昇",
+   "afterTarget": "自身",
+   "afterRate": "70%",
+   "afterEffectShort": "自身が持つ初期スキルを模倣する(戦闘スキルのみ)"
+  }
+ ],
+ "notes": [
+  "2026-08-23 新規登録(青丸)。極/極PS の欠番を機械的に洗い出して見つかった15枚のうちの1枚。ixanary カードページ(埋め込みJSON)・ixanary スキルページ・ixawiki カードページ・ixagno 個別記事の4系統を突き合わせた。**カード画像が存在しない**ため imageFull/imageChar は null、rankGrades は ixawiki を最上位の根拠にした(HINTS #17 に従い ixanary の統率ラベルは補正して2ソース目)。D-01(カード画像優先)を満たせないので黄丸化には画像が要る。",
+  "2026-08-23: 鍛錬(TR)は存在しない。ixanary のカード/スキルページとも LV1/LV10 のみ、ixawiki にも鍛錬表なし、ixagno blog-entry-9844 にも不掲載。trTable は LV10 の1行だけ。",
+  "2026-08-23: synthesisTable の各行の効果文は、DB内に既にある同じ組み合わせの行から機械的に写した(転記ミスを防ぐため)。組み合わせ自体は ixanary スキルページ・ixawiki・ixagno の3ソースで確認済み。",
+  "2026-08-23: 章は ixagno blog-entry-9595「2024年3月追加の極武将」「■27章の時点で〜」で一次確認。",
+  "2026-08-23: categoryLinks を付けていない。鬼十河は「所領防御陣形配置時に編成コスト消費-1」でコスト減少(防御)の型そのものだが、**skills-cost-def.html にも skills-cost.html にもエントリが無い**(同型の 2615 駒形由美の華焰(-1.5) も同様に未掲載)。E-0 に従い一覧のエントリでない以上リンクは張らない。一覧側を整備するなら2617 帰蝶（4）・2618 ねね（2）と同じ2本を張るべき、として申し送る。"
+ ],
+ "reviewedOk": false,
+ "wikiOldestComment": "2024-03-06",
+ "wikiCommentCount": 11,
+ "chGuess": "27章"
+}
