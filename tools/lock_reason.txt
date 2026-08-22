@@ -74,3 +74,4 @@
 2026-08-19	-1	hooks:tools/gen_detail_pages.py	サイドバーのリンク文言を金くじシミュレーターに揃えるため gen_detail_pages.py のテンプレートを変更
 2026-08-19	-1	hooks:tools/gate_selftest.py	gate_selftestのpush経路のコミットにuser.name/emailを-cで渡す(CIに設定が無くskipになっていた)
 2026-08-20	-1	hooks:tools/gen_detail_pages.py	サイトを wiper556.github.io 直下へ移すため gen_detail_pages.py の BASE を変更
+2026-08-22	-1	hooks:docs/RULES.md	2026-08-22 ユーザーの指示でスキルページ作成条件を3条件(S以上/移植後のページが在る/ユーザー指示)に書き直した。旧S-01・S-02は条件3を索引に載せておらず条件2も読み方が割れていた。行の削除は無くS-01とS-02の文面を明確化しただけ。
