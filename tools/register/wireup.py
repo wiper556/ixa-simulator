@@ -227,6 +227,42 @@ def _close_bracket(s, i):
     raise ValueError("閉じ括弧が見つからない")
 
 
+def append_comma(head):
+    """配列の既存部分の末尾に区切りカンマを足す。
+
+    末尾行が `// ...` のコメントで終わっている場合、行末にそのまま付けると
+    カンマがコメントに飲まれて次の要素との区切りが消える(RULES.md T-06)。
+    2026-08-22、2596の追記で skills-higai.html と skills-takuetsu.html の
+    JSが丸ごと止まった。コメントがあればその手前にカンマを置く。
+    """
+    if not head:
+        return head
+    lines = head.split("\n")
+    last = lines[-1]
+    # 文字列リテラルの中の // は無視して、コードとしての行コメントを探す
+    in_str, quote, esc, pos, i = False, "", False, -1, 0
+    while i < len(last):
+        ch = last[i]
+        if esc:
+            esc = False
+        elif ch == "\\":
+            esc = True
+        elif in_str:
+            if ch == quote:
+                in_str = False
+        elif ch in "\"'":
+            in_str, quote = True, ch
+        elif ch == "/" and last[i + 1:i + 2] == "/":
+            pos = i
+            break
+        i += 1
+    if pos < 0:
+        lines[-1] = last + ","
+    else:
+        lines[-1] = last[:pos].rstrip() + ", " + last[pos:]
+    return "\n".join(lines)
+
+
 def sync_list_pages():
     master = {}
     for n in os.listdir(SKILLDIR):
@@ -304,7 +340,7 @@ def sync_list_pages():
                       % (page, nm, c.get("no"), c.get("slot")))
                 total += 1
             head = inner.rstrip()
-            joined = (head + ",\n" if head else "\n") + ",\n".join(rows) + "\n" + ind[:-2]
+            joined = (append_comma(head) + "\n" if head else "\n") + ",\n".join(rows) + "\n" + ind[:-2]
             text = text[:close_at - len(inner)] + joined + text[close_at:]
         if hits or touched:
             io.open(fp, "w", encoding="utf-8", newline="").write(text)
