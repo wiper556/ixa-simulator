@@ -1,0 +1,151 @@
+{
+ "name": "伊達政宗（7）",
+ "no": "31292",
+ "ch": "30章",
+ "cost": 4.5,
+ "troop": "槍馬器騎攻",
+ "sub": "",
+ "effect": "防御参加武将数依存／卓越発動時効果1.5倍",
+ "furigana": "だてまさむね",
+ "illustrator": "直良有祐",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1260,
+ "atkGrowth": 68,
+ "defBase": 1110,
+ "defGrowth": 41,
+ "tacticsBase": 690,
+ "tacticsGrowth": 3.5,
+ "lv0Troops": 4900,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "S",
+  "ki": "A"
+ },
+ "initialSkill": "龍気剣鳴",
+ "skillDetail": "S/TR6 確率 80% 攻撃上昇/対象:槍・馬・器・騎\n①(係数×防御参加武将数)%を攻撃効果に加算する(係数はTR6=7.5)\n②卓越:追加確率+50%で攻撃効果1.5倍",
+ "categoryLinks": [
+  {
+   "href": "skills-count-atk.html",
+   "label": "人数依存(攻)スキル一覧を見る"
+  },
+  {
+   "href": "skills-takuetsu.html",
+   "label": "卓越スキル一覧を見る"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "coefficient": "5.3",
+   "effect": "槍・馬・器・騎　確率 40% / 攻撃 5.3%×防御参加武将数(280人)=1484.0%(卓越追加確率-20%で1.5倍=2226.0%)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "coefficient": "5.4",
+   "effect": "槍・馬・器・騎　確率 40% / 攻撃 5.4%×防御参加武将数(280人)=1512.0%(卓越追加確率-15%で1.5倍=2268.0%)"
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "coefficient": "5.6",
+   "effect": "槍・馬・器・騎　確率 45% / 攻撃 5.6%×防御参加武将数(280人)=1568.0%(卓越追加確率-10%で1.5倍=2352.0%)"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "coefficient": "6",
+   "effect": "槍・馬・器・騎　確率 50% / 攻撃 6%×防御参加武将数(280人)=1680.0%(卓越追加確率1%で1.5倍=2520.0%)"
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "coefficient": "6.5",
+   "effect": "槍・馬・器・騎　確率 60% / 攻撃 6.5%×防御参加武将数(280人)=1820.0%(卓越追加確率10%で1.5倍=2730.0%)"
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "coefficient": "7",
+   "effect": "槍・馬・器・騎　確率 70% / 攻撃 7%×防御参加武将数(280人)=1960.0%(卓越追加確率20%で1.5倍=2940.0%)"
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "coefficient": "7.5",
+   "effect": "槍・馬・器・騎　確率 80% / 攻撃 7.5%×防御参加武将数(280人)=2100.0%(卓越追加確率50%で1.5倍=3150.0%)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "龍気剣鳴",
+   "rank": "S",
+   "afterSkill": "幻像鏡花",
+   "afterRank": "SSS",
+   "rate": "40%",
+   "target": "槍・馬・器・騎",
+   "effectShort": "攻撃 5.3%×防御参加武将数(280人)=1484.0%(卓越追加確率-20%で1.5倍=2226.0%)",
+   "afterTarget": "部隊長",
+   "afterRate": "56%",
+   "afterEffectShort": "部隊長の模倣可能な初期スキルを卓越:追加確率40%で1.35倍にして模倣"
+  },
+  {
+   "slot": "B",
+   "skill": "思金神ノ深謀",
+   "rank": "SS",
+   "afterSkill": "思金神ノ深謀",
+   "afterRank": "SS",
+   "rate": "60%",
+   "target": "部隊長",
+   "effectShort": "所属部隊の部隊長が持つ模倣可能な初期スキルを模倣する(卓越:追加確率35%で通常攻撃/防御効果1.3倍にして模倣)",
+   "afterEffectShort": "所属部隊の部隊長が持つ模倣可能な初期スキルを模倣する(卓越:追加確率35%で通常攻撃/防御効果1.3倍にして模倣)"
+  },
+  {
+   "slot": "C",
+   "skill": "幻像鏡花",
+   "rank": "SSS",
+   "afterSkill": "幻像鏡花",
+   "afterRank": "SSS",
+   "rate": "56%",
+   "target": "部隊長",
+   "effectShort": "部隊長の模倣可能な初期スキルを卓越:追加確率40%で1.35倍にして模倣",
+   "afterEffectShort": "部隊長の模倣可能な初期スキルを卓越:追加確率40%で1.35倍にして模倣"
+  },
+  {
+   "slot": "S1",
+   "skill": "幻像鏡花",
+   "rank": "SSS",
+   "afterSkill": "幻像鏡花",
+   "afterRank": "SSS",
+   "rate": "56%",
+   "target": "部隊長",
+   "effectShort": "部隊長の模倣可能な初期スキルを卓越:追加確率40%で1.35倍にして模倣",
+   "afterEffectShort": "部隊長の模倣可能な初期スキルを卓越:追加確率40%で1.35倍にして模倣"
+  },
+  {
+   "slot": "S2",
+   "skill": "開闢ノ逆鉾",
+   "rank": "SS",
+   "afterSkill": "開闢ノ逆鉾",
+   "afterRank": "SS",
+   "rate": "100%",
+   "target": "全",
+   "effectShort": "攻撃 254%上昇+卓越:攻撃戦闘時追加確率30%で自部隊の兵士被害15%減少(部隊内重複上限2・模倣不可)",
+   "afterEffectShort": "攻撃 254%上昇+卓越:攻撃戦闘時追加確率30%で自部隊の兵士被害15%減少(部隊内重複上限2・模倣不可)"
+  }
+ ],
+ "notes": [
+  "2026-08-23 新規登録(青丸)。天パラレル(No.30000+元No.)。元カード No.1292 と同じ武将の別バージョンで、**カードは最初からスキルが TR6 の状態で配られる**(鍛錬表の TR6 行の必要ポイントが「パラレル」なのはこのため)。そのため skillDetail と effect だけ TR6 の数値・文言にしてあり、それ以外の項目は親カードと同一。",
+  "2026-08-23: 親との全項目照合を ixanary カードページの埋め込みJSON・ixanary スキルページ(末尾スラッシュ付き・LV1〜TR6の全段と合成テーブル)・親カード画像 assets/img/characters/no1292_full.png の4隅バッジ拡大 の3系統で行い、name・furigana・ch・cost・troop・sub・illustrator・初期値・成長値・lv0Troops・rankGrades・initialSkill・trTable・synthesisTable・categoryLinks が**すべて親と一致**することを確認した。統率は HINTS #17 のとおり ixanary の yumi/kiba が入れ替わるのでカード画像を最上位の根拠にしている。絵師も HINTS #18 のとおり ixanary が「直良祐介」と誤るので画像を採った。",
+  "2026-08-23: **このカードのカード画像がまだ無い**(assets/img/characters/no31292_full.png が存在しない)。登録済みの 31310〜31321 は画像があるが 31286〜31309 は1枚も無く、切り出し元のスクリーンショットもリポジトリに無い。画像なし武将781体と同じく imageFull/imageChar は null にしてある。画像が手に入ったら crop_card.py で切り出してパスを入れること。",
+  "2026-08-23: ixawiki に BushoCard/31292 のページは無い(編集フォームが返る)。wikiOldestComment / wikiCommentCount は null。既存のパラレル12枚も全て null。",
+  "2026-08-23: 章は ixagno blog-entry-11077「パラレル天【一覧】」が31286〜31297 を30章・31298〜31309 を31章の節に並べており、親カードの ch とも一致する。"
+ ],
+ "reviewedOk": false,
+ "wikiOldestComment": null,
+ "wikiCommentCount": null
+}

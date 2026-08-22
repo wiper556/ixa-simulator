@@ -1,0 +1,132 @@
+{
+ "name": "小西行長（2）",
+ "no": "31308",
+ "ch": "31章",
+ "cost": 5,
+ "troop": "全防",
+ "sub": "",
+ "effect": "所有者より全体格付「戦果」が上位の城主が敵軍にいた場合防御効果3倍",
+ "furigana": "こにしゆきなが",
+ "illustrator": "直良有祐",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1050,
+ "atkGrowth": 42,
+ "defBase": 1270,
+ "defGrowth": 72,
+ "tacticsBase": 680,
+ "tacticsGrowth": 3.5,
+ "lv0Troops": 5100,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "文治ノ護剣",
+ "skillDetail": "S/TR6 確率 100% 防御 800%上昇/対象:全\n①防御 800%上昇する\n②所有者より全体格付「戦果」が上位の城主が敵軍にいた場合このスキルの防御効果が3倍となる(本丸防御陣形・所領防御陣形でのみ発動)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 48% / 防御 450%×3(戦果上位城主が敵にいる場合)=1350%"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": "全　確率 50% / 防御 475%×3(戦果上位城主が敵にいる場合)=1425%"
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": "全　確率 55% / 防御 510%×3(戦果上位城主が敵にいる場合)=1530%"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": "全　確率 60% / 防御 560%×3(戦果上位城主が敵にいる場合)=1680%"
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": "全　確率 65% / 防御 630%×3(戦果上位城主が敵にいる場合)=1890%"
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": "全　確率 70% / 防御 730%×3(戦果上位城主が敵にいる場合)=2190%"
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": "全　確率 100% / 防御 800%×3(戦果上位城主が敵にいる場合)=2400%"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "國才連豪",
+   "rank": "SS",
+   "afterSkill": "國才連豪",
+   "afterRank": "SS",
+   "rate": "50%",
+   "target": "全",
+   "effectShort": "防御 310%×國才連豪所持武将数(4人)=1240.0%上昇",
+   "afterEffectShort": "防御 310%×國才連豪所持武将数(4人)=1240.0%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "至天ノ御剣",
+   "rank": "SSS",
+   "afterSkill": "至天ノ御剣",
+   "afterRank": "SSS",
+   "rate": "70%",
+   "target": "自身",
+   "effectShort": "自身が持つ初期スキルを模倣する(卓越:追加確率30%で通常攻撃/防御効果1.3倍にして模倣)",
+   "afterEffectShort": "自身が持つ初期スキルを模倣する(卓越:追加確率30%で通常攻撃/防御効果1.3倍にして模倣)"
+  },
+  {
+   "slot": "C",
+   "skill": "文治ノ護剣",
+   "rank": "S",
+   "afterSkill": "文治ノ護剣",
+   "afterRank": "S",
+   "rate": "48%",
+   "target": "全",
+   "effectShort": "防御 450%上昇(格上敵城主戦で3倍・本丸防御陣形/所領防御陣形でのみ発動)",
+   "afterEffectShort": "防御 450%上昇(格上敵城主戦で3倍・本丸防御陣形/所領防御陣形でのみ発動)"
+  },
+  {
+   "slot": "S1",
+   "skill": "文治ノ護剣",
+   "rank": "S",
+   "afterSkill": "文治ノ護剣",
+   "afterRank": "S",
+   "rate": "48%",
+   "target": "全",
+   "effectShort": "防御 450%上昇(格上敵城主戦で3倍・本丸防御陣形/所領防御陣形でのみ発動)",
+   "afterEffectShort": "防御 450%上昇(格上敵城主戦で3倍・本丸防御陣形/所領防御陣形でのみ発動)"
+  },
+  {
+   "slot": "S2",
+   "skill": "龍驤虎躍",
+   "rank": "SS",
+   "afterSkill": "龍驤虎躍",
+   "afterRank": "SS",
+   "rate": "60%",
+   "target": "全",
+   "effectShort": "攻撃 810%上昇+防御 810%上昇(コスト-1・特殊効果は模倣不可)",
+   "afterEffectShort": "攻撃 810%上昇+防御 810%上昇(コスト-1・特殊効果は模倣不可)"
+  }
+ ],
+ "notes": [
+  "2026-08-23 新規登録(青丸)。天パラレル(No.30000+元No.)。元カード No.1308 と同じ武将の別バージョンで、**カードは最初からスキルが TR6 の状態で配られる**(鍛錬表の TR6 行の必要ポイントが「パラレル」なのはこのため)。そのため skillDetail と effect だけ TR6 の数値・文言にしてあり、それ以外の項目は親カードと同一。",
+  "2026-08-23: 親との全項目照合を ixanary カードページの埋め込みJSON・ixanary スキルページ(末尾スラッシュ付き・LV1〜TR6の全段と合成テーブル)・親カード画像 assets/img/characters/no1308_full.png の4隅バッジ拡大 の3系統で行い、name・furigana・ch・cost・troop・sub・illustrator・初期値・成長値・lv0Troops・rankGrades・initialSkill・trTable・synthesisTable・categoryLinks が**すべて親と一致**することを確認した。統率は HINTS #17 のとおり ixanary の yumi/kiba が入れ替わるのでカード画像を最上位の根拠にしている。絵師も HINTS #18 のとおり ixanary が「直良祐介」と誤るので画像を採った。",
+  "2026-08-23: **このカードのカード画像がまだ無い**(assets/img/characters/no31308_full.png が存在しない)。登録済みの 31310〜31321 は画像があるが 31286〜31309 は1枚も無く、切り出し元のスクリーンショットもリポジトリに無い。画像なし武将781体と同じく imageFull/imageChar は null にしてある。画像が手に入ったら crop_card.py で切り出してパスを入れること。",
+  "2026-08-23: ixawiki に BushoCard/31308 のページは無い(編集フォームが返る)。wikiOldestComment / wikiCommentCount は null。既存のパラレル12枚も全て null。",
+  "2026-08-23: 章は ixagno blog-entry-11077「パラレル天【一覧】」が31286〜31297 を30章・31298〜31309 を31章の節に並べており、親カードの ch とも一致する。"
+ ],
+ "reviewedOk": false,
+ "wikiOldestComment": null,
+ "wikiCommentCount": null
+}

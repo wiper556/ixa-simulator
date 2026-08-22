@@ -133,9 +133,16 @@
   "カード画像照合済み(2026-08-16再確認): 槍S/弓S/馬A/器A、攻1060/防1260/兵法660.0/指揮4230/コスト3も画像と一致。",
   "ixanary.com(/skills/火槍猛進/)生HTML照合(2026-08-16): LV1・LV10・TR1〜TR6の全段階が実在し、防御760(10.5以下)/800(11以下)/880(12以下)/970(13以下)/1090(14以下)/1180(15以下、確率65%)%が現在のtrTableと完全一致。",
   "synthesisTable: ixawiki.com(index.php?BushoCard/1305福島正則)は未記入のテンプレートのまま(A[]/B[]等)で情報が無いため使用不可。代わりにixanary.com(/skills/火槍猛進/、生HTML)とixagno.blog.fc2.com(blog-entry-10828)の2ソースで再確認し、A=龍驤虎躍[SS]/B=仙境解脱[SS]/C=天宇受売命[SSS]/S1=火槍猛進[S](自己参照)/S2=四天轟雷[SS](全枠自己参照)で完全一致。",
-  "data/skill/龍驤虎躍.json・仙境解脱.json・天宇受売命.json・火槍猛進.json・四天轟雷.jsonのsourceCharactersに1305が正しい枠で登録済みであることを確認(A-3-11)。"
+  "data/skill/龍驤虎躍.json・仙境解脱.json・天宇受売命.json・火槍猛進.json・四天轟雷.jsonのsourceCharactersに1305が正しい枠で登録済みであることを確認(A-3-11)。",
+  "2026-08-23: 天パラレル No.31305 を登録したので variants を張った。これまで variants を持つ武将は 1288 と 1303 の2件だけで、しかも両方ともリンク先のファイルが無いリンク切れだった(HINTS #25)。"
  ],
  "reviewedOk": false,
  "wikiOldestComment": null,
- "wikiCommentCount": 0
+ "wikiCommentCount": 0,
+ "variants": {
+  "parallel": {
+   "no": "31305",
+   "label": "パラレル"
+  }
+ }
 }

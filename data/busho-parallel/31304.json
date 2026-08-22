@@ -1,0 +1,138 @@
+{
+ "name": "真田昌幸（4）",
+ "no": "31304",
+ "ch": "31章",
+ "cost": 5,
+ "troop": "全防",
+ "sub": "無尽",
+ "effect": "追加・極限スキルの防御・破壊効果が2.6倍",
+ "furigana": "さなだまさゆき",
+ "illustrator": "直良有祐",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1090,
+ "atkGrowth": 49,
+ "defBase": 1270,
+ "defGrowth": 72,
+ "tacticsBase": 690,
+ "tacticsGrowth": 3.5,
+ "lv0Troops": 5110,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "S",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "不撓六文銭",
+ "skillDetail": "S/TR6 確率 100% 防御 1000%上昇/対象:全　無尽\n模倣不可\n①防御 1000%上昇する\n②無尽を持つため部隊消費コストを-0.5する\n③このスキルを持つ武将カードは追加・極限スキルの防御・破壊効果が2.6倍となる",
+ "categoryLinks": [
+  {
+   "href": "skills-mujin-def.html",
+   "label": "無尽(防御)スキル一覧を見る"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全 無尽　確率 100% / 防御 500%上昇(効果2倍)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": "全 無尽　確率 100% / 防御 540%上昇(効果2.1倍)"
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": "全 無尽　確率 100% / 防御 600%上昇(効果2.2倍)"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": "全 無尽　確率 100% / 防御 670%上昇(効果2.3倍)"
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": "全 無尽　確率 100% / 防御 750%上昇(効果2.4倍)"
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": "全 無尽　確率 100% / 防御 840%上昇(効果2.5倍)"
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": "全 無尽　確率 100% / 防御 1000%上昇(効果2.6倍)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "國才連豪",
+   "rank": "SS",
+   "afterSkill": "國才連豪",
+   "afterRank": "SS",
+   "rate": "50%",
+   "target": "全",
+   "effectShort": "防御 310%×國才連豪所持武将数(4人)=1240.0%上昇",
+   "afterEffectShort": "防御 310%×國才連豪所持武将数(4人)=1240.0%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "千里必勝ノ神算",
+   "rank": "SS",
+   "afterSkill": "千里必勝ノ神算",
+   "afterRank": "SS",
+   "rate": "42%",
+   "target": "全 覇道",
+   "effectShort": "攻撃 1010%上昇+防御 1010%上昇+破壊 150%上昇",
+   "afterEffectShort": "攻撃 1010%上昇+防御 1010%上昇+破壊 150%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "布刀玉ノ策",
+   "rank": "SS",
+   "afterSkill": "布刀玉ノ策",
+   "afterRank": "SS",
+   "rate": "100%",
+   "target": "全 卓越",
+   "effectShort": "攻撃 940%上昇+防御 940%上昇(自軍全武将の卓越確率+20%・模倣不可・自軍内重複上限2)",
+   "afterEffectShort": "攻撃 940%上昇+防御 940%上昇(自軍全武将の卓越確率+20%・模倣不可・自軍内重複上限2)"
+  },
+  {
+   "slot": "S1",
+   "skill": "幻像鏡花",
+   "rank": "SSS",
+   "afterSkill": "幻像鏡花",
+   "afterRank": "SSS",
+   "rate": "56%",
+   "target": "部隊長",
+   "effectShort": "部隊長の模倣可能な初期スキルを卓越:追加確率40%で1.35倍にして模倣",
+   "afterEffectShort": "部隊長の模倣可能な初期スキルを卓越:追加確率40%で1.35倍にして模倣"
+  },
+  {
+   "slot": "S2",
+   "skill": "龍驤虎躍",
+   "rank": "SS",
+   "afterSkill": "龍驤虎躍",
+   "afterRank": "SS",
+   "rate": "60%",
+   "target": "全",
+   "effectShort": "攻撃 810%上昇+防御 810%上昇(コスト-1・特殊効果は模倣不可)",
+   "afterEffectShort": "攻撃 810%上昇+防御 810%上昇(コスト-1・特殊効果は模倣不可)"
+  }
+ ],
+ "notes": [
+  "2026-08-23 新規登録(青丸)。天パラレル(No.30000+元No.)。元カード No.1304 と同じ武将の別バージョンで、**カードは最初からスキルが TR6 の状態で配られる**(鍛錬表の TR6 行の必要ポイントが「パラレル」なのはこのため)。そのため skillDetail と effect だけ TR6 の数値・文言にしてあり、それ以外の項目は親カードと同一。",
+  "2026-08-23: 親との全項目照合を ixanary カードページの埋め込みJSON・ixanary スキルページ(末尾スラッシュ付き・LV1〜TR6の全段と合成テーブル)・親カード画像 assets/img/characters/no1304_full.png の4隅バッジ拡大 の3系統で行い、name・furigana・ch・cost・troop・sub・illustrator・初期値・成長値・lv0Troops・rankGrades・initialSkill・trTable・synthesisTable・categoryLinks が**すべて親と一致**することを確認した。統率は HINTS #17 のとおり ixanary の yumi/kiba が入れ替わるのでカード画像を最上位の根拠にしている。絵師も HINTS #18 のとおり ixanary が「直良祐介」と誤るので画像を採った。",
+  "2026-08-23: **このカードのカード画像がまだ無い**(assets/img/characters/no31304_full.png が存在しない)。登録済みの 31310〜31321 は画像があるが 31286〜31309 は1枚も無く、切り出し元のスクリーンショットもリポジトリに無い。画像なし武将781体と同じく imageFull/imageChar は null にしてある。画像が手に入ったら crop_card.py で切り出してパスを入れること。",
+  "2026-08-23: ixawiki に BushoCard/31304 のページは無い(編集フォームが返る)。wikiOldestComment / wikiCommentCount は null。既存のパラレル12枚も全て null。",
+  "2026-08-23: 章は ixagno blog-entry-11077「パラレル天【一覧】」が31286〜31297 を30章・31298〜31309 を31章の節に並べており、親カードの ch とも一致する。"
+ ],
+ "reviewedOk": false,
+ "wikiOldestComment": null,
+ "wikiCommentCount": null
+}

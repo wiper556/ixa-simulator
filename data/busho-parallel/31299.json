@@ -1,0 +1,138 @@
+{
+ "name": "石田三成（7）【覇】",
+ "no": "31299",
+ "ch": "31章",
+ "cost": 6,
+ "troop": "全防",
+ "sub": "無尽",
+ "effect": "部隊内の全極限スキルに無尽付与／無尽を持つスキルの防御効果2.1倍",
+ "furigana": "いしだみつなり",
+ "illustrator": "直良有祐",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1230,
+ "atkGrowth": 66,
+ "defBase": 1310,
+ "defGrowth": 82,
+ "tacticsBase": 850,
+ "tacticsGrowth": 4,
+ "lv0Troops": 5450,
+ "rankGrades": {
+  "yari": "SS",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "X"
+ },
+ "initialSkill": "義戦ノ旗手",
+ "skillDetail": "SSS/TR6 確率 100% 防御 1010%上昇/対象:全　無尽\n模倣不可\n部隊長時限定\n①部隊内の全極限スキルに無尽を付与する\n②自部隊内の無尽を持つスキルの防御効果を2.1倍する\n③自部隊内の各小隊長の無尽を持たない初期スキルは防御戦闘時に無効化され保護不可",
+ "categoryLinks": [
+  {
+   "href": "skills-mujin-def.html",
+   "label": "無尽(防御)スキル一覧を見る"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全 無尽　確率 100% / 全防 360%"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": "全 無尽　確率 100% / 全防 400%"
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": "全 無尽　確率 100% / 全防 475%"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": "全 無尽　確率 100% / 全防 585%"
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": "全 無尽　確率 100% / 全防 730%"
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": "全 無尽　確率 100% / 全防 920%"
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": "全 無尽　確率 100% / 全防 1010%"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "経津主神ノ剣",
+   "rank": "SSS",
+   "afterSkill": "経津主神ノ剣",
+   "afterRank": "SSS",
+   "rate": "45%",
+   "target": "自身",
+   "effectShort": "自身の初期スキルを1.35倍にして模倣",
+   "afterEffectShort": "自身の初期スキルを1.35倍にして模倣"
+  },
+  {
+   "slot": "B",
+   "skill": "従魔絶神",
+   "rank": "SSS",
+   "afterSkill": "従魔絶神",
+   "afterRank": "SSS",
+   "rate": "43%",
+   "target": "全 飛翔13",
+   "effectShort": "防御 9.4%×防御参加武将数(280人)=2632.0%",
+   "afterEffectShort": "防御 9.4%×防御参加武将数(280人)=2632.0%"
+  },
+  {
+   "slot": "C",
+   "skill": "梵天浄界",
+   "rank": "SSS",
+   "afterSkill": "梵天浄界",
+   "afterRank": "SSS",
+   "rate": "60%",
+   "target": "全",
+   "effectShort": "防御 50%上昇+破壊 150%上昇(10×防御参加武将数(280人)=2800%を防御効果に加算)",
+   "afterEffectShort": "防御 50%上昇+破壊 150%上昇(10×防御参加武将数(280人)=2800%を防御効果に加算)"
+  },
+  {
+   "slot": "S1",
+   "skill": "岳王ノ加護",
+   "rank": "SS",
+   "afterSkill": "岳王ノ加護",
+   "afterRank": "SS",
+   "rate": "50%",
+   "target": "全 無尽",
+   "effectShort": "防御 10%×防御参加武将数(280人)=2800.0%",
+   "afterEffectShort": "防御 10%×防御参加武将数(280人)=2800.0%"
+  },
+  {
+   "slot": "S2",
+   "skill": "國才連豪",
+   "rank": "SS",
+   "afterSkill": "國才連豪",
+   "afterRank": "SS",
+   "rate": "50%",
+   "target": "全",
+   "effectShort": "防御 310%×國才連豪所持武将数(4人)=1240.0%上昇",
+   "afterEffectShort": "防御 310%×國才連豪所持武将数(4人)=1240.0%上昇"
+  }
+ ],
+ "notes": [
+  "2026-08-23 新規登録(青丸)。天パラレル(No.30000+元No.)。元カード No.1299 と同じ武将の別バージョンで、**カードは最初からスキルが TR6 の状態で配られる**(鍛錬表の TR6 行の必要ポイントが「パラレル」なのはこのため)。そのため skillDetail と effect だけ TR6 の数値・文言にしてあり、それ以外の項目は親カードと同一。",
+  "2026-08-23: 親との全項目照合を ixanary カードページの埋め込みJSON・ixanary スキルページ(末尾スラッシュ付き・LV1〜TR6の全段と合成テーブル)・親カード画像 assets/img/characters/no1299_full.png の4隅バッジ拡大 の3系統で行い、name・furigana・ch・cost・troop・sub・illustrator・初期値・成長値・lv0Troops・rankGrades・initialSkill・trTable・synthesisTable・categoryLinks が**すべて親と一致**することを確認した。統率は HINTS #17 のとおり ixanary の yumi/kiba が入れ替わるのでカード画像を最上位の根拠にしている。絵師も HINTS #18 のとおり ixanary が「直良祐介」と誤るので画像を採った。",
+  "2026-08-23: **このカードのカード画像がまだ無い**(assets/img/characters/no31299_full.png が存在しない)。登録済みの 31310〜31321 は画像があるが 31286〜31309 は1枚も無く、切り出し元のスクリーンショットもリポジトリに無い。画像なし武将781体と同じく imageFull/imageChar は null にしてある。画像が手に入ったら crop_card.py で切り出してパスを入れること。",
+  "2026-08-23: ixawiki に BushoCard/31299 のページは無い(編集フォームが返る)。wikiOldestComment / wikiCommentCount は null。既存のパラレル12枚も全て null。",
+  "2026-08-23: 章は ixagno blog-entry-11077「パラレル天【一覧】」が31286〜31297 を30章・31298〜31309 を31章の節に並べており、親カードの ch とも一致する。"
+ ],
+ "reviewedOk": false,
+ "wikiOldestComment": null,
+ "wikiCommentCount": null
+}

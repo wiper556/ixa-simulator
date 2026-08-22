@@ -129,9 +129,16 @@
   "別ソースで確定させた。スキル名・作家名は公式ニュース(スクウェア・エニックス発表)、",
   "コスト/指揮兵数/成長値は ixagno.blog.fc2.com【天】武将一覧、",
   "基礎値・兵科適性・LV10効果・鍛錬表・合成テーブルは同サイトの個別記事(blog-entry-11146)。",
-  "2026-08-16再検証(黄丸化): ixanary.com/cards/1314/が閲覧可能(200)になっており、ixagno単独からixanary併用の2ソース体制に移行できた。カード画像の4隅バッジ再ズーム(槍A/弓A/馬A/器SS)・コスト5/指揮5150/成長値攻47防73兵法3.0がixanaryと完全一致(rankGradesもixanary側入れ替わりなく一致)。synthesisTableはixanary.com/skills/鳳凰ノ幻華/の生HTML合成テーブルでA〜S2全5枠(全て自己参照)が既存登録と完全一致。sourceCharacters逆引き(A-3-11): 覇天金剛/千里必勝ノ神算/梵天浄界/國才連豪/鳳凰ノ幻華(自身)の各data/skill/*.jsonに1314が反映済みを確認。"
+  "2026-08-16再検証(黄丸化): ixanary.com/cards/1314/が閲覧可能(200)になっており、ixagno単独からixanary併用の2ソース体制に移行できた。カード画像の4隅バッジ再ズーム(槍A/弓A/馬A/器SS)・コスト5/指揮5150/成長値攻47防73兵法3.0がixanaryと完全一致(rankGradesもixanary側入れ替わりなく一致)。synthesisTableはixanary.com/skills/鳳凰ノ幻華/の生HTML合成テーブルでA〜S2全5枠(全て自己参照)が既存登録と完全一致。sourceCharacters逆引き(A-3-11): 覇天金剛/千里必勝ノ神算/梵天浄界/國才連豪/鳳凰ノ幻華(自身)の各data/skill/*.jsonに1314が反映済みを確認。",
+  "2026-08-23: 天パラレル No.31314 は 2026-08-16 に登録済みだったが親側に variants が無かった。31286〜31309 の24枚を登録するのに合わせて張り、実在する親子36組すべてに variants が入った状態にした(HINTS #25 の解消)。"
  ],
  "reviewedOk": false,
  "wikiOldestComment": null,
- "wikiCommentCount": null
+ "wikiCommentCount": null,
+ "variants": {
+  "parallel": {
+   "no": "31314",
+   "label": "パラレル"
+  }
+ }
 }

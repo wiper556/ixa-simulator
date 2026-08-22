@@ -1,0 +1,236 @@
+{
+ "name": "立花宗茂（4）",
+ "no": "31307",
+ "ch": "31章",
+ "cost": 4,
+ "troop": "槍馬器騎攻速",
+ "sub": "",
+ "effect": "部隊移動速度依存",
+ "furigana": "たちばなむねしげ",
+ "illustrator": "直良有祐",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1250,
+ "atkGrowth": 72,
+ "defBase": 1110,
+ "defGrowth": 52,
+ "tacticsBase": 660,
+ "tacticsGrowth": 3,
+ "lv0Troops": 4700,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "S",
+  "ki": "A"
+ },
+ "initialSkill": "飛将ノ武略",
+ "skillDetail": "S/TR6 確率 100% 速度 270%上昇/対象:槍・馬・器・騎\n①攻撃が部隊移動速度÷22×100%上昇する(攻撃シミュレーターで自動計算に対応済み)\n②速度 270%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・馬・器・騎　確率 100% / 速度 200%上昇(攻撃は速度÷32×100%)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": "槍・馬・器・騎　確率 100% / 速度 210%上昇(攻撃は速度÷31×100%)"
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": "槍・馬・器・騎　確率 100% / 速度 220%上昇(攻撃は速度÷30×100%)"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": "槍・馬・器・騎　確率 100% / 速度 230%上昇(攻撃は速度÷28×100%)"
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": "槍・馬・器・騎　確率 100% / 速度 240%上昇(攻撃は速度÷26×100%)"
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": "槍・馬・器・騎　確率 100% / 速度 250%上昇(攻撃は速度÷24×100%)"
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": "槍・馬・器・騎　確率 100% / 速度 270%上昇(攻撃は速度÷22×100%)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "星神闘覇",
+   "rank": "SS",
+   "afterSkill": "星神闘覇",
+   "afterRank": "SS",
+   "rate": "100%",
+   "target": "全 飛翔15",
+   "effectShort": "攻撃 740%上昇+速度 200%上昇",
+   "afterEffectShort": "攻撃 740%上昇+速度 200%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "刹那無影",
+   "rank": "SS",
+   "afterSkill": "刹那無影",
+   "afterRank": "SS",
+   "rate": "55%",
+   "target": "部隊長",
+   "effectShort": "所属部隊の部隊長が持つ初期スキルを通常攻撃/防御効果1.15倍にして模倣する(戦闘スキルのみ)+速度 200%上昇(確率100%)",
+   "afterEffectShort": "所属部隊の部隊長が持つ初期スキルを通常攻撃/防御効果1.15倍にして模倣する(戦闘スキルのみ)+速度 200%上昇(確率100%)"
+  },
+  {
+   "slot": "C",
+   "skill": "虎賁統帥",
+   "rank": "SS",
+   "afterSkill": "虎賁統帥",
+   "afterRank": "SS",
+   "rate": "100%",
+   "target": "全 撤退 覇道",
+   "effectShort": "攻撃 1130%上昇+速度 200%上昇",
+   "afterEffectShort": "攻撃 1130%上昇+速度 200%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "飛将ノ武略",
+   "rank": "S",
+   "afterSkill": "飛将ノ武略",
+   "afterRank": "S",
+   "rate": "100%",
+   "target": "槍・馬・器・騎",
+   "effectShort": "速度 200%上昇(攻撃は速度÷32×100%)",
+   "afterEffectShort": "速度 200%上昇(攻撃は速度÷32×100%)"
+  },
+  {
+   "slot": "S2",
+   "skill": "照闇騎行",
+   "rank": "SS",
+   "afterSkill": "照闇騎行",
+   "afterRank": "SS",
+   "rate": "100%",
+   "target": "全",
+   "effectShort": "攻撃 540%上昇+速度 250%上昇",
+   "afterEffectShort": "攻撃 540%上昇+速度 250%上昇"
+  }
+ ],
+ "speedAtkLookupTable": {
+  "speeds": [
+   500,
+   600,
+   700,
+   800,
+   900,
+   1000,
+   1100
+  ],
+  "rows": [
+   {
+    "level": "LV10",
+    "divisor": 32,
+    "values": [
+     1562.5,
+     1875,
+     2187.5,
+     2500,
+     2812.5,
+     3125,
+     3437.5
+    ]
+   },
+   {
+    "level": "TR1",
+    "divisor": 31,
+    "values": [
+     1612.9,
+     1935.5,
+     2258.1,
+     2580.6,
+     2903.2,
+     3225.8,
+     3548.4
+    ]
+   },
+   {
+    "level": "TR2",
+    "divisor": 30,
+    "values": [
+     1666.7,
+     2000,
+     2333.3,
+     2666.7,
+     3000,
+     3333.3,
+     3666.7
+    ]
+   },
+   {
+    "level": "TR3",
+    "divisor": 28,
+    "values": [
+     1785.7,
+     2142.9,
+     2500,
+     2857.1,
+     3214.3,
+     3571.4,
+     3928.6
+    ]
+   },
+   {
+    "level": "TR4",
+    "divisor": 26,
+    "values": [
+     1923.1,
+     2307.7,
+     2692.3,
+     3076.9,
+     3461.5,
+     3846.2,
+     4230.8
+    ]
+   },
+   {
+    "level": "TR5",
+    "divisor": 24,
+    "values": [
+     2083.3,
+     2500,
+     2916.7,
+     3333.3,
+     3750,
+     4166.7,
+     4583.3
+    ]
+   },
+   {
+    "level": "TR6",
+    "divisor": 22,
+    "values": [
+     2272.7,
+     2727.3,
+     3181.8,
+     3636.4,
+     4090.9,
+     4545.5,
+     5000
+    ]
+   }
+  ]
+ },
+ "notes": [
+  "2026-08-23 新規登録(青丸)。天パラレル(No.30000+元No.)。元カード No.1307 と同じ武将の別バージョンで、**カードは最初からスキルが TR6 の状態で配られる**(鍛錬表の TR6 行の必要ポイントが「パラレル」なのはこのため)。そのため skillDetail と effect だけ TR6 の数値・文言にしてあり、それ以外の項目は親カードと同一。",
+  "2026-08-23: 親との全項目照合を ixanary カードページの埋め込みJSON・ixanary スキルページ(末尾スラッシュ付き・LV1〜TR6の全段と合成テーブル)・親カード画像 assets/img/characters/no1307_full.png の4隅バッジ拡大 の3系統で行い、name・furigana・ch・cost・troop・sub・illustrator・初期値・成長値・lv0Troops・rankGrades・initialSkill・trTable・synthesisTable・categoryLinks が**すべて親と一致**することを確認した。統率は HINTS #17 のとおり ixanary の yumi/kiba が入れ替わるのでカード画像を最上位の根拠にしている。絵師も HINTS #18 のとおり ixanary が「直良祐介」と誤るので画像を採った。",
+  "2026-08-23: **このカードのカード画像がまだ無い**(assets/img/characters/no31307_full.png が存在しない)。登録済みの 31310〜31321 は画像があるが 31286〜31309 は1枚も無く、切り出し元のスクリーンショットもリポジトリに無い。画像なし武将781体と同じく imageFull/imageChar は null にしてある。画像が手に入ったら crop_card.py で切り出してパスを入れること。",
+  "2026-08-23: ixawiki に BushoCard/31307 のページは無い(編集フォームが返る)。wikiOldestComment / wikiCommentCount は null。既存のパラレル12枚も全て null。",
+  "2026-08-23: 章は ixagno blog-entry-11077「パラレル天【一覧】」が31286〜31297 を30章・31298〜31309 を31章の節に並べており、親カードの ch とも一致する。"
+ ],
+ "reviewedOk": false,
+ "wikiOldestComment": null,
+ "wikiCommentCount": null
+}
