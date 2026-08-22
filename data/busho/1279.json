@@ -60,7 +60,7 @@
   },
   {
    "level": "TR5",
-   "points": "最大鍛錬",
+   "points": "200",
    "coefficient": "13",
    "effect": "槍・弓・砲・器　確率 58% / 防御 13%×防御参加武将数(280人)=3640.0%上昇(防御参加武将数120人以下の場合は1.5倍)"
   }
@@ -132,7 +132,8 @@
   "ixanary.com(/skills/魔導禁鎖/)生HTML照合(2026-08-16): LV1〜TR5の全段階が実在し、TR1=8.7%/TR2=9.2%/TR3=9.9%/TR4=11%/TR5=13%が現在のtrTableと一致。旧ノートの「TR1〜TR4は実在しない」は誤りだったため削除。",
   "synthesisTable: ixanary.com(/skills/魔導禁鎖/、生HTML)とixawiki.com(index.php?BushoCard/1279荒木村重、生HTML、EUC-JP)の2ソースでA/B/C/S1/S2の1次候補・2次候補S1を突き合わせ、A=魔導禁鎖[S]→月煌侵蝕[SSS]、B=同、C=八幡神ノ威光(自己参照)、S1=月煌侵蝕(自己参照)、S2=永世ノ天隻(自己参照)で完全一致を確認。八幡神ノ威光のランクはixanary=SSS/ixawiki=SSと食い違ったが、サイト側で既に14件の武将がSSSで登録済み(data/skill/八幡神ノ威光.json)かつixanaryとも一致するためSSSを採用(ixawiki側の表記ゆれと判断)。",
   "data/skill/魔導禁鎖.json・月煌侵蝕.json・永世ノ天隻.json・八幡神ノ威光.jsonのsourceCharactersに1279が正しい枠で登録済みであることを確認(A-3-11)。",
-  "既知の未解決事項(このJSON外、修正権限外): skills-count-def.html(独自複製配列)の魔導禁鎖行が旧表記「移植不可」のまま残っており、data/skill/魔導禁鎖.jsonのA・B表記と食い違っている。担当範囲外のため報告のみ。"
+  "既知の未解決事項(このJSON外、修正権限外): skills-count-def.html(独自複製配列)の魔導禁鎖行が旧表記「移植不可」のまま残っており、data/skill/魔導禁鎖.jsonのA・B表記と食い違っている。担当範囲外のため報告のみ。",
+  "2026-08-22 検証: trTable TR5 の points が独自表記「最大鍛錬」だった(A-4-15)。鍛錬の必要ポイントは 10/40/90/150/200 が標準で、ixagno の各武将記事(1278=10205 / 1279=10204 / 1281=10202)がTR5=200P と明記している。他の武将は既に「200」で統一されており、これらが取り残しだった。"
  ],
  "reviewedOk": false,
  "wikiOldestComment": "2025-02-07",
