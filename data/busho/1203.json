@@ -11,7 +11,7 @@
  "imageFull": "assets/img/characters/no1203_full.png",
  "imageChar": "assets/img/characters/no1203_char.png",
  "atkBase": 1280,
- "atkGrowth": 75,
+ "atkGrowth": 74,
  "defBase": 1240,
  "defGrowth": 50,
  "tacticsBase": 750,
@@ -102,7 +102,8 @@
   "A-3-12確認: A/S2枠はskillとafterSkillが異なるため直接列挙せず、無窮天斥陣.json/八重言代主神.jsonのgrantedViaSkillsに元スキル(八重言代主神/天焉相克)を記載する方式が既に正しく使われていることを確認。",
   "sourceCharacters逆引き確認(A-3-11): 赤凰幻舞(移植不可)・八重言代主神(A)・神屋楯比売命(B)・高津姫神(C)・摩利支天ノ法(S1)・天焉相克(S2)いずれもdata/skill/配下に1203が記載済み(2026-08-16)。",
   "天焉相克.jsonの「TR1〜TR5は未確認」注記をixanary(skills/天焉相克)・ixawiki(Busho/武将スキル)の2ソースでLV1/LV10のみでTR無しと確認し「TRなし」に訂正した(2026-08-16、A-1-6の追加確認)。",
-  "章(23章)は情報源に記載が無く未確認のまま(ixanary/ixawikiともchapter情報を確認できず)。"
+  "章(23章)は情報源に記載が無く未確認のまま(ixanary/ixawikiともchapter情報を確認できず)。",
+  "2026-08-22 検証: atkGrowth を 75 から 74 に訂正。ixawiki(カードページと武将カード一覧の2箇所)とixagno がいずれも74で、75と書いているのは ixanary だけ。ixawikiの天限突破の値も74で内部整合する。ゲーム画面での確認は取れていないので、機会があれば裏を取りたい。"
  ],
  "reviewedOk": false,
  "wikiOldestComment": "2022-02-04",
