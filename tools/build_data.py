@@ -490,6 +490,126 @@ def replace_chapters(dry=False):
     return 0
 
 
+# ============ シミュレーターの絞り込み(レアリティ / スキルランク) ============
+# 攻撃シミュレーターの候補一覧を「レアリティ・章・スキルランク」で絞るための元データ。
+#
+# **レアリティはカードNo.から推測しない。** 攻撃シミュレーター側には No. の桁と頭で
+# 4種(傑/天/極/特)に分ける関数があるが、パラレル天・シークレットプラチナ極・
+# シークレット特・上・序は No. だけでは分けられない。正本はディレクトリなので、
+# ディレクトリ名をそのまま書き出す。
+#
+# スキルランクは skillDetail の先頭("S/LV10 …" の S)から取る。
+# 傑カードだけ "傑/効果固定" という独自の書き方なので SSS 扱いにする(うぐさん判断)。
+FILTER_BEGIN = ("// BUILD:filterMeta:start ここから下は tools/build_data.py が "
+                "data/busho*/ と data/skill/ から生成しています。直接編集しないこと")
+FILTER_END = "// BUILD:filterMeta:end"
+
+RARITY_KEY = {
+    "busho": "ten",
+    "busho-parallel": "parallelTen",
+    "busho-ketsu": "ketsu",
+    "busho-kyoku": "kyoku",
+    "busho-kyoku-ps": "kyokuPs",
+    "busho-toku": "toku",
+    "busho-toku-s": "tokuS",
+    "busho-ue": "ue",
+    "busho-jo": "jo",
+}
+RANK_WORDS = ("SSS", "SS", "S", "A", "B", "C", "D", "E", "F")
+
+
+def head_rank(detail):
+    """skillDetail の先頭のランクを返す。傑は SSS 扱い。分からなければ None。"""
+    s = str(detail or "")
+    if s.startswith("傑/"):
+        return "SSS"
+    for r in RANK_WORDS:
+        if s.startswith(r + "/"):
+            return r
+    return None
+
+
+def collect_filter_meta():
+    rarity, grank, srank = {}, {}, {}
+    for full in chapter_dirs():
+        key = RARITY_KEY.get(os.path.basename(full))
+        if not key:
+            continue
+        for fn in sorted(os.listdir(full)):
+            if not fn.endswith(".json"):
+                continue
+            with io.open(os.path.join(full, fn), encoding="utf-8") as f:
+                e = json.load(f)
+            no = str(e.get("no") or "")
+            if not no:
+                continue
+            rarity[no] = key
+            r = head_rank(e.get("skillDetail"))
+            if r:
+                grank[no] = r
+                if e.get("initialSkill"):
+                    srank.setdefault(str(e["initialSkill"]), r)
+            # 合成候補に出るスキルのランクも拾う(候補にしか出ないスキルがあるため)
+            for row in e.get("synthesisTable") or []:
+                for nm, rk in ((row.get("skill"), row.get("rank")),
+                               (row.get("afterSkill"), row.get("afterRank"))):
+                    if nm and rk in RANK_WORDS:
+                        srank.setdefault(str(nm), rk)
+    # 正本のスキルページがあるものはそちらを優先する
+    sdir = os.path.join(ROOT, "data", "skill")
+    for fn in sorted(os.listdir(sdir)) if os.path.isdir(sdir) else []:
+        if not fn.endswith(".json"):
+            continue
+        with io.open(os.path.join(sdir, fn), encoding="utf-8") as f:
+            e = json.load(f)
+        if e.get("name") and e.get("rank") in RANK_WORDS:
+            srank[str(e["name"])] = e["rank"]
+    return rarity, grank, srank
+
+
+def build_filter_block(rarity, grank, srank):
+    def obj(name, d, quote_val, sortkey):
+        lines = ["const %s = {" % name]
+        row = "  "
+        for k in sorted(d, key=sortkey):
+            v = ('"%s"' % d[k]) if quote_val else str(d[k])
+            piece = '"%s":%s, ' % (k.replace('"', '\\"'), v)
+            if len(row) + len(piece) > WRAP:
+                lines.append(row.rstrip())
+                row = "  "
+            row += piece
+        if row.strip():
+            lines.append(row.rstrip().rstrip(","))
+        lines.append("};")
+        return lines
+
+    out = [FILTER_BEGIN]
+    out += obj("generalRarityDB", rarity, True, lambda k: (len(k), k))
+    out += obj("generalSkillRankDB", grank, True, lambda k: (len(k), k))
+    out += obj("skillRankDB", srank, True, lambda k: k)
+    out.append(FILTER_END)
+    return "\n".join(out)
+
+
+def replace_filter_meta(dry=False):
+    p = os.path.join(ROOT, CHAPTERS_FILE)
+    text = io.open(p, encoding="utf-8", newline="").read()
+    lo, hi = text.find(FILTER_BEGIN), text.find(FILTER_END)
+    if lo < 0 or hi < 0:
+        print("  %-24s [停止] BUILD:filterMeta のマーカーが無い" % CHAPTERS_FILE)
+        return 1
+    rarity, grank, srank = collect_filter_meta()
+    new = text[:lo] + build_filter_block(rarity, grank, srank) + text[hi + len(FILTER_END):]
+    same = new == text
+    print("  %-24s 武将%d/ランク%d/スキル%d件 %s (絞り込み)"
+          % (CHAPTERS_FILE, len(rarity), len(grank), len(srank),
+             "変化なし" if same else "書き換え"))
+    if not same and not dry:
+        io.open(p, "w", encoding="utf-8", newline="").write(new)
+        return 1
+    return 0
+
+
 # 攻撃シミュレーターに防御スキルの武将を、防御シミュレーターに攻撃スキルの武将を
 # 出さないための仕分け。軸は武将DBの troop(「全攻」「槍砲器防」「全攻防」「全攻破」など)
 # から取る。「全」「特」「部隊長」「合流」のように軸を持たない書き方もあるので、
@@ -568,6 +688,7 @@ def main(dry=False):
             io.open(p, "w", encoding="utf-8", newline="").write(new)
             changed += 1
     changed += replace_chapters(dry)
+    changed += replace_filter_meta(dry)
     changed += replace_axis(dry)
     changed += replace_card_art(dry)
     changed += replace_rate_table(dry)
