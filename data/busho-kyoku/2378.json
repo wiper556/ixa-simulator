@@ -98,7 +98,7 @@
    "afterRank": "SSS",
    "target": "槍・馬・器・騎 飛翔6 卓越",
    "rate": "100%",
-   "effectShort": "攻撃 210%上昇(卓越:追加確率1%で3倍+飛翔16)(TRなし)",
+   "effectShort": "攻撃 210%上昇(卓越:追加確率5%で3倍+飛翔16)(TRなし)",
    "afterTarget": "全 卓越",
    "afterRate": "100%",
    "afterEffectShort": "攻撃 115%上昇+防御 115%上昇(卓越:追加確率35%で4倍)"
@@ -138,7 +138,8 @@
   "sourceCharacters逆引き確認(A-3-11): 国一丸.jsonのsourceCharactersに遠藤基信(2378)がslot Cで既に登録済み一致。仙剣破斬.jsonのgrantedViaSkillsにも国一丸[S]が既に登録済み。龍門ノ賢者・志半ノ矛楯はA以下かつafterSkillがS+ページを持たないためページ無しが正しい(該当なし)。",
   "trTable: ixanary生HTML(skills/龍門ノ賢者)でLV10/TR1(195%)/TR2(210%)のみ存在しTR3以降は無いことを確認。",
   "章は情報源(ixanary.com/ixawiki.com)に記載が無く未確認のまま(既存も「未確認」表記で変更なし)。",
-  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。",
+  "2026-08-22 検証: 国一丸の卓越追加確率をLV1値の1%からLV10値の5%に訂正。data/skill/国一丸.json は2026-08-16に5%へ訂正済みで、2378.jsonだけ訂正が届いていなかった。"
  ],
  "reviewedOk": false,
  "wikiOldestComment": "2024-10-02",

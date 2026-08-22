@@ -67,8 +67,8 @@
    "afterRank": "SS",
    "rate": "60%",
    "target": "全",
-   "effectShort": "防御 60.04%上昇(部隊総コストで変動)",
-   "afterEffectShort": "防御 60.04%上昇(部隊総コストで変動)"
+   "effectShort": "防御 (部隊総コスト依存)%上昇(総C25=423.75%)",
+   "afterEffectShort": "防御 (部隊総コスト依存)%上昇(総C25=423.75%)"
   },
   {
    "slot": "S1",
@@ -95,7 +95,8 @@
  ],
  "notes": [
   "45do.info(生HTML skiladd_wrap)+ameameixa.com(スキルテーブル)の2ソース照合済み、両者一致(この武将自身の初期スキルは候補にA枠のみ含まれる)",
-  "2026-08-16黄丸化再検証: ixanary.com(cards/1232, skills/鬼神ノ軍法)+ixawiki.com(BushoCard/1232島津義弘)の2ソースでsynthesisTable5枠(A鬼神ノ軍法S→四天轟雷SS/B黄泉醜女ノ屍兵SS→天地黎明SSS/C国津破邪ノ楯SS自己参照/S1四天轟雷SS自己参照/S2星宿劫ノ法壁SS自己参照)が完全一致。基礎値(1080/1230/690、成長+46/+65/+3.5、指揮4550)・rankGrades(槍A/弓A/馬S/器S、カード画像バッジ拡大確認)もixanary生HTMLと一致。data/skill/鬼神ノ軍法(自己ページ)・黄泉醜女ノ屍兵・国津破邪ノ楯・四天轟雷・星宿劫ノ法壁の各JSONのsourceCharactersに1232が正しいslotで既に記載済み。skillDetail及び関連スキルJSON2件(鬼神ノ軍法・星宿劫ノ法壁)の「TR1〜TR5未確認」を追加ソースで確認、いずれもixanary+ixawikiの2ソースでTR区分自体が存在しないことを確認し表記を削除。"
+  "2026-08-16黄丸化再検証: ixanary.com(cards/1232, skills/鬼神ノ軍法)+ixawiki.com(BushoCard/1232島津義弘)の2ソースでsynthesisTable5枠(A鬼神ノ軍法S→四天轟雷SS/B黄泉醜女ノ屍兵SS→天地黎明SSS/C国津破邪ノ楯SS自己参照/S1四天轟雷SS自己参照/S2星宿劫ノ法壁SS自己参照)が完全一致。基礎値(1080/1230/690、成長+46/+65/+3.5、指揮4550)・rankGrades(槍A/弓A/馬S/器S、カード画像バッジ拡大確認)もixanary生HTMLと一致。data/skill/鬼神ノ軍法(自己ページ)・黄泉醜女ノ屍兵・国津破邪ノ楯・四天轟雷・星宿劫ノ法壁の各JSONのsourceCharactersに1232が正しいslotで既に記載済み。skillDetail及び関連スキルJSON2件(鬼神ノ軍法・星宿劫ノ法壁)の「TR1〜TR5未確認」を追加ソースで確認、いずれもixanary+ixawikiの2ソースでTR区分自体が存在しないことを確認し表記を削除。",
+  "2026-08-22 検証: 合成候補の天衣無縫神戒/国津破邪ノ楯の効果量が、どの情報源にも無い数字(30.02%/60.04%)だったので、ixawikiの「総C25＝393.79%/423.75%」に訂正した(スキル側から一括)。"
  ],
  "reviewedOk": false,
  "wikiOldestComment": "2023-02-03",

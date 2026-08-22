@@ -106,7 +106,7 @@
    "effectShort": "防御 80%上昇(部隊総コストで変動)",
    "afterTarget": "全",
    "afterRate": "50%",
-   "afterEffectShort": "防御 30.02%上昇(部隊総コストで変動)"
+   "afterEffectShort": "防御 (部隊総コスト依存)%上昇(総C25=393.79%)"
   },
   {
    "slot": "S1",
@@ -119,7 +119,7 @@
    "effectShort": "防御 80%上昇(部隊総コストで変動)",
    "afterTarget": "全",
    "afterRate": "50%",
-   "afterEffectShort": "防御 30.02%上昇(部隊総コストで変動)"
+   "afterEffectShort": "防御 (部隊総コスト依存)%上昇(総C25=393.79%)"
   },
   {
    "slot": "S2",
@@ -144,7 +144,8 @@
   "1次: A・B=我こそ絶対悪よ(A、自己参照)/C・S1=戦陣 無縫(A)/S2=戦陣 破軍(A)。2次: A・B→戦陣 無縫(A)/C・S1→天衣無縫神戒(SS)/S2→天穿神滅(SS)。",
   "我こそ絶対悪よ(初期スキル、A)は移植後合成候補が既存ページを持つ戦陣 無縫のためA-3-9の例外でページ新規作成。戦陣 無縫のgrantedViaSkillsに追加、C・S1(skill=戦陣 無縫そのもの)は戦陣 無縫.jsonのsourceCharactersに直接追加、S2(skill=戦陣 破軍そのもの)は戦陣 破軍.jsonのsourceCharactersに直接追加。天衣無縫神戒・天穿神滅には既存のgrantedViaSkillsで辿れるため2595を直接列挙しない。",
   "章は情報源(ixanary/ixawiki/ixagno)に記載が無いため未確認。",
-  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。",
+  "2026-08-22 検証: 合成候補の天衣無縫神戒/国津破邪ノ楯の効果量が、どの情報源にも無い数字(30.02%/60.04%)だったので、ixawikiの「総C25＝393.79%/423.75%」に訂正した(スキル側から一括)。"
  ],
  "reviewedOk": true,
  "wikiOldestComment": "2024-03-04",
