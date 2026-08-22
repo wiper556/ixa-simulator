@@ -79,7 +79,7 @@
    "effectShort": "攻撃 82%上昇 卓越 追加確率40%で攻撃効果が2.5倍",
    "afterTarget": "全",
    "afterRate": "70%",
-   "afterEffectShort": "攻撃 45%上昇(部隊総コストで変動、TRなし)"
+   "afterEffectShort": "攻撃 (部隊総コスト依存)%上昇(総C25=408.79%)(TRなし)"
   },
   {
    "slot": "S2",
@@ -104,7 +104,8 @@
   "data/skill/火之迦具土神.jsonでslot Bのみ記載だったのをB・Cに訂正(自身の行がB・C両方とも火之迦具土神のため)。data/skill/猛火ノ追撃.json・遠呂智ノ閃光.jsonでS1枠/S2枠に直接列挙されていたが、各行のskillは紅蓮ノ刹/戦陣 神楽でありafterSkillが列挙先だったため、A-3-12に従い削除(既存のgrantedViaSkills経由で辿れる)。data/skill/天穿神滅.jsonのA枠直接列挙も同様に削除済み(No.2820の検証時にまとめて対応)。",
   "初期スキル国友筒(S)は自身のsynthesisTableに自己参照が無いため、A-3-9に従いdata/skill/国友筒.jsonを新規作成しslot:移植不可で記載。characters-kyoku-ps.htmlのKP_LINKED_SKILLS配列(手動管理ファイル)への追加は担当範囲外のため未実施、申し送り。",
   "章は情報源(ixanary/ixawiki)に記載が無いため未確認。ixagno.blog.fc2.comで「国友善兵衛」を検索(13件)したが、章番号を明記した記事は見つからなかった。",
-  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。",
+  "2026-08-22 検証: 猛火ノ追撃の「45%上昇」はどの情報源にも無い数字だった。ixanaryはこの種のスキルに数値を出さず(X%表記)、ixawiki BushoCard/1249三郎信長 のB候補欄が部隊総コスト別の実数表を持ち「C25.0 = 408.79%」と明記している(45%は同ページに0件)。天衣無縫神戒・国津破邪ノ楯・天弓星宿陣・旌旗翳天ノ覇陣と同じ家族の取りこぼしで5件目。"
  ],
  "reviewedOk": true,
  "wikiOldestComment": "2023-05-08",

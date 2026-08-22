@@ -4,7 +4,7 @@
  "reviewedOk": false,
  "ch": "28章",
  "cost": 4.5,
- "troop": "槍馬器防",
+ "troop": "槍馬器焙防",
  "sub": "兵站",
  "effect": "防御参加武将数依存で防御・破壊上昇",
  "furigana": "がもううじさと",
@@ -135,7 +135,8 @@
  ],
  "notes": [
   "synthesisTable: 45do.info生HTML(skiladd_wrap)+ixanary.com(天限ノ麒麟スキルページの合成テーブル)で2ソース一致確認済み(2026-08-02)",
-  "黄丸化検証(2026-08-16): カード画像no1265_full.pngの4隅バッジ(槍A/馬A/弓S/器S)を確認し一致。TR1〜TR5の値はixanary.com(skills/天限ノ麒麟)の鍛錬表と全行完全一致(TR6無し)。synthesisTableはixanary.com+ixawiki.com(BushoCard/1265蒲生氏郷)の2ソースでA/B/C(天限ノ麒麟自己参照)/S1/S2全枠・afterSkillとも完全一致。天限ノ麒麟(A・B・C)・虚実兵妙・黄泉醜女ノ屍兵のdata/skill側sourceCharactersに1265が正しいslotで記載済みを確認(逆引き済み)。"
+  "黄丸化検証(2026-08-16): カード画像no1265_full.pngの4隅バッジ(槍A/馬A/弓S/器S)を確認し一致。TR1〜TR5の値はixanary.com(skills/天限ノ麒麟)の鍛錬表と全行完全一致(TR6無し)。synthesisTableはixanary.com+ixawiki.com(BushoCard/1265蒲生氏郷)の2ソースでA/B/C(天限ノ麒麟自己参照)/S1/S2全枠・afterSkillとも完全一致。天限ノ麒麟(A・B・C)・虚実兵妙・黄泉醜女ノ屍兵のdata/skill側sourceCharactersに1265が正しいslotで記載済みを確認(逆引き済み)。",
+  "2026-08-22 検証: troopが「槍馬器防」で、同じJSONのskillDetailの対象「槍・馬・器・焙　兵站」に含まれる兵科が落ちていた。一覧ページの兵科バッジがその分だけ欠けて表示されるため「槍馬器焙防」に訂正した。同型の欠落が全DBで9体あり(1213/1217/1221/1231/1240/1242/1247/1265/1271)まとめて直した。うち1221は3ソース、1240は4ソースで対象兵科を個別に裏取り済み。"
  ],
  "wikiOldestComment": "2024-08-12",
  "wikiCommentCount": 16,

@@ -3,7 +3,7 @@
  "no": "1231",
  "ch": "25章",
  "cost": 4.5,
- "troop": "弓馬攻",
+ "troop": "弓馬焙攻",
  "sub": "飛翔10",
  "effect": "飛翔値合計依存で攻撃力上昇",
  "furigana": "たちばなむねしげ",
@@ -102,7 +102,8 @@
  "notes": [
   "2026-08-16 表記統一(F-0): ixawiki武将カード一覧(天)の表記「立花宗茂(3)」に合わせ、「立花宗茂（2）」から「立花宗茂（3）」に改名。",
   "45do.info(生HTML skiladd_wrap)+ameameixa.com(スキルテーブル)の2ソース照合済み。ameameixa側はS1のランク表記が[S]となっていたが45do.info(spec_box見出しでも[SS]表記)およびskills.htmlのランクがSSのため45do.info側を採用",
-  "2026-08-16黄丸化再検証: ixanary.com(cards/1231, skills/天翔雷神)+ixawiki.com(BushoCard/1231立花宗茂)の2ソースでsynthesisTable5枠(A天之尾羽張SS自己参照/B開闢ノ逆鉾SS自己参照/C天翔雷神S→十束ノ神域SS/S1十束ノ神域SS→天聖宝冠SSS/S2天頂ノ電光SSS自己参照)が完全一致。基礎値(1200/1100/630、成長+66/+40/+3、指揮4730)・rankGrades(槍A/弓S/馬A/器S、カード画像バッジ拡大確認)もixanary生HTMLと一致。data/skill/天翔雷神(自己ページ)・天之尾羽張・開闢ノ逆鉾・十束ノ神域・天頂ノ電光の各JSONのsourceCharactersに1231が正しいslotで既に記載済み。skillDetail及び天翔雷神.jsonの「TR1〜TR5未確認」を追加ソースで確認、ixanary+ixawikiの2ソースでTR区分自体が存在しないことを確認し表記を削除。"
+  "2026-08-16黄丸化再検証: ixanary.com(cards/1231, skills/天翔雷神)+ixawiki.com(BushoCard/1231立花宗茂)の2ソースでsynthesisTable5枠(A天之尾羽張SS自己参照/B開闢ノ逆鉾SS自己参照/C天翔雷神S→十束ノ神域SS/S1十束ノ神域SS→天聖宝冠SSS/S2天頂ノ電光SSS自己参照)が完全一致。基礎値(1200/1100/630、成長+66/+40/+3、指揮4730)・rankGrades(槍A/弓S/馬A/器S、カード画像バッジ拡大確認)もixanary生HTMLと一致。data/skill/天翔雷神(自己ページ)・天之尾羽張・開闢ノ逆鉾・十束ノ神域・天頂ノ電光の各JSONのsourceCharactersに1231が正しいslotで既に記載済み。skillDetail及び天翔雷神.jsonの「TR1〜TR5未確認」を追加ソースで確認、ixanary+ixawikiの2ソースでTR区分自体が存在しないことを確認し表記を削除。",
+  "2026-08-22 検証: troopが「弓馬攻」で、同じJSONのskillDetailの対象「弓・馬・焙 飛翔10」に含まれる兵科が落ちていた。一覧ページの兵科バッジがその分だけ欠けて表示されるため「弓馬焙攻」に訂正した。同型の欠落が全DBで9体あり(1213/1217/1221/1231/1240/1242/1247/1265/1271)まとめて直した。うち1221は3ソース、1240は4ソースで対象兵科を個別に裏取り済み。"
  ],
  "reviewedOk": false,
  "wikiOldestComment": "2023-02-03",
