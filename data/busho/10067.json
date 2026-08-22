@@ -6,11 +6,11 @@
  "imageFull": "assets/img/characters/no10067_full.png",
  "imageChar": "assets/img/characters/no10067_char.png",
  "atkBase": 2150,
- "atkGrowth": 0,
+ "atkGrowth": 155,
  "defBase": 2450,
- "defGrowth": 0,
+ "defGrowth": 165,
  "tacticsBase": 800,
- "tacticsGrowth": 0,
+ "tacticsGrowth": 3.0,
  "lv0Troops": 4960,
  "rankGrades": {
   "yari": "S",
@@ -123,7 +123,8 @@
   "skillDetail/data/skill/極衝爆砕.jsonのeffectSummaryがixanaryの生テキストそのままの書式だったため、サイト標準の「ヘッダー1行+①②改行+読点なし」書式に整形した(模倣不可の記載はixanary生HTML・ixawiki生HTMLともに0件で該当なしを確認)。",
   "synthesisTableはixanary.com/skills/極衝爆砕/の生HTML合成テーブルでA〜S2全5枠が既存登録と完全一致。sourceCharacters逆引き(A-3-11): 筋骨隆々/梵天浄界/永世ノ天隻/極衝爆砕(自身)の各data/skill/*.jsonに10067が反映済みを確認(A枠の二重の極みはAランクのため自己参照ページ未作成の既定通り、ページ無しで問題なし)。",
   "data/skill/極衝爆砕.jsonのcategoryLinksが9項目未判定のまま保留されていたため判定し、「自軍内で同兵種を指揮している武将数」カウントはskills-count-def.html(防御参加武将数280人ベース)とは別種と判断(同型の既存スキル獄香ノ爆宴・虚実法容もcategoryLinks無し)し、該当なしとして追加しなかった。",
-  "2026-08-16: 筋骨隆々の合成表がLV1の値(9%/270%)で入っていたのでLV10(29%/790%)に直した。根拠は data/skill/筋骨隆々.json の注記。"
+  "2026-08-16: 筋骨隆々の合成表がLV1の値(9%/270%)で入っていたのでLV10(29%/790%)に直した。根拠は data/skill/筋骨隆々.json の注記。",
+  "2026-08-22 ユーザーがゲーム内のカード画面(成長値の表示付き)を提示。成長値 攻撃155/防御165/兵法3.0 を確定した。それまでは0が入っていたが、これはixanaryが「成長値が設定されていない」と表示しデータを持っていなかったのをそのまま写したもの。ixanaryはこの2枚だけ★成長表を描画せず、同じコラボの10052/10053/10054・10070/10074/10075では描画している。ixawikiもこの2枚はスタブページで成長データを持たない。ixagnoの記事本文の値とも一致した。"
  ],
  "reviewedOk": false,
  "wikiOldestComment": "2025-11-12",
