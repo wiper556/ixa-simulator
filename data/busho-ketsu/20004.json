@@ -1,0 +1,33 @@
+{
+ "name": "武田信玄",
+ "no": "20004",
+ "furigana": "たけだしんげん",
+ "illustrator": "直良有祐",
+ "troop": "全攻防速",
+ "sub": "",
+ "hasHado": true,
+ "effect": "赤備えの攻防+3／攻防770%上昇+速度350%上昇(覇道)",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 55000,
+ "defBase": 55000,
+ "tacticsBase": 6000,
+ "lv0Troops": 10000,
+ "initialSkill": "至天ノ御旗",
+ "skillDetail": "傑/効果固定 確率 100% 攻撃 770%上昇/対象:全　覇道\n模倣不可・重複不可\n①攻撃 770%上昇する\n②防御 770%上昇する\n③速度 350%上昇する\n④所属部隊の「赤備え」の攻撃力・防御力が+3される\n⑤所属部隊の武将が持つスキルを無効化や発動率低下から保護する",
+ "alwaysEffects": [
+  "本領と陣、出城が黄金造りになる",
+  "チャットの文字色が金色になる",
+  "位階有効時、階位が正一位となる",
+  "陣獲得時、陣のレベルが5になる"
+ ],
+ "wikiOldestComment": "2023-08-12",
+ "wikiCommentCount": 25,
+ "chGuess": "26章",
+ "ch": "26章",
+ "chSource": "wikiOldestComment",
+ "notes": [
+  "2026-08-22 新規登録(青丸)。ixanary カードページ+スキルページ・ixawiki カードページ+「Busho/武将カード一覧(傑)」・ixagno blog-entry-10740「傑【一覧表】」を突き合わせた。カード画像がリポジトリに無いため imageFull/imageChar は null(画像なし武将781体と同じ扱い)。統率は傑7体すべて XXX・成長値は「-」で、ixawiki が「最初から天限突破扱いであり、成長は一切しない/合成素材としても使用不可、スキル追加も不可能」と明記。busho-ketsu のスキーマにcost・rankGrades・成長値・trTable・synthesisTable・categoryLinks が無いのはこのため。",
+  "2026-08-22: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。**"
+ ]
+}

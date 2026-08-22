@@ -1,0 +1,146 @@
+{
+ "name": "有馬晴信",
+ "no": "3730",
+ "ch": "15章",
+ "cost": 3.0,
+ "troop": "全攻",
+ "sub": "",
+ "effect": "攻撃 45%上昇(所属部隊を含む自部隊同時攻撃で消費する名声値を-20・重複不可)",
+ "furigana": "ありまはるのぶ",
+ "illustrator": "秋谷コウ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 860,
+ "atkGrowth": 22.0,
+ "defBase": 870,
+ "defGrowth": 24.0,
+ "tacticsBase": 470.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2850,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "澳門騒擾",
+ "skillDetail": "A/LV10 確率 100% 攻撃 45%上昇/対象:全\n①攻撃が45%上昇する\n②所属部隊を含む自部隊同時攻撃で消費する名声値を-20する(重複不可)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 攻撃 45%上昇(所属部隊を含む自部隊同時攻撃で消費する名声値を-20・重複不可)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": null
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": null
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": null
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": null
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": null
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": null
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "王舎城",
+   "rank": "B",
+   "afterSkill": "王舎城",
+   "afterRank": "B",
+   "target": "槍・弓・器",
+   "rate": "30%",
+   "effectShort": "防御 20%上昇(所属拠点の残耐久で効果変化)",
+   "afterTarget": "槍・弓・器",
+   "afterRate": "30%",
+   "afterEffectShort": "防御 20%上昇(所属拠点の残耐久で効果変化)"
+  },
+  {
+   "slot": "B",
+   "skill": "宿木",
+   "rank": "B",
+   "afterSkill": "宿木",
+   "afterRank": "B",
+   "target": "部隊長",
+   "rate": "55%",
+   "effectShort": "部隊長の初期スキルを模倣(戦闘スキルのみ)",
+   "afterTarget": "部隊長",
+   "afterRate": "55%",
+   "afterEffectShort": "部隊長の初期スキルを模倣(戦闘スキルのみ)"
+  },
+  {
+   "slot": "C",
+   "skill": "彷徨う福音",
+   "rank": "B",
+   "afterSkill": "彷徨う福音",
+   "afterRank": "B",
+   "target": "全",
+   "rate": "20%",
+   "effectShort": "銅銭獲得率2.5%(対人撃破兵数に応じて自軍全員が銅銭獲得・重複発動上限数4)",
+   "afterTarget": "全",
+   "afterRate": "20%",
+   "afterEffectShort": "銅銭獲得率2.5%(対人撃破兵数に応じて自軍全員が銅銭獲得・重複発動上限数4)"
+  },
+  {
+   "slot": "S1",
+   "skill": "天の福音",
+   "rank": "C",
+   "afterSkill": "義兵進軍",
+   "afterRank": "C",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "デッキ上武将回復率 20%上昇",
+   "afterTarget": "槍・弓・馬・砲",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 7%上昇+速度 10%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "風狂幻術",
+   "rank": "B",
+   "afterSkill": "風狂幻術",
+   "afterRank": "B",
+   "target": "部隊長",
+   "rate": "53%",
+   "effectShort": "部隊長の初期スキルを模倣(戦闘スキルのみ)",
+   "afterTarget": "部隊長",
+   "afterRate": "53%",
+   "afterEffectShort": "部隊長の初期スキルを模倣(戦闘スキルのみ)"
+  }
+ ],
+ "notes": [
+  "2026-08-22 新規登録(青丸)。ixanary カードページ+スキルページ・ixawiki カードページ+「Busho/武将カード一覧(特)」・ixagno blog-entry-5449(専用記事)/5432(2018年1月ラインナップ)/1294(シクレ一覧)を突き合わせた。初期値・成長値・指揮兵数・cost・ふりがな・絵師は ixanary/ixawiki カード/ixawiki 一覧の3点が一致。",
+  "2026-08-22: 入れ先を data/busho-toku-s(特シークレット)にした理由。characters-toku-s.html の見出しが「特シークレットデータベース」で -s は Secret の意味(Sランクではない)。data/busho-toku-s/3701.json のnotesに「特シークレットの第1号」とある。ixagno blog-entry-1294「限定武将(復刻、コラボ、シクプラ)【一覧表】」の特武将節が No.3701〜3730 の連番30体を列挙しており 3730 はその最後。blog-entry-5449 もカテゴリが「シクレと限定武将」で「取引不可」と明記。なお ixanary の rarity は 3725〜3730 が全部「特」で区別できず、ixawiki の一覧も同じ表に入れている。",
+  "2026-08-22: TR段は存在しない。ixanary のカードページ・スキルページとも LV1/LV10 の2行のみ、ixawiki も Lv1/Lv10 のみ、ixagno blog-entry-9844「鍛錬が解放されたスキル【一覧】」に澳門騒擾が無い。3729 と同じく trTable は7行のテンプレートを残し TR1〜TR6 の effect を null にしてある。",
+  "2026-08-22: 章は ixagno blog-entry-5432「15章の新天と1月追加の新武将の能力が先行公開」の「＜期間限定武将カード＞【特】有馬晴信（取引不可）」で 15章 と裏が取れている。ixawiki の最古コメント 2018-01-15 も 15章(2018-01-15〜2018-08-09)の期間内で一致するため、コメント日推定ではなく実装月記事を根拠にでき chSource は付けていない。",
+  "2026-08-22: カード画像がリポジトリに無いため imageFull/imageChar は null。統率4値は ixawiki のカードページと一覧の両方が槍馬弓器すべて A。全部同じ値なのでHINTS #17 の ixanary の弓/馬入れ替えの影響を受けないが、カード画像が手に入ったら4隅を読み直すこと。",
+  "2026-08-22: 名前に（N）を付けていない。No.1188 有馬晴信(天)が素の名前で登録済みだが、3729 のnotesの基準「同レアリティ内に同名が無ければ（N）を付けない」に従った。特レアリティ内に他の有馬晴信は無い。ただしサイト上に「有馬晴信」が2枚並ぶことになるため要判断。",
+  "2026-08-22: ixanary/ixawiki/ixagno の3ソースがこのカード専用の部隊スキル「主への祈り」を挙げているが、テンプレートに対応項目が無いため登録していない(No.1009〜1014 と同じ扱い・申し送り)。",
+  "2026-08-22: 合成テーブルは ixanary スキルページと ixawiki カードページで全5枠・1次/2次/3次まで完全一致。各候補の効果量は ixanary の個別スキルページで1件ずつ確認した。S1 だけ2次で 天の福音[C] → 義兵進軍[C] に変化する(data/busho-toku-s/3703.json ザビエルの S1 が義兵進軍[C]→大ふへん者[D] で世代が1つずれる関係と整合)。"
+ ],
+ "reviewedOk": false,
+ "wikiOldestComment": "2018-01-15",
+ "wikiCommentCount": 99,
+ "chGuess": "15章"
+}

@@ -1,0 +1,34 @@
+{
+ "name": "足利義昭",
+ "no": "20005",
+ "furigana": "あしかがよしあき",
+ "illustrator": "直良有祐",
+ "troop": "全攻",
+ "sub": "不屈1",
+ "hasHado": true,
+ "effect": "武士の攻撃+3／攻撃1200%上昇+不屈1(部隊内に不屈1付与・自軍発動率+15%・卓越+10%)(覇道)",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 65000,
+ "defBase": 0,
+ "tacticsBase": 6000,
+ "lv0Troops": 9000,
+ "initialSkill": "天網鎖陣",
+ "skillDetail": "傑/効果固定 確率 100% 攻撃 1200%上昇/対象:全　覇道　不屈1\n模倣不可・重複不可\n①攻撃 1200%上昇する\n②不屈1を得る\n③所属部隊のうち自身を除く武将の初期スキルが不屈1を得る\n④自軍全武将のスキル発動率が+15%される\n⑤自軍全武将の卓越追加確率が+10%される\n⑥同じ合流攻撃に参加する他部隊の「武士」の攻撃力が+3される\n⑦所属部隊の武将が持つスキルを無効化や発動率低下から保護する",
+ "alwaysEffects": [
+  "本領と陣、出城が黄金造りになる",
+  "チャットの文字色が金色になる",
+  "位階有効時、階位が正一位となる",
+  "陣獲得時、陣のレベルが5になる"
+ ],
+ "wikiOldestComment": "2024-02-11",
+ "wikiCommentCount": 7,
+ "chGuess": "27章",
+ "ch": "27章",
+ "chSource": "wikiOldestComment",
+ "notes": [
+  "2026-08-22 新規登録(青丸)。ixanary カードページ+スキルページ・ixawiki カードページ+「Busho/武将カード一覧(傑)」・ixagno blog-entry-10740「傑【一覧表】」を突き合わせた。カード画像がリポジトリに無いため imageFull/imageChar は null(画像なし武将781体と同じ扱い)。統率は傑7体すべて XXX・成長値は「-」で、ixawiki が「最初から天限突破扱いであり、成長は一切しない/合成素材としても使用不可、スキル追加も不可能」と明記。busho-ketsu のスキーマにcost・rankGrades・成長値・trTable・synthesisTable・categoryLinks が無いのはこのため。",
+  "2026-08-22: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。**",
+  "2026-08-22: defBase が 0 なのは誤りではない。ixanary 埋め込みJSON・ixawiki カードページ・ixawiki 傑一覧の3ソースがいずれも 0 で、攻撃専用カード。cost も同じ3ソースが 0 で一致しており、HINTS #2 の「ixanary のコスト0バグ」には当たらない(busho-ketsu は cost を保持しない)。"
+ ]
+}

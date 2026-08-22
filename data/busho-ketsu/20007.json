@@ -1,0 +1,33 @@
+{
+ "name": "黒田如水",
+ "no": "20007",
+ "furigana": "くろだじょすい",
+ "illustrator": "直良有祐",
+ "troop": "全攻防",
+ "sub": "飛翔24 兵站",
+ "hasHado": true,
+ "effect": "鉄砲足軽の攻撃+3／攻防3600%上昇+飛翔24(覇道・兵站／自軍発動率+10%・卓越+15%)",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 64000,
+ "defBase": 64000,
+ "tacticsBase": 6200,
+ "lv0Troops": 14000,
+ "initialSkill": "神智天鏡",
+ "skillDetail": "傑/効果固定 確率 100% 攻撃 3600%上昇/対象:全　覇道　兵站　飛翔24\n模倣不可・重複不可\n①攻撃 3600%上昇する\n②防御 3600%上昇する\n③飛翔24を得る\n④同じ合流攻撃に参加する他部隊の「鉄砲足軽」の攻撃力が+3される\n⑤防御戦闘時は自軍全武将の「騎馬鉄砲」の防御力が+1される\n⑥自軍全武将のスキル発動率が+10%される\n⑦自軍全武将の卓越追加確率が+15%される",
+ "alwaysEffects": [
+  "本領と陣、出城が黄金造りになる",
+  "チャットの文字色が金色になる",
+  "位階有効時、階位が正一位となる",
+  "陣獲得時、陣のレベルが5になる"
+ ],
+ "wikiOldestComment": "2025-02-25",
+ "wikiCommentCount": 4,
+ "chGuess": "29章",
+ "ch": "29章",
+ "chSource": "wikiOldestComment",
+ "notes": [
+  "2026-08-22 新規登録(青丸)。ixanary カードページ+スキルページ・ixawiki カードページ+「Busho/武将カード一覧(傑)」・ixagno blog-entry-10740「傑【一覧表】」を突き合わせた。カード画像がリポジトリに無いため imageFull/imageChar は null(画像なし武将781体と同じ扱い)。統率は傑7体すべて XXX・成長値は「-」で、ixawiki が「最初から天限突破扱いであり、成長は一切しない/合成素材としても使用不可、スキル追加も不可能」と明記。busho-ketsu のスキーマにcost・rankGrades・成長値・trTable・synthesisTable・categoryLinks が無いのはこのため。",
+  "2026-08-22: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。**"
+ ]
+}
