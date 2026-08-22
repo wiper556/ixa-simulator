@@ -1,0 +1,103 @@
+{
+ "name": "細川幽斎（3）",
+ "no": "2597",
+ "ch": "未確認",
+ "cost": 4,
+ "troop": "全防",
+ "sub": "",
+ "effect": "防御 380%上昇 / 自軍武将のスキル発動率+3% / 防御時のみ 自軍の兵士被害数 10%減少(特殊効果は模倣・重複不可)",
+ "furigana": "ほそかわゆうさい",
+ "illustrator": "正子公也",
+ "imageFull": "assets/img/characters/no2597_full.png",
+ "imageChar": "assets/img/characters/no2597_char.png",
+ "atkBase": 1070,
+ "atkGrowth": 51.0,
+ "defBase": 1180,
+ "defGrowth": 58.0,
+ "tacticsBase": 510.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 4310,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "覇争眼識",
+ "skillDetail": "S/LV10 確率 5% 防御 380%上昇/対象:全\n①防御 380%上昇する\n②自軍武将のスキル発動率+3%\n③防御時のみ 自軍の兵士被害数 10%減少(特殊効果は模倣・重複不可)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 5% / 防御 380%上昇 / 自軍武将のスキル発動率+3% / 防御時のみ 自軍の兵士被害数 10%減少(特殊効果は模倣・重複不可)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "黒衣ノ軍師",
+   "rank": "S",
+   "afterSkill": "天磐船",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "防御 190%上昇(自軍武将のスキル発動率+3%・特殊効果は自軍内重複上限2)",
+   "afterTarget": "全",
+   "afterRate": "56%",
+   "afterEffectShort": "防御 3.8%×防御参加武将数(280人)=1064.0%"
+  },
+  {
+   "slot": "B",
+   "skill": "黒衣ノ元帥",
+   "rank": "S",
+   "afterSkill": "戦陣 剣舞",
+   "afterRank": "A",
+   "target": "全 飛翔6 兵站",
+   "rate": "100%",
+   "effectShort": "防御 100%上昇(卓越 追加確率30%で防御効果が4倍)",
+   "afterTarget": "全 飛翔6",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 80%上昇+防御 80%上昇(卓越追加確率30%で攻防効果4倍)"
+  },
+  {
+   "slot": "C",
+   "skill": "四天轟雷",
+   "rank": "SS",
+   "afterSkill": "四天轟雷",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "攻撃 360%上昇+防御 360%上昇(砲・器対象追加)"
+  },
+  {
+   "slot": "S1",
+   "skill": "神屋楯比売命",
+   "rank": "SS",
+   "afterSkill": "神屋楯比売命",
+   "afterRank": "SS",
+   "target": "自身",
+   "rate": "70%",
+   "effectShort": "初期スキル(戦闘スキルのみ)を模倣(1倍)"
+  },
+  {
+   "slot": "S2",
+   "skill": "幽冥主宰大神",
+   "rank": "SS",
+   "afterSkill": "幽冥主宰大神",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "30%",
+   "effectShort": "防御 90%上昇 攻撃部隊の武将が持つ特殊効果付き初期スキルを全て無効化(模倣不可)"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/2597 と skills/覇争眼識)およびixawiki(BushoCard/2597細川幽斎)で登録(2026-08-20)。",
+  "統率はカード画像のバッジを4隅とも拡大して読み(yari=S/yumi=A/uma=A/ki=A)、ixawikiのカードページと一致することを確認した(D-01)。",
+  "カードのスキル表記がLV1のため、成長値・LV10の効果量・指揮兵数はカードから読めずソース側を採った(B-00)。攻1070/防1180/兵510.0/コスト4/絵師はカードと一致。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの合成テーブル(ヘッダーA/B/C/S1/S2、1次=移植前・2次=移植後)を生HTMLで確認した。",
+  "覇争眼識そのものは同ページの合成素材欄が「合成不可スキルです」のため移植不可。",
+  "TR段はixanaryにLV1とLV10しか無く、鍛錬段の値は未確認。章も情報源に記載が無く未確認。このため青丸のまま。",
+  "極の細川幽斎が2209(無印)・2427(2)と3枚になるため、マニュアルB-2の連番規則で(3)を付けた。ゲーム内の実際の表記は未確認。"
+ ]
+}
