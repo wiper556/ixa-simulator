@@ -121,6 +121,15 @@
    "note": [
     "果心居士(2735)のsynthesisTable S1枠・初期スキル(2026-08-16、担当K6)"
    ]
+  },
+  {
+   "name": "有馬晴信",
+   "no": "3730",
+   "slot": "S2",
+   "db": "toku",
+   "note": [
+    "有馬晴信(3730)のsynthesisTable S2枠(2026-08-22)"
+   ]
   }
  ],
  "grantedViaSkills": [
@@ -147,6 +156,7 @@
  "notes": [
   "ユーザー明示依頼によりA/Bランクだが新規作成。ixanary.com(/skills/風狂幻術/)生HTML確認(確率LV1+18%→LV10+53%/対象部隊長/戦闘スキルのみ模倣・倍率補正なし)+attack-simulator.htmlのspecialSkills記載と一致。",
   "今川氏真(No.2358)のCスロット(blog-entry-9417確認済み)は風狂幻術自体を直接持つ(自己参照、終端スキル)。",
-  "伊達成実(No.2336)のS2スロット(blog-entry-8878確認済み)は直接持つスキルが「飛蝶野分」[B]で、移植後afterSkillが風狂幻術に変化するため、飛蝶野分は独自ページを持つのでgrantedViaSkillsで参照する(2026-08-03ルール統一)"
+  "伊達成実(No.2336)のS2スロット(blog-entry-8878確認済み)は直接持つスキルが「飛蝶野分」[B]で、移植後afterSkillが風狂幻術に変化するため、飛蝶野分は独自ページを持つのでgrantedViaSkillsで参照する(2026-08-03ルール統一)",
+  "2026-08-22: 新規登録した No.3730 有馬晴信(特シークレット)のsynthesisTable S2枠にこのスキルが入るため sourceCharacters に追記した(A-3-11/S-05)。db は tools/audit_characters.py の db_want() が data/busho-toku-s に対して \"toku\" を期待するため\"toku\"(既存の 3713/3716/3717/3719/3720/3724/3726/3729 も同じ)。"
  ]
 }

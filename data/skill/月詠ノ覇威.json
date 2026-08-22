@@ -4,7 +4,7 @@
  "baseRate": 100,
  "target": "全",
  "noMimic": true,
- "effectSummary": "SS/LV10 確率 100% 攻撃 344%上昇/対象:全\n①攻撃 344%上昇する\n②防御 344%上昇する(TR以降も344%で変化なし)\n③自軍全武将全スキルの卓越確率に加算する(自軍内重複上限2/模倣不可)",
+ "effectSummary": "SS/LV10 確率 100% 攻撃 344%上昇/対象:全\n①攻撃 344%上昇する\n②防御 344%上昇する(TR以降も344%で変化なし)\n③自軍全武将全スキルの卓越確率に15%加算する(自軍内重複上限2/模倣不可)",
  "categoryLinks": [
   {
    "href": "skills-takuetsu.html",
@@ -292,7 +292,8 @@
  },
  "notes": [
   "2026-08-13: A-3-12の逆方向リンク。武将のsynthesisTableでは1次がこのスキルに変化するのに、こちら側から元スキルを指していなかった。1次→2次の組100件を元スキルのownHiddenCandidateと突き合わせ、矛盾0件を確かめたうえで機械的に張った。",
-  "2026-08-16(No.2592黄丸化検証): 帰蝶(2592、S1)の直接列挙を削除した。ixawiki(BushoCard/2592帰蝶)とixagno.blog.fc2.com(blog-entry-9437)の2ソースを確認したところ、帰蝶のsynthesisTable全5枠に月詠ノ覇威は一切登場せず(2026-08-13にixanary基準で誤って追加されたもの)。舞蝶朧月.jsonのownHiddenCandidateも黒飛燕剣に訂正済み。"
+  "2026-08-16(No.2592黄丸化検証): 帰蝶(2592、S1)の直接列挙を削除した。ixawiki(BushoCard/2592帰蝶)とixagno.blog.fc2.com(blog-entry-9437)の2ソースを確認したところ、帰蝶のsynthesisTable全5枠に月詠ノ覇威は一切登場せず(2026-08-13にixanary基準で誤って追加されたもの)。舞蝶朧月.jsonのownHiddenCandidateも黒飛燕剣に訂正済み。",
+  "2026-08-22 検証: effectSummary③から加算値「15%」が落ちて「卓越確率に加算する」と数値なしになっていた。武将側(1303 S2・1315 S2ほか)は15%を持ち、ixagno blog-entry-9390 の卓越加算率一覧も「月詠ノ覇威 | 15%」と明記。武将側に揃えた。"
  ],
  "trTable": [
   {
