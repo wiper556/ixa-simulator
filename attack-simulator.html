@@ -923,7 +923,7 @@
   // 【必須】attack-simulator.html を変更したコミットでは、必ずこの定数も一緒に更新すること。
   // 表示文言の変更・CSSの微調整であっても対象(ユーザーがスクショで版を判別できなくなるため)。
   // 更新忘れが繰り返し発生しているので、編集したらコミット前にここを見に来る。
-  const SIMULATOR_VERSION = 'v2026-08-23.1';
+  const SIMULATOR_VERSION = 'v2026-08-23.2';
   document.addEventListener('DOMContentLoaded', ()=>{
     const badge = document.getElementById('simVersionBadge');
     if(badge) badge.textContent = SIMULATOR_VERSION;
@@ -5048,10 +5048,13 @@
   /* ============ 候補の絞り込み(2026-08-23 うぐさん指示) ============
      レアリティ・スキルランク・章で、入力補完に出す候補を絞る。
 
+     ・チェックの名前は characters-hub.html に載っているデータベース名に合わせてある
+       (天 / 天パラレル / 傑 / 極 / 極プラチナ・シークレット / 特 / 特シークレット / 上 / 序)。
+       「極プラチナ・シークレット」はプラチナ極とシークレット極の両方を含む1つのDB。
      ・レアリティは assets/js/ixa-data.js の generalRarityDB を引く。
        **カードNo.から推測しない。** No.の桁と頭で分ける関数(generalRarity)も
        この下にあるが、あれは並べ替え用の4種(傑/天/極/特)しか出せず、
-       パラレル天・シークレットプラチナ極・シークレット特・上・序を分けられない。
+       天パラレル・極プラチナ・シークレット・特シークレット・上・序を分けられない。
        generalRarityDB は正本のディレクトリから生成しているので9種を正しく分けられる。
      ・スキルランクは武将側が generalSkillRankDB、スキル欄が skillRankDB。
        傑カードの「傑/効果固定」は SSS 扱い(うぐさん判断 2026-08-23)。
@@ -5062,11 +5065,11 @@
   const CF_RARITY = [
     {key:'ketsu',       label:'傑',                 def:true},
     {key:'ten',         label:'天',                 def:true},
-    {key:'parallelTen', label:'パラレル天',          def:true},
+    {key:'parallelTen', label:'天パラレル',            def:true},
     {key:'kyoku',       label:'極',                 def:false},
-    {key:'kyokuPs',     label:'シークレットプラチナ極', def:true},
+    {key:'kyokuPs',     label:'極プラチナ・シークレット', def:true},
     {key:'toku',        label:'特',                 def:false},
-    {key:'tokuS',       label:'シークレット特',       def:false},
+    {key:'tokuS',       label:'特シークレット',         def:false},
     {key:'ue',          label:'上',                 def:false},
     {key:'jo',          label:'序',                 def:false}
   ];
@@ -5130,7 +5133,7 @@
     if(!el) return;
     const rs = CF_RARITY.filter(r=>cfRaritySet.has(r.key)).map(r=>r.label);
     const ch = (cfChapter === null) ? '章は絞らない' : (cfChapter + '章以前を除く');
-    el.textContent = '(' + (rs.length ? rs.join('・') : 'レアリティ未選択')
+    el.textContent = '(' + (rs.length ? rs.join('／') : 'レアリティ未選択')
       + ' / ' + (cfRankSet.size ? CF_RANKS.filter(r=>cfRankSet.has(r)).join('・') : 'ランク未選択')
       + ' / ' + ch + ')';
   }
