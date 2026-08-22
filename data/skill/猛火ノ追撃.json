@@ -3,7 +3,7 @@
  "rank": "SSS",
  "baseRate": 70,
  "target": "全",
- "effectSummary": "SSS/LV10 確率 70% 攻撃上昇/対象:全\n①部隊総コストに応じて攻撃効果が変化する(LV10基準45%上昇)",
+ "effectSummary": "SSS/LV10 確率 70% 攻撃上昇/対象:全\n①部隊総コストに応じて攻撃効果が変化する(LV10 総C25=408.79%)",
  "sourceCharacters": [
   {
    "name": "斎藤道三（4）【覇】",
@@ -48,12 +48,13 @@
   {
    "level": "LV10",
    "points": "-",
-   "effect": "全　確率 70% / 攻撃 45%上昇(部隊総コストで変動、TRなし)"
+   "effect": "全　確率 70% / 攻撃 (部隊総コスト依存)%上昇(総C25=408.79%)(TRなし)"
   }
  ],
  "notes": [
   "45do.info生HTML確認(https://45do.info/ordinary/0073/): skiladd_wrapのランク表記(SSS)とspec_wrap内バッジ表記(SS)が不一致だったためskiladd_wrap(候補一覧表)側を採用。ixanary.com(スキルページog:title)もSSSで一致(2026-08-02、伊達輝宗1260検証時に重複登録[旧rank:SS版]を発見しここへ統合)。三郎信長(No.1249)分の重複登録はtarget:\"槍・弓・馬\"と誤記されていたが、ixanary.com生HTML(2026-08-02再確認)で対象は「全」と確定したためこちらに統合",
   "2026-08-15(黄丸化検証): 角隈石宗(2811)のslotが「A」になっていたが、synthesisTableのA/B枠は呪法死界[S]→猛火ノ追撃[SSS](skill≠afterSkill)でありA-3-12によりここへ直接列挙すべきでない。S1枠は猛火ノ追撃の自己参照のため、こちらを正しいslotとして修正した(A表記は削除)。grantedViaSkillsに呪法死界[S]・紅蓮ノ刹[S]を追加(いずれも角隈石宗のA/B・S2枠から確認、他武将のsourceCharacters個別チェックは今回のスコープ外のため未実施)。",
-  "2026-08-15(No.2819黄丸化検証): 国友善兵衛(2819)がS1枠に直接列挙されていたが、synthesisTable S1行のskillは紅蓮ノ刹でありafterSkillが本スキルのため同種の誤り。grantedViaSkillsの紅蓮ノ刹経由で辿れるためsourceCharactersから削除(紅蓮ノ刹側には既にS1枠で記載済み)。"
+  "2026-08-15(No.2819黄丸化検証): 国友善兵衛(2819)がS1枠に直接列挙されていたが、synthesisTable S1行のskillは紅蓮ノ刹でありafterSkillが本スキルのため同種の誤り。grantedViaSkillsの紅蓮ノ刹経由で辿れるためsourceCharactersから削除(紅蓮ノ刹側には既にS1枠で記載済み)。",
+  "2026-08-22 検証: 猛火ノ追撃の「45%上昇」はどの情報源にも無い数字だった。ixanaryはこの種のスキルに数値を出さず(X%表記)、ixawiki BushoCard/1249三郎信長 のB候補欄が部隊総コスト別の実数表を持ち「C25.0 = 408.79%」と明記している(45%は同ページに0件)。天衣無縫神戒・国津破邪ノ楯・天弓星宿陣・旌旗翳天ノ覇陣と同じ家族の取りこぼしで5件目。"
  ]
 }

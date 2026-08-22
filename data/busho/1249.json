@@ -52,8 +52,8 @@
    "afterRank": "SSS",
    "rate": "70%",
    "target": "全",
-   "effectShort": "攻撃 45%上昇(部隊総コストで変動、TRなし)",
-   "afterEffectShort": "攻撃 45%上昇(部隊総コストで変動、TRなし)"
+   "effectShort": "攻撃 (部隊総コスト依存)%上昇(総C25=408.79%)(TRなし)",
+   "afterEffectShort": "攻撃 (部隊総コスト依存)%上昇(総C25=408.79%)(TRなし)"
   },
   {
    "slot": "C",
@@ -91,7 +91,8 @@
  ],
  "notes": [
   "45do.info(生HTML skiladd_wrap)照合済み。ameameixa.comのスキルテーブルはB候補を「月詠ノ覇威」(A候補と同一)と記載していたが45do.infoのspec_box詳細と齟齬があり誤記と判断、45do.info側(猛火ノ追撃SSS)を採用",
-  "2026-08-16黄丸化再検証: ixanary.com(cards/1249, skills/破界ノ轟砲)+ixawiki.com(BushoCard/1249三郎信長)の2ソースでsynthesisTable5枠(A月詠ノ覇威SS/B猛火ノ追撃SSS/C破軍騎行SS/S1龍驤虎躍SS/S2火之迦具土神SS、いずれも移植後変化なしの自己参照)が完全一致することを再確認、旧45do.info/ameameixa.com由来の判断(B=猛火ノ追撃)も正しかったと裏付けられた。基礎値(1230/1030/690、成長+72/+40/+3.5、指揮5150)・rankGrades(槍A/弓A/馬A/器SS、カード画像バッジ拡大確認)もixanary生HTMLと一致。data/skill/月詠ノ覇威・猛火ノ追撃・火之迦具土神・破軍騎行・龍驤虎躍の各JSONのsourceCharactersに1249が正しいslotで既に記載済み。破界ノ轟砲はTRなし(ixanary生HTMLでLV10欄のみ)でtrTable1行のみが正しい。"
+  "2026-08-16黄丸化再検証: ixanary.com(cards/1249, skills/破界ノ轟砲)+ixawiki.com(BushoCard/1249三郎信長)の2ソースでsynthesisTable5枠(A月詠ノ覇威SS/B猛火ノ追撃SSS/C破軍騎行SS/S1龍驤虎躍SS/S2火之迦具土神SS、いずれも移植後変化なしの自己参照)が完全一致することを再確認、旧45do.info/ameameixa.com由来の判断(B=猛火ノ追撃)も正しかったと裏付けられた。基礎値(1230/1030/690、成長+72/+40/+3.5、指揮5150)・rankGrades(槍A/弓A/馬A/器SS、カード画像バッジ拡大確認)もixanary生HTMLと一致。data/skill/月詠ノ覇威・猛火ノ追撃・火之迦具土神・破軍騎行・龍驤虎躍の各JSONのsourceCharactersに1249が正しいslotで既に記載済み。破界ノ轟砲はTRなし(ixanary生HTMLでLV10欄のみ)でtrTable1行のみが正しい。",
+  "2026-08-22 検証: 猛火ノ追撃の「45%上昇」はどの情報源にも無い数字だった。ixanaryはこの種のスキルに数値を出さず(X%表記)、ixawiki BushoCard/1249三郎信長 のB候補欄が部隊総コスト別の実数表を持ち「C25.0 = 408.79%」と明記している(45%は同ページに0件)。天衣無縫神戒・国津破邪ノ楯・天弓星宿陣・旌旗翳天ノ覇陣と同じ家族の取りこぼしで5件目。"
  ],
  "reviewedOk": false,
  "wikiOldestComment": "2023-08-11",

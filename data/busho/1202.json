@@ -41,8 +41,8 @@
    "afterRank": "SSS",
    "rate": "70%",
    "target": "全",
-   "effectShort": "攻撃 45%上昇(部隊総コストで変動、TRなし)",
-   "afterEffectShort": "攻撃 45%上昇(部隊総コストで変動、TRなし)"
+   "effectShort": "攻撃 (部隊総コスト依存)%上昇(総C25=408.79%)(TRなし)",
+   "afterEffectShort": "攻撃 (部隊総コスト依存)%上昇(総C25=408.79%)(TRなし)"
   },
   {
    "slot": "B",
@@ -52,8 +52,8 @@
    "afterRank": "SSS",
    "rate": "70%",
    "target": "全",
-   "effectShort": "攻撃 45%上昇(部隊総コストで変動、TRなし)",
-   "afterEffectShort": "攻撃 45%上昇(部隊総コストで変動、TRなし)"
+   "effectShort": "攻撃 (部隊総コスト依存)%上昇(総C25=408.79%)(TRなし)",
+   "afterEffectShort": "攻撃 (部隊総コスト依存)%上昇(総C25=408.79%)(TRなし)"
   },
   {
    "slot": "C",
@@ -97,7 +97,8 @@
   "蛇神咆哮はixanary/ixawikiともLV1/LV10の2段のみでTR行が存在しないことを確認したため、skillDetailの「TR1〜TR5は未確認」注記を削除しtrTableに「TRなし」と明記した(2026-08-16)。",
   "skillDetailの「模倣不可」がTR注記と同じ括弧内に埋め込まれ②の一部になっていたのを、data/skill/蛇神咆哮.jsonの正しい書式(①の前に独立行)に合わせて修正(2026-08-16)。",
   "sourceCharacters逆引き確認(A-3-11): 猛火ノ追撃(slot A・B)・天津甕星ノ雷(slot C・S1)・覇王征軍(slot S2)いずれもdata/skill/配下のsourceCharactersに1202が既に記載済みであることをgrep相当の目視で確認、追記不要だった(2026-08-16)。",
-  "章(23章)は情報源に記載が無く未確認のまま(ixanary/ixawiki/ixagno検索いずれもchapter情報を確認できず)。"
+  "章(23章)は情報源に記載が無く未確認のまま(ixanary/ixawiki/ixagno検索いずれもchapter情報を確認できず)。",
+  "2026-08-22 検証: 猛火ノ追撃の「45%上昇」はどの情報源にも無い数字だった。ixanaryはこの種のスキルに数値を出さず(X%表記)、ixawiki BushoCard/1249三郎信長 のB候補欄が部隊総コスト別の実数表を持ち「C25.0 = 408.79%」と明記している(45%は同ページに0件)。天衣無縫神戒・国津破邪ノ楯・天弓星宿陣・旌旗翳天ノ覇陣と同じ家族の取りこぼしで5件目。"
  ],
  "reviewedOk": false,
  "wikiOldestComment": "2022-02-04",
