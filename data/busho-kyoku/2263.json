@@ -1,0 +1,108 @@
+{
+ "name": "お船の方",
+ "no": "2263",
+ "ch": "18章",
+ "cost": 1.5,
+ "troop": "全防",
+ "sub": "",
+ "effect": "防御 18%上昇(武将ランクで変化・ランクごとに+10%)",
+ "furigana": "おせんのかた",
+ "illustrator": "影井由宇",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 960,
+ "atkGrowth": 24,
+ "defBase": 1020,
+ "defGrowth": 30,
+ "tacticsBase": 480,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2160,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "愛染王法",
+ "skillDetail": "B/LV10 確率 40% 防御 18%上昇/対象:全\n①防御 18%上昇する(武将ランクで変化・ランクごとに+10%)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 40% / 防御 18%上昇(武将ランクで変化・ランクごとに+10%)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "弓隊堅陣",
+   "rank": "F",
+   "afterSkill": "弓隊奇襲",
+   "afterRank": "E",
+   "target": "弓",
+   "rate": "30%",
+   "effectShort": "防御 12%上昇",
+   "afterTarget": "弓",
+   "afterRate": "30%",
+   "afterEffectShort": "攻撃 12%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "愛民ノ采配",
+   "rank": "D",
+   "afterSkill": "暁光",
+   "afterRank": "D",
+   "target": "全",
+   "rate": "48%",
+   "effectShort": "攻撃 40%上昇+防御 40%上昇",
+   "afterTarget": "全",
+   "afterRate": "24%",
+   "afterEffectShort": "攻撃 38%上昇+防御 38%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "洞察",
+   "rank": "B",
+   "afterSkill": "洞察",
+   "afterRank": "B",
+   "target": "全",
+   "rate": "30%",
+   "effectShort": "防御 7.5%上昇(部隊ランクボーナスで効果が変化)",
+   "afterEffectShort": "防御 7.5%上昇(部隊ランクボーナスで効果が変化)"
+  },
+  {
+   "slot": "S1",
+   "skill": "愛染王法",
+   "rank": "B",
+   "afterSkill": "愛染王法",
+   "afterRank": "B",
+   "target": "全",
+   "rate": "40%",
+   "effectShort": "防御 18%上昇(武将ランクで変化・ランクごとに+10%)",
+   "afterEffectShort": "防御 18%上昇(武将ランクで変化・ランクごとに+10%)"
+  },
+  {
+   "slot": "S2",
+   "skill": "山刀懐剣",
+   "rank": "B",
+   "afterSkill": "山刀懐剣",
+   "afterRank": "B",
+   "target": "全",
+   "rate": "34%",
+   "effectShort": "防御 44%上昇(自領以外の加勢で効果1.5倍)",
+   "afterEffectShort": "防御 44%上昇(自領以外の加勢で効果1.5倍)"
+  }
+ ],
+ "notes": [
+  "2026-08-23 新規登録(青丸)。極/極PS の欠番を機械的に洗い出して見つかった15枚のうちの1枚。ixanary カードページ(埋め込みJSON)・ixanary スキルページ・ixawiki カードページ・ixagno 個別記事の4系統を突き合わせた。**カード画像が存在しない**(リポジトリにもスクショ倉庫にも無い)ためimageFull/imageChar は null、rankGrades は ixawiki を最上位の根拠にした(HINTS #17 に従い ixanary の統率ラベルは補正して2ソース目に使用)。D-01(カード画像優先)を満たせないので黄丸化には画像が要る。",
+  "2026-08-23: 鍛錬(TR)は存在しない。ixanary のカードページ・スキルページとも LV1/LV10 のみ、ixawiki にも鍛錬表なし、ixagno blog-entry-9844「鍛錬が解放されたスキル一覧」にも不掲載。直近の極登録と同じく trTable は LV10 の1行だけにしてある。",
+  "2026-08-23: 効果量は式「ランク×10+18」%。ixawiki カードページが式を明記し、ixagno blog-entry-6810 の「限界突破時は78% / 極限突破時は88%上昇」がランク6/7で一致する。**ixanary のスキルページは LV10 を 105.6% としているが、これは 88×1.2 でちょうど1.2倍ずれており採らない**(HINTS #2 の型がスキル本体の値でも起きた例)。",
+  "2026-08-23: 章は ixagno blog-entry-6796(2019-12-02 の実装告知に「【極】吉川元春、お船の方、上泉信綱、尚寧王」)で実装日が一次確認でき、章テーブル(18章=2019-08-08〜2020-02-13)から導出した。chSource は付けていない。",
+  "2026-08-23: **ixawiki のページ名が「BushoCard/2243お船の方」になっている**(本文1行目は No.2263、ixawiki の武将カード一覧も 2263)。カードNo.は 2263 が正しく ixawiki のページ名だけが誤り。この副作用で data/wiki_card_dates.json のキー \"2243\" に本カードのコメント統計が入っており、\"2263\" のキーは欠落している。随風(2243)の裏取りにあの行を使うと誤る。",
+  "2026-08-23: ixanary/ixawiki とも部隊スキル「防：戦姫艶舞」を挙げているが、テンプレートに対応項目が無いため登録していない(申し送り)。"
+ ],
+ "reviewedOk": false,
+ "wikiOldestComment": "2019-12-02",
+ "wikiCommentCount": 67,
+ "chGuess": "18章"
+}

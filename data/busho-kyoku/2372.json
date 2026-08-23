@@ -1,0 +1,115 @@
+{
+ "name": "煕子（3）",
+ "no": "2372",
+ "ch": "27章",
+ "cost": 4,
+ "troop": "弓馬器騎防",
+ "sub": "",
+ "effect": "防御 330%上昇(敵軍部隊数×2.5%を加算・模倣不可)",
+ "furigana": "ひろこ",
+ "illustrator": "hakus",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1010,
+ "atkGrowth": 32,
+ "defBase": 1130,
+ "defGrowth": 46,
+ "tacticsBase": 530,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3960,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "B",
+  "ki": "S"
+ },
+ "initialSkill": "月寂ノ想愛",
+ "skillDetail": "A/LV10 確率 40% 防御 330%上昇/対象:弓・馬・器・騎\n模倣不可\n①防御 330%上昇する\n②敵軍部隊数×2.5%を防御効果に加算する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓・馬・器・騎　確率 40% / 防御 330%上昇+敵軍部隊数×2.5%を加算(模倣不可)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "月寂ノ想愛",
+   "rank": "A",
+   "afterSkill": "戦陣 凪",
+   "afterRank": "A",
+   "target": "弓・馬・器・騎",
+   "rate": "40%",
+   "effectShort": "防御 330%上昇(敵軍部隊数×2.5%を防御効果に加算・模倣不可)",
+   "afterTarget": "全 飛翔2",
+   "afterRate": "60%",
+   "afterEffectShort": "防御 110%上昇(自軍防御参加武将が30以上の時、防御効果2倍)"
+  },
+  {
+   "slot": "B",
+   "skill": "月寂ノ想愛",
+   "rank": "A",
+   "afterSkill": "戦陣 凪",
+   "afterRank": "A",
+   "target": "弓・馬・器・騎",
+   "rate": "40%",
+   "effectShort": "防御 330%上昇(敵軍部隊数×2.5%を防御効果に加算・模倣不可)",
+   "afterTarget": "全 飛翔2",
+   "afterRate": "60%",
+   "afterEffectShort": "防御 110%上昇(自軍防御参加武将が30以上の時、防御効果2倍)"
+  },
+  {
+   "slot": "C",
+   "skill": "黒鐘天鳴",
+   "rank": "A",
+   "afterSkill": "戦陣 吟詠",
+   "afterRank": "A",
+   "target": "槍・馬・器・鉄",
+   "rate": "40%",
+   "effectShort": "防御 200%上昇(敵軍部隊数×5%を防御効果に加算・模倣不可)",
+   "afterTarget": "全 卓越",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 340%上昇+防御 340%上昇+部隊内卓越追加確率+20%(模倣不可・特殊効果は自部隊内では重複不可)"
+  },
+  {
+   "slot": "S1",
+   "skill": "戦陣 凪",
+   "rank": "A",
+   "afterSkill": "海神ノ浮船",
+   "afterRank": "SS",
+   "target": "全 飛翔2",
+   "rate": "60%",
+   "effectShort": "防御 110%上昇(飛翔2・自軍防御参加武将が30以上の時、防御効果2倍)",
+   "afterTarget": "全 飛翔4",
+   "afterRate": "48%",
+   "afterEffectShort": "防御 (3.5×防御参加武将数)%上昇(敵軍飛翔持ち4人未満の時通常武将ダメージを受けない)"
+  },
+  {
+   "slot": "S2",
+   "skill": "戦陣 無縫",
+   "rank": "A",
+   "afterSkill": "天衣無縫神戒",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "42%",
+   "effectShort": "防御 (部隊総コスト依存)%上昇(総C25=351.03%)",
+   "afterTarget": "全",
+   "afterRate": "50%",
+   "afterEffectShort": "防御 (部隊総コスト依存)%上昇(総C25=393.79%)"
+  }
+ ],
+ "notes": [
+  "2026-08-23 新規登録(青丸)。極/極PS の欠番を機械的に洗い出して見つかった15枚のうちの1枚。ixanary カードページ(埋め込みJSON)・ixanary スキルページ・ixawiki カードページ・ixagno 個別記事の4系統を突き合わせた。**カード画像が存在しない**ため imageFull/imageChar は null、rankGrades は ixawiki を最上位の根拠にした(HINTS #17 に従い ixanary の統率ラベルは補正して2ソース目)。D-01(カード画像優先)を満たせないので黄丸化には画像が要る。",
+  "2026-08-23: 鍛錬(TR)は存在しない。ixanary のカード/スキルページとも LV1/LV10 のみ、ixawiki にも鍛錬表なし、ixagno blog-entry-9844 にも不掲載。trTable は LV10 の1行だけ。",
+  "2026-08-23: synthesisTable の各行の効果文は、DB内に既にある同じ組み合わせの行から機械的に写した(転記ミスを防ぐため)。組み合わせ自体は ixanary スキルページ・ixawiki・ixagno の3ソースで確認済み。",
+  "2026-08-23: 章は ixagno blog-entry-9781 +「【27章】2024年7月」(9769、本文に「【極】煕子、長宗我部信親」)で一次確認。",
+  "2026-08-23: 名前の（3）は ixagno のタイトル「煕子(3)【極】」で一次確認。極グループは 2221(2018-08-31)無印 / 2534(2020-10-01) / 2372(2024-07-03) の順。**あわせて 2534 の name を「煕子」から「煕子（2）」に直した**(そうしないと（2）が欠番に見えるため)。",
+  "2026-08-23: categoryLinks を付けていない。月寂ノ想愛の母数は「敵軍部隊数」で、skills-count-def.html が対象とする「(係数×防御参加武将数)%」型ではない。同型の 万里嵐壁 / 千重波ノ賦 / 坂西都督 も同一覧のエントリではない。",
+  "2026-08-23: **初期スキル 月寂ノ想愛 のページは 2026-08-22 に作られていたのに持ち主である 2372 が未登録というねじれた状態だった。**同ページの sourceCharacters には赤べこ(2616 S1枠)しか入っていなかった。"
+ ],
+ "reviewedOk": false,
+ "wikiOldestComment": "2024-07-03",
+ "wikiCommentCount": 4,
+ "chGuess": "27章"
+}
