@@ -130,10 +130,17 @@
   "カード画像照合済み(2026-08-16): 槍A/弓A/馬A/器X、攻1240/防1240/兵法700.0/指揮4890/コスト4.5も画像と一致。",
   "ixanary.com(/skills/謀神ノ経略/)生HTML照合(2026-08-16): LV1・LV10・TR1〜TR6の全段階が実在し、攻防600/730/980/1330/1740/1960%・卓越+50/+55/+60/+70/+100/+140%・TR6の飛翔40が現在のtrTableと完全一致。",
   "synthesisTable: ixanary.com(/skills/謀神ノ経略/、生HTML)とixawiki.com(index.php?BushoCard/1293毛利元就、生HTML、EUC-JP)の2ソースでA/B/C/S1/S2の1次候補を突き合わせ、A=開闢ノ逆鉾[SS]、B=戦華雄渾[SS]、C=千里必勝ノ神算[SS]、S1=千里必勝ノ神算[SS]、S2=月詠ノ覇威[SS](全枠自己参照)で一致を確認。ixawikiはB〜S2を[SSS]と表示していたが、ixanaryおよびサイト既存データ(各スキル5〜33件の他武将が既にSSで登録済み)がSSで揃っているためixawiki側の表記ゆれと判断。",
-  "data/skill/開闢ノ逆鉾.json・戦華雄渾.json・千里必勝ノ神算.json・月詠ノ覇威.jsonのsourceCharactersに1293が正しい枠(C・S1はまとめて記載)で登録済みであることを確認(A-3-11)。"
+  "data/skill/開闢ノ逆鉾.json・戦華雄渾.json・千里必勝ノ神算.json・月詠ノ覇威.jsonのsourceCharactersに1293が正しい枠(C・S1はまとめて記載)で登録済みであることを確認(A-3-11)。",
+  "2026-08-23: 天パラレル No.31293 を登録したので variants を張った。これまで variants を持つ武将は 1288 と 1303 の2件だけで、しかも両方ともリンク先のファイルが無いリンク切れだった(HINTS #25)。"
  ],
  "reviewedOk": false,
  "wikiOldestComment": "2025-08-10",
  "wikiCommentCount": 5,
- "chGuess": "30章"
+ "chGuess": "30章",
+ "variants": {
+  "parallel": {
+   "no": "31293",
+   "label": "パラレル"
+  }
+ }
 }
