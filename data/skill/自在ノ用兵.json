@@ -10,9 +10,23 @@
    "no": "7020",
    "slot": "A",
    "db": "kyoku"
+  },
+  {
+   "name": "筒井順慶",
+   "no": "2371",
+   "slot": "C・S1",
+   "db": "kyoku",
+   "note": [
+    "筒井順慶(2371)のsynthesisTable C・S1枠(2026-08-23)"
+   ]
   }
  ],
- "grantedViaSkills": [],
+ "grantedViaSkills": [
+  {
+   "skill": "風花讃武",
+   "rank": "A"
+  }
+ ],
  "ownHiddenCandidate": {
   "skill": "戦陣 神楽",
   "rank": "A"
@@ -27,6 +41,7 @@
  "notes": [
   "2026-08-16(No.7020黄丸化検証、A-3-9例外規定): 移植後合成候補の戦陣 神楽[A]が既にskills.htmlページを持つ(そのさらに先の遠呂智ノ閃光[SS]まで繋がる)ため、ランクAだが元スキル側として新規作成。",
   "ixanary.com(skills/自在ノ用兵)生HTML確認: LV1/LV10の2段のみでTRなし。合成テーブルはA枠1次=自在ノ用兵、2次=戦陣 神楽(斎藤朝信7020のsynthesisTable A枠と一致)。",
-  "戦陣 神楽.jsonのgrantedViaSkillsに本スキルを追加済み。"
+  "戦陣 神楽.jsonのgrantedViaSkillsに本スキルを追加済み。",
+  "2026-08-23: 風花讃武 の移植後としてこのスキルが手に入るため grantedViaSkills に追加した(A-3-12/S-12)。"
  ]
 }
