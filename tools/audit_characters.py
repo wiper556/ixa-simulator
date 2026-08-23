@@ -703,6 +703,70 @@ def main():
                 "No.%s %s の初期スキル: シミュ「%s」/ 正本「%s」"
                 % (no, nm, s.group(1), g["initialSkill"]))
 
+    # S-15: スキル側の sourceCharacters が武将側と噛み合っているか(2026-08-24)
+    #
+    # 逆引きは「武将→スキル」だけを見ていて、**スキル側に書いてある持ち主が
+    # 本当にそのスキルを持っているか**は誰も検査していなかった。
+    # 実際に7件の誤りが残っていた。内訳は
+    #   ・移植後(afterSkill)にしか出ないのに持ち主として並べていた 6件(A-3-12違反)
+    #   ・カード番号の取り違え 1件(龍驤虎躍に No.1238。正しくは No.1239)
+    _by_no = {str(g.get("no")): g for g in all_g}
+    for s in D["skills"]:
+        for c in s.get("sourceCharacters") or []:
+            no = str(c.get("no") or "")
+            g = _by_no.get(no)
+            if not g:
+                add("スキルの持ち主が正本に無い", "HIGH",
+                    "「%s」の持ち主 No.%s が正本に無い" % (s["name"], no))
+                continue
+            st = g.get("synthesisTable") or []
+            pre = {r.get("slot") for r in st if r.get("skill") == s["name"]}
+            if c.get("slot") == "移植不可":
+                if g.get("initialSkill") != s["name"]:
+                    add("スキルの持ち主が噛み合わない", "MID",
+                        "「%s」の No.%s %s: 移植不可と書いてあるが初期スキルは「%s」"
+                        % (s["name"], no, g.get("name"), g.get("initialSkill")))
+            elif not (set((c.get("slot") or "").split("・")) & pre):
+                post = {r.get("slot") for r in st
+                        if r.get("afterSkill") == s["name"] and r.get("skill") != s["name"]}
+                why = ("移植後にしか出ない(A-3-12によりgrantedViaSkillsに書く)"
+                       if post else "この武将はこのスキルを持っていない")
+                add("スキルの持ち主が噛み合わない", "MID",
+                    "「%s」の No.%s %s の枠 %s: %s"
+                    % (s["name"], no, g.get("name"), c.get("slot"), why))
+
+    # S-16: 武将側とスキル側で LV10 の効果の数値が食い違っていないか(2026-08-24)
+    #
+    # 突き合わせたら94件が違っていた。ほとんどは言い回しや中黒の差で実害が無いが、
+    # **3件はスキル側が効果そのものを落としていた**(天神旋武の防御と速度など)。
+    # 言い回しの差で鳴らすと埋もれるので、「攻撃/防御/速度/破壊 のN%上昇」の
+    # 組み合わせだけを比べる。
+    _EFF = re.compile(r"(攻撃|防御|速度|破壊)\s*([\d.]+)%上昇")
+    _skmap = {s["name"]: s for s in D["skills"]}
+    for g in all_g:
+        s = _skmap.get(g.get("initialSkill"))
+        if not s:
+            continue
+        a = (g.get("trTable") or [{}])[0].get("effect") or ""
+        b = (s.get("trTable") or [{}])[0].get("effect") or ""
+        if not a or not b:
+            continue
+        ea, eb = set(_EFF.findall(a)), set(_EFF.findall(b))
+        if not ea or not eb or ea == eb:
+            continue
+        miss = ea - eb
+        extra = eb - ea
+        if miss:
+            add("スキル側が効果を落としている", "MID",
+                "「%s」(No.%s %s): スキルページに %s が無い"
+                % (s["name"], g["no"], g.get("name"),
+                   "・".join("%s%s%%上昇" % x for x in sorted(miss))))
+        if extra:
+            add("武将側が効果を落としている", "MID",
+                "「%s」(No.%s %s): 武将側に %s が無い"
+                % (s["name"], g["no"], g.get("name"),
+                   "・".join("%s%s%%上昇" % x for x in sorted(extra))))
+
     # F-07: effectShort の接頭辞の剥がし損ね
     for g in all_g:
         for row in g.get("synthesisTable") or []:
