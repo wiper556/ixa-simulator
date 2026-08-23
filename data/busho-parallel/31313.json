@@ -6,7 +6,7 @@
  "cost": 5.5,
  "troop": "弓器焙騎攻",
  "sub": "",
- "effect": "卓越追加確率-60%だが発動すれば攻撃効果3倍",
+ "effect": "卓越追加確率+10%で発動すれば攻撃効果3倍",
  "illustrator": "直良有祐",
  "imageFull": "assets/img/characters/no31313_full.png",
  "imageChar": "assets/img/characters/no31313_char.png",
@@ -24,7 +24,7 @@
   "ki": "S"
  },
  "initialSkill": "十三ノ奇跡",
- "skillDetail": "S/LV10 確率 100% 攻撃 350%上昇/対象:弓・器・焙・騎　卓越\n①攻撃 350%上昇する\n②卓越の追加確率-60%で攻撃効果が3倍になる(卓越の追加確率が0%を超える時のみ卓越抽選される)",
+ "skillDetail": "S/TR6 確率 100% 攻撃 440%上昇/対象:弓・器・焙・騎　卓越\n①攻撃 440%上昇する\n②卓越の追加確率+10%で攻撃効果が3倍になる",
  "trTable": [
   {
    "level": "LV10",
@@ -126,7 +126,8 @@
   "章は、上記 ixagno の【パラレル天】一覧が 31286〜31297 を30章、31298〜31309 を31章と、元カードの章のまま並べていることに倣い、元カード(32章)に合わせて32章とした。32章分は同一覧に未掲載。",
   "スキルと合成テーブルは ixanary.com/skills/十三ノ奇跡/ の生HTMLで確認した。同ページは No.1313 と No.31313 の2枚を同じスキルの所持カードとして載せており、合成テーブル(1次/2次/3次)は1つしかない=元カードと同一。鍛錬表もこのページのLV10〜TR6の値で、元カードの登録内容と一致した。",
   "カード画像のスキル欄は「十三ノ奇跡TR6」表記で、効果量はTR6の値(攻撃440%上昇・卓越の追加確率+10%で3倍)が出ている。skillDetail はサイト共通の書式に合わせてLV10の値で書いてあるので、カード画像と数字が違って見えるのはそのため(TR6の値は鍛錬表のTR6行にある)。",
-  "data/skill/*.json の sourceCharacters にはこのパラレル版を足していない。元カード(No.1313)が同じ武将名・同じ枠で既に載っており二重に並ぶだけになること、tools/audit_characters.py の逆引き検査が parallelGenerals を対象にしていないこと、tools/register/wireup.py の find_general に busho-parallel が入っていないことによる。方針を変えるなら指示がほしい。"
+  "data/skill/*.json の sourceCharacters にはこのパラレル版を足していない。元カード(No.1313)が同じ武将名・同じ枠で既に載っており二重に並ぶだけになること、tools/audit_characters.py の逆引き検査が parallelGenerals を対象にしていないこと、tools/register/wireup.py の find_general に busho-parallel が入っていないことによる。方針を変えるなら指示がほしい。",
+  "2026-08-23 訂正: skillDetail と effect が親カードの LV10 の値のままだった。パラレルはカードが最初からスキル TR6 の状態で配られるので、親の trTable の TR6 行に合わせた。2026-08-16 に一括作成された 31310〜31315 の6枚がまとめてこの状態で、31316〜31321 の6枚は TR6 化されていた。当時の notes に「skillDetail はサイト共通の書式に合わせて LV10 の値で書いてある」と書かれていたが、TR6 で配られるカードに LV10 の数値を出すのは実態と食い違う。値は親の trTable TR6 行と ixanary のスキルページ TR6 行の2ソースで確認した。"
  ],
  "categoryLinks": [
   {

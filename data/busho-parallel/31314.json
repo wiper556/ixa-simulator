@@ -6,7 +6,7 @@
  "cost": 5,
  "troop": "砲器防",
  "sub": "",
- "effect": "防御参加武将数150以下の自領以外の加勢戦闘時、防御効果3倍",
+ "effect": "防御参加武将数300以下の自領以外の加勢戦闘時、防御効果3倍",
  "illustrator": "直良有祐",
  "imageFull": "assets/img/characters/no31314_full.png",
  "imageChar": "assets/img/characters/no31314_char.png",
@@ -24,7 +24,7 @@
   "ki": "SS"
  },
  "initialSkill": "鳳凰ノ幻華",
- "skillDetail": "S/LV10 確率 50% 防御 700%上昇/対象:砲・器\n①防御 700%上昇する\n②防御参加武将数が150以下の自領以外の加勢戦闘時防御効果が3倍になる",
+ "skillDetail": "S/TR6 確率 60% 防御 1000%上昇/対象:砲・器\n①防御 1000%上昇する\n②防御参加武将数が300以下の自領以外の加勢戦闘時防御効果が3倍になる",
  "trTable": [
   {
    "level": "LV10",
@@ -126,7 +126,8 @@
   "章は、上記 ixagno の【パラレル天】一覧が 31286〜31297 を30章、31298〜31309 を31章と、元カードの章のまま並べていることに倣い、元カード(32章)に合わせて32章とした。32章分は同一覧に未掲載。",
   "スキルと合成テーブルは ixanary.com/skills/鳳凰ノ幻華/ の生HTMLで確認した。同ページは No.1314 と No.31314 の2枚を同じスキルの所持カードとして載せており、合成テーブル(1次/2次/3次)は1つしかない=元カードと同一。鍛錬表もこのページのLV10〜TR6の値で、元カードの登録内容と一致した。",
   "カード画像のスキル欄は「鳳凰ノ幻華TR6」表記で、効果量はTR6の値(確率60%・防御1000%上昇・防御参加武将数300以下の自領以外の加勢で3倍)が出ている。skillDetail はサイト共通の書式に合わせてLV10の値で書いてあるので、カード画像と数字が違って見えるのはそのため(TR6の値は鍛錬表のTR6行にある)。",
-  "data/skill/*.json の sourceCharacters にはこのパラレル版を足していない。元カード(No.1314)が同じ武将名・同じ枠で既に載っており二重に並ぶだけになること、tools/audit_characters.py の逆引き検査が parallelGenerals を対象にしていないこと、tools/register/wireup.py の find_general に busho-parallel が入っていないことによる。方針を変えるなら指示がほしい。"
+  "data/skill/*.json の sourceCharacters にはこのパラレル版を足していない。元カード(No.1314)が同じ武将名・同じ枠で既に載っており二重に並ぶだけになること、tools/audit_characters.py の逆引き検査が parallelGenerals を対象にしていないこと、tools/register/wireup.py の find_general に busho-parallel が入っていないことによる。方針を変えるなら指示がほしい。",
+  "2026-08-23 訂正: skillDetail と effect が親カードの LV10 の値のままだった。パラレルはカードが最初からスキル TR6 の状態で配られるので、親の trTable の TR6 行に合わせた。2026-08-16 に一括作成された 31310〜31315 の6枚がまとめてこの状態で、31316〜31321 の6枚は TR6 化されていた。当時の notes に「skillDetail はサイト共通の書式に合わせて LV10 の値で書いてある」と書かれていたが、TR6 で配られるカードに LV10 の数値を出すのは実態と食い違う。値は親の trTable TR6 行と ixanary のスキルページ TR6 行の2ソースで確認した。"
  ],
  "reviewedOk": true,
  "wikiOldestComment": null,
