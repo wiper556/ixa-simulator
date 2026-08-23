@@ -1,0 +1,109 @@
+{
+ "name": "安藤守就",
+ "no": "5040",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "馬防",
+ "sub": "",
+ "effect": "馬防：10%上昇",
+ "furigana": "あんどうもりなり",
+ "illustrator": "内堀伶美",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 465,
+ "atkGrowth": 13.0,
+ "defBase": 520,
+ "defGrowth": 14.0,
+ "tacticsBase": 310.0,
+ "tacticsGrowth": 1.5,
+ "lv0Troops": 2030,
+ "rankGrades": {
+  "yari": null,
+  "yumi": null,
+  "uma": null,
+  "ki": null
+ },
+ "initialSkill": "騎馬隊堅守",
+ "skillDetail": "F/LV10 確率 20% 馬防：10%上昇/対象:馬\n①馬防：10%上昇",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "馬　確率 20% / 馬防：10%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "騎馬隊堅守",
+   "rank": "F",
+   "afterSkill": "騎馬隊襲撃",
+   "afterRank": "F",
+   "target": "馬",
+   "rate": "20%",
+   "effectShort": "馬防：10%上昇",
+   "afterTarget": "馬",
+   "afterRate": "20%",
+   "afterEffectShort": "馬攻：10%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "騎馬隊備え",
+   "rank": "F",
+   "afterSkill": "騎馬隊堅守",
+   "afterRank": "F",
+   "target": "馬",
+   "rate": "10%",
+   "effectShort": "防御 15%上昇",
+   "afterTarget": "馬",
+   "afterRate": "20%",
+   "afterEffectShort": "馬防：10%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "弓隊堅守",
+   "rank": "F",
+   "afterSkill": "弓隊襲撃",
+   "afterRank": "F",
+   "target": "弓",
+   "rate": "20%",
+   "effectShort": "防御 10%上昇",
+   "afterTarget": "弓",
+   "afterRate": "20%",
+   "afterEffectShort": "攻撃 10%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "騎馬隊襲撃",
+   "rank": "F",
+   "afterSkill": "騎馬隊堅守",
+   "afterRank": "F",
+   "target": "馬",
+   "rate": "20%",
+   "effectShort": "馬攻：10%上昇",
+   "afterTarget": "馬",
+   "afterRate": "20%",
+   "afterEffectShort": "馬防：10%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "騎馬隊堅陣",
+   "rank": "F",
+   "afterSkill": "騎馬隊奇襲",
+   "afterRank": "E",
+   "target": "馬",
+   "rate": "30%",
+   "effectShort": "馬防：12%上昇",
+   "afterTarget": "馬",
+   "afterRate": "30%",
+   "afterEffectShort": "馬攻：12%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/5040 と skills/騎馬隊堅守)およびixawiki(BushoCard/5040安藤守就)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

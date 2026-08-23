@@ -1,0 +1,106 @@
+{
+ "name": "飯田覚兵衛",
+ "no": "4157",
+ "ch": null,
+ "cost": 2.0,
+ "troop": "器攻",
+ "sub": "",
+ "effect": "破壊 20%上昇",
+ "furigana": "いいだかくべえ",
+ "illustrator": "みつなり都",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 580,
+ "atkGrowth": 18.0,
+ "defBase": 420,
+ "defGrowth": 15.0,
+ "tacticsBase": 420.0,
+ "tacticsGrowth": 1.5,
+ "lv0Troops": 1690,
+ "rankGrades": {
+  "yari": "C",
+  "yumi": "C",
+  "uma": "C",
+  "ki": "B"
+ },
+ "initialSkill": "亀甲車",
+ "skillDetail": "E/LV10 確率 30% 破壊 20%上昇/対象:器\n①破壊が20%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "器　確率 30% / 破壊 20%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "防壁砕き",
+   "rank": "E",
+   "afterSkill": "兵器運用術",
+   "afterRank": "E",
+   "target": "器",
+   "rate": "30%",
+   "effectShort": "破壊 12%上昇",
+   "afterTarget": "砲器",
+   "afterRate": "100%",
+   "afterEffectShort": "速度 25%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "弓隊挟撃",
+   "rank": "E",
+   "afterSkill": "弓隊守護",
+   "afterRank": "E",
+   "target": "弓",
+   "rate": "25%",
+   "effectShort": "攻撃 (コストx6.5) %上昇 / (武将のコストで効果が変化します)",
+   "afterTarget": "弓",
+   "afterRate": "25%",
+   "afterEffectShort": "弓防：13%上昇 / (武将のコストで効果が変化します)"
+  },
+  {
+   "slot": "C",
+   "skill": "鉄砲隊奇襲",
+   "rank": "E",
+   "afterSkill": "鉄砲隊堅陣",
+   "afterRank": "F",
+   "target": "砲",
+   "rate": "25%",
+   "effectShort": "攻撃 12%上昇",
+   "afterTarget": "砲",
+   "afterRate": "25%",
+   "afterEffectShort": "砲防：12%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "亀甲車",
+   "rank": "E",
+   "afterSkill": "亀甲車",
+   "afterRank": "E",
+   "target": "器",
+   "rate": "30%",
+   "effectShort": "破壊 20%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "国貫き",
+   "rank": "E",
+   "afterSkill": "兵器運用術",
+   "afterRank": "E",
+   "target": "器",
+   "rate": "25%",
+   "effectShort": "破壊 (コストx6.5) %上昇 / (武将のコストで効果が変化します)",
+   "afterTarget": "砲器",
+   "afterRate": "100%",
+   "afterEffectShort": "速度 25%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/4157 と skills/亀甲車)およびixawiki(BushoCard/4157飯田覚兵衛)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

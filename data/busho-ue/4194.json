@@ -1,0 +1,109 @@
+{
+ "name": "三好義継",
+ "no": "4194",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "砲攻",
+ "sub": "",
+ "effect": "攻撃 (コストx6.5) %上昇 / (武将のコストで効果が変化します)",
+ "furigana": "みよしよしつぐ",
+ "illustrator": "筒井海砂",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 620,
+ "atkGrowth": 16.0,
+ "defBase": 570,
+ "defGrowth": 15.0,
+ "tacticsBase": 430.0,
+ "tacticsGrowth": 1.5,
+ "lv0Troops": 2200,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "D",
+  "uma": "C",
+  "ki": "B"
+ },
+ "initialSkill": "鉄砲隊挟撃",
+ "skillDetail": "E/LV10 確率 20% 攻撃 (コストx6.5) %上昇 / (武将のコストで効果が変化します)/対象:砲\n①攻撃 (コストx6.5) %上昇 / (武将のコストで効果が変化します)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "砲　確率 20% / 攻撃 (コストx6.5) %上昇 / (武将のコストで効果が変化します)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "鉄砲隊挟撃",
+   "rank": "E",
+   "afterSkill": "鉄砲隊守護",
+   "afterRank": "E",
+   "target": "砲",
+   "rate": "20%",
+   "effectShort": "攻撃 (コストx6.5) %上昇 / (武将のコストで効果が変化します)",
+   "afterTarget": "砲",
+   "afterRate": "20%",
+   "afterEffectShort": "防御 (コストx6.5) %上昇 / (武将のコストで効果が変化します)"
+  },
+  {
+   "slot": "B",
+   "skill": "国貫き",
+   "rank": "E",
+   "afterSkill": "兵器運用術",
+   "afterRank": "E",
+   "target": "器",
+   "rate": "25%",
+   "effectShort": "破壊 (コストx6.5) %上昇 / (武将のコストで効果が変化します)",
+   "afterTarget": "砲器",
+   "afterRate": "100%",
+   "afterEffectShort": "速度 25%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "兵器運用術",
+   "rank": "E",
+   "afterSkill": "兵器突撃",
+   "afterRank": "F",
+   "target": "砲器",
+   "rate": "100%",
+   "effectShort": "速度 25%上昇",
+   "afterTarget": "器",
+   "afterRate": "15%",
+   "afterEffectShort": "攻撃 20%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "鉄砲隊守護",
+   "rank": "E",
+   "afterSkill": "鉄砲隊挟撃",
+   "afterRank": "E",
+   "target": "砲",
+   "rate": "20%",
+   "effectShort": "防御 (コストx6.5) %上昇 / (武将のコストで効果が変化します)",
+   "afterTarget": "砲",
+   "afterRate": "20%",
+   "afterEffectShort": "攻撃 (コストx6.5) %上昇 / (武将のコストで効果が変化します)"
+  },
+  {
+   "slot": "S2",
+   "skill": "鉄砲隊剛撃",
+   "rank": "D",
+   "afterSkill": "三段撃 烈火",
+   "afterRank": "C",
+   "target": "砲",
+   "rate": "30%",
+   "effectShort": "攻撃 20%上昇",
+   "afterTarget": "槍砲",
+   "afterRate": "15%",
+   "afterEffectShort": "攻撃 (コストx9) %上昇 / (武将のコストで効果が変化します)"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/4194 と skills/鉄砲隊挟撃)およびixawiki(BushoCard/4194三好義継)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

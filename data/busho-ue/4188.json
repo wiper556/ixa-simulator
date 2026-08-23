@@ -1,0 +1,106 @@
+{
+ "name": "夏目吉信",
+ "no": "4188",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "槍防",
+ "sub": "",
+ "effect": "防御 26%上昇",
+ "furigana": "なつめよしのぶ",
+ "illustrator": "Lack",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 550,
+ "atkGrowth": 15.0,
+ "defBase": 560,
+ "defGrowth": 16.0,
+ "tacticsBase": 410.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2050,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "B",
+  "uma": "C",
+  "ki": "D"
+ },
+ "initialSkill": "忠節の槍",
+ "skillDetail": "F/LV10 確率 12% 防御 26%上昇/対象:槍\n①防御が26%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍　確率 12% / 防御 26%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "槍隊進撃",
+   "rank": "F",
+   "afterSkill": "槍隊襲撃",
+   "afterRank": "F",
+   "target": "槍",
+   "rate": "10%",
+   "effectShort": "槍攻：15%上昇",
+   "afterTarget": "槍",
+   "afterRate": "20%",
+   "afterEffectShort": "攻撃 10%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "槍隊襲撃",
+   "rank": "F",
+   "afterSkill": "槍隊堅守",
+   "afterRank": "F",
+   "target": "槍",
+   "rate": "20%",
+   "effectShort": "攻撃 10%上昇",
+   "afterTarget": "槍",
+   "afterRate": "20%",
+   "afterEffectShort": "槍防：10%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "槍隊奇襲",
+   "rank": "E",
+   "afterSkill": "槍隊堅陣",
+   "afterRank": "F",
+   "target": "槍",
+   "rate": "30%",
+   "effectShort": "攻撃 12%上昇",
+   "afterTarget": "槍",
+   "afterRate": "30%",
+   "afterEffectShort": "槍防：12%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "忠節の槍",
+   "rank": "F",
+   "afterSkill": "忠節の槍",
+   "afterRank": "F",
+   "target": "槍",
+   "rate": "12%",
+   "effectShort": "防御 26%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "槍撃の真髄",
+   "rank": "E",
+   "afterSkill": "槍衾",
+   "afterRank": "D",
+   "target": "槍",
+   "rate": "20%",
+   "effectShort": "攻撃 15%上昇",
+   "afterTarget": "槍器",
+   "afterRate": "30%",
+   "afterEffectShort": "防御 25%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/4188 と skills/忠節の槍)およびixawiki(BushoCard/4188夏目吉信)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

@@ -1,0 +1,109 @@
+{
+ "name": "円城寺信胤",
+ "no": "5034",
+ "ch": null,
+ "cost": 2.0,
+ "troop": "弓攻",
+ "sub": "",
+ "effect": "攻撃 10%上昇",
+ "furigana": "えんじょうじのぶたね",
+ "illustrator": "ブリッツ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 515,
+ "atkGrowth": 14.0,
+ "defBase": 315,
+ "defGrowth": 11.0,
+ "tacticsBase": 155.0,
+ "tacticsGrowth": 1.0,
+ "lv0Troops": 1700,
+ "rankGrades": {
+  "yari": null,
+  "yumi": null,
+  "uma": null,
+  "ki": null
+ },
+ "initialSkill": "弓隊襲撃",
+ "skillDetail": "F/LV10 確率 20% 攻撃 10%上昇/対象:弓\n①攻撃が10%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓　確率 20% / 攻撃 10%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "弓隊襲撃",
+   "rank": "F",
+   "afterSkill": "弓隊堅守",
+   "afterRank": "F",
+   "target": "弓",
+   "rate": "20%",
+   "effectShort": "攻撃 10%上昇",
+   "afterTarget": "弓",
+   "afterRate": "20%",
+   "afterEffectShort": "防御 10%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "弓隊進撃",
+   "rank": "F",
+   "afterSkill": "弓隊襲撃",
+   "afterRank": "F",
+   "target": "弓",
+   "rate": "10%",
+   "effectShort": "弓攻：15%上昇",
+   "afterTarget": "弓",
+   "afterRate": "20%",
+   "afterEffectShort": "攻撃 10%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "槍隊襲撃",
+   "rank": "F",
+   "afterSkill": "槍隊堅守",
+   "afterRank": "F",
+   "target": "槍",
+   "rate": "20%",
+   "effectShort": "攻撃 10%上昇",
+   "afterTarget": "槍",
+   "afterRate": "20%",
+   "afterEffectShort": "槍防：10%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "弓隊堅守",
+   "rank": "F",
+   "afterSkill": "弓隊襲撃",
+   "afterRank": "F",
+   "target": "弓",
+   "rate": "20%",
+   "effectShort": "防御 10%上昇",
+   "afterTarget": "弓",
+   "afterRate": "20%",
+   "afterEffectShort": "攻撃 10%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "弓隊奇襲",
+   "rank": "E",
+   "afterSkill": "弓隊堅陣",
+   "afterRank": "F",
+   "target": "弓",
+   "rate": "30%",
+   "effectShort": "弓攻：12%上昇",
+   "afterTarget": "弓",
+   "afterRate": "30%",
+   "afterEffectShort": "防御 12%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/5034 と skills/弓隊襲撃)およびixawiki(BushoCard/5034円城寺信胤)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

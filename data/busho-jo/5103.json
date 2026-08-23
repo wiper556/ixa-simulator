@@ -1,0 +1,109 @@
+{
+ "name": "鳥屋尾満栄",
+ "no": "5103",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "弓砲攻",
+ "sub": "",
+ "effect": "攻撃 10%上昇",
+ "furigana": "とやのおみつひで",
+ "illustrator": "五浦マリ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 600,
+ "atkGrowth": 14.0,
+ "defBase": 590,
+ "defGrowth": 14.0,
+ "tacticsBase": 410.0,
+ "tacticsGrowth": 1.5,
+ "lv0Troops": 2010,
+ "rankGrades": {
+  "yari": "F",
+  "yumi": "B",
+  "uma": "F",
+  "ki": "C"
+ },
+ "initialSkill": "四風賢鳳",
+ "skillDetail": "F/LV10 確率 20% 攻撃 10%上昇/対象:弓砲\n①攻撃が10%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓砲　確率 20% / 攻撃 10%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "槍隊備え",
+   "rank": "F",
+   "afterSkill": "槍隊堅守",
+   "afterRank": "F",
+   "target": "槍",
+   "rate": "10%",
+   "effectShort": "防御 15%上昇",
+   "afterTarget": "槍",
+   "afterRate": "20%",
+   "afterEffectShort": "槍防：10%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "弓隊進撃",
+   "rank": "F",
+   "afterSkill": "弓隊襲撃",
+   "afterRank": "F",
+   "target": "弓",
+   "rate": "10%",
+   "effectShort": "弓攻：15%上昇",
+   "afterTarget": "弓",
+   "afterRate": "20%",
+   "afterEffectShort": "攻撃 10%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "防壁破り",
+   "rank": "F",
+   "afterSkill": "鉄砲隊備え",
+   "afterRank": "F",
+   "target": "器",
+   "rate": "16%",
+   "effectShort": "破壊 (コストx5) %上昇 / (武将のコストで効果が変化します)",
+   "afterTarget": "砲",
+   "afterRate": "8%",
+   "afterEffectShort": "砲防：15%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "槍隊堅守",
+   "rank": "F",
+   "afterSkill": "槍隊襲撃",
+   "afterRank": "F",
+   "target": "槍",
+   "rate": "20%",
+   "effectShort": "槍防：10%上昇",
+   "afterTarget": "槍",
+   "afterRate": "20%",
+   "afterEffectShort": "攻撃 10%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "弓撃の真髄",
+   "rank": "E",
+   "afterSkill": "三矢の教え",
+   "afterRank": "D",
+   "target": "弓",
+   "rate": "20%",
+   "effectShort": "攻撃 15%上昇",
+   "afterTarget": "槍弓",
+   "afterRate": "20%",
+   "afterEffectShort": "攻撃 20%上昇 / 破壊 5%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/5103 と skills/四風賢鳳)およびixawiki(BushoCard/5103鳥屋尾満栄)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

@@ -1,0 +1,109 @@
+{
+ "name": "扇谷定正",
+ "no": "5125",
+ "ch": null,
+ "cost": 2.0,
+ "troop": "槍馬攻",
+ "sub": "",
+ "effect": "攻撃 15%上昇 / 破壊 4%上昇",
+ "furigana": "おうぎがやつさだまさ",
+ "illustrator": "白藤与一",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 490,
+ "atkGrowth": 11.0,
+ "defBase": 550,
+ "defGrowth": 12.0,
+ "tacticsBase": 340.0,
+ "tacticsGrowth": 1.0,
+ "lv0Troops": 1710,
+ "rankGrades": {
+  "yari": "C",
+  "yumi": "C",
+  "uma": "C",
+  "ki": "F"
+ },
+ "initialSkill": "荒切武者",
+ "skillDetail": "F/LV10 確率 15% 攻撃 15%上昇 / 破壊 4%上昇/対象:槍馬\n①攻撃が15%上昇 / 破壊 4%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍馬　確率 15% / 攻撃 15%上昇 / 破壊 4%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "槍隊進撃",
+   "rank": "F",
+   "afterSkill": "槍隊襲撃",
+   "afterRank": "F",
+   "target": "槍",
+   "rate": "10%",
+   "effectShort": "槍攻：15%上昇",
+   "afterTarget": "槍",
+   "afterRate": "20%",
+   "afterEffectShort": "攻撃 10%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "騎馬隊備え",
+   "rank": "F",
+   "afterSkill": "騎馬隊堅守",
+   "afterRank": "F",
+   "target": "馬",
+   "rate": "10%",
+   "effectShort": "防御 15%上昇",
+   "afterTarget": "馬",
+   "afterRate": "20%",
+   "afterEffectShort": "馬防：10%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "荒切武者",
+   "rank": "F",
+   "afterSkill": "騎馬隊堅守",
+   "afterRank": "F",
+   "target": "槍馬",
+   "rate": "15%",
+   "effectShort": "攻撃 15%上昇 / 破壊 4%上昇",
+   "afterTarget": "馬",
+   "afterRate": "20%",
+   "afterEffectShort": "馬防：10%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "騎馬隊堅守",
+   "rank": "F",
+   "afterSkill": "騎馬隊襲撃",
+   "afterRank": "F",
+   "target": "馬",
+   "rate": "20%",
+   "effectShort": "馬防：10%上昇",
+   "afterTarget": "馬",
+   "afterRate": "20%",
+   "afterEffectShort": "馬攻：10%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "騎馬隊奇襲",
+   "rank": "E",
+   "afterSkill": "騎馬隊堅陣",
+   "afterRank": "F",
+   "target": "馬",
+   "rate": "30%",
+   "effectShort": "馬攻：12%上昇",
+   "afterTarget": "馬",
+   "afterRate": "30%",
+   "afterEffectShort": "馬防：12%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/5125 と skills/荒切武者)およびixawiki(BushoCard/5125扇谷定正)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

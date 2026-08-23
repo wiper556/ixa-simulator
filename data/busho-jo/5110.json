@@ -1,0 +1,109 @@
+{
+ "name": "柴田勝豊",
+ "no": "5110",
+ "ch": null,
+ "cost": 1.5,
+ "troop": "器防",
+ "sub": "",
+ "effect": "防御 20%上昇",
+ "furigana": "しばたかつとよ",
+ "illustrator": "葉山えいし",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 390,
+ "atkGrowth": 10.0,
+ "defBase": 410,
+ "defGrowth": 12.0,
+ "tacticsBase": 290.0,
+ "tacticsGrowth": 1.5,
+ "lv0Troops": 1220,
+ "rankGrades": {
+  "yari": "C",
+  "yumi": "D",
+  "uma": "D",
+  "ki": "C"
+ },
+ "initialSkill": "兵器布陣",
+ "skillDetail": "E/LV10 確率 15% 防御 20%上昇/対象:器\n①防御が20%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "器　確率 15% / 防御 20%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "兵器布陣",
+   "rank": "E",
+   "afterSkill": "城砕き",
+   "afterRank": "E",
+   "target": "器",
+   "rate": "15%",
+   "effectShort": "防御 20%上昇",
+   "afterTarget": "器",
+   "afterRate": "15%",
+   "afterEffectShort": "破壊 20%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "兵器突撃",
+   "rank": "F",
+   "afterSkill": "迅速行軍",
+   "afterRank": "E",
+   "target": "器",
+   "rate": "15%",
+   "effectShort": "攻撃 20%上昇",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "速度 20%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "兵器運用術",
+   "rank": "E",
+   "afterSkill": "兵器突撃",
+   "afterRank": "F",
+   "target": "砲器",
+   "rate": "100%",
+   "effectShort": "速度 25%上昇",
+   "afterTarget": "器",
+   "afterRate": "15%",
+   "afterEffectShort": "攻撃 20%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "城砕き",
+   "rank": "E",
+   "afterSkill": "防壁砕き",
+   "afterRank": "E",
+   "target": "器",
+   "rate": "15%",
+   "effectShort": "破壊 20%上昇",
+   "afterTarget": "器",
+   "afterRate": "30%",
+   "afterEffectShort": "破壊 12%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "槍衾",
+   "rank": "D",
+   "afterSkill": "義兵進軍",
+   "afterRank": "C",
+   "target": "槍器",
+   "rate": "30%",
+   "effectShort": "防御 25%上昇",
+   "afterTarget": "槍弓馬砲",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 7%上昇 / 速度 10%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/5110 と skills/兵器布陣)およびixawiki(BushoCard/5110柴田勝豊)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

@@ -1,0 +1,109 @@
+{
+ "name": "真田信綱",
+ "no": "4191",
+ "ch": null,
+ "cost": 1.5,
+ "troop": "馬防",
+ "sub": "",
+ "effect": "防御 (コストx6.5) %上昇 / (武将のコストで効果が変化します)",
+ "furigana": "さなだのぶつな",
+ "illustrator": "BISAI",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 630,
+ "atkGrowth": 16.0,
+ "defBase": 600,
+ "defGrowth": 15.0,
+ "tacticsBase": 420.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 1560,
+ "rankGrades": {
+  "yari": "C",
+  "yumi": "C",
+  "uma": "B",
+  "ki": "C"
+ },
+ "initialSkill": "騎馬隊守護",
+ "skillDetail": "E/LV10 確率 25% 防御 (コストx6.5) %上昇 / (武将のコストで効果が変化します)/対象:馬\n①防御 (コストx6.5) %上昇 / (武将のコストで効果が変化します)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "馬　確率 25% / 防御 (コストx6.5) %上昇 / (武将のコストで効果が変化します)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "騎馬隊守護",
+   "rank": "E",
+   "afterSkill": "騎馬隊挟撃",
+   "afterRank": "E",
+   "target": "馬",
+   "rate": "25%",
+   "effectShort": "防御 (コストx6.5) %上昇 / (武将のコストで効果が変化します)",
+   "afterTarget": "馬",
+   "afterRate": "25%",
+   "afterEffectShort": "攻撃 (コストx6.5) %上昇 / (武将のコストで効果が変化します)"
+  },
+  {
+   "slot": "B",
+   "skill": "弓隊守護",
+   "rank": "E",
+   "afterSkill": "弓隊挟撃",
+   "afterRank": "E",
+   "target": "弓",
+   "rate": "25%",
+   "effectShort": "弓防：13%上昇 / (武将のコストで効果が変化します)",
+   "afterTarget": "弓",
+   "afterRate": "25%",
+   "afterEffectShort": "攻撃 (コストx6.5) %上昇 / (武将のコストで効果が変化します)"
+  },
+  {
+   "slot": "C",
+   "skill": "槍隊守護",
+   "rank": "E",
+   "afterSkill": "槍隊挟撃",
+   "afterRank": "E",
+   "target": "槍",
+   "rate": "25%",
+   "effectShort": "防御 (コストx6.5) %上昇 / (武将のコストで効果が変化します)",
+   "afterTarget": "槍",
+   "afterRate": "25%",
+   "afterEffectShort": "槍攻：9.75%上昇 / (武将のコストで効果が変化します)"
+  },
+  {
+   "slot": "S1",
+   "skill": "騎馬隊挟撃",
+   "rank": "E",
+   "afterSkill": "騎馬隊守護",
+   "afterRank": "E",
+   "target": "馬",
+   "rate": "25%",
+   "effectShort": "攻撃 (コストx6.5) %上昇 / (武将のコストで効果が変化します)",
+   "afterTarget": "馬",
+   "afterRate": "25%",
+   "afterEffectShort": "防御 (コストx6.5) %上昇 / (武将のコストで効果が変化します)"
+  },
+  {
+   "slot": "S2",
+   "skill": "騎馬隊円陣",
+   "rank": "D",
+   "afterSkill": "真田丸",
+   "afterRank": "D",
+   "target": "馬",
+   "rate": "40%",
+   "effectShort": "防御 20%上昇",
+   "afterTarget": "槍馬砲",
+   "afterRate": "15%",
+   "afterEffectShort": "防御 +30%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/4191 と skills/騎馬隊守護)およびixawiki(BushoCard/4191真田信綱)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

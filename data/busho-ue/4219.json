@@ -1,0 +1,109 @@
+{
+ "name": "川上久朗",
+ "no": "4219",
+ "ch": null,
+ "cost": 2.0,
+ "troop": "弓攻",
+ "sub": "",
+ "effect": "弓攻：12%上昇",
+ "furigana": "かわかみひさあき",
+ "illustrator": "トミダトモミ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 630,
+ "atkGrowth": 17.0,
+ "defBase": 560,
+ "defGrowth": 16.0,
+ "tacticsBase": 420.0,
+ "tacticsGrowth": 1.5,
+ "lv0Troops": 1810,
+ "rankGrades": {
+  "yari": "D",
+  "yumi": "B",
+  "uma": "C",
+  "ki": "B"
+ },
+ "initialSkill": "弓隊奇襲",
+ "skillDetail": "E/LV10 確率 30% 弓攻：12%上昇/対象:弓\n①弓攻：12%上昇",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓　確率 30% / 弓攻：12%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "弓隊奇襲",
+   "rank": "E",
+   "afterSkill": "弓隊堅陣",
+   "afterRank": "F",
+   "target": "弓",
+   "rate": "30%",
+   "effectShort": "弓攻：12%上昇",
+   "afterTarget": "弓",
+   "afterRate": "30%",
+   "afterEffectShort": "防御 12%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "弓隊突撃",
+   "rank": "F",
+   "afterSkill": "弓隊奇襲",
+   "afterRank": "E",
+   "target": "弓",
+   "rate": "15%",
+   "effectShort": "攻撃 20%上昇",
+   "afterTarget": "弓",
+   "afterRate": "30%",
+   "afterEffectShort": "弓攻：12%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "槍隊奇襲",
+   "rank": "E",
+   "afterSkill": "槍隊堅陣",
+   "afterRank": "F",
+   "target": "槍",
+   "rate": "30%",
+   "effectShort": "攻撃 12%上昇",
+   "afterTarget": "槍",
+   "afterRate": "30%",
+   "afterEffectShort": "槍防：12%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "弓隊堅陣",
+   "rank": "F",
+   "afterSkill": "弓隊奇襲",
+   "afterRank": "E",
+   "target": "弓",
+   "rate": "30%",
+   "effectShort": "防御 12%上昇",
+   "afterTarget": "弓",
+   "afterRate": "30%",
+   "afterEffectShort": "弓攻：12%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "弓隊挟撃",
+   "rank": "E",
+   "afterSkill": "弓隊守護",
+   "afterRank": "E",
+   "target": "弓",
+   "rate": "25%",
+   "effectShort": "攻撃 (コストx6.5) %上昇 / (武将のコストで効果が変化します)",
+   "afterTarget": "弓",
+   "afterRate": "25%",
+   "afterEffectShort": "弓防：13%上昇 / (武将のコストで効果が変化します)"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/4219 と skills/弓隊奇襲)およびixawiki(BushoCard/4219川上久朗)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

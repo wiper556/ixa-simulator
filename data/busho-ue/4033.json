@@ -1,0 +1,109 @@
+{
+ "name": "高坂昌信",
+ "no": "4033",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "器攻",
+ "sub": "",
+ "effect": "攻撃 20%上昇",
+ "furigana": "こうさかまさのぶ",
+ "illustrator": "匡吉",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 500,
+ "atkGrowth": 15.0,
+ "defBase": 525,
+ "defGrowth": 15.0,
+ "tacticsBase": 420.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2030,
+ "rankGrades": {
+  "yari": null,
+  "yumi": null,
+  "uma": null,
+  "ki": null
+ },
+ "initialSkill": "兵器突撃",
+ "skillDetail": "F/LV10 確率 15% 攻撃 20%上昇/対象:器\n①攻撃が20%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "器　確率 15% / 攻撃 20%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "兵器突撃",
+   "rank": "F",
+   "afterSkill": "迅速行軍",
+   "afterRank": "E",
+   "target": "器",
+   "rate": "15%",
+   "effectShort": "攻撃 20%上昇",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "速度 20%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "兵器布陣",
+   "rank": "E",
+   "afterSkill": "城砕き",
+   "afterRank": "E",
+   "target": "器",
+   "rate": "15%",
+   "effectShort": "防御 20%上昇",
+   "afterTarget": "器",
+   "afterRate": "15%",
+   "afterEffectShort": "破壊 20%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "鉄砲隊突撃",
+   "rank": "F",
+   "afterSkill": "鉄砲隊奇襲",
+   "afterRank": "E",
+   "target": "砲",
+   "rate": "12%",
+   "effectShort": "攻撃 20%上昇",
+   "afterTarget": "砲",
+   "afterRate": "25%",
+   "afterEffectShort": "攻撃 12%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "迅速行軍",
+   "rank": "E",
+   "afterSkill": "弓隊突撃",
+   "afterRank": "F",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "速度 20%上昇",
+   "afterTarget": "弓",
+   "afterRate": "15%",
+   "afterEffectShort": "攻撃 20%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "兵器運用術",
+   "rank": "E",
+   "afterSkill": "兵器突撃",
+   "afterRank": "F",
+   "target": "砲器",
+   "rate": "100%",
+   "effectShort": "速度 25%上昇",
+   "afterTarget": "器",
+   "afterRate": "15%",
+   "afterEffectShort": "攻撃 20%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/4033 と skills/兵器突撃)およびixawiki(BushoCard/4033高坂昌信)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

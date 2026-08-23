@@ -1,0 +1,110 @@
+{
+ "name": "織田信雄",
+ "no": "4154",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "全攻",
+ "sub": "",
+ "effect": "攻撃戦闘勝利時のみ、敵軍1部隊の武将に追加ダメージ+10",
+ "furigana": "おだのぶかつ",
+ "illustrator": "都",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 600,
+ "atkGrowth": 15.0,
+ "defBase": 580,
+ "defGrowth": 14.0,
+ "tacticsBase": 420.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2050,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "C",
+  "uma": "C",
+  "ki": "B"
+ },
+ "initialSkill": "偽りの饗応",
+ "skillDetail": "E/LV10 確率 20% 攻撃戦闘勝利時のみ敵軍1部隊の武将に追加ダメージ+10/対象:全\n①攻撃戦闘勝利時のみ敵軍1部隊の武将に追加ダメージ+10",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 20% / 攻撃戦闘勝利時のみ、敵軍1部隊の武将に追加ダメージ+10"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "国貫き",
+   "rank": "E",
+   "afterSkill": "兵器運用術",
+   "afterRank": "E",
+   "target": "器",
+   "rate": "25%",
+   "effectShort": "破壊 (コストx6.5) %上昇 / (武将のコストで効果が変化します)",
+   "afterTarget": "砲器",
+   "afterRate": "100%",
+   "afterEffectShort": "速度 25%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "兵器布陣",
+   "rank": "E",
+   "afterSkill": "城砕き",
+   "afterRank": "E",
+   "target": "器",
+   "rate": "15%",
+   "effectShort": "防御 20%上昇",
+   "afterTarget": "器",
+   "afterRate": "15%",
+   "afterEffectShort": "破壊 20%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "偽りの饗応",
+   "rank": "E",
+   "afterSkill": "乗り崩し",
+   "afterRank": "D",
+   "target": "全",
+   "rate": "20%",
+   "effectShort": "攻撃戦闘勝利時のみ、敵軍1部隊の武将に追加ダメージ+10",
+   "afterTarget": "槍馬",
+   "afterRate": "20%",
+   "afterEffectShort": "攻撃 20%上昇 / 破壊 5%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "乗り崩し",
+   "rank": "D",
+   "afterSkill": "鬼刺",
+   "afterRank": "C",
+   "target": "槍馬",
+   "rate": "20%",
+   "effectShort": "攻撃 20%上昇 / 破壊 5%上昇",
+   "afterTarget": "槍馬砲",
+   "afterRate": "15%",
+   "afterEffectShort": "攻撃 (コストx9) %上昇 / (武将のコストで効果が変化します)"
+  },
+  {
+   "slot": "S2",
+   "skill": "謀殺",
+   "rank": "D",
+   "afterSkill": "鉄壁の備え",
+   "afterRank": "D",
+   "target": "全",
+   "rate": "15%",
+   "effectShort": "攻撃戦闘勝利時のみ、敵軍1部隊の武将に追加ダメージ+35",
+   "afterTarget": "全",
+   "afterRate": "40%",
+   "afterEffectShort": "防御 15%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/4154 と skills/偽りの饗応)およびixawiki(BushoCard/4154織田信雄)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。",
+  "2026-08-23: skillDetail に読点が混入していた(F-01違反)。ixanary の原文の読点をそのまま取り込んでいたので外した。"
+ ]
+}

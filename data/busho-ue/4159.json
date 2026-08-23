@@ -1,0 +1,109 @@
+{
+ "name": "本多忠朝",
+ "no": "4159",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "弓馬攻",
+ "sub": "",
+ "effect": "攻撃 15%上昇",
+ "furigana": "ほんだただとも",
+ "illustrator": "チェロキー",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 630,
+ "atkGrowth": 16.0,
+ "defBase": 470,
+ "defGrowth": 14.0,
+ "tacticsBase": 390.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2150,
+ "rankGrades": {
+  "yari": "C",
+  "yumi": "C",
+  "uma": "B",
+  "ki": "C"
+ },
+ "initialSkill": "慙愧の酒",
+ "skillDetail": "E/LV10 確率 20% 攻撃 15%上昇/対象:弓馬\n①攻撃が15%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓馬　確率 20% / 攻撃 15%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "四風賢鳳",
+   "rank": "F",
+   "afterSkill": "槍隊堅守",
+   "afterRank": "F",
+   "target": "弓砲",
+   "rate": "20%",
+   "effectShort": "攻撃 10%上昇",
+   "afterTarget": "槍",
+   "afterRate": "20%",
+   "afterEffectShort": "槍防：10%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "船穿応射",
+   "rank": "F",
+   "afterSkill": "迅速行軍",
+   "afterRank": "E",
+   "target": "槍砲",
+   "rate": "20%",
+   "effectShort": "防御 10%上昇",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "速度 20%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "兵器進撃",
+   "rank": "F",
+   "afterSkill": "鉄砲隊進撃",
+   "afterRank": "F",
+   "target": "器",
+   "rate": "10%",
+   "effectShort": "攻撃 15%上昇",
+   "afterTarget": "砲",
+   "afterRate": "8%",
+   "afterEffectShort": "攻撃 15%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "火竜の術",
+   "rank": "D",
+   "afterSkill": "謀殺",
+   "afterRank": "D",
+   "target": "弓器",
+   "rate": "20%",
+   "effectShort": "攻撃 15%上昇 / 破壊 15%上昇",
+   "afterTarget": "全",
+   "afterRate": "15%",
+   "afterEffectShort": "攻撃戦闘勝利時のみ、敵軍1部隊の武将に追加ダメージ+35"
+  },
+  {
+   "slot": "S2",
+   "skill": "乗り崩し",
+   "rank": "D",
+   "afterSkill": "鬼刺",
+   "afterRank": "C",
+   "target": "槍馬",
+   "rate": "20%",
+   "effectShort": "攻撃 20%上昇 / 破壊 5%上昇",
+   "afterTarget": "槍馬砲",
+   "afterRate": "15%",
+   "afterEffectShort": "攻撃 (コストx9) %上昇 / (武将のコストで効果が変化します)"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/4159 と skills/慙愧の酒)およびixawiki(BushoCard/4159本多忠朝)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

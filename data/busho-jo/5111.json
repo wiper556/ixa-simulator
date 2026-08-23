@@ -1,0 +1,109 @@
+{
+ "name": "平岡頼勝",
+ "no": "5111",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "全攻",
+ "sub": "",
+ "effect": "速度 20%上昇",
+ "furigana": "ひらおかよりかつ",
+ "illustrator": "ZEN丸",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 550,
+ "atkGrowth": 14.0,
+ "defBase": 520,
+ "defGrowth": 13.0,
+ "tacticsBase": 320.0,
+ "tacticsGrowth": 1.5,
+ "lv0Troops": 2050,
+ "rankGrades": {
+  "yari": "C",
+  "yumi": "D",
+  "uma": "C",
+  "ki": "D"
+ },
+ "initialSkill": "迅速行軍",
+ "skillDetail": "E/LV10 確率 100% 速度 20%上昇/対象:全\n①速度が20%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 速度 20%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "迅速行軍",
+   "rank": "E",
+   "afterSkill": "弓隊突撃",
+   "afterRank": "F",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "速度 20%上昇",
+   "afterTarget": "弓",
+   "afterRate": "15%",
+   "afterEffectShort": "攻撃 20%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "鉄砲隊布陣",
+   "rank": "E",
+   "afterSkill": "鉄砲隊堅陣",
+   "afterRank": "F",
+   "target": "砲",
+   "rate": "12%",
+   "effectShort": "防御 20%上昇",
+   "afterTarget": "砲",
+   "afterRate": "25%",
+   "afterEffectShort": "砲防：12%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "騎馬隊突撃",
+   "rank": "F",
+   "afterSkill": "騎馬隊奇襲",
+   "afterRank": "E",
+   "target": "馬",
+   "rate": "15%",
+   "effectShort": "攻撃 20%上昇",
+   "afterTarget": "馬",
+   "afterRate": "30%",
+   "afterEffectShort": "馬攻：12%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "弓隊突撃",
+   "rank": "F",
+   "afterSkill": "弓隊奇襲",
+   "afterRank": "E",
+   "target": "弓",
+   "rate": "15%",
+   "effectShort": "攻撃 20%上昇",
+   "afterTarget": "弓",
+   "afterRate": "30%",
+   "afterEffectShort": "弓攻：12%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "神行法",
+   "rank": "D",
+   "afterSkill": "謀殺",
+   "afterRank": "D",
+   "target": "器",
+   "rate": "100%",
+   "effectShort": "速度 35%上昇",
+   "afterTarget": "全",
+   "afterRate": "15%",
+   "afterEffectShort": "攻撃戦闘勝利時のみ、敵軍1部隊の武将に追加ダメージ+35"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/5111 と skills/迅速行軍)およびixawiki(BushoCard/5111平岡頼勝)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

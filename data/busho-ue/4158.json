@@ -1,0 +1,106 @@
+{
+ "name": "大谷吉治",
+ "no": "4158",
+ "ch": null,
+ "cost": 2.0,
+ "troop": "槍弓防",
+ "sub": "",
+ "effect": "防御 20%上昇",
+ "furigana": "おおたによしはる",
+ "illustrator": "みつなり都",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 540,
+ "atkGrowth": 16.0,
+ "defBase": 420,
+ "defGrowth": 15.0,
+ "tacticsBase": 400.0,
+ "tacticsGrowth": 1.5,
+ "lv0Troops": 1680,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "B",
+  "uma": "C",
+  "ki": "C"
+ },
+ "initialSkill": "鐘切り",
+ "skillDetail": "E/LV10 確率 20% 防御 20%上昇/対象:槍弓\n①防御が20%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍弓　確率 20% / 防御 20%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "荒切武者",
+   "rank": "F",
+   "afterSkill": "騎馬隊堅守",
+   "afterRank": "F",
+   "target": "槍馬",
+   "rate": "15%",
+   "effectShort": "攻撃 15%上昇 / 破壊 4%上昇",
+   "afterTarget": "馬",
+   "afterRate": "20%",
+   "afterEffectShort": "馬防：10%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "水狼跋扈",
+   "rank": "E",
+   "afterSkill": "剣術 守乃型",
+   "afterRank": "E",
+   "target": "槍弓砲",
+   "rate": "10%",
+   "effectShort": "防御 20%上昇",
+   "afterTarget": "将",
+   "afterRate": "30%",
+   "afterEffectShort": "防御 20%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "城破り",
+   "rank": "F",
+   "afterSkill": "槍隊急襲",
+   "afterRank": "F",
+   "target": "器",
+   "rate": "10%",
+   "effectShort": "破壊 15%上昇",
+   "afterTarget": "槍",
+   "afterRate": "16%",
+   "afterEffectShort": "槍攻：7.5%上昇 / (武将のコストで効果が変化します)"
+  },
+  {
+   "slot": "S1",
+   "skill": "夜叉の構え",
+   "rank": "E",
+   "afterSkill": "夜叉の構え",
+   "afterRank": "E",
+   "target": "槍弓器",
+   "rate": "20%",
+   "effectShort": "防御 15%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "足軽軍法",
+   "rank": "D",
+   "afterSkill": "乗り崩し",
+   "afterRank": "D",
+   "target": "槍器",
+   "rate": "15%",
+   "effectShort": "攻撃 (コストx9) %上昇 / (武将のコストで効果が変化します)",
+   "afterTarget": "槍馬",
+   "afterRate": "20%",
+   "afterEffectShort": "攻撃 20%上昇 / 破壊 5%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/4158 と skills/鐘切り)およびixawiki(BushoCard/4158大谷吉治)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

@@ -1,0 +1,103 @@
+{
+ "name": "根岸兎角",
+ "no": "4147",
+ "ch": null,
+ "cost": 2.0,
+ "troop": "将攻",
+ "sub": "",
+ "effect": "攻撃 35%上昇 確率：+30% / 速度 15%上昇",
+ "furigana": "ねぎしとかく",
+ "illustrator": "NAKAGAWA",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 880,
+ "atkGrowth": 40.0,
+ "defBase": 880,
+ "defGrowth": 40.0,
+ "tacticsBase": 180.0,
+ "tacticsGrowth": 1.5,
+ "lv0Troops": 1200,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "C",
+  "uma": "B",
+  "ki": "C"
+ },
+ "initialSkill": "虚：微塵流",
+ "skillDetail": "D/LV10 確率 30% 攻撃 35%上昇 確率：+30% / 速度 15%上昇/対象:将\n①攻撃が35%上昇 確率：+30% / 速度 15%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "将　確率 30% / 攻撃 35%上昇 確率：+30% / 速度 15%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "迅速行軍",
+   "rank": "E",
+   "afterSkill": "弓隊突撃",
+   "afterRank": "F",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "速度 20%上昇",
+   "afterTarget": "弓",
+   "afterRate": "15%",
+   "afterEffectShort": "攻撃 20%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "宝蔵院流",
+   "rank": "D",
+   "afterSkill": "鬼刺",
+   "afterRank": "C",
+   "target": "将",
+   "rate": "35%",
+   "effectShort": "防御 30%上昇",
+   "afterTarget": "槍馬砲",
+   "afterRate": "15%",
+   "afterEffectShort": "攻撃 (コストx9) %上昇 / (武将のコストで効果が変化します)"
+  },
+  {
+   "slot": "C",
+   "skill": "新陰流",
+   "rank": "C",
+   "afterSkill": "大ふへん者",
+   "afterRank": "D",
+   "target": "将",
+   "rate": "35%",
+   "effectShort": "攻撃 30%上昇",
+   "afterTarget": "将",
+   "afterRate": "5%",
+   "afterEffectShort": "攻撃 40%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "虚：微塵流",
+   "rank": "D",
+   "afterSkill": "虚：微塵流",
+   "afterRank": "D",
+   "target": "将",
+   "rate": "30%",
+   "effectShort": "攻撃 35%上昇 確率：+30% / 速度 15%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "剣豪将軍",
+   "rank": "B",
+   "afterSkill": "剣豪将軍",
+   "afterRank": "B",
+   "target": "将",
+   "rate": "35%",
+   "effectShort": "攻撃 35%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/4147 と skills/虚：微塵流)およびixawiki(BushoCard/4147根岸兎角)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

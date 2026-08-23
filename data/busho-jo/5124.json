@@ -1,0 +1,106 @@
+{
+ "name": "内ヶ島氏理",
+ "no": "5124",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "馬砲防",
+ "sub": "",
+ "effect": "防御 15%上昇",
+ "furigana": "うちがしまうじまさ",
+ "illustrator": "菅野",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 600,
+ "atkGrowth": 17.0,
+ "defBase": 380,
+ "defGrowth": 14.0,
+ "tacticsBase": 380.0,
+ "tacticsGrowth": 1.5,
+ "lv0Troops": 1900,
+ "rankGrades": {
+  "yari": "D",
+  "yumi": "E",
+  "uma": "D",
+  "ki": "A"
+ },
+ "initialSkill": "夜叉熊",
+ "skillDetail": "F/LV10 確率 10% 防御 15%上昇/対象:馬砲\n①防御が15%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "馬砲　確率 10% / 防御 15%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "弓隊守備",
+   "rank": "F",
+   "afterSkill": "弓隊急襲",
+   "afterRank": "F",
+   "target": "弓",
+   "rate": "16%",
+   "effectShort": "防御 (コストx6) %上昇 / (武将のコストで効果が変化します)",
+   "afterTarget": "弓",
+   "afterRate": "16%",
+   "afterEffectShort": "攻撃 (コストx5) %上昇 / (武将のコストで効果が変化します)"
+  },
+  {
+   "slot": "B",
+   "skill": "迅速行軍",
+   "rank": "E",
+   "afterSkill": "弓隊突撃",
+   "afterRank": "F",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "速度 20%上昇",
+   "afterTarget": "弓",
+   "afterRate": "15%",
+   "afterEffectShort": "攻撃 20%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "馬廻御奉行",
+   "rank": "F",
+   "afterSkill": "剣術 攻乃型",
+   "afterRank": "E",
+   "target": "馬器",
+   "rate": "12%",
+   "effectShort": "攻撃 8.5%上昇 / 破壊 8%上昇",
+   "afterTarget": "将",
+   "afterRate": "30%",
+   "afterEffectShort": "攻撃 20%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "夜叉熊",
+   "rank": "F",
+   "afterSkill": "夜叉熊",
+   "afterRank": "F",
+   "target": "馬砲",
+   "rate": "10%",
+   "effectShort": "防御 15%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "国貫き",
+   "rank": "E",
+   "afterSkill": "兵器運用術",
+   "afterRank": "E",
+   "target": "器",
+   "rate": "25%",
+   "effectShort": "破壊 (コストx6.5) %上昇 / (武将のコストで効果が変化します)",
+   "afterTarget": "砲器",
+   "afterRate": "100%",
+   "afterEffectShort": "速度 25%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/5124 と skills/夜叉熊)およびixawiki(BushoCard/5124内ヶ島氏理)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

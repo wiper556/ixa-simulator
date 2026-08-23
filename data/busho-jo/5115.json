@@ -1,0 +1,109 @@
+{
+ "name": "太田左近",
+ "no": "5115",
+ "ch": null,
+ "cost": 2.0,
+ "troop": "槍砲防",
+ "sub": "",
+ "effect": "防御 10%上昇",
+ "furigana": "おおたさこん",
+ "illustrator": "磯部泰久",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 440,
+ "atkGrowth": 12.0,
+ "defBase": 570,
+ "defGrowth": 15.0,
+ "tacticsBase": 330.0,
+ "tacticsGrowth": 1.5,
+ "lv0Troops": 1480,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "E",
+  "uma": "E",
+  "ki": "B"
+ },
+ "initialSkill": "船穿応射",
+ "skillDetail": "F/LV10 確率 20% 防御 10%上昇/対象:槍砲\n①防御が10%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍砲　確率 20% / 防御 10%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "防壁砕き",
+   "rank": "E",
+   "afterSkill": "兵器運用術",
+   "afterRank": "E",
+   "target": "器",
+   "rate": "30%",
+   "effectShort": "破壊 12%上昇",
+   "afterTarget": "砲器",
+   "afterRate": "100%",
+   "afterEffectShort": "速度 25%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "鉄砲隊堅陣",
+   "rank": "F",
+   "afterSkill": "鉄砲隊奇襲",
+   "afterRank": "E",
+   "target": "砲",
+   "rate": "25%",
+   "effectShort": "砲防：12%上昇",
+   "afterTarget": "砲",
+   "afterRate": "25%",
+   "afterEffectShort": "攻撃 12%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "伏僧嘗胆",
+   "rank": "E",
+   "afterSkill": "弓隊挟撃",
+   "afterRank": "E",
+   "target": "弓砲",
+   "rate": "22%",
+   "effectShort": "防御 12%上昇",
+   "afterTarget": "弓",
+   "afterRate": "25%",
+   "afterEffectShort": "攻撃 (コストx6.5) %上昇 / (武将のコストで効果が変化します)"
+  },
+  {
+   "slot": "S1",
+   "skill": "迅速行軍",
+   "rank": "E",
+   "afterSkill": "弓隊突撃",
+   "afterRank": "F",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "速度 20%上昇",
+   "afterTarget": "弓",
+   "afterRate": "15%",
+   "afterEffectShort": "攻撃 20%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "鉄砲隊守護",
+   "rank": "E",
+   "afterSkill": "鉄砲隊挟撃",
+   "afterRank": "E",
+   "target": "砲",
+   "rate": "20%",
+   "effectShort": "防御 (コストx6.5) %上昇 / (武将のコストで効果が変化します)",
+   "afterTarget": "砲",
+   "afterRate": "20%",
+   "afterEffectShort": "攻撃 (コストx6.5) %上昇 / (武将のコストで効果が変化します)"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/5115 と skills/船穿応射)およびixawiki(BushoCard/5115太田左近)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

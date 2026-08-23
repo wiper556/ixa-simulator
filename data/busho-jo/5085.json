@@ -1,0 +1,109 @@
+{
+ "name": "馬場信房",
+ "no": "5085",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "弓攻",
+ "sub": "",
+ "effect": "攻撃 (コストx5) %上昇 / (武将のコストで効果が変化します)",
+ "furigana": "ばばのぶふさ",
+ "illustrator": "takasho/Produce by 歌広場淳",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 550,
+ "atkGrowth": 13.0,
+ "defBase": 550,
+ "defGrowth": 13.0,
+ "tacticsBase": 250.0,
+ "tacticsGrowth": 1.5,
+ "lv0Troops": 1980,
+ "rankGrades": {
+  "yari": null,
+  "yumi": null,
+  "uma": null,
+  "ki": null
+ },
+ "initialSkill": "金爆 弓撃",
+ "skillDetail": "F/LV10 確率 16% 攻撃 (コストx5) %上昇 / (武将のコストで効果が変化します)/対象:弓\n①攻撃 (コストx5) %上昇 / (武将のコストで効果が変化します)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓　確率 16% / 攻撃 (コストx5) %上昇 / (武将のコストで効果が変化します)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "金爆 弓撃",
+   "rank": "F",
+   "afterSkill": "弓撃の真髄",
+   "afterRank": "E",
+   "target": "弓",
+   "rate": "16%",
+   "effectShort": "攻撃 (コストx5) %上昇 / (武将のコストで効果が変化します)",
+   "afterTarget": "弓",
+   "afterRate": "20%",
+   "afterEffectShort": "攻撃 15%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "弓隊布陣",
+   "rank": "E",
+   "afterSkill": "弓隊堅陣",
+   "afterRank": "F",
+   "target": "弓",
+   "rate": "15%",
+   "effectShort": "防御 20%上昇",
+   "afterTarget": "弓",
+   "afterRate": "30%",
+   "afterEffectShort": "防御 12%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "謀殺",
+   "rank": "D",
+   "afterSkill": "鉄壁の備え",
+   "afterRank": "D",
+   "target": "全",
+   "rate": "15%",
+   "effectShort": "攻撃戦闘勝利時のみ、敵軍1部隊の武将に追加ダメージ+35",
+   "afterTarget": "全",
+   "afterRate": "40%",
+   "afterEffectShort": "防御 15%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "弓撃の真髄",
+   "rank": "E",
+   "afterSkill": "三矢の教え",
+   "afterRank": "D",
+   "target": "弓",
+   "rate": "20%",
+   "effectShort": "攻撃 15%上昇",
+   "afterTarget": "槍弓",
+   "afterRate": "20%",
+   "afterEffectShort": "攻撃 20%上昇 / 破壊 5%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "弓隊挟撃",
+   "rank": "E",
+   "afterSkill": "弓隊守護",
+   "afterRank": "E",
+   "target": "弓",
+   "rate": "25%",
+   "effectShort": "攻撃 (コストx6.5) %上昇 / (武将のコストで効果が変化します)",
+   "afterTarget": "弓",
+   "afterRate": "25%",
+   "afterEffectShort": "弓防：13%上昇 / (武将のコストで効果が変化します)"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/5085 と skills/金爆 弓撃)およびixawiki(BushoCard/5085馬場信房)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

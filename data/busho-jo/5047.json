@@ -1,0 +1,109 @@
+{
+ "name": "高山右近",
+ "no": "5047",
+ "ch": null,
+ "cost": 2.0,
+ "troop": "器攻",
+ "sub": "",
+ "effect": "破壊 (コストx5) %上昇 / (武将のコストで効果が変化します)",
+ "furigana": "たかやまうこん",
+ "illustrator": "遊木ときと",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 390,
+ "atkGrowth": 12.0,
+ "defBase": 350,
+ "defGrowth": 12.0,
+ "tacticsBase": 370.0,
+ "tacticsGrowth": 1.0,
+ "lv0Troops": 1810,
+ "rankGrades": {
+  "yari": null,
+  "yumi": null,
+  "uma": null,
+  "ki": null
+ },
+ "initialSkill": "防壁破り",
+ "skillDetail": "F/LV10 確率 16% 破壊 (コストx5) %上昇 / (武将のコストで効果が変化します)/対象:器\n①破壊 (コストx5) %上昇 / (武将のコストで効果が変化します)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "器　確率 16% / 破壊 (コストx5) %上昇 / (武将のコストで効果が変化します)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "防壁破り",
+   "rank": "F",
+   "afterSkill": "鉄砲隊備え",
+   "afterRank": "F",
+   "target": "器",
+   "rate": "16%",
+   "effectShort": "破壊 (コストx5) %上昇 / (武将のコストで効果が変化します)",
+   "afterTarget": "砲",
+   "afterRate": "8%",
+   "afterEffectShort": "砲防：15%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "弓隊備え",
+   "rank": "F",
+   "afterSkill": "弓隊堅守",
+   "afterRank": "F",
+   "target": "弓",
+   "rate": "10%",
+   "effectShort": "弓防：15%上昇",
+   "afterTarget": "弓",
+   "afterRate": "20%",
+   "afterEffectShort": "防御 10%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "城破り",
+   "rank": "F",
+   "afterSkill": "槍隊急襲",
+   "afterRank": "F",
+   "target": "器",
+   "rate": "10%",
+   "effectShort": "破壊 15%上昇",
+   "afterTarget": "槍",
+   "afterRate": "16%",
+   "afterEffectShort": "槍攻：7.5%上昇 / (武将のコストで効果が変化します)"
+  },
+  {
+   "slot": "S1",
+   "skill": "鉄砲隊備え",
+   "rank": "F",
+   "afterSkill": "防壁破り",
+   "afterRank": "F",
+   "target": "砲",
+   "rate": "8%",
+   "effectShort": "砲防：15%上昇",
+   "afterTarget": "器",
+   "afterRate": "16%",
+   "afterEffectShort": "破壊 (コストx5) %上昇 / (武将のコストで効果が変化します)"
+  },
+  {
+   "slot": "S2",
+   "skill": "国貫き",
+   "rank": "E",
+   "afterSkill": "兵器運用術",
+   "afterRank": "E",
+   "target": "器",
+   "rate": "25%",
+   "effectShort": "破壊 (コストx6.5) %上昇 / (武将のコストで効果が変化します)",
+   "afterTarget": "砲器",
+   "afterRate": "100%",
+   "afterEffectShort": "速度 25%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/5047 と skills/防壁破り)およびixawiki(BushoCard/5047高山右近)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}
