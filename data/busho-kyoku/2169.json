@@ -1,7 +1,7 @@
 {
  "name": "大内義隆",
  "no": "2169",
- "ch": null,
+ "ch": "11章",
  "cost": 2,
  "troop": "槍弓馬防",
  "sub": "",
@@ -35,6 +35,11 @@
  "reviewedOk": false,
  "notes": [
   "2026-08-18登録(担当B)。カード画像が無いため imageFull/imageChar は null。ixanary.com(cards/2169)の埋め込みJSONとixawiki.com(index.php?BushoCard/2169大内義隆)の生HTMLで、コスト/指揮兵数/攻撃防御兵法の初期値成長値/兵科ランク(槍A弓A馬A器B)/イラストレーター(小森ニコ)/スキルLV1数値(確率+10%/防御7.5%上昇/追加ダメージ+4)が完全一致することを確認して登録した。LV10の数値(確率25%/防御30%上昇/追加ダメージ+20)はixanaryのカードページに明記。",
-  "章(ch)は両ソースとも記載が無いため未確認。synthesisTableは今回付けていない。"
- ]
+  "章(ch)は両ソースとも記載が無いため未確認。synthesisTableは今回付けていない。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2016-04-26",
+ "wikiCommentCount": 58,
+ "chGuess": "11章",
+ "chSource": "wikiOldestComment"
 }

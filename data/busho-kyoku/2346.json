@@ -1,7 +1,7 @@
 {
  "name": "加藤貞泰",
  "no": "2346",
- "ch": null,
+ "ch": "25章",
  "cost": 4,
  "troop": "槍弓鉄焙攻",
  "sub": "飛翔5",
@@ -35,6 +35,11 @@
  "reviewedOk": false,
  "notes": [
   "2026-08-18登録(担当J・第2波・カード画像なし)。ixanary.com(cards/2346)生HTMLとixawiki.com(index.php?BushoCard/2346加藤貞泰、およびBusho/武将カード一覧(極))の2ソースでコスト/指揮兵数/統率ランク/攻撃防御兵法の初期値成長値/スキル効果(LV1・LV10)が完全一致することを確認して登録した。",
-  "通常確率では発動せず卓越のみで発動する形式のため、既存の類似書式(busho-kyoku-ps/2582等)に合わせてskillDetailヘッダーを「卓越:追加確率N%で発動」の形にした。"
- ]
+  "通常確率では発動せず卓越のみで発動する形式のため、既存の類似書式(busho-kyoku-ps/2582等)に合わせてskillDetailヘッダーを「卓越:追加確率N%で発動」の形にした。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2023-06-01",
+ "wikiCommentCount": 13,
+ "chGuess": "25章",
+ "chSource": "wikiOldestComment"
 }

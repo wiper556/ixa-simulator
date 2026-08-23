@@ -1,7 +1,7 @@
 {
  "name": "上泉信綱",
  "no": "2421",
- "ch": null,
+ "ch": "18章",
  "cost": 3.5,
  "troop": "槍器鉄防",
  "sub": "",
@@ -35,6 +35,11 @@
  "reviewedOk": false,
  "notes": [
   "カード画像が無いため imageFull/imageChar は null。ixanary.comの埋め込みJSON(cards/2421)とixawiki.com(BushoCard/2421上泉信綱)の基本ステータス表・スキル表を突き合わせて登録した。",
-  "兵法の初期値はixanary(480)とixawiki(490)で食い違ったためtacticsBaseをnullにした。攻撃防御の基礎値成長値・兵法成長値・cost・指揮兵数・rankGrades・スキル数値は両ソース一致。"
- ]
+  "兵法の初期値はixanary(480)とixawiki(490)で食い違ったためtacticsBaseをnullにした。攻撃防御の基礎値成長値・兵法成長値・cost・指揮兵数・rankGrades・スキル数値は両ソース一致。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2019-12-02",
+ "wikiCommentCount": 91,
+ "chGuess": "18章",
+ "chSource": "wikiOldestComment"
 }

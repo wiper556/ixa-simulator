@@ -1,7 +1,7 @@
 {
  "name": "立花誾千代",
  "no": "2055",
- "ch": null,
+ "ch": "5章",
  "cost": 3,
  "troop": "槍馬攻",
  "sub": "",
@@ -33,6 +33,11 @@
   "assign_F.txtの3列目(元表記)は文字化けしていたため名前を直接読めなかったが、ixanary.com(cards/2055)のtitle「No.2055 立花誾千代 旋風華憐」と、ixawiki.comの編集ページのURL/page_name(BushoCard/2055立花誾千代)の両方から名前を「立花誾千代」と確定した。",
   "rankGradesはixawikiで裏取りできずixanary単独のためnullにした(参考値:ixanary記載は槍S/弓B/馬A/器B)。cost・lv0Troops・攻撃防御兵法の初期値/成長値・スキル情報もixanary単独ソースであり、二重確認できていない旨をここに明記する。",
   "初期スキル「旋風華憐」LV1(確率+15%/対象槍馬/攻撃15%上昇)・LV10(確率+30%/対象槍馬/攻撃35%上昇)はいずれもixanary単独の値。",
-  "章(ch)は情報源に記載が無く未確認のためnull。"
- ]
+  "章(ch)は情報源に記載が無く未確認のためnull。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2013-01-10",
+ "wikiCommentCount": 3,
+ "chGuess": "5章",
+ "chSource": "wikiOldestComment"
 }

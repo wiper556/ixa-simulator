@@ -1,7 +1,7 @@
 {
  "name": "甘粕景持",
  "no": "2275",
- "ch": null,
+ "ch": "19章",
  "cost": 3.5,
  "troop": "弓砲器防",
  "sub": "卓越",
@@ -35,7 +35,12 @@
  "notes": [
   "2026-08-18登録(担当G)。カード画像が無いためixanary.com(cards/2275)生HTMLとixawiki.com(index.php?BushoCard/2275甘粕景持)生HTMLの2ソースを突き合わせて登録した。",
   "防御成長値がixanaryは33・ixawikiは34で食い違ったためdefGrowthはnullにした。攻撃初期値950・防御初期値1000・攻撃成長値21・兵法490/2.5・cost3.5・lv0Troops3520・rankGrades(槍A/弓S/馬B/器A)・illustrator鏑木康隆は両ソースで完全一致。",
-  "スキル「不識ノ殿軍」LV10(確率70%・防御64%上昇・卓越:追加確率30%で防御効果1.5倍)は両ソース一致。"
+  "スキル「不識ノ殿軍」LV10(確率70%・防御64%上昇・卓越:追加確率30%で防御効果1.5倍)は両ソース一致。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
  ],
- "reviewedOk": false
+ "reviewedOk": false,
+ "wikiOldestComment": "2020-06-11",
+ "wikiCommentCount": 21,
+ "chGuess": "19章",
+ "chSource": "wikiOldestComment"
 }

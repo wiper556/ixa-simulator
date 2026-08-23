@@ -1,7 +1,7 @@
 {
  "name": "片桐且元",
  "no": "3106",
- "ch": null,
+ "ch": "4章",
  "cost": 2.5,
  "troop": "槍弓攻",
  "sub": "",
@@ -34,6 +34,11 @@
  ],
  "reviewedOk": false,
  "notes": [
-  "2026-08-18登録(担当H)。カード画像なし。ixanary.com/cards/3106 と ixawiki.com(BushoCard/3106片桐且元)の生HTMLを突き合わせて登録した。統率・コスト・指揮兵数・スキルの確率と効果値・攻撃/兵法の初期値と成長値は両ソース完全一致。ただし防御初期値はixanaryが610のはずの値を攻撃初期値と同じ660で返す既知の不具合(defBase=atkBaseパターン)に該当したため、ixawikiの値(610)を採用した。"
- ]
+  "2026-08-18登録(担当H)。カード画像なし。ixanary.com/cards/3106 と ixawiki.com(BushoCard/3106片桐且元)の生HTMLを突き合わせて登録した。統率・コスト・指揮兵数・スキルの確率と効果値・攻撃/兵法の初期値と成長値は両ソース完全一致。ただし防御初期値はixanaryが610のはずの値を攻撃初期値と同じ660で返す既知の不具合(defBase=atkBaseパターン)に該当したため、ixawikiの値(610)を採用した。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2012-10-05",
+ "wikiCommentCount": 16,
+ "chGuess": "4章",
+ "chSource": "wikiOldestComment"
 }

@@ -1,7 +1,7 @@
 {
  "name": "前田利家-復刻-",
  "no": "1953",
- "ch": null,
+ "ch": "13章",
  "cost": 1.5,
  "troop": "全攻速",
  "sub": "",
@@ -36,6 +36,11 @@
  "notes": [
   "2026-08-17登録。カード画像が無いためixanary.com(cards/1953)とixawiki.com(BushoCard/1953前田利家)の2ソースで突き合わせた。",
   "防御初期値(defBase)がixanaryは920(攻撃と同値)、ixawikiは800で食い違ったためnullにした。防御成長値(+47)・攻撃920(+62)・兵法500.0(+2.5)・指揮兵数2300・コスト1.5・統率(槍SS/弓A/馬A/器C)・初期スキル「光焔雷戟」(S)の確率/対象/効果は両ソース一致。",
-  "章(ch)は情報源に記載が無いため未確認でnull。"
- ]
+  "章(ch)は情報源に記載が無いため未確認でnull。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2017-04-07",
+ "wikiCommentCount": 161,
+ "chGuess": "13章",
+ "chSource": "wikiOldestComment"
 }

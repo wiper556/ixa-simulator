@@ -1,7 +1,7 @@
 {
  "name": "徳川秀忠",
  "no": "3080",
- "ch": null,
+ "ch": "3章",
  "cost": 2.5,
  "troop": "弓器防",
  "sub": "",
@@ -36,6 +36,11 @@
  "notes": [
   "2026-08-18登録(担当F)。カード画像なし。ixanary.com/cards/3080の生HTML埋め込みJSONとixawiki.com(BushoCard/3080徳川秀忠)の基本ステータス表・武将スキル一覧ページ(Busho/武将スキル)のスキル効果テーブルを突き合わせ、統率(槍/弓/馬/器)・コスト・指揮兵数・攻撃/防御/兵法の初期値と成長値・イラストレーター・スキル名/効果(LV1・LV10)が一致することを確認した。",
   "章(ch)はixanary・ixawikiのどちらにも実装章の記載がなく未確認のためnull。",
-  "rankGradesは2ソース一致のため採用(食い違いなし)。"
- ]
+  "rankGradesは2ソース一致のため採用(食い違いなし)。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2012-03-05",
+ "wikiCommentCount": 91,
+ "chGuess": "3章",
+ "chSource": "wikiOldestComment"
 }

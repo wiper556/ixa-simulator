@@ -1,7 +1,7 @@
 {
  "name": "愛洲移香斎",
  "no": "2734",
- "ch": null,
+ "ch": "11章",
  "cost": 3.5,
  "troop": "槍攻",
  "sub": "",
@@ -65,7 +65,12 @@
  "notes": [
   "2026-08-18新規登録(担当G・カード画像なし)。ixanary.com/cards/2734とixawiki.com(index.php?BushoCard/2734愛洲移香斎)の生HTML2ソースで統率(槍SS弓B馬B器C)・コスト3.5・指揮兵数2900・初期値1000/900/465・成長値+60/+30/+2.0・絵師GODTAIL・ふりがなが完全一致することを確認した。",
   "スキルLV1の確率のみixanary=8%、ixawiki=6.0%で食い違った(LV1攻撃上昇値は両ソースとも12%で一致)。この不一致はLV1限定の値で、登録したLV10値(確率27%/攻撃37%上昇)自体はixanaryのみが情報源のため確定的な裏取りができておらず、確率面はixanary側のみに依拠していることを申し送りとして明記する。",
-  "初期スキル「陰流」[B]のLV10値(確率27%/攻撃37%上昇/対象槍)はixanary.com/cards/2734のLV10スキルボックスから採用した。synthesisTableはカード画像が無いため作成していない。章は両ソースに記載が無く未確認。"
+  "初期スキル「陰流」[B]のLV10値(確率27%/攻撃37%上昇/対象槍)はixanary.com/cards/2734のLV10スキルボックスから採用した。synthesisTableはカード画像が無いため作成していない。章は両ソースに記載が無く未確認。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
  ],
- "reviewedOk": false
+ "reviewedOk": false,
+ "wikiOldestComment": "2015-12-04",
+ "wikiCommentCount": 51,
+ "chGuess": "11章",
+ "chSource": "wikiOldestComment"
 }

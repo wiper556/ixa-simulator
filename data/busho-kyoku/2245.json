@@ -1,7 +1,7 @@
 {
  "name": "華陽院",
  "no": "2245",
- "ch": null,
+ "ch": "17章",
  "cost": 2.5,
  "troop": "槍弓馬鉄防",
  "sub": "",
@@ -10,21 +10,38 @@
  "illustrator": "鏑木康隆",
  "imageFull": null,
  "imageChar": null,
- "atkBase": 960, "atkGrowth": 22,
- "defBase": 980, "defGrowth": 29,
- "tacticsBase": 480, "tacticsGrowth": 2.5,
+ "atkBase": 960,
+ "atkGrowth": 22,
+ "defBase": 980,
+ "defGrowth": 29,
+ "tacticsBase": 480,
+ "tacticsGrowth": 2.5,
  "lv0Troops": 3010,
- "rankGrades": {"yari": "A", "yumi": "S", "uma": "A", "ki": "B"},
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "S",
+  "uma": "A",
+  "ki": "B"
+ },
  "initialSkill": "万世に続く礎",
  "skillDetail": "B/LV10 確率 24% 防御 35%上昇/対象:槍・弓・馬・鉄\n①防御 35%上昇する\n②最も大きい敵部隊移動速度÷2の値(%)を防御効果に加算する",
  "trTable": [
-  {"level": "LV10", "points": "-", "effect": "槍・弓・馬・鉄　確率 24% / 防御 35%上昇(最も大きい敵部隊移動速度÷2を加算)"}
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・弓・馬・鉄　確率 24% / 防御 35%上昇(最も大きい敵部隊移動速度÷2を加算)"
+  }
  ],
  "reviewedOk": false,
  "notes": [
   "2026-08-18登録。カード画像が無いためixanary.com(cards/2245)とixawiki.com(BushoCard/2245華陽院)の一致のみで入れた。",
   "基礎値・成長値・コスト・指揮兵数・統率(槍A弓S馬A器B)は両ソース一致。",
   "初期スキル「万世に続く礎」[B]はLV10確率24%・対象槍・弓・馬・鉄・防御35%上昇。最も大きい敵部隊移動速度の半分を防御効果に加算する追加効果あり(両ソース一致)。",
-  "ixanary.comにこのカード専用の「部隊スキル」欄があり「防.戦姫艶舞」の記載があったが、サイトのテンプレートに対応項目が無いため未登録(申し送り)。"
- ]
+  "ixanary.comにこのカード専用の「部隊スキル」欄があり「防.戦姫艶舞」の記載があったが、サイトのテンプレートに対応項目が無いため未登録(申し送り)。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2019-03-04",
+ "wikiCommentCount": 122,
+ "chGuess": "17章",
+ "chSource": "wikiOldestComment"
 }

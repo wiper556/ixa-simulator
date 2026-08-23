@@ -1,7 +1,7 @@
 {
  "name": "馬場信房（3）",
  "no": "2308",
- "ch": null,
+ "ch": "22章",
  "cost": 4,
  "troop": "弓馬砲攻速",
  "sub": "",
@@ -34,6 +34,11 @@
  ],
  "reviewedOk": false,
  "notes": [
-  "2026-08-18登録(担当H)。カード画像が無いためixanary.com(cards/2308)生HTMLとixawiki.com(index.php?BushoCard/2308馬場信房)を突き合わせた。名前の（3）はixawikiの武将カード一覧の表記に従った。基礎値/成長値/コスト/指揮兵数/統率ランク/イラストレーターは完全一致。LV1のスキル数値(確率13%/攻撃50%上昇/速度23%上昇・確率100%)は両ソース完全一致したが、LV10はixanaryが確率70%/攻撃100%上昇/速度70%上昇、ixawikiが確率40%/攻撃95%上昇/速度50%上昇と、確率・攻撃・速度の3項目すべてで食い違ったため、trTableのeffectをnullにし、skillDetail/top effectでは具体的な数値を確定せず記載した。"
- ]
+  "2026-08-18登録(担当H)。カード画像が無いためixanary.com(cards/2308)生HTMLとixawiki.com(index.php?BushoCard/2308馬場信房)を突き合わせた。名前の（3）はixawikiの武将カード一覧の表記に従った。基礎値/成長値/コスト/指揮兵数/統率ランク/イラストレーターは完全一致。LV1のスキル数値(確率13%/攻撃50%上昇/速度23%上昇・確率100%)は両ソース完全一致したが、LV10はixanaryが確率70%/攻撃100%上昇/速度70%上昇、ixawikiが確率40%/攻撃95%上昇/速度50%上昇と、確率・攻撃・速度の3項目すべてで食い違ったため、trTableのeffectをnullにし、skillDetail/top effectでは具体的な数値を確定せず記載した。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2021-11-04",
+ "wikiCommentCount": 6,
+ "chGuess": "22章",
+ "chSource": "wikiOldestComment"
 }

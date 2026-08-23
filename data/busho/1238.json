@@ -1,5 +1,5 @@
 {
- "name": "上杉謙信（6）【覇】",
+ "name": "上杉謙信（2）【覇】",
  "no": "1238",
  "ch": "26章",
  "cost": 4,
@@ -120,7 +120,8 @@
   "2026-08-16: 武将名の（N）を、ixawikiの各カードページの一番古いコメントの日付順で振り直した。（N）はゲームには無く、同レアリティで同名が混ざらないようwiki利用者が出現順に付けた工夫。カードNo.順では10xxx番台(記念カード)で前後が逆転するため日付を使う(うぐさん指示)。",
   "カード画像照合済み(2026-07-30): 槍A/弓S/馬A/器SS(旧データはuma/yumiの値が誤って入れ替わっていたため修正)",
   "45do.info確認(生HTML照合済み、2026-07-31): https://45do.info/ordinary/0158/ のskiladd_wrap内、候補A/B/C/S1/S2の見出し5個と直後のスキル名5個が位置対応。afterSkill/afterRankは移植後テーブルの記載が無いため候補と同一値を採用。",
-  "2026-08-16黄丸化再検証: ixanary.com(cards/1238, skills/神気乱龍)+ixawiki.com(BushoCard/1238上杉謙信)の2ソースでsynthesisTable5枠(A月詠ノ覇威SS自己参照/B・C星神闘覇SS自己参照/S1天聖宝冠SSS自己参照/S2十束ノ神域SS→天聖宝冠SSS)が完全一致(B・Cはixanaryが星神闘覇をSSS表示するが既知の誤りでSSが正しい)。基礎値(1280/1220/760、成長+75/+66/+3.5、指揮4450)・rankGrades(槍A/弓S/馬A/器SS、カード画像バッジ拡大確認)もixanary生HTMLと一致。TR1〜TR3の数値(攻740/560→940/940→1270/1270、TR4/5なし)はixagno.blog.fc2.com(blog-entry-9247)で完全一致確認。data/skill/月詠ノ覇威・星神闘覇・天聖宝冠・十束ノ神域の各JSONのsourceCharactersに1238が正しいslotで既に記載済み。自身の初期スキル「神気乱龍」はownHiddenCandidateが未設定だったため自己参照で補完した。"
+  "2026-08-16黄丸化再検証: ixanary.com(cards/1238, skills/神気乱龍)+ixawiki.com(BushoCard/1238上杉謙信)の2ソースでsynthesisTable5枠(A月詠ノ覇威SS自己参照/B・C星神闘覇SS自己参照/S1天聖宝冠SSS自己参照/S2十束ノ神域SS→天聖宝冠SSS)が完全一致(B・Cはixanaryが星神闘覇をSSS表示するが既知の誤りでSSが正しい)。基礎値(1280/1220/760、成長+75/+66/+3.5、指揮4450)・rankGrades(槍A/弓S/馬A/器SS、カード画像バッジ拡大確認)もixanary生HTMLと一致。TR1〜TR3の数値(攻740/560→940/940→1270/1270、TR4/5なし)はixagno.blog.fc2.com(blog-entry-9247)で完全一致確認。data/skill/月詠ノ覇威・星神闘覇・天聖宝冠・十束ノ神域の各JSONのsourceCharactersに1238が正しいslotで既に記載済み。自身の初期スキル「神気乱龍」はownHiddenCandidateが未設定だったため自己参照で補完した。",
+  "2026-08-23: カード名を「上杉謙信（6）【覇】」から「上杉謙信（2）【覇】」に直した。（N）はゲーム内には無く、プレイヤーが見分けるために wiki の作成者が付けたもの(うぐさん)。ixawiki の武将カード一覧の表示名が「上杉謙信(覇2)」なのでそれに合わせた。覇と復刻はカードそのものの属性なので、一覧の札が何も言っていないときはうちの値を残している。"
  ],
  "reviewedOk": false,
  "wikiOldestComment": "2023-08-11",

@@ -1,7 +1,7 @@
 {
  "name": "板垣信方",
  "no": "2211",
- "ch": null,
+ "ch": "15章",
  "cost": 3,
  "troop": "馬砲器防速",
  "sub": "",
@@ -38,6 +38,11 @@
   "コスト3・指揮兵数3180・攻撃力980(+26)・防御力990(+27)・兵法500(+2.0)・イラストレーター士基軽太・スキルLV1/LV10の数値は両ソースで完全一致。",
   "防御と速度で発動確率が異なる複合スキルのため、既存データ(busho-kyoku/2119.jsonなど)の形式に倣いskillDetailとtrTableに両方の確率を併記した。",
   "rankGrades(槍A/弓A/馬S/器B)はixawikiのみ出典(ixanaryにテキスト情報無し)。",
-  "章(ch)は両ソースに記載が無く未確認のためnull。"
- ]
+  "章(ch)は両ソースに記載が無く未確認のためnull。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2018-01-15",
+ "wikiCommentCount": 56,
+ "chGuess": "15章",
+ "chSource": "wikiOldestComment"
 }

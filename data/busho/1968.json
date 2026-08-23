@@ -1,7 +1,7 @@
 {
  "name": "立花宗茂-復刻-",
  "no": "1968",
- "ch": null,
+ "ch": "15章",
  "cost": 3,
  "troop": "槍弓馬器攻防速",
  "sub": "",
@@ -37,6 +37,11 @@
   "2026-08-17登録。カード画像が無いためixanary.com(cards/1968)とixawiki.com(BushoCard/1968立花宗茂)の生HTML2ソースのみで作成した。imageFull/imageCharはnull。",
   "cost/lv0Troops/rankGrades/atkBase・atkGrowth/defBase・defGrowth/tacticsBase・tacticsGrowthの全項目で両ソースが一致することを確認した。",
   "天神凱武はLV1(確率22%で攻撃・防御25%上昇、確率100%で速度15%上昇)の数値が両ソースで完全一致したため、ixanary.comのLV10データ(確率40%で攻撃・防御70%上昇、確率100%で速度60%上昇)をskillDetail/trTableに採用した。",
-  "reviewedOkはfalseのまま。カード画像が無くバッジ・スキルパネルの直接照合ができないため黄丸化はできない。"
- ]
+  "reviewedOkはfalseのまま。カード画像が無くバッジ・スキルパネルの直接照合ができないため黄丸化はできない。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2018-07-02",
+ "wikiCommentCount": 73,
+ "chGuess": "15章",
+ "chSource": "wikiOldestComment"
 }

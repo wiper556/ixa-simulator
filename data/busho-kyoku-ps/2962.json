@@ -1,7 +1,7 @@
 {
- "name": "丹羽長秀（2）",
+ "name": "丹羽長秀-復刻-",
  "no": "2962",
- "ch": null,
+ "ch": "12章",
  "cost": 3,
  "troop": "槍弓馬砲攻",
  "sub": "",
@@ -36,6 +36,12 @@
  "notes": [
   "カード画像が無いため ixanary.com(cards/2962, skills/鬼陣米五郎左)と ixawiki.com(index.php?BushoCard/2962丹羽長秀, Busho/武将スキル)の生HTML2ソースを突き合わせて登録した。",
   "コスト3・指揮兵数3450・統率(槍A/弓A/馬A/器A)・攻撃750/成長21・防御550/成長19・兵法490.0/成長2.5・ふりがな・イラストレーターは両ソース一致。初期スキル「鬼陣米五郎左」[B]はixanary・ixawikiともLV10確率26%/攻撃(23+ランク×5)%上昇で一致(ランク依存のため数値は計算せず式のまま登録)。",
-  "カード画像が無いためimageFull/imageCharはnull、synthesisTableは付けず、reviewedOkはfalseのまま。章(ch)は両ソースとも記載が無くnullとした。"
- ]
+  "カード画像が無いためimageFull/imageCharはnull、synthesisTableは付けず、reviewedOkはfalseのまま。章(ch)は両ソースとも記載が無くnullとした。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。",
+  "2026-08-23: カード名を「丹羽長秀（2）」から「丹羽長秀-復刻-」に直した。（N）はゲーム内には無く、プレイヤーが見分けるために wiki の作成者が付けたもの(うぐさん)。ixawiki の武将カード一覧の表示名が「丹羽長秀(RE)」なのでそれに合わせた。覇と復刻はカードそのものの属性なので、一覧の札が何も言っていないときはうちの値を残している。"
+ ],
+ "wikiOldestComment": "2016-07-05",
+ "wikiCommentCount": 73,
+ "chGuess": "12章",
+ "chSource": "wikiOldestComment"
 }

@@ -1,7 +1,7 @@
 {
  "name": "吉川広家",
  "no": "2300",
- "ch": null,
+ "ch": "21章",
  "cost": 2.5,
  "troop": "槍砲器防",
  "sub": "",
@@ -34,6 +34,11 @@
  ],
  "reviewedOk": false,
  "notes": [
-  "2026-08-18登録(担当H)。カード画像が無いためixanary.com(cards/2300)生HTMLとixawiki.com(index.php?BushoCard/2300吉川広家)の基本ステータス表・スキル表を突き合わせて完全一致を確認して登録した。"
- ]
+  "2026-08-18登録(担当H)。カード画像が無いためixanary.com(cards/2300)生HTMLとixawiki.com(index.php?BushoCard/2300吉川広家)の基本ステータス表・スキル表を突き合わせて完全一致を確認して登録した。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2021-07-08",
+ "wikiCommentCount": 17,
+ "chGuess": "21章",
+ "chSource": "wikiOldestComment"
 }

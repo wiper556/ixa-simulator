@@ -1,7 +1,7 @@
 {
  "name": "大島雲八",
  "no": "2420",
- "ch": null,
+ "ch": "18章",
  "cost": 4,
  "troop": "弓焙攻",
  "sub": "",
@@ -35,6 +35,11 @@
  "reviewedOk": false,
  "notes": [
   "カード画像が無いため imageFull/imageChar は null。ixanary.comの埋め込みJSON(cards/2420)とixawiki.com(BushoCard/2420大島雲八)の基本ステータス表・スキル表を突き合わせて登録した。",
-  "2026-08-16: trTableの「(X×防御参加武将数)%上昇」を、サイトの既存の書き方(防御参加武将数=280人での計算値を併記)に揃えた。skillDetailは式のまま残してある。"
- ]
+  "2026-08-16: trTableの「(X×防御参加武将数)%上昇」を、サイトの既存の書き方(防御参加武将数=280人での計算値を併記)に揃えた。skillDetailは式のまま残してある。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2019-11-06",
+ "wikiCommentCount": 59,
+ "chGuess": "18章",
+ "chSource": "wikiOldestComment"
 }

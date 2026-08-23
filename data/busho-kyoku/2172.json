@@ -1,7 +1,7 @@
 {
  "name": "武田勝頼（2）",
  "no": "2172",
- "ch": null,
+ "ch": "12章",
  "cost": 3,
  "troop": "槍馬器攻速",
  "sub": "",
@@ -36,6 +36,11 @@
  "notes": [
   "2026-08-18登録(担当B)。カード画像が無いため imageFull/imageChar は null。ixanary.com(cards/2172)の埋め込みJSONとixawiki.com(index.php?BushoCard/2172武田勝頼)の生HTMLで、コスト/指揮兵数/攻撃防御兵法の初期値成長値/兵科ランク(槍A弓C馬S器A)/イラストレーター(isuZu)/スキルLV1数値(攻撃確率+8%/8%上昇・速度確率+100%/7%上昇)が完全一致することを確認して登録した。LV10の数値(攻撃確率30%/35%上昇・速度確率100%/25%上昇)はixanaryのカードページに明記。attack/speedで確率が別々のため①②に分けて記載した。",
   "assign_B.txtの表記「武田勝頼(2)」に従い、同名武将と区別するため（2）を付けた。両ソースの武将名表記自体は「武田勝頼」のみ(No.で一意)。",
-  "章(ch)は両ソースとも記載が無いため未確認。synthesisTableは今回付けていない。"
- ]
+  "章(ch)は両ソースとも記載が無いため未確認。synthesisTableは今回付けていない。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2016-07-05",
+ "wikiCommentCount": 205,
+ "chGuess": "12章",
+ "chSource": "wikiOldestComment"
 }

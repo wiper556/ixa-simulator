@@ -1,7 +1,7 @@
 {
  "name": "吉乃",
  "no": "3129",
- "ch": null,
+ "ch": "5章",
  "cost": 1.5,
  "troop": "弓防",
  "sub": "",
@@ -37,6 +37,11 @@
   "2026-08-18登録(担当I)。カード画像が無いため ixanary.com(cards/3129, skills/弓隊円陣)と ixawiki.com(index.php?BushoCard/3129吉乃, Busho/武将スキル)の生HTML2ソースを突き合わせて登録した。",
   "統率(槍B/弓A/馬D/器C)・コスト1.5・指揮兵数1640・攻撃420/15・防御660/16・兵法370.0/1.0・ふりがな・イラストレーターはixanary.comとixawiki.comの2ソースで完全一致した。",
   "初期スキル「弓隊円陣」[D]はixanary.com(skills/弓隊円陣)のLV10行(確率+40%/対象弓/防御20%上昇)とixawiki.com(Busho/武将スキル)のマスター一覧LV10行(確率+40%/弓防20%上昇)で完全一致し、両ソースの武将対応リストにも3129吉乃が掲載されていることを確認した。",
-  "カード画像が無いためimageFull/imageCharはnull、synthesisTableは付けず、reviewedOkはfalseのまま。章(ch)は両ソースとも記載が無くnullとした。"
- ]
+  "カード画像が無いためimageFull/imageCharはnull、synthesisTableは付けず、reviewedOkはfalseのまま。章(ch)は両ソースとも記載が無くnullとした。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2013-03-04",
+ "wikiCommentCount": 82,
+ "chGuess": "5章",
+ "chSource": "wikiOldestComment"
 }

@@ -1,7 +1,7 @@
 {
  "name": "お市",
  "no": "2906",
- "ch": null,
+ "ch": "7章",
  "cost": 2.5,
  "troop": "全防",
  "sub": "",
@@ -36,6 +36,11 @@
  "notes": [
   "カード画像が無いため ixanary.com/cards/2906 と ixawiki.com(BushoCard/2906お市)の生HTML2ソースで確認した。",
   "基礎値520/600/540・成長16/18/2.5・コスト2.5・指揮兵数2650(★0-0)・統率(槍B/弓B/馬A/器A)はixanary.comとixawiki.comの2ソースで完全一致。",
-  "初期スキル冥界の花嫁(A)はdata/skill/冥界の花嫁.json(既存)のeffectSummary「A/LV10 確率 35% 防御 40%上昇/対象:全 ①防御が40%上昇する(攻撃部隊に馬兵科がいる時のみ発動)」と完全一致することを確認し同じ書式で登録した。"
- ]
+  "初期スキル冥界の花嫁(A)はdata/skill/冥界の花嫁.json(既存)のeffectSummary「A/LV10 確率 35% 防御 40%上昇/対象:全 ①防御が40%上昇する(攻撃部隊に馬兵科がいる時のみ発動)」と完全一致することを確認し同じ書式で登録した。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2014-04-05",
+ "wikiCommentCount": 142,
+ "chGuess": "7章",
+ "chSource": "wikiOldestComment"
 }

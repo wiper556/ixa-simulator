@@ -1,7 +1,7 @@
 {
  "name": "細川ガラシャ",
  "no": "1974",
- "ch": null,
+ "ch": "16章",
  "cost": 4.5,
  "troop": "全攻防",
  "sub": "",
@@ -37,6 +37,11 @@
   "2026-08-17登録。カード画像が無いためixanary.com(cards/1974)とixawiki.com(BushoCard/1974細川ガラシャ)の生HTML2ソースのみで作成した。imageFull/imageCharはnull。",
   "cost/lv0Troops/rankGrades/atkBase・atkGrowth/defBase・defGrowth/tacticsBase・tacticsGrowthは全項目で両ソースが一致した(この20体の中でdefBaseが一致した数少ない例)。",
   "悲運ノ珠玉はLV1(確率24%攻撃防御20%上昇・部隊消費コスト2低下・特殊効果は模倣重複不可)の内容が両ソースで一致したため、ixanary.comのLV10データ(確率49%攻撃防御82%上昇)をskillDetail/trTableに採用した。",
-  "reviewedOkはfalseのまま。カード画像による4隅バッジ・スキルパネル照合が未実施のため黄丸化はできない。"
- ]
+  "reviewedOkはfalseのまま。カード画像による4隅バッジ・スキルパネル照合が未実施のため黄丸化はできない。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2018-11-05",
+ "wikiCommentCount": 46,
+ "chGuess": "16章",
+ "chSource": "wikiOldestComment"
 }

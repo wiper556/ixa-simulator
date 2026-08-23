@@ -1,7 +1,7 @@
 {
  "name": "如春尼",
  "no": "2283",
- "ch": null,
+ "ch": "20章",
  "cost": 2,
  "troop": "全攻防",
  "sub": "卓越",
@@ -35,7 +35,12 @@
  "notes": [
   "2026-08-18登録(担当G)。カード画像が無いためixanary.com(cards/2283)生HTMLとixawiki.com(index.php?BushoCard/2283如春尼)生HTMLの2ソースを突き合わせて登録した。",
   "ステータス初期値990/990/490・成長値33/33/2.5・cost2・lv0Troops2560・rankGrades(槍A/弓A/馬A/器A)・illustratorミヤジマハルは両ソースで完全一致。攻撃・防御ともに初期値990/成長値33で同値かつランクも全てAで同値だが両ソースが独立に同じ値を示しているため実際に攻防同値のカードと判断しそのまま登録した。",
-  "スキル「愛山美姫」LV10(確率100%・攻撃45%上昇・防御45%上昇・卓越:追加確率35%で攻防効果2倍)はixawikiにLV1/LV10両方の記載があり、ixanaryのLV10欄と完全一致した。"
+  "スキル「愛山美姫」LV10(確率100%・攻撃45%上昇・防御45%上昇・卓越:追加確率35%で攻防効果2倍)はixawikiにLV1/LV10両方の記載があり、ixanaryのLV10欄と完全一致した。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
  ],
- "reviewedOk": false
+ "reviewedOk": false,
+ "wikiOldestComment": "2020-10-02",
+ "wikiCommentCount": 40,
+ "chGuess": "20章",
+ "chSource": "wikiOldestComment"
 }

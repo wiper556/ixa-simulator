@@ -1,7 +1,7 @@
 {
  "name": "本庄繁長",
  "no": "3130",
- "ch": null,
+ "ch": "5章",
  "cost": 2.5,
  "troop": "槍馬攻",
  "sub": "",
@@ -37,6 +37,11 @@
   "2026-08-18登録(担当I)。カード画像が無いため ixanary.com(cards/3130, skills/伏龍応斬)と ixawiki.com(index.php?BushoCard/3130本庄繁長, Busho/武将スキル)の生HTML2ソースを突き合わせて登録した。",
   "統率(槍A/弓B/馬C/器C)・コスト2.5・指揮兵数2420・攻撃660/17・防御470/15・兵法380.0/1.5・ふりがな・イラストレーターはixanary.comとixawiki.comの2ソースで完全一致した。",
   "初期スキル「伏龍応斬」[C]はixanary.com(skills/伏龍応斬)のLV10行(確率+30%/対象槍馬/攻撃20.5%上昇)とixawiki.com(Busho/武将スキル)のマスター一覧LV10行(確率+30%/槍馬攻20.5%上昇)で完全一致し、両ソースの武将対応リストにも3130本庄繁長が掲載されていることを確認した。",
-  "カード画像が無いためimageFull/imageCharはnull、synthesisTableは付けず、reviewedOkはfalseのまま。章(ch)は両ソースとも記載が無くnullとした。"
- ]
+  "カード画像が無いためimageFull/imageCharはnull、synthesisTableは付けず、reviewedOkはfalseのまま。章(ch)は両ソースとも記載が無くnullとした。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2013-03-04",
+ "wikiCommentCount": 39,
+ "chGuess": "5章",
+ "chSource": "wikiOldestComment"
 }

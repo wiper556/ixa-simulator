@@ -1,7 +1,7 @@
 {
  "name": "霧隠才蔵",
  "no": "2083",
- "ch": null,
+ "ch": "6章",
  "cost": 2.5,
  "troop": "全速",
  "sub": "",
@@ -37,6 +37,11 @@
   "2026-08-17登録。カード画像が無いため ixanary.com(cards/2083)と ixawiki.com(BushoCard/2083霧隠才蔵)の生HTML2ソースで確認した。",
   "コスト/指揮兵数/攻撃防御兵法の初期値成長値/兵科ランク(槍A弓A馬B器A)/スキル名対象確率効果(LV10確率100%速度45%上昇対象全)は両ソース完全一致。",
   "illustratorのみ食い違い: ixanary.comは「冨士原良」(異体字の冨)、ixawiki.comは「富士原良」(標準字体の富)と表記が割れていたためnullにした。どちらが正しいか未確認。",
-  "章(ch)は両ソースとも記載が無くnullのまま。カード画像自体が無いためimageFull/imageCharはnull、reviewedOkはfalseのまま(rankGrades等はテキスト情報の2ソース一致で登録)。"
- ]
+  "章(ch)は両ソースとも記載が無くnullのまま。カード画像自体が無いためimageFull/imageCharはnull、reviewedOkはfalseのまま(rankGrades等はテキスト情報の2ソース一致で登録)。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2013-08-01",
+ "wikiCommentCount": 176,
+ "chGuess": "6章",
+ "chSource": "wikiOldestComment"
 }

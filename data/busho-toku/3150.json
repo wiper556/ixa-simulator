@@ -1,7 +1,7 @@
 {
  "name": "志村光安",
  "no": "3150",
- "ch": null,
+ "ch": "6章",
  "cost": 2.5,
  "troop": "弓攻",
  "sub": "",
@@ -35,6 +35,11 @@
  "reviewedOk": false,
  "notes": [
   "2026-08-18登録(担当J)。カード画像が無いためixanaryとixawikiの両方を確認した。武将名「志村光安」/ふりがな「しむらあきやす」/特/コスト2.5/統率 槍B・弓A・馬C・器C/攻撃650・防御670・兵法410.0/成長値(攻撃+16/防御+15/兵法+1.5)/指揮兵数2430/カードNo.3150/スキル「弓隊剛撃LV10」[D] 確率:35%・対象 弓・攻撃:20%上昇/Illust 五浦マリ。ixanary(カードページ埋め込みJSON)とixawiki(BushoCardページ)の統率・コスト・指揮兵数・攻防兵法初期値と成長値・スキル対象と効果が完全に一致したためそのまま採用した。",
-  "rankGradesはカード画像で確認できないため未reviewed(reviewedOk=false)。章(ch)はカード画像でもixanary/ixawikiでも確認できなかったためnullのまま。"
- ]
+  "rankGradesはカード画像で確認できないため未reviewed(reviewedOk=false)。章(ch)はカード画像でもixanary/ixawikiでも確認できなかったためnullのまま。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2013-09-02",
+ "wikiCommentCount": 25,
+ "chGuess": "6章",
+ "chSource": "wikiOldestComment"
 }

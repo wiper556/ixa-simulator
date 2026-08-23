@@ -1,7 +1,7 @@
 {
  "name": "明石全登",
  "no": "2118",
- "ch": null,
+ "ch": "8章",
  "cost": 1.5,
  "troop": "全攻速",
  "sub": "",
@@ -37,6 +37,11 @@
   "2026-08-17登録。カード画像が無いためixanary.comとixawiki.comの生HTML突き合わせのみで登録した。",
   "基礎値/成長値/コスト/指揮兵数(2030)/rankGrades(槍A・弓B・馬A・器A)/イラストレーター(小城崇志)はixanary.com(cards/2118)とixawiki.com(BushoCard/2118明石全登)の両方で完全一致。",
   "skillDetail/trTableはixanary.com/skills/聖戦の進軍のLV10表記(確率+100%/対象全/攻撃4%上昇/速度45%上昇)を採用。LV1値(確率+100%/攻撃2%上昇/速度10%上昇)がixawikiの基本ステータス表と一致。",
-  "章(ch)は両ソースに記載なく未確認。"
- ]
+  "章(ch)は両ソースに記載なく未確認。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2014-09-03",
+ "wikiCommentCount": 80,
+ "chGuess": "8章",
+ "chSource": "wikiOldestComment"
 }

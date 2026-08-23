@@ -1,7 +1,7 @@
 {
  "name": "奥村助右衛門",
  "no": "2980",
- "ch": null,
+ "ch": "14章",
  "cost": 3.5,
  "troop": "槍弓馬砲攻",
  "sub": "",
@@ -36,6 +36,11 @@
  "notes": [
   "2026-08-18登録。カード画像が無いためixanaryとixawikiの一致だけで入れた(rankGradesは両ソース完全一致)。synthesisTableは今回のバッチでは付けていない。",
   "defBaseはixanaryの生埋め込みJSONだとatkBaseと同値の1100になっていたが(既知の壊れ方の型)、ixawikiは独立に970(atkと異なる値)を示しており、ixanaryの方が壊れていると判断してixawikiの970を採用した。成長値・兵法・コスト・指揮兵数は両ソース一致。",
-  "スキル『名に涯はなし』はixanaryがLV1(確率+13%/攻撃6%上昇)とLV10(確率+33%/攻撃25+ランク×5%上昇)を明示。ixawikiの基本ステータス表の値はixanaryのLV1と一致していたため、今回のバッチで頻発した『ixawikiの表がLV1のまま』パターンと判断し、ixanaryの明示的なLV10値を採用した。"
- ]
+  "スキル『名に涯はなし』はixanaryがLV1(確率+13%/攻撃6%上昇)とLV10(確率+33%/攻撃25+ランク×5%上昇)を明示。ixawikiの基本ステータス表の値はixanaryのLV1と一致していたため、今回のバッチで頻発した『ixawikiの表がLV1のまま』パターンと判断し、ixanaryの明示的なLV10値を採用した。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2017-08-05",
+ "wikiCommentCount": 17,
+ "chGuess": "14章",
+ "chSource": "wikiOldestComment"
 }

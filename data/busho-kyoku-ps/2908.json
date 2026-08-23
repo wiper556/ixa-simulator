@@ -1,7 +1,7 @@
 {
  "name": "花房職秀",
  "no": "2908",
- "ch": null,
+ "ch": "8章",
  "cost": 2,
  "troop": "全防",
  "sub": "",
@@ -36,6 +36,11 @@
  "notes": [
   "カード画像が無いため ixanary.com/cards/2908 と ixawiki.com(BushoCard/2908花房職秀)の生HTML2ソースで確認した。",
   "基礎値540/660/420・成長16/20/2・コスト2・指揮兵数2330(★0-0)・統率(槍S/弓B/馬B/器A)はixanary.comとixawiki.comの2ソースで完全一致。",
-  "初期スキル傾奇の花道(A)のLV10「確率+35%/対象 全/防御40%上昇(攻撃部隊に槍兵科がいる時のみ発動)」はixanary.comとixawiki.comの2ソースで完全一致(お市の冥界の花嫁と同型の兵科限定発動スキル)。"
- ]
+  "初期スキル傾奇の花道(A)のLV10「確率+35%/対象 全/防御40%上昇(攻撃部隊に槍兵科がいる時のみ発動)」はixanary.comとixawiki.comの2ソースで完全一致(お市の冥界の花嫁と同型の兵科限定発動スキル)。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2014-07-03",
+ "wikiCommentCount": 121,
+ "chGuess": "8章",
+ "chSource": "wikiOldestComment"
 }

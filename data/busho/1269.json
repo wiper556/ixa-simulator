@@ -1,5 +1,5 @@
 {
- "name": "前田利家（3）",
+ "name": "前田利家（4）",
  "no": "1269",
  "reviewedOk": false,
  "ch": "28章",
@@ -120,7 +120,8 @@
  "notes": [
   "2026-08-16: 武将名の（N）を、ixawikiの各カードページの一番古いコメントの日付順で振り直した。（N）はゲームには無く、同レアリティで同名が混ざらないようwiki利用者が出現順に付けた工夫。カードNo.順では10xxx番台(記念カード)で前後が逆転するため日付を使う(うぐさん指示)。",
   "synthesisTable: 45do.info生HTML(skiladd_wrap)+ixanary.com(星神闘覇スキルページの合成テーブル)で2ソース一致確認済み(2026-08-02)",
-  "黄丸化検証(2026-08-16): カード画像no1269_full.pngの4隅バッジ(槍SS/馬A/弓A/器A)を確認し一致。TR1〜TR5(510/570/640/720/810)はixanary.com(skills/灼槍不褪)の鍛錬表と全行完全一致(TR6無し)。synthesisTableはixanary.com+ixawiki.com(BushoCard/1269前田利家)の2ソースでA/B/C/S1/S2全枠一致。星神闘覇のランクはixanary.com単独でSSS表記だが、ixawiki.com(この武将のページ)+data/skill/星神闘覇.json既存値がSSで一致するためSSのまま維持(1256武田勝頼と同じ判断)。灼槍不褪自身は自己参照候補が無いため「移植不可」で正しい。星神闘覇・刹那無影・照闇騎行・飛龍衝天・十束ノ神域のdata/skill側sourceCharactersに1269が正しいslotで記載済みを確認(逆引き済み)。"
+  "黄丸化検証(2026-08-16): カード画像no1269_full.pngの4隅バッジ(槍SS/馬A/弓A/器A)を確認し一致。TR1〜TR5(510/570/640/720/810)はixanary.com(skills/灼槍不褪)の鍛錬表と全行完全一致(TR6無し)。synthesisTableはixanary.com+ixawiki.com(BushoCard/1269前田利家)の2ソースでA/B/C/S1/S2全枠一致。星神闘覇のランクはixanary.com単独でSSS表記だが、ixawiki.com(この武将のページ)+data/skill/星神闘覇.json既存値がSSで一致するためSSのまま維持(1256武田勝頼と同じ判断)。灼槍不褪自身は自己参照候補が無いため「移植不可」で正しい。星神闘覇・刹那無影・照闇騎行・飛龍衝天・十束ノ神域のdata/skill側sourceCharactersに1269が正しいslotで記載済みを確認(逆引き済み)。",
+  "2026-08-23: カード名を「前田利家（3）」から「前田利家（4）」に直した。（N）はゲーム内には無く、プレイヤーが見分けるために wiki の作成者が付けたもの(うぐさん)。ixawiki の武将カード一覧の表示名が「前田利家(4)」なのでそれに合わせた。覇と復刻はカードそのものの属性なので、一覧の札が何も言っていないときはうちの値を残している。"
  ],
  "wikiOldestComment": "2024-08-11",
  "wikiCommentCount": 23,

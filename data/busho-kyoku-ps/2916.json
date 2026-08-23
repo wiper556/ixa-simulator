@@ -1,7 +1,7 @@
 {
  "name": "明智秀満",
  "no": "2916",
- "ch": null,
+ "ch": "9章",
  "cost": 2.5,
  "troop": "全速",
  "sub": "",
@@ -36,6 +36,11 @@
  "notes": [
   "カード画像が無いため ixanary.com/cards/2916 と ixawiki.com(BushoCard/2916明智秀満)の生HTML2ソースで確認した。",
   "基礎値730/680/540・成長19/18/2・コスト2.5・指揮兵数2640(★0-0)・統率(槍B/弓A/馬S/器A)はixanary.comとixawiki.comの2ソースで完全一致。",
-  "初期スキル湖水渡り(B)は距離依存の速度変化スキルで固定%が無い。既存data/busho-kyoku-ps/2746.json(足利義稙)のsynthesisTable C枠(湖水渡り[B]、自己参照ではないが同スキル)のeffectShort「距離とスキルレベルで速度が変化(距離20以上の移動のみ有効・(距離-19)×1%)」と、ixanary.com生HTML(cards/2916)のLV10表記が完全一致することを確認し同じ書式で登録した。"
- ]
+  "初期スキル湖水渡り(B)は距離依存の速度変化スキルで固定%が無い。既存data/busho-kyoku-ps/2746.json(足利義稙)のsynthesisTable C枠(湖水渡り[B]、自己参照ではないが同スキル)のeffectShort「距離とスキルレベルで速度が変化(距離20以上の移動のみ有効・(距離-19)×1%)」と、ixanary.com生HTML(cards/2916)のLV10表記が完全一致することを確認し同じ書式で登録した。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2015-04-30",
+ "wikiCommentCount": 50,
+ "chGuess": "9章",
+ "chSource": "wikiOldestComment"
 }

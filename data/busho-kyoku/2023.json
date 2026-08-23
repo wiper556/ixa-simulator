@@ -1,7 +1,7 @@
 {
  "name": "小早川隆景",
  "no": "2023",
- "ch": null,
+ "ch": "1-2章",
  "cost": 2.5,
  "troop": "弓攻",
  "sub": "",
@@ -33,7 +33,12 @@
   }
  ],
  "notes": [
-  "2026-08-17登録(担当D)。カード画像が無いためixanary.com(cards/2023)生HTMLとixawiki.com(index.php?BushoCard/2023小早川隆景、およびBusho/武将カード一覧(極)・Busho/武将スキルの生HTML)の2ソースで数値が一致することを確認して登録した。"
+  "2026-08-17登録(担当D)。カード画像が無いためixanary.com(cards/2023)生HTMLとixawiki.com(index.php?BushoCard/2023小早川隆景、およびBusho/武将カード一覧(極)・Busho/武将スキルの生HTML)の2ソースで数値が一致することを確認して登録した。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
  ],
- "reviewedOk": false
+ "reviewedOk": false,
+ "wikiOldestComment": "2011-05-29",
+ "wikiCommentCount": 224,
+ "chGuess": "1-2章",
+ "chSource": "wikiOldestComment"
 }

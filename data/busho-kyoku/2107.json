@@ -1,7 +1,7 @@
 {
  "name": "高台院",
  "no": "2107",
- "ch": null,
+ "ch": "7章",
  "cost": 2.0,
  "troop": "槍砲防",
  "sub": "",
@@ -36,6 +36,11 @@
  "notes": [
   "2026-08-17登録。カード画像が無いためixanary.com(cards/2107 と skills/日輪の礎)とixawiki.com(BushoCard/2107高台院)の生HTMLを直接確認し両方が一致した項目だけで登録した(reviewedOkはfalseのまま)。",
   "合成候補(synthesisTable)は今回付けていない。章(ch)は両ソースとも記載が無いため未確認。",
-  "絵師名の表記がixanaryは半角アスタリスク(mado*pen)・ixawikiは全角アスタリスク(mado＊pen)だったが同一人物の表記ゆれと判断し、サイト内の既存表記(mado＊pen)に揃えた(食い違いnull対象にはしていない)。"
- ]
+  "絵師名の表記がixanaryは半角アスタリスク(mado*pen)・ixawikiは全角アスタリスク(mado＊pen)だったが同一人物の表記ゆれと判断し、サイト内の既存表記(mado＊pen)に揃えた(食い違いnull対象にはしていない)。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2014-04-05",
+ "wikiCommentCount": 117,
+ "chGuess": "7章",
+ "chSource": "wikiOldestComment"
 }

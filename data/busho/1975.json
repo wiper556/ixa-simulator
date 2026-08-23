@@ -1,7 +1,7 @@
 {
  "name": "ねね-復刻-",
  "no": "1975",
- "ch": null,
+ "ch": "16章",
  "cost": 3.5,
  "troop": "弓馬砲器攻",
  "sub": "",
@@ -31,6 +31,11 @@
   "2026-08-17登録。カード画像が無いためixanary.com(cards/1975)とixawiki.com(BushoCard/1975ねね)の生HTML2ソースのみで作成した。imageFull/imageCharはnull。",
   "cost/lv0Troops/rankGrades/atkBase・atkGrowth/tacticsBase・tacticsGrowth/defGrowthは両ソース一致。defBaseのみixanary=1040・ixawiki=1000で食い違ったためnullにした(今回の割当20体のうち17体で発生している系統的な食い違い)。",
   "初期スキル名がixanaryは「万劫豊国」、ixawikiは「万却豊国」で食い違った(効果の数値・対象兵科は確率20%→42%/攻撃40%→70%上昇/4部隊以下の攻撃で効果2倍で完全一致、漢字1文字のみの相違)。ixawikiのアンカーIDは「skill_bankyakutoyokuni」(kyaku)でwiki側表記を支持する材料はあるが、標準2ソースのどちらかを勝たせない方針のためinitialSkill/skillDetail/trTableをnullにした。troopのみ両ソース一致内容から「弓馬砲器攻」と判断して記載した。",
-  "reviewedOkはfalseのまま。カード画像による4隅バッジ・スキルパネル照合が未実施のため黄丸化はできない。"
- ]
+  "reviewedOkはfalseのまま。カード画像による4隅バッジ・スキルパネル照合が未実施のため黄丸化はできない。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2019-01-23",
+ "wikiCommentCount": 25,
+ "chGuess": "16章",
+ "chSource": "wikiOldestComment"
 }

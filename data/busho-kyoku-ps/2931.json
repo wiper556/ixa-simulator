@@ -1,7 +1,7 @@
 {
  "name": "島左近（3）",
  "no": "2931",
- "ch": null,
+ "ch": "12章",
  "cost": 3.5,
  "troop": "槍馬防",
  "sub": "",
@@ -36,6 +36,11 @@
  "notes": [
   "カード画像が無いため ixanary.com/cards/2931 と ixawiki.com(BushoCard/2931島左近)の生HTML2ソースで確認した。",
   "基礎値880/960/420・成長20/21/2・コスト3.5・指揮兵数3420(★0-0)・統率(槍S/弓B/馬S/器B)はixanary.comとixawiki.comの2ソースで完全一致。",
-  "初期スキル十羅刹女(B)のLV10「確率+27%/対象 槍馬/防御47%上昇」はixanary.comとixawiki.comの2ソースで完全一致。"
- ]
+  "初期スキル十羅刹女(B)のLV10「確率+27%/対象 槍馬/防御47%上昇」はixanary.comとixawiki.comの2ソースで完全一致。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2016-09-09",
+ "wikiCommentCount": 45,
+ "chGuess": "12章",
+ "chSource": "wikiOldestComment"
 }

@@ -1,7 +1,7 @@
 {
  "name": "山県昌景（4）",
  "no": "2298",
- "ch": null,
+ "ch": "21章",
  "cost": 2.5,
  "troop": "馬砲器防速",
  "sub": "",
@@ -34,6 +34,11 @@
  ],
  "reviewedOk": false,
  "notes": [
-  "2026-08-18登録(担当H)。カード画像が無いためixanary.com(cards/2298)生HTMLとixawiki.com(index.php?BushoCard/2298山県昌景)の基本ステータス表・スキル表を突き合わせて完全一致を確認して登録した。名前の（4）はixawikiの武将カード一覧の表記に従った。atk/defが1030で同値だが両ソース独立に一致しているため攻防同値カードとして採用した。"
- ]
+  "2026-08-18登録(担当H)。カード画像が無いためixanary.com(cards/2298)生HTMLとixawiki.com(index.php?BushoCard/2298山県昌景)の基本ステータス表・スキル表を突き合わせて完全一致を確認して登録した。名前の（4）はixawikiの武将カード一覧の表記に従った。atk/defが1030で同値だが両ソース独立に一致しているため攻防同値カードとして採用した。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2021-06-08",
+ "wikiCommentCount": 10,
+ "chGuess": "21章",
+ "chSource": "wikiOldestComment"
 }

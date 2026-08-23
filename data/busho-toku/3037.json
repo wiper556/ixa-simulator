@@ -1,7 +1,7 @@
 {
  "name": "大谷吉継",
  "no": "3037",
- "ch": null,
+ "ch": "1-2章",
  "cost": 2,
  "troop": "弓器防",
  "sub": "",
@@ -38,6 +38,11 @@
   "統率(D/B/E/A)・コスト2・指揮兵数2010・攻撃620/15・防御620/15・兵法490.0/2・ふりがな・初期スキル「土壁の術」[D]はixanary.comとixawiki.comの2ソースで一致することを確認した(不一致箇所は個別に注記)。",
   "攻撃初期値620・防御初期値620が完全に同値だが、ixanary.comとixawiki.comの2ソースが独立に一致しているため実際の値と判断した(攻撃防御同値バグの誤登録ではない)。",
   "ixanary.com/ixawiki.comのカードページ本文に復刻を示す記載は無く(「全ての戦国くじから入手不可能」の一般的な注記のみ)、コメント欄の「復刻しないかな」はユーザー投稿のため採用せず、名前に-復刻-は付けなかった。",
-  "カード画像が無いためimageFull/imageCharはnull、synthesisTableは付けない。reviewedOkはfalseのまま。章(ch)は両ソースとも記載が無くnullとした。"
- ]
+  "カード画像が無いためimageFull/imageCharはnull、synthesisTableは付けない。reviewedOkはfalseのまま。章(ch)は両ソースとも記載が無くnullとした。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2011-07-02",
+ "wikiCommentCount": 127,
+ "chGuess": "1-2章",
+ "chSource": "wikiOldestComment"
 }

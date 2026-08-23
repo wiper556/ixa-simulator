@@ -1,7 +1,7 @@
 {
  "name": "愛姫",
  "no": "2097",
- "ch": null,
+ "ch": "7章",
  "cost": 2.5,
  "troop": "槍馬攻",
  "sub": "",
@@ -35,6 +35,11 @@
  "reviewedOk": false,
  "notes": [
   "2026-08-17登録。カード画像が無いためixanary.com(cards/2097 と skills/応竜恋慕)とixawiki.com(BushoCard/2097愛姫)の生HTMLを直接確認し両方が一致した項目だけで登録した(reviewedOkはfalseのまま)。",
-  "合成候補(synthesisTable)は今回付けていない。章(ch)は両ソースとも記載が無いため未確認。"
- ]
+  "合成候補(synthesisTable)は今回付けていない。章(ch)は両ソースとも記載が無いため未確認。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2013-12-25",
+ "wikiCommentCount": 118,
+ "chGuess": "7章",
+ "chSource": "wikiOldestComment"
 }
