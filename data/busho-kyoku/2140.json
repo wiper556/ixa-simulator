@@ -16,6 +16,7 @@
  "defGrowth": 16,
  "tacticsBase": 455,
  "tacticsGrowth": 2,
+ "lv0Troops": 3310,
  "rankGrades": {
   "yari": "S",
   "yumi": "B",
@@ -36,6 +37,7 @@
   "2026-08-17登録。カード画像が無いためixanary.com(cards/2140)とixawiki.com(BushoCard/2140龍造寺隆信)の生HTMLの一致だけで登録した。",
   "基礎値/成長値/コスト/指揮兵数/rankGrades(槍S・弓B・馬A・器C)/イラストレーター/スキルLV1数値は両ソースで完全一致。LV10数値はixanary.comのみに記載(ixawikiはLV1のみ掲載)。",
   "ixanary.comのLV10欄に「No.2139鍋島直茂と特殊合成可能」という注記があったが、合成テーブルの詳細は今回の登録対象外(synthesisTableは付けない指示)のためskillDetailには含めていない。",
-  "章(ch)は両ソースに記載が無く未確認のためnull。"
+  "章(ch)は両ソースに記載が無く未確認のためnull。",
+  "2026-08-23: lv0Troops(指揮兵数)のキーごと無かったので入れた。ixanary の cards/{No} に埋め込まれている JSON の \"capacity\":[0,N] の値。ixawiki には No.2129〜2148 のページが無く突き合わせられないが、既に指揮兵数を持つ極武将403件から10枚を抜いて capacity と照合し10件とも一致したので、この取り方は信用できると判断した(単一情報源であることは申し送り)。"
  ]
 }

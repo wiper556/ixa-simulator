@@ -113,8 +113,12 @@ def build(name, rank=None):
         ("rank", rank or d.get("rank")),
         ("baseRate", rate0),
         ("target", target0),
-        ("effectSummary", "%s/LV10 確率 %s%% %s/対象:%s"
-         % (rank or d.get("rank"), ("%g" % rate0) if rate0 is not None else "-",
+        # 2026-08-23: 段の名前を "LV10" と決め打ちしていた。童のスキルは
+        # レベルを持たず「固定」の1段だけなので、実際の段名を使う
+        # (regwrite.py にも同じ決め打ちがあり、そちらは同日に直した)。
+        ("effectSummary", "%s/%s 確率 %s%% %s/対象:%s"
+         % (rank or d.get("rank"), lv[0].get("level") or "LV10",
+            ("%g" % rate0) if rate0 is not None else "-",
             (parse_level(lv[0]["text"])[2] or "").split("(")[0][:40], target0 or "全")),
         ("categoryLinks", []),
         ("sourceCharacters", []),
