@@ -733,11 +733,14 @@ def main():
                 add("ドット付きランク", "MID", "%s No.%s %s=%s" % (g["name"], g["no"], k, v))
 
     # D-09: synthesisTable の行が5枠そろっていない
+    # 2026-08-23: **童(1800番台)には S2 の枠が無い**(うぐさん)。4行が正しい。
     for g in all_g:
         st = g.get("synthesisTable")
+        _n = str(g.get("no") or "")
+        _want = (0, 4) if (len(_n) == 4 and _n.isdigit() and 1800 <= int(_n) <= 1899) else (0, 5)
         if st is not None and {r.get("slot") for r in st} - {"A", "B", "C", "S1", "S2"} == set() \
-                and len(st) not in (0, 5):
-            add("synthesisTableの行数", "MID", "%s No.%s: %d行(A/B/C/S1/S2の5行が標準)"
+                and len(st) not in _want:
+            add("synthesisTableの行数", "MID", "%s No.%s: %d行(A/B/C/S1/S2の5行が標準。童はS2が無いので4行)"
                 % (g["name"], g["no"], len(st)))
 
     # D-10 / D-11: slot の独自語
