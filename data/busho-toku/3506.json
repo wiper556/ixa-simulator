@@ -1,0 +1,110 @@
+{
+ "name": "高山友照",
+ "no": "3506",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "槍砲攻",
+ "sub": "",
+ "effect": "攻撃 28%上昇 防御 28%上昇 / 卓越：追加確率60%で攻防効果が3倍",
+ "furigana": "たかやまともてる",
+ "illustrator": "COGA",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 870,
+ "atkGrowth": 28.0,
+ "defBase": 870,
+ "defGrowth": 28.0,
+ "tacticsBase": 470.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2620,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "B",
+  "uma": "C",
+  "ki": "B"
+ },
+ "initialSkill": "武士ノ鑑",
+ "skillDetail": "C/LV10 確率 100% 攻撃 28%上昇 防御 28%上昇 / 卓越：追加確率60%で攻防効果が3倍/対象:槍砲\n①攻撃 28%上昇 防御 28%上昇 / 卓越：追加確率60%で攻防効果が3倍",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍砲　確率 100% / 攻撃 28%上昇 防御 28%上昇 / 卓越：追加確率60%で攻防効果が3倍"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "武士ノ鑑",
+   "rank": "C",
+   "afterSkill": "叛将烈破",
+   "afterRank": "B",
+   "target": "槍砲",
+   "rate": "100%",
+   "effectShort": "攻撃 28%上昇 防御 28%上昇 / 卓越：追加確率60%で攻防効果が3倍",
+   "afterTarget": "槍砲",
+   "afterRate": "32%",
+   "afterEffectShort": "攻撃 36%上昇 / 防御 36%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "武士ノ鑑",
+   "rank": "C",
+   "afterSkill": "叛将烈破",
+   "afterRank": "B",
+   "target": "槍砲",
+   "rate": "100%",
+   "effectShort": "攻撃 28%上昇 防御 28%上昇 / 卓越：追加確率60%で攻防効果が3倍",
+   "afterTarget": "槍砲",
+   "afterRate": "32%",
+   "afterEffectShort": "攻撃 36%上昇 / 防御 36%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "武士ノ鑑",
+   "rank": "C",
+   "afterSkill": "叛将烈破",
+   "afterRank": "B",
+   "target": "槍砲",
+   "rate": "100%",
+   "effectShort": "攻撃 28%上昇 防御 28%上昇 / 卓越：追加確率60%で攻防効果が3倍",
+   "afterTarget": "槍砲",
+   "afterRate": "32%",
+   "afterEffectShort": "攻撃 36%上昇 / 防御 36%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "叛将烈破",
+   "rank": "B",
+   "afterSkill": "戦陣 阿吽",
+   "afterRank": "A",
+   "target": "槍砲",
+   "rate": "32%",
+   "effectShort": "攻撃 36%上昇 / 防御 36%上昇",
+   "afterTarget": "全",
+   "afterRate": "25%",
+   "afterEffectShort": "攻撃 42%上昇+防御 42%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "十字飛車",
+   "rank": "A",
+   "afterSkill": "騒速ノ神撃",
+   "afterRank": "SS",
+   "target": "槍砲器",
+   "rate": "42%",
+   "effectShort": "攻撃 77%上昇 / 防御 77%上昇 / 破壊 50%上昇",
+   "afterTarget": "槍・弓・器・焙",
+   "afterRate": "57%",
+   "afterEffectShort": "攻撃 100%上昇 防御 100%上昇 部隊内の「騒速ノ神撃」スキルx25%を攻防効果に加算"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3506 と skills/武士ノ鑑)およびixawiki(BushoCard/3506高山友照)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。",
+  "2026-08-23 訂正: S2枠の移植後が自分自身(十字飛車)になっていた。ixanary の2次の列がこのカードだけ短く、一括登録が自己参照にフォールバックしたため。同じ十字飛車を1次に持つ他の武将は全員 騒速ノ神撃 に化けるので揃えた。"
+ ]
+}

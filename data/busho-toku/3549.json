@@ -1,0 +1,109 @@
+{
+ "name": "吉田政重",
+ "no": "3549",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "槍器鉄攻",
+ "sub": "",
+ "effect": "攻撃 240%上昇 / 防御 240%上昇 / 破壊 50%上昇",
+ "furigana": "よしだまさしげ",
+ "illustrator": "トミダトモミ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 880,
+ "atkGrowth": 30.0,
+ "defBase": 880,
+ "defGrowth": 30.0,
+ "tacticsBase": 470.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 2660,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "B",
+  "uma": "C",
+  "ki": "B"
+ },
+ "initialSkill": "討虎七撃",
+ "skillDetail": "C/LV10 確率 38% 攻撃 240%上昇 / 防御 240%上昇 / 破壊 50%上昇/対象:槍器鉄\n①攻撃が240%上昇 / 防御 240%上昇 / 破壊 50%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍器鉄　確率 38% / 攻撃 240%上昇 / 防御 240%上昇 / 破壊 50%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "討虎七撃",
+   "rank": "C",
+   "afterSkill": "戦陣 凱旋",
+   "afterRank": "A",
+   "target": "槍器鉄",
+   "rate": "38%",
+   "effectShort": "攻撃 240%上昇 / 防御 240%上昇 / 破壊 50%上昇",
+   "afterTarget": "全",
+   "afterRate": "10%",
+   "afterEffectShort": "攻撃 87%上昇+防御 87%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "討虎七撃",
+   "rank": "C",
+   "afterSkill": "戦陣 凱旋",
+   "afterRank": "A",
+   "target": "槍器鉄",
+   "rate": "38%",
+   "effectShort": "攻撃 240%上昇 / 防御 240%上昇 / 破壊 50%上昇",
+   "afterTarget": "全",
+   "afterRate": "10%",
+   "afterEffectShort": "攻撃 87%上昇+防御 87%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "武神百鬼",
+   "rank": "A",
+   "afterSkill": "極楽護法",
+   "afterRank": "B",
+   "target": "槍弓馬器",
+   "rate": "34%",
+   "effectShort": "攻撃 55%上昇 防御 55%上昇 / 部隊内の「武神百鬼」スキル数×35%を攻防効果に加算",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 60%上昇 防御 60%上昇 / 卓越：追加確率50%で攻防効果が1.5倍"
+  },
+  {
+   "slot": "S1",
+   "skill": "戦陣 凱旋",
+   "rank": "A",
+   "afterSkill": "布都御魂ノ鬨",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "10%",
+   "effectShort": "攻撃 87%上昇+防御 87%上昇",
+   "afterTarget": "全",
+   "afterRate": "35%",
+   "afterEffectShort": "攻撃 40%上昇+防御 40%上昇(部隊内レアリティS以上のスキル個数×20%加算)"
+  },
+  {
+   "slot": "S2",
+   "skill": "虎切刀",
+   "rank": "C",
+   "afterSkill": "鬼滅刺",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "50%",
+   "effectShort": "攻撃 66%上昇 / 防御 66%上昇",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 70%上昇 防御 70%上昇(卓越確率+25%加算・模倣不可)"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3549 と skills/討虎七撃)およびixawiki(BushoCard/3549吉田政重)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

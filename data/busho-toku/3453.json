@@ -1,0 +1,109 @@
+{
+ "name": "津軽信枚",
+ "no": "3453",
+ "ch": null,
+ "cost": 1.5,
+ "troop": "弓器焙防",
+ "sub": "",
+ "effect": "防御 50%上昇 / 自拠点防御時は防御効果1.5倍",
+ "furigana": "つがるのぶひら",
+ "illustrator": "士基軽太",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 820,
+ "atkGrowth": 24.0,
+ "defBase": 860,
+ "defGrowth": 28.0,
+ "tacticsBase": 460.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 1950,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "A",
+  "uma": "C",
+  "ki": "B"
+ },
+ "initialSkill": "北威鎮征",
+ "skillDetail": "D/LV10 確率 39% 防御 50%上昇 / 自拠点防御時は防御効果1.5倍/対象:弓器焙\n①防御 50%上昇 / 自拠点防御時は防御効果1.5倍",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓器焙　確率 39% / 防御 50%上昇 / 自拠点防御時は防御効果1.5倍"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "北威鎮征",
+   "rank": "D",
+   "afterSkill": "君臣豊楽",
+   "afterRank": "B",
+   "target": "弓器焙",
+   "rate": "39%",
+   "effectShort": "防御 50%上昇 / 自拠点防御時は防御効果1.5倍",
+   "afterTarget": "弓砲器",
+   "afterRate": "15%",
+   "afterEffectShort": "防御 40%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "弓隊堅陣",
+   "rank": "F",
+   "afterSkill": "弓隊奇襲",
+   "afterRank": "E",
+   "target": "弓",
+   "rate": "30%",
+   "effectShort": "防御 12%上昇",
+   "afterTarget": "弓",
+   "afterRate": "30%",
+   "afterEffectShort": "弓攻：12%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "百足矢",
+   "rank": "D",
+   "afterSkill": "新館御料人",
+   "afterRank": "B",
+   "target": "弓器焙",
+   "rate": "17%",
+   "effectShort": "防御 76%上昇 / 自拠点防御時は100%発動",
+   "afterTarget": "弓砲器",
+   "afterRate": "70%",
+   "afterEffectShort": "攻撃 57.6%上昇 / 防御 57.6%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "君臣豊楽",
+   "rank": "B",
+   "afterSkill": "捨て奸",
+   "afterRank": "B",
+   "target": "弓砲器",
+   "rate": "15%",
+   "effectShort": "防御 40%上昇",
+   "afterTarget": "弓砲器",
+   "afterRate": "15%",
+   "afterEffectShort": "防御 37%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "豊家ノ滅塞",
+   "rank": "B",
+   "afterSkill": "籠城の妙技",
+   "afterRank": "A",
+   "target": "弓・砲・器",
+   "rate": "42%",
+   "effectShort": "防御 15%上昇(部隊の総コストで変動)",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "防御 50%上昇(卓越:追加確率15%で防御効果が3倍)"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3453 と skills/北威鎮征)およびixawiki(BushoCard/3453津軽信枚)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

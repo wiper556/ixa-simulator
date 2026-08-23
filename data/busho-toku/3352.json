@@ -1,0 +1,103 @@
+{
+ "name": "稲姫",
+ "no": "3352",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "弓焙攻",
+ "sub": "",
+ "effect": "攻撃 43.2%上昇 破壊 20%上昇",
+ "furigana": "いなひめ",
+ "illustrator": "木下月乃",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 870,
+ "atkGrowth": 23.0,
+ "defBase": 850,
+ "defGrowth": 22.0,
+ "tacticsBase": 460.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2500,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "A",
+  "uma": "C",
+  "ki": "B"
+ },
+ "initialSkill": "葵ノ戦姫",
+ "skillDetail": "D/LV10 確率 70% 攻撃 43.2%上昇 破壊 20%上昇/対象:弓焙\n①攻撃が43.2%上昇 破壊 20%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓焙　確率 70% / 攻撃 43.2%上昇 破壊 20%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "弓隊襲撃",
+   "rank": "F",
+   "afterSkill": "弓隊堅守",
+   "afterRank": "F",
+   "target": "弓",
+   "rate": "20%",
+   "effectShort": "攻撃 10%上昇",
+   "afterTarget": "弓",
+   "afterRate": "20%",
+   "afterEffectShort": "防御 10%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "名姫の撥無",
+   "rank": "D",
+   "afterSkill": "名姫の撥無",
+   "afterRank": "D",
+   "target": "弓",
+   "rate": "24%",
+   "effectShort": "攻撃 (コストx12) %上昇 / (武将のコストで効果が変化します)"
+  },
+  {
+   "slot": "C",
+   "skill": "葵ノ戦姫",
+   "rank": "D",
+   "afterSkill": "戦巧者",
+   "afterRank": "D",
+   "target": "弓焙",
+   "rate": "70%",
+   "effectShort": "攻撃 43.2%上昇 破壊 20%上昇",
+   "afterTarget": "槍弓器",
+   "afterRate": "35%",
+   "afterEffectShort": "攻撃 36%上昇 / (2部隊以下の攻撃で効果1.5倍)"
+  },
+  {
+   "slot": "S1",
+   "skill": "戦巧者",
+   "rank": "D",
+   "afterSkill": "大貉",
+   "afterRank": "D",
+   "target": "槍弓器",
+   "rate": "35%",
+   "effectShort": "攻撃 36%上昇 / (2部隊以下の攻撃で効果1.5倍)",
+   "afterTarget": "槍弓器",
+   "afterRate": "32%",
+   "afterEffectShort": "攻撃 34%上昇 / 破壊 17%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "御母の神意",
+   "rank": "B",
+   "afterSkill": "御母の神意",
+   "afterRank": "B",
+   "target": "槍弓砲",
+   "rate": "8%",
+   "effectShort": "攻撃 50%上昇 / 相手軍の武将数が20以上だと必ずスキル発動"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3352 と skills/葵ノ戦姫)およびixawiki(BushoCard/3352稲姫)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

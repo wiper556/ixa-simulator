@@ -1,0 +1,109 @@
+{
+ "name": "大友義統",
+ "no": "3525",
+ "ch": null,
+ "cost": 3.0,
+ "troop": "弓馬器防",
+ "sub": "",
+ "effect": "防御 88%上昇 確率：+52% / 速度 33%上昇 確率：+100%(加勢出陣時は速度効果3倍)",
+ "furigana": "おおともよしむね",
+ "illustrator": "トミダトモミ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 860,
+ "atkGrowth": 28.0,
+ "defBase": 880,
+ "defGrowth": 30.0,
+ "tacticsBase": 460.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 3010,
+ "rankGrades": {
+  "yari": "C",
+  "yumi": "B",
+  "uma": "B",
+  "ki": "A"
+ },
+ "initialSkill": "流将天願",
+ "skillDetail": "C/LV10 確率 52% 防御 88%上昇 確率：+52% / 速度 33%上昇 確率：+100%(加勢出陣時は速度効果3倍)/対象:弓馬器\n①防御 88%上昇 確率：+52% / 速度 33%上昇 確率：+100%(加勢出陣時は速度効果3倍)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓馬器　確率 52% / 防御 88%上昇 確率：+52% / 速度 33%上昇 確率：+100%(加勢出陣時は速度効果3倍)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "流将天願",
+   "rank": "C",
+   "afterSkill": "戦場妙技",
+   "afterRank": "B",
+   "target": "弓馬器",
+   "rate": "52%",
+   "effectShort": "防御 88%上昇 確率：+52% / 速度 33%上昇 確率：+100%(加勢出陣時は速度効果3倍)",
+   "afterTarget": "全",
+   "afterRate": "32%",
+   "afterEffectShort": "攻撃 72%上昇+防御 72%上昇+破壊 20%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "流将天願",
+   "rank": "C",
+   "afterSkill": "戦場妙技",
+   "afterRank": "B",
+   "target": "弓馬器",
+   "rate": "52%",
+   "effectShort": "防御 88%上昇 確率：+52% / 速度 33%上昇 確率：+100%(加勢出陣時は速度効果3倍)",
+   "afterTarget": "全",
+   "afterRate": "32%",
+   "afterEffectShort": "攻撃 72%上昇+防御 72%上昇+破壊 20%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "絶無卻退",
+   "rank": "D",
+   "afterSkill": "無間牢",
+   "afterRank": "B",
+   "target": "弓馬器",
+   "rate": "27%",
+   "effectShort": "防御 68%上昇 確率：+27% / 速度 30%上昇",
+   "afterTarget": "槍弓馬器",
+   "afterRate": "25%",
+   "afterEffectShort": "防御 77%上昇 確率：+25% / 速度 45%上昇 確率：+100% / (加勢出陣時は速度効果2倍)"
+  },
+  {
+   "slot": "S1",
+   "skill": "戦場妙技",
+   "rank": "B",
+   "afterSkill": "戦陣 破軍",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "32%",
+   "effectShort": "攻撃 72%上昇+防御 72%上昇+破壊 20%上昇",
+   "afterTarget": "全",
+   "afterRate": "44%",
+   "afterEffectShort": "攻撃 66%上昇+防御 66%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "斑ノ守護者",
+   "rank": "C",
+   "afterSkill": "死出ノ田長",
+   "afterRank": "B",
+   "target": "槍弓馬器",
+   "rate": "55%",
+   "effectShort": "防御 60%上昇 / (自軍7部隊以下の防御時 効果1.5倍)",
+   "afterTarget": "槍弓馬器",
+   "afterRate": "54%",
+   "afterEffectShort": "防御 80%上昇 / 卓越：追加確率30%で防御効果が1.5倍"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3525 と skills/流将天願)およびixawiki(BushoCard/3525大友義統)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

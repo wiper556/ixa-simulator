@@ -1,0 +1,110 @@
+{
+ "name": "鳥居忠吉",
+ "no": "3530",
+ "ch": null,
+ "cost": 3.0,
+ "troop": "全防",
+ "sub": "",
+ "effect": "防御 88%上昇 / このスキルを所持する武将の所有者が影城主のとき、防御効果1.5倍",
+ "furigana": "とりいただよし",
+ "illustrator": "ヤマザキミコ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 870,
+ "atkGrowth": 27.0,
+ "defBase": 890,
+ "defGrowth": 30.0,
+ "tacticsBase": 470.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 3020,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "B",
+  "uma": "C",
+  "ki": "A"
+ },
+ "initialSkill": "忠魂三州",
+ "skillDetail": "C/LV10 確率 42% 防御 88%上昇 / このスキルを所持する武将の所有者が影城主のとき防御効果1.5倍/対象:全\n①防御 88%上昇 / このスキルを所持する武将の所有者が影城主のとき防御効果1.5倍",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 42% / 防御 88%上昇 / このスキルを所持する武将の所有者が影城主のとき、防御効果1.5倍"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "忠魂三州",
+   "rank": "C",
+   "afterSkill": "覇・一期一振",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "42%",
+   "effectShort": "防御 88%上昇 / このスキルを所持する武将の所有者が影城主のとき、防御効果1.5倍",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 85%上昇 防御 85%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "忠魂三州",
+   "rank": "C",
+   "afterSkill": "覇・一期一振",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "42%",
+   "effectShort": "防御 88%上昇 / このスキルを所持する武将の所有者が影城主のとき、防御効果1.5倍",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 85%上昇 防御 85%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "十字飛車",
+   "rank": "A",
+   "afterSkill": "騒速ノ神撃",
+   "afterRank": "SS",
+   "target": "槍砲器",
+   "rate": "42%",
+   "effectShort": "攻撃 77%上昇 / 防御 77%上昇 / 破壊 50%上昇",
+   "afterTarget": "槍・弓・器・焙",
+   "afterRate": "57%",
+   "afterEffectShort": "攻撃 100%上昇 防御 100%上昇 部隊内の「騒速ノ神撃」スキルx25%を攻防効果に加算"
+  },
+  {
+   "slot": "S1",
+   "skill": "覇・一期一振",
+   "rank": "A",
+   "afterSkill": "戦陣 破軍",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "攻撃 85%上昇 防御 85%上昇",
+   "afterTarget": "全",
+   "afterRate": "44%",
+   "afterEffectShort": "攻撃 66%上昇+防御 66%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "覇・太虚国崩",
+   "rank": "B",
+   "afterSkill": "戦陣 破軍",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "55%",
+   "effectShort": "防御 75%上昇",
+   "afterTarget": "全",
+   "afterRate": "44%",
+   "afterEffectShort": "攻撃 66%上昇+防御 66%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3530 と skills/忠魂三州)およびixawiki(BushoCard/3530鳥居忠吉)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。",
+  "2026-08-23: skillDetail に読点が混入していた(F-01違反)。ixanary の原文が「配置時、防御効果が」のように読点を使うのをそのまま取り込んでいた。読点を外した。"
+ ]
+}

@@ -1,0 +1,109 @@
+{
+ "name": "中川清秀",
+ "no": "3512",
+ "ch": null,
+ "cost": 3.0,
+ "troop": "槍馬器攻",
+ "sub": "",
+ "effect": "攻撃 84%上昇 / 防御 84%上昇 / 破壊 40%上昇",
+ "furigana": "なかがわきよひで",
+ "illustrator": "tatsuya",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 850,
+ "atkGrowth": 26.0,
+ "defBase": 850,
+ "defGrowth": 26.0,
+ "tacticsBase": 460.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2990,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "C",
+  "uma": "B",
+  "ki": "B"
+ },
+ "initialSkill": "鬼瀬兵衛",
+ "skillDetail": "C/LV10 確率 35% 攻撃 84%上昇 / 防御 84%上昇 / 破壊 40%上昇/対象:槍馬器\n①攻撃が84%上昇 / 防御 84%上昇 / 破壊 40%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍馬器　確率 35% / 攻撃 84%上昇 / 防御 84%上昇 / 破壊 40%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "鬼瀬兵衛",
+   "rank": "C",
+   "afterSkill": "武神百鬼",
+   "afterRank": "A",
+   "target": "槍馬器",
+   "rate": "35%",
+   "effectShort": "攻撃 84%上昇 / 防御 84%上昇 / 破壊 40%上昇",
+   "afterTarget": "槍弓馬器",
+   "afterRate": "34%",
+   "afterEffectShort": "攻撃 55%上昇 防御 55%上昇 / 部隊内の「武神百鬼」スキル数×35%を攻防効果に加算"
+  },
+  {
+   "slot": "B",
+   "skill": "鬼瀬兵衛",
+   "rank": "C",
+   "afterSkill": "武神百鬼",
+   "afterRank": "A",
+   "target": "槍馬器",
+   "rate": "35%",
+   "effectShort": "攻撃 84%上昇 / 防御 84%上昇 / 破壊 40%上昇",
+   "afterTarget": "槍弓馬器",
+   "afterRate": "34%",
+   "afterEffectShort": "攻撃 55%上昇 防御 55%上昇 / 部隊内の「武神百鬼」スキル数×35%を攻防効果に加算"
+  },
+  {
+   "slot": "C",
+   "skill": "虎切刀",
+   "rank": "C",
+   "afterSkill": "鬼滅刺",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "50%",
+   "effectShort": "攻撃 66%上昇 / 防御 66%上昇",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 70%上昇 防御 70%上昇(卓越確率+25%加算・模倣不可)"
+  },
+  {
+   "slot": "S1",
+   "skill": "武神百鬼",
+   "rank": "A",
+   "afterSkill": "極楽護法",
+   "afterRank": "B",
+   "target": "槍弓馬器",
+   "rate": "34%",
+   "effectShort": "攻撃 55%上昇 防御 55%上昇 / 部隊内の「武神百鬼」スキル数×35%を攻防効果に加算",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 60%上昇 防御 60%上昇 / 卓越：追加確率50%で攻防効果が1.5倍"
+  },
+  {
+   "slot": "S2",
+   "skill": "十字飛車",
+   "rank": "A",
+   "afterSkill": "騒速ノ神撃",
+   "afterRank": "SS",
+   "target": "槍砲器",
+   "rate": "42%",
+   "effectShort": "攻撃 77%上昇 / 防御 77%上昇 / 破壊 50%上昇",
+   "afterTarget": "槍・弓・器・焙",
+   "afterRate": "57%",
+   "afterEffectShort": "攻撃 100%上昇 防御 100%上昇 部隊内の「騒速ノ神撃」スキルx25%を攻防効果に加算"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3512 と skills/鬼瀬兵衛)およびixawiki(BushoCard/3512中川清秀)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

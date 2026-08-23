@@ -1,0 +1,103 @@
+{
+ "name": "亀井茲矩",
+ "no": "3264",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "全",
+ "sub": "",
+ "effect": "資源獲得率：5% / 破壊した耐久値に応じて資源獲得",
+ "furigana": "かめいこれのり",
+ "illustrator": "BISAI",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 730,
+ "atkGrowth": 18.0,
+ "defBase": 730,
+ "defGrowth": 18.0,
+ "tacticsBase": 440.0,
+ "tacticsGrowth": 1.5,
+ "lv0Troops": 2400,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "C",
+  "uma": "C",
+  "ki": "A"
+ },
+ "initialSkill": "保食",
+ "skillDetail": "C/LV10 確率 40% 資源獲得率：5% / 破壊した耐久値に応じて資源獲得/対象:全\n①資源獲得率：5% / 破壊した耐久値に応じて資源獲得",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 40% / 資源獲得率：5% / 破壊した耐久値に応じて資源獲得"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "槍隊突撃",
+   "rank": "F",
+   "afterSkill": "槍隊奇襲",
+   "afterRank": "E",
+   "target": "槍",
+   "rate": "15%",
+   "effectShort": "攻撃 20%上昇",
+   "afterTarget": "槍",
+   "afterRate": "30%",
+   "afterEffectShort": "攻撃 12%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "槍馬連撃",
+   "rank": "D",
+   "afterSkill": "槍陣の極み",
+   "afterRank": "B",
+   "target": "槍馬",
+   "rate": "30%",
+   "effectShort": "攻撃 20%上昇",
+   "afterTarget": "槍",
+   "afterRate": "30%",
+   "afterEffectShort": "防御 30%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "疾風怒濤",
+   "rank": "B",
+   "afterSkill": "疾風怒濤",
+   "afterRank": "B",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "攻撃 5%上昇 / 速度 32%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "千成瓢箪",
+   "rank": "B",
+   "afterSkill": "千成瓢箪",
+   "afterRank": "B",
+   "target": "槍馬砲",
+   "rate": "100%",
+   "effectShort": "攻撃 16%上昇 / 速度 25%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "保食神",
+   "rank": "B",
+   "afterSkill": "疾風怒濤",
+   "afterRank": "B",
+   "target": "全",
+   "rate": "40%",
+   "effectShort": "資源獲得率：10% / 破壊した耐久値に応じて資源獲得",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 5%上昇 / 速度 32%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3264 と skills/保食)およびixawiki(BushoCard/3264亀井茲矩)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

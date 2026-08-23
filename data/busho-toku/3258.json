@@ -1,0 +1,103 @@
+{
+ "name": "安藤守就",
+ "no": "3258",
+ "ch": null,
+ "cost": 3.0,
+ "troop": "槍弓馬攻",
+ "sub": "",
+ "effect": "攻撃 39%上昇 確率：+27% / 速度 25%低下",
+ "furigana": "あんどうもりなり",
+ "illustrator": "みつなり都",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 800,
+ "atkGrowth": 19.0,
+ "defBase": 660,
+ "defGrowth": 17.0,
+ "tacticsBase": 460.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2780,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "B",
+  "ki": "B"
+ },
+ "initialSkill": "後詰",
+ "skillDetail": "D/LV10 確率 27% 攻撃 39%上昇 確率：+27% / 速度 25%低下/対象:槍弓馬\n①攻撃 39%上昇 確率：+27% / 速度 25%低下",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍弓馬　確率 27% / 攻撃 39%上昇 確率：+27% / 速度 25%低下"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "騎馬隊堅守",
+   "rank": "F",
+   "afterSkill": "騎馬隊襲撃",
+   "afterRank": "F",
+   "target": "馬",
+   "rate": "20%",
+   "effectShort": "馬防：10%上昇",
+   "afterTarget": "馬",
+   "afterRate": "20%",
+   "afterEffectShort": "馬攻：10%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "修羅の援兵",
+   "rank": "D",
+   "afterSkill": "修羅の援兵",
+   "afterRank": "D",
+   "target": "槍弓馬",
+   "rate": "25%",
+   "effectShort": "攻撃 25%上昇 / (合流攻撃時は効果2倍)"
+  },
+  {
+   "slot": "C",
+   "skill": "赤鬼刺",
+   "rank": "D",
+   "afterSkill": "鬼神刺",
+   "afterRank": "B",
+   "target": "槍弓馬",
+   "rate": "15%",
+   "effectShort": "攻撃 (コストx12) %上昇 / (武将のコストで効果が変化します)",
+   "afterTarget": "全",
+   "afterRate": "20%",
+   "afterEffectShort": "攻撃 (コスト×10) %上昇 / 武将コストによって効果が変化"
+  },
+  {
+   "slot": "S1",
+   "skill": "後詰",
+   "rank": "D",
+   "afterSkill": "後詰",
+   "afterRank": "D",
+   "target": "槍弓馬",
+   "rate": "27%",
+   "effectShort": "攻撃 39%上昇 確率：+27% / 速度 25%低下"
+  },
+  {
+   "slot": "S2",
+   "skill": "攻め弾正",
+   "rank": "B",
+   "afterSkill": "風林火山",
+   "afterRank": "S",
+   "target": "槍弓馬",
+   "rate": "35%",
+   "effectShort": "攻撃 20%上昇 / 破壊 15%上昇",
+   "afterTarget": "槍・弓・馬",
+   "afterRate": "45%",
+   "afterEffectShort": "攻撃 30%上昇+破壊 15%上昇(TRなし)"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3258 と skills/後詰)およびixawiki(BushoCard/3258安藤守就)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

@@ -1,0 +1,106 @@
+{
+ "name": "織田信行",
+ "no": "3473",
+ "ch": null,
+ "cost": 3.0,
+ "troop": "弓馬騎攻",
+ "sub": "",
+ "effect": "攻撃 28%上昇 / 武将ランクで攻撃効果が変化",
+ "furigana": "おだのぶゆき",
+ "illustrator": "青空あおい",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 870,
+ "atkGrowth": 27.0,
+ "defBase": 840,
+ "defGrowth": 24.0,
+ "tacticsBase": 450.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2930,
+ "rankGrades": {
+  "yari": "C",
+  "yumi": "B",
+  "uma": "A",
+  "ki": "B"
+ },
+ "initialSkill": "高鳴き",
+ "skillDetail": "D/LV10 確率 38% 攻撃 28%上昇 / 武将ランクで攻撃効果が変化/対象:弓馬騎\n①攻撃 28%上昇 / 武将ランクで攻撃効果が変化",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓馬騎　確率 38% / 攻撃 28%上昇 / 武将ランクで攻撃効果が変化"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "高鳴き",
+   "rank": "D",
+   "afterSkill": "猛刃常勝",
+   "afterRank": "B",
+   "target": "弓馬騎",
+   "rate": "38%",
+   "effectShort": "攻撃 28%上昇 / 武将ランクで攻撃効果が変化",
+   "afterTarget": "弓馬焙",
+   "afterRate": "12%",
+   "afterEffectShort": "攻撃 30%上昇 / 部隊内の武将ランク合計で効果が変化"
+  },
+  {
+   "slot": "B",
+   "skill": "高鳴き",
+   "rank": "D",
+   "afterSkill": "猛刃常勝",
+   "afterRank": "B",
+   "target": "弓馬騎",
+   "rate": "38%",
+   "effectShort": "攻撃 28%上昇 / 武将ランクで攻撃効果が変化",
+   "afterTarget": "弓馬焙",
+   "afterRate": "12%",
+   "afterEffectShort": "攻撃 30%上昇 / 部隊内の武将ランク合計で効果が変化"
+  },
+  {
+   "slot": "C",
+   "skill": "鬼武蔵",
+   "rank": "D",
+   "afterSkill": "野太刀",
+   "afterRank": "C",
+   "target": "槍弓馬",
+   "rate": "37%",
+   "effectShort": "攻撃 39%上昇 / 防御 39%上昇 / 部隊コスト10以下で効果2倍",
+   "afterTarget": "全",
+   "afterRate": "17%",
+   "afterEffectShort": "攻撃 77%上昇 / 防御 77%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "猛刃常勝",
+   "rank": "B",
+   "afterSkill": "猛刃常勝",
+   "afterRank": "B",
+   "target": "弓馬焙",
+   "rate": "12%",
+   "effectShort": "攻撃 30%上昇 / 部隊内の武将ランク合計で効果が変化"
+  },
+  {
+   "slot": "S2",
+   "skill": "吉凶禍福",
+   "rank": "B",
+   "afterSkill": "烈侵滅国",
+   "afterRank": "B",
+   "target": "弓馬器",
+   "rate": "40%",
+   "effectShort": "攻撃 56%上昇 確率：+40% / 速度 30%上昇 確率：+100l%",
+   "afterTarget": "槍弓器",
+   "afterRate": "25%",
+   "afterEffectShort": "攻撃防御 ((1+武将ランク)×コストx2) %上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3473 と skills/高鳴き)およびixawiki(BushoCard/3473織田信行)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

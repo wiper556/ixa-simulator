@@ -1,0 +1,100 @@
+{
+ "name": "小島弥太郎",
+ "no": "3404",
+ "ch": null,
+ "cost": 3.0,
+ "troop": "弓馬器攻",
+ "sub": "",
+ "effect": "攻撃 67%上昇 / (18時～翌01時は確率5倍)",
+ "furigana": "こじまやたろう",
+ "illustrator": "MASANORI KAMATA",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 890,
+ "atkGrowth": 27.0,
+ "defBase": 850,
+ "defGrowth": 24.0,
+ "tacticsBase": 450.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2900,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "B",
+  "uma": "A",
+  "ki": "C"
+ },
+ "initialSkill": "華実ノ戦鬼",
+ "skillDetail": "D/LV10 確率 7% 攻撃 67%上昇 / (18時～翌01時は確率5倍)/対象:弓馬器\n①攻撃 67%上昇 / (18時～翌01時は確率5倍)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓馬器　確率 7% / 攻撃 67%上昇 / (18時～翌01時は確率5倍)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "騎馬隊突撃",
+   "rank": "F",
+   "afterSkill": "騎馬隊奇襲",
+   "afterRank": "E",
+   "target": "馬",
+   "rate": "15%",
+   "effectShort": "攻撃 20%上昇",
+   "afterTarget": "馬",
+   "afterRate": "30%",
+   "afterEffectShort": "馬攻：12%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "援兵勲功",
+   "rank": "D",
+   "afterSkill": "援兵勲功",
+   "afterRank": "D",
+   "target": "弓馬器",
+   "rate": "12%",
+   "effectShort": "攻撃 39%上昇 / 合流攻撃時は必ずスキル発動"
+  },
+  {
+   "slot": "C",
+   "skill": "華実ノ戦鬼",
+   "rank": "D",
+   "afterSkill": "質実剛健",
+   "afterRank": "B",
+   "target": "弓馬器",
+   "rate": "7%",
+   "effectShort": "攻撃 67%上昇 / (18時～翌01時は確率5倍)",
+   "afterTarget": "弓馬砲",
+   "afterRate": "27%",
+   "afterEffectShort": "攻撃防御 ((1+武将ランク)x武将コストx1.9) %上昇 / 武将ランクとコストで効果が変化"
+  },
+  {
+   "slot": "S1",
+   "skill": "質実剛健",
+   "rank": "B",
+   "afterSkill": "質実剛健",
+   "afterRank": "B",
+   "target": "弓馬砲",
+   "rate": "27%",
+   "effectShort": "攻撃防御 ((1+武将ランク)x武将コストx1.9) %上昇 / 武将ランクとコストで効果が変化"
+  },
+  {
+   "slot": "S2",
+   "skill": "宵闇ノ迷鬼",
+   "rank": "B",
+   "afterSkill": "宵闇ノ迷鬼",
+   "afterRank": "B",
+   "target": "槍弓馬",
+   "rate": "2.5%",
+   "effectShort": "攻撃 70%上昇 / (19時～翌01時は確率10倍)"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3404 と skills/華実ノ戦鬼)およびixawiki(BushoCard/3404小島弥太郎)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

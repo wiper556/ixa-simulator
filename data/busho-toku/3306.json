@@ -1,0 +1,100 @@
+{
+ "name": "南部安信",
+ "no": "3306",
+ "ch": null,
+ "cost": 3.0,
+ "troop": "槍器攻",
+ "sub": "",
+ "effect": "攻撃 (コストx3) %上昇 / (武将のコストで効果が変化します)",
+ "furigana": "なんぶやすのぶ",
+ "illustrator": "小森ニコ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 820,
+ "atkGrowth": 21.0,
+ "defBase": 770,
+ "defGrowth": 18.0,
+ "tacticsBase": 430.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2750,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "C",
+  "uma": "B",
+  "ki": "A"
+ },
+ "initialSkill": "三日月の礎",
+ "skillDetail": "D/LV10 確率 23% 攻撃 (コストx3) %上昇 / (武将のコストで効果が変化します)/対象:槍器\n①攻撃 (コストx3) %上昇 / (武将のコストで効果が変化します)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍器　確率 23% / 攻撃 (コストx3) %上昇 / (武将のコストで効果が変化します)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "足軽軍法",
+   "rank": "D",
+   "afterSkill": "乗り崩し",
+   "afterRank": "D",
+   "target": "槍器",
+   "rate": "15%",
+   "effectShort": "攻撃 (コストx9) %上昇 / (武将のコストで効果が変化します)",
+   "afterTarget": "槍馬",
+   "afterRate": "20%",
+   "afterEffectShort": "攻撃 20%上昇 / 破壊 5%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "天下剛断",
+   "rank": "D",
+   "afterSkill": "義兵進軍",
+   "afterRank": "C",
+   "target": "槍器",
+   "rate": "20%",
+   "effectShort": "攻撃 5%上昇 / 破壊 20%上昇",
+   "afterTarget": "槍弓馬砲",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 7%上昇 / 速度 10%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "閃撃の闘将",
+   "rank": "D",
+   "afterSkill": "閃撃の闘将",
+   "afterRank": "D",
+   "target": "槍馬器",
+   "rate": "100%",
+   "effectShort": "攻撃 5%上昇 / 速度 30%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "三日月の礎",
+   "rank": "D",
+   "afterSkill": "三日月の礎",
+   "afterRank": "D",
+   "target": "槍器",
+   "rate": "23%",
+   "effectShort": "攻撃 (コストx3) %上昇 / (武将のコストで効果が変化します)"
+  },
+  {
+   "slot": "S2",
+   "skill": "追い腹",
+   "rank": "D",
+   "afterSkill": "追い腹",
+   "afterRank": "D",
+   "target": "槍砲器",
+   "rate": "100%",
+   "effectShort": "攻撃 8%上昇 / 破壊 19%上昇 / 速度 24%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3306 と skills/三日月の礎)およびixawiki(BushoCard/3306南部安信)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

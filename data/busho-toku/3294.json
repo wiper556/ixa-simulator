@@ -1,0 +1,107 @@
+{
+ "name": "山内一豊",
+ "no": "3294",
+ "ch": null,
+ "cost": 3.0,
+ "troop": "槍馬砲防",
+ "sub": "",
+ "effect": "防御 27%上昇 / 防御時のみ、自軍の兵士被害数：2.5%減少(重複・模倣不可)",
+ "furigana": "やまうちかつとよ",
+ "illustrator": "戸橋ことみ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 810,
+ "atkGrowth": 18.0,
+ "defBase": 880,
+ "defGrowth": 21.0,
+ "tacticsBase": 470.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2750,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "C",
+  "uma": "A",
+  "ki": "B"
+ },
+ "initialSkill": "一国忠言",
+ "skillDetail": "D/LV10 確率 24% 防御 27%上昇 / 防御時のみ自軍の兵士被害数：2.5%減少(重複・模倣不可)/対象:槍馬砲\n①防御 27%上昇 / 防御時のみ自軍の兵士被害数：2.5%減少(重複・模倣不可)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍馬砲　確率 24% / 防御 27%上昇 / 防御時のみ、自軍の兵士被害数：2.5%減少(重複・模倣不可)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "騎馬隊奇襲",
+   "rank": "E",
+   "afterSkill": "騎馬隊堅陣",
+   "afterRank": "F",
+   "target": "馬",
+   "rate": "30%",
+   "effectShort": "馬攻：12%上昇",
+   "afterTarget": "馬",
+   "afterRate": "30%",
+   "afterEffectShort": "馬防：12%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "鉄壁の備え",
+   "rank": "D",
+   "afterSkill": "城崩し",
+   "afterRank": "D",
+   "target": "全",
+   "rate": "40%",
+   "effectShort": "防御 15%上昇",
+   "afterTarget": "器",
+   "afterRate": "35%",
+   "afterEffectShort": "破壊 20%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "武門の誇り",
+   "rank": "B",
+   "afterSkill": "八咫烏",
+   "afterRank": "B",
+   "target": "弓馬砲",
+   "rate": "32%",
+   "effectShort": "防御 33%上昇",
+   "afterTarget": "砲器",
+   "afterRate": "35%",
+   "afterEffectShort": "防御 30%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "一国忠言",
+   "rank": "D",
+   "afterSkill": "一国忠言",
+   "afterRank": "D",
+   "target": "槍馬砲",
+   "rate": "24%",
+   "effectShort": "防御 27%上昇 / 防御時のみ、自軍の兵士被害数：2.5%減少(重複・模倣不可)"
+  },
+  {
+   "slot": "S2",
+   "skill": "血染ノ陣",
+   "rank": "D",
+   "afterSkill": "信濃の獅子",
+   "afterRank": "B",
+   "target": "槍馬砲",
+   "rate": "25%",
+   "effectShort": "防御 (1x攻撃参加武将数)%上昇",
+   "afterTarget": "槍馬",
+   "afterRate": "20%",
+   "afterEffectShort": "防御 50%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3294 と skills/一国忠言)およびixawiki(BushoCard/3294山内一豊)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。",
+  "2026-08-23: skillDetail に読点が混入していた(F-01違反)。ixanary の原文が「配置時、防御効果が」のように読点を使うのをそのまま取り込んでいた。読点を外した。"
+ ]
+}

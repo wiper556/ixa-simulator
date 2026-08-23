@@ -1,0 +1,101 @@
+{
+ "name": "ビビ",
+ "no": "3638",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "弓砲器特",
+ "sub": "",
+ "effect": "スキル発動確率と効果の組み合わせを選択できる(移動時は選択不可)",
+ "furigana": "びび",
+ "illustrator": "FinalFantasyIX 25th ANNIVERSARY",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 920,
+ "atkGrowth": 33.0,
+ "defBase": 850,
+ "defGrowth": 26.0,
+ "tacticsBase": 480.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2680,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "A",
+  "uma": "C",
+  "ki": "B"
+ },
+ "initialSkill": "ファイア",
+ "skillDetail": "C/LV10 対象:弓・砲・器\n①スキル発動確率と効果の組み合わせを選択できる(移動時は選択不可)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓・砲・器　スキル発動確率と効果の組み合わせを選択できる(移動時は選択不可)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "決死ノ忠言",
+   "rank": "C",
+   "afterSkill": "伊達者",
+   "afterRank": "C",
+   "target": "槍砲器",
+   "rate": "29%",
+   "effectShort": "攻撃 365%上昇 / 合流攻撃時は必ずスキル発動",
+   "afterTarget": "馬砲器",
+   "afterRate": "25%",
+   "afterEffectShort": "攻撃 330%上昇 / 合流攻撃時は必ずスキル発動"
+  },
+  {
+   "slot": "B",
+   "skill": "ファイア",
+   "rank": "C",
+   "afterSkill": "ファイア",
+   "afterRank": "C",
+   "target": "弓砲器",
+   "rate": null,
+   "effectShort": "スキル発動確率と効果の組み合わせを選択できる(移動時は選択不可)"
+  },
+  {
+   "slot": "C",
+   "skill": "ファイア",
+   "rank": "C",
+   "afterSkill": "ファイア",
+   "afterRank": "C",
+   "target": "弓砲器",
+   "rate": null,
+   "effectShort": "スキル発動確率と効果の組み合わせを選択できる(移動時は選択不可)"
+  },
+  {
+   "slot": "S1",
+   "skill": "ファイア",
+   "rank": "C",
+   "afterSkill": "ファイア",
+   "afterRank": "C",
+   "target": "弓砲器",
+   "rate": null,
+   "effectShort": "スキル発動確率と効果の組み合わせを選択できる(移動時は選択不可)"
+  },
+  {
+   "slot": "S2",
+   "skill": "虎切刀",
+   "rank": "C",
+   "afterSkill": "鬼滅刺",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "50%",
+   "effectShort": "攻撃 66%上昇 / 防御 66%上昇",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 70%上昇 防御 70%上昇(卓越確率+25%加算・模倣不可)"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3638 と skills/ファイア)およびixawiki(BushoCard/3638ビビ)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。",
+  "2026-08-23: ixanary は LV1/LV10 とも対象と「組み合わせを選択できる」しか載せておらず、**確率と効果の実数を公開していない**。分かる範囲だけで書き、数値は未確認のまま残す。"
+ ]
+}

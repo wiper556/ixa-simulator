@@ -1,0 +1,103 @@
+{
+ "name": "太田康資",
+ "no": "3338",
+ "ch": null,
+ "cost": 3.0,
+ "troop": "馬器防",
+ "sub": "",
+ "effect": "防御 (コストx10) %上昇 / (武将のコストで効果が変化します)",
+ "furigana": "おおたやすすけ",
+ "illustrator": "秋谷コウ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 830,
+ "atkGrowth": 21.0,
+ "defBase": 870,
+ "defGrowth": 23.0,
+ "tacticsBase": 460.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2820,
+ "rankGrades": {
+  "yari": "C",
+  "yumi": "C",
+  "uma": "B",
+  "ki": "A"
+ },
+ "initialSkill": "天手力男",
+ "skillDetail": "D/LV10 確率 55% 防御 (コストx10) %上昇 / (武将のコストで効果が変化します)/対象:馬器\n①防御 (コストx10) %上昇 / (武将のコストで効果が変化します)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "馬器　確率 55% / 防御 (コストx10) %上昇 / (武将のコストで効果が変化します)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "騎馬隊守備",
+   "rank": "F",
+   "afterSkill": "騎馬隊急襲",
+   "afterRank": "F",
+   "target": "馬",
+   "rate": "16%",
+   "effectShort": "防御 (コストx5) %上昇 / (武将のコストで効果が変化します)",
+   "afterTarget": "馬",
+   "afterRate": "16%",
+   "afterEffectShort": "攻撃 (コストx5) %上昇 / (武将のコストで効果が変化します)"
+  },
+  {
+   "slot": "B",
+   "skill": "管領の威光",
+   "rank": "D",
+   "afterSkill": "管領の威光",
+   "afterRank": "D",
+   "target": "馬砲器",
+   "rate": "43%",
+   "effectShort": "防御 34%上昇 / 破壊 30%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "天手力男",
+   "rank": "D",
+   "afterSkill": "常勝の采配",
+   "afterRank": "B",
+   "target": "馬器",
+   "rate": "55%",
+   "effectShort": "防御 (コストx10) %上昇 / (武将のコストで効果が変化します)",
+   "afterTarget": "槍馬器",
+   "afterRate": "38%",
+   "afterEffectShort": "防御 (0.7x防御参加武将数)%上昇 / (模倣不可)"
+  },
+  {
+   "slot": "S1",
+   "skill": "常勝の采配",
+   "rank": "B",
+   "afterSkill": "常勝の采配",
+   "afterRank": "B",
+   "target": "槍馬器",
+   "rate": "38%",
+   "effectShort": "防御 (0.7x防御参加武将数)%上昇 / (模倣不可)"
+  },
+  {
+   "slot": "S2",
+   "skill": "湯津爪櫛の計",
+   "rank": "D",
+   "afterSkill": "血染ノ陣",
+   "afterRank": "D",
+   "target": "馬器",
+   "rate": "33%",
+   "effectShort": "防御 42%上昇 / 破壊 23%上昇",
+   "afterTarget": "槍馬砲",
+   "afterRate": "25%",
+   "afterEffectShort": "防御 (1x攻撃参加武将数)%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3338 と skills/天手力男)およびixawiki(BushoCard/3338太田康資)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

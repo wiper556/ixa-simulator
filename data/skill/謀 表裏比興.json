@@ -10,6 +10,15 @@
    "name": "真田昌幸",
    "no": "1037",
    "slot": "移植不可"
+  },
+  {
+   "name": "阿梅",
+   "no": "3727",
+   "slot": "S2",
+   "db": "toku",
+   "note": [
+    "阿梅(3727)のsynthesisTable S2枠(2026-08-23)"
+   ]
   }
  ],
  "trTable": [
@@ -20,6 +29,11 @@
   }
  ],
  "notes": [
-  "A-3-9「武将自身の初期スキル(S以上)は無条件にページを作る」により2026-08-16に一括作成。内容は data/busho/1037.json の skillDetail / trTable からの転記で、新しい事実は持ち込んでいない。"
- ]
+  "A-3-9「武将自身の初期スキル(S以上)は無条件にページを作る」により2026-08-16に一括作成。内容は data/busho/1037.json の skillDetail / trTable からの転記で、新しい事実は持ち込んでいない。",
+  "ownHiddenCandidateは、このスキルが1次候補として載っている枠(3727 阿梅 S2枠)の2次候補から(S-08)。"
+ ],
+ "ownHiddenCandidate": {
+  "skill": "覇王征軍",
+  "rank": "SS"
+ }
 }

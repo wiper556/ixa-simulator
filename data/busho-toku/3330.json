@@ -1,0 +1,106 @@
+{
+ "name": "青柳",
+ "no": "3330",
+ "ch": null,
+ "cost": 3.0,
+ "troop": "槍弓馬攻",
+ "sub": "",
+ "effect": "攻撃 47%上昇 / (10時～16時は確率8倍)",
+ "furigana": "あおやなぎ",
+ "illustrator": "ホマ蔵",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 860,
+ "atkGrowth": 22.0,
+ "defBase": 850,
+ "defGrowth": 20.0,
+ "tacticsBase": 440.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2790,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "A",
+  "uma": "B",
+  "ki": "C"
+ },
+ "initialSkill": "青葉ノ奏",
+ "skillDetail": "D/LV10 確率 8% 攻撃 47%上昇 / (10時～16時は確率8倍)/対象:槍弓馬\n①攻撃 47%上昇 / (10時～16時は確率8倍)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍弓馬　確率 8% / 攻撃 47%上昇 / (10時～16時は確率8倍)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "弓隊急襲",
+   "rank": "F",
+   "afterSkill": "弓隊守備",
+   "afterRank": "F",
+   "target": "弓",
+   "rate": "16%",
+   "effectShort": "攻撃 (コストx5) %上昇 / (武将のコストで効果が変化します)",
+   "afterTarget": "弓",
+   "afterRate": "16%",
+   "afterEffectShort": "防御 (コストx6) %上昇 / (武将のコストで効果が変化します)"
+  },
+  {
+   "slot": "B",
+   "skill": "修羅の援兵",
+   "rank": "D",
+   "afterSkill": "修羅の援兵",
+   "afterRank": "D",
+   "target": "槍弓馬",
+   "rate": "25%",
+   "effectShort": "攻撃 25%上昇 / (合流攻撃時は効果2倍)"
+  },
+  {
+   "slot": "C",
+   "skill": "青葉ノ奏",
+   "rank": "D",
+   "afterSkill": "赤鬼刺",
+   "afterRank": "D",
+   "target": "槍弓馬",
+   "rate": "8%",
+   "effectShort": "攻撃 47%上昇 / (10時～16時は確率8倍)",
+   "afterTarget": "槍弓馬",
+   "afterRate": "15%",
+   "afterEffectShort": "攻撃 (コストx12) %上昇 / (武将のコストで効果が変化します)"
+  },
+  {
+   "slot": "S1",
+   "skill": "赤鬼刺",
+   "rank": "D",
+   "afterSkill": "鬼神刺",
+   "afterRank": "B",
+   "target": "槍弓馬",
+   "rate": "15%",
+   "effectShort": "攻撃 (コストx12) %上昇 / (武将のコストで効果が変化します)",
+   "afterTarget": "全",
+   "afterRate": "20%",
+   "afterEffectShort": "攻撃 (コスト×10) %上昇 / 武将コストによって効果が変化"
+  },
+  {
+   "slot": "S2",
+   "skill": "筋違い角",
+   "rank": "D",
+   "afterSkill": "絢鳥",
+   "afterRank": "B",
+   "target": "槍弓",
+   "rate": "30%",
+   "effectShort": "攻撃 36%上昇 / (2部隊以下の攻撃で効果1.5倍)",
+   "afterTarget": "槍弓",
+   "afterRate": "35%",
+   "afterEffectShort": "攻撃 42%上昇 / 破壊 15%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3330 と skills/青葉ノ奏)およびixawiki(BushoCard/3330青柳)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

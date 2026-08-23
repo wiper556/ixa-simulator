@@ -1,0 +1,106 @@
+{
+ "name": "尼子義久",
+ "no": "3562",
+ "ch": null,
+ "cost": 2.0,
+ "troop": "槍弓器防",
+ "sub": "",
+ "effect": "防御 190%上昇 / 卓越：追加確率20%で防御効果が1.5倍",
+ "furigana": "あまごよしひさ",
+ "illustrator": "COGA",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 860,
+ "atkGrowth": 26.0,
+ "defBase": 890,
+ "defGrowth": 31.0,
+ "tacticsBase": 480.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2390,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "A",
+  "uma": "C",
+  "ki": "B"
+ },
+ "initialSkill": "乱世ノ残響",
+ "skillDetail": "C/LV10 確率 100% 防御 190%上昇 / 卓越：追加確率20%で防御効果が1.5倍/対象:槍弓器\n①防御 190%上昇 / 卓越：追加確率20%で防御効果が1.5倍",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍弓器　確率 100% / 防御 190%上昇 / 卓越：追加確率20%で防御効果が1.5倍"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "乱世ノ残響",
+   "rank": "C",
+   "afterSkill": "百万石長壁",
+   "afterRank": "B",
+   "target": "槍弓器",
+   "rate": "100%",
+   "effectShort": "防御 190%上昇 / 卓越：追加確率20%で防御効果が1.5倍",
+   "afterTarget": "槍馬砲",
+   "afterRate": "9%",
+   "afterEffectShort": "防御 84%上昇 / 自拠点防御時は100%発動"
+  },
+  {
+   "slot": "B",
+   "skill": "乱世ノ残響",
+   "rank": "C",
+   "afterSkill": "百万石長壁",
+   "afterRank": "B",
+   "target": "槍弓器",
+   "rate": "100%",
+   "effectShort": "防御 190%上昇 / 卓越：追加確率20%で防御効果が1.5倍",
+   "afterTarget": "槍馬砲",
+   "afterRate": "9%",
+   "afterEffectShort": "防御 84%上昇 / 自拠点防御時は100%発動"
+  },
+  {
+   "slot": "C",
+   "skill": "乱世ノ残響",
+   "rank": "C",
+   "afterSkill": "百万石長壁",
+   "afterRank": "B",
+   "target": "槍弓器",
+   "rate": "100%",
+   "effectShort": "防御 190%上昇 / 卓越：追加確率20%で防御効果が1.5倍",
+   "afterTarget": "槍馬砲",
+   "afterRate": "9%",
+   "afterEffectShort": "防御 84%上昇 / 自拠点防御時は100%発動"
+  },
+  {
+   "slot": "S1",
+   "skill": "百万石長壁",
+   "rank": "B",
+   "afterSkill": "籠城の妙技",
+   "afterRank": "A",
+   "target": "槍馬砲",
+   "rate": "9%",
+   "effectShort": "防御 84%上昇 / 自拠点防御時は100%発動",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "防御 50%上昇(卓越:追加確率15%で防御効果が3倍)"
+  },
+  {
+   "slot": "S2",
+   "skill": "死出ノ田長",
+   "rank": "B",
+   "afterSkill": "死出ノ田長",
+   "afterRank": "B",
+   "target": "槍弓馬器",
+   "rate": "54%",
+   "effectShort": "防御 80%上昇 / 卓越：追加確率30%で防御効果が1.5倍"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3562 と skills/乱世ノ残響)およびixawiki(BushoCard/3562尼子義久)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

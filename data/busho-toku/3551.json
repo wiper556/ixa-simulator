@@ -1,0 +1,110 @@
+{
+ "name": "赤井忠家",
+ "no": "3551",
+ "ch": null,
+ "cost": 3.0,
+ "troop": "槍弓焙防",
+ "sub": "",
+ "effect": "防御 230%上昇 / 本丸防御陣形に配置時、この武将の編成コスト消費を-1する(模倣不可)",
+ "furigana": "あかいただいえ",
+ "illustrator": "tatsuya",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 870,
+ "atkGrowth": 27.0,
+ "defBase": 900,
+ "defGrowth": 32.0,
+ "tacticsBase": 470.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 3050,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "A",
+  "uma": "C",
+  "ki": "B"
+ },
+ "initialSkill": "黒井ノ孤鬼",
+ "skillDetail": "C/LV10 確率 30% 防御 230%上昇 / 本丸防御陣形に配置時この武将の編成コスト消費を-1する(模倣不可)/対象:槍弓焙\n①防御 230%上昇 / 本丸防御陣形に配置時この武将の編成コスト消費を-1する(模倣不可)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍弓焙　確率 30% / 防御 230%上昇 / 本丸防御陣形に配置時、この武将の編成コスト消費を-1する(模倣不可)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "黒井ノ孤鬼",
+   "rank": "C",
+   "afterSkill": "籠城の妙技",
+   "afterRank": "A",
+   "target": "槍弓焙",
+   "rate": "30%",
+   "effectShort": "防御 230%上昇 / 本丸防御陣形に配置時、この武将の編成コスト消費を-1する(模倣不可)",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "防御 50%上昇(卓越:追加確率15%で防御効果が3倍)"
+  },
+  {
+   "slot": "B",
+   "skill": "黒井ノ孤鬼",
+   "rank": "C",
+   "afterSkill": "籠城の妙技",
+   "afterRank": "A",
+   "target": "槍弓焙",
+   "rate": "30%",
+   "effectShort": "防御 230%上昇 / 本丸防御陣形に配置時、この武将の編成コスト消費を-1する(模倣不可)",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "防御 50%上昇(卓越:追加確率15%で防御効果が3倍)"
+  },
+  {
+   "slot": "C",
+   "skill": "黒井ノ孤鬼",
+   "rank": "C",
+   "afterSkill": "籠城の妙技",
+   "afterRank": "A",
+   "target": "槍弓焙",
+   "rate": "30%",
+   "effectShort": "防御 230%上昇 / 本丸防御陣形に配置時、この武将の編成コスト消費を-1する(模倣不可)",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "防御 50%上昇(卓越:追加確率15%で防御効果が3倍)"
+  },
+  {
+   "slot": "S1",
+   "skill": "籠城の妙技",
+   "rank": "A",
+   "afterSkill": "三千世界神将",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "防御 50%上昇(卓越:追加確率15%で防御効果が3倍)",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "防御 120%上昇(本丸防御陣形時コスト消費-1)"
+  },
+  {
+   "slot": "S2",
+   "skill": "野太刀",
+   "rank": "C",
+   "afterSkill": "戦陣 凱旋",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "17%",
+   "effectShort": "攻撃 77%上昇 / 防御 77%上昇",
+   "afterTarget": "全",
+   "afterRate": "10%",
+   "afterEffectShort": "攻撃 87%上昇+防御 87%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3551 と skills/黒井ノ孤鬼)およびixawiki(BushoCard/3551赤井忠家)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。",
+  "2026-08-23: skillDetail に読点が混入していた(F-01違反)。ixanary の原文が「配置時、防御効果が」のように読点を使うのをそのまま取り込んでいた。読点を外した。"
+ ]
+}

@@ -1,0 +1,103 @@
+{
+ "name": "留守政景",
+ "no": "3383",
+ "ch": null,
+ "cost": 3.0,
+ "troop": "槍弓器攻",
+ "sub": "",
+ "effect": "攻撃 57%上昇 / (19時～翌01時は確率5倍)",
+ "furigana": "るすまさかげ",
+ "illustrator": "ホマ蔵",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 860,
+ "atkGrowth": 24.0,
+ "defBase": 820,
+ "defGrowth": 22.0,
+ "tacticsBase": 460.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2860,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "B",
+  "uma": "C",
+  "ki": "B"
+ },
+ "initialSkill": "眉月進軍",
+ "skillDetail": "D/LV10 確率 8% 攻撃 57%上昇 / (19時～翌01時は確率5倍)/対象:槍弓器\n①攻撃 57%上昇 / (19時～翌01時は確率5倍)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍弓器　確率 8% / 攻撃 57%上昇 / (19時～翌01時は確率5倍)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "槍隊突撃",
+   "rank": "F",
+   "afterSkill": "槍隊奇襲",
+   "afterRank": "E",
+   "target": "槍",
+   "rate": "15%",
+   "effectShort": "攻撃 20%上昇",
+   "afterTarget": "槍",
+   "afterRate": "30%",
+   "afterEffectShort": "攻撃 12%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "大貉",
+   "rank": "D",
+   "afterSkill": "大貉",
+   "afterRank": "D",
+   "target": "槍弓器",
+   "rate": "32%",
+   "effectShort": "攻撃 34%上昇 / 破壊 17%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "眉月進軍",
+   "rank": "D",
+   "afterSkill": "予覚の残香",
+   "afterRank": "B",
+   "target": "槍弓器",
+   "rate": "8%",
+   "effectShort": "攻撃 57%上昇 / (19時～翌01時は確率5倍)",
+   "afterTarget": "槍弓器",
+   "afterRate": "7%",
+   "afterEffectShort": "攻撃 54%上昇 / 相手軍の武将数が20以上だと必ずスキル発動"
+  },
+  {
+   "slot": "S1",
+   "skill": "予覚の残香",
+   "rank": "B",
+   "afterSkill": "予覚の残香",
+   "afterRank": "B",
+   "target": "槍弓器",
+   "rate": "7%",
+   "effectShort": "攻撃 54%上昇 / 相手軍の武将数が20以上だと必ずスキル発動"
+  },
+  {
+   "slot": "S2",
+   "skill": "戦巧者",
+   "rank": "D",
+   "afterSkill": "大貉",
+   "afterRank": "D",
+   "target": "槍弓器",
+   "rate": "35%",
+   "effectShort": "攻撃 36%上昇 / (2部隊以下の攻撃で効果1.5倍)",
+   "afterTarget": "槍弓器",
+   "afterRate": "32%",
+   "afterEffectShort": "攻撃 34%上昇 / 破壊 17%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3383 と skills/眉月進軍)およびixawiki(BushoCard/3383留守政景)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

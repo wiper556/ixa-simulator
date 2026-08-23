@@ -1,0 +1,103 @@
+{
+ "name": "七条兼仲",
+ "no": "3393",
+ "ch": null,
+ "cost": 3.0,
+ "troop": "槍弓攻",
+ "sub": "",
+ "effect": "攻撃 (コストx14) %上昇 / (武将のコストで効果が変化します)",
+ "furigana": "しちじょうかねなか",
+ "illustrator": "Natto-7",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 890,
+ "atkGrowth": 30.0,
+ "defBase": 740,
+ "defGrowth": 18.0,
+ "tacticsBase": 450.0,
+ "tacticsGrowth": 1.5,
+ "lv0Troops": 2900,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "B",
+  "uma": "B",
+  "ki": "C"
+ },
+ "initialSkill": "力餅",
+ "skillDetail": "D/LV10 確率 17% 攻撃 (コストx14) %上昇 / (武将のコストで効果が変化します)/対象:槍弓\n①攻撃 (コストx14) %上昇 / (武将のコストで効果が変化します)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍弓　確率 17% / 攻撃 (コストx14) %上昇 / (武将のコストで効果が変化します)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "槍隊急襲",
+   "rank": "F",
+   "afterSkill": "槍隊守備",
+   "afterRank": "F",
+   "target": "槍",
+   "rate": "16%",
+   "effectShort": "槍攻：7.5%上昇 / (武将のコストで効果が変化します)",
+   "afterTarget": "槍",
+   "afterRate": "16%",
+   "afterEffectShort": "防御 (コストx5) %上昇 / (武将のコストで効果が変化します)"
+  },
+  {
+   "slot": "B",
+   "skill": "狒々退治",
+   "rank": "D",
+   "afterSkill": "魔王ノ片鱗",
+   "afterRank": "B",
+   "target": "槍弓",
+   "rate": "16%",
+   "effectShort": "攻撃 50%上昇 / (合流攻撃時は確率2倍)",
+   "afterTarget": "槍弓",
+   "afterRate": "26%",
+   "afterEffectShort": "攻撃 46%上昇 / 武将ランクで効果が変化"
+  },
+  {
+   "slot": "C",
+   "skill": "力餅",
+   "rank": "D",
+   "afterSkill": "猛虎燎原",
+   "afterRank": "B",
+   "target": "槍弓",
+   "rate": "17%",
+   "effectShort": "攻撃 (コストx14) %上昇 / (武将のコストで効果が変化します)",
+   "afterTarget": "槍弓砲",
+   "afterRate": "18%",
+   "afterEffectShort": "攻撃 5.4%上昇 / 攻撃 部隊ランク発動率x9%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "猛虎燎原",
+   "rank": "B",
+   "afterSkill": "猛虎燎原",
+   "afterRank": "B",
+   "target": "槍弓砲",
+   "rate": "18%",
+   "effectShort": "攻撃 5.4%上昇 / 攻撃 部隊ランク発動率x9%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "予覚の残香",
+   "rank": "B",
+   "afterSkill": "予覚の残香",
+   "afterRank": "B",
+   "target": "槍弓器",
+   "rate": "7%",
+   "effectShort": "攻撃 54%上昇 / 相手軍の武将数が20以上だと必ずスキル発動"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3393 と skills/力餅)およびixawiki(BushoCard/3393七条兼仲)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

@@ -1,0 +1,106 @@
+{
+ "name": "後藤貴明",
+ "no": "3433",
+ "ch": null,
+ "cost": 2.0,
+ "troop": "槍弓馬防",
+ "sub": "",
+ "effect": "防御 22%上昇 / (部隊内の「羆廻師」所持武将数x22%の効果)",
+ "furigana": "ごとうたかあきら",
+ "illustrator": "Natto-7",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 810,
+ "atkGrowth": 25.0,
+ "defBase": 890,
+ "defGrowth": 28.0,
+ "tacticsBase": 450.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2230,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "B",
+  "uma": "B",
+  "ki": "C"
+ },
+ "initialSkill": "羆廻師",
+ "skillDetail": "D/LV10 確率 34% 防御 22%上昇 / (部隊内の「羆廻師」所持武将数x22%の効果)/対象:槍弓馬\n①防御 22%上昇 / (部隊内の「羆廻師」所持武将数x22%の効果)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍弓馬　確率 34% / 防御 22%上昇 / (部隊内の「羆廻師」所持武将数x22%の効果)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "羆廻師",
+   "rank": "D",
+   "afterSkill": "鳰の払暁",
+   "afterRank": "B",
+   "target": "槍弓馬",
+   "rate": "34%",
+   "effectShort": "防御 22%上昇 / (部隊内の「羆廻師」所持武将数x22%の効果)",
+   "afterTarget": "槍弓馬",
+   "afterRate": "40%",
+   "afterEffectShort": "防御 28%上昇 / (自領以外の加勢で効果2倍)"
+  },
+  {
+   "slot": "B",
+   "skill": "臥籠",
+   "rank": "D",
+   "afterSkill": "美龍泰天",
+   "afterRank": "B",
+   "target": "槍弓馬",
+   "rate": "10%",
+   "effectShort": "攻撃 69%上昇 防御 69%上昇",
+   "afterTarget": "槍弓馬",
+   "afterRate": "35%",
+   "afterEffectShort": "防御 58%上昇 / 自拠点防御時は防御効果1.5倍"
+  },
+  {
+   "slot": "C",
+   "skill": "不屈ノ闘臣",
+   "rank": "D",
+   "afterSkill": "仁将無双",
+   "afterRank": "B",
+   "target": "馬砲",
+   "rate": "42%",
+   "effectShort": "防御 20%上昇 / (部隊内の「不屈ノ闘臣」所持武将数x20%の効果)",
+   "afterTarget": "槍馬砲",
+   "afterRate": "17%",
+   "afterEffectShort": "攻撃防御 ((1+ランク)xコストx2.1) %上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "鳰の払暁",
+   "rank": "B",
+   "afterSkill": "鳰の払暁",
+   "afterRank": "B",
+   "target": "槍弓馬",
+   "rate": "40%",
+   "effectShort": "防御 28%上昇 / (自領以外の加勢で効果2倍)"
+  },
+  {
+   "slot": "S2",
+   "skill": "五龍王",
+   "rank": "D",
+   "afterSkill": "無間牢",
+   "afterRank": "B",
+   "target": "槍弓馬",
+   "rate": "27%",
+   "effectShort": "防御 60%上昇 確率：+27% / 速度 30%上昇 確率：+100% / (加勢出陣時は速度効果2倍)",
+   "afterTarget": "槍弓馬器",
+   "afterRate": "25%",
+   "afterEffectShort": "防御 77%上昇 確率：+25% / 速度 45%上昇 確率：+100% / (加勢出陣時は速度効果2倍)"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3433 と skills/羆廻師)およびixawiki(BushoCard/3433後藤貴明)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

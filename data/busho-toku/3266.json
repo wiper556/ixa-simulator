@@ -1,0 +1,103 @@
+{
+ "name": "恭雲院",
+ "no": "3266",
+ "ch": null,
+ "cost": 3.0,
+ "troop": "槍弓砲防",
+ "sub": "",
+ "effect": "防御 31%上昇",
+ "furigana": "きょううんいん",
+ "illustrator": "ツヤイルカ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 700,
+ "atkGrowth": 16.0,
+ "defBase": 750,
+ "defGrowth": 18.0,
+ "tacticsBase": 440.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2700,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "A",
+  "uma": "C",
+  "ki": "B"
+ },
+ "initialSkill": "結び雁金",
+ "skillDetail": "D/LV10 確率 27% 防御 31%上昇/対象:槍弓砲\n①防御が31%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍弓砲　確率 27% / 防御 31%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "城崩し",
+   "rank": "D",
+   "afterSkill": "謀殺",
+   "afterRank": "D",
+   "target": "器",
+   "rate": "35%",
+   "effectShort": "破壊 20%上昇",
+   "afterTarget": "全",
+   "afterRate": "15%",
+   "afterEffectShort": "攻撃戦闘勝利時のみ、敵軍1部隊の武将に追加ダメージ+35"
+  },
+  {
+   "slot": "B",
+   "skill": "戦陣 千鳥",
+   "rank": "B",
+   "afterSkill": "戦陣 千鳥",
+   "afterRank": "B",
+   "target": "弓馬",
+   "rate": "45%",
+   "effectShort": "防御 30%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "戦姫 六道",
+   "rank": "D",
+   "afterSkill": "砲陣 菖蒲",
+   "afterRank": "A",
+   "target": "弓砲",
+   "rate": "12%",
+   "effectShort": "防御 45%上昇",
+   "afterTarget": "砲器",
+   "afterRate": "40%",
+   "afterEffectShort": "防御 35%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "結び雁金",
+   "rank": "D",
+   "afterSkill": "結び雁金",
+   "afterRank": "D",
+   "target": "槍弓砲",
+   "rate": "27%",
+   "effectShort": "防御 31%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "常世虫",
+   "rank": "C",
+   "afterSkill": "声遣縦横",
+   "afterRank": "D",
+   "target": "槍弓砲",
+   "rate": "26%",
+   "effectShort": "攻撃 37%上昇",
+   "afterTarget": "槍馬砲",
+   "afterRate": "24%",
+   "afterEffectShort": "攻撃 38%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3266 と skills/結び雁金)およびixawiki(BushoCard/3266恭雲院)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

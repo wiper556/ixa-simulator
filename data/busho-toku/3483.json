@@ -1,0 +1,109 @@
+{
+ "name": "北郷忠相",
+ "no": "3483",
+ "ch": null,
+ "cost": 3.0,
+ "troop": "槍馬器攻",
+ "sub": "",
+ "effect": "攻撃 0%上昇 防御 0%上昇 / ★24：60%上昇 ★28：90%上昇 ★32：120%上昇",
+ "furigana": "ほんごうただすけ",
+ "illustrator": "JUNNY",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 850,
+ "atkGrowth": 28.0,
+ "defBase": 850,
+ "defGrowth": 28.0,
+ "tacticsBase": 470.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2940,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "C",
+  "uma": "B",
+  "ki": "B"
+ },
+ "initialSkill": "紅牡丹ノ計",
+ "skillDetail": "C/LV10 確率 27% 攻撃 0%上昇 防御 0%上昇 / ★24：60%上昇 ★28：90%上昇 ★32：120%上昇/対象:槍馬器\n①攻撃が0%上昇 防御 0%上昇 / ★24：60%上昇 ★28：90%上昇 ★32：120%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍馬器　確率 27% / 攻撃 0%上昇 防御 0%上昇 / ★24：60%上昇 ★28：90%上昇 ★32：120%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "紅牡丹ノ計",
+   "rank": "C",
+   "afterSkill": "告天子",
+   "afterRank": "B",
+   "target": "槍馬器",
+   "rate": "27%",
+   "effectShort": "攻撃 0%上昇 防御 0%上昇 / ★24：60%上昇 ★28：90%上昇 ★32：120%上昇",
+   "afterTarget": "槍馬騎",
+   "afterRate": "27%",
+   "afterEffectShort": "攻撃防御 (1+武将ランク×武将コスト×2.3) %上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "紅牡丹ノ計",
+   "rank": "C",
+   "afterSkill": "告天子",
+   "afterRank": "B",
+   "target": "槍馬器",
+   "rate": "27%",
+   "effectShort": "攻撃 0%上昇 防御 0%上昇 / ★24：60%上昇 ★28：90%上昇 ★32：120%上昇",
+   "afterTarget": "槍馬騎",
+   "afterRate": "27%",
+   "afterEffectShort": "攻撃防御 (1+武将ランク×武将コスト×2.3) %上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "紅牡丹ノ計",
+   "rank": "C",
+   "afterSkill": "告天子",
+   "afterRank": "B",
+   "target": "槍馬器",
+   "rate": "27%",
+   "effectShort": "攻撃 0%上昇 防御 0%上昇 / ★24：60%上昇 ★28：90%上昇 ★32：120%上昇",
+   "afterTarget": "槍馬騎",
+   "afterRate": "27%",
+   "afterEffectShort": "攻撃防御 (1+武将ランク×武将コスト×2.3) %上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "告天子",
+   "rank": "B",
+   "afterSkill": "質実剛健",
+   "afterRank": "B",
+   "target": "槍馬騎",
+   "rate": "27%",
+   "effectShort": "攻撃防御 (1+武将ランク×武将コスト×2.3) %上昇",
+   "afterTarget": "弓馬砲",
+   "afterRate": "27%",
+   "afterEffectShort": "攻撃防御 ((1+武将ランク)x武将コストx1.9) %上昇 / 武将ランクとコストで効果が変化"
+  },
+  {
+   "slot": "S2",
+   "skill": "虎切刀",
+   "rank": "C",
+   "afterSkill": "鬼滅刺",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "50%",
+   "effectShort": "攻撃 66%上昇 / 防御 66%上昇",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 70%上昇 防御 70%上昇(卓越確率+25%加算・模倣不可)"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3483 と skills/紅牡丹ノ計)およびixawiki(BushoCard/3483北郷忠相)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

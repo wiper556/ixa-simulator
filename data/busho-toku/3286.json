@@ -1,0 +1,106 @@
+{
+ "name": "小笠原秀政",
+ "no": "3286",
+ "ch": null,
+ "cost": 3.0,
+ "troop": "弓馬器攻",
+ "sub": "",
+ "effect": "攻撃 39%上昇 / 合流攻撃時は必ずスキル発動",
+ "furigana": "おがさわらひでまさ",
+ "illustrator": "白藤 与一",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 850,
+ "atkGrowth": 21.0,
+ "defBase": 810,
+ "defGrowth": 19.0,
+ "tacticsBase": 465.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2740,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "B"
+ },
+ "initialSkill": "援兵勲功",
+ "skillDetail": "D/LV10 確率 12% 攻撃 39%上昇 / 合流攻撃時は必ずスキル発動/対象:弓馬器\n①攻撃 39%上昇 / 合流攻撃時は必ずスキル発動",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓馬器　確率 12% / 攻撃 39%上昇 / 合流攻撃時は必ずスキル発動"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "騎馬隊急襲",
+   "rank": "F",
+   "afterSkill": "騎馬隊守備",
+   "afterRank": "F",
+   "target": "馬",
+   "rate": "16%",
+   "effectShort": "攻撃 (コストx5) %上昇 / (武将のコストで効果が変化します)",
+   "afterTarget": "馬",
+   "afterRate": "16%",
+   "afterEffectShort": "防御 (コストx5) %上昇 / (武将のコストで効果が変化します)"
+  },
+  {
+   "slot": "B",
+   "skill": "啄木鳥",
+   "rank": "D",
+   "afterSkill": "槍弓猛襲",
+   "afterRank": "D",
+   "target": "弓馬",
+   "rate": "20%",
+   "effectShort": "攻撃 20%上昇 / 破壊 5%上昇",
+   "afterTarget": "槍弓",
+   "afterRate": "15%",
+   "afterEffectShort": "攻撃 (コストx9) %上昇 / (武将のコストで効果が変化します)"
+  },
+  {
+   "slot": "C",
+   "skill": "反骨の尖兵",
+   "rank": "D",
+   "afterSkill": "修羅の援兵",
+   "afterRank": "D",
+   "target": "弓馬",
+   "rate": "32%",
+   "effectShort": "攻撃 37%上昇",
+   "afterTarget": "槍弓馬",
+   "afterRate": "25%",
+   "afterEffectShort": "攻撃 25%上昇 / (合流攻撃時は効果2倍)"
+  },
+  {
+   "slot": "S1",
+   "skill": "援兵勲功",
+   "rank": "D",
+   "afterSkill": "援兵勲功",
+   "afterRank": "D",
+   "target": "弓馬器",
+   "rate": "12%",
+   "effectShort": "攻撃 39%上昇 / 合流攻撃時は必ずスキル発動"
+  },
+  {
+   "slot": "S2",
+   "skill": "戦鬼紅刃",
+   "rank": "B",
+   "afterSkill": "鬼神刺",
+   "afterRank": "B",
+   "target": "槍馬器",
+   "rate": "32%",
+   "effectShort": "攻撃 39%上昇 / 破壊 24%上昇",
+   "afterTarget": "全",
+   "afterRate": "20%",
+   "afterEffectShort": "攻撃 (コスト×10) %上昇 / 武将コストによって効果が変化"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3286 と skills/援兵勲功)およびixawiki(BushoCard/3286小笠原秀政)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

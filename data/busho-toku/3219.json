@@ -1,0 +1,109 @@
+{
+ "name": "真壁氏幹",
+ "no": "3219",
+ "ch": null,
+ "cost": 2.0,
+ "troop": "将攻",
+ "sub": "",
+ "effect": "攻撃 45%上昇",
+ "furigana": "まかべうじもと",
+ "illustrator": "BISAI",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 960,
+ "atkGrowth": 45.0,
+ "defBase": 860,
+ "defGrowth": 45.0,
+ "tacticsBase": 520.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 1420,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "B",
+  "uma": "C",
+  "ki": "F"
+ },
+ "initialSkill": "霞流棒術",
+ "skillDetail": "D/LV10 確率 10% 攻撃 45%上昇/対象:将\n①攻撃が45%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "将　確率 10% / 攻撃 45%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "槍隊堅陣",
+   "rank": "F",
+   "afterSkill": "槍隊奇襲",
+   "afterRank": "E",
+   "target": "槍",
+   "rate": "30%",
+   "effectShort": "槍防：12%上昇",
+   "afterTarget": "槍",
+   "afterRate": "30%",
+   "afterEffectShort": "攻撃 12%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "剣術 攻乃型",
+   "rank": "E",
+   "afterSkill": "迅速行軍",
+   "afterRank": "E",
+   "target": "将",
+   "rate": "30%",
+   "effectShort": "攻撃 20%上昇",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "速度 20%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "霞流棒術",
+   "rank": "D",
+   "afterSkill": "二天一流",
+   "afterRank": "B",
+   "target": "将",
+   "rate": "10%",
+   "effectShort": "攻撃 45%上昇",
+   "afterTarget": "将",
+   "afterRate": "35%",
+   "afterEffectShort": "攻撃 40%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "二天一流",
+   "rank": "B",
+   "afterSkill": "剣豪将軍",
+   "afterRank": "B",
+   "target": "将",
+   "rate": "35%",
+   "effectShort": "攻撃 40%上昇",
+   "afterTarget": "将",
+   "afterRate": "35%",
+   "afterEffectShort": "攻撃 35%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "一刀流",
+   "rank": "A",
+   "afterSkill": "剣聖",
+   "afterRank": "A",
+   "target": "将",
+   "rate": "40%",
+   "effectShort": "攻撃 45%上昇",
+   "afterTarget": "将",
+   "afterRate": "50%",
+   "afterEffectShort": "攻撃 40%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3219 と skills/霞流棒術)およびixawiki(BushoCard/3219真壁氏幹)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

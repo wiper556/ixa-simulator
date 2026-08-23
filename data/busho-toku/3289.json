@@ -1,0 +1,100 @@
+{
+ "name": "松野重元",
+ "no": "3289",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "馬砲攻",
+ "sub": "",
+ "effect": "攻撃 38%上昇",
+ "furigana": "まつのしげもと",
+ "illustrator": "BANAMONS*",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 800,
+ "atkGrowth": 20.0,
+ "defBase": 730,
+ "defGrowth": 19.0,
+ "tacticsBase": 460.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2520,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "C",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "気骨の士",
+ "skillDetail": "D/LV10 確率 28% 攻撃 38%上昇/対象:馬砲\n①攻撃が38%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "馬砲　確率 28% / 攻撃 38%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "鉄砲隊布陣",
+   "rank": "E",
+   "afterSkill": "鉄砲隊堅陣",
+   "afterRank": "F",
+   "target": "砲",
+   "rate": "12%",
+   "effectShort": "防御 20%上昇",
+   "afterTarget": "砲",
+   "afterRate": "25%",
+   "afterEffectShort": "砲防：12%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "鉄砲隊剛撃",
+   "rank": "D",
+   "afterSkill": "三段撃 烈火",
+   "afterRank": "C",
+   "target": "砲",
+   "rate": "30%",
+   "effectShort": "攻撃 20%上昇",
+   "afterTarget": "槍砲",
+   "afterRate": "15%",
+   "afterEffectShort": "攻撃 (コストx9) %上昇 / (武将のコストで効果が変化します)"
+  },
+  {
+   "slot": "C",
+   "skill": "声遣縦横",
+   "rank": "D",
+   "afterSkill": "声遣縦横",
+   "afterRank": "D",
+   "target": "槍馬砲",
+   "rate": "24%",
+   "effectShort": "攻撃 38%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "気骨の士",
+   "rank": "D",
+   "afterSkill": "気骨の士",
+   "afterRank": "D",
+   "target": "馬砲",
+   "rate": "28%",
+   "effectShort": "攻撃 38%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "鬼神刺",
+   "rank": "B",
+   "afterSkill": "鬼神刺",
+   "afterRank": "B",
+   "target": "全",
+   "rate": "20%",
+   "effectShort": "攻撃 (コスト×10) %上昇 / 武将コストによって効果が変化"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3289 と skills/気骨の士)およびixawiki(BushoCard/3289松野重元)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

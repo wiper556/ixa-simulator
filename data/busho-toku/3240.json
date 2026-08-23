@@ -1,0 +1,106 @@
+{
+ "name": "梅姫",
+ "no": "3240",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "弓馬防",
+ "sub": "",
+ "effect": "防御 26%上昇 / (合流攻撃防御時は効果2倍)",
+ "furigana": "うめひめ",
+ "illustrator": "BANAMONS*",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 640,
+ "atkGrowth": 16.0,
+ "defBase": 630,
+ "defGrowth": 18.0,
+ "tacticsBase": 490.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2470,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "C"
+ },
+ "initialSkill": "長蛇の陣",
+ "skillDetail": "D/LV10 確率 35% 防御 26%上昇 / (合流攻撃防御時は効果2倍)/対象:弓馬\n①防御 26%上昇 / (合流攻撃防御時は効果2倍)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓馬　確率 35% / 防御 26%上昇 / (合流攻撃防御時は効果2倍)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "弓隊守備",
+   "rank": "F",
+   "afterSkill": "弓隊急襲",
+   "afterRank": "F",
+   "target": "弓",
+   "rate": "16%",
+   "effectShort": "防御 (コストx6) %上昇 / (武将のコストで効果が変化します)",
+   "afterTarget": "弓",
+   "afterRate": "16%",
+   "afterEffectShort": "攻撃 (コストx5) %上昇 / (武将のコストで効果が変化します)"
+  },
+  {
+   "slot": "B",
+   "skill": "弓馬構え",
+   "rank": "D",
+   "afterSkill": "足軽軍法",
+   "afterRank": "D",
+   "target": "弓馬",
+   "rate": "30%",
+   "effectShort": "防御 25%上昇",
+   "afterTarget": "槍器",
+   "afterRate": "15%",
+   "afterEffectShort": "攻撃 (コストx9) %上昇 / (武将のコストで効果が変化します)"
+  },
+  {
+   "slot": "C",
+   "skill": "弓陣 下り藤",
+   "rank": "D",
+   "afterSkill": "足軽軍法",
+   "afterRank": "D",
+   "target": "弓馬",
+   "rate": "40%",
+   "effectShort": "防御 25%上昇",
+   "afterTarget": "槍器",
+   "afterRate": "15%",
+   "afterEffectShort": "攻撃 (コストx9) %上昇 / (武将のコストで効果が変化します)"
+  },
+  {
+   "slot": "S1",
+   "skill": "長蛇の陣",
+   "rank": "D",
+   "afterSkill": "長蛇の陣",
+   "afterRank": "D",
+   "target": "弓馬",
+   "rate": "35%",
+   "effectShort": "防御 26%上昇 / (合流攻撃防御時は効果2倍)"
+  },
+  {
+   "slot": "S2",
+   "skill": "総構え",
+   "rank": "B",
+   "afterSkill": "獅子の陣",
+   "afterRank": "S",
+   "target": "全",
+   "rate": "35%",
+   "effectShort": "防御 30%上昇",
+   "afterTarget": "槍弓馬",
+   "afterRate": "45%",
+   "afterEffectShort": "防御 35%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3240 と skills/長蛇の陣)およびixawiki(BushoCard/3240梅姫)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

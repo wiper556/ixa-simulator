@@ -1,0 +1,106 @@
+{
+ "name": "沼田祐光",
+ "no": "3324",
+ "ch": null,
+ "cost": 2.0,
+ "troop": "槍弓防",
+ "sub": "",
+ "effect": "防御 23+(ランクx3) %上昇 確率：+35% / 速度 20%上昇 確率：+100% / 防御効果は武将ランクで変化",
+ "furigana": "ぬまたすけみつ",
+ "illustrator": "双羽純",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 850,
+ "atkGrowth": 21.0,
+ "defBase": 880,
+ "defGrowth": 22.0,
+ "tacticsBase": 440.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2260,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "A",
+  "uma": "B",
+  "ki": "C"
+ },
+ "initialSkill": "賢妖の軍師",
+ "skillDetail": "D/LV10 確率 35% 防御 23+(ランクx3) %上昇 確率：+35% / 速度 20%上昇 確率：+100% / 防御効果は武将ランクで変化/対象:槍弓\n①防御 23+(ランクx3) %上昇 確率：+35% / 速度 20%上昇 確率：+100% / 防御効果は武将ランクで変化",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍弓　確率 35% / 防御 23+(ランクx3) %上昇 確率：+35% / 速度 20%上昇 確率：+100% / 防御効果は武将ランクで変化"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "槍隊守備",
+   "rank": "F",
+   "afterSkill": "槍隊急襲",
+   "afterRank": "F",
+   "target": "槍",
+   "rate": "16%",
+   "effectShort": "防御 (コストx5) %上昇 / (武将のコストで効果が変化します)",
+   "afterTarget": "槍",
+   "afterRate": "16%",
+   "afterEffectShort": "槍攻：7.5%上昇 / (武将のコストで効果が変化します)"
+  },
+  {
+   "slot": "B",
+   "skill": "算術の極み",
+   "rank": "D",
+   "afterSkill": "比類なき忠功",
+   "afterRank": "D",
+   "target": "弓器",
+   "rate": "30%",
+   "effectShort": "防御 38%上昇 / 破壊 22%上昇",
+   "afterTarget": "弓馬器",
+   "afterRate": "30%",
+   "afterEffectShort": "防御 ((1+ランク)xコストx1.7) %上昇 / 武将ランクとコストで効果が変化"
+  },
+  {
+   "slot": "C",
+   "skill": "賢妖の軍師",
+   "rank": "D",
+   "afterSkill": "花舜妙香",
+   "afterRank": "C",
+   "target": "槍弓",
+   "rate": "35%",
+   "effectShort": "防御 23+(ランクx3) %上昇 確率：+35% / 速度 20%上昇 確率：+100% / 防御効果は武将ランクで変化",
+   "afterTarget": "槍弓砲",
+   "afterRate": "30%",
+   "afterEffectShort": "防御 40%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "花舜妙香",
+   "rank": "C",
+   "afterSkill": "釣り野伏 鬼",
+   "afterRank": "B",
+   "target": "槍弓砲",
+   "rate": "30%",
+   "effectShort": "防御 40%上昇",
+   "afterTarget": "砲",
+   "afterRate": "20%",
+   "afterEffectShort": "攻撃 30%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "虚軍号令",
+   "rank": "B",
+   "afterSkill": "虚軍号令",
+   "afterRank": "B",
+   "target": "槍弓馬",
+   "rate": "32%",
+   "effectShort": "防御 ((1+ランク)xコストx1.8) %上昇 / 武将ランクとコストで効果が変化"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3324 と skills/賢妖の軍師)およびixawiki(BushoCard/3324沼田祐光)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

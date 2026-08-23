@@ -1,0 +1,109 @@
+{
+ "name": "中野宗時",
+ "no": "3225",
+ "ch": null,
+ "cost": 3.0,
+ "troop": "弓砲防",
+ "sub": "",
+ "effect": "防御 11%上昇 / (部隊内の権勢専横スキル所持武将数x11%の効果)",
+ "furigana": "なかのむねとき",
+ "illustrator": "ツヤイルカ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 675,
+ "atkGrowth": 15.0,
+ "defBase": 710,
+ "defGrowth": 18.0,
+ "tacticsBase": 450.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2650,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "A",
+  "uma": "C",
+  "ki": "A"
+ },
+ "initialSkill": "権勢専横",
+ "skillDetail": "C/LV10 確率 20% 防御 11%上昇 / (部隊内の権勢専横スキル所持武将数x11%の効果)/対象:弓砲\n①防御 11%上昇 / (部隊内の権勢専横スキル所持武将数x11%の効果)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓砲　確率 20% / 防御 11%上昇 / (部隊内の権勢専横スキル所持武将数x11%の効果)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "国貫き",
+   "rank": "E",
+   "afterSkill": "兵器運用術",
+   "afterRank": "E",
+   "target": "器",
+   "rate": "25%",
+   "effectShort": "破壊 (コストx6.5) %上昇 / (武将のコストで効果が変化します)",
+   "afterTarget": "砲器",
+   "afterRate": "100%",
+   "afterEffectShort": "速度 25%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "鉄砲隊突撃",
+   "rank": "F",
+   "afterSkill": "鉄砲隊奇襲",
+   "afterRank": "E",
+   "target": "砲",
+   "rate": "12%",
+   "effectShort": "攻撃 20%上昇",
+   "afterTarget": "砲",
+   "afterRate": "25%",
+   "afterEffectShort": "攻撃 12%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "権勢専横",
+   "rank": "C",
+   "afterSkill": "武運長久",
+   "afterRank": "C",
+   "target": "弓砲",
+   "rate": "20%",
+   "effectShort": "防御 11%上昇 / (部隊内の権勢専横スキル所持武将数x11%の効果)",
+   "afterTarget": "槍砲",
+   "afterRate": "15%",
+   "afterEffectShort": "攻撃 (コストx9) %上昇 破壊 5%上昇 / (攻撃効果は武将のコストで効果が変化します)"
+  },
+  {
+   "slot": "S1",
+   "skill": "武運長久",
+   "rank": "C",
+   "afterSkill": "三段撃 神速",
+   "afterRank": "C",
+   "target": "槍砲",
+   "rate": "15%",
+   "effectShort": "攻撃 (コストx9) %上昇 破壊 5%上昇 / (攻撃効果は武将のコストで効果が変化します)",
+   "afterTarget": "砲",
+   "afterRate": "50%",
+   "afterEffectShort": "攻撃 12%上昇 / 破壊 15%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "砲撃 羅刹",
+   "rank": "B",
+   "afterSkill": "釣り野伏 鬼",
+   "afterRank": "B",
+   "target": "砲",
+   "rate": "25%",
+   "effectShort": "攻撃 25%上昇 / 破壊 5%上昇",
+   "afterTarget": "砲",
+   "afterRate": "20%",
+   "afterEffectShort": "攻撃 30%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3225 と skills/権勢専横)およびixawiki(BushoCard/3225中野宗時)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

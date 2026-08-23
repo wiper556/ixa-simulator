@@ -1,0 +1,109 @@
+{
+ "name": "御宿勘兵衛",
+ "no": "3553",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "槍馬砲攻",
+ "sub": "",
+ "effect": "攻撃 238%上昇 / (合流攻撃時は発動率2倍)",
+ "furigana": "みしゅくかんべえ",
+ "illustrator": "COGA",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 890,
+ "atkGrowth": 31.0,
+ "defBase": 860,
+ "defGrowth": 26.0,
+ "tacticsBase": 480.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2660,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "B",
+  "uma": "B",
+  "ki": "C"
+ },
+ "initialSkill": "荒波独行",
+ "skillDetail": "C/LV10 確率 18% 攻撃 238%上昇 / (合流攻撃時は発動率2倍)/対象:槍馬砲\n①攻撃 238%上昇 / (合流攻撃時は発動率2倍)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍馬砲　確率 18% / 攻撃 238%上昇 / (合流攻撃時は発動率2倍)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "荒波独行",
+   "rank": "C",
+   "afterSkill": "名族ノ山塞",
+   "afterRank": "A",
+   "target": "槍馬砲",
+   "rate": "18%",
+   "effectShort": "攻撃 238%上昇 / (合流攻撃時は発動率2倍)",
+   "afterTarget": "弓馬器焙",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 92%上昇 防御 45%上昇 / このスキルを所持する武将の全スキルの卓越確率に20%を加算する(模倣不可)"
+  },
+  {
+   "slot": "B",
+   "skill": "荒波独行",
+   "rank": "C",
+   "afterSkill": "名族ノ山塞",
+   "afterRank": "A",
+   "target": "槍馬砲",
+   "rate": "18%",
+   "effectShort": "攻撃 238%上昇 / (合流攻撃時は発動率2倍)",
+   "afterTarget": "弓馬器焙",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 92%上昇 防御 45%上昇 / このスキルを所持する武将の全スキルの卓越確率に20%を加算する(模倣不可)"
+  },
+  {
+   "slot": "C",
+   "skill": "失意ノ千羽鶴",
+   "rank": "C",
+   "afterSkill": "覇・天懸乱龍",
+   "afterRank": "B",
+   "target": "槍弓鉄",
+   "rate": "45%",
+   "effectShort": "攻撃 24%上昇 / 破壊 40%上昇 / (合流攻撃時、攻撃効果4倍)",
+   "afterTarget": "槍弓砲器",
+   "afterRate": "55%",
+   "afterEffectShort": "攻撃 60%上昇 / 卓越：追加確率30%で攻撃効果が1.5倍"
+  },
+  {
+   "slot": "S1",
+   "skill": "名族ノ山塞",
+   "rank": "A",
+   "afterSkill": "鬼滅刺",
+   "afterRank": "A",
+   "target": "弓馬器焙",
+   "rate": "100%",
+   "effectShort": "攻撃 92%上昇 防御 45%上昇 / このスキルを所持する武将の全スキルの卓越確率に20%を加算する(模倣不可)",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 70%上昇 防御 70%上昇(卓越確率+25%加算・模倣不可)"
+  },
+  {
+   "slot": "S2",
+   "skill": "新宮党",
+   "rank": "C",
+   "afterSkill": "極楽護法",
+   "afterRank": "B",
+   "target": "槍弓馬",
+   "rate": "25%",
+   "effectShort": "攻撃 96%上昇 / 合流攻撃時は必ずスキル発動",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 60%上昇 防御 60%上昇 / 卓越：追加確率50%で攻防効果が1.5倍"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3553 と skills/荒波独行)およびixawiki(BushoCard/3553御宿勘兵衛)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

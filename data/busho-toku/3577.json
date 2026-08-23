@@ -1,0 +1,110 @@
+{
+ "name": "桂林院",
+ "no": "3577",
+ "ch": null,
+ "cost": 2.0,
+ "troop": "槍砲器防",
+ "sub": "",
+ "effect": "防御 (2.3×防御参加武将数)%上昇 / 防御参加武将数が120以下の時、防御効果1.5倍",
+ "furigana": "けいりんいん",
+ "illustrator": "mado＊pen",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 860,
+ "atkGrowth": 27.0,
+ "defBase": 910,
+ "defGrowth": 31.0,
+ "tacticsBase": 460.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2400,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "B",
+  "uma": "B",
+  "ki": "B"
+ },
+ "initialSkill": "獅子姫ノ衷情",
+ "skillDetail": "C/LV10 確率 30% 防御 (2.3×防御参加武将数)%上昇 / 防御参加武将数が120以下の時防御効果1.5倍/対象:槍砲器\n①防御 (2.3×防御参加武将数)%上昇 / 防御参加武将数が120以下の時防御効果1.5倍",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍砲器　確率 30% / 防御 (2.3×防御参加武将数)%上昇 / 防御参加武将数が120以下の時、防御効果1.5倍"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "獅子姫ノ衷情",
+   "rank": "C",
+   "afterSkill": "涼下宿志",
+   "afterRank": "C",
+   "target": "槍砲器",
+   "rate": "30%",
+   "effectShort": "防御 (2.3×防御参加武将数)%上昇 / 防御参加武将数が120以下の時、防御効果1.5倍",
+   "afterTarget": "砲器",
+   "afterRate": "38%",
+   "afterEffectShort": "防御 (1.2×防御参加武将数)%上昇 / 防御参加武将数が90以下の時、防御効果2倍"
+  },
+  {
+   "slot": "B",
+   "skill": "獅子姫ノ衷情",
+   "rank": "C",
+   "afterSkill": "涼下宿志",
+   "afterRank": "C",
+   "target": "槍砲器",
+   "rate": "30%",
+   "effectShort": "防御 (2.3×防御参加武将数)%上昇 / 防御参加武将数が120以下の時、防御効果1.5倍",
+   "afterTarget": "砲器",
+   "afterRate": "38%",
+   "afterEffectShort": "防御 (1.2×防御参加武将数)%上昇 / 防御参加武将数が90以下の時、防御効果2倍"
+  },
+  {
+   "slot": "C",
+   "skill": "獅子姫ノ衷情",
+   "rank": "C",
+   "afterSkill": "涼下宿志",
+   "afterRank": "C",
+   "target": "槍砲器",
+   "rate": "30%",
+   "effectShort": "防御 (2.3×防御参加武将数)%上昇 / 防御参加武将数が120以下の時、防御効果1.5倍",
+   "afterTarget": "砲器",
+   "afterRate": "38%",
+   "afterEffectShort": "防御 (1.2×防御参加武将数)%上昇 / 防御参加武将数が90以下の時、防御効果2倍"
+  },
+  {
+   "slot": "S1",
+   "skill": "涼下宿志",
+   "rank": "C",
+   "afterSkill": "籠城の妙技",
+   "afterRank": "A",
+   "target": "砲器",
+   "rate": "38%",
+   "effectShort": "防御 (1.2×防御参加武将数)%上昇 / 防御参加武将数が90以下の時、防御効果2倍",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "防御 50%上昇(卓越:追加確率15%で防御効果が3倍)"
+  },
+  {
+   "slot": "S2",
+   "skill": "安息ノ導手",
+   "rank": "C",
+   "afterSkill": "戦慄ノ遁走曲",
+   "afterRank": "A",
+   "target": "弓馬器",
+   "rate": "30%",
+   "effectShort": "防御 (2.2×防御参加武将数)%上昇 / 防御参加武将数が90以下の時、防御効果1.5倍",
+   "afterTarget": "弓馬砲",
+   "afterRate": "52%",
+   "afterEffectShort": "防御 88%上昇 確率：+52% / 速度 40%上昇 確率：+100% / (加勢出陣時は速度効果3倍)"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3577 と skills/獅子姫ノ衷情)およびixawiki(BushoCard/3577桂林院)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。",
+  "2026-08-23: skillDetail に読点が混入していた(F-01違反)。ixanary の原文が「配置時、防御効果が」のように読点を使うのをそのまま取り込んでいた。読点を外した。"
+ ]
+}

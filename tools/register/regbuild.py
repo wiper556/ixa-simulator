@@ -31,12 +31,37 @@ SLOTS = ("A", "B", "C", "S1", "S2")
 
 
 def kyoku_dir(no):
+    """カードNo. → data/ の置き場所。
+
+    2026-08-23 追記: もとは 傑・極・天 の3つしか見ておらず、**特・上・城・
+    天パラレルが全部 "busho"(天のディレクトリ)に落ちていた。**
+    特の 3163〜3167 を登録しようとして5枚とも data/busho/ に書かれて発覚した。
+    置き場所はレアリティそのものなので、間違えるとサイトの一覧に別レアとして出る。
+
+    特と特シークレットは No. では見分けにくいが、実データは
+    busho-toku=3001〜3689 / busho-toku-s=3701〜3730 で **3700番台が
+    シークレット**という分かれ方をしている(ixagno の限定武将一覧とも一致)。
+    例外は busho-toku に入っている 3725 と 3728 の2件で、これは
+    シークレット側にあるべきものが取り込み時に振り分けを外したとみられる
+    (2026-08-23 時点では触っていない。申し送り)。
+    """
     n = str(no)
-    if len(n) == 5 and n[:2] in ("20", "21", "22"):
-        return "busho-ketsu"
-    if len(n) == 4 and n[0] in ("2", "7"):
-        h = (int(n) // 100) % 10
-        return "busho-kyoku" if h <= 3 else "busho-kyoku-ps"
+    if len(n) == 5:
+        if n[:2] in ("20", "21", "22"):
+            return "busho-ketsu"
+        if n[:2] == "31":
+            return "busho-parallel"
+        return "busho"          # 10xxx(記念・コラボ)は天と同じ置き場
+    if len(n) == 4:
+        if n[0] in ("2", "7"):
+            h = (int(n) // 100) % 10
+            return "busho-kyoku" if h <= 3 else "busho-kyoku-ps"
+        if n[0] == "3":
+            return "busho-toku-s" if int(n) >= 3700 else "busho-toku"
+        if n[0] == "4":
+            return "busho-ue"
+        if n[0] == "5":
+            return "busho-jo"
     return "busho"
 
 
@@ -62,9 +87,23 @@ def side(slot, name, rank):
     j = load_skill(name)
     if not j:
         return None, None, None
-    return (j.get("target"),
-            ("%d%%" % j["baseRate"]) if j.get("baseRate") is not None else None,
-            short_of(j))
+    return (j.get("target"), fmt_rate(j.get("baseRate")), short_of(j))
+
+
+def fmt_rate(v):
+    """baseRate を「NN%」の形にする。
+
+    2026-08-23: `"%d%%" % v` と決め打ちしていたので、数値で表せない確率を持つ
+    スキルで落ちていた(特の 3548〜3551 の登録が4枚とも止まった)。
+    正本には 伏雷蒼樹 の "卓越50%"(通常確率では発動しない)と
+    戦陣 勝鬨 の "35%/100%"(2つの確率を持つ)があり、**どちらも誤りではない**。
+    文字列はそのまま通し、小数は .0 を落とす。
+    """
+    if v is None:
+        return None
+    if isinstance(v, str):
+        return v if v.endswith("%") else v + "%"
+    return "%g%%" % v
 
 
 def build(no):
@@ -111,14 +150,23 @@ def build(no):
                         "TR4": "150", "TR5": "200", "TR6": "パラレル"}.get(lv["level"], "-")),
             ("effect", "%s / %s" % (head, body) if body else head)]))
 
+    # 2026-08-23: カード画像が無いのにパスを書いていた。特の 3163〜3167 で
+    # リンク切れになって発覚。DBの慣例は「画像が無ければ null」
+    # (data/busho-toku だけで163件がその形)。実体を見てから決める。
+    _full = os.path.join(ROOT, "assets", "img", "characters", "no%s_full.png" % no)
+    _char = os.path.join(ROOT, "assets", "img", "characters", "no%s_char.png" % no)
     entry = collections.OrderedDict([
-        ("name", ix.get("name")), ("no", str(no)), ("ch", "未確認"),
+        # 2026-08-23: ch は "未確認" という独自の値を入れていた。DBの慣例は null
+        # (busho-toku 243件のうち205件が null、"未確認" は今日の5件だけだった)。
+        ("name", ix.get("name")), ("no", str(no)), ("ch", None),
         ("cost", wk.get("cost", ix.get("cost"))),
         ("troop", None), ("sub", ""), ("effect", None),
         ("furigana", ix.get("furigana") or wk.get("furigana")),
         ("illustrator", wk.get("illustrator") or ix.get("illustrator")),
-        ("imageFull", "assets/img/characters/no%s_full.png" % no),
-        ("imageChar", "assets/img/characters/no%s_char.png" % no),
+        ("imageFull", "assets/img/characters/no%s_full.png" % no
+         if os.path.exists(_full) else None),
+        ("imageChar", "assets/img/characters/no%s_char.png" % no
+         if os.path.exists(_char) else None),
         ("atkBase", ix.get("atkBase")), ("atkGrowth", ix.get("atkGrowth")),
         ("defBase", ix.get("defBase")), ("defGrowth", ix.get("defGrowth")),
         ("tacticsBase", ix.get("tacticsBase")), ("tacticsGrowth", ix.get("tacticsGrowth")),

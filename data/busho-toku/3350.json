@@ -1,0 +1,103 @@
+{
+ "name": "蒲池鑑盛",
+ "no": "3350",
+ "ch": null,
+ "cost": 2.0,
+ "troop": "弓馬防",
+ "sub": "",
+ "effect": "防御 30%上昇 / 自軍部隊数5以下でのみ発動 / 敵軍部隊数x3.5%を効果に加算",
+ "furigana": "かまちあきもり",
+ "illustrator": "鏑木康隆",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 850,
+ "atkGrowth": 21.0,
+ "defBase": 870,
+ "defGrowth": 24.0,
+ "tacticsBase": 470.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2290,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "A",
+  "uma": "B",
+  "ki": "C"
+ },
+ "initialSkill": "防陣 如鉄",
+ "skillDetail": "D/LV10 確率 22% 防御 30%上昇 / 自軍部隊数5以下でのみ発動 / 敵軍部隊数x3.5%を効果に加算/対象:弓馬\n①防御 30%上昇 / 自軍部隊数5以下でのみ発動 / 敵軍部隊数x3.5%を効果に加算",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓馬　確率 22% / 防御 30%上昇 / 自軍部隊数5以下でのみ発動 / 敵軍部隊数x3.5%を効果に加算"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "弓隊守備",
+   "rank": "F",
+   "afterSkill": "弓隊急襲",
+   "afterRank": "F",
+   "target": "弓",
+   "rate": "16%",
+   "effectShort": "防御 (コストx6) %上昇 / (武将のコストで効果が変化します)",
+   "afterTarget": "弓",
+   "afterRate": "16%",
+   "afterEffectShort": "攻撃 (コストx5) %上昇 / (武将のコストで効果が変化します)"
+  },
+  {
+   "slot": "B",
+   "skill": "弓隊堅陣",
+   "rank": "F",
+   "afterSkill": "弓隊奇襲",
+   "afterRank": "E",
+   "target": "弓",
+   "rate": "30%",
+   "effectShort": "防御 12%上昇",
+   "afterTarget": "弓",
+   "afterRate": "30%",
+   "afterEffectShort": "弓攻：12%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "防陣 如鉄",
+   "rank": "D",
+   "afterSkill": "二葉心",
+   "afterRank": "D",
+   "target": "弓馬",
+   "rate": "22%",
+   "effectShort": "防御 30%上昇 / 自軍部隊数5以下でのみ発動 / 敵軍部隊数x3.5%を効果に加算",
+   "afterTarget": "槍弓馬",
+   "afterRate": "28%",
+   "afterEffectShort": "攻撃 42%上昇 / 防御 42%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "二葉心",
+   "rank": "D",
+   "afterSkill": "二葉心",
+   "afterRank": "D",
+   "target": "槍弓馬",
+   "rate": "28%",
+   "effectShort": "攻撃 42%上昇 / 防御 42%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "仏敵討伐",
+   "rank": "B",
+   "afterSkill": "仏敵討伐",
+   "afterRank": "B",
+   "target": "槍弓馬",
+   "rate": "36%",
+   "effectShort": "防御 (コストx14) %上昇 / (武将のコストで効果が変化します)"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3350 と skills/防陣 如鉄)およびixawiki(BushoCard/3350蒲池鑑盛)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

@@ -1,0 +1,97 @@
+{
+ "name": "サラマンダー",
+ "no": "3642",
+ "ch": null,
+ "cost": 3.0,
+ "troop": "全 兵站防",
+ "sub": "",
+ "effect": "防御 340%上昇",
+ "furigana": "さらまんだー",
+ "illustrator": "FinalFantasyIX 25th ANNIVERSARY",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 850,
+ "atkGrowth": 27.0,
+ "defBase": 950,
+ "defGrowth": 35.0,
+ "tacticsBase": 440.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 3080,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "B",
+  "uma": "C",
+  "ki": "B"
+ },
+ "initialSkill": "オーラ",
+ "skillDetail": "C/LV10 確率 60% 防御 340%上昇/対象:全 兵站\n①防御が340%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全 兵站　確率 60% / 防御 340%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "虎風銃",
+   "rank": "C",
+   "afterSkill": "虎風銃",
+   "afterRank": "C",
+   "target": "弓砲器",
+   "rate": "44%",
+   "effectShort": "防御 340%上昇 / 破壊 80%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "オーラ",
+   "rank": "C",
+   "afterSkill": "オーラ",
+   "afterRank": "C",
+   "target": "全 兵站",
+   "rate": "60%",
+   "effectShort": "防御 340%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "オーラ",
+   "rank": "C",
+   "afterSkill": "オーラ",
+   "afterRank": "C",
+   "target": "全 兵站",
+   "rate": "60%",
+   "effectShort": "防御 340%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "オーラ",
+   "rank": "C",
+   "afterSkill": "オーラ",
+   "afterRank": "C",
+   "target": "全 兵站",
+   "rate": "60%",
+   "effectShort": "防御 340%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "籠城の妙技",
+   "rank": "A",
+   "afterSkill": "三千世界神将",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "防御 50%上昇(卓越:追加確率15%で防御効果が3倍)",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "防御 120%上昇(本丸防御陣形時コスト消費-1)"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3642 と skills/オーラ)およびixawiki(BushoCard/3642サラマンダー)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

@@ -1,0 +1,106 @@
+{
+ "name": "満天姫",
+ "no": "3511",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "弓器焙防",
+ "sub": "",
+ "effect": "防御 62%上昇 / 自拠点防御時は防御効果1.5倍",
+ "furigana": "まてひめ",
+ "illustrator": "mado*pen",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 850,
+ "atkGrowth": 24.0,
+ "defBase": 880,
+ "defGrowth": 27.0,
+ "tacticsBase": 470.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2620,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "B",
+  "uma": "C",
+  "ki": "A"
+ },
+ "initialSkill": "別れの杯毒",
+ "skillDetail": "C/LV10 確率 100% 防御 62%上昇 / 自拠点防御時は防御効果1.5倍/対象:弓器焙\n①防御 62%上昇 / 自拠点防御時は防御効果1.5倍",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓器焙　確率 100% / 防御 62%上昇 / 自拠点防御時は防御効果1.5倍"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "別れの杯毒",
+   "rank": "C",
+   "afterSkill": "愛染王法",
+   "afterRank": "B",
+   "target": "弓器焙",
+   "rate": "100%",
+   "effectShort": "防御 62%上昇 / 自拠点防御時は防御効果1.5倍",
+   "afterTarget": "全",
+   "afterRate": "40%",
+   "afterEffectShort": "防御 105.6%上昇 / 武将ランクで効果が変化"
+  },
+  {
+   "slot": "B",
+   "skill": "別れの杯毒",
+   "rank": "C",
+   "afterSkill": "愛染王法",
+   "afterRank": "B",
+   "target": "弓器焙",
+   "rate": "100%",
+   "effectShort": "防御 62%上昇 / 自拠点防御時は防御効果1.5倍",
+   "afterTarget": "全",
+   "afterRate": "40%",
+   "afterEffectShort": "防御 105.6%上昇 / 武将ランクで効果が変化"
+  },
+  {
+   "slot": "C",
+   "skill": "不通大名",
+   "rank": "C",
+   "afterSkill": "絶界煉獄",
+   "afterRank": "B",
+   "target": "弓器焙",
+   "rate": "27%",
+   "effectShort": "防御 65%上昇 / 本丸防御陣形の第肆列目以降に配置時、防御効果が1.5倍",
+   "afterTarget": "槍弓馬器",
+   "afterRate": "27%",
+   "afterEffectShort": "防御 90%上昇 / 本丸防御陣形に配置時、この武将の編成コスト消費を-0.5する(模倣不可)"
+  },
+  {
+   "slot": "S1",
+   "skill": "愛染王法",
+   "rank": "B",
+   "afterSkill": "愛染王法",
+   "afterRank": "B",
+   "target": "全",
+   "rate": "40%",
+   "effectShort": "防御 105.6%上昇 / 武将ランクで効果が変化"
+  },
+  {
+   "slot": "S2",
+   "skill": "閃雷戦乙女",
+   "rank": "D",
+   "afterSkill": "惨王ノ眷族",
+   "afterRank": "B",
+   "target": "弓器焙",
+   "rate": "100%",
+   "effectShort": "防御 42%上昇 / 自拠点防御時は防御効果1.5倍",
+   "afterTarget": "槍弓器",
+   "afterRate": "21%",
+   "afterEffectShort": "防御 87%上昇 / 自拠点防御時は100%発動"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3511 と skills/別れの杯毒)およびixawiki(BushoCard/3511満天姫)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

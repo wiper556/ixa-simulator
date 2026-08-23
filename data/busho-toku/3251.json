@@ -1,0 +1,107 @@
+{
+ "name": "安国寺恵瓊",
+ "no": "3251",
+ "ch": null,
+ "cost": 3.0,
+ "troop": "全攻破",
+ "sub": "",
+ "effect": "攻撃 (自部隊兵法合計÷100)%上昇+破壊 45%上昇(IXA占いの結果で能力が変化)",
+ "furigana": "あんこくじえけい",
+ "illustrator": "小森ニコ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 700,
+ "atkGrowth": 18.0,
+ "defBase": 700,
+ "defGrowth": 15.0,
+ "tacticsBase": 475.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2720,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "B",
+  "uma": "B",
+  "ki": "B"
+ },
+ "initialSkill": "算命術",
+ "skillDetail": "D/LV10 確率 30% 攻撃 (自部隊兵法合計÷100)%上昇/対象:全\n①攻撃が(自部隊兵法合計÷100)%上昇する\n②破壊が45%上昇する\n③IXA占いの結果で能力が変化する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 30% / 攻撃 (自部隊兵法合計÷100)%上昇+破壊 45%上昇(IXA占いの結果で能力が変化)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "城砕き",
+   "rank": "E",
+   "afterSkill": "防壁砕き",
+   "afterRank": "E",
+   "target": "器",
+   "rate": "15%",
+   "effectShort": "破壊 20%上昇",
+   "afterTarget": "器",
+   "afterRate": "30%",
+   "afterEffectShort": "破壊 12%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "鉄壁の備え",
+   "rank": "D",
+   "afterSkill": "城崩し",
+   "afterRank": "D",
+   "target": "全",
+   "rate": "40%",
+   "effectShort": "防御 15%上昇",
+   "afterTarget": "器",
+   "afterRate": "35%",
+   "afterEffectShort": "破壊 20%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "車懸り",
+   "rank": "B",
+   "afterSkill": "車懸り 白狐",
+   "afterRank": "B",
+   "target": "全",
+   "rate": "15%",
+   "effectShort": "攻撃 30%上昇",
+   "afterTarget": "槍弓馬",
+   "afterRate": "20%",
+   "afterEffectShort": "攻撃 30%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "算命術",
+   "rank": "D",
+   "afterSkill": "算命術",
+   "afterRank": "D",
+   "target": "全",
+   "rate": null,
+   "effectShort": "攻撃 (自部隊兵法合計÷100)%上昇 / 破壊 45%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "戦陣 阿吽",
+   "rank": "A",
+   "afterSkill": "覇王征軍",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "25%",
+   "effectShort": "攻撃 42%上昇+防御 42%上昇",
+   "afterTarget": "全",
+   "afterRate": "42%",
+   "afterEffectShort": "攻撃 (部隊総コスト依存)%上昇(総C25=388.79%)(部隊総コストで変動、TRなし)"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3251 と skills/算命術)およびixawiki(BushoCard/3251安国寺恵瓊)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。",
+  "2026-08-23: ixanary の LV10 行は「確率北斗：+30%」と、確率の後ろに占いの結果名が付いた独自の書き方になっている。LV1 は「確率：+5%」なので確率は30%と読んだ。効果が占いの結果で変わるスキルで、一括登録のパーサでは扱えないため手で書いた。"
+ ]
+}

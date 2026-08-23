@@ -1,0 +1,103 @@
+{
+ "name": "生駒親正",
+ "no": "3329",
+ "ch": null,
+ "cost": 2.0,
+ "troop": "砲器防",
+ "sub": "",
+ "effect": "防御 34%上昇 / (攻撃部隊に兵器兵科がいれば効果1.5倍)",
+ "furigana": "いこまちかまさ",
+ "illustrator": "小森ニコ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 810,
+ "atkGrowth": 21.0,
+ "defBase": 880,
+ "defGrowth": 23.0,
+ "tacticsBase": 430.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2270,
+ "rankGrades": {
+  "yari": "C",
+  "yumi": "B",
+  "uma": "B",
+  "ki": "A"
+ },
+ "initialSkill": "蛟竜ノ塞",
+ "skillDetail": "D/LV10 確率 36% 防御 34%上昇 / (攻撃部隊に兵器兵科がいれば効果1.5倍)/対象:砲器\n①防御 34%上昇 / (攻撃部隊に兵器兵科がいれば効果1.5倍)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "砲器　確率 36% / 防御 34%上昇 / (攻撃部隊に兵器兵科がいれば効果1.5倍)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "鉄砲隊備え",
+   "rank": "F",
+   "afterSkill": "防壁破り",
+   "afterRank": "F",
+   "target": "砲",
+   "rate": "8%",
+   "effectShort": "砲防：15%上昇",
+   "afterTarget": "器",
+   "afterRate": "16%",
+   "afterEffectShort": "破壊 (コストx5) %上昇 / (武将のコストで効果が変化します)"
+  },
+  {
+   "slot": "B",
+   "skill": "火縄剛撃陣",
+   "rank": "C",
+   "afterSkill": "神速",
+   "afterRank": "A",
+   "target": "砲器",
+   "rate": "20%",
+   "effectShort": "防御 45%上昇",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "速度 55%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "蛟竜ノ塞",
+   "rank": "D",
+   "afterSkill": "懐刀",
+   "afterRank": "D",
+   "target": "砲器",
+   "rate": "36%",
+   "effectShort": "防御 34%上昇 / (攻撃部隊に兵器兵科がいれば効果1.5倍)",
+   "afterTarget": "馬砲器",
+   "afterRate": "32%",
+   "afterEffectShort": "防御 35%上昇 / 武将ランクで効果が変化"
+  },
+  {
+   "slot": "S1",
+   "skill": "懐刀",
+   "rank": "D",
+   "afterSkill": "懐刀",
+   "afterRank": "D",
+   "target": "馬砲器",
+   "rate": "32%",
+   "effectShort": "防御 35%上昇 / 武将ランクで効果が変化"
+  },
+  {
+   "slot": "S2",
+   "skill": "管領の威光",
+   "rank": "D",
+   "afterSkill": "管領の威光",
+   "afterRank": "D",
+   "target": "馬砲器",
+   "rate": "43%",
+   "effectShort": "防御 34%上昇 / 破壊 30%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3329 と skills/蛟竜ノ塞)およびixawiki(BushoCard/3329生駒親正)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

@@ -1,0 +1,106 @@
+{
+ "name": "伊集院忠棟",
+ "no": "3449",
+ "ch": null,
+ "cost": 3.0,
+ "troop": "全攻",
+ "sub": "",
+ "effect": "攻撃 50%上昇 / 資源獲得率：12% / 破壊した耐久値に応じて資源獲得",
+ "furigana": "いじゅういんただむね",
+ "illustrator": "添田一平",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 860,
+ "atkGrowth": 26.0,
+ "defBase": 850,
+ "defGrowth": 25.0,
+ "tacticsBase": 480.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2920,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "B",
+  "uma": "B",
+  "ki": "B"
+ },
+ "initialSkill": "御朱印衆",
+ "skillDetail": "D/LV10 確率 42% 攻撃 50%上昇 / 資源獲得率：12% / 破壊した耐久値に応じて資源獲得/対象:全\n①攻撃 50%上昇 / 資源獲得率：12% / 破壊した耐久値に応じて資源獲得",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 42% / 攻撃 50%上昇 / 資源獲得率：12% / 破壊した耐久値に応じて資源獲得"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "御朱印衆",
+   "rank": "D",
+   "afterSkill": "覚悟十躰",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "42%",
+   "effectShort": "攻撃 50%上昇 / 資源獲得率：12% / 破壊した耐久値に応じて資源獲得",
+   "afterTarget": "全",
+   "afterRate": "30%",
+   "afterEffectShort": "資源獲得率：15% / 破壊した耐久値に応じて資源獲得"
+  },
+  {
+   "slot": "B",
+   "skill": "弓隊突撃",
+   "rank": "F",
+   "afterSkill": "弓隊奇襲",
+   "afterRank": "E",
+   "target": "弓",
+   "rate": "15%",
+   "effectShort": "攻撃 20%上昇",
+   "afterTarget": "弓",
+   "afterRate": "30%",
+   "afterEffectShort": "弓攻：12%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "力士ノ構え",
+   "rank": "D",
+   "afterSkill": "覚悟十躰",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "70%",
+   "effectShort": "資源獲得率：7% / 破壊した耐久値に応じて資源獲得",
+   "afterTarget": "全",
+   "afterRate": "30%",
+   "afterEffectShort": "資源獲得率：15% / 破壊した耐久値に応じて資源獲得"
+  },
+  {
+   "slot": "S1",
+   "skill": "覚悟十躰",
+   "rank": "A",
+   "afterSkill": "覚悟十躰",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "30%",
+   "effectShort": "資源獲得率：15% / 破壊した耐久値に応じて資源獲得"
+  },
+  {
+   "slot": "S2",
+   "skill": "保食神",
+   "rank": "B",
+   "afterSkill": "疾風怒濤",
+   "afterRank": "B",
+   "target": "全",
+   "rate": "40%",
+   "effectShort": "資源獲得率：10% / 破壊した耐久値に応じて資源獲得",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 5%上昇 / 速度 32%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3449 と skills/御朱印衆)およびixawiki(BushoCard/3449伊集院忠棟)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

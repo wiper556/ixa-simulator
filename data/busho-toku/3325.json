@@ -1,0 +1,106 @@
+{
+ "name": "辰姫",
+ "no": "3325",
+ "ch": null,
+ "cost": 2.0,
+ "troop": "弓砲防",
+ "sub": "",
+ "effect": "防御 22%上昇 / (攻撃部隊に兵器兵科がいれば効果2倍)",
+ "furigana": "たつひめ",
+ "illustrator": "木下月乃",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 830,
+ "atkGrowth": 20.0,
+ "defBase": 870,
+ "defGrowth": 22.0,
+ "tacticsBase": 420.0,
+ "tacticsGrowth": 1.5,
+ "lv0Troops": 2260,
+ "rankGrades": {
+  "yari": "C",
+  "yumi": "A",
+  "uma": "B",
+  "ki": "B"
+ },
+ "initialSkill": "白虎跳躍の陣",
+ "skillDetail": "D/LV10 確率 38% 防御 22%上昇 / (攻撃部隊に兵器兵科がいれば効果2倍)/対象:弓砲\n①防御 22%上昇 / (攻撃部隊に兵器兵科がいれば効果2倍)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓砲　確率 38% / 防御 22%上昇 / (攻撃部隊に兵器兵科がいれば効果2倍)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "弓隊堅陣",
+   "rank": "F",
+   "afterSkill": "弓隊奇襲",
+   "afterRank": "E",
+   "target": "弓",
+   "rate": "30%",
+   "effectShort": "防御 12%上昇",
+   "afterTarget": "弓",
+   "afterRate": "30%",
+   "afterEffectShort": "弓攻：12%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "弓隊守備",
+   "rank": "F",
+   "afterSkill": "弓隊急襲",
+   "afterRank": "F",
+   "target": "弓",
+   "rate": "16%",
+   "effectShort": "防御 (コストx6) %上昇 / (武将のコストで効果が変化します)",
+   "afterTarget": "弓",
+   "afterRate": "16%",
+   "afterEffectShort": "攻撃 (コストx5) %上昇 / (武将のコストで効果が変化します)"
+  },
+  {
+   "slot": "C",
+   "skill": "蜘蛛ノ捕縛",
+   "rank": "D",
+   "afterSkill": "長蛇の陣",
+   "afterRank": "D",
+   "target": "弓砲器",
+   "rate": "24%",
+   "effectShort": "防御 26%上昇 / (自領以外の加勢で効果2倍)",
+   "afterTarget": "弓馬",
+   "afterRate": "35%",
+   "afterEffectShort": "防御 26%上昇 / (合流攻撃防御時は効果2倍)"
+  },
+  {
+   "slot": "S1",
+   "skill": "白虎跳躍の陣",
+   "rank": "D",
+   "afterSkill": "白虎跳躍の陣",
+   "afterRank": "D",
+   "target": "弓砲",
+   "rate": "38%",
+   "effectShort": "防御 22%上昇 / (攻撃部隊に兵器兵科がいれば効果2倍)"
+  },
+  {
+   "slot": "S2",
+   "skill": "聖なる祈り",
+   "rank": "B",
+   "afterSkill": "八咫烏",
+   "afterRank": "B",
+   "target": "弓砲器",
+   "rate": "25%",
+   "effectShort": "防御 25%上昇",
+   "afterTarget": "砲器",
+   "afterRate": "35%",
+   "afterEffectShort": "防御 30%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3325 と skills/白虎跳躍の陣)およびixawiki(BushoCard/3325辰姫)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

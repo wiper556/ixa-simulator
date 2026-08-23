@@ -1,0 +1,106 @@
+{
+ "name": "富田重政",
+ "no": "3337",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "槍器攻",
+ "sub": "",
+ "effect": "攻撃 35%上昇",
+ "furigana": "とだしげまさ",
+ "illustrator": "鏑木康隆",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 990,
+ "atkGrowth": 54.0,
+ "defBase": 970,
+ "defGrowth": 57.0,
+ "tacticsBase": 510.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2500,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "C",
+  "uma": "C",
+  "ki": "B"
+ },
+ "initialSkill": "名人越後",
+ "skillDetail": "D/LV10 確率 70% 攻撃 35%上昇/対象:槍器\n①攻撃が35%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍器　確率 70% / 攻撃 35%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "槍隊奇襲",
+   "rank": "E",
+   "afterSkill": "槍隊堅陣",
+   "afterRank": "F",
+   "target": "槍",
+   "rate": "30%",
+   "effectShort": "攻撃 12%上昇",
+   "afterTarget": "槍",
+   "afterRate": "30%",
+   "afterEffectShort": "槍防：12%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "筋違い角",
+   "rank": "D",
+   "afterSkill": "絢鳥",
+   "afterRank": "B",
+   "target": "槍弓",
+   "rate": "30%",
+   "effectShort": "攻撃 36%上昇 / (2部隊以下の攻撃で効果1.5倍)",
+   "afterTarget": "槍弓",
+   "afterRate": "35%",
+   "afterEffectShort": "攻撃 42%上昇 / 破壊 15%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "名人越後",
+   "rank": "D",
+   "afterSkill": "戦鬼侵軍",
+   "afterRank": "B",
+   "target": "槍器",
+   "rate": "70%",
+   "effectShort": "攻撃 35%上昇",
+   "afterTarget": "槍砲器",
+   "afterRate": "15%",
+   "afterEffectShort": "攻撃 54%上昇 / 合流攻撃時は必ずスキル発動"
+  },
+  {
+   "slot": "S1",
+   "skill": "戦鬼侵軍",
+   "rank": "B",
+   "afterSkill": "戦鬼侵軍",
+   "afterRank": "B",
+   "target": "槍砲器",
+   "rate": "15%",
+   "effectShort": "攻撃 54%上昇 / 合流攻撃時は必ずスキル発動"
+  },
+  {
+   "slot": "S2",
+   "skill": "兵法の深奥",
+   "rank": "D",
+   "afterSkill": "大貉",
+   "afterRank": "D",
+   "target": "槍器",
+   "rate": "25%",
+   "effectShort": "攻撃 (コストx12) %上昇 / (武将のコストで効果が変化します)",
+   "afterTarget": "槍弓器",
+   "afterRate": "32%",
+   "afterEffectShort": "攻撃 34%上昇 / 破壊 17%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3337 と skills/名人越後)およびixawiki(BushoCard/3337富田重政)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

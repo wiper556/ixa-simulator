@@ -1,0 +1,100 @@
+{
+ "name": "宍戸隆家",
+ "no": "3411",
+ "ch": null,
+ "cost": 3.0,
+ "troop": "槍弓馬防",
+ "sub": "",
+ "effect": "防御 60%上昇 確率：+27% / 速度 30%上昇 確率：+100% / (加勢出陣時は速度効果2倍)",
+ "furigana": "ししどたかいえ",
+ "illustrator": "Natto-7",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 800,
+ "atkGrowth": 22.0,
+ "defBase": 850,
+ "defGrowth": 25.0,
+ "tacticsBase": 490.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2890,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "B",
+  "uma": "B",
+  "ki": "C"
+ },
+ "initialSkill": "五龍王",
+ "skillDetail": "D/LV10 確率 27% 防御 60%上昇 確率：+27% / 速度 30%上昇 確率：+100% / (加勢出陣時は速度効果2倍)/対象:槍弓馬\n①防御 60%上昇 確率：+27% / 速度 30%上昇 確率：+100% / (加勢出陣時は速度効果2倍)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍弓馬　確率 27% / 防御 60%上昇 確率：+27% / 速度 30%上昇 確率：+100% / (加勢出陣時は速度効果2倍)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "五龍王",
+   "rank": "D",
+   "afterSkill": "無間牢",
+   "afterRank": "B",
+   "target": "槍弓馬",
+   "rate": "27%",
+   "effectShort": "防御 60%上昇 確率：+27% / 速度 30%上昇 確率：+100% / (加勢出陣時は速度効果2倍)",
+   "afterTarget": "槍弓馬器",
+   "afterRate": "25%",
+   "afterEffectShort": "防御 77%上昇 確率：+25% / 速度 45%上昇 確率：+100% / (加勢出陣時は速度効果2倍)"
+  },
+  {
+   "slot": "B",
+   "skill": "弓隊堅陣",
+   "rank": "F",
+   "afterSkill": "弓隊奇襲",
+   "afterRank": "E",
+   "target": "弓",
+   "rate": "30%",
+   "effectShort": "防御 12%上昇",
+   "afterTarget": "弓",
+   "afterRate": "30%",
+   "afterEffectShort": "弓攻：12%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "二葉心",
+   "rank": "D",
+   "afterSkill": "二葉心",
+   "afterRank": "D",
+   "target": "槍弓馬",
+   "rate": "28%",
+   "effectShort": "攻撃 42%上昇 / 防御 42%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "無間牢",
+   "rank": "B",
+   "afterSkill": "無間牢",
+   "afterRank": "B",
+   "target": "槍弓馬器",
+   "rate": "25%",
+   "effectShort": "防御 77%上昇 確率：+25% / 速度 45%上昇 確率：+100% / (加勢出陣時は速度効果2倍)"
+  },
+  {
+   "slot": "S2",
+   "skill": "虚軍号令",
+   "rank": "B",
+   "afterSkill": "虚軍号令",
+   "afterRank": "B",
+   "target": "槍弓馬",
+   "rate": "32%",
+   "effectShort": "防御 ((1+ランク)xコストx1.8) %上昇 / 武将ランクとコストで効果が変化"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3411 と skills/五龍王)およびixawiki(BushoCard/3411宍戸隆家)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

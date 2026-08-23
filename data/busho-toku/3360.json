@@ -1,0 +1,103 @@
+{
+ "name": "薄田兼相",
+ "no": "3360",
+ "ch": null,
+ "cost": 3.0,
+ "troop": "槍弓攻",
+ "sub": "",
+ "effect": "攻撃 50%上昇 / (合流攻撃時は確率2倍)",
+ "furigana": "すすきだかねすけ",
+ "illustrator": "ハンブ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 860,
+ "atkGrowth": 23.0,
+ "defBase": 850,
+ "defGrowth": 20.0,
+ "tacticsBase": 450.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2840,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "B",
+  "uma": "C",
+  "ki": "B"
+ },
+ "initialSkill": "狒々退治",
+ "skillDetail": "D/LV10 確率 16% 攻撃 50%上昇 / (合流攻撃時は確率2倍)/対象:槍弓\n①攻撃 50%上昇 / (合流攻撃時は確率2倍)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍弓　確率 16% / 攻撃 50%上昇 / (合流攻撃時は確率2倍)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "槍隊急襲",
+   "rank": "F",
+   "afterSkill": "槍隊守備",
+   "afterRank": "F",
+   "target": "槍",
+   "rate": "16%",
+   "effectShort": "槍攻：7.5%上昇 / (武将のコストで効果が変化します)",
+   "afterTarget": "槍",
+   "afterRate": "16%",
+   "afterEffectShort": "防御 (コストx5) %上昇 / (武将のコストで効果が変化します)"
+  },
+  {
+   "slot": "B",
+   "skill": "筋違い角",
+   "rank": "D",
+   "afterSkill": "絢鳥",
+   "afterRank": "B",
+   "target": "槍弓",
+   "rate": "30%",
+   "effectShort": "攻撃 36%上昇 / (2部隊以下の攻撃で効果1.5倍)",
+   "afterTarget": "槍弓",
+   "afterRate": "35%",
+   "afterEffectShort": "攻撃 42%上昇 / 破壊 15%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "狒々退治",
+   "rank": "D",
+   "afterSkill": "魔王ノ片鱗",
+   "afterRank": "B",
+   "target": "槍弓",
+   "rate": "16%",
+   "effectShort": "攻撃 50%上昇 / (合流攻撃時は確率2倍)",
+   "afterTarget": "槍弓",
+   "afterRate": "26%",
+   "afterEffectShort": "攻撃 46%上昇 / 武将ランクで効果が変化"
+  },
+  {
+   "slot": "S1",
+   "skill": "魔王ノ片鱗",
+   "rank": "B",
+   "afterSkill": "魔王ノ片鱗",
+   "afterRank": "B",
+   "target": "槍弓",
+   "rate": "26%",
+   "effectShort": "攻撃 46%上昇 / 武将ランクで効果が変化"
+  },
+  {
+   "slot": "S2",
+   "skill": "三島明神波撃",
+   "rank": "B",
+   "afterSkill": "三島明神波撃",
+   "afterRank": "B",
+   "target": "槍弓器",
+   "rate": "20%",
+   "effectShort": "攻撃 69%上昇 / (合流攻撃時は確率2倍)"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3360 と skills/狒々退治)およびixawiki(BushoCard/3360薄田兼相)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

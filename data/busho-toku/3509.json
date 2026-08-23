@@ -1,0 +1,109 @@
+{
+ "name": "秋月種実",
+ "no": "3509",
+ "ch": null,
+ "cost": 2.0,
+ "troop": "全攻",
+ "sub": "",
+ "effect": "攻撃 84%上昇 / このスキルを所持する武将の全スキルの卓越確率に15%を加算する(模倣不可)",
+ "furigana": "あきづきたねざね",
+ "illustrator": "ちゃきん",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 870,
+ "atkGrowth": 28.0,
+ "defBase": 870,
+ "defGrowth": 28.0,
+ "tacticsBase": 470.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2360,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "A",
+  "uma": "C",
+  "ki": "B"
+ },
+ "initialSkill": "暴悪十ヶ条",
+ "skillDetail": "C/LV10 確率 50% 攻撃 84%上昇 / このスキルを所持する武将の全スキルの卓越確率に15%を加算する(模倣不可)/対象:全\n①攻撃 84%上昇 / このスキルを所持する武将の全スキルの卓越確率に15%を加算する(模倣不可)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 50% / 攻撃 84%上昇 / このスキルを所持する武将の全スキルの卓越確率に15%を加算する(模倣不可)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "暴悪十ヶ条",
+   "rank": "C",
+   "afterSkill": "愛山美姫",
+   "afterRank": "B",
+   "target": "全",
+   "rate": "50%",
+   "effectShort": "攻撃 84%上昇 / このスキルを所持する武将の全スキルの卓越確率に15%を加算する(模倣不可)",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 45%上昇 防御 45%上昇 / 卓越：追加確率35%で攻防効果が2倍"
+  },
+  {
+   "slot": "B",
+   "skill": "暴悪十ヶ条",
+   "rank": "C",
+   "afterSkill": "愛山美姫",
+   "afterRank": "B",
+   "target": "全",
+   "rate": "50%",
+   "effectShort": "攻撃 84%上昇 / このスキルを所持する武将の全スキルの卓越確率に15%を加算する(模倣不可)",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 45%上昇 防御 45%上昇 / 卓越：追加確率35%で攻防効果が2倍"
+  },
+  {
+   "slot": "C",
+   "skill": "暴悪十ヶ条",
+   "rank": "C",
+   "afterSkill": "愛山美姫",
+   "afterRank": "B",
+   "target": "全",
+   "rate": "50%",
+   "effectShort": "攻撃 84%上昇 / このスキルを所持する武将の全スキルの卓越確率に15%を加算する(模倣不可)",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 45%上昇 防御 45%上昇 / 卓越：追加確率35%で攻防効果が2倍"
+  },
+  {
+   "slot": "S1",
+   "skill": "愛山美姫",
+   "rank": "B",
+   "afterSkill": "鬼滅刺",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "攻撃 45%上昇 防御 45%上昇 / 卓越：追加確率35%で攻防効果が2倍",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 70%上昇 防御 70%上昇(卓越確率+25%加算・模倣不可)"
+  },
+  {
+   "slot": "S2",
+   "skill": "虎切刀",
+   "rank": "C",
+   "afterSkill": "鬼滅刺",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "50%",
+   "effectShort": "攻撃 66%上昇 / 防御 66%上昇",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 70%上昇 防御 70%上昇(卓越確率+25%加算・模倣不可)"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3509 と skills/暴悪十ヶ条)およびixawiki(BushoCard/3509秋月種実)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

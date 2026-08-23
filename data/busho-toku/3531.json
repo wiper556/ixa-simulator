@@ -1,0 +1,106 @@
+{
+ "name": "夏目吉信",
+ "no": "3531",
+ "ch": null,
+ "cost": 3.0,
+ "troop": "槍弓馬器攻",
+ "sub": "",
+ "effect": "攻撃 92%上昇 / 防御 92%上昇 / 破壊 45%上昇",
+ "furigana": "なつめよしのぶ",
+ "illustrator": "鹿角",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 880,
+ "atkGrowth": 30.0,
+ "defBase": 880,
+ "defGrowth": 30.0,
+ "tacticsBase": 460.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 3020,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "B",
+  "uma": "B",
+  "ki": "B"
+ },
+ "initialSkill": "大樹ノ守り人",
+ "skillDetail": "C/LV10 確率 44% 攻撃 92%上昇 / 防御 92%上昇 / 破壊 45%上昇/対象:槍弓馬器\n①攻撃が92%上昇 / 防御 92%上昇 / 破壊 45%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍弓馬器　確率 44% / 攻撃 92%上昇 / 防御 92%上昇 / 破壊 45%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "大樹ノ守り人",
+   "rank": "C",
+   "afterSkill": "覚悟十躰",
+   "afterRank": "A",
+   "target": "槍弓馬器",
+   "rate": "44%",
+   "effectShort": "攻撃 92%上昇 / 防御 92%上昇 / 破壊 45%上昇",
+   "afterTarget": "全",
+   "afterRate": "30%",
+   "afterEffectShort": "資源獲得率：15% / 破壊した耐久値に応じて資源獲得"
+  },
+  {
+   "slot": "B",
+   "skill": "大樹ノ守り人",
+   "rank": "C",
+   "afterSkill": "覚悟十躰",
+   "afterRank": "A",
+   "target": "槍弓馬器",
+   "rate": "44%",
+   "effectShort": "攻撃 92%上昇 / 防御 92%上昇 / 破壊 45%上昇",
+   "afterTarget": "全",
+   "afterRate": "30%",
+   "afterEffectShort": "資源獲得率：15% / 破壊した耐久値に応じて資源獲得"
+  },
+  {
+   "slot": "C",
+   "skill": "戦場妙技",
+   "rank": "B",
+   "afterSkill": "戦陣 破軍",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "32%",
+   "effectShort": "攻撃 72%上昇+防御 72%上昇+破壊 20%上昇",
+   "afterTarget": "全",
+   "afterRate": "44%",
+   "afterEffectShort": "攻撃 66%上昇+防御 66%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "覚悟十躰",
+   "rank": "A",
+   "afterSkill": "覚悟十躰",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "30%",
+   "effectShort": "資源獲得率：15% / 破壊した耐久値に応じて資源獲得"
+  },
+  {
+   "slot": "S2",
+   "skill": "虎切刀",
+   "rank": "C",
+   "afterSkill": "鬼滅刺",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "50%",
+   "effectShort": "攻撃 66%上昇 / 防御 66%上昇",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 70%上昇 防御 70%上昇(卓越確率+25%加算・模倣不可)"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3531 と skills/大樹ノ守り人)およびixawiki(BushoCard/3531夏目吉信)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

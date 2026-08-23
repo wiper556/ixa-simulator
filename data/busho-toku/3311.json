@@ -1,0 +1,101 @@
+{
+ "name": "籾井教業",
+ "no": "3311",
+ "ch": null,
+ "cost": 3.0,
+ "troop": "槍馬砲攻",
+ "sub": "",
+ "effect": "攻撃 38%上昇 / 攻撃戦闘勝利時のみ、自部隊の武将ダメージ軽減5%",
+ "furigana": "もみいのりなり",
+ "illustrator": "小森ニコ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 900,
+ "atkGrowth": 23.0,
+ "defBase": 850,
+ "defGrowth": 21.0,
+ "tacticsBase": 430.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2780,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "C",
+  "uma": "A",
+  "ki": "B"
+ },
+ "initialSkill": "青鬼ノ追撃",
+ "skillDetail": "D/LV10 確率 27% 攻撃 38%上昇 / 攻撃戦闘勝利時のみ自部隊の武将ダメージ軽減5%/対象:槍馬砲\n①攻撃 38%上昇 / 攻撃戦闘勝利時のみ自部隊の武将ダメージ軽減5%",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍馬砲　確率 27% / 攻撃 38%上昇 / 攻撃戦闘勝利時のみ、自部隊の武将ダメージ軽減5%"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "騎馬隊進撃",
+   "rank": "F",
+   "afterSkill": "騎馬隊襲撃",
+   "afterRank": "F",
+   "target": "馬",
+   "rate": "10%",
+   "effectShort": "攻撃 15%上昇",
+   "afterTarget": "馬",
+   "afterRate": "20%",
+   "afterEffectShort": "馬攻：10%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "風流雷火",
+   "rank": "C",
+   "afterSkill": "義兵進軍",
+   "afterRank": "C",
+   "target": "槍馬砲",
+   "rate": "35%",
+   "effectShort": "攻撃 20%上昇",
+   "afterTarget": "槍弓馬砲",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 7%上昇 / 速度 10%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "声遣縦横",
+   "rank": "D",
+   "afterSkill": "声遣縦横",
+   "afterRank": "D",
+   "target": "槍馬砲",
+   "rate": "24%",
+   "effectShort": "攻撃 38%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "青鬼ノ追撃",
+   "rank": "D",
+   "afterSkill": "青鬼ノ追撃",
+   "afterRank": "D",
+   "target": "槍馬砲",
+   "rate": "27%",
+   "effectShort": "攻撃 38%上昇 / 攻撃戦闘勝利時のみ、自部隊の武将ダメージ軽減5%"
+  },
+  {
+   "slot": "S2",
+   "skill": "鬼五郎左",
+   "rank": "B",
+   "afterSkill": "鬼五郎左",
+   "afterRank": "B",
+   "target": "槍馬砲",
+   "rate": "26%",
+   "effectShort": "攻撃 38%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3311 と skills/青鬼ノ追撃)およびixawiki(BushoCard/3311籾井教業)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。",
+  "2026-08-23: skillDetail に読点が混入していた(F-01違反)。ixanary の原文が「配置時、防御効果が」のように読点を使うのをそのまま取り込んでいた。読点を外した。"
+ ]
+}

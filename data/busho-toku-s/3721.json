@@ -1,0 +1,110 @@
+{
+ "name": "太田牛一",
+ "no": "3721",
+ "ch": null,
+ "cost": 3.0,
+ "troop": "全",
+ "sub": "",
+ "effect": "織田信長の所持スキル発動率を2倍にする(同部隊セット時のみ有効・模倣不可)",
+ "furigana": "おおたぎゅういち",
+ "illustrator": "BISAI",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 670,
+ "atkGrowth": 18.0,
+ "defBase": 670,
+ "defGrowth": 18.0,
+ "tacticsBase": 600.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 2750,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "S",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "天正筆才",
+ "skillDetail": "A/LV10 確率 100% 織田信長の所持スキル発動率2倍/対象:織田信長\n模倣不可\n①同じ部隊にセットした織田信長の所持スキル発動率を2倍にする",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "織田信長　確率 100% / 所持スキル発動率2倍(同部隊セット時のみ有効・模倣不可)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "鉄砲隊突撃",
+   "rank": "F",
+   "afterSkill": "鉄砲隊奇襲",
+   "afterRank": "E",
+   "target": "砲",
+   "rate": "12%",
+   "effectShort": "攻撃 20%上昇",
+   "afterTarget": "砲",
+   "afterRate": "25%",
+   "afterEffectShort": "攻撃 12%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "鉄砲隊挟撃",
+   "rank": "E",
+   "afterSkill": "鉄砲隊守護",
+   "afterRank": "E",
+   "target": "砲",
+   "rate": "20%",
+   "effectShort": "攻撃 (コストx6.5) %上昇 / (武将のコストで効果が変化します)",
+   "afterTarget": "砲",
+   "afterRate": "20%",
+   "afterEffectShort": "防御 (コストx6.5) %上昇 / (武将のコストで効果が変化します)"
+  },
+  {
+   "slot": "C",
+   "skill": "三段撃 神速",
+   "rank": "C",
+   "afterSkill": "三段撃 烈火",
+   "afterRank": "C",
+   "target": "砲",
+   "rate": "50%",
+   "effectShort": "攻撃 12%上昇 / 破壊 15%上昇",
+   "afterTarget": "槍砲",
+   "afterRate": "15%",
+   "afterEffectShort": "攻撃 (コストx9) %上昇 / (武将のコストで効果が変化します)"
+  },
+  {
+   "slot": "S1",
+   "skill": "遁世影武者",
+   "rank": "B",
+   "afterSkill": "風林火山",
+   "afterRank": "S",
+   "target": "部隊長",
+   "rate": "50%",
+   "effectShort": "部隊長の初期スキルを模倣(戦闘スキルのみ)",
+   "afterTarget": "槍・弓・馬",
+   "afterRate": "45%",
+   "afterEffectShort": "攻撃 30%上昇+破壊 15%上昇(TRなし)"
+  },
+  {
+   "slot": "S2",
+   "skill": "三段撃 激烈",
+   "rank": "S",
+   "afterSkill": "神算鬼謀 滅",
+   "afterRank": "A",
+   "target": "砲",
+   "rate": "45%",
+   "effectShort": "攻撃 30%上昇+破壊 10%上昇",
+   "afterTarget": "槍弓器",
+   "afterRate": "50%",
+   "afterEffectShort": "攻撃 24%上昇 / 破壊 46%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3721 と skills/天正筆才)およびixawiki(BushoCard/3721太田牛一)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。",
+  "2026-08-23: 対象が兵科でも職業でもなく**特定の武将名(織田信長)**という珍しいスキル。一括登録のパーサは対象として認識できないため手で書いた。"
+ ]
+}

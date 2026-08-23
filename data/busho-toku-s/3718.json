@@ -1,0 +1,103 @@
+{
+ "name": "伏姫",
+ "no": "3718",
+ "ch": null,
+ "cost": 3.0,
+ "troop": "合流防",
+ "sub": "",
+ "effect": "防御 20%上昇 / (合流攻撃防御時のみ発動)",
+ "furigana": "ふせひめ",
+ "illustrator": "ツヤイルカ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 560,
+ "atkGrowth": 16.0,
+ "defBase": 670,
+ "defGrowth": 18.0,
+ "tacticsBase": 440.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2850,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "S",
+  "uma": "C",
+  "ki": "B"
+ },
+ "initialSkill": "仁義八行",
+ "skillDetail": "B/LV10 確率 100% 防御 20%上昇 / (合流攻撃防御時のみ発動)/対象:合流\n①防御 20%上昇 / (合流攻撃防御時のみ発動)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "合流　確率 100% / 防御 20%上昇 / (合流攻撃防御時のみ発動)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "槍陣の極み",
+   "rank": "B",
+   "afterSkill": "柳生新陰流",
+   "afterRank": "A",
+   "target": "槍",
+   "rate": "30%",
+   "effectShort": "防御 30%上昇",
+   "afterTarget": "将",
+   "afterRate": "55%",
+   "afterEffectShort": "防御 40%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "弓陣の極み",
+   "rank": "B",
+   "afterSkill": "戦陣 千鳥",
+   "afterRank": "B",
+   "target": "弓",
+   "rate": "30%",
+   "effectShort": "防御 30%上昇",
+   "afterTarget": "弓馬",
+   "afterRate": "45%",
+   "afterEffectShort": "防御 30%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "馬陣の極み",
+   "rank": "B",
+   "afterSkill": "天賦の神算",
+   "afterRank": "B",
+   "target": "馬",
+   "rate": "30%",
+   "effectShort": "防御 30%上昇",
+   "afterTarget": "全",
+   "afterRate": "50%",
+   "afterEffectShort": "攻撃 12%上昇 / 破壊 5%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "仁義八行",
+   "rank": "B",
+   "afterSkill": "仁義八行",
+   "afterRank": "B",
+   "target": "合流",
+   "rate": "100%",
+   "effectShort": "防御 20%上昇 / (合流攻撃防御時のみ発動)"
+  },
+  {
+   "slot": "S2",
+   "skill": "背水之陣",
+   "rank": "B",
+   "afterSkill": "背水之陣",
+   "afterRank": "B",
+   "target": "槍弓馬",
+   "rate": "20%",
+   "effectShort": "防御 37%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3718 と skills/仁義八行)およびixawiki(BushoCard/3718伏姫)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

@@ -1,0 +1,109 @@
+{
+ "name": "松平広忠",
+ "no": "3528",
+ "ch": null,
+ "cost": 2.0,
+ "troop": "槍弓馬器防",
+ "sub": "",
+ "effect": "防御 55%上昇 / 自拠点防御時は防御効果2倍",
+ "furigana": "まつだいらひろただ",
+ "illustrator": "tatsuya",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 880,
+ "atkGrowth": 29.0,
+ "defBase": 900,
+ "defGrowth": 32.0,
+ "tacticsBase": 460.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2370,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "B",
+  "uma": "B",
+  "ki": "B"
+ },
+ "initialSkill": "大樹ノ萌芽",
+ "skillDetail": "C/LV10 確率 70% 防御 55%上昇 / 自拠点防御時は防御効果2倍/対象:槍弓馬器\n①防御 55%上昇 / 自拠点防御時は防御効果2倍",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍弓馬器　確率 70% / 防御 55%上昇 / 自拠点防御時は防御効果2倍"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "大樹ノ萌芽",
+   "rank": "C",
+   "afterSkill": "覇・太虚国崩",
+   "afterRank": "B",
+   "target": "槍弓馬器",
+   "rate": "70%",
+   "effectShort": "防御 55%上昇 / 自拠点防御時は防御効果2倍",
+   "afterTarget": "全",
+   "afterRate": "55%",
+   "afterEffectShort": "防御 75%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "大樹ノ萌芽",
+   "rank": "C",
+   "afterSkill": "覇・太虚国崩",
+   "afterRank": "B",
+   "target": "槍弓馬器",
+   "rate": "70%",
+   "effectShort": "防御 55%上昇 / 自拠点防御時は防御効果2倍",
+   "afterTarget": "全",
+   "afterRate": "55%",
+   "afterEffectShort": "防御 75%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "斑ノ守護者",
+   "rank": "C",
+   "afterSkill": "死出ノ田長",
+   "afterRank": "B",
+   "target": "槍弓馬器",
+   "rate": "55%",
+   "effectShort": "防御 60%上昇 / (自軍7部隊以下の防御時 効果1.5倍)",
+   "afterTarget": "槍弓馬器",
+   "afterRate": "54%",
+   "afterEffectShort": "防御 80%上昇 / 卓越：追加確率30%で防御効果が1.5倍"
+  },
+  {
+   "slot": "S1",
+   "skill": "覇・太虚国崩",
+   "rank": "B",
+   "afterSkill": "戦陣 破軍",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "55%",
+   "effectShort": "防御 75%上昇",
+   "afterTarget": "全",
+   "afterRate": "44%",
+   "afterEffectShort": "攻撃 66%上昇+防御 66%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "野太刀",
+   "rank": "C",
+   "afterSkill": "戦陣 凱旋",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "17%",
+   "effectShort": "攻撃 77%上昇 / 防御 77%上昇",
+   "afterTarget": "全",
+   "afterRate": "10%",
+   "afterEffectShort": "攻撃 87%上昇+防御 87%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3528 と skills/大樹ノ萌芽)およびixawiki(BushoCard/3528松平広忠)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

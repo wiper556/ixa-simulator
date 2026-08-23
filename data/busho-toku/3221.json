@@ -1,0 +1,100 @@
+{
+ "name": "梶原政景",
+ "no": "3221",
+ "ch": null,
+ "cost": 3.0,
+ "troop": "槍弓馬攻",
+ "sub": "",
+ "effect": "攻撃 25%上昇 / (合流攻撃時は効果2倍)",
+ "furigana": "かじわらまさかげ",
+ "illustrator": "やまだ六角",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 680,
+ "atkGrowth": 18.0,
+ "defBase": 640,
+ "defGrowth": 15.0,
+ "tacticsBase": 430.0,
+ "tacticsGrowth": 1.5,
+ "lv0Troops": 2720,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "B",
+  "uma": "A",
+  "ki": "C"
+ },
+ "initialSkill": "修羅の援兵",
+ "skillDetail": "D/LV10 確率 25% 攻撃 25%上昇 / (合流攻撃時は効果2倍)/対象:槍弓馬\n①攻撃 25%上昇 / (合流攻撃時は効果2倍)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍弓馬　確率 25% / 攻撃 25%上昇 / (合流攻撃時は効果2倍)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "騎馬隊奇襲",
+   "rank": "E",
+   "afterSkill": "騎馬隊堅陣",
+   "afterRank": "F",
+   "target": "馬",
+   "rate": "30%",
+   "effectShort": "馬攻：12%上昇",
+   "afterTarget": "馬",
+   "afterRate": "30%",
+   "afterEffectShort": "馬防：12%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "槍馬連撃",
+   "rank": "D",
+   "afterSkill": "槍陣の極み",
+   "afterRank": "B",
+   "target": "槍馬",
+   "rate": "30%",
+   "effectShort": "攻撃 20%上昇",
+   "afterTarget": "槍",
+   "afterRate": "30%",
+   "afterEffectShort": "防御 30%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "剛勇無双",
+   "rank": "B",
+   "afterSkill": "剛勇無双",
+   "afterRank": "B",
+   "target": "槍馬砲",
+   "rate": "30%",
+   "effectShort": "攻撃 25%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "修羅の援兵",
+   "rank": "D",
+   "afterSkill": "修羅の援兵",
+   "afterRank": "D",
+   "target": "槍弓馬",
+   "rate": "25%",
+   "effectShort": "攻撃 25%上昇 / (合流攻撃時は効果2倍)"
+  },
+  {
+   "slot": "S2",
+   "skill": "声遣縦横",
+   "rank": "D",
+   "afterSkill": "声遣縦横",
+   "afterRank": "D",
+   "target": "槍馬砲",
+   "rate": "24%",
+   "effectShort": "攻撃 38%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3221 と skills/修羅の援兵)およびixawiki(BushoCard/3221梶原政景)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

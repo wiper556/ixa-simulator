@@ -1,0 +1,106 @@
+{
+ "name": "千代",
+ "no": "3249",
+ "ch": null,
+ "cost": 3.0,
+ "troop": "馬砲攻",
+ "sub": "",
+ "effect": "攻撃 14%上昇 / 速度 22%上昇",
+ "furigana": "ちよ",
+ "illustrator": "isuZu",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 780,
+ "atkGrowth": 18.0,
+ "defBase": 590,
+ "defGrowth": 15.0,
+ "tacticsBase": 450.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2720,
+ "rankGrades": {
+  "yari": "C",
+  "yumi": "B",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "鏡栗毛",
+ "skillDetail": "D/LV10 確率 100% 攻撃 14%上昇 / 速度 22%上昇/対象:馬砲\n①攻撃が14%上昇 / 速度 22%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "馬砲　確率 100% / 攻撃 14%上昇 / 速度 22%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "騎馬隊守護",
+   "rank": "E",
+   "afterSkill": "騎馬隊挟撃",
+   "afterRank": "E",
+   "target": "馬",
+   "rate": "25%",
+   "effectShort": "防御 (コストx6.5) %上昇 / (武将のコストで効果が変化します)",
+   "afterTarget": "馬",
+   "afterRate": "25%",
+   "afterEffectShort": "攻撃 (コストx6.5) %上昇 / (武将のコストで効果が変化します)"
+  },
+  {
+   "slot": "B",
+   "skill": "颯空術",
+   "rank": "D",
+   "afterSkill": "真田丸",
+   "afterRank": "D",
+   "target": "馬砲",
+   "rate": "100%",
+   "effectShort": "攻撃 6%上昇 / 速度 20%上昇",
+   "afterTarget": "槍馬砲",
+   "afterRate": "15%",
+   "afterEffectShort": "防御 +30%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "鏡花水月",
+   "rank": "D",
+   "afterSkill": "神行法 千里",
+   "afterRank": "B",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "攻撃 4%上昇 / 速度 38%上昇",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 6.5%上昇 / 速度 33%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "鏡栗毛",
+   "rank": "D",
+   "afterSkill": "鏡栗毛",
+   "afterRank": "D",
+   "target": "馬砲",
+   "rate": "100%",
+   "effectShort": "攻撃 14%上昇 / 速度 22%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "桜花絢爛",
+   "rank": "B",
+   "afterSkill": "組撃ち",
+   "afterRank": "B",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "攻撃 6%上昇 / 速度 35%上昇",
+   "afterTarget": "弓砲",
+   "afterRate": "20%",
+   "afterEffectShort": "防御 35%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3249 と skills/鏡栗毛)およびixawiki(BushoCard/3249千代)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

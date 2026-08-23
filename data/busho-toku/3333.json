@@ -1,0 +1,109 @@
+{
+ "name": "萱場元時",
+ "no": "3333",
+ "ch": null,
+ "cost": 3.0,
+ "troop": "砲器攻",
+ "sub": "",
+ "effect": "攻撃 (コストx12.5) %上昇 / 破壊 25%上昇 / (武将のコストで効果が変化します)",
+ "furigana": "かやばもととき",
+ "illustrator": "HMK48",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 880,
+ "atkGrowth": 23.0,
+ "defBase": 800,
+ "defGrowth": 22.0,
+ "tacticsBase": 460.0,
+ "tacticsGrowth": 1.5,
+ "lv0Troops": 2810,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "C",
+  "uma": "B",
+  "ki": "A"
+ },
+ "initialSkill": "一文義烈",
+ "skillDetail": "D/LV10 確率 38% 攻撃 (コストx12.5) %上昇 / 破壊 25%上昇 / (武将のコストで効果が変化します)/対象:砲器\n①攻撃 (コストx12.5) %上昇 / 破壊 25%上昇 / (武将のコストで効果が変化します)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "砲器　確率 38% / 攻撃 (コストx12.5) %上昇 / 破壊 25%上昇 / (武将のコストで効果が変化します)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "兵器突撃",
+   "rank": "F",
+   "afterSkill": "迅速行軍",
+   "afterRank": "E",
+   "target": "器",
+   "rate": "15%",
+   "effectShort": "攻撃 20%上昇",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "速度 20%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "雑賀ノ闇鉄砲",
+   "rank": "D",
+   "afterSkill": "南蛮砲術",
+   "afterRank": "D",
+   "target": "砲器",
+   "rate": "12%",
+   "effectShort": "攻撃 43%上昇 / (19時～翌01時は確率5倍)",
+   "afterTarget": "砲器",
+   "afterRate": "24%",
+   "afterEffectShort": "攻撃 34%上昇 / 破壊 27%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "一文義烈",
+   "rank": "D",
+   "afterSkill": "雪原の奸雄",
+   "afterRank": "B",
+   "target": "砲器",
+   "rate": "38%",
+   "effectShort": "攻撃 (コストx12.5) %上昇 / 破壊 25%上昇 / (武将のコストで効果が変化します)",
+   "afterTarget": "馬器",
+   "afterRate": "35%",
+   "afterEffectShort": "攻撃 42%上昇 / 破壊 34%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "雪原の奸雄",
+   "rank": "B",
+   "afterSkill": "乗り崩し赤牛",
+   "afterRank": "B",
+   "target": "馬器",
+   "rate": "35%",
+   "effectShort": "攻撃 42%上昇 / 破壊 34%上昇",
+   "afterTarget": "槍馬器",
+   "afterRate": "49%",
+   "afterEffectShort": "攻撃 39%上昇 / 破壊 30%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "突貫破城",
+   "rank": "D",
+   "afterSkill": "声遣縦横",
+   "afterRank": "D",
+   "target": "砲器",
+   "rate": "16%",
+   "effectShort": "攻撃 40%上昇 / 破壊 18%上昇",
+   "afterTarget": "槍馬砲",
+   "afterRate": "24%",
+   "afterEffectShort": "攻撃 38%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3333 と skills/一文義烈)およびixawiki(BushoCard/3333萱場元時)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

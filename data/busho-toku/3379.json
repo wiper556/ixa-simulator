@@ -1,0 +1,106 @@
+{
+ "name": "石谷夫人",
+ "no": "3379",
+ "ch": null,
+ "cost": 1.5,
+ "troop": "弓砲防",
+ "sub": "",
+ "effect": "防御 46%上昇 / 破壊 27%上昇",
+ "furigana": "いしがいふじん",
+ "illustrator": "たわわ実",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 830,
+ "atkGrowth": 20.0,
+ "defBase": 850,
+ "defGrowth": 24.0,
+ "tacticsBase": 470.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 1880,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "A",
+  "uma": "C",
+  "ki": "B"
+ },
+ "initialSkill": "犬神払い",
+ "skillDetail": "D/LV10 確率 40% 防御 46%上昇 / 破壊 27%上昇/対象:弓・砲\n①防御が46%上昇 / 破壊 27%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓/砲　確率 40% / 防御 46%上昇 / 破壊 27%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "弓隊守備",
+   "rank": "F",
+   "afterSkill": "弓隊急襲",
+   "afterRank": "F",
+   "target": "弓",
+   "rate": "16%",
+   "effectShort": "防御 (コストx6) %上昇 / (武将のコストで効果が変化します)",
+   "afterTarget": "弓",
+   "afterRate": "16%",
+   "afterEffectShort": "攻撃 (コストx5) %上昇 / (武将のコストで効果が変化します)"
+  },
+  {
+   "slot": "B",
+   "skill": "歩き巫女",
+   "rank": "D",
+   "afterSkill": "蒼刃ノ輔曳",
+   "afterRank": "D",
+   "target": "弓器",
+   "rate": "38%",
+   "effectShort": "防御 43%上昇",
+   "afterTarget": "弓器",
+   "afterRate": "35%",
+   "afterEffectShort": "防御 27%上昇 / (攻撃部隊に兵器兵科がいれば効果2倍)"
+  },
+  {
+   "slot": "C",
+   "skill": "犬神払い",
+   "rank": "D",
+   "afterSkill": "傾国ノ美姫",
+   "afterRank": "B",
+   "target": "弓/砲",
+   "rate": "40%",
+   "effectShort": "防御 46%上昇 / 破壊 27%上昇",
+   "afterTarget": "槍弓器",
+   "afterRate": "34%",
+   "afterEffectShort": "防御 26+(ランクx4) %上昇 確率：+34% / 速度 30%上昇 確率：+100% / 防御効果は武将ランクで変化"
+  },
+  {
+   "slot": "S1",
+   "skill": "傾国ノ美姫",
+   "rank": "B",
+   "afterSkill": "宿木",
+   "afterRank": "B",
+   "target": "槍弓器",
+   "rate": "34%",
+   "effectShort": "防御 26+(ランクx4) %上昇 確率：+34% / 速度 30%上昇 確率：+100% / 防御効果は武将ランクで変化",
+   "afterTarget": "部隊長",
+   "afterRate": "55%",
+   "afterEffectShort": "部隊長の初期スキルを模倣(戦闘スキルのみ)"
+  },
+  {
+   "slot": "S2",
+   "skill": "新館御料人",
+   "rank": "B",
+   "afterSkill": "新館御料人",
+   "afterRank": "B",
+   "target": "弓砲器",
+   "rate": "70%",
+   "effectShort": "攻撃 57.6%上昇 / 防御 57.6%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3379 と skills/犬神払い)およびixawiki(BushoCard/3379石谷夫人)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

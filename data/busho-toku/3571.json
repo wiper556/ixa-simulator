@@ -1,0 +1,111 @@
+{
+ "name": "菅野直",
+ "no": "3571",
+ "ch": null,
+ "cost": 3.0,
+ "troop": "砲器攻",
+ "sub": "",
+ "effect": "飛翔5 / 攻撃 230%上昇 確率：+40% / 速度 60%上昇",
+ "furigana": "かんのなおし",
+ "illustrator": "対象 砲器",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 910,
+ "atkGrowth": 26.0,
+ "defBase": 870,
+ "defGrowth": 31.0,
+ "tacticsBase": 460.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 3060,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "B",
+  "uma": "C",
+  "ki": "A"
+ },
+ "initialSkill": "ワレ突撃ス",
+ "skillDetail": "C/LV10 確率 40% 飛翔5 / 攻撃 230%上昇 確率：+40% / 速度 60%上昇/対象:砲器\n①飛翔5 / 攻撃 230%上昇 確率：+40% / 速度 60%上昇",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "砲器　確率 40% / 飛翔5 / 攻撃 230%上昇 確率：+40% / 速度 60%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "ワレ突撃ス",
+   "rank": "C",
+   "afterSkill": "風将飛剣",
+   "afterRank": "C",
+   "target": "砲器",
+   "rate": "40%",
+   "effectShort": "飛翔5 / 攻撃 230%上昇 確率：+40% / 速度 60%上昇",
+   "afterTarget": "槍弓馬",
+   "afterRate": "40%",
+   "afterEffectShort": "攻撃 99%上昇 確率：+40% / 速度 50%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "ワレ突撃ス",
+   "rank": "C",
+   "afterSkill": "風将飛剣",
+   "afterRank": "C",
+   "target": "砲器",
+   "rate": "40%",
+   "effectShort": "飛翔5 / 攻撃 230%上昇 確率：+40% / 速度 60%上昇",
+   "afterTarget": "槍弓馬",
+   "afterRate": "40%",
+   "afterEffectShort": "攻撃 99%上昇 確率：+40% / 速度 50%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "ワレ突撃ス",
+   "rank": "C",
+   "afterSkill": "風将飛剣",
+   "afterRank": "C",
+   "target": "砲器",
+   "rate": "40%",
+   "effectShort": "飛翔5 / 攻撃 230%上昇 確率：+40% / 速度 60%上昇",
+   "afterTarget": "槍弓馬",
+   "afterRate": "40%",
+   "afterEffectShort": "攻撃 99%上昇 確率：+40% / 速度 50%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "風将飛剣",
+   "rank": "C",
+   "afterSkill": "戦陣 一閃",
+   "afterRank": "A",
+   "target": "槍弓馬",
+   "rate": "40%",
+   "effectShort": "攻撃 99%上昇 確率：+40% / 速度 50%上昇",
+   "afterTarget": "全",
+   "afterRate": "50%/100%",
+   "afterEffectShort": "攻撃 50%上昇(確率50%)+速度 50%上昇(確率100%)"
+  },
+  {
+   "slot": "S2",
+   "skill": "鉄騎花麗",
+   "rank": "C",
+   "afterSkill": "都鄙合体",
+   "afterRank": "B",
+   "target": "槍弓馬騎",
+   "rate": "36%",
+   "effectShort": "攻撃 88%上昇 確率：+36% / 速度 45%上昇",
+   "afterTarget": "槍馬騎",
+   "afterRate": "49%",
+   "afterEffectShort": "攻撃 82%上昇 確率：+49% / 防御 82%上昇 確率：+49% / 速度 35%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3571 と skills/ワレ突撃ス)およびixawiki(BushoCard/3571菅野直)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。",
+  "2026-08-23: 合成候補の effectShort/afterEffectShort の先頭に「効果 」や確率が付いていた(A-4-15 の接頭辞)。ixanary の表の列見出しを一緒に拾っていたもので、外した。",
+  "2026-08-23 訂正: 合成候補の確率が片方だけになっていた。忍祖千里眼と戦陣 一閃は**確率を2つ持つスキル**で(ixanary: 防御49%は確率+40%・速度30%は確率+100% / 攻撃50%は確率+50%・速度50%は確率+100%)、既存の登録は「40%/100%」「50%/100%」と両方を書いていた。一括登録のパーサは data/skill の baseRate を1つ引くだけなので片方に落ちていた。既存の書き方に揃えた。"
+ ]
+}

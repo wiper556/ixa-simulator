@@ -1,0 +1,106 @@
+{
+ "name": "石川五右衛門",
+ "no": "3564",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "槍砲器",
+ "sub": "",
+ "effect": "攻撃 260%上昇 / 破壊 50%上昇 / 速度 40%上昇",
+ "furigana": "いしかわごえもん",
+ "illustrator": "森田悠新",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 880,
+ "atkGrowth": 30.0,
+ "defBase": 880,
+ "defGrowth": 30.0,
+ "tacticsBase": 480.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2660,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "C",
+  "uma": "B",
+  "ki": "B"
+ },
+ "initialSkill": "是絶景哉",
+ "skillDetail": "C/LV10 確率 100% 攻撃 260%上昇 / 破壊 50%上昇 / 速度 40%上昇/対象:槍砲器\n①攻撃が260%上昇 / 破壊 50%上昇 / 速度 40%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍砲器　確率 100% / 攻撃 260%上昇 / 破壊 50%上昇 / 速度 40%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "是絶景哉",
+   "rank": "C",
+   "afterSkill": "三斎流具足",
+   "afterRank": "B",
+   "target": "槍砲器",
+   "rate": "100%",
+   "effectShort": "攻撃 260%上昇 / 破壊 50%上昇 / 速度 40%上昇",
+   "afterTarget": "馬器騎",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 48%上昇 / 破壊 35%上昇 / 速度 35%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "是絶景哉",
+   "rank": "C",
+   "afterSkill": "三斎流具足",
+   "afterRank": "B",
+   "target": "槍砲器",
+   "rate": "100%",
+   "effectShort": "攻撃 260%上昇 / 破壊 50%上昇 / 速度 40%上昇",
+   "afterTarget": "馬器騎",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 48%上昇 / 破壊 35%上昇 / 速度 35%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "是絶景哉",
+   "rank": "C",
+   "afterSkill": "三斎流具足",
+   "afterRank": "B",
+   "target": "槍砲器",
+   "rate": "100%",
+   "effectShort": "攻撃 260%上昇 / 破壊 50%上昇 / 速度 40%上昇",
+   "afterTarget": "馬器騎",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 48%上昇 / 破壊 35%上昇 / 速度 35%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "三斎流具足",
+   "rank": "B",
+   "afterSkill": "三斎流具足",
+   "afterRank": "B",
+   "target": "馬器騎",
+   "rate": "100%",
+   "effectShort": "攻撃 48%上昇 / 破壊 35%上昇 / 速度 35%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "不滅ノ鬼美濃",
+   "rank": "A",
+   "afterSkill": "不滅ノ鬼神",
+   "afterRank": "S",
+   "target": "弓馬砲",
+   "rate": "70%",
+   "effectShort": "攻撃 100%上昇 確率：+70% / 速度 70%上昇",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "全　攻撃 100%上昇(確率70%)+速度 70%上昇(確率100%)(TRなし)"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3564 と skills/是絶景哉)およびixawiki(BushoCard/3564石川五右衛門)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

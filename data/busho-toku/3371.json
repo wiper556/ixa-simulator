@@ -1,0 +1,106 @@
+{
+ "name": "世瀬蔵人",
+ "no": "3371",
+ "ch": null,
+ "cost": 2.0,
+ "troop": "弓馬器防",
+ "sub": "",
+ "effect": "防御 48%上昇 確率：+42% / 速度 40%上昇",
+ "furigana": "よせくらんど",
+ "illustrator": "小森ニコ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 830,
+ "atkGrowth": 22.0,
+ "defBase": 860,
+ "defGrowth": 24.0,
+ "tacticsBase": 470.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2290,
+ "rankGrades": {
+  "yari": "C",
+  "yumi": "A",
+  "uma": "B",
+  "ki": "B"
+ },
+ "initialSkill": "流言飛語",
+ "skillDetail": "D/LV10 確率 42% 防御 48%上昇 確率：+42% / 速度 40%上昇/対象:弓馬器\n①防御が48%上昇 確率：+42% / 速度 40%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓馬器　確率 42% / 防御 48%上昇 確率：+42% / 速度 40%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "弓隊堅守",
+   "rank": "F",
+   "afterSkill": "弓隊襲撃",
+   "afterRank": "F",
+   "target": "弓",
+   "rate": "20%",
+   "effectShort": "防御 10%上昇",
+   "afterTarget": "弓",
+   "afterRate": "20%",
+   "afterEffectShort": "攻撃 10%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "死地絶走",
+   "rank": "D",
+   "afterSkill": "蜘蛛ノ捕縛",
+   "afterRank": "D",
+   "target": "弓器",
+   "rate": "25%",
+   "effectShort": "防御 (コストx36) %上昇 / (武将のコストで効果が変化します)",
+   "afterTarget": "弓砲器",
+   "afterRate": "24%",
+   "afterEffectShort": "防御 26%上昇 / (自領以外の加勢で効果2倍)"
+  },
+  {
+   "slot": "C",
+   "skill": "流言飛語",
+   "rank": "D",
+   "afterSkill": "謀君蹴撃",
+   "afterRank": "B",
+   "target": "弓馬器",
+   "rate": "42%",
+   "effectShort": "防御 48%上昇 確率：+42% / 速度 40%上昇",
+   "afterTarget": "槍弓器",
+   "afterRate": "34%",
+   "afterEffectShort": "防御 60%上昇 確率：+34% / 速度 35%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "謀君蹴撃",
+   "rank": "B",
+   "afterSkill": "謀君蹴撃",
+   "afterRank": "B",
+   "target": "槍弓器",
+   "rate": "34%",
+   "effectShort": "防御 60%上昇 確率：+34% / 速度 35%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "煉獄ノ盟約",
+   "rank": "B",
+   "afterSkill": "傾国ノ美姫",
+   "afterRank": "B",
+   "target": "弓器焙",
+   "rate": "42%",
+   "effectShort": "防御 (コストx15) %上昇 / (武将のコストで効果が変化します)",
+   "afterTarget": "槍弓器",
+   "afterRate": "34%",
+   "afterEffectShort": "防御 26+(ランクx4) %上昇 確率：+34% / 速度 30%上昇 確率：+100% / 防御効果は武将ランクで変化"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3371 と skills/流言飛語)およびixawiki(BushoCard/3371世瀬蔵人)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

@@ -1,0 +1,106 @@
+{
+ "name": "下間仲孝",
+ "no": "3204",
+ "ch": null,
+ "cost": 1.5,
+ "troop": "全攻",
+ "sub": "",
+ "effect": "攻撃 7%上昇 / 速度 15%上昇",
+ "furigana": "しもつまなかたか",
+ "illustrator": "ツヤイルカ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 630,
+ "atkGrowth": 18.0,
+ "defBase": 500,
+ "defGrowth": 15.0,
+ "tacticsBase": 450.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 1820,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "D",
+  "uma": "B",
+  "ki": "D"
+ },
+ "initialSkill": "進者往極楽",
+ "skillDetail": "D/LV10 確率 100% 攻撃 7%上昇 / 速度 15%上昇/対象:全\n①攻撃が7%上昇 / 速度 15%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 攻撃 7%上昇 / 速度 15%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "義兵進軍",
+   "rank": "C",
+   "afterSkill": "大ふへん者",
+   "afterRank": "D",
+   "target": "槍弓馬砲",
+   "rate": "100%",
+   "effectShort": "攻撃 7%上昇 / 速度 10%上昇",
+   "afterTarget": null,
+   "afterRate": "5%",
+   "afterEffectShort": "対象 将 / 攻撃 40%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "釣瓶撃ち",
+   "rank": "D",
+   "afterSkill": "弾幕防壁陣",
+   "afterRank": "C",
+   "target": "砲器",
+   "rate": "25%",
+   "effectShort": "防御 25%上昇",
+   "afterTarget": "弓砲",
+   "afterRate": "20%",
+   "afterEffectShort": "防御 30%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "疾風太秦",
+   "rank": "D",
+   "afterSkill": "大ふへん者",
+   "afterRank": "D",
+   "target": "槍弓馬砲",
+   "rate": "100%",
+   "effectShort": "攻撃 7%上昇 / 速度 10%上昇",
+   "afterTarget": null,
+   "afterRate": "5%",
+   "afterEffectShort": "対象 将 / 攻撃 40%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "進者往極楽",
+   "rank": "D",
+   "afterSkill": "進者往極楽",
+   "afterRank": "D",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "攻撃 7%上昇 / 速度 15%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "騎突 金剛",
+   "rank": "C",
+   "afterSkill": "剛勇無双",
+   "afterRank": "B",
+   "target": "馬",
+   "rate": "25%",
+   "effectShort": "攻撃 25%上昇 / 破壊 5%上昇",
+   "afterTarget": "槍馬砲",
+   "afterRate": "30%",
+   "afterEffectShort": "攻撃 25%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3204 と skills/進者往極楽)およびixawiki(BushoCard/3204下間仲孝)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

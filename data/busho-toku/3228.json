@@ -1,0 +1,106 @@
+{
+ "name": "成松信勝",
+ "no": "3228",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "槍砲防",
+ "sub": "",
+ "effect": "防御 60%上昇",
+ "furigana": "なりまつのぶかつ",
+ "illustrator": "トミダトモミ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 450,
+ "atkGrowth": 15.0,
+ "defBase": 720,
+ "defGrowth": 18.0,
+ "tacticsBase": 410.0,
+ "tacticsGrowth": 1.5,
+ "lv0Troops": 2380,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "C",
+  "uma": "B",
+  "ki": "B"
+ },
+ "initialSkill": "大金星",
+ "skillDetail": "D/LV10 確率 1% 防御 60%上昇/対象:槍砲\n①防御が60%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍砲　確率 1% / 防御 60%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "槍隊突撃",
+   "rank": "F",
+   "afterSkill": "槍隊奇襲",
+   "afterRank": "E",
+   "target": "槍",
+   "rate": "15%",
+   "effectShort": "攻撃 20%上昇",
+   "afterTarget": "槍",
+   "afterRate": "30%",
+   "afterEffectShort": "攻撃 12%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "砲陣の極み",
+   "rank": "B",
+   "afterSkill": "八咫烏",
+   "afterRank": "B",
+   "target": "砲",
+   "rate": "30%",
+   "effectShort": "防御 30%上昇",
+   "afterTarget": "砲器",
+   "afterRate": "35%",
+   "afterEffectShort": "防御 30%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "組撃ち",
+   "rank": "B",
+   "afterSkill": "八咫烏",
+   "afterRank": "B",
+   "target": "弓砲",
+   "rate": "20%",
+   "effectShort": "防御 35%上昇",
+   "afterTarget": "砲器",
+   "afterRate": "35%",
+   "afterEffectShort": "防御 30%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "大金星",
+   "rank": "D",
+   "afterSkill": "大金星",
+   "afterRank": "D",
+   "target": "槍砲",
+   "rate": "1%",
+   "effectShort": "防御 60%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "防陣 吽形",
+   "rank": "B",
+   "afterSkill": "弓妖陣",
+   "afterRank": "B",
+   "target": "弓砲",
+   "rate": "30%",
+   "effectShort": "防御 36%上昇 / (No.2140龍造寺隆信と特殊合成可能)",
+   "afterTarget": "槍弓砲",
+   "afterRate": "25%",
+   "afterEffectShort": "防御 39%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3228 と skills/大金星)およびixawiki(BushoCard/3228成松信勝)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

@@ -1,0 +1,106 @@
+{
+ "name": "上泉泰綱",
+ "no": "3328",
+ "ch": null,
+ "cost": 3.0,
+ "troop": "槍器攻",
+ "sub": "",
+ "effect": "攻撃 19%上昇 / 速度 40%上昇",
+ "furigana": "かみいずみやすつな",
+ "illustrator": "添田一平",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 870,
+ "atkGrowth": 23.0,
+ "defBase": 830,
+ "defGrowth": 20.0,
+ "tacticsBase": 420.0,
+ "tacticsGrowth": 1.5,
+ "lv0Troops": 2800,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "B",
+  "uma": "C",
+  "ki": "B"
+ },
+ "initialSkill": "稟賦ノ剣",
+ "skillDetail": "D/LV10 確率 100% 攻撃 19%上昇 / 速度 40%上昇/対象:槍器\n①攻撃が19%上昇 / 速度 40%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍器　確率 100% / 攻撃 19%上昇 / 速度 40%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "槍隊襲撃",
+   "rank": "F",
+   "afterSkill": "槍隊堅守",
+   "afterRank": "F",
+   "target": "槍",
+   "rate": "20%",
+   "effectShort": "攻撃 10%上昇",
+   "afterTarget": "槍",
+   "afterRate": "20%",
+   "afterEffectShort": "槍防：10%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "閃撃の闘将",
+   "rank": "D",
+   "afterSkill": "閃撃の闘将",
+   "afterRank": "D",
+   "target": "槍馬器",
+   "rate": "100%",
+   "effectShort": "攻撃 5%上昇 / 速度 30%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "稟賦ノ剣",
+   "rank": "D",
+   "afterSkill": "軸道理算",
+   "afterRank": "D",
+   "target": "槍器",
+   "rate": "100%",
+   "effectShort": "攻撃 19%上昇 / 速度 40%上昇",
+   "afterTarget": "槍砲器",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 10%上昇 / 速度 23%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "軸道理算",
+   "rank": "D",
+   "afterSkill": "鏡花水月",
+   "afterRank": "D",
+   "target": "槍砲器",
+   "rate": "100%",
+   "effectShort": "攻撃 10%上昇 / 速度 23%上昇",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 4%上昇 / 速度 38%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "赤童百鬼",
+   "rank": "B",
+   "afterSkill": "鬼神刺",
+   "afterRank": "B",
+   "target": "槍馬器",
+   "rate": "100%",
+   "effectShort": "攻撃 22%上昇 / 破壊 19%上昇 / 速度 33%上昇",
+   "afterTarget": "全",
+   "afterRate": "20%",
+   "afterEffectShort": "攻撃 (コスト×10) %上昇 / 武将コストによって効果が変化"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3328 と skills/稟賦ノ剣)およびixawiki(BushoCard/3328上泉泰綱)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

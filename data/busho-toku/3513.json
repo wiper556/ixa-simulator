@@ -1,0 +1,103 @@
+{
+ "name": "三条の方",
+ "no": "3513",
+ "ch": null,
+ "cost": 1.5,
+ "troop": "弓砲器防",
+ "sub": "",
+ "effect": "防御 64%上昇 / (敵軍6部隊以下で効果1.5倍)",
+ "furigana": "さんじょうのかた",
+ "illustrator": "みつなり都",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 800,
+ "atkGrowth": 23.0,
+ "defBase": 880,
+ "defGrowth": 30.0,
+ "tacticsBase": 460.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 2000,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "A",
+  "uma": "C",
+  "ki": "B"
+ },
+ "initialSkill": "七清家ノ美姫",
+ "skillDetail": "C/LV10 確率 44% 防御 64%上昇 / (敵軍6部隊以下で効果1.5倍)/対象:弓砲器\n①防御 64%上昇 / (敵軍6部隊以下で効果1.5倍)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓砲器　確率 44% / 防御 64%上昇 / (敵軍6部隊以下で効果1.5倍)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "七清家ノ美姫",
+   "rank": "C",
+   "afterSkill": "覇・月扇乱舞",
+   "afterRank": "B",
+   "target": "弓砲器",
+   "rate": "44%",
+   "effectShort": "防御 64%上昇 / (敵軍6部隊以下で効果1.5倍)",
+   "afterTarget": "弓砲器",
+   "afterRate": "38%",
+   "afterEffectShort": "防御 75%上昇 確率：+38% / 速度 35%上昇 確率：+100% / (加勢出陣時は速度効果2倍)"
+  },
+  {
+   "slot": "B",
+   "skill": "戦姫 六道",
+   "rank": "D",
+   "afterSkill": "砲陣 菖蒲",
+   "afterRank": "A",
+   "target": "弓砲",
+   "rate": "12%",
+   "effectShort": "防御 45%上昇",
+   "afterTarget": "砲器",
+   "afterRate": "40%",
+   "afterEffectShort": "防御 35%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "悲恋の懐剣",
+   "rank": "B",
+   "afterSkill": "悲恋の懐剣",
+   "afterRank": "B",
+   "target": "弓馬砲",
+   "rate": "100%",
+   "effectShort": "防御 36%上昇 / (自領以外の加勢限定)"
+  },
+  {
+   "slot": "S1",
+   "skill": "覇・月扇乱舞",
+   "rank": "B",
+   "afterSkill": "戦陣 龍馬",
+   "afterRank": "A",
+   "target": "弓砲器",
+   "rate": "38%",
+   "effectShort": "防御 75%上昇 確率：+38% / 速度 35%上昇 確率：+100% / (加勢出陣時は速度効果2倍)",
+   "afterTarget": "全",
+   "afterRate": "50%",
+   "afterEffectShort": "防御 1%上昇(部隊ランクボーナス×10%を加算)"
+  },
+  {
+   "slot": "S2",
+   "skill": "新館御料人",
+   "rank": "B",
+   "afterSkill": "新館御料人",
+   "afterRank": "B",
+   "target": "弓砲器",
+   "rate": "70%",
+   "effectShort": "攻撃 57.6%上昇 / 防御 57.6%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3513 と skills/七清家ノ美姫)およびixawiki(BushoCard/3513三条の方)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

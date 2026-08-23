@@ -1,0 +1,104 @@
+{
+ "name": "森本儀太夫",
+ "no": "3439",
+ "ch": null,
+ "cost": 2.0,
+ "troop": "砲器防",
+ "sub": "",
+ "effect": "防御 48%上昇 / 本丸防御陣形の第参列目以降に配置時、防御効果が1.5倍",
+ "furigana": "もりもとぎだゆう",
+ "illustrator": "添田一平",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 830,
+ "atkGrowth": 24.0,
+ "defBase": 860,
+ "defGrowth": 26.0,
+ "tacticsBase": 460.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2310,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "B",
+  "uma": "B",
+  "ki": "B"
+ },
+ "initialSkill": "轒轀亀甲車",
+ "skillDetail": "D/LV10 確率 45% 防御 48%上昇 / 本丸防御陣形の第参列目以降に配置時防御効果が1.5倍/対象:砲器\n①防御 48%上昇 / 本丸防御陣形の第参列目以降に配置時防御効果が1.5倍",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "砲器　確率 45% / 防御 48%上昇 / 本丸防御陣形の第参列目以降に配置時、防御効果が1.5倍"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "轒轀亀甲車",
+   "rank": "D",
+   "afterSkill": "不退ノ防戦",
+   "afterRank": "B",
+   "target": "砲器",
+   "rate": "45%",
+   "effectShort": "防御 48%上昇 / 本丸防御陣形の第参列目以降に配置時、防御効果が1.5倍",
+   "afterTarget": "馬砲器",
+   "afterRate": "38%",
+   "afterEffectShort": "防御 52%上昇 確率：+38% / 速度 40%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "兵器布陣",
+   "rank": "E",
+   "afterSkill": "城砕き",
+   "afterRank": "E",
+   "target": "器",
+   "rate": "15%",
+   "effectShort": "防御 20%上昇",
+   "afterTarget": "器",
+   "afterRate": "15%",
+   "afterEffectShort": "破壊 20%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "伝来ノ島筒",
+   "rank": "D",
+   "afterSkill": "叛将烈破",
+   "afterRank": "B",
+   "target": "砲器",
+   "rate": "5%",
+   "effectShort": "防御 64.8%上昇 / (合流攻撃防御時は必ずスキル発動)",
+   "afterTarget": "槍砲",
+   "afterRate": "32%",
+   "afterEffectShort": "攻撃 36%上昇 / 防御 36%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "不退ノ防戦",
+   "rank": "B",
+   "afterSkill": "不退ノ防戦",
+   "afterRank": "B",
+   "target": "馬砲器",
+   "rate": "38%",
+   "effectShort": "防御 52%上昇 確率：+38% / 速度 40%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "不死鳥",
+   "rank": "B",
+   "afterSkill": "不死鳥",
+   "afterRank": "B",
+   "target": "槍砲器",
+   "rate": "37%",
+   "effectShort": "防御 34%上昇 / 自部隊の武将ダメージ軽減6% / (重複発動上限数4)"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3439 と skills/轒轀亀甲車)およびixawiki(BushoCard/3439森本儀太夫)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。",
+  "2026-08-23: skillDetail に読点が混入していた(F-01違反)。ixanary の原文が「配置時、防御効果が」のように読点を使うのをそのまま取り込んでいた。読点を外した。"
+ ]
+}

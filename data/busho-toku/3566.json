@@ -1,0 +1,109 @@
+{
+ "name": "高坂甚内",
+ "no": "3566",
+ "ch": null,
+ "cost": 1.5,
+ "troop": "槍砲器",
+ "sub": "",
+ "effect": "速度 150%上昇 / 破壊 60%上昇",
+ "furigana": "こうさかじんない",
+ "illustrator": "tatsuya",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 840,
+ "atkGrowth": 27.0,
+ "defBase": 840,
+ "defGrowth": 27.0,
+ "tacticsBase": 460.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2010,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "B",
+  "uma": "C",
+  "ki": "B"
+ },
+ "initialSkill": "風魔狩",
+ "skillDetail": "C/LV10 確率 100% 速度 150%上昇 / 破壊 60%上昇/対象:槍砲器\n①速度が150%上昇 / 破壊 60%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍砲器　確率 100% / 速度 150%上昇 / 破壊 60%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "風魔狩",
+   "rank": "C",
+   "afterSkill": "都鄙合体",
+   "afterRank": "B",
+   "target": "槍砲器",
+   "rate": "100%",
+   "effectShort": "速度 150%上昇 / 破壊 60%上昇",
+   "afterTarget": "槍馬騎",
+   "afterRate": "49%",
+   "afterEffectShort": "攻撃 82%上昇 確率：+49% / 防御 82%上昇 確率：+49% / 速度 35%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "風魔狩",
+   "rank": "C",
+   "afterSkill": "都鄙合体",
+   "afterRank": "B",
+   "target": "槍砲器",
+   "rate": "100%",
+   "effectShort": "速度 150%上昇 / 破壊 60%上昇",
+   "afterTarget": "槍馬騎",
+   "afterRate": "49%",
+   "afterEffectShort": "攻撃 82%上昇 確率：+49% / 防御 82%上昇 確率：+49% / 速度 35%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "風魔狩",
+   "rank": "C",
+   "afterSkill": "都鄙合体",
+   "afterRank": "B",
+   "target": "槍砲器",
+   "rate": "100%",
+   "effectShort": "速度 150%上昇 / 破壊 60%上昇",
+   "afterTarget": "槍馬騎",
+   "afterRate": "49%",
+   "afterEffectShort": "攻撃 82%上昇 確率：+49% / 防御 82%上昇 確率：+49% / 速度 35%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "都鄙合体",
+   "rank": "B",
+   "afterSkill": "告天子",
+   "afterRank": "B",
+   "target": "槍馬騎",
+   "rate": "49%",
+   "effectShort": "攻撃 82%上昇 確率：+49% / 防御 82%上昇 確率：+49% / 速度 35%上昇",
+   "afterTarget": "槍馬騎",
+   "afterRate": "27%",
+   "afterEffectShort": "攻撃防御 (1+武将ランク×武将コスト×2.3) %上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "鉄騎花麗",
+   "rank": "C",
+   "afterSkill": "都鄙合体",
+   "afterRank": "B",
+   "target": "槍弓馬騎",
+   "rate": "36%",
+   "effectShort": "攻撃 88%上昇 確率：+36% / 速度 45%上昇",
+   "afterTarget": "槍馬騎",
+   "afterRate": "49%",
+   "afterEffectShort": "攻撃 82%上昇 確率：+49% / 防御 82%上昇 確率：+49% / 速度 35%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3566 と skills/風魔狩)およびixawiki(BushoCard/3566高坂甚内)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

@@ -1,0 +1,106 @@
+{
+ "name": "海北綱親",
+ "no": "3210",
+ "ch": null,
+ "cost": 1.5,
+ "troop": "槍馬攻",
+ "sub": "",
+ "effect": "攻撃 50%上昇",
+ "furigana": "かいほうつなちか",
+ "illustrator": "冨士原良",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 680,
+ "atkGrowth": 17.0,
+ "defBase": 650,
+ "defGrowth": 15.0,
+ "tacticsBase": 430.0,
+ "tacticsGrowth": 1.5,
+ "lv0Troops": 1520,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "C",
+  "uma": "B",
+  "ki": "B"
+ },
+ "initialSkill": "蒼龍将",
+ "skillDetail": "D/LV10 確率 10% 攻撃 50%上昇/対象:槍馬\n①攻撃が50%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍馬　確率 10% / 攻撃 50%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "槍隊突撃",
+   "rank": "F",
+   "afterSkill": "槍隊奇襲",
+   "afterRank": "E",
+   "target": "槍",
+   "rate": "15%",
+   "effectShort": "攻撃 20%上昇",
+   "afterTarget": "槍",
+   "afterRate": "30%",
+   "afterEffectShort": "攻撃 12%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "竜眼月影",
+   "rank": "B",
+   "afterSkill": "槍撃 修羅",
+   "afterRank": "C",
+   "target": "槍馬砲",
+   "rate": "25%",
+   "effectShort": "攻撃 25%上昇 / 破壊 10%上昇",
+   "afterTarget": "槍",
+   "afterRate": "25%",
+   "afterEffectShort": "攻撃 25%上昇 / 破壊 5%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "三鱗竜騎兵",
+   "rank": "C",
+   "afterSkill": "義兵進軍",
+   "afterRank": "C",
+   "target": "馬砲",
+   "rate": "30%",
+   "effectShort": "攻撃 20%上昇",
+   "afterTarget": "槍弓馬砲",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 7%上昇 / 速度 10%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "蒼龍将",
+   "rank": "D",
+   "afterSkill": "蒼龍将",
+   "afterRank": "D",
+   "target": "槍馬",
+   "rate": "10%",
+   "effectShort": "攻撃 50%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "龍祖昇躍",
+   "rank": "A",
+   "afterSkill": "剛勇無双",
+   "afterRank": "B",
+   "target": "槍弓馬",
+   "rate": "30%",
+   "effectShort": "攻撃 35%上昇",
+   "afterTarget": "槍馬砲",
+   "afterRate": "30%",
+   "afterEffectShort": "攻撃 25%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3210 と skills/蒼龍将)およびixawiki(BushoCard/3210海北綱親)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

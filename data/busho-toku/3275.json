@@ -1,0 +1,100 @@
+{
+ "name": "片倉喜多",
+ "no": "3275",
+ "ch": null,
+ "cost": 2.0,
+ "troop": "弓馬防",
+ "sub": "",
+ "effect": "防御 24%上昇 / (攻撃部隊に兵器兵科がいれば効果2倍)",
+ "furigana": "かたくらきた",
+ "illustrator": "BISAI",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 700,
+ "atkGrowth": 15.0,
+ "defBase": 730,
+ "defGrowth": 19.0,
+ "tacticsBase": 460.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2150,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "C"
+ },
+ "initialSkill": "黒釣鐘",
+ "skillDetail": "D/LV10 確率 30% 防御 24%上昇 / (攻撃部隊に兵器兵科がいれば効果2倍)/対象:弓馬\n①防御 24%上昇 / (攻撃部隊に兵器兵科がいれば効果2倍)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓馬　確率 30% / 防御 24%上昇 / (攻撃部隊に兵器兵科がいれば効果2倍)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "騎馬隊円陣",
+   "rank": "D",
+   "afterSkill": "真田丸",
+   "afterRank": "D",
+   "target": "馬",
+   "rate": "40%",
+   "effectShort": "防御 20%上昇",
+   "afterTarget": "槍馬砲",
+   "afterRate": "15%",
+   "afterEffectShort": "防御 +30%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "血路の殿",
+   "rank": "D",
+   "afterSkill": "血路の殿",
+   "afterRank": "D",
+   "target": "槍弓",
+   "rate": "60%",
+   "effectShort": "防御 25%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "弓馬構え",
+   "rank": "D",
+   "afterSkill": "足軽軍法",
+   "afterRank": "D",
+   "target": "弓馬",
+   "rate": "30%",
+   "effectShort": "防御 25%上昇",
+   "afterTarget": "槍器",
+   "afterRate": "15%",
+   "afterEffectShort": "攻撃 (コストx9) %上昇 / (武将のコストで効果が変化します)"
+  },
+  {
+   "slot": "S1",
+   "skill": "黒釣鐘",
+   "rank": "D",
+   "afterSkill": "黒釣鐘",
+   "afterRank": "D",
+   "target": "弓馬",
+   "rate": "30%",
+   "effectShort": "防御 24%上昇 / (攻撃部隊に兵器兵科がいれば効果2倍)"
+  },
+  {
+   "slot": "S2",
+   "skill": "鳳凰の采配",
+   "rank": "B",
+   "afterSkill": "鳳凰の采配",
+   "afterRank": "B",
+   "target": "槍弓馬",
+   "rate": "36%",
+   "effectShort": "防御 28%上昇 / (攻撃部隊に兵器兵科がいれば効果2倍)"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3275 と skills/黒釣鐘)およびixawiki(BushoCard/3275片倉喜多)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

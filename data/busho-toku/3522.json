@@ -1,0 +1,109 @@
+{
+ "name": "徳川頼宣",
+ "no": "3522",
+ "ch": null,
+ "cost": 3.0,
+ "troop": "槍弓馬攻",
+ "sub": "",
+ "effect": "攻撃 60%上昇 防御 60%上昇 / 卓越：追加確率40%で攻防効果が2倍",
+ "furigana": "とくがわよりのぶ",
+ "illustrator": "isuZu",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 880,
+ "atkGrowth": 28.0,
+ "defBase": 880,
+ "defGrowth": 28.0,
+ "tacticsBase": 470.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 3010,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "A",
+  "uma": "B",
+  "ki": "C"
+ },
+ "initialSkill": "南竜咆哮",
+ "skillDetail": "C/LV10 確率 100% 攻撃 60%上昇 防御 60%上昇 / 卓越：追加確率40%で攻防効果が2倍/対象:槍弓馬\n①攻撃 60%上昇 防御 60%上昇 / 卓越：追加確率40%で攻防効果が2倍",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍弓馬　確率 100% / 攻撃 60%上昇 防御 60%上昇 / 卓越：追加確率40%で攻防効果が2倍"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "南竜咆哮",
+   "rank": "C",
+   "afterSkill": "虎切刀",
+   "afterRank": "C",
+   "target": "槍弓馬",
+   "rate": "100%",
+   "effectShort": "攻撃 60%上昇 防御 60%上昇 / 卓越：追加確率40%で攻防効果が2倍",
+   "afterTarget": "全",
+   "afterRate": "50%",
+   "afterEffectShort": "攻撃 66%上昇 / 防御 66%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "南竜咆哮",
+   "rank": "C",
+   "afterSkill": "虎切刀",
+   "afterRank": "C",
+   "target": "槍弓馬",
+   "rate": "100%",
+   "effectShort": "攻撃 60%上昇 防御 60%上昇 / 卓越：追加確率40%で攻防効果が2倍",
+   "afterTarget": "全",
+   "afterRate": "50%",
+   "afterEffectShort": "攻撃 66%上昇 / 防御 66%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "妙眼剛力",
+   "rank": "C",
+   "afterSkill": "極楽護法",
+   "afterRank": "B",
+   "target": "槍弓馬",
+   "rate": "57%",
+   "effectShort": "攻撃 88%上昇 防御 88%上昇",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 60%上昇 防御 60%上昇 / 卓越：追加確率50%で攻防効果が1.5倍"
+  },
+  {
+   "slot": "S1",
+   "skill": "虎切刀",
+   "rank": "C",
+   "afterSkill": "鬼滅刺",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "50%",
+   "effectShort": "攻撃 66%上昇 / 防御 66%上昇",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 70%上昇 防御 70%上昇(卓越確率+25%加算・模倣不可)"
+  },
+  {
+   "slot": "S2",
+   "skill": "覇・一期一振",
+   "rank": "A",
+   "afterSkill": "戦陣 破軍",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "攻撃 85%上昇 防御 85%上昇",
+   "afterTarget": "全",
+   "afterRate": "44%",
+   "afterEffectShort": "攻撃 66%上昇+防御 66%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3522 と skills/南竜咆哮)およびixawiki(BushoCard/3522徳川頼宣)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

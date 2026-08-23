@@ -1,0 +1,103 @@
+{
+ "name": "土橋平次",
+ "no": "3388",
+ "ch": null,
+ "cost": 3.0,
+ "troop": "弓焙攻",
+ "sub": "",
+ "effect": "攻撃 (コストx13) %上昇 / (武将のコストで効果が変化します)",
+ "furigana": "つちばしへいじ",
+ "illustrator": "ヤマザキミコ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 860,
+ "atkGrowth": 27.0,
+ "defBase": 770,
+ "defGrowth": 19.0,
+ "tacticsBase": 460.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2870,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "A",
+  "uma": "C",
+  "ki": "B"
+ },
+ "initialSkill": "二絡釣撃ち",
+ "skillDetail": "D/LV10 確率 42% 攻撃 (コストx13) %上昇 / (武将のコストで効果が変化します)/対象:弓焙\n①攻撃 (コストx13) %上昇 / (武将のコストで効果が変化します)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓焙　確率 42% / 攻撃 (コストx13) %上昇 / (武将のコストで効果が変化します)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "弓隊急襲",
+   "rank": "F",
+   "afterSkill": "弓隊守備",
+   "afterRank": "F",
+   "target": "弓",
+   "rate": "16%",
+   "effectShort": "攻撃 (コストx5) %上昇 / (武将のコストで効果が変化します)",
+   "afterTarget": "弓",
+   "afterRate": "16%",
+   "afterEffectShort": "防御 (コストx6) %上昇 / (武将のコストで効果が変化します)"
+  },
+  {
+   "slot": "B",
+   "skill": "筋違い角",
+   "rank": "D",
+   "afterSkill": "絢鳥",
+   "afterRank": "B",
+   "target": "槍弓",
+   "rate": "30%",
+   "effectShort": "攻撃 36%上昇 / (2部隊以下の攻撃で効果1.5倍)",
+   "afterTarget": "槍弓",
+   "afterRate": "35%",
+   "afterEffectShort": "攻撃 42%上昇 / 破壊 15%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "二絡釣撃ち",
+   "rank": "D",
+   "afterSkill": "賢王訓戒",
+   "afterRank": "B",
+   "target": "弓焙",
+   "rate": "42%",
+   "effectShort": "攻撃 (コストx13) %上昇 / (武将のコストで効果が変化します)",
+   "afterTarget": "弓砲器",
+   "afterRate": "34%",
+   "afterEffectShort": "攻撃 ((1+ランク)xコストx0.5) %上昇 / 武将ランクとコストで効果が変化"
+  },
+  {
+   "slot": "S1",
+   "skill": "賢王訓戒",
+   "rank": "B",
+   "afterSkill": "賢王訓戒",
+   "afterRank": "B",
+   "target": "弓砲器",
+   "rate": "34%",
+   "effectShort": "攻撃 ((1+ランク)xコストx0.5) %上昇 / 武将ランクとコストで効果が変化"
+  },
+  {
+   "slot": "S2",
+   "skill": "義龍双乱撃",
+   "rank": "B",
+   "afterSkill": "義龍双乱撃",
+   "afterRank": "B",
+   "target": "弓馬砲",
+   "rate": "100%",
+   "effectShort": "攻撃 15%上昇 / 速度 27%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3388 と skills/二絡釣撃ち)およびixawiki(BushoCard/3388土橋平次)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

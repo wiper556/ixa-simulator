@@ -1,0 +1,103 @@
+{
+ "name": "新野親矩",
+ "no": "3307",
+ "ch": null,
+ "cost": 2.0,
+ "troop": "槍馬防",
+ "sub": "",
+ "effect": "防御 ((1+ランク)xコストx1.6) %上昇 / 武将ランクとコストで効果が変化",
+ "furigana": "にいのちかのり",
+ "illustrator": "葉山えいし",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 820,
+ "atkGrowth": 20.0,
+ "defBase": 850,
+ "defGrowth": 21.0,
+ "tacticsBase": 430.0,
+ "tacticsGrowth": 1.5,
+ "lv0Troops": 2240,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "B",
+  "uma": "A",
+  "ki": "C"
+ },
+ "initialSkill": "千年忠恩",
+ "skillDetail": "D/LV10 確率 38% 防御 ((1+ランク)xコストx1.6) %上昇 / 武将ランクとコストで効果が変化/対象:槍馬\n①防御 ((1+ランク)xコストx1.6) %上昇 / 武将ランクとコストで効果が変化",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍馬　確率 38% / 防御 ((1+ランク)xコストx1.6) %上昇 / 武将ランクとコストで効果が変化"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "騎馬隊奇襲",
+   "rank": "E",
+   "afterSkill": "騎馬隊堅陣",
+   "afterRank": "F",
+   "target": "馬",
+   "rate": "30%",
+   "effectShort": "馬攻：12%上昇",
+   "afterTarget": "馬",
+   "afterRate": "30%",
+   "afterEffectShort": "馬防：12%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "騎馬隊守護",
+   "rank": "E",
+   "afterSkill": "騎馬隊挟撃",
+   "afterRank": "E",
+   "target": "馬",
+   "rate": "25%",
+   "effectShort": "防御 (コストx6.5) %上昇 / (武将のコストで効果が変化します)",
+   "afterTarget": "馬",
+   "afterRate": "25%",
+   "afterEffectShort": "攻撃 (コストx6.5) %上昇 / (武将のコストで効果が変化します)"
+  },
+  {
+   "slot": "C",
+   "skill": "楔外交",
+   "rank": "D",
+   "afterSkill": "楔外交",
+   "afterRank": "D",
+   "target": "槍馬",
+   "rate": "33%",
+   "effectShort": "防御 (コストx12) %上昇 / (武将のコストで効果が変化します)"
+  },
+  {
+   "slot": "S1",
+   "skill": "千年忠恩",
+   "rank": "D",
+   "afterSkill": "千年忠恩",
+   "afterRank": "D",
+   "target": "槍馬",
+   "rate": "38%",
+   "effectShort": "防御 ((1+ランク)xコストx1.6) %上昇 / 武将ランクとコストで効果が変化"
+  },
+  {
+   "slot": "S2",
+   "skill": "八龍堅陣",
+   "rank": "B",
+   "afterSkill": "疾風怒濤",
+   "afterRank": "B",
+   "target": "全",
+   "rate": "35%",
+   "effectShort": "防御 25%上昇",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 5%上昇 / 速度 32%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3307 と skills/千年忠恩)およびixawiki(BushoCard/3307新野親矩)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

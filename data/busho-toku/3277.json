@@ -1,0 +1,100 @@
+{
+ "name": "保科正俊",
+ "no": "3277",
+ "ch": null,
+ "cost": 3.0,
+ "troop": "槍攻",
+ "sub": "",
+ "effect": "攻撃 54%上昇 / 武将ランクで効果が変化",
+ "furigana": "ほしなまさとし",
+ "illustrator": "東柚己",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 900,
+ "atkGrowth": 19.0,
+ "defBase": 860,
+ "defGrowth": 18.0,
+ "tacticsBase": 445.0,
+ "tacticsGrowth": 1.5,
+ "lv0Troops": 2760,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "C",
+  "uma": "A",
+  "ki": "B"
+ },
+ "initialSkill": "槍弾正",
+ "skillDetail": "D/LV10 確率 17% 攻撃 54%上昇 / 武将ランクで効果が変化/対象:槍\n①攻撃 54%上昇 / 武将ランクで効果が変化",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍　確率 17% / 攻撃 54%上昇 / 武将ランクで効果が変化"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "槍隊突撃",
+   "rank": "F",
+   "afterSkill": "槍隊奇襲",
+   "afterRank": "E",
+   "target": "槍",
+   "rate": "15%",
+   "effectShort": "攻撃 20%上昇",
+   "afterTarget": "槍",
+   "afterRate": "30%",
+   "afterEffectShort": "攻撃 12%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "嬬黒突貫",
+   "rank": "D",
+   "afterSkill": "嬬黒突貫",
+   "afterRank": "D",
+   "target": "槍馬",
+   "rate": "6%",
+   "effectShort": "攻撃 60%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "槍大膳",
+   "rank": "D",
+   "afterSkill": "不屈の名士",
+   "afterRank": "B",
+   "target": "槍",
+   "rate": "15%",
+   "effectShort": "攻撃 60%上昇",
+   "afterTarget": "槍弓砲",
+   "afterRate": "30.5%",
+   "afterEffectShort": "攻撃 33%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "槍弾正",
+   "rank": "D",
+   "afterSkill": "槍弾正",
+   "afterRank": "D",
+   "target": "槍",
+   "rate": "17%",
+   "effectShort": "攻撃 54%上昇 / 武将ランクで効果が変化"
+  },
+  {
+   "slot": "S2",
+   "skill": "轟槍振鉾",
+   "rank": "B",
+   "afterSkill": "轟槍振鉾",
+   "afterRank": "B",
+   "target": "槍",
+   "rate": "5%",
+   "effectShort": "攻撃 65%上昇 / 相手軍の武将数が20以上だと必ずスキル発動"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3277 と skills/槍弾正)およびixawiki(BushoCard/3277保科正俊)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

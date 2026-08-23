@@ -1,0 +1,110 @@
+{
+ "name": "乃美宗勝",
+ "no": "3547",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "槍砲器攻",
+ "sub": "",
+ "effect": "攻撃 61%上昇 / (この武将が4以上の飛翔をもつとき、この武将は飛翔を全て失う代わりに、このスキルの攻撃効果が2倍)",
+ "furigana": "のみむねかつ",
+ "illustrator": "ホマ蔵",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 890,
+ "atkGrowth": 29.0,
+ "defBase": 860,
+ "defGrowth": 26.0,
+ "tacticsBase": 480.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2650,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "B",
+  "uma": "C",
+  "ki": "A"
+ },
+ "initialSkill": "不老ノ闘気",
+ "skillDetail": "C/LV10 確率 50% 攻撃 61%上昇 / (この武将が4以上の飛翔をもつときこの武将は飛翔を全て失う代わりにこのスキルの攻撃効果が2倍)/対象:槍砲器\n①攻撃 61%上昇 / (この武将が4以上の飛翔をもつときこの武将は飛翔を全て失う代わりにこのスキルの攻撃効果が2倍)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍砲器　確率 50% / 攻撃 61%上昇 / (この武将が4以上の飛翔をもつとき、この武将は飛翔を全て失う代わりに、このスキルの攻撃効果が2倍)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "不老ノ闘気",
+   "rank": "C",
+   "afterSkill": "海の司令官",
+   "afterRank": "B",
+   "target": "槍砲器",
+   "rate": "50%",
+   "effectShort": "攻撃 61%上昇 / (この武将が4以上の飛翔をもつとき、この武将は飛翔を全て失う代わりに、このスキルの攻撃効果が2倍)",
+   "afterTarget": "槍砲器",
+   "afterRate": "29%",
+   "afterEffectShort": "攻撃 82%上昇 / 防御 82%上昇 / 破壊 45%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "不老ノ闘気",
+   "rank": "C",
+   "afterSkill": "海の司令官",
+   "afterRank": "B",
+   "target": "槍砲器",
+   "rate": "50%",
+   "effectShort": "攻撃 61%上昇 / (この武将が4以上の飛翔をもつとき、この武将は飛翔を全て失う代わりに、このスキルの攻撃効果が2倍)",
+   "afterTarget": "槍砲器",
+   "afterRate": "29%",
+   "afterEffectShort": "攻撃 82%上昇 / 防御 82%上昇 / 破壊 45%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "先懸衆",
+   "rank": "C",
+   "afterSkill": "武士ノ鑑",
+   "afterRank": "C",
+   "target": "槍砲器",
+   "rate": "46%",
+   "effectShort": "攻撃 70%上昇 防御 70%上昇 / 部隊コスト15以下で効果1.5倍",
+   "afterTarget": "槍砲",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 28%上昇 防御 28%上昇 / 卓越：追加確率60%で攻防効果が3倍"
+  },
+  {
+   "slot": "S1",
+   "skill": "海の司令官",
+   "rank": "B",
+   "afterSkill": "武装商船",
+   "afterRank": "A",
+   "target": "槍砲器",
+   "rate": "29%",
+   "effectShort": "攻撃 82%上昇 / 防御 82%上昇 / 破壊 45%上昇",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "部隊内全武将が持つ全スキルに「器」対象を追加する(兵科対象スキル限定・模倣不可)"
+  },
+  {
+   "slot": "S2",
+   "skill": "月花十文字龍",
+   "rank": "A",
+   "afterSkill": "十字飛車",
+   "afterRank": "A",
+   "target": "槍弓器焙",
+   "rate": "47%",
+   "effectShort": "攻撃 94%上昇 防御 94%上昇 破壊 45%上昇 / 飛翔4(敵軍に飛翔を持つ武将が4人未満のとき通常武将ダメージを受けない)",
+   "afterTarget": "槍砲器",
+   "afterRate": "42%",
+   "afterEffectShort": "攻撃 77%上昇 / 防御 77%上昇 / 破壊 50%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3547 と skills/不老ノ闘気)およびixawiki(BushoCard/3547乃美宗勝)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。",
+  "2026-08-23: skillDetail に読点が混入していた(F-01違反)。ixanary の原文が「配置時、防御効果が」のように読点を使うのをそのまま取り込んでいた。読点を外した。"
+ ]
+}

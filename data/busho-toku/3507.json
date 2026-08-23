@@ -1,0 +1,110 @@
+{
+ "name": "九戸実親",
+ "no": "3507",
+ "ch": null,
+ "cost": 3.0,
+ "troop": "槍弓鉄攻",
+ "sub": "",
+ "effect": "攻撃 24%上昇 / 破壊 40%上昇 / (合流攻撃時、攻撃効果4倍)",
+ "furigana": "くのへさねちか",
+ "illustrator": "ヤマザキミコ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 880,
+ "atkGrowth": 29.0,
+ "defBase": 830,
+ "defGrowth": 24.0,
+ "tacticsBase": 460.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2980,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "B",
+  "uma": "C",
+  "ki": "A"
+ },
+ "initialSkill": "失意ノ千羽鶴",
+ "skillDetail": "C/LV10 確率 45% 攻撃 24%上昇 / 破壊 40%上昇 / (合流攻撃時攻撃効果4倍)/対象:槍弓鉄\n①攻撃 24%上昇 / 破壊 40%上昇 / (合流攻撃時攻撃効果4倍)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍弓鉄　確率 45% / 攻撃 24%上昇 / 破壊 40%上昇 / (合流攻撃時、攻撃効果4倍)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "失意ノ千羽鶴",
+   "rank": "C",
+   "afterSkill": "覇・天懸乱龍",
+   "afterRank": "B",
+   "target": "槍弓鉄",
+   "rate": "45%",
+   "effectShort": "攻撃 24%上昇 / 破壊 40%上昇 / (合流攻撃時、攻撃効果4倍)",
+   "afterTarget": "槍弓砲器",
+   "afterRate": "55%",
+   "afterEffectShort": "攻撃 60%上昇 / 卓越：追加確率30%で攻撃効果が1.5倍"
+  },
+  {
+   "slot": "B",
+   "skill": "失意ノ千羽鶴",
+   "rank": "C",
+   "afterSkill": "覇・天懸乱龍",
+   "afterRank": "B",
+   "target": "槍弓鉄",
+   "rate": "45%",
+   "effectShort": "攻撃 24%上昇 / 破壊 40%上昇 / (合流攻撃時、攻撃効果4倍)",
+   "afterTarget": "槍弓砲器",
+   "afterRate": "55%",
+   "afterEffectShort": "攻撃 60%上昇 / 卓越：追加確率30%で攻撃効果が1.5倍"
+  },
+  {
+   "slot": "C",
+   "skill": "九仞之功",
+   "rank": "D",
+   "afterSkill": "仁将無双",
+   "afterRank": "B",
+   "target": "槍弓鉄",
+   "rate": "32%",
+   "effectShort": "攻撃 15%上昇 / 武将ランクで効果が変化",
+   "afterTarget": "槍馬砲",
+   "afterRate": "17%",
+   "afterEffectShort": "攻撃防御 ((1+ランク)xコストx2.1) %上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "覇・天懸乱龍",
+   "rank": "B",
+   "afterSkill": "鬼滅刺",
+   "afterRank": "A",
+   "target": "槍弓砲器",
+   "rate": "55%",
+   "effectShort": "攻撃 60%上昇 / 卓越：追加確率30%で攻撃効果が1.5倍",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 70%上昇 防御 70%上昇(卓越確率+25%加算・模倣不可)"
+  },
+  {
+   "slot": "S2",
+   "skill": "カムイトクイ",
+   "rank": "D",
+   "afterSkill": "火将ノ熊手",
+   "afterRank": "B",
+   "target": "槍弓砲",
+   "rate": "24%",
+   "effectShort": "攻撃 (コストx15) %上昇 / (武将のコストで効果が変化します)",
+   "afterTarget": "槍砲器",
+   "afterRate": "38%",
+   "afterEffectShort": "攻撃 ((1+ランク)xコストx1.7) %上昇 / 武将ランクとコストで効果が変化"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3507 と skills/失意ノ千羽鶴)およびixawiki(BushoCard/3507九戸実親)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。",
+  "2026-08-23: skillDetail に読点が混入していた(F-01違反)。ixanary の原文が「配置時、防御効果が」のように読点を使うのをそのまま取り込んでいた。読点を外した。"
+ ]
+}

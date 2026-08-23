@@ -1,0 +1,111 @@
+{
+ "name": "べし見",
+ "no": "3605",
+ "ch": null,
+ "cost": 1.5,
+ "troop": "弓砲器攻",
+ "sub": "",
+ "effect": "攻撃 310%上昇 確率：+40% / 速度 70%上昇",
+ "furigana": "べしみ",
+ "illustrator": "&#169;NW/S,RKKD",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 890,
+ "atkGrowth": 30.0,
+ "defBase": 850,
+ "defGrowth": 30.0,
+ "tacticsBase": 470.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2040,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "A",
+  "uma": "C",
+  "ki": "B"
+ },
+ "initialSkill": "毒殺螺旋鋲",
+ "skillDetail": "C/LV10 確率 40% 攻撃 310%上昇 確率：+40% / 速度 70%上昇/対象:弓砲器\n①攻撃が310%上昇 確率：+40% / 速度 70%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓砲器　確率 40% / 攻撃 310%上昇 確率：+40% / 速度 70%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "毒殺螺旋鋲",
+   "rank": "C",
+   "afterSkill": "虎嗣敢闘",
+   "afterRank": "C",
+   "target": "弓砲器",
+   "rate": "40%",
+   "effectShort": "攻撃 310%上昇 確率：+40% / 速度 70%上昇",
+   "afterTarget": "槍馬砲",
+   "afterRate": "40%",
+   "afterEffectShort": "攻撃 240%上昇 確率：+40% / 速度 50%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "毒殺螺旋鋲",
+   "rank": "C",
+   "afterSkill": "虎嗣敢闘",
+   "afterRank": "C",
+   "target": "弓砲器",
+   "rate": "40%",
+   "effectShort": "攻撃 310%上昇 確率：+40% / 速度 70%上昇",
+   "afterTarget": "槍馬砲",
+   "afterRate": "40%",
+   "afterEffectShort": "攻撃 240%上昇 確率：+40% / 速度 50%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "毒殺螺旋鋲",
+   "rank": "C",
+   "afterSkill": "虎嗣敢闘",
+   "afterRank": "C",
+   "target": "弓砲器",
+   "rate": "40%",
+   "effectShort": "攻撃 310%上昇 確率：+40% / 速度 70%上昇",
+   "afterTarget": "槍馬砲",
+   "afterRate": "40%",
+   "afterEffectShort": "攻撃 240%上昇 確率：+40% / 速度 50%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "虎嗣敢闘",
+   "rank": "C",
+   "afterSkill": "不滅ノ鬼美濃",
+   "afterRank": "A",
+   "target": "槍馬砲",
+   "rate": "40%",
+   "effectShort": "攻撃 240%上昇 確率：+40% / 速度 50%上昇",
+   "afterTarget": "弓馬砲",
+   "afterRate": "70%",
+   "afterEffectShort": "攻撃 100%上昇 確率：+70% / 速度 70%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "戦陣 一閃",
+   "rank": "A",
+   "afterSkill": "神光征軍",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "50%/100%",
+   "effectShort": "攻撃 50%上昇(確率50%)+速度 50%上昇(確率100%)",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 90%上昇+速度 200%上昇(TRなし)"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3605 と skills/毒殺螺旋鋲)およびixawiki(BushoCard/3605べし見)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。",
+  "2026-08-23: 合成候補の effectShort/afterEffectShort の先頭に「効果 」や確率が付いていた(A-4-15 の接頭辞)。ixanary の表の列見出しを一緒に拾っていたもので、外した。",
+  "2026-08-23 訂正: 合成候補の確率が片方だけになっていた。忍祖千里眼と戦陣 一閃は**確率を2つ持つスキル**で(ixanary: 防御49%は確率+40%・速度30%は確率+100% / 攻撃50%は確率+50%・速度50%は確率+100%)、既存の登録は「40%/100%」「50%/100%」と両方を書いていた。一括登録のパーサは data/skill の baseRate を1つ引くだけなので片方に落ちていた。既存の書き方に揃えた。"
+ ]
+}

@@ -1,0 +1,109 @@
+{
+ "name": "桂岩院",
+ "no": "3557",
+ "ch": null,
+ "cost": 2.0,
+ "troop": "弓馬器防",
+ "sub": "",
+ "effect": "防御 125%上昇 / 自拠点防御時は防御効果2倍",
+ "furigana": "けいがんいん",
+ "illustrator": "たわわ実",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 860,
+ "atkGrowth": 26.0,
+ "defBase": 890,
+ "defGrowth": 31.0,
+ "tacticsBase": 480.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2390,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "C",
+  "uma": "B",
+  "ki": "A"
+ },
+ "initialSkill": "籠鳥ノ安息",
+ "skillDetail": "C/LV10 確率 45% 防御 125%上昇 / 自拠点防御時は防御効果2倍/対象:弓馬器\n①防御 125%上昇 / 自拠点防御時は防御効果2倍",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓馬器　確率 45% / 防御 125%上昇 / 自拠点防御時は防御効果2倍"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "籠鳥ノ安息",
+   "rank": "C",
+   "afterSkill": "忌籠ノ計",
+   "afterRank": "A",
+   "target": "弓馬器",
+   "rate": "45%",
+   "effectShort": "防御 125%上昇 / 自拠点防御時は防御効果2倍",
+   "afterTarget": "槍弓器鉄",
+   "afterRate": "38%",
+   "afterEffectShort": "防御 62%上昇 / 自拠点防御時は防御効果3倍"
+  },
+  {
+   "slot": "B",
+   "skill": "籠鳥ノ安息",
+   "rank": "C",
+   "afterSkill": "忌籠ノ計",
+   "afterRank": "A",
+   "target": "弓馬器",
+   "rate": "45%",
+   "effectShort": "防御 125%上昇 / 自拠点防御時は防御効果2倍",
+   "afterTarget": "槍弓器鉄",
+   "afterRate": "38%",
+   "afterEffectShort": "防御 62%上昇 / 自拠点防御時は防御効果3倍"
+  },
+  {
+   "slot": "C",
+   "skill": "籠鳥ノ安息",
+   "rank": "C",
+   "afterSkill": "忌籠ノ計",
+   "afterRank": "A",
+   "target": "弓馬器",
+   "rate": "45%",
+   "effectShort": "防御 125%上昇 / 自拠点防御時は防御効果2倍",
+   "afterTarget": "槍弓器鉄",
+   "afterRate": "38%",
+   "afterEffectShort": "防御 62%上昇 / 自拠点防御時は防御効果3倍"
+  },
+  {
+   "slot": "S1",
+   "skill": "忌籠ノ計",
+   "rank": "A",
+   "afterSkill": "戦陣 破軍",
+   "afterRank": "A",
+   "target": "槍弓器鉄",
+   "rate": "38%",
+   "effectShort": "防御 62%上昇 / 自拠点防御時は防御効果3倍",
+   "afterTarget": "全",
+   "afterRate": "44%",
+   "afterEffectShort": "攻撃 66%上昇+防御 66%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "百万石ノ忠盾",
+   "rank": "C",
+   "afterSkill": "百万石長壁",
+   "afterRank": "B",
+   "target": "槍馬騎",
+   "rate": "100%",
+   "effectShort": "防御 62%上昇 / 自拠点防御時は防御効果1.5倍",
+   "afterTarget": "槍馬砲",
+   "afterRate": "9%",
+   "afterEffectShort": "防御 84%上昇 / 自拠点防御時は100%発動"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3557 と skills/籠鳥ノ安息)およびixawiki(BushoCard/3557桂岩院)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

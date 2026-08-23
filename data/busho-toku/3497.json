@@ -1,0 +1,109 @@
+{
+ "name": "前田利常",
+ "no": "3497",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "馬器防",
+ "sub": "",
+ "effect": "防御 64%上昇 / 卓越：追加確率50%で防御効果が1.5倍",
+ "furigana": "まえだとしつね",
+ "illustrator": "匈歌ハトリ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 840,
+ "atkGrowth": 24.0,
+ "defBase": 880,
+ "defGrowth": 28.0,
+ "tacticsBase": 460.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2620,
+ "rankGrades": {
+  "yari": "C",
+  "yumi": "B",
+  "uma": "A",
+  "ki": "B"
+ },
+ "initialSkill": "深淵ノ名君",
+ "skillDetail": "C/LV10 確率 54% 防御 64%上昇 / 卓越：追加確率50%で防御効果が1.5倍/対象:馬器\n①防御 64%上昇 / 卓越：追加確率50%で防御効果が1.5倍",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "馬器　確率 54% / 防御 64%上昇 / 卓越：追加確率50%で防御効果が1.5倍"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "深淵ノ名君",
+   "rank": "C",
+   "afterSkill": "不識ノ殿軍",
+   "afterRank": "B",
+   "target": "馬器",
+   "rate": "54%",
+   "effectShort": "防御 64%上昇 / 卓越：追加確率50%で防御効果が1.5倍",
+   "afterTarget": "弓砲器",
+   "afterRate": "70%",
+   "afterEffectShort": "防御 64%上昇 / 卓越：追加確率30%で防御効果が1.5倍"
+  },
+  {
+   "slot": "B",
+   "skill": "深淵ノ名君",
+   "rank": "C",
+   "afterSkill": "不識ノ殿軍",
+   "afterRank": "B",
+   "target": "馬器",
+   "rate": "54%",
+   "effectShort": "防御 64%上昇 / 卓越：追加確率50%で防御効果が1.5倍",
+   "afterTarget": "弓砲器",
+   "afterRate": "70%",
+   "afterEffectShort": "防御 64%上昇 / 卓越：追加確率30%で防御効果が1.5倍"
+  },
+  {
+   "slot": "C",
+   "skill": "深淵ノ名君",
+   "rank": "C",
+   "afterSkill": "不識ノ殿軍",
+   "afterRank": "B",
+   "target": "馬器",
+   "rate": "54%",
+   "effectShort": "防御 64%上昇 / 卓越：追加確率50%で防御効果が1.5倍",
+   "afterTarget": "弓砲器",
+   "afterRate": "70%",
+   "afterEffectShort": "防御 64%上昇 / 卓越：追加確率30%で防御効果が1.5倍"
+  },
+  {
+   "slot": "S1",
+   "skill": "不識ノ殿軍",
+   "rank": "B",
+   "afterSkill": "無間牢",
+   "afterRank": "B",
+   "target": "弓砲器",
+   "rate": "70%",
+   "effectShort": "防御 64%上昇 / 卓越：追加確率30%で防御効果が1.5倍",
+   "afterTarget": "槍弓馬器",
+   "afterRate": "25%",
+   "afterEffectShort": "防御 77%上昇 確率：+25% / 速度 45%上昇 確率：+100% / (加勢出陣時は速度効果2倍)"
+  },
+  {
+   "slot": "S2",
+   "skill": "虎切刀",
+   "rank": "C",
+   "afterSkill": "鬼滅刺",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "50%",
+   "effectShort": "攻撃 66%上昇 / 防御 66%上昇",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 70%上昇 防御 70%上昇(卓越確率+25%加算・模倣不可)"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3497 と skills/深淵ノ名君)およびixawiki(BushoCard/3497前田利常)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

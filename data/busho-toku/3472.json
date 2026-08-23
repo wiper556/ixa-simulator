@@ -1,0 +1,106 @@
+{
+ "name": "風魔小太郎",
+ "no": "3472",
+ "ch": null,
+ "cost": 1.5,
+ "troop": "槍弓馬攻",
+ "sub": "",
+ "effect": "攻撃 42%上昇 確率：+40% / 速度 45%上昇",
+ "furigana": "ふうまこたろう",
+ "illustrator": "株式会社レバーン＋しいたけ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 860,
+ "atkGrowth": 27.0,
+ "defBase": 820,
+ "defGrowth": 24.0,
+ "tacticsBase": 460.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 1950,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "B",
+  "uma": "A",
+  "ki": "C"
+ },
+ "initialSkill": "疾風閃忍",
+ "skillDetail": "D/LV10 確率 40% 攻撃 42%上昇 確率：+40% / 速度 45%上昇/対象:槍弓馬\n①攻撃が42%上昇 確率：+40% / 速度 45%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍弓馬　確率 40% / 攻撃 42%上昇 確率：+40% / 速度 45%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "疾風閃忍",
+   "rank": "D",
+   "afterSkill": "紫電閃耀",
+   "afterRank": "B",
+   "target": "槍弓馬",
+   "rate": "40%",
+   "effectShort": "攻撃 42%上昇 確率：+40% / 速度 45%上昇",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 16.8%上昇 / 速度 30%上昇 / (単独出陣時は速度効果10倍)"
+  },
+  {
+   "slot": "B",
+   "skill": "弓隊備え",
+   "rank": "F",
+   "afterSkill": "弓隊堅守",
+   "afterRank": "F",
+   "target": "弓",
+   "rate": "10%",
+   "effectShort": "弓防：15%上昇",
+   "afterTarget": "弓",
+   "afterRate": "20%",
+   "afterEffectShort": "防御 10%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "逆落し",
+   "rank": "D",
+   "afterSkill": "雷鳴強襲",
+   "afterRank": "B",
+   "target": "槍弓馬",
+   "rate": "100%",
+   "effectShort": "攻撃 11%上昇 / 速度 22%上昇",
+   "afterTarget": "槍弓馬",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 10%上昇 / 速度 28%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "紫電閃耀",
+   "rank": "B",
+   "afterSkill": "神速",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "攻撃 16.8%上昇 / 速度 30%上昇 / (単独出陣時は速度効果10倍)",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "速度 55%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "戦姫 陽炎",
+   "rank": "D",
+   "afterSkill": "戦姫 陽炎",
+   "afterRank": "D",
+   "target": "槍馬",
+   "rate": "100%",
+   "effectShort": "攻撃 7%上昇 / 速度 40%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3472 と skills/疾風閃忍)およびixawiki(BushoCard/3472風魔小太郎)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

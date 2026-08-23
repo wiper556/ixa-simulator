@@ -1,0 +1,103 @@
+{
+ "name": "犬川荘助",
+ "no": "3189",
+ "ch": null,
+ "cost": 1.5,
+ "troop": "将攻",
+ "sub": "",
+ "effect": "攻撃 40%上昇",
+ "furigana": "いぬかわそうすけ",
+ "illustrator": "みつなり都",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 980,
+ "atkGrowth": 49.0,
+ "defBase": 730,
+ "defGrowth": 42.0,
+ "tacticsBase": 350.0,
+ "tacticsGrowth": 1.0,
+ "lv0Troops": 1050,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "F",
+  "uma": "C",
+  "ki": "F"
+ },
+ "initialSkill": "義の八犬士",
+ "skillDetail": "D/LV10 確率 30% 攻撃 40%上昇/対象:将\n①攻撃が40%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "将　確率 30% / 攻撃 40%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "大ふへん者",
+   "rank": "D",
+   "afterSkill": "義兵進軍",
+   "afterRank": "C",
+   "target": "将",
+   "rate": "5%",
+   "effectShort": "攻撃 40%上昇",
+   "afterTarget": "槍弓馬砲",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 7%上昇 / 速度 10%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "宝蔵院流",
+   "rank": "D",
+   "afterSkill": "鬼刺",
+   "afterRank": "C",
+   "target": "将",
+   "rate": "35%",
+   "effectShort": "防御 30%上昇",
+   "afterTarget": "槍馬砲",
+   "afterRate": "15%",
+   "afterEffectShort": "攻撃 (コストx9) %上昇 / (武将のコストで効果が変化します)"
+  },
+  {
+   "slot": "C",
+   "skill": "義の八犬士",
+   "rank": "D",
+   "afterSkill": "仁義八行",
+   "afterRank": "B",
+   "target": "将",
+   "rate": "30%",
+   "effectShort": "攻撃 40%上昇",
+   "afterTarget": "合流",
+   "afterRate": "100%",
+   "afterEffectShort": "防御 20%上昇 / (合流攻撃防御時のみ発動)"
+  },
+  {
+   "slot": "S1",
+   "skill": "仁義八行",
+   "rank": "B",
+   "afterSkill": "仁義八行",
+   "afterRank": "B",
+   "target": "合流",
+   "rate": "100%",
+   "effectShort": "防御 20%上昇 / (合流攻撃防御時のみ発動)"
+  },
+  {
+   "slot": "S2",
+   "skill": "仁義八行",
+   "rank": "B",
+   "afterSkill": "仁義八行",
+   "afterRank": "B",
+   "target": "合流",
+   "rate": "100%",
+   "effectShort": "防御 20%上昇 / (合流攻撃防御時のみ発動)"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3189 と skills/義の八犬士)およびixawiki(BushoCard/3189犬川荘助)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

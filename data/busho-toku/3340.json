@@ -1,0 +1,103 @@
+{
+ "name": "森蘭丸",
+ "no": "3340",
+ "ch": null,
+ "cost": 2.0,
+ "troop": "槍器防",
+ "sub": "",
+ "effect": "防御 16%上昇 / (部隊内の金蘭の契りスキル所持武将数x16%の効果)",
+ "furigana": "もりらんまる",
+ "illustrator": "神威なつき",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 820,
+ "atkGrowth": 20.0,
+ "defBase": 870,
+ "defGrowth": 23.0,
+ "tacticsBase": 460.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2280,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "C",
+  "uma": "C",
+  "ki": "B"
+ },
+ "initialSkill": "金蘭の契り",
+ "skillDetail": "D/LV10 確率 35% 防御 16%上昇 / (部隊内の金蘭の契りスキル所持武将数x16%の効果)/対象:槍器\n①防御 16%上昇 / (部隊内の金蘭の契りスキル所持武将数x16%の効果)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍器　確率 35% / 防御 16%上昇 / (部隊内の金蘭の契りスキル所持武将数x16%の効果)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "槍隊堅守",
+   "rank": "F",
+   "afterSkill": "槍隊襲撃",
+   "afterRank": "F",
+   "target": "槍",
+   "rate": "20%",
+   "effectShort": "槍防：10%上昇",
+   "afterTarget": "槍",
+   "afterRate": "20%",
+   "afterEffectShort": "攻撃 10%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "花椿",
+   "rank": "D",
+   "afterSkill": "花椿",
+   "afterRank": "D",
+   "target": "槍砲器",
+   "rate": "32%",
+   "effectShort": "防御 39%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "金蘭の契り",
+   "rank": "D",
+   "afterSkill": "烈侵滅国",
+   "afterRank": "B",
+   "target": "槍器",
+   "rate": "35%",
+   "effectShort": "防御 16%上昇 / (部隊内の金蘭の契りスキル所持武将数x16%の効果)",
+   "afterTarget": "槍弓器",
+   "afterRate": "25%",
+   "afterEffectShort": "攻撃防御 ((1+武将ランク)×コストx2) %上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "烈侵滅国",
+   "rank": "B",
+   "afterSkill": "烈侵滅国",
+   "afterRank": "B",
+   "target": "槍弓器",
+   "rate": "25%",
+   "effectShort": "攻撃防御 ((1+武将ランク)×コストx2) %上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "隠し駒",
+   "rank": "D",
+   "afterSkill": "管領の威光",
+   "afterRank": "D",
+   "target": "砲器",
+   "rate": "32%",
+   "effectShort": "防御 44%上昇 / 破壊 25%上昇",
+   "afterTarget": "馬砲器",
+   "afterRate": "43%",
+   "afterEffectShort": "防御 34%上昇 / 破壊 30%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3340 と skills/金蘭の契り)およびixawiki(BushoCard/3340森蘭丸)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

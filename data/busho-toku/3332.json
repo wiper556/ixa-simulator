@@ -1,0 +1,103 @@
+{
+ "name": "後藤信康",
+ "no": "3332",
+ "ch": null,
+ "cost": 3.0,
+ "troop": "槍器防",
+ "sub": "",
+ "effect": "防御 (コストx13) %上昇 / (武将のコストで効果が変化します)",
+ "furigana": "ごとうのぶやす",
+ "illustrator": "三好載克",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 860,
+ "atkGrowth": 21.0,
+ "defBase": 880,
+ "defGrowth": 23.0,
+ "tacticsBase": 450.0,
+ "tacticsGrowth": 1.5,
+ "lv0Troops": 2800,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "B",
+  "uma": "C",
+  "ki": "A"
+ },
+ "initialSkill": "黄母衣衆",
+ "skillDetail": "D/LV10 確率 40% 防御 (コストx13) %上昇 / (武将のコストで効果が変化します)/対象:槍器\n①防御 (コストx13) %上昇 / (武将のコストで効果が変化します)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍器　確率 40% / 防御 (コストx13) %上昇 / (武将のコストで効果が変化します)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "兵器布陣",
+   "rank": "E",
+   "afterSkill": "城砕き",
+   "afterRank": "E",
+   "target": "器",
+   "rate": "15%",
+   "effectShort": "防御 20%上昇",
+   "afterTarget": "器",
+   "afterRate": "15%",
+   "afterEffectShort": "破壊 20%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "花椿",
+   "rank": "D",
+   "afterSkill": "花椿",
+   "afterRank": "D",
+   "target": "槍砲器",
+   "rate": "32%",
+   "effectShort": "防御 39%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "黄母衣衆",
+   "rank": "D",
+   "afterSkill": "閃光破陣",
+   "afterRank": "B",
+   "target": "槍器",
+   "rate": "40%",
+   "effectShort": "防御 (コストx13) %上昇 / (武将のコストで効果が変化します)",
+   "afterTarget": "槍馬器",
+   "afterRate": "35%",
+   "afterEffectShort": "防御 2.7%上昇 / 防御 部隊ランクスキル発動率x9%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "閃光破陣",
+   "rank": "B",
+   "afterSkill": "閃光破陣",
+   "afterRank": "B",
+   "target": "槍馬器",
+   "rate": "35%",
+   "effectShort": "防御 2.7%上昇 / 防御 部隊ランクスキル発動率x9%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "隠し駒",
+   "rank": "D",
+   "afterSkill": "管領の威光",
+   "afterRank": "D",
+   "target": "砲器",
+   "rate": "32%",
+   "effectShort": "防御 44%上昇 / 破壊 25%上昇",
+   "afterTarget": "馬砲器",
+   "afterRate": "43%",
+   "afterEffectShort": "防御 34%上昇 / 破壊 30%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3332 と skills/黄母衣衆)およびixawiki(BushoCard/3332後藤信康)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

@@ -1,0 +1,109 @@
+{
+ "name": "口羽通良",
+ "no": "3534",
+ "ch": null,
+ "cost": 1.5,
+ "troop": "槍弓馬器攻",
+ "sub": "",
+ "effect": "攻撃 62%上昇 防御 62%上昇 / 部隊コスト14以下で効果2倍",
+ "furigana": "くちばみちよし",
+ "illustrator": "ホマ蔵",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 840,
+ "atkGrowth": 27.0,
+ "defBase": 840,
+ "defGrowth": 27.0,
+ "tacticsBase": 460.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2010,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "B",
+  "uma": "B",
+  "ki": "B"
+ },
+ "initialSkill": "鬼ノ懐刀",
+ "skillDetail": "C/LV10 確率 60% 攻撃 62%上昇 防御 62%上昇 / 部隊コスト14以下で効果2倍/対象:槍弓馬器\n①攻撃 62%上昇 防御 62%上昇 / 部隊コスト14以下で効果2倍",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍弓馬器　確率 60% / 攻撃 62%上昇 防御 62%上昇 / 部隊コスト14以下で効果2倍"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "鬼ノ懐刀",
+   "rank": "C",
+   "afterSkill": "十字飛車",
+   "afterRank": "A",
+   "target": "槍弓馬器",
+   "rate": "60%",
+   "effectShort": "攻撃 62%上昇 防御 62%上昇 / 部隊コスト14以下で効果2倍",
+   "afterTarget": "槍砲器",
+   "afterRate": "42%",
+   "afterEffectShort": "攻撃 77%上昇 / 防御 77%上昇 / 破壊 50%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "鬼ノ懐刀",
+   "rank": "C",
+   "afterSkill": "十字飛車",
+   "afterRank": "A",
+   "target": "槍弓馬器",
+   "rate": "60%",
+   "effectShort": "攻撃 62%上昇 防御 62%上昇 / 部隊コスト14以下で効果2倍",
+   "afterTarget": "槍砲器",
+   "afterRate": "42%",
+   "afterEffectShort": "攻撃 77%上昇 / 防御 77%上昇 / 破壊 50%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "大樹ノ守り人",
+   "rank": "C",
+   "afterSkill": "覚悟十躰",
+   "afterRank": "A",
+   "target": "槍弓馬器",
+   "rate": "44%",
+   "effectShort": "攻撃 92%上昇 / 防御 92%上昇 / 破壊 45%上昇",
+   "afterTarget": "全",
+   "afterRate": "30%",
+   "afterEffectShort": "資源獲得率：15% / 破壊した耐久値に応じて資源獲得"
+  },
+  {
+   "slot": "S1",
+   "skill": "十字飛車",
+   "rank": "A",
+   "afterSkill": "騒速ノ神撃",
+   "afterRank": "SS",
+   "target": "槍砲器",
+   "rate": "42%",
+   "effectShort": "攻撃 77%上昇 / 防御 77%上昇 / 破壊 50%上昇",
+   "afterTarget": "槍・弓・器・焙",
+   "afterRate": "57%",
+   "afterEffectShort": "攻撃 100%上昇 防御 100%上昇 部隊内の「騒速ノ神撃」スキルx25%を攻防効果に加算"
+  },
+  {
+   "slot": "S2",
+   "skill": "野太刀",
+   "rank": "C",
+   "afterSkill": "戦陣 凱旋",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "17%",
+   "effectShort": "攻撃 77%上昇 / 防御 77%上昇",
+   "afterTarget": "全",
+   "afterRate": "10%",
+   "afterEffectShort": "攻撃 87%上昇+防御 87%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3534 と skills/鬼ノ懐刀)およびixawiki(BushoCard/3534口羽通良)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

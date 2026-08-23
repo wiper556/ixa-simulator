@@ -1,0 +1,106 @@
+{
+ "name": "大内貞子",
+ "no": "3318",
+ "ch": null,
+ "cost": 3.0,
+ "troop": "弓攻",
+ "sub": "",
+ "effect": "攻撃 (コストx12) %上昇 / (武将のコストで効果が変化します)",
+ "furigana": "おおうちさだこ",
+ "illustrator": "オンダカツキ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 870,
+ "atkGrowth": 23.0,
+ "defBase": 840,
+ "defGrowth": 21.0,
+ "tacticsBase": 440.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2750,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "A",
+  "uma": "C",
+  "ki": "B"
+ },
+ "initialSkill": "名姫の撥無",
+ "skillDetail": "D/LV10 確率 24% 攻撃 (コストx12) %上昇 / (武将のコストで効果が変化します)/対象:弓\n①攻撃 (コストx12) %上昇 / (武将のコストで効果が変化します)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓　確率 24% / 攻撃 (コストx12) %上昇 / (武将のコストで効果が変化します)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "弓隊急襲",
+   "rank": "F",
+   "afterSkill": "弓隊守備",
+   "afterRank": "F",
+   "target": "弓",
+   "rate": "16%",
+   "effectShort": "攻撃 (コストx5) %上昇 / (武将のコストで効果が変化します)",
+   "afterTarget": "弓",
+   "afterRate": "16%",
+   "afterEffectShort": "防御 (コストx6) %上昇 / (武将のコストで効果が変化します)"
+  },
+  {
+   "slot": "B",
+   "skill": "弓撃の真髄",
+   "rank": "E",
+   "afterSkill": "三矢の教え",
+   "afterRank": "D",
+   "target": "弓",
+   "rate": "20%",
+   "effectShort": "攻撃 15%上昇",
+   "afterTarget": "槍弓",
+   "afterRate": "20%",
+   "afterEffectShort": "攻撃 20%上昇 / 破壊 5%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "大身槍",
+   "rank": "D",
+   "afterSkill": "絢鳥",
+   "afterRank": "B",
+   "target": "槍弓",
+   "rate": "19%",
+   "effectShort": "攻撃 43%上昇 / 破壊 18%上昇",
+   "afterTarget": "槍弓",
+   "afterRate": "35%",
+   "afterEffectShort": "攻撃 42%上昇 / 破壊 15%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "名姫の撥無",
+   "rank": "D",
+   "afterSkill": "名姫の撥無",
+   "afterRank": "D",
+   "target": "弓",
+   "rate": "24%",
+   "effectShort": "攻撃 (コストx12) %上昇 / (武将のコストで効果が変化します)"
+  },
+  {
+   "slot": "S2",
+   "skill": "反逆の奏",
+   "rank": "B",
+   "afterSkill": "三矢の礎",
+   "afterRank": "A",
+   "target": "弓",
+   "rate": "25%",
+   "effectShort": "攻撃 50%上昇",
+   "afterTarget": "弓",
+   "afterRate": "40%",
+   "afterEffectShort": "防御 35%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3318 と skills/名姫の撥無)およびixawiki(BushoCard/3318大内貞子)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

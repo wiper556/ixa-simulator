@@ -1,0 +1,110 @@
+{
+ "name": "伊奈忠次",
+ "no": "3561",
+ "ch": null,
+ "cost": 3.0,
+ "troop": "槍砲器防",
+ "sub": "",
+ "effect": "防御 180%上昇 / 本丸防御陣形の第参列目以降に配置時、防御効果が1.5倍",
+ "furigana": "いなただつぐ",
+ "illustrator": "てもし",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 870,
+ "atkGrowth": 27.0,
+ "defBase": 900,
+ "defGrowth": 32.0,
+ "tacticsBase": 470.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 3060,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "B",
+  "uma": "B",
+  "ki": "B"
+ },
+ "initialSkill": "関東代官頭",
+ "skillDetail": "C/LV10 確率 45% 防御 180%上昇 / 本丸防御陣形の第参列目以降に配置時防御効果が1.5倍/対象:槍砲器\n①防御 180%上昇 / 本丸防御陣形の第参列目以降に配置時防御効果が1.5倍",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍砲器　確率 45% / 防御 180%上昇 / 本丸防御陣形の第参列目以降に配置時、防御効果が1.5倍"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "関東代官頭",
+   "rank": "C",
+   "afterSkill": "宇和ノ歌将",
+   "afterRank": "C",
+   "target": "槍砲器",
+   "rate": "45%",
+   "effectShort": "防御 180%上昇 / 本丸防御陣形の第参列目以降に配置時、防御効果が1.5倍",
+   "afterTarget": "砲器",
+   "afterRate": "60%",
+   "afterEffectShort": "防御 86%上昇 / 本丸防御陣形の第参列目以降に配置時、防御効果が1.5倍"
+  },
+  {
+   "slot": "B",
+   "skill": "関東代官頭",
+   "rank": "C",
+   "afterSkill": "宇和ノ歌将",
+   "afterRank": "C",
+   "target": "槍砲器",
+   "rate": "45%",
+   "effectShort": "防御 180%上昇 / 本丸防御陣形の第参列目以降に配置時、防御効果が1.5倍",
+   "afterTarget": "砲器",
+   "afterRate": "60%",
+   "afterEffectShort": "防御 86%上昇 / 本丸防御陣形の第参列目以降に配置時、防御効果が1.5倍"
+  },
+  {
+   "slot": "C",
+   "skill": "関東代官頭",
+   "rank": "C",
+   "afterSkill": "宇和ノ歌将",
+   "afterRank": "C",
+   "target": "槍砲器",
+   "rate": "45%",
+   "effectShort": "防御 180%上昇 / 本丸防御陣形の第参列目以降に配置時、防御効果が1.5倍",
+   "afterTarget": "砲器",
+   "afterRate": "60%",
+   "afterEffectShort": "防御 86%上昇 / 本丸防御陣形の第参列目以降に配置時、防御効果が1.5倍"
+  },
+  {
+   "slot": "S1",
+   "skill": "宇和ノ歌将",
+   "rank": "C",
+   "afterSkill": "忌籠ノ計",
+   "afterRank": "A",
+   "target": "砲器",
+   "rate": "60%",
+   "effectShort": "防御 86%上昇 / 本丸防御陣形の第参列目以降に配置時、防御効果が1.5倍",
+   "afterTarget": "槍弓器鉄",
+   "afterRate": "38%",
+   "afterEffectShort": "防御 62%上昇 / 自拠点防御時は防御効果3倍"
+  },
+  {
+   "slot": "S2",
+   "skill": "絶界煉獄",
+   "rank": "B",
+   "afterSkill": "闘戦経",
+   "afterRank": "B",
+   "target": "槍弓馬器",
+   "rate": "27%",
+   "effectShort": "防御 90%上昇 / 本丸防御陣形に配置時、この武将の編成コスト消費を-0.5する(模倣不可)",
+   "afterTarget": "全",
+   "afterRate": "10%",
+   "afterEffectShort": "防御 80.4%上昇 / 自拠点防御時は100%発動"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3561 と skills/関東代官頭)およびixawiki(BushoCard/3561伊奈忠次)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。",
+  "2026-08-23: skillDetail に読点が混入していた(F-01違反)。ixanary の原文が「配置時、防御効果が」のように読点を使うのをそのまま取り込んでいた。読点を外した。"
+ ]
+}

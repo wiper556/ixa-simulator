@@ -1,0 +1,106 @@
+{
+ "name": "伝林坊頼慶",
+ "no": "3437",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "槍馬器攻",
+ "sub": "",
+ "effect": "攻撃 67%上昇 / 防御 67%上昇",
+ "furigana": "でんりんぼうらいけい",
+ "illustrator": "五浦マリ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 850,
+ "atkGrowth": 26.0,
+ "defBase": 850,
+ "defGrowth": 26.0,
+ "tacticsBase": 460.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2560,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "C",
+  "uma": "B",
+  "ki": "B"
+ },
+ "initialSkill": "裏タイ捨流",
+ "skillDetail": "D/LV10 確率 32% 攻撃 67%上昇 / 防御 67%上昇/対象:槍馬器\n①攻撃が67%上昇 / 防御 67%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍馬器　確率 32% / 攻撃 67%上昇 / 防御 67%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "裏タイ捨流",
+   "rank": "D",
+   "afterSkill": "十字飛車",
+   "afterRank": "A",
+   "target": "槍馬器",
+   "rate": "32%",
+   "effectShort": "攻撃 67%上昇 / 防御 67%上昇",
+   "afterTarget": "槍砲器",
+   "afterRate": "42%",
+   "afterEffectShort": "攻撃 77%上昇 / 防御 77%上昇 / 破壊 50%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "槍隊布陣",
+   "rank": "E",
+   "afterSkill": "槍隊堅陣",
+   "afterRank": "F",
+   "target": "槍",
+   "rate": "15%",
+   "effectShort": "防御 20%上昇",
+   "afterTarget": "槍",
+   "afterRate": "30%",
+   "afterEffectShort": "槍防：12%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "影縫",
+   "rank": "D",
+   "afterSkill": "鳳来宮姫",
+   "afterRank": "B",
+   "target": "槍器",
+   "rate": "32%",
+   "effectShort": "攻撃 38%上昇 / 防御 38%上昇 / 部隊コスト10以下で効果2倍",
+   "afterTarget": "槍馬器",
+   "afterRate": "22%",
+   "afterEffectShort": "攻撃 62%上昇 / 防御 62%上昇 / 破壊 30%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "十字飛車",
+   "rank": "A",
+   "afterSkill": "騒速ノ神撃",
+   "afterRank": "SS",
+   "target": "槍砲器",
+   "rate": "42%",
+   "effectShort": "攻撃 77%上昇 / 防御 77%上昇 / 破壊 50%上昇",
+   "afterTarget": "槍・弓・器・焙",
+   "afterRate": "57%",
+   "afterEffectShort": "攻撃 100%上昇 防御 100%上昇 部隊内の「騒速ノ神撃」スキルx25%を攻防効果に加算"
+  },
+  {
+   "slot": "S2",
+   "skill": "虎嘯",
+   "rank": "B",
+   "afterSkill": "虎嘯",
+   "afterRank": "B",
+   "target": "槍弓馬器",
+   "rate": "27%",
+   "effectShort": "攻撃防御 ((1+武将ランク)×武将コスト×2.2) %上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3437 と skills/裏タイ捨流)およびixawiki(BushoCard/3437伝林坊頼慶)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

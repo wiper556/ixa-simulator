@@ -1,0 +1,109 @@
+{
+ "name": "赤尾清綱",
+ "no": "3396",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "弓器防",
+ "sub": "",
+ "effect": "防御 38%上昇 / 自拠点防御時は防御効果1.5倍",
+ "furigana": "あかおきよつな",
+ "illustrator": "匈歌ハトリ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 800,
+ "atkGrowth": 23.0,
+ "defBase": 870,
+ "defGrowth": 27.0,
+ "tacticsBase": 490.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2570,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "A",
+  "uma": "C",
+  "ki": "B"
+ },
+ "initialSkill": "焔曲輪",
+ "skillDetail": "D/LV10 確率 32% 防御 38%上昇 / 自拠点防御時は防御効果1.5倍/対象:弓器\n①防御 38%上昇 / 自拠点防御時は防御効果1.5倍",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓器　確率 32% / 防御 38%上昇 / 自拠点防御時は防御効果1.5倍"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "弓隊布陣",
+   "rank": "E",
+   "afterSkill": "弓隊堅陣",
+   "afterRank": "F",
+   "target": "弓",
+   "rate": "15%",
+   "effectShort": "防御 20%上昇",
+   "afterTarget": "弓",
+   "afterRate": "30%",
+   "afterEffectShort": "防御 12%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "算術の極み",
+   "rank": "D",
+   "afterSkill": "比類なき忠功",
+   "afterRank": "D",
+   "target": "弓器",
+   "rate": "30%",
+   "effectShort": "防御 38%上昇 / 破壊 22%上昇",
+   "afterTarget": "弓馬器",
+   "afterRate": "30%",
+   "afterEffectShort": "防御 ((1+ランク)xコストx1.7) %上昇 / 武将ランクとコストで効果が変化"
+  },
+  {
+   "slot": "C",
+   "skill": "焔曲輪",
+   "rank": "D",
+   "afterSkill": "暁",
+   "afterRank": "B",
+   "target": "弓器",
+   "rate": "32%",
+   "effectShort": "防御 38%上昇 / 自拠点防御時は防御効果1.5倍",
+   "afterTarget": "槍弓馬",
+   "afterRate": null,
+   "afterEffectShort": "防御 28%上昇 / (自領以外の加勢で効果2倍)"
+  },
+  {
+   "slot": "S1",
+   "skill": "暁",
+   "rank": "B",
+   "afterSkill": "不動の荒神",
+   "afterRank": "B",
+   "target": "槍弓馬",
+   "rate": null,
+   "effectShort": "防御 28%上昇 / (自領以外の加勢で効果2倍)",
+   "afterTarget": "槍弓馬",
+   "afterRate": "18%",
+   "afterEffectShort": "防御 45%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "船上ノ巨魁",
+   "rank": "D",
+   "afterSkill": "捨て奸",
+   "afterRank": "B",
+   "target": "弓砲器",
+   "rate": "23%",
+   "effectShort": "防御 39%上昇 / 武将ランクで効果が変化",
+   "afterTarget": "弓砲器",
+   "afterRate": "15%",
+   "afterEffectShort": "防御 37%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3396 と skills/焔曲輪)およびixawiki(BushoCard/3396赤尾清綱)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

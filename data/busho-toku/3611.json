@@ -1,0 +1,110 @@
+{
+ "name": "エルダー",
+ "no": "3611",
+ "ch": null,
+ "cost": 0.0,
+ "troop": "将",
+ "sub": "",
+ "effect": "このカードを部隊にセットすると、セット時に負傷していた武将のHPを20回復する(模倣不可)",
+ "furigana": "えるだー",
+ "illustrator": "&#169;NW/S,RKKD",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 200,
+ "atkGrowth": 1.0,
+ "defBase": 200,
+ "defGrowth": 1.0,
+ "tacticsBase": 200.0,
+ "tacticsGrowth": 1.0,
+ "lv0Troops": 1,
+ "rankGrades": {
+  "yari": "F",
+  "yumi": "F",
+  "uma": "F",
+  "ki": "F"
+ },
+ "initialSkill": "聖医ノ道",
+ "skillDetail": "C/LV10 確率 100% このカードを部隊にセットするとセット時に負傷していた武将のHPを20回復する(模倣不可)/対象:将\n①このカードを部隊にセットするとセット時に負傷していた武将のHPを20回復する(模倣不可)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "将　確率 100% / このカードを部隊にセットすると、セット時に負傷していた武将のHPを20回復する(模倣不可)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "近習出頭人",
+   "rank": "C",
+   "afterSkill": "武神百鬼",
+   "afterRank": "A",
+   "target": "槍弓馬",
+   "rate": "57%",
+   "effectShort": "攻撃 93%上昇 防御 93%上昇",
+   "afterTarget": "槍弓馬器",
+   "afterRate": "34%",
+   "afterEffectShort": "攻撃 55%上昇 防御 55%上昇 / 部隊内の「武神百鬼」スキル数×35%を攻防効果に加算"
+  },
+  {
+   "slot": "B",
+   "skill": "争鶴ノ囀り",
+   "rank": "C",
+   "afterSkill": "覇・一期一振",
+   "afterRank": "A",
+   "target": "槍弓器",
+   "rate": "55%",
+   "effectShort": "攻撃 250%上昇 防御 250%上昇",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 85%上昇 防御 85%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "不朽ノ野心",
+   "rank": "C",
+   "afterSkill": "名人ノ系譜",
+   "afterRank": "C",
+   "target": "砲器",
+   "rate": "55%",
+   "effectShort": "攻撃 260%上昇 防御 260%上昇",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 92%上昇 防御 92%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "義士ノ覚悟",
+   "rank": "C",
+   "afterSkill": "不朽ノ野心",
+   "afterRank": "C",
+   "target": "槍砲器",
+   "rate": "65%",
+   "effectShort": "攻撃 310%上昇 防御 310%上昇",
+   "afterTarget": "砲器",
+   "afterRate": "55%",
+   "afterEffectShort": "攻撃 260%上昇 防御 260%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "戦陣 龍馬",
+   "rank": "A",
+   "afterSkill": "茅纒之矟ノ煌",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "50%",
+   "effectShort": "防御 1%上昇(部隊ランクボーナス×10%を加算)",
+   "afterTarget": "全",
+   "afterRate": "60%",
+   "afterEffectShort": "防御 100%上昇 自部隊の武将ダメージ軽減3% (重複発動上限数4)"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3611 と skills/聖医ノ道)およびixawiki(BushoCard/3611エルダー)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。",
+  "2026-08-23: skillDetail に読点が混入していた(F-01違反)。ixanary の原文が「配置時、防御効果が」のように読点を使うのをそのまま取り込んでいた。読点を外した。"
+ ]
+}

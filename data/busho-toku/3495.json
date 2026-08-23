@@ -1,0 +1,110 @@
+{
+ "name": "西郷純久",
+ "no": "3495",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "砲器防",
+ "sub": "",
+ "effect": "防御 72%上昇 / 本丸防御陣形の第壱列目か第弐列目に配置時、防御効果が1.5倍",
+ "furigana": "さいごうすみひさ",
+ "illustrator": "三好載克",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 830,
+ "atkGrowth": 24.0,
+ "defBase": 870,
+ "defGrowth": 27.0,
+ "tacticsBase": 460.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2610,
+ "rankGrades": {
+  "yari": "C",
+  "yumi": "B",
+  "uma": "B",
+  "ki": "A"
+ },
+ "initialSkill": "転戦速陣",
+ "skillDetail": "C/LV10 確率 35% 防御 72%上昇 / 本丸防御陣形の第壱列目か第弐列目に配置時防御効果が1.5倍/対象:砲器\n①防御 72%上昇 / 本丸防御陣形の第壱列目か第弐列目に配置時防御効果が1.5倍",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "砲器　確率 35% / 防御 72%上昇 / 本丸防御陣形の第壱列目か第弐列目に配置時、防御効果が1.5倍"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "転戦速陣",
+   "rank": "C",
+   "afterSkill": "惨王ノ眷族",
+   "afterRank": "B",
+   "target": "砲器",
+   "rate": "35%",
+   "effectShort": "防御 72%上昇 / 本丸防御陣形の第壱列目か第弐列目に配置時、防御効果が1.5倍",
+   "afterTarget": "槍弓器",
+   "afterRate": "21%",
+   "afterEffectShort": "防御 87%上昇 / 自拠点防御時は100%発動"
+  },
+  {
+   "slot": "B",
+   "skill": "転戦速陣",
+   "rank": "C",
+   "afterSkill": "惨王ノ眷族",
+   "afterRank": "B",
+   "target": "砲器",
+   "rate": "35%",
+   "effectShort": "防御 72%上昇 / 本丸防御陣形の第壱列目か第弐列目に配置時、防御効果が1.5倍",
+   "afterTarget": "槍弓器",
+   "afterRate": "21%",
+   "afterEffectShort": "防御 87%上昇 / 自拠点防御時は100%発動"
+  },
+  {
+   "slot": "C",
+   "skill": "引導",
+   "rank": "D",
+   "afterSkill": "絶界煉獄",
+   "afterRank": "B",
+   "target": "槍馬器",
+   "rate": "15%",
+   "effectShort": "防御 78%上昇 / 自拠点防御時は100%発動",
+   "afterTarget": "槍弓馬器",
+   "afterRate": "27%",
+   "afterEffectShort": "防御 90%上昇 / 本丸防御陣形に配置時、この武将の編成コスト消費を-0.5する(模倣不可)"
+  },
+  {
+   "slot": "S1",
+   "skill": "惨王ノ眷族",
+   "rank": "B",
+   "afterSkill": "闘戦経",
+   "afterRank": "B",
+   "target": "槍弓器",
+   "rate": "21%",
+   "effectShort": "防御 87%上昇 / 自拠点防御時は100%発動",
+   "afterTarget": "全",
+   "afterRate": "10%",
+   "afterEffectShort": "防御 80.4%上昇 / 自拠点防御時は100%発動"
+  },
+  {
+   "slot": "S2",
+   "skill": "虎切刀",
+   "rank": "C",
+   "afterSkill": "鬼滅刺",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "50%",
+   "effectShort": "攻撃 66%上昇 / 防御 66%上昇",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 70%上昇 防御 70%上昇(卓越確率+25%加算・模倣不可)"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3495 と skills/転戦速陣)およびixawiki(BushoCard/3495西郷純久)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。",
+  "2026-08-23: skillDetail に読点が混入していた(F-01違反)。ixanary の原文が「配置時、防御効果が」のように読点を使うのをそのまま取り込んでいた。読点を外した。"
+ ]
+}

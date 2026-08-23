@@ -1,0 +1,97 @@
+{
+ "name": "バッファローマン",
+ "no": "3651",
+ "ch": null,
+ "cost": 3.0,
+ "troop": "砲器攻",
+ "sub": "",
+ "effect": "攻撃 30%上昇 / 武将ランクで攻撃効果が変化",
+ "furigana": "ばっふぁろーまん",
+ "illustrator": null,
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 950,
+ "atkGrowth": 35.0,
+ "defBase": 820,
+ "defGrowth": 23.0,
+ "tacticsBase": 450.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 3090,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "C",
+  "uma": "B",
+  "ki": "A"
+ },
+ "initialSkill": "Ｈ・デビルソード",
+ "skillDetail": "C/LV10 確率 45% 攻撃 30%上昇 / 武将ランクで攻撃効果が変化/対象:砲器\n①攻撃 30%上昇 / 武将ランクで攻撃効果が変化",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "砲器　確率 45% / 攻撃 30%上昇 / 武将ランクで攻撃効果が変化"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "万石武辺",
+   "rank": "C",
+   "afterSkill": "万石武辺",
+   "afterRank": "C",
+   "target": "弓器鉄",
+   "rate": "50%",
+   "effectShort": "攻撃 20%上昇 / 武将ランクで攻撃効果が変化"
+  },
+  {
+   "slot": "B",
+   "skill": "Ｈ・デビルソード",
+   "rank": "C",
+   "afterSkill": "Ｈ・デビルソード",
+   "afterRank": "C",
+   "target": "砲器",
+   "rate": "45%",
+   "effectShort": "攻撃 30%上昇 / 武将ランクで攻撃効果が変化"
+  },
+  {
+   "slot": "C",
+   "skill": "Ｈ・デビルソード",
+   "rank": "C",
+   "afterSkill": "Ｈ・デビルソード",
+   "afterRank": "C",
+   "target": "砲器",
+   "rate": "45%",
+   "effectShort": "攻撃 30%上昇 / 武将ランクで攻撃効果が変化"
+  },
+  {
+   "slot": "S1",
+   "skill": "Ｈ・デビルソード",
+   "rank": "C",
+   "afterSkill": "Ｈ・デビルソード",
+   "afterRank": "C",
+   "target": "砲器",
+   "rate": "45%",
+   "effectShort": "攻撃 30%上昇 / 武将ランクで攻撃効果が変化"
+  },
+  {
+   "slot": "S2",
+   "skill": "野太刀",
+   "rank": "C",
+   "afterSkill": "戦陣 凱旋",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "17%",
+   "effectShort": "攻撃 77%上昇 / 防御 77%上昇",
+   "afterTarget": "全",
+   "afterRate": "10%",
+   "afterEffectShort": "攻撃 87%上昇+防御 87%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3651 と skills/Ｈ・デビルソード)およびixawiki(BushoCard/3651バッファローマン)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

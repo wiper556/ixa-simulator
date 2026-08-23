@@ -1,0 +1,106 @@
+{
+ "name": "西郷局",
+ "no": "3386",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "槍器防",
+ "sub": "",
+ "effect": "防御 74%上昇",
+ "furigana": "さいごうのつぼね",
+ "illustrator": "ちゃきん",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 790,
+ "atkGrowth": 22.0,
+ "defBase": 860,
+ "defGrowth": 26.0,
+ "tacticsBase": 490.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2560,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "B",
+  "uma": "C",
+  "ki": "B"
+ },
+ "initialSkill": "鬨ノ鐘",
+ "skillDetail": "D/LV10 確率 1% 防御 74%上昇/対象:槍器\n①防御が74%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍器　確率 1% / 防御 74%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "槍隊守護",
+   "rank": "E",
+   "afterSkill": "槍隊挟撃",
+   "afterRank": "E",
+   "target": "槍",
+   "rate": "25%",
+   "effectShort": "防御 (コストx6.5) %上昇 / (武将のコストで効果が変化します)",
+   "afterTarget": "槍",
+   "afterRate": "25%",
+   "afterEffectShort": "槍攻：9.75%上昇 / (武将のコストで効果が変化します)"
+  },
+  {
+   "slot": "B",
+   "skill": "参謀傑士",
+   "rank": "D",
+   "afterSkill": "伝来ノ島筒",
+   "afterRank": "D",
+   "target": "砲器",
+   "rate": "34%",
+   "effectShort": "防御 (15+武将ランクx5) %上昇 / 破壊 25%上昇 / 武将ランクで効果が変化",
+   "afterTarget": "砲器",
+   "afterRate": "5%",
+   "afterEffectShort": "防御 64.8%上昇 / (合流攻撃防御時は必ずスキル発動)"
+  },
+  {
+   "slot": "C",
+   "skill": "鬨ノ鐘",
+   "rank": "D",
+   "afterSkill": "波瀾ノ夕立",
+   "afterRank": "B",
+   "target": "槍器",
+   "rate": "1%",
+   "effectShort": "防御 74%上昇",
+   "afterTarget": "槍砲器",
+   "afterRate": "36%",
+   "afterEffectShort": "防御 43%上昇 / 破壊 25%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "波瀾ノ夕立",
+   "rank": "B",
+   "afterSkill": "波瀾ノ夕立",
+   "afterRank": "B",
+   "target": "槍砲器",
+   "rate": "36%",
+   "effectShort": "防御 43%上昇 / 破壊 25%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "華玉神恵",
+   "rank": "B",
+   "afterSkill": "車懸り",
+   "afterRank": "B",
+   "target": "砲器",
+   "rate": "22.5%",
+   "effectShort": "防御 40%上昇",
+   "afterTarget": "全",
+   "afterRate": "15%",
+   "afterEffectShort": "攻撃 30%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3386 と skills/鬨ノ鐘)およびixawiki(BushoCard/3386西郷局)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

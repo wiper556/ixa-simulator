@@ -1,0 +1,103 @@
+{
+ "name": "絶姫",
+ "no": "3416",
+ "ch": null,
+ "cost": 1.5,
+ "troop": "槍器攻",
+ "sub": "",
+ "effect": "攻撃 38%上昇 / 防御 38%上昇 / 部隊コスト10以下で効果2倍",
+ "furigana": "たえひめ",
+ "illustrator": "木下月乃",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 890,
+ "atkGrowth": 27.0,
+ "defBase": 890,
+ "defGrowth": 27.0,
+ "tacticsBase": 450.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 1900,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "B",
+  "uma": "C",
+  "ki": "B"
+ },
+ "initialSkill": "影縫",
+ "skillDetail": "D/LV10 確率 32% 攻撃 38%上昇 / 防御 38%上昇 / 部隊コスト10以下で効果2倍/対象:槍器\n①攻撃 38%上昇 / 防御 38%上昇 / 部隊コスト10以下で効果2倍",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍器　確率 32% / 攻撃 38%上昇 / 防御 38%上昇 / 部隊コスト10以下で効果2倍"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "影縫",
+   "rank": "D",
+   "afterSkill": "鳳来宮姫",
+   "afterRank": "B",
+   "target": "槍器",
+   "rate": "32%",
+   "effectShort": "攻撃 38%上昇 / 防御 38%上昇 / 部隊コスト10以下で効果2倍",
+   "afterTarget": "槍馬器",
+   "afterRate": "22%",
+   "afterEffectShort": "攻撃 62%上昇 / 防御 62%上昇 / 破壊 30%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "槍隊進撃",
+   "rank": "F",
+   "afterSkill": "槍隊襲撃",
+   "afterRank": "F",
+   "target": "槍",
+   "rate": "10%",
+   "effectShort": "槍攻：15%上昇",
+   "afterTarget": "槍",
+   "afterRate": "20%",
+   "afterEffectShort": "攻撃 10%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "戦慄ノ美姫",
+   "rank": "D",
+   "afterSkill": "新館御料人",
+   "afterRank": "B",
+   "target": "槍弓馬",
+   "rate": "32%",
+   "effectShort": "攻撃 46%上昇 / 防御 46%上昇",
+   "afterTarget": "弓砲器",
+   "afterRate": "70%",
+   "afterEffectShort": "攻撃 57.6%上昇 / 防御 57.6%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "鳳来宮姫",
+   "rank": "B",
+   "afterSkill": "鳳来宮姫",
+   "afterRank": "B",
+   "target": "槍馬器",
+   "rate": "22%",
+   "effectShort": "攻撃 62%上昇 / 防御 62%上昇 / 破壊 30%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "足鼎賢女",
+   "rank": "B",
+   "afterSkill": "足鼎賢女",
+   "afterRank": "B",
+   "target": "槍器鉄",
+   "rate": "38%",
+   "effectShort": "攻撃 74%上昇 防御 74%上昇 / (職業「姫」の武将に対してのみ効果あり)"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3416 と skills/影縫)およびixawiki(BushoCard/3416絶姫)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

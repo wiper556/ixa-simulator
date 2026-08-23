@@ -1,0 +1,100 @@
+{
+ "name": "エーコ",
+ "no": "3640",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "弓砲器防",
+ "sub": "",
+ "effect": "防御 345%上昇 確率：+45% / 速度 70%上昇 確率：+100% / (加勢出陣時は速度効果3倍)",
+ "furigana": "えーこ",
+ "illustrator": "FinalFantasyIX 25th ANNIVERSARY",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 850,
+ "atkGrowth": 26.0,
+ "defBase": 920,
+ "defGrowth": 33.0,
+ "tacticsBase": 470.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2680,
+ "rankGrades": {
+  "yari": "C",
+  "yumi": "A",
+  "uma": "B",
+  "ki": "B"
+ },
+ "initialSkill": "ヘイスト",
+ "skillDetail": "C/LV10 確率 45% 防御 345%上昇 確率：+45% / 速度 70%上昇 確率：+100% / (加勢出陣時は速度効果3倍)/対象:弓砲器\n①防御 345%上昇 確率：+45% / 速度 70%上昇 確率：+100% / (加勢出陣時は速度効果3倍)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓砲器　確率 45% / 防御 345%上昇 確率：+45% / 速度 70%上昇 確率：+100% / (加勢出陣時は速度効果3倍)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "大物崩れ",
+   "rank": "C",
+   "afterSkill": "虎将ノ懐刀",
+   "afterRank": "C",
+   "target": "槍砲器",
+   "rate": "45%",
+   "effectShort": "防御 320%上昇 確率：+45% / 速度 70%上昇 確率：+100% / (加勢出陣時は速度効果3倍)",
+   "afterTarget": "槍砲器",
+   "afterRate": "42%",
+   "afterEffectShort": "防御 280%上昇 確率：+42% / 速度 65%上昇 確率：+100% / (加勢出陣時は速度効果3倍)"
+  },
+  {
+   "slot": "B",
+   "skill": "ヘイスト",
+   "rank": "C",
+   "afterSkill": "ヘイスト",
+   "afterRank": "C",
+   "target": "弓砲器",
+   "rate": "45%",
+   "effectShort": "防御 345%上昇 確率：+45% / 速度 70%上昇 確率：+100% / (加勢出陣時は速度効果3倍)"
+  },
+  {
+   "slot": "C",
+   "skill": "ヘイスト",
+   "rank": "C",
+   "afterSkill": "ヘイスト",
+   "afterRank": "C",
+   "target": "弓砲器",
+   "rate": "45%",
+   "effectShort": "防御 345%上昇 確率：+45% / 速度 70%上昇 確率：+100% / (加勢出陣時は速度効果3倍)"
+  },
+  {
+   "slot": "S1",
+   "skill": "ヘイスト",
+   "rank": "C",
+   "afterSkill": "ヘイスト",
+   "afterRank": "C",
+   "target": "弓砲器",
+   "rate": "45%",
+   "effectShort": "防御 345%上昇 確率：+45% / 速度 70%上昇 確率：+100% / (加勢出陣時は速度効果3倍)"
+  },
+  {
+   "slot": "S2",
+   "skill": "籠城の妙技",
+   "rank": "A",
+   "afterSkill": "三千世界神将",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "防御 50%上昇(卓越:追加確率15%で防御効果が3倍)",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "防御 120%上昇(本丸防御陣形時コスト消費-1)"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3640 と skills/ヘイスト)およびixawiki(BushoCard/3640エーコ)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

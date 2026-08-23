@@ -1,0 +1,109 @@
+{
+ "name": "北条氏規",
+ "no": "3342",
+ "ch": null,
+ "cost": 3.0,
+ "troop": "槍弓攻",
+ "sub": "",
+ "effect": "攻撃 47%上昇 / 合流攻撃時は必ずスキル発動",
+ "furigana": "ほうじょううじのり",
+ "illustrator": "鏑木康隆",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 860,
+ "atkGrowth": 23.0,
+ "defBase": 840,
+ "defGrowth": 20.0,
+ "tacticsBase": 450.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2820,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "B",
+  "uma": "B",
+  "ki": "C"
+ },
+ "initialSkill": "鱗撃 青海波",
+ "skillDetail": "D/LV10 確率 18% 攻撃 47%上昇 / 合流攻撃時は必ずスキル発動/対象:槍弓\n①攻撃 47%上昇 / 合流攻撃時は必ずスキル発動",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍弓　確率 18% / 攻撃 47%上昇 / 合流攻撃時は必ずスキル発動"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "槍隊急襲",
+   "rank": "F",
+   "afterSkill": "槍隊守備",
+   "afterRank": "F",
+   "target": "槍",
+   "rate": "16%",
+   "effectShort": "槍攻：7.5%上昇 / (武将のコストで効果が変化します)",
+   "afterTarget": "槍",
+   "afterRate": "16%",
+   "afterEffectShort": "防御 (コストx5) %上昇 / (武将のコストで効果が変化します)"
+  },
+  {
+   "slot": "B",
+   "skill": "筋違い角",
+   "rank": "D",
+   "afterSkill": "絢鳥",
+   "afterRank": "B",
+   "target": "槍弓",
+   "rate": "30%",
+   "effectShort": "攻撃 36%上昇 / (2部隊以下の攻撃で効果1.5倍)",
+   "afterTarget": "槍弓",
+   "afterRate": "35%",
+   "afterEffectShort": "攻撃 42%上昇 / 破壊 15%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "鱗撃 青海波",
+   "rank": "D",
+   "afterSkill": "豪槍 御手杵",
+   "afterRank": "B",
+   "target": "槍弓",
+   "rate": "18%",
+   "effectShort": "攻撃 47%上昇 / 合流攻撃時は必ずスキル発動",
+   "afterTarget": "槍弓馬",
+   "afterRate": "42%",
+   "afterEffectShort": "攻撃 49%上昇 / 破壊 24%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "豪槍 御手杵",
+   "rank": "B",
+   "afterSkill": "無双蜻蛉切",
+   "afterRank": "A",
+   "target": "槍弓馬",
+   "rate": "42%",
+   "effectShort": "攻撃 49%上昇 / 破壊 24%上昇",
+   "afterTarget": "槍弓馬",
+   "afterRate": "40%",
+   "afterEffectShort": "攻撃 (コストx13) %上昇 / (武将のコストで効果が変化します)"
+  },
+  {
+   "slot": "S2",
+   "skill": "戦巧者",
+   "rank": "D",
+   "afterSkill": "大貉",
+   "afterRank": "D",
+   "target": "槍弓器",
+   "rate": "35%",
+   "effectShort": "攻撃 36%上昇 / (2部隊以下の攻撃で効果1.5倍)",
+   "afterTarget": "槍弓器",
+   "afterRate": "32%",
+   "afterEffectShort": "攻撃 34%上昇 / 破壊 17%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3342 と skills/鱗撃 青海波)およびixawiki(BushoCard/3342北条氏規)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

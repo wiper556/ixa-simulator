@@ -1,0 +1,100 @@
+{
+ "name": "金森長近",
+ "no": "3417",
+ "ch": null,
+ "cost": 3.0,
+ "troop": "馬騎攻",
+ "sub": "",
+ "effect": "攻撃 58%上昇 / 破壊 25%上昇",
+ "furigana": "かなもりながちか",
+ "illustrator": "あんべよしろう",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 880,
+ "atkGrowth": 28.0,
+ "defBase": 820,
+ "defGrowth": 24.0,
+ "tacticsBase": 460.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2900,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "C",
+  "uma": "A",
+  "ki": "B"
+ },
+ "initialSkill": "赤母衣衆",
+ "skillDetail": "D/LV10 確率 37% 攻撃 58%上昇 / 破壊 25%上昇/対象:馬騎\n①攻撃が58%上昇 / 破壊 25%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "馬騎　確率 37% / 攻撃 58%上昇 / 破壊 25%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "赤母衣衆",
+   "rank": "D",
+   "afterSkill": "気鋭ノ謀臣",
+   "afterRank": "B",
+   "target": "馬騎",
+   "rate": "37%",
+   "effectShort": "攻撃 58%上昇 / 破壊 25%上昇",
+   "afterTarget": "弓馬砲器",
+   "afterRate": "34%",
+   "afterEffectShort": "攻撃 120%上昇 / 武将ランクで効果が変化"
+  },
+  {
+   "slot": "B",
+   "skill": "騎馬隊進撃",
+   "rank": "F",
+   "afterSkill": "騎馬隊襲撃",
+   "afterRank": "F",
+   "target": "馬",
+   "rate": "10%",
+   "effectShort": "攻撃 15%上昇",
+   "afterTarget": "馬",
+   "afterRate": "20%",
+   "afterEffectShort": "馬攻：10%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "声遣縦横",
+   "rank": "D",
+   "afterSkill": "声遣縦横",
+   "afterRank": "D",
+   "target": "槍馬砲",
+   "rate": "24%",
+   "effectShort": "攻撃 38%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "気鋭ノ謀臣",
+   "rank": "B",
+   "afterSkill": "気鋭ノ謀臣",
+   "afterRank": "B",
+   "target": "弓馬砲器",
+   "rate": "34%",
+   "effectShort": "攻撃 120%上昇 / 武将ランクで効果が変化"
+  },
+  {
+   "slot": "S2",
+   "skill": "三斎流具足",
+   "rank": "B",
+   "afterSkill": "三斎流具足",
+   "afterRank": "B",
+   "target": "馬器騎",
+   "rate": "100%",
+   "effectShort": "攻撃 48%上昇 / 破壊 35%上昇 / 速度 35%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3417 と skills/赤母衣衆)およびixawiki(BushoCard/3417金森長近)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

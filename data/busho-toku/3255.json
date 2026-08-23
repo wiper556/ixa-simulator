@@ -1,0 +1,109 @@
+{
+ "name": "戸沢盛安",
+ "no": "3255",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "弓攻",
+ "sub": "",
+ "effect": "攻撃 45%上昇 / 武将ランクで効果が変化",
+ "furigana": "とざわもりやす",
+ "illustrator": "匈歌ハトリ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 730,
+ "atkGrowth": 19.0,
+ "defBase": 710,
+ "defGrowth": 18.0,
+ "tacticsBase": 465.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2480,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "A",
+  "uma": "B",
+  "ki": "B"
+ },
+ "initialSkill": "鬼夜叉",
+ "skillDetail": "D/LV10 確率 24% 攻撃 45%上昇 / 武将ランクで効果が変化/対象:弓\n①攻撃 45%上昇 / 武将ランクで効果が変化",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓　確率 24% / 攻撃 45%上昇 / 武将ランクで効果が変化"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "弓隊突撃",
+   "rank": "F",
+   "afterSkill": "弓隊奇襲",
+   "afterRank": "E",
+   "target": "弓",
+   "rate": "15%",
+   "effectShort": "攻撃 20%上昇",
+   "afterTarget": "弓",
+   "afterRate": "30%",
+   "afterEffectShort": "弓攻：12%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "弓隊剛撃",
+   "rank": "D",
+   "afterSkill": "槍弓猛襲",
+   "afterRank": "D",
+   "target": "弓",
+   "rate": "35%",
+   "effectShort": "攻撃 20%上昇",
+   "afterTarget": "槍弓",
+   "afterRate": "15%",
+   "afterEffectShort": "攻撃 (コストx9) %上昇 / (武将のコストで効果が変化します)"
+  },
+  {
+   "slot": "C",
+   "skill": "鬼夜叉",
+   "rank": "D",
+   "afterSkill": "反逆の奏",
+   "afterRank": "B",
+   "target": "弓",
+   "rate": "24%",
+   "effectShort": "攻撃 45%上昇 / 武将ランクで効果が変化",
+   "afterTarget": "弓",
+   "afterRate": "25%",
+   "afterEffectShort": "攻撃 50%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "反逆の奏",
+   "rank": "B",
+   "afterSkill": "三矢の礎",
+   "afterRank": "A",
+   "target": "弓",
+   "rate": "25%",
+   "effectShort": "攻撃 50%上昇",
+   "afterTarget": "弓",
+   "afterRate": "40%",
+   "afterEffectShort": "防御 35%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "不屈の名士",
+   "rank": "B",
+   "afterSkill": "天賦の神算",
+   "afterRank": "B",
+   "target": "槍弓砲",
+   "rate": "30.5%",
+   "effectShort": "攻撃 33%上昇",
+   "afterTarget": "全",
+   "afterRate": "50%",
+   "afterEffectShort": "攻撃 12%上昇 / 破壊 5%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3255 と skills/鬼夜叉)およびixawiki(BushoCard/3255戸沢盛安)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

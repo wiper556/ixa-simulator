@@ -1,0 +1,107 @@
+{
+ "name": "伊達秀宗",
+ "no": "3526",
+ "ch": null,
+ "cost": 2.0,
+ "troop": "槍弓器防",
+ "sub": "",
+ "effect": "防御 62%上昇 / 自軍防御参加武将数が24以上の時、防御効果2倍",
+ "furigana": "だてひでむね",
+ "illustrator": "天領寺セナ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 880,
+ "atkGrowth": 29.0,
+ "defBase": 890,
+ "defGrowth": 30.0,
+ "tacticsBase": 470.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2370,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "C",
+  "uma": "B",
+  "ki": "B"
+ },
+ "initialSkill": "宇和ノ小竜",
+ "skillDetail": "C/LV10 確率 44% 防御 62%上昇 / 自軍防御参加武将数が24以上の時防御効果2倍/対象:槍弓器\n①防御 62%上昇 / 自軍防御参加武将数が24以上の時防御効果2倍",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍弓器　確率 44% / 防御 62%上昇 / 自軍防御参加武将数が24以上の時、防御効果2倍"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "宇和ノ小竜",
+   "rank": "C",
+   "afterSkill": "死出ノ田長",
+   "afterRank": "B",
+   "target": "槍弓器",
+   "rate": "44%",
+   "effectShort": "防御 62%上昇 / 自軍防御参加武将数が24以上の時、防御効果2倍",
+   "afterTarget": "槍弓馬器",
+   "afterRate": "54%",
+   "afterEffectShort": "防御 80%上昇 / 卓越：追加確率30%で防御効果が1.5倍"
+  },
+  {
+   "slot": "B",
+   "skill": "斑ノ守護者",
+   "rank": "C",
+   "afterSkill": "死出ノ田長",
+   "afterRank": "B",
+   "target": "槍弓馬器",
+   "rate": "55%",
+   "effectShort": "防御 60%上昇 / (自軍7部隊以下の防御時 効果1.5倍)",
+   "afterTarget": "槍弓馬器",
+   "afterRate": "54%",
+   "afterEffectShort": "防御 80%上昇 / 卓越：追加確率30%で防御効果が1.5倍"
+  },
+  {
+   "slot": "C",
+   "skill": "覇・太虚国崩",
+   "rank": "B",
+   "afterSkill": "戦陣 破軍",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "55%",
+   "effectShort": "防御 75%上昇",
+   "afterTarget": "全",
+   "afterRate": "44%",
+   "afterEffectShort": "攻撃 66%上昇+防御 66%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "死出ノ田長",
+   "rank": "B",
+   "afterSkill": "死出ノ田長",
+   "afterRank": "B",
+   "target": "槍弓馬器",
+   "rate": "54%",
+   "effectShort": "防御 80%上昇 / 卓越：追加確率30%で防御効果が1.5倍"
+  },
+  {
+   "slot": "S2",
+   "skill": "虎切刀",
+   "rank": "C",
+   "afterSkill": "鬼滅刺",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "50%",
+   "effectShort": "攻撃 66%上昇 / 防御 66%上昇",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 70%上昇 防御 70%上昇(卓越確率+25%加算・模倣不可)"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3526 と skills/宇和ノ小竜)およびixawiki(BushoCard/3526伊達秀宗)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。",
+  "2026-08-23: skillDetail に読点が混入していた(F-01違反)。ixanary の原文が「配置時、防御効果が」のように読点を使うのをそのまま取り込んでいた。読点を外した。"
+ ]
+}

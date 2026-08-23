@@ -1,0 +1,106 @@
+{
+ "name": "菅谷政貞",
+ "no": "3430",
+ "ch": null,
+ "cost": 1.5,
+ "troop": "槍器鉄防",
+ "sub": "",
+ "effect": "防御 48%上昇 / 自拠点防御時は防御効果1.5倍",
+ "furigana": "すげのやまささだ",
+ "illustrator": "白藤与一",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 830,
+ "atkGrowth": 25.0,
+ "defBase": 870,
+ "defGrowth": 27.0,
+ "tacticsBase": 450.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 1920,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "B",
+  "uma": "C",
+  "ki": "B"
+ },
+ "initialSkill": "翼包囲陣",
+ "skillDetail": "D/LV10 確率 35% 防御 48%上昇 / 自拠点防御時は防御効果1.5倍/対象:槍器鉄\n①防御 48%上昇 / 自拠点防御時は防御効果1.5倍",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍器鉄　確率 35% / 防御 48%上昇 / 自拠点防御時は防御効果1.5倍"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "翼包囲陣",
+   "rank": "D",
+   "afterSkill": "日輪ノ轍",
+   "afterRank": "B",
+   "target": "槍器鉄",
+   "rate": "35%",
+   "effectShort": "防御 48%上昇 / 自拠点防御時は防御効果1.5倍",
+   "afterTarget": "槍器鉄",
+   "afterRate": "40%",
+   "afterEffectShort": "防御 2.7%上昇 / (部隊ランクボーナスで効果が変化)"
+  },
+  {
+   "slot": "B",
+   "skill": "槍隊備え",
+   "rank": "F",
+   "afterSkill": "槍隊堅守",
+   "afterRank": "F",
+   "target": "槍",
+   "rate": "10%",
+   "effectShort": "防御 15%上昇",
+   "afterTarget": "槍",
+   "afterRate": "20%",
+   "afterEffectShort": "槍防：10%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "開運ノ狼煙",
+   "rank": "D",
+   "afterSkill": "讃歌航路",
+   "afterRank": "D",
+   "target": "槍器",
+   "rate": "39%",
+   "effectShort": "防御 44%上昇 確率：+39% / 速度 35%上昇",
+   "afterTarget": "砲器",
+   "afterRate": "35%",
+   "afterEffectShort": "防御 44%上昇 確率：+35% / 速度 30%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "日輪ノ轍",
+   "rank": "B",
+   "afterSkill": "日輪ノ轍",
+   "afterRank": "B",
+   "target": "槍器鉄",
+   "rate": "40%",
+   "effectShort": "防御 2.7%上昇 / (部隊ランクボーナスで効果が変化)"
+  },
+  {
+   "slot": "S2",
+   "skill": "怨望烈火",
+   "rank": "D",
+   "afterSkill": "神虎吼陣",
+   "afterRank": "B",
+   "target": "槍馬器",
+   "rate": "24%",
+   "effectShort": "防御 49%上昇 / 破壊 30%上昇",
+   "afterTarget": "槍馬砲器",
+   "afterRate": "13%",
+   "afterEffectShort": "防御 42%上昇 / 「陣」「同盟陣」防御時は100%発動"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3430 と skills/翼包囲陣)およびixawiki(BushoCard/3430菅谷政貞)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

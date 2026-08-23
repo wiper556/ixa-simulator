@@ -1,0 +1,109 @@
+{
+ "name": "威徳院",
+ "no": "3586",
+ "ch": null,
+ "cost": 2.0,
+ "troop": "弓砲器攻",
+ "sub": "",
+ "effect": "攻撃 140%上昇 / 防御 140%上昇 / 部隊コスト12以下で効果2倍",
+ "furigana": "いとくいん",
+ "illustrator": "nabe",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 880,
+ "atkGrowth": 29.0,
+ "defBase": 880,
+ "defGrowth": 29.0,
+ "tacticsBase": 480.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2400,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "B",
+  "uma": "B",
+  "ki": "B"
+ },
+ "initialSkill": "春霞晴詠",
+ "skillDetail": "C/LV10 確率 35% 攻撃 140%上昇 / 防御 140%上昇 / 部隊コスト12以下で効果2倍/対象:弓砲器\n①攻撃 140%上昇 / 防御 140%上昇 / 部隊コスト12以下で効果2倍",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓砲器　確率 35% / 攻撃 140%上昇 / 防御 140%上昇 / 部隊コスト12以下で効果2倍"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "春霞晴詠",
+   "rank": "C",
+   "afterSkill": "鬼ノ懐刀",
+   "afterRank": "C",
+   "target": "弓砲器",
+   "rate": "35%",
+   "effectShort": "攻撃 140%上昇 / 防御 140%上昇 / 部隊コスト12以下で効果2倍",
+   "afterTarget": "槍弓馬器",
+   "afterRate": "60%",
+   "afterEffectShort": "攻撃 62%上昇 防御 62%上昇 / 部隊コスト14以下で効果2倍"
+  },
+  {
+   "slot": "B",
+   "skill": "春霞晴詠",
+   "rank": "C",
+   "afterSkill": "鬼ノ懐刀",
+   "afterRank": "C",
+   "target": "弓砲器",
+   "rate": "35%",
+   "effectShort": "攻撃 140%上昇 / 防御 140%上昇 / 部隊コスト12以下で効果2倍",
+   "afterTarget": "槍弓馬器",
+   "afterRate": "60%",
+   "afterEffectShort": "攻撃 62%上昇 防御 62%上昇 / 部隊コスト14以下で効果2倍"
+  },
+  {
+   "slot": "C",
+   "skill": "春霞晴詠",
+   "rank": "C",
+   "afterSkill": "鬼ノ懐刀",
+   "afterRank": "C",
+   "target": "弓砲器",
+   "rate": "35%",
+   "effectShort": "攻撃 140%上昇 / 防御 140%上昇 / 部隊コスト12以下で効果2倍",
+   "afterTarget": "槍弓馬器",
+   "afterRate": "60%",
+   "afterEffectShort": "攻撃 62%上昇 防御 62%上昇 / 部隊コスト14以下で効果2倍"
+  },
+  {
+   "slot": "S1",
+   "skill": "鬼ノ懐刀",
+   "rank": "C",
+   "afterSkill": "",
+   "afterRank": null,
+   "target": "槍弓馬器",
+   "rate": "60%",
+   "effectShort": "攻撃 62%上昇 防御 62%上昇 / 部隊コスト14以下で効果2倍",
+   "afterTarget": null,
+   "afterRate": null,
+   "afterEffectShort": null
+  },
+  {
+   "slot": "S2",
+   "skill": "灯台斬",
+   "rank": "C",
+   "afterSkill": "覇王ノ鬼神",
+   "afterRank": "B",
+   "target": "槍弓器",
+   "rate": "34%",
+   "effectShort": "攻撃 130%上昇 / 防御 130%上昇 / 部隊コスト9以下で効果2倍",
+   "afterTarget": "槍馬砲",
+   "afterRate": "15%",
+   "afterEffectShort": "攻撃 91%上昇 / 相手軍の武将数が12以上だと必ずスキル発動"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3586 と skills/春霞晴詠)およびixawiki(BushoCard/3586威徳院)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

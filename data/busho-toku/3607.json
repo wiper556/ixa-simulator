@@ -1,0 +1,110 @@
+{
+ "name": "比留間伍兵衛",
+ "no": "3607",
+ "ch": null,
+ "cost": 2.0,
+ "troop": "槍弓器攻",
+ "sub": "",
+ "effect": "攻撃 300%上昇 / 不屈1(攻撃戦闘敗北時、指揮兵が不屈の数値×1000まで回復)",
+ "furigana": "ひるまごへえ",
+ "illustrator": "&#169;NW/S,RKKD",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1000,
+ "atkGrowth": 66.0,
+ "defBase": 860,
+ "defGrowth": 49.0,
+ "tacticsBase": 450.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 3000,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "C",
+  "uma": "B",
+  "ki": "B"
+ },
+ "initialSkill": "辻斬り",
+ "skillDetail": "C/LV10 確率 48% 攻撃 300%上昇 / 不屈1(攻撃戦闘敗北時指揮兵が不屈の数値×1000まで回復)/対象:槍弓器\n①攻撃 300%上昇 / 不屈1(攻撃戦闘敗北時指揮兵が不屈の数値×1000まで回復)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍弓器　確率 48% / 攻撃 300%上昇 / 不屈1(攻撃戦闘敗北時、指揮兵が不屈の数値×1000まで回復)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "辻斬り",
+   "rank": "C",
+   "afterSkill": "鉄声",
+   "afterRank": "C",
+   "target": "槍弓器",
+   "rate": "48%",
+   "effectShort": "攻撃 300%上昇 / 不屈1(攻撃戦闘敗北時、指揮兵が不屈の数値×1000まで回復)",
+   "afterTarget": "弓砲器",
+   "afterRate": "20%",
+   "afterEffectShort": "攻撃 285%上昇 / 合流攻撃時は必ずスキル発動"
+  },
+  {
+   "slot": "B",
+   "skill": "辻斬り",
+   "rank": "C",
+   "afterSkill": "鉄声",
+   "afterRank": "C",
+   "target": "槍弓器",
+   "rate": "48%",
+   "effectShort": "攻撃 300%上昇 / 不屈1(攻撃戦闘敗北時、指揮兵が不屈の数値×1000まで回復)",
+   "afterTarget": "弓砲器",
+   "afterRate": "20%",
+   "afterEffectShort": "攻撃 285%上昇 / 合流攻撃時は必ずスキル発動"
+  },
+  {
+   "slot": "C",
+   "skill": "辻斬り",
+   "rank": "C",
+   "afterSkill": "鉄声",
+   "afterRank": "C",
+   "target": "槍弓器",
+   "rate": "48%",
+   "effectShort": "攻撃 300%上昇 / 不屈1(攻撃戦闘敗北時、指揮兵が不屈の数値×1000まで回復)",
+   "afterTarget": "弓砲器",
+   "afterRate": "20%",
+   "afterEffectShort": "攻撃 285%上昇 / 合流攻撃時は必ずスキル発動"
+  },
+  {
+   "slot": "S1",
+   "skill": "鉄声",
+   "rank": "C",
+   "afterSkill": "新宮党",
+   "afterRank": "C",
+   "target": "弓砲器",
+   "rate": "20%",
+   "effectShort": "攻撃 285%上昇 / 合流攻撃時は必ずスキル発動",
+   "afterTarget": "槍弓馬",
+   "afterRate": "25%",
+   "afterEffectShort": "攻撃 96%上昇 / 合流攻撃時は必ずスキル発動"
+  },
+  {
+   "slot": "S2",
+   "skill": "戦陣 凱旋",
+   "rank": "A",
+   "afterSkill": "布都御魂ノ鬨",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "10%",
+   "effectShort": "攻撃 87%上昇+防御 87%上昇",
+   "afterTarget": "全",
+   "afterRate": "35%",
+   "afterEffectShort": "攻撃 40%上昇+防御 40%上昇(部隊内レアリティS以上のスキル個数×20%加算)"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3607 と skills/辻斬り)およびixawiki(BushoCard/3607比留間伍兵衛)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。",
+  "2026-08-23: skillDetail に読点が混入していた(F-01違反)。ixanary の原文が「配置時、防御効果が」のように読点を使うのをそのまま取り込んでいた。読点を外した。"
+ ]
+}

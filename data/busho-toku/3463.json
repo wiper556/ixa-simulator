@@ -1,0 +1,109 @@
+{
+ "name": "上杉景勝",
+ "no": "3463",
+ "ch": null,
+ "cost": 2.0,
+ "troop": "槍弓馬攻",
+ "sub": "",
+ "effect": "攻撃 44%上昇 / 卓越：追加確率25%で攻撃効果が1.5倍",
+ "furigana": "うえすぎかげかつ",
+ "illustrator": "キョー介",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 850,
+ "atkGrowth": 28.0,
+ "defBase": 800,
+ "defGrowth": 22.0,
+ "tacticsBase": 460.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2340,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "B",
+  "uma": "A",
+  "ki": "C"
+ },
+ "initialSkill": "蛮勇の鉄龍",
+ "skillDetail": "D/LV10 確率 100% 攻撃 44%上昇 / 卓越：追加確率25%で攻撃効果が1.5倍/対象:槍弓馬\n①攻撃 44%上昇 / 卓越：追加確率25%で攻撃効果が1.5倍",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍弓馬　確率 100% / 攻撃 44%上昇 / 卓越：追加確率25%で攻撃効果が1.5倍"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "蛮勇の鉄龍",
+   "rank": "D",
+   "afterSkill": "野太刀",
+   "afterRank": "C",
+   "target": "槍弓馬",
+   "rate": "100%",
+   "effectShort": "攻撃 44%上昇 / 卓越：追加確率25%で攻撃効果が1.5倍",
+   "afterTarget": "全",
+   "afterRate": "17%",
+   "afterEffectShort": "攻撃 77%上昇 / 防御 77%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "槍隊急襲",
+   "rank": "F",
+   "afterSkill": "槍隊守備",
+   "afterRank": "F",
+   "target": "槍",
+   "rate": "16%",
+   "effectShort": "槍攻：7.5%上昇 / (武将のコストで効果が変化します)",
+   "afterTarget": "槍",
+   "afterRate": "16%",
+   "afterEffectShort": "防御 (コストx5) %上昇 / (武将のコストで効果が変化します)"
+  },
+  {
+   "slot": "C",
+   "skill": "鬼武蔵",
+   "rank": "D",
+   "afterSkill": "野太刀",
+   "afterRank": "C",
+   "target": "槍弓馬",
+   "rate": "37%",
+   "effectShort": "攻撃 39%上昇 / 防御 39%上昇 / 部隊コスト10以下で効果2倍",
+   "afterTarget": "全",
+   "afterRate": "17%",
+   "afterEffectShort": "攻撃 77%上昇 / 防御 77%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "野太刀",
+   "rank": "C",
+   "afterSkill": "戦陣 凱旋",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "17%",
+   "effectShort": "攻撃 77%上昇 / 防御 77%上昇",
+   "afterTarget": "全",
+   "afterRate": "10%",
+   "afterEffectShort": "攻撃 87%上昇+防御 87%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "征略策",
+   "rank": "D",
+   "afterSkill": "豪槍 御手杵",
+   "afterRank": "B",
+   "target": "槍弓馬",
+   "rate": "27%",
+   "effectShort": "攻撃 20%上昇 / 武将ランクで効果が変化",
+   "afterTarget": "槍弓馬",
+   "afterRate": "42%",
+   "afterEffectShort": "攻撃 49%上昇 / 破壊 24%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3463 と skills/蛮勇の鉄龍)およびixawiki(BushoCard/3463上杉景勝)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

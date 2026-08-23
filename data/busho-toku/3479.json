@@ -1,0 +1,109 @@
+{
+ "name": "村井長瀬",
+ "no": "3479",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "槍馬騎防",
+ "sub": "",
+ "effect": "防御 62%上昇 / 自拠点防御時は防御効果1.5倍",
+ "furigana": "むらいながより",
+ "illustrator": "JaneMere",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 830,
+ "atkGrowth": 24.0,
+ "defBase": 880,
+ "defGrowth": 28.0,
+ "tacticsBase": 460.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2580,
+ "rankGrades": {
+  "yari": null,
+  "yumi": null,
+  "uma": null,
+  "ki": null
+ },
+ "initialSkill": "百万石ノ忠盾",
+ "skillDetail": "C/LV10 確率 100% 防御 62%上昇 / 自拠点防御時は防御効果1.5倍/対象:槍馬騎\n①防御 62%上昇 / 自拠点防御時は防御効果1.5倍",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍馬騎　確率 100% / 防御 62%上昇 / 自拠点防御時は防御効果1.5倍"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "百万石ノ忠盾",
+   "rank": "C",
+   "afterSkill": "百万石長壁",
+   "afterRank": "B",
+   "target": "槍馬騎",
+   "rate": "100%",
+   "effectShort": "防御 62%上昇 / 自拠点防御時は防御効果1.5倍",
+   "afterTarget": "槍馬砲",
+   "afterRate": "9%",
+   "afterEffectShort": "防御 84%上昇 / 自拠点防御時は100%発動"
+  },
+  {
+   "slot": "B",
+   "skill": "百万石ノ忠盾",
+   "rank": "C",
+   "afterSkill": "百万石長壁",
+   "afterRank": "B",
+   "target": "槍馬騎",
+   "rate": "100%",
+   "effectShort": "防御 62%上昇 / 自拠点防御時は防御効果1.5倍",
+   "afterTarget": "槍馬砲",
+   "afterRate": "9%",
+   "afterEffectShort": "防御 84%上昇 / 自拠点防御時は100%発動"
+  },
+  {
+   "slot": "C",
+   "skill": "再興軍",
+   "rank": "D",
+   "afterSkill": "仏敵討伐",
+   "afterRank": "B",
+   "target": "槍馬",
+   "rate": "14%",
+   "effectShort": "防御 57%上昇 / 自拠点防御時は100%発動",
+   "afterTarget": "槍弓馬",
+   "afterRate": "36%",
+   "afterEffectShort": "防御 (コストx14) %上昇 / (武将のコストで効果が変化します)"
+  },
+  {
+   "slot": "S1",
+   "skill": "百万石長壁",
+   "rank": "B",
+   "afterSkill": "籠城の妙技",
+   "afterRank": "A",
+   "target": "槍馬砲",
+   "rate": "9%",
+   "effectShort": "防御 84%上昇 / 自拠点防御時は100%発動",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "防御 50%上昇(卓越:追加確率15%で防御効果が3倍)"
+  },
+  {
+   "slot": "S2",
+   "skill": "絶界煉獄",
+   "rank": "B",
+   "afterSkill": "闘戦経",
+   "afterRank": "B",
+   "target": "槍弓馬器",
+   "rate": "27%",
+   "effectShort": "防御 90%上昇 / 本丸防御陣形に配置時、この武将の編成コスト消費を-0.5する(模倣不可)",
+   "afterTarget": "全",
+   "afterRate": "10%",
+   "afterEffectShort": "防御 80.4%上昇 / 自拠点防御時は100%発動"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3479 と skills/百万石ノ忠盾)およびixawiki(BushoCard/3479村井長瀬)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

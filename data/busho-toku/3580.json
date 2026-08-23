@@ -1,0 +1,109 @@
+{
+ "name": "三好義興",
+ "no": "3580",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "槍馬器攻",
+ "sub": "",
+ "effect": "攻撃 40%上昇 / 武将ランクで攻撃効果が変化",
+ "furigana": "みよしよしおき",
+ "illustrator": "tatsuya",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 910,
+ "atkGrowth": 32.0,
+ "defBase": 860,
+ "defGrowth": 26.0,
+ "tacticsBase": 470.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2670,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "C",
+  "uma": "B",
+  "ki": "B"
+ },
+ "initialSkill": "覇国ノ嗣子",
+ "skillDetail": "C/LV10 確率 45% 攻撃 40%上昇 / 武将ランクで攻撃効果が変化/対象:槍馬器\n①攻撃 40%上昇 / 武将ランクで攻撃効果が変化",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍馬器　確率 45% / 攻撃 40%上昇 / 武将ランクで攻撃効果が変化"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "覇国ノ嗣子",
+   "rank": "C",
+   "afterSkill": "暴風波斬",
+   "afterRank": "C",
+   "target": "槍馬器",
+   "rate": "45%",
+   "effectShort": "攻撃 40%上昇 / 武将ランクで攻撃効果が変化",
+   "afterTarget": "槍馬騎",
+   "afterRate": "42%",
+   "afterEffectShort": "攻撃 16%上昇 / 武将ランクで攻撃効果が変化"
+  },
+  {
+   "slot": "B",
+   "skill": "覇国ノ嗣子",
+   "rank": "C",
+   "afterSkill": "暴風波斬",
+   "afterRank": "C",
+   "target": "槍馬器",
+   "rate": "45%",
+   "effectShort": "攻撃 40%上昇 / 武将ランクで攻撃効果が変化",
+   "afterTarget": "槍馬騎",
+   "afterRate": "42%",
+   "afterEffectShort": "攻撃 16%上昇 / 武将ランクで攻撃効果が変化"
+  },
+  {
+   "slot": "C",
+   "skill": "覇国ノ嗣子",
+   "rank": "C",
+   "afterSkill": "暴風波斬",
+   "afterRank": "C",
+   "target": "槍馬器",
+   "rate": "45%",
+   "effectShort": "攻撃 40%上昇 / 武将ランクで攻撃効果が変化",
+   "afterTarget": "槍馬騎",
+   "afterRate": "42%",
+   "afterEffectShort": "攻撃 16%上昇 / 武将ランクで攻撃効果が変化"
+  },
+  {
+   "slot": "S1",
+   "skill": "暴風波斬",
+   "rank": "C",
+   "afterSkill": "彷徨ふ鬼火",
+   "afterRank": "A",
+   "target": "槍馬騎",
+   "rate": "42%",
+   "effectShort": "攻撃 16%上昇 / 武将ランクで攻撃効果が変化",
+   "afterTarget": "槍馬砲",
+   "afterRate": "47%",
+   "afterEffectShort": "攻撃 (1.8×防御参加武将数)%上昇 / 卓越：追加確率30%で攻撃効果が1.5倍"
+  },
+  {
+   "slot": "S2",
+   "skill": "扇動鎮圧",
+   "rank": "C",
+   "afterSkill": "覇王ノ鬼神",
+   "afterRank": "B",
+   "target": "槍弓砲",
+   "rate": "42%",
+   "effectShort": "攻撃 15%上昇 / 攻撃 15+(武将ランクx11)%上昇",
+   "afterTarget": "槍馬砲",
+   "afterRate": "15%",
+   "afterEffectShort": "攻撃 91%上昇 / 相手軍の武将数が12以上だと必ずスキル発動"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3580 と skills/覇国ノ嗣子)およびixawiki(BushoCard/3580三好義興)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

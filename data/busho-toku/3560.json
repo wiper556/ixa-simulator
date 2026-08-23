@@ -1,0 +1,109 @@
+{
+ "name": "蒲生郷舎",
+ "no": "3560",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "槍弓器攻",
+ "sub": "",
+ "effect": "攻撃 250%上昇 防御 250%上昇",
+ "furigana": "がもうさといえ",
+ "illustrator": "ツヤイルカ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 880,
+ "atkGrowth": 30.0,
+ "defBase": 880,
+ "defGrowth": 30.0,
+ "tacticsBase": 480.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2660,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "B",
+  "uma": "C",
+  "ki": "B"
+ },
+ "initialSkill": "争鶴ノ囀り",
+ "skillDetail": "C/LV10 確率 55% 攻撃 250%上昇 防御 250%上昇/対象:槍弓器\n①攻撃が250%上昇 防御 250%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍弓器　確率 55% / 攻撃 250%上昇 防御 250%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "争鶴ノ囀り",
+   "rank": "C",
+   "afterSkill": "覇・一期一振",
+   "afterRank": "A",
+   "target": "槍弓器",
+   "rate": "55%",
+   "effectShort": "攻撃 250%上昇 防御 250%上昇",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 85%上昇 防御 85%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "争鶴ノ囀り",
+   "rank": "C",
+   "afterSkill": "覇・一期一振",
+   "afterRank": "A",
+   "target": "槍弓器",
+   "rate": "55%",
+   "effectShort": "攻撃 250%上昇 防御 250%上昇",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 85%上昇 防御 85%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "争鶴ノ囀り",
+   "rank": "C",
+   "afterSkill": "覇・一期一振",
+   "afterRank": "A",
+   "target": "槍弓器",
+   "rate": "55%",
+   "effectShort": "攻撃 250%上昇 防御 250%上昇",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 85%上昇 防御 85%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "覇・一期一振",
+   "rank": "A",
+   "afterSkill": "戦陣 破軍",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "攻撃 85%上昇 防御 85%上昇",
+   "afterTarget": "全",
+   "afterRate": "44%",
+   "afterEffectShort": "攻撃 66%上昇+防御 66%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "名人ノ系譜",
+   "rank": "C",
+   "afterSkill": "十字飛車",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "攻撃 92%上昇 防御 92%上昇",
+   "afterTarget": "槍砲器",
+   "afterRate": "42%",
+   "afterEffectShort": "攻撃 77%上昇 / 防御 77%上昇 / 破壊 50%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3560 と skills/争鶴ノ囀り)およびixawiki(BushoCard/3560蒲生郷舎)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

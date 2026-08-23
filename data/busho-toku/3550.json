@@ -1,0 +1,109 @@
+{
+ "name": "富田信高",
+ "no": "3550",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "槍弓馬器防",
+ "sub": "",
+ "effect": "防御 130%上昇 / (自領以外の加勢で効果2倍)",
+ "furigana": "とみたのぶたか",
+ "illustrator": "ヤマザキミコ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 860,
+ "atkGrowth": 26.0,
+ "defBase": 890,
+ "defGrowth": 31.0,
+ "tacticsBase": 470.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2660,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "B",
+  "uma": "B",
+  "ki": "B"
+ },
+ "initialSkill": "不屈ノ絆",
+ "skillDetail": "C/LV10 確率 48% 防御 130%上昇 / (自領以外の加勢で効果2倍)/対象:槍弓馬器\n①防御 130%上昇 / (自領以外の加勢で効果2倍)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍弓馬器　確率 48% / 防御 130%上昇 / (自領以外の加勢で効果2倍)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "不屈ノ絆",
+   "rank": "C",
+   "afterSkill": "忠義ノ銃壁",
+   "afterRank": "C",
+   "target": "槍弓馬器",
+   "rate": "48%",
+   "effectShort": "防御 130%上昇 / (自領以外の加勢で効果2倍)",
+   "afterTarget": "槍弓器鉄",
+   "afterRate": "44%",
+   "afterEffectShort": "防御 65%上昇 / 拠点待機120分ごとに防御効果2倍(上限1回) / 防御最大：260%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "不屈ノ絆",
+   "rank": "C",
+   "afterSkill": "忠義ノ銃壁",
+   "afterRank": "C",
+   "target": "槍弓馬器",
+   "rate": "48%",
+   "effectShort": "防御 130%上昇 / (自領以外の加勢で効果2倍)",
+   "afterTarget": "槍弓器鉄",
+   "afterRate": "44%",
+   "afterEffectShort": "防御 65%上昇 / 拠点待機120分ごとに防御効果2倍(上限1回) / 防御最大：260%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "籠城の妙技",
+   "rank": "A",
+   "afterSkill": "三千世界神将",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "防御 50%上昇(卓越:追加確率15%で防御効果が3倍)",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "防御 120%上昇(本丸防御陣形時コスト消費-1)"
+  },
+  {
+   "slot": "S1",
+   "skill": "忠義ノ銃壁",
+   "rank": "C",
+   "afterSkill": "武勇鬼神ノ如し",
+   "afterRank": "A",
+   "target": "槍弓器鉄",
+   "rate": "44%",
+   "effectShort": "防御 65%上昇 / 拠点待機120分ごとに防御効果2倍(上限1回) / 防御最大：260%上昇",
+   "afterTarget": "弓砲器",
+   "afterRate": "55%",
+   "afterEffectShort": "防御 92%上昇 / 拠点待機90分ごとに防御効果1.2倍(上限3回) / 防御最大：158.9%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "忌籠ノ計",
+   "rank": "A",
+   "afterSkill": "戦陣 破軍",
+   "afterRank": "A",
+   "target": "槍弓器鉄",
+   "rate": "38%",
+   "effectShort": "防御 62%上昇 / 自拠点防御時は防御効果3倍",
+   "afterTarget": "全",
+   "afterRate": "44%",
+   "afterEffectShort": "攻撃 66%上昇+防御 66%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3550 と skills/不屈ノ絆)およびixawiki(BushoCard/3550富田信高)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

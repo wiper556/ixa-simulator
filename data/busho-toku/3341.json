@@ -1,0 +1,103 @@
+{
+ "name": "伊東祐兵",
+ "no": "3341",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "馬器防",
+ "sub": "",
+ "effect": "防御 42%上昇 / 破壊 34%上昇",
+ "furigana": "いとうすけたけ",
+ "illustrator": "山根雪",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 850,
+ "atkGrowth": 21.0,
+ "defBase": 870,
+ "defGrowth": 24.0,
+ "tacticsBase": 440.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2540,
+ "rankGrades": {
+  "yari": "C",
+  "yumi": "C",
+  "uma": "A",
+  "ki": "B"
+ },
+ "initialSkill": "倶利伽羅龍",
+ "skillDetail": "D/LV10 確率 40% 防御 42%上昇 / 破壊 34%上昇/対象:馬器\n①防御が42%上昇 / 破壊 34%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "馬器　確率 40% / 防御 42%上昇 / 破壊 34%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "騎馬隊守備",
+   "rank": "F",
+   "afterSkill": "騎馬隊急襲",
+   "afterRank": "F",
+   "target": "馬",
+   "rate": "16%",
+   "effectShort": "防御 (コストx5) %上昇 / (武将のコストで効果が変化します)",
+   "afterTarget": "馬",
+   "afterRate": "16%",
+   "afterEffectShort": "攻撃 (コストx5) %上昇 / (武将のコストで効果が変化します)"
+  },
+  {
+   "slot": "B",
+   "skill": "勝軍草",
+   "rank": "D",
+   "afterSkill": "以心の采配",
+   "afterRank": "D",
+   "target": "槍弓馬",
+   "rate": "15%",
+   "effectShort": "防御 49%上昇",
+   "afterTarget": "全",
+   "afterRate": "15%",
+   "afterEffectShort": "防御 42%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "倶利伽羅龍",
+   "rank": "D",
+   "afterSkill": "常勝の采配",
+   "afterRank": "B",
+   "target": "馬器",
+   "rate": "40%",
+   "effectShort": "防御 42%上昇 / 破壊 34%上昇",
+   "afterTarget": "槍馬器",
+   "afterRate": "38%",
+   "afterEffectShort": "防御 (0.7x防御参加武将数)%上昇 / (模倣不可)"
+  },
+  {
+   "slot": "S1",
+   "skill": "常勝の采配",
+   "rank": "B",
+   "afterSkill": "常勝の采配",
+   "afterRank": "B",
+   "target": "槍馬器",
+   "rate": "38%",
+   "effectShort": "防御 (0.7x防御参加武将数)%上昇 / (模倣不可)"
+  },
+  {
+   "slot": "S2",
+   "skill": "懐刀",
+   "rank": "D",
+   "afterSkill": "懐刀",
+   "afterRank": "D",
+   "target": "馬砲器",
+   "rate": "32%",
+   "effectShort": "防御 35%上昇 / 武将ランクで効果が変化"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3341 と skills/倶利伽羅龍)およびixawiki(BushoCard/3341伊東祐兵)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

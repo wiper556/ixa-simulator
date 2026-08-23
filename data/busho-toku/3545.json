@@ -1,0 +1,109 @@
+{
+ "name": "下間頼照",
+ "no": "3545",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "槍器鉄防",
+ "sub": "",
+ "effect": "防御 105%上昇 / 自拠点防御時は100%発動",
+ "furigana": "しもつまらいしょう",
+ "illustrator": "しいたけ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 850,
+ "atkGrowth": 25.0,
+ "defBase": 890,
+ "defGrowth": 29.0,
+ "tacticsBase": 470.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2650,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "B",
+  "uma": "C",
+  "ki": "B"
+ },
+ "initialSkill": "越州僧君",
+ "skillDetail": "C/LV10 確率 10% 防御 105%上昇 / 自拠点防御時は100%発動/対象:槍器鉄\n①防御 105%上昇 / 自拠点防御時は100%発動",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍器鉄　確率 10% / 防御 105%上昇 / 自拠点防御時は100%発動"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "越州僧君",
+   "rank": "C",
+   "afterSkill": "籠城の妙技",
+   "afterRank": "A",
+   "target": "槍器鉄",
+   "rate": "10%",
+   "effectShort": "防御 105%上昇 / 自拠点防御時は100%発動",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "防御 50%上昇(卓越:追加確率15%で防御効果が3倍)"
+  },
+  {
+   "slot": "B",
+   "skill": "越州僧君",
+   "rank": "C",
+   "afterSkill": "籠城の妙技",
+   "afterRank": "A",
+   "target": "槍器鉄",
+   "rate": "10%",
+   "effectShort": "防御 105%上昇 / 自拠点防御時は100%発動",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "防御 50%上昇(卓越:追加確率15%で防御効果が3倍)"
+  },
+  {
+   "slot": "C",
+   "skill": "大樹ノ萌芽",
+   "rank": "C",
+   "afterSkill": "覇・太虚国崩",
+   "afterRank": "B",
+   "target": "槍弓馬器",
+   "rate": "70%",
+   "effectShort": "防御 55%上昇 / 自拠点防御時は防御効果2倍",
+   "afterTarget": "全",
+   "afterRate": "55%",
+   "afterEffectShort": "防御 75%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "籠城の妙技",
+   "rank": "A",
+   "afterSkill": "三千世界神将",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "防御 50%上昇(卓越:追加確率15%で防御効果が3倍)",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "防御 120%上昇(本丸防御陣形時コスト消費-1)"
+  },
+  {
+   "slot": "S2",
+   "skill": "百万石長壁",
+   "rank": "B",
+   "afterSkill": "籠城の妙技",
+   "afterRank": "A",
+   "target": "槍馬砲",
+   "rate": "9%",
+   "effectShort": "防御 84%上昇 / 自拠点防御時は100%発動",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "防御 50%上昇(卓越:追加確率15%で防御効果が3倍)"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3545 と skills/越州僧君)およびixawiki(BushoCard/3545下間頼照)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

@@ -1,0 +1,109 @@
+{
+ "name": "亀姫",
+ "no": "3200",
+ "ch": null,
+ "cost": 1.5,
+ "troop": "全防",
+ "sub": "",
+ "effect": "防御 40%上昇 / (自領以外の加勢限定)",
+ "furigana": "かめひめ",
+ "illustrator": "葉山えいし",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 500,
+ "atkGrowth": 15.0,
+ "defBase": 580,
+ "defGrowth": 16.0,
+ "tacticsBase": 350.0,
+ "tacticsGrowth": 1.5,
+ "lv0Troops": 1650,
+ "rankGrades": {
+  "yari": "E",
+  "yumi": "B",
+  "uma": "C",
+  "ki": "C"
+ },
+ "initialSkill": "葵使",
+ "skillDetail": "C/LV10 確率 30% 防御 40%上昇 / (自領以外の加勢限定)/対象:全\n①防御 40%上昇 / (自領以外の加勢限定)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 30% / 防御 40%上昇 / (自領以外の加勢限定)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "乗り崩し",
+   "rank": "D",
+   "afterSkill": "鬼刺",
+   "afterRank": "C",
+   "target": "槍馬",
+   "rate": "20%",
+   "effectShort": "攻撃 20%上昇 / 破壊 5%上昇",
+   "afterTarget": "槍馬砲",
+   "afterRate": "15%",
+   "afterEffectShort": "攻撃 (コストx9) %上昇 / (武将のコストで効果が変化します)"
+  },
+  {
+   "slot": "B",
+   "skill": "騎馬隊円陣",
+   "rank": "D",
+   "afterSkill": "真田丸",
+   "afterRank": "D",
+   "target": "馬",
+   "rate": "40%",
+   "effectShort": "防御 20%上昇",
+   "afterTarget": "槍馬砲",
+   "afterRate": "15%",
+   "afterEffectShort": "防御 +30%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "葵使",
+   "rank": "C",
+   "afterSkill": "鬼刺",
+   "afterRank": "C",
+   "target": "全",
+   "rate": "30%",
+   "effectShort": "防御 40%上昇 / (自領以外の加勢限定)",
+   "afterTarget": "槍馬砲",
+   "afterRate": "15%",
+   "afterEffectShort": "攻撃 (コストx9) %上昇 / (武将のコストで効果が変化します)"
+  },
+  {
+   "slot": "S1",
+   "skill": "鬼刺",
+   "rank": "C",
+   "afterSkill": "乗り崩し",
+   "afterRank": "D",
+   "target": "槍馬砲",
+   "rate": "15%",
+   "effectShort": "攻撃 (コストx9) %上昇 / (武将のコストで効果が変化します)",
+   "afterTarget": "槍馬",
+   "afterRate": "20%",
+   "afterEffectShort": "攻撃 20%上昇 / 破壊 5%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "騎突 金剛",
+   "rank": "C",
+   "afterSkill": "剛勇無双",
+   "afterRank": "B",
+   "target": "馬",
+   "rate": "25%",
+   "effectShort": "攻撃 25%上昇 / 破壊 5%上昇",
+   "afterTarget": "槍馬砲",
+   "afterRate": "30%",
+   "afterEffectShort": "攻撃 25%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3200 と skills/葵使)およびixawiki(BushoCard/3200亀姫)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

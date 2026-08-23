@@ -1,0 +1,106 @@
+{
+ "name": "成瀬正成",
+ "no": "3524",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "槍弓器鉄防",
+ "sub": "",
+ "effect": "防御 65%上昇 / 拠点待機120分ごとに防御効果2倍(上限1回) / 防御最大：260%上昇",
+ "furigana": "なるせまさなり",
+ "illustrator": "士基軽太",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 860,
+ "atkGrowth": 26.0,
+ "defBase": 890,
+ "defGrowth": 29.0,
+ "tacticsBase": 470.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2650,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "B",
+  "uma": "C",
+  "ki": "A"
+ },
+ "initialSkill": "忠義ノ銃壁",
+ "skillDetail": "C/LV10 確率 44% 防御 65%上昇 / 拠点待機120分ごとに防御効果2倍(上限1回) / 防御最大：260%上昇/対象:槍弓器鉄\n①防御が65%上昇 / 拠点待機120分ごとに防御効果2倍(上限1回) / 防御最大：260%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍弓器鉄　確率 44% / 防御 65%上昇 / 拠点待機120分ごとに防御効果2倍(上限1回) / 防御最大：260%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "忠義ノ銃壁",
+   "rank": "C",
+   "afterSkill": "武勇鬼神ノ如し",
+   "afterRank": "A",
+   "target": "槍弓器鉄",
+   "rate": "44%",
+   "effectShort": "防御 65%上昇 / 拠点待機120分ごとに防御効果2倍(上限1回) / 防御最大：260%上昇",
+   "afterTarget": "弓砲器",
+   "afterRate": "55%",
+   "afterEffectShort": "防御 92%上昇 / 拠点待機90分ごとに防御効果1.2倍(上限3回) / 防御最大：158.9%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "忠義ノ銃壁",
+   "rank": "C",
+   "afterSkill": "武勇鬼神ノ如し",
+   "afterRank": "A",
+   "target": "槍弓器鉄",
+   "rate": "44%",
+   "effectShort": "防御 65%上昇 / 拠点待機120分ごとに防御効果2倍(上限1回) / 防御最大：260%上昇",
+   "afterTarget": "弓砲器",
+   "afterRate": "55%",
+   "afterEffectShort": "防御 92%上昇 / 拠点待機90分ごとに防御効果1.2倍(上限3回) / 防御最大：158.9%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "千年鳳凰",
+   "rank": "B",
+   "afterSkill": "百万石長壁",
+   "afterRank": "B",
+   "target": "槍弓器鉄",
+   "rate": "32%",
+   "effectShort": "防御 62%上昇 / (敵軍4部隊以下で効果1.5倍)",
+   "afterTarget": "槍馬砲",
+   "afterRate": "9%",
+   "afterEffectShort": "防御 84%上昇 / 自拠点防御時は100%発動"
+  },
+  {
+   "slot": "S1",
+   "skill": "武勇鬼神ノ如し",
+   "rank": "A",
+   "afterSkill": "淡雪ノ舞",
+   "afterRank": "A",
+   "target": "弓砲器",
+   "rate": "55%",
+   "effectShort": "防御 92%上昇 / 拠点待機90分ごとに防御効果1.2倍(上限3回) / 防御最大：158.9%上昇",
+   "afterTarget": "弓砲器",
+   "afterRate": "55%",
+   "afterEffectShort": "防御 10%上昇 / (所属部隊のレアリティB以上のスキル個数 x10%)"
+  },
+  {
+   "slot": "S2",
+   "skill": "愛染王法",
+   "rank": "B",
+   "afterSkill": "愛染王法",
+   "afterRank": "B",
+   "target": "全",
+   "rate": "40%",
+   "effectShort": "防御 105.6%上昇 / 武将ランクで効果が変化"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3524 と skills/忠義ノ銃壁)およびixawiki(BushoCard/3524成瀬正成)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

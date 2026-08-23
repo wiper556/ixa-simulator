@@ -1,0 +1,106 @@
+{
+ "name": "犬童頼安",
+ "no": "3316",
+ "ch": null,
+ "cost": 3.0,
+ "troop": "全防",
+ "sub": "",
+ "effect": "防御 42%上昇",
+ "furigana": "いんどうよりやす",
+ "illustrator": "GODTAIL",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 840,
+ "atkGrowth": 21.0,
+ "defBase": 880,
+ "defGrowth": 23.0,
+ "tacticsBase": 440.0,
+ "tacticsGrowth": 1.5,
+ "lv0Troops": 2770,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "B",
+  "uma": "B",
+  "ki": "C"
+ },
+ "initialSkill": "以心の采配",
+ "skillDetail": "D/LV10 確率 15% 防御 42%上昇/対象:全\n①防御が42%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 15% / 防御 42%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "鉄壁の備え",
+   "rank": "D",
+   "afterSkill": "城崩し",
+   "afterRank": "D",
+   "target": "全",
+   "rate": "40%",
+   "effectShort": "防御 15%上昇",
+   "afterTarget": "器",
+   "afterRate": "35%",
+   "afterEffectShort": "破壊 20%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "神記一筆",
+   "rank": "D",
+   "afterSkill": "総構え",
+   "afterRank": "B",
+   "target": "全",
+   "rate": "35%",
+   "effectShort": "防御 20%上昇 / 防御時のみ 自軍の兵士被害数：2%減少(重複・模倣不可)",
+   "afterTarget": "全",
+   "afterRate": "35%",
+   "afterEffectShort": "防御 30%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "以心の采配",
+   "rank": "D",
+   "afterSkill": "二葉心",
+   "afterRank": "D",
+   "target": "全",
+   "rate": "15%",
+   "effectShort": "防御 42%上昇",
+   "afterTarget": "槍弓馬",
+   "afterRate": "28%",
+   "afterEffectShort": "攻撃 42%上昇 / 防御 42%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "二葉心",
+   "rank": "D",
+   "afterSkill": "二葉心",
+   "afterRank": "D",
+   "target": "槍弓馬",
+   "rate": "28%",
+   "effectShort": "攻撃 42%上昇 / 防御 42%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "慟哭の義将",
+   "rank": "D",
+   "afterSkill": "不動の荒神",
+   "afterRank": "B",
+   "target": "槍馬",
+   "rate": "34%",
+   "effectShort": "防御 34%上昇",
+   "afterTarget": "槍弓馬",
+   "afterRate": "18%",
+   "afterEffectShort": "防御 45%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3316 と skills/以心の采配)およびixawiki(BushoCard/3316犬童頼安)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

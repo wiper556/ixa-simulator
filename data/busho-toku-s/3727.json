@@ -1,0 +1,103 @@
+{
+ "name": "阿梅",
+ "no": "3727",
+ "ch": null,
+ "cost": 3.0,
+ "troop": "全防",
+ "sub": "",
+ "effect": "防御 (5x自軍姫数)%上昇 / (効果上限150%まで)",
+ "furigana": "おうめ",
+ "illustrator": "戸橋ことみ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 860,
+ "atkGrowth": 21.0,
+ "defBase": 900,
+ "defGrowth": 23.0,
+ "tacticsBase": 440.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 1900,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "潜姫到陣",
+ "skillDetail": "D/LV10 確率 35% 防御 (5x自軍姫数)%上昇 / (効果上限150%まで)/対象:全\n①防御 (5x自軍姫数)%上昇 / (効果上限150%まで)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 35% / 防御 (5x自軍姫数)%上昇 / (効果上限150%まで)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "鉄砲隊円陣",
+   "rank": "D",
+   "afterSkill": "弾幕防壁陣",
+   "afterRank": "C",
+   "target": "砲",
+   "rate": "35%",
+   "effectShort": "防御 20%上昇",
+   "afterTarget": "弓砲",
+   "afterRate": "20%",
+   "afterEffectShort": "防御 30%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "六道の矜持",
+   "rank": "D",
+   "afterSkill": "六道の矜持",
+   "afterRank": "D",
+   "target": "弓砲",
+   "rate": "20%",
+   "effectShort": "防御 24%上昇 / (自領以外の加勢で効果2倍)"
+  },
+  {
+   "slot": "C",
+   "skill": "慈愛の艶牢",
+   "rank": "B",
+   "afterSkill": "盟約の寵姫",
+   "afterRank": "B",
+   "target": "全",
+   "rate": "46%",
+   "effectShort": "防御 23%上昇 / 攻撃部隊の帰還を2倍遅延させる / (最大10倍遅延まで)",
+   "afterTarget": "全",
+   "afterRate": "30%",
+   "afterEffectShort": "防御 35%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "潜姫到陣",
+   "rank": "D",
+   "afterSkill": "潜姫到陣",
+   "afterRank": "D",
+   "target": "全",
+   "rate": "35%",
+   "effectShort": "防御 (5x自軍姫数)%上昇 / (効果上限150%まで)"
+  },
+  {
+   "slot": "S2",
+   "skill": "謀 表裏比興",
+   "rank": "S",
+   "afterSkill": "覇王征軍",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "35%",
+   "effectShort": "防御 45%上昇",
+   "afterTarget": "全",
+   "afterRate": "42%",
+   "afterEffectShort": "攻撃 (部隊総コスト依存)%上昇(総C25=388.79%)(部隊総コストで変動、TRなし)"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3727 と skills/潜姫到陣)およびixawiki(BushoCard/3727阿梅)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

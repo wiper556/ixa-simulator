@@ -1,0 +1,106 @@
+{
+ "name": "江口正吉",
+ "no": "3354",
+ "ch": null,
+ "cost": 2.0,
+ "troop": "弓焙攻",
+ "sub": "",
+ "effect": "攻撃 52%上昇 / (10時～16時は確率2倍)",
+ "furigana": "えぐちまさよし",
+ "illustrator": "福田彰宏(鹿角)",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 870,
+ "atkGrowth": 23.0,
+ "defBase": 820,
+ "defGrowth": 21.0,
+ "tacticsBase": 470.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2290,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "A",
+  "uma": "C",
+  "ki": "B"
+ },
+ "initialSkill": "笄ノ計",
+ "skillDetail": "D/LV10 確率 19% 攻撃 52%上昇 / (10時～16時は確率2倍)/対象:弓焙\n①攻撃 52%上昇 / (10時～16時は確率2倍)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓焙　確率 19% / 攻撃 52%上昇 / (10時～16時は確率2倍)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "弓隊急襲",
+   "rank": "F",
+   "afterSkill": "弓隊守備",
+   "afterRank": "F",
+   "target": "弓",
+   "rate": "16%",
+   "effectShort": "攻撃 (コストx5) %上昇 / (武将のコストで効果が変化します)",
+   "afterTarget": "弓",
+   "afterRate": "16%",
+   "afterEffectShort": "防御 (コストx6) %上昇 / (武将のコストで効果が変化します)"
+  },
+  {
+   "slot": "B",
+   "skill": "夜叉の円舞",
+   "rank": "D",
+   "afterSkill": "傾天の嘆き",
+   "afterRank": "B",
+   "target": "弓砲",
+   "rate": "30%",
+   "effectShort": "攻撃 33%上昇",
+   "afterTarget": "弓砲",
+   "afterRate": "30%",
+   "afterEffectShort": "攻撃 35%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "笄ノ計",
+   "rank": "D",
+   "afterSkill": "戦巧者",
+   "afterRank": "D",
+   "target": "弓焙",
+   "rate": "19%",
+   "effectShort": "攻撃 52%上昇 / (10時～16時は確率2倍)",
+   "afterTarget": "槍弓器",
+   "afterRate": "35%",
+   "afterEffectShort": "攻撃 36%上昇 / (2部隊以下の攻撃で効果1.5倍)"
+  },
+  {
+   "slot": "S1",
+   "skill": "戦巧者",
+   "rank": "D",
+   "afterSkill": "大貉",
+   "afterRank": "D",
+   "target": "槍弓器",
+   "rate": "35%",
+   "effectShort": "攻撃 36%上昇 / (2部隊以下の攻撃で効果1.5倍)",
+   "afterTarget": "槍弓器",
+   "afterRate": "32%",
+   "afterEffectShort": "攻撃 34%上昇 / 破壊 17%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "日本丸咆哮",
+   "rank": "B",
+   "afterSkill": "日本丸咆哮",
+   "afterRank": "B",
+   "target": "弓砲器",
+   "rate": "16%",
+   "effectShort": "攻撃 49%上昇 / 破壊 25%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3354 と skills/笄ノ計)およびixawiki(BushoCard/3354江口正吉)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

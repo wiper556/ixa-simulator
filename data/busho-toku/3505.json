@@ -1,0 +1,106 @@
+{
+ "name": "森忠政",
+ "no": "3505",
+ "ch": null,
+ "cost": 3.0,
+ "troop": "馬器騎防",
+ "sub": "",
+ "effect": "防御 66%上昇 / (自領以外の加勢で効果1.5倍)",
+ "furigana": "もりただまさ",
+ "illustrator": "Natto-7",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 830,
+ "atkGrowth": 23.0,
+ "defBase": 880,
+ "defGrowth": 28.0,
+ "tacticsBase": 460.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2980,
+ "rankGrades": {
+  "yari": "C",
+  "yumi": "B",
+  "uma": "A",
+  "ki": "B"
+ },
+ "initialSkill": "千人塚",
+ "skillDetail": "C/LV10 確率 32% 防御 66%上昇 / (自領以外の加勢で効果1.5倍)/対象:馬器騎\n①防御 66%上昇 / (自領以外の加勢で効果1.5倍)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "馬器騎　確率 32% / 防御 66%上昇 / (自領以外の加勢で効果1.5倍)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "千人塚",
+   "rank": "C",
+   "afterSkill": "極楽護法",
+   "afterRank": "B",
+   "target": "馬器騎",
+   "rate": "32%",
+   "effectShort": "防御 66%上昇 / (自領以外の加勢で効果1.5倍)",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 60%上昇 防御 60%上昇 / 卓越：追加確率50%で攻防効果が1.5倍"
+  },
+  {
+   "slot": "B",
+   "skill": "千人塚",
+   "rank": "C",
+   "afterSkill": "極楽護法",
+   "afterRank": "B",
+   "target": "馬器騎",
+   "rate": "32%",
+   "effectShort": "防御 66%上昇 / (自領以外の加勢で効果1.5倍)",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 60%上昇 防御 60%上昇 / 卓越：追加確率50%で攻防効果が1.5倍"
+  },
+  {
+   "slot": "C",
+   "skill": "仏鬼",
+   "rank": "D",
+   "afterSkill": "虎嘯",
+   "afterRank": "B",
+   "target": "槍馬器",
+   "rate": "100%",
+   "effectShort": "攻撃 47%上昇 防御 47%上昇 / 卓越：追加確率30%で攻防効果が1.5倍",
+   "afterTarget": "槍弓馬器",
+   "afterRate": "27%",
+   "afterEffectShort": "攻撃防御 ((1+武将ランク)×武将コスト×2.2) %上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "極楽護法",
+   "rank": "B",
+   "afterSkill": "戦場妙技",
+   "afterRank": "B",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "攻撃 60%上昇 防御 60%上昇 / 卓越：追加確率50%で攻防効果が1.5倍",
+   "afterTarget": "全",
+   "afterRate": "32%",
+   "afterEffectShort": "攻撃 72%上昇+防御 72%上昇+破壊 20%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "死出ノ田長",
+   "rank": "B",
+   "afterSkill": "死出ノ田長",
+   "afterRank": "B",
+   "target": "槍弓馬器",
+   "rate": "54%",
+   "effectShort": "防御 80%上昇 / 卓越：追加確率30%で防御効果が1.5倍"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3505 と skills/千人塚)およびixawiki(BushoCard/3505森忠政)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

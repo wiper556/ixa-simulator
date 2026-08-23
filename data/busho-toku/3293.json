@@ -1,0 +1,106 @@
+{
+ "name": "岡部元信",
+ "no": "3293",
+ "ch": null,
+ "cost": 3.0,
+ "troop": "弓馬器防",
+ "sub": "",
+ "effect": "防御 ((1+ランク)xコストx1.7) %上昇 / 武将ランクとコストで効果が変化",
+ "furigana": "おかべもとのぶ",
+ "illustrator": "東柚己",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 820,
+ "atkGrowth": 18.0,
+ "defBase": 850,
+ "defGrowth": 21.0,
+ "tacticsBase": 430.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 2780,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "B"
+ },
+ "initialSkill": "比類なき忠功",
+ "skillDetail": "D/LV10 確率 30% 防御 ((1+ランク)xコストx1.7) %上昇 / 武将ランクとコストで効果が変化/対象:弓馬器\n①防御 ((1+ランク)xコストx1.7) %上昇 / 武将ランクとコストで効果が変化",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓馬器　確率 30% / 防御 ((1+ランク)xコストx1.7) %上昇 / 武将ランクとコストで効果が変化"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "兵器布陣",
+   "rank": "E",
+   "afterSkill": "城砕き",
+   "afterRank": "E",
+   "target": "器",
+   "rate": "15%",
+   "effectShort": "防御 20%上昇",
+   "afterTarget": "器",
+   "afterRate": "15%",
+   "afterEffectShort": "破壊 20%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "相伴衆",
+   "rank": "D",
+   "afterSkill": "足軽軍法",
+   "afterRank": "D",
+   "target": "弓砲器",
+   "rate": "10%",
+   "effectShort": "防御 15%上昇",
+   "afterTarget": "槍器",
+   "afterRate": "15%",
+   "afterEffectShort": "攻撃 (コストx9) %上昇 / (武将のコストで効果が変化します)"
+  },
+  {
+   "slot": "C",
+   "skill": "矢雨備え",
+   "rank": "D",
+   "afterSkill": "三段撃 神速",
+   "afterRank": "C",
+   "target": "弓器",
+   "rate": "30%",
+   "effectShort": "防御 25%上昇",
+   "afterTarget": "砲",
+   "afterRate": "50%",
+   "afterEffectShort": "攻撃 12%上昇 / 破壊 15%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "比類なき忠功",
+   "rank": "D",
+   "afterSkill": "比類なき忠功",
+   "afterRank": "D",
+   "target": "弓馬器",
+   "rate": "30%",
+   "effectShort": "防御 ((1+ランク)xコストx1.7) %上昇 / 武将ランクとコストで効果が変化"
+  },
+  {
+   "slot": "S2",
+   "skill": "君臣豊楽",
+   "rank": "B",
+   "afterSkill": "捨て奸",
+   "afterRank": "B",
+   "target": "弓砲器",
+   "rate": "15%",
+   "effectShort": "防御 40%上昇",
+   "afterTarget": "弓砲器",
+   "afterRate": "15%",
+   "afterEffectShort": "防御 37%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3293 と skills/比類なき忠功)およびixawiki(BushoCard/3293岡部元信)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

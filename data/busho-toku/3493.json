@@ -1,0 +1,109 @@
+{
+ "name": "神保長職",
+ "no": "3493",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "全防",
+ "sub": "",
+ "effect": "防御 74%上昇 / このスキルを所持する武将の全スキルの卓越確率に15%を加算する(模倣不可)",
+ "furigana": "じんぼうながもと",
+ "illustrator": "加藤さやか",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 840,
+ "atkGrowth": 24.0,
+ "defBase": 860,
+ "defGrowth": 26.0,
+ "tacticsBase": 470.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2600,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "A",
+  "uma": "B",
+  "ki": "C"
+ },
+ "initialSkill": "神通力",
+ "skillDetail": "C/LV10 確率 100% 防御 74%上昇 / このスキルを所持する武将の全スキルの卓越確率に15%を加算する(模倣不可)/対象:全\n①防御 74%上昇 / このスキルを所持する武将の全スキルの卓越確率に15%を加算する(模倣不可)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 防御 74%上昇 / このスキルを所持する武将の全スキルの卓越確率に15%を加算する(模倣不可)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "神通力",
+   "rank": "C",
+   "afterSkill": "曼珠沙華",
+   "afterRank": "D",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "防御 74%上昇 / このスキルを所持する武将の全スキルの卓越確率に15%を加算する(模倣不可)",
+   "afterTarget": "全",
+   "afterRate": "40%",
+   "afterEffectShort": "攻撃 59%上昇 防御 59%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "神通力",
+   "rank": "C",
+   "afterSkill": "曼珠沙華",
+   "afterRank": "D",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "防御 74%上昇 / このスキルを所持する武将の全スキルの卓越確率に15%を加算する(模倣不可)",
+   "afterTarget": "全",
+   "afterRate": "40%",
+   "afterEffectShort": "攻撃 59%上昇 防御 59%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "暁光",
+   "rank": "D",
+   "afterSkill": "屈指の勇将",
+   "afterRank": "D",
+   "target": "全",
+   "rate": "24%",
+   "effectShort": "攻撃 38%上昇 / 防御 38%上昇",
+   "afterTarget": "全",
+   "afterRate": "37%",
+   "afterEffectShort": "攻撃 22%上昇 / 防御 22%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "曼珠沙華",
+   "rank": "D",
+   "afterSkill": "虎嘯",
+   "afterRank": "B",
+   "target": "全",
+   "rate": "40%",
+   "effectShort": "攻撃 59%上昇 防御 59%上昇",
+   "afterTarget": "槍弓馬器",
+   "afterRate": "27%",
+   "afterEffectShort": "攻撃防御 ((1+武将ランク)×武将コスト×2.2) %上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "虎切刀",
+   "rank": "C",
+   "afterSkill": "鬼滅刺",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "50%",
+   "effectShort": "攻撃 66%上昇 / 防御 66%上昇",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 70%上昇 防御 70%上昇(卓越確率+25%加算・模倣不可)"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3493 と skills/神通力)およびixawiki(BushoCard/3493神保長職)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

@@ -1,0 +1,103 @@
+{
+ "name": "西尾宗次",
+ "no": "3443",
+ "ch": null,
+ "cost": 3.0,
+ "troop": "砲器攻",
+ "sub": "",
+ "effect": "攻撃 42%上昇 / (3部隊以下の攻撃で効果2倍)",
+ "furigana": "にしおむねつぐ",
+ "illustrator": "小森ニコ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 880,
+ "atkGrowth": 28.0,
+ "defBase": 850,
+ "defGrowth": 27.0,
+ "tacticsBase": 450.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2910,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "B",
+  "uma": "C",
+  "ki": "A"
+ },
+ "initialSkill": "誉ノ戦功",
+ "skillDetail": "D/LV10 確率 36% 攻撃 42%上昇 / (3部隊以下の攻撃で効果2倍)/対象:砲器\n①攻撃 42%上昇 / (3部隊以下の攻撃で効果2倍)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "砲器　確率 36% / 攻撃 42%上昇 / (3部隊以下の攻撃で効果2倍)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "誉ノ戦功",
+   "rank": "D",
+   "afterSkill": "火将ノ熊手",
+   "afterRank": "B",
+   "target": "砲器",
+   "rate": "36%",
+   "effectShort": "攻撃 42%上昇 / (3部隊以下の攻撃で効果2倍)",
+   "afterTarget": "槍砲器",
+   "afterRate": "38%",
+   "afterEffectShort": "攻撃 ((1+ランク)xコストx1.7) %上昇 / 武将ランクとコストで効果が変化"
+  },
+  {
+   "slot": "B",
+   "skill": "鉄砲隊進撃",
+   "rank": "F",
+   "afterSkill": "城破り",
+   "afterRank": "F",
+   "target": "砲",
+   "rate": "8%",
+   "effectShort": "攻撃 15%上昇",
+   "afterTarget": "器",
+   "afterRate": "10%",
+   "afterEffectShort": "破壊 15%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "雑賀ノ闇鉄砲",
+   "rank": "D",
+   "afterSkill": "南蛮砲術",
+   "afterRank": "D",
+   "target": "砲器",
+   "rate": "12%",
+   "effectShort": "攻撃 43%上昇 / (19時～翌01時は確率5倍)",
+   "afterTarget": "砲器",
+   "afterRate": "24%",
+   "afterEffectShort": "攻撃 34%上昇 / 破壊 27%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "火将ノ熊手",
+   "rank": "B",
+   "afterSkill": "火将ノ熊手",
+   "afterRank": "B",
+   "target": "槍砲器",
+   "rate": "38%",
+   "effectShort": "攻撃 ((1+ランク)xコストx1.7) %上昇 / 武将ランクとコストで効果が変化"
+  },
+  {
+   "slot": "S2",
+   "skill": "戦鬼侵軍",
+   "rank": "B",
+   "afterSkill": "戦鬼侵軍",
+   "afterRank": "B",
+   "target": "槍砲器",
+   "rate": "15%",
+   "effectShort": "攻撃 54%上昇 / 合流攻撃時は必ずスキル発動"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3443 と skills/誉ノ戦功)およびixawiki(BushoCard/3443西尾宗次)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

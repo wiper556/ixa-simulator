@@ -1,0 +1,109 @@
+{
+ "name": "竹中重門",
+ "no": "3581",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "槍砲器攻",
+ "sub": "",
+ "effect": "攻撃 85%上昇 防御 85%上昇 / 部隊内の「豊鑑」スキル数×50%を攻防効果に加算",
+ "furigana": "たけなかしげかど",
+ "illustrator": "isuZu",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 880,
+ "atkGrowth": 30.0,
+ "defBase": 880,
+ "defGrowth": 30.0,
+ "tacticsBase": 480.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2670,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "B",
+  "uma": "B",
+  "ki": "B"
+ },
+ "initialSkill": "豊鑑",
+ "skillDetail": "C/LV10 確率 35% 攻撃 85%上昇 防御 85%上昇 / 部隊内の「豊鑑」スキル数×50%を攻防効果に加算/対象:槍砲器\n①攻撃 85%上昇 防御 85%上昇 / 部隊内の「豊鑑」スキル数×50%を攻防効果に加算",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍砲器　確率 35% / 攻撃 85%上昇 防御 85%上昇 / 部隊内の「豊鑑」スキル数×50%を攻防効果に加算"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "豊鑑",
+   "rank": "C",
+   "afterSkill": "死線ノ楔",
+   "afterRank": "C",
+   "target": "槍砲器",
+   "rate": "35%",
+   "effectShort": "攻撃 85%上昇 防御 85%上昇 / 部隊内の「豊鑑」スキル数×50%を攻防効果に加算",
+   "afterTarget": "全",
+   "afterRate": "35%",
+   "afterEffectShort": "攻撃 55%上昇 防御 55%上昇 / 部隊内の「死線ノ楔」スキル数×22%を攻防効果に加算"
+  },
+  {
+   "slot": "B",
+   "skill": "豊鑑",
+   "rank": "C",
+   "afterSkill": "死線ノ楔",
+   "afterRank": "C",
+   "target": "槍砲器",
+   "rate": "35%",
+   "effectShort": "攻撃 85%上昇 防御 85%上昇 / 部隊内の「豊鑑」スキル数×50%を攻防効果に加算",
+   "afterTarget": "全",
+   "afterRate": "35%",
+   "afterEffectShort": "攻撃 55%上昇 防御 55%上昇 / 部隊内の「死線ノ楔」スキル数×22%を攻防効果に加算"
+  },
+  {
+   "slot": "C",
+   "skill": "豊鑑",
+   "rank": "C",
+   "afterSkill": "死線ノ楔",
+   "afterRank": "C",
+   "target": "槍砲器",
+   "rate": "35%",
+   "effectShort": "攻撃 85%上昇 防御 85%上昇 / 部隊内の「豊鑑」スキル数×50%を攻防効果に加算",
+   "afterTarget": "全",
+   "afterRate": "35%",
+   "afterEffectShort": "攻撃 55%上昇 防御 55%上昇 / 部隊内の「死線ノ楔」スキル数×22%を攻防効果に加算"
+  },
+  {
+   "slot": "S1",
+   "skill": "死線ノ楔",
+   "rank": "C",
+   "afterSkill": "武神百鬼",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "35%",
+   "effectShort": "攻撃 55%上昇 防御 55%上昇 / 部隊内の「死線ノ楔」スキル数×22%を攻防効果に加算",
+   "afterTarget": "槍弓馬器",
+   "afterRate": "34%",
+   "afterEffectShort": "攻撃 55%上昇 防御 55%上昇 / 部隊内の「武神百鬼」スキル数×35%を攻防効果に加算"
+  },
+  {
+   "slot": "S2",
+   "skill": "一身穿突",
+   "rank": "C",
+   "afterSkill": "鬼滅刺",
+   "afterRank": "A",
+   "target": "槍弓馬",
+   "rate": "35%",
+   "effectShort": "攻撃 50%上昇 防御 50%上昇 / 部隊内の「一身穿突」スキル数×25%を攻防効果に加算",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 70%上昇 防御 70%上昇(卓越確率+25%加算・模倣不可)"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3581 と skills/豊鑑)およびixawiki(BushoCard/3581竹中重門)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

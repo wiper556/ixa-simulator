@@ -1,0 +1,106 @@
+{
+ "name": "前田菊姫",
+ "no": "3402",
+ "ch": null,
+ "cost": 3.0,
+ "troop": "槍弓鉄防",
+ "sub": "",
+ "effect": "防御 36%上昇 / 自拠点防御時は防御効果2倍",
+ "furigana": "まえだきくひめ",
+ "illustrator": "ちゃきん",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 850,
+ "atkGrowth": 22.0,
+ "defBase": 880,
+ "defGrowth": 27.0,
+ "tacticsBase": 460.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2870,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "B",
+  "uma": "C",
+  "ki": "B"
+ },
+ "initialSkill": "騏驥華憐",
+ "skillDetail": "D/LV10 確率 29% 防御 36%上昇 / 自拠点防御時は防御効果2倍/対象:槍弓鉄\n①防御 36%上昇 / 自拠点防御時は防御効果2倍",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍弓鉄　確率 29% / 防御 36%上昇 / 自拠点防御時は防御効果2倍"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "弓隊備え",
+   "rank": "F",
+   "afterSkill": "弓隊堅守",
+   "afterRank": "F",
+   "target": "弓",
+   "rate": "10%",
+   "effectShort": "弓防：15%上昇",
+   "afterTarget": "弓",
+   "afterRate": "20%",
+   "afterEffectShort": "防御 10%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "戦慄ノ美姫",
+   "rank": "D",
+   "afterSkill": "新館御料人",
+   "afterRank": "B",
+   "target": "槍弓馬",
+   "rate": "32%",
+   "effectShort": "攻撃 46%上昇 / 防御 46%上昇",
+   "afterTarget": "弓砲器",
+   "afterRate": "70%",
+   "afterEffectShort": "攻撃 57.6%上昇 / 防御 57.6%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "騏驥華憐",
+   "rank": "D",
+   "afterSkill": "虚軍号令",
+   "afterRank": "B",
+   "target": "槍弓鉄",
+   "rate": "29%",
+   "effectShort": "防御 36%上昇 / 自拠点防御時は防御効果2倍",
+   "afterTarget": "槍弓馬",
+   "afterRate": "32%",
+   "afterEffectShort": "防御 ((1+ランク)xコストx1.8) %上昇 / 武将ランクとコストで効果が変化"
+  },
+  {
+   "slot": "S1",
+   "skill": "虚軍号令",
+   "rank": "B",
+   "afterSkill": "虚軍号令",
+   "afterRank": "B",
+   "target": "槍弓馬",
+   "rate": "32%",
+   "effectShort": "防御 ((1+ランク)xコストx1.8) %上昇 / 武将ランクとコストで効果が変化"
+  },
+  {
+   "slot": "S2",
+   "skill": "援槍励檄",
+   "rank": "B",
+   "afterSkill": "賢女烈婦",
+   "afterRank": "B",
+   "target": "槍弓",
+   "rate": "30%",
+   "effectShort": "防御 35%上昇 / (自領以外の加勢で効果2倍)",
+   "afterTarget": "槍弓",
+   "afterRate": "30%",
+   "afterEffectShort": "防御 33%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3402 と skills/騏驥華憐)およびixawiki(BushoCard/3402前田菊姫)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

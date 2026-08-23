@@ -1,0 +1,111 @@
+{
+ "name": "淀",
+ "no": "3460",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "槍弓器防",
+ "sub": "",
+ "effect": "防御 48%上昇 / 本丸防御陣形の第参列目以降に配置時、防御効果が1.5倍",
+ "furigana": "よど",
+ "illustrator": "雨夜風",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 790,
+ "atkGrowth": 20.0,
+ "defBase": 850,
+ "defGrowth": 27.0,
+ "tacticsBase": 450.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2560,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "B",
+  "uma": "C",
+  "ki": "B"
+ },
+ "initialSkill": "流凛天女",
+ "skillDetail": "D/LV10 確率 37% 防御 48%上昇 / 本丸防御陣形の第参列目以降に配置時防御効果が1.5倍/対象:槍弓器\n①防御 48%上昇 / 本丸防御陣形の第参列目以降に配置時防御効果が1.5倍",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍弓器　確率 37% / 防御 48%上昇 / 本丸防御陣形の第参列目以降に配置時、防御効果が1.5倍"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "流凛天女",
+   "rank": "D",
+   "afterSkill": "慈愛の花",
+   "afterRank": "B",
+   "target": "槍弓器",
+   "rate": "37%",
+   "effectShort": "防御 48%上昇 / 本丸防御陣形の第参列目以降に配置時、防御効果が1.5倍",
+   "afterTarget": "槍弓器",
+   "afterRate": "40%",
+   "afterEffectShort": "防御 32%上昇 / 自拠点防御時は防御効果2倍"
+  },
+  {
+   "slot": "B",
+   "skill": "槍隊堅守",
+   "rank": "F",
+   "afterSkill": "槍隊襲撃",
+   "afterRank": "F",
+   "target": "槍",
+   "rate": "20%",
+   "effectShort": "槍防：10%上昇",
+   "afterTarget": "槍",
+   "afterRate": "20%",
+   "afterEffectShort": "攻撃 10%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "坐薪懸胆",
+   "rank": "D",
+   "afterSkill": "不識ノ殿軍",
+   "afterRank": "B",
+   "target": "槍弓器",
+   "rate": "50%",
+   "effectShort": "防御 34%上昇 / 卓越：追加確率20%で防御効果が2.5倍",
+   "afterTarget": "弓砲器",
+   "afterRate": "70%",
+   "afterEffectShort": "防御 64%上昇 / 卓越：追加確率30%で防御効果が1.5倍"
+  },
+  {
+   "slot": "S1",
+   "skill": "慈愛の花",
+   "rank": "B",
+   "afterSkill": "新館御料人",
+   "afterRank": "B",
+   "target": "槍弓器",
+   "rate": "40%",
+   "effectShort": "防御 32%上昇 / 自拠点防御時は防御効果2倍",
+   "afterTarget": "弓砲器",
+   "afterRate": "70%",
+   "afterEffectShort": "攻撃 57.6%上昇 / 防御 57.6%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "九鬼潜船",
+   "rank": "D",
+   "afterSkill": "忍祖千里眼",
+   "afterRank": "B",
+   "target": "槍弓器",
+   "rate": "52%",
+   "effectShort": "防御 52%上昇 / 本丸防御陣形の第参列目以降に配置時、防御効果が1.5倍",
+   "afterTarget": "槍砲器",
+   "afterRate": "40%/100%",
+   "afterEffectShort": "防御 49%上昇(確率40%)+速度 30%上昇(確率100%、加勢出陣時は速度効果3倍)"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3460 と skills/流凛天女)およびixawiki(BushoCard/3460淀)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。",
+  "2026-08-23: skillDetail に読点が混入していた(F-01違反)。ixanary の原文が「配置時、防御効果が」のように読点を使うのをそのまま取り込んでいた。読点を外した。",
+  "2026-08-23 訂正: 合成候補の確率が片方だけになっていた。忍祖千里眼と戦陣 一閃は**確率を2つ持つスキル**で(ixanary: 防御49%は確率+40%・速度30%は確率+100% / 攻撃50%は確率+50%・速度50%は確率+100%)、既存の登録は「40%/100%」「50%/100%」と両方を書いていた。一括登録のパーサは data/skill の baseRate を1つ引くだけなので片方に落ちていた。既存の書き方に揃えた。"
+ ]
+}

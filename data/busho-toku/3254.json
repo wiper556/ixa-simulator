@@ -1,0 +1,106 @@
+{
+ "name": "渡辺勘兵衛",
+ "no": "3254",
+ "ch": null,
+ "cost": 3.0,
+ "troop": "槍攻",
+ "sub": "",
+ "effect": "攻撃 43%上昇 / 武将ランクで効果が変化",
+ "furigana": "わたなべかんべえ",
+ "illustrator": "匈歌ハトリ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 710,
+ "atkGrowth": 19.0,
+ "defBase": 600,
+ "defGrowth": 15.0,
+ "tacticsBase": 440.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2760,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "C",
+  "uma": "B",
+  "ki": "B"
+ },
+ "initialSkill": "神槍撃",
+ "skillDetail": "D/LV10 確率 20% 攻撃 43%上昇 / 武将ランクで効果が変化/対象:槍\n①攻撃 43%上昇 / 武将ランクで効果が変化",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍　確率 20% / 攻撃 43%上昇 / 武将ランクで効果が変化"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "槍隊急襲",
+   "rank": "F",
+   "afterSkill": "槍隊守備",
+   "afterRank": "F",
+   "target": "槍",
+   "rate": "16%",
+   "effectShort": "槍攻：7.5%上昇 / (武将のコストで効果が変化します)",
+   "afterTarget": "槍",
+   "afterRate": "16%",
+   "afterEffectShort": "防御 (コストx5) %上昇 / (武将のコストで効果が変化します)"
+  },
+  {
+   "slot": "B",
+   "skill": "相克の叛将",
+   "rank": "C",
+   "afterSkill": "槍陣の極み",
+   "afterRank": "B",
+   "target": "槍",
+   "rate": "25%",
+   "effectShort": "攻撃 25%上昇",
+   "afterTarget": "槍",
+   "afterRate": "30%",
+   "afterEffectShort": "防御 30%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "槍大膳",
+   "rank": "D",
+   "afterSkill": "不屈の名士",
+   "afterRank": "B",
+   "target": "槍",
+   "rate": "15%",
+   "effectShort": "攻撃 60%上昇",
+   "afterTarget": "槍弓砲",
+   "afterRate": "30.5%",
+   "afterEffectShort": "攻撃 33%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "神槍撃",
+   "rank": "D",
+   "afterSkill": "神槍撃",
+   "afterRank": "D",
+   "target": "槍",
+   "rate": "20%",
+   "effectShort": "攻撃 43%上昇 / 武将ランクで効果が変化"
+  },
+  {
+   "slot": "S2",
+   "skill": "赤備猛虎",
+   "rank": "B",
+   "afterSkill": "風林火山",
+   "afterRank": "S",
+   "target": "槍馬",
+   "rate": "30%",
+   "effectShort": "攻撃 35%上昇",
+   "afterTarget": "槍・弓・馬",
+   "afterRate": "45%",
+   "afterEffectShort": "攻撃 30%上昇+破壊 15%上昇(TRなし)"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3254 と skills/神槍撃)およびixawiki(BushoCard/3254渡辺勘兵衛)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

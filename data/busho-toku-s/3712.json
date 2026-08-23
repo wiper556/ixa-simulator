@@ -1,0 +1,103 @@
+{
+ "name": "由利鎌之介",
+ "no": "3712",
+ "ch": null,
+ "cost": 3.0,
+ "troop": "器",
+ "sub": "",
+ "effect": "速度 50%上昇 / 破壊 10%上昇",
+ "furigana": "ゆりかまのすけ",
+ "illustrator": "双羽純",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 800,
+ "atkGrowth": 17.0,
+ "defBase": 760,
+ "defGrowth": 16.0,
+ "tacticsBase": 440.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 2580,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "B",
+  "uma": "C",
+  "ki": "A"
+ },
+ "initialSkill": "円明鎖鎌",
+ "skillDetail": "C/LV10 確率 100% 速度 50%上昇 / 破壊 10%上昇/対象:器\n①速度が50%上昇 / 破壊 10%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "器　確率 100% / 速度 50%上昇 / 破壊 10%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "鬼刺",
+   "rank": "C",
+   "afterSkill": "乗り崩し",
+   "afterRank": "D",
+   "target": "槍馬砲",
+   "rate": "15%",
+   "effectShort": "攻撃 (コストx9) %上昇 / (武将のコストで効果が変化します)",
+   "afterTarget": "槍馬",
+   "afterRate": "20%",
+   "afterEffectShort": "攻撃 20%上昇 / 破壊 5%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "電光石火",
+   "rank": "C",
+   "afterSkill": "啄木鳥",
+   "afterRank": "D",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "攻撃 2.5%上昇 / 速度 25%上昇",
+   "afterTarget": "弓馬",
+   "afterRate": "20%",
+   "afterEffectShort": "攻撃 20%上昇 / 破壊 5%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "義兵進軍",
+   "rank": "C",
+   "afterSkill": "大ふへん者",
+   "afterRank": "D",
+   "target": "槍弓馬砲",
+   "rate": "100%",
+   "effectShort": "攻撃 7%上昇 / 速度 10%上昇",
+   "afterTarget": null,
+   "afterRate": "5%",
+   "afterEffectShort": "対象 将 / 攻撃 40%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "疾風怒濤",
+   "rank": "B",
+   "afterSkill": "疾風怒濤",
+   "afterRank": "B",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "攻撃 5%上昇 / 速度 32%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "攻城の妙技",
+   "rank": "S",
+   "afterSkill": "攻城の妙技",
+   "afterRank": "S",
+   "target": "全",
+   "rate": "10%",
+   "effectShort": "戦闘勝利時のみ防御側の兵士被害数+40%"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3712 と skills/円明鎖鎌)およびixawiki(BushoCard/3712由利鎌之介)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

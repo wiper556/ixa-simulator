@@ -1,0 +1,106 @@
+{
+ "name": "直江景綱",
+ "no": "3499",
+ "ch": null,
+ "cost": 2.0,
+ "troop": "弓馬器攻",
+ "sub": "",
+ "effect": "攻撃 62%上昇 / 防御 62%上昇 / 部隊コスト12以下で効果1.5倍",
+ "furigana": "なおえかげつな",
+ "illustrator": "isuZu",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 850,
+ "atkGrowth": 27.0,
+ "defBase": 850,
+ "defGrowth": 27.0,
+ "tacticsBase": 460.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 2360,
+ "rankGrades": {
+  "yari": "C",
+  "yumi": "B",
+  "uma": "A",
+  "ki": "B"
+ },
+ "initialSkill": "七手組隊頭",
+ "skillDetail": "C/LV10 確率 15% 攻撃 62%上昇 / 防御 62%上昇 / 部隊コスト12以下で効果1.5倍/対象:弓馬器\n①攻撃 62%上昇 / 防御 62%上昇 / 部隊コスト12以下で効果1.5倍",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓馬器　確率 15% / 攻撃 62%上昇 / 防御 62%上昇 / 部隊コスト12以下で効果1.5倍"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "七手組隊頭",
+   "rank": "C",
+   "afterSkill": "質実剛健",
+   "afterRank": "B",
+   "target": "弓馬器",
+   "rate": "15%",
+   "effectShort": "攻撃 62%上昇 / 防御 62%上昇 / 部隊コスト12以下で効果1.5倍",
+   "afterTarget": "弓馬砲",
+   "afterRate": "27%",
+   "afterEffectShort": "攻撃防御 ((1+武将ランク)x武将コストx1.9) %上昇 / 武将ランクとコストで効果が変化"
+  },
+  {
+   "slot": "B",
+   "skill": "七手組隊頭",
+   "rank": "C",
+   "afterSkill": "質実剛健",
+   "afterRank": "B",
+   "target": "弓馬器",
+   "rate": "15%",
+   "effectShort": "攻撃 62%上昇 / 防御 62%上昇 / 部隊コスト12以下で効果1.5倍",
+   "afterTarget": "弓馬砲",
+   "afterRate": "27%",
+   "afterEffectShort": "攻撃防御 ((1+武将ランク)x武将コストx1.9) %上昇 / 武将ランクとコストで効果が変化"
+  },
+  {
+   "slot": "C",
+   "skill": "鬼武蔵",
+   "rank": "D",
+   "afterSkill": "野太刀",
+   "afterRank": "C",
+   "target": "槍弓馬",
+   "rate": "37%",
+   "effectShort": "攻撃 39%上昇 / 防御 39%上昇 / 部隊コスト10以下で効果2倍",
+   "afterTarget": "全",
+   "afterRate": "17%",
+   "afterEffectShort": "攻撃 77%上昇 / 防御 77%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "質実剛健",
+   "rank": "B",
+   "afterSkill": "質実剛健",
+   "afterRank": "B",
+   "target": "弓馬砲",
+   "rate": "27%",
+   "effectShort": "攻撃防御 ((1+武将ランク)x武将コストx1.9) %上昇 / 武将ランクとコストで効果が変化"
+  },
+  {
+   "slot": "S2",
+   "skill": "虎切刀",
+   "rank": "C",
+   "afterSkill": "鬼滅刺",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "50%",
+   "effectShort": "攻撃 66%上昇 / 防御 66%上昇",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 70%上昇 防御 70%上昇(卓越確率+25%加算・模倣不可)"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3499 と skills/七手組隊頭)およびixawiki(BushoCard/3499直江景綱)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

@@ -1,0 +1,106 @@
+{
+ "name": "兵主源六",
+ "no": "3722",
+ "ch": null,
+ "cost": 3.5,
+ "troop": "全攻",
+ "sub": "",
+ "effect": "攻撃 20%上昇 / 速度 42%上昇 / 帰還に通常の2倍の時間がかかる(特殊効果は重複不可)",
+ "furigana": "ひょうすげんろく",
+ "illustrator": "BISAI",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 840,
+ "atkGrowth": 18.0,
+ "defBase": 840,
+ "defGrowth": 18.0,
+ "tacticsBase": 510.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 3300,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "B",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "あとのまつり",
+ "skillDetail": "B/LV10 確率 100% 攻撃 20%上昇 / 速度 42%上昇 / 帰還に通常の2倍の時間がかかる(特殊効果は重複不可)/対象:全\n①攻撃 20%上昇 / 速度 42%上昇 / 帰還に通常の2倍の時間がかかる(特殊効果は重複不可)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 100% / 攻撃 20%上昇 / 速度 42%上昇 / 帰還に通常の2倍の時間がかかる(特殊効果は重複不可)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "義兵進軍",
+   "rank": "C",
+   "afterSkill": "大ふへん者",
+   "afterRank": "D",
+   "target": "槍弓馬砲",
+   "rate": "100%",
+   "effectShort": "攻撃 7%上昇 / 速度 10%上昇",
+   "afterTarget": null,
+   "afterRate": "5%",
+   "afterEffectShort": "対象 将 / 攻撃 40%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "神風襲来",
+   "rank": "B",
+   "afterSkill": "疾風怒濤",
+   "afterRank": "B",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "攻撃 6%上昇 / 速度 40%上昇",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 5%上昇 / 速度 32%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "あとのまつり",
+   "rank": "C",
+   "afterSkill": "神行法 千里",
+   "afterRank": "B",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "攻撃 20%上昇 / 速度 42%上昇 / 帰還に通常の2倍の時間がかかる(特殊効果は重複不可)",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 6.5%上昇 / 速度 33%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "神行法 千里",
+   "rank": "B",
+   "afterSkill": "大ふへん者",
+   "afterRank": "D",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "攻撃 6.5%上昇 / 速度 33%上昇",
+   "afterTarget": null,
+   "afterRate": "5%",
+   "afterEffectShort": "対象 将 / 攻撃 40%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "騎神",
+   "rank": "SS",
+   "afterSkill": "騎神",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "攻撃 (コストx4.5) %+速度 50%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3722 と skills/あとのまつり)およびixawiki(BushoCard/3722兵主源六)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

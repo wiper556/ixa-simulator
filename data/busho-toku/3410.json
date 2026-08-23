@@ -1,0 +1,103 @@
+{
+ "name": "片桐且元",
+ "no": "3410",
+ "ch": null,
+ "cost": 3.0,
+ "troop": "槍砲攻",
+ "sub": "",
+ "effect": "攻撃 69%上昇 / (18時～翌01時は確率5倍)",
+ "furigana": "かたぎりかつもと",
+ "illustrator": "ぴよ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 840,
+ "atkGrowth": 27.0,
+ "defBase": 820,
+ "defGrowth": 23.0,
+ "tacticsBase": 470.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2910,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "B",
+  "uma": "C",
+  "ki": "A"
+ },
+ "initialSkill": "讒者ノ計",
+ "skillDetail": "D/LV10 確率 5% 攻撃 69%上昇 / (18時～翌01時は確率5倍)/対象:槍砲\n①攻撃 69%上昇 / (18時～翌01時は確率5倍)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍砲　確率 5% / 攻撃 69%上昇 / (18時～翌01時は確率5倍)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "讒者ノ計",
+   "rank": "D",
+   "afterSkill": "戦鬼侵軍",
+   "afterRank": "B",
+   "target": "槍砲",
+   "rate": "5%",
+   "effectShort": "攻撃 69%上昇 / (18時～翌01時は確率5倍)",
+   "afterTarget": "槍砲器",
+   "afterRate": "15%",
+   "afterEffectShort": "攻撃 54%上昇 / 合流攻撃時は必ずスキル発動"
+  },
+  {
+   "slot": "B",
+   "skill": "槍隊急襲",
+   "rank": "F",
+   "afterSkill": "槍隊守備",
+   "afterRank": "F",
+   "target": "槍",
+   "rate": "16%",
+   "effectShort": "槍攻：7.5%上昇 / (武将のコストで効果が変化します)",
+   "afterTarget": "槍",
+   "afterRate": "16%",
+   "afterEffectShort": "防御 (コストx5) %上昇 / (武将のコストで効果が変化します)"
+  },
+  {
+   "slot": "C",
+   "skill": "沈勇の士",
+   "rank": "D",
+   "afterSkill": "沈勇の士",
+   "afterRank": "D",
+   "target": "槍砲",
+   "rate": "28%",
+   "effectShort": "攻撃 38%上昇 / 破壊 16%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "戦鬼侵軍",
+   "rank": "B",
+   "afterSkill": "戦鬼侵軍",
+   "afterRank": "B",
+   "target": "槍砲器",
+   "rate": "15%",
+   "effectShort": "攻撃 54%上昇 / 合流攻撃時は必ずスキル発動"
+  },
+  {
+   "slot": "S2",
+   "skill": "浪切",
+   "rank": "B",
+   "afterSkill": "鬼神刺",
+   "afterRank": "B",
+   "target": "槍砲",
+   "rate": "30%",
+   "effectShort": "攻撃 37%上昇",
+   "afterTarget": "全",
+   "afterRate": "20%",
+   "afterEffectShort": "攻撃 (コスト×10) %上昇 / 武将コストによって効果が変化"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3410 と skills/讒者ノ計)およびixawiki(BushoCard/3410片桐且元)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

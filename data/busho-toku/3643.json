@@ -1,0 +1,100 @@
+{
+ "name": "フライヤ",
+ "no": "3643",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "槍砲器攻",
+ "sub": "",
+ "effect": "飛翔5 / 攻撃 340%上昇 防御 340%上昇",
+ "furigana": "ふらいや",
+ "illustrator": "FinalFantasyIX 25th ANNIVERSARY",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 910,
+ "atkGrowth": 31.0,
+ "defBase": 910,
+ "defGrowth": 31.0,
+ "tacticsBase": 450.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2690,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "B",
+  "uma": "C",
+  "ki": "B"
+ },
+ "initialSkill": "桜華狂咲",
+ "skillDetail": "C/LV10 確率 56% 飛翔5 / 攻撃 340%上昇 防御 340%上昇/対象:槍砲器\n①飛翔5 / 攻撃 340%上昇 防御 340%上昇",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍砲器　確率 56% / 飛翔5 / 攻撃 340%上昇 防御 340%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "一揆討伐",
+   "rank": "C",
+   "afterSkill": "義士ノ覚悟",
+   "afterRank": "C",
+   "target": "弓砲器",
+   "rate": "60%",
+   "effectShort": "攻撃 345%上昇 防御 345%上昇",
+   "afterTarget": "槍砲器",
+   "afterRate": "65%",
+   "afterEffectShort": "攻撃 310%上昇 防御 310%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "桜華狂咲",
+   "rank": "C",
+   "afterSkill": "桜華狂咲",
+   "afterRank": "C",
+   "target": "槍砲器",
+   "rate": "56%",
+   "effectShort": "飛翔5 / 攻撃 340%上昇 防御 340%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "桜華狂咲",
+   "rank": "C",
+   "afterSkill": "桜華狂咲",
+   "afterRank": "C",
+   "target": "槍砲器",
+   "rate": "56%",
+   "effectShort": "飛翔5 / 攻撃 340%上昇 防御 340%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "桜華狂咲",
+   "rank": "C",
+   "afterSkill": "桜華狂咲",
+   "afterRank": "C",
+   "target": "槍砲器",
+   "rate": "56%",
+   "effectShort": "飛翔5 / 攻撃 340%上昇 防御 340%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "野太刀",
+   "rank": "C",
+   "afterSkill": "戦陣 凱旋",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "17%",
+   "effectShort": "攻撃 77%上昇 / 防御 77%上昇",
+   "afterTarget": "全",
+   "afterRate": "10%",
+   "afterEffectShort": "攻撃 87%上昇+防御 87%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3643 と skills/桜華狂咲)およびixawiki(BushoCard/3643フライヤ)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

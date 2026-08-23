@@ -1,0 +1,106 @@
+{
+ "name": "井上之房",
+ "no": "3516",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "槍弓馬器防",
+ "sub": "",
+ "effect": "防御 60%上昇 / (自軍7部隊以下の防御時 効果1.5倍)",
+ "furigana": "いのうえゆきふさ",
+ "illustrator": "nabe",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 860,
+ "atkGrowth": 24.0,
+ "defBase": 880,
+ "defGrowth": 28.0,
+ "tacticsBase": 470.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2630,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "B",
+  "uma": "B",
+  "ki": "B"
+ },
+ "initialSkill": "斑ノ守護者",
+ "skillDetail": "C/LV10 確率 55% 防御 60%上昇 / (自軍7部隊以下の防御時 効果1.5倍)/対象:槍弓馬器\n①防御 60%上昇 / (自軍7部隊以下の防御時 効果1.5倍)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍弓馬器　確率 55% / 防御 60%上昇 / (自軍7部隊以下の防御時 効果1.5倍)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "斑ノ守護者",
+   "rank": "C",
+   "afterSkill": "死出ノ田長",
+   "afterRank": "B",
+   "target": "槍弓馬器",
+   "rate": "55%",
+   "effectShort": "防御 60%上昇 / (自軍7部隊以下の防御時 効果1.5倍)",
+   "afterTarget": "槍弓馬器",
+   "afterRate": "54%",
+   "afterEffectShort": "防御 80%上昇 / 卓越：追加確率30%で防御効果が1.5倍"
+  },
+  {
+   "slot": "B",
+   "skill": "斑ノ守護者",
+   "rank": "C",
+   "afterSkill": "死出ノ田長",
+   "afterRank": "B",
+   "target": "槍弓馬器",
+   "rate": "55%",
+   "effectShort": "防御 60%上昇 / (自軍7部隊以下の防御時 効果1.5倍)",
+   "afterTarget": "槍弓馬器",
+   "afterRate": "54%",
+   "afterEffectShort": "防御 80%上昇 / 卓越：追加確率30%で防御効果が1.5倍"
+  },
+  {
+   "slot": "C",
+   "skill": "隠棲退陣",
+   "rank": "D",
+   "afterSkill": "凍土ノ女神",
+   "afterRank": "B",
+   "target": "全",
+   "rate": "35%",
+   "effectShort": "防御 (コストx16) %上昇 / (武将のコストで効果が変化します)",
+   "afterTarget": "槍弓馬器",
+   "afterRate": "50%",
+   "afterEffectShort": "防御 84%上昇 / 卓越：追加確率25%で防御効果が1.5倍"
+  },
+  {
+   "slot": "S1",
+   "skill": "死出ノ田長",
+   "rank": "B",
+   "afterSkill": "死出ノ田長",
+   "afterRank": "B",
+   "target": "槍弓馬器",
+   "rate": "54%",
+   "effectShort": "防御 80%上昇 / 卓越：追加確率30%で防御効果が1.5倍"
+  },
+  {
+   "slot": "S2",
+   "skill": "野太刀",
+   "rank": "C",
+   "afterSkill": "戦陣 凱旋",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "17%",
+   "effectShort": "攻撃 77%上昇 / 防御 77%上昇",
+   "afterTarget": "全",
+   "afterRate": "10%",
+   "afterEffectShort": "攻撃 87%上昇+防御 87%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3516 と skills/斑ノ守護者)およびixawiki(BushoCard/3516井上之房)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

@@ -1,0 +1,97 @@
+{
+ "name": "スタイナー",
+ "no": "3639",
+ "ch": null,
+ "cost": 3.0,
+ "troop": "槍砲器防",
+ "sub": "",
+ "effect": "防御 350%上昇 / 破壊 80%上昇",
+ "furigana": "すたいなー",
+ "illustrator": "FinalFantasyIX 25th ANNIVERSARY",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 870,
+ "atkGrowth": 28.0,
+ "defBase": 940,
+ "defGrowth": 34.0,
+ "tacticsBase": 430.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 3090,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "C",
+  "uma": "B",
+  "ki": "B"
+ },
+ "initialSkill": "パワーブレイク",
+ "skillDetail": "C/LV10 確率 38% 防御 350%上昇 / 破壊 80%上昇/対象:槍砲器\n①防御が350%上昇 / 破壊 80%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍砲器　確率 38% / 防御 350%上昇 / 破壊 80%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "虎風銃",
+   "rank": "C",
+   "afterSkill": "虎風銃",
+   "afterRank": "C",
+   "target": "弓砲器",
+   "rate": "44%",
+   "effectShort": "防御 340%上昇 / 破壊 80%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "パワーブレイク",
+   "rank": "C",
+   "afterSkill": "パワーブレイク",
+   "afterRank": "C",
+   "target": "槍砲器",
+   "rate": "38%",
+   "effectShort": "防御 350%上昇 / 破壊 80%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "パワーブレイク",
+   "rank": "C",
+   "afterSkill": "パワーブレイク",
+   "afterRank": "C",
+   "target": "槍砲器",
+   "rate": "38%",
+   "effectShort": "防御 350%上昇 / 破壊 80%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "パワーブレイク",
+   "rank": "C",
+   "afterSkill": "パワーブレイク",
+   "afterRank": "C",
+   "target": "槍砲器",
+   "rate": "38%",
+   "effectShort": "防御 350%上昇 / 破壊 80%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "籠城の妙技",
+   "rank": "A",
+   "afterSkill": "三千世界神将",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "防御 50%上昇(卓越:追加確率15%で防御効果が3倍)",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "防御 120%上昇(本丸防御陣形時コスト消費-1)"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3639 と skills/パワーブレイク)およびixawiki(BushoCard/3639スタイナー)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

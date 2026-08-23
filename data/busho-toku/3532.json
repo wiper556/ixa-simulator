@@ -1,0 +1,110 @@
+{
+ "name": "坂井政尚",
+ "no": "3532",
+ "ch": null,
+ "cost": 3.0,
+ "troop": "槍弓馬攻",
+ "sub": "",
+ "effect": "攻撃 35%上昇 破壊 50%上昇 / (合流攻撃時、攻撃効果3倍)",
+ "furigana": "さかいまさひさ",
+ "illustrator": "ゆんやま",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 890,
+ "atkGrowth": 32.0,
+ "defBase": 870,
+ "defGrowth": 28.0,
+ "tacticsBase": 470.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 3020,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "B",
+  "uma": "B",
+  "ki": "C"
+ },
+ "initialSkill": "一千烈刃",
+ "skillDetail": "C/LV10 確率 56% 攻撃 35%上昇 破壊 50%上昇 / (合流攻撃時攻撃効果3倍)/対象:槍弓馬\n①攻撃 35%上昇 破壊 50%上昇 / (合流攻撃時攻撃効果3倍)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍弓馬　確率 56% / 攻撃 35%上昇 破壊 50%上昇 / (合流攻撃時、攻撃効果3倍)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "一千烈刃",
+   "rank": "C",
+   "afterSkill": "悪因ノ深域",
+   "afterRank": "C",
+   "target": "槍弓馬",
+   "rate": "56%",
+   "effectShort": "攻撃 35%上昇 破壊 50%上昇 / (合流攻撃時、攻撃効果3倍)",
+   "afterTarget": "全",
+   "afterRate": "54%",
+   "afterEffectShort": "攻撃 85%上昇 / 資源獲得率: 10% / 破壊した耐久値に応じて資源獲得"
+  },
+  {
+   "slot": "B",
+   "skill": "一千烈刃",
+   "rank": "C",
+   "afterSkill": "悪因ノ深域",
+   "afterRank": "C",
+   "target": "槍弓馬",
+   "rate": "56%",
+   "effectShort": "攻撃 35%上昇 破壊 50%上昇 / (合流攻撃時、攻撃効果3倍)",
+   "afterTarget": "全",
+   "afterRate": "54%",
+   "afterEffectShort": "攻撃 85%上昇 / 資源獲得率: 10% / 破壊した耐久値に応じて資源獲得"
+  },
+  {
+   "slot": "C",
+   "skill": "鬼瀬兵衛",
+   "rank": "C",
+   "afterSkill": "武神百鬼",
+   "afterRank": "A",
+   "target": "槍馬器",
+   "rate": "35%",
+   "effectShort": "攻撃 84%上昇 / 防御 84%上昇 / 破壊 40%上昇",
+   "afterTarget": "槍弓馬器",
+   "afterRate": "34%",
+   "afterEffectShort": "攻撃 55%上昇 防御 55%上昇 / 部隊内の「武神百鬼」スキル数×35%を攻防効果に加算"
+  },
+  {
+   "slot": "S1",
+   "skill": "悪因ノ深域",
+   "rank": "C",
+   "afterSkill": "御朱印衆",
+   "afterRank": "D",
+   "target": "全",
+   "rate": "54%",
+   "effectShort": "攻撃 85%上昇 / 資源獲得率: 10% / 破壊した耐久値に応じて資源獲得",
+   "afterTarget": "全",
+   "afterRate": "42%",
+   "afterEffectShort": "攻撃 50%上昇 / 資源獲得率：12% / 破壊した耐久値に応じて資源獲得"
+  },
+  {
+   "slot": "S2",
+   "skill": "孤炎",
+   "rank": "A",
+   "afterSkill": "覚悟十躰",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "55%",
+   "effectShort": "攻撃 140%上昇 / 破壊 85%上昇",
+   "afterTarget": "全",
+   "afterRate": "30%",
+   "afterEffectShort": "資源獲得率：15% / 破壊した耐久値に応じて資源獲得"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3532 と skills/一千烈刃)およびixawiki(BushoCard/3532坂井政尚)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。",
+  "2026-08-23: skillDetail に読点が混入していた(F-01違反)。ixanary の原文が「配置時、防御効果が」のように読点を使うのをそのまま取り込んでいた。読点を外した。"
+ ]
+}
