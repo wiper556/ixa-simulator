@@ -1,7 +1,7 @@
 {
  "name": "井伊直虎-復刻-",
  "no": "1987",
- "ch": null,
+ "ch": "18章",
  "cost": 2.5,
  "troop": "全防",
  "sub": "",
@@ -32,6 +32,11 @@
   "cost/lv0Troops/rankGrades/atkBase・atkGrowth/tacticsBase・tacticsGrowth/defGrowthは両ソース一致。defBaseのみixanary=1050・ixawiki=1090で食い違ったためnullにした(今回の割当20体のうち17体で発生している系統的な食い違い)。",
   "illustratorがixanary=直良有祐・ixawiki=上国料勇で食い違ったためnullにした(この20体の中で唯一のイラストレーター相違)。",
   "波乱ノ虎はixawiki側もLv1/Lv10を分けて記載しているが、部隊ランクボーナスの倍率がixawiki Lv1=×4%・Lv10=×15%であるのに対しixanaryはLv1・LV10とも一貫して×15%(かつLV10には「部隊ランク★28 防御:135%上昇」という追加記載がixanaryのみにあり)で食い違ったためskillDetail/trTableをnullにした。troopは両ソースが「防御が部隊ランクに応じて上昇する」こと自体は一致していたため「全防」と記載した。",
-  "reviewedOkはfalseのまま。カード画像による4隅バッジ・スキルパネル照合が未実施のため黄丸化はできない。"
- ]
+  "reviewedOkはfalseのまま。カード画像による4隅バッジ・スキルパネル照合が未実施のため黄丸化はできない。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2019-12-26",
+ "wikiCommentCount": 88,
+ "chGuess": "18章",
+ "chSource": "wikiOldestComment"
 }

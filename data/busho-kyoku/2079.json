@@ -1,7 +1,7 @@
 {
  "name": "高橋紹運",
  "no": "2079",
- "ch": null,
+ "ch": "6章",
  "cost": 2.5,
  "troop": "弓馬砲防",
  "sub": "",
@@ -36,6 +36,11 @@
  "notes": [
   "2026-08-17登録。カード画像が無いため ixanary.com(cards/2079)と ixawiki.com(BushoCard/2079高橋紹運)の生HTML2ソースで確認した。",
   "コスト/指揮兵数/攻撃防御兵法の初期値成長値/兵科ランク(槍B弓A馬A器A)/スキル名対象確率効果(LV10確率32%防御33%上昇対象弓馬砲)/イラストレーターが両ソース完全一致。",
-  "章(ch)は両ソースとも記載が無くnullのまま。カード画像自体が無いためimageFull/imageCharはnull、reviewedOkはfalseのまま(rankGrades等はテキスト情報の2ソース一致で登録)。"
- ]
+  "章(ch)は両ソースとも記載が無くnullのまま。カード画像自体が無いためimageFull/imageCharはnull、reviewedOkはfalseのまま(rankGrades等はテキスト情報の2ソース一致で登録)。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2013-06-05",
+ "wikiCommentCount": 151,
+ "chGuess": "6章",
+ "chSource": "wikiOldestComment"
 }

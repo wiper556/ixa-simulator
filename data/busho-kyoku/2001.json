@@ -1,7 +1,7 @@
 {
  "name": "本多忠勝",
  "no": "2001",
- "ch": null,
+ "ch": "7章",
  "cost": 3,
  "troop": "槍馬砲攻",
  "sub": "",
@@ -35,8 +35,11 @@
  "reviewedOk": false,
  "notes": [
   "カード画像が無いため imageFull/imageChar は null。ixanary.comの埋め込みJSON(cards/2001)とixawiki.com(BushoCard/2001)の基本ステータス表・スキル表を突き合わせて登録した。",
-  "illustratorはixanaryが「キム・ビョンジン [ヴァルハラ]」・ixawikiが「キム・ビョンジン」で括弧書きの有無のみ差異があったため、既存データの表記(グループ名括弧書きなし)に揃えた。"
+  "illustratorはixanaryが「キム・ビョンジン [ヴァルハラ]」・ixawikiが「キム・ビョンジン」で括弧書きの有無のみ差異があったため、既存データの表記(グループ名括弧書きなし)に揃えた。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
  ],
  "wikiOldestComment": "2014-03-25",
- "wikiCommentCount": 24
+ "wikiCommentCount": 24,
+ "chGuess": "7章",
+ "chSource": "wikiOldestComment"
 }

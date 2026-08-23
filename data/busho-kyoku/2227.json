@@ -1,7 +1,7 @@
 {
  "name": "田原親賢",
  "no": "2227",
- "ch": null,
+ "ch": "16章",
  "cost": 2,
  "troop": "弓焙防",
  "sub": "",
@@ -39,6 +39,11 @@
   "対象兵科の「焙」は焙烙(焙烙火矢)を指す既存の表記(data/skill/三星一統射陣.jsonなど)に合わせた。",
   "ixawikiの兵種別指揮力・実指揮数推移の表がテンプレート未展開で空欄になっていたが、統率力(rankGrades)欄自体は正常に表示されておりそちらを採用した。",
   "rankGrades(槍B/弓S/馬A/器A)はixawikiのみ出典(ixanaryにテキスト情報無し)。",
-  "章(ch)は両ソースに記載が無く未確認のためnull。"
- ]
+  "章(ch)は両ソースに記載が無く未確認のためnull。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2018-08-17",
+ "wikiCommentCount": 47,
+ "chGuess": "16章",
+ "chSource": "wikiOldestComment"
 }

@@ -1,7 +1,7 @@
 {
  "name": "甲斐宗運",
  "no": "2151",
- "ch": null,
+ "ch": "10章",
  "cost": 2.5,
  "troop": "槍弓馬防",
  "sub": "",
@@ -34,6 +34,11 @@
  ],
  "reviewedOk": false,
  "notes": [
-  "カード画像が無いためimageFull/imageChar は null。ixanary.com(cards/2151)とixawiki.com(BushoCard/2151甲斐宗運)を突き合わせて登録した。基本ステータス・ランク・スキル数値とも両ソースで一致。"
- ]
+  "カード画像が無いためimageFull/imageChar は null。ixanary.com(cards/2151)とixawiki.com(BushoCard/2151甲斐宗運)を突き合わせて登録した。基本ステータス・ランク・スキル数値とも両ソースで一致。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2015-09-04",
+ "wikiCommentCount": 48,
+ "chGuess": "10章",
+ "chSource": "wikiOldestComment"
 }

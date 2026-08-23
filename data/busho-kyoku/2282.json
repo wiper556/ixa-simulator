@@ -1,7 +1,7 @@
 {
  "name": "前田利長",
  "no": "2282",
- "ch": null,
+ "ch": "20章",
  "cost": 1,
  "troop": "槍馬砲防",
  "sub": "",
@@ -35,7 +35,12 @@
  "notes": [
   "2026-08-18登録(担当G)。カード画像が無いためixanary.com(cards/2282)生HTMLとixawiki.com(index.php?BushoCard/2282前田利長)生HTMLの2ソースを突き合わせて登録した。",
   "ステータス初期値1000/1020/500・成長値25/30/2.5・cost1・lv0Troops1940・rankGrades(槍S/弓B/馬A/器A)・illustrator小森ニコは両ソースで完全一致。",
-  "スキル「百万石長壁」LV10(確率9%・防御84%上昇・自拠点防御時は確率100%で発動)はixawikiにLV1/LV10両方の記載があり、ixanaryのLV10欄と完全一致した。"
+  "スキル「百万石長壁」LV10(確率9%・防御84%上昇・自拠点防御時は確率100%で発動)はixawikiにLV1/LV10両方の記載があり、ixanaryのLV10欄と完全一致した。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
  ],
- "reviewedOk": false
+ "reviewedOk": false,
+ "wikiOldestComment": "2020-10-01",
+ "wikiCommentCount": 20,
+ "chGuess": "20章",
+ "chSource": "wikiOldestComment"
 }

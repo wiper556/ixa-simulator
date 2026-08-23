@@ -1,7 +1,7 @@
 {
  "name": "花舜夫人-復刻-（2）",
  "no": "2515",
- "ch": null,
+ "ch": "18章",
  "cost": 2,
  "troop": "全防",
  "sub": "",
@@ -41,6 +41,11 @@
   "統率(弓)のみixanaryとixawikiが食い違った: ixanaryはyari/yumi/kiba/heiki=A/A/A/A、ixawikiは槍A/弓S/馬A/器Aで弓の値が不一致(ixanary A・ixawiki S)。ixanaryのyumi/kibaはカード実物と入れ替わっている場合があるとの既知の注意点があり、どちらが正しいか決められないためyumiをnullにした。他の3項目(槍A/馬A/器A)は一致。",
   "attack=defence=970と両方の初期値が同じだが、2ソース完全一致のためixanaryの防御バグではなく実際の値と判断した。",
   "章はixanary/ixawikiいずれのカードページにも記載が無く未確認。",
-  "2026-08-18訂正: assets/js/ixa-data.js(シミュ側)に既にNo.2515の暫定登録(2026年7月ixanary.com確認・「花舜夫人-復刻-（2）」)があるのを監査ツール(tools/audit_characters.py)で発見。基礎値・成長値・コスト・指揮兵数が今回の登録と完全一致していたため、名前はそちらに合わせて「花舜夫人-復刻-（2）」に訂正した(元は一覧表記通りの「花舜夫人」で登録していた)。"
- ]
+  "2026-08-18訂正: assets/js/ixa-data.js(シミュ側)に既にNo.2515の暫定登録(2026年7月ixanary.com確認・「花舜夫人-復刻-（2）」)があるのを監査ツール(tools/audit_characters.py)で発見。基礎値・成長値・コスト・指揮兵数が今回の登録と完全一致していたため、名前はそちらに合わせて「花舜夫人-復刻-（2）」に訂正した(元は一覧表記通りの「花舜夫人」で登録していた)。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2019-10-02",
+ "wikiCommentCount": 148,
+ "chGuess": "18章",
+ "chSource": "wikiOldestComment"
 }

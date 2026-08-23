@@ -1,7 +1,7 @@
 {
  "name": "松永久秀",
  "no": "3027",
- "ch": null,
+ "ch": "1-2章",
  "cost": 2,
  "troop": "全攻",
  "sub": "",
@@ -36,6 +36,11 @@
  "notes": [
   "2026-08-18登録(担当D)。カード画像が無いためixanary.com(cards/3027)とixawiki.com(index.php?BushoCard/3027松永久秀, Busho/武将カード一覧)の生HTML2ソースを突き合わせて登録した。",
   "統率(C/B/F/B)・コスト2・指揮兵数2060・攻撃600/13・防御585/13・兵法475.0/2.5・ふりがな・初期スキル「謀殺」[D]はixanary.comとixawiki.comの2ソースで一致することを確認した(不一致箇所は個別に注記)。",
-  "カード画像が無いためimageFull/imageCharはnull、synthesisTableは付けない。reviewedOkはfalseのまま。章(ch)は両ソースとも記載が無くnullとした。"
- ]
+  "カード画像が無いためimageFull/imageCharはnull、synthesisTableは付けない。reviewedOkはfalseのまま。章(ch)は両ソースとも記載が無くnullとした。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2011-06-03",
+ "wikiCommentCount": 180,
+ "chGuess": "1-2章",
+ "chSource": "wikiOldestComment"
 }

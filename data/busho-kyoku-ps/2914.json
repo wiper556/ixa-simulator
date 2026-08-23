@@ -1,7 +1,7 @@
 {
  "name": "九戸政実",
  "no": "2914",
- "ch": null,
+ "ch": "9章",
  "cost": 0.5,
  "troop": "全防",
  "sub": "",
@@ -36,6 +36,11 @@
  "notes": [
   "カード画像が無いため ixanary.com/cards/2914 と ixawiki.com(BushoCard/2914九戸政実)の生HTML2ソースで確認した。",
   "基礎値580/680/430・成長15/15/2・コスト0.5・指揮兵数1450(★0-0)・統率(槍S/弓B/馬B/器A)はixanary.comとixawiki.comの2ソースで完全一致。",
-  "初期スキル妙見の矜持(A)のLV10「確率+30%/対象 全/防御67%上昇(部隊の総コストが低いほど高効果)」はixanary.comとixawiki.comの2ソースで完全一致。"
- ]
+  "初期スキル妙見の矜持(A)のLV10「確率+30%/対象 全/防御67%上昇(部隊の総コストが低いほど高効果)」はixanary.comとixawiki.comの2ソースで完全一致。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2015-03-06",
+ "wikiCommentCount": 99,
+ "chGuess": "9章",
+ "chSource": "wikiOldestComment"
 }

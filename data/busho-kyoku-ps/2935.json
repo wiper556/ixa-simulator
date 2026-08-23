@@ -1,7 +1,7 @@
 {
  "name": "竹中半兵衛（3）",
  "no": "2935",
- "ch": null,
+ "ch": "13章",
  "cost": 3.5,
  "troop": "馬砲器防",
  "sub": "",
@@ -37,6 +37,11 @@
   "2026-08-18登録(担当J)。カード画像が無いため ixanary.com(cards/2935, skills/諫言機略)と ixawiki.com(index.php?BushoCard/2935竹中半兵衛, Busho/武将スキル)の生HTML2ソースを突き合わせて登録した。",
   "統率(槍B/弓B/馬S/器S)・コスト3.5・指揮兵数3470・攻撃900/24・防御950/27・兵法560.0/3.0・ふりがな・イラストレーターはixanary.comとixawiki.comの2ソースで一致することを確認した(不一致箇所は個別に注記)。",
   "初期スキル「諫言機略」[B]はixanary.com(skills/諫言機略)のLV10行とixawiki.com(Busho/武将スキル)のマスター一覧LV10行の2ソースで確認した(不一致箇所は個別に注記)。",
-  "カード画像が無いためimageFull/imageCharはnull、synthesisTableは付けず、reviewedOkはfalseのまま。章(ch)は両ソースとも記載が無くnullとした。"
- ]
+  "カード画像が無いためimageFull/imageCharはnull、synthesisTableは付けず、reviewedOkはfalseのまま。章(ch)は両ソースとも記載が無くnullとした。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2017-01-13",
+ "wikiCommentCount": 26,
+ "chGuess": "13章",
+ "chSource": "wikiOldestComment"
 }

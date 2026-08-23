@@ -1,7 +1,7 @@
 {
  "name": "宇喜多モニカ-復刻-",
  "no": "2972",
- "ch": null,
+ "ch": "13章",
  "cost": 1,
  "troop": "全攻速",
  "sub": "",
@@ -38,6 +38,11 @@
   "コスト1・指揮兵数1480・統率(槍A/弓A/馬S/器B)・攻撃980/成長43・防御860/成長36・兵法490.0/成長2.5・ふりがな・イラストレーターは両ソース一致。",
   "【食い違い】初期スキル「紫電閃耀」[B]のLV10攻撃値がixanary.com=16.8%上昇、ixawiki.com(Busho/武将スキルマスター一覧)=14%上昇で食い違う。確率100%・速度30%上昇(単独出陣時10倍)・LV1値(攻撃5%/速度8%)は両ソース一致。判断材料が無いため、ixawikiのマスター一覧側(14%)を採用した。",
   "カードページ本文(ixawiki.com)に「『武将イラスト人気ランキング』上位武将カード復刻版」と明記されているため復刻カードと判断し、名前に-復刻-を付けた(assign一覧の表記「宇喜多モニカ」自体には復刻マークが無かった)。",
-  "カード画像が無いためimageFull/imageCharはnull、synthesisTableは付けず、reviewedOkはfalseのまま。章(ch)は両ソースとも記載が無くnullとした。"
- ]
+  "カード画像が無いためimageFull/imageCharはnull、synthesisTableは付けず、reviewedOkはfalseのまま。章(ch)は両ソースとも記載が無くnullとした。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2016-12-21",
+ "wikiCommentCount": 76,
+ "chGuess": "13章",
+ "chSource": "wikiOldestComment"
 }

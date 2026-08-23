@@ -1,7 +1,7 @@
 {
  "name": "妙林尼",
  "no": "2291",
- "ch": null,
+ "ch": "21章",
  "cost": 3,
  "troop": "弓馬器防",
  "sub": "",
@@ -34,6 +34,11 @@
  ],
  "reviewedOk": false,
  "notes": [
-  "2026-08-18登録(担当H)。カード画像が無いためixanary.com(cards/2291)生HTMLとixawiki.com(index.php?BushoCard/2291妙林尼)の基本ステータス表・スキル表を突き合わせて完全一致を確認して登録した。防御上昇率は武将コスト依存の式(コスト×18%)で、両ソースとも計算済みの54%を明記しており一致。"
- ]
+  "2026-08-18登録(担当H)。カード画像が無いためixanary.com(cards/2291)生HTMLとixawiki.com(index.php?BushoCard/2291妙林尼)の基本ステータス表・スキル表を突き合わせて完全一致を確認して登録した。防御上昇率は武将コスト依存の式(コスト×18%)で、両ソースとも計算済みの54%を明記しており一致。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2021-02-17",
+ "wikiCommentCount": 23,
+ "chGuess": "21章",
+ "chSource": "wikiOldestComment"
 }

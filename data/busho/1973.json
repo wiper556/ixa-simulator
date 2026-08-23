@@ -32,5 +32,7 @@
   "cost/lv0Troops/rankGrades/atkBase・atkGrowth/defBase・defGrowth/tacticsBase・tacticsGrowthは全項目で両ソースが一致した(この20体の中でdefBaseが一致した数少ない例)。",
   "西国戦姫の効果範囲がixanaryとixawikiで食い違った。ixanaryはLV1/LV10とも「追加スキルの防御効果・破壊効果が1.5倍/2倍」と破壊効果も対象に含むが、ixawikiは「追加スキルの防御効果が1.5倍」とだけ記載し破壊効果に触れていない(倍率の数値自体は1.5倍→2倍で両ソース一致)。どちらを正としてよいか判断できないためskillDetail/trTable/troopをnullにした。参考: 同名の復刻版No.1982はixanary・ixawiki双方が「防御・破壊効果」で完全一致しており、こちらのみの食い違いだった。",
   "reviewedOkはfalseのまま。カード画像による4隅バッジ・スキルパネル照合が未実施のため黄丸化はできない。"
- ]
+ ],
+ "wikiOldestComment": null,
+ "wikiCommentCount": null
 }

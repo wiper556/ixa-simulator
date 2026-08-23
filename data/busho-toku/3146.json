@@ -1,7 +1,7 @@
 {
  "name": "長宗我部信親",
  "no": "3146",
- "ch": null,
+ "ch": "6章",
  "cost": 2.5,
  "troop": "弓馬攻",
  "sub": "",
@@ -35,6 +35,11 @@
  "reviewedOk": false,
  "notes": [
   "2026-08-18登録(担当J)。カード画像が無いためixanaryとixawikiの両方を確認した。武将名「長宗我部信親」/ふりがな「ちょうそかべのぶちか」/特/コスト2.5/統率 槍C・弓A・馬B・器A/攻撃680・防御670・兵法440.0/成長値(攻撃+17/防御+16/兵法+2.5)/指揮兵数2220/カードNo.3146/スキル「黄竜麒麟児LV10」[C] 確率:32%・対象 弓・馬・攻撃:20%上昇/Illust 黒葉.K。ixanary(カードページ埋め込みJSON)とixawiki(BushoCardページ)の統率・コスト・指揮兵数・攻防兵法初期値と成長値・スキル対象と効果が完全に一致したためそのまま採用した。",
-  "rankGradesはカード画像で確認できないため未reviewed(reviewedOk=false)。章(ch)はカード画像でもixanary/ixawikiでも確認できなかったためnullのまま。"
- ]
+  "rankGradesはカード画像で確認できないため未reviewed(reviewedOk=false)。章(ch)はカード画像でもixanary/ixawikiでも確認できなかったためnullのまま。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2013-07-04",
+ "wikiCommentCount": 35,
+ "chGuess": "6章",
+ "chSource": "wikiOldestComment"
 }

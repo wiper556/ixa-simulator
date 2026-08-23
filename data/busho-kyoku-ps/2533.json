@@ -1,7 +1,7 @@
 {
  "name": "明智十兵衛",
  "no": "2533",
- "ch": null,
+ "ch": "20章",
  "cost": 4,
  "troop": "全攻防",
  "sub": "",
@@ -37,6 +37,11 @@
   "2026-08-18新規登録(担当D・カード画像なし)。ixanary.com/cards/2533とixawiki.com(index.php?BushoCard/2533明智十兵衛)の生HTML2ソースで確認。",
   "コスト4・指揮兵数3820・攻撃防御初期値1120(両ソース独立に同値のため防御バグではなく実値と判断)・成長+47/+47/+3・ふりがな・統率(槍A弓A馬A器A)・絵師(BISAI)は2ソース完全一致。",
   "【2ソース食い違い→解決】LV10の攻撃・防御上昇値でixanaryは「36%上昇」(スキル個数4個×9%を計算済みの例示値と推測)、ixawikiは「9%上昇」(個数×9%の係数そのもの)と表示。LV1では両ソースとも「4.5%上昇」で係数と表示値が一致していた(個数×4.5%)ことから、LV10もixawikiの「9%」を係数として採用し、計算式表記「(所属部隊内のレアリティB以上のスキル個数×9%)上昇」の形にした。",
-  "章(ch)は両ソースとも記載が無くnullのまま。カード画像自体が無いためimageFull/imageCharはnull、reviewedOkはfalseのまま。"
- ]
+  "章(ch)は両ソースとも記載が無くnullのまま。カード画像自体が無いためimageFull/imageCharはnull、reviewedOkはfalseのまま。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2020-09-01",
+ "wikiCommentCount": 32,
+ "chGuess": "20章",
+ "chSource": "wikiOldestComment"
 }

@@ -1,7 +1,7 @@
 {
  "name": "慶寿院",
  "no": "2189",
- "ch": null,
+ "ch": "13章",
  "cost": 1.5,
  "troop": "槍砲器防破",
  "sub": "",
@@ -35,6 +35,11 @@
  "reviewedOk": false,
  "notes": [
   "2026-08-17登録。カード画像が無いためixanary.com(cards/2189)生HTMLとixawiki.com(index.php?BushoCard/2189慶寿院)の2ソースで基本ステータス(コスト・指揮兵数・統率槍弓馬器・攻撃/防御/兵法の初期値と成長値・illustrator)が完全一致することを確認して登録した。",
-  "スキル「波瀾ノ夕立」(B)のLV10数値(確率36%/防御43%上昇/破壊25%上昇/対象槍砲器)はixanary.comのLV10欄から採用。ixawiki.comはLV1相当(確率12%/防御13%上昇/破壊7%上昇)のみ掲載でLV10欄が無く、LV1部分同士は一致した(矛盾ではなく情報量の差)。"
- ]
+  "スキル「波瀾ノ夕立」(B)のLV10数値(確率36%/防御43%上昇/破壊25%上昇/対象槍砲器)はixanary.comのLV10欄から採用。ixawiki.comはLV1相当(確率12%/防御13%上昇/破壊7%上昇)のみ掲載でLV10欄が無く、LV1部分同士は一致した(矛盾ではなく情報量の差)。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2017-02-01",
+ "wikiCommentCount": 141,
+ "chGuess": "13章",
+ "chSource": "wikiOldestComment"
 }

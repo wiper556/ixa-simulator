@@ -1,7 +1,7 @@
 {
  "name": "織田信長-復刻-（3）【覇】",
  "no": "1997",
- "ch": null,
+ "ch": "21章",
  "cost": 5,
  "troop": "馬砲器攻",
  "sub": "",
@@ -36,8 +36,11 @@
  "notes": [
   "カード画像が無いため imageFull/imageChar は null。ixanary.comの埋め込みJSON(cards/1997)とixawiki.com(BushoCard/1997)の基本ステータス表・スキル表を突き合わせて登録した。",
   "defBase(防御初期値)がixanaryでは1200(攻撃と同値)・ixawikiでは1080で食い違ったためnullにした。",
-  "tacticsBase(兵法初期値)もixanaryでは710・ixawikiでは700で食い違ったためnullにした(成長値3.5は両ソース一致)。"
+  "tacticsBase(兵法初期値)もixanaryでは710・ixawikiでは700で食い違ったためnullにした(成長値3.5は両ソース一致)。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
  ],
  "wikiOldestComment": "2021-04-12",
- "wikiCommentCount": 87
+ "wikiCommentCount": 87,
+ "chGuess": "21章",
+ "chSource": "wikiOldestComment"
 }

@@ -1,7 +1,7 @@
 {
- "name": "瑞渓院（3）",
+ "name": "瑞渓院-復刻-",
  "no": "2963",
- "ch": null,
+ "ch": "12章",
  "cost": 2,
  "troop": "槍砲防",
  "sub": "",
@@ -36,6 +36,12 @@
  "notes": [
   "カード画像が無いため ixanary.com(cards/2963, skills/戦陣巴龍)と ixawiki.com(index.php?BushoCard/2963瑞渓院, Busho/武将スキル)の生HTML2ソースを突き合わせて登録した。",
   "コスト2・指揮兵数2460・統率(槍S/弓C/馬C/器A)・攻撃640/成長15・防御800/成長20・兵法470.0/成長2.0・ふりがな・イラストレーターは両ソース一致。初期スキル「戦陣巴龍」[B]はixanary・ixawikiともLV10確率35%/防御(25+ランク×4)%上昇で一致(ランク依存のため数値は計算せず式のまま登録)。",
-  "カード画像が無いためimageFull/imageCharはnull、synthesisTableは付けず、reviewedOkはfalseのまま。章(ch)は両ソースとも記載が無くnullとした。"
- ]
+  "カード画像が無いためimageFull/imageCharはnull、synthesisTableは付けず、reviewedOkはfalseのまま。章(ch)は両ソースとも記載が無くnullとした。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。",
+  "2026-08-23: カード名を「瑞渓院（3）」から「瑞渓院-復刻-」に直した。（N）はゲーム内には無く、プレイヤーが見分けるために wiki の作成者が付けたもの(うぐさん)。ixawiki の武将カード一覧の表示名が「瑞渓院(RE)」なのでそれに合わせた。覇と復刻はカードそのものの属性なので、一覧の札が何も言っていないときはうちの値を残している。"
+ ],
+ "wikiOldestComment": "2016-07-06",
+ "wikiCommentCount": 38,
+ "chGuess": "12章",
+ "chSource": "wikiOldestComment"
 }

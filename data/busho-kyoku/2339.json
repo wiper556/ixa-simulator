@@ -1,7 +1,7 @@
 {
  "name": "亀姫",
  "no": "2339",
- "ch": null,
+ "ch": "25章",
  "cost": 3.5,
  "troop": "弓砲器防",
  "sub": "",
@@ -34,6 +34,11 @@
  ],
  "reviewedOk": false,
  "notes": [
-  "2026-08-18登録(担当J・第2波・カード画像なし)。ixanary.com(cards/2339)生HTMLとixawiki.com(index.php?BushoCard/2339亀姫、およびBusho/武将カード一覧(極))の2ソースでコスト/指揮兵数/統率ランク/攻撃防御兵法の初期値成長値/スキル効果(LV1・LV10)が完全一致することを確認して登録した。"
- ]
+  "2026-08-18登録(担当J・第2波・カード画像なし)。ixanary.com(cards/2339)生HTMLとixawiki.com(index.php?BushoCard/2339亀姫、およびBusho/武将カード一覧(極))の2ソースでコスト/指揮兵数/統率ランク/攻撃防御兵法の初期値成長値/スキル効果(LV1・LV10)が完全一致することを確認して登録した。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2023-02-13",
+ "wikiCommentCount": 34,
+ "chGuess": "25章",
+ "chSource": "wikiOldestComment"
 }

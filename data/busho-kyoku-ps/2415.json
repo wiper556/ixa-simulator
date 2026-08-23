@@ -1,7 +1,7 @@
 {
  "name": "秋山信友",
  "no": "2415",
- "ch": null,
+ "ch": "17章",
  "cost": 4,
  "troop": "槍馬騎攻速",
  "sub": "",
@@ -35,6 +35,11 @@
  "reviewedOk": false,
  "notes": [
   "カード画像が無いため imageFull/imageChar は null。ixanary.comの埋め込みJSON(cards/2415)とixawiki.com(BushoCard/2415秋山信友)の基本ステータス表・スキル表を突き合わせて登録した。",
-  "攻撃力・防御力の基礎値と成長値はixanary(攻撃1050/防御1020/成長48/26)とixawiki(攻撃1040/防御1000/成長44/30)で食い違ったためatkBase/defBase/atkGrowth/defGrowthをnullにした。兵法(初期値500・成長2.5)・cost・指揮兵数・rankGrades・スキル数値は両ソース一致。"
- ]
+  "攻撃力・防御力の基礎値と成長値はixanary(攻撃1050/防御1020/成長48/26)とixawiki(攻撃1040/防御1000/成長44/30)で食い違ったためatkBase/defBase/atkGrowth/defGrowthをnullにした。兵法(初期値500・成長2.5)・cost・指揮兵数・rankGrades・スキル数値は両ソース一致。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2019-06-06",
+ "wikiCommentCount": 38,
+ "chGuess": "17章",
+ "chSource": "wikiOldestComment"
 }

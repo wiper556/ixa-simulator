@@ -1,7 +1,7 @@
 {
  "name": "島津忠恒",
  "no": "2178",
- "ch": null,
+ "ch": "12章",
  "cost": 2.5,
  "troop": "槍馬器攻破",
  "sub": "",
@@ -35,6 +35,11 @@
  "reviewedOk": false,
  "notes": [
   "2026-08-18登録(担当B)。カード画像が無いため imageFull/imageChar は null。ixanary.com(cards/2178)の埋め込みJSONとixawiki.com(index.php?BushoCard/2178島津忠恒)の生HTMLで、コスト/指揮兵数/攻撃防御兵法の初期値成長値/兵科ランク(槍S弓B馬A器A)/イラストレーター(碧風羽)/スキルLV1数値(確率+5%/攻撃17%上昇/破壊9.5%上昇/部隊コスト14以下で100%発動)が完全一致することを確認して登録した。LV10の数値(確率15%/攻撃45%上昇/破壊25%上昇)はixanaryのカードページに明記。",
-  "章(ch)は両ソースとも記載が無いため未確認。synthesisTableは今回付けていない。"
- ]
+  "章(ch)は両ソースとも記載が無いため未確認。synthesisTableは今回付けていない。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2016-09-08",
+ "wikiCommentCount": 77,
+ "chGuess": "12章",
+ "chSource": "wikiOldestComment"
 }

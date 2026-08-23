@@ -1,7 +1,7 @@
 {
  "name": "伊藤一刀斎",
  "no": "2722",
- "ch": null,
+ "ch": "7章",
  "cost": 3.0,
  "troop": "将攻",
  "sub": "",
@@ -65,7 +65,12 @@
  "notes": [
   "2026-08-18新規登録(担当G・カード画像なし)。ixanary.com/cards/2722とixawiki.com(index.php?BushoCard/2722伊藤一刀斎)の生HTML2ソースで統率(槍S弓B馬B器B)・コスト3・指揮兵数2240・初期値980/960/400・成長値+52/+48/+2.0・絵師岩元辰郎・ふりがな・スキルLV1値(確率+12%/攻撃10%上昇)が完全一致することを確認した(不一致項目なし)。",
   "初期スキル「一刀流」[A]の対象は兵科ではなく「将」(職業)で、LV10値(確率40%/攻撃45%上昇)はixanary.com/cards/2722のLV10スキルボックスで確認。",
-  "ixanaryには追加スキル(unitSkills)として「攻.剣の教え」の記載があるが、本サイトのJSONスキーマに対応するフィールドが無いため登録していない。synthesisTableはカード画像が無いため作成していない。章は両ソースに記載が無く未確認。"
+  "ixanaryには追加スキル(unitSkills)として「攻.剣の教え」の記載があるが、本サイトのJSONスキーマに対応するフィールドが無いため登録していない。synthesisTableはカード画像が無いため作成していない。章は両ソースに記載が無く未確認。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
  ],
- "reviewedOk": false
+ "reviewedOk": false,
+ "wikiOldestComment": "2014-04-05",
+ "wikiCommentCount": 91,
+ "chGuess": "7章",
+ "chSource": "wikiOldestComment"
 }

@@ -1,7 +1,7 @@
 {
  "name": "前田利家",
  "no": "3032",
- "ch": null,
+ "ch": "1-2章",
  "cost": 2.5,
  "troop": "槍防",
  "sub": "",
@@ -37,6 +37,11 @@
   "2026-08-18登録(担当D)。カード画像が無いためixanary.com(cards/3032)とixawiki.com(index.php?BushoCard/3032前田利家, Busho/武将カード一覧)の生HTML2ソースを突き合わせて登録した。",
   "統率(A/B/C/B)・コスト2.5・指揮兵数2260・攻撃625/17・防御625/17・兵法360.0/2・ふりがな・初期スキル「槍隊円陣」[D]はixanary.comとixawiki.comの2ソースで一致することを確認した(不一致箇所は個別に注記)。",
   "攻撃初期値625・防御初期値625が完全に同値だが、ixanary.comとixawiki.comの2ソースが独立に一致しているため実際の値と判断した(攻撃防御同値バグの誤登録ではない)。",
-  "カード画像が無いためimageFull/imageCharはnull、synthesisTableは付けない。reviewedOkはfalseのまま。章(ch)は両ソースとも記載が無くnullとした。"
- ]
+  "カード画像が無いためimageFull/imageCharはnull、synthesisTableは付けない。reviewedOkはfalseのまま。章(ch)は両ソースとも記載が無くnullとした。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2011-07-20",
+ "wikiCommentCount": 72,
+ "chGuess": "1-2章",
+ "chSource": "wikiOldestComment"
 }

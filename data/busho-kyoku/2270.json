@@ -1,7 +1,7 @@
 {
  "name": "本多正純",
  "no": "2270",
- "ch": null,
+ "ch": "19章",
  "cost": 3.5,
  "troop": "槍弓馬攻",
  "sub": "",
@@ -35,7 +35,12 @@
  "notes": [
   "2026-08-18登録(担当G)。カード画像が無いためixanary.com(cards/2270)生HTMLとixawiki.com(index.php?BushoCard/2270本多正純)生HTMLの2ソースを突き合わせて登録した。",
   "ステータス初期値1020/950/480・成長値36/25/2.5・cost3.5・lv0Troops3520・rankGrades(槍A/弓S/馬A/器B)・illustrator小森ニコは両ソースで完全一致。",
-  "スキル「権勢謳歌」LV10(確率27%・攻撃74%上昇・合流攻撃時発動率2倍)はixanaryのLV10欄と一致。ixawikiのBushoCardページはLV1欄(確率9%・攻撃38%上昇)のみの記載でLV10行が無いためLV1側の数値のみ突き合わせて一致確認した。"
+  "スキル「権勢謳歌」LV10(確率27%・攻撃74%上昇・合流攻撃時発動率2倍)はixanaryのLV10欄と一致。ixawikiのBushoCardページはLV1欄(確率9%・攻撃38%上昇)のみの記載でLV10行が無いためLV1側の数値のみ突き合わせて一致確認した。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
  ],
- "reviewedOk": false
+ "reviewedOk": false,
+ "wikiOldestComment": "2020-04-12",
+ "wikiCommentCount": 15,
+ "chGuess": "19章",
+ "chSource": "wikiOldestComment"
 }

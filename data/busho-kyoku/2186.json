@@ -1,7 +1,7 @@
 {
  "name": "井伊直虎（2）",
  "no": "2186",
- "ch": null,
+ "ch": "13章",
  "cost": 2,
  "troop": "槍馬器攻破",
  "sub": "",
@@ -36,6 +36,11 @@
  "notes": [
   "2026-08-18登録(担当B)。カード画像が無いため imageFull/imageChar は null。ixanary.com(cards/2186)の埋め込みJSONとixawiki.com(index.php?BushoCard/2186井伊直虎)の生HTMLで、コスト/指揮兵数/攻撃防御兵法の初期値成長値/兵科ランク(槍S弓B馬A器A)/イラストレーター(BISAI)/スキルLV1数値(確率+15%/攻撃12%上昇/破壊7%上昇)が完全一致することを確認して登録した。LV10の数値(確率56%/攻撃38%上昇/破壊23%上昇)はixanaryのカードページに明記。",
   "assign_B.txtの表記「井伊直虎(2)」に従い、同名武将と区別するため（2）を付けた。両ソースの武将名表記自体は「井伊直虎」のみ(No.で一意)。",
-  "章(ch)は両ソースとも記載が無いため未確認。synthesisTableは今回付けていない。"
- ]
+  "章(ch)は両ソースとも記載が無いため未確認。synthesisTableは今回付けていない。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2017-01-13",
+ "wikiCommentCount": 100,
+ "chGuess": "13章",
+ "chSource": "wikiOldestComment"
 }

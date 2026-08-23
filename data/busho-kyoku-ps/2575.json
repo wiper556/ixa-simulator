@@ -1,7 +1,7 @@
 {
  "name": "松平元康",
  "no": "2575",
- "ch": null,
+ "ch": "25章",
  "cost": 2,
  "troop": "槍弓器焙防",
  "sub": "",
@@ -35,6 +35,11 @@
  "reviewedOk": false,
  "notes": [
   "2026-08-18登録。カード画像が無いためixanary.com(cards/2575)とixawiki.com(BushoCard/2575松平元康)の生HTMLを突き合わせて一致した項目のみ登録した。基礎値/成長値/コスト/指揮兵数/統率ランク/初期スキルLV10の確率・効果値は両ソースで一致を確認済み。カード画像が無いためrankGradesは両ソース一致のみ採用しreviewedOkはfalseのまま。",
-  "defGrowthはixanaryが55・ixawikiが52で食い違ったためnullにした(atkGrowthは49で両ソース一致)。"
- ]
+  "defGrowthはixanaryが55・ixawikiが52で食い違ったためnullにした(atkGrowthは49で両ソース一致)。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2023-02-04",
+ "wikiCommentCount": 3,
+ "chGuess": "25章",
+ "chSource": "wikiOldestComment"
 }

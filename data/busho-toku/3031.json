@@ -1,7 +1,7 @@
 {
  "name": "下間頼廉",
  "no": "3031",
- "ch": null,
+ "ch": "1-2章",
  "cost": 2,
  "troop": "砲器防",
  "sub": "",
@@ -36,6 +36,11 @@
  "notes": [
   "2026-08-18登録(担当D)。カード画像が無いためixanary.com(cards/3031)とixawiki.com(index.php?BushoCard/3031下間頼廉, Busho/武将カード一覧)の生HTML2ソースを突き合わせて登録した。",
   "統率(A/D/B/A)・コスト2・指揮兵数1830・攻撃695/16・防御680/16・兵法415.0/2・ふりがな・初期スキル「釣瓶撃ち」[D]はixanary.comとixawiki.comの2ソースで一致することを確認した(不一致箇所は個別に注記)。",
-  "カード画像が無いためimageFull/imageCharはnull、synthesisTableは付けない。reviewedOkはfalseのまま。章(ch)は両ソースとも記載が無くnullとした。"
- ]
+  "カード画像が無いためimageFull/imageCharはnull、synthesisTableは付けない。reviewedOkはfalseのまま。章(ch)は両ソースとも記載が無くnullとした。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2011-07-21",
+ "wikiCommentCount": 155,
+ "chGuess": "1-2章",
+ "chSource": "wikiOldestComment"
 }

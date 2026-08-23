@@ -1,7 +1,7 @@
 {
  "name": "真田昌幸",
  "no": "2004",
- "ch": null,
+ "ch": "7章",
  "cost": 2.5,
  "troop": "弓馬防",
  "sub": "",
@@ -34,8 +34,11 @@
  ],
  "reviewedOk": false,
  "notes": [
-  "カード画像が無いため imageFull/imageChar は null。ixanary.comの埋め込みJSON(cards/2004)とixawiki.com(BushoCard/2004)の基本ステータス表・スキル表を突き合わせて登録した。"
+  "カード画像が無いため imageFull/imageChar は null。ixanary.comの埋め込みJSON(cards/2004)とixawiki.com(BushoCard/2004)の基本ステータス表・スキル表を突き合わせて登録した。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
  ],
  "wikiOldestComment": "2014-03-12",
- "wikiCommentCount": 23
+ "wikiCommentCount": 23,
+ "chGuess": "7章",
+ "chSource": "wikiOldestComment"
 }

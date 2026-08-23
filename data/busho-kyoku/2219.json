@@ -1,7 +1,7 @@
 {
  "name": "楠木正虎",
  "no": "2219",
- "ch": null,
+ "ch": "15章",
  "cost": 2,
  "troop": "全防",
  "sub": "",
@@ -37,6 +37,11 @@
   "2026-08-18登録(担当D)。カード画像が無いためixanary.com(cards/2219)とixawiki.com(index.php?BushoCard/2219楠木正虎)の生HTML突き合わせのみで登録した。",
   "コスト2・指揮兵数2480・攻撃力950(+25)・防御力980(+28)・兵法520(+2.5)・イラストレーターNatto-7・スキルLV1/LV10の数値は両ソースで完全一致。",
   "rankGrades(槍A/弓A/馬A/器A)はixawikiのみ出典(ixanaryにテキスト情報無し)。",
-  "章(ch)は両ソースに記載が無く未確認のためnull。"
- ]
+  "章(ch)は両ソースに記載が無く未確認のためnull。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2018-04-02",
+ "wikiCommentCount": 88,
+ "chGuess": "15章",
+ "chSource": "wikiOldestComment"
 }

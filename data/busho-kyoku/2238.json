@@ -1,7 +1,7 @@
 {
  "name": "羽柴秀長（2）",
  "no": "2238",
- "ch": null,
+ "ch": "16章",
  "cost": 2,
  "troop": "槍器鉄防",
  "sub": "",
@@ -10,20 +10,37 @@
  "illustrator": "塚本陽子",
  "imageFull": null,
  "imageChar": null,
- "atkBase": 970, "atkGrowth": 25,
- "defBase": 990, "defGrowth": 27,
- "tacticsBase": 480, "tacticsGrowth": 2.5,
+ "atkBase": 970,
+ "atkGrowth": 25,
+ "defBase": 990,
+ "defGrowth": 27,
+ "tacticsBase": 480,
+ "tacticsGrowth": 2.5,
  "lv0Troops": 2490,
- "rankGrades": {"yari": "S", "yumi": "B", "uma": "A", "ki": "A"},
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "B",
+  "uma": "A",
+  "ki": "A"
+ },
  "initialSkill": "日輪ノ轍",
  "skillDetail": "B/LV10 確率 40% 防御 2.7%上昇/対象:槍・器・鉄\n①防御 2.7%上昇する\n②部隊ランクボーナスで効果が変化する",
  "trTable": [
-  {"level": "LV10", "points": "-", "effect": "槍・器・鉄　確率 40% / 防御 2.7%上昇(部隊ランクボーナスで効果が変化)"}
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・器・鉄　確率 40% / 防御 2.7%上昇(部隊ランクボーナスで効果が変化)"
+  }
  ],
  "reviewedOk": false,
  "notes": [
   "2026-08-18登録。カード画像が無いためixanary.com(cards/2238)とixawiki.com(BushoCard/2238羽柴秀長)の一致のみで入れた。",
   "基礎値・成長値・コスト・指揮兵数・統率(槍S弓B馬A器A)は両ソース一致。",
-  "初期スキル「日輪ノ轍」[B]はLV10確率40%・対象槍・器・鉄・防御2.7%上昇。ixawikiの注記により式は(部隊ランクボーナス×9)%上昇と判明(両ソース一致)。"
- ]
+  "初期スキル「日輪ノ轍」[B]はLV10確率40%・対象槍・器・鉄・防御2.7%上昇。ixawikiの注記により式は(部隊ランクボーナス×9)%上昇と判明(両ソース一致)。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2018-12-03",
+ "wikiCommentCount": 24,
+ "chGuess": "16章",
+ "chSource": "wikiOldestComment"
 }

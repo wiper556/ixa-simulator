@@ -1,7 +1,7 @@
 {
  "name": "島津豊久",
  "no": "2069",
- "ch": null,
+ "ch": "5章",
  "cost": 2.5,
  "troop": "槍砲防",
  "sub": "",
@@ -36,6 +36,11 @@
  "notes": [
   "2026-08-17登録。カード画像が無いため ixanary.com(cards/2069)と ixawiki.com(BushoCard/2069島津豊久)の生HTML2ソースで確認した。",
   "コスト/指揮兵数/攻撃防御兵法の初期値成長値/兵科ランク(槍S弓D馬A器B)/スキル名対象確率効果(LV10確率35%防御30%上昇対象槍砲)/イラストレーターが両ソース完全一致。",
-  "章(ch)は両ソースとも記載が無くnullのまま。カード画像自体が無いためimageFull/imageCharはnull、reviewedOkはfalseのまま(rankGrades等はテキスト情報の2ソース一致で登録)。"
- ]
+  "章(ch)は両ソースとも記載が無くnullのまま。カード画像自体が無いためimageFull/imageCharはnull、reviewedOkはfalseのまま(rankGrades等はテキスト情報の2ソース一致で登録)。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2013-03-22",
+ "wikiCommentCount": 85,
+ "chGuess": "5章",
+ "chSource": "wikiOldestComment"
 }

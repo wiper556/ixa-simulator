@@ -1,7 +1,7 @@
 {
  "name": "出雲阿国",
  "no": "3068",
- "ch": null,
+ "ch": "3章",
  "cost": 2,
  "troop": "全攻速",
  "sub": "",
@@ -38,6 +38,11 @@
   "章(ch)はixanary・ixawikiのどちらにも実装章の記載がなく未確認のためnull。",
   "rankGradesは2ソース一致のため採用(食い違いなし)。",
   "防御初期値(defBase)はixanaryが670(攻撃と同値=既知の破損パターン)、ixawikiが620で食い違ったためnullにした。defGrowthは両ソース一致(15)のため採用。",
-  "furigana(ふりがな)はixanaryが「いづものおくに」、ixawikiが「いずものおくに」で「づ」「ず」表記のみ食い違った(発音は同一)。現代仮名遣いのixawiki側「いずものおくに」を採用した。"
- ]
+  "furigana(ふりがな)はixanaryが「いづものおくに」、ixawikiが「いずものおくに」で「づ」「ず」表記のみ食い違った(発音は同一)。現代仮名遣いのixawiki側「いずものおくに」を採用した。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2011-11-18",
+ "wikiCommentCount": 139,
+ "chGuess": "3章",
+ "chSource": "wikiOldestComment"
 }

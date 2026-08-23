@@ -1,7 +1,7 @@
 {
  "name": "栄姫",
  "no": "3161",
- "ch": null,
+ "ch": "7章",
  "cost": 2,
  "troop": "槍弓馬防",
  "sub": "",
@@ -35,6 +35,11 @@
  "reviewedOk": false,
  "notes": [
   "2026-08-18登録(担当J)。カード画像が無いためixanaryとixawikiの両方を確認した。武将名「栄姫」/ふりがな「えいひめ」/特/コスト2/統率 槍A・弓B・馬B・器D/攻撃540・防御610・兵法430.0/成長値(攻撃+16/防御+18/兵法+2)/指揮兵数2300/カードNo.3161/スキル「藤巴葵陣LV10」[C] 確率:20%・対象 槍・弓・馬・防御:30%上昇/Illust 双羽純。ixanary(カードページ埋め込みJSON)とixawiki(BushoCardページ)の統率・コスト・指揮兵数・攻防兵法初期値と成長値・スキル対象と効果が完全に一致したためそのまま採用した。",
-  "rankGradesはカード画像で確認できないため未reviewed(reviewedOk=false)。章(ch)はカード画像でもixanary/ixawikiでも確認できなかったためnullのまま。"
- ]
+  "rankGradesはカード画像で確認できないため未reviewed(reviewedOk=false)。章(ch)はカード画像でもixanary/ixawikiでも確認できなかったためnullのまま。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2013-12-25",
+ "wikiCommentCount": 353,
+ "chGuess": "7章",
+ "chSource": "wikiOldestComment"
 }

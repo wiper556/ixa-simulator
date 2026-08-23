@@ -1,7 +1,7 @@
 {
  "name": "平手政秀",
  "no": "2149",
- "ch": null,
+ "ch": "10章",
  "cost": 0.5,
  "troop": "全防",
  "sub": "",
@@ -34,6 +34,11 @@
  ],
  "reviewedOk": false,
  "notes": [
-  "カード画像が無いためimageFull/imageChar は null。ixanary.com(cards/2149)とixawiki.com(BushoCard/2149平手政秀)を突き合わせて登録した。基本ステータス・ランク・スキル数値とも両ソースで一致。"
- ]
+  "カード画像が無いためimageFull/imageChar は null。ixanary.com(cards/2149)とixawiki.com(BushoCard/2149平手政秀)を突き合わせて登録した。基本ステータス・ランク・スキル数値とも両ソースで一致。",
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+ ],
+ "wikiOldestComment": "2015-08-11",
+ "wikiCommentCount": 197,
+ "chGuess": "10章",
+ "chSource": "wikiOldestComment"
 }
