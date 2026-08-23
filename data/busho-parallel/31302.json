@@ -1,0 +1,145 @@
+{
+ "name": "佐竹義宣（3）",
+ "no": "31302",
+ "ch": "31章",
+ "cost": 5.5,
+ "troop": "砲器防",
+ "sub": "",
+ "effect": "防御参加武将数依存",
+ "furigana": "さたけよしのぶ",
+ "illustrator": "直良有祐",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1100,
+ "atkGrowth": 50,
+ "defBase": 1270,
+ "defGrowth": 72,
+ "tacticsBase": 660,
+ "tacticsGrowth": 3,
+ "lv0Troops": 5290,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "SS"
+ },
+ "initialSkill": "泰厳射手",
+ "skillDetail": "S/TR6 確率 100% 防御上昇/対象:砲・器\n①(係数×防御参加武将数)%を防御効果に加算する(係数はTR6=14.7)",
+ "categoryLinks": [
+  {
+   "href": "skills-count-def.html",
+   "label": "人数依存(防)スキル一覧を見る"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "coefficient": "11.5",
+   "effect": "砲・器　確率 60% / 防御 11.5%×防御参加武将数(280人)=3220.0%"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "coefficient": "11.8",
+   "effect": "砲・器　確率 60% / 防御 11.8%×防御参加武将数(280人)=3304.0%"
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "coefficient": "12.2",
+   "effect": "砲・器　確率 60% / 防御 12.2%×防御参加武将数(280人)=3416.0%"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "coefficient": "12.7",
+   "effect": "砲・器　確率 60% / 防御 12.7%×防御参加武将数(280人)=3556.0%"
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "coefficient": "13.3",
+   "effect": "砲・器　確率 60% / 防御 13.3%×防御参加武将数(280人)=3724.0%"
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "coefficient": "14",
+   "effect": "砲・器　確率 60% / 防御 14%×防御参加武将数(280人)=3920.0%"
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "coefficient": "14.7",
+   "effect": "砲・器　確率 100% / 防御 14.7%×防御参加武将数(280人)=4116.0%"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "八幡神ノ威光",
+   "rank": "SSS",
+   "afterSkill": "八幡神ノ威光",
+   "afterRank": "SSS",
+   "rate": "70%",
+   "target": "部隊長",
+   "effectShort": "所属部隊の部隊長が持つ模倣可能な初期スキルを通常攻撃/防御効果1.25倍にして模倣する",
+   "afterEffectShort": "所属部隊の部隊長が持つ模倣可能な初期スキルを通常攻撃/防御効果1.25倍にして模倣する"
+  },
+  {
+   "slot": "B",
+   "skill": "虚実兵妙",
+   "rank": "SS",
+   "afterSkill": "虚実兵妙",
+   "afterRank": "SS",
+   "rate": "100%",
+   "target": "全",
+   "effectShort": "防御 740%上昇+防御戦闘時敵軍の卓越確率-8%する(自軍内重複上限2)",
+   "afterEffectShort": "防御 740%上昇+防御戦闘時敵軍の卓越確率-8%する(自軍内重複上限2)"
+  },
+  {
+   "slot": "C",
+   "skill": "月煌侵蝕",
+   "rank": "SSS",
+   "afterSkill": "月煌侵蝕",
+   "afterRank": "SSS",
+   "rate": "45%",
+   "target": "全 兵站",
+   "effectShort": "防御 7.6%×防御参加武将数(280人)=2128.0%",
+   "afterEffectShort": "防御 7.6%×防御参加武将数(280人)=2128.0%"
+  },
+  {
+   "slot": "S1",
+   "skill": "泰厳射手",
+   "rank": "S",
+   "afterSkill": "泰厳射手",
+   "afterRank": "S",
+   "rate": "60%",
+   "target": "砲・器",
+   "effectShort": "防御 11.5%×防御参加武将数(280人)=3220.0%",
+   "afterEffectShort": "防御 11.5%×防御参加武将数(280人)=3220.0%"
+  },
+  {
+   "slot": "S2",
+   "skill": "月煌侵蝕",
+   "rank": "SSS",
+   "afterSkill": "月煌侵蝕",
+   "afterRank": "SSS",
+   "rate": "45%",
+   "target": "全 兵站",
+   "effectShort": "防御 7.6%×防御参加武将数(280人)=2128.0%",
+   "afterEffectShort": "防御 7.6%×防御参加武将数(280人)=2128.0%"
+  }
+ ],
+ "notes": [
+  "2026-08-23 新規登録(青丸)。天パラレル(No.30000+元No.)。元カード No.1302 と同じ武将の別バージョンで、**カードは最初からスキルが TR6 の状態で配られる**(鍛錬表の TR6 行の必要ポイントが「パラレル」なのはこのため)。そのため skillDetail と effect だけ TR6 の数値・文言にしてあり、それ以外の項目は親カードと同一。",
+  "2026-08-23: 親との全項目照合を ixanary カードページの埋め込みJSON・ixanary スキルページ(末尾スラッシュ付き・LV1〜TR6の全段と合成テーブル)・親カード画像 assets/img/characters/no1302_full.png の4隅バッジ拡大 の3系統で行い、name・furigana・ch・cost・troop・sub・illustrator・初期値・成長値・lv0Troops・rankGrades・initialSkill・trTable・synthesisTable・categoryLinks が**すべて親と一致**することを確認した。統率は HINTS #17 のとおり ixanary の yumi/kiba が入れ替わるのでカード画像を最上位の根拠にしている。絵師も HINTS #18 のとおり ixanary が「直良祐介」と誤るので画像を採った。",
+  "2026-08-23: **このカードのカード画像がまだ無い**(assets/img/characters/no31302_full.png が存在しない)。登録済みの 31310〜31321 は画像があるが 31286〜31309 は1枚も無く、切り出し元のスクリーンショットもリポジトリに無い。画像なし武将781体と同じく imageFull/imageChar は null にしてある。画像が手に入ったら crop_card.py で切り出してパスを入れること。",
+  "2026-08-23: ixawiki に BushoCard/31302 のページは無い(編集フォームが返る)。wikiOldestComment / wikiCommentCount は null。既存のパラレル12枚も全て null。",
+  "2026-08-23: 章は ixagno blog-entry-11077「パラレル天【一覧】」が31286〜31297 を30章・31298〜31309 を31章の節に並べており、親カードの ch とも一致する。"
+ ],
+ "reviewedOk": false,
+ "wikiOldestComment": null,
+ "wikiCommentCount": null
+}

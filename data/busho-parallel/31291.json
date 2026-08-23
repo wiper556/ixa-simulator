@@ -1,0 +1,132 @@
+{
+ "name": "上杉謙信（7）",
+ "no": "31291",
+ "ch": "30章",
+ "cost": 4,
+ "troop": "全防",
+ "sub": "",
+ "effect": "防御側の兵科補正を0.6倍に小さくする",
+ "furigana": "うえすぎけんしん",
+ "illustrator": "直良有祐",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1040,
+ "atkGrowth": 41,
+ "defBase": 1280,
+ "defGrowth": 73,
+ "tacticsBase": 690,
+ "tacticsGrowth": 3.5,
+ "lv0Troops": 4680,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "S",
+  "ki": "A"
+ },
+ "initialSkill": "轟渦ノ神将",
+ "skillDetail": "S/TR6 確率 100% 防御 1650%上昇/対象:全\n模倣不可\n①防御 1650%上昇する\n②防御戦闘時防御側の兵科補正が0.6倍に小さくなる(特殊効果は累積するが有利不利は逆転しない自軍内重複上限4)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 50% / 防御 500%上昇(兵科補正0.8倍)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": "全　確率 55% / 防御 560%上昇(兵科補正0.78倍)"
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": "全　確率 60% / 防御 690%上昇(兵科補正0.75倍)"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": "全　確率 65% / 防御 900%上昇(兵科補正0.72倍)"
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": "全　確率 70% / 防御 1150%上昇(兵科補正0.68倍)"
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": "全　確率 80% / 防御 1460%上昇(兵科補正0.64倍)"
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": "全　確率 100% / 防御 1650%上昇(兵科補正0.6倍)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "仙境解脱",
+   "rank": "SS",
+   "afterSkill": "仙境解脱",
+   "afterRank": "SS",
+   "rate": "48%",
+   "target": "全",
+   "effectShort": "防御 910%上昇(部隊消費コスト-1.5・模倣不可)",
+   "afterEffectShort": "防御 910%上昇(部隊消費コスト-1.5・模倣不可)"
+  },
+  {
+   "slot": "B",
+   "skill": "仙境解脱",
+   "rank": "SS",
+   "afterSkill": "仙境解脱",
+   "afterRank": "SS",
+   "rate": "48%",
+   "target": "全",
+   "effectShort": "防御 910%上昇(部隊消費コスト-1.5・模倣不可)",
+   "afterEffectShort": "防御 910%上昇(部隊消費コスト-1.5・模倣不可)"
+  },
+  {
+   "slot": "C",
+   "skill": "従魔絶神",
+   "rank": "SSS",
+   "afterSkill": "従魔絶神",
+   "afterRank": "SSS",
+   "rate": "43%",
+   "target": "全 飛翔13",
+   "effectShort": "防御 9.4%×防御参加武将数(280人)=2632.0%",
+   "afterEffectShort": "防御 9.4%×防御参加武将数(280人)=2632.0%"
+  },
+  {
+   "slot": "S1",
+   "skill": "轟渦ノ神将",
+   "rank": "S",
+   "afterSkill": "轟渦ノ神将",
+   "afterRank": "S",
+   "rate": "50%",
+   "target": "全",
+   "effectShort": "防御 500%上昇(兵科補正0.8倍・模倣不可・自軍内重複上限4)",
+   "afterEffectShort": "防御 500%上昇(兵科補正0.8倍・模倣不可・自軍内重複上限4)"
+  },
+  {
+   "slot": "S2",
+   "skill": "虚実兵妙",
+   "rank": "SS",
+   "afterSkill": "虚実兵妙",
+   "afterRank": "SS",
+   "rate": "100%",
+   "target": "全",
+   "effectShort": "防御 740%上昇+防御戦闘時敵軍の卓越確率-8%する(自軍内重複上限2)",
+   "afterEffectShort": "防御 740%上昇+防御戦闘時敵軍の卓越確率-8%する(自軍内重複上限2)"
+  }
+ ],
+ "notes": [
+  "2026-08-23 新規登録(青丸)。天パラレル(No.30000+元No.)。元カード No.1291 と同じ武将の別バージョンで、**カードは最初からスキルが TR6 の状態で配られる**(鍛錬表の TR6 行の必要ポイントが「パラレル」なのはこのため)。そのため skillDetail と effect だけ TR6 の数値・文言にしてあり、それ以外の項目は親カードと同一。",
+  "2026-08-23: 親との全項目照合を ixanary カードページの埋め込みJSON・ixanary スキルページ(末尾スラッシュ付き・LV1〜TR6の全段と合成テーブル)・親カード画像 assets/img/characters/no1291_full.png の4隅バッジ拡大 の3系統で行い、name・furigana・ch・cost・troop・sub・illustrator・初期値・成長値・lv0Troops・rankGrades・initialSkill・trTable・synthesisTable・categoryLinks が**すべて親と一致**することを確認した。統率は HINTS #17 のとおり ixanary の yumi/kiba が入れ替わるのでカード画像を最上位の根拠にしている。絵師も HINTS #18 のとおり ixanary が「直良祐介」と誤るので画像を採った。",
+  "2026-08-23: **このカードのカード画像がまだ無い**(assets/img/characters/no31291_full.png が存在しない)。登録済みの 31310〜31321 は画像があるが 31286〜31309 は1枚も無く、切り出し元のスクリーンショットもリポジトリに無い。画像なし武将781体と同じく imageFull/imageChar は null にしてある。画像が手に入ったら crop_card.py で切り出してパスを入れること。",
+  "2026-08-23: ixawiki に BushoCard/31291 のページは無い(編集フォームが返る)。wikiOldestComment / wikiCommentCount は null。既存のパラレル12枚も全て null。",
+  "2026-08-23: 章は ixagno blog-entry-11077「パラレル天【一覧】」が31286〜31297 を30章・31298〜31309 を31章の節に並べており、親カードの ch とも一致する。"
+ ],
+ "reviewedOk": false,
+ "wikiOldestComment": null,
+ "wikiCommentCount": null
+}

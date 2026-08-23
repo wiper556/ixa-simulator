@@ -1,0 +1,145 @@
+{
+ "name": "津軽為信",
+ "no": "31309",
+ "ch": "31章",
+ "cost": 4.5,
+ "troop": "槍弓器鉄防",
+ "sub": "",
+ "effect": "防御参加武将数依存／220名以下の時、防御効果1.5倍",
+ "furigana": "つがるためのぶ",
+ "illustrator": "直良有祐",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1060,
+ "atkGrowth": 43,
+ "defBase": 1250,
+ "defGrowth": 71,
+ "tacticsBase": 670,
+ "tacticsGrowth": 3,
+ "lv0Troops": 4900,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "不制于天地人",
+ "skillDetail": "S/TR6 確率 60% 防御上昇/対象:槍・弓・器・鉄\n模倣不可\n①(係数×防御参加武将数)%を防御効果に加算する(係数はTR6=11.2)\n②防御参加武将数が220以下の時防御効果1.5倍となる(計算エンジン未対応)",
+ "categoryLinks": [
+  {
+   "href": "skills-count-def.html",
+   "label": "人数依存(防)スキル一覧を見る"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "coefficient": "8.5",
+   "effect": "槍・弓・器・鉄　確率 50% / 防御 8.5%×防御参加武将数(220人)×1.5倍=2805.0%"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "coefficient": "8.7",
+   "effect": "槍・弓・器・鉄　確率 50% / 防御 8.7%×防御参加武将数(220人)×1.5倍=2871.0%"
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "coefficient": "9",
+   "effect": "槍・弓・器・鉄　確率 50% / 防御 9%×防御参加武将数(220人)×1.5倍=2970.0%"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "coefficient": "9.3",
+   "effect": "槍・弓・器・鉄　確率 50% / 防御 9.3%×防御参加武将数(220人)×1.5倍=3069.0%"
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "coefficient": "9.6",
+   "effect": "槍・弓・器・鉄　確率 50% / 防御 9.6%×防御参加武将数(220人)×1.5倍=3168.0%"
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "coefficient": "10.2",
+   "effect": "槍・弓・器・鉄　確率 50% / 防御 10.2%×防御参加武将数(220人)×1.5倍=3366.0%"
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "coefficient": "11.2",
+   "effect": "槍・弓・器・鉄　確率 60% / 防御 11.2%×防御参加武将数(220人)×1.5倍=3696.0%"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "摩利支天ノ法",
+   "rank": "SSS",
+   "afterSkill": "摩利支天ノ法",
+   "afterRank": "SSS",
+   "rate": "70%",
+   "target": "部隊長",
+   "effectShort": "所属部隊の部隊長が持つ模倣可能な初期スキルを通常攻撃/防御効果1.25倍にして模倣する",
+   "afterEffectShort": "所属部隊の部隊長が持つ模倣可能な初期スキルを通常攻撃/防御効果1.25倍にして模倣する"
+  },
+  {
+   "slot": "B",
+   "skill": "従魔絶神",
+   "rank": "SSS",
+   "afterSkill": "従魔絶神",
+   "afterRank": "SSS",
+   "rate": "43%",
+   "target": "全 飛翔13",
+   "effectShort": "防御 9.4%×防御参加武将数(280人)=2632.0%",
+   "afterEffectShort": "防御 9.4%×防御参加武将数(280人)=2632.0%"
+  },
+  {
+   "slot": "C",
+   "skill": "梵天浄界",
+   "rank": "SSS",
+   "afterSkill": "梵天浄界",
+   "afterRank": "SSS",
+   "rate": "60%",
+   "target": "全",
+   "effectShort": "防御 50%上昇+破壊 150%上昇(10×防御参加武将数(280人)=2800%を防御効果に加算)",
+   "afterEffectShort": "防御 50%上昇+破壊 150%上昇(10×防御参加武将数(280人)=2800%を防御効果に加算)"
+  },
+  {
+   "slot": "S1",
+   "skill": "不制于天地人",
+   "rank": "S",
+   "afterSkill": "不制于天地人",
+   "afterRank": "S",
+   "rate": "50%",
+   "target": "槍・弓・器・鉄",
+   "effectShort": "防御 8.5%×防御参加武将数(220人)×1.5倍=2805.0%(模倣不可)",
+   "afterEffectShort": "防御 8.5%×防御参加武将数(220人)×1.5倍=2805.0%(模倣不可)"
+  },
+  {
+   "slot": "S2",
+   "skill": "虚実兵妙",
+   "rank": "SS",
+   "afterSkill": "虚実兵妙",
+   "afterRank": "SS",
+   "rate": "100%",
+   "target": "全",
+   "effectShort": "防御 740%上昇+防御戦闘時敵軍の卓越確率-8%する(自軍内重複上限2)",
+   "afterEffectShort": "防御 740%上昇+防御戦闘時敵軍の卓越確率-8%する(自軍内重複上限2)"
+  }
+ ],
+ "notes": [
+  "2026-08-23 新規登録(青丸)。天パラレル(No.30000+元No.)。元カード No.1309 と同じ武将の別バージョンで、**カードは最初からスキルが TR6 の状態で配られる**(鍛錬表の TR6 行の必要ポイントが「パラレル」なのはこのため)。そのため skillDetail と effect だけ TR6 の数値・文言にしてあり、それ以外の項目は親カードと同一。",
+  "2026-08-23: 親との全項目照合を ixanary カードページの埋め込みJSON・ixanary スキルページ(末尾スラッシュ付き・LV1〜TR6の全段と合成テーブル)・親カード画像 assets/img/characters/no1309_full.png の4隅バッジ拡大 の3系統で行い、name・furigana・ch・cost・troop・sub・illustrator・初期値・成長値・lv0Troops・rankGrades・initialSkill・trTable・synthesisTable・categoryLinks が**すべて親と一致**することを確認した。統率は HINTS #17 のとおり ixanary の yumi/kiba が入れ替わるのでカード画像を最上位の根拠にしている。絵師も HINTS #18 のとおり ixanary が「直良祐介」と誤るので画像を採った。",
+  "2026-08-23: **このカードのカード画像がまだ無い**(assets/img/characters/no31309_full.png が存在しない)。登録済みの 31310〜31321 は画像があるが 31286〜31309 は1枚も無く、切り出し元のスクリーンショットもリポジトリに無い。画像なし武将781体と同じく imageFull/imageChar は null にしてある。画像が手に入ったら crop_card.py で切り出してパスを入れること。",
+  "2026-08-23: ixawiki に BushoCard/31309 のページは無い(編集フォームが返る)。wikiOldestComment / wikiCommentCount は null。既存のパラレル12枚も全て null。",
+  "2026-08-23: 章は ixagno blog-entry-11077「パラレル天【一覧】」が31286〜31297 を30章・31298〜31309 を31章の節に並べており、親カードの ch とも一致する。"
+ ],
+ "reviewedOk": false,
+ "wikiOldestComment": null,
+ "wikiCommentCount": null
+}

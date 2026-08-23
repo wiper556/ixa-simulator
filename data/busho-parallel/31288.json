@@ -1,0 +1,142 @@
+{
+ "name": "徳川家康（11）【覇】",
+ "no": "31288",
+ "ch": "30章",
+ "cost": 5.5,
+ "troop": "弓砲器攻防",
+ "sub": "覇道",
+ "effect": "卓越追加確率200%で発動／100%超過分×7.0%を加算",
+ "furigana": "とくがわいえやす",
+ "illustrator": "直良有祐",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 1280,
+ "atkGrowth": 81,
+ "defBase": 1280,
+ "defGrowth": 81,
+ "tacticsBase": 850,
+ "tacticsGrowth": 4,
+ "lv0Troops": 5220,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "X",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "伏雷蒼樹",
+ "skillDetail": "SSS/TR6 卓越追加確率200%で発動 攻防 200%上昇/対象:弓・砲・器　覇道\n①通常確率では発動せず卓越の追加発動確率200%で発動する\n②攻撃 200%上昇 防御 200%上昇する\n③卓越追加確率のうち100%を超えた分を超過分×7.0%として攻防効果に加算する(二重卓越不可)\n④覇道を持つため所属部隊の武将のスキルを無効化や発動率低下から保護する",
+ "categoryLinks": [
+  {
+   "href": "skills-hadou.html",
+   "label": "覇道スキル一覧を見る"
+  },
+  {
+   "href": "skills-takuetsu.html",
+   "label": "卓越スキル一覧を見る"
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓・砲・器 覇道　卓越追加確率50%で発動 / 攻防200%上昇(超過分×5.5%)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": "弓・砲・器 覇道　卓越追加確率60%で発動 / 攻防200%上昇(超過分×5.6%)"
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": "弓・砲・器 覇道　卓越追加確率70%で発動 / 攻防200%上昇(超過分×5.8%)"
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": "弓・砲・器 覇道　卓越追加確率90%で発動 / 攻防200%上昇(超過分×6.0%)"
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": "弓・砲・器 覇道　卓越追加確率120%で発動 / 攻防200%上昇(超過分×6.4%)"
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": "弓・砲・器 覇道　卓越追加確率150%で発動 / 攻防200%上昇(超過分×6.8%)"
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": "弓・砲・器 覇道　卓越追加確率200%で発動 / 攻防200%上昇(超過分×7.0%)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "千里必勝ノ神算",
+   "rank": "SS",
+   "afterSkill": "千里必勝ノ神算",
+   "afterRank": "SS",
+   "rate": "42%",
+   "target": "全 覇道",
+   "effectShort": "攻撃 1010%上昇+防御 1010%上昇+破壊 150%上昇",
+   "afterEffectShort": "攻撃 1010%上昇+防御 1010%上昇+破壊 150%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "千里必勝ノ神算",
+   "rank": "SS",
+   "afterSkill": "千里必勝ノ神算",
+   "afterRank": "SS",
+   "rate": "42%",
+   "target": "全 覇道",
+   "effectShort": "攻撃 1010%上昇+防御 1010%上昇+破壊 150%上昇",
+   "afterEffectShort": "攻撃 1010%上昇+防御 1010%上昇+破壊 150%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "幻像鏡花",
+   "rank": "SSS",
+   "afterSkill": "幻像鏡花",
+   "afterRank": "SSS",
+   "rate": "56%",
+   "target": "部隊長",
+   "effectShort": "部隊長の模倣可能な初期スキルを卓越:追加確率40%で1.35倍にして模倣",
+   "afterEffectShort": "部隊長の模倣可能な初期スキルを卓越:追加確率40%で1.35倍にして模倣"
+  },
+  {
+   "slot": "S1",
+   "skill": "幻像鏡花",
+   "rank": "SSS",
+   "afterSkill": "幻像鏡花",
+   "afterRank": "SSS",
+   "rate": "56%",
+   "target": "部隊長",
+   "effectShort": "部隊長の模倣可能な初期スキルを卓越:追加確率40%で1.35倍にして模倣",
+   "afterEffectShort": "部隊長の模倣可能な初期スキルを卓越:追加確率40%で1.35倍にして模倣"
+  },
+  {
+   "slot": "S2",
+   "skill": "至天ノ御剣",
+   "rank": "SSS",
+   "afterSkill": "至天ノ御剣",
+   "afterRank": "SSS",
+   "rate": "70%",
+   "target": "自身",
+   "effectShort": "自身が持つ初期スキルを模倣する(卓越:追加確率30%で通常攻撃/防御効果1.3倍にして模倣)",
+   "afterEffectShort": "自身が持つ初期スキルを模倣する(卓越:追加確率30%で通常攻撃/防御効果1.3倍にして模倣)"
+  }
+ ],
+ "notes": [
+  "2026-08-23 新規登録(青丸)。天パラレル(No.30000+元No.)。元カード No.1288 と同じ武将の別バージョンで、**カードは最初からスキルが TR6 の状態で配られる**(鍛錬表の TR6 行の必要ポイントが「パラレル」なのはこのため)。そのため skillDetail と effect だけ TR6 の数値・文言にしてあり、それ以外の項目は親カードと同一。",
+  "2026-08-23: 親との全項目照合を ixanary カードページの埋め込みJSON・ixanary スキルページ(末尾スラッシュ付き・LV1〜TR6の全段と合成テーブル)・親カード画像 assets/img/characters/no1288_full.png の4隅バッジ拡大 の3系統で行い、name・furigana・ch・cost・troop・sub・illustrator・初期値・成長値・lv0Troops・rankGrades・initialSkill・trTable・synthesisTable・categoryLinks が**すべて親と一致**することを確認した。統率は HINTS #17 のとおり ixanary の yumi/kiba が入れ替わるのでカード画像を最上位の根拠にしている。絵師も HINTS #18 のとおり ixanary が「直良祐介」と誤るので画像を採った。",
+  "2026-08-23: **このカードのカード画像がまだ無い**(assets/img/characters/no31288_full.png が存在しない)。登録済みの 31310〜31321 は画像があるが 31286〜31309 は1枚も無く、切り出し元のスクリーンショットもリポジトリに無い。画像なし武将781体と同じく imageFull/imageChar は null にしてある。画像が手に入ったら crop_card.py で切り出してパスを入れること。",
+  "2026-08-23: ixawiki に BushoCard/31288 のページは無い(編集フォームが返る)。wikiOldestComment / wikiCommentCount は null。既存のパラレル12枚も全て null。",
+  "2026-08-23: 章は ixagno blog-entry-11077「パラレル天【一覧】」が31286〜31297 を30章・31298〜31309 を31章の節に並べており、親カードの ch とも一致する。"
+ ],
+ "reviewedOk": false,
+ "wikiOldestComment": null,
+ "wikiCommentCount": null
+}

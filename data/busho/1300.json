@@ -124,10 +124,17 @@
   "ixanary.com(/skills/信明義星/)生HTML照合(2026-08-16): LV1・LV10・TR1〜TR6の全段階が実在し、攻撃800/920/1100/1290/1490/1640%・HP減少係数0.21/0.22/0.24/0.26/0.3/0.33が現在のtrTableと完全一致。",
   "synthesisTable: ixanary.com(/skills/信明義星/、生HTML)ではA=虎賁統帥[SS]/B=天地超克[SSS]/C=勇冠三軍[SSS]/S1=信明義星[SSS]/S2=神羅聖域[SS](全枠自己参照)で現在のデータと完全一致。ixawiki.com(index.php?BushoCard/1300大谷吉継(覇))は1298・1299と同一の誤ったテーブル(A・B=天地超克/C=焼尽神無/S1=勇冠三軍/S2=万物神勇)を表示(3武将で同一の誤表示=ixawiki側テンプレート使い回しバグと確定)。第3ソースixagno.blog.fc2.com(blog-entry-10833「大谷吉継【覇】(No.1300)の能力と考察」)でixanaryと完全一致を確認(2対1でixawikiを不採用)。",
   "data/skill/虎賁統帥.json・天地超克.json・勇冠三軍.json・信明義星.json・神羅聖域.jsonのsourceCharactersに1300が正しい枠で登録済みであることを確認(A-3-11)。",
-  "2026-08-22 検証: 修飾語の付かない裸の「模倣不可」が①の括弧内に埋め込まれていた。信明義星は公式panel-2の全体模倣不可リスト(docs/sengokuixa-nomimic-nodup.md L75)に載るスキルなので、F-01どおりヘッダーの次の独立行にした。"
+  "2026-08-22 検証: 修飾語の付かない裸の「模倣不可」が①の括弧内に埋め込まれていた。信明義星は公式panel-2の全体模倣不可リスト(docs/sengokuixa-nomimic-nodup.md L75)に載るスキルなので、F-01どおりヘッダーの次の独立行にした。",
+  "2026-08-23: 天パラレル No.31300 を登録したので variants を張った。これまで variants を持つ武将は 1288 と 1303 の2件だけで、しかも両方ともリンク先のファイルが無いリンク切れだった(HINTS #25)。"
  ],
  "reviewedOk": false,
  "wikiOldestComment": "2026-02-08",
  "wikiCommentCount": 3,
- "chGuess": "31章"
+ "chGuess": "31章",
+ "variants": {
+  "parallel": {
+   "no": "31300",
+   "label": "パラレル"
+  }
+ }
 }

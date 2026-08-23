@@ -3,7 +3,7 @@
  "rank": "S",
  "baseRate": 60,
  "target": "砲・器",
- "effectSummary": "S/LV10 確率 60% 防御上昇/対象:砲・器\n①(係数×防御参加武将数)%を防御効果に加算する",
+ "effectSummary": "S/LV10 確率 60% 防御上昇/対象:砲・器\n①(係数×防御参加武将数)%を防御効果に加算する(係数はLV10=11.5)",
  "categoryLinks": [
   {
    "href": "skills-count-def.html",
@@ -15,6 +15,14 @@
    "name": "佐竹義宣（3）",
    "no": "1302",
    "slot": "S1"
+  },
+  {
+   "name": "佐竹義宣（3）",
+   "no": "31302",
+   "slot": "S1",
+   "note": [
+    "佐竹義宣（3）(31302)のsynthesisTable S1枠(2026-08-23)"
+   ]
   }
  ],
  "ownHiddenCandidate": {
@@ -64,5 +72,8 @@
    "coefficient": "14.7",
    "effect": "砲・器　確率 100% / 防御 14.7%×防御参加武将数(280人)=4116.0%"
   }
+ ],
+ "notes": [
+  "2026-08-23 検証: effectSummary① から「(係数はLV10=11.5)」が落ちていた。武将側 data/busho/1302.json は持っており、11.5 は ixanary の LV10 と一致。武将側に揃えた(HINTS #24)。"
  ]
 }
