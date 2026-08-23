@@ -5,7 +5,13 @@
  "target": "砲",
  "effectSummary": "S/LV10 確率 35% 攻撃 30%上昇/破壊 20%上昇/対象:砲\n①攻撃が30%上昇する\n②破壊が20%上昇する",
  "categoryLinks": [],
- "sourceCharacters": [],
+ "sourceCharacters": [
+  {
+   "name": "織田信長（2）",
+   "no": "1018",
+   "slot": "移植不可"
+  }
+ ],
  "grantedViaSkills": [
   {
    "skill": "冥界の花嫁",
@@ -21,7 +27,8 @@
   "対象・確率・効果はixanary.com(skills/魔王三段撃)のLV10行「確率：+35% / 対象 砲 / 攻撃：30%上昇 / 破壊：20%上昇」から。攻撃と破壊が同時変動するためtrTableに両方併記(multistat規則)。",
   "円融院は元スキル側(冥界の花嫁)のsourceCharactersに載せ、こちらはgrantedViaSkillsで元スキルを指す(A-3-12)。そのためsourceCharactersは空。",
   "ownHiddenCandidateはixanary(skills/魔王三段撃)の合成テーブルS1枠2次(攻破：神算鬼謀 滅 A)から。まだどの武将のsynthesisTableにも「skill:魔王三段撃」の行が無いためafterSkillからは導出できない。",
-  "categoryLinks9項目(無尽/撤退/飛翔/覇道/不屈/兵站/卓越/人数依存/コスト減少)を確認し該当なし。"
+  "categoryLinks9項目(無尽/撤退/飛翔/覇道/不屈/兵站/卓越/人数依存/コスト減少)を確認し該当なし。",
+  "2026-08-23: sourceCharacters が空だった。このスキルは合成の候補に一度も出てこず**初期スキルとしてしか持たれない**ので、逆引き(wireup の S-05)が合成表の skill 欄しか見ない造りのため取りこぼしていた。初期スキル専用の既存の書き方(無空ノ極剣→宮本二天 No.2590 slot=移植不可)に合わせて持ち主を入れた。"
  ],
  "trTable": [
   {
