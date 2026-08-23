@@ -75,6 +75,11 @@ TARGETS = {
         "list_js": "() => { joRenderList(joSortByChapterThenNo(joGenerals.slice())); "
                    "return document.getElementById('joList').innerHTML; }",
     },
+    "characters-do.html": {
+        "container": "joList",
+        "list_js": "() => { doRenderList(doSortByChapterThenNo(doGenerals.slice())); "
+                   "return document.getElementById('joList').innerHTML; }",
+    },
 }
 
 # スキル一覧系は「ページを開くとJSがtbodyを埋める」だけの単純な構造なので、

@@ -62,6 +62,8 @@ def kyoku_dir(no):
             return "busho-ue"
         if n[0] == "5":
             return "busho-jo"
+    if len(n) == 4 and n[0] == "1" and 1800 <= int(n) <= 1899:
+        return "busho-do"          # 童(2026-08-23)
     return "busho"
 
 

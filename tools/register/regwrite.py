@@ -71,7 +71,11 @@ def finish(no):
             head_target, body = m.group(1), m.group(3)
     # 2026-08-23: troop は「弓砲防」のように区切り無しで書く決まりなので、
     # 対象に入っている中黒・スラッシュ・空白を落としてから軸を足す。
-    _t = re.sub(r"[・/\s]", "", head_target or "全")
+    # 2026-08-23: 対象の「飛翔1」「不屈2」「無尽3」は兵種ではなく対象に付く属性。
+    # 落とさずに繋げると troop が「全飛翔1」になって兵種の絞り込みから外れる
+    # (No.1817 佐吉 で発覚)。対象そのものは skillDetail に残る。
+    _t = re.sub(r"(?:飛翔|不屈|無尽)\d*", "", head_target or "全")
+    _t = re.sub(r"[・/\s]", "", _t) or "全"
     entry["troop"] = (_t + axis) if head_target else None
     entry["effect"] = body
     if tr0 and body:
@@ -80,8 +84,11 @@ def finish(no):
         mm = re.match(r"^(攻撃|防御|速度|破壊)\s+(.+上昇)$", body)
         line = ("%sが%sする" % (mm.group(1), mm.group(2))) if mm else body
         # 2026-08-23: 対象の区切りは中黒。ixanary は「弓/砲」と書くので直す。
-        entry["skillDetail"] = ("%s/LV10 確率 %s%% %s/対象:%s\n①%s"
-                                % (sk.get("rank") or "-", m.group(2), body,
+        # 2026-08-23: 段の名前を "LV10" と決め打ちしていた。童(1800番台)は
+        # レベルを持たず「固定」の1段だけなので、実際の段名を使う。
+        entry["skillDetail"] = ("%s/%s 確率 %s%% %s/対象:%s\n①%s"
+                                % (sk.get("rank") or "-", tr0.get("level") or "LV10",
+                                   m.group(2), body,
                                    (head_target or "").replace("/", "・"), line))
     entry["notes"] = [
         "ixanary.com(cards/%s と skills/%s)およびixawiki(BushoCard/%s%s)で登録(2026-08-14)。"

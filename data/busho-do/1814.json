@@ -1,0 +1,107 @@
+{
+ "name": "弥三郎",
+ "no": "1814",
+ "ch": null,
+ "cost": 0.0,
+ "troop": "全",
+ "sub": "",
+ "effect": "速度 5%上昇 / 同じ拠点に所属する全部隊に効果 / (模倣不可)",
+ "furigana": "やさぶろう",
+ "illustrator": "BISAI",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 730,
+ "atkGrowth": 19.0,
+ "defBase": 720,
+ "defGrowth": 18.0,
+ "tacticsBase": 470.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 1,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "S",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "姫若子",
+ "skillDetail": "S/固定 確率 100% 速度 5%上昇 / 同じ拠点に所属する全部隊に効果 / (模倣不可)/対象:全\n①速度 5%上昇 / 同じ拠点に所属する全部隊に効果 / (模倣不可)",
+ "trTable": [
+  {
+   "level": "固定",
+   "points": "-",
+   "effect": "全　確率 100% / 速度 5%上昇 / 同じ拠点に所属する全部隊に効果 / (模倣不可)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "七蛟竜 神武",
+   "rank": "S",
+   "afterSkill": "覇道天聖",
+   "afterRank": "SS",
+   "target": "槍弓砲",
+   "rate": "35%",
+   "effectShort": "攻撃 57%上昇",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 26%上昇(所属部隊の武将が持つスキルを無効化や発動率低下から保護)"
+  },
+  {
+   "slot": "B",
+   "skill": "戦陣 無双",
+   "rank": "A",
+   "afterSkill": "無双英傑",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "50%",
+   "effectShort": "攻撃 67%上昇+防御 67%上昇",
+   "afterTarget": "全",
+   "afterRate": "50%",
+   "afterEffectShort": "攻撃 99.9%上昇 防御 99.9%上昇 部隊消費コストを0.5低下 (特殊効果は模倣不可)"
+  },
+  {
+   "slot": "C",
+   "skill": "天綾の誓約",
+   "rank": "SS",
+   "afterSkill": "天焉相克",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "60%",
+   "effectShort": "攻撃 99.9%上昇 防御 99.9%上昇 破壊 150%上昇",
+   "afterTarget": "槍・弓・馬",
+   "afterRate": "70%",
+   "afterEffectShort": "全攻 (部隊総コスト依存)%上昇(総C25=393.79%)(部隊の総コストで効果が変化)"
+  },
+  {
+   "slot": "S1",
+   "skill": "式神ノ冥王",
+   "rank": "SS",
+   "afterSkill": "荒破閃神",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "60%",
+   "effectShort": "攻撃 130%上昇 防御 130%上昇 破壊 50%上昇",
+   "afterTarget": "全",
+   "afterRate": "45%",
+   "afterEffectShort": "攻撃 110%上昇 (6部隊以下の攻撃で効果2倍)"
+  },
+  {
+   "slot": "S2",
+   "skill": null,
+   "rank": null,
+   "afterSkill": null,
+   "afterRank": null,
+   "target": null,
+   "rate": null,
+   "effectShort": null
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/1814 と skills/姫若子)およびixawiki(BushoCard/1814弥三郎)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。",
+  "2026-08-23: S2枠が空。ixanary のスキルページの合成テーブルが A/B/C/S1 の4列しか値を持たず、S2 の列が空になっている。童は23枚とも同じ形なので、ツールの取りこぼしではなく情報源側の欠落と判断した。"
+ ]
+}

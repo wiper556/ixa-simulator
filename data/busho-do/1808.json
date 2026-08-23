@@ -1,0 +1,98 @@
+{
+ "name": "竹千代",
+ "no": "1808",
+ "ch": null,
+ "cost": 0.0,
+ "troop": "全防",
+ "sub": "",
+ "effect": "防御 2%上昇 / 同じ拠点に所属する全部隊に効果 / (模倣不可)",
+ "furigana": "たけちよ",
+ "illustrator": "-",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 620,
+ "atkGrowth": 17.0,
+ "defBase": 730,
+ "defGrowth": 17.0,
+ "tacticsBase": 510.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 1,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "B"
+ },
+ "initialSkill": "絆の力",
+ "skillDetail": "S/固定 確率 100% 防御 2%上昇 / 同じ拠点に所属する全部隊に効果 / (模倣不可)/対象:全\n①防御 2%上昇 / 同じ拠点に所属する全部隊に効果 / (模倣不可)",
+ "trTable": [
+  {
+   "level": "固定",
+   "points": "-",
+   "effect": "全　確率 100% / 防御 2%上昇 / 同じ拠点に所属する全部隊に効果 / (模倣不可)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "八咫烏",
+   "rank": "B",
+   "afterSkill": "八咫烏",
+   "afterRank": "B",
+   "target": "砲器",
+   "rate": "35%",
+   "effectShort": "防御 30%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "神速",
+   "rank": "A",
+   "afterSkill": "神速",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "速度 55%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "三河魂",
+   "rank": "S",
+   "afterSkill": "天衣無縫陣",
+   "afterRank": "SS",
+   "target": "槍弓砲",
+   "rate": "35%",
+   "effectShort": "攻撃 25%上昇+破壊 25%上昇",
+   "afterTarget": "全",
+   "afterRate": "55%",
+   "afterEffectShort": "防御 (20+コスト×10) %上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "破軍星",
+   "rank": "SS",
+   "afterSkill": "破軍星",
+   "afterRank": "SS",
+   "target": "馬・砲・器",
+   "rate": "40%",
+   "effectShort": "攻撃 (18+コストx8) %上昇 破壊 (8+コストx3) %上昇 (武将のコストで効果が変化します)"
+  },
+  {
+   "slot": "S2",
+   "skill": null,
+   "rank": null,
+   "afterSkill": null,
+   "afterRank": null,
+   "target": null,
+   "rate": null,
+   "effectShort": null
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/1808 と skills/絆の力)およびixawiki(BushoCard/1808竹千代)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。",
+  "2026-08-23: S2枠が空。ixanary のスキルページの合成テーブルが A/B/C/S1 の4列しか値を持たず、S2 の列が空になっている。童は23枚とも同じ形なので、ツールの取りこぼしではなく情報源側の欠落と判断した。"
+ ]
+}

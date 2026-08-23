@@ -1,0 +1,101 @@
+{
+ "name": "虎寿丸",
+ "no": "1805",
+ "ch": null,
+ "cost": 0.0,
+ "troop": "砲",
+ "sub": "",
+ "effect": "破壊 7%上昇 / 同じ拠点に所属する全部隊に効果(模倣不可)",
+ "furigana": "とらじゅまる",
+ "illustrator": "BISAI",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 690,
+ "atkGrowth": 17.0,
+ "defBase": 650,
+ "defGrowth": 16.0,
+ "tacticsBase": 440.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 1,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "B",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "いろは歌",
+ "skillDetail": "S/固定 確率 100% 破壊 7%上昇 / 同じ拠点に所属する全部隊に効果(模倣不可)/対象:砲\n①破壊 7%上昇 / 同じ拠点に所属する全部隊に効果(模倣不可)",
+ "trTable": [
+  {
+   "level": "固定",
+   "points": "-",
+   "effect": "砲　確率 100% / 破壊 7%上昇 / 同じ拠点に所属する全部隊に効果(模倣不可)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "組撃ち",
+   "rank": "B",
+   "afterSkill": "八咫烏",
+   "afterRank": "B",
+   "target": "弓砲",
+   "rate": "20%",
+   "effectShort": "防御 35%上昇",
+   "afterTarget": "砲器",
+   "afterRate": "35%",
+   "afterEffectShort": "防御 30%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "剣聖",
+   "rank": "A",
+   "afterSkill": "剣聖",
+   "afterRank": "A",
+   "target": "将",
+   "rate": "50%",
+   "effectShort": "攻撃 40%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "釣り野伏 真",
+   "rank": "S",
+   "afterSkill": "破軍星",
+   "afterRank": "SS",
+   "target": "砲",
+   "rate": "35%",
+   "effectShort": "防御 35%上昇",
+   "afterTarget": "馬・砲・器",
+   "afterRate": "40%",
+   "afterEffectShort": "攻撃 (18+コストx8) %上昇 破壊 (8+コストx3) %上昇 (武将のコストで効果が変化します)"
+  },
+  {
+   "slot": "S1",
+   "skill": "神算鬼謀 滅",
+   "rank": "A",
+   "afterSkill": "神算鬼謀 滅",
+   "afterRank": "A",
+   "target": "槍弓器",
+   "rate": "50%",
+   "effectShort": "攻撃 24%上昇 / 破壊 46%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": null,
+   "rank": null,
+   "afterSkill": null,
+   "afterRank": null,
+   "target": null,
+   "rate": null,
+   "effectShort": null
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/1805 と skills/いろは歌)およびixawiki(BushoCard/1805虎寿丸)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。",
+  "2026-08-23: S2枠が空。ixanary のスキルページの合成テーブルが A/B/C/S1 の4列しか値を持たず、S2 の列が空になっている。童は23枚とも同じ形なので、ツールの取りこぼしではなく情報源側の欠落と判断した。"
+ ]
+}

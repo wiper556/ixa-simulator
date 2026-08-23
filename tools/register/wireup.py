@@ -43,6 +43,7 @@ DB_OF_DIR = collections.OrderedDict([
     # ここに一度 "tokuall" と書いてしまっていた(誰も登録していないので
     # 表には出ていなかったが、特武将を1体入れた時点で鳴るところだった)。
     ("busho-toku", None), ("busho-ue", None), ("busho-jo", None),
+    ("busho-do", None),
     ("busho-ketsu", "ketsu"), ("busho", None)])
 
 
@@ -166,6 +167,7 @@ LINKED_OF_DIR = {
     "busho-toku": ("characters-toku.html", "TK_LINKED_SKILLS"),
     "busho-ue": ("characters-ue.html", "UE_LINKED_SKILLS"),
     "busho-jo": ("characters-jo.html", "JO_LINKED_SKILLS"),
+    "busho-do": ("characters-do.html", "DO_LINKED_SKILLS"),
     "busho-kyoku": ("characters-kyoku.html", "KK_LINKED_SKILLS"),
     "busho": ("characters.html", "LINKED_SKILLS"),
 }

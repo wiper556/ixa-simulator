@@ -243,6 +243,16 @@ mark.sidebar-search-hit.is-current{background:#ffb020;box-shadow:0 0 0 2px #ffb0
 .tool-card.rank-jo p{color:#bfd4f0;}
 .tool-card.rank-jo:hover{box-shadow:0 6px 16px rgba(47,95,168,0.45);}
 
+/* 童は桃(2026-08-23)。うぐさんからの色の指定は無い。金・赤・黄緑・黄・青・
+   淡青が既に埋まっているので、どれとも並べて見分けが付く桃を当てた。 */
+.tool-card.rank-do{
+  background:linear-gradient(135deg, #c4548c, #8e2f60);
+  border:1px solid #e893bb;
+}
+.tool-card.rank-do h3{color:#ffe6f1;}
+.tool-card.rank-do p{color:#f3c4d9;}
+.tool-card.rank-do:hover{box-shadow:0 6px 16px rgba(196,84,140,0.42);}
+
 .page-title{font-family:'Noto Serif JP', serif;font-weight:900;font-size:26px;margin:0 0 8px;}
 .page-lead{color:var(--muted);font-size:13.5px;line-height:1.7;margin:0 0 8px;}
 

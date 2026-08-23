@@ -1,0 +1,98 @@
+{
+ "name": "吉法師",
+ "no": "1804",
+ "ch": null,
+ "cost": 0.0,
+ "troop": "砲攻",
+ "sub": "",
+ "effect": "攻撃 5%上昇 / 同じ拠点に所属する全部隊に効果 / (模倣不可)",
+ "furigana": "きっぽうし",
+ "illustrator": "BISAI",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 730,
+ "atkGrowth": 17.0,
+ "defBase": 710,
+ "defGrowth": 17.0,
+ "tacticsBase": 420.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 1,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "B",
+  "uma": "A",
+  "ki": "S"
+ },
+ "initialSkill": "うつけ者",
+ "skillDetail": "S/固定 確率 100% 攻撃 5%上昇 / 同じ拠点に所属する全部隊に効果 / (模倣不可)/対象:砲\n①攻撃 5%上昇 / 同じ拠点に所属する全部隊に効果 / (模倣不可)",
+ "trTable": [
+  {
+   "level": "固定",
+   "points": "-",
+   "effect": "砲　確率 100% / 攻撃 5%上昇 / 同じ拠点に所属する全部隊に効果 / (模倣不可)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "砲撃 羅刹",
+   "rank": "B",
+   "afterSkill": "釣り野伏 鬼",
+   "afterRank": "B",
+   "target": "砲",
+   "rate": "25%",
+   "effectShort": "攻撃 25%上昇 / 破壊 5%上昇",
+   "afterTarget": "砲",
+   "afterRate": "20%",
+   "afterEffectShort": "攻撃 30%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "独眼竜",
+   "rank": "A",
+   "afterSkill": "独眼竜",
+   "afterRank": "A",
+   "target": "馬砲器",
+   "rate": "30%",
+   "effectShort": "攻撃 25%上昇 / 破壊 5%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "捨て奸",
+   "rank": "B",
+   "afterSkill": "捨て奸",
+   "afterRank": "B",
+   "target": "弓砲器",
+   "rate": "15%",
+   "effectShort": "防御 37%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "神算鬼謀 滅",
+   "rank": "A",
+   "afterSkill": "神算鬼謀 滅",
+   "afterRank": "A",
+   "target": "槍弓器",
+   "rate": "50%",
+   "effectShort": "攻撃 24%上昇 / 破壊 46%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": null,
+   "rank": null,
+   "afterSkill": null,
+   "afterRank": null,
+   "target": null,
+   "rate": null,
+   "effectShort": null
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/1804 と skills/うつけ者)およびixawiki(BushoCard/1804吉法師)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。",
+  "2026-08-23: S2枠が空。ixanary のスキルページの合成テーブルが A/B/C/S1 の4列しか値を持たず、S2 の列が空になっている。童は23枚とも同じ形なので、ツールの取りこぼしではなく情報源側の欠落と判断した。"
+ ]
+}

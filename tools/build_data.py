@@ -90,6 +90,7 @@ LIST_FIELDS = {
     "tokuGenerals": BUSHO_LIST_FIELDS,
     "ueGenerals": BUSHO_LIST_FIELDS,
     "joGenerals": BUSHO_LIST_FIELDS,
+    "doGenerals": BUSHO_LIST_FIELDS,
     "ketsuGenerals": BUSHO_LIST_FIELDS + [
         "atkBase", "defBase", "tacticsBase", "lv0Troops"],
     "skills": ["name", "rank", "sourceCharacters"],
@@ -514,6 +515,7 @@ RARITY_KEY = {
     "busho-toku-s": "tokuS",
     "busho-ue": "ue",
     "busho-jo": "jo",
+    "busho-do": "do",
 }
 RANK_WORDS = ("SSS", "SS", "S", "A", "B", "C", "D", "E", "F")
 
