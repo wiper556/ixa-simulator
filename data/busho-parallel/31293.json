@@ -1,5 +1,5 @@
 {
- "name": "毛利元就（5）",
+ "name": "毛利元就",
  "no": "31293",
  "ch": "30章",
  "cost": 4.5,
@@ -130,7 +130,8 @@
   "2026-08-23: 親との全項目照合を ixanary カードページの埋め込みJSON・ixanary スキルページ(末尾スラッシュ付き・LV1〜TR6の全段と合成テーブル)・親カード画像 assets/img/characters/no1293_full.png の4隅バッジ拡大 の3系統で行い、name・furigana・ch・cost・troop・sub・illustrator・初期値・成長値・lv0Troops・rankGrades・initialSkill・trTable・synthesisTable・categoryLinks が**すべて親と一致**することを確認した。統率は HINTS #17 のとおり ixanary の yumi/kiba が入れ替わるのでカード画像を最上位の根拠にしている。絵師も HINTS #18 のとおり ixanary が「直良祐介」と誤るので画像を採った。",
   "2026-08-23: **このカードのカード画像がまだ無い**(assets/img/characters/no31293_full.png が存在しない)。登録済みの 31310〜31321 は画像があるが 31286〜31309 は1枚も無く、切り出し元のスクリーンショットもリポジトリに無い。画像なし武将781体と同じく imageFull/imageChar は null にしてある。画像が手に入ったら crop_card.py で切り出してパスを入れること。",
   "2026-08-23: ixawiki に BushoCard/31293 のページは無い(編集フォームが返る)。wikiOldestComment / wikiCommentCount は null。既存のパラレル12枚も全て null。",
-  "2026-08-23: 章は ixagno blog-entry-11077「パラレル天【一覧】」が31286〜31297 を30章・31298〜31309 を31章の節に並べており、親カードの ch とも一致する。"
+  "2026-08-23: 章は ixagno blog-entry-11077「パラレル天【一覧】」が31286〜31297 を30章・31298〜31309 を31章の節に並べており、親カードの ch とも一致する。",
+  "2026-08-23: カード名を「毛利元就（5）」から「毛利元就」に直した。（N）はゲーム内には無く、プレイヤーが見分けるために付けられたもの。うぐさんのルールは「早く出た順に1から振る・1枚目は無印・**覇と通常天は通し番号**・**復刻は復刻前の番号を踏襲する**・**未登録のカードも数える**」。順番は章(wikiの最古コメントから推定)で決めた。**ixawiki の一覧の表示名は正ではない**(wiki は覇と復刻を別の列で数えており、うぐさんのルールとは違う)。wiki は復刻かどうかの判別にだけ使った。"
  ],
  "reviewedOk": false,
  "wikiOldestComment": null,
