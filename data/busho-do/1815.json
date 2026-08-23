@@ -1,0 +1,98 @@
+{
+ "name": "彦太郎",
+ "no": "1815",
+ "ch": null,
+ "cost": 0.0,
+ "troop": "全",
+ "sub": "",
+ "effect": "同じ拠点に所属する自武将全スキルの卓越確率に6%を加算する / (追加卓越確率は武将ランクにより変動・模倣不可・重複不可)",
+ "furigana": "ひこたろう",
+ "illustrator": "BISAI",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 730,
+ "atkGrowth": 0.0,
+ "defBase": 730,
+ "defGrowth": 0.0,
+ "tacticsBase": 480.0,
+ "tacticsGrowth": 0.0,
+ "lv0Troops": 1,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "麒麟児",
+ "skillDetail": "S/固定 確率 100% 同じ拠点に所属する自武将全スキルの卓越確率に6%を加算する / (追加卓越確率は武将ランクにより変動・模倣不可・重複不可)/対象:全\n①同じ拠点に所属する自武将全スキルの卓越確率に6%を加算する / (追加卓越確率は武将ランクにより変動・模倣不可・重複不可)",
+ "trTable": [
+  {
+   "level": "固定",
+   "points": "-",
+   "effect": "全　確率 100% / 同じ拠点に所属する自武将全スキルの卓越確率に6%を加算する / (追加卓越確率は武将ランクにより変動・模倣不可・重複不可)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "戦陣 神楽",
+   "rank": "A",
+   "afterSkill": "遠呂智ノ閃光",
+   "afterRank": "SS",
+   "target": "全 飛翔4",
+   "rate": "100%",
+   "effectShort": "攻撃 77%上昇(卓越:追加確率30%で2倍)",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 125%上昇(卓越追加確率15%・4倍)"
+  },
+  {
+   "slot": "B",
+   "skill": "攻城の妙技",
+   "rank": "S",
+   "afterSkill": "攻城の妙技",
+   "afterRank": "S",
+   "target": "全",
+   "rate": "10%",
+   "effectShort": "戦闘勝利時のみ防御側の兵士被害数+40%"
+  },
+  {
+   "slot": "C",
+   "skill": "火之迦具土神",
+   "rank": "SS",
+   "afterSkill": "火之迦具土神",
+   "afterRank": "SS",
+   "target": "槍・馬・砲",
+   "rate": "100%",
+   "effectShort": "攻撃 160%上昇(卓越追加確率25%・3倍、TRなし)"
+  },
+  {
+   "slot": "S1",
+   "skill": "天津日ノ太刀",
+   "rank": "SS",
+   "afterSkill": "天津日ノ太刀",
+   "afterRank": "SS",
+   "target": "全 飛翔4",
+   "rate": "57%",
+   "effectShort": "攻撃 184%上昇(卓越追加確率75%・2倍、TRなし)"
+  },
+  {
+   "slot": "S2",
+   "skill": null,
+   "rank": null,
+   "afterSkill": null,
+   "afterRank": null,
+   "target": null,
+   "rate": null,
+   "effectShort": null
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/1815 と skills/麒麟児)およびixawiki(BushoCard/1815彦太郎)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。",
+  "2026-08-23: S2枠が空。ixanary のスキルページの合成テーブルが A/B/C/S1 の4列しか値を持たず、S2 の列が空になっている。童は23枚とも同じ形なので、ツールの取りこぼしではなく情報源側の欠落と判断した。"
+ ]
+}

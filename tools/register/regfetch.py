@@ -116,12 +116,15 @@ def parse_ixawiki_card(lines):
     return d
 
 
-LEVEL_LINE = re.compile(r"^(LV\d+|TR\d) \| (.+)$")
+# 2026-08-23: 童(1800番台)はレベルの段を持たず「固定」の1段だけ。
+# LV/TR しか見ていなかったので効果が丸ごと取れず、23枚とも
+# initialSkill も skillDetail も null で登録されていた。
+LEVEL_LINE = re.compile(r"^(LV\d+|TR\d|固定) \| (.+)$")
 # 効果文の続きではない行。ここに当たったら次の行を連結しない。
 # 2026-08-15: 以前は次の行を**無条件に**連結していた。効果が1行で終わっている段
 # では次の段の行や「合成テーブル」という見出しがそのまま効果文の末尾にくっつき、
 # 傾世ノ華では全6段が次の段と連結され、TR5に「合成テーブル」が混入していた。
-NOT_CONT = re.compile(r"^(?:LV\d+|TR\d)\s*\||^(?:合成テーブル|合成素材|武将カード"
+NOT_CONT = re.compile(r"^(?:LV\d+|TR\d|固定)\s*\||^(?:合成テーブル|合成素材|武将カード"
                       r"|武将スキル|※|・\d次|開発|Home)")
 
 
@@ -177,6 +180,13 @@ def run(no):
             out["ixawiki"] = parse_ixawiki_card(strip(t))
     lv = (out.get("ixanary") or {}).get("skillLevels") or []
     sk = lv[0]["skill"] if lv else None
+    if not sk:
+        # 2026-08-23: 童(1800番台)のカードページはレベルの段を持たないので
+        # skillLevels が空になり、スキル名が取れずスキルページも引けなかった。
+        # 見出しの「防：華の童子」からも拾えるので、そちらを控えにする。
+        lab = (out.get("ixanary") or {}).get("skillLabel") or ""
+        if "：" in lab:
+            sk = lab.split("：", 1)[1].strip() or None
     if sk:
         # 2026-08-23: カードページの本文は空白を半角に潰して読むので、
         # 「忍道　白虎」のように**名前に全角空白が入るスキル**は半角で引いて404になる。

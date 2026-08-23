@@ -1,0 +1,95 @@
+{
+ "name": "日吉丸",
+ "no": "1803",
+ "ch": null,
+ "cost": 0.0,
+ "troop": "槍防",
+ "sub": "",
+ "effect": "防御 5%上昇 / 同じ拠点に所属する全部隊に効果 / (模倣不可)",
+ "furigana": "ひよしまる",
+ "illustrator": "BISAI",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 740,
+ "atkGrowth": 19.0,
+ "defBase": 720,
+ "defGrowth": 19.0,
+ "tacticsBase": 480.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 1,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "C",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "日輪の子",
+ "skillDetail": "S/固定 確率 100% 防御 5%上昇 / 同じ拠点に所属する全部隊に効果 / (模倣不可)/対象:槍\n①防御 5%上昇 / 同じ拠点に所属する全部隊に効果 / (模倣不可)",
+ "trTable": [
+  {
+   "level": "固定",
+   "points": "-",
+   "effect": "槍　確率 100% / 防御 5%上昇 / 同じ拠点に所属する全部隊に効果 / (模倣不可)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "疾風怒濤",
+   "rank": "B",
+   "afterSkill": "疾風怒濤",
+   "afterRank": "B",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "攻撃 5%上昇 / 速度 32%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "背水之陣",
+   "rank": "B",
+   "afterSkill": "背水之陣",
+   "afterRank": "B",
+   "target": "槍弓馬",
+   "rate": "20%",
+   "effectShort": "防御 37%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "攻城の妙技",
+   "rank": "S",
+   "afterSkill": "攻城の妙技",
+   "afterRank": "S",
+   "target": "全",
+   "rate": "10%",
+   "effectShort": "戦闘勝利時のみ防御側の兵士被害数+40%"
+  },
+  {
+   "slot": "S1",
+   "skill": "神算鬼謀 滅",
+   "rank": "A",
+   "afterSkill": "神算鬼謀 滅",
+   "afterRank": "A",
+   "target": "槍弓器",
+   "rate": "50%",
+   "effectShort": "攻撃 24%上昇 / 破壊 46%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": null,
+   "rank": null,
+   "afterSkill": null,
+   "afterRank": null,
+   "target": null,
+   "rate": null,
+   "effectShort": null
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/1803 と skills/日輪の子)およびixawiki(BushoCard/1803日吉丸)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。",
+  "2026-08-23: S2枠が空。ixanary のスキルページの合成テーブルが A/B/C/S1 の4列しか値を持たず、S2 の列が空になっている。童は23枚とも同じ形なので、ツールの取りこぼしではなく情報源側の欠落と判断した。"
+ ]
+}

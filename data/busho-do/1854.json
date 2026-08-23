@@ -1,0 +1,95 @@
+{
+ "name": "塚山由太郎",
+ "no": "1854",
+ "ch": null,
+ "cost": 0.0,
+ "troop": "全防",
+ "sub": "",
+ "effect": "防御 2%上昇 / 同じ拠点に所属する全部隊に効果(模倣不可)",
+ "furigana": "つかやまゆたろう",
+ "illustrator": "&#169;NW/S,RKKD",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 730,
+ "atkGrowth": 0.0,
+ "defBase": 730,
+ "defGrowth": 0.0,
+ "tacticsBase": 490.0,
+ "tacticsGrowth": 0.0,
+ "lv0Troops": 701,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "一番弟子",
+ "skillDetail": "S/固定 確率 100% 防御 2%上昇 / 同じ拠点に所属する全部隊に効果(模倣不可)/対象:全\n①防御 2%上昇 / 同じ拠点に所属する全部隊に効果(模倣不可)",
+ "trTable": [
+  {
+   "level": "固定",
+   "points": "-",
+   "effect": "全　確率 100% / 防御 2%上昇 / 同じ拠点に所属する全部隊に効果(模倣不可)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "三千世界神将",
+   "rank": "SS",
+   "afterSkill": "三千世界神将",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "防御 120%上昇(本丸防御陣形時コスト消費-1)"
+  },
+  {
+   "slot": "B",
+   "skill": "龍驤虎躍",
+   "rank": "SS",
+   "afterSkill": "龍驤虎躍",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "60%",
+   "effectShort": "攻撃 810%上昇+防御 810%上昇(コスト-1・特殊効果は模倣不可)"
+  },
+  {
+   "slot": "C",
+   "skill": "永世ノ天隻",
+   "rank": "SS",
+   "afterSkill": "永世ノ天隻",
+   "afterRank": "SS",
+   "target": "全 飛翔9",
+   "rate": "48%",
+   "effectShort": "防御 6.5%×防御参加武将数(280人)=1820.0%(敵軍飛翔持ち9人未満の時通常武将ダメージを受けない)"
+  },
+  {
+   "slot": "S1",
+   "skill": "万里嵐壁",
+   "rank": "SS",
+   "afterSkill": "万里嵐壁",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "66%",
+   "effectShort": "防御 200%上昇(敵軍部隊数×40%を防御効果に加算・模倣不可)"
+  },
+  {
+   "slot": "S2",
+   "skill": null,
+   "rank": null,
+   "afterSkill": null,
+   "afterRank": null,
+   "target": null,
+   "rate": null,
+   "effectShort": null
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/1854 と skills/一番弟子)およびixawiki(BushoCard/1854塚山由太郎)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。",
+  "2026-08-23: S2枠が空。ixanary のスキルページの合成テーブルが A/B/C/S1 の4列しか値を持たず、S2 の列が空になっている。童は23枚とも同じ形なので、ツールの取りこぼしではなく情報源側の欠落と判断した。"
+ ]
+}

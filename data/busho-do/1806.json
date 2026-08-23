@@ -1,0 +1,98 @@
+{
+ "name": "猿夜叉丸",
+ "no": "1806",
+ "ch": null,
+ "cost": 0.0,
+ "troop": "弓馬器攻",
+ "sub": "",
+ "effect": "攻撃 3%上昇 / 同じ拠点に所属する全部隊に効果 / (模倣不可)",
+ "furigana": "さるやしゃまる",
+ "illustrator": "BISAI",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 680,
+ "atkGrowth": 19.0,
+ "defBase": 580,
+ "defGrowth": 17.0,
+ "tacticsBase": 435.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 1,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "A",
+  "uma": "S",
+  "ki": "A"
+ },
+ "initialSkill": "江竜の志",
+ "skillDetail": "S/固定 確率 100% 攻撃 3%上昇 / 同じ拠点に所属する全部隊に効果 / (模倣不可)/対象:弓馬器\n①攻撃 3%上昇 / 同じ拠点に所属する全部隊に効果 / (模倣不可)",
+ "trTable": [
+  {
+   "level": "固定",
+   "points": "-",
+   "effect": "弓馬器　確率 100% / 攻撃 3%上昇 / 同じ拠点に所属する全部隊に効果 / (模倣不可)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "疾風怒濤",
+   "rank": "B",
+   "afterSkill": "疾風怒濤",
+   "afterRank": "B",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "攻撃 5%上昇 / 速度 32%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "攻城の妙技",
+   "rank": "S",
+   "afterSkill": "攻城の妙技",
+   "afterRank": "S",
+   "target": "全",
+   "rate": "10%",
+   "effectShort": "戦闘勝利時のみ防御側の兵士被害数+40%"
+  },
+  {
+   "slot": "C",
+   "skill": "猿夜叉",
+   "rank": "S",
+   "afterSkill": "天衣無縫陣",
+   "afterRank": "SS",
+   "target": "馬・砲",
+   "rate": "35%",
+   "effectShort": "攻撃 30%上昇+破壊 10%上昇",
+   "afterTarget": "全",
+   "afterRate": "55%",
+   "afterEffectShort": "防御 (20+コスト×10) %上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "天衣無縫陣",
+   "rank": "SS",
+   "afterSkill": "天衣無縫陣",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "55%",
+   "effectShort": "防御 (20+コスト×10) %上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": null,
+   "rank": null,
+   "afterSkill": null,
+   "afterRank": null,
+   "target": null,
+   "rate": null,
+   "effectShort": null
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/1806 と skills/江竜の志)およびixawiki(BushoCard/1806猿夜叉丸)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。",
+  "2026-08-23: S2枠が空。ixanary のスキルページの合成テーブルが A/B/C/S1 の4列しか値を持たず、S2 の列が空になっている。童は23枚とも同じ形なので、ツールの取りこぼしではなく情報源側の欠落と判断した。"
+ ]
+}

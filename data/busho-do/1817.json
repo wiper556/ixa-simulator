@@ -1,0 +1,105 @@
+{
+ "name": "佐吉",
+ "no": "1817",
+ "ch": null,
+ "cost": 0.0,
+ "troop": "全",
+ "sub": "",
+ "effect": "同じ拠点に所属する自分の武将が飛翔Xを持つ場合それらは代わりに飛翔[X+1]を持つ(模倣不可・重複不可)",
+ "furigana": "さきち",
+ "illustrator": "BISAI",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 730,
+ "atkGrowth": 19.0,
+ "defBase": 730,
+ "defGrowth": 19.0,
+ "tacticsBase": 490.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 1401,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "三献茶",
+ "skillDetail": "S/LV10 確率 100% 同じ拠点に所属する自分の武将が飛翔Xを持つ場合それらは代わりに飛翔[X+1]を持つ(模倣不可・重複不可)/対象:全 飛翔1\n①同じ拠点に所属する自分の武将が飛翔Xを持つ場合それらは代わりに飛翔[X+1]を持つ(模倣不可・重複不可)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全 飛翔1　確率 100% / 同じ拠点に所属する自分の武将が飛翔Xを持つ場合それらは代わりに飛翔[X+1]を持つ(模倣不可・重複不可)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "戦陣 破軍",
+   "rank": "A",
+   "afterSkill": "天穿神滅",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "44%",
+   "effectShort": "攻撃 66%上昇+防御 66%上昇",
+   "afterTarget": "砲器",
+   "afterRate": "50%",
+   "afterEffectShort": "攻撃 ((ランク+1)xコストx3) %上昇 部隊ランクとコストで効果が変化"
+  },
+  {
+   "slot": "B",
+   "skill": "戦陣 剣舞",
+   "rank": "A",
+   "afterSkill": "仙剣破斬",
+   "afterRank": "SSS",
+   "target": "全 飛翔6",
+   "rate": "100%",
+   "effectShort": "攻撃 80%上昇+防御 80%上昇(卓越追加確率30%で攻防効果4倍)",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 115%上昇+防御 115%上昇(卓越追加確率35%・4倍)"
+  },
+  {
+   "slot": "C",
+   "skill": "天津日ノ太刀",
+   "rank": "SS",
+   "afterSkill": "天津日ノ太刀",
+   "afterRank": "SS",
+   "target": "全 飛翔4",
+   "rate": "57%",
+   "effectShort": "攻撃 184%上昇(卓越追加確率75%・2倍、TRなし)"
+  },
+  {
+   "slot": "S1",
+   "skill": "豊国天万",
+   "rank": "S",
+   "afterSkill": "遠呂智ノ閃光",
+   "afterRank": "SS",
+   "target": "槍・馬・砲・器",
+   "rate": "50%",
+   "effectShort": "攻撃 110%上昇(卓越時3倍+飛翔12取得)",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 125%上昇(卓越追加確率15%・4倍)"
+  },
+  {
+   "slot": "S2",
+   "skill": null,
+   "rank": null,
+   "afterSkill": null,
+   "afterRank": null,
+   "target": null,
+   "rate": null,
+   "effectShort": null
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/1817 と skills/三献茶)およびixawiki(BushoCard/1817佐吉)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。",
+  "2026-08-23: S2枠が空。ixanary のスキルページの合成テーブルが A/B/C/S1 の4列しか値を持たず、S2 の列が空になっている。童は23枚とも同じ形なので、ツールの取りこぼしではなく情報源側の欠落と判断した。",
+  "2026-08-23: troop に「全飛翔1」と書かれていた。対象の「飛翔1」は兵種ではなく対象に付く属性なので、troop は兵種の部分だけにした。対象に飛翔を含む武将25件のうち23件が「全攻防」のように飛翔を落として書いている(残る2件「全 飛翔8攻」「全 飛翔9攻速破」は書き方が揃っていない。今回は触っていない)。対象そのものは skillDetail の「対象:全 飛翔1」に残してある。"
+ ]
+}

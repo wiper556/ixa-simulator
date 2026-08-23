@@ -1,0 +1,98 @@
+{
+ "name": "茶々",
+ "no": "1810",
+ "ch": null,
+ "cost": 0.0,
+ "troop": "全",
+ "sub": "",
+ "effect": "速度 3%上昇 / 同じ拠点に所属する全部隊に効果 / (模倣不可)",
+ "furigana": "ちゃちゃ",
+ "illustrator": "BISAI",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 640,
+ "atkGrowth": 17.0,
+ "defBase": 670,
+ "defGrowth": 17.0,
+ "tacticsBase": 460.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 1,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "A",
+  "uma": "C",
+  "ki": "S"
+ },
+ "initialSkill": "戦の華",
+ "skillDetail": "S/固定 確率 100% 速度 3%上昇 / 同じ拠点に所属する全部隊に効果 / (模倣不可)/対象:全\n①速度 3%上昇 / 同じ拠点に所属する全部隊に効果 / (模倣不可)",
+ "trTable": [
+  {
+   "level": "固定",
+   "points": "-",
+   "effect": "全　確率 100% / 速度 3%上昇 / 同じ拠点に所属する全部隊に効果 / (模倣不可)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "天賦の神算",
+   "rank": "B",
+   "afterSkill": "天賦の神算",
+   "afterRank": "B",
+   "target": "全",
+   "rate": "50%",
+   "effectShort": "攻撃 12%上昇 / 破壊 5%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "神将",
+   "rank": "A",
+   "afterSkill": "神将",
+   "afterRank": "A",
+   "target": "槍弓馬",
+   "rate": "35%",
+   "effectShort": "攻撃 30%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "太閤の威光",
+   "rank": "S",
+   "afterSkill": "天衣無縫陣",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "25%",
+   "effectShort": "攻撃 25%上昇+破壊 40%上昇",
+   "afterTarget": "全",
+   "afterRate": "55%",
+   "afterEffectShort": "防御 (20+コスト×10) %上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "天衣無縫陣",
+   "rank": "SS",
+   "afterSkill": "天衣無縫陣",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "55%",
+   "effectShort": "防御 (20+コスト×10) %上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": null,
+   "rank": null,
+   "afterSkill": null,
+   "afterRank": null,
+   "target": null,
+   "rate": null,
+   "effectShort": null
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/1810 と skills/戦の華)およびixawiki(BushoCard/1810茶々)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。",
+  "2026-08-23: S2枠が空。ixanary のスキルページの合成テーブルが A/B/C/S1 の4列しか値を持たず、S2 の列が空になっている。童は23枚とも同じ形なので、ツールの取りこぼしではなく情報源側の欠落と判断した。"
+ ]
+}

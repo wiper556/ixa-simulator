@@ -68,6 +68,7 @@ SRC = [
     ('characters-toku.html', 'tokuGenerals', 'tkRenderDetail', 'tkDetailBody', 'busho', '特武将', 'characters-toku.html'),
     ('characters-ue.html', 'ueGenerals', 'ueRenderDetail', 'ueDetailBody', 'busho', '上武将', 'characters-ue.html'),
     ('characters-jo.html', 'joGenerals', 'joRenderDetail', 'joDetailBody', 'busho', '序武将', 'characters-jo.html'),
+    ('characters-do.html', 'doGenerals', 'doRenderDetail', 'doDetailBody', 'busho', '童武将', 'characters-do.html'),
     ('characters-ketsu.html', 'ketsuGenerals', 'ktRenderDetail',  'ktDetailBody',  'busho', '傑武将', 'characters-ketsu.html'),
     ('skills.html',           'skills',        'sklRenderDetail', 'sklDetailBody', 'skill', 'スキル', 'skills.html'),
 ]
@@ -245,7 +246,12 @@ def main(HOST):
             pg = br.new_page()
             errs = []
             pg.on('pageerror', lambda e: errs.append(str(e)))
-            pg.goto(HOST + src, wait_until='networkidle')
+            # 2026-08-23: playwright の既定は30秒。今週の登録で ixa-data.js が
+            # 1.2MB まで育ち、CI(GitHub Actions)で characters-kyoku.html の
+            # networkidle が30秒に間に合わず PR#61 が落ちた(同じコミットの
+            # 再実行では通ったので、手元では出ない環境依存の失敗)。
+            # データはこの先も増えるので待ち時間を明示的に伸ばす。
+            pg.goto(HOST + src, wait_until='networkidle', timeout=120000)
             pg.wait_for_timeout(700)
             data = full[var]
 
@@ -360,6 +366,7 @@ def wire():
     for f in ('characters.html', 'characters-kyoku.html', 'characters-kyoku-ps.html',
               'characters-parallel.html', 'characters-toku-s.html',
               'characters-toku.html', 'characters-ue.html', 'characters-jo.html',
+              'characters-do.html',
               'characters-ketsu.html', 'skills.html'):
         s0 = io.open(f, encoding='utf-8', newline='').read()
         s = re.sub(r'    // PERMALINK:start.*?    // PERMALINK:end\n', '', s0, flags=re.S)

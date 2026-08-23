@@ -1,0 +1,95 @@
+{
+ "name": "前田慶次",
+ "no": "1853",
+ "ch": null,
+ "cost": 0.0,
+ "troop": "全",
+ "sub": "",
+ "effect": "速度 3%上昇 / 同じ拠点に所属する全部隊に効果 / (模倣不可)",
+ "furigana": "まえだけいじ",
+ "illustrator": "&#169;原哲夫・北原星望／コアミックス, CGF-400",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 670,
+ "atkGrowth": 15.0,
+ "defBase": 470,
+ "defGrowth": 13.0,
+ "tacticsBase": 370.0,
+ "tacticsGrowth": 1.5,
+ "lv0Troops": 1,
+ "rankGrades": {
+  "yari": "C",
+  "yumi": "C",
+  "uma": "A",
+  "ki": "C"
+ },
+ "initialSkill": "かぶき者",
+ "skillDetail": "S/固定 確率 100% 速度 3%上昇 / 同じ拠点に所属する全部隊に効果 / (模倣不可)/対象:全\n①速度 3%上昇 / 同じ拠点に所属する全部隊に効果 / (模倣不可)",
+ "trTable": [
+  {
+   "level": "固定",
+   "points": "-",
+   "effect": "全　確率 100% / 速度 3%上昇 / 同じ拠点に所属する全部隊に効果 / (模倣不可)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": null,
+   "rank": null,
+   "afterSkill": null,
+   "afterRank": null,
+   "target": null,
+   "rate": null,
+   "effectShort": null
+  },
+  {
+   "slot": "B",
+   "skill": null,
+   "rank": null,
+   "afterSkill": null,
+   "afterRank": null,
+   "target": null,
+   "rate": null,
+   "effectShort": null
+  },
+  {
+   "slot": "C",
+   "skill": null,
+   "rank": null,
+   "afterSkill": null,
+   "afterRank": null,
+   "target": null,
+   "rate": null,
+   "effectShort": null
+  },
+  {
+   "slot": "S1",
+   "skill": null,
+   "rank": null,
+   "afterSkill": null,
+   "afterRank": null,
+   "target": null,
+   "rate": null,
+   "effectShort": null
+  },
+  {
+   "slot": "S2",
+   "skill": null,
+   "rank": null,
+   "afterSkill": null,
+   "afterRank": null,
+   "target": null,
+   "rate": null,
+   "effectShort": null
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/1853 と skills/かぶき者)およびixawiki(BushoCard/1853前田慶次)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。",
+  "2026-08-23: S2枠が空。ixanary のスキルページの合成テーブルが A/B/C/S1 の4列しか値を持たず、S2 の列が空になっている。童は23枚とも同じ形なので、ツールの取りこぼしではなく情報源側の欠落と判断した。"
+ ]
+}

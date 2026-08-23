@@ -1,0 +1,105 @@
+{
+ "name": "松寿丸",
+ "no": "1816",
+ "ch": null,
+ "cost": 0.0,
+ "troop": "特",
+ "sub": "",
+ "effect": "本領生産力ボーナス+1%(武将ランクにより変動)",
+ "furigana": "しょうじゅまる",
+ "illustrator": "BISAI",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 720,
+ "atkGrowth": 19.0,
+ "defBase": 720,
+ "defGrowth": 19.0,
+ "tacticsBase": 490.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 1,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "A",
+  "ki": "A"
+ },
+ "initialSkill": "天稟ノ軍才",
+ "skillDetail": "S/固定 本領生産力ボーナス+1%/対象:-\n模倣不可\n①このカードを所持していると本領生産力ボーナスが+1%される(ボーナスは武将ランクにより変動・重複上限2)",
+ "trTable": [
+  {
+   "level": "固定",
+   "points": "-",
+   "effect": "-　本領生産力ボーナス+1%(武将ランクにより変動・模倣不可・重複上限2)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "鬼滅刺",
+   "rank": "A",
+   "afterSkill": "布都御魂ノ鬨",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "攻撃 70%上昇 防御 70%上昇(卓越確率+25%加算・模倣不可)",
+   "afterTarget": "全",
+   "afterRate": "35%",
+   "afterEffectShort": "攻撃 40%上昇+防御 40%上昇(部隊内レアリティS以上のスキル個数×20%加算)"
+  },
+  {
+   "slot": "B",
+   "skill": "戦陣 神楽",
+   "rank": "A",
+   "afterSkill": "遠呂智ノ閃光",
+   "afterRank": "SS",
+   "target": "全 飛翔4",
+   "rate": "100%",
+   "effectShort": "攻撃 77%上昇(卓越:追加確率30%で2倍)",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 125%上昇(卓越追加確率15%・4倍)"
+  },
+  {
+   "slot": "C",
+   "skill": "建御雷神ノ槌",
+   "rank": "SS",
+   "afterSkill": "建御雷神ノ槌",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "攻撃 135%上昇+防御 135%上昇(自身の全スキルの卓越確率+30%・模倣不可)"
+  },
+  {
+   "slot": "S1",
+   "skill": "建御雷神ノ閃光",
+   "rank": "SS",
+   "afterSkill": "八幡神ノ威光",
+   "afterRank": "SSS",
+   "target": "全 飛翔5",
+   "rate": "100%",
+   "effectShort": "攻撃 210%上昇+防御 210%上昇(卓越確率+35%)",
+   "afterTarget": "部隊長",
+   "afterRate": "70%",
+   "afterEffectShort": "模倣倍率1.25倍"
+  },
+  {
+   "slot": "S2",
+   "skill": null,
+   "rank": null,
+   "afterSkill": null,
+   "afterRank": null,
+   "target": null,
+   "rate": null,
+   "effectShort": null
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/1816 と skills/天稟ノ軍才)およびixawiki(BushoCard/1816松寿丸)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。",
+  "2026-08-23: ixanary のスキルページ(天稟ノ軍才)の「固定」段に確率の行が無く(「このカードを所持していると、本領生産力ボーナスが+1%される」から始まる)、一括登録のパーサが確率と対象を前提にしているため取れなかった。手で書いた。戦闘の軸を持たないスキルなので troop は「特」。",
+  "2026-08-23: S2枠が空。ixanary のスキルページの合成テーブルが A/B/C/S1 の4列しか値を持たず、S2 の列が空になっている。童は23枚とも同じ形なので、ツールの取りこぼしではなく情報源側の欠落と判断した。"
+ ]
+}

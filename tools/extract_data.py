@@ -53,6 +53,8 @@ TARGETS = [
     ("characters-toku.html", "tokuGenerals", "data/busho-toku", "no"),
     ("characters-ue.html", "ueGenerals", "data/busho-ue", "no"),
     ("characters-jo.html", "joGenerals", "data/busho-jo", "no"),
+    # 2026-08-23: 童(1800番台)。序の下に置く。
+    ("characters-do.html", "doGenerals", "data/busho-do", "no"),
     ("characters-ketsu.html", "ketsuGenerals", "data/busho-ketsu", "no"),
     ("skills.html", "skills", "data/skill", "name"),
 ]
