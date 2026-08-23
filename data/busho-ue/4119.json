@@ -1,0 +1,109 @@
+{
+ "name": "立花宗茂",
+ "no": "4119",
+ "ch": null,
+ "cost": 3.0,
+ "troop": "槍弓馬砲攻",
+ "sub": "",
+ "effect": "攻撃 7%上昇 / 速度 10%上昇",
+ "furigana": "たちばなむねしげ",
+ "illustrator": "藤原カムイ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 610,
+ "atkGrowth": 16.0,
+ "defBase": 610,
+ "defGrowth": 15.0,
+ "tacticsBase": 380.0,
+ "tacticsGrowth": 1.5,
+ "lv0Troops": 2330,
+ "rankGrades": {
+  "yari": null,
+  "yumi": null,
+  "uma": null,
+  "ki": null
+ },
+ "initialSkill": "武神襲来",
+ "skillDetail": "D/LV10 確率 100% 攻撃 7%上昇 / 速度 10%上昇/対象:槍弓馬砲\n①攻撃が7%上昇 / 速度 10%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍弓馬砲　確率 100% / 攻撃 7%上昇 / 速度 10%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "弓隊突撃",
+   "rank": "F",
+   "afterSkill": "弓隊奇襲",
+   "afterRank": "E",
+   "target": "弓",
+   "rate": "15%",
+   "effectShort": "攻撃 20%上昇",
+   "afterTarget": "弓",
+   "afterRate": "30%",
+   "afterEffectShort": "弓攻：12%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "槍隊奇襲",
+   "rank": "E",
+   "afterSkill": "槍隊堅陣",
+   "afterRank": "F",
+   "target": "槍",
+   "rate": "30%",
+   "effectShort": "攻撃 12%上昇",
+   "afterTarget": "槍",
+   "afterRate": "30%",
+   "afterEffectShort": "槍防：12%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "騎馬隊布陣",
+   "rank": "E",
+   "afterSkill": "騎馬隊堅陣",
+   "afterRank": "F",
+   "target": "馬",
+   "rate": "15%",
+   "effectShort": "防御 20%上昇",
+   "afterTarget": "馬",
+   "afterRate": "30%",
+   "afterEffectShort": "馬防：12%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "槍隊剛撃",
+   "rank": "D",
+   "afterSkill": "足軽軍法",
+   "afterRank": "D",
+   "target": "槍",
+   "rate": "35%",
+   "effectShort": "攻撃 20%上昇",
+   "afterTarget": "槍器",
+   "afterRate": "15%",
+   "afterEffectShort": "攻撃 (コストx9) %上昇 / (武将のコストで効果が変化します)"
+  },
+  {
+   "slot": "S2",
+   "skill": "車懸り",
+   "rank": "B",
+   "afterSkill": "車懸り 白狐",
+   "afterRank": "B",
+   "target": "全",
+   "rate": "15%",
+   "effectShort": "攻撃 30%上昇",
+   "afterTarget": "槍弓馬",
+   "afterRate": "20%",
+   "afterEffectShort": "攻撃 30%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/4119 と skills/武神襲来)およびixawiki(BushoCard/4119立花宗茂)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

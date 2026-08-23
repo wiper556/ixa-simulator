@@ -1,0 +1,110 @@
+{
+ "name": "谷忠澄",
+ "no": "4139",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "全攻",
+ "sub": "",
+ "effect": "攻撃戦闘勝利時のみ、敵軍1部隊の武将に追加ダメージ+35",
+ "furigana": "たにただずみ",
+ "illustrator": "磯部泰久",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 550,
+ "atkGrowth": 14.0,
+ "defBase": 580,
+ "defGrowth": 15.0,
+ "tacticsBase": 380.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2060,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "C",
+  "uma": "C",
+  "ki": "C"
+ },
+ "initialSkill": "謀殺",
+ "skillDetail": "D/LV10 確率 15% 攻撃戦闘勝利時のみ敵軍1部隊の武将に追加ダメージ+35/対象:全\n①攻撃戦闘勝利時のみ敵軍1部隊の武将に追加ダメージ+35",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 15% / 攻撃戦闘勝利時のみ、敵軍1部隊の武将に追加ダメージ+35"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "謀殺",
+   "rank": "D",
+   "afterSkill": "鉄壁の備え",
+   "afterRank": "D",
+   "target": "全",
+   "rate": "15%",
+   "effectShort": "攻撃戦闘勝利時のみ、敵軍1部隊の武将に追加ダメージ+35",
+   "afterTarget": "全",
+   "afterRate": "40%",
+   "afterEffectShort": "防御 15%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "神行法",
+   "rank": "D",
+   "afterSkill": "謀殺",
+   "afterRank": "D",
+   "target": "器",
+   "rate": "100%",
+   "effectShort": "速度 35%上昇",
+   "afterTarget": "全",
+   "afterRate": "15%",
+   "afterEffectShort": "攻撃戦闘勝利時のみ、敵軍1部隊の武将に追加ダメージ+35"
+  },
+  {
+   "slot": "C",
+   "skill": "火竜の術",
+   "rank": "D",
+   "afterSkill": "謀殺",
+   "afterRank": "D",
+   "target": "弓器",
+   "rate": "20%",
+   "effectShort": "攻撃 15%上昇 / 破壊 15%上昇",
+   "afterTarget": "全",
+   "afterRate": "15%",
+   "afterEffectShort": "攻撃戦闘勝利時のみ、敵軍1部隊の武将に追加ダメージ+35"
+  },
+  {
+   "slot": "S1",
+   "skill": "鉄壁の備え",
+   "rank": "D",
+   "afterSkill": "城崩し",
+   "afterRank": "D",
+   "target": "全",
+   "rate": "40%",
+   "effectShort": "防御 15%上昇",
+   "afterTarget": "器",
+   "afterRate": "35%",
+   "afterEffectShort": "破壊 20%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "疾風迅雷",
+   "rank": "C",
+   "afterSkill": "義兵進軍",
+   "afterRank": "C",
+   "target": "槍弓馬",
+   "rate": "100%",
+   "effectShort": "速度 35%上昇",
+   "afterTarget": "槍弓馬砲",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 7%上昇 / 速度 10%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/4139 と skills/謀殺)およびixawiki(BushoCard/4139谷忠澄)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。",
+  "2026-08-23: skillDetail に読点が混入していた(F-01違反)。ixanary の原文の読点をそのまま取り込んでいたので外した。"
+ ]
+}

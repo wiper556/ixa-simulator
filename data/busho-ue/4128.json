@@ -1,0 +1,109 @@
+{
+ "name": "北条氏照",
+ "no": "4128",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "弓防",
+ "sub": "",
+ "effect": "弓防：13%上昇 / (武将のコストで効果が変化します)",
+ "furigana": "ほうじょううじてる",
+ "illustrator": "ユティフ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 620,
+ "atkGrowth": 14.0,
+ "defBase": 650,
+ "defGrowth": 16.0,
+ "tacticsBase": 400.0,
+ "tacticsGrowth": 1.0,
+ "lv0Troops": 2050,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "A",
+  "uma": "E",
+  "ki": "B"
+ },
+ "initialSkill": "弓隊守護",
+ "skillDetail": "E/LV10 確率 25% 弓防：13%上昇 / (武将のコストで効果が変化します)/対象:弓\n①弓防：13%上昇 / (武将のコストで効果が変化します)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓　確率 25% / 弓防：13%上昇 / (武将のコストで効果が変化します)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "弓隊守護",
+   "rank": "E",
+   "afterSkill": "弓隊挟撃",
+   "afterRank": "E",
+   "target": "弓",
+   "rate": "25%",
+   "effectShort": "弓防：13%上昇 / (武将のコストで効果が変化します)",
+   "afterTarget": "弓",
+   "afterRate": "25%",
+   "afterEffectShort": "攻撃 (コストx6.5) %上昇 / (武将のコストで効果が変化します)"
+  },
+  {
+   "slot": "B",
+   "skill": "槍隊守護",
+   "rank": "E",
+   "afterSkill": "槍隊挟撃",
+   "afterRank": "E",
+   "target": "槍",
+   "rate": "25%",
+   "effectShort": "防御 (コストx6.5) %上昇 / (武将のコストで効果が変化します)",
+   "afterTarget": "槍",
+   "afterRate": "25%",
+   "afterEffectShort": "槍攻：9.75%上昇 / (武将のコストで効果が変化します)"
+  },
+  {
+   "slot": "C",
+   "skill": "騎馬隊守護",
+   "rank": "E",
+   "afterSkill": "騎馬隊挟撃",
+   "afterRank": "E",
+   "target": "馬",
+   "rate": "25%",
+   "effectShort": "防御 (コストx6.5) %上昇 / (武将のコストで効果が変化します)",
+   "afterTarget": "馬",
+   "afterRate": "25%",
+   "afterEffectShort": "攻撃 (コストx6.5) %上昇 / (武将のコストで効果が変化します)"
+  },
+  {
+   "slot": "S1",
+   "skill": "弓隊挟撃",
+   "rank": "E",
+   "afterSkill": "弓隊守護",
+   "afterRank": "E",
+   "target": "弓",
+   "rate": "25%",
+   "effectShort": "攻撃 (コストx6.5) %上昇 / (武将のコストで効果が変化します)",
+   "afterTarget": "弓",
+   "afterRate": "25%",
+   "afterEffectShort": "弓防：13%上昇 / (武将のコストで効果が変化します)"
+  },
+  {
+   "slot": "S2",
+   "skill": "弓隊円陣",
+   "rank": "D",
+   "afterSkill": "矢雨備え",
+   "afterRank": "D",
+   "target": "弓",
+   "rate": "40%",
+   "effectShort": "防御 20%上昇",
+   "afterTarget": "弓器",
+   "afterRate": "30%",
+   "afterEffectShort": "防御 25%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/4128 と skills/弓隊守護)およびixawiki(BushoCard/4128北条氏照)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

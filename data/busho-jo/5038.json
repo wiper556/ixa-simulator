@@ -1,0 +1,109 @@
+{
+ "name": "吉岡長増",
+ "no": "5038",
+ "ch": null,
+ "cost": 2.0,
+ "troop": "弓防",
+ "sub": "",
+ "effect": "防御 10%上昇",
+ "furigana": "よしおかながます",
+ "illustrator": "日下正宗",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 385,
+ "atkGrowth": 12.0,
+ "defBase": 385,
+ "defGrowth": 12.0,
+ "tacticsBase": 385.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 1550,
+ "rankGrades": {
+  "yari": null,
+  "yumi": null,
+  "uma": null,
+  "ki": null
+ },
+ "initialSkill": "弓隊堅守",
+ "skillDetail": "F/LV10 確率 20% 防御 10%上昇/対象:弓\n①防御が10%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓　確率 20% / 防御 10%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "弓隊堅守",
+   "rank": "F",
+   "afterSkill": "弓隊襲撃",
+   "afterRank": "F",
+   "target": "弓",
+   "rate": "20%",
+   "effectShort": "防御 10%上昇",
+   "afterTarget": "弓",
+   "afterRate": "20%",
+   "afterEffectShort": "攻撃 10%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "弓隊備え",
+   "rank": "F",
+   "afterSkill": "弓隊堅守",
+   "afterRank": "F",
+   "target": "弓",
+   "rate": "10%",
+   "effectShort": "弓防：15%上昇",
+   "afterTarget": "弓",
+   "afterRate": "20%",
+   "afterEffectShort": "防御 10%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "槍隊堅守",
+   "rank": "F",
+   "afterSkill": "槍隊襲撃",
+   "afterRank": "F",
+   "target": "槍",
+   "rate": "20%",
+   "effectShort": "槍防：10%上昇",
+   "afterTarget": "槍",
+   "afterRate": "20%",
+   "afterEffectShort": "攻撃 10%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "弓隊襲撃",
+   "rank": "F",
+   "afterSkill": "弓隊堅守",
+   "afterRank": "F",
+   "target": "弓",
+   "rate": "20%",
+   "effectShort": "攻撃 10%上昇",
+   "afterTarget": "弓",
+   "afterRate": "20%",
+   "afterEffectShort": "防御 10%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "弓隊堅陣",
+   "rank": "F",
+   "afterSkill": "弓隊奇襲",
+   "afterRank": "E",
+   "target": "弓",
+   "rate": "30%",
+   "effectShort": "防御 12%上昇",
+   "afterTarget": "弓",
+   "afterRate": "30%",
+   "afterEffectShort": "弓攻：12%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/5038 と skills/弓隊堅守)およびixawiki(BushoCard/5038吉岡長増)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

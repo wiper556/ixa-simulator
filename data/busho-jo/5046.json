@@ -1,0 +1,109 @@
+{
+ "name": "大村純忠",
+ "no": "5046",
+ "ch": null,
+ "cost": 2.0,
+ "troop": "器攻",
+ "sub": "",
+ "effect": "破壊 15%上昇",
+ "furigana": "おおむらすみただ",
+ "illustrator": "かにぱん",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 410,
+ "atkGrowth": 12.0,
+ "defBase": 390,
+ "defGrowth": 11.0,
+ "tacticsBase": 350.0,
+ "tacticsGrowth": 1.5,
+ "lv0Troops": 1700,
+ "rankGrades": {
+  "yari": null,
+  "yumi": null,
+  "uma": null,
+  "ki": null
+ },
+ "initialSkill": "城破り",
+ "skillDetail": "F/LV10 確率 10% 破壊 15%上昇/対象:器\n①破壊が15%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "器　確率 10% / 破壊 15%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "城破り",
+   "rank": "F",
+   "afterSkill": "槍隊急襲",
+   "afterRank": "F",
+   "target": "器",
+   "rate": "10%",
+   "effectShort": "破壊 15%上昇",
+   "afterTarget": "槍",
+   "afterRate": "16%",
+   "afterEffectShort": "槍攻：7.5%上昇 / (武将のコストで効果が変化します)"
+  },
+  {
+   "slot": "B",
+   "skill": "槍隊備え",
+   "rank": "F",
+   "afterSkill": "槍隊堅守",
+   "afterRank": "F",
+   "target": "槍",
+   "rate": "10%",
+   "effectShort": "防御 15%上昇",
+   "afterTarget": "槍",
+   "afterRate": "20%",
+   "afterEffectShort": "槍防：10%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "兵器進撃",
+   "rank": "F",
+   "afterSkill": "鉄砲隊進撃",
+   "afterRank": "F",
+   "target": "器",
+   "rate": "10%",
+   "effectShort": "攻撃 15%上昇",
+   "afterTarget": "砲",
+   "afterRate": "8%",
+   "afterEffectShort": "攻撃 15%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "槍隊急襲",
+   "rank": "F",
+   "afterSkill": "槍隊守備",
+   "afterRank": "F",
+   "target": "槍",
+   "rate": "16%",
+   "effectShort": "槍攻：7.5%上昇 / (武将のコストで効果が変化します)",
+   "afterTarget": "槍",
+   "afterRate": "16%",
+   "afterEffectShort": "防御 (コストx5) %上昇 / (武将のコストで効果が変化します)"
+  },
+  {
+   "slot": "S2",
+   "skill": "城砕き",
+   "rank": "E",
+   "afterSkill": "防壁砕き",
+   "afterRank": "E",
+   "target": "器",
+   "rate": "15%",
+   "effectShort": "破壊 20%上昇",
+   "afterTarget": "器",
+   "afterRate": "30%",
+   "afterEffectShort": "破壊 12%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/5046 と skills/城破り)およびixawiki(BushoCard/5046大村純忠)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

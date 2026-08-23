@@ -1,0 +1,109 @@
+{
+ "name": "斎藤龍興",
+ "no": "5117",
+ "ch": null,
+ "cost": 1.5,
+ "troop": "器防",
+ "sub": "",
+ "effect": "防御 30%上昇",
+ "furigana": "さいとうたつおき",
+ "illustrator": "与一",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 390,
+ "atkGrowth": 14.0,
+ "defBase": 520,
+ "defGrowth": 15.0,
+ "tacticsBase": 380.0,
+ "tacticsGrowth": 1.5,
+ "lv0Troops": 1300,
+ "rankGrades": {
+  "yari": "D",
+  "yumi": "C",
+  "uma": "E",
+  "ki": "B"
+ },
+ "initialSkill": "龍哭の酒",
+ "skillDetail": "F/LV10 確率 25% 防御 30%上昇/対象:器\n①防御が30%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "器　確率 25% / 防御 30%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "荒切武者",
+   "rank": "F",
+   "afterSkill": "騎馬隊堅守",
+   "afterRank": "F",
+   "target": "槍馬",
+   "rate": "15%",
+   "effectShort": "攻撃 15%上昇 / 破壊 4%上昇",
+   "afterTarget": "馬",
+   "afterRate": "20%",
+   "afterEffectShort": "馬防：10%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "城破り",
+   "rank": "F",
+   "afterSkill": "槍隊急襲",
+   "afterRank": "F",
+   "target": "器",
+   "rate": "10%",
+   "effectShort": "破壊 15%上昇",
+   "afterTarget": "槍",
+   "afterRate": "16%",
+   "afterEffectShort": "槍攻：7.5%上昇 / (武将のコストで効果が変化します)"
+  },
+  {
+   "slot": "C",
+   "skill": "龍哭の酒",
+   "rank": "F",
+   "afterSkill": "伏僧嘗胆",
+   "afterRank": "E",
+   "target": "器",
+   "rate": "25%",
+   "effectShort": "防御 30%上昇",
+   "afterTarget": "弓砲",
+   "afterRate": "22%",
+   "afterEffectShort": "防御 12%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "伏僧嘗胆",
+   "rank": "E",
+   "afterSkill": "弓隊挟撃",
+   "afterRank": "E",
+   "target": "弓砲",
+   "rate": "22%",
+   "effectShort": "防御 12%上昇",
+   "afterTarget": "弓",
+   "afterRate": "25%",
+   "afterEffectShort": "攻撃 (コストx6.5) %上昇 / (武将のコストで効果が変化します)"
+  },
+  {
+   "slot": "S2",
+   "skill": "火竜の術",
+   "rank": "D",
+   "afterSkill": "謀殺",
+   "afterRank": "D",
+   "target": "弓器",
+   "rate": "20%",
+   "effectShort": "攻撃 15%上昇 / 破壊 15%上昇",
+   "afterTarget": "全",
+   "afterRate": "15%",
+   "afterEffectShort": "攻撃戦闘勝利時のみ、敵軍1部隊の武将に追加ダメージ+35"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/5117 と skills/龍哭の酒)およびixawiki(BushoCard/5117斎藤龍興)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

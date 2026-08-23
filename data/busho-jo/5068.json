@@ -1,0 +1,109 @@
+{
+ "name": "穴山梅雪",
+ "no": "5068",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "馬攻",
+ "sub": "",
+ "effect": "攻撃 (コストx5) %上昇 / (武将のコストで効果が変化します)",
+ "furigana": "あなやまばいせつ",
+ "illustrator": "HOMEX",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 530,
+ "atkGrowth": 15.0,
+ "defBase": 500,
+ "defGrowth": 13.0,
+ "tacticsBase": 330.0,
+ "tacticsGrowth": 1.5,
+ "lv0Troops": 2050,
+ "rankGrades": {
+  "yari": null,
+  "yumi": null,
+  "uma": null,
+  "ki": null
+ },
+ "initialSkill": "騎馬隊急襲",
+ "skillDetail": "F/LV10 確率 16% 攻撃 (コストx5) %上昇 / (武将のコストで効果が変化します)/対象:馬\n①攻撃 (コストx5) %上昇 / (武将のコストで効果が変化します)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "馬　確率 16% / 攻撃 (コストx5) %上昇 / (武将のコストで効果が変化します)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "騎馬隊急襲",
+   "rank": "F",
+   "afterSkill": "騎馬隊守備",
+   "afterRank": "F",
+   "target": "馬",
+   "rate": "16%",
+   "effectShort": "攻撃 (コストx5) %上昇 / (武将のコストで効果が変化します)",
+   "afterTarget": "馬",
+   "afterRate": "16%",
+   "afterEffectShort": "防御 (コストx5) %上昇 / (武将のコストで効果が変化します)"
+  },
+  {
+   "slot": "B",
+   "skill": "弓隊急襲",
+   "rank": "F",
+   "afterSkill": "弓隊守備",
+   "afterRank": "F",
+   "target": "弓",
+   "rate": "16%",
+   "effectShort": "攻撃 (コストx5) %上昇 / (武将のコストで効果が変化します)",
+   "afterTarget": "弓",
+   "afterRate": "16%",
+   "afterEffectShort": "防御 (コストx6) %上昇 / (武将のコストで効果が変化します)"
+  },
+  {
+   "slot": "C",
+   "skill": "槍隊急襲",
+   "rank": "F",
+   "afterSkill": "槍隊守備",
+   "afterRank": "F",
+   "target": "槍",
+   "rate": "16%",
+   "effectShort": "槍攻：7.5%上昇 / (武将のコストで効果が変化します)",
+   "afterTarget": "槍",
+   "afterRate": "16%",
+   "afterEffectShort": "防御 (コストx5) %上昇 / (武将のコストで効果が変化します)"
+  },
+  {
+   "slot": "S1",
+   "skill": "騎馬隊守備",
+   "rank": "F",
+   "afterSkill": "騎馬隊急襲",
+   "afterRank": "F",
+   "target": "馬",
+   "rate": "16%",
+   "effectShort": "防御 (コストx5) %上昇 / (武将のコストで効果が変化します)",
+   "afterTarget": "馬",
+   "afterRate": "16%",
+   "afterEffectShort": "攻撃 (コストx5) %上昇 / (武将のコストで効果が変化します)"
+  },
+  {
+   "slot": "S2",
+   "skill": "騎馬隊挟撃",
+   "rank": "E",
+   "afterSkill": "騎馬隊守護",
+   "afterRank": "E",
+   "target": "馬",
+   "rate": "25%",
+   "effectShort": "攻撃 (コストx6.5) %上昇 / (武将のコストで効果が変化します)",
+   "afterTarget": "馬",
+   "afterRate": "25%",
+   "afterEffectShort": "防御 (コストx6.5) %上昇 / (武将のコストで効果が変化します)"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/5068 と skills/騎馬隊急襲)およびixawiki(BushoCard/5068穴山梅雪)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

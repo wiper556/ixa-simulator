@@ -1,0 +1,109 @@
+{
+ "name": "江里口信常",
+ "no": "5033",
+ "ch": null,
+ "cost": 2.0,
+ "troop": "馬攻",
+ "sub": "",
+ "effect": "馬攻：10%上昇",
+ "furigana": "えりぐちのぶつね",
+ "illustrator": "しまづ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 530,
+ "atkGrowth": 14.0,
+ "defBase": 365,
+ "defGrowth": 13.0,
+ "tacticsBase": 130.0,
+ "tacticsGrowth": 1.0,
+ "lv0Troops": 1740,
+ "rankGrades": {
+  "yari": null,
+  "yumi": null,
+  "uma": null,
+  "ki": null
+ },
+ "initialSkill": "騎馬隊襲撃",
+ "skillDetail": "F/LV10 確率 20% 馬攻：10%上昇/対象:馬\n①馬攻：10%上昇",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "馬　確率 20% / 馬攻：10%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "騎馬隊襲撃",
+   "rank": "F",
+   "afterSkill": "騎馬隊堅守",
+   "afterRank": "F",
+   "target": "馬",
+   "rate": "20%",
+   "effectShort": "馬攻：10%上昇",
+   "afterTarget": "馬",
+   "afterRate": "20%",
+   "afterEffectShort": "馬防：10%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "騎馬隊進撃",
+   "rank": "F",
+   "afterSkill": "騎馬隊襲撃",
+   "afterRank": "F",
+   "target": "馬",
+   "rate": "10%",
+   "effectShort": "攻撃 15%上昇",
+   "afterTarget": "馬",
+   "afterRate": "20%",
+   "afterEffectShort": "馬攻：10%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "槍隊襲撃",
+   "rank": "F",
+   "afterSkill": "槍隊堅守",
+   "afterRank": "F",
+   "target": "槍",
+   "rate": "20%",
+   "effectShort": "攻撃 10%上昇",
+   "afterTarget": "槍",
+   "afterRate": "20%",
+   "afterEffectShort": "槍防：10%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "騎馬隊堅守",
+   "rank": "F",
+   "afterSkill": "騎馬隊襲撃",
+   "afterRank": "F",
+   "target": "馬",
+   "rate": "20%",
+   "effectShort": "馬防：10%上昇",
+   "afterTarget": "馬",
+   "afterRate": "20%",
+   "afterEffectShort": "馬攻：10%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "騎馬隊奇襲",
+   "rank": "E",
+   "afterSkill": "騎馬隊堅陣",
+   "afterRank": "F",
+   "target": "馬",
+   "rate": "30%",
+   "effectShort": "馬攻：12%上昇",
+   "afterTarget": "馬",
+   "afterRate": "30%",
+   "afterEffectShort": "馬防：12%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/5033 と skills/騎馬隊襲撃)およびixawiki(BushoCard/5033江里口信常)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

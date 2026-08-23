@@ -1,0 +1,109 @@
+{
+ "name": "可児才蔵",
+ "no": "5049",
+ "ch": null,
+ "cost": 2.0,
+ "troop": "将防",
+ "sub": "",
+ "effect": "防御 30%上昇",
+ "furigana": "かにさいぞう",
+ "illustrator": "見田航介",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 530,
+ "atkGrowth": 25.0,
+ "defBase": 450,
+ "defGrowth": 25.0,
+ "tacticsBase": 185.0,
+ "tacticsGrowth": 1.5,
+ "lv0Troops": 1300,
+ "rankGrades": {
+  "yari": null,
+  "yumi": null,
+  "uma": null,
+  "ki": null
+ },
+ "initialSkill": "宝蔵院流",
+ "skillDetail": "D/LV10 確率 35% 防御 30%上昇/対象:将\n①防御が30%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "将　確率 35% / 防御 30%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "宝蔵院流",
+   "rank": "D",
+   "afterSkill": "鬼刺",
+   "afterRank": "C",
+   "target": "将",
+   "rate": "35%",
+   "effectShort": "防御 30%上昇",
+   "afterTarget": "槍馬砲",
+   "afterRate": "15%",
+   "afterEffectShort": "攻撃 (コストx9) %上昇 / (武将のコストで効果が変化します)"
+  },
+  {
+   "slot": "B",
+   "skill": "新陰流",
+   "rank": "C",
+   "afterSkill": "大ふへん者",
+   "afterRank": "D",
+   "target": "将",
+   "rate": "35%",
+   "effectShort": "攻撃 30%上昇",
+   "afterTarget": "将",
+   "afterRate": "5%",
+   "afterEffectShort": "攻撃 40%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "土壁の術",
+   "rank": "D",
+   "afterSkill": "矢雨備え",
+   "afterRank": "D",
+   "target": "弓器",
+   "rate": "15%",
+   "effectShort": "防御 30%上昇",
+   "afterTarget": "弓器",
+   "afterRate": "30%",
+   "afterEffectShort": "防御 25%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "鬼刺",
+   "rank": "C",
+   "afterSkill": "乗り崩し",
+   "afterRank": "D",
+   "target": "槍馬砲",
+   "rate": "15%",
+   "effectShort": "攻撃 (コストx9) %上昇 / (武将のコストで効果が変化します)",
+   "afterTarget": "槍馬",
+   "afterRate": "20%",
+   "afterEffectShort": "攻撃 20%上昇 / 破壊 5%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "槍陣の極み",
+   "rank": "B",
+   "afterSkill": "柳生新陰流",
+   "afterRank": "A",
+   "target": "槍",
+   "rate": "30%",
+   "effectShort": "防御 30%上昇",
+   "afterTarget": "将",
+   "afterRate": "55%",
+   "afterEffectShort": "防御 40%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/5049 と skills/宝蔵院流)およびixawiki(BushoCard/5049可児才蔵)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

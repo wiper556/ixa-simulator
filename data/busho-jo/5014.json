@@ -1,0 +1,109 @@
+{
+ "name": "新納忠元",
+ "no": "5014",
+ "ch": null,
+ "cost": 2.0,
+ "troop": "砲防",
+ "sub": "",
+ "effect": "砲防：15%上昇",
+ "furigana": "にいろただもと",
+ "illustrator": "樋口一尉",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 495,
+ "atkGrowth": 13.0,
+ "defBase": 470,
+ "defGrowth": 13.0,
+ "tacticsBase": 280.0,
+ "tacticsGrowth": 1.5,
+ "lv0Troops": 1600,
+ "rankGrades": {
+  "yari": null,
+  "yumi": null,
+  "uma": null,
+  "ki": null
+ },
+ "initialSkill": "鉄砲隊備え",
+ "skillDetail": "F/LV10 確率 8% 砲防：15%上昇/対象:砲\n①砲防：15%上昇",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "砲　確率 8% / 砲防：15%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "鉄砲隊備え",
+   "rank": "F",
+   "afterSkill": "防壁破り",
+   "afterRank": "F",
+   "target": "砲",
+   "rate": "8%",
+   "effectShort": "砲防：15%上昇",
+   "afterTarget": "器",
+   "afterRate": "16%",
+   "afterEffectShort": "破壊 (コストx5) %上昇 / (武将のコストで効果が変化します)"
+  },
+  {
+   "slot": "B",
+   "skill": "鉄砲隊進撃",
+   "rank": "F",
+   "afterSkill": "城破り",
+   "afterRank": "F",
+   "target": "砲",
+   "rate": "8%",
+   "effectShort": "攻撃 15%上昇",
+   "afterTarget": "器",
+   "afterRate": "10%",
+   "afterEffectShort": "破壊 15%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "弓隊堅守",
+   "rank": "F",
+   "afterSkill": "弓隊襲撃",
+   "afterRank": "F",
+   "target": "弓",
+   "rate": "20%",
+   "effectShort": "防御 10%上昇",
+   "afterTarget": "弓",
+   "afterRate": "20%",
+   "afterEffectShort": "攻撃 10%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "防壁破り",
+   "rank": "F",
+   "afterSkill": "鉄砲隊備え",
+   "afterRank": "F",
+   "target": "器",
+   "rate": "16%",
+   "effectShort": "破壊 (コストx5) %上昇 / (武将のコストで効果が変化します)",
+   "afterTarget": "砲",
+   "afterRate": "8%",
+   "afterEffectShort": "砲防：15%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "鉄砲隊堅陣",
+   "rank": "F",
+   "afterSkill": "鉄砲隊奇襲",
+   "afterRank": "E",
+   "target": "砲",
+   "rate": "25%",
+   "effectShort": "砲防：12%上昇",
+   "afterTarget": "砲",
+   "afterRate": "25%",
+   "afterEffectShort": "攻撃 12%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/5014 と skills/鉄砲隊備え)およびixawiki(BushoCard/5014新納忠元)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

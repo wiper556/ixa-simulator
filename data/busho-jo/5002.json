@@ -1,0 +1,109 @@
+{
+ "name": "島津歳久",
+ "no": "5002",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "砲攻",
+ "sub": "",
+ "effect": "攻撃 15%上昇",
+ "furigana": "しまづとしひさ",
+ "illustrator": "灯ハル",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 560,
+ "atkGrowth": 14.0,
+ "defBase": 450,
+ "defGrowth": 12.0,
+ "tacticsBase": 350.0,
+ "tacticsGrowth": 1.5,
+ "lv0Troops": 1870,
+ "rankGrades": {
+  "yari": null,
+  "yumi": null,
+  "uma": null,
+  "ki": null
+ },
+ "initialSkill": "鉄砲隊進撃",
+ "skillDetail": "F/LV10 確率 8% 攻撃 15%上昇/対象:砲\n①攻撃が15%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "砲　確率 8% / 攻撃 15%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "鉄砲隊進撃",
+   "rank": "F",
+   "afterSkill": "城破り",
+   "afterRank": "F",
+   "target": "砲",
+   "rate": "8%",
+   "effectShort": "攻撃 15%上昇",
+   "afterTarget": "器",
+   "afterRate": "10%",
+   "afterEffectShort": "破壊 15%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "鉄砲隊備え",
+   "rank": "F",
+   "afterSkill": "防壁破り",
+   "afterRank": "F",
+   "target": "砲",
+   "rate": "8%",
+   "effectShort": "砲防：15%上昇",
+   "afterTarget": "器",
+   "afterRate": "16%",
+   "afterEffectShort": "破壊 (コストx5) %上昇 / (武将のコストで効果が変化します)"
+  },
+  {
+   "slot": "C",
+   "skill": "兵器進撃",
+   "rank": "F",
+   "afterSkill": "鉄砲隊進撃",
+   "afterRank": "F",
+   "target": "器",
+   "rate": "10%",
+   "effectShort": "攻撃 15%上昇",
+   "afterTarget": "砲",
+   "afterRate": "8%",
+   "afterEffectShort": "攻撃 15%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "城破り",
+   "rank": "F",
+   "afterSkill": "槍隊急襲",
+   "afterRank": "F",
+   "target": "器",
+   "rate": "10%",
+   "effectShort": "破壊 15%上昇",
+   "afterTarget": "槍",
+   "afterRate": "16%",
+   "afterEffectShort": "槍攻：7.5%上昇 / (武将のコストで効果が変化します)"
+  },
+  {
+   "slot": "S2",
+   "skill": "鉄砲隊突撃",
+   "rank": "F",
+   "afterSkill": "鉄砲隊奇襲",
+   "afterRank": "E",
+   "target": "砲",
+   "rate": "12%",
+   "effectShort": "攻撃 20%上昇",
+   "afterTarget": "砲",
+   "afterRate": "25%",
+   "afterEffectShort": "攻撃 12%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/5002 と skills/鉄砲隊進撃)およびixawiki(BushoCard/5002島津歳久)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

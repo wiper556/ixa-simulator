@@ -1,0 +1,109 @@
+{
+ "name": "北条氏規",
+ "no": "4129",
+ "ch": null,
+ "cost": 3.0,
+ "troop": "砲攻",
+ "sub": "",
+ "effect": "攻撃 12%上昇",
+ "furigana": "ほうじょううじのり",
+ "illustrator": "葉山えいし",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 550,
+ "atkGrowth": 16.0,
+ "defBase": 550,
+ "defGrowth": 13.0,
+ "tacticsBase": 440.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2380,
+ "rankGrades": {
+  "yari": "C",
+  "yumi": "B",
+  "uma": "C",
+  "ki": "B"
+ },
+ "initialSkill": "鉄砲隊奇襲",
+ "skillDetail": "E/LV10 確率 25% 攻撃 12%上昇/対象:砲\n①攻撃が12%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "砲　確率 25% / 攻撃 12%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "鉄砲隊奇襲",
+   "rank": "E",
+   "afterSkill": "鉄砲隊堅陣",
+   "afterRank": "F",
+   "target": "砲",
+   "rate": "25%",
+   "effectShort": "攻撃 12%上昇",
+   "afterTarget": "砲",
+   "afterRate": "25%",
+   "afterEffectShort": "砲防：12%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "鉄砲隊突撃",
+   "rank": "F",
+   "afterSkill": "鉄砲隊奇襲",
+   "afterRank": "E",
+   "target": "砲",
+   "rate": "12%",
+   "effectShort": "攻撃 20%上昇",
+   "afterTarget": "砲",
+   "afterRate": "25%",
+   "afterEffectShort": "攻撃 12%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "防壁砕き",
+   "rank": "E",
+   "afterSkill": "兵器運用術",
+   "afterRank": "E",
+   "target": "器",
+   "rate": "30%",
+   "effectShort": "破壊 12%上昇",
+   "afterTarget": "砲器",
+   "afterRate": "100%",
+   "afterEffectShort": "速度 25%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "鉄砲隊堅陣",
+   "rank": "F",
+   "afterSkill": "鉄砲隊奇襲",
+   "afterRank": "E",
+   "target": "砲",
+   "rate": "25%",
+   "effectShort": "砲防：12%上昇",
+   "afterTarget": "砲",
+   "afterRate": "25%",
+   "afterEffectShort": "攻撃 12%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "鉄砲隊挟撃",
+   "rank": "E",
+   "afterSkill": "鉄砲隊守護",
+   "afterRank": "E",
+   "target": "砲",
+   "rate": "20%",
+   "effectShort": "攻撃 (コストx6.5) %上昇 / (武将のコストで効果が変化します)",
+   "afterTarget": "砲",
+   "afterRate": "20%",
+   "afterEffectShort": "防御 (コストx6.5) %上昇 / (武将のコストで効果が変化します)"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/4129 と skills/鉄砲隊奇襲)およびixawiki(BushoCard/4129北条氏規)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

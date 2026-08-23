@@ -1,0 +1,109 @@
+{
+ "name": "尼子勝久",
+ "no": "4133",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "弓砲防",
+ "sub": "",
+ "effect": "防御 12%上昇",
+ "furigana": "あまごかつひさ",
+ "illustrator": "ユティフ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 550,
+ "atkGrowth": 15.0,
+ "defBase": 570,
+ "defGrowth": 16.0,
+ "tacticsBase": 400.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 1980,
+ "rankGrades": {
+  "yari": "C",
+  "yumi": "B",
+  "uma": "D",
+  "ki": "C"
+ },
+ "initialSkill": "伏僧嘗胆",
+ "skillDetail": "E/LV10 確率 22% 防御 12%上昇/対象:弓砲\n①防御が12%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓砲　確率 22% / 防御 12%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "騎馬隊守護",
+   "rank": "E",
+   "afterSkill": "騎馬隊挟撃",
+   "afterRank": "E",
+   "target": "馬",
+   "rate": "25%",
+   "effectShort": "防御 (コストx6.5) %上昇 / (武将のコストで効果が変化します)",
+   "afterTarget": "馬",
+   "afterRate": "25%",
+   "afterEffectShort": "攻撃 (コストx6.5) %上昇 / (武将のコストで効果が変化します)"
+  },
+  {
+   "slot": "B",
+   "skill": "弓隊守護",
+   "rank": "E",
+   "afterSkill": "弓隊挟撃",
+   "afterRank": "E",
+   "target": "弓",
+   "rate": "25%",
+   "effectShort": "弓防：13%上昇 / (武将のコストで効果が変化します)",
+   "afterTarget": "弓",
+   "afterRate": "25%",
+   "afterEffectShort": "攻撃 (コストx6.5) %上昇 / (武将のコストで効果が変化します)"
+  },
+  {
+   "slot": "C",
+   "skill": "四風賢鳳",
+   "rank": "F",
+   "afterSkill": "槍隊堅守",
+   "afterRank": "F",
+   "target": "弓砲",
+   "rate": "20%",
+   "effectShort": "攻撃 10%上昇",
+   "afterTarget": "槍",
+   "afterRate": "20%",
+   "afterEffectShort": "槍防：10%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "弓隊挟撃",
+   "rank": "E",
+   "afterSkill": "弓隊守護",
+   "afterRank": "E",
+   "target": "弓",
+   "rate": "25%",
+   "effectShort": "攻撃 (コストx6.5) %上昇 / (武将のコストで効果が変化します)",
+   "afterTarget": "弓",
+   "afterRate": "25%",
+   "afterEffectShort": "弓防：13%上昇 / (武将のコストで効果が変化します)"
+  },
+  {
+   "slot": "S2",
+   "skill": "弓撃の真髄",
+   "rank": "E",
+   "afterSkill": "三矢の教え",
+   "afterRank": "D",
+   "target": "弓",
+   "rate": "20%",
+   "effectShort": "攻撃 15%上昇",
+   "afterTarget": "槍弓",
+   "afterRate": "20%",
+   "afterEffectShort": "攻撃 20%上昇 / 破壊 5%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/4133 と skills/伏僧嘗胆)およびixawiki(BushoCard/4133尼子勝久)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

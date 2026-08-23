@@ -1,0 +1,109 @@
+{
+ "name": "吉田孝頼",
+ "no": "5028",
+ "ch": null,
+ "cost": 2.0,
+ "troop": "弓防",
+ "sub": "",
+ "effect": "弓防：15%上昇",
+ "furigana": "よしだたかより",
+ "illustrator": "Luke",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 470,
+ "atkGrowth": 13.0,
+ "defBase": 475,
+ "defGrowth": 13.0,
+ "tacticsBase": 390.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 1530,
+ "rankGrades": {
+  "yari": null,
+  "yumi": null,
+  "uma": null,
+  "ki": null
+ },
+ "initialSkill": "弓隊備え",
+ "skillDetail": "F/LV10 確率 10% 弓防：15%上昇/対象:弓\n①弓防：15%上昇",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓　確率 10% / 弓防：15%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "弓隊備え",
+   "rank": "F",
+   "afterSkill": "弓隊堅守",
+   "afterRank": "F",
+   "target": "弓",
+   "rate": "10%",
+   "effectShort": "弓防：15%上昇",
+   "afterTarget": "弓",
+   "afterRate": "20%",
+   "afterEffectShort": "防御 10%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "弓隊進撃",
+   "rank": "F",
+   "afterSkill": "弓隊襲撃",
+   "afterRank": "F",
+   "target": "弓",
+   "rate": "10%",
+   "effectShort": "弓攻：15%上昇",
+   "afterTarget": "弓",
+   "afterRate": "20%",
+   "afterEffectShort": "攻撃 10%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "槍隊備え",
+   "rank": "F",
+   "afterSkill": "槍隊堅守",
+   "afterRank": "F",
+   "target": "槍",
+   "rate": "10%",
+   "effectShort": "防御 15%上昇",
+   "afterTarget": "槍",
+   "afterRate": "20%",
+   "afterEffectShort": "槍防：10%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "弓隊堅守",
+   "rank": "F",
+   "afterSkill": "弓隊襲撃",
+   "afterRank": "F",
+   "target": "弓",
+   "rate": "20%",
+   "effectShort": "防御 10%上昇",
+   "afterTarget": "弓",
+   "afterRate": "20%",
+   "afterEffectShort": "攻撃 10%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "弓隊布陣",
+   "rank": "E",
+   "afterSkill": "弓隊堅陣",
+   "afterRank": "F",
+   "target": "弓",
+   "rate": "15%",
+   "effectShort": "防御 20%上昇",
+   "afterTarget": "弓",
+   "afterRate": "30%",
+   "afterEffectShort": "防御 12%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/5028 と skills/弓隊備え)およびixawiki(BushoCard/5028吉田孝頼)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

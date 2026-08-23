@@ -1,0 +1,109 @@
+{
+ "name": "木下藤吉郎",
+ "no": "4004",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "槍攻",
+ "sub": "",
+ "effect": "攻撃 15%上昇",
+ "furigana": "きのしたとうきちろう",
+ "illustrator": "わだぺん。",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 525,
+ "atkGrowth": 15.0,
+ "defBase": 600,
+ "defGrowth": 15.0,
+ "tacticsBase": 420.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2010,
+ "rankGrades": {
+  "yari": null,
+  "yumi": null,
+  "uma": null,
+  "ki": null
+ },
+ "initialSkill": "槍撃の真髄",
+ "skillDetail": "E/LV10 確率 20% 攻撃 15%上昇/対象:槍\n①攻撃が15%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍　確率 20% / 攻撃 15%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "槍隊奇襲",
+   "rank": "E",
+   "afterSkill": "槍隊堅陣",
+   "afterRank": "F",
+   "target": "槍",
+   "rate": "30%",
+   "effectShort": "攻撃 12%上昇",
+   "afterTarget": "槍",
+   "afterRate": "30%",
+   "afterEffectShort": "槍防：12%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "槍隊守護",
+   "rank": "E",
+   "afterSkill": "槍隊挟撃",
+   "afterRank": "E",
+   "target": "槍",
+   "rate": "25%",
+   "effectShort": "防御 (コストx6.5) %上昇 / (武将のコストで効果が変化します)",
+   "afterTarget": "槍",
+   "afterRate": "25%",
+   "afterEffectShort": "槍攻：9.75%上昇 / (武将のコストで効果が変化します)"
+  },
+  {
+   "slot": "C",
+   "skill": "槍隊挟撃",
+   "rank": "E",
+   "afterSkill": "槍隊守護",
+   "afterRank": "E",
+   "target": "槍",
+   "rate": "25%",
+   "effectShort": "槍攻：9.75%上昇 / (武将のコストで効果が変化します)",
+   "afterTarget": "槍",
+   "afterRate": "25%",
+   "afterEffectShort": "防御 (コストx6.5) %上昇 / (武将のコストで効果が変化します)"
+  },
+  {
+   "slot": "S1",
+   "skill": "槍衾",
+   "rank": "D",
+   "afterSkill": "義兵進軍",
+   "afterRank": "C",
+   "target": "槍器",
+   "rate": "30%",
+   "effectShort": "防御 25%上昇",
+   "afterTarget": "槍弓馬砲",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 7%上昇 / 速度 10%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "剣術 攻乃型",
+   "rank": "E",
+   "afterSkill": "迅速行軍",
+   "afterRank": "E",
+   "target": "将",
+   "rate": "30%",
+   "effectShort": "攻撃 20%上昇",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "速度 20%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/4004 と skills/槍撃の真髄)およびixawiki(BushoCard/4004木下藤吉郎)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

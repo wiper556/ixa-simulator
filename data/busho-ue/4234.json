@@ -1,0 +1,109 @@
+{
+ "name": "加藤忠正",
+ "no": "4234",
+ "ch": null,
+ "cost": 2.0,
+ "troop": "器攻",
+ "sub": "",
+ "effect": "破壊 (コストx6.5) %上昇 / (武将のコストで効果が変化します)",
+ "furigana": "かとうただまさ",
+ "illustrator": "三好載克",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 590,
+ "atkGrowth": 17.0,
+ "defBase": 570,
+ "defGrowth": 16.0,
+ "tacticsBase": 410.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 1810,
+ "rankGrades": {
+  "yari": "C",
+  "yumi": "C",
+  "uma": "D",
+  "ki": "B"
+ },
+ "initialSkill": "国貫き",
+ "skillDetail": "E/LV10 確率 25% 破壊 (コストx6.5) %上昇 / (武将のコストで効果が変化します)/対象:器\n①破壊 (コストx6.5) %上昇 / (武将のコストで効果が変化します)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "器　確率 25% / 破壊 (コストx6.5) %上昇 / (武将のコストで効果が変化します)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "国貫き",
+   "rank": "E",
+   "afterSkill": "兵器運用術",
+   "afterRank": "E",
+   "target": "器",
+   "rate": "25%",
+   "effectShort": "破壊 (コストx6.5) %上昇 / (武将のコストで効果が変化します)",
+   "afterTarget": "砲器",
+   "afterRate": "100%",
+   "afterEffectShort": "速度 25%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "兵器布陣",
+   "rank": "E",
+   "afterSkill": "城砕き",
+   "afterRank": "E",
+   "target": "器",
+   "rate": "15%",
+   "effectShort": "防御 20%上昇",
+   "afterTarget": "器",
+   "afterRate": "15%",
+   "afterEffectShort": "破壊 20%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "迅速行軍",
+   "rank": "E",
+   "afterSkill": "弓隊突撃",
+   "afterRank": "F",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "速度 20%上昇",
+   "afterTarget": "弓",
+   "afterRate": "15%",
+   "afterEffectShort": "攻撃 20%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "兵器運用術",
+   "rank": "E",
+   "afterSkill": "兵器突撃",
+   "afterRank": "F",
+   "target": "砲器",
+   "rate": "100%",
+   "effectShort": "速度 25%上昇",
+   "afterTarget": "器",
+   "afterRate": "15%",
+   "afterEffectShort": "攻撃 20%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "城崩し",
+   "rank": "D",
+   "afterSkill": "謀殺",
+   "afterRank": "D",
+   "target": "器",
+   "rate": "35%",
+   "effectShort": "破壊 20%上昇",
+   "afterTarget": "全",
+   "afterRate": "15%",
+   "afterEffectShort": "攻撃戦闘勝利時のみ、敵軍1部隊の武将に追加ダメージ+35"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/4234 と skills/国貫き)およびixawiki(BushoCard/4234加藤忠正)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

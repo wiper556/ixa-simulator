@@ -610,6 +610,73 @@ def replace_filter_meta(dry=False):
     return 0
 
 
+# ============ 武将データベースの横断検索(characters-hub.html) ============
+# 一覧ページは9つに分かれているので、どのレアリティに誰が居るかを覚えていないと探せない。
+# ハブに検索窓を置くために、全レアリティ分の索引を1つのJSに書き出す。
+#
+# 1件は [No., 名前, ふりがな, レアリティ, 初期スキル]。
+# キー名を持たせると2400件ぶんで数十KB増えるので配列にしている。
+INDEX_FILE = "assets/js/busho-index.js"
+INDEX_BEGIN = ("// BUILD:bushoIndex:start ここから下は tools/build_data.py が "
+               "data/busho*/ から生成しています。直接編集しないこと")
+INDEX_END = "// BUILD:bushoIndex:end"
+
+
+def collect_busho_index():
+    rows = []
+    for full in chapter_dirs():
+        key = RARITY_KEY.get(os.path.basename(full))
+        if not key:
+            continue
+        for fn in sorted(os.listdir(full)):
+            if not fn.endswith(".json"):
+                continue
+            with io.open(os.path.join(full, fn), encoding="utf-8") as f:
+                e = json.load(f)
+            no = str(e.get("no") or "")
+            if not no:
+                continue
+            rows.append([no, e.get("name") or "", e.get("furigana") or "",
+                         key, e.get("initialSkill") or ""])
+    rows.sort(key=lambda r: (len(r[0]), r[0]))
+    return rows
+
+
+def build_index_block(rows):
+    out = [INDEX_BEGIN, "const BUSHO_INDEX = ["]
+    for r in rows:
+        out.append(json.dumps(r, ensure_ascii=False, separators=(",", ":")) + ",")
+    if len(out) > 2:
+        out[-1] = out[-1].rstrip(",")
+    out.append("];")
+    out.append(INDEX_END)
+    return "\n".join(out)
+
+
+def replace_busho_index(dry=False):
+    p = os.path.join(ROOT, INDEX_FILE)
+    if not os.path.exists(p):
+        print("  %-24s [停止] ファイルが無い" % INDEX_FILE)
+        return 1
+    text = io.open(p, encoding="utf-8", newline="").read()
+    lo, hi = text.find(INDEX_BEGIN), text.find(INDEX_END)
+    if lo < 0 or hi < 0:
+        # 初回は素のマーカーが置いてあるので、そちらも見る
+        lo, hi = text.find("// BUILD:bushoIndex:start"), text.find(INDEX_END)
+        if lo < 0 or hi < 0:
+            print("  %-24s [停止] BUILD:bushoIndex のマーカーが無い" % INDEX_FILE)
+            return 1
+    rows = collect_busho_index()
+    new = text[:lo] + build_index_block(rows) + text[hi + len(INDEX_END):]
+    same = new == text
+    print("  %-24s %4d件 %s (横断検索の索引)"
+          % (INDEX_FILE, len(rows), "変化なし" if same else "書き換え"))
+    if not same and not dry:
+        io.open(p, "w", encoding="utf-8", newline="").write(new)
+        return 1
+    return 0
+
+
 # 攻撃シミュレーターに防御スキルの武将を、防御シミュレーターに攻撃スキルの武将を
 # 出さないための仕分け。軸は武将DBの troop(「全攻」「槍砲器防」「全攻防」「全攻破」など)
 # から取る。「全」「特」「部隊長」「合流」のように軸を持たない書き方もあるので、
@@ -689,6 +756,7 @@ def main(dry=False):
             changed += 1
     changed += replace_chapters(dry)
     changed += replace_filter_meta(dry)
+    changed += replace_busho_index(dry)
     changed += replace_axis(dry)
     changed += replace_card_art(dry)
     changed += replace_rate_table(dry)

@@ -1,0 +1,106 @@
+{
+ "name": "高徳院",
+ "no": "4211",
+ "ch": null,
+ "cost": 3.0,
+ "troop": "槍弓馬防",
+ "sub": "",
+ "effect": "防御 27%上昇",
+ "furigana": "こうとくいん",
+ "illustrator": "東柚己",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 530,
+ "atkGrowth": 15.0,
+ "defBase": 600,
+ "defGrowth": 17.0,
+ "tacticsBase": 400.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2500,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "B",
+  "uma": "B",
+  "ki": "E"
+ },
+ "initialSkill": "終末の美玉",
+ "skillDetail": "E/LV10 確率 24% 防御 27%上昇/対象:槍弓馬\n①防御が27%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍弓馬　確率 24% / 防御 27%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "槍隊備え",
+   "rank": "F",
+   "afterSkill": "槍隊堅守",
+   "afterRank": "F",
+   "target": "槍",
+   "rate": "10%",
+   "effectShort": "防御 15%上昇",
+   "afterTarget": "槍",
+   "afterRate": "20%",
+   "afterEffectShort": "槍防：10%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "弓隊備え",
+   "rank": "F",
+   "afterSkill": "弓隊堅守",
+   "afterRank": "F",
+   "target": "弓",
+   "rate": "10%",
+   "effectShort": "弓防：15%上昇",
+   "afterTarget": "弓",
+   "afterRate": "20%",
+   "afterEffectShort": "防御 10%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "騎馬隊備え",
+   "rank": "F",
+   "afterSkill": "騎馬隊堅守",
+   "afterRank": "F",
+   "target": "馬",
+   "rate": "10%",
+   "effectShort": "防御 15%上昇",
+   "afterTarget": "馬",
+   "afterRate": "20%",
+   "afterEffectShort": "馬防：10%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "終末の美玉",
+   "rank": "E",
+   "afterSkill": "終末の美玉",
+   "afterRank": "E",
+   "target": "槍弓馬",
+   "rate": "24%",
+   "effectShort": "防御 27%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "殿名人",
+   "rank": "E",
+   "afterSkill": "槍隊守護",
+   "afterRank": "E",
+   "target": "槍弓馬",
+   "rate": "15%",
+   "effectShort": "防御 10%上昇",
+   "afterTarget": "槍",
+   "afterRate": "25%",
+   "afterEffectShort": "防御 (コストx6.5) %上昇 / (武将のコストで効果が変化します)"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/4211 と skills/終末の美玉)およびixawiki(BushoCard/4211高徳院)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}
