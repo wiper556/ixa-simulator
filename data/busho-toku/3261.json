@@ -1,0 +1,103 @@
+{
+ "name": "阿梅",
+ "no": "3261",
+ "ch": null,
+ "cost": 2.0,
+ "troop": "弓砲防",
+ "sub": "",
+ "effect": "防御 24%上昇 / (自領以外の加勢で効果2倍)",
+ "furigana": "おうめ",
+ "illustrator": "みつなり都",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 650,
+ "atkGrowth": 16.0,
+ "defBase": 760,
+ "defGrowth": 18.0,
+ "tacticsBase": 460.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2280,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "A",
+  "uma": "C",
+  "ki": "A"
+ },
+ "initialSkill": "六道の矜持",
+ "skillDetail": "D/LV10 確率 20% 防御 24%上昇 / (自領以外の加勢で効果2倍)/対象:弓砲\n①防御 24%上昇 / (自領以外の加勢で効果2倍)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓砲　確率 20% / 防御 24%上昇 / (自領以外の加勢で効果2倍)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "弓隊守護",
+   "rank": "E",
+   "afterSkill": "弓隊挟撃",
+   "afterRank": "E",
+   "target": "弓",
+   "rate": "25%",
+   "effectShort": "弓防：13%上昇 / (武将のコストで効果が変化します)",
+   "afterTarget": "弓",
+   "afterRate": "25%",
+   "afterEffectShort": "攻撃 (コストx6.5) %上昇 / (武将のコストで効果が変化します)"
+  },
+  {
+   "slot": "B",
+   "skill": "鉄壁の備え",
+   "rank": "D",
+   "afterSkill": "城崩し",
+   "afterRank": "D",
+   "target": "全",
+   "rate": "40%",
+   "effectShort": "防御 15%上昇",
+   "afterTarget": "器",
+   "afterRate": "35%",
+   "afterEffectShort": "破壊 20%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "戦姫 六道",
+   "rank": "D",
+   "afterSkill": "砲陣 菖蒲",
+   "afterRank": "A",
+   "target": "弓砲",
+   "rate": "12%",
+   "effectShort": "防御 45%上昇",
+   "afterTarget": "砲器",
+   "afterRate": "40%",
+   "afterEffectShort": "防御 35%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "六道の矜持",
+   "rank": "D",
+   "afterSkill": "六道の矜持",
+   "afterRank": "D",
+   "target": "弓砲",
+   "rate": "20%",
+   "effectShort": "防御 24%上昇 / (自領以外の加勢で効果2倍)"
+  },
+  {
+   "slot": "S2",
+   "skill": "返り忠",
+   "rank": "D",
+   "afterSkill": "返り忠",
+   "afterRank": "D",
+   "target": "砲",
+   "rate": "25%",
+   "effectShort": "防御 25%上昇 / (合流攻撃防御時は効果2倍)"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3261 と skills/六道の矜持)およびixawiki(BushoCard/3261阿梅)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

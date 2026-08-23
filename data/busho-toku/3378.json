@@ -1,0 +1,106 @@
+{
+ "name": "前田利久",
+ "no": "3378",
+ "ch": null,
+ "cost": 3.0,
+ "troop": "馬器攻",
+ "sub": "",
+ "effect": "攻撃 64.8%上昇 / 合流攻撃時は必ずスキル発動",
+ "furigana": "まえだとしひさ",
+ "illustrator": "五浦マリ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 860,
+ "atkGrowth": 25.0,
+ "defBase": 820,
+ "defGrowth": 20.0,
+ "tacticsBase": 480.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2850,
+ "rankGrades": {
+  "yari": "C",
+  "yumi": "B",
+  "uma": "A",
+  "ki": "B"
+ },
+ "initialSkill": "慈雨の如く",
+ "skillDetail": "D/LV10 確率 17% 攻撃 64.8%上昇 / 合流攻撃時は必ずスキル発動/対象:馬器\n①攻撃 64.8%上昇 / 合流攻撃時は必ずスキル発動",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "馬器　確率 17% / 攻撃 64.8%上昇 / 合流攻撃時は必ずスキル発動"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "騎馬隊進撃",
+   "rank": "F",
+   "afterSkill": "騎馬隊襲撃",
+   "afterRank": "F",
+   "target": "馬",
+   "rate": "10%",
+   "effectShort": "攻撃 15%上昇",
+   "afterTarget": "馬",
+   "afterRate": "20%",
+   "afterEffectShort": "馬攻：10%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "再起ノ智勇",
+   "rank": "D",
+   "afterSkill": "武功感状",
+   "afterRank": "D",
+   "target": "槍馬器",
+   "rate": "32%",
+   "effectShort": "攻撃 (コストx12) %上昇 / (武将のコストで効果が変化します)",
+   "afterTarget": "槍馬",
+   "afterRate": "25%",
+   "afterEffectShort": "攻撃 50%上昇 / 武将ランクで効果が変化"
+  },
+  {
+   "slot": "C",
+   "skill": "慈雨の如く",
+   "rank": "D",
+   "afterSkill": "戦鬼紅刃",
+   "afterRank": "B",
+   "target": "馬器",
+   "rate": "17%",
+   "effectShort": "攻撃 64.8%上昇 / 合流攻撃時は必ずスキル発動",
+   "afterTarget": "槍馬器",
+   "afterRate": "32%",
+   "afterEffectShort": "攻撃 39%上昇 / 破壊 24%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "戦鬼紅刃",
+   "rank": "B",
+   "afterSkill": "鬼神刺",
+   "afterRank": "B",
+   "target": "槍馬器",
+   "rate": "32%",
+   "effectShort": "攻撃 39%上昇 / 破壊 24%上昇",
+   "afterTarget": "全",
+   "afterRate": "20%",
+   "afterEffectShort": "攻撃 (コスト×10) %上昇 / 武将コストによって効果が変化"
+  },
+  {
+   "slot": "S2",
+   "skill": "思慕超俗",
+   "rank": "B",
+   "afterSkill": "思慕超俗",
+   "afterRank": "B",
+   "target": "槍馬器",
+   "rate": "100%",
+   "effectShort": "攻撃 15%上昇 / 破壊 27%上昇 / 速度 32%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3378 と skills/慈雨の如く)およびixawiki(BushoCard/3378前田利久)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

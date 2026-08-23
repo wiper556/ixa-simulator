@@ -1,0 +1,106 @@
+{
+ "name": "堀直政",
+ "no": "3501",
+ "ch": null,
+ "cost": 3.0,
+ "troop": "槍弓砲攻",
+ "sub": "",
+ "effect": "攻撃 15%上昇 / 攻撃 15+(武将ランクx11)%上昇",
+ "furigana": "ほりなおまさ",
+ "illustrator": "tatsuya",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 880,
+ "atkGrowth": 27.0,
+ "defBase": 820,
+ "defGrowth": 24.0,
+ "tacticsBase": 470.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2970,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "B",
+  "uma": "C",
+  "ki": "B"
+ },
+ "initialSkill": "扇動鎮圧",
+ "skillDetail": "C/LV10 確率 42% 攻撃 15%上昇 / 攻撃 15+(武将ランクx11)%上昇/対象:槍弓砲\n①攻撃が15%上昇 / 攻撃 15+(武将ランクx11)%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍弓砲　確率 42% / 攻撃 15%上昇 / 攻撃 15+(武将ランクx11)%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "扇動鎮圧",
+   "rank": "C",
+   "afterSkill": "覇王ノ鬼神",
+   "afterRank": "B",
+   "target": "槍弓砲",
+   "rate": "42%",
+   "effectShort": "攻撃 15%上昇 / 攻撃 15+(武将ランクx11)%上昇",
+   "afterTarget": "槍馬砲",
+   "afterRate": "15%",
+   "afterEffectShort": "攻撃 91%上昇 / 相手軍の武将数が12以上だと必ずスキル発動"
+  },
+  {
+   "slot": "B",
+   "skill": "扇動鎮圧",
+   "rank": "C",
+   "afterSkill": "覇王ノ鬼神",
+   "afterRank": "B",
+   "target": "槍弓砲",
+   "rate": "42%",
+   "effectShort": "攻撃 15%上昇 / 攻撃 15+(武将ランクx11)%上昇",
+   "afterTarget": "槍馬砲",
+   "afterRate": "15%",
+   "afterEffectShort": "攻撃 91%上昇 / 相手軍の武将数が12以上だと必ずスキル発動"
+  },
+  {
+   "slot": "C",
+   "skill": "カムイトクイ",
+   "rank": "D",
+   "afterSkill": "火将ノ熊手",
+   "afterRank": "B",
+   "target": "槍弓砲",
+   "rate": "24%",
+   "effectShort": "攻撃 (コストx15) %上昇 / (武将のコストで効果が変化します)",
+   "afterTarget": "槍砲器",
+   "afterRate": "38%",
+   "afterEffectShort": "攻撃 ((1+ランク)xコストx1.7) %上昇 / 武将ランクとコストで効果が変化"
+  },
+  {
+   "slot": "S1",
+   "skill": "覇王ノ鬼神",
+   "rank": "B",
+   "afterSkill": "死生ノ宣告",
+   "afterRank": "B",
+   "target": "槍馬砲",
+   "rate": "15%",
+   "effectShort": "攻撃 91%上昇 / 相手軍の武将数が12以上だと必ずスキル発動",
+   "afterTarget": "槍弓馬",
+   "afterRate": "66%",
+   "afterEffectShort": "攻撃 66%上昇 / 卓越：追加確率15%で攻撃効果が1.5倍"
+  },
+  {
+   "slot": "S2",
+   "skill": "火将ノ熊手",
+   "rank": "B",
+   "afterSkill": "火将ノ熊手",
+   "afterRank": "B",
+   "target": "槍砲器",
+   "rate": "38%",
+   "effectShort": "攻撃 ((1+ランク)xコストx1.7) %上昇 / 武将ランクとコストで効果が変化"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3501 と skills/扇動鎮圧)およびixawiki(BushoCard/3501堀直政)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

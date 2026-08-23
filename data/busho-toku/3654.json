@@ -1,0 +1,97 @@
+{
+ "name": "ブロッケンジュニア",
+ "no": "3654",
+ "ch": null,
+ "cost": 3.0,
+ "troop": "槍砲器防",
+ "sub": "",
+ "effect": "防御 260%上昇 / 部隊コスト14以下で効果1.5倍",
+ "furigana": "ぶろっけんじゅにあ",
+ "illustrator": null,
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 850,
+ "atkGrowth": 26.0,
+ "defBase": 940,
+ "defGrowth": 34.0,
+ "tacticsBase": 450.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 3100,
+ "rankGrades": {
+  "yari": null,
+  "yumi": null,
+  "uma": null,
+  "ki": null
+ },
+ "initialSkill": "Ｂ・サンセット",
+ "skillDetail": "C/LV10 確率 60% 防御 260%上昇 / 部隊コスト14以下で効果1.5倍/対象:槍砲器\n①防御 260%上昇 / 部隊コスト14以下で効果1.5倍",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍砲器　確率 60% / 防御 260%上昇 / 部隊コスト14以下で効果1.5倍"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "斃秦",
+   "rank": "C",
+   "afterSkill": "斃秦",
+   "afterRank": "C",
+   "target": "槍砲器",
+   "rate": "55%",
+   "effectShort": "攻撃 250%上昇 / 防御 250%上昇 / 部隊コスト12以下で効果1.5倍"
+  },
+  {
+   "slot": "B",
+   "skill": "Ｂ・サンセット",
+   "rank": "C",
+   "afterSkill": "Ｂ・サンセット",
+   "afterRank": "C",
+   "target": "槍砲器",
+   "rate": "60%",
+   "effectShort": "防御 260%上昇 / 部隊コスト14以下で効果1.5倍"
+  },
+  {
+   "slot": "C",
+   "skill": "Ｂ・サンセット",
+   "rank": "C",
+   "afterSkill": "Ｂ・サンセット",
+   "afterRank": "C",
+   "target": "槍砲器",
+   "rate": "60%",
+   "effectShort": "防御 260%上昇 / 部隊コスト14以下で効果1.5倍"
+  },
+  {
+   "slot": "S1",
+   "skill": "Ｂ・サンセット",
+   "rank": "C",
+   "afterSkill": "Ｂ・サンセット",
+   "afterRank": "C",
+   "target": "槍砲器",
+   "rate": "60%",
+   "effectShort": "防御 260%上昇 / 部隊コスト14以下で効果1.5倍"
+  },
+  {
+   "slot": "S2",
+   "skill": "籠城の妙技",
+   "rank": "A",
+   "afterSkill": "三千世界神将",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "防御 50%上昇(卓越:追加確率15%で防御効果が3倍)",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "防御 120%上昇(本丸防御陣形時コスト消費-1)"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3654 と skills/Ｂ・サンセット)およびixawiki(BushoCard/3654ブロッケンジュニア)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

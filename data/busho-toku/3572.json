@@ -1,0 +1,110 @@
+{
+ "name": "黒田利高",
+ "no": "3572",
+ "ch": null,
+ "cost": 3.0,
+ "troop": "槍弓砲攻",
+ "sub": "",
+ "effect": "攻撃 70%上昇 / 破壊 50%上昇 / (合流攻撃時、攻撃効果4倍)",
+ "furigana": "くろだとしたか",
+ "illustrator": "じんてつ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 910,
+ "atkGrowth": 32.0,
+ "defBase": 880,
+ "defGrowth": 28.0,
+ "tacticsBase": 470.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3070,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "B",
+  "uma": "C",
+  "ki": "B"
+ },
+ "initialSkill": "八虎筆頭",
+ "skillDetail": "C/LV10 確率 45% 攻撃 70%上昇 / 破壊 50%上昇 / (合流攻撃時攻撃効果4倍)/対象:槍弓砲\n①攻撃 70%上昇 / 破壊 50%上昇 / (合流攻撃時攻撃効果4倍)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍弓砲　確率 45% / 攻撃 70%上昇 / 破壊 50%上昇 / (合流攻撃時、攻撃効果4倍)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "八虎筆頭",
+   "rank": "C",
+   "afterSkill": "一千烈刃",
+   "afterRank": "C",
+   "target": "槍弓砲",
+   "rate": "45%",
+   "effectShort": "攻撃 70%上昇 / 破壊 50%上昇 / (合流攻撃時、攻撃効果4倍)",
+   "afterTarget": "槍弓馬",
+   "afterRate": "56%",
+   "afterEffectShort": "攻撃 35%上昇 破壊 50%上昇 / (合流攻撃時、攻撃効果3倍)"
+  },
+  {
+   "slot": "B",
+   "skill": "八虎筆頭",
+   "rank": "C",
+   "afterSkill": "一千烈刃",
+   "afterRank": "C",
+   "target": "槍弓砲",
+   "rate": "45%",
+   "effectShort": "攻撃 70%上昇 / 破壊 50%上昇 / (合流攻撃時、攻撃効果4倍)",
+   "afterTarget": "槍弓馬",
+   "afterRate": "56%",
+   "afterEffectShort": "攻撃 35%上昇 破壊 50%上昇 / (合流攻撃時、攻撃効果3倍)"
+  },
+  {
+   "slot": "C",
+   "skill": "八虎筆頭",
+   "rank": "C",
+   "afterSkill": "一千烈刃",
+   "afterRank": "C",
+   "target": "槍弓砲",
+   "rate": "45%",
+   "effectShort": "攻撃 70%上昇 / 破壊 50%上昇 / (合流攻撃時、攻撃効果4倍)",
+   "afterTarget": "槍弓馬",
+   "afterRate": "56%",
+   "afterEffectShort": "攻撃 35%上昇 破壊 50%上昇 / (合流攻撃時、攻撃効果3倍)"
+  },
+  {
+   "slot": "S1",
+   "skill": "一千烈刃",
+   "rank": "C",
+   "afterSkill": "悪因ノ深域",
+   "afterRank": "C",
+   "target": "槍弓馬",
+   "rate": "56%",
+   "effectShort": "攻撃 35%上昇 破壊 50%上昇 / (合流攻撃時、攻撃効果3倍)",
+   "afterTarget": "全",
+   "afterRate": "54%",
+   "afterEffectShort": "攻撃 85%上昇 / 資源獲得率: 10% / 破壊した耐久値に応じて資源獲得"
+  },
+  {
+   "slot": "S2",
+   "skill": "失意ノ千羽鶴",
+   "rank": "C",
+   "afterSkill": "覇・天懸乱龍",
+   "afterRank": "B",
+   "target": "槍弓鉄",
+   "rate": "45%",
+   "effectShort": "攻撃 24%上昇 / 破壊 40%上昇 / (合流攻撃時、攻撃効果4倍)",
+   "afterTarget": "槍弓砲器",
+   "afterRate": "55%",
+   "afterEffectShort": "攻撃 60%上昇 / 卓越：追加確率30%で攻撃効果が1.5倍"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3572 と skills/八虎筆頭)およびixawiki(BushoCard/3572黒田利高)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。",
+  "2026-08-23: skillDetail に読点が混入していた(F-01違反)。ixanary の原文が「配置時、防御効果が」のように読点を使うのをそのまま取り込んでいた。読点を外した。"
+ ]
+}

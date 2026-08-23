@@ -1,0 +1,106 @@
+{
+ "name": "武田義信",
+ "no": "3556",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "槍馬砲攻",
+ "sub": "",
+ "effect": "攻撃 240%上昇 確率：+40% / 速度 50%上昇",
+ "furigana": "たけだよしのぶ",
+ "illustrator": "セツ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 890,
+ "atkGrowth": 31.0,
+ "defBase": 850,
+ "defGrowth": 26.0,
+ "tacticsBase": 480.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2660,
+ "rankGrades": {
+  "yari": "C",
+  "yumi": "B",
+  "uma": "A",
+  "ki": "B"
+ },
+ "initialSkill": "虎嗣敢闘",
+ "skillDetail": "C/LV10 確率 40% 攻撃 240%上昇 確率：+40% / 速度 50%上昇/対象:槍馬砲\n①攻撃が240%上昇 確率：+40% / 速度 50%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍馬砲　確率 40% / 攻撃 240%上昇 確率：+40% / 速度 50%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "虎嗣敢闘",
+   "rank": "C",
+   "afterSkill": "不滅ノ鬼美濃",
+   "afterRank": "A",
+   "target": "槍馬砲",
+   "rate": "40%",
+   "effectShort": "攻撃 240%上昇 確率：+40% / 速度 50%上昇",
+   "afterTarget": "弓馬砲",
+   "afterRate": "70%",
+   "afterEffectShort": "攻撃 100%上昇 確率：+70% / 速度 70%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "虎嗣敢闘",
+   "rank": "C",
+   "afterSkill": "不滅ノ鬼美濃",
+   "afterRank": "A",
+   "target": "槍馬砲",
+   "rate": "40%",
+   "effectShort": "攻撃 240%上昇 確率：+40% / 速度 50%上昇",
+   "afterTarget": "弓馬砲",
+   "afterRate": "70%",
+   "afterEffectShort": "攻撃 100%上昇 確率：+70% / 速度 70%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "虎嗣敢闘",
+   "rank": "C",
+   "afterSkill": "不滅ノ鬼美濃",
+   "afterRank": "A",
+   "target": "槍馬砲",
+   "rate": "40%",
+   "effectShort": "攻撃 240%上昇 確率：+40% / 速度 50%上昇",
+   "afterTarget": "弓馬砲",
+   "afterRate": "70%",
+   "afterEffectShort": "攻撃 100%上昇 確率：+70% / 速度 70%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "不滅ノ鬼美濃",
+   "rank": "A",
+   "afterSkill": "不滅ノ鬼神",
+   "afterRank": "S",
+   "target": "弓馬砲",
+   "rate": "70%",
+   "effectShort": "攻撃 100%上昇 確率：+70% / 速度 70%上昇",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "全　攻撃 100%上昇(確率70%)+速度 70%上昇(確率100%)(TRなし)"
+  },
+  {
+   "slot": "S2",
+   "skill": "古ノ美将",
+   "rank": "B",
+   "afterSkill": "古ノ美将",
+   "afterRank": "B",
+   "target": "槍弓焙",
+   "rate": "47%",
+   "effectShort": "攻撃 64%上昇 確率：+47% / 速度 40%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3556 と skills/虎嗣敢闘)およびixawiki(BushoCard/3556武田義信)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

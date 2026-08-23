@@ -1,0 +1,109 @@
+{
+ "name": "明智光秀",
+ "no": "3570",
+ "ch": null,
+ "cost": 2.0,
+ "troop": "槍馬器攻",
+ "sub": "",
+ "effect": "攻撃 250%上昇 防御 250%上昇",
+ "furigana": "あけちみつひで",
+ "illustrator": null,
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 880,
+ "atkGrowth": 29.0,
+ "defBase": 880,
+ "defGrowth": 29.0,
+ "tacticsBase": 480.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2390,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "C",
+  "uma": "B",
+  "ki": "A"
+ },
+ "initialSkill": "あの虚気を殺す",
+ "skillDetail": "C/LV10 確率 50% 攻撃 250%上昇 防御 250%上昇/対象:槍馬器\n①攻撃が250%上昇 防御 250%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍馬器　確率 50% / 攻撃 250%上昇 防御 250%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "あの虚気を殺す",
+   "rank": "C",
+   "afterSkill": "虎切刀",
+   "afterRank": "C",
+   "target": "槍馬器",
+   "rate": "50%",
+   "effectShort": "攻撃 250%上昇 防御 250%上昇",
+   "afterTarget": "全",
+   "afterRate": "50%",
+   "afterEffectShort": "攻撃 66%上昇 / 防御 66%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "あの虚気を殺す",
+   "rank": "C",
+   "afterSkill": "虎切刀",
+   "afterRank": "C",
+   "target": "槍馬器",
+   "rate": "50%",
+   "effectShort": "攻撃 250%上昇 防御 250%上昇",
+   "afterTarget": "全",
+   "afterRate": "50%",
+   "afterEffectShort": "攻撃 66%上昇 / 防御 66%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "あの虚気を殺す",
+   "rank": "C",
+   "afterSkill": "虎切刀",
+   "afterRank": "C",
+   "target": "槍馬器",
+   "rate": "50%",
+   "effectShort": "攻撃 250%上昇 防御 250%上昇",
+   "afterTarget": "全",
+   "afterRate": "50%",
+   "afterEffectShort": "攻撃 66%上昇 / 防御 66%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "虎切刀",
+   "rank": "C",
+   "afterSkill": "鬼滅刺",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "50%",
+   "effectShort": "攻撃 66%上昇 / 防御 66%上昇",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 70%上昇 防御 70%上昇(卓越確率+25%加算・模倣不可)"
+  },
+  {
+   "slot": "S2",
+   "skill": "争鶴ノ囀り",
+   "rank": "C",
+   "afterSkill": "覇・一期一振",
+   "afterRank": "A",
+   "target": "槍弓器",
+   "rate": "55%",
+   "effectShort": "攻撃 250%上昇 防御 250%上昇",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 85%上昇 防御 85%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3570 と skills/あの虚気を殺す)およびixawiki(BushoCard/3570明智光秀)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

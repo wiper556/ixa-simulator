@@ -1,0 +1,103 @@
+{
+ "name": "丸目長恵",
+ "no": "3399",
+ "ch": null,
+ "cost": 2.0,
+ "troop": "槍器攻",
+ "sub": "",
+ "effect": "攻撃 49%上昇 / 卓越：追加確率15%で攻撃効果が1.5倍",
+ "furigana": "まるめながよし",
+ "illustrator": "COGA",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 900,
+ "atkGrowth": 49.0,
+ "defBase": 880,
+ "defGrowth": 35.0,
+ "tacticsBase": 460.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2800,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "B",
+  "uma": "C",
+  "ki": "B"
+ },
+ "initialSkill": "タイ捨流",
+ "skillDetail": "D/LV10 確率 15% 攻撃 49%上昇 / 卓越：追加確率15%で攻撃効果が1.5倍/対象:槍器\n①攻撃 49%上昇 / 卓越：追加確率15%で攻撃効果が1.5倍",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍器　確率 15% / 攻撃 49%上昇 / 卓越：追加確率15%で攻撃効果が1.5倍"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "槍隊急襲",
+   "rank": "F",
+   "afterSkill": "槍隊守備",
+   "afterRank": "F",
+   "target": "槍",
+   "rate": "16%",
+   "effectShort": "槍攻：7.5%上昇 / (武将のコストで効果が変化します)",
+   "afterTarget": "槍",
+   "afterRate": "16%",
+   "afterEffectShort": "防御 (コストx5) %上昇 / (武将のコストで効果が変化します)"
+  },
+  {
+   "slot": "B",
+   "skill": "再起ノ智勇",
+   "rank": "D",
+   "afterSkill": "武功感状",
+   "afterRank": "D",
+   "target": "槍馬器",
+   "rate": "32%",
+   "effectShort": "攻撃 (コストx12) %上昇 / (武将のコストで効果が変化します)",
+   "afterTarget": "槍馬",
+   "afterRate": "25%",
+   "afterEffectShort": "攻撃 50%上昇 / 武将ランクで効果が変化"
+  },
+  {
+   "slot": "C",
+   "skill": "タイ捨流",
+   "rank": "D",
+   "afterSkill": "烈侵滅国",
+   "afterRank": "B",
+   "target": "槍器",
+   "rate": "15%",
+   "effectShort": "攻撃 49%上昇 / 卓越：追加確率15%で攻撃効果が1.5倍",
+   "afterTarget": "槍弓器",
+   "afterRate": "25%",
+   "afterEffectShort": "攻撃防御 ((1+武将ランク)×コストx2) %上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "烈侵滅国",
+   "rank": "B",
+   "afterSkill": "烈侵滅国",
+   "afterRank": "B",
+   "target": "槍弓器",
+   "rate": "25%",
+   "effectShort": "攻撃防御 ((1+武将ランク)×コストx2) %上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "戦鬼侵軍",
+   "rank": "B",
+   "afterSkill": "戦鬼侵軍",
+   "afterRank": "B",
+   "target": "槍砲器",
+   "rate": "15%",
+   "effectShort": "攻撃 54%上昇 / 合流攻撃時は必ずスキル発動"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3399 と skills/タイ捨流)およびixawiki(BushoCard/3399丸目長恵)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

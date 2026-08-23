@@ -1,0 +1,103 @@
+{
+ "name": "遠藤基信",
+ "no": "3273",
+ "ch": null,
+ "cost": 1.5,
+ "troop": "槍砲器",
+ "sub": "",
+ "effect": "攻撃 8%上昇 / 破壊 19%上昇 / 速度 24%上昇",
+ "furigana": "えんどうもとのぶ",
+ "illustrator": "紺藤ココン",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 680,
+ "atkGrowth": 19.0,
+ "defBase": 650,
+ "defGrowth": 17.0,
+ "tacticsBase": 435.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 1880,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "B",
+  "uma": "C",
+  "ki": "A"
+ },
+ "initialSkill": "追い腹",
+ "skillDetail": "D/LV10 確率 100% 攻撃 8%上昇 / 破壊 19%上昇 / 速度 24%上昇/対象:槍砲器\n①攻撃が8%上昇 / 破壊 19%上昇 / 速度 24%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍砲器　確率 100% / 攻撃 8%上昇 / 破壊 19%上昇 / 速度 24%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "兵器布陣",
+   "rank": "E",
+   "afterSkill": "城砕き",
+   "afterRank": "E",
+   "target": "器",
+   "rate": "15%",
+   "effectShort": "防御 20%上昇",
+   "afterTarget": "器",
+   "afterRate": "15%",
+   "afterEffectShort": "破壊 20%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "兵器運用術",
+   "rank": "E",
+   "afterSkill": "兵器突撃",
+   "afterRank": "F",
+   "target": "砲器",
+   "rate": "100%",
+   "effectShort": "速度 25%上昇",
+   "afterTarget": "器",
+   "afterRate": "15%",
+   "afterEffectShort": "攻撃 20%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "軸道理算",
+   "rank": "D",
+   "afterSkill": "鏡花水月",
+   "afterRank": "D",
+   "target": "槍砲器",
+   "rate": "100%",
+   "effectShort": "攻撃 10%上昇 / 速度 23%上昇",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 4%上昇 / 速度 38%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "追い腹",
+   "rank": "D",
+   "afterSkill": "追い腹",
+   "afterRank": "D",
+   "target": "槍砲器",
+   "rate": "100%",
+   "effectShort": "攻撃 8%上昇 / 破壊 19%上昇 / 速度 24%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "大動員",
+   "rank": "B",
+   "afterSkill": "大動員",
+   "afterRank": "B",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "攻撃 8%上昇 / 速度 24%上昇 / 部隊内で最も速い兵士速度で移動"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3273 と skills/追い腹)およびixawiki(BushoCard/3273遠藤基信)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

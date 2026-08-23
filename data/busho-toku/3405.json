@@ -1,0 +1,109 @@
+{
+ "name": "安宅冬康",
+ "no": "3405",
+ "ch": null,
+ "cost": 2.0,
+ "troop": "砲器攻",
+ "sub": "",
+ "effect": "攻撃 48%上昇",
+ "furigana": "あたぎふゆやす",
+ "illustrator": "士基軽太",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 870,
+ "atkGrowth": 27.0,
+ "defBase": 820,
+ "defGrowth": 23.0,
+ "tacticsBase": 470.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2300,
+ "rankGrades": {
+  "yari": "C",
+  "yumi": "B",
+  "uma": "B",
+  "ki": "A"
+ },
+ "initialSkill": "巨船操艦ノ妙",
+ "skillDetail": "D/LV10 確率 100% 攻撃 48%上昇/対象:砲器\n①攻撃が48%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "砲器　確率 100% / 攻撃 48%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "巨船操艦ノ妙",
+   "rank": "D",
+   "afterSkill": "衝角",
+   "afterRank": "C",
+   "target": "砲器",
+   "rate": "100%",
+   "effectShort": "攻撃 48%上昇",
+   "afterTarget": "砲器",
+   "afterRate": "36%",
+   "afterEffectShort": "攻撃 36%上昇 / 破壊 50%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "鉄砲隊突撃",
+   "rank": "F",
+   "afterSkill": "鉄砲隊奇襲",
+   "afterRank": "E",
+   "target": "砲",
+   "rate": "12%",
+   "effectShort": "攻撃 20%上昇",
+   "afterTarget": "砲",
+   "afterRate": "25%",
+   "afterEffectShort": "攻撃 12%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "兵器突撃",
+   "rank": "F",
+   "afterSkill": "迅速行軍",
+   "afterRank": "E",
+   "target": "器",
+   "rate": "15%",
+   "effectShort": "攻撃 20%上昇",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "速度 20%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "衝角",
+   "rank": "C",
+   "afterSkill": "武装商船",
+   "afterRank": "A",
+   "target": "砲器",
+   "rate": "36%",
+   "effectShort": "攻撃 36%上昇 / 破壊 50%上昇",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "部隊内全武将が持つ全スキルに「器」対象を追加する(兵科対象スキル限定・模倣不可)"
+  },
+  {
+   "slot": "S2",
+   "skill": "船団爆雷",
+   "rank": "B",
+   "afterSkill": "神速",
+   "afterRank": "A",
+   "target": "弓砲器",
+   "rate": "25%",
+   "effectShort": "攻撃 30%上昇 / 破壊 10%上昇",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "速度 55%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3405 と skills/巨船操艦ノ妙)およびixawiki(BushoCard/3405安宅冬康)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

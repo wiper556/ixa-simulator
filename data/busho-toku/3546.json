@@ -1,0 +1,110 @@
+{
+ "name": "三好義継",
+ "no": "3546",
+ "ch": null,
+ "cost": 3.0,
+ "troop": "全防",
+ "sub": "",
+ "effect": "防御 87%上昇 / 武将HPが70以下のとき、防御効果を1.5倍する",
+ "furigana": "みよしよしつぐ",
+ "illustrator": "白藤 与一",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 850,
+ "atkGrowth": 28.0,
+ "defBase": 880,
+ "defGrowth": 31.0,
+ "tacticsBase": 460.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3040,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "B",
+  "uma": "B",
+  "ki": "B"
+ },
+ "initialSkill": "勇心発露",
+ "skillDetail": "C/LV10 確率 60% 防御 87%上昇 / 武将HPが70以下のとき防御効果を1.5倍する/対象:全\n①防御 87%上昇 / 武将HPが70以下のとき防御効果を1.5倍する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 60% / 防御 87%上昇 / 武将HPが70以下のとき、防御効果を1.5倍する"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "勇心発露",
+   "rank": "C",
+   "afterSkill": "神通力",
+   "afterRank": "C",
+   "target": "全",
+   "rate": "60%",
+   "effectShort": "防御 87%上昇 / 武将HPが70以下のとき、防御効果を1.5倍する",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "防御 74%上昇 / このスキルを所持する武将の全スキルの卓越確率に15%を加算する(模倣不可)"
+  },
+  {
+   "slot": "B",
+   "skill": "勇心発露",
+   "rank": "C",
+   "afterSkill": "神通力",
+   "afterRank": "C",
+   "target": "全",
+   "rate": "60%",
+   "effectShort": "防御 87%上昇 / 武将HPが70以下のとき、防御効果を1.5倍する",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "防御 74%上昇 / このスキルを所持する武将の全スキルの卓越確率に15%を加算する(模倣不可)"
+  },
+  {
+   "slot": "C",
+   "skill": "名人ノ系譜",
+   "rank": "C",
+   "afterSkill": "十字飛車",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "攻撃 92%上昇 防御 92%上昇",
+   "afterTarget": "槍砲器",
+   "afterRate": "42%",
+   "afterEffectShort": "攻撃 77%上昇 / 防御 77%上昇 / 破壊 50%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "神通力",
+   "rank": "C",
+   "afterSkill": "曼珠沙華",
+   "afterRank": "D",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "防御 74%上昇 / このスキルを所持する武将の全スキルの卓越確率に15%を加算する(模倣不可)",
+   "afterTarget": "全",
+   "afterRate": "40%",
+   "afterEffectShort": "攻撃 59%上昇 防御 59%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "虎切刀",
+   "rank": "C",
+   "afterSkill": "鬼滅刺",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "50%",
+   "effectShort": "攻撃 66%上昇 / 防御 66%上昇",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 70%上昇 防御 70%上昇(卓越確率+25%加算・模倣不可)"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3546 と skills/勇心発露)およびixawiki(BushoCard/3546三好義継)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。",
+  "2026-08-23: skillDetail に読点が混入していた(F-01違反)。ixanary の原文が「配置時、防御効果が」のように読点を使うのをそのまま取り込んでいた。読点を外した。"
+ ]
+}

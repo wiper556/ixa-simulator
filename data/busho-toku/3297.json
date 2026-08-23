@@ -1,0 +1,100 @@
+{
+ "name": "井伊直親",
+ "no": "3297",
+ "ch": null,
+ "cost": 1.5,
+ "troop": "弓器防",
+ "sub": "",
+ "effect": "防御 27%上昇 / (攻撃部隊に兵器兵科がいれば効果2倍)",
+ "furigana": "いいなおちか",
+ "illustrator": "BANAMONS＊",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 800,
+ "atkGrowth": 20.0,
+ "defBase": 840,
+ "defGrowth": 22.0,
+ "tacticsBase": 450.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 1830,
+ "rankGrades": {
+  "yari": "C",
+  "yumi": "A",
+  "uma": "B",
+  "ki": "A"
+ },
+ "initialSkill": "蒼刃ノ輔曳",
+ "skillDetail": "D/LV10 確率 35% 防御 27%上昇 / (攻撃部隊に兵器兵科がいれば効果2倍)/対象:弓器\n①防御 27%上昇 / (攻撃部隊に兵器兵科がいれば効果2倍)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓器　確率 35% / 防御 27%上昇 / (攻撃部隊に兵器兵科がいれば効果2倍)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "弓隊守護",
+   "rank": "E",
+   "afterSkill": "弓隊挟撃",
+   "afterRank": "E",
+   "target": "弓",
+   "rate": "25%",
+   "effectShort": "弓防：13%上昇 / (武将のコストで効果が変化します)",
+   "afterTarget": "弓",
+   "afterRate": "25%",
+   "afterEffectShort": "攻撃 (コストx6.5) %上昇 / (武将のコストで効果が変化します)"
+  },
+  {
+   "slot": "B",
+   "skill": "夜叉の構え",
+   "rank": "E",
+   "afterSkill": "夜叉の構え",
+   "afterRank": "E",
+   "target": "槍弓器",
+   "rate": "20%",
+   "effectShort": "防御 15%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "矢雨備え",
+   "rank": "D",
+   "afterSkill": "三段撃 神速",
+   "afterRank": "C",
+   "target": "弓器",
+   "rate": "30%",
+   "effectShort": "防御 25%上昇",
+   "afterTarget": "砲",
+   "afterRate": "50%",
+   "afterEffectShort": "攻撃 12%上昇 / 破壊 15%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "蒼刃ノ輔曳",
+   "rank": "D",
+   "afterSkill": "蒼刃ノ輔曳",
+   "afterRank": "D",
+   "target": "弓器",
+   "rate": "35%",
+   "effectShort": "防御 27%上昇 / (攻撃部隊に兵器兵科がいれば効果2倍)"
+  },
+  {
+   "slot": "S2",
+   "skill": "捨て奸",
+   "rank": "B",
+   "afterSkill": "捨て奸",
+   "afterRank": "B",
+   "target": "弓砲器",
+   "rate": "15%",
+   "effectShort": "防御 37%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3297 と skills/蒼刃ノ輔曳)およびixawiki(BushoCard/3297井伊直親)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

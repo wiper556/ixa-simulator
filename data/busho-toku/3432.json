@@ -1,0 +1,103 @@
+{
+ "name": "根岸兎角",
+ "no": "3432",
+ "ch": null,
+ "cost": 2.0,
+ "troop": "器鉄防",
+ "sub": "",
+ "effect": "防御 70%上昇",
+ "furigana": "ねぎしとかく",
+ "illustrator": "ホマ蔵",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 840,
+ "atkGrowth": 26.0,
+ "defBase": 880,
+ "defGrowth": 27.0,
+ "tacticsBase": 460.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2220,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "B",
+  "uma": "C",
+  "ki": "B"
+ },
+ "initialSkill": "真：微塵流",
+ "skillDetail": "D/LV10 確率 18% 防御 70%上昇/対象:器鉄\n①防御が70%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "器鉄　確率 18% / 防御 70%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "真：微塵流",
+   "rank": "D",
+   "afterSkill": "仁将無双",
+   "afterRank": "B",
+   "target": "器鉄",
+   "rate": "18%",
+   "effectShort": "防御 70%上昇",
+   "afterTarget": "槍馬砲",
+   "afterRate": "17%",
+   "afterEffectShort": "攻撃防御 ((1+ランク)xコストx2.1) %上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "槍隊守備",
+   "rank": "F",
+   "afterSkill": "槍隊急襲",
+   "afterRank": "F",
+   "target": "槍",
+   "rate": "16%",
+   "effectShort": "防御 (コストx5) %上昇 / (武将のコストで効果が変化します)",
+   "afterTarget": "槍",
+   "afterRate": "16%",
+   "afterEffectShort": "槍攻：7.5%上昇 / (武将のコストで効果が変化します)"
+  },
+  {
+   "slot": "C",
+   "skill": "大金星",
+   "rank": "D",
+   "afterSkill": "大金星",
+   "afterRank": "D",
+   "target": "槍砲",
+   "rate": "1%",
+   "effectShort": "防御 60%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "仁将無双",
+   "rank": "B",
+   "afterSkill": "仁将無双",
+   "afterRank": "B",
+   "target": "槍馬砲",
+   "rate": "17%",
+   "effectShort": "攻撃防御 ((1+ランク)xコストx2.1) %上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "美意延年",
+   "rank": "D",
+   "afterSkill": "突貫破城",
+   "afterRank": "D",
+   "target": "槍砲",
+   "rate": "34%",
+   "effectShort": "攻撃 42%上昇 / 防御 42%上昇",
+   "afterTarget": "砲器",
+   "afterRate": "16%",
+   "afterEffectShort": "攻撃 40%上昇 / 破壊 18%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3432 と skills/真：微塵流)およびixawiki(BushoCard/3432根岸兎角)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

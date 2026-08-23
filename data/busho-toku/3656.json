@@ -1,0 +1,100 @@
+{
+ "name": "ラーメンマン",
+ "no": "3656",
+ "ch": null,
+ "cost": 3.0,
+ "troop": "槍砲器攻",
+ "sub": "",
+ "effect": "飛翔6 / 攻撃 365%上昇 防御 365%上昇",
+ "furigana": "らーめんまん",
+ "illustrator": null,
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 920,
+ "atkGrowth": 31.0,
+ "defBase": 920,
+ "defGrowth": 31.0,
+ "tacticsBase": 460.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 3090,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "B",
+  "uma": "C",
+  "ki": "B"
+ },
+ "initialSkill": "キャメルクラッチ",
+ "skillDetail": "C/LV10 確率 40% 飛翔6 / 攻撃 365%上昇 防御 365%上昇/対象:槍砲器\n①飛翔6 / 攻撃 365%上昇 防御 365%上昇",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍砲器　確率 40% / 飛翔6 / 攻撃 365%上昇 防御 365%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "一揆討伐",
+   "rank": "C",
+   "afterSkill": "義士ノ覚悟",
+   "afterRank": "C",
+   "target": "弓砲器",
+   "rate": "60%",
+   "effectShort": "攻撃 345%上昇 防御 345%上昇",
+   "afterTarget": "槍砲器",
+   "afterRate": "65%",
+   "afterEffectShort": "攻撃 310%上昇 防御 310%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "キャメルクラッチ",
+   "rank": "C",
+   "afterSkill": "キャメルクラッチ",
+   "afterRank": "C",
+   "target": "槍砲器",
+   "rate": "40%",
+   "effectShort": "飛翔6 / 攻撃 365%上昇 防御 365%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "キャメルクラッチ",
+   "rank": "C",
+   "afterSkill": "キャメルクラッチ",
+   "afterRank": "C",
+   "target": "槍砲器",
+   "rate": "40%",
+   "effectShort": "飛翔6 / 攻撃 365%上昇 防御 365%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "キャメルクラッチ",
+   "rank": "C",
+   "afterSkill": "キャメルクラッチ",
+   "afterRank": "C",
+   "target": "槍砲器",
+   "rate": "40%",
+   "effectShort": "飛翔6 / 攻撃 365%上昇 防御 365%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "虎切刀",
+   "rank": "C",
+   "afterSkill": "鬼滅刺",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "50%",
+   "effectShort": "攻撃 66%上昇 / 防御 66%上昇",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 70%上昇 防御 70%上昇(卓越確率+25%加算・模倣不可)"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3656 と skills/キャメルクラッチ)およびixawiki(BushoCard/3656ラーメンマン)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

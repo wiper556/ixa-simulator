@@ -1,0 +1,110 @@
+{
+ "name": "酒井忠勝",
+ "no": "3548",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "馬器騎防",
+ "sub": "",
+ "effect": "防御 93%上昇 確率：+52% / 速度 33%上昇 確率：+100% / (加勢出陣時は速度効果3倍)",
+ "furigana": "さかいただかつ",
+ "illustrator": "たわわ実",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 850,
+ "atkGrowth": 25.0,
+ "defBase": 880,
+ "defGrowth": 28.0,
+ "tacticsBase": 470.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2650,
+ "rankGrades": {
+  "yari": "C",
+  "yumi": "B",
+  "uma": "B",
+  "ki": "A"
+ },
+ "initialSkill": "柳営ノ上善",
+ "skillDetail": "C/LV10 確率 52% 防御 93%上昇 確率：+52% / 速度 33%上昇 確率：+100% / (加勢出陣時は速度効果3倍)/対象:馬器騎\n①防御 93%上昇 確率：+52% / 速度 33%上昇 確率：+100% / (加勢出陣時は速度効果3倍)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "馬器騎　確率 52% / 防御 93%上昇 確率：+52% / 速度 33%上昇 確率：+100% / (加勢出陣時は速度効果3倍)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "柳営ノ上善",
+   "rank": "C",
+   "afterSkill": "戦陣 勝鬨",
+   "afterRank": "A",
+   "target": "馬器騎",
+   "rate": "52%",
+   "effectShort": "防御 93%上昇 確率：+52% / 速度 33%上昇 確率：+100% / (加勢出陣時は速度効果3倍)",
+   "afterTarget": "全",
+   "afterRate": "35%/100%",
+   "afterEffectShort": "攻撃 77%上昇(確率35%)+防御 77%上昇(確率35%)+速度 40%上昇(確率100%)"
+  },
+  {
+   "slot": "B",
+   "skill": "柳営ノ上善",
+   "rank": "C",
+   "afterSkill": "戦陣 勝鬨",
+   "afterRank": "A",
+   "target": "馬器騎",
+   "rate": "52%",
+   "effectShort": "防御 93%上昇 確率：+52% / 速度 33%上昇 確率：+100% / (加勢出陣時は速度効果3倍)",
+   "afterTarget": "全",
+   "afterRate": "35%/100%",
+   "afterEffectShort": "攻撃 77%上昇(確率35%)+防御 77%上昇(確率35%)+速度 40%上昇(確率100%)"
+  },
+  {
+   "slot": "C",
+   "skill": "流将天願",
+   "rank": "C",
+   "afterSkill": "戦場妙技",
+   "afterRank": "B",
+   "target": "弓馬器",
+   "rate": "52%",
+   "effectShort": "防御 88%上昇 確率：+52% / 速度 33%上昇 確率：+100%(加勢出陣時は速度効果3倍)",
+   "afterTarget": "全",
+   "afterRate": "32%",
+   "afterEffectShort": "攻撃 72%上昇+防御 72%上昇+破壊 20%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "戦陣 勝鬨",
+   "rank": "A",
+   "afterSkill": "天岩戸ノ神域",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "35%/100%",
+   "effectShort": "攻撃 77%上昇(確率35%)+防御 77%上昇(確率35%)+速度 40%上昇(確率100%)",
+   "afterTarget": "全",
+   "afterRate": "70%",
+   "afterEffectShort": "攻撃 2.8%×防御参加武将数(280人)=784.0%"
+  },
+  {
+   "slot": "S2",
+   "skill": "千人塚",
+   "rank": "C",
+   "afterSkill": "極楽護法",
+   "afterRank": "B",
+   "target": "馬器騎",
+   "rate": "32%",
+   "effectShort": "防御 66%上昇 / (自領以外の加勢で効果1.5倍)",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 60%上昇 防御 60%上昇 / 卓越：追加確率50%で攻防効果が1.5倍"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3548 と skills/柳営ノ上善)およびixawiki(BushoCard/3548酒井忠勝)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。",
+  "2026-08-23: 合成候補の effectShort/afterEffectShort の先頭に「効果 」や確率が付いていた(A-4-15 の接頭辞)。ixanary の表の列見出しを一緒に拾っていたもので、外した。"
+ ]
+}

@@ -1,0 +1,109 @@
+{
+ "name": "浅野長晟",
+ "no": "3182",
+ "ch": null,
+ "cost": 3.0,
+ "troop": "槍馬攻",
+ "sub": "",
+ "effect": "攻撃 25%上昇 確率：+30% / 速度 15%上昇",
+ "furigana": "あさのながあきら",
+ "illustrator": "小森ニコ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 700,
+ "atkGrowth": 18.0,
+ "defBase": 520,
+ "defGrowth": 16.0,
+ "tacticsBase": 380.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2680,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "B",
+  "uma": "A",
+  "ki": "C"
+ },
+ "initialSkill": "鷹揚武人",
+ "skillDetail": "C/LV10 確率 30% 攻撃 25%上昇 確率：+30% / 速度 15%上昇/対象:槍馬\n①攻撃が25%上昇 確率：+30% / 速度 15%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍馬　確率 30% / 攻撃 25%上昇 確率：+30% / 速度 15%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "槍馬鱗撃",
+   "rank": "C",
+   "afterSkill": "槍陣の極み",
+   "afterRank": "B",
+   "target": "槍馬",
+   "rate": "35%",
+   "effectShort": "攻撃 20%上昇",
+   "afterTarget": "槍",
+   "afterRate": "30%",
+   "afterEffectShort": "防御 30%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "馬砲方陣",
+   "rank": "C",
+   "afterSkill": "騎突 金剛",
+   "afterRank": "C",
+   "target": "馬砲",
+   "rate": "40%",
+   "effectShort": "防御 20%上昇",
+   "afterTarget": "馬",
+   "afterRate": "25%",
+   "afterEffectShort": "攻撃 25%上昇 / 破壊 5%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "槍撃 修羅",
+   "rank": "C",
+   "afterSkill": "剣豪将軍",
+   "afterRank": "B",
+   "target": "槍",
+   "rate": "25%",
+   "effectShort": "攻撃 25%上昇 / 破壊 5%上昇",
+   "afterTarget": null,
+   "afterRate": "35%",
+   "afterEffectShort": "対象 将 / 攻撃 35%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "弾幕防壁陣",
+   "rank": "C",
+   "afterSkill": "鉄壁の備え",
+   "afterRank": "D",
+   "target": "弓砲",
+   "rate": "20%",
+   "effectShort": "防御 30%上昇",
+   "afterTarget": "全",
+   "afterRate": "40%",
+   "afterEffectShort": "防御 15%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "豪勇無比",
+   "rank": "B",
+   "afterSkill": "剛勇無双",
+   "afterRank": "B",
+   "target": "槍馬",
+   "rate": "25%",
+   "effectShort": "攻撃 30%上昇 / 破壊 10%上昇",
+   "afterTarget": "槍馬砲",
+   "afterRate": "30%",
+   "afterEffectShort": "攻撃 25%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3182 と skills/鷹揚武人)およびixawiki(BushoCard/3182浅野長晟)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

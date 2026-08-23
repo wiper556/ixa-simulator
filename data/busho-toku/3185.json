@@ -1,0 +1,109 @@
+{
+ "name": "鳥居元忠",
+ "no": "3185",
+ "ch": null,
+ "cost": 1.5,
+ "troop": "全防",
+ "sub": "",
+ "effect": "防御 15%上昇",
+ "furigana": "とりいもとただ",
+ "illustrator": "双羽純",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 480,
+ "atkGrowth": 16.0,
+ "defBase": 580,
+ "defGrowth": 18.0,
+ "tacticsBase": 420.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 1820,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "A",
+  "uma": "B",
+  "ki": "C"
+ },
+ "initialSkill": "鳥瞰鉄壁",
+ "skillDetail": "C/LV10 確率 60% 防御 15%上昇/対象:全\n①防御が15%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 60% / 防御 15%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "鉄壁の備え",
+   "rank": "D",
+   "afterSkill": "城崩し",
+   "afterRank": "D",
+   "target": "全",
+   "rate": "40%",
+   "effectShort": "防御 15%上昇",
+   "afterTarget": "器",
+   "afterRate": "35%",
+   "afterEffectShort": "破壊 20%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "乗り崩し",
+   "rank": "D",
+   "afterSkill": "鬼刺",
+   "afterRank": "C",
+   "target": "槍馬",
+   "rate": "20%",
+   "effectShort": "攻撃 20%上昇 / 破壊 5%上昇",
+   "afterTarget": "槍馬砲",
+   "afterRate": "15%",
+   "afterEffectShort": "攻撃 (コストx9) %上昇 / (武将のコストで効果が変化します)"
+  },
+  {
+   "slot": "C",
+   "skill": "三河堅陣",
+   "rank": "D",
+   "afterSkill": "城崩し",
+   "afterRank": "D",
+   "target": "全",
+   "rate": "40%",
+   "effectShort": "防御 15%上昇",
+   "afterTarget": "器",
+   "afterRate": "35%",
+   "afterEffectShort": "破壊 20%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "槍撃 修羅",
+   "rank": "C",
+   "afterSkill": "剣豪将軍",
+   "afterRank": "B",
+   "target": "槍",
+   "rate": "25%",
+   "effectShort": "攻撃 25%上昇 / 破壊 5%上昇",
+   "afterTarget": null,
+   "afterRate": "35%",
+   "afterEffectShort": "対象 将 / 攻撃 35%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "砲陣の極み",
+   "rank": "B",
+   "afterSkill": "八咫烏",
+   "afterRank": "B",
+   "target": "砲",
+   "rate": "30%",
+   "effectShort": "防御 30%上昇",
+   "afterTarget": "砲器",
+   "afterRate": "35%",
+   "afterEffectShort": "防御 30%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3185 と skills/鳥瞰鉄壁)およびixawiki(BushoCard/3185鳥居元忠)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

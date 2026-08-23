@@ -1,0 +1,109 @@
+{
+ "name": "本山茂辰",
+ "no": "3358",
+ "ch": null,
+ "cost": 2.0,
+ "troop": "弓焙防",
+ "sub": "",
+ "effect": "防御 (部隊ランクボーナス×7.5)%上昇 / (部隊ランクボーナスで効果が変化)",
+ "furigana": "もとやましげとき",
+ "illustrator": "Ray",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 830,
+ "atkGrowth": 21.0,
+ "defBase": 860,
+ "defGrowth": 23.0,
+ "tacticsBase": 450.0,
+ "tacticsGrowth": 1.5,
+ "lv0Troops": 2280,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "B",
+  "uma": "C",
+  "ki": "B"
+ },
+ "initialSkill": "没落ノ強弓",
+ "skillDetail": "D/LV10 確率 28% 防御 (部隊ランクボーナス×7.5)%上昇 / (部隊ランクボーナスで効果が変化)/対象:弓焙\n①防御 (部隊ランクボーナス×7.5)%上昇 / (部隊ランクボーナスで効果が変化)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓焙　確率 28% / 防御 (部隊ランクボーナス×7.5)%上昇 / (部隊ランクボーナスで効果が変化)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "弓隊堅守",
+   "rank": "F",
+   "afterSkill": "弓隊襲撃",
+   "afterRank": "F",
+   "target": "弓",
+   "rate": "20%",
+   "effectShort": "防御 10%上昇",
+   "afterTarget": "弓",
+   "afterRate": "20%",
+   "afterEffectShort": "攻撃 10%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "弓隊備え",
+   "rank": "F",
+   "afterSkill": "弓隊堅守",
+   "afterRank": "F",
+   "target": "弓",
+   "rate": "10%",
+   "effectShort": "弓防：15%上昇",
+   "afterTarget": "弓",
+   "afterRate": "20%",
+   "afterEffectShort": "防御 10%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "没落ノ強弓",
+   "rank": "D",
+   "afterSkill": "算術の極み",
+   "afterRank": "D",
+   "target": "弓焙",
+   "rate": "28%",
+   "effectShort": "防御 (部隊ランクボーナス×7.5)%上昇 / (部隊ランクボーナスで効果が変化)",
+   "afterTarget": "弓器",
+   "afterRate": "30%",
+   "afterEffectShort": "防御 38%上昇 / 破壊 22%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "算術の極み",
+   "rank": "D",
+   "afterSkill": "比類なき忠功",
+   "afterRank": "D",
+   "target": "弓器",
+   "rate": "30%",
+   "effectShort": "防御 38%上昇 / 破壊 22%上昇",
+   "afterTarget": "弓馬器",
+   "afterRate": "30%",
+   "afterEffectShort": "防御 ((1+ランク)xコストx1.7) %上昇 / 武将ランクとコストで効果が変化"
+  },
+  {
+   "slot": "S2",
+   "skill": "弓妖陣",
+   "rank": "B",
+   "afterSkill": "背水之陣",
+   "afterRank": "B",
+   "target": "槍弓砲",
+   "rate": "25%",
+   "effectShort": "防御 39%上昇",
+   "afterTarget": "槍弓馬",
+   "afterRate": "20%",
+   "afterEffectShort": "防御 37%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3358 と skills/没落ノ強弓)およびixawiki(BushoCard/3358本山茂辰)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

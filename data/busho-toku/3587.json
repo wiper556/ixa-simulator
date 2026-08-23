@@ -1,0 +1,110 @@
+{
+ "name": "青山忠成",
+ "no": "3587",
+ "ch": null,
+ "cost": 3.0,
+ "troop": "馬砲器攻",
+ "sub": "",
+ "effect": "攻撃 150%上昇 / (この武将が4以上の飛翔をもつとき、この武将は飛翔を全て失う代わりに、このスキルの攻撃効果が2倍)",
+ "furigana": "あおやまただなり",
+ "illustrator": "ホマ蔵",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 920,
+ "atkGrowth": 32.0,
+ "defBase": 870,
+ "defGrowth": 26.0,
+ "tacticsBase": 480.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 3080,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "C",
+  "uma": "A",
+  "ki": "B"
+ },
+ "initialSkill": "忠騎疾駆",
+ "skillDetail": "C/LV10 確率 45% 攻撃 150%上昇 / (この武将が4以上の飛翔をもつときこの武将は飛翔を全て失う代わりにこのスキルの攻撃効果が2倍)/対象:馬砲器\n①攻撃 150%上昇 / (この武将が4以上の飛翔をもつときこの武将は飛翔を全て失う代わりにこのスキルの攻撃効果が2倍)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "馬砲器　確率 45% / 攻撃 150%上昇 / (この武将が4以上の飛翔をもつとき、この武将は飛翔を全て失う代わりに、このスキルの攻撃効果が2倍)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "忠騎疾駆",
+   "rank": "C",
+   "afterSkill": "不老ノ闘気",
+   "afterRank": "C",
+   "target": "馬砲器",
+   "rate": "45%",
+   "effectShort": "攻撃 150%上昇 / (この武将が4以上の飛翔をもつとき、この武将は飛翔を全て失う代わりに、このスキルの攻撃効果が2倍)",
+   "afterTarget": "槍砲器",
+   "afterRate": "50%",
+   "afterEffectShort": "攻撃 61%上昇 / (この武将が4以上の飛翔をもつとき、この武将は飛翔を全て失う代わりに、このスキルの攻撃効果が2倍)"
+  },
+  {
+   "slot": "B",
+   "skill": "忠騎疾駆",
+   "rank": "C",
+   "afterSkill": "不老ノ闘気",
+   "afterRank": "C",
+   "target": "馬砲器",
+   "rate": "45%",
+   "effectShort": "攻撃 150%上昇 / (この武将が4以上の飛翔をもつとき、この武将は飛翔を全て失う代わりに、このスキルの攻撃効果が2倍)",
+   "afterTarget": "槍砲器",
+   "afterRate": "50%",
+   "afterEffectShort": "攻撃 61%上昇 / (この武将が4以上の飛翔をもつとき、この武将は飛翔を全て失う代わりに、このスキルの攻撃効果が2倍)"
+  },
+  {
+   "slot": "C",
+   "skill": "忠騎疾駆",
+   "rank": "C",
+   "afterSkill": "不老ノ闘気",
+   "afterRank": "C",
+   "target": "馬砲器",
+   "rate": "45%",
+   "effectShort": "攻撃 150%上昇 / (この武将が4以上の飛翔をもつとき、この武将は飛翔を全て失う代わりに、このスキルの攻撃効果が2倍)",
+   "afterTarget": "槍砲器",
+   "afterRate": "50%",
+   "afterEffectShort": "攻撃 61%上昇 / (この武将が4以上の飛翔をもつとき、この武将は飛翔を全て失う代わりに、このスキルの攻撃効果が2倍)"
+  },
+  {
+   "slot": "S1",
+   "skill": "不老ノ闘気",
+   "rank": "C",
+   "afterSkill": "海の司令官",
+   "afterRank": "B",
+   "target": "槍砲器",
+   "rate": "50%",
+   "effectShort": "攻撃 61%上昇 / (この武将が4以上の飛翔をもつとき、この武将は飛翔を全て失う代わりに、このスキルの攻撃効果が2倍)",
+   "afterTarget": "槍砲器",
+   "afterRate": "29%",
+   "afterEffectShort": "攻撃 82%上昇 / 防御 82%上昇 / 破壊 45%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "虎切刀",
+   "rank": "C",
+   "afterSkill": "鬼滅刺",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "50%",
+   "effectShort": "攻撃 66%上昇 / 防御 66%上昇",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 70%上昇 防御 70%上昇(卓越確率+25%加算・模倣不可)"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3587 と skills/忠騎疾駆)およびixawiki(BushoCard/3587青山忠成)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。",
+  "2026-08-23: skillDetail に読点が混入していた(F-01違反)。ixanary の原文が「配置時、防御効果が」のように読点を使うのをそのまま取り込んでいた。読点を外した。"
+ ]
+}

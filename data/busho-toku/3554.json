@@ -1,0 +1,110 @@
+{
+ "name": "内藤ジュリア",
+ "no": "3554",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "弓馬器防",
+ "sub": "",
+ "effect": "防御 (2.2×防御参加武将数)%上昇 / 防御参加武将数が90以下の時、防御効果1.5倍",
+ "furigana": "ないとうじゅりあ",
+ "illustrator": "コナタエル",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 850,
+ "atkGrowth": 26.0,
+ "defBase": 880,
+ "defGrowth": 30.0,
+ "tacticsBase": 480.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2650,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "B",
+  "uma": "C",
+  "ki": "A"
+ },
+ "initialSkill": "安息ノ導手",
+ "skillDetail": "C/LV10 確率 30% 防御 (2.2×防御参加武将数)%上昇 / 防御参加武将数が90以下の時防御効果1.5倍/対象:弓馬器\n①防御 (2.2×防御参加武将数)%上昇 / 防御参加武将数が90以下の時防御効果1.5倍",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓馬器　確率 30% / 防御 (2.2×防御参加武将数)%上昇 / 防御参加武将数が90以下の時、防御効果1.5倍"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "安息ノ導手",
+   "rank": "C",
+   "afterSkill": "戦慄ノ遁走曲",
+   "afterRank": "A",
+   "target": "弓馬器",
+   "rate": "30%",
+   "effectShort": "防御 (2.2×防御参加武将数)%上昇 / 防御参加武将数が90以下の時、防御効果1.5倍",
+   "afterTarget": "弓馬砲",
+   "afterRate": "52%",
+   "afterEffectShort": "防御 88%上昇 確率：+52% / 速度 40%上昇 確率：+100% / (加勢出陣時は速度効果3倍)"
+  },
+  {
+   "slot": "B",
+   "skill": "安息ノ導手",
+   "rank": "C",
+   "afterSkill": "戦慄ノ遁走曲",
+   "afterRank": "A",
+   "target": "弓馬器",
+   "rate": "30%",
+   "effectShort": "防御 (2.2×防御参加武将数)%上昇 / 防御参加武将数が90以下の時、防御効果1.5倍",
+   "afterTarget": "弓馬砲",
+   "afterRate": "52%",
+   "afterEffectShort": "防御 88%上昇 確率：+52% / 速度 40%上昇 確率：+100% / (加勢出陣時は速度効果3倍)"
+  },
+  {
+   "slot": "C",
+   "skill": "歴戦ノ堅将",
+   "rank": "C",
+   "afterSkill": "覇・太虚国崩",
+   "afterRank": "B",
+   "target": "槍砲器",
+   "rate": "42%",
+   "effectShort": "防御 (1.2×防御参加武将数)%上昇",
+   "afterTarget": "全",
+   "afterRate": "55%",
+   "afterEffectShort": "防御 75%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "戦慄ノ遁走曲",
+   "rank": "A",
+   "afterSkill": "覇・月扇乱舞",
+   "afterRank": "B",
+   "target": "弓馬砲",
+   "rate": "52%",
+   "effectShort": "防御 88%上昇 確率：+52% / 速度 40%上昇 確率：+100% / (加勢出陣時は速度効果3倍)",
+   "afterTarget": "弓砲器",
+   "afterRate": "38%",
+   "afterEffectShort": "防御 75%上昇 確率：+38% / 速度 35%上昇 確率：+100% / (加勢出陣時は速度効果2倍)"
+  },
+  {
+   "slot": "S2",
+   "skill": "覇・太虚国崩",
+   "rank": "B",
+   "afterSkill": "戦陣 破軍",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "55%",
+   "effectShort": "防御 75%上昇",
+   "afterTarget": "全",
+   "afterRate": "44%",
+   "afterEffectShort": "攻撃 66%上昇+防御 66%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3554 と skills/安息ノ導手)およびixawiki(BushoCard/3554内藤ジュリア)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。",
+  "2026-08-23: skillDetail に読点が混入していた(F-01違反)。ixanary の原文が「配置時、防御効果が」のように読点を使うのをそのまま取り込んでいた。読点を外した。"
+ ]
+}

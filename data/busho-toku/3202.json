@@ -1,0 +1,107 @@
+{
+ "name": "本願寺教如",
+ "no": "3202",
+ "ch": null,
+ "cost": 3.0,
+ "troop": "全防",
+ "sub": "",
+ "effect": "防御戦闘勝利時のみ、敵軍1部隊の武将に追加ダメージ+20",
+ "furigana": "ほんがんじきょうにょ",
+ "illustrator": "チェロキー",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 650,
+ "atkGrowth": 17.0,
+ "defBase": 710,
+ "defGrowth": 18.0,
+ "tacticsBase": 430.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2700,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "C",
+  "uma": "B",
+  "ki": "A"
+ },
+ "initialSkill": "退者無間獄",
+ "skillDetail": "D/LV10 確率 20% 防御戦闘勝利時のみ敵軍1部隊の武将に追加ダメージ+20/対象:全\n①防御戦闘勝利時のみ敵軍1部隊の武将に追加ダメージ+20",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 20% / 防御戦闘勝利時のみ、敵軍1部隊の武将に追加ダメージ+20"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "鉄壁の備え",
+   "rank": "D",
+   "afterSkill": "城崩し",
+   "afterRank": "D",
+   "target": "全",
+   "rate": "40%",
+   "effectShort": "防御 15%上昇",
+   "afterTarget": "器",
+   "afterRate": "35%",
+   "afterEffectShort": "破壊 20%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "刹那の猛勇",
+   "rank": "D",
+   "afterSkill": "義兵進軍",
+   "afterRank": "C",
+   "target": "全",
+   "rate": "30%",
+   "effectShort": "攻撃 10%上昇",
+   "afterTarget": "槍弓馬砲",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 7%上昇 / 速度 10%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "鳥瞰鉄壁",
+   "rank": "C",
+   "afterSkill": "槍撃 修羅",
+   "afterRank": "C",
+   "target": "全",
+   "rate": "60%",
+   "effectShort": "防御 15%上昇",
+   "afterTarget": "槍",
+   "afterRate": "25%",
+   "afterEffectShort": "攻撃 25%上昇 / 破壊 5%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "退者無間獄",
+   "rank": "D",
+   "afterSkill": "退者無間獄",
+   "afterRank": "D",
+   "target": "全",
+   "rate": "20%",
+   "effectShort": "防御戦闘勝利時のみ、敵軍1部隊の武将に追加ダメージ+20"
+  },
+  {
+   "slot": "S2",
+   "skill": "組撃ち",
+   "rank": "B",
+   "afterSkill": "八咫烏",
+   "afterRank": "B",
+   "target": "弓砲",
+   "rate": "20%",
+   "effectShort": "防御 35%上昇",
+   "afterTarget": "砲器",
+   "afterRate": "35%",
+   "afterEffectShort": "防御 30%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3202 と skills/退者無間獄)およびixawiki(BushoCard/3202本願寺教如)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。",
+  "2026-08-23: skillDetail に読点が混入していた(F-01違反)。ixanary の原文が「配置時、防御効果が」のように読点を使うのをそのまま取り込んでいた。読点を外した。"
+ ]
+}

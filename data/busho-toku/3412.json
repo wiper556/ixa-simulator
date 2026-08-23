@@ -1,0 +1,103 @@
+{
+ "name": "上条政繁",
+ "no": "3412",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "馬砲防",
+ "sub": "",
+ "effect": "防御 20%上昇 / (部隊内の「不屈ノ闘臣」所持武将数x20%の効果)",
+ "furigana": "じょうじょうまさしげ",
+ "illustrator": "Morechand",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 820,
+ "atkGrowth": 23.0,
+ "defBase": 850,
+ "defGrowth": 26.0,
+ "tacticsBase": 490.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2580,
+ "rankGrades": {
+  "yari": "C",
+  "yumi": "B",
+  "uma": "B",
+  "ki": "A"
+ },
+ "initialSkill": "不屈ノ闘臣",
+ "skillDetail": "D/LV10 確率 42% 防御 20%上昇 / (部隊内の「不屈ノ闘臣」所持武将数x20%の効果)/対象:馬砲\n①防御 20%上昇 / (部隊内の「不屈ノ闘臣」所持武将数x20%の効果)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "馬砲　確率 42% / 防御 20%上昇 / (部隊内の「不屈ノ闘臣」所持武将数x20%の効果)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "不屈ノ闘臣",
+   "rank": "D",
+   "afterSkill": "仁将無双",
+   "afterRank": "B",
+   "target": "馬砲",
+   "rate": "42%",
+   "effectShort": "防御 20%上昇 / (部隊内の「不屈ノ闘臣」所持武将数x20%の効果)",
+   "afterTarget": "槍馬砲",
+   "afterRate": "17%",
+   "afterEffectShort": "攻撃防御 ((1+ランク)xコストx2.1) %上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "騎馬隊堅守",
+   "rank": "F",
+   "afterSkill": "騎馬隊襲撃",
+   "afterRank": "F",
+   "target": "馬",
+   "rate": "20%",
+   "effectShort": "馬防：10%上昇",
+   "afterTarget": "馬",
+   "afterRate": "20%",
+   "afterEffectShort": "馬攻：10%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "逆虎落",
+   "rank": "D",
+   "afterSkill": "不退ノ防戦",
+   "afterRank": "B",
+   "target": "馬器",
+   "rate": "42%",
+   "effectShort": "防御 18%上昇 / (部隊内の逆虎落スキル所持武将数x18%の効果)",
+   "afterTarget": "馬砲器",
+   "afterRate": "38%",
+   "afterEffectShort": "防御 52%上昇 確率：+38% / 速度 40%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "仁将無双",
+   "rank": "B",
+   "afterSkill": "仁将無双",
+   "afterRank": "B",
+   "target": "槍馬砲",
+   "rate": "17%",
+   "effectShort": "攻撃防御 ((1+ランク)xコストx2.1) %上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "不退ノ防戦",
+   "rank": "B",
+   "afterSkill": "不退ノ防戦",
+   "afterRank": "B",
+   "target": "馬砲器",
+   "rate": "38%",
+   "effectShort": "防御 52%上昇 確率：+38% / 速度 40%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3412 と skills/不屈ノ闘臣)およびixawiki(BushoCard/3412上条政繁)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

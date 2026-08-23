@@ -1,0 +1,98 @@
+{
+ "name": "テリーマン",
+ "no": "3655",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "馬砲器攻",
+ "sub": "",
+ "effect": "攻撃 360%上昇 / 対人での攻撃戦闘に勝利時、名声を10回復する(模倣不可・特殊効果は部隊内重複不可)",
+ "furigana": "てりーまん",
+ "illustrator": null,
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 950,
+ "atkGrowth": 35.0,
+ "defBase": 860,
+ "defGrowth": 27.0,
+ "tacticsBase": 430.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2700,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "C",
+  "uma": "A",
+  "ki": "B"
+ },
+ "initialSkill": "Ｔブルドーザー",
+ "skillDetail": "C/LV10 確率 46% 攻撃 360%上昇 / 対人での攻撃戦闘に勝利時名声を10回復する(模倣不可・特殊効果は部隊内重複不可)/対象:馬砲器\n①攻撃 360%上昇 / 対人での攻撃戦闘に勝利時名声を10回復する(模倣不可・特殊効果は部隊内重複不可)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "馬砲器　確率 46% / 攻撃 360%上昇 / 対人での攻撃戦闘に勝利時、名声を10回復する(模倣不可・特殊効果は部隊内重複不可)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "鬼ノ右腕",
+   "rank": "C",
+   "afterSkill": "鬼ノ右腕",
+   "afterRank": "C",
+   "target": "全",
+   "rate": "48%",
+   "effectShort": "攻撃 345%上昇 / 破壊 70%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "Ｔブルドーザー",
+   "rank": "C",
+   "afterSkill": "Ｔブルドーザー",
+   "afterRank": "C",
+   "target": "馬砲器",
+   "rate": "46%",
+   "effectShort": "攻撃 360%上昇 / 対人での攻撃戦闘に勝利時、名声を10回復する(模倣不可・特殊効果は部隊内重複不可)"
+  },
+  {
+   "slot": "C",
+   "skill": "Ｔブルドーザー",
+   "rank": "C",
+   "afterSkill": "Ｔブルドーザー",
+   "afterRank": "C",
+   "target": "馬砲器",
+   "rate": "46%",
+   "effectShort": "攻撃 360%上昇 / 対人での攻撃戦闘に勝利時、名声を10回復する(模倣不可・特殊効果は部隊内重複不可)"
+  },
+  {
+   "slot": "S1",
+   "skill": "Ｔブルドーザー",
+   "rank": "C",
+   "afterSkill": "Ｔブルドーザー",
+   "afterRank": "C",
+   "target": "馬砲器",
+   "rate": "46%",
+   "effectShort": "攻撃 360%上昇 / 対人での攻撃戦闘に勝利時、名声を10回復する(模倣不可・特殊効果は部隊内重複不可)"
+  },
+  {
+   "slot": "S2",
+   "skill": "騎聖",
+   "rank": "A",
+   "afterSkill": "神光征軍",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "攻撃 80%上昇+速度 50%上昇(武将コストで変動)",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 90%上昇+速度 200%上昇(TRなし)"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3655 と skills/Ｔブルドーザー)およびixawiki(BushoCard/3655テリーマン)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。",
+  "2026-08-23: skillDetail に読点が混入していた(F-01違反)。ixanary の原文が「配置時、防御効果が」のように読点を使うのをそのまま取り込んでいた。読点を外した。"
+ ]
+}

@@ -1,0 +1,109 @@
+{
+ "name": "井上之房",
+ "no": "3165",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "槍馬攻",
+ "sub": "",
+ "effect": "攻撃 20%上昇",
+ "furigana": "いのうえゆきふさ",
+ "illustrator": "ZEN丸",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 680,
+ "atkGrowth": 17.0,
+ "defBase": 620,
+ "defGrowth": 15.0,
+ "tacticsBase": 390.0,
+ "tacticsGrowth": 1.5,
+ "lv0Troops": 2410,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "C",
+  "uma": "B",
+  "ki": "C"
+ },
+ "initialSkill": "槍馬鱗撃",
+ "skillDetail": "C/LV10 確率 35% 攻撃 20%上昇/対象:槍馬\n①攻撃が20%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍馬　確率 35% / 攻撃 20%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "槍馬鱗撃",
+   "rank": "C",
+   "afterSkill": "槍陣の極み",
+   "afterRank": "B",
+   "target": "槍馬",
+   "rate": "35%",
+   "effectShort": "攻撃 20%上昇",
+   "afterTarget": "槍",
+   "afterRate": "30%",
+   "afterEffectShort": "防御 30%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "槍弓鱗撃",
+   "rank": "C",
+   "afterSkill": "弓陣の極み",
+   "afterRank": "B",
+   "target": "槍弓",
+   "rate": "35%",
+   "effectShort": "攻撃 20%上昇",
+   "afterTarget": "弓",
+   "afterRate": "30%",
+   "afterEffectShort": "防御 30%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "弓砲鱗撃",
+   "rank": "C",
+   "afterSkill": "砲陣の極み",
+   "afterRank": "B",
+   "target": "弓砲",
+   "rate": "35%",
+   "effectShort": "攻撃 20%上昇",
+   "afterTarget": "砲",
+   "afterRate": "30%",
+   "afterEffectShort": "防御 30%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "槍陣の極み",
+   "rank": "B",
+   "afterSkill": "柳生新陰流",
+   "afterRank": "A",
+   "target": "槍",
+   "rate": "30%",
+   "effectShort": "防御 30%上昇",
+   "afterTarget": null,
+   "afterRate": "55%",
+   "afterEffectShort": "対象 将 / 防御 40%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "騎突 金剛",
+   "rank": "C",
+   "afterSkill": "剛勇無双",
+   "afterRank": "B",
+   "target": "馬",
+   "rate": "25%",
+   "effectShort": "攻撃 25%上昇 / 破壊 5%上昇",
+   "afterTarget": "槍馬砲",
+   "afterRate": "30%",
+   "afterEffectShort": "攻撃 25%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3165 と skills/槍馬鱗撃)およびixawiki(BushoCard/3165井上之房)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

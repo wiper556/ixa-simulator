@@ -1,0 +1,97 @@
+{
+ "name": "ロビンマスク",
+ "no": "3652",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "全攻",
+ "sub": "",
+ "effect": "攻撃 350%上昇 / 破壊 100%上昇",
+ "furigana": "ろびんますく",
+ "illustrator": null,
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 950,
+ "atkGrowth": 35.0,
+ "defBase": 850,
+ "defGrowth": 26.0,
+ "tacticsBase": 440.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2700,
+ "rankGrades": {
+  "yari": "C",
+  "yumi": "B",
+  "uma": "B",
+  "ki": "A"
+ },
+ "initialSkill": "タワーブリッジ",
+ "skillDetail": "C/LV10 確率 17% 攻撃 350%上昇 / 破壊 100%上昇/対象:全\n①攻撃が350%上昇 / 破壊 100%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 17% / 攻撃 350%上昇 / 破壊 100%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "鬼ノ右腕",
+   "rank": "C",
+   "afterSkill": "鬼ノ右腕",
+   "afterRank": "C",
+   "target": "全",
+   "rate": "48%",
+   "effectShort": "攻撃 345%上昇 / 破壊 70%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "タワーブリッジ",
+   "rank": "C",
+   "afterSkill": "タワーブリッジ",
+   "afterRank": "C",
+   "target": "全",
+   "rate": "17%",
+   "effectShort": "攻撃 350%上昇 / 破壊 100%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "タワーブリッジ",
+   "rank": "C",
+   "afterSkill": "タワーブリッジ",
+   "afterRank": "C",
+   "target": "全",
+   "rate": "17%",
+   "effectShort": "攻撃 350%上昇 / 破壊 100%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "タワーブリッジ",
+   "rank": "C",
+   "afterSkill": "タワーブリッジ",
+   "afterRank": "C",
+   "target": "全",
+   "rate": "17%",
+   "effectShort": "攻撃 350%上昇 / 破壊 100%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "十字飛車",
+   "rank": "A",
+   "afterSkill": "騒速ノ神撃",
+   "afterRank": "SS",
+   "target": "槍砲器",
+   "rate": "42%",
+   "effectShort": "攻撃 77%上昇 / 防御 77%上昇 / 破壊 50%上昇",
+   "afterTarget": "槍・弓・器・焙",
+   "afterRate": "57%",
+   "afterEffectShort": "攻撃 100%上昇 防御 100%上昇 部隊内の「騒速ノ神撃」スキルx25%を攻防効果に加算"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3652 と skills/タワーブリッジ)およびixawiki(BushoCard/3652ロビンマスク)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

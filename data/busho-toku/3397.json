@@ -1,0 +1,103 @@
+{
+ "name": "松平忠吉",
+ "no": "3397",
+ "ch": null,
+ "cost": 3.0,
+ "troop": "砲器防",
+ "sub": "",
+ "effect": "防御 32%上昇 / (自領以外の加勢で効果1.5倍)",
+ "furigana": "まつだいらただよし",
+ "illustrator": "青空あおい",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 780,
+ "atkGrowth": 21.0,
+ "defBase": 850,
+ "defGrowth": 28.0,
+ "tacticsBase": 470.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2880,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "C",
+  "uma": "B",
+  "ki": "A"
+ },
+ "initialSkill": "捨て身の初陣",
+ "skillDetail": "D/LV10 確率 70% 防御 32%上昇 / (自領以外の加勢で効果1.5倍)/対象:砲器\n①防御 32%上昇 / (自領以外の加勢で効果1.5倍)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "砲器　確率 70% / 防御 32%上昇 / (自領以外の加勢で効果1.5倍)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "兵器布陣",
+   "rank": "E",
+   "afterSkill": "城砕き",
+   "afterRank": "E",
+   "target": "器",
+   "rate": "15%",
+   "effectShort": "防御 20%上昇",
+   "afterTarget": "器",
+   "afterRate": "15%",
+   "afterEffectShort": "破壊 20%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "不死鳥",
+   "rank": "B",
+   "afterSkill": "不死鳥",
+   "afterRank": "B",
+   "target": "槍砲器",
+   "rate": "37%",
+   "effectShort": "防御 34%上昇 / 自部隊の武将ダメージ軽減6% / (重複発動上限数4)"
+  },
+  {
+   "slot": "C",
+   "skill": "捨て身の初陣",
+   "rank": "D",
+   "afterSkill": "不退ノ防戦",
+   "afterRank": "B",
+   "target": "砲器",
+   "rate": "70%",
+   "effectShort": "防御 32%上昇 / (自領以外の加勢で効果1.5倍)",
+   "afterTarget": "馬砲器",
+   "afterRate": "38%",
+   "afterEffectShort": "防御 52%上昇 確率：+38% / 速度 40%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "不退ノ防戦",
+   "rank": "B",
+   "afterSkill": "不退ノ防戦",
+   "afterRank": "B",
+   "target": "馬砲器",
+   "rate": "38%",
+   "effectShort": "防御 52%上昇 確率：+38% / 速度 40%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "隠し駒",
+   "rank": "D",
+   "afterSkill": "管領の威光",
+   "afterRank": "D",
+   "target": "砲器",
+   "rate": "32%",
+   "effectShort": "防御 44%上昇 / 破壊 25%上昇",
+   "afterTarget": "馬砲器",
+   "afterRate": "43%",
+   "afterEffectShort": "防御 34%上昇 / 破壊 30%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3397 と skills/捨て身の初陣)およびixawiki(BushoCard/3397松平忠吉)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

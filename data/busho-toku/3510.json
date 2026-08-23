@@ -1,0 +1,109 @@
+{
+ "name": "京極高次",
+ "no": "3510",
+ "ch": null,
+ "cost": 3.0,
+ "troop": "槍弓器防",
+ "sub": "",
+ "effect": "防御 90%上昇 / (合流攻撃防御時は必ずスキル発動)",
+ "furigana": "きょうごくたかつぐ",
+ "illustrator": "秋谷コウ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 800,
+ "atkGrowth": 21.0,
+ "defBase": 890,
+ "defGrowth": 29.0,
+ "tacticsBase": 460.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2980,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "B",
+  "uma": "C",
+  "ki": "B"
+ },
+ "initialSkill": "迎え鬼火",
+ "skillDetail": "C/LV10 確率 25% 防御 90%上昇 / (合流攻撃防御時は必ずスキル発動)/対象:槍弓器\n①防御 90%上昇 / (合流攻撃防御時は必ずスキル発動)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍弓器　確率 25% / 防御 90%上昇 / (合流攻撃防御時は必ずスキル発動)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "迎え鬼火",
+   "rank": "C",
+   "afterSkill": "覇・海王神渦",
+   "afterRank": "B",
+   "target": "槍弓器",
+   "rate": "25%",
+   "effectShort": "防御 90%上昇 / (合流攻撃防御時は必ずスキル発動)",
+   "afterTarget": "槍弓器",
+   "afterRate": "40%",
+   "afterEffectShort": "防御 62%上昇 / 本丸防御陣形の第参列目以降に配置時、防御効果が1.5倍"
+  },
+  {
+   "slot": "B",
+   "skill": "迎え鬼火",
+   "rank": "C",
+   "afterSkill": "覇・海王神渦",
+   "afterRank": "B",
+   "target": "槍弓器",
+   "rate": "25%",
+   "effectShort": "防御 90%上昇 / (合流攻撃防御時は必ずスキル発動)",
+   "afterTarget": "槍弓器",
+   "afterRate": "40%",
+   "afterEffectShort": "防御 62%上昇 / 本丸防御陣形の第参列目以降に配置時、防御効果が1.5倍"
+  },
+  {
+   "slot": "C",
+   "skill": "御調法ノ侍",
+   "rank": "D",
+   "afterSkill": "烈侵滅国",
+   "afterRank": "B",
+   "target": "槍弓器",
+   "rate": "54%",
+   "effectShort": "防御 49%上昇 / (自領以外の加勢で効果1.5倍)",
+   "afterTarget": "槍弓器",
+   "afterRate": "25%",
+   "afterEffectShort": "攻撃防御 ((1+武将ランク)×コストx2) %上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "覇・海王神渦",
+   "rank": "B",
+   "afterSkill": "籠城の妙技",
+   "afterRank": "A",
+   "target": "槍弓器",
+   "rate": "40%",
+   "effectShort": "防御 62%上昇 / 本丸防御陣形の第参列目以降に配置時、防御効果が1.5倍",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "防御 50%上昇(卓越:追加確率15%で防御効果が3倍)"
+  },
+  {
+   "slot": "S2",
+   "skill": "飯田丸",
+   "rank": "C",
+   "afterSkill": "絆ノ戦域",
+   "afterRank": "B",
+   "target": "槍弓器",
+   "rate": "45%",
+   "effectShort": "防御 5 + (武将ランク×12)%上昇 / 破壊 5 + (武将ランク×5)%上昇",
+   "afterTarget": "槍器鉄",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 64%上昇 防御 64%上昇 / 卓越：追加確率10%で攻防効果が2倍"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3510 と skills/迎え鬼火)およびixawiki(BushoCard/3510京極高次)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

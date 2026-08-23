@@ -69,16 +69,20 @@ def finish(no):
         m = re.match(r"^(.+?)　確率 ([\d.]+)% / (.+)$", tr0["effect"])
         if m:
             head_target, body = m.group(1), m.group(3)
-    entry["troop"] = ((head_target or "全").replace("・", "") + axis) if head_target else None
+    # 2026-08-23: troop は「弓砲防」のように区切り無しで書く決まりなので、
+    # 対象に入っている中黒・スラッシュ・空白を落としてから軸を足す。
+    _t = re.sub(r"[・/\s]", "", head_target or "全")
+    entry["troop"] = (_t + axis) if head_target else None
     entry["effect"] = body
     if tr0 and body:
         m = re.match(r"^(.+?)　確率 ([\d.]+)%", tr0["effect"])
         # 「攻撃 43%上昇」→「①攻撃が43%上昇する」。それ以外はそのまま①に置く
         mm = re.match(r"^(攻撃|防御|速度|破壊)\s+(.+上昇)$", body)
         line = ("%sが%sする" % (mm.group(1), mm.group(2))) if mm else body
+        # 2026-08-23: 対象の区切りは中黒。ixanary は「弓/砲」と書くので直す。
         entry["skillDetail"] = ("%s/LV10 確率 %s%% %s/対象:%s\n①%s"
                                 % (sk.get("rank") or "-", m.group(2), body,
-                                   head_target, line))
+                                   (head_target or "").replace("/", "・"), line))
     entry["notes"] = [
         "ixanary.com(cards/%s と skills/%s)およびixawiki(BushoCard/%s%s)で登録(2026-08-14)。"
         % (no, entry["initialSkill"], no, entry["name"]),

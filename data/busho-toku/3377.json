@@ -1,0 +1,103 @@
+{
+ "name": "珠子",
+ "no": "3377",
+ "ch": null,
+ "cost": 0.5,
+ "troop": "槍器防",
+ "sub": "",
+ "effect": "防御 24%上昇 / 自拠点防御時は防御効果2倍",
+ "furigana": "たまこ",
+ "illustrator": "キョー介",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 820,
+ "atkGrowth": 22.0,
+ "defBase": 850,
+ "defGrowth": 24.0,
+ "tacticsBase": 480.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 1200,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "C",
+  "uma": "B",
+  "ki": "B"
+ },
+ "initialSkill": "悲運散桜",
+ "skillDetail": "D/LV10 確率 55% 防御 24%上昇 / 自拠点防御時は防御効果2倍/対象:槍器\n①防御 24%上昇 / 自拠点防御時は防御効果2倍",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍器　確率 55% / 防御 24%上昇 / 自拠点防御時は防御効果2倍"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "槍隊守備",
+   "rank": "F",
+   "afterSkill": "槍隊急襲",
+   "afterRank": "F",
+   "target": "槍",
+   "rate": "16%",
+   "effectShort": "防御 (コストx5) %上昇 / (武将のコストで効果が変化します)",
+   "afterTarget": "槍",
+   "afterRate": "16%",
+   "afterEffectShort": "槍攻：7.5%上昇 / (武将のコストで効果が変化します)"
+  },
+  {
+   "slot": "B",
+   "skill": "戦慄ノ美姫",
+   "rank": "D",
+   "afterSkill": "新館御料人",
+   "afterRank": "B",
+   "target": "槍弓馬",
+   "rate": "32%",
+   "effectShort": "攻撃 46%上昇 / 防御 46%上昇",
+   "afterTarget": "弓砲器",
+   "afterRate": "70%",
+   "afterEffectShort": "攻撃 57.6%上昇 / 防御 57.6%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "聖者ノ調",
+   "rank": "D",
+   "afterSkill": "閃光破陣",
+   "afterRank": "B",
+   "target": "槍器",
+   "rate": "40%",
+   "effectShort": "防御 34%上昇 / (自軍5部隊以下の防御時 効果1.5倍)",
+   "afterTarget": "槍馬器",
+   "afterRate": "35%",
+   "afterEffectShort": "防御 2.7%上昇 / 防御 部隊ランクスキル発動率x9%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "悲運散桜",
+   "rank": "D",
+   "afterSkill": "悲運散桜",
+   "afterRank": "D",
+   "target": "槍器",
+   "rate": "55%",
+   "effectShort": "防御 24%上昇 / 自拠点防御時は防御効果2倍"
+  },
+  {
+   "slot": "S2",
+   "skill": "花椿",
+   "rank": "D",
+   "afterSkill": "花椿",
+   "afterRank": "D",
+   "target": "槍砲器",
+   "rate": "32%",
+   "effectShort": "防御 39%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3377 と skills/悲運散桜)およびixawiki(BushoCard/3377珠子)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

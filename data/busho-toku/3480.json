@@ -1,0 +1,104 @@
+{
+ "name": "三村元親",
+ "no": "3480",
+ "ch": null,
+ "cost": 3.0,
+ "troop": "弓焙攻",
+ "sub": "",
+ "effect": "確率と効果の組み合わせを選択(54%/攻撃67% ・30%/攻撃77% ・7%/攻撃94%)",
+ "furigana": "みむらもとちか",
+ "illustrator": "神威なつき",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 870,
+ "atkGrowth": 29.0,
+ "defBase": 820,
+ "defGrowth": 22.0,
+ "tacticsBase": 460.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2940,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "A",
+  "uma": "C",
+  "ki": "B"
+ },
+ "initialSkill": "八雲御抄",
+ "skillDetail": "C/LV10 確率 54%/30%/7% 攻撃 67%/77%/94%上昇/対象:弓・焙\n①確率 54%で攻撃 67%上昇する\n②確率 30%で攻撃 77%上昇する\n③確率 7%で攻撃 94%上昇する\n④スキル発動確率と効果の組み合わせを選択できる(移動時は選択不可)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓・焙　確率 54%/30%/7% / 攻撃 67%/77%/94%上昇(組み合わせを選択・移動時は選択不可)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "八雲御抄",
+   "rank": "C",
+   "afterSkill": "猛虎燎原",
+   "afterRank": "B",
+   "target": "弓焙",
+   "rate": null,
+   "effectShort": "確率 +54% 攻撃 +67% / 確率 +30% 攻撃 +77% / 確率 +7% 攻撃 +94% / スキル発動確率と効果の組み合わせを選択できる(移動時は選択不可)",
+   "afterTarget": "槍弓砲",
+   "afterRate": "18%",
+   "afterEffectShort": "攻撃 5.4%上昇 / 攻撃 部隊ランク発動率x9%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "八雲御抄",
+   "rank": "C",
+   "afterSkill": "猛虎燎原",
+   "afterRank": "B",
+   "target": "弓焙",
+   "rate": null,
+   "effectShort": "確率 +54% 攻撃 +67% / 確率 +30% 攻撃 +77% / 確率 +7% 攻撃 +94% / スキル発動確率と効果の組み合わせを選択できる(移動時は選択不可)",
+   "afterTarget": "槍弓砲",
+   "afterRate": "18%",
+   "afterEffectShort": "攻撃 5.4%上昇 / 攻撃 部隊ランク発動率x9%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "小藩外交",
+   "rank": "D",
+   "afterSkill": "賢王訓戒",
+   "afterRank": "B",
+   "target": "弓/砲",
+   "rate": "24%",
+   "effectShort": "攻撃 57%上昇 / (合流攻撃時は発動率2倍)",
+   "afterTarget": "弓砲器",
+   "afterRate": "34%",
+   "afterEffectShort": "攻撃 ((1+ランク)xコストx0.5) %上昇 / 武将ランクとコストで効果が変化"
+  },
+  {
+   "slot": "S1",
+   "skill": "猛虎燎原",
+   "rank": "B",
+   "afterSkill": "猛虎燎原",
+   "afterRank": "B",
+   "target": "槍弓砲",
+   "rate": "18%",
+   "effectShort": "攻撃 5.4%上昇 / 攻撃 部隊ランク発動率x9%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "質実剛健",
+   "rank": "B",
+   "afterSkill": "質実剛健",
+   "afterRank": "B",
+   "target": "弓馬砲",
+   "rate": "27%",
+   "effectShort": "攻撃防御 ((1+武将ランク)x武将コストx1.9) %上昇 / 武将ランクとコストで効果が変化"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3480 と skills/八雲御抄)およびixawiki(BushoCard/3480三村元親)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。",
+  "2026-08-23: 発動確率と効果の組み合わせを3通りから選ぶスキルで、LV10 の行に確率と効果が3組並ぶ。一括登録のパーサは1組しか読めないため手で書いた。ixanary の skillStr はランクが空だが、合成テーブルが「攻：八雲御抄 C」なので C。"
+ ]
+}

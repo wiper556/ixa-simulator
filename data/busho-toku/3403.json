@@ -1,0 +1,103 @@
+{
+ "name": "杉山源吾",
+ "no": "3403",
+ "ch": null,
+ "cost": 3.0,
+ "troop": "全防",
+ "sub": "",
+ "effect": "防御 75%上昇",
+ "furigana": "すぎやまげんご",
+ "illustrator": "ヤマザキミコ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 840,
+ "atkGrowth": 23.0,
+ "defBase": 850,
+ "defGrowth": 28.0,
+ "tacticsBase": 470.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2890,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "B",
+  "uma": "C",
+  "ki": "A"
+ },
+ "initialSkill": "忍従防陣",
+ "skillDetail": "D/LV10 確率 1% 防御 75%上昇/対象:全\n①防御が75%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 1% / 防御 75%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "兵器布陣",
+   "rank": "E",
+   "afterSkill": "城砕き",
+   "afterRank": "E",
+   "target": "器",
+   "rate": "15%",
+   "effectShort": "防御 20%上昇",
+   "afterTarget": "器",
+   "afterRate": "15%",
+   "afterEffectShort": "破壊 20%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "愛民ノ采配",
+   "rank": "D",
+   "afterSkill": "暁光",
+   "afterRank": "D",
+   "target": "全",
+   "rate": "48%",
+   "effectShort": "攻撃 40%上昇 / 防御 40%上昇",
+   "afterTarget": "全",
+   "afterRate": "24%",
+   "afterEffectShort": "攻撃 38%上昇 / 防御 38%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "忍従防陣",
+   "rank": "D",
+   "afterSkill": "闘戦経",
+   "afterRank": "B",
+   "target": "全",
+   "rate": "1%",
+   "effectShort": "防御 75%上昇",
+   "afterTarget": "全",
+   "afterRate": "10%",
+   "afterEffectShort": "防御 80.4%上昇 / 自拠点防御時は100%発動"
+  },
+  {
+   "slot": "S1",
+   "skill": "闘戦経",
+   "rank": "B",
+   "afterSkill": "闘戦経",
+   "afterRank": "B",
+   "target": "全",
+   "rate": "10%",
+   "effectShort": "防御 80.4%上昇 / 自拠点防御時は100%発動"
+  },
+  {
+   "slot": "S2",
+   "skill": "不退ノ防戦",
+   "rank": "B",
+   "afterSkill": "不退ノ防戦",
+   "afterRank": "B",
+   "target": "馬砲器",
+   "rate": "38%",
+   "effectShort": "防御 52%上昇 確率：+38% / 速度 40%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3403 と skills/忍従防陣)およびixawiki(BushoCard/3403杉山源吾)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

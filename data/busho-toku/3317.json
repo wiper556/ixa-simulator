@@ -1,0 +1,103 @@
+{
+ "name": "真田信尹",
+ "no": "3317",
+ "ch": null,
+ "cost": 2.0,
+ "troop": "砲器防",
+ "sub": "",
+ "effect": "防御 44%上昇 / 破壊 25%上昇",
+ "furigana": "さなだのぶただ",
+ "illustrator": "BISAI",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 830,
+ "atkGrowth": 20.0,
+ "defBase": 870,
+ "defGrowth": 22.0,
+ "tacticsBase": 430.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2250,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "B",
+  "uma": "C",
+  "ki": "A"
+ },
+ "initialSkill": "隠し駒",
+ "skillDetail": "D/LV10 確率 32% 防御 44%上昇 / 破壊 25%上昇/対象:砲器\n①防御が44%上昇 / 破壊 25%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "砲器　確率 32% / 防御 44%上昇 / 破壊 25%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "龍哭の酒",
+   "rank": "F",
+   "afterSkill": "伏僧嘗胆",
+   "afterRank": "E",
+   "target": "器",
+   "rate": "25%",
+   "effectShort": "防御 30%上昇",
+   "afterTarget": "弓砲",
+   "afterRate": "22%",
+   "afterEffectShort": "防御 12%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "鉄砲隊布陣",
+   "rank": "E",
+   "afterSkill": "鉄砲隊堅陣",
+   "afterRank": "F",
+   "target": "砲",
+   "rate": "12%",
+   "effectShort": "防御 20%上昇",
+   "afterTarget": "砲",
+   "afterRate": "25%",
+   "afterEffectShort": "砲防：12%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "隠し駒",
+   "rank": "D",
+   "afterSkill": "管領の威光",
+   "afterRank": "D",
+   "target": "砲器",
+   "rate": "32%",
+   "effectShort": "防御 44%上昇 / 破壊 25%上昇",
+   "afterTarget": "馬砲器",
+   "afterRate": "43%",
+   "afterEffectShort": "防御 34%上昇 / 破壊 30%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "管領の威光",
+   "rank": "D",
+   "afterSkill": "管領の威光",
+   "afterRank": "D",
+   "target": "馬砲器",
+   "rate": "43%",
+   "effectShort": "防御 34%上昇 / 破壊 30%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "比類なき忠功",
+   "rank": "D",
+   "afterSkill": "比類なき忠功",
+   "afterRank": "D",
+   "target": "弓馬器",
+   "rate": "30%",
+   "effectShort": "防御 ((1+ランク)xコストx1.7) %上昇 / 武将ランクとコストで効果が変化"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3317 と skills/隠し駒)およびixawiki(BushoCard/3317真田信尹)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

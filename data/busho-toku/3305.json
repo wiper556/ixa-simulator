@@ -1,0 +1,103 @@
+{
+ "name": "山崎吉家",
+ "no": "3305",
+ "ch": null,
+ "cost": 2.0,
+ "troop": "槍弓攻",
+ "sub": "",
+ "effect": "攻撃 43%上昇",
+ "furigana": "やまざきよしいえ",
+ "illustrator": "白藤与一",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 840,
+ "atkGrowth": 22.0,
+ "defBase": 810,
+ "defGrowth": 19.0,
+ "tacticsBase": 460.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2250,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "B",
+  "ki": "C"
+ },
+ "initialSkill": "好餌の計",
+ "skillDetail": "D/LV10 確率 27% 攻撃 43%上昇/対象:槍弓\n①攻撃が43%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍弓　確率 27% / 攻撃 43%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "槍弓猛襲",
+   "rank": "D",
+   "afterSkill": "足軽軍法",
+   "afterRank": "D",
+   "target": "槍弓",
+   "rate": "15%",
+   "effectShort": "攻撃 (コストx9) %上昇 / (武将のコストで効果が変化します)",
+   "afterTarget": "槍器",
+   "afterRate": "15%",
+   "afterEffectShort": "攻撃 (コストx9) %上昇 / (武将のコストで効果が変化します)"
+  },
+  {
+   "slot": "B",
+   "skill": "槍弓連撃",
+   "rank": "D",
+   "afterSkill": "弓陣の極み",
+   "afterRank": "B",
+   "target": "槍弓",
+   "rate": "30%",
+   "effectShort": "攻撃 20%上昇",
+   "afterTarget": "弓",
+   "afterRate": "30%",
+   "afterEffectShort": "防御 30%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "大身槍",
+   "rank": "D",
+   "afterSkill": "絢鳥",
+   "afterRank": "B",
+   "target": "槍弓",
+   "rate": "19%",
+   "effectShort": "攻撃 43%上昇 / 破壊 18%上昇",
+   "afterTarget": "槍弓",
+   "afterRate": "35%",
+   "afterEffectShort": "攻撃 42%上昇 / 破壊 15%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "好餌の計",
+   "rank": "D",
+   "afterSkill": "好餌の計",
+   "afterRank": "D",
+   "target": "槍弓",
+   "rate": "27%",
+   "effectShort": "攻撃 43%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "絢鳥",
+   "rank": "B",
+   "afterSkill": "絢鳥",
+   "afterRank": "B",
+   "target": "槍弓",
+   "rate": "35%",
+   "effectShort": "攻撃 42%上昇 / 破壊 15%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3305 と skills/好餌の計)およびixawiki(BushoCard/3305山崎吉家)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

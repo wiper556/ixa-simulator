@@ -1,0 +1,106 @@
+{
+ "name": "岩城貞隆",
+ "no": "3196",
+ "ch": null,
+ "cost": 2.0,
+ "troop": "槍弓防",
+ "sub": "",
+ "effect": "防御 25%上昇",
+ "furigana": "いわさきさだたか",
+ "illustrator": "竹安佐和記",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 450,
+ "atkGrowth": 16.0,
+ "defBase": 450,
+ "defGrowth": 18.0,
+ "tacticsBase": 460.0,
+ "tacticsGrowth": 1.5,
+ "lv0Troops": 1880,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "B",
+  "uma": "B",
+  "ki": "D"
+ },
+ "initialSkill": "浅草浪人隊",
+ "skillDetail": "D/LV10 確率 20% 防御 25%上昇/対象:槍弓\n①防御が25%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍弓　確率 20% / 防御 25%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "弓隊円陣",
+   "rank": "D",
+   "afterSkill": "矢雨備え",
+   "afterRank": "D",
+   "target": "弓",
+   "rate": "40%",
+   "effectShort": "防御 20%上昇",
+   "afterTarget": "弓器",
+   "afterRate": "30%",
+   "afterEffectShort": "防御 25%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "弾幕防壁陣",
+   "rank": "C",
+   "afterSkill": "鉄壁の備え",
+   "afterRank": "D",
+   "target": "弓砲",
+   "rate": "20%",
+   "effectShort": "防御 30%上昇",
+   "afterTarget": "全",
+   "afterRate": "40%",
+   "afterEffectShort": "防御 15%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "浅草浪人隊",
+   "rank": "D",
+   "afterSkill": "堅陣斉射",
+   "afterRank": "B",
+   "target": "槍弓",
+   "rate": "20%",
+   "effectShort": "防御 25%上昇",
+   "afterTarget": "弓砲",
+   "afterRate": "25%",
+   "afterEffectShort": "防御 35%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "堅陣斉射",
+   "rank": "B",
+   "afterSkill": "砲撃 羅刹",
+   "afterRank": "B",
+   "target": "弓砲",
+   "rate": "25%",
+   "effectShort": "防御 35%上昇",
+   "afterTarget": "砲",
+   "afterRate": "25%",
+   "afterEffectShort": "攻撃 25%上昇 / 破壊 5%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": null,
+   "rank": null,
+   "afterSkill": null,
+   "afterRank": null,
+   "target": null,
+   "rate": null,
+   "effectShort": null
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3196 と skills/浅草浪人隊)およびixawiki(BushoCard/3196岩城貞隆)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

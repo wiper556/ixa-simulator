@@ -1,0 +1,106 @@
+{
+ "name": "和田昭為",
+ "no": "3220",
+ "ch": null,
+ "cost": 2.0,
+ "troop": "砲防",
+ "sub": "",
+ "effect": "防御 25%上昇 / (合流攻撃防御時は効果2倍)",
+ "furigana": "わだあきため",
+ "illustrator": "小森ニコ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 600,
+ "atkGrowth": 16.0,
+ "defBase": 680,
+ "defGrowth": 19.0,
+ "tacticsBase": 450.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 2000,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "B",
+  "uma": "C",
+  "ki": "A"
+ },
+ "initialSkill": "返り忠",
+ "skillDetail": "D/LV10 確率 25% 防御 25%上昇 / (合流攻撃防御時は効果2倍)/対象:砲\n①防御 25%上昇 / (合流攻撃防御時は効果2倍)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "砲　確率 25% / 防御 25%上昇 / (合流攻撃防御時は効果2倍)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "鉄砲隊備え",
+   "rank": "F",
+   "afterSkill": "防壁破り",
+   "afterRank": "F",
+   "target": "砲",
+   "rate": "8%",
+   "effectShort": "砲防：15%上昇",
+   "afterTarget": "器",
+   "afterRate": "16%",
+   "afterEffectShort": "破壊 (コストx5) %上昇 / (武将のコストで効果が変化します)"
+  },
+  {
+   "slot": "B",
+   "skill": "鉄甲陣",
+   "rank": "D",
+   "afterSkill": "足軽軍法",
+   "afterRank": "D",
+   "target": "槍弓",
+   "rate": "30%",
+   "effectShort": "防御 20%上昇",
+   "afterTarget": "槍器",
+   "afterRate": "15%",
+   "afterEffectShort": "攻撃 (コストx9) %上昇 / (武将のコストで効果が変化します)"
+  },
+  {
+   "slot": "C",
+   "skill": "鉄砲隊守護",
+   "rank": "E",
+   "afterSkill": "鉄砲隊挟撃",
+   "afterRank": "E",
+   "target": "砲",
+   "rate": "20%",
+   "effectShort": "防御 (コストx6.5) %上昇 / (武将のコストで効果が変化します)",
+   "afterTarget": "砲",
+   "afterRate": "20%",
+   "afterEffectShort": "攻撃 (コストx6.5) %上昇 / (武将のコストで効果が変化します)"
+  },
+  {
+   "slot": "S1",
+   "skill": "返り忠",
+   "rank": "D",
+   "afterSkill": "返り忠",
+   "afterRank": "D",
+   "target": "砲",
+   "rate": "25%",
+   "effectShort": "防御 25%上昇 / (合流攻撃防御時は効果2倍)"
+  },
+  {
+   "slot": "S2",
+   "skill": "黒骨扇月丸",
+   "rank": "B",
+   "afterSkill": "早合組撃ち",
+   "afterRank": "A",
+   "target": "砲",
+   "rate": "20%",
+   "effectShort": "防御 30%上昇",
+   "afterTarget": "弓砲",
+   "afterRate": "30%",
+   "afterEffectShort": "防御 40%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3220 と skills/返り忠)およびixawiki(BushoCard/3220和田昭為)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

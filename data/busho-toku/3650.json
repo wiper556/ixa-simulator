@@ -1,0 +1,98 @@
+{
+ "name": "キン肉マン",
+ "no": "3650",
+ "ch": null,
+ "cost": 3.0,
+ "troop": "全防",
+ "sub": "",
+ "effect": "防御 280%上昇 / 武将HPが129以下のとき、防御効果を1.5倍する",
+ "furigana": "きんにくまん",
+ "illustrator": null,
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 840,
+ "atkGrowth": 25.0,
+ "defBase": 960,
+ "defGrowth": 36.0,
+ "tacticsBase": 430.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 3100,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "C",
+  "uma": "B",
+  "ki": "B"
+ },
+ "initialSkill": "肉のカーテン",
+ "skillDetail": "C/LV10 確率 50% 防御 280%上昇 / 武将HPが129以下のとき防御効果を1.5倍する/対象:全\n①防御 280%上昇 / 武将HPが129以下のとき防御効果を1.5倍する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 50% / 防御 280%上昇 / 武将HPが129以下のとき、防御効果を1.5倍する"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "血染金幣",
+   "rank": "C",
+   "afterSkill": "血染金幣",
+   "afterRank": "C",
+   "target": "全",
+   "rate": "55%",
+   "effectShort": "防御 190%上昇 / 武将HPが60以下のとき、防御効果を2倍する"
+  },
+  {
+   "slot": "B",
+   "skill": "肉のカーテン",
+   "rank": "C",
+   "afterSkill": "肉のカーテン",
+   "afterRank": "C",
+   "target": "全",
+   "rate": "50%",
+   "effectShort": "防御 280%上昇 / 武将HPが129以下のとき、防御効果を1.5倍する"
+  },
+  {
+   "slot": "C",
+   "skill": "肉のカーテン",
+   "rank": "C",
+   "afterSkill": "肉のカーテン",
+   "afterRank": "C",
+   "target": "全",
+   "rate": "50%",
+   "effectShort": "防御 280%上昇 / 武将HPが129以下のとき、防御効果を1.5倍する"
+  },
+  {
+   "slot": "S1",
+   "skill": "肉のカーテン",
+   "rank": "C",
+   "afterSkill": "肉のカーテン",
+   "afterRank": "C",
+   "target": "全",
+   "rate": "50%",
+   "effectShort": "防御 280%上昇 / 武将HPが129以下のとき、防御効果を1.5倍する"
+  },
+  {
+   "slot": "S2",
+   "skill": "籠城の妙技",
+   "rank": "A",
+   "afterSkill": "三千世界神将",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "防御 50%上昇(卓越:追加確率15%で防御効果が3倍)",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "防御 120%上昇(本丸防御陣形時コスト消費-1)"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3650 と skills/肉のカーテン)およびixawiki(BushoCard/3650キン肉マン)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。",
+  "2026-08-23: skillDetail に読点が混入していた(F-01違反)。ixanary の原文が「配置時、防御効果が」のように読点を使うのをそのまま取り込んでいた。読点を外した。"
+ ]
+}

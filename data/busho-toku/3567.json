@@ -1,0 +1,106 @@
+{
+ "name": "ジャンヌ",
+ "no": "3567",
+ "ch": null,
+ "cost": 2.0,
+ "troop": "槍砲器攻",
+ "sub": "",
+ "effect": "攻撃260%上昇 / 破壊 50%上昇",
+ "furigana": "じゃんぬ",
+ "illustrator": null,
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 910,
+ "atkGrowth": 31.0,
+ "defBase": 860,
+ "defGrowth": 26.0,
+ "tacticsBase": 460.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2390,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "B",
+  "uma": "C",
+  "ki": "B"
+ },
+ "initialSkill": "みんな灰になれ",
+ "skillDetail": "C/LV10 確率 55% 攻撃260%上昇 / 破壊 50%上昇/対象:槍砲器\n①攻撃260%上昇 / 破壊 50%上昇",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍砲器　確率 55% / 攻撃260%上昇 / 破壊 50%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "みんな灰になれ",
+   "rank": "C",
+   "afterSkill": "清貧ノ悪源太",
+   "afterRank": "B",
+   "target": "槍砲器",
+   "rate": "55%",
+   "effectShort": "攻撃260%上昇 / 破壊 50%上昇",
+   "afterTarget": "弓砲器",
+   "afterRate": "24%",
+   "afterEffectShort": "攻撃 67%上昇 / 破壊 40%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "みんな灰になれ",
+   "rank": "C",
+   "afterSkill": "清貧ノ悪源太",
+   "afterRank": "B",
+   "target": "槍砲器",
+   "rate": "55%",
+   "effectShort": "攻撃260%上昇 / 破壊 50%上昇",
+   "afterTarget": "弓砲器",
+   "afterRate": "24%",
+   "afterEffectShort": "攻撃 67%上昇 / 破壊 40%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "みんな灰になれ",
+   "rank": "C",
+   "afterSkill": "清貧ノ悪源太",
+   "afterRank": "B",
+   "target": "槍砲器",
+   "rate": "55%",
+   "effectShort": "攻撃260%上昇 / 破壊 50%上昇",
+   "afterTarget": "弓砲器",
+   "afterRate": "24%",
+   "afterEffectShort": "攻撃 67%上昇 / 破壊 40%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "清貧ノ悪源太",
+   "rank": "B",
+   "afterSkill": "清貧ノ悪源太",
+   "afterRank": "B",
+   "target": "弓砲器",
+   "rate": "24%",
+   "effectShort": "攻撃 67%上昇 / 破壊 40%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "孤炎",
+   "rank": "A",
+   "afterSkill": "覚悟十躰",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "55%",
+   "effectShort": "攻撃 140%上昇 / 破壊 85%上昇",
+   "afterTarget": "全",
+   "afterRate": "30%",
+   "afterEffectShort": "資源獲得率：15% / 破壊した耐久値に応じて資源獲得"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3567 と skills/みんな灰になれ)およびixawiki(BushoCard/3567ジャンヌ)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

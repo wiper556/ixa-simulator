@@ -1,0 +1,103 @@
+{
+ "name": "穴山梅雪",
+ "no": "3387",
+ "ch": null,
+ "cost": 2.0,
+ "troop": "槍馬防",
+ "sub": "",
+ "effect": "防御 (コストx14) %上昇 / (武将のコストで効果が変化します)",
+ "furigana": "あなやまばいせつ",
+ "illustrator": "トミダトモミ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 800,
+ "atkGrowth": 22.0,
+ "defBase": 850,
+ "defGrowth": 25.0,
+ "tacticsBase": 490.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2300,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "B",
+  "uma": "B",
+  "ki": "C"
+ },
+ "initialSkill": "命運ノ渡し",
+ "skillDetail": "D/LV10 確率 30% 防御 (コストx14) %上昇 / (武将のコストで効果が変化します)/対象:槍馬\n①防御 (コストx14) %上昇 / (武将のコストで効果が変化します)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍馬　確率 30% / 防御 (コストx14) %上昇 / (武将のコストで効果が変化します)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "槍隊堅陣",
+   "rank": "F",
+   "afterSkill": "槍隊奇襲",
+   "afterRank": "E",
+   "target": "槍",
+   "rate": "30%",
+   "effectShort": "槍防：12%上昇",
+   "afterTarget": "槍",
+   "afterRate": "30%",
+   "afterEffectShort": "攻撃 12%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "火牛鬼",
+   "rank": "D",
+   "afterSkill": "仏敵討伐",
+   "afterRank": "B",
+   "target": "槍弓馬",
+   "rate": "45%",
+   "effectShort": "防御 38%上昇 確率：+45% / 速度 30%上昇",
+   "afterTarget": "槍弓馬",
+   "afterRate": "36%",
+   "afterEffectShort": "防御 (コストx14) %上昇 / (武将のコストで効果が変化します)"
+  },
+  {
+   "slot": "C",
+   "skill": "命運ノ渡し",
+   "rank": "D",
+   "afterSkill": "閃光破陣",
+   "afterRank": "B",
+   "target": "槍馬",
+   "rate": "30%",
+   "effectShort": "防御 (コストx14) %上昇 / (武将のコストで効果が変化します)",
+   "afterTarget": "槍馬器",
+   "afterRate": "35%",
+   "afterEffectShort": "防御 2.7%上昇 / 防御 部隊ランクスキル発動率x9%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "閃光破陣",
+   "rank": "B",
+   "afterSkill": "閃光破陣",
+   "afterRank": "B",
+   "target": "槍馬器",
+   "rate": "35%",
+   "effectShort": "防御 2.7%上昇 / 防御 部隊ランクスキル発動率x9%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "鳳凰の采配",
+   "rank": "B",
+   "afterSkill": "鳳凰の采配",
+   "afterRank": "B",
+   "target": "槍弓馬",
+   "rate": "36%",
+   "effectShort": "防御 28%上昇 / (攻撃部隊に兵器兵科がいれば効果2倍)"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3387 と skills/命運ノ渡し)およびixawiki(BushoCard/3387穴山梅雪)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

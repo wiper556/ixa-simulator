@@ -1,0 +1,106 @@
+{
+ "name": "石川数正",
+ "no": "3214",
+ "ch": null,
+ "cost": 2.0,
+ "troop": "槍馬防",
+ "sub": "",
+ "effect": "防御 (コストx12) %上昇 / (武将のコストで効果が変化します)",
+ "furigana": "いしかわかずまさ",
+ "illustrator": "山下ナナオ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 645,
+ "atkGrowth": 14.0,
+ "defBase": 690,
+ "defGrowth": 16.0,
+ "tacticsBase": 465.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2100,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "D",
+  "uma": "B",
+  "ki": "B"
+ },
+ "initialSkill": "楔外交",
+ "skillDetail": "D/LV10 確率 33% 防御 (コストx12) %上昇 / (武将のコストで効果が変化します)/対象:槍馬\n①防御 (コストx12) %上昇 / (武将のコストで効果が変化します)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍馬　確率 33% / 防御 (コストx12) %上昇 / (武将のコストで効果が変化します)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "騎馬隊布陣",
+   "rank": "E",
+   "afterSkill": "騎馬隊堅陣",
+   "afterRank": "F",
+   "target": "馬",
+   "rate": "15%",
+   "effectShort": "防御 20%上昇",
+   "afterTarget": "馬",
+   "afterRate": "30%",
+   "afterEffectShort": "馬防：12%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "騎馬隊堅陣",
+   "rank": "F",
+   "afterSkill": "騎馬隊奇襲",
+   "afterRank": "E",
+   "target": "馬",
+   "rate": "30%",
+   "effectShort": "馬防：12%上昇",
+   "afterTarget": "馬",
+   "afterRate": "30%",
+   "afterEffectShort": "馬攻：12%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "騎馬隊守護",
+   "rank": "E",
+   "afterSkill": "騎馬隊挟撃",
+   "afterRank": "E",
+   "target": "馬",
+   "rate": "25%",
+   "effectShort": "防御 (コストx6.5) %上昇 / (武将のコストで効果が変化します)",
+   "afterTarget": "馬",
+   "afterRate": "25%",
+   "afterEffectShort": "攻撃 (コストx6.5) %上昇 / (武将のコストで効果が変化します)"
+  },
+  {
+   "slot": "S1",
+   "skill": "楔外交",
+   "rank": "D",
+   "afterSkill": "楔外交",
+   "afterRank": "D",
+   "target": "槍馬",
+   "rate": "33%",
+   "effectShort": "防御 (コストx12) %上昇 / (武将のコストで効果が変化します)"
+  },
+  {
+   "slot": "S2",
+   "skill": "馬陣の極み",
+   "rank": "B",
+   "afterSkill": "天賦の神算",
+   "afterRank": "B",
+   "target": "馬",
+   "rate": "30%",
+   "effectShort": "防御 30%上昇",
+   "afterTarget": "全",
+   "afterRate": "50%",
+   "afterEffectShort": "攻撃 12%上昇 / 破壊 5%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3214 と skills/楔外交)およびixawiki(BushoCard/3214石川数正)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

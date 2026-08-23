@@ -1,0 +1,103 @@
+{
+ "name": "壬生綱房",
+ "no": "3380",
+ "ch": null,
+ "cost": 2.0,
+ "troop": "器防",
+ "sub": "",
+ "effect": "防御 (コストx14) %上昇 / (武将のコストで効果が変化します)",
+ "furigana": "みぶつなふさ",
+ "illustrator": "isuZu",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 840,
+ "atkGrowth": 21.0,
+ "defBase": 860,
+ "defGrowth": 25.0,
+ "tacticsBase": 470.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2270,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "B",
+  "uma": "C",
+  "ki": "A"
+ },
+ "initialSkill": "長凶会日",
+ "skillDetail": "D/LV10 確率 27% 防御 (コストx14) %上昇 / (武将のコストで効果が変化します)/対象:器\n①防御 (コストx14) %上昇 / (武将のコストで効果が変化します)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "器　確率 27% / 防御 (コストx14) %上昇 / (武将のコストで効果が変化します)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "兵器布陣",
+   "rank": "E",
+   "afterSkill": "城砕き",
+   "afterRank": "E",
+   "target": "器",
+   "rate": "15%",
+   "effectShort": "防御 20%上昇",
+   "afterTarget": "器",
+   "afterRate": "15%",
+   "afterEffectShort": "破壊 20%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "釣瓶撃ち",
+   "rank": "D",
+   "afterSkill": "弾幕防壁陣",
+   "afterRank": "C",
+   "target": "砲器",
+   "rate": "25%",
+   "effectShort": "防御 25%上昇",
+   "afterTarget": "弓砲",
+   "afterRate": "20%",
+   "afterEffectShort": "防御 30%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "長凶会日",
+   "rank": "D",
+   "afterSkill": "静謐ノ歌",
+   "afterRank": "B",
+   "target": "器",
+   "rate": "27%",
+   "effectShort": "防御 (コストx14) %上昇 / (武将のコストで効果が変化します)",
+   "afterTarget": "槍器",
+   "afterRate": "45%",
+   "afterEffectShort": "防御 40%上昇 / 自軍部隊数5以下でのみ発動 / 敵軍部隊数x5%を効果に加算"
+  },
+  {
+   "slot": "S1",
+   "skill": "静謐ノ歌",
+   "rank": "B",
+   "afterSkill": "静謐ノ歌",
+   "afterRank": "B",
+   "target": "槍器",
+   "rate": "45%",
+   "effectShort": "防御 40%上昇 / 自軍部隊数5以下でのみ発動 / 敵軍部隊数x5%を効果に加算"
+  },
+  {
+   "slot": "S2",
+   "skill": "常勝の采配",
+   "rank": "B",
+   "afterSkill": "常勝の采配",
+   "afterRank": "B",
+   "target": "槍馬器",
+   "rate": "38%",
+   "effectShort": "防御 (0.7x防御参加武将数)%上昇 / (模倣不可)"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3380 と skills/長凶会日)およびixawiki(BushoCard/3380壬生綱房)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

@@ -1,0 +1,109 @@
+{
+ "name": "志駄義秀",
+ "no": "3537",
+ "ch": null,
+ "cost": 3.0,
+ "troop": "槍弓器鉄防",
+ "sub": "",
+ "effect": "防御 62%上昇 / (自領以外の加勢で効果2倍)",
+ "furigana": "しだよしひで",
+ "illustrator": "isuZu",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 880,
+ "atkGrowth": 28.0,
+ "defBase": 900,
+ "defGrowth": 32.0,
+ "tacticsBase": 470.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 3030,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "B",
+  "uma": "B",
+  "ki": "B"
+ },
+ "initialSkill": "閻魔ノ副将",
+ "skillDetail": "C/LV10 確率 48% 防御 62%上昇 / (自領以外の加勢で効果2倍)/対象:槍弓器鉄\n①防御 62%上昇 / (自領以外の加勢で効果2倍)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍弓器鉄　確率 48% / 防御 62%上昇 / (自領以外の加勢で効果2倍)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "閻魔ノ副将",
+   "rank": "C",
+   "afterSkill": "名族ノ山塞",
+   "afterRank": "A",
+   "target": "槍弓器鉄",
+   "rate": "48%",
+   "effectShort": "防御 62%上昇 / (自領以外の加勢で効果2倍)",
+   "afterTarget": "弓馬器焙",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 92%上昇 防御 45%上昇 / このスキルを所持する武将の全スキルの卓越確率に20%を加算する(模倣不可)"
+  },
+  {
+   "slot": "B",
+   "skill": "閻魔ノ副将",
+   "rank": "C",
+   "afterSkill": "名族ノ山塞",
+   "afterRank": "A",
+   "target": "槍弓器鉄",
+   "rate": "48%",
+   "effectShort": "防御 62%上昇 / (自領以外の加勢で効果2倍)",
+   "afterTarget": "弓馬器焙",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 92%上昇 防御 45%上昇 / このスキルを所持する武将の全スキルの卓越確率に20%を加算する(模倣不可)"
+  },
+  {
+   "slot": "C",
+   "skill": "千人塚",
+   "rank": "C",
+   "afterSkill": "極楽護法",
+   "afterRank": "B",
+   "target": "馬器騎",
+   "rate": "32%",
+   "effectShort": "防御 66%上昇 / (自領以外の加勢で効果1.5倍)",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 60%上昇 防御 60%上昇 / 卓越：追加確率50%で攻防効果が1.5倍"
+  },
+  {
+   "slot": "S1",
+   "skill": "名族ノ山塞",
+   "rank": "A",
+   "afterSkill": "鬼滅刺",
+   "afterRank": "A",
+   "target": "弓馬器焙",
+   "rate": "100%",
+   "effectShort": "攻撃 92%上昇 防御 45%上昇 / このスキルを所持する武将の全スキルの卓越確率に20%を加算する(模倣不可)",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 70%上昇 防御 70%上昇(卓越確率+25%加算・模倣不可)"
+  },
+  {
+   "slot": "S2",
+   "skill": "蛞蝓",
+   "rank": "C",
+   "afterSkill": "非攻",
+   "afterRank": "B",
+   "target": "槍器鉄",
+   "rate": "48%",
+   "effectShort": "防御 60%上昇 / (自領以外の加勢で効果1.5倍)",
+   "afterTarget": "槍砲器",
+   "afterRate": "37%",
+   "afterEffectShort": "防御 82%上昇 / このスキルを所持する武将の所有者が影城主のとき、防御効果1.5倍"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3537 と skills/閻魔ノ副将)およびixawiki(BushoCard/3537志駄義秀)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

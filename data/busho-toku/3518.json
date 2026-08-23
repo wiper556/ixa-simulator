@@ -1,0 +1,109 @@
+{
+ "name": "奥平信昌",
+ "no": "3518",
+ "ch": null,
+ "cost": 3.0,
+ "troop": "全攻",
+ "sub": "",
+ "effect": "攻撃 55%上昇 防御 55%上昇 / 部隊内の「死線ノ楔」スキル数×22%を攻防効果に加算",
+ "furigana": "おくだいらのぶまさ",
+ "illustrator": "匈歌ハトリ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 870,
+ "atkGrowth": 28.0,
+ "defBase": 870,
+ "defGrowth": 28.0,
+ "tacticsBase": 470.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 3000,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "B",
+  "uma": "B",
+  "ki": "B"
+ },
+ "initialSkill": "死線ノ楔",
+ "skillDetail": "C/LV10 確率 35% 攻撃 55%上昇 防御 55%上昇 / 部隊内の「死線ノ楔」スキル数×22%を攻防効果に加算/対象:全\n①攻撃 55%上昇 防御 55%上昇 / 部隊内の「死線ノ楔」スキル数×22%を攻防効果に加算",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 35% / 攻撃 55%上昇 防御 55%上昇 / 部隊内の「死線ノ楔」スキル数×22%を攻防効果に加算"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "死線ノ楔",
+   "rank": "C",
+   "afterSkill": "武神百鬼",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "35%",
+   "effectShort": "攻撃 55%上昇 防御 55%上昇 / 部隊内の「死線ノ楔」スキル数×22%を攻防効果に加算",
+   "afterTarget": "槍弓馬器",
+   "afterRate": "34%",
+   "afterEffectShort": "攻撃 55%上昇 防御 55%上昇 / 部隊内の「武神百鬼」スキル数×35%を攻防効果に加算"
+  },
+  {
+   "slot": "B",
+   "skill": "死線ノ楔",
+   "rank": "C",
+   "afterSkill": "武神百鬼",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "35%",
+   "effectShort": "攻撃 55%上昇 防御 55%上昇 / 部隊内の「死線ノ楔」スキル数×22%を攻防効果に加算",
+   "afterTarget": "槍弓馬器",
+   "afterRate": "34%",
+   "afterEffectShort": "攻撃 55%上昇 防御 55%上昇 / 部隊内の「武神百鬼」スキル数×35%を攻防効果に加算"
+  },
+  {
+   "slot": "C",
+   "skill": "死線ノ楔",
+   "rank": "C",
+   "afterSkill": "武神百鬼",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "35%",
+   "effectShort": "攻撃 55%上昇 防御 55%上昇 / 部隊内の「死線ノ楔」スキル数×22%を攻防効果に加算",
+   "afterTarget": "槍弓馬器",
+   "afterRate": "34%",
+   "afterEffectShort": "攻撃 55%上昇 防御 55%上昇 / 部隊内の「武神百鬼」スキル数×35%を攻防効果に加算"
+  },
+  {
+   "slot": "S1",
+   "skill": "武神百鬼",
+   "rank": "A",
+   "afterSkill": "極楽護法",
+   "afterRank": "B",
+   "target": "槍弓馬器",
+   "rate": "34%",
+   "effectShort": "攻撃 55%上昇 防御 55%上昇 / 部隊内の「武神百鬼」スキル数×35%を攻防効果に加算",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 60%上昇 防御 60%上昇 / 卓越：追加確率50%で攻防効果が1.5倍"
+  },
+  {
+   "slot": "S2",
+   "skill": "蓬左ノ行軍",
+   "rank": "D",
+   "afterSkill": "十字飛車",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "42%",
+   "effectShort": "攻撃 65%上昇 / 防御 65%上昇",
+   "afterTarget": "槍砲器",
+   "afterRate": "42%",
+   "afterEffectShort": "攻撃 77%上昇 / 防御 77%上昇 / 破壊 50%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3518 と skills/死線ノ楔)およびixawiki(BushoCard/3518奥平信昌)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

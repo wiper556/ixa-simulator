@@ -1,0 +1,110 @@
+{
+ "name": "大関高増",
+ "no": "3585",
+ "ch": null,
+ "cost": 3.0,
+ "troop": "槍砲器防",
+ "sub": "",
+ "effect": "防御 210%上昇 / このスキルを所持する武将の所有者が影城主のとき、防御効果1.5倍",
+ "furigana": "おおぜきたかます",
+ "illustrator": "nabe",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 860,
+ "atkGrowth": 27.0,
+ "defBase": 910,
+ "defGrowth": 32.0,
+ "tacticsBase": 480.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 3070,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "C",
+  "uma": "B",
+  "ki": "B"
+ },
+ "initialSkill": "七騎筆頭",
+ "skillDetail": "C/LV10 確率 40% 防御 210%上昇 / このスキルを所持する武将の所有者が影城主のとき防御効果1.5倍/対象:槍砲器\n①防御 210%上昇 / このスキルを所持する武将の所有者が影城主のとき防御効果1.5倍",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍砲器　確率 40% / 防御 210%上昇 / このスキルを所持する武将の所有者が影城主のとき、防御効果1.5倍"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "七騎筆頭",
+   "rank": "C",
+   "afterSkill": "野太刀",
+   "afterRank": "C",
+   "target": "槍砲器",
+   "rate": "40%",
+   "effectShort": "防御 210%上昇 / このスキルを所持する武将の所有者が影城主のとき、防御効果1.5倍",
+   "afterTarget": "全",
+   "afterRate": "17%",
+   "afterEffectShort": "攻撃 77%上昇 / 防御 77%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "七騎筆頭",
+   "rank": "C",
+   "afterSkill": "野太刀",
+   "afterRank": "C",
+   "target": "槍砲器",
+   "rate": "40%",
+   "effectShort": "防御 210%上昇 / このスキルを所持する武将の所有者が影城主のとき、防御効果1.5倍",
+   "afterTarget": "全",
+   "afterRate": "17%",
+   "afterEffectShort": "攻撃 77%上昇 / 防御 77%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "七騎筆頭",
+   "rank": "C",
+   "afterSkill": "野太刀",
+   "afterRank": "C",
+   "target": "槍砲器",
+   "rate": "40%",
+   "effectShort": "防御 210%上昇 / このスキルを所持する武将の所有者が影城主のとき、防御効果1.5倍",
+   "afterTarget": "全",
+   "afterRate": "17%",
+   "afterEffectShort": "攻撃 77%上昇 / 防御 77%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "野太刀",
+   "rank": "C",
+   "afterSkill": "戦陣 凱旋",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "17%",
+   "effectShort": "攻撃 77%上昇 / 防御 77%上昇",
+   "afterTarget": "全",
+   "afterRate": "10%",
+   "afterEffectShort": "攻撃 87%上昇+防御 87%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "忠魂三州",
+   "rank": "C",
+   "afterSkill": "覇・一期一振",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "42%",
+   "effectShort": "防御 88%上昇 / このスキルを所持する武将の所有者が影城主のとき、防御効果1.5倍",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 85%上昇 防御 85%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3585 と skills/七騎筆頭)およびixawiki(BushoCard/3585大関高増)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。",
+  "2026-08-23: skillDetail に読点が混入していた(F-01違反)。ixanary の原文が「配置時、防御効果が」のように読点を使うのをそのまま取り込んでいた。読点を外した。"
+ ]
+}

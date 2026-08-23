@@ -1,0 +1,106 @@
+{
+ "name": "長束正家",
+ "no": "3302",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "弓器防",
+ "sub": "",
+ "effect": "防御 38%上昇 / 破壊 22%上昇",
+ "furigana": "なつかまさいえ",
+ "illustrator": "オンダカツキ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 840,
+ "atkGrowth": 19.0,
+ "defBase": 890,
+ "defGrowth": 22.0,
+ "tacticsBase": 460.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2500,
+ "rankGrades": {
+  "yari": "C",
+  "yumi": "A",
+  "uma": "B",
+  "ki": "A"
+ },
+ "initialSkill": "算術の極み",
+ "skillDetail": "D/LV10 確率 30% 防御 38%上昇 / 破壊 22%上昇/対象:弓器\n①防御が38%上昇 / 破壊 22%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓器　確率 30% / 防御 38%上昇 / 破壊 22%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "弓隊剛撃",
+   "rank": "D",
+   "afterSkill": "槍弓猛襲",
+   "afterRank": "D",
+   "target": "弓",
+   "rate": "35%",
+   "effectShort": "攻撃 20%上昇",
+   "afterTarget": "槍弓",
+   "afterRate": "15%",
+   "afterEffectShort": "攻撃 (コストx9) %上昇 / (武将のコストで効果が変化します)"
+  },
+  {
+   "slot": "B",
+   "skill": "矢雨備え",
+   "rank": "D",
+   "afterSkill": "三段撃 神速",
+   "afterRank": "C",
+   "target": "弓器",
+   "rate": "30%",
+   "effectShort": "防御 25%上昇",
+   "afterTarget": "砲",
+   "afterRate": "50%",
+   "afterEffectShort": "攻撃 12%上昇 / 破壊 15%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "算術の極み",
+   "rank": "D",
+   "afterSkill": "比類なき忠功",
+   "afterRank": "D",
+   "target": "弓器",
+   "rate": "30%",
+   "effectShort": "防御 38%上昇 / 破壊 22%上昇",
+   "afterTarget": "弓馬器",
+   "afterRate": "30%",
+   "afterEffectShort": "防御 ((1+ランク)xコストx1.7) %上昇 / 武将ランクとコストで効果が変化"
+  },
+  {
+   "slot": "S1",
+   "skill": "比類なき忠功",
+   "rank": "D",
+   "afterSkill": "比類なき忠功",
+   "afterRank": "D",
+   "target": "弓馬器",
+   "rate": "30%",
+   "effectShort": "防御 ((1+ランク)xコストx1.7) %上昇 / 武将ランクとコストで効果が変化"
+  },
+  {
+   "slot": "S2",
+   "skill": "君臣豊楽",
+   "rank": "B",
+   "afterSkill": "捨て奸",
+   "afterRank": "B",
+   "target": "弓砲器",
+   "rate": "15%",
+   "effectShort": "防御 40%上昇",
+   "afterTarget": "弓砲器",
+   "afterRate": "15%",
+   "afterEffectShort": "防御 37%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3302 と skills/算術の極み)およびixawiki(BushoCard/3302長束正家)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

@@ -1,0 +1,100 @@
+{
+ "name": "真柄直隆",
+ "no": "3241",
+ "ch": null,
+ "cost": 2.0,
+ "troop": "槍馬攻",
+ "sub": "",
+ "effect": "攻撃 30%上昇",
+ "furigana": "まがらなおたか",
+ "illustrator": "碧風羽",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 950,
+ "atkGrowth": 48.0,
+ "defBase": 860,
+ "defGrowth": 44.0,
+ "tacticsBase": 470.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 1500,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "B",
+  "uma": "A",
+  "ki": "C"
+ },
+ "initialSkill": "単騎駆之将",
+ "skillDetail": "D/LV10 確率 24% 攻撃 30%上昇/対象:槍馬\n①攻撃が30%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍馬　確率 24% / 攻撃 30%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "槍隊進撃",
+   "rank": "F",
+   "afterSkill": "槍隊襲撃",
+   "afterRank": "F",
+   "target": "槍",
+   "rate": "10%",
+   "effectShort": "槍攻：15%上昇",
+   "afterTarget": "槍",
+   "afterRate": "20%",
+   "afterEffectShort": "攻撃 10%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "剣術 攻乃型",
+   "rank": "E",
+   "afterSkill": "迅速行軍",
+   "afterRank": "E",
+   "target": null,
+   "rate": "30%",
+   "effectShort": "対象 将 / 攻撃 20%上昇",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "速度 20%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "虚：微塵流",
+   "rank": "D",
+   "afterSkill": "虚：微塵流",
+   "afterRank": "D",
+   "target": null,
+   "rate": "30%",
+   "effectShort": "対象 将 / 攻撃 35%上昇 確率：+30% / 速度 15%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "単騎駆之将",
+   "rank": "D",
+   "afterSkill": "単騎駆之将",
+   "afterRank": "D",
+   "target": "槍馬",
+   "rate": "24%",
+   "effectShort": "攻撃 30%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "剣豪将軍",
+   "rank": "B",
+   "afterSkill": "剣豪将軍",
+   "afterRank": "B",
+   "target": null,
+   "rate": "35%",
+   "effectShort": "対象 将 / 攻撃 35%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3241 と skills/単騎駆之将)およびixawiki(BushoCard/3241真柄直隆)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

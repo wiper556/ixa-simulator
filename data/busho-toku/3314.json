@@ -1,0 +1,103 @@
+{
+ "name": "心月斎道俊",
+ "no": "3314",
+ "ch": null,
+ "cost": 2.0,
+ "troop": "槍弓馬攻",
+ "sub": "",
+ "effect": "攻撃 42%上昇 / 防御 42%上昇",
+ "furigana": "しんげつさいどうしゅん",
+ "illustrator": "池田正輝",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 860,
+ "atkGrowth": 22.0,
+ "defBase": 860,
+ "defGrowth": 22.0,
+ "tacticsBase": 450.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2260,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "B",
+  "uma": "B",
+  "ki": "C"
+ },
+ "initialSkill": "二葉心",
+ "skillDetail": "D/LV10 確率 28% 攻撃 42%上昇 / 防御 42%上昇/対象:槍弓馬\n①攻撃が42%上昇 / 防御 42%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍弓馬　確率 28% / 攻撃 42%上昇 / 防御 42%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "鉄砲隊備え",
+   "rank": "F",
+   "afterSkill": "防壁破り",
+   "afterRank": "F",
+   "target": "砲",
+   "rate": "8%",
+   "effectShort": "砲防：15%上昇",
+   "afterTarget": "器",
+   "afterRate": "16%",
+   "afterEffectShort": "破壊 (コストx5) %上昇 / (武将のコストで効果が変化します)"
+  },
+  {
+   "slot": "B",
+   "skill": "刹那の猛勇",
+   "rank": "D",
+   "afterSkill": "義兵進軍",
+   "afterRank": "C",
+   "target": "全",
+   "rate": "30%",
+   "effectShort": "攻撃 10%上昇",
+   "afterTarget": "槍弓馬砲",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 7%上昇 / 速度 10%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "屈指の勇将",
+   "rank": "D",
+   "afterSkill": "屈指の勇将",
+   "afterRank": "D",
+   "target": "全",
+   "rate": "37%",
+   "effectShort": "攻撃 22%上昇 / 防御 22%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "二葉心",
+   "rank": "D",
+   "afterSkill": "二葉心",
+   "afterRank": "D",
+   "target": "槍弓馬",
+   "rate": "28%",
+   "effectShort": "攻撃 42%上昇 / 防御 42%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "戦陣 阿吽",
+   "rank": "A",
+   "afterSkill": "覇王征軍",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "25%",
+   "effectShort": "攻撃 42%上昇+防御 42%上昇",
+   "afterTarget": "全",
+   "afterRate": "42%",
+   "afterEffectShort": "攻撃 (部隊総コスト依存)%上昇(総C25=388.79%)(部隊総コストで変動、TRなし)"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3314 と skills/二葉心)およびixawiki(BushoCard/3314心月斎道俊)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

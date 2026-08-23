@@ -1,0 +1,106 @@
+{
+ "name": "津軽信建",
+ "no": "3423",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "弓馬攻",
+ "sub": "",
+ "effect": "攻撃 (コストx12) %上昇 / (武将のコストで効果が変化します)",
+ "furigana": "つがるのぶたけ",
+ "illustrator": "士基軽太",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 890,
+ "atkGrowth": 27.0,
+ "defBase": 840,
+ "defGrowth": 25.0,
+ "tacticsBase": 460.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2580,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "A",
+  "uma": "B",
+  "ki": "C"
+ },
+ "initialSkill": "二死一生",
+ "skillDetail": "D/LV10 確率 100% 攻撃 (コストx12) %上昇 / (武将のコストで効果が変化します)/対象:弓馬\n①攻撃 (コストx12) %上昇 / (武将のコストで効果が変化します)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓馬　確率 100% / 攻撃 (コストx12) %上昇 / (武将のコストで効果が変化します)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "二死一生",
+   "rank": "D",
+   "afterSkill": "黒母衣衆",
+   "afterRank": "D",
+   "target": "弓馬",
+   "rate": "100%",
+   "effectShort": "攻撃 (コストx12) %上昇 / (武将のコストで効果が変化します)",
+   "afterTarget": "弓馬",
+   "afterRate": "21%",
+   "afterEffectShort": "攻撃 (コストx15) %上昇 / (武将のコストで効果が変化します)"
+  },
+  {
+   "slot": "B",
+   "skill": "弓隊襲撃",
+   "rank": "F",
+   "afterSkill": "弓隊堅守",
+   "afterRank": "F",
+   "target": "弓",
+   "rate": "20%",
+   "effectShort": "攻撃 10%上昇",
+   "afterTarget": "弓",
+   "afterRate": "20%",
+   "afterEffectShort": "防御 10%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "征略策",
+   "rank": "D",
+   "afterSkill": "豪槍 御手杵",
+   "afterRank": "B",
+   "target": "槍弓馬",
+   "rate": "27%",
+   "effectShort": "攻撃 20%上昇 / 武将ランクで効果が変化",
+   "afterTarget": "槍弓馬",
+   "afterRate": "42%",
+   "afterEffectShort": "攻撃 49%上昇 / 破壊 24%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "黒母衣衆",
+   "rank": "D",
+   "afterSkill": "豪槍 御手杵",
+   "afterRank": "B",
+   "target": "弓馬",
+   "rate": "21%",
+   "effectShort": "攻撃 (コストx15) %上昇 / (武将のコストで効果が変化します)",
+   "afterTarget": "槍弓馬",
+   "afterRate": "42%",
+   "afterEffectShort": "攻撃 49%上昇 / 破壊 24%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "降魔の残兵",
+   "rank": "B",
+   "afterSkill": "降魔の残兵",
+   "afterRank": "B",
+   "target": "弓馬器",
+   "rate": "100%",
+   "effectShort": "攻撃 17%上昇 / 破壊 32%上昇 / 速度 20%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3423 と skills/二死一生)およびixawiki(BushoCard/3423津軽信建)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

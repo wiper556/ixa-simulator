@@ -1,0 +1,109 @@
+{
+ "name": "立花誾千代",
+ "no": "3468",
+ "ch": null,
+ "cost": 3.0,
+ "troop": "弓器焙防",
+ "sub": "",
+ "effect": "防御 42%上昇 / 自拠点防御時は防御効果1.5倍",
+ "furigana": "たちばなぎんちよ",
+ "illustrator": null,
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 810,
+ "atkGrowth": 24.0,
+ "defBase": 870,
+ "defGrowth": 28.0,
+ "tacticsBase": 460.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2930,
+ "rankGrades": {
+  "yari": null,
+  "yumi": null,
+  "uma": null,
+  "ki": null
+ },
+ "initialSkill": "閃雷戦乙女",
+ "skillDetail": "D/LV10 確率 100% 防御 42%上昇 / 自拠点防御時は防御効果1.5倍/対象:弓器焙\n①防御 42%上昇 / 自拠点防御時は防御効果1.5倍",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓器焙　確率 100% / 防御 42%上昇 / 自拠点防御時は防御効果1.5倍"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "閃雷戦乙女",
+   "rank": "D",
+   "afterSkill": "惨王ノ眷族",
+   "afterRank": "B",
+   "target": "弓器焙",
+   "rate": "100%",
+   "effectShort": "防御 42%上昇 / 自拠点防御時は防御効果1.5倍",
+   "afterTarget": "槍弓器",
+   "afterRate": "21%",
+   "afterEffectShort": "防御 87%上昇 / 自拠点防御時は100%発動"
+  },
+  {
+   "slot": "B",
+   "skill": "弓隊備え",
+   "rank": "F",
+   "afterSkill": "弓隊堅守",
+   "afterRank": "F",
+   "target": "弓",
+   "rate": "10%",
+   "effectShort": "弓防：15%上昇",
+   "afterTarget": "弓",
+   "afterRate": "20%",
+   "afterEffectShort": "防御 10%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "虎落笛",
+   "rank": "D",
+   "afterSkill": "歩き巫女",
+   "afterRank": "D",
+   "target": "弓器",
+   "rate": "15%",
+   "effectShort": "防御 72%上昇 / 自拠点防御時は100%発動",
+   "afterTarget": "弓器",
+   "afterRate": "38%",
+   "afterEffectShort": "防御 43%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "惨王ノ眷族",
+   "rank": "B",
+   "afterSkill": "闘戦経",
+   "afterRank": "B",
+   "target": "槍弓器",
+   "rate": "21%",
+   "effectShort": "防御 87%上昇 / 自拠点防御時は100%発動",
+   "afterTarget": "全",
+   "afterRate": "10%",
+   "afterEffectShort": "防御 80.4%上昇 / 自拠点防御時は100%発動"
+  },
+  {
+   "slot": "S2",
+   "skill": "百足矢",
+   "rank": "D",
+   "afterSkill": "新館御料人",
+   "afterRank": "B",
+   "target": "弓器焙",
+   "rate": "17%",
+   "effectShort": "防御 76%上昇 / 自拠点防御時は100%発動",
+   "afterTarget": "弓砲器",
+   "afterRate": "70%",
+   "afterEffectShort": "攻撃 57.6%上昇 / 防御 57.6%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3468 と skills/閃雷戦乙女)およびixawiki(BushoCard/3468立花誾千代)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

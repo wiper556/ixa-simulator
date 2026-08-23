@@ -1,0 +1,106 @@
+{
+ "name": "鳥居強右衛門",
+ "no": "3357",
+ "ch": null,
+ "cost": 3.0,
+ "troop": "槍器防",
+ "sub": "",
+ "effect": "防御 44%上昇 確率：+39% / 速度 35%上昇",
+ "furigana": "とりいすねえもん",
+ "illustrator": "ハンブ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 850,
+ "atkGrowth": 20.0,
+ "defBase": 860,
+ "defGrowth": 23.0,
+ "tacticsBase": 470.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2830,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "B",
+  "uma": "C",
+  "ki": "B"
+ },
+ "initialSkill": "開運ノ狼煙",
+ "skillDetail": "D/LV10 確率 39% 防御 44%上昇 確率：+39% / 速度 35%上昇/対象:槍器\n①防御が44%上昇 確率：+39% / 速度 35%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍器　確率 39% / 防御 44%上昇 確率：+39% / 速度 35%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "槍隊守備",
+   "rank": "F",
+   "afterSkill": "槍隊急襲",
+   "afterRank": "F",
+   "target": "槍",
+   "rate": "16%",
+   "effectShort": "防御 (コストx5) %上昇 / (武将のコストで効果が変化します)",
+   "afterTarget": "槍",
+   "afterRate": "16%",
+   "afterEffectShort": "槍攻：7.5%上昇 / (武将のコストで効果が変化します)"
+  },
+  {
+   "slot": "B",
+   "skill": "兵器布陣",
+   "rank": "E",
+   "afterSkill": "城砕き",
+   "afterRank": "E",
+   "target": "器",
+   "rate": "15%",
+   "effectShort": "防御 20%上昇",
+   "afterTarget": "器",
+   "afterRate": "15%",
+   "afterEffectShort": "破壊 20%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "開運ノ狼煙",
+   "rank": "D",
+   "afterSkill": "讃歌航路",
+   "afterRank": "D",
+   "target": "槍器",
+   "rate": "39%",
+   "effectShort": "防御 44%上昇 確率：+39% / 速度 35%上昇",
+   "afterTarget": "砲器",
+   "afterRate": "35%",
+   "afterEffectShort": "防御 44%上昇 確率：+35% / 速度 30%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "讃歌航路",
+   "rank": "D",
+   "afterSkill": "不退ノ防戦",
+   "afterRank": "B",
+   "target": "砲器",
+   "rate": "35%",
+   "effectShort": "防御 44%上昇 確率：+35% / 速度 30%上昇",
+   "afterTarget": "馬砲器",
+   "afterRate": "38%",
+   "afterEffectShort": "防御 52%上昇 確率：+38% / 速度 40%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "不退ノ防戦",
+   "rank": "B",
+   "afterSkill": "不退ノ防戦",
+   "afterRank": "B",
+   "target": "馬砲器",
+   "rate": "38%",
+   "effectShort": "防御 52%上昇 確率：+38% / 速度 40%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3357 と skills/開運ノ狼煙)およびixawiki(BushoCard/3357鳥居強右衛門)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

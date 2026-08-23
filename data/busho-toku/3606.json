@@ -1,0 +1,109 @@
+{
+ "name": "石動雷十太",
+ "no": "3606",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "槍砲器攻",
+ "sub": "",
+ "effect": "飛翔5 / 攻撃 310%上昇 防御 310%上昇",
+ "furigana": "いするぎらいじゅうた",
+ "illustrator": "&#169;NW/S,RKKD",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 980,
+ "atkGrowth": 64.0,
+ "defBase": 980,
+ "defGrowth": 64.0,
+ "tacticsBase": 460.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 3210,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "C",
+  "uma": "C",
+  "ki": "B"
+ },
+ "initialSkill": "飯綱",
+ "skillDetail": "C/LV10 確率 55% 飛翔5 / 攻撃 310%上昇 防御 310%上昇/対象:槍砲器\n①飛翔5 / 攻撃 310%上昇 防御 310%上昇",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍砲器　確率 55% / 飛翔5 / 攻撃 310%上昇 防御 310%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "飯綱",
+   "rank": "C",
+   "afterSkill": "義士ノ覚悟",
+   "afterRank": "C",
+   "target": "槍砲器",
+   "rate": "55%",
+   "effectShort": "飛翔5 / 攻撃 310%上昇 防御 310%上昇",
+   "afterTarget": "槍砲器",
+   "afterRate": "65%",
+   "afterEffectShort": "攻撃 310%上昇 防御 310%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "飯綱",
+   "rank": "C",
+   "afterSkill": "義士ノ覚悟",
+   "afterRank": "C",
+   "target": "槍砲器",
+   "rate": "55%",
+   "effectShort": "飛翔5 / 攻撃 310%上昇 防御 310%上昇",
+   "afterTarget": "槍砲器",
+   "afterRate": "65%",
+   "afterEffectShort": "攻撃 310%上昇 防御 310%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "飯綱",
+   "rank": "C",
+   "afterSkill": "義士ノ覚悟",
+   "afterRank": "C",
+   "target": "槍砲器",
+   "rate": "55%",
+   "effectShort": "飛翔5 / 攻撃 310%上昇 防御 310%上昇",
+   "afterTarget": "槍砲器",
+   "afterRate": "65%",
+   "afterEffectShort": "攻撃 310%上昇 防御 310%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "義士ノ覚悟",
+   "rank": "C",
+   "afterSkill": "不朽ノ野心",
+   "afterRank": "C",
+   "target": "槍砲器",
+   "rate": "65%",
+   "effectShort": "攻撃 310%上昇 防御 310%上昇",
+   "afterTarget": "砲器",
+   "afterRate": "55%",
+   "afterEffectShort": "攻撃 260%上昇 防御 260%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "野太刀",
+   "rank": "C",
+   "afterSkill": "戦陣 凱旋",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "17%",
+   "effectShort": "攻撃 77%上昇 / 防御 77%上昇",
+   "afterTarget": "全",
+   "afterRate": "10%",
+   "afterEffectShort": "攻撃 87%上昇+防御 87%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3606 と skills/飯綱)およびixawiki(BushoCard/3606石動雷十太)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

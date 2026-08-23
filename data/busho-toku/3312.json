@@ -1,0 +1,100 @@
+{
+ "name": "関口氏経",
+ "no": "3312",
+ "ch": null,
+ "cost": 2.0,
+ "troop": "全",
+ "sub": "",
+ "effect": "資源獲得率：6% / 破壊した耐久値に応じて資源獲得",
+ "furigana": "せきぐちうじつね",
+ "illustrator": "白藤与一",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 750,
+ "atkGrowth": 22.0,
+ "defBase": 720,
+ "defGrowth": 20.0,
+ "tacticsBase": 450.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2100,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "C",
+  "uma": "B",
+  "ki": "A"
+ },
+ "initialSkill": "善政の妙",
+ "skillDetail": "D/LV10 確率 50% 資源獲得率：6% / 破壊した耐久値に応じて資源獲得/対象:全\n①資源獲得率：6% / 破壊した耐久値に応じて資源獲得",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 50% / 資源獲得率：6% / 破壊した耐久値に応じて資源獲得"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "荒切武者",
+   "rank": "F",
+   "afterSkill": "騎馬隊堅守",
+   "afterRank": "F",
+   "target": "槍馬",
+   "rate": "15%",
+   "effectShort": "攻撃 15%上昇 / 破壊 4%上昇",
+   "afterTarget": "馬",
+   "afterRate": "20%",
+   "afterEffectShort": "馬防：10%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "御国一蹴",
+   "rank": "D",
+   "afterSkill": "御国一蹴",
+   "afterRank": "D",
+   "target": "弓器",
+   "rate": "27%",
+   "effectShort": "攻撃 39%上昇 / 破壊 16%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "大貉",
+   "rank": "D",
+   "afterSkill": "大貉",
+   "afterRank": "D",
+   "target": "槍弓器",
+   "rate": "32%",
+   "effectShort": "攻撃 34%上昇 / 破壊 17%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "善政の妙",
+   "rank": "D",
+   "afterSkill": "善政の妙",
+   "afterRank": "D",
+   "target": "全",
+   "rate": "50%",
+   "effectShort": "資源獲得率：6% / 破壊した耐久値に応じて資源獲得"
+  },
+  {
+   "slot": "S2",
+   "skill": "保食神",
+   "rank": "B",
+   "afterSkill": "疾風怒濤",
+   "afterRank": "B",
+   "target": "全",
+   "rate": "40%",
+   "effectShort": "資源獲得率：10% / 破壊した耐久値に応じて資源獲得",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 5%上昇 / 速度 32%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3312 と skills/善政の妙)およびixawiki(BushoCard/3312関口氏経)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

@@ -1,0 +1,109 @@
+{
+ "name": "柴田勝豊",
+ "no": "3477",
+ "ch": null,
+ "cost": 3.0,
+ "troop": "槍器鉄攻",
+ "sub": "",
+ "effect": "攻撃 (コストx16) %上昇 / (武将のコストで攻撃効果が変化します)",
+ "furigana": "しばたかつとよ",
+ "illustrator": "tatsuya",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 870,
+ "atkGrowth": 28.0,
+ "defBase": 840,
+ "defGrowth": 24.0,
+ "tacticsBase": 450.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2940,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "B",
+  "uma": "C",
+  "ki": "B"
+ },
+ "initialSkill": "阿吽雁股",
+ "skillDetail": "D/LV10 確率 100% 攻撃 (コストx16) %上昇 / (武将のコストで攻撃効果が変化します)/対象:槍器鉄\n①攻撃 (コストx16) %上昇 / (武将のコストで攻撃効果が変化します)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍器鉄　確率 100% / 攻撃 (コストx16) %上昇 / (武将のコストで攻撃効果が変化します)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "阿吽雁股",
+   "rank": "D",
+   "afterSkill": "深閑六連結陣",
+   "afterRank": "B",
+   "target": "槍器鉄",
+   "rate": "100%",
+   "effectShort": "攻撃 (コストx16) %上昇 / (武将のコストで攻撃効果が変化します)",
+   "afterTarget": "槍弓砲",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 56%上昇 / 卓越：追加確率30%で攻撃効果が1.5倍"
+  },
+  {
+   "slot": "B",
+   "skill": "阿吽雁股",
+   "rank": "D",
+   "afterSkill": "深閑六連結陣",
+   "afterRank": "B",
+   "target": "槍器鉄",
+   "rate": "100%",
+   "effectShort": "攻撃 (コストx16) %上昇 / (武将のコストで攻撃効果が変化します)",
+   "afterTarget": "槍弓砲",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 56%上昇 / 卓越：追加確率30%で攻撃効果が1.5倍"
+  },
+  {
+   "slot": "C",
+   "skill": "名家ノ武威",
+   "rank": "D",
+   "afterSkill": "戦鬼侵軍",
+   "afterRank": "B",
+   "target": "槍砲器",
+   "rate": "14%",
+   "effectShort": "攻撃 74%上昇",
+   "afterTarget": "槍砲器",
+   "afterRate": "15%",
+   "afterEffectShort": "攻撃 54%上昇 / 合流攻撃時は必ずスキル発動"
+  },
+  {
+   "slot": "S1",
+   "skill": "深閑六連結陣",
+   "rank": "B",
+   "afterSkill": "仁将無双",
+   "afterRank": "B",
+   "target": "槍弓砲",
+   "rate": "100%",
+   "effectShort": "攻撃 56%上昇 / 卓越：追加確率30%で攻撃効果が1.5倍",
+   "afterTarget": "槍馬砲",
+   "afterRate": "17%",
+   "afterEffectShort": "攻撃防御 ((1+ランク)xコストx2.1) %上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "野太刀",
+   "rank": "C",
+   "afterSkill": "戦陣 凱旋",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "17%",
+   "effectShort": "攻撃 77%上昇 / 防御 77%上昇",
+   "afterTarget": "全",
+   "afterRate": "10%",
+   "afterEffectShort": "攻撃 87%上昇+防御 87%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3477 と skills/阿吽雁股)およびixawiki(BushoCard/3477柴田勝豊)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

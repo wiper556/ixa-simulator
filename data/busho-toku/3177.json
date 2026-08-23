@@ -1,0 +1,106 @@
+{
+ "name": "真田大助",
+ "no": "3177",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "槍馬砲防",
+ "sub": "",
+ "effect": "防御 30%上昇",
+ "furigana": "さなだだいすけ",
+ "illustrator": "冨士原良",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 690,
+ "atkGrowth": 18.0,
+ "defBase": 720,
+ "defGrowth": 17.0,
+ "tacticsBase": 420.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 2320,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "C",
+  "uma": "A",
+  "ki": "C"
+ },
+ "initialSkill": "真田丸 雁金",
+ "skillDetail": "C/LV10 確率 20% 防御 30%上昇/対象:槍馬砲\n①防御が30%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍馬砲　確率 20% / 防御 30%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "真田丸",
+   "rank": "D",
+   "afterSkill": "義兵進軍",
+   "afterRank": "C",
+   "target": "槍馬砲",
+   "rate": "15%",
+   "effectShort": "防御 +30%上昇",
+   "afterTarget": "槍弓馬砲",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 7%上昇 / 速度 10%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "槍馬鱗撃",
+   "rank": "C",
+   "afterSkill": "槍陣の極み",
+   "afterRank": "B",
+   "target": "槍馬",
+   "rate": "35%",
+   "effectShort": "攻撃 20%上昇",
+   "afterTarget": "槍",
+   "afterRate": "30%",
+   "afterEffectShort": "防御 30%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "真田丸 雁金",
+   "rank": "C",
+   "afterSkill": "武運長久",
+   "afterRank": "C",
+   "target": "槍馬砲",
+   "rate": "20%",
+   "effectShort": "防御 30%上昇",
+   "afterTarget": "槍砲",
+   "afterRate": "15%",
+   "afterEffectShort": "攻撃 (コストx9) %上昇 破壊 5%上昇 / (攻撃効果は武将のコストで効果が変化します)"
+  },
+  {
+   "slot": "S1",
+   "skill": "武運長久",
+   "rank": "C",
+   "afterSkill": "三段撃 神速",
+   "afterRank": "C",
+   "target": "槍砲",
+   "rate": "15%",
+   "effectShort": "攻撃 (コストx9) %上昇 破壊 5%上昇 / (攻撃効果は武将のコストで効果が変化します)",
+   "afterTarget": "砲",
+   "afterRate": "50%",
+   "afterEffectShort": "攻撃 12%上昇 / 破壊 15%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "戦陣 千鳥",
+   "rank": "B",
+   "afterSkill": "戦陣 千鳥",
+   "afterRank": "B",
+   "target": "弓馬",
+   "rate": "45%",
+   "effectShort": "防御 30%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3177 と skills/真田丸 雁金)およびixawiki(BushoCard/3177真田大助)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

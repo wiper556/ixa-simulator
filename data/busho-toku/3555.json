@@ -1,0 +1,107 @@
+{
+ "name": "松平信綱",
+ "no": "3555",
+ "ch": null,
+ "cost": 3.0,
+ "troop": "槍弓器防",
+ "sub": "",
+ "effect": "防御 185%上昇 / (自軍6部隊以下の防御時、防御効果1.5倍)",
+ "furigana": "まつだいらのぶつな",
+ "illustrator": "森田悠新",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 870,
+ "atkGrowth": 27.0,
+ "defBase": 900,
+ "defGrowth": 32.0,
+ "tacticsBase": 470.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 3060,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "B",
+  "uma": "C",
+  "ki": "B"
+ },
+ "initialSkill": "知恵伊豆",
+ "skillDetail": "C/LV10 確率 55% 防御 185%上昇 / (自軍6部隊以下の防御時防御効果1.5倍)/対象:槍弓器\n①防御 185%上昇 / (自軍6部隊以下の防御時防御効果1.5倍)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍弓器　確率 55% / 防御 185%上昇 / (自軍6部隊以下の防御時、防御効果1.5倍)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "知恵伊豆",
+   "rank": "C",
+   "afterSkill": "覇・月扇乱舞",
+   "afterRank": "B",
+   "target": "槍弓器",
+   "rate": "55%",
+   "effectShort": "防御 185%上昇 / (自軍6部隊以下の防御時、防御効果1.5倍)",
+   "afterTarget": "弓砲器",
+   "afterRate": "38%",
+   "afterEffectShort": "防御 75%上昇 確率：+38% / 速度 35%上昇 確率：+100% / (加勢出陣時は速度効果2倍)"
+  },
+  {
+   "slot": "B",
+   "skill": "知恵伊豆",
+   "rank": "C",
+   "afterSkill": "覇・月扇乱舞",
+   "afterRank": "B",
+   "target": "槍弓器",
+   "rate": "55%",
+   "effectShort": "防御 185%上昇 / (自軍6部隊以下の防御時、防御効果1.5倍)",
+   "afterTarget": "弓砲器",
+   "afterRate": "38%",
+   "afterEffectShort": "防御 75%上昇 確率：+38% / 速度 35%上昇 確率：+100% / (加勢出陣時は速度効果2倍)"
+  },
+  {
+   "slot": "C",
+   "skill": "知恵伊豆",
+   "rank": "C",
+   "afterSkill": "覇・月扇乱舞",
+   "afterRank": "B",
+   "target": "槍弓器",
+   "rate": "55%",
+   "effectShort": "防御 185%上昇 / (自軍6部隊以下の防御時、防御効果1.5倍)",
+   "afterTarget": "弓砲器",
+   "afterRate": "38%",
+   "afterEffectShort": "防御 75%上昇 確率：+38% / 速度 35%上昇 確率：+100% / (加勢出陣時は速度効果2倍)"
+  },
+  {
+   "slot": "S1",
+   "skill": "覇・月扇乱舞",
+   "rank": "B",
+   "afterSkill": "戦陣 龍馬",
+   "afterRank": "A",
+   "target": "弓砲器",
+   "rate": "38%",
+   "effectShort": "防御 75%上昇 確率：+38% / 速度 35%上昇 確率：+100% / (加勢出陣時は速度効果2倍)",
+   "afterTarget": "全",
+   "afterRate": "50%",
+   "afterEffectShort": "防御 1%上昇(部隊ランクボーナス×10%を加算)"
+  },
+  {
+   "slot": "S2",
+   "skill": "二虎競食ノ計",
+   "rank": "B",
+   "afterSkill": "二虎競食ノ計",
+   "afterRank": "B",
+   "target": "槍器鉄",
+   "rate": "54%",
+   "effectShort": "防御 45%上昇 / 自軍部隊数10以下でのみ発動 / 敵軍部隊数x5%を効果に加算"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3555 と skills/知恵伊豆)およびixawiki(BushoCard/3555松平信綱)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。",
+  "2026-08-23: skillDetail に読点が混入していた(F-01違反)。ixanary の原文が「配置時、防御効果が」のように読点を使うのをそのまま取り込んでいた。読点を外した。"
+ ]
+}

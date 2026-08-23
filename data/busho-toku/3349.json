@@ -1,0 +1,103 @@
+{
+ "name": "白井胤治",
+ "no": "3349",
+ "ch": null,
+ "cost": 2.0,
+ "troop": "弓器攻",
+ "sub": "",
+ "effect": "攻撃 (コストx13) %上昇 / (武将のコストで効果が変化します)",
+ "furigana": "しらいたねはる",
+ "illustrator": "渡辺悟(nabe)",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 870,
+ "atkGrowth": 23.0,
+ "defBase": 860,
+ "defGrowth": 22.0,
+ "tacticsBase": 440.0,
+ "tacticsGrowth": 1.5,
+ "lv0Troops": 2280,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "A",
+  "uma": "C",
+  "ki": "B"
+ },
+ "initialSkill": "神殺しの間",
+ "skillDetail": "D/LV10 確率 18% 攻撃 (コストx13) %上昇 / (武将のコストで効果が変化します)/対象:弓器\n①攻撃 (コストx13) %上昇 / (武将のコストで効果が変化します)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓器　確率 18% / 攻撃 (コストx13) %上昇 / (武将のコストで効果が変化します)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "弓隊急襲",
+   "rank": "F",
+   "afterSkill": "弓隊守備",
+   "afterRank": "F",
+   "target": "弓",
+   "rate": "16%",
+   "effectShort": "攻撃 (コストx5) %上昇 / (武将のコストで効果が変化します)",
+   "afterTarget": "弓",
+   "afterRate": "16%",
+   "afterEffectShort": "防御 (コストx6) %上昇 / (武将のコストで効果が変化します)"
+  },
+  {
+   "slot": "B",
+   "skill": "弓隊襲撃",
+   "rank": "F",
+   "afterSkill": "弓隊堅守",
+   "afterRank": "F",
+   "target": "弓",
+   "rate": "20%",
+   "effectShort": "攻撃 10%上昇",
+   "afterTarget": "弓",
+   "afterRate": "20%",
+   "afterEffectShort": "防御 10%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "神殺しの間",
+   "rank": "D",
+   "afterSkill": "大貉",
+   "afterRank": "D",
+   "target": "弓器",
+   "rate": "18%",
+   "effectShort": "攻撃 (コストx13) %上昇 / (武将のコストで効果が変化します)",
+   "afterTarget": "槍弓器",
+   "afterRate": "32%",
+   "afterEffectShort": "攻撃 34%上昇 / 破壊 17%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "大貉",
+   "rank": "D",
+   "afterSkill": "大貉",
+   "afterRank": "D",
+   "target": "槍弓器",
+   "rate": "32%",
+   "effectShort": "攻撃 34%上昇 / 破壊 17%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "賢王訓戒",
+   "rank": "B",
+   "afterSkill": "賢王訓戒",
+   "afterRank": "B",
+   "target": "弓砲器",
+   "rate": "34%",
+   "effectShort": "攻撃 ((1+ランク)xコストx0.5) %上昇 / 武将ランクとコストで効果が変化"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3349 と skills/神殺しの間)およびixawiki(BushoCard/3349白井胤治)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

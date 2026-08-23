@@ -1,0 +1,103 @@
+{
+ "name": "原虎胤",
+ "no": "3356",
+ "ch": null,
+ "cost": 3.0,
+ "troop": "槍砲攻",
+ "sub": "",
+ "effect": "攻撃 (コストx12) %上昇 破壊 30%上昇 / (攻撃効果は武将のコストで効果が変化します)",
+ "furigana": "はらとらたね",
+ "illustrator": "鹿角",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 860,
+ "atkGrowth": 23.0,
+ "defBase": 850,
+ "defGrowth": 20.0,
+ "tacticsBase": 440.0,
+ "tacticsGrowth": 1.5,
+ "lv0Troops": 2850,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "B",
+  "uma": "C",
+  "ki": "B"
+ },
+ "initialSkill": "騎突 真剛",
+ "skillDetail": "D/LV10 確率 37% 攻撃 (コストx12) %上昇 破壊 30%上昇 / (攻撃効果は武将のコストで効果が変化します)/対象:槍砲\n①攻撃 (コストx12) %上昇 破壊 30%上昇 / (攻撃効果は武将のコストで効果が変化します)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍砲　確率 37% / 攻撃 (コストx12) %上昇 破壊 30%上昇 / (攻撃効果は武将のコストで効果が変化します)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "槍隊突撃",
+   "rank": "F",
+   "afterSkill": "槍隊奇襲",
+   "afterRank": "E",
+   "target": "槍",
+   "rate": "15%",
+   "effectShort": "攻撃 20%上昇",
+   "afterTarget": "槍",
+   "afterRate": "30%",
+   "afterEffectShort": "攻撃 12%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "槍隊進撃",
+   "rank": "F",
+   "afterSkill": "槍隊襲撃",
+   "afterRank": "F",
+   "target": "槍",
+   "rate": "10%",
+   "effectShort": "槍攻：15%上昇",
+   "afterTarget": "槍",
+   "afterRate": "20%",
+   "afterEffectShort": "攻撃 10%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "騎突 真剛",
+   "rank": "D",
+   "afterSkill": "沈勇の士",
+   "afterRank": "D",
+   "target": "槍砲",
+   "rate": "37%",
+   "effectShort": "攻撃 (コストx12) %上昇 破壊 30%上昇 / (攻撃効果は武将のコストで効果が変化します)",
+   "afterTarget": "槍砲",
+   "afterRate": "28%",
+   "afterEffectShort": "攻撃 38%上昇 / 破壊 16%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "沈勇の士",
+   "rank": "D",
+   "afterSkill": "沈勇の士",
+   "afterRank": "D",
+   "target": "槍砲",
+   "rate": "28%",
+   "effectShort": "攻撃 38%上昇 / 破壊 16%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "戦鬼侵軍",
+   "rank": "B",
+   "afterSkill": "戦鬼侵軍",
+   "afterRank": "B",
+   "target": "槍砲器",
+   "rate": "15%",
+   "effectShort": "攻撃 54%上昇 / 合流攻撃時は必ずスキル発動"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3356 と skills/騎突 真剛)およびixawiki(BushoCard/3356原虎胤)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

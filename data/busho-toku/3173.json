@@ -1,0 +1,109 @@
+{
+ "name": "本多正純",
+ "no": "3173",
+ "ch": null,
+ "cost": 1.5,
+ "troop": "弓砲防",
+ "sub": "",
+ "effect": "防御 35%上昇",
+ "furigana": "ほんだまさずみ",
+ "illustrator": "辺野十",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 540,
+ "atkGrowth": 15.0,
+ "defBase": 660,
+ "defGrowth": 18.0,
+ "tacticsBase": 580.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 1680,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "C",
+  "uma": "B",
+  "ki": "A"
+ },
+ "initialSkill": "謀計怜悧",
+ "skillDetail": "C/LV10 確率 20% 防御 35%上昇/対象:弓砲\n①防御が35%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓砲　確率 20% / 防御 35%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "土壁の術",
+   "rank": "D",
+   "afterSkill": "矢雨備え",
+   "afterRank": "D",
+   "target": "弓器",
+   "rate": "15%",
+   "effectShort": "防御 30%上昇",
+   "afterTarget": "弓器",
+   "afterRate": "30%",
+   "afterEffectShort": "防御 25%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "槍弓猛襲",
+   "rank": "D",
+   "afterSkill": "足軽軍法",
+   "afterRank": "D",
+   "target": "槍弓",
+   "rate": "15%",
+   "effectShort": "攻撃 (コストx9) %上昇 / (武将のコストで効果が変化します)",
+   "afterTarget": "槍器",
+   "afterRate": "15%",
+   "afterEffectShort": "攻撃 (コストx9) %上昇 / (武将のコストで効果が変化します)"
+  },
+  {
+   "slot": "C",
+   "skill": "鉄砲隊円陣",
+   "rank": "D",
+   "afterSkill": "弾幕防壁陣",
+   "afterRank": "C",
+   "target": "砲",
+   "rate": "35%",
+   "effectShort": "防御 20%上昇",
+   "afterTarget": "弓砲",
+   "afterRate": "20%",
+   "afterEffectShort": "防御 30%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "弓砲鱗撃",
+   "rank": "C",
+   "afterSkill": "砲陣の極み",
+   "afterRank": "B",
+   "target": "弓砲",
+   "rate": "35%",
+   "effectShort": "攻撃 20%上昇",
+   "afterTarget": "砲",
+   "afterRate": "30%",
+   "afterEffectShort": "防御 30%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "弓砲方陣",
+   "rank": "C",
+   "afterSkill": "三段撃 神速",
+   "afterRank": "C",
+   "target": "弓砲",
+   "rate": "40%",
+   "effectShort": "防御 20%上昇",
+   "afterTarget": "砲",
+   "afterRate": "50%",
+   "afterEffectShort": "攻撃 12%上昇 / 破壊 15%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3173 と skills/謀計怜悧)およびixawiki(BushoCard/3173本多正純)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

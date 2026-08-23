@@ -1,0 +1,106 @@
+{
+ "name": "間宮康俊",
+ "no": "3424",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "馬器防",
+ "sub": "",
+ "effect": "防御 (コストx10) %上昇 / (武将のコストで効果が変化します)",
+ "furigana": "まみややすとし",
+ "illustrator": "白藤 与一",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 800,
+ "atkGrowth": 22.0,
+ "defBase": 860,
+ "defGrowth": 27.0,
+ "tacticsBase": 460.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2570,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "C",
+  "uma": "A",
+  "ki": "B"
+ },
+ "initialSkill": "墨髪突貫",
+ "skillDetail": "D/LV10 確率 100% 防御 (コストx10) %上昇 / (武将のコストで効果が変化します)/対象:馬器\n①防御 (コストx10) %上昇 / (武将のコストで効果が変化します)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "馬器　確率 100% / 防御 (コストx10) %上昇 / (武将のコストで効果が変化します)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "墨髪突貫",
+   "rank": "D",
+   "afterSkill": "不退ノ防戦",
+   "afterRank": "B",
+   "target": "馬器",
+   "rate": "100%",
+   "effectShort": "防御 (コストx10) %上昇 / (武将のコストで効果が変化します)",
+   "afterTarget": "馬砲器",
+   "afterRate": "38%",
+   "afterEffectShort": "防御 52%上昇 確率：+38% / 速度 40%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "騎馬隊布陣",
+   "rank": "E",
+   "afterSkill": "騎馬隊堅陣",
+   "afterRank": "F",
+   "target": "馬",
+   "rate": "15%",
+   "effectShort": "防御 20%上昇",
+   "afterTarget": "馬",
+   "afterRate": "30%",
+   "afterEffectShort": "馬防：12%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "逆虎落",
+   "rank": "D",
+   "afterSkill": "不退ノ防戦",
+   "afterRank": "B",
+   "target": "馬器",
+   "rate": "42%",
+   "effectShort": "防御 18%上昇 / (部隊内の逆虎落スキル所持武将数x18%の効果)",
+   "afterTarget": "馬砲器",
+   "afterRate": "38%",
+   "afterEffectShort": "防御 52%上昇 確率：+38% / 速度 40%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "不退ノ防戦",
+   "rank": "B",
+   "afterSkill": "不退ノ防戦",
+   "afterRank": "B",
+   "target": "馬砲器",
+   "rate": "38%",
+   "effectShort": "防御 52%上昇 確率：+38% / 速度 40%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "天手力男",
+   "rank": "D",
+   "afterSkill": "常勝の采配",
+   "afterRank": "B",
+   "target": "馬器",
+   "rate": "55%",
+   "effectShort": "防御 (コストx10) %上昇 / (武将のコストで効果が変化します)",
+   "afterTarget": "槍馬器",
+   "afterRate": "38%",
+   "afterEffectShort": "防御 (0.7x防御参加武将数)%上昇 / (模倣不可)"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3424 と skills/墨髪突貫)およびixawiki(BushoCard/3424間宮康俊)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

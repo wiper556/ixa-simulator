@@ -1,0 +1,106 @@
+{
+ "name": "本多忠政",
+ "no": "3315",
+ "ch": null,
+ "cost": 3.0,
+ "troop": "砲器攻",
+ "sub": "",
+ "effect": "攻撃 40%上昇 / 破壊 18%上昇",
+ "furigana": "ほんだただまさ",
+ "illustrator": "戸橋ことみ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 900,
+ "atkGrowth": 23.0,
+ "defBase": 840,
+ "defGrowth": 20.0,
+ "tacticsBase": 420.0,
+ "tacticsGrowth": 1.5,
+ "lv0Troops": 2750,
+ "rankGrades": {
+  "yari": "C",
+  "yumi": "B",
+  "uma": "B",
+  "ki": "A"
+ },
+ "initialSkill": "突貫破城",
+ "skillDetail": "D/LV10 確率 16% 攻撃 40%上昇 / 破壊 18%上昇/対象:砲器\n①攻撃が40%上昇 / 破壊 18%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "砲器　確率 16% / 攻撃 40%上昇 / 破壊 18%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "鉄砲隊進撃",
+   "rank": "F",
+   "afterSkill": "城破り",
+   "afterRank": "F",
+   "target": "砲",
+   "rate": "8%",
+   "effectShort": "攻撃 15%上昇",
+   "afterTarget": "器",
+   "afterRate": "10%",
+   "afterEffectShort": "破壊 15%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "南蛮砲術",
+   "rank": "D",
+   "afterSkill": "船団爆雷",
+   "afterRank": "B",
+   "target": "砲器",
+   "rate": "24%",
+   "effectShort": "攻撃 34%上昇 / 破壊 27%上昇",
+   "afterTarget": "弓砲器",
+   "afterRate": "25%",
+   "afterEffectShort": "攻撃 30%上昇 / 破壊 10%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "突貫破城",
+   "rank": "D",
+   "afterSkill": "声遣縦横",
+   "afterRank": "D",
+   "target": "砲器",
+   "rate": "16%",
+   "effectShort": "攻撃 40%上昇 / 破壊 18%上昇",
+   "afterTarget": "槍馬砲",
+   "afterRate": "24%",
+   "afterEffectShort": "攻撃 38%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "声遣縦横",
+   "rank": "D",
+   "afterSkill": "声遣縦横",
+   "afterRank": "D",
+   "target": "槍馬砲",
+   "rate": "24%",
+   "effectShort": "攻撃 38%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "船団爆雷",
+   "rank": "B",
+   "afterSkill": "神速",
+   "afterRank": "A",
+   "target": "弓砲器",
+   "rate": "25%",
+   "effectShort": "攻撃 30%上昇 / 破壊 10%上昇",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "速度 55%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3315 と skills/突貫破城)およびixawiki(BushoCard/3315本多忠政)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

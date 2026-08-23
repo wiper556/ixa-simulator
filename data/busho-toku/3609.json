@@ -1,0 +1,109 @@
+{
+ "name": "赤末有人",
+ "no": "3609",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "弓馬砲攻",
+ "sub": "",
+ "effect": "攻撃 330%上昇 / (合流攻撃時は発動率3倍)",
+ "furigana": "あかまつあるんど",
+ "illustrator": "&#169;NW/S,RKKD",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 930,
+ "atkGrowth": 33.0,
+ "defBase": 840,
+ "defGrowth": 26.0,
+ "tacticsBase": 460.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2680,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "A",
+  "uma": "C",
+  "ki": "B"
+ },
+ "initialSkill": "命頂戴",
+ "skillDetail": "C/LV10 確率 16% 攻撃 330%上昇 / (合流攻撃時は発動率3倍)/対象:弓馬砲\n①攻撃 330%上昇 / (合流攻撃時は発動率3倍)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓馬砲　確率 16% / 攻撃 330%上昇 / (合流攻撃時は発動率3倍)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "命頂戴",
+   "rank": "C",
+   "afterSkill": "荒波独行",
+   "afterRank": "C",
+   "target": "弓馬砲",
+   "rate": "16%",
+   "effectShort": "攻撃 330%上昇 / (合流攻撃時は発動率3倍)",
+   "afterTarget": "槍馬砲",
+   "afterRate": "18%",
+   "afterEffectShort": "攻撃 238%上昇 / (合流攻撃時は発動率2倍)"
+  },
+  {
+   "slot": "B",
+   "skill": "命頂戴",
+   "rank": "C",
+   "afterSkill": "荒波独行",
+   "afterRank": "C",
+   "target": "弓馬砲",
+   "rate": "16%",
+   "effectShort": "攻撃 330%上昇 / (合流攻撃時は発動率3倍)",
+   "afterTarget": "槍馬砲",
+   "afterRate": "18%",
+   "afterEffectShort": "攻撃 238%上昇 / (合流攻撃時は発動率2倍)"
+  },
+  {
+   "slot": "C",
+   "skill": "命頂戴",
+   "rank": "C",
+   "afterSkill": "荒波独行",
+   "afterRank": "C",
+   "target": "弓馬砲",
+   "rate": "16%",
+   "effectShort": "攻撃 330%上昇 / (合流攻撃時は発動率3倍)",
+   "afterTarget": "槍馬砲",
+   "afterRate": "18%",
+   "afterEffectShort": "攻撃 238%上昇 / (合流攻撃時は発動率2倍)"
+  },
+  {
+   "slot": "S1",
+   "skill": "荒波独行",
+   "rank": "C",
+   "afterSkill": "名族ノ山塞",
+   "afterRank": "A",
+   "target": "槍馬砲",
+   "rate": "18%",
+   "effectShort": "攻撃 238%上昇 / (合流攻撃時は発動率2倍)",
+   "afterTarget": "弓馬器焙",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 92%上昇 防御 45%上昇 / このスキルを所持する武将の全スキルの卓越確率に20%を加算する(模倣不可)"
+  },
+  {
+   "slot": "S2",
+   "skill": "戦陣 神楽",
+   "rank": "A",
+   "afterSkill": "遠呂智ノ閃光",
+   "afterRank": "SS",
+   "target": "全 飛翔4",
+   "rate": "100%",
+   "effectShort": "攻撃 77%上昇(卓越:追加確率30%で2倍)",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 125%上昇(卓越追加確率15%・4倍)"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3609 と skills/命頂戴)およびixawiki(BushoCard/3609赤末有人)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

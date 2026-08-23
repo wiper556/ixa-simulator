@@ -1,0 +1,106 @@
+{
+ "name": "矢沢頼綱",
+ "no": "3239",
+ "ch": null,
+ "cost": 3.0,
+ "troop": "槍馬防",
+ "sub": "",
+ "effect": "防御 26%上昇 / (自領以外の加勢で効果2倍)",
+ "furigana": "やざわよりつな",
+ "illustrator": "白藤与一",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 580,
+ "atkGrowth": 17.0,
+ "defBase": 790,
+ "defGrowth": 18.0,
+ "tacticsBase": 470.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2730,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "C",
+  "uma": "A",
+  "ki": "B"
+ },
+ "initialSkill": "老練ノ伏兵",
+ "skillDetail": "D/LV10 確率 24% 防御 26%上昇 / (自領以外の加勢で効果2倍)/対象:槍馬\n①防御 26%上昇 / (自領以外の加勢で効果2倍)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍馬　確率 24% / 防御 26%上昇 / (自領以外の加勢で効果2倍)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "鉄砲隊円陣",
+   "rank": "D",
+   "afterSkill": "弾幕防壁陣",
+   "afterRank": "C",
+   "target": "砲",
+   "rate": "35%",
+   "effectShort": "防御 20%上昇",
+   "afterTarget": "弓砲",
+   "afterRate": "20%",
+   "afterEffectShort": "防御 30%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "千樹挟撃陣",
+   "rank": "C",
+   "afterSkill": "火竜の術",
+   "afterRank": "D",
+   "target": "槍馬",
+   "rate": "35%",
+   "effectShort": "防御 28%上昇",
+   "afterTarget": "弓器",
+   "afterRate": "20%",
+   "afterEffectShort": "攻撃 15%上昇 / 破壊 15%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "老練ノ伏兵",
+   "rank": "D",
+   "afterSkill": "背水之陣",
+   "afterRank": "B",
+   "target": "槍馬",
+   "rate": "24%",
+   "effectShort": "防御 26%上昇 / (自領以外の加勢で効果2倍)",
+   "afterTarget": "槍弓馬",
+   "afterRate": "20%",
+   "afterEffectShort": "防御 37%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "背水之陣",
+   "rank": "B",
+   "afterSkill": "背水之陣",
+   "afterRank": "B",
+   "target": "槍弓馬",
+   "rate": "20%",
+   "effectShort": "防御 37%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "戦國下剋上",
+   "rank": "B",
+   "afterSkill": "背水之陣",
+   "afterRank": "B",
+   "target": "槍弓馬",
+   "rate": "20%",
+   "effectShort": "防御 40%上昇",
+   "afterTarget": "槍弓馬",
+   "afterRate": "20%",
+   "afterEffectShort": "防御 37%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3239 と skills/老練ノ伏兵)およびixawiki(BushoCard/3239矢沢頼綱)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

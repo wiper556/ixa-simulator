@@ -1,0 +1,109 @@
+{
+ "name": "北条高広",
+ "no": "3573",
+ "ch": null,
+ "cost": 3.0,
+ "troop": "槍砲器防",
+ "sub": "",
+ "effect": "防御 140%上昇 / (自領以外の加勢で効果2倍)",
+ "furigana": "きたじょうたかひろ",
+ "illustrator": "秋谷コウ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 860,
+ "atkGrowth": 27.0,
+ "defBase": 920,
+ "defGrowth": 32.0,
+ "tacticsBase": 470.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 3070,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "C",
+  "uma": "B",
+  "ki": "B"
+ },
+ "initialSkill": "廻将一夢",
+ "skillDetail": "C/LV10 確率 48% 防御 140%上昇 / (自領以外の加勢で効果2倍)/対象:槍砲器\n①防御 140%上昇 / (自領以外の加勢で効果2倍)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍砲器　確率 48% / 防御 140%上昇 / (自領以外の加勢で効果2倍)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "廻将一夢",
+   "rank": "C",
+   "afterSkill": "不屈ノ絆",
+   "afterRank": "C",
+   "target": "槍砲器",
+   "rate": "48%",
+   "effectShort": "防御 140%上昇 / (自領以外の加勢で効果2倍)",
+   "afterTarget": "槍弓馬器",
+   "afterRate": "48%",
+   "afterEffectShort": "防御 130%上昇 / (自領以外の加勢で効果2倍)"
+  },
+  {
+   "slot": "B",
+   "skill": "廻将一夢",
+   "rank": "C",
+   "afterSkill": "不屈ノ絆",
+   "afterRank": "C",
+   "target": "槍砲器",
+   "rate": "48%",
+   "effectShort": "防御 140%上昇 / (自領以外の加勢で効果2倍)",
+   "afterTarget": "槍弓馬器",
+   "afterRate": "48%",
+   "afterEffectShort": "防御 130%上昇 / (自領以外の加勢で効果2倍)"
+  },
+  {
+   "slot": "C",
+   "skill": "廻将一夢",
+   "rank": "C",
+   "afterSkill": "不屈ノ絆",
+   "afterRank": "C",
+   "target": "槍砲器",
+   "rate": "48%",
+   "effectShort": "防御 140%上昇 / (自領以外の加勢で効果2倍)",
+   "afterTarget": "槍弓馬器",
+   "afterRate": "48%",
+   "afterEffectShort": "防御 130%上昇 / (自領以外の加勢で効果2倍)"
+  },
+  {
+   "slot": "S1",
+   "skill": "不屈ノ絆",
+   "rank": "C",
+   "afterSkill": "忠義ノ銃壁",
+   "afterRank": "C",
+   "target": "槍弓馬器",
+   "rate": "48%",
+   "effectShort": "防御 130%上昇 / (自領以外の加勢で効果2倍)",
+   "afterTarget": "槍弓器鉄",
+   "afterRate": "44%",
+   "afterEffectShort": "防御 65%上昇 / 拠点待機120分ごとに防御効果2倍(上限1回) / 防御最大：260%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "閻魔ノ副将",
+   "rank": "C",
+   "afterSkill": "名族ノ山塞",
+   "afterRank": "A",
+   "target": "槍弓器鉄",
+   "rate": "48%",
+   "effectShort": "防御 62%上昇 / (自領以外の加勢で効果2倍)",
+   "afterTarget": "弓馬器焙",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 92%上昇 防御 45%上昇 / このスキルを所持する武将の全スキルの卓越確率に20%を加算する(模倣不可)"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3573 と skills/廻将一夢)およびixawiki(BushoCard/3573北条高広)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

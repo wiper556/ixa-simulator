@@ -1,0 +1,104 @@
+{
+ "name": "谷柏直家",
+ "no": "3376",
+ "ch": null,
+ "cost": 2.0,
+ "troop": "槍砲器防",
+ "sub": "",
+ "effect": "防御 36%上昇 / (自領以外の加勢で効果1.5倍)",
+ "furigana": "やがしわなおいえ",
+ "illustrator": "木下月乃",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 840,
+ "atkGrowth": 20.0,
+ "defBase": 860,
+ "defGrowth": 24.0,
+ "tacticsBase": 460.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 2280,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "B",
+  "uma": "C",
+  "ki": "B"
+ },
+ "initialSkill": "今子龍",
+ "skillDetail": "D/LV10 確率 30% 防御 36%上昇 / (自領以外の加勢で効果1.5倍)/対象:槍砲器\n①防御 36%上昇 / (自領以外の加勢で効果1.5倍)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍砲器　確率 30% / 防御 36%上昇 / (自領以外の加勢で効果1.5倍)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "槍隊備え",
+   "rank": "F",
+   "afterSkill": "槍隊堅守",
+   "afterRank": "F",
+   "target": "槍",
+   "rate": "10%",
+   "effectShort": "防御 15%上昇",
+   "afterTarget": "槍",
+   "afterRate": "20%",
+   "afterEffectShort": "槍防：10%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "一国忠言",
+   "rank": "D",
+   "afterSkill": "一国忠言",
+   "afterRank": "D",
+   "target": "槍馬砲",
+   "rate": "24%",
+   "effectShort": "防御 27%上昇 / 防御時のみ、自軍の兵士被害数：2.5%減少(重複・模倣不可)"
+  },
+  {
+   "slot": "C",
+   "skill": "今子龍",
+   "rank": "D",
+   "afterSkill": "忍祖千里眼",
+   "afterRank": "B",
+   "target": "槍砲器",
+   "rate": "30%",
+   "effectShort": "防御 36%上昇 / (自領以外の加勢で効果1.5倍)",
+   "afterTarget": "槍砲器",
+   "afterRate": "40%/100%",
+   "afterEffectShort": "防御 49%上昇(確率40%)+速度 30%上昇(確率100%、加勢出陣時は速度効果3倍)"
+  },
+  {
+   "slot": "S1",
+   "skill": "忍祖千里眼",
+   "rank": "B",
+   "afterSkill": "忍祖千里眼",
+   "afterRank": "B",
+   "target": "槍砲器",
+   "rate": "40%/100%",
+   "effectShort": "防御 49%上昇(確率40%)+速度 30%上昇(確率100%、加勢出陣時は速度効果3倍)",
+   "afterTarget": "槍砲器",
+   "afterRate": "40%/100%",
+   "afterEffectShort": "防御 49%上昇(確率40%)+速度 30%上昇(確率100%、加勢出陣時は速度効果3倍)"
+  },
+  {
+   "slot": "S2",
+   "skill": "不死鳥",
+   "rank": "B",
+   "afterSkill": "不死鳥",
+   "afterRank": "B",
+   "target": "槍砲器",
+   "rate": "37%",
+   "effectShort": "防御 34%上昇 / 自部隊の武将ダメージ軽減6% / (重複発動上限数4)"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3376 と skills/今子龍)およびixawiki(BushoCard/3376谷柏直家)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。",
+  "2026-08-23 訂正: 合成候補の確率が片方だけになっていた。忍祖千里眼と戦陣 一閃は**確率を2つ持つスキル**で(ixanary: 防御49%は確率+40%・速度30%は確率+100% / 攻撃50%は確率+50%・速度50%は確率+100%)、既存の登録は「40%/100%」「50%/100%」と両方を書いていた。一括登録のパーサは data/skill の baseRate を1つ引くだけなので片方に落ちていた。既存の書き方に揃えた。"
+ ]
+}

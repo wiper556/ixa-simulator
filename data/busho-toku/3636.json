@@ -1,0 +1,100 @@
+{
+ "name": "ジタン",
+ "no": "3636",
+ "ch": null,
+ "cost": 2.0,
+ "troop": "馬器騎攻",
+ "sub": "",
+ "effect": "速度 90%上昇 / 攻撃参加した自軍全部隊の帰還速度が2倍(帰還効果は模倣・重複不可)",
+ "furigana": "じたん",
+ "illustrator": "FinalFantasyIX 25th ANNIVERSARY",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 920,
+ "atkGrowth": 33.0,
+ "defBase": 850,
+ "defGrowth": 33.0,
+ "tacticsBase": 440.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2410,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "C",
+  "uma": "A",
+  "ki": "B"
+ },
+ "initialSkill": "とんずら",
+ "skillDetail": "C/LV10 確率 60% 速度 90%上昇 / 攻撃参加した自軍全部隊の帰還速度が2倍(帰還効果は模倣・重複不可)/対象:馬器騎\n①速度 90%上昇 / 攻撃参加した自軍全部隊の帰還速度が2倍(帰還効果は模倣・重複不可)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "馬器騎　確率 60% / 速度 90%上昇 / 攻撃参加した自軍全部隊の帰還速度が2倍(帰還効果は模倣・重複不可)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "是絶景哉",
+   "rank": "C",
+   "afterSkill": "三斎流具足",
+   "afterRank": "B",
+   "target": "槍砲器",
+   "rate": "100%",
+   "effectShort": "攻撃 260%上昇 / 破壊 50%上昇 / 速度 40%上昇",
+   "afterTarget": "馬器騎",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 48%上昇 / 破壊 35%上昇 / 速度 35%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "とんずら",
+   "rank": "C",
+   "afterSkill": "とんずら",
+   "afterRank": "C",
+   "target": "馬器騎",
+   "rate": "60%",
+   "effectShort": "速度 90%上昇 / 攻撃参加した自軍全部隊の帰還速度が2倍(帰還効果は模倣・重複不可)"
+  },
+  {
+   "slot": "C",
+   "skill": "とんずら",
+   "rank": "C",
+   "afterSkill": "とんずら",
+   "afterRank": "C",
+   "target": "馬器騎",
+   "rate": "60%",
+   "effectShort": "速度 90%上昇 / 攻撃参加した自軍全部隊の帰還速度が2倍(帰還効果は模倣・重複不可)"
+  },
+  {
+   "slot": "S1",
+   "skill": "とんずら",
+   "rank": "C",
+   "afterSkill": "とんずら",
+   "afterRank": "C",
+   "target": "馬器騎",
+   "rate": "60%",
+   "effectShort": "速度 90%上昇 / 攻撃参加した自軍全部隊の帰還速度が2倍(帰還効果は模倣・重複不可)"
+  },
+  {
+   "slot": "S2",
+   "skill": "虎切刀",
+   "rank": "C",
+   "afterSkill": "鬼滅刺",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "50%",
+   "effectShort": "攻撃 66%上昇 / 防御 66%上昇",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 70%上昇 防御 70%上昇(卓越確率+25%加算・模倣不可)"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3636 と skills/とんずら)およびixawiki(BushoCard/3636ジタン)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

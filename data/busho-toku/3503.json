@@ -1,0 +1,110 @@
+{
+ "name": "九鬼浄隆",
+ "no": "3503",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "弓馬器防",
+ "sub": "",
+ "effect": "防御 62%上昇 / 本丸防御陣形の第参列目以降に配置時、防御効果が1.5倍",
+ "furigana": "くききよたか",
+ "illustrator": "木下月乃",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 850,
+ "atkGrowth": 25.0,
+ "defBase": 850,
+ "defGrowth": 25.0,
+ "tacticsBase": 460.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2610,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "B",
+  "uma": "C",
+  "ki": "A"
+ },
+ "initialSkill": "守船射撃ノ法",
+ "skillDetail": "C/LV10 確率 44% 防御 62%上昇 / 本丸防御陣形の第参列目以降に配置時防御効果が1.5倍/対象:弓馬器\n①防御 62%上昇 / 本丸防御陣形の第参列目以降に配置時防御効果が1.5倍",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓馬器　確率 44% / 防御 62%上昇 / 本丸防御陣形の第参列目以降に配置時、防御効果が1.5倍"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "守船射撃ノ法",
+   "rank": "C",
+   "afterSkill": "王佐ノ竜胆",
+   "afterRank": "B",
+   "target": "弓馬器",
+   "rate": "44%",
+   "effectShort": "防御 62%上昇 / 本丸防御陣形の第参列目以降に配置時、防御効果が1.5倍",
+   "afterTarget": "槍弓器",
+   "afterRate": "30%",
+   "afterEffectShort": "防御 70%上昇 / (武将のコストで防御効果が変化します)"
+  },
+  {
+   "slot": "B",
+   "skill": "守船射撃ノ法",
+   "rank": "C",
+   "afterSkill": "王佐ノ竜胆",
+   "afterRank": "B",
+   "target": "弓馬器",
+   "rate": "44%",
+   "effectShort": "防御 62%上昇 / 本丸防御陣形の第参列目以降に配置時、防御効果が1.5倍",
+   "afterTarget": "槍弓器",
+   "afterRate": "30%",
+   "afterEffectShort": "防御 70%上昇 / (武将のコストで防御効果が変化します)"
+  },
+  {
+   "slot": "C",
+   "skill": "守船射撃ノ法",
+   "rank": "C",
+   "afterSkill": "王佐ノ竜胆",
+   "afterRank": "B",
+   "target": "弓馬器",
+   "rate": "44%",
+   "effectShort": "防御 62%上昇 / 本丸防御陣形の第参列目以降に配置時、防御効果が1.5倍",
+   "afterTarget": "槍弓器",
+   "afterRate": "30%",
+   "afterEffectShort": "防御 70%上昇 / (武将のコストで防御効果が変化します)"
+  },
+  {
+   "slot": "S1",
+   "skill": "王佐ノ竜胆",
+   "rank": "B",
+   "afterSkill": "惨王ノ眷族",
+   "afterRank": "B",
+   "target": "槍弓器",
+   "rate": "30%",
+   "effectShort": "防御 70%上昇 / (武将のコストで防御効果が変化します)",
+   "afterTarget": "槍弓器",
+   "afterRate": "21%",
+   "afterEffectShort": "防御 87%上昇 / 自拠点防御時は100%発動"
+  },
+  {
+   "slot": "S2",
+   "skill": "衝角",
+   "rank": "C",
+   "afterSkill": "武装商船",
+   "afterRank": "A",
+   "target": "砲器",
+   "rate": "36%",
+   "effectShort": "攻撃 36%上昇 / 破壊 50%上昇",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "部隊内全武将が持つ全スキルに「器」対象を追加する(兵科対象スキル限定・模倣不可)"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3503 と skills/守船射撃ノ法)およびixawiki(BushoCard/3503九鬼浄隆)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。",
+  "2026-08-23: skillDetail に読点が混入していた(F-01違反)。ixanary の原文が「配置時、防御効果が」のように読点を使うのをそのまま取り込んでいた。読点を外した。"
+ ]
+}

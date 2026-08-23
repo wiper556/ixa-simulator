@@ -1,0 +1,107 @@
+{
+ "name": "吉川経家",
+ "no": "3519",
+ "ch": null,
+ "cost": 3.0,
+ "troop": "槍馬器防",
+ "sub": "",
+ "effect": "防御 48%上昇 / この武将の最大指揮兵数と同数の兵士を指揮時、防御効果を2倍する",
+ "furigana": "きっかわつねいえ",
+ "illustrator": "弘司",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 860,
+ "atkGrowth": 26.0,
+ "defBase": 880,
+ "defGrowth": 29.0,
+ "tacticsBase": 460.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 3000,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "C",
+  "uma": "A",
+  "ki": "B"
+ },
+ "initialSkill": "護城ノ義士",
+ "skillDetail": "C/LV10 確率 44% 防御 48%上昇 / この武将の最大指揮兵数と同数の兵士を指揮時防御効果を2倍する/対象:槍馬器\n①防御 48%上昇 / この武将の最大指揮兵数と同数の兵士を指揮時防御効果を2倍する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍馬器　確率 44% / 防御 48%上昇 / この武将の最大指揮兵数と同数の兵士を指揮時、防御効果を2倍する"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "護城ノ義士",
+   "rank": "C",
+   "afterSkill": "絶界煉獄",
+   "afterRank": "B",
+   "target": "槍馬器",
+   "rate": "44%",
+   "effectShort": "防御 48%上昇 / この武将の最大指揮兵数と同数の兵士を指揮時、防御効果を2倍する",
+   "afterTarget": "槍弓馬器",
+   "afterRate": "27%",
+   "afterEffectShort": "防御 90%上昇 / 本丸防御陣形に配置時、この武将の編成コスト消費を-0.5する(模倣不可)"
+  },
+  {
+   "slot": "B",
+   "skill": "引導",
+   "rank": "D",
+   "afterSkill": "絶界煉獄",
+   "afterRank": "B",
+   "target": "槍馬器",
+   "rate": "15%",
+   "effectShort": "防御 78%上昇 / 自拠点防御時は100%発動",
+   "afterTarget": "槍弓馬器",
+   "afterRate": "27%",
+   "afterEffectShort": "防御 90%上昇 / 本丸防御陣形に配置時、この武将の編成コスト消費を-0.5する(模倣不可)"
+  },
+  {
+   "slot": "C",
+   "skill": "覇・獅子爪撃",
+   "rank": "B",
+   "afterSkill": "籠城の妙技",
+   "afterRank": "A",
+   "target": "槍馬器",
+   "rate": "50%",
+   "effectShort": "防御 33%上昇 / 卓越：追加確率30%で防御効果が3倍",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "防御 50%上昇(卓越:追加確率15%で防御効果が3倍)"
+  },
+  {
+   "slot": "S1",
+   "skill": "絶界煉獄",
+   "rank": "B",
+   "afterSkill": "闘戦経",
+   "afterRank": "B",
+   "target": "槍弓馬器",
+   "rate": "27%",
+   "effectShort": "防御 90%上昇 / 本丸防御陣形に配置時、この武将の編成コスト消費を-0.5する(模倣不可)",
+   "afterTarget": "全",
+   "afterRate": "10%",
+   "afterEffectShort": "防御 80.4%上昇 / 自拠点防御時は100%発動"
+  },
+  {
+   "slot": "S2",
+   "skill": "死出ノ田長",
+   "rank": "B",
+   "afterSkill": "死出ノ田長",
+   "afterRank": "B",
+   "target": "槍弓馬器",
+   "rate": "54%",
+   "effectShort": "防御 80%上昇 / 卓越：追加確率30%で防御効果が1.5倍"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3519 と skills/護城ノ義士)およびixawiki(BushoCard/3519吉川経家)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。",
+  "2026-08-23: skillDetail に読点が混入していた(F-01違反)。ixanary の原文が「配置時、防御効果が」のように読点を使うのをそのまま取り込んでいた。読点を外した。"
+ ]
+}

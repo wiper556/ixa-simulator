@@ -1,0 +1,109 @@
+{
+ "name": "伊勢龍姫",
+ "no": "3491",
+ "ch": null,
+ "cost": 1.0,
+ "troop": "槍器防",
+ "sub": "",
+ "effect": "防御 62%上昇 / 自拠点防御時は防御効果1.5倍",
+ "furigana": "いせりゅうひめ",
+ "illustrator": "コナタエル",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 820,
+ "atkGrowth": 24.0,
+ "defBase": 900,
+ "defGrowth": 30.0,
+ "tacticsBase": 460.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 1800,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "B",
+  "uma": "B",
+  "ki": "B"
+ },
+ "initialSkill": "月下霜華",
+ "skillDetail": "C/LV10 確率 100% 防御 62%上昇 / 自拠点防御時は防御効果1.5倍/対象:槍器\n①防御 62%上昇 / 自拠点防御時は防御効果1.5倍",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍器　確率 100% / 防御 62%上昇 / 自拠点防御時は防御効果1.5倍"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "月下霜華",
+   "rank": "C",
+   "afterSkill": "紅牡丹ノ計",
+   "afterRank": "C",
+   "target": "槍器",
+   "rate": "100%",
+   "effectShort": "防御 62%上昇 / 自拠点防御時は防御効果1.5倍",
+   "afterTarget": "槍馬器",
+   "afterRate": "27%",
+   "afterEffectShort": "攻撃 0%上昇 防御 0%上昇 / ★24：60%上昇 ★28：90%上昇 ★32：120%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "月下霜華",
+   "rank": "C",
+   "afterSkill": "紅牡丹ノ計",
+   "afterRank": "C",
+   "target": "槍器",
+   "rate": "100%",
+   "effectShort": "防御 62%上昇 / 自拠点防御時は防御効果1.5倍",
+   "afterTarget": "槍馬器",
+   "afterRate": "27%",
+   "afterEffectShort": "攻撃 0%上昇 防御 0%上昇 / ★24：60%上昇 ★28：90%上昇 ★32：120%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "紅牡丹ノ計",
+   "rank": "C",
+   "afterSkill": "告天子",
+   "afterRank": "B",
+   "target": "槍馬器",
+   "rate": "27%",
+   "effectShort": "攻撃 0%上昇 防御 0%上昇 / ★24：60%上昇 ★28：90%上昇 ★32：120%上昇",
+   "afterTarget": "槍馬騎",
+   "afterRate": "27%",
+   "afterEffectShort": "攻撃防御 (1+武将ランク×武将コスト×2.3) %上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "紅牡丹ノ計",
+   "rank": "C",
+   "afterSkill": "告天子",
+   "afterRank": "B",
+   "target": "槍馬器",
+   "rate": "27%",
+   "effectShort": "攻撃 0%上昇 防御 0%上昇 / ★24：60%上昇 ★28：90%上昇 ★32：120%上昇",
+   "afterTarget": "槍馬騎",
+   "afterRate": "27%",
+   "afterEffectShort": "攻撃防御 (1+武将ランク×武将コスト×2.3) %上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "紅牡丹ノ計",
+   "rank": "C",
+   "afterSkill": "告天子",
+   "afterRank": "B",
+   "target": "槍馬器",
+   "rate": "27%",
+   "effectShort": "攻撃 0%上昇 防御 0%上昇 / ★24：60%上昇 ★28：90%上昇 ★32：120%上昇",
+   "afterTarget": "槍馬騎",
+   "afterRate": "27%",
+   "afterEffectShort": "攻撃防御 (1+武将ランク×武将コスト×2.3) %上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3491 と skills/月下霜華)およびixawiki(BushoCard/3491伊勢龍姫)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

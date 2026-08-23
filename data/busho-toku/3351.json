@@ -1,0 +1,106 @@
+{
+ "name": "遠藤秀清",
+ "no": "3351",
+ "ch": null,
+ "cost": 3.0,
+ "troop": "砲器攻",
+ "sub": "",
+ "effect": "攻撃 43%上昇 / (19時～翌01時は確率5倍)",
+ "furigana": "えんどうひできよ",
+ "illustrator": "COGA",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 880,
+ "atkGrowth": 23.0,
+ "defBase": 840,
+ "defGrowth": 21.0,
+ "tacticsBase": 460.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2820,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "B",
+  "uma": "C",
+  "ki": "A"
+ },
+ "initialSkill": "闇鉄砲",
+ "skillDetail": "D/LV10 確率 12% 攻撃 43%上昇 / (19時～翌01時は確率5倍)/対象:砲器\n①攻撃 43%上昇 / (19時～翌01時は確率5倍)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "砲器　確率 12% / 攻撃 43%上昇 / (19時～翌01時は確率5倍)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "鉄砲隊突撃",
+   "rank": "F",
+   "afterSkill": "鉄砲隊奇襲",
+   "afterRank": "E",
+   "target": "砲",
+   "rate": "12%",
+   "effectShort": "攻撃 20%上昇",
+   "afterTarget": "砲",
+   "afterRate": "25%",
+   "afterEffectShort": "攻撃 12%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "鉄砲隊進撃",
+   "rank": "F",
+   "afterSkill": "城破り",
+   "afterRank": "F",
+   "target": "砲",
+   "rate": "8%",
+   "effectShort": "攻撃 15%上昇",
+   "afterTarget": "器",
+   "afterRate": "10%",
+   "afterEffectShort": "破壊 15%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "闇鉄砲",
+   "rank": "D",
+   "afterSkill": "一文義烈",
+   "afterRank": "D",
+   "target": "砲器",
+   "rate": "12%",
+   "effectShort": "攻撃 43%上昇 / (19時～翌01時は確率5倍)",
+   "afterTarget": "砲器",
+   "afterRate": "38%",
+   "afterEffectShort": "攻撃 (コストx12.5) %上昇 / 破壊 25%上昇 / (武将のコストで効果が変化します)"
+  },
+  {
+   "slot": "S1",
+   "skill": "一文義烈",
+   "rank": "D",
+   "afterSkill": "雪原の奸雄",
+   "afterRank": "B",
+   "target": "砲器",
+   "rate": "38%",
+   "effectShort": "攻撃 (コストx12.5) %上昇 / 破壊 25%上昇 / (武将のコストで効果が変化します)",
+   "afterTarget": "馬器",
+   "afterRate": "35%",
+   "afterEffectShort": "攻撃 42%上昇 / 破壊 34%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "日本丸咆哮",
+   "rank": "B",
+   "afterSkill": "日本丸咆哮",
+   "afterRank": "B",
+   "target": "弓砲器",
+   "rate": "16%",
+   "effectShort": "攻撃 49%上昇 / 破壊 25%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3351 と skills/闇鉄砲)およびixawiki(BushoCard/3351遠藤秀清)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

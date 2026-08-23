@@ -1,0 +1,104 @@
+{
+ "name": "吉田兼見",
+ "no": "3280",
+ "ch": null,
+ "cost": 1.0,
+ "troop": "全防",
+ "sub": "",
+ "effect": "防御 20%上昇 / 防御時のみ、自軍の兵士被害数：2%減少(重複・模倣不可)",
+ "furigana": "よしだかねみ",
+ "illustrator": "cuboon",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 550,
+ "atkGrowth": 15.0,
+ "defBase": 750,
+ "defGrowth": 17.0,
+ "tacticsBase": 460.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 960,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "B",
+  "uma": "B",
+  "ki": "C"
+ },
+ "initialSkill": "神記一筆",
+ "skillDetail": "D/LV10 確率 35% 防御 20%上昇 / 防御時のみ自軍の兵士被害数：2%減少(重複・模倣不可)/対象:全\n①防御 20%上昇 / 防御時のみ自軍の兵士被害数：2%減少(重複・模倣不可)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 35% / 防御 20%上昇 / 防御時のみ、自軍の兵士被害数：2%減少(重複・模倣不可)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "鉄壁の備え",
+   "rank": "D",
+   "afterSkill": "城崩し",
+   "afterRank": "D",
+   "target": "全",
+   "rate": "40%",
+   "effectShort": "防御 15%上昇",
+   "afterTarget": "器",
+   "afterRate": "35%",
+   "afterEffectShort": "破壊 20%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "退者無間獄",
+   "rank": "D",
+   "afterSkill": "退者無間獄",
+   "afterRank": "D",
+   "target": "全",
+   "rate": "20%",
+   "effectShort": "防御戦闘勝利時のみ、敵軍1部隊の武将に追加ダメージ+20"
+  },
+  {
+   "slot": "C",
+   "skill": "神記一筆",
+   "rank": "D",
+   "afterSkill": "総構え",
+   "afterRank": "B",
+   "target": "全",
+   "rate": "35%",
+   "effectShort": "防御 20%上昇 / 防御時のみ 自軍の兵士被害数：2%減少(重複・模倣不可)",
+   "afterTarget": "全",
+   "afterRate": "35%",
+   "afterEffectShort": "防御 30%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "総構え",
+   "rank": "B",
+   "afterSkill": "獅子の陣",
+   "afterRank": "S",
+   "target": "全",
+   "rate": "35%",
+   "effectShort": "防御 30%上昇",
+   "afterTarget": "槍弓馬",
+   "afterRate": "45%",
+   "afterEffectShort": "防御 35%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "洞察",
+   "rank": "B",
+   "afterSkill": "洞察",
+   "afterRank": "B",
+   "target": "全",
+   "rate": "30%",
+   "effectShort": "防御 7.5%上昇 / (部隊ランクボーナスで効果が変化)"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3280 と skills/神記一筆)およびixawiki(BushoCard/3280吉田兼見)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。",
+  "2026-08-23: skillDetail に読点が混入していた(F-01違反)。ixanary の原文が「配置時、防御効果が」のように読点を使うのをそのまま取り込んでいた。読点を外した。"
+ ]
+}

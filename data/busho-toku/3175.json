@@ -1,0 +1,109 @@
+{
+ "name": "煕子",
+ "no": "3175",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "弓砲器防",
+ "sub": "",
+ "effect": "防御 25%上昇",
+ "furigana": "ひろこ",
+ "illustrator": "ツヤイルカ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 640,
+ "atkGrowth": 18.0,
+ "defBase": 620,
+ "defGrowth": 17.0,
+ "tacticsBase": 440.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 2320,
+ "rankGrades": {
+  "yari": "C",
+  "yumi": "A",
+  "uma": "C",
+  "ki": "B"
+ },
+ "initialSkill": "加茂の閨閥",
+ "skillDetail": "C/LV10 確率 20% 防御 25%上昇/対象:弓砲器\n①防御が25%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓砲器　確率 20% / 防御 25%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "火竜の術",
+   "rank": "D",
+   "afterSkill": "謀殺",
+   "afterRank": "D",
+   "target": "弓器",
+   "rate": "20%",
+   "effectShort": "攻撃 15%上昇 / 破壊 15%上昇",
+   "afterTarget": "全",
+   "afterRate": "15%",
+   "afterEffectShort": "攻撃戦闘勝利時のみ、敵軍1部隊の武将に追加ダメージ+35"
+  },
+  {
+   "slot": "B",
+   "skill": "土壁の術",
+   "rank": "D",
+   "afterSkill": "矢雨備え",
+   "afterRank": "D",
+   "target": "弓器",
+   "rate": "15%",
+   "effectShort": "防御 30%上昇",
+   "afterTarget": "弓器",
+   "afterRate": "30%",
+   "afterEffectShort": "防御 25%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "疾風迅雷",
+   "rank": "C",
+   "afterSkill": "義兵進軍",
+   "afterRank": "C",
+   "target": "槍弓馬",
+   "rate": "100%",
+   "effectShort": "速度 35%上昇",
+   "afterTarget": "槍弓馬砲",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 7%上昇 / 速度 10%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "城崩 奈落",
+   "rank": "C",
+   "afterSkill": "鬼謀 国砕",
+   "afterRank": "B",
+   "target": "器",
+   "rate": "25%",
+   "effectShort": "攻撃 5%上昇 / 破壊 25%上昇",
+   "afterTarget": null,
+   "afterRate": "35%",
+   "afterEffectShort": "対象 上級器 / 攻撃 10%上昇 / 破壊 25%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "華玉神恵",
+   "rank": "B",
+   "afterSkill": "車懸り",
+   "afterRank": "B",
+   "target": "砲器",
+   "rate": "22.5%",
+   "effectShort": "防御 40%上昇",
+   "afterTarget": "全",
+   "afterRate": "15%",
+   "afterEffectShort": "攻撃 30%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3175 と skills/加茂の閨閥)およびixawiki(BushoCard/3175煕子)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

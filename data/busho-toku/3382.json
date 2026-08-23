@@ -1,0 +1,106 @@
+{
+ "name": "益子勝宗",
+ "no": "3382",
+ "ch": null,
+ "cost": 2.0,
+ "troop": "槍馬器防",
+ "sub": "",
+ "effect": "防御 49%上昇 / 破壊 30%上昇",
+ "furigana": "ましこかつむね",
+ "illustrator": "isuZu",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 810,
+ "atkGrowth": 20.0,
+ "defBase": 870,
+ "defGrowth": 25.0,
+ "tacticsBase": 460.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2290,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "C",
+  "uma": "B",
+  "ki": "B"
+ },
+ "initialSkill": "怨望烈火",
+ "skillDetail": "D/LV10 確率 24% 防御 49%上昇 / 破壊 30%上昇/対象:槍馬器\n①防御が49%上昇 / 破壊 30%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍馬器　確率 24% / 防御 49%上昇 / 破壊 30%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "兵器布陣",
+   "rank": "E",
+   "afterSkill": "城砕き",
+   "afterRank": "E",
+   "target": "器",
+   "rate": "15%",
+   "effectShort": "防御 20%上昇",
+   "afterTarget": "器",
+   "afterRate": "15%",
+   "afterEffectShort": "破壊 20%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "黄母衣衆",
+   "rank": "D",
+   "afterSkill": "閃光破陣",
+   "afterRank": "B",
+   "target": "槍器",
+   "rate": "40%",
+   "effectShort": "防御 (コストx13) %上昇 / (武将のコストで効果が変化します)",
+   "afterTarget": "槍馬器",
+   "afterRate": "35%",
+   "afterEffectShort": "防御 2.7%上昇 / 防御 部隊ランクスキル発動率x9%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "怨望烈火",
+   "rank": "D",
+   "afterSkill": "神虎吼陣",
+   "afterRank": "B",
+   "target": "槍馬器",
+   "rate": "24%",
+   "effectShort": "防御 49%上昇 / 破壊 30%上昇",
+   "afterTarget": "槍馬砲器",
+   "afterRate": "13%",
+   "afterEffectShort": "防御 42%上昇 / 「陣」「同盟陣」防御時は100%発動"
+  },
+  {
+   "slot": "S1",
+   "skill": "神虎吼陣",
+   "rank": "B",
+   "afterSkill": "神虎吼陣",
+   "afterRank": "B",
+   "target": "槍馬砲器",
+   "rate": "13%",
+   "effectShort": "防御 42%上昇 / 「陣」「同盟陣」防御時は100%発動"
+  },
+  {
+   "slot": "S2",
+   "skill": "聖者ノ調",
+   "rank": "D",
+   "afterSkill": "閃光破陣",
+   "afterRank": "B",
+   "target": "槍器",
+   "rate": "40%",
+   "effectShort": "防御 34%上昇 / (自軍5部隊以下の防御時 効果1.5倍)",
+   "afterTarget": "槍馬器",
+   "afterRate": "35%",
+   "afterEffectShort": "防御 2.7%上昇 / 防御 部隊ランクスキル発動率x9%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3382 と skills/怨望烈火)およびixawiki(BushoCard/3382益子勝宗)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

@@ -1,0 +1,109 @@
+{
+ "name": "豪姫",
+ "no": "3262",
+ "ch": null,
+ "cost": 3.0,
+ "troop": "槍砲攻",
+ "sub": "",
+ "effect": "攻撃 40%上昇 / 武将ランクで効果が変化",
+ "furigana": "ごうひめ",
+ "illustrator": "ギバ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 740,
+ "atkGrowth": 18.0,
+ "defBase": 640,
+ "defGrowth": 16.0,
+ "tacticsBase": 430.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2750,
+ "rankGrades": {
+  "yari": null,
+  "yumi": null,
+  "uma": null,
+  "ki": null
+ },
+ "initialSkill": "夢幻の慈愛",
+ "skillDetail": "D/LV10 確率 18% 攻撃 40%上昇 / 武将ランクで効果が変化/対象:槍砲\n①攻撃 40%上昇 / 武将ランクで効果が変化",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍砲　確率 18% / 攻撃 40%上昇 / 武将ランクで効果が変化"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "騎馬隊突撃",
+   "rank": "F",
+   "afterSkill": "騎馬隊奇襲",
+   "afterRank": "E",
+   "target": "馬",
+   "rate": "15%",
+   "effectShort": "攻撃 20%上昇",
+   "afterTarget": "馬",
+   "afterRate": "30%",
+   "afterEffectShort": "馬攻：12%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "槍隊突撃",
+   "rank": "F",
+   "afterSkill": "槍隊奇襲",
+   "afterRank": "E",
+   "target": "槍",
+   "rate": "15%",
+   "effectShort": "攻撃 20%上昇",
+   "afterTarget": "槍",
+   "afterRate": "30%",
+   "afterEffectShort": "攻撃 12%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "夢幻の慈愛",
+   "rank": "D",
+   "afterSkill": "浪切",
+   "afterRank": "B",
+   "target": "槍砲",
+   "rate": "18%",
+   "effectShort": "攻撃 40%上昇 / 武将ランクで効果が変化",
+   "afterTarget": "槍砲",
+   "afterRate": "30%",
+   "afterEffectShort": "攻撃 37%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "浪切",
+   "rank": "B",
+   "afterSkill": "鬼神刺",
+   "afterRank": "B",
+   "target": "槍砲",
+   "rate": "30%",
+   "effectShort": "攻撃 37%上昇",
+   "afterTarget": "全",
+   "afterRate": "20%",
+   "afterEffectShort": "攻撃 (コスト×10) %上昇 / 武将コストによって効果が変化"
+  },
+  {
+   "slot": "S2",
+   "skill": "常世虫",
+   "rank": "C",
+   "afterSkill": "声遣縦横",
+   "afterRank": "D",
+   "target": "槍弓砲",
+   "rate": "26%",
+   "effectShort": "攻撃 37%上昇",
+   "afterTarget": "槍馬砲",
+   "afterRate": "24%",
+   "afterEffectShort": "攻撃 38%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3262 と skills/夢幻の慈愛)およびixawiki(BushoCard/3262豪姫)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

@@ -1,0 +1,106 @@
+{
+ "name": "さこの方",
+ "no": "3309",
+ "ch": null,
+ "cost": 1.0,
+ "troop": "弓器攻",
+ "sub": "",
+ "effect": "攻撃 41%上昇 / 武将ランクで効果が変化",
+ "furigana": "さこのかた",
+ "illustrator": "cuboon",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 800,
+ "atkGrowth": 21.0,
+ "defBase": 770,
+ "defGrowth": 18.0,
+ "tacticsBase": 460.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 1370,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "A",
+  "uma": "C",
+  "ki": "A"
+ },
+ "initialSkill": "覇王の寵姫",
+ "skillDetail": "D/LV10 確率 28% 攻撃 41%上昇 / 武将ランクで効果が変化/対象:弓器\n①攻撃 41%上昇 / 武将ランクで効果が変化",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓器　確率 28% / 攻撃 41%上昇 / 武将ランクで効果が変化"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "弓隊奇襲",
+   "rank": "E",
+   "afterSkill": "弓隊堅陣",
+   "afterRank": "F",
+   "target": "弓",
+   "rate": "30%",
+   "effectShort": "弓攻：12%上昇",
+   "afterTarget": "弓",
+   "afterRate": "30%",
+   "afterEffectShort": "防御 12%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "弓隊襲撃",
+   "rank": "F",
+   "afterSkill": "弓隊堅守",
+   "afterRank": "F",
+   "target": "弓",
+   "rate": "20%",
+   "effectShort": "攻撃 10%上昇",
+   "afterTarget": "弓",
+   "afterRate": "20%",
+   "afterEffectShort": "防御 10%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "反骨の尖兵",
+   "rank": "D",
+   "afterSkill": "修羅の援兵",
+   "afterRank": "D",
+   "target": "弓馬",
+   "rate": "32%",
+   "effectShort": "攻撃 37%上昇",
+   "afterTarget": "槍弓馬",
+   "afterRate": "25%",
+   "afterEffectShort": "攻撃 25%上昇 / (合流攻撃時は効果2倍)"
+  },
+  {
+   "slot": "S1",
+   "skill": "覇王の寵姫",
+   "rank": "D",
+   "afterSkill": "覇王の寵姫",
+   "afterRank": "D",
+   "target": "弓器",
+   "rate": "28%",
+   "effectShort": "攻撃 41%上昇 / 武将ランクで効果が変化"
+  },
+  {
+   "slot": "S2",
+   "skill": "反逆の奏",
+   "rank": "B",
+   "afterSkill": "三矢の礎",
+   "afterRank": "A",
+   "target": "弓",
+   "rate": "25%",
+   "effectShort": "攻撃 50%上昇",
+   "afterTarget": "弓",
+   "afterRate": "40%",
+   "afterEffectShort": "防御 35%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3309 と skills/覇王の寵姫)およびixawiki(BushoCard/3309さこの方)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

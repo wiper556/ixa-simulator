@@ -1,0 +1,100 @@
+{
+ "name": "阿部定吉",
+ "no": "3370",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "槍砲攻",
+ "sub": "",
+ "effect": "攻撃 64%上昇 / 戦闘敗北時は自軍兵士被害数+10%",
+ "furigana": "あべさだよし",
+ "illustrator": "鹿角",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 850,
+ "atkGrowth": 23.0,
+ "defBase": 850,
+ "defGrowth": 21.0,
+ "tacticsBase": 450.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2550,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "B",
+  "uma": "C",
+  "ki": "A"
+ },
+ "initialSkill": "挺身ノ覚悟",
+ "skillDetail": "D/LV10 確率 40% 攻撃 64%上昇 / 戦闘敗北時は自軍兵士被害数+10%/対象:槍砲\n①攻撃 64%上昇 / 戦闘敗北時は自軍兵士被害数+10%",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍砲　確率 40% / 攻撃 64%上昇 / 戦闘敗北時は自軍兵士被害数+10%"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "槍隊突撃",
+   "rank": "F",
+   "afterSkill": "槍隊奇襲",
+   "afterRank": "E",
+   "target": "槍",
+   "rate": "15%",
+   "effectShort": "攻撃 20%上昇",
+   "afterTarget": "槍",
+   "afterRate": "30%",
+   "afterEffectShort": "攻撃 12%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "青鬼ノ追撃",
+   "rank": "D",
+   "afterSkill": "青鬼ノ追撃",
+   "afterRank": "D",
+   "target": "槍馬砲",
+   "rate": "27%",
+   "effectShort": "攻撃 38%上昇 / 攻撃戦闘勝利時のみ、自部隊の武将ダメージ軽減5%"
+  },
+  {
+   "slot": "C",
+   "skill": "挺身ノ覚悟",
+   "rank": "D",
+   "afterSkill": "喰野虎",
+   "afterRank": "B",
+   "target": "槍砲",
+   "rate": "40%",
+   "effectShort": "攻撃 64%上昇 / 戦闘敗北時は自軍兵士被害数+10%",
+   "afterTarget": "槍馬砲",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 25%上昇 / 破壊 20%上昇 / 速度 35%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "喰野虎",
+   "rank": "B",
+   "afterSkill": "喰野虎",
+   "afterRank": "B",
+   "target": "槍馬砲",
+   "rate": "100%",
+   "effectShort": "攻撃 25%上昇 / 破壊 20%上昇 / 速度 35%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "闘神 火車懸",
+   "rank": "B",
+   "afterSkill": "闘神 火車懸",
+   "afterRank": "B",
+   "target": "槍馬砲",
+   "rate": "33%",
+   "effectShort": "攻撃 48%上昇 / 破壊 27%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3370 と skills/挺身ノ覚悟)およびixawiki(BushoCard/3370阿部定吉)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

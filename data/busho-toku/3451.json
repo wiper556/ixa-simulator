@@ -1,0 +1,94 @@
+{
+ "name": "伊東マンショ",
+ "no": "3451",
+ "ch": null,
+ "cost": 2.0,
+ "troop": "弓馬器防",
+ "sub": "",
+ "effect": "防御 66%上昇 / 破壊 32%上昇",
+ "furigana": "いとうまんしょ",
+ "illustrator": "nabe",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 830,
+ "atkGrowth": 23.0,
+ "defBase": 870,
+ "defGrowth": 29.0,
+ "tacticsBase": 450.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2320,
+ "rankGrades": {
+  "yari": "C",
+  "yumi": "B",
+  "uma": "A",
+  "ki": "B"
+ },
+ "initialSkill": "不龍獅子虎",
+ "skillDetail": "D/LV10 確率 29% 防御 66%上昇 / 破壊 32%上昇/対象:弓・馬・器\n①防御が66%上昇 / 破壊 32%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓/馬/器　確率 29% / 防御 66%上昇 / 破壊 32%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": null,
+   "rank": null,
+   "afterSkill": null,
+   "afterRank": null,
+   "target": null,
+   "rate": null,
+   "effectShort": null
+  },
+  {
+   "slot": "B",
+   "skill": null,
+   "rank": null,
+   "afterSkill": null,
+   "afterRank": null,
+   "target": null,
+   "rate": null,
+   "effectShort": null
+  },
+  {
+   "slot": "C",
+   "skill": null,
+   "rank": null,
+   "afterSkill": null,
+   "afterRank": null,
+   "target": null,
+   "rate": null,
+   "effectShort": null
+  },
+  {
+   "slot": "S1",
+   "skill": null,
+   "rank": null,
+   "afterSkill": null,
+   "afterRank": null,
+   "target": null,
+   "rate": null,
+   "effectShort": null
+  },
+  {
+   "slot": "S2",
+   "skill": null,
+   "rank": null,
+   "afterSkill": null,
+   "afterRank": null,
+   "target": null,
+   "rate": null,
+   "effectShort": null
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3451 と skills/不龍獅子虎)およびixawiki(BushoCard/3451伊東マンショ)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

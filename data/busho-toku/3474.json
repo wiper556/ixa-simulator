@@ -1,0 +1,110 @@
+{
+ "name": "足利氏姫",
+ "no": "3474",
+ "ch": null,
+ "cost": 2.0,
+ "troop": "弓器焙防",
+ "sub": "",
+ "effect": "防御 44%上昇 / このスキルを所持する武将の所有者が影城主のとき、防御効果2倍",
+ "furigana": "あしかがうじひめ",
+ "illustrator": "木下月乃",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 820,
+ "atkGrowth": 23.0,
+ "defBase": 860,
+ "defGrowth": 26.0,
+ "tacticsBase": 450.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2340,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "B",
+  "uma": "B",
+  "ki": "B"
+ },
+ "initialSkill": "輪生",
+ "skillDetail": "D/LV10 確率 49% 防御 44%上昇 / このスキルを所持する武将の所有者が影城主のとき防御効果2倍/対象:弓器焙\n①防御 44%上昇 / このスキルを所持する武将の所有者が影城主のとき防御効果2倍",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓器焙　確率 49% / 防御 44%上昇 / このスキルを所持する武将の所有者が影城主のとき、防御効果2倍"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "輪生",
+   "rank": "D",
+   "afterSkill": "惨王ノ眷族",
+   "afterRank": "B",
+   "target": "弓器焙",
+   "rate": "49%",
+   "effectShort": "防御 44%上昇 / このスキルを所持する武将の所有者が影城主のとき、防御効果2倍",
+   "afterTarget": "槍弓器",
+   "afterRate": "21%",
+   "afterEffectShort": "防御 87%上昇 / 自拠点防御時は100%発動"
+  },
+  {
+   "slot": "B",
+   "skill": "輪生",
+   "rank": "D",
+   "afterSkill": "惨王ノ眷族",
+   "afterRank": "B",
+   "target": "弓器焙",
+   "rate": "49%",
+   "effectShort": "防御 44%上昇 / このスキルを所持する武将の所有者が影城主のとき、防御効果2倍",
+   "afterTarget": "槍弓器",
+   "afterRate": "21%",
+   "afterEffectShort": "防御 87%上昇 / 自拠点防御時は100%発動"
+  },
+  {
+   "slot": "C",
+   "skill": "虎落笛",
+   "rank": "D",
+   "afterSkill": "歩き巫女",
+   "afterRank": "D",
+   "target": "弓器",
+   "rate": "15%",
+   "effectShort": "防御 72%上昇 / 自拠点防御時は100%発動",
+   "afterTarget": "弓器",
+   "afterRate": "38%",
+   "afterEffectShort": "防御 43%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "惨王ノ眷族",
+   "rank": "B",
+   "afterSkill": "闘戦経",
+   "afterRank": "B",
+   "target": "槍弓器",
+   "rate": "21%",
+   "effectShort": "防御 87%上昇 / 自拠点防御時は100%発動",
+   "afterTarget": "全",
+   "afterRate": "10%",
+   "afterEffectShort": "防御 80.4%上昇 / 自拠点防御時は100%発動"
+  },
+  {
+   "slot": "S2",
+   "skill": "凍土ノ女神",
+   "rank": "B",
+   "afterSkill": "違い鎌",
+   "afterRank": "D",
+   "target": "槍弓馬器",
+   "rate": "50%",
+   "effectShort": "防御 84%上昇 / 卓越：追加確率25%で防御効果が1.5倍",
+   "afterTarget": "槍弓馬",
+   "afterRate": "32%",
+   "afterEffectShort": "防御 40%上昇 / 武将ランクで効果が変化"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3474 と skills/輪生)およびixawiki(BushoCard/3474足利氏姫)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。",
+  "2026-08-23: skillDetail に読点が混入していた(F-01違反)。ixanary の原文が「配置時、防御効果が」のように読点を使うのをそのまま取り込んでいた。読点を外した。"
+ ]
+}

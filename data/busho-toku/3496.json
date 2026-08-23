@@ -1,0 +1,109 @@
+{
+ "name": "小田政治",
+ "no": "3496",
+ "ch": null,
+ "cost": 3.0,
+ "troop": "槍弓馬攻",
+ "sub": "",
+ "effect": "攻撃 92%上昇 防御 92%上昇",
+ "furigana": "おだまさはる",
+ "illustrator": "筒井海砂",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 860,
+ "atkGrowth": 27.0,
+ "defBase": 860,
+ "defGrowth": 27.0,
+ "tacticsBase": 470.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2970,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "B",
+  "uma": "B",
+  "ki": "C"
+ },
+ "initialSkill": "累代ノ弓執",
+ "skillDetail": "C/LV10 確率 37% 攻撃 92%上昇 防御 92%上昇/対象:槍弓馬\n①攻撃が92%上昇 防御 92%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍弓馬　確率 37% / 攻撃 92%上昇 防御 92%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "累代ノ弓執",
+   "rank": "C",
+   "afterSkill": "天邪鬼",
+   "afterRank": "C",
+   "target": "槍弓馬",
+   "rate": "37%",
+   "effectShort": "攻撃 92%上昇 防御 92%上昇",
+   "afterTarget": "槍弓馬",
+   "afterRate": "32%",
+   "afterEffectShort": "攻撃 90%上昇 防御 90%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "累代ノ弓執",
+   "rank": "C",
+   "afterSkill": "天邪鬼",
+   "afterRank": "C",
+   "target": "槍弓馬",
+   "rate": "37%",
+   "effectShort": "攻撃 92%上昇 防御 92%上昇",
+   "afterTarget": "槍弓馬",
+   "afterRate": "32%",
+   "afterEffectShort": "攻撃 90%上昇 防御 90%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "奇手",
+   "rank": "D",
+   "afterSkill": "権勢謳歌",
+   "afterRank": "B",
+   "target": "槍弓馬",
+   "rate": "100%",
+   "effectShort": "攻撃 48%上昇 / 防御 48%上昇 / 部隊コスト10以下で効果1.5倍",
+   "afterTarget": "槍弓馬",
+   "afterRate": "27%",
+   "afterEffectShort": "攻撃 74%上昇 / (合流攻撃時は発動率2倍)"
+  },
+  {
+   "slot": "S1",
+   "skill": "天邪鬼",
+   "rank": "C",
+   "afterSkill": "曼珠沙華",
+   "afterRank": "D",
+   "target": "槍弓馬",
+   "rate": "32%",
+   "effectShort": "攻撃 90%上昇 防御 90%上昇",
+   "afterTarget": "全",
+   "afterRate": "40%",
+   "afterEffectShort": "攻撃 59%上昇 防御 59%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "虎切刀",
+   "rank": "C",
+   "afterSkill": "鬼滅刺",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "50%",
+   "effectShort": "攻撃 66%上昇 / 防御 66%上昇",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 70%上昇 防御 70%上昇(卓越確率+25%加算・模倣不可)"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3496 と skills/累代ノ弓執)およびixawiki(BushoCard/3496小田政治)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

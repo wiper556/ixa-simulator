@@ -1,0 +1,106 @@
+{
+ "name": "王直",
+ "no": "3282",
+ "ch": null,
+ "cost": 1.0,
+ "troop": "弓砲器防",
+ "sub": "",
+ "effect": "防御 39%上昇 / 武将ランクで効果が変化",
+ "furigana": "おうちょく",
+ "illustrator": "JUNNY",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 890,
+ "atkGrowth": 18.0,
+ "defBase": 920,
+ "defGrowth": 19.0,
+ "tacticsBase": 445.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 1300,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "A",
+  "uma": "B",
+  "ki": "A"
+ },
+ "initialSkill": "船上ノ巨魁",
+ "skillDetail": "D/LV10 確率 23% 防御 39%上昇 / 武将ランクで効果が変化/対象:弓砲器\n①防御 39%上昇 / 武将ランクで効果が変化",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓砲器　確率 23% / 防御 39%上昇 / 武将ランクで効果が変化"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "兵器布陣",
+   "rank": "E",
+   "afterSkill": "城砕き",
+   "afterRank": "E",
+   "target": "器",
+   "rate": "15%",
+   "effectShort": "防御 20%上昇",
+   "afterTarget": "器",
+   "afterRate": "15%",
+   "afterEffectShort": "破壊 20%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "海賊大名",
+   "rank": "D",
+   "afterSkill": "捨て奸",
+   "afterRank": "B",
+   "target": "弓砲",
+   "rate": "28%",
+   "effectShort": "防御 34%上昇",
+   "afterTarget": "弓砲器",
+   "afterRate": "15%",
+   "afterEffectShort": "防御 37%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "船上ノ巨魁",
+   "rank": "D",
+   "afterSkill": "捨て奸",
+   "afterRank": "B",
+   "target": "弓砲器",
+   "rate": "23%",
+   "effectShort": "防御 39%上昇 / 武将ランクで効果が変化",
+   "afterTarget": "弓砲器",
+   "afterRate": "15%",
+   "afterEffectShort": "防御 37%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "捨て奸",
+   "rank": "B",
+   "afterSkill": "捨て奸",
+   "afterRank": "B",
+   "target": "弓砲器",
+   "rate": "15%",
+   "effectShort": "防御 37%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "組撃ち",
+   "rank": "B",
+   "afterSkill": "八咫烏",
+   "afterRank": "B",
+   "target": "弓砲",
+   "rate": "20%",
+   "effectShort": "防御 35%上昇",
+   "afterTarget": "砲器",
+   "afterRate": "35%",
+   "afterEffectShort": "防御 30%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3282 と skills/船上ノ巨魁)およびixawiki(BushoCard/3282王直)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

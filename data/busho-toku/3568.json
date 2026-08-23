@@ -1,0 +1,110 @@
+{
+ "name": "源義経",
+ "no": "3568",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "馬砲器防",
+ "sub": "",
+ "effect": "防御 180%上昇 / この武将の最大指揮兵数と同数の兵士を指揮時、防御効果を1.5倍する",
+ "furigana": "みなもとのよしつね",
+ "illustrator": null,
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 860,
+ "atkGrowth": 26.0,
+ "defBase": 890,
+ "defGrowth": 31.0,
+ "tacticsBase": 480.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2670,
+ "rankGrades": {
+  "yari": "C",
+  "yumi": "B",
+  "uma": "A",
+  "ki": "B"
+ },
+ "initialSkill": "甘っちょろいなぁ",
+ "skillDetail": "C/LV10 確率 44% 防御 180%上昇 / この武将の最大指揮兵数と同数の兵士を指揮時防御効果を1.5倍する/対象:馬砲器\n①防御 180%上昇 / この武将の最大指揮兵数と同数の兵士を指揮時防御効果を1.5倍する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "馬砲器　確率 44% / 防御 180%上昇 / この武将の最大指揮兵数と同数の兵士を指揮時、防御効果を1.5倍する"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "甘っちょろいなぁ",
+   "rank": "C",
+   "afterSkill": "虎眼慧明",
+   "afterRank": "C",
+   "target": "馬砲器",
+   "rate": "44%",
+   "effectShort": "防御 180%上昇 / この武将の最大指揮兵数と同数の兵士を指揮時、防御効果を1.5倍する",
+   "afterTarget": "槍馬砲",
+   "afterRate": "44%",
+   "afterEffectShort": "防御 180%上昇 / この武将の最大指揮兵数と同数の兵士を指揮時、防御効果を1.5倍する"
+  },
+  {
+   "slot": "B",
+   "skill": "甘っちょろいなぁ",
+   "rank": "C",
+   "afterSkill": "虎眼慧明",
+   "afterRank": "C",
+   "target": "馬砲器",
+   "rate": "44%",
+   "effectShort": "防御 180%上昇 / この武将の最大指揮兵数と同数の兵士を指揮時、防御効果を1.5倍する",
+   "afterTarget": "槍馬砲",
+   "afterRate": "44%",
+   "afterEffectShort": "防御 180%上昇 / この武将の最大指揮兵数と同数の兵士を指揮時、防御効果を1.5倍する"
+  },
+  {
+   "slot": "C",
+   "skill": "甘っちょろいなぁ",
+   "rank": "C",
+   "afterSkill": "虎眼慧明",
+   "afterRank": "C",
+   "target": "馬砲器",
+   "rate": "44%",
+   "effectShort": "防御 180%上昇 / この武将の最大指揮兵数と同数の兵士を指揮時、防御効果を1.5倍する",
+   "afterTarget": "槍馬砲",
+   "afterRate": "44%",
+   "afterEffectShort": "防御 180%上昇 / この武将の最大指揮兵数と同数の兵士を指揮時、防御効果を1.5倍する"
+  },
+  {
+   "slot": "S1",
+   "skill": "虎眼慧明",
+   "rank": "C",
+   "afterSkill": "戦慄ノ遁走曲",
+   "afterRank": "A",
+   "target": "槍馬砲",
+   "rate": "44%",
+   "effectShort": "防御 180%上昇 / この武将の最大指揮兵数と同数の兵士を指揮時、防御効果を1.5倍する",
+   "afterTarget": "弓馬砲",
+   "afterRate": "52%",
+   "afterEffectShort": "防御 88%上昇 確率：+52% / 速度 40%上昇 確率：+100% / (加勢出陣時は速度効果3倍)"
+  },
+  {
+   "slot": "S2",
+   "skill": "護城ノ義士",
+   "rank": "C",
+   "afterSkill": "絶界煉獄",
+   "afterRank": "B",
+   "target": "槍馬器",
+   "rate": "44%",
+   "effectShort": "防御 48%上昇 / この武将の最大指揮兵数と同数の兵士を指揮時、防御効果を2倍する",
+   "afterTarget": "槍弓馬器",
+   "afterRate": "27%",
+   "afterEffectShort": "防御 90%上昇 / 本丸防御陣形に配置時、この武将の編成コスト消費を-0.5する(模倣不可)"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3568 と skills/甘っちょろいなぁ)およびixawiki(BushoCard/3568源義経)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。",
+  "2026-08-23: skillDetail に読点が混入していた(F-01違反)。ixanary の原文が「配置時、防御効果が」のように読点を使うのをそのまま取り込んでいた。読点を外した。"
+ ]
+}

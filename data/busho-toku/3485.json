@@ -1,0 +1,109 @@
+{
+ "name": "石川昭光",
+ "no": "3485",
+ "ch": null,
+ "cost": 3.0,
+ "troop": "弓馬器攻",
+ "sub": "",
+ "effect": "攻撃 60%上昇 防御 60%上昇 / 部隊内の「龍ノ一族」スキル数×15%を攻防効果に加算",
+ "furigana": "いしかわあきみつ",
+ "illustrator": "小森ニコ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 860,
+ "atkGrowth": 27.0,
+ "defBase": 860,
+ "defGrowth": 27.0,
+ "tacticsBase": 460.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2950,
+ "rankGrades": {
+  "yari": "C",
+  "yumi": "A",
+  "uma": "B",
+  "ki": "B"
+ },
+ "initialSkill": "龍ノ一族",
+ "skillDetail": "C/LV10 確率 30% 攻撃 60%上昇 防御 60%上昇 / 部隊内の「龍ノ一族」スキル数×15%を攻防効果に加算/対象:弓馬器\n①攻撃 60%上昇 防御 60%上昇 / 部隊内の「龍ノ一族」スキル数×15%を攻防効果に加算",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓馬器　確率 30% / 攻撃 60%上昇 防御 60%上昇 / 部隊内の「龍ノ一族」スキル数×15%を攻防効果に加算"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "龍ノ一族",
+   "rank": "C",
+   "afterSkill": "戦場妙技",
+   "afterRank": "B",
+   "target": "弓馬器",
+   "rate": "30%",
+   "effectShort": "攻撃 60%上昇 防御 60%上昇 / 部隊内の「龍ノ一族」スキル数×15%を攻防効果に加算",
+   "afterTarget": "全",
+   "afterRate": "32%",
+   "afterEffectShort": "攻撃 72%上昇+防御 72%上昇+破壊 20%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "龍ノ一族",
+   "rank": "C",
+   "afterSkill": "戦場妙技",
+   "afterRank": "B",
+   "target": "弓馬器",
+   "rate": "30%",
+   "effectShort": "攻撃 60%上昇 防御 60%上昇 / 部隊内の「龍ノ一族」スキル数×15%を攻防効果に加算",
+   "afterTarget": "全",
+   "afterRate": "32%",
+   "afterEffectShort": "攻撃 72%上昇+防御 72%上昇+破壊 20%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "龍ノ一族",
+   "rank": "C",
+   "afterSkill": "戦場妙技",
+   "afterRank": "B",
+   "target": "弓馬器",
+   "rate": "30%",
+   "effectShort": "攻撃 60%上昇 防御 60%上昇 / 部隊内の「龍ノ一族」スキル数×15%を攻防効果に加算",
+   "afterTarget": "全",
+   "afterRate": "32%",
+   "afterEffectShort": "攻撃 72%上昇+防御 72%上昇+破壊 20%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "戦場妙技",
+   "rank": "B",
+   "afterSkill": "戦陣 破軍",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "32%",
+   "effectShort": "攻撃 72%上昇+防御 72%上昇+破壊 20%上昇",
+   "afterTarget": "全",
+   "afterRate": "44%",
+   "afterEffectShort": "攻撃 66%上昇+防御 66%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "虎切刀",
+   "rank": "C",
+   "afterSkill": "鬼滅刺",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "50%",
+   "effectShort": "攻撃 66%上昇 / 防御 66%上昇",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 70%上昇 防御 70%上昇(卓越確率+25%加算・模倣不可)"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3485 と skills/龍ノ一族)およびixawiki(BushoCard/3485石川昭光)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

@@ -1,0 +1,103 @@
+{
+ "name": "犬村大角",
+ "no": "3195",
+ "ch": null,
+ "cost": 1.5,
+ "troop": "槍弓馬攻",
+ "sub": "",
+ "effect": "攻撃 20%上昇",
+ "furigana": "いぬむらだいかく",
+ "illustrator": "BISAI",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 660,
+ "atkGrowth": 17.0,
+ "defBase": 530,
+ "defGrowth": 16.0,
+ "tacticsBase": 430.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 1920,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "B",
+  "uma": "B",
+  "ki": "C"
+ },
+ "initialSkill": "礼の八犬士",
+ "skillDetail": "D/LV10 確率 40% 攻撃 20%上昇/対象:槍弓馬\n①攻撃が20%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍弓馬　確率 40% / 攻撃 20%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "騎馬隊剛撃",
+   "rank": "D",
+   "afterSkill": "乗り崩し",
+   "afterRank": "D",
+   "target": "馬",
+   "rate": "35%",
+   "effectShort": "攻撃 20%上昇",
+   "afterTarget": "槍馬",
+   "afterRate": "20%",
+   "afterEffectShort": "攻撃 20%上昇 / 破壊 5%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "槍隊円陣",
+   "rank": "D",
+   "afterSkill": "足軽軍法",
+   "afterRank": "D",
+   "target": "槍",
+   "rate": "40%",
+   "effectShort": "防御 20%上昇",
+   "afterTarget": "槍器",
+   "afterRate": "15%",
+   "afterEffectShort": "攻撃 (コストx9) %上昇 / (武将のコストで効果が変化します)"
+  },
+  {
+   "slot": "C",
+   "skill": "礼の八犬士",
+   "rank": "D",
+   "afterSkill": "仁義八行",
+   "afterRank": "B",
+   "target": "槍弓馬",
+   "rate": "40%",
+   "effectShort": "攻撃 20%上昇",
+   "afterTarget": null,
+   "afterRate": "100%",
+   "afterEffectShort": "対象 合流 / 防御 20%上昇 / (合流攻撃防御時のみ発動)"
+  },
+  {
+   "slot": "S1",
+   "skill": "仁義八行",
+   "rank": "B",
+   "afterSkill": "仁義八行",
+   "afterRank": "B",
+   "target": null,
+   "rate": "100%",
+   "effectShort": "対象 合流 / 防御 20%上昇 / (合流攻撃防御時のみ発動)"
+  },
+  {
+   "slot": "S2",
+   "skill": "仁義八行",
+   "rank": "B",
+   "afterSkill": "仁義八行",
+   "afterRank": "B",
+   "target": null,
+   "rate": "100%",
+   "effectShort": "対象 合流 / 防御 20%上昇 / (合流攻撃防御時のみ発動)"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3195 と skills/礼の八犬士)およびixawiki(BushoCard/3195犬村大角)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

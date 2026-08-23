@@ -1,0 +1,110 @@
+{
+ "name": "ガーネット",
+ "no": "3637",
+ "ch": null,
+ "cost": 0.0,
+ "troop": "将",
+ "sub": "",
+ "effect": "このカードを部隊にセットすると、 / セット時に負傷していた武将の / HPを10回復する(模倣不可)",
+ "furigana": "がーねっと",
+ "illustrator": "FinalFantasyIX 25th ANNIVERSARY",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 200,
+ "atkGrowth": 1.0,
+ "defBase": 200,
+ "defGrowth": 1.0,
+ "tacticsBase": 200.0,
+ "tacticsGrowth": 1.0,
+ "lv0Troops": 1,
+ "rankGrades": {
+  "yari": "F",
+  "yumi": "F",
+  "uma": "F",
+  "ki": "F"
+ },
+ "initialSkill": "ケアル",
+ "skillDetail": "C/LV10 確率 100% このカードを部隊にセットすると / セット時に負傷していた武将の / HPを10回復する(模倣不可)/対象:将\n①このカードを部隊にセットすると / セット時に負傷していた武将の / HPを10回復する(模倣不可)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "将　確率 100% / このカードを部隊にセットすると、 / セット時に負傷していた武将の / HPを10回復する(模倣不可)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "槍術無双",
+   "rank": "C",
+   "afterSkill": "討虎七撃",
+   "afterRank": "C",
+   "target": "槍砲器",
+   "rate": "36%",
+   "effectShort": "攻撃 265%上昇 / 防御 265%上昇 / 破壊 55%上昇",
+   "afterTarget": "槍器鉄",
+   "afterRate": "38%",
+   "afterEffectShort": "攻撃 240%上昇 / 防御 240%上昇 / 破壊 50%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "一揆討伐",
+   "rank": "C",
+   "afterSkill": "義士ノ覚悟",
+   "afterRank": "C",
+   "target": "弓砲器",
+   "rate": "60%",
+   "effectShort": "攻撃 345%上昇 防御 345%上昇",
+   "afterTarget": "槍砲器",
+   "afterRate": "65%",
+   "afterEffectShort": "攻撃 310%上昇 防御 310%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "白鷹ノ導き",
+   "rank": "C",
+   "afterSkill": "野太刀",
+   "afterRank": "C",
+   "target": "弓砲器",
+   "rate": "38%",
+   "effectShort": "攻撃 330%上昇 / 防御 330%上昇 / 破壊 60%上昇",
+   "afterTarget": "全",
+   "afterRate": "17%",
+   "afterEffectShort": "攻撃 77%上昇 / 防御 77%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "野太刀",
+   "rank": "C",
+   "afterSkill": "戦陣 凱旋",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "17%",
+   "effectShort": "攻撃 77%上昇 / 防御 77%上昇",
+   "afterTarget": "全",
+   "afterRate": "10%",
+   "afterEffectShort": "攻撃 87%上昇+防御 87%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "虎切刀",
+   "rank": "C",
+   "afterSkill": "鬼滅刺",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "50%",
+   "effectShort": "攻撃 66%上昇 / 防御 66%上昇",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 70%上昇 防御 70%上昇(卓越確率+25%加算・模倣不可)"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3637 と skills/ケアル)およびixawiki(BushoCard/3637ガーネット)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。",
+  "2026-08-23: skillDetail に読点が混入していた(F-01違反)。ixanary の原文が「配置時、防御効果が」のように読点を使うのをそのまま取り込んでいた。読点を外した。"
+ ]
+}

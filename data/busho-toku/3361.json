@@ -1,0 +1,109 @@
+{
+ "name": "本多正信",
+ "no": "3361",
+ "ch": null,
+ "cost": 3.0,
+ "troop": "砲器防",
+ "sub": "",
+ "effect": "防御 (15+武将ランクx5) %上昇 / 破壊 25%上昇 / 武将ランクで効果が変化",
+ "furigana": "ほんだまさのぶ",
+ "illustrator": "Ray",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 810,
+ "atkGrowth": 21.0,
+ "defBase": 860,
+ "defGrowth": 24.0,
+ "tacticsBase": 470.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2850,
+ "rankGrades": {
+  "yari": "C",
+  "yumi": "B",
+  "uma": "B",
+  "ki": "A"
+ },
+ "initialSkill": "参謀傑士",
+ "skillDetail": "D/LV10 確率 34% 防御 (15+武将ランクx5) %上昇 / 破壊 25%上昇 / 武将ランクで効果が変化/対象:砲器\n①防御 (15+武将ランクx5) %上昇 / 破壊 25%上昇 / 武将ランクで効果が変化",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "砲器　確率 34% / 防御 (15+武将ランクx5) %上昇 / 破壊 25%上昇 / 武将ランクで効果が変化"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "兵器布陣",
+   "rank": "E",
+   "afterSkill": "城砕き",
+   "afterRank": "E",
+   "target": "器",
+   "rate": "15%",
+   "effectShort": "防御 20%上昇",
+   "afterTarget": "器",
+   "afterRate": "15%",
+   "afterEffectShort": "破壊 20%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "鉄砲隊守護",
+   "rank": "E",
+   "afterSkill": "鉄砲隊挟撃",
+   "afterRank": "E",
+   "target": "砲",
+   "rate": "20%",
+   "effectShort": "防御 (コストx6.5) %上昇 / (武将のコストで効果が変化します)",
+   "afterTarget": "砲",
+   "afterRate": "20%",
+   "afterEffectShort": "攻撃 (コストx6.5) %上昇 / (武将のコストで効果が変化します)"
+  },
+  {
+   "slot": "C",
+   "skill": "参謀傑士",
+   "rank": "D",
+   "afterSkill": "伝来ノ島筒",
+   "afterRank": "D",
+   "target": "砲器",
+   "rate": "34%",
+   "effectShort": "防御 (15+武将ランクx5) %上昇 / 破壊 25%上昇 / 武将ランクで効果が変化",
+   "afterTarget": "砲器",
+   "afterRate": "5%",
+   "afterEffectShort": "防御 64.8%上昇 / (合流攻撃防御時は必ずスキル発動)"
+  },
+  {
+   "slot": "S1",
+   "skill": "伝来ノ島筒",
+   "rank": "D",
+   "afterSkill": "叛将烈破",
+   "afterRank": "B",
+   "target": "砲器",
+   "rate": "5%",
+   "effectShort": "防御 64.8%上昇 / (合流攻撃防御時は必ずスキル発動)",
+   "afterTarget": "槍砲",
+   "afterRate": "32%",
+   "afterEffectShort": "攻撃 36%上昇 / 防御 36%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "戦陣 轟砲",
+   "rank": "A",
+   "afterSkill": "覇王絶世",
+   "afterRank": "SS",
+   "target": "砲・器",
+   "rate": "45%",
+   "effectShort": "攻撃 66%上昇+防御 66%上昇",
+   "afterTarget": "全",
+   "afterRate": "24%",
+   "afterEffectShort": "攻撃部隊ランクボーナスx15%上昇 (部隊ランクボーナスで効果が変化)"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3361 と skills/参謀傑士)およびixawiki(BushoCard/3361本多正信)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

@@ -1,0 +1,109 @@
+{
+ "name": "一柳直盛",
+ "no": "3515",
+ "ch": null,
+ "cost": 2.0,
+ "troop": "槍砲器攻",
+ "sub": "",
+ "effect": "攻撃 70%上昇 防御 70%上昇 / 部隊コスト15以下で効果1.5倍",
+ "furigana": "ひとつやなぎなおもり",
+ "illustrator": "Morechand",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 900,
+ "atkGrowth": 32.0,
+ "defBase": 900,
+ "defGrowth": 32.0,
+ "tacticsBase": 460.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2370,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "B",
+  "uma": "B",
+  "ki": "B"
+ },
+ "initialSkill": "先懸衆",
+ "skillDetail": "C/LV10 確率 46% 攻撃 70%上昇 防御 70%上昇 / 部隊コスト15以下で効果1.5倍/対象:槍砲器\n①攻撃 70%上昇 防御 70%上昇 / 部隊コスト15以下で効果1.5倍",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍砲器　確率 46% / 攻撃 70%上昇 防御 70%上昇 / 部隊コスト15以下で効果1.5倍"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "先懸衆",
+   "rank": "C",
+   "afterSkill": "武士ノ鑑",
+   "afterRank": "C",
+   "target": "槍砲器",
+   "rate": "46%",
+   "effectShort": "攻撃 70%上昇 防御 70%上昇 / 部隊コスト15以下で効果1.5倍",
+   "afterTarget": "槍砲",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 28%上昇 防御 28%上昇 / 卓越：追加確率60%で攻防効果が3倍"
+  },
+  {
+   "slot": "B",
+   "skill": "先懸衆",
+   "rank": "C",
+   "afterSkill": "武士ノ鑑",
+   "afterRank": "C",
+   "target": "槍砲器",
+   "rate": "46%",
+   "effectShort": "攻撃 70%上昇 防御 70%上昇 / 部隊コスト15以下で効果1.5倍",
+   "afterTarget": "槍砲",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 28%上昇 防御 28%上昇 / 卓越：追加確率60%で攻防効果が3倍"
+  },
+  {
+   "slot": "C",
+   "skill": "虎切刀",
+   "rank": "C",
+   "afterSkill": "鬼滅刺",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "50%",
+   "effectShort": "攻撃 66%上昇 / 防御 66%上昇",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 70%上昇 防御 70%上昇(卓越確率+25%加算・模倣不可)"
+  },
+  {
+   "slot": "S1",
+   "skill": "武士ノ鑑",
+   "rank": "C",
+   "afterSkill": "叛将烈破",
+   "afterRank": "B",
+   "target": "槍砲",
+   "rate": "100%",
+   "effectShort": "攻撃 28%上昇 防御 28%上昇 / 卓越：追加確率60%で攻防効果が3倍",
+   "afterTarget": "槍砲",
+   "afterRate": "32%",
+   "afterEffectShort": "攻撃 36%上昇 / 防御 36%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "虎切刀",
+   "rank": "C",
+   "afterSkill": "鬼滅刺",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "50%",
+   "effectShort": "攻撃 66%上昇 / 防御 66%上昇",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 70%上昇 防御 70%上昇(卓越確率+25%加算・模倣不可)"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3515 と skills/先懸衆)およびixawiki(BushoCard/3515一柳直盛)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

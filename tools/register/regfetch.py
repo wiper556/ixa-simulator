@@ -74,7 +74,12 @@ def parse_ixanary_card(lines, no):
     # スキル各段(「S 〇〇 LV10」「… TR5 鍛錬」の直後2行が効果)
     eff = []
     for i, ln in enumerate(lines):
-        m = re.match(r"^([A-Z]+) (\S+) (LV\d+|TR\d)( 鍛錬)?$", ln)
+        # 2026-08-23: スキル名を (\S+) で取っていたので **名前に空白が入るスキルを
+        # 全部取り落としていた**(「真田丸 雁金」「戦姫 陽炎」「戦陣 勝鬨」など)。
+        # skillLevels が空になり、その先の /skills/{名前}/ も引けず、
+        # initialSkill も合成候補の効果文も null のまま登録されていた。
+        # 特の一括登録で12体が空欄のまま出て発覚。空白を許す。
+        m = re.match(r"^([A-Z]+) (.+?) (LV\d+|TR\d)( 鍛錬)?$", ln)
         if m:
             eff.append({"rank": m.group(1), "skill": m.group(2), "level": m.group(3),
                         "text": " ".join(lines[i + 1:i + 3])})
@@ -147,7 +152,10 @@ def parse_ixanary_skill(lines):
         if "合成不可スキルです" in ln:
             d["noSynthesis"] = True
     for i, ln in enumerate(lines):
-        m = re.match(r"^(防|攻|攻防|攻速|攻破|特|防速|防破|攻防破)：(\S+) ([A-Z]+)$", ln)
+        # 2026-08-23: ここも (\S+) で **空白入りのスキル名を取り落としていた**。
+        # 種別の並びも列挙で、攻防速のような組み合わせが増えると漏れる。
+        # 「◯◯：スキル名 ランク」の形だけを見るようにした。
+        m = re.match(r"^([攻防速破特]{1,4})：(.+?) ([A-Z]+)$", ln)
         if m:
             d["skillName"], d["rank"] = m.group(2), m.group(3)
             break
@@ -170,9 +178,21 @@ def run(no):
     lv = (out.get("ixanary") or {}).get("skillLevels") or []
     sk = lv[0]["skill"] if lv else None
     if sk:
+        # 2026-08-23: カードページの本文は空白を半角に潰して読むので、
+        # 「忍道　白虎」のように**名前に全角空白が入るスキル**は半角で引いて404になる。
+        # 半角で取れなかったら全角に戻して引き直す(No.3211 で発覚)。
         t = fetch_and_log("skill:%s" % sk, "ixanary",
                           "https://ixanary.com/skills/" + urllib.parse.quote(sk),
                           encoding="utf-8")
+        if not t and " " in sk:
+            sk2 = sk.replace(" ", "　")
+            t = fetch_and_log("skill:%s" % sk2, "ixanary",
+                              "https://ixanary.com/skills/" + urllib.parse.quote(sk2),
+                              encoding="utf-8")
+            if t:
+                sk = sk2
+                for lvv in lv:
+                    lvv["skill"] = sk2
         if t:
             out["skill"] = parse_ixanary_skill(strip(t))
     p = os.path.join(HERE, "draft_%s.json" % no)

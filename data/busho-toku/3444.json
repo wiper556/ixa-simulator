@@ -1,0 +1,109 @@
+{
+ "name": "別所長治",
+ "no": "3444",
+ "ch": null,
+ "cost": 1.5,
+ "troop": "槍弓器防",
+ "sub": "",
+ "effect": "防御 34%上昇 / 卓越：追加確率20%で防御効果が2.5倍",
+ "furigana": "べっしょながはる",
+ "illustrator": "白藤与一",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 820,
+ "atkGrowth": 25.0,
+ "defBase": 880,
+ "defGrowth": 28.0,
+ "tacticsBase": 450.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 1920,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "B",
+  "uma": "C",
+  "ki": "A"
+ },
+ "initialSkill": "坐薪懸胆",
+ "skillDetail": "D/LV10 確率 50% 防御 34%上昇 / 卓越：追加確率20%で防御効果が2.5倍/対象:槍弓器\n①防御 34%上昇 / 卓越：追加確率20%で防御効果が2.5倍",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍弓器　確率 50% / 防御 34%上昇 / 卓越：追加確率20%で防御効果が2.5倍"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "坐薪懸胆",
+   "rank": "D",
+   "afterSkill": "不識ノ殿軍",
+   "afterRank": "B",
+   "target": "槍弓器",
+   "rate": "50%",
+   "effectShort": "防御 34%上昇 / 卓越：追加確率20%で防御効果が2.5倍",
+   "afterTarget": "弓砲器",
+   "afterRate": "70%",
+   "afterEffectShort": "防御 64%上昇 / 卓越：追加確率30%で防御効果が1.5倍"
+  },
+  {
+   "slot": "B",
+   "skill": "羆廻師",
+   "rank": "D",
+   "afterSkill": "鳰の払暁",
+   "afterRank": "B",
+   "target": "槍弓馬",
+   "rate": "34%",
+   "effectShort": "防御 22%上昇 / (部隊内の「羆廻師」所持武将数x22%の効果)",
+   "afterTarget": "槍弓馬",
+   "afterRate": "40%",
+   "afterEffectShort": "防御 28%上昇 / (自領以外の加勢で効果2倍)"
+  },
+  {
+   "slot": "C",
+   "skill": "虎落笛",
+   "rank": "D",
+   "afterSkill": "歩き巫女",
+   "afterRank": "D",
+   "target": "弓器",
+   "rate": "15%",
+   "effectShort": "防御 72%上昇 / 自拠点防御時は100%発動",
+   "afterTarget": "弓器",
+   "afterRate": "38%",
+   "afterEffectShort": "防御 43%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "不識ノ殿軍",
+   "rank": "B",
+   "afterSkill": "無間牢",
+   "afterRank": "B",
+   "target": "弓砲器",
+   "rate": "70%",
+   "effectShort": "防御 64%上昇 / 卓越：追加確率30%で防御効果が1.5倍",
+   "afterTarget": "槍弓馬器",
+   "afterRate": "25%",
+   "afterEffectShort": "防御 77%上昇 確率：+25% / 速度 45%上昇 確率：+100% / (加勢出陣時は速度効果2倍)"
+  },
+  {
+   "slot": "S2",
+   "skill": "虎切刀",
+   "rank": "C",
+   "afterSkill": "鬼滅刺",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "50%",
+   "effectShort": "攻撃 66%上昇 / 防御 66%上昇",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 70%上昇 防御 70%上昇(卓越確率+25%加算・模倣不可)"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3444 と skills/坐薪懸胆)およびixawiki(BushoCard/3444別所長治)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

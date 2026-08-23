@@ -1,0 +1,103 @@
+{
+ "name": "遊佐続光",
+ "no": "3252",
+ "ch": null,
+ "cost": 2.0,
+ "troop": "砲器防",
+ "sub": "",
+ "effect": "防御 14%上昇",
+ "furigana": "ゆさつぐみつ",
+ "illustrator": "JUNNY",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 550,
+ "atkGrowth": 16.0,
+ "defBase": 710,
+ "defGrowth": 18.0,
+ "tacticsBase": 485.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 2260,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "B",
+  "uma": "B",
+  "ki": "A"
+ },
+ "initialSkill": "保身",
+ "skillDetail": "D/LV10 確率 70% 防御 14%上昇/対象:砲器\n①防御が14%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "砲器　確率 70% / 防御 14%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "鉄砲隊円陣",
+   "rank": "D",
+   "afterSkill": "弾幕防壁陣",
+   "afterRank": "C",
+   "target": "砲",
+   "rate": "35%",
+   "effectShort": "防御 20%上昇",
+   "afterTarget": "弓砲",
+   "afterRate": "20%",
+   "afterEffectShort": "防御 30%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "釣瓶撃ち",
+   "rank": "D",
+   "afterSkill": "弾幕防壁陣",
+   "afterRank": "C",
+   "target": "砲器",
+   "rate": "25%",
+   "effectShort": "防御 25%上昇",
+   "afterTarget": "弓砲",
+   "afterRate": "20%",
+   "afterEffectShort": "防御 30%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "返り忠",
+   "rank": "D",
+   "afterSkill": "返り忠",
+   "afterRank": "D",
+   "target": "砲",
+   "rate": "25%",
+   "effectShort": "防御 25%上昇 / (合流攻撃防御時は効果2倍)"
+  },
+  {
+   "slot": "S1",
+   "skill": "保身",
+   "rank": "D",
+   "afterSkill": "保身",
+   "afterRank": "D",
+   "target": "砲器",
+   "rate": "70%",
+   "effectShort": "防御 14%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "組撃ち",
+   "rank": "B",
+   "afterSkill": "八咫烏",
+   "afterRank": "B",
+   "target": "弓砲",
+   "rate": "20%",
+   "effectShort": "防御 35%上昇",
+   "afterTarget": "砲器",
+   "afterRate": "35%",
+   "afterEffectShort": "防御 30%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3252 と skills/保身)およびixawiki(BushoCard/3252遊佐続光)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

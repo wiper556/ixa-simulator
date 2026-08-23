@@ -1,0 +1,109 @@
+{
+ "name": "種子島時尭",
+ "no": "3584",
+ "ch": null,
+ "cost": 3.0,
+ "troop": "弓砲器攻",
+ "sub": "",
+ "effect": "攻撃 285%上昇 / 合流攻撃時は必ずスキル発動",
+ "furigana": "たねがしまときたか",
+ "illustrator": "森田悠新",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 910,
+ "atkGrowth": 32.0,
+ "defBase": 860,
+ "defGrowth": 26.0,
+ "tacticsBase": 470.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 3070,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "B",
+  "uma": "C",
+  "ki": "A"
+ },
+ "initialSkill": "鉄声",
+ "skillDetail": "C/LV10 確率 20% 攻撃 285%上昇 / 合流攻撃時は必ずスキル発動/対象:弓砲器\n①攻撃 285%上昇 / 合流攻撃時は必ずスキル発動",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓砲器　確率 20% / 攻撃 285%上昇 / 合流攻撃時は必ずスキル発動"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "鉄声",
+   "rank": "C",
+   "afterSkill": "新宮党",
+   "afterRank": "C",
+   "target": "弓砲器",
+   "rate": "20%",
+   "effectShort": "攻撃 285%上昇 / 合流攻撃時は必ずスキル発動",
+   "afterTarget": "槍弓馬",
+   "afterRate": "25%",
+   "afterEffectShort": "攻撃 96%上昇 / 合流攻撃時は必ずスキル発動"
+  },
+  {
+   "slot": "B",
+   "skill": "鉄声",
+   "rank": "C",
+   "afterSkill": "新宮党",
+   "afterRank": "C",
+   "target": "弓砲器",
+   "rate": "20%",
+   "effectShort": "攻撃 285%上昇 / 合流攻撃時は必ずスキル発動",
+   "afterTarget": "槍弓馬",
+   "afterRate": "25%",
+   "afterEffectShort": "攻撃 96%上昇 / 合流攻撃時は必ずスキル発動"
+  },
+  {
+   "slot": "C",
+   "skill": "鉄声",
+   "rank": "C",
+   "afterSkill": "新宮党",
+   "afterRank": "C",
+   "target": "弓砲器",
+   "rate": "20%",
+   "effectShort": "攻撃 285%上昇 / 合流攻撃時は必ずスキル発動",
+   "afterTarget": "槍弓馬",
+   "afterRate": "25%",
+   "afterEffectShort": "攻撃 96%上昇 / 合流攻撃時は必ずスキル発動"
+  },
+  {
+   "slot": "S1",
+   "skill": "新宮党",
+   "rank": "C",
+   "afterSkill": "極楽護法",
+   "afterRank": "B",
+   "target": "槍弓馬",
+   "rate": "25%",
+   "effectShort": "攻撃 96%上昇 / 合流攻撃時は必ずスキル発動",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 60%上昇 防御 60%上昇 / 卓越：追加確率50%で攻防効果が1.5倍"
+  },
+  {
+   "slot": "S2",
+   "skill": "強虔ノ使徒",
+   "rank": "C",
+   "afterSkill": "孤炎",
+   "afterRank": "A",
+   "target": "槍弓砲",
+   "rate": "25%",
+   "effectShort": "攻撃 270%上昇 / 合流攻撃時は必ずスキル発動",
+   "afterTarget": "全",
+   "afterRate": "55%",
+   "afterEffectShort": "攻撃 140%上昇 / 破壊 85%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3584 と skills/鉄声)およびixawiki(BushoCard/3584種子島時尭)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

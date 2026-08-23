@@ -1,0 +1,103 @@
+{
+ "name": "細川藤孝",
+ "no": "3213",
+ "ch": null,
+ "cost": 2.0,
+ "troop": "将防",
+ "sub": "",
+ "effect": "防御 45%上昇",
+ "furigana": "ほそかわふじたか",
+ "illustrator": "岩元辰郎",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 850,
+ "atkGrowth": 45.0,
+ "defBase": 950,
+ "defGrowth": 45.0,
+ "tacticsBase": 530.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 1450,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "A",
+  "uma": "C",
+  "ki": "F"
+ },
+ "initialSkill": "古今伝授",
+ "skillDetail": "D/LV10 確率 25% 防御 45%上昇/対象:将\n①防御が45%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "将　確率 25% / 防御 45%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "虚空一閃",
+   "rank": "C",
+   "afterSkill": "大ふへん者",
+   "afterRank": "D",
+   "target": "将",
+   "rate": "36%",
+   "effectShort": "攻撃 28%上昇",
+   "afterTarget": "将",
+   "afterRate": "5%",
+   "afterEffectShort": "攻撃 40%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "新陰流",
+   "rank": "C",
+   "afterSkill": "大ふへん者",
+   "afterRank": "D",
+   "target": "将",
+   "rate": "35%",
+   "effectShort": "攻撃 30%上昇",
+   "afterTarget": "将",
+   "afterRate": "5%",
+   "afterEffectShort": "攻撃 40%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "古今伝授",
+   "rank": "D",
+   "afterSkill": "柳生新陰流",
+   "afterRank": "A",
+   "target": "将",
+   "rate": "25%",
+   "effectShort": "防御 45%上昇",
+   "afterTarget": "将",
+   "afterRate": "55%",
+   "afterEffectShort": "防御 40%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "柳生新陰流",
+   "rank": "A",
+   "afterSkill": "柳生新陰流",
+   "afterRank": "A",
+   "target": "将",
+   "rate": "55%",
+   "effectShort": "防御 40%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "剣聖",
+   "rank": "A",
+   "afterSkill": "剣聖",
+   "afterRank": "A",
+   "target": "将",
+   "rate": "50%",
+   "effectShort": "攻撃 40%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3213 と skills/古今伝授)およびixawiki(BushoCard/3213細川藤孝)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

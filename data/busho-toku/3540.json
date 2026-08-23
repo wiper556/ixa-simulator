@@ -1,0 +1,109 @@
+{
+ "name": "長野業盛",
+ "no": "3540",
+ "ch": null,
+ "cost": 2.0,
+ "troop": "弓馬器焙防",
+ "sub": "",
+ "effect": "スキル発動確率と効果の組み合わせを選択できる(移動時は選択不可)",
+ "furigana": "ながのなりもり",
+ "illustrator": "匈歌ハトリ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 810,
+ "atkGrowth": 26.0,
+ "defBase": 900,
+ "defGrowth": 31.0,
+ "tacticsBase": 460.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2380,
+ "rankGrades": {
+  "yari": "C",
+  "yumi": "A",
+  "uma": "B",
+  "ki": "B"
+ },
+ "initialSkill": "不屈ノ遺志",
+ "skillDetail": "C/LV10 確率 70% スキル発動確率と効果の組み合わせを選択できる(移動時は選択不可)/対象:弓馬器焙\n①スキル発動確率と効果の組み合わせを選択できる(移動時は選択不可)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓馬器焙　確率 70% / スキル発動確率と効果の組み合わせを選択できる(移動時は選択不可)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "不屈ノ遺志",
+   "rank": "C",
+   "afterSkill": "武勇鬼神ノ如し",
+   "afterRank": "A",
+   "target": "弓馬器焙",
+   "rate": "70%",
+   "effectShort": "スキル発動確率と効果の組み合わせを選択できる(移動時は選択不可)",
+   "afterTarget": "弓砲器",
+   "afterRate": "55%",
+   "afterEffectShort": "防御 92%上昇 / 拠点待機90分ごとに防御効果1.2倍(上限3回) / 防御最大：158.9%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "不屈ノ遺志",
+   "rank": "C",
+   "afterSkill": "武勇鬼神ノ如し",
+   "afterRank": "A",
+   "target": "弓馬器焙",
+   "rate": "70%",
+   "effectShort": "スキル発動確率と効果の組み合わせを選択できる(移動時は選択不可)",
+   "afterTarget": "弓砲器",
+   "afterRate": "55%",
+   "afterEffectShort": "防御 92%上昇 / 拠点待機90分ごとに防御効果1.2倍(上限3回) / 防御最大：158.9%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "守船射撃ノ法",
+   "rank": "C",
+   "afterSkill": "王佐ノ竜胆",
+   "afterRank": "B",
+   "target": "弓馬器",
+   "rate": "44%",
+   "effectShort": "防御 62%上昇 / 本丸防御陣形の第参列目以降に配置時、防御効果が1.5倍",
+   "afterTarget": "槍弓器",
+   "afterRate": "30%",
+   "afterEffectShort": "防御 70%上昇 / (武将のコストで防御効果が変化します)"
+  },
+  {
+   "slot": "S1",
+   "skill": "武勇鬼神ノ如し",
+   "rank": "A",
+   "afterSkill": "淡雪ノ舞",
+   "afterRank": "A",
+   "target": "弓砲器",
+   "rate": "55%",
+   "effectShort": "防御 92%上昇 / 拠点待機90分ごとに防御効果1.2倍(上限3回) / 防御最大：158.9%上昇",
+   "afterTarget": "弓砲器",
+   "afterRate": "55%",
+   "afterEffectShort": "防御 10%上昇 / (所属部隊のレアリティB以上のスキル個数 x10%)"
+  },
+  {
+   "slot": "S2",
+   "skill": "武勇鬼神ノ如し",
+   "rank": "A",
+   "afterSkill": "淡雪ノ舞",
+   "afterRank": "A",
+   "target": "弓砲器",
+   "rate": "55%",
+   "effectShort": "防御 92%上昇 / 拠点待機90分ごとに防御効果1.2倍(上限3回) / 防御最大：158.9%上昇",
+   "afterTarget": "弓砲器",
+   "afterRate": "55%",
+   "afterEffectShort": "防御 10%上昇 / (所属部隊のレアリティB以上のスキル個数 x10%)"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3540 と skills/不屈ノ遺志)およびixawiki(BushoCard/3540長野業盛)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

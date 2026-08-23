@@ -1,0 +1,109 @@
+{
+ "name": "吉弘統幸",
+ "no": "3588",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "槍砲器攻",
+ "sub": "",
+ "effect": "攻撃 265%上昇 / 防御 265%上昇 / 破壊 55%上昇",
+ "furigana": "よしひろむねゆき",
+ "illustrator": "たわわ実",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 890,
+ "atkGrowth": 30.0,
+ "defBase": 890,
+ "defGrowth": 30.0,
+ "tacticsBase": 460.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2670,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "C",
+  "uma": "B",
+  "ki": "B"
+ },
+ "initialSkill": "槍術無双",
+ "skillDetail": "C/LV10 確率 36% 攻撃 265%上昇 / 防御 265%上昇 / 破壊 55%上昇/対象:槍砲器\n①攻撃が265%上昇 / 防御 265%上昇 / 破壊 55%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍砲器　確率 36% / 攻撃 265%上昇 / 防御 265%上昇 / 破壊 55%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "槍術無双",
+   "rank": "C",
+   "afterSkill": "討虎七撃",
+   "afterRank": "C",
+   "target": "槍砲器",
+   "rate": "36%",
+   "effectShort": "攻撃 265%上昇 / 防御 265%上昇 / 破壊 55%上昇",
+   "afterTarget": "槍器鉄",
+   "afterRate": "38%",
+   "afterEffectShort": "攻撃 240%上昇 / 防御 240%上昇 / 破壊 50%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "槍術無双",
+   "rank": "C",
+   "afterSkill": "討虎七撃",
+   "afterRank": "C",
+   "target": "槍砲器",
+   "rate": "36%",
+   "effectShort": "攻撃 265%上昇 / 防御 265%上昇 / 破壊 55%上昇",
+   "afterTarget": "槍器鉄",
+   "afterRate": "38%",
+   "afterEffectShort": "攻撃 240%上昇 / 防御 240%上昇 / 破壊 50%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "槍術無双",
+   "rank": "C",
+   "afterSkill": "討虎七撃",
+   "afterRank": "C",
+   "target": "槍砲器",
+   "rate": "36%",
+   "effectShort": "攻撃 265%上昇 / 防御 265%上昇 / 破壊 55%上昇",
+   "afterTarget": "槍器鉄",
+   "afterRate": "38%",
+   "afterEffectShort": "攻撃 240%上昇 / 防御 240%上昇 / 破壊 50%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "討虎七撃",
+   "rank": "C",
+   "afterSkill": "",
+   "afterRank": null,
+   "target": "槍器鉄",
+   "rate": "38%",
+   "effectShort": "攻撃 240%上昇 / 防御 240%上昇 / 破壊 50%上昇",
+   "afterTarget": null,
+   "afterRate": null,
+   "afterEffectShort": null
+  },
+  {
+   "slot": "S2",
+   "skill": "十字飛車",
+   "rank": "A",
+   "afterSkill": "騒速ノ神撃",
+   "afterRank": "SS",
+   "target": "槍砲器",
+   "rate": "42%",
+   "effectShort": "攻撃 77%上昇 / 防御 77%上昇 / 破壊 50%上昇",
+   "afterTarget": "槍・弓・器・焙",
+   "afterRate": "57%",
+   "afterEffectShort": "攻撃 100%上昇 防御 100%上昇 部隊内の「騒速ノ神撃」スキルx25%を攻防効果に加算"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3588 と skills/槍術無双)およびixawiki(BushoCard/3588吉弘統幸)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

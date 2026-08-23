@@ -1,0 +1,103 @@
+{
+ "name": "北畠具房",
+ "no": "3425",
+ "ch": null,
+ "cost": 3.0,
+ "troop": "全",
+ "sub": "",
+ "effect": "資源獲得率：7% / 破壊した耐久値に応じて資源獲得",
+ "furigana": "きたばたけともふさ",
+ "illustrator": "末冨正直",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 890,
+ "atkGrowth": 28.0,
+ "defBase": 810,
+ "defGrowth": 22.0,
+ "tacticsBase": 460.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2940,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "B",
+  "uma": "B",
+  "ki": "B"
+ },
+ "initialSkill": "力士ノ構え",
+ "skillDetail": "D/LV10 確率 70% 資源獲得率：7% / 破壊した耐久値に応じて資源獲得/対象:全\n①資源獲得率：7% / 破壊した耐久値に応じて資源獲得",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 70% / 資源獲得率：7% / 破壊した耐久値に応じて資源獲得"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "力士ノ構え",
+   "rank": "D",
+   "afterSkill": "覚悟十躰",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "70%",
+   "effectShort": "資源獲得率：7% / 破壊した耐久値に応じて資源獲得",
+   "afterTarget": "全",
+   "afterRate": "30%",
+   "afterEffectShort": "資源獲得率：15% / 破壊した耐久値に応じて資源獲得"
+  },
+  {
+   "slot": "B",
+   "skill": "弓隊急襲",
+   "rank": "F",
+   "afterSkill": "弓隊守備",
+   "afterRank": "F",
+   "target": "弓",
+   "rate": "16%",
+   "effectShort": "攻撃 (コストx5) %上昇 / (武将のコストで効果が変化します)",
+   "afterTarget": "弓",
+   "afterRate": "16%",
+   "afterEffectShort": "防御 (コストx6) %上昇 / (武将のコストで効果が変化します)"
+  },
+  {
+   "slot": "C",
+   "skill": "善政の妙",
+   "rank": "D",
+   "afterSkill": "善政の妙",
+   "afterRank": "D",
+   "target": "全",
+   "rate": "50%",
+   "effectShort": "資源獲得率：6% / 破壊した耐久値に応じて資源獲得"
+  },
+  {
+   "slot": "S1",
+   "skill": "覚悟十躰",
+   "rank": "A",
+   "afterSkill": "覚悟十躰",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "30%",
+   "effectShort": "資源獲得率：15% / 破壊した耐久値に応じて資源獲得"
+  },
+  {
+   "slot": "S2",
+   "skill": "保食神",
+   "rank": "B",
+   "afterSkill": "疾風怒濤",
+   "afterRank": "B",
+   "target": "全",
+   "rate": "40%",
+   "effectShort": "資源獲得率：10% / 破壊した耐久値に応じて資源獲得",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 5%上昇 / 速度 32%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3425 と skills/力士ノ構え)およびixawiki(BushoCard/3425北畠具房)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

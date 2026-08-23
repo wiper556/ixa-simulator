@@ -1,0 +1,110 @@
+{
+ "name": "団忠正",
+ "no": "3542",
+ "ch": null,
+ "cost": 3.0,
+ "troop": "槍馬騎攻",
+ "sub": "",
+ "effect": "攻撃 16%上昇 / 武将ランクで攻撃効果が変化",
+ "furigana": "だんただまさ",
+ "illustrator": "ヤマザキミコ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 870,
+ "atkGrowth": 31.0,
+ "defBase": 850,
+ "defGrowth": 27.0,
+ "tacticsBase": 460.0,
+ "tacticsGrowth": 2.5,
+ "lv0Troops": 3030,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "B",
+  "uma": "B",
+  "ki": "B"
+ },
+ "initialSkill": "暴風波斬",
+ "skillDetail": "C/LV10 確率 42% 攻撃 16%上昇 / 武将ランクで攻撃効果が変化/対象:槍馬騎\n①攻撃 16%上昇 / 武将ランクで攻撃効果が変化",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍馬騎　確率 42% / 攻撃 16%上昇 / 武将ランクで攻撃効果が変化"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "暴風波斬",
+   "rank": "C",
+   "afterSkill": "彷徨ふ鬼火",
+   "afterRank": "A",
+   "target": "槍馬騎",
+   "rate": "42%",
+   "effectShort": "攻撃 16%上昇 / 武将ランクで攻撃効果が変化",
+   "afterTarget": "槍馬砲",
+   "afterRate": "47%",
+   "afterEffectShort": "攻撃 (1.8×防御参加武将数)%上昇 / 卓越：追加確率30%で攻撃効果が1.5倍"
+  },
+  {
+   "slot": "B",
+   "skill": "暴風波斬",
+   "rank": "C",
+   "afterSkill": "彷徨ふ鬼火",
+   "afterRank": "A",
+   "target": "槍馬騎",
+   "rate": "42%",
+   "effectShort": "攻撃 16%上昇 / 武将ランクで攻撃効果が変化",
+   "afterTarget": "槍馬砲",
+   "afterRate": "47%",
+   "afterEffectShort": "攻撃 (1.8×防御参加武将数)%上昇 / 卓越：追加確率30%で攻撃効果が1.5倍"
+  },
+  {
+   "slot": "C",
+   "skill": "扇動鎮圧",
+   "rank": "C",
+   "afterSkill": "覇王ノ鬼神",
+   "afterRank": "B",
+   "target": "槍弓砲",
+   "rate": "42%",
+   "effectShort": "攻撃 15%上昇 / 攻撃 15+(武将ランクx11)%上昇",
+   "afterTarget": "槍馬砲",
+   "afterRate": "15%",
+   "afterEffectShort": "攻撃 91%上昇 / 相手軍の武将数が12以上だと必ずスキル発動"
+  },
+  {
+   "slot": "S1",
+   "skill": "彷徨ふ鬼火",
+   "rank": "A",
+   "afterSkill": "騎聖",
+   "afterRank": "A",
+   "target": "槍馬砲",
+   "rate": "47%",
+   "effectShort": "攻撃 (1.8×防御参加武将数)%上昇 / 卓越：追加確率30%で攻撃効果が1.5倍",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 80%上昇+速度 50%上昇(武将コストで変動)"
+  },
+  {
+   "slot": "S2",
+   "skill": "戦場妙技",
+   "rank": "BB",
+   "afterSkill": "戦陣 破軍",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "32%",
+   "effectShort": "攻撃 72%上昇+防御 72%上昇+破壊 20%上昇",
+   "afterTarget": "全",
+   "afterRate": "44%",
+   "afterEffectShort": "攻撃 66%上昇+防御 66%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3542 と skills/暴風波斬)およびixawiki(BushoCard/3542団忠正)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。",
+  "2026-08-23 訂正: S2枠の移植後が自分自身(戦場妙技)になっていた。ixanary の2次の列がこのカードだけ短く、一括登録が自己参照にフォールバックしたため。同じ戦場妙技を1次に持つ他の武将は全員 戦陣 破軍 に化けるので揃えた。"
+ ]
+}

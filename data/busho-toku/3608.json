@@ -1,0 +1,109 @@
+{
+ "name": "月岡津南",
+ "no": "3608",
+ "ch": null,
+ "cost": 2.0,
+ "troop": "砲器防",
+ "sub": "",
+ "effect": "防御 305%上昇 / 破壊 70%上昇",
+ "furigana": "つきおかつなん",
+ "illustrator": "&#169;NW/S,RKKD",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 860,
+ "atkGrowth": 27.0,
+ "defBase": 890,
+ "defGrowth": 32.0,
+ "tacticsBase": 470.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2400,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "B",
+  "uma": "C",
+  "ki": "A"
+ },
+ "initialSkill": "炸裂弾",
+ "skillDetail": "C/LV10 確率 40% 防御 305%上昇 / 破壊 70%上昇/対象:砲器\n①防御が305%上昇 / 破壊 70%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "砲器　確率 40% / 防御 305%上昇 / 破壊 70%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "炸裂弾",
+   "rank": "C",
+   "afterSkill": "千兵ノ耀姫",
+   "afterRank": "A",
+   "target": "砲器",
+   "rate": "40%",
+   "effectShort": "防御 305%上昇 / 破壊 70%上昇",
+   "afterTarget": "弓馬器騎",
+   "afterRate": "50%",
+   "afterEffectShort": "兵站 / 防御 170%上昇 破壊 80%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "炸裂弾",
+   "rank": "C",
+   "afterSkill": "千兵ノ耀姫",
+   "afterRank": "A",
+   "target": "砲器",
+   "rate": "40%",
+   "effectShort": "防御 305%上昇 / 破壊 70%上昇",
+   "afterTarget": "弓馬器騎",
+   "afterRate": "50%",
+   "afterEffectShort": "兵站 / 防御 170%上昇 破壊 80%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "炸裂弾",
+   "rank": "C",
+   "afterSkill": "千兵ノ耀姫",
+   "afterRank": "A",
+   "target": "砲器",
+   "rate": "40%",
+   "effectShort": "防御 305%上昇 / 破壊 70%上昇",
+   "afterTarget": "弓馬器騎",
+   "afterRate": "50%",
+   "afterEffectShort": "兵站 / 防御 170%上昇 破壊 80%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "千兵ノ耀姫",
+   "rank": "A",
+   "afterSkill": "龍神ノ加護",
+   "afterRank": "A",
+   "target": "弓馬器騎",
+   "rate": "50%",
+   "effectShort": "兵站 / 防御 170%上昇 破壊 80%上昇",
+   "afterTarget": "馬・砲・器",
+   "afterRate": "46%",
+   "afterEffectShort": "防御 135%上昇(本丸防御陣形配置時コスト消費-0.5・模倣不可)"
+  },
+  {
+   "slot": "S2",
+   "skill": "戦陣 無縫",
+   "rank": "A",
+   "afterSkill": "天衣無縫神戒",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "42%",
+   "effectShort": "防御 80%上昇(部隊総コストで変動)",
+   "afterTarget": "全",
+   "afterRate": "50%",
+   "afterEffectShort": "防御 (部隊総コスト依存)%上昇(総C25=393.79%)"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3608 と skills/炸裂弾)およびixawiki(BushoCard/3608月岡津南)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

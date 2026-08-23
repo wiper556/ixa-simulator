@@ -1,0 +1,106 @@
+{
+ "name": "海野六郎",
+ "no": "3714",
+ "ch": null,
+ "cost": 2.0,
+ "troop": "姫",
+ "sub": "",
+ "effect": "部隊内姫武将スキル発動率+10%(重複不可)",
+ "furigana": "うんのろくろう",
+ "illustrator": "筒井海砂",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 580,
+ "atkGrowth": 16.0,
+ "defBase": 620,
+ "defGrowth": 19.0,
+ "tacticsBase": 400.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2360,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "C",
+  "uma": "C",
+  "ki": "A"
+ },
+ "initialSkill": "花魁心操術",
+ "skillDetail": "A/LV10 確率 100% 部隊内姫武将スキル発動率+10%(重複不可)/対象:姫\n①部隊内姫武将スキル発動率+10%(重複不可)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "姫　確率 100% / 部隊内姫武将スキル発動率+10%(重複不可)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "真田丸",
+   "rank": "D",
+   "afterSkill": "義兵進軍",
+   "afterRank": "C",
+   "target": "槍馬砲",
+   "rate": "15%",
+   "effectShort": "防御 +30%上昇",
+   "afterTarget": "槍弓馬砲",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 7%上昇 / 速度 10%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "颯空術",
+   "rank": "D",
+   "afterSkill": "真田丸",
+   "afterRank": "D",
+   "target": "馬砲",
+   "rate": "100%",
+   "effectShort": "攻撃 6%上昇 / 速度 20%上昇",
+   "afterTarget": "槍馬砲",
+   "afterRate": "15%",
+   "afterEffectShort": "防御 +30%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "戦陣 千鳥",
+   "rank": "B",
+   "afterSkill": "戦陣 千鳥",
+   "afterRank": "B",
+   "target": "弓馬",
+   "rate": "45%",
+   "effectShort": "防御 30%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "雲散霧消",
+   "rank": "B",
+   "afterSkill": "八咫烏",
+   "afterRank": "B",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "速度 45%上昇",
+   "afterTarget": "砲器",
+   "afterRate": "35%",
+   "afterEffectShort": "防御 30%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "日本一の兵",
+   "rank": "B",
+   "afterSkill": "義兵進軍",
+   "afterRank": "C",
+   "target": "槍馬砲",
+   "rate": "25%",
+   "effectShort": "防御 35%上昇",
+   "afterTarget": "槍弓馬砲",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 7%上昇 / 速度 10%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3714 と skills/花魁心操術)およびixawiki(BushoCard/3714海野六郎)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

@@ -1,0 +1,106 @@
+{
+ "name": "北条氏照",
+ "no": "3426",
+ "ch": null,
+ "cost": 2.0,
+ "troop": "弓器防",
+ "sub": "",
+ "effect": "防御 72%上昇 / 自拠点防御時は100%発動",
+ "furigana": "ほうじょううじてる",
+ "illustrator": "あんべよしろう",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 820,
+ "atkGrowth": 24.0,
+ "defBase": 860,
+ "defGrowth": 28.0,
+ "tacticsBase": 470.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2920,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "A",
+  "uma": "C",
+  "ki": "B"
+ },
+ "initialSkill": "虎落笛",
+ "skillDetail": "D/LV10 確率 15% 防御 72%上昇 / 自拠点防御時は100%発動/対象:弓器\n①防御 72%上昇 / 自拠点防御時は100%発動",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓器　確率 15% / 防御 72%上昇 / 自拠点防御時は100%発動"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "虎落笛",
+   "rank": "D",
+   "afterSkill": "歩き巫女",
+   "afterRank": "D",
+   "target": "弓器",
+   "rate": "15%",
+   "effectShort": "防御 72%上昇 / 自拠点防御時は100%発動",
+   "afterTarget": "弓器",
+   "afterRate": "38%",
+   "afterEffectShort": "防御 43%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "弓隊備え",
+   "rank": "F",
+   "afterSkill": "弓隊堅守",
+   "afterRank": "F",
+   "target": "弓",
+   "rate": "10%",
+   "effectShort": "弓防：15%上昇",
+   "afterTarget": "弓",
+   "afterRate": "20%",
+   "afterEffectShort": "防御 10%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "弓隊守備",
+   "rank": "F",
+   "afterSkill": "弓隊急襲",
+   "afterRank": "F",
+   "target": "弓",
+   "rate": "16%",
+   "effectShort": "防御 (コストx6) %上昇 / (武将のコストで効果が変化します)",
+   "afterTarget": "弓",
+   "afterRate": "16%",
+   "afterEffectShort": "攻撃 (コストx5) %上昇 / (武将のコストで効果が変化します)"
+  },
+  {
+   "slot": "S1",
+   "skill": "歩き巫女",
+   "rank": "D",
+   "afterSkill": "蒼刃ノ輔曳",
+   "afterRank": "D",
+   "target": "弓器",
+   "rate": "38%",
+   "effectShort": "防御 43%上昇",
+   "afterTarget": "弓器",
+   "afterRate": "35%",
+   "afterEffectShort": "防御 27%上昇 / (攻撃部隊に兵器兵科がいれば効果2倍)"
+  },
+  {
+   "slot": "S2",
+   "skill": "比類なき忠功",
+   "rank": "D",
+   "afterSkill": "比類なき忠功",
+   "afterRank": "D",
+   "target": "弓馬器",
+   "rate": "30%",
+   "effectShort": "防御 ((1+ランク)xコストx1.7) %上昇 / 武将ランクとコストで効果が変化"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3426 と skills/虎落笛)およびixawiki(BushoCard/3426北条氏照)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

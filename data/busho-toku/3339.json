@@ -1,0 +1,103 @@
+{
+ "name": "大村純忠",
+ "no": "3339",
+ "ch": null,
+ "cost": 3.0,
+ "troop": "槍器防",
+ "sub": "",
+ "effect": "防御 34%上昇 / (自軍5部隊以下の防御時 効果1.5倍)",
+ "furigana": "おおむらすみただ",
+ "illustrator": "士基軽太",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 840,
+ "atkGrowth": 20.0,
+ "defBase": 880,
+ "defGrowth": 24.0,
+ "tacticsBase": 450.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2810,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "C",
+  "uma": "C",
+  "ki": "B"
+ },
+ "initialSkill": "聖者ノ調",
+ "skillDetail": "D/LV10 確率 40% 防御 34%上昇 / (自軍5部隊以下の防御時 効果1.5倍)/対象:槍器\n①防御 34%上昇 / (自軍5部隊以下の防御時 効果1.5倍)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍器　確率 40% / 防御 34%上昇 / (自軍5部隊以下の防御時 効果1.5倍)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "槍隊守備",
+   "rank": "F",
+   "afterSkill": "槍隊急襲",
+   "afterRank": "F",
+   "target": "槍",
+   "rate": "16%",
+   "effectShort": "防御 (コストx5) %上昇 / (武将のコストで効果が変化します)",
+   "afterTarget": "槍",
+   "afterRate": "16%",
+   "afterEffectShort": "槍攻：7.5%上昇 / (武将のコストで効果が変化します)"
+  },
+  {
+   "slot": "B",
+   "skill": "花椿",
+   "rank": "D",
+   "afterSkill": "花椿",
+   "afterRank": "D",
+   "target": "槍砲器",
+   "rate": "32%",
+   "effectShort": "防御 39%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "聖者ノ調",
+   "rank": "D",
+   "afterSkill": "閃光破陣",
+   "afterRank": "B",
+   "target": "槍器",
+   "rate": "40%",
+   "effectShort": "防御 34%上昇 / (自軍5部隊以下の防御時 効果1.5倍)",
+   "afterTarget": "槍馬器",
+   "afterRate": "35%",
+   "afterEffectShort": "防御 2.7%上昇 / 防御 部隊ランクスキル発動率x9%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "閃光破陣",
+   "rank": "B",
+   "afterSkill": "閃光破陣",
+   "afterRank": "B",
+   "target": "槍馬器",
+   "rate": "35%",
+   "effectShort": "防御 2.7%上昇 / 防御 部隊ランクスキル発動率x9%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "隠し駒",
+   "rank": "D",
+   "afterSkill": "管領の威光",
+   "afterRank": "D",
+   "target": "砲器",
+   "rate": "32%",
+   "effectShort": "防御 44%上昇 / 破壊 25%上昇",
+   "afterTarget": "馬砲器",
+   "afterRate": "43%",
+   "afterEffectShort": "防御 34%上昇 / 破壊 30%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3339 と skills/聖者ノ調)およびixawiki(BushoCard/3339大村純忠)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

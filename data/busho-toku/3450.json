@@ -1,0 +1,106 @@
+{
+ "name": "結城晴朝",
+ "no": "3450",
+ "ch": null,
+ "cost": 3.0,
+ "troop": "槍砲器攻",
+ "sub": "",
+ "effect": "攻撃 74%上昇",
+ "furigana": "ゆうきはるとも",
+ "illustrator": "青空あおい",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 860,
+ "atkGrowth": 27.0,
+ "defBase": 840,
+ "defGrowth": 24.0,
+ "tacticsBase": 460.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2940,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "B",
+  "uma": "C",
+  "ki": "B"
+ },
+ "initialSkill": "名家ノ武威",
+ "skillDetail": "D/LV10 確率 14% 攻撃 74%上昇/対象:槍砲器\n①攻撃が74%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍砲器　確率 14% / 攻撃 74%上昇"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "名家ノ武威",
+   "rank": "D",
+   "afterSkill": "戦鬼侵軍",
+   "afterRank": "B",
+   "target": "槍砲器",
+   "rate": "14%",
+   "effectShort": "攻撃 74%上昇",
+   "afterTarget": "槍砲器",
+   "afterRate": "15%",
+   "afterEffectShort": "攻撃 54%上昇 / 合流攻撃時は必ずスキル発動"
+  },
+  {
+   "slot": "B",
+   "skill": "槍隊突撃",
+   "rank": "F",
+   "afterSkill": "槍隊奇襲",
+   "afterRank": "E",
+   "target": "槍",
+   "rate": "15%",
+   "effectShort": "攻撃 20%上昇",
+   "afterTarget": "槍",
+   "afterRate": "30%",
+   "afterEffectShort": "攻撃 12%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "反攻",
+   "rank": "D",
+   "afterSkill": "火将ノ熊手",
+   "afterRank": "B",
+   "target": "槍弓砲",
+   "rate": "28%",
+   "effectShort": "攻撃 48%上昇 / 武将ランクで効果が変化",
+   "afterTarget": "槍砲器",
+   "afterRate": "38%",
+   "afterEffectShort": "攻撃 ((1+ランク)xコストx1.7) %上昇 / 武将ランクとコストで効果が変化"
+  },
+  {
+   "slot": "S1",
+   "skill": "戦鬼侵軍",
+   "rank": "B",
+   "afterSkill": "戦鬼侵軍",
+   "afterRank": "B",
+   "target": "槍砲器",
+   "rate": "15%",
+   "effectShort": "攻撃 54%上昇 / 合流攻撃時は必ずスキル発動"
+  },
+  {
+   "slot": "S2",
+   "skill": "野太刀",
+   "rank": "C",
+   "afterSkill": "戦陣 凱旋",
+   "afterRank": "A",
+   "target": "全",
+   "rate": "17%",
+   "effectShort": "攻撃 77%上昇 / 防御 77%上昇",
+   "afterTarget": "全",
+   "afterRate": "10%",
+   "afterEffectShort": "攻撃 87%上昇+防御 87%上昇"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3450 と skills/名家ノ武威)およびixawiki(BushoCard/3450結城晴朝)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

@@ -1,0 +1,110 @@
+{
+ "name": "二階堂盛義",
+ "no": "3536",
+ "ch": null,
+ "cost": 3.0,
+ "troop": "砲器防",
+ "sub": "",
+ "effect": "防御 (1.2×防御参加武将数)%上昇 / 防御参加武将数が90以下の時、防御効果2倍",
+ "furigana": "にかいどうもりよし",
+ "illustrator": "祀花よう子",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 880,
+ "atkGrowth": 29.0,
+ "defBase": 890,
+ "defGrowth": 31.0,
+ "tacticsBase": 470.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 3030,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "B",
+  "uma": "C",
+  "ki": "A"
+ },
+ "initialSkill": "涼下宿志",
+ "skillDetail": "C/LV10 確率 38% 防御 (1.2×防御参加武将数)%上昇 / 防御参加武将数が90以下の時防御効果2倍/対象:砲器\n①防御 (1.2×防御参加武将数)%上昇 / 防御参加武将数が90以下の時防御効果2倍",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "砲器　確率 38% / 防御 (1.2×防御参加武将数)%上昇 / 防御参加武将数が90以下の時、防御効果2倍"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "涼下宿志",
+   "rank": "C",
+   "afterSkill": "籠城の妙技",
+   "afterRank": "A",
+   "target": "砲器",
+   "rate": "38%",
+   "effectShort": "防御 (1.2×防御参加武将数)%上昇 / 防御参加武将数が90以下の時、防御効果2倍",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "防御 50%上昇(卓越:追加確率15%で防御効果が3倍)"
+  },
+  {
+   "slot": "B",
+   "skill": "涼下宿志",
+   "rank": "C",
+   "afterSkill": "籠城の妙技",
+   "afterRank": "A",
+   "target": "砲器",
+   "rate": "38%",
+   "effectShort": "防御 (1.2×防御参加武将数)%上昇 / 防御参加武将数が90以下の時、防御効果2倍",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "防御 50%上昇(卓越:追加確率15%で防御効果が3倍)"
+  },
+  {
+   "slot": "C",
+   "skill": "歴戦ノ堅将",
+   "rank": "C",
+   "afterSkill": "覇・太虚国崩",
+   "afterRank": "B",
+   "target": "槍砲器",
+   "rate": "42%",
+   "effectShort": "防御 (1.2×防御参加武将数)%上昇",
+   "afterTarget": "全",
+   "afterRate": "55%",
+   "afterEffectShort": "防御 75%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "籠城の妙技",
+   "rank": "A",
+   "afterSkill": "三千世界神将",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "防御 50%上昇(卓越:追加確率15%で防御効果が3倍)",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "防御 120%上昇(本丸防御陣形時コスト消費-1)"
+  },
+  {
+   "slot": "S2",
+   "skill": "十字飛車",
+   "rank": "A",
+   "afterSkill": "騒速ノ神撃",
+   "afterRank": "SS",
+   "target": "槍砲器",
+   "rate": "42%",
+   "effectShort": "攻撃 77%上昇 / 防御 77%上昇 / 破壊 50%上昇",
+   "afterTarget": "槍・弓・器・焙",
+   "afterRate": "57%",
+   "afterEffectShort": "攻撃 100%上昇 防御 100%上昇 部隊内の「騒速ノ神撃」スキルx25%を攻防効果に加算"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3536 と skills/涼下宿志)およびixawiki(BushoCard/3536二階堂盛義)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。",
+  "2026-08-23: skillDetail に読点が混入していた(F-01違反)。ixanary の原文が「配置時、防御効果が」のように読点を使うのをそのまま取り込んでいた。読点を外した。"
+ ]
+}

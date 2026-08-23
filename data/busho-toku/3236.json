@@ -1,0 +1,103 @@
+{
+ "name": "亀寿姫",
+ "no": "3236",
+ "ch": null,
+ "cost": 1.5,
+ "troop": "全防",
+ "sub": "",
+ "effect": "防御 24%上昇 / (合流攻撃防御時は効果2倍)",
+ "furigana": "かめじゅひめ",
+ "illustrator": "BISAI",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 630,
+ "atkGrowth": 15.0,
+ "defBase": 710,
+ "defGrowth": 18.0,
+ "tacticsBase": 450.0,
+ "tacticsGrowth": 1.5,
+ "lv0Troops": 1900,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "A",
+  "uma": "B",
+  "ki": "A"
+ },
+ "initialSkill": "柳眉倒豎",
+ "skillDetail": "D/LV10 確率 35% 防御 24%上昇 / (合流攻撃防御時は効果2倍)/対象:全\n①防御 24%上昇 / (合流攻撃防御時は効果2倍)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 35% / 防御 24%上昇 / (合流攻撃防御時は効果2倍)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "鉄砲隊堅陣",
+   "rank": "F",
+   "afterSkill": "鉄砲隊奇襲",
+   "afterRank": "E",
+   "target": "砲",
+   "rate": "25%",
+   "effectShort": "砲防：12%上昇",
+   "afterTarget": "砲",
+   "afterRate": "25%",
+   "afterEffectShort": "攻撃 12%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "薩摩軍法",
+   "rank": "A",
+   "afterSkill": "繰抜十字紋",
+   "afterRank": "S",
+   "target": "砲器",
+   "rate": "25%",
+   "effectShort": "防御 32%上昇",
+   "afterTarget": "砲",
+   "afterRate": "40%",
+   "afterEffectShort": "攻撃 30%上昇+破壊 15%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "返り忠",
+   "rank": "D",
+   "afterSkill": "返り忠",
+   "afterRank": "D",
+   "target": "砲",
+   "rate": "25%",
+   "effectShort": "防御 25%上昇 / (合流攻撃防御時は効果2倍)"
+  },
+  {
+   "slot": "S1",
+   "skill": "柳眉倒豎",
+   "rank": "D",
+   "afterSkill": "柳眉倒豎",
+   "afterRank": "D",
+   "target": "全",
+   "rate": "35%",
+   "effectShort": "防御 24%上昇 / (合流攻撃防御時は効果2倍)"
+  },
+  {
+   "slot": "S2",
+   "skill": "釣り野伏 真",
+   "rank": "S",
+   "afterSkill": "破軍星",
+   "afterRank": "SS",
+   "target": "砲",
+   "rate": "35%",
+   "effectShort": "防御 35%上昇",
+   "afterTarget": "馬・砲・器",
+   "afterRate": "40%",
+   "afterEffectShort": "攻撃 (18+コストx8) %上昇 破壊 (8+コストx3) %上昇 (武将のコストで効果が変化します)"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3236 と skills/柳眉倒豎)およびixawiki(BushoCard/3236亀寿姫)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

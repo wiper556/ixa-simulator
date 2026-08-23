@@ -1,0 +1,109 @@
+{
+ "name": "的場源四郎",
+ "no": "3323",
+ "ch": null,
+ "cost": 1.5,
+ "troop": "砲器攻",
+ "sub": "",
+ "effect": "攻撃 43%上昇 / (19時～翌01時は確率5倍)",
+ "furigana": "まとばげんしろう",
+ "illustrator": "オンダカツキ",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 860,
+ "atkGrowth": 23.0,
+ "defBase": 840,
+ "defGrowth": 21.0,
+ "tacticsBase": 420.0,
+ "tacticsGrowth": 1.5,
+ "lv0Troops": 1860,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "B",
+  "uma": "C",
+  "ki": "A"
+ },
+ "initialSkill": "雑賀ノ闇鉄砲",
+ "skillDetail": "D/LV10 確率 12% 攻撃 43%上昇 / (19時～翌01時は確率5倍)/対象:砲器\n①攻撃 43%上昇 / (19時～翌01時は確率5倍)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "砲器　確率 12% / 攻撃 43%上昇 / (19時～翌01時は確率5倍)"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "兵器突撃",
+   "rank": "F",
+   "afterSkill": "迅速行軍",
+   "afterRank": "E",
+   "target": "器",
+   "rate": "15%",
+   "effectShort": "攻撃 20%上昇",
+   "afterTarget": "全",
+   "afterRate": "100%",
+   "afterEffectShort": "速度 20%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "雑賀式絡繰",
+   "rank": "E",
+   "afterSkill": "鉄砲隊挟撃",
+   "afterRank": "E",
+   "target": "砲器",
+   "rate": "20%",
+   "effectShort": "攻撃 20%上昇",
+   "afterTarget": "砲",
+   "afterRate": "20%",
+   "afterEffectShort": "攻撃 (コストx6.5) %上昇 / (武将のコストで効果が変化します)"
+  },
+  {
+   "slot": "C",
+   "skill": "雑賀ノ闇鉄砲",
+   "rank": "D",
+   "afterSkill": "南蛮砲術",
+   "afterRank": "D",
+   "target": "砲器",
+   "rate": "12%",
+   "effectShort": "攻撃 43%上昇 / (19時～翌01時は確率5倍)",
+   "afterTarget": "砲器",
+   "afterRate": "24%",
+   "afterEffectShort": "攻撃 34%上昇 / 破壊 27%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "南蛮砲術",
+   "rank": "D",
+   "afterSkill": "船団爆雷",
+   "afterRank": "B",
+   "target": "砲器",
+   "rate": "24%",
+   "effectShort": "攻撃 34%上昇 / 破壊 27%上昇",
+   "afterTarget": "弓砲器",
+   "afterRate": "25%",
+   "afterEffectShort": "攻撃 30%上昇 / 破壊 10%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "炮烙の計",
+   "rank": "D",
+   "afterSkill": "謀殺",
+   "afterRank": "D",
+   "target": "弓砲器",
+   "rate": "15%",
+   "effectShort": "攻撃 20%上昇 / 破壊 15%上昇",
+   "afterTarget": "全",
+   "afterRate": "15%",
+   "afterEffectShort": "攻撃戦闘勝利時のみ、敵軍1部隊の武将に追加ダメージ+35"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3323 と skills/雑賀ノ闇鉄砲)およびixawiki(BushoCard/3323的場源四郎)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。"
+ ]
+}

@@ -1,0 +1,110 @@
+{
+ "name": "般若",
+ "no": "3602",
+ "ch": null,
+ "cost": 2.0,
+ "troop": "馬砲器攻",
+ "sub": "",
+ "effect": "攻撃 315%上昇 速度 100%上昇 / 対象兵科指揮時、参加自部隊は攻撃力減少を受けない距離が10延長される",
+ "furigana": "はんにゃ",
+ "illustrator": "&#169;NW/S,RKKD",
+ "imageFull": null,
+ "imageChar": null,
+ "atkBase": 900,
+ "atkGrowth": 32.0,
+ "defBase": 850,
+ "defGrowth": 26.0,
+ "tacticsBase": 490.0,
+ "tacticsGrowth": 2.0,
+ "lv0Troops": 2410,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "C",
+  "uma": "A",
+  "ki": "B"
+ },
+ "initialSkill": "伸腕の術",
+ "skillDetail": "C/LV10 確率 100% 攻撃 315%上昇 速度 100%上昇 / 対象兵科指揮時参加自部隊は攻撃力減少を受けない距離が10延長される/対象:馬砲器\n①攻撃 315%上昇 速度 100%上昇 / 対象兵科指揮時参加自部隊は攻撃力減少を受けない距離が10延長される",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "馬砲器　確率 100% / 攻撃 315%上昇 速度 100%上昇 / 対象兵科指揮時、参加自部隊は攻撃力減少を受けない距離が10延長される"
+  }
+ ],
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "伸腕の術",
+   "rank": "C",
+   "afterSkill": "是絶景哉",
+   "afterRank": "C",
+   "target": "馬砲器",
+   "rate": "100%",
+   "effectShort": "攻撃 315%上昇 速度 100%上昇 / 対象兵科指揮時、参加自部隊は攻撃力減少を受けない距離が10延長される",
+   "afterTarget": "槍砲器",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 260%上昇 / 破壊 50%上昇 / 速度 40%上昇"
+  },
+  {
+   "slot": "B",
+   "skill": "伸腕の術",
+   "rank": "C",
+   "afterSkill": "是絶景哉",
+   "afterRank": "C",
+   "target": "馬砲器",
+   "rate": "100%",
+   "effectShort": "攻撃 315%上昇 速度 100%上昇 / 対象兵科指揮時、参加自部隊は攻撃力減少を受けない距離が10延長される",
+   "afterTarget": "槍砲器",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 260%上昇 / 破壊 50%上昇 / 速度 40%上昇"
+  },
+  {
+   "slot": "C",
+   "skill": "伸腕の術",
+   "rank": "C",
+   "afterSkill": "是絶景哉",
+   "afterRank": "C",
+   "target": "馬砲器",
+   "rate": "100%",
+   "effectShort": "攻撃 315%上昇 速度 100%上昇 / 対象兵科指揮時、参加自部隊は攻撃力減少を受けない距離が10延長される",
+   "afterTarget": "槍砲器",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 260%上昇 / 破壊 50%上昇 / 速度 40%上昇"
+  },
+  {
+   "slot": "S1",
+   "skill": "是絶景哉",
+   "rank": "C",
+   "afterSkill": "三斎流具足",
+   "afterRank": "B",
+   "target": "槍砲器",
+   "rate": "100%",
+   "effectShort": "攻撃 260%上昇 / 破壊 50%上昇 / 速度 40%上昇",
+   "afterTarget": "馬器騎",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 48%上昇 / 破壊 35%上昇 / 速度 35%上昇"
+  },
+  {
+   "slot": "S2",
+   "skill": "戦陣 疾駆",
+   "rank": "A",
+   "afterSkill": "十束ノ神域",
+   "afterRank": "SS",
+   "target": "全",
+   "rate": "100%",
+   "effectShort": "速度 170%上昇+破壊 170%上昇",
+   "afterTarget": "全 覇道",
+   "afterRate": "100%",
+   "afterEffectShort": "攻撃 320%上昇+速度 70%上昇(所属部隊の武将のスキルを無効化・発動率低下から保護)"
+  }
+ ],
+ "notes": [
+  "ixanary.com(cards/3602 と skills/伸腕の術)およびixawiki(BushoCard/3602般若)で登録(2026-08-14)。",
+  "統率はカード画像のバッジで確認し、ixawikiのカードページと一致することを見た(D-01)。",
+  "指揮兵数はixanaryの★0-0の値(B-01の+0.5版の罠を避けるため突破ランク別の値は使わない)。",
+  "合成候補はixanaryのスキルページの1次(移植前)・2次(移植後)。",
+  "章は情報源に記載が無いため未確認。効果文が埋まっていない候補が残るため青丸のまま(D-15)。",
+  "2026-08-23: skillDetail に読点が混入していた(F-01違反)。ixanary の原文が「配置時、防御効果が」のように読点を使うのをそのまま取り込んでいた。読点を外した。"
+ ]
+}
