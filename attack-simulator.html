@@ -482,6 +482,27 @@
     table.sheet{min-width:560px;}
   }
 
+  /* ============ 候補の絞り込み(2026-08-23 うぐさん指示) ============
+     武将名・スキル名の入力補完に出す候補を、レアリティ・スキルランク・章で絞る。
+     初期状態は閉じたプルダウン(details)。開くと中身が出る。 */
+  details.cand-filter{margin-bottom:10px;}
+  details.cand-filter > summary{
+    cursor:pointer;padding:8px 12px;font-weight:bold;color:var(--gold-bright);
+    list-style:none;display:flex;align-items:center;gap:10px;flex-wrap:wrap;}
+  details.cand-filter > summary::-webkit-details-marker{display:none;}
+  details.cand-filter > summary::before{content:'▶';font-size:11px;transition:transform .15s;}
+  details.cand-filter[open] > summary::before{transform:rotate(90deg);}
+  .cf-sum{font-weight:normal;font-size:12px;color:var(--muted);}
+  .cf-body{padding:0 12px 12px;display:flex;flex-direction:column;gap:10px;}
+  .cf-group{display:flex;flex-wrap:wrap;align-items:center;gap:6px 10px;}
+  .cf-label{font-size:12px;font-weight:bold;min-width:8em;}
+  .cf-boxes{display:flex;flex-wrap:wrap;gap:4px 12px;}
+  .cf-boxes label{font-size:12px;display:inline-flex;align-items:center;gap:3px;
+    white-space:nowrap;cursor:pointer;}
+  .cf-btn{font-size:11px;padding:1px 8px;cursor:pointer;}
+  .cf-note{font-size:11px;color:var(--muted);}
+  #cfChapter{width:4em;}
+
   /* 武将名 検索予想ドロップダウン */
   .general-suggest-box{
     position:absolute; top:100%; left:0; right:0; z-index:20;
@@ -610,6 +631,32 @@
       <button id="modeToggleBtn" class="mode-toggle-btn">🛡 防御シミュレーターに切替</button>
     </div>
   </div>
+
+  <!-- 候補の絞り込み(プルダウン) -->
+  <details class="panel cand-filter" id="candFilter">
+    <summary>候補の絞り込み<span class="cf-sum" id="cfSummary"></span></summary>
+    <div class="cf-body">
+      <div class="cf-group">
+        <span class="cf-label">レアリティ</span>
+        <span class="cf-boxes" id="cfRarityBoxes"></span>
+        <button type="button" class="cf-btn" data-cf-all="rarity">全部</button>
+        <button type="button" class="cf-btn" data-cf-none="rarity">全解除</button>
+      </div>
+      <div class="cf-group">
+        <span class="cf-label">スキルランク</span>
+        <span class="cf-boxes" id="cfRankBoxes"></span>
+        <button type="button" class="cf-btn" data-cf-all="rank">全部</button>
+        <button type="button" class="cf-btn" data-cf-none="rank">全解除</button>
+      </div>
+      <div class="cf-group">
+        <span class="cf-label">章</span>
+        <label>入力した章とそれ以前を出さない
+          <input type="number" id="cfChapter" min="0" max="99" step="1" value="17">章</label>
+        <button type="button" class="cf-btn" id="cfReset">初期値に戻す</button>
+        <span class="cf-note">空欄にすると章で絞りません。章が未登録の武将は隠します。</span>
+      </div>
+    </div>
+  </details>
 
   <!-- 部隊編成表 -->
   <div class="panel">
@@ -876,7 +923,7 @@
   // 【必須】attack-simulator.html を変更したコミットでは、必ずこの定数も一緒に更新すること。
   // 表示文言の変更・CSSの微調整であっても対象(ユーザーがスクショで版を判別できなくなるため)。
   // 更新忘れが繰り返し発生しているので、編集したらコミット前にここを見に来る。
-  const SIMULATOR_VERSION = 'v2026-08-22.1';
+  const SIMULATOR_VERSION = 'v2026-08-23.3';
   document.addEventListener('DOMContentLoaded', ()=>{
     const badge = document.getElementById('simVersionBadge');
     if(badge) badge.textContent = SIMULATOR_VERSION;
@@ -4783,6 +4830,8 @@
     runFullCalculation();
   }
   loadSheet();
+  initCandFilter();
+
   // 前回どちらを開いていたかを画面に反映する。部隊編成の復元が終わってから呼ぶ
   // (applyModeは部隊合計の再計算まで行うため、中身が入った状態で走らせる必要がある)。
   applyMode();
@@ -4877,11 +4926,11 @@
     {name:"上杉景勝（6）", no:"1301", ch:"31章", cost:5.5, troop:"全防", sub:"", effect:"模倣スキルのレアリティ係数によって防御効果が上昇"},
     {name:"佐竹義宣（3）", no:"1302", ch:"31章", cost:5.5, troop:"砲器防", sub:"", effect:"防御参加武将数依存"},
     {name:"本多忠勝（2）", no:"1303", ch:"31章", cost:2.5, troop:"全攻", sub:"", effect:"8部隊以下の攻撃時、卓越確率+480%／部隊内武将の卓越確率+15%"},
-    {name:"真田昌幸（4）", no:"1304", ch:"31章", cost:5.0, troop:"-", sub:"無尽", effect:"追加スキル、極限スキルの防御・破壊効果が2倍"},
+    {name:"真田昌幸（4）", no:"1304", ch:"31章", cost:5.0, troop:"全防", sub:"無尽", effect:"追加・極限スキルの防御・破壊効果が2倍"},
     {name:"福島正則（4）", no:"1305", ch:"31章", cost:3.0, troop:"槍弓器鉄防", sub:"無尽", effect:"部隊コスト10以下で効果2倍"},
     {name:"毛利輝元（7）", no:"1306", ch:"31章", cost:5.0, troop:"弓砲器攻", sub:"", effect:"敵軍部隊数依存"},
-    {name:"立花宗茂（4）", no:"1307", ch:"31章", cost:4.0, troop:"槍馬器騎攻+速度", sub:"", effect:"部隊移動速度依存"},
-    {name:"小西行長（2）", no:"1308", ch:"31章", cost:5.0, troop:"全防", sub:"", effect:"所有者より全体格付け「戦果」が上位の的城主が敵軍にいた場合防御効果3倍"},
+    {name:"立花宗茂（4）", no:"1307", ch:"31章", cost:4.0, troop:"槍馬器騎攻速", sub:"", effect:"部隊移動速度依存"},
+    {name:"小西行長（2）", no:"1308", ch:"31章", cost:5.0, troop:"全防", sub:"", effect:"所有者より全体格付「戦果」が上位の城主が敵軍にいた場合防御効果3倍"},
     {name:"津軽為信", no:"1309", ch:"31章", cost:4.5, troop:"槍弓器鉄防", sub:"", effect:"防御参加武将数依存／220名以下の時、防御効果1.5倍"},
     {name:"織田信長（8）【覇】", no:"1286", ch:"30章", cost:6.0, troop:"砲器攻", sub:"覇道", effect:"部隊総攻撃力上昇"},
     {name:"豊臣秀吉（8）【覇】", no:"1287", ch:"30章", cost:5.0, troop:"弓馬砲器防", sub:"覇道", effect:"部隊内覇武将数×200%上昇／部隊長時は効果2倍"},
@@ -4915,7 +4964,7 @@
     {name:"石田三成（6）", no:"1277", ch:"29章", cost:4.5, troop:"全攻防", sub:"飛翔17", effect:"-"},
     {name:"羽柴秀長", no:"1278", ch:"29章", cost:4.5, troop:"全攻防", sub:"無尽", effect:"部隊内の全スキルに「砲」対象を追加"},
     {name:"荒木村重（2）", no:"1279", ch:"29章", cost:4.0, troop:"槍弓砲器防", sub:"", effect:"防御参加数依存／120名以下の時は効果1.5倍"},
-    {name:"小早川隆景", no:"1280", ch:"29章", cost:5.0, troop:"-", sub:"兵站", effect:"加勢戦闘時は追加スキルの防御効果2.5倍"},
+    {name:"小早川隆景", no:"1280", ch:"29章", cost:5.0, troop:"防", sub:"兵站", effect:"加勢戦闘時は追加スキルの防御効果2.5倍"},
     {name:"宇喜多秀家（4）", no:"1281", ch:"29章", cost:4.0, troop:"槍馬砲器防", sub:"飛翔10", effect:"飛翔値の合計×10％を加算"},
     {name:"黒田長政（2）", no:"1282", ch:"29章", cost:5.0, troop:"槍弓馬砲攻", sub:"", effect:"飛翔を持たない防御参加数依存"},
     {name:"鍋島直茂（3）", no:"1283", ch:"29章", cost:5.0, troop:"全防", sub:"", effect:"防御効果のみコスト【+1】計算"},
@@ -4996,6 +5045,150 @@
   }
 
   // いまのモードで出してよい武将か。軸が分からないものは出す。
+  /* ============ 候補の絞り込み(2026-08-23 うぐさん指示) ============
+     レアリティ・スキルランク・章で、入力補完に出す候補を絞る。
+
+     ・チェックの名前は characters-hub.html に載っているデータベース名に合わせてある
+       (天 / 天パラレル / 傑 / 極 / 極プラチナ・シークレット / 特 / 特シークレット / 上 / 序)。
+       「極プラチナ・シークレット」はプラチナ極とシークレット極の両方を含む1つのDB。
+     ・レアリティは assets/js/ixa-data.js の generalRarityDB を引く。
+       **カードNo.から推測しない。** No.の桁と頭で分ける関数(generalRarity)も
+       この下にあるが、あれは並べ替え用の4種(傑/天/極/特)しか出せず、
+       天パラレル・極プラチナ・シークレット・特シークレット・上・序を分けられない。
+       generalRarityDB は正本のディレクトリから生成しているので9種を正しく分けられる。
+     ・スキルランクは武将側が generalSkillRankDB、スキル欄が skillRankDB。
+       傑カードの「傑/効果固定」は SSS 扱い(うぐさん判断 2026-08-23)。
+     ・章は「入力した章とそれ以前を出さない」。**章が未登録の武将は隠す**
+       (うぐさん判断 2026-08-23。1802体中944体が未登録なので効き方が大きい)。
+       空欄にすると章では絞らない。
+     ・generalRarityDB に無いカード(手書きDBにしか無い武将)は絞り込みの対象外＝隠さない。 */
+  const CF_RARITY = [
+    {key:'ketsu',       label:'傑',                 def:true},
+    {key:'ten',         label:'天',                 def:true},
+    {key:'parallelTen', label:'天パラレル',            def:true},
+    {key:'kyoku',       label:'極',                 def:false},
+    {key:'kyokuPs',     label:'極プラチナ・シークレット', def:true},
+    {key:'toku',        label:'特',                 def:false},
+    {key:'tokuS',       label:'特シークレット',         def:false},
+    {key:'ue',          label:'上',                 def:false},
+    {key:'jo',          label:'序',                 def:false}
+  ];
+  const CF_RANKS = ['SSS','SS','S','A','B','C','D','E','F'];
+  const CF_RANK_DEFAULT = ['SSS','SS','S','A'];
+  const CF_CHAPTER_DEFAULT = 17;
+  const CF_STORE_KEY = 'ixaSimCandFilter.v1';
+
+  let cfRaritySet = new Set(CF_RARITY.filter(r=>r.def).map(r=>r.key));
+  let cfRankSet = new Set(CF_RANK_DEFAULT);
+  let cfChapter = CF_CHAPTER_DEFAULT;
+
+  function cfSave(){
+    try{
+      localStorage.setItem(CF_STORE_KEY, JSON.stringify({
+        rarity:[...cfRaritySet], rank:[...cfRankSet], chapter:cfChapter}));
+    }catch(e){ /* 保存できなくても動作には影響しない */ }
+  }
+  function cfLoad(){
+    try{
+      const raw = localStorage.getItem(CF_STORE_KEY);
+      if(!raw) return;
+      const o = JSON.parse(raw);
+      if(Array.isArray(o.rarity)) cfRaritySet = new Set(o.rarity);
+      if(Array.isArray(o.rank)) cfRankSet = new Set(o.rank);
+      cfChapter = (o.chapter === null || o.chapter === '') ? null : Number(o.chapter);
+      if(cfChapter !== null && !isFinite(cfChapter)) cfChapter = CF_CHAPTER_DEFAULT;
+    }catch(e){ /* 壊れていたら既定値のまま */ }
+  }
+
+  // 章で通すか。null(絞らない)以外のときは、章が分からない武将も隠す。
+  function cfPassChapter(no){
+    if(cfChapter === null) return true;
+    const ch = generalChapterOf(no);
+    if(ch === null || ch === undefined) return false;
+    return ch > cfChapter;
+  }
+
+  function generalPassesFilter(s){
+    const no = String(s.no || '');
+    if(typeof generalRarityDB === 'undefined') return true;
+    const r = generalRarityDB[no];
+    if(r === undefined) return true;      // 正本に無いカードは絞らない
+    if(!cfRaritySet.has(r)) return false;
+    if(!cfPassChapter(no)) return false;
+    const rk = (typeof generalSkillRankDB !== 'undefined') ? generalSkillRankDB[no] : undefined;
+    if(rk !== undefined && !cfRankSet.has(rk)) return false;
+    return true;
+  }
+
+  // スキル欄はランクだけで絞る(レアリティ・章は武将の属性でスキルの属性ではないため)。
+  function skillPassesFilter(name){
+    if(typeof skillRankDB === 'undefined') return true;
+    const rk = skillRankDB[name];
+    if(rk === undefined) return true;     // ランクが分からないスキルは絞らない
+    return cfRankSet.has(rk);
+  }
+
+  function cfUpdateSummary(){
+    const el = document.getElementById('cfSummary');
+    if(!el) return;
+    const rs = CF_RARITY.filter(r=>cfRaritySet.has(r.key)).map(r=>r.label);
+    const ch = (cfChapter === null) ? '章は絞らない' : (cfChapter + '章以前を除く');
+    el.textContent = '(' + (rs.length ? rs.join('／') : 'レアリティ未選択')
+      + ' / ' + (cfRankSet.size ? CF_RANKS.filter(r=>cfRankSet.has(r)).join('・') : 'ランク未選択')
+      + ' / ' + ch + ')';
+  }
+
+  function cfRenderBoxes(){
+    const rb = document.getElementById('cfRarityBoxes');
+    const kb = document.getElementById('cfRankBoxes');
+    if(rb) rb.innerHTML = CF_RARITY.map(r =>
+      `<label><input type="checkbox" data-cf="rarity" value="${r.key}"`
+      + `${cfRaritySet.has(r.key) ? ' checked' : ''}>${r.label}</label>`).join('');
+    if(kb) kb.innerHTML = CF_RANKS.map(r =>
+      `<label><input type="checkbox" data-cf="rank" value="${r}"`
+      + `${cfRankSet.has(r) ? ' checked' : ''}>${r}</label>`).join('');
+    const ci = document.getElementById('cfChapter');
+    if(ci) ci.value = (cfChapter === null) ? '' : String(cfChapter);
+    cfUpdateSummary();
+  }
+
+  function initCandFilter(){
+    const root = document.getElementById('candFilter');
+    if(!root) return;
+    cfLoad();
+    cfRenderBoxes();
+    root.addEventListener('change', (e)=>{
+      const el = e.target;
+      if(el.dataset && el.dataset.cf){
+        const set = (el.dataset.cf === 'rarity') ? cfRaritySet : cfRankSet;
+        if(el.checked) set.add(el.value); else set.delete(el.value);
+      }else if(el.id === 'cfChapter'){
+        const v = el.value.trim();
+        cfChapter = (v === '') ? null : parseInt(v, 10);
+        if(cfChapter !== null && !isFinite(cfChapter)) cfChapter = null;
+      }else return;
+      cfSave(); cfUpdateSummary();
+    });
+    root.addEventListener('click', (e)=>{
+      const b = e.target.closest('button');
+      if(!b) return;
+      if(b.id === 'cfReset'){
+        cfRaritySet = new Set(CF_RARITY.filter(r=>r.def).map(r=>r.key));
+        cfRankSet = new Set(CF_RANK_DEFAULT);
+        cfChapter = CF_CHAPTER_DEFAULT;
+      }else if(b.dataset.cfAll === 'rarity'){
+        cfRaritySet = new Set(CF_RARITY.map(r=>r.key));
+      }else if(b.dataset.cfNone === 'rarity'){
+        cfRaritySet = new Set();
+      }else if(b.dataset.cfAll === 'rank'){
+        cfRankSet = new Set(CF_RANKS);
+      }else if(b.dataset.cfNone === 'rank'){
+        cfRankSet = new Set();
+      }else return;
+      cfRenderBoxes(); cfSave();
+    });
+  }
+
   function generalFitsMode(s){
     if(!s.axis || s.axis === 'both') return true;
     return s.axis === (simMode === 'defense' ? 'def' : 'atk');
@@ -5164,7 +5357,7 @@
       const isNumeric = /^[0-9]+$/.test(q);
       if(isNumeric && q.length < 3){ hide(); return; } // カードNo.(数字)は3文字以上から表示
       const matches = generalSuggestions
-        .filter(s => (s.name.includes(q) || s.no.includes(q)) && generalFitsMode(s))
+        .filter(s => (s.name.includes(q) || s.no.includes(q)) && generalFitsMode(s) && generalPassesFilter(s))
         .slice(0, 20);
       if(matches.length === 0){ hide(); return; }
       box.innerHTML = matches.map(s =>
@@ -5326,7 +5519,8 @@
       if(/^[0-9]+$/.test(q)){ hide(); return; } // 数字のみのクエリは反映しない
       const known = getKnownSkillNames();
       const usedNames = getUsedSkillNamesInColumn(col, rowKey);
-      const allMatches = known.filter(name => name.includes(q) && !usedNames.includes(name));
+      const allMatches = known.filter(name => name.includes(q) && !usedNames.includes(name)
+        && skillPassesFilter(name));
       if(allMatches.length === 0){ hide(); return; }
       if(q.length === 1 && allMatches.length >= 8){ hide(); return; } // 1文字で8件以上ヒットする場合は表示しない
       const matches = allMatches.slice(0, 20);
@@ -5372,7 +5566,8 @@
         if(q.length >= 1 && !/^[0-9]+$/.test(q)){
           const known = getKnownSkillNames();
           const usedNames = getUsedSkillNamesInColumn(col, rowKey);
-          const allMatches = known.filter(name => name.includes(q) && !usedNames.includes(name));
+          const allMatches = known.filter(name => name.includes(q) && !usedNames.includes(name)
+        && skillPassesFilter(name));
           if(allMatches.length === 1){
             selectSkillName(allMatches[0]);
             return;
