@@ -8,8 +8,8 @@
  "effect": "防御 54%上昇(自拠点防御時は防御効果2倍)",
  "furigana": "こしょうしょう",
  "illustrator": "鏑木康隆",
- "imageFull": null,
- "imageChar": null,
+ "imageFull": "assets/img/characters/no2523_full.png",
+ "imageChar": "assets/img/characters/no2523_char.png",
  "atkBase": 970,
  "atkGrowth": 28,
  "defBase": 1070,
@@ -39,7 +39,8 @@
   "ixawikiページに「※「武将イラスト人気ランキング2019」姫部門・2位受賞により復刻」の記載があり実質復刻カード。",
   "コスト3・指揮兵数3270(★0-0)・成長値+28/+35/+2.5・ふりがな・絵師(鏑木康隆)は2ソースで完全一致。統率(槍A/弓A/馬A/器A)も2ソース一致。",
   "章はixanary/ixawikiいずれのカードページにも記載が無く未確認。",
-  "2026-08-18訂正: assets/js/ixa-data.js(シミュ側)に既にNo.2523の暫定登録(2026-08-10カード画像・「小少将-復刻-」)があるのを監査ツール(tools/audit_characters.py)で発見。rankGrades(槍A/弓A/馬A/器A)・基礎値・成長値が今回の登録と完全一致していたため、名前はそちらに合わせて「小少将-復刻-」に訂正した(元は一覧表記通りの「小少将」で登録していた)。"
+  "2026-08-18訂正: assets/js/ixa-data.js(シミュ側)に既にNo.2523の暫定登録(2026-08-10カード画像・「小少将-復刻-」)があるのを監査ツール(tools/audit_characters.py)で発見。rankGrades(槍A/弓A/馬A/器A)・基礎値・成長値が今回の登録と完全一致していたため、名前はそちらに合わせて「小少将-復刻-」に訂正した(元は一覧表記通りの「小少将」で登録していた)。",
+  "2026-08-26: カード画像を繋いだ。assets/img/characters/ に no{No}_full.png と no{No}_char.png が両方あるのに imageFull/imageChar が null で、サイトに出ていなかった。登録時の記録には「カード画像が無いため外部2ソースで確認した」とあり、**画像があることに気付かないまま**登録されていた。寸法(466x315 / 224x315)も規定どおりであることを確かめた。"
  ],
  "wikiOldestComment": "2020-02-05",
  "wikiCommentCount": 6,

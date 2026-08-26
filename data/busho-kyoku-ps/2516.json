@@ -8,8 +8,8 @@
  "effect": "防御 45%上昇(自部隊の武将ダメージ軽減12%・重複発動上限数3)",
  "furigana": "やまのてどの",
  "illustrator": "碧風羽",
- "imageFull": null,
- "imageChar": null,
+ "imageFull": "assets/img/characters/no2516_full.png",
+ "imageChar": "assets/img/characters/no2516_char.png",
  "atkBase": 950,
  "atkGrowth": 29,
  "defBase": 1020,
@@ -41,7 +41,8 @@
   "統率(弓)のみixanaryとixawikiが食い違った: ixanaryはyari/yumi/kiba/heiki=A/S/A/A、ixawikiは槍A/弓A/馬A/器Aで弓の値が不一致(ixanary S・ixawiki A)。ixanaryのyumi/kibaはカード実物と入れ替わっている場合があるとの既知の注意点があり、どちらが正しいか決められないためyumiをnullにした。他の3項目(槍A/馬A/器A)は一致。",
   "章はixanary/ixawikiいずれのカードページにも記載が無く未確認。",
   "2026-08-18訂正: assets/js/ixa-data.js(シミュ側)に既にNo.2516の暫定登録(2026-08-10カード画像・「山手殿-復刻-」)があるのを監査ツール(tools/audit_characters.py)で発見。rankGrades(槍A/弓A/馬A/器A)・基礎値・成長値が今回の登録と完全一致していたため、名前はそちらに合わせて「山手殿-復刻-」に訂正した(元は一覧表記通りの「山手殿」で登録していた)。またrankGradesの弓(yumi)は本登録では当初ixanary/ixawiki不一致でnullにしていたが、カード画像由来のシミュ側データがA(ixawikiと同値)だったためAに訂正した。",
-  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。",
+  "2026-08-26: カード画像を繋いだ。assets/img/characters/ に no{No}_full.png と no{No}_char.png が両方あるのに imageFull/imageChar が null で、サイトに出ていなかった。登録時の記録には「カード画像が無いため外部2ソースで確認した」とあり、**画像があることに気付かないまま**登録されていた。寸法(466x315 / 224x315)も規定どおりであることを確かめた。"
  ],
  "wikiOldestComment": "2019-10-04",
  "wikiCommentCount": 30,
