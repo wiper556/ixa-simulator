@@ -128,6 +128,30 @@ for no in NOS:
                     io.open(ap, "w", encoding="utf-8", newline="\n").write(
                         json.dumps(js, ensure_ascii=False, indent=1) + "\n")
                     via += 1
+    # 2026-08-26: 上の走査は**合成表の skill 欄しか見ない**ので、
+    # 一度も合成候補に出てこず初期スキルとしてしか持たれないスキルは
+    # sourceCharacters が空のまま残っていた(2026-08-23 に30件を手で埋めた)。
+    # 初期スキル専用の既存の書き方(無空ノ極剣 → 宮本二天 No.2590 slot=移植不可)に合わせる。
+    _ini = ent.get("initialSkill")
+    if _ini and not any(r.get("skill") == _ini for r in ent.get("synthesisTable") or []):
+        _sp = os.path.join(SKILLDIR, _ini + ".json")
+        if os.path.exists(_sp):
+            _js = json.load(io.open(_sp, encoding="utf-8"),
+                            object_pairs_hook=collections.OrderedDict)
+            _sc = _js.setdefault("sourceCharacters", [])
+            if not any(str(x.get("no")) == no for x in _sc):
+                _row = collections.OrderedDict([
+                    ("name", ent["name"]), ("no", no), ("slot", "移植不可")])
+                if db:
+                    _row["db"] = db
+                _row["note"] = ["%s(%s)の初期スキル。合成候補には出てこない(%s)"
+                                % (ent["name"], no, TODAY)]
+                _sc.append(_row)
+                _js["sourceCharacters"] = sorted(_sc, key=src_key)
+                io.open(_sp, "w", encoding="utf-8", newline="\n").write(
+                    json.dumps(_js, ensure_ascii=False, indent=1) + "\n")
+                added += 1
+
 print("S-05 逆引きを %d件 / grantedViaSkills を %d件 追記" % (added, via))
 
 # --- S-08: 武将側の afterSkill から ownHiddenCandidate を決める ---
@@ -325,6 +349,43 @@ def sync_list_pages():
                 close_at += len(fixed) - len(inner)
                 inner = fixed
                 touched = True
+            # 2026-08-26: ここは**削除をしなかった**ので、正本から消えた行が
+            # 残り続けていた(月詠ノ覇威に、舞蝶朧月の移植後が黒飛燕剣に
+            # 確定する前の4行が残っていた)。
+            # ただし一覧には「移植で入手できる武将」も載っている(147行)。
+            # 正本の sourceCharacters に無いというだけで消してはいけないので、
+            # **その武将がそのスキルを一切持っていない行だけ**落とす。
+            _keep = {str(c.get("no")) for c in master[nm]}
+            _drop = []
+            for _no in sorted(listed):
+                if _no in _keep:
+                    continue
+                _g, _ = find_general(_no)
+                if _g is None:
+                    _drop.append(_no)
+                    continue
+                _st = _g.get("synthesisTable") or []
+                if not (_g.get("initialSkill") == nm
+                        or any(r.get("skill") == nm or r.get("afterSkill") == nm
+                               for r in _st)):
+                    _drop.append(_no)
+            if _drop:
+                _fx = inner
+                for _no in _drop:
+                    _pat = re.compile(r"\n\s*\{name:\"[^\"]*\", no:\"%s\"[^{}]*\},?" % _no)
+                    _n2 = _pat.sub("", _fx)
+                    if _n2 != _fx:
+                        _fx = _n2
+                        print("  S-06 %-22s %-14s No.%s を落とす(この武将はこのスキルを持っていない)"
+                              % (page, nm, _no))
+                        total += 1
+                _fx = re.sub(r",(\s*)$", r"\1", _fx)
+                if _fx != inner:
+                    text = text[:open_at + 1] + _fx + text[close_at:]
+                    close_at += len(_fx) - len(inner)
+                    inner = _fx
+                    touched = True
+
             if missing:
                 hits.append((close_at, inner, nm, missing))
         # 後ろから差し込む(前を先に触ると位置がずれる)
