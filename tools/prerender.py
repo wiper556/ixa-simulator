@@ -130,7 +130,10 @@ def run_simple(br, name, containers):
     pg = br.new_page()
     errs = []
     pg.on("pageerror", lambda e: errs.append(str(e)))
-    pg.goto(path.as_uri())
+    # 2026-08-26: playwright の既定は30秒。データが増えて ixa-data.js が
+    # 1.2MB を超え、CI(GitHub Actions)で読み込みが30秒に間に合わず落ちた。
+    # gen_detail_pages.py は 2026-08-23 に伸ばしたが、こちらを見落としていた。
+    pg.goto(path.as_uri(), timeout=120000)
     pg.wait_for_timeout(1800)
     real = [e for e in errs if "supabase" not in e.lower()]
     if real:
@@ -175,7 +178,8 @@ def run(page_names):
             pg = br.new_page()
             errs = []
             pg.on("pageerror", lambda e: errs.append(str(e)))
-            pg.goto(path.as_uri())
+            # 同上(2026-08-26)
+            pg.goto(path.as_uri(), timeout=120000)
             pg.wait_for_timeout(2200)
             if errs:
                 log.append("★%s JSエラーのため中止: %s" % (name, errs[:1]))
