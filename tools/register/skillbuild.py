@@ -116,10 +116,14 @@ def build(name, rank=None):
         # 2026-08-23: 段の名前を "LV10" と決め打ちしていた。童のスキルは
         # レベルを持たず「固定」の1段だけなので、実際の段名を使う
         # (regwrite.py にも同じ決め打ちがあり、そちらは同日に直した)。
-        ("effectSummary", "%s/%s 確率 %s%% %s/対象:%s"
-         % (rank or d.get("rank"), lv[0].get("level") or "LV10",
+        # 2026-08-26: rank が None のとき文字列に "None" が出ていた
+        # (肥後の虎・表裏比興)。skillDetail と同じく "-" と書く。
+        # 末尾が空の効果文だと " / /" が残るので畳む。
+        ("effectSummary", ("%s/%s 確率 %s%% %s/対象:%s"
+                           % (rank or d.get("rank") or "-", lv[0].get("level") or "LV10",
             ("%g" % rate0) if rate0 is not None else "-",
-            (parse_level(lv[0]["text"])[2] or "").split("(")[0][:40], target0 or "全")),
+            (parse_level(lv[0]["text"])[2] or "").split("(")[0][:40],
+            target0 or "全")).replace(" / /", " /")),
         ("categoryLinks", []),
         ("sourceCharacters", []),
         ("notes", ["ixanary.com(skills/%s)から登録(2026-08-14)。"
