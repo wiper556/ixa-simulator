@@ -8,8 +8,8 @@
  "effect": "攻撃 35%上昇+防御 35%上昇(同じ自拠点の他の自部隊にも効果あり・模倣不可)",
  "furigana": "う゛ぃれら",
  "illustrator": "BISAI",
- "imageFull": null,
- "imageChar": null,
+ "imageFull": "assets/img/characters/no2506_full.png",
+ "imageChar": "assets/img/characters/no2506_char.png",
  "atkBase": 890,
  "atkGrowth": 28,
  "defBase": 890,
@@ -41,7 +41,8 @@
   "初期スキル「黄昏る福音」[A]はixanaryのスキル個別ページ(skills/黄昏る福音)に「合成不可スキルです」の記載がありTR(鍛錬)欄・synthesisTableは無し(このバッチの仕様通りsynthesisTableは登録していない)。LV10効果(確率+100%/攻撃35%上昇/防御35%上昇/同じ自拠点の他の自部隊にも効果あり・模倣不可)は2ソース完全一致。",
   "章はixanary/ixawikiいずれのカードページにも記載が無く未確認。",
   "2026-08-18訂正: assets/js/ixa-data.js(シミュ側)に既にNo.2506の暫定登録(2026年7月ixanary.com確認・「ヴィレラ-復刻-」)があるのを監査ツール(tools/audit_characters.py)で発見。基礎値・成長値・コスト・指揮兵数が今回の登録と完全一致していたため、名前はそちらに合わせて「ヴィレラ-復刻-」に訂正した(元は一覧表記通りの「ヴィレラ」で登録していた)。",
-  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。",
+  "2026-08-26: カード画像を繋いだ。assets/img/characters/ に no{No}_full.png と no{No}_char.png が両方あるのに imageFull/imageChar が null で、サイトに出ていなかった。登録時の記録には「カード画像が無いため外部2ソースで確認した」とあり、**画像があることに気付かないまま**登録されていた。寸法(466x315 / 224x315)も規定どおりであることを確かめた。"
  ],
  "wikiOldestComment": "2019-06-03",
  "wikiCommentCount": 148,

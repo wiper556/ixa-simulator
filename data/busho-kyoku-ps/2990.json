@@ -8,8 +8,8 @@
  "effect": "攻撃 68%上昇+防御 68%上昇+速度 50%上昇(自身のHP回復速度20倍)",
  "furigana": "やくしじてんぜん",
  "illustrator": "山田風太郎・せがわまさき／講談社",
- "imageFull": null,
- "imageChar": null,
+ "imageFull": "assets/img/characters/no2990_full.png",
+ "imageChar": "assets/img/characters/no2990_char.png",
  "atkBase": 1050,
  "atkGrowth": 32,
  "defBase": 1050,
@@ -37,7 +37,8 @@
   "2026-08-18登録。カード画像が無いためixanaryとixawikiの一致だけで入れた(rankGradesは両ソース完全一致)。synthesisTableは今回のバッチでは付けていない。",
   "atkBase/defBase(1050/1050)は両ソースとも独立に同値を示しており(本当に攻防同値のカード)、defBaseがatkBaseと同じになるixanary側の既知の壊れ方とは判断せずそのまま採用した。成長値・兵法・コスト・指揮兵数も両ソース一致。",
   "このカードのixawikiページはLv1とLv10を明示的に別行で掲載する形式で、Lv10側の数値(確率35%/攻撃68%上昇/防御68%上昇/速度50%上昇・速度は確率100%/自身のHP回復速度20倍)はixanaryのLV10表示と完全一致しており対立は無い。攻撃と防御は同一の確率35%で同時発動し、速度のみ別枠で確率100%固定という構造。",
-  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。",
+  "2026-08-26: カード画像を繋いだ。assets/img/characters/ に no{No}_full.png と no{No}_char.png が両方あるのに imageFull/imageChar が null で、サイトに出ていなかった。登録時の記録には「カード画像が無いため外部2ソースで確認した」とあり、**画像があることに気付かないまま**登録されていた。寸法(466x315 / 224x315)も規定どおりであることを確かめた。"
  ],
  "wikiOldestComment": "2018-12-21",
  "wikiCommentCount": 110,
