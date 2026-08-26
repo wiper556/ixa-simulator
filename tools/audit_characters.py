@@ -777,6 +777,29 @@ def main():
                 % (s["name"], g["no"], g.get("name"),
                    "・".join("%s%s%%上昇" % x for x in sorted(extra))))
 
+    # S-17: 合成表のランクが、そのスキルのページのランクと合っているか(2026-08-26)
+    #
+    # No.3542 団忠正 の S2枠が「BB」という存在しないランクになっていた。
+    # 合成表のランクを全部数えると12486件中「BB」は1件だけで、Bの打ち間違い。
+    # 表記そのものを見る検査が無く、誰も気付いていなかった。
+    RANKS_OK = {"XXX", "XX", "X", "SSS", "SS", "S", "A", "B", "C", "D", "E", "F"}
+    _skrank = {s["name"]: s.get("rank") for s in D["skills"]}
+    for g in all_g:
+        for row in g.get("synthesisTable") or []:
+            for nk, rk in (("skill", "rank"), ("afterSkill", "afterRank")):
+                nm, v = row.get(nk), row.get(rk)
+                if not v:
+                    continue
+                if v not in RANKS_OK:
+                    add("ランクの表記が表に無い", "MID",
+                        "%s No.%s %s枠 %s: 「%s」はランクの表に無い"
+                        % (g["name"], g["no"], row.get("slot"), rk, v))
+                    continue
+                want = _skrank.get(nm)
+                if want and v != want:
+                    add("合成表のランクがスキルと違う", "MID",
+                        "%s No.%s %s枠 「%s」: 合成表=%s / スキルページ=%s"
+                        % (g["name"], g["no"], row.get("slot"), nm, v, want))
     # F-07: effectShort の接頭辞の剥がし損ね
     for g in all_g:
         for row in g.get("synthesisTable") or []:
