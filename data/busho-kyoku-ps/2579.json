@@ -8,8 +8,8 @@
  "effect": "攻撃 50%上昇(敵軍本丸防御陣形の武将コスト差分総和×240%を攻撃に加算・確率70%)",
  "furigana": "いまいそうきゅう",
  "illustrator": "紺藤ココン",
- "imageFull": null,
- "imageChar": null,
+ "imageFull": "assets/img/characters/no2579_full.png",
+ "imageChar": "assets/img/characters/no2579_char.png",
  "atkBase": 1180,
  "atkGrowth": 55,
  "defBase": 1100,
@@ -36,7 +36,8 @@
  "notes": [
   "2026-08-18登録。カード画像が無いためixanary.com(cards/2579)とixawiki.com(BushoCard/2579今井宗久)の生HTMLを突き合わせて一致した項目のみ登録した。基礎値/成長値/コスト/指揮兵数/統率ランク/初期スキルLV10の確率・効果値は両ソースで一致を確認済み。カード画像が無いためrankGradesは両ソース一致のみ採用しreviewedOkはfalseのまま。",
   "2026-08-18: 名前をシミュレーター側の既存登録に合わせた。ixawiki のカードページには復刻と明記されているのに一覧の表記だけ無印で、そこから作ったこの正本が無印になっていた。",
-  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。",
+  "2026-08-26: カード画像を繋いだ。assets/img/characters/ に no{No}_full.png と no{No}_char.png が両方あるのに imageFull/imageChar が null で、サイトに出ていなかった。登録時の記録には「カード画像が無いため外部2ソースで確認した」とあり、**画像があることに気付かないまま**登録されていた。寸法(466x315 / 224x315)も規定どおりであることを確かめた。"
  ],
  "wikiOldestComment": "2023-04-04",
  "wikiCommentCount": 40,
