@@ -231,6 +231,13 @@ def load():
         if n.startswith("skills-") and n.endswith(".html"):
             with io.open(p(n), encoding="utf-8") as f:
                 d["listPages"][n] = f.read()
+    # 2026-08-27: くじのページも武将名を独自に持っている。
+    # 誰も突き合わせておらず、483行が正本とずれていた。
+    d["gachaPages"] = {}
+    for n in sorted(os.listdir(ROOT)):
+        if n.startswith("gacha-") and n.endswith(".html"):
+            with io.open(p(n), encoding="utf-8") as f:
+                d["gachaPages"][n] = f.read()
     return d
 
 
@@ -551,12 +558,22 @@ def main():
     # (部隊内系=4人 / 防御参加武将数=280人)。
     # 「飛翔を持たない防御参加武将数」「自軍攻撃武将数」のような、敵味方の編成しだいで
     # 決まる部分集合には母数が無いので、数値化を求めない(サイト全体で symbolic のまま揃えている)。
-    KNOWN_BASE = re.compile(r"[×x]\s*(?<!飛翔を持たない)(防御参加武将数|部隊内[^\d\s)=]*武将数|無尽武将数)")
-    for g, src in targets:
+    # 2026-08-26: 「×防御参加武将数」の順しか見ておらず、
+    # 「防御参加武将数×3.2%」と**逆に書かれた26行**を素通ししていた。
+    # 「自部隊内の『海賊衆』を指揮する武将数」のような部分集合は母数が無いので、
+    # 直前が「の」のものは逆順の側では拾わない。
+    KNOWN_BASE = re.compile(
+        r"[×x]\s*(?<!飛翔を持たない)(防御参加武将数|部隊内[^\d\s)=]*武将数|無尽武将数)"
+        r"|(?<!の)(?:防御参加武将数|無尽武将数)\s*[×x]\s*[\d.]")
+    # 2026-08-26: ここは**武将側しか見ていなかった**ので、
+    # スキルページ側に残った未計算式(天勇雷槍光陣ほか)を素通ししていた。
+    for g, src in targets + [(s, "スキル") for s in D["skills"]]:
         for row in g.get("trTable") or []:
             eff = row.get("effect") or ""
             if KNOWN_BASE.search(eff) and not re.search(r"=\s*[\d.]", eff):
-                add("未計算式", "MID", "[%s] %s No.%s %s: %s" % (status(g), g["name"], g["no"], row.get("level"), eff))
+                add("未計算式", "MID", "[%s] %s No.%s %s: %s"
+                    % (src if src == "スキル" else status(g), g["name"],
+                       g.get("no") or "-", row.get("level"), eff))
 
     # 「未確認」と表示される段には、調べた先の記録が要る(RULES.md I-01)
     # 表示規則(RULES.md V-01): 値が判明している一番上の段までは、空でも「未確認」として出る。
@@ -790,6 +807,23 @@ def main():
                     add("合成表のランクがスキルと違う", "MID",
                         "%s No.%s %s枠 「%s」: 合成表=%s / スキルページ=%s"
                         % (g["name"], g["no"], row.get("slot"), nm, v, want))
+    # S-18: くじのページの武将名が正本と合っているか(2026-08-27)
+    #
+    # gacha-simulator.html と gacha-kuji-*.html は排出候補を
+    # {no:1310, name:'織田信秀'} の形で独自に持っている。
+    # 誰も突き合わせておらず、**3ページで483行**が正本とずれていた
+    # (（N）や【覇】が落ちている)。改名しても気付けない。
+    for page, text in D["gachaPages"].items():
+        for m in re.finditer(r"\{no:(\d{4,5}), name:'([^']*)'", text):
+            no, nm = m.group(1), m.group(2)
+            g = _by_no.get(no)
+            if not g:
+                add("くじの武将が正本に無い", "HIGH",
+                    "%s の No.%s「%s」が正本に無い" % (page, no, nm))
+            elif g.get("name") and nm != g["name"]:
+                add("くじの武将名が正本と違う", "MID",
+                    "%s の No.%s: くじ「%s」/ 正本「%s」" % (page, no, nm, g["name"]))
+
     # F-07: effectShort の接頭辞の剥がし損ね
     for g in all_g:
         for row in g.get("synthesisTable") or []:
