@@ -91,3 +91,4 @@
 2026-08-26	-1	hooks:tools/audit_characters.py	master(#82 の S-17)を取り込んだうえで、こちらの F-04 の直し(語順の両方を見る・スキルページも見る)を合わせたので錠前を作り直した。どちらも検査を増やす向きで、弱めた箇所は無い。
 2026-08-27	-2	hooks:tools/audit_characters.py,hooks:tools/audit_selftest.py	監査に S-18(くじのページの武将名が正本と合っているか)を足し、自己テストの筋書きを2件書いた。gacha-simulator.html と gacha-kuji-*.html は排出候補の武将名を独自に持っており、誰も突き合わせていなかったので3ページで483行が正本とずれていた(（N）や【覇】が落ちている)。うち152行は今日の改名より前からのずれ。上限は緩めていない。検査を増やすだけで既存の検査は弱めていない。
 2026-08-27	-1	hooks:tools/audit_selftest.py	S-18 の注入ケースの注入先を5桁の番号に直した(検査の正規表現が4〜5桁なので6桁だと当たらず、注入しても鳴らなかった)。
+2026-08-27	-2	hooks:tools/audit_characters.py,hooks:tools/audit_selftest.py	master(#82 S-17 / #83 F-04)を取り込んだうえで S-18 を合わせたので錠前を作り直した。3つとも検査を増やす向きで、弱めた箇所は無い。
