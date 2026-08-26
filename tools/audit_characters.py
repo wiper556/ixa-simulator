@@ -231,6 +231,13 @@ def load():
         if n.startswith("skills-") and n.endswith(".html"):
             with io.open(p(n), encoding="utf-8") as f:
                 d["listPages"][n] = f.read()
+    # 2026-08-27: くじのページも武将名を独自に持っている。
+    # 誰も突き合わせておらず、483行が正本とずれていた。
+    d["gachaPages"] = {}
+    for n in sorted(os.listdir(ROOT)):
+        if n.startswith("gacha-") and n.endswith(".html"):
+            with io.open(p(n), encoding="utf-8") as f:
+                d["gachaPages"][n] = f.read()
     return d
 
 
@@ -800,6 +807,23 @@ def main():
                     add("合成表のランクがスキルと違う", "MID",
                         "%s No.%s %s枠 「%s」: 合成表=%s / スキルページ=%s"
                         % (g["name"], g["no"], row.get("slot"), nm, v, want))
+    # S-18: くじのページの武将名が正本と合っているか(2026-08-27)
+    #
+    # gacha-simulator.html と gacha-kuji-*.html は排出候補を
+    # {no:1310, name:'織田信秀'} の形で独自に持っている。
+    # 誰も突き合わせておらず、**3ページで483行**が正本とずれていた
+    # (（N）や【覇】が落ちている)。改名しても気付けない。
+    for page, text in D["gachaPages"].items():
+        for m in re.finditer(r"\{no:(\d{4,5}), name:'([^']*)'", text):
+            no, nm = m.group(1), m.group(2)
+            g = _by_no.get(no)
+            if not g:
+                add("くじの武将が正本に無い", "HIGH",
+                    "%s の No.%s「%s」が正本に無い" % (page, no, nm))
+            elif g.get("name") and nm != g["name"]:
+                add("くじの武将名が正本と違う", "MID",
+                    "%s の No.%s: くじ「%s」/ 正本「%s」" % (page, no, nm, g["name"]))
+
     # F-07: effectShort の接頭辞の剥がし損ね
     for g in all_g:
         for row in g.get("synthesisTable") or []:
