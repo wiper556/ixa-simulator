@@ -8,8 +8,8 @@
  "effect": "全軍の防御150%上昇(本丸防御陣形3列目以降も有効・模倣不可)",
  "furigana": "きちょう",
  "illustrator": "神威なつき",
- "imageFull": null,
- "imageChar": null,
+ "imageFull": "assets/img/characters/no2555_full.png",
+ "imageChar": "assets/img/characters/no2555_char.png",
  "atkBase": 1050,
  "atkGrowth": 41,
  "defBase": 1100,
@@ -38,7 +38,8 @@
   "コスト4・指揮4180・初期値1050/1100/520・成長値+41/+56/+2.5・兵科ランク(槍A・弓A・馬A・器S)・絵師神威なつき・スキル名対象確率効果(LV10 確率100%/防御150%上昇/本丸防御陣形第参列目以降も有効・自身の所属部隊には重複しない・模倣不可)が両ソース完全一致。",
   "章はixanary.com・ixawiki.comのカードページに記載が無いためnull。",
   "2026-08-18: 名前をシミュレーター側の既存登録に合わせた。ixawiki のカードページには復刻と明記されているのに一覧の表記だけ無印で、そこから作ったこの正本が無印になっていた。",
-  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。",
+  "2026-08-26: カード画像を繋いだ。assets/img/characters/ に no{No}_full.png と no{No}_char.png が両方あるのに imageFull/imageChar が null で、サイトに出ていなかった。登録時の記録には「カード画像が無いため外部2ソースで確認した」とあり、**画像があることに気付かないまま**登録されていた。寸法(466x315 / 224x315)も規定どおりであることを確かめた。"
  ],
  "wikiOldestComment": "2022-04-08",
  "wikiCommentCount": 36,

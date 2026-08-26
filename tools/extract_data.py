@@ -67,7 +67,9 @@ def evaluate_array(page_name, array_name):
     with sync_playwright() as p:
         b = p.chromium.launch()
         pg = b.new_page()
-        pg.goto(url, wait_until="load")
+        # 2026-08-26: 既定の30秒だと重いページで落ちることがある
+        # (prerender.py / gen_detail_pages.py と同じ理由)。
+        pg.goto(url, wait_until="load", timeout=120000)
         raw = pg.evaluate("JSON.stringify(%s)" % array_name)
         b.close()
     return json.loads(raw, object_pairs_hook=collections.OrderedDict)

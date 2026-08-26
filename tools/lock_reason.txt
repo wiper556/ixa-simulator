@@ -83,3 +83,4 @@
 2026-08-23	-1	hooks:tools/audit_characters.py	童(1800番台)には合成の S2 枠が無いとうぐさんから確認が取れたので、D-09 の枠数の検査で童だけ4枠を正とした。それ以外のレアリティは従来どおり5枠。検査を弱めた箇所は無く、童の23枚が誤って鳴るのが止まるだけ。
 2026-08-26	-2	hooks:tools/audit_characters.py,hooks:tools/audit_selftest.py	監査に S-15(スキル側の sourceCharacters が武将側と噛み合うか)と S-16(武将側とスキル側で LV10 の効果が食い違わないか)を足し、audit_selftest.py にその注入ケースを4件書いた。上限(selftest_uncovered.txt)は緩めていない。2026-08-16 に検査を足したときと同じく筋書きの方を書いた。検査を増やすだけで既存の検査は弱めていない。
 2026-08-26	-2	hooks:docs/RULE-OPERATION.md,hooks:docs/RULES.md	docs/RULES.md に、うぐさんが 2026-08-23 に明示した（N）の振り方(2.5節)と D-16(サイトの表記は外部サイトに合わせない)を足し、2026-08-26 に監査へ入れた S-15/S-16 を索引に載せた。ルールが91→94件に増えたので、件数を書いている3つの文書も合わせた。ルールを弱める変更は無い。
+2026-08-26	-2	hooks:tools/extract_data.py,hooks:tools/prerender.py	playwright の読み込み待ちを30秒から120秒に伸ばした。データが増えて ixa-data.js が1.2MBを超え、CI で読み込みが30秒に間に合わず prerender.py が落ちた。gen_detail_pages.py は 2026-08-23 に伸ばしたが prerender.py と extract_data.py を見落としていたので揃えた。検査の中身は一切変えていない。

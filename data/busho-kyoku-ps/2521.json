@@ -8,8 +8,8 @@
  "effect": "防御 92%上昇(武将HPが70以下のとき防御効果1.5倍)",
  "furigana": "とうどうたかとら",
  "illustrator": "小森ニコ",
- "imageFull": null,
- "imageChar": null,
+ "imageFull": "assets/img/characters/no2521_full.png",
+ "imageChar": "assets/img/characters/no2521_char.png",
  "atkBase": 1000,
  "atkGrowth": 30,
  "defBase": 1090,
@@ -39,7 +39,8 @@
   "ixawikiページに「※「武将イラスト人気ランキング2019」2位受賞により復刻」の記載があり実質復刻カード。",
   "コスト4・指揮兵数3760(★0-0)・成長値+30/+41/+2.5・ふりがな・絵師(小森ニコ)は2ソースで完全一致。統率(槍S/弓A/馬A/器A)も2ソース一致。",
   "章はixanary/ixawikiいずれのカードページにも記載が無く未確認。",
-  "2026-08-18訂正: assets/js/ixa-data.js(シミュ側)に既にNo.2521の暫定登録(2026-08-10カード画像・「藤堂高虎-復刻-」)があるのを監査ツール(tools/audit_characters.py)で発見。rankGrades(槍S/弓A/馬A/器A)・基礎値・成長値が今回の登録と完全一致していたため、名前はそちらに合わせて「藤堂高虎-復刻-」に訂正した(元は一覧表記通りの「藤堂高虎」で登録していた)。"
+  "2026-08-18訂正: assets/js/ixa-data.js(シミュ側)に既にNo.2521の暫定登録(2026-08-10カード画像・「藤堂高虎-復刻-」)があるのを監査ツール(tools/audit_characters.py)で発見。rankGrades(槍S/弓A/馬A/器A)・基礎値・成長値が今回の登録と完全一致していたため、名前はそちらに合わせて「藤堂高虎-復刻-」に訂正した(元は一覧表記通りの「藤堂高虎」で登録していた)。",
+  "2026-08-26: カード画像を繋いだ。assets/img/characters/ に no{No}_full.png と no{No}_char.png が両方あるのに imageFull/imageChar が null で、サイトに出ていなかった。登録時の記録には「カード画像が無いため外部2ソースで確認した」とあり、**画像があることに気付かないまま**登録されていた。寸法(466x315 / 224x315)も規定どおりであることを確かめた。"
  ],
  "wikiOldestComment": "2020-02-04",
  "wikiCommentCount": 14,

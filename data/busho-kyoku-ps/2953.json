@@ -8,8 +8,8 @@
  "effect": "銅銭獲得率5%(参加した対人攻撃/防御で倒した兵数×銅銭獲得率＝獲得銅銭)",
  "furigana": "いしかわごえもん",
  "illustrator": "BASKERVILLE",
- "imageFull": null,
- "imageChar": null,
+ "imageFull": "assets/img/characters/no2953_full.png",
+ "imageChar": "assets/img/characters/no2953_char.png",
  "atkBase": 770,
  "atkGrowth": null,
  "defBase": 690,
@@ -41,7 +41,8 @@
   "assign一覧の表記が（N）無しの「石川五右衛門」のため、そのまま無印で登録した(特レアリティに既存の石川五右衛門（1）No.3701とは兵科・レアリティが異なる別カードで、極一覧内では表記が重複しない)。",
   "カード画像が無いためimageFull/imageCharはnull、synthesisTableは付けず、reviewedOkはfalseのまま。章(ch)は両ソースとも記載が無くnullとした。",
   "2026-08-18: 名前をシミュレーター側の既存登録に合わせた。ixawiki のカードページには復刻と明記されているのに一覧の表記だけ無印で、そこから作ったこの正本が無印になっていた。",
-  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。",
+  "2026-08-26: カード画像を繋いだ。assets/img/characters/ に no{No}_full.png と no{No}_char.png が両方あるのに imageFull/imageChar が null で、サイトに出ていなかった。登録時の記録には「カード画像が無いため外部2ソースで確認した」とあり、**画像があることに気付かないまま**登録されていた。寸法(466x315 / 224x315)も規定どおりであることを確かめた。"
  ],
  "wikiOldestComment": "2016-01-05",
  "wikiCommentCount": 86,

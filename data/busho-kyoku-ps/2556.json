@@ -8,8 +8,8 @@
  "effect": "全軍の攻撃159%上昇+防御159%上昇(姫武将に対してのみ効果あり)",
  "furigana": "ねね",
  "illustrator": "正子公也",
- "imageFull": null,
- "imageChar": null,
+ "imageFull": "assets/img/characters/no2556_full.png",
+ "imageChar": "assets/img/characters/no2556_char.png",
  "atkBase": 1080,
  "atkGrowth": 50,
  "defBase": 1080,
@@ -38,7 +38,8 @@
   "コスト4・指揮4180・初期値1080/1080/510・成長値+50/+50/+2.5・兵科ランク(槍A・弓A・馬A・器S)・絵師正子公也・スキル名対象確率効果(LV10 確率50%/攻撃159%上昇/防御159%上昇/職業「姫」の武将に対してのみ効果あり)が両ソース完全一致。",
   "章はixanary.com・ixawiki.comのカードページに記載が無いためnull。",
   "2026-08-18: 名前をシミュレーター側の既存登録に合わせた。ixawiki のカードページには復刻と明記されているのに一覧の表記だけ無印で、そこから作ったこの正本が無印になっていた。",
-  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。",
+  "2026-08-26: カード画像を繋いだ。assets/img/characters/ に no{No}_full.png と no{No}_char.png が両方あるのに imageFull/imageChar が null で、サイトに出ていなかった。登録時の記録には「カード画像が無いため外部2ソースで確認した」とあり、**画像があることに気付かないまま**登録されていた。寸法(466x315 / 224x315)も規定どおりであることを確かめた。"
  ],
  "wikiOldestComment": "2022-04-10",
  "wikiCommentCount": 16,
