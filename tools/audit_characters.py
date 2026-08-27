@@ -867,15 +867,23 @@ def main():
 
     # D-09: synthesisTable の行が5枠そろっていない
     # 2026-08-23: **童(1800番台)には S2 の枠が無い**(うぐさん)。4行が正しい。
+    # 2026-08-27: 童以外にも4枠のカードがあった(No.2589 難攻不落の天守。
+    # ixawiki の候補表で「S2枠なし」を確認済み)。番号で例外を並べる形は
+    # 見つかるたびに増えるので、**A/B/C/S1 が揃っていれば4行も正しい**とする。
     for g in all_g:
         st = g.get("synthesisTable")
-        _n = str(g.get("no") or "")
-        _want = (0, 4) if (len(_n) == 4 and _n.isdigit() and 1800 <= int(_n) <= 1899) else (0, 5)
-        if st is not None and {r.get("slot") for r in st} - {"A", "B", "C", "S1", "S2"} == set() \
-                and len(st) not in _want:
-            add("synthesisTableの行数", "MID", "%s No.%s: %d行(A/B/C/S1/S2の5行が標準。童はS2が無いので4行)"
-                % (g["name"], g["no"], len(st)))
-
+        if st is None:
+            continue
+        _slots = {r.get("slot") for r in st}
+        if _slots - {"A", "B", "C", "S1", "S2"}:
+            continue
+        if len(st) in (0, 5):
+            continue
+        if len(st) == 4 and _slots == {"A", "B", "C", "S1"}:
+            continue                      # S2 を持たないカード(童・2589 など)
+        add("synthesisTableの行数", "MID",
+            "%s No.%s: %d行(A/B/C/S1/S2の5行が標準。S2が無いカードは A/B/C/S1 の4行)"
+            % (g["name"], g["no"], len(st)))
     # D-10 / D-11: slot の独自語
     for s in D["skills"]:
         for c in (s.get("sourceCharacters") or []):
