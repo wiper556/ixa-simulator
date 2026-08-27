@@ -807,6 +807,22 @@ def main():
                     add("合成表のランクがスキルと違う", "MID",
                         "%s No.%s %s枠 「%s」: 合成表=%s / スキルページ=%s"
                         % (g["name"], g["no"], row.get("slot"), nm, v, want))
+    # S-20: effectSummary に「(係数×…)%」が伏せ字のまま残っていないか(2026-08-27)
+    #
+    # trTable には係数も計算結果も入っているのに、**一覧やスキルページに出るのは
+    # effectSummary の方**で、そちらだけ伏せ字のままだった14件があった。
+    # 値があるのに読み手には見えない。本文に係数が書いてあるもの
+    # (一調天成の「係数(LV10=13)」)は除く。
+    for s in D["skills"]:
+        v = s.get("effectSummary") or ""
+        if not re.search(r"\(係数×[^)]*\)%", v):
+            continue
+        if re.search(r"係数[はが（(]{0,2}(?:LV\d+\s*=)?\s*[\d.]", v):
+            continue
+        add("effectSummaryが伏せ字", "MID",
+            "「%s」: effectSummary に「(係数×…)%%」が残っている(trTable には実値がある)"
+            % s["name"])
+
     # S-19: rankGrades の値がランクの表にあるか(2026-08-27)
     #
     # S-17 は合成表のランクだけを見ており、**統率(rankGrades)は誰も見ていなかった**。
