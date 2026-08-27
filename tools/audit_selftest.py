@@ -117,6 +117,11 @@ CASES = [
      '"effectShort": "100% / 効果 攻撃 390%上昇+防御 390%上昇+部隊内卓越追加確率+25%'),
     ("ドット付きランク", KYOKU,
      '"yari": "B",', '"yari": ".B",'),
+    # 2026-08-28: S-21 隠し候補・移植元の参照先。S-01 は武将の初期スキルと
+    # 合成候補しか見ておらず、スキル側の ownHiddenCandidate / grantedViaSkills が
+    # 指す先のページ抜けを拾えなかった(朧雲ノ進撃 SSS / 覇獄竜王 SS)。
+    ("参照先のスキルページが無い", "data/skill/朧雲ノ蓮撃.json",
+     '"skill": "朧雲ノ進撃"', '"skill": "存在しない架空の移植先SSS"'),
     # 2026-08-27: S-20 effectSummary の伏せ字。trTable には実値があるのに
     # 一覧に出る effectSummary だけ「(係数×…)%」のままだった14件があった。
     ("effectSummaryが伏せ字", "data/skill/天地超克.json",
