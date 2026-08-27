@@ -807,6 +807,18 @@ def main():
                     add("合成表のランクがスキルと違う", "MID",
                         "%s No.%s %s枠 「%s」: 合成表=%s / スキルページ=%s"
                         % (g["name"], g["no"], row.get("slot"), nm, v, want))
+    # S-19: rankGrades の値がランクの表にあるか(2026-08-27)
+    #
+    # S-17 は合成表のランクだけを見ており、**統率(rankGrades)は誰も見ていなかった**。
+    # ixawiki が全角で書いた「Ａ」(No.1812 源五郎)と、未記入のときに出す
+    # 「(SSS〜Fのいずれか)」という説明文(No.4245 長谷川秀一)が正本に焼き付いていた。
+    for g in all_g:
+        for k, v in (g.get("rankGrades") or {}).items():
+            if v and v not in RANKS_OK:
+                add("統率の表記が表に無い", "MID",
+                    "%s No.%s の %s: 「%s」はランクの表に無い"
+                    % (g["name"], g["no"], k, v[:24]))
+
     # S-18: くじのページの武将名が正本と合っているか(2026-08-27)
     #
     # gacha-simulator.html と gacha-kuji-*.html は排出候補を

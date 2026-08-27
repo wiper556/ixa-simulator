@@ -96,17 +96,36 @@ def parse_ixanary_card(lines, no):
     return d
 
 
+_GRADES = ("XXX", "XX", "X", "SSS", "SS", "S", "A", "B", "C", "D", "E", "F")
+
+
+def _grade(v):
+    r"""統率のランクだけを通す。
+
+    2026-08-27: ここは `(\S+)` で**何でも受け取っていた**ので、
+    ・ixawiki が全角で書いた「Ａ」がそのまま入る(No.1812 源五郎)
+    ・ixawiki が未記入のとき出す「(SSS〜Fのいずれか)」という
+      **説明文が値として入る**(No.4245 長谷川秀一)
+    の2つが正本に焼き付いていた。全角は半角に直し、
+    表に無いものは None にして「未確認」として扱う(D-07)。
+    """
+    if not v:
+        return None
+    v = v.translate(str.maketrans("ＡＢＣＤＥＦＳＸ", "ABCDEFSX")).strip()
+    return v if v in _GRADES else None
+
+
 def parse_ixawiki_card(lines):
     d = {}
     for i, ln in enumerate(lines):
         m = re.match(r"^槍 \| (\S+) \| 馬 \| (\S+)$", ln)
         if m:
-            d.setdefault("rankGrades", {})["yari"] = m.group(1)
-            d["rankGrades"]["uma"] = m.group(2)
+            d.setdefault("rankGrades", {})["yari"] = _grade(m.group(1))
+            d["rankGrades"]["uma"] = _grade(m.group(2))
         m = re.match(r"^弓 \| (\S+) \| 器 \| (\S+)$", ln)
         if m:
-            d.setdefault("rankGrades", {})["yumi"] = m.group(1)
-            d["rankGrades"]["ki"] = m.group(2)
+            d.setdefault("rankGrades", {})["yumi"] = _grade(m.group(1))
+            d["rankGrades"]["ki"] = _grade(m.group(2))
         m = re.match(r"^(\S+)\((.+?)\) \| \| Cost \| ([\d.]+) \| 指揮兵数 \| (\d+)$", ln)
         if m:
             d["wikiName"], d["furigana"] = m.group(1), m.group(2)
