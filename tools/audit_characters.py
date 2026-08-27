@@ -807,6 +807,30 @@ def main():
                     add("合成表のランクがスキルと違う", "MID",
                         "%s No.%s %s枠 「%s」: 合成表=%s / スキルページ=%s"
                         % (g["name"], g["no"], row.get("slot"), nm, v, want))
+    # S-21: 隠し候補・移植元の参照先が S以上ならページが要る(2026-08-28)
+    #
+    # S-01 は「武将の初期スキルと合成候補」だけを見ており、
+    # スキル側の ownHiddenCandidate / grantedViaSkills の**参照先**は見ていない。
+    # そのため、どの武将の合成表にも出てこない移植先のページ抜けを拾えなかった
+    # (朧雲ノ進撃 SSS / 覇獄竜王 SS の2件が抜けていた)。
+    _skset = {s["name"] for s in D["skills"]}
+    _NEED = ("S", "SS", "SSS", "X", "XX", "XXX")
+    for s in D["skills"]:
+        _refs = []
+        o = s.get("ownHiddenCandidate") or {}
+        if o.get("skill"):
+            _refs.append(("ownHiddenCandidate", o["skill"], o.get("rank")))
+        for gv in s.get("grantedViaSkills") or []:
+            if gv.get("skill"):
+                _refs.append(("grantedViaSkills", gv["skill"], gv.get("rank")))
+        for kind, nm, rk in _refs:
+            if nm in _skset:
+                continue
+            if rk in _NEED:
+                add("参照先のスキルページが無い", "HIGH",
+                    "「%s」の %s が指す「%s」[%s] のページが無い"
+                    % (s["name"], kind, nm, rk))
+
     # S-20: effectSummary に「(係数×…)%」が伏せ字のまま残っていないか(2026-08-27)
     #
     # trTable には係数も計算結果も入っているのに、**一覧やスキルページに出るのは
