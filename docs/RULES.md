@@ -230,6 +230,7 @@ categoryLinksを「付けない」と決めたのも作業中の自己判断だ�
 | T-06 | 配列要素の区切りカンマを`//`コメントの**後ろ**に置かない。区切りが飲まれてページのJSが丸ごと死ぬ | 2026-08-12(`skills-takuetsu.html`/`skills-leadermimic.html`で発生) |
 | T-07 | ページを編集したら`python tools/check_js.py`で構文を見る。データが正しくても文法が壊れれば一覧は空になる | 同上 |
 | T-08 | `git commit -m "…"`の本文にバックティックや`$( )`を書かない。二重引用符の中ではシェルが実行してしまう。長い本文は`-F <ファイル>`で渡す | 2026-08-13(2回発生。どちらもpush後に気づき、P-2が`--force`を止めるので直せなかった)。**PreToolUseフックで自動的に止まる**(`tools/hooks/no_heredoc_backslash.py`) |
+| T-09 | ページを編集したら`python tools/smoke_pages.py`で**実際に開いて**確かめる。`check_js.py`は構文しか見ないので、実行時に落ちるページは素通りする。落ちた場所から後ろは同じ`<script>`の中なら一行も動かない | 2026-08-29(`attack-simulator.html`が候補の絞り込みを宣言より前で呼び、残り751行が動かないまま公開されていた。`skills-cost.html`/`skills-mujin.html`も取り残しのスクリプトで例外。**3件とも`check_js.py`は通っていた**) |
 
 ---
 
