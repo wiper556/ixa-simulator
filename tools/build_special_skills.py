@@ -163,7 +163,7 @@ def parse(j):
             d["targetTroopCategories"] = cats
         if sold:
             d["targetSoldierNames"] = sold
-        if "模倣不可" in (rows.get("LV10") or ""):
+        if _no_mimic(rows, j):
             d["noMimic"] = True
         return d
     if not atk and not dfn:
@@ -192,12 +192,27 @@ def parse(j):
         d["targetTroopCategories"] = cats
     if sold:
         d["targetSoldierNames"] = sold
-    if "模倣不可" in (rows.get("LV10") or "") or "模倣不可" in (j.get("skillDetail") or ""):
+    if _no_mimic(rows, j):
         d["noMimic"] = True
     return d
 
 
 # ---------------- 手書き分の読み出し(--check 用) ----------------
+def _no_mimic(rows, j):
+    """「模倣不可」がどこかに書いてあるか。
+
+    2026-08-29: LV10 の行と skillDetail しか見ていなかったので、
+    **effectSummary にしか書いていない14件**が取りこぼされ、
+    シミュレーターで模倣できてしまっていた
+    (万界神謀・天凛不抜・皇天覇虎・歴然ノ妙策 ほか)。
+    3箇所すべてを見る。
+    """
+    for s in (rows.get("LV10"), j.get("skillDetail"), j.get("effectSummary")):
+        if s and "模倣不可" in s:
+            return True
+    return False
+
+
 def hand_written(src):
     body = src[src.index("const specialSkills = {"):]
     body = body[:body.index("\n};")]
