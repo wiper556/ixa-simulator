@@ -807,6 +807,34 @@ def main():
                     add("合成表のランクがスキルと違う", "MID",
                         "%s No.%s %s枠 「%s」: 合成表=%s / スキルページ=%s"
                         % (g["name"], g["no"], row.get("slot"), nm, v, want))
+    # S-22: 一覧ページの lv10Effect が正本の LV10 と食い違っていないか(2026-08-28)
+    #
+    # 一覧ページは効果文を独自に持っており、正本を直しても取り残される。
+    # 実際に 火槍猛進(740% → 正本は 740%×2=1480%)と
+    # 朝曇ノ明麗(110% → 正本は 290%。2026-08-02 に正本だけ直していた)が
+    # 古い値のまま残っていた。数値が**1つも重ならない**ものだけ鳴らす
+    # (書き方の差で鳴ると埋もれるため)。
+    _skmap2 = {s["name"]: s for s in D["skills"]}
+
+    def _pcts(x):
+        return set(re.findall(r"(\d+(?:\.\d+)?)%上昇", x or ""))
+
+    for page, text in D["listPages"].items():
+        for m in re.finditer(r'name:"([^"]+)", skillPage:"[^"]*"(.{0,400}?)lv10Effect:"([^"]*)"',
+                             text, re.S):
+            nm, eff = m.group(1), m.group(3)
+            s = _skmap2.get(nm)
+            if not s:
+                continue
+            tr = [r for r in (s.get("trTable") or []) if r.get("level") == "LV10"]
+            if not tr:
+                continue
+            a, b = _pcts(eff), _pcts(tr[0].get("effect"))
+            if a and b and not (a & b):
+                add("一覧の効果が正本と違う", "MID",
+                    "%s の「%s」: 一覧=%s / 正本のLV10=%s"
+                    % (page, nm, "・".join(sorted(a)[:3]), "・".join(sorted(b)[:3])))
+
     # S-21: 隠し候補・移植元の参照先が S以上ならページが要る(2026-08-28)
     #
     # S-01 は「武将の初期スキルと合成候補」だけを見ており、
