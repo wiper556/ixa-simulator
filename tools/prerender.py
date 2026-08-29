@@ -95,6 +95,7 @@ SIMPLE = {
     "skills-count-def.html": ["scList"],
     "skills-fukutsu.html": ["fkList"],
     "skills-hadou.html": ["hdList"],
+    "skills-hakai.html": ["hkList"],
     "skills-heitan.html": ["htList"],
     "skills-higai.html": ["hgList"],
     "skills-hishou-atk.html": ["hsList"],
