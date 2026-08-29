@@ -25,12 +25,13 @@
   {
    "level": "LV10",
    "points": "-",
-   "effect": "槍・弓・馬・器　確率 45% / 攻撃 5%×自軍攻撃武将数"
+   "effect": "槍・弓・馬・器　確率 45% / 攻撃 (5×自軍攻撃武将数)%上昇"
   }
  ],
  "notes": [
   "2026-08-12一括作成。S以上の初期スキルは無条件でページを作る規約(A-3-9)の未処理分。",
   "内容は武将エントリの登録値をそのまま転記している。",
-  "2026-08-16(No.1205黄丸化検証、A-3-9categoryLinksチェックリスト): 「自軍攻撃武将数」は人数依存(攻撃変動)に該当するためskills-count-atk.htmlへのcategoryLinksを追加した。ただしskills-count-atk.html自体はsourceCharactersを独自複製した一覧ページ(A-3-11)であり、data/skill/{名前}.jsonの編集権限のみでは本体側の追記ができない。skills-count-atk.htmlへのエントリ追加(武田晴信1205、slot A・B、baseRate45%、係数5)は未実施のため別途対応が必要。"
+  "2026-08-16(No.1205黄丸化検証、A-3-9categoryLinksチェックリスト): 「自軍攻撃武将数」は人数依存(攻撃変動)に該当するためskills-count-atk.htmlへのcategoryLinksを追加した。ただしskills-count-atk.html自体はsourceCharactersを独自複製した一覧ページ(A-3-11)であり、data/skill/{名前}.jsonの編集権限のみでは本体側の追記ができない。skills-count-atk.htmlへのエントリ追加(武田晴信1205、slot A・B、baseRate45%、係数5)は未実施のため別途対応が必要。",
+  "2026-08-30: 表記を直した(「N%×自軍攻撃武将数」を他5件と同じ「(N×…)%上昇」に揃えた)。**数値は一切変えていない。** 読点は F-01(読点なし)に合わせ、節の切れ目は消して並列は「・」にした(武将側の skillDetail が既にその書き方)。"
  ]
 }
