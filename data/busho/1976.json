@@ -19,8 +19,14 @@
  "lv0Troops": 2120,
  "rankGrades": null,
  "initialSkill": "天下の勅命",
- "skillDetail": null,
- "trTable": null,
+ "skillDetail": "S/LV10 確率 80% 防御 70%上昇+破壊 50%上昇/対象:全\n①防御 70%上昇する\n②破壊 50%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 80% / 防御 70%上昇+破壊 50%上昇"
+  }
+ ],
  "reviewedOk": false,
  "notes": [
   "2026-08-17登録。カード画像が無いためixanary.com(cards/1976)とixawiki.com(BushoCard/1976足利義昭)の生HTML2ソースのみで作成した。imageFull/imageCharはnull。",
@@ -29,7 +35,8 @@
   "defBaseもixanary=1050・ixawiki=1200で食い違ったためnullにした(今回の割当20体のうち17体で発生している系統的な食い違い)。",
   "天下の勅命は確率42%/対象全/防御40%上昇の部分は両ソース一致したが、破壊上昇量がixanary=30%・ixawiki=20%で食い違ったためskillDetail/trTableをnullにした。troopのみ両ソースが「防御・破壊が上昇する」こと自体は一致していたため「全防破」と記載した。",
   "reviewedOkはfalseのまま。カード画像による4隅バッジ・スキルパネル照合が未実施のため黄丸化はできない。",
-  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。",
+  "2026-08-30: skillDetail と trTable が空だった。初期スキル「天下の勅命」[S]のLV10 は 確率 80%・対象 全。LV1は確率42%・防御40%・破壊30%。 出典: ixanary.com/cards/1976 のカードページ(LV1とLV10の2段が載っている)。**カード画像は無いので画像による裏取りはできていない(D-01)。** ixawiki の該当ページはコメント欄しか無くスキルの表を持っていなかったため、2つ目の情報源での確認はできていない。 **LV1 の段は持たせていない**(trTable は LV10 から並べる決まり、D-08)。"
  ],
  "wikiOldestComment": "2019-01-23",
  "wikiCommentCount": 27,
