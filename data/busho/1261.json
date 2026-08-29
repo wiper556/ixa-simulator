@@ -30,7 +30,7 @@
   {
    "level": "LV10",
    "points": "-",
-   "effect": "槍・馬・砲・器　確率 50% / 防御 150%上昇(同兵種指揮武将数×12%加算)"
+   "effect": "槍・馬・砲・器　確率 50% / 防御 150%上昇(同兵種指揮武将数×12%加算・TRなし)"
   }
  ],
  "synthesisTable": [
@@ -96,7 +96,8 @@
  ],
  "notes": [
   "45do.info(ordinary/0202)生HTML + ixagno.blog.fc2.com(blog-entry-9516、検索クエリ「No.1261」で発見)生HTML の2ソースで完全一致を確認(2026-08-02再検証)",
-  "黄丸化検証(2026-08-16): カード画像no1261_full.pngの4隅バッジ(槍S/馬A/弓A/器S)を確認し一致。synthesisTable A/B枠(神将火剣の自己参照→万里嵐壁)はixanary.com(skills/神将火剣)+ixawiki.com(BushoCard/1261島津家久)の2ソースで確認、直前に移植不可から訂正された内容が両ソースと一致することを再確認した。C/S1/S2も含め全枠・afterSkillとも完全一致。八幡神ノ威光・万里嵐壁・天磐船のdata/skill側sourceCharactersに1261が正しいslotで記載済みを確認(逆引き済み)。TR段はLV10のみ(TRなし)。"
+  "黄丸化検証(2026-08-16): カード画像no1261_full.pngの4隅バッジ(槍S/馬A/弓A/器S)を確認し一致。synthesisTable A/B枠(神将火剣の自己参照→万里嵐壁)はixanary.com(skills/神将火剣)+ixawiki.com(BushoCard/1261島津家久)の2ソースで確認、直前に移植不可から訂正された内容が両ソースと一致することを再確認した。C/S1/S2も含め全枠・afterSkillとも完全一致。八幡神ノ威光・万里嵐壁・天磐船のdata/skill側sourceCharactersに1261が正しいslotで記載済みを確認(逆引き済み)。TR段はLV10のみ(TRなし)。",
+  "2026-08-30: 鍛錬(TR)が無いことを明記した。うぐさんの規則で**鍛錬が登場したのは No.1263 が追加された28章から**であり、27章のカードで、鍛錬が登場した28章より前。データもそれを裏付けており、27章のカードは LV10 のみ・28章のカードは LV10〜TR5 を持つ。**28章以降で鍛錬の無い武将も居るため、そちらには何も書いていない。**"
  ],
  "wikiOldestComment": "2024-02-11",
  "wikiCommentCount": 40,

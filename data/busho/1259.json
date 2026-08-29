@@ -30,7 +30,7 @@
   {
    "level": "LV10",
    "points": "-",
-   "effect": "槍・馬・砲・器　確率 100% / 防御 150%上昇(卓越追加確率-20%で4倍)"
+   "effect": "槍・馬・砲・器　確率 100% / 防御 150%上昇(卓越追加確率-20%で4倍・TRなし)"
   }
  ],
  "synthesisTable": [
@@ -96,7 +96,8 @@
  ],
  "notes": [
   "synthesisTable: 45do.info生HTML(skiladd_wrap)+ixanary.com(島穿鬼槍スキルページの合成テーブル)で2ソース一致確認済み(2026-08-02)",
-  "黄丸化検証(2026-08-16): カード画像no1259_full.pngの4隅バッジ(槍S/馬A/弓A/器S)を確認し一致。synthesisTableはixanary.com(skills/島穿鬼槍)+ixawiki.com(BushoCard/1259長宗我部元親)の2ソースでA/B/C/S1/S2全枠・afterSkillとも完全一致確認。天宇受売命・万里嵐壁・月詠ノ覇威のdata/skill側sourceCharactersに1259が正しいslotで記載済みを確認(逆引き済み)。TR段はLV10のみ(TRなし)。"
+  "黄丸化検証(2026-08-16): カード画像no1259_full.pngの4隅バッジ(槍S/馬A/弓A/器S)を確認し一致。synthesisTableはixanary.com(skills/島穿鬼槍)+ixawiki.com(BushoCard/1259長宗我部元親)の2ソースでA/B/C/S1/S2全枠・afterSkillとも完全一致確認。天宇受売命・万里嵐壁・月詠ノ覇威のdata/skill側sourceCharactersに1259が正しいslotで記載済みを確認(逆引き済み)。TR段はLV10のみ(TRなし)。",
+  "2026-08-30: 鍛錬(TR)が無いことを明記した。うぐさんの規則で**鍛錬が登場したのは No.1263 が追加された28章から**であり、27章のカードで、鍛錬が登場した28章より前。データもそれを裏付けており、27章のカードは LV10 のみ・28章のカードは LV10〜TR5 を持つ。**28章以降で鍛錬の無い武将も居るため、そちらには何も書いていない。**"
  ],
  "categoryLinks": [
   {

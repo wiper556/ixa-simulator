@@ -29,7 +29,7 @@
   {
    "level": "LV10",
    "points": "-",
-   "effect": "全　確率 60% / 防御 120%上昇(自拠点防御時3倍)"
+   "effect": "全　確率 60% / 防御 120%上昇(自拠点防御時3倍・TRなし)"
   }
  ],
  "synthesisTable": [
@@ -95,7 +95,8 @@
  ],
  "notes": [
   "synthesisTable: 45do.info生HTML(skiladd_wrap)+ixanary.com(北天幻将スキルページの合成テーブル)で2ソース一致確認済み(2026-08-02)。Cのスキル名は45do.info内で「天頂ノ電光」(候補見出し)と「天頂ノ雷光」(性能欄)の表記揺れがあり、ixanary.com確認のうえ「天頂ノ電光」を採用",
-  "2026-08-16黄丸化再検証: ixanary.com(cards/1225, skills/北天幻将)+ixawiki.com(BushoCard/1225九戸政実)の2ソースでsynthesisTable5枠(A北天幻将S→建御雷神ノ閃光SS/B三千世界神将SS自己参照/C天頂ノ電光SSS自己参照/S1建御雷神ノ閃光SS→八幡神ノ威光SSS/S2星宿劫ノ法壁SS自己参照)が完全一致。基礎値(1050/1240/640、成長+42/+64/+3、指揮4200)・rankGrades(槍S/弓A/馬S/器A、カード画像バッジ拡大確認)もixanary生HTMLと一致。data/skill/北天幻将(自己ページ)・三千世界神将・天頂ノ電光・建御雷神ノ閃光・星宿劫ノ法壁の各JSONのsourceCharactersに1225が正しいslotで既に記載済み。"
+  "2026-08-16黄丸化再検証: ixanary.com(cards/1225, skills/北天幻将)+ixawiki.com(BushoCard/1225九戸政実)の2ソースでsynthesisTable5枠(A北天幻将S→建御雷神ノ閃光SS/B三千世界神将SS自己参照/C天頂ノ電光SSS自己参照/S1建御雷神ノ閃光SS→八幡神ノ威光SSS/S2星宿劫ノ法壁SS自己参照)が完全一致。基礎値(1050/1240/640、成長+42/+64/+3、指揮4200)・rankGrades(槍S/弓A/馬S/器A、カード画像バッジ拡大確認)もixanary生HTMLと一致。data/skill/北天幻将(自己ページ)・三千世界神将・天頂ノ電光・建御雷神ノ閃光・星宿劫ノ法壁の各JSONのsourceCharactersに1225が正しいslotで既に記載済み。",
+  "2026-08-30: 鍛錬(TR)が無いことを明記した。うぐさんの規則で**鍛錬が登場したのは No.1263 が追加された28章から**であり、24章のカードで、鍛錬が登場した28章より前。データもそれを裏付けており、27章のカードは LV10 のみ・28章のカードは LV10〜TR5 を持つ。**28章以降で鍛錬の無い武将も居るため、そちらには何も書いていない。**"
  ],
  "reviewedOk": false,
  "wikiOldestComment": "2022-08-05",

@@ -29,37 +29,7 @@
   {
    "level": "LV10",
    "points": "-",
-   "effect": "全　確率 100% / 防御 99%上昇(発動した防御戦闘では所属する陣・同盟陣の耐久が必ず「1」残る)"
-  },
-  {
-   "level": "TR1",
-   "points": "10",
-   "effect": null
-  },
-  {
-   "level": "TR2",
-   "points": "40",
-   "effect": null
-  },
-  {
-   "level": "TR3",
-   "points": "90",
-   "effect": null
-  },
-  {
-   "level": "TR4",
-   "points": "150",
-   "effect": null
-  },
-  {
-   "level": "TR5",
-   "points": "200",
-   "effect": null
-  },
-  {
-   "level": "TR6",
-   "points": "パラレル",
-   "effect": null
+   "effect": "全　確率 100% / 防御 99%上昇(発動した防御戦闘では所属する陣・同盟陣の耐久が必ず「1」残る・TRなし)"
   }
  ],
  "synthesisTable": [
@@ -142,7 +112,8 @@
   "A枠(戦陣破軍)・B枠(戦陣凱旋)・C枠(鬼滅刺)・S1枠(三千世界神将、自己参照)・S2枠(籠城の妙技)は全てdata/skill/戦陣 破軍.json・戦陣 凱旋.json・鬼滅刺.json・三千世界神将.json・籠城の妙技.jsonのsourceCharactersに片倉景綱(2443)が正しいslotで登録済みであることを確認した(A-3-11)。",
   "synthesisTableのA/B/C/S1/S2は、ixanary.com(cards/2443の初期スキル月下闇龍の合成テーブルおよび各候補スキル個別ページ)に加え、ixawiki.com(index.php?BushoCard/2443片倉景綱)の合成候補テーブル(1次候補/2次候補S1)を生HTMLで確認し、全5行がixanary/ixawiki2ソースで一致することを確認した。",
   "章はixanary.com/ixawiki.comいずれのカードページにも記載が無く未確認。",
-  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。",
+  "2026-08-30: 鍛錬(TR)が無いことを明記した。うぐさんの規則で**鍛錬が登場したのは No.1263 が追加された28章から**であり、22章のカードで、鍛錬が登場した28章より前。データもそれを裏付けており、27章のカードは LV10 のみ・28章のカードは LV10〜TR5 を持つ。中身の空だった TR の段(点数だけが入り効果は空)は、鍛錬が無いのだから段も無いので外した。**28章以降で鍛錬の無い武将も居るため、そちらには何も書いていない。**"
  ],
  "reviewedOk": true,
  "wikiOldestComment": "2021-10-05",

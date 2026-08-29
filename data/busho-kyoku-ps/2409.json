@@ -29,37 +29,7 @@
   {
    "level": "LV10",
    "points": "-",
-   "effect": "馬・砲・器　確率 100% / 攻撃 55%上昇+速度 50%上昇(部隊内で最も速い兵士速度で移動)"
-  },
-  {
-   "level": "TR1",
-   "points": "10",
-   "effect": null
-  },
-  {
-   "level": "TR2",
-   "points": "40",
-   "effect": null
-  },
-  {
-   "level": "TR3",
-   "points": "90",
-   "effect": null
-  },
-  {
-   "level": "TR4",
-   "points": "150",
-   "effect": null
-  },
-  {
-   "level": "TR5",
-   "points": "200",
-   "effect": null
-  },
-  {
-   "level": "TR6",
-   "points": "パラレル",
-   "effect": null
+   "effect": "馬・砲・器　確率 100% / 攻撃 55%上昇+速度 50%上昇(部隊内で最も速い兵士速度で移動・TRなし)"
   }
  ],
  "synthesisTable": [
@@ -145,7 +115,8 @@
   "S1枠(仁将無双、自己参照)の効果式「((1+ランク)×コスト×2.1)%上昇」はixanary生HTML(skills/仁将無双)の表記と完全一致確認。",
   "synthesisTableのA/B/C/S1/S2は、ixanary.com(cards/2409および各候補スキル個別ページ)に加え、ixawiki.com(index.php?BushoCard/2409舞兵庫)の合成候補テーブル(1次候補/2次候補S1)を生HTMLで確認し、全5行がixanary/ixawiki2ソースで一致することを確認した。data/skill/天廟斬算.json・八重言代主神.jsonのsourceCharacters/grantedViaSkillsに舞兵庫(2409、S2枠経由)が正しく反映済みであることも確認した(A-3-11)。",
   "章はixanary.com/ixawiki.comいずれのカードページにも記載が無く未確認。",
-  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。",
+  "2026-08-30: 鍛錬(TR)が無いことを明記した。うぐさんの規則で**鍛錬が登場したのは No.1263 が追加された28章から**であり、16章のカードで、鍛錬が登場した28章より前。データもそれを裏付けており、27章のカードは LV10 のみ・28章のカードは LV10〜TR5 を持つ。中身の空だった TR の段(点数だけが入り効果は空)は、鍛錬が無いのだから段も無いので外した。**28章以降で鍛錬の無い武将も居るため、そちらには何も書いていない。**"
  ],
  "reviewedOk": true,
  "wikiOldestComment": "2018-12-03",

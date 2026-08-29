@@ -20,11 +20,12 @@
   {
    "level": "LV10",
    "points": "-",
-   "effect": "弓・馬・器・騎　確率 100% / 攻撃 450%上昇+速度 100%上昇"
+   "effect": "弓・馬・器・騎　確率 100% / 攻撃 450%上昇+速度 100%上昇(TRなし)"
   }
  ],
  "notes": [
   "この武将自身の初期スキル(武田信虎(2) No.1240のsynthesisTable候補A)",
-  "2026-08-16(No.1240黄丸化検証): 2点修正。(1)effectSummaryの「TR1〜TR5は未確認」を削除。ixanary.com(cards/1240, skills/猛虎嵐陣)の生HTMLはLV1/LV10のみでTR区分自体が存在せず、ixawiki.com(BushoCard/1240武田信虎)もLv1/Lv10のみでTR言及なし、2ソースで確認しtrTable1行のみが正しいと確定。(2)ownHiddenCandidateのrankが「SSS」だったが星神闘覇の正しいrankはSS(2026-08-13にユーザーがゲーム内確認済み、data/skill/星神闘覇.json notes参照。ixanaryの「攻速：星神闘覇SSS」表示は既知の誤り)。SSに修正。"
+  "2026-08-16(No.1240黄丸化検証): 2点修正。(1)effectSummaryの「TR1〜TR5は未確認」を削除。ixanary.com(cards/1240, skills/猛虎嵐陣)の生HTMLはLV1/LV10のみでTR区分自体が存在せず、ixawiki.com(BushoCard/1240武田信虎)もLv1/Lv10のみでTR言及なし、2ソースで確認しtrTable1行のみが正しいと確定。(2)ownHiddenCandidateのrankが「SSS」だったが星神闘覇の正しいrankはSS(2026-08-13にユーザーがゲーム内確認済み、data/skill/星神闘覇.json notes参照。ixanaryの「攻速：星神闘覇SSS」表示は既知の誤り)。SSに修正。",
+  "2026-08-30: 鍛錬(TR)が無いことを明記した。うぐさんの規則で**鍛錬が登場したのは No.1263 が追加された28章から**であり、26章のカードで、鍛錬が登場した28章より前。データもそれを裏付けており、27章のカードは LV10 のみ・28章のカードは LV10〜TR5 を持つ。**28章以降で鍛錬の無い武将も居るため、そちらには何も書いていない。**持ち主1体すべてがその条件に当てはまる。"
  ]
 }

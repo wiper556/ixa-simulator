@@ -29,37 +29,7 @@
   {
    "level": "LV10",
    "points": "-",
-   "effect": "全　確率 64% / 攻撃 92%上昇(部隊内全武将の兵科対象の初期スキルに「砲」対象を追加)"
-  },
-  {
-   "level": "TR1",
-   "points": "10",
-   "effect": null
-  },
-  {
-   "level": "TR2",
-   "points": "40",
-   "effect": null
-  },
-  {
-   "level": "TR3",
-   "points": "90",
-   "effect": null
-  },
-  {
-   "level": "TR4",
-   "points": "150",
-   "effect": null
-  },
-  {
-   "level": "TR5",
-   "points": "200",
-   "effect": null
-  },
-  {
-   "level": "TR6",
-   "points": "パラレル",
-   "effect": null
+   "effect": "全　確率 64% / 攻撃 92%上昇(部隊内全武将の兵科対象の初期スキルに「砲」対象を追加・TRなし)"
   }
  ],
  "synthesisTable": [
@@ -139,7 +109,8 @@
   "C枠(鉄砲商人→遁世影武者)もA-3-9の例外ルールによりdata/skill/鉄砲商人.jsonを新規作成し、遁世影武者.jsonのgrantedViaSkillsに追記した。B枠(鬼滅刺、自己参照でない・afterSkillは布都御魂ノ鬨)は既にdata/skill/鬼滅刺.jsonのsourceCharactersに土居清良(2435、B枠)が登録済みであることを確認した(A-3-11)。",
   "synthesisTableのA/B/C/S1/S2は、ixanary.com(cards/2435の初期スキル清良記の合成テーブルおよび各候補スキル個別ページ)に加え、ixawiki.com(index.php?BushoCard/2435土居清良)の合成候補テーブル(1次候補/2次候補S1)を生HTMLで確認し、全5行がixanary/ixawiki2ソースで一致することを確認した。",
   "章はixanary.com/ixawiki.comいずれのカードページにも記載が無く未確認。",
-  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。",
+  "2026-08-30: 鍛錬(TR)が無いことを明記した。うぐさんの規則で**鍛錬が登場したのは No.1263 が追加された28章から**であり、21章のカードで、鍛錬が登場した28章より前。データもそれを裏付けており、27章のカードは LV10 のみ・28章のカードは LV10〜TR5 を持つ。中身の空だった TR の段(点数だけが入り効果は空)は、鍛錬が無いのだから段も無いので外した。**28章以降で鍛錬の無い武将も居るため、そちらには何も書いていない。**"
  ],
  "reviewedOk": true,
  "wikiOldestComment": "2021-02-17",
