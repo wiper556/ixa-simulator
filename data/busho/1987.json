@@ -24,8 +24,14 @@
   "ki": "A"
  },
  "initialSkill": "波乱ノ虎",
- "skillDetail": null,
- "trTable": null,
+ "skillDetail": "S/LV10 確率 45% 防御 (部隊ランクボーナス×15)%上昇/対象:全\n①防御 (部隊ランクボーナス×15)%上昇する\n②部隊ランクボーナスで効果が変化する(★28で135%)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 45% / 防御 (部隊ランクボーナス×15)%上昇(★28=135%)"
+  }
+ ],
  "reviewedOk": false,
  "notes": [
   "2026-08-17登録。カード画像が無いためixanary.com(cards/1987)とixawiki.com(BushoCard/1987井伊直虎)の生HTML2ソースのみで作成した。imageFull/imageCharはnull。",
@@ -33,7 +39,8 @@
   "illustratorがixanary=直良有祐・ixawiki=上国料勇で食い違ったためnullにした(この20体の中で唯一のイラストレーター相違)。",
   "波乱ノ虎はixawiki側もLv1/Lv10を分けて記載しているが、部隊ランクボーナスの倍率がixawiki Lv1=×4%・Lv10=×15%であるのに対しixanaryはLv1・LV10とも一貫して×15%(かつLV10には「部隊ランク★28 防御:135%上昇」という追加記載がixanaryのみにあり)で食い違ったためskillDetail/trTableをnullにした。troopは両ソースが「防御が部隊ランクに応じて上昇する」こと自体は一致していたため「全防」と記載した。",
   "reviewedOkはfalseのまま。カード画像による4隅バッジ・スキルパネル照合が未実施のため黄丸化はできない。",
-  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。",
+  "2026-08-30: skillDetail と trTable が空だった。初期スキル「波乱ノ虎」[S]のLV10 は 確率 45%・対象 全。**この値は data/skill/波乱ノ虎.json に既に入っていたもの**で、そのスキルの持ち主はこのカード1枚だけ。ixanary のカードページとも一致した。 出典: ixanary.com/cards/1987 のカードページ(LV1とLV10の2段が載っている)。**カード画像は無いので画像による裏取りはできていない(D-01)。** ixawiki の該当ページはコメント欄しか無くスキルの表を持っていなかったため、2つ目の情報源での確認はできていない。 **LV1 の段は持たせていない**(trTable は LV10 から並べる決まり、D-08)。"
  ],
  "wikiOldestComment": "2019-12-26",
  "wikiCommentCount": 88,

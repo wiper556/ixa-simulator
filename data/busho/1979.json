@@ -24,15 +24,22 @@
   "ki": "A"
  },
  "initialSkill": "天下千剣",
- "skillDetail": null,
- "trTable": null,
+ "skillDetail": "S/LV10 確率 60% 攻撃 88%上昇+防御 88%上昇 部隊消費コストを2低下/対象:全\n①攻撃 88%上昇する\n②防御 88%上昇する\n③部隊消費コストを2低下する(部隊効果は模倣・重複不可)",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 60% / 攻撃 88%上昇+防御 88%上昇 部隊消費コストを2低下(部隊効果は模倣・重複不可)"
+  }
+ ],
  "reviewedOk": false,
  "notes": [
   "2026-08-17登録。カード画像が無いためixanary.com(cards/1979)とixawiki.com(BushoCard/1979足利義輝)の生HTML2ソースのみで作成した。imageFull/imageCharはnull。",
   "cost/lv0Troops/rankGrades/atkBase・atkGrowth/defGrowth/tacticsBase・tacticsGrowthは両ソース一致。defBaseのみixanary=1700・ixawiki=1850で食い違ったためnullにした(今回の割当20体のうち17体で発生している系統的な食い違い)。",
   "天下千剣はixawiki側もLv1/Lv10を分けて記載しておりLv1(確率30%攻撃防御40%上昇・部隊消費コスト0.5低下)は両ソース完全一致、Lv10も確率60%攻撃防御88%上昇は一致したが、部隊消費コストの低下量がixanary=2・ixawiki=1で食い違ったためskillDetail/trTableをnullにした。troopは両ソースが「攻撃・防御が上昇する」こと自体は一致していたため「全攻防」と記載した。",
   "reviewedOkはfalseのまま。カード画像による4隅バッジ・スキルパネル照合が未実施のため黄丸化はできない。",
-  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。"
+  "2026-08-16: 章は ixawiki の該当カードページの一番古いコメントの日付から推定した(chSource=wikiOldestComment)。**ゲーム内で確認した値ではない。** 章が分かっている146体での的中は141体(96.6%)。実物が分かったら上書きして chSource を消すこと。",
+  "2026-08-30: skillDetail と trTable が空だった。初期スキル「天下千剣」[S]のLV10 は 確率 60%・対象 全。LV1は確率30%・攻防40%・コスト-0.5。 出典: ixanary.com/cards/1979 のカードページ(LV1とLV10の2段が載っている)。**カード画像は無いので画像による裏取りはできていない(D-01)。** ixawiki の該当ページはコメント欄しか無くスキルの表を持っていなかったため、2つ目の情報源での確認はできていない。 **LV1 の段は持たせていない**(trTable は LV10 から並べる決まり、D-08)。"
  ],
  "wikiOldestComment": "2019-05-20",
  "wikiCommentCount": 111,
