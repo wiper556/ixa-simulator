@@ -904,6 +904,41 @@ def main():
                 add("くじの武将名が正本と違う", "MID",
                     "%s の No.%s: くじ「%s」/ 正本「%s」" % (page, no, nm, g["name"]))
 
+    # S-23: くじの確率が合計100%になっているか(2026-08-30)
+    #
+    # 排出確率の表は BASE_RATES などの定数から作るようになっていて
+    # 表と定数のずれは起きない。だが **定数そのものの合計は誰も見ていない。**
+    # 1つ書き換えれば表も一緒に変わるので、見た目からは気付けないまま
+    # 実際に引かれる確率だけが狂う。武将別の内訳(w)も同じで、
+    # 各レア度の合計がその確率と一致していなければ配分がずれる。
+    for page, text in D["gachaPages"].items():
+        consts = {}
+        for m in re.finditer(r"const ([A-Z_]*RATES) = \{([^}]*)\}", text):
+            v = {k: int(x) for k, x in re.findall(r"([傑天極特上])\s*:\s*(\d+)", m.group(2))}
+            if v:
+                consts[m.group(1)] = v
+                if sum(v.values()) != 100000:
+                    add("くじの確率の合計が100%でない", "HIGH",
+                        "%s の %s が合計 %.3f%%(100%% でない): %s"
+                        % (page, m.group(1), sum(v.values()) / 1000.0,
+                           "・".join("%s=%.3f%%" % (k, x / 1000.0) for k, x in v.items())))
+        # 武将別の内訳。「const 傑CHARS = [ {no:..., w:0.0060}, ... ]」の形
+        for m in re.finditer(r"const ([A-Z_]+_CHARS[A-Z_]*) = \[(.*?)\];", text, re.S):
+            ws = [float(x) for x in re.findall(r"w:\s*([\d.]+)", m.group(2))]
+            if len(ws) < 2:
+                continue
+            tier = {"KETSU": "傑", "TEN": "天", "KYOKU": "極",
+                    "TOKU": "特", "JOU": "上"}.get(m.group(1).split("_")[0])
+            kind = ("TENTH_GUARANTEE_RATES" if "GUARANTEE" in m.group(1)
+                    else "TENTH_BOOST_RATES" if "BOOST" in m.group(1) else "BASE_RATES")
+            want = (consts.get(kind) or {}).get(tier)
+            if want is None:
+                continue
+            if abs(sum(ws) - want / 1000.0) > 0.0005:
+                add("くじの武将別の内訳が確率と合わない", "HIGH",
+                    "%s の %s(%d件)の合計が %.4f%%。%s では %s は %.3f%%"
+                    % (page, m.group(1), len(ws), sum(ws), kind, tier, want / 1000.0))
+
     # F-07: effectShort の接頭辞の剥がし損ね
     for g in all_g:
         for row in g.get("synthesisTable") or []:
