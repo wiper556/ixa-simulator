@@ -923,7 +923,7 @@
   // 【必須】attack-simulator.html を変更したコミットでは、必ずこの定数も一緒に更新すること。
   // 表示文言の変更・CSSの微調整であっても対象(ユーザーがスクショで版を判別できなくなるため)。
   // 更新忘れが繰り返し発生しているので、編集したらコミット前にここを見に来る。
-  const SIMULATOR_VERSION = 'v2026-08-29.1';
+  const SIMULATOR_VERSION = 'v2026-08-29.2';
   document.addEventListener('DOMContentLoaded', ()=>{
     const badge = document.getElementById('simVersionBadge');
     if(badge) badge.textContent = SIMULATOR_VERSION;
@@ -4830,7 +4830,8 @@
     runFullCalculation();
   }
   loadSheet();
-  initCandFilter();
+  // initCandFilter() は候補の絞り込み一式(CF_RARITY など)を使うので、**その宣言より後**で呼ぶ。
+  // ここで呼ぶと『CF_RARITY を初期化前に参照した』で止まり、この script の残り751行がまるごと動かなくなる。
 
   // 前回どちらを開いていたかを画面に反映する。部隊編成の復元が終わってから呼ぶ
   // (applyModeは部隊合計の再計算まで行うため、中身が入った状態で走らせる必要がある)。
@@ -5188,6 +5189,9 @@
       cfRenderBoxes(); cfSave();
     });
   }
+
+  // 絞り込みの宣言がすべて出そろってから呼ぶ(上の loadSheet() の直後から移動)。
+  initCandFilter();
 
   function generalFitsMode(s){
     if(!s.axis || s.axis === 'both') return true;

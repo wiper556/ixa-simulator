@@ -56,6 +56,7 @@ REQUIRED = ("docs/RULES.md", "docs/RULE-VIOLATIONS.md", "docs/RULE-OPERATION.md"
             "docs/rollback-floor.txt",
             "tools/audit_baseline.json", "tools/audit_characters.py", "tools/rules.py",
             "tools/lock.py", "tools/checks.lock", "tools/check_js.py",
+            "tools/smoke_pages.py",
             "tools/audit_selftest.py", "tools/install_hooks.py",
             "tools/hooks/pre-commit", "tools/hooks/pre-merge-commit", "tools/hooks/pre-push",
             "tools/hooks/no_heredoc_backslash.py",
@@ -457,6 +458,19 @@ def check_push():
                 print("[停止] push しようとしているページのJSが構文エラー(T-06/T-07)")
                 print("=" * 62)
                 print((r.stdout or "").strip()[-1200:])
+
+            # T-09(2026-08-29): check_js.py は **構文しか見ていない。**
+            # 構文が正しくても実行時に落ちれば、そこから先は一行も動かない。
+            # 実際 attack-simulator.html は「候補の絞り込み」を宣言より前で呼んでおり、
+            # 同じ script の残り751行が動かないまま公開されていた(check_js.py は通過)。
+            # ブラウザで開いて確かめる(ルート直下 + 詳細ページの抜き取り、約1分)。
+            r = run([sys.executable, os.path.join("tools", "smoke_pages.py")], cwd=tmp)
+            if r.returncode != 0:
+                ng = True
+                print("=" * 62)
+                print("[停止] push しようとしているページが開いた時点で落ちる(T-09)")
+                print("=" * 62)
+                print((r.stdout or "").strip()[-1500:])
 
             # I-9/I-10(第3回): 公開されるページとデータが一致しているか。
             # 生成物を手で書き換えても、再生成を忘れても、これまで通っていた。
