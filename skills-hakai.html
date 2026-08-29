@@ -1,0 +1,1194 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7334304987274613"
+     crossorigin="anonymous"></script>
+<title>破壊力一覧(100%以上)｜戦国IXA シミュレーター置き場</title>
+<meta name="description" content="戦国IXA(Sengoku IXA)で破壊効果が100%以上あるスキルの一覧。発動率・対象兵科・破壊の上昇量・入手できる武将を比較できる非公式ファンメイドツール。">
+<link rel="stylesheet" href="assets/css/site.css">
+<style>
+  body{background:#ffffff;}
+  .cs-table-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;}
+  .cs-table{width:100%;border-collapse:collapse;font-size:13px;}
+  .cs-table th,.cs-table td{border:1px solid var(--line);padding:9px 12px;text-align:center;white-space:nowrap;}
+  .cs-table th{background:var(--bg-panel-2);color:var(--muted);font-weight:700;}
+  .cs-table td:first-child{text-align:left;font-family:'Noto Serif JP',serif;font-weight:700;}
+  .cs-table td.cs-col-effect{text-align:left;white-space:normal;min-width:260px;}
+  .cs-col-hakai{font-weight:700;color:#c0392b;}
+  .cs-note{color:var(--muted);font-size:12px;line-height:1.7;margin:0 0 14px;}
+  .cs-search{margin-bottom:14px;}
+  .cs-search input{
+    width:100%;font-family:'Zen Kaku Gothic New',sans-serif;font-size:15px;padding:11px 14px;
+    background:#fff;border:1px solid var(--line);color:var(--paper);border-radius:5px;
+  }
+  .cs-search input:focus{outline:none;border-color:var(--gold);}
+  .s2-hide-filter{margin-bottom:14px;}
+  .s2-hide-toggle{display:inline-flex;align-items:center;gap:7px;font-size:12.5px;color:var(--muted);cursor:pointer;user-select:none;}
+  .s2-hide-toggle input{width:16px;height:16px;cursor:pointer;accent-color:var(--gold);}
+  @media (max-width:600px){
+    .cs-table{font-size:12px;}
+    .cs-table th,.cs-table td{padding:6px 8px;}
+  }
+  .sim-version-badge{
+    position:fixed; bottom:6px; right:8px; z-index:9999;
+    font-family:'JetBrains Mono',monospace; font-size:10px; color:#9a9382;
+    background:rgba(255,255,255,0.85); padding:2px 7px; border-radius:4px;
+    border:1px solid var(--line); pointer-events:none; user-select:text;
+  }
+</style>
+</head>
+<body>
+<div class="site-layout">
+  <aside class="site-sidebar" id="siteSidebar">
+    <div class="sidebar-header">
+      <span class="sidebar-title">メニュー</span>
+    </div>
+    <nav class="sidebar-nav">
+      <a href="index.html">シミュレーター一覧</a>
+      <a href="attack-simulator.html">攻撃/防御シミュレーター</a>
+      <a href="gacha-simulator.html">金くじシミュレーター</a>
+      <a href="characters-hub.html">武将データベース</a>
+      <a href="skills-hub.html">スキル一覧</a>
+      <a href="blog.html">記事</a>
+      <a href="privacy.html">プライバシーポリシー</a>
+    </nav>
+  </aside>
+  <div class="site-content">
+  <header class="site-header">
+    <a class="site-logo" href="index.html">戦国IXA シミュレーター置き場</a>
+  </header>
+
+  <main class="site-main">
+    <h1 class="page-title">破壊力一覧(100%以上)</h1>
+    <p class="cs-note">
+      拠点や砦への「破壊」効果が <strong>100%以上</strong> あるスキルの一覧です。LV10 の破壊が大きい順に並べています。<br>
+      ランクが A 以下のスキルも、破壊が100%以上あるものはこの一覧に載せ、個別ページも用意しています。<br>
+      <strong>「敵軍の破壊効果を低下させる」スキルは入っていません。</strong>破壊を上げるものだけを集めています。<br>
+      LV10 に破壊が無く、鍛錬(TR)で初めて破壊が付くスキルは表の最後に置き、LV10 の欄を「-」にしています。
+    </p>
+
+    <div class="cs-search">
+      <input type="text" id="hkSearchBox" placeholder="スキル名または武将名で検索(例: 梵天浄界、安土城 など)">
+    </div>
+
+    <div class="s2-hide-filter">
+      <label class="s2-hide-toggle"><input type="checkbox" id="hkHideS2Toggle">S2で入手できる武将名を非表示</label>
+    </div>
+
+    <div class="cs-table-scroll">
+      <table class="cs-table">
+        <thead>
+          <tr><th>スキル名</th><th>ランク</th><th>発動率</th><th>対象兵科</th><th>破壊(LV10)</th><th>破壊(鍛錬最大)</th><th>主効果(LV10時)</th><th>入手可能な武将</th></tr>
+        </thead>
+        <tbody id="hkList">
+<!-- PRERENDER:list:hkList:start ここから下は tools/prerender.py が自動生成しています。直接編集しないこと -->
+<tr><td><a href="skill/%E6%88%A6%E9%99%A3_%E7%96%BE%E9%A7%86.html">戦陣 疾駆</a></td><td>A</td><td>100%</td><td>全</td><td class="cs-col-hakai">170%</td><td>-</td><td class="cs-col-effect">全　確率 100% / 速度 170%上昇+破壊 170%上昇</td><td style="white-space:normal;"><a href="characters-kyoku.html#2375">森可成（2）(S1)</a><br><a href="characters-kyoku.html#2379">飯富虎昌（2）(A)</a><br><a href="characters-kyoku.html#2385">原虎胤(C)</a><br><a href="characters-kyoku-ps.html#2600">伊達藤次郎(A)</a><br><a href="characters-kyoku-ps.html#2639">松風(S2)</a><br><a href="characters-kyoku.html#7003">片倉小十郎（3）(B)</a><br><a href="characters-kyoku.html#7008">池田輝政（2）(B)</a><br><a href="characters-kyoku.html#7012">依田信蕃(C)</a><br><a href="characters-toku.html#3602">般若(S2)</a><br><a href="characters-toku.html#3603">式尉(S2)</a></td></tr><tr><td><a href="skill/%E5%81%83%E6%AD%A6%E8%A6%87%E9%99%A3.html">偃武覇陣</a></td><td>SSS</td><td>50%</td><td>全 飛翔30 不屈1 覇道 撤退</td><td class="cs-col-hakai">150%</td><td>300%(TR5)</td><td class="cs-col-effect">全 飛翔30 不屈1 覇道 撤退　確率 50% / 全攻防 760%上昇+破壊 150%上昇(回復速度+500%)</td><td style="white-space:normal;"><a href="characters.html#1263">徳川家康（10）【覇】(移植不可)</a></td></tr><tr><td><a href="skill/%E5%8D%83%E9%87%8C%E5%BF%85%E5%8B%9D%E3%83%8E%E7%A5%9E%E7%AE%97.html">千里必勝ノ神算</a></td><td>SS</td><td>42%</td><td>全 覇道</td><td class="cs-col-hakai">150%</td><td>300%(TR5)</td><td class="cs-col-effect">全 覇道　確率 42% / 攻撃 1010%上昇+防御 1010%上昇+破壊 150%上昇</td><td style="white-space:normal;"><a href="characters.html#1288">徳川家康（11）【覇】(A・B)</a><br><a href="characters.html#1290">武田信玄（6）(C)</a><br><a href="characters.html#1293">毛利元就（5）(C・S1)</a><br><a href="characters.html#1294">島津義弘（4）(C)</a><br><a href="characters.html#1295">大友宗麟（5）(S1)</a><br><a href="characters.html#1304">真田昌幸（4）(B)</a><br><a href="characters.html#1314">大内義隆（2）(B)</a><br><a href="characters.html#1316">尼子経久（4）(A)</a><br><a href="characters.html#10065">世良田二郎三郎(A・B)</a><br><a href="characters.html#10069">長宗我部元親-復刻-（6）(A)</a><br><a href="characters-parallel.html#31314">大内義隆(B)</a><br><a href="characters-parallel.html#31316">尼子経久(A)</a><br><a href="characters-kyoku-ps.html#2495">鍋島直茂（2）(C)</a><br><a href="characters-kyoku-ps.html#7402">蜂須賀家政（2）(B)</a><br><a href="characters-kyoku-ps.html#7405">加藤嘉明（2）(C)</a><br><a href="characters-parallel.html#31288">徳川家康【覇】(A・B)</a><br><a href="characters-parallel.html#31290">武田信玄(C)</a><br><a href="characters-parallel.html#31293">毛利元就(C・S1)</a><br><a href="characters-parallel.html#31294">島津義弘(C)</a><br><a href="characters-parallel.html#31295">大友宗麟(S1)</a><br><a href="characters-parallel.html#31304">真田昌幸(B)</a></td></tr><tr><td><a href="skill/%E6%97%8B%E9%BE%8D%E7%AA%81%E6%B8%A6.html">旋龍突渦</a></td><td>S</td><td>55%</td><td>全</td><td class="cs-col-hakai">150%</td><td>250%(TR5)</td><td class="cs-col-effect">全　確率 55% / 攻撃 450%上昇+破壊 150%上昇(騎鉄速度+2破壊+2・部隊枠から外れる時HP最大60%回復)</td><td style="white-space:normal;"><a href="characters-kyoku-ps.html#2600">伊達藤次郎(移植不可)</a></td></tr><tr><td><a href="skill/%E6%A2%B5%E5%A4%A9%E6%B5%84%E7%95%8C.html">梵天浄界</a></td><td>SSS</td><td>60%</td><td>全</td><td class="cs-col-hakai">150%</td><td>250%(TR5)</td><td class="cs-col-effect">全　確率 60% / 防御 50%上昇+破壊 150%上昇(10×防御参加武将数(280人)=2800%を防御効果に加算)</td><td style="white-space:normal;"><a href="characters.html#1287">豊臣秀吉（8）【覇】(S1)</a><br><a href="characters.html#1289">長宗我部元親（7）(S1)</a><br><a href="characters.html#1299">石田三成（7）【覇】(C)</a><br><a href="characters.html#1309">津軽為信(C)</a><br><a href="characters.html#1314">大内義隆（2）(C)</a><br><a href="characters.html#10063">南光坊天海(C)</a><br><a href="characters.html#10067">相楽左之助(C)</a><br><a href="characters.html#10076">最上義光-復刻-（6）【覇】(S1)</a><br><a href="characters-parallel.html#31314">大内義隆(C)</a><br><a href="characters-parallel.html#31287">豊臣秀吉【覇】(S1)</a><br><a href="characters-parallel.html#31289">長宗我部元親(S1)</a><br><a href="characters-parallel.html#31299">石田三成【覇】(C)</a><br><a href="characters-parallel.html#31309">津軽為信(C)</a></td></tr><tr><td><a href="skill/%E5%A4%A9%E9%99%90%E3%83%8E%E9%BA%92%E9%BA%9F.html">天限ノ麒麟</a></td><td>S</td><td>45%</td><td>槍・馬・器・焙　兵站</td><td class="cs-col-hakai">150%</td><td>200%(TR5)</td><td class="cs-col-effect">槍・馬・器・焙 兵站　確率 45% / 防御 150%上昇+破壊 150%上昇(6.5%×防御参加武将数(280人)=1820.0%加算)</td><td style="white-space:normal;"><a href="characters.html#1265">蒲生氏郷（2）(A・B・C)</a></td></tr><tr><td><a href="skill/%E7%A5%9E%E7%BE%85%E8%81%96%E5%9F%9F.html">神羅聖域</a></td><td>SS</td><td>40%</td><td>全 覇道</td><td class="cs-col-hakai">150%</td><td>200%(TR5)</td><td class="cs-col-effect">全 覇道　確率 40% / 攻撃 900%上昇+防御 900%上昇+破壊 150%上昇</td><td style="white-space:normal;"><a href="characters.html#1266">直江兼続（4）(S1)</a><br><a href="characters.html#1267">佐竹義宣（2）(S1)</a><br><a href="characters.html#1272">豊臣秀次(S1)</a><br><a href="characters.html#1274">豊臣秀吉（7）【覇】(A)</a><br><a href="characters.html#1276">結城秀康(B)</a><br><a href="characters.html#1290">武田信玄（6）(B・S2)</a><br><a href="characters.html#1296">北条早雲（3）(A・S2)</a><br><a href="characters.html#1300">大谷吉継（3）【覇】(S2)</a><br><a href="characters.html#1310">織田信秀（3）【覇】(S2)</a><br><a href="characters.html#10053">志々雄真実(C)</a><br><a href="characters.html#10075">毛利輝元-復刻-（6）【覇】(S2)</a><br><a href="characters-parallel.html#31310">織田信秀【覇】(S2)</a><br><a href="characters-kyoku-ps.html#2495">鍋島直茂（2）(S2)</a><br><a href="characters-kyoku-ps.html#2623">ガーネット(B)</a><br><a href="characters-kyoku-ps.html#2624">ビビ(A)</a><br><a href="characters-kyoku-ps.html#2834">甲斐親宣(S1)</a><br><a href="characters-kyoku-ps.html#2839">伊賀崎道順(S1)</a><br><a href="characters-kyoku-ps.html#2843">竹林院（2）(C)</a><br><a href="characters-kyoku-ps.html#2844">山田長政(B・C)</a><br><a href="characters-kyoku-ps.html#2845">藤林長門守（2）(A)</a><br><a href="characters-kyoku-ps.html#2847">鳥居元忠(S2)</a><br><a href="characters-kyoku-ps.html#2852">鶴姫（2）(B)</a><br><a href="characters-kyoku-ps.html#7403">蒲生氏郷（4）(B)</a><br><a href="characters-parallel.html#31290">武田信玄(B・S2)</a><br><a href="characters-parallel.html#31296">北条早雲(A・S2)</a><br><a href="characters-parallel.html#31300">大谷吉継【覇】(S2)</a></td></tr><tr><td><a href="skill/%E5%9F%8E%E5%A3%81%E3%81%AE%E8%AD%B7%E3%82%8A.html">城壁の護り</a></td><td>S</td><td>100%</td><td>全</td><td class="cs-col-hakai">150%</td><td>-</td><td class="cs-col-effect">全　確率 100% / 防御 400%上昇+破壊 150%上昇</td><td style="white-space:normal;"><a href="characters-kyoku-ps.html#2589">難攻不落の天守(移植不可)</a></td></tr><tr><td><a href="skill/%E5%A4%A9%E7%B6%BE%E3%81%AE%E8%AA%93%E7%B4%84.html">天綾の誓約</a></td><td>SS</td><td>60%</td><td>全</td><td class="cs-col-hakai">150%</td><td>-</td><td class="cs-col-effect">全　確率 60% / 攻撃 99.9%上昇 防御 99.9%上昇 破壊 150%上昇</td><td style="white-space:normal;"><a href="characters-do.html#1812">源五郎(C)</a><br><a href="characters-do.html#1813">虎之助(C)</a><br><a href="characters-do.html#1814">弥三郎(C)</a><br><a href="characters-kyoku-ps.html#2452">飯田覚兵衛(C)</a><br><a href="characters-kyoku-ps.html#2589">難攻不落の天守(A)</a></td></tr><tr><td><a href="skill/%E7%99%BE%E6%88%A6%E7%99%BE%E5%8B%9D%E8%84%9A.html">百戦百勝脚</a></td><td>S</td><td>29%</td><td>弓・砲・器</td><td class="cs-col-hakai">150%</td><td>-</td><td class="cs-col-effect">弓・砲・器　確率 29% / 防御 1000%上昇+破壊 150%上昇</td><td style="white-space:normal;"><a href="characters-kyoku-ps.html#2637">ラーメンマン(B)</a></td></tr><tr><td><a href="skill/%E7%A0%B4%E9%82%AA%E5%BE%8C%E8%BC%9D.html">破邪後輝</a></td><td>SS</td><td>100%</td><td>全 覇道</td><td class="cs-col-hakai">150%</td><td>-</td><td class="cs-col-effect">全 覇道　確率 100% / 攻撃 770%上昇+速度 150%上昇+破壊 150%上昇(TR以降のデータなし、LV10が最大値)</td><td style="white-space:normal;"><a href="characters.html#1250">織田信長（7）【覇】(S1)</a><br><a href="characters.html#1251">毛利輝元（6）【覇】(S1)</a><br><a href="characters.html#1252">武田勝頼（4）(S1)</a><br><a href="characters.html#1263">徳川家康（10）【覇】(B)</a><br><a href="characters.html#1268">真田信繁（2）(S1)</a><br><a href="characters.html#1274">豊臣秀吉（7）【覇】(S2)</a><br><a href="characters.html#1276">結城秀康(A)</a><br><a href="characters.html#10053">志々雄真実(A)</a><br><a href="characters-kyoku-ps.html#2486">小幡信貞(S1)</a><br><a href="characters-kyoku-ps.html#2488">北信景(S2)</a><br><a href="characters-kyoku-ps.html#2610">高荷恵(S1)</a><br><a href="characters-kyoku-ps.html#2626">エーコ(B)</a><br><a href="characters-kyoku-ps.html#2630">キン肉マン(S2)</a><br><a href="characters-kyoku-ps.html#2845">藤林長門守（2）(S2)</a></td></tr><tr><td><a href="skill/%E7%B4%94%E9%87%91%E3%81%AE%E5%86%A0.html">純金の冠</a></td><td>A</td><td>100%</td><td>全</td><td class="cs-col-hakai">150%</td><td>-</td><td class="cs-col-effect">全　確率 100% / 防御 120%上昇+破壊 150%上昇</td><td style="white-space:normal;"><a href="characters-kyoku-ps.html#2560">安土城(移植不可)</a></td></tr><tr><td><a href="skill/%EF%BC%A8%E3%83%BB%E3%83%9F%E3%82%AD%E3%82%B5%E3%83%BC.html">Ｈ・ミキサー</a></td><td>S</td><td>29%</td><td>馬・砲・器</td><td class="cs-col-hakai">150%</td><td>-</td><td class="cs-col-effect">馬・砲・器　確率 29% / 攻撃 1000%上昇+破壊 150%上昇</td><td style="white-space:normal;"><a href="characters-kyoku-ps.html#2632">バッファローマン(B)</a></td></tr><tr><td><a href="skill/%E6%82%AA%E4%B8%80%E6%96%87%E5%AD%97.html">悪一文字</a></td><td>S</td><td>28%</td><td>全</td><td class="cs-col-hakai">120%</td><td>850%(TR5)</td><td class="cs-col-effect">全　確率 28% / 破壊 120%上昇(不屈1・自身を除く部隊内武将の初期スキルに不屈1付与・模倣不可・自部隊内重複不可)</td><td style="white-space:normal;"><a href="characters-kyoku-ps.html#2609">相楽左之助(移植不可)</a></td></tr><tr><td><a href="skill/%E5%A4%9C%E5%8F%89%E7%BE%8E%E6%BF%83.html">夜叉美濃</a></td><td>A</td><td>50%</td><td>槍・弓・器・鉄 兵站</td><td class="cs-col-hakai">120%</td><td>-</td><td class="cs-col-effect">槍・弓・器・鉄 兵站　確率 50% / 防御 410%上昇+破壊 120%上昇</td><td style="white-space:normal;"><a href="characters-kyoku.html#2385">原虎胤(A・B)</a></td></tr><tr><td><a href="skill/%E6%88%91%E6%B5%81%E5%A4%A7%E8%9B%87.html">我流大蛇</a></td><td>A</td><td>100%</td><td>槍・砲・器</td><td class="cs-col-hakai">120%</td><td>-</td><td class="cs-col-effect">槍・砲・器　確率 100% / 攻撃 400%上昇+破壊 120%上昇+速度 120%上昇</td><td style="white-space:normal;"><a href="characters-kyoku-ps.html#2613">沢下条張(A・B・C)</a></td></tr><tr><td><a href="skill/%E6%97%A5%E8%BC%AA%E3%83%8E%E5%AE%88%E8%AD%B7%E8%80%85.html">日輪ノ守護者</a></td><td>A</td><td>65%</td><td>弓・砲・器</td><td class="cs-col-hakai">110%</td><td>-</td><td class="cs-col-effect">弓・砲・器　確率 65% / 攻撃 340%上昇+防御 340%上昇+破壊 110%上昇</td><td style="white-space:normal;"><a href="characters-kyoku.html#2375">森可成（2）(S2)</a><br><a href="characters-kyoku.html#2397">佐久間信盛(A)</a><br><a href="characters-kyoku.html#2365">豊臣秀長(A・B)</a></td></tr><tr><td><a href="skill/%E9%89%84%E5%9B%BD.html">鉄国</a></td><td>A</td><td>40%</td><td>弓・砲・器</td><td class="cs-col-hakai">110%</td><td>-</td><td class="cs-col-effect">弓・砲・器　確率 40% / 攻撃 440%上昇+防御 440%上昇+破壊 110%上昇</td><td style="white-space:normal;"><a href="characters-kyoku.html#7010">土橋平次(C・S1)</a><br><a href="characters-kyoku.html#7021">北条氏照(B)</a></td></tr><tr><td><a href="skill/%E3%81%8A%E3%81%8B%E3%81%93%E3%81%84%E5%B1%B1.html">おかこい山</a></td><td>A</td><td>-</td><td>砲・器</td><td class="cs-col-hakai">100%</td><td>-</td><td class="cs-col-effect">砲・器　確率 - / 防御 130%上昇+破壊 100%上昇</td><td style="white-space:normal;"><a href="characters-kyoku-ps.html#2561">中津城(移植不可)</a></td></tr><tr><td><a href="skill/%E3%82%BF%E3%83%AF%E3%83%BC%E3%83%96%E3%83%AA%E3%83%83%E3%82%B8.html">タワーブリッジ</a></td><td>C</td><td>17%</td><td>全</td><td class="cs-col-hakai">100%</td><td>-</td><td class="cs-col-effect">全　確率 17% / 攻撃 350%上昇 / 破壊 100%上昇</td><td style="white-space:normal;"><a href="characters-toku.html#3652">ロビンマスク(B・C・S1)</a></td></tr><tr><td><a href="skill/%E4%B8%8D%E6%92%93%E3%83%8E%E4%BB%81%E5%B0%86.html">不撓ノ仁将</a></td><td>A</td><td>35%</td><td>槍・砲・器</td><td class="cs-col-hakai">100%</td><td>-</td><td class="cs-col-effect">槍・砲・器　確率 35% / 防御 70%上昇+破壊 100%上昇(1.3%×防御参加武将数(280人)=364.0%を防御効果に加算・模倣不可)</td><td style="white-space:normal;"><a href="characters-kyoku.html#2357">毛利隆元(移植不可)</a><br><a href="characters-kyoku.html#2361">浅井亮政（4）(C)</a></td></tr><tr><td><a href="skill/%E5%A4%A9%E4%B8%8B%E7%AC%AC%E4%B8%80.html">天下第一</a></td><td>A</td><td>-</td><td>砲・器</td><td class="cs-col-hakai">100%</td><td>-</td><td class="cs-col-effect">砲・器　確率 - / 防御 130%上昇+破壊 100%上昇</td><td style="white-space:normal;"><a href="characters-kyoku-ps.html#2564">大坂城(移植不可)</a></td></tr><tr><td><a href="skill/%E5%A4%A9%E8%AC%80%E7%88%86%E8%A3%82%E3%83%8E%E8%AA%BF.html">天謀爆裂ノ調</a></td><td>S</td><td>47%</td><td>砲・器</td><td class="cs-col-hakai">100%</td><td>-</td><td class="cs-col-effect">砲・器　確率 47% / 攻撃 88%上昇+破壊 100%上昇</td><td style="white-space:normal;"><a href="characters.html#1150">松永久秀（2）(移植不可)</a></td></tr><tr><td><a href="skill/%E5%A4%AA%E9%BC%93%E9%96%80.html">太鼓門</a></td><td>A</td><td>-</td><td>砲・器</td><td class="cs-col-hakai">100%</td><td>-</td><td class="cs-col-effect">砲・器　確率 - / 防御 130%上昇+破壊 100%上昇</td><td style="white-space:normal;"><a href="characters-kyoku-ps.html#2562">会津若松城(移植不可)</a></td></tr><tr><td><a href="skill/%E7%A7%98%E4%BC%9D%E6%AD%A6%E8%80%85%E8%BF%94%E3%81%97.html">秘伝武者返し</a></td><td>A</td><td>-</td><td>砲・器</td><td class="cs-col-hakai">100%</td><td>-</td><td class="cs-col-effect">砲・器　確率 - / 防御 130%上昇+破壊 100%上昇</td><td style="white-space:normal;"><a href="characters-kyoku-ps.html#2563">熊本城(移植不可)</a></td></tr><tr><td><a href="skill/%E8%A6%87%E7%AB%8B%E6%A7%8D.html">覇立槍</a></td><td>A</td><td>60%</td><td>槍・砲・器</td><td class="cs-col-hakai">100%</td><td>-</td><td class="cs-col-effect">槍・砲・器　確率 60% / 攻撃 460%上昇+破壊 100%上昇</td><td style="white-space:normal;"><a href="characters-kyoku.html#2375">森可成（2）(A・B・C)</a><br><a href="characters-kyoku.html#7019">可児才蔵（2）(A)</a></td></tr><tr><td><a href="skill/%E7%82%8E%E7%B5%B1%E6%A5%B5%E5%88%83.html">炎統極刃</a></td><td>SSS</td><td>100%</td><td>全</td><td class="cs-col-hakai">-</td><td>350%(TR5)</td><td class="cs-col-effect">全　確率 100% / 攻撃 770%上昇(このスキルを持つ武将カードは追加・極限スキルの攻撃・破壊効果が2倍・模倣不可)</td><td style="white-space:normal;"><a href="characters.html#10053">志々雄真実(移植不可)</a></td></tr>
+<!-- PRERENDER:list:hkList:end -->
+</tbody>
+      </table>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>本サイトは戦国IXA(Sengoku IXA)の非公式ファンメイドツールです。運営会社・関連団体とは一切関係ありません。<br>
+    記載されている会社名・製品名・システム名などは、各社の商標、または登録商標です。<br>
+    &copy; SQUARE ENIX</p>
+    <p><a href="privacy.html">プライバシーポリシー</a></p>
+  </footer>
+  <div class="sim-version-badge" id="simVersionBadge">v-</div>
+  <div id="pageComments"></div>
+  </div>
+</div>
+<script>
+  const HK_VERSION = 'v2026-08-29.1';
+  document.addEventListener('DOMContentLoaded', ()=>{
+    const badge = document.getElementById('simVersionBadge');
+    if(badge) badge.textContent = HK_VERSION;
+  });
+
+  /* ============ 破壊力一覧(100%以上) ============
+     **この配列は tools/build_hakai_page.py が data/skill/*.json から
+     作っています。手で書き換えないこと。** 正本を直したら
+     python tools/build_hakai_page.py --write を回すこと。
+  ============================================ */
+  const hakaiSkills = [
+ {
+  "name": "戦陣 疾駆",
+  "rank": "A",
+  "rate": 100,
+  "target": "全",
+  "hakai": 170.0,
+  "hakaiMax": 170.0,
+  "hakaiMaxLv": "LV10",
+  "effect": "全　確率 100% / 速度 170%上昇+破壊 170%上昇",
+  "holders": [
+   {
+    "name": "森可成（2）",
+    "no": "2375",
+    "slot": "S1",
+    "page": "characters-kyoku.html"
+   },
+   {
+    "name": "飯富虎昌（2）",
+    "no": "2379",
+    "slot": "A",
+    "page": "characters-kyoku.html"
+   },
+   {
+    "name": "原虎胤",
+    "no": "2385",
+    "slot": "C",
+    "page": "characters-kyoku.html"
+   },
+   {
+    "name": "伊達藤次郎",
+    "no": "2600",
+    "slot": "A",
+    "page": "characters-kyoku-ps.html"
+   },
+   {
+    "name": "松風",
+    "no": "2639",
+    "slot": "S2",
+    "page": "characters-kyoku-ps.html"
+   },
+   {
+    "name": "片倉小十郎（3）",
+    "no": "7003",
+    "slot": "B",
+    "page": "characters-kyoku.html"
+   },
+   {
+    "name": "池田輝政（2）",
+    "no": "7008",
+    "slot": "B",
+    "page": "characters-kyoku.html"
+   },
+   {
+    "name": "依田信蕃",
+    "no": "7012",
+    "slot": "C",
+    "page": "characters-kyoku.html"
+   },
+   {
+    "name": "般若",
+    "no": "3602",
+    "slot": "S2",
+    "page": "characters-toku.html"
+   },
+   {
+    "name": "式尉",
+    "no": "3603",
+    "slot": "S2",
+    "page": "characters-toku.html"
+   }
+  ]
+ },
+ {
+  "name": "偃武覇陣",
+  "rank": "SSS",
+  "rate": 50,
+  "target": "全 飛翔30 不屈1 覇道 撤退",
+  "hakai": 150.0,
+  "hakaiMax": 300.0,
+  "hakaiMaxLv": "TR5",
+  "effect": "全 飛翔30 不屈1 覇道 撤退　確率 50% / 全攻防 760%上昇+破壊 150%上昇(回復速度+500%)",
+  "holders": [
+   {
+    "name": "徳川家康（10）【覇】",
+    "no": "1263",
+    "slot": "移植不可",
+    "page": "characters.html"
+   }
+  ]
+ },
+ {
+  "name": "千里必勝ノ神算",
+  "rank": "SS",
+  "rate": 42,
+  "target": "全 覇道",
+  "hakai": 150.0,
+  "hakaiMax": 300.0,
+  "hakaiMaxLv": "TR5",
+  "effect": "全 覇道　確率 42% / 攻撃 1010%上昇+防御 1010%上昇+破壊 150%上昇",
+  "holders": [
+   {
+    "name": "徳川家康（11）【覇】",
+    "no": "1288",
+    "slot": "A・B",
+    "page": "characters.html"
+   },
+   {
+    "name": "武田信玄（6）",
+    "no": "1290",
+    "slot": "C",
+    "page": "characters.html"
+   },
+   {
+    "name": "毛利元就（5）",
+    "no": "1293",
+    "slot": "C・S1",
+    "page": "characters.html"
+   },
+   {
+    "name": "島津義弘（4）",
+    "no": "1294",
+    "slot": "C",
+    "page": "characters.html"
+   },
+   {
+    "name": "大友宗麟（5）",
+    "no": "1295",
+    "slot": "S1",
+    "page": "characters.html"
+   },
+   {
+    "name": "真田昌幸（4）",
+    "no": "1304",
+    "slot": "B",
+    "page": "characters.html"
+   },
+   {
+    "name": "大内義隆（2）",
+    "no": "1314",
+    "slot": "B",
+    "page": "characters.html"
+   },
+   {
+    "name": "尼子経久（4）",
+    "no": "1316",
+    "slot": "A",
+    "page": "characters.html"
+   },
+   {
+    "name": "世良田二郎三郎",
+    "no": "10065",
+    "slot": "A・B",
+    "page": "characters.html"
+   },
+   {
+    "name": "長宗我部元親-復刻-（6）",
+    "no": "10069",
+    "slot": "A",
+    "page": "characters.html"
+   },
+   {
+    "name": "大内義隆",
+    "no": "31314",
+    "slot": "B",
+    "page": "characters-parallel.html"
+   },
+   {
+    "name": "尼子経久",
+    "no": "31316",
+    "slot": "A",
+    "page": "characters-parallel.html"
+   },
+   {
+    "name": "鍋島直茂（2）",
+    "no": "2495",
+    "slot": "C",
+    "page": "characters-kyoku-ps.html"
+   },
+   {
+    "name": "蜂須賀家政（2）",
+    "no": "7402",
+    "slot": "B",
+    "page": "characters-kyoku-ps.html"
+   },
+   {
+    "name": "加藤嘉明（2）",
+    "no": "7405",
+    "slot": "C",
+    "page": "characters-kyoku-ps.html"
+   },
+   {
+    "name": "徳川家康【覇】",
+    "no": "31288",
+    "slot": "A・B",
+    "page": "characters-parallel.html"
+   },
+   {
+    "name": "武田信玄",
+    "no": "31290",
+    "slot": "C",
+    "page": "characters-parallel.html"
+   },
+   {
+    "name": "毛利元就",
+    "no": "31293",
+    "slot": "C・S1",
+    "page": "characters-parallel.html"
+   },
+   {
+    "name": "島津義弘",
+    "no": "31294",
+    "slot": "C",
+    "page": "characters-parallel.html"
+   },
+   {
+    "name": "大友宗麟",
+    "no": "31295",
+    "slot": "S1",
+    "page": "characters-parallel.html"
+   },
+   {
+    "name": "真田昌幸",
+    "no": "31304",
+    "slot": "B",
+    "page": "characters-parallel.html"
+   }
+  ]
+ },
+ {
+  "name": "旋龍突渦",
+  "rank": "S",
+  "rate": 55,
+  "target": "全",
+  "hakai": 150.0,
+  "hakaiMax": 250.0,
+  "hakaiMaxLv": "TR5",
+  "effect": "全　確率 55% / 攻撃 450%上昇+破壊 150%上昇(騎鉄速度+2破壊+2・部隊枠から外れる時HP最大60%回復)",
+  "holders": [
+   {
+    "name": "伊達藤次郎",
+    "no": "2600",
+    "slot": "移植不可",
+    "page": "characters-kyoku-ps.html"
+   }
+  ]
+ },
+ {
+  "name": "梵天浄界",
+  "rank": "SSS",
+  "rate": 60,
+  "target": "全",
+  "hakai": 150.0,
+  "hakaiMax": 250.0,
+  "hakaiMaxLv": "TR5",
+  "effect": "全　確率 60% / 防御 50%上昇+破壊 150%上昇(10×防御参加武将数(280人)=2800%を防御効果に加算)",
+  "holders": [
+   {
+    "name": "豊臣秀吉（8）【覇】",
+    "no": "1287",
+    "slot": "S1",
+    "page": "characters.html"
+   },
+   {
+    "name": "長宗我部元親（7）",
+    "no": "1289",
+    "slot": "S1",
+    "page": "characters.html"
+   },
+   {
+    "name": "石田三成（7）【覇】",
+    "no": "1299",
+    "slot": "C",
+    "page": "characters.html"
+   },
+   {
+    "name": "津軽為信",
+    "no": "1309",
+    "slot": "C",
+    "page": "characters.html"
+   },
+   {
+    "name": "大内義隆（2）",
+    "no": "1314",
+    "slot": "C",
+    "page": "characters.html"
+   },
+   {
+    "name": "南光坊天海",
+    "no": "10063",
+    "slot": "C",
+    "page": "characters.html"
+   },
+   {
+    "name": "相楽左之助",
+    "no": "10067",
+    "slot": "C",
+    "page": "characters.html"
+   },
+   {
+    "name": "最上義光-復刻-（6）【覇】",
+    "no": "10076",
+    "slot": "S1",
+    "page": "characters.html"
+   },
+   {
+    "name": "大内義隆",
+    "no": "31314",
+    "slot": "C",
+    "page": "characters-parallel.html"
+   },
+   {
+    "name": "豊臣秀吉【覇】",
+    "no": "31287",
+    "slot": "S1",
+    "page": "characters-parallel.html"
+   },
+   {
+    "name": "長宗我部元親",
+    "no": "31289",
+    "slot": "S1",
+    "page": "characters-parallel.html"
+   },
+   {
+    "name": "石田三成【覇】",
+    "no": "31299",
+    "slot": "C",
+    "page": "characters-parallel.html"
+   },
+   {
+    "name": "津軽為信",
+    "no": "31309",
+    "slot": "C",
+    "page": "characters-parallel.html"
+   }
+  ]
+ },
+ {
+  "name": "天限ノ麒麟",
+  "rank": "S",
+  "rate": 45,
+  "target": "槍・馬・器・焙　兵站",
+  "hakai": 150.0,
+  "hakaiMax": 200.0,
+  "hakaiMaxLv": "TR5",
+  "effect": "槍・馬・器・焙 兵站　確率 45% / 防御 150%上昇+破壊 150%上昇(6.5%×防御参加武将数(280人)=1820.0%加算)",
+  "holders": [
+   {
+    "name": "蒲生氏郷（2）",
+    "no": "1265",
+    "slot": "A・B・C",
+    "page": "characters.html"
+   }
+  ]
+ },
+ {
+  "name": "神羅聖域",
+  "rank": "SS",
+  "rate": 40,
+  "target": "全 覇道",
+  "hakai": 150.0,
+  "hakaiMax": 200.0,
+  "hakaiMaxLv": "TR5",
+  "effect": "全 覇道　確率 40% / 攻撃 900%上昇+防御 900%上昇+破壊 150%上昇",
+  "holders": [
+   {
+    "name": "直江兼続（4）",
+    "no": "1266",
+    "slot": "S1",
+    "page": "characters.html"
+   },
+   {
+    "name": "佐竹義宣（2）",
+    "no": "1267",
+    "slot": "S1",
+    "page": "characters.html"
+   },
+   {
+    "name": "豊臣秀次",
+    "no": "1272",
+    "slot": "S1",
+    "page": "characters.html"
+   },
+   {
+    "name": "豊臣秀吉（7）【覇】",
+    "no": "1274",
+    "slot": "A",
+    "page": "characters.html"
+   },
+   {
+    "name": "結城秀康",
+    "no": "1276",
+    "slot": "B",
+    "page": "characters.html"
+   },
+   {
+    "name": "武田信玄（6）",
+    "no": "1290",
+    "slot": "B・S2",
+    "page": "characters.html"
+   },
+   {
+    "name": "北条早雲（3）",
+    "no": "1296",
+    "slot": "A・S2",
+    "page": "characters.html"
+   },
+   {
+    "name": "大谷吉継（3）【覇】",
+    "no": "1300",
+    "slot": "S2",
+    "page": "characters.html"
+   },
+   {
+    "name": "織田信秀（3）【覇】",
+    "no": "1310",
+    "slot": "S2",
+    "page": "characters.html"
+   },
+   {
+    "name": "志々雄真実",
+    "no": "10053",
+    "slot": "C",
+    "page": "characters.html"
+   },
+   {
+    "name": "毛利輝元-復刻-（6）【覇】",
+    "no": "10075",
+    "slot": "S2",
+    "page": "characters.html"
+   },
+   {
+    "name": "織田信秀【覇】",
+    "no": "31310",
+    "slot": "S2",
+    "page": "characters-parallel.html"
+   },
+   {
+    "name": "鍋島直茂（2）",
+    "no": "2495",
+    "slot": "S2",
+    "page": "characters-kyoku-ps.html"
+   },
+   {
+    "name": "ガーネット",
+    "no": "2623",
+    "slot": "B",
+    "page": "characters-kyoku-ps.html"
+   },
+   {
+    "name": "ビビ",
+    "no": "2624",
+    "slot": "A",
+    "page": "characters-kyoku-ps.html"
+   },
+   {
+    "name": "甲斐親宣",
+    "no": "2834",
+    "slot": "S1",
+    "page": "characters-kyoku-ps.html"
+   },
+   {
+    "name": "伊賀崎道順",
+    "no": "2839",
+    "slot": "S1",
+    "page": "characters-kyoku-ps.html"
+   },
+   {
+    "name": "竹林院（2）",
+    "no": "2843",
+    "slot": "C",
+    "page": "characters-kyoku-ps.html"
+   },
+   {
+    "name": "山田長政",
+    "no": "2844",
+    "slot": "B・C",
+    "page": "characters-kyoku-ps.html"
+   },
+   {
+    "name": "藤林長門守（2）",
+    "no": "2845",
+    "slot": "A",
+    "page": "characters-kyoku-ps.html"
+   },
+   {
+    "name": "鳥居元忠",
+    "no": "2847",
+    "slot": "S2",
+    "page": "characters-kyoku-ps.html"
+   },
+   {
+    "name": "鶴姫（2）",
+    "no": "2852",
+    "slot": "B",
+    "page": "characters-kyoku-ps.html"
+   },
+   {
+    "name": "蒲生氏郷（4）",
+    "no": "7403",
+    "slot": "B",
+    "page": "characters-kyoku-ps.html"
+   },
+   {
+    "name": "武田信玄",
+    "no": "31290",
+    "slot": "B・S2",
+    "page": "characters-parallel.html"
+   },
+   {
+    "name": "北条早雲",
+    "no": "31296",
+    "slot": "A・S2",
+    "page": "characters-parallel.html"
+   },
+   {
+    "name": "大谷吉継【覇】",
+    "no": "31300",
+    "slot": "S2",
+    "page": "characters-parallel.html"
+   }
+  ]
+ },
+ {
+  "name": "城壁の護り",
+  "rank": "S",
+  "rate": 100,
+  "target": "全",
+  "hakai": 150.0,
+  "hakaiMax": 150.0,
+  "hakaiMaxLv": "LV10",
+  "effect": "全　確率 100% / 防御 400%上昇+破壊 150%上昇",
+  "holders": [
+   {
+    "name": "難攻不落の天守",
+    "no": "2589",
+    "slot": "移植不可",
+    "page": "characters-kyoku-ps.html"
+   }
+  ]
+ },
+ {
+  "name": "天綾の誓約",
+  "rank": "SS",
+  "rate": 60,
+  "target": "全",
+  "hakai": 150.0,
+  "hakaiMax": 150.0,
+  "hakaiMaxLv": "LV10",
+  "effect": "全　確率 60% / 攻撃 99.9%上昇 防御 99.9%上昇 破壊 150%上昇",
+  "holders": [
+   {
+    "name": "源五郎",
+    "no": "1812",
+    "slot": "C",
+    "page": "characters-do.html"
+   },
+   {
+    "name": "虎之助",
+    "no": "1813",
+    "slot": "C",
+    "page": "characters-do.html"
+   },
+   {
+    "name": "弥三郎",
+    "no": "1814",
+    "slot": "C",
+    "page": "characters-do.html"
+   },
+   {
+    "name": "飯田覚兵衛",
+    "no": "2452",
+    "slot": "C",
+    "page": "characters-kyoku-ps.html"
+   },
+   {
+    "name": "難攻不落の天守",
+    "no": "2589",
+    "slot": "A",
+    "page": "characters-kyoku-ps.html"
+   }
+  ]
+ },
+ {
+  "name": "百戦百勝脚",
+  "rank": "S",
+  "rate": 29,
+  "target": "弓・砲・器",
+  "hakai": 150.0,
+  "hakaiMax": 150.0,
+  "hakaiMaxLv": "LV10",
+  "effect": "弓・砲・器　確率 29% / 防御 1000%上昇+破壊 150%上昇",
+  "holders": [
+   {
+    "name": "ラーメンマン",
+    "no": "2637",
+    "slot": "B",
+    "page": "characters-kyoku-ps.html"
+   }
+  ]
+ },
+ {
+  "name": "破邪後輝",
+  "rank": "SS",
+  "rate": 100,
+  "target": "全 覇道",
+  "hakai": 150.0,
+  "hakaiMax": 150.0,
+  "hakaiMaxLv": "LV10",
+  "effect": "全 覇道　確率 100% / 攻撃 770%上昇+速度 150%上昇+破壊 150%上昇(TR以降のデータなし、LV10が最大値)",
+  "holders": [
+   {
+    "name": "織田信長（7）【覇】",
+    "no": "1250",
+    "slot": "S1",
+    "page": "characters.html"
+   },
+   {
+    "name": "毛利輝元（6）【覇】",
+    "no": "1251",
+    "slot": "S1",
+    "page": "characters.html"
+   },
+   {
+    "name": "武田勝頼（4）",
+    "no": "1252",
+    "slot": "S1",
+    "page": "characters.html"
+   },
+   {
+    "name": "徳川家康（10）【覇】",
+    "no": "1263",
+    "slot": "B",
+    "page": "characters.html"
+   },
+   {
+    "name": "真田信繁（2）",
+    "no": "1268",
+    "slot": "S1",
+    "page": "characters.html"
+   },
+   {
+    "name": "豊臣秀吉（7）【覇】",
+    "no": "1274",
+    "slot": "S2",
+    "page": "characters.html"
+   },
+   {
+    "name": "結城秀康",
+    "no": "1276",
+    "slot": "A",
+    "page": "characters.html"
+   },
+   {
+    "name": "志々雄真実",
+    "no": "10053",
+    "slot": "A",
+    "page": "characters.html"
+   },
+   {
+    "name": "小幡信貞",
+    "no": "2486",
+    "slot": "S1",
+    "page": "characters-kyoku-ps.html"
+   },
+   {
+    "name": "北信景",
+    "no": "2488",
+    "slot": "S2",
+    "page": "characters-kyoku-ps.html"
+   },
+   {
+    "name": "高荷恵",
+    "no": "2610",
+    "slot": "S1",
+    "page": "characters-kyoku-ps.html"
+   },
+   {
+    "name": "エーコ",
+    "no": "2626",
+    "slot": "B",
+    "page": "characters-kyoku-ps.html"
+   },
+   {
+    "name": "キン肉マン",
+    "no": "2630",
+    "slot": "S2",
+    "page": "characters-kyoku-ps.html"
+   },
+   {
+    "name": "藤林長門守（2）",
+    "no": "2845",
+    "slot": "S2",
+    "page": "characters-kyoku-ps.html"
+   }
+  ]
+ },
+ {
+  "name": "純金の冠",
+  "rank": "A",
+  "rate": 100,
+  "target": "全",
+  "hakai": 150.0,
+  "hakaiMax": 150.0,
+  "hakaiMaxLv": "LV10",
+  "effect": "全　確率 100% / 防御 120%上昇+破壊 150%上昇",
+  "holders": [
+   {
+    "name": "安土城",
+    "no": "2560",
+    "slot": "移植不可",
+    "page": "characters-kyoku-ps.html"
+   }
+  ]
+ },
+ {
+  "name": "Ｈ・ミキサー",
+  "rank": "S",
+  "rate": 29,
+  "target": "馬・砲・器",
+  "hakai": 150.0,
+  "hakaiMax": 150.0,
+  "hakaiMaxLv": "LV10",
+  "effect": "馬・砲・器　確率 29% / 攻撃 1000%上昇+破壊 150%上昇",
+  "holders": [
+   {
+    "name": "バッファローマン",
+    "no": "2632",
+    "slot": "B",
+    "page": "characters-kyoku-ps.html"
+   }
+  ]
+ },
+ {
+  "name": "悪一文字",
+  "rank": "S",
+  "rate": 28,
+  "target": "全",
+  "hakai": 120.0,
+  "hakaiMax": 850.0,
+  "hakaiMaxLv": "TR5",
+  "effect": "全　確率 28% / 破壊 120%上昇(不屈1・自身を除く部隊内武将の初期スキルに不屈1付与・模倣不可・自部隊内重複不可)",
+  "holders": [
+   {
+    "name": "相楽左之助",
+    "no": "2609",
+    "slot": "移植不可",
+    "page": "characters-kyoku-ps.html"
+   }
+  ]
+ },
+ {
+  "name": "夜叉美濃",
+  "rank": "A",
+  "rate": 50,
+  "target": "槍・弓・器・鉄 兵站",
+  "hakai": 120.0,
+  "hakaiMax": 120.0,
+  "hakaiMaxLv": "LV10",
+  "effect": "槍・弓・器・鉄 兵站　確率 50% / 防御 410%上昇+破壊 120%上昇",
+  "holders": [
+   {
+    "name": "原虎胤",
+    "no": "2385",
+    "slot": "A・B",
+    "page": "characters-kyoku.html"
+   }
+  ]
+ },
+ {
+  "name": "我流大蛇",
+  "rank": "A",
+  "rate": 100,
+  "target": "槍・砲・器",
+  "hakai": 120.0,
+  "hakaiMax": 120.0,
+  "hakaiMaxLv": "LV10",
+  "effect": "槍・砲・器　確率 100% / 攻撃 400%上昇+破壊 120%上昇+速度 120%上昇",
+  "holders": [
+   {
+    "name": "沢下条張",
+    "no": "2613",
+    "slot": "A・B・C",
+    "page": "characters-kyoku-ps.html"
+   }
+  ]
+ },
+ {
+  "name": "日輪ノ守護者",
+  "rank": "A",
+  "rate": 65,
+  "target": "弓・砲・器",
+  "hakai": 110.0,
+  "hakaiMax": 110.0,
+  "hakaiMaxLv": "LV10",
+  "effect": "弓・砲・器　確率 65% / 攻撃 340%上昇+防御 340%上昇+破壊 110%上昇",
+  "holders": [
+   {
+    "name": "森可成（2）",
+    "no": "2375",
+    "slot": "S2",
+    "page": "characters-kyoku.html"
+   },
+   {
+    "name": "佐久間信盛",
+    "no": "2397",
+    "slot": "A",
+    "page": "characters-kyoku.html"
+   },
+   {
+    "name": "豊臣秀長",
+    "no": "2365",
+    "slot": "A・B",
+    "page": "characters-kyoku.html"
+   }
+  ]
+ },
+ {
+  "name": "鉄国",
+  "rank": "A",
+  "rate": 40,
+  "target": "弓・砲・器",
+  "hakai": 110.0,
+  "hakaiMax": 110.0,
+  "hakaiMaxLv": "LV10",
+  "effect": "弓・砲・器　確率 40% / 攻撃 440%上昇+防御 440%上昇+破壊 110%上昇",
+  "holders": [
+   {
+    "name": "土橋平次",
+    "no": "7010",
+    "slot": "C・S1",
+    "page": "characters-kyoku.html"
+   },
+   {
+    "name": "北条氏照",
+    "no": "7021",
+    "slot": "B",
+    "page": "characters-kyoku.html"
+   }
+  ]
+ },
+ {
+  "name": "おかこい山",
+  "rank": "A",
+  "rate": null,
+  "target": "砲・器",
+  "hakai": 100.0,
+  "hakaiMax": 100.0,
+  "hakaiMaxLv": "LV10",
+  "effect": "砲・器　確率 - / 防御 130%上昇+破壊 100%上昇",
+  "holders": [
+   {
+    "name": "中津城",
+    "no": "2561",
+    "slot": "移植不可",
+    "page": "characters-kyoku-ps.html"
+   }
+  ]
+ },
+ {
+  "name": "タワーブリッジ",
+  "rank": "C",
+  "rate": 17,
+  "target": "全",
+  "hakai": 100.0,
+  "hakaiMax": 100.0,
+  "hakaiMaxLv": "LV10",
+  "effect": "全　確率 17% / 攻撃 350%上昇 / 破壊 100%上昇",
+  "holders": [
+   {
+    "name": "ロビンマスク",
+    "no": "3652",
+    "slot": "B・C・S1",
+    "page": "characters-toku.html"
+   }
+  ]
+ },
+ {
+  "name": "不撓ノ仁将",
+  "rank": "A",
+  "rate": 35,
+  "target": "槍・砲・器",
+  "hakai": 100.0,
+  "hakaiMax": 100.0,
+  "hakaiMaxLv": "LV10",
+  "effect": "槍・砲・器　確率 35% / 防御 70%上昇+破壊 100%上昇(1.3%×防御参加武将数(280人)=364.0%を防御効果に加算・模倣不可)",
+  "holders": [
+   {
+    "name": "毛利隆元",
+    "no": "2357",
+    "slot": "移植不可",
+    "page": "characters-kyoku.html"
+   },
+   {
+    "name": "浅井亮政（4）",
+    "no": "2361",
+    "slot": "C",
+    "page": "characters-kyoku.html"
+   }
+  ]
+ },
+ {
+  "name": "天下第一",
+  "rank": "A",
+  "rate": null,
+  "target": "砲・器",
+  "hakai": 100.0,
+  "hakaiMax": 100.0,
+  "hakaiMaxLv": "LV10",
+  "effect": "砲・器　確率 - / 防御 130%上昇+破壊 100%上昇",
+  "holders": [
+   {
+    "name": "大坂城",
+    "no": "2564",
+    "slot": "移植不可",
+    "page": "characters-kyoku-ps.html"
+   }
+  ]
+ },
+ {
+  "name": "天謀爆裂ノ調",
+  "rank": "S",
+  "rate": 47,
+  "target": "砲・器",
+  "hakai": 100.0,
+  "hakaiMax": 100.0,
+  "hakaiMaxLv": "LV10",
+  "effect": "砲・器　確率 47% / 攻撃 88%上昇+破壊 100%上昇",
+  "holders": [
+   {
+    "name": "松永久秀（2）",
+    "no": "1150",
+    "slot": "移植不可",
+    "page": "characters.html"
+   }
+  ]
+ },
+ {
+  "name": "太鼓門",
+  "rank": "A",
+  "rate": null,
+  "target": "砲・器",
+  "hakai": 100.0,
+  "hakaiMax": 100.0,
+  "hakaiMaxLv": "LV10",
+  "effect": "砲・器　確率 - / 防御 130%上昇+破壊 100%上昇",
+  "holders": [
+   {
+    "name": "会津若松城",
+    "no": "2562",
+    "slot": "移植不可",
+    "page": "characters-kyoku-ps.html"
+   }
+  ]
+ },
+ {
+  "name": "秘伝武者返し",
+  "rank": "A",
+  "rate": null,
+  "target": "砲・器",
+  "hakai": 100.0,
+  "hakaiMax": 100.0,
+  "hakaiMaxLv": "LV10",
+  "effect": "砲・器　確率 - / 防御 130%上昇+破壊 100%上昇",
+  "holders": [
+   {
+    "name": "熊本城",
+    "no": "2563",
+    "slot": "移植不可",
+    "page": "characters-kyoku-ps.html"
+   }
+  ]
+ },
+ {
+  "name": "覇立槍",
+  "rank": "A",
+  "rate": 60,
+  "target": "槍・砲・器",
+  "hakai": 100.0,
+  "hakaiMax": 100.0,
+  "hakaiMaxLv": "LV10",
+  "effect": "槍・砲・器　確率 60% / 攻撃 460%上昇+破壊 100%上昇",
+  "holders": [
+   {
+    "name": "森可成（2）",
+    "no": "2375",
+    "slot": "A・B・C",
+    "page": "characters-kyoku.html"
+   },
+   {
+    "name": "可児才蔵（2）",
+    "no": "7019",
+    "slot": "A",
+    "page": "characters-kyoku.html"
+   }
+  ]
+ },
+ {
+  "name": "炎統極刃",
+  "rank": "SSS",
+  "rate": 100,
+  "target": "全",
+  "hakai": null,
+  "hakaiMax": 350.0,
+  "hakaiMaxLv": "TR5",
+  "effect": "全　確率 100% / 攻撃 770%上昇(このスキルを持つ武将カードは追加・極限スキルの攻撃・破壊効果が2倍・模倣不可)",
+  "holders": [
+   {
+    "name": "志々雄真実",
+    "no": "10053",
+    "slot": "移植不可",
+    "page": "characters.html"
+   }
+  ]
+ }
+];
+
+  function hkEscapeHtml(s){
+    return String(s === null || s === undefined ? '' : s)
+      .replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')
+      .replace(/"/g,'&quot;');
+  }
+
+  // スキルページのファイル名は空白を _ に置き換えてある(skills.html と同じ規則)
+  function hkPageName(n){
+    return encodeURIComponent(String(n).replace(/[ \u3000]/g, '_'));
+  }
+
+  let hkHideS2 = false;
+
+  function hkPct(v){ return (v === null || v === undefined) ? '-' : (v + '%'); }
+
+  function hkMatches(s, q){
+    if(!q) return true;
+    if(s.name.toLowerCase().indexOf(q) >= 0) return true;
+    return s.holders.some(function(h){
+      return h.name.toLowerCase().indexOf(q) >= 0 || h.no.indexOf(q) >= 0;
+    });
+  }
+
+  function hkRender(){
+    const box = document.getElementById('hkSearchBox');
+    const q = box ? box.value.trim().toLowerCase() : '';
+    const body = document.getElementById('hkList');
+    if(!body) return;
+    body.innerHTML = hakaiSkills.filter(function(s){ return hkMatches(s, q); }).map(function(s){
+      const hs = s.holders.filter(function(h){ return !(hkHideS2 && String(h.slot) === 'S2'); });
+      const who = hs.length ? hs.map(function(h){
+        return '<a href="' + h.page + '#' + encodeURIComponent(h.no) + '">'
+             + hkEscapeHtml(h.name) + '(' + hkEscapeHtml(h.slot) + ')</a>';
+      }).join('<br>') : '-';
+      const mx = (s.hakai !== null && s.hakaiMax === s.hakai)
+        ? '-' : (hkPct(s.hakaiMax) + '(' + s.hakaiMaxLv + ')');
+      return '<tr>'
+        + '<td><a href="skill/' + hkPageName(s.name) + '.html">' + hkEscapeHtml(s.name) + '</a></td>'
+        + '<td>' + hkEscapeHtml(s.rank) + '</td>'
+        + '<td>' + (s.rate === null || s.rate === undefined ? '-' : s.rate + '%') + '</td>'
+        + '<td>' + hkEscapeHtml(s.target) + '</td>'
+        + '<td class="cs-col-hakai">' + hkPct(s.hakai) + '</td>'
+        + '<td>' + mx + '</td>'
+        + '<td class="cs-col-effect">' + hkEscapeHtml(s.effect) + '</td>'
+        + '<td style="white-space:normal;">' + who + '</td>'
+        + '</tr>';
+    }).join('');
+  }
+
+  const hkBox = document.getElementById('hkSearchBox');
+  if(hkBox) hkBox.addEventListener('input', hkRender);
+  const hkTgl = document.getElementById('hkHideS2Toggle');
+  if(hkTgl) hkTgl.addEventListener('change', function(){ hkHideS2 = this.checked; hkRender(); });
+
+  hkRender();
+</script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="assets/js/comments-widget.js"></script>
+<script>renderCommentsWidget('pageComments', 'page:skills-hakai');</script>
+<script src="assets/js/site-sidebar.js"></script>
+</body>
+</html>

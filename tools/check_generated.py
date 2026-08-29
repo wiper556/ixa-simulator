@@ -69,8 +69,12 @@ def main():
         # ここで作り直すことで、次の2つが**どちらも**同じ1つの検査で止まる:
         #   ・data/ を直したのにページを再生成していない
         #   ・ページの配列を手で書き換えた(data/ から作り直すと消える)
-        for tool in ("build_data.py", "gen_detail_pages.py", "prerender.py"):
-            r = run([sys.executable, os.path.join("tools", tool)], cwd=wt)
+        # 2026-08-30: 破壊力一覧(skills-hakai.html)も data/skill/ から作る生成物。
+        # prerender より前に置く(prerender はこのページの表を事前描画するため)。
+        for tool in ("build_data.py", "gen_detail_pages.py",
+                     "build_hakai_page.py --write", "prerender.py"):
+            _a = tool.split()
+            r = run([sys.executable, os.path.join("tools", _a[0])] + _a[1:], cwd=wt)
             if r.returncode != 0:
                 print("[停止] %s が失敗した。" % tool)
                 print((r.stdout or "")[-800:])
