@@ -939,6 +939,58 @@ def main():
                     "%s の %s(%d件)の合計が %.4f%%。%s では %s は %.3f%%"
                     % (page, m.group(1), len(ws), sum(ws), kind, tier, want / 1000.0))
 
+    # S-24: 鍛錬(TR)の有無(2026-08-30、うぐさんの規則)
+    #
+    #   ・鍛錬が登場したのは **No.1263 が追加された28章から。**
+    #   ・**傑・特・上・序は現在まで鍛錬の追加が無い。**
+    #   ・28章以降でも鍛錬の無い武将は居るので、**そちらは何も言わない。**
+    #   ・古いカードでも後から鍛錬が付いたものが6枚ある(すべて天)。
+    #     天と極は章が古くても鍛錬を持ちうるので、ここでは鳴らさない。
+    #
+    # データもこの規則を裏付けている(27章は LV10 のみ、28章は LV10〜TR5)。
+    TANREN_FIRST_CH = 28
+    # レアリティは正本のディレクトリではなくページの配列から取る
+    # (この監査はページを読んでおり、ディレクトリの情報は持っていない)
+    no_tanren_no = {}
+    for _arr, _label in (("ketsuGenerals", "傑"), ("tokuGenerals", "特"),
+                         ("tokuSecretGenerals", "特シークレット"),
+                         ("ueGenerals", "上"), ("joGenerals", "序")):
+        for _x in D.get(_arr) or []:
+            no_tanren_no[str(_x.get("no"))] = _label
+
+    def _ch_num(c):
+        m = re.match(r"^(\d+)(?:-\d+)?章$", c or "")
+        return int(m.group(1)) if m else None
+
+    for g in all_g:
+        n = _ch_num(g.get("ch"))
+        rar = no_tanren_no.get(str(g.get("no")))
+        old = n is not None and n < TANREN_FIRST_CH
+        if not (rar or old):
+            continue
+        rows = g.get("trTable") or []
+        tr = [r for r in rows if str(r.get("level", "")).startswith("TR")]
+        real = [r for r in tr if (r.get("effect") or "").strip()]
+        lv = next((r for r in rows if r.get("level") == "LV10"), None)
+        txt = (lv.get("effect") or "") if lv else ""
+        if rar and real:
+            add("鍛錬の無いレアリティにTRがある", "HIGH",
+                "%s No.%s は %s で、%s は現在まで鍛錬の追加が無いのに TR に値がある(%s)"
+                % (g.get("name"), g.get("no"), rar, rar,
+                   "/".join(str(r.get("level")) for r in real)))
+        if tr and not real:
+            add("鍛錬が無いのに空のTR段がある", "HIGH",
+                "%s No.%s(%s)は鍛錬が無い%sなのに、値の入っていない TR の段を持つ(%s)。"
+                "段だけ残ると鍛錬があるように見える"
+                % (g.get("name"), g.get("no"), g.get("ch") or "章不明",
+                   ("レアリティ(%s)" % rar) if rar else "%d章より前" % TANREN_FIRST_CH,
+                   "/".join(str(r.get("level")) for r in tr)))
+        if lv and txt.strip() and not tr and "TRなし" not in txt and "TR以降" not in txt:
+            add("鍛錬なしと書けるのに書いていない", "MID",
+                "%s No.%s(%s)は%sなので鍛錬なしと言い切れるが、LV10 に「TRなし」が無い"
+                % (g.get("name"), g.get("no"), g.get("ch") or "章不明",
+                   ("鍛錬の追加が無い%s" % rar) if rar else "%d章より前" % TANREN_FIRST_CH))
+
     # F-07: effectShort の接頭辞の剥がし損ね
     for g in all_g:
         for row in g.get("synthesisTable") or []:
