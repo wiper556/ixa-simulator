@@ -19,13 +19,14 @@
   "2026-08-12作成。合成候補に出てくるS以上はページを作る規約(A-3)の未処理分。",
   "ixanary.com/skills/錘焔ノ藍帯 から取得。categoryLinksは9項目の判定が要るため付けていない。",
   "2026-08-13: A-3-12の逆方向リンク。武将のsynthesisTableでは1次がこのスキルに変化するのに、こちら側から元スキルを指していなかった。1次→2次の組100件を元スキルのownHiddenCandidateと突き合わせ、矛盾0件を確かめたうえで機械的に張った。",
-  "2026-08-15(黄丸化検証): 山中鹿介(2809)のsourceCharacters列挙を削除。synthesisTableのS2枠は錘焔ノ空帯[S]→錘焔ノ藍帯[SSS](skill≠afterSkill)であり、A-3-12によりここへ直接列挙すべきでない(grantedViaSkillsで錘焔ノ空帯を参照済み)。山中鹿介自身はdata/skill/錘焔ノ空帯.jsonのsourceCharactersに記載。"
+  "2026-08-15(黄丸化検証): 山中鹿介(2809)のsourceCharacters列挙を削除。synthesisTableのS2枠は錘焔ノ空帯[S]→錘焔ノ藍帯[SSS](skill≠afterSkill)であり、A-3-12によりここへ直接列挙すべきでない(grantedViaSkillsで錘焔ノ空帯を参照済み)。山中鹿介自身はdata/skill/錘焔ノ空帯.jsonのsourceCharactersに記載。",
+  "2026-08-30: 表記を直した(読点1個を外した)。**数値は一切変えていない。** 読点は F-01(読点なし)に合わせ、節の切れ目は消して並列は「・」にした(武将側の skillDetail が既にその書き方)。"
  ],
  "trTable": [
   {
    "level": "LV10",
    "points": "-",
-   "effect": "全　確率 100% / 防御 200%上昇 本丸防御陣形に配属時、この武将の編成コストを-1.5する(模倣不可)"
+   "effect": "全　確率 100% / 防御 200%上昇 本丸防御陣形に配属時この武将の編成コストを-1.5する(模倣不可)"
   }
  ],
  "sourceCharacters": [

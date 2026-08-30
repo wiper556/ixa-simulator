@@ -50,11 +50,12 @@
   {
    "level": "LV10",
    "points": "-",
-   "effect": "部隊長　確率 80% / 効果 部隊長の初期スキルを模倣(戦闘スキルのみ、TRなし)"
+   "effect": "部隊長　確率 80% / 効果 部隊長の初期スキルを模倣(戦闘スキルのみ・TRなし)"
   }
  ],
  "notes": [
   "ユーザー明示依頼によりA/Bランクだが新規作成。ixanary.com(/skills/転歌/)生HTML確認(確率LV1+25%→LV10+80%/対象部隊長/戦闘スキルのみ模倣・倍率補正なし)+attack-simulator.htmlのspecialSkills記載と一致。",
-  "今川氏真(No.2358)の固有スキル。characters-kyoku.html synthesisTableでA/Bスロットに自己参照で掲載(45do.info+ixagno.blog.fc2.com blog-entry-9417確認済み)、斎藤利三(No.2376)のCスロットにも掲載(blog-entry-9905確認済み)。"
+  "今川氏真(No.2358)の固有スキル。characters-kyoku.html synthesisTableでA/Bスロットに自己参照で掲載(45do.info+ixagno.blog.fc2.com blog-entry-9417確認済み)、斎藤利三(No.2376)のCスロットにも掲載(blog-entry-9905確認済み)。",
+  "2026-08-30: 表記を直した(読点1個を外した)。**数値は一切変えていない。** 読点は F-01(読点なし)に合わせ、節の切れ目は消して並列は「・」にした(武将側の skillDetail が既にその書き方)。"
  ]
 }
