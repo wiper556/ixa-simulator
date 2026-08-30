@@ -61,13 +61,14 @@
   "ixanary.com(skills/木遁封魔)から登録(2026-08-14)。S以上のスキルはページを作る決まり(S-01)にもとづく新規作成。",
   "対象・確率・効果文はixanaryの表記をうちの書式に直したもの。categoryLinksとsourceCharactersは各武将の登録時に追記する。",
   "ownHiddenCandidateは、このスキルが1次候補として載っている枠(2807 霧隠才蔵 C枠)の2次候補から(S-08)。",
-  "2026-08-15: targetフィールドに効果文が丸ごと流し込まれていたのを、生HTML(ixanary.com/skills/木遁封魔、tools/research_cache/0faf885c48df94d5.txt)で裏取りして書き直した(明神ノ鈴音.jsonを手本)。不屈タグはixanaryの表記に無いためcategoryLinksに追加していない。"
+  "2026-08-15: targetフィールドに効果文が丸ごと流し込まれていたのを、生HTML(ixanary.com/skills/木遁封魔、tools/research_cache/0faf885c48df94d5.txt)で裏取りして書き直した(明神ノ鈴音.jsonを手本)。不屈タグはixanaryの表記に無いためcategoryLinksに追加していない。",
+  "2026-08-30: 鍛錬(TR)が無いことを明記した。うぐさんの規則で**鍛錬が登場したのは No.1263 が追加された28章から**であり、27章のカードで、鍛錬が登場した28章より前。データもそれを裏付けており、27章のカードは LV10 のみ・28章のカードは LV10〜TR5 を持つ。**28章以降で鍛錬の無い武将も居るため、そちらには何も書いていない。**持ち主5体すべてがその条件に当てはまる。"
  ],
  "trTable": [
   {
    "level": "LV10",
    "points": "-",
-   "effect": "部隊長　確率 58% / 部隊長の初期スキルを1.1倍で模倣"
+   "effect": "部隊長　確率 58% / 部隊長の初期スキルを1.1倍で模倣(TRなし)"
   }
  ],
  "ownHiddenCandidate": {

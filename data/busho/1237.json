@@ -29,7 +29,7 @@
   {
    "level": "LV10",
    "points": "-",
-   "effect": "全　確率 45% / 攻撃 165%上昇(6部隊以下で2倍)"
+   "effect": "全　確率 45% / 攻撃 165%上昇(6部隊以下で2倍・TRなし)"
   }
  ],
  "synthesisTable": [
@@ -93,7 +93,8 @@
  ],
  "notes": [
   "synthesisTable: 45do.info生HTML(skiladd_wrap)+ixanary.com(国盗ノ懸槍スキルページの合成テーブル)で2ソース一致確認済み(2026-08-02)",
-  "2026-08-16黄丸化再検証: ixanary.com(cards/1237, skills/国盗ノ懸槍)+ixawiki.com(BushoCard/1237山内一豊)の2ソースでsynthesisTable5枠(A国盗ノ懸槍S→遠呂智ノ閃光SS/B開闢ノ逆鉾SS自己参照/C火之迦具土神SS自己参照/S1遠呂智ノ閃光SS自己参照/S2布都御魂ノ鬨SS自己参照)が完全一致。基礎値(1210/1060/650、成長+65/+46/+3、指揮4090)・rankGrades(槍SS/弓A/馬A/器A、カード画像バッジ拡大確認)もixanary生HTMLと一致。data/skill/国盗ノ懸槍(自己ページ)・開闢ノ逆鉾・火之迦具土神・遠呂智ノ閃光・布都御魂ノ鬨の各JSONのsourceCharactersに1237が正しいslotで既に記載済み。"
+  "2026-08-16黄丸化再検証: ixanary.com(cards/1237, skills/国盗ノ懸槍)+ixawiki.com(BushoCard/1237山内一豊)の2ソースでsynthesisTable5枠(A国盗ノ懸槍S→遠呂智ノ閃光SS/B開闢ノ逆鉾SS自己参照/C火之迦具土神SS自己参照/S1遠呂智ノ閃光SS自己参照/S2布都御魂ノ鬨SS自己参照)が完全一致。基礎値(1210/1060/650、成長+65/+46/+3、指揮4090)・rankGrades(槍SS/弓A/馬A/器A、カード画像バッジ拡大確認)もixanary生HTMLと一致。data/skill/国盗ノ懸槍(自己ページ)・開闢ノ逆鉾・火之迦具土神・遠呂智ノ閃光・布都御魂ノ鬨の各JSONのsourceCharactersに1237が正しいslotで既に記載済み。",
+  "2026-08-30: 鍛錬(TR)が無いことを明記した。うぐさんの規則で**鍛錬が登場したのは No.1263 が追加された28章から**であり、25章のカードで、鍛錬が登場した28章より前。データもそれを裏付けており、27章のカードは LV10 のみ・28章のカードは LV10〜TR5 を持つ。**28章以降で鍛錬の無い武将も居るため、そちらには何も書いていない。**"
  ],
  "reviewedOk": false,
  "wikiOldestComment": "2023-02-03",
