@@ -692,8 +692,11 @@ def main():
     body = D["ixaDataSrc"][D["ixaDataSrc"].index("const generalGrowthDB"):]
     for m in re.finditer(r"^  \{ name:'([^']+)', no:'(\d+)'(.*)$", body, re.M):
         no = m.group(2)
-        if len(no) == 5 and no[0] in "34":   # パラレルはコスト概念なし
-            continue
+        # 2026-08-30: ここは長らく「パラレルはコスト概念なし」として5桁の3/4始まりを
+        # 飛ばしていたが、**それは誤り。** パラレルは元カードと同じコストを持ち、
+        # 正本(data/busho-parallel/)にも一覧ページにもコストが入っている。
+        # 飛ばしていたせいで、シミュレーターのパラレル30件がコスト未設定のまま
+        # 「?」と表示され続けていた(うぐさん指摘)。飛ばさずに見る。
         if not re.search(r"\bcost:\s*[\d.]+", m.group(3)):
             add("シミュのcost未設定", "MID", "%s No.%s に cost が無い" % (m.group(1), no))
 
