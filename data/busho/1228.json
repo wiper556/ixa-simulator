@@ -35,7 +35,7 @@
   {
    "level": "LV10",
    "points": "-",
-   "effect": "全　確率 100% / 攻撃 184%上昇+防御 184%上昇(卓越追加確率+25%)"
+   "effect": "全　確率 100% / 攻撃 184%上昇+防御 184%上昇(卓越追加確率+25%・TRなし)"
   }
  ],
  "synthesisTable": [
@@ -103,7 +103,8 @@
  ],
  "notes": [
   "45do.info(生HTML skiladd_wrap)+ameameixa.com(スキルテーブル)の2ソース照合済み、両者一致",
-  "2026-08-16黄丸化再検証: ixanary.com(cards/1228, skills/閻魔ノ裁き)+ixawiki.com(BushoCard/1228直江兼続)の2ソースでsynthesisTable5枠(A・B閻魔ノ裁きS→月詠ノ覇威SS/C建御雷神ノ閃光SS→八幡神ノ威光SSS/S1月詠ノ覇威SS自己参照/S2開闢ノ逆鉾SS自己参照)が完全一致。基礎値(1200/1080/650、成長+66/+48/+3、指揮4550)・rankGrades(槍S/弓A/馬S/器A、カード画像バッジ拡大確認)もixanary生HTMLと一致。data/skill/閻魔ノ裁き(自己ページ)・建御雷神ノ閃光・月詠ノ覇威・開闢ノ逆鉾の各JSONのsourceCharactersに1228が正しいslotで既に記載済み。skillDetail及び閻魔ノ裁き.jsonの「TR1〜TR5未確認」を追加ソースで確認、ixanary+ixawikiの2ソースでTR区分自体が存在しないことを確認し表記を削除。"
+  "2026-08-16黄丸化再検証: ixanary.com(cards/1228, skills/閻魔ノ裁き)+ixawiki.com(BushoCard/1228直江兼続)の2ソースでsynthesisTable5枠(A・B閻魔ノ裁きS→月詠ノ覇威SS/C建御雷神ノ閃光SS→八幡神ノ威光SSS/S1月詠ノ覇威SS自己参照/S2開闢ノ逆鉾SS自己参照)が完全一致。基礎値(1200/1080/650、成長+66/+48/+3、指揮4550)・rankGrades(槍S/弓A/馬S/器A、カード画像バッジ拡大確認)もixanary生HTMLと一致。data/skill/閻魔ノ裁き(自己ページ)・建御雷神ノ閃光・月詠ノ覇威・開闢ノ逆鉾の各JSONのsourceCharactersに1228が正しいslotで既に記載済み。skillDetail及び閻魔ノ裁き.jsonの「TR1〜TR5未確認」を追加ソースで確認、ixanary+ixawikiの2ソースでTR区分自体が存在しないことを確認し表記を削除。",
+  "2026-08-30: 鍛錬(TR)が無いことを明記した。うぐさんの規則で**鍛錬が登場したのは No.1263 が追加された28章から**であり、25章のカードで、鍛錬が登場した28章より前。データもそれを裏付けており、27章のカードは LV10 のみ・28章のカードは LV10〜TR5 を持つ。**28章以降で鍛錬の無い武将も居るため、そちらには何も書いていない。**"
  ],
  "reviewedOk": false,
  "wikiOldestComment": "2023-02-03",

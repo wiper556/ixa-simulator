@@ -36,7 +36,7 @@
   {
    "level": "LV10",
    "points": "-",
-   "effect": "槍・弓・砲・器 飛翔10　確率 64% / 攻撃 50%上昇(飛翔値合計×9%加算)"
+   "effect": "槍・弓・砲・器 飛翔10　確率 64% / 攻撃 50%上昇(飛翔値合計×9%加算・TRなし)"
   }
  ],
  "synthesisTable": [
@@ -102,7 +102,8 @@
  ],
  "notes": [
   "synthesisTable: 45do.info生HTML(skiladd_wrap)+ixanary.com(魔弾奏者スキルページの合成テーブル)で2ソース一致確認済み(2026-08-02)。星神闘覇はixanary.com単体ではSSS表記だが、45do.info(1256/1269両方の生HTML)+skills.html登録値のSSと2対1で一致するためSSを採用",
-  "黄丸化検証(2026-08-16): カード画像no1256_full.pngの4隅バッジ(槍A/馬A/弓A/器SS)を確認し一致。synthesisTableのA/B/C/S1/S2スロット構成はixanary.com(skills/魔弾奏者)+ixawiki.com(BushoCard/1256宇喜多直家)の2ソースで完全一致。星神闘覇のランクはixanary.comのみSSS表記だが、ixawiki.com(BushoCard/1256側の合成テーブル)+data/skill/星神闘覇.json(既存登録値)がSSで一致するためSSのまま維持(2対1でixanaryのSSS表記を採用せず)。開闢ノ逆鉾・星神闘覇・神光征軍のdata/skill側sourceCharactersに1256が正しいslotで記載済みを確認(逆引き済み)。TR段はLV10のみ(TRなし)。"
+  "黄丸化検証(2026-08-16): カード画像no1256_full.pngの4隅バッジ(槍A/馬A/弓A/器SS)を確認し一致。synthesisTableのA/B/C/S1/S2スロット構成はixanary.com(skills/魔弾奏者)+ixawiki.com(BushoCard/1256宇喜多直家)の2ソースで完全一致。星神闘覇のランクはixanary.comのみSSS表記だが、ixawiki.com(BushoCard/1256側の合成テーブル)+data/skill/星神闘覇.json(既存登録値)がSSで一致するためSSのまま維持(2対1でixanaryのSSS表記を採用せず)。開闢ノ逆鉾・星神闘覇・神光征軍のdata/skill側sourceCharactersに1256が正しいslotで記載済みを確認(逆引き済み)。TR段はLV10のみ(TRなし)。",
+  "2026-08-30: 鍛錬(TR)が無いことを明記した。うぐさんの規則で**鍛錬が登場したのは No.1263 が追加された28章から**であり、27章のカードで、鍛錬が登場した28章より前。データもそれを裏付けており、27章のカードは LV10 のみ・28章のカードは LV10〜TR5 を持つ。**28章以降で鍛錬の無い武将も居るため、そちらには何も書いていない。**"
  ],
  "wikiOldestComment": "2024-02-13",
  "wikiCommentCount": 22,

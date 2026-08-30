@@ -30,7 +30,7 @@
   {
    "level": "LV10",
    "points": "-",
-   "effect": "槍・馬・砲・器　確率 35% / 攻撃 敵軍総武将コスト×1.4%"
+   "effect": "槍・馬・砲・器　確率 35% / 攻撃 敵軍総武将コスト×1.4%(TRなし)"
   }
  ],
  "synthesisTable": [
@@ -96,7 +96,8 @@
  ],
  "notes": [
   "45do.info(生HTML skiladd_wrap)+ameameixa.com(27章天武将スキル一覧 https://ameameixa.com/27sho-ten-sukil)の2ソースでA〜S2のスキル名一致を確認(ランクは45do.info基準)",
-  "黄丸化検証(2026-08-16): カード画像no1258_full.pngの4隅バッジ(槍S/馬S/弓A/器A)を確認し一致。スキル名「義陣響野」はixanary.com(cards/1258)の生HTMLからskills/リンクを抽出し装飾フォントの誤読(義陣蟄野等)がないことを確認。synthesisTableはixanary.com(skills/義陣響野)+ixawiki.com(BushoCard/1258相良義陽)の2ソースでA/B/C/S1/S2全枠・afterSkillとも完全一致確認。龍驤虎躍・氷塊三連撃・国堅大神のdata/skill側sourceCharactersに1258が正しいslotで記載済みを確認(逆引き済み)。TR段はLV10のみ(TRなし)。"
+  "黄丸化検証(2026-08-16): カード画像no1258_full.pngの4隅バッジ(槍S/馬S/弓A/器A)を確認し一致。スキル名「義陣響野」はixanary.com(cards/1258)の生HTMLからskills/リンクを抽出し装飾フォントの誤読(義陣蟄野等)がないことを確認。synthesisTableはixanary.com(skills/義陣響野)+ixawiki.com(BushoCard/1258相良義陽)の2ソースでA/B/C/S1/S2全枠・afterSkillとも完全一致確認。龍驤虎躍・氷塊三連撃・国堅大神のdata/skill側sourceCharactersに1258が正しいslotで記載済みを確認(逆引き済み)。TR段はLV10のみ(TRなし)。",
+  "2026-08-30: 鍛錬(TR)が無いことを明記した。うぐさんの規則で**鍛錬が登場したのは No.1263 が追加された28章から**であり、27章のカードで、鍛錬が登場した28章より前。データもそれを裏付けており、27章のカードは LV10 のみ・28章のカードは LV10〜TR5 を持つ。**28章以降で鍛錬の無い武将も居るため、そちらには何も書いていない。**"
  ],
  "wikiOldestComment": "2024-02-12",
  "wikiCommentCount": 13,
