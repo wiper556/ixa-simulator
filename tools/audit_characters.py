@@ -700,6 +700,26 @@ def main():
         if not re.search(r"\bcost:\s*[\d.]+", m.group(3)):
             add("シミュのcost未設定", "MID", "%s No.%s に cost が無い" % (m.group(1), no))
 
+    # P-06: 正本にあるパラレルがシミュレーターに入っていない(2026-08-31)
+    #
+    # シミュレーターの武将DB(generalGrowthDB)は**手で保守している配列**なので、
+    # 正本に足しても入れ忘れる。実際、32章のパラレル12件(31310〜31321)が
+    # 抜けたままで**部隊に組めなかった**(うぐさんのコスト指摘を追う途中で判明)。
+    #
+    # シミュレーターは載せる武将を絞っているので「正本の全カードが要る」とは
+    # 言えない。だが **元カードが載っているのにそのパラレルだけ無い**のは
+    # ただの入れ忘れなので、そこだけを見る。
+    sim_no = set(re.findall(r"^  \{ name:'[^']+', no:'(\d+)'", body, re.M))
+    for g in D.get("parallelGenerals") or []:
+        no = str(g.get("no") or "")
+        if not no or no in sim_no:
+            continue
+        orig = str(int(no) - 30000) if no.isdigit() else ""
+        if orig in sim_no:
+            add("シミュにパラレルが無い", "MID",
+                "%s No.%s が generalGrowthDB に無い。元カード No.%s は載っているので"
+                "入れ忘れ(部隊に組めない)" % (g.get("name"), no, orig))
+
     # P-05: シミュレーターの武将名・初期スキル名が正本と違う(2026-08-16)
     #
     # (N)を114件振り直したとき**シミュレーター側を直し忘れて26件ずれた**。
