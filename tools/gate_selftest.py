@@ -15,6 +15,12 @@
 
     python tools/gate_selftest.py           # 全部
     python tools/gate_selftest.py W-13      # ルールIDで絞る
+    python tools/gate_selftest.py --shard=1/3   # 3分割の1本目だけ(CIの並列用)
+
+`--shard=i/n` は CASES の並び順で i 番目の組だけを走らせる。**ケースIDを外に
+書き写さない**ので、CASES に足したものが自動でどれかの組に入る。分割の一覧を
+ワークフロー側に持つと、ケースを足したときに片側だけ更新されて
+「足したのにどこでも走らない」が起きる(S-14と同じ形)。
 
 `rules.py` は違反ログの「足した(pre-commit)」を、ここにそのルールIDの筋書きが
 あるときだけ認める。
@@ -314,8 +320,21 @@ def rule_ids():
     return {c[0] for c in CASES if c[3]}
 
 
+def parse_shard(argv):
+    """`--shard=i/n` を読む。無ければ None。"""
+    for a in argv:
+        if a.startswith("--shard="):
+            i, n = a[len("--shard="):].split("/")
+            i, n = int(i), int(n)
+            if not (1 <= i <= n):
+                raise SystemExit("--shard=i/n の i は 1..n")
+            return (i, n)
+    return None
+
+
 def main():
     only = [a for a in sys.argv[1:] if not a.startswith("-")]
+    shard = parse_shard(sys.argv[1:])
     base = tempfile.mkdtemp(prefix="gate_")
     repo = os.path.join(base, "repo")
     print("クローンを作る...")
@@ -336,7 +355,10 @@ def main():
     sh([sys.executable, "tools/install_hooks.py"], repo)
 
     ng = 0
-    for case in CASES:
+    ran = 0
+    if shard:
+        print("分割 %d/%d を走らせる" % shard)
+    for pos, case in enumerate(CASES):
         rid, desc, setup, should_block, want = case[:5]
         # 6番目があれば門番の経路。既定は commit。
         # 生成物の照合(check_generated)は重いので push だけで走る作りになっている。
@@ -344,6 +366,10 @@ def main():
         route = case[5] if len(case) > 5 else "commit"
         if only and rid not in only:
             continue
+        # 並びの位置で振り分ける。CASES に足したものは必ずどれかの組に入る。
+        if shard and pos % shard[1] != shard[0] - 1:
+            continue
+        ran += 1
         sh(["git", "reset", "-q", "--hard", "HEAD"], repo)
         sh(["git", "clean", "-qfd"], repo)
         if rid in ("P-02f", "P-02w", "R-04", "R-03"):
@@ -448,7 +474,11 @@ def main():
             print("     " + out.strip().replace("\n", "\n     ")[-600:])
 
     shutil.rmtree(base, ignore_errors=True)
-    print("\n失敗 %d件" % ng)
+    print("\n%d件を走らせて 失敗 %d件" % (ran, ng))
+    # 分割の指定が悪くて1件も走らなかったら、緑にせず気づかせる。
+    if shard and ran == 0:
+        print("[停止] 分割 %d/%d に当たるケースが1件も無い" % shard)
+        return 1
     return 1 if ng else 0
 
 
