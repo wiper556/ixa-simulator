@@ -1,0 +1,30 @@
+{
+ "name": "嵐渦令姫",
+ "rank": "A",
+ "baseRate": 45.0,
+ "target": "槍弓器鉄",
+ "effectSummary": "A/LV10 確率 45% 防御 110%上昇 / 自拠点防御時は防御効果3倍/対象:槍弓器鉄",
+ "categoryLinks": [],
+ "sourceCharacters": [
+  {
+   "name": "振姫",
+   "no": "2351",
+   "slot": "移植不可",
+   "db": "kyoku",
+   "note": [
+    "振姫(2351)の初期スキル。合成候補には出てこない(2026-09-02)"
+   ]
+  }
+ ],
+ "notes": [
+  "ixanary.com(skills/嵐渦令姫)から登録(2026-08-14)。S以上のスキルはページを作る決まり(S-01)にもとづく新規作成。",
+  "対象・確率・効果文はixanaryの表記をうちの書式に直したもの。categoryLinksとsourceCharactersは各武将の登録時に追記する。"
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍弓器鉄　確率 45% / 防御 110%上昇 / 自拠点防御時は防御効果3倍"
+  }
+ ]
+}

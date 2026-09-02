@@ -1,0 +1,53 @@
+{
+ "name": "飛び六方",
+ "rank": "A",
+ "baseRate": 50.0,
+ "target": "槍砲器",
+ "effectSummary": "A/LV10 確率 50% 攻撃 45%上昇 / 防御 45%上昇 / 部隊コスト10以下で効果2倍/対象:槍砲器",
+ "categoryLinks": [],
+ "sourceCharacters": [
+  {
+   "name": "唐沢玄蕃",
+   "no": "2757",
+   "slot": "S1",
+   "db": "kyoku",
+   "note": [
+    "唐沢玄蕃(2757)のsynthesisTable S1枠(2026-09-02)"
+   ]
+  },
+  {
+   "name": "百地三太夫（2）",
+   "no": "2773",
+   "slot": "C",
+   "db": "kyoku",
+   "note": [
+    "百地三太夫（2）(2773)のsynthesisTable C枠(2026-09-02)"
+   ]
+  },
+  {
+   "name": "藤林長門守",
+   "no": "2783",
+   "slot": "B",
+   "db": "kyoku",
+   "note": [
+    "藤林長門守(2783)のsynthesisTable B枠(2026-09-02)"
+   ]
+  }
+ ],
+ "notes": [
+  "ixanary.com(skills/飛び六方)から登録(2026-08-14)。S以上のスキルはページを作る決まり(S-01)にもとづく新規作成。",
+  "対象・確率・効果文はixanaryの表記をうちの書式に直したもの。categoryLinksとsourceCharactersは各武将の登録時に追記する。",
+  "ownHiddenCandidateは、このスキルが1次候補として載っている枠(2757 唐沢玄蕃 S1枠)の2次候補から(S-08)。"
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍砲器　確率 50% / 攻撃 45%上昇 / 防御 45%上昇 / 部隊コスト10以下で効果2倍"
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "飛び六方",
+  "rank": "A"
+ }
+}

@@ -1,0 +1,62 @@
+{
+ "name": "根来鉄砲衆",
+ "rank": "A",
+ "baseRate": 50.0,
+ "target": "全",
+ "effectSummary": "A/LV10 確率 50% 防御 70%上昇 / 部隊内全武将の兵科対象の初期スキルに「器」対象を追加/対象:全",
+ "categoryLinks": [],
+ "sourceCharacters": [
+  {
+   "name": "津田監物",
+   "no": "2772",
+   "slot": "移植不可",
+   "db": "kyoku",
+   "note": [
+    "津田監物(2772)の初期スキル。合成候補には出てこない(2026-09-02)"
+   ]
+  },
+  {
+   "name": "芝辻清右衛門",
+   "no": "2777",
+   "slot": "C",
+   "db": "kyoku",
+   "note": [
+    "芝辻清右衛門(2777)のsynthesisTable C枠(2026-09-02)"
+   ]
+  },
+  {
+   "name": "藤林長門守",
+   "no": "2783",
+   "slot": "S2",
+   "db": "kyoku",
+   "note": [
+    "藤林長門守(2783)のsynthesisTable S2枠(2026-09-02)"
+   ]
+  },
+  {
+   "name": "三浦按針（2）",
+   "no": "2785",
+   "slot": "S1",
+   "db": "kyoku",
+   "note": [
+    "三浦按針（2）(2785)のsynthesisTable S1枠(2026-09-02)"
+   ]
+  }
+ ],
+ "notes": [
+  "ixanary.com(skills/根来鉄砲衆)から登録(2026-08-14)。S以上のスキルはページを作る決まり(S-01)にもとづく新規作成。",
+  "対象・確率・効果文はixanaryの表記をうちの書式に直したもの。categoryLinksとsourceCharactersは各武将の登録時に追記する。",
+  "ownHiddenCandidateは、このスキルが1次候補として載っている枠(2777 芝辻清右衛門 C枠)の2次候補から(S-08)。"
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 50% / 防御 70%上昇 / 部隊内全武将の兵科対象の初期スキルに「器」対象を追加"
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "根来鉄砲衆",
+  "rank": "A"
+ }
+}

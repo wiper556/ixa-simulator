@@ -1,0 +1,46 @@
+{
+ "name": "虎落",
+ "rank": "A",
+ "baseRate": 48.0,
+ "target": "槍砲器",
+ "effectSummary": "A/LV10 確率 48% 防御 400%上昇 / 部隊コスト10以下で効果2倍 / TR1/対象:槍砲器",
+ "categoryLinks": [],
+ "sourceCharacters": [
+  {
+   "name": "北条氏照",
+   "no": "7021",
+   "slot": "S1",
+   "db": "kyoku",
+   "note": [
+    "北条氏照(7021)のsynthesisTable S1枠(2026-09-02)"
+   ]
+  }
+ ],
+ "notes": [
+  "ixanary.com(skills/虎落)から登録(2026-08-14)。S以上のスキルはページを作る決まり(S-01)にもとづく新規作成。",
+  "対象・確率・効果文はixanaryの表記をうちの書式に直したもの。categoryLinksとsourceCharactersは各武将の登録時に追記する。",
+  "ownHiddenCandidateは、このスキルが1次候補として載っている枠(7021 北条氏照 S1枠)の2次候補から(S-08)。",
+  "2026-09-02: 段の名前が効果文に紛れていたので外した／抜けていた段(TR1)を『値が不明』として入れた。**ixanary の表でもその段は空欄**で、値はどこにも無い(D-07)。"
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍砲器　確率 48% / 防御 400%上昇 / 部隊コスト10以下で効果2倍"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": null
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": "槍砲器　確率 48% / 防御 500%上昇 / 部隊コスト12以下で効果2倍"
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "虎落",
+  "rank": "A"
+ }
+}
