@@ -31,6 +31,8 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from regfetch import strip, parse_ixanary_skill  # noqa: E402
 
 SKILLDIR = os.path.join(ROOT, "data", "skill")
+import datetime
+TODAY = datetime.date.today().isoformat()
 PTS = {"LV10": "-", "TR1": "10", "TR2": "40", "TR3": "90",
        "TR4": "150", "TR5": "200", "TR6": "パラレル"}
 Z = str.maketrans("（）％", "()%")
@@ -163,13 +165,85 @@ def build(name, rank=None):
     return entry
 
 
+def build_from_card(name, rank=None):
+    """ixanary にまだ載っていないスキルを、持ち主のカードの正本から組む。
+
+    2026-09-02: 新しいカードのスキルは ixanary が404を返すので、
+    こちらしか道が無い(No.7023〜7026 の4件で必要になった)。
+    値はカードから写すだけで、新しく計算する数字は無い。
+    """
+    import glob as _g
+    import collections as _c
+    owner = None
+    for f in _g.glob(os.path.join(ROOT, "data", "busho*", "*.json")):
+        j = json.load(io.open(f, encoding="utf-8"))
+        if j.get("initialSkill") == name:
+            owner = (j, os.path.basename(os.path.dirname(f)))
+            break
+    if owner is None:
+        print("  ★ %-14s 初期スキルとして持つ武将が居ないのでカードから組めない" % name)
+        return None
+    c, d = owner
+    slots = _c.defaultdict(list)
+    dbof = {}
+    for f in _g.glob(os.path.join(ROOT, "data", "busho*", "*.json")):
+        j = json.load(io.open(f, encoding="utf-8"))
+        dd = os.path.basename(os.path.dirname(f))
+        dbof[j["no"]] = ("kyoku" if dd in ("busho-kyoku", "busho-kyoku-ps")
+                         else "toku" if dd == "busho-toku-s"
+                         else "ketsu" if dd == "busho-ketsu" else None)
+        for r in (j.get("synthesisTable") or []):
+            if r.get("skill") == name:
+                slots[j["no"]].append(r.get("slot"))
+        if j.get("initialSkill") == name and j["no"] not in slots:
+            slots[j["no"]] = ["移植不可"]
+    src = []
+    for no in sorted(slots, key=lambda x: (len(x), x)):
+        j = json.load(io.open(_g.glob(os.path.join(ROOT, "data", "busho*", no + ".json"))[0],
+                              encoding="utf-8"))
+        e = collections.OrderedDict([("name", j["name"]), ("no", no),
+                                     ("slot", "・".join(dict.fromkeys(slots[no])))])
+        if dbof.get(no):
+            e["db"] = dbof[no]
+        if e["slot"] == "移植不可":
+            e["note"] = ["%s(%s)の初期スキル。合成候補には出てこない(%s)" % (j["name"], no, TODAY)]
+        src.append(e)
+    sd = c.get("skillDetail") or ""
+    head = sd.split("/")[0].strip()
+    m = re.search(r"確率\s*([\d.]+)\s*%", sd)
+    tgt = re.search(r"対象:(\S+)", sd)
+    ent = collections.OrderedDict()
+    ent["name"] = name
+    ent["rank"] = rank or (head if head in ("SSS", "SS", "S", "A", "B", "C", "D", "E", "F") else None)
+    if m:
+        ent["baseRate"] = float(m.group(1))
+    ent["target"] = tgt.group(1) if tgt else "全"
+    ent["effectSummary"] = sd
+    if "模倣不可" in sd:
+        ent["noMimic"] = True
+    ent["categoryLinks"] = []
+    ent["sourceCharacters"] = src
+    ent["grantedViaSkills"] = []
+    ent["trTable"] = [dict(r) for r in (c.get("trTable") or [])]
+    ent["notes"] = ["%s: **ixanary にこのスキルのページがまだ無い(404)**ため、"
+                    "持ち主 No.%s(%s)の正本から組んだ。値はカードから写しただけで、"
+                    "新しく計算した数字は無い。" % (TODAY, c["no"], c["name"])]
+    io.open(os.path.join(SKILLDIR, name + ".json"), "w", encoding="utf-8",
+            newline=chr(10)).write(json.dumps(ent, ensure_ascii=False, indent=1) + chr(10))
+    print("  作成 %-14s %-4s 確率%-6s 対象%-14s カードから(No.%s)"
+          % (name, ent.get("rank"), ent.get("baseRate"), ent["target"], c["no"]))
+    return ent
+
+
 if __name__ == "__main__":
-    # 引数は 名前 か 名前:ランク
+    # 引数は 名前 か 名前:ランク。--from-card を付けると ixanary ではなく
+    # 持ち主のカードの正本から組む(新カードで ixanary が404のとき)
+    from_card = "--from-card" in sys.argv
     for a in sys.argv[1:]:
         n, _, rk = a.partition(":")
         if os.path.exists(os.path.join(SKILLDIR, n + ".json")) and "--force" not in sys.argv:
             print("  %-14s 既にあり" % n)
             continue
-        if n == "--force":
+        if n in ("--force", "--from-card"):
             continue
-        build(n, rk or None)
+        (build_from_card if from_card else build)(n, rk or None)

@@ -1,0 +1,52 @@
+{
+ "name": "燕返し",
+ "rank": "A",
+ "baseRate": 45.0,
+ "target": "槍弓砲",
+ "effectSummary": "A/LV10 確率 45% 防御 40%上昇/対象:槍弓砲",
+ "categoryLinks": [],
+ "sourceCharacters": [
+  {
+   "name": "佐々木小次郎",
+   "no": "2019",
+   "slot": "移植不可",
+   "db": "kyoku",
+   "note": [
+    "佐々木小次郎(2019)の初期スキル。合成候補には出てこない(2026-09-02)"
+   ]
+  },
+  {
+   "name": "天羽源鉄",
+   "no": "2731",
+   "slot": "S2",
+   "db": "kyoku",
+   "note": [
+    "天羽源鉄(2731)のsynthesisTable S2枠(2026-09-02)"
+   ]
+  },
+  {
+   "name": "里見義弘",
+   "no": "3207",
+   "slot": "S2",
+   "note": [
+    "里見義弘(3207)のsynthesisTable S2枠(2026-09-02)"
+   ]
+  }
+ ],
+ "notes": [
+  "ixanary.com(skills/燕返し)から登録(2026-08-14)。S以上のスキルはページを作る決まり(S-01)にもとづく新規作成。",
+  "対象・確率・効果文はixanaryの表記をうちの書式に直したもの。categoryLinksとsourceCharactersは各武将の登録時に追記する。",
+  "ownHiddenCandidateは、このスキルが1次候補として載っている枠(2731 天羽源鉄 S2枠)の2次候補から(S-08)。"
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍弓砲　確率 45% / 防御 40%上昇"
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "柳生新陰流",
+  "rank": "A"
+ }
+}

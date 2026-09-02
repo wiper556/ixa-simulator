@@ -1,0 +1,62 @@
+{
+ "name": "禄寿応穏",
+ "rank": "A",
+ "baseRate": 35.0,
+ "target": "全",
+ "effectSummary": "A/LV10 確率 35% 防御 35%上昇 / 銅銭獲得率：7.5% / 防御で倒した兵数に応じて防御参加者全員が銅銭獲得/対象:全",
+ "categoryLinks": [],
+ "sourceCharacters": [
+  {
+   "name": "服部半蔵（2）",
+   "no": "2403",
+   "slot": "S1",
+   "db": "kyoku",
+   "note": [
+    "服部半蔵（2）(2403)のsynthesisTable S1枠(2026-09-02)"
+   ]
+  },
+  {
+   "name": "北条氏綱",
+   "no": "2739",
+   "slot": "S1",
+   "db": "kyoku",
+   "note": [
+    "北条氏綱(2739)のsynthesisTable S1枠(2026-09-02)"
+   ]
+  },
+  {
+   "name": "安井道頓",
+   "no": "2775",
+   "slot": "S2",
+   "db": "kyoku",
+   "note": [
+    "安井道頓(2775)のsynthesisTable S2枠(2026-09-02)"
+   ]
+  },
+  {
+   "name": "山田長政（2）",
+   "no": "7401",
+   "slot": "B",
+   "db": "kyoku",
+   "note": [
+    "山田長政（2）(7401)のsynthesisTable B枠(2026-09-02)"
+   ]
+  }
+ ],
+ "notes": [
+  "ixanary.com(skills/禄寿応穏)から登録(2026-08-14)。S以上のスキルはページを作る決まり(S-01)にもとづく新規作成。",
+  "対象・確率・効果文はixanaryの表記をうちの書式に直したもの。categoryLinksとsourceCharactersは各武将の登録時に追記する。",
+  "ownHiddenCandidateは、このスキルが1次候補として載っている枠(2403 服部半蔵（2） S1枠)の2次候補から(S-08)。"
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 35% / 防御 35%上昇 / 銅銭獲得率：7.5% / 防御で倒した兵数に応じて防御参加者全員が銅銭獲得(重複・模倣不可)"
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "禄寿応穏",
+  "rank": "A"
+ }
+}
