@@ -1,0 +1,79 @@
+{
+ "name": "稲葉正成（2）",
+ "no": "3691",
+ "ch": null,
+ "cost": 2.5,
+ "troop": "砲器攻",
+ "sub": "",
+ "effect": "発動確率と効果の組み合わせを選べる",
+ "furigana": "いなばまさなり",
+ "illustrator": "tatsuya",
+ "imageFull": "assets/img/characters/no3691_full.png",
+ "imageChar": "assets/img/characters/no3691_char.png",
+ "atkBase": 960,
+ "atkGrowth": null,
+ "defBase": 840,
+ "defGrowth": null,
+ "tacticsBase": 460.0,
+ "tacticsGrowth": null,
+ "lv0Troops": 2730,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "B",
+  "uma": "C",
+  "ki": "A"
+ },
+ "initialSkill": "千変ノ引鉄",
+ "skillDetail": "C/LV10 確率 100% 攻撃 480%上昇/対象:砲・器\n①スキル発動確率と効果の組み合わせを選択できる(移動時は選択不可)",
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "蝮子采配",
+   "rank": null,
+   "afterSkill": null,
+   "afterRank": null
+  },
+  {
+   "slot": "B",
+   "skill": "猜断",
+   "rank": null,
+   "afterSkill": null,
+   "afterRank": null
+  },
+  {
+   "slot": "C",
+   "skill": "千変ノ引鉄",
+   "rank": null,
+   "afterSkill": null,
+   "afterRank": null
+  },
+  {
+   "slot": "S1",
+   "skill": "千変ノ引鉄",
+   "rank": null,
+   "afterSkill": null,
+   "afterRank": null
+  },
+  {
+   "slot": "S2",
+   "skill": "野太刀",
+   "rank": null,
+   "afterSkill": null,
+   "afterRank": null
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "砲・器　確率 100% / 攻撃 480%上昇(スキル発動確率と効果の組み合わせを選択できる・移動時は選択不可・TRなし)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-09-02 新規登録。**うぐさん提供のカード画像から採った(D-01)。** ixanary.com/cards/3691 と ixawiki.com/wiki/BushoCard/3691 は どちらも 404 でページが存在せず(新カードのため未掲載)、**2つ目の情報源が無い。** 画像から読めたのは 武将名・読み・レアリティ・コスト・職業・絵師・統率バッジ・攻撃/防御/兵法の初期値・指揮兵数・スキル名とランクと効果文・スキル追加合成の候補一覧。**成長値はカードに出ないので null のまま(D-07)。** **章も分からないので入れていない**(No.から外挿しない)。",
+  "2026-09-02: **カードには確率と効果が組みで選べる引き出しが付いており**、画像で見えているのは「確率:100% 攻撃:480%」の組み合わせ。他の組み合わせはカードに出ていないので入れていない。特は鍛錬の追加が無いので「TRなし」と書いた(D-17)。",
+  "2026-09-02: スキル追加合成の候補はカードの「スキル追加合成」画面から採った(候補スキル1→A枠 / 候補スキル2→B枠 / 候補スキル3→C枠 / 隠し候補スキル→S1枠 / 同一No合成スキル→S2枠)。**移植後(afterSkill)は画面に出ないので null のまま。**",
+  "2026-09-02: （N）を付けた。特の稲葉正成は No.3481(22章)が1枚目で無印。これが2枚目。**（N）はゲーム内には無く、うぐさんの決まり(D-12/2.5節)で同じレアリティの中を早く出た順に1から振るもの。**既存の並びは章の順に連続しているので次の番号にした。**この札の章はまだ分からないので、番号はうぐさんに確認してほしい。**"
+ ]
+}

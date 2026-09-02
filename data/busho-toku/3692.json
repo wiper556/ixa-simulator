@@ -1,0 +1,78 @@
+{
+ "name": "本庄実乃",
+ "no": "3692",
+ "ch": null,
+ "cost": 3,
+ "troop": "槍砲器攻",
+ "sub": "",
+ "effect": "攻撃 310%上昇",
+ "furigana": "ほんじょうさねより",
+ "illustrator": "鹿角",
+ "imageFull": "assets/img/characters/no3692_full.png",
+ "imageChar": "assets/img/characters/no3692_char.png",
+ "atkBase": 950,
+ "atkGrowth": null,
+ "defBase": 860,
+ "defGrowth": null,
+ "tacticsBase": 440.0,
+ "tacticsGrowth": null,
+ "lv0Troops": 3130,
+ "rankGrades": {
+  "yari": "B",
+  "yumi": "C",
+  "uma": "B",
+  "ki": "A"
+ },
+ "initialSkill": "陣中訓",
+ "skillDetail": "C/LV10 確率 45% 攻撃 310%上昇/対象:槍・砲・器\n①攻撃 310%上昇する\n②部隊コスト10以下で効果2倍",
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "一揆討伐",
+   "rank": null,
+   "afterSkill": null,
+   "afterRank": null
+  },
+  {
+   "slot": "B",
+   "skill": "斃秦",
+   "rank": null,
+   "afterSkill": null,
+   "afterRank": null
+  },
+  {
+   "slot": "C",
+   "skill": "陣中訓",
+   "rank": null,
+   "afterSkill": null,
+   "afterRank": null
+  },
+  {
+   "slot": "S1",
+   "skill": "陣中訓",
+   "rank": null,
+   "afterSkill": null,
+   "afterRank": null
+  },
+  {
+   "slot": "S2",
+   "skill": "志興壮剣",
+   "rank": null,
+   "afterSkill": null,
+   "afterRank": null
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・砲・器　確率 45% / 攻撃 310%上昇(部隊コスト10以下で効果2倍・TRなし)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-09-02 新規登録。**うぐさん提供のカード画像から採った(D-01)。** ixanary.com/cards/3692 と ixawiki.com/wiki/BushoCard/3692 は どちらも 404 でページが存在せず(新カードのため未掲載)、**2つ目の情報源が無い。** 画像から読めたのは 武将名・読み・レアリティ・コスト・職業・絵師・統率バッジ・攻撃/防御/兵法の初期値・指揮兵数・スキル名とランクと効果文・スキル追加合成の候補一覧。**成長値はカードに出ないので null のまま(D-07)。** **章も分からないので入れていない**(No.から外挿しない)。",
+  "2026-09-02: 特は鍛錬の追加が無いので「TRなし」と書いた(D-17)。",
+  "2026-09-02: スキル追加合成の候補はカードの「スキル追加合成」画面から採った(候補スキル1→A枠 / 候補スキル2→B枠 / 候補スキル3→C枠 / 隠し候補スキル→S1枠 / 同一No合成スキル→S2枠)。**移植後(afterSkill)は画面に出ないので null のまま。**"
+ ]
+}

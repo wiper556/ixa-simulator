@@ -1,0 +1,78 @@
+{
+ "name": "増田長盛",
+ "no": "7026",
+ "ch": null,
+ "cost": 3,
+ "troop": "槍砲器防",
+ "sub": "",
+ "effect": "防御 280%上昇",
+ "furigana": "ましたながもり",
+ "illustrator": "三好載克",
+ "imageFull": "assets/img/characters/no7026_full.png",
+ "imageChar": "assets/img/characters/no7026_char.png",
+ "atkBase": 1040,
+ "atkGrowth": null,
+ "defBase": 1160,
+ "defGrowth": null,
+ "tacticsBase": 540.0,
+ "tacticsGrowth": null,
+ "lv0Troops": 3510,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "A",
+  "uma": "B",
+  "ki": "A"
+ },
+ "initialSkill": "陣中萬商",
+ "skillDetail": "A/LV10 確率 53% 防御 280%上昇/対象:槍・砲・器\n①防御 280%上昇する\n②本丸防御陣形の第弐列目か第参列目に配置時に防御効果が3倍になり飛翔1を得る(模倣不可)",
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "御旗ノ守護者",
+   "rank": null,
+   "afterSkill": null,
+   "afterRank": null
+  },
+  {
+   "slot": "B",
+   "skill": "覇軍ノ勇士",
+   "rank": null,
+   "afterSkill": null,
+   "afterRank": null
+  },
+  {
+   "slot": "C",
+   "skill": "人間無骨",
+   "rank": null,
+   "afterSkill": null,
+   "afterRank": null
+  },
+  {
+   "slot": "S1",
+   "skill": "陣中萬商",
+   "rank": null,
+   "afterSkill": null,
+   "afterRank": null
+  },
+  {
+   "slot": "S2",
+   "skill": "志半ノ矛楯",
+   "rank": null,
+   "afterSkill": null,
+   "afterRank": null
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・砲・器　確率 53% / 防御 280%上昇(本丸防御陣形の第弐列目か第参列目に配置時に防御効果3倍・飛翔1を得る・模倣不可)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-09-02 新規登録。**うぐさん提供のカード画像から採った(D-01)。** ixanary.com/cards/7026 と ixawiki.com/wiki/BushoCard/7026 は どちらも 404 でページが存在せず(新カードのため未掲載)、**2つ目の情報源が無い。** 画像から読めたのは 武将名・読み・レアリティ・コスト・職業・絵師・統率バッジ・攻撃/防御/兵法の初期値・指揮兵数・スキル名とランクと効果文・スキル追加合成の候補一覧。**成長値はカードに出ないので null のまま(D-07)。** **章も分からないので入れていない**(No.から外挿しない)。",
+  "2026-09-02: カードに「TR最大」の表示が無く、鍛錬の段は分からない(28章以降なので鍛錬なしとも言えない)。",
+  "2026-09-02: スキル追加合成の候補はカードの「スキル追加合成」画面から採った(候補スキル1→A枠 / 候補スキル2→B枠 / 候補スキル3→C枠 / 隠し候補スキル→S1枠 / 同一No合成スキル→S2枠)。**移植後(afterSkill)は画面に出ないので null のまま。**"
+ ]
+}
