@@ -287,6 +287,9 @@ def main(argv):
     ap.add_argument("--name", default="", help="新しいくじの名前(例: 紅蓮の拾六文銭)")
     ap.add_argument("--version", help="GACHA_VERSION(省略すると日付から作る)")
     ap.add_argument("--dry", action="store_true", help="書かずに下見だけ")
+    ap.add_argument("--fix", action="store_true",
+                    help="期間を切り替えず、いまの期間のラインナップだけを直す"
+                         "(アーカイブも開催期間もKUJI_SCOPEも触らない)")
     a = ap.parse_args(argv)
 
     text = read_page()
@@ -304,9 +307,10 @@ def main(argv):
         print("問題なし。")
         return 0
 
-    for need in ("end", "start"):
-        if not getattr(a, need):
-            raise SystemExit("--%s が要る" % need)
+    if not a.fix:
+        for need in ("end", "start"):
+            if not getattr(a, need):
+                raise SystemExit("--%s が要る" % need)
 
     body, rates = parse_lineup(a.lineup, names)
     print("読み取ったラインナップ:")
@@ -354,6 +358,35 @@ def main(argv):
         for b in bad[:20]:
             print("   " + b)
         return 1
+
+    # ---- --fix: 期間はそのまま。中身だけ直して版だけ上げる ----
+    #
+    # 入れ替えのときに**画面を一部しか見ずに「変わっていない」と決めつける**と、
+    # 差し替えたパターンだけが新しく、他が前の期間のまま残る。2026-09-02に実際に
+    # やらかした(救済だけ直してベースとブーストを前の期間のままにした)。
+    # そのときアーカイブをやり直すと記録用ページが二重にできてしまうので、
+    # 期間には一切触らずに中身だけを直す道を用意する。
+    if a.fix:
+        cur_ver = re.search(r"const GACHA_VERSION = '([^']*)';", new).group(1)
+        m = re.match(r"^(.*\.)(\d+)$", cur_ver)
+        ver = a.version or ((m.group(1) + str(int(m.group(2)) + 1)) if m
+                            else cur_ver + ".2")
+        new = re.sub(r"const GACHA_VERSION = '[^']*';",
+                     "const GACHA_VERSION = '%s';" % ver, new)
+        print()
+        print("  --fix: 期間・アーカイブ・KUJI_SCOPE は触らない")
+        print("  GACHA_VERSION: %s → %s" % (cur_ver, ver))
+        if a.dry:
+            print()
+            print("(--dry なので何も書いていない)")
+            return 0
+        io.open(PAGE, "w", encoding="utf-8", newline=NL).write(new)
+        print()
+        print("書き出した。このあと:")
+        print("  python tools/build_data.py && python tools/prerender.py"
+              " && python tools/gen_detail_pages.py")
+        print("  python tools/audit_characters.py")
+        return 0
 
     # ---- ここまで通ったら、アーカイブと切り替えを行う ----
     #
