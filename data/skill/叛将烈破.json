@@ -1,0 +1,51 @@
+{
+ "name": "叛将烈破",
+ "rank": "B",
+ "baseRate": 32.0,
+ "target": "槍砲",
+ "effectSummary": "B/LV10 確率 32% 攻撃 36%上昇 / 防御 36%上昇/対象:槍砲",
+ "categoryLinks": [],
+ "sourceCharacters": [
+  {
+   "name": "陶晴賢",
+   "no": "2164",
+   "slot": "移植不可",
+   "db": "kyoku",
+   "note": [
+    "陶晴賢(2164)の初期スキル。合成候補には出てこない(2026-09-02)"
+   ]
+  },
+  {
+   "name": "種子島久時",
+   "no": "3355",
+   "slot": "S1",
+   "note": [
+    "種子島久時(3355)のsynthesisTable S1枠(2026-09-02)"
+   ]
+  },
+  {
+   "name": "高山友照",
+   "no": "3506",
+   "slot": "S1",
+   "note": [
+    "高山友照(3506)のsynthesisTable S1枠(2026-09-02)"
+   ]
+  }
+ ],
+ "notes": [
+  "ixanary.com(skills/叛将烈破)から登録(2026-08-14)。S以上のスキルはページを作る決まり(S-01)にもとづく新規作成。",
+  "対象・確率・効果文はixanaryの表記をうちの書式に直したもの。categoryLinksとsourceCharactersは各武将の登録時に追記する。",
+  "ownHiddenCandidateは、このスキルが1次候補として載っている枠(3355 種子島久時 S1枠)の2次候補から(S-08)。"
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍砲　確率 32% / 攻撃 36%上昇 / 防御 36%上昇"
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "戦陣 阿吽",
+  "rank": "A"
+ }
+}

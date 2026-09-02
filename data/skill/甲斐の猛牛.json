@@ -1,0 +1,34 @@
+{
+ "name": "甲斐の猛牛",
+ "rank": "D",
+ "baseRate": 15.0,
+ "target": "槍弓馬",
+ "effectSummary": "D/LV10 確率 15% 防御 45%上昇/対象:槍弓馬",
+ "categoryLinks": [],
+ "sourceCharacters": [
+  {
+   "name": "秋山信友",
+   "no": "3198",
+   "slot": "C",
+   "note": [
+    "秋山信友(3198)のsynthesisTable C枠(2026-09-02)"
+   ]
+  }
+ ],
+ "notes": [
+  "ixanary.com(skills/甲斐の猛牛)から登録(2026-08-14)。S以上のスキルはページを作る決まり(S-01)にもとづく新規作成。",
+  "対象・確率・効果文はixanaryの表記をうちの書式に直したもの。categoryLinksとsourceCharactersは各武将の登録時に追記する。",
+  "ownHiddenCandidateは、このスキルが1次候補として載っている枠(3198 秋山信友 C枠)の2次候補から(S-08)。"
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍弓馬　確率 15% / 防御 45%上昇"
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "風林火山 戦",
+  "rank": "A"
+ }
+}

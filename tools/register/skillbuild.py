@@ -82,9 +82,31 @@ def parse_level(text):
     body = body.lstrip("/ ").strip()
     # うちの書式は「防御 580%上昇」。ixanaryの「防御：580%上昇」から全角コロンを外す
     body = re.sub(r"(攻撃|防御|速度|破壊|総攻撃|総防御)[：:]\s*", r"\1 ", body)
-    # 末尾に重複して付いてくる「確率：+26%」を落とす(確率は見出し側に出す)
-    body = re.sub(r"\s*確率\s*[：:]\s*\+?[\d.]+%\s*$", "", body).strip()
+    # 重複して付いてくる「確率：+26%」を落とす(確率は見出し側に出す)。
+    # 2026-09-02: **末尾だけを見ていたので、途中に出るものが残っていた。**
+    # 不滅ノ鬼美濃で「攻撃 100%上昇 確率：+70% / 速度 70%上昇」となっていた。
+    body = re.sub(r"\s*確率\s*[：:]\s*\+?[\d.]+%\s*", " ", body)
+    body = re.sub(r"\s*/\s*/\s*", " / ", body)       # 落とした跡の空区切りを畳む
+    body = re.sub(r"\s{2,}", " ", body).strip(" /").strip()
     return rate, target, body
+
+
+def headline(body):
+    """effectSummary の見出しに出す短い形。
+
+    2026-09-02: もとは body.split("(")[0][:40] だった。**効果文が括弧で
+    始まるスキルでは中身が丸ごと消えていた**(列侯擁媛が「防御 」だけになった)。
+    括弧の前に中身があるときだけ切り、無ければそのまま使う。
+    """
+    head = body.split("(")[0].strip()
+    # 括弧の前に数値が無ければ、そこで切っても意味が残らない
+    # (列侯擁媛の「防御 (敵部隊移動速度÷0.7)%上昇」が「防御」だけになった)
+    if not head or not re.search(r"[\d.]", head):
+        head = body
+    if len(head) > 60:
+        cut = head.rfind(" / ", 0, 60)
+        head = head[:cut] if cut > 20 else head[:60]
+    return head.strip()
 
 
 def build(name, rank=None):
@@ -122,7 +144,7 @@ def build(name, rank=None):
         ("effectSummary", ("%s/%s 確率 %s%% %s/対象:%s"
                            % (rank or d.get("rank") or "-", lv[0].get("level") or "LV10",
             ("%g" % rate0) if rate0 is not None else "-",
-            (parse_level(lv[0]["text"])[2] or "").split("(")[0][:40],
+            headline(parse_level(lv[0]["text"])[2] or ""),
             target0 or "全")).replace(" / /", " /")),
         ("categoryLinks", []),
         ("sourceCharacters", []),

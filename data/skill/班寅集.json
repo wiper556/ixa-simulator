@@ -1,0 +1,59 @@
+{
+ "name": "班寅集",
+ "rank": "B",
+ "baseRate": 18.0,
+ "target": "弓/砲",
+ "effectSummary": "B/LV10 確率 18% 攻撃 70%上昇 //対象:弓/砲",
+ "categoryLinks": [],
+ "sourceCharacters": [
+  {
+   "name": "虎哉宗乙",
+   "no": "2244",
+   "slot": "移植不可",
+   "db": "kyoku",
+   "note": [
+    "虎哉宗乙(2244)の初期スキル。合成候補には出てこない(2026-09-02)"
+   ]
+  },
+  {
+   "name": "木曽義昌",
+   "no": "3442",
+   "slot": "S2",
+   "note": [
+    "木曽義昌(3442)のsynthesisTable S2枠(2026-09-02)"
+   ]
+  },
+  {
+   "name": "内ヶ島氏理",
+   "no": "3455",
+   "slot": "S2",
+   "note": [
+    "内ヶ島氏理(3455)のsynthesisTable S2枠(2026-09-02)"
+   ]
+  },
+  {
+   "name": "畠山義春",
+   "no": "3574",
+   "slot": "S2",
+   "note": [
+    "畠山義春(3574)のsynthesisTable S2枠(2026-09-02)"
+   ]
+  }
+ ],
+ "notes": [
+  "ixanary.com(skills/班寅集)から登録(2026-08-14)。S以上のスキルはページを作る決まり(S-01)にもとづく新規作成。",
+  "対象・確率・効果文はixanaryの表記をうちの書式に直したもの。categoryLinksとsourceCharactersは各武将の登録時に追記する。",
+  "ownHiddenCandidateは、このスキルが1次候補として載っている枠(3442 木曽義昌 S2枠)の2次候補から(S-08)。"
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓/砲　確率 18% / 攻撃 70%上昇 / (合流攻撃時は発動率2倍)"
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "風狂幻術",
+  "rank": "B"
+ }
+}

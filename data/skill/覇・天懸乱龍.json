@@ -1,0 +1,49 @@
+{
+ "name": "覇・天懸乱龍",
+ "rank": "B",
+ "baseRate": 55.0,
+ "target": "槍弓砲器",
+ "effectSummary": "B/LV10 確率 55% 攻撃 60%上昇 / 卓越：追加確率30%で攻撃効果が1.5倍/対象:槍弓砲器",
+ "categoryLinks": [
+  {
+   "href": "skills-takuetsu.html",
+   "label": "卓越スキル一覧を見る"
+  }
+ ],
+ "sourceCharacters": [
+  {
+   "name": "長尾景虎",
+   "no": "2541",
+   "slot": "移植不可",
+   "db": "kyoku",
+   "note": [
+    "長尾景虎(2541)の初期スキル。合成候補には出てこない(2026-09-02)"
+   ]
+  },
+  {
+   "name": "九戸実親",
+   "no": "3507",
+   "slot": "S1",
+   "note": [
+    "九戸実親(3507)のsynthesisTable S1枠(2026-09-02)"
+   ]
+  }
+ ],
+ "notes": [
+  "ixanary.com(skills/覇・天懸乱龍)から登録(2026-08-14)。S以上のスキルはページを作る決まり(S-01)にもとづく新規作成。",
+  "対象・確率・効果文はixanaryの表記をうちの書式に直したもの。categoryLinksとsourceCharactersは各武将の登録時に追記する。",
+  "ownHiddenCandidateは、このスキルが1次候補として載っている枠(3507 九戸実親 S1枠)の2次候補から(S-08)。",
+  "2026-09-02: 一覧ページに載せたうえで分類リンクを張った(skills-takuetsu.html)。C-01により、載っている一覧だけにリンクする。"
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍弓砲器　確率 55% / 攻撃 60%上昇 / 卓越：追加確率30%で攻撃効果が1.5倍"
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "鬼滅刺",
+  "rank": "A"
+ }
+}
