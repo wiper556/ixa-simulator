@@ -1,0 +1,34 @@
+{
+ "name": "天羽々斬雷",
+ "rank": "A",
+ "baseRate": 20.0,
+ "target": "全",
+ "effectSummary": "A/LV10 確率 20% 攻撃 72%上昇 //対象:全",
+ "categoryLinks": [],
+ "sourceCharacters": [
+  {
+   "name": "真田昌輝",
+   "no": "3490",
+   "slot": "S1",
+   "note": [
+    "真田昌輝(3490)のsynthesisTable S1枠(2026-09-02)"
+   ]
+  }
+ ],
+ "notes": [
+  "ixanary.com(skills/天羽々斬雷)から登録(2026-08-14)。S以上のスキルはページを作る決まり(S-01)にもとづく新規作成。",
+  "対象・確率・効果文はixanaryの表記をうちの書式に直したもの。categoryLinksとsourceCharactersは各武将の登録時に追記する。",
+  "ownHiddenCandidateは、このスキルが1次候補として載っている枠(3490 真田昌輝 S1枠)の2次候補から(S-08)。"
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 20% / 攻撃 72%上昇 / (合流攻撃時は確率3倍)"
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "八目鳴鏑ノ奏",
+  "rank": "SS"
+ }
+}

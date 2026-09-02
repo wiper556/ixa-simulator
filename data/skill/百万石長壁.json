@@ -1,0 +1,75 @@
+{
+ "name": "百万石長壁",
+ "rank": "B",
+ "baseRate": 9.0,
+ "target": "槍馬砲",
+ "effectSummary": "B/LV10 確率 9% 防御 84%上昇 / 自拠点防御時は100%発動/対象:槍馬砲",
+ "categoryLinks": [],
+ "sourceCharacters": [
+  {
+   "name": "前田利長",
+   "no": "2282",
+   "slot": "移植不可",
+   "db": "kyoku",
+   "note": [
+    "前田利長(2282)の初期スキル。合成候補には出てこない(2026-09-02)"
+   ]
+  },
+  {
+   "name": "村井長頼",
+   "no": "3479",
+   "slot": "S1",
+   "note": [
+    "村井長頼(3479)のsynthesisTable S1枠(2026-09-02)"
+   ]
+  },
+  {
+   "name": "本多忠朝",
+   "no": "3482",
+   "slot": "S1",
+   "note": [
+    "本多忠朝(3482)のsynthesisTable S1枠(2026-09-02)"
+   ]
+  },
+  {
+   "name": "鍋島勝茂（2）",
+   "no": "3498",
+   "slot": "S2",
+   "note": [
+    "鍋島勝茂（2）(3498)のsynthesisTable S2枠(2026-09-02)"
+   ]
+  },
+  {
+   "name": "下間頼照",
+   "no": "3545",
+   "slot": "S2",
+   "note": [
+    "下間頼照(3545)のsynthesisTable S2枠(2026-09-02)"
+   ]
+  },
+  {
+   "name": "尼子義久",
+   "no": "3562",
+   "slot": "S1",
+   "note": [
+    "尼子義久(3562)のsynthesisTable S1枠(2026-09-02)"
+   ]
+  }
+ ],
+ "notes": [
+  "ixanary.com(skills/百万石長壁)から登録(2026-08-14)。S以上のスキルはページを作る決まり(S-01)にもとづく新規作成。",
+  "対象・確率・効果文はixanaryの表記をうちの書式に直したもの。categoryLinksとsourceCharactersは各武将の登録時に追記する。",
+  "ownHiddenCandidateは、このスキルが1次候補として載っている枠(3479 村井長頼 S1枠)の2次候補から(S-08)。"
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍馬砲　確率 9% / 防御 84%上昇 / 自拠点防御時は100%発動"
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "籠城の妙技",
+  "rank": "A"
+ }
+}

@@ -1,0 +1,51 @@
+{
+ "name": "傾国ノ美姫",
+ "rank": "B",
+ "baseRate": 34.0,
+ "target": "槍弓器",
+ "effectSummary": "B/LV10 確率 34% 防御 26+/対象:槍弓器",
+ "categoryLinks": [],
+ "sourceCharacters": [
+  {
+   "name": "小少将",
+   "no": "2204",
+   "slot": "移植不可",
+   "db": "kyoku",
+   "note": [
+    "小少将(2204)の初期スキル。合成候補には出てこない(2026-09-02)"
+   ]
+  },
+  {
+   "name": "望月千代女",
+   "no": "3335",
+   "slot": "S2",
+   "note": [
+    "望月千代女(3335)のsynthesisTable S2枠(2026-09-02)"
+   ]
+  },
+  {
+   "name": "石谷夫人",
+   "no": "3379",
+   "slot": "S1",
+   "note": [
+    "石谷夫人(3379)のsynthesisTable S1枠(2026-09-02)"
+   ]
+  }
+ ],
+ "notes": [
+  "ixanary.com(skills/傾国ノ美姫)から登録(2026-08-14)。S以上のスキルはページを作る決まり(S-01)にもとづく新規作成。",
+  "対象・確率・効果文はixanaryの表記をうちの書式に直したもの。categoryLinksとsourceCharactersは各武将の登録時に追記する。",
+  "ownHiddenCandidateは、このスキルが1次候補として載っている枠(3335 望月千代女 S2枠)の2次候補から(S-08)。"
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍弓器　確率 34% / 防御 26+(ランクx4) %上昇 / 速度 30%上昇 / 防御効果は武将ランクで変化"
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "宿木",
+  "rank": "B"
+ }
+}

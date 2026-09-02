@@ -1,0 +1,58 @@
+{
+ "name": "惜別ノ叛逆",
+ "rank": "D",
+ "baseRate": 27.0,
+ "target": "全",
+ "effectSummary": "D/LV10 確率 27% 攻撃 52%上昇 防御 52%上昇/対象:全",
+ "categoryLinks": [],
+ "sourceCharacters": [
+  {
+   "name": "御ツマキ",
+   "no": "4250",
+   "slot": "S1",
+   "note": [
+    "御ツマキ(4250)のsynthesisTable S1枠(2026-09-02)"
+   ]
+  },
+  {
+   "name": "小山田信茂",
+   "no": "3384",
+   "slot": "C",
+   "note": [
+    "小山田信茂(3384)のsynthesisTable C枠(2026-09-02)"
+   ]
+  },
+  {
+   "name": "土田御前（2）",
+   "no": "3422",
+   "slot": "C",
+   "note": [
+    "土田御前（2）(3422)のsynthesisTable C枠(2026-09-02)"
+   ]
+  },
+  {
+   "name": "有馬ジュスタ",
+   "no": "3441",
+   "slot": "C",
+   "note": [
+    "有馬ジュスタ(3441)のsynthesisTable C枠(2026-09-02)"
+   ]
+  }
+ ],
+ "notes": [
+  "ixanary.com(skills/惜別ノ叛逆)から登録(2026-08-14)。S以上のスキルはページを作る決まり(S-01)にもとづく新規作成。",
+  "対象・確率・効果文はixanaryの表記をうちの書式に直したもの。categoryLinksとsourceCharactersは各武将の登録時に追記する。",
+  "ownHiddenCandidateは、このスキルが1次候補として載っている枠(3384 小山田信茂 C枠)の2次候補から(S-08)。"
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 27% / 攻撃 52%上昇 防御 52%上昇"
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "戦陣 破軍",
+  "rank": "A"
+ }
+}

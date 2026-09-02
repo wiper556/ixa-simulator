@@ -1,0 +1,75 @@
+{
+ "name": "覇・太虚国崩",
+ "rank": "B",
+ "baseRate": 55.0,
+ "target": "全",
+ "effectSummary": "B/LV10 確率 55% 防御 75%上昇/対象:全",
+ "categoryLinks": [],
+ "sourceCharacters": [
+  {
+   "name": "大友宗麟（2）",
+   "no": "2546",
+   "slot": "移植不可",
+   "db": "kyoku",
+   "note": [
+    "大友宗麟（2）(2546)の初期スキル。合成候補には出てこない(2026-09-02)"
+   ]
+  },
+  {
+   "name": "中村一氏",
+   "no": "3517",
+   "slot": "S1",
+   "note": [
+    "中村一氏(3517)のsynthesisTable S1枠(2026-09-02)"
+   ]
+  },
+  {
+   "name": "伊達秀宗",
+   "no": "3526",
+   "slot": "C",
+   "note": [
+    "伊達秀宗(3526)のsynthesisTable C枠(2026-09-02)"
+   ]
+  },
+  {
+   "name": "松平広忠",
+   "no": "3528",
+   "slot": "S1",
+   "note": [
+    "松平広忠(3528)のsynthesisTable S1枠(2026-09-02)"
+   ]
+  },
+  {
+   "name": "鳥居忠吉",
+   "no": "3530",
+   "slot": "S2",
+   "note": [
+    "鳥居忠吉(3530)のsynthesisTable S2枠(2026-09-02)"
+   ]
+  },
+  {
+   "name": "内藤ジュリア",
+   "no": "3554",
+   "slot": "S2",
+   "note": [
+    "内藤ジュリア(3554)のsynthesisTable S2枠(2026-09-02)"
+   ]
+  }
+ ],
+ "notes": [
+  "ixanary.com(skills/覇・太虚国崩)から登録(2026-08-14)。S以上のスキルはページを作る決まり(S-01)にもとづく新規作成。",
+  "対象・確率・効果文はixanaryの表記をうちの書式に直したもの。categoryLinksとsourceCharactersは各武将の登録時に追記する。",
+  "ownHiddenCandidateは、このスキルが1次候補として載っている枠(3517 中村一氏 S1枠)の2次候補から(S-08)。"
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "全　確率 55% / 防御 75%上昇"
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "戦陣 破軍",
+  "rank": "A"
+ }
+}

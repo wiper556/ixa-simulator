@@ -1,0 +1,159 @@
+{
+ "name": "背水之陣",
+ "rank": "B",
+ "baseRate": 20.0,
+ "target": "槍弓馬",
+ "effectSummary": "B/LV10 確率 20% 防御 37%上昇/対象:槍弓馬",
+ "categoryLinks": [],
+ "sourceCharacters": [
+  {
+   "name": "日吉丸",
+   "no": "1803",
+   "slot": "B",
+   "note": [
+    "日吉丸(1803)のsynthesisTable B枠(2026-09-02)"
+   ]
+  },
+  {
+   "name": "虎千代",
+   "no": "1807",
+   "slot": "B",
+   "note": [
+    "虎千代(1807)のsynthesisTable B枠(2026-09-02)"
+   ]
+  },
+  {
+   "name": "淀",
+   "no": "2704",
+   "slot": "S1",
+   "db": "kyoku",
+   "note": [
+    "淀(2704)のsynthesisTable S1枠(2026-09-02)"
+   ]
+  },
+  {
+   "name": "南光坊天海",
+   "no": "2710",
+   "slot": "C",
+   "db": "kyoku",
+   "note": [
+    "南光坊天海(2710)のsynthesisTable C枠(2026-09-02)"
+   ]
+  },
+  {
+   "name": "寿桂尼",
+   "no": "2711",
+   "slot": "S1",
+   "db": "kyoku",
+   "note": [
+    "寿桂尼(2711)のsynthesisTable S1枠(2026-09-02)"
+   ]
+  },
+  {
+   "name": "三浦按針",
+   "no": "2719",
+   "slot": "B",
+   "db": "kyoku",
+   "note": [
+    "三浦按針(2719)のsynthesisTable B枠(2026-09-02)"
+   ]
+  },
+  {
+   "name": "林羅山",
+   "no": "2721",
+   "slot": "C",
+   "db": "kyoku",
+   "note": [
+    "林羅山(2721)のsynthesisTable C枠(2026-09-02)"
+   ]
+  },
+  {
+   "name": "堀秀政",
+   "no": "3233",
+   "slot": "S1",
+   "note": [
+    "堀秀政(3233)のsynthesisTable S1枠(2026-09-02)"
+   ]
+  },
+  {
+   "name": "立花誾千代",
+   "no": "3237",
+   "slot": "S2",
+   "note": [
+    "立花誾千代(3237)のsynthesisTable S2枠(2026-09-02)"
+   ]
+  },
+  {
+   "name": "矢沢頼綱",
+   "no": "3239",
+   "slot": "S1",
+   "note": [
+    "矢沢頼綱(3239)のsynthesisTable S1枠(2026-09-02)"
+   ]
+  },
+  {
+   "name": "京極高次",
+   "no": "3248",
+   "slot": "S2",
+   "note": [
+    "京極高次(3248)のsynthesisTable S2枠(2026-09-02)"
+   ]
+  },
+  {
+   "name": "筒井順慶",
+   "no": "3250",
+   "slot": "S2",
+   "note": [
+    "筒井順慶(3250)のsynthesisTable S2枠(2026-09-02)"
+   ]
+  },
+  {
+   "name": "古満姫",
+   "no": "3283",
+   "slot": "S2",
+   "note": [
+    "古満姫(3283)のsynthesisTable S2枠(2026-09-02)"
+   ]
+  },
+  {
+   "name": "名古屋山三郎",
+   "no": "3716",
+   "slot": "A",
+   "db": "toku",
+   "note": [
+    "名古屋山三郎(3716)のsynthesisTable A枠(2026-09-02)"
+   ]
+  },
+  {
+   "name": "伏姫",
+   "no": "3718",
+   "slot": "S2",
+   "db": "toku",
+   "note": [
+    "伏姫(3718)のsynthesisTable S2枠(2026-09-02)"
+   ]
+  }
+ ],
+ "notes": [
+  "ixanary.com(skills/背水之陣)から登録(2026-08-14)。S以上のスキルはページを作る決まり(S-01)にもとづく新規作成。",
+  "対象・確率・効果文はixanaryの表記をうちの書式に直したもの。categoryLinksとsourceCharactersは各武将の登録時に追記する。",
+  "ownHiddenCandidateは、このスキルが1次候補として載っている枠(1803 日吉丸 B枠)の2次候補から(S-08)。"
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍弓馬　確率 20% / 防御 37%上昇"
+  }
+ ],
+ "grantedViaSkills": [
+  {
+   "skill": "神勅賢母",
+   "rank": "S"
+  }
+ ],
+ "ownHiddenCandidate": {
+  "skill": "背水之陣",
+  "rank": "B"
+ }
+}
