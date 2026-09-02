@@ -1,0 +1,103 @@
+{
+ "name": "柿崎景家（4）",
+ "no": "7407",
+ "ch": null,
+ "cost": 4.5,
+ "troop": "槍馬砲器防",
+ "sub": "",
+ "effect": "防御 330%上昇",
+ "furigana": "かきざきかげいえ",
+ "illustrator": "正子公也",
+ "imageFull": "assets/img/characters/no7407_full.png",
+ "imageChar": "assets/img/characters/no7407_char.png",
+ "atkBase": 1090,
+ "atkGrowth": null,
+ "defBase": 1230,
+ "defGrowth": null,
+ "tacticsBase": 550.0,
+ "tacticsGrowth": null,
+ "lv0Troops": 4650,
+ "rankGrades": {
+  "yari": "S",
+  "yumi": "B",
+  "uma": "S",
+  "ki": "A"
+ },
+ "initialSkill": "毘天神威",
+ "skillDetail": "S/LV10 確率 57% 防御 330%上昇/対象:槍・馬・砲・器　飛翔7\n①防御 330%上昇する\n②所属部隊の武将が戦闘時にもつ飛翔値の合計×11%を防御効果に加算する",
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "九曜激昂",
+   "rank": null,
+   "afterSkill": null,
+   "afterRank": null
+  },
+  {
+   "slot": "B",
+   "skill": "義陣絶刀",
+   "rank": null,
+   "afterSkill": null,
+   "afterRank": null
+  },
+  {
+   "slot": "C",
+   "skill": "白影縮地",
+   "rank": null,
+   "afterSkill": null,
+   "afterRank": null
+  },
+  {
+   "slot": "S1",
+   "skill": "毘天神威",
+   "rank": null,
+   "afterSkill": null,
+   "afterRank": null
+  },
+  {
+   "slot": "S2",
+   "skill": "永世ノ天隻",
+   "rank": null,
+   "afterSkill": null,
+   "afterRank": null
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・馬・砲・器　飛翔7　確率 57% / 防御 330%上昇(所属部隊の武将が戦闘時にもつ飛翔値の合計×11%を防御効果に加算)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": null
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": null
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": null
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": null
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": "槍・馬・砲・器　飛翔7　確率 57% / 防御 330%上昇(所属部隊の武将が戦闘時にもつ飛翔値の合計×16.5%を防御効果に加算)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-09-02 新規登録。**うぐさん提供のカード画像から採った(D-01)。** ixanary.com/cards/7407 と ixawiki.com/wiki/BushoCard/7407 は どちらも 404 でページが存在せず(新カードのため未掲載)、**2つ目の情報源が無い。** 画像から読めたのは 武将名・読み・レアリティ・コスト・職業・絵師・統率バッジ・攻撃/防御/兵法の初期値・指揮兵数・スキル名とランクと効果文・スキル追加合成の候補一覧。**成長値はカードに出ないので null のまま(D-07)。** **章も分からないので入れていない**(No.から外挿しない)。",
+  "2026-09-02: スキル追加合成の候補はカードの「スキル追加合成」画面から採った(候補スキル1→A枠 / 候補スキル2→B枠 / 候補スキル3→C枠 / 隠し候補スキル→S1枠 / 同一No合成スキル→S2枠)。**移植後(afterSkill)は画面に出ないので null のまま。**",
+  "2026-09-02: （N）を付けた。極の柿崎景家は 2041(4章)無印・2246(17章)（2）・2380(28章)（3）と続いており、これが4枚目。**（N）はゲーム内には無く、うぐさんの決まり(D-12/2.5節)で同じレアリティの中を早く出た順に1から振るもの。**既存の並びは章の順に連続しているので次の番号にした。**この札の章はまだ分からないので、番号はうぐさんに確認してほしい。**"
+ ]
+}

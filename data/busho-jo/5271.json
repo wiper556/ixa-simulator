@@ -1,0 +1,40 @@
+{
+ "name": "小笠原秀清",
+ "no": "5271",
+ "ch": null,
+ "cost": 2,
+ "troop": "弓防",
+ "sub": "",
+ "effect": "弓防 10%上昇",
+ "furigana": "おがさわらひできよ",
+ "illustrator": "影由",
+ "imageFull": "assets/img/characters/no5271_full.png",
+ "imageChar": "assets/img/characters/no5271_char.png",
+ "atkBase": 420,
+ "atkGrowth": null,
+ "defBase": 550,
+ "defGrowth": null,
+ "tacticsBase": 430.0,
+ "tacticsGrowth": null,
+ "lv0Troops": 1830,
+ "rankGrades": {
+  "yari": "D",
+  "yumi": "C",
+  "uma": "D",
+  "ki": "D"
+ },
+ "initialSkill": "弓隊堅守",
+ "skillDetail": "F/LV10 確率 20% 弓防 10%上昇/対象:弓\n①弓防 10%上昇する",
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "弓　確率 20% / 弓防 10%上昇(TRなし)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-09-02 新規登録。**うぐさん提供のカード画像から採った(D-01)。** ixanary.com/cards/5271 と ixawiki.com/wiki/BushoCard/5271 は どちらも 404 でページが存在せず(新カードのため未掲載)、**2つ目の情報源が無い。** 画像から読めたのは 武将名・読み・レアリティ・コスト・職業・絵師・統率バッジ・攻撃/防御/兵法の初期値・指揮兵数・スキル名とランクと効果文・スキル追加合成の候補一覧。**成長値はカードに出ないので null のまま(D-07)。** **章も分からないので入れていない**(No.から外挿しない)。",
+  "2026-09-02: 序は鍛錬の追加が無いので「TRなし」と書いた(D-17)。絵師名は小さくて読み取りにくく「影由」と読んだ。"
+ ]
+}

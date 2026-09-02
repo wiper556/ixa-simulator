@@ -1,0 +1,78 @@
+{
+ "name": "真田幸村",
+ "no": "32640",
+ "ch": null,
+ "cost": 5,
+ "troop": "馬攻",
+ "sub": "",
+ "effect": "対象兵科を指揮した戦闘時に部隊総攻撃力が上昇",
+ "furigana": "さなだゆきむら",
+ "illustrator": "真島ヒロ",
+ "imageFull": "assets/img/characters/no32640_full.png",
+ "imageChar": "assets/img/characters/no32640_char.png",
+ "atkBase": 1250,
+ "atkGrowth": null,
+ "defBase": 1090,
+ "defGrowth": null,
+ "tacticsBase": 550.0,
+ "tacticsGrowth": null,
+ "lv0Troops": 4830,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "S",
+  "ki": "A"
+ },
+ "initialSkill": "業火ノ六冥破",
+ "skillDetail": "S/TR6 確率 40% 部隊総攻撃力 33%上昇/対象:馬\n①対象兵科を指揮した戦闘時に部隊総攻撃力が33%上昇する(模倣不可)",
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "紅焔 六冥銭",
+   "rank": null,
+   "afterSkill": null,
+   "afterRank": null
+  },
+  {
+   "slot": "B",
+   "skill": "虎賁統帥",
+   "rank": null,
+   "afterSkill": null,
+   "afterRank": null
+  },
+  {
+   "slot": "C",
+   "skill": "絶界滅刃",
+   "rank": null,
+   "afterSkill": null,
+   "afterRank": null
+  },
+  {
+   "slot": "S1",
+   "skill": "覇天金剛",
+   "rank": null,
+   "afterSkill": null,
+   "afterRank": null
+  },
+  {
+   "slot": "S2",
+   "skill": "星神闘覇",
+   "rank": null,
+   "afterSkill": null,
+   "afterRank": null
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "馬　確率 40% / 対象兵科を指揮した戦闘時に部隊総攻撃力が33%上昇(模倣不可)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-09-02 新規登録。**うぐさん提供のカード画像から採った(D-01)。** ixanary.com/cards/32640 と ixawiki.com/wiki/BushoCard/32640 は どちらも 404 でページが存在せず(新カードのため未掲載)、**2つ目の情報源が無い。** 画像から読めたのは 武将名・読み・レアリティ・コスト・職業・絵師・統率バッジ・攻撃/防御/兵法の初期値・指揮兵数・スキル名とランクと効果文・スキル追加合成の候補一覧。**成長値はカードに出ないので null のまま(D-07)。** **章も分からないので入れていない**(No.から外挿しない)。",
+  "2026-09-02: **パラレルカードで、最初からスキルが TR6 の状態で配られる。** 元カードは No.2640(同名・同能力)で、違うのはスキルの段だけ。**極のパラレルはこれが初めて**で、これまでのパラレルは天(31xxx)しかない。置き場所は元カードと同じ busho-kyoku-ps にした(ゲーム内のくじでも【極】の枠に並んでいる)。天パラレルのデータベース(characters-parallel.html)は「天のパラレル」と説明しているので、そちらには入れていない。",
+  "2026-09-02: スキル追加合成の候補はカードの「スキル追加合成」画面から採った(候補スキル1→A枠 / 候補スキル2→B枠 / 候補スキル3→C枠 / 隠し候補スキル→S1枠 / 同一No合成スキル→S2枠)。**移植後(afterSkill)は画面に出ないので null のまま。**"
+ ]
+}

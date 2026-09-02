@@ -1,0 +1,109 @@
+{
+ "name": "真田幸村（7）",
+ "no": "2640",
+ "ch": null,
+ "cost": 5,
+ "troop": "馬攻",
+ "sub": "",
+ "effect": "対象兵科を指揮した戦闘時に部隊総攻撃力が上昇",
+ "furigana": "さなだゆきむら",
+ "illustrator": "真島ヒロ",
+ "imageFull": "assets/img/characters/no2640_full.png",
+ "imageChar": "assets/img/characters/no2640_char.png",
+ "atkBase": 1250,
+ "atkGrowth": null,
+ "defBase": 1090,
+ "defGrowth": null,
+ "tacticsBase": 550.0,
+ "tacticsGrowth": null,
+ "lv0Troops": 4830,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "S",
+  "ki": "A"
+ },
+ "initialSkill": "業火ノ六冥破",
+ "skillDetail": "S/LV10 確率 40% 部隊総攻撃力 25%上昇/対象:馬\n①対象兵科を指揮した戦闘時に部隊総攻撃力が25%上昇する(模倣不可)",
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "紅焔 六冥銭",
+   "rank": null,
+   "afterSkill": null,
+   "afterRank": null
+  },
+  {
+   "slot": "B",
+   "skill": "虎賁統帥",
+   "rank": null,
+   "afterSkill": null,
+   "afterRank": null
+  },
+  {
+   "slot": "C",
+   "skill": "絶界滅刃",
+   "rank": null,
+   "afterSkill": null,
+   "afterRank": null
+  },
+  {
+   "slot": "S1",
+   "skill": "覇天金剛",
+   "rank": null,
+   "afterSkill": null,
+   "afterRank": null
+  },
+  {
+   "slot": "S2",
+   "skill": "星神闘覇",
+   "rank": null,
+   "afterSkill": null,
+   "afterRank": null
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "馬　確率 40% / 対象兵科を指揮した戦闘時に部隊総攻撃力が25%上昇(模倣不可)"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": null
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": null
+  },
+  {
+   "level": "TR3",
+   "points": "90",
+   "effect": null
+  },
+  {
+   "level": "TR4",
+   "points": "150",
+   "effect": null
+  },
+  {
+   "level": "TR5",
+   "points": "200",
+   "effect": "馬　確率 40% / 対象兵科を指揮した戦闘時に部隊総攻撃力が30%上昇(模倣不可)"
+  },
+  {
+   "level": "TR6",
+   "points": "パラレル",
+   "effect": "馬　確率 40% / 対象兵科を指揮した戦闘時に部隊総攻撃力が33%上昇(模倣不可)"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-09-02 新規登録。**うぐさん提供のカード画像から採った(D-01)。** ixanary.com/cards/2640 と ixawiki.com/wiki/BushoCard/2640 は どちらも 404 でページが存在せず(新カードのため未掲載)、**2つ目の情報源が無い。** 画像から読めたのは 武将名・読み・レアリティ・コスト・職業・絵師・統率バッジ・攻撃/防御/兵法の初期値・指揮兵数・スキル名とランクと効果文・スキル追加合成の候補一覧。**成長値はカードに出ないので null のまま(D-07)。** **章も分からないので入れていない**(No.から外挿しない)。",
+  "2026-09-02: TR6 の値は同じスキルを TR6 の状態で配る天パラレル No.32640 のカード画像から採った。TR1〜TR4 はカードに出ないので null。",
+  "2026-09-02: スキル追加合成の候補はカードの「スキル追加合成」画面から採った(候補スキル1→A枠 / 候補スキル2→B枠 / 候補スキル3→C枠 / 隠し候補スキル→S1枠 / 同一No合成スキル→S2枠)。**移植後(afterSkill)は画面に出ないので null のまま。**",
+  "2026-09-02: （N）を付けた。極の真田幸村は 2016(1-2章)無印・2904(7章)（2）・2905(7章)（3）・2143(10章)（4）・2981(14章)（5）・2531(19章)（6）と続いており、これが7枚目。**（N）はゲーム内には無く、うぐさんの決まり(D-12/2.5節)で同じレアリティの中を早く出た順に1から振るもの。**既存の並びは章の順に連続しているので次の番号にした。**この札の章はまだ分からないので、番号はうぐさんに確認してほしい。**"
+ ]
+}

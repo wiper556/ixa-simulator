@@ -1,0 +1,89 @@
+{
+ "name": "吉川広家（2）",
+ "no": "7025",
+ "ch": null,
+ "cost": 4,
+ "troop": "槍弓鉄焙攻防",
+ "sub": "",
+ "effect": "攻撃 630%上昇+防御 630%上昇",
+ "furigana": "きっかわひろいえ",
+ "illustrator": "JaneMere",
+ "imageFull": "assets/img/characters/no7025_full.png",
+ "imageChar": "assets/img/characters/no7025_char.png",
+ "atkBase": 1140,
+ "atkGrowth": null,
+ "defBase": 1140,
+ "defGrowth": null,
+ "tacticsBase": 540.0,
+ "tacticsGrowth": null,
+ "lv0Troops": 4050,
+ "rankGrades": {
+  "yari": "A",
+  "yumi": "A",
+  "uma": "B",
+  "ki": "S"
+ },
+ "initialSkill": "緊褌ノ決断",
+ "skillDetail": "A/LV10 確率 60% 攻撃 630%上昇+防御 630%上昇/対象:槍・弓・鉄・焙\n①攻撃 630%上昇する\n②防御 630%上昇する",
+ "synthesisTable": [
+  {
+   "slot": "A",
+   "skill": "無心武響",
+   "rank": null,
+   "afterSkill": null,
+   "afterRank": null
+  },
+  {
+   "slot": "B",
+   "skill": "先見ノ直観",
+   "rank": null,
+   "afterSkill": null,
+   "afterRank": null
+  },
+  {
+   "slot": "C",
+   "skill": "鉄国",
+   "rank": null,
+   "afterSkill": null,
+   "afterRank": null
+  },
+  {
+   "slot": "S1",
+   "skill": "緊褌ノ決断",
+   "rank": null,
+   "afterSkill": null,
+   "afterRank": null
+  },
+  {
+   "slot": "S2",
+   "skill": "志半ノ矛楯",
+   "rank": null,
+   "afterSkill": null,
+   "afterRank": null
+  }
+ ],
+ "trTable": [
+  {
+   "level": "LV10",
+   "points": "-",
+   "effect": "槍・弓・鉄・焙　確率 60% / 攻撃 630%上昇+防御 630%上昇"
+  },
+  {
+   "level": "TR1",
+   "points": "10",
+   "effect": null
+  },
+  {
+   "level": "TR2",
+   "points": "40",
+   "effect": "槍・弓・鉄・焙　確率 60% / 攻撃 760%上昇+防御 760%上昇"
+  }
+ ],
+ "reviewedOk": false,
+ "notes": [
+  "2026-09-02 新規登録。**うぐさん提供のカード画像から採った(D-01)。** ixanary.com/cards/7025 と ixawiki.com/wiki/BushoCard/7025 は どちらも 404 でページが存在せず(新カードのため未掲載)、**2つ目の情報源が無い。** 画像から読めたのは 武将名・読み・レアリティ・コスト・職業・絵師・統率バッジ・攻撃/防御/兵法の初期値・指揮兵数・スキル名とランクと効果文・スキル追加合成の候補一覧。**成長値はカードに出ないので null のまま(D-07)。** **章も分からないので入れていない**(No.から外挿しない)。",
+  "2026-09-02: カードの「TR最大」表示が TR2 だったので、段は TR2 までしか分からない。",
+  "2026-09-02: スキル追加合成の候補はカードの「スキル追加合成」画面から採った(候補スキル1→A枠 / 候補スキル2→B枠 / 候補スキル3→C枠 / 隠し候補スキル→S1枠 / 同一No合成スキル→S2枠)。**移植後(afterSkill)は画面に出ないので null のまま。**",
+  "2026-09-02: （N）を付けた。極の吉川広家は No.2300(21章)が1枚目で無印。これが2枚目。**（N）はゲーム内には無く、うぐさんの決まり(D-12/2.5節)で同じレアリティの中を早く出た順に1から振るもの。**既存の並びは章の順に連続しているので次の番号にした。**この札の章はまだ分からないので、番号はうぐさんに確認してほしい。**"
+ ]
+}
