@@ -407,6 +407,63 @@ def replace_card_art(dry=False):
     return 0
 
 
+# くじの集計欄に出す「プラチナ・シークレットの極」のNo.(2026-09-02)。
+#
+# **手で並べない。** どのカードがプラチナ・シークレットかは data/busho-kyoku-ps/ が
+# 正本で、くじが入れ替わるたびに顔ぶれが変わる。ページ側に書き写すと、
+# 新しいプラチナ・シークレットが集計欄に出てこない(CARD_ART_NOS と同じ落とし穴)。
+PS_FILE = "gacha-simulator.html"
+PS_BEGIN = ("  // BUILD:kyokuPsNos:start ここから下は tools/build_data.py が "
+            "data/busho-kyoku-ps/ から生成しています。直接編集しないこと")
+PS_END = "  // BUILD:kyokuPsNos:end"
+
+
+def collect_kyoku_ps():
+    d = os.path.join(ROOT, "data", "busho-kyoku-ps")
+    out = []
+    for fn in os.listdir(d) if os.path.isdir(d) else []:
+        m = re.match(r"^(\d+)\.json$", fn)
+        if m:
+            out.append(int(m.group(1)))
+    return sorted(out)
+
+
+def build_kyoku_ps_block(nos):
+    lines = [PS_BEGIN, "  const KYOKU_PS_NOS = new Set(["]
+    row = "    "
+    for n in nos:
+        piece = "%d, " % n
+        if len(row) + len(piece) > WRAP:
+            lines.append(row.rstrip())
+            row = "    "
+        row += piece
+    if row.strip():
+        lines.append(row.rstrip().rstrip(","))
+    lines.append("  ]);")
+    lines.append(PS_END)
+    return chr(10).join(lines)
+
+
+def replace_kyoku_ps(dry=False):
+    p = os.path.join(ROOT, PS_FILE)
+    if not os.path.exists(p):
+        return 0
+    text = io.open(p, encoding="utf-8", newline="").read()
+    lo, hi = text.find(PS_BEGIN), text.find(PS_END)
+    if lo < 0 or hi < 0:
+        print("  %-24s [停止] BUILD:kyokuPsNos のマーカーが無い" % PS_FILE)
+        return 1
+    nos = collect_kyoku_ps()
+    new = text[:lo] + build_kyoku_ps_block(nos) + text[hi + len(PS_END):]
+    same = new == text
+    print("  %-24s %3d件 %s (プラチナ・シークレットの極)"
+          % (PS_FILE, len(nos), "変化なし" if same else "書き換え"))
+    if not same and not dry:
+        io.open(p, "w", encoding="utf-8", newline="").write(new)
+        return 1
+    return 0
+
+
 # くじの「排出確率」表(2026-08-19)。
 #
 # **手で書かない。** 定数(BASE_RATES ほか)だけ新しいくじに直して、ページ下部の
@@ -761,6 +818,7 @@ def main(dry=False):
     changed += replace_busho_index(dry)
     changed += replace_axis(dry)
     changed += replace_card_art(dry)
+    changed += replace_kyoku_ps(dry)
     changed += replace_rate_table(dry)
     print("書き換えたページ %d件%s" % (changed, "(--dry-run)" if dry else ""))
 
