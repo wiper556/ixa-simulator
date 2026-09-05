@@ -19,8 +19,26 @@ on:
   pull_request:
   workflow_dispatch:
 
+# ジョブを分けた理由(2026-09-02):
+#
+# 1本のジョブに全部並べていたので、マージの確認に11分かかっていた。
+# 内訳は 門番の自己テスト319秒(48%) / 監査の自己テスト174秒(26%) /
+# 生成物の照合127秒(19%) で、**ルールを実際に判定している部分は合計5秒**。
+# 残りは「その検査が本当に鳴るか」を毎回ゼロから作り直している時間で、
+# これは第3〜5回レッドチームで足したもの。減らすと元の穴が開くので**消さない**。
+# 直列に並べていたことだけが無駄なので、並列にする。検査は1つも減っていない。
+#
+# **必須チェックの名前は `check` のまま変えない。** ジョブ名を変えると
+# docs/branch-protection.json の contexts と実物の両方を直す必要があり、
+# 片側だけ直すと保護が効かないまま緑になる(S-14と同じ形)。
+# 代わりに `check` を集約ジョブとして残し、他が全部緑のときだけ緑にする。
+#
+# 集約ジョブは `if: always()` で必ず走らせ、needs の結果を自分で見る。
+# needs が落ちると集約ジョブは既定では skipped になり、**必須チェックの
+# skipped は成功として扱われることがある**。それでは保護が素通りする。
 jobs:
-  check:
+  audit:
+    name: 監査・ルール・錠前
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -135,11 +153,6 @@ jobs:
       - name: ページのJS構文
         run: python tools/check_js.py
 
-      - name: 公開されるページがデータと一致しているか
-        # 生成物を手で書き換えても、再生成を忘れても、これまで通っていた(第3回 I-9/I-10)。
-        # 実際に再生成して比べる。約1分。
-        run: python tools/check_generated.py
-
       - name: フックの正本が揃っているか
         # クローン直後はフックが入っていないのが正常なので、
         # ここでは「正本のファイルが存在し、中身が期待どおりか」だけを見る。
@@ -150,9 +163,6 @@ jobs:
               echo "tools/hooks/$f が門番を呼んでいない"; exit 1; }
           done
           echo "フックの正本3件を確認した"
-
-      - name: 監査の自己テスト(チェックが本当に鳴るか)
-        run: python tools/audit_selftest.py
 
       - name: ブランチ保護が外されていないか
         # P-2(第4回): gh api は許可済みなので保護を確認なしで外せた。
@@ -222,8 +232,119 @@ jobs:
           fi
           python tools/precommit_check.py --mode ci --range "$BASE..$GITHUB_SHA"
 
+  generated:
+    name: 公開ページとデータの一致
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: 必要なものを入れる
+        # quickjs: audit_characters.py が JS配列を実際に評価して取り出すのに使う
+        # playwright: check_js.py がページの構文を見るのに使う
+        run: |
+          python -m pip install --quiet quickjs playwright
+          python -m playwright install --with-deps chromium
+
+      - name: フックを導入する(新規クローンで install_hooks が動くかの確認も兼ねる)
+        # クローン直後はフックが1つも入っていない(第2回 E-22)。
+        # 監査はフックの導入状況もHIGHで見るので、ここで実際に入れる。
+        # 「新しいクローンで手順どおりに導入できるか」を毎回確かめることにもなる。
+        run: |
+          python tools/install_hooks.py
+          python tools/install_hooks.py --check
+
+      - name: 公開されるページがデータと一致しているか
+        # 生成物を手で書き換えても、再生成を忘れても、これまで通っていた(第3回 I-9/I-10)。
+        # 実際に再生成して比べる。約1分。
+        run: python tools/check_generated.py
+
+  selftest-audit:
+    name: 監査の自己テスト
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: 必要なものを入れる
+        # quickjs: audit_characters.py が JS配列を実際に評価して取り出すのに使う
+        # playwright: check_js.py がページの構文を見るのに使う
+        run: |
+          python -m pip install --quiet quickjs playwright
+          python -m playwright install --with-deps chromium
+
+      - name: フックを導入する(新規クローンで install_hooks が動くかの確認も兼ねる)
+        # クローン直後はフックが1つも入っていない(第2回 E-22)。
+        # 監査はフックの導入状況もHIGHで見るので、ここで実際に入れる。
+        # 「新しいクローンで手順どおりに導入できるか」を毎回確かめることにもなる。
+        run: |
+          python tools/install_hooks.py
+          python tools/install_hooks.py --check
+
+      - name: 監査の自己テスト(チェックが本当に鳴るか)
+        run: python tools/audit_selftest.py
+
+  selftest-gate:
+    name: 門番の自己テスト
+    runs-on: ubuntu-latest
+    # ケースIDをここに書き写さない。--shard は CASES の並び順で振り分けるので、
+    # ケースを足せば自動でどれかの組に入る(書き写すと足したのに走らない事故が起きる)。
+    strategy:
+      fail-fast: false
+      matrix:
+        shard: [1, 2, 3]
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: 必要なものを入れる
+        # quickjs: audit_characters.py が JS配列を実際に評価して取り出すのに使う
+        # playwright: check_js.py がページの構文を見るのに使う
+        run: |
+          python -m pip install --quiet quickjs playwright
+          python -m playwright install --with-deps chromium
+
+      - name: フックを導入する(新規クローンで install_hooks が動くかの確認も兼ねる)
+        # クローン直後はフックが1つも入っていない(第2回 E-22)。
+        # 監査はフックの導入状況もHIGHで見るので、ここで実際に入れる。
+        # 「新しいクローンで手順どおりに導入できるか」を毎回確かめることにもなる。
+        run: |
+          python tools/install_hooks.py
+          python tools/install_hooks.py --check
       - name: 門番の自己テスト(precommit固有の停止条件が本当に止めるか)
         # precommit_check.py はCIでは実行されないので、そこにしか無い停止条件
         # (W-13 / P-03 / 生成物の手編集 / ベースライン理由 / 道具の未ステージ改変)は
         # 検査の外にあった(第4回 K-3 / M-4 / L-1)。
-        run: python tools/gate_selftest.py
+        run: python tools/gate_selftest.py --shard=${{ matrix.shard }}/3
+
+  check:
+    # **この名前がブランチ保護の必須チェック。** 変えない。
+    name: check
+    runs-on: ubuntu-latest
+    needs: [audit, generated, selftest-audit, selftest-gate]
+    if: always()
+    steps:
+      - name: すべての検査が緑か
+        run: |
+          R="${{ join(needs.*.result, ',') }}"
+          echo "各ジョブの結果: $R"
+          case "$R" in
+            *failure*|*cancelled*|*skipped*)
+              echo "[停止] 緑でない検査がある"; exit 1;;
+          esac
+          echo "全部 success"
