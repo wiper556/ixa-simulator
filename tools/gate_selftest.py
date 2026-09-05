@@ -320,6 +320,35 @@ def rule_ids():
     return {c[0] for c in CASES if c[3]}
 
 
+def case_weight(case):
+    """ケースの重さの目安。分割の釣り合いを取るのに使う。
+
+    2026-09-05: 位置で機械的に振り分けたら、**21件中ただ1つ `push` 経路を使う
+    S-14 のケースが1つの組に入り、その組だけ396秒・他は約95秒**になった。
+    push 経路は門番が check_generated(全ページの再生成)を丸ごと回すので、
+    commit 経路の約20倍かかる(実測 約300秒 対 約13秒)。重さを見て配る。
+    """
+    route = case[5] if len(case) > 5 else "commit"
+    return 20.0 if route == "push" else 1.0
+
+
+def shard_members(cases, shard):
+    """重い順に、そのとき最も空いている組へ配る(LPT)。
+
+    **ケースIDをワークフローに書き写さないための仕組み。** 並びや件数が変わっても
+    全ケースがどれか1つの組に必ず入る(欠けも重複も出ない)。
+    """
+    i, n = shard
+    load = [0.0] * n
+    mine = set()
+    for pos in sorted(range(len(cases)), key=lambda x: (-case_weight(cases[x]), x)):
+        k = min(range(n), key=lambda x: (load[x], x))
+        load[k] += case_weight(cases[pos])
+        if k == i - 1:
+            mine.add(pos)
+    return mine
+
+
 def parse_shard(argv):
     """`--shard=i/n` を読む。無ければ None。"""
     for a in argv:
@@ -356,8 +385,9 @@ def main():
 
     ng = 0
     ran = 0
+    mine = shard_members(CASES, shard) if shard else None
     if shard:
-        print("分割 %d/%d を走らせる" % shard)
+        print("分割 %d/%d を走らせる(%d件)" % (shard[0], shard[1], len(mine)))
     for pos, case in enumerate(CASES):
         rid, desc, setup, should_block, want = case[:5]
         # 6番目があれば門番の経路。既定は commit。
@@ -366,8 +396,8 @@ def main():
         route = case[5] if len(case) > 5 else "commit"
         if only and rid not in only:
             continue
-        # 並びの位置で振り分ける。CASES に足したものは必ずどれかの組に入る。
-        if shard and pos % shard[1] != shard[0] - 1:
+        # 重さを見て振り分ける。CASES に足したものは必ずどれかの組に入る。
+        if mine is not None and pos not in mine:
             continue
         ran += 1
         sh(["git", "reset", "-q", "--hard", "HEAD"], repo)

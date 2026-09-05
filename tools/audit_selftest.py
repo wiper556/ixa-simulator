@@ -9,6 +9,12 @@
 やること: 対象ファイルを退避 → 違反を1つ注入 → 監査を走らせる → 該当種別が出るか確認 → 復元。
 
     python tools/audit_selftest.py
+    python tools/audit_selftest.py --shard=1/3   # 3分割の1本目だけ(CIの並列用)
+
+`--shard=i/n` は CASES と EVASIONS を通した並び順で i 番目の組だけを走らせる。
+**ケース名をワークフローに書き写さない**ので、足したものは自動でどれかの組に入る。
+「自己テストが無いチェック種別」の会計は CASES/EVASIONS の定義そのものから作るので、
+分割しても各組で同じ結果になる(どの組でも上限超えを検出できる)。
 """
 import collections
 import io
@@ -480,13 +486,26 @@ def main():
             print("  " + l)
         return 1
 
+    # 分割の読み方は門番の自己テストと同じ実装を使う(2つ持たない)
+    sys.path.insert(0, os.path.join(ROOT, "tools"))
+    from gate_selftest import parse_shard
+    shard = parse_shard(sys.argv[1:])
+    total = len(CASES) + len(EVASIONS)
+    mine = None
+    if shard:
+        i, n = shard
+        mine = {x for x in range(total) if x % n == i - 1}
+        print("分割 %d/%d を走らせる(%d件 / 全%d件)" % (i, n, len(mine), total))
+
     base = audit()
     base_rows = violation_rows()
     print("注入前: %d種別 / 合計%d件 / 違反ログ%d行\n"
           % (len(base), sum(base.values()), base_rows))
     ok = ng = skip = 0
     tmp = tempfile.mkdtemp()
-    for cat, rel, old, new in CASES:
+    for _pos, (cat, rel, old, new) in enumerate(CASES):
+        if mine is not None and _pos not in mine:
+            continue
         path = os.path.join(ROOT, rel)
         src = io.open(path, encoding="utf-8", newline="").read()
         if old not in src:
@@ -509,7 +528,9 @@ def main():
     # E-15: 「違反を入れたら鳴るか」だけでなく「黙らせる書き方をしても鳴るか」を見る。
     # 検査を回避する形は、違反そのものより見つけにくい。
     print("\n-- 検査を黙らせようとしたときに、ちゃんと鳴るか --")
-    for ev in EVASIONS:
+    for _pos, ev in enumerate(EVASIONS, start=len(CASES)):
+        if mine is not None and _pos not in mine:
+            continue
         cat, rel, old, new, why = ev[:5]
         # 2つのファイルを同時に触らないと再現できない回避もある
         # (例: 未確認の段を作る + 調査ログに手書きの記録を足す)
