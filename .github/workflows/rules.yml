@@ -267,38 +267,7 @@ jobs:
   selftest-audit:
     name: 監査の自己テスト
     runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-
-      - uses: actions/setup-python@v5
-        with:
-          python-version: "3.12"
-
-      - name: 必要なものを入れる
-        # quickjs: audit_characters.py が JS配列を実際に評価して取り出すのに使う
-        # playwright: check_js.py がページの構文を見るのに使う
-        run: |
-          python -m pip install --quiet quickjs playwright
-          python -m playwright install --with-deps chromium
-
-      - name: フックを導入する(新規クローンで install_hooks が動くかの確認も兼ねる)
-        # クローン直後はフックが1つも入っていない(第2回 E-22)。
-        # 監査はフックの導入状況もHIGHで見るので、ここで実際に入れる。
-        # 「新しいクローンで手順どおりに導入できるか」を毎回確かめることにもなる。
-        run: |
-          python tools/install_hooks.py
-          python tools/install_hooks.py --check
-
-      - name: 監査の自己テスト(チェックが本当に鳴るか)
-        run: python tools/audit_selftest.py
-
-  selftest-gate:
-    name: 門番の自己テスト
-    runs-on: ubuntu-latest
-    # ケースIDをここに書き写さない。--shard は CASES の並び順で振り分けるので、
-    # ケースを足せば自動でどれかの組に入る(書き写すと足したのに走らない事故が起きる)。
+    # ケース名をここに書き写さない(--shard が CASES/EVASIONS の並びで振り分ける)
     strategy:
       fail-fast: false
       matrix:
@@ -326,11 +295,47 @@ jobs:
         run: |
           python tools/install_hooks.py
           python tools/install_hooks.py --check
+
+      - name: 監査の自己テスト(チェックが本当に鳴るか)
+        run: python tools/audit_selftest.py --shard=${{ matrix.shard }}/3
+
+  selftest-gate:
+    name: 門番の自己テスト
+    runs-on: ubuntu-latest
+    # ケースIDをここに書き写さない。--shard は CASES の並び順で振り分けるので、
+    # ケースを足せば自動でどれかの組に入る(書き写すと足したのに走らない事故が起きる)。
+    strategy:
+      fail-fast: false
+      matrix:
+        shard: [1, 2, 3, 4]
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: 必要なものを入れる
+        # quickjs: audit_characters.py が JS配列を実際に評価して取り出すのに使う
+        # playwright: check_js.py がページの構文を見るのに使う
+        run: |
+          python -m pip install --quiet quickjs playwright
+          python -m playwright install --with-deps chromium
+
+      - name: フックを導入する(新規クローンで install_hooks が動くかの確認も兼ねる)
+        # クローン直後はフックが1つも入っていない(第2回 E-22)。
+        # 監査はフックの導入状況もHIGHで見るので、ここで実際に入れる。
+        # 「新しいクローンで手順どおりに導入できるか」を毎回確かめることにもなる。
+        run: |
+          python tools/install_hooks.py
+          python tools/install_hooks.py --check
       - name: 門番の自己テスト(precommit固有の停止条件が本当に止めるか)
         # precommit_check.py はCIでは実行されないので、そこにしか無い停止条件
         # (W-13 / P-03 / 生成物の手編集 / ベースライン理由 / 道具の未ステージ改変)は
         # 検査の外にあった(第4回 K-3 / M-4 / L-1)。
-        run: python tools/gate_selftest.py --shard=${{ matrix.shard }}/3
+        run: python tools/gate_selftest.py --shard=${{ matrix.shard }}/4
 
   check:
     # **この名前がブランチ保護の必須チェック。** 変えない。
