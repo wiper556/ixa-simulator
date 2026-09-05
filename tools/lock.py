@@ -57,6 +57,9 @@ HASHED = ("tools/hooks/pre-commit", "tools/hooks/pre-merge-commit",
           ".github/workflows/rules.yml", ".claude/settings.json",
           "docs/rollback-floor.txt", "docs/RULE-OPERATION.md",
           "tools/selftest_uncovered.txt",
+          # 2026-09-06: ルールと検査の対応の穴の上限。守らないと、数字を書き換える
+          # だけで「●なのに実装から辿れない」件数の増加を隠せる。
+          "tools/rule_link_gap.txt",
           # 第5回で「HASHEDから漏れていた」と指摘された分:
           #  Y-3/U-2/T-2/V-2/X-1 門番の自己テスト自体が無検査で、CASESに1行足すだけで
           #    任意のルールIDに「門番が見ている」証拠を作れた
