@@ -707,6 +707,108 @@ def _p_violations(out, ids, n):
     return out
 
 
+# ルールと実装の対応(2026-09-06)。
+#
+# なぜ要るか: `docs/RULES.md` は96件のルールに「監査 ●/✗」の列を持っているが、
+# **この列を実装と突き合わせているコードがどこにも無かった。** 印は手書きで、
+# ●を消してもチェックを消しても誰も気づかない。このリポジトリが他所で戦っている
+# S-14「対の片側だけ更新」と同じ形が、ルール索引そのものにあった。
+#
+# 対応表を新しく手で作ると、それ自体が3つ目の写しになって同じ問題を増やす。
+# **表は持たず、実装から読む。** 監査のチェック(`add(...)`)の近くに書かれた
+# ルールIDを拾って対応とする。多くのチェックには既に書かれている。
+# 新しいチェックを足す人は、そのIDをコメントに書けば対応が繋がる。
+NL = chr(10)
+LINK_SRC = ("tools/audit_characters.py",)
+LINK_LOOKBACK = 12   # add() の何行上までコメントを見るか
+LINK_CAP = os.path.join(ROOT, "tools", "rule_link_gap.txt")
+
+
+def _marks():
+    """`docs/RULES.md` の表から ルールID → 監査列の印 を読む。"""
+    out = {}
+    for line in _read(RULES).split(NL):
+        if not line.startswith("|"):
+            continue
+        c = [x.strip() for x in line.strip("|").split("|")]
+        if not c or not re.match(r"^[A-Z]{1,2}-\d{2}[a-z]?$", c[0]):
+            continue
+        m = c[-1] if len(c) >= 5 else ""
+        out[c[0]] = ("●" if m.startswith("●") else
+                     "△" if m.startswith("△") else
+                     "✗" if m.startswith("✗") else
+                     "—" if m.startswith("—") else "")
+    return out
+
+
+def rule_checks():
+    """ルールID → そのルールを見ていると読み取れる監査チェックの種別名。
+
+    **手書きの対応表は作らない。** 監査の `add("種別", ...)` の呼び出しと、その
+    直前のコメントに書かれたルールIDを結ぶ。IDは `docs/RULES.md` に実在する
+    ものだけを採る(コードの内部符号 E-16 や Y-3 を拾わないため)。
+    """
+    import ast
+    valid = set(rule_ids())
+    out = collections.defaultdict(set)
+    for rel in LINK_SRC:
+        src = _read(os.path.join(ROOT, rel))
+        if not src:
+            continue
+        try:
+            tree = ast.parse(src)
+        except SyntaxError:
+            continue
+        lines = src.split(NL)
+        for node in ast.walk(tree):
+            if not (isinstance(node, ast.Call)
+                    and getattr(node.func, "id", None) == "add"):
+                continue
+            if not node.args or not isinstance(node.args[0], ast.Constant):
+                continue
+            cat = node.args[0].value
+            lo = max(0, node.lineno - 1 - LINK_LOOKBACK)
+            blob = NL.join(lines[lo:node.end_lineno])
+            for rid in re.findall(r"\b([A-Z]{1,2}-\d{2}[a-z]?)\b", blob):
+                if rid in valid:
+                    out[rid].add(cat)
+    return out
+
+
+def _p_rulelink(out, ids, n):
+    """索引の印と、実装から辿れる対応のずれ。"""
+    marks = _marks()
+    link = rule_checks()
+    # 索引が「見ている」と言っているのに、実装から辿れないもの。
+    # **「チェックが無い」とは限らない。** 対応が記録されていないだけのこともある。
+    # どちらにせよ、機械では確かめられない状態なので減らしていく。
+    gap = sorted(r for r, m in marks.items() if m in ("●", "△") and r not in link)
+    # 逆に、索引は「見ていない」と言っているのに実装がある。索引が実態より狭い。
+    wrong = sorted(r for r, m in marks.items() if m in ("✗", "—", "") and r in link)
+    for r in wrong:
+        out.append(("ルール索引が実態より狭い", "MID",
+                    "%s は索引で「監査 %s」だが、監査の %s が名指ししている。"
+                    "索引の印を直す" % (r, marks[r] or "印なし",
+                                        "/".join(sorted(link[r])))))
+    cap = None
+    if os.path.exists(LINK_CAP):
+        for line in io.open(LINK_CAP, encoding="utf-8"):
+            line = line.strip()
+            if line and not line.startswith("#"):
+                cap = int(line.split()[0])
+                break
+    if cap is None:
+        out.append(("ルールと検査の対応の上限が無い", "MID",
+                    "tools/rule_link_gap.txt が無い。%d件を上限として作る" % len(gap)))
+        return
+    if len(gap) > cap:
+        out.append(("ルールと検査の対応が追えない", "MID",
+                    "索引で「監査 ●/△」なのに、監査のどのチェックからも名指しされて"
+                    "いないルールが上限 %d件 を超えて %d件になった: %s。"
+                    "チェックを足すときは add() の近くにルールIDを書く"
+                    % (cap, len(gap), " ".join(gap[:12]))))
+
+
 def problems():
     """(種別, 深刻度, 本文) のリスト。監査がそのまま指摘として出す。"""
     out = []
@@ -723,12 +825,34 @@ def problems():
                       ("PreToolUseの設定", _p_settings),
                       ("CIのワークフロー", _p_ci),
                       ("門番の対", _p_gatepair),
+                      ("ルールと検査の対応", _p_rulelink),
                       ("違反ログ", _p_violations)):
         _guard(out, label, fn, ids, n)
     return out
 
 if __name__ == "__main__":
     sys.stdout.reconfigure(encoding="utf-8")
+    if "--map" in sys.argv:
+        # ルール1件につき1行。索引の印と、実装から辿れる対応を並べて見る。
+        marks, link = _marks(), rule_checks()
+        cov, gate = selftest_covered(), gate_rule_ids()
+        print("%-7s %-4s %-6s %s" % ("ルール", "索引", "門番", "監査のチェック(実装から)"))
+        for rid in sorted(marks):
+            cs = sorted(link.get(rid, []))
+            note = " / ".join(cs) if cs else (
+                "**辿れない**" if marks[rid] in ("●", "△") else "-")
+            if cs and not all(c in cov for c in cs):
+                note += "  (自己テスト無し: %s)" % ", ".join(
+                    c for c in cs if c not in cov)
+            print("%-7s %-4s %-6s %s"
+                  % (rid, marks[rid] or "-", "有" if rid in gate else "-", note))
+        gap = [r for r, m in marks.items() if m in ("●", "△") and r not in link]
+        print()
+        print("●/△ %d件 / 実装から辿れる %d件 / 辿れない %d件"
+              % (sum(1 for m in marks.values() if m in ("●", "△")),
+                 sum(1 for r, m in marks.items()
+                     if m in ("●", "△") and r in link), len(gap)))
+        sys.exit(0)
     ids = rule_ids()
     print("ルール: %d件 %s" % (len(ids), dict(collections.Counter(k[0] for k in ids))))
     print("最終棚卸し: %s" % (last_inventory() or "記録なし"))
